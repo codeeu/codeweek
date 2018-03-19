@@ -1,0 +1,52 @@
+<!-- Footer -->
+<footer id="footer" class="dark">
+
+    <!-- Copyrights -->
+    <div id="copyrights">
+
+        <div class="container clearfix">
+
+            <div class="col_half">
+                <img src="{{ asset('img/codeweekeu.png')}}" alt="" class="footer-logo" style="width: 250px">
+                A project by the <a href="http://ec.europa.eu/digital-agenda/en/young-advisors">Young Advisors Group</a> at the <a href="http://ec.europa.eu/index_en.htm">European Commission</a>
+
+            </div>
+
+            <div class="col_half col_last tright">
+                <div class="copyrights-menu copyright-links fright clearfix">
+                    <a href="http://codeweek.eu">Home</a>/<a href="http://events.codeweek.eu/">Events</a>/<a href="http://events.codeweek.eu/ambassadors">Ambassadors</a>/<a href="resources/">Resources</a>/<a href="about/">About</a>/<a href="privacy/">Privacy</a>/<a href="http://blog.codeweek.eu/">News</a>
+                </div>
+                <div class="fright clearfix">
+                    <a href="https://www.facebook.com/codeEU" class="social-icon si-small si-borderless nobottommargin si-facebook">
+                        <i class="icon-facebook"></i>
+                        <i class="icon-facebook"></i>
+                    </a>
+
+                    <a href="https://twitter.com/codeweekEU" class="social-icon si-small si-borderless nobottommargin si-twitter">
+                        <i class="icon-twitter"></i>
+                        <i class="icon-twitter"></i>
+                    </a>
+
+                    <a href="https://plus.google.com/+CodeweekEu/" class="social-icon si-small si-borderless nobottommargin si-gplus">
+                        <i class="icon-gplus"></i>
+                        <i class="icon-gplus"></i>
+                    </a>
+
+                    <a href="https://github.com/codeeu/codeeu.github.io" class="social-icon si-small si-borderless nobottommargin si-github">
+                        <i class="icon-github"></i>
+                        <i class="icon-github"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- #copyrights end -->
+
+</footer>
+<!-- #footer end -->
+
+
+
+

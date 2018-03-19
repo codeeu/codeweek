@@ -1,0 +1,19 @@
+{
+  "name": "datedroppe3",
+  "version": "3.0.0",
+  "description": "The smallest and powerful jQuery UI datepicker.",
+  "main": "datedropper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felicegattuso/Datedropper3.git"
+  },
+  "author": "https://github.com/felicegattuso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felicegattuso/Datedropper3/issues"
+  },
+  "homepage": "https://github.com/felicegattuso/Datedropper3#readme"
+}

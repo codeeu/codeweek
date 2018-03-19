@@ -1,0 +1,28 @@
+.collapsed {
+	margin: 3px 5px 0 0;
+}
+
+.cweu-navbar {
+	.navbar-brand {
+		padding: 5px 10px;
+		height: initial;
+	}
+}
+
+.navbar-toggle {
+	font-size: 25px;
+	color: $white;
+	margin: 3px;
+}
+
+.btn {
+	white-space: normal;
+}
+
+@media screen and (max-width: 550px) {
+	.btn-lg,
+	.btn-group-lg > .btn {
+		padding: 8px 15px;
+		font-size: 14px;
+	}
+}

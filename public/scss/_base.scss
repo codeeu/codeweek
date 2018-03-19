@@ -1,0 +1,545 @@
+/*********************
+MAIN STYLES
+*********************/
+
+body {
+	font-family: $primary-font-family;
+}
+
+.first {
+	padding-left: 0;
+}
+
+.last {
+	padding-right: 0;
+}
+
+.aluminum {
+	color: $aluminum;
+}
+
+/*********************
+FORM STYLES
+**********************/
+form {
+	margin-top: 20px;
+	border: 1px solid $silver;
+	padding: 20px;
+	.help-block {
+		font-style: italic;
+		font-size: 0.8em;
+		font-weight: bold;
+	}
+
+	.event-map {
+		padding: 0;
+		height: 280px;
+		margin-top: -15px;
+		margin-bottom: 15px;
+	}
+
+	#view-event-map i.fa {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -18px;
+		margin-top: -21px;
+	}
+}
+
+/*********************
+LOGIN MODAL WINDOW STYLES
+*********************/
+#login-modal {
+	.modal-header {
+		border-bottom: none;
+	}
+	.modal-footer {
+		border-top: none;
+	}
+}
+
+
+/*********************
+LOGIN PAGE STYLES
+*********************/
+.logged-in {
+	margin: 50px 0;
+
+	img {
+		margin: 20px 20px 20px 0;
+	}
+
+	.username {
+		display: inline-block;
+	}
+}
+
+/*********************
+LANDING PAGE MAP STYLES
+*********************/
+.landing-wrapper {
+	height: 450px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.landing-outter{
+	position: relative;
+
+}
+.events-map-wrapper {
+	width: 100%;
+	height: 450px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+img#loading-gif {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -16px;
+	margin-top: -16px;
+}
+
+#api-error {
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#search-events-link {
+	text-align: center;
+	margin-top: 20px;
+}
+
+#scoreboard-link {
+	text-align: center;
+}
+
+.add-event-wrapper {
+	position: absolute;
+	bottom: 20px;
+	margin-left: -180px;
+	left: 50%;
+}
+
+/*********************
+INDEX PAGE STYLES
+*********************/
+
+.index-heading {
+	font-size: 18px;
+	position: absolute;
+	right: 40px;
+	h1 {
+		margin-top: 20px;
+	}
+
+}
+
+.index-content {
+
+}
+.marker-buble-img {
+	float:left;
+	width:50px;
+	margin-right: 15px;
+}
+
+.change-location-wrapper, .change-country-link {
+	margin: 20px 0;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+#showcountries{
+	background-color: $whitesmoke;
+	padding-bottom: 25px;
+}
+
+#past-events{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 30px;
+	padding-right: 25px;
+	z-index: 0;
+	border-style: solid;
+	border-color: $primary-color;
+	border-width: 0px 0px 2px 2px;
+	background-color: $whitesmoke;
+	background: rgba($whitesmoke, 0.8);
+	font-size: 14px;
+	@include border-radius(15px);
+}
+
+.country-link {
+	margin: 1em 0;
+	height: 80px;
+	width: 80px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	padding-top: 5px;
+	font-weight: 700;
+	cursor: pointer;
+
+	&:hover {
+		border-color: $brand-primary;
+		text-decoration: underline;
+	}
+
+	.icon-flag {
+		font-size: 11px;
+	}
+}
+
+/*********************
+ADD/EDIT EVENT PAGE STYLES
+*********************/
+.how-to {
+	margin: 25px 0;
+}
+
+.fileinput {
+	//width: 100%;
+}
+
+.fileinput-preview {
+	img {
+		max-height: 204px;
+		max-width: 100%;
+	}
+}
+
+/*********************
+VIEW EVENT PAGE STYLES
+*********************/
+
+.fb_iframe_widget span {
+    vertical-align: baseline !important;
+}
+
+.share-event-wrapper {
+	margin: 15px 0;
+	.fb-share-button {
+		margin-right: 15px;
+	}
+	#twitter-widget-0 {
+		margin-left: 15px;
+		width: 90px !important;
+	}
+}
+
+/*********************
+FOOTER STYLES
+*********************/
+
+footer {
+	width: 100%;
+	background-color: $dark-blue;
+	color: $silver;
+	padding-top: 20px;
+	margin-top: 20px;
+
+	a {
+		color: $white;
+		&:hover {
+			color: $silver;
+		}
+	}
+
+	i {
+		&:not(.fa-inverse) {
+			color: $silver;
+		}
+
+		&.fa-inverse {
+			color: $black;
+		}
+	}
+
+	.footer-navigation {
+		list-style-type: none;
+		padding-left: 0;
+		padding-right: 30px;
+
+		li {
+			line-height: 32px;
+			border-bottom: 1px dotted $silver;
+		}
+	}
+
+	.maker-introduction {
+		margin: 20px 0;
+
+	}
+	.fork-github {
+		text-align: justify;
+		a {
+			display: block;
+		}
+		i {
+			color: $silver;
+		}
+	}
+	.social-links {
+		margin: 20px 0;
+		text-align: center;
+		a {
+			display: inline;
+		}
+		i {
+			padding: 10px 10px;
+			font-size: 40px;
+			color: $silver;
+		}
+
+	}
+	img {
+		&.cc-icons {
+			margin: 20px 0;
+		}
+		&.codecatz-logo {
+			width: 38px;
+			display: block;
+		}
+	}
+	.icon-title{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.fa-stack {
+		margin-right: 0;
+		height: 50px;
+	}
+}
+
+
+/*********************
+VIEW EVENT STYLES
+*********************/
+.edit-toolbar {
+	margin: 20px 0;
+
+	.edit-event-btn {
+		margin-top: 1px;
+		margin-right: 1px;
+	}
+}
+
+.event-jumbotron {
+	img {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+}
+
+#view-event-map-wrapper {
+	height: 280px;
+	padding-top: 30px;
+}
+
+.about-event {
+	margin-bottom: 50px;
+}
+
+#calendar {
+
+	margin: 0 0 20px 0;
+
+	&>table {
+		width: 100%;
+		&>tbody>tr {
+			&>th {
+				background-color: $slate;
+				color: $white;
+				font-family: $headings-font-family;
+				text-align: center;
+				padding: 5px 0;
+			}
+			&>td {
+				border-top: 1px solid $silver;
+				text-align: center;
+				width: 14.285%;
+				height: 43px;
+
+				span {
+					margin: 0 1px 0 0;
+				}
+
+				&.filled {
+					span {
+						background-color: $golden;
+						padding: 10px;
+						display: block;
+					}
+					&.today {
+						span {
+							padding: 7px;
+							border: 3px solid $golden;
+							display: block;
+						}
+
+					}
+
+				}
+
+				&.today {
+					span {
+						background-color: $brand-primary;
+						color: $white;
+						padding: 10px;
+						display: block;
+					}
+
+				}
+
+			}
+		}
+	}
+
+}
+
+.event-time-place {
+	margin-top: 20px;
+}
+
+/*********************
+SEARCH EVENTS STYLES
+*********************/
+.search-page {
+	margin: 60px 0;
+}
+
+.search-checkbox {
+	ul {
+		list-style-type: none;
+		padding-left: 0;
+
+		label {
+			font-weight: normal;
+		}
+	}
+}
+
+.search-counter {
+	font-size: 18px;
+	font-weight: 550;
+	margin-bottom: 16px;
+}
+
+/*********************
+AMBASSADORS STYLES
+*********************/
+
+.ambassador {
+	.img-circle {
+		float:left;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+/*********************
+ABOUT SITE STYLES
+*********************/
+.team-member {
+	@include make-sm-column(6);
+	.header {
+		background: #B0CC55;
+		padding: 10px;
+		font-size: 25px;
+		text-shadow: 1px 1px #ddd;
+		margin-bottom: 10px;
+	}
+	img {
+		float: left;
+		margin-right: 25px;
+	}
+	.description {
+		overflow: hidden;
+		padding: 10px;
+	}
+	.social-icons {
+		list-style-type: none;
+		padding-left: 0;
+		li {
+			float: left;
+			padding: 0;
+		}
+	}
+
+}
+#codeweek-about-logo {
+	margin-bottom: 30px;
+}
+
+.supporters {
+	list-style-type: none;
+	padding: 0;
+	margin: 20px 0;
+	li {
+		@include make-sm-column(2);
+	}
+	a {
+		display: table-cell;
+		height: 100px;
+		text-align: center;
+		vertical-align: bottom;
+	}
+	img {
+		max-width: 100%;
+	}
+}
+
+
+
+/*********************
+LIST EVENTS STYLES
+*********************/
+
+.thumbnail {
+  border: 0;
+  border-bottom: 1px solid #cdccbc;
+  border-radius: 0;
+  	.title {
+	    font-size: 16px;
+	    line-height: 21px;
+	    font-family: inherit;
+	    margin: 20px 0;
+    }
+	.img-link {
+	    display: block;
+	    width: 100%;
+	    height: 150px;
+	    overflow: hidden;
+	    margin: 20px 0;
+
+	    img {
+	      width: 100%;
+
+	      }
+     }
+     .caption {
+	    font-size: 14px;
+	    line-height: 20px;
+	    padding: 5px 0;
+	    p {
+	      	height: 60px;
+	     }
+	 }
+    .countdown {
+    	font-family: inherit;
+    }
+}

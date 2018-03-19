@@ -1,0 +1,155 @@
+.cweu-navbar {
+	background-color: $primary-color;
+	font-family: $primary-font-family;
+	border: none;
+	padding-top: 15px;
+	margin-bottom: 0;
+	border-radius: 0;
+	position: relative;
+
+	a {
+		color: $white;
+
+	}
+
+	.navbar-brand {
+		padding-top: 0;
+	}
+
+	.nav-item-intro {
+		position: absolute;
+		top: -30px;
+		right: 0;
+		color: $white;
+		a{
+			display: inline-table;
+			padding-left: 5px;
+		}
+	}
+
+	.cweu-navbar-list {
+		font-size: 16px;
+		margin-top: 25px;
+		position: relative;
+
+		li {
+			margin-left: 5px;
+			a {
+				@include transition(all 0.3s linear);
+				background-color: transparent !important;
+				color: $white !important;
+				text-decoration: underline;
+				padding: 0 6px 6px;
+
+				&.active {
+					font-weight: bold;;
+				}
+			}
+		}
+	}
+
+	.dropdown {
+
+		.dropdown-menu {
+			@include box-shadow(none);
+
+			a {
+				padding: 3px 20px 3px 5px;
+			}
+
+			i {
+				font-size: 18px;
+				border-right: 1px dotted #999;
+				padding: 5px;
+				margin-right: 2px;
+				width: 30px;
+			}
+		}
+	}
+}
+
+.cweu-submenu {
+	margin-bottom: 0;
+	background-color: $secondary-color;
+	border-radius: 0;
+
+	.navbar-nav {
+		width: 100%;
+	}
+	li {
+
+		a {
+			font-size: 16px;
+			color: $white;
+			@include transition(all 0.3s linear);
+
+			&:hover, &:focus, &.active {
+				background-color: $secondary-color;
+				color: $white;
+				.fa-circle {
+					color: #FF854E;
+				}
+			}
+			&.active{
+				.fa-circle {
+					color: #FFBB34;
+				}
+			}
+
+			&.signin {
+				padding-top: 15px;
+			}
+		}
+
+		&:first-child {
+			a {
+				padding-left: 0;
+			}
+		}
+
+		&.open {
+			a, a:hover, a:focus {
+				background-color: $primary-color;
+			}
+		}
+
+	}
+	.dropdown-menu {
+		background-color: $secondary-color;
+		border: none;
+		margin-top: 3px !important;
+		li {
+			a {
+				background-color: $secondary-color;
+				padding: 15px;
+			}
+		}
+
+		.divider {
+			background-color: $primary-color;
+		}
+	}
+	.fa-stack {
+		margin-right: 10px;
+		.fa-circle {
+			color: $primary-color;
+			@include transition(all 0.3s linear);
+		}
+	}
+
+	.avatar {
+		padding: 8px 9px 9px 9px;
+
+		&:hover, &:focus {
+			background-color: transparent;
+		}
+
+		img {
+			padding: 2px;
+			background-color: $white;
+			margin-top: 3px;
+			margin-left: 15px;
+		}
+	}
+
+}

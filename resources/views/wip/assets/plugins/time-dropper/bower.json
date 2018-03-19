@@ -1,0 +1,18 @@
+{
+  "name": "timedropper",
+  "main": [
+    "./timedropper.css",
+    "./timedropper.js"
+  ],
+  "version": "1.0",
+  "homepage": "https://github.com/felicegattuso/timedropper",
+  "authors": [
+    "Felice Gattuso"
+  ],
+  "description": "timedropper jQuery time plugin",
+  "keywords": [
+    "timedropper",
+    "timepicker"
+  ],
+  "license": "MIT"
+}

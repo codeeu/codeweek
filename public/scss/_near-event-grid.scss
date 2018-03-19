@@ -1,0 +1,74 @@
+.ne-wrapper {
+	margin: 0 auto;
+	padding: 20px 5px;
+
+	.ne-box{
+		display: inline-block;
+		background: $very-light-gray;
+		position: relative;	
+   		height: 240px;
+   	 	padding: 5px; 
+   	 	border: solid 5px $white;
+  		transition: all 0.5s ease-in-out;
+
+  		&:hover {
+  			background: $whitesmoke;
+  		}
+
+		a {
+			color: $primary-color;
+
+			.box-inner{
+				padding: 5px;
+				left:0;
+				position: relative;
+				width: 50%;
+				height: 30%;
+				overflow: hidden;
+
+				img {
+					display: block;
+					position: relative;
+					width: 100%; 
+					z-index: 9;
+					-webkit-filter: grayscale(0.5);
+					-moz-filter: grayscale(0.5);
+					filter: grayscale(0.5);
+				}
+			}
+
+			.ne-description {
+				position: relative;
+				margin: 10px 5px 5px 5px;
+				padding: 0 5px;
+				background: white;
+				height: 140px;
+				overflow: hidden;
+
+				h4 {
+					margin: 5px 5px 0 5px;
+					padding-top: 5px;
+					color: $primary-color;
+					font-size: 16px;
+					text-transform: uppercase;
+				}
+
+				span {
+					margin: 0 5px;
+					display: inline-block;
+					font-size: 12px;
+				}
+
+				p {
+					width: 90%;
+					margin: 5px auto;
+					display: block;
+					overflow: hidden;
+					color: $aluminum;
+				}
+			}	
+		}
+	}
+}
+
+

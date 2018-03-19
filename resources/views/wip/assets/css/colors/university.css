@@ -1,0 +1,291 @@
+/*-----General Information----*/
+.heading h2 span {
+    color:#cc0000;
+}
+.theme-cl {
+    color:#cc0000;
+}
+.theme-bg {
+    background:#cc0000;
+}
+span.like-listing i {
+    background:#cc0000;
+    border: 1px solid transparent;
+}
+.theme-overlap:before {
+    background:#cc0000;
+}
+.feature-box span {
+    background:#cc0000;
+}
+/*---Category Colors-----*/
+.category-boxs:hover .category-box-btn, .category-boxs:focus .category-box-btn {
+    background:#cc0000;
+    border-color:#cc0000;
+}
+.category-full-widget:hover .btn-btn-wrowse, .category-full-widget:focus .btn-btn-wrowse {
+    background:#cc0000;
+    color: #ffffff;
+}
+.category-box-full.style-2:hover .category-box-2 i, .category-box-full.style-2:focus .category-box-2 i{
+	background:#cc0000;
+	border-color:#cc0000;
+}
+.cat-box-name .btn-btn-wrowse:hover, .cat-box-name .btn-btn-wrowse:focus {
+    background:#cc0000;
+}
+span.category-tag {
+    color:#cc0000;
+    border: 1px solid #cc0000;
+}
+/*---prices---*/
+.active .package-header {
+    background:#cc0000;
+}
+button.btn.btn-package {
+    background:#cc0000;
+}
+/*----button colors---*/
+.theme-btn {
+    background:#cc0000;
+    border: 1px solid #cc0000;
+	color:#ffffff;
+	text-transform:uppercase;
+}
+.theme-btn:hover, .theme-btn:focus{
+	color:#ffffff;
+	background:#cc0000;
+    border: 1px solid #cc0000;
+}
+btn.theme-btn-outlined, a.theme-btn-outlined{
+	background:transparent;
+	border:1px solid #cc0000;
+	color:#ffffff;	
+}
+btn.theme-btn-outlined:hover, a.theme-btn-outlined:hover, btn.theme-btn-outlined:focus, a.theme-btn-outlined:focus{
+	background:#cc0000;
+	border-color:#cc0000;
+	color:#ffffff;
+}
+btn.theme-btn-trans, a.theme-btn-trans{
+	background: rgba(204, 0, 0,0.1);
+    color:#cc0000;
+    border-radius: 50px;
+    border: 1px solid #cc0000;
+}
+btn.theme-btn-trans:hover, a.theme-btn-trans:hover, btn.theme-btn-trans:focus, a.theme-btn-trans:focus{
+	background: rgba(204, 0, 0,1);
+    color: #ffffff;
+    border-radius: 50px;
+    border: 1px solid #cc0000;
+}
+btn.btn-light-outlined, a.btn-light-outlined{
+	background:rgba(255,255,255,0.1);
+	border:1px solid #ffffff;
+	color:#ffffff;
+}
+btn.btn-light-outlined:hover, a.btn-light-outlined:hover, btn.btn-light-outlined:focus, a.btn-light-outlined:focus{
+	background:rgba(255,255,255,1);
+	border:1px solid #ffffff;
+	color:#cc0000;
+}
+btn.light-btn, a.light-btn{
+	background:#ffffff;
+	border:1px solid #ffffff;
+	color:#cc0000;
+}
+btn.light-btn:hover, btn.light-btn:focus, a.light-btn:hover, a.light-btn:focus{
+	background:#cc0000;
+	border:1px solid #cc0000;
+	color:#ffffff;
+}
+a.btn.contact-btn {
+    background: rgba(255,255,255,0.1);
+    color: #ffffff;
+}
+a.btn.contact-btn:hover, a.btn.contact-btn:focus{
+	background:#ffffff;
+	border-color:#ffffff;
+	color:#cc0000;	
+}
+a.btn.contact-btn:hover i, a.btn.contact-btn:focus i{
+	color:#cc0000;
+}
+a.btn.listing-btn:hover, a.btn.listing-btn:focus{
+	background:#ffffff;
+	border-color:#ffffff;
+	color:#cc0000;
+}
+a.btn.listing-btn:hover i, a.btn.listing-btn:focus i{
+	color:#cc0000;
+}
+a.btn.listing-btn {
+    background:#cc0000;
+    border: 1px solid #cc0000;
+    color: #ffffff;
+}
+
+.listing-shot-info.rating a.detail-link {
+    color:#cc0000;
+}
+.title-content a{
+	color:#cc0000;
+}
+
+.detail-wrapper-body ul.detail-check li:before {
+    background-color:#cc0000;
+}
+ul.side-list-inline.social-side li a :hover, ul.side-list-inline.social-side li a :focus {
+    background:#cc0000;
+    color: #ffffff;
+}
+.btn.counter-btn:hover, .btn.counter-btn:focus {
+    background:#cc0000;
+    color: #ffffff;
+}
+/*---pagination--*/
+.pagination li:first-child a {
+    background:#cc0000;
+    border: 1px solid #cc0000;
+}
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus, .pagination>li>a:hover, .pagination>li>a:focus {
+    color:#cc0000;
+    background-color: rgba(204, 0, 0,0.12);
+    border-color:#cc0000;
+}
+.verticleilist.listing-shot span.like-listing i {
+    color: #ff4e64;
+}
+span.like-listing i {
+    background:#cc0000;
+    border: 1px solid transparent;
+}
+.layout-option a.active {
+    color:#cc0000;
+}
+.layout-option a:hover, .layout-option a:focus {
+    color:#cc0000;
+}
+.edit-info .btn {
+    border: 1px solid #cc0000;
+    color:#cc0000;
+}
+.custom-checkbox input[type="checkbox"]:checked + label:before {
+	border-color:#cc0000;
+	background:#cc0000;
+}
+ul.social-info.info-list li i {
+    color:#cc0000;
+}
+.cover-buttons .btn-outlined:hover, .cover-buttons .btn-outlined:focus {
+    color:#cc0000;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+}
+/*---Testimonial---*/
+.testimonials-2 .testimonial-detail .testimonial-title {
+    color:#cc0000;
+}
+.testimonials-2 .owl-theme .owl-controls .owl-page.active span, .testimonials-2 .owl-theme .owl-controls.clickable .owl-page:hover span {
+    border: 4px solid #cc0000;
+}
+.testimonials-2 .owl-theme .owl-controls .owl-page span {
+    border: 2px solid #cc0000;
+}
+/*-----Accordion Style -----*/
+#accordion .panel-title a:after, #accordion .panel-title a.collapsed:after {
+    color:#cc0000;
+}
+#accordion2 .panel-title a:after, #accordion2 .panel-title a.collapsed:after {
+
+    color:#cc0000;
+}
+#accordion2.panel-group.style-2 .panel-title a.collapsed {
+    color: #ffffff;
+    background:#cc0000;
+}
+/*---Tab Style---*/
+.tab .nav-tabs li a:hover, .tab .nav-tabs li.active a {
+    color:#cc0000;
+    border-bottom: 2px solid #cc0000;
+}
+.tab .nav-tabs li a:hover, .tab .nav-tabs li.active a {
+    color:#cc0000;
+    border-bottom: 2px solid #cc0000;
+}
+.tab.style-2 .nav-tabs li a:hover, .tab.style-2 .nav-tabs li.active a {
+    color: #ffffff;
+    border-bottom: 2px solid #cc0000;
+    background:#cc0000;
+}
+.form-control:hover, .form-control:focus {
+    border: 1px solid #cc0000;
+}
+.footer-copyright p a {
+    color: #cc0000;
+}
+.footer-social li a:hover i {
+    background: #cc0000;
+    color: #ffffff;
+}
+.verticleilist.listing-shot:hover span.like-listing i, .verticleilist.listing-shot:focus span.like-listing i {
+    background: #cc0000;
+    border: 1px solid #cc0000;
+}
+.small-list-detail p a, p a {
+    color: #cc0000;
+}
+.quote-card::before {
+    color:#cc0000;
+}
+.quote-card cite {
+    color:#cc0000;
+}
+ol.check-listing > li:before, ul.check-listing > li:before {
+    color: #cc0000;
+}
+.service-box:before {
+    border-left: 1px solid #cc0000;
+    border-right: 1px solid #cc0000;
+}
+.service-box .read a:hover, .service-box:hover .service-icon i {
+    color: #cc0000;
+}
+.service-box:hover .service-icon i, .service-box:hover .service-content h3 a {
+    color: #cc0000;
+}
+.bootstrap-select.btn-group .dropdown-menu li a:hover {
+    background: #cc0000;
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
+    background-color:#cc0000;
+}
+.service-box:after {
+    border-bottom: 1px solid #cc0000;
+    border-top: 1px solid #cc0000;
+}
+/*-----Radio button & Range Slider-------*/
+.custom-radio [type="radio"]:checked + label:after,
+.custom-radio [type="radio"]:not(:checked) + label:after {
+    background:#cc0000;
+}
+.range-slider .slider-selection {
+    background:#cc0000;
+}
+.range-slider .slider-handle.round {
+    border: 2px solid #cc0000;
+}
+
+@media only screen and (min-width: 1024px){
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li > a:hover, nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li > a:focus {
+    color: #cc0000;
+}
+}
+@media only screen and (min-width: 993px){
+body nav.navbar.bootsnav.navbar-transparent ul.nav > li > a.addlist {
+    background:#cc0000 !important;
+}
+body nav.navbar.bootsnav ul.nav > li > a.addlist {
+    background:#cc0000 !important;
+}
+}
