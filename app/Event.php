@@ -32,6 +32,7 @@ class Event extends Model
     public function path()
     {
         return '/view/' . $this->id . '/' . $this->slug;
+
     }
 
     public function owner()

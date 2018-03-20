@@ -3,7 +3,7 @@
                         <ul class="errorlist">
                             @foreach ($errors->get($field) as $message)
                                 <li>
-                        {{$message}}
+                        {{__($message)}}
                             </li>
                             @endforeach
                         </ul></span>

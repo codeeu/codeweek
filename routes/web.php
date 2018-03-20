@@ -60,6 +60,9 @@ Route::get('/my', 'EventController@my')->name('my_events');
 
 Route::post('/events', 'EventController@store');
 
+Route::resource('school', 'SchoolController');
+
+
 
 Auth::routes();
 

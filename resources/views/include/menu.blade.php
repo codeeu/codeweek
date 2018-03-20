@@ -20,6 +20,14 @@
         </li>
 
         <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">@lang('school.school')</a>
+            <ul class="dropdown-menu animated fadeOutUp">
+                <li><a href="{{route('school.create')}}">@lang('school.add')</a></li>
+                <li><a href="{{route('school.index')}}">@lang('school.list')</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown">
 
 
             <ul class="">
