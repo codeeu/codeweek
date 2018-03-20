@@ -8,9 +8,12 @@
                 @foreach($schools as $school)
                     <li>
                         {{$school->name}}
+                        @foreach($school->users as $users)
+                            - {{$users->name}}
+                        @endforeach
                     </li>
                 @endforeach
-                    {{ $schools->links() }}
+                {{ $schools->links() }}
             </ul>
         </div>
     </section>
