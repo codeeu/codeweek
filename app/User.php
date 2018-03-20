@@ -30,4 +30,9 @@ class User extends Authenticatable
     public function events(){
         return $this->hasMany('App\Event','creator_id');
     }
+
+    public function schools()
+    {
+        return $this->belongsToMany('App\School');
+    }
 }

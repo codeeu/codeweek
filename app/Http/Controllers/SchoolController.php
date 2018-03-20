@@ -57,6 +57,7 @@ class SchoolController extends Controller
         ]);
 
         $school = School::create($request->toArray());
+        $school->users()->attach(auth()->id());
 
 
 

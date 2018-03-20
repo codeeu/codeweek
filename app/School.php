@@ -13,4 +13,9 @@ class School extends Model
     {
         return '/school/' . $this->id;
     }
+
+    public function users()
+    {
+        return $this->belongsToMany('App\User');
+    }
 }

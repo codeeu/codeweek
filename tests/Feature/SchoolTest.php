@@ -12,6 +12,7 @@ class SchoolTest extends TestCase
 {
 
     use DatabaseMigrations;
+
     /** @test */
     public function a_guest_can_not_create_school()
     {
@@ -41,9 +42,43 @@ class SchoolTest extends TestCase
 
         $school = School::where('name', $school->name)->first();
 
-        $this->get($school->path())->assertSee($school->name);
+        $this->get($school->path())
+            ->assertSee($school->name);
+        $user = $school->users->first();
+
+        $this->assertEquals($user->name, auth()->user()->name);
+
 
     }
+
+    /** @test */
+    function school_can_have_multiple_members()
+    {
+        $this->signIn(create('App\User', ['name' => 'JohnDoe']));
+
+        $this->assertEquals(sizeof(auth()->user()->schools), 0);
+        $school = create('App\School');
+
+        $school->users()->attach(create('App\User', [], 3));
+
+        $this->assertEquals(sizeof($school->users), 3);
+
+    }
+
+    /** @test */
+    function user_can_be_member_of_multiple_schools()
+    {
+        $this->signIn(create('App\User', ['name' => 'JohnDoe']));
+
+        $this->assertEquals(sizeof(auth()->user()->schools), 0);
+
+        auth()->user()->schools()->attach(create('App\School', [], 4));
+
+        $this->assertEquals(sizeof(auth()->user()->fresh()->schools), 4);
+
+
+    }
+
 
 }
 
