@@ -5,6 +5,8 @@ use Faker\Generator as Faker;
 $factory->define(App\Event::class, function (Faker $faker) {
     static $password;
 
+    $event_date = $faker->dateTimeBetween($start='-1month',$end='+1month');
+
     return [
         'status' => $faker->name,
         'title' => $faker->text(40),
@@ -14,8 +16,8 @@ $factory->define(App\Event::class, function (Faker $faker) {
         'geoposition' => $faker->longitude . ',' . $faker->latitude,
         'location' => $faker->address,
         'country' => $faker->countryCode,
-        'start_date' => $faker->dateTime,
-        'end_date' => $faker->dateTime,
+        'start_date' => $event_date,
+        'end_date' => $event_date,
         'event_url' => $faker->url,
         'contact_person' => $faker->email,
         'picture' => $faker->text(100),

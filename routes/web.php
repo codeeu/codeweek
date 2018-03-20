@@ -46,9 +46,8 @@ Route::get('/schools', function () {
     return view('schools');
 })->name('schools');
 
-Route::get('/scoreboard', function () {
-    return view('scoreboard');
-})->name('scoreboard');
+Route::get('/scoreboard', 'ScoreboardController@index')->name('scoreboard');
+
 
 Route::get('/profile', function () {
     return view('profile');
