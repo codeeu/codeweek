@@ -3,7 +3,7 @@
 @section('content')
     <section>
         <div class="container">
-            School page
+            <h3>Schools</h3>
             <ul>
                 @foreach($schools as $school)
                     <li>
