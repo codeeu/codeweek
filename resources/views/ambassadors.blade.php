@@ -2,8 +2,9 @@
 
 @section('content')
 <section>
-
-    Ambassadors page
+<div class="container">
+    <h3>Ambassadors</h3>
+</div>
 </section>
 
 @endsection

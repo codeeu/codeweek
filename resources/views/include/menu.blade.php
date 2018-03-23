@@ -15,7 +15,6 @@
                 <li><a href="{{route('scoreboard')}}">Scoreboard</a></li>
                 <li><a href="{{route('guide')}}">Guide</a></li>
                 <li><a href="{{route('ambassadors')}}">Ambassadors</a></li>
-                <li><a href="{{route('schools')}}">Schools</a></li>
             </ul>
         </li>
 
