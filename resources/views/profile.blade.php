@@ -1,9 +1,16 @@
 @extends("layout.app")
 
 @section('content')
-<section>
-
-    Profile page
-</section>
+    <section>
+<div class="container">
+        Profile page
+<br/>
+        @role('super admin')
+        I am a super admin!
+        @else
+            I am not an admin...
+            @endrole
+    </section>
+    </div>
 
 @endsection
