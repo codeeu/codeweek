@@ -6,7 +6,14 @@
             <h3>Activities</h3>
 
             @foreach($activities as $activity)
-                <a href="{{$activity->subject->path()}}"> {{$activity->description}} </a><br/>
+                <a href="{{$activity->subject->path()}}"> {{$activity->description}} </a>
+                @if($activity->causer)
+                by {{$activity->causer->name}}
+                @else
+                 by system
+                @endif
+
+                <br/>
             @endforeach
 
             {{ $activities->links() }}
