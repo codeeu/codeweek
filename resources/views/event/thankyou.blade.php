@@ -2,7 +2,7 @@
 
 @section('content')
 
-
+<section>
 
     <div class="container">
         <h1>Thanks for adding your event!</h1>
@@ -14,5 +14,7 @@
             <a href="{{route('ambassadors')}}">national ambassadors</a> or send us an <a
                     href="mailto:info@codeweek.eu?subject=Code Week events">email</a>.</p>
     </div>
+
+</section>
 
 @endsection

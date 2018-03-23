@@ -5,12 +5,15 @@ namespace App;
 use App\Filters\EventFilters;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+use Spatie\Activitylog\Traits\LogsActivity;
 
 class Event extends Model
 {
+    use LogsActivity;
+
     protected $table = 'events';
     protected $fillable = [
-        'status', 'title','slug', 'organizer', 'description',
+        'status', 'title', 'slug', 'organizer', 'description',
         'geoposition',
         'location',
         'country',
@@ -27,6 +30,13 @@ class Event extends Model
         'name_for_certificate'
 
     ];
+
+    public function getDescriptionForEvent(string $eventName): string
+    {
+        return "Event " . $this->id . " has been {$eventName}";
+    }
+
+    protected static $logFillable = true;
 
 
     public function path()

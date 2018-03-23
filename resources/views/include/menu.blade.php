@@ -34,7 +34,8 @@
 
                 <form method="get" action="/setlocale/">
 
-                    <select class="form-control custom-select custom-select-sm" name="locale" onchange="this.form.submit()" >
+                    <select class="form-control custom-select custom-select-sm" name="locale"
+                            onchange="this.form.submit()">
                         @foreach ($locales as $key => $value)
                             <option value="{{ $value }}"
                                     @if ($value == session('locale'))
@@ -53,7 +54,6 @@
         </li>
 
 
-
         <!--<li><a  href="javascript:void(0)"  data-toggle="modal" data-target="#signup">Sign In</a></li>-->
     </ul>
 </div>
@@ -62,10 +62,16 @@
 
     @if (Auth::check())
         <li class="no-pd dropdown">
-            <a href="#" class="addlist"><img src="{{asset('img/avatar.jpg')}}" class="img-responsive img-circle avater-img" alt="" /><strong>{{ Auth::user()->name }}</strong></a>
+            <a href="#" class="addlist"><img src="{{asset('img/avatar.jpg')}}"
+                                             class="img-responsive img-circle avater-img"
+                                             alt=""/><strong>{{ Auth::user()->name }}</strong></a>
             <ul class="dropdown-menu animated navbar-left fadeOutUp">
                 <li><a href="{{route('profile')}}">Profile</a></li>
                 <li><a href="{{route('my_events')}}">My Events</a></li>
+
+                @role('super admin')
+                <li><a href="{{route('activities')}}">Activities</a></li>
+                @endrole
 
                 <li>
 

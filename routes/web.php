@@ -58,9 +58,14 @@ Route::get('view/{event}/{slug}', 'EventController@show')->name('view_event');
 
 Route::get('/my', 'EventController@my')->name('my_events');
 
+
 Route::post('/events', 'EventController@store');
 
 Route::resource('school', 'SchoolController');
+
+Route::group(['middleware' => ['role:super admin']], function () {
+    Route::get('/activities', 'AdminController@activities')->name('activities');
+});
 
 
 
