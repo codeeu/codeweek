@@ -4,7 +4,7 @@
 <section>
     <div class="container">
 
-    Scoreboard page
+        <h3>Scoreboard page</h3>
     @foreach($events as $event)
         Event: {{$event->country}} - {{$event->total}} - {{$event->country_name}}<br/><br/>
         @endforeach
