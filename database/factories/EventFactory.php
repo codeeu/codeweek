@@ -15,7 +15,9 @@ $factory->define(App\Event::class, function (Faker $faker) {
         'description' => $faker->text,
         'geoposition' => $faker->longitude . ',' . $faker->latitude,
         'location' => $faker->address,
-        'country' => $faker->countryCode,
+        'country_iso' => function () {
+            return factory('App\Country')->create()->iso;
+        },
         'start_date' => $event_date,
         'end_date' => $event_date,
         'event_url' => $faker->url,

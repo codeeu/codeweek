@@ -13,7 +13,7 @@ class CreateCountriesTables extends Migration
      */
     public function up()
     {
-        Schema::create('countries_plus_country', function (Blueprint $table) {
+        Schema::create('countries', function (Blueprint $table) {
 
             $table->string("iso");
             $table->string("name");

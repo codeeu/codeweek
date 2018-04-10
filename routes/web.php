@@ -38,9 +38,7 @@ Route::get('/guide', function () {
     return view('guide');
 })->name('guide');
 
-Route::get('/ambassadors', function () {
-    return view('ambassadors');
-})->name('ambassadors');
+Route::get('/ambassadors', 'AmbassadorController@index')->name('ambassadors');
 
 Route::get('/scoreboard', 'ScoreboardController@index')->name('scoreboard');
 

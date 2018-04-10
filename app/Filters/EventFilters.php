@@ -12,17 +12,18 @@ class EventFilters extends Filters
      *
      * @var array
      */
-    protected $filters = ['country', 'past', 'q', 'theme', 'audience'];
+    protected $filters = ['country_iso', 'past', 'q', 'theme', 'audience'];
 
     /**
      * Filter the query by country
      *
-     * @param  string $country
+     * @param  string $country_iso
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    protected function country($country)
+    protected function country_iso($country_iso)
     {
-        $result = $this->builder->where('country', $country);
+
+        $result = $this->builder->where('country_iso', $country_iso);
         return $result;
     }
 

@@ -14,17 +14,14 @@ class ScoreboardTest extends TestCase
     use DatabaseMigrations;
 
 
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
-    public function testExample()
+
+    /** @test */
+    public function scoreboard_should_show_upcoming_events()
     {
         $belgium = create('App\Country', ['iso'=>'BE','name'=>'Belgium']);
         $luxembourg = create('App\Country', ['iso'=>'LU','name'=>'Luxembourg']);
-        $eventsInBelgium = create('App\Event', ['country'=>'BE','end_date'=>Carbon::tomorrow()],7);
-        $eventsInLuxembourg = create('App\Event', ['country'=>'LU','end_date'=>Carbon::yesterday()],1);
+        $eventsInBelgium = create('App\Event', ['country_iso'=>'BE','end_date'=>Carbon::tomorrow()],7);
+        $eventsInLuxembourg = create('App\Event', ['country_iso'=>'LU','end_date'=>Carbon::yesterday()],1);
 
         $this->get('scoreboard')
             ->assertSee('Belgium')

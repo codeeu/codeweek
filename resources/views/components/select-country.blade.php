@@ -1,5 +1,5 @@
 
-<select class="search-form-element" id="id_country" name="country">
+<select class="search-form-element" id="id_country" name="country_iso">
     <option value=""> All countries</option>
     <option value="">---------------</option>
 

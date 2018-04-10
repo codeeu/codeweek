@@ -3,12 +3,31 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class Country extends Model
 {
-    protected $table = 'countries_plus_country';
-    protected $primaryKey = 'ISO';
+    protected $table = 'countries';
+    protected $primaryKey = 'iso';
     public $incrementing = false;
 
-    public $guarded=[];
+    public $guarded = [];
+
+
+    public static function withEvents()
+    {
+
+        $countries = Country::has('events')->get();
+
+        return $countries;
+
+    }
+
+    public function events()
+    {
+
+        return $this->hasMany('App\Event');
+
+    }
+
 }

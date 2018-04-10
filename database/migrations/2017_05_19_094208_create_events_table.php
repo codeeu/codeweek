@@ -23,7 +23,7 @@ class CreateEventsTable extends Migration
             $table->longText('description');
             $table->string('geoposition', 42);
             $table->string('location', 1000);
-            $table->string('country', 2);
+            $table->string('country_iso', 2);
             $table->dateTime('start_date');
             $table->dateTime('end_date');
             $table->string('event_url', 200)->nullable();

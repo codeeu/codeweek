@@ -6,7 +6,7 @@
 
         <h3>Scoreboard page</h3>
     @foreach($events as $event)
-        Event: {{$event->country}} - {{$event->total}} - {{$event->country_name}}<br/><br/>
+        Event: {{$event->country_name}} - {{$event->total}} <br/><br/>
         @endforeach
 
     </div>

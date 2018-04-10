@@ -16,7 +16,7 @@ class Event extends Model
         'status', 'title', 'slug', 'organizer', 'description',
         'geoposition',
         'location',
-        'country',
+        'country_iso',
         'start_date',
         'end_date',
         'event_url',
@@ -43,6 +43,11 @@ class Event extends Model
     {
         return '/view/' . $this->id . '/' . $this->slug;
 
+    }
+
+    public function country()
+    {
+        return $this->belongsTo('App\Country','country_iso','iso');
     }
 
     public function owner()

@@ -9,7 +9,7 @@ use Spatie\Permission\Exceptions\UnauthorizedException;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
-class SearchEventTest extends TestCase
+class RouteProtectionTest extends TestCase
 {
     use DatabaseMigrations;
 
@@ -57,13 +57,11 @@ class SearchEventTest extends TestCase
         foreach ($restricted as $restricted_user) {
             $this->signIn($restricted_user);
             $this->get($route)->assertStatus(403);
-            //var_dump("OK" . $restricted_user);
         }
 
         foreach ($allowed as $allowed_user) {
             $this->signIn($allowed_user);
             $this->get($route)->assertStatus(200);
-            //var_dump("OK" . $allowed_user);
         }
 
 

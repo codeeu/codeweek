@@ -28,6 +28,9 @@ class UserSeeder extends Seeder
         $admin = User::where('email','alainvd@gmail.com')->firstOrFail();
         $admin->assignRole('super admin');
 
+        $ambassador = User::where('email','alainvd@hotmail.com')->firstOrFail();
+        $ambassador->assignRole('ambassador');
+
 
     }
 }

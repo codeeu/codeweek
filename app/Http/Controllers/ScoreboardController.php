@@ -13,14 +13,17 @@ class ScoreboardController extends Controller
     {
 
 
-        /*$events = Event::
+/*        $events = Event::
             groupBy('country')
             ->whereDate('end_date', '>', Carbon::now('Europe/Stockholm'))
+            ->orderBy('country_count','desc')
             ->get();
 */
+//        dd($events);
+
         $events = DB::table('events')
-            ->join('countries_plus_country', 'events.country', '=', 'countries_plus_country.iso')
-            ->select('country', 'countries_plus_country.name as country_name',DB::raw('count(*) as total'))
+            ->join('countries', 'events.country_iso', '=', 'countries.iso')
+            ->select('country', 'countries.name as country_name',DB::raw('count(*) as total'))
             ->whereDate('end_date', '>', Carbon::now('Europe/Brussels'))
             ->groupBy('country')
             ->orderBy('total','desc')

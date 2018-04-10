@@ -74,7 +74,7 @@ class EventController extends Controller
             'end_date'=>'required',
             'audience'=>'required',
             'theme'=>'required',
-            'country'=>'required',
+            'country_iso'=>'required',
             'contact_person'=>'required',
 //            'tags'=>'required'
         ],[
@@ -86,7 +86,7 @@ class EventController extends Controller
             'end_date.required' => 'Please enter a valid date and time (example: 2014-10-22 18:00).',
             'audience.required' => 'If unsure, choose Other and provide more information in the description.',
             'theme.required' => 'If unsure, choose Other and provide more information in the description.',
-            'country.required' => 'The event\'s location should be in Europe.',
+            'country_iso.required' => 'The event\'s location should be in Europe.',
 //            'tags.required' => 'Please type in some tags to categorize the event',
             'contact_person.required' => 'Please enter a valid email address.',
 
