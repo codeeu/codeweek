@@ -23,11 +23,13 @@ class ScoreboardController extends Controller
 
         $events = DB::table('events')
             ->join('countries', 'events.country_iso', '=', 'countries.iso')
-            ->select('country', 'countries.name as country_name',DB::raw('count(*) as total'))
+            ->select('countries.iso', 'countries.name as country_name',DB::raw('count(*) as total'))
             ->whereDate('end_date', '>', Carbon::now('Europe/Brussels'))
-            ->groupBy('country')
+            ->groupBy('countries.iso')
             ->orderBy('total','desc')
             ->get();
+
+
 
         return view('scoreboard', ['events'=>$events]);
     }
