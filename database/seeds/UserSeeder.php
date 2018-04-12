@@ -13,24 +13,24 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
+
+        create('App\User',[
             'name' => 'Alain Van Driessche',
             'email' => 'alainvd@gmail.com',
-            'password' => bcrypt('secret'),
-        ]);
+            'password' => bcrypt('secret')
+        ])->assignRole('super admin');
 
-        DB::table('users')->insert([
+
+        create('App\User',[
             'name' => 'Alain Van Driessche',
             'email' => 'alainvd@hotmail.com',
-            'password' => bcrypt('secret'),
-        ]);
+            'password' => bcrypt('secret')
+        ])->assignRole('ambassador');
 
-        $admin = User::where('email','alainvd@gmail.com')->firstOrFail();
-        $admin->assignRole('super admin');
 
-        $ambassador = User::where('email','alainvd@hotmail.com')->firstOrFail();
-        $ambassador->assignRole('ambassador');
-
+        for($i = 1; $i < 150; $i++){
+            create('App\User')->assignRole('ambassador');
+        }
 
     }
 }

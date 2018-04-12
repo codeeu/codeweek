@@ -31,6 +31,7 @@ class Event extends Model
 
     ];
 
+
     public function getDescriptionForEvent(string $eventName): string
     {
         return "Event " . $this->id . " has been {$eventName}";

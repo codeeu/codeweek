@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Spatie\Permission\Traits\HasRoles;
+use App\Filters\UserFilters;
 
 class User extends Authenticatable
 {
@@ -41,6 +42,11 @@ class User extends Authenticatable
     public function country()
     {
         return $this->belongsTo('App\Country','country_iso','iso');
+    }
+
+    public function scopeFilter($query, UserFilters $filters)
+    {
+        return $filters->apply($query);
     }
 
 

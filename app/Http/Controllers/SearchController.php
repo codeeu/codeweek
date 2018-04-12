@@ -14,8 +14,6 @@ class SearchController extends Controller
 
         $events = $this->getEvents($filters);
 
-
-
         return view('event.search', compact(['events']));
     }
 
