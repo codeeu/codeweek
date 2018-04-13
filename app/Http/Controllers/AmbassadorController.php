@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Country;
 use App\Filters\UserFilters;
 use App\User;
 use Illuminate\Http\Request;
@@ -18,12 +19,12 @@ class AmbassadorController extends Controller
         // Get list of countries with events
         // Show ambassador(s) for selected country
 
-        $ambassadors = User::role('ambassador')->filter($filters)->paginate(1);
+        $ambassadors = User::role('ambassador')->filter($filters)->paginate(10);
         $countries = [];
 
         return view('ambassadors')->with([
             "ambassadors"=>$ambassadors,
-            "countries"=>$countries
+            "countries"=>Country::withEvents()
         ]);
     }
 

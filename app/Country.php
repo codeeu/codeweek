@@ -17,7 +17,7 @@ class Country extends Model
     public static function withEvents()
     {
 
-        $countries = Country::has('events')->get();
+        $countries = Country::has('events')->orderBy('iso')->get()->unique();
 
         return $countries;
 
