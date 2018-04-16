@@ -17,7 +17,7 @@ class AppServiceProvider extends ServiceProvider
 
         View::share('locales', config('app.locales'));
 
-        \View::composer(['event.add','event.search'], function ($view) {
+        \View::composer(['event.add','event.search','profile'], function ($view) {
             $view->with('audiences', \App\Audience::all());
             $view->with('EUcountries', \App\Country::where('continent','=','EU')->orderBy('name','asc')->get());
             $view->with('themes', \App\Theme::orderBy('order', 'asc')->get());

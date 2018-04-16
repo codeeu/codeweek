@@ -9,6 +9,7 @@ $factory->define(App\Event::class, function (Faker $faker) {
     $event_date = $faker->dateTimeBetween($start = '-1month', $end = '+1month');
 
     $countries = Country::all()->pluck('iso')->toArray();
+    if (empty($countries)) $countries[0] = factory('App\Country')->create()->iso;
 
 
 

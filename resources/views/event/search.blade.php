@@ -20,7 +20,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <label for="id_country">Select country</label><br/>
-                          @component('components.select-country',['countries'=>$EUcountries])
+                          @component('components.select-country',['countries'=>$EUcountries, 'country_iso'=>session('country_iso')])
                               @endcomponent
 
                             <div class="search-checkbox">

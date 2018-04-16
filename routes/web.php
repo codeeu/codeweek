@@ -61,6 +61,8 @@ Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/activities', 'AdminController@activities')->name('activities');
 });
 
+Route::patch('user', 'UserController@update')->name('user.update');
+
 
 
 Auth::routes();

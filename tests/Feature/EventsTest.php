@@ -18,7 +18,7 @@ class EventsTest extends TestCase
     public function setup()
     {
         parent::setUp();
-        $this->event = create('App\Event');
+        $this->event = create('App\Event', ["country_iso" => create('App\Country')->iso]);
 
         $this->event->audiences()->saveMany(factory('App\Audience', 3)->make());
         $this->event->themes()->saveMany(factory('App\Theme', 3)->make());

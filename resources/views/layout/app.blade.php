@@ -14,6 +14,9 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="robots" content="index,follow">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
 
     <title>Listing Hub - Listing & Directory Template | ThemezHub</title>
 
@@ -43,20 +46,29 @@
     <link href="{{asset('css/responsiveness.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('css/colors/amber.css')}}" rel="stylesheet" type="text/css">
 
+    <script>
+        window.App = {!! json_encode([
+            'csrfToken' => csrf_token(),
+            'user' => Auth::user(),
+            'signedIn' => Auth::check()
+        ]) !!};
+    </script>
+
     @stack('css')
 
 </head>
 <body>
-<div class="wrapper">
+<div class="wrapper" id="app">
     <!-- Start Navigation -->
 
-@include('include.header')
+        @include('include.header')
+
+        @yield('content')
 
 
+    <flash message="{{ session('flash') }}"></flash>
 
-    @section('content')
 
-    @show
 
 
     @include('include.footer')
@@ -64,8 +76,13 @@
 
     @include('include.login')
 
+
+
     <a id="back2Top" class="theme-bg" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
 
+</div>
+
+<script src="{{ asset('js/app.js') }}"></script>
 
     <!-- START JAVASCRIPT -->
     <!-- Jquery js-->
@@ -92,14 +109,15 @@
     <script src="{{asset('plugins/jquery-counter/js/jquery.counterup.min.js')}}"></script>
 
 
-    @stack('scripts')
 
 
-    <!-- Custom Js -->
-    <script src="{{asset('js/custom.js')}}"></script>
+@stack('scripts')
+
+
+<!-- Custom Js -->
+<!-- <script src="{{asset('js/custom.js')}}"></script> -->
 
 
 
-</div>
 </body>
 </html>

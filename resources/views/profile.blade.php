@@ -3,13 +3,63 @@
 @section('content')
     <section>
         <div class="container">
-            Profile page
-            <br/>
+            Profile page -
             @role('super admin')
-            I am a super admin!
+            Super admin detected!
             @else
                 I am not an admin...
                 @endrole
+
+            <form method="POST" action="{{ route('user.update') }}">
+
+
+                    {{ method_field('PATCH') }}
+                {{ csrf_field() }}
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name" name="name"
+                           value="{{auth()->user()->name}}">
+
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email"
+                           value="{{auth()->user()->email}}">
+                </div>
+
+                <div class="form-group">
+                    <label for="twitter">Twitter</label>
+                    <input type="text" class="form-control" id="twitter" placeholder="Twitter" name="twitter"
+                           value="{{auth()->user()->twitter}}">
+                </div>
+
+                <div class="form-group">
+                    <label for="twitter">Your Website</label>
+                    <input type="text" class="form-control" id="website" placeholder="Website" name="website"
+                           value="{{auth()->user()->website}}">
+                </div>
+
+                <div class="form-group">
+                    <label for="twitter">Bio</label>
+                    <input type="text" class="form-control" id="bio" placeholder="Bio" name="bio"
+                           value="{{auth()->user()->bio}}">
+                </div>
+
+                <label for="id_country">Select country</label><br/>
+                @component('components.select-country',['countries'=>$EUcountries, 'country_iso'=>auth()->user()->country->iso])
+                @endcomponent
+                <br/>
+                <br/>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-default">Update</button>
+                </div>
+
+            </form>
+
+
+            <br/>
+
         </div>
     </section>
 

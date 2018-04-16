@@ -28,7 +28,7 @@ class UserSeeder extends Seeder
         ])->assignRole('ambassador');
 
 
-        for($i = 1; $i < 150; $i++){
+        for($i = 1; $i < 60; $i++){
             create('App\User')->assignRole('ambassador');
         }
 

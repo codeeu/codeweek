@@ -5,7 +5,7 @@
 
     @foreach($countries as $country)
         <option value="{{$country->iso}}"
-        {{ (session('country') == $country->iso)?'selected':'' }}
+        {{ ($country_iso == $country->iso)?'selected':'' }}
                 >{{$country->name}}</option>
         @endforeach
 
