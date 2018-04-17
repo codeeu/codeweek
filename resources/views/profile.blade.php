@@ -17,9 +17,15 @@
                 {{ csrf_field() }}
 
                 <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Name" name="name"
-                           value="{{auth()->user()->name}}">
+                    <label for="firstname">First Name</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="Name" name="firstname"
+                           value="{{auth()->user()->firstname}}">
+
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Name" name="lastname"
+                           value="{{auth()->user()->lastname}}">
 
                 </div>
                 <div class="form-group">
@@ -29,7 +35,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="twitter">Twitter</label>
+                    <label for="twitter">Twitter Handle</label>
                     <input type="text" class="form-control" id="twitter" placeholder="Twitter" name="twitter"
                            value="{{auth()->user()->twitter}}">
                 </div>

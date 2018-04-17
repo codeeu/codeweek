@@ -63,7 +63,7 @@
         <li class="no-pd dropdown">
             <a href="#" class="addlist"><img src="{{asset('img/avatar.jpg')}}"
                                              class="img-responsive img-circle avater-img"
-                                             alt=""/><strong>{{ Auth::user()->name }}</strong></a>
+                                             alt=""/><strong>{{ Auth::user()->firstname }} {{ Auth::user()->lastname }}</strong></a>
             <ul class="dropdown-menu animated navbar-left fadeOutUp">
                 <li><a href="{{route('profile')}}">Profile</a></li>
                 <li><a href="{{route('my_events')}}">My Events</a></li>

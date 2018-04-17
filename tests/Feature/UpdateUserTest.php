@@ -19,7 +19,8 @@ class UpdateUserTest extends TestCase
 
 
         $this->patch('user', [
-            'name' => 'Changed',
+            'firstname' => 'Changed firstname',
+            'lastname' => 'Changed lastname',
             'email' => 'newmail@test.com',
             'bio' => 'Changed Bio',
             'twitter' => 'Changed Twitter',
@@ -28,7 +29,8 @@ class UpdateUserTest extends TestCase
         ]);
 
         tap($user->fresh(), function ($user) {
-            $this->assertEquals('Changed', $user->name);
+            $this->assertEquals('Changed firstname', $user->firstname);
+            $this->assertEquals('Changed lastname', $user->lastname);
             $this->assertEquals('Changed Bio', $user->bio);
             $this->assertEquals('Changed Twitter', $user->twitter);
             $this->assertEquals('Changed Website', $user->website);

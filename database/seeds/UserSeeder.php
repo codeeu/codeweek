@@ -15,14 +15,16 @@ class UserSeeder extends Seeder
     {
 
         create('App\User',[
-            'name' => 'Alain Van Driessche',
+            'firstname' => 'Alain',
+            'lastname' => 'Van Driessche',
             'email' => 'alainvd@gmail.com',
             'password' => bcrypt('secret')
         ])->assignRole('super admin');
 
 
         create('App\User',[
-            'name' => 'Alain Van Driessche',
+            'firstname' => 'Alain',
+            'lastname' => 'Van Driessche',
             'email' => 'alainvd@hotmail.com',
             'password' => bcrypt('secret')
         ])->assignRole('ambassador');
