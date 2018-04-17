@@ -45,7 +45,7 @@ Route::get('/scoreboard', 'ScoreboardController@index')->name('scoreboard');
 
 Route::get('/profile', function () {
     return view('profile');
-})->name('profile');
+})->name('profile')->middleware('auth');
 
 
 Route::get('view/{event}/{slug}', 'EventController@show')->name('view_event');

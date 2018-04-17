@@ -12,9 +12,13 @@ class UserController extends Controller
 
 
         $user->update(request()->validate([
-            'name' => 'required'
+            'name' => 'required',
+            'country_iso' => 'nullable',
+            'twitter' => 'nullable',
+            'website' => 'nullable',
+            'bio' => 'nullable'
         ]));
 
-        return back()->with('flash', 'Your user has been modified!');;
+        return back()->with('flash', 'Your profile has been modified!');;
     }
 }

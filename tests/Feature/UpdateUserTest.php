@@ -19,11 +19,21 @@ class UpdateUserTest extends TestCase
 
 
         $this->patch('user', [
-            'name' => 'Changed'
+            'name' => 'Changed',
+            'email' => 'newmail@test.com',
+            'bio' => 'Changed Bio',
+            'twitter' => 'Changed Twitter',
+            'website' => 'Changed Website',
+            'country_iso' => 'AA'
         ]);
 
         tap($user->fresh(), function ($user) {
             $this->assertEquals('Changed', $user->name);
+            $this->assertEquals('Changed Bio', $user->bio);
+            $this->assertEquals('Changed Twitter', $user->twitter);
+            $this->assertEquals('Changed Website', $user->website);
+            $this->assertEquals('AA', $user->country_iso);
+            $this->assertNotEquals('newmail@test.com', $user->email);
         });
     }
 }
