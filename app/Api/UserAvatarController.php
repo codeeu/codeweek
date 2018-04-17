@@ -19,11 +19,11 @@ class UserAvatarController extends Controller
         ]);
 
 
-        Storage::disk('public')->delete(auth()->user()->getOriginal('avatar_path'));
+        Storage::disk('s3')->delete(auth()->user()->getOriginal('avatar_path'));
 
 
         auth()->user()->update([
-            'avatar_path' => request()->file('avatar')->store('avatars', 'public')
+            'avatar_path' => request()->file('avatar')->store('avatars', 's3')
         ]);
 
 
@@ -32,7 +32,7 @@ class UserAvatarController extends Controller
 
     public function delete(){
 
-        Storage::disk('public')->delete(auth()->user()->getOriginal('avatar_path'));
+        Storage::disk('s3')->delete(auth()->user()->getOriginal('avatar_path'));
 
         auth()->user()->update([
             'avatar_path' => NULL
