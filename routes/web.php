@@ -44,7 +44,9 @@ Route::get('/scoreboard', 'ScoreboardController@index')->name('scoreboard');
 
 
 Route::get('/profile', function () {
-    return view('profile');
+    $data = ['profileUser' => Auth()->user()];
+
+    return view('profile',$data);
 })->name('profile')->middleware('auth');
 
 
@@ -63,6 +65,8 @@ Route::group(['middleware' => ['role:super admin']], function () {
 
 Route::patch('user', 'UserController@update')->name('user.update');
 
+Route::post('api/users/{user}/avatar', 'Api\UserAvatarController@store')->middleware('auth')->name('avatar');
+Route::delete('api/users/avatar', 'Api\UserAvatarController@delete')->middleware('auth');
 
 
 Auth::routes();

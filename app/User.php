@@ -18,7 +18,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'firstname', 'lastname', 'email', 'password','bio','twitter','website','country_iso'
+        'firstname', 'lastname', 'avatar_path','email', 'password','bio','twitter','website','country_iso'
     ];
 
     /**
@@ -29,6 +29,8 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    protected $appends = ['fullName'];
 
     public function events(){
         return $this->hasMany('App\Event','creator_id');
@@ -47,6 +49,36 @@ class User extends Authenticatable
     public function scopeFilter($query, UserFilters $filters)
     {
         return $filters->apply($query);
+    }
+
+    /**
+     * Get the path to the user's avatar.
+     *
+     * @param  string $avatar
+     * @return string
+     */
+    public function getAvatarPathAttribute($avatar)
+    {
+        return asset($avatar ?: 'img/avatars/default.png');
+    }
+
+    /**
+     * Get a string path for the thread.
+     *
+     * @return string
+     */
+    public function fullName()
+    {
+        return  $this->firstname . " " . $this->lastname;
+    }
+
+    /**
+     * Fetch the path to the thread as a property.
+     */
+    public function getFullNameAttribute()
+    {
+
+        return $this->fullName();
     }
 
 
