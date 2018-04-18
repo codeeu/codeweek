@@ -38,11 +38,10 @@ class AmbassadorTest extends TestCase
 
         $this->withExceptionHandling();
 
-
         //$this->get('/ambassadors')->assertSee($this->ambassador_be->name);
-        $this->get('/ambassadors?country_iso=BE')->assertSee($this->ambassador_be->name);
-        $this->get('/ambassadors?country_iso=BE')->assertDontSee($this->ambassador_fr->name);
-        $this->get('/ambassadors?country_iso=BE')->assertDontSee($this->admin_be->name);
+        $this->get('/ambassadors?country_iso=BE')->assertSee($this->ambassador_be->lastname);
+        $this->get('/ambassadors?country_iso=BE')->assertDontSee($this->ambassador_fr->lastname);
+        $this->get('/ambassadors?country_iso=BE')->assertDontSee($this->admin_be->lastname);
 
 
     }

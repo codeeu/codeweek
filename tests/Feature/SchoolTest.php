@@ -54,7 +54,7 @@ class SchoolTest extends TestCase
     /** @test */
     function school_can_have_multiple_members()
     {
-        $this->signIn(create('App\User', ['name' => 'JohnDoe']));
+        $this->signIn(create('App\User', ['firstname'=>'John','lastname' => 'Doe']));
 
         $this->assertEquals(sizeof(auth()->user()->schools), 0);
         $school = create('App\School');
@@ -68,7 +68,7 @@ class SchoolTest extends TestCase
     /** @test */
     function user_can_be_member_of_multiple_schools()
     {
-        $this->signIn(create('App\User', ['name' => 'JohnDoe']));
+        $this->signIn(create('App\User', ['firstname'=>'John','lastname' => 'Doe']));
 
         $this->assertEquals(sizeof(auth()->user()->schools), 0);
 

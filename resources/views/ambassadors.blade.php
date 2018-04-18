@@ -11,7 +11,7 @@
             @endforeach
             <br/>
             @foreach($ambassadors as $ambassador)
-                Name: {{$ambassador->name}} - <a
+                Name: {{$ambassador->fullName}} - <a
                         href="/ambassadors?country_iso={{$ambassador->country->iso}}">{{$ambassador->country->iso}}</a>
                 <br/>
             @endforeach

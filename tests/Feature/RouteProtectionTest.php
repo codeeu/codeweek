@@ -23,16 +23,16 @@ class RouteProtectionTest extends TestCase
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
 
-        $this->admin = create('App\User',["name"=>"admin"]);
+        $this->admin = create('App\User');
         $this->admin->assignRole('super admin');
 
-        $this->ambassador = create('App\User',["name"=>"ambassador"]);
+        $this->ambassador = create('App\User');
         $this->ambassador->assignRole('ambassador');
 
-        $this->school_manager = create('App\User',["name"=>"school_manager"]);
+        $this->school_manager = create('App\User');
         $this->school_manager->assignRole('school manager');
 
-        $this->event_owner = create('App\User',["name"=>"event_owner"]);
+        $this->event_owner = create('App\User');
         $this->event_owner->assignRole('event owner');
 
     }
