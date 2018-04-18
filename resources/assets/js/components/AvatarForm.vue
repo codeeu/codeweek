@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="level">
-            <img :src="avatar" width="140" class="mr-1">
+            <img :src="avatar" class="mr-1">
 
             <h1>
                 {{ user.fullName }}
@@ -21,14 +21,10 @@
     import ImageUpload from './ImageUpload.vue';
 
     export default {
-        mounted() {
-            console.log('Component Avatar mounted.')
 
-            console.log(this.user)
-        },
         props: ['user'],
 
-        components: { ImageUpload },
+        components: {ImageUpload},
 
         data() {
             return {
@@ -50,7 +46,7 @@
 
         methods: {
             onLoad(avatar) {
-                this.avatar = avatar.src;
+                //this.avatar = avatar.src;
 
                 this.persist(avatar.file);
             },
@@ -61,7 +57,10 @@
                 data.append('avatar', avatar);
 
                 axios.post(`/api/users/${this.user.id}/avatar`, data)
-                    .then(() => flash('Avatar uploaded!'));
+                    .then((result) => {
+                        this.avatar = result.data.path;
+                        flash('Avatar uploaded!');
+                    })
             },
             remove() {
                 console.log("delete me");
