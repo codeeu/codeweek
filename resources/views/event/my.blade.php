@@ -6,7 +6,7 @@
 
 
     <div class="container">
-        <h1>All events created by {{ Auth::user()->name }}</h1>
+        <h1>All events created by {{ Auth::user()->fullName }}</h1>
 
         @if(!$events)
         <div class="row">

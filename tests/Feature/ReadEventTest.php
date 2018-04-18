@@ -12,7 +12,7 @@ class ReadEventTest extends TestCase
     /** @test */
     function a_user_can_filter_events_by_any_username()
     {
-        $this->signIn(create('App\User', ['name' => 'JohnDoe']));
+        $this->signIn(create('App\User'));
 
         $threadByJohn = create('App\Event', ['creator_id' => auth()->id()]);
         $threadNotByJohn = create('App\Event');

@@ -4,7 +4,7 @@ use App\Country;
 use Faker\Generator as Faker;
 
 $factory->define(App\Event::class, function (Faker $faker) {
-    static $password;
+
 
     $event_date = $faker->dateTimeBetween($start = '-1month', $end = '+1month');
 
