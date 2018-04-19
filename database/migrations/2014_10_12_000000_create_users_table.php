@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('twitter');
             $table->string('website');
             $table->string('bio');
-            $table->string('avatar_path');
+            $table->string('avatar_path')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
