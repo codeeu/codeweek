@@ -7,6 +7,12 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <script>
+        window.Laravel = <?php echo json_encode([
+            'csrfToken' => csrf_token(),
+        ]); ?>
+    </script>
+
 
     <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet" />
 
@@ -38,12 +44,6 @@
     <link href="{{asset('css/custom.css') }}" media="screen" rel="stylesheet" />
 
     @yield('extra-css')
-
-    <script>
-        window.Laravel = {!! json_encode([
-            'csrfToken' => csrf_token(),
-        ]) !!};
-    </script>
 
     <!-- Title, keywords, description -->
     <meta name="description" content="October 15 - 23, 2016: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding." />
@@ -87,6 +87,8 @@
         //Codeweek.Base.init();
 </script>
 <script src="{{asset('js/app.js')}}"></script>
+
+<script src="https://unpkg.com/vue-select@latest"></script>
 
 @yield('extra-js')
 
