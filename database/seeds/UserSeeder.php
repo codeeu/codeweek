@@ -30,6 +30,8 @@ class UserSeeder extends Seeder
         ])->assignRole('ambassador');
 
 
+        create('App\Event',['creator_id'=>1]);
+
         for($i = 1; $i < 60; $i++){
             create('App\User')->assignRole('ambassador');
         }
