@@ -26,6 +26,7 @@ class EventController extends Controller
     {
 
         $events = Event::where('creator_id', '=', Auth::user()->id)->orderBy('created_at','desc')->paginate(6);
+
         return view('event.my',compact('events'));
 
     }
