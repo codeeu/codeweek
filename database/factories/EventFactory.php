@@ -14,7 +14,7 @@ $factory->define(App\Event::class, function (Faker $faker) {
 
 
     return [
-        'status' => $faker->name,
+        'status' => $faker->randomElement(['APPROVED','PENDING','REJECTED']),
         'title' => $faker->text(40),
         'slug' => $faker->slug(2),
         'organizer' => $faker->company,

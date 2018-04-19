@@ -1657,7 +1657,8 @@ body nav.navbar.bootsnav ul.nav > li > a.addlist i {
     color:#ffb8c1;
 }
 .nav>li>a>img.avater-img {
-    max-width: 38px;
+    height: 40px;
+    width: 48px;
     float: left;
     vertical-align: middle;
     position: relative;

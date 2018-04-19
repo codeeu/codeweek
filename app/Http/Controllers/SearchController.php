@@ -20,7 +20,7 @@ class SearchController extends Controller
     protected function getEvents(EventFilters $filters)
     {
 
-        $events = Event::filter($filters);
+        $events = Event::where('status','not like','REJECTED')->filter($filters);
 
         return $events->paginate(10);
     }

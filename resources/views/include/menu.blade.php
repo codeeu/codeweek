@@ -61,13 +61,16 @@
 
     @if (Auth::check())
         <li class="no-pd dropdown">
-            <a href="#" class="addlist"><img src="{{asset('img/avatar.jpg')}}"
+            <a href="#" class="addlist"><img src="{{Auth::user()->avatar_path}}"
                                              class="img-responsive img-circle avater-img"
                                              alt=""/><strong>{{ Auth::user()->firstname }} {{ Auth::user()->lastname }}</strong></a>
             <ul class="dropdown-menu animated navbar-left fadeOutUp">
+                @role('ambassador|super admin')
+                <li><a href="{{route('pending')}}">Pending Events</a></li>
+                @endrole
+
                 <li><a href="{{route('profile')}}">Profile</a></li>
                 <li><a href="{{route('my_events')}}">My Events</a></li>
-
                 @role('super admin')
                 <li><a href="{{route('activities')}}">Activities</a></li>
                 @endrole

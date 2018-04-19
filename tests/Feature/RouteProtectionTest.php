@@ -51,6 +51,19 @@ class RouteProtectionTest extends TestCase
 
     }
 
+    /** @test */
+    public function only_admin_an_ambassadors_can_access_pending_events_list()
+    {
+
+        $this->withExceptionHandling();
+
+        $rejected = [$this->event_owner, $this->school_manager];
+        $allowed = [$this->admin, $this->ambassador];
+
+        $this->check_route('/pending', $allowed, $rejected);
+
+    }
+
     private function check_route($route, $allowed, $restricted)
     {
 
