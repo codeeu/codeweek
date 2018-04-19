@@ -61,9 +61,15 @@ Route::resource('school', 'SchoolController');
 
 Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/activities', 'AdminController@activities')->name('activities');
+    Route::get('/pending/{country}', 'PendingEventsController@index')->name('pending_by_country');
+});
+
+Route::group(['middleware' => ['role:super admin|ambassador']], function () {
+    Route::get('/pending', 'PendingEventsController@index')->name('pending');
 });
 
 Route::patch('user', 'UserController@update')->name('user.update');
+
 
 Route::post('api/users/{user}/avatar', 'Api\UserAvatarController@store')->middleware('auth')->name('avatar');
 Route::delete('api/users/avatar', 'Api\UserAvatarController@delete')->middleware('auth');
