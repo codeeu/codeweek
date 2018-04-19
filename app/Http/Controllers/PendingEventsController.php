@@ -12,8 +12,6 @@ class PendingEventsController extends Controller
     public function index(Country $country)
     {
 
-        var_dump($country->iso);
-
         $countries = Country::all();
 
         $events = Event::where(function ($query) {

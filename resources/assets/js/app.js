@@ -9,11 +9,14 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
-//Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+import example from './components/ExampleComponent.vue';
 
+import countrySelect from './components/CountrySelect.vue';
 import flash from './components/Flash.vue';
 import avatarForm from './components/AvatarForm.vue';
-import example from './components/ExampleComponent.vue';
+
+
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -28,6 +31,7 @@ const app = new Vue({
     components: {
         flash,
         avatarForm,
-        example
+        example,
+        countrySelect
     }
 });
