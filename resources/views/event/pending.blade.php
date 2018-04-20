@@ -3,8 +3,6 @@
 @section('content')
     <section>
 
-        ISO: {{$country_iso}}
-
         <div class="container">
             <h1>Pending Events</h1>
 

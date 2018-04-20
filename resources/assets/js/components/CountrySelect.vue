@@ -14,11 +14,6 @@
 
     export default {
         props: ['code', 'countries'],
-        mounted() {
-            console.log('mounted ', this.countries);
-            console.log('mounted ', this.code);
-
-        },
 
         data() {
             return {
