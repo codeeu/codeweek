@@ -64,6 +64,21 @@ class RouteProtectionTest extends TestCase
 
     }
 
+    /** @test */
+    public function only_admin_can_access_pending_events_by_countries()
+    {
+
+        $this->withExceptionHandling();
+
+        $country = create('App\Country');
+
+        $rejected = [$this->event_owner, $this->school_manager,  $this->ambassador];
+        $allowed = [$this->admin];
+
+        $this->check_route('/pending/' . $country->iso, $allowed, $rejected);
+
+    }
+
     private function check_route($route, $allowed, $restricted)
     {
 
