@@ -28,7 +28,8 @@ $factory->define(App\User::class, function (Faker $faker) {
         'country_iso' => $faker->randomElement($countries),
         'twitter'=>$faker->userName,
         'website'=>$faker->url,
-        'bio'=>$faker->text
+        'bio'=>$faker->text,
+        'avatar_path'=>'avatars/default.png'
 
     ];
 });
