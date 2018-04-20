@@ -6,29 +6,17 @@ use App\Country;
 use App\Event;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Queries\PendingEventsQuery;
+use App\Queries\CountriesQuery;
 
 class PendingEventsController extends Controller
 {
     public function index(Country $country = null)
     {
 
-        $countries = Country::all();
+        $countries = CountriesQuery::all();
 
-        $events = Event::where(function ($query) use ($country) {
-
-
-            if (!auth()->user()->hasRole('super admin')) {
-                $query->where('country_iso', '=', Auth::user()->country->iso);
-            }
-
-            if (!is_null($country)) {
-                $query->where('country_iso', '=', $country->iso);
-            }
-
-
-            $query->Where('status', 'like', 'PENDING');
-
-        })->orderBy('created_at', 'desc')->paginate(6);
+        $events = PendingEventsQuery::trigger($country);
 
         return view('event.pending', with([
             'country_iso' => is_null($country) ?'' : $country->iso,
