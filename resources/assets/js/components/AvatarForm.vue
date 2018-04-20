@@ -38,6 +38,7 @@
             },
             hasAvatar() {
 
+                console.log(this.avatar);
                 return this.avatar.split('/').pop() !== "default.png";
 
             }
@@ -68,7 +69,7 @@
                 axios.delete(`/api/users/avatar`)
                     .then(() => flash('Avatar deleted!'));
 
-                this.avatar = 'img/avatars/default.png';
+                this.avatar = 'https://s3-eu-west-1.amazonaws.com/codeweek-dev/avatars/default.png';
             }
         }
     }

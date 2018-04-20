@@ -60,9 +60,6 @@ class User extends Authenticatable
      */
     public function getAvatarPathAttribute($avatar)
     {
-        if ($avatar === "") {
-          return asset('img/avatars/default.png');
-        };
         return Storage::disk('s3')->url($avatar);
 
     }

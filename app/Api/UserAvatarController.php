@@ -2,12 +2,17 @@
 
 namespace App\Http\Controllers\Api;
 
+define("DEFAULT_AVATAR_PATH","avatars/default.png");
+
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
 
+
 class UserAvatarController extends Controller
 {
+
+
     /**
      * Store a new user avatar.
      *
@@ -20,12 +25,12 @@ class UserAvatarController extends Controller
         ]);
 
 
-        Storage::disk('s3')->delete(auth()->user()->getOriginal('avatar_path'));
+        //Storage::disk('s3')->delete(auth()->user()->getOriginal('avatar_path'));
 
 
         $file = request()->file('avatar');
 
-        $imageName = $file->getClientOriginalName();
+        $imageName = 'avatars/' . auth()->user()->getAuthIdentifier() . '/' . $file->getClientOriginalName();
 
         $img = Image::make($file);
 
@@ -37,25 +42,25 @@ class UserAvatarController extends Controller
         $resource = $img->stream()->detach();
 
         Storage::disk('s3')->put(
-            'my-s3-folder/' . $imageName,
+            $imageName,
             $resource
         );
 
         auth()->user()->update([
-            'avatar_path' => 'my-s3-folder/' . $imageName
+            'avatar_path' =>  $imageName
         ]);
 
 
-        return response(["path"=>Storage::disk('s3')->url('my-s3-folder/' . $imageName)], 200);
+        return response(["path"=>Storage::disk('s3')->url($imageName)], 200);
     }
 
     public function delete()
     {
 
-        Storage::disk('s3')->delete(auth()->user()->getOriginal('avatar_path'));
+        //Storage::disk('s3')->delete(auth()->user()->getOriginal('avatar_path'));
 
         auth()->user()->update([
-            'avatar_path' => NULL
+            'avatar_path' => DEFAULT_AVATAR_PATH
         ]);
 
         return response([], 204);
