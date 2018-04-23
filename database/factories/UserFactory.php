@@ -29,7 +29,8 @@ $factory->define(App\User::class, function (Faker $faker) {
         'twitter'=>$faker->userName,
         'website'=>$faker->url,
         'bio'=>$faker->text,
-        'avatar_path'=>'avatars/default.png'
+        'avatar_path'=>'avatars/default.png',
+        'provider'=>$faker->randomElement(['facebook','google','github'])
 
     ];
 });
