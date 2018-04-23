@@ -24,6 +24,7 @@ class CreateUsersTable extends Migration
             $table->string('website');
             $table->string('bio');
             $table->string('avatar_path')->nullable();
+            $table->string('provider')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

@@ -74,6 +74,8 @@ Route::patch('user', 'UserController@update')->name('user.update');
 Route::post('api/users/{user}/avatar', 'Api\UserAvatarController@store')->middleware('auth')->name('avatar');
 Route::delete('api/users/avatar', 'Api\UserAvatarController@delete')->middleware('auth');
 
+Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
+Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 
 Auth::routes();
 
