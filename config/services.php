@@ -45,8 +45,8 @@ return [
         'redirect' => env('FACEBOOK_REDIRECT')
     ],
     'twitter' => [
-        'client_id' => env('TWITTER_CONSUMER_KEY'),
-        'client_secret' => env('TWITTER_CONSUMER_SECRET'),
+        'client_id' => env('TWITTER_CLIENT_ID'),
+        'client_secret' => env('TWITTER_CLIENT_SECRET'),
         'redirect' => env('TWITTER_REDIRECT')
     ]
 
