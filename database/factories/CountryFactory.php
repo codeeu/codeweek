@@ -7,6 +7,7 @@ $factory->define(App\Country::class, function (Faker $faker) {
     return [
         'iso' => $faker->countryCode,
         'name' => $faker->country,
-        'continent' => 'EU'
+        'continent' => 'EU',
+        'facebook' => $faker->url
     ];
 });

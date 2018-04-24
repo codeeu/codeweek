@@ -5,8 +5,17 @@
         <div class="container">
             <h3>Ambassadors</h3>
 
-            @foreach ($countries as $country)
 
+
+            @if(app('request')->input('country_iso'))
+                @foreach ($countries as $country)
+                    @if($country->iso === app('request')->input('country_iso'))
+                        <div>Visit the <a href="{{$country->facebook}}">local Facebook page</a></div>
+                    @endif
+                @endforeach
+            @endif
+
+            @foreach ($countries as $country)
                 <a href="/ambassadors?country_iso={{$country->iso}}">{{$country->iso}}</a>
             @endforeach
             <br/>

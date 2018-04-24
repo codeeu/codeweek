@@ -18,6 +18,7 @@ class CreateCountriesTables extends Migration
             $table->string("iso");
             $table->string("name");
             $table->string('continent');
+            $table->string('facebook');
             $table->timestamps();
         });
     }

@@ -16,18 +16,20 @@ class AmbassadorTest extends TestCase
     private $ambassador_be;
     private $ambassador_fr;
     private $admin_be;
+    private $belgium;
+    private $france;
 
 
     public function setup()
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
-        $france = create('App\Country',['iso'=>'FR']);
-        $belgium = create('App\Country',['iso'=>'BE']);
+        $this->france = create('App\Country',['iso'=>'FR']);
+        $this->belgium = create('App\Country',['iso'=>'BE']);
 
-        $this->admin_be = create('App\User', ['country_iso' => $belgium->iso])->assignRole('super admin');
-        $this->ambassador_be = create('App\User', ['country_iso' => $belgium->iso])->assignRole('ambassador');
-        $this->ambassador_fr = create('App\User', ['country_iso' => $france->iso])->assignRole('ambassador');
+        $this->admin_be = create('App\User', ['country_iso' => $this->belgium->iso])->assignRole('super admin');
+        $this->ambassador_be = create('App\User', ['country_iso' => $this->belgium->iso])->assignRole('ambassador');
+        $this->ambassador_fr = create('App\User', ['country_iso' => $this->france->iso])->assignRole('ambassador');
 
 
     }
@@ -42,6 +44,19 @@ class AmbassadorTest extends TestCase
         $this->get('/ambassadors?country_iso=BE')->assertSee($this->ambassador_be->lastname);
         $this->get('/ambassadors?country_iso=BE')->assertDontSee($this->ambassador_fr->lastname);
         $this->get('/ambassadors?country_iso=BE')->assertDontSee($this->admin_be->lastname);
+
+
+    }
+
+    /** @test */
+    public function ambassador_page_for_a_country_should_display_the_facebook_link()
+    {
+
+
+        create('App\Event', ['country_iso'=>'BE']);
+
+
+        $this->get('/ambassadors?country_iso=BE')->assertSee($this->belgium->facebook);
 
 
     }
