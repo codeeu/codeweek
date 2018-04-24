@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Country;
 use App\Filters\UserFilters;
+use App\Queries\CountriesQuery;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -23,8 +24,8 @@ class AmbassadorController extends Controller
         $countries = [];
 
         return view('ambassadors')->with([
-            "ambassadors"=>$ambassadors,
-            "countries"=>Country::withEvents()
+            "ambassadors" => $ambassadors,
+            "countries" => Country::withEvents()
         ]);
     }
 
