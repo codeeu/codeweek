@@ -6,11 +6,12 @@
             <h3>Ambassadors</h3>
 
 
-
             @if(app('request')->input('country_iso'))
                 @foreach ($countries as $country)
                     @if($country->iso === app('request')->input('country_iso'))
-                        <div>Visit the <a href="{{$country->facebook}}">local Facebook page</a></div>
+                        @if($country->facebook)
+                            <div>Visit the <a href="{{$country->facebook}}">local Facebook page</a></div>
+                        @endif
                     @endif
                 @endforeach
             @endif
