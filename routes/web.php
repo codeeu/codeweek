@@ -14,12 +14,6 @@
 use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Request;
 
-Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('/add', 'EventController@create')->name('create_event');
-
 Route::get('setlocale', function (Request $request) {
 
     $locale = $request->input('locale');
@@ -31,33 +25,30 @@ Route::get('setlocale', function (Request $request) {
 })->name("setlocale");
 
 
-Route::get('/search', 'SearchController@search')->name('search_event');
-
-
-Route::get('/guide', function () {
-    return view('guide');
-})->name('guide');
-
-Route::get('/ambassadors', 'AmbassadorController@index')->name('ambassadors');
-
-Route::get('/scoreboard', 'ScoreboardController@index')->name('scoreboard');
-
-
 Route::get('/profile', function () {
     $data = ['profileUser' => Auth()->user()];
 
-    return view('profile',$data);
+    return view('profile', $data);
 })->name('profile')->middleware('auth');
 
 
-Route::get('view/{event}/{slug}', 'EventController@show')->name('view_event');
-
-Route::get('/my', 'EventController@my')->name('my_events');
-
-
+Route::get('/', function () {return view('index');});
+Route::get('/add', 'EventController@create')->name('create_event');
+Route::get('/ambassadors', 'AmbassadorController@index')->name('ambassadors');
 Route::post('/events', 'EventController@store');
-
+Route::get('/guide', function () {return view('guide');})->name('guide');
+Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
+Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
+Route::get('/my', 'EventController@my')->name('my_events');
+Route::get('/search', 'SearchController@search')->name('search_event');
+Route::get('/scoreboard', 'ScoreboardController@index')->name('scoreboard');
+Route::patch('user', 'UserController@update')->name('user.update');
+Route::get('view/{event}/{slug}', 'EventController@show')->name('view_event');
 Route::resource('school', 'SchoolController');
+
+Route::post('api/users/{user}/avatar', 'Api\UserAvatarController@store')->middleware('auth')->name('avatar');
+Route::delete('api/users/avatar', 'Api\UserAvatarController@delete')->middleware('auth');
+Route::get('api/event/list', 'Api\EventsController@list')->name('event_list');
 
 Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/activities', 'AdminController@activities')->name('activities');
@@ -68,14 +59,10 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
     Route::get('/pending', 'PendingEventsController@index')->name('pending');
 });
 
-Route::patch('user', 'UserController@update')->name('user.update');
 
 
-Route::post('api/users/{user}/avatar', 'Api\UserAvatarController@store')->middleware('auth')->name('avatar');
-Route::delete('api/users/avatar', 'Api\UserAvatarController@delete')->middleware('auth');
 
-Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
-Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
+
 
 Auth::routes();
 
