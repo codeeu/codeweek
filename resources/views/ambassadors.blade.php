@@ -12,6 +12,10 @@
                         @if($country->facebook)
                             <div>Visit the <a href="{{$country->facebook}}">local Facebook page</a></div>
                         @endif
+
+                        @if($country->website)
+                            <div><a href="{{$country->website}}">Local Website</a></div>
+                        @endif
                     @endif
                 @endforeach
             @endif
