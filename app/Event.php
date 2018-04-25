@@ -86,12 +86,14 @@ class Event extends Model
     }
 
     public static function getByYear($year)
+
+
     {
-        $events = Event::where('status', 'like', 'APPROVED')
-            ->where('start_date', '>', Carbon::createFromDate($year, 1, 1));
 
-        if ($year !== Carbon::now()->year) {
+        $events = Event::where('status', 'like', 'APPROVED');
+            //->where('start_date', '>', Carbon::createFromDate($year, 1, 1));
 
+        if ($year != Carbon::now()->year) {
             $events = $events->where('end_date', '<', Carbon::createFromDate($year, 12, 31));
         } else {
             $events = $events->where('end_date', '>', Carbon::now());
