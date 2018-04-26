@@ -18,8 +18,8 @@
                 <!-- ============================================= -->
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li class=""><a href="{{url('/')}}">Events</a></li>
-                    <li class=""><a href="{{url('ambassadors')}}">Ambassadors</a></li>
+                    <li class=""><a href="{{route('map')}}">Events</a></li>
+                    <li class=""><a href="{{route('ambassadors')}}">Ambassadors</a></li>
                     <li><a href="/resources/">Resources</a></li>
                     <li><a href="/about/">About</a></li>
                     <li><a href="http://blog.codeweek.eu/">News</a></li>
@@ -68,7 +68,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('search_events')}}" class="{% current 'web.search_events' %}">
+                        <a href="{{route('search_event')}}" class="{% current 'web.search_event' %}">
 				<span class="fa-stack fa-lg">
 				  <i class="fa fa-circle fa-stack-2x"></i>
 				  <i class="fa fa-search fa-stack-1x fa-inverse"></i>
@@ -81,42 +81,36 @@
                     <li class="dropdown pull-right">
 
 
-
-                        {{--{% if user.profile.is_ambassador %}--}}
-                        {{--<li>--}}
-                        {{--{% if user.profile.country %}--}}
-                        {{--<a href="{% url 'web.pending_events' user.profile.country %}">--}}
-                        {{--<i class="fa fa-clock-o"></i>--}}
-                        {{--{% if user.is_staff %}--}}
-                        {{--Pending events--}}
-                        {{--{% else %}--}}
-                        {{--Pending events in {{ user.profile.country.name }}--}}
-                        {{--{% endif %}</a>--}}
-                        {{--{% else %}--}}
-                        {{--<a href="{% url 'profile' %}"><i class="fa fa-map-marker"></i>--}}
-                        {{--Set your country</a>--}}
-                        {{--{% endif %}--}}
-                        {{--</li>--}}
-                        {{--<li><a href="{% url 'profile' %}"><i class="fa fa-pencil-square-o"></i>--}}
-                        {{--Edit your profile</a></li>--}}
-                        {{--<li class="divider"></li>--}}
-                        {{--{% endif %}--}}
-
-
-
                         @if (Auth::check())
                             <a href="/profile" class="dropdown-toggle avatar" data-toggle="dropdown">
-                                Hi, {{ Auth::user()->name }}
-                                <img src="{{Auth::user()->avatar}}" alt="{{ Auth::user()->name }}" class="img-circle" height="30" width="30">
+                                Hello, {{ Auth::user()->firstname }}
+                                <img src="{{Auth::user()->avatar}}" alt="{{ Auth::user()->name }}" class="img-circle"
+                                     height="30" width="30">
                                 <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu profile-menu" role="menu">
-                                <li><a href="/created_events"><i
+                                <li><a href="{{route('profile')}}">Profile</a></li>
+                                @role('ambassador|super admin')
+                                <li><a href="{{route('pending')}}">Pending Events</a></li>
+                                @endrole
+
+                                <li><a href="{{route('my_events')}}"><i
                                                 class="fa fa-user"></i> Your events</a></li>
                                 <li><a href="/events_to_report"><i
                                                 class="fa fa-user"></i> Report your events</a></li>
-                                <li><a href="/logout"><i
-                                                class="fa fa-sign-out"></i> Sign out</a></li>
+                                @role('super admin')
+                                <li><a href="{{route('activities')}}">Activities</a></li>
+                                @endrole
+                                <li>               <a class="dropdown-item" href="{{ route('logout') }}"
+                                                      onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a></li>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+
                             </ul>
                         @else
                             <a href="/login" class="signin">

@@ -1,8 +1,7 @@
-@extends("layout.app")
+@extends('layout.base')
 
 @section('content')
     <section>
-
         <div class="container">
             <div class="about-event clearfix">
                 <div class="col-md-8 event-description first">

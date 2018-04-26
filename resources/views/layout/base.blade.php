@@ -38,12 +38,21 @@
     <link rel="stylesheet" href="{{asset('css/ext/colors.css')}}" type="text/css" />
     {{--<link rel="stylesheet" href="http://codeweekeu.s3.amazonaws.com/assets/stylesheets/colors.css" type="text/css" />--}}
 
-<!-- TODO: remove font-awesome? -->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
 
     <link href="{{asset('css/custom.css') }}" media="screen" rel="stylesheet" />
 
+
     @yield('extra-css')
+
+
+    <script>
+        window.App = {!! json_encode([
+            'csrfToken' => csrf_token(),
+            'user' => Auth::user(),
+            'signedIn' => Auth::check()
+        ]) !!};
+    </script>
 
     <!-- Title, keywords, description -->
     <meta name="description" content="October 15 - 23, 2016: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding." />
@@ -76,16 +85,7 @@
 <script type="text/javascript" src="{{ asset('js/ext/plugins.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/ext/functions.js') }}"></script>
 
-<!-- joseihf: Dropdown doesn´t works
-<script type="text/javascript" src="{{asset('lib/bootstrap-sass/javascripts/bootstrap/dropdown.js')}}"></script>
-<script type="text/javascript" src="{{asset('lib/bootstrap-sass/javascripts/bootstrap/collapse.js')}}"></script>
--->
-<script type="text/javascript" src="{{asset('js/jquery.cookie.js') }}"></script>
-<script type="text/javascript" src="{{asset('js/jquery.cookiecuttr.js') }}"></script>
-<script type="text/javascript" src="{{asset('js/base.js') }}"></script>
-<script type="text/javascript">
-        //Codeweek.Base.init();
-</script>
+
 <script src="{{asset('js/app.js')}}"></script>
 
 <script src="https://unpkg.com/vue-select@latest"></script>
