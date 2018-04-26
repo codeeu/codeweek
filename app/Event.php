@@ -90,8 +90,8 @@ class Event extends Model
 
     {
 
-        $events = Event::where('status', 'like', 'APPROVED');
-            //->where('start_date', '>', Carbon::createFromDate($year, 1, 1));
+        $events = Event::where('status', 'like', 'APPROVED')
+            ->where('start_date', '>', Carbon::createFromDate($year, 1, 1));
 
         if ($year != Carbon::now()->year) {
             $events = $events->where('end_date', '<', Carbon::createFromDate($year, 12, 31));

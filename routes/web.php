@@ -32,7 +32,7 @@ Route::get('/profile', function () {
 })->name('profile')->middleware('auth');
 
 
-Route::get('/', function () {return view('index');});
+Route::get('/', function () {return view('index');})->name('map');
 Route::get('/add', 'EventController@create')->name('create_event');
 Route::get('/ambassadors', 'AmbassadorController@index')->name('ambassadors');
 Route::post('/events', 'EventController@store');
