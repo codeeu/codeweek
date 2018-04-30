@@ -487,9 +487,8 @@
                             </label>
 
                             <div class="col-sm-9 first last">
-                                <input class="form-control" id="id_tags" name="tags"
-                                       placeholder="example: Python, Django, Slovenia" type="text"
-                                       value="{{old('tags')}}">
+
+                                <input-tags value="{{old('tags')}}"></input-tags>
 
                             </div>
 
