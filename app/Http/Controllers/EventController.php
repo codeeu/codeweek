@@ -7,6 +7,7 @@ use App\Event;
 use App\Queries\EventsQuery;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+
 class EventController extends Controller
 {
 
@@ -16,16 +17,16 @@ class EventController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth')->except(['index','show','my']);
+        $this->middleware('auth')->except(['index', 'show', 'my']);
     }
 
 
     public function my()
     {
 
-        $events = Event::where('creator_id', '=', Auth::user()->id)->orderBy('created_at','desc')->paginate(6);
+        $events = Event::where('creator_id', '=', Auth::user()->id)->orderBy('created_at', 'desc')->paginate(6);
 
-        return view('event.my',compact('events'));
+        return view('event.my', compact('events'));
 
     }
 
@@ -51,32 +52,34 @@ class EventController extends Controller
         return view('event.add');
     }
 
-    public function search(){
+    public function search()
+    {
         $events = Event::all();
         return view('event.search', compact('events'));
     }
+
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
 
-        $this->validate($request,[
-            'title'=>'required',
-            'description'=>'required',
-            'organizer'=>'required',
-            'location'=>'required',
-            'start_date'=>'required',
-            'end_date'=>'required',
-            'audience'=>'required',
-            'theme'=>'required',
-            'country_iso'=>'required',
-            'contact_person'=>'required',
+        $this->validate($request, [
+            'title' => 'required',
+            'description' => 'required',
+            'organizer' => 'required',
+            'location' => 'required',
+            'start_date' => 'required',
+            'end_date' => 'required',
+            'audience' => 'required',
+            'theme' => 'required',
+            'country_iso' => 'required',
+            'contact_person' => 'required',
 //            'tags'=>'required'
-        ],[
+        ], [
             'title.required' => 'Please enter a title for your event.',
             'description.required' => 'Please write a short description of what the event is about.',
             'organizer.required' => 'Please enter an organizer.',
@@ -101,7 +104,7 @@ class EventController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Event  $event
+     * @param  \App\Event $event
      * @return \Illuminate\Http\Response
      */
     public function show(Event $event)
@@ -112,7 +115,7 @@ class EventController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Event  $event
+     * @param  \App\Event $event
      * @return \Illuminate\Http\Response
      */
     public function edit(Event $event)
@@ -123,8 +126,8 @@ class EventController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Event  $event
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Event $event
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Event $event)
@@ -135,7 +138,7 @@ class EventController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Event  $event
+     * @param  \App\Event $event
      * @return \Illuminate\Http\Response
      */
     public function destroy(Event $event)

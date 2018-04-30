@@ -49,6 +49,22 @@
 
             <nav class="one-page-menu eventsm">
                 <ul class="nav navbar navbar-left" role="menu">
+
+                    <li><form method="get" action="/setlocale/">
+
+                        <select class="form-control custom-select custom-select-sm" name="locale"
+                                onchange="this.form.submit()">
+                            @foreach ($locales as $key => $value)
+                                <option value="{{ $value }}"
+                                        @if ($value == session('locale'))
+                                        selected="selected"
+                                        @endif
+                                >{{ $value }}</option>
+                            @endforeach
+                        </select>
+
+                    </form>
+                    </li>
                     <li>
                         <a href="/" class="first" id="zoomEU">
 					<span class="fa-stack fa-lg">
@@ -76,7 +92,13 @@
                             Search Events
                         </a>
                     </li>
+
+
+
                 </ul>
+
+
+
                 <ul class="nav navbar navbar-right nobottommargin">
                     <li class="dropdown pull-right">
 
