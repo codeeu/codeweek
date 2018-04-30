@@ -14,6 +14,7 @@ import example from './components/ExampleComponent.vue';
 import countrySelect from './components/CountrySelect.vue';
 import flash from './components/Flash.vue';
 import avatarForm from './components/AvatarForm.vue';
+import dateTime from './components/DateTime.vue';
 
 
 
@@ -32,6 +33,7 @@ const app = new Vue({
         flash,
         avatarForm,
         example,
-        countrySelect
+        countrySelect,
+        dateTime
     }
 });
