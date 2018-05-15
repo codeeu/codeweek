@@ -1,0 +1,7 @@
+.home-map{
+    position:relative;
+}
+#home-map{
+    height: 70vh;
+    width: 100%;
+}

@@ -10,6 +10,8 @@
     <script>
         window.Laravel = <?php echo json_encode([
             'csrfToken' => csrf_token(),
+            'user' => Auth::user(),
+            'signedIn' => Auth::check()
         ]); ?>
     </script>
 
@@ -21,10 +23,7 @@
 
     <!-- Theme stylesheets -->
     <link rel="stylesheet" href="{{asset('css/ext/style.css')}}" type="text/css" />
-    {{--<link rel="stylesheet" href="http://codeweekeu.s3.amazonaws.com/assets/stylesheets/style.css" type="text/css" />--}}
-
     <link rel="stylesheet" href="{{asset('css/ext/dark.css')}}" type="text/css" />
-    {{--<link rel="stylesheet" href="http://codeweekeu.s3.amazonaws.com/assets/stylesheets/dark.css" type="text/css" />--}}
     <link rel="stylesheet" href="{{asset('css/font-icons.css')}}" type="text/css" />
 
     <link rel="stylesheet" href="{{asset('css/ext/responsive.css')}}" type="text/css" />
@@ -42,17 +41,20 @@
 
     <link href="{{asset('css/custom.css') }}" media="screen" rel="stylesheet" />
 
+    <link rel="stylesheet" href="{{asset('plugins/bootstrap/css/bootstrap.min.css')}}" type="text/css"/>
+
+    <!-- Bootstrap Select Option css -->
+    <link rel="stylesheet" href="{{asset('plugins/bootstrap/css/bootstrap-select.min.css')}}" type="text/css"/>
+
+
+
+    <!-- Custom style -->
+    <link href="{{asset('css/map.css')}}" rel="stylesheet" type="text/css">
 
     @yield('extra-css')
 
 
-    <script>
-        window.App = {!! json_encode([
-            'csrfToken' => csrf_token(),
-            'user' => Auth::user(),
-            'signedIn' => Auth::check()
-        ]) !!};
-    </script>
+
 
     <!-- Title, keywords, description -->
     <meta name="description" content="October 15 - 23, 2016: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding." />
@@ -81,14 +83,19 @@
 
 
 <!-- Scripts -->
+
+<script src="{{asset('js/app.js')}}"></script>
 <script type="text/javascript" src="{{ asset('lib/jquery/jquery.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/ext/plugins.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/ext/functions.js') }}"></script>
 
 
-<script src="{{asset('js/app.js')}}"></script>
 
 <script src="https://unpkg.com/vue-select@latest"></script>
+
+
+
+@stack('scripts')
 
 @yield('extra-js')
 

@@ -48,23 +48,26 @@
             <div class="menu-title">CodeWeek <span>EU</span></div>
 
             <nav class="one-page-menu eventsm">
+
                 <ul class="nav navbar navbar-left" role="menu">
 
-                    <li><form method="get" action="/setlocale/">
+                    <li>
+                        <form class="inline" method="get" action="/setlocale/">
 
-                        <select class="form-control custom-select custom-select-sm" name="locale"
-                                onchange="this.form.submit()">
-                            @foreach ($locales as $key => $value)
-                                <option value="{{ $value }}"
-                                        @if ($value == session('locale'))
-                                        selected="selected"
-                                        @endif
-                                >{{ $value }}</option>
-                            @endforeach
-                        </select>
+                            <select class="custom-select custom-select-sm" name="locale"
+                                    onchange="this.form.submit()">
+                                @foreach ($locales as $key => $value)
+                                    <option value="{{ $value }}"
+                                            @if ($value == session('locale'))
+                                            selected="selected"
+                                            @endif
+                                    >{{ $value }}</option>
+                                @endforeach
+                            </select>
 
-                    </form>
+                        </form>
                     </li>
+
                     <li>
                         <a href="/" class="first" id="zoomEU">
 					<span class="fa-stack fa-lg">
@@ -94,9 +97,7 @@
                     </li>
 
 
-
                 </ul>
-
 
 
                 <ul class="nav navbar navbar-right nobottommargin">
@@ -123,13 +124,14 @@
                                 @role('super admin')
                                 <li><a href="{{route('activities')}}">Activities</a></li>
                                 @endrole
-                                <li>               <a class="dropdown-item" href="{{ route('logout') }}"
-                                                      onclick="event.preventDefault();
+                                <li><a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a></li>
 
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                      style="display: none;">
                                     @csrf
                                 </form>
 

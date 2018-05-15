@@ -34,11 +34,14 @@ class EventsController extends Controller
 
         $events = $this->eventTransformer->transformCollection($events);
 
+
         if ($request->wantsJson()) {
             return response()->json($events, 200);
         }
 
         return $events;
+
+        
 
     }
 }
