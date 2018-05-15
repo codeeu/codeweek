@@ -80,6 +80,7 @@ class EventController extends Controller
             'theme' => 'required',
             'country_iso' => 'required',
             'contact_person' => 'required',
+            'organizer_type' => 'required',
 //            'tags'=>'required'
         ], [
             'title.required' => 'Please enter a title for your event.',

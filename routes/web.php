@@ -47,6 +47,7 @@ Route::get('view/{event}/{slug}', 'EventController@show')->name('view_event');
 Route::resource('school', 'SchoolController');
 
 Route::post('api/users/{user}/avatar', 'Api\UserAvatarController@store')->middleware('auth')->name('avatar');
+Route::post('api/events/picture', 'Api\EventPictureController@store')->middleware('auth')->name('event_picture');
 Route::delete('api/users/avatar', 'Api\UserAvatarController@delete')->middleware('auth');
 Route::get('api/event/list', 'Api\EventsController@list')->name('event_list');
 

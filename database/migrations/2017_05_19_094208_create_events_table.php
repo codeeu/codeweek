@@ -28,7 +28,7 @@ class CreateEventsTable extends Migration
             $table->dateTime('end_date');
             $table->string('event_url', 200)->nullable();
             $table->string('contact_person', 75);
-            $table->string('picture', 100);
+            $table->string('picture', 255);
             $table->dateTime('pub_date');
             $table->dateTime('created');
             $table->dateTime('updated');
@@ -42,6 +42,7 @@ class CreateEventsTable extends Migration
             $table->string('codeweek_for_all_participation_code', 100)->nullable();
             $table->dateTime('reported_at')->nullable();
             $table->dateTime('certificate_generated_at')->nullable();
+            $table->string('organizer_type', 50);
         });
     }
 

@@ -53,6 +53,30 @@
 
                         </div>
 
+
+                        <div class="form-group @if($errors->has('organizer')) has-error @endif">
+                            <label for="id_organizer" class="col-sm-3 control-label">
+                                * @lang('event.organizertype.label')
+                            </label>
+
+                            <div class="col-sm-9">
+
+
+                                <select id="id_organizer_type" name="organizer_type" class="form-control">
+                                    <option value="school">@lang('event.organizertype.school')</option>
+                                    <option value="library">@lang('event.organizertype.library')</option>
+                                    <option value="non profit">@lang('event.organizertype.non profit')</option>
+                                    <option value="private business">@lang('event.organizertype.private business')</option>
+                                    <option value="other">@lang('event.organizertype.other')</option>
+                                </select>
+
+
+                            </div>
+                            @component('components.validation-errors', ['field'=>'organizer'])
+                            @endcomponent
+
+                        </div>
+
                         <div class="form-group @if($errors->has('description')) has-error @endif">
                             <label for="id_description" class="col-sm-3 control-label">
                                 *
@@ -94,18 +118,8 @@
                             </label>
 
                             <div class="col-sm-9">
-                                <ul id="id_theme">
-
-
-                                    @foreach($themes as $theme)
-                                        <li><label for="id_theme_0"><input id="id_theme_{{$theme->id}}" name="theme[]"
-                                                                           type="checkbox"
-                                                                           value="{{$theme->id}}"> {{$theme->name}}
-                                            </label></li>
-                                    @endforeach
-
-
-                                </ul>
+                                @component('components.checkbox-theme',['themes'=>$themes])
+                                @endcomponent
                             </div>
                             @component('components.validation-errors', ['field'=>'theme'])
                             @endcomponent
@@ -503,7 +517,7 @@
                             <div class="col-sm-9 first last fileinput fileinput-new"
                                  data-provides="fileinput"
                                  data-name="picture">
-                                <input type="hidden" name="picture" value="nochange">
+
                                 <div class="fileinput-new">
                                     {{--<img src="/static/img/image_placeholder.png" alt="Image Placeholder"--}}
                                     {{--style="max-height: 204px; max-width: 100%">--}}
@@ -511,15 +525,21 @@
                                 <div class="fileinput-preview fileinput-exists">
 
                                 </div>
+
                                 <div>
                                     <span class="help-block">Larger images will be resized to 256 x 512 pixels. Maximum upload size is 256 x 1024.</span>
-                                    <span class="btn btn-sm btn-file">
-                <span class="fileinput-new">Select image</span>
-                <span class="fileinput-exists">Change</span>
-                <input type="file"></span>
-                                    <a href="#" class="btn btn-sm fileinput-exists"
-                                       data-dismiss="fileinput">Remove</a>
+                                    {{--<span class="btn btn-sm btn-file">--}}
+                 <picture-form></picture-form>
+
+                                    {{--<span class="fileinput-new">Select image</span>--}}
+                                    {{--<span class="fileinput-exists">Change</span>--}}
+                                    {{--<input type="file"></span>--}}
+
+                                    {{--<a href="#" class="btn btn-sm fileinput-exists"--}}
+                                       {{--data-dismiss="fileinput">Remove</a>--}}
                                 </div>
+
+
                             </div>
                         </div>
                     </div>
