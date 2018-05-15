@@ -12,7 +12,7 @@
                     @if($event->contact_person)
 
                         <strong>Contact email:</strong><br>
-                        <p><a href="mailto:{{ $event->contact_person }}">{{ $event->contact_person }}</a></p>
+                        <p><a href="mailto:{{ $event->owner->email }}">{{ $event->contact_person }}</a></p>
                     @endif
 
                     <address>
@@ -91,12 +91,12 @@
                     </div>
                 </div>
                 <div class="col-md-4 event-time-place">
-                    @if($event->picture)
+
 
                         <div class="event-jumbotron">
-                            PICTURE
+                            <img src="{{$event->picture_path()}}"/>
                         </div>
-                    @endif
+
 
                     <div id="calendar">
                         @component('components.calendar',['event'=>$event])

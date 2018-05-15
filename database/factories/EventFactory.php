@@ -9,6 +9,7 @@ $factory->define(App\Event::class, function (Faker $faker) {
     $event_date = $faker->dateTimeBetween($start = '-1month', $end = '+1month');
 
     $countries = Country::all()->pluck('iso')->toArray();
+    $orgtypes = array('school','library','nonprofit','other');
     if (empty($countries)) $countries[0] = factory('App\Country')->create()->iso;
 
 
@@ -26,7 +27,6 @@ $factory->define(App\Event::class, function (Faker $faker) {
         'end_date' => $event_date,
         'event_url' => $faker->url,
         'contact_person' => $faker->email,
-        'picture' => $faker->text(100),
         'pub_date' => $faker->dateTime,
         'created' => $faker->dateTime,
         'updated' => $faker->dateTime,
@@ -34,6 +34,7 @@ $factory->define(App\Event::class, function (Faker $faker) {
             return factory('App\User')->create()->id;
         },
         'report_notifications_count' => 0,
-        'name_for_certificate' => $faker->name
+        'name_for_certificate' => $faker->name,
+        'organizer_type' => $faker->randomElement($orgtypes)
     ];
 });

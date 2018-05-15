@@ -27,7 +27,8 @@ class Event extends Model
         'updated',
         'creator_id',
         'report_notifications_count',
-        'name_for_certificate'
+        'name_for_certificate',
+        'organizer_type'
 
     ];
 
@@ -43,6 +44,13 @@ class Event extends Model
     public function path()
     {
         return '/view/' . $this->id . '/' . $this->slug;
+
+    }
+
+    public function picture_path()
+    {
+
+        return $this->picture ? $this->picture : "https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png";
 
     }
 

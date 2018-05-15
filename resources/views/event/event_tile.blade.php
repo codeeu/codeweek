@@ -6,7 +6,7 @@
 
                 {{--<img src="{{ event.picture.url }}" alt="{{ event.title }} image">--}}
 
-                <img src="{{asset('img/event_default_picture.png')}}" alt="Code Week event">
+                <img src="{{$event->picture_path()}}" alt="Code Week event">
 
             </a>
         </div>

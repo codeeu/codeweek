@@ -3,7 +3,7 @@
 
         {{--<img src="{{ event.picture.url }}" alt="{{ event.title }} image">--}}
 
-        <img width="240px" src="{{asset('img/event_default_picture.png')}}" alt="Code Week event" class="col-md-2 first">
+        <img width="240px" src="{{$event->picture_path()}}" alt="Code Week event" class="col-md-2 first">
 
     </a>
     <h4>{{ $event->title }}</h4>
