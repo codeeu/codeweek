@@ -50,6 +50,7 @@ Route::post('api/users/{user}/avatar', 'Api\UserAvatarController@store')->middle
 Route::post('api/events/picture', 'Api\EventPictureController@store')->middleware('auth')->name('event_picture');
 Route::delete('api/users/avatar', 'Api\UserAvatarController@delete')->middleware('auth');
 Route::get('api/event/list', 'Api\EventsController@list')->name('event_list');
+Route::get('api/event/detail', 'Api\EventsController@detail')->name('event_list');
 
 Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/activities', 'AdminController@activities')->name('activities');

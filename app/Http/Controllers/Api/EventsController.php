@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Transformers\EventTransformer;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use App\Http\Resources\Event as EventResource;
 
 
 class EventsController extends Controller
@@ -42,6 +43,15 @@ class EventsController extends Controller
         return $events;
 
 
+    }
+
+    public function detail(Request $request){
+
+        $event_id = $request->input("id");
+
+        $event = Event::where('id',$event_id)->first();
+
+        return new EventResource($event);
 
     }
 }

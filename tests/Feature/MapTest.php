@@ -76,6 +76,25 @@ class MapTest extends TestCase
 
     }
 
+    /** @test */
+    public function get_event_detail()
+    {
+
+        $this->withExceptionHandling();
+
+        $event = create('App\Event', ['start_date' => Carbon::now(), 'status' => 'APPROVED','title'=>'foobar']);
+
+
+
+        $response = $this->getJson('/api/event/detail?id=' . $event->id)->json();
+
+
+
+        $this->assertEquals($response['data']['title'], $event->title);
+
+
+    }
+
 
 }
 

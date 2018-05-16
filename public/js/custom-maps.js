@@ -166,14 +166,34 @@ $(document).on('ready', function () {
             });
 
             google.maps.event.addListener(marker1, 'click', function () {
-                infowindow1.open(map, marker1);
-                $('body .infowindow').parent().parent().parent().parent().parent().parent().addClass('custom-tooltip')
+                console.log(val);
+                // Add information window
+                $.ajax({
+                    dataType: "json",
+                    url: "api/event/detail?id=" + val.id,
+                    success: function(res){
+
+                        var event = res.data;
+
+                        var bubble_content = '<div><h4><a href="' + event.path + '" class="map-marker">' + event.title + '</a></h4><div>' +
+                            '<img src="' + event.picture + '" class="img-polaroid marker-buble-img">' +
+                            '<p style="overflow:hidden;">' + event.description +
+                            '&nbsp;<a class="btn btn-sm" href="' + event.path + '" class="map-marker"><span>More...</span></a></p>';
+
+                        var infowindow1 = new google.maps.InfoWindow({
+                            content: bubble_content
+                        });
+
+                        infowindow1.open(map, marker1);
+
+
+                    }
+                });
+
+
+
             });
 
-            // Add information window
-            var infowindow1 = new google.maps.InfoWindow({
-                content: createInfo('<div class="listing-shot grid-style"> <div class="listing-shot-img"><img src="http://via.placeholder.com/800x800" class="img-responsive" alt=""> <span class="approve-listing"><i class="fa fa-check"></i></span> <span class="like-listing"><i class="fa fa-heart-o" aria-hidden="true"></i></span> </div> <div class="listing-shot-caption"> <h4>Art & Design</h4> <p class="listing-location">Bishop Avenue, New York</p> </div> </a> <div class="listing-shot-info"> <div class="row extra"> <div class="col-md-12"> <div class="listing-detail-info"> <span><i class="fa fa-phone" aria-hidden="true"></i> 807-502-5867</span> <span><i class="fa fa-globe" aria-hidden="true"></i> www.mysitelink.com</span> </div> </div> </div> </div> <div class="listing-shot-info rating"> <div class="row extra"> <div class="col-md-7 col-sm-7 col-xs-6"> <i class="color fa fa-star" aria-hidden="true"></i> <i class="color fa fa-star" aria-hidden="true"></i> <i class="color fa fa-star" aria-hidden="true"></i> <i class="color fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i></div> <div class="col-md-5 col-sm-5 col-xs-6 pull-right"> <a href="#" class="detail-link">Open Now</a> </div> </div> </div> </div>')
-            });
 
 
         });
