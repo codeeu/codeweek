@@ -1,4 +1,4 @@
-@extends('layout.base')
+@extends('layout.app')
 
 @section('content')
     <section>
@@ -14,6 +14,8 @@
 
 
                 <avatar-form :user="{{ $profileUser }}"></avatar-form>
+a
+
 
                 <form method="POST" action="{{ route('user.update') }}">
 
