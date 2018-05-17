@@ -17,7 +17,6 @@ class EventsQuery
 
 
         $request['status'] = 'PENDING';
-        $request['geoposition'] = $request['geoposition_0'] . ',' . $request['geoposition_1'];
 
         $request['slug'] = str_slug($request['title'], '-');
 
