@@ -54,4 +54,16 @@ class EventsController extends Controller
         return new EventResource($event);
 
     }
+
+    public function closest(Request $request){
+
+        $event_id = $request->input("id");
+
+        $event = Event::where('id',$event_id)->first();
+        $events = $event->getClosest();
+        return $events;
+
+        //return new EventResource($event);
+
+    }
 }

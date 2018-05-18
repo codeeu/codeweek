@@ -25,6 +25,9 @@ class EventsQuery
         $request['updated'] = Carbon::now();
         $request['creator_id'] = Auth::user()->id;
 
+        $request['latitude'] = explode(",",$request['geoposition'])[0];
+        $request['longitude'] = explode(",",$request['geoposition'])[1];
+
 
         $event = Event::create($request->toArray());
 

@@ -16,6 +16,8 @@ class EventSeeder extends Seeder
             'status' => 'APPROVED',
             'title' => 'Boitsfort Coding',
             'geoposition' => '50.8093378,4.4088449',
+            'latitude' => 50.8093378,
+            'longitude' => 4.4088449,
             'start_date' => Carbon::yesterday(),
             'end_date' => Carbon::now()->addYear(),
 

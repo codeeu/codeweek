@@ -93,9 +93,9 @@
                 <div class="col-md-4 event-time-place">
 
 
-                        <div class="event-jumbotron">
-                            <img src="{{$event->picture_path()}}"/>
-                        </div>
+                    <div class="event-jumbotron">
+                        <img src="{{$event->picture_path()}}"/>
+                    </div>
 
 
                     <div id="calendar">
@@ -107,7 +107,7 @@
                     <hr>
                 </div>
                 <div id="view-event-map-wrapper" class="col-md-12 first">
-                    <div id="view-event-map"></div>
+                    <div id="map" style="width:100%; height:100%"></div>
                 </div>
             </div>
             <div class="col-md-12">
@@ -115,55 +115,105 @@
             </div>
 
             <div class="col-md-12">
-                <h3>Nearby events:</h3>
-                <div class="container-fluid ne-wrapper">
-                    NEARBY EVENTS
+                <h3>Nearby upcoming events:</h3>
+
+
+                <div class="flex justify-between">
+                    @foreach($event->getClosest() as $closeEvent)
+
+
+                        <div class="w-1/4 m-6 text-center shadow border border-grey-lighter p-4 bg-grey-lightest flex-row justify-between">
+                            <div style="height:150px">
+
+                                @if($closeEvent->picture)
+                                    <img src="{{$closeEvent->picture}}" style="height: 150px">
+                                @else
+                                    <img style="height: 150px"
+                                         src="https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png">
+                                @endif
+                            </div>
+                            <div class="flex flex-col justify-between">
+
+                                <div class="flex flex-col flex-auto">
+                                    <div>
+                                        <a href="/view/{{$closeEvent->id}}/{{$closeEvent->slug}}">{{$closeEvent->title}}</a>
+                                    </div>
+                                    <div>
+                                        {{$closeEvent->description}}</div>
+
+                                </div>
+
+
+                                <div class="mt-6 text-grey-dark">
+                                    Start: {{Carbon\Carbon::parse($closeEvent->start_date)->toFormattedDateString()}}
+
+                                </div>
+
+                            </div>
+                        </div>
+                    @endforeach
+
                 </div>
             </div>
-
-
         </div>
+
+
     </section>
 
 
 @endsection
 
-@section('extra-js')
+@push('scripts')
 
-    <script type="text/javascript">
-        window.twttr = (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0],
-                t = window.twttr || {};
-            if (d.getElementById(id)) return t;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://platform.twitter.com/widgets.js";
-            fjs.parentNode.insertBefore(js, fjs);
 
-            t._e = [];
-            t.ready = function (f) {
-                t._e.push(f);
-            };
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZivlK6i8_JWt15x-BewfW9Vw2mhWPd7o&libraries=places"></script>
+    <script>
 
-            return t;
-        }(document, "script", "twitter-wjs"));
+
+        var event = {!! json_encode($event) !!};
+
+        var geoposition = event.geoposition;
+        var coordinates = geoposition.split(",");
+
+
+        map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: {
+                lat: parseFloat(coordinates[0]),
+                lng: parseFloat(coordinates[1])
+            }
+
+        });
+
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(coordinates[0], coordinates[1]),
+            map: map,
+            animation: google.maps.Animation.DROP,
+
+        });
+
+
+        var contentString = '<div id="content">' +
+            '<h1 id="firstHeading" class="firstHeading">' + event.title + '</h1>' +
+            '<div id="bodyContent">' +
+            '<p>' + event.description + '</p>' +
+            '</div>' +
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        marker.addListener('click', function () {
+            infowindow.open(map, marker);
+        });
+
+
     </script>
 
 
 
-
-    <script>(function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1415375708710844";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-
-
-
-@endsection
+@endpush
 
 
 

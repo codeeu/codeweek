@@ -51,6 +51,7 @@ Route::post('api/events/picture', 'Api\EventPictureController@store')->middlewar
 Route::delete('api/users/avatar', 'Api\UserAvatarController@delete')->middleware('auth');
 Route::get('api/event/list', 'Api\EventsController@list')->name('event_list');
 Route::get('api/event/detail', 'Api\EventsController@detail')->name('event_list');
+Route::get('api/event/closest', 'Api\EventsController@closest');
 
 Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/activities', 'AdminController@activities')->name('activities');

@@ -4,7 +4,9 @@ namespace App;
 
 use App\Filters\EventFilters;
 use Carbon\Carbon;
+use DB;
 use Illuminate\Database\Eloquent\Model;
+
 use Spatie\Activitylog\Traits\LogsActivity;
 
 class Event extends Model
@@ -14,7 +16,7 @@ class Event extends Model
     protected $table = 'events';
     protected $fillable = [
         'status', 'title', 'slug', 'organizer', 'description',
-        'geoposition',
+        'geoposition', 'latitude', 'longitude',
         'location',
         'country_iso',
         'start_date',
@@ -108,5 +110,42 @@ class Event extends Model
         }
 
         return $events->get();
+    }
+
+    public function getClosest(){
+        /*
+         SELECT id, title,
+        ( 6371 *
+         acos( cos( radians(50.8093378) ) *
+         cos( radians( latitude ) ) *
+         cos( radians( longitude ) -
+         radians(4.4088449) ) +
+         sin( radians(50.8093378) ) *
+         sin( radians( latitude ) ) ) )
+         AS distance FROM events
+         WHERE status LIKE "APPROVED"
+         AND END_DATE > NOW()
+         ORDER BY DISTANCE ASC
+         LIMIT 5
+         */
+
+        $events = Event::selectRaw('id, title, slug, start_date, description, picture,
+        ( 6371 *
+         acos( cos( radians(?) ) *
+         cos( radians( latitude ) ) *
+         cos( radians( longitude ) -
+         radians(?) ) +
+         sin( radians(?) ) *
+         sin( radians( latitude ) ) ) )
+         AS distance', [$this->latitude,$this->longitude,$this->latitude])
+
+            ->where('status', '=', 'APPROVED')
+            ->where('id', '<>', $this->id)
+            ->where('END_DATE', '>', Carbon::now())
+            ->orderBy('distance')
+            ->take(4)
+            ->get();
+
+        return $events;
     }
 }
