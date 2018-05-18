@@ -2,7 +2,7 @@
 
 
     @foreach($themes as $theme)
-        <li><label for="id_theme_0"><input id="id_theme_{{$theme->id}}" name="theme[]"
+        <li><label for="id_theme_{{$theme->id}}"><input id="id_theme_{{$theme->id}}" name="theme[]"
                                            type="checkbox"
                                            value="{{$theme->id}}"
                         {{ session('theme')?in_array($theme->id,session('theme'))?'checked':'':'' }}

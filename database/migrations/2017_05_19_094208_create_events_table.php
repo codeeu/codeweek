@@ -22,6 +22,8 @@ class CreateEventsTable extends Migration
             $table->string('organizer', 255);
             $table->longText('description');
             $table->string('geoposition', 42);
+            $table->float('latitude', 12,6);
+            $table->float('longitude', 12, 6);
             $table->string('location', 1000);
             $table->string('country_iso', 2);
             $table->dateTime('start_date');

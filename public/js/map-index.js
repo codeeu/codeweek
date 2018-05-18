@@ -95,6 +95,8 @@ $(document).on('ready', function () {
     // Calling the constructor, thereby initializing the map
     var map = new google.maps.Map(document.getElementById('home-map'), options);
 
+    var opened;
+
     var success = function (data) {
 
         $.each(data, function (key, val) {
@@ -108,12 +110,15 @@ $(document).on('ready', function () {
             });
 
             google.maps.event.addListener(marker1, 'click', function () {
-                console.log(val);
+
+
                 // Add information window
                 $.ajax({
                     dataType: "json",
                     url: "api/event/detail?id=" + val.id,
                     success: function(res){
+
+                        if (opened) {opened.close()};
 
                         var event = res.data;
 
@@ -122,11 +127,14 @@ $(document).on('ready', function () {
                             '<p style="overflow:hidden;">' + event.description +
                             '&nbsp;<a class="btn btn-sm" href="' + event.path + '" class="map-marker"><span>More...</span></a></p>';
 
-                        var infowindow1 = new google.maps.InfoWindow({
+                        var infowindow = new google.maps.InfoWindow({
                             content: bubble_content
                         });
+                        opened = infowindow;
 
-                        infowindow1.open(map, marker1);
+                        infowindow.open(map, marker1);
+
+
 
 
                     }
@@ -146,6 +154,8 @@ $(document).on('ready', function () {
         url: "api/event/list",
         success: success
     });
+
+
 
 
 

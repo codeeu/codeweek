@@ -23,23 +23,17 @@
     <link rel="stylesheet" href="{{asset('css/ext/responsive.css')}}" type="text/css" />
 
 
-    {{--<link rel="stylesheet" href="http://codeweekeu.s3.amazonaws.com/assets/stylesheets/responsive.css" type="text/css" />--}}
-{{--    <link rel="stylesheet" href="{{ settings.THEME_ASSETS_BASE_URL }}stylesheets/customizations.css" type="text/css" />--}}
-    <!--[if lt IE 9]>
-    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-    <![endif]-->
+
+
     <link rel="stylesheet" href="{{asset('css/ext/colors.css')}}" type="text/css" />
-    {{--<link rel="stylesheet" href="http://codeweekeu.s3.amazonaws.com/assets/stylesheets/colors.css" type="text/css" />--}}
 
 
 
     <link href="{{asset('css/custom.css') }}" media="screen" rel="stylesheet" />
 
-    <link rel="stylesheet" href="{{asset('plugins/bootstrap/css/bootstrap.min.css')}}" type="text/css"/>
 
-    <!-- Bootstrap Select Option css -->
-    <link rel="stylesheet" href="{{asset('plugins/bootstrap/css/bootstrap-select.min.css')}}" type="text/css"/>
 
+    <link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css" />
 
 
     <!-- Custom style -->

@@ -138,7 +138,7 @@
                             <div class="col-sm-9 first last">
                                 {{--TODO: REMOVE--}}
                                 <input type="hidden" name="country_iso" id="country_iso" value="{{old('country_iso')}}">
-                                <input type="text" name="geoposition" id="geoposition" value="{{old('geoposition')}}">
+                                <input type="hidden" name="geoposition" id="geoposition" value="{{old('geoposition')}}">
                                 <input class="form-control" id="autocomplete" maxlength="1000"
                                        name="location"
                                        placeholder="Where will the event be taking place?" type="text"
@@ -330,7 +330,7 @@
 
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZivlK6i8_JWt15x-BewfW9Vw2mhWPd7o&libraries=places"></script>
-    <script src="{{asset('js/event-map.js')}}"></script>
+    <script src="{{asset('js/map-add-event.js')}}"></script>
 
 
 @endpush
