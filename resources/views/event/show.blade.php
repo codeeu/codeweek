@@ -118,11 +118,11 @@
                 <h3>Nearby upcoming events:</h3>
 
 
-                <div class="flex justify-between">
+                <div class="justify-between md:flex sm:flex-row">
                     @foreach($event->getClosest() as $closeEvent)
 
 
-                        <div class="w-1/4 m-6 text-center shadow border border-grey-lighter p-4 bg-grey-lightest flex-row justify-between">
+                        <div class="sm:w-full md:w-1/4 m-6 text-center shadow border border-grey-lighter p-4 bg-grey-lightest flex-row justify-between">
                             <div style="height:150px">
 
                                 @if($closeEvent->picture)
