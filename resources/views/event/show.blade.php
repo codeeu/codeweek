@@ -3,8 +3,12 @@
 @section('content')
     <section>
         <div class="container">
+            <approve-event :event="{{$event}}"></approve-event>
+
             <div class="about-event clearfix">
                 <div class="col-md-8 event-description first">
+
+
                     <h1>{{ $event->title }}</h1>
                     <strong>Organized by:</strong>
 
@@ -177,7 +181,7 @@
 
 
         map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 15,
+            zoom: 6,
             center: {
                 lat: parseFloat(coordinates[0]),
                 lng: parseFloat(coordinates[1])

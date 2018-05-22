@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 use App\Event;
 use App\Queries\EventsQuery;
+use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -68,7 +69,6 @@ class EventController extends Controller
     {
 
 
-
         $this->validate($request, [
             'title' => 'required',
             'description' => 'required',
@@ -98,8 +98,7 @@ class EventController extends Controller
         ]);
 
 
-
-       $event = EventsQuery::store($request);
+        $event = EventsQuery::store($request);
 
         return view('event.thankyou', compact('event'));
     }
@@ -147,5 +146,26 @@ class EventController extends Controller
     public function destroy(Event $event)
     {
         //
+    }
+
+    public function approve(Event $event)
+    {
+
+        $this->authorize('approve', $event);
+
+        $event->update(['status' => "APPROVED"]);
+
+    }
+
+    public function reject(Event $event)
+    {
+
+        $this->authorize('approve', $event);
+
+        $event->update(['status' => "REJECTED"]);
+
+
+
+
     }
 }
