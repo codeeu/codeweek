@@ -12,6 +12,8 @@ class HomeController extends Controller
     }
 
     public function geo(){
-        dd(geoip($ip = null));
+        var_dump('new');
+        dd(geoip());
+        //dd(geoip('147.67.241.226'));
     }
 }
