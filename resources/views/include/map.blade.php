@@ -31,6 +31,9 @@
 
 @push('scripts')
     <script type="text/javascript"
+            src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZivlK6i8_JWt15x-BewfW9Vw2mhWPd7o"></script>
     <script src="{{asset('js/map-index.js')}}"></script>
 @endpush
