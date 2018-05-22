@@ -20,6 +20,7 @@ class PendingEventsController extends Controller
 
         return view('event.pending', with([
             'country_iso' => is_null($country) ?'' : $country->iso,
+            'country_name' => is_null($country) ?'' : $country->name,
             'events' => $events,
             'countries' => $countries
         ]));

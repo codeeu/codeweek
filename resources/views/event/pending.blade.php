@@ -7,18 +7,14 @@
             <h1>Pending Events</h1>
 
             @role('super admin')
-            <country-select :code="'{{$country_iso}}'" :countries="{{$countries}}" ></country-select>
+            <country-select :code="'{{$country_iso}}'" :countries="{{$countries}}"></country-select>
 
 
-
-            <br/>
             <br/>
             @endrole
 
 
-            @if($events)
-
-
+            @if($events->count() > 0)
                 <div class="row">
                     @foreach($events as $event)
                         @component('event.event_tile', ['event'=>$event])
@@ -27,6 +23,9 @@
 
                 </div>
                 {{ $events->links() }}
+            @else
+
+                No Pending Event found for {{$country_name}}
             @endif
 
         </div>
