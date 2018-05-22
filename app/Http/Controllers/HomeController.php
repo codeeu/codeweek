@@ -14,6 +14,6 @@ class HomeController extends Controller
     public function geo(){
         var_dump('new');
         //dd(geoip()->getClientIP());
-        dd(geoip());
+        dd(geoip(geoip()->getClientIP()));
     }
 }
