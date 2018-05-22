@@ -98,15 +98,13 @@ $(document).on('ready', function () {
     var opened;
 
     var success = function (data) {
-
+        var markers = [];
         $.each(data, function (key, val) {
 
             // Add Marker
             var coordinates = val.geoposition.split(',');
             var marker1 = new google.maps.Marker({
-                position: new google.maps.LatLng(coordinates[0], coordinates[1]),
-                map: map
-
+                position: new google.maps.LatLng(coordinates[0], coordinates[1])
             });
 
             google.maps.event.addListener(marker1, 'click', function () {
@@ -116,9 +114,12 @@ $(document).on('ready', function () {
                 $.ajax({
                     dataType: "json",
                     url: "api/event/detail?id=" + val.id,
-                    success: function(res){
+                    success: function (res) {
 
-                        if (opened) {opened.close()};
+                        if (opened) {
+                            opened.close()
+                        }
+                        ;
 
                         var event = res.data;
 
@@ -135,18 +136,19 @@ $(document).on('ready', function () {
                         infowindow.open(map, marker1);
 
 
-
-
                     }
                 });
 
 
-
             });
 
+            markers.push(marker1);
 
 
         });
+        var markerCluster = new MarkerClusterer(map, markers,
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+
     };
 
     $.ajax({
@@ -156,14 +158,12 @@ $(document).on('ready', function () {
     });
 
 
-
-
-
-    // Create information window
+// Create information window
     function createInfo(title, content) {
         return '<div class="infowindow"><span>' + title + '</span>' + content + '</div>';
     }
 
 
-});
+})
+;
 
