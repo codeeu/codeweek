@@ -3,7 +3,7 @@ $(document).on('ready', function () {
     //------- Google Maps ---------//
 
     // Creating a LatLng object containing the coordinate for the center of the map
-    var latlng = new google.maps.LatLng(50.8093378, 4.4088449);
+    var latlng = new google.maps.LatLng(48.8093378, 4.4088449);
 
     // Creating an object literal containing the properties we want to pass to the map
     var options = {
