@@ -147,12 +147,12 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        Intervention\Image\ImageServiceProvider::class,
 
         /*
          * Package Service Providers...
          */
-
+        Intervention\Image\ImageServiceProvider::class,
+        \Torann\GeoIP\GeoIPServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -161,7 +161,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        App\Providers\CalendarServiceProvider::class
+        App\Providers\CalendarServiceProvider::class,
+
 
     ],
 
@@ -194,6 +195,7 @@ return [
         'Event' => Illuminate\Support\Facades\Event::class,
         'File' => Illuminate\Support\Facades\File::class,
         'Gate' => Illuminate\Support\Facades\Gate::class,
+        'GeoIP' => \Torann\GeoIP\Facades\GeoIP::class,
         'Hash' => Illuminate\Support\Facades\Hash::class,
         'Image' => Intervention\Image\Facades\Image::class,
         'Lang' => Illuminate\Support\Facades\Lang::class,
