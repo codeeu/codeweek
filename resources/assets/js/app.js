@@ -17,7 +17,7 @@ import avatarForm from './components/AvatarForm.vue';
 import pictureForm from './components/PictureForm.vue';
 import dateTime from './components/DateTime.vue';
 import inputTags from './components/InputTags.vue';
-import approveEvent from './components/ApproveEvent.vue';
+import moderateEvent from './components/ModerateEvent.vue';
 
 
 
@@ -40,6 +40,6 @@ const app = new Vue({
         countrySelect,
         dateTime,
         inputTags,
-        approveEvent
+        moderateEvent
     }
 });

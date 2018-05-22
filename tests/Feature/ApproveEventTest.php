@@ -93,6 +93,46 @@ class ApproveEventTest extends TestCase
 
     }
 
+    /** @test */
+    public function visitors_cant_see_the_approve_banner()
+    {
+
+        $event = create('App\Event');
+
+        $this->get('/view/' . $event->id . '/random')
+            ->assertDontSee('approve-event');
+
+
+    }
+
+    /** @test */
+    public function ambassadors_of_other_countries_cant_see_the_approve_banner()
+    {
+        $ambassador = create('App\User',['country_iso'=>'FR'])->assignRole('ambassador');
+        $this->signIn($ambassador);
+
+        $event = create('App\Event',['country_iso'=>'BE']);
+
+        $this->get('/view/' . $event->id . '/random')
+            ->assertDontSee('approve-event');
+
+    }
+
+    /** @test */
+    public function ambassadors_of_right_country_can_see_the_approve_banner()
+    {
+        $ambassador = create('App\User',['country_iso'=>'FR'])->assignRole('ambassador');
+        $this->signIn($ambassador);
+
+        $event = create('App\Event',['country_iso'=>'FR']);
+
+        $this->get('/view/' . $event->id . '/random')
+            ->assertSee('approve-event');
+
+    }
+
+
+
 
 
 

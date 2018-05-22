@@ -1,6 +1,7 @@
 @extends('layout.base')
 
 @section('content')
+
     @include('include.map')
 
     <!-- Popular Listing Section -->

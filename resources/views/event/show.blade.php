@@ -3,7 +3,9 @@
 @section('content')
     <section>
         <div class="container">
+            @can('approve', $event)
             <approve-event :event="{{$event}}"></approve-event>
+            @endcan
 
             <div class="about-event clearfix">
                 <div class="col-md-8 event-description first">
