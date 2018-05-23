@@ -4,7 +4,16 @@
 
     @include('include.map')
 
-    Your coordinates: {{$geoip->lat}} - {{$geoip->lon}}
+    <div class="col-md-12">
+        <h3>Nearby upcoming events:</h3>
+
+
+        <div class="justify-between md:flex sm:flex-row">
+            @component('components.close-events',['closeEvents'=>$events])
+            @endcomponent
+
+        </div>
+    </div>
 
 
 @endsection

@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Filters\EventFilters;
+use App\Helpers\EventHelper;
 use Carbon\Carbon;
 use DB;
 use Illuminate\Database\Eloquent\Model;
@@ -112,30 +113,9 @@ class Event extends Model
         return $events->get();
     }
 
-    public function getClosest(){
+    public function getClosest()
+    {
+        return EventHelper::getCloseEvents($this->longitude, $this->latitude, $this->id);
 
-        //acos is not known with sqlite that is used for testing.
-        if(env('DB_CONNECTION') == 'sqlite') {
-            return Event::take(4)->get();
-        };
-
-        $events = Event::selectRaw('id, title, slug, start_date, description, picture,
-        ( 6371 *
-         acos( cos( radians(?) ) *
-         cos( radians( latitude ) ) *
-         cos( radians( longitude ) -
-         radians(?) ) +
-         sin( radians(?) ) *
-         sin( radians( latitude ) ) ) )
-         AS distance', [$this->latitude,$this->longitude,$this->latitude])
-
-            ->where('status', '=', 'APPROVED')
-            ->where('id', '<>', $this->id)
-            ->where('END_DATE', '>', Carbon::now())
-            ->orderBy('distance')
-            ->take(4)
-            ->get();
-
-        return $events;
     }
 }

@@ -2,17 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use App\Helpers\EventHelper;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function index(){
+    public function index()
+    {
 
-        $geoip = geoip(geoip()->getClientIP());
-        return view('index', compact('geoip'));
+        return view('index')->with([
+            'events' => $this->eventsNearMe()
+        ]);
     }
 
-    public function geo(){
-        dd(geoip(geoip()->getClientIP()));
+    private function eventsNearMe()
+    {
+        $geoip = geoip(geoip()->getClientIP());
+        return EventHelper::getCloseEvents($geoip->lon, $geoip->lat);
+
+
     }
 }
