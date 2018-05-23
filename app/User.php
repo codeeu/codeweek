@@ -19,7 +19,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'firstname', 'lastname', 'avatar_path','email', 'password','bio','twitter','website','country_iso'
+        'firstname', 'lastname', 'avatar_path', 'email', 'password', 'bio', 'twitter', 'website', 'country_iso'
     ];
 
     /**
@@ -33,8 +33,9 @@ class User extends Authenticatable
 
     protected $appends = ['fullName'];
 
-    public function events(){
-        return $this->hasMany('App\Event','creator_id');
+    public function events()
+    {
+        return $this->hasMany('App\Event', 'creator_id');
     }
 
     public function schools()
@@ -44,7 +45,7 @@ class User extends Authenticatable
 
     public function country()
     {
-        return $this->belongsTo('App\Country','country_iso','iso');
+        return $this->belongsTo('App\Country', 'country_iso', 'iso');
     }
 
     public function scopeFilter($query, UserFilters $filters)
@@ -71,7 +72,7 @@ class User extends Authenticatable
      */
     public function fullName()
     {
-        return  $this->firstname . " " . $this->lastname;
+        return $this->firstname . " " . $this->lastname;
     }
 
     /**
@@ -79,8 +80,12 @@ class User extends Authenticatable
      */
     public function getFullNameAttribute()
     {
-
         return $this->fullName();
+    }
+
+    public static function getGeoIPData()
+    {
+        return geoip(geoip()->getClientIP());
     }
 
 
