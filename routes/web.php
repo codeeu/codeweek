@@ -33,7 +33,6 @@ Route::get('/profile', function () {
 
 
 Route::get('/', 'HomeController@index')->name('map');
-Route::get('geo', 'HomeController@geo');
 Route::get('/add', 'EventController@create')->name('create_event');
 Route::get('/ambassadors', 'AmbassadorController@index')->name('ambassadors');
 Route::post('/events', 'EventController@store');
