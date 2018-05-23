@@ -100,7 +100,7 @@ class ApproveEventTest extends TestCase
         $event = create('App\Event');
 
         $this->get('/view/' . $event->id . '/random')
-            ->assertDontSee('approve-event');
+            ->assertDontSee('moderate-event');
 
 
     }
@@ -114,7 +114,7 @@ class ApproveEventTest extends TestCase
         $event = create('App\Event',['country_iso'=>'BE']);
 
         $this->get('/view/' . $event->id . '/random')
-            ->assertDontSee('approve-event');
+            ->assertDontSee('moderate-event');
 
     }
 
@@ -127,7 +127,7 @@ class ApproveEventTest extends TestCase
         $event = create('App\Event',['country_iso'=>'FR']);
 
         $this->get('/view/' . $event->id . '/random')
-            ->assertSee('approve-event');
+            ->assertSee('moderate-event');
 
     }
 
