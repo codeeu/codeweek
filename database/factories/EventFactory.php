@@ -12,8 +12,8 @@ $factory->define(App\Event::class, function (Faker $faker) {
     $orgtypes = array('school','library','nonprofit','other');
     if (empty($countries)) $countries[0] = factory('App\Country')->create()->iso;
 
-$latitude = $faker->latitude(49,51);
-$longitude = $faker->longitude(3,6);
+$latitude = $faker->latitude(42,59);
+$longitude = $faker->longitude(-4,12);
 
     return [
         'status' => $faker->randomElement(['APPROVED','PENDING','REJECTED']),
