@@ -48,6 +48,6 @@ class EventSeeder extends Seeder
 
         ]);
 
-        factory(App\Event::class, 20000)->create();
+        factory(App\Event::class, 100)->create();
     }
 }
