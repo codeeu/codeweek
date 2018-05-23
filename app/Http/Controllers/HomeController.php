@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Helpers\EventHelper;
-use Illuminate\Http\Request;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -17,7 +17,7 @@ class HomeController extends Controller
 
     private function eventsNearMe()
     {
-        $geoip = geoip(geoip()->getClientIP());
+        $geoip = User::getGeoIPData();
         return EventHelper::getCloseEvents($geoip->lon, $geoip->lat);
 
 

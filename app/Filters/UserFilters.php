@@ -19,7 +19,7 @@ class UserFilters extends Filters
      */
     protected function country_iso($country_iso)
     {
-        if ($country_iso== "") return;
+        //if ($country_iso== "") return;
         $result = $this->builder->where('country_iso', $country_iso);
         return $result;
     }

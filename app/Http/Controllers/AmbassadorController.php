@@ -14,14 +14,13 @@ class AmbassadorController extends Controller
 
     public function index(UserFilters $filters)
     {
+        if (empty($filters->getFilters())) {
+            $country_iso = auth()->user()->country ? auth()->user()->country->iso : User::getGeoIPData()->iso_code;
+            return redirect('ambassadors?country_iso=' . $country_iso);
+        };
 
-
-        // Get the current country
-        // Get list of countries with events
-        // Show ambassador(s) for selected country
 
         $ambassadors = User::role('ambassador')->filter($filters)->paginate(10);
-        $countries = [];
 
         return view('ambassadors')->with([
             "ambassadors" => $ambassadors,
