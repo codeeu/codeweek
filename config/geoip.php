@@ -126,19 +126,19 @@ return [
     */
 
     'default_location' => [
-        'ip' => '127.0.0.0',
-        'iso_code' => 'US',
-        'country' => 'United States',
-        'city' => 'New Haven',
+        'ip' => '147.67.241.226',
+        'iso_code' => 'FR',
+        'country' => 'Paris',
+        'city' => 'Default City',
         'state' => 'CT',
-        'state_name' => 'Connecticut',
-        'postal_code' => '06510',
-        'lat' => 41.31,
-        'lon' => -72.92,
-        'timezone' => 'America/New_York',
-        'continent' => 'NA',
+        'state_name' => 'Brussels Capital',
+        'postal_code' => '1050',
+        'lat' => 48.855899,
+        'lon' => 2.298088,
+        'timezone' => 'Europe/Paris',
+        'continent' => 'EU',
         'default' => true,
-        'currency' => 'USD',
+        'currency' => 'EUR',
     ],
 
 ];
