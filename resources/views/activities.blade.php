@@ -8,7 +8,7 @@
             @foreach($activities as $activity)
                 <a href="{{$activity->subject->path()}}"> {{$activity->description}} </a>
                 @if($activity->causer)
-                by {{$activity->causer->name}}
+                by {{$activity->causer->fullName()}}
                 @else
                  by system
                 @endif
