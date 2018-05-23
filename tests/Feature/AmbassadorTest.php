@@ -7,6 +7,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Torann\GeoIP\Facades\GeoIP;
 
 class AmbassadorTest extends TestCase
 {
@@ -40,13 +41,36 @@ class AmbassadorTest extends TestCase
 
         $this->withExceptionHandling();
 
-        //$this->get('/ambassadors')->assertSee($this->ambassador_be->name);
         $this->get('/ambassadors?country_iso=BE')->assertSee($this->ambassador_be->lastname);
         $this->get('/ambassadors?country_iso=BE')->assertDontSee($this->ambassador_fr->lastname);
         $this->get('/ambassadors?country_iso=BE')->assertDontSee($this->admin_be->lastname);
 
 
     }
+
+    /** @test */
+    public function signedin_users_should_see_their_country_ambassadors()
+    {
+
+        $this->signIn($this->ambassador_be);
+
+        GeoIP::shouldReceive('getClientIP')
+            ->never();
+
+
+        $this->get('/ambassadors')->assertRedirect('/ambassadors?country_iso=' . $this->ambassador_be->country->iso);
+
+    }
+
+    /** @test */
+    public function not_logged_users_should_see_their_country_ambassadors_based_on_geoIP()
+    {
+        GeoIP::shouldReceive('getClientIP')
+            ->once()
+            ->andReturn('text');
+        $this->get('/ambassadors');
+    }
+
 
     /** @test */
     public function ambassador_page_for_a_country_should_display_the_facebook_link()
