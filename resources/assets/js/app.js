@@ -18,6 +18,7 @@ import pictureForm from './components/PictureForm.vue';
 import dateTime from './components/DateTime.vue';
 import inputTags from './components/InputTags.vue';
 import moderateEvent from './components/ModerateEvent.vue';
+import reportEvent from './components/ReportEvent.vue';
 
 
 
@@ -40,6 +41,7 @@ const app = new Vue({
         countrySelect,
         dateTime,
         inputTags,
-        moderateEvent
+        moderateEvent,
+        reportEvent
     }
 });

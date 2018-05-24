@@ -26,6 +26,7 @@ class RolesAndPermissionsSeeder extends Seeder
 
         Permission::create(['name' => 'generate certificate']);
         Permission::create(['name' => 'view activities']);
+        Permission::create(['name' => 'promote ambassador']);
 
         // create roles and assign created permissions
 

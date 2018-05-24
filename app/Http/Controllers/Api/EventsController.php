@@ -66,4 +66,6 @@ class EventsController extends Controller
         //return new EventResource($event);
 
     }
+
+
 }
