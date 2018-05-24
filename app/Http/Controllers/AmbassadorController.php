@@ -12,6 +12,11 @@ use Illuminate\Support\Facades\Log;
 class AmbassadorController extends Controller
 {
 
+
+    public function create(){
+        return view('volunteer');
+    }
+
     public function index(UserFilters $filters)
     {
         if (empty($filters->getFilters())) {

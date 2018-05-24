@@ -35,6 +35,7 @@ Route::get('/profile', function () {
 Route::get('/', 'HomeController@index')->name('map');
 Route::get('/add', 'EventController@create')->name('create_event');
 Route::get('/ambassadors', 'AmbassadorController@index')->name('ambassadors');
+Route::get('/volunteer', 'AmbassadorController@create')->middleware('auth')->name('volunteer');
 Route::post('/events', 'EventController@store');
 Route::get('/guide', function () {return view('guide');})->name('guide');
 Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
@@ -44,6 +45,7 @@ Route::get('/search', 'SearchController@search')->name('search_event');
 Route::get('/scoreboard', 'ScoreboardController@index')->name('scoreboard');
 Route::patch('user', 'UserController@update')->name('user.update');
 Route::get('view/{event}/{slug}', 'EventController@show')->name('view_event');
+Route::get('event/report/{event}', 'ReportController@index')->name('report_event');
 Route::resource('school', 'SchoolController');
 
 Route::post('api/users/{user}/avatar', 'Api\UserAvatarController@store')->middleware('auth')->name('avatar');
@@ -52,6 +54,8 @@ Route::delete('api/users/avatar', 'Api\UserAvatarController@delete')->middleware
 Route::get('api/event/list', 'Api\EventsController@list')->name('event_list');
 Route::get('api/event/detail', 'Api\EventsController@detail')->name('event_list');
 Route::get('api/event/closest', 'Api\EventsController@closest');
+
+Route::post('api/event/report/{event}', 'ReportController@store')->middleware('auth');
 
 Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/activities', 'AdminController@activities')->name('activities');

@@ -7,6 +7,10 @@
                 <moderate-event :event="{{$event}}"></moderate-event>
             @endcan
 
+            @can('report', $event)
+                <report-event :event="{{$event}}"></report-event>
+            @endcan
+
             <div class="about-event clearfix">
                 <div class="col-md-8 event-description first">
 

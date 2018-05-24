@@ -30,6 +30,7 @@ class Event extends Model
         'updated',
         'creator_id',
         'report_notifications_count',
+        'reported_at',
         'name_for_certificate',
         'organizer_type'
 
