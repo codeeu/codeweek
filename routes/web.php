@@ -45,7 +45,9 @@ Route::get('/search', 'SearchController@search')->name('search_event');
 Route::get('/scoreboard', 'ScoreboardController@index')->name('scoreboard');
 Route::patch('user', 'UserController@update')->name('user.update');
 Route::get('view/{event}/{slug}', 'EventController@show')->name('view_event');
+Route::get('events_to_report', 'ReportController@list')->name('report_list');
 Route::get('event/report/{event}', 'ReportController@index')->name('report_event');
+Route::post('event/report/{event}', 'ReportController@store');
 Route::resource('school', 'SchoolController');
 
 Route::post('api/users/{user}/avatar', 'Api\UserAvatarController@store')->middleware('auth')->name('avatar');

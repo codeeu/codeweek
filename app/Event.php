@@ -32,6 +32,11 @@ class Event extends Model
         'report_notifications_count',
         'reported_at',
         'name_for_certificate',
+        'participants_count',
+        'average_participant_age',
+        'percentage_of_females',
+        'codeweek_for_all_participation_code',
+        'name_for_certificate',
         'organizer_type'
 
     ];

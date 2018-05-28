@@ -3,12 +3,9 @@
 namespace Tests\Feature;
 
 use App\Event;
-use App\School;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Http\Response;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Torann\GeoIP\Facades\GeoIP;
 
 class ReportEventTest extends TestCase
 {
@@ -25,13 +22,6 @@ class ReportEventTest extends TestCase
         $this->event = create('App\Event', []);
 
 
-/*        $this->france = create('App\Country', ['iso' => 'FR']);
-        $this->belgium = create('App\Country', ['iso' => 'BE']);
-
-        $this->admin_be = create('App\User', ['country_iso' => $this->belgium->iso])->assignRole('super admin');
-        $this->ambassador_be = create('App\User', ['country_iso' => $this->belgium->iso])->assignRole('ambassador');
-        $this->ambassador_fr = create('App\User', ['country_iso' => $this->france->iso])->assignRole('ambassador');
-*/
     }
 
     /** @test */
@@ -85,17 +75,51 @@ class ReportEventTest extends TestCase
 
         $this->assertEquals($this->event->reported_at, null);
 
+        $request = [
+            "participants_count" => 10,
+            "average_participant_age" => 20,
+            "percentage_of_females" => 30,
+            "codeweek_for_all_participation_code" => "foobar",
+            "name_for_certificate" => "sdsqdsq"
+        ];
+        $this->post('/event/report/' . $this->event->id, $request);
 
-        $this->post('/api/event/report/' . $this->event->id)
-            ->assertSuccessful();
 
-        $event = Event::where('id',$this->event->id)->first();
+        $event = Event::where('id', $this->event->id)->first();
 
         $this->assertNotEquals($event->reported_at, null);
+        $this->assertEquals($event->participants_count, 10);
+        $this->assertEquals($event->average_participant_age, 20);
+        $this->assertEquals($event->percentage_of_females, 30);
+        $this->assertEquals($event->codeweek_for_all_participation_code, "foobar");
+        $this->assertEquals($event->name_for_certificate, "sdsqdsq");
 
     }
 
+    /** @test */
+    public function exception_should_be_thrown_while_trying_to_report()
+    {
 
+        //$this->withExceptionHandling();
+
+
+
+        $request = [
+            "participants_count" => 10,
+            "average_participant_age" => 20,
+            "percentage_of_females" => 30,
+            "codeweek_for_all_participation_code" => "foobar",
+            "name_for_certificate" => "sdsqdsq"
+        ];
+        $this->post('/event/report/' . $this->event->id, $request)
+            ->assertStatus(Response::HTTP_FORBIDDEN);
+
+
+
+
+
+
+    }
 
 
 }
