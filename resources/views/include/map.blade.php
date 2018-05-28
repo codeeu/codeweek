@@ -14,7 +14,7 @@
                 </div>
                 <div class="col-md-3 col-sm-3 no-padd">
                     <select class="selectpicker form-control" data-live-search="true">
-                        <option data-tokens="ketchup mustard">{{__('Choose Category')}}</option>
+                        <option data-tokens="ketchup mustard">@lang('Choose Category')</option>
                         <option data-tokens="mustard">{{__('Burger, Shake and a Smile')}}</option>
                         <option data-tokens="frosting">{{__('Sugar, Spice and all things nice')}}</option>
                     </select>

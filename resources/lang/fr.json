@@ -1,14 +1,16 @@
 {
-  "E-Mail Address" : "Adresse Mail",
-  "Password" : "Mot de passe",
-  "Remember Me" : "Se souvenir de moi",
-  "Search" : "Rechercher",
-  "Keywords" : "Mots-clés",
-  "Location" : "Lieu",
-  "Choose Category" : "Choix de la catégorie",
-  "Burger, Shake and a Smile" : "Un burger, un lait secoué et un sourire",
-  "Sugar, Spice and all things nice" : "Du sucre, des épices et des trucs sympas",
-  "Please enter a title for your event.": "Veuillez renseigner un titre pour votre événement."
-
-
+  "E-Mail Address": "Adresse Mail",
+  "Password": "Mot de passe",
+  "Remember Me": "Se souvenir de moi",
+  "Search": "Rechercher",
+  "Keywords": "Mots-clés",
+  "Location": "Lieu",
+  "Event title": "Titre de l'évènement",
+  "Choose Category": "Choix de la catégorie",
+  "Burger, Shake and a Smile": "Un burger, un lait secoué et un sourire",
+  "Sugar, Spice and all things nice": "Du sucre, des épices et des trucs sympas",
+  "Please enter a title for your event.": "Veuillez renseigner un titre pour votre événement.",
+  "You can fill this form only once! Please check your data carefully. If you make a mistake, <a href='mailto:info@codeweek.eu'>contact us</a>.": "Vous ne pouvez remplir ce formulaire qu'une seule fois! Faites bien attention aux données entrées. Si vous avez commis une erreur, <a href='mailto:info@codeweek.eu'>contactez-nous</a>.",
+  "After submitting the report, a personalized certificate for participation in Code Week will be issued automatically and will become available for you to download or share. You can see an example certificate here.": "Après avoir soumis votre rapport, un certificat personnalisé sera disponible au téléchargement.",
+  "Required fields are marked with an * asterisk.": "Les champs requis sont marqués avec une asterisque (*)"
 }
