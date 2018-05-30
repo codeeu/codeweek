@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use App\Event;
+use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Http\Response;
 use Tests\TestCase;
@@ -119,6 +120,26 @@ class ReportEventTest extends TestCase
 
 
 
+    }
+
+    /** @test */
+    public function user_should_see_list_of_his_reportable_events(){
+        $this->signIn(create('App\User'));
+
+        $myReportableEvent = create('App\Event', ['creator_id' => auth()->id(),'status'=>'APPROVED', 'start_date' => Carbon::now()->subDay()]);
+        $futureEvent = create('App\Event', ['creator_id' => auth()->id(),'status'=>'APPROVED', 'start_date' => Carbon::now()->addDay(1)]);
+        $alreadyReportedEvent = create('App\Event', ['creator_id' => auth()->id(),'status'=>'APPROVED', 'reported_at'=>Carbon::now()]);
+        $myNonReportableEvent = create('App\Event', ['creator_id' => auth()->id(), 'status'=>'PENDING']);
+        $notMyEvent = create('App\Event', ['status'=>'APPROVED']);
+
+
+        $this->get('/events_to_report')
+            ->assertSee($myReportableEvent->title)
+            ->assertDontSee($myNonReportableEvent->title)
+            ->assertDontSee($notMyEvent->title)
+            ->assertDontSee($alreadyReportedEvent->title)
+            ->assertDontSee($futureEvent->title)
+        ;
     }
 
 
