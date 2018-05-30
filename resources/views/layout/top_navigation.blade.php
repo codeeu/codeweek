@@ -119,6 +119,8 @@
 
                                 <li><a href="{{route('my_events')}}"><i
                                                 class="fa fa-user"></i> Your events</a></li>
+                                <li><a href="{{route('certificates')}}"><i
+                                                class="fa fa-user"></i> Your certificates</a></li>
                                 <li><a href="/events_to_report"><i
                                                 class="fa fa-user"></i> Report your events</a></li>
                                 @role('super admin')

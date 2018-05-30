@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Event;
+use App\Queries\PendingEventsQuery;
+use App\Queries\ReportableEventsQuery;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -10,8 +12,9 @@ class ReportController extends Controller
 {
 
     public function list(){
-        $events = Event::all();
-        return view('report.list', compact('events'));
+        $reportable_events = ReportableEventsQuery::reportable();
+
+        return view('report.list', ['events'=>$reportable_events]);
     }
 
     public function index(Event $event)
