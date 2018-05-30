@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 
+use App\Certificate;
 use App\Event;
 use App\Http\Controllers\Controller;
 use App\Http\Transformers\EventTransformer;
@@ -45,26 +46,34 @@ class EventsController extends Controller
 
     }
 
-    public function detail(Request $request){
+    public function detail(Request $request)
+    {
 
         $event_id = $request->input("id");
 
-        $event = Event::where('id',$event_id)->first();
+        $event = Event::where('id', $event_id)->first();
 
         return new EventResource($event);
 
     }
 
-    public function closest(Request $request){
+    public function closest(Request $request)
+    {
 
         $event_id = $request->input("id");
 
-        $event = Event::where('id',$event_id)->first();
+        $event = Event::where('id', $event_id)->first();
         $events = $event->getClosest();
         return $events;
 
         //return new EventResource($event);
 
+    }
+
+    public function generate(Event $event)
+    {
+        //$this->authorize('report', $event);
+        return (new Certificate($event))->generate();
     }
 
 
