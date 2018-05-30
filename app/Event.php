@@ -124,4 +124,8 @@ class Event extends Model
         return EventHelper::getCloseEvents($this->longitude, $this->latitude, $this->id);
 
     }
+
+    public function generateCertificate(){
+        return $this;
+    }
 }

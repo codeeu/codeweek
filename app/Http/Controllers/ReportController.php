@@ -41,10 +41,8 @@ class ReportController extends Controller
 
         $input = $request->all();
 
-
         $event->update($input);
-
-
+-
         return view('report.thankyou', compact('event'));
     }
 }
