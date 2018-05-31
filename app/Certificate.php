@@ -3,6 +3,7 @@
 namespace App;
 
 
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Storage;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
@@ -35,11 +36,20 @@ class Certificate
         $this->customize_and_save_latex();
         $this->run_pdf_creation();
         $s3path =  $this->copy_to_s3();
+        $this->update_event($s3path);
+        $this->clean_temp_files();
+
 
         return $s3path;
 
     }
 
+    private function clean_temp_files(){
+        Storage::disk('latex')->delete($this->event->id.".aux");
+        Storage::disk('latex')->delete($this->event->id.".tex");
+        Storage::disk('latex')->delete($this->event->id.".pdf");
+        Storage::disk('latex')->delete($this->event->id.".log");
+    }
 
     private function tex_escape($string)
     {
@@ -62,6 +72,13 @@ class Certificate
                 }
             }
             , $string);
+    }
+
+    protected function update_event($s3path){
+        $this->event->update([
+            "certificate_url"=>$s3path,
+            "certificate_generated_at" => Carbon::now()
+        ]);
     }
 
     /**

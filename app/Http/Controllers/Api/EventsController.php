@@ -72,7 +72,7 @@ class EventsController extends Controller
 
     public function generate(Event $event)
     {
-        //$this->authorize('report', $event);
+        $this->authorize('report', $event);
         return (new Certificate($event))->generate();
     }
 

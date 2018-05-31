@@ -37,7 +37,9 @@ class Event extends Model
         'percentage_of_females',
         'codeweek_for_all_participation_code',
         'name_for_certificate',
-        'organizer_type'
+        'organizer_type',
+        'certificate_url',
+        'certificate_generated_at'
 
     ];
 
@@ -125,7 +127,4 @@ class Event extends Model
 
     }
 
-    public function generateCertificate(){
-        return $this;
-    }
 }
