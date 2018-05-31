@@ -42,6 +42,7 @@ class CreateEventsTable extends Migration
             $table->double('average_participant_age')->nullable();
             $table->double('percentage_of_females')->nullable();
             $table->string('codeweek_for_all_participation_code', 100)->nullable();
+            $table->string('certificate_url', 255)->nullable();
             $table->dateTime('reported_at')->nullable();
             $table->dateTime('certificate_generated_at')->nullable();
             $table->string('organizer_type', 50);
