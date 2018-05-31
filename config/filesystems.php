@@ -43,6 +43,10 @@ return [
 
     'disks' => [
 
+        'latex' => [
+            'driver' => 'local',
+            'root' => resource_path('latex')
+        ],
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),
