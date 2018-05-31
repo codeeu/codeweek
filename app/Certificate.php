@@ -22,8 +22,8 @@ class Certificate
     public function __construct(Event $event)
     {
         $this->name_of_certificate_holder = $event->name_for_certificate;
-        $this->personalized_template_name = "resources/" . $event->id . ".tex";
-        $this->resource_path = storage_path() . "/app/public/resources";
+        $this->personalized_template_name = $event->id . ".tex";
+        $this->resource_path = resource_path() . "/latex";
         $this->pdflatex = env("PDFLATEX_PATH");
         $this->event = $event;
         $this->id = $event->id . '-' . str_random(10);
@@ -35,6 +35,8 @@ class Certificate
         $this->customize_and_save_latex();
         $this->run_pdf_creation();
         $s3path =  $this->copy_to_s3();
+
+        return $s3path;
 
     }
 
@@ -68,7 +70,7 @@ class Certificate
      */
     protected function copy_to_s3(): string
     {
-        $inputStream = Storage::disk('public')->getDriver()->readStream('/resources/' . $this->event->id . '.pdf');
+        $inputStream = Storage::disk('latex')->getDriver()->readStream( $this->event->id . '.pdf');
         $destination = Storage::disk('s3')->getDriver()->getAdapter()->getPathPrefix() . '/certificates/' . $this->id . '.pdf';
         Storage::disk('s3')->getDriver()->putStream($destination, $inputStream);
 
@@ -82,17 +84,19 @@ class Certificate
     protected function customize_and_save_latex()
     {
         //open the latex template
-        $base_template = Storage::disk('public')->get('resources/' . $this->templateName);
+        $base_template = Storage::disk('latex')->get($this->templateName);
 
         //replace the text in template
         $template = str_replace('<CERTIFICATE_HOLDER_NAME>', $this->tex_escape($this->name_of_certificate_holder), $base_template);
 
         //save it locally
-        Storage::disk('public')->put($this->personalized_template_name, $template);
+        Storage::disk('latex')->put($this->personalized_template_name, $template);
     }
 
     protected function run_pdf_creation(): void
     {
+
+
 //call the pdflatex command
         $command = $this->pdflatex . " -interaction=nonstopmode -output-directory " . $this->resource_path . " " . $this->resource_path . "/" . $this->event->id . ".tex";
 
