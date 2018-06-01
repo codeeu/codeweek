@@ -46,6 +46,7 @@ class CreateEventsTable extends Migration
             $table->dateTime('reported_at')->nullable();
             $table->dateTime('certificate_generated_at')->nullable();
             $table->string('organizer_type', 50);
+            $table->integer('approved_by')->nullable();
         });
     }
 

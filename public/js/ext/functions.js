@@ -826,16 +826,7 @@ var SEMICOLON = SEMICOLON || {};
             }
         },
 
-        stickFooterOnSmall: function(){
-            var windowH = $window.height(),
-                wrapperH = $wrapper.height();
 
-            if( $footer.length > 0 && $wrapper.has('#footer') ) {
-                if( windowH > wrapperH ) {
-                    $footer.css({ 'margin-top': ( windowH - wrapperH ) });
-                }
-            }
-        }
 
     };
 
@@ -2336,7 +2327,7 @@ var SEMICOLON = SEMICOLON || {};
             SEMICOLON.initialize.maxHeight();
             SEMICOLON.initialize.testimonialsGrid();
             SEMICOLON.initialize.verticalMiddle();
-            SEMICOLON.initialize.stickFooterOnSmall();
+          //  SEMICOLON.initialize.stickFooterOnSmall();
             SEMICOLON.portfolio.portfolioDescMargin();
             SEMICOLON.portfolio.arrange();
             SEMICOLON.widget.parallax();

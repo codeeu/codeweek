@@ -153,7 +153,7 @@ class EventController extends Controller
 
         $this->authorize('approve', $event);
 
-        $event->update(['status' => "APPROVED"]);
+        $event->update(['status' => "APPROVED", 'approved_by' => auth()->user()->id]);
 
     }
 
@@ -162,9 +162,7 @@ class EventController extends Controller
 
         $this->authorize('approve', $event);
 
-        $event->update(['status' => "REJECTED"]);
-
-
+        $event->update(['status' => "REJECTED", 'approved_by' => auth()->user()->id]);
 
 
     }
