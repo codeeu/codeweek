@@ -30,8 +30,11 @@
                 <br/>
             @endforeach
             {{ $ambassadors->appends(['country_iso'=>app('request')->input('country_iso')])->links() }}
+            @role('ambassador')
+            @else
+                <div class="text-3xl mt-8 text-center"> Why don't you <a href="{{route('volunteer')}}">volunteer?</div>
+                @endrole
 
-            <div class="text-3xl mt-8 text-center"> Why don't you <a href="{{route('volunteer')}}">volunteer?</div>
         </div>
     </section>
 
