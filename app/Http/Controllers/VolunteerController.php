@@ -36,14 +36,11 @@ class VolunteerController extends Controller
      */
     public function store(Request $request)
     {
-        $volunteer = new Volunteer;
 
-        $volunteer->user_id = auth()->user()->id;
-
-        $volunteer->save();
+        Volunteer::firstOrCreate(['user_id' => auth()->user()->id]);
 
 
-        return route('profile');
+        return redirect()->route('profile');
     }
 
     /**
@@ -96,7 +93,7 @@ class VolunteerController extends Controller
 
         $volunteer->user->removeRole('ambassador');
 
-        $volunteer->update(['status' => 'APPROVED']);
+        $volunteer->update(['status' => 'APPROVED','approved_by' => auth()->user()->id]);
 
         $volunteer->user->assignRole('ambassador');
 
@@ -108,7 +105,7 @@ class VolunteerController extends Controller
     {
         $volunteer->user->removeRole('ambassador');
 
-        $volunteer->update(['status' => 'REJECTED']);
+        $volunteer->update(['status' => 'REJECTED','approved_by' => auth()->user()->id]);
 
         return redirect()->route('volunteers');
     }

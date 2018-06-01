@@ -27,12 +27,19 @@
                     <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" method="POST"
                           action="{{ route('volunteer_store') }}">
                         @csrf
+
                         <div class="flex items-center justify-center mx-auto mt-8">
-                            <button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded text-5xl"
-                                    type="submit">
-                                Click here to Volunteer as an Ambassador
-                            </button>
+                            @role('ambassador')
+
+                            Thank you for being an ambassador !
+                            @else
+                                <button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded text-5xl"
+                                        type="submit">
+                                    Click here to Volunteer as an Ambassador
+                                </button>
+                                @endrole
                         </div>
+
                     </form>
                 </div>
 

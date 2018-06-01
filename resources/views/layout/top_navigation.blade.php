@@ -123,8 +123,11 @@
                                                 class="fa fa-user"></i> Your certificates</a></li>
                                 <li><a href="/events_to_report"><i
                                                 class="fa fa-user"></i> Report your events</a></li>
+
+
                                 @role('super admin')
                                 <li><a href="{{route('activities')}}">Activities</a></li>
+                                <li><a href="{{route('volunteers')}}">Volunteers</a></li>
                                 @endrole
                                 <li><a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
