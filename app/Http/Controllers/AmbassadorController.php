@@ -14,7 +14,7 @@ class AmbassadorController extends Controller
 
 
     public function create(){
-        return view('volunteer');
+        return view('ambassador.volunteer');
     }
 
     public function index(UserFilters $filters)
@@ -32,6 +32,10 @@ class AmbassadorController extends Controller
             "ambassadors" => $ambassadors,
             "countries" => Country::withEvents()
         ]);
+    }
+
+    public function profile(){
+        return view('ambassador.profile');
     }
 
 

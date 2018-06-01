@@ -35,7 +35,9 @@ Route::get('/profile', function () {
 Route::get('/', 'HomeController@index')->name('map');
 Route::get('/add', 'EventController@create')->name('create_event');
 Route::get('/ambassadors', 'AmbassadorController@index')->name('ambassadors');
-Route::get('/volunteer', 'AmbassadorController@create')->middleware('auth')->name('volunteer');
+Route::get('/volunteer', 'VolunteerController@create')->middleware('auth')->name('volunteer');
+Route::post('/volunteer', 'VolunteerController@store')->middleware('auth')->name('volunteer_store');
+
 Route::post('/events', 'EventController@store');
 Route::get('/guide', function () {return view('guide');})->name('guide');
 Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
@@ -64,6 +66,9 @@ Route::post('api/event/report/{event}', 'ReportController@store')->middleware('a
 Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/activities', 'AdminController@activities')->name('activities');
     Route::get('/pending/{country}', 'PendingEventsController@index')->name('pending_by_country');
+    Route::get('/volunteers', 'VolunteerController@index')->middleware('auth')->name('volunteers');
+    Route::get('/volunteer/{volunteer}/approve', 'VolunteerController@approve')->middleware('auth')->name('volunteer_approve');
+    Route::get('/volunteer/{volunteer}/reject', 'VolunteerController@reject')->middleware('auth')->name('volunteer_reject');
 });
 
 Route::group(['middleware' => ['role:super admin|ambassador']], function () {

@@ -43,9 +43,11 @@ class ApproveEventTest extends TestCase
         $this->post(route('event.approve', $event));
 
         $this->assertEquals($event->fresh()->status, 'APPROVED');
-
+        $this->assertEquals($superadmin->id, $event->fresh()->approved_by );
 
     }
+
+
 
     /** @test */
     public function event_cant_be_approved_by_ambassador_of_other_country()

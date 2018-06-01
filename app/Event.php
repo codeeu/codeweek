@@ -39,7 +39,8 @@ class Event extends Model
         'name_for_certificate',
         'organizer_type',
         'certificate_url',
-        'certificate_generated_at'
+        'certificate_generated_at',
+        'approved_by'
 
     ];
 
