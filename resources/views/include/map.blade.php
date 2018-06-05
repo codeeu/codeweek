@@ -1,6 +1,18 @@
 <!-- Main Banner Section Start -->
+
 <section class="home-map">
+
     <div id="home-map"></div>
+    <div id="past-events">
+        Show events for
+        <select id="id_year" name="year">
+            <option value="2018" selected="selected">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+        </select>
+    </div>
 
     <div class="search-inner">
         <div class="container">
@@ -30,6 +42,13 @@
 <!-- Home Map End -->
 
 @push('scripts')
+
+    <script type="text/javascript">
+        $('#id_year').on('change', function () {
+            window.location = window.App.url + '?year=' + this.value;
+
+        })
+    </script>
     <script type="text/javascript"
             src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
     </script>

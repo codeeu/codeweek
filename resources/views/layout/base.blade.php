@@ -46,8 +46,11 @@
         window.App = {!! json_encode([
             'csrfToken' => csrf_token(),
             'user' => Auth::user(),
-            'signedIn' => Auth::check()
+            'signedIn' => Auth::check(),
+            'url' => url('/')
         ]) !!};
+
+
     </script>
 
     <!-- Title, keywords, description -->
