@@ -26,10 +26,6 @@
                 status: this.event.status
             }
         },
-        mounted(){
-            console.log('mounted');
-            console.log(this.event);
-        },
         methods: {
             approve() {
                 axios.post(`/api/event/approve/${event.id}`)
