@@ -5,13 +5,15 @@
     <div id="home-map"></div>
     <div id="past-events">
         Show events for
+
+
         <select id="id_year" name="year">
-            <option value="2018" selected="selected">2018</option>
-            <option value="2017">2017</option>
-            <option value="2016">2016</option>
-            <option value="2015">2015</option>
-            <option value="2014">2014</option>
+            @foreach($years as $year)
+                <option value="{{$year}}" {{ ($year==$selectedYear)?'selected':''}}>{{$year}}</option>
+            @endforeach
         </select>
+
+
     </div>
 
     <div class="search-inner">
@@ -32,12 +34,13 @@
                     </select>
                 </div>
                 <div class="col-md-2 col-sm-2 no-padd">
-                    <button type="button" class="btn theme-btn btn-default height-50 full-width">{{ __('Search') }}</button>
+                    <button type="button"
+                            class="btn theme-btn btn-default height-50 full-width">{{ __('Search') }}</button>
                 </div>
             </form>
         </div>
     </div>
-</section>
+</section>w
 <div class="clearfix"></div>
 <!-- Home Map End -->
 
