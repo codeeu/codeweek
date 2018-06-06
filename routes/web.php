@@ -69,6 +69,7 @@ Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/volunteers', 'VolunteerController@index')->middleware('auth')->name('volunteers');
     Route::get('/volunteer/{volunteer}/approve', 'VolunteerController@approve')->middleware('auth')->name('volunteer_approve');
     Route::get('/volunteer/{volunteer}/reject', 'VolunteerController@reject')->middleware('auth')->name('volunteer_reject');
+    Route::get('mail/{event}', 'EmailController@create')->middleware('auth');
 });
 
 Route::group(['middleware' => ['role:super admin|ambassador']], function () {
