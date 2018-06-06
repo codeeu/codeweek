@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Certificate;
 use App\Event;
 use App\Queries\PendingEventsQuery;
 use App\Queries\ReportableEventsQuery;
@@ -42,6 +43,11 @@ class ReportController extends Controller
         $input = $request->all();
 
         $event->update($input);
+
+
+        if (is_null($event->certificate_url)) {
+            $event->update(['certificate_url'=>(new Certificate($event))->generate()]);
+        }
 
         return view('report.thankyou', compact('event'));
     }
