@@ -1,6 +1,5 @@
 <template>
     <div v-if="status === 'APPROVED'">
-        Reported at: {{reported_at}}
         <div v-if="reported_at == null">
 
             <div class="flex lg:justify-between bg-orange text-white min-w-full p-4 mb-3">
@@ -58,7 +57,7 @@
                     });*/
             },
             download() {
-                this.reported_at = null;
+                window.location.href = this.event.certificate_url;
             }
 
         }

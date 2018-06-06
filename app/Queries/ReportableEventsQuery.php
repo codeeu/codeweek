@@ -19,14 +19,6 @@ class ReportableEventsQuery
     public static function reportable()
     {
 
-        /*
-         *
-         * reported_at=None,
-            status='APPROVED',
-            start_date__lte=datetime.datetime.now(),
-            start_date__gte=datetime.datetime(2015, 1, 1, 0, 0 ,0))
-         */
-
         return Event::where('status','APPROVED')
             ->where('creator_id', '=', Auth::user()->id)
             ->where('reported_at', '=', null)
@@ -38,13 +30,6 @@ class ReportableEventsQuery
     public static function reported()
     {
 
-        /*
-         *
-         * reported_at=None,
-            status='APPROVED',
-            start_date__lte=datetime.datetime.now(),
-            start_date__gte=datetime.datetime(2015, 1, 1, 0, 0 ,0))
-         */
 
         return Event::where('status','APPROVED')
             ->where('creator_id', '=', Auth::user()->id)
