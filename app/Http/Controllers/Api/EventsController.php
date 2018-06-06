@@ -30,7 +30,7 @@ class EventsController extends Controller
     public function list(Request $request)
     {
 
-        $year = $request->input("year") ? $request->input("year") : "2018";
+        $year = $request->input("year") ? $request->input("year") : Carbon::now()->year;
 
         $events = Event::getByYear($year);
 

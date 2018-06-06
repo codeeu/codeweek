@@ -151,9 +151,15 @@ $(document).on('ready', function () {
 
     };
 
+    function param(name) {
+        return (location.search.split(name + '=')[1] || '').split('&')[0];
+    }
+
+    let year = param('year') ? param('year') : 2018;
+
     $.ajax({
         dataType: "json",
-        url: "api/event/list",
+        url: "api/event/list?year=" + year,
         success: success
     });
 
