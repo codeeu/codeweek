@@ -26,16 +26,20 @@
                 status: this.event.status
             }
         },
+        mounted(){
+            console.log('mounted!');
+            console.log(this.event);
+        },
         methods: {
             approve() {
-                axios.post(`/api/event/approve/${event.id}`)
+                axios.post('/api/event/approve/' + this.event.id)
                     .then(() => {
                         this.status = "APPROVED";
                         flash('Event Approved!')
                     });
             },
             reject() {
-                axios.post(`/api/event/reject/${event.id}`)
+                axios.post('/api/event/reject/' + this.event.id)
                     .then(() => {
                         this.status = "REJECTED";
                         flash('Event Rejected!');
