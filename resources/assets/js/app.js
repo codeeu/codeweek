@@ -9,6 +9,8 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+window.Vue.config.debug = true; //TODO: Remove in production
+
 import example from './components/ExampleComponent.vue';
 
 import countrySelect from './components/CountrySelect.vue';
