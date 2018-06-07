@@ -3,6 +3,8 @@
 namespace Tests\Feature;
 
 use App\Event;
+use App\Mail\EventCreated;
+use Mail;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -32,6 +34,8 @@ class CreateEventTest extends TestCase
         $this->signIn();
 
         $event = make('App\Event');
+        create('App\Audience',[] ,3);
+        create('App\Theme', [],3);
 
         $event->theme = [1];
         $event->tags = "tag:foo,tag:bar";
@@ -65,16 +69,28 @@ class CreateEventTest extends TestCase
     /** @test */
     public function ambassadors_should_be_notified()
     {
+        $this->seed('RolesAndPermissionsSeeder');
         $this->signIn();
+
+        Mail::fake();
+
+        $belgium = create('App\Country',['iso'=>'BE']);
+        create('App\Audience',[] ,3);
+        create('App\Theme', [],3);
+
+        $ambassador_be = create('App\User', ['country_iso' => $belgium->iso])->assignRole('ambassador');
 
         $event = make('App\Event');
 
+        $event->country_iso = $belgium->iso;
         $event->theme = [1];
         $event->tags = "tag:foo,tag:bar";
-        $event->audience = [2, 3];
-
+        $event->audience = [2,3];
 
         $this->post('/events', $event->toArray());
+
+        Mail::assertQueued(\App\Mail\EventCreated::class, 1);
+
 
     }
 
