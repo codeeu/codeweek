@@ -70,14 +70,14 @@ class EventsController extends Controller
 
     }
 
-    public function generate(Event $event)
-    {
-        $this->authorize('report', $event);
-        if (!is_null($event->certificate_url)) {
-            return $event->certificate_url;
-        }
-        return (new Certificate($event))->generate();
-    }
+//    public function generate(Event $event)
+//    {
+//        $this->authorize('report', $event);
+//        if (!is_null($event->certificate_url)) {
+//            return $event->certificate_url;
+//        }
+//        return (new Certificate($event))->generate();
+//    }
 
 
 }
