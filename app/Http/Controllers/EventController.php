@@ -100,6 +100,8 @@ class EventController extends Controller
 
         $event = EventsQuery::store($request);
 
+        $event->notifyAmbassadors();
+
         return view('event.thankyou', compact('event'));
     }
 

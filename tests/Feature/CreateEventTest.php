@@ -62,6 +62,22 @@ class CreateEventTest extends TestCase
 
     }
 
+    /** @test */
+    public function ambassadors_should_be_notified()
+    {
+        $this->signIn();
+
+        $event = make('App\Event');
+
+        $event->theme = [1];
+        $event->tags = "tag:foo,tag:bar";
+        $event->audience = [2, 3];
+
+
+        $this->post('/events', $event->toArray());
+
+    }
+
     public function publishEvent($overrides = [])
     {
         $this->withExceptionHandling()->signIn();

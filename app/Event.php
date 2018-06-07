@@ -8,6 +8,7 @@ use Carbon\Carbon;
 use DB;
 use Illuminate\Database\Eloquent\Model;
 
+use Illuminate\Support\Facades\Mail;
 use Spatie\Activitylog\Traits\LogsActivity;
 
 class Event extends Model
@@ -126,6 +127,18 @@ class Event extends Model
     {
         return EventHelper::getCloseEvents($this->longitude, $this->latitude, $this->id);
 
+    }
+
+    public function notifyAmbassadors(){
+
+        //Get the ambassador list based on the event country
+        $ambassadors = User::role('ambassador')->where('country_iso', $this->country_iso)->get();
+
+
+        //send emails
+        foreach ($ambassadors as $ambassador) {
+            Mail::to($ambassador->email)->queue(new \App\Mail\EventCreated($this, $ambassador));
+        }
     }
 
 }
