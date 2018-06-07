@@ -9,6 +9,8 @@
             @if(app('request')->input('country_iso'))
                 @foreach ($countries as $country)
                     @if($country->iso === app('request')->input('country_iso'))
+                        Country: {{$country->name}}
+
                         @if($country->facebook)
                             <div>Visit the <a href="{{$country->facebook}}">local Facebook page</a></div>
                         @endif
@@ -24,11 +26,18 @@
                 <a href="/ambassadors?country_iso={{$country->iso}}">{{$country->iso}}</a>
             @endforeach
             <br/>
-            @foreach($ambassadors as $ambassador)
+
+            @forelse ($ambassadors as $ambassador)
                 Name: {{$ambassador->fullName}} - <a
                         href="/ambassadors?country_iso={{$ambassador->country->iso}}">{{$ambassador->country->iso}}</a>
                 <br/>
-            @endforeach
+            @empty
+                No ambassadors yet :(<br/>
+            @endforelse
+
+
+
+
             {{ $ambassadors->appends(['country_iso'=>app('request')->input('country_iso')])->links() }}
             @role('ambassador')
             @else
