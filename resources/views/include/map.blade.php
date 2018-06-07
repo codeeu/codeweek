@@ -40,7 +40,7 @@
             </form>
         </div>
     </div>
-</section>w
+</section>
 <div class="clearfix"></div>
 <!-- Home Map End -->
 

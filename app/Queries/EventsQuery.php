@@ -12,8 +12,8 @@ use Illuminate\Http\Request;
 
 class EventsQuery
 {
-    public static function store(Request $request){
-
+    public static function store(Request $request)
+    {
 
 
         $request['status'] = 'PENDING';
@@ -25,22 +25,25 @@ class EventsQuery
         $request['updated'] = Carbon::now();
         $request['creator_id'] = Auth::user()->id;
 
-        $request['latitude'] = explode(",",$request['geoposition'])[0];
-        $request['longitude'] = explode(",",$request['geoposition'])[1];
+        $request['latitude'] = explode(",", $request['geoposition'])[0];
+        $request['longitude'] = explode(",", $request['geoposition'])[1];
 
 
         $event = Event::create($request->toArray());
 
-        foreach (explode(",",$request['tags']) as $item) {
+
+        foreach (explode(",", $request['tags']) as $item) {
             $tag = Tag::create([
-                "name"=>$item,
-                "slug"=>str_slug($item)
+                "name" => $item,
+                "slug" => str_slug($item)
             ]);
 
             $event->tags()->save($tag);
         }
 
+
         foreach ($request['theme'] as $theme) {
+
             $theme = Theme::where('id', $theme)->first();
             $event->themes()->save($theme);
         }
@@ -49,6 +52,7 @@ class EventsQuery
             $audience = Audience::where('id', $audience)->first();
             $event->audiences()->save($audience);
         }
+
 
         return $event;
     }

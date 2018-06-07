@@ -131,9 +131,9 @@ class Event extends Model
 
     public function notifyAmbassadors(){
 
+
         //Get the ambassador list based on the event country
         $ambassadors = User::role('ambassador')->where('country_iso', $this->country_iso)->get();
-
 
         //send emails
         foreach ($ambassadors as $ambassador) {
