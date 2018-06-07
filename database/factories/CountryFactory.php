@@ -2,13 +2,20 @@
 
 use Faker\Generator as Faker;
 
-$factory->define(App\Country::class, function (Faker $faker) {
+$factory->define(App\Country::class, function (Faker $faker, $country) {
 
     return [
-        'iso' => $faker->countryCode,
-        'name' => $faker->country,
+        'iso' => $country["iso"],
+        'name' => $country["name"],
         'continent' => 'EU',
         'facebook' => $faker->url,
         'website' => $faker->url,
     ];
 });
+
+
+
+
+
+
+
