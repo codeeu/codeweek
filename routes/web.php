@@ -59,7 +59,7 @@ Route::delete('api/users/avatar', 'Api\UserAvatarController@delete')->middleware
 Route::get('api/event/list', 'Api\EventsController@list')->name('event_list');
 Route::get('api/event/detail', 'Api\EventsController@detail')->name('event_list');
 Route::get('api/event/closest', 'Api\EventsController@closest');
-Route::get('api/event/{event}/generate', 'Api\EventsController@generate');
+//Route::get('api/event/{event}/generate', 'Api\EventsController@generate');
 
 Route::post('api/event/report/{event}', 'ReportController@store')->middleware('auth');
 
