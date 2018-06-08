@@ -105,17 +105,20 @@
                     <div>
 
 
-                    @if($event->creator_id === auth()->user()->id)
-                    <a href="{{route('edit_event',$event)}}" class="btn pull-right edit-event-btn">
-                        <i class="fa fa-pencil-square-o"></i>Edit event</a>
+                        @if (Auth::check())
+                            @if($event->creator_id === auth()->user()->id)
+                                <a href="{{route('edit_event',$event->id)}}" class="btn pull-right edit-event-btn">
+                                    <i class="fa fa-pencil-square-o"></i>Edit event</a>
 
-                        @if($event->status === 'PENDING')
-                        <div class="alert alert-warning">
-                            <strong>NOTE:</strong> This event is stil being reviewed by <a href="{{route('ambassadors')}}">moderators</a>.
-                        </div>
+                                @if($event->status === 'PENDING')
+                                    <div class="alert alert-warning">
+                                        <strong>NOTE:</strong> This event is stil being reviewed by <a
+                                                href="{{route('ambassadors')}}">moderators</a>.
+                                    </div>
+                                @endif
+
+                            @endif
                         @endif
-
-                    @endif
                     </div>
 
                     <div class="event-jumbotron">

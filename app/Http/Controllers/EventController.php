@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 use App\Event;
+use App\Http\Requests\EventRequest;
 use App\Queries\EventsQuery;
 use Exception;
 use Illuminate\Http\Request;
@@ -62,41 +63,11 @@ class EventController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
+     * @param EventRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(EventRequest $request)
     {
-
-
-        $this->validate($request, [
-            'title' => 'required',
-            'description' => 'required',
-            'organizer' => 'required',
-            'location' => 'required',
-            'start_date' => 'required',
-            'end_date' => 'required',
-            'audience' => 'required',
-            'theme' => 'required',
-            'country_iso' => 'required',
-            'contact_person' => 'required',
-            'organizer_type' => 'required',
-//            'tags'=>'required'
-        ], [
-            'title.required' => 'Please enter a title for your event.',
-            'description.required' => 'Please write a short description of what the event is about.',
-            'organizer.required' => 'Please enter an organizer.',
-            'location.required' => 'Please enter a location.',
-            'start_date.required' => 'Please enter a valid date and time (example: 2014-10-22 18:00).',
-            'end_date.required' => 'Please enter a valid date and time (example: 2014-10-22 18:00).',
-            'audience.required' => 'If unsure, choose Other and provide more information in the description.',
-            'theme.required' => 'If unsure, choose Other and provide more information in the description.',
-            'country_iso.required' => 'The event\'s location should be in Europe.',
-//            'tags.required' => 'Please type in some tags to categorize the event',
-            'contact_person.required' => 'Please enter a valid email address.',
-
-        ]);
-
 
 
         $event = EventsQuery::store($request);
@@ -125,19 +96,27 @@ class EventController extends Controller
      */
     public function edit(Event $event)
     {
-        return view('event.edit');
+        return view('event.edit', compact('event'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
+     * @param EventRequest $request
      * @param  \App\Event $event
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Event $event)
     {
-        //
+
+        //dd($event);
+        //dd($request->all());
+
+        $event->update($request->all());
+
+        return back();
+
+
     }
 
     /**
