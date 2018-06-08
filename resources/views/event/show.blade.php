@@ -102,6 +102,21 @@
                 </div>
                 <div class="col-md-4 event-time-place">
 
+                    <div>
+
+
+                    @if($event->creator_id === auth()->user()->id)
+                    <a href="{{route('edit_event',$event)}}" class="btn pull-right edit-event-btn">
+                        <i class="fa fa-pencil-square-o"></i>Edit event</a>
+
+                        @if($event->status === 'PENDING')
+                        <div class="alert alert-warning">
+                            <strong>NOTE:</strong> This event is stil being reviewed by <a href="{{route('ambassadors')}}">moderators</a>.
+                        </div>
+                        @endif
+
+                    @endif
+                    </div>
 
                     <div class="event-jumbotron">
                         <img src="{{$event->picture_path()}}"/>

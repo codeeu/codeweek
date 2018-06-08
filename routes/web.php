@@ -49,6 +49,7 @@ Route::patch('user', 'UserController@update')->name('user.update');
 Route::get('view/{event}/{slug}', 'EventController@show')->name('view_event');
 Route::get('events_to_report', 'ReportController@list')->name('report_list');
 Route::get('certificates', 'CertificateController@list')->name('certificates');
+Route::get('event/edit/{event}', 'EventController@edit')->name('edit_event');
 Route::get('event/report/{event}', 'ReportController@index')->name('report_event');
 Route::post('event/report/{event}', 'ReportController@store');
 Route::resource('school', 'SchoolController');
