@@ -154,6 +154,7 @@
                             @component('components.validation-errors', ['field'=>'location'])
                             @endcomponent
                         </div>
+
                         <div id="view-event-map-wrapper" class="event-map col-sm-9 col-sm-offset-3">
                             <div id="map" style="width:100%; height:100%"></div>
                         </div>
