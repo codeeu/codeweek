@@ -39,6 +39,7 @@ Route::get('/volunteer', 'VolunteerController@create')->middleware('auth')->name
 Route::post('/volunteer', 'VolunteerController@store')->middleware('auth')->name('volunteer_store');
 
 Route::post('/events', 'EventController@store');
+Route::patch('/events/{event}', 'EventController@update');
 Route::get('/guide', function () {return view('guide');})->name('guide');
 Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
