@@ -103,7 +103,7 @@
                             </label>
 
                             <div class="col-sm-9">
-                                @component('components.checkbox-audience',['audiences'=>$audiences])
+                                @component('components.checkbox-audience',['audiences'=>$audiences, 'selection'=>[]])
                                 @endcomponent
                             </div>
                             @component('components.validation-errors', ['field'=>'audience'])
@@ -118,7 +118,7 @@
                             </label>
 
                             <div class="col-sm-9">
-                                @component('components.checkbox-theme',['themes'=>$themes])
+                                @component('components.checkbox-theme',['themes'=>$themes,'selection'=>[]])
                                 @endcomponent
                             </div>
                             @component('components.validation-errors', ['field'=>'theme'])
