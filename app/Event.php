@@ -25,6 +25,7 @@ class Event extends Model
         'end_date',
         'event_url',
         'contact_person',
+        'user_email',
         'picture',
         'pub_date',
         'created',
