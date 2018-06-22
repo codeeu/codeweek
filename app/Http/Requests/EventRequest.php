@@ -34,7 +34,7 @@ class EventRequest extends FormRequest
             'audience' => 'required',
             'theme' => 'required',
             'country_iso' => 'required',
-            'contact_person' => 'required',
+            'user_email' => 'required',
             'organizer_type' => 'required',
 
 
@@ -54,7 +54,7 @@ class EventRequest extends FormRequest
             'theme.required' => 'If unsure, choose Other and provide more information in the description.',
             'country_iso.required' => 'The event\'s location should be in Europe.',
 
-            'contact_person.required' => 'Please enter a valid email address.',
+            'user_email.required' => 'Please enter a valid email address.',
         ];
     }
 }

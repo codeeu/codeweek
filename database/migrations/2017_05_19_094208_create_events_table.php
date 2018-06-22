@@ -29,7 +29,8 @@ class CreateEventsTable extends Migration
             $table->dateTime('start_date');
             $table->dateTime('end_date');
             $table->string('event_url', 200)->nullable();
-            $table->string('contact_person', 75);
+            $table->string('contact_person', 75)->nullable();
+            $table->string('user_email', 75);
             $table->string('picture', 255)->nullable();
             $table->dateTime('pub_date');
             $table->dateTime('created');

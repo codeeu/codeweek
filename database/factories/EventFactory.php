@@ -30,6 +30,7 @@ $longitude = $faker->longitude(-4,12);
         'end_date' => $event_date,
         'event_url' => $faker->url,
         'contact_person' => $faker->email,
+        'user_email' => $faker->email,
         'pub_date' => $faker->dateTime,
         'created' => $faker->dateTime,
         'updated' => $faker->dateTime,
