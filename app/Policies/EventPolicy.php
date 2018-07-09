@@ -27,12 +27,24 @@ class EventPolicy
 
     public function report(User $user, Event $event)
     {
-//dd($event->owner->email);
 
-//dd($user->email);
-/*        if ($user->hasRole('super admin')) {
+        if ($user->email === $event->owner->email) {
             return true;
-        }*/
+        }
+
+        return false;
+    }
+
+    public function edit(User $user, Event $event)
+    {
+
+
+        if ($user->hasRole('super admin')) {
+            return true;
+        }
+        if ($user->hasRole('ambassador')) {
+            return $event->country_iso === $user->country_iso;
+        }
         if ($user->email === $event->owner->email) {
             return true;
         }

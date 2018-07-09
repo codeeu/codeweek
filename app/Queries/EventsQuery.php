@@ -32,14 +32,17 @@ class EventsQuery
         $event = Event::create($request->toArray());
 
 
-        foreach (explode(",", $request['tags']) as $item) {
-            $tag = Tag::create([
-                "name" => $item,
-                "slug" => str_slug($item)
-            ]);
+        if (!empty($request['tags'])){
+            foreach (explode(",", $request['tags']) as $item) {
+                $tag = Tag::create([
+                    "name" => $item,
+                    "slug" => str_slug($item)
+                ]);
 
-            $event->tags()->save($tag);
+                $event->tags()->save($tag);
+            }
         }
+
 
 
         foreach ($request['theme'] as $theme) {
@@ -56,4 +59,26 @@ class EventsQuery
 
         return $event;
     }
+
+    public static function update(Request $request, Event $event)
+    {
+        $event->update($request->toArray());
+
+        $tagsArray = [];
+        foreach (explode(",", $request['tags']) as $item) {
+            $tag = Tag::firstOrCreate([
+                "name" => $item,
+                "slug" => str_slug($item)
+            ]);
+            array_push($tagsArray, $tag->id);
+        }
+
+        $event->tags()->sync($tagsArray);
+        $event->themes()->sync($request['theme']);
+        $event->audiences()->sync($request['audience']);
+
+        return $event;
+    }
+
+
 }

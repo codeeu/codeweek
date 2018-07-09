@@ -235,7 +235,7 @@
 
                             <div class="col-sm-9 first last">
 
-                                <input-tags value="{{old('tags')}}"></input-tags>
+                                <input-tags value="{{$tags}}"></input-tags>
 
                             </div>
 

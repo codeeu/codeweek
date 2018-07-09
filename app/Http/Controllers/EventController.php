@@ -70,6 +70,7 @@ class EventController extends Controller
     {
 
 
+
         $event = EventsQuery::store($request);
 
         $event->notifyAmbassadors();
@@ -96,7 +97,11 @@ class EventController extends Controller
      */
     public function edit(Event $event)
     {
-        return view('event.edit', compact('event'));
+$t = $event->tags()->pluck('name')->toArray();
+
+        $tags = implode(",", $t);
+
+        return view('event.edit', compact(['event','tags']));
     }
 
     /**
@@ -109,10 +114,11 @@ class EventController extends Controller
     public function update(Request $request, Event $event)
     {
 
-        //dd($event);
-        //dd($request->all());
 
-        $event->update($request->all());
+        $this->authorize('edit', $event);
+
+        EventsQuery::update($request, $event);
+
 
         return back();
 
