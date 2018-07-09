@@ -46,6 +46,7 @@ class CreateEventTest extends TestCase
         $event = Event::where('title', $event->title)->first();
 
         $this->get($event->path())->assertSee($event->title);
+        $this->get($event->path())->assertSee("tag:foo");
         $this->get($event->path())->assertSee("tag:bar");
     }
 
