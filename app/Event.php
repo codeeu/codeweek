@@ -15,6 +15,8 @@ class Event extends Model
 {
     use LogsActivity;
 
+
+
     protected $table = 'events';
     protected $fillable = [
         'status', 'title', 'slug', 'organizer', 'description',
@@ -111,6 +113,8 @@ class Event extends Model
 
 
     {
+
+
 
         $events = Event::where('status', 'like', 'APPROVED')
             ->where('start_date', '>', Carbon::createFromDate($year, 1, 1));
