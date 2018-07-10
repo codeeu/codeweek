@@ -23,8 +23,6 @@ class CreateEventTest extends TestCase
 
         $this->get('/add')
             ->assertRedirect('/login');
-       // $this->post('/events')
-         //   ->assertRedirect('/login');
 
     }
 
