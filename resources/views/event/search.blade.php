@@ -28,13 +28,13 @@
                                 <label for="id_past_0">Include past events</label>
                                 <ul id="id_past">
                                     <li><label for="id_past_0"><input class="search-form-element" id="id_past_0"
-                                                                      name="past" type="radio" value="yes"
+                                                                      name="past" type="radio" value="yes" onchange="this.form.submit()"
                                             {{ session('past')=='yes'?'checked':'' }}
                                             /> yes</label>
                                     </li>
                                     <li><label for="id_past_1"><input class="search-form-element"
                                                                       id="id_past_1" name="past" type="radio"
-                                                                      value="no"
+                                                                      value="no" onchange="this.form.submit()"
                                                     {{ session('past')!='yes'?'checked':'' }}
                                             /> no</label></li>
                                 </ul>
