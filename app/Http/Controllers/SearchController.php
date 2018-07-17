@@ -9,12 +9,15 @@ use Illuminate\Http\Request;
 class SearchController extends Controller
 {
 
-    public function search(EventFilters $filters)
+    public function search(EventFilters $filters, Request $request)
     {
 
         $events = $this->getEvents($filters);
+        $selected_themes = $request->input('theme') ?: [];
+        $selected_audiences = $request->input('audience') ?: [];
 
-        return view('event.search', compact(['events']));
+
+        return view('event.search', compact(['events','selected_themes','selected_audiences']));
     }
 
     protected function getEvents(EventFilters $filters)

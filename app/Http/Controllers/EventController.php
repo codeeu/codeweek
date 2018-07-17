@@ -98,11 +98,13 @@ class EventController extends Controller
      */
     public function edit(Event $event)
     {
-$t = $event->tags()->pluck('name')->toArray();
+        $t = $event->tags()->pluck('name')->toArray();
 
         $tags = implode(",", $t);
+        $selected_themes = $event->themes()->pluck('id')->toArray();
+        $selected_audiences = $event->audiences()->pluck('id')->toArray();
 
-        return view('event.edit', compact(['event','tags']));
+        return view('event.edit', compact(['event','tags','selected_themes','selected_audiences']));
     }
 
     /**

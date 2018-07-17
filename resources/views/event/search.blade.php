@@ -43,14 +43,14 @@
                             <div class="search-checkbox">
                                 <hr>
                                 <label>Theme</label>
-                                @component('components.checkbox-theme',['themes'=>$themes, 'selection'=>[]])
+                                @component('components.checkbox-theme',['themes'=>$themes, 'selection'=>$selected_themes])
                                 @endcomponent
                             </div>
 
                             <div class="search-checkbox">
                                 <hr>
                                 <label>Audience</label>
-                                @component('components.checkbox-audience',['audiences'=>$audiences,'selection'=>[]])
+                                @component('components.checkbox-audience',['audiences'=>$audiences,'selection'=>$selected_audiences])
                                 @endcomponent
                             </div>
                         </div>
