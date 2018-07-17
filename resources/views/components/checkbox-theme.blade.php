@@ -6,9 +6,7 @@
                                                         type="checkbox"
                                                         value="{{$theme->id}}"
                                                         onchange="this.form.submit()"
-
-                        {{ $selection?in_array($theme->id,$selection->pluck('id')->toArray())?'checked':'':'' }}
-                >
+                        {{ $selection?in_array($theme->id,$selection)?'checked':'':'' }}>
                 {{__('event.theme.'.$theme->name)}}
             </label></li>
     @endforeach
