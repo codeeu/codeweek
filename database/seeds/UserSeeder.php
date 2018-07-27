@@ -18,23 +18,15 @@ class UserSeeder extends Seeder
             'firstname' => 'Alain',
             'lastname' => 'Van Driessche',
             'email' => 'alainvd@gmail.com',
-            'password' => bcrypt('secret')
+            'password' => bcrypt(str_random(10))
         ])->assignRole('super admin');
 
 
-        create('App\User',[
-            'firstname' => 'Alain',
-            'lastname' => 'Van Driessche',
-            'email' => 'alainvd@hotmail.com',
-            'password' => bcrypt('secret')
-        ])->assignRole('ambassador');
+//        create('App\Event',['creator_id'=>1]);
 
-
-        create('App\Event',['creator_id'=>1]);
-
-        for($i = 1; $i < 60; $i++){
-            create('App\User')->assignRole('ambassador');
-        }
+  //      for($i = 1; $i < 60; $i++){
+    //        create('App\User')->assignRole('ambassador');
+      //  }
 
     }
 }
