@@ -47,26 +47,13 @@
         <div class="container clearfix">
             <div class="menu-title">CodeWeek <span>EU</span></div>
 
+
+
             <nav class="one-page-menu eventsm">
 
                 <ul class="nav navbar navbar-left" role="menu">
 
-                    <li>
-                        <form class="inline" method="get" action="/setlocale/">
 
-                            <select class="custom-select custom-select-sm" name="locale"
-                                    onchange="this.form.submit()">
-                                @foreach ($locales as $key => $value)
-                                    <option value="{{ $value }}"
-                                            @if ($value == session('locale'))
-                                            selected="selected"
-                                            @endif
-                                    >{{ $value }}</option>
-                                @endforeach
-                            </select>
-
-                        </form>
-                    </li>
 
                     <li>
                         <a href="/" class="first" id="zoomEU">
@@ -95,6 +82,7 @@
                             Search Events
                         </a>
                     </li>
+
 
 
                 </ul>
@@ -140,6 +128,8 @@
                                     {{ csrf_field() }}
                                 </form>
 
+
+
                             </ul>
                         @else
                             <a href="/login" class="signin">
@@ -147,6 +137,24 @@
                                 Sign in</a>
                         @endif
                         {{--{% endif %}--}}
+                    </li>
+
+
+                    <li>
+                        <form class="inline" method="get" action="/setlocale/">
+
+                            <select class="custom-select custom-select-sm" name="locale"
+                                    onchange="this.form.submit()">
+                                @foreach ($locales as $key => $value)
+                                    <option value="{{ $value }}"
+                                            @if ($value == session('locale'))
+                                            selected="selected"
+                                            @endif
+                                    >{{ $value }}</option>
+                                @endforeach
+                            </select>
+
+                        </form>
                     </li>
                 </ul>
             </nav>
