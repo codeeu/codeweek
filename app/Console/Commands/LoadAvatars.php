@@ -2,11 +2,11 @@
 
 namespace App\Console\Commands;
 
-use App\Country;
-use App\Tag;
+
 use App\User;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class LoadAvatars extends Command
 {
@@ -41,7 +41,7 @@ class LoadAvatars extends Command
      */
     public function handle()
     {
-        var_dump('Load avatars');
+        Log::debug('Load avatars');
 
 
         $avatars = DB::table('avatar_avatar')

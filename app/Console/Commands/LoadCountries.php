@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use App\Country;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class LoadCountries extends Command
 {
@@ -39,7 +40,7 @@ class LoadCountries extends Command
      */
     public function handle()
     {
-        var_dump('Load countries');
+        Log::debug('Load countries');
 
         $old_countries = DB::table('countries_plus_country')
             ->select(DB::raw('iso, name, continent'))
