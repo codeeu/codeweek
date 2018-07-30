@@ -2,11 +2,11 @@
 
 namespace App\Console\Commands;
 
-use App\Country;
-use App\Tag;
+
 use App\User;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class LoadUsers extends Command
 {
@@ -41,7 +41,7 @@ class LoadUsers extends Command
      */
     public function handle()
     {
-        var_dump('Load users');
+        Log::debug('Load users');
 
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         DB::table('users')->truncate();

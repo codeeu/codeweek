@@ -2,11 +2,11 @@
 
 namespace App\Console\Commands;
 
-use App\Country;
-use App\Tag;
+
 use App\User;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class LoadProviders extends Command
 {
@@ -41,7 +41,7 @@ class LoadProviders extends Command
      */
     public function handle()
     {
-        var_dump('Load providers');
+        Log::debug('Load providers');
 
 
         $providers = DB::table('social_auth_usersocialauth')

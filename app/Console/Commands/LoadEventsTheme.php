@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use DB;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Log;
 
 class LoadEventsTheme extends Command
 {
@@ -38,7 +39,7 @@ class LoadEventsTheme extends Command
      */
     public function handle()
     {
-        var_dump('Load events Themes');
+        Log::debug('Load events Themes');
 
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         DB::table('event_theme')->truncate();

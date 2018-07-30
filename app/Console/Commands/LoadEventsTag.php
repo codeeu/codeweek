@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use DB;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Log;
 
 class LoadEventsTag extends Command
 {
@@ -38,7 +39,7 @@ class LoadEventsTag extends Command
      */
     public function handle()
     {
-        var_dump('Load events Tags');
+        Log::debug('Load events Tags');
 
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         DB::table('event_tag')->truncate();

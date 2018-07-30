@@ -2,10 +2,11 @@
 
 namespace App\Console\Commands;
 
-use App\Country;
+
 use App\Tag;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class LoadTags extends Command
 {
@@ -40,7 +41,7 @@ class LoadTags extends Command
      */
     public function handle()
     {
-        var_dump('Load tags');
+        Log::debug('Load tags');
 
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         DB::table('tags')->truncate();

@@ -14,7 +14,7 @@ class UserSeeder extends Seeder
     public function run()
     {
 
-        create('App\User',[
+        create('App\User', [
             'firstname' => 'Alain',
             'lastname' => 'Van Driessche',
             'email' => 'alainvd@gmail.com',
@@ -22,11 +22,11 @@ class UserSeeder extends Seeder
         ])->assignRole('super admin');
 
 
-//        create('App\Event',['creator_id'=>1]);
+        create('App\Event', ['creator_id' => 1]);
 
-  //      for($i = 1; $i < 60; $i++){
-    //        create('App\User')->assignRole('ambassador');
-      //  }
+        for ($i = 1; $i < 60; $i++) {
+            create('App\User')->assignRole('ambassador');
+        }
 
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Log;
 
 class LoadAll extends Command
 {
@@ -37,6 +38,7 @@ class LoadAll extends Command
      */
     public function handle()
     {
+        Log::debug('Start Importing All');
         exec("php artisan load:countries");
         exec("php artisan load:tags");
         exec("php artisan load:users");
@@ -46,6 +48,9 @@ class LoadAll extends Command
         exec("php artisan load:events:audiences");
         exec("php artisan load:events:themes");
         exec("php artisan load:events:tags");
+        exec("php artisan load:ambassadors");
+        exec("php artisan load:admins");
+        Log::debug('End Importing All');
 
     }
 }

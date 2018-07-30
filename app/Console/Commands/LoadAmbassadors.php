@@ -2,19 +2,18 @@
 
 namespace App\Console\Commands;
 
-use App\Country;
+use DB;
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 
-class LoadCountries extends Command
+class LoadAmbassadors extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'load:countries';
+    protected $signature = 'load:ambassadors';
 
     /**
      * The console command description.
@@ -40,20 +39,23 @@ class LoadCountries extends Command
      */
     public function handle()
     {
-        Log::debug('Load countries');
+        Log::debug('Load Ambassadors');
 
-        $old_countries = DB::table('countries_plus_country')
-            ->select(DB::raw('iso, name, continent'))
+        $old_ambassadors = DB::table('auth_user_groups')
+            ->select(DB::raw('user_id'))
             ->get();
 
-        DB::table('countries')->truncate();
-        foreach ($old_countries as $old_country) {
 
-            $new = new Country();
-            $new->name = $old_country->name;
-            $new->continent = $old_country->continent;
-            $new->iso = $old_country->iso;
-            $new->save();
+        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
+        DB::table('model_has_roles')->truncate();
+        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
+
+
+        foreach ($old_ambassadors as $old) {
+
+            DB::table('model_has_roles')->insert(
+                ['role_id' => 3,'model_type'=>'App\User', 'model_id' => $old->user_id]
+            );
         }
     }
 }

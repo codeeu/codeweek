@@ -2,19 +2,18 @@
 
 namespace App\Console\Commands;
 
-use App\Country;
+use DB;
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 
-class LoadCountries extends Command
+class LoadAdmins extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'load:countries';
+    protected $signature = 'load:admins';
 
     /**
      * The console command description.
@@ -40,20 +39,19 @@ class LoadCountries extends Command
      */
     public function handle()
     {
-        Log::debug('Load countries');
+        Log::debug('Load Admins');
 
-        $old_countries = DB::table('countries_plus_country')
-            ->select(DB::raw('iso, name, continent'))
+        $old_admins = DB::table('auth_user')
+            ->where('is_staff',"=",1)
             ->get();
 
-        DB::table('countries')->truncate();
-        foreach ($old_countries as $old_country) {
+        foreach ($old_admins as $old) {
 
-            $new = new Country();
-            $new->name = $old_country->name;
-            $new->continent = $old_country->continent;
-            $new->iso = $old_country->iso;
-            $new->save();
+            DB::table('model_has_roles')->insert(
+                ['role_id' => 5,'model_type'=>'App\User', 'model_id' => $old->id]
+            );
+
+
         }
     }
 }
