@@ -63,6 +63,10 @@ class LoadEvents extends Command
                 $new->organizer = $old->organizer;
                 $new->description = $old->description;
                 $new->geoposition = $old->geoposition;
+                $coords = explode(",",$old->geoposition);
+                $new->latitude = $coords[0];
+                $new->longitude = $coords[1];
+
                 $new->location = $old->location;
                 $new->country_iso = $old->country;
                 $new->start_date = $old->start_date;

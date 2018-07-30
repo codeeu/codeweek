@@ -54,8 +54,6 @@ class LoadUsers extends Command
 
         foreach ($old_users as $old) {
 
-            //dd($old);
-
             $new = new User();
             $new->id = $old->user_id;
             $new->password = $old->password;
