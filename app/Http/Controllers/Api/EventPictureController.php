@@ -46,12 +46,12 @@ class EventPictureController extends Controller
             $resource
         );
 
-        auth()->user()->update([
+/*        auth()->user()->update([
             'picture' =>  $imageName
-        ]);
+        ]);*/
 
 
-        return response(["path"=>Storage::disk('s3')->url($imageName)], 200);
+        return response(["path"=>Storage::disk('s3')->url($imageName),"imageName"=>$imageName], 200);
     }
 
     public function delete()

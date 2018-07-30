@@ -5,7 +5,7 @@
         <li><label for="id_theme_{{$theme->id}}"><input id="id_theme_{{$theme->id}}" name="theme[]"
                                                         type="checkbox"
                                                         value="{{$theme->id}}"
-                                                        onchange="this.form.submit()"
+                                                        {{--onchange="this.form.submit()"--}}
                         {{ $selection?in_array($theme->id,$selection)?'checked':'':'' }}>
                 {{__('event.theme.'.$theme->name)}}
             </label></li>
