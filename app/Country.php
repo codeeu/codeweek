@@ -23,6 +23,7 @@ class Country extends Model
 
     }
 
+
     public function events()
     {
 
