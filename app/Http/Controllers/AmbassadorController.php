@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Country;
 use App\Filters\UserFilters;
+use App\Helpers\AmbassadorHelper;
 use App\Queries\CountriesQuery;
 use App\User;
 use Illuminate\Http\Request;
@@ -26,11 +27,15 @@ class AmbassadorController extends Controller
         };
 
 
+
         $ambassadors = User::role('ambassador')->filter($filters)->paginate(10);
+
+       // dd($ambassadors);
 
         return view('ambassadors')->with([
             "ambassadors" => $ambassadors,
-            "countries" => Country::withEvents()
+            "countries" => Country::withEvents(),
+            "countries_with_ambassadors" => AmbassadorHelper::getByActiveCountries()
         ]);
     }
 

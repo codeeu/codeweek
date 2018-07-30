@@ -19,6 +19,7 @@ class AmbassadorTest extends TestCase
     private $admin_be;
     private $belgium;
     private $france;
+    private $italy;
 
 
     public function setup()
@@ -28,10 +29,23 @@ class AmbassadorTest extends TestCase
         $this->france = create('App\Country',['iso'=>'FR']);
         $this->belgium = create('App\Country',['iso'=>'BE']);
 
+
         $this->admin_be = create('App\User', ['country_iso' => $this->belgium->iso])->assignRole('super admin');
         $this->ambassador_be = create('App\User', ['country_iso' => $this->belgium->iso])->assignRole('ambassador');
         $this->ambassador_fr = create('App\User', ['country_iso' => $this->france->iso])->assignRole('ambassador');
 
+
+
+
+    }
+
+
+    /** @test */
+    public function ambassadors_page_should_only_display_countries_with_ambassadors(){
+
+        $italy = create('App\Country',['iso'=>'foobar']);
+        create('App\Event',['country_iso' => $italy->iso]);
+        $this->get('/ambassadors?country_iso=BE')->assertDontSee($italy->iso);
 
     }
 
