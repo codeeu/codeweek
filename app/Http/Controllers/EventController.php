@@ -122,8 +122,8 @@ class EventController extends Controller
 
         EventsQuery::update($request, $event);
 
+        return view('event.show', compact('event'));
 
-        return back();
 
 
     }

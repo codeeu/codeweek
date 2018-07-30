@@ -2,7 +2,7 @@
     @foreach($audiences as $audience)
         <li><label for="id_audience_{{$audience->id}}"><input id="id_audience_{{$audience->id}}" name="audience[]"
                                               type="checkbox"
-                                                              onchange="this.form.submit()"
+                                                              {{--onchange="this.form.submit()"--}}
                                               {{ $selection?in_array($audience->id,$selection)?'checked':'':'' }}
                                               value="{{$audience->id}}"
 

@@ -62,6 +62,7 @@ class EventsQuery
 
     public static function update(Request $request, Event $event)
     {
+
         $event->update($request->toArray());
 
         $tagsArray = [];

@@ -3,7 +3,7 @@
         <div class="level">
             <img :src="picture" class="mr-1">
         </div>
-        <input type="hidden" name="picture" :value="picture">
+        <input type="hidden" name="picture" :value="imageName">
         <form method="POST" enctype="multipart/form-data">
             <image-upload name="picture" class="mr-1" @loaded="onLoad"></image-upload>
         </form>
@@ -21,7 +21,8 @@
         components: {ImageUpload},
         data() {
             return {
-                picture: ''
+                picture: '',
+                imageName: ''
             }
         },
         methods: {
@@ -36,7 +37,9 @@
 
                 axios.post(`/api/events/picture`, data)
                     .then((result) => {
+                        console.log(result);
                         this.picture = result.data.path;
+                        this.imageName = result.data.imageName;
                         flash('Picture uploaded !');
                     })
             },
