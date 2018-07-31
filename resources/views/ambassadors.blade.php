@@ -30,12 +30,12 @@
                         @foreach ($countries as $country)
                             @if($country->iso === app('request')->input('country_iso'))
 
-                                <h2 class="flex justify-center text-center mb-8">
+                                <h2 class="flex justify-center text-center">
                                  {{$country->name}}
                                 </h2>
 
                                 @if($country->facebook)
-                                    <div>Visit the <a href="{{$country->facebook}}">local Facebook page</a></div>
+                                    <div class="justify-center text-center mb-8">Visit the <a href="{{$country->facebook}}">local Facebook page</a></div>
                                 @endif
 
                                 @if($country->website)
