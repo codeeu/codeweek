@@ -66,6 +66,27 @@ class User extends Authenticatable
     }
 
     /**
+     * Get the path to the user's avatar.
+     *
+     * @param  string $avatar
+     * @return string
+     */
+    public function getAvatarAttribute()
+    {
+
+        $arr = explode("/",$this->avatar_path);
+        $filename = array_pop($arr);
+        array_push($arr,"resized");
+        array_push($arr,"80");
+        array_push($arr,$filename);
+        $glued = implode("/",$arr);
+        return $glued;
+
+
+    }
+
+
+    /**
      * Get a string path for the thread.
      *
      * @return string
@@ -87,6 +108,8 @@ class User extends Authenticatable
     {
         return geoip(geoip()->getClientIP());
     }
+
+
 
 
 }

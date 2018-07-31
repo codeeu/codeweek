@@ -22,9 +22,20 @@ class UserTest extends TestCase
 
         $user = create('App\User', ['country_iso' => $country->iso]);
 
-        $this->assertEquals($user->country->name,$country->name);
+        $this->assertEquals($user->country->name, $country->name);
 
 
+    }
+
+    /** @test */
+    public function a_user_should_have_right_avatar_path()
+    {
+
+
+        $user = create('App\User', ["avatar_path" => "avatars/foo/bar.png"]);
+
+
+        $this->assertEquals("https://codeweek-s3.s3.amazonaws.com/avatars/foo/resized/80/bar.png", $user->avatar);
 
 
     }
