@@ -39,7 +39,7 @@ class LoadAll extends Command
     public function handle()
     {
         Log::debug('Start Importing All');
-        exec("php artisan load:countries");
+        //exec("php artisan load:countries");
         exec("php artisan load:tags");
         exec("php artisan load:users");
         exec("php artisan load:avatars");
