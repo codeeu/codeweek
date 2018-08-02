@@ -19,7 +19,7 @@ class AppServiceProvider extends ServiceProvider
 
         \View::composer(['event.add','event.search','profile','event.edit'], function ($view) {
             $view->with('audiences', \App\Audience::all());
-            $view->with('EUcountries', \App\Country::where('continent','=','EU')->orderBy('name','asc')->get());
+            $view->with('active_countries', \App\Country::withEvents());
             $view->with('themes', \App\Theme::orderBy('order', 'asc')->get());
         });
     }

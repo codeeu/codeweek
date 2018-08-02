@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Country;
 use App\Event;
 use App\Filters\EventFilters;
 use Illuminate\Http\Request;
@@ -15,6 +16,7 @@ class SearchController extends Controller
         $events = $this->getEvents($filters);
         $selected_themes = $request->input('theme') ?: [];
         $selected_audiences = $request->input('audience') ?: [];
+
 
 
         return view('event.search', compact(['events','selected_themes','selected_audiences']));
