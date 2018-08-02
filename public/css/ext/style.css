@@ -56,7 +56,7 @@ body {
     line-height: 1.5;
     color: #555;
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 a {
@@ -92,19 +92,19 @@ h6 {
 }
 
 h5,
-h6 { margin-bottom: 20px; }
+h6 { margin-bottom: 1.2em; }
 
-h1 { font-size: 36px; }
+h1 { font-size: 3rem; }
 
-h2 { font-size: 30px; }
+h2 { font-size: 2.5rem; }
 
-h3 { font-size: 24px; }
+h3 { font-size: 2rem; }
 
-h4 { font-size: 18px; }
+h4 { font-size: 1.8rem; }
 
-h5 { font-size: 14px; }
+h5 { font-size: 1.6rem; }
 
-h6 { font-size: 12px; }
+h6 { font-size: 1 rem; }
 
 h4 { font-weight: 600; }
 
@@ -10658,7 +10658,7 @@ label.error { display: none !important; }
 .heading-block h3 + span,
 .heading-block h4 + span { font-size: 20px; }
 
-.heading-block ~ p:not(.lead) { font-size: 15px; }
+/*.heading-block ~ p:not(.lead) { font-size: 15px; }*/
 
 .heading-block:after {
     content: '';
@@ -12965,4 +12965,7 @@ textarea.border-form-control {
     font-size:20px;
 }
 
+.breathe > * {
+    margin-bottom:1em;
+}
 
