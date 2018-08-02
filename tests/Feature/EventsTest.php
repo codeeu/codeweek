@@ -18,7 +18,7 @@ class EventsTest extends TestCase
     public function setup()
     {
         parent::setUp();
-        $this->event = create('App\Event', ["country_iso" => create('App\Country')->iso]);
+        $this->event = create('App\Event', ["country_iso" => create('App\Country')->iso, "status"=>"APPROVED"]);
 
         $this->event->audiences()->saveMany(factory('App\Audience', 3)->make());
         $this->event->themes()->saveMany(factory('App\Theme', 3)->make());
@@ -27,11 +27,19 @@ class EventsTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_browse_events()
+    public function a_user_can_browse_approved_events()
     {
 
         $this->get('/view/' . $this->event->id . '/random')
             ->assertSee($this->event->title);
+    }
+
+    /** @test */
+    public function a_user_cant_browse_non_approved_events()
+    {
+        $this->event->update(['status'=>'REJECTED']);
+        $this->get('/view/' . $this->event->id . '/random')
+            ->assertStatus(403);
     }
 
     /** @test */

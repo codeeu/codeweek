@@ -65,7 +65,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('create_event')}}" class="{% current 'web.create_event' %}">
+                        <a href="{{route('create_event')}}">
 					<span class="fa-stack fa-lg">
 					  <i class="fa fa-circle fa-stack-2x"></i>
 					  <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
@@ -74,7 +74,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('search_event')}}" class="{% current 'web.search_event' %}">
+                        <a href="{{route('search_event')}}">
 				<span class="fa-stack fa-lg">
 				  <i class="fa fa-circle fa-stack-2x"></i>
 				  <i class="fa fa-search fa-stack-1x fa-inverse"></i>

@@ -114,8 +114,6 @@ class Event extends Model
 
     {
 
-
-
         $events = Event::where('status', 'like', 'APPROVED')
             ->where('start_date', '>', Carbon::createFromDate($year, 1, 1));
 
