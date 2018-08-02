@@ -87,6 +87,12 @@ class EventController extends Controller
      */
     public function show(Event $event)
     {
+
+        if ($event->status != "APPROVED"){
+            $this->authorize('view', $event);
+        }
+
+
         return view('event.show', compact('event'));
     }
 

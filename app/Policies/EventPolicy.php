@@ -35,6 +35,26 @@ class EventPolicy
         return false;
     }
 
+    public function view(User $user, Event $event)
+    {
+
+        if($event->status == "APPROVED"){
+            return true;
+        }
+
+        if ($user->hasRole('super admin')) {
+            return true;
+        }
+        if ($user->hasRole('ambassador')) {
+            return $event->country_iso === $user->country_iso;
+        }
+        if ($user->email === $event->owner->email) {
+            return true;
+        }
+
+        return false;
+    }
+
     public function edit(User $user, Event $event)
     {
 
