@@ -21,6 +21,7 @@
                     <li class=""><a href="{{route('map')}}">Events</a></li>
                     <li class=""><a href="{{route('ambassadors')}}">Ambassadors</a></li>
                     <li><a href="/resources/">Resources</a></li>
+                    <li><a href="{{route('schools')}}">Schools</a></li>
                     <li><a href="/about/">About</a></li>
                     <li><a href="http://blog.codeweek.eu/">News</a></li>
                 </ul>

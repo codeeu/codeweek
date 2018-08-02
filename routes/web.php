@@ -53,7 +53,8 @@ Route::get('certificates', 'CertificateController@list')->name('certificates');
 Route::get('event/edit/{event}', 'EventController@edit')->name('edit_event');
 Route::get('event/report/{event}', 'ReportController@index')->name('report_event');
 Route::post('event/report/{event}', 'ReportController@store');
-Route::resource('school', 'SchoolController');
+//Route::resource('school', 'SchoolController');
+Route::get('schools', 'SchoolsController@index')->name('schools');
 
 Route::post('api/users/{user}/avatar', 'Api\UserAvatarController@store')->middleware('auth')->name('avatar');
 Route::post('api/events/picture', 'Api\EventPictureController@store')->middleware('auth')->name('event_picture');
