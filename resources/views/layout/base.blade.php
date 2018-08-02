@@ -28,7 +28,8 @@
     <link rel="stylesheet" href="{{asset('css/ext/colors.css')}}" type="text/css" />
 
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="{{asset('css/custom.css') }}" media="screen" rel="stylesheet" />
 
@@ -65,10 +66,10 @@
 </head>
 
 
-<body class="stretched no-transition">
+<body>
 
 <!-- Document Wrapper -->
-<div id="app" class="clearfix">
+<div id="app">
 
     @include('layout.top_navigation')
 
