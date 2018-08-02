@@ -274,7 +274,10 @@ span.middot {
     display: inline-block !important;
 }
 
-.center { text-align: center !important; }
+.center {
+    margin: auto !important;
+    width: 50% !important;
+}
 
 .divcenter {
     position: relative !important;
