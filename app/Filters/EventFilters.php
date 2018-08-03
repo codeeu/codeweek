@@ -4,6 +4,7 @@ namespace App\Filters;
 
 use App\User;
 use Carbon\Carbon;
+use Illuminate\Http\Request;
 
 class EventFilters extends Filters
 {
@@ -13,6 +14,15 @@ class EventFilters extends Filters
      * @var array
      */
     protected $filters = ['country_iso', 'past', 'q', 'theme', 'audience'];
+
+    public function __construct(Request $request)
+    {
+        if (is_null($request->input('past'))) {
+            $request->merge(['past' => 'no']);
+        }
+
+        parent::__construct($request);
+    }
 
     /**
      * Filter the query by country
@@ -29,6 +39,7 @@ class EventFilters extends Filters
 
     protected function past($hasPast)
     {
+
         if ($hasPast == "no") {
             return $this->builder->whereDate('end_date', '>', Carbon::today()->toDateString());
         }
