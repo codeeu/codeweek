@@ -53,6 +53,11 @@ class EventsController extends Controller
 
         $event = Event::where('id', $event_id)->first();
 
+        if ($event->picture == ""){
+            $event->picture = "event_picture/logo_gs_2016_07703ca0-7e5e-4cab-affb-4de93e3f2497.png";
+        }
+
+
         return new EventResource($event);
 
     }
