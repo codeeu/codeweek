@@ -5,7 +5,7 @@
         <div style="height:150px">
 
             @if($closeEvent->picture)
-                <img src="{{$closeEvent->picture}}" style="height: 150px">
+                <img src="{{$closeEvent->picture_path()}}" style="height: 150px">
             @else
                 <img style="height: 150px"
                      src="https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png">
