@@ -10,9 +10,12 @@ map = new google.maps.Map(document.getElementById('map'), {
     streetViewControl: false
 });
 
+
 autocomplete = new google.maps.places.Autocomplete(
     /** @type {!HTMLInputElement} */ (
         document.getElementById('autocomplete')));
+
+
 
 autocomplete.addListener('place_changed', onPlaceChanged);
 
@@ -31,8 +34,8 @@ function onPlaceChanged() {
             return address_component.types.includes("country");
         });
 
-        document.getElementById('country_iso').value = filtered_array.length ? filtered_array[0].short_name: "";;
-        document.getElementById('geoposition').value = place.geometry.location.lat() + "," + place.geometry.location.lng();;
+        document.getElementById('country_iso').value = filtered_array.length ? filtered_array[0].short_name: "";
+        document.getElementById('geoposition').value = place.geometry.location.lat() + "," + place.geometry.location.lng();
         //search();
     } else {
         document.getElementById('autocomplete').placeholder = 'Enter a city';
