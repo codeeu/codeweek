@@ -4,8 +4,11 @@ namespace App\Http\Controllers;
 
 
 use App\Event;
+use App\Helpers\EventHelper;
 use App\Http\Requests\EventRequest;
 use App\Queries\EventsQuery;
+use App\User;
+use Carbon\Carbon;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -39,9 +42,26 @@ class EventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        $years = [2018, 2017, 2016, 2015, 2014];
+
+        $selectedYear = $request->input("year") ? $request->input("year") : Carbon::now()->year;
+
+
+        return view('events')->with([
+            'events' => $this->eventsNearMe(),
+            'years' => $years,
+            'selectedYear' => $selectedYear
+        ]);
+    }
+
+    private function eventsNearMe()
+    {
+        $geoip = User::getGeoIPData();
+        return EventHelper::getCloseEvents($geoip->lon, $geoip->lat);
+
+
     }
 
     /**
