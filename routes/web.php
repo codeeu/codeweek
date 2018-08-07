@@ -14,6 +14,17 @@
 use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Request;
 
+
+Route::domain('{subdomain}.codeweek.test')->group(function () {
+    Route::get('/', function ($subdomain) {
+        return redirect(Config::get('app.url').'/'.$subdomain);
+    });
+});
+
+
+
+
+
 Route::get('setlocale', function (Request $request) {
 
     $locale = $request->input('locale');
@@ -33,6 +44,7 @@ Route::get('/profile', function () {
 
 
 Route::get('/', 'HomeController@index')->name('index');
+Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/events', 'EventController@index')->name('events_map');
 Route::get('/add', 'EventController@create')->name('create_event');
 Route::get('/ambassadors', 'AmbassadorController@index')->name('ambassadors');
@@ -41,7 +53,9 @@ Route::post('/volunteer', 'VolunteerController@store')->middleware('auth')->name
 
 Route::post('/events', 'EventController@store');
 Route::patch('/events/{event}', 'EventController@update');
-Route::get('/guide', function () {return view('guide');})->name('guide');
+Route::get('/guide', function () {
+    return view('guide');
+})->name('guide');
 Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 Route::get('/my', 'EventController@my')->name('my_events');
@@ -82,13 +96,6 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
     Route::post('/api/event/approve/{event}', 'EventController@approve')->name('event.approve');
     Route::post('/api/event/reject/{event}', 'EventController@reject')->name('event.reject');
 });
-
-
-
-
-
-
-
 
 
 Auth::routes();
