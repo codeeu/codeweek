@@ -15,8 +15,10 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Request;
 
 
-Route::domain('{subdomain}.codeweek.test')->group(function () {
+Route::domain('{subdomain}.'.Config::get('app.url'))->group(function () {
+
     Route::get('/', function ($subdomain) {
+
         return redirect(Config::get('app.url').'/'.$subdomain);
     });
 });
