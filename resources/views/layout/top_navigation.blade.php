@@ -17,7 +17,7 @@
                 <!-- Primary Navigation -->
                 <!-- ============================================= -->
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="{{route('home')}}">Home</a></li>
                     <li class=""><a href="{{route('events_map')}}">Events</a></li>
                     <li class=""><a href="{{route('ambassadors')}}">Ambassadors</a></li>
                     <li><a href="/resources/">Resources</a></li>
