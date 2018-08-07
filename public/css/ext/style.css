@@ -128,7 +128,7 @@ blockquote,
 address,
 table,
 fieldset,
-form { margin-bottom: 30px; }
+form { margin-bottom: 30px !important; }
 
 small { font-family: 'Lato', sans-serif; }
 
