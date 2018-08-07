@@ -18,7 +18,7 @@
                 <!-- ============================================= -->
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li class=""><a href="{{route('map')}}">Events</a></li>
+                    <li class=""><a href="{{route('events_map')}}">Events</a></li>
                     <li class=""><a href="{{route('ambassadors')}}">Ambassadors</a></li>
                     <li><a href="/resources/">Resources</a></li>
                     <li><a href="{{route('schools')}}">Schools</a></li>
@@ -30,7 +30,7 @@
                 <!-- ============================================= -->
                 <div id="top-search">
                     <a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
-                    <form action="/search" method="get">
+                    <form action="/search.html" method="get">
                         <input type="text" name="q" class="form-control" value="" placeholder="Type & hit Enter...">
                     </form>
                 </div><!-- #top-search end -->
@@ -57,7 +57,7 @@
 
 
                     <li>
-                        <a href="/" class="first" id="zoomEU">
+                        <a href="{{route('events_map')}}" class="first" id="zoomEU">
 					<span class="fa-stack fa-lg">
 					  <i class="fa fa-circle fa-stack-2x"></i>
 					  <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
