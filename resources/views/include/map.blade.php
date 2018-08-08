@@ -48,7 +48,7 @@
 
     <script type="text/javascript">
         $('#id_year').on('change', function () {
-            window.location = window.App.url + '?year=' + this.value;
+            window.location = window.App.url + '/events?year=' + this.value;
 
         })
     </script>
