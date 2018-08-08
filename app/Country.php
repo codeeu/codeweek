@@ -17,7 +17,18 @@ class Country extends Model
     public static function withEvents()
     {
 
-        $countries = Country::has('events')->orderBy('iso')->get()->unique();
+        $isos = DB::table('events')
+            ->select(['country_iso'])
+            ->where('status',"=","APPROVED")
+            ->groupBy('country_iso')
+            ->get()
+            ->pluck('country_iso')
+        ;
+
+
+
+        $countries = Country::findMany($isos)->sortBy('name');
+
 
         return $countries;
 

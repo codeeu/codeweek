@@ -128,7 +128,7 @@ blockquote,
 address,
 table,
 fieldset,
-form { margin-bottom: 30px; }
+form { margin-bottom: 30px !important; }
 
 small { font-family: 'Lato', sans-serif; }
 
@@ -2004,8 +2004,8 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
 #page-menu,
 #page-menu-wrap {
     position: relative;
-    height: 44px;
-    line-height: 44px;
+    height: 50px;
+    line-height: 50px;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
 
@@ -12955,16 +12955,15 @@ textarea.border-form-control {
     word-wrap: break-word;
 }
 
-.event-list
+.itens
 {
-    margin-top:-30px;
+    margin-bottom: 30px;
 }
 
 .event-list li
 {
     display: inline;
     list-style-type: none;
-    padding-right: 20px;
     font-size:20px;
 }
 

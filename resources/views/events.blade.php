@@ -4,15 +4,28 @@
 
     @include('include.map')
 
+    <section>
 
 
-<div class="flex justify-center">
+        <div class="container">
+
+
+            <div class="content-wrap nopadding">
+
+
+                <div class="container clearfix ">
+
+
+
+
+
+    <div class="flex justify-center">
 
         <h2>
             <a href="{{route('scoreboard')}}">Scoreboard</a>
         </h2>
 
-</div>
+    </div>
 
 
     <div class="col-md-12">
@@ -25,6 +38,8 @@
 
         </div>
     </div>
+
+                </div></div></div></section>
 
 
 @endsection

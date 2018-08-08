@@ -221,8 +221,7 @@
                             <div class="col-sm-9 first last">
                                 <input class="form-control" id="id_contact_person" maxlength="75"
                                        name="contact_person"
-                                       placeholder="Would you like to display a contact email?" type="text"
-                                       value="{{old('contact_person')?old('contact_person'):Auth::user()->email}}">
+                                       placeholder="Would you like to display a contact email?" type="text">
 
                                 @component('components.validation-errors', ['field'=>'contact_person'])
                                 @endcomponent
@@ -299,8 +298,7 @@
                                 * Your contact email
                             </label>
                             <div class="col-sm-9">
-                                <input class="form-control" id="id_user_email" name="user_email" type="email"
-                                       value="{{old('user_email')?old('user_email'):Auth::user()->email}}">
+                                <input class="form-control" id="id_user_email" name="user_email" type="email">
                                 @component('components.validation-errors', ['field'=>'user_email'])
                                 @endcomponent
                             </div>
