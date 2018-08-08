@@ -16,6 +16,8 @@
 
 
                     <h1>{{ $event->title }}</h1>
+                    <hr>
+
                     <strong>Organized by:</strong>
 
                     <p> {{ $event->organizer }}</p>
@@ -49,38 +51,35 @@
                     <strong>This event is for:</strong>
 
                     @if($event->audiences->count())
-                        <p>
-                        <ul class="event-list">
-                            @foreach($event->audiences as $audience)
-                                <li><span class="label label-info">{{ $audience->name }}</span></li>
-                            @endforeach
-                        </ul>
-
-                        </p>
+                        <div class="itens">
+                            <ul class="event-list">
+                                @foreach($event->audiences as $audience)
+                                    <li><span class="label label-info">{{ $audience->name }}</span></li>
+                                @endforeach
+                            </ul>
+                        </div>
                     @endif
 
                     @if($event->themes->count())
                         <strong>Main themes:</strong>
-
-                        <p>
-                        <ul class="event-list">
-                            @foreach($event->themes as $theme)
-                                <li><span class="label label-info">{{ $theme->name }}</span></li>
-                            @endforeach
-                        </ul>
-
-                        </p>
+                        <div class="itens">
+                            <ul class="event-list">
+                                @foreach($event->themes as $theme)
+                                    <li><span class="label label-info">{{ $theme->name }}</span></li>
+                                @endforeach
+                            </ul>
+                        </div>
                     @endif
 
                     @if($event->tags)
                         <strong>Tags:</strong>
-                        <p>
-                        <ul class="event-list">
-                            @foreach($event->tags as $tag)
-                                <li><span class="label label-info">{{ $tag->name }}</span></li>
-                            @endforeach
-                        </ul>
-                        </p>
+                        <div class="itens">
+                            <ul class="event-list">
+                                @foreach($event->tags as $tag)
+                                    <li><span class="label label-info">{{ $tag->name }}</span></li>
+                                @endforeach
+                            </ul>
+                        </div>
                     @endif
 
                     <strong>Share the event:</strong>

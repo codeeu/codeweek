@@ -17,10 +17,11 @@
                 <!-- Primary Navigation -->
                 <!-- ============================================= -->
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li class=""><a href="{{route('map')}}">Events</a></li>
+                    <li><a href="{{route('home')}}">Home</a></li>
+                    <li class=""><a href="{{route('events_map')}}">Events</a></li>
                     <li class=""><a href="{{route('ambassadors')}}">Ambassadors</a></li>
                     <li><a href="/resources/">Resources</a></li>
+                    <li><a href="{{route('schools')}}">Schools</a></li>
                     <li><a href="/about/">About</a></li>
                     <li><a href="http://blog.codeweek.eu/">News</a></li>
                 </ul>
@@ -56,7 +57,7 @@
 
 
                     <li>
-                        <a href="/" class="first" id="zoomEU">
+                        <a href="{{route('events_map')}}" class="first" id="zoomEU">
 					<span class="fa-stack fa-lg">
 					  <i class="fa fa-circle fa-stack-2x"></i>
 					  <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
@@ -85,11 +86,12 @@
 
 
 
+
                 </ul>
 
 
                 <ul class="nav navbar navbar-right nobottommargin">
-                    <li class="dropdown pull-right">
+                    <li class="dropdown">
 
 
                         @if (Auth::check())
@@ -139,23 +141,18 @@
                         {{--{% endif %}--}}
                     </li>
 
-
-                    <li>
-                        <form class="inline" method="get" action="/setlocale/">
-
-                            <select class="custom-select custom-select-sm" name="locale"
-                                    onchange="this.form.submit()">
-                                @foreach ($locales as $key => $value)
-                                    <option value="{{ $value }}"
-                                            @if ($value == session('locale'))
-                                            selected="selected"
-                                            @endif
-                                    >{{ $value }}</option>
-                                @endforeach
-                            </select>
-
-                        </form>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @lang('base.languages.' . App::getLocale())
+                            <b class="caret"></b>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            @foreach ($locales as $key => $value)
+                                <a class="dropdown-item" href="/setlocale/?locale={{$value}}">@lang('base.languages.' . $value)</a>
+                            @endforeach
+                        </div>
                     </li>
+
                 </ul>
             </nav>
 

@@ -14,6 +14,19 @@
 use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Request;
 
+
+Route::domain('{subdomain}.'.Config::get('app.url'))->group(function () {
+
+    Route::get('/', function ($subdomain) {
+
+        return redirect(Config::get('app.url').'/'.$subdomain);
+    });
+});
+
+
+
+
+
 Route::get('setlocale', function (Request $request) {
 
     $locale = $request->input('locale');
@@ -32,7 +45,9 @@ Route::get('/profile', function () {
 })->name('profile')->middleware('auth');
 
 
-Route::get('/', 'HomeController@index')->name('map');
+Route::get('/', 'HomeController@index')->name('index');
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/events', 'EventController@index')->name('events_map');
 Route::get('/add', 'EventController@create')->name('create_event');
 Route::get('/ambassadors', 'AmbassadorController@index')->name('ambassadors');
 Route::get('/volunteer', 'VolunteerController@create')->middleware('auth')->name('volunteer');
@@ -40,7 +55,9 @@ Route::post('/volunteer', 'VolunteerController@store')->middleware('auth')->name
 
 Route::post('/events', 'EventController@store');
 Route::patch('/events/{event}', 'EventController@update');
-Route::get('/guide', function () {return view('guide');})->name('guide');
+Route::get('/guide', function () {
+    return view('guide');
+})->name('guide');
 Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 Route::get('/my', 'EventController@my')->name('my_events');
@@ -53,7 +70,8 @@ Route::get('certificates', 'CertificateController@list')->name('certificates');
 Route::get('event/edit/{event}', 'EventController@edit')->name('edit_event');
 Route::get('event/report/{event}', 'ReportController@index')->name('report_event');
 Route::post('event/report/{event}', 'ReportController@store');
-Route::resource('school', 'SchoolController');
+//Route::resource('school', 'SchoolController');
+Route::get('schools', 'SchoolsController@index')->name('schools');
 
 Route::post('api/users/{user}/avatar', 'Api\UserAvatarController@store')->middleware('auth')->name('avatar');
 Route::post('api/events/picture', 'Api\EventPictureController@store')->middleware('auth')->name('event_picture');
@@ -80,13 +98,6 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
     Route::post('/api/event/approve/{event}', 'EventController@approve')->name('event.approve');
     Route::post('/api/event/reject/{event}', 'EventController@reject')->name('event.reject');
 });
-
-
-
-
-
-
-
 
 
 Auth::routes();
