@@ -16,7 +16,11 @@
 
 
     <!-- Theme stylesheets -->
-    <link rel="stylesheet" href="{{asset('css/ext/style.css')}}" type="text/css" />
+    @if (Route::getCurrentRoute()->uri() != 'home')
+        <link rel="stylesheet" href="{{asset('css/ext/style.css')}}" type="text/css" />
+    @else
+        <link rel="stylesheet" href="{{asset('css/ext/home.css')}}" type="text/css" />
+    @endif
     <link rel="stylesheet" href="{{asset('css/ext/dark.css')}}" type="text/css" />
     <link rel="stylesheet" href="{{asset('css/font-icons.css')}}" type="text/css" />
 
@@ -37,10 +41,6 @@
 
     <link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css" />
 
-
-
-    <!-- Custom style -->
-    <link href="{{asset('css/map.css')}}" rel="stylesheet" type="text/css">
 
     @yield('extra-css')
 
