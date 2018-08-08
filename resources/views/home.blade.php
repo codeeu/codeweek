@@ -4,15 +4,15 @@
 
 
 
-    ---
+   <!-- ---
     layout: default
     title: Europe Code Week
-    ---
-    <section id="slider" class="slider-parallax full-screen force-full-screen with-header swiper_wrapper page-section clearfix">
+    ----->
+    <div id="slider" class="slider-parallax full-screen force-full-screen with-header swiper_wrapper page-section clearfix">
 
         <div class="swiper-container swiper-parent">
             <div class="swiper-wrapper">
-                <div class="swiper-slide dark" style="background-image: url('img/ambassadors.jpg');">
+                <div class="swiper-slide dark" style="background-image: url('img/ambassadors.jpg');width: 100%;">
                     <div class="container clearfix">
                         <div class="slider-caption slider-caption-center">
                             <div id="countdown-ex1" class="countdown countdown-large coming-soon divcenter bottommargin" style="max-width:700px;"></div>
@@ -107,7 +107,7 @@
             });
         </script>
 
-    </section>
+    </div>
 
     <!-- Page Sub Menu -->
     <div id="page-menu">
@@ -145,12 +145,11 @@
             <section id="section-intro" class="page-section">
                 <div class="container clearfix">
 
-                    <div class="heading-block bottommargin-lg center">
+                    <div class="heading-block bottommargin-lg center" style="text-align: center;">
                         <h2>CodeWeek</h2>
-                        <span>
-            Europe Code Week is a grassroots initiative which aims to bring coding and digital literacy to everybody in a fun and engaging way.<br>
-            <strong>6-21 October 2018</strong>
-          </span>
+                        <span style="max-width:700px;margin-left: auto;margin-right: auto;">Europe Code Week is a grassroots initiative which aims to bring coding and digital literacy to everybody in a fun and engaging way.<br>
+                            <strong>6-21 October 2018</strong>
+                        </span>
                     </div>
 
                 </div>

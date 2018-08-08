@@ -2,17 +2,19 @@
 
 <section class="home-map">
 
-    <div id="home-map"></div>
+    <div class="landing-wrapper" style="position: relative;height: 450px;">
+        <div class="events-map-wrapper" style="position: absolute;width: 100%;height: 450px;">
+            <div id="home-map"></div>
+        </div>
+    </div>
     <div id="past-events">
         Show events for
-
 
         <select id="id_year" name="year">
             @foreach($years as $year)
                 <option value="{{$year}}" {{ ($year==$selectedYear)?'selected':''}}>{{$year}}</option>
             @endforeach
         </select>
-
 
     </div>
 
