@@ -2005,7 +2005,7 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
 #page-menu-wrap {
     position: relative;
     height: 50px;
-    line-height: 44px;
+    line-height: 50px;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
 
