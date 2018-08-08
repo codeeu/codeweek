@@ -86,11 +86,12 @@
 
 
 
+
                 </ul>
 
 
                 <ul class="nav navbar navbar-right nobottommargin">
-                    <li class="dropdown pull-right">
+                    <li class="dropdown">
 
 
                         @if (Auth::check())
@@ -140,23 +141,18 @@
                         {{--{% endif %}--}}
                     </li>
 
-
-                    <li>
-                        <form class="inline" method="get" action="/setlocale/">
-
-                            <select class="custom-select custom-select-sm" name="locale"
-                                    onchange="this.form.submit()">
-                                @foreach ($locales as $key => $value)
-                                    <option value="{{ $value }}"
-                                            @if ($value == session('locale'))
-                                            selected="selected"
-                                            @endif
-                                    >{{ $value }}</option>
-                                @endforeach
-                            </select>
-
-                        </form>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @lang('base.languages.' . App::getLocale())
+                            <b class="caret"></b>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            @foreach ($locales as $key => $value)
+                                <a class="dropdown-item" href="/setlocale/?locale={{$value}}">@lang('base.languages.' . $value)</a>
+                            @endforeach
+                        </div>
                     </li>
+
                 </ul>
             </nav>
 
