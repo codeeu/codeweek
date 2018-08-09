@@ -49,11 +49,9 @@
                             <a href="ambassadors?country_iso={{$current_country_iso}}">
                                 contact your <strong>EU Code Week Ambassadors</strong>
 
-
-                                <img src="http://codeweek-s3.s3.amazonaws.com/avatars/workshop4me/resized/45/MS.JPG" alt="" class="img-circle" height="45" width="45">
-
-                                <img src="http://codeweek-s3.s3.amazonaws.com/avatars/ChristianBoudot/resized/45/ProfilePic.jpeg" alt="" class="img-circle" height="45" width="45">
-
+                                @foreach($ambassadors as $ambassador)
+                                    <img src="{{$ambassador->avatar}}" alt="" class="img-circle" height="45" width="45">
+                                @endforeach
 
                             </a>
                         </p>
