@@ -63,7 +63,7 @@
                     </div>
 
                     <label for="id_country">Select country</label><br/>
-                    @component('components.select-country',['countries'=>$active_countries, 'country_iso'=>auth()->user()->country->iso])
+                    @component('components.select-country',['countries'=>$active_countries, 'country_iso'=>optional(auth()->user()->country)->iso])
                     @endcomponent
                     <br/>
                     <br/>
