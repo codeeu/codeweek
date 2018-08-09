@@ -52,14 +52,14 @@ class EventController extends Controller
 
         $filters->getFilters();
 
-        $ambassadors = User::role('ambassador')->filter($filters)->paginate(10);
+        $ambassadors = User::role('ambassador')->where("country_iso","=",User::getGeoIPData()->iso_code)->get();
 
         return view('events')->with([
             'events' => $this->eventsNearMe(),
             'years' => $years,
             'selectedYear' => $selectedYear,
             'countries' => Country::withEvents(),
-            'current_country_iso' => User::getGeoIPData()->iso_code
+            'current_country_iso' => User::getGeoIPData()->iso_code,
         ]);
     }
 
