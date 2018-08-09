@@ -2,7 +2,7 @@
 
 @section('content')
     <section>
-        <div class="container">
+        <div class="container">              @include ('resources.title')
   <p>Gradiva za učenje programiranja v slovenščini:</p>
   <ul>
    	<li><strong><a href="https://webmaker.org/sl/explore">Mozilla Webmaker</a></strong>: raznoliki viri za poučevanje spletne pismenosti. Orodja Webmaker preko spletnega brskalnika ponujajo možnost izdelave in predelave spletnih strani, ustvarjanje interaktivnih video posnetkov, mobilnih aplikacij in še več.</li>

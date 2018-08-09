@@ -2,7 +2,7 @@
 
 @section('content')
 	<section>
-		<div class="container">
+		<div class="container">              @include ('resources.title')
 
 <ul>
 	<li><a href="http://codeweek.nl/">CodeWeek.nl</a></li>

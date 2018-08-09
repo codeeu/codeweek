@@ -2,7 +2,7 @@
 
 @section('content')
     <section>
-        <div class="container">
+        <div class="container">              @include ('resources.title')
 <h3>CS First</h3>
 <ul>
     <li><a href="http://www.cs-first.com/">CS First</a> is a free program that increases student access and exposure to computer science (CS) education through after-school, in-school, and summer programs. All clubs are run by teachers and/or community volunteers.

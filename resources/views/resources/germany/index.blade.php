@@ -2,7 +2,7 @@
 
 @section('content')
   <section>
-    <div class="container">
+    <div class="container">              @include ('resources.title')
   <ul>
     <li><a href="http://codeweek.de">Code Week Germany</a></li>
     <li><a href="http://www.cs-first.com/">CS First</a> ist ein kostenloses Kursprogramm für Schüler, das sie an das Thema Informatik heranführt und sie dafür begeistert.

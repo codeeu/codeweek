@@ -2,7 +2,7 @@
 
 @section('content')
     <section>
-        <div class="container">
+        <div class="container">              @include ('resources.title')
 
   <ul>
   	<li><a href="https://www.apple.com/no/everyone-can-code/">Alle kan kode</a> Teknologi har et språk. Det kalles kode. Og Apple mener at koding er en grunnleggende ferdighet. Når du lærer å kode, lærer du å løse problemer og samarbeide med andre på kreative måter. Du kan utvikle apper og sette ideene dine ut i livet. Vi mener at alle bør få muligheten til å skape noe som kan forandre verden. Derfor har Apple utviklet et program som gjør at alle kan forstå og skrive kode – og undervise i det.</li>

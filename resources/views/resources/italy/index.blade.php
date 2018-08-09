@@ -2,7 +2,7 @@
 
 @section('content')
     <section>
-        <div class="container">
+        <div class="container">              @include ('resources.title')
 
   <ul>
       <li><a href="http://www.cs-first.com/">Computer Science First </a> è una piattaforma gratuita che permette agli studenti di avvicinarsi alla programmazione attraverso l'attività scolastica. Tutti i Club tematici di Computer Science First sono coordinati dagli insegnanti e tutti gli studenti possono parteciparvi nel contesto scolastico.

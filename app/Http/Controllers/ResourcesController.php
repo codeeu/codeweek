@@ -17,7 +17,7 @@ class ResourcesController extends Controller
 
     public function show($country)
     {
-        return view("resources.{$country}.index");
+        return view("resources.{$country}.index",compact('country'));
 
     }
 }

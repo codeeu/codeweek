@@ -2,7 +2,7 @@
 
 @section('content')
   <section>
-    <div class="container">
+    <div class="container">              @include ('resources.title')
 
 <p><em>Cette page reprend les ressources présentées sur le <a href="http://wiki.jecode.org">wiki</a> de <a href="http://jecode.org">jecode.org</a>.</em></p>
 

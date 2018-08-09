@@ -2,7 +2,7 @@
 
 @section('content')
   <section>
-    <div class="container">
+    <div class="container">              @include ('resources.title')
   <h3>Beginners</h3>
 
   <p>Werkzeuge und Trainings für „absolute Beginners“ (keine Programmierkenntnisse notwendig)</p>

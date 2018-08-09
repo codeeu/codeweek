@@ -3,6 +3,9 @@
 @section('content')
     <section>
         <div class="container">
+
+            @include ('resources.title')
+
             <h2>NEDERLANDS</h2>
 
             <ul>

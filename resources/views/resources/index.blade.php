@@ -2,7 +2,16 @@
 
 @section('content')
     <section>
-        <div class="container">
+
+        <div class="container resources-container">
+
+            <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
+                <h1>Resources and guides</h1>
+                <span>EU Code Week 2018</span>
+            </div>
+
+            <hr>
+
             <p>EU Code Week is a grass-root movement run by volunteers who promote coding in their countries as <a
                         href="http://events.codeweek.eu/ambassadors">Code Week Ambassadors</a>. Anyone – schools,
                 teachers,
@@ -116,39 +125,19 @@
 
                     <strong>
 
-                        @switch($country)
-                            @case('czech_republic')
-                            <a href="{{ route('resources_by_country',['country'=>$country]) }}" title="List of coding resources from Czech Republic">Czech
-                                Republic</a>
-                            @break
-
-                            @case('isle_of_man')
-                            <a href="{{ route('resources_by_country',['country'=>$country]) }}" title="List of coding resources from Isle of Man">Isle of Man</a>
-                            @break
-
-                            @case('united_kingdom')
-                            <a href="{{ route('resources_by_country',['country'=>$country]) }}" title="List of coding resources from United Kingdom">United
-                                Kingdom</a>
-                            @break
-
-                            @default
-                            <a href="{{ route('resources_by_country',['country'=>$country]) }}"
-                               title="List of coding resources from {{ ucfirst($country) }}">{{ ucfirst($country) }}</a>
-                        @endswitch
-
-
+                        <a href="{{ route('resources_by_country',['country'=>$country]) }}"
+                           title="List of coding resources from {{ ucwords(str_replace('_', ' ', $country)) }}">{{ ucwords(str_replace('_', ' ', $country)) }}</a>
 
                         @if(!$loop->last)
                             -
-                    @endif
+                        @endif
 
-
-
+                    </strong>
 
                 @endforeach
             </div>
 
-            <hr/>
+            <hr>
 
             <h2>Coding lessons for beginners of all ages</h2>
             <ul>
