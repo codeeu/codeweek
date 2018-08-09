@@ -53,6 +53,7 @@ Route::get('/resources', 'ResourcesController@index')->name('resources');
 Route::get('/resources/{country}', 'ResourcesController@show')->name('resources_by_country');
 Route::get('/ambassadors', 'AmbassadorController@index')->name('ambassadors');
 Route::view('/about', 'about')->name('about');
+Route::view('/beambassador', 'beambassador')->name('be_ambassador');
 Route::get('/volunteer', 'VolunteerController@create')->middleware('auth')->name('volunteer');
 Route::post('/volunteer', 'VolunteerController@store')->middleware('auth')->name('volunteer_store');
 
