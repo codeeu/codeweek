@@ -9,6 +9,8 @@
         <div class="container">
 
 
+
+
             <div class="content-wrap breathe">
 
 
@@ -23,41 +25,100 @@
 
                 </div>
 
+                @foreach($questions as $question)
+                    <question :question="{{json_encode($question)}}"></question>
+                @endforeach
 
-                <h2><span>Why should you bring coding to your classroom?</span> How can coding benefit your students? What is in it for you as a teacher ?</h2>
+                <h2><span>Why should you bring coding to your classroom?</span> How can coding benefit your students?
+                    What is in it for you as a teacher ?</h2>
 
-
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod eleifend tortor, non vestibulum enim placerat ut. Morbi sed tincidunt eros, ac aliquet arcu. Quisque ut magna quis velit finibus cursus blandit sed ipsum. Suspendisse tincidunt, justo eget sodales euismod, eros elit hendrerit ipsum, et sagittis libero felis et sem. Nulla et urna facilisis, condimentum magna non, semper dolor. Nam scelerisque tempus tincidunt. In non dui imperdiet, tempus risus molestie, elementum dui. Aliquam at enim dapibus, mollis sapien in, interdum tellus. Sed maximus nibh at ultrices gravida. Etiam gravida gravida risus. Vivamus tempor iaculis bibendum. Mauris consequat eu mi at suscipit. Maecenas fringilla mi sit amet ante convallis, vitae efficitur nisi lacinia.</p>
-
-                <p>Phasellus quis suscipit sapien. Phasellus sed enim ut neque pellentesque congue at ut tortor. Nulla luctus sapien ut convallis semper. Donec sagittis mauris a elit eleifend dapibus. Pellentesque id aliquet tortor, at faucibus enim. Curabitur blandit libero laoreet risus posuere feugiat. Vivamus tincidunt interdum rutrum. Nunc placerat fringilla orci eget elementum. Morbi placerat ipsum a tortor malesuada, sed suscipit augue fringilla. Pellentesque et tincidunt risus, id placerat urna. In neque nulla, maximus eu neque non, semper malesuada tellus.</p>
-
-
-
-                <h2><span>Ready to get involved ?</span></h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod eleifend tortor, non vestibulum enim placerat ut. Morbi sed tincidunt eros, ac aliquet arcu. Quisque ut magna quis velit finibus cursus blandit sed ipsum. Suspendisse tincidunt, justo eget sodales euismod, eros elit hendrerit ipsum, et sagittis libero felis et sem. Nulla et urna facilisis, condimentum magna non, semper dolor. Nam scelerisque tempus tincidunt. In non dui imperdiet, tempus risus molestie, elementum dui. Aliquam at enim dapibus, mollis sapien in, interdum tellus. Sed maximus nibh at ultrices gravida. Etiam gravida gravida risus. Vivamus tempor iaculis bibendum. Mauris consequat eu mi at suscipit. Maecenas fringilla mi sit amet ante convallis, vitae efficitur nisi lacinia.</p>
-
-
-                <h2><span>New to Coding? No worries</span></h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod eleifend tortor, non vestibulum enim placerat ut. Morbi sed tincidunt eros, ac aliquet arcu. Quisque ut magna quis velit finibus cursus blandit sed ipsum. Suspendisse tincidunt, justo eget sodales euismod, eros elit hendrerit ipsum, et sagittis libero felis et sem. Nulla et urna facilisis, condimentum magna non, semper dolor. Nam scelerisque tempus tincidunt. In non dui imperdiet, tempus risus molestie, elementum dui. Aliquam at enim dapibus, mollis sapien in, interdum tellus. Sed maximus nibh at ultrices gravida. Etiam gravida gravida risus. Vivamus tempor iaculis bibendum. Mauris consequat eu mi at suscipit. Maecenas fringilla mi sit amet ante convallis, vitae efficitur nisi lacinia.</p>
+                <p>We believe anybody’s <b>basic literacy in a digital age</b> must include an understanding of <b>coding</b>
+                    and the development of crucial competences related to <b>computational thinking</b>, such as problem
+                    solving, collaboration and analytical skills.</p>
+                <p>Learning how to code can empower your students to be at the forefront of a digitally competent
+                    society, develop a better understanding of the world that surrounds them and get better chances to
+                    succeed in their personal and professional lives.</p>
+                <p>Code Week offers all students the possibility to make their first steps as digital creators, by
+                    providing schools and teachers free professional development opportunities, teaching materials,
+                    international challenges and opportunities to exchange.</p>
 
 
+                <div class="flex align-center justify-center">
+                    <div class="btn btn-primary btn-directional btn-lg submit-button-wrapper">
+                        <input type="submit" value="Want to get started right away ? Sign up here!">
+                    </div>
+                </div>
 
 
-                <h2><span>Looking for an extra challenge ?</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod eleifend tortor, non vestibulum enim placerat ut. Morbi sed tincidunt eros, ac aliquet arcu. Quisque ut magna quis velit finibus cursus blandit sed ipsum. Suspendisse tincidunt, justo eget sodales euismod, eros elit hendrerit ipsum, et sagittis libero felis et sem. Nulla et urna facilisis, condimentum magna non, semper dolor. Nam scelerisque tempus tincidunt. In non dui imperdiet, tempus risus molestie, elementum dui. Aliquam at enim dapibus, mollis sapien in, interdum tellus. Sed maximus nibh at ultrices gravida. Etiam gravida gravida risus. Vivamus tempor iaculis bibendum. Mauris consequat eu mi at suscipit. Maecenas fringilla mi sit amet ante convallis, vitae efficitur nisi lacinia.</p>
+                <h2><span>Ready to get involved ?</span> Organise a lesson, a training session, or an event, and pin it
+                    on the map.</h2>
+
+                <p>Whether you have any coding or programming knowledge or not, you can easily organise a lesson in your
+                    classroom, an open day, or an event at your school. Just find a date and register your activity in
+                    the map below. If you feel like you need support with preparing a lesson with coding, skip to the
+                    next section.</p>
+                <p>Have a look at some examples of activities that are being organised browsing the map below and add
+                    your own to join thousands of fellow educators across Europe and beyond:</p>
+
+                <h1>MAP </h1>
+
+                <div class="flex align-center justify-center">
+                    <div class="btn btn-primary btn-directional btn-lg submit-button-wrapper">
+                        <input type="submit" value="Ready to give it a go? Add an activity!">
+                    </div>
+                </div>
+
+                <h2><span>New to Coding? No worries</span> Our tools help introduce you to coding before bringing it to
+                    your students</h2>
+
+                <p>If you are interested in bringing coding to your classroom but you don´t know where to start, do not
+                    worry! An international team of teachers and experts have been developing a set of short online
+                    training modules to help get you started. </p>
+                <p>No previous experience of coding is needed to follow our learning bits!</p>
+
+                <div class="flex align-center justify-center">
+                    <div class="btn btn-primary btn-directional btn-lg submit-button-wrapper">
+                        <input type="submit" value="Access the training modules">
+                    </div>
+                </div>
 
 
+                <h2><span>Looking for an extra challenge ?</span> Build a network of activities, engage as many students
+                    as possible, and earn the Certificate of Excellence</h2>
+                <p>Code Week 4 All challenges you to join forces with other teachers or schools and participate in an
+                    international community of like-minded people giving to student the opportunity to make their first
+                    steps in coding. Build an alliance that engages more than a 1 000 students and you will gain the
+                    Certificate of Excellence.</p>
 
-
-
+                <div class="flex align-center justify-center">
+                    <div class="btn btn-primary btn-directional btn-lg submit-button-wrapper">
+                        <input type="submit" value="Learn more about the Code Week 4 All challenge">
+                    </div>
+                </div>
 
             </div>
         </div>
     </section>
 
 
+
+@endsection
+
+@section("extra-css")
+    <style>
+
+        .submit-button-wrapper.btn-lg input {
+
+            padding: 15px 15px 15px 30px;
+            background: transparent;
+            border: none;
+            text-transform: none;
+            letter-spacing: 2px;
+        }
+
+        .btn-primary, .btn-primary:hover {
+            background: #f58732ed;
+        }
+    </style>
 
 @endsection
