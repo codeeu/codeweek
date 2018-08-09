@@ -8,6 +8,9 @@
     layout: default
     title: Europe Code Week
     ----->
+
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+
     <div id="slider" class="slider-parallax full-screen force-full-screen with-header swiper_wrapper page-section clearfix">
 
         <div class="swiper-container swiper-parent">

@@ -56,7 +56,7 @@ body {
 	line-height: 1.5;
 	color: #555;
 	font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 a {
@@ -128,7 +128,13 @@ blockquote,
 address,
 table,
 fieldset,
-form { margin-bottom: 30px; }
+form {
+	margin-bottom: 30px;
+}
+
+ul, ol {
+    padding-left: 1.6em;
+}
 
 small { font-family: 'Lato', sans-serif; }
 
@@ -7466,7 +7472,7 @@ body:not(.device-touch) .button.button-full strong {
 .feature-box.fbox-center.fbox-outline .fbox-icon i { line-height: 88px; }
 
 .feature-box.fbox-center p {
-	font-size: 14px;
+	font-size: 16px;
 	margin-top: 15px;
 }
 
@@ -10713,7 +10719,7 @@ label.error { display: none !important; }
 .fancy-title h6 {
 	position: relative;
 	display: inline-block;
-	background-color: #FFF;
+	background-color: #f9f9f9;
 	padding-right: 15px;
 	margin-bottom: 0;
 }
@@ -12950,4 +12956,8 @@ textarea.border-form-control {
 	resize: none;
 	overflow: hidden;
 	word-wrap: break-word;
+}
+
+#footer {
+	margin-top:0;
 }
