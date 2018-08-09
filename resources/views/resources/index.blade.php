@@ -118,21 +118,21 @@
 
                         @switch($country)
                             @case('czech_republic')
-                            <a href="{{ $country }}" title="List of coding resources from Czech Republic">Czech
+                            <a href="{{ route('resources_by_country',['country'=>$country]) }}" title="List of coding resources from Czech Republic">Czech
                                 Republic</a>
                             @break
 
                             @case('isle_of_man')
-                            <a href="{{ $country }}" title="List of coding resources from Isle of Man">Isle of Man</a>
+                            <a href="{{ route('resources_by_country',['country'=>$country]) }}" title="List of coding resources from Isle of Man">Isle of Man</a>
                             @break
 
                             @case('united_kingdom')
-                            <a href="{{ $country }}" title="List of coding resources from United Kingdom">United
+                            <a href="{{ route('resources_by_country',['country'=>$country]) }}" title="List of coding resources from United Kingdom">United
                                 Kingdom</a>
                             @break
 
                             @default
-                            <a href="{{ $country }}"
+                            <a href="{{ route('resources_by_country',['country'=>$country]) }}"
                                title="List of coding resources from {{ ucfirst($country) }}">{{ ucfirst($country) }}</a>
                         @endswitch
 
