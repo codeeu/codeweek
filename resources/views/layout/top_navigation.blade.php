@@ -41,7 +41,7 @@
     </div>
 </header>
 
-@if (Route::getCurrentRoute()->uri() != 'home')
+@if (Route::getCurrentRoute()->uri() != 'home'  && Route::getCurrentRoute()->uri() != '/')
 
     <div id="page-menu">
 
