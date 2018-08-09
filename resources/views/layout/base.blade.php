@@ -54,7 +54,7 @@
 
     <!-- Title, keywords, description -->
     <meta name="description" content="October 15 - 23, 2016: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding." />
-    <meta property="og:image" content="/img/codeweekEU-logo-600.png" />
+
 
     <title>Europe Code Week</title>
 

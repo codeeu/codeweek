@@ -48,6 +48,15 @@
 
 @push('scripts')
 
+
+    <script type="text/javascript">
+        $("#btn1").click(function(){
+            alert("Text: " + $("#test").text());
+        });
+        $("#btn2").click(function(){
+            alert("HTML: " + $("#test").html());
+        });
+    </script>
     <script type="text/javascript">
         $('#id_year').on('change', function () {
             window.location = window.App.url + '/events?year=' + this.value;
