@@ -41,7 +41,7 @@ class Country extends Model
         $isos = DB::table('events')
             ->select(['country_iso'])
             ->where('status',"=","APPROVED")
-            ->whereYear('end_date', '=', Carbon::now('Europe/Brussels')->year)
+            ->whereYear('end_date', '>=', Carbon::now('Europe/Brussels')->year)
             ->groupBy('country_iso')
             ->get()
             ->pluck('country_iso')
