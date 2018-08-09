@@ -44,13 +44,11 @@ class EventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request, UserFilters $filters)
+    public function index(Request $request)
     {
         $years = [2018, 2017, 2016, 2015, 2014];
 
         $selectedYear = $request->input("year") ? $request->input("year") : Carbon::now()->year;
-
-        $filters->getFilters();
 
         $iso_country_of_user = User::getGeoIPData()->iso_code;
 
@@ -60,7 +58,7 @@ class EventController extends Controller
             'events' => $this->eventsNearMe(),
             'years' => $years,
             'selectedYear' => $selectedYear,
-            'countries' => Country::withEvents(),
+            'countries' => Country::withActualYearEvents(),
             'current_country_iso' => $iso_country_of_user,
             'ambassadors' => $ambassadors
         ]);

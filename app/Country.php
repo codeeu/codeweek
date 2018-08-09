@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Carbon;
 
 class Country extends Model
 {
@@ -29,6 +30,24 @@ class Country extends Model
 
         $countries = Country::findMany($isos)->sortBy('name');
 
+
+        return $countries;
+
+    }
+
+    public static function withActualYearEvents()
+    {
+
+        $isos = DB::table('events')
+            ->select(['country_iso'])
+            ->where('status',"=","APPROVED")
+            ->whereYear('end_date', '=', Carbon::now('Europe/Brussels')->year)
+            ->groupBy('country_iso')
+            ->get()
+            ->pluck('country_iso')
+        ;
+
+        $countries = Country::findMany($isos)->sortBy('name');
 
         return $countries;
 
