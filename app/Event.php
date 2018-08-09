@@ -120,7 +120,7 @@ class Event extends Model
         if ($year != Carbon::now()->year) {
             $events = $events->where('end_date', '<', Carbon::createFromDate($year, 12, 31));
         } else {
-            $events = $events->where('end_date', '>', Carbon::now());
+            $events = $events->where('end_date', '>=', Carbon::now('Europe/Brussels')->year);
         }
 
         return $events->get();
