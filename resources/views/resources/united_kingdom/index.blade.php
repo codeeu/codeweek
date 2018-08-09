@@ -2,7 +2,7 @@
 
 @section('content')
     <section>
-        <div class="container">
+        <div class="container">              @include ('resources.title')
             <h3>General resources</h3>
             <ul>
                 <li><a href="http://www.code-it.co.uk/csplanning.html">Junior Computer Science</a>: A great site with

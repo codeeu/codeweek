@@ -2,7 +2,7 @@
 
 @section('content')
   <section>
-    <div class="container">
+    <div class="container">              @include ('resources.title')
 <h3>Academy of Code</h3>
 
 <p><a href="http://www.academy-of-code.com/zh">Academy of Code</a> provides a free collection of interactive tutorials for HTML, CSS, JavaScript, PHP and MySQL.</p>

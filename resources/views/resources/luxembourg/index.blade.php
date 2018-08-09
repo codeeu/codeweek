@@ -2,7 +2,7 @@
 
 @section('content')
   <section>
-    <div class="container">
+    <div class="container">              @include ('resources.title')
 
 <h2>Et gi léider keng ressourcen op Lëtzebuergesch déi Aktuell sinn</h2>
 

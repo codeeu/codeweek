@@ -2,7 +2,7 @@
 
 @section('content')
 	<section>
-		<div class="container">
+		<div class="container">              @include ('resources.title')
 	<p>Podrobnější informace najdete na <a href="http://codeweek.jsi.cz">české stránce</a>. Podívejte se také na <a href="http://codeweek.eu/resources/">hlavní stránku zdrojů</a> (většinou v angličtině) a na zdroje <a href="http://codeweek.eu/resources/slovakia/">slovenské</a>.</p>
 
 	<h2>Úvod do programování</h2>

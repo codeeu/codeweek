@@ -2,7 +2,7 @@
 
 @section('content')
     <section>
-        <div class="container">
+        <div class="container">              @include ('resources.title')
   <ul>
    	<li>
    	<a href="http://www.magistra-nova.hr/pocetnica.html">prof. dr. sc. Marina Čičin Šain: Početnica programiranja</a>

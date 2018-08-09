@@ -2,7 +2,7 @@
 
 @section('content')
   <section>
-    <div class="container">
+    <div class="container">              @include ('resources.title')
   <h3>Run Marco</h3>
   <p>Ένα Ελληνικό παιχνίδι περιπέτειας που διδάσκει προγραμματισμό σε παιδιά ηλικίας 6-12 ετών.</p>
   <ul>

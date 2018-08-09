@@ -2,7 +2,7 @@
 
 @section('content')
 	<section>
-		<div class="container">
+		<div class="container">              @include ('resources.title')
   <ul>
   
   	<li><a href="http://www.skema.is/">Skema</a>  -  öll námskeið Skema byggja á Skema aðferðafræðinni sem er sérstök kennsluaðferð studd af rannsóknum á sviði sálfræði, kennslufræði og tölvunarfræði. Markmið námskeiðanna er að þátttakendur sjái forrit verða að veruleika auk þess sem þátttakendur munu sjá hvað forritun getur verið skemmtileg og áhugaverð.</li>

@@ -2,7 +2,7 @@
 
 @section('content')
   <section>
-    <div class="container">
+    <div class="container">              @include ('resources.title')
 <ul>
   <li> Σελιδα για την Ευρ. Εβδομάδα Προγραμματισμου στην Κύπρο
     <ul>

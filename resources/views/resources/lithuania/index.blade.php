@@ -2,7 +2,7 @@
 
 @section('content')
     <section>
-        <div class="container">
+        <div class="container">              @include ('resources.title')
   <h2>Knygos</h2>
   <ul>
   	<li><a href="http://csunplugged.org/wp-content/uploads/2015/09/KNYGA-Informatika-be-kompiuterio-2015-09-03.pdf">Informatika be kompiuterio („Computer Science Unplugged“) [PDF]</a></li>

@@ -2,7 +2,7 @@
 
 @section('content')
     <section>
-        <div class="container">
+        <div class="container">              @include ('resources.title')
   <h2>Russian</h2>
   
   <h3>Code Avengers</h3>

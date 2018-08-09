@@ -2,7 +2,7 @@
 
 @section('content')
 	<section>
-		<div class="container">
+		<div class="container">              @include ('resources.title')
   <h3>Programovanie pre deti</h3>
   <ul>
 	<li><a href="https://eliademy.com/catalog/kruzok-programovania.html/">Programovanie v jazyku Scratch</a>: Voľne dostupné podklady pre krúžok programovania v Scratchi.</li>

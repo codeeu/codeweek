@@ -2,7 +2,7 @@
 
 @section('content')
     <section>
-        <div class="container">
+        <div class="container">              @include ('resources.title')
 
   <ul>
    	<li><a href="http://www.codecademy.com/pt">Code Academy</a>: HTML, CSS, Javascript, jQuery, Ruby, Phython, PHP, APIs</li>

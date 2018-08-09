@@ -2,7 +2,7 @@
 
 @section('content')
 	<section>
-		<div class="container">
+		<div class="container">              @include ('resources.title')
 
 	<h3>German</h3>
 	<ul>

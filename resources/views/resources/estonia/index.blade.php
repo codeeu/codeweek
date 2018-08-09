@@ -2,7 +2,7 @@
 
 @section('content')
   <section>
-    <div class="container">
+    <div class="container">              @include ('resources.title')
 
   <ul>
     <li><a href="http://progetiiger.ee/oppematerjalid">Õppematerjalid ProgeTiigri kodulehel</a> - ühele lehele on koondatud materjalid, mis on mõeldud nii lasteaialastele kui ka erinevate kooliastme õpilastele IT-alaste tundide läbiviimiseks.</li>

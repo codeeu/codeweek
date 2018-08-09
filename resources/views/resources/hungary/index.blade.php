@@ -2,7 +2,7 @@
 
 @section('content')
 	<section>
-		<div class="container">
+		<div class="container">              @include ('resources.title')
 
 	<ul>
 		<li><a href="http://kodu.elte.hu/"> Az ELTE Kodu oldala:</a></li>

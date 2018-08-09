@@ -2,7 +2,7 @@
 
 @section('content')
 	<section>
-		<div class="container">
+		<div class="container">              @include ('resources.title')
 <h2>Apple</h2>
 <ul>
 	<li><a href="https://www.apple.com/se/everyone-can-code/">Alla kan koda</a>Tekniken har ett språk. Det kallas kod. Vi på Apple anser att det är otroligt viktigt att kunna koda. När du lär dig koda lär du dig också att lösa problem och samarbeta på kreativa sätt. Och det hjälper dig att bygga appar som förverkligar dina idéer. Vi tycker att alla ska ha möjlighet att skapa något som kan förändra världen. Därför har Apple utformat ett kursprogram som ger alla möjligheten att lära sig koda, skriva kod och lära ut kod.</li>

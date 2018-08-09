@@ -2,7 +2,7 @@
 
 @section('content')
 	<section>
-		<div class="container">
+		<div class="container">              @include ('resources.title')
   <ul>
     <li><a href="https://www.apple.com/dk/everyone-can-code/">Alle kan kode</a> Teknologien har sit helt eget sprog: kode. Og hos Apple mener vi, at kodning er en helt essentiel færdighed. Lærer du at kode, lærer du samtidig at løse problemer og samarbejde med andre på kreative måder. Og kodning hjælper dig også til at kunne lave apps, der gør dine idéer til virkelighed. Vi synes, at alle skal have mulighed for at skabe noget, der kan ændre verden. Derfor har Apple udviklet et helt særligt forløb, hvor alle kan lære at skrive, og undervise i, kode.</li>
     <li><a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=908519492&mt=8&ls=1">Swift Playgrounds</a> er en revolutionerende iPad-app, hvor du kan lære Swift på en sjov og interaktiv måde.</li>

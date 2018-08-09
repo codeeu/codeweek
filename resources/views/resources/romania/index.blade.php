@@ -2,7 +2,7 @@
 
 @section('content')
     <section>
-        <div class="container">
+        <div class="container">              @include ('resources.title')
   <h2>Resurse în limba română</h2>
   <ul>
    	<li><a href="http://www.youtube.com/playlist?list=PLB9ED7F9A697350EB">Tutoriale video</a> pentru cei ce vor să înveţe Scratch realizate de Mihai Agape. Având o durată între 2 şi 4 minute, aceste tutoriale sunt recomandate pentru învăţarea elementelor de bază.</li>
