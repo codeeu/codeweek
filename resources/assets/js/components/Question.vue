@@ -15,12 +15,16 @@
         </div>
 
         <div class="leading-loose">
-            <h3 v-text="question.question"
+            <h3 v-text="question.title1"
+                class="font-bold text-2xl mb-3 text-black leading-none cursor-pointer"
+                @click="isOpen = ! isOpen"
+            ></h3>
+            <h3 v-text="question.title2"
                 class="font-bold text-2xl mb-3 text-black leading-none cursor-pointer"
                 @click="isOpen = ! isOpen"
             ></h3>
 
-            <div v-html="question.answer" v-show="isOpen"></div>
+            <div v-html="question.content[0]" v-show="isOpen"></div>
         </div>
     </div>
 </template>
