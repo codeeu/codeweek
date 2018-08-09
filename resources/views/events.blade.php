@@ -18,14 +18,16 @@
 
                             @foreach($countries as $country)
 
-                                <div class="country-link" id="{{$country->iso}}" data-name="{{$country->name}}">
+                                <a href="search/?country_iso={{$country->iso}}">
+                                    <div class="country-link" id="{{$country->iso}}" data-name="{{$country->name}}">
 
-                                    <img src="https://s3-eu-west-1.amazonaws.com/codeweek-s3/flags/{{strtolower($country->iso)}}.png" alt="{{$country->name}}">
+                                        <img src="https://s3-eu-west-1.amazonaws.com/codeweek-s3/flags/{{strtolower($country->iso)}}.png" alt="{{$country->name}}">
 
-                                    <div class="country-name">
-                                        {{$country->name}}
+                                        <div class="country-name">
+                                            {{$country->name}}
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
 
                             @endforeach
 
