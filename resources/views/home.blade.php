@@ -75,49 +75,62 @@
     <!-- Content -->
     <section id="content">
 
-        <div class="content-wrap">
+        <div>
 
-            <section id="section-intro" class="page-section">
+
+            <section id="section-intro" class="page-section section section-intro">
+
                 <div class="container clearfix">
 
-                    <div class="heading-block bottommargin-lg center" style="text-align: center;">
-                        <h2>CodeWeek</h2>
-                        <span style="max-width:700px;margin-left: auto;margin-right: auto;">Europe Code Week is a grassroots initiative which aims to bring coding and digital literacy to everybody in a fun and engaging way.<br>
-                            <strong>6-21 October 2018</strong>
-                        </span>
+
+                    <div class="col_one_third">
+
+                        <div class="heading-block fancy-title nobottomborder title-bottom-border">
+                            <h4>What?</h4>
+                        </div>
+
+                        <p>
+                            EU Code Week is a grassroots initiative which aims to bring coding and digital literacy to everybody in a fun and engaging way.
+                        </p>
+
+
+
                     </div>
+
+                    <div class="col_one_third">
+
+                        <div class="heading-block fancy-title nobottomborder title-bottom-border">
+                            <h4>When?</h4>
+                        </div>
+
+                        <p>
+                            6-21 October 2018
+                        </p>
+
+
+                    </div>
+
+                    <div class="col_one_third col_last">
+
+                        <div class="heading-block fancy-title nobottomborder title-bottom-border">
+                            <h4>Why?</h4>
+                        </div>
+
+                        <p>
+                            Learning to code helps us to make sense of the rapidly changing world around us, expand our understanding of how technology works, and develop skills and capabilities in order to explore new ideas and innovate.
+                        </p>
+
+
+
+                    </div>
+
+                    <div class="clear"></div>
 
                 </div>
+
             </section>
 
-            <section id="section-why" class="page-section topmargin">
-                <div class="container clearfix">
 
-                    <div class="heading-block center">
-                        <h2>Why learn to code?</h2>
-                        <span></span>
-                    </div>
-
-                    <div class="col_half  bottommargin">
-                        <img data-animate="fadeInLeftBig" src="img/coding-clubs-finland.jpg"
-                             alt="Coding clubs in Finland">
-                    </div>
-
-                    <div class="col_half bottommargin-lg col_last">
-
-                        <p>Today we live in a world that has been affected by rapid advances in technology. The way we
-                            work, communicate, shop and think has changed dramatically. In order to cope with these
-                            rapid changes and to make sense of the world around us, we need to not only develop our
-                            understanding of how technology works, but also develop skills and capabilities, that will
-                            help us to adapt to living in this new era.</p>
-                        <p>Learning to code helps us to make sense of how things work, explore ideas and make things,
-                            for both work and play. What’s more it helps us to unleash our creativity and work
-                            collaboratively with wonderful people both near us and all over the world.</p>
-
-                    </div>
-
-                </div>
-            </section>
 
             <section id="section-join" class="page-section section">
 
@@ -397,9 +410,25 @@
 
 @push('scripts')
     <script>
-        window.$(function($){
+        window.$(function ($) {
             var newDate = new Date(2018, 9, 6);
             $('#countdown-ex1').countdown({until: newDate});
         });
     </script>
 @endpush
+
+
+@section("extra-css")
+    <style>
+
+        .section-intro {
+
+            background: transparent;
+
+        }
+
+
+    </style>
+
+@endsection
+
