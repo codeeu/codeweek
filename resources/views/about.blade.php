@@ -149,11 +149,58 @@
                         </div>
                     </div>
 
+                    <h2>In the last edition</h2>
+
+                    <div class="container clearfix">
+
+                        <p>
+                            <span>Europe Code Week 2017 was a huge success.
+                            <br>Let's make this year an even bigger one.</span>
+                        </p>
+
+                        <div class="container clearfix">
+                            <div class="col_one_fourth nobottommargin center-content" data-animate="bounceIn">
+                                <i class="i-plain i-xlarge divcenter nobottommargin icon-line-flag"></i>
+                                <div class="counter counter-lined"><span data-from="1" data-to="52"
+                                                                         data-refresh-interval="5" data-speed="2000"></span>
+                                </div>
+                                <h5>Countries</h5>
+                            </div>
+
+                            <div class="col_one_fourth nobottommargin center-content" data-animate="bounceIn" data-delay="200">
+                                <i class="i-plain i-xlarge divcenter nobottommargin icon-location"></i>
+                                <div class="counter counter-lined"><span data-from="692" data-to="788"
+                                                                         data-refresh-interval="10"
+                                                                         data-speed="2500"></span></div>
+                                <h5>CodeWeek4All awardees</h5>
+                            </div>
+
+                            <div class="col_one_fourth nobottommargin center-content" data-animate="bounceIn" data-delay="400">
+                                <i class="i-plain i-xlarge divcenter nobottommargin icon-calendar2"></i>
+                                <div class="counter counter-lined"><span data-from="23043" data-to="25089"
+                                                                         data-refresh-interval="100"
+                                                                         data-speed="2500"></span></div>
+                                <h5>Events</h5>
+                            </div>
+
+                            <div class="col_one_fourth nobottommargin col_last center-content" data-animate="bounceIn"
+                                 data-delay="600">
+                                <i class="i-plain i-xlarge divcenter nobottommargin icon-group"></i>
+                                <div class="counter counter-lined"><span data-from="968537" data-to="1099394"
+                                                                         data-refresh-interval="100"
+                                                                         data-speed="3000"></span>+
+                                </div>
+                                <h5>Participants</h5>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
             </div>
         </div>
     </section>
+
 
 @endsection
 
