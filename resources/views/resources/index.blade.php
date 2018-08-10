@@ -24,12 +24,14 @@
 
             <p><a href="http://events.codeweek.eu/guide/">How do I organise a Code Week event?</a></p>
 
-            <p>
-                <button onclick="window.location.href='http://events.codeweek.eu/add/'">Don't forget to pin your event
-                    on the
-                    map!
-                </button>
-            </p>
+            <div class="flex align-center justify-center">
+                <div class="btn btn-primary btn-directional btn-lg submit-button-wrapper">
+                    <button onclick="window.location.href='/add/'" style="padding: 15px;">Don't forget to pin your event on the map!</button>
+                </div>
+            </div>
+
+            <br/>
+
             <h2>Presentations and toolkits</h2>
             <ul>
                 <li>EU Code Week 2018 Leaflet.
