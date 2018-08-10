@@ -41,7 +41,7 @@ class EventFilters extends Filters
     {
 
         if ($hasPast == "no") {
-            return $this->builder->whereDate('end_date', '>', Carbon::today()->toDateString());
+            return $this->builder->whereYear('end_date', '>=', Carbon::now('Europe/Brussels')->year);
         }
     }
 
