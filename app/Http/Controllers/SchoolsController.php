@@ -20,7 +20,8 @@ class SchoolsController extends Controller
                 "button" => [
                  "label"=>"Want to get started right away? Sign up here!",
                  "link"=>"/add"
-                ]
+                ],
+                "map" => false
             ],
             [
                 "title1" => "Ready to get involved?",
@@ -48,7 +49,8 @@ class SchoolsController extends Controller
                 "button" => [
                     "label"=>"Access the training modules",
                     "link"=>"/add"
-                ]
+                ],
+                "map" => false
 
             ],
             [
@@ -60,7 +62,8 @@ class SchoolsController extends Controller
                 "button" => [
                     "label"=>"Learn more about the Code Week 4 All challenge",
                     "link"=>"/add"
-                ]
+                ],
+                "map" => false
 
             ],
 

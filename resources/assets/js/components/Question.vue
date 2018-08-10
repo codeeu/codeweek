@@ -31,7 +31,12 @@
                         {{ content }}
                     </p>
 
+                    <div v-if="question.map" class="flex justify-center text-center m-32">
+                        <iframe class="w-4/5 map " src="/map"></iframe>
+                    </div>
+
                     <div class="flex align-center justify-center">
+
                         <a v-bind:href="question.button.link" class="btn btn-primary btn-directional btn-lg submit-button-wrapper">
                             <input type="submit" v-bind:value="question.button.label">
                         </a>
