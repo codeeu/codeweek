@@ -12,24 +12,14 @@ class ScoreboardController extends Controller
     public function index()
     {
 
-
-/*        $events = Event::
-            groupBy('country')
-            ->whereDate('end_date', '>', Carbon::now('Europe/Stockholm'))
-            ->orderBy('country_count','desc')
-            ->get();
-*/
-//        dd($events);
-
         $events = DB::table('events')
             ->join('countries', 'events.country_iso', '=', 'countries.iso')
             ->select('countries.iso', 'countries.name as country_name',DB::raw('count(*) as total'))
-            ->whereDate('end_date', '>', Carbon::now('Europe/Brussels'))
+            ->where('status',"=","APPROVED")
+            ->whereYear('end_date', '>=', Carbon::now('Europe/Brussels')->year)
             ->groupBy('countries.iso')
             ->orderBy('total','desc')
             ->get();
-
-
 
         return view('scoreboard', ['events'=>$events]);
     }

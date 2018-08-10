@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 
+use App\Country;
 use App\Event;
+use App\Filters\UserFilters;
 use App\Helpers\EventHelper;
 use App\Http\Requests\EventRequest;
 use App\Queries\EventsQuery;
@@ -48,11 +50,17 @@ class EventController extends Controller
 
         $selectedYear = $request->input("year") ? $request->input("year") : Carbon::now()->year;
 
+        $iso_country_of_user = User::getGeoIPData()->iso_code;
+
+        $ambassadors = User::role('ambassador')->where("country_iso","=",$iso_country_of_user)->get();
 
         return view('events')->with([
             'events' => $this->eventsNearMe(),
             'years' => $years,
-            'selectedYear' => $selectedYear
+            'selectedYear' => $selectedYear,
+            'countries' => Country::withActualYearEvents(),
+            'current_country_iso' => $iso_country_of_user,
+            'ambassadors' => $ambassadors
         ]);
     }
 

@@ -23,35 +23,9 @@
 
                 </div>
 
-
-                <h2><span>Why should you bring coding to your classroom?</span> How can coding benefit your students? What is in it for you as a teacher ?</h2>
-
-
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod eleifend tortor, non vestibulum enim placerat ut. Morbi sed tincidunt eros, ac aliquet arcu. Quisque ut magna quis velit finibus cursus blandit sed ipsum. Suspendisse tincidunt, justo eget sodales euismod, eros elit hendrerit ipsum, et sagittis libero felis et sem. Nulla et urna facilisis, condimentum magna non, semper dolor. Nam scelerisque tempus tincidunt. In non dui imperdiet, tempus risus molestie, elementum dui. Aliquam at enim dapibus, mollis sapien in, interdum tellus. Sed maximus nibh at ultrices gravida. Etiam gravida gravida risus. Vivamus tempor iaculis bibendum. Mauris consequat eu mi at suscipit. Maecenas fringilla mi sit amet ante convallis, vitae efficitur nisi lacinia.</p>
-
-                <p>Phasellus quis suscipit sapien. Phasellus sed enim ut neque pellentesque congue at ut tortor. Nulla luctus sapien ut convallis semper. Donec sagittis mauris a elit eleifend dapibus. Pellentesque id aliquet tortor, at faucibus enim. Curabitur blandit libero laoreet risus posuere feugiat. Vivamus tincidunt interdum rutrum. Nunc placerat fringilla orci eget elementum. Morbi placerat ipsum a tortor malesuada, sed suscipit augue fringilla. Pellentesque et tincidunt risus, id placerat urna. In neque nulla, maximus eu neque non, semper malesuada tellus.</p>
-
-
-
-                <h2><span>Ready to get involved ?</span></h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod eleifend tortor, non vestibulum enim placerat ut. Morbi sed tincidunt eros, ac aliquet arcu. Quisque ut magna quis velit finibus cursus blandit sed ipsum. Suspendisse tincidunt, justo eget sodales euismod, eros elit hendrerit ipsum, et sagittis libero felis et sem. Nulla et urna facilisis, condimentum magna non, semper dolor. Nam scelerisque tempus tincidunt. In non dui imperdiet, tempus risus molestie, elementum dui. Aliquam at enim dapibus, mollis sapien in, interdum tellus. Sed maximus nibh at ultrices gravida. Etiam gravida gravida risus. Vivamus tempor iaculis bibendum. Mauris consequat eu mi at suscipit. Maecenas fringilla mi sit amet ante convallis, vitae efficitur nisi lacinia.</p>
-
-
-                <h2><span>New to Coding? No worries</span></h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod eleifend tortor, non vestibulum enim placerat ut. Morbi sed tincidunt eros, ac aliquet arcu. Quisque ut magna quis velit finibus cursus blandit sed ipsum. Suspendisse tincidunt, justo eget sodales euismod, eros elit hendrerit ipsum, et sagittis libero felis et sem. Nulla et urna facilisis, condimentum magna non, semper dolor. Nam scelerisque tempus tincidunt. In non dui imperdiet, tempus risus molestie, elementum dui. Aliquam at enim dapibus, mollis sapien in, interdum tellus. Sed maximus nibh at ultrices gravida. Etiam gravida gravida risus. Vivamus tempor iaculis bibendum. Mauris consequat eu mi at suscipit. Maecenas fringilla mi sit amet ante convallis, vitae efficitur nisi lacinia.</p>
-
-
-
-
-                <h2><span>Looking for an extra challenge ?</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod eleifend tortor, non vestibulum enim placerat ut. Morbi sed tincidunt eros, ac aliquet arcu. Quisque ut magna quis velit finibus cursus blandit sed ipsum. Suspendisse tincidunt, justo eget sodales euismod, eros elit hendrerit ipsum, et sagittis libero felis et sem. Nulla et urna facilisis, condimentum magna non, semper dolor. Nam scelerisque tempus tincidunt. In non dui imperdiet, tempus risus molestie, elementum dui. Aliquam at enim dapibus, mollis sapien in, interdum tellus. Sed maximus nibh at ultrices gravida. Etiam gravida gravida risus. Vivamus tempor iaculis bibendum. Mauris consequat eu mi at suscipit. Maecenas fringilla mi sit amet ante convallis, vitae efficitur nisi lacinia.</p>
-
-
-
-
+                @foreach($questions as $question)
+                    <question :question="{{json_encode($question)}}"></question>
+                @endforeach
 
 
             </div>
@@ -59,5 +33,73 @@
     </section>
 
 
+
+@endsection
+
+@section("extra-css")
+    <style>
+
+        .submit-button-wrapper.btn-lg input {
+
+            padding: 15px 15px 15px 30px;
+            background: transparent;
+            border: none;
+            text-transform: none;
+            letter-spacing: 2px;
+        }
+
+        .btn-primary, .btn-primary:hover {
+            background: #f58732ed;
+        }
+
+        .tab{
+            position: relative;
+            margin-bottom: 1px;
+            width: 100%;
+            color: #232323;
+            overflow: hidden;
+        }
+
+        .answer {
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        .subtitle{
+            color: #2a6496;
+            font-size: 1.8rem;
+            padding-bottom: 2rem;
+            padding-top: 1rem;
+        }
+
+        .question{
+            position: relative;
+            display: block;
+            width: 100%;
+            padding: 0 0 0 1em;
+            background: #2980b9;
+            font-weight: bold;
+            line-height: 3;
+            cursor: pointer;
+            color: #fff;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .chevron{
+            display: block;
+            margin-top: -23px;
+
+            padding: 10px;
+        }
+
+        .map{
+            height:400px;
+            margin-bottom:1rem;
+        }
+
+
+
+    </style>
 
 @endsection

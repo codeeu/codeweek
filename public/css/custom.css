@@ -119,3 +119,7 @@ form.inline {
     border: none;
     display: inline;
 }
+
+html{
+    font-size:14px;
+}

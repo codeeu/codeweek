@@ -21,6 +21,7 @@ import dateTime from './components/DateTime.vue';
 import inputTags from './components/InputTags.vue';
 import moderateEvent from './components/ModerateEvent.vue';
 import reportEvent from './components/ReportEvent.vue';
+import question from './components/Question.vue';
 
 
 
@@ -44,6 +45,7 @@ const app = new Vue({
         dateTime,
         inputTags,
         moderateEvent,
-        reportEvent
+        reportEvent,
+        question
     }
 });

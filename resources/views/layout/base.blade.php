@@ -7,7 +7,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 
 
     <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet" />
@@ -16,7 +18,12 @@
 
 
     <!-- Theme stylesheets -->
-    <link rel="stylesheet" href="{{asset('css/ext/style.css')}}" type="text/css" />
+    @if (Route::getCurrentRoute()->uri() != 'home' && Route::getCurrentRoute()->uri() != '/')
+        <link rel="stylesheet" href="{{asset('css/ext/style.css')}}" type="text/css" />
+        <link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css" />
+    @else
+        <link rel="stylesheet" href="{{asset('css/ext/home.css')}}" type="text/css" />
+    @endif
     <link rel="stylesheet" href="{{asset('css/ext/dark.css')}}" type="text/css" />
     <link rel="stylesheet" href="{{asset('css/font-icons.css')}}" type="text/css" />
 
@@ -32,15 +39,6 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="{{asset('css/custom.css') }}" media="screen" rel="stylesheet" />
-
-
-
-    <link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css" />
-
-
-
-    <!-- Custom style -->
-    <link href="{{asset('css/map.css')}}" rel="stylesheet" type="text/css">
 
     @yield('extra-css')
 
@@ -58,7 +56,7 @@
 
     <!-- Title, keywords, description -->
     <meta name="description" content="October 15 - 23, 2016: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding." />
-    <meta property="og:image" content="/img/codeweekEU-logo-600.png" />
+
 
     <title>Europe Code Week</title>
 
