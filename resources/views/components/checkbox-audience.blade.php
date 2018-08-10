@@ -5,7 +5,7 @@
                                                               {{--onchange="this.form.submit()"--}}
                                               {{ $selection?in_array($audience->id,$selection)?'checked':'':'' }}
                                               value="{{$audience->id}}"
-
+                                            onchange="this.form.submit()"
                 >
 
                 {{__('event.audience.'.$audience->name)}}
