@@ -1,31 +1,46 @@
 <template>
-    <div class="mb-8 flex">
-        <div class="mr-4">
-            <button class="border border-solid border-grey-dark rounded-full w-6 h-6 flex items-center justify-center text-xs text-grey-dark font-bold leading-none cursor-pointer"
-                    @click="isOpen = ! isOpen"
-            >
-                <svg v-if="isOpen" xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" class="fill-current">
-                    <path d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/>
-                </svg>
 
-                <svg v-else xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" class="fill-current">
-                    <path d="M12 9H7v5H5V9H0V7h5V2h2v5h5z"/>
-                </svg>
-            </button>
-        </div>
 
-        <div class="leading-loose">
-            <h3 v-text="question.title1"
-                class="font-bold text-2xl mb-3 text-black leading-none cursor-pointer"
-                @click="isOpen = ! isOpen"
-            ></h3>
-            <h3 v-text="question.title2"
-                class="font-bold text-2xl mb-3 text-black leading-none cursor-pointer"
-                @click="isOpen = ! isOpen"
-            ></h3>
+    <div class="mb-0 flex">
 
-            <div v-html="question.content[0]" v-show="isOpen"></div>
-        </div>
+
+        <!--<div class="mr-4">-->
+            <!--<button class="border border-solid border-grey-dark rounded-full w-6 h-6 flex items-center justify-center text-xs text-grey-dark font-bold leading-none cursor-pointer"-->
+                    <!--@click="isOpen = ! isOpen"-->
+            <!--&gt;-->
+                <!--<svg v-if="isOpen" xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16"-->
+                     <!--class="fill-current">-->
+                    <!--<path d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/>-->
+                <!--</svg>-->
+
+                <!--<svg v-else xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16"-->
+                     <!--class="fill-current">-->
+                    <!--<path d="M12 9H7v5H5V9H0V7h5V2h2v5h5z"/>-->
+                <!--</svg>-->
+            <!--</button>-->
+        <!--</div>-->
+
+
+
+            <div class="tab">
+
+                <div class="question" @click="isOpen = ! isOpen">{{question.title1}}<i class="fa fa-1x chevron" v-bind:class="chevron"></i></div>
+                <div class="answer" v-show="isOpen">
+                    <div class="subtitle">{{question.title2}}</div>
+                    <p v-for="content in question.content">
+                        {{ content }}
+                    </p>
+
+                    <div class="flex align-center justify-center">
+                        <a v-bind:href="question.button.link" class="btn btn-primary btn-directional btn-lg submit-button-wrapper">
+                            <input type="submit" v-bind:value="question.button.label">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
     </div>
 </template>
 
@@ -36,6 +51,14 @@
             return {
                 isOpen: false
             };
+        },
+        computed:{
+            chevron: function () {
+                return {
+                    'fa-chevron-up': this.isOpen,
+                    'fa-chevron-down': !this.isOpen
+                }
+            }
         }
     };
 </script>
