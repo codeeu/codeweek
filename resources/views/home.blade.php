@@ -45,14 +45,8 @@
 
                 <nav class="one-page-menu">
                     <ul>
-                        <li><a href="#section-why" data-href="#section-why">
-                                <div>Why coding?</div>
-                            </a></li>
                         <li><a href="#section-join" data-href="#section-join">
                                 <div>Get involved</div>
-                            </a></li>
-                        <li><a href="#section-past" data-href="#section-past">
-                                <div>Code Week 2017</div>
                             </a></li>
                         <li><a href="#section-partners" data-href="#section-partners">
                                 <div>Partners</div>
@@ -124,12 +118,15 @@
 
                     </div>
 
-                    <div class="clear"></div>
-
                 </div>
 
             </section>
 
+            <section id="section-banner-teacher" class="section section-banner">
+                <div class="container clearfix">
+                    <a href="/schools"><img src="img/banner_teacher.png"/></a>
+                </div>
+            </section>
 
 
             <section id="section-join" class="page-section section">
@@ -145,28 +142,28 @@
                     <div class="col_one_third">
 
                         <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                            <h4>Organize an event</h4>
+                            <h4>Organize an activity</h4>
                         </div>
 
                         <p>
-                            Become a part of Code Week by organizing an event. Make a difference by inspiring and
+                            Become a part of Code Week by organizing an activity. Make a difference by inspiring and
                             motivating others.
                         </p>
 
                         <p>
-                            Anyone is welcome to organize an event. Just pick a topic and a target audience and <a
-                                    href="http://events.codeweek.eu/add/">add your event</a> to <a
-                                    href="http://events.codeweek.eu/">the map</a>. You can even use our <a
-                                    href="http://events.codeweek.eu/guide/">toolkit for organizers</a> to get started.
+                            Anyone is welcome to organize an activity. Just pick a topic and a target audience and <a
+                                    href="/add">add your activity</a> to <a
+                                    href="/events">the map</a>. You can even use our <a
+                                    href="/guide">toolkit for organizers</a> to get started.
                         </p>
 
                         <p>
                             If you need help or have a question you can get in touch with <a
-                                    href="http://events.codeweek.eu/ambassadors/">EU Code Week Ambassadors</a> in your
+                                    href="/ambassadors">EU Code Week Ambassadors</a> in your
                             country.
                         </p>
 
-                        <a href="http://events.codeweek.eu" class="button button-border button-rounded button-large">Become
+                        <a href="/events" class="button button-border button-rounded button-large">Become
                             an organizer</a>
 
                     </div>
@@ -174,12 +171,12 @@
                     <div class="col_one_third">
 
                         <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                            <h4>Join an event</h4>
+                            <h4>Join an activity</h4>
                         </div>
 
                         <p>
                             Coding is for everyone. Try something new and discover the fun of coding by joining <a
-                                    href="http://events.codeweek.eu/">an event near you</a>.
+                                    href="/events">an activity near you</a>.
                         </p>
 
                         <p>
@@ -192,8 +189,8 @@
                             coding online right now.
                         </p>
 
-                        <a href="http://events.codeweek.eu" class="button button-border button-rounded button-large">Browse
-                            events</a>
+                        <a href="/events" class="button button-border button-rounded button-large">Browse
+                            activity</a>
 
                     </div>
 
@@ -264,56 +261,6 @@
                                     -->
                 </div>
 
-            </section>
-
-            <section id="section-past" class="page-section topmargin-lg">
-                <div class="container clearfix">
-
-                    <div class="heading-block bottommargin-lg center">
-                        <h2>In the last edition</h2>
-                        <span>
-            Europe Code Week 2017 was a huge success.
-            <br>Let's make this year an even bigger one.
-          </span>
-                    </div>
-
-                    <div class="container clearfix">
-                        <div class="col_one_fourth nobottommargin center" data-animate="bounceIn">
-                            <i class="i-plain i-xlarge divcenter nobottommargin icon-line-flag"></i>
-                            <div class="counter counter-lined"><span data-from="1" data-to="52"
-                                                                     data-refresh-interval="5" data-speed="2000"></span>
-                            </div>
-                            <h5>Countries</h5>
-                        </div>
-
-                        <div class="col_one_fourth nobottommargin center" data-animate="bounceIn" data-delay="200">
-                            <i class="i-plain i-xlarge divcenter nobottommargin icon-location"></i>
-                            <div class="counter counter-lined"><span data-from="692" data-to="788"
-                                                                     data-refresh-interval="10"
-                                                                     data-speed="2500"></span></div>
-                            <h5>CodeWeek4All awardees</h5>
-                        </div>
-
-                        <div class="col_one_fourth nobottommargin center" data-animate="bounceIn" data-delay="400">
-                            <i class="i-plain i-xlarge divcenter nobottommargin icon-calendar2"></i>
-                            <div class="counter counter-lined"><span data-from="23043" data-to="25089"
-                                                                     data-refresh-interval="100"
-                                                                     data-speed="2500"></span></div>
-                            <h5>Events</h5>
-                        </div>
-
-                        <div class="col_one_fourth nobottommargin center col_last" data-animate="bounceIn"
-                             data-delay="600">
-                            <i class="i-plain i-xlarge divcenter nobottommargin icon-group"></i>
-                            <div class="counter counter-lined"><span data-from="968537" data-to="1099394"
-                                                                     data-refresh-interval="100"
-                                                                     data-speed="3000"></span>+
-                            </div>
-                            <h5>Participants</h5>
-                        </div>
-                    </div>
-
-                </div>
             </section>
 
             <section id="section-partners" class="page-section topmargin-lg">
@@ -394,12 +341,12 @@
 
             </section>
 
-            <a href="http://events.codeweek.eu" class="button button-blue button-full center tright footer-stick">
+            {{--<a href="/events" class="button button-blue button-full center tright footer-stick">
                 <div class="container clearfix">
                     Bring your ideas to life with <strong>#coding</strong> <i class="icon-caret-right"
                                                                               style="top:4px;"></i>
                 </div>
-            </a>
+            </a>--}}
         </div>
 
     </section>
@@ -421,7 +368,7 @@
 @section("extra-css")
     <style>
 
-        .section-intro {
+        .section-intro, .section-banner {
 
             background: transparent;
 
