@@ -25,7 +25,7 @@
 
                             <div class="search-checkbox">
                                 <hr>
-                                <label for="id_past_0">Include past events</label>
+                                <label for="id_past_0">Include last years events</label>
                                 <ul id="id_past">
                                     <li><label for="id_past_0"><input class="search-form-element" id="id_past_0"
                                                                       name="past" type="radio" value="yes" onchange="this.form.submit()"
