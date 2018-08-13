@@ -51,6 +51,7 @@ class LoadAll extends Command
         exec("php artisan load:ambassadors");
         exec("php artisan load:admins");
         exec("php artisan load:orphans");
+        exec("php artisan merge:users");
         exec("php artisan load:cleanup");
         Log::debug('End Importing All');
 
