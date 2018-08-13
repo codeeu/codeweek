@@ -27,6 +27,7 @@ class CreateUsersTable extends Migration
             $table->string('avatar_path')->nullable();
             $table->string('provider')->nullable();
             $table->rememberToken();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

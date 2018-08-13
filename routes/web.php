@@ -38,11 +38,7 @@ Route::get('setlocale', function (Request $request) {
 })->name("setlocale");
 
 
-Route::get('/profile', function () {
-    $data = ['profileUser' => Auth()->user()];
 
-    return view('profile', $data);
-})->name('profile')->middleware('auth');
 
 
 Route::get('/', 'HomeController@index')->name('index');
@@ -102,6 +98,12 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
 
     Route::post('/api/event/approve/{event}', 'EventController@approve')->name('event.approve');
     Route::post('/api/event/reject/{event}', 'EventController@reject')->name('event.reject');
+
+    Route::get('/profile', function () {
+        $data = ['profileUser' => Auth()->user()];
+
+        return view('profile', $data);
+    })->name('profile')->middleware('auth');
 });
 
 
