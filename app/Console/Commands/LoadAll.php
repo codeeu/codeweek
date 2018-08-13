@@ -50,6 +50,7 @@ class LoadAll extends Command
         exec("php artisan load:events:tags");
         exec("php artisan load:ambassadors");
         exec("php artisan load:admins");
+        exec("php artisan load:orphans");
         exec("php artisan load:cleanup");
         Log::debug('End Importing All');
 
