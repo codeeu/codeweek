@@ -74,7 +74,6 @@ class LoginController extends Controller
      */
     public function loginUser($provider, $socialUser)
     {
-        //dd($socialUser->getNickname());
         $user = \App\User::where(['email' => $socialUser->getEmail()])->first();
 
         if ($user == null) {
@@ -83,7 +82,7 @@ class LoginController extends Controller
                 [
                     'email' => $socialUser->getEmail(),
                     //'avatar' => $socialUser->getAvatar(),
-                    'firstname' => ($socialUser->getName()) ? $socialUser->getName() : $socialUser->getNickname(), 
+                    'firstname' => $socialUser->getName(),
                     'lastname' => '',
                     'provider' => $provider,
                 ]);
