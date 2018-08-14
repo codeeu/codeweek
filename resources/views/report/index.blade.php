@@ -26,7 +26,16 @@
                         @component('components.report.form-field',['field_name'=>'participants_count','type'=>'number','required'=>true,'help'=>'number_required'])@endcomponent
                         @component('components.report.form-field',['field_name'=>'average_participant_age','type'=>'number','required'=>true,'help'=>'number_required'])@endcomponent
                         @component('components.report.form-field',['field_name'=>'percentage_of_females','type'=>'number','required'=>true,'help'=>'number_required'])@endcomponent
-                        @component('components.report.form-field',['field_name'=>'codeweek_for_all_participation_code','type'=>'text','required'=>false,'help'=>'codeweek_for_all_participation_code.help'])@endcomponent
+
+                        <div class="mb-8">
+                            <div class="block text-grey-darkest text-3xl font-normal mb-2 font-bold" for="codeweek_for_all_participation_code">
+                                @lang('report.codeweek_for_all_participation_code.label')
+                            </div>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-dark mb-2 fborder-red border-2"
+                                   id="codeweek_for_all_participation_code" type="text" name="codeweek_for_all_participation_code" value="{{$event->codeweek_for_all_participation_code}}" readonly>
+                                @lang('report.codeweek_for_all_participation_code.help')
+                        </div>
+
                         @component('components.report.form-field',['field_name'=>'name_for_certificate','type'=>'text','required'=>true,'help'=>'name_for_certificate.help'])@endcomponent
 
 

@@ -68,6 +68,9 @@ return [
         'Artificial intelligence' => 'Artificial intelligence',
         'Motivation and awareness raising' => 'Motivation and awareness raising',
         'Promoting diversity' => 'Promoting diversity'
+    ],
+    'codeweek_for_all_participation_code' => [
+        'title' => 'Codeweek for all participation code'
     ]
 
 ];

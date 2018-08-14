@@ -13,6 +13,8 @@
             If you have any questions, get in touch with one of our
             <a href="{{route('ambassadors')}}">national ambassadors</a> or send us an <a
                     href="mailto:info@codeweek.eu?subject=Code Week events">email</a>.</p>
+
+        <p>You can share your Codeweek for all code with other people: <strong>{{$event->codeweek_for_all_participation_code}}</strong> </p>
     </div>
 
 </section>
