@@ -28,6 +28,9 @@ class EventsQuery
         $request['latitude'] = explode(",", $request['geoposition'])[0];
         $request['longitude'] = explode(",", $request['geoposition'])[1];
 
+        if (empty($request['codeweek_for_all_participation_code'])){
+            $request['codeweek_for_all_participation_code'] = 'cw' . Carbon::now()->format('y') . '-' . str_random(5);
+        }
 
         $event = Event::create($request->toArray());
 
@@ -42,7 +45,6 @@ class EventsQuery
                 $event->tags()->save($tag);
             }
         }
-
 
 
         foreach ($request['theme'] as $theme) {
