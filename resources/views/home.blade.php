@@ -19,7 +19,7 @@
 
 
                             <h2 data-caption-animate="fadeInUp">CODEWEEK.EU</h2>
-                            <p data-caption-animate="fadeInUp" data-caption-delay="200">6th &mdash; 21st October 2018 <a
+                            <p data-caption-animate="fadeInUp" data-caption-delay="200">@lang('home.when_content') <a
                                         href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a></p>
                         </div>
                     </div>
@@ -46,13 +46,13 @@
                 <nav class="one-page-menu">
                     <ul>
                         <li><a href="#section-join" data-href="#section-join">
-                                <div>Get involved</div>
+                                <div>@lang('home.get involved')</div>
                             </a></li>
                         <li><a href="#section-partners" data-href="#section-partners">
-                                <div>Partners</div>
+                                <div>@lang('home.partners')</div>
                             </a></li>
                         <li><a href="#section-contact" data-href="#section-contact">
-                                <div>Contact</div>
+                                <div>@lang('home.contact')</div>
                             </a></li>
                     </ul>
                 </nav>
@@ -80,11 +80,11 @@
                     <div class="col_one_third">
 
                         <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                            <h4>What?</h4>
+                            <h4>@lang('home.what')?</h4>
                         </div>
 
                         <p>
-                            EU Code Week is a grassroots initiative which aims to bring coding and digital literacy to everybody in a fun and engaging way.
+                            @lang('home.what_content')
                         </p>
 
 
@@ -94,11 +94,13 @@
                     <div class="col_one_third">
 
                         <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                            <h4>When?</h4>
+                            <h4>@lang('home.when')?</h4>
                         </div>
 
                         <p>
-                            6-21 October 2018
+                            @lang('home.when_content')
+
+
                         </p>
 
 
@@ -107,11 +109,11 @@
                     <div class="col_one_third col_last">
 
                         <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                            <h4>Why?</h4>
+                            <h4>@lang('home.why')?</h4>
                         </div>
 
                         <p>
-                            Learning to code helps us to make sense of the rapidly changing world around us, expand our understanding of how technology works, and develop skills and capabilities in order to explore new ideas and innovate.
+                            @lang('home.why_content')
                         </p>
 
 
@@ -132,7 +134,7 @@
             <section id="section-join" class="page-section section">
 
                 <div class="heading-block center">
-                    <h2>Get involved!</h2>
+                    <h2>@lang('home.get involved')!</h2>
                     <span></span>
                 </div>
 
@@ -142,123 +144,79 @@
                     <div class="col_one_third">
 
                         <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                            <h4>Organize an activity</h4>
+                            <h4>@lang('organise')</h4>
                         </div>
 
                         <p>
-                            Become a part of Code Week by organizing an activity. Make a difference by inspiring and
-                            motivating others.
+                            @lang('home.organise_content_1')
                         </p>
 
                         <p>
-                            Anyone is welcome to organize an activity. Just pick a topic and a target audience and <a
-                                    href="/add">add your activity</a> to <a
-                                    href="/events">the map</a>. You can even use our <a
-                                    href="/guide">toolkit for organizers</a> to get started.
+                            @lang('home.organise_content_2')
+                             <a
+                                    href="/add">@lang('home.organise_content_3')</a> @lang('home.organise_content_4') <a
+                                    href="/events">@lang('home.organise_content_5')</a>. @lang('home.organise_content_6') <a
+                                    href="/guide">@lang('home.organise_content_7')</a> @lang('home.organise_content_8').
                         </p>
 
-                        <p>
-                            If you need help or have a question you can get in touch with <a
-                                    href="/ambassadors">EU Code Week Ambassadors</a> in your
-                            country.
+                        <p>@lang('home.organise_content_9')
+                            <a
+                                    href="/ambassadors">@lang('home.organise_content_10')</a> @lang('home.organise_content_11').
                         </p>
 
-                        <a href="/events" class="button button-border button-rounded button-large">Become
-                            an organizer</a>
+                        <a href="/events" class="button button-border button-rounded button-large">@lang('home.organise_button')</a>
 
                     </div>
 
                     <div class="col_one_third">
 
                         <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                            <h4>Join an activity</h4>
+                            <h4>@lang('home.join')</h4>
                         </div>
 
                         <p>
-                            Coding is for everyone. Try something new and discover the fun of coding by joining <a
-                                    href="/events">an activity near you</a>.
+                            @lang('home.join_content_1') <a
+                                    href="/events">@lang('home.join_content_2')</a>.
                         </p>
 
                         <p>
-                            There are plenty of events for any age and a variety of topics. Participation is free of
-                            charge and there are no prerequisites.
+                            @lang('home.join_content_3')
                         </p>
 
                         <p>
-                            There's also a <a href="/resources/">list of resources</a> to help you get started with
-                            coding online right now.
+                            @lang('home.join_content_4') <a href="/resources/">@lang('home.join_content_5')</a> @lang('home.join_content_6').
                         </p>
 
-                        <a href="/events" class="button button-border button-rounded button-large">Browse
-                            activity</a>
+                        <a href="/events" class="button button-border button-rounded button-large">@lang('home.join_button')</a>
 
                     </div>
 
                     <div class="col_one_third col_last">
 
                         <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                            <h4>Spread the word</h4>
+                            <h4>@lang('home.spread')</h4>
                         </div>
 
                         <p>
-                            Help the cause by <a href="http://blog.codeweek.eu">spreading the word</a> so that more
-                            people can learn about Code Week. If you know people who would be willing to organize an
-                            event, let them know about Code Week.
+                            @lang('home.spread_content_1') <a href="http://blog.codeweek.eu">@lang('home.spread_content_2')</a> @lang('home.spread_content_3').
                         </p>
 
                         <p>
-                            Have an inspirational story to share? <a href="http://blog.codeweek.eu/submit">Post it to
-                                our blog</a> and we will share it.
+                            @lang('home.spread_content_4')? <a href="http://blog.codeweek.eu/submit">@lang('home.spread_content_5')</a> @lang('home.spread_content_6').
                         </p>
 
                         <p>
-                            We're on Twitter as <a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>, on <a
-                                    href="https://www.facebook.com/codeEU">Facebook</a> and we use the <a
-                                    href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a> hashtag.
+                            @lang('home.spread_content_7') <a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>, @lang('home.spread_content_8') <a
+                                    href="https://www.facebook.com/codeEU">Facebook</a> @lang('home.spread_content_9') <a
+                                    href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a> @lang('home.spread_content_10').
                         </p>
 
-                        <a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">See
-                            what's going on</a>
+                        <a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">@lang('home.spread_button')</a>
 
                     </div>
 
                     <div class="clear"></div>
-                    <!--
-                            <div class="fancy-title title-dotted-border title-center">
-                              <h2><span>Join</span> our campaigns</h2>
-                            </div>
 
-                            <div class="col_one_third">
-                              <div class="feature-box fbox-center fbox-border fbox-effect noborder">
-                                  <div class="fbox-icon">
-                                    <a href="/odetocode/"><i class="icon-play i-alt"></i></a>
-                                  </div>
-                                  <h3>Ode to code video contest</h3>
-                                  <p>Take part in the contest by making a short video to report the incredible effects of the "Ode to code" tune on people, robots, and objects.</p>
-                              </div>
-
-                            </div>
-
-                            <div class="col_one_third">
-                              <div class="feature-box fbox-center fbox-border fbox-effect noborder">
-                                  <div class="fbox-icon">
-                                    <a href="/codeweek4all/"><i class="icon-study i-alt"></i></a>
-                                  </div>
-                                  <h3>CodeWeek4all challenge</h3>
-                                  <p>Challenge your school to engage all the students in coding during Europe Code Week 2015 and get a Certificate of Excellence in Coding Literacy from the European Commission.</p>
-                              </div>
-                            </div>
-
-                            <div class="col_one_third col_last">
-                              <div class="feature-box fbox-center fbox-border fbox-effect noborder">
-                                  <div class="fbox-icon">
-                                    <a href="https://www.thunderclap.it/projects/31230-codeweekeu"><i class="icon-bullhorn i-alt"></i></a>
-                                  </div>
-                                  <h3>Thunderclap campaign</h3>
-                                  <p>Join our thunderclap campaign to announce the beginning of Europe Code Week 2015 on October 10.</p>
-                              </div>
-                            </div>
-                                    -->
                 </div>
 
             </section>
@@ -267,18 +225,14 @@
                 <div class="container clearfix">
 
                     <div class="heading-block bottommargin-lg center">
-                        <h2>Partners And Sponsors</h2>
-                        <span>Help us expand the outreach and the impact of Code Week</span>
+                        <h2>@lang('home.partners_1')</h2>
+                        <span>@lang('home.partners_2')</span>
 
                         <p>
-                            Code Week is a grassroots initiative led by volunteers which has an outreach to hundreds of
-                            thousands of people around the world. We constantly seek partners and sponsors to help us
-                            expand. If you would like to be part of our community and sponsor our activities, please
-                            contact us.
+                            @lang('home.partners_3')
                         </p>
 
-                        <a href="mailto:info@codeweek.eu" class="button button-border button-rounded button-large">Get
-                            in touch</a></p>
+                        <a href="mailto:info@codeweek.eu" class="button button-border button-rounded button-large">@lang('home.partners_button')</a></p>
                     </div>
 
                     <div class="">
@@ -335,8 +289,8 @@
             <section id="section-contact" class="page-section section">
 
                 <div class="heading-block title-center">
-                    <h2>Get in Touch with us</h2>
-                    <span>Still have questions? Just <a href="mailto:info@codeweek.eu">drop us a line</a>.</span>
+                    <h2>@lang('home.touch_1')</h2>
+                    <span>@lang('home.touch_2')? @lang('home.touch_3') <a href="mailto:info@codeweek.eu">@lang('home.touch_4')</a>.</span>
                 </div>
 
             </section>
