@@ -21,7 +21,18 @@ return [
     'about' => 'About',
     'news' => 'News',
     'search' => 'Type & hit Enter...',
-    '' => '',
+    'map' => 'Map',
+    'add_event' => 'Add Event',
+    'search_event' => 'Search Events',
+    'hello' => 'Hello',
+    'profile' => 'Profile',
+    'pending' => 'Pending Events',
+    'your_events' => 'Your events',
+    'your_certificates' => 'Your certificates',
+    'report' => 'Report your events',
+    'volunteers' => 'Volunteers',
+    'logout' => 'Logout',
+    'signin' => 'Sign in',
 
 
 ];

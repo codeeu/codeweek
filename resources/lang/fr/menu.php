@@ -21,7 +21,17 @@ return [
     'about' => 'A propos',
     'news' => 'Nouvelles',
     'search' => 'TBD',
-    '' => '',
+    'map' => 'TBD',
+    'add_event' => 'TBD',
+    'search_event' => 'TBD',
+    'hello' => 'TBD',
+    'profile' => 'TBD',
+    'pending' => 'TBD',
+    'your_events' => 'TBD',
+    'your_certificates' => 'TBD',
+    'report' => 'TBD',
+    'volunteers' => 'TBD',
+    'logout' => 'TBD',
 
 
 ];
