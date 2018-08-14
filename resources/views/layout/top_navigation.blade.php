@@ -104,8 +104,8 @@
                                     <b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu profile-menu" role="menu">
-                                    <li><a href="{{route('profile')}}">Profile</a></li>
                                     @role('ambassador|super admin')
+                                    <li><a href="{{route('profile')}}">Profile</a></li>
                                     <li><a href="{{route('pending')}}">Pending Events</a></li>
                                     @endrole
 
