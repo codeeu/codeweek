@@ -17,13 +17,13 @@
                 <!-- Primary Navigation -->
                 <!-- ============================================= -->
                 <ul>
-                    <li><a href="{{route('home')}}">Home</a></li>
-                    <li class=""><a href="{{route('events_map')}}">Events</a></li>
-                    <li class=""><a href="{{route('ambassadors')}}">Ambassadors</a></li>
-                    <li><a href="/resources/">Resources</a></li>
-                    <li><a href="{{route('schools')}}">Schools</a></li>
-                    <li><a href="/about/">About</a></li>
-                    <li><a href="http://blog.codeweek.eu/">News</a></li>
+                    <li><a href="{{route('home')}}">@lang('menu.home')</a></li>
+                    <li class=""><a href="{{route('events_map')}}">@lang('menu.events')</a></li>
+                    <li class=""><a href="{{route('ambassadors')}}">@lang('menu.ambassadors')</a></li>
+                    <li><a href="/resources/">@lang('menu.resources')</a></li>
+                    <li><a href="{{route('schools')}}">@lang('menu.schools')</a></li>
+                    <li><a href="/about/">@lang('menu.about')</a></li>
+                    <li><a href="http://blog.codeweek.eu/">@lang('menu.news')</a></li>
                 </ul>
 
                 <!-- Top Search -->
@@ -31,7 +31,7 @@
                 <div id="top-search">
                     <a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
                     <form action="/search" method="get">
-                        <input type="text" name="q" class="form-control" value="" placeholder="Type & hit Enter...">
+                        <input type="text" name="q" class="form-control" value="" placeholder="@lang('menu.search')">
                     </form>
                 </div><!-- #top-search end -->
 
