@@ -241,8 +241,23 @@
 
                             </div>
 
+                        </div>
+
+                        <div class="form-group ">
+                            <label for="id_codeweek_forall_code_label" class="col-sm-3 control-label">
+                                @lang('event.codeweek_for_all_participation_code.title')
+                            </label>
+
+                            <div class="col-sm-9 first last">
+
+                                <input class="form-control" id="id_codeweek_forall_code" maxlength="75"
+                                       name="codeweek_for_all_participation_code" value=""></input>
+
+                            </div>
 
                         </div>
+
+
 
                         <div class="form-group">
                             <label for="id_picture" class="col-sm-3 control-label">

@@ -69,6 +69,9 @@ return [
         'Artificial intelligence' => 'Intelligence artificielle',
         'Motivation and awareness raising' => 'Motivation et sensibilisation',
         'Promoting diversity' => 'Promouvoir la diversité'
+    ],
+    'codeweek_for_all_participation_code' => [
+        'title' => 'Code de participation à Codeweek for All',
     ]
 
 
