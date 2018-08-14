@@ -64,7 +64,7 @@
                           <i class="fa fa-circle fa-stack-2x"></i>
                           <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
                         </span>
-                                Map
+                                @lang('menu.map')
                             </a>
                         </li>
                         <li>
@@ -73,7 +73,7 @@
                           <i class="fa fa-circle fa-stack-2x"></i>
                           <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
                         </span>
-                                Add Event
+                                @lang('menu.add_event')
                             </a>
                         </li>
                         <li>
@@ -82,7 +82,7 @@
                       <i class="fa fa-circle fa-stack-2x"></i>
                       <i class="fa fa-search fa-stack-1x fa-inverse"></i>
                     </span>
-                                Search Events
+                                @lang('menu.search_event')
                             </a>
                         </li>
 
@@ -98,23 +98,23 @@
 
                             @if (Auth::check())
                                 <a href="/profile" class="dropdown-toggle avatar" data-toggle="dropdown">
-                                    Hello, {{ Auth::user()->firstname }}
+                                    @lang('menu.hello'), {{ Auth::user()->firstname }}
                                     <img src="{{Auth::user()->avatar}}" alt="{{ Auth::user()->name }}" class="img-circle"
                                          height="30" width="30">
                                     <b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu profile-menu" role="menu">
                                     @role('ambassador|super admin')
-                                    <li><a href="{{route('profile')}}">Profile</a></li>
-                                    <li><a href="{{route('pending')}}">Pending Events</a></li>
+                                    <li><a href="{{route('profile')}}">@lang('menu.profile')</a></li>
+                                    <li><a href="{{route('pending')}}">@lang('menu.pending')</a></li>
                                     @endrole
 
                                     <li><a href="{{route('my_events')}}"><i
-                                                    class="fa fa-user"></i> Your events</a></li>
+                                                    class="fa fa-user"></i> @lang('menu.your_events')</a></li>
                                     <li><a href="{{route('certificates')}}"><i
-                                                    class="fa fa-user"></i> Your certificates</a></li>
+                                                    class="fa fa-user"></i> @lang('menu.your_certificates')</a></li>
                                     <li><a href="/events_to_report"><i
-                                                    class="fa fa-user"></i> Report your events</a></li>
+                                                    class="fa fa-user"></i> @lang('menu.report')</a></li>
 
 
                                     @role('super admin')
@@ -124,7 +124,7 @@
                                     <li><a class="dropdown-item" href="{{ route('logout') }}"
                                            onclick="event.preventDefault();
                                                          document.getElementById('logout-form').submit();">
-                                            {{ __('Logout') }}
+                                            {{ __('menu.logout') }}
                                         </a></li>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST"
@@ -138,7 +138,7 @@
                             @else
                                 <a href="/login" class="signin">
                                     <i class="fa fa-sign-in"></i>
-                                    Sign in</a>
+                                    @lang('menu.signin')</a>
                             @endif
                             {{--{% endif %}--}}
                         </li>
