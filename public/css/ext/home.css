@@ -1017,8 +1017,8 @@ body.stretched #header.full-header .container {
 
 #primary-menu ul li a {
 	display: block;
-	height: 100px;
-	line-height: 100px;
+	height: 60px;
+	line-height: 60px;
 	padding: 0 15px;
 	color: #444;
 	font-weight: bold;
@@ -1581,7 +1581,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #primary-menu.style-2.cent
 #top-cart,
 #side-panel-trigger {
 	float: right;
-	margin: 40px 0 40px 15px;
+	margin: 20px 0 40px 15px;
 }
 
 #top-cart { position: relative; }
@@ -1837,7 +1837,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 #logo img,
 #primary-menu:not(.style-2),
 #primary-menu:not(.style-2) > ul {
-	height: 100px;
+	height: 60px;
 	-webkit-transition: height .4s ease, opacity .3s ease;
 	-o-transition: height .4s ease, opacity .3s ease;
 	transition: height .4s ease, opacity .3s ease;
