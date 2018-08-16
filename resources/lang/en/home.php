@@ -43,7 +43,7 @@ return [
     'join_content_5' => 'list of resources',
     'join_content_6' => 'to help you get started with coding online right now',
     'join_button' => 'Browse activity',
-    'spread' => '',
+    'spread' => 'Spread the word',
     'spread_content_1' => 'Help the cause by',
     'spread_content_2' => 'spreading the word',
     'spread_content_3' => 'so that more people can learn about Code Week. If you know people who would be willing to organize an event, let them know about Code Week.',

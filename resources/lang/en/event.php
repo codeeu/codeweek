@@ -18,6 +18,12 @@ return [
     'required'=>'Required fields are marked with an * asterisk. Feel free to add the event listing in your local language.',
     'audience_title'=>'Audience',
     'theme_title'=>'Theme',
+    'scoreboard_by_country'=>'Events Scoreboard by country',
+    'get_involved'=>'Get involved',
+    'organize_or_support_events'=>'Organize or support events in your city',
+    'or_contact_your'=>'or contact your',
+    'eu_code_week_ambassadors'=>'EU Code Week Ambassadors',
+    'show_events_for'=>'Show events for ',
     'start' => [
         'label' => 'Start date',
         'placeholder' => 'When does the activity start ?',

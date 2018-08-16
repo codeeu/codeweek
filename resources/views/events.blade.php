@@ -37,19 +37,19 @@
                     <div class="flex justify-center">
                         <a href="{{route('scoreboard')}}">
                             <i class="fa fa-trophy"></i>
-                            Events Scoreboard by country
+                            @lang('event.scoreboard_by_country')
                         </a>
                     </div>
 
                     <hr>
                     <div class="how-to">
-                        <p><strong>Get involved:</strong>
+                        <p><strong>@lang('event.get_involved'):</strong>
                             <a href="/guide/" class="btn btn-primary btn-sm">
-                                Organize or support events in your city
+                                @lang('event.organize_or_support_events')
                             </a></p>
-                        <p>or
+                        <p>
                             <a href="ambassadors?country_iso={{$current_country_iso}}">
-                                contact your <strong>EU Code Week Ambassadors</strong>
+                                @lang('event.or_contact_your') <strong>@lang('event.eu_code_week_ambassadors')</strong>
 
                                 @foreach($ambassadors as $ambassador)
                                     <img src="{{$ambassador->avatar}}" alt="" class="img-circle" height="45" width="45">

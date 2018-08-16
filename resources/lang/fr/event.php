@@ -18,6 +18,12 @@ return [
     'required'=>'TBD',
     'audience_title'=>'TBD',
     'theme_title'=>'TBD',
+    'scoreboard_by_country'=>'TBD',
+    'get_involved'=>'TBD',
+    'organize_or_support_events'=>'TBD',
+    'or_contact_your'=>'TBD',
+    'eu_code_week_ambassadors'=>'TBD',
+    'show_events_for'=>'TBD',
     'start' => [
         'label' => 'TBD',
         'placeholder' => 'TBD',

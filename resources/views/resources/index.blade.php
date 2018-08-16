@@ -13,7 +13,7 @@
             <hr>
 
             <p>EU Code Week is a grass-root movement run by volunteers who promote coding in their countries as <a
-                        href="http://events.codeweek.eu/ambassadors">Code Week Ambassadors</a>. Anyone – schools,
+                        href="/ambassadors">Code Week Ambassadors</a>. Anyone – schools,
                 teachers,
                 libraries, code clubs, businesses, public authorities – can organise a #CodeEU event and add it to the
                 <a
@@ -22,7 +22,7 @@
                 have prepared different toolkits and selected some of the best lesson plans, guides and other resources.
             </p>
 
-            <p><a href="http://events.codeweek.eu/guide/">How do I organise a Code Week event?</a></p>
+            <p><a href="/guide">How do I organise a Code Week event?</a></p>
 
             <div class="flex align-center justify-center">
                 <div class="btn btn-primary btn-directional btn-lg submit-button-wrapper">
