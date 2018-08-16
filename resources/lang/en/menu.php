@@ -33,6 +33,6 @@ return [
     'volunteers' => 'Volunteers',
     'logout' => 'Logout',
     'signin' => 'Sign in',
-
+    'privacy' => 'Privacy',
 
 ];

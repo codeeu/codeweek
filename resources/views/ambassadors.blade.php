@@ -136,7 +136,7 @@
                     </ul>
                     <br/>
                     <p style="text-align: center"><a
-                                href="http://codeweek.eu/beambassador">@lang('ambassador.why_dont_you_volunteer')</a></p>
+                                href="/beambassador">@lang('ambassador.why_dont_you_volunteer')</a></p>
 
 
                 </div>

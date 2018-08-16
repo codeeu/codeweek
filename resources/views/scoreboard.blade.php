@@ -12,11 +12,9 @@
             <div class="container clearfix">
 
                 <div class="heading-block center">
-                    <h1>#codeEU Events Scoreboard</h1>
+                    <h1>@lang('scoreboard.title')</h1>
                     <span></span>
-                    <p>Which countries in Europe are buzzing with coding activity? The scoreboard is sorted by the
-                        number of listed coding events per population, so don't be surprised to see some of the smaller
-                        countries higher up on the list!</p>
+                    <p>@lang('scoreboard.paragraph')</p>
                 </div>
 
 
@@ -33,9 +31,9 @@
 
                                 <div class="box-inner">
                                     <span class="country-name">{{$event->country_name}}</span>
-                                    <p> is participating with </p>
+                                    <p> @lang('scoreboard.parcipating_with') </p>
                                     <a href="/search?country_iso={{$event->iso}}&past=no">
-                                        <span class="event-number">{{ $event->total }} events</span></a>
+                                        <span class="event-number">{{ $event->total }} @lang('scoreboard.events')</span></a>
                                 </div>
 
                             </li>
