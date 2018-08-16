@@ -144,7 +144,7 @@
                     <div class="col_one_third">
 
                         <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                            <h4>@lang('organise')</h4>
+                            <h4>@lang('home.organise')</h4>
                         </div>
 
                         <p>
