@@ -6,11 +6,11 @@
     <div class=" mt-6   flex justify-around">
         <div class="w-4/5">
 
-            <h1>Certificates for {{ Auth::user()->fullName }}</h1>
+            <h1>@lang('certificates.certificates_for'){{ Auth::user()->fullName }}</h1>
 
             @if($reported_events->isEmpty())
                 <div class="row">
-                    <p>There are no certificates yet.</p>
+                    <p>@lang('certificates.no_certificates')</p>
                 </div>
             @else
 

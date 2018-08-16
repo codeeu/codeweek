@@ -6,11 +6,11 @@
 
 
     <div class="container">
-        <h1>All events created by {{ Auth::user()->fullName }}</h1>
+        <h1>@lang('myevents.created_by') {{ Auth::user()->fullName }}</h1>
 
-        @if(!$events)
+        @if(!$events || (count($events) == 0))
         <div class="row">
-            <p>You haven't added any events yet. Why don't you <a href="{{route('create_event')}}">add one now</a> or read our <a href="{{route('guide')}}">guide for organizers</a>?</p>
+            <p>@lang('myevents.no_events.first_call_to_action') <a href="{{route('create_event')}}">@lang('myevents.no_events.first_link')</a> @lang('myevents.no_events.second_call_to_action') <a href="{{route('guide')}}">@lang('myevents.no_events.second_link')</a>?</p>
         </div>
         @else
 
