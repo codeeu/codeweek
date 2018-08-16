@@ -17,9 +17,9 @@
                     <a href="{{route('home')}}">@lang('menu.home')</a>/
                     <a href="{{route('events_map')}}">@lang('menu.events')</a>/
                     <a href="{{route('ambassadors')}}">@lang('menu.ambassadors')</a>/
-                    <a href=/resources/">@lang('menu.resources')</a>/
-                    <a href=/about/">@lang('menu.about')</a>/
-                    <a href=/privacy/">@lang('menu.privacy')</a>/
+                    <a href="/resources/">@lang('menu.resources')</a>/
+                    <a href="/about/">@lang('menu.about')</a>/
+                    <a href="/privacy">@lang('menu.privacy')</a>/
                     <a href="http://blog.codeweek.eu/">@lang('menu.news')</a>
                 </div>
                 <div class="fright clearfix">

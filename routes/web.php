@@ -59,6 +59,9 @@ Route::patch('/events/{event}', 'EventController@update');
 Route::get('/guide', function () {
     return view('guide');
 })->name('guide');
+Route::get('privacy', function () {
+    return view('privacy');
+})->name('privacy');
 Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 Route::get('/my', 'EventController@my')->name('my_events');
