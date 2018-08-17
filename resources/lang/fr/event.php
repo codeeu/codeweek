@@ -25,6 +25,8 @@ return [
     'eu_code_week_ambassadors'=>'TBD',
     'show_events_for'=>'TBD',
     'who'=>'TBD',
+    'tags' => 'TBD',
+    'image' => 'TBD',
     'start' => [
         'label' => 'TBD',
         'placeholder' => 'TBD',

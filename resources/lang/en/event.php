@@ -25,6 +25,8 @@ return [
     'eu_code_week_ambassadors'=>'EU Code Week Ambassadors',
     'show_events_for'=>'Show events for ',
     'who' => 'Who is the event for?',
+    'tags' => 'Tags',
+    'image' => 'Image',
     'start' => [
         'label' => 'Start date',
         'placeholder' => 'When does the activity start ?',

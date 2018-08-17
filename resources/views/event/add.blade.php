@@ -228,8 +228,7 @@
 
                         <div class="form-group ">
                             <label for="id_tags" class="col-sm-3 control-label">
-
-                                Tags
+                                @lang('event.tags')
                             </label>
 
                             <div class="col-sm-9 first last">
@@ -258,7 +257,7 @@
 
                         <div class="form-group">
                             <label for="id_picture" class="col-sm-3 control-label">
-                                Image
+                                @lang('event.image')
                             </label>
 
                             <div class="col-sm-9 first last fileinput fileinput-new"
