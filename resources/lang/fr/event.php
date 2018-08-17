@@ -118,6 +118,14 @@ return [
         'phrase5'=>'TBD',
         'phrase6'=>'TBD',
         'phrase7'=>'TBD'
+    ],
+    'activity_type'=>[
+        'Event'=>'TBD',
+        'Lesson'=>'TBD',
+        'Workshop'=>'TBD',
+        'Webinar'=>'TBD',
+        'Live Streaming Session'=>'TBD',
+        'Other'=>'TBD'
     ]
 
 ];

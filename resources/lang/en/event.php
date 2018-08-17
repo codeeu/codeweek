@@ -118,6 +118,14 @@ return [
         'phrase5'=>'or send us an',
         'phrase6'=>'email',
         'phrase7'=>'You can share your Codeweek for all code with other people:'
+    ],
+    'activity_type'=>[
+        'Event'=>'Event',
+        'Lesson'=>'Lesson',
+        'Workshop'=>'Workshop',
+        'Webinar'=>'Webinar',
+        'Live Streaming Session'=>'Live Streaming Session',
+        'Other'=>'Other'
     ]
 
 ];
