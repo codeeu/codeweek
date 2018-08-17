@@ -90,7 +90,7 @@
                         </div>
 
                         <div class="form-group @if($errors->has('audience')) has-error @endif">
-                            <span class="help-block col-sm-9 col-sm-offset-3">@lang('edit.who')</span>
+                            <span class="help-block col-sm-9 col-sm-offset-3">@lang('event.who')</span>
                             <label for="id_audience" class="col-sm-3 control-label">
                                 *
                                 @lang('edit.audience')
@@ -198,7 +198,7 @@
                             <div class="col-sm-9 first last">
                                 <input class="form-control" id="id_event_url" maxlength="200"
                                        name="event_url"
-                                       placeholder="Do you have a website with more information?"
+                                       placeholder="@lang('event.website.placeholder')"
                                        type="text"
                                        value="{{old('event_url',$event->event_url)}}">
                             </div>
@@ -215,7 +215,7 @@
                             <div class="col-sm-9 first last">
                                 <input class="form-control" id="id_contact_person" maxlength="75"
                                        name="contact_person"
-                                       placeholder="Would you like to display a contact email?" type="text"
+                                       placeholder="@lang('event.public.placeholder')" type="text"
                                        value="{{old('contact_person')?old('contact_person'):$event->contact_person}}">
 
                                 @component('components.validation-errors', ['field'=>'contact_person'])

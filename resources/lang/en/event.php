@@ -24,6 +24,7 @@ return [
     'or_contact_your'=>'or contact your',
     'eu_code_week_ambassadors'=>'EU Code Week Ambassadors',
     'show_events_for'=>'Show events for ',
+    'who' => 'Who is the event for?',
     'start' => [
         'label' => 'Start date',
         'placeholder' => 'When does the activity start ?',

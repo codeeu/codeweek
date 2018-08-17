@@ -94,7 +94,7 @@
                         </div>
 
                         <div class="form-group @if($errors->has('audience')) has-error @endif">
-                            <span class="help-block col-sm-9 col-sm-offset-3">Who is the event for?</span>
+                            <span class="help-block col-sm-9 col-sm-offset-3">@lang('event.who')</span>
                             <label for="id_audience" class="col-sm-3 control-label">
                                 *
                                 @lang('event.audience_title')
