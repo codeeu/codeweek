@@ -30,7 +30,7 @@
 
 
                                 <div class="box-inner">
-                                    <span class="country-name">{{$event->country_name}}</span>
+                                    <span class="country-name">@lang('countries.'.$event->country_name)</span>
                                     <p> @lang('scoreboard.parcipating_with') </p>
                                     <a href="/search?country_iso={{$event->iso}}&past=no">
                                         <span class="event-number">{{ $event->total }} @lang('scoreboard.events')</span></a>

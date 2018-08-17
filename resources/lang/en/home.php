@@ -62,6 +62,12 @@ return [
     'touch_1' => 'Get in Touch with us',
     'touch_2' => 'Still have questions?',
     'touch_3' => 'Just',
-    'touch_4' => 'drop us a line'
+    'touch_4' => 'drop us a line',
+    'are_you_a_teacher' => 'Are you a teacher?',
+    'get_involved_banner' => 'Click here to find out how to get involved!',
+    'days'=>'Days',
+    'hours'=>'Hours',
+    'minutes'=>'Minutes',
+    'seconds'=>'Seconds'
 
 ];

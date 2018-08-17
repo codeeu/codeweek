@@ -124,7 +124,7 @@
                                              alt="{{$country->country_iso}}">
 
                                         <div class="country-name">
-                                            {{$country->name}} ({{$country->total}})
+                                            @lang('countries.'.$country->name) ({{$country->total}})
                                         </div>
                                     </div>
                                 </a>

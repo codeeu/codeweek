@@ -24,7 +24,7 @@
                                         <img src="https://s3-eu-west-1.amazonaws.com/codeweek-s3/flags/{{strtolower($country->iso)}}.png" alt="{{$country->name}}">
 
                                         <div class="country-name">
-                                            {{$country->name}}
+                                            @lang('countries.'.$country->name)
                                         </div>
                                     </div>
                                 </a>
