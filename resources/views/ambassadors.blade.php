@@ -21,7 +21,7 @@
                     @if(auth()->user() && auth()->user()->country)
                         <div class="container clearfix h-full mt-8 mb-8">
                             @lang('ambassador.your_current_country'):
-                            <a href="/ambassadors">{{auth()->user()->country->name}}</a>
+                            <a href="/ambassadors">@lang('countries.'.auth()->user()->country->name)</a>
                         </div>
                     @endif
 
@@ -31,7 +31,7 @@
                             @if($country->iso === app('request')->input('country_iso'))
 
                                 <h2 class="flex justify-center text-center">
-                                 {{$country->name}}
+                                 @lang('countries.'.$country->name)
                                 </h2>
 
                                 @if($country->facebook)
