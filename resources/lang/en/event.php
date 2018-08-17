@@ -108,6 +108,16 @@ return [
         'title' => 'CODE WEEK 4 ALL CODE',
         'explanation' => 'If you have received a Code Week 4 all code from a school colleague or a friend paste it here, otherwise please leave it blank. More info about Code Week 4 All are available',
         'link' => 'here',
+    ],
+    'thanks_page'=>[
+        'title'=>'Thanks for adding your event!',
+        'phrase1'=>'One of our local ambassadors will now review your event',
+        'phrase2'=>'and make sure everything looks ok.',
+        'phrase3'=>'If you have any questions, get in touch with one of our',
+        'phrase4'=>'national ambassadors',
+        'phrase5'=>'or send us an',
+        'phrase6'=>'email',
+        'phrase7'=>'You can share your Codeweek for all code with other people:'
     ]
 
 ];

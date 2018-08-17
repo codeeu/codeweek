@@ -13,27 +13,39 @@ return [
     |
     */
 
-    'title' => 'Rapportez votre événement #codeEU',
-    'number_required' => 'Merci de donner une estimation même si vous ne connaissez pas le nombre exact.',
+    'title' => 'TBD',
+    'event_title' => 'TBD',
+    'number_required' => 'TBD',
+    'phrase1'=>'TBD',
+    'phrase2'=>'TBD',
+    'phrase3'=>'TBD',
+    'phrase4'=>'TBD',
+    'contactus'=>'TBD',
 
     'participants_count' => [
-        'label' => 'Nombre de participants'
+        'label' => 'TBD'
     ],
     'average_participant_age' => [
-        'label' => 'Age moyen des participants',
+        'label' => 'TBD',
     ],
     'percentage_of_females' => [
-        'label' => 'Pourcentage de femmes',
+        'label' => 'TBD',
     ],
     'codeweek_for_all_participation_code' => [
-        'label' => 'Code de participation à Codeweek for All',
-        'help' => 'Vous pouvez rentrer votre code du challenge Codeweeek4All si vous en avez un. si vous n\'y participez pas, vous pouvez ignorer ce champ.'
+        'label' => 'TBD',
+        'help' => 'TBD'
     ],
     'name_for_certificate' => [
-        'label' => 'Nom pour le certificat',
-        'help' => 'Nom de l\'organisateur de l\'événement à qui le certificat sera adressé. Merci de n\'utiliser que des caractères ASCII latins. Les umlauts et autres caractères semblables ne sont pas supportés.'
+        'label' => 'TBD',
+        'help' => 'TBD'
     ],
-    'submit' => 'Envoyer le rapport',
+    'submit' => 'TBD',
+    'thanks_page'=>[
+        'title'=>'TBD',
+        'certificate_ready'=>'TBD',
+        'download_button'=>'TBD',
+        'back_events'=>'TBD'
+    ]
 
 
 

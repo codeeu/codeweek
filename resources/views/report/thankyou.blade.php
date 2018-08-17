@@ -5,9 +5,12 @@
     <section>
 
         <div class="container">
-            <h1>Thanks for reporting your event!</h1>
-            <h2>Your certificate is ready. <a href="{{$event->certificate_url}}">Click here to download it.</a></h2>
-            <h4><a href="{{$event->path()}}">Go back to your event</a></h4>
+            <h1>@lang('report.thanks_page.title')</h1>
+            <h2>
+                @lang('report.thanks_page.certificate_ready')
+                <a href="{{$event->certificate_url}}">@lang('report.thanks_page.download_button')</a>
+            </h2>
+            <h4><a href="{{$event->path()}}">@lang('report.thanks_page.back_events')</a></h4>
 
         </div>
 

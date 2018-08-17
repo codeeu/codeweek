@@ -2,21 +2,29 @@
 
 @section('content')
 
-<section>
+    <section>
 
-    <div class="container">
-        <h1>Thanks for adding your event!</h1>
+        <div class="container">
 
-        <p>One of our local ambassadors will now review your event
-            <a href="{{$event->path()}}"><strong>{{ $event->title }}</strong></a>
-            and make sure everything looks ok. <br/>
-            If you have any questions, get in touch with one of our
-            <a href="{{route('ambassadors')}}">national ambassadors</a> or send us an <a
-                    href="mailto:info@codeweek.eu?subject=Code Week events">email</a>.</p>
+            <h1>@lang('event.thanks_page.title')</h1>
 
-        <p>You can share your Codeweek for all code with other people: <strong>{{$event->codeweek_for_all_participation_code}}</strong> </p>
-    </div>
+            <p>
+                @lang('event.thanks_page.phrase1')
+                <a href="{{$event->path()}}"><strong>{{ $event->title }}</strong></a>
+                @lang('event.thanks_page.phrase2')
+                <br/>
+                @lang('event.thanks_page.phrase3')
+                <a href="{{route('ambassadors')}}">@lang('event.thanks_page.phrase4')</a>
+                @lang('event.thanks_page.phrase5')
+                <a href="mailto:info@codeweek.eu?subject=Code Week events">@lang('event.thanks_page.phrase6')</a>.</p>
 
-</section>
+            <p>
+                @lang('event.thanks_page.phrase7')
+                <strong>{{$event->codeweek_for_all_participation_code}}</strong>
+            </p>
+
+        </div>
+
+    </section>
 
 @endsection

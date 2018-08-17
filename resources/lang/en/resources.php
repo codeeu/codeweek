@@ -115,6 +115,7 @@ return [
             '5'=>'Course designed by teachers for teachers which features interviews, presentations, and activities from teachers, professors, students and computing professionals.',
             '6'=>'Lesson plans created to help primary and secondary education teachers introduce coding to students. They will make pupils understand coding concepts in a fun way and offer teachers many ideas and resources.'
         ]
-    ]
+    ],
+    'resources_local_title'=>'Coding resources from'
 
 ];
