@@ -18,5 +18,11 @@ return [
         'first_link' => 'TBD',
         'second_call_to_action' => 'TBD ',
         'second_link' => 'TBD'
+    ],
+    'view'=>'TBD',
+    'status'=>[
+        'APPROVED'=>'TBD',
+        'REJECTED'=>'TBD',
+        'PENDING'=>'TBD'
     ]
 ];

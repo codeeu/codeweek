@@ -18,5 +18,11 @@ return [
         'first_link' => 'add one now',
         'second_call_to_action' => 'or read our ',
         'second_link' => 'guide for organizers'
+    ],
+    'view'=>'View',
+    'status'=>[
+        'APPROVED'=>'APPROVED',
+        'REJECTED'=>'REJECTED',
+        'PENDING'=>'PENDING'
     ]
 ];
