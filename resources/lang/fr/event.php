@@ -108,6 +108,16 @@ return [
         'title' => 'TBD',
         'explanation' => 'TBD',
         'link' => 'TBD',
+    ],
+    'thanks_page'=>[
+        'title'=>'TBD',
+        'phrase1'=>'TBD',
+        'phrase2'=>'TBD',
+        'phrase3'=>'TBD',
+        'phrase4'=>'TBD',
+        'phrase5'=>'TBD',
+        'phrase6'=>'TBD',
+        'phrase7'=>'TBD'
     ]
 
 ];

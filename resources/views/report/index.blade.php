@@ -5,7 +5,7 @@
 
         <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
             <h1>@lang('report.title')</h1>
-            <span>@lang('Event title'): {{$event->title}} ( {{$event->start_date}} )</span>
+            <span>@lang('report.event_title'): {{$event->title}} ( {{$event->start_date}} )</span>
         </div>
 
         <hr>
@@ -13,12 +13,17 @@
         <header class="flex flex-col justify-between">
 
             <p class="mb-4 text-grey-dark">
-                @lang("You can fill this form only once! Please check your data carefully. If you make a mistake, <a href='mailto:info@codeweek.eu'>contact us</a>.")
+                @lang('report.phrase1')
+                <a href='mailto:info@codeweek.eu'>@lang('report.contactus')</a>
             </p>
 
-            <p class="mb-4 text-grey-dark">@lang('After submitting the report, a personalized certificate for participation in Code Week will be issued automatically and will become available for you to download or share. You can see an example certificate here.')</p>
+            <p class="mb-4 text-grey-dark">
+                @lang('report.phrase2')
+            </p>
 
-            <p class="mb-4 text-grey-dark">@lang('Required fields are marked with an * asterisk.')</p>
+            <p class="mb-4 text-grey-dark">
+                @lang('report.phrase3')
+            </p>
 
         </header>
 
@@ -44,7 +49,8 @@
                     @component('components.report.form-field',['field_name'=>'name_for_certificate','type'=>'text','required'=>true,'help'=>'name_for_certificate.help'])@endcomponent
 
                     <p class="mb-4 text-grey-darkest">
-                        @lang('You can fill this form only once! Please check your data carefully. If you make a mistake, contact us.')
+                        @lang('report.phrase4')
+                        <a href='mailto:info@codeweek.eu'>@lang('report.contactus')</a>
                     </p>
 
 
