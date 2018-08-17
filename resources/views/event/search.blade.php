@@ -58,7 +58,7 @@
                             <div id="events-container">
 
 
-                                <div class="search-counter">{{$events->total()}} {{str_plural('event', $events->total())}}
+                                <div class="search-counter">{{$events->total()}} @lang('search.' . str_plural('event', $events->total()))
                                     @lang('search.search_counter')
                                 </div>
 

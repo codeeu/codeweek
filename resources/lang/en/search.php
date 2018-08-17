@@ -24,4 +24,6 @@ return [
         'no' => 'No'
     ],
     'search_counter' => 'match your search criteria',
+    'event'=>'event',
+    'events'=>'events'
 ];
