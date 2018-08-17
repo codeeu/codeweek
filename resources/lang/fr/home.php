@@ -63,5 +63,10 @@ return [
     'touch_2' => 'TBD',
     'touch_3' => 'TBD',
     'touch_4' => 'TBD',
-
+    'are_you_a_teacher' => 'TBD',
+    'get_involved_banner' => 'TBD',
+    'days'=>'TBD',
+    'hours'=>'TBD',
+    'minutes'=>'TBD',
+    'seconds'=>'TBD'
 ];
