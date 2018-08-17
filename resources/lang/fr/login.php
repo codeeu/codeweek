@@ -13,6 +13,10 @@ return [
     */
     'login' => 'Authentification',
     'register' => 'Enregistrement',
+    'github' => 'TBD',
+    'twitter' => 'TBD',
+    'facebook' => 'TBD',
+    'google' => 'TBD'
 
 
 

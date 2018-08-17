@@ -26,19 +26,19 @@
 
                                 <a href="/login/github"
                                    class="btn-block btn-social btn-lg btn-github">
-                                    <i class="fa fa-github-square mt-6"></i> Sign in with Github
+                                    <i class="fa fa-github-square mt-6"></i> @lang('login.github')
                                 </a>
                                 <a href="/login/twitter"
                                    class="btn-block btn-social btn-lg btn-twitter">
-                                    <i class="fa fa-twitter-square mt-6"></i> Sign in with Twitter
+                                    <i class="fa fa-twitter-square mt-6"></i> @lang('login.twitter')
                                 </a>
                                 <a href="/login/facebook"
                                    class="btn-block btn-social btn-lg btn-facebook">
-                                    <i class="fa fa-facebook-square mt-6"></i> Sign in with Facebook
+                                    <i class="fa fa-facebook-square mt-6"></i> @lang('login.facebook')
                                 </a>
                                 <a href="/login/google"
                                    class="btn-block btn-social btn-lg btn-google-plus">
-                                    <i class="fa fa-google-plus-square mt-6"></i> Sign in with Google
+                                    <i class="fa fa-google-plus-square mt-6"></i> @lang('login.google')
                                 </a>
 
 
