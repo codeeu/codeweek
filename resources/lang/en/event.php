@@ -24,6 +24,7 @@ return [
     'or_contact_your'=>'or contact your',
     'eu_code_week_ambassadors'=>'EU Code Week Ambassadors',
     'show_events_for'=>'Show events for ',
+    'who' => 'Who is the event for?',
     'start' => [
         'label' => 'Start date',
         'placeholder' => 'When does the activity start ?',
@@ -108,6 +109,24 @@ return [
         'title' => 'CODE WEEK 4 ALL CODE',
         'explanation' => 'If you have received a Code Week 4 all code from a school colleague or a friend paste it here, otherwise please leave it blank. More info about Code Week 4 All are available',
         'link' => 'here',
+    ],
+    'thanks_page'=>[
+        'title'=>'Thanks for adding your event!',
+        'phrase1'=>'One of our local ambassadors will now review your event',
+        'phrase2'=>'and make sure everything looks ok.',
+        'phrase3'=>'If you have any questions, get in touch with one of our',
+        'phrase4'=>'national ambassadors',
+        'phrase5'=>'or send us an',
+        'phrase6'=>'email',
+        'phrase7'=>'You can share your Codeweek for all code with other people:'
+    ],
+    'activity_type'=>[
+        'Event'=>'Event',
+        'Lesson'=>'Lesson',
+        'Workshop'=>'Workshop',
+        'Webinar'=>'Webinar',
+        'Live Streaming Session'=>'Live Streaming Session',
+        'Other'=>'Other'
     ]
 
 ];

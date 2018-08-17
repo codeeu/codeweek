@@ -13,7 +13,7 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-
+    'all'=>'All countries',
     'Cloud'=>'Cloud',
     'Andorra'=>'Andorra',
     'United Arab Emirates'=>'United Arab Emirates',

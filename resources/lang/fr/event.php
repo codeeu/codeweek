@@ -24,6 +24,7 @@ return [
     'or_contact_your'=>'TBD',
     'eu_code_week_ambassadors'=>'TBD',
     'show_events_for'=>'TBD',
+    'who'=>'TBD',
     'start' => [
         'label' => 'TBD',
         'placeholder' => 'TBD',
@@ -108,6 +109,24 @@ return [
         'title' => 'TBD',
         'explanation' => 'TBD',
         'link' => 'TBD',
+    ],
+    'thanks_page'=>[
+        'title'=>'TBD',
+        'phrase1'=>'TBD',
+        'phrase2'=>'TBD',
+        'phrase3'=>'TBD',
+        'phrase4'=>'TBD',
+        'phrase5'=>'TBD',
+        'phrase6'=>'TBD',
+        'phrase7'=>'TBD'
+    ],
+    'activity_type'=>[
+        'Event'=>'TBD',
+        'Lesson'=>'TBD',
+        'Workshop'=>'TBD',
+        'Webinar'=>'TBD',
+        'Live Streaming Session'=>'TBD',
+        'Other'=>'TBD'
     ]
 
 ];
