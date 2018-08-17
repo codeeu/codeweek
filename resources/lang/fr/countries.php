@@ -14,6 +14,7 @@ return [
     |
     */
 
+    'all'=>'TBD',
     'Cloud'=>'TBD',
     'Andorra'=>'TBD',
     'United Arab Emirates'=>'TBD',

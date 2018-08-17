@@ -23,7 +23,6 @@ return [
     'tags' => 'TBD',
     'image' => 'TBD',
     'help' => 'TBD',
-    'who' => 'TBD',
     'aspect' => 'TBD',
     'address' => 'TBD',
     'privacy_disclaimer' => [

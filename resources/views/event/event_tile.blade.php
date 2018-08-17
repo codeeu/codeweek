@@ -1,6 +1,6 @@
 <div class="col-md-4">
     <div class="thumbnail">
-        <div class="title"><a href="{{$event->path()}}">{{$event->title}}</a> ({{$event->status}})</div>
+        <div class="title"><a href="{{$event->path()}}">{{$event->title}}</a> (@lang('myevents.status.'. $event->status))</div>
         <div class="img-link">
             <a href="">
 
@@ -17,7 +17,7 @@
 
             <a href="{{$event->path()}}"
                class="btn btn-primary btn-directional fa-arrow-right btn-sm"
-               role="button">View</a>
+               role="button">@lang('myevents.view')</a>
 
             <span class="countdown pull-right">
 

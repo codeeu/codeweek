@@ -23,4 +23,6 @@ return [
         'no' => 'TBD'
     ],
     'search_counter' => 'TBD',
+    'event'=>'TBD',
+    'events'=>'TBD'
 ];

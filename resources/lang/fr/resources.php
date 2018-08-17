@@ -115,6 +115,7 @@ return [
             '5'=>'TBD',
             '6'=>'TBD'
         ]
-    ]
+    ],
+    'resources_local_title'=>'TBD'
 
 ];
