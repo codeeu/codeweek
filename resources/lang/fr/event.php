@@ -24,6 +24,7 @@ return [
     'or_contact_your'=>'TBD',
     'eu_code_week_ambassadors'=>'TBD',
     'show_events_for'=>'TBD',
+    'who'=>'TBD',
     'start' => [
         'label' => 'TBD',
         'placeholder' => 'TBD',

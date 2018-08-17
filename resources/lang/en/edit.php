@@ -23,7 +23,6 @@ return [
     'tags' => 'Tags',
     'image' => 'Image',
     'help' => 'Larger images will be resized to 256 x 512 pixels. Maximum upload size is 256 x 1024.',
-    'who' => 'Who is the event for?',
     'aspect' => 'Which aspect of coding will your event cover?',
     'address' => 'Type in an address or click on the map below to set a location.',
     'privacy_disclaimer' => [
