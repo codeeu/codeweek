@@ -123,3 +123,7 @@ form.inline {
 html{
     font-size:14px;
 }
+
+.menu-li-item{
+    margin-left:5px;
+}
