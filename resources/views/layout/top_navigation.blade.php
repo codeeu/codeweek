@@ -104,28 +104,63 @@
                                     <b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu profile-menu" role="menu">
+
                                     @role('ambassador|super admin')
-                                    <li><a href="{{route('profile')}}">@lang('menu.profile')</a></li>
-                                    <li><a href="{{route('pending')}}">@lang('menu.pending')</a></li>
+                                    <li>
+                                        <a href="{{route('profile')}}">
+                                            <i class="fa fa-user"></i>
+                                            <span class="menu-li-item">@lang('menu.profile')</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{route('pending')}}">
+                                            <i class="fa fa-calendar"></i>
+                                            <span class="menu-li-item">@lang('menu.pending')</span>
+                                        </a>
+                                    </li>
                                     @endrole
 
-                                    <li><a href="{{route('my_events')}}"><i
-                                                    class="fa fa-user"></i> @lang('menu.your_events')</a></li>
-                                    <li><a href="{{route('certificates')}}"><i
-                                                    class="fa fa-user"></i> @lang('menu.your_certificates')</a></li>
-                                    <li><a href="/events_to_report"><i
-                                                    class="fa fa-user"></i> @lang('menu.report')</a></li>
-
+                                    <li>
+                                        <a href="{{route('my_events')}}">
+                                            <i class="fa fa-calendar"></i>
+                                            <span class="menu-li-item">@lang('menu.your_events')</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{route('certificates')}}">
+                                            <i class="fa fa-file"></i>
+                                            <span class="menu-li-item">@lang('menu.your_certificates')</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/events_to_report">
+                                            <i class="fa fa-calendar-check-o"></i>
+                                            <span class="menu-li-item">@lang('menu.report')</span>
+                                        </a>
+                                    </li>
 
                                     @role('super admin')
-                                    <li><a href="{{route('activities')}}">Activities</a></li>
-                                    <li><a href="{{route('volunteers')}}">Volunteers</a></li>
+                                    <li>
+                                        <a href="{{route('activities')}}">
+                                            <i class="fa fa-list"></i>
+                                            <span class="menu-li-item">Activities</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{route('volunteers')}}">
+                                            <i class="fa fa-users"></i>
+                                            <span class="menu-li-item">Volunteers</span>
+                                        </a>
+                                    </li>
                                     @endrole
-                                    <li><a class="dropdown-item" href="{{ route('logout') }}"
-                                           onclick="event.preventDefault();
-                                                         document.getElementById('logout-form').submit();">
-                                            {{ __('menu.logout') }}
-                                        </a></li>
+
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                            <i class="fa fa-sign-out"></i>
+                                            <span class="menu-li-item">{{ __('menu.logout') }}</span>
+                                        </a>
+                                    </li>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST"
                                           style="display: none;">
