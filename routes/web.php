@@ -94,6 +94,11 @@ Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/volunteer/{volunteer}/approve', 'VolunteerController@approve')->middleware('auth')->name('volunteer_approve');
     Route::get('/volunteer/{volunteer}/reject', 'VolunteerController@reject')->middleware('auth')->name('volunteer_reject');
     Route::get('mail/{event}', 'EmailController@create')->middleware('auth');
+
+    Route::get('/mail/template/ambassadors/new', 'MailTemplateController@ambassador');
+    Route::get('/mail/template/creators/registered', 'MailTemplateController@registered');
+    Route::get('/mail/template/creators/approved', 'MailTemplateController@approved');
+    Route::get('/mail/template/creators/rejected', 'MailTemplateController@rejected');
 });
 
 Route::group(['middleware' => ['role:super admin|ambassador']], function () {
