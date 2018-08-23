@@ -249,7 +249,7 @@
                                 <input class="form-control" id="id_codeweek_forall_code" maxlength="75"
                                        name="codeweek_for_all_participation_code" value=""></input>
 
-                                <span class="help-block">@lang('event.codeweek_for_all_participation_code.explanation') <a href="#">@lang('event.codeweek_for_all_participation_code.link')</a></span>
+                                <span class="help-block">@lang('event.codeweek_for_all_participation_code.explanation') <a href="/codeweek4all">@lang('event.codeweek_for_all_participation_code.link')</a></span>
                             </div>
 
                         </div>
