@@ -38,30 +38,26 @@ Route::get('setlocale', function (Request $request) {
 })->name("setlocale");
 
 
+//Static pages
+Route::get('/', 'StaticPageController@index')->name('home');
+Route::get('/home', 'StaticPageController@index')->name('home');
+Route::get('/guide', 'StaticPageController@index')->name('guide');
+Route::get('/privacy', 'StaticPageController@index')->name('privacy');
+Route::get('/beambassador', 'StaticPageController@index')->name('beambassador');
+Route::get('/about', 'StaticPageController@index')->name('about');
+Route::get('/resources', 'StaticPageController@index')->name('resources');
+Route::get('/codeweek4all', 'StaticPageController@index')->name('codeweek4all');
 
 
-
-Route::get('/', 'HomeController@index')->name('index');
-Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/events', 'EventController@index')->name('events_map');
 Route::get('/add', 'EventController@create')->name('create_event');
 Route::get('/map', 'MapController@index')->name('map');
-Route::get('/resources', 'ResourcesController@index')->name('resources');
 Route::get('/resources/{country}', 'ResourcesController@show')->name('resources_by_country');
 Route::get('/ambassadors', 'AmbassadorController@index')->name('ambassadors');
-Route::view('/about', 'about')->name('about');
-Route::view('/beambassador', 'beambassador')->name('be_ambassador');
 Route::get('/volunteer', 'VolunteerController@create')->middleware('auth')->name('volunteer');
 Route::post('/volunteer', 'VolunteerController@store')->middleware('auth')->name('volunteer_store');
-
 Route::post('/events', 'EventController@store');
 Route::patch('/events/{event}', 'EventController@update');
-Route::get('/guide', function () {
-    return view('guide');
-})->name('guide');
-Route::get('privacy', function () {
-    return view('privacy');
-})->name('privacy');
 Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 Route::get('/my', 'EventController@my')->name('my_events');
