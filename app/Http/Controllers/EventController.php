@@ -178,7 +178,14 @@ class EventController extends Controller
 
         $this->authorize('approve', $event);
 
-        $event->update(['status' => "APPROVED", 'approved_by' => auth()->user()->id]);
+        $data = ['status' => "APPROVED", 'approved_by' => auth()->user()->id];
+
+        if (empty($event->codeweek_for_all_participation_code)){
+            $codeweek_4_all_generated_code = 'cw' . Carbon::now()->format('y') . '-' . str_random(5);
+            $data['codeweek_for_all_participation_code'] = $codeweek_4_all_generated_code;
+        }
+
+        $event->update($data);
 
     }
 
@@ -187,7 +194,9 @@ class EventController extends Controller
 
         $this->authorize('approve', $event);
 
-        $event->update(['status' => "REJECTED", 'approved_by' => auth()->user()->id]);
+        $data = ['status' => "REJECTED", 'approved_by' => auth()->user()->id];
+
+        $event->update($data);
 
 
     }
