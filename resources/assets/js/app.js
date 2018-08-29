@@ -22,6 +22,7 @@ import inputTags from './components/InputTags.vue';
 import moderateEvent from './components/ModerateEvent.vue';
 import reportEvent from './components/ReportEvent.vue';
 import question from './components/Question.vue';
+import simpleQuestion from './components/SimpleQuestion.vue';
 
 
 
@@ -46,6 +47,7 @@ const app = new Vue({
         inputTags,
         moderateEvent,
         reportEvent,
-        question
+        question,
+        simpleQuestion
     }
 });
