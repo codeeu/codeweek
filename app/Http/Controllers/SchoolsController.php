@@ -19,7 +19,7 @@ class SchoolsController extends Controller
                 ],
                 "button" => [
                  "label"=>__('schools.1.button.label'),
-                 "link"=>"/add"
+                 "link"=>"/login"
                 ],
                 "map" => false
             ],
@@ -45,7 +45,7 @@ class SchoolsController extends Controller
                 ],
                 "button" => [
                     "label"=>__('schools.3.button.label'),
-                    "link"=>"/add"
+                    "link"=>"/training"
                 ],
                 "map" => false
             ],
@@ -58,7 +58,7 @@ class SchoolsController extends Controller
                 ],
                 "button" => [
                     "label"=>__('schools.4.button.label'),
-                    "link"=>"/add"
+                    "link"=>"/codeweek4all"
                 ],
                 "map" => false
             ]
