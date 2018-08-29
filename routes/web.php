@@ -47,6 +47,7 @@ Route::get('/beambassador', 'StaticPageController@index')->name('beambassador');
 Route::get('/about', 'StaticPageController@index')->name('about');
 Route::get('/resources', 'StaticPageController@index')->name('resources');
 Route::get('/codeweek4all', 'StaticPageController@index')->name('codeweek4all');
+Route::get('/training', 'StaticPageController@index')->name('training');
 
 
 Route::get('/events', 'EventController@index')->name('events_map');
