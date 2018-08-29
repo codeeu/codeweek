@@ -6,7 +6,7 @@
 
         <div class="container">
 
-            <div class="content-wrap nopadding">
+            <div class="content-wrap breathe">
 
                 <div class="container clearfix ">
 
