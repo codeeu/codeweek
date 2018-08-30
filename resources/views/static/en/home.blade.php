@@ -124,7 +124,11 @@
 
             <section id="section-banner-teacher" class="section section-banner">
                 <div class="container clearfix">
-                    <a href="/schools"><img src="img/banner_teacher.png"/></a>
+                    {{--<a href="/schools"><img src="img/banner_teacher.png"/></a>--}}
+                    <div class="teachers-banner">
+                        <div class="title">Are you a teacher?</div>
+                        <div class="content"><a href="/schools">Click here to find out how to get involved!</a></div>
+                    </div>
                 </div>
             </section>
 

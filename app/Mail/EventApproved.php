@@ -35,9 +35,19 @@ class EventApproved extends Mailable
     public function build()
     {
 
+        $locale = session('locale');
+        if (empty($locale)){
+            $locale = \Config::get('app.fallback_locale');
+        }
+        $view = 'emails.'.$locale.'.event-approved';
+        if(!view()->exists($view)){
+            $default_language = \Config::get('app.fallback_locale');
+            $view = 'emails.' . $default_language . '.event-approved';
+        }
 
         return $this
             ->subject("Registration Approved")
-            ->markdown('emails.event-approved');
+            ->view($view);
+
     }
 }

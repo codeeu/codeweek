@@ -12960,3 +12960,26 @@ textarea.border-form-control {
 #footer {
 	margin-top:0;
 }
+
+.teachers-banner{
+	background-image: url('../../img/banner_teachers_background.png');
+	background-repeat: no-repeat;
+	width:1140px;
+	height:200px;
+	background-size: 100% 100%;
+	padding-left: 375px;
+	padding-top: 50px;
+}
+.teachers-banner .title{
+	font-weight: bold;
+	font-size:30px;
+	color:orangered;
+	font-family: 'Raleway', sans-serif;
+}
+.teachers-banner .content a{
+	font-style: italic;
+	font-size:28px;
+	color:orangered;
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+}
