@@ -12962,23 +12962,22 @@ textarea.border-form-control {
 }
 
 .teachers-banner{
-	background-image: url('../../img/banner_teachers_background.png');
-	background-repeat: no-repeat;
-	width:1140px;
-	height:200px;
-	background-size: 100% 100%;
-	padding-left: 375px;
-	padding-top: 50px;
+	width:100%;
+}
+.teachers-banner .text{
+	position:absolute;
+	margin-left:35%;
+	top:20%;
 }
 .teachers-banner .title{
+    font-size: 3vw;
 	font-weight: bold;
-	font-size:30px;
 	color:orangered;
 	font-family: 'Raleway', sans-serif;
 }
 .teachers-banner .content a{
 	font-style: italic;
-	font-size:28px;
+    font-size: 2vw;
 	color:orangered;
 	font-family: 'Raleway', sans-serif;
 	text-decoration: none;
