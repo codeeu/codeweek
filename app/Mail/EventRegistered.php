@@ -35,9 +35,18 @@ class EventRegistered extends Mailable
     public function build()
     {
 
+        $locale = session('locale');
+        if (empty($locale)){
+            $locale = \Config::get('app.fallback_locale');
+        }
+        $view = 'emails.'.$locale.'.event-registered';
+        if(!view()->exists($view)){
+            $default_language = \Config::get('app.fallback_locale');
+            $view = 'emails.' . $default_language . '.event-registered';
+        }
 
         return $this
             ->subject("Registration received")
-            ->markdown('emails.event-registered');
+            ->view($view);
     }
 }

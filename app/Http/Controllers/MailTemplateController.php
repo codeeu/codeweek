@@ -25,7 +25,7 @@ class MailTemplateController extends Controller
 
     public function approved()
     {
-        $event = \App\Event::first();
+        $event = \App\Event::where('id', 162733)->first();
         $ambassadors = \App\User::role('ambassador')->where('country_iso', $event->country_iso)->get();
         return new \App\Mail\EventApproved($event, $ambassadors[0]);
 

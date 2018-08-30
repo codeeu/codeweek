@@ -35,9 +35,10 @@ class EventRejected extends Mailable
     public function build()
     {
 
+        $locale = session('locale');
 
         return $this
             ->subject("Registration Rejected")
-            ->markdown('emails.event-rejected');
+            ->markdown('emails.' . $locale . '.event-rejected');
     }
 }
