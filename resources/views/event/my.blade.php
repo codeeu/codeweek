@@ -3,29 +3,28 @@
 @section('content')
     <section>
 
+        <div class="container">
+            <h1 style="display: inline-block;">@lang('myevents.created_by') {{ Auth::user()->fullName }}</h1>
+            <hr>
+
+            @if(!$events || (count($events) == 0))
+            <div class="row">
+                <p>@lang('myevents.no_events.first_call_to_action') <a href="{{route('create_event')}}">@lang('myevents.no_events.first_link')</a> @lang('myevents.no_events.second_call_to_action') <a href="{{route('guide')}}">@lang('myevents.no_events.second_link')</a>?</p>
+            </div>
+            @else
 
 
-    <div class="container">
-        <h1>All events created by {{ Auth::user()->fullName }}</h1>
+            <div class="row">
+            @foreach($events as $event)
+                @component('event.event_tile', ['event'=>$event])
+                @endcomponent
+                @endforeach
 
-        @if(!$events)
-        <div class="row">
-            <p>You haven't added any events yet. Why don't you <a href="{{route('create_event')}}">add one now</a> or read our <a href="{{route('guide')}}">guide for organizers</a>?</p>
+            </div>
+                {{ $events->links() }}
+            @endif
+
         </div>
-        @else
-
-
-        <div class="row">
-        @foreach($events as $event)
-            @component('event.event_tile', ['event'=>$event])
-            @endcomponent
-            @endforeach
-
-        </div>
-            {{ $events->links() }}
-        @endif
-
-    </div>
 
     </section>
 

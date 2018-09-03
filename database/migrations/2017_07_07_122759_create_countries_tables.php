@@ -17,6 +17,7 @@ class CreateCountriesTables extends Migration
 
             $table->string("iso");
             $table->string("name");
+            $table->integer("population")->nullable();
             $table->string('continent');
             $table->string('facebook');
             $table->string('website');

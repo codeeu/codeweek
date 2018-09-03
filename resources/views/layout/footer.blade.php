@@ -14,7 +14,13 @@
 
             <div class="col_half col_last tright">
                 <div class="copyrights-menu copyright-links fright clearfix">
-                    <a href="http://codeweek.eu">Home</a>/<a href="{{route('events_map')}}">Events</a>/<a href="{{route('ambassadors')}}">Ambassadors</a>/<a href="http://codeweek.eu/resources/">Resources</a>/<a href="http://codeweek.eu/about/">About</a>/<a href="http://codeweek.eu/privacy/">Privacy</a>/<a href="http://blog.codeweek.eu/">News</a>
+                    <a href="{{route('home')}}">@lang('menu.home')</a>/
+                    <a href="{{route('events_map')}}">@lang('menu.events')</a>/
+                    <a href="{{route('ambassadors')}}">@lang('menu.ambassadors')</a>/
+                    <a href="/resources/">@lang('menu.resources')</a>/
+                    <a href="/about/">@lang('menu.about')</a>/
+                    <a href="/privacy">@lang('menu.privacy')</a>/
+                    <a href="http://blog.codeweek.eu/">@lang('menu.news')</a>
                 </div>
                 <div class="fright clearfix">
                     <a href="https://www.facebook.com/codeEU" class="social-icon si-small si-borderless nobottommargin si-facebook">

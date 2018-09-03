@@ -17,13 +17,13 @@
                 <!-- Primary Navigation -->
                 <!-- ============================================= -->
                 <ul>
-                    <li><a href="{{route('home')}}">Home</a></li>
-                    <li class=""><a href="{{route('events_map')}}">Events</a></li>
-                    <li class=""><a href="{{route('ambassadors')}}">Ambassadors</a></li>
-                    <li><a href="/resources/">Resources</a></li>
-                    <li><a href="{{route('schools')}}">Schools</a></li>
-                    <li><a href="/about/">About</a></li>
-                    <li><a href="http://blog.codeweek.eu/">News</a></li>
+                    <li><a href="{{route('home')}}">@lang('menu.home')</a></li>
+                    <li class=""><a href="{{route('events_map')}}">@lang('menu.events')</a></li>
+                    <li class=""><a href="{{route('ambassadors')}}">@lang('menu.ambassadors')</a></li>
+                    <li><a href="/resources/">@lang('menu.resources')</a></li>
+                    <li><a href="{{route('schools')}}">@lang('menu.schools')</a></li>
+                    <li><a href="/about/">@lang('menu.about')</a></li>
+                    <li><a href="http://blog.codeweek.eu/">@lang('menu.news')</a></li>
                 </ul>
 
                 <!-- Top Search -->
@@ -31,7 +31,7 @@
                 <div id="top-search">
                     <a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
                     <form action="/search" method="get">
-                        <input type="text" name="q" class="form-control" value="" placeholder="Type & hit Enter...">
+                        <input type="text" name="q" class="form-control" value="" placeholder="@lang('menu.search')">
                     </form>
                 </div><!-- #top-search end -->
 
@@ -64,7 +64,7 @@
                           <i class="fa fa-circle fa-stack-2x"></i>
                           <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
                         </span>
-                                Map
+                                @lang('menu.map')
                             </a>
                         </li>
                         <li>
@@ -73,7 +73,7 @@
                           <i class="fa fa-circle fa-stack-2x"></i>
                           <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
                         </span>
-                                Add Event
+                                @lang('menu.add_event')
                             </a>
                         </li>
                         <li>
@@ -82,7 +82,7 @@
                       <i class="fa fa-circle fa-stack-2x"></i>
                       <i class="fa fa-search fa-stack-1x fa-inverse"></i>
                     </span>
-                                Search Events
+                                @lang('menu.search_event')
                             </a>
                         </li>
 
@@ -98,34 +98,69 @@
 
                             @if (Auth::check())
                                 <a href="/profile" class="dropdown-toggle avatar" data-toggle="dropdown">
-                                    Hello, {{ Auth::user()->firstname }}
+                                    @lang('menu.hello'), {{ Auth::user()->firstname }}
                                     <img src="{{Auth::user()->avatar}}" alt="{{ Auth::user()->name }}" class="img-circle"
                                          height="30" width="30">
                                     <b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu profile-menu" role="menu">
-                                    <li><a href="{{route('profile')}}">Profile</a></li>
+
                                     @role('ambassador|super admin')
-                                    <li><a href="{{route('pending')}}">Pending Events</a></li>
+                                    <li>
+                                        <a href="{{route('profile')}}">
+                                            <i class="fa fa-user"></i>
+                                            <span class="menu-li-item">@lang('menu.profile')</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{route('pending')}}">
+                                            <i class="fa fa-calendar"></i>
+                                            <span class="menu-li-item">@lang('menu.pending')</span>
+                                        </a>
+                                    </li>
                                     @endrole
 
-                                    <li><a href="{{route('my_events')}}"><i
-                                                    class="fa fa-user"></i> Your events</a></li>
-                                    <li><a href="{{route('certificates')}}"><i
-                                                    class="fa fa-user"></i> Your certificates</a></li>
-                                    <li><a href="/events_to_report"><i
-                                                    class="fa fa-user"></i> Report your events</a></li>
-
+                                    <li>
+                                        <a href="{{route('my_events')}}">
+                                            <i class="fa fa-calendar"></i>
+                                            <span class="menu-li-item">@lang('menu.your_events')</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{route('certificates')}}">
+                                            <i class="fa fa-file"></i>
+                                            <span class="menu-li-item">@lang('menu.your_certificates')</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/events_to_report">
+                                            <i class="fa fa-calendar-check-o"></i>
+                                            <span class="menu-li-item">@lang('menu.report')</span>
+                                        </a>
+                                    </li>
 
                                     @role('super admin')
-                                    <li><a href="{{route('activities')}}">Activities</a></li>
-                                    <li><a href="{{route('volunteers')}}">Volunteers</a></li>
+                                    <li>
+                                        <a href="{{route('activities')}}">
+                                            <i class="fa fa-list"></i>
+                                            <span class="menu-li-item">Activities</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{route('volunteers')}}">
+                                            <i class="fa fa-users"></i>
+                                            <span class="menu-li-item">Volunteers</span>
+                                        </a>
+                                    </li>
                                     @endrole
-                                    <li><a class="dropdown-item" href="{{ route('logout') }}"
-                                           onclick="event.preventDefault();
-                                                         document.getElementById('logout-form').submit();">
-                                            {{ __('Logout') }}
-                                        </a></li>
+
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                            <i class="fa fa-sign-out"></i>
+                                            <span class="menu-li-item">{{ __('menu.logout') }}</span>
+                                        </a>
+                                    </li>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST"
                                           style="display: none;">
@@ -138,12 +173,12 @@
                             @else
                                 <a href="/login" class="signin">
                                     <i class="fa fa-sign-in"></i>
-                                    Sign in</a>
+                                    @lang('menu.signin')</a>
                             @endif
                             {{--{% endif %}--}}
                         </li>
 
-                        <li class="nav-item dropdown">
+                        {{--<li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 @lang('base.languages.' . App::getLocale())
                                 <b class="caret"></b>
@@ -153,7 +188,7 @@
                                     <a class="dropdown-item" href="/setlocale/?locale={{$value}}">@lang('base.languages.' . $value)</a>
                                 @endforeach
                             </div>
-                        </li>
+                        </li>--}}
 
                     </ul>
                 </nav>

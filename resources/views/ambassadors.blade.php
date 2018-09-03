@@ -14,14 +14,14 @@
 
 
                     <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
-                        <h1>EU Code Week Ambassadors</h1>
+                        <h1>@lang('ambassador.title')</h1>
                         <span></span>
                     </div>
 
                     @if(auth()->user() && auth()->user()->country)
                         <div class="container clearfix h-full mt-8 mb-8">
-                            Your current country:
-                            <a href="/ambassadors">{{auth()->user()->country->name}}</a>
+                            @lang('ambassador.your_current_country'):
+                            <a href="/ambassadors">@lang('countries.'.auth()->user()->country->name)</a>
                         </div>
                     @endif
 
@@ -31,15 +31,15 @@
                             @if($country->iso === app('request')->input('country_iso'))
 
                                 <h2 class="flex justify-center text-center">
-                                 {{$country->name}}
+                                 @lang('countries.'.$country->name)
                                 </h2>
 
                                 @if($country->facebook)
-                                    <div class="justify-center text-center mb-8">Visit the <a href="{{$country->facebook}}">local Facebook page</a></div>
+                                    <div class="justify-center text-center mb-8">@lang('ambassador.visit_the') <a href="{{$country->facebook}}">@lang('ambassador.local_facebook_page')</a></div>
                                 @endif
 
                                 @if($country->website)
-                                    <div><a href="{{$country->website}}">Local Website</a></div>
+                                    <div><a href="{{$country->website}}">@lang('ambassador.local_website')</a></div>
                                 @endif
                             @endif
                         @endforeach
@@ -48,7 +48,7 @@
 
 
                     <div class="fancy-title title-border">
-                        <h3>Ambassadors</h3>
+                        <h3>@lang('ambassador.ambassadors')</h3>
                     </div>
 
 
@@ -100,7 +100,7 @@
 
 
                     @empty
-                        No ambassadors yet :(<br/>
+                        @lang('ambassador.no_ambassadors') :(<br/>
                     @endforelse
 
 
@@ -110,7 +110,7 @@
                 <div id="showcountries">
 
                     <ul class="clearfix list-style-none">
-                        <li style="clear:left">Countries with ambassadors</li>
+                        <li style="clear:left">@lang('ambassador.countries_with_ambassadors')</li>
 
                         @foreach ($countries_with_ambassadors as $country)
 
@@ -124,7 +124,7 @@
                                              alt="{{$country->country_iso}}">
 
                                         <div class="country-name">
-                                            {{$country->name}} ({{$country->total}})
+                                            @lang('countries.'.$country->name) ({{$country->total}})
                                         </div>
                                     </div>
                                 </a>
@@ -135,8 +135,8 @@
 
                     </ul>
                     <br/>
-                    <p style="text-align: center">Why don't you <a
-                                href="http://codeweek.eu/beambassador">volunteer</a>?</p>
+                    <p style="text-align: center"><a
+                                href="/beambassador">@lang('ambassador.why_dont_you_volunteer')</a></p>
 
 
                 </div>

@@ -11,8 +11,12 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-    'login' => 'Authentification',
-    'register' => 'Enregistrement',
+    'login' => 'TBD',
+    'register' => 'TBD',
+    'github' => 'TBD',
+    'twitter' => 'TBD',
+    'facebook' => 'TBD',
+    'google' => 'TBD'
 
 
 

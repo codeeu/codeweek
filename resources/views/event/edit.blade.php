@@ -4,12 +4,10 @@
     <section>
         <div class="container">
             <div class="clearfix">
-                <h1 class="pull-left">Edit your #codeEU event</h1>
+                <h1 class="pull-left">@lang('edit.title')</h1>
 
             </div>
-            <p class="aluminum">Required fields are marked with an * asterisk. Feel free to add the event listing in
-                your
-                local language.</p>
+            <p class="aluminum">@lang('edit.required_fields')</p>
 
             <form enctype="multipart/form-data" method="post" id="event" role="form" class="form-horizontal clearfix"
                   action="/events/{{$event->id}}">
@@ -76,8 +74,7 @@
 
                         <div class="form-group @if($errors->has('description')) has-error @endif">
                             <label for="id_description" class="col-sm-3 control-label">
-                                *
-                                Description
+                                * @lang('edit.description')
                             </label>
 
                             <div class="col-sm-9">
@@ -93,10 +90,10 @@
                         </div>
 
                         <div class="form-group @if($errors->has('audience')) has-error @endif">
-                            <span class="help-block col-sm-9 col-sm-offset-3">Who is the event for?</span>
+                            <span class="help-block col-sm-9 col-sm-offset-3">@lang('event.who')</span>
                             <label for="id_audience" class="col-sm-3 control-label">
                                 *
-                                Audience
+                                @lang('edit.audience')
                             </label>
 
                             <div class="col-sm-9">
@@ -108,10 +105,10 @@
                         </div>
 
                         <div class="form-group @if($errors->has('theme')) has-error @endif">
-                            <span class="help-block col-sm-9 col-sm-offset-3">Which aspect of coding will your event cover?</span>
+                            <span class="help-block col-sm-9 col-sm-offset-3">@lang('edit.aspect')</span>
                             <label for="id_theme" class="col-sm-3 control-label">
                                 *
-                                Theme
+                                @lang('edit.theme')
                             </label>
 
                             <div class="col-sm-9">
@@ -129,7 +126,7 @@
                         <div class="form-group @if($errors->has('location')) has-error @endif">
                             <label for="id_location" class="col-sm-3 control-label">
                                 *
-                                Location
+                                @lang('edit.location')
                             </label>
 
                             <div class="col-sm-9 first last">
@@ -146,7 +143,7 @@
                             </div>
 
 
-                            <span class="help-block col-sm-9 col-sm-offset-3">Type in an address or click on the map below to set a location.</span>
+                            <span class="help-block col-sm-9 col-sm-offset-3">@lang('edit.address')</span>
 
                             @component('components.validation-errors', ['field'=>'location'])
                             @endcomponent
@@ -195,13 +192,13 @@
                             <span class="help-block col-sm-9 col-sm-offset-3"></span>
                             <label for="id_event_url" class="col-sm-3 control-label">
 
-                                Website
+                                @lang('edit.website')
                             </label>
 
                             <div class="col-sm-9 first last">
                                 <input class="form-control" id="id_event_url" maxlength="200"
                                        name="event_url"
-                                       placeholder="Do you have a website with more information?"
+                                       placeholder="@lang('event.website.placeholder')"
                                        type="text"
                                        value="{{old('event_url',$event->event_url)}}">
                             </div>
@@ -212,13 +209,13 @@
                             <span class="help-block col-sm-9 col-sm-offset-3"></span>
                             <label for="id_contact_person" class="col-sm-3 control-label">
 
-                                Contact
+                                @lang('edit.contact')
                             </label>
 
                             <div class="col-sm-9 first last">
                                 <input class="form-control" id="id_contact_person" maxlength="75"
                                        name="contact_person"
-                                       placeholder="Would you like to display a contact email?" type="text"
+                                       placeholder="@lang('event.public.placeholder')" type="text"
                                        value="{{old('contact_person')?old('contact_person'):$event->contact_person}}">
 
                                 @component('components.validation-errors', ['field'=>'contact_person'])
@@ -230,7 +227,7 @@
                         <div class="form-group ">
                             <label for="id_tags" class="col-sm-3 control-label">
 
-                                Tags
+                                @lang('edit.tags')
                             </label>
 
                             <div class="col-sm-9 first last">
@@ -244,7 +241,7 @@
 
                         <div class="form-group">
                             <label for="id_picture" class="col-sm-3 control-label">
-                                Image
+                                @lang('edit.image')
                             </label>
 
                             <div class="col-sm-9 first last fileinput fileinput-new"
@@ -260,7 +257,7 @@
                                 </div>
 
                                 <div>
-                                    <span class="help-block">Larger images will be resized to 256 x 512 pixels. Maximum upload size is 256 x 1024.</span>
+                                    <span class="help-block">@lang('edit.help')</span>
                                     {{--<span class="btn btn-sm btn-file">--}}
                                     <picture-form></picture-form>
 
@@ -280,20 +277,16 @@
 
                 </div>
                 <div class="clearfix well well-sm">
-                    <h3>Your contact information</h3>
+                    <h3>@lang('edit.privacy_disclaimer.header')</h3>
                     <div class="aluminum">
-                        This information will only be visible to
-                        <a href="/ambassadors/" target="_blank">EU Code Week Ambassadors</a> and Code Week
-                        organizers, who
-                        will check your event before it appears on the map and might contact you if edits are
-                        necessary or
-                        for administering surveys for statistical purposes after the event.
+                        @lang('edit.privacy_disclaimer.text_1')
+                        <a href="/ambassadors/" target="_blank">@lang('edit.privacy_disclaimer.link_1')</a> @lang('edit.privacy_disclaimer.text_2')
                     </div>
                     <div class="col-md-6 first">
                         <div class="form-group ">
                             <span class="help-block col-sm-9 col-sm-offset-3"></span>
                             <label for="id_user_email" class="col-sm-3 control-label">
-                                * Your contact email
+                                * @lang('edit.privacy_disclaimer.contact_email')
                             </label>
                             <div class="col-sm-9">
                                 <input class="form-control" id="id_user_email" name="user_email" type="email"
@@ -308,7 +301,7 @@
                 <div class="col-md-6 first">
                     <div class="col-sm-9 col-sm-offset-3">
                         <div class="btn btn-primary btn-directional fa-plus-circle btn-lg submit-button-wrapper">
-                            <input type="submit" value="Edit event">
+                            <input type="submit" value=@lang('edit.edit')>
                         </div>
                     </div>
                 </div>

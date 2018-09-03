@@ -1,0 +1,104 @@
+body{
+    background-color: #f5f8fa;
+    display: flex;
+    justify-content: center;
+    margin:0;
+    font-family: Avenir, Helvetica, sans-serif;
+    color: #74787E;
+}
+
+.container-wrapper{
+    width: 620px;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+}
+
+h1{
+    color: #2F3133;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+h2{
+    color: #2F3133;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+h3{
+    color: #2F3133;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-top: 0;
+}
+
+ul{
+    box-sizing: border-box;
+    line-height: 1.4;
+}
+
+a{
+    color: #3869D4;
+}
+
+.logo{
+    height:60px;
+    border-bottom: 1px solid lightgrey;
+    text-align: center;
+}
+
+.logo img{
+    height: 60px;
+}
+
+.mail-content{
+    padding: 35px;
+}
+
+.social-media{
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.social-media span{
+    margin-right:5px;
+}
+
+footer{
+    height: 30px;
+    padding: 10px;
+    border-top: 1px solid lightgrey;
+}
+
+footer a{
+    font-size:14px;
+}
+
+.badge-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.badge{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.badge img{
+    width: 128px;
+}
+
+.badge span {
+    font-size: 12px;
+}

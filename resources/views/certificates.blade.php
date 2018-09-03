@@ -3,17 +3,17 @@
 @section('content')
 
 
-    <div class=" mt-6   flex justify-around">
-        <div class="w-4/5">
+    <section>
 
-            <h1>Certificates for {{ Auth::user()->fullName }}</h1>
+        <div class="container">
+            <h1 style="display: inline-block;">@lang('certificates.certificates_for'){{ Auth::user()->fullName }}</h1>
+            <hr>
 
             @if($reported_events->isEmpty())
                 <div class="row">
-                    <p>There are no certificates yet.</p>
+                    <p>@lang('certificates.no_certificates')</p>
                 </div>
             @else
-
 
                 <div class="row">
 
@@ -27,7 +27,8 @@
             @endif
 
         </div>
-    </div>
+
+    </section>
 
 
 @endsection

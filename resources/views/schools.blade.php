@@ -16,7 +16,7 @@
 
 
                     <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
-                        <h1>Schools: bring Code Week to your students</h1>
+                        <h1>@lang('schools.title')</h1>
                         <span></span>
                     </div>
 

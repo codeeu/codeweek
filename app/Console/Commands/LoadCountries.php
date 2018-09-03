@@ -43,7 +43,7 @@ class LoadCountries extends Command
         Log::debug('Load countries');
 
         $old_countries = DB::table('countries_plus_country')
-            ->select(DB::raw('iso, name, continent'))
+            ->select(DB::raw('iso, name, continent,population'))
             ->get();
 
         DB::table('countries')->truncate();
@@ -53,6 +53,10 @@ class LoadCountries extends Command
             $new->name = $old_country->name;
             $new->continent = $old_country->continent;
             $new->iso = $old_country->iso;
+            if ($old_country->population){
+                $new->population = $old_country->population;
+            }
+
             $new->save();
         }
     }

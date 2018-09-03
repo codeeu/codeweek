@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Support\Facades\Storage;
@@ -12,7 +13,7 @@ class User extends Authenticatable
 {
     use Notifiable;
     use HasRoles;
-
+    use SoftDeletes;
     /**
      * The attributes that are mass assignable.
      *
@@ -33,6 +34,8 @@ class User extends Authenticatable
 
     protected $appends = ['fullName'];
 
+    protected $dates = ['deleted_at'];
+
     public function events()
     {
         return $this->hasMany('App\Event', 'creator_id');
@@ -52,6 +55,7 @@ class User extends Authenticatable
     {
         return $filters->apply($query);
     }
+
 
     /**
      * Get the path to the user's avatar.
