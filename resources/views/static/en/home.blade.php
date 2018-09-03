@@ -124,13 +124,9 @@
 
             <section id="section-banner-teacher" class="section section-banner">
 
-                    <div class="teachers-banner">
-                        <a href="/schools"><img src="img/banner_teachers_background.png"/></a>
-                        <div class="text">
-                            <div class="title">Are you a teacher?</div>
-                            <div class="content"><a href="/schools">Click here to find out how to get involved!</a></div>
-                        </div>
-                    </div>
+                <a href="/schools">
+                    @include('static.banner_teacher')
+                </a>
 
             </section>
 
