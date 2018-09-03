@@ -35,6 +35,6 @@
             src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
     </script>
     <script type="text/javascript"
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZivlK6i8_JWt15x-BewfW9Vw2mhWPd7o"></script>
+            src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAPS_KEY')}}"></script>
     <script src="{{asset('js/map-index.js')}}"></script>
 @endpush
