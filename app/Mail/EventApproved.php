@@ -45,8 +45,10 @@ class EventApproved extends Mailable
             $view = 'emails.' . $default_language . '.event-approved';
         }
 
+        $subject = \Lang::get('email.subjects.approved');
+
         return $this
-            ->subject("Registration Approved")
+            ->subject($subject)
             ->view($view);
 
     }

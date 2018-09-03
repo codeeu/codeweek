@@ -53,7 +53,7 @@
                 </div>
 
 
-                <p>Are you a teacher or educator? Join the <a target="_blank" href="">EU Code Week Teachers</a> group on Facebook to exchange ideas, lesson plans, and have any questions answered about bringing Code Week to your students!</p>
+                <p>Are you a teacher or educator? Join the <a target="_blank" href="https://www.facebook.com/groups/774720866253044/">EU Code Week Teachers</a> group on Facebook to exchange ideas, lesson plans, and have any questions answered about bringing Code Week to your students!</p>
 
             </div>
 
