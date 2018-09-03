@@ -190,7 +190,7 @@ class EventController extends Controller
 
         $event->update($data);
 
-        Mail::to($event->owner()->email)->queue(new \App\Mail\EventApproved($event, $event->owner()));
+        Mail::to($event->owner->email)->queue(new \App\Mail\EventApproved($event, $event->owner));
 
     }
 
