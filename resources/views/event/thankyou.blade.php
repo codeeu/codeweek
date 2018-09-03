@@ -19,7 +19,7 @@
                 <a href="mailto:info@codeweek.eu?subject=Code Week events">@lang('event.thanks_page.phrase6')</a>.</p>
 
             <p>
-                @if($event->title)
+                @if($event->codeweek_for_all_participation_code)
                     @lang('event.thanks_page.phrase7')
                     <strong>{{$event->codeweek_for_all_participation_code}}</strong>
                 @endif
