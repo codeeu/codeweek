@@ -322,7 +322,7 @@
 
 
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZivlK6i8_JWt15x-BewfW9Vw2mhWPd7o&libraries=places"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAPS_KEY')}}&libraries=places"></script>
     <script src="{{asset('js/map-add-event.js')}}"></script>
 
 
