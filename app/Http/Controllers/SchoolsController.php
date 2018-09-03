@@ -18,8 +18,9 @@ class SchoolsController extends Controller
                     __('schools.1.content.2'),
                 ],
                 "button" => [
-                 "label"=>__('schools.1.button.label'),
-                 "link"=>"/login"
+                    "show"=> true,
+                    "label"=>__('schools.1.button.label'),
+                    "link"=>"/login"
                 ],
                 "map" => false
             ],
@@ -32,6 +33,7 @@ class SchoolsController extends Controller
                     __('schools.2.content.1'),
                 ],
                 "button" => [
+                    "show"=> true,
                     "label"=>__('schools.2.button.label'),
                     "link"=>"/add"
                 ],
@@ -44,6 +46,7 @@ class SchoolsController extends Controller
                     __('schools.3.content.1'),
                 ],
                 "button" => [
+                    "show"=> false,
                     "label"=>__('schools.3.button.label'),
                     "link"=>"/training"
                 ],
@@ -57,6 +60,7 @@ class SchoolsController extends Controller
                     __('schools.4.content.0'),
                 ],
                 "button" => [
+                    "show"=> true,
                     "label"=>__('schools.4.button.label'),
                     "link"=>"/codeweek4all"
                 ],

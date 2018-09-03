@@ -45,8 +45,10 @@ class EventRegistered extends Mailable
             $view = 'emails.' . $default_language . '.event-registered';
         }
 
+        $subject = \Lang::get('email.subjects.registered');
+
         return $this
-            ->subject("Registration received")
+            ->subject($subject)
             ->view($view);
     }
 }

@@ -13,22 +13,22 @@
 
 
                     <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
-                        <h1>Code Week Learning Blocks</h1>
+                        <h1>Code Week Learning Bits</h1>
                         <span></span>
                     </div>
 
                     <hr>
 
                     <p>
-                        Here you can find our new training materials for teachers. Each of them introduces you to key concepts related to coding and computational thinking activities, and gives you practical examples on how to integrate them in your lesson.
+                        Are you considering participating in EU Code Week but you don’t know where to start from?
                     </p>
 
                     <p>
-                        You do not need to have any experience of coding or programming to follow these short modules, so do give them a try. It takes only about 15 minutes to go through each of them.
+                        Here you can find free training materials & resources that will help you get started and plan your next innovative lesson.
                     </p>
 
                     <p>
-                        These materials are kindly made available by an international team of trainers, teachers and experts. Stay tuned for more to come.
+                        No previous experience on coding or programming is needed, each module takes only around 15’ to go through, and they introduce you to key concepts related to coding and computational thinking activities. Besides, the modules also give you practical tips and advices on how to integrate them in your classroom.
                     </p>
 
                     <ul>
@@ -40,7 +40,15 @@
                     </ul>
 
                     <p>
-                        Thank you for visiting our page. We hope you feel ready now to bring some digital creativity to your classroom and pin your activity on the <a href="/events">Code Week Map</a>!
+                        Now that you have taken one or more Code Week Learning Bits, we hope that you feel comfortable enough to bring some digital creativity to your classroom and pin your activity on the <a href="/events">Code Week Map</a>!
+                    </p>
+
+                    <p>
+                        You can easily organise a lesson in your classroom, an open day, or an event at your school. Just find a date and register your activity in the  <a href="/events">Code Week map</a>.  Each activity organiser will get a certificate of participation for their effort.
+                    </p>
+
+                    <p>
+                        If you would like to connect to an international group of enthusiastic teachers, join in the EU Code Week Facebook group for teachers!
                     </p>
 
                 </div>

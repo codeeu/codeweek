@@ -178,7 +178,7 @@
                             {{--{% endif %}--}}
                         </li>
 
-                        <li class="nav-item dropdown">
+                        {{--<li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 @lang('base.languages.' . App::getLocale())
                                 <b class="caret"></b>
@@ -188,7 +188,7 @@
                                     <a class="dropdown-item" href="/setlocale/?locale={{$value}}">@lang('base.languages.' . $value)</a>
                                 @endforeach
                             </div>
-                        </li>
+                        </li>--}}
 
                     </ul>
                 </nav>
