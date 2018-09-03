@@ -33,7 +33,7 @@ class CountriesTest extends TestCase
 
         $country_without_event = create('App\Country');
         $country_with_event = create('App\Country');
-        create('App\Event', ["country_iso" => $country_with_event->iso]);
+        create('App\Event', ["country_iso" => $country_with_event->iso,"status" => "APPROVED"]);
 
         $this->assertCount(1,Country::withEvents());
         $this->assertEquals(Country::withEvents()[0]->name, $country_with_event->name);

@@ -82,7 +82,7 @@ class LoginController extends Controller
                 [
                     'email' => $socialUser->getEmail(),
                     //'avatar' => $socialUser->getAvatar(),
-                    'firstname' => $socialUser->getName(),
+                    'firstname' => ($socialUser->getName()) ? $socialUser->getName() : $socialUser->getNickName(),
                     'lastname' => '',
                     'provider' => $provider,
                 ]);

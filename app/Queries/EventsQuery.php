@@ -28,7 +28,6 @@ class EventsQuery
         $request['latitude'] = explode(",", $request['geoposition'])[0];
         $request['longitude'] = explode(",", $request['geoposition'])[1];
 
-
         $event = Event::create($request->toArray());
 
 
@@ -42,7 +41,6 @@ class EventsQuery
                 $event->tags()->save($tag);
             }
         }
-
 
 
         foreach ($request['theme'] as $theme) {

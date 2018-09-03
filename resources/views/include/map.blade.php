@@ -8,7 +8,7 @@
         </div>
     </div>
     <div id="past-events">
-        Show events for
+        @lang('event.show_events_for')
 
         <select id="id_year" name="year">
             @foreach($years as $year)

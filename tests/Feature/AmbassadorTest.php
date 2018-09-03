@@ -93,22 +93,13 @@ class AmbassadorTest extends TestCase
         create('App\Event', ['country_iso'=>'BE']);
 
 
+
         $this->get('/ambassadors?country_iso=BE')->assertSee($this->belgium->facebook);
 
 
     }
 
-    /** @test */
-    public function ambassador_page_for_a_country_should_display_the_website_link()
-    {
 
-        create('App\Event', ['country_iso'=>'BE']);
-
-
-        $this->get('/ambassadors?country_iso=BE')->assertSee($this->belgium->website);
-
-
-    }
 
 
 }

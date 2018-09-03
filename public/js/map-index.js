@@ -104,7 +104,8 @@ $(document).on('ready', function () {
             // Add Marker
             var coordinates = val.geoposition.split(',');
             var marker1 = new google.maps.Marker({
-                position: new google.maps.LatLng(coordinates[0], coordinates[1])
+                position: new google.maps.LatLng(coordinates[0], coordinates[1]),
+                id:val.id
             });
 
             google.maps.event.addListener(marker1, 'click', function () {
@@ -145,9 +146,68 @@ $(document).on('ready', function () {
             markers.push(marker1);
 
 
+
         });
         var markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m', zoomOnClick: false});
+
+        google.maps.event.addListener(map,'click',function(event){
+            console.log(event.latLng.lat()+","+event.latLng.lng())
+        });
+
+        google.maps.event.addListener(markerCluster, 'clusterclick', function(cluster) {
+            if (cluster.getMarkers().length > 1) {
+                var lat = cluster.getMarkers()[0].position.lat();
+                var lng = cluster.getMarkers()[0].position.lng();
+                var samePosition = true;
+                var ids = [cluster.getMarkers()[0].id];
+                for (var i = 1; i < cluster.getMarkers().length; ++i) {
+                    if (lat != cluster.getMarkers()[i].position.lat() ||
+                    lng != cluster.getMarkers()[i].position.lng()) {
+                        samePosition = false;
+                        break;
+                    }else {
+                        ids.push(cluster.getMarkers()[i].id);
+                    }
+                }
+                if (samePosition){
+                    console.log("All are in the same position");
+                    var ajaxCalls = [];
+                    for(var j=0;j<ids.length; ++j){
+                        ajaxCalls.push(getEventDetail(ids[j]));
+                    }
+                    $.when.apply($, ajaxCalls)
+                        .then(function(){
+                            if (opened) {
+                                opened.close()
+                            };
+                            var content = '';
+                            for (var i=0;i<arguments.length;++i){
+                                var event = arguments[i][0].data;
+                                content += '<div><h4><a href="' + event.path + '" class="map-marker">' + event.title + '</a></h4><div>' +
+                                    '<img src="' + event.picture + '" class="img-polaroid marker-buble-img">' +
+                                    '<p style="overflow:hidden;">' + event.description +
+                                    '&nbsp;<a class="btn btn-sm" href="' + event.path + '" class="map-marker"><span>More...</span></a></p><hr>';
+
+                            }
+                            var infowindow = new google.maps.InfoWindow({
+                                content: content,
+                                pixelOffset: new google.maps.Size(0, -30)
+                            });
+                            opened = infowindow;
+                            infowindow.setPosition({lat: lat, lng: lng});
+                            infowindow.open(map);
+                        });
+                }else {
+                    markerCluster.zoomOnClick = true;
+                    map.fitBounds(cluster.getBounds());
+                }
+            }else {
+                markerCluster.zoomOnClick = true;
+                map.fitBounds(cluster.getBounds());
+            }
+        });
+
 
     };
 
@@ -167,6 +227,14 @@ $(document).on('ready', function () {
 // Create information window
     function createInfo(title, content) {
         return '<div class="infowindow"><span>' + title + '</span>' + content + '</div>';
+    }
+
+    function getEventDetail(id) {
+        return $.ajax({
+            dataType: "json",
+            url: "api/event/detail?id=" + id
+        });
+
     }
 
 

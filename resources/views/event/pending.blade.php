@@ -3,13 +3,12 @@
 @section('content')
     <section>
 
-        <div class="container">
-            <h1>Pending Events</h1>
+        <div class="container" style="padding-top:30px;">
+            <h1 style="display: inline-block;">Pending Events</h1>
+            <hr>
 
             @role('super admin')
             <country-select :code="'{{$country_iso}}'" :countries="{{$countries}}"></country-select>
-
-
             <br/>
             @endrole
 
@@ -31,8 +30,6 @@
         </div>
 
     </section>
-
-
 
 @endsection
 

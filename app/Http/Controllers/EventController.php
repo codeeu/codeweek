@@ -14,6 +14,7 @@ use Carbon\Carbon;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 class EventController extends Controller
 {
@@ -104,6 +105,8 @@ class EventController extends Controller
 
         $event->notifyAmbassadors();
 
+        Mail::to(auth()->user()->email)->queue(new \App\Mail\EventRegistered($event, auth()->user()));
+
         return view('event.thankyou', compact('event'));
     }
 
@@ -178,7 +181,16 @@ class EventController extends Controller
 
         $this->authorize('approve', $event);
 
-        $event->update(['status' => "APPROVED", 'approved_by' => auth()->user()->id]);
+        $data = ['status' => "APPROVED", 'approved_by' => auth()->user()->id];
+
+        if (empty($event->codeweek_for_all_participation_code)){
+            $codeweek_4_all_generated_code = 'cw' . Carbon::now()->format('y') . '-' . str_random(5);
+            $data['codeweek_for_all_participation_code'] = $codeweek_4_all_generated_code;
+        }
+
+        $event->update($data);
+
+        Mail::to($event->owner()->email)->queue(new \App\Mail\EventApproved($event, $event->owner()));
 
     }
 
@@ -187,7 +199,9 @@ class EventController extends Controller
 
         $this->authorize('approve', $event);
 
-        $event->update(['status' => "REJECTED", 'approved_by' => auth()->user()->id]);
+        $data = ['status' => "REJECTED", 'approved_by' => auth()->user()->id];
+
+        $event->update($data);
 
 
     }

@@ -18,25 +18,25 @@
                     <h1>{{ $event->title }}</h1>
                     <hr>
 
-                    <strong>Organized by:</strong>
+                    <strong>@lang('eventdetails.organised_by')</strong>
 
                     <p> {{ $event->organizer }}</p>
                     @if($event->contact_person)
 
-                        <strong>Contact email:</strong><br>
+                        <strong>@lang('eventdetails.contact_email')</strong><br>
                         <p><a href="mailto:{{ $event->owner->email }}">{{ $event->contact_person }}</a></p>
                     @endif
 
                     <address>
-                        <strong>Happening at: </strong><br/>
+                        <strong>@lang('eventdetails.happening_at')</strong><br/>
                         {{ $event->location }}
                     </address>
                     <p>
-                        <strong>From</strong> {{Carbon\Carbon::parse($event->start_date)->format('l jS \o\f F Y \a\t H:i')}}
+                        <strong>@lang('eventdetails.from')</strong> {{Carbon\Carbon::parse($event->start_date)->format('l jS \o\f F Y \a\t H:i')}}
                         {{--<strong>From</strong> {{ $event->start_date }} at {{ $event->start_date }}--}}
-                        <strong>to</strong> {{Carbon\Carbon::parse($event->end_date)->format('l jS \o\f F Y \a\t H:i')}}
+                        <strong>@lang('eventdetails.to')</strong> {{Carbon\Carbon::parse($event->end_date)->format('l jS \o\f F Y \a\t H:i')}}
                     </p>
-                    <strong>Description:</strong>
+                    <strong>@lang('eventdetails.description')</strong>
 
                     <p>
                         {{ $event->description }}
@@ -44,11 +44,11 @@
 
                     @if($event->event_url)
 
-                        <strong>More information:</strong>
+                        <strong>@lang('eventdetails.more_info')</strong>
                         <p><a href="{{ $event->event_url }}" target="_blank">{{ $event->event_url }}</a></p>
                     @endif
 
-                    <strong>This event is for:</strong>
+                    <strong>@lang('eventdetails.audience')</strong>
 
                     @if($event->audiences->count())
                         <div class="itens">
@@ -61,7 +61,7 @@
                     @endif
 
                     @if($event->themes->count())
-                        <strong>Main themes:</strong>
+                        <strong>@lang('eventdetails.themes')</strong>
                         <div class="itens">
                             <ul class="event-list">
                                 @foreach($event->themes as $theme)
@@ -72,7 +72,7 @@
                     @endif
 
                     @if($event->tags)
-                        <strong>Tags:</strong>
+                        <strong>@lang('eventdetails.tags')</strong>
                         <div class="itens">
                             <ul class="event-list">
                                 @foreach($event->tags as $tag)
@@ -82,7 +82,7 @@
                         </div>
                     @endif
 
-                    <strong>Share the event:</strong>
+                    <strong>@lang('eventdetails.share')</strong>
                     <div class="share-event-wrapper">
 
                         <div class="fb-like"
@@ -95,8 +95,8 @@
                            data-hashtags="codeEU">Tweet</a>
 
                         <div class="g-plusone" data-size="medium" data-href="http://events.codeweek.eu"></div>
-                        <a class="fa fa-envelope" title="Click to email this to a friend"
-                           href="mailto:?subject=Look at this awesome coding event&amp;body=Hi, check out {{ $event->title }} event at {{$event->path()}}"></a>
+                        <a class="fa fa-envelope" title='@lang('eventdetails.email.tooltip')'
+                           href="mailto:?subject=@lang('eventdetails.email.subject')&amp;body=@lang('eventdetails.email.body_1'){{ $event->title }}@lang('eventdetails.email.body_2'){{$event->path()}}"></a>
                     </div>
                 </div>
                 <div class="col-md-4 event-time-place">
@@ -107,12 +107,12 @@
                         @if (Auth::check())
                             @if($event->creator_id === auth()->user()->id)
                                 <a href="{{route('edit_event',$event->id)}}" class="btn pull-right edit-event-btn">
-                                    <i class="fa fa-pencil-square-o"></i>Edit event</a>
+                                    <i class="fa fa-pencil-square-o"></i>@lang('eventdetails.edit')</a>
 
                                 @if($event->status === 'PENDING')
                                     <div class="alert alert-warning">
-                                        <strong>NOTE:</strong> This event is stil being reviewed by <a
-                                                href="{{route('ambassadors')}}">moderators</a>.
+                                        <strong>@lang('eventdetails.note')</strong>@lang('eventdetails.pending_warning') <a
+                                                href="{{route('ambassadors')}}">@lang('eventdetails.pending_link')</a>.
                                     </div>
                                 @endif
 
@@ -142,7 +142,7 @@
             </div>
 
             <div class="col-md-12">
-                <h3>Nearby upcoming events:</h3>
+                <h3>@lang('eventdetails.nearby_upcoming_events')</h3>
 
 
                 <div class="justify-between md:flex sm:flex-row">

@@ -13,7 +13,8 @@ return [
     */
     'login' => 'Login',
     'register' => 'Register',
-
-
-
+    'github' => 'Sign in with Github',
+    'twitter' => 'Sign in with Twitter',
+    'facebook' => 'Sign in with Facebook',
+    'google' => 'Sign in with Google'
 ];
