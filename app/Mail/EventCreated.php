@@ -34,10 +34,8 @@ class EventCreated extends Mailable
      */
     public function build()
     {
-        $locale = session('locale');
-
         return $this
             ->subject("A new event on codeweek.eu needs your attention")
-            ->markdown('emails.'.$locale.'.event-created');
+            ->markdown('emails.en.event-created');
     }
 }
