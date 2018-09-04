@@ -96,7 +96,7 @@
 
                         <div class="g-plusone" data-size="medium" data-href="http://events.codeweek.eu"></div>
                         <a class="fa fa-envelope" title='@lang('eventdetails.email.tooltip')'
-                           href="mailto:?subject=@lang('eventdetails.email.subject')&amp;body=@lang('eventdetails.email.body_1'){{ $event->title }}@lang('eventdetails.email.body_2'){{$event->path()}}"></a>
+                           href="mailto:?subject=@lang('eventdetails.email.subject')&amp;body=@lang('eventdetails.email.body_1'){{ $event->title }}@lang('eventdetails.email.body_2'){{env('APP_URL')}}{{$event->path()}}"></a>
                     </div>
                 </div>
                 <div class="col-md-4 event-time-place">
