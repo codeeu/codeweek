@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title'=>'Add your #codeEU event',
+    'main_title'=>'Add your #codeweek event',
     'button'=>'Add Event',
     'howto'=>'How to organize your own event',
     'required'=>'Required fields are marked with an * asterisk. Feel free to add the event listing in your local language.',

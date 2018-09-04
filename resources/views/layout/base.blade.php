@@ -19,7 +19,7 @@
 
 
     <!-- Theme stylesheets -->
-    @if (Route::getCurrentRoute()->uri() != 'home' && Route::getCurrentRoute()->uri() != '/')
+    @if (Route::getCurrentRoute() && Route::getCurrentRoute()->uri() != 'home' && Route::getCurrentRoute()->uri() != '/')
         <link rel="stylesheet" href="{{asset('css/ext/style.css')}}" type="text/css" />
         <link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css" />
     @else
