@@ -12982,3 +12982,12 @@ textarea.border-form-control {
 	font-family: 'Raleway', sans-serif;
 	text-decoration: none;
 }
+#section-banner-teacher{
+	margin:0px;
+	padding:0px;
+}
+
+#section-join {
+	margin: -5px;
+	padding: 25px 0;
+}
