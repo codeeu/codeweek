@@ -27,6 +27,10 @@
 
     #wrapper { width: 1000px; }
 
+    #header #header-wrap .container{
+        max-width:1200px;
+    }
+
     #header.transparent-header.floating-header .container {
         width: 1030px;
         padding: 0 30px;
@@ -620,7 +624,7 @@
 
     #logo {
         display: block;
-        height: 100px;
+        height: 60px;
         float: none;
         margin: 0 auto 0 !important;
         max-width: none;
@@ -640,7 +644,7 @@
     #primary-menu-trigger {
         opacity: 1;
         pointer-events: auto;
-        top: 25px;
+        top: 5px;
         margin-top: 0;
         left: 0;
         z-index: 1;
@@ -924,10 +928,10 @@
     #top-cart,
     #side-panel-trigger {
         position: absolute;
-        top: 0;
+        top: 20px;
         left: auto;
         right: 15px;
-        margin: 40px 0;
+        margin: 0px;
         -webkit-transition: margin .4s ease;
         -o-transition: margin .4s ease;
         transition: margin .4s ease;
@@ -962,7 +966,7 @@
 
     #top-search a { right: 43px; }
 
-    #top-search form { height: 100px !important; }
+    #top-search form { height: 60px !important; }
 
     #primary-menu > div > #top-search form { height: 60px !important; }
 
