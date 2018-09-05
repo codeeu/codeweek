@@ -65,8 +65,8 @@ class Event extends Model
 
     public function picture_path()
     {
-        return env('AWS_URL') . $this->picture;
-        //return $this->picture ? $this->picture : "https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png";
+        //return env('AWS_URL') . $this->picture;
+        return $this->picture ? env('AWS_URL') . $this->picture : "https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png";
 
     }
 
