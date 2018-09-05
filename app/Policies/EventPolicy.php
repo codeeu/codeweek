@@ -19,8 +19,7 @@ class EventPolicy
             return true;
         }
         if ($user->hasRole('ambassador')) {
-            return true;
-            //return $event->country_iso === $user->country_iso;
+            return $event->country_iso === $user->country_iso;
         }
 
         return false;
