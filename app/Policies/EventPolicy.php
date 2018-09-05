@@ -5,6 +5,7 @@ namespace App\Policies;
 use App\Event;
 use App\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
+use Log;
 
 class EventPolicy
 {
@@ -18,7 +19,8 @@ class EventPolicy
             return true;
         }
         if ($user->hasRole('ambassador')) {
-            return $event->country_iso === $user->country_iso;
+            return true;
+            //return $event->country_iso === $user->country_iso;
         }
 
         return false;
@@ -38,7 +40,15 @@ class EventPolicy
     public function view(User $user, Event $event)
     {
 
+        Log::info("Trying to view event {$event->id} from {$event->owner->email} as user {$user->id} with email {$user->email}");
+
+
+
         if($event->status == "APPROVED"){
+            return true;
+        }
+
+        if ($user->email === $event->owner->email) {
             return true;
         }
 
@@ -48,9 +58,8 @@ class EventPolicy
         if ($user->hasRole('ambassador')) {
             return $event->country_iso === $user->country_iso;
         }
-        if ($user->email === $event->owner->email) {
-            return true;
-        }
+
+
 
         return false;
     }
@@ -58,6 +67,8 @@ class EventPolicy
     public function edit(User $user, Event $event)
     {
 
+        Log::info("Trying to edit event {$event->id} from {$event->owner->email} as user {$user->id} with email {$user->email}");
+
 
         if ($user->hasRole('super admin')) {
             return true;
@@ -65,6 +76,7 @@ class EventPolicy
         if ($user->hasRole('ambassador')) {
             return $event->country_iso === $user->country_iso;
         }
+
         if ($user->email === $event->owner->email) {
             return true;
         }
