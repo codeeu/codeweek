@@ -3,17 +3,6 @@
 @section('content')
     <section>
         <div class="container">
-            Profile page -
-            @role('super admin')
-            Super admin detected!<br/>
-            @else
-                I am not an admin...<br/>
-                @endrole
-
-
-
-
-
                 <avatar-form :user="{{ $profileUser }}"></avatar-form>
 
                 @role('ambassador')
