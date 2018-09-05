@@ -895,12 +895,11 @@ body.stretched #header.full-header .container {
     font-family: 'Raleway', sans-serif;
     font-size: 36px;
     line-height: 100%;
-    margin-right: 40px;
+    margin-right: 10px;
 }
 
 #header.full-header #logo {
-    padding-right: 30px;
-    margin-right: 30px;
+    padding-right: 10px;
     border-right: 1px solid #EEE;
 }
 
@@ -964,15 +963,13 @@ body.stretched #header.full-header .container {
 
 
 #primary-menu {
-    float: right;
+    float: left;
     height: 100px;
 }
 
 #header.full-header #primary-menu > ul {
     float: left;
-    padding-right: 15px;
-    margin-right: 15px;
-    border-right: 1px solid #EEE;
+    padding-right: 10px;
 }
 
 #header.transparent-header.full-header #primary-menu > ul { border-right-color: rgba(0,0,0,0.1); }
@@ -1013,7 +1010,7 @@ body.stretched #header.full-header .container {
 
 #primary-menu ul li:first-child { margin-left: 0; }
 
-#primary-menu ul li a {
+#primary-menu ul li a, #top-login ul li a, #top-language ul li a {
     display: block;
     height: 60px;
     line-height: 60px;
@@ -12973,4 +12970,75 @@ textarea.border-form-control {
 
 .center-content{
     text-align: center !important;
+}
+
+
+
+@media (min-width: 990px) {
+    #top-language .name, #top-login .name{
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    #top-language .name, #top-login .name{
+        display: block;
+    }
+}
+#top-language, #top-login {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    border-right: 1px solid #EEE;
+}
+
+#top-login {
+    border-left: 1px solid #EEE;
+}
+
+#top-language .nav.navbar,
+#top-login .nav.navbar,
+#top-login .nav.navbar .nav-item,
+#top-language .nav.navbar .nav-item{
+    height: 60px;
+}
+
+#top-language .nav.navbar a, #top-login .nav.navbar .dropdown-toggle {
+    color: #444;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+#top-language .nav.navbar a i, #top-login .nav.navbar .dropdown-toggle i {
+    line-height: 0px;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+#top-language .dropdown-menu {
+    top: 60px;
+}
+
+#top-language .dropdown-menu ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 375px;
+    margin: 0px !important;
+    padding: 0px;
+    list-style: none;
+}
+
+#top-language .dropdown-menu ul li {
+    width: 125px;
+    text-align: center;
+}
+
+#top-language .dropdown-menu ul li:hover {
+    background-color: #EEE;
 }
