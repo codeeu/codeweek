@@ -16,7 +16,8 @@ return [
 
     'subjects'=>[
         'registered'=>'EU Code Week: Thank you for Registering!',
-        'approved'=>'EU Code Week: Congratulations! Your Activity is Approved'
+        'approved'=>'EU Code Week: Congratulations! Your Activity is Approved',
+        'rejected'=>'EU Code Week: Your Activity is Rejected'
     ]
 
 ];

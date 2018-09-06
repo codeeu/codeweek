@@ -123,20 +123,8 @@
             <h2>Local resources in your language</h2>
 
             <div id="country-list">
-                @foreach($countries as $country)
-
-                    <strong>
-
-                        <a href="{{ route('resources_by_country',['country'=>$country]) }}"
-                           title="List of coding resources from {{ ucwords(str_replace('_', ' ', $country)) }}">{{ ucwords(str_replace('_', ' ', $country)) }}</a>
-
-                        @if(!$loop->last)
-                            -
-                        @endif
-
-                    </strong>
-
-                @endforeach
+                @component('components.countries-resources',['countries'=>$countries])
+                @endcomponent
             </div>
 
             <hr>

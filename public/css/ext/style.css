@@ -1004,6 +1004,8 @@ body.stretched #header.full-header .container {
     position: relative;
     float: left;
     margin-left: 2px;
+    max-width: 120px;
+    text-align:center;
 }
 
 #primary-menu ul li.mega-menu { position: inherit; }
@@ -1011,15 +1013,16 @@ body.stretched #header.full-header .container {
 #primary-menu ul li:first-child { margin-left: 0; }
 
 #primary-menu ul li a, #top-login ul li a, #top-language ul li a {
-    display: block;
+    display: flex;
     height: 60px;
-    line-height: 60px;
     padding: 0 15px;
     color: #444;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 11px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    text-align: center;
+    align-items: center;
     font-family: 'Raleway', sans-serif;
     -webkit-transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
     -o-transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
@@ -1902,8 +1905,6 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
 #header.sticky-header:not(.static-sticky) #primary-menu > ul > li > a { height: 60px; }
 
 #header.sticky-header:not(.static-sticky).sticky-style-2 { height: 161px; }
-
-#header.sticky-header:not(.static-sticky) #primary-menu > ul > li > a { line-height: 60px; }
 
 #header.sticky-header:not(.static-sticky) #primary-menu > ul > li > a i { line-height: 59px; }
 
@@ -12974,15 +12975,56 @@ textarea.border-form-control {
 
 
 
+@media (min-width: 470px) {
+    #top-language .name, #top-login .name{
+        display: none;
+    }
+    #top-login a, #top-login ul li a, #top-language ul li a {
+        padding: 0 5px;
+    }
+    #top-login ul li a i, #top-language ul li a i{
+        font-size:14px;
+    }
+    #primary-menu ul li a{
+        padding: 0px 10px;
+    }
+    .login_text{
+        display:block;
+    }
+}
+
 @media (min-width: 990px) {
     #top-language .name, #top-login .name{
         display: none;
+    }
+    #top-login a, #top-login ul li a, #top-language ul li a {
+        padding: 0 5px;
+    }
+    #top-login ul li a i, #top-language ul li a i{
+        font-size:14px;
+    }
+    #primary-menu ul li a{
+        padding: 0px 10px;
+    }
+    .login_text{
+        display:block;
+        font-size:12px;
     }
 }
 
 @media (min-width: 1200px) {
     #top-language .name, #top-login .name{
         display: block;
+    }
+    #top-login a, #top-login ul li a i, #top-language ul li a i{
+        font-size:18px;
+    }
+    #primary-menu ul li a{
+        padding: 0px 15px;
+    }
+    .login_text{
+        display:block;
+        font-size:12px;
     }
 }
 #top-language, #top-login {
@@ -13041,4 +13083,15 @@ textarea.border-form-control {
 
 #top-language .dropdown-menu ul li:hover {
     background-color: #EEE;
+}
+
+#top-language .dropdown-menu ul li a{
+    padding:15px;
+}
+
+#top-login .profile-menu li a{
+    padding: 0 25px;
+    display: block;
+    text-align: left;
+    line-height: 60px;
 }

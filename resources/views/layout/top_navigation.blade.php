@@ -27,7 +27,7 @@
             </nav>
             <!-- #primary-menu end -->
 
-            {{--<div id="top-language">
+            <div id="top-language">
                 <ul class="nav navbar navbar-right nobottommargin">
                     <li class="nav-item dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -46,7 +46,7 @@
                         </ul>
                     </li>
                 </ul>
-            </div>--}}
+            </div>
 
             <div id="top-login">
                 @if (Auth::check())
@@ -134,9 +134,9 @@
                         </li>
                     </ul>
                 @else
-                    <a href="/login" class="signin" style="padding: 0px 15px;">
+                    <a href="/login" class="signin" style="text-align: center;">
                         <i class="fa fa-sign-in"></i>
-                        @lang('menu.signin')
+                        <span class="login_text">@lang('menu.signin')</span>
                     </a>
                 @endif
             </div>
