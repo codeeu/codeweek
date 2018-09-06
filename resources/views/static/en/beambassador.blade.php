@@ -39,7 +39,7 @@
                         <li>Meet a lot of smart, interesting people from a variety of industries.</li>
                         <li>Become an essential part of one of the greatest grassroots initiatives in Europe.</li>
                         <li>Help us raise awareness about the importance of coding and getting Europe truly digital.</li>
-                        <li>Add the &quot;EU Code Week Ambassador&quot; title to your already amazing CV.</li>
+                        <li>Add the 'EU Code Week Ambassador' title to your already amazing CV.</li>
                         <li>Learn to code! (in case you don&rsquo;t yet already)</li>
                     </ul>
                     <hr/>
