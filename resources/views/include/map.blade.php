@@ -36,5 +36,6 @@
     </script>
     <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAPS_KEY')}}"></script>
-    <script src="{{asset('js/map-index.js')}}"></script>
+    @include('include.map-scripts')
+
 @endpush

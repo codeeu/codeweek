@@ -86,6 +86,7 @@
 <script src="{{asset('js/app.js')}}"></script>
 <script type="text/javascript" src="{{ asset('lib/jquery/jquery.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/ext/plugins.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/ext/countdown.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/ext/functions.js') }}"></script>
 
 
