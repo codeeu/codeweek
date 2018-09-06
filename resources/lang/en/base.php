@@ -44,6 +44,13 @@ return [
     'days'=>'Days',
     'hours'=>'Hours',
     'minutes'=>'Minutes',
-    'seconds'=>'Seconds'
+    'seconds'=>'Seconds',
+
+
+
+    'day'=>'Day',
+    'hour'=>'Hour',
+    'minute'=>'Minute',
+    'second'=>'Second'
 
 ];
