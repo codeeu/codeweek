@@ -129,6 +129,13 @@ return [
         'Webinar'=>'Webinar',
         'Live Streaming Session'=>'Live Streaming Session',
         'Other'=>'Other'
-    ]
+    ],
+
+
+
+
+    'More'=>'More'
+
+
 
 ];
