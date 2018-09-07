@@ -12975,7 +12975,7 @@ textarea.border-form-control {
 
 
 
-@media (min-width: 470px) {
+@media (min-width: 200px) {
     #top-language .name, #top-login .name{
         display: none;
     }
@@ -13058,7 +13058,6 @@ textarea.border-form-control {
 
 #top-language .nav.navbar a i, #top-login .nav.navbar .dropdown-toggle i {
     line-height: 0px;
-    font-size: 18px;
     margin-right: 5px;
 }
 
@@ -13094,4 +13093,14 @@ textarea.border-form-control {
     display: block;
     text-align: left;
     line-height: 60px;
+}
+
+.navbar-right .dropdown-menu {
+    right:0;
+    left:auto;
+}
+
+#primary-menu .sf-js-enabled.show {
+    float: right !important;
+    width: 100%;
 }

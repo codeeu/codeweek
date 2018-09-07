@@ -529,6 +529,14 @@
 
 }
 
+@media (max-width: 200px) {
+    #logo{
+        width: 60%;
+        float: left;
+        margin-left: 25px !important;
+    }
+}
+
 
 @media (max-width: 991px) {
 
@@ -625,8 +633,9 @@
     #logo {
         display: block;
         height: 60px;
-        float: none;
-        margin: 0 auto 0 !important;
+        width:170px;
+        float: left;
+        margin: 0 auto 0 25px !important;
         max-width: none;
         text-align: center;
         border: 0 !important;
@@ -708,6 +717,7 @@
         margin: 0 !important;
         text-align: left !important;
         border-top: 1px solid #EEE;
+        max-width: 100%;
     }
 
     #primary-menu ul li:first-child { border-top: 0; }
@@ -991,7 +1001,6 @@
         display: none;
         position: absolute;
         float: none;
-        width: 200px;
         top: 43px;
         left: auto;
         right: 15px;
@@ -1005,6 +1014,7 @@
     #page-menu nav ul {
         height: auto;
         background-color: rgba(0,0,0,0.2);
+        margin: 0 !important;
     }
 
     #page-menu nav li { float: none; }
@@ -1012,7 +1022,7 @@
     #page-menu nav li a {
         height: 40px;
         line-height: 40px;
-        padding: 0 15px;
+        padding: 5px 15px;
     }
 
 
