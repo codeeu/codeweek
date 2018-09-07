@@ -12996,7 +12996,7 @@ textarea.border-form-control {
 }
 
 
-@media (min-width: 470px) {
+@media (min-width: 200px) {
 	#top-language .name, #top-login .name{
 		display: none;
 	}
@@ -13012,6 +13012,7 @@ textarea.border-form-control {
 	.login_text{
 		display:block;
 	}
+
 }
 
 @media (min-width: 990px) {
@@ -13166,4 +13167,15 @@ textarea.border-form-control {
 
 #banner_teacher .banner_teacher_text .banner_teacher_title{
 	font-weight: bold;
+}
+
+
+.navbar-right .dropdown-menu {
+	right:0;
+	left:auto;
+}
+
+#primary-menu .sf-js-enabled.show {
+	float: right !important;
+	width: 100%;
 }
