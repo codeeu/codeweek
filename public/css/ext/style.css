@@ -13104,3 +13104,16 @@ textarea.border-form-control {
     float: right !important;
     width: 100%;
 }
+
+.learning-card{
+    display:flex;
+    flex:1;
+    border:1px solid lightsteelblue;
+    box-shadow: 1px 1px;
+    margin: .5rem;
+    margin-left: 0;
+}
+
+.learning-card>a{
+    padding:.5rem;
+}
