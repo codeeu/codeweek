@@ -12,10 +12,13 @@
 return [
 
     'languages' => [
+        'al' => 'Albanian',
+        'ba' => 'Bosnian',
         'en' => 'English',
         'fr' => 'French',
         'bg' => 'Bulgarian',
         'mt' => 'Maltese',
+        'mk' => 'Macedonian',
         'hr' => 'Croatian',
         'de' => 'German',
         'pl' => 'Polish',
