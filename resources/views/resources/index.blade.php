@@ -34,8 +34,9 @@
 
             <h2>@lang('resources.presentations_toolkits.title')</h2>
             <ul>
+            <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/EU+Code+Week+2018+Communications+Toolkit.zip">EU Code Week 2018 Communications Toolkit</a></li>
                 <li>
-
+                    
                     @lang('resources.presentations_toolkits.points.1')
 
                     <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_EN.pdf">EN</a>
