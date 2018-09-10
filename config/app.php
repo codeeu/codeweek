@@ -80,7 +80,9 @@ return [
 
     'locale' => 'en',
     'locales' => [
-        //'bg',
+        'al',
+        'ba',
+        'bg',
         'cs',
         'da',
         'de',
@@ -89,21 +91,22 @@ return [
         'es',
         'et',
         //'fi',
-        //'fr',
+        'fr',
         //'ga',
         'hr',
-        //'hu',
-        //'it',
+        'hu',
+        'it',
         'lt',
         'lv',
+        'mk',
         //'mt',
-        //'nl',
-        //'pl',
-        //'pt',
+        'nl',
+        'pl',
+        'pt',
         //'ro',
-        //'sk',
-        //'sl',
-        //'sv'
+        'sk',
+        'sl',
+        'sv'
     ],
 
     /*
