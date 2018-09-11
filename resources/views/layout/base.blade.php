@@ -37,7 +37,7 @@
 
 
 
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="{{asset('css/custom.css') }}" media="screen" rel="stylesheet" />
 
@@ -86,6 +86,7 @@
 <script src="{{asset('js/app.js')}}"></script>
 <script type="text/javascript" src="{{ asset('lib/jquery/jquery.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/ext/plugins.js') }}"></script>
+@include('scripts.countdown')
 <script type="text/javascript" src="{{ asset('js/ext/functions.js') }}"></script>
 
 

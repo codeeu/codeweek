@@ -14,9 +14,9 @@ return [
     |
     */
 
-    'title' => 'TBD',
-    'paragraph'=>'TBD',
-    'parcipating_with'=>'TBD',
-    'events'=>'TBD'
+    'title' => 'Tableau de bord des événements #codeEU',
+    'paragraph'=>'Dans quels pays européens les activités de codage sont-elles les plus intensives? Le tableau de bord reflète le nombre d’événements de codage répertoriés par nombre d’habitants. Ne vous étonnez donc pas si certains petits pays figurent en haut de la liste!',
+    'parcipating_with'=>'participe avec',
+    'events'=>'événements'
 
 ];

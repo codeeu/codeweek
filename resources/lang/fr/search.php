@@ -12,17 +12,18 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'audience_title'=>'TBD',
-    'theme_title'=>'TBD',
-    'placeholder' => 'TBD',
-    'submit' => 'TBD',
-    'label_country' => 'TBD',
+    'audience_title'=>'Public',
+    'theme_title'=>'Thème',
+    
+    'placeholder' => 'Rechercher le nom ou l’étiquette de l’événement',
+    'submit' => 'Rechercher',
+    'label_country' => 'Choisir un pays',
     'last_year_events' => [
-        'label' => 'TBD',
-        'yes' => 'TBD',
-        'no' => 'TBD'
+        'label' => 'Inclure les événements de l’année dernière',
+        'yes' => 'Oui',
+        'no' => 'Non'
     ],
-    'search_counter' => 'TBD',
-    'event'=>'TBD',
-    'events'=>'TBD'
+    'search_counter' => 'correspond à vos critères de recherche',
+    'event'=>'événement',
+    'events'=>'événements'
 ];

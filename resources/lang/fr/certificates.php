@@ -12,6 +12,6 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'certificates_for' => 'TBD ',
-    'no_certificates' => 'TBD'
+    'certificates_for' => 'Certificats pour ',
+    'no_certificates' => 'Il n’existe aucun certificat pour le moment.'
 ];

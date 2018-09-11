@@ -36,9 +36,20 @@ class EventRejected extends Mailable
     {
 
         $locale = session('locale');
+        if (empty($locale)){
+            $locale = \Config::get('app.fallback_locale');
+        }
+        $view = 'emails.'.$locale.'.event-rejected';
+        if(!view()->exists($view)){
+            $default_language = \Config::get('app.fallback_locale');
+            $view = 'emails.' . $default_language . '.event-rejected';
+        }
+
+        $subject = \Lang::get('email.subjects.rejected');
 
         return $this
-            ->subject("Registration Rejected")
-            ->markdown('emails.' . $locale . '.event-rejected');
+            ->subject($subject)
+            ->view($view);
+
     }
 }

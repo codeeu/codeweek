@@ -12,26 +12,26 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'organised_by'=>'TBD ',
-    'contact_email' => 'TBD ',
-    'happening_at' => 'TBD ',
-    'from' => 'TBD ',
-    'to' => ' TBD ',
-    'description' => 'TBD ',
-    'more_info' => 'TBD ',
-    'audience' => 'TBD ',
-    'themes' => 'TBD ',
-    'tags' => 'TBD ',
-    'share' => 'TBD ',
+    'organised_by'=>'Organisé par: ',
+    'contact_email' => 'Adresse e-mail de contact: ',
+    'happening_at' => 'À lieu à: ',
+    'from' => 'À partir du ',
+    'to' => ' jusqu’au ',
+    'description' => 'Description: ',
+    'more_info' => 'Plus d’informations: ',
+    'audience' => 'Public cible de cet événement: ',
+    'themes' => 'Thèmes principaux: ',
+    'tags' => 'Étiquettes: ',
+    'share' => 'Partager l’événement: ',
     'email' => [
-        'tooltip' => 'TBD',
-        'subject' => 'TBD',
-        'body_1' => 'TBD ',
-        'body_2' => 'TBD '
+        'tooltip' => 'Cliquez pour envoyer ces informations à un ami:',
+        'subject' => 'Venez découvrir cet événement fantastique consacré au codage',
+        'body_1' => 'Salut, jette un coup d’œil à ',
+        'body_2' => 'l’événement sur '
     ],
-    'edit' => 'TBD',
-    'note' => 'TBD ',
-    'pending_warning' => 'TBD ',
-    'pending_link' => 'TBD',
-    'nearby_upcoming_events' => 'TBD'
+    'edit' => 'Afficher l'événement',
+    'note' => 'REMARQUE: ',
+    'pending_warning' => 'Cet événement est toujours en cours de révision par ',
+    'pending_link' => 'les modérateurs',
+    'nearby_upcoming_events' => 'Événements à venir près de chez vous:'
 ];

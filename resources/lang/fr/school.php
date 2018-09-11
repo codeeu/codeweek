@@ -13,15 +13,15 @@ return [
     |
     */
 
-    'name'             => 'Nom de l\'école',
-    'location'           => 'Adresse de l\'école',
-    'description'                => 'Description de l\'école',
-    'school'                => 'Ecoles',
+    'name'             => 'Nom de l’établissement scolaire',
+    'location'           => 'Adresse de l’établissement scolaire',
+    'description'                => 'Description de l’établissement scolaire',
+    'school'                => 'Établissement scolaire',
     'add'                => 'Ajouter',
     'list'                => 'Liste',
     'required' => [
-        'name'=>'Le nom de l\'école est obligatoire',
-        'location'=>'L\'adresse de l\'école est obligatoire',
+        'name'=>'Le nom de l’établissement scolaire est requis',
+        'location'=>'L'adresse de l’établissement scolaire est requise',
     ]
 
 

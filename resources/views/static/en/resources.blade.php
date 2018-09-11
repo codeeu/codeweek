@@ -34,7 +34,8 @@
 
             <h2>Presentations and toolkits</h2>
             <ul>
-            <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/EU+Code+Week+2018+Communications+Toolkit.zip">EU Code Week 2018 Communications Toolkit</a></li>
+
+                <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/EU+Code+Week+2018+Communications+Toolkit.zip">EU Code Week 2018 Communications Toolkit</a></li>
                 <li>EU Code Week 2018 Leaflet.
 
                     <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_EN.pdf">EN</a>
@@ -124,20 +125,8 @@
             <h2>Local resources in your language</h2>
 
             <div id="country-list">
-                @foreach($countries as $country)
-
-                    <strong>
-
-                        <a href="{{ route('resources_by_country',['country'=>$country]) }}"
-                           title="List of coding resources from {{ ucwords(str_replace('_', ' ', $country)) }}">{{ ucwords(str_replace('_', ' ', $country)) }}</a>
-
-                        @if(!$loop->last)
-                            -
-                        @endif
-
-                    </strong>
-
-                @endforeach
+                @component('components.countries-resources',['countries'=>$countries])
+                @endcomponent
             </div>
 
             <hr>
