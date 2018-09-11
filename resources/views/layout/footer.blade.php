@@ -8,8 +8,7 @@
 
             <div class="col_half">
                 <img src="{{ asset('img/codeweekeu.png')}}" alt="" class="footer-logo" style="width: 250px">
-                A project by the <a href="http://ec.europa.eu/digital-agenda/en/young-advisors">Young Advisors Group</a> at the <a href="http://ec.europa.eu/index_en.htm">European Commission</a>
-
+                A grassroots initiative run by volunteers and supported by the <a href="http://ec.europa.eu/index_en.htm">European Commission</a>.
             </div>
 
             <div class="col_half col_last tright">

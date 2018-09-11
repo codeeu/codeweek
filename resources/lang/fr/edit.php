@@ -12,25 +12,25 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'TBD',
-    'required_fields' => 'TBD',
-    'description' => 'TBD',
-    'audience' => 'TBD',
-    'theme' => 'TBD',
-    'location' => 'TBD',
-    'website' => 'TBD',
-    'contact' => 'TBD',
-    'tags' => 'TBD',
-    'image' => 'TBD',
-    'help' => 'TBD',
-    'aspect' => 'TBD',
-    'address' => 'TBD',
+    'title' => 'Affichez votre événement #codeEU',
+    'required_fields' => 'Les champs obligatoires sont indiqués par un astérisque. Vous pouvez ajouter la liste des événements dans votre langue.',
+    'description' => 'Description',
+    'audience' => 'Public',
+    'theme' => 'Thème',
+    'location' => 'Lieu',
+    'website' => 'Site web',
+    'contact' => 'Contact',
+    'tags' => 'Étiquettes',
+    'image' => 'Image',
+    'help' => 'Les images plus grandes seront redimensionnées à 256 x 512 pixels. La taille maximale de téléchargement est de 256 x 1024.',
+    'aspect' => 'Quel aspect du codage votre événement couvrira-t-il?',
+    'address' => 'Saisissez une adresse ou cliquez sur la carte ci-dessous pour définir un lieu.',
     'privacy_disclaimer' => [
-        'header' => 'TBD',
-        'text_1' => 'TBD',
-        'link_1' => 'TBD',
-        'text_2'=> 'TBD',
-        'contact_email' => 'TBD'
+        'header' => 'Vos coordonnées',
+        'text_1' => 'Ces informations ne pourront être consultées que par les ',
+        'link_1' => 'ambassadeurs et organisateurs de la Code Week européenne.',
+        'text_2'=> ' Ceux-ci vérifieront votre événement avant qu’il n’apparaisse sur la carte et sont susceptibles de vous contacter si des modifications s’avèrent nécessaires, ou pour mener des enquêtes à des fins statistiques au lendemain de l’événement.',
+        'contact_email' => 'Votre adresse e-mail de contact'
     ], 
-    'edit' => 'TBD'
+    'edit' => 'Afficher l’événement'
 ];

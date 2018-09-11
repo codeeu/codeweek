@@ -1,6 +1,7 @@
 <?php
 
 return [
+
     /*
     |--------------------------------------------------------------------------
     | Authentication Language Lines
@@ -12,7 +13,7 @@ return [
     |
     */
 
-    'failed' => 'Ces identifiants ne correspondent pas à nos enregistrements',
-    'throttle' => 'Tentatives de connexion trop nombreuses. Veuillez essayer de nouveau dans :seconds secondes.',
+    'failed' => 'Cet identifiant ne correspond pas aux informations enregistrées.',
+    'throttle' => 'Tentatives de connexion trop nombreuses. Veuillez réessayer dans :seconds secondes.',
 
 ];

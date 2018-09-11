@@ -1,9 +1,10 @@
 <?php
 
 return [
+
     /*
     |--------------------------------------------------------------------------
-    | Password Reminder Language Lines
+    | Password Reset Language Lines
     |--------------------------------------------------------------------------
     |
     | The following language lines are the default lines which match reasons
@@ -12,9 +13,10 @@ return [
     |
     */
 
-    'password' => 'Les mots de passe doivent contenir au moins six caractères et être identiques.',
-    'reset' => 'Votre mot de passe a été réinitialisé !',
-    'sent' => 'Nous vous avons envoyé par courriel le lien de réinitialisation du mot de passe !',
-    'token' => "Ce jeton de réinitialisation du mot de passe n'est pas valide.",
-    'user' => "Aucun utilisateur n'a été trouvé avec cette adresse courriel.",
+    'password' => 'Le mot de passe doit comporter au moins six caractères et être identique à celui saisi dans le champ de confirmation.',
+    'reset' => 'Votre mot de passe a été réinitialisé!',
+    'sent' => 'Un lien permettant de réinitialiser votre mot de passe vous a été envoyé par e-mail!',
+    'token' => 'Cette clé de réinitialisation de votre mot de passe n’est pas valide.',
+    'user' => 'Cette adresse e-mail ne correspond a aucun utilisateur.',
+
 ];

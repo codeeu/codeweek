@@ -11,13 +11,10 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-    'login' => 'TBD',
-    'register' => 'TBD',
-    'github' => 'TBD',
-    'twitter' => 'TBD',
-    'facebook' => 'TBD',
-    'google' => 'TBD'
-
-
-
+    'login' => 'Connexion',
+    'register' => 'S’enregistrer',
+    'github' => 'Se connecter avec Github',
+    'twitter' => 'Se connecter avec Twitter',
+    'facebook' => 'Se connecter avec Facebook',
+    'google' => 'Se connecter avec Google'
 ];

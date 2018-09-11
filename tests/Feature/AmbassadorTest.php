@@ -27,7 +27,7 @@ class AmbassadorTest extends TestCase
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
         $this->france = create('App\Country',['iso'=>'FR']);
-        $this->belgium = create('App\Country',['iso'=>'BE']);
+        $this->belgium = create('App\Country',['iso'=>'BE','facebook'=>'facebook_url']);
 
 
         $this->admin_be = create('App\User', ['country_iso' => $this->belgium->iso])->assignRole('super admin');
@@ -90,8 +90,7 @@ class AmbassadorTest extends TestCase
     public function ambassador_page_for_a_country_should_display_the_facebook_link()
     {
 
-        create('App\Event', ['country_iso'=>'BE']);
-
+        create('App\Event', ['country_iso'=>'BE','status'=>'APPROVED']);
 
 
         $this->get('/ambassadors?country_iso=BE')->assertSee($this->belgium->facebook);

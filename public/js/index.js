@@ -77,7 +77,7 @@ var Codeweek = window.Codeweek || {};
                     buble_content = '<div><h4><a href="' + url + '" class="map-marker">' + event.title + '</a></h4><div>' +
                         image +
                         '<p style="overflow:hidden;">' + event.description_short +
-                        '&nbsp;<a class="btn btn-sm" href="' + url + '" class="map-marker"><span>More...</span></a></p>';
+                        '&nbsp;<a class="btn btn-sm" href="' + url + '" class="map-marker"><span>{{env("REDIS_PORT")}}</span></a></p>';
 
                     placeinfowindow.setContent(buble_content);
                     placeinfowindow.open(map, marker);

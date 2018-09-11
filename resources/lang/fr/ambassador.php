@@ -14,14 +14,14 @@ return [
     |
     */
 
-    'title' => 'TBD',
-    'your_current_country'=>'TBD',
-    'visit_the'=> 'TBD',
-    'local_facebook_page'=>'TBD',
-    'local_website'=>'TBD',
-    'ambassadors'=>'TBD',
-    'no_ambassadors'=>'TBD',
-    'countries_with_ambassadors'=>'TBD',
-    'why_dont_you_volunteer'=>'TBD'
+    'title' => 'Découvrez les ambassadeurs européens de la Code Week',
+    'your_current_country'=>'Votre pays actuel',
+    'visit_the'=> 'Consultez la',
+    'local_facebook_page'=>'page Facebook de votre pays',
+    'local_website'=>'Site web de votre pays',
+    'ambassadors'=>'Ambassadeurs',
+    'no_ambassadors'=>'Aucun ambassadeur pour le moment',
+    'countries_with_ambassadors'=>'Pays comptant des ambassadeurs',
+    'why_dont_you_volunteer'=>'Pourquoi ne pas vous porter volontaire?'
 
 ];
