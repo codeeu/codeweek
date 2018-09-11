@@ -9,7 +9,7 @@
         <div class="container">
 
 
-            <div class="content-wrap breathe">
+            <div class="content-wrap nopadding">
 
 
                 <div class="container clearfix">
@@ -19,6 +19,8 @@
                         <h1>@lang('schools.title')</h1>
                         <span></span>
                     </div>
+
+                    <hr>
 
 
                 </div>
