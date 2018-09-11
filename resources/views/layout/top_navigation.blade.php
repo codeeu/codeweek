@@ -26,27 +26,29 @@
 
             </nav>
             <!-- #primary-menu end -->
-
-            <div id="top-language">
-                <ul class="nav navbar navbar-right nobottommargin">
-                    <li class="nav-item dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-globe"></i>
-                            <span class="name">@lang('base.languages.' . App::getLocale())</span>
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu language-menu" role="menu">
-                            <ul>
-                            @foreach ($locales as $key => $value)
-                                <li>
-                                    <a class="dropdown-item" href="/setlocale/?locale={{$value}}">@lang('base.languages.' . $value)</a>
-                                </li>
-                            @endforeach
+            @if(env('APP_ENV') !== 'production')
+                <div id="top-language">
+                    <ul class="nav navbar navbar-right nobottommargin">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-globe"></i>
+                                <span class="name">@lang('base.languages.' . App::getLocale())</span>
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu language-menu" role="menu">
+                                <ul>
+                                    @foreach ($locales as $key => $value)
+                                        <li>
+                                            <a class="dropdown-item"
+                                               href="/setlocale/?locale={{$value}}">@lang('base.languages.' . $value)</a>
+                                        </li>
+                                    @endforeach
+                                </ul>
                             </ul>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+                        </li>
+                    </ul>
+                </div>
+            @endif
 
             <div id="top-login">
                 @if (Auth::check())
@@ -55,7 +57,8 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 
                                 @if(empty(Auth::user()->avatar))
-                                    <img src="{{Auth::user()->avatar}}" alt="{{ Auth::user()->name }}" class="img-circle"
+                                    <img src="{{Auth::user()->avatar}}" alt="{{ Auth::user()->name }}"
+                                         class="img-circle"
                                          height="30" width="30">
                                 @else
                                     <i class="fa fa-user-circle"></i>
@@ -127,7 +130,6 @@
                                       style="display: none;">
                                     {{ csrf_field() }}
                                 </form>
-
 
 
                             </ul>
