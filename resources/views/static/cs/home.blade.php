@@ -15,7 +15,7 @@
 
                             <h2 data-caption-animate="fadeInUp">CODEWEEK.EU</h2>
                             <p data-caption-animate="fadeInUp" data-caption-delay="200">6.&ndash;21. ř&iacute;jna 2018 <a
-                                        href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a></p>
+                                        href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a></p>
                         </div>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
 
                         <p>Jsme na Twitteru jako <a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>, na <a
                                     href="https://www.facebook.com/codeEU">Facebooku</a> a použ&iacute;v&aacute;me hashtag <a
-                                    href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a>.</p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">Pod&iacute;vej se, co se děje</a></div>
+                                    href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a>.</p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">Pod&iacute;vej se, co se děje</a></div>
 
                     <div class="clear"></div>
                 </div>
