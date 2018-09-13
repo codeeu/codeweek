@@ -17,7 +17,7 @@ return [
         "title1" => "Zašto bi trebalo da uvedete programiranje u učionicu?",
         "title2" => "Kako programiranje može da koristi učenicima? Šta vi kao nastavnici imate od toga?",
         "content" => [
-            "Verujemo da osnovna pismenost u digitalnom dobu mora da uključuje razumevanje programiranja i razvoj ključnih kompetencija u vezi sa računarskim razmišljanjem, kao što su rešavanje problema, saradnja i analitičke veštine."
+            "Verujemo da osnovna pismenost u digitalnom dobu mora da uključuje razumevanje programiranja i razvoj ključnih kompetencija u vezi sa računarskim razmišljanjem, kao što su rešavanje problema, saradnja i analitičke veštine.",
             "Učenje programiranja može da osnaži vaše učenike da budu na čelu digitalno kompetentnog društva, da bolje razumeju svet oko sebe i dobiju bolje šanse da budu uspešni u svom ličnom i profesionalnom životu",
             "Nedelja programiranja nudi svim učenicima mogućnost da naprave svoje prve korake kao digitalni autori, pružajući školama i nastavnicima besplatne mogućnosti za profesionalni razvoj, nastavne materijale, međunarodne izazove i mogućnosti za razmenu."
         ],
@@ -27,7 +27,7 @@ return [
     ],
     '2' => [
         "title1" => "Spremni da se pridružite?",
-        "title2" => "Organizujte čas, obuku ili događaj, i prikačite ga na mapu."
+        "title2" => "Organizujte čas, obuku ili događaj, i prikačite ga na mapu.",
         "content" => [
             "Bilo da imate neko znanje iz programiranja ili ne, možete lako da organizujete čas u svojoj učionici, otvoreni dan ili događaj u svojoj školi. Samo odredite datum i prijavite svoju aktivnost na mapi ispod. Ako mislite da vam je potrebna pomoć u pripremi časa programiranja, pređite na sledeći deo.",
             "Pogledajte neke od primera aktivnosti koje se organizuju pretražujući mapu u nastavku and add your own to join thousands of fellow educators across Europe and beyond: [embed map]"

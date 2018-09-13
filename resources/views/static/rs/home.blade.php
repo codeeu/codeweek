@@ -1,4 +1,4 @@
-﻿@extends(&apos;layout.base&apos;) @section(&apos;content&apos;)<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic"
+﻿@extends('layout.base') @section('content')<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic"
           rel="stylesheet" type="text/css"/>
 
     <div id="slider"
@@ -94,7 +94,9 @@
             </section>
 
             <section id="section-banner-teacher" class="section section-banner">
-                <div class="container clearfix"><a href="/schools"><img src="img/banner_teacher.png"/></a></div>
+                <a href="/schools">
+                    @include('static.banner_teacher')
+                </a>
             </section>
 
 
@@ -220,12 +222,12 @@
 
         </div>
 
-    </section><!-- #content end --> @endsection @push(&apos;scripts&apos;)<script>
+    </section><!-- #content end --> @endsection @push('scripts')<script>
         window.$(function ($) {
             var newDate = new Date(2018, 9, 6);
             $('#countdown-ex1').countdown({until: newDate});
         });
-    </script>@endpush @section(&quot;extra-css&quot;)<style>
+    </script>@endpush @section('extra-css')<style>
 
         .section-intro, .section-banner {
 
