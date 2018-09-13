@@ -14,9 +14,9 @@ return [
     |
     */
 
-    'title' => '#codeEU Pasâkumu rezultâtu pârskats',
-    'paragraph'=>'Kurâs Eiropas valstîs notiek aktîva programmçðana? Rezultâtu pârskats ir sakârtots pçc reìistrçto pasâkumu skaita proporcionâli iedzîvotâju skaitam, tâdçï neesiet pârsteigti, ka daþas mazâkas valstis ir ðîs saraksta augðdaïâ!',
-    'parcipating_with'=>'piedalâs ar',
-    'events'=>'pasâkumiem'
+    'title' => '#codeEU Pasākumu rezultātu pārskats',
+    'paragraph'=>'Kurās Eiropas valstīs notiek aktīva programmēšana? Rezultātu pārskats ir sakārtots pēc reģistrēto pasākumu skaita proporcionāli iedzīvotāju skaitam, tādēļ neesiet pārsteigti, ka dažas mazākas valstis ir šīs saraksta augšdaļā!',
+    'parcipating_with'=>'piedalās ar',
+    'events'=>'pasākumiem'
 
 ];

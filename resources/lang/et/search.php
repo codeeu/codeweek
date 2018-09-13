@@ -15,7 +15,7 @@ return [
     'audience_title'=>'Kuulajad',
     'theme_title'=>'Teema',
     
-    'placeholder' => 'Otsi ürituse nime vői silti',
+    'placeholder' => 'Otsi ürituse nime või silti',
     'submit' => 'Otsi',
     'label_country' => 'Vali riik',
     'last_year_events' => [

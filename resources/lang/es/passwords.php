@@ -13,10 +13,10 @@ return [
     |
     */
 
-    'password' => 'Las contraseńas deben contener un mínimo de seis caracteres y confirmarse con el mismo valor.',
-    'reset' => 'Se ha restablecido tu contraseńa.',
-    'sent' => 'Te hemos enviado por correo electrónico el enlace para restablecer la contraseńa.',
-    'token' => 'Este token de restablecimiento de contraseńa no es válido.',
+    'password' => 'Las contraseñas deben contener un mínimo de seis caracteres y confirmarse con el mismo valor.',
+    'reset' => 'Se ha restablecido tu contraseña.',
+    'sent' => 'Te hemos enviado por correo electrónico el enlace para restablecer la contraseña.',
+    'token' => 'Este token de restablecimiento de contraseña no es válido.',
     'user' => "No hemos encontrado ningún usuario con esa dirección de correo electrónico.",
 
 ];

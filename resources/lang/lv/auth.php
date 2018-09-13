@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'failed' => 'Đie akreditâcijas dati neatbilst műsu ierakstiem.',
-    'throttle' => 'Pârâk daudzi pieteikđanâs mçěinâjumi. Lűdzu, mçěiniet vçlreiz pçc :seconds sekundçm.',
+    'failed' => 'Šie akreditācijas dati neatbilst mūsu ierakstiem.',
+    'throttle' => 'Pārāk daudzi pieteikšanās mēģinājumi. Lūdzu, mēģiniet vēlreiz pēc :seconds sekundēm.',
 
 ];

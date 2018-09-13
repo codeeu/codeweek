@@ -14,8 +14,8 @@ return [
     |
     */
 
-    'title' => 'Tablica wyników wydarzeñ #codeEU',
-    'paragraph'=>'W których krajach w Europie odbywa siê najwiêcej wydarzeñ dotycz¹cych kodowania? Dane na tablicy wyników s¹ uporz¹dkowane wed³ug liczby wydarzeñ zwi¹zanych z kodowaniem w stosunku do populacji, a zatem niektóre z mniejszych pañstw mog¹ znaleŸæ siê wy¿ej na liœcie!',
+    'title' => 'Tablica wyników wydarzeń #codeEU',
+    'paragraph'=>'W których krajach w Europie odbywa się najwięcej wydarzeń dotyczących kodowania? Dane na tablicy wyników są uporządkowane według liczby wydarzeń związanych z kodowaniem w stosunku do populacji, a zatem niektóre z mniejszych państw mogą znaleźć się wyżej na liście!',
     'parcipating_with'=>'uczestniczy w',
     'events'=>'wydarzeniach'
 

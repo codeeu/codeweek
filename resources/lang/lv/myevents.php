@@ -12,17 +12,17 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'created_by'=>'Visu pasâkumu izveidotâjs: ',
+    'created_by'=>'Visu pasākumu izveidotājs: ',
     'no_events'=>[
-        'first_call_to_action' => "Jus vel neesat pievienojis nevienu pasakumu. Vai velaties",
-        'first_link' => 'to izdarit',
-        'second_call_to_action' => 'vai izlasît műsu ',
-        'second_link' => 'ceďvedi organizatoriem'
+        'first_call_to_action' => "Jūs vēl neesat pievienojis nevienu pasākumu. Vai vēlaties",
+        'first_link' => 'to izdarīt',
+        'second_call_to_action' => 'vai izlasīt mūsu ',
+        'second_link' => 'ceļvedi organizatoriem'
     ],
-    'view'=>'skatît',
+    'view'=>'skatīt',
     'status'=>[
-        'APPROVED'=>'APSTIPRINÂTS',
-        'REJECTED'=>'NORAIDÎTS',
-        'PENDING'=>'GAIDA APSTIPRINÂJUMU'
+        'APPROVED'=>'APSTIPRINĀTS',
+        'REJECTED'=>'NORAIDĪTS',
+        'PENDING'=>'GAIDA APSTIPRINĀJUMU'
     ]
 ];

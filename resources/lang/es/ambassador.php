@@ -22,6 +22,6 @@ return [
     'ambassadors'=>'Embajadores',
     'no_ambassadors'=>'Todavía no hay ningún embajador',
     'countries_with_ambassadors'=>'Países con embajadores',
-    'why_dont_you_volunteer'=>'żPor qué no te presentas voluntario?'
+    'why_dont_you_volunteer'=>'¿Por qué no te presentas voluntario?'
 
 ];

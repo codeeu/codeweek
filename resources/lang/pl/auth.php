@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'failed' => 'Nie znaleziono danych odpowiadaj¹cych tym danym uwierzytelniaj¹cym w naszym systemie.',
-    'throttle' => 'Podjêto zbyt wiele prób logowania. Spróbuj ponownie za :seconds s.',
+    'failed' => 'Nie znaleziono danych odpowiadających tym danym uwierzytelniającym w naszym systemie.',
+    'throttle' => 'Podjęto zbyt wiele prób logowania. Spróbuj ponownie za :seconds s.',
 
 ];
