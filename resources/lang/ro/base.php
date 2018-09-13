@@ -35,7 +35,12 @@ return [
         'es' => 'Spaniolă',
         'fi' => 'Finlandeză',
         'lt' => 'Lituaniană',
-        'sv' => 'Suedeză'
+        'sv' => 'Suedeză',
+        'al' => 'Albaneză',
+        'ba' => 'Bosniacă',
+        'mk' => 'Macedoneană',
+        'me'=> 'Muntenegreană',
+        'rs' => 'Sârbă'
     ],
 
     'resources_local_title'=>'Resurse de programare din',

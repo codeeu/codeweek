@@ -35,7 +35,12 @@ return [
         'es' => 'Spāņu',
         'fi' => 'Somu',
         'lt' => 'Lietuviešu',
-        'sv' => 'Zviedru'
+        'sv' => 'Zviedru',
+        'al' => 'Albāņu',
+        'ba' => 'Bosniešu',
+        'mk' => 'Maķedoniešu',
+        'me'=> 'Melnkalniešu',
+        'rs' => 'Serbu'
     ],
 
     'resources_local_title'=>'Programmēšanas resursi no',

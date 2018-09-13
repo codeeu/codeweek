@@ -35,7 +35,12 @@ return [
         'es' => 'Španielčina',
         'fi' => 'Fínčina',
         'lt' => 'Litovčina',
-        'sv' => 'Švédčina'
+        'sv' => 'Švédčina',
+        'al' => 'albánčina',
+        'ba' => 'bosniančina',
+        'mk' => 'macedónčina',
+        'me'=> 'čiernohorčina',
+        'rs' => 'srbčina'
     ],
 
     'resources_local_title'=>'Zdroje o programovaní z',

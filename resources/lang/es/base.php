@@ -35,7 +35,13 @@ return [
         'es' => 'Español',
         'fi' => 'Finlandés',
         'lt' => 'Lituano',
-        'sv' => 'Sueco'
+        'sv' => 'Sueco',
+        'al' => 'Albanés',
+        'ba' => 'Bosnio',
+        'mk' => 'Macedonio',
+        'me' => 'Montenegrino',
+        'rs' => 'Serbio'
+
     ],
 
     'resources_local_title'=>'Recursos de programación de',
