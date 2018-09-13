@@ -13,36 +13,36 @@ return [
     |
     */
 
-    'title' => 'Zg³oœ swoje wydarzenie #codeEU',
-    'event_title' => 'Tytu³ wydarzenia',
-    'number_required' => 'Podaj informacje szacunkowe, nawet je¿eli nie masz dok³adnych danych.',
-    'phrase1'=>'Mo¿esz wype³niæ ten formularz tylko raz! SprawdŸ dok³adnie wprowadzone dane. Je¿eli znajdziesz b³¹d, ',
-    'phrase2'=>'Po przes³aniu zg³oszenia zostanie automatycznie wystawiony certyfikat uczestnictwa w Tygodniu Kodowania, który mo¿esz pobraæ lub udostêpniæ. Przyk³adowy certyfikat mo¿na znaleŸæ tutaj.',
-    'phrase3'=>'Pola wymagane oznaczono gwiazdk¹ *.',
-    'phrase4'=>'Mo¿esz wype³niæ ten formularz tylko raz! SprawdŸ dok³adnie wprowadzone dane. Je¿eli znajdziesz b³¹d,',
-    'contactus'=>'skontaktuj siê z nami',
+    'title' => 'Zgłoś swoje wydarzenie #codeEU',
+    'event_title' => 'Tytuł wydarzenia',
+    'number_required' => 'Podaj informacje szacunkowe, nawet jeżeli nie masz dokładnych danych.',
+    'phrase1'=>'Możesz wypełnić ten formularz tylko raz! Sprawdź dokładnie wprowadzone dane. Jeżeli znajdziesz błąd, ',
+    'phrase2'=>'Po przesłaniu zgłoszenia zostanie automatycznie wystawiony certyfikat uczestnictwa w Tygodniu Kodowania, który możesz pobrać lub udostępnić. Przykładowy certyfikat można znaleźć tutaj.',
+    'phrase3'=>'Pola wymagane oznaczono gwiazdką *.',
+    'phrase4'=>'Możesz wypełnić ten formularz tylko raz! Sprawdź dokładnie wprowadzone dane. Jeżeli znajdziesz błąd,',
+    'contactus'=>'skontaktuj się z nami',
     'participants_count' => [
         'label' => 'Liczba uczestników',
     ],
     'average_participant_age' => [
-        'label'=>'Œredni wiek uczestników',
+        'label'=>'Średni wiek uczestników',
     ],
     'percentage_of_females' => [
         'label' => 'Odsetek kobiet',
     ],
     'codeweek_for_all_participation_code' => [
         'label' => 'Kod uczestnictwa w Tygodniu kodowania dla wszystkich',
-        'help' => 'W tym miejscu mo¿esz wprowadziæ kod uczestnictwa w wyzwaniu „CodeWeek4All”, je¿eli taki posiadasz. Je¿eli nie bierzesz udzia³u, zignoruj to pole.'
+        'help' => 'W tym miejscu możesz wprowadzić kod uczestnictwa w wyzwaniu „CodeWeek4All”, jeżeli taki posiadasz. Jeżeli nie bierzesz udziału, zignoruj to pole.'
     ],
     'name_for_certificate' => [
-        'label' => 'Imiê i nazwisko na certyfikacie',
-        'help' => 'Zmieñ je na imiê i nazwisko organizatora wydarzenia, który otrzyma certyfikat uczestnictwa w Tygodniu Kodowania. U¿ywaj wy³¹cznie znaków ASCII (alfabetu ³aciñskiego). Litery zawieraj¹ce akcenty, umlauty i podobne znaki nie s¹ obs³ugiwane.'
+        'label' => 'Imię i nazwisko na certyfikacie',
+        'help' => 'Zmień je na imię i nazwisko organizatora wydarzenia, który otrzyma certyfikat uczestnictwa w Tygodniu Kodowania. Używaj wyłącznie znaków ASCII (alfabetu łacińskiego). Litery zawierające akcenty, umlauty i podobne znaki nie są obsługiwane.'
     ],
-    'submit' => 'Przeœlij zg³oszenie wydarzenia',
+    'submit' => 'Prześlij zgłoszenie wydarzenia',
     'thanks_page'=>[
-        'title'=>'Dziêkujemy za zg³oszenie wydarzenia!',
+        'title'=>'Dziękujemy za zgłoszenie wydarzenia!',
         'certificate_ready'=>'Twój certyfikat jest gotowy.',
-        'download_button'=>'Kliknij tutaj, aby go pobraæ.',
+        'download_button'=>'Kliknij tutaj, aby go pobrać.',
         'back_events'=>'Powrót do wydarzenia'
     ]
 

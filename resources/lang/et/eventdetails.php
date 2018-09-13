@@ -20,11 +20,11 @@ return [
     'description' => 'Kirjeldus: ',
     'more_info' => 'Lisateave: ',
     'audience' => 'Sihtrühm: ',
-    'themes' => 'Pőhiteemad: ',
+    'themes' => 'Põhiteemad: ',
     'tags' => 'Sildid: ',
     'share' => 'Jaga üritust: ',
     'email' => [
-        'tooltip' => 'Klőpsa, et saata see e-postiga sőbrale',
+        'tooltip' => 'Klõpsa, et saata see e-postiga sõbrale',
         'subject' => 'Vaata seda vapustavat programmeerimisüritust',
         'body_1' => 'Tere! Vaata ',
         'body_2' => 'üritust '

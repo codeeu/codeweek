@@ -13,10 +13,10 @@ return [
     |
     */
 
-    'password' => 'Parolçs ir jâbűt vismaz seđâm rakstzîmçm, un apstiprinâjumam tâs jânorâda divreiz.',
-    'reset' => 'Parole ir atiestatîta!',
-    'sent' => 'Mçs esam nosűtîjuđi jums paroles atiestatîđanas saiti!',
-    'token' => 'Đis paroles atiestatîđanas kods ir nederîgs.',
-    'user' => "Mes nevaram atrast lietotaju ar šadu e-pasta adresi.",
+    'password' => 'Parolēs ir jābūt vismaz sešām rakstzīmēm, un apstiprinājumam tās jānorāda divreiz.',
+    'reset' => 'Parole ir atiestatīta!',
+    'sent' => 'Mēs esam nosūtījuši jums paroles atiestatīšanas saiti!',
+    'token' => 'Šis paroles atiestatīšanas kods ir nederīgs.',
+    'user' => "Mēs nevaram atrast lietotāju ar šādu e-pasta adresi.",
 
 ];

@@ -21,7 +21,7 @@ return [
     'local_website'=>'lokalna strona internetowa',
     'ambassadors'=>'Ambasadorzy',
     'no_ambassadors'=>'Brak ambasadorów',
-    'countries_with_ambassadors'=>'Kraje posiadaj¹ce ambasadorów',
-    'why_dont_you_volunteer'=>'Mo¿e chcesz zostaæ wolontariuszem?'
+    'countries_with_ambassadors'=>'Kraje posiadające ambasadorów',
+    'why_dont_you_volunteer'=>'Może chcesz zostać wolontariuszem?'
 
 ];

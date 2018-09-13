@@ -13,7 +13,7 @@ return [
     |
     */
     'title' => 'Edita tu evento #CodeEU',
-    'required_fields' => 'Los campos requeridos aparecen marcados con un asterisco (*). No dudes en ańadir el listado de eventos en tu idioma local.',
+    'required_fields' => 'Los campos requeridos aparecen marcados con un asterisco (*). No dudes en añadir el listado de eventos en tu idioma local.',
     'description' => 'Descripción',
     'audience' => 'Público',
     'theme' => 'Tema',
@@ -22,8 +22,8 @@ return [
     'contact' => 'Contacto',
     'tags' => 'Etiquetas',
     'image' => 'Imagen',
-    'help' => 'Las imágenes de mayor tamańo se deben redimensionar a 256 × 512 píxeles. El tamańo máximo que se puede cargar es 256 × 1024.',
-    'aspect' => 'żQué aspecto de la programación cubrirá?',
+    'help' => 'Las imágenes de mayor tamaño se deben redimensionar a 256 × 512 píxeles. El tamaño máximo que se puede cargar es 256 × 1024.',
+    'aspect' => '¿Qué aspecto de la programación cubrirá?',
     'address' => 'Escribe una dirección o haz clic en el mapa que aparece a continuación para definir una ubicación.',
     'privacy_disclaimer' => [
         'header' => 'Tus datos de contacto',

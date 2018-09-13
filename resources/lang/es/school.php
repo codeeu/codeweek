@@ -17,7 +17,7 @@ return [
     'location'           => 'Ubicación del centro escolar',
     'description'                => 'Descripción del centro escolar',
     'school'                => 'Centro escolar',
-    'add'                => 'Ańadir',
+    'add'                => 'Añadir',
     'list'                => 'Lista',
     'required' => [
         'name'=>'Se requiere un nombre del centro escolar',

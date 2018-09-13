@@ -16,10 +16,10 @@ return [
     'title' => 'Informa sobre tu evento #CodeEU',
     'event_title' => 'Título del evento',
     'number_required' => 'Ofrece una estimación aunque no dispongas de datos exactos.',
-    'phrase1'=>'ˇSolamente podrás cumplimentar este formulario una vez! Comprueba detenidamente los datos. Si cometes un error, ',
+    'phrase1'=>'¡Solamente podrás cumplimentar este formulario una vez! Comprueba detenidamente los datos. Si cometes un error, ',
     'phrase2'=>'Una vez que hayas presentado el informe, se emitirá automáticamente un certificado de participación en la Semana de la Programación y pasará a estar disponible para descargarlo o compartirlo. Puedes ver un certificado de muestra aquí.',
     'phrase3'=>'Los campos requeridos aparecen marcados con un asterisco (*).',
-    'phrase4'=>'ˇSolamente podrás cumplimentar este formulario una vez! Comprueba detenidamente los datos. Si cometes un error,',
+    'phrase4'=>'¡Solamente podrás cumplimentar este formulario una vez! Comprueba detenidamente los datos. Si cometes un error,',
     'contactus'=>'contacta con nosotros',
     'participants_count' => [
         'label' => 'Cifra de participantes',
@@ -40,7 +40,7 @@ return [
     ],
     'submit' => 'Presenta un informe del evento',
     'thanks_page'=>[
-        'title'=>'ˇGracias por elaborar un informe sobre tu evento!',
+        'title'=>'¡Gracias por elaborar un informe sobre tu evento!',
         'certificate_ready'=>'Tu certificado está listo.',
         'download_button'=>'Haz clic aquí para descargarlo.',
         'back_events'=>'Vuelve a tu evento'

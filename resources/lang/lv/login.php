@@ -12,9 +12,9 @@ return [
     |
     */
     'login' => 'Pieteikties',
-    'register' => 'Reěistrçties',
-    'github' => 'Pierakstîties ar Github',
-    'twitter' => 'Pierakstîties ar Twitter',
-    'facebook' => 'Pierakstîties ar Facebook',
-    'google' => 'Pierakstîties ar Google'
+    'register' => 'Reģistrēties',
+    'github' => 'Pierakstīties ar Github',
+    'twitter' => 'Pierakstīties ar Twitter',
+    'facebook' => 'Pierakstīties ar Facebook',
+    'google' => 'Pierakstīties ar Google'
 ];

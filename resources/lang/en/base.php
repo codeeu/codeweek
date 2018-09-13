@@ -18,7 +18,7 @@ return [
         'fr' => 'French',
         'bg' => 'Bulgarian',
         'mk' => 'Macedonian',
-        'cnr'=> 'Montenegrin',
+        'me'=> 'Montenegrin',
         'hr' => 'Croatian',
         'de' => 'German',
         'pl' => 'Polish',
@@ -38,7 +38,7 @@ return [
         'fi' => 'Finnish',
         'lt' => 'Lithuanian',
         'sv' => 'Swedish',
-        'sr' => 'Serbian'
+        'rs' => 'Serbian'
     ],
 
     'resources_local_title'=>'Coding resources from',

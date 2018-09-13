@@ -168,7 +168,7 @@
                         Don’t miss the latest updates. Follow #CodeWeek on social media!
                     </span>
             <a target="_blank" href="https://www.facebook.com/codeEU"><img src="{{asset('img/facebook_circle.png')}}"></a>
-            <a target="_blank" href="https://twitter.com/search?q=%23codeEU&amp;f=realtime"><img src="{{asset('img/twitter_circle.png')}}"></a>
+            <a target="_blank" href="https://twitter.com/search?q=%23codeweek&amp;f=realtime"><img src="{{asset('img/twitter_circle.png')}}"></a>
         </div>
 
 

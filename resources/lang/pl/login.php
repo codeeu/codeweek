@@ -11,10 +11,10 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-    'login' => 'Zaloguj siê',
-    'register' => 'Zarejestruj siê',
-    'github' => 'Zaloguj siê poprzez serwis Github',
-    'twitter' => 'Zaloguj siê poprzez serwis Twitter',
-    'facebook' => 'Zaloguj siê poprzez serwis Facebook',
-    'google' => 'Zaloguj siê poprzez serwis Google'
+    'login' => 'Zaloguj się',
+    'register' => 'Zarejestruj się',
+    'github' => 'Zaloguj się poprzez serwis Github',
+    'twitter' => 'Zaloguj się poprzez serwis Twitter',
+    'facebook' => 'Zaloguj się poprzez serwis Facebook',
+    'google' => 'Zaloguj się poprzez serwis Google'
 ];
