@@ -103,7 +103,7 @@ return [
         'pl',
         'pt',
         'ro',
-        //'rs',
+        'rs',
         'sk',
         'sl',
         'sv'
