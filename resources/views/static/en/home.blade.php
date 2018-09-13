@@ -20,7 +20,7 @@
 
                             <h2 data-caption-animate="fadeInUp">CODEWEEK.EU</h2>
                             <p data-caption-animate="fadeInUp" data-caption-delay="200">6th &mdash; 21st October 2018 <a
-                                        href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a></p>
+                                        href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a></p>
                         </div>
                     </div>
                 </div>
@@ -216,7 +216,7 @@
                         <p>
                             We're on Twitter as <a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>, on <a
                                     href="https://www.facebook.com/codeEU">Facebook</a> and we use the <a
-                                    href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a> hashtag.
+                                    href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a> hashtag.
                         </p>
 
                         <a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">See
