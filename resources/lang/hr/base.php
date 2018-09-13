@@ -35,7 +35,12 @@ return [
         'es' => 'Španjolski',
         'fi' => 'Finski',
         'lt' => 'Litavski',
-        'sv' => 'Švedski'
+        'sv' => 'Švedski',
+        'al' => 'Albanski',
+        'ba' => 'Bosanski',
+        'mk' => 'Makedonski',
+        'me'=> 'Crnogorski',
+        'rs' => 'Srpski'
     ],
 
     'resources_local_title'=>'Resursi za programiranje iz',

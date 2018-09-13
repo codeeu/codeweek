@@ -35,7 +35,13 @@ return [
         'es' => 'espanja',
         'fi' => 'suomi',
         'lt' => 'liettua',
-        'sv' => 'ruotsi'
+        'sv' => 'ruotsi',
+        'al' => 'albania',
+        'ba' => 'bosnia',
+        'mk' => 'makedonia',
+        'cnr'=> 'montenegro',
+        'sr' => 'serbia'
+
     ],
 
     'resources_local_title'=>'Koodausaineistoja maasta',

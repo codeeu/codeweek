@@ -35,7 +35,13 @@ return [
         'es' => 'Spanjisht',
         'fi' => 'Finlandisht',
         'lt' => 'Lituanisht',
-        'sv' => 'Suedisht'
+        'sv' => 'Suedisht',
+        'al' => 'Shqip',
+        'ba' => 'Boshnjakisht',
+        'mk' => 'Maqedonisht',
+        'me'=> 'Malazisht',
+        'rs' => 'Serbisht'
+
     ],
 
     'resources_local_title'=>'Burimet e kodimit nga',

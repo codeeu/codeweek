@@ -35,7 +35,12 @@ return [
         'es' => 'Ispanř',
         'fi' => 'Suomiř',
         'lt' => 'Lietuviř',
-        'sv' => 'Đvedř'
+        'sv' => 'Đvedř',
+        'al' => 'albanų',
+        'ba' => 'bosnių',
+        'mk' => 'makedonų',
+        'me'=> 'juodkalniečių',
+        'rs' => 'serbų'
     ],
 
     'resources_local_title'=>'Programavimo iđtekliai iđ',

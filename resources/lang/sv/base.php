@@ -35,7 +35,12 @@ return [
         'es' => 'spanska',
         'fi' => 'finska',
         'lt' => 'litauiska',
-        'sv' => 'svenska'
+        'sv' => 'svenska',
+        'al' => 'albanska',
+        'ba' => 'bosniska',
+        'mk' => 'makedonska',
+        'cnr'=> 'montenegrinska',
+        'sr' => 'serbiska'
     ],
 
     'resources_local_title'=>'Kodningsresurser frĺn',

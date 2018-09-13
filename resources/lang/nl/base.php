@@ -35,7 +35,12 @@ return [
         'es' => 'Spaans',
         'fi' => 'Fins',
         'lt' => 'Litouws',
-        'sv' => 'Zweeds'
+        'sv' => 'Zweeds',
+        'al' => 'Albanees',
+        'ba' => 'Bosnisch',
+        'mk' => 'Macedonisch',
+        'me'=> 'Montenegrijns',
+        'rs' => 'Servisch'
     ],
 
     'resources_local_title'=>'Hulpmiddelen voor programmeren van',

@@ -35,7 +35,12 @@ return [
         'es' => 'Spagnolo',
         'fi' => 'Finlandese',
         'lt' => 'Lituano',
-        'sv' => 'Svedese'
+        'sv' => 'Svedese',
+        'al' => 'albanese',
+        'ba' => 'bosniaco',
+        'mk' => 'macedone',
+        'me'=> 'montenegrino',
+        'rs' => 'serbo'
     ],
 
     'resources_local_title'=>'Risorse di programmazione da',

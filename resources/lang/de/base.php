@@ -35,7 +35,12 @@ return [
         'es' => 'Spanisch',
         'fi' => 'Finnisch',
         'lt' => 'Litauisch',
-        'sv' => 'Schwedisch'
+        'sv' => 'Schwedisch',
+        'al' => 'Albanisch',
+        'ba' => 'Bosnisch',
+        'mk' => 'Mazedonisch',
+        'me'=> 'Montenegrinisch',
+        'rs' => 'Serbisch'
     ],
 
     'resources_local_title'=>'Materialien zum Programmieren aus',
