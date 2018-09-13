@@ -18,7 +18,7 @@ return [
         'fr' => 'French',
         'bg' => 'Bulgarian',
         'mk' => 'Macedonian',
-        'me'=> 'Montenegrin',
+        'me' => 'Montenegrin',
         'hr' => 'Croatian',
         'de' => 'German',
         'pl' => 'Polish',

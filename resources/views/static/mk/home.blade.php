@@ -15,7 +15,7 @@
 
                             <h2 data-caption-animate="fadeInUp">CODEWEEK.EU</h2>
                             <p data-caption-animate="fadeInUp" data-caption-delay="200">6 &mdash; 21 октомври 2018 год. <a
-                                        href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a></p>
+                                        href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a></p>
                         </div>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
 
                         <p>Ние сме на Twitter како <a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>, на <a
                                     href="https://www.facebook.com/codeEU">Facebook</a> и го користиме <a
-                                    href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a> хаштагот.</p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">Погледнете што се случува</a></div>
+                                    href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a> хаштагот.</p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">Погледнете што се случува</a></div>
 
                     <div class="clear"></div>
                 </div>

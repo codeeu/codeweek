@@ -35,7 +35,13 @@ return [
         'es' => 'hiszpański',
         'fi' => 'fiński',
         'lt' => 'litewski',
-        'sv' => 'szwedzki'
+        'sv' => 'szwedzki',
+        'al' => 'albański',
+        'ba' => 'bośniacki',
+        'mk' => 'macedoński',
+        'cnr'=> 'czarnogórski',
+        'sr' => 'serbski'
+
     ],
 
     'resources_local_title'=>'Zasoby dotyczące kodowania z',
