@@ -74,7 +74,7 @@ return [
         'library' => 'Βιβλιοθήκη',
         'non profit' => 'Μη κερδοσκοπικός οργανισμός',
         'private business' => 'Ιδιωτική επιχείρηση',
-        'other' => 'ʼλλο',
+        'other' => 'Άλλο',
     ],
     'audience' => [
         'Pre-school children' => 'Παιδιά προσχολικής ηλικίας',
@@ -83,8 +83,8 @@ return [
         'Graduate students' => 'Προπτυχιακοί φοιτητές',
         'Post graduate students' => 'Μεταπτυχιακοί φοιτητές',
         'Employed adults' => 'Εργαζόμενοι ενήλικες',
-        'Unemployed adults' => 'ʼνεργοι ενήλικες',
-        'Other (see description)' => 'ʼλλο (βλέπε περιγραφή)',
+        'Unemployed adults' => 'Άνεργοι ενήλικες',
+        'Other (see description)' => 'Άλλο (βλέπε περιγραφή)',
     ],
     'theme' => [
         'Basic programming concepts' => 'Βασικές γνώσεις προγραμματισμού',
@@ -94,7 +94,7 @@ return [
         'Data manipulation and visualisation' => 'Χειρισμός και απεικόνιση δεδομένων',
         'Robotics' => 'Ρομποτική',
         'Hardware' => 'Υλισμικό (hardware)',
-        'Other' => 'ʼλλο',
+        'Other' => 'Άλλο',
         'Unplugged activities' => 'Δραστηριότητες χωρίς σύνδεση στο διαδίκτυο',
         'Playful coding activities' => 'Δραστηριότητες προγραμματισμού υπό τη μορφή παιχνιδιού',
         'Art and creativity' => 'Τέχνη και δημιουργικότητα',
@@ -128,7 +128,7 @@ return [
         'Workshop'=>'Εργαστήριο',
         'Webinar'=>'Διαδικτυακό σεμινάριο',
         'Live Streaming Session'=>'Απευθείας μετάδοση εκδήλωσης',
-        'Other'=>'ʼλλο'
+        'Other'=>'Άλλο'
     ]
 
 ];

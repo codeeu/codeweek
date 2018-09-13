@@ -14,6 +14,6 @@ return [
     */
 
     'failed' => 'Disse loginoplysninger matcher ikke vores oplysninger.',
-    'throttle' => 'For mange loginforsřg. Prřv igen om :seconds sekunder.',
+    'throttle' => 'For mange loginforsøg. Prøv igen om :seconds sekunder.',
 
 ];

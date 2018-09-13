@@ -19,7 +19,7 @@ return [
     'submit' => 'Buscar',
     'label_country' => 'Seleccionar el país',
     'last_year_events' => [
-        'label' => 'Incluir los eventos celebrados en los últimos ańos',
+        'label' => 'Incluir los eventos celebrados en los últimos años',
         'yes' => 'Sí',
         'no' => 'No'
     ],

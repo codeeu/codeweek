@@ -14,14 +14,14 @@ return [
     |
     */
 
-    'title' => 'ES programmçđanas nedçďas vçstnieki',
-    'your_current_country'=>'Jűsu pađreizçjâ valsts',
-    'visit_the'=> 'Apmeklçjiet',
-    'local_facebook_page'=>'vietçjo Facebook lapu',
-    'local_website'=>'Vietçjâ vietne',
-    'ambassadors'=>'Vçstnieki',
-    'no_ambassadors'=>'Vçl nav vçstnieku',
-    'countries_with_ambassadors'=>'Valstis, kurâs ir vçstnieki',
-    'why_dont_you_volunteer'=>'Vai vçlaties kďűt par brîvprâtîgo?'
+    'title' => 'ES programmēšanas nedēļas vēstnieki',
+    'your_current_country'=>'Jūsu pašreizējā valsts',
+    'visit_the'=> 'Apmeklējiet',
+    'local_facebook_page'=>'vietējo Facebook lapu',
+    'local_website'=>'Vietējā vietne',
+    'ambassadors'=>'Vēstnieki',
+    'no_ambassadors'=>'Vēl nav vēstnieku',
+    'countries_with_ambassadors'=>'Valstis, kurās ir vēstnieki',
+    'why_dont_you_volunteer'=>'Vai vēlaties kļūt par brīvprātīgo?'
 
 ];

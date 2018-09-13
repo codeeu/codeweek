@@ -20,18 +20,18 @@ return [
     'description' => 'Opis: ',
     'more_info' => 'Dodatkowe informacje: ',
     'audience' => 'Adresaci wydarzenia: ',
-    'themes' => 'G³ówne tematy: ',
+    'themes' => 'Główne tematy: ',
     'tags' => 'Tagi: ',
-    'share' => 'Udostêpnij wydarzenie: ',
+    'share' => 'Udostępnij wydarzenie: ',
     'email' => [
-        'tooltip' => 'Kliknij, aby wys³aæ do znajomego',
-        'subject' => 'Dowiedz siê wiêcej na temat tego wspania³ego wydarzenia',
-        'body_1' => 'Czeœæ! Przesy³am informacje o ',
-        'body_2' => 'wydarzeniu, które odbêdzie siê w '
+        'tooltip' => 'Kliknij, aby wysłać do znajomego',
+        'subject' => 'Dowiedz się więcej na temat tego wspaniałego wydarzenia',
+        'body_1' => 'Cześć! Przesyłam informacje o ',
+        'body_2' => 'wydarzeniu, które odbędzie się w '
     ],
     'edit' => 'Edytuj wydarzenie',
     'note' => 'UWAGA: ',
     'pending_warning' => 'To wydarzenie jest nadal sprawdzane przez ',
     'pending_link' => 'moderatorów',
-    'nearby_upcoming_events' => 'Nadchodz¹ce wydarzenia w Twojej okolicy:'
+    'nearby_upcoming_events' => 'Nadchodzące wydarzenia w Twojej okolicy:'
 ];

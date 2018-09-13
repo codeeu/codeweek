@@ -14,14 +14,14 @@ return [
     |
     */
 
-    'title' => 'Ambassadřrer for EU’s kodeuge',
-    'your_current_country'=>'Dit nuvćrende land',
-    'visit_the'=> 'Besřg',
+    'title' => 'Ambassadører for EU’s kodeuge',
+    'your_current_country'=>'Dit nuværende land',
+    'visit_the'=> 'Besøg',
     'local_facebook_page'=>'den lokale Facebook-side',
     'local_website'=>'det lokale websted',
-    'ambassadors'=>'Ambassadřrer',
-    'no_ambassadors'=>'Endnu ingen ambassadřrer',
-    'countries_with_ambassadors'=>'Lande med ambassadřrer',
-    'why_dont_you_volunteer'=>'Vil du vćre frivillig?'
+    'ambassadors'=>'Ambassadører',
+    'no_ambassadors'=>'Endnu ingen ambassadører',
+    'countries_with_ambassadors'=>'Lande med ambassadører',
+    'why_dont_you_volunteer'=>'Vil du være frivillig?'
 
 ];

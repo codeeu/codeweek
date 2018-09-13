@@ -12,17 +12,17 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'created_by'=>'Alle arrangementer oprettet af ',
-    'no_events'=>[
-        'first_call_to_action' => "Du har ikke tilfojet arrangementer endnu. Hvorfor ikke ",
-        'first_link' => 'tilfoje et nu',
-        'second_call_to_action' => 'eller lćs vores ',
-        'second_link' => 'vejledning til arrangřrer'
-    ],
-    'view'=>'Vis',
-    'status'=>[
-        'APPROVED'=>'GODKENDT',
-        'REJECTED'=>'AFVIST',
-        'PENDING'=>'VENTER'
+
+    'name'             => 'Ime škole',
+    'location'           => 'Lokacija škole',
+    'description'                => 'Opis škole',
+    'school'                => 'Škola',
+    'add'                => 'Dodati',
+    'list'                => 'Spisak',
+    'required' => [
+        'name'=>'Ime škole je obavezno',
+        'location'=>'Lokacija škole je obavezna',
     ]
+
+
 ];

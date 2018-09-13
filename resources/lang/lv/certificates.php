@@ -12,6 +12,6 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'certificates_for' => 'Sertifikâti: ',
-    'no_certificates' => 'Vçl nav sertifikâtu.'
+    'certificates_for' => 'Sertifikāti: ',
+    'no_certificates' => 'Vēl nav sertifikātu.'
 ];

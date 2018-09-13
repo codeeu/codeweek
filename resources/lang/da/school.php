@@ -17,7 +17,7 @@ return [
     'location'           => 'Skolens placering',
     'description'                => 'Beskrivelse af skolen',
     'school'                => 'Skole',
-    'add'                => 'Tilfřj',
+    'add'                => 'Tilføj',
     'list'                => 'Oplist',
     'required' => [
         'name'=>'Skolens navn er obligatorisk',

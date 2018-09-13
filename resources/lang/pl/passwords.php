@@ -13,10 +13,10 @@ return [
     |
     */
 
-    'password' => 'Has³a musz¹ zawieraæ co najmniej szeœæ znaków i byæ zgodne z wartoœci¹ wpisan¹ w polu potwierdzenia.',
-    'reset' => 'Twoje has³o zosta³o zresetowane!',
-    'sent' => 'Wys³aliœmy do Ciebie wiadomoœæ e-mail z ³¹czem do zresetowania has³a!',
-    'token' => 'Ten token do zresetowania has³a jest nieprawid³owy.',
-    'user' => 'Nie znaleziono u¿ytkownika z tym adresem e-mail',
+    'password' => 'Hasła muszą zawierać co najmniej sześć znaków i być zgodne z wartością wpisaną w polu potwierdzenia.',
+    'reset' => 'Twoje hasło zostało zresetowane!',
+    'sent' => 'Wysłaliśmy do Ciebie wiadomość e-mail z łączem do zresetowania hasła!',
+    'token' => 'Ten token do zresetowania hasła jest nieprawidłowy.',
+    'user' => "Nie znaleziono użytkownika z tym adresem e-mail.",
 
 ];

@@ -13,9 +13,9 @@ return [
     |
     */
 
-    'home' => 'Sâkumlapa',
-    'events' => 'Pasâkumi',
-    'ambassadors' => 'Vçstnieks',
+    'home' => 'Sākumlapa',
+    'events' => 'Pasākumi',
+    'ambassadors' => 'Vēstnieks',
     'resources' => 'Resursi',
     'schools' => 'Skolas',
     'about' => 'Par',
@@ -23,16 +23,16 @@ return [
     'search' => 'Uzrakstiet un nospiediet Enter',
     'map' => 'Karte',
     'add_event' => 'Pievienot notikumu',
-    'search_event' => 'Meklçt notikumus',
-    'hello' => 'Sveicinâti',
+    'search_event' => 'Meklēt notikumus',
+    'hello' => 'Sveicināti',
     'profile' => 'Profils',
-    'pending' => 'Vçl neapstiprinâtie notikumi',
+    'pending' => 'Vēl neapstiprinātie notikumi',
     'your_events' => 'Tavi notikumi',
-    'your_certificates' => 'Tavi sertifikâti',
-    'report' => 'Paziňojiet par saviem pasâkumiem',
-    'volunteers' => 'Brîvprâtîgie',
+    'your_certificates' => 'Tavi sertifikāti',
+    'report' => 'Paziņojiet par saviem pasākumiem',
+    'volunteers' => 'Brīvprātīgie',
     'logout' => 'Iziet',
     'signin' => 'Pieteikties',
-    'privacy' => 'Privâtums',
+    'privacy' => 'Privātums',
 
 ];

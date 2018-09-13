@@ -20,8 +20,8 @@ return [
     'add'                => 'Lisa',
     'list'                => 'Nimekiri',
     'required' => [
-        'name'=>'Kooli nimi on nőutav',
-        'location'=>'Kooli asukoht on nőutav',
+        'name'=>'Kooli nimi on nõutav',
+        'location'=>'Kooli asukoht on nõutav',
     ]
 
 

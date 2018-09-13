@@ -14,7 +14,7 @@ return [
     */
     'organised_by'=>'Afholdes af: ',
     'contact_email' => 'Kontakt-e-mailadresse: ',
-    'happening_at' => 'Foregĺr pĺ: ',
+    'happening_at' => 'Foregår på: ',
     'from' => 'Fra ',
     'to' => ' til ',
     'description' => 'Beskrivelse: ',
@@ -25,13 +25,13 @@ return [
     'share' => 'Del arrangementet: ',
     'email' => [
         'tooltip' => 'Klik for at sende en e-mail om dette til en ven',
-        'subject' => 'Se dette spćndende kodearrangement',
-        'body_1' => 'Hej, prřv at se arrangementet ',
-        'body_2' => 'pĺ '
+        'subject' => 'Se dette spændende kodearrangement',
+        'body_1' => 'Hej, prøv at se arrangementet ',
+        'body_2' => 'på '
     ],
     'edit' => 'Rediger arrangement',
-    'note' => 'BEMĆRK: ',
-    'pending_warning' => 'Dette arrangement er stadig ved at blive gennemgĺet af ',
+    'note' => 'BEMÆRK: ',
+    'pending_warning' => 'Dette arrangement er stadig ved at blive gennemgået af ',
     'pending_link' => 'moderatorer',
-    'nearby_upcoming_events' => 'Kommende arrangementer i nćrheden:'
+    'nearby_upcoming_events' => 'Kommende arrangementer i nærheden:'
 ];

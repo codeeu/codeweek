@@ -32,15 +32,15 @@ return [
         'sl' => 'Esloveno',
         'et' => 'Estonio',
         'lv' => 'Letón',
-        'es' => 'Espańol',
+        'es' => 'Español',
         'fi' => 'Finlandés',
         'lt' => 'Lituano',
         'sv' => 'Sueco'
     ],
 
     'resources_local_title'=>'Recursos de programación de',
-    'are_you_a_teacher' => 'żEres profesor?',
-    'get_involved_banner' => 'ˇHaz clic aquí para ver cómo puedes participar!',
+    'are_you_a_teacher' => '¿Eres profesor?',
+    'get_involved_banner' => '¡Haz clic aquí para ver cómo puedes participar!',
     'days'=>'Días',
     'hours'=>'Horas',
     'minutes'=>'Minutos',

@@ -12,29 +12,29 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Rediěçjiet savu #codeEU pasâkumu',
-    'required_fields' => 'Obligâti aizpildâmie lauki ir norâdîti ar * zvaigznîti. Jűs varat pievienot pasâkumu savâ vietçjâ valodâ.',
+    'title' => 'Rediģējiet savu #codeEU pasākumu',
+    'required_fields' => 'Obligāti aizpildāmie lauki ir norādīti ar * zvaigznīti. Jūs varat pievienot pasākumu savā vietējā valodā.',
     'description' => 'Apraksts',
     'audience' => 'Auditorija',
-    'theme' => 'Tçma',
+    'theme' => 'Tēma',
     'location' => 'Vieta',
-    'website' => 'Tîmekďa vietne',
-    'contact' => 'Kontaktinformâcija',
+    'website' => 'Tīmekļa vietne',
+    'contact' => 'Kontaktinformācija',
     'tags' => 'Tagi',
-    'image' => 'Attçls',
-    'help' => 'Lielâku attçlu izmçrs tiks mainîts lîdz 256 x 512 pikseďiem. Maksimâlais augđupielâdes izmçrs ir 256 x 1024.',
-    'aspect' => 'Ar kuru programmçđanas aspektu bűs saistîts jűsu pasâkums?',
-    'address' => 'Ierakstiet adresi vai noklikđíiniet tâlâk uz kartes, lai iestatîtu atrađanâs vietu.',
+    'image' => 'Attēls',
+    'help' => 'Lielāku attēlu izmērs tiks mainīts līdz 256 x 512 pikseļiem. Maksimālais augšupielādes izmērs ir 256 x 1024.',
+    'aspect' => 'Ar kuru programmēšanas aspektu būs saistīts jūsu pasākums?',
+    'address' => 'Ierakstiet adresi vai noklikšķiniet tālāk uz kartes, lai iestatītu atrašanās vietu.',
     'privacy_disclaimer' => [
-        'header' => 'Jűsu kontaktinformâcija',
-        'text_1' => 'Đî informâcija bűs redzama tikai ',
-        'link_1' => 'ES programmçđanas nedçďas vçstniekiem',
-        'text_2'=> ' un programmçđanas nedçďas
+        'header' => 'Jūsu kontaktinformācija',
+        'text_1' => 'Šī informācija būs redzama tikai ',
+        'link_1' => 'ES programmēšanas nedēļas vēstniekiem',
+        'text_2'=> ' un programmēšanas nedēļas
 		organizatoriem, kuri
-		pârbaudîs pasâkumu pirms tâ parâdîđanâs kartç un sazinâsies ar jums, ja bűs	
-		nepiecieđama rediěçđana vai
-		aptauja pçc pasâkuma statistikas ieguvei.',
-        'contact_email' => 'Jűsu e-pasts saziňai'
+		pārbaudīs pasākumu pirms tā parādīšanās kartē un sazināsies ar jums, ja būs	
+		nepieciešama rediģēšana vai
+		aptauja pēc pasākuma statistikas ieguvei.',
+        'contact_email' => 'Jūsu e-pasts saziņai'
     ], 
-    'edit' => 'Rediěçt pasâkumu'
+    'edit' => 'Rediģēt pasākumu'
 ];

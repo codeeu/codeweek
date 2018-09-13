@@ -13,37 +13,37 @@ return [
     |
     */
 
-    'title' => 'Paziňojiet par savu #codeEU pasâkumu',
-    'event_title' => 'Pasâkuma nosaukums',
-    'number_required' => 'Lűdzu, norâdiet aptuveni, ja jums nav precîzu datu.',
-    'phrase1'=>'Jűs varat aizpildît đo veidlapu tikai vienreiz! Lűdzu, pârbaudiet datus uzmanîgi. Ja pieďauta kďűda, ',
-    'phrase2'=>'Pçc ziňojuma iesniegđanas tiks automâtiski izsniegts personalizçts sertifikâts par piedalîđanos programmçđanas nedçďâ un jűs varçsiet to lejupielâdçt vai kopîgot. Jűs varat redzçt đî sertifikâta piemçru đeit.',
-    'phrase3'=>'Obligâti aizpildâmie lauki ir norâdîti ar * zvaigznîti.',
-    'phrase4'=>'Jűs varat aizpildît đo veidlapu tikai vienreiz! Lűdzu, pârbaudiet datus uzmanîgi. Ja pieďauta kďűda,',
+    'title' => 'Paziņojiet par savu #codeEU pasākumu',
+    'event_title' => 'Pasākuma nosaukums',
+    'number_required' => 'Lūdzu, norādiet aptuveni, ja jums nav precīzu datu.',
+    'phrase1'=>'Jūs varat aizpildīt šo veidlapu tikai vienreiz! Lūdzu, pārbaudiet datus uzmanīgi. Ja pieļauta kļūda, ',
+    'phrase2'=>'Pēc ziņojuma iesniegšanas tiks automātiski izsniegts personalizēts sertifikāts par piedalīšanos programmēšanas nedēļā un jūs varēsiet to lejupielādēt vai kopīgot. Jūs varat redzēt šī sertifikāta piemēru šeit.',
+    'phrase3'=>'Obligāti aizpildāmie lauki ir norādīti ar * zvaigznīti.',
+    'phrase4'=>'Jūs varat aizpildīt šo veidlapu tikai vienreiz! Lūdzu, pārbaudiet datus uzmanīgi. Ja pieļauta kļūda,',
     'contactus'=>'sazinieties ar mums',
     'participants_count' => [
-        'label' => 'Dalîbnieku skaits',
+        'label' => 'Dalībnieku skaits',
     ],
     'average_participant_age' => [
-        'label'=>'Vidçjais dalîbnieku vecums',
+        'label'=>'Vidējais dalībnieku vecums',
     ],
     'percentage_of_females' => [
-        'label' => 'Sievieđu procents',
+        'label' => 'Sieviešu procents',
     ],
     'codeweek_for_all_participation_code' => [
-        'label' => '“Programmçđanas nedçďa visiem” dalîbas kods',
-        'help' => 'Ja jums ir Codeweek4All spçku pârbaudes kods, jűs varat to đeit norâdît. Ja jűs nepiedalâties, ignorçjiet đo lauku.'
+        'label' => '“Programmēšanas nedēļa visiem” dalības kods',
+        'help' => 'Ja jums ir Codeweek4All spēku pārbaudes kods, jūs varat to šeit norādīt. Ja jūs nepiedalāties, ignorējiet šo lauku.'
     ],
     'name_for_certificate' => [
-        'label' => 'Uz sertifikâta norâdâmais vârds',
-        'help' => 'Nomainiet to, norâdot tâ pasâkuma organizçtâja vârdu/nosaukumu, kuram jâizsniedz đis programmçđanas nedçďas dalîbnieka sertifikâts. Lűdzu, lietojiet tikai ASCII (latîňu) burtus. Burti ar garumzîmçm, uzsvariem utt. nav atbalstîti.'
+        'label' => 'Uz sertifikāta norādāmais vārds',
+        'help' => 'Nomainiet to, norādot tā pasākuma organizētāja vārdu/nosaukumu, kuram jāizsniedz šis programmēšanas nedēļas dalībnieka sertifikāts. Lūdzu, lietojiet tikai ASCII (latīņu) burtus. Burti ar garumzīmēm, uzsvariem utt. nav atbalstīti.'
     ],
-    'submit' => 'Iesniegt paziňojumu par pasâkumu',
+    'submit' => 'Iesniegt paziņojumu par pasākumu',
     'thanks_page'=>[
-        'title'=>'Paldies par paziňođanu par pasâkumu!',
-        'certificate_ready'=>'Jűsu sertifikâts ir gatavs.',
-        'download_button'=>'Noklikđíiniet đeit, lai lejupielâdçtu to.',
-        'back_events'=>'Atgriezieties pie sava pasâkuma'
+        'title'=>'Paldies par paziņošanu par pasākumu!',
+        'certificate_ready'=>'Jūsu sertifikāts ir gatavs.',
+        'download_button'=>'Noklikšķiniet šeit, lai lejupielādētu to.',
+        'back_events'=>'Atgriezieties pie sava pasākuma'
     ]
 
 
