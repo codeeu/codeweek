@@ -35,7 +35,12 @@ return [
         'es' => 'Hispaania',
         'fi' => 'Soome',
         'lt' => 'Leedu',
-        'sv' => 'Rootsi'
+        'sv' => 'Rootsi',
+        'al' => 'Albaania',
+        'ba' => 'Bosnia',
+        'mk' => 'Makedoonia',
+        'me'=> 'Montenegro',
+        'rs' => 'Serbia'
     ],
 
     'resources_local_title'=>'Programmeerimismaterjale:',

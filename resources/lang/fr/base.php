@@ -35,7 +35,13 @@ return [
         'es' => 'Espagnol',
         'fi' => 'Finnois',
         'lt' => 'Lituanien',
-        'sv' => 'Suédois'
+        'sv' => 'Suédois',
+        'al' => 'Albanais',
+        'ba' => 'Bosnien',
+        'mk' => 'Macédonien',
+        'me' => 'Monténégrin',
+        'rs' => 'Serbe'
+
     ],
 
     'resources_local_title'=>'Ressources pour le codage en',

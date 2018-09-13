@@ -35,7 +35,13 @@ return [
         'es' => 'Španšèina',
         'fi' => 'Finšèina',
         'lt' => 'Litovšèina',
-        'sv' => 'Švedšèina'
+        'sv' => 'Švedšèina',
+        'al' => 'albanščina',
+        'ba' => 'bosanščina',
+        'mk' => 'makedonščina',
+        'me' => 'črnogorščina',
+        'rs' => 'srbščina'
+
     ],
 
     'resources_local_title'=>'Programerski viri iz',
