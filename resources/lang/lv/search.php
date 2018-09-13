@@ -13,17 +13,17 @@ return [
     |
     */
     'audience_title'=>'Auditorija',
-    'theme_title'=>'Tçma',
+    'theme_title'=>'Tēma',
     
-    'placeholder' => 'Meklçt pasâkuma nosaukumu vai tagu',
-    'submit' => 'Meklçt',
-    'label_country' => 'Atlasît valsti',
+    'placeholder' => 'Meklēt pasākuma nosaukumu vai tagu',
+    'submit' => 'Meklēt',
+    'label_country' => 'Atlasīt valsti',
     'last_year_events' => [
-        'label' => 'Ietvert pagâjuðâ gada pasâkumus',
-        'yes' => 'Jâ',
-        'no' => 'Nç'
+        'label' => 'Ietvert pagājušā gada pasākumus',
+        'yes' => 'Jā',
+        'no' => 'Nē'
     ],
-    'search_counter' => 'saskaòot ar meklçðanas kritçrijiem',
-    'event'=>'pasâkums',
-    'events'=>'pasâkumi'
+    'search_counter' => 'saskaņot ar meklēšanas kritērijiem',
+    'event'=>'pasākums',
+    'events'=>'pasākumi'
 ];

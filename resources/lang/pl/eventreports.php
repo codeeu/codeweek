@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'reports_by' => 'Wydarzenia oczekuj¹ce na zg³oszenie przez ',
-    'no_reports' => 'Brak wydarzeñ do zg³oszenia.',
-    'report' => 'Wydarzenia wymienione poni¿ej ju¿ siê rozpoczê³y lub zakoñczy³y. WprowadŸ dane liczbowe dotycz¹ce wydarzenia, które zostan¹ wykorzystane w celach statystycznych, a nastêpnie odbierz certyfikat uczestnictwa w Tygodniu Kodowania. Otrzymasz jeden certyfikat za jedno wydarzenie.'
+    'reports_by' => 'Wydarzenia oczekujące na zgłoszenie przez ',
+    'no_reports' => 'Brak wydarzeń do zgłoszenia.',
+    'report' => 'Wydarzenia wymienione poniżej już się rozpoczęły lub zakończyły. Wprowadź dane liczbowe dotyczące wydarzenia, które zostaną wykorzystane w celach statystycznych, a następnie odbierz certyfikat uczestnictwa w Tygodniu Kodowania. Otrzymasz jeden certyfikat za jedno wydarzenie.'
 ];

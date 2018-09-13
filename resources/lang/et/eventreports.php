@@ -14,7 +14,7 @@ return [
     */
     'reports_by' => 'Aruannet ootavad üritused: ',
     'no_reports' => 'Aruannet ootavaid üritusi veel ei ole.',
-    'report' => 'Allpool loetletud üritused on juba alanud vői lőppenud. Sisesta ürituse kohta mőned arvud
+    'report' => 'Allpool loetletud üritused on juba alanud või lõppenud. Sisesta ürituse kohta mõned arvud
     statistika jaoks, et saaksid endale Code Weekil osalemise tunnistuse. Iga
     ürituse kohta saad ühe tunnistuse.'
 ];

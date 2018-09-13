@@ -12,11 +12,11 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'created_by'=>'Kőik üritused, mille looja on ',
+    'created_by'=>'Kõik üritused, mille looja on ',
     'no_events'=>[
         'first_call_to_action' => "Sa ei ole veel üritusi lisanud. Kui soovid, ",
         'first_link' => 'lisa kohe üritus',
-        'second_call_to_action' => 'vői loe meie ',
+        'second_call_to_action' => 'või loe meie ',
         'second_link' => 'juhendit korraldajatele'
     ],
     'view'=>'Vaata',

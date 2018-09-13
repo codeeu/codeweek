@@ -22,6 +22,6 @@ return [
     'ambassadors'=>'Saadikud',
     'no_ambassadors'=>'Saadikuid veel ei ole',
     'countries_with_ambassadors'=>'Saadikutega riigid',
-    'why_dont_you_volunteer'=>'Miks ei vőiks ka sina end vabatahtlikuks pakkuda?'
+    'why_dont_you_volunteer'=>'Miks ei võiks ka sina end vabatahtlikuks pakkuda?'
 
 ];

@@ -17,10 +17,10 @@ return [
     'event_title' => 'Ürituse nimi',
     'number_required' => 'Anna ligikaudne hinnang, kui täpseid andmeid ei ole.',
     'phrase1'=>'Seda vormi saad täita ainult üks kord! Palun vaata andmed hoolega üle. Kui tegid vea, ',
-    'phrase2'=>'Pärast aruande esitamist antakse automaatselt välja isikustatud tunnistus Code Weekil osalemise kohta ning selle saad alla laadida vői seda teistega jagada. Tunnistuse näidist saad vaadata siin.',
-    'phrase3'=>'Nőutavad väljad on tähistatud tärniga.',
+    'phrase2'=>'Pärast aruande esitamist antakse automaatselt välja isikustatud tunnistus Code Weekil osalemise kohta ning selle saad alla laadida või seda teistega jagada. Tunnistuse näidist saad vaadata siin.',
+    'phrase3'=>'Nõutavad väljad on tähistatud tärniga.',
     'phrase4'=>'Seda vormi saad täita ainult üks kord! Palun vaata andmed hoolega üle. Kui tegid vea,',
-    'contactus'=>'vőta meiega ühendust',
+    'contactus'=>'võta meiega ühendust',
     'participants_count' => [
         'label' => 'Osalejate arv',
     ],
@@ -36,13 +36,13 @@ return [
     ],
     'name_for_certificate' => [
         'label' => 'Nimi tunnistuse jaoks',
-        'help' => 'Kirjuta siia ürituse korraldaja nimi, kellele tuleks anda välja tunnistus Code Weekil osalemise kohta. Kasuta ainult ASCII-tähti. Rőhumärkide vői täppidega jms tähti ei saa kasutada.'
+        'help' => 'Kirjuta siia ürituse korraldaja nimi, kellele tuleks anda välja tunnistus Code Weekil osalemise kohta. Kasuta ainult ASCII-tähti. Rõhumärkide või täppidega jms tähti ei saa kasutada.'
     ],
     'submit' => 'Esita ürituse aruanne',
     'thanks_page'=>[
         'title'=>'Aitäh, et esitasid aruande oma ürituse kohta!',
         'certificate_ready'=>'Sinu tunnistus on valmis.',
-        'download_button'=>'Allalaadimiseks klőpsa siin.',
+        'download_button'=>'Allalaadimiseks klõpsa siin.',
         'back_events'=>'Tagasi ürituse juurde'
     ]
 

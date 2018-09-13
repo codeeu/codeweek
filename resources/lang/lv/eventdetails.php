@@ -12,26 +12,26 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'organised_by'=>'Sakârtots pçc: ',
+    'organised_by'=>'Sakārtots pēc: ',
     'contact_email' => 'Kontaktpersonas e-pasts: ',
-    'happening_at' => 'Pasâkuma vieta: ',
+    'happening_at' => 'Pasākuma vieta: ',
     'from' => 'No ',
-    'to' => ' lîdz ',
+    'to' => ' līdz ',
     'description' => 'Apraksts: ',
-    'more_info' => 'Papildu informâcija: ',
-    'audience' => 'Đî pasâkuma mçríauditorija: ',
-    'themes' => 'Galvenâs tçmas: ',
+    'more_info' => 'Papildu informācija: ',
+    'audience' => 'Šī pasākuma mērķauditorija: ',
+    'themes' => 'Galvenās tēmas: ',
     'tags' => 'Tagi: ',
-    'share' => 'Kopîgot pasâkumu: ',
+    'share' => 'Kopīgot pasākumu: ',
     'email' => [
-        'tooltip' => 'Noklikđíini, lai nosűtîtu to pa e-pastu draugam',
-        'subject' => 'Apskati đo lielisko programmçđanas pasâkumu',
-        'body_1' => 'Sveicinâti! Apskatiet ',
-        'body_2' => 'pasâkumu '
+        'tooltip' => 'Noklikšķini, lai nosūtītu to pa e-pastu draugam',
+        'subject' => 'Apskati šo lielisko programmēšanas pasākumu',
+        'body_1' => 'Sveicināti! Apskatiet ',
+        'body_2' => 'pasākumu '
     ],
-    'edit' => 'Rediěçt pasâkumu',
-    'note' => 'PIEZÎME: ',
-    'pending_warning' => 'Đo pasâkumu vçl pârskata ',
+    'edit' => 'Rediģēt pasākumu',
+    'note' => 'PIEZĪME: ',
+    'pending_warning' => 'Šo pasākumu vēl pārskata ',
     'pending_link' => 'moderatori',
-    'nearby_upcoming_events' => 'Nâkamie netâlu notiekođie pasâkumi:'
+    'nearby_upcoming_events' => 'Nākamie netālu notiekošie pasākumi:'
 ];

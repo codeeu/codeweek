@@ -15,15 +15,15 @@ return [
     'audience_title'=>'Adresaci',
     'theme_title'=>'Temat',
     
-    'placeholder' => 'Wyszukaj nazwê lub tag wydarzenia',
+    'placeholder' => 'Wyszukaj nazwę lub tag wydarzenia',
     'submit' => 'Wyszukaj',
     'label_country' => 'Wybierz kraj',
     'last_year_events' => [
-        'label' => 'Uwzglêdnij wydarzenia z ostatnich lat',
+        'label' => 'Uwzględnij wydarzenia z ostatnich lat',
         'yes' => 'Tak',
         'no' => 'Nie'
     ],
     'search_counter' => 'pasuje do Twoich kryteriów wyszukiwania',
     'event'=>'wydarzenie',
-    'events'=>'wydarzeñ'
+    'events'=>'wydarzeń'
 ];
