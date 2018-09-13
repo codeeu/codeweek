@@ -26,7 +26,7 @@
 
             </nav>
             <!-- #primary-menu end -->
-            @if(env('APP_ENV') !== 'production')
+
                 <div id="top-language">
                     <ul class="nav navbar navbar-right nobottommargin">
                         <li class="nav-item dropdown">
@@ -48,7 +48,7 @@
                         </li>
                     </ul>
                 </div>
-            @endif
+
 
             <div id="top-login">
                 @if (Auth::check())
