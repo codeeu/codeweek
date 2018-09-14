@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'failed' => 'Dessa inloggningsuppgifter stämmer inte med vĺra register.',
-    'throttle' => 'För mĺnga inloggningsförsök. Försök igen om :seconds sekunder.',
+    'failed' => 'Dessa inloggningsuppgifter stämmer inte med våra register.',
+    'throttle' => 'För många inloggningsförsök. Försök igen om :seconds sekunder.',
 
 ];

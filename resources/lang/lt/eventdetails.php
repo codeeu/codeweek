@@ -13,25 +13,25 @@ return [
     |
     */
     'organised_by'=>'Organizuoja: ',
-    'contact_email' => 'Kontaktinis el. pađto adresas: ',
+    'contact_email' => 'Kontaktinis el. pašto adresas: ',
     'happening_at' => 'Vieta: ',
     'from' => 'Nuo ',
     'to' => ' iki ',
-    'description' => 'Aprađymas: ',
+    'description' => 'Aprašymas: ',
     'more_info' => 'Daugiau informacijos: ',
     'audience' => 'Renginys skirtas: ',
-    'themes' => 'Pagrindinës temos: ',
-    'tags' => 'Ţymës: ',
+    'themes' => 'Pagrindinės temos: ',
+    'tags' => 'Žymės: ',
     'share' => 'Pasidalykite renginiu: ',
     'email' => [
-        'tooltip' => 'Spustelëkite čia ir iđsiřskite el. laiđkŕ draugui',
-        'subject' => 'Paţiűrëk, koks puikus programavimo renginys',
-        'body_1' => 'Labas, pasidomëk ',
+        'tooltip' => 'Spustelėkite čia ir išsiųskite el. laišką draugui',
+        'subject' => 'Pažiūrėk, koks puikus programavimo renginys',
+        'body_1' => 'Labas, pasidomėk ',
         'body_2' => 'renginiu, vyksiančiu '
     ],
-    'edit' => 'Redaguoti renginá',
+    'edit' => 'Redaguoti renginį',
     'note' => 'PASTABA. ',
-    'pending_warning' => 'Đá renginá dar tikrina ',
+    'pending_warning' => 'Šį renginį dar tikrina ',
     'pending_link' => 'moderatoriai',
-    'nearby_upcoming_events' => 'Đalia vykstantys artimiausi renginiai:'
+    'nearby_upcoming_events' => 'Šalia vykstantys artimiausi renginiai:'
 ];

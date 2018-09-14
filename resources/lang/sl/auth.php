@@ -14,6 +14,6 @@ return [
     */
 
     'failed' => 'Ti podatki za prijavo se ne ujemajo z našo evidenco.',
-    'throttle' => 'Preveè poskusov prijave. Poskusite ponovno èez: :seconds sekund.',
+    'throttle' => 'Preveč poskusov prijave. Poskusite ponovno čez: :seconds sekund.',
 
 ];

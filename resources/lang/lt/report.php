@@ -13,37 +13,37 @@ return [
     |
     */
 
-    'title' => 'Pateikite ataskaitŕ apie savo #codeEU renginá',
+    'title' => 'Pateikite ataskaitą apie savo #codeEU renginį',
     'event_title' => 'Renginio pavadinimas',
-    'number_required' => 'Pateikite apytikrius skaičius, net jei neturite tiksliř duomenř.',
-    'phrase1'=>'Điŕ formŕ galima uţpildyti tik vienŕ kartŕ! Atidţiai patikrinkite duomenis. Jei padarysite klaidŕ, ',
-    'phrase2'=>'Kai pateiksite ataskaitŕ, jums bus automatiđkai iđduotas Programavimo savaitës dalyvio sertifikatas, kurá galësite parsisiřsti ir parodyti kitiems. Sertifikato pavyzdá galite pamatyti čia.',
-    'phrase3'=>'Laukeliai, kuriuos reikia uţpildyti, paţymëti ţvaigţdute *.',
-    'phrase4'=>'Điŕ formŕ galima uţpildyti tik vienŕ kartŕ! Atidţiai patikrinkite duomenis. Jei padarysite klaidŕ,',
+    'number_required' => 'Pateikite apytikrius skaičius, net jei neturite tikslių duomenų.',
+    'phrase1'=>'Šią formą galima užpildyti tik vieną kartą! Atidžiai patikrinkite duomenis. Jei padarysite klaidą, ',
+    'phrase2'=>'Kai pateiksite ataskaitą, jums bus automatiškai išduotas Programavimo savaitės dalyvio sertifikatas, kurį galėsite parsisiųsti ir parodyti kitiems. Sertifikato pavyzdį galite pamatyti čia.',
+    'phrase3'=>'Laukeliai, kuriuos reikia užpildyti, pažymėti žvaigždute *.',
+    'phrase4'=>'Šią formą galima užpildyti tik vieną kartą! Atidžiai patikrinkite duomenis. Jei padarysite klaidą,',
     'contactus'=>'susisiekite su mumis.',
     'participants_count' => [
-        'label' => 'Dalyviř skaičius',
+        'label' => 'Dalyvių skaičius',
     ],
     'average_participant_age' => [
-        'label'=>'Vidutinis dalyviř amţius',
+        'label'=>'Vidutinis dalyvių amžius',
     ],
     'percentage_of_females' => [
-        'label' => 'Moterř dalis procentais',
+        'label' => 'Moterų dalis procentais',
     ],
     'codeweek_for_all_participation_code' => [
-        'label' => 'Dalyvavimo iđđűkyje „CodeWeek4All“ kodas',
-        'help' => 'Jei turite „CodeWeek4All“ iđđűkio kodŕ, árađykite já čia. Jei kodo neturite, palikite laukelá tuđčiŕ.'
+        'label' => 'Dalyvavimo iššūkyje „CodeWeek4All“ kodas',
+        'help' => 'Jei turite „CodeWeek4All“ iššūkio kodą, įrašykite jį čia. Jei kodo neturite, palikite laukelį tuščią.'
     ],
     'name_for_certificate' => [
-        'label' => 'Pavadinimas (vardas, pavardë) sertifikate',
-        'help' => 'Pakeiskite já á renginio organizatoriaus, kuriam bus iđduotas Programavimo savaitës dalyvio sertifikatas, pavadinimŕ (vardŕ, pavardć). Rađykite tik lotyniđkomis raidëmis. Nerađykite raidţiř su kirčio ţenklais, umliautu ir pan.'
+        'label' => 'Pavadinimas (vardas, pavardė) sertifikate',
+        'help' => 'Pakeiskite jį į renginio organizatoriaus, kuriam bus išduotas Programavimo savaitės dalyvio sertifikatas, pavadinimą (vardą, pavardę). Rašykite tik lotyniškomis raidėmis. Nerašykite raidžių su kirčio ženklais, umliautu ir pan.'
     ],
-    'submit' => 'Pateikti renginio ataskaitŕ',
+    'submit' => 'Pateikti renginio ataskaitą',
     'thanks_page'=>[
-        'title'=>'Ačiű, kad pateikëte ataskaitŕ apie savo renginá!',
-        'certificate_ready'=>'Jűsř sertifikatas paruođtas.',
-        'download_button'=>'Spustelëkite čia ir parsisiřskite.',
-        'back_events'=>'Gráţti prie savo renginio'
+        'title'=>'Ačiū, kad pateikėte ataskaitą apie savo renginį!',
+        'certificate_ready'=>'Jūsų sertifikatas paruoštas.',
+        'download_button'=>'Spustelėkite čia ir parsisiųskite.',
+        'back_events'=>'Grįžti prie savo renginio'
     ]
 
 

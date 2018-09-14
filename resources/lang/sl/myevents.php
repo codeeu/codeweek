@@ -14,7 +14,7 @@ return [
     */
     'created_by'=>'Vse dogodke je ustvaril ',
     'no_events'=>[
-        'first_call_to_action' => 'Niste še dodali nobenih dogodkov.',
+        'first_call_to_action' => "Niste še dodali nobenih dogodkov. ",
         'first_link' => 'Dodajte enega zdaj',
         'second_call_to_action' => 'ali preberite naša ',
         'second_link' => 'navodila za organizatorje'
@@ -23,6 +23,6 @@ return [
     'status'=>[
         'APPROVED'=>'ODOBRENO',
         'REJECTED'=>'ZAVRNJENO',
-        'PENDING'=>'V ÈAKANJU'
+        'PENDING'=>'V ČAKANJU'
     ]
 ];

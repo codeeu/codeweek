@@ -18,13 +18,13 @@ return [
     'from' => 'Od ',
     'to' => ' do ',
     'description' => 'Opis: ',
-    'more_info' => 'Veè informacij: ',
+    'more_info' => 'Več informacij: ',
     'audience' => 'Ta dogodek je namenjen: ',
     'themes' => 'Glavne teme: ',
     'tags' => 'Oznake: ',
     'share' => 'Delite dogodek: ',
     'email' => [
-        'tooltip' => 'kliknite in pošljite elektronsko sporoèilo prijatelju',
+        'tooltip' => 'kliknite in pošljite elektronsko sporočilo prijatelju',
         'subject' => 'Oglejte si ta neverjeten programerski dogodek',
         'body_1' => 'Živijo, oglej si ',
         'body_2' => 'dogodek v '

@@ -15,28 +15,28 @@ return [
 
     'title' => 'Prijavite svoj dogodek #codeEU',
     'event_title' => 'Naslov dogodka',
-    'number_required' => 'Navedite grobo oceno, tudi èe nimate natanènih podatkov.',
-    'phrase1'=>'Ta obrazec lahko izpolnite samo enkrat! Skrbno preverite svoje podatke. Èe se zmotite, ',
+    'number_required' => 'Navedite grobo oceno, tudi če nimate natančnih podatkov.',
+    'phrase1'=>'Ta obrazec lahko izpolnite samo enkrat! Skrbno preverite svoje podatke. Če se zmotite, ',
     'phrase2'=>'Ko boste oddali prijavo, se bo samodejno ustvaril personalizirani certifikat o udeležbi v tednu programiranja, ki ga boste lahko prenesli ali delili. Primer certifikata si lahko ogledate tukaj.',
-    'phrase3'=>'Obvezna polja so oznaèena z zvezdico *.',
-    'phrase4'=>'Ta obrazec lahko izpolnite samo enkrat! Skrbno preverite svoje podatke. Èe se zmotite,',
+    'phrase3'=>'Obvezna polja so označena z zvezdico *.',
+    'phrase4'=>'Ta obrazec lahko izpolnite samo enkrat! Skrbno preverite svoje podatke. Če se zmotite,',
     'contactus'=>'nas kontaktirajte.',
     'participants_count' => [
         'label' => 'Število udeležencev',
     ],
     'average_participant_age' => [
-        'label'=>'Povpreèna starost udeležencev',
+        'label'=>'Povprečna starost udeležencev',
     ],
     'percentage_of_females' => [
         'label' => 'Delež žensk',
     ],
     'codeweek_for_all_participation_code' => [
         'label' => 'Koda za udeležbo Code Week 4 All',
-        'help' => 'Èe imate kodo Code Week 4 All, jo lahko prilepite tukaj. Èe se ne boste udeležili, preskoèite to polje.'
+        'help' => 'Če imate kodo Code Week 4 All, jo lahko prilepite tukaj. Če se ne boste udeležili, preskočite to polje.'
     ],
     'name_for_certificate' => [
         'label' => 'Ime za certifikat',
-        'help' => 'Vpišite ime organizatorja dogodka, ki bo izdal certifikat o udeležbi v tednu programiranja. Uporabite samo nabor znakov ASCII (latinica). Èrke s poudarki, preglasi in podobnimi znaki niso podprte.'
+        'help' => 'Vpišite ime organizatorja dogodka, ki bo izdal certifikat o udeležbi v tednu programiranja. Uporabite samo nabor znakov ASCII (latinica). Črke s poudarki, preglasi in podobnimi znaki niso podprte.'
     ],
     'submit' => 'Pošljite prijavo dogodka',
     'thanks_page'=>[

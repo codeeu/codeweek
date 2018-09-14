@@ -16,7 +16,7 @@ return [
 
     'title' => 'Ambasadorji tedna programiranja EU',
     'your_current_country'=>'Vaša država',
-    'visit_the'=> 'Obišèite',
+    'visit_the'=> 'Obiščite',
     'local_facebook_page'=>'lokalno stran na Facebooku',
     'local_website'=>'Lokalno spletno mesto',
     'ambassadors'=>'Ambasadorji',
