@@ -30,12 +30,15 @@
                 </div>
             </div>
 
-            <br/>
+            <hr/>
 
             <h2>Presentations and toolkits</h2>
             <ul>
 
                 <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/EU+Code+Week+2018+Communications+Toolkit.zip">EU Code Week 2018 Communications Toolkit</a></li>
+                <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/Teachers+Toolkit.zip">EU Code Week 2018 Teachers Toolkit</a></li>
+                <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/Leading+Teacher+Toolkit.zip">EU Code Week 2018 Leading Teachers Toolkit</a></li>
+                <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/National+Edu+Coordinator+Toolkit.zip">EU Code Week 2018 National Edu Toolkit</a></li>
                 <li>EU Code Week 2018 Leaflet.
 
                     <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_EN.pdf">EN</a>
