@@ -30,7 +30,7 @@ return [
         "title2" => "Usporiadajte hodinu, školenie alebo podujatie a pridajte ich na mapu.",
         "content" => [
             "Nezáleží na tom, či ste už zbehlí v programovaní, môžete jednoducho usporiadať hodinu v triede, deň otvorených dverí alebo podujatie vo vašej škole. Nájdite dátum a zaregistrujte svoju aktivitu na uvedenej mape. Ak potrebujete pomoc s prípravou hodiny programovania, prejdite na ďalší krok.",
-            "Pozrite si niektoré organizované aktivity na uvedenej mape a pridajte vlastné aktivity. Pripojíte sa tak k tisíckam ostatných, ktorí takisto poskytujú vzdelávanie v tejto oblasti v Európe a za jej hranicami.[embed map]"
+            "Pozrite si niektoré organizované aktivity na uvedenej mape a pridajte vlastné aktivity. Pripojíte sa tak k tisíckam ostatných, ktorí takisto poskytujú vzdelávanie v tejto oblasti v Európe a za jej hranicami."
 
         ],
         "button" => [

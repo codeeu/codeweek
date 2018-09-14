@@ -30,7 +30,7 @@ return [
         "title2" => 'Organisez un cours, une formation ou un événement, et épinglez-le sur la carte.',
         "content" => [
             'Que vous possédiez ou non des connaissances en code ou en programmation, vous pouvez facilement organiser un cours en classe, une journée portes ouvertes ou un événement dans votre établissement. Choisissez une date et inscrivez votre activité sur la carte ci-dessous. Si vous avez besoin d’aide pour préparer un cours consacré à la programmation, passez à la section suivante.',
-            'Découvrez quelques exemples d’activités organisées en parcourant la carte ci-dessous ajoutez les vôtres et joignez-vous aux milliers d’autres enseignants participant en Europe et ailleurs: [embed map]'
+            'Découvrez quelques exemples d’activités organisées en parcourant la carte ci-dessous ajoutez les vôtres et joignez-vous aux milliers d’autres enseignants participant en Europe et ailleurs: '
 
         ],
         "button" => [

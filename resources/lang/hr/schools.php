@@ -30,7 +30,7 @@ return [
         "title2" => "Organizirajte nastavni sat, obuku ili događanje i unesite to na kartu.",
         "content" => [
             "Neovisno o tome imate li znanja o programiranju, bez problema možete organizirati nastavni sat u svojem razredu, dan otvorenih vrata ili događanje u svojoj školi. Samo pronađite datum i registrirajte svoju aktivnost na karti u nastavku. Ako mislite da vam u pripremi nastavnog sata treba podrška u vezi s programiranjem, idite na sljedeći odjeljak.",
-            "Pregledavanjem karte u nastavku pogledajte neke primjere aktivnosti koje se organiziraju i dodajte svoju kako biste se pridružili tisućama kolega podučavatelja diljem Europe i izvan nje: [embed map]"
+            "Pregledavanjem karte u nastavku pogledajte neke primjere aktivnosti koje se organiziraju i dodajte svoju kako biste se pridružili tisućama kolega podučavatelja diljem Europe i izvan nje: "
 
         ],
         "button" => [

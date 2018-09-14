@@ -30,7 +30,7 @@ return [
         "title2" => "Ordna en lektion, ett utbildningspass eller ett evenemang, och sätt upp det på kartan.",
         "content" => [
             "Vare sig du har kodnings- eller programmeringskunskaper eller inte, kan du lätt ordna en lektion i ditt klassrum, en öppet hus-dag eller ett evenemang på din skola. Bara hitta ett datum och registrera din aktivitet på kartan nedan. Om du känner att du behöver stöd med att göra i ordning en lektion om kodning, hoppa då till nästa avsnitt.",
-            "Titta på kartan nedan och se några exempel på aktiviteter som ordnas, och lägg till din egen så att du kan vara med tusentals andra lärare runtom i Europa och längre bort: [embed map]"
+            "Titta på kartan nedan och se några exempel på aktiviteter som ordnas, och lägg till din egen så att du kan vara med tusentals andra lärare runtom i Europa och längre bort: "
 
         ],
         "button" => [

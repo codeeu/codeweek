@@ -30,7 +30,7 @@ return [
         "title2" => "Organiseer een les, een trainingssessie of een evenement en zet je initiatief op de kaart.",
         "content" => [
             "Het maakt niet uit of je zelf over codeer- of programmeerkennis beschikt; je kunt gemakkelijk een les in je klas, een opendeurdag of een evenement op je school organiseren. Zoek gewoon een datum en registreer je activiteit op de onderstaande kaart. Als je denkt dat je ondersteuning nodig hebt bij het voorbereiden van een les rond programmeren, ga dan door naar het volgende gedeelte.",
-            "Bekijk enkele voorbeelden van activiteiten die worden georganiseerd op de onderstaande kaart en voeg net als duizenden andere leraren in Europa en daarbuiten uw eigen activiteit toe: [embed map]"
+            "Bekijk enkele voorbeelden van activiteiten die worden georganiseerd op de onderstaande kaart en voeg net als duizenden andere leraren in Europa en daarbuiten uw eigen activiteit toe: "
 
         ],
         "button" => [

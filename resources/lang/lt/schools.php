@@ -30,7 +30,7 @@ return [
         "title2" => "Organizuokite pamoką, praktinius kursus ar kitą renginį ir pažymėkite jį žemėlapyje.",
         "content" => [
             "Nepriklausomai nuo to, ar mokate programuoti ar ne, galite organizuoti pamoką savo klasėje arba atvirą dieną ar kitą renginį savo mokykloje. Tiesiog pasirinkite datą ir pažymėkite savo renginį apačioje esančiame žemėlapyje. Jei manote, kad pasiruošti programavimo pamokai jums reikia pagalbos, pereikite į kitą skyrelį.",
-            "Panaršykite žemėlapyje, sužinokite, kokios veiklos yra organizuojamos, ir pridėję savo prisijunkite prie tūkstančių pedagogų iš visos Europos ir ne tik. [embed map]"
+            "Panaršykite žemėlapyje, sužinokite, kokios veiklos yra organizuojamos, ir pridėję savo prisijunkite prie tūkstančių pedagogų iš visos Europos ir ne tik. "
 
         ],
         "button" => [

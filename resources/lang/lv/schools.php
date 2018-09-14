@@ -30,7 +30,7 @@ return [
         "title2" => "Noorganizējiet stundu, mācību sesiju vai pasākumu un piespraudiet to pie kartes.",
         "content" => [
             "Neatkarīgi no tā, vai jums ir programmēšanas un programmu veidošanas zināšanas vai arī tādu nav, jūs varat vienkārši noorganizēt mācību stundu klasē, atvērto durvju dienu vai pasākumu savā skolā. Gluži vienkārši atrodiet datumu un reģistrējiet šo aktivitāti tālāk kartē. Ja jums šķiet, ka jums ir nepieciešama palīdzība ar programmēšanas stundas sagatavošanu, pārejiet pie nākamās sadaļas.",
-            "Aplūkojiet noorganizēto aktivitāšu piemērus, pārskatot karti tālāk un pievienojiet savas, tādējādi pievienojoties tūkstošiem citu skolotāju Eiropā un citur pasaulē: [embed map]"
+            "Aplūkojiet noorganizēto aktivitāšu piemērus, pārskatot karti tālāk un pievienojiet savas, tādējādi pievienojoties tūkstošiem citu skolotāju Eiropā un citur pasaulē: "
 
         ],
         "button" => [

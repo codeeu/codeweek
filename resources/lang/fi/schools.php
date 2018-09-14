@@ -30,7 +30,7 @@ return [
         "title2" => "Järjestä oppitunti, kurssi tai tapahtuma ja merkitse se kartalle.",
         "content" => [
             "Olisipa sinulla aikaisempaa osaamista koodauksesta tai ohjelmoinnista tai ei, voit järjestää luokassasi oppitunnin, avoimien ovien päivän tai tapahtuman koulullasi. Sovi vain päivä ja merkitse tapahtuma alla olevaan kalenteriin. Jos tunnet tarvitsevasi tukea koodaustunnin valmistelussa, siirry seuraavaan osioon.",
-            "Katso esimerkkejä järjestettävästä toiminnasta alla olevasta kartasta, lisää oma tapahtumasi ja liity tuhansien kouluttajien joukkoon Euroopassa ja maailmalla: [embed map]"
+            "Katso esimerkkejä järjestettävästä toiminnasta alla olevasta kartasta, lisää oma tapahtumasi ja liity tuhansien kouluttajien joukkoon Euroopassa ja maailmalla: "
 
         ],
         "button" => [
