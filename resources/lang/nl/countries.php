@@ -47,7 +47,7 @@ return [
     'Bolivia'=>'Bolivia',
     'Bonaire, Saint Eustatius and Saba '=>'Bonaire, Sint Eustatius en Saba ',
     'Brazil'=>'Brazilië',
-    'Bahamas'=>'Bahama's',
+    'Bahamas'=>'Bahama\'s',
     'Bhutan'=>'Bhutan',
     'Bouvet Island'=>'Bouveteiland',
     'Botswana'=>'Botswana',
