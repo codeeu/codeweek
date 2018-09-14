@@ -13,36 +13,32 @@
 
 
                     <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
-                        <h1>Visual programming – Introduction to Scratch</h1>
-                        <span>by Margo Tinawi</span>
+                        <h1>Coding without computers (unplugged)</h1>
+                        <span>by Alessandro Bogliolo</span>
                     </div>
 
                     <hr>
 
                     <p>
-                        Visual programming lets humans describe processes using illustrations or graphics. We usually speak of visual programming as opposed to text-based programming. Visual programming languages (VPLs) are especially well adapted to introduce algorithmic thinking to children (and even adults). With VPLs, there is less to read and no syntax to implement.
+                        Coding is the language of things, which allows us to write programs to grant new functionalities to the tens of billions of programmable objects around us. Coding is the fastest way to make our ideas come true and the most effective way to develop computational thinking capabilities. However, technology is not strictly required to develop computational thinking. Rather, our computational thinking skills are essential to make technology work.
                     </p>
 
                     <p>
-                        In this video, Margo will help you discover Scratch, one of the most popular VPL used all over the world. Scratch was developed by the MIT in 2002, and since then a big community has been created around it, where you can find millions of projects to replicate with your students and countless tutorials in several languages.
+                        In this video, Alessandro Bogliolo, Professor of Computer Systems in Italy and Europe Code Week Coordinator, will introduce unplugged coding activities that can be practiced without any electronic device. The main purpose of unplugged activities is to lower the access barriers to bring coding in every school, regardless of funding and equipment.
                     </p>
 
                     <p>
-                        You do not need to have any coding experience to use Scratch, and you can use it in all the different subjects! For instance, using Scratch as a digital storytelling tool, students can create stories, illustrate a math problem or play an art contest to learn about cultural heritage, while learning coding and computational thinking, and most important, having fun.
+                        Unplugged coding activities unveil the computational aspects of the physical world around us.
                     </p>
 
-                    <p>
-                        Scratch is a free tool, very intuitive and motivating for your students. Have a look at Margo’s video to learn how to get started.
-                    </p>
-
-                    <div class="flex" style="height:400px;justify-content: center">
+                    <div class="flex" style="height:500px;justify-content: center">
                         <iframe class="flex-1"
-                                src="https://www.youtube.com/embed/Ni38HPvE1OE">
+                                src="https://www.youtube.com/embed/wneJLv_UAL0">
                         </iframe>
                     </div>
 
                     <p>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Video+script.docx">Download the video script</a>
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Video_script.docx">Download the video script</a>
                     </p>
 
                     <h2>Ready to share what you learnt with your students?</h2>
@@ -53,25 +49,22 @@
 
                     <ul>
                         <li>
-                            <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+1_Primary.docx">Activity 1 Scratch Basic for Primary School</a>
+                            <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+1_Primary.docx">Activity 1 – CodyRoby for primary school students</a>
                         </li>
-                        <li>
-                            <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+2_Secondary.docx">Activity 2 Scratch Basic for Lower Secondary School</a>
+                        <li class="hidden">
+                            <a href="#">Activity 2 – Lesson plan lower secondary school students</a>
                         </li>
-                        <li>
-                            <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+3_Upper+Secondary.docx">Activity 3 Scratch Basic for Upper Secondary School</a>
+                        <li class="hidden">
+                            <a href="#">Activity 3 – Lesson plan for upper secondary school students</a>
                         </li>
                     </ul>
 
-                    <h2>Do not forget to add your activity to the Code Week Map!</h2>
+                    @if(view()->exists('static.'.App::getLocale().'.training.footer'))
+                        @include('static.'.App::getLocale().'.training.footer')
+                    @else
+                        @include('static.en.training.footer')
+                    @endif
 
-                    <p>
-                        You can easily organize a lesson in your classroom, an open day, or an event at your school. Just find a date and register your activity in the <a href="/events">Code Week map</a>.  Each activity organizer will get a certificate of participation for their effort.
-                    </p>
-
-                    <p>
-                        If you would like to connect to an international group of enthusiastic teachers, join in the <a href="">EU Code Week Facebook group for teachers!</a>
-                    </p>
 
                 </div>
 
