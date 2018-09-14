@@ -4,17 +4,24 @@
     <section>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-8">
+                <div class="col-md-6 col-md-offset-3">
                     <div class="card">
-                        <div class="card-header">{{ __('Register') }}</div>
+
+                        <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
+                            <h1>@lang('Register')</h1>
+                        </div>
+
 
                         <div class="card-body">
-                            <form method="POST" action="{{ route('register') }}">
+
+                            <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                                 @csrf
 
-                                <div class="form-group row">
+                                <div class="form-group">
                                     <label for="name"
-                                           class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                                           class="col-md-4 control-label col-form-label text-md-right">{{ __('Name') }}</label>
+
+
 
                                     <div class="col-md-6">
                                         <input id="name" type="text"
@@ -31,7 +38,7 @@
 
                                 <div class="form-group row">
                                     <label for="email"
-                                           class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                                           class="col-md-4 control-label col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                                     <div class="col-md-6">
                                         <input id="email" type="email"
@@ -48,7 +55,7 @@
 
                                 <div class="form-group row">
                                     <label for="password"
-                                           class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                                           class="col-md-4 col-form-label text-md-right control-label">{{ __('Password') }}</label>
 
                                     <div class="col-md-6">
                                         <input id="password" type="password"
@@ -65,7 +72,7 @@
 
                                 <div class="form-group row">
                                     <label for="password-confirm"
-                                           class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+                                           class="col-md-4 col-form-label text-md-right control-label">{{ __('Confirm Password') }}</label>
 
                                     <div class="col-md-6">
                                         <input id="password-confirm" type="password" class="form-control"
@@ -73,13 +80,15 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group row mb-0">
-                                    <div class="col-md-6 offset-md-4">
+                                <div class="form-group">
+                                    <div class="col-md-8 col-md-offset-4">
                                         <button type="submit" class="btn btn-primary">
                                             {{ __('Register') }}
                                         </button>
                                     </div>
                                 </div>
+
+
                             </form>
                         </div>
                     </div>
