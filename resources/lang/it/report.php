@@ -36,7 +36,7 @@ return [
     ],
     'name_for_certificate' => [
         'label' => 'Nome per il certificato',
-        'help' => 'Cambialo con il nome dell'organizzatore dell'evento a cui verrà rilasciato un certificato di partecipazione alla Settimana della programmazione. Ti preghiamo di utilizzare solo lettere ASCII (latino). Le lettere con accenti, dieresi e simili non sono supportate.'
+        'help' => 'Cambialo con il nome dell’organizzatore dell’evento a cui verrà rilasciato un certificato di partecipazione alla Settimana della programmazione. Ti preghiamo di utilizzare solo lettere ASCII (latino). Le lettere con accenti, dieresi e simili non sono supportate.'
     ],
     'submit' => 'Invia rapporto evento',
     'thanks_page'=>[
