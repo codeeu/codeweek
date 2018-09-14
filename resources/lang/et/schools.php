@@ -30,7 +30,7 @@ return [
         "title2" => "Korralda õppetund, koolitus või üritus ja kinnita see kaardile.",
         "content" => [
             "Sõltumata sellest, kas sa juba oskad programmeerida või mitte, võid lihtsalt korraldada oma klassis tunni, lahtiste uste päeva või kooliürituse. Vali vaid kuupäev ja registreeri oma tegevus allpool oleval kaardil. Kui sulle tundub, et vajad abi programmeerimistunni ettevalmistamisel, liigu järgmisse jaotisse.",
-            "Vaata allpool oleval kaardil näiteid korraldatavatest ettevõtmistest ja lisa enda oma, liitudes tuhandete teiste haridustöötajatega Euroopas ja mujal maailmas: [embed map]"
+            "Vaata allpool oleval kaardil näiteid korraldatavatest ettevõtmistest ja lisa enda oma, liitudes tuhandete teiste haridustöötajatega Euroopas ja mujal maailmas: "
 
         ],
         "button" => [

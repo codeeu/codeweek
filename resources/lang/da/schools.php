@@ -30,7 +30,7 @@ return [
         "title2" => "Afhold en lektion, en træningssession eller et arrangement, og tilføj det på kortet.",
         "content" => [
             "Uanset om du har kendskab til kodning og programmering eller ej, er det let at afholde en lektion i klasseværelset, en åbent hus-dag eller et arrangement på skolen. Du skal bare vælge en dato og registrere aktiviteten på kortet nedenfor. Hvis du mener, at du skal bruge hjælp til at forberede en kodelektion, skal du gå videre til næste afsnit.",
-            "Tag et kig på nogle eksempler på aktiviteter, der afholdes, ved at se på kortet nedenfor, og tilføj din egen aktivitet, så du kan blive en af de flere tusinde undervisere i Europa og resten af verden: [embed map]"
+            "Tag et kig på nogle eksempler på aktiviteter, der afholdes, ved at se på kortet nedenfor, og tilføj din egen aktivitet, så du kan blive en af de flere tusinde undervisere i Europa og resten af verden: "
 
         ],
         "button" => [

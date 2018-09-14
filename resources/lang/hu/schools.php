@@ -30,7 +30,7 @@ return [
         "title2" => 'Szervezzen tanórát, képzést vagy eseményt, és tűzze ki a térképre.',
         "content" => [
             'Függetlenül attól, hogy rendelkezik-e programozási ismeretekkel vagy sem, könnyen megszervezhet egy tematikus tanórát saját tantermében, vagy pedig egy nyílt napot vagy rendezvényt iskolájában. Mindössze találnia kell egy megfelelő időpontot hozzá, majd regisztrálnia eseményét az alábbi térképen. Amennyiben úgy érzi, segítségre szorul a programozással kapcsolatos tanóra előkészítéséhez, ugorjon a következő szakaszhoz.',
-            'Az alábbi térkép tanulmányozásával megtekintheti, hogy milyen események kerülnek megszervezésre, majd adja hozzá saját eseményét, hogy csatlakozhasson többezer európai és Európán kívüli oktatótársához: [embed map]"
+            'Az alábbi térkép tanulmányozásával megtekintheti, hogy milyen események kerülnek megszervezésre, majd adja hozzá saját eseményét, hogy csatlakozhasson többezer európai és Európán kívüli oktatótársához: "
 
         ],
         "button" => [

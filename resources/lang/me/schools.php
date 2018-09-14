@@ -30,7 +30,7 @@ return [
         "title2" => "Organizujte predavanje, obuku ili događaj i dodajte ga na mapu.",
         "content" => [
             "Bilo da posjedujete znanje u oblasti kodiranja ili programiranja ili ne, možete lako organizovati predavanje u svojoj učionici, dan otvorenih vrata ili događaj u svojoj školi. Samo pronađite datum i registrujte svoju aktivnost na mapi niže. Ukoliko smatrate da vam je potrebna pomoć u pripremi predavanja o programiranju, pređite na sljedeći odjeljak.",
-            "Pregledom mape date niže, možete pogledati primjere nekih od dogadjaja koji se organizuju i dodati svoj kako bi se pridružili hiljadama predavača u Evropi i šire: [embed map]"
+            "Pregledom mape date niže, možete pogledati primjere nekih od dogadjaja koji se organizuju i dodati svoj kako bi se pridružili hiljadama predavača u Evropi i šire: "
 
         ],
         "button" => [
