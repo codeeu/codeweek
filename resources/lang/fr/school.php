@@ -21,7 +21,7 @@ return [
     'list'                => 'Liste',
     'required' => [
         'name'=>'Le nom de l’établissement scolaire est requis',
-        'location'=>'L'adresse de l’établissement scolaire est requise',
+        'location'=>'L’adresse de l’établissement scolaire est requise',
     ]
 
 
