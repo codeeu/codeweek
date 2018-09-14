@@ -14,7 +14,7 @@ return [
     */
     'organised_by'=>'Organizzato da: ',
     'contact_email' => 'E-mail di contatto: ',
-    'happening_at' => 'Luogo dell'evento: ',
+    'happening_at' => 'Luogo dell’evento: ',
     'from' => 'Da ',
     'to' => ' a ',
     'description' => 'Descrizione: ',
@@ -22,7 +22,7 @@ return [
     'audience' => 'Questo evento è rivolto a: ',
     'themes' => 'Temi principali: ',
     'tags' => 'Tag: ',
-    'share' => 'Condividi l'evento: ',
+    'share' => 'Condividi l’evento: ',
     'email' => [
         'tooltip' => 'Fai clic per inviare via e-mail a un amico',
         'subject' => 'Guarda questo fantastico evento di programmazione',

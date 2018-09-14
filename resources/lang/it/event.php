@@ -24,7 +24,7 @@ return [
     'or_contact_your'=>'oppure contatta i tuoi',
     'eu_code_week_ambassadors'=>'Ambasciatori della settimana europea della programmazione',
     'show_events_for'=>'Mostra eventi per ',
-    'who' => 'A chi è rivolto l'evento?',
+    'who' => 'A chi è rivolto l\'evento?',
     'tags' => 'Tag',
     'image' => 'Immagine',
     'start' => [
@@ -33,7 +33,7 @@ return [
     ],
     'end' => [
         'label' => 'Data di fine',
-        'placeholder' => 'Quando finisce l'attività?',
+        'placeholder' => 'Quando finisce l’attività?',
     ],
     'organizer' => [
         'label' => 'Nome dell’organizzazione',
@@ -45,21 +45,21 @@ return [
     ],
     'description' => [
         'label' => 'Descrizione',
-        'placeholder' => 'Descrivi brevemente l'attività pianificata.',
+        'placeholder' => 'Descrivi brevemente l’attività pianificata.',
     ],
     'contact' => [
         'label' => 'E-mail di contatto',
         'placeholder' => 'Questo indirizzo e-mail sarà utilizzato per corrispondenza importante relativa alla settimana europea della programmazione',
-        'explanation' => 'La tua e-mail di contatto sarà visibile solo agli organizzatori e agli ambasciatori della settimana europea della programmazione, i quali controlleranno il tuo evento prima che appaia sulla mappa e potrebbero contattarti qualora siano necessarie modifiche oppure per gestire sondaggi a fini statistici dopo l'evento.',
+        'explanation' => 'La tua e-mail di contatto sarà visibile solo agli organizzatori e agli ambasciatori della settimana europea della programmazione, i quali controlleranno il tuo evento prima che appaia sulla mappa e potrebbero contattarti qualora siano necessarie modifiche oppure per gestire sondaggi a fini statistici dopo l’evento.',
     ],
     'public' => [
         'label' => 'E-mail pubblica',
-        'placeholder' => 'Desideri visualizzare un'e-mail di contatto?'
+        'placeholder' => 'Desideri visualizzare un’e-mail di contatto?'
 
     ],
     'title' => [
         'label' => 'Titolo attività',
-        'placeholder' => 'Qual è il nome dell'attività?',
+        'placeholder' => 'Qual è il nome dell’attività?',
     ],
     'address' => [
         'label' => 'Indirizzo',

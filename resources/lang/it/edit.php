@@ -13,7 +13,7 @@ return [
     |
     */
     'title' => 'Modifica il tuo evento #codeEU',
-    'required_fields' => 'I campi obbligatori sono contrassegnati con un asterisco *. Puoi aggiungere liberamente l'elenco degli eventi nella tua lingua locale.',
+    'required_fields' => 'I campi obbligatori sono contrassegnati con un asterisco *. Puoi aggiungere liberamente l\'elenco degli eventi nella tua lingua locale.',
     'description' => 'Descrizione',
     'audience' => 'Pubblico',
     'theme' => 'Tema',
@@ -33,7 +33,7 @@ return [
        organizzatori della settimana della programmazione, che
        controlleranno il tuo evento prima che appaia sulla mappa e potrebbero contattarti qualora siano necessarie
         modifiche o
-        per la gestione di sondaggi a fini statistici dopo l'evento.',
+        per la gestione di sondaggi a fini statistici dopo l\'evento.',
         'contact_email' => 'Il tuo contatto e-mail'
     ], 
     'edit' => 'Modifica evento'
