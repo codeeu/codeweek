@@ -29,7 +29,7 @@ return [
         'body_1' => 'Salut, jette un coup d’œil à ',
         'body_2' => 'l’événement sur '
     ],
-    'edit' => 'Afficher l'événement',
+    'edit' => 'Afficher l’événement',
     'note' => 'REMARQUE: ',
     'pending_warning' => 'Cet événement est toujours en cours de révision par ',
     'pending_link' => 'les modérateurs',
