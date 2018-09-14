@@ -15,11 +15,11 @@ return [
     'audience_title'=>'Udeleženci',
     'theme_title'=>'Tema',
     
-    'placeholder' => 'Poišèite ime ali oznako dogodka',
-    'submit' => 'Išèi',
+    'placeholder' => 'Poiščite ime ali oznako dogodka',
+    'submit' => 'Išči',
     'label_country' => 'Izberite državo',
     'last_year_events' => [
-        'label' => 'Vkljuèi dogodke iz zadnjih let',
+        'label' => 'Vključi dogodke iz zadnjih let',
         'yes' => 'Da',
         'no' => 'Ne'
     ],

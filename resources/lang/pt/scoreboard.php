@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'Painel de eventos #codeEU',
+    'title' => 'Painel de eventos #codeweek',
     'paragraph'=>'Que países da Europa estão a fervilhar com atividades de programação? O painel está organizado por número de eventos de programação enumerados por população, pelo que não se surpreenda ao ver alguns dos países mais pequenos ocuparem o topo da lista!',
     'parcipating_with'=>'participa com',
     'events'=>'eventos'

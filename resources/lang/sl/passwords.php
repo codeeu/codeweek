@@ -15,8 +15,8 @@ return [
 
     'password' => 'Geslo mora vsebovati najmanj šest znakov in ga je treba ponoviti.',
     'reset' => 'Vaše geslo je bilo ponastavljeno!',
-    'sent' => 'Poslali smo vam elektronsko sporoèilo s povezavo za ponastavitev gesla!',
+    'sent' => 'Poslali smo vam elektronsko sporočilo s povezavo za ponastavitev gesla!',
     'token' => 'Ta žeton za ponastavitev gesla je neveljaven.',
-    'user' => 'Ne moremo najti uporabnika s tem elektronskim naslovom.',
+    'user' => "Ne moremo najti uporabnika s tem elektronskim naslovom.",
 
 ];

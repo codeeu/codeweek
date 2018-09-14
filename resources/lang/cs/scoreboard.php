@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'Srovnávací přehled #codeEU akcí',
+    'title' => 'Srovnávací přehled #codeweek akcí',
     'paragraph'=>'Ve kterých evropských zemích probíhá nejvíc programovacích akcí? Srovnávací přehled uvádí země podle počtu programovacích akcí na počet obyvatel. Nedivte se proto, že některé menší země jsou v žebříčku výše.',
     'parcipating_with'=>'se podílí',
     'events'=>'akcemi'

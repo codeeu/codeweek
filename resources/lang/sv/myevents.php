@@ -14,8 +14,8 @@ return [
     */
     'created_by'=>'Alla evenemang skapade av ',
     'no_events'=>[
-        'first_call_to_action' => "Du har inte lagt till nagra evenemang ännu. Varför inte",
-        'first_link' => 'lägga till ett nu',
+        'first_call_to_action' => "Du har inte lagt till nagra evenemang ännu. Varför inte ",
+        'first_link' => 'lägg till ett nu',
         'second_call_to_action' => 'eller läsa var ',
         'second_link' => 'guide för arrangörer?'
     ],

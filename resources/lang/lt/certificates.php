@@ -13,5 +13,5 @@ return [
     |
     */
     'certificates_for' => 'Sertifikatai ',
-    'no_certificates' => 'Sertifikatř dar nëra.'
+    'no_certificates' => 'Sertifikatų dar nėra.'
 ];

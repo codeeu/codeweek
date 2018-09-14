@@ -149,7 +149,7 @@
 
                         <p>We zijn op Twitter te vinden onder <a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>, we zitten op <a
                                     href="https://www.facebook.com/codeEU">Facebook</a> en we gebruiken de hashtag <a
-                                    href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a></p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">Bekijk wat er gaande is</a></div>
+                                    href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a>.</p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">Bekijk wat er gaande is</a></div>
 
                     <div class="clear"></div>
                 </div>

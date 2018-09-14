@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => '#codeEU-Veranstaltungsanzeiger',
+    'title' => '#codeweek-Veranstaltungsanzeiger',
     'paragraph'=>'In welchen europäischen Ländern wird am aktivsten programmiert? Der Anzeiger ist nach der Anzahl der gelisteten Programmierveranstaltungen im Hinblick auf die Einwohnerzahl sortiert, seien Sie daher nicht überrascht, wenn Sie einige kleinere Länder oben in der Liste finden!',
     'parcipating_with'=>'nimmt teil mit',
     'events'=>'Veranstaltungen'

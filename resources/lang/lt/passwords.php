@@ -13,10 +13,10 @@ return [
     |
     */
 
-    'password' => 'Slaptaţodţiai turi bűti sudaryti maţiausiai iđ đeđiř simboliř ir sutapti su patvirtinimu.',
-    'reset' => 'Jűsř slaptaţodis atkurtas!',
-    'sent' => 'Slaptaţodţio atkűrimo nuorodŕ iđsiuntëme jums el. pađtu!',
-    'token' => 'Đis slaptaţodţio atkűrimo raktas negalioja.',
-    'user' => "Nera vartotojo su tokiu el. pašto adresu.",
+    'password' => 'Slaptažodžiai turi būti sudaryti mažiausiai iš šešių simbolių ir sutapti su patvirtinimu.',
+    'reset' => 'Jūsų slaptažodis atkurtas!',
+    'sent' => 'Slaptažodžio atkūrimo nuorodą išsiuntėme jums el. paštu!',
+    'token' => 'Šis slaptažodžio atkūrimo raktas negalioja.',
+    'user' => "Nėra vartotojo su tokiu el. pašto adresu.",
 
 ];

@@ -14,7 +14,7 @@ return [
     */
     'reports_by' => 'Evenemang inväntar rapportering av ',
     'no_reports' => 'Det finns inga evenemang att rapportera ännu.',
-    'report' => 'Evenemangen i listan nedan har startat eller redan avslutats. Fyll i nĺgra siffror för
+    'report' => 'Evenemangen i listan nedan har startat eller redan avslutats. Fyll i några siffror för
     statistiska syften om evenemanget och lös ut ditt intyg om Code Week-deltagande. Du
-    fĺr ett intyg per evenemang.'
+    får ett intyg per evenemang.'
 ];
