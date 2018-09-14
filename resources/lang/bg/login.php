@@ -11,10 +11,10 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-    'login' => '¬ход',
-    'register' => '–егистриране',
-    'github' => '¬лизане с Github',
-    'twitter' => '¬лизане с Twitter',
-    'facebook' => '¬лизане с Facebook',
-    'google' => '¬лизане с Google'
+    'login' => 'Вход',
+    'register' => 'Регистриране',
+    'github' => 'Влизане с Github',
+    'twitter' => 'Влизане с Twitter',
+    'facebook' => 'Влизане с Facebook',
+    'google' => 'Влизане с Google'
 ];

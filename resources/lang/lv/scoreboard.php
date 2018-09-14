@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => '#codeEU Pasākumu rezultātu pārskats',
+    'title' => '#codeweek Pasākumu rezultātu pārskats',
     'paragraph'=>'Kurās Eiropas valstīs notiek aktīva programmēšana? Rezultātu pārskats ir sakārtots pēc reģistrēto pasākumu skaita proporcionāli iedzīvotāju skaitam, tādēļ neesiet pārsteigti, ka dažas mazākas valstis ir šīs saraksta augšdaļā!',
     'parcipating_with'=>'piedalās ar',
     'events'=>'pasākumiem'

@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => '#codeEU Events Scoreboard',
+    'title' => '#codeweek Events Scoreboard',
     'paragraph'=>'Which countries in Europe are buzzing with coding activity? The scoreboard is sorted by the number of listed coding events per population, so don\'t be surprised to see some of the smaller countries higher up on the list!',
     'parcipating_with'=>'is participating with',
     'events'=>'events'

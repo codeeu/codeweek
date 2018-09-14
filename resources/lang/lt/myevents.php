@@ -12,11 +12,11 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'created_by'=>'Visus renginius sukűrë ',
+    'created_by'=>'Visus renginius sukūrė ',
     'no_events'=>[
-        'first_call_to_action' => "Jus dar nepridejote ne vieno renginio. Gal ",
-        'first_link' => 'pridekite dabar',
-        'second_call_to_action' => 'arba perskaitykite musu ',
+        'first_call_to_action' => "Jūs dar nepridėjote nė vieno renginio. Gal ",
+        'first_link' => 'pridėkite dabar',
+        'second_call_to_action' => 'arba perskaitykite mūsų ',
         'second_link' => 'gaires organizatoriams?'
     ],
     'view'=>'Rodyti',

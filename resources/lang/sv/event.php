@@ -15,12 +15,12 @@ return [
     'main_title'=>'Lägg till ditt evenemang för #codeEU',
     'button'=>'Lägg till evenemang',
     'howto'=>'Hur du ordnar ditt eget evenemang',
-    'required'=>'Fält som mĺste fyllas i är markerade med en asterisk *. Lägg gärna till evenemanget pĺ ditt lokala sprĺk i listan.',
+    'required'=>'Fält som måste fyllas i är markerade med en asterisk *. Lägg gärna till evenemanget på ditt lokala språk i listan.',
     'audience_title'=>'Publik',
     'theme_title'=>'Tema',
     'scoreboard_by_country'=>'Evenemangstavla efter land',
     'get_involved'=>'Bli engagerad',
-    'organize_or_support_events'=>'Ordna eller stöd evenemang pĺ din ort',
+    'organize_or_support_events'=>'Ordna eller stöd evenemang på din ort',
     'or_contact_your'=>'eller kontakta dina',
     'eu_code_week_ambassadors'=>'EU Code Week-ambassadörer',
     'show_events_for'=>'Visa evenemang för ',
@@ -50,7 +50,7 @@ return [
     'contact' => [
         'label' => 'E-post för kontakt',
         'placeholder' => 'Denna e-postadress kommer att användas för viktig korrespondens om EU Code Week',
-        'explanation' => 'Din e-postadress för kontakt kommer bara att vara synlig för EU Code Week-ambassadörer och Code Week-arrangörer, som kontrollerar ditt evenemang innan det syns pĺ kartan och kanske kontaktar dig om redigeringar behövs eller för att administrera undersökningar i statistiskt syfte efter evenemanget.',
+        'explanation' => 'Din e-postadress för kontakt kommer bara att vara synlig för EU Code Week-ambassadörer och Code Week-arrangörer, som kontrollerar ditt evenemang innan det syns på kartan och kanske kontaktar dig om redigeringar behövs eller för att administrera undersökningar i statistiskt syfte efter evenemanget.',
     ],
     'public' => [
         'label' => 'Offentlig e-post',
@@ -105,18 +105,18 @@ return [
         'Augmented reality' => 'Förstärkt verklighet',
         'Artificial intelligence' => 'Artificiell intelligens',
         'Motivation and awareness raising' => 'Motivation och medvetandehöjning',
-        'Promoting diversity' => 'Främjande av mĺngfald'
+        'Promoting diversity' => 'Främjande av mångfald'
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'CODE WEEK 4 ALL-KOD',
-        'explanation' => 'Om du har fĺtt en Code Week 4 All-kod av en skolkollega eller en vän klistrar du in den här, annars lämnar du tomt. Mer info om Code Week 4 All finns',
+        'explanation' => 'Om du har fått en Code Week 4 All-kod av en skolkollega eller en vän klistrar du in den här, annars lämnar du tomt. Mer info om Code Week 4 All finns',
         'link' => 'här',
     ],
     'thanks_page'=>[
         'title'=>'Tack för att du lagt till ditt evenemang!',
-        'phrase1'=>'En av vĺra lokala ambassadörer kommer nu att titta pĺ ditt evenemang',
+        'phrase1'=>'En av våra lokala ambassadörer kommer nu att titta på ditt evenemang',
         'phrase2'=>'och se till att allting ser bra ut.',
-        'phrase3'=>'Om du har frĺgor, ta kontakt med en av vĺra',
+        'phrase3'=>'Om du har frågor, ta kontakt med en av våra',
         'phrase4'=>'nationella ambassadörer',
         'phrase5'=>'eller skicka oss ett',
         'phrase6'=>'e-postmeddelande',
