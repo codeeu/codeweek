@@ -30,7 +30,7 @@ return [
         "title2" => "Zorganizujte lekci, školení nebo akci a dejte ji na mapu.",
         "content" => [
             "Ať už o programování něco víte nebo ne, můžete snadno zorganizovat lekci ve své třídě, den otevřených dveří nebo akci ve své škole. Stačí si vybrat datum a zaregistrovat svou akci na níže uvedené mapě. Pokud máte pocit, že s přípravou lekce potřebujete pomoc, přejděte na další sekci.",
-            "Projděte si níže uvedenou mapu a podívejte se na několik příkladů akcí, které se právě organizují. Přidejte svou vlastní akci a připojte k tisícům dalších instruktorů po celé Evropě i jinde: [embed map]"
+            "Projděte si níže uvedenou mapu a podívejte se na několik příkladů akcí, které se právě organizují. Přidejte svou vlastní akci a připojte k tisícům dalších instruktorů po celé Evropě i jinde: "
 
         ],
         "button" => [

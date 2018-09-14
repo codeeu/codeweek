@@ -30,7 +30,7 @@ return [
         "title2" => 'Pripravite učno uro, tečaj usposabljanja ali dogodek in ga pripnite na zemljevid.',
         "content" => [
             'Ne glede na to, ali imate znanje s področja programiranja ali ne, lahko enostavno pripravite učno uro v svojem razredu, dan odprtih vrat ali dogodek na svoji šoli. Samo poiščite datum in prijavite svojo dejavnost na spodnjem zemljevidu. Če menite, da boste pri pripravi učne ure programiranja potrebovali pomoč, preskočite na naslednjo rubriko.',
-            'Prebrskajte po spodnjem zemljevidu in si oglejte nekaj primerov dejavnosti, ki se pripravljajo, ter dodajte svoje in se tako pridružite več tisoč kolegom iz vse Evrope in zunaj nje: [embed map]'
+            'Prebrskajte po spodnjem zemljevidu in si oglejte nekaj primerov dejavnosti, ki se pripravljajo, ter dodajte svoje in se tako pridružite več tisoč kolegom iz vse Evrope in zunaj nje: '
 
         ],
         "button" => [

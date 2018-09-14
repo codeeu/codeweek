@@ -30,7 +30,7 @@ return [
         "title2" => "Organizirajte lekciju, sesiju obuke, ili događaj, i zakačite ga na mapu.",
         "content" => [
             "Bilo da imate znanja iz kodiranja ili programiranja ili nemate, možete lako organizirati lekciju u svojoj učionici, otvoreni dan ili događaj u vašoj školi. Samo pronađite datum i registrirajte svoju aktivnost na donjoj mapi. Ako smatrate da vam treba podrška sa pripremom lekcije iz kodiranja, pređite na naredni odjeljak.",
-            "Pogledajte neke primjere aktivnosti koje se organiziraju pregledom donje mape i dodajte vaše vlastite da biste se pridružili tisućama kolega edukatora širom Europe i dalje: [embed map]"
+            "Pogledajte neke primjere aktivnosti koje se organiziraju pregledom donje mape i dodajte vaše vlastite da biste se pridružili tisućama kolega edukatora širom Europe i dalje: "
 
         ],
         "button" => [

@@ -30,7 +30,7 @@ return [
         "title2" => "Zorganizuj lekcję, sesję szkoleniową lub wydarzenie i przypnij je na mapie",
         "content" => [
             "Aby zorganizować lekcję w klasie, dzień otwarty lub wydarzenie w szkole, nie musisz posiadać żadnej wiedzy na temat kodowania ani programowania. Wybierz tylko datę i zarejestruj aktywność na mapie poniżej. Jeżeli potrzebujesz pomocy w przygotowaniu lekcji na temat kodowania, przejdź do kolejnej sekcji",
-            "Zapoznaj się z przykładami organizowanych aktywności, przeglądając mapę poniżej a następnie dodaj własną inicjatywę, dołączając w ten sposób do tysięcy pedagogów z całej Europy i świata: [embed map]"
+            "Zapoznaj się z przykładami organizowanych aktywności, przeglądając mapę poniżej a następnie dodaj własną inicjatywę, dołączając w ten sposób do tysięcy pedagogów z całej Europy i świata: "
 
         ],
         "button" => [
