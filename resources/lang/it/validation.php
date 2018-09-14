@@ -84,7 +84,7 @@ return [
         'array'   => 'L’ :attribute deve contenere :size voci.',
     ],
     'string'               => 'L’ :attribute deve essere una stringa.',
-    'timezone'             => 'L’ :attribute deve essere un'area valida.',
+    'timezone'             => 'L’ :attribute deve essere un\'area valida.',
     'unique'               => 'L’ :attribute è stato già preso.',
     'uploaded'             => 'È impossibile caricare l’ :attribute.',
     'url'                  => 'Il formato dell’ :attribute non è valido.',
