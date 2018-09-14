@@ -15,6 +15,6 @@ return [
     'reports_by' => 'Eventi in sospeso per segnalazione di ',
     'no_reports' => 'Non ci sono ancora eventi da segnalare.',
     'report' => 'Gli eventi elencati di seguito sono iniziati o sono già terminati. Inserisci alcuni numeri per
-      scopi statistici per l'evento e richiedi il certificato di partecipazione alla settimana della programmazione. Riceverai
+      scopi statistici per l’evento e richiedi il certificato di partecipazione alla settimana della programmazione. Riceverai
       un certificato per evento.'
 ];
