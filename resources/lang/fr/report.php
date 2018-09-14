@@ -38,7 +38,7 @@ return [
         'label' => 'Nom pour le certificat',
         'help' => 'Remplacez ce nom par celui de l’organisateur de l’événement qui recevra le certificat de participation à la Code Week. Veuillez n’utiliser que des caractères ASCII (lettres de l’alphabet latin). Les lettres accentuées, les trémas et autres caractères spéciaux ne sont pas pris en charge.'
     ],
-    'submit' => 'Envoyez le formulaire d'ajout de votre événement',
+    'submit' => 'Envoyez le formulaire d’ajout de votre événement',
     'thanks_page'=>[
         'title'=>'Merci d’avoir signalé votre événement!',
         'certificate_ready'=>'Votre certificat est prêt.',
