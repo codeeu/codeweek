@@ -26,7 +26,7 @@ return [
     'search_event' => 'Iskanje dogodkov',
     'hello' => 'Živijo!',
     'profile' => 'Profil',
-    'pending' => 'Èakajoèi dogodki',
+    'pending' => 'Čakajoči dogodki',
     'your_events' => 'Vaši dogodki',
     'your_certificates' => 'Vaši certifikati',
     'report' => 'Prijavite svoje dogodke',

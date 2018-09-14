@@ -15,15 +15,15 @@ return [
     'audience_title'=>'Auditorija',
     'theme_title'=>'Tema',
     
-    'placeholder' => 'Ieđkoti renginio pavadinimo arba ţymës',
-    'submit' => 'Paieđka',
-    'label_country' => 'Pasirinkite đalá',
+    'placeholder' => 'Ieškoti renginio pavadinimo arba žymės',
+    'submit' => 'Paieška',
+    'label_country' => 'Pasirinkite šalį',
     'last_year_events' => [
-        'label' => 'Átraukti praëjusiř metř renginius',
+        'label' => 'Įtraukti praėjusių metų renginius',
         'yes' => 'Taip',
         'no' => 'Ne'
     ],
-    'search_counter' => 'atitinka jűsř paieđkos kriterijus',
+    'search_counter' => 'atitinka jūsų paieškos kriterijus',
     'event'=>'renginys',
     'events'=>'renginiai'
 ];

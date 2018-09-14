@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'Tablica wyników wydarzeń #codeEU',
+    'title' => 'Tablica wyników wydarzeń #codeweek',
     'paragraph'=>'W których krajach w Europie odbywa się najwięcej wydarzeń dotyczących kodowania? Dane na tablicy wyników są uporządkowane według liczby wydarzeń związanych z kodowaniem w stosunku do populacji, a zatem niektóre z mniejszych państw mogą znaleźć się wyżej na liście!',
     'parcipating_with'=>'uczestniczy w',
     'events'=>'wydarzeniach'

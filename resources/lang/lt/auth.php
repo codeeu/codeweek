@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'failed' => 'Đie prisijungimo duomenys neatitinka műsř árađř.',
-    'throttle' => 'Per daug bandymř prisijungti. Bandykite dar kartŕ po :seconds s.',
+    'failed' => 'Šie prisijungimo duomenys neatitinka mūsų įrašų.',
+    'throttle' => 'Per daug bandymų prisijungti. Bandykite dar kartą po :seconds s.',
 
 ];

@@ -14,14 +14,14 @@ return [
     |
     */
 
-    'title' => 'ES programavimo savaitës ambasadoriai',
-    'your_current_country'=>'Jűsř gyvenamoji đalis',
+    'title' => 'ES programavimo savaitės ambasadoriai',
+    'your_current_country'=>'Jūsų gyvenamoji šalis',
     'visit_the'=> 'Apsilankykite',
     'local_facebook_page'=>'vietos „Facebook“ puslapyje',
-    'local_website'=>'Vietos svetainë',
+    'local_website'=>'Vietos svetainė',
     'ambassadors'=>'Ambasadoriai',
-    'no_ambassadors'=>'Nëra ambasadoriř',
-    'countries_with_ambassadors'=>'Đalys, kurios turi ambasadorius',
-    'why_dont_you_volunteer'=>'Kodël jums netapus ambasadoriumi?'
+    'no_ambassadors'=>'Nėra ambasadorių',
+    'countries_with_ambassadors'=>'Šalys, kurios turi ambasadorius',
+    'why_dont_you_volunteer'=>'Kodėl jums netapus ambasadoriumi?'
 
 ];

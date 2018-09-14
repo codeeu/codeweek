@@ -14,9 +14,9 @@ return [
     |
     */
 
-    'title' => '#codeEU eseménytábla',
-    'paragraph'=>'Mely európai országokban dübörög a programozás? Az eseménytábla az egy fõre jutó programozási események száma szerint van rendszerezve, így ne lepõdjön meg, ha néhány kisebb ország a lista élmezõnyében szerepel!',
-    'parcipating_with'=>'részt vesz a következõvel:',
-    'events'=>'események'
+    'title' => '#codeweek eseménytábla',
+    'paragraph'=>'Mely európai országokban dübörög a programozás? Az eseménytábla az egy főre jutó programozási események száma szerint van rendszerezve, így ne lepődjön meg, ha néhány kisebb ország a lista élmezőnyében szerepel!',
+    'parcipating_with'=>'részt vesz a következővel:',
+    'events'=>'esemény'
 
 ];

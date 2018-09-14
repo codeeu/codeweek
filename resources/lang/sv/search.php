@@ -19,7 +19,7 @@ return [
     'submit' => 'Sök',
     'label_country' => 'Välj land',
     'last_year_events' => [
-        'label' => 'Inkludera förra ĺrets evenemang',
+        'label' => 'Inkludera förra årets evenemang',
         'yes' => 'Ja',
         'no' => 'Nej'
     ],

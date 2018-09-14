@@ -13,10 +13,10 @@ return [
     |
     */
 
-    'password' => 'Lösenord mĺste vara minst sex tecken lĺnga och samma som det bekräftande lösenordet.',
-    'reset' => 'Ditt lösenord har ĺterställts!',
-    'sent' => 'Vi har skickat e-post med din länk för ĺterställning av lösenord!',
-    'token' => 'Denna token för ĺterställning av lösenord är ogiltig.',
+    'password' => 'Lösenord måste vara minst sex tecken långa och samma som det bekräftande lösenordet.',
+    'reset' => 'Ditt lösenord har återställts!',
+    'sent' => 'Vi har skickat e-post med din länk för återställning av lösenord!',
+    'token' => 'Denna token för återställning av lösenord är ogiltig.',
     'user' => "Vi kan inte hitta nagon användare med den e-postadressen.",
 
 ];

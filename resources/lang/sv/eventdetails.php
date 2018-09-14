@@ -14,8 +14,8 @@ return [
     */
     'organised_by'=>'Ordnas av: ',
     'contact_email' => 'E-post för kontakt: ',
-    'happening_at' => 'Äger rum pĺ: ',
-    'from' => 'frĺn ',
+    'happening_at' => 'Äger rum på: ',
+    'from' => 'från ',
     'to' => ' till ',
     'description' => 'Beskrivning: ',
     'more_info' => 'Mer information: ',
@@ -25,13 +25,13 @@ return [
     'share' => 'Dela evenemanget: ',
     'email' => [
         'tooltip' => 'Klicka för att e-posta detta till en vän',
-        'subject' => 'Titta pĺ det här fantastiska kodningsevenemanget',
+        'subject' => 'Titta på det här fantastiska kodningsevenemanget',
         'body_1' => 'Hej, kolla upp ',
-        'body_2' => 'evenemanget pĺ '
+        'body_2' => 'evenemanget på '
     ],
     'edit' => 'Redigera evenemang',
     'note' => 'ANM: ',
-    'pending_warning' => 'Detta evenemang hĺller fortfarande pĺ att granskas av ',
+    'pending_warning' => 'Detta evenemang håller fortfarande på att granskas av ',
     'pending_link' => 'moderatorerna',
     'nearby_upcoming_events' => 'Kommande evenemang i närheten:'
 ];
