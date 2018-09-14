@@ -151,7 +151,7 @@ class EventController extends Controller
      * @param  \App\Event $event
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Event $event)
+    public function update(EventRequest $request, Event $event)
     {
 
 
