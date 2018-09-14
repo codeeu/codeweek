@@ -30,7 +30,7 @@ return [
         "title2" => "Organizați o lecție, o sesiune de formare sau un eveniment și adăugați-l pe hartă.",
         "content" => [
             "Indiferent dacă aveți sau nu cunoștințe despre coduri sau programare, puteți organiza cu ușurință o lecție în clasa dumneavoastră, o zi a porților deschise, sau un eveniment la școala dumneavoastră. Găsiți doar o dată și înregistrați-vă activitatea pe harta de mai jos. Dacă considerați că aveți nevoie de ajutor la pregătirea unui curs privind programarea, treceți la secțiunea următoare.",
-            "Uitați-vă la câteva exemple de activități care sunt organizate răsfoind harta de mai jos și adăugați propriile exemple pentru a vă alătura miilor de educatori din întreaga Europă și din restul lumii: [embed map]"
+            "Uitați-vă la câteva exemple de activități care sunt organizate răsfoind harta de mai jos și adăugați propriile exemple pentru a vă alătura miilor de educatori din întreaga Europă și din restul lumii: "
 
         ],
         "button" => [

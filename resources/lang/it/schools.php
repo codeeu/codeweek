@@ -30,7 +30,7 @@ return [
         "title2" => "Organizza una lezione, una sessione di formazione o un evento e appuntalo sulla mappa.",
         "content" => [
             "Che tu abbia conoscenze di programmazione o meno, puoi facilmente organizzare una lezione con la tua classe, un open day o un evento nella tua scuola. Devi solo trovare una data e registrare la tua attività nella mappa sottostante. Se hai bisogno di supporto nel preparare una lezione sulla programmazione, passa alla sezione successiva.",
-            "Guarda qualche esempio di attività in corso di organizzazione navigando sulla mappa sottostante e aggiungi la tua per unirti a migliaia di insegnanti come te in tutta Europa e non solo: [embed map]"
+            "Guarda qualche esempio di attività in corso di organizzazione navigando sulla mappa sottostante e aggiungi la tua per unirti a migliaia di insegnanti come te in tutta Europa e non solo: "
 
         ],
         "button" => [

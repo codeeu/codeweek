@@ -30,7 +30,7 @@ return [
         "title2" => "Organizoni një mësim, një sesion trajnimi ose një eveniment, dhe vendoseni në hartë.",
         "content" => [
             "Qoftë kur keni njohuri rreth kodimit ose programimit, ju mund të organizoni me lehtësi një mësim në klasën tuaj, një ditë të hapur ose një eveniment në shkollën tuaj. Thjesht gjeni një datë dhe regjistroni aktivitetin tuaj në hartën më poshtë. Nëse mendoni se ju nevojitet mbështetje për të përgatitur një mësim me kodim, kapërceni te seksioni tjetër.",
-            "Hidhuni një sy disa shembujve të aktiviteteve që po organizohen duke shfletuar hartën poshtë dhe shtoni aktivitetet tuaja për t’u bashkuar me mijëra edukatorë të tjerë në mbarë Evropën e më tej: [embed map]"
+            "Hidhuni një sy disa shembujve të aktiviteteve që po organizohen duke shfletuar hartën poshtë dhe shtoni aktivitetet tuaja për t’u bashkuar me mijëra edukatorë të tjerë në mbarë Evropën e më tej: "
 
         ],
         "button" => [

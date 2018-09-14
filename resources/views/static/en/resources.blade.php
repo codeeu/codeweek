@@ -30,12 +30,15 @@
                 </div>
             </div>
 
-            <br/>
+            <hr/>
 
             <h2>Presentations and toolkits</h2>
             <ul>
 
                 <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/EU+Code+Week+2018+Communications+Toolkit.zip">EU Code Week 2018 Communications Toolkit</a></li>
+                <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/Teachers+Toolkit.zip">EU Code Week 2018 Teachers Toolkit</a></li>
+                <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/Leading+Teacher+Toolkit.zip">EU Code Week 2018 Leading Teachers Toolkit</a></li>
+                <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/National+Edu+Coordinator+Toolkit.zip">EU Code Week 2018 National Edu Toolkit</a></li>
                 <li>EU Code Week 2018 Leaflet.
 
                     <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_EN.pdf">EN</a>
@@ -95,31 +98,8 @@
 
 
                 </li>
-                <li>Presentation of EU Code Week 2018. (<a href="{{asset('docs/EUCodeWeek2018.pdf')}}">PDF</a>, <a
-                            href="{{asset('docs/EUCodeWeek2018.pptx')}}">PPTX</a>)
-                </li>
-                <li>Toolkit: how to organise a Europe Code Week event. (<a
-                            href="http://events.codeweek.eu/guide/">WEB</a>, <a
-                            href="{{asset('docs/codeeu_toolkit.pdf')}}">PDF</a>)
-                </li>
-                <li>Derek Breen's Digital Game Design from Scratch (<a
-                            href="{{asset('docs/DGD-Scratch-Teacher-Guide-Abrdgd.pdf')}}"
-                            target="_blank">curriculum guide</a>, <a
-                            href="https://www.youtube.com/playlist?list=PLOJbImijbLrTlg1ywLCOwesrZC14E5fuM"
-                            target="_blank">video
-                        playlist </a>)
-                </li>
-                <li>
-                    <a href="http://www.slideshare.net/alessandrobogliolo/europe-code-week-in-the-classroom-teacher-guide"
-                       target="_blank">Toolkit for teachers: how to engage your classroom in Europe Code Week</a></li>
-                <li>
-                    <a href="https://www.slideshare.net/alessandrobogliolo/codeweek4all-challenge-2016-guidelines-for-schools-80177324"
-                       target="_blank">Toolkit for schools</a></li>
-                <li><a href="http://www.slideshare.net/alessandrobogliolo/europe-code-week-worldwide-guide"
-                       target="_blank">Toolkit
-                        for worldwide event organizers: 6 steps in 1 slide</a></li>
-                <li><a href="https://www.slideshare.net/alessandrobogliolo/codeweekeu-2017-guidelines-for-librarians"
-                       target="_blank">Toolkit for librarians prepared by Public Libraries 2020</a></li>
+
+
             </ul>
 
             <h2>Local resources in your language</h2>

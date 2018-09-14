@@ -30,7 +30,7 @@ return [
         "title2" => 'Organize uma aula, uma sessão de formação ou um evento e marque-o no mapa.',
         "content" => [
             'Quer tenha ou não alguns conhecimentos de programação, pode organizar facilmente uma aula na sua sala de aula, um dia aberto ou um evento na sua escola. Para isso, basta fixar uma data e registar a sua atividade no mapa abaixo. Caso necessite de ajuda para preparar uma aula sobre programação, passe diretamente para a próxima secção.',
-            'Veja alguns exemplos de atividades que estão a ser organizadas, percorrendo o mapa que se segue e adicione a sua para se juntar a milhares de educadores dentro e fora da Europa: [embed map]'
+            'Veja alguns exemplos de atividades que estão a ser organizadas, percorrendo o mapa que se segue e adicione a sua para se juntar a milhares de educadores dentro e fora da Europa: '
 
         ],
         "button" => [
