@@ -33,6 +33,6 @@ return [
     'volunteers' => 'Frivilliga',
     'logout' => 'Utloggning',
     'signin' => 'Logga in',
-    'privacy' => 'Integritet',
+    'privacy' => 'Sekretess',
 
 ];
