@@ -15,7 +15,7 @@
 
                             <h2 data-caption-animate="fadeInUp">CODEWEEK.EU</h2>
                             <p data-caption-animate="fadeInUp" data-caption-delay="200">2018. okt&oacute;ber 6&ndash;21. <a
-                                        href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a></p>
+                                        href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a></p>
                         </div>
                     </div>
                 </div>
@@ -147,7 +147,7 @@
 
                         <p>A k&ouml;vetkező k&ouml;z&ouml;ss&eacute;gim&eacute;dia-platformokon tal&aacute;lhat meg: Twitter: <a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>, <a
                                     href="https://www.facebook.com/codeEU">Facebook</a>, &eacute;s a <a
-                                    href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a> hashtaget haszn&aacute;ljuk.</p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">&Eacute;rtes&uuml;lj&ouml;n a leg&uacute;jabb fejlem&eacute;nyekről</a></div>
+                                    href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a> hashtaget haszn&aacute;ljuk.</p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">&Eacute;rtes&uuml;lj&ouml;n a leg&uacute;jabb fejlem&eacute;nyekről</a></div>
 
                     <div class="clear"></div>
                 </div>

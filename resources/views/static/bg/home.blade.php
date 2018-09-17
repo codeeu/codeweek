@@ -15,7 +15,7 @@
 
                             <h2 data-caption-animate="fadeInUp">CODEWEEK.EU</h2>
                             <p data-caption-animate="fadeInUp" data-caption-delay="200">6&mdash;21&nbsp;октомври&nbsp;2018&nbsp;г. <a
-                                        href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a></p>
+                                        href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a></p>
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
                             <h4>Защо?</h4>
                         </div>
 
-                        <p>Усвояването на програмирането ни помага да разбираме бързо променящия се заобикалящ ни свят, да разширяваме разбирането си за начина на работа на технологиите и да развиваме умения и възможности, за да проучваме нови идеи и да създаваме иновации.</p>
+                        <p>Усвояването на програмирането ни помага да разбираме бързо променящия се заобикалящ ни свят, да научим повече за начина на работа на технологиите и да развиваме умения и възможности, за да проучваме нови идеи и да създаваме иновации.</p>
 
 
 
@@ -94,7 +94,9 @@
             </section>
 
             <section id="section-banner-teacher" class="section section-banner">
-                <a href="/schools">                     @include('static.banner_teacher')                 </a>
+                <a href="/schools">
+                    @include('static.banner_teacher')
+                </a>
             </section>
 
 
@@ -147,7 +149,7 @@
 
                         <p>Ние сме в Twitter като <a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>, във <a
                                     href="https://www.facebook.com/codeEU">Facebook</a> и използваме хаштага <a
-                                    href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a>.</p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">Вижте какво се случва</a></div>
+                                    href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a>.</p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">Вижте какво се случва</a></div>
 
                     <div class="clear"></div>
                 </div>
@@ -158,7 +160,7 @@
                 <div class="container clearfix">
 
                     <div class="heading-block bottommargin-lg center">
-                        <h2>Партньори и спонсори</h2><span>Помогнете ни да повишим информираността за Седмицата на програмирането и да разширим нейното въздействието.</span><p>Седмицата на програмирането е инициатива на равнище граждани, ръководена от доброволци, която популяризира програмирането сред стотици хиляди хора по целия свят. Ние постоянно търсим партньори и спонсори, които да ни помагат да разширяваме дейността си. Ако желаете да бъдете част от нашата общност и да спонсорирате нашите събития, свържете се с нас.</p><a href="mailto:info@codeweek.eu" class="button button-border button-rounded button-large">Свържете се</a></p>
+                        <h2>Партньори и спонсори</h2><span>Помогнете ни да повишим информираността за Седмицата на програмирането и да разширим нейното въздействие.</span><p>Седмицата на програмирането е инициатива, насочена към гражданите, ръководена от доброволци, която популяризира програмирането сред стотици хиляди хора по целия свят. Ние постоянно търсим партньори и спонсори, които да ни помагат да разширяваме дейността си. Ако желаете да бъдете част от нашата общност и да спонсорирате нашите събития, свържете се с нас.</p><a href="mailto:info@codeweek.eu" class="button button-border button-rounded button-large">Свържете се</a></p>
                     </div>
 
                     <div class="">

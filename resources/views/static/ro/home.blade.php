@@ -15,7 +15,7 @@
 
                             <h2 data-caption-animate="fadeInUp">CODEWEEK.EU</h2>
                             <p data-caption-animate="fadeInUp" data-caption-delay="200">6 - 21 octombrie 2018 <a
-                                        href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a></p>
+                                        href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a></p>
                         </div>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
 
                         <p>Suntem pe Twitter ca <a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>, pe <a
                                     href="https://www.facebook.com/codeEU">Facebook</a> și folosim hashtag-ul <a
-                                    href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a>.</p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">Vezi ce se &icirc;nt&acirc;mplă</a></div>
+                                    href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a>.</p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">Vezi ce se &icirc;nt&acirc;mplă</a></div>
 
                     <div class="clear"></div>
                 </div>
