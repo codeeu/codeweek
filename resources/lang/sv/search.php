@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'audience_title'=>'Publik',
+    'audience_title'=>'Målgrupp',
     'theme_title'=>'Tema',
     
     'placeholder' => 'Sök efter evenemangsnamn eller tagg',
@@ -23,7 +23,7 @@ return [
         'yes' => 'Ja',
         'no' => 'Nej'
     ],
-    'search_counter' => 'matcha dina sökkriterier',
+    'search_counter' => 'matcha sökkriterierna',
     'event'=>'evenemang',
     'events'=>'evenemang'
 ];

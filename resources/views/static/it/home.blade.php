@@ -216,7 +216,7 @@
             <section id="section-contact" class="page-section section">
 
                 <div class="heading-block title-center">
-                    <h2>Entra in contatto con noi</h2><span>Hai ancora domande? Basta <a href="mailto:info@codeweek.eu">telefonare</a>.</span></div>
+                    <h2>Entra in contatto con noi</h2><span>Hai ancora domande? <a href="mailto:info@codeweek.eu">Contattaci</a>.</span></div>
 
             </section>
 
