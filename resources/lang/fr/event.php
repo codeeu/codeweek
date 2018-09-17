@@ -50,7 +50,7 @@ return [
     'contact' => [
         'label' => 'Adresse e-mail de contact',
         'placeholder' => 'Cette adresse sera utilisée pour les communications importantes dans le cadre de la Code Week européenne',
-        'explanation' => 'Seuls les ambassadeurs et organisateurs de la Code Week européenne pourront consulter votre adresse e-mail. Ceux-ci vérifieront votre événement avant qu’il n’apparaisse sur la carte et sont susceptibles de vous contacter si des modifications s’avèrent nécessaires, ou pour mener des enquêtes à des fins statistiques au lendemain de l’événement.',
+        'explanation' => 'Seuls les ambassadeurs et organisateurs de la Code Week européenne pourront consulter votre adresse e-mail. Ceux-ci vérifieront votre événement avant qu’il n’apparaisse sur la carte et sont susceptibles de vous contacter si des modifications s’avèrent nécessaires, ou pour mener des enquêtes à des fins statistiques au lendemain de l\'événement.',
     ],
     'public' => [
         'label' => 'Adresse e-mail publique',

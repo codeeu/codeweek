@@ -29,8 +29,8 @@ return [
         'header' => 'Vos coordonnées',
         'text_1' => 'Ces informations ne pourront être consultées que par les ',
         'link_1' => 'ambassadeurs et organisateurs de la Code Week européenne.',
-        'text_2'=> ' Ceux-ci vérifieront votre événement avant qu’il n’apparaisse sur la carte et sont susceptibles de vous contacter si des modifications s’avèrent nécessaires, ou pour mener des enquêtes à des fins statistiques au lendemain de l’événement.',
+        'text_2'=> ' Ceux-ci vérifieront votre événement avant qu’il n’apparaisse sur la carte et sont susceptibles de vous contacter si des modifications s’avèrent nécessaires, ou pour mener des enquêtes à des fins statistiques au lendemain de lévénement.',
         'contact_email' => 'Votre adresse e-mail de contact'
     ], 
-    'edit' => 'Afficher l’événement'
+    'edit' => 'Modifier'
 ];
