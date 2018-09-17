@@ -12,25 +12,25 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-    'title' =>'Skolor: låt era elever få del av Code Week',
+    'title' =>'Skolor: låt eleverna vara med på Code Week',
     '1' => [
-        "title1" => "Varför ska du föra in kodning i ditt klassrum?",
+        "title1" => "Därför bör du införa kodning i schemat",
         "title2" => "Hur kan kodning vara till nytta för dina elever? Vad får du ut av det som lärare?",
         "content" => [
-            "Vi tror att vars och ens grundläggande kunskap i en digital tidsålder måste innefatta att förstå kodning och att utveckla viktiga kompetenser i samband med datoriserat tänkande, som problemlösning, samarbete och analytisk förmåga.",
-            "Att lära sig koda kan göra det möjligt för dina elever att ligga i spetsen för ett digitalt kompetent samhälle, utveckla en bättre uppfattning om världen som omger dem och få bättre chanser att lyckas i sina privatliv och yrkesliv.",
-            "Code Week ger alla studenter möjlighet att ta de första stegen som digitala skapare, genom att skolor och lärare får gratis möjligheter till professionell utveckling, undervisningsmaterial, internationella utmaningar och möjligheter till utbyte."
+            "Vi anser att en förståelse för kodning och utvecklandet av kompetenser relaterade till datalogiskt tänkande, till exempel problemlösning, samarbete och analytisk förmåga, är grundläggande kunskaper i en digital tidsålder.",
+            "Genom att lära sig koda kan dina elever gå i spetsen för ett digitalt samhälle, få en bättre förståelse för omvärlden och bättre chanser att lyckas i sina privatliv och yrkesliv.",
+            "Code Week ger skolor och lärare kostnadsfri tillgång till professionella utvecklingsmöjligheter, undervisningsmaterial, internationella utmaningar och utbyten som gör att alla elever kan ta sina första steg som digitala skapare."
         ],
         "button" => [
-            "label" => "Vill du komma igång nu genast? Anmäl dig här!",
+            "label" => "Vill du komma igång direkt? Anmäl dig här!",
         ]
     ],
     '2' => [
-        "title1" => "Redo att bli engagerad?",
-        "title2" => "Ordna en lektion, ett utbildningspass eller ett evenemang, och sätt upp det på kartan.",
+        "title1" => "Är du redo att engagera dig?",
+        "title2" => "Organisera en lektion, ett utbildningspass eller ett evenemang och lägg upp det på kartan.",
         "content" => [
-            "Vare sig du har kodnings- eller programmeringskunskaper eller inte, kan du lätt ordna en lektion i ditt klassrum, en öppet hus-dag eller ett evenemang på din skola. Bara hitta ett datum och registrera din aktivitet på kartan nedan. Om du känner att du behöver stöd med att göra i ordning en lektion om kodning, hoppa då till nästa avsnitt.",
-            "Titta på kartan nedan och se några exempel på aktiviteter som ordnas, och lägg till din egen så att du kan vara med tusentals andra lärare runtom i Europa och längre bort: "
+            "Oavsett om du har kodnings- eller programmeringskunskaper eller inte, kan du lätt organisera en lektion, en öppet hus-dag eller ett evenemang på din skola. Hitta ett datum och registrera din aktivitet på kartan nedan. Om du känner att du behöver hjälp med att förbereda en lektion om kodning kan du gå till nästa avsnitt.",
+            "Titta på kartan nedan när du vill se några exempel på aktiviteter som organiseras och lägg till din egen, precis som tusentals andra lärare runtom i Europa och längre bort har gjort: [embed map]"
 
         ],
         "button" => [
@@ -39,26 +39,26 @@ return [
 
     ], '3' => [
 
-        "title1" => "Ny på kodning? Inga problem",
-        "title2" => "Våra verktyg hjälper till att introducera kodningen för dig innan du för den vidare till eleverna",
+        "title1" => "Nybörjare inom kodning? Inga problem",
+        "title2" => "Våra verktyg introducerar kodning för dig innan du för kunskaperna vidare till dina elever",
         "content" => [
-            "Om du är intresserad av att föra in kodning i ditt klassrum men inte vet var du ska börja, så oroa dig inte! Ett internationellt team av lärare och experter har tagit fram en uppsättning korta utbildningsmoduler online så att du får hjälp att komma igång.",
-            "Ingen tidigare erfarenhet av kodning behövs för att följa våra små lektioner!"
+            "Oroa dig inte om du vill lägga in kodning på schemat, men inte vet var du ska börja! Ett internationellt team av lärare och experter har tagit fram en uppsättning korta utbildningsmoduler online som hjälper dig att komma igång.",
+            "Ingen tidigare erfarenhet av kodning behövs för att följa våra lektioner!"
 
         ],
         "button" => [
-            "label" => "Gå in på utbildningsmodulerna",
+            "label" => "Gå till utbildningsmodulerna",
         ]
     ], '4' => [
 
-        "title1" => "Ute efter en extra utmaning?",
-        "title2" => "Bygg upp ett nätverk av aktiviteter, engagera så många elever som möjligt och vinn kvalitetsintyget",
+        "title1" => "Vill du ha en extra utmaning?",
+        "title2" => "Bygg upp ett nätverk av aktiviteter, engagera så många elever som möjligt och vinn ett Certificate of Excellence",
         "content" => [
-            "Code Week 4 All utmanar dig att slå dig ihop med andra lärare eller skolor och delta i en internationell gemenskap med likasinnade som ger eleverna möjlighet att ta sina första steg inom kodning. Bygg upp en allians som engagerar fler än 1 000 elever, så får du kvalitetsintyget.",
+            "Code Week 4 All är ett tillfälle att samarbeta med andra lärare eller skolor och delta i en internationell gemenskap med likasinnade som ger eleverna möjlighet att ta sina första steg inom kodning. Bygg upp en grupp på mer än 1 000 elever för att få vårt Certificate of Excellence.",
 
         ],
         "button" => [
-            "label" => "Läs mer om utmaningen Code Week 4 All",
+            "label" => "Läs mer om Code Week 4 All",
         ]
     ],
 
