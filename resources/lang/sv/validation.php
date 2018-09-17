@@ -20,7 +20,7 @@ return [
     'alpha'                => ':attribute får bara innehålla bokstäver.',
     'alpha_dash'           => ':attribute får bara innehålla bokstäver, siffror och streck.',
     'alpha_num'            => ':attribute får bara innehålla bokstäver och siffror.',
-    'array'                => ':attribute måste vara en matris.',
+    'array'                => ':attribute måste vara en array.',
     'before'               => ':attribute måste vara ett datum före :date.',
     'before_or_equal'      => ':attribute måste vara ett datum före eller samma som :date.',
     'between'              => [

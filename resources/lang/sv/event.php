@@ -14,15 +14,15 @@ return [
     */
     'main_title'=>'Lägg till ditt evenemang för #codeEU',
     'button'=>'Lägg till evenemang',
-    'howto'=>'Hur du ordnar ditt eget evenemang',
-    'required'=>'Fält som måste fyllas i är markerade med en asterisk *. Lägg gärna till evenemanget på ditt lokala språk i listan.',
-    'audience_title'=>'Publik',
+    'howto'=>'Så här organiserar du ett evenemang',
+    'required'=>'Obligatoriska fält är markerade med en asterisk *. Lägg gärna till evenemanget på ditt lokala språk i listan.',
+    'audience_title'=>'Målgrupp',
     'theme_title'=>'Tema',
-    'scoreboard_by_country'=>'Evenemangstavla efter land',
-    'get_involved'=>'Bli engagerad',
-    'organize_or_support_events'=>'Ordna eller stöd evenemang på din ort',
+    'scoreboard_by_country'=>'Poängtavla efter land',
+    'get_involved'=>'Engagera dig',
+    'organize_or_support_events'=>'Organisera eller stöd evenemang på din ort',
     'or_contact_your'=>'eller kontakta dina',
-    'eu_code_week_ambassadors'=>'EU Code Week-ambassadörer',
+    'eu_code_week_ambassadors'=>'Ambassadörer för EU Code Week',
     'show_events_for'=>'Visa evenemang för ',
     'who' => 'Vem är evenemanget till för?',
     'tags' => 'Taggar',
@@ -40,7 +40,7 @@ return [
         'placeholder' => 'Organisationen du arbetar i eller är frivilligarbetare för',
     ],
     'website' => [
-        'label' => 'Organisatörens webbplats',
+        'label' => 'Arrangörens webbplats',
         'placeholder' => 'Har du en webbplats med mer information?',
     ],
     'description' => [
@@ -48,13 +48,13 @@ return [
         'placeholder' => 'Beskriv kort den aktivitet som planeras.',
     ],
     'contact' => [
-        'label' => 'E-post för kontakt',
-        'placeholder' => 'Denna e-postadress kommer att användas för viktig korrespondens om EU Code Week',
-        'explanation' => 'Din e-postadress för kontakt kommer bara att vara synlig för EU Code Week-ambassadörer och Code Week-arrangörer, som kontrollerar ditt evenemang innan det syns på kartan och kanske kontaktar dig om redigeringar behövs eller för att administrera undersökningar i statistiskt syfte efter evenemanget.',
+        'label' => 'E-post ',
+        'placeholder' => 'E-postadressen används för viktiga meddelanden om EU Code Week',
+        'explanation' => 'Din e-postadress är bara synlig för EU Code Week-ambassadörer och Code Week-arrangörer som kontrollerar ditt evenemang innan det visas på kartan och kanske kontaktar dig om ändringar behövs eller för att administrera undersökningar i statistiskt syfte efter evenemanget.',
     ],
     'public' => [
         'label' => 'Offentlig e-post',
-        'placeholder' => 'Vill du visa en e-postadress för kontakt?'
+        'placeholder' => 'Vill du visa en e-postadress där folk kan kontakta dig?'
 
     ],
     'title' => [
@@ -68,8 +68,8 @@ return [
 
 
     'organizertype' => [
-        'label' => 'Typ av arrangemang',
-        'placeholder' => 'Välj typen av arrangör',
+        'label' => 'Typ av arrangör',
+        'placeholder' => 'Välj typ av arrangör',
         'school' => 'Skola',
         'library' => 'Bibliotek',
         'non profit' => 'Ideell organisation',
@@ -100,7 +100,7 @@ return [
         'Art and creativity' => 'Konst och kreativitet',
         'Visual/Block programming' => 'Visuell/blockprogrammering',
         'Game design' => 'Speldesign',
-        'Internet of things and wearable computing' => 'Sakernas internet och bärbar datorhantering',
+        'Internet of things and wearable computing' => 'Sakernas internet och wearables',
         '3D printing' => '3D-utskrift',
         'Augmented reality' => 'Förstärkt verklighet',
         'Artificial intelligence' => 'Artificiell intelligens',
@@ -109,14 +109,14 @@ return [
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'CODE WEEK 4 ALL-KOD',
-        'explanation' => 'Om du har fått en Code Week 4 All-kod av en skolkollega eller en vän klistrar du in den här, annars lämnar du tomt. Mer info om Code Week 4 All finns',
+        'explanation' => 'Om du har fått en Code Week 4 All-kod av en skolkollega eller en vän klistrar du in den här, annars lämnar du fältet tomt. Mer info om Code Week 4 All finns',
         'link' => 'här',
     ],
     'thanks_page'=>[
         'title'=>'Tack för att du lagt till ditt evenemang!',
-        'phrase1'=>'En av våra lokala ambassadörer kommer nu att titta på ditt evenemang',
-        'phrase2'=>'och se till att allting ser bra ut.',
-        'phrase3'=>'Om du har frågor, ta kontakt med en av våra',
+        'phrase1'=>'En av våra lokala ambassadörer kommer nu att granska ditt evenemang',
+        'phrase2'=>'och se till att allt ser bra ut.',
+        'phrase3'=>'Om du har frågor kan du kontakta en av våra',
         'phrase4'=>'nationella ambassadörer',
         'phrase5'=>'eller skicka oss ett',
         'phrase6'=>'e-postmeddelande',
@@ -127,7 +127,7 @@ return [
         'Lesson'=>'Lektion',
         'Workshop'=>'Workshop',
         'Webinar'=>'Webbseminarium',
-        'Live Streaming Session'=>'Livestreaming-pass',
+        'Live Streaming Session'=>'Livestreaming',
         'Other'=>'Annat'
     ]
 
