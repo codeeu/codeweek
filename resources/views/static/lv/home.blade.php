@@ -15,7 +15,7 @@
 
                             <h2 data-caption-animate="fadeInUp">CODEWEEK.EU</h2>
                             <p data-caption-animate="fadeInUp" data-caption-delay="200">2018.&nbsp;gada 6.&ndash;21.&nbsp;oktobris <a
-                                        href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a></p>
+                                        href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a></p>
                         </div>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
 
                         <p>Mūs var atrast Twitter ar tagu <a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a> un arī <a
                                     href="https://www.facebook.com/codeEU">Facebook</a>, un mēs izmantojam atsauces tagu <a
-                                    href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a>.</p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">Apskaties, kas notiek</a></div>
+                                    href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a>.</p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">Apskaties, kas notiek</a></div>
 
                     <div class="clear"></div>
                 </div>

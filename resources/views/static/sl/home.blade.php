@@ -15,7 +15,7 @@
 
                             <h2 data-caption-animate="fadeInUp">CODEWEEK.EU</h2>
                             <p data-caption-animate="fadeInUp" data-caption-delay="200">6.&ndash;21.&nbsp;oktober&nbsp;2018 <a
-                                        href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a></p>
+                                        href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a></p>
                         </div>
                     </div>
                 </div>
@@ -147,7 +147,7 @@
 
                         <p>Najdete nas na Twitterju kot <a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a> in na <a
                                     href="https://www.facebook.com/codeEU">Facebooku</a> pod ključnikom <a
-                                    href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a>.</p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">Oglejte si, kaj se dogaja</a></div>
+                                    href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a>.</p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">Oglejte si, kaj se dogaja</a></div>
 
                     <div class="clear"></div>
                 </div>

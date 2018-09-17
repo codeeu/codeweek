@@ -15,7 +15,7 @@
 
                             <h2 data-caption-animate="fadeInUp">CODEWEEK.EU</h2>
                             <p data-caption-animate="fadeInUp" data-caption-delay="200">2018&nbsp;m. spalio 6&ndash;21&nbsp;d. <a
-                                        href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a></p>
+                                        href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a></p>
                         </div>
                     </div>
                 </div>
@@ -147,7 +147,7 @@
 
                         <p>Susisiekite su mumis &bdquo;Twitter&ldquo; <a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a> ar <a
                                     href="https://www.facebook.com/codeEU">&bdquo;Facebook&ldquo;</a>, o mūsų grotažymė yra <a
-                                    href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a>.</p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">Sekite, kas vyksta</a></div>
+                                    href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a>.</p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">Sekite, kas vyksta</a></div>
 
                     <div class="clear"></div>
                 </div>
