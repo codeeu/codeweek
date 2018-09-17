@@ -29,7 +29,7 @@ return [
         "title1" => "¿Estás listo/a para participar?",
         "title2" => "Organiza una clase, una sesión formativa o un evento y sitúalo en el mapa.",
         "content" => [
-            "Con independencia de que cuentes o no con conocimientos previos sobre programación, podrás organizar fácilmente una clase en tu aula, una jornada de puertas abiertas o un evento en tu escuela. Simplemente busca una fecha e inscribe tu actividad en el mapa que figura a continuación. Si crees que necesitas ayuda para preparar una clase con programación, avanza hasta la siguiente sección",
+            "Con independencia de que cuentes o no con conocimientos previos sobre programación, podrás organizar fácilmente una clase en tu aula, una jornada de puertas abiertas o un evento en tu escuela. Simplemente busca una fecha e inscribe tu actividad en el mapa que figura a continuación. Si crees que necesitas ayuda para preparar una clase con programación, avanza hasta la siguiente sección.",
             "Échale un vistazo en el siguiente mapa a algunos ejemplos de actividades que se están organizando y añade el tuyo para unirte a los miles de compañeros educadores de toda Europa y fuera de ella: "
 
         ],

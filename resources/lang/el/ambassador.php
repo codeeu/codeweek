@@ -15,7 +15,7 @@ return [
     */
 
     'title' => 'Πρέσβεις της Ευρωπαϊκής Εβδομάδας Προγραμματισμού',
-    'your_current_country'=>'Η τρέχουσα χώρα σας',
+    'your_current_country'=>'Η τρέχουσα χώρα σου',
     'visit_the'=> 'Επισκεφθείτε την',
     'local_facebook_page'=>'τοπική σελίδα στο Facebook',
     'local_website'=>'Τοπικός δικτυακός τόπος',
