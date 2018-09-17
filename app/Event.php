@@ -4,6 +4,7 @@ namespace App;
 
 use App\Filters\EventFilters;
 use App\Helpers\EventHelper;
+use App\Policies\EventPolicy;
 use Carbon\Carbon;
 use DB;
 use Illuminate\Database\Eloquent\Model;
@@ -46,6 +47,11 @@ class Event extends Model
         'certificate_generated_at',
         'approved_by'
 
+    ];
+
+    protected $policies = [
+        'App\Event' => 'App\Policies\EventPolicy',
+        Event::class => EventPolicy::class,
     ];
 
 
