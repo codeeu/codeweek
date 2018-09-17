@@ -94,7 +94,7 @@
             </section>
 
             <section id="section-banner-teacher" class="section section-banner">
-                <div class="container clearfix"><a href="/schools"><img src="img/banner_teacher.png"/></a></div>
+                <a href="/schools">                     @include('static.banner_teacher')                 </a>
             </section>
 
 
