@@ -30,7 +30,13 @@
 
     <link rel="stylesheet" href="{{asset('css/ext/responsive.css')}}" type="text/css" />
 
-
+    @if(App::getLocale() == 'lt' || App::getLocale() == 'me' || App::getLocale() == 'rs')
+        <style>
+            body {
+                font-family:'Open Sans', sans-serif;
+            }
+        </style>
+    @endif
 
 
     <link rel="stylesheet" href="{{asset('css/ext/colors.css')}}" type="text/css" />

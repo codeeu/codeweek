@@ -82,6 +82,18 @@
                         </div>
                     @endif
 
+                    @can('edit', $event)
+
+                        @if($event->codeweek_for_all_participation_code)
+
+                            <strong>@lang('event.codeweek_for_all_participation_code.title')</strong>
+                            <p>
+                                {{ $event->codeweek_for_all_participation_code }}
+                            </p>
+
+                        @endif
+                    @endcan
+
                     <strong>@lang('eventdetails.share')</strong>
                     <div class="share-event-wrapper">
 
@@ -111,7 +123,8 @@
 
                                 @if($event->status === 'PENDING')
                                     <div class="alert alert-warning">
-                                        <strong>@lang('eventdetails.note')</strong>@lang('eventdetails.pending_warning') <a
+                                        <strong>@lang('eventdetails.note')</strong>@lang('eventdetails.pending_warning')
+                                        <a
                                                 href="{{route('ambassadors')}}">@lang('eventdetails.pending_link')</a>.
                                     </div>
                                 @endif
@@ -122,7 +135,7 @@
 
                     <div class="event-jumbotron">
 
-                            <img src="{{$event->picture_path()}}"/>
+                        <img src="{{$event->picture_path()}}"/>
 
 
                     </div>

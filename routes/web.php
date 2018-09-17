@@ -69,12 +69,12 @@ Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCall
 Route::get('/my', 'EventController@my')->middleware('auth')->name('my_events');
 Route::get('/search', 'SearchController@search')->name('search_event');
 Route::get('/scoreboard', 'ScoreboardController@index')->name('scoreboard');
-Route::patch('user', 'UserController@update')->name('user.update');
+Route::patch('user', 'UserController@update')->name('user.update')->middleware('auth');
 Route::get('view/{event}/{slug}', 'EventController@show')->name('view_event');
-Route::get('events_to_report', 'ReportController@list')->name('report_list');
-Route::get('certificates', 'CertificateController@list')->name('certificates');
-Route::get('event/edit/{event}', 'EventController@edit')->name('edit_event');
-Route::get('event/report/{event}', 'ReportController@index')->name('report_event');
+Route::get('events_to_report', 'ReportController@list')->name('report_list')->middleware('auth');
+Route::get('certificates', 'CertificateController@list')->name('certificates')->middleware('auth');
+Route::get('event/edit/{event}', 'EventController@edit')->name('edit_event')->middleware('auth');
+Route::get('event/report/{event}', 'ReportController@index')->name('report_event')->middleware('auth');
 Route::post('event/report/{event}', 'ReportController@store');
 //Route::resource('school', 'SchoolController');
 Route::get('schools', 'SchoolsController@index')->name('schools');

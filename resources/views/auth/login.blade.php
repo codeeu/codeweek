@@ -104,7 +104,7 @@
                                     </div>
                                 </form>
 
-                                <div class="flex justify-center text-center w-full mb-8 text-sm">
+                                <div class="flex justify-center text-center w-full mb-8 text">
                                     @lang('login.no_account')&nbsp;<a href="/register" class="flex justify-center text-center">@lang('login.signup')</a>
                                 </div>
 
