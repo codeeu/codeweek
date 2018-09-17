@@ -30,7 +30,8 @@
 
     <link rel="stylesheet" href="{{asset('css/ext/responsive.css')}}" type="text/css" />
 
-    @if(App::getLocale() == 'lt' || App::getLocale() == 'me' || App::getLocale() == 'rs')
+    @if(App::getLocale() == 'lt' || App::getLocale() == 'me' ||
+        App::getLocale() == 'rs' || App::getLocale() == 'lv')
         <style>
             body {
                 font-family:'Open Sans', sans-serif;
