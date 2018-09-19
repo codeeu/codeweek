@@ -13,7 +13,7 @@ return [
     |
     */
     'organised_by'=>'Organizuje: ',
-    'contact_email' => 'Kontaktní email: ',
+    'contact_email' => 'Kontaktní e-mail: ',
     'happening_at' => 'Koná se v: ',
     'from' => 'Od ',
     'to' => ' do ',
@@ -24,8 +24,8 @@ return [
     'tags' => 'Tagy: ',
     'share' => 'Sdílejte akci: ',
     'email' => [
-        'tooltip' => 'Kliknutím odešli kamarádovi',
-        'subject' => 'Podívej se na tuhle super programovací akci',
+        'tooltip' => 'Kliknutím odešlete kamarádovi',
+        'subject' => 'Podívejte se na tuhle skvělou programovací akci',
         'body_1' => 'Ahoj, mrkni na ',
         'body_2' => 'akci v '
     ],
