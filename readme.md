@@ -1,4 +1,4 @@
-# Codeweek
+# Codeweek [![Build Status](https://travis-ci.org/codeeu/codeweek.svg?branch=master)](https://travis-ci.org/codeeu/codeweek)
 
 A grassroots initiative run by volunteers and supported by the European Commission.
 
