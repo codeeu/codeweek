@@ -14,6 +14,6 @@ return [
     */
 
     'failed' => 'Tyto přihlašovací údaje se neshodují s našimi záznamy.',
-    'throttle' => 'Příliš mnoho pokusů o přihlášení. Zkus to prosím znovu za :seconds sekund.',
+    'throttle' => 'Příliš mnoho pokusů o přihlášení. Zkuste to prosím znovu za :seconds sekund.',
 
 ];

@@ -14,9 +14,9 @@ return [
     */
     'created_by'=>'Všechny události vytvořené ',
     'no_events'=>[
-        'first_call_to_action' => 'Ještě jsi nepřidal žádnou událost. Proč to neudělat',
+        'first_call_to_action' => "Ještě jste nepřidal/a žádnou událost. Můžete to udělat ",
         'first_link' => 'právě teď',
-        'second_call_to_action' => 'nebo si přečti našeho ',
+        'second_call_to_action' => 'nebo si přečtěte našeho ',
         'second_link' => 'průvodce pro organizátory'
     ],
     'view'=>'Zobrazit',
