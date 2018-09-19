@@ -48,13 +48,13 @@ return [
         'placeholder' => 'Stručně popište plánovanou akci.',
     ],
     'contact' => [
-        'label' => 'Kontaktní email',
-        'placeholder' => 'Tento email bude používán pro důležitou korespondenci týkající se Evropského týdne programování',
-        'explanation' => 'Váš kontaktní email bude viditelný pouze pro ambasadory Evropského týdne programování a organizátory Týdne programování, kteří vaši akci zkontrolují, než se objeví na mapě, a možná vás zkontaktují, pokud jsou nezbytné nějaké úpravy, nebo se na vás obrátí po akci kvůli administrativnímu průzkumu pro statistické účely.',
+        'label' => 'Kontaktní e-mail',
+        'placeholder' => 'Tento e-mail bude používán pro důležitou korespondenci týkající se Evropského týdne programování',
+        'explanation' => 'Váš kontaktní e-mail bude viditelný pouze pro ambasadory Evropského týdne programování a organizátory Týdne programování, kteří vaši akci zkontrolují, než se objeví na mapě, a možná vás zkontaktují, pokud jsou nezbytné nějaké úpravy, nebo se na vás obrátí po akci kvůli administrativnímu průzkumu pro statistické účely.',
     ],
     'public' => [
-        'label' => 'Veřejný email',
-        'placeholder' => 'Chcete zobrazit kontaktní email?'
+        'label' => 'Veřejný e-mail',
+        'placeholder' => 'Chcete zobrazit kontaktní e-mail?'
 
     ],
     'title' => [
@@ -119,7 +119,7 @@ return [
         'phrase3'=>'Pokud máte nějaké otázky, kontaktujte jednoho z našich',
         'phrase4'=>'národních ambasadorů',
         'phrase5'=>'nebo nám pošlete',
-        'phrase6'=>'email',
+        'phrase6'=>'e-mail',
         'phrase7'=>'Svůj kód Codeweek for all můžete sdílet s dalšími lidmi:'
     ],
     'activity_type'=>[

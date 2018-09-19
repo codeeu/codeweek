@@ -45,7 +45,7 @@ return [
 
     'resources_local_title'=>'Programovací zdroje od',
     'are_you_a_teacher' => 'Jste učitel?',
-    'get_involved_banner' => 'Klikněte zde, abyste se dozvěděli, jak se zapojit!',
+    'get_involved_banner' => 'Klikněte zde, abyste se dozvěděl/a, jak se zapojit!',
     'days'=>'Dny',
     'hours'=>'Hodiny',
     'minutes'=>'Minuty',

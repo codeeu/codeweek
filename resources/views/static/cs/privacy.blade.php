@@ -16,23 +16,23 @@
 
 <p><strong>Osobn&iacute; &uacute;daje</strong></p>
 
-<p>Osobn&iacute; &uacute;daje od uživatelů shromažďujeme různ&yacute;mi způsoby, včetně, nikoliv v&scaron;ak v&yacute;hradně, když uživatel nav&scaron;t&iacute;v&iacute; na&scaron;e str&aacute;nky, registruje se na na&scaron;ich str&aacute;nk&aacute;ch a tak&eacute; v souvislosti s jin&yacute;mi činnostmi, službami, prvky nebo zdroji, kter&eacute; d&aacute;v&aacute;me k dispozici na na&scaron;ich str&aacute;nk&aacute;ch. Uživatel může b&yacute;t př&iacute;padně pož&aacute;d&aacute;n o sv&eacute; jm&eacute;no a emailovou adresu. Uživatel&eacute; v&scaron;ak mohou na&scaron;e str&aacute;nky nav&scaron;těvovat i anonymně. Osobn&iacute; &uacute;daje od uživatelů shromažďujeme pouze tehdy, pokud n&aacute;m je sami dobrovolně poskytnou. Uživatel vždy může poskytnut&iacute; osobn&iacute;ch &uacute;dajů odm&iacute;tnout, i když to může znamenat, že se nebude moci zapojit do určit&yacute;ch aktivit souvisej&iacute;c&iacute;ch s na&scaron;imi str&aacute;nkami.</p>
+<p>Osobn&iacute; &uacute;daje od uživatelů shromažďujeme různ&yacute;mi způsoby, včetně, nikoliv v&scaron;ak v&yacute;hradně, když uživatel nav&scaron;t&iacute;v&iacute; na&scaron;e str&aacute;nky, registruje se na na&scaron;ich str&aacute;nk&aacute;ch a tak&eacute; v souvislosti s jin&yacute;mi činnostmi, službami, prvky nebo zdroji, kter&eacute; d&aacute;v&aacute;me k dispozici na na&scaron;ich str&aacute;nk&aacute;ch. Uživatel může b&yacute;t př&iacute;padně pož&aacute;d&aacute;n o sv&eacute; jm&eacute;no a e-mailovou adresu. Uživatel&eacute; v&scaron;ak mohou na&scaron;e str&aacute;nky nav&scaron;těvovat i anonymně. Osobn&iacute; &uacute;daje od uživatelů shromažďujeme pouze tehdy, pokud n&aacute;m je sami dobrovolně poskytnou. Uživatel vždy může poskytnut&iacute; osobn&iacute;ch &uacute;dajů odm&iacute;tnout, i když to může znamenat, že se nebude moci zapojit do určit&yacute;ch aktivit souvisej&iacute;c&iacute;ch s na&scaron;imi str&aacute;nkami.</p>
 
 <p><strong>Jin&eacute; než osobn&iacute; &uacute;daje</strong></p>
 
 <p>Kdykoli se uživatel pohybuje na na&scaron;ich str&aacute;nk&aacute;ch, můžeme o něm shromažďovat řadu jin&yacute;ch než osobn&iacute;ch &uacute;dajů. K jin&yacute;m než osobn&iacute;m &uacute;dajům může patřit n&aacute;zev prohl&iacute;žeče, typ poč&iacute;tače a technick&eacute; informace o prostředc&iacute;ch, kter&yacute;mi se uživatel připojuje na na&scaron;e str&aacute;nky, jako je např&iacute;klad operačn&iacute; syst&eacute;m a poskytovatel internetov&yacute;ch služeb a podobn&eacute; informace.</p>
 
-<p><strong>Cookies v internetov&eacute;m prohl&iacute;žeči</strong></p>
+<p><strong>Soubory cookie v internetov&eacute;m prohl&iacute;žeči</strong></p>
 
-<p>Na&scaron;e str&aacute;nky mohou využ&iacute;vat soubory cookies za &uacute;čelem zlep&scaron;ov&aacute;n&iacute; uživatelsk&eacute; zku&scaron;enosti. Uživatelův internetov&yacute; prohl&iacute;žeč um&iacute;sťuje cookies na pevn&yacute; disk za &uacute;čelem uchov&aacute;v&aacute;n&iacute; z&aacute;znamů a někdy za &uacute;čelem uchov&aacute;v&aacute;n&iacute; informac&iacute; o uživateli. Uživatel se může rozhodnout, že svůj internetov&yacute; prohl&iacute;žeč nastav&iacute; tak, aby cookies odm&iacute;tal nebo aby byl na ně upozorněn. V takov&eacute;m př&iacute;padě v&scaron;ak někter&eacute; oblasti na&scaron;ich str&aacute;nek nemus&iacute; ř&aacute;dně fungovat.</p>
+<p>Na&scaron;e str&aacute;nky mohou využ&iacute;vat soubory cookie za &uacute;čelem zlep&scaron;ov&aacute;n&iacute; uživatelsk&eacute; zku&scaron;enosti. Uživatelův internetov&yacute; prohl&iacute;žeč um&iacute;sťuje soubory cookie na pevn&yacute; disk za &uacute;čelem uchov&aacute;v&aacute;n&iacute; z&aacute;znamů a někdy za &uacute;čelem uchov&aacute;v&aacute;n&iacute; informac&iacute; o uživateli. Uživatel se může rozhodnout, že svůj internetov&yacute; prohl&iacute;žeč nastav&iacute; tak, aby soubory cookie odm&iacute;tal nebo aby byl na ně upozorněn. V takov&eacute;m př&iacute;padě v&scaron;ak někter&eacute; oblasti na&scaron;ich str&aacute;nek nemus&iacute; ř&aacute;dně fungovat.</p>
 
 <p><strong>Jak shromažďovan&eacute; informace použ&iacute;v&aacute;me</strong></p>
 
 <p>Evropsk&yacute; t&yacute;den programov&aacute;n&iacute; muže shromažďovat a použ&iacute;vat osobn&iacute; &uacute;daje uživatelů k n&aacute;sleduj&iacute;c&iacute;m &uacute;čelům:</p>
 <ul>
 <li><i>Zlep&scaron;ov&aacute;n&iacute; z&aacute;kaznick&yacute;ch služeb</i>: Informace, kter&eacute; n&aacute;m poskytnete, n&aacute;m pom&aacute;haj&iacute; reagovat na va&scaron;e požadavky t&yacute;kaj&iacute;c&iacute; se z&aacute;kaznick&yacute;ch služeb a poskytovat &uacute;činněj&scaron;&iacute; podporu.</li>
-<li><i>Personalizace uživatelsk&yacute;ch zku&scaron;enost&iacute;</i>: Informace jako celek můžeme využ&iacute;vat k tomu, abychom ch&aacute;pali, jak na&scaron;i uživatel&eacute; jako skupina použ&iacute;vaj&iacute; služby a zdroje poskytovan&eacute; na na&scaron;ich str&aacute;nk&aacute;ch.</li>
-<li><i>Pos&iacute;l&aacute;n&iacute; periodick&yacute;ch emailů</i>: Emailovou adresu uživatele můžeme využ&iacute;vat k odpověd&iacute;m na dotazy nebo jin&eacute; požadavky.</li>
+<li><i>Přizpůsoben&iacute; uživatelsk&eacute;ho prostřed&iacute;</i>: Informace jako celek můžeme využ&iacute;vat k tomu, abychom ch&aacute;pali, jak na&scaron;i uživatel&eacute; jako skupina použ&iacute;vaj&iacute; služby a zdroje poskytovan&eacute; na na&scaron;ich str&aacute;nk&aacute;ch.</li>
+<li><i>Pos&iacute;l&aacute;n&iacute; periodick&yacute;ch e-mailů</i>: E-mailovou adresu uživatele můžeme využ&iacute;vat k odpověd&iacute;m na dotazy nebo jin&eacute; požadavky.</li>
 </ul>
 <p><strong>Jak va&scaron;e informace chr&aacute;n&iacute;me</strong></p>
 
