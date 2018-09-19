@@ -117,7 +117,7 @@
 
 
                         @if (Auth::check())
-                            @if($event->creator_id === auth()->user()->id)
+                            @if($event->creator_id === auth()->user()->id && is_null($event->reported_at))
                                 <a href="{{route('edit_event',$event->id)}}" class="btn pull-right edit-event-btn">
                                     <i class="fa fa-pencil-square-o"></i>@lang('eventdetails.edit')</a>
 
