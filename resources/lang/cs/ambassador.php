@@ -15,8 +15,8 @@ return [
     */
 
     'title' => 'Ambasadoři Evropského týdne programování',
-    'your_current_country'=>'Tvoje současná země',
-    'visit_the'=> 'Navštiv',
+    'your_current_country'=>'Vaše současná země',
+    'visit_the'=> 'Navštivte',
     'local_facebook_page'=>'místní facebookovou stránku',
     'local_website'=>'Místní webové stránky',
     'ambassadors'=>'Ambasadoři',
