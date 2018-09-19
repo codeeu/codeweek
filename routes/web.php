@@ -49,7 +49,7 @@ Route::get('/resources', 'StaticPageController@index')->name('resources');
 Route::get('/codeweek4all', 'StaticPageController@index')->name('codeweek4all');
 //Static training pages
 Route::get('/training', 'StaticPageController@index')->name('training');
-Route::get('/training/coding-without-digital-technology', 'StaticPageController@index')->name('training.module-1');
+Route::get('/training/coding-without-computers', 'StaticPageController@index')->name('training.module-1');
 Route::get('/training/computational-thinking-and-problem-solving', 'StaticPageController@index')->name('training.module-2');
 Route::get('/training/visual-programming-introduction-to-scratch', 'StaticPageController@index')->name('training.module-3');
 

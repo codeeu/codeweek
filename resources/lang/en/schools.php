@@ -54,7 +54,7 @@ return [
         "title1" => "Looking for an extra challenge ?",
         "title2" => "Build a network of activities, engage as many students as possible, and earn the Certificate of Excellence",
         "content" => [
-            "Code Week 4 All challenges you to join forces with other teachers or schools and participate in an international community of like-minded people giving to student the opportunity to make their first steps in coding. Build an alliance that engages more than a 1 000 students and you will gain the Certificate of Excellence.",
+            "Code Week 4 All challenges you to join forces with other teachers or schools and participate in an international community of like-minded people giving to student the opportunity to make their first steps in coding. Build an alliance that engages more than a 500 students and you will gain the Certificate of Excellence.",
 
         ],
         "button" => [

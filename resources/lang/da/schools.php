@@ -54,7 +54,7 @@ return [
         "title1" => "Er du på udkig efter en ekstra udfordring?",
         "title2" => "Opbyg et netværk af aktiviteter, aktivér så mange elever som muligt, og få et kvalitetscertifikat",
         "content" => [
-            "Code Week 4 All udfordrer dig til at slå dig sammen med andre lærere eller skoler og deltage i et internationalt fællesskab af ligesindede, som giver eleverne mulighed for at tage deres første skridt inden for kodning. En alliance, der aktiverer over 1 000 elever, udløser et kvalitetscertifikat.",
+            "Code Week 4 All udfordrer dig til at slå dig sammen med andre lærere eller skoler og deltage i et internationalt fællesskab af ligesindede, som giver eleverne mulighed for at tage deres første skridt inden for kodning. En alliance, der aktiverer over 500 elever, udløser et kvalitetscertifikat.",
 
         ],
         "button" => [

@@ -54,7 +54,7 @@ return [
         "title1" => 'Iščete dodaten izziv?',
         "title2" => 'Zgradite mrežo dejavnosti, vključite čim več učencev in si prislužite certifikat odličnosti',
         "content" => [
-            'Code Week 4 All (teden programiranja za vse) je izziv, da združite moči z drugimi učitelji ali šolami in sodelujete v mednarodni skupnosti enako mislečih ljudi, ki svojim učencem nudijo priložnost, da naredijo prve korake v programiranju. Oblikujte zavezništvo, ki vključuje več kot 1 000 učencev, in pridobili boste certifikat odličnosti.',
+            'Code Week 4 All (teden programiranja za vse) je izziv, da združite moči z drugimi učitelji ali šolami in sodelujete v mednarodni skupnosti enako mislečih ljudi, ki svojim učencem nudijo priložnost, da naredijo prve korake v programiranju. Oblikujte zavezništvo, ki vključuje več kot 500 učencev, in pridobili boste certifikat odličnosti.',
 
         ],
         "button" => [

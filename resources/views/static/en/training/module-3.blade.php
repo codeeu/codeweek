@@ -35,9 +35,9 @@
                         Scratch is a free tool, very intuitive and motivating for your students. Have a look at Margo’s video to learn how to get started.
                     </p>
 
-                    <div class="flex" style="height:500px;justify-content: center">
-                        <iframe class="flex-1"
-                                src="https://www.youtube.com/embed/NKdI4FJUZpQ">
+                    <div class="flex youtube-container">
+                        <iframe class="flex-1 youtube-iframe"
+                                src="https://www.youtube.com/embed/pmfCwauN1c0">
                         </iframe>
                     </div>
 

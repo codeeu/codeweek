@@ -33,7 +33,7 @@
 
                     <div class="flex flex-wrap" style="margin-bottom: 30px;">
                         <div class="learning-card">
-                            <a href="/training/coding-without-digital-technology">
+                            <a href="/training/coding-without-computers">
                                 <img src="img/learning_card_default.png">
                                 <div class="text-xl">Coding without digital technology (unplugged)</div>
                                 <div class="text-base text-black">By Alessandro Bogliolo</div>

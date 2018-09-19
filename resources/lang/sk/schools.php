@@ -54,7 +54,7 @@ return [
         "title1" => "Hľadáte väčšiu výzvu?",
         "title2" => "Vytvorte sieť aktivít, zapojte čo najviac študentov a získajte Certifikát excelentnosti",
         "content" => [
-            "Vo výzve Code Week 4 All sa od vás očakáva, že spojíte sily s inými učiteľmi alebo školami a pridáte sa k medzinárodnej komunite podobne zmýšľajúcich ľudí, aby ste študentom umožnili zoznámiť sa s programovaním. Ak vytvoríte skupinu, ktorá získa účasť viac ako 1 000 študentov, získate certifikát excelentnosti.",
+            "Vo výzve Code Week 4 All sa od vás očakáva, že spojíte sily s inými učiteľmi alebo školami a pridáte sa k medzinárodnej komunite podobne zmýšľajúcich ľudí, aby ste študentom umožnili zoznámiť sa s programovaním. Ak vytvoríte skupinu, ktorá získa účasť viac ako 500 študentov, získate certifikát excelentnosti.",
 
         ],
         "button" => [

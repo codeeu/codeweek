@@ -31,9 +31,9 @@
                         Unplugged coding activities unveil the computational aspects of the physical world around us.
                     </p>
 
-                    <div class="flex" style="height:500px;justify-content: center">
-                        <iframe class="flex-1"
-                                src="https://www.youtube.com/embed/wneJLv_UAL0">
+                    <div class="flex youtube-container">
+                        <iframe class="flex-1 youtube-iframe"
+                                src="https://www.youtube.com/embed/18N1CaQJ0GI ">
                         </iframe>
                     </div>
 
@@ -51,11 +51,11 @@
                         <li>
                             <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+1_Primary.docx">Activity 1 – CodyRoby for primary school students</a>
                         </li>
-                        <li class="hidden">
-                            <a href="#">Activity 2 – Lesson plan lower secondary school students</a>
+                        <li>
+                            <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+2_Lower+Second....docx">Activity 2 – CodyRoby for lower secondary school students</a>
                         </li>
-                        <li class="hidden">
-                            <a href="#">Activity 3 – Lesson plan for upper secondary school students</a>
+                        <li>
+                            <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson+plan+3_Secondary.docx">Activity 3 – CodyRoby for secondary school students</a>
                         </li>
                     </ul>
 
