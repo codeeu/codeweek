@@ -54,7 +54,7 @@ return [
         "title1" => "Cerchi una sfida più stimolante?",
         "title2" => "Costruisci una rete di attività, coinvolgi quanti più studenti possibile e ottieni il Certificato di Eccellenza",
         "content" => [
-            "Code Week 4 All ti sfida a unire le forze con altri insegnanti o scuole e partecipare a una comunità internazionale di persone con interessi affini dando allo studente l’opportunità di fare i primi passi nella programmazione. Crea un’alleanza che coinvolga più di 1 000 studenti e otterrai il Certificato di Eccellenza.",
+            "Code Week 4 All ti sfida a unire le forze con altri insegnanti o scuole e partecipare a una comunità internazionale di persone con interessi affini dando allo studente l’opportunità di fare i primi passi nella programmazione. Crea un’alleanza che coinvolga più di 500 studenti e otterrai il Certificato di Eccellenza.",
 
         ],
         "button" => [

@@ -13116,4 +13116,15 @@ textarea.border-form-control {
 
 .learning-card>a{
     padding:.5rem;
+    flex:1;
+}
+
+.youtube-container{
+    height:500px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.youtube-iframe{
+    width:100%;
 }

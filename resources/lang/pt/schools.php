@@ -54,7 +54,7 @@ return [
         "title1" => 'Procura um desafio adicional?',
         "title2" => 'Crie uma rede de atividades, envolva o maior número de alunos possível e ganhe o Certificado de Excelência',
         "content" => [
-            'O Code Week 4 All desafia-o unir forças com outros professores ou escolas e participar numa comunidade internacional de pessoas com as mesmas ideias, proporcionando aos alunos a oportunidade de darem os primeiros passos na programação. Constitua uma aliança que envolva mais de 1 000 alunos e receberá o Certificado de Excelência.',
+            'O Code Week 4 All desafia-o unir forças com outros professores ou escolas e participar numa comunidade internacional de pessoas com as mesmas ideias, proporcionando aos alunos a oportunidade de darem os primeiros passos na programação. Constitua uma aliança que envolva mais de 500 alunos e receberá o Certificado de Excelência.',
 
         ],
         "button" => [

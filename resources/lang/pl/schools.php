@@ -54,7 +54,7 @@ return [
         "title1" => "Szukasz dodatkowego wyzwania?",
         "title2" => "Stwórz sieć aktywności, zachęć do udziału jak największą liczbę uczniów i zdobądź Certyfikat doskonałości",
         "content" => [
-            "Weź udział w specjalnym wyzwaniu w ramach Tygodnia Kodowania dla wszystkich: połącz siły z innymi nauczycielami lub szkołami i zostań częścią społeczności podobnie myślących osób, które chcą dać uczniom możliwość stawiania pierwszych kroków w kodowaniu. Nawiąż współpracę z innymi nauczycielami, by zaangażować ponad 1000 uczniów i otrzymać Certyfikat doskonałości",
+            "Weź udział w specjalnym wyzwaniu w ramach Tygodnia Kodowania dla wszystkich: połącz siły z innymi nauczycielami lub szkołami i zostań częścią społeczności podobnie myślących osób, które chcą dać uczniom możliwość stawiania pierwszych kroków w kodowaniu. Nawiąż współpracę z innymi nauczycielami, by zaangażować ponad 500 uczniów i otrzymać Certyfikat doskonałości",
 
         ],
         "button" => [

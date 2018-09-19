@@ -46,7 +46,7 @@ class SchoolsController extends Controller
                     __('schools.3.content.1'),
                 ],
                 "button" => [
-                    "show"=> false,
+                    "show"=> true,
                     "label"=>__('schools.3.button.label'),
                     "link"=>"/training"
                 ],
