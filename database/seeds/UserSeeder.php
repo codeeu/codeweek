@@ -15,10 +15,10 @@ class UserSeeder extends Seeder
     {
 
         create('App\User', [
-            'firstname' => 'Alain',
-            'lastname' => 'Van Driessche',
-            'email' => 'alainvd@gmail.com',
-            'password' => bcrypt(str_random(10))
+            'firstname' => 'Super',
+            'lastname' => 'Admin',
+            'email' => \Config::get('codeweek.administrator'),
+            'password' => bcrypt('secret')
         ])->assignRole('super admin');
 
 
