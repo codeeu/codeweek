@@ -54,7 +54,7 @@ return [
         "title1" => 'További kihívásra vágyik?',
         "title2" => 'Építsen ki egy eseményhálózatot, vonjon be minél több diákot, és érdemelje ki a Kiválósági tanúsítványt (Certificate of Excellence)',
         "content" => [
-            'A Code Week 4 All kihívása abban áll, hogy fogjon össze más tanárokkal és iskolákkal, és közösen legyenek részesei a hasonló gondolkodású személyekből álló nemzetközi közösségnek, ezáltal lehetővé téve a diákok számára, hogy megtegyék első lépéseiket a programozás terén. Építsen ki egy több mint 1 000 diákból álló szövetséget, és Kiválósági tanúsítvánnyal jutalmazzuk.',
+            'A Code Week 4 All kihívása abban áll, hogy fogjon össze más tanárokkal és iskolákkal, és közösen legyenek részesei a hasonló gondolkodású személyekből álló nemzetközi közösségnek, ezáltal lehetővé téve a diákok számára, hogy megtegyék első lépéseiket a programozás terén. Építsen ki egy több mint 500 diákból álló szövetséget, és Kiválósági tanúsítvánnyal jutalmazzuk.',
 
         ],
         "button" => [

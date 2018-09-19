@@ -54,7 +54,7 @@ return [
         "title1" => "Po kërkoni një sfidë më shumë?",
         "title2" => "Ndërtoni një rrjet me aktivitete, përfshini sa më shumë studentë që të jetë e mundur, dhe fitoni Certifikatën e Përsosmërisë",
         "content" => [
-            "Code Week 4 All ju sfidon të bashkoni forcat me mësuesit ose shkollat e tjera dhe të merrni pjesë në një komunitet ndërkombëtar me njerëz që mendojnë në mënyrë të ngjashme duke u dhënë studentëve mundësinë që të ndërmarrin hapat e parë në kodim. Ndërtoni një aleancë që përfshin më shumë se 1000 studentë dhe do të fitoni Certifikatën e Përsosmërisë.",
+            "Code Week 4 All ju sfidon të bashkoni forcat me mësuesit ose shkollat e tjera dhe të merrni pjesë në një komunitet ndërkombëtar me njerëz që mendojnë në mënyrë të ngjashme duke u dhënë studentëve mundësinë që të ndërmarrin hapat e parë në kodim. Ndërtoni një aleancë që përfshin më shumë se 500 studentë dhe do të fitoni Certifikatën e Përsosmërisë.",
 
         ],
         "button" => [

@@ -54,7 +54,7 @@ return [
         "title1" => "Tražite dodatni izazov?",
         "title2" => "Izgradite mrežu aktivnosti, angažirajte što je više učenika moguće i steknite Certifikat odličnosti",
         "content" => [
-            "Sedmica kodiranja za sve izaziva vas da udružite snage s drugim nastavnicima ili školama i da učestvujete u međunarodnoj zajednici slično orijentiranih ljudi kako biste učeniku dali priliku da načini svoje prve korake u kodiranju. Izgradite savez u kom se angažira preko 1000 učenika i dobit ćete Certifikat odličnosti.",
+            "Sedmica kodiranja za sve izaziva vas da udružite snage s drugim nastavnicima ili školama i da učestvujete u međunarodnoj zajednici slično orijentiranih ljudi kako biste učeniku dali priliku da načini svoje prve korake u kodiranju. Izgradite savez u kom se angažira preko 500 učenika i dobit ćete Certifikat odličnosti.",
 
         ],
         "button" => [

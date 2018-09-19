@@ -31,9 +31,9 @@
                         In this video, Miles Berry, Principal Lecturer at University of Roehampton School of Education at Guildford (United Kingdom), will introduce the concept of computational thinking and the different ways a teacher can integrate it in the classroom with simple games.
                     </p>
 
-                    <div class="flex" style="height:500px;justify-content: center">
-                        <iframe class="flex-1"
-                                src="https://www.youtube.com/embed/HPwmHrDz8ew">
+                    <div class="flex youtube-container">
+                        <iframe class="flex-1 youtube-iframe"
+                                src="https://www.youtube.com/embed/Nc-V948dXWI">
                         </iframe>
                     </div>
 
