@@ -54,7 +54,7 @@ return [
         "title1" => "Etsitkö uusia haasteita?",
         "title2" => "Laadi tapahtumaverkosto, innosta mukaan mahdollisimman moni oppilas ja ansaitse osaamissertifikaatti.",
         "content" => [
-            "Koodausviikko kaikille -tapahtuma haastaa sinut yhdistämään voimat muiden opettajien ja koulujen kanssa ja osallistumaan samanhenkisten ihmisten kansainväliseen yhteisöön ja tarjoamaan oppilaille mahdollisuuden kokeilla koodausta. Kokoa verkosto, jossa on mukana yli 1 000 oppilasta, ja ansaitset osaamissertifikaatin."
+            "Koodausviikko kaikille -tapahtuma haastaa sinut yhdistämään voimat muiden opettajien ja koulujen kanssa ja osallistumaan samanhenkisten ihmisten kansainväliseen yhteisöön ja tarjoamaan oppilaille mahdollisuuden kokeilla koodausta. Kokoa verkosto, jossa on mukana yli 500 oppilasta, ja ansaitset osaamissertifikaatin."
 
         ],
         "button" => [

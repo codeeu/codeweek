@@ -54,7 +54,7 @@ return [
         "title1" => "Hledáte něco náročnějšího?",
         "title2" => "Vytvořte síť akcí, zapojte co nejvíc studentů a získejte Certifikát o špičkové úrovni",
         "content" => [
-            "Code Week 4 All je příležitost poměřit síly s jinými učiteli nebo školami a zapojit se do mezinárodní komunity podobně smýšlejících lidí, kteří studentům dávají příležitost udělat první krůčky v programování. Vytvořte alianci více než 1 000 studentů a získáte Certifikát o špičkové úrovni.",
+            "Code Week 4 All je příležitost poměřit síly s jinými učiteli nebo školami a zapojit se do mezinárodní komunity podobně smýšlejících lidí, kteří studentům dávají příležitost udělat první krůčky v programování. Vytvořte alianci více než 500 studentů a získáte Certifikát o špičkové úrovni.",
 
         ],
         "button" => [

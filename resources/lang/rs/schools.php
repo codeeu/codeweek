@@ -54,7 +54,7 @@ return [
         "title1" => "Tražite dodatni izazov?",
         "title2" => "Izgradite mrežu aktivnosti, uključite što više učenika i osvojite Sertifikat izvrsnosti",
         "content" => [
-            "Nedelja programiranja za sve vas izaziva da udružite snage sa ostalim nastavnicima ili školama i učestvujete u međunarodnoj zajednici istomišljenika pružajući učenicima priliku na naprave svoje prve korake u programiranju. Organizujte događaj koji uključuje više od 1000 učenika i dobićete Sertifikat izvrsnosti."
+            "Nedelja programiranja za sve vas izaziva da udružite snage sa ostalim nastavnicima ili školama i učestvujete u međunarodnoj zajednici istomišljenika pružajući učenicima priliku na naprave svoje prve korake u programiranju. Organizujte događaj koji uključuje više od 500 učenika i dobićete Sertifikat izvrsnosti."
 
         ],
         "button" => [

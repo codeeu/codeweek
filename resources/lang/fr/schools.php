@@ -54,7 +54,7 @@ return [
         "title1" => 'Vous êtes en quête d’un nouveau défi?',
         "title2" => 'Construisez un réseau d’activités, impliquez autant d’élèves que possible et obtenez le Certificat d’excellence',
         "content" => [
-            'La "Code Week 4 All" vous met au défi d’unir vos forces à celles d’autres enseignants ou établissements scolaires pour devenir membre d’une communauté internationale qui partage un ensemble d’idées et souhaite offrir aux élèves l’opportunité de faire leurs premiers pas en programmation. Forgez une alliance qui rassemble plus de 1 000 élèves et recevez le Certificat d’excellence.',
+            'La "Code Week 4 All" vous met au défi d’unir vos forces à celles d’autres enseignants ou établissements scolaires pour devenir membre d’une communauté internationale qui partage un ensemble d’idées et souhaite offrir aux élèves l’opportunité de faire leurs premiers pas en programmation. Forgez une alliance qui rassemble plus de 500 élèves et recevez le Certificat d’excellence.',
 
         ],
         "button" => [

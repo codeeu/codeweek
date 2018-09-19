@@ -54,7 +54,7 @@ return [
         "title1" => "Suchen Sie nach einer besonderen Herausforderung?",
         "title2" => "Bauen Sie ein Netzwerk an Aktivitäten auf, motivieren Sie so viele Schüler*innen wie möglich und verdienen Sie sich ein Exzellenzzertifikat",
         "content" => [
-            "Code Week für alle fordert Sie dazu auf, Ihre Kräfte mit anderen Lehrkräften oder Schulen zu bündeln und sich an einer internationalen Gemeinschaft Gleichgesinnter zu beteiligten, um Ihren Schüler*innen die Möglichkeit zu geben, ihre ersten Schritte im Programmieren zu gehen. Errichten Sie eine Allianz, die mehr als 1 000 Schülerinnen und Schüler motiviert, und Sie erhalten ein Exzellenzzertifikat.",
+            "Code Week für alle fordert Sie dazu auf, Ihre Kräfte mit anderen Lehrkräften oder Schulen zu bündeln und sich an einer internationalen Gemeinschaft Gleichgesinnter zu beteiligten, um Ihren Schüler*innen die Möglichkeit zu geben, ihre ersten Schritte im Programmieren zu gehen. Errichten Sie eine Allianz, die mehr als 500 Schülerinnen und Schüler motiviert, und Sie erhalten ein Exzellenzzertifikat.",
 
         ],
         "button" => [

@@ -54,7 +54,7 @@ return [
         "title1" => "U potrazi ste za dodatnim izazovom?",
         "title2" => "Razvijte mrežu aktivnosti, angažirajte čim više učenika i osvojite Potvrdu o izvrsnosti",
         "content" => [
-            "Code Week 4 All izaziva vas da se udružite s drugim nastavnicima ili školama te da sudjelujete u međunarodnoj zajednici istomišljenika koji učenicima pružaju priliku da naprave prve korake u programiranju. Izgradite savez u koji je uključeno više od 1 000 učenika i osvojit ćete Potvrdu o izvrsnosti.",
+            "Code Week 4 All izaziva vas da se udružite s drugim nastavnicima ili školama te da sudjelujete u međunarodnoj zajednici istomišljenika koji učenicima pružaju priliku da naprave prve korake u programiranju. Izgradite savez u koji je uključeno više od 500 učenika i osvojit ćete Potvrdu o izvrsnosti.",
 
         ],
         "button" => [

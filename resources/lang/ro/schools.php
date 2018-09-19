@@ -54,7 +54,7 @@ return [
         "title1" => "Căutați o provocare în plus?",
         "title2" => "Construiți o rețea de activități, implicați cât mai mulți elevi și câștigați Certificatul de excelență",
         "content" => [
-            "Săptămâna programării pentru toți vă provoacă să vă uniți forțele cu alți profesori sau alte școli și să faceți parte dintr-o comunitate internațională de oameni care împărtășesc aceeași viziune și care le oferă elevilor posibilitatea de a face primii pași în programare. Realizați o alianță care implică mai mult de 1 000 de elevi și veți câștiga Certificatul de excelență.",
+            "Săptămâna programării pentru toți vă provoacă să vă uniți forțele cu alți profesori sau alte școli și să faceți parte dintr-o comunitate internațională de oameni care împărtășesc aceeași viziune și care le oferă elevilor posibilitatea de a face primii pași în programare. Realizați o alianță care implică mai mult de 500 de elevi și veți câștiga Certificatul de excelență.",
 
         ],
         "button" => [

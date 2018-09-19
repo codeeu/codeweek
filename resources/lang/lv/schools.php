@@ -54,7 +54,7 @@ return [
         "title1" => "Vai meklējat papildu iespēju pārbaudīt savus spēkus?",
         "title2" => "Izveidojiet aktivitāšu tīklu, iesaistiet pēc iespējas vairāk skolēnu un nopelniet izcilības apliecinājuma sertifikātu",
         "content" => [
-            "“Programmēšanas nedēļa visiem” jūs aicina apvienot spēkus ar citiem skolotājiem vai skolām un iesaistīties starptautiskā līdzīgi domājošu personu kopienā, nodrošinot saviem skolēniem iespēju spert pirmos soļus programmēšanā. Izveidojiet savienību, kurā ir iesaistīti vairāk nekā 1000 skolēni, un jūs iegūsiet izcilības apliecinājuma sertifikātu.",
+            "“Programmēšanas nedēļa visiem” jūs aicina apvienot spēkus ar citiem skolotājiem vai skolām un iesaistīties starptautiskā līdzīgi domājošu personu kopienā, nodrošinot saviem skolēniem iespēju spert pirmos soļus programmēšanā. Izveidojiet savienību, kurā ir iesaistīti vairāk nekā 500 skolēni, un jūs iegūsiet izcilības apliecinājuma sertifikātu.",
 
         ],
         "button" => [
