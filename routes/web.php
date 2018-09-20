@@ -52,6 +52,9 @@ Route::get('/training', 'StaticPageController@index')->name('training');
 Route::get('/training/coding-without-computers', 'StaticPageController@index')->name('training.module-1');
 Route::get('/training/computational-thinking-and-problem-solving', 'StaticPageController@index')->name('training.module-2');
 Route::get('/training/visual-programming-introduction-to-scratch', 'StaticPageController@index')->name('training.module-3');
+Route::get('/training/creating-educational-games-with-scratch', 'StaticPageController@index')->name('training.module-4');
+Route::get('/training/making-robotics-and-tinkering-in-the-classroom', 'StaticPageController@index')->name('training.module-5');
+
 
 
 

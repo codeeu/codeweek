@@ -53,14 +53,14 @@
                                 <div class="text-base text-black">By Margo Tinawi</div>
                             </a>
                         </div>
-                        <div class="hidden learning-card">
+                        <div class="learning-card">
                             <a href="/training/creating-educational-games-with-scratch">
                                 <img src="img/learning_card_default.png">
                                 <div class="text-xl">Creating educational games with Scratch</div>
                                 <div class="text-base text-black">By Jesús Moreno León</div>
                             </a>
                         </div>
-                        <div class="hidden learning-card">
+                        <div class="learning-card">
                             <a href="/training/making-robotics-and-tinkering-in-the-classroom">
                                 <img src="img/learning_card_default.png">
                                 <div class="text-xl">Making, robotics and tinkering in the classroom</div>
