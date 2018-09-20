@@ -16,6 +16,12 @@
                     {{ csrf_field() }}
 
                     <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email" readonly
+                               value="{{auth()->user()->email}}">
+                    </div>
+
+                    <div class="form-group">
                         <label for="firstname">First Name</label>
                         <input type="text" class="form-control" id="firstname" placeholder="Name" name="firstname"
                                value="{{auth()->user()->firstname}}">
@@ -27,11 +33,7 @@
                                value="{{auth()->user()->lastname}}">
 
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Email"
-                               value="{{auth()->user()->email}}">
-                    </div>
+
 
                     <div class="form-group">
                         <label for="twitter">Twitter Handle</label>
@@ -40,15 +42,15 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="twitter">Your Website</label>
+                        <label for="website">Your Website</label>
                         <input type="text" class="form-control" id="website" placeholder="Website" name="website"
                                value="{{auth()->user()->website}}">
                     </div>
 
                     <div class="form-group">
-                        <label for="twitter">Bio</label>
-                        <input type="text" class="form-control" id="bio" placeholder="Bio" name="bio"
-                               value="{{auth()->user()->bio}}">
+                        <label for="bio">Bio</label>
+                        <textarea rows="4" class="form-control" id="bio" placeholder="Bio" name="bio"
+                                  >{{auth()->user()->bio}}</textarea>
                     </div>
 
                     <label for="id_country">Select country</label><br/>
