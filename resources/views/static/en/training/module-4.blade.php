@@ -20,19 +20,19 @@
                     <hr>
 
                     <p>
-                        Critical thinking, persistence, problem solving, computational thinking or creativity are only some of the key skills that your students need to succeed in the 21st century, and coding can help you achieve these in a fun and motivating way.
+                        Critical thinking, persistence, problem solving, computational thinking and creativity are only some of the key skills that your students need to succeed in the 21st century, and coding can help you achieve these in a fun and motivating way.
                     </p>
 
                     <p>
-                        Algorithmic notions of flow control using sequences of instructions and loops, data representation using variables and lists or synchronization of processes might sound like complicated concepts, but in this video you will find that they are easier to learn than you think.
+                        Algorithmic notions of flow control using sequences of instructions and loops, data representation using variables and lists, or synchronization of processes might sound like complicated concepts, but in this video you will find that they are easier to learn than you think.
                     </p>
 
                     <p>
-                        In the video, Jesús Moreno León, Computer Science teacher and researcher (Spain), will explain how you can develop these and other skills in your students while having fun. Are you wondering how? By creating a questions and answers game in Scratch, the most popular programming language used at schools worldwide. Scratch not only enhances computational thinking but it also allows introduction of gamification elements in the classroom to keep your students motivated while learning and having fun.
+                        In this video, Jesús Moreno León, a Computer Science teacher and researcher from Spain, will explain how you can develop these and other skills in your students while having fun. How can this be done? By creating a questions and answers game in Scratch, the most popular programming language used at schools worldwide. Scratch not only enhances computational thinking, but it also allows the introduction of gamification elements in the classroom to keep your students motivated while learning and having fun.
                     </p>
 
                     <p>
-                        Have a look at the video to learn how to get started.
+                        Have a look at the video to learn how to get started:
                     </p>
 
                     <div class="flex youtube-container">

@@ -20,15 +20,15 @@
                     <hr>
 
                     <p>
-                        The integration of coding, tinkering, robotics, microelectronics as teaching and learning tools in the school curricula is key in 21st century education.
+                        The integration of coding, tinkering, robotics, and microelectronics as teaching and learning tools in the school curricula is key in 21st century education.
                     </p>
 
                     <p>
-                        Using tinkering and robotics in schools has many benefits for students, as it helps developing key competences, such as problem solving, teamwork and collaboration, it boosts students´ creativity and confidence. Besides, tinkering and robotics can help students to develop their perseverance and determination when faced with challenges. Robotics is also a field that promotes inclusivity, as it is easily accessible to a wide range of students with varying talents and skills (both boys and girls) and it positively influences students on the autism spectrum.
+                        Using tinkering and robotics in schools has many benefits for students, as it helps develop key competences such as problem solving, teamwork and collaboration. It also boosts students´ creativity and confidence and can help students develop perseverance and determination when faced with challenges. Robotics is also a field that promotes inclusivity, as it is easily accessible to a wide range of students with varying talents and skills (both boys and girls) and it positively influences students on the autism spectrum.
                     </p>
 
                     <p>
-                        Have a look at this video where Tullia Urschitz, Italian Scientix ambassador and STEM teacher at Sant’Ambrogio Di Valpolicella, Italy, will give some practical examples on how teachers can integrate tinkering and robotics in the classroom, thus transforming passive students into enthusiastic makers.
+                        Have a look at this video where Tullia Urschitz, Italian Scientix ambassador and STEM teacher in Sant’Ambrogio Di Valpolicella, Italy, will give some practical examples on how teachers can integrate tinkering and robotics in the classroom, thus transforming passive students into enthusiastic makers.
                     </p>
 
                     <div class="flex youtube-container">
