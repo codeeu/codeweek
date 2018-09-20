@@ -20,7 +20,7 @@
                     <hr>
 
                     <p>
-                        Are you considering participating in EU Code Week but you don’t know where to start from?
+                        Are you considering participating in EU Code Week but you don’t know where to start?
                     </p>
 
                     <p>
@@ -28,7 +28,7 @@
                     </p>
 
                     <p>
-                        No previous experience on coding or programming is needed, each module takes only around 15’ to go through, and they introduce you to key concepts related to coding and computational thinking activities. Besides, the modules also give you practical tips and advices on how to integrate them in your classroom.
+                        No previous coding or programming experience is needed, and each module takes only around 15 minutes to complete. The modules introduce you to key concepts related to coding and computational thinking activities. In addition, the modules also give you practical tips and advice on how to integrate the concepts in your classroom.
                     </p>
 
                     <div class="flex flex-wrap" style="margin-bottom: 30px;">
@@ -70,15 +70,15 @@
                     </div>
 
                     <p>
-                        Now that you have taken one or more Code Week Learning Bits, we hope that you feel comfortable enough to bring some digital creativity to your classroom and pin your activity on the <a href="/events">Code Week Map</a>!
+                        Now that you have completed one or more Code Week Learning Bits, we hope that you feel comfortable enough to bring some digital creativity to your classroom and pin your activity on the <a href="/events">Code Week Map</a>!
                     </p>
 
                     <p>
-                        You can easily organise a lesson in your classroom, an open day, or an event at your school. Just find a date and register your activity in the  <a href="/events">Code Week map</a>.  Each activity organiser will get a certificate of participation for their effort.
+                        You can easily organise a lesson in your classroom, an open day, or an event at your school. Just find a date and register your activity on the  <a href="/events">Code Week map</a>. Each activity organiser will get a certificate of participation for their effort.
                     </p>
 
                     <p>
-                        If you would like to connect to an international group of enthusiastic teachers, join in the EU Code Week Facebook group for teachers!
+                        If you would like to connect with an international group of enthusiastic teachers, join the <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU Code Week Facebook group for teachers</a>! To take a step further and collaborate with other schools in your country or across borders – join the <a href="codeweek4all">Code Week 4 All challenge</a>.
                     </p>
 
                 </div>
