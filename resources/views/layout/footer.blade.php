@@ -37,7 +37,7 @@
                         <i class="icon-gplus"></i>
                     </a>
 
-                    <a href="https://github.com/codeeu/codeeu.github.io" class="social-icon si-small si-borderless nobottommargin si-github">
+                    <a href="https://github.com/codeeu/codeweek" class="social-icon si-small si-borderless nobottommargin si-github">
                         <i class="icon-github"></i>
                         <i class="icon-github"></i>
                     </a>
