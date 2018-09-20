@@ -21,7 +21,6 @@ class UpdateUserTest extends TestCase
         $this->patch('user', [
             'firstname' => 'Changed firstname',
             'lastname' => 'Changed lastname',
-            'email' => 'newmail@test.com',
             'bio' => 'Changed Bio',
             'twitter' => 'Changed Twitter',
             'website' => 'Changed Website',
@@ -35,6 +34,23 @@ class UpdateUserTest extends TestCase
             $this->assertEquals('Changed Twitter', $user->twitter);
             $this->assertEquals('Changed Website', $user->website);
             $this->assertEquals('AA', $user->country_iso);
+
+        });
+    }
+
+    /** @test */
+    function a_user_cant_update_its_email()
+    {
+        $user = create(\App\User::class);
+
+        $this->signIn($user);
+
+
+        $this->patch('user', [
+            'email' => 'newmail@test.com',
+        ]);
+
+        tap($user->fresh(), function ($user) {
             $this->assertNotEquals('newmail@test.com', $user->email);
         });
     }
