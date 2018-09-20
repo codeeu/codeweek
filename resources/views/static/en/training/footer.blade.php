@@ -5,5 +5,5 @@
 </p>
 
 <p>
-    If you would like to connect to an international group of enthusiastic teachers, join in the <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU Code Week Facebook group for teachers!</a>Moreover, if you want to work together with other schools in your country or across borders – join the <a href="codeweek4all">Code Week 4 All challenge</a>.
+    If you would like to connect to an international group of enthusiastic teachers, join in the <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU Code Week Facebook group for teachers!</a> Moreover, if you want to work together with other schools in your country or across borders – join the <a href="codeweek4all">Code Week 4 All challenge</a>.
 </p>
