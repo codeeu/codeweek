@@ -11,8 +11,8 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-    'login' => 'Σύνδεση',
-    'register' => 'Εγγραφή',
+    'login' => 'ΣΥΝΔΕΣΗ',
+    'register' => 'ΕΓΓΡΑΦΗ',
     'github' => 'Σύνδεση με Github',
     'twitter' => 'Σύνδεση με Twitter',
     'facebook' => 'Σύνδεση με Facebook',

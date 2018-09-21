@@ -3,7 +3,7 @@
     <div class="container clearfix">
 
         <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
-            <h1>Δήλωση εχεμύθειας</h1><span>Ευρωπαϊκή Εβδομάδα Προγραμματισμού 2018</span><ol class="breadcrumb">
+            <h1>ΔΗΛΩΣΗ ΕΧΕΜΥΘΕΙΑΣ</h1><span>ΕΥΡΩΠΑΪΚΗ ΕΒΔΟΜΑΔΑ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ 2018</span><ol class="breadcrumb">
 			    <li><a href="http://codeweek.eu">Αρχική σελίδα</a></li>
 			    <li class="active">Δήλωση εχεμύθειας</li>
 		    </ol>

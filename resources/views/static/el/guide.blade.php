@@ -11,7 +11,7 @@
 
 
                     <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
-                        <h1>Δήλωσε συμμετοχή στην Ευρωπαϊκή Εβδομάδα Προγραμματισμού και διοργάνωσε εκδηλώσεις #codeEU</h1><span></span><div><a href="/add" target="_blank" class="btn btn-xl mt-8">Κάνε εγγραφή της εκδήλωσής σου εδώ</a></div>
+                        <h1>ΔΗΛΩΣΕ ΣΥΜΜΕΤΟΧΗ ΣΤΗΝ ΕΥΡΩΠΑΪΚΗ ΕΒΔΟΜΑΔΑ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ ΚΑΙ ΔΙΟΡΓΑΝΩΣΕ ΕΚΔΗΛΩΣΕΙΣ #codeEU</h1><span></span><div><a href="/add" target="_blank" class="btn btn-xl mt-8">ΚΑΝΕ ΕΓΓΡΑΦΗ ΤΗΣ ΕΚΔΗΛΩΣΗΣ ΣΟΥ ΕΔΩ</a></div>
                     </div>
 
 
