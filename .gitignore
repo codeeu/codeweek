@@ -13,3 +13,4 @@ yarn-error.log
 .env
 app.js
 _ide_helper.php
+bios.sql
