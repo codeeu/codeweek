@@ -6,7 +6,7 @@
 
         <div class="swiper-container swiper-parent">
             <div class="swiper-wrapper">
-                <div class="swiper-slide dark" style="background-image: url('img/ambassadors.jpg');width: 100%;">
+                <div class="swiper-slide dark" style="background-image: url('img/codeweek-2018.jpg');width: 100%;">
                     <div class="container clearfix">
                         <div class="slider-caption slider-caption-center">
                             <div id="countdown-ex1" class="countdown countdown-large coming-soon divcenter bottommargin"
@@ -57,7 +57,7 @@
                     <div class="col_one_third">
 
                         <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                            <h4>Τι είναι;</h4>
+                            <h4>ΤΙ ΕΙΝΑΙ;</h4>
                         </div>
 
                         <p>Η Ευρωπαϊκή Εβδομάδα Προγραμματισμού είναι μια πρωτοβουλία βάσης που έχει ως στόχο να κάνει τον προγραμματισμό και τον ψηφιακό γραμματισμό προσιτό σε όλους, με διασκεδαστικό και ενδιαφέροντα τρόπο.</p>
@@ -69,7 +69,7 @@
                     <div class="col_one_third">
 
                         <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                            <h4>Πότε;</h4>
+                            <h4>ΠΟΤΕ;</h4>
                         </div>
 
                         <p>6-21 Οκτωβρίου 2018</p>
@@ -80,7 +80,7 @@
                     <div class="col_one_third col_last">
 
                         <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                            <h4>Γιατί;</h4>
+                            <h4>ΓΙΑΤΙ;</h4>
                         </div>
 
                         <p>Η εκμάθηση συγγραφής κώδικα μας βοηθάει να κατανοούμε τον κόσμο που εξελίσσεται ταχύτατα γύρω μας, να διευρύνουμε τις γνώσεις μας για τον τρόπο λειτουργίας της τεχνολογίας και να αναπτύσσουμε δεξιότητες και ικανότητες, ώστε να ανακαλύπτουμε νέες ιδέες και να καινοτομούμε.</p>
@@ -103,7 +103,7 @@
             <section id="section-join" class="page-section section">
 
                 <div class="heading-block center">
-                    <h2>Δήλωσε συμμετοχή!</h2><span></span></div>
+                    <h2>ΔΗΛΩΣΕ ΣΥΜΜΕΤΟΧΗ!</h2><span></span></div>
 
                 <div class="container clearfix">
 
@@ -111,7 +111,7 @@
                     <div class="col_one_third">
 
                         <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                            <h4>Διοργάνωσε μια δραστηριότητα</h4>
+                            <h4>ΔΙΟΡΓΑΝΩΣΕ ΜΙΑ ΔΡΑΣΤΗΡΙΟΤΗΤΑ</h4>
                         </div>
 
                         <p>Γίνε κι εσύ μέρος της Εβδομάδας Προγραμματισμού διοργανώνοντας μια δραστηριότητα. Κάνε τη διαφορά προσφέροντας έμπνευση και κίνητρο σε άλλους.</p>
@@ -122,12 +122,12 @@
                                     href="/guide">εργαλειοθήκη των διοργανωτών</a> για να ξεκινήσεις.</p>
 
                         <p>Αν χρειάζεσαι βοήθεια ή έχεις κάποια απορία μπορείς να επικοινωνήσεις με τους <a
-                                    href="/ambassadors">Πρέσβεις της Ευρωπαϊκής Εβδομάδας Προγραμματισμού</a> της χώρας σου.</p><a href="/events" class="button button-border button-rounded button-large">Γίνε διοργανωτής</a></div>
+                                    href="/ambassadors">Πρέσβεις της Ευρωπαϊκής Εβδομάδας Προγραμματισμού</a> της χώρας σου.</p><a href="/events" class="button button-border button-rounded button-large">ΓΙΝΕ ΔΙΟΡΓΑΝΩΤΗΣ</a></div>
 
                     <div class="col_one_third">
 
                         <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                            <h4>Δήλωσε συμμετοχή σε μια δραστηριότητα</h4>
+                            <h4>ΔΗΛΩΣΕ ΣΥΜΜΕΤΟΧΗ ΣΕ ΜΙΑ ΔΡΑΣΤΗΡΙΟΤΗΤΑ</h4>
                         </div>
 
                         <p>Η συγγραφή κώδικα τους αφορά όλους. Δοκίμασε κάτι καινούργιο και ανακάλυψε πόσο διασκεδαστική είναι η συγγραφή κώδικα συμμετέχοντας σε <a
@@ -135,12 +135,12 @@
 
                         <p>Υπάρχουν πολλές εκδηλώσεις για κάθε ηλικία καθώς και ποικιλία θεμάτων. Η συμμετοχή είναι δωρεάν και δεν υπάρχουν προϋποθέσεις συμμετοχής.</p>
 
-                        <p>Επίσης, υπάρχει ένας <a href="/resources/">κατάλογος πόρων</a> που θα σε βοηθήσουν να ξεκινήσεις να μαθαίνεις για τον προγραμματισμό στο διαδίκτυο αμέσως τώρα.</p><a href="/events" class="button button-border button-rounded button-large">Περιηγήσου στις δραστηριότητες</a></div>
+                        <p>Επίσης, υπάρχει ένας <a href="/resources/">κατάλογος πόρων</a> που θα σε βοηθήσουν να ξεκινήσεις να μαθαίνεις για τον προγραμματισμό στο διαδίκτυο αμέσως τώρα.</p><a href="/events" class="button button-border button-rounded button-large">ΠΕΡΙΗΓΗΣΟΥ ΣΤΙΣ ΔΡΑΣΤΗΡΙΟΤΗΤΕΣ</a></div>
 
                     <div class="col_one_third col_last">
 
                         <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                            <h4>Ενημέρωσε κι άλλους</h4>
+                            <h4>ΕΝΗΜΕΡΩΣΕ ΚΙ ΑΛΛΟΥΣ</h4>
                         </div>
 
                         <p>Βοήθησε τον σκοπό μας <a href="http://blog.codeweek.eu">ενημερώνοντας κι άλλους</a>, έτσι ώστε και άλλοι άνθρωποι να μάθουν για την Εβδομάδα Προγραμματισμού. Αν γνωρίζεις άτομα που θα ήθελαν να διοργανώσουν μια εκδήλωση, ενημέρωσέ τους για την Εβδομάδα Προγραμματισμού.</p>
@@ -149,7 +149,7 @@
 
                         <p>Θα μας βρεις στο Twitter ως <a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>, στο <a
                                     href="https://www.facebook.com/codeEU">Facebook</a> και χρησιμοποιούμε το hashtag <a
-                                    href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a>.</p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">Δες τι συμβαίνει</a></div>
+                                    href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a>.</p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">ΔΕΣ ΤΙ ΣΥΜΒΑΙΝΕΙ</a></div>
 
                     <div class="clear"></div>
                 </div>
@@ -160,7 +160,7 @@
                 <div class="container clearfix">
 
                     <div class="heading-block bottommargin-lg center">
-                        <h2>Εταίροι και Χορηγοί</h2><span>Βοήθησέ μας να προβληθούμε περισσότερο, αλλά και να αυξήσουμε τον αντίκτυπο της Εβδομάδας Προγραμματισμού.</span><p>Η Εβδομάδα Προγραμματισμού είναι μια πρωτοβουλία βάσης που διαχειρίζονται εθελοντές, και στην οποία συμμετέχουν εκατοντάδες χιλιάδες άνθρωποι από όλον τον κόσμο. Αναζητούμε διαρκώς εταίρους και χορηγούς που θα μας βοηθήσουν να επεκταθούμε. Αν θέλεις να συμμετέχεις στην κοινότητά μας και να γίνεις χορηγός στις δραστηριότητές μας, επικοινώνησε μαζί μας.</p><a href="mailto:info@codeweek.eu" class="button button-border button-rounded button-large">Επικοινωνία</a></p>
+                        <h2>ΕΤΑΙΡΟΙ ΚΑΙ ΧΟΡΗΓΟΙ</h2><span>Βοήθησέ μας να προβληθούμε περισσότερο, αλλά και να αυξήσουμε τον αντίκτυπο της Εβδομάδας Προγραμματισμού.</span><p>Η Εβδομάδα Προγραμματισμού είναι μια πρωτοβουλία βάσης που διαχειρίζονται εθελοντές, και στην οποία συμμετέχουν εκατοντάδες χιλιάδες άνθρωποι από όλον τον κόσμο. Αναζητούμε διαρκώς εταίρους και χορηγούς που θα μας βοηθήσουν να επεκταθούμε. Αν θέλεις να συμμετέχεις στην κοινότητά μας και να γίνεις χορηγός στις δραστηριότητές μας, επικοινώνησε μαζί μας.</p><a href="mailto:info@codeweek.eu" class="button button-border button-rounded button-large">ΕΠΙΚΟΙΝΩΝΙΑ</a></p>
                     </div>
 
                     <div class="">
@@ -216,7 +216,7 @@
             <section id="section-contact" class="page-section section">
 
                 <div class="heading-block title-center">
-                    <h2>Επικοινώνησε μαζί μας</h2><span>Έχεις άλλες απορίες; Απλώς <a href="mailto:info@codeweek.eu">γράψε μας</a>.</span></div>
+                    <h2>ΕΠΙΚΟΙΝΩΝΗΣΕ ΜΑΖΙ ΜΑΣ</h2><span>Έχεις άλλες απορίες; Απλώς <a href="mailto:info@codeweek.eu">γράψε μας</a>.</span></div>
 
             </section>
 
