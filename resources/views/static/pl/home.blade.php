@@ -6,7 +6,7 @@
 
         <div class="swiper-container swiper-parent">
             <div class="swiper-wrapper">
-                <div class="swiper-slide dark" style="background-image: url('img/ambassadors.jpg');width: 100%;">
+                <div class="swiper-slide dark" style="background-image: url('img/codeweek-2018.jpg');width: 100%;">
                     <div class="container clearfix">
                         <div class="slider-caption slider-caption-center">
                             <div id="countdown-ex1" class="countdown countdown-large coming-soon divcenter bottommargin"
