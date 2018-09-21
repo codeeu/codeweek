@@ -20,11 +20,17 @@
 
                     <strong>@lang('eventdetails.organised_by')</strong>
 
-                    <p> {{ $event->organizer }}</p>
+                    <p> {{ $event->organizer }}
+                        @can('edit', $event)
+                            <br/><a href="mailto:{{$event->user_email}}">{{$event->user_email}}</a>
+                        @endcan
+                    </p>
+
                     @if($event->contact_person)
 
                         <strong>@lang('eventdetails.contact_email')</strong><br>
-                        <p><a href="mailto:{{ $event->owner->email }}">{{ $event->contact_person }}</a></p>
+                        <p><a href="mailto:{{ $event->contact_person }}">{{ $event->contact_person }}</a>
+                        </p>
                     @endif
 
                     <address>
