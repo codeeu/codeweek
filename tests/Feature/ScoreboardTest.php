@@ -21,7 +21,7 @@ class ScoreboardTest extends TestCase
         $belgium = create('App\Country', ['iso'=>'BE','name'=>'Belgium']);
         $luxembourg = create('App\Country', ['iso'=>'LU','name'=>'Luxembourg']);
         $eventsInBelgium = create('App\Event', ['country_iso'=>'BE','end_date'=>Carbon::tomorrow()],7);
-        $eventsInLuxembourg = create('App\Event', ['country_iso'=>'LU','end_date'=>Carbon::yesterday()],1);
+        $eventsInLuxembourg = create('App\Event', ['country_iso'=>'LU','end_date'=>Carbon::now()->subYear(1)],1);
 
         $this->get('scoreboard')
             ->assertSee('Belgium')
