@@ -8,11 +8,10 @@
     
       
 
-    <li><a href="https://mooc.uniurb.it/wp/codeweekmooc/">CodeWeek nanoMOOC</a> Brevissimo corso di formazione online per insegnanti, che guida passo passo alla partecipazione a Europe Code Week</li>
     <li><a href="http://codeweek.it/">CodeWeek.it</a> Il sito italiano di CodeWeek</li>
     <li><a href="https://www.facebook.com/CodeWeekIT/">CodeWeek Italia</a> Pagina Facebook ufficiale di CodeWeek Italia</li>
     <li><a href="http://programmailfuturo.it/">Programma il futuro!</a> Portale gestito da CINI e MIUR per offrire alle scuole italiane le risose di Code.org</li>
-    <li><a href="http://codemooc.org/risorse">Coding in Your Classroom, Now!"</a> Portale web per insegnanti dedicato al coding a scuola.</li>
+    <li><a href="http://codemooc.org/risorse">Coding in Your Classroom, Now!</a> Portale web per insegnanti dedicato al coding a scuola.</li>
     <li><a href="https://codeweek.eu/resources/">Risorse internazionali localizzate in italiano</a> Molte delle risorse online disponibili a livello internazionale hanno localizzazione linguistica in italiano</li>
     <li><a href="https://mooc.uniurb.it/wp/codeweekmooc/">CodeWeek nanoMOOC: Il coding da zero a CodeWeek e oltre!</a> Brevissimo corso di formazione online accreditato per insegnanti, che guida passo passo alla partecipazione a Europe Code Week</li>
     </ul>
