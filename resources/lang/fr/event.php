@@ -22,7 +22,7 @@ return [
     'get_involved'=>'Participez',
     'organize_or_support_events'=>'Organisez ou soutenez des événements dans votre ville',
     'or_contact_your'=>'ou contactez vos',
-    'eu_code_week_ambassadors'=>'ambassadeurs de la Code Week européenne',
+    'eu_code_week_ambassadors'=>'ambassadeurs Code Week de l’UE',
     'show_events_for'=>'Afficher les événements pour ',
     'who' => 'À quel public l’événement s’adresse-t-il?',
     'tags' => 'Étiquettes',
@@ -49,8 +49,8 @@ return [
     ],
     'contact' => [
         'label' => 'Adresse e-mail de contact',
-        'placeholder' => 'Cette adresse sera utilisée pour les communications importantes dans le cadre de la Code Week européenne',
-        'explanation' => 'Seuls les ambassadeurs et organisateurs de la Code Week européenne pourront consulter votre adresse e-mail. Ceux-ci vérifieront votre événement avant qu’il n’apparaisse sur la carte et sont susceptibles de vous contacter si des modifications s’avèrent nécessaires, ou pour mener des enquêtes à des fins statistiques au lendemain de l\'événement.',
+        'placeholder' => 'Cette adresse sera utilisée pour les communications importantes dans le cadre de la Semaine européenne du code',
+        'explanation' => 'Seuls les ambassadeurs et organisateurs de la Semaine européenne du code pourront consulter votre adresse e-mail. Ceux-ci vérifieront votre événement avant qu’il n’apparaisse sur la carte et sont susceptibles de vous contacter si des modifications s’avèrent nécessaires, ou pour mener des enquêtes à des fins statistiques au lendemain de l’événement.',
     ],
     'public' => [
         'label' => 'Adresse e-mail publique',
