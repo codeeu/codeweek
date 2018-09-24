@@ -14,7 +14,7 @@
 
 
                             <h2 data-caption-animate="fadeInUp">CODEWEEK.EU</h2>
-                            <p data-caption-animate="fadeInUp" data-caption-delay="200">du 6&nbsp;au 21&nbsp;octobre&nbsp;2018 <a
+                            <p data-caption-animate="fadeInUp" data-caption-delay="200">6 &mdash; 21&nbsp;octobre&nbsp;2018 <a
                                         href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a></p>
                         </div>
                     </div>
@@ -28,7 +28,7 @@
 
             <div class="container clearfix">
 
-                <div class="menu-title">Codeweek <span>Europe</span></div>
+                <div class="menu-title">CodeWeek <span>EU</span></div>
 
                 <nav class="one-page-menu">
                     <ul>
@@ -60,7 +60,7 @@
                             <h4>De quoi s&rsquo;agit-il?</h4>
                         </div>
 
-                        <p>La Codeweek Europe est une initiative citoyenne qui vise &agrave; mettre la programmation et l'alphab&eacute;tisation num&eacute;rique &agrave; la port&eacute;e de tous, de mani&egrave;re amusante et stimulante.</p>
+                        <p>La Semaine europ&eacute;enne du code est une initiative citoyenne qui vise &agrave; apprendre la programmation et l&rsquo;alphab&eacute;tisation num&eacute;rique &agrave; tous de mani&egrave;re amusante et attrayante.</p>
 
 
 
@@ -69,10 +69,10 @@
                     <div class="col_one_third">
 
                         <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                            <h4>Quand cela a-t-il lieu?</h4>
+                            <h4>Quand?</h4>
                         </div>
 
-                        <p>Du 6&nbsp;au 21&nbsp;octobre&nbsp;2018</p>
+                        <p>6-21&nbsp;octobre&nbsp;2018</p>
 
 
                     </div>
@@ -80,10 +80,10 @@
                     <div class="col_one_third col_last">
 
                         <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                            <h4>Quel est l'objectif?</h4>
+                            <h4>Pourquoi?</h4>
                         </div>
 
-                        <p>Apprendre &agrave; programmer nous permet non seulement de mieux comprendre le monde en mutation rapide qui nous entoure et d'approfondir notre connaissance technologique, mais contribue &eacute;galement &agrave; d&eacute;velopper les comp&eacute;tences et les aptitudes n&eacute;cessaires pour innover et explorer de nouvelles id&eacute;es.</p>
+                        <p>Apprendre la programmation nous aide &agrave; comprendre le monde en mutation rapide qui nous entoure ainsi que le fonctionnement de la technologie, et &agrave; d&eacute;velopper des comp&eacute;tences et des aptitudes afin d&rsquo;&eacute;tudier de nouvelles id&eacute;es et d&rsquo;innover.</p>
 
 
 
@@ -114,15 +114,15 @@
                             <h4>Organiser une activit&eacute;</h4>
                         </div>
 
-                        <p>Contribuer &agrave; la Codeweek en organisant une activit&eacute;. Faites la diff&eacute;rence en inspirant et en motivant les autres.</p>
+                        <p>Faites partie de la Semaine du code en organisant une activit&eacute;. Faites la diff&eacute;rence en inspirant et en motivant les autres.</p>
 
-                        <p>Chacun est invit&eacute; &agrave; organiser sa propre activit&eacute;. Choisissez simplement un th&egrave;me et un public cible et <a
-                                    href="/add">ajoutez votre activit&eacute;</a> sur <a
-                                    href="/events">la carte</a>. Pour commencer, vous pouvez m&ecirc;me utiliser notre <a
-                                    href="/guide">bo&icirc;te &agrave; outils pour les organisateurs</a>.</p>
+                        <p>Tout le monde est invit&eacute; &agrave; organiser une activit&eacute;. Choisissez simplement un th&egrave;me et un public cible et <a
+                                    href="/add">ajoutez votre activit&eacute;</a> &agrave; <a
+                                    href="/events">la carte</a>. Vous pouvez m&ecirc;me utiliser notre <a
+                                    href="/guide">bo&icirc;te &agrave; outils pour organisateurs</a> pour d&eacute;buter.</p>
 
-                        <p>Si vous avez besoin d&rsquo;aide ou que vous avez une question, vous pouvez &eacute;galement contacter les <a
-                                    href="/ambassadors">ambassadeurs Codeweek Europe</a> de votre pays.</p><a href="/events" class="button button-border button-rounded button-large">Devenir organisateur</a></div>
+                        <p>Si vous avez besoin d&rsquo;aide ou que vous avez une question, vous pouvez contacter des <a
+                                    href="/ambassadors">ambassadeurs Code Week de l&rsquo;UE</a> dans votre pays.</p><a href="/events" class="button button-border button-rounded button-large">Devenir organisateur</a></div>
 
                     <div class="col_one_third">
 
@@ -130,12 +130,12 @@
                             <h4>Rejoindre une activit&eacute;</h4>
                         </div>
 
-                        <p>La programmation est &agrave; la port&eacute;e de tous. Tentez une nouvelle exp&eacute;rience et d&eacute;couvrez l&rsquo;aspect amusant de la programmation en prenant part &agrave; <a
-                                    href="/events">une activit&eacute; ayant lieu pr&egrave;s de chez vous</a>.</p>
+                        <p>La programmation est &agrave; la port&eacute;e de tout le monde. Essayez quelque chose de nouveau et d&eacute;couvrez l&rsquo;aspect amusant de la programmation en rejoignant <a
+                                    href="/events">une activit&eacute; pr&egrave;s de chez vous</a>.</p>
 
-                        <p>D&eacute;couvrez les nombreux &eacute;v&eacute;nements pr&eacute;vus pour tous les &acirc;ges et la grande vari&eacute;t&eacute; des th&egrave;mes pr&eacute;sent&eacute;s. La participation est gratuite et aucune condition n&rsquo;est requise.</p>
+                        <p>Il existe de nombreux &eacute;v&eacute;nements pour tous les &acirc;ges ainsi qu&rsquo;une vari&eacute;t&eacute; de th&egrave;mes. La participation est gratuite et aucune condition n&rsquo;est requise.</p>
 
-                        <p>Il existe &eacute;galement une <a href="/resources/">liste de ressources</a> pour vous aider &agrave; d&eacute;buter la programmation en ligne maintenant.</p><a href="/events" class="button button-border button-rounded button-large">Rechercher une activit&eacute;</a></div>
+                        <p>Il existe &eacute;galement une <a href="/resources/">liste de ressources</a> pour vous aider &agrave; d&eacute;buter la programmation en ligne maintenant.</p><a href="/events" class="button button-border button-rounded button-large">Chercher une activit&eacute;</a></div>
 
                     <div class="col_one_third col_last">
 
@@ -143,13 +143,13 @@
                             <h4>Passer le mot</h4>
                         </div>
 
-                        <p>Aidez-nous et <a href="http://blog.codeweek.eu">passez le mot</a> afin que davantage de personnes aient connaissance et participent &agrave; la Codeweek. Si vous connaissez des personnes qui pourraient souhaiter organiser un &eacute;v&eacute;nement, informez-les sur la Codeweek.</p>
+                        <p>Servez la cause en <a href="http://blog.codeweek.eu">passant le mot</a> afin que davantage de personnes puissent avoir connaissance de la Semaine du code. Si vous connaissez des personnes d&eacute;sireuses d&rsquo;organiser un &eacute;v&eacute;nement, informez-les de la Semaine du code.</p>
 
                         <p>Vous avez une histoire inspirante &agrave; partager? <a href="http://blog.codeweek.eu/submit">Publiez-la sur notre blog</a> et nous la partagerons.</p>
 
-                        <p>Retrouvez-nous sur Twitter, <a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>, sur <a
-                                    href="https://www.facebook.com/codeEU">Facebook</a>, et sous le hashtag <a
-                                    href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a>.</p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">Savoir ce qu&rsquo;il se passe</a></div>
+                        <p>Nous sommes sur Twitter sous le nom <a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a> et sur <a
+                                    href="https://www.facebook.com/codeEU">Facebook</a>, et nous utilisons le hashtag <a
+                                    href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a>.</p><a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">Voir ce qu&rsquo;il se passe</a></div>
 
                     <div class="clear"></div>
                 </div>
@@ -160,7 +160,7 @@
                 <div class="container clearfix">
 
                     <div class="heading-block bottommargin-lg center">
-                        <h2>Partenaires et sponsors</h2><span>Aidez-nous &agrave; &eacute;tendre la port&eacute;e et l&rsquo;impact de la Codeweek</span><p>La Codeweek est une initiative citoyenne organis&eacute;e par des b&eacute;n&eacute;voles qui concerne des centaines de milliers de personnes dans le monde. Nous sommes constamment &agrave; la recherche de partenaires et de sponsors pour nous aider &agrave; nous d&eacute;velopper. Si vous souhaitez faire partie de notre communaut&eacute; et parrainer nos activit&eacute;s, veuillez nous contacter.</p><a href="mailto:info@codeweek.eu" class="button button-border button-rounded button-large">Contact</a></p>
+                        <h2>Partenaires et sponsors</h2><span>Aidez-nous &agrave; &eacute;tendre la port&eacute;e et l&rsquo;impact de la Semaine du code</span><p>La Semaine du code est une initiative citoyenne men&eacute;e par des b&eacute;n&eacute;voles qui touche des centaines de milliers de personnes dans le monde. Nous cherchons constamment des partenaires et des sponsors pour nous aider &agrave; nous d&eacute;velopper. Si vous souhaitez faire partie de notre communaut&eacute; et parrainer nos activit&eacute;s, veuillez nous contacter.</p><a href="mailto:info@codeweek.eu" class="button button-border button-rounded button-large">Contact</a></p>
                     </div>
 
                     <div class="">
@@ -182,11 +182,11 @@
                                         src="img/partners/colabora_PublicLibraries2020.png" alt="Public Libraries 2020"></a></li>
                         <li><a href="http://ec.europa.eu/digital-agenda/en/grand-coalition-digital-jobs-0"><img
                                         src="img/partners/digital-skills.png"
-                                        alt="Grand Coalition for Digital Jobs"></a></li>
+                                        alt="Grande coalition pour les emplois num&eacute;riques"></a></li>
                         <li><a href="http://coderdojo.org"><img src="img/partners/colabora_coderdojo.png"
                                                                 alt="CoderDojo"></a></li>
                         <li><a href="http://www.africacodeweek.org/"><img src="img/partners/colabora_africacodeweek.png"
-                                                                          alt="Africa Code Week"></a></li>
+                                                                          alt="Semaine africaine du code"></a></li>
                         <li><a href="http://www.allyouneediscode.eu/"><img src="img/partners/colabora_aynic.png"
                                                                            alt="All you need is code"></a></li>
                         <li><a href="http://www.eun.org/"><img src="img/partners/colabora_eun.png"
@@ -216,7 +216,7 @@
             <section id="section-contact" class="page-section section">
 
                 <div class="heading-block title-center">
-                    <h2>Contactez-nous</h2><span>Vous avez d&rsquo;autres questions? <a href="mailto:info@codeweek.eu">&Eacute;crivez-nous</a>.</span></div>
+                    <h2>Contactez-nous</h2><span>Vous avez d&rsquo;autres questions? <a href="mailto:info@codeweek.eu">&Eacute;crivez-nous</a> simplement.</span></div>
 
             </section>
 
