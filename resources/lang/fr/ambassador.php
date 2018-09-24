@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'Découvrez les ambassadeurs européens de la Code Week',
+    'title' => 'Découvrez les ambassadeurs Code Week de l’UE',
     'your_current_country'=>'Votre pays actuel',
     'visit_the'=> 'Consultez la',
     'local_facebook_page'=>'page Facebook de votre pays',
