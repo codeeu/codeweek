@@ -1,5 +1,6 @@
 <template>
     <div>
+
         <div class="level">
             <img :src="picture" class="mr-1">
         </div>
@@ -19,9 +20,10 @@
     export default {
 
         components: {ImageUpload},
+        props: ['image'],
         data() {
             return {
-                picture: '',
+                picture: this.image || '',
                 imageName: ''
             }
         },
