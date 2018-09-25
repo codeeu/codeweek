@@ -20,7 +20,7 @@ class ReportEventTest extends TestCase
         parent::setUp();
 
         $this->seed('RolesAndPermissionsSeeder');
-        $this->event = create('App\Event', []);
+        $this->event = create('App\Event', ["status"=>"APPROVED","end_date"=>Carbon::now()->subMonth(1)]);
 
 
     }
@@ -48,6 +48,22 @@ class ReportEventTest extends TestCase
 
 
         $this->get('/view/' . $this->event->id . '/random')
+            ->assertDontSee("report-event");
+
+
+    }
+
+    /** @test */
+    public function owners_should_not_see_the_report_banner_if_event_is_not_over_yet()
+    {
+
+        $this->withExceptionHandling();
+
+
+        $future_event = create('App\Event', ["end_date"=>Carbon::now()->addMonth(1)]);
+        $this->signIn($future_event->owner);
+
+        $this->get('/view/' . $future_event->id . '/random')
             ->assertDontSee("report-event");
 
 

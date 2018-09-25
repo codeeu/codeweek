@@ -4,6 +4,7 @@ namespace App\Policies;
 
 use App\Event;
 use App\User;
+use Carbon\Carbon;
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Log;
 
@@ -29,6 +30,16 @@ class EventPolicy
     public function report(User $user, Event $event)
     {
 
+
+        if ($event->status != "APPROVED") {
+            return false;
+        }
+
+        if (!Carbon::parse($event->end_date)->isPast()) {
+
+            return false;
+        };
+
         if ($user->email === $event->owner->email) {
             return true;
         }
@@ -42,8 +53,7 @@ class EventPolicy
         Log::info("Trying to view event {$event->id} from {$event->owner->email} as user {$user->id} with email {$user->email}");
 
 
-
-        if($event->status == "APPROVED"){
+        if ($event->status == "APPROVED") {
             return true;
         }
 
@@ -57,7 +67,6 @@ class EventPolicy
         if ($user->hasRole('ambassador')) {
             return $event->country_iso === $user->country_iso;
         }
-
 
 
         return false;
