@@ -20,6 +20,7 @@ class ReportController extends Controller
 
     public function index(Event $event)
     {
+        $this->authorize('report', $event);
         return view('report.index', compact('event'));
     }
 
