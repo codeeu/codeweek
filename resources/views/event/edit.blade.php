@@ -274,7 +274,7 @@
                                 <div>
                                     <span class="help-block">@lang('edit.help')</span>
                                     {{--<span class="btn btn-sm btn-file">--}}
-                                    <picture-form image="{{$event->picture_path()}}"></picture-form>
+                                    <picture-form picture="{{$event->picture_path()}}" image="{{$event->picture}}"></picture-form>
 
                                     {{--<span class="fileinput-new">Select image</span>--}}
                                     {{--<span class="fileinput-exists">Change</span>--}}
@@ -305,7 +305,7 @@
                             </label>
                             <div class="col-sm-9">
                                 <input class="form-control" id="id_user_email" name="user_email" type="email"
-                                       value="{{old('user_email')?old('user_email'):$event->user_email}}">
+                                       value="{{old('user_email')?old('user_email'):$event->user_email}}" required>
                                 @component('components.validation-errors', ['field'=>'user_email'])
                                 @endcomponent
                             </div>
