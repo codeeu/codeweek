@@ -305,7 +305,7 @@
                             </label>
                             <div class="col-sm-9">
                                 <input class="form-control" id="id_user_email" name="user_email" type="email"
-                                       value="{{old('user_email')?old('user_email'):$event->user_email}}">
+                                       value="{{old('user_email')?old('user_email'):$event->user_email}}" required>
                                 @component('components.validation-errors', ['field'=>'user_email'])
                                 @endcomponent
                             </div>
