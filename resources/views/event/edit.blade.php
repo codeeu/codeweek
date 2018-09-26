@@ -274,7 +274,7 @@
                                 <div>
                                     <span class="help-block">@lang('edit.help')</span>
                                     {{--<span class="btn btn-sm btn-file">--}}
-                                    <picture-form image="{{$event->picture_path()}}"></picture-form>
+                                    <picture-form picture="{{$event->picture_path()}}" image="{{$event->picture}}"></picture-form>
 
                                     {{--<span class="fileinput-new">Select image</span>--}}
                                     {{--<span class="fileinput-exists">Change</span>--}}
