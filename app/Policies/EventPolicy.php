@@ -15,6 +15,7 @@ class EventPolicy
     public function approve(User $user, Event $event)
     {
 
+        Log::info("can approve ?" . $user->hasRole('super admin'));
 
         if ($user->hasRole('super admin')) {
             return true;
@@ -50,6 +51,7 @@ class EventPolicy
     public function view(User $user, Event $event)
     {
 
+
         Log::info("Trying to view event {$event->id} from {$event->owner->email} as user {$user->id} with email {$user->email}");
 
 
@@ -62,6 +64,7 @@ class EventPolicy
         }
 
         if ($user->hasRole('super admin')) {
+
             return true;
         }
         if ($user->hasRole('ambassador')) {
