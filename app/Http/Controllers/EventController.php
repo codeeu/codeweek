@@ -181,16 +181,7 @@ class EventController extends Controller
 
         $this->authorize('approve', $event);
 
-        $data = ['status' => "APPROVED", 'approved_by' => auth()->user()->id];
-
-        if (empty($event->codeweek_for_all_participation_code)){
-            $codeweek_4_all_generated_code = 'cw' . Carbon::now()->format('y') . '-' . str_random(5);
-            $data['codeweek_for_all_participation_code'] = $codeweek_4_all_generated_code;
-        }
-
-        $event->update($data);
-
-        Mail::to($event->owner->email)->queue(new \App\Mail\EventApproved($event, $event->owner));
+        $event->approve();
 
     }
 

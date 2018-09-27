@@ -35,7 +35,7 @@ class UserTest extends TestCase
         $user = create('App\User', ["avatar_path" => "avatars/foo/bar.png"]);
 
 
-        $this->assertEquals("https://codeweek-s3.s3.amazonaws.com/avatars/foo/resized/80/bar.png", $user->avatar);
+        $this->assertEquals(env("AWS_URL") . "avatars/foo/resized/80/bar.png", $user->avatar);
 
 
     }
