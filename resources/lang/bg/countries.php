@@ -59,7 +59,7 @@ return [
     'Central African Republic'=>'Централноафриканска република',
     'Republic of the Congo'=>'Република Конго',
     'Switzerland'=>'Швейцария',
-    'Ivory Coast'=>'Кот д'Ивоар',
+    'Ivory Coast'=>'Кот д\'Ивоар',
     'Cook Islands'=>'Острови Кук',
     'Chile'=>'Чили',
     'Cameroon'=>'Камерун',
