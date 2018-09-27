@@ -304,7 +304,7 @@
                                 * @lang('event.contact.label')
                             </label>
                             <div class="col-sm-9">
-                                <input class="form-control" id="id_user_email" name="user_email" type="email"
+                                <input class="form-control" id="id_user_email" name="user_email" type="email" required
                                        placeholder="@lang('event.contact.placeholder')">
                                 @component('components.validation-errors', ['field'=>'user_email'])
                                 @endcomponent
