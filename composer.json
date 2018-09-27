@@ -19,7 +19,7 @@
         "spatie/laravel-activitylog": "^2.5",
         "spatie/laravel-permission": "^2.9",
         "torann/geoip": "^1.0",
-        "laravel/nova": "*",
+        "laravel/nova": "*"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.4",
