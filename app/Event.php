@@ -10,11 +10,12 @@ use DB;
 use Illuminate\Database\Eloquent\Model;
 
 use Illuminate\Support\Facades\Mail;
+use Log;
 use Spatie\Activitylog\Traits\LogsActivity;
-
+use Laravel\Nova\Actions\Actionable;
 class Event extends Model
 {
-    use LogsActivity;
+    use LogsActivity, Actionable;
 
 
 
@@ -155,6 +156,24 @@ class Event extends Model
         foreach ($ambassadors as $ambassador) {
             Mail::to($ambassador->email)->queue(new \App\Mail\EventCreated($this, $ambassador));
         }
+    }
+
+    public function approve(){
+
+
+
+
+         $data = ['status' => "APPROVED", 'approved_by' => auth()->user()->id];
+
+        if (empty($this->codeweek_for_all_participation_code)){
+            $codeweek_4_all_generated_code = 'cw' . Carbon::now()->format('y') . '-' . str_random(5);
+            $data['codeweek_for_all_participation_code'] = $codeweek_4_all_generated_code;
+        }
+
+        $this->update($data);
+
+        Mail::to($this->owner->email)->queue(new \App\Mail\EventApproved($this, $this->owner));
+        return true;
     }
 
 }
