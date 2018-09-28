@@ -9,12 +9,12 @@ addons:
   chrome: stable
 
 install:
+- cp env.travis .env
 - travis_retry composer install --no-interaction --prefer-dist --no-suggest
 - travis_retry npm install
 - npm run prod
 
 before_script:
-- cp env.travis .env
 - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 - php artisan serve &
 
