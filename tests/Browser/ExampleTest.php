@@ -25,7 +25,7 @@ class ExampleTest extends DuskTestCase
 
 
             //app()->setLocale("fr");
-            $browser->visit('/ambassadors')
+            $browser->visit('/ambassadors?country_iso=FR')
 
                 ->visit('/setlocale?locale=al')
                 ->assertSee('Ambasadorët')
