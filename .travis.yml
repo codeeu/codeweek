@@ -1,30 +1,16 @@
 sudo: required
 dist: trusty
 
-language: php
-
 addons:
   chrome: stable
 
-php:
-  - 7.2
+install:
+- cp .env.travis .env
+- travis_retry composer install --no-interaction --prefer-dist --no-suggest
 
 before_script:
-  - cp .env.travis .env
-  - composer install --no-interaction
-  - php artisan key:generate
-  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
-  - php artisan serve &
+- google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+- php artisan serve &
 
 script:
-  - php artisan dusk
-
-cache:
-  directories:
-    - vendor
-
-install:
-  - cp .env.travis .env
-  - travis_retry composer install --no-interaction --prefer-dist --no-suggest
-  - travis_retry npm install
-  - npm run prod
+- php artisan dusk
