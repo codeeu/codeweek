@@ -1,28 +1,22 @@
 sudo: required
+language: php
 dist: trusty
 
-language: php
 php:
 - 7.2
-install:
-- nvm install v8.1.2
-before_script:
-- phpenv config-rm xdebug.ini
-- cp env.travis .env
-- composer install --no-progress --no-suggest --no-interaction --optimize-autoloader
-- php artisan key:generate
-- npm install
-- npm rebuild node-sass
-- npm run production
-- touch database/database.sqlite
-- php artisan migrate
 
-- export DISPLAY=:99.0
-- sh -e /etc/init.d/xvfb start
-- ./vendor/laravel/dusk/bin/chromedriver-linux &
-- php artisan serve > /dev/null 2>&1 &
+addons:
+  chrome: stable
+
+install:
+- travis_retry composer install --no-interaction --prefer-dist --no-suggest
+- travis_retry npm install
+- npm run prod
+
+before_script:
+- cp env.travis .env
+- google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+- php artisan serve &
 
 script:
-- vendor/bin/phpunit
-
 - php artisan dusk
