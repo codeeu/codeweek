@@ -20,7 +20,7 @@ install:
 - npm run prod
 
 before_script:
-- google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+- google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://127.0.0.1 &
 - php artisan serve &
 
 script:
