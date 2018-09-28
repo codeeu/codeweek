@@ -29,6 +29,19 @@ class ExampleTest extends DuskTestCase
      *
      * @return void
      */
+    public function testBasicExample2()
+    {
+        $this->browse(function (Browser $browser) {
+            $browser->visit('/ambassadors')
+                ->assertSee('Ambassadors');
+        });
+    }
+
+    /**
+     * A basic browser test example.
+     *
+     * @return void
+     */
 //    public function testLanguages()
 //    {
 //
