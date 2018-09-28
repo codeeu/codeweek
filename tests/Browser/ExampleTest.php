@@ -10,6 +10,8 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class ExampleTest extends DuskTestCase
 {
+    use DatabaseMigrations;
+
     /**
      * A basic browser test example.
      *
@@ -17,14 +19,10 @@ class ExampleTest extends DuskTestCase
      */
     public function testBasicExample()
     {
-        session(['locale' => 'fr']);
-        //app()->setLocale('fr');
+
+
         $this->browse(function (Browser $browser) {
-            //$browser->visit('/ambassadors')
-            //  ->assertSee('local Facebook page');
 
-
-            //app()->setLocale("fr");
             $browser->visit('/ambassadors?country_iso=FR')
 
                 ->visit('/setlocale?locale=al')
