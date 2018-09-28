@@ -315,8 +315,8 @@
                 </div>
                 <div class="col-md-6 first">
                     <div class="col-sm-9 col-sm-offset-3">
-                        <div class="btn btn-primary btn-directional fa-plus-circle btn-lg submit-button-wrapper">
-                            <input type="submit" value=@lang('edit.edit')>
+                        <div class="btn btn-primary btn-directional fa-plus-circle btn-lg submit-button-wrapper" id="add-div">
+                            <input type="submit" id="add-button" onclick="javascript:return addEvent('{{__('school.required.location')}}');" value="@lang('event.button')">
                         </div>
                     </div>
                 </div>
