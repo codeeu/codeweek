@@ -1,32 +1,13 @@
-sudo: required
 language: php
-dist: trusty
-
-services:
-- mysql
 
 php:
-- 7.2
-
-addons:
-  chrome: stable
-before_install:
-- mysql -e 'CREATE DATABASE codeweek;'
-
-install:
-- cp .env.travis .env
-- travis_retry composer install --no-interaction --prefer-dist --no-suggest
-- travis_retry npm install
-- npm run prod
-- php artisan migrate:fresh --seed
+  - 7.2
 
 before_script:
-- google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://127.0.0.1 &
-- php artisan serve &
+  - cp .env.travis .env
+  - composer install --no-interaction
+  - php artisan key:generate
 
-script:
-- php artisan dusk
-
-notifications:
-  email:
-    - alainvd@gmail.com
+cache:
+  directories:
+    - vendor
