@@ -2,11 +2,16 @@ sudo: required
 language: php
 dist: trusty
 
+services:
+- mysql
+
 php:
 - 7.2
 
 addons:
   chrome: stable
+before_install:
+- mysql -e 'CREATE DATABASE codeweek;'
 
 install:
 - cp .env.travis .env
@@ -20,3 +25,7 @@ before_script:
 
 script:
 - php artisan dusk
+
+notifications:
+  email:
+    - alainvd@gmail.com
