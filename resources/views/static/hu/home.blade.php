@@ -167,46 +167,7 @@
 
                     <div class="clear"></div>
 
-                    <ul class="clients-grid grid-4 nobottommargin clearfix">
-                        <li><a href="https://www.apple.com/uk/everyone-can-code/"><img src="img/partners/apple.png"
-                                                                                       alt="Apple"></a></li>
-                        <li><a href="http://www.techsoupeurope.org/"><img src="img/partners/techsoup.png"
-                                                                          alt="Tech Soup"></a></li>
-                        <li><a href="http://programamos.es"><img src="img/partners/colabora_programamos.png"
-                                                                 alt="Programamos"></a></li>
-                        <li><a href="http://drscratch.programamos.es"><img src="img/partners/colabora_drscratch.png"
-                                                                           alt="Dr.Scratch"></a></li>
-                        <li><a href="http://www.publiclibraries2020.eu"><img
-                                        src="img/partners/colabora_PublicLibraries2020.png" alt="Public Libraries 2020"></a></li>
-                        <li><a href="http://ec.europa.eu/digital-agenda/en/grand-coalition-digital-jobs-0"><img
-                                        src="img/partners/digital-skills.png"
-                                        alt="Grand Coalition for Digital Jobs"></a></li>
-                        <li><a href="http://coderdojo.org"><img src="img/partners/colabora_coderdojo.png"
-                                                                alt="CoderDojo"></a></li>
-                        <li><a href="http://www.africacodeweek.org/"><img src="img/partners/colabora_africacodeweek.png"
-                                                                          alt="Afrikai programoz&aacute;si h&eacute;t"></a></li>
-                        <li><a href="http://www.allyouneediscode.eu/"><img src="img/partners/colabora_aynic.png"
-                                                                           alt="All you need is code"></a></li>
-                        <li><a href="http://www.eun.org/"><img src="img/partners/colabora_eun.png"
-                                                               alt="European Schoolnet"></a></li>
-                        <li><a href="http://scratch.mit.edu/codeweekeu"><img src="img/partners/colabora_scratch.png"
-                                                                             alt="Scratch"></a></li>
-                        <li><a href="http://www.ictinpractice.com/"><img src="img/partners/colabora_ict-in-practice.png"
-                                                                         alt="Az IKT a gyakorlatban"></a></li>
-                        <li><a href="http://www.neunet.it/"><img src="img/partners/colabora_neunet.png"
-                                                                 alt="NeuNet"></a></li>
-                        <li><a href="https://edu.google.com/resources/computerscience"><img
-                                        src="img/partners/google.png" alt="Google"></a></li>
-                        <li><a href="https://education.lego.com/en-gb/secondary/explore/c/eu-code-week"><img
-                                        src="img/partners/lego.png" alt="LEGOeducation"></a></li>
-                        <li><a href="http://www.sap.com/"><img src="img/partners/sap-logo.png" alt="SAP"></a></li>
-                        <li><a href="http://www.stifter-helfen.de/"><img src="img/partners/stifter-helfen.png"
-                                                                         alt="Stifter Helfen"></a></li>
-                        <li><a href="http://eutechalliance.eu/"><img src="img/partners/eu-tech-alliance.png"
-                                                                     alt="EU Tech Alliance"></a></li>
-
-
-                    </ul>
+                    @include('static.sponsors')
 
                 </div>
             </section>
