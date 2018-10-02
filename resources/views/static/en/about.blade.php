@@ -39,7 +39,7 @@
                     <h2>Supported by the European Commission</h2>
 
                     <p>
-                        EU Code Week was launched in 2013 by the Young Advisors for the Digital Agenda Europe. The European Commission supports EU Code Week, as part of its strategy for a <a href="http://ec.europa.eu/priorities/digital-single-market/">Digital Single Market</a>, In the <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Digital Education Action Plan</a> the Commission especially encourages schools to join the initiative. The goal is to reach 50% of all schools in Europe by 2020.
+                        EU Code Week was launched in 2013 by the Young Advisors for the Digital Agenda Europe. The European Commission supports EU Code Week as part of its strategy for a <a href="http://ec.europa.eu/priorities/digital-single-market/">Digital Single Market</a>. In the <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Digital Education Action Plan</a> the Commission especially encourages schools to join the initiative. The goal is to reach 50% of all schools in Europe by 2020.
                     </p>
 
                     <h2>Schools</h2>
@@ -88,7 +88,7 @@
                     </p>
 
                     <p>
-                        If your country is not involved yet, you can organise activities s and put it on the <a href="/events">map</a> or <a href="mailto:info@codeweek.eu">volunteer</a> as a Code Week ambassador.
+                        If your country is not involved yet, you can organise activities and put them on the <a href="/events">map</a> or <a href="mailto:info@codeweek.eu">volunteer</a> as a Code Week ambassador.
                     </p>
 
                     <div class="container clearfix">
@@ -102,7 +102,7 @@
                     <h2>Join EU Code Week</h2>
 
                     <p>
-                        Join EU Code Week by <a href="/guide">organising a coding activity</a> in your town, joining the <a href="/codeweek4all">Code Week 4 All Challenge</a> and connecting activities s across communities and borders, or helping us spread the vision of Code Week as an <a href="/ambassadors">EU Code Week Ambassador</a> for your country!
+                        Join EU Code Week by <a href="/guide">organising a coding activity</a> in your town, joining the <a href="/codeweek4all">Code Week 4 All Challenge</a> and connecting activities across communities and borders, or helping us spread the vision of Code Week as an <a href="/ambassadors">EU Code Week Ambassador</a> for your country!
                     </p>
 
 
