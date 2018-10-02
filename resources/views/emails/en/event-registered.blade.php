@@ -139,6 +139,15 @@
 
                 <p>Want to take a step further and take on the Code Week 4 All challenge?</p>
 
+                <p>If you are interested in linking your activity with those organised by friends, colleagues or other contacts, please find your unique Code Week 4 All code below:</p>
+
+                <p>
+                    <strong>{{$event->codeweek_for_all_participation_code}}</strong>
+                </p>
+
+
+
+
                 <ul>
                     <li>
                         <p>

@@ -28,10 +28,20 @@ class EventsQuery
         $request['latitude'] = explode(",", $request['geoposition'])[0];
         $request['longitude'] = explode(",", $request['geoposition'])[1];
 
+        if (empty($request['codeweek_for_all_participation_code'])){
+            $codeweek_4_all_generated_code = 'cw' . Carbon::now()->format('y') . '-' . str_random(5);
+            $request['codeweek_for_all_participation_code'] = $codeweek_4_all_generated_code;
+        }
+
+
+
+
+
+
         $event = Event::create($request->toArray());
 
 
-        if (!empty($request['tags'])){
+        if (!empty($request['tags'])) {
             foreach (explode(",", $request['tags']) as $item) {
                 $tag = Tag::create([
                     "name" => trim($item),
@@ -60,7 +70,6 @@ class EventsQuery
 
     public static function update(Request $request, Event $event)
     {
-
 
 
         $event->update($request->toArray());
