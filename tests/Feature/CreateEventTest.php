@@ -46,6 +46,30 @@ class CreateEventTest extends TestCase
         $this->get($event->path())->assertSee($event->title);
         $this->get($event->path())->assertSee("tag:foo");
         $this->get($event->path())->assertSee("tag:bar");
+        $this->get($event->path())->assertSee($event->codeweek_for_all_participation_code);
+    }
+
+    /** @test */
+    public function an_authenticated_user_can_create_events_with_existing_codeweek4all_code()
+    {
+        $this->signIn();
+
+        $event = make('App\Event');
+        create('App\Audience',[] ,3);
+        create('App\Theme', [],3);
+
+        $event->theme = [1];
+
+        $event->audience = [2, 3];
+        $event->codeweek_for_all_participation_code="my_custom_code";
+
+        $this->post('/events', $event->toArray());
+
+        $event = Event::where('title', $event->title)->first();
+
+        $this->get($event->path())->assertSee($event->title);
+
+        $this->get($event->path())->assertSee("my_custom_code");
     }
 
     /** @test */
