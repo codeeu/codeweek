@@ -28,7 +28,7 @@ class AmbassadorController extends Controller
 
 
 
-        $ambassadors = User::role('ambassador')->filter($filters)->paginate(10);
+        $ambassadors = User::role('ambassador')->filter($filters)->whereNotNull("avatar_path")->whereNotNull("bio")->paginate(10);
 
        // dd($ambassadors);
 
