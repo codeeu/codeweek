@@ -1,8 +1,6 @@
 <ul class="clients-grid grid-4 nobottommargin clearfix">
     <li><a href="https://www.apple.com/uk/everyone-can-code/"><img src="img/partners/apple.png"
                                                                    alt="Apple"></a></li>
-    <li><a href="http://drscratch.programamos.es"><img src="img/partners/colabora_drscratch.png"
-                                                       alt="Dr. Scratch"></a></li>
     <li><a href="http://www.publiclibraries2020.eu"><img
                     src="img/partners/colabora_PublicLibraries2020.png" alt="Public Libraries 2020"></a></li>
     <li><a href="http://ec.europa.eu/digital-agenda/en/grand-coalition-digital-jobs-0"><img
@@ -30,8 +28,7 @@
     <li><a href="https://education.ti.com/en/select-country/europe"><img
                     src="img/partners/texas-instruments.png" alt="Texas Instruments"></a></li>
 
-    <!--<li><a href="http://mooc.uniurb.it/codeweekmooc/"><img
-                    src="img/partners/urbinocarlo.png" alt="Google"></a></li>-->
+
 
 
 </ul>
