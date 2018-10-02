@@ -60,7 +60,7 @@
                         <div class="itens">
                             <ul class="event-list">
                                 @foreach($event->audiences as $audience)
-                                    <li><span class="label label-info">{{ $audience->name }}</span></li>
+                                    <li><span class="label label-info">@lang('event.audience.'.$audience->name)</span></li>
                                 @endforeach
                             </ul>
                         </div>
@@ -71,7 +71,7 @@
                         <div class="itens">
                             <ul class="event-list">
                                 @foreach($event->themes as $theme)
-                                    <li><span class="label label-info">{{ $theme->name }}</span></li>
+                                    <li><span class="label label-info">@lang('event.theme.'.$theme->name)</span></li>
                                 @endforeach
                             </ul>
                         </div>
