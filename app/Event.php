@@ -164,14 +164,9 @@ class Event extends Model
     public function approve(){
 
 
-
-
          $data = ['status' => "APPROVED", 'approved_by' => auth()->user()->id];
 
-        if (empty($this->codeweek_for_all_participation_code)){
-            $codeweek_4_all_generated_code = 'cw' . Carbon::now()->format('y') . '-' . str_random(5);
-            $data['codeweek_for_all_participation_code'] = $codeweek_4_all_generated_code;
-        }
+        
 
         $this->update($data);
 
