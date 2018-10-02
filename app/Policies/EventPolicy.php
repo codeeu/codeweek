@@ -31,6 +31,9 @@ class EventPolicy
     public function report(User $user, Event $event)
     {
 
+        if ($user->hasRole('super admin')) {
+            return true;
+        }
 
         if ($event->status != "APPROVED") {
             return false;
