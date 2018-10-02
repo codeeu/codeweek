@@ -148,14 +148,17 @@ class Event extends Model
 
     public function notifyAmbassadors(){
 
-
         //Get the ambassador list based on the event country
         $ambassadors = User::role('ambassador')->where('country_iso', $this->country_iso)->get();
-
-        //send emails
-        foreach ($ambassadors as $ambassador) {
-            Mail::to($ambassador->email)->queue(new \App\Mail\EventCreated($this, $ambassador));
+        if ($ambassadors->isEmpty()){
+            Mail::to('info@codeweek.eu')->queue(new \App\Mail\EventCreatedNoAmbassador($this));
+        }else {
+            //send emails
+            foreach ($ambassadors as $ambassador) {
+                Mail::to($ambassador->email)->queue(new \App\Mail\EventCreated($this, $ambassador));
+            }
         }
+
     }
 
     public function approve(){
