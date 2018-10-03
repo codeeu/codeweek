@@ -35,11 +35,11 @@
                                 </h2>
 
                                 @if($country->facebook)
-                                    <div class="justify-center text-center mb-8">@lang('ambassador.visit_the') <a href="{{$country->facebook}}">@lang('ambassador.local_facebook_page')</a></div>
+                                    <div class="justify-center text-center">@lang('ambassador.visit_the') <a href="{{$country->facebook}}">@lang('ambassador.local_facebook_page')</a></div>
                                 @endif
 
                                 @if($country->website)
-                                    <div><a href="{{$country->website}}">@lang('ambassador.local_website')</a></div>
+                                    <div class="justify-center text-center mb-8">@lang('ambassador.visit_the') <a href="{{$country->website}}">@lang('ambassador.local_website')</a></div>
                                 @endif
                             @endif
                         @endforeach
