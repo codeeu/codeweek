@@ -276,12 +276,7 @@
 @endsection
 
 @push('scripts')
-    <script>
-        window.$(function ($) {
-            var newDate = new Date(2018, 9, 6);
-            $('#countdown-ex1').countdown({until: newDate});
-        });
-    </script>
+    @include('static.countdown')
 @endpush
 
 
