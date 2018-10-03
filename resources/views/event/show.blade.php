@@ -196,6 +196,8 @@
 
         map = new google.maps.Map(document.getElementById('map'), {
             zoom: 6,
+            streetViewControl: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
             center: {
                 lat: parseFloat(coordinates[0]),
                 lng: parseFloat(coordinates[1])
