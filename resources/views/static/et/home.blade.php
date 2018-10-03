@@ -183,12 +183,9 @@
 
         </div>
 
-    </section><!-- #content end --> @endsection @push('scripts')<script>
-        window.$(function ($) {
-            var newDate = new Date(2018, 9, 6);
-            $('#countdown-ex1').countdown({until: newDate});
-        });
-    </script>@endpush @section('extra-css')<style>
+    </section><!-- #content end --> @endsection @push('scripts')
+    @include('static.countdown')
+@endpush @section('extra-css')<style>
 
         .section-intro, .section-banner {
 
