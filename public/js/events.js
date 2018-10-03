@@ -61,6 +61,8 @@ var Codeweek = window.Codeweek || {};
 
 	function createMap(latLng, zoomVal) {
 		var mapOptions = {
+            streetViewControl: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
 			scrollwheel: false,
 			zoom: zoomVal,
 			center: latLng
