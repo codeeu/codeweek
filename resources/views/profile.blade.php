@@ -5,12 +5,6 @@
         <div class="container">
             <avatar-form :user="{{ $profileUser }}"></avatar-form>
 
-            @role('ambassador')
-            @if(count(auth()->user()->country) ==1)
-                You are an ambassador for {{auth()->user()->country->name}}, thank you !<br/>
-            @endif
-            @endrole
-
             <form method="POST" action="{{ route('user.update') }}">
 
 
