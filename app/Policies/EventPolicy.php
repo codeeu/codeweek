@@ -31,18 +31,19 @@ class EventPolicy
     public function report(User $user, Event $event)
     {
 
-        if ($user->hasRole('super admin')) {
-            return true;
-        }
+
 
         if ($event->status != "APPROVED") {
             return false;
         }
 
-        if (!Carbon::parse($event->end_date)->isPast()) {
-
+        if (!Carbon::parse($event->start_date)->isPast()) {
             return false;
         };
+
+        if ($user->hasRole('super admin')) {
+            return true;
+        }
 
         if ($user->email === $event->owner->email) {
             return true;
