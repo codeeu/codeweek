@@ -20,7 +20,7 @@ class ReportEventTest extends TestCase
         parent::setUp();
 
         $this->seed('RolesAndPermissionsSeeder');
-        $this->event = create('App\Event', ["status"=>"APPROVED","end_date"=>Carbon::now()->subMonth(1)]);
+        $this->event = create('App\Event', ["status"=>"APPROVED","start_date"=>Carbon::now()->subMonth(1)]);
 
 
     }
@@ -60,7 +60,7 @@ class ReportEventTest extends TestCase
         $this->withExceptionHandling();
 
 
-        $future_event = create('App\Event', ["end_date"=>Carbon::now()->addMonth(1)]);
+        $future_event = create('App\Event', ["start_date"=>Carbon::now()->addMonth(1)]);
         $this->signIn($future_event->owner);
 
         $this->get('/view/' . $future_event->id . '/random')
