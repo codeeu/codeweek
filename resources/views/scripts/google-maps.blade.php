@@ -12,6 +12,7 @@
             zoom: 4, // This number can be set to define the initial zoom level of the map
             center: latlng,
             scrollwheel: true,
+            streetViewControl: false,
             styles: [
                 {
                     "featureType": "administrative",
