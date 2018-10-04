@@ -42,6 +42,7 @@ class RemindAmbassadors extends Command
      */
     public function handle()
     {
+        Log::info("Sending email to remind ambassadors");
         $events = EventHelper::getPendindEvents();
         foreach ($events as $event) {
             $ambassadors = AmbassadorHelper::getByCountry($event->country_iso);
