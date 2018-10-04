@@ -25,7 +25,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
          $schedule->command('remind:ambassadors')
-                  ->everyTenMinutes();
+                  ->dailyAt('9:00');
     }
 
     /**
