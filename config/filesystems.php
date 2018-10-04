@@ -47,6 +47,10 @@ return [
             'driver' => 'local',
             'root' => resource_path('latex')
         ],
+        'excel' => [
+            'driver' => 'local',
+            'root' => resource_path('excel')
+        ],
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),
