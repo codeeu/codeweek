@@ -46,7 +46,7 @@ class RemindAmbassadors extends Command
         foreach ($events as $event) {
             $ambassadors = AmbassadorHelper::getByCountry($event->country_iso);
             foreach ($ambassadors as $ambassador) {
-                Mail::to('info@codeweek.eu')->queue(new \App\Mail\RemindAmbassador($ambassador));
+                Mail::to($ambassadors->email)->queue(new \App\Mail\RemindAmbassador($ambassador));
             }
         }
     }

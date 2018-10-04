@@ -5,7 +5,7 @@ There are pending activities that still need your attention.<br/>
 
 Can you please review this activities in order to approve or reject<br/>
 
-@component('mail::button', ['url' => env('APP_URL') . "pending/"])
+@component('mail::button', ['url' => env('APP_URL') . "/pending/"])
     Review activities
 @endcomponent
 
