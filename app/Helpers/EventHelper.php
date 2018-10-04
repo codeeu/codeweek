@@ -4,6 +4,7 @@ namespace App\Helpers;
 
 use App\Event;
 use Carbon\Carbon;
+use App\User;
 
 class EventHelper
 {
@@ -30,6 +31,33 @@ class EventHelper
             ->orderBy('distance')
             ->take(4)
             ->get();
+
+        return $events;
+
+    }
+
+    public static function getPendindEvents()
+    {
+
+        $country_isos_ambassadors = User::role('ambassador')
+            ->distinct()
+            ->select('country_iso')
+            ->where("country_iso","<>", "")
+            ->get();
+
+        $countries = [];
+
+        foreach ($country_isos_ambassadors as $country) {
+            array_push($countries, $country->country_iso);
+        }
+
+        $events = Event::where('status', '=', 'PENDING')
+            ->distinct()
+            ->select('country_iso')
+            ->where('start_date', '>', Carbon::createFromDate(2018, 1, 1))
+            ->whereIn('country_iso', $countries)
+            ->get();
+
 
         return $events;
 

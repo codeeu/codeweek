@@ -101,6 +101,7 @@ Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('mail/{event}', 'EmailController@create')->middleware('auth');
 
     Route::get('/mail/template/ambassadors/new', 'MailTemplateController@ambassador');
+    Route::get('/mail/template/ambassadors/remind_ambassador', 'MailTemplateController@remind_ambassador');
     Route::get('/mail/template/creators/registered', 'MailTemplateController@registered');
     Route::get('/mail/template/creators/approved', 'MailTemplateController@approved');
     Route::get('/mail/template/creators/rejected', 'MailTemplateController@rejected');
