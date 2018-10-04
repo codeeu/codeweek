@@ -27,4 +27,15 @@ class AmbassadorHelper
 
     }
 
+    public static function getByCountry($country_iso)
+    {
+
+        $ambassadors = User::role('ambassador')
+            ->where("country_iso","=", $country_iso)
+            ->get();
+
+        return $ambassadors;
+
+    }
+
 }

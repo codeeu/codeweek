@@ -15,6 +15,13 @@ class MailTemplateController extends Controller
 
     }
 
+    public function remind_ambassador()
+    {
+        $ambassadors = \App\User::role('ambassador')->where("country_iso","<>", "")->get();
+        return new \App\Mail\RemindAmbassador($ambassadors[0]);
+
+    }
+
     public function registered()
     {
         $event = \App\Event::first();
