@@ -32,7 +32,6 @@ class EventPolicy
     {
 
 
-
         if ($event->status != "APPROVED") {
             return false;
         }
@@ -83,18 +82,23 @@ class EventPolicy
     {
 
         Log::info("Trying to edit event {$event->id} from {$event->owner->email} as user {$user->id} with email {$user->email}");
+        Log::info("Is super admin? {$user->hasRole('super admin')}");
+        Log::info("Is ambassador ? {$user->hasRole('ambassador')}");
 
 
         if ($user->hasRole('super admin')) {
             return true;
         }
         if ($user->hasRole('ambassador')) {
-            return $event->country_iso === $user->country_iso;
+            if ($event->country_iso === $user->country_iso) return true;
+            Log::info("Country is not matching");
         }
 
         if ($user->email === $event->owner->email) {
+            Log::info("Email is matching");
             return true;
         }
+        Log::info("Email is not matching -> EDITION REFUSED");
 
         return false;
     }
