@@ -29,6 +29,7 @@ class EventsImport extends DefaultValueBinder implements WithCustomValueBinder, 
     public function model(array $row)
     {
 
+        //dd($row);
         //dd(implode(",",$arr));
         //dd(Carbon::parse($this->parseDate($row["start_date"]))->toDateTimeString());
 //dd(Carbon::createFromFormat("d/m/Y",$row["start_date"])->toDateTimeString());
