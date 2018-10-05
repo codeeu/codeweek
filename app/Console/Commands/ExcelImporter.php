@@ -41,7 +41,7 @@ class ExcelImporter extends Command
     public function handle()
     {
         Log::info("Read excel file");
-        Excel::import(new EventsImport, 'dutch.xlsx','excel');
+        Excel::import(new EventsImport, 'apple.xlsx','excel');
         // Read the xls file
         // For each line:
         //   Create en event
