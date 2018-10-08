@@ -1,0 +1,5 @@
+<h2>Nepamir&scaron;kite įtraukti savo renginio į Programavimo savaitės žemėlapį!</h2>
+
+<p>Galite organizuoti pamoką savo klasėje, atvirą dieną ar kitą renginį savo mokykloje. Tiesiog pasirinkite datą ir pažymėkite savo renginį <a href="/events">Programavimo savaitės žemėlapyje</a>. Kiekvienas renginio organizatorius gaus dalyvio sertifikatą už pastangas.</p>
+
+<p>Jei norite užmegzti ry&scaron;į su tarptautine entuziastingų mokytojų grupe, prisijunkite prie <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ES programavimo savaitės &bdquo;Facebook&ldquo; grupės mokytojams</a>! Jei norite žengti dar toliau ir bendradarbiauti su kitomis mokyklomis savo &scaron;alyje ar už jos ribų, prisijunkite prie <a href="codeweek4all">&bdquo;CodeWeek4All&ldquo; i&scaron;&scaron;ūkio</a>.</p>

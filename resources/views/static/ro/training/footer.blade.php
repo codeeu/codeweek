@@ -1,0 +1,5 @@
+<h2>Nu uitați să vă adăugați activitatea pe harta Săptăm&acirc;nii programării!</h2>
+
+<p>Puteți organiza cu ușurință o lecție &icirc;n clasa dumneavoastră, o zi a porților deschise sau un eveniment la școala dumneavoastră. Trebuie doar să găsiți o dată și să vă &icirc;nregistrați activitatea pe <a href="/events">harta Săptăm&acirc;nii programării</a>. Fiecare organizator de activități va primi un certificat de participare pentru efortul depus.</p>
+
+<p>Dacă doriți să intrați &icirc;n legătură cu un grup internațional de profesori entuziaști, alăturați-vă <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupului de Facebook pentru profesori Săptăm&acirc;na UE a programării</a>! Pentru a face un pas &icirc;n plus și a colabora cu alte școli din țara dumneavoastră sau din străinătate, alăturați-vă <a href="codeweek4all">provocării Săptăm&acirc;na programării pentru toți</a>.</p>
