@@ -171,7 +171,12 @@ class Event extends Model
 
         $this->update($data);
 
-        Mail::to($this->user_email)->queue(new \App\Mail\EventApproved($this, $this->owner));
+
+        if (!empty($this->user_email)) {
+            Mail::to($this->user_email)->queue(new \App\Mail\EventApproved($this, $this->owner));
+        } else if (!is_null($this->owner) && (!is_null($this->owner->email))) {
+            Mail::to($this->owner->email)->queue(new \App\Mail\EventApproved($this, $this->owner));
+        }
 
 
         return true;
