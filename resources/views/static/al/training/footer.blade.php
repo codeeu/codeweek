@@ -1,0 +1,5 @@
+<h2>Mos harroni t&euml; shtoni aktivitetin tuaj n&euml; hart&euml;n e Code Week!</h2>
+
+<p>Ju mund t&euml; organizoni me leht&euml;si nj&euml; m&euml;sim n&euml; klas&euml;n tuaj, nj&euml; dit&euml; t&euml; hapur ose nj&euml; eveniment n&euml; shkoll&euml;n tuaj. Thjesht gjeni nj&euml; dat&euml; dhe regjistroni aktivitetin tuaj n&euml; <a href="/events">hart&euml;n e Code Week</a>. Secili organizator aktiviteti do t&euml; marr&euml; nj&euml; certifikat&euml; pjes&euml;marrjeje p&euml;r p&euml;rpjekjet e veta.</p>
+
+<p>N&euml;se doni t&euml; lidheni me nj&euml; grup m&euml;suesish entuziast&euml;, b&euml;huni pjes&euml; e <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Grupit t&euml; EU Code Week n&euml; Facebook p&euml;r m&euml;suesit</a>! P&euml;r t&euml; marr&euml; nj&euml; hap m&euml; tej dhe p&euml;r t&euml; bashk&euml;punuar me shkollat e tjera n&euml; vendin tuaj ose p&euml;rtej kufijve, b&euml;huni pjes&euml; e <a href="codeweek4all">Sfid&euml;s Code Week 4 All</a>.</p>

@@ -1,0 +1,5 @@
+<h2>Nemojte zaboraviti dodati svoju aktivnost na kartu Tjedna programiranja!</h2>
+
+<p>Jednostavno možete organizirati nastavni sat u svojem razredu, dan otvorenih vrata ili događanje u svojoj &scaron;koli. Samo pronađite datum i registrirajte svoju aktivnost na <a href="/events">karti Tjedna programiranja</a>. Svaki organizator aktivnosti za svoj će trud primiti potvrdu o sudjelovanju.</p>
+
+<p>Ako biste se željeli povezati s međunarodnom skupinom entuzijastičnih nastavnika, pridružite se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupi Europskog tjedna programiranja za nastavnike na Facebooku</a>! Da biste oti&scaron;li korak naprijed i surađivali s drugim &scaron;kolama u svojoj zemlji ili preko granica, pridružite se izazovu <a href="codeweek4all">Code Week 4 All challenge</a>.</p>
