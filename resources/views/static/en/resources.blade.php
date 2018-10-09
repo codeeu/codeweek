@@ -141,10 +141,10 @@
                     JavaScript, Internal & External JavaScript, and JavaScript Examples.
                 </li>
                 <li>
-                    <strong><a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=908519492&mt=8&ls=1"
-                               target="_blank">Swift Playgrounds</a></strong>: Swift Playgrounds is a revolutionary app
-                    for iPad
-                    that makes learning Swift interactive and fun.
+                    <strong><a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp" target="_blank">Swift Playgrounds</a></strong>:
+                    Learn to code in a playful way, solving puzzles and getting acquainted the same time with Swift, a powerful programming language created by Apple and used by the pros to build today’s most popular apps.
+                    Translations in 18 languages have been provided in this link to be used in the national Code Week website pages
+                    A guide for Swift with hyperlinks leading to tutorials can be found here in this PDF.
                 </li>
                 <li><strong><a href="https://open.sap.com/courses/build1" target="_blank">Design Your First App with
                             Build*</a></strong>:
@@ -319,6 +319,22 @@
                     club as an after school, extra curricular activity or as a structured programme within the school
                     day.
                 </li>
+                <li>
+                    <strong><a href="https://education.minecraft.net/">Minecraft Education</a></strong>:
+                    Online, educational platform where students can learn in an immersive way and in collaboration how to code, and the same time familiarize themselves with various STEM subjects with the guidelines and the tailored lesson plans.
+                </li>
+                <li>
+                    <strong><a href="https://www.microsoft.com/en-us/makecode">MakeCode</a></strong>:
+                    Free, open source platform for creating engaging computer science learning experiences that support a progression path into real-world programming. Learners get immersed in computer science while creating fun projects.
+                </li>
+                <li>
+                    <strong><a href="https://www.bebras.org/?q=about">Bebras</a></strong>:
+                    Information on the international initiative aiming to promote Informatics (Computer Science, or Computing) and computational thinking among school students at all ages.
+                </li>
+                <li>
+                    <strong><a href="https://csunplugged.org/en/">CS Unplugged</a></strong>:
+                    Collection of free teaching material that teaches Computer Science through engaging games and puzzles.
+                </li>
             </ul>
 
             <h2>Full online courses for advanced learners</h2>
@@ -392,6 +408,18 @@
                     introduce coding to students. They will make pupils understand coding concepts in a fun way and
                     offer
                     teachers many ideas and resources.
+                </li>
+                <li>
+                    <strong><a href="http://earsketch.gatech.edu/landing/#/" target="_blank">earsketch</a></strong>:
+                    Online platform instructing how to write code, designed to be used within a high school introductory computing course. In addition to computer science, it is also used in music, and music technology.
+                </li>
+                <li>
+                    <strong><a href="https://developers.google.com/blockly/" target="_blank">Blocky</a></strong>:
+                    Game repository built by Google, introducing basic coding concepts adding a visual code editor to web and Android apps. In addition, a few games can be found <a href="https://blockly-games.appspot.com/">here Blocky Games.</a>
+                </li>
+                <li>
+                    <strong><a href="http://resources.makeblock.academy/2018/10/08/codeweek-2018/" target="_blank">MakeBlock</a></strong>:
+                    Lesson plans and tutorials about Python and Artificial Activities for students in Primary School.
                 </li>
             </ul>
 
