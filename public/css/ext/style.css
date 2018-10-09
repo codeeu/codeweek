@@ -13128,3 +13128,13 @@ textarea.border-form-control {
 .youtube-iframe{
     width:100%;
 }
+
+.scoreboard-total{
+    text-align: center;
+    font-size: 24px;
+    padding: 15px;
+}
+
+.country-name.macedonia {
+    font-size: 10px;
+}
