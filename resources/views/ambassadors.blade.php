@@ -123,7 +123,7 @@
                                         <img src="https://s3-eu-west-1.amazonaws.com/codeweek-s3/flags/{{strtolower($country->country_iso)}}.png"
                                              alt="{{$country->country_iso}}">
 
-                                        <div class="country-name">
+                                        <div class="country-name {{strtolower($country->name)}}">
                                             @lang('countries.'.$country->name) ({{$country->total}})
                                         </div>
                                     </div>

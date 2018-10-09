@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Mail;
 use Log;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Laravel\Nova\Actions\Actionable;
+
 class Event extends Model
 {
     use LogsActivity, Actionable;
-
 
 
     protected $table = 'events';
@@ -72,7 +72,7 @@ class Event extends Model
 
     public function picture_path()
     {
-        if ($this->picture){
+        if ($this->picture) {
             return env('AWS_URL') . $this->picture;
         } else {
             return 'https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png';
@@ -146,13 +146,14 @@ class Event extends Model
 
     }
 
-    public function notifyAmbassadors(){
+    public function notifyAmbassadors()
+    {
 
         //Get the ambassador list based on the event country
         $ambassadors = User::role('ambassador')->where('country_iso', $this->country_iso)->get();
-        if ($ambassadors->isEmpty()){
+        if ($ambassadors->isEmpty()) {
             Mail::to('info@codeweek.eu')->queue(new \App\Mail\EventCreatedNoAmbassador($this));
-        }else {
+        } else {
             //send emails
             foreach ($ambassadors as $ambassador) {
                 Mail::to($ambassador->email)->queue(new \App\Mail\EventCreated($this, $ambassador));
@@ -161,16 +162,23 @@ class Event extends Model
 
     }
 
-    public function approve(){
+    public function approve()
+    {
 
 
-         $data = ['status' => "APPROVED", 'approved_by' => auth()->user()->id];
+        $data = ['status' => "APPROVED", 'approved_by' => auth()->user()->id];
 
-        
 
         $this->update($data);
 
-        Mail::to($this->owner->email)->queue(new \App\Mail\EventApproved($this, $this->owner));
+
+        if (!empty($this->user_email)) {
+            Mail::to($this->user_email)->queue(new \App\Mail\EventApproved($this, $this->owner));
+        } else if (!is_null($this->owner) && (!is_null($this->owner->email))) {
+            Mail::to($this->owner->email)->queue(new \App\Mail\EventApproved($this, $this->owner));
+        }
+
+
         return true;
     }
 
