@@ -14,7 +14,7 @@ class PendingEventsController extends Controller
     public function index(Country $country = null)
     {
 
-        $countries = CountriesQuery::all();
+        $countries = CountriesQuery::withPendingEventsCurrentYear();
 
         $events = PendingEventsQuery::trigger($country);
 
