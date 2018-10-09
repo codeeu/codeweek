@@ -17,6 +17,9 @@
                     <p>@lang('scoreboard.paragraph')</p>
                 </div>
 
+                <div class="scoreboard-total">
+                    {{$total}} @lang('scoreboard.events')
+                </div>
 
                 <div class="sb-wrapper">
                     <ol class="one-row">
@@ -29,11 +32,14 @@
                                      alt=" {{$event->country_name}}"/>
 
 
-                                <div class="box-inner">
-                                    <span class="country-name">@lang('countries.'.$event->country_name)</span>
-                                    <p> @lang('scoreboard.parcipating_with') </p>
+                                <div class="box-inner flex-row">
+                                    <div>
+                                        <span class="country-name">@lang('countries.'.$event->country_name)</span>
+                                        <p style="margin-bottom: 5px !important;"> @lang('scoreboard.parcipating_with') </p>
+                                    </div>
                                     <a href="/search?country_iso={{$event->iso}}&past=no">
-                                        <span class="event-number">{{ $event->total }} @lang('scoreboard.events')</span></a>
+                                        <span class="event-number">{{ $event->total }} @lang('search.' . str_plural('event', $event->total))</span>
+                                    </a>
                                 </div>
 
                             </li>
