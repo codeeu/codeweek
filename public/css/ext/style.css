@@ -13138,3 +13138,14 @@ textarea.border-form-control {
 .country-name.macedonia {
     font-size: 10px;
 }
+
+.scoreboard-country-name.macedonia {
+    font-size: 14px;
+}
+
+.scoreboard-country-name {
+    display: block;
+    font-size: 16px;
+    position: relative;
+    padding-top: 10px;
+}

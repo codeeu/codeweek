@@ -34,7 +34,7 @@
 
                                 <div class="box-inner flex-row">
                                     <div>
-                                        <span class="country-name">@lang('countries.'.$event->country_name)</span>
+                                        <span class="scoreboard-country-name {{strtolower($event->country_name)}}">@lang('countries.'.$event->country_name)</span>
                                         <p style="margin-bottom: 5px !important;"> @lang('scoreboard.parcipating_with') </p>
                                     </div>
                                     <a href="/search?country_iso={{$event->iso}}&past=no">
