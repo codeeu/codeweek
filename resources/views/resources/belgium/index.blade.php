@@ -18,9 +18,10 @@
                         Wij zijn van mening dat iedereen de kans zou moeten krijgen om iets te maken dat de wereld kan
                         veranderen. Daarom heeft Apple een programma ontworpen waarmee iedereen code kan leren,
                         schrijven en onderwijzen.</p>
-                    <p><a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=908519492&mt=8&ls=1">Swift
+                    <p><a href="https://www.apple.com/swift/playgrounds/">Swift
                             Playgrounds</a> Met de vernieuwende iPad-app Swift Playgrounds leer je op een interactieve
                         en leuke manier programmeren.</p>
+                    <a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp">Guide</a>
                 </li>
                 <li>
                     <a href="https://www.robomindacademy.com/">RoboMind Academy</a>:
@@ -85,8 +86,9 @@
                     permettant à quiconque d’apprendre à coder, d’écrire du code et de l’enseigner.
                 </li>
                 <li>
-                    <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=908519492&mt=8&ls=1">Swift
+                    <a href="https://www.apple.com/swift/playgrounds/">Swift
                         Playgrounds</a> Apprendre le code ? Un jeu d’enfant avec Swift Playgrounds pour iPad.
+                    <a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp">Guide</a>
                 </li>
                 <li><a href="http://www.france-ioi.org">France-ioi</a> Apprendre la programmation et l'algorithmique par
                     la pratique (en Python, C/C++, Java ou Caml), avec des cours et exercices évalués automatiquement.
