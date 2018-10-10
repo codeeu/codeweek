@@ -38,8 +38,22 @@ class UserAvatarController extends Controller
             $constraint->aspectRatio();
         });
 
+        $imgResized = Image::make($file);
+
+        $imgResized->resize(null, 80, function ($constraint) {
+            $constraint->aspectRatio();
+        });
+
         //detach method is the key! Hours to find it... :/
         $resource = $img->stream()->detach();
+        $resourceResized = $imgResized->stream()->detach();
+
+        $resizedImageName = 'avatars/' . auth()->user()->getAuthIdentifier() . '/resized/80/' . $file->getClientOriginalName();
+
+        Storage::disk('s3')->put(
+            $resizedImageName,
+            $resourceResized
+        );
 
         Storage::disk('s3')->put(
             $imageName,
