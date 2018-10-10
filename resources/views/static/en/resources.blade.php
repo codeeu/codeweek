@@ -419,7 +419,7 @@
                 </li>
                 <li>
                     <strong><a href="http://resources.makeblock.academy/2018/10/08/codeweek-2018/" target="_blank">MakeBlock</a></strong>:
-                    Lesson plans and tutorials about Python and Artificial Activities for students in Primary School.
+                    Lesson plans and tutorials about Python and Artificial Intelligence activities for students in Primary School.
                 </li>
             </ul>
 
