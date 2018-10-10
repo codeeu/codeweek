@@ -18,8 +18,14 @@
 
 <h3>Apple</h3>
 <ul>
-    <li><a href="https://www.apple.com/ie/everyone-can-code/">Everyone Can Code</a><p>Technology has a language. It’s called code. At Apple we believe coding is an essential skill. Learning to code teaches you how to solve problems and work together in creative ways. And it helps you build apps that bring your ideas to life. We think everyone should have the opportunity to create something that can change the world. So Apple has designed a programme that lets anyone learn, write and teach code.</p></li>
-    <li><a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=908519492&mt=8&ls=1">Swift Playgrounds</a><p>Swift Playgrounds is a revolutionary app for iPad that makes learning Swift interactive and fun.</p></li>
+    <li>
+        <a href="https://www.apple.com/ie/everyone-can-code/">Everyone Can Code</a>:
+        Technology has a language. It’s called code. At Apple we believe coding is an essential skill. Learning to code teaches you how to solve problems and work together in creative ways. And it helps you build apps that bring your ideas to life. We think everyone should have the opportunity to create something that can change the world. So Apple has designed a programme that lets anyone learn, write and teach code.
+    </li>
+    <li>
+        <a href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</a>:
+        Swift Playgrounds is a revolutionary app for iPad that makes learning Swift interactive and fun.<a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp">Guide</a>
+    </li>
 </ul>
 
         </div></section>

@@ -45,10 +45,10 @@
                         helps you build apps that bring your ideas to life. We think everyone should have the
                         opportunity to create something that can change the world. So Apple has designed a programme
                         that lets anyone learn, write and teach code.</p></li>
-                <li><a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=908519492&mt=8&ls=1">Swift
+                <li><a href="https://www.apple.com/swift/playgrounds/">Swift
                         Playgrounds</a>
                     <p>Swift Playgrounds is a revolutionary app for iPad that makes learning Swift interactive and
-                        fun.</p></li>
+                        fun. <a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp">Guide</a></p> </li>
             </ul>
 
             <h3>Scratch</h3>
