@@ -9,7 +9,13 @@
 	  <li><a href="http://www.codeavengers.com/javascript/17?l=tr">Code Avengers ile oyun yapmayı öğren</a> Bu 40 dakikalık giriş bölümüyle JavaScript kullanarak arkadaşlarınla paylaşabileceğin bir oyun yapacaksın.</li>
   	<li><a href="http://www.codeavengers.com/javascript/9?l=tr">JavaScript ile 1 Saatlik Kodlama Eğitseli</a> Bu eğitsel size JavaScript ile soru-cevap oyunu yazmayı 5 kısa derste.</li>
   </ul>
-
+<ul>
+    <li>
+        <a href="https://www.apple.com/swift/playgrounds/" target="_blank">Swift Playgrounds</a>:
+        Learn to code in a playful way, solving puzzles and getting acquainted the same time with Swift, a powerful programming language created by Apple and used by the pros to build today’s most popular apps. Translations in 18 languages have been provided in this link to be used in the national Code Week website pages.
+        <a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp">A guide for Swift with hyperlinks leading to tutorials can be found here in this PDF.</a>
+    </li>
+</ul>
 
         </div></section>
 @endsection

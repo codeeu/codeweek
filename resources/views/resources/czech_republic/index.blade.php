@@ -23,6 +23,14 @@
 		Od programování je na první pohled poměrně daleko. Právě tím má ale značnou šanci oslovit např. umělecky založené zájemce, kteří se přitom  nenásilně naučí něco o rekurzi. Komu by scházela inspirace, může se podívat <a href="https://www.dropbox.com/sh/rmsy6mma7jb2tk7/Onhs9FHl3g">sem</a>.</li>
 	</ul>
 
+			<ul>
+				<li>
+					<a href="https://www.apple.com/swift/playgrounds/" target="_blank">Swift Playgrounds</a>:
+					Learn to code in a playful way, solving puzzles and getting acquainted the same time with Swift, a powerful programming language created by Apple and used by the pros to build today’s most popular apps. Translations in 18 languages have been provided in this link to be used in the national Code Week website pages.
+					<a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp">A guide for Swift with hyperlinks leading to tutorials can be found here in this PDF.</a>
+				</li>
+			</ul>
+
 		</div></section>
 @endsection
 

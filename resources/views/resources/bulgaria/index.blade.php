@@ -27,6 +27,14 @@
     <li>Безплатни курсове със свободен достъп и онлайн материали, без видеозаписи, водени във Факултета по математика и информатика към Софийския университет за <a href="http://fmi.ruby.bg/">Ruby</a>, <a href="http://fmi.golang.bg/">Go</a>, <a href="http://clojure.org/">Clojure</a> и <a href="http://fmi.py-bg.net/">Python</a>. Вижте секция "Материали".</li>
   </ul>
 
+      <ul>
+        <li>
+          <a href="https://www.apple.com/swift/playgrounds/" target="_blank">Swift Playgrounds</a>:
+          Learn to code in a playful way, solving puzzles and getting acquainted the same time with Swift, a powerful programming language created by Apple and used by the pros to build today’s most popular apps. Translations in 18 languages have been provided in this link to be used in the national Code Week website pages.
+          <a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp">A guide for Swift with hyperlinks leading to tutorials can be found here in this PDF.</a>
+        </li>
+      </ul>
+
   <h3>Suggest a resource</h3>
 
 
