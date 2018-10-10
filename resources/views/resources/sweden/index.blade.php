@@ -6,7 +6,7 @@
 <h2>Apple</h2>
 <ul>
 	<li><a href="https://www.apple.com/se/everyone-can-code/">Alla kan koda</a>Tekniken har ett språk. Det kallas kod. Vi på Apple anser att det är otroligt viktigt att kunna koda. När du lär dig koda lär du dig också att lösa problem och samarbeta på kreativa sätt. Och det hjälper dig att bygga appar som förverkligar dina idéer. Vi tycker att alla ska ha möjlighet att skapa något som kan förändra världen. Därför har Apple utformat ett kursprogram som ger alla möjligheten att lära sig koda, skriva kod och lära ut kod.</li>
-	<li><a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=908519492&mt=8&ls=1">Swift Playgrounds</a> är en revolutionerande app till iPad som lär dig Swift på ett interaktivt och roligt sätt.</li>
+	<li><a href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</a> är en revolutionerande app till iPad som lär dig Swift på ett interaktivt och roligt sätt. <a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp">Guide</a></li>
 </ul>
 
 <h2>Barnprogrammering på svenska</h2>
