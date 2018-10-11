@@ -18,7 +18,9 @@
       </ul>
     </li>
     <li><a href="https://www.apple.com/at/everyone-can-code/">Jeder kann programmieren</a> Technologie hat eine Sprache: Sie heißt Code. Bei Apple sind wir überzeugt, dass Code schreiben bzw. Programmieren eine wichtige Fähigkeit ist. Durch Programmieren lernt man, wie man Probleme lösen und auf kreative Weise zusammenarbeiten kann. Und es hilft dabei, Apps zu entwickeln, die Ideen Wirklichkeit werden lassen. Wir glauben, dass alle die Chance haben sollten, etwas zu erschaffen, das die Welt verändern kann. Deshalb hat Apple eine Plattform entwickelt, mit der alle Programmieren lernen und unterrichten können.</li>
-    <li><a href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</a> Swift Playgrounds ist eine revolutionäre iPad App, die Swift lernen interaktiv und unterhaltsam macht.<a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp">Guide</a></li>
+    <li><a href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</a> Swift Playgrounds ist eine revolutionäre iPad App, die Swift lernen interaktiv und unterhaltsam macht.</li>
+    <li><a href='https://www.apple.com/105/media/at/education/codeweek2018/IncredibleCodeMachine_guide_092418_Final_de-AT.pdf' target='_blank'>Die unglaubliche Codemaschine mit Swift Playgrounds - Trainerhandbuch </a>:Feiern Sie die EU Code Week – mit Ihrem eigenen Programmierevent und Swift Playgrounds auf dem iPad.</li>
+
     <li>
       <a href="http://catrobat.org" target="_blank">Pocket Code - Catrobat</a> - allows you to create your own games, animations, interactive music videos, and many kind of other apps, directly on your phone or tablet. (Für Jugendliche zwischen 10-14J)
     </li>

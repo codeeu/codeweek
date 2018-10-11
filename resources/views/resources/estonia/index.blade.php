@@ -15,11 +15,6 @@
     <li><a href="http://www.targaltinternetis.ee/">Targalt internetis</a> - veebilehelt leiab infot interneti targemaks ja turvalisemaks kasutamiseks. Vajalikku infot leiavad lapsed, lapsevanemad ja õpetajad.</li>
     <li><a href="http://progekodu.weebly.com/">Progekodu</a> - Veebileht Kodu õppevahendeid.</li>
     <li><a href="http://www.päriseltkavõi.ee/taiskasvanutele/opetajale">Päriselt ka või? materjal õpetajatele</a> - e-õppematerjal koos tunnikavaga, mis toetab õpetajate teadmiste omandamist nutiseadmete võimalustest ja ohtudest.</li>
-    <li>
-      <a href="https://www.apple.com/swift/playgrounds/" target="_blank">Swift Playgrounds</a>:
-      Learn to code in a playful way! Solve puzzles and the same time get acquainted with Swift, a powerful programming language created by Apple and used by the pros to build today’s most popular apps. The
-      <a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp">Facilitator’s Guide</a> with instructions of how to design activities is available in multiple languages and has been designed especially for Code Week.
-    </li>
   </ul>
 
 
