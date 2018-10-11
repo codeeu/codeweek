@@ -7,7 +7,7 @@
 <ul>
 	<li><a href="https://www.apple.com/se/everyone-can-code/">Alla kan koda</a>Tekniken har ett språk. Det kallas kod. Vi på Apple anser att det är otroligt viktigt att kunna koda. När du lär dig koda lär du dig också att lösa problem och samarbeta på kreativa sätt. Och det hjälper dig att bygga appar som förverkligar dina idéer. Vi tycker att alla ska ha möjlighet att skapa något som kan förändra världen. Därför har Apple utformat ett kursprogram som ger alla möjligheten att lära sig koda, skriva kod och lära ut kod.</li>
 	<li><a href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</a> är en revolutionerande app till iPad som lär dig Swift på ett interaktivt och roligt sätt.</li>
-	<li><a href='https://www.apple.com/105/media/se/education/codeweek2018/IncredibleCodeMachine_guide_092418_Final_sv.pdf' target='_blank'>Den otroliga kodmaskinen med Swift Playgrounds - Handledarhandbok</a>: Attention to the EU Code Week by organizing a separate encoding event with Swift Playgrounds on iPad.</li>
+	<li><a href='https://www.apple.com/105/media/se/education/codeweek2018/IncredibleCodeMachine_guide_092418_Final_sv.pdf' target='_blank'>Den otroliga kodmaskinen med Swift Playgrounds - Handledarhandbok</a>: Uppmärksamma EU Code Week genom att anordna ett eget kodningsevent med Swift Playgrounds på iPad.</li>
 </ul>
 
 <h2>Barnprogrammering på svenska</h2>
