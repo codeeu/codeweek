@@ -141,8 +141,11 @@
                 </li>
                 <li>
                     <strong><a href="https://www.apple.com/swift/playgrounds/" target="_blank">Swift Playgrounds</a></strong>:
-                    Learn to code in a playful way! Solve puzzles and the same time get acquainted with Swift, a powerful programming language created by Apple and used by the pros to build today’s most popular apps. The
-                    <a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp">Facilitator’s Guide</a> with instructions of how to design activities is available in multiple languages and has been designed especially for Code Week.
+                    Learn to code in a playful way! Solve puzzles and the same time get acquainted with Swift, a powerful programming language created by Apple and used by the pros to build today’s most popular apps.
+                </li>
+                <li>
+                    <strong><a href="https://www.apple.com/105/media/uk/education/codeweek2018/IncredibleCodeMachine_guide_092418_Final_en-GB.pdf" target="_blank">The Incredible Code Machine with Swift Playgrounds - Facilitator Guide</a></strong>:
+                    Celebrate EU Code Week — host your own coding event with Swift Playgrounds on iPad. The Facilitator Guide is available in other languages, check the national pages to see if it is available in yours.
                 </li>
                 <li><strong><a href="https://open.sap.com/courses/build1" target="_blank">Design Your First App with
                             Build*</a></strong>:
