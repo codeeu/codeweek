@@ -10,7 +10,11 @@
 	<li>Apple resources:
 		<ul>
 			<li><a href="https://www.apple.com/nl/everyone-can-code/">Iedereen kan programmeren</a><p>Technologie heeft een taal. En die heet: programmeercode. Bij Apple vinden we dat programmeren een essentiële vaardigheid is. Als je leert programmeren, leer je problemen oplossen en op een creatieve manier samenwerken. Bovendien leer je apps bouwen waarmee je ideeën tot leven komen. Wij zijn van mening dat iedereen de kans zou moeten krijgen om iets te maken dat de wereld kan veranderen. Daarom heeft Apple een programma ontworpen waarmee iedereen code kan leren, schrijven en onderwijzen.</p></li>
-			<li><a href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</a> <p>Met de vernieuwende iPad-app Swift Playgrounds leer je op een interactieve en leuke manier programmeren.<a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp">Guide</a></p></li>
+			<li><a href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</a> Met de vernieuwende iPad-app Swift Playgrounds leer je op een interactieve en leuke manier programmeren.</li>
+			<li>
+				<a href='https://www.apple.com/105/media/nl/education/codeweek2018/IncredibleCodeMachine_guide_092418_Final_nl.pdf' target='_blank'>De coole programmeermachine met Swift Playgrounds - Handleiding voor de cursusleider</a>:
+				Vier de Europese Codeweek – organiseer uw eigen programmeer-event met Swift Playgrounds op iPad.
+			</li>
 		</ul>
 	</li>
 	<li>Scratch(Jr) resources:

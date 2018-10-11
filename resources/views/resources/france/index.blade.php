@@ -19,7 +19,11 @@
     </ul>
   </li>
   <li><a href="https://www.apple.com/fr/everyone-can-code/">Le code à la portée de tous</a> Les technologies ont leur propre langage : le code de programmation. Chez Apple, nous pensons que la programmation est une compétence fondamentale. Car apprendre à programmer, c’est aussi apprendre à résoudre des problèmes et à travailler avec les autres de manière créative. C’est un moyen de créer des apps qui donnent vie à ses idées. D’offrir à chacun l’opportunité d’imaginer quelque chose qui peut changer le monde. C’est pourquoi Apple a conçu une nouvelle manière d’aborder la programmation, permettant à quiconque d’apprendre à coder, d’écrire du code et de l’enseigner.</li>
-  <li><a href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</a> Apprendre le code ? Un jeu d’enfant avec Swift Playgrounds pour iPad. <a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp">Guide</a></li>
+  <li><a href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</a> Apprendre le code ? Un jeu d’enfant avec Swift Playgrounds pour iPad.</li>
+  <li><a href='https://www.apple.com/105/media/fr/education/codeweek2018/IncredibleCodeMachine_guide_092418_Final_fr.pdf' target='_blank'>L’incroyable machine à code avec Swift Playgrounds - Guide de l’animateur</a>:
+    Fêtez la Semaine européenne du code en organisant votre propre événement de programmation avec Swift Playgrounds sur iPad.
+  </li>
+
   <li><a href="http://www.france-ioi.org">France-ioi</a> Apprendre la programmation et l'algorithmique par la pratique (en Python, C/C++, Java ou Caml), avec des cours et exercices évalués automatiquement.</li>
   <li><a href="http://www.loria.fr/~quinson/Teaching/PLM/">Programmer's Learning Machine</a></li>
   <li><a href="https://www.youtube.com/c/Teen-code">Teen-Code:</a> tutoriels vidéo de création d'applications mobiles sous Android, pour débutants.</li>
