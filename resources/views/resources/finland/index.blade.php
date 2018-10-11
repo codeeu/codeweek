@@ -7,7 +7,8 @@
 
 <ul>
     <li><a href="https://www.apple.com/fi/everyone-can-code/">Kaikki osaavat koodata</a>Teknologialla on oma kielensä. Sitä kutsutaan koodiksi. Ja Apple uskoo, että koodaaminen on tärkeä taito. Koodin oppiminen opettaa ongelmanratkaisua ja muiden kanssa työskentelyä luovilla tavoilla. Se auttaa myös luomaan appeja, jotka herättävät ideasi eloon. Mielestämme kaikilla pitäisi olla mahdollisuus luoda jotain, mikä voi muuttaa maailmaa. Siksi Apple suunnitteli ohjelman, jonka avulla kuka tahansa voi opetella, kirjoittaa ja opettaa koodausta.</li>
-    <li><a href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</a> tekee koodaamisen oppimisesta interaktiivista ja hauskaa.<a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp">Guide</a></li>
+    <li><a href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</a> tekee koodaamisen oppimisesta interaktiivista ja hauskaa.</li>
+    <li><a href='https://www.apple.com/105/media/fi/education/codeweek2018/IncredibleCodeMachine_guide_092418_Final_fi.pdf' target='_blank'>The Incredible Code Machine ja Swift Playgrounds -Kouluttajan opas</a>: Vietä EU:n koodausviikkoa ja järjestä oma koodaustapahtuma iPadin Swift Playgrounds -apilla.</li>
 </ul>
 
 <h2>Kirjoja</h2>

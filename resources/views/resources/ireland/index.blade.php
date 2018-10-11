@@ -24,8 +24,13 @@
     </li>
     <li>
         <a href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</a>:
-        Swift Playgrounds is a revolutionary app for iPad that makes learning Swift interactive and fun.<a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp">Guide</a>
+        Swift Playgrounds is a revolutionary app for iPad that makes learning Swift interactive and fun.
     </li>
+    <li>
+        <a href='https://www.apple.com/105/media/ie/education/codeweek2018/IncredibleCodeMachine_guide_092418_Final_en-IE.pdf' target='_blank'>The Incredible Code Machine with Swift Playgrounds - Facilitator Guide</a>:
+        Celebrate EU Code Week — host your own coding event with Swift Playgrounds on iPad.
+    </li>
+
 </ul>
 
         </div></section>

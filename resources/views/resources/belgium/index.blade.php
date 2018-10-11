@@ -21,7 +21,9 @@
                     <p><a href="https://www.apple.com/swift/playgrounds/">Swift
                             Playgrounds</a> Met de vernieuwende iPad-app Swift Playgrounds leer je op een interactieve
                         en leuke manier programmeren.</p>
-                    <a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp">Guide</a>
+                    <p><a href='https://www.apple.com/105/media/benl/education/codeweek2018/IncredibleCodeMachine_guide_092418_Final_nl-BE.pdf' target='_blank'>De coole programmeermachine met Swift Playgrounds  - Handleiding voor de cursusleider</a>:
+                        Vier de Europese Codeweek – organiseer uw eigen programmeer-event met Swift Playgrounds op iPad.
+                    </p>
                 </li>
                 <li>
                     <a href="https://www.robomindacademy.com/">RoboMind Academy</a>:
@@ -88,7 +90,9 @@
                 <li>
                     <a href="https://www.apple.com/swift/playgrounds/">Swift
                         Playgrounds</a> Apprendre le code ? Un jeu d’enfant avec Swift Playgrounds pour iPad.
-                    <a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp">Guide</a>
+                </li>
+                <li><a href='https://www.apple.com/105/media/befr/education/codeweek2018/IncredibleCodeMachine_guide_092418_Final_fr-BE.pdf' target='_blank'>L’incroyable machine à code avec Swift Playgrounds - Guide de l’animateur</a>:
+                    Fêtez la Semaine européenne du code en organisant votre propre événement de programmation avec Swift Playgrounds sur iPad.
                 </li>
                 <li><a href="http://www.france-ioi.org">France-ioi</a> Apprendre la programmation et l'algorithmique par
                     la pratique (en Python, C/C++, Java ou Caml), avec des cours et exercices évalués automatiquement.

@@ -15,7 +15,10 @@
       </ul>
     </li>
     <li><a href="https://www.apple.com/de/everyone-can-code/">Jeder kann programmieren</a> Technologie hat eine Sprache: Sie heißt Code. Bei Apple sind wir überzeugt, dass Code schreiben bzw. Programmieren eine wichtige Fähigkeit ist. Durch Programmieren lernt man, wie man Probleme lösen und auf kreative Weise zusammenarbeiten kann. Und es hilft dabei, Apps zu entwickeln, die Ideen Wirklichkeit werden lassen. Wir glauben, dass alle die Chance haben sollten, etwas zu erschaffen, das die Welt verändern kann. Deshalb hat Apple eine Plattform entwickelt, mit der alle Programmieren lernen und unterrichten können.</li>
-    <li><a href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</a> ist eine revolutionäre iPad App, die Swift lernen interaktiv und unterhaltsam macht. <a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp">Guide</a></li>
+    <li><a href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</a> ist eine revolutionäre iPad App, die Swift lernen interaktiv und unterhaltsam macht.</li>
+    <li><a href='https://www.apple.com/105/media/de/education/codeweek2018/IncredibleCodeMachine_guide_092418_Final_de.pdf' target='_blank'>Die unglaubliche Codemaschine mit Swift Playgrounds - Trainerhandbuch</a>:
+      Feiern Sie die EU Code Week – mit Ihrem eigenen Programmierevent und Swift Playgrounds auf dem iPad.
+    </li>
     <li><a href="http://award.codeweek.de/lernmaterial/">Offene Lernmaterialien</a></li>
     <li><a href="http://lerneprogrammieren.de/">Lerne Programmieren</a> - einen Grundkurs im Coden gibt es hier</li>
     <li><a href="http://www.appcamps.de/">App Camps</a> - Unterrichtsmaterialien für Lehrkräfte, damit diese selbstständig Programmier-Workshops an Schulen durchführen können.</li>

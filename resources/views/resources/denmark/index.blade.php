@@ -5,7 +5,8 @@
 		<div class="container">              @include ('resources.title')
   <ul>
     <li><a href="https://www.apple.com/dk/everyone-can-code/">Alle kan kode</a> Teknologien har sit helt eget sprog: kode. Og hos Apple mener vi, at kodning er en helt essentiel færdighed. Lærer du at kode, lærer du samtidig at løse problemer og samarbejde med andre på kreative måder. Og kodning hjælper dig også til at kunne lave apps, der gør dine idéer til virkelighed. Vi synes, at alle skal have mulighed for at skabe noget, der kan ændre verden. Derfor har Apple udviklet et helt særligt forløb, hvor alle kan lære at skrive, og undervise i, kode.</li>
-    <li><a href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</a> er en revolutionerende iPad-app, hvor du kan lære Swift på en sjov og interaktiv måde.<a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp">Guide</a></li>
+    <li><a href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds</a> er en revolutionerende iPad-app, hvor du kan lære Swift på en sjov og interaktiv måde.</li>
+	<li><a href='https://www.apple.com/105/media/dk/education/codeweek2018/IncredibleCodeMachine_guide_092418_Final_da.pdf' target='_blank'>The Incredible Code Machine med Swift Playgrounds - Guide for vejledere</a>: Vær med til at fejre EU Code Week – afhold dit eget kodearrangement med Swift Playgrounds på iPad.</li>
 	<li><a href="http://appacademy.dk">App Academy</a> afholder kurser og workshops i programmering for børn (og voksne)</li>
     <li><a href="http://www.codeavengers.com/javascript/17?l=da">Code Avengers</a> I denne 40 minutters introduktion vil du komme til at bruge JavaScript til at bygge et spil som du kan dele med dine venner.</li>
    	<li><a href="http://codingpirates.dk/">Coding Pirates</a> - forening til at fremme børn og unges produktive og kreative it-kompetence</a></li>

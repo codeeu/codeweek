@@ -8,9 +8,8 @@
 <ul>
   <li><a href="https://www.apple.com/es/everyone-can-code/">Programación para todos</a> El lenguaje de la tecnología es la programación. En Apple, creemos que aprender a programar es una habilidad básica. ¿Por qué? Porque te enseña a resolver problemas y a trabajar en equipo de formas creativas. Además te ayuda a diseñar apps capaces de hacer realidad tus ideas. Todos deberíamos tener la oportunidad de crear algo que pueda cambiar el mundo. Por eso, Apple ha desarrollado un programa que permite a cualquier persona aprender y enseñar programación.</li>
   <li>
-    <a href="https://www.apple.com/swift/playgrounds/" target="_blank">Swift Playgrounds</a>:
-    Learn to code in a playful way! Solve puzzles and the same time get acquainted with Swift, a powerful programming language created by Apple and used by the pros to build today’s most popular apps. The
-    <a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp">Facilitator’s Guide</a> with instructions of how to design activities is available in multiple languages and has been designed especially for Code Week.
+    <a href='https://www.apple.com/105/media/es/education/codeweek2018/IncredibleCodeMachine_guide_092418_Final_es.pdf' target='_blank'>La Increíble Máquina de Código con Swift Playgrounds - Guía del instructor</a>:
+    Celebra la Semana de la Programación de la UE organizando un evento con Swift Playgrounds en el iPad.
   </li>
 </ul>
 <h2>Comunidad Programamos</h2>
