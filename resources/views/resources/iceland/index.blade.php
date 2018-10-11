@@ -10,11 +10,6 @@
 	<li><a href="http://www.tskoli.is/forritun/">Tækniskólinn</a> - Tækniskólinn býður upp á fjölbreytt tækninámskeið fyrir einstaklinga og hópa</li>
 	<li><a href="http://www.appland.is/">Appland</a> - Appland er upplýsinga og fræðsluvefur um notkun á smáforritum í skólastarfi.</li>
 	<li><a href="http://snjallskoli.is/">Snjallskolinn</a> - Snjallskolinn safnar og miðlar upplýsingum til kennara og nemenda og annarra sem láta sig menntun varðar og leggja eitthvað af mörkum í umræðunni um skólastyarf á Íslandi í von um betri menntun og betri skóla.</li>
-	  <li>
-		  <a href="https://www.apple.com/swift/playgrounds/" target="_blank">Swift Playgrounds</a>:
-		  Learn to code in a playful way! Solve puzzles and the same time get acquainted with Swift, a powerful programming language created by Apple and used by the pros to build today’s most popular apps. The
-		  <a href="https://apple.ent.box.com/s/ma3mycpc7wrqh25izbkm9qut6ktvtdqp">Facilitator’s Guide</a> with instructions of how to design activities is available in multiple languages and has been designed especially for Code Week.
-	  </li>
 
   </ul>
 
