@@ -422,6 +422,10 @@
                     <strong><a href="http://resources.makeblock.academy/2018/10/08/codeweek-2018/" target="_blank">MakeBlock</a></strong>:
                     Lesson plans and tutorials about Python and Artificial Intelligence activities for students in Primary School.
                 </li>
+                <li>
+                    <strong><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/CodeWeek+2018+Code+Hunting+Games+guide.pdf">Code Hunting Game Guide</a></strong>:
+                    Helps organisers to prepare an original treasure hunt game designed for Code Week. People compete in teams and visit different locations to solve a puzzle. This guide explains step by step what needs to be done to set up the game in your school, park or across the whole city.
+                </li>
             </ul>
 
         </div>
