@@ -32,7 +32,7 @@
                                      alt=" {{$event->country_name}}"/>
 
 
-                                <div class="box-inner flex-row">
+                                <div class="box-inner flex-row" style="padding-right:5px;">
                                     <div>
                                         <span class="scoreboard-country-name {{strtolower($event->country_name)}}">@lang('countries.'.$event->country_name)</span>
                                         <p style="margin-bottom: 5px !important;"> @lang('scoreboard.parcipating_with') </p>
