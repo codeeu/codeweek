@@ -1,4 +1,4 @@
-@extends(&rsquo;layout.base&rsquo;) @section(&rsquo;content&rsquo;)<section>
+@extends('layout.base') @section('content')<section>
 
         <div class="container">
 
@@ -34,7 +34,7 @@
                         <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+1_Primary.docx">Activit&eacute; 1 &ndash; Scratch Basic pour le primaire</a></li>
                         <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+2_Secondary.docx">Activit&eacute; 2 &ndash; Scratch Basic pour le premier cycle du secondaire</a></li>
                         <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+3_Upper+Secondary.docx">Activit&eacute; 3 &ndash; Scratch Basic pour le secondaire</a></li>
-                    </ul>@if(view()->exists(&rsquo;static.&rsquo;.App::getLocale().&rsquo;.training.footer&rsquo;)) @include(&rsquo;static.&rsquo;.App::getLocale().&rsquo;.training.footer&rsquo;) @else @include(&rsquo;static.en.training.footer&rsquo;) @endif</div>
+                    </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
 

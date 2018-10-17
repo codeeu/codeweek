@@ -13,7 +13,7 @@
 
                     <hr>
 
-                    <p>Računarsko razmi&scaron;ljanje (RR) opisuje način gledanja na probleme i sisteme tako da se može koristiti računar kako bi nam pomogao da ih rije&scaron;imo ili shvatimo. Računarsko razmi&scaron;ljanje nije od osnovne važnosti samo da razvijanje kompjuterskih programa, nego se može koristiti i kao podr&scaron;ka u rje&scaron;avanju problema u svim disciplinama.</p>
+                    <p>Računarsko razmi&scaron;ljanje (RR) opisuje način gledanja na probleme i sisteme tako da se može koristiti računar kako bi nam pomogao da ih rije&scaron;imo ili shvatimo. Računarsko razmi&scaron;ljanje nije od osnovne važnosti samo za razvijanje kompjuterskih programa, nego se može koristiti i kao podr&scaron;ka u rje&scaron;avanju problema u svim disciplinama.</p>
 
                     <p>Vi možete svoje učenike podučavati iz oblasti RR tako &scaron;to ćete ih navesti da razlože kompleksne probleme na manje (rastavljanje), da prepoznaju obrasce (prepoznavanje obrazaca), da identificiraju relevantne detalje za rje&scaron;avanje datog problema (apstrakcija), ili da uspostavljaju pravila ili instrukcije koje treba slijediti kako bi se postigao željeni ishod (dizajniranje algoritama). RR se može podučavati po različitim disciplinama, na primjer u matematici (shvaćanje pravila za množenje polinoma drugog reda), književnosti (razlaganje analize pjesme u analizu metra, rime i strukture), jezicima (pronalaženje obrazaca sa krajnjim slovima glagola koja utiču na pisanje u promjeni glagolskih vremena), i u mnogim drugim oblastima.</p>
 

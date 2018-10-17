@@ -9,7 +9,7 @@
 
 
                     <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
-                        <h1>Εκπαιδευτικά προγράμματα της Εβδομάδας Προγραμματισμού</h1><span></span></div>
+                        <h1>ΕΚΠΑΙΔΕΥΤΙΚΑ ΠΡΟΓΡΑΜΜΑΤΑ ΤΗΣ ΕΒΔΟΜΑΔΑΣ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ</h1><span></span></div>
 
                     <hr>
 

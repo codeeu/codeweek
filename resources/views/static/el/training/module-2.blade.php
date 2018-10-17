@@ -9,7 +9,7 @@
 
 
                     <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
-                        <h1>Υπολογιστική σκέψη και επίλυση προβλημάτων</h1><span>του Miles Berry</span></div>
+                        <h1>ΥΠΟΛΟΓΙΣΤΙΚΗ ΣΚΕΨΗ ΚΑΙ ΕΠΙΛΥΣΗ ΠΡΟΒΛΗΜΑΤΩΝ</h1><span>του Miles Berry</span></div>
 
                     <hr>
 

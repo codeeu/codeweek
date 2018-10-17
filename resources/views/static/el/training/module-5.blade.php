@@ -9,7 +9,7 @@
 
 
                     <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
-                        <h1>Ασχολούμαστε με τη ρομποτική και τα μαστορέματα μέσα στις σχολικές τάξεις</h1><span>της Tullia Urschitz</span></div>
+                        <h1>ΑΣΧΟΛΟΥΜΑΣΤΕ ΜΕ ΤΗ ΡΟΜΠΟΤΙΚΗ ΚΑΙ ΤΑ ΜΑΣΤΟΡΕΜΑΤΑ ΜΕΣΑ ΣΤΙΣ ΣΧΟΛΙΚΕΣ ΤΑΞΕΙΣ</h1><span>της Tullia Urschitz</span></div>
 
                     <hr>
 

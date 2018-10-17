@@ -22,11 +22,11 @@
 
                     <h2>Događaj vode volonteri</h2>
 
-                    <p>Evropsku nedjelju programiranja vode volonteri Jedan ili vi&scaron;e <a href="/ambassadors">ambasadora Nedjelje programiranja </a> koordini&scaron;u inicijativom u svojim zemljama, ali svako može organizovati svoju aktivnost i dodati je na <a href="/">codeweek.eu</a> mapu.</p>
+                    <p>Evropsku nedjelju programiranja vode volonteri. Jedan ili vi&scaron;e <a href="/ambassadors">ambasadora Nedjelje programiranja </a> koordini&scaron;u inicijativom u svojim zemljama, ali svako može organizovati svoju aktivnost i dodati je na <a href="/">codeweek.eu</a> mapu.</p>
 
                     <h2>Podržano od strane Evropske komisije</h2>
 
-                    <p>Evropsku nedjelju programiranja su 2013. godine pokrenuli Mladi savjetnici za Digitalni program Evrope (org. Young Advisors for the Digital Agenda Europe) Evropska komisija pruža podr&scaron;ku Evropskoj nedjelji programiranja kao dio strategije za <a href="http://ec.europa.eu/priorities/digital-single-market/">Jedinstveno digitalno trži&scaron;te </a>. U okviru <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Akcionog plana za digitalno obrazovanje (org. Digital Education Action Plan) </a>, Komisija naročito podstiče &scaron;kole da se pridruže inicijativi. Cilj je da se do 2020. godine obuhvati 50% svih &scaron;kola u Evropi.</p>
+                    <p>Evropsku nedjelju programiranja su 2013. godine pokrenuli Mladi savjetnici za Digitalni program Evrope (org. Young Advisors for the Digital Agenda Europe). Evropska komisija pruža podr&scaron;ku Evropskoj nedjelji programiranja kao dio strategije za <a href="http://ec.europa.eu/priorities/digital-single-market/">Jedinstveno digitalno trži&scaron;te </a>. U okviru <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Akcionog plana za digitalno obrazovanje (org. Digital Education Action Plan) </a>, Komisija naročito podstiče &scaron;kole da se pridruže inicijativi. Cilj je da se do 2020. godine obuhvati 50% svih &scaron;kola u Evropi.</p>
 
                     <h2>&Scaron;kole</h2>
 

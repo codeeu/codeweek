@@ -13,7 +13,7 @@
 
                     <hr>
 
-                    <p>Vizuelno programiranje omogućuje ljudima da opisuju procese uz pomoć ilustracija ili grafika. Obično govorimo o vizuelnom programiraju za razliku od tekstualno zasnovanog programiranja. Jezici za vizuelno programiranje (JVP) su posebno dobro prilagođeni u cilju uvođenja algoritamskog razmi&scaron;ljanja za djecu (pa čak i odrasle). Sa JVP, ima manje za čitati i nema nikakve sintakse koju treba realizirati.</p>
+                    <p>Vizuelno programiranje omogućuje ljudima da opisuju procese uz pomoć ilustracija ili grafika. Obično govorimo o vizuelnom programiranju za razliku od tekstualno zasnovanog programiranja. Jezici za vizuelno programiranje (JVP) su posebno dobro prilagođeni u cilju uvođenja algoritamskog razmi&scaron;ljanja za djecu (pa čak i odrasle). Sa JVP, ima manje za čitati i nema nikakve sintakse koju treba realizirati.</p>
 
                     <p>U ovom videu, Margo Tinawi, nastavnik za mrežni razvoj u Le Wagon i suosnivač Technies Lab asbl (Belgija), pomoći će vam da otkrijete Scratch, jedan od najpopularnijih JVP koji se koristi &scaron;irom svijeta. Scratch je izradio MIT 2002. godine i od tada je oko njega stvorena velika zajednica, gdje možete pronaći milione projekata za repliciranje sa svojim učenicima i bezbrojna uputstva na nekoliko jezika.</p>
 

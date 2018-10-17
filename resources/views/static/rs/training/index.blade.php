@@ -26,7 +26,7 @@
                                 <div class="text-base text-black">Autor: Majls Beri</div></a></div>
                         <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning_card_default.png"><div class="text-xl">Vizuelno programiranje &ndash; uvod u <i>Scratch</i></div>
                                 <div class="text-base text-black">Autor: Margo Tinavi</div></a></div>
-                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning_card_default.png"><div class="text-xl">Kreiranje edukativnih igrica u -u</div>
+                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning_card_default.png"><div class="text-xl">Kreiranje edukativnih igrica u Scratch-u</div>
                                 <div class="text-base text-black">Autor: Hesus Moreno Leon</div></a></div>
                         <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning_card_default.png"><div class="text-xl">Izrada, robotika i majstorisanje u učionici</div>
                                 <div class="text-base text-black">Autor: Tulia Ur&scaron;ic</div></a></div>
