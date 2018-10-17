@@ -160,7 +160,7 @@ return [
     'Saint Martin'=>'Άγιος Μαρτίνος',
     'Madagascar'=>'Μαδαγασκάρη',
     'Marshall Islands'=>'Νήσοι Μάρσαλ',
-    'Macedonia'=>'ΠΓΔΜ',
+    'Macedonia'=>'Πρώην Γιουγκοσλαβική Δημοκρατία της Μακεδονίας',
     'Mali'=>'Μάλι',
     'Myanmar'=>'Μιανμάρ',
     'Mongolia'=>'Μογγολία',
