@@ -55,7 +55,7 @@
                     <div style="display: flex;flex-wrap: wrap;flex-direction: row;">
                         @forelse ($ambassadors as $ambassador)
 
-                            <div class="bottommargin flex" style="padding:0px 15px;flex: 0 0 {{$ambassadors->count() > 2 ? '33.3%' : '50%'}};">
+                            <div class="bottommargin flex" style="padding:0px 15px;flex: 0 0 {{$ambassadors->count() > 2 ? '33%' : '50%'}};">
                                 <div class="team">
                                     <div class="team-image">
                                         <img src="{{$ambassador->avatar}}" alt="" width="80" height="80" class="img-circle">
