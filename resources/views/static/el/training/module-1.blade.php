@@ -9,7 +9,7 @@
 
 
                     <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
-                        <h1>Προγραμματισμός χωρίς υπολογιστές (χωρίς σύνδεση στο διαδίκτυο)</h1><span>του Alessandro Bogliolo</span></div>
+                        <h1>ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ ΧΩΡΙΣ ΥΠΟΛΟΓΙΣΤΕΣ (ΧΩΡΙΣ ΣΥΝΔΕΣΗ ΣΤΟ ΔΙΑΔΥΚΤΙΟ)</h1><span>του Alessandro Bogliolo</span></div>
 
                     <hr>
 

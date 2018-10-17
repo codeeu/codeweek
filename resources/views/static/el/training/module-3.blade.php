@@ -9,7 +9,7 @@
 
 
                     <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
-                        <h1>Οπτικός προγραμματισμός &ndash; Εισαγωγή στη Scratch</h1><span>του Margo Tinawi</span></div>
+                        <h1>ΟΠΤΙΚΟΣ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ &ndash; ΕΙΣΑΓΩΓΗ ΣΤΗ SCRATCH</h1><span>του Margo Tinawi</span></div>
 
                     <hr>
 

@@ -17,7 +17,7 @@
 
                     <p>Algoritamski pojmovi kontrole toka uz pomoć nizova instrukcija i petlji, predstavljanje podataka uz pomoć varijabli i popisa, ili sinhronizacija procesa mogu zvučati kao komplicirani koncepti, ali u ovom videu ćete utvrditi da je njih naučiti lak&scaron;e nego &scaron;to mislite.</p>
 
-                    <p>U ovom videu, Jesus Moreno Leon, nastavnik računarskih nauka i istraživač u tom polju iz &Scaron;panije, pojasnit će kako možete razviti ove i druge vje&scaron;tine kod svojih učenika, a da vam pritom bude i zabavno. Kako se to može uraditi? Kreiranjem igre pitanja i odgovora u Scratchu, najpopularnijem programskom jeziku koji se koristi u &scaron;kolama &scaron;irom svijeta. Scratch ne samo da jača računarsko razmi&scaron;ljanje, nego i omogućava uvođenje elemenata igre u učionicu, tako da va&scaron;i učenici budu motiivirani dok uče i zabavljaju se.</p>
+                    <p>U ovom videu, Jesus Moreno Leon, nastavnik računarskih nauka i istraživač u tom polju iz &Scaron;panije, pojasnit će kako možete razviti ove i druge vje&scaron;tine kod svojih učenika, a da vam pritom bude i zabavno. Kako se to može uraditi? Kreiranjem igre pitanja i odgovora u Scratchu, najpopularnijem programskom jeziku koji se koristi u &scaron;kolama &scaron;irom svijeta. Scratch ne samo da jača računarsko razmi&scaron;ljanje, nego i omogućava uvođenje elemenata igre u učionicu, tako da va&scaron;i učenici budu motivirani dok uče i zabavljaju se.</p>
 
                     <p>Pogledajte video i saznajte kako da otpočnete.</p>
 

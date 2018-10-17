@@ -24,7 +24,7 @@
                                 <div class="text-base text-black">Alessandro Bogliolo</div></a></div>
                         <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning_card_default.png"><div class="text-xl">Skaitmeninis mąstymas ir problemų sprendimas</div>
                                 <div class="text-base text-black">Miles Berry</div></a></div>
-                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning_card_default.png"><div class="text-xl">Vizualinis programavimas. Įvadas į &bdquo;Sratch&ldquo;</div>
+                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning_card_default.png"><div class="text-xl">Vizualinis programavimas. Įvadas į &bdquo;Scratch&ldquo;</div>
                                 <div class="text-base text-black">Margo Tinawi</div></a></div>
                         <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning_card_default.png"><div class="text-xl">Edukacinių žaidimų kūrimas su &bdquo;Scratch&ldquo;</div>
                                 <div class="text-base text-black">Jes&uacute;s Moreno Le&oacute;n</div></a></div>
