@@ -9427,6 +9427,7 @@ body:not(.device-touch) .clients-grid li a {
 .team-content {
     margin-top: 15px;
     color: #777;
+    word-break: break-word;
 }
 
 .team-content p:last-child { margin-bottom: 0; }
