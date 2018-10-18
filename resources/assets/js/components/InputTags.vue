@@ -1,6 +1,6 @@
 <template>
     <div>
-        <input-tag :tags.sync="tagsArray"></input-tag>
+        <input-tag :tags.sync="tagsArray" :addTagOnBlur="addTagOnBlur"></input-tag>
         <input type="hidden" name="tags" :value="tagsArray">
     </div>
 </template>
@@ -13,7 +13,8 @@
         props: ['value'],
         data() {
             return {
-                tagsArray: this.value ? this.value.split(',') : []
+                tagsArray: this.value ? this.value.split(',') : [],
+                addTagOnBlur: true
             }
         }
     }
