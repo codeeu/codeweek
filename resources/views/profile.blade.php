@@ -54,6 +54,14 @@
                 @endcomponent
                 <br/>
                 <br/>
+
+                <p>
+                    <input type="checkbox" id="privacy" name="feature"
+                           value="privacy" />
+                    <label for="privacy">I have read and agree with the Privacy Police terms described on this <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/CodeWeek+Privacy+Statement+Contact+Points.pdf">document</a>.</label>
+                </p>
+
+
                 <div class="form-group">
                     <button type="submit" class="btn btn-default">Update</button>
                 </div>
