@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Certificate;
 use App\Event;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -156,6 +157,63 @@ class ReportEventTest extends TestCase
             ->assertDontSee($alreadyReportedEvent->title)
             ->assertDontSee($futureEvent->title)
         ;
+    }
+
+    /** @test */
+    public function text_should_not_be_detected_as_greek(){
+
+        $certificate = new Certificate($this->event);
+        $this->assertFalse($certificate->is_greek());
+
+    }
+
+    /** @test */
+    public function text_should_be_detected_as_greek(){
+
+        $this->event->name_for_certificate = "Λιανού Κυριακή - Lianou Kiriaki 10ο Δημοτικό Σχολείο Αιγάλεω";
+        $certificate = new Certificate($this->event);
+        $this->asserttrue($certificate->is_greek());
+
+
+    }
+
+    /** @test */
+    public function text_should_be_detected_as_greek_with_all_uppercase(){
+
+        $this->event->name_for_certificate = "ΖΑΧΑΡΩΦ ΣΟΝΙΑ";
+        $certificate = new Certificate($this->event);
+        $this->asserttrue($certificate->is_greek());
+
+
+    }
+
+    /** @test */
+    public function text_should_be_detected_as_greek_with_one_greek_char(){
+
+        $this->event->name_for_certificate = "This is a Σ";
+        $certificate = new Certificate($this->event);
+        $this->asserttrue($certificate->is_greek());
+
+
+    }
+
+    /** @test */
+    public function text_should_not_be_detected_as_greek_with_one_special_char(){
+
+        $this->event->name_for_certificate = "Teacher Di Lella Lucia and the 1D con l’evento  “Di Pixel in Pixel.. cosa apparirà?:stuck_out_tongue_winking_eye:";
+        $certificate = new Certificate($this->event);
+        $this->assertfalse($certificate->is_greek());
+
+
+    }
+
+    /** @test */
+    public function text_should_not_be_detected_as_greek_with_several_special_chars(){
+
+        $this->event->name_for_certificate = 'Nemyriv Educational Establishment "Comprehensive Shool of I-III grades №2-lyceum" - of Nemyriv town Concil Vinnytsia Region';
+        $certificate = new Certificate($this->event);
+        $this->assertfalse($certificate->is_greek());
+
     }
 
 
