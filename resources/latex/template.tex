@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
+\usepackage[T2A,T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[russian,english]{babel}
+\usepackage[english, russian]{babel}
 \usepackage{mathpazo}
 \renewcommand{\familydefault}{\rmdefault}
 \usepackage[landscape,a4paper]{geometry}
@@ -11,7 +12,6 @@
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage{eso-pic}
-\usepackage[T2A,T1]{fontenc}
 \usepackage{textcomp}
 
 \newcommand\BackgroundPic{%
@@ -49,9 +49,9 @@ keepaspectratio]{images/background.png}%
 }
 
 \vspace{0.4cm}
-
-\Huge{that \textbf{<CERTIFICATE_HOLDER_NAME>
-}}
+\begin{otherlanguage*}{russian}
+\Huge{that \textbf{<CERTIFICATE_HOLDER_NAME>}}
+\end{otherlanguage*}
 
 \vspace{0.4cm}
 
