@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage[T2A,T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[english, russian]{babel}
+\usepackage[greek,russian,english]{babel}
 \usepackage{mathpazo}
 \renewcommand{\familydefault}{\rmdefault}
 \usepackage[landscape,a4paper]{geometry}
@@ -13,6 +13,11 @@
 \usepackage{url}
 \usepackage{eso-pic}
 \usepackage{textcomp}
+\usepackage{paratype} % tlmgr install paratype
+\usepackage{tgpagella}
+
+\usepackage{substitutefont}
+\substitutefont{T2A}{\rmdefault}{PTSerif-TLF}
 
 \newcommand\BackgroundPic{%
 \put(0,0){%
