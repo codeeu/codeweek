@@ -24,7 +24,8 @@ class UpdateUserTest extends TestCase
             'bio' => 'Changed Bio',
             'twitter' => 'Changed Twitter',
             'website' => 'Changed Website',
-            'country_iso' => 'AA'
+            'country_iso' => 'AA',
+            'privacy' => 1
         ]);
 
         tap($user->fresh(), function ($user) {
@@ -34,6 +35,23 @@ class UpdateUserTest extends TestCase
             $this->assertEquals('Changed Twitter', $user->twitter);
             $this->assertEquals('Changed Website', $user->website);
             $this->assertEquals('AA', $user->country_iso);
+            $this->assertEquals(1, $user->privacy);
+
+        });
+
+        $this->patch('user', [
+            'firstname' => 'Changed firstname',
+            'lastname' => 'Changed lastname',
+            'bio' => 'Changed Bio',
+            'twitter' => 'Changed Twitter',
+            'website' => 'Changed Website',
+            'country_iso' => 'AAA',
+            'privacy' => 0
+        ]);
+
+        tap($user->fresh(), function ($user) {
+            $this->assertEquals('AAA', $user->country_iso);
+            $this->assertEquals(0, $user->privacy);
 
         });
     }
