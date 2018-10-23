@@ -127,3 +127,12 @@ html{
 .menu-li-item{
     margin-left:5px;
 }
+
+.eventsm li a:hover .fa-circle, .eventsm li a:focus .fa-circle, .eventsm li a.active .fa-circle {
+    color: #ff854e;
+}
+
+.fa-download, .fa-edit {
+    color: #478ac8;
+    transition: all 0.3s linear 0s;
+}
