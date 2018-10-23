@@ -33,9 +33,9 @@
                       class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
                       action="/event/report/{{$event->id}}">
                     {{csrf_field()}}
-                    @component('components.report.form-field',['field_name'=>'participants_count','type'=>'number','required'=>true,'help'=>'number_required'])@endcomponent
-                    @component('components.report.form-field',['field_name'=>'average_participant_age','type'=>'number','required'=>true,'help'=>'number_required'])@endcomponent
-                    @component('components.report.form-field',['field_name'=>'percentage_of_females','type'=>'number','required'=>true,'help'=>'number_required'])@endcomponent
+                    @component('components.report.form-field',['event'=>$event,'field_name'=>'participants_count','type'=>'number','required'=>true,'help'=>'number_required'])@endcomponent
+                    @component('components.report.form-field',['event'=>$event,'field_name'=>'average_participant_age','type'=>'number','required'=>true,'help'=>'number_required'])@endcomponent
+                    @component('components.report.form-field',['event'=>$event,'field_name'=>'percentage_of_females','type'=>'number','required'=>true,'help'=>'number_required'])@endcomponent
 
                     <div class="mb-8">
                         <div class="block text-grey-darkest text-3xl font-normal mb-2 font-bold" for="codeweek_for_all_participation_code">
@@ -46,7 +46,7 @@
 
                     </div>
 
-                    @component('components.report.form-field',['field_name'=>'name_for_certificate','type'=>'text','required'=>true,'help'=>'name_for_certificate.help'])@endcomponent
+                    @component('components.report.form-field',['event'=>$event,'field_name'=>'name_for_certificate','type'=>'text','required'=>true,'help'=>'name_for_certificate.help'])@endcomponent
 
                     <p class="mb-4 text-grey-darkest">
                         @lang('report.phrase4')
