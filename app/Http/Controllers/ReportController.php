@@ -12,10 +12,11 @@ use Illuminate\Http\Request;
 class ReportController extends Controller
 {
 
-    public function list(){
+    public function list()
+    {
         $reportable_events = ReportableEventsQuery::reportable();
 
-        return view('report.list', ['events'=>$reportable_events]);
+        return view('report.list', ['events' => $reportable_events]);
     }
 
     public function index(Event $event)
@@ -46,9 +47,8 @@ class ReportController extends Controller
         $event->update($input);
 
 
-        if (is_null($event->certificate_url)) {
-            $event->update(['certificate_url'=>(new Certificate($event))->generate()]);
-        }
+        $event->update(['certificate_url' => (new Certificate($event))->generate()]);
+
 
         return view('report.thankyou', compact('event'));
     }
