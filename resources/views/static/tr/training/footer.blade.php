@@ -1,0 +1,5 @@
+<h2>Aktivitenizi Kod Haftası Haritasına eklemeyi unutmayın!</h2>
+
+<p>Sınıfınızda, halka a&ccedil;ık ziyaret g&uuml;nlerinde ya da okulunuzdaki bir etkinlikte kolayca ders organize edebilirsiniz. Uygun bir tarih bulup aktivitenizi <a href="/events">Kod Haftası haritasına</a> eklemeniz yeterli. T&uuml;m aktivite organizat&ouml;rlerine &ccedil;abalarından dolayı katılım sertifikası verilecektir.</p>
+
+<p>Birbirinden hevesli &ouml;ğretmenlerin yer aldığı uluslararası bir grubun par&ccedil;ası olmak isterseniz, <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">AB Kod Haftası Facebook &ouml;ğretmenler grubuna</a> katılın! Bunu bir adım daha &ouml;teye taşımak ve &uuml;lkenizdeki ya da diğer &uuml;lkelerdeki okullarla iş birliği yapmak isterseniz - <a href="codeweek4all">Herkes i&ccedil;in Kod Haftası m&uuml;cadelesine</a> katılın.</p>

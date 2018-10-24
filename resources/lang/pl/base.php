@@ -40,7 +40,9 @@ return [
         'ba' => 'bośniacki',
         'mk' => 'macedoński',
         'cnr'=> 'czarnogórski',
-        'sr' => 'serbski'
+        'sr' => 'serbski',
+        'mt' => 'maltański',
+        'tr' => 'turecki'
 
     ],
 

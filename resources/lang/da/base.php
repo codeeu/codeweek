@@ -40,7 +40,9 @@ return [
         'ba' => 'Bosnisk',
         'mk' => 'Makedonsk',
         'me'=> 'Montenegrinsk',
-        'rs' => 'Serbisk'
+        'rs' => 'Serbisk',
+        'mt' => 'Maltesisk',
+        'tr' => 'Tyrkisk'
     ],
 
     'resources_local_title'=>'Kodningsressourcer fra',

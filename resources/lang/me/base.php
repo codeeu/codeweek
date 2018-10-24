@@ -40,7 +40,9 @@ return [
         'ba' => 'bosanski',
         'mk' => 'makedonski',
         'cnr'=> 'crnogorski',
-        'sr' => 'srpski'
+        'sr' => 'srpski',
+        'mt' => 'malteški',
+        'tr' => 'turski'
     ],
 
     'resources_local_title'=>'Materijali za programiranje iz',
