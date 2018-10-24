@@ -40,7 +40,9 @@ return [
         'ba' => 'bosniančina',
         'mk' => 'macedónčina',
         'me'=> 'čiernohorčina',
-        'rs' => 'srbčina'
+        'rs' => 'srbčina',
+        'mt' => 'maltčina',
+        'tr' => 'turečtina'
     ],
 
     'resources_local_title'=>'Zdroje o programovaní z',

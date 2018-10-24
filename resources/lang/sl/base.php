@@ -40,7 +40,9 @@ return [
         'ba' => 'bosanščina',
         'mk' => 'makedonščina',
         'me' => 'črnogorščina',
-        'rs' => 'srbščina'
+        'rs' => 'srbščina',
+        'mt' => 'malteščina',
+        'tr' => 'turščina'
     ],
 
     'resources_local_title'=>'Programerski viri iz',

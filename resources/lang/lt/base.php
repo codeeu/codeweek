@@ -40,7 +40,9 @@ return [
         'ba' => 'bosnių',
         'mk' => 'makedonų',
         'me'=> 'juodkalniečių',
-        'rs' => 'serbų'
+        'rs' => 'serbų',
+        'mt' => 'Maltiečių',
+        'tr' => 'Turkų'
     ],
 
     'resources_local_title'=>'Programavimo iđtekliai iđ',

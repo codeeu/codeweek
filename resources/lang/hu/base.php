@@ -40,8 +40,9 @@ return [
         'ba' => 'bosnyák',
         'mk' => 'macedón',
         'me' => 'montenegrói',
-        'rs' => 'szerb'
-
+        'rs' => 'szerb',
+        'mt' => 'máltai',
+        'tr' => 'török'
     ],
 
     'resources_local_title'=>'Programozási erõforrások innen:',

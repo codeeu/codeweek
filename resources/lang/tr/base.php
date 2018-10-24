@@ -35,7 +35,12 @@ return [
         'es' => 'İspanyolca',
         'fi' => 'Fince',
         'lt' => 'Litvanca',
-        'sv' => 'İsveççe'
+        'sv' => 'İsveççe',
+        'al' => 'Arnavutça',
+        'ba' => 'Boşnakça',
+        'mk' => 'Makedonca',
+        'me'=>  'Karadağlıca',
+        'rs' =>  'Sırpça'
     ],
 
     'resources_local_title'=>'Kodlama kaynakları',
