@@ -40,8 +40,9 @@ return [
         'ba' => 'Boshnjakisht',
         'mk' => 'Maqedonisht',
         'me'=> 'Malazisht',
-        'rs' => 'Serbisht'
-
+        'rs' => 'Serbisht',
+        'mt' => 'Maltezisht',
+        'tr' => 'Turqisht'
     ],
 
     'resources_local_title'=>'Burimet e kodimit nga',

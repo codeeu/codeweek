@@ -1,0 +1,5 @@
+<h2>Ne zaboravite da dodate va&scaron;u aktivnost na mapu događaja Nedelje programiranja!</h2>
+
+<p>Možete lako da organizujete čas u svojoj učionici, otvoreni dan ili događaj u svojoj &scaron;koli. Samo odredite datum i prijavite svoju aktivnost na <a href="/events">mapi Nedelje programiranja</a>. Svi organizatori aktivnosti dobiće sertifikat o uče&scaron;ću za svoj trud.</p>
+
+<p>Ako želite da se povežete sa međunarodnom grupom nastavnika entuzijasta, pridružite se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Facebook grupi EU nedelje programiranja za nastavnike</a>! Da biste napravili korak dalje i sarađivali sa drugim &scaron;kolama u svojoj zemlji ili van granica &ndash; pridružite se <a href="codeweek4all">izazovu Nedelja programiranja za sve</a>.</p>

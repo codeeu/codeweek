@@ -40,8 +40,9 @@ return [
         'ba' => 'bosnia',
         'mk' => 'makedonia',
         'cnr'=> 'montenegro',
-        'sr' => 'serbia'
-
+        'sr' => 'serbia',
+        'mt' => 'malta ',
+        'tr' => 'turkki'
     ],
 
     'resources_local_title'=>'Koodausaineistoja maasta',

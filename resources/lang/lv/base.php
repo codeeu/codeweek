@@ -40,7 +40,9 @@ return [
         'ba' => 'Bosniešu',
         'mk' => 'Maķedoniešu',
         'me'=> 'Melnkalniešu',
-        'rs' => 'Serbu'
+        'rs' => 'Serbu',
+        'mt' => 'maltiešu',
+        'tr' => 'turku'
     ],
 
     'resources_local_title'=>'Programmēšanas resursi no',

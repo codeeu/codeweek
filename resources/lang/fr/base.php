@@ -40,8 +40,9 @@ return [
         'ba' => 'Bosnien',
         'mk' => 'Macédonien',
         'me' => 'Monténégrin',
-        'rs' => 'Serbe'
-
+        'rs' => 'Serbe',
+        'mt' => 'Maltais',
+        'tr' => 'Turc'
     ],
 
     'resources_local_title'=>'Ressources pour le codage en',
