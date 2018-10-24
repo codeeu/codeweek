@@ -35,7 +35,12 @@ return [
         'es' => 'Spanjol',
         'fi' => 'Finlandiż',
         'lt' => 'Litwan',
-        'sv' => 'Żvediż'
+        'sv' => 'Żvediż',
+        'al' => 'Albaniż',
+        'ba' => 'Bożnijak',
+        'mk' => 'Maċedonjan',
+        'me'=>  'Montenegrin',
+        'rs' =>  'Serb'
     ],
 
     'resources_local_title'=>'Ikkowdjar ta’ riżorsi minn',

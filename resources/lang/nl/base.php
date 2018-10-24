@@ -40,7 +40,9 @@ return [
         'ba' => 'Bosnisch',
         'mk' => 'Macedonisch',
         'me'=> 'Montenegrijns',
-        'rs' => 'Servisch'
+        'rs' => 'Servisch',
+        'mt' => 'Maltees',
+        'tr' => 'Turks '
     ],
 
     'resources_local_title'=>'Hulpmiddelen voor programmeren van',
