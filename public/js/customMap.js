@@ -48,12 +48,13 @@ L.custom = {
                     marker.bindPopup(val.id);
                     markersListPerCountry.push(marker);
                 });
-                var markers = L.markerClusterGroup({showCoverageOnHover: false, maxClusterRadius: 120});
+                var markers = L.markerClusterGroup({showCoverageOnHover: false, maxClusterRadius: 120, chunkedLoading: true});
                 markers.addLayers(markersListPerCountry);
-                layers.push(markers);
+                map.addLayer(markers);
+                //layers.push(markers);
             });
 
-            map.addLayer(L.layerGroup(layers));
+            //map.addLayer(L.layerGroup(layers));
 
             // process next components
             $wt._queue("next");
