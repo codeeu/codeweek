@@ -45,7 +45,7 @@ class EventsController extends Controller
 
             $events = $events->groupBy('country');
 
-            Cache::add('events' . $year, $events, 1);
+            Cache::add('events' . $year, $events, 5);
         }
 
 
