@@ -11,7 +11,8 @@ class EventTransformer extends Transformer
 
         return [
             'id' => $event['id'],
-            'geoposition' => $event['geoposition']
+            'geoposition' => $event['geoposition'],
+            'country' => $event['country_iso']
         ];
 
     }
