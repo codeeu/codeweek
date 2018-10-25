@@ -20,10 +20,12 @@ class ReminderHelper
 
             ->where("report_notifications_count","<",3)
             ->whereYear('end_date', '=', Carbon::now('Europe/Brussels')->year)
+            ->where("users.email","<>","")
             ->where("end_date",'<=', Carbon::now())
-
             ->groupBy("users.email")
             ->distinct('users.email')
+            ->orderBy("users.id")
+            ->limit(2)
             ->get();
 
         return $result;
