@@ -10,6 +10,7 @@ use App\Http\Transformers\EventTransformer;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Resources\Event as EventResource;
+use Illuminate\Support\Facades\Cache;
 
 
 class EventsController extends Controller
@@ -32,9 +33,20 @@ class EventsController extends Controller
 
         $year = $request->input("year") ? $request->input("year") : Carbon::now()->year;
 
-        $events = Event::getByYear($year);
+        if (Cache::has('events' . $year)) {
 
-        $events = $this->eventTransformer->transformCollection($events);
+            $events = Cache::get('events' . $year);
+
+        }else {
+
+            $events = Event::getByYear($year);
+
+            $events = $this->eventTransformer->transformCollection($events);
+
+            $events = $events->groupBy('country');
+
+            Cache::add('events' . $year, $events, 1);
+        }
 
 
         if ($request->wantsJson()) {
