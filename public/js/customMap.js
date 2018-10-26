@@ -8,6 +8,8 @@ L.custom = {
             background: "osmec"
         });
 
+        map.menu.remove("print");
+
         var success = function (data) {
 
             var markerOnClick = function(e){
@@ -74,9 +76,20 @@ L.custom = {
             // process next components
             $wt._queue("next");
         }
+
+        $('#id_year').on('change', function () {
+            window.location = window.App.url + '/events?year=' + this.value;
+        });
+
+        function param(name) {
+            return (location.search.split(name + '=')[1] || '').split('&')[0];
+        }
+
+        var year = param('year') ? param('year') : 2018;
+
         $.ajax({
             dataType: "json",
-            url: "api/event/list?year=2018",
+            url: "api/event/list?year="+ year,
             success: success
         });
 
