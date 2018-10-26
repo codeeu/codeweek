@@ -13150,3 +13150,22 @@ textarea.border-form-control {
     position: relative;
     padding-top: 10px;
 }
+
+#past-events{
+    top:auto;
+    position: absolute;
+    bottom: -1px;
+    right: 51px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 25px;
+    z-index: 0;
+    border-style: solid;
+    border-color: #444;
+    border-width: 2px 0 0 2px;
+    background-color: whitesmoke;
+    background: rgba(245,245,245,0.8);
+    font-size: 14px;
+    border-radius: 15px 0 0 0;
+}
