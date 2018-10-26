@@ -3,8 +3,12 @@
 namespace App\Console\Commands;
 
 use App\Helpers\ReminderHelper;
+use App\User;
+use Carbon\Carbon;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 
 class RemindCreators extends Command
@@ -46,16 +50,26 @@ class RemindCreators extends Command
         $creators = ReminderHelper::getCreatorsWithReportableEvents();
 
         //Send one email per creator.
-        dd(count($creators));
 
-        //Increment the reports count
+        foreach ($creators as $creator) {
 
-//        $events = EventHelper::getPendindEvents();
-//        foreach ($events as $event) {
-//            $ambassadors = AmbassadorHelper::getByCountry($event->country_iso);
-//            foreach ($ambassadors as $ambassador) {
-//                Mail::to($ambassador->email)->queue(new \App\Mail\RemindAmbassador($ambassador));
-//            }
-//        }
+            $user = User::find($creator->creator_id);
+            Mail::to($user->email)->queue(new \App\Mail\RemindCreator($user));
+        }
+
+
+        $events = ReminderHelper::getReportableEvents();
+
+        $events
+            ->update([
+                'report_notifications_count'=> DB::raw('report_notifications_count+1'),
+                'last_report_notification_sent_at' => Carbon::now()
+            ]);
+
+
+
+
+
+
     }
 }
