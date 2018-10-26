@@ -10,6 +10,8 @@ L.custom = {
 
         map.menu.remove("print");
 
+        var markersCountryLayers = [];
+
         var success = function (data) {
 
             var markerOnClick = function(e){
@@ -32,14 +34,18 @@ L.custom = {
                 });
             }
 
-            var layers = [];
+            if (markersCountryLayers.length > 0){
+                $.each(markersCountryLayers, function (key, countryLayer) {
+                    countryLayer.clearLayers();
+                })
+                markersCountryLayers = [];
+            }
             $.each(data, function (key, country) {
                 var markersListPerCountry = [];
                 $.each(country, function (key, val) {
                     var coordinates = val.geoposition.split(',');
                     var marker = L.marker(L.latLng(coordinates[0], coordinates[1]), {id: val.id});
                     marker.on('click', markerOnClick);
-                    //marker.bindPopup('<div>val.id</div>');
                     markersListPerCountry.push(marker);
                 });
                 var markers = L.markerClusterGroup({
@@ -70,6 +76,7 @@ L.custom = {
                     }
                 });
                 markers.addLayers(markersListPerCountry);
+                markersCountryLayers.push(markers);
                 map.addLayer(markers);
             });
 
@@ -78,22 +85,24 @@ L.custom = {
         }
 
         $('#id_year').on('change', function () {
-            window.location = window.App.url + '/events?year=' + this.value;
+            //window.location = window.App.url + '/events?year=' + this.value;
+            getEvents(this.value);
         });
 
         function param(name) {
             return (location.search.split(name + '=')[1] || '').split('&')[0];
         }
 
+        function getEvents(year) {
+            $.ajax({
+                dataType: "json",
+                url: "api/event/list?year="+ year,
+                success: success
+            });
+        }
+
         var year = param('year') ? param('year') : 2018;
-
-        $.ajax({
-            dataType: "json",
-            url: "api/event/list?year="+ year,
-            success: success
-        });
-
-        $wt._queue("next");
+        getEvents(year);
 
     }
 }
