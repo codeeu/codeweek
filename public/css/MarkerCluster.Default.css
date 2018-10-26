@@ -58,3 +58,44 @@
 .marker-cluster span {
 	line-height: 30px;
 	}
+
+.mycluster {
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	opacity: 0.9 !important;
+}
+
+.mycluster div{
+	color:#000;
+	font-weight: bold;
+	flex: 1;
+}
+
+.mycluster.size1{
+	background-color: #2196F3;
+	box-shadow: 0px 0px 0px 4px rgba(33,150,243,0.3);
+	padding: 6px;
+}
+.mycluster.size2{
+	background-color: #FBC02D;
+	box-shadow: 0px 0px 0px 4px rgba(251,192,45,0.3);
+	padding: 10px;
+}
+.mycluster.size3{
+	background-color: #F44336;
+	box-shadow: 0px 0px 0px 4px rgba(244,67,54,0.3);
+	padding: 12px;
+}
+.mycluster.size4{
+	background-color: #E91E63;
+	box-shadow: 0px 0px 0px 4px rgba(233,30,99,0.3);
+	padding: 15px;
+}
+.mycluster.size5{
+	background-color: #9C27B0;
+	box-shadow: 0px 0px 0px 4px rgba(156,39,176,0.3);
+	padding: 18px;
+}
