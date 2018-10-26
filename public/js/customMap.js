@@ -9,52 +9,67 @@ L.custom = {
         });
 
         var success = function (data) {
-            /*var featureCollection = {
-                type: 'FeatureCollection',
-                features: data
+
+            var markerOnClick = function(e){
+                var id = e.target.options.id;
+                $.ajax({
+                    dataType: "json",
+                    url: "api/event/detail?id=" + id,
+                    success: function (res) {
+                        var event = res.data;
+
+                        var content = '<div><h4><a href="' + event.path + '" class="map-marker">' + event.title + '</a></h4><div style="display:flex;align-items: center;">' +
+                            '<img src="' + event.picture + '" class="img-polaroid marker-buble-img" style="width:100px;height:100px;">' +
+                            '<p style="overflow:hidden;">' + event.description + '</p>';
+
+                        var popup = L.popup({maxWidth:600})
+                            .setContent(content)
+
+                        e.target.bindPopup(popup).openPopup();
+                    }
+                });
             }
-
-            map.markers.add( featureCollection );*/
-
-            /*var markers = L.markerClusterGroup({
-                showCoverageOnHover: false
-                /!*iconCreateFunction: function(cluster) {
-                    return L.divIcon({ html: '<b>' + cluster.getChildCount() + '</b>' });
-                }*!/
-            });
-            var markerList = [];
-
-            for (var i = 0; i < data.length; i++) {
-                /!*var marker = L.marker(L.latLng(data[i].geometry.coordinates[1], data[i].geometry.coordinates[0]), { title: data[i].properties.name });
-                marker.bindPopup(data[i].properties.name);*!/
-
-                var coordinates = data[i].geoposition.split(',');
-                var marker = L.marker(L.latLng(coordinates[0],coordinates[1]), { title: data[i].id });
-                marker.bindPopup(data[i].id);
-
-                markerList.push(marker)
-            }
-
-            markers.addLayers(markerList);
-            map.addLayer(markers);*/
-
 
             var layers = [];
             $.each(data, function (key, country) {
                 var markersListPerCountry = [];
                 $.each(country, function (key, val) {
                     var coordinates = val.geoposition.split(',');
-                    var marker = L.marker(L.latLng(coordinates[0], coordinates[1]), {title: val.id});
-                    marker.bindPopup(val.id);
+                    var marker = L.marker(L.latLng(coordinates[0], coordinates[1]), {id: val.id});
+                    marker.on('click', markerOnClick);
+                    //marker.bindPopup('<div>val.id</div>');
                     markersListPerCountry.push(marker);
                 });
-                var markers = L.markerClusterGroup({showCoverageOnHover: false, maxClusterRadius: 120, chunkedLoading: true});
+                var markers = L.markerClusterGroup({
+                    showCoverageOnHover: false,
+                    maxClusterRadius: 120,
+                    chunkedLoading: true,
+                    iconCreateFunction: function(cluster) {
+                        var total = cluster.getAllChildMarkers().length;
+                        var iconSize;
+                        var className = "mycluster ";
+                        if (total<= 10){
+                            iconSize = L.point(30, 30);
+                            className += "size1";
+                        }else if(total <=100){
+                            iconSize = L.point(35, 35);
+                            className += "size2";
+                        }else if(total <= 1000) {
+                            iconSize = L.point(40, 40);
+                            className += "size3";
+                        }else if(total <= 10000) {
+                            iconSize = L.point(45, 45);
+                            className += "size4";
+                        }else {
+                            iconSize = L.point(50, 50);
+                            className += "size5";
+                        }
+                        return L.divIcon({ html: '<div>'+total+'</div>', className: className, iconSize: iconSize });
+                    }
+                });
                 markers.addLayers(markersListPerCountry);
                 map.addLayer(markers);
-                //layers.push(markers);
             });
-
-            //map.addLayer(L.layerGroup(layers));
 
             // process next components
             $wt._queue("next");
@@ -64,10 +79,6 @@ L.custom = {
             url: "api/event/list?year=2018",
             success: success
         });
-
-        /*L.esri.Cluster.featureLayer({
-            url: 'http://codeweek.test/api/event/list?year=2018'
-        }).addTo(map);*/
 
         $wt._queue("next");
 
