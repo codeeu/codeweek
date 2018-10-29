@@ -14,7 +14,7 @@
 
 
                             <h2 data-caption-animate="fadeInUp">CODEWEEK.EU</h2>
-                            <p data-caption-animate="fadeInUp" data-caption-delay="200">6&mdash;21&nbsp;октомври&nbsp;2018&nbsp;г. <a
+                            <p data-caption-animate="fadeInUp" data-caption-delay="200"><a
                                         href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a></p>
                         </div>
                     </div>
