@@ -48,27 +48,22 @@ class RemindCreators extends Command
 
         //Get email from creators having at least one event that has less than 3 reminders sent
         $creators = ReminderHelper::getCreatorsWithReportableEvents();
-
+        Log::info(count($creators) . " emails will be sent");
         //Send one email per creator.
-
         foreach ($creators as $creator) {
-
             $user = User::find($creator->creator_id);
             Mail::to($user->email)->queue(new \App\Mail\RemindCreator($user));
         }
-
+        Log::info(count($creators) . " emails have been queued");
 
         $events = ReminderHelper::getReportableEvents();
-
-        $events
+        Log::info(count($events->get()) . " events will be updated");
+        $updated = $events
             ->update([
-                'report_notifications_count'=> DB::raw('report_notifications_count+1'),
+                'report_notifications_count' => DB::raw('report_notifications_count+1'),
                 'last_report_notification_sent_at' => Carbon::now()
             ]);
-
-
-
-
+        Log::info($updated . " events have been updated with success.");
 
 
     }

@@ -13,7 +13,17 @@ class ReminderHelper
     public static function getCreatorsWithReportableEvents()
     {
 
-        $result = self::getReportableEvents()
+        $result = Event::whereNull("reported_at")
+            ->join("users", "creator_id", "=", "users.id")
+            ->whereStatus("APPROVED")
+            ->where("report_notifications_count", "<", 3)
+            ->whereYear('end_date', '=', Carbon::now('Europe/Brussels')->year)
+            ->where("users.email", "<>", "")
+            ->where(function ($query) {
+                $query->whereNull("last_report_notification_sent_at")
+                    ->orWhere('last_report_notification_sent_at', '<', Carbon::now()->subDays(7));
+            })
+            ->where("end_date", '<=', Carbon::now())
             ->groupBy("users.email")
             ->distinct('users.email')
             ->orderBy("users.id")
@@ -30,17 +40,15 @@ class ReminderHelper
     public static function getReportableEvents()
     {
         $result = Event::whereNull("reported_at")
-            ->join("users", "creator_id", "=", "users.id")
             ->whereStatus("APPROVED")
             ->where("report_notifications_count", "<", 3)
             ->whereYear('end_date', '=', Carbon::now('Europe/Brussels')->year)
-            ->where("users.email", "<>", "")
             ->where(function ($query) {
                 $query->whereNull("last_report_notification_sent_at")
                     ->orWhere('last_report_notification_sent_at', '<', Carbon::now()->subDays(7));
             })
-            ->where("end_date", '<=', Carbon::now())
-            ->limit(50);
+            ->where("end_date", '<=', Carbon::now());
+
 
         return $result;
 
