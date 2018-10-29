@@ -18,6 +18,7 @@ class EventsTest extends TestCase
     public function setup()
     {
         parent::setUp();
+        $this->seed('RolesAndPermissionsSeeder');
         $this->event = create('App\Event', ["country_iso" => create('App\Country')->iso, "status"=>"APPROVED"]);
 
         $this->event->audiences()->saveMany(factory('App\Audience', 3)->make());
@@ -81,6 +82,59 @@ class EventsTest extends TestCase
             $this->get('/view/' . $this->event->id . '/random')
                 ->assertSee($value->name);
         }
+
+    }
+
+    /** @test */
+    public function visitors_cant_see_the_user_email()
+    {
+
+        $event = create('App\Event', ["user_email"=>"foo@bar.com","country_iso" => create('App\Country')->iso, "status"=>"APPROVED"]);
+
+        $this->get('/view/' . $event->id . '/random')
+            ->assertDontSee('foo@bar.com');
+
+    }
+
+    /** @test */
+    public function ambassadors_from_other_countries_cant_see_the_user_email()
+    {
+
+        $ambassador = create('App\User', ['country_iso' => 'FR'])->assignRole('ambassador');
+        $this->signIn($ambassador);
+
+        $event = create('App\Event', ["user_email"=>"foo@bar.com","country_iso" => "BE", "status"=>"APPROVED"]);
+
+        $this->get('/view/' . $event->id . '/random')
+            ->assertDontSee('foo@bar.com');
+
+    }
+
+    /** @test */
+    public function ambassadors_from_same_country_can_see_the_user_email()
+    {
+
+        $ambassador = create('App\User', ['country_iso' => 'FR'])->assignRole('ambassador');
+        $this->signIn($ambassador);
+
+        $event = create('App\Event', ["user_email"=>"foo@bar.com","country_iso" => "FR", "status"=>"APPROVED"]);
+
+        $this->get('/view/' . $event->id . '/random')
+            ->assertSee('foo@bar.com');
+
+    }
+
+    /** @test */
+    public function admins_can_see_the_user_email()
+    {
+
+        $admin = create('App\User')->assignRole('super admin');
+        $this->signIn($admin);
+
+        $event = create('App\Event', ["user_email"=>"foo@bar.com", "status"=>"APPROVED"]);
+
+        $this->get('/view/' . $event->id . '/random')
+            ->assertSee('foo@bar.com');
 
     }
 
