@@ -64,6 +64,13 @@ class Event extends Model
     protected static $logFillable = true;
 
 
+    public function getEventUrlAttribute($url){
+        if (strpos($url, "http") !== 0) return "http://" . $url;
+
+        return $url;
+    }
+
+
     public function path()
     {
         return '/view/' . $this->id . '/' . $this->slug;

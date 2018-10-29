@@ -18,6 +18,7 @@ class UserController extends Controller
         $user->update(request()->validate([
             'firstname' => 'required',
             'lastname' => 'required',
+            'privacy' => 'required',
             'country_iso' => 'nullable',
             'twitter' => 'nullable',
             'website' => 'nullable',

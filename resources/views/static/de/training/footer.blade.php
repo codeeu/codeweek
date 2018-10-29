@@ -1,0 +1,5 @@
+<h2>Vergessen Sie nicht, Ihre Aktivit&auml;t auf der Code Week-Karte zu markieren!</h2>
+
+<p>Sie k&ouml;nnen ganz einfach eine Lehrstunde in Ihrem Klassenzimmer, einen Tag der offenen T&uuml;r oder eine Veranstaltung an Ihrer Schule ausrichten. &Uuml;berlegen Sie sich nur ein Datum und registrieren Sie Ihre Aktivit&auml;t in der <a href="/events">Code Week-Karte</a>. Alle Organisatoren von Aktivit&auml;ten erhalten f&uuml;r ihre Beteiligung ein Teilnahmezertifikat.</p>
+
+<p>Treten Sie der <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU Code Week-Facebook-Gruppe f&uuml;r Lehrerinnen und Lehrer</a> bei, falls Sie sich mit einer internationalen Gruppe von begeisterten Lehrkr&auml;ften vernetzen m&ouml;chten! Nehmen Sie an der <a href="codeweek4all">Code Week 4 All Challenge</a> teil, wenn Sie noch einen Schritt weiter gehen und mit anderen Schulen in Ihrem Land oder im Ausland zusammenarbeiten m&ouml;chten.</p>

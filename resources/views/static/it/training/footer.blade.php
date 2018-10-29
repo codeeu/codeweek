@@ -1,0 +1,5 @@
+<h2>Non dimenticare di aggiungere la tua attivit&agrave; sulla mappa della settimana europea della programmazione!</h2>
+
+<p>Organizzare una lezione con la tua classe, una giornata a porte aperte o un evento nella tua scuola &egrave; semplice. Trova una data e registra la tua attivit&agrave; sulla <a href="/events">mappa della settimana europea della programmazione</a>. Ogni organizzatore ricever&agrave; un certificato di partecipazione per il proprio impegno.</p>
+
+<p>Se desideri entrare in contatto con un gruppo internazionale di insegnanti entusiasti, iscriviti al <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">gruppo Facebook per insegnanti della Settimana europea della programmazione</a>! Per fare un ulteriore passo avanti e collaborare con altre scuole nel tuo paese oppure oltre frontiera, unisciti alla <a href="codeweek4all">sfida Code Week 4 All</a>.</p>

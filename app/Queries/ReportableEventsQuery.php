@@ -35,7 +35,7 @@ class ReportableEventsQuery
             ->where('creator_id', '=', Auth::user()->id)
             ->where('reported_at', '<>', null)
             ->where('start_date', '<=', Carbon::now())
-            ->orderBy('created_at', 'desc')->paginate(6);
+            ->orderBy('created_at', 'desc')->paginate(20);
 
     }
 }
