@@ -40,6 +40,18 @@ class EventController extends Controller
     }
 
 
+    public function myreportable()
+    {
+
+        $events = Event::where('creator_id', '=', Auth::user()->id)
+            ->whereNull('reported_at')
+            ->orderBy('created_at', 'desc')->paginate(6);
+
+        return view('event.myreportable', compact('events'));
+
+    }
+
+
     /**
      * Display a listing of the resource.
      *
