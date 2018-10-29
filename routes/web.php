@@ -121,6 +121,16 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
     })->name('profile')->middleware('auth');
 });
 
+Route::get('stats', [
+    'uses' => 'StatsController@listYears',
+    'as' => 'stats'
+]);
+
+Route::get('stats/organiser', [
+    'uses' => 'StatsController@getEventsPerOrganiserType',
+    'as' => 'stats.organiser'
+]);
+
 
 Auth::routes();
 
