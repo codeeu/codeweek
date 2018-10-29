@@ -14,7 +14,7 @@
 
 
                             <h2 data-caption-animate="fadeInUp">CODEWEEK.EU</h2>
-                            <p data-caption-animate="fadeInUp" data-caption-delay="200">Del 6 al 21 de octubre de 2018 <a
+                            <p data-caption-animate="fadeInUp" data-caption-delay="200"><a
                                         href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#Codeweek</a></p>
                         </div>
                     </div>
