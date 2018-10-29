@@ -57,6 +57,9 @@ class Event extends Model
         Event::class => EventPolicy::class,
     ];
 
+    public function getJavascriptData(){
+        return $this->only(["geoposition","title","description"]);
+    }
 
     public function getDescriptionForEvent(string $eventName): string
     {
