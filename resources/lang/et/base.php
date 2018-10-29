@@ -40,7 +40,9 @@ return [
         'ba' => 'Bosnia',
         'mk' => 'Makedoonia',
         'me'=> 'Montenegro',
-        'rs' => 'Serbia'
+        'rs' => 'Serbia',
+        'mt' => 'türgi keel',
+        'tr' => 'malta keel'
     ],
 
     'resources_local_title'=>'Programmeerimismaterjale:',

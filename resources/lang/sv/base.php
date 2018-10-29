@@ -35,12 +35,19 @@ return [
         'es' => 'spanska',
         'fi' => 'finska',
         'lt' => 'litauiska',
-        'sv' => 'svenska'
+        'sv' => 'svenska',
+        'al' => 'albanska',
+        'ba' => 'bosniska',
+        'mk' => 'makedonska',
+        'cnr'=> 'montenegrinska',
+        'sr' => 'serbiska',
+        'mt' => 'Maltesiska',
+        'tr' => 'Turkiska'
     ],
 
-    'resources_local_title'=>'Kodningsresurser från',
+    'resources_local_title'=>'Kodningsresurser frĺn',
     'are_you_a_teacher' => 'Är du lärare?',
-    'get_involved_banner' => 'Klicka här för att få reda på hur du kan engagera dig!',
+    'get_involved_banner' => 'Klicka här för att fĺ reda pĺ hur du kan engagera dig!',
     'days'=>'Dagar',
     'hours'=>'Timmar',
     'minutes'=>'Minuter',

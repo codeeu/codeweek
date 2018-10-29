@@ -40,7 +40,9 @@ return [
         'ba' => 'bosniaco',
         'mk' => 'macedone',
         'me'=> 'montenegrino',
-        'rs' => 'serbo'
+        'rs' => 'serbo',
+        'mt' => 'Maltese',
+        'tr' => 'Turco'
     ],
 
     'resources_local_title'=>'Risorse di programmazione da',

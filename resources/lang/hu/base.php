@@ -35,7 +35,14 @@ return [
         'es' => 'spanyol',
         'fi' => 'finn',
         'lt' => 'litván',
-        'sv' => 'svéd'
+        'sv' => 'svéd',
+        'al' => 'albán',
+        'ba' => 'bosnyák',
+        'mk' => 'macedón',
+        'me' => 'montenegrói',
+        'rs' => 'szerb',
+        'mt' => 'máltai',
+        'tr' => 'török'
     ],
 
     'resources_local_title'=>'Programozási erõforrások innen:',

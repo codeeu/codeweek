@@ -4,6 +4,7 @@ namespace App;
 
 
 use Carbon\Carbon;
+use Log;
 use Illuminate\Support\Facades\Storage;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
@@ -35,7 +36,7 @@ class Certificate
 
         $this->customize_and_save_latex();
         $this->run_pdf_creation();
-        $s3path =  $this->copy_to_s3();
+        $s3path = $this->copy_to_s3();
         $this->update_event($s3path);
         $this->clean_temp_files();
 
@@ -44,11 +45,26 @@ class Certificate
 
     }
 
-    private function clean_temp_files(){
-        Storage::disk('latex')->delete($this->event->id.".aux");
-        Storage::disk('latex')->delete($this->event->id.".tex");
-        Storage::disk('latex')->delete($this->event->id.".pdf");
-        Storage::disk('latex')->delete($this->event->id.".log");
+    private function clean_temp_files()
+    {
+        Storage::disk('latex')->delete($this->event->id . ".aux");
+        Storage::disk('latex')->delete($this->event->id . ".tex");
+        Storage::disk('latex')->delete($this->event->id . ".pdf");
+        Storage::disk('latex')->delete($this->event->id . ".log");
+    }
+
+    public function is_greek()
+    {
+
+        $split = preg_split('/[\p{Greek}]/u', $this->name_of_certificate_holder);
+        if (count($split) > 1) {
+            Log::info("Detected as Greek: " . $this->name_of_certificate_holder);
+            return true;
+        }
+
+        return false;
+
+
     }
 
     private function tex_escape($string)
@@ -74,9 +90,10 @@ class Certificate
             , $string);
     }
 
-    protected function update_event($s3path){
+    protected function update_event($s3path)
+    {
         $this->event->update([
-            "certificate_url"=>$s3path,
+            "certificate_url" => $s3path,
             "certificate_generated_at" => Carbon::now()
         ]);
     }
@@ -87,7 +104,7 @@ class Certificate
      */
     protected function copy_to_s3(): string
     {
-        $inputStream = Storage::disk('latex')->getDriver()->readStream( $this->event->id . '.pdf');
+        $inputStream = Storage::disk('latex')->getDriver()->readStream($this->event->id . '.pdf');
         $destination = Storage::disk('s3')->getDriver()->getAdapter()->getPathPrefix() . '/certificates/' . $this->id . '.pdf';
         Storage::disk('s3')->getDriver()->putStream($destination, $inputStream);
 
@@ -100,6 +117,8 @@ class Certificate
      */
     protected function customize_and_save_latex()
     {
+        if ($this->is_greek()) $this->templateName = "template_greek.tex";
+        Log::info($this->templateName);
         //open the latex template
         $base_template = Storage::disk('latex')->get($this->templateName);
 
@@ -128,8 +147,6 @@ class Certificate
             throw new ProcessFailedException($process);
         }
     }
-
-
 
 
 }

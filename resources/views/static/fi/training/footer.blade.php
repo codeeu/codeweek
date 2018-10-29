@@ -1,0 +1,5 @@
+<h2>Muista merkit&auml; oma tapahtumasi koodausviikkokarttaan!</h2>
+
+<p>Voit helposti j&auml;rjest&auml;&auml; oppitunnin luokassasi, avoimien ovien p&auml;iv&auml;n tai tapahtuman koulullasi. Sovi vain p&auml;iv&auml; ja merkitse tapahtuma <a href="/events">koodausviikkokarttaan</a>. Jokainen tapahtumaj&auml;rjest&auml;j&auml; saa osallistumistodistuksen.</p>
+
+<p>Jos haluat pit&auml;&auml; yhteytt&auml; innokkaisiin opettajiin kansainv&auml;lisesti, liity <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU:n koodausviikon opettajien Facebook-ryhm&auml;&auml;n</a>! Jos haluat tehd&auml; enemm&auml;n, ryhdy yhteisty&ouml;h&ouml;n oman maasi tai ulkomaisten koulujen kanssa liittym&auml;ll&auml; <a href="codeweek4all">Koodausviikko kaikille -haasteeseen</a>.</p>

@@ -17,10 +17,11 @@
         "laravel-mix": "^2.1.11",
         "lodash": "^4.17.10",
         "popper.js": "^1.14.3",
-        "tailwindcss": "^0.5.3",
+        "tailwindcss": "^0.6.6",
         "vue": "^2.5.7"
     },
     "dependencies": {
+        "in-viewport": "^3.6.0",
         "laravel-mix-tailwind": "^0.1.0",
         "vue-input-tag": "^1.0.3",
         "vue-select": "^2.4.0"

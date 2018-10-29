@@ -1,0 +1,5 @@
+<h2>Nezabudnite pridať aktivitu na mapu T&yacute;ždňa programovania!</h2>
+
+<p>M&ocirc;žete jednoducho usporiadať hodinu v&nbsp;triede, deň otvoren&yacute;ch dver&iacute; alebo podujatie vo va&scaron;ej &scaron;kole. Stač&iacute; n&aacute;jsť d&aacute;tum a zaregistrovať aktivitu na <a href="/events">mape T&yacute;ždňa programovania</a>. Každ&yacute; organiz&aacute;tor aktivity z&iacute;ska za svoje &uacute;silie certifik&aacute;t za &uacute;časť.</p>
+
+<p>Ak sa chcete spojiť s&nbsp;medzin&aacute;rodnou skupinou nad&scaron;encov, pripojte sa k&nbsp;<a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">skupine učiteľov Eur&oacute;pskeho t&yacute;ždňa programovania na Facebooku</a>. Ak by ste chceli z&aacute;jsť o&nbsp;krok ďalej a spolupracovať s&nbsp;in&yacute;mi &scaron;kolami vo va&scaron;ej krajine alebo v&nbsp;zahranič&iacute;, zapojte sa do <a href="codeweek4all">v&yacute;zvy Code Week 4&nbsp;All</a> (T&yacute;ždeň programovania pre v&scaron;etk&yacute;ch).</p>

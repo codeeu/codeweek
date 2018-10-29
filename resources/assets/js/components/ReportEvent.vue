@@ -1,6 +1,6 @@
 <template>
     <div v-if="status === 'APPROVED'">
-        <div v-if="reported_at == null">
+        <div v-if="reported_at == null || certificate_url== null">
 
             <div class="flex lg:justify-between bg-orange text-white min-w-full p-4 mb-3">
                 <div>
@@ -42,6 +42,7 @@
         data() {
             return {
                 reported_at: this.event.reported_at,
+                certificate_url: this.event.certificate_url,
                 status: this.event.status
             }
         },

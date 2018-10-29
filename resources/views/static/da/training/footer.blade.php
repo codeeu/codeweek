@@ -1,0 +1,5 @@
+<h2>Glem ikke at tilf&oslash;je din aktivitet p&aring; kodeugekortet!</h2>
+
+<p>Det er let at afholde en lektion i klassev&aelig;relset, en &aring;bent hus-dag eller et arrangement p&aring; skolen. Du skal bare v&aelig;lge en dato og registrere aktiviteten p&aring; <a href="/events">kodeugekortet</a>. Alle, der afholder en aktivitet, f&aring;r et certifikat for deltagelse som tak for indsatsen.</p>
+
+<p>Hvis du gerne vil i kontakt med en international gruppe af engagerede l&aelig;rere, kan du tilmelde dig <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU&rsquo;s kodeuges Facebookgruppe for l&aelig;rere</a>! G&aring; trinnet videre, og samarbejd med andre skoler i dit land eller andre lande &ndash; v&aelig;r med i <a href="codeweek4all">Code Week 4 All-udfordringen</a>.</p>
