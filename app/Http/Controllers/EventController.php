@@ -8,6 +8,7 @@ use App\Event;
 use App\Filters\UserFilters;
 use App\Helpers\EventHelper;
 use App\Http\Requests\EventRequest;
+use App\Queries\CountriesQuery;
 use App\Queries\EventsQuery;
 use App\User;
 use Carbon\Carbon;
@@ -81,7 +82,10 @@ class EventController extends Controller
     public function create(Request $request)
     {
 //        $request->session()->flush();
-        return view('event.add');
+
+        $countries = \App\Country::all()->sortBy('name');
+
+        return view('event.add', compact('countries'));
     }
 
     public function search()
@@ -98,8 +102,6 @@ class EventController extends Controller
      */
     public function store(EventRequest $request)
     {
-
-
 
         $event = EventsQuery::store($request);
 
@@ -137,11 +139,14 @@ class EventController extends Controller
     {
         $t = $event->tags()->pluck('name')->toArray();
 
+        $countries = \App\Country::all()->sortBy('name');
+
         $tags = implode(",", $t);
         $selected_themes = $event->themes()->pluck('id')->toArray();
         $selected_audiences = $event->audiences()->pluck('id')->toArray();
+        $selected_country = $event->country()->first()->name;
 
-        return view('event.edit', compact(['event','tags','selected_themes','selected_audiences']));
+        return view('event.edit', compact(['event','tags','selected_themes','selected_audiences', 'countries', 'selected_country']));
     }
 
     /**

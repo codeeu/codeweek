@@ -22,6 +22,7 @@
     },
     "dependencies": {
         "laravel-mix-tailwind": "^0.1.0",
+        "v-autocomplete": "^1.8.2",
         "vue-input-tag": "^1.0.3",
         "vue-select": "^2.4.0"
     }

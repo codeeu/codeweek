@@ -13169,3 +13169,48 @@ textarea.border-form-control {
     font-size: 14px;
     border-radius: 15px 0 0 0;
 }
+
+.v-autocomplete-list{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 6px;
+    margin-left: -12px;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+}
+
+.v-autocomplete-input {
+    width: 100%;
+}
+
+.v-autocomplete-list-item{
+    padding:10px;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.v-autocomplete-item-active{
+    background-color: #EEEEEE;
+}
+
+.address-list-item{
+    display:flex;
+    align-items: center;
+}
+
+.address-list-item .info {
+    display: flex;
+    align-items: baseline;
+    margin-left: 5px;
+    flex-direction: column;
+}
+
+.v-autocomplete-list-item .city{
+    font-size:11px;
+}
+
+.v-autocomplete-list-item .name{
+    font-weight: bold;
+}
+
