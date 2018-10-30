@@ -26,6 +26,9 @@ class Kernel extends ConsoleKernel
     {
          $schedule->command('remind:ambassadors')
                   ->dailyAt('9:00');
+
+        $schedule->command('remind:creators')
+            ->dailyAt('10:00');
     }
 
     /**
