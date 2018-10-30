@@ -15,7 +15,6 @@ class EventsQuery
     public static function store(Request $request)
     {
 
-
         $request['status'] = 'PENDING';
 
         $request['slug'] = str_slug($request['title'], '-');
@@ -33,10 +32,7 @@ class EventsQuery
             $request['codeweek_for_all_participation_code'] = $codeweek_4_all_generated_code;
         }
 
-
-
-
-
+        $request['country_iso'] = CountriesQuery::getCountryIsoPerName($request['country'])->iso;
 
         $event = Event::create($request->toArray());
 
@@ -71,6 +67,10 @@ class EventsQuery
     public static function update(Request $request, Event $event)
     {
 
+        $request['latitude'] = explode(",", $request['geoposition'])[0];
+        $request['longitude'] = explode(",", $request['geoposition'])[1];
+
+        $request['country_iso'] = CountriesQuery::getCountryIsoPerName($request['country'])->iso;
 
         $event->update($request->toArray());
 
