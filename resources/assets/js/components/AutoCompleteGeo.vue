@@ -67,7 +67,7 @@
         updateItems (text) {
           var me = this;
           $.ajax({
-              url: "http://europa.eu/webtools/rest/gisco/api?q="+text+"&limit=5",
+              url: "https://europa.eu/webtools/rest/gisco/api?q="+text+"&limit=5",
               success: function (res) {
                     var locations = [];
                     $.each(res.features, function (key, location) {
