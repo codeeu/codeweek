@@ -5,16 +5,95 @@
 
         <ul class="nav nav-tabs" id="myTab" role="tablist" style="margin-top: 20px">
             <li class="nav-item">
-                <a class="nav-link active"  href="{{route('stats')}}" >
+                <a class="nav-link active" href="{{route('stats')}}">
+                    General metrics
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="{{route('stats.year')}}">
                     Events per year and country
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{route("stats.organiser")}}">Events per organizer type and country</a>
+                <a class="nav-link" href="{{route("stats.organiser")}}">Events per organizer type</a>
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
-            @if ($flag)
+            @if ($flag == 0)
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="yearSelector">Year </label>
+                        <select name="yearSelector" onchange="this.form.submit()">
+                            @foreach ($years as $year)
+                                @if ($year == $selectedYear)
+                                    <option selected>{{$year}}</option>
+                                @else
+                                    <option>{{$year}}</option>
+                                @endif
+                            @endforeach
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="margin-left: 20px">Search events</button>
+                </form>
+            <hr>
+            <h1>General metrics of {{$selectedYear}}</h1>
+            <hr>
+            <br>
+            <br>
+                <div class="row" style="margin-bottom:100px;">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <p>
+                            <i class="fa fa-user fa-5x" style="color:#ff8c00; margin-right: 10px"
+                               aria-hidden="true"></i>
+
+                            <b>
+                               <span style="font-size: 30pt; font-weight: bold"><counter :to="{{$creatorsWithOneEvent}}"></counter></span>
+                            </b>
+
+                            <span style="font-size: 20pt"> creators with at least 1 event.</span>
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <p>
+                            <i class="fa fa-users fa-5x" style="color:#ff8c00; margin-right: 10px"
+                               aria-hidden="true"></i>
+
+                            <b>
+                                <span style="font-size: 30pt; font-weight: bold"><counter :to="{{$totalParticipants}}"></counter></span>
+                            </b>
+
+                            <span style="font-size: 20pt"> total participants.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:100px; margin-bottom: 100%">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <p>
+                            <i class="fa fa-exclamation fa-5x" style="color:#ff8c00; margin-right: 10px"
+                               aria-hidden="true"></i>
+
+                            <b>
+                                <span style="font-size: 30pt; font-weight: bold"><counter :to="{{$eventsNotReported}}"></counter></span>
+                            </b>
+
+                            <span style="font-size: 20pt"> events not reported.</span>
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <p>
+                            <i class="fa fa-thumbs-up fa-5x" style="color:#ff8c00; margin-right: 10px"
+                               aria-hidden="true"></i>
+
+                            <b>
+                                <span style="font-size: 30pt; font-weight: bold"><counter :to="{{$eventsFinished}}"></counter></span>
+                            </b>
+
+                            <span style="font-size: 20pt"> events finished successfully.</span>
+                        </p>
+                    </div>
+                </div>
+
+            @elseif($flag == 1)
                 <form class="form-inline">
                     <div class="form-group">
                         <label for="yearSelector">Year </label>
@@ -31,7 +110,10 @@
                     <button type="submit" class="btn btn-primary" style="margin-left: 20px">Search events</button>
                 </form>
                 <hr>
-                <h1>Total events: {{$total}} events</h1>
+                <h1>Total events:
+                    <counter :to={{$total}}></counter>
+                    events
+                </h1>
                 <hr>
                 <div>{!! $chart->container() !!}</div>
                 {!! $chart->script() !!}
@@ -56,8 +138,7 @@
 
                     </tbody>
                 </table>
-
-            @else
+            @else($flag == 2)
                 <form class="form-inline">
                     <div class="form-group">
                         <label for="typeSelector">Type of organiser </label>
@@ -99,7 +180,6 @@
 
                     </tbody>
                 </table>
-
             @endif
 
         </div>
