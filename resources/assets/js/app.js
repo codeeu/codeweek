@@ -23,6 +23,7 @@ import moderateEvent from './components/ModerateEvent.vue';
 import reportEvent from './components/ReportEvent.vue';
 import question from './components/Question.vue';
 import simpleQuestion from './components/SimpleQuestion.vue';
+import counter from './components/Counter';
 
 
 
@@ -48,6 +49,7 @@ const app = new Vue({
         moderateEvent,
         reportEvent,
         question,
-        simpleQuestion
+        simpleQuestion,
+        counter
     }
 });
