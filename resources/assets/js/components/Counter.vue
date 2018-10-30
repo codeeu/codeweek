@@ -1,11 +1,5 @@
 <template>
-    <div>
-        Coucou moi c'est Alain !
-        <span v-text="count">
-
-    </span>
-    </div>
-
+        <span v-text="count"></span>
 </template>
 
 <script>

@@ -106,6 +106,23 @@ Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/mail/template/creators/registered', 'MailTemplateController@registered');
     Route::get('/mail/template/creators/approved', 'MailTemplateController@approved');
     Route::get('/mail/template/creators/rejected', 'MailTemplateController@rejected');
+    Route::get('stats', [
+        'uses' => 'StatsController@getMetrics',
+        'as' => 'stats'
+    ]);
+
+
+    Route::get('stats/events/years', [
+        'uses' => 'StatsController@getEventsPerYear',
+        'as' => 'stats.year'
+    ]);
+
+
+
+    Route::get('stats/events/organiser', [
+        'uses' => 'StatsController@getEventsPerOrganiserType',
+        'as' => 'stats.organiser'
+    ]);
 });
 
 Route::group(['middleware' => ['role:super admin|ambassador']], function () {
@@ -121,15 +138,7 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
     })->name('profile')->middleware('auth');
 });
 
-Route::get('stats', [
-    'uses' => 'StatsController@listYears',
-    'as' => 'stats'
-]);
 
-Route::get('stats/organiser', [
-    'uses' => 'StatsController@getEventsPerOrganiserType',
-    'as' => 'stats.organiser'
-]);
 
 
 Auth::routes();
