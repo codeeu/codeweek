@@ -20,16 +20,13 @@ class Country extends Model
 
         $isos = DB::table('events')
             ->select(['country_iso'])
-            ->where('status',"=","APPROVED")
+            ->where('status', "=", "APPROVED")
             ->groupBy('country_iso')
             ->get()
-            ->pluck('country_iso')
-        ;
-
+            ->pluck('country_iso');
 
 
         $countries = Country::findMany($isos)->sortBy('name');
-
 
 
         return $countries;
@@ -41,12 +38,11 @@ class Country extends Model
 
         $isos = DB::table('events')
             ->select(['country_iso'])
-            ->where('status',"=","APPROVED")
+            ->where('status', "=", "APPROVED")
             ->whereYear('end_date', '>=', Carbon::now('Europe/Brussels')->year)
             ->groupBy('country_iso')
             ->get()
-            ->pluck('country_iso')
-        ;
+            ->pluck('country_iso');
 
         $countries = Country::findMany($isos)->sortBy('name');
 
@@ -57,9 +53,14 @@ class Country extends Model
 
     public function events()
     {
-
         return $this->hasMany('App\Event');
+    }
 
+    public function approvedEvents($year, $operator)
+    {
+        return $this->hasMany(Event::class)
+            ->where('status', '=', 'APPROVED')
+            ->whereYear('end_date', $operator,  $year);
     }
 
 }
