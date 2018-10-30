@@ -106,6 +106,24 @@ Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/mail/template/creators/registered', 'MailTemplateController@registered');
     Route::get('/mail/template/creators/approved', 'MailTemplateController@approved');
     Route::get('/mail/template/creators/rejected', 'MailTemplateController@rejected');
+
+    Route::get('stats', [
+        'uses' => 'StatsController@getMetrics',
+        'as' => 'stats'
+    ]);
+
+
+    Route::get('stats/events/years', [
+        'uses' => 'StatsController@getEventsPerYear',
+        'as' => 'stats.year'
+    ]);
+
+
+
+    Route::get('stats/events/organiser', [
+        'uses' => 'StatsController@getEventsPerOrganiserType',
+        'as' => 'stats.organiser'
+    ]);
     Route::get('/mail/template/remind/creators', 'MailTemplateController@remindcreators');
 });
 
@@ -121,6 +139,8 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
         return view('profile', $data);
     })->name('profile')->middleware('auth');
 });
+
+
 
 
 Auth::routes();
