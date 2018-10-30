@@ -27,7 +27,7 @@
         components: {Autocomplete},
       data () {
         return {
-          item: {name:this.value},
+          item: this.value ? {name:this.value} : null,
           items: null,
           geoposition: null,
           template: ItemTemplate,
