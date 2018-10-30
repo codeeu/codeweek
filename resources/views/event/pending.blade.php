@@ -17,7 +17,7 @@
             <div>Total of pending events: {{$events->total()}}</div>
 
             @if($events->count() > 0)
-                <div class="row">
+                <div class="row pending">
                     @foreach($events as $event)
                         @component('event.event_tile', ['event'=>$event])
                         @endcomponent
