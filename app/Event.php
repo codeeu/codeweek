@@ -46,7 +46,9 @@ class Event extends Model
         'organizer_type',
         'certificate_url',
         'certificate_generated_at',
-        'approved_by'
+        'approved_by',
+        'last_report_notification_sent_at'
+
 
     ];
 
@@ -55,6 +57,9 @@ class Event extends Model
         Event::class => EventPolicy::class,
     ];
 
+    public function getJavascriptData(){
+        return $this->only(["geoposition","title","description"]);
+    }
 
     public function getDescriptionForEvent(string $eventName): string
     {

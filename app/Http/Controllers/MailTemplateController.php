@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Helpers\ReminderHelper;
+use App\User;
 use Illuminate\Http\Request;
 use Spatie\Activitylog\Models\Activity;
 
@@ -17,7 +19,7 @@ class MailTemplateController extends Controller
 
     public function remind_ambassador()
     {
-        $ambassadors = \App\User::role('ambassador')->where("country_iso","<>", "")->get();
+        $ambassadors = \App\User::role('ambassador')->where("country_iso", "<>", "")->get();
         return new \App\Mail\RemindAmbassador($ambassadors[0]);
 
     }
@@ -43,6 +45,17 @@ class MailTemplateController extends Controller
         $event = \App\Event::first();
         $ambassadors = \App\User::role('ambassador')->where('country_iso', $event->country_iso)->get();
         return new \App\Mail\EventRejected($event, $ambassadors[0]);
+
+    }
+
+    public function remindcreators()
+    {
+
+        $creators = ReminderHelper::getCreatorsWithReportableEvents();
+
+        $user = User::find($creators[0]->creator_id);
+
+        return new \App\Mail\RemindCreator($user);
 
     }
 }
