@@ -70,7 +70,7 @@ class Event extends Model
 
 
     public function getEventUrlAttribute($url){
-        if (strpos($url, "http") !== 0) return "http://" . $url;
+        if ($url && strpos($url, "http") !== 0) return "http://" . $url;
 
         return $url;
     }
