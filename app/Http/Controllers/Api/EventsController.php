@@ -45,7 +45,12 @@ class EventsController extends Controller
 
             $events = $events->groupBy('country');
 
-            Cache::add('events' . $year, $events, 5);
+            if ($year == Carbon::now()->year) {
+                Cache::add('events' . $year, $events, env('CACHE_MINUTES_CURRENT_YEAR') | 5);
+            }else{
+                Cache::forever('events' . $year, $events);
+            }
+
         }
 
 
