@@ -123,6 +123,11 @@ Route::group(['middleware' => ['role:super admin']], function () {
         'uses' => 'StatsController@getEventsPerOrganiserType',
         'as' => 'stats.organiser'
     ]);
+
+    Route::get('stats/events/reported/global', [
+        'uses' => 'StatsController@getNotReportedEventsGlobal',
+        'as' => 'stats.notreported.global'
+    ]);
 });
 
 Route::group(['middleware' => ['role:super admin|ambassador']], function () {
