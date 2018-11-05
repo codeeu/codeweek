@@ -34,5 +34,6 @@ return [
     'logout' => 'Logout',
     'signin' => 'Sign in',
     'privacy' => 'Privacy',
+    'stats' => 'Statistics'
 
 ];
