@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 use App\Charts\StatsPerYearChart;
+use App\Country;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -20,11 +21,9 @@ class StatsController extends Controller
         $eventsNotReported = $this->eventsNotReported($year);
         $eventsFinished = $this->eventsFinished($year);
         $years = $this->getYearsArray();
-        //dd($creatorsWithOneEvent);
 
 
-
-        return view('stats',[
+        return view('stats', [
             'creatorsWithOneEvent' => $creatorsWithOneEvent,
             'totalParticipants' => $totalParticipants,
             'eventsNotReported' => $eventsNotReported,
@@ -42,7 +41,6 @@ class StatsController extends Controller
         $years = $this->getYearsArray();
         $total = 0;
         $eventsPerYear = $this->eventsPerYear($year, null);
-
         $groupedEvents = $this->groupSmallEvents($eventsPerYear, $total);
         $chart = $this->setPieChart(array_sort($groupedEvents), $year);
 
@@ -55,6 +53,7 @@ class StatsController extends Controller
             'flag' => 1
         ]);
     }
+
 
     public function getEventsPerOrganiserType(Request $request)
     {
@@ -74,13 +73,36 @@ class StatsController extends Controller
         $chart = $this->setBarChart($groupedEvents, $year);
 
 
-
         return view('stats', ['types' => $types,
             'eventsPerYear' => $eventsPerYear,
             'selectedType' => array_search($type, $types),
             'chart' => $chart,
             'year' => $year,
             'flag' => 2
+        ]);
+    }
+
+
+    public function getNotReportedEventsGlobal(Request $request)
+    {
+
+        $country = ($request->has('countrySelector')) ? $request->input('countrySelector') : 'Global';
+
+        $now = Carbon::now('Europe/Brussels');
+        $year = $now->year;
+        $notReportedEvents = $this->topEventsNotReportedGlobally($year, $country);
+        $countries = $this->getCountriesArray();
+        array_push($countries, ['name' => 'Global']);
+        $chartData = $this->getChartDataFromObjectArray($notReportedEvents,['title', 'participants_count']);
+        $chart = $this->setPieChart($chartData, $year);
+
+        return view('stats', [
+            'year' => $year,
+            'notReportedEvents' => $notReportedEvents,
+            'selectedCountry' => $country,
+            'chart' => $chart,
+            'countries' => array_values($countries),
+            'flag' => 3
         ]);
     }
 
@@ -110,6 +132,34 @@ class StatsController extends Controller
                 ->toArray();
 
         return $eventsPerYear;
+    }
+
+
+    private function topEventsNotReportedGlobally($year, $country)
+    {
+        if ($country == 'Global') {
+            $topEventsNotReported = DB::table('events as e')
+                ->select(['e.id', 'e.title', 'e.organizer', 'e.contact_person', 'e.participants_count', 'c.name'])
+                ->join('countries as c', 'e.country_iso', '=', 'c.iso')
+                ->whereYear('e.end_date', '>=', $year)
+                ->orderBy('e.participants_count', 'desc')
+                ->limit(15)
+                ->get()
+                ->toArray();
+        } else {
+            $topEventsNotReported = DB::table('events as e')
+                ->select(['e.id', 'e.title', 'e.organizer', 'e.contact_person', 'e.participants_count', 'c.name'])
+                ->join('countries as c', 'e.country_iso', '=', 'c.iso')
+                ->where('c.name', '=', $country)
+                ->whereYear('e.end_date', '>=', $year)
+                ->orderBy('e.participants_count', 'desc')
+                ->limit(15)
+                ->get()
+                ->toArray();
+        }
+
+
+        return $topEventsNotReported;
     }
 
 
@@ -167,6 +217,11 @@ class StatsController extends Controller
 
     }
 
+    private function getCountriesArray()
+    {
+        return Country::all('name')->toArray();
+    }
+
     private function setPieChart($eventsPerYear, $year)
     {
         $colors = ['#08a0c4', '#5e9fb2', '#819da1', '#9b9b8f', '#b1997d', '#c3976b', '#d49559', '#e39244', '#f18f2d', '#ff8c00'];
@@ -209,7 +264,7 @@ class StatsController extends Controller
         return $years;
     }
 
-    private function groupSmallEvents( $eventsPerYear, &$total)
+    private function groupSmallEvents($eventsPerYear, &$total)
     {
         $groupedEvents = ['Others' => 0];
         $maxCountEvents = max(array_values($eventsPerYear));
@@ -222,5 +277,16 @@ class StatsController extends Controller
             $groupedEvents[$country] = $events;
         }
         return $groupedEvents;
+    }
+
+    private function getChartDataFromObjectArray($data, $fields)
+    {
+        $chartData = [];
+
+        foreach ($data as $element){
+            $chartData[$element->{$fields[0]}] = $element->{$fields[1]};
+        }
+        return $chartData;
+
     }
 }
