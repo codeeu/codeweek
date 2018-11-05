@@ -18,7 +18,7 @@
                 <a class="nav-link" href="{{route("stats.organiser")}}">Events per organizer type</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{route("stats.notreported.global")}}">Not reported events</a>
+                <a class="nav-link" href="{{route("stats.notreported")}}">Not reported events</a>
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
