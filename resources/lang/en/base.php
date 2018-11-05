@@ -17,7 +17,7 @@ return [
         'en' => 'English',
         'fr' => 'French',
         'bg' => 'Bulgarian',
-        'mk' => 'Macedonian',
+        'mk' => 'македонски',
         'me' => 'Montenegrin',
         'mt' => 'Maltese',
         'hr' => 'Croatian',
