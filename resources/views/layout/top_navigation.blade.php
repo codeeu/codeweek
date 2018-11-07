@@ -22,7 +22,6 @@
                     <li><a href="{{route('schools')}}">@lang('menu.schools')</a></li>
                     <li><a href="/about/">@lang('menu.about')</a></li>
                     <li><a href="http://blog.codeweek.eu/">@lang('menu.news')</a></li>
-                    <li><a href="{{route('stats')}}">@lang('menu.stats')</a></li>
                 </ul>
 
             </nav>
@@ -117,6 +116,7 @@
                                         Volunteers
                                     </a>
                                 </li>
+                                <li><a href="{{route('stats')}}"><i class="fa fa-thumbs-up"></i> @lang('menu.stats')</a></li>
                                 @endrole
 
                                 <li>
