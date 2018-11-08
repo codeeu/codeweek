@@ -82,8 +82,7 @@
                                aria-hidden="true"></i>
 
                             <b>
-                                <span style="font-size: 30pt; font-weight: bold"><counter
-                                            :to="{{$eventsNotReported}}"></counter></span>
+                                <span style="font-size: 30pt; font-weight: bold"><counter :to="{{$eventsNotReported}}"></counter></span>
                             </b>
 
                             <span style="font-size: 20pt"> events not reported.</span>
@@ -154,7 +153,7 @@
                     </tbody>
                 </table>
             @elseif($flag == 2)
-                 <form class="form-inline" style="display: flex; flex-direction: row-reverse;">
+                <form class="form-inline" style="display: flex; flex-direction: row-reverse;">
                     <div style="flex:1; display: flex; justify-content: right">
                         <button type="submit" class="btn btn-primary">
                             <i class="fa fa-refresh" style="color:#ffffff;"></i>
