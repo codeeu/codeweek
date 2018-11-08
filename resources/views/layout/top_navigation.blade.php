@@ -116,6 +116,7 @@
                                         Volunteers
                                     </a>
                                 </li>
+                                <li><a href="{{route('stats')}}"><i class="fa fa-thumbs-up"></i> @lang('menu.stats')</a></li>
                                 @endrole
 
                                 <li>
