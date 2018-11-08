@@ -119,10 +119,14 @@ Route::group(['middleware' => ['role:super admin']], function () {
     ]);
 
 
-
     Route::get('stats/events/organiser', [
         'uses' => 'StatsController@getEventsPerOrganiserType',
         'as' => 'stats.organiser'
+    ]);
+
+    Route::get('stats/events/reported', [
+        'uses' => 'StatsController@getNotReportedEventsGlobal',
+        'as' => 'stats.notreported'
     ]);
     Route::get('/mail/template/remind/creators', 'MailTemplateController@remindcreators');
 });
@@ -139,8 +143,6 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
         return view('profile', $data);
     })->name('profile')->middleware('auth');
 });
-
-
 
 
 Auth::routes();
