@@ -18,7 +18,7 @@
                 <a class="nav-link" href="{{route("stats.organiser")}}">Events per organizer type</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{route("stats.notreported")}}">Not reported events</a>
+                <a class="nav-link" href="{{route("stats_notreported")}}">Not reported events</a>
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
@@ -207,22 +207,25 @@
                     </div>
                     <div class="form-group" style="padding-left:20px; display:flex;align-items: center; flex:1">
                         <label for="yearSelector" style="margin-top: 14px">Country: </label>
-                        <select name="countrySelector" onchange="this.form.submit()">
-                            @foreach ($countries as $country)
-                                @if ($country['name'] == $selectedCountry)
-                                    <option selected>{{$country['name']}}</option>
-                                @else
-                                    <option>{{$country['name']}}</option>
-                                @endif
-                            @endforeach
-                        </select>
+
+                        @component('components.select-country',['countries'=>$active_countries, 'country_iso'=>$selectedCountry->iso])
+                        @endcomponent
+                        {{--<select name="countrySelector" onchange="this.form.submit()">--}}
+                            {{--@foreach ($countries as $country)--}}
+                                {{--@if ($country['iso'] == $selectedCountry)--}}
+                                    {{--<option value="{{$country['iso']}}" selected>{{$country['name']}}</option>--}}
+                                {{--@else--}}
+                                    {{--<option value="{{$country['iso']}}">{{$country['name']}}</option>--}}
+                                {{--@endif--}}
+                            {{--@endforeach--}}
+                        {{--</select>--}}
 
 
                     </div>
 
                 </form>
                 <hr>
-                <h1>Most popular events in {{$year}} - {{$selectedCountry}} Top 15:</h1>
+                <h1>Non reported events {{$year}} - {{$selectedCountry->name}} Top 50:</h1>
                 <hr>
                 <br/>
                 <br/>
@@ -241,7 +244,7 @@
 
                     @foreach($notReportedEvents as $event)
                         <tr>
-                            <td scope="row">{{$event->title}}</td>
+                            <td scope="row"><a href="{{$event->path()}}" target="_blank">{{$event->title}}</a></td>
                             <td scope="row">{{$event->name}} </td>
                             <td scope="row">{{$event->organizer}}</td>
                             <td scope="row">{{$event->contact_person}}</td>

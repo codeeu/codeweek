@@ -5,10 +5,12 @@ namespace App\Http\Controllers;
 
 use App\Charts\StatsPerYearChart;
 use App\Country;
+use App\Event;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
+use PHPUnit\Framework\Constraint\Count;
 
 class StatsController extends Controller
 {
@@ -83,27 +85,36 @@ class StatsController extends Controller
     }
 
 
-    public function getNotReportedEventsGlobal(Request $request)
+    public function getNotReportedEvents(Request $request)
     {
 
-        $country = ($request->has('countrySelector')) ? $request->input('countrySelector') : 'Global';
+        $country_iso = ($request->has('country_iso')) ? $request->input('country_iso') : '';
 
         $now = Carbon::now('Europe/Brussels');
         $year = $now->year;
 
-        $notReportedEvents = (Cache::has('listEventsNotReported')) ? Cache::get('listEventsNotReported') : $this->topEventsNotReportedGlobally($year, $country);
+        $notReportedEvents = (Cache::has('listEventsNotReported')) ? Cache::get('listEventsNotReported') : $this->topEventsNotReportedGlobally($year, $country_iso);
+        Cache::forget('countries');
         $countries = (Cache::has('countries')) ? Cache::get('countries') : $this->getCountriesArray();
 
-        array_push($countries, ['name' => 'Global']);
         $chartData = $this->getChartDataFromObjectArray($notReportedEvents, ['title', 'participants_count']);
         $chart = $this->setPieChart($chartData, $year);
+
+
+        $selectedCountry = Country::whereIso($country_iso)->first();
+        if (is_null($selectedCountry)){
+            $selectedCountry = new Country();
+            $selectedCountry->iso="";
+            $selectedCountry->name="Global";
+
+        }
 
         return view('stats', [
             'year' => $year,
             'notReportedEvents' => $notReportedEvents,
-            'selectedCountry' => $country,
+            'selectedCountry' => $selectedCountry,
             'chart' => $chart,
-            'countries' => array_values($countries),
+            'countries' => $countries,
             'flag' => 3
         ]);
     }
@@ -122,7 +133,7 @@ class StatsController extends Controller
                 ->orderBy('events', 'desc')
                 ->pluck('events', 'c.name')
                 ->toArray();
-            Cache::put('eventsPerYearCountry', $eventsPerYear, 1440);
+            Cache::put('eventsPerYearCountry', $eventsPerYear, 60);
         } else {
             $eventsPerYear = DB::table('countries as c')
                 ->selectRaw('c.name, count(c.iso) as events')
@@ -135,7 +146,7 @@ class StatsController extends Controller
                 ->orderBy('events', 'desc')
                 ->pluck('events', 'c.name')
                 ->toArray();
-            Cache::put('eventsPerYearOrganiser', $eventsPerYear, 1440);
+            Cache::put('eventsPerYearOrganiser', $eventsPerYear, 60);
         }
 
         return $eventsPerYear;
@@ -144,28 +155,21 @@ class StatsController extends Controller
 
     private function topEventsNotReportedGlobally($year, $country)
     {
-        if ($country == 'Global') {
-            $topEventsNotReported = DB::table('events as e')
-                ->select(['e.id', 'e.title', 'e.organizer', 'e.contact_person', 'e.participants_count', 'c.name'])
-                ->join('countries as c', 'e.country_iso', '=', 'c.iso')
-                ->whereYear('e.end_date', '>=', $year)
-                ->orderBy('e.participants_count', 'desc')
-                ->limit(15)
-                ->get()
-                ->toArray();
+        if ($country == '') {
+
+            $topEventsNotReported = Event::where('end_date', '>=', $year)
+                ->orderBy('participants_count', 'desc')
+                ->limit(50)
+                ->get();
         } else {
-            $topEventsNotReported = DB::table('events as e')
-                ->select(['e.id', 'e.title', 'e.organizer', 'e.contact_person', 'e.participants_count', 'c.name'])
-                ->join('countries as c', 'e.country_iso', '=', 'c.iso')
-                ->where('c.name', '=', $country)
-                ->whereYear('e.end_date', '>=', $year)
-                ->orderBy('e.participants_count', 'desc')
-                ->limit(15)
-                ->get()
-                ->toArray();
+            $topEventsNotReported = Event::where('end_date', '>=', $year)
+                ->where('country_iso','=', $country)
+                ->orderBy('participants_count', 'desc')
+                ->limit(50)
+                ->get();
         }
 
-        Cache::put('listEventsNotReported',$topEventsNotReported, 60);
+       // Cache::put('listEventsNotReported',$topEventsNotReported, 60);
 
         return $topEventsNotReported;
     }
@@ -231,7 +235,8 @@ class StatsController extends Controller
 
     private function getCountriesArray()
     {
-        $countries = Country::all('name')->toArray();
+        $countries = Country::orderBy('name')
+            ->get();
         Cache::put('countries', $countries, 60);
         return $countries;
     }
