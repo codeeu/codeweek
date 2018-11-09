@@ -125,9 +125,10 @@ Route::group(['middleware' => ['role:super admin']], function () {
     ]);
 
     Route::get('stats/events/reported', [
-        'uses' => 'StatsController@getNotReportedEventsGlobal',
-        'as' => 'stats.notreported'
+        'uses' => 'StatsController@getNotReportedEvents',
+        'as' => 'stats_notreported'
     ]);
+
     Route::get('/mail/template/remind/creators', 'MailTemplateController@remindcreators');
 });
 

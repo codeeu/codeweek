@@ -24,7 +24,7 @@ import reportEvent from './components/ReportEvent.vue';
 import question from './components/Question.vue';
 import simpleQuestion from './components/SimpleQuestion.vue';
 import counter from './components/Counter';
-
+import Multiselect from './components/Multiselect.vue';
 
 
 
@@ -50,6 +50,7 @@ const app = new Vue({
         reportEvent,
         question,
         simpleQuestion,
-        counter
+        counter,
+        Multiselect
     }
 });

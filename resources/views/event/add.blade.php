@@ -101,8 +101,9 @@
                             </label>
 
                             <div class="col-sm-9">
-                                @component('components.checkbox-audience',['audiences'=>$audiences, 'selection'=>[],'mode'=>'add'])
-                                @endcomponent
+                                {{--@component('components.checkbox-audience',['audiences'=>$audiences, 'selection'=>[],'mode'=>'add'])
+                                @endcomponent--}}
+                                <multiselect :options="{{ $audiences }}" value="{{ old('audience') }}" name="audience"></multiselect>
                             </div>
                             @component('components.validation-errors', ['field'=>'audience'])
                             @endcomponent
@@ -116,8 +117,9 @@
                             </label>
 
                             <div class="col-sm-9">
-                                @component('components.checkbox-theme',['themes'=>$themes,'selection'=>[],'mode'=>'add'])
-                                @endcomponent
+                                {{--@component('components.checkbox-theme',['themes'=>$themes,'selection'=>[],'mode'=>'add'])
+                                @endcomponent--}}
+                                <multiselect :options="{{ $themes }}" value="{{ old('theme') }}" name="theme"></multiselect>
                             </div>
                             @component('components.validation-errors', ['field'=>'theme'])
                             @endcomponent
