@@ -151,7 +151,9 @@ class EventController extends Controller
 
         $tags = implode(",", $t);
         $selected_themes = $event->themes()->pluck('id')->toArray();
+        $selected_themes = implode(',',$selected_themes);
         $selected_audiences = $event->audiences()->pluck('id')->toArray();
+        $selected_audiences = implode(',', $selected_audiences);
 
         return view('event.edit', compact(['event','tags','selected_themes','selected_audiences']));
     }
