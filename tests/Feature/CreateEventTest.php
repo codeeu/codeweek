@@ -35,9 +35,9 @@ class CreateEventTest extends TestCase
         create('App\Audience',[] ,3);
         create('App\Theme', [],3);
 
-        $event->theme = [1];
+        $event->theme = "1";
         $event->tags = "tag:foo,tag:bar";
-        $event->audience = [2, 3];
+        $event->audience = "2, 3";
 
         $this->post('/events', $event->toArray());
 
@@ -58,9 +58,10 @@ class CreateEventTest extends TestCase
         create('App\Audience',[] ,3);
         create('App\Theme', [],3);
 
-        $event->theme = [1];
+        $event->theme = "1";
 
-        $event->audience = [2, 3];
+        $event->audience = "2, 3";
+
         $event->codeweek_for_all_participation_code="my_custom_code";
 
         $this->post('/events', $event->toArray());
@@ -106,9 +107,9 @@ class CreateEventTest extends TestCase
         $event = make('App\Event');
 
         $event->country_iso = $belgium->iso;
-        $event->theme = [1];
+        $event->theme = "1";
         $event->tags = "tag:foo,tag:bar";
-        $event->audience = [2,3];
+        $event->audience = "2, 3";
 
         $this->post('/events', $event->toArray());
 

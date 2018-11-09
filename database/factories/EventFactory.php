@@ -6,7 +6,8 @@ use Faker\Generator as Faker;
 $factory->define(App\Event::class, function (Faker $faker) {
 
 
-    $event_date = $faker->dateTimeBetween($start = '-1month', $end = '+1month');
+    $start_date = $faker->dateTimeBetween($start = '-1month', $end = 'now');
+    $end_date = $faker->dateTimeBetween($start = 'now', $end = '+1month');
 
     $countries = Country::all()->pluck('iso')->toArray();
     $orgtypes = array('school','library','nonprofit','other');
@@ -26,8 +27,8 @@ $longitude = $faker->longitude(-4,12);
         'longitude' => $longitude,
         'location' => $faker->address,
         'country_iso' => $faker->randomElement($countries),
-        'start_date' => $event_date,
-        'end_date' => $event_date,
+        'start_date' => $start_date,
+        'end_date' => $end_date,
         'event_url' => $faker->url,
         'contact_person' => $faker->email,
         'user_email' => $faker->email,
