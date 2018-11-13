@@ -72,11 +72,6 @@
         "optimize-autoloader": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "path",
-            "url": "./nova"
-        }
-    ]
+    "prefer-stable": true
+
 }
