@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Gravatar;
 use Laravel\Nova\Fields\Password;
-use Laravel\Nova\Fields\HasMany;
 
 class User extends Resource
 {
@@ -23,7 +22,7 @@ class User extends Resource
      *
      * @var string
      */
-    public static $title = 'email';
+    public static $title = 'name';
 
     /**
      * The columns that should be searched.
@@ -31,7 +30,7 @@ class User extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'email',
+        'id', 'name', 'email',
     ];
 
     /**
@@ -47,6 +46,10 @@ class User extends Resource
 
             Gravatar::make(),
 
+            Text::make('Name')
+                ->sortable()
+                ->rules('required', 'max:255'),
+
             Text::make('Email')
                 ->sortable()
                 ->rules('required', 'email', 'max:254')
@@ -57,8 +60,6 @@ class User extends Resource
                 ->onlyOnForms()
                 ->creationRules('required', 'string', 'min:6')
                 ->updateRules('nullable', 'string', 'min:6'),
-
-            HasMany::make('Events')
         ];
     }
 
@@ -70,7 +71,7 @@ class User extends Resource
      */
     public function cards(Request $request)
     {
-        return [new Metrics\UsersPerDay];
+        return [];
     }
 
     /**
