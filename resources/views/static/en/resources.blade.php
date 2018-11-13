@@ -392,11 +392,7 @@
                             href="https://open.sap.com/courses/acw2-2-fr">Code Week : Les ados se mettent au code ! </a>(Réédition
                     Q3/2017)
                 </li>
-                <li><strong><a href="http://partner.devry.edu/bootcamp/web-development/resources.html" target="_blank">DeVry
-                            Bootcamp Coding Resource Center</a></strong> - lists free learning resources for different
-                    parts of
-                    the coding process such as HTML, CSS, and JavaScript.
-                </li>
+
                 <li><strong><a href="http://www.europeanschoolnetacademy.eu/web/introducing-computing-in-your-classroom"
                                target="_blank">Introducing computing in the classroom, by EU Schoolnet</a></strong>:
                     Course
