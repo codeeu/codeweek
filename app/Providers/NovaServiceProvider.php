@@ -2,8 +2,12 @@
 
 namespace App\Providers;
 
+use App\Nova\Metrics\EventCount;
+use App\Nova\Metrics\EventsPerDay;
+use App\Nova\Metrics\UsersPerDay;
 use Laravel\Nova\Nova;
 use Laravel\Nova\Cards\Help;
+
 use Illuminate\Support\Facades\Gate;
 use Laravel\Nova\NovaApplicationServiceProvider;
 
@@ -42,9 +46,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     protected function gate()
     {
         Gate::define('viewNova', function ($user) {
-            return in_array($user->email, [
-                "alainvd@gmail.com","raphdom@gmail.com"
-            ]);
+            return ($user->hasRole('super admin') || $user->hasRole('ambassador'));
         });
     }
 
@@ -56,7 +58,9 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     protected function cards()
     {
         return [
-            new Help,
+            new EventCount,
+            new EventsPerDay,
+            new UsersPerDay,
         ];
     }
 

@@ -194,4 +194,12 @@ class Event extends Model
         return true;
     }
 
+    public function reject(){
+        $data = ['status' => "REJECTED", 'approved_by' => auth()->user()->id];
+
+        $this->update($data);
+    }
+
+
+
 }

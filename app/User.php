@@ -36,6 +36,15 @@ class User extends Authenticatable
 
     protected $dates = ['deleted_at'];
 
+    public function isAdmin(){
+
+        return $this->hasRole("super admin");
+    }
+    public function isAmbassador(){
+
+        return $this->hasRole("ambassador");
+    }
+
     public function events()
     {
         return $this->hasMany('App\Event', 'creator_id');
