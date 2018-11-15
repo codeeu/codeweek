@@ -204,9 +204,9 @@ class EventController extends Controller
 
         $this->authorize('approve', $event);
 
-        $data = ['status' => "REJECTED", 'approved_by' => auth()->user()->id];
+        $event->reject();
 
-        $event->update($data);
+
 
 
     }

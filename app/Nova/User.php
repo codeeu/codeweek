@@ -22,7 +22,7 @@ class User extends Resource
      *
      * @var string
      */
-    public static $title = 'name';
+    public static $title = 'email';
 
     /**
      * The columns that should be searched.
@@ -30,7 +30,7 @@ class User extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'name', 'email',
+        'id', 'firstname','lastname','username', 'email',
     ];
 
     /**
@@ -105,5 +105,11 @@ class User extends Resource
     public function actions(Request $request)
     {
         return [];
+    }
+
+    public static function availableForNavigation(Request $request)
+    {
+
+        return $request->user()->isAdmin();
     }
 }
