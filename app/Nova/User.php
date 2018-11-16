@@ -52,7 +52,9 @@ class User extends Resource
             Text::make('Email','email')
                 ->onlyOnIndex(),
 
-            Text::make('Name')
+            Text::make('Name', function(){
+                return $this->getName();
+            })
                 ->rules('required', 'max:255')
                 ->onlyOnIndex(),
 
