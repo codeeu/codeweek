@@ -2,7 +2,9 @@
 
 namespace App\Nova;
 
+use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\Boolean;
+use Laravel\Nova\Fields\HasOne;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
@@ -45,13 +47,12 @@ class User extends Resource
         return [
 
 
-            Gravatar::make()->hideFromIndex(),
-
             Boolean::make('ambassador'),
 
+            Text::make('Email','email')
+                ->onlyOnIndex(),
 
             Text::make('Name')
-                ->sortable()
                 ->rules('required', 'max:255')
                 ->onlyOnIndex(),
 

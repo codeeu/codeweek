@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Spatie\Permission\Traits\HasRoles;
 use App\Filters\UserFilters;
@@ -46,6 +47,17 @@ class User extends Authenticatable
 
     public function getAmbassadorAttribute(){
         return $this->isAmbassador();
+    }
+
+    public function setAmbassadorAttribute($value){
+        Log::info($value);
+        if ($value){
+            $this->assignRole('ambassador');
+        } else {
+            $this->removeRole('ambassador');
+        }
+
+
     }
 
     public function isAdmin()
