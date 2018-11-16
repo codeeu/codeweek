@@ -4,6 +4,7 @@ namespace App\Nova;
 
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\Boolean;
+use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\HasOne;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
@@ -20,12 +21,17 @@ class User extends Resource
      */
     public static $model = 'App\\User';
 
+    //public static $title = 'email';
+
     /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
      */
-    public static $title = 'name';
+    public function title()
+    {
+        return $this->getName();
+    }
 
     /**
      * The columns that should be searched.
@@ -49,10 +55,10 @@ class User extends Resource
 
             Boolean::make('ambassador'),
 
-            Text::make('Email','email')
+            Text::make('Email', 'email')
                 ->onlyOnIndex(),
 
-            Text::make('Name', function(){
+            Text::make('Name', function () {
                 return $this->getName();
             })
                 ->rules('required', 'max:255')
@@ -65,10 +71,14 @@ class User extends Resource
                 ->updateRules('unique:users,email,{{resourceId}}')
                 ->hideFromIndex(),
 
+            HasMany::make('Events'),
+
             Password::make('Password')
                 ->onlyOnForms()
                 ->creationRules('required', 'string', 'min:6')
                 ->updateRules('nullable', 'string', 'min:6'),
+
+
         ];
     }
 

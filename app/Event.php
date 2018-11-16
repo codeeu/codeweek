@@ -57,6 +57,11 @@ class Event extends Model
         Event::class => EventPolicy::class,
     ];
 
+
+    public function test(){
+        return "foo";
+    }
+
     public function getJavascriptData(){
         return $this->only(["geoposition","title","description"]);
     }
