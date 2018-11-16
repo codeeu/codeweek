@@ -92,6 +92,19 @@ class UserTest extends TestCase
 
     }
 
+    /** @test */
+    public function a_user_should_be_seen_as_ambassador()
+    {
+
+        $this->seed('RolesAndPermissionsSeeder');
+
+        $user = create('App\User')->assignRole('ambassador');
+
+        $this->assertTrue($user->ambassador);
+
+
+    }
+
 
 }
 

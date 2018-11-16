@@ -44,6 +44,10 @@ class User extends Authenticatable
         return $this->email;
     }
 
+    public function getAmbassadorAttribute(){
+        return $this->isAmbassador();
+    }
+
     public function isAdmin()
     {
 

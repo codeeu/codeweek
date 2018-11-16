@@ -16,3 +16,4 @@ bios.sql
 public/js/app.js
 nova
 auth.json
+composer.lock
