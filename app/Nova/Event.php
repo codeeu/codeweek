@@ -3,6 +3,7 @@
 namespace App\Nova;
 
 
+use Laravel\Nova\Fields\HasOne;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Select;
@@ -51,15 +52,16 @@ class Event extends Resource
             Text::make('Organizer')->onlyOnDetail(),
             Text::make('codeweek_for_all_participation_code')->sortable()->onlyOnDetail(),
 
-            BelongsTo::make('User', 'owner')->onlyOnDetail(),
-
             Country::make('Country', 'country_iso')->sortable(),
 
             Select::make('Status')->options([
                 'APPROVED' => 'Approved',
                 'REJECTED' => 'Rejected',
                 'PENDING' => 'Pending',
-            ])
+            ]),
+
+
+            Text::make('Creator','owner.email')
 
         ];
     }
