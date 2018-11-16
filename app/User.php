@@ -36,11 +36,22 @@ class User extends Authenticatable
 
     protected $dates = ['deleted_at'];
 
-    public function isAdmin(){
+    public function getNameAttribute()
+    {
+        if(!empty($this->username)) return $this->username;
+        if(!empty($this->firstname) && !empty($this->lastname)) return $this->firstname . " " . $this->lastname;
+        if(!empty($this->firstname) && empty($this->lastname)) return $this->firstname;
+        return $this->email;
+    }
+
+    public function isAdmin()
+    {
 
         return $this->hasRole("super admin");
     }
-    public function isAmbassador(){
+
+    public function isAmbassador()
+    {
 
         return $this->hasRole("ambassador");
     }
@@ -87,12 +98,12 @@ class User extends Authenticatable
     public function getAvatarAttribute()
     {
 
-        $arr = explode("/",$this->avatar_path);
+        $arr = explode("/", $this->avatar_path);
         $filename = array_pop($arr);
-        array_push($arr,"resized");
-        array_push($arr,"80");
-        array_push($arr,$filename);
-        $glued = implode("/",$arr);
+        array_push($arr, "resized");
+        array_push($arr, "80");
+        array_push($arr, $filename);
+        $glued = implode("/", $arr);
         return $glued;
 
 
@@ -121,8 +132,6 @@ class User extends Authenticatable
     {
         return geoip(geoip()->getClientIP());
     }
-
-
 
 
 }

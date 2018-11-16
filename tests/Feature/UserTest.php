@@ -40,6 +40,58 @@ class UserTest extends TestCase
 
     }
 
+    /** @test */
+    public function a_user_should_readable_name()
+    {
+
+
+        $user = create('App\User', ["firstname" => "foo","lastname" => "","username" => ""]);
+
+
+        $this->assertEquals("foo", $user->name);
+
+
+    }
+
+    /** @test */
+    public function a_user_should_readable_name_with_first_and_lastname()
+    {
+
+
+        $user = create('App\User', ["firstname" => "foo","lastname" => "bar","username" => ""]);
+
+
+        $this->assertEquals("foo bar", $user->name);
+
+
+    }
+
+    /** @test */
+    public function a_user_should_readable_name_with_username()
+    {
+
+
+        $user = create('App\User', ["firstname" => "foo","lastname" => "bar","username" => "woody"]);
+
+
+        $this->assertEquals("woody", $user->name);
+
+
+    }
+
+    /** @test */
+    public function a_user_should_readable_name_without_personal_info()
+    {
+
+
+        $user = create('App\User', ["firstname" => "","lastname" => "","username" => "", "email" => "foo@bar.com"]);
+
+
+        $this->assertEquals("foo@bar.com", $user->name);
+
+
+    }
+
 
 }
 
