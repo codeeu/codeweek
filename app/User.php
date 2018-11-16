@@ -37,7 +37,7 @@ class User extends Authenticatable
 
     protected $dates = ['deleted_at'];
 
-    public function getNameAttribute()
+    public function getName()
     {
         if(!empty($this->username)) return $this->username;
         if(!empty($this->firstname) && !empty($this->lastname)) return $this->firstname . " " . $this->lastname;
