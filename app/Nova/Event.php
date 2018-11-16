@@ -45,16 +45,15 @@ class Event extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make()->sortable(),
 
             Text::make('Title')->sortable(),
-            Text::make('Description')->sortable()->onlyOnDetail(),
-            Text::make('Organizer')->sortable()->onlyOnDetail(),
+            Text::make('Description')->onlyOnDetail(),
+            Text::make('Organizer')->onlyOnDetail(),
             Text::make('codeweek_for_all_participation_code')->sortable()->onlyOnDetail(),
 
             BelongsTo::make('User', 'owner')->onlyOnDetail(),
 
-            Country::make('Country', 'country_iso'),
+            Country::make('Country', 'country_iso')->sortable(),
 
             Select::make('Status')->options([
                 'APPROVED' => 'Approved',
