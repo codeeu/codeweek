@@ -31,7 +31,7 @@ class Country extends Resource
     public static $search = [
     ];
 
-    public static $displayInNavigation = false;
+    //public static $displayInNavigation = false;
 
     /**
      * Get the fields displayed by the resource.
@@ -42,7 +42,15 @@ class Country extends Resource
     public function fields(Request $request)
     {
         return [
-            Text::make('Name')
+            Text::make('Name')->sortable(),
+            Text::make('Facebook')
+                ->rules('nullable','url')
+                ->sortable()
+            ,
+            Text::make('Website')
+                ->rules('nullable','url')
+                ->sortable()
+
         ];
     }
 
@@ -88,5 +96,24 @@ class Country extends Resource
     public function actions(Request $request)
     {
         return [];
+    }
+
+    public static function availableForNavigation(Request $request)
+    {
+        return $request->user()->isAdmin() || $request->user()->isAmbassador();
+    }
+
+    public static function indexQuery(NovaRequest $request, $query)
+    {
+
+        if ($request->user()->isAdmin()) return $query;
+
+        if($request->user()->isAmbassador()){
+            return $query
+                ->where('iso', "=", 'FR');
+
+        }
+
+
     }
 }
