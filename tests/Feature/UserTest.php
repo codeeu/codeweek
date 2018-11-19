@@ -48,7 +48,7 @@ class UserTest extends TestCase
         $user = create('App\User', ["firstname" => "foo","lastname" => "","username" => ""]);
 
 
-        $this->assertEquals("foo", $user->name);
+        $this->assertEquals("foo", $user->getName());
 
 
     }
@@ -61,7 +61,7 @@ class UserTest extends TestCase
         $user = create('App\User', ["firstname" => "foo","lastname" => "bar","username" => ""]);
 
 
-        $this->assertEquals("foo bar", $user->name);
+        $this->assertEquals("foo bar", $user->getName());
 
 
     }
@@ -74,7 +74,7 @@ class UserTest extends TestCase
         $user = create('App\User', ["firstname" => "foo","lastname" => "bar","username" => "woody"]);
 
 
-        $this->assertEquals("woody", $user->name);
+        $this->assertEquals("woody", $user->getName());
 
 
     }
@@ -87,7 +87,7 @@ class UserTest extends TestCase
         $user = create('App\User', ["firstname" => "","lastname" => "","username" => "", "email" => "foo@bar.com"]);
 
 
-        $this->assertEquals("foo@bar.com", $user->name);
+        $this->assertEquals("foo@bar.com", $user->getName());
 
 
     }
