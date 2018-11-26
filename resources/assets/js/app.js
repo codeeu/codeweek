@@ -25,7 +25,8 @@ import question from './components/Question.vue';
 import simpleQuestion from './components/SimpleQuestion.vue';
 import counter from './components/Counter';
 import Multiselect from './components/Multiselect.vue';
-
+import AutocompleteGeo from './components/AutoCompleteGeo.vue'
+import Autocomplete from 'v-autocomplete'
 
 
 /**
@@ -33,7 +34,7 @@ import Multiselect from './components/Multiselect.vue';
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
+window.Vue.use(Autocomplete)
 
 const app = new Vue({
     el: "#app",
@@ -51,6 +52,8 @@ const app = new Vue({
         question,
         simpleQuestion,
         counter,
-        Multiselect
+        Multiselect,
+        AutocompleteGeo,
+        Autocomplete
     }
 });

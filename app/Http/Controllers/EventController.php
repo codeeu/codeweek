@@ -20,7 +20,6 @@ class EventController extends Controller
 {
 
 
-
     /**
      * EventController constructor.
      */
@@ -65,7 +64,7 @@ class EventController extends Controller
 
         $iso_country_of_user = User::getGeoIPData()->iso_code;
 
-        $ambassadors = User::role('ambassador')->where("country_iso","=",$iso_country_of_user)->get();
+        $ambassadors = User::role('ambassador')->where("country_iso", "=", $iso_country_of_user)->get();
 
         return view('events')->with([
             'events' => $this->eventsNearMe(),
@@ -93,7 +92,10 @@ class EventController extends Controller
     public function create(Request $request)
     {
 //        $request->session()->flush();
-        return view('event.add');
+
+        $countries = \App\Country::all()->sortBy('name');
+
+        return view('event.add', compact('countries'));
     }
 
     public function search()
@@ -110,7 +112,6 @@ class EventController extends Controller
      */
     public function store(EventRequest $request)
     {
-
 
 
         $event = EventsQuery::store($request);
@@ -131,7 +132,7 @@ class EventController extends Controller
     public function show(Event $event)
     {
 
-        if ($event->status != "APPROVED"){
+        if ($event->status != "APPROVED") {
             $this->authorize('view', $event);
         }
 
@@ -149,13 +150,16 @@ class EventController extends Controller
     {
         $t = $event->tags()->pluck('name')->toArray();
 
+        $countries = \App\Country::all()->sortBy('name');
+
         $tags = implode(",", $t);
         $selected_themes = $event->themes()->pluck('id')->toArray();
-        $selected_themes = implode(',',$selected_themes);
+        $selected_themes = implode(',', $selected_themes);
         $selected_audiences = $event->audiences()->pluck('id')->toArray();
         $selected_audiences = implode(',', $selected_audiences);
+        $selected_country = $event->country()->first()->name;
 
-        return view('event.edit', compact(['event','tags','selected_themes','selected_audiences']));
+        return view('event.edit', compact(['event', 'tags', 'selected_themes', 'selected_audiences', 'countries', 'selected_country']));
     }
 
     /**
@@ -174,7 +178,6 @@ class EventController extends Controller
         EventsQuery::update($request, $event);
 
         return view('event.show', compact('event'));
-
 
 
     }
@@ -205,8 +208,6 @@ class EventController extends Controller
         $this->authorize('approve', $event);
 
         $event->reject();
-
-
 
 
     }

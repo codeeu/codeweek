@@ -95,9 +95,7 @@ class Event extends Model
             return 'https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png';
         }
 
-        //dd('hello');
-        //dd($this->picture);
-        //return $this->picture ? (env('AWS_URL') . $this->picture) : "https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png";
+
 
     }
 

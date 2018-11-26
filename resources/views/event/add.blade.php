@@ -136,26 +136,37 @@
                             </label>
 
                             <div class="col-sm-9 first last">
-                                {{--TODO: REMOVE--}}
-                                <input type="hidden" name="country_iso" id="country_iso" value="{{old('country_iso')}}">
-                                <input type="hidden" name="geoposition" id="geoposition" value="{{old('geoposition')}}">
-                                <input class="form-control" id="autocomplete" maxlength="1000"
-                                       name="location"
-                                       placeholder="@lang('event.address.placeholder')" type="text"
-                                       autocomplete="off"
-                                       onkeydown="if (event.keyCode == 13) {return false;}"
-                                       value="{{old('location')}}">
-
+                                <autocomplete-geo name="location" class="form-control" placeholder="@lang('event.address.placeholder')" style="margin-bottom: 10px;"></autocomplete-geo>
+                                <div id = "events-add-map" class="form-control"></div>
                             </div>
-
 
                             @component('components.validation-errors', ['field'=>'location'])
                             @endcomponent
                         </div>
 
-                        <div id="view-event-map-wrapper" class="event-map col-sm-9 col-sm-offset-3">
-                            <div id="map" style="width:100%; height:100%"></div>
+                        <div class="form-group @if($errors->has('country')) has-error @endif">
+                            <label for="id_country" class="col-sm-3 control-label">
+                                * @lang('event.country')
+                            </label>
+
+                            <div class="col-sm-9 input-group">
+
+                                <select id="id_country" name="country_iso" class="form-control">
+
+                                    <option value=""></option>
+
+                                    @foreach ($countries as $country)
+                                        <option value="{{$country->iso}}">@lang('countries.'. $country->name)</option>
+                                    @endforeach
+
+                                </select>
+
+                            </div>
+                            @component('components.validation-errors', ['field'=>'country'])
+                            @endcomponent
+
                         </div>
+
 
                         <div class="form-group @if($errors->has('start_date')) has-error @endif">
                             <label for="id_start_date" class="col-sm-3 control-label">
@@ -339,9 +350,18 @@
 
 @push('scripts')
 
+    <script defer src="//europa.eu/webtools/load.js" type="text/javascript"></script>
+    <script type="application/json">
+        {
+            "service" : "map",
+            "version" : "2.0",
+            "renderTo" : "events-add-map",
+            "height": "250",
+            "width": "422",
+            "custom": ["js/hideMenuMap.js"]
+        }
+    </script>
 
-
-    <script src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAPS_KEY')}}&libraries=places"></script>
     <script src="{{asset('js/map-add-event.js')}}"></script>
 
 
