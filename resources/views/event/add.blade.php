@@ -156,7 +156,7 @@
                                     <option value=""></option>
 
                                     @foreach ($countries as $country)
-                                        <option value="{{$country->iso}}">@lang('countries.'. $country->name)</option>
+                                        <option value="{{$country->name}}">@lang('countries.'. $country->name)</option>
                                     @endforeach
 
                                 </select>
