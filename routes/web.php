@@ -71,6 +71,7 @@ Route::patch('/events/{event}', 'EventController@update');
 Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 Route::get('/my', 'EventController@my')->middleware('auth')->name('my_events');
+Route::get('/my/reportable', 'EventController@myreportable')->middleware('auth')->name('my_reportable_events');
 Route::get('/search', 'SearchController@search')->name('search_event');
 Route::get('/scoreboard', 'ScoreboardController@index')->name('scoreboard');
 Route::patch('user', 'UserController@update')->name('user.update')->middleware('auth');
@@ -89,7 +90,6 @@ Route::delete('api/users/avatar', 'Api\UserAvatarController@delete')->middleware
 Route::get('api/event/list', 'Api\EventsController@list')->name('event_list');
 Route::get('api/event/detail', 'Api\EventsController@detail')->name('event_list');
 Route::get('api/event/closest', 'Api\EventsController@closest');
-//Route::get('api/event/{event}/generate', 'Api\EventsController@generate');
 
 Route::post('api/event/report/{event}', 'ReportController@store')->middleware('auth');
 
@@ -106,6 +106,30 @@ Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/mail/template/creators/registered', 'MailTemplateController@registered');
     Route::get('/mail/template/creators/approved', 'MailTemplateController@approved');
     Route::get('/mail/template/creators/rejected', 'MailTemplateController@rejected');
+
+    Route::get('stats', [
+        'uses' => 'StatsController@getMetrics',
+        'as' => 'stats'
+    ]);
+
+
+    Route::get('stats/events/years', [
+        'uses' => 'StatsController@getEventsPerYear',
+        'as' => 'stats.year'
+    ]);
+
+
+    Route::get('stats/events/organiser', [
+        'uses' => 'StatsController@getEventsPerOrganiserType',
+        'as' => 'stats.organiser'
+    ]);
+
+    Route::get('stats/events/reported', [
+        'uses' => 'StatsController@getNotReportedEvents',
+        'as' => 'stats_notreported'
+    ]);
+
+    Route::get('/mail/template/remind/creators', 'MailTemplateController@remindcreators');
 });
 
 Route::group(['middleware' => ['role:super admin|ambassador']], function () {

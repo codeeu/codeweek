@@ -8,7 +8,6 @@ use App\Event;
 use App\Filters\UserFilters;
 use App\Helpers\EventHelper;
 use App\Http\Requests\EventRequest;
-use App\Queries\CountriesQuery;
 use App\Queries\EventsQuery;
 use App\User;
 use Carbon\Carbon;
@@ -19,7 +18,6 @@ use Illuminate\Support\Facades\Mail;
 
 class EventController extends Controller
 {
-
 
 
     /**
@@ -41,6 +39,18 @@ class EventController extends Controller
     }
 
 
+    public function myreportable()
+    {
+
+        $events = Event::where('creator_id', '=', Auth::user()->id)
+            ->whereNull('reported_at')
+            ->orderBy('created_at', 'desc')->paginate(6);
+
+        return view('event.myreportable', compact('events'));
+
+    }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -54,7 +64,7 @@ class EventController extends Controller
 
         $iso_country_of_user = User::getGeoIPData()->iso_code;
 
-        $ambassadors = User::role('ambassador')->where("country_iso","=",$iso_country_of_user)->get();
+        $ambassadors = User::role('ambassador')->where("country_iso", "=", $iso_country_of_user)->get();
 
         return view('events')->with([
             'events' => $this->eventsNearMe(),
@@ -103,6 +113,7 @@ class EventController extends Controller
     public function store(EventRequest $request)
     {
 
+
         $event = EventsQuery::store($request);
 
         $event->notifyAmbassadors();
@@ -121,7 +132,7 @@ class EventController extends Controller
     public function show(Event $event)
     {
 
-        if ($event->status != "APPROVED"){
+        if ($event->status != "APPROVED") {
             $this->authorize('view', $event);
         }
 
@@ -143,10 +154,12 @@ class EventController extends Controller
 
         $tags = implode(",", $t);
         $selected_themes = $event->themes()->pluck('id')->toArray();
+        $selected_themes = implode(',', $selected_themes);
         $selected_audiences = $event->audiences()->pluck('id')->toArray();
+        $selected_audiences = implode(',', $selected_audiences);
         $selected_country = $event->country()->first()->name;
 
-        return view('event.edit', compact(['event','tags','selected_themes','selected_audiences', 'countries', 'selected_country']));
+        return view('event.edit', compact(['event', 'tags', 'selected_themes', 'selected_audiences', 'countries', 'selected_country']));
     }
 
     /**
@@ -165,7 +178,6 @@ class EventController extends Controller
         EventsQuery::update($request, $event);
 
         return view('event.show', compact('event'));
-
 
 
     }
@@ -195,9 +207,7 @@ class EventController extends Controller
 
         $this->authorize('approve', $event);
 
-        $data = ['status' => "REJECTED", 'approved_by' => auth()->user()->id];
-
-        $event->update($data);
+        $event->reject();
 
 
     }

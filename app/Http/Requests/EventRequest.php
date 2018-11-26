@@ -30,10 +30,10 @@ class EventRequest extends FormRequest
             'organizer' => 'required',
             'location' => 'required',
             'start_date' => 'required',
-            'end_date' => 'required',
+            'end_date' => 'required|after:start_date',
             'audience' => 'required',
             'theme' => 'required',
-            'country' => 'required',
+            'country_iso' => 'required',
             'user_email' => 'required',
             'organizer_type' => 'required',
 

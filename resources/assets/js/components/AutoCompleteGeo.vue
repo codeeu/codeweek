@@ -49,7 +49,7 @@
                 var coords = new Array().concat(item.coordinates).reverse();
                 this.geoposition = coords.join(",");
                 map.setView(coords,16);
-                //$("#geoposition").val(this.geoposition);
+
                 $("#id_country").val(item.country);
             }
         },

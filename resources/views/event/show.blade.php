@@ -21,7 +21,7 @@
                     <strong>@lang('eventdetails.organised_by')</strong>
 
                     <p> {{ $event->organizer }}
-                        @can('edit', $event)
+                        @can('approve', $event)
                             <br/><a href="mailto:{{$event->user_email}}">{{$event->user_email}}</a>
                         @endcan
                     </p>
@@ -184,7 +184,7 @@
 @push('scripts')
 
     <script>
-        window.event_details = {!! json_encode($event) !!};
+        window.event_details = {!! json_encode($event->getJavascriptData()) !!};
         window.event_coordinates = event_details.geoposition.split(",");
     </script>
 
@@ -206,7 +206,7 @@
     <script>
 
 
-        var event = {!! json_encode($event) !!};
+        var event = {!! json_encode($event->getJavascriptData()) !!};
 
         var geoposition = event.geoposition;
         var coordinates = geoposition.split(",");

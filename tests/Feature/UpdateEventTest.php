@@ -21,9 +21,9 @@ class UpdateEventTest extends TestCase
         create('App\Audience',[] ,3);
         create('App\Theme', [],3);
 
-        $event->theme = [1];
+        $event->theme = "1";
         $event->tags = "tag:foo,tag:bar";
-        $event->audience = [2, 3];
+        $event->audience = "2, 3";
 
         $this->post('/events', $event->toArray());
 
@@ -32,11 +32,10 @@ class UpdateEventTest extends TestCase
         $event = Event::where('title', $event->title)->first();
 
 
-
         $event->title = 'Changed';
         $event->description = 'Changed description.';
-        $event->theme = [1,2];
-        $event->audience = [1,2,3];
+        $event->theme = "1,2";
+        $event->audience = "1,2,3";
         $event->tags = "foo,bar,joe";
 
         $this->patch('/events/' . $event->id, $event->toArray());
@@ -64,9 +63,9 @@ class UpdateEventTest extends TestCase
         create('App\Audience',[] ,3);
         create('App\Theme', [],3);
 
-        $event->theme = [1];
+        $event->theme = "1";
         $event->tags = "tag:foo,tag:bar";
-        $event->audience = [2, 3];
+        $event->audience = "2, 3";
 
         $this->post('/events', $event->toArray());
 
@@ -81,8 +80,8 @@ class UpdateEventTest extends TestCase
 
         $event->title = 'Changed';
         $event->description = 'Changed description.';
-        $event->theme = [1,2];
-        $event->audience = [1,2,3];
+        $event->theme = "1,2";
+        $event->audience = "1,2,3";
         $event->tags = "foo,bar,joe";
 
         $this->patch('/events/' . $event->id, $event->toArray())->assertStatus(403);

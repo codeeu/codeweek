@@ -136,3 +136,7 @@ html{
     color: #478ac8;
     transition: all 0.3s linear 0s;
 }
+
+.pending .thumbnail{
+    height:410px;
+}

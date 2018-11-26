@@ -29,7 +29,6 @@ class EventCountry extends Filter
      */
     public function options(Request $request)
     {
-
         return Country::withEvents()->pluck('iso','name');
     }
 }

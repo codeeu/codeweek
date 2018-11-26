@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Spatie\Permission\Traits\HasRoles;
 use App\Filters\UserFilters;
@@ -35,6 +36,41 @@ class User extends Authenticatable
     protected $appends = ['fullName'];
 
     protected $dates = ['deleted_at'];
+
+    public function getName()
+    {
+        if(!empty($this->username)) return $this->username;
+        if(!empty($this->firstname) && !empty($this->lastname)) return $this->firstname . " " . $this->lastname;
+        if(!empty($this->firstname) && empty($this->lastname)) return $this->firstname;
+        return $this->email;
+    }
+
+    public function getAmbassadorAttribute(){
+        return $this->isAmbassador();
+    }
+
+    public function setAmbassadorAttribute($value){
+        Log::info($value);
+        if ($value){
+            $this->assignRole('ambassador');
+        } else {
+            $this->removeRole('ambassador');
+        }
+
+
+    }
+
+    public function isAdmin()
+    {
+
+        return $this->hasRole("super admin");
+    }
+
+    public function isAmbassador()
+    {
+
+        return $this->hasRole("ambassador");
+    }
 
     public function events()
     {
@@ -78,12 +114,12 @@ class User extends Authenticatable
     public function getAvatarAttribute()
     {
 
-        $arr = explode("/",$this->avatar_path);
+        $arr = explode("/", $this->avatar_path);
         $filename = array_pop($arr);
-        array_push($arr,"resized");
-        array_push($arr,"80");
-        array_push($arr,$filename);
-        $glued = implode("/",$arr);
+        array_push($arr, "resized");
+        array_push($arr, "80");
+        array_push($arr, $filename);
+        $glued = implode("/", $arr);
         return $glued;
 
 
@@ -112,8 +148,6 @@ class User extends Authenticatable
     {
         return geoip(geoip()->getClientIP());
     }
-
-
 
 
 }

@@ -30,7 +30,7 @@ class AmbassadorController extends Controller
 
         $ambassadors = User::role('ambassador')->filter($filters)->whereNotNull("avatar_path")->whereNotNull("bio")->paginate(10);
 
-       // dd($ambassadors);
+
 
         return view('ambassadors')->with([
             "ambassadors" => $ambassadors,
