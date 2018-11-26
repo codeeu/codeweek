@@ -114,7 +114,6 @@
                         @foreach ($countries_with_ambassadors as $country)
 
 
-
                             <li>
                                 <a href="/ambassadors?country_iso={{$country->country_iso}}">
                                     <div class="country-link" data-name="{{$country->country_iso}}">

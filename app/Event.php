@@ -57,6 +57,11 @@ class Event extends Model
         Event::class => EventPolicy::class,
     ];
 
+
+    public function test(){
+        return "foo";
+    }
+
     public function getJavascriptData(){
         return $this->only(["geoposition","title","description"]);
     }
@@ -90,9 +95,7 @@ class Event extends Model
             return 'https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png';
         }
 
-        //dd('hello');
-        //dd($this->picture);
-        //return $this->picture ? (env('AWS_URL') . $this->picture) : "https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png";
+
 
     }
 
@@ -193,5 +196,13 @@ class Event extends Model
 
         return true;
     }
+
+    public function reject(){
+        $data = ['status' => "REJECTED", 'approved_by' => auth()->user()->id];
+
+        $this->update($data);
+    }
+
+
 
 }

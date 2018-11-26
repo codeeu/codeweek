@@ -40,6 +40,71 @@ class UserTest extends TestCase
 
     }
 
+    /** @test */
+    public function a_user_should_readable_name()
+    {
+
+
+        $user = create('App\User', ["firstname" => "foo","lastname" => "","username" => ""]);
+
+
+        $this->assertEquals("foo", $user->getName());
+
+
+    }
+
+    /** @test */
+    public function a_user_should_readable_name_with_first_and_lastname()
+    {
+
+
+        $user = create('App\User', ["firstname" => "foo","lastname" => "bar","username" => ""]);
+
+
+        $this->assertEquals("foo bar", $user->getName());
+
+
+    }
+
+    /** @test */
+    public function a_user_should_readable_name_with_username()
+    {
+
+
+        $user = create('App\User', ["firstname" => "foo","lastname" => "bar","username" => "woody"]);
+
+
+        $this->assertEquals("woody", $user->getName());
+
+
+    }
+
+    /** @test */
+    public function a_user_should_readable_name_without_personal_info()
+    {
+
+
+        $user = create('App\User', ["firstname" => "","lastname" => "","username" => "", "email" => "foo@bar.com"]);
+
+
+        $this->assertEquals("foo@bar.com", $user->getName());
+
+
+    }
+
+    /** @test */
+    public function a_user_should_be_seen_as_ambassador()
+    {
+
+        $this->seed('RolesAndPermissionsSeeder');
+
+        $user = create('App\User')->assignRole('ambassador');
+
+        $this->assertTrue($user->ambassador);
+
+
+    }
+
 
 }
 
