@@ -52,7 +52,7 @@ class EventRequest extends FormRequest
             'end_date.required' => 'Please enter a valid date and time (example: 2014-10-22 18:00).',
             'audience.required' => 'If unsure, choose Other and provide more information in the description.',
             'theme.required' => 'If unsure, choose Other and provide more information in the description.',
-            'country_iso.required' => 'The event\'s location should be in Europe.',
+            'country.required' => 'The event\'s location should be in Europe.',
 
             'user_email.required' => 'Please enter a valid email address.',
         ];

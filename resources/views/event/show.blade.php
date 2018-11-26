@@ -11,7 +11,7 @@
                 <report-event :event="{{$event}}"></report-event>
             @endcan
 
-            <div class="about-event clearfix">
+            <div class="clearfix">
                 <div class="col-md-8 event-description first">
 
 
@@ -155,10 +155,10 @@
                 <div class="col-md-12 first">
                     <hr>
                 </div>
-                <div id="view-event-map-wrapper" class="col-md-12 first">
-                    <div id="map" style="width:100%; height:100%"></div>
-                </div>
             </div>
+
+            <div id = "events-show-map"></div>
+
             <div class="col-md-12">
                 <hr>
             </div>
@@ -183,8 +183,26 @@
 
 @push('scripts')
 
+    <script>
+        window.event_details = {!! json_encode($event->getJavascriptData()) !!};
+        window.event_coordinates = event_details.geoposition.split(",");
+    </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAPS_KEY')}}&libraries=places"></script>
+    <script defer src="//europa.eu/webtools/load.js" type="text/javascript"></script>
+    <link href="{{asset('css/MarkerCluster.css')}}" media="screen" rel="stylesheet" />
+    <link href="{{asset('css/MarkerCluster.Default.css')}}" media="screen" rel="stylesheet" />
+    <script type="application/json">
+        {
+            "service" : "map",
+            "version" : "2.0",
+            "renderTo" : "events-show-map",
+            "custom": ["/js/hideMenuMap.js","/js/leaflet.markercluster.js"]
+        }
+    </script>
+
+
+
+    {{--<script src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAPS_KEY')}}&libraries=places"></script>
     <script>
 
 
@@ -229,7 +247,7 @@
         });
 
 
-    </script>
+    </script>--}}
 
 
 

@@ -1,4 +1,4 @@
-map = new google.maps.Map(document.getElementById('map'), {
+/*map = new google.maps.Map(document.getElementById('map'), {
     zoom: 3,
     center: {
         lat: 50.8093378,
@@ -12,11 +12,11 @@ map = new google.maps.Map(document.getElementById('map'), {
 
 
 autocomplete = new google.maps.places.Autocomplete(
-    /** @type {!HTMLInputElement} */ (
+    /!** @type {!HTMLInputElement} *!/ (
         document.getElementById('autocomplete')));
 
 
-autocomplete.addListener('place_changed', onPlaceChanged);
+autocomplete.addListener('place_changed', onPlaceChanged);*/
 
 function addEvent(errorMsg){
     var geoposition = $("#geoposition").val();
@@ -32,6 +32,7 @@ function addEvent(errorMsg){
 
 // When the user selects a city, get the place details for the city and
 // zoom the map in on the city.
+/*
 function onPlaceChanged() {
     var place = autocomplete.getPlace();
 
@@ -54,4 +55,4 @@ function onPlaceChanged() {
 
 
     }
-}
+}*/
