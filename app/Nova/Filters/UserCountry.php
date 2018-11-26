@@ -6,7 +6,7 @@ use App\Country;
 use Illuminate\Http\Request;
 use Laravel\Nova\Filters\Filter;
 
-class EventCountry extends Filter
+class UserCountry extends Filter
 {
     /**
      * Apply the filter to the given query.
@@ -29,6 +29,7 @@ class EventCountry extends Filter
      */
     public function options(Request $request)
     {
+
         return Country::withEvents()->pluck('iso','name');
     }
 }

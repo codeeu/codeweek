@@ -14,5 +14,7 @@ yarn-error.log
 _ide_helper.php
 bios.sql
 public/js/app.js
-nova
+!app/Nova
+
 auth.json
+composer.lock

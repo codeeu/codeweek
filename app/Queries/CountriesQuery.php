@@ -32,4 +32,19 @@ class CountriesQuery
         $countries = Country::findMany($isos)->sortBy('name');
         return $countries;
     }
+
+    public static function getCountryIsoPerName(string $name)
+
+    {
+
+        //Means we sent the country code already. No need to lookup.
+        if (strlen($name) < 4) return $name;
+
+        return DB::table('countries')
+            ->select(['iso'])
+            ->where('name',"=",$name)
+            ->first()
+            ->iso;
+    }
+
 }

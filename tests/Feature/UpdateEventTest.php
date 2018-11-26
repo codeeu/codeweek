@@ -32,7 +32,6 @@ class UpdateEventTest extends TestCase
         $event = Event::where('title', $event->title)->first();
 
 
-
         $event->title = 'Changed';
         $event->description = 'Changed description.';
         $event->theme = "1,2";

@@ -2,11 +2,10 @@
 
 namespace App\Nova\Filters;
 
-use App\Country;
 use Illuminate\Http\Request;
 use Laravel\Nova\Filters\Filter;
 
-class EventCountry extends Filter
+class UserStatus extends Filter
 {
     /**
      * Apply the filter to the given query.
@@ -18,7 +17,10 @@ class EventCountry extends Filter
      */
     public function apply(Request $request, $query, $value)
     {
-        return $query->where('country_iso', $value);
+        return $query->join('model_has_roles','users.id',"=","model_has_roles.model_id")
+            ->where('model_has_roles.role_id',"=",$value)
+            ->select('users.*')
+            ;
     }
 
     /**
@@ -29,6 +31,9 @@ class EventCountry extends Filter
      */
     public function options(Request $request)
     {
-        return Country::withEvents()->pluck('iso','name');
+        return [
+            'Administrator' => 5,
+            'Ambassador' => 3
+        ];
     }
 }

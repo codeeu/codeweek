@@ -2,17 +2,19 @@
 
 namespace App\Nova;
 
+
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\Boolean;
-use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\HasOne;
-use Laravel\Nova\Fields\ID;
-use Illuminate\Http\Request;
-use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Fields\Gravatar;
-use Laravel\Nova\Fields\Password;
 
-class User extends Resource
+use Illuminate\Http\Request;
+
+use Laravel\Nova\Fields\Text;
+
+use Laravel\Nova\Fields\Password;
+use Laravel\Nova\Http\Requests\NovaRequest;
+
+class Ambassador extends Resource
 {
     /**
      * The model the resource corresponds to.
@@ -21,17 +23,12 @@ class User extends Resource
      */
     public static $model = 'App\\User';
 
-    //public static $title = 'email';
-
     /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
      */
-    public function title()
-    {
-        return $this->getName();
-    }
+    public static $title = 'name';
 
     /**
      * The columns that should be searched.
@@ -53,12 +50,13 @@ class User extends Resource
         return [
 
 
-            Boolean::make('ambassador'),
+            Boolean::make('Is Ambassador ?', 'ambassador'),
 
-            Text::make('Email', 'email')
-                ->onlyOnIndex(),
 
-            Text::make('Name', function () {
+            BelongsTo::make('Country'),
+
+
+            Text::make('Name', function(){
                 return $this->getName();
             })
                 ->rules('required', 'max:255')
@@ -71,14 +69,10 @@ class User extends Resource
                 ->updateRules('unique:users,email,{{resourceId}}')
                 ->hideFromIndex(),
 
-            HasMany::make('Events'),
-
             Password::make('Password')
                 ->onlyOnForms()
                 ->creationRules('required', 'string', 'min:6')
                 ->updateRules('nullable', 'string', 'min:6'),
-
-
         ];
     }
 
@@ -102,7 +96,7 @@ class User extends Resource
     public function filters(Request $request)
     {
         return [
-            new Filters\UserStatus,
+            new Filters\UserCountry,
         ];
     }
 
@@ -132,5 +126,16 @@ class User extends Resource
     {
 
         return $request->user()->isAdmin();
+    }
+
+    public static function indexQuery(NovaRequest $request, $query)
+    {
+
+        //return $query->where('country_iso', "=", $request->user()->country_iso);
+
+        return $query->join('model_has_roles', 'users.id', "=", "model_has_roles.model_id")
+            ->where('model_has_roles.role_id', "=", 3)
+            ->select('users.*');
+
     }
 }

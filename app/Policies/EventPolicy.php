@@ -105,4 +105,16 @@ class EventPolicy
 
         return false;
     }
+
+    public function update(User $user, Event $event)
+    {
+        return $this->edit($user,$event);
+    }
+
+    public function delete(User $user, Event $event)
+    {
+        return $this->edit($user,$event);
+    }
+
+
 }
