@@ -29,15 +29,16 @@ class MapTest extends TestCase
 
         $this->withExceptionHandling();
 
-        create('App\Event', ['start_date' => Carbon::now(),'end_date' => Carbon::now()->addDay(), 'status' => 'APPROVED'], 7);
-        create('App\Event', ['start_date' => Carbon::now(), 'end_date' => Carbon::now()->addDay(), 'status' => 'PENDING'], 6);
+        create('App\Event', ['start_date' => Carbon::now(),'end_date' => Carbon::now()->addDay(), 'status' => 'APPROVED','country_iso' => 'BE'], 7);
+        create('App\Event', ['start_date' => Carbon::now(), 'end_date' => Carbon::now()->addDay(), 'status' => 'PENDING','country_iso' => 'BE'], 6);
         create('App\Event', ['start_date' => Carbon::now()->subyear(), 'status' => 'APPROVED'], 3);
 
 
         $results = $this->json('GET', '/api/event/list');
 
 
-        $this->assertCount(7, $results->json());
+
+        $this->assertCount(7, $results->json()['BE']);
 
     }
    /** @test */
@@ -47,15 +48,15 @@ class MapTest extends TestCase
 
         $this->withExceptionHandling();
 
-        create('App\Event', ['start_date' => Carbon::now(), 'status' => 'APPROVED'], 7);
-        create('App\Event', ['start_date' => Carbon::now(), 'status' => 'PENDING'], 6);
-        create('App\Event', ['start_date' => Carbon::now()->subyear(),'end_date' => Carbon::now()->subyear(), 'status' => 'APPROVED'], 3);
+        create('App\Event', ['start_date' => Carbon::now(), 'status' => 'APPROVED','country_iso' => 'BE'], 7);
+        create('App\Event', ['start_date' => Carbon::now(), 'status' => 'PENDING','country_iso' => 'BE'], 6);
+        create('App\Event', ['start_date' => Carbon::now()->subyear(),'end_date' => Carbon::now()->subyear(), 'status' => 'APPROVED','country_iso' => 'BE'], 3);
 
 
         $results = $this->json('GET', '/api/event/list?year=2017');
 
 
-        $this->assertCount(3, $results->json());
+        $this->assertCount(3, $results->json()['BE']);
 
     }
 
@@ -63,15 +64,18 @@ class MapTest extends TestCase
     public function structure_event()
     {
 
-        create('App\Event', ['start_date' => Carbon::now(), 'status' => 'APPROVED'], 7);
-        create('App\Event', ['start_date' => Carbon::now(), 'status' => 'PENDING'], 6);
-        create('App\Event', ['start_date' => Carbon::now()->subyear(), 'status' => 'APPROVED'], 3);
+        create('App\Event', ['start_date' => Carbon::now(), 'status' => 'APPROVED','country_iso' => 'BE'], 7);
+        create('App\Event', ['start_date' => Carbon::now(), 'status' => 'PENDING','country_iso' => 'BE'], 6);
+        create('App\Event', ['start_date' => Carbon::now()->subyear(), 'status' => 'APPROVED','country_iso' => 'BE'], 3);
 
 
         $result = $this->getJson('/api/event/list');
 
+        $item = $result->json()['BE'][0];
 
-        $result->assertJsonStructure([['id', 'geoposition']]);
+        $this->assertArrayHasKey('id',$item);
+        $this->assertArrayHasKey('geoposition',$item);
+
 
 
     }

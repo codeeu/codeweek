@@ -23,6 +23,14 @@ class AppServiceProvider extends ServiceProvider
             $view->with('active_countries', \App\Country::withEvents());
             $view->with('themes', \App\Theme::orderBy('order', 'asc')->get());
         });
+
+        \View::composer(['stats'], function ($view) {
+
+            $view->with('active_countries', \App\Country::withEvents());
+
+        });
+
+
     }
 
     /**

@@ -11869,7 +11869,11 @@ body:not(.device-touch) .tagcloud a {
     border: 1px solid #DDD;
 }
 
-.img-circle { border-radius: 50% !important; }
+.img-circle {
+    border-radius: 50% !important;
+    width: 80px;
+    height: 80px;
+}
 
 .pagination > .active > a,
 .pagination > .active > span,

@@ -46,7 +46,9 @@ class Event extends Model
         'organizer_type',
         'certificate_url',
         'certificate_generated_at',
-        'approved_by'
+        'approved_by',
+        'last_report_notification_sent_at'
+
 
     ];
 
@@ -55,6 +57,14 @@ class Event extends Model
         Event::class => EventPolicy::class,
     ];
 
+
+    public function test(){
+        return "foo";
+    }
+
+    public function getJavascriptData(){
+        return $this->only(["geoposition","title","description"]);
+    }
 
     public function getDescriptionForEvent(string $eventName): string
     {
@@ -65,7 +75,7 @@ class Event extends Model
 
 
     public function getEventUrlAttribute($url){
-        if (strpos($url, "http") !== 0) return "http://" . $url;
+        if ($url && strpos($url, "http") !== 0) return "http://" . $url;
 
         return $url;
     }
@@ -85,9 +95,7 @@ class Event extends Model
             return 'https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png';
         }
 
-        //dd('hello');
-        //dd($this->picture);
-        //return $this->picture ? (env('AWS_URL') . $this->picture) : "https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png";
+
 
     }
 
@@ -188,5 +196,13 @@ class Event extends Model
 
         return true;
     }
+
+    public function reject(){
+        $data = ['status' => "REJECTED", 'approved_by' => auth()->user()->id];
+
+        $this->update($data);
+    }
+
+
 
 }
