@@ -25,5 +25,6 @@ return [
     ],
     'search_counter' => 'saskaņot ar meklēšanas kritērijiem',
     'event'=>'pasākums',
-    'events'=>'pasākumi'
+    'events'=>'pasākumi',
+    'year' => 'gads',
 ];

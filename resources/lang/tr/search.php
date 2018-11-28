@@ -25,5 +25,6 @@ return [
     ],
     'search_counter' => 'arama kriterlerinizle eşleşiyor',
     'event'=>'etkinlik',
-    'events'=>'etkinlik'
+    'events'=>'etkinlik',
+    'year' => 'yıl',
 ];
