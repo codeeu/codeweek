@@ -25,5 +25,6 @@ return [
     ],
     'search_counter' => 'zhoda s vašimi kritériami vyhľadávania',
     'event'=>'podujatie',
-    'events'=>'podujatia/podujatí'
+    'events'=>'podujatia/podujatí',
+    'year' => 'rok',
 ];

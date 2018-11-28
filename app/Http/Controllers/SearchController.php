@@ -12,13 +12,13 @@ class SearchController extends Controller
 
     public function search(EventFilters $filters, Request $request)
     {
-
-
         $events = $this->getEvents($filters);
         $selected_themes = $request->input('theme') ?: [];
         $selected_audiences = $request->input('audience') ?: [];
+        $years = [2018, 2017, 2016, 2015, 2014];
+        $selected_year = $request->input('year') ?: 2018;
 
-        return view('event.search', compact(['events','selected_themes','selected_audiences']));
+        return view('event.search', compact(['events','selected_themes','selected_audiences','years','selected_year']));
     }
 
     protected function getEvents(EventFilters $filters)

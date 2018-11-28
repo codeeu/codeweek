@@ -25,5 +25,6 @@ return [
     ],
     'search_counter' => 'felel meg a keresési feltételeinek',
     'event'=>'esemény',
-    'events'=>'esemény'
+    'events'=>'esemény',
+    'year' => 'év',
 ];

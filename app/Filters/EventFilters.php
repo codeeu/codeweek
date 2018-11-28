@@ -13,14 +13,13 @@ class EventFilters extends Filters
      *
      * @var array
      */
-    protected $filters = ['country_iso', 'past', 'q', 'theme', 'audience'];
+    protected $filters = ['country_iso', 'q', 'theme', 'audience','year'];
 
     public function __construct(Request $request)
     {
-        if (is_null($request->input('past'))) {
-            $request->merge(['past' => 'no']);
+        if (is_null($request->input('year'))) {
+            $request->merge(['year' => Carbon::now()->year]);
         }
-
         parent::__construct($request);
     }
 
@@ -37,12 +36,11 @@ class EventFilters extends Filters
         return $result;
     }
 
-    protected function past($hasPast)
+    protected function year($year)
     {
 
-        if ($hasPast == "no") {
-            return $this->builder->whereYear('end_date', '>=', Carbon::now('Europe/Brussels')->year);
-        }
+            return $this->builder->whereYear('start_date', '=', $year);
+
     }
 
     protected function q($q)

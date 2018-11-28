@@ -25,5 +25,6 @@ return [
     ],
     'search_counter' => 'qabbel il-kriterji tat-tiftixa tiegħek',
     'event'=>'avveniment',
-    'events'=>'avvenimenti'
+    'events'=>'avvenimenti',
+    'year' => 'sena',
 ];

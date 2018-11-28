@@ -25,5 +25,6 @@ return [
     ],
     'search_counter' => 'atitinka jūsų paieškos kriterijus',
     'event'=>'renginys',
-    'events'=>'renginiai'
+    'events'=>'renginiai',
+    'year' => 'metai',
 ];

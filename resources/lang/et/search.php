@@ -25,5 +25,6 @@ return [
     ],
     'search_counter' => 'vastab otsingukriteeriumitele',
     'event'=>'üritus',
-    'events'=>'üritust'
+    'events'=>'üritust',
+    'year' => 'aastas',
 ];
