@@ -25,5 +25,6 @@ return [
     ],
     'search_counter' => 'se ujemajo z vašimi merili za iskanje',
     'event'=>'dogodek',
-    'events'=>'dogodki'
+    'events'=>'dogodki',
+    'year' => 'leto',
 ];
