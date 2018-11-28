@@ -25,5 +25,6 @@ return [
     ],
     'search_counter' => 'Podesite kriterijume za pretragu',
     'event'=>'Događaj',
-    'events'=>'Događaji '
+    'events'=>'Događaji',
+    'year' => 'Godina',
 ];
