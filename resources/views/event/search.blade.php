@@ -25,8 +25,21 @@
 
                             <div class="search-checkbox">
                                 <hr>
-                                <label for="id_past_0">@lang('search.last_year_events.label')</label>
-                                <ul id="id_past">
+                                <label for="id_past_0">@lang('search.year')</label>
+
+                                <select class="search-form-element" id="year" name="year" onchange="this.form.submit()">
+
+
+                                    @foreach($years as $year_label)
+                                        <option value="{{$year_label}}"
+                                                {{ ($year_label == $selected_year)?'selected':'' }}
+                                        >{{$year_label}}</option>
+                                    @endforeach
+
+
+                                </select>
+
+                            <!--<ul id="id_past">
                                     <li><label for="id_past_0"><input class="search-form-element" id="id_past_0"
                                                                       name="past" type="radio" value="yes" onchange="this.form.submit()"
                                             {{ session('past')=='yes'?'checked':'' }}
@@ -37,7 +50,7 @@
                                                                       value="no" onchange="this.form.submit()"
                                                     {{ session('past')!='yes'?'checked':'' }}
                                             /> @lang('search.last_year_events.no')</label></li>
-                                </ul>
+                                </ul>-->
                             </div>
 
                             <div class="search-checkbox">

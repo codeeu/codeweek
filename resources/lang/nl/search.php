@@ -25,5 +25,6 @@ return [
     ],
     'search_counter' => 'stemmen overeen met je zoekcriteria',
     'event'=>'evenement',
-    'events'=>'evenementen'
+    'events'=>'evenementen',
+    'year' => 'jaar',
 ];

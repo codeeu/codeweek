@@ -25,5 +25,6 @@ return [
     ],
     'search_counter' => 'vastaa hakukriteerejäsi',
     'event'=>'tapahtuma',
-    'events'=>'tapahtumaa'
+    'events'=>'tapahtumaa',
+    'year' => 'vuosi',
 ];
