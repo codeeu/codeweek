@@ -25,5 +25,6 @@ return [
     ],
     'search_counter' => 'matcha sökkriterierna',
     'event'=>'evenemang',
-    'events'=>'evenemang'
+    'events'=>'evenemang',
+    'year' => 'år',
 ];

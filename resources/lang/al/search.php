@@ -25,5 +25,6 @@ return [
     ],
     'search_counter' => 'përputh kriteret e kërkimit',
     'event'=>'evenimenti',
-    'events'=>'evenimentet'
+    'events'=>'evenimentet',
+    'year' => 'vit'
 ];

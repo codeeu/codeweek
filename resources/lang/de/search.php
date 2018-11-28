@@ -25,5 +25,6 @@ return [
     ],
     'search_counter' => 'Suchkriterien anpassen',
     'event'=>'Veranstaltung',
-    'events'=>'Veranstaltungen'
+    'events'=>'Veranstaltungen',
+    'year' => 'Jahr',
 ];

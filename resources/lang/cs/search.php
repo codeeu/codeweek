@@ -25,5 +25,6 @@ return [
     ],
     'search_counter' => 'odpovídá vašim vyhledávacím kritériím',
     'event'=>'akce',
-    'events'=>'akcí'
+    'events'=>'akcí',
+    'year' => 'rok',
 ];
