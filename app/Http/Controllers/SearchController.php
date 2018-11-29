@@ -24,7 +24,7 @@ class SearchController extends Controller
     protected function getEvents(EventFilters $filters)
     {
 
-        $events = Event::where('status','like','APPROVED')->filter($filters);
+        $events = Event::where('status','like','APPROVED')->filter($filters)->orderBy('start_date','desc');
 
         return $events->paginate(20);
     }
