@@ -18,13 +18,19 @@ class SearchController extends Controller
         $years = [2018, 2017, 2016, 2015, 2014];
         $selected_year = $request->input('year') ?: 2018;
 
-        return view('event.search', compact(['events','selected_themes','selected_audiences','years','selected_year']));
+        $country = Country::where('iso','=',session('country_iso'))->first();
+
+
+
+        return view('event.search', compact(['events','selected_themes','selected_audiences','years','selected_year','country']));
     }
 
     protected function getEvents(EventFilters $filters)
     {
 
-        $events = Event::where('status','like','APPROVED')->filter($filters)->orderBy('start_date','desc');
+        $events = Event::where('status','like','APPROVED')
+            ->filter($filters)
+            ->orderBy('start_date','desc');
 
         return $events->paginate(20);
     }
