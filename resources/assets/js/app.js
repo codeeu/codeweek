@@ -20,6 +20,7 @@ import pictureForm from './components/PictureForm.vue';
 import dateTime from './components/DateTime.vue';
 import inputTags from './components/InputTags.vue';
 import moderateEvent from './components/ModerateEvent.vue';
+import reportedEvent from './components/ReportedEvent.vue';
 import reportEvent from './components/ReportEvent.vue';
 import question from './components/Question.vue';
 import simpleQuestion from './components/SimpleQuestion.vue';
@@ -48,6 +49,7 @@ const app = new Vue({
         dateTime,
         inputTags,
         moderateEvent,
+        reportedEvent,
         reportEvent,
         question,
         simpleQuestion,

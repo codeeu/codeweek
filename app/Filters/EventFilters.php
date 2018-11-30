@@ -13,12 +13,16 @@ class EventFilters extends Filters
      *
      * @var array
      */
-    protected $filters = ['country_iso', 'q', 'theme', 'audience','year'];
+    protected $filters = ['country_iso', 'q', 'theme', 'audience','year', 'creator_id'];
 
     public function __construct(Request $request)
     {
         if (is_null($request->input('year'))) {
             $request->merge(['year' => Carbon::now()->year]);
+        }
+
+        if (is_null($request->input('country_iso')) && !is_null(session('country_iso'))) {
+            $request->merge(['country_iso' => session('country_iso')]);
         }
         parent::__construct($request);
     }
@@ -40,6 +44,12 @@ class EventFilters extends Filters
     {
 
             return $this->builder->whereYear('start_date', '=', $year);
+
+    }
+
+    protected function creator_id($creator_id)
+    {
+        return $this->builder->where('creator_id', '=', $creator_id);
 
     }
 

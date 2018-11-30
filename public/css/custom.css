@@ -140,3 +140,11 @@ html{
 .pending .thumbnail{
     height:410px;
 }
+
+.icon-facebook {
+    color:#3b5998;
+}
+
+.icon-globe {
+    color: #53984b;
+}
