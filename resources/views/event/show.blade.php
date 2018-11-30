@@ -4,8 +4,14 @@
     <section>
         <div class="container">
             @can('approve', $event)
-                <moderate-event :event="{{$event}}"></moderate-event>
+                @if($event->certificate_url)
+                    <reported-event :event="{{$event}}"></reported-event>
+                @else
+                    <moderate-event :event="{{$event}}"></moderate-event>
+                @endif
             @endcan
+
+
 
             @can('report', $event)
                 <report-event :event="{{$event}}"></report-event>
@@ -60,7 +66,8 @@
                         <div class="itens">
                             <ul class="event-list">
                                 @foreach($event->audiences as $audience)
-                                    <li><span class="label label-info">@lang('event.audience.'.$audience->name)</span></li>
+                                    <li><span class="label label-info">@lang('event.audience.'.$audience->name)</span>
+                                    </li>
                                 @endforeach
                             </ul>
                         </div>
@@ -157,7 +164,7 @@
                 </div>
             </div>
 
-            <div id = "events-show-map"></div>
+            <div id="events-show-map"></div>
 
             <div class="col-md-12">
                 <hr>
@@ -189,8 +196,8 @@
     </script>
 
     <script defer src="//europa.eu/webtools/load.js" type="text/javascript"></script>
-    <link href="{{asset('css/MarkerCluster.css')}}" media="screen" rel="stylesheet" />
-    <link href="{{asset('css/MarkerCluster.Default.css')}}" media="screen" rel="stylesheet" />
+    <link href="{{asset('css/MarkerCluster.css')}}" media="screen" rel="stylesheet"/>
+    <link href="{{asset('css/MarkerCluster.Default.css')}}" media="screen" rel="stylesheet"/>
     <script type="application/json">
         {
             "service" : "map",
@@ -198,6 +205,7 @@
             "renderTo" : "events-show-map",
             "custom": ["/js/hideMenuMap.js","/js/leaflet.markercluster.js"]
         }
+
     </script>
 
 
@@ -254,4 +262,10 @@
 @endpush
 
 
+<script>
+    import ReportedEvent from "../../assets/js/components/ReportedEvent";
 
+    export default {
+        components: {ReportedEvent}
+    }
+</script>
