@@ -93,6 +93,13 @@ Route::get('api/event/closest', 'Api\EventsController@closest');
 
 Route::post('api/event/report/{event}', 'ReportController@store')->middleware('auth');
 
+
+Route::group(['middleware' => ['role:super admin']], function () {
+    Route::post('api/resource/level/', 'Api\Resource\LevelController@store')->name('resource_level');
+    Route::post('api/resource/item/', 'Api\Resource\ItemController@store')->name('resource_item');
+});
+
+
 Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/activities', 'AdminController@activities')->name('activities');
     Route::get('/pending/{country}', 'PendingEventsController@index')->name('pending_by_country');
