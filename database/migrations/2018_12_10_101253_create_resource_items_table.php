@@ -21,6 +21,8 @@ class CreateResourceItemsTable extends Migration
             $table->string("thumbnail")->nullable();
             $table->string("facebook")->nullable();
             $table->string("twitter")->nullable();
+            $table->boolean('teach')->default(true);
+            $table->boolean('learn')->default(false);
             $table->timestamps();
         });
     }
