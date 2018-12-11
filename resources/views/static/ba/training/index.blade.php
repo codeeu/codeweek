@@ -20,15 +20,15 @@
                     <p>Nije potrebno nikakvo prethodno iskustvo u kodiranju ili programiranju i svaki modul traje tek oko 15 minuta. Ti moduli uvode vas u ključne koncepte vezane za kodiranje i aktivnosti računarskog razmi&scaron;ljanja. Pored toga, ti moduli pružaju vam i praktične savjete o tome kako integrirati te koncepte u svojoj učionici.</p>
 
                     <div class="flex flex-wrap" style="margin-bottom: 30px;">
-                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning_card_default.png"><div class="text-xl">Kodiranje bez digitalne tehnologije (oflajn)</div>
+                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning/coding-without-computers.png"><div class="text-xl">Kodiranje bez digitalne tehnologije (oflajn)</div>
                                 <div class="text-base text-black">Autor Aleksandro Bogliolo</div></a></div>
-                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning_card_default.png"><div class="text-xl">Računarsko razmi&scaron;ljanje i rje&scaron;avanje problema</div>
+                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning/computational-thinking-and-problem-solving.png"><div class="text-xl">Računarsko razmi&scaron;ljanje i rje&scaron;avanje problema</div>
                                 <div class="text-base text-black">Autor Miles Berry</div></a></div>
-                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning_card_default.png"><div class="text-xl">Vizuelno programiranje - uvod u Scratch</div>
+                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning/visual-programming-introduction-to-scratch.png"><div class="text-xl">Vizuelno programiranje - uvod u Scratch</div>
                                 <div class="text-base text-black">Autor Margo Tinawi</div></a></div>
-                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning_card_default.png"><div class="text-xl">Kreativne edukativne igre sa Scratchom</div>
+                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning/creating-educational-games-with-scratch.png"><div class="text-xl">Kreativne edukativne igre sa Scratchom</div>
                                 <div class="text-base text-black">Autor Jesus Moreno Leon</div></a></div>
-                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning_card_default.png"><div class="text-xl">Stvaranje, robotika i praktični rad u učionici</div>
+                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning/making-robotics-and-tinkering-in-the-classroom.png"><div class="text-xl">Stvaranje, robotika i praktični rad u učionici</div>
                                 <div class="text-base text-black">Autor Tullia Urschitz</div></a></div>
                     </div>
 
