@@ -20,15 +20,15 @@
                     <p>Je hoeft geen ervaring te hebben met programmeercode of programmeren. Elke module duurt ongeveer 15 minuten. In de modules maak je kennis met basisconcepten van programmeren en activiteiten voor computationeel denken. Bovendien vind je in de modules praktische tips en adviezen over hoe je de concepten kunt verwerken in je lessen.</p>
 
                     <div class="flex flex-wrap" style="margin-bottom: 30px;">
-                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning_card_default.png"><div class="text-xl">Programmeren zonder digitale technologie (zonder snoeren)</div>
+                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning/replace"><div class="text-xl">Programmeren zonder digitale technologie (zonder snoeren)</div>
                                 <div class="text-base text-black">Door Alessandro Bogliolo</div></a></div>
-                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning_card_default.png"><div class="text-xl">Computationeel denken en problemen oplossen</div>
+                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning/replace"><div class="text-xl">Computationeel denken en problemen oplossen</div>
                                 <div class="text-base text-black">Door Miles Berry</div></a></div>
-                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning_card_default.png"><div class="text-xl">Visueel programmeren &ndash; kennismaking met Scratch</div>
+                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning/replace"><div class="text-xl">Visueel programmeren &ndash; kennismaking met Scratch</div>
                                 <div class="text-base text-black">Door Margo Tinawi</div></a></div>
-                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning_card_default.png"><div class="text-xl">Educatieve games maken met Scratch</div>
+                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning/replace"><div class="text-xl">Educatieve games maken met Scratch</div>
                                 <div class="text-base text-black">Door Jes&uacute;s Moreno Le&oacute;n</div></a></div>
-                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning_card_default.png"><div class="text-xl">Creatief met robotica en sleutelen in de klas</div>
+                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning/replace"><div class="text-xl">Creatief met robotica en sleutelen in de klas</div>
                                 <div class="text-base text-black">Door Tullia Urschitz</div></a></div>
                     </div>
 

@@ -20,15 +20,15 @@
                     <p>N&atilde;o &eacute; necess&aacute;rio ter experi&ecirc;ncia em programa&ccedil;&atilde;o, e apenas s&atilde;o necess&aacute;rios cerca de 15&nbsp;minutos para concluir cada m&oacute;dulo. Os m&oacute;dulos apresentam-lhe os principais conceitos relacionados com as atividades de programa&ccedil;&atilde;o e de pensamento computacional. Al&eacute;m disso, os m&oacute;dulos tamb&eacute;m fornecem sugest&otilde;es e conselhos pr&aacute;ticos sobre a forma de integrar os conceitos na sua sala de aula.</p>
 
                     <div class="flex flex-wrap" style="margin-bottom: 30px;">
-                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning_card_default.png"><div class="text-xl">Programa&ccedil;&atilde;o sem tecnologia digital (<i>unplugged</i>)</div>
+                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning/replace"><div class="text-xl">Programa&ccedil;&atilde;o sem tecnologia digital (<i>unplugged</i>)</div>
                                 <div class="text-base text-black">Por Alessandro Bogliolo</div></a></div>
-                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning_card_default.png"><div class="text-xl">Pensamento computacional e resolu&ccedil;&atilde;o de problemas</div>
+                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning/replace"><div class="text-xl">Pensamento computacional e resolu&ccedil;&atilde;o de problemas</div>
                                 <div class="text-base text-black">Por Miles Berry</div></a></div>
-                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning_card_default.png"><div class="text-xl">Programa&ccedil;&atilde;o visual &mdash; introdu&ccedil;&atilde;o ao Scratch</div>
+                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning/replace"><div class="text-xl">Programa&ccedil;&atilde;o visual &mdash; introdu&ccedil;&atilde;o ao Scratch</div>
                                 <div class="text-base text-black">Por Margo Tinawi</div></a></div>
-                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning_card_default.png"><div class="text-xl">Criar jogos did&aacute;ticos com o Scratch</div>
+                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning/replace"><div class="text-xl">Criar jogos did&aacute;ticos com o Scratch</div>
                                 <div class="text-base text-black">Por Jes&uacute;s Moreno Le&oacute;n</div></a></div>
-                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning_card_default.png"><div class="text-xl">Trabalhos de rob&oacute;tica e com hardware na sala de aula</div>
+                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning/replace"><div class="text-xl">Trabalhos de rob&oacute;tica e com hardware na sala de aula</div>
                                 <div class="text-base text-black">Por Tullia Urschitz</div></a></div>
                     </div>
 
