@@ -20,15 +20,15 @@
                     <p>Eelnev koodikirjutamise v&otilde;i programmeerimiskogemus ei ole vajalik ning iga mooduli l&auml;bimine v&otilde;tab aega ainult 15&nbsp;minutit. Moodulites tutvustatakse programmeerimise p&otilde;hit&otilde;desid ja algoritmilise m&otilde;tlemise arendamiseks m&otilde;eldud tegevusi. Lisaks sellele antakse moodulites praktilisi nippe ja n&otilde;u, kuidas neid kontseptsioone oma klassiruumis kasutada.</p>
 
                     <div class="flex flex-wrap" style="margin-bottom: 30px;">
-                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning_card_default.png"><div class="text-xl">Programmeerimine ilma digitaalse tehnoloogiata</div>
+                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning/coding-without-computers.png"><div class="text-xl">Programmeerimine ilma digitaalse tehnoloogiata</div>
                                 <div class="text-base text-black">Autor: Alessandro Bogliolo</div></a></div>
-                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning_card_default.png"><div class="text-xl">Algoritmiline m&otilde;tlemine ja probleemide lahendamine</div>
+                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning/computational-thinking-and-problem-solving.png"><div class="text-xl">Algoritmiline m&otilde;tlemine ja probleemide lahendamine</div>
                                 <div class="text-base text-black">Autor: Miles Berry</div></a></div>
-                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning_card_default.png"><div class="text-xl">Visuaalne programmeerimine &ndash; sissejuhatus Scratchi kasutamisse</div>
+                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning/visual-programming-introduction-to-scratch.png"><div class="text-xl">Visuaalne programmeerimine &ndash; sissejuhatus Scratchi kasutamisse</div>
                                 <div class="text-base text-black">Autor: Margo Tinawi</div></a></div>
-                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning_card_default.png"><div class="text-xl">Scratchiga hariduslike m&auml;ngude loomine</div>
+                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning/creating-educational-games-with-scratch.png"><div class="text-xl">Scratchiga hariduslike m&auml;ngude loomine</div>
                                 <div class="text-base text-black">Autor: Jes&uacute;s Moreno Le&oacute;n</div></a></div>
-                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning_card_default.png"><div class="text-xl">Robotite ehitamine ja meisterdamine klassiruumis</div>
+                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning/making-robotics-and-tinkering-in-the-classroom.png"><div class="text-xl">Robotite ehitamine ja meisterdamine klassiruumis</div>
                                 <div class="text-base text-black">Autor: Tullia Urschitz</div></a></div>
                     </div>
 
