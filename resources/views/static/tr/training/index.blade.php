@@ -24,15 +24,15 @@
                     <p>Herhangi bir kodlama ya da programlama deneyiminizin olması gerekmemekte olup, her mod&uuml;l&uuml;n tamamlanması yaklaşık 15 dakika s&uuml;recektir. Mod&uuml;ller sizi kodlama ve sayısal d&uuml;ş&uuml;nme aktivitelerine ilişkin temel kavramlar hakkında bilgilendirecektir. Bu mod&uuml;llerde aynı zamanda, kavramları sınıfınıza nasıl entegre edebileceğinize dair uygulamalı ipu&ccedil;ları ve tavsiyeler de mevcuttur.</p>
 
                     <div class="flex flex-wrap" style="margin-bottom: 30px;">
-                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning/replace"><div class="text-xl">Dijital teknolojisiz (bağlantısız) kodlama</div>
+                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning/coding-without-computers.png"><div class="text-xl">Dijital teknolojisiz (bağlantısız) kodlama</div>
                                 <div class="text-base text-black">Alessandro Bogliolo</div></a></div>
-                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning/replace"><div class="text-xl">Sayısal d&uuml;ş&uuml;nme ve problem &ccedil;&ouml;zme</div>
+                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning/computational-thinking-and-problem-solving.png"><div class="text-xl">Sayısal d&uuml;ş&uuml;nme ve problem &ccedil;&ouml;zme</div>
                                 <div class="text-base text-black">Miles Berry</div></a></div>
-                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning/replace"><div class="text-xl">G&ouml;rsel programlama - Scratch&rsquo;e giriş</div>
+                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning/visual-programming-introduction-to-scratch.png"><div class="text-xl">G&ouml;rsel programlama - Scratch&rsquo;e giriş</div>
                                 <div class="text-base text-black">Margo Tinawi</div></a></div>
-                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning/replace"><div class="text-xl">Scratch ile eğitici oyunlar hazırlama</div>
+                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning/creating-educational-games-with-scratch.png"><div class="text-xl">Scratch ile eğitici oyunlar hazırlama</div>
                                 <div class="text-base text-black">Jes&uacute;s Moreno Le&oacute;n</div></a></div>
-                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning/replace"><div class="text-xl">Sınıflarda robot teknolojisi ve deneme uygulamaları</div>
+                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning/making-robotics-and-tinkering-in-the-classroom.png"><div class="text-xl">Sınıflarda robot teknolojisi ve deneme uygulamaları</div>
                                 <div class="text-base text-black">Tullia Urschitz</div></a></div>
                     </div>
 
