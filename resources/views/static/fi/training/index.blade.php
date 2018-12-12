@@ -20,15 +20,15 @@
                     <p>Aikaisempi koodaus- tai ohjelmointikokemus ei ole tarpeen, ja jokainen moduuli kest&auml;&auml; noin 15 minuuttia. Moduuleissa esitell&auml;&auml;n koodauksen ja laskennallisen ajattelun t&auml;rkeimm&auml;t k&auml;sitteet. Moduuleista saat my&ouml;s k&auml;yt&auml;nn&ouml;n vinkkej&auml; ja neuvoja k&auml;sitteiden sis&auml;llytt&auml;miseksi opetukseen.</p>
 
                     <div class="flex flex-wrap" style="margin-bottom: 30px;">
-                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning_card_default.png"><div class="text-xl">Koodaus ilman digitaalista teknologiaa (unplugged)</div>
+                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning/coding-without-computers.png"><div class="text-xl">Koodaus ilman digitaalista teknologiaa (unplugged)</div>
                                 <div class="text-base text-black">Alessandro Bogliolo</div></a></div>
-                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning_card_default.png"><div class="text-xl">Laskennallinen ajattelu ja ongelmanratkaisu</div>
+                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning/computational-thinking-and-problem-solving.png"><div class="text-xl">Laskennallinen ajattelu ja ongelmanratkaisu</div>
                                 <div class="text-base text-black">Miles Berry</div></a></div>
-                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning_card_default.png"><div class="text-xl">Visuaalinen ohjelmointi &ndash; johdanto Scratch-ohjelmointikieleen</div>
+                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning/visual-programming-introduction-to-scratch.png"><div class="text-xl">Visuaalinen ohjelmointi &ndash; johdanto Scratch-ohjelmointikieleen</div>
                                 <div class="text-base text-black">Margo Tinawi</div></a></div>
-                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning_card_default.png"><div class="text-xl">Opetuksellisten pelien kehitt&auml;minen Scratchill&auml;</div>
+                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning/creating-educational-games-with-scratch.png"><div class="text-xl">Opetuksellisten pelien kehitt&auml;minen Scratchill&auml;</div>
                                 <div class="text-base text-black">Jes&uacute;s Moreno Le&oacute;n</div></a></div>
-                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning_card_default.png"><div class="text-xl">Robotiikka ja nikkarointi kouluissa</div>
+                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning/making-robotics-and-tinkering-in-the-classroom.png"><div class="text-xl">Robotiikka ja nikkarointi kouluissa</div>
                                 <div class="text-base text-black">Tullia Urschitz</div></a></div>
                     </div>
 
