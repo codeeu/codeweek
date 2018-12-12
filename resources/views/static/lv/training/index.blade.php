@@ -20,15 +20,15 @@
                     <p>Nav nepiecie&scaron;ama iepriek&scaron;ēja programmē&scaron;anas pieredze, un katra moduļa pabeig&scaron;anai ir nepiecie&scaron;amas tikai apmēram 15 minūtes. Moduļos ietverta iepazīstinā&scaron;ana ar svarīgākajiem jēdzieniem, kas saistīti ar programmē&scaron;anu un skaitļo&scaron;anas tipa domā&scaron;anu. Moduļos ir sniegti arī prakstiski padomi un ieteikumi par to, kā integrēt &scaron;os jēdzienus klases nodarbībās.</p>
 
                     <div class="flex flex-wrap" style="margin-bottom: 30px;">
-                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning/replace"><div class="text-xl">Programmē&scaron;ana bez digitālās tehnoloģijas (bez datora)</div>
+                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning/coding-without-computers.png"><div class="text-xl">Programmē&scaron;ana bez digitālās tehnoloģijas (bez datora)</div>
                                 <div class="text-base text-black">Alesandro Bodžliolo (Alessandro Bogliolo)</div></a></div>
-                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning/replace"><div class="text-xl">Skaitļo&scaron;anas tipa domā&scaron;ana un problēmu risinā&scaron;ana</div>
+                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning/computational-thinking-and-problem-solving.png"><div class="text-xl">Skaitļo&scaron;anas tipa domā&scaron;ana un problēmu risinā&scaron;ana</div>
                                 <div class="text-base text-black">Mailzs Berijs (Miles Berry)</div></a></div>
-                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning/replace"><div class="text-xl">Vizuālā programmē&scaron;ana&nbsp;&mdash; iepazīstinā&scaron;ana ar Scratch</div>
+                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning/visual-programming-introduction-to-scratch.png"><div class="text-xl">Vizuālā programmē&scaron;ana&nbsp;&mdash; iepazīstinā&scaron;ana ar Scratch</div>
                                 <div class="text-base text-black">Margo Tinavi (Margo Tinawi)</div></a></div>
-                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning/replace"><div class="text-xl">Izglītojo&scaron;u spēļu veido&scaron;ana ar Scratch</div>
+                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning/creating-educational-games-with-scratch.png"><div class="text-xl">Izglītojo&scaron;u spēļu veido&scaron;ana ar Scratch</div>
                                 <div class="text-base text-black">Hesuss Moreno Leons (Jes&uacute;s Moreno Le&oacute;n)</div></a></div>
-                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning/replace"><div class="text-xl">Rado&scaron;as nodarbības, robotika un eksperimenti klasē</div>
+                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning/making-robotics-and-tinkering-in-the-classroom.png"><div class="text-xl">Rado&scaron;as nodarbības, robotika un eksperimenti klasē</div>
                                 <div class="text-base text-black">Tulija Ur&scaron;ica (Tullia Urschitz)</div></a></div>
                     </div>
 

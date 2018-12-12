@@ -24,15 +24,15 @@
                     <p>Mhi meħtieġa ebda esperjenza preċedenti fl-ikkowdjar jew fl-ipprogrammar, u kull modulu jieħu biss madwar 15-il&nbsp;minuta biex tlestih. Il-modulu jintroduċuk għal kunċetti ewlenin relatati mal-ikkowdjar u attivitajiet tal-ħsieb komputazzjonali. Barra minn hekk, il-moduli jagħtuk ukoll għajnuniet prattiċi u pariri dwar kif tintegra l-kunċetti fil-klassi tiegħek.</p>
 
                     <div class="flex flex-wrap" style="margin-bottom: 30px;">
-                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning/replace"><div class="text-xl">L-ikkowdjar mingħajr teknoloġija diġitali (mhux ipplaggjat)</div>
+                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning/coding-without-computers.png"><div class="text-xl">L-ikkowdjar mingħajr teknoloġija diġitali (mhux ipplaggjat)</div>
                                 <div class="text-base text-black">Minn Alessandro Bogliolo</div></a></div>
-                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning/replace"><div class="text-xl">Il-ħsieb komputazzjonali u s-solvien tal-problemi</div>
+                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning/computational-thinking-and-problem-solving.png"><div class="text-xl">Il-ħsieb komputazzjonali u s-solvien tal-problemi</div>
                                 <div class="text-base text-black">Minn Miles Berry</div></a></div>
-                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning/replace"><div class="text-xl">L-ipprogrammar viżiv &ndash; introduzzjoni għal Scratch</div>
+                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning/visual-programming-introduction-to-scratch.png"><div class="text-xl">L-ipprogrammar viżiv &ndash; introduzzjoni għal Scratch</div>
                                 <div class="text-base text-black">Minn Margo Tinawi</div></a></div>
-                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning/replace"><div class="text-xl">Il-ħolqien ta&rsquo; logħob edukattiv bi Scratch</div>
+                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning/creating-educational-games-with-scratch.png"><div class="text-xl">Il-ħolqien ta&rsquo; logħob edukattiv bi Scratch</div>
                                 <div class="text-base text-black">Minn Jes&uacute;s Moreno Le&oacute;n</div></a></div>
-                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning/replace"><div class="text-xl">Il-ħolqien, ir-robotika u t-tiswija fil-klassi</div>
+                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning/making-robotics-and-tinkering-in-the-classroom.png"><div class="text-xl">Il-ħolqien, ir-robotika u t-tiswija fil-klassi</div>
                                 <div class="text-base text-black">Minn Tullia Urschitz</div></a></div>
                     </div>
 

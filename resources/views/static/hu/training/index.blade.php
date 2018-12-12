@@ -20,15 +20,15 @@
                     <p>Nincs sz&uuml;ks&eacute;g előzetes programoz&aacute;si tapasztalatra, &eacute;s mindegyik modul csak 15 percet vesz ig&eacute;nybe. A modulok a programoz&aacute;si &eacute;s algoritmikus gondolkod&aacute;si tev&eacute;kenys&eacute;gekhez kapcsol&oacute;d&oacute; kulcsfontoss&aacute;g&uacute; fogalmakat mutatj&aacute;k be. Ezenk&iacute;v&uuml;l a modulok gyakorlati tippeket &eacute;s tan&aacute;csokat is adnak arra vonatkoz&oacute;an, hogyan &eacute;p&iacute;theti be ezeket a fogalmakat a tan&oacute;ra menet&eacute;be.</p>
 
                     <div class="flex flex-wrap" style="margin-bottom: 30px;">
-                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning/replace"><div class="text-xl">Programoz&aacute;s digit&aacute;lis technol&oacute;gia n&eacute;lk&uuml;l (offline)</div>
+                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning/coding-without-computers.png"><div class="text-xl">Programoz&aacute;s digit&aacute;lis technol&oacute;gia n&eacute;lk&uuml;l (offline)</div>
                                 <div class="text-base text-black">Alessandro Bogliolo</div></a></div>
-                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning/replace"><div class="text-xl">Algoritmikus gondolkod&aacute;sm&oacute;d &eacute;s probl&eacute;mamegold&aacute;s</div>
+                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning/computational-thinking-and-problem-solving.png"><div class="text-xl">Algoritmikus gondolkod&aacute;sm&oacute;d &eacute;s probl&eacute;mamegold&aacute;s</div>
                                 <div class="text-base text-black">Miles Berry</div></a></div>
-                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning/replace"><div class="text-xl">Vizu&aacute;lis programoz&aacute;s &ndash; bevezet&eacute;s a Scratch programoz&aacute;si nyelvbe</div>
+                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning/visual-programming-introduction-to-scratch.png"><div class="text-xl">Vizu&aacute;lis programoz&aacute;s &ndash; bevezet&eacute;s a Scratch programoz&aacute;si nyelvbe</div>
                                 <div class="text-base text-black">Margo Tinawi</div></a></div>
-                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning/replace"><div class="text-xl">Oktat&oacute; jellegű j&aacute;t&eacute;kok l&eacute;trehoz&aacute;sa a Scratch seg&iacute;ts&eacute;g&eacute;vel</div>
+                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning/creating-educational-games-with-scratch.png"><div class="text-xl">Oktat&oacute; jellegű j&aacute;t&eacute;kok l&eacute;trehoz&aacute;sa a Scratch seg&iacute;ts&eacute;g&eacute;vel</div>
                                 <div class="text-base text-black">Jes&uacute;s Moreno Le&oacute;n</div></a></div>
-                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning/replace"><div class="text-xl">Robotika &eacute;s b&uuml;tyk&ouml;l&eacute;s az iskol&aacute;ban</div>
+                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning/making-robotics-and-tinkering-in-the-classroom.png"><div class="text-xl">Robotika &eacute;s b&uuml;tyk&ouml;l&eacute;s az iskol&aacute;ban</div>
                                 <div class="text-base text-black">Tullia Urschitz</div></a></div>
                     </div>
 
