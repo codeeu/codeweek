@@ -41,4 +41,20 @@ class ResourceLevelTest extends TestCase
             'label' => 'foo'
         ]);
     }
+
+    /** @test */
+    public function resource_item_can_be_filtered_by_level()
+    {
+        $this->withoutExceptionHandling();
+
+        $this->signIn($this->admin);
+
+        $item = create('App\ResourceItem');
+
+
+        $item->levels()->attach(create('App\ResourceLevel',[],3));
+
+        $this->assertEquals(3,sizeof($item->fresh()->levels));
+
+    }
 }
