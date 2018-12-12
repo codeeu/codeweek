@@ -7,4 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 class ResourceLevel extends Model
 {
     protected $fillable = ["label","position"];
+
+    protected $attributes = [
+        'active' => true,
+        'learn' => true,
+        'teach' => false,
+    ];
+
+    public function items()
+    {
+        return $this->belongsToMany('App\ResourceItem');
+    }
 }
