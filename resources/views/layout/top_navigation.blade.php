@@ -12,9 +12,8 @@
                                                                                           alt="CodeWeekES"></a>
             </div>
 
+            <!-- Main Menu -->
             <nav id="primary-menu">
-
-                <!-- Primary Navigation -->
                 <ul>
                     <li class=""><a href="{{route('events_map')}}">@lang('menu.events')</a></li>
                     <li class=""><a href="{{route('ambassadors')}}">@lang('menu.ambassadors')</a></li>
@@ -25,31 +24,48 @@
                 </ul>
 
             </nav>
-            <!-- #primary-menu end -->
 
-                <div id="top-language">
-                    <ul class="nav navbar navbar-right nobottommargin">
-                        <li class="nav-item dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-globe"></i>
-                                <span class="name">@lang('base.languages.' . App::getLocale())</span>
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu language-menu" role="menu">
-                                <ul>
-                                    @foreach ($locales as $key => $value)
-                                        <li>
-                                            <a class="dropdown-item"
-                                               href="/setlocale/?locale={{$value}}">@lang('base.languages.' . $value)</a>
-                                        </li>
-                                    @endforeach
-                                </ul>
+            <!-- Twitter Feed -->
+            <div id="twitter-feed">
+                <ul class="nav navbar navbar-right nobottommargin">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="height: 60px;display: flex;align-items: center;">
+                            <i class="fa fa-twitter"></i>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu twitter-menu" role="menu" style="width: 400px;height: 820px;overflow: auto;">
+                            <a class="twitter-timeline" href="https://twitter.com/CodeWeekEU" data-width="400" data-height="300" data-chrome="noscrollbar" data-link-color="#E95F28" data-tweet-limit="4"></a>
+                            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- Language Menu -->
+            <div id="top-language">
+                <ul class="nav navbar navbar-right nobottommargin">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-globe"></i>
+                            <span class="name">@lang('base.languages.' . App::getLocale())</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu language-menu" role="menu">
+                            <ul>
+                                @foreach ($locales as $key => $value)
+                                    <li>
+                                        <a class="dropdown-item"
+                                           href="/setlocale/?locale={{$value}}">@lang('base.languages.' . $value)</a>
+                                    </li>
+                                @endforeach
                             </ul>
-                        </li>
-                    </ul>
-                </div>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
 
-
+            <!-- User Menu -->
             <div id="top-login">
                 @if (Auth::check())
                     <ul class="nav navbar navbar-right nobottommargin">
