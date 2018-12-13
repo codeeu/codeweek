@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ResourceItem extends Model
+class ResourceType extends Model
 {
     protected $guarded = [];
 
@@ -14,13 +14,8 @@ class ResourceItem extends Model
         'teach' => false,
     ];
 
-    public function levels()
+    public function items()
     {
-        return $this->belongsToMany('App\ResourceLevel');
-    }
-
-    public function types()
-    {
-        return $this->belongsToMany('App\ResourceType');
+        return $this->belongsToMany('App\ResourceItem');
     }
 }

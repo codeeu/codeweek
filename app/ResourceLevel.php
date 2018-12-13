@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ResourceLevel extends Model
 {
-    protected $fillable = ["label","position"];
+    protected $guarded = [];
 
     protected $attributes = [
         'active' => true,

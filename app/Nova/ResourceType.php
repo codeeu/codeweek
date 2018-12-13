@@ -10,18 +10,18 @@ use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Fields\Text;
 
-class ResourceLevel extends Resource
+class ResourceType extends Resource
 {
 
     public static $group = 'Resources';
 
     public static function label() {
-        return 'Levels';
+        return 'Types';
     }
 
     public static function singularLabel()
     {
-        return 'Level';
+        return 'Type';
     }
 
     /**
@@ -29,7 +29,7 @@ class ResourceLevel extends Resource
      *
      * @var string
      */
-    public static $model = 'App\ResourceLevel';
+    public static $model = 'App\ResourceType';
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -63,7 +63,8 @@ class ResourceLevel extends Resource
             Boolean::make('Teach')->sortable(),
             Boolean::make('Learn')->sortable(),
             Boolean::make('Active')
-            ->hideWhenCreating()->hideFromIndex(),
+            ->hideWhenCreating()
+            ->hideFromIndex(),
         ];
     }
 
