@@ -13,6 +13,19 @@ use Laravel\Nova\Http\Requests\NovaRequest;
 class ResourceItem extends Resource
 {
 
+    public static $group = 'Resources';
+
+    public static function label() {
+        return 'Items';
+    }
+
+    public static function singularLabel()
+    {
+        return 'Resource';
+    }
+
+    public static $singularLabel = 'Resource Item';
+
 
     /**
      * The model the resource corresponds to.
@@ -26,7 +39,7 @@ class ResourceItem extends Resource
      *
      * @var string
      */
-    public static $title = 'id';
+    public static $title = 'label';
 
     /**
      * The columns that should be searched.
@@ -34,7 +47,7 @@ class ResourceItem extends Resource
      * @var array
      */
     public static $search = [
-        'id',
+        'label','description','source'
     ];
 
     /**
@@ -48,14 +61,15 @@ class ResourceItem extends Resource
         return [
             ID::make()->sortable(),
             BelongsToMany::make('ResourceLevel','levels'),
+            BelongsToMany::make('ResourceType','types'),
             Text::make('Label')->sortable(),
             Text::make('Description')->sortable(),
             Text::make('Source')->sortable(),
             Boolean::make('Teach'),
             Boolean::make('Learn'),
-            Text::make('Thumbnail'),
-            Text::make('Facebook'),
-            Text::make('Twitter'),
+            Text::make('Thumbnail')->hideFromIndex(),
+            Text::make('Facebook')->hideFromIndex(),
+            Text::make('Twitter')->hideFromIndex(),
 
 
         ];
@@ -104,4 +118,6 @@ class ResourceItem extends Resource
     {
         return [];
     }
+
+
 }

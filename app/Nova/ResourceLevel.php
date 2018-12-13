@@ -12,6 +12,18 @@ use Laravel\Nova\Fields\Text;
 
 class ResourceLevel extends Resource
 {
+
+    public static $group = 'Resources';
+
+    public static function label() {
+        return 'Levels';
+    }
+
+    public static function singularLabel()
+    {
+        return 'Level';
+    }
+
     /**
      * The model the resource corresponds to.
      *
@@ -24,7 +36,7 @@ class ResourceLevel extends Resource
      *
      * @var string
      */
-    public static $title = 'id';
+    public static $title = 'label';
 
     /**
      * The columns that should be searched.
@@ -32,7 +44,7 @@ class ResourceLevel extends Resource
      * @var array
      */
     public static $search = [
-        'id',
+        'label',
     ];
 
     /**
@@ -45,13 +57,13 @@ class ResourceLevel extends Resource
     {
         return [
             ID::make()->sortable(),
-            BelongsToMany::make('ResourceItem',''),
+            BelongsToMany::make('ResourceItem','items'),
             Text::make('Label')->sortable(),
-            Number::make('Position'),
-            Boolean::make('Teach'),
-            Boolean::make('Learn'),
+            Number::make('Position')->sortable(),
+            Boolean::make('Teach')->sortable(),
+            Boolean::make('Learn')->sortable(),
             Boolean::make('Active')
-            ->hideWhenCreating(),
+            ->hideWhenCreating()->hideFromIndex(),
         ];
     }
 

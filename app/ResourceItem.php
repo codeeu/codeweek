@@ -18,4 +18,9 @@ class ResourceItem extends Model
     {
         return $this->belongsToMany('App\ResourceLevel');
     }
+
+    public function types()
+    {
+        return $this->belongsToMany('App\ResourceType');
+    }
 }
