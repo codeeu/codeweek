@@ -23,4 +23,19 @@ class ResourceItem extends Model
     {
         return $this->belongsToMany('App\ResourceType');
     }
+
+    public function subjects()
+    {
+        return $this->belongsToMany('App\ResourceSubject');
+    }
+
+    public function categories()
+    {
+        return $this->belongsToMany('App\ResourceCategory');
+    }
+
+    public function programmingLanguages()
+    {
+        return $this->belongsToMany('App\ResourceProgrammingLanguage','res_pl_pivot');
+    }
 }
