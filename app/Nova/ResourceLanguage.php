@@ -2,37 +2,34 @@
 
 namespace App\Nova;
 
-use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
-use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Laravel\Nova\Fields\Text;
 
-class ResourceItem extends Resource
+class ResourceLanguage extends Resource
 {
 
     public static $group = 'Resources';
 
     public static function label() {
-        return 'Items';
+        return 'Languages';
     }
 
     public static function singularLabel()
     {
-        return 'Resource';
+        return 'Language';
     }
-
-    public static $singularLabel = 'Resource Item';
-
 
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = 'App\ResourceItem';
+    public static $model = 'App\ResourceLanguage';
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -47,7 +44,7 @@ class ResourceItem extends Resource
      * @var array
      */
     public static $search = [
-        'label','description','source'
+        'label',
     ];
 
     /**
@@ -60,22 +57,13 @@ class ResourceItem extends Resource
     {
         return [
             ID::make()->sortable(),
-            BelongsToMany::make('ResourceLevel','levels'),
-            BelongsToMany::make('ResourceType','types'),
-            BelongsToMany::make('ResourceSubject','subjects'),
-            BelongsToMany::make('ResourceCategory','categories'),
-            BelongsToMany::make('ResourceProgrammingLanguage','programmingLanguages'),
-            BelongsToMany::make('ResourceLanguage','languages'),
+            BelongsToMany::make('ResourceItem','items'),
             Text::make('Label')->sortable(),
-            Text::make('Description')->sortable(),
-            Text::make('Source')->sortable(),
-            Boolean::make('Teach'),
-            Boolean::make('Learn'),
-            Text::make('Thumbnail')->hideFromIndex(),
-            Text::make('Facebook')->hideFromIndex(),
-            Text::make('Twitter')->hideFromIndex(),
-
-
+            Number::make('Position')->sortable(),
+            Boolean::make('Teach')->sortable(),
+            Boolean::make('Learn')->sortable(),
+            Boolean::make('Active')
+            ->hideWhenCreating()->hideFromIndex(),
         ];
     }
 
@@ -122,6 +110,4 @@ class ResourceItem extends Resource
     {
         return [];
     }
-
-
 }
