@@ -17,12 +17,8 @@ class DatabaseSeeder extends Seeder
         $this->call(UserSeeder::class);
         $this->call(AudienceTableSeeder::class);
         $this->call(ThemeTableSeeder::class);
-        $this->call(LevelSeeder::class);
-        $this->call(TypeSeeder::class);
-        $this->call(SubjectSeeder::class);
-        $this->call(CategorySeeder::class);
-        $this->call(LanguageSeeder::class);
-        $this->call(ProgrammingLanguageSeeder::class);
+        $this->call(ResourceSeeder::class);
+
         //$this->call(OldSeeder::class);
         //$this->call(EventSeeder::class);
 
