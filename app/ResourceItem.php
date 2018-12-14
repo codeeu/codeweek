@@ -38,4 +38,9 @@ class ResourceItem extends Model
     {
         return $this->belongsToMany('App\ResourceProgrammingLanguage','res_pl_pivot');
     }
+
+    public function languages()
+    {
+        return $this->belongsToMany('App\ResourceLanguage');
+    }
 }

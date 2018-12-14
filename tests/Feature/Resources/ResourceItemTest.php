@@ -123,5 +123,21 @@ class ResourceItemTest extends TestCase
 
     }
 
+    /** @test */
+    public function resource_item_can_be_filtered_by_language()
+    {
+        $this->withoutExceptionHandling();
+
+        $this->signIn($this->admin);
+
+        $item = create('App\ResourceItem');
+
+
+        $item->languages()->attach(create('App\ResourceLanguage',[],7));
+
+        $this->assertEquals(7,sizeof($item->fresh()->languages));
+
+    }
+
 
 }

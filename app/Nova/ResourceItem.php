@@ -65,6 +65,7 @@ class ResourceItem extends Resource
             BelongsToMany::make('ResourceSubject','subjects'),
             BelongsToMany::make('ResourceCategory','categories'),
             BelongsToMany::make('ResourceProgrammingLanguage','programmingLanguages'),
+            BelongsToMany::make('ResourceLanguage','languages'),
             Text::make('Label')->sortable(),
             Text::make('Description')->sortable(),
             Text::make('Source')->sortable(),

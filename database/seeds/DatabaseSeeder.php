@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
         $this->call(TypeSeeder::class);
         $this->call(SubjectSeeder::class);
         $this->call(CategorySeeder::class);
+        $this->call(LanguageSeeder::class);
         $this->call(ProgrammingLanguageSeeder::class);
         //$this->call(OldSeeder::class);
         //$this->call(EventSeeder::class);
