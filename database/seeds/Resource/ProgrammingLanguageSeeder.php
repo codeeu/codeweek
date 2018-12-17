@@ -14,32 +14,32 @@ class ProgrammingLanguageSeeder extends Seeder
         create('App\ResourceProgrammingLanguage', [
             'id' => 1,
             'position' => 10,
-            'label' => 'Scratch',
+            'name' => 'Scratch',
         ]);
         create('App\ResourceProgrammingLanguage', [
             'id' => 2,
             'position' => 20,
-            'label' => 'Java',
+            'name' => 'Java',
         ]);
         create('App\ResourceProgrammingLanguage', [
             'id' => 3,
             'position' => 30,
-            'label' => 'Javascript',
+            'name' => 'Javascript',
         ]);
         create('App\ResourceProgrammingLanguage', [
             'id' => 4,
             'position' => 40,
-            'label' => 'Python',
+            'name' => 'Python',
         ]);
         create('App\ResourceProgrammingLanguage', [
             'id' => 5,
             'position' => 50,
-            'label' => 'Swift',
+            'name' => 'Swift',
         ]);
         create('App\ResourceProgrammingLanguage', [
             'id' => 6,
             'position' => 60,
-            'label' => 'Visual Programming',
+            'name' => 'Visual Programming',
         ]);
     }
 }

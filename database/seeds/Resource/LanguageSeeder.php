@@ -13,19 +13,19 @@ class LanguageSeeder extends Seeder
     {
         create('App\ResourceLanguage', [
             'id' => 1,
-            'label' => 'English',
+            'name' => 'English',
             'position' => 10
         ]);
 
         create('App\ResourceLanguage', [
             'id' => 2,
-            'label' => 'French',
+            'name' => 'French',
             'position' => 20
         ]);
 
         create('App\ResourceLanguage', [
             'id' => 3,
-            'label' => 'Spanish',
+            'name' => 'Spanish',
             'position' => 30
         ]);
     }

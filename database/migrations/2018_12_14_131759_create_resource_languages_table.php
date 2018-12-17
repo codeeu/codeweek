@@ -15,7 +15,7 @@ class CreateResourceLanguagesTable extends Migration
     {
         Schema::create('resource_languages', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('label');
+            $table->string('name');
             $table->integer('position');
             $table->boolean('active')->default(true);
             $table->boolean('teach')->default(true);

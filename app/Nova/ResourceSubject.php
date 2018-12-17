@@ -36,7 +36,7 @@ class ResourceSubject extends Resource
      *
      * @var string
      */
-    public static $title = 'label';
+    public static $title = 'name';
 
     /**
      * The columns that should be searched.
@@ -44,7 +44,7 @@ class ResourceSubject extends Resource
      * @var array
      */
     public static $search = [
-        'label',
+        'name',
     ];
 
     /**
@@ -58,7 +58,7 @@ class ResourceSubject extends Resource
         return [
             ID::make()->sortable(),
             BelongsToMany::make('ResourceItem','items'),
-            Text::make('Label')->sortable(),
+            Text::make('name')->sortable(),
             Number::make('Position')->sortable(),
             Boolean::make('Teach')->sortable(),
             Boolean::make('Learn')->sortable(),

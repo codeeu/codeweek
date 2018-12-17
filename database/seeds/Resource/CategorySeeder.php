@@ -13,63 +13,63 @@ class CategorySeeder extends Seeder
     {
         create('App\ResourceCategory', [
             'id' => 1,
-            'label' => 'Coding',
+            'name' => 'Coding',
             'position' => 10,
             'learn' => true,
             'teach' => true
         ]);
         create('App\ResourceCategory', [
             'id' => 2,
-            'label' => 'Programming',
+            'name' => 'Programming',
             'position' => 20,
             'learn' => true,
             'teach' => true
         ]);
         create('App\ResourceCategory', [
             'id' => 3,
-            'label' => 'Computational Thinking',
+            'name' => 'Computational Thinking',
             'position' => 30,
             'learn' => true,
             'teach' => true
         ]);
         create('App\ResourceCategory', [
             'id' => 4,
-            'label' => 'Robotics',
+            'name' => 'Robotics',
             'position' => 40,
             'learn' => true,
             'teach' => true
         ]);
         create('App\ResourceCategory', [
             'id' => 5,
-            'label' => 'Making',
+            'name' => 'Making',
             'position' => 50,
             'learn' => true,
             'teach' => true
         ]);
         create('App\ResourceCategory', [
             'id' => 6,
-            'label' => 'Tinkering',
+            'name' => 'Tinkering',
             'position' => 60,
             'learn' => true,
             'teach' => true
         ]);
         create('App\ResourceCategory', [
             'id' => 7,
-            'label' => 'Computational Thinking',
+            'name' => 'Computational Thinking',
             'position' => 70,
             'learn' => true,
             'teach' => true
         ]);
         create('App\ResourceCategory', [
             'id' => 8,
-            'label' => 'Unplugged Activities',
+            'name' => 'Unplugged Activities',
             'position' => 80,
             'learn' => true,
             'teach' => true
         ]);
         create('App\ResourceCategory', [
             'id' => 9,
-            'label' => 'Other',
+            'name' => 'Other',
             'position' => 90,
             'learn' => true,
             'teach' => true

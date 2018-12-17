@@ -14,26 +14,26 @@ class LevelSeeder extends Seeder
         //Create Levels
         create('App\ResourceLevel', [
             'id' => 1,
-            'label' => 'Beginner',
+            'name' => 'Beginner',
             'position' => 10,
             'learn' => true
         ]);
         create('App\ResourceLevel', [
             'id' => 2,
-            'label' => 'Intermediate',
+            'name' => 'Intermediate',
             'position' => 20,
             'learn' => true
         ]);
         create('App\ResourceLevel', [
             'id' => 3,
-            'label' => 'Advanced',
+            'name' => 'Advanced',
             'position' => 30,
             'learn' => true
         ]);
 
         create('App\ResourceLevel', [
             'id' => 4,
-            'label' => 'Pre-primary education',
+            'name' => 'Pre-primary education',
             'position' => 10,
             'learn' => false,
             'teach'=> true
@@ -41,7 +41,7 @@ class LevelSeeder extends Seeder
 
         create('App\ResourceLevel', [
             'id' => 5,
-            'label' => 'Primary school (5-12)',
+            'name' => 'Primary school (5-12)',
             'position' => 20,
             'learn' => false,
             'teach'=> true
@@ -49,7 +49,7 @@ class LevelSeeder extends Seeder
 
         create('App\ResourceLevel', [
             'id' => 6,
-            'label' => 'Lower secondary school (12-16)',
+            'name' => 'Lower secondary school (12-16)',
             'position' => 30,
             'learn' => false,
             'teach'=> true
@@ -58,7 +58,7 @@ class LevelSeeder extends Seeder
 
         create('App\ResourceLevel', [
             'id' => 7,
-            'label' => 'Upper secondary school (16-18)',
+            'name' => 'Upper secondary school (16-18)',
             'position' => 40,
             'learn' => false,
             'teach'=> true
@@ -66,7 +66,7 @@ class LevelSeeder extends Seeder
 
         create('App\ResourceLevel', [
             'id' => 8,
-            'label' => 'Higher Education',
+            'name' => 'Higher Education',
             'position' => 50,
             'learn' => false,
             'teach'=> true
@@ -74,7 +74,7 @@ class LevelSeeder extends Seeder
 
         create('App\ResourceLevel', [
             'id' => 9,
-            'label' => 'Other',
+            'name' => 'Other',
             'position' => 60,
             'learn' => false,
             'teach'=> true
