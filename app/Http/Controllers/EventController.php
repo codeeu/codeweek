@@ -91,7 +91,6 @@ class EventController extends Controller
      */
     public function create(Request $request)
     {
-//        $request->session()->flush();
 
         $countries = \App\Country::all()->sortBy('name');
 

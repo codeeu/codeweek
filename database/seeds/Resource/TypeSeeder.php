@@ -13,84 +13,84 @@ class TypeSeeder extends Seeder
     {
         create('App\ResourceType', [
             'id' => 1,
-            'label' => 'Tutorial',
+            'name' => 'Tutorial',
             'position' => 10,
             'learn' => true,
             'teach' => true
         ]);
         create('App\ResourceType', [
             'id' => 2,
-            'label' => 'Website',
+            'name' => 'Website',
             'position' => 20,
             'learn' => true,
             'teach' => true
         ]);
         create('App\ResourceType', [
             'id' => 3,
-            'label' => 'Online Course',
+            'name' => 'Online Course',
             'position' => 30,
             'learn' => true,
             'teach' => true
         ]);
         create('App\ResourceType', [
             'id' => 4,
-            'label' => 'Video',
+            'name' => 'Video',
             'position' => 40,
             'learn' => true,
             'teach' => true
         ]);
         create('App\ResourceType', [
             'id' => 5,
-            'label' => 'Audio',
+            'name' => 'Audio',
             'position' => 50,
             'learn' => true,
             'teach' => true
         ]);
         create('App\ResourceType', [
             'id' => 6,
-            'label' => 'Application',
+            'name' => 'Application',
             'position' => 60,
             'learn' => true,
             'teach' => true
         ]);
         create('App\ResourceType', [
             'id' => 7,
-            'label' => 'Game',
+            'name' => 'Game',
             'position' => 70,
             'learn' => true,
             'teach' => true
         ]);
         create('App\ResourceType', [
             'id' => 8,
-            'label' => 'Graphic Material',
+            'name' => 'Graphic Material',
             'position' => 80,
             'learn' => true,
             'teach' => true
         ]);
         create('App\ResourceType', [
             'id' => 9,
-            'label' => 'Presentation',
+            'name' => 'Presentation',
             'position' => 90,
             'learn' => true,
             'teach' => true
         ]);
         create('App\ResourceType', [
             'id' => 10,
-            'label' => 'Toolkit',
+            'name' => 'Toolkit',
             'position' => 100,
             'learn' => true,
             'teach' => true
         ]);
         create('App\ResourceType', [
             'id' => 11,
-            'label' => 'Other',
+            'name' => 'Other',
             'position' => 110,
             'learn' => true,
             'teach' => true
         ]);
         create('App\ResourceType', [
             'id' => 12,
-            'label' => 'Lesson Plan',
+            'name' => 'Lesson Plan',
             'position' => 120,
             'learn' => false,
             'teach' => true

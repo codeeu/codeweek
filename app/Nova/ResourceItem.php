@@ -39,7 +39,7 @@ class ResourceItem extends Resource
      *
      * @var string
      */
-    public static $title = 'label';
+    public static $title = 'name';
 
     /**
      * The columns that should be searched.
@@ -47,7 +47,7 @@ class ResourceItem extends Resource
      * @var array
      */
     public static $search = [
-        'label','description','source'
+        'name','description','source'
     ];
 
     /**
@@ -66,8 +66,8 @@ class ResourceItem extends Resource
             BelongsToMany::make('ResourceCategory','categories'),
             BelongsToMany::make('ResourceProgrammingLanguage','programmingLanguages'),
             BelongsToMany::make('ResourceLanguage','languages'),
-            Text::make('Label')->sortable(),
-            Text::make('Description')->sortable(),
+            Text::make('name')->sortable(),
+            Text::make('Description')->sortable()->hideFromIndex(),
             Text::make('Source')->sortable(),
             Boolean::make('Teach'),
             Boolean::make('Learn'),

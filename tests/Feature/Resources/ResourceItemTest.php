@@ -31,7 +31,7 @@ class ResourceItemTest extends TestCase
         $this->signIn($this->admin);
 
         $request = [
-            "label" => "foobar",
+            "name" => "foobar",
             "description" => "description text",
             "source" => "http://foo.bar",
         ];
@@ -39,7 +39,7 @@ class ResourceItemTest extends TestCase
         $this->post('/api/resource/item', $request);
 
         $this->assertDatabaseHas('resource_items', [
-            'label' => 'foobar'
+            'name' => 'foobar'
         ]);
     }
 

@@ -14,126 +14,126 @@ class SubjectSeeder extends Seeder
     {
         create('App\ResourceSubject', [
             'id' => 1,
-            'label' => 'Art',
+            'name' => 'Art',
             'position' => 10,
             'learn' => false,
             'teach' => true,
         ]);
         create('App\ResourceSubject', [
             'id' => 2,
-            'label' => 'Biology',
+            'name' => 'Biology',
             'position' => 20,
             'learn' => false,
             'teach' => true,
         ]);
         create('App\ResourceSubject', [
             'id' => 3,
-            'label' => 'Chemistry',
+            'name' => 'Chemistry',
             'position' => 30,
             'learn' => false,
             'teach' => true,
         ]);
         create('App\ResourceSubject', [
             'id' => 4,
-            'label' => 'Computer Science',
+            'name' => 'Computer Science',
             'position' => 40,
             'learn' => false,
             'teach' => true,
         ]);
         create('App\ResourceSubject', [
             'id' => 5,
-            'label' => 'Culture',
+            'name' => 'Culture',
             'position' => 50,
             'learn' => false,
             'teach' => true,
         ]);
         create('App\ResourceSubject', [
             'id' => 6,
-            'label' => 'Economics',
+            'name' => 'Economics',
             'position' => 60,
             'learn' => false,
             'teach' => true,
         ]);
         create('App\ResourceSubject', [
             'id' => 7,
-            'label' => 'Foreign Languages',
+            'name' => 'Foreign Languages',
             'position' => 70,
             'learn' => false,
             'teach' => true,
         ]);
         create('App\ResourceSubject', [
             'id' => 8,
-            'label' => 'Geography',
+            'name' => 'Geography',
             'position' => 80,
             'learn' => false,
             'teach' => true,
         ]);
         create('App\ResourceSubject', [
             'id' => 9,
-            'label' => 'Geology',
+            'name' => 'Geology',
             'position' => 90,
             'learn' => false,
             'teach' => true,
         ]);
         create('App\ResourceSubject', [
             'id' => 10,
-            'label' => 'History',
+            'name' => 'History',
             'position' => 100,
             'learn' => false,
             'teach' => true,
         ]);
         create('App\ResourceSubject', [
             'id' => 11,
-            'label' => 'Language and Literature',
+            'name' => 'Language and Literature',
             'position' => 110,
             'learn' => false,
             'teach' => true,
         ]);
         create('App\ResourceSubject', [
             'id' => 12,
-            'label' => 'Mathematics',
+            'name' => 'Mathematics',
             'position' => 120,
             'learn' => false,
             'teach' => true,
         ]);
         create('App\ResourceSubject', [
             'id' => 13,
-            'label' => 'Natural Sciences',
+            'name' => 'Natural Sciences',
             'position' => 130,
             'learn' => false,
             'teach' => true,
         ]);
         create('App\ResourceSubject', [
             'id' => 14,
-            'label' => 'Physical Education',
+            'name' => 'Physical Education',
             'position' => 140,
             'learn' => false,
             'teach' => true,
         ]);
         create('App\ResourceSubject', [
             'id' => 15,
-            'label' => 'Physics',
+            'name' => 'Physics',
             'position' => 150,
             'learn' => false,
             'teach' => true,
         ]);
         create('App\ResourceSubject', [
             'id' => 16,
-            'label' => 'Coding',
+            'name' => 'Coding',
             'position' => 160,
             'learn' => false,
             'teach' => true,
         ]);
         create('App\ResourceSubject', [
             'id' => 17,
-            'label' => 'Special Education Needs',
+            'name' => 'Special Education Needs',
             'position' => 170,
             'learn' => false,
             'teach' => true,
         ]);
         create('App\ResourceSubject', [
             'id' => 18,
-            'label' => 'Other',
+            'name' => 'Other',
             'position' => 180,
             'learn' => false,
             'teach' => true,

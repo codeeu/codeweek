@@ -15,7 +15,7 @@ class CreateResourceItemsTable extends Migration
     {
         Schema::create('resource_items', function (Blueprint $table) {
             $table->increments('id');
-            $table->string("label");
+            $table->string("name");
             $table->string("source");
             $table->text("description");
             $table->string("thumbnail")->nullable();

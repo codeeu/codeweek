@@ -46,7 +46,6 @@ Route::get('/privacy', 'StaticPageController@index')->name('privacy');
 Route::get('/petition', 'StaticPageController@index')->name('petition');
 Route::get('/beambassador', 'StaticPageController@index')->name('beambassador');
 Route::get('/about', 'StaticPageController@index')->name('about');
-Route::get('/resources', 'StaticPageController@index')->name('resources');
 Route::get('/codeweek4all', 'StaticPageController@index')->name('codeweek4all');
 //Static training pages
 Route::get('/training', 'StaticPageController@index')->name('training.index');
@@ -62,6 +61,7 @@ Route::get('/training/making-robotics-and-tinkering-in-the-classroom', 'StaticPa
 Route::get('/events', 'EventController@index')->name('events_map');
 Route::get('/add', 'EventController@create')->name('create_event');
 Route::get('/map', 'MapController@index')->name('map');
+Route::get('/resources', 'ResourcesController@index')->name('resources');
 Route::get('/resources/{country}', 'ResourcesController@show')->name('resources_by_country');
 Route::get('/ambassadors', 'AmbassadorController@index')->name('ambassadors');
 Route::get('/volunteer', 'VolunteerController@create')->middleware('auth')->name('volunteer');
