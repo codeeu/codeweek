@@ -1,4 +1,3 @@
-<!-- Vue component -->
 <template>
   <div>
     <multiselect
@@ -10,7 +9,7 @@
             :taggable="true"
             :show-labels="false"
             :searchable="false"
-            :close-on-select="false"
+            :close-on-select=closeOnSelect
             @select="select"
             @remove="remove">
     </multiselect>
@@ -28,7 +27,8 @@
       props: {
           name: String,
           value: String,
-          options: Array
+          options: Array,
+          closeOnSelect: Boolean
       },
       data () {
           var values = null;

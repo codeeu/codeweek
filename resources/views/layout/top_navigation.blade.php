@@ -35,7 +35,6 @@
                         </a>
                         <ul class="dropdown-menu twitter-menu" role="menu" style="width: 400px;height: 820px;overflow: auto;">
                             <a class="twitter-timeline" href="https://twitter.com/CodeWeekEU" data-width="400" data-height="300" data-chrome="noscrollbar" data-link-color="#E95F28" data-tweet-limit="4"></a>
-                            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                         </ul>
                     </li>
                 </ul>
