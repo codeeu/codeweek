@@ -12,23 +12,10 @@
 
             <hr>
 
-            <p>EU Code Week is a grass-root movement run by volunteers who promote coding in their countries as <a
-                        href="http://events.codeweek.eu/ambassadors">Code Week Ambassadors</a>. Anyone – schools,
-                teachers,
-                libraries, code clubs, businesses, public authorities – can organise a #CodeEU event and add it to the
-                <a
-                        href="http://codeweek.eu/">codeweek.eu</a> map. To make organising and running coding events
-                easier, we
-                have prepared different toolkits and selected some of the best lesson plans, guides and other resources.
-            </p>
+            <resource-form
+                    :levels="{{ $levels }}"
+            ></resource-form>
 
-            <multiselect :options="{{ $audiences }}" value="{{ old('audience') }}" name="audience"></multiselect>
-            <multiselect :options="{{ $levels }}" value="{{ old('levels') }}" name="level"></multiselect>
-
-
-
-
-            </multiselect>
 
 
         </div>
@@ -36,3 +23,4 @@
 
 
 @endsection
+

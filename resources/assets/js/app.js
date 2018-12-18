@@ -28,6 +28,7 @@ import counter from './components/Counter';
 import Multiselect from './components/Multiselect.vue';
 import AutocompleteGeo from './components/AutoCompleteGeo.vue'
 import Autocomplete from 'v-autocomplete'
+import ResourceForm from './components/ResourceForm.vue'
 
 
 /**
@@ -56,6 +57,7 @@ const app = new Vue({
         counter,
         Multiselect,
         AutocompleteGeo,
-        Autocomplete
+        Autocomplete,
+        ResourceForm
     }
 });
