@@ -14,6 +14,11 @@
 
             <resource-form
                     :levels="{{ $levels }}"
+                    :programming-languages="{{ $programmingLanguages }}"
+                    :languages="{{ $languages }}"
+                    :categories="{{ $categories }}"
+                    :subjects="{{ $subjects }}"
+                    :types="{{ $types }}"
             ></resource-form>
 
 
