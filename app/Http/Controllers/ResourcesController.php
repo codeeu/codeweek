@@ -11,14 +11,18 @@ class ResourcesController extends Controller
     {
 
         $levels = \App\ResourceLevel::all();
+        $languages = \App\ResourceLanguage::all();
 
-        $audiences = \App\Audience::all();
+        $programmingLanguages = \App\ResourceProgrammingLanguage::all();
+        $categories = \App\ResourceCategory::all();
+        $subjects = \App\ResourceSubject::all();
+        $types = \App\ResourceType::all();
 
 
         //dd($audiences);
         //dd($levels);
 
-        return view('resources.index', compact(['audiences', 'levels']));
+        return view('resources.index', compact(['programmingLanguages', 'levels', 'languages', 'categories', 'subjects', 'types']));
     }
 
     public function show($country)
