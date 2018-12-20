@@ -2,17 +2,32 @@
 
 namespace App\Http\Controllers;
 
+use App\Filters\ResourceFilters;
+use App\ResourceItem;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class SearchResourcesController extends Controller
 {
-    public function search(){
-        $years = [2018, 2017, 2016, 2015, 2014];
+    public function search(ResourceFilters $filters, Request $request){
 
-        return $years;
+        $items = $this->getItems($filters);
+
+        //$items = \App\ResourceItem::all();
 
 
+        return $items;
+
+
+    }
+
+    protected function getItems(ResourceFilters $filters)
+    {
+
+        $items = ResourceItem::filter($filters);
+
+
+        return $items->paginate(20);
     }
 }
