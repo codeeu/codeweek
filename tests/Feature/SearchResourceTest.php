@@ -26,6 +26,18 @@ class SearchResourceTest extends TestCase
 
 
     /** @test */
+    public function no_filters_should_show_all_resources()
+    {
+
+        $this->post('/resources/search', [])
+            ->assertSee($this->item->name)
+            ->assertSee($this->item2->name);
+
+
+
+    }
+
+    /** @test */
     public function a_user_can_search_resource_by_name()
     {
 

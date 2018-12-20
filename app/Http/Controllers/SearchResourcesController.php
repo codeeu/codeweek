@@ -14,6 +14,7 @@ class SearchResourcesController extends Controller
 
         $items = $this->getItems($filters);
 
+
         //$items = \App\ResourceItem::all();
 
 
