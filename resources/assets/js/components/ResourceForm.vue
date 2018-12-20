@@ -97,7 +97,7 @@
 
     </div>
 
-        <input type="submit" value="Go">
+        <input type="submit" class="btn btn-small btn-primary" value="Go">
     </form>
 
 </template>

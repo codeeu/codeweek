@@ -15,6 +15,5 @@ _ide_helper.php
 bios.sql
 public/js/app.js
 !app/Nova
-
 auth.json
 composer.lock

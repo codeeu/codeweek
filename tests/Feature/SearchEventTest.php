@@ -16,8 +16,6 @@ class SearchEventTest extends TestCase
     {
         parent::setUp();
         create('App\Country',[],20);
-
-
     }
 
 
@@ -39,7 +37,6 @@ class SearchEventTest extends TestCase
     }
 
 
-    //TODO: check why it fails as everything is working on the webpage
     /** @test */
     public function a_user_can_search_only_this_year_events()
     {

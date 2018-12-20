@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Filters\ResourceFilters;
 use Illuminate\Database\Eloquent\Model;
 
 class ResourceItem extends Model
@@ -13,6 +14,12 @@ class ResourceItem extends Model
         'learn' => true,
         'teach' => false,
     ];
+
+    public function scopeFilter($query, ResourceFilters $filters)
+    {
+        return $filters->apply($query);
+    }
+
 
     public function levels()
     {
