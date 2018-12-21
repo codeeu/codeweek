@@ -1,120 +1,108 @@
 <template>
 
-    <form method="/resources/search" @submit.prevent="onSubmit">
+    <div>
 
 
-        <div class="mb-0 flex">
+        <div class="container mx-auto h-full flex-row bg-blue-light p-8">
+            <div class="flex justify-between w-full">
+                <input type="text" class="multiselect w-full pl-8 pr-8 mb-8" @input="debounceSearch" v-model="searchInput">
+            </div>
 
-            <div>
-                <multiselect v-model="selectedLevels" :options="levels" :multiple="true" :close-on-select="false"
-                             :clear-on-select="false" :preserve-search="true" placeholder="Levels" label="name"
-                             track-by="name" :preselect-first="false">
-                    <template slot="selection" slot-scope="{ values, search, isOpen }"><span class="multiselect__single"
-                                                                                             v-if="values.length &amp;&amp; !isOpen">{{ values.length }} levels selected</span>
-                    </template>
-                </multiselect>
+            <div class="flex justify-between">
 
-                <multiselect v-model="selectedLanguages" :options="languages" :multiple="true" :close-on-select="false"
-                             :clear-on-select="false" :preserve-search="true" placeholder="Languages" label="name"
-                             track-by="name" :preselect-first="false">
-                    <template slot="selection" slot-scope="{ values, search, isOpen }"><span class="multiselect__single"
-                                                                                             v-if="values.length &amp;&amp; !isOpen">{{ values.length }} languages selected</span>
-                    </template>
-                </multiselect>
 
-                <multiselect v-model="selectedProgrammingLanguages" :options="programmingLanguages" :multiple="true"
+                <multiselect v-model="selectedLevels" :options="levels" :multiple="true"
                              :close-on-select="false"
-                             :clear-on-select="false" :preserve-search="true" placeholder="Programming Languages"
-                             label="name"
-                             track-by="name" :preselect-first="false">
-                    <template slot="selection" slot-scope="{ values, search, isOpen }"><span class="multiselect__single"
-                                                                                             v-if="values.length &amp;&amp; !isOpen">{{ values.length }} programming languages selected</span>
+                             :clear-on-select="false" :preserve-search="true" placeholder="Levels" label="name"
+                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mb-8">
+                    <template slot="selection" slot-scope="{ values, search, isOpen }"><span
+                            class="multiselect__single"
+                            v-if="values.length &amp;&amp; !isOpen">{{ values.length }} levels selected</span>
                     </template>
                 </multiselect>
+
+
+                <multiselect v-model="selectedLanguages" :options="languages" :multiple="true"
+                             :close-on-select="false"
+                             :clear-on-select="false" :preserve-search="true" placeholder="Languages"
+                             label="name"
+                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mr-8 ml-8 mb-8">
+                    <template slot="selection" slot-scope="{ values, search, isOpen }"><span
+                            class="multiselect__single"
+                            v-if="values.length &amp;&amp; !isOpen">{{ values.length }} languages selected</span>
+                    </template>
+                </multiselect>
+
+
+                <multiselect v-model="selectedProgrammingLanguages" :options="programmingLanguages"
+                             :multiple="true"
+                             :close-on-select="false"
+                             :clear-on-select="false" :preserve-search="true"
+                             placeholder="Programming Languages"
+                             label="name"
+                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mb-8">
+                    <template slot="selection" slot-scope="{ values, search, isOpen }"><span
+                            class="multiselect__single"
+                            v-if="values.length &amp;&amp; !isOpen">{{ values.length }} programming languages selected</span>
+                    </template>
+                </multiselect>
+            </div>
+            <div class="flex justify-between">
+
 
                 <multiselect v-model="selectedCategories" :options="categories" :multiple="true"
                              :close-on-select="false"
-                             :clear-on-select="false" :preserve-search="true" placeholder="Categories" label="name"
-                             track-by="name" :preselect-first="false">
-                    <template slot="selection" slot-scope="{ values, search, isOpen }"><span class="multiselect__single"
-                                                                                             v-if="values.length &amp;&amp; !isOpen">{{ values.length }} categories selected</span>
+                             :clear-on-select="false" :preserve-search="true" placeholder="Categories"
+                             label="name"
+                             track-by="name" :preselect-first="false" @input="onSubmit()" class="">
+                    <template slot="selection" slot-scope="{ values, search, isOpen }"><span
+                            class="multiselect__single"
+                            v-if="values.length &amp;&amp; !isOpen">{{ values.length }} categories selected</span>
                     </template>
                 </multiselect>
 
-                <multiselect v-model="selectedSubjects" :options="subjects" :multiple="true" :close-on-select="false"
-                             :clear-on-select="false" :preserve-search="true" placeholder="Subjects" label="name"
-                             track-by="name" :preselect-first="false">
-                    <template slot="selection" slot-scope="{ values, search, isOpen }"><span class="multiselect__single"
-                                                                                             v-if="values.length &amp;&amp; !isOpen">{{ values.length }} subjects selected</span>
+
+                <multiselect v-model="selectedSubjects" :options="subjects" :multiple="true"
+                             :close-on-select="false"
+                             :clear-on-select="false" :preserve-search="true" placeholder="Subjects"
+                             label="name"
+                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mr-8 ml-8">
+                    <template slot="selection" slot-scope="{ values, search, isOpen }"><span
+                            class="multiselect__single"
+                            v-if="values.length &amp;&amp; !isOpen">{{ values.length }} subjects selected</span>
                     </template>
                 </multiselect>
 
                 <multiselect v-model="selectedTypes" :options="types" :multiple="true" :close-on-select="false"
                              :clear-on-select="false" :preserve-search="true" placeholder="Types" label="name"
-                             track-by="name" :preselect-first="false">
-                    <template slot="selection" slot-scope="{ values, search, isOpen }"><span class="multiselect__single"
-                                                                                             v-if="values.length &amp;&amp; !isOpen">{{ values.length }} types selected</span>
+                             track-by="name" :preselect-first="false" @input="onSubmit()" class="">
+                    <template slot="selection" slot-scope="{ values, search, isOpen }"><span
+                            class="multiselect__single"
+                            v-if="values.length &amp;&amp; !isOpen">{{ values.length }} types selected</span>
                     </template>
                 </multiselect>
 
-
             </div>
-            <!--<div>-->
-            <!--<ul id="example-1">-->
-            <!--<li v-for="item in selectedLevels">-->
-            <!--{{ item.name }}-->
-            <!--</li>-->
-            <!--</ul>-->
+        </div>
 
-            <!--<ul id="example-2">-->
-            <!--<li v-for="item in selectedLanguages">-->
-            <!--{{ item.name }}-->
-            <!--</li>-->
-            <!--</ul>-->
 
-            <!--<ul id="example-3">-->
-            <!--<li v-for="item in selectedProgrammingLanguages">-->
-            <!--{{ item.name }}-->
-            <!--</li>-->
-            <!--</ul>-->
-
-            <!--<ul id="example-4">-->
-            <!--<li v-for="item in selectedCategories">-->
-            <!--{{ item.name }}-->
-            <!--</li>-->
-            <!--</ul>-->
-
-            <!--<ul id="example-5">-->
-            <!--<li v-for="item in selectedSubjects">-->
-            <!--{{ item.name }}-->
-            <!--</li>-->
-            <!--</ul>-->
-
-            <!--<ul id="example-6">-->
-            <!--<li v-for="item in selectedTypes">-->
-            <!--{{ item.name }}-->
-            <!--</li>-->
-            <!--</ul>-->
-            <!--</div>-->
-
-            <div>
-                <ul>
-                    <li v-for="resource in resources">
-                        {{ resource.name }}
-                    </li>
-                </ul>
-
-            </div>
+        <div>
+            <ul>
+                <li v-for="resource in resources">
+                    {{ resource.name }}
+                </li>
+            </ul>
 
         </div>
 
-        <input type="submit" class="btn btn-small btn-primary" value="Go">
-    </form>
+
+    </div>
 
 </template>
 
 <script>
     import Multiselect from 'vue-multiselect'
+    import _ from 'lodash'
 
     window.multiselect = this;
 
@@ -131,6 +119,7 @@
         },
         data() {
             return {
+                searchInput: "",
                 selectedLevels: [],
                 selectedLanguages: [],
                 selectedProgrammingLanguages: [],
@@ -143,6 +132,12 @@
             };
         },
         methods: {
+            debounceSearch:
+                _.debounce(
+                    function () {
+                        this.onSubmit();
+                    }, 300)
+            ,
             onSubmit: function () {
                 axios.post('/resources/search', this.$data)
                     .then(response => {
@@ -151,6 +146,9 @@
                     })
                     .catch(error => this.errors = error.response.data)
             }
+        },
+        mounted: function () {
+            this.onSubmit();
         },
         computed: {
             chevron: function () {
