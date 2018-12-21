@@ -46,7 +46,7 @@ class SearchResourceTest extends TestCase
 
 
 
-        $this->post('/resources/search', ["name" => "foo"])
+        $this->post('/resources/search', ["searchInput" => "foo"])
             ->assertSee($item->name)
             ->assertDontSee($item2->name);
 

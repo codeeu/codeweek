@@ -9,7 +9,7 @@ class ResourceFilters extends Filters
      *
      * @var array
      */
-    protected $filters = ['name', 'selectedLevels','selectedTypes','selectedSubjects','selectedCategories','selectedLanguages','selectedProgrammingLanguages'];
+    protected $filters = ['searchInput', 'selectedLevels','selectedTypes','selectedSubjects','selectedCategories','selectedLanguages','selectedProgrammingLanguages'];
 
     /**
      * Filter the query by name
@@ -17,9 +17,9 @@ class ResourceFilters extends Filters
      * @param  string $name
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    protected function name($name)
+    protected function searchInput($searchInput)
     {
-        $result = $this->builder->where('name', 'like', '%' . $name . '%');
+        $result = $this->builder->where('name', 'like', '%' . $searchInput . '%');
         return $result;
     }
 
