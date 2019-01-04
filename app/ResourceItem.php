@@ -28,7 +28,7 @@ class ResourceItem extends Model
 
     public function types()
     {
-        return $this->belongsToMany('App\ResourceType');
+        return $this->belongsToMany('App\ResourceType')->select(array('id', 'name','position'));
     }
 
     public function subjects()

@@ -30,7 +30,6 @@ import AutocompleteGeo from './components/AutoCompleteGeo.vue'
 import Autocomplete from 'v-autocomplete'
 import ResourceForm from './components/ResourceForm.vue'
 
-
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -59,5 +58,6 @@ const app = new Vue({
         AutocompleteGeo,
         Autocomplete,
         ResourceForm
+
     }
 });

@@ -5,7 +5,8 @@
 
         <div class="container mx-auto h-full flex-row bg-blue-light p-8">
             <div class="flex justify-between w-full">
-                <input type="text" class="multiselect w-full pl-8 pr-8 mb-8" @input="debounceSearch" v-model="searchInput">
+                <input type="text" class="multiselect w-full pl-8 pr-8 mb-8" @input="debounceSearch"
+                       v-model="searchInput">
             </div>
 
             <div class="flex justify-between">
@@ -86,13 +87,10 @@
         </div>
 
 
-        <div>
-            <ul>
-                <li v-for="resource in resources">
-                    {{ resource.name }}
-                </li>
-            </ul>
-
+        <div class="grid">
+            <div class="flex mb-4" v-for="resource in resources">
+                <resource-card :resource="resource"></resource-card>
+            </div>
         </div>
 
 
@@ -103,11 +101,12 @@
 <script>
     import Multiselect from 'vue-multiselect'
     import _ from 'lodash'
+    import ResourceCard from "./ResourceCard";
 
     window.multiselect = this;
 
     export default {
-        components: {Multiselect},
+        components: {ResourceCard, Multiselect},
         props: {
             name: String,
             levels: Array,
