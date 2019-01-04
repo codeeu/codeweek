@@ -148,3 +148,10 @@ html{
 .icon-globe {
     color: #53984b;
 }
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+
+}
