@@ -93,6 +93,9 @@
             </div>
         </div>
 
+        <pagination v-if="pagination.last_page > 1" :pagination="pagination" :offset="5"
+                    @paginate="onSubmit()"></pagination>
+
 
     </div>
 
@@ -102,11 +105,12 @@
     import Multiselect from 'vue-multiselect'
     import _ from 'lodash'
     import ResourceCard from "./ResourceCard";
+    import Pagination from "./Pagination";
 
     window.multiselect = this;
 
     export default {
-        components: {ResourceCard, Multiselect},
+        components: {ResourceCard, Multiselect, Pagination},
         props: {
             name: String,
             levels: Array,
@@ -127,6 +131,9 @@
                 selectedTypes: [],
                 isOpen: false,
                 errors: {},
+                pagination: {
+                    'current_page': 1
+                },
                 resources: []
             };
         },
@@ -138,9 +145,21 @@
                     }, 300)
             ,
             onSubmit: function () {
-                axios.post('/resources/search', this.$data)
+                axios.post('/resources/search?page=' + this.pagination.current_page, this.$data)
                     .then(response => {
                         console.log(response.data.data);
+
+                        this.pagination.per_page = response.data.per_page;
+                        this.pagination.current_page = response.data.current_page;
+                        this.pagination.from = response.data.from;
+                        this.pagination.last_page = response.data.last_page;
+                        this.pagination.last_page_url = response.data.last_page_url;
+                        this.pagination.next_page_url = response.data.next_page_url;
+                        this.pagination.prev_page = response.data.prev_page;
+                        this.pagination.prev_page_url = response.data.prev_page;
+                        this.pagination.to = response.data.to;
+                        this.pagination.total = response.data.total;
+
                         this.resources = response.data.data;
                     })
                     .catch(error => this.errors = error.response.data)
