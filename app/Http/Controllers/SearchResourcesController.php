@@ -29,6 +29,6 @@ class SearchResourcesController extends Controller
         $items = ResourceItem::filter($filters);
 
 
-        return $items->paginate(20);
+        return $items->paginate(10);
     }
 }
