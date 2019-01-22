@@ -15,8 +15,8 @@ class SearchController extends Controller
         $events = $this->getEvents($filters);
         $selected_themes = $request->input('theme') ?: [];
         $selected_audiences = $request->input('audience') ?: [];
-        $years = [2018, 2017, 2016, 2015, 2014];
-        $selected_year = $request->input('year') ?: 2018;
+        $years = [2019, 2018, 2017, 2016, 2015, 2014];
+        $selected_year = $request->input('year') ?: 2019;
 
         $country = Country::where('iso','=',session('country_iso'))->first();
 
