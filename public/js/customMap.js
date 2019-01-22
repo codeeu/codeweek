@@ -101,7 +101,7 @@ L.custom = {
             });
         }
 
-        var year = param('year') ? param('year') : 2018;
+        var year = param('year') ? param('year') : 2019;
         getEvents(year);
 
     }
