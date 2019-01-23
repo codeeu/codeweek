@@ -218,7 +218,7 @@
             return (location.search.split(name + '=')[1] || '').split('&')[0];
         }
 
-        let year = param('year') ? param('year') : 2018;
+        let year = param('year') ? param('year') : 2019;
 
         $.ajax({
             dataType: "json",
