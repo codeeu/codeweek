@@ -58,7 +58,7 @@ class EventController extends Controller
      */
     public function index(Request $request)
     {
-        $years = [2018, 2017, 2016, 2015, 2014];
+        $years = [2019, 2018, 2017, 2016, 2015, 2014];
 
         $selectedYear = $request->input("year") ? $request->input("year") : Carbon::now()->year;
 
