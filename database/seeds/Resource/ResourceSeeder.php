@@ -18,6 +18,7 @@ class ResourceSeeder extends Seeder
         $this->call(CategorySeeder::class);
         $this->call(LanguageSeeder::class);
         $this->call(ProgrammingLanguageSeeder::class);
+        $this->call(ItemSeeder::class);
 
     }
 }
