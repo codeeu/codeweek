@@ -116,7 +116,6 @@ class ResourceItemTest extends TestCase
 
         $item = create('App\ResourceItem');
 
-
         $item->programmingLanguages()->attach(create('App\ResourceProgrammingLanguage',[],5));
 
         $this->assertEquals(5,sizeof($item->fresh()->programmingLanguages));
@@ -138,6 +137,10 @@ class ResourceItemTest extends TestCase
         $this->assertEquals(7,sizeof($item->fresh()->languages));
 
     }
+
+
+
+
 
 
 }

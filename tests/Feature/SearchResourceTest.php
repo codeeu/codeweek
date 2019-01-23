@@ -97,17 +97,20 @@ class SearchResourceTest extends TestCase
         $this->item->types()->attach($type);
         $this->item2->types()->attach($type2);
 
+
         $selectedTypes = array($type);
 
 
 
-        $this->post('/resources/search', compact("selectedTypes") )
+        $result = $this->post('/resources/search', compact("selectedTypes") )
             ->assertSee($this->item->name)
             ->assertDontSee($this->item2->name);
 
 
 
+
     }
+
 
 
     /** @test */
@@ -213,6 +216,34 @@ class SearchResourceTest extends TestCase
         $this->post('/resources/search', compact(["selectedTypes","selectedLanguages"]) )
             ->assertSee($this->item->name)
             ->assertDontSee($this->item2->name);
+
+    }
+
+
+    /** @test */
+    public function no_duplicates_allowed()
+    {
+        $type = create('App\ResourceType',["id"=>1]);
+        $type2 = create('App\ResourceType');
+        $type3 = create('App\ResourceType');
+
+
+        $this->item->types()->attach($type);
+        $this->item->types()->attach($type2);
+        $this->item->types()->attach($type3);
+
+
+        $selectedTypes = array($type,$type2,$type3);
+
+
+
+        $result = $this->post('/resources/search', compact("selectedTypes"));
+
+        $data = $result->decodeResponseJson()['data'];
+
+        $this->assertEquals(1, sizeof($data));
+
+
 
     }
 

@@ -41,5 +41,36 @@ class ProgrammingLanguageSeeder extends Seeder
             'position' => 60,
             'name' => 'Visual Programming',
         ]);
+        create('App\ResourceProgrammingLanguage', [
+            'id' => 7,
+            'position' => 70,
+            'name' => 'C++',
+        ]);
+        create('App\ResourceProgrammingLanguage', [
+            'id' => 8,
+            'position' => 80,
+            'name' => 'CSS',
+        ]);
+        create('App\ResourceProgrammingLanguage', [
+            'id' => 9,
+            'position' => 90,
+            'name' => 'HTML',
+        ]);
+        create('App\ResourceProgrammingLanguage', [
+            'id' => 10,
+            'position' => 100,
+            'name' => 'HTML5',
+        ]);
+        create('App\ResourceProgrammingLanguage', [
+            'id' => 11,
+            'position' => 110,
+            'name' => 'Raspberry Pi',
+        ]);
+        create('App\ResourceProgrammingLanguage', [
+            'id' => 12,
+            'position' => 120,
+            'name' => 'Other',
+        ]);
+
     }
 }

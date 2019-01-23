@@ -28,7 +28,12 @@ class SearchResourcesController extends Controller
 
         $items = ResourceItem::filter($filters);
 
+        //dd($items);
 
-        return $items->paginate(10);
+        //return($items->get()->distinct());
+
+        //dd($items->distinct()->paginate(10)->items);
+
+        return $items->distinct()->paginate(10);
     }
 }
