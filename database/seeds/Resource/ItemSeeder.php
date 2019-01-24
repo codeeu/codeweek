@@ -133,6 +133,126 @@ class ItemSeeder extends Seeder
         $item->levels()->attach([1]);
         $item->languages()->attach([1]);
 
+
+        $item = create('App\ResourceItem', [
+            'name' => 'Codecademy',
+            'description' => 'Codecademy is an online interactive platform that offers free coding classes in 12 different programming languages.',
+            'source' => 'https://www.codecademy.com/',
+            'thumbnail' => 'https://www.codecademy.com/webpack/44e01805165bfde4e6e4322c540abf81.svg',
+            'learn' => true,
+        ]);
+
+        $item->types()->attach([1,3,4]);
+        $item->categories()->attach([1]);
+        $item->programmingLanguages()->attach([2,8,9]);
+        $item->levels()->attach([1]);
+        $item->languages()->attach([1]);
+
+
+
+        $item = create('App\ResourceItem', [
+            'name' => 'W3 Schools We Developer Site',
+            'description' => 'Online platform providing exercises for those who want to practice coding.',
+            'source' => 'https://www.w3schools.com/',
+            'thumbnail' => '',
+            'learn' => true,
+        ]);
+
+        $item->types()->attach([1,2,3]);
+        $item->categories()->attach([1]);
+        $item->programmingLanguages()->attach([2,3,9]);
+        $item->levels()->attach([1]);
+        $item->languages()->attach([1]);
+
+        $item = create('App\ResourceItem', [
+            'name' => 'Coding Game',
+            'description' => 'Online platform offering a collection of sophisticated games, puzzles and challenges in order to assist programmers improve their skills in programming and game development.',
+            'source' => 'https://www.codingame.com/start',
+            'thumbnail' => '',
+            'learn' => true,
+        ]);
+
+        $item->types()->attach([1,4,7,8]);
+        $item->categories()->attach([1]);
+        $item->programmingLanguages()->attach([2,3,4]);
+        $item->levels()->attach([1]);
+        $item->languages()->attach([1]);
+
+
+
+        $item = create('App\ResourceItem', [
+            'name' => 'Code Avengers',
+            'description' => 'Online learning program providing access to a number of programming courses ideal for students of all ages as well as their teachers.',
+            'source' => 'https://www.codeavengers.com/',
+            'thumbnail' => 'https://www.codeavengers.com/image/codeavengers_thumb.jpg',
+            'learn' => true,
+        ]);
+
+        $item->types()->attach([1,2,3]);
+        $item->categories()->attach([1]);
+        $item->programmingLanguages()->attach([4,8,9]);
+        $item->levels()->attach([1]);
+        $item->languages()->attach([1,2]);
+
+
+        $item = create('App\ResourceItem', [
+            'name' => 'HackPledge',
+            'description' => 'A community of developers helping each other to master software craftsmanship.',
+            'source' => 'https://hackpledge.org/',
+            'thumbnail' => 'https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1419230398/xckajtsigkzycsd9mbeo.png',
+            'learn' => true,
+        ]);
+
+        $item->types()->attach([1,2,3]);
+        $item->categories()->attach([1]);
+        $item->programmingLanguages()->attach([7,8,9,10]);
+        $item->levels()->attach([1]);
+        $item->languages()->attach([1]);
+
+
+        $item = create('App\ResourceItem', [
+            'name' => 'AGupieWare',
+            'description' => 'Online resources repository. Contains links to video tutorials of programming courses for all levels given by major Universities.',
+            'source' => 'http://blog.agupieware.com/2014/05/online-learning-bachelors-level.html',
+            'thumbnail' => 'http://2.bp.blogspot.com/-WokOYF6BZmU/UfQIgFy_RXI/AAAAAAAAAA8/H4ynIQSBT18/s1600/aGupieWare-masthead01.png',
+            'learn' => true,
+        ]);
+
+
+        $item->types()->attach([1,2,3]);
+        $item->categories()->attach([1]);
+        $item->programmingLanguages()->attach([4,5,12]);
+        $item->levels()->attach([1]);
+        $item->languages()->attach([1]);
+
+        $item = create('App\ResourceItem', [
+            'name' => 'Blocky',
+            'description' => 'Blockly is library that adds a visual code editor to web and mobile apps. Blockly in a browser allows web pages to include a visual code editor for any of Blockly\'s five supported programming languages, or your own. In Blockly Games, users can solve a maze using Blockly\'s editor on the right.',
+            'source' => 'https://developers.google.com/blockly/',
+            'thumbnail' => 'https://google-developers.appspot.com/blockly/showcase/blockly-games.png',
+            'learn' => true,
+        ]);
+
+        $item->types()->attach([1,2,3]);
+        $item->categories()->attach([1]);
+        $item->programmingLanguages()->attach([3,4,6]);
+        $item->levels()->attach([1]);
+        $item->languages()->attach([1]);
+
+        $item = create('App\ResourceItem', [
+            'name' => '',
+            'description' => '',
+            'source' => '',
+            'thumbnail' => '',
+            'learn' => true,
+        ]);
+
+        $item->types()->attach([1,2,3]);
+        $item->categories()->attach([1]);
+        $item->programmingLanguages()->attach([]);
+        $item->levels()->attach([1]);
+        $item->languages()->attach([1]);
+
         /*
 
          $item = create('App\ResourceItem', [
