@@ -14,62 +14,67 @@ class ProgrammingLanguageSeeder extends Seeder
         create('App\ResourceProgrammingLanguage', [
             'id' => 1,
             'position' => 10,
-            'name' => 'Scratch',
+            'name' => 'C++',
         ]);
         create('App\ResourceProgrammingLanguage', [
             'id' => 2,
             'position' => 20,
-            'name' => 'Java',
+            'name' => 'CSS',
         ]);
         create('App\ResourceProgrammingLanguage', [
             'id' => 3,
             'position' => 30,
-            'name' => 'Javascript',
+            'name' => 'HTML',
         ]);
         create('App\ResourceProgrammingLanguage', [
             'id' => 4,
             'position' => 40,
-            'name' => 'Python',
+            'name' => 'HTML5',
         ]);
         create('App\ResourceProgrammingLanguage', [
             'id' => 5,
             'position' => 50,
-            'name' => 'Swift',
+            'name' => 'Java',
         ]);
         create('App\ResourceProgrammingLanguage', [
             'id' => 6,
             'position' => 60,
-            'name' => 'Visual Programming',
+            'name' => 'JavaScript',
         ]);
         create('App\ResourceProgrammingLanguage', [
             'id' => 7,
             'position' => 70,
-            'name' => 'C++',
+            'name' => 'Python',
         ]);
         create('App\ResourceProgrammingLanguage', [
             'id' => 8,
             'position' => 80,
-            'name' => 'CSS',
+            'name' => 'Raspberry Pi',
         ]);
         create('App\ResourceProgrammingLanguage', [
             'id' => 9,
             'position' => 90,
-            'name' => 'HTML',
+            'name' => 'Swift',
         ]);
         create('App\ResourceProgrammingLanguage', [
             'id' => 10,
             'position' => 100,
-            'name' => 'HTML5',
+            'name' => 'Visual Programming',
         ]);
         create('App\ResourceProgrammingLanguage', [
             'id' => 11,
             'position' => 110,
-            'name' => 'Raspberry Pi',
+            'name' => 'All targeted programming languages',
         ]);
         create('App\ResourceProgrammingLanguage', [
             'id' => 12,
             'position' => 120,
             'name' => 'Other',
+        ]);
+        create('App\ResourceProgrammingLanguage', [
+            'id' => 13,
+            'position' => 130,
+            'name' => 'PHP',
         ]);
 
     }
