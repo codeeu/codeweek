@@ -55,22 +55,15 @@ class CategorySeeder extends Seeder
         ]);
         create('App\ResourceCategory', [
             'id' => 7,
-            'name' => 'Computational Thinking',
+            'name' => 'Unplugged Activities',
             'position' => 70,
             'learn' => true,
             'teach' => true
         ]);
         create('App\ResourceCategory', [
             'id' => 8,
-            'name' => 'Unplugged Activities',
-            'position' => 80,
-            'learn' => true,
-            'teach' => true
-        ]);
-        create('App\ResourceCategory', [
-            'id' => 9,
             'name' => 'Other',
-            'position' => 90,
+            'position' => 80,
             'learn' => true,
             'teach' => true
         ]);

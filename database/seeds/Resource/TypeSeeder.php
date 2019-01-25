@@ -94,6 +94,12 @@ class TypeSeeder extends Seeder
             'position' => 120,
             'learn' => false,
             'teach' => true
+        ]);     create('App\ResourceType', [
+            'id' => 13,
+            'name' => 'Guide',
+            'position' => 130,
+            'learn' => false,
+            'teach' => true
         ]);
     }
 }
