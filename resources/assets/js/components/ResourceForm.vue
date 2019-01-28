@@ -5,7 +5,7 @@
 
         <div class="container mx-auto h-full flex-row bg-blue-light p-8">
             <div class="flex justify-between w-full">
-                <input type="text" class="multiselect w-full pl-8 pr-8 mb-8" @input="debounceSearch"
+                <input type="text" class="multiselect w-full pl-8 pr-8 mb-4" @input="debounceSearch"
                        v-model="searchInput">
             </div>
 
@@ -13,7 +13,7 @@
 
                 <multiselect v-model="selectedTypes" :options="types" :multiple="true" :close-on-select="false"
                              :clear-on-select="false" :preserve-search="true" placeholder="Types" label="name"
-                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mb-8 mr-8">
+                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mb-4 mr-8">
                     <template slot="selection" slot-scope="{ values, search, isOpen }"><span
                             class="multiselect__single"
                             v-if="values.length &amp;&amp; !isOpen">{{ values.length }} types selected</span>
@@ -24,7 +24,7 @@
                 <multiselect v-model="selectedLevels" :options="levels" :multiple="true"
                              :close-on-select="false"
                              :clear-on-select="false" :preserve-search="true" placeholder="Levels" label="name"
-                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mb-8 mr-8">
+                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mb-4 mr-8">
                     <template slot="selection" slot-scope="{ values, search, isOpen }"><span
                             class="multiselect__single"
                             v-if="values.length &amp;&amp; !isOpen">{{ values.length }} levels selected</span>
@@ -41,7 +41,7 @@
                              :clear-on-select="false" :preserve-search="true"
                              placeholder="Programming Languages"
                              label="name"
-                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mb-8">
+                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mb-4">
                     <template slot="selection" slot-scope="{ values, search, isOpen }"><span
                             class="multiselect__single"
                             v-if="values.length &amp;&amp; !isOpen">{{ values.length }} programming languages selected</span>
@@ -55,7 +55,7 @@
                              :close-on-select="false"
                              :clear-on-select="false" :preserve-search="true" placeholder="Categories"
                              label="name"
-                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mr-8 mb-8">
+                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mr-8">
                     <template slot="selection" slot-scope="{ values, search, isOpen }"><span
                             class="multiselect__single"
                             v-if="values.length &amp;&amp; !isOpen">{{ values.length }} categories selected</span>
@@ -67,7 +67,7 @@
                              :close-on-select="false"
                              :clear-on-select="false" :preserve-search="true" placeholder="Languages"
                              label="name"
-                             track-by="name" :preselect-first="false" @input="onSubmit()" class="ml-8 mb-8">
+                             track-by="name" :preselect-first="false" @input="onSubmit()" class="ml-8">
                     <template slot="selection" slot-scope="{ values, search, isOpen }"><span
                             class="multiselect__single"
                             v-if="values.length &amp;&amp; !isOpen">{{ values.length }} languages selected</span>
@@ -98,7 +98,7 @@
         </div>
 
         <pagination v-if="pagination.last_page > 1" :pagination="pagination" :offset="5"
-                    @paginate="onSubmit()"></pagination>
+                    @paginate="paginate()"></pagination>
 
 
     </div>
@@ -142,13 +142,23 @@
             };
         },
         methods: {
+            scrollToTop() {
+                window.scrollTo(0,0);
+            },
             debounceSearch:
                 _.debounce(
                     function () {
                         this.onSubmit();
                     }, 300)
             ,
-            onSubmit: function () {
+            paginate: function(){
+                this.scrollToTop();
+                this.onSubmit(true);
+            },
+            onSubmit: function(isPagination) {
+                if (!isPagination){
+                    this.pagination.current_page = 1;
+                }
                 axios.post('/resources/search?page=' + this.pagination.current_page, this.$data)
                     .then(response => {
                         console.log(response.data.data);
