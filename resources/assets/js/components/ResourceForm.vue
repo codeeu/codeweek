@@ -11,11 +11,20 @@
 
             <div class="flex justify-between">
 
+                <multiselect v-model="selectedTypes" :options="types" :multiple="true" :close-on-select="false"
+                             :clear-on-select="false" :preserve-search="true" placeholder="Types" label="name"
+                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mb-8 mr-8">
+                    <template slot="selection" slot-scope="{ values, search, isOpen }"><span
+                            class="multiselect__single"
+                            v-if="values.length &amp;&amp; !isOpen">{{ values.length }} types selected</span>
+                    </template>
+                </multiselect>
+
 
                 <multiselect v-model="selectedLevels" :options="levels" :multiple="true"
                              :close-on-select="false"
                              :clear-on-select="false" :preserve-search="true" placeholder="Levels" label="name"
-                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mb-8">
+                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mb-8 mr-8">
                     <template slot="selection" slot-scope="{ values, search, isOpen }"><span
                             class="multiselect__single"
                             v-if="values.length &amp;&amp; !isOpen">{{ values.length }} levels selected</span>
@@ -23,16 +32,7 @@
                 </multiselect>
 
 
-                <multiselect v-model="selectedLanguages" :options="languages" :multiple="true"
-                             :close-on-select="false"
-                             :clear-on-select="false" :preserve-search="true" placeholder="Languages"
-                             label="name"
-                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mr-8 ml-8 mb-8">
-                    <template slot="selection" slot-scope="{ values, search, isOpen }"><span
-                            class="multiselect__single"
-                            v-if="values.length &amp;&amp; !isOpen">{{ values.length }} languages selected</span>
-                    </template>
-                </multiselect>
+
 
 
                 <multiselect v-model="selectedProgrammingLanguages" :options="programmingLanguages"
@@ -55,7 +55,7 @@
                              :close-on-select="false"
                              :clear-on-select="false" :preserve-search="true" placeholder="Categories"
                              label="name"
-                             track-by="name" :preselect-first="false" @input="onSubmit()" class="">
+                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mr-8 mb-8">
                     <template slot="selection" slot-scope="{ values, search, isOpen }"><span
                             class="multiselect__single"
                             v-if="values.length &amp;&amp; !isOpen">{{ values.length }} categories selected</span>
@@ -63,25 +63,29 @@
                 </multiselect>
 
 
-                <multiselect v-model="selectedSubjects" :options="subjects" :multiple="true"
+                <multiselect v-model="selectedLanguages" :options="languages" :multiple="true"
                              :close-on-select="false"
-                             :clear-on-select="false" :preserve-search="true" placeholder="Subjects"
+                             :clear-on-select="false" :preserve-search="true" placeholder="Languages"
                              label="name"
-                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mr-8 ml-8">
+                             track-by="name" :preselect-first="false" @input="onSubmit()" class="ml-8 mb-8">
                     <template slot="selection" slot-scope="{ values, search, isOpen }"><span
                             class="multiselect__single"
-                            v-if="values.length &amp;&amp; !isOpen">{{ values.length }} subjects selected</span>
+                            v-if="values.length &amp;&amp; !isOpen">{{ values.length }} languages selected</span>
                     </template>
                 </multiselect>
 
-                <multiselect v-model="selectedTypes" :options="types" :multiple="true" :close-on-select="false"
-                             :clear-on-select="false" :preserve-search="true" placeholder="Types" label="name"
-                             track-by="name" :preselect-first="false" @input="onSubmit()" class="">
-                    <template slot="selection" slot-scope="{ values, search, isOpen }"><span
-                            class="multiselect__single"
-                            v-if="values.length &amp;&amp; !isOpen">{{ values.length }} types selected</span>
-                    </template>
-                </multiselect>
+                <!--<multiselect v-model="selectedSubjects" :options="subjects" :multiple="true"-->
+                             <!--:close-on-select="false"-->
+                             <!--:clear-on-select="false" :preserve-search="true" placeholder="Subjects"-->
+                             <!--label="name"-->
+                             <!--track-by="name" :preselect-first="false" @input="onSubmit()" class="mr-8 ml-8">-->
+                    <!--<template slot="selection" slot-scope="{ values, search, isOpen }"><span-->
+                            <!--class="multiselect__single"-->
+                            <!--v-if="values.length &amp;&amp; !isOpen">{{ values.length }} subjects selected</span>-->
+                    <!--</template>-->
+                <!--</multiselect>-->
+
+
 
             </div>
         </div>
@@ -167,14 +171,6 @@
         },
         mounted: function () {
             this.onSubmit();
-        },
-        computed: {
-            chevron: function () {
-                return {
-                    'fa-chevron-up': this.isOpen,
-                    'fa-chevron-down': !this.isOpen
-                }
-            }
         }
     };
 </script>
