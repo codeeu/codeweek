@@ -84,7 +84,7 @@
                             <h4>Kur?</h4>
                         </div>
 
-                        <p>6-21 tetor 2018</p>
+                        <p>5-20 tetor 2019</p>
 
 
                     </div>

@@ -16,7 +16,7 @@
                     <hr>
 
 
-                    <p>EU&rsquo;s kodeuge 2018 finder sted mellem den <strong>6. og 21.&nbsp;oktober</strong>.</p>
+                    <p>EU&rsquo;s kodeuge 2019 finder sted mellem den <strong>5. og 20.&nbsp;oktober</strong>.</p>
 
                     <p>EU&rsquo;s kodeuge er en gr&aelig;srodsbev&aelig;gelse, der fejrer kreativitet, probleml&oslash;sning og samarbejde gennem programmering og andre tekniske aktiviteter. Id&eacute;en er at g&oslash;re programmering mere synligt for at vise unge, voksne og &aelig;ldre, hvordan man f&oslash;rer sine id&eacute;er ud i livet med kode, at afmystificere disse f&aelig;rdigheder og at samle motiverede mennesker i et l&aelig;ringsmilj&oslash;.</p>
 
@@ -75,12 +75,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 

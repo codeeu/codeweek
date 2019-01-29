@@ -55,7 +55,7 @@
     </script>
 
     <!-- Title, keywords, description -->
-    <meta name="description" content="October 15 - 23, 2016: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding." />
+    <meta name="description" content="October 5 - 20, 2019: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding." />
 
 
     <title>Europe Code Week</title>
