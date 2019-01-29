@@ -72,7 +72,7 @@
                             <h4>Quand?</h4>
                         </div>
 
-                        <p>6-21&nbsp;octobre&nbsp;2018</p>
+                        <p>5-20&nbsp;octobre&nbsp;2019</p>
 
 
                     </div>

@@ -16,7 +16,7 @@
                     <hr>
 
 
-                    <p>V roce 2018 proběhne Evropsk&yacute; t&yacute;den programov&aacute;n&iacute; od <strong>6. do 21. ř&iacute;jna</strong>.</p>
+                    <p>V roce 2019 proběhne Evropsk&yacute; t&yacute;den programov&aacute;n&iacute; od <strong>5. do 20. ř&iacute;jna</strong>.</p>
 
                     <p>Evropsk&yacute; t&yacute;den programov&aacute;n&iacute; je projekt, kter&yacute; propaguje kreativitu, ře&scaron;en&iacute; probl&eacute;mů a spolupr&aacute;ci pomoc&iacute; programov&aacute;n&iacute; a jin&yacute;ch technick&yacute;ch aktivit. C&iacute;lem je programov&aacute;n&iacute; zviditelnit &ndash; uk&aacute;zat mlad&yacute;m lidem, dospěl&yacute;m i seniorům, jak je d&iacute;ky programov&aacute;n&iacute; možn&eacute; realizovat my&scaron;lenky. Chceme tyto dovednosti zbavit rou&scaron;ky tajemstv&iacute; a spojit motivovan&eacute; lidi, aby se učili.</p>
 
@@ -75,12 +75,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 

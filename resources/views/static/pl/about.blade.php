@@ -16,7 +16,7 @@
                     <hr>
 
 
-                    <p>W 2018 roku Europejski Tydzień Kodowania odbędzie się w dniach <strong>od 6 do 21&nbsp;października</strong>.</p>
+                    <p>W 2019 roku Europejski Tydzień Kodowania odbędzie się w dniach <strong>od 5 do 20&nbsp;października</strong>.</p>
 
                     <p>Europejski Tydzień Kodowania to oddolna inicjatywa, w ramach kt&oacute;rej świętujemy kreatywność, rozwiązywanie problem&oacute;w i wsp&oacute;łpracę poprzez programowanie i inne działania związane z technologią. Gł&oacute;wną ideą stojącą za wydarzeniem jest promowanie programowania poprzez pokazywanie młodzieży i dorosłym sposob&oacute;w na realizację pomysł&oacute;w przy pomocy kodu, rozwiewanie wątpliwości i mit&oacute;w otaczających te umiejętności oraz gromadzenie zmotywowanych jednostek w&nbsp;celu wsp&oacute;lnej nauki.</p>
 
@@ -75,12 +75,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 

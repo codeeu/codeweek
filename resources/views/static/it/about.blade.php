@@ -16,7 +16,7 @@
                     <hr>
 
 
-                    <p>Nel 2018 la Settimana europea della programmazione si terr&agrave; dal <strong>6 al 21 ottobre</strong>.</p>
+                    <p>Nel 2019 la Settimana europea della programmazione si terr&agrave; dal <strong>5 al 20 ottobre</strong>.</p>
 
                     <p>La Settimana europea della programmazione &egrave; un evento che nasce dal basso e celebra la creativit&agrave;, la risoluzione dei problemi e la collaborazione attraverso la programmazione e altre attivit&agrave; tecnologiche. L&rsquo;idea &egrave; di rendere la programmazione pi&ugrave; visibile, mostrare ai giovani, agli adulti e agli anziani come dare vita alle proprie idee con la programmazione, spiegare queste capacit&agrave; e mettere insieme persone motivate per imparare.</p>
 
@@ -75,12 +75,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 

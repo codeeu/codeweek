@@ -16,7 +16,7 @@
                     <hr>
 
 
-                    <p>V&nbsp;roku 2018 sa Eur&oacute;psky t&yacute;ždeň programovania kon&aacute; od <strong>6.&nbsp;do 21.&nbsp;okt&oacute;bra</strong>.</p>
+                    <p>V&nbsp;roku 2019 sa Eur&oacute;psky t&yacute;ždeň programovania kon&aacute; od <strong>5.&nbsp;do 20.&nbsp;okt&oacute;bra</strong>.</p>
 
                     <p>Eur&oacute;psky t&yacute;ždeň programovania je nez&aacute;visl&eacute; hnutie, ktor&eacute; oslavuje tvorivosť, rie&scaron;enie probl&eacute;mov a spolupr&aacute;cu prostredn&iacute;ctvom programovania a ďal&scaron;&iacute;ch technologick&yacute;ch aktiv&iacute;t. Z&aacute;merom je viac zviditeľniť programovanie, uk&aacute;zať mlad&yacute;m, dospel&yacute;m a star&scaron;&iacute;m ľuďom, ako vd&yacute;chnuť život n&aacute;padom pomocou programovania, r&uacute;cať m&yacute;ty o&nbsp;t&yacute;chto zručnostiach a spojiť motivovan&yacute;ch ľud&iacute;, aby sa spolu vzdel&aacute;vali.</p>
 
@@ -75,12 +75,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 

@@ -16,7 +16,7 @@
                     <hr>
 
 
-                    <p>P&euml;r vitin 2018, EU Code Week do t&euml; zhvillohet mes datave <strong>6 dhe 21 tetor</strong>.</p>
+                    <p>P&euml;r vitin 2019, EU Code Week do t&euml; zhvillohet mes datave <strong>5 dhe 20 tetor</strong>.</p>
 
                     <p>EU Code Week &euml;sht&euml; nj&euml; l&euml;vizje n&euml; terren q&euml; feston aft&euml;sin&euml; krijuese, zgjidhjen e problemeve dhe bashk&euml;punimin p&euml;rmes programimit dhe aktiviteteve t&euml; tjera teknologjike. Ideja &euml;sht&euml; q&euml; programimi t&euml; b&euml;het m&euml; i duksh&euml;m, p&euml;r t&rsquo;u treguar t&euml; rinjve, t&euml; rriturve dhe t&euml; moshuarve se si t&euml; sjellin n&euml; jet&euml; idet&euml; n&euml;p&euml;rmjet kodit, p&euml;r t&euml; zbuluar misterin e k&euml;tyre aft&euml;sive dhe p&euml;r t&euml; b&euml;r&euml; bashk&euml; njer&euml;zit e motivuar q&euml; t&euml; m&euml;sojn&euml;.</p>
 
@@ -75,12 +75,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 
