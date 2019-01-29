@@ -23,6 +23,36 @@
                     </span>
                 </div>
 
+                <div v-show="isOpen">
+                    <div class="text-grey-darker text-base"><span class="text-black font-bold">Level:</span>
+                        <span v-for="level in resource.levels">
+                        <resource-pill :property="level"></resource-pill>
+                        </span>
+                    </div>
+
+                    <div class="text-grey-darker text-base"><span
+                            class="text-black font-bold">Programming Languages:</span>
+                        <span v-for="programmingLanguage in resource.programming_languages">
+                        <resource-pill :property="programmingLanguage"></resource-pill>
+                        </span>
+                    </div>
+
+                    <div class="text-grey-darker text-base"><span class="text-black font-bold">Categories:</span>
+                        <span v-for="category in resource.categories">
+                        <resource-pill :property="category"></resource-pill>
+                        </span>
+                    </div>
+
+                    <div class="text-grey-darker text-base"><span class="text-black font-bold">Languages:</span>
+                        <span v-for="language in resource.languages">
+                        <resource-pill :property="language"></resource-pill>
+                        </span>
+                    </div>
+                </div>
+
+                <button @click="toggle()" type="button" class="mt-4 btn btn-sm btn-light">{{button.text}}
+                </button>
+
             </div>
 
         </div>
@@ -41,7 +71,27 @@
         props: {
             resource: Object
         },
+        data() {
+            return {
+                button: {
+                    text: 'Show Details'
+                },
+                isOpen: false
+            };
+        },
+        methods: {
+            toggle(){
+                this.isOpen = !this.isOpen;
+                if (!this.isOpen) {
+                    this.button.text = "Show Details"
+                } else {
+
+                    this.button.text = "Hide Details"
+                }
+            }
+        },
         computed: {
+
             thumbnail: function () {
                 console.log(this.resource.thumbnail);
                 if (this.resource.thumbnail.toLowerCase().startsWith('http')) {
