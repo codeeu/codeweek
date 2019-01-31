@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_+Learning+Bit+2_Computational_Thinking+_Video+script.docx">T&eacute;l&eacute;charger le script vid&eacute;o</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/fr/CNECT-2018-00222-00-16-FR-TRA-00.DOCX">T&eacute;l&eacute;charger le script vid&eacute;o</a></p>
 
                     <h2>Pr&ecirc;t &agrave; partager vos connaissances avec vos &eacute;l&egrave;ves?</h2>
 
                     <p>Choisissez un des plans de cours ci-dessous et organisez une activit&eacute; avec vos &eacute;l&egrave;ves.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+1_Primary.docx">Activit&eacute; 1 &ndash; D&eacute;velopper le raisonnement math&eacute;matique pour le primaire</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+2_Secondary.docx">Activit&eacute; 2 &ndash; Se familiariser avec les algorithmes pour le premier cycle du secondaire</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+3_Upper+Secondary.docx">Activit&eacute; 3 &ndash; Les algorithmes pour le secondaire sup&eacute;rieur</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/fr/CNECT-2018-00222-00-04-FR-TRA-00.DOCX">Activit&eacute; 1 &ndash; D&eacute;velopper le raisonnement math&eacute;matique pour le primaire</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/fr/CNECT-2018-00222-00-05-FR-TRA-00.DOCX">Activit&eacute; 2 &ndash; Se familiariser avec les algorithmes pour le premier cycle du secondaire</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/fr/CNECT-2018-00222-00-06-FR-TRA-00.DOCX">Activit&eacute; 3 &ndash; Les algorithmes pour le secondaire sup&eacute;rieur</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
