@@ -16,7 +16,7 @@
                     <hr>
 
 
-                    <p>2018&nbsp;m. ES programavimo savaitė vyks <strong>spalio 6&ndash;21&nbsp;d.</strong></p>
+                    <p>2019&nbsp;m. ES programavimo savaitė vyks <strong>spalio 5&ndash;20&nbsp;d.</strong></p>
 
                     <p>ES programavimo savaitė yra visuomeninė iniciatyva, kuria skatinamas kūrybi&scaron;kumas, problemų sprendimas ir bendradarbiavimas pasitelkiant programavimą ir kitą technologinę veiklą. &Scaron;ios iniciatyvos tikslas yra populiarinti programavimą, parodyti, kaip žmonės gali įgyvendinti idėjas programuodami, susipažinti su programavimo įgūdžiais ir suburti motyvuotus žmones mokytis.</p>
 
@@ -75,12 +75,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 

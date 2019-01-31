@@ -20,7 +20,7 @@
                     <hr>
 
 
-                    <p>Fl-2018, il-Ġimgħa tal-Ikkowdjar ser issir bejn is-<strong>6 u l-21&nbsp;ta&rsquo;&nbsp;Ottubru</strong>.</p>
+                    <p>Fl-2019, il-Ġimgħa tal-Ikkowdjar ser issir bejn is-<strong>5 u l-20&nbsp;ta&rsquo;&nbsp;Ottubru</strong>.</p>
 
                     <p>Il-Ġimgħa Ewropea tal-Ikkowdjar hija moviment bażiku li jiċċelebra l-kreattivit&agrave;, is-soluzzjoni tal-problemi u kollaborazzjoni permezz ta&rsquo; programmazzjoni u attivitajiet tekniċi oħra. L-idea hija li l-programmazzjoni ssir aktar viżibbli, biex iż-żgħażagħ, l-adulti u l-anzjani jintwerew kif tista&rsquo; tingħata l-ħajja lill-ideat bil-kodiċi, biex dawn il-ħiliet isiru aktar ċari u biex jingħaqdu persuni motivati biex jitgħallmu.</p>
 
@@ -79,12 +79,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 

@@ -16,7 +16,7 @@
                     <hr>
 
 
-                    <p>2018.&nbsp;aasta ELi programmeerimisn&auml;dal Code Week toimub ajavahemikus <strong>6. kuni 21.&nbsp;oktoober</strong>.</p>
+                    <p>2019.&nbsp;aasta ELi programmeerimisn&auml;dal Code Week toimub ajavahemikus <strong>5. kuni 20.&nbsp;oktoober</strong>.</p>
 
                     <p>ELi programmeerimisn&auml;dal Code Week on rohujuuretasandil toimuv liikumine, millega t&auml;histatakse loomingulisust, probleemide lahendamist ja koost&ouml;&ouml;d nii programmeerimises kui ka teistes tehnoloogilistes tegevustes. Selle eesm&auml;rk on muuta programmeerimine n&auml;htavamaks ning tutvustada noortele ja vanadele, kuidas koodikirjutamisega oma ideid ellu viia, hajutada programmeerimisega seotud saladusi ning motiveerida inimesi &otilde;ppima.</p>
 
@@ -75,12 +75,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 

@@ -72,7 +72,7 @@
                             <h4>Mikor?</h4>
                         </div>
 
-                        <p>2018. okt&oacute;ber 6-21.</p>
+                        <p>2019. okt&oacute;ber 5-20.</p>
 
 
                     </div>

@@ -72,7 +72,7 @@
                             <h4>Kada?</h4>
                         </div>
 
-                        <p>6.&nbsp;&ndash;&nbsp;21.&nbsp;listopada&nbsp;2018.</p>
+                        <p>5.&nbsp;&ndash;&nbsp;20.&nbsp;listopada&nbsp;2019.</p>
 
 
                     </div>
