@@ -16,7 +16,7 @@
                     <hr>
 
 
-                    <p>Vuonna 2018 EU:n koodausviikko j&auml;rjestet&auml;&auml;n <strong>6.&ndash;21. lokakuuta</strong>.</p>
+                    <p>Vuonna 2019 EU:n koodausviikko j&auml;rjestet&auml;&auml;n <strong>5.&ndash;20. lokakuuta</strong>.</p>
 
                     <p>EU:n koodausviikko on ruohonjuuritason hanke, jolla edistet&auml;&auml;n luovuutta, ongelmanratkaisukyky&auml; ja yhteisty&ouml;t&auml; ohjelmoinnin ja muiden tekniikan alan tapahtumien kautta. Ajatuksena on tehd&auml; ohjelmointia tunnetuksi ja n&auml;ytt&auml;&auml; nuorille, aikuisille ja senioreille, miten ideat voidaan her&auml;tt&auml;&auml; henkiin koodin avulla. Tavoitteena on my&ouml;s h&auml;lvent&auml;&auml; koodaukseen kohdistuvaa mystiikkaa ja tuoda motivoituneet ihmiset oppimaan yhdess&auml;.</p>
 
@@ -75,12 +75,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 

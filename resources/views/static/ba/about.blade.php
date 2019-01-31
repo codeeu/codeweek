@@ -16,7 +16,7 @@
                     <hr>
 
 
-                    <p>Tokom 2018, Sedmica kodiranja EU će se odvijati od <strong>6. do 21. oktobra</strong>.</p>
+                    <p>Tokom 2019, Sedmica kodiranja EU će se odvijati od <strong>5. do 20. oktobra</strong>.</p>
 
                     <p>Sedmica kodirnja EU je pokret &scaron;irokih masa u kom se slavi kreativnost, rje&scaron;avanje problema i saradnja putem programiranja i drugih tehnolo&scaron;kih aktivnosti. Zamisao je da se programiranje načini vidljivijim, da se mladima, odraslima i starijima pokaže kako kodiranjem mogu svoje ideje sprovesti u realnost, da se te vje&scaron;tine demistificiraju i da se okupe oni koji su motivirani za učenje.</p>
 
@@ -75,12 +75,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 

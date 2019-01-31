@@ -72,7 +72,7 @@
                             <h4>¿Cu&aacute;ndo?</h4>
                         </div>
 
-                        <p>Del 6 al 21 de octubre de 2018</p>
+                        <p>Del 5 al 20 de octubre de 2019</p>
 
 
                     </div>

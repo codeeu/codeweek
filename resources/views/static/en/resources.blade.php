@@ -7,7 +7,7 @@
 
             <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
                 <h1>Resources and guides</h1>
-                <span>EU Code Week 2018</span>
+                <span>EU Code Week 2019</span>
             </div>
 
             <hr>
@@ -35,9 +35,9 @@
             <h2>Presentations and toolkits</h2>
             <ul>
 
-                <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/EU+Code+Week+2018+Communications+Toolkit.zip">EU Code Week 2018 Communications Toolkit</a></li>
-                <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/Teachers+Toolkit.zip">EU Code Week 2018 Teachers Toolkit</a></li>
-                <li>EU Code Week 2018 Leaflet.
+                <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/EU%2BCode%2BWeek%2B2019%2BCommunications%2BToolkit.zip">EU Code Week 2019 Communications Toolkit</a></li>
+                <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/EU%2BCode%2BWeek%2B2019%2BTeachers%2BToolkit.zip">EU Code Week 2019 Teachers Toolkit</a></li>
+              {{--  <li>EU Code Week 2018 Leaflet.
 
                     <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_EN.pdf">EN</a>
                     -
@@ -95,7 +95,7 @@
                     <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_TR.pdf">TR</a>
 
 
-                </li>
+                </li>--}}
 
 
             </ul>

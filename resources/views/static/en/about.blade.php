@@ -23,7 +23,7 @@
 
 
                     <p>
-                        In 2018 EU Code Week will take place between <strong>6 and 21 October</strong>.
+                        In 2019 EU Code Week will take place between <strong>5 and 20 October</strong>.
                     </p>
 
                     <p>
@@ -119,12 +119,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 

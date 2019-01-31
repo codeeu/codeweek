@@ -72,7 +72,7 @@
                             <h4>Kada?</h4>
                         </div>
 
-                        <p>6.-21. oktobar 2018.</p>
+                        <p>5.-20. oktobar 2019.</p>
 
 
                     </div>

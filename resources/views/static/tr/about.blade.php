@@ -20,7 +20,7 @@
                     <hr>
 
 
-                    <p>2018 AB Kod Haftası <strong>6 ile 21 Ekim</strong> tarihleri arasında ger&ccedil;ekleşecek.</p>
+                    <p>2019 AB Kod Haftası <strong>5 ile 20 Ekim</strong> tarihleri arasında ger&ccedil;ekleşecek.</p>
 
                     <p>AB Kod Haftası, programlama ve diğer teknolojik aktiviteler yoluyla yaratıcılığı, problem &ccedil;&ouml;zmeyi ve iş birliğini teşvik eden bir taban hareketidir. Buradaki ama&ccedil;, programlamayı daha g&ouml;r&uuml;n&uuml;r kılmak, gen&ccedil;lere, yetişkinlere ve yaşlılara fikirleri kodlamayla nasıl hayata ge&ccedil;irdiğinizi g&ouml;stermek, bu becerileri ortaya &ccedil;ıkarmak ve motive olmuş kişileri &ouml;ğrenme amacıyla bir araya getirmektir.</p>
 
@@ -79,12 +79,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 

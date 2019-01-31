@@ -72,7 +72,7 @@
                             <h4>Кога?</h4>
                         </div>
 
-                        <p>6&mdash;21&nbsp;октомври&nbsp;2018&nbsp;г.</p>
+                        <p>5&mdash;20&nbsp;октомври&nbsp;2019&nbsp;г.</p>
 
 
                     </div>
