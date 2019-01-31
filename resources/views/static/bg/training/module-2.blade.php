@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_+Learning+Bit+2_Computational_Thinking+_Video+script.docx">Изтеглете видео скрипта</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/BG/CNECT-2018-00222-00-16-BG-TRA-00.DOCX">Изтеглете видео скрипта</a></p>
 
                     <h2>Готови ли сте да споделите какво сте научили с учениците си?</h2>
 
                     <p>Изберете един от плановете на уроци по-долу и организирайте дейност с учениците си.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+1_Primary.docx">Дейност 1 &mdash; Развиване на математическо аргументиране за основен курс на обучение</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+2_Secondary.docx">Дейност 2 &mdash; Запознаване с алгоритми за среден курс (долна степен) на обучение</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+3_Upper+Secondary.docx">Дейност 3 &mdash; Алгоритми за среден курс (горна степен) на обучение</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/BG/CNECT-2018-00222-00-04-BG-TRA-00.DOCX">Дейност 1 &mdash; Развиване на математическо аргументиране за основен курс на обучение</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/BG/CNECT-2018-00222-00-05-BG-TRA-00.DOCX">Дейност 2 &mdash; Запознаване с алгоритми за среден курс (долна степен) на обучение</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/BG/CNECT-2018-00222-00-06-BG-TRA-00.DOCX">Дейност 3 &mdash; Алгоритми за среден курс (горна степен) на обучение</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

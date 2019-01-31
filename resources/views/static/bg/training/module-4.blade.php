@@ -24,16 +24,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/M1zJOfmriGU"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+4_Educational_Games_Scratch+_Video+script.docx">Изтеглете видео скрипта</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/BG/CNECT-2018-00222-00-19-BG-TRA-00.DOCX">Изтеглете видео скрипта</a></p>
 
                     <h2>Готови ли сте да споделите какво сте научили с учениците си?</h2>
 
                     <p>Изберете един от плановете на уроци по-долу и организирайте дейност с учениците си.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+1_Primary.docx">Дейност 1 &mdash; Игра с въпроси и отговори със Scratch за основен курс на обучение</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+2_Lower+Secondary.docx">Дейност 2 &mdash; Игра с въпроси и отговори със Scratch за среден курс (долна степен) на обучение</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+3_+Secondary.docx">Дейност 3 &mdash; Игра с въпроси и отговори със Scratch за среден курс на обучение</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/BG/CNECT-2018-00222-00-10-BG-TRA-00.DOCX">Дейност 1 &mdash; Игра с въпроси и отговори със Scratch за основен курс на обучение</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/BG/CNECT-2018-00222-00-11-BG-TRA-00.DOCX">Дейност 2 &mdash; Игра с въпроси и отговори със Scratch за среден курс (долна степен) на обучение</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/BG/CNECT-2018-00222-00-12-BG-TRA-00.DOCX">Дейност 3 &mdash; Игра с въпроси и отговори със Scratch за среден курс на обучение</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
