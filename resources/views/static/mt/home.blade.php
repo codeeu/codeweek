@@ -77,7 +77,7 @@
                             <h4>Meta?</h4>
                         </div>
 
-                        <p>6-21&nbsp;ta&rsquo;&nbsp;Ottubru&nbsp;2018</p>
+                        <p>5-20&nbsp;ta&rsquo;&nbsp;Ottubru&nbsp;2019</p>
 
 
                     </div>

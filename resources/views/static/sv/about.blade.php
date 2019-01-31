@@ -16,7 +16,7 @@
                     <hr>
 
 
-                    <p>EU Code Week 2018 anordnas mellan den <strong>6 och 21 oktober</strong>.</p>
+                    <p>EU Code Week 2019 anordnas mellan den <strong>5 och 20 oktober</strong>.</p>
 
                     <p>EU Code Week &auml;r ett gr&auml;srotsinitiativ som hyllar kreativitet, probleml&ouml;sning och samarbete via programmering och andra tekniska aktiviteter. Tanken &auml;r att g&ouml;ra programmering mer synligt, att visa unga, vuxna och &auml;ldre hur man kan f&ouml;rverkliga id&eacute;er med kod, att avmystifiera dessa f&auml;rdigheter och f&aring; motiverade m&auml;nniskor att l&auml;ra sig tillsammans.</p>
 
@@ -75,12 +75,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 

@@ -16,7 +16,7 @@
                     <hr>
 
 
-                    <p>En 2018, la Semaine europ&eacute;enne du code aura lieu du <strong>6 au 21&nbsp;octobre</strong>.</p>
+                    <p>En 2019, la Semaine europ&eacute;enne du code aura lieu du <strong>5 au 20&nbsp;octobre</strong>.</p>
 
                     <p>La Semaine europ&eacute;enne du code est un mouvement citoyen qui met &agrave; l&rsquo;honneur la cr&eacute;ativit&eacute;, la r&eacute;solution de probl&egrave;mes et la collaboration par le biais de la programmation et d&rsquo;autres activit&eacute;s technologiques. L&rsquo;id&eacute;e consiste &agrave; rendre la programmation plus visible, &agrave; montrer aux jeunes, aux adultes et aux personnes &acirc;g&eacute;es comment concr&eacute;tiser des id&eacute;es gr&acirc;ce au code, &agrave; d&eacute;mystifier ces comp&eacute;tences et &agrave; rassembler un public d&eacute;sireux d&rsquo;apprendre.</p>
 
@@ -75,12 +75,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 

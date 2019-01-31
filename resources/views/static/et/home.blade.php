@@ -72,7 +72,7 @@
                             <h4>Millal?</h4>
                         </div>
 
-                        <p>6.&ndash;21.&nbsp;oktoobril 2018</p>
+                        <p>5.&ndash;20.&nbsp;oktoobril 2019</p>
 
 
                     </div>

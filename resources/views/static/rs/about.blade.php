@@ -16,7 +16,7 @@
                     <hr>
 
 
-                    <p>U 2018. godini EU nedelja programiranja će se održati između <strong>6. i 21. oktobra</strong>.</p>
+                    <p>U 2019. godini EU nedelja programiranja će se održati između <strong>5. i 20. oktobra</strong>.</p>
 
                     <p>EU nedelja programiranja je samonikli pokret koji slavi kreativnost, re&scaron;avanje problema i saradnju kroz programiranje i druge aktivnosti u vezi sa tehnologijom. Ideja je da se programiranje učini vidljivijim i dostupnijim, da se pokaže mladima, odraslima i starijim osobama kako se ideje realizuju pomoću kodova, da se demistifikuje programiranje i okupe motivisani ljudi da uče zajedno.</p>
 
@@ -75,12 +75,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 

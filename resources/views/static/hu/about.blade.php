@@ -16,7 +16,7 @@
                     <hr>
 
 
-                    <p>2018-ban az eur&oacute;pai programoz&aacute;si h&eacute;tre <strong>okt&oacute;ber 6. &eacute;s 21. </strong> k&ouml;z&ouml;tt ker&uuml;l sor.</p>
+                    <p>2019-ban az eur&oacute;pai programoz&aacute;si h&eacute;tre <strong>okt&oacute;ber 5. &eacute;s 20. </strong> k&ouml;z&ouml;tt ker&uuml;l sor.</p>
 
                     <p>Az eur&oacute;pai programoz&aacute;si h&eacute;t alulr&oacute;l szerveződő kezdem&eacute;nyez&eacute;s, amely a kreativit&aacute;st, a probl&eacute;mamegold&aacute;st &eacute;s az egy&uuml;ttműk&ouml;d&eacute;st &uuml;nnepli a programoz&aacute;son &eacute;s egy&eacute;b technol&oacute;giai tev&eacute;kenys&eacute;geken kereszt&uuml;l. Az alapgondolat a programoz&aacute;s l&aacute;that&oacute;bb&aacute; t&eacute;tele, valamint hogy megmutassa a fiataloknak, a felnőtteknek &eacute;s az időseknek, hogyan val&oacute;s&iacute;that&oacute;k meg az &ouml;tletek a programoz&aacute;s r&eacute;v&eacute;n, tov&aacute;bb&aacute; a k&eacute;szs&eacute;gek demisztifik&aacute;l&aacute;sa, valamint a tanulni v&aacute;gy&oacute; emberek egym&aacute;ssal val&oacute; &ouml;sszekapcsol&aacute;sa.</p>
 
@@ -75,12 +75,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 

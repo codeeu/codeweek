@@ -16,7 +16,7 @@
                     <hr>
 
 
-                    <p>Em 2018, a Semana Europeia da Programa&ccedil;&atilde;o ir&aacute; decorrer entre <strong>6 e 21 de outubro</strong>.</p>
+                    <p>Em 2019, a Semana Europeia da Programa&ccedil;&atilde;o ir&aacute; decorrer entre <strong>5 e 20 de outubro</strong>.</p>
 
                     <p>A Semana Europeia da Programa&ccedil;&atilde;o &eacute; uma iniciativa de base que celebra a criatividade, a resolu&ccedil;&atilde;o de problemas e a colabora&ccedil;&atilde;o atrav&eacute;s da programa&ccedil;&atilde;o e de outras atividades tecnol&oacute;gicas. A ideia &eacute; tornar a programa&ccedil;&atilde;o mais vis&iacute;vel, mostrar aos jovens, adultos e idosos a forma de dar vida &agrave;s ideias atrav&eacute;s da programa&ccedil;&atilde;o, desmistificar estas compet&ecirc;ncias e reunir pessoas motivadas para aprender.</p>
 
@@ -75,12 +75,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 

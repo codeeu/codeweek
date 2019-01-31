@@ -72,7 +72,7 @@
                             <h4>Wanneer?</h4>
                         </div>
 
-                        <p>6 - 21 oktober 2018</p>
+                        <p>5 - 20 oktober 2019</p>
 
 
                     </div>
