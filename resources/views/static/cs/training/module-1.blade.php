@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/18N1CaQJ0GI "></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Video_script.docx">St&aacute;hnout sc&eacute;n&aacute;ř videa</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/CS/CNECT-2018-00222-00-17-CS-TRA-00.DOCX">St&aacute;hnout sc&eacute;n&aacute;ř videa</a></p>
 
                     <h2>Jste připraveni podělit se s ž&aacute;ky o to, co jste se dozvěděli?</h2>
 
                     <p>Vyberte si jeden z n&iacute;že uveden&yacute;ch v&yacute;ukov&yacute;ch pl&aacute;nů a zorganizujte akci se sv&yacute;mi ž&aacute;ky.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+1_Primary.docx">Aktivita 1 &ndash; CodyRoby pro z&aacute;kladn&iacute; &scaron;kolu</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+2_Lower+Second....docx">Aktivita 2 &ndash; CodyRoby pro niž&scaron;&iacute; středn&iacute; &scaron;kolu</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson+plan+3_Secondary.docx">Aktivita 3 &ndash; CodyRoby pro středn&iacute; &scaron;kolu</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/CS/CNECT-2018-00222-00-00-CS-TRA-00.DOCX">Aktivita 1 &ndash; CodyRoby pro z&aacute;kladn&iacute; &scaron;kolu</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/CS/CNECT-2018-00222-00-02-CS-TRA-00.DOCX">Aktivita 2 &ndash; CodyRoby pro niž&scaron;&iacute; středn&iacute; &scaron;kolu</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/CS/CNECT-2018-00222-00-03-CS-TRA-00.DOCX">Aktivita 3 &ndash; CodyRoby pro středn&iacute; &scaron;kolu</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+5_Making_Robotics_Tinkering+_Video+script.docx">St&aacute;hnout sc&eacute;n&aacute;ř videa</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/CS/CNECT-2018-00222-00-20-CS-TRA-00.DOCX">St&aacute;hnout sc&eacute;n&aacute;ř videa</a></p>
 
                     <h2>Jste připraveni podělit se s ž&aacute;ky o to, co jste se dozvěděli?</h2>
 
                     <p>Vyberte si jeden z n&iacute;že uveden&yacute;ch v&yacute;ukov&yacute;ch pl&aacute;nů a zorganizujte akci se sv&yacute;mi ž&aacute;ky.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+1_Primary.docx">Aktivita 1 - Jak z dřevovl&aacute;knit&eacute; desky vyrobit mechanickou ruku pro z&aacute;kladn&iacute; &scaron;kolu</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+2_Lower+Secondary.docx">Aktivita 2 - Jak vyrobit mechanickou nebo robotickou ruku pro niž&scaron;&iacute; středn&iacute; &scaron;kolu</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+3_+Upper+Secondary.docx">Aktivita 3 - Jak vyrobit mechanickou nebo robotickou ruku pro vy&scaron;&scaron;&iacute; středn&iacute; &scaron;kolu</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/CS/CNECT-2018-00222-00-13-CS-TRA-00.DOCX">Aktivita 1 - Jak z dřevovl&aacute;knit&eacute; desky vyrobit mechanickou ruku pro z&aacute;kladn&iacute; &scaron;kolu</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/CS/CNECT-2018-00222-00-14-CS-TRA-00.DOCX">Aktivita 2 - Jak vyrobit mechanickou nebo robotickou ruku pro niž&scaron;&iacute; středn&iacute; &scaron;kolu</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/CS/CNECT-2018-00222-00-15-CS-TRA-00.DOCX">Aktivita 3 - Jak vyrobit mechanickou nebo robotickou ruku pro vy&scaron;&scaron;&iacute; středn&iacute; &scaron;kolu</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
