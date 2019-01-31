@@ -16,7 +16,7 @@
                     <hr>
 
 
-                    <p>La edici&oacute;n de 2018 de la Semana de la Programaci&oacute;n de la Uni&oacute;n Europea (UE) se celebrar&aacute; entre el <strong>6 y el 21&nbsp;de octubre</strong>.</p>
+                    <p>La edici&oacute;n de 2019 de la Semana de la Programaci&oacute;n de la Uni&oacute;n Europea (UE) se celebrar&aacute; entre el <strong>5 y el 20&nbsp;de octubre</strong>.</p>
 
                     <p>La Semana de la Programaci&oacute;n de la UE es un movimiento de base que promueve la creatividad, la resoluci&oacute;n de problemas y la colaboraci&oacute;n a trav&eacute;s de la programaci&oacute;n y otras actividades tecnol&oacute;gicas. La idea es impulsar la visibilidad de la programaci&oacute;n y ense&ntilde;ar a j&oacute;venes, adultos y personas mayores a hacer realidad sus ideas mediante la programaci&oacute;n, acercar estas capacidades al gran p&uacute;blico y reunir a personas motivadas para que aprendan juntas.</p>
 
@@ -75,12 +75,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 

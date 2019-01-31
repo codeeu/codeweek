@@ -72,7 +72,7 @@
                             <h4>Kada?</h4>
                         </div>
 
-                        <p>2018&nbsp;m. spalio&nbsp;6&ndash;21&nbsp;d.</p>
+                        <p>2019&nbsp;m. spalio&nbsp;5&ndash;20&nbsp;d.</p>
 
 
                     </div>

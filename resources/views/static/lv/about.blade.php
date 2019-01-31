@@ -16,7 +16,7 @@
                     <hr>
 
 
-                    <p>2018.&nbsp;gadā ES programmē&scaron;anas nedēļa notiks no <strong>6.&nbsp;līdz 21.&nbsp;oktobrim</strong>.</p>
+                    <p>2019.&nbsp;gadā ES programmē&scaron;anas nedēļa notiks no <strong>5.&nbsp;līdz 20.&nbsp;oktobrim</strong>.</p>
 
                     <p>ES programmē&scaron;anas nedēļa ir iedzīvotāju kustība, kas veltīta rado&scaron;umam, problēmu risinā&scaron;anai un sadarbībai, izmantojot programmē&scaron;anu un citas tehnoloģiskas aktivitātes. Pamatideja ir padarīt programmē&scaron;anu populārāku, parādīt jaunie&scaron;iem, pieaugu&scaron;ajiem un vecāka gadagājuma cilvēkiem, kā ar programmē&scaron;anas palīdzību īstenot idejas, kliedēt maldīgus priek&scaron;status par programmē&scaron;anas prasmēm un sapulcināt kopā motivētus cilvēkus, kuri vēlas tās apgūt.</p>
 
@@ -75,12 +75,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 

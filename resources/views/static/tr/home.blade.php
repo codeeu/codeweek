@@ -77,7 +77,7 @@
                             <h4>Ne Zaman?</h4>
                         </div>
 
-                        <p>6-21 Ekim 2018</p>
+                        <p>5-20 Ekim 2019</p>
 
 
                     </div>
