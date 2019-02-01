@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+5_Making_Robotics_Tinkering+_Video+script.docx">Descarregue o gui&atilde;o do v&iacute;deo</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/PT/CNECT-2018-00222-00-20-PT-TRA-00.DOCX">Descarregue o gui&atilde;o do v&iacute;deo</a></p>
 
                     <h2>Est&aacute; pronto para partilhar com os seus alunos o que aprendeu?</h2>
 
                     <p>Selecione um dos planos de aula abaixo e organize uma atividade com seus alunos.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+1_Primary.docx">Atividade 1 &mdash; Como construir uma m&atilde;o mec&acirc;nica num painel duro para o primeiro ciclo do ensino b&aacute;sico</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+2_Lower+Secondary.docx">Atividade 2 &mdash; Como construir uma m&atilde;o mec&acirc;nica ou rob&oacute;tica para o segundo e terceiro ciclos do ensino b&aacute;sico</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+3_+Upper+Secondary.docx">Atividade 3 &mdash; Como construir uma m&atilde;o mec&acirc;nica ou rob&oacute;tica para o ensino secund&aacute;rio</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/PT/CNECT-2018-00222-00-13-PT-TRA-00.DOCX">Atividade 1 &mdash; Como construir uma m&atilde;o mec&acirc;nica num painel duro para o primeiro ciclo do ensino b&aacute;sico</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/PT/CNECT-2018-00222-00-14-PT-TRA-00.DOCX">Atividade 2 &mdash; Como construir uma m&atilde;o mec&acirc;nica ou rob&oacute;tica para o segundo e terceiro ciclos do ensino b&aacute;sico</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/PT/CNECT-2018-00222-00-15-PT-TRA-00.DOCX">Atividade 3 &mdash; Como construir uma m&atilde;o mec&acirc;nica ou rob&oacute;tica para o ensino secund&aacute;rio</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
