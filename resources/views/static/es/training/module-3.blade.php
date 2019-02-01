@@ -24,16 +24,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Video+script.docx">Descargar el guion del v&iacute;deo</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ES/CNECT-2018-00222-00-18-ES-TRA-00.DOCX">Descargar el guion del v&iacute;deo</a></p>
 
                     <h2>¿Est&aacute;s preparado/a para compartir con tus alumnos lo que has aprendido?</h2>
 
                     <p>Selecciona uno de los planes de aprendizaje que figuran a continuaci&oacute;n y organiza una actividad con tus alumnos.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+1_Primary.docx">Actividad 1. Scratch b&aacute;sico para centros de ense&ntilde;anza primaria</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+2_Secondary.docx">Actividad 2. Scratch b&aacute;sico para centros de ense&ntilde;anza secundaria (primer ciclo)</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+3_Upper+Secondary.docx">Actividad 3. Scratch b&aacute;sico para centros de ense&ntilde;anza secundaria</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ES/CNECT-2018-00222-00-07-ES-TRA-00.DOCX">Actividad 1. Scratch b&aacute;sico para centros de ense&ntilde;anza primaria</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ES/CNECT-2018-00222-00-08-ES-TRA-00.DOCX">Actividad 2. Scratch b&aacute;sico para centros de ense&ntilde;anza secundaria (primer ciclo)</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ES/CNECT-2018-00222-00-09-ES-TRA-00.DOCX">Actividad 3. Scratch b&aacute;sico para centros de ense&ntilde;anza secundaria</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
