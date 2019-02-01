@@ -24,16 +24,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/M1zJOfmriGU"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+4_Educational_Games_Scratch+_Video+script.docx">Lataa videon k&auml;sikirjoitus</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/FI/CNECT-2018-00222-00-19-FI-TRA-00.DOCX">Lataa videon k&auml;sikirjoitus</a></p>
 
                     <h2>Oletko valmis jakamaan oppimasi oppilaittesi kanssa?</h2>
 
                     <p>Valitse yksi alla olevista tuntisuunnitelmista ja ryhdy toimeen.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+1_Primary.docx">Toiminta 1 - Kysymyksi&auml; ja vastauksia -peli Scratchill&auml; alakouluissa</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+2_Lower+Secondary.docx">Toiminta 2 - Kysymyksi&auml; ja vastauksia -peli Scratchill&auml; yl&auml;kouluissa</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+3_+Secondary.docx">Toiminta 3 - Kysymyksi&auml; ja vastauksia -peli Scratchill&auml; toisen asteen oppilaitoksissa</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/FI/CNECT-2018-00222-00-10-FI-TRA-00.DOCX">Toiminta 1 - Kysymyksi&auml; ja vastauksia -peli Scratchill&auml; alakouluissa</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/FI/CNECT-2018-00222-00-11-FI-TRA-00.DOCX">Toiminta 2 - Kysymyksi&auml; ja vastauksia -peli Scratchill&auml; yl&auml;kouluissa</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/FI/CNECT-2018-00222-00-12-FI-TRA-00.DOCX">Toiminta 3 - Kysymyksi&auml; ja vastauksia -peli Scratchill&auml; toisen asteen oppilaitoksissa</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
