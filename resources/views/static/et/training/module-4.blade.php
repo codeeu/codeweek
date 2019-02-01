@@ -24,16 +24,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/M1zJOfmriGU"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+4_Educational_Games_Scratch+_Video+script.docx">Laadi alla video skript</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ET/CNECT-2018-00222-00-19-ET-TRA-00.DOCX">Laadi alla video skript</a></p>
 
                     <h2>Kas olete valmis &otilde;pitut oma &otilde;pilastega jagama?</h2>
 
                     <p>Valige altpoolt &uuml;ks tunniplaanidest ja alustage &otilde;ppimist.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+1_Primary.docx">1. tegevus &ndash; Scratchi k&uuml;simuste ja vastuste m&auml;ng algkoolile</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+2_Lower+Secondary.docx">2. tegevus &ndash; Scratchi k&uuml;simuste ja vastuste m&auml;ng p&otilde;hikooli esimesele astmele</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+3_+Secondary.docx">3. tegevus &ndash; Scratchi k&uuml;simuste ja vastuste m&auml;ng p&otilde;hikooli teisele astmele</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ET/CNECT-2018-00222-00-10-ET-TRA-00.DOCX">1. tegevus &ndash; Scratchi k&uuml;simuste ja vastuste m&auml;ng algkoolile</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ET/CNECT-2018-00222-00-11-ET-TRA-00.DOCX">2. tegevus &ndash; Scratchi k&uuml;simuste ja vastuste m&auml;ng p&otilde;hikooli esimesele astmele</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ET/CNECT-2018-00222-00-12-ET-TRA-00.DOCX">3. tegevus &ndash; Scratchi k&uuml;simuste ja vastuste m&auml;ng p&otilde;hikooli teisele astmele</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

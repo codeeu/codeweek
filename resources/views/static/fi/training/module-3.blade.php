@@ -24,16 +24,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Video+script.docx">Lataa videon k&auml;sikirjoitus</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/FI/CNECT-2018-00222-00-18-FI-TRA-00.DOCX">Lataa videon k&auml;sikirjoitus</a></p>
 
                     <h2>Oletko valmis jakamaan oppimasi oppilaittesi kanssa?</h2>
 
                     <p>Valitse yksi alla olevista tuntisuunnitelmista ja ryhdy toimeen.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+1_Primary.docx">Toiminta 1 &ndash; Scratch Basic alakouluihin</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+2_Secondary.docx">Toiminta 2 &ndash; Scratch Basic yl&auml;kouluihin</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+3_Upper+Secondary.docx">Toiminta 3 &ndash; Scratch Basic toiseen asteen oppilaitoksiin</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/FI/CNECT-2018-00222-00-07-FI-TRA-00.DOCX">Toiminta 1 &ndash; Scratch Basic alakouluihin</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/FI/CNECT-2018-00222-00-08-FI-TRA-00.DOCX">Toiminta 2 &ndash; Scratch Basic yl&auml;kouluihin</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/FI/CNECT-2018-00222-00-09-FI-TRA-00.DOCX">Toiminta 3 &ndash; Scratch Basic toiseen asteen oppilaitoksiin</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
