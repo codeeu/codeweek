@@ -24,16 +24,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/M1zJOfmriGU"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+4_Educational_Games_Scratch+_Video+script.docx">Het videoscript downloaden</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/NL/CNECT-2018-00222-00-19-NL-TRA-00.DOCX">Het videoscript downloaden</a></p>
 
                     <h2>Ben je er klaar voor om wat je hebt geleerd te delen met je leerlingen?</h2>
 
                     <p>Kies een van de onderstaande lesplannen en organiseer een activiteit met je leerlingen.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+1_Primary.docx">Activiteit 1 &ndash; Vraag- en antwoordspel met Scratch voor het basisonderwijs</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+2_Lower+Secondary.docx">Activiteit 2 &ndash; Vraag- en antwoordspel met Scratch voor de onderbouw van het middelbaar onderwijs</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+3_+Secondary.docx">Activiteit 3 &ndash; Vraag- en antwoordspel met Scratch voor het middelbaar onderwijs</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/NL/CNECT-2018-00222-00-10-NL-TRA-00.DOCX">Activiteit 1 &ndash; Vraag- en antwoordspel met Scratch voor het basisonderwijs</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/NL/CNECT-2018-00222-00-11-NL-TRA-00.DOCX">Activiteit 2 &ndash; Vraag- en antwoordspel met Scratch voor de onderbouw van het middelbaar onderwijs</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/NL/CNECT-2018-00222-00-12-NL-TRA-00.DOCX">Activiteit 3 &ndash; Vraag- en antwoordspel met Scratch voor het middelbaar onderwijs</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
