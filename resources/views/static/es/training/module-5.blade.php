@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+5_Making_Robotics_Tinkering+_Video+script.docx">Descargar el guion del v&iacute;deo</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ES/CNECT-2018-00222-00-20-ES-TRA-00.DOCX">Descargar el guion del v&iacute;deo</a></p>
 
                     <h2>¿Est&aacute;s preparado/a para compartir con tus alumnos lo que has aprendido?</h2>
 
                     <p>Selecciona uno de los planes de aprendizaje que figuran a continuaci&oacute;n y organiza una actividad con tus alumnos.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+1_Primary.docx">Actividad 1. C&oacute;mo hacer una mano mec&aacute;nica a partir de un tablero duro, para centros de ense&ntilde;anza primaria</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+2_Lower+Secondary.docx">Actividad 2. C&oacute;mo hacer una mano mec&aacute;nica o rob&oacute;tica, para centros de ense&ntilde;anza secundaria (primer ciclo)</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+3_+Upper+Secondary.docx">Actividad 3. C&oacute;mo hacer una mano mec&aacute;nica o rob&oacute;tica, para centros de ense&ntilde;anza secundaria (segundo ciclo)</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ES/CNECT-2018-00222-00-13-ES-TRA-00.DOCX">Actividad 1. C&oacute;mo hacer una mano mec&aacute;nica a partir de un tablero duro, para centros de ense&ntilde;anza primaria</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ES/CNECT-2018-00222-00-14-ES-TRA-00.DOCX">Actividad 2. C&oacute;mo hacer una mano mec&aacute;nica o rob&oacute;tica, para centros de ense&ntilde;anza secundaria (primer ciclo)</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ES/CNECT-2018-00222-00-15-ES-TRA-00.DOCX">Actividad 3. C&oacute;mo hacer una mano mec&aacute;nica o rob&oacute;tica, para centros de ense&ntilde;anza secundaria (segundo ciclo)</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
