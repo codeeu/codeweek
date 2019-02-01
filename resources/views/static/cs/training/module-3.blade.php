@@ -24,16 +24,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Video+script.docx">St&aacute;hnout sc&eacute;n&aacute;ř videa</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/CS/CNECT-2018-00222-00-18-CS-TRA-00.DOCX">St&aacute;hnout sc&eacute;n&aacute;ř videa</a></p>
 
                     <h2>Jste připraveni podělit se s ž&aacute;ky o to, co jste se dozvěděli?</h2>
 
                     <p>Vyberte si jeden z n&iacute;že uveden&yacute;ch v&yacute;ukov&yacute;ch pl&aacute;nů a zorganizujte akci se sv&yacute;mi ž&aacute;ky.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+1_Primary.docx">Aktivita 1 &ndash; Z&aacute;klady jazyka Scratch pro z&aacute;kladn&iacute; &scaron;kolu</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+2_Secondary.docx">Aktivita 2 &ndash; Z&aacute;klady jazyka Scratch pro niž&scaron;&iacute; středn&iacute; &scaron;kolu</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+3_Upper+Secondary.docx">Aktivita 3 &ndash; Z&aacute;klady jazyka Scratch pro středn&iacute; &scaron;kolu</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/CS/CNECT-2018-00222-00-07-CS-TRA-00.DOCX">Aktivita 1 &ndash; Z&aacute;klady jazyka Scratch pro z&aacute;kladn&iacute; &scaron;kolu</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/CS/CNECT-2018-00222-00-08-CS-TRA-00.DOCX">Aktivita 2 &ndash; Z&aacute;klady jazyka Scratch pro niž&scaron;&iacute; středn&iacute; &scaron;kolu</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/CS/CNECT-2018-00222-00-09-CS-TRA-00.DOCX">Aktivita 3 &ndash; Z&aacute;klady jazyka Scratch pro středn&iacute; &scaron;kolu</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

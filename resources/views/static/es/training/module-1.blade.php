@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/18N1CaQJ0GI "></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Video_script.docx">Descargar el guion del v&iacute;deo</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ES/CNECT-2018-00222-00-17-ES-TRA-00.DOCX">Descargar el guion del v&iacute;deo</a></p>
 
                     <h2>¿Est&aacute;s preparado/a para compartir con tus alumnos lo que has aprendido?</h2>
 
                     <p>Selecciona uno de los planes de aprendizaje que figuran a continuaci&oacute;n y organiza una actividad con tus alumnos.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+1_Primary.docx">Actividad 1. CodyRoby para centros de ense&ntilde;anza primaria</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+2_Lower+Second....docx">Actividad 2. CodyRoby para centros de ense&ntilde;anza secundaria (primer ciclo)</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson+plan+3_Secondary.docx">Actividad 3. CodyRoby para centros de ense&ntilde;anza secundaria</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ES/CNECT-2018-00222-00-00-ES-TRA-00.DOCX">Actividad 1. CodyRoby para centros de ense&ntilde;anza primaria</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ES/CNECT-2018-00222-00-02-ES-TRA-00.DOCX">Actividad 2. CodyRoby para centros de ense&ntilde;anza secundaria (primer ciclo)</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ES/CNECT-2018-00222-00-03-ES-TRA-00.DOCX">Actividad 3. CodyRoby para centros de ense&ntilde;anza secundaria</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

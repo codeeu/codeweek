@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/18N1CaQJ0GI "></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Video_script.docx">Lataa videon k&auml;sikirjoitus</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/FI/CNECT-2018-00222-00-17-FI-TRA-00.DOCX">Lataa videon k&auml;sikirjoitus</a></p>
 
                     <h2>Oletko valmis jakamaan oppimasi oppilaittesi kanssa?</h2>
 
                     <p>Valitse yksi alla olevista tuntisuunnitelmista ja ryhdy toimeen.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+1_Primary.docx">Toiminta 1 &ndash; CodyRoby alakouluihin</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+2_Lower+Second....docx">Toiminta 2 &ndash; CodyRoby yl&auml;kouluihin</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson+plan+3_Secondary.docx">Toiminta 3 &ndash; CodyRoby toiseen asteen oppilaitoksiin</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/FI/CNECT-2018-00222-00-00-FI-TRA-00.DOCX">Toiminta 1 &ndash; CodyRoby alakouluihin</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/FI/CNECT-2018-00222-00-02-FI-TRA-00.DOCX">Toiminta 2 &ndash; CodyRoby yl&auml;kouluihin</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/FI/CNECT-2018-00222-00-03-FI-TRA-00.DOCX">Toiminta 3 &ndash; CodyRoby toiseen asteen oppilaitoksiin</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

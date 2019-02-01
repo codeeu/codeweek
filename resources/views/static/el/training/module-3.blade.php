@@ -24,16 +24,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Video+script.docx">Κατεβάστε τα λόγια του βίντεο σε μορφή κειμένου</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EL/CNECT-2018-00222-00-18-EL-TRA-00.DOCX">Κατεβάστε τα λόγια του βίντεο σε μορφή κειμένου</a></p>
 
                     <h2>Έτοιμοι να μεταδώσετε όσα μάθατε στους μαθητές σας;</h2>
 
                     <p>Επιλέξτε ένα από τα προγράμματα διδασκαλίας παρακάτω και διοργανώστε μια δραστηριότητα με τους μαθητές σας.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+1_Primary.docx">Δραστηριότητα 1 &ndash; Τα βασικά της Scratch για το Δημοτικό</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+2_Secondary.docx">Δραστηριότητα 2 &ndash; Τα βασικά της Scratch για το Γυμνάσιο</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+3_Upper+Secondary.docx">Δραστηριότητα 3 &ndash; Τα βασικά της Scratch για το Λύκειο</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EL/CNECT-2018-00222-00-07-EL-TRA-00.DOCX">Δραστηριότητα 1 &ndash; Τα βασικά της Scratch για το Δημοτικό</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EL/CNECT-2018-00222-00-08-EL-TRA-00.DOCX">Δραστηριότητα 2 &ndash; Τα βασικά της Scratch για το Γυμνάσιο</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EL/CNECT-2018-00222-00-09-EL-TRA-00.DOCX">Δραστηριότητα 3 &ndash; Τα βασικά της Scratch για το Λύκειο</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

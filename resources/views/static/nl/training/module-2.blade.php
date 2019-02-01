@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_+Learning+Bit+2_Computational_Thinking+_Video+script.docx">Het videoscript downloaden</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/NL/CNECT-2018-00222-00-16-NL-TRA-00.DOCX">Het videoscript downloaden</a></p>
 
                     <h2>Ben je er klaar voor om wat je hebt geleerd te delen met je leerlingen?</h2>
 
                     <p>Kies een van de onderstaande lesplannen en organiseer een activiteit met je leerlingen.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+1_Primary.docx">Activiteit 1 &ndash; Leren wiskundig redeneren voor het basisonderwijs</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+2_Secondary.docx">Activiteit 2 &ndash; Kennismaken met algoritmen voor de onderbouw van het middelbaar onderwijs</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+3_Upper+Secondary.docx">Activiteit 3 &ndash; Algoritmen voor de bovenbouw van het middelbaar onderwijs</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/NL/CNECT-2018-00222-00-04-NL-TRA-00.DOCX">Activiteit 1 &ndash; Leren wiskundig redeneren voor het basisonderwijs</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/NL/CNECT-2018-00222-00-05-NL-TRA-00.DOCX">Activiteit 2 &ndash; Kennismaken met algoritmen voor de onderbouw van het middelbaar onderwijs</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/NL/CNECT-2018-00222-00-06-NL-TRA-00.DOCX">Activiteit 3 &ndash; Algoritmen voor de bovenbouw van het middelbaar onderwijs</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
