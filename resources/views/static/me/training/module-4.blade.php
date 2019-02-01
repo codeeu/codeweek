@@ -24,16 +24,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/M1zJOfmriGU"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+4_Educational_Games_Scratch+_Video+script.docx">Preuzmite video zapis.</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ME/CNECT-2018-00222-00-19-ME-TRA-00.DOC">Preuzmite video zapis.</a></p>
 
                     <h2>Da li ste spremni podijeliti sa svojim učenicima ono &scaron;to ste naučili?</h2>
 
                     <p>Odaberite jedan plan časa i organizujte aktivnost sa va&scaron;im učenicima.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+1_Primary.docx">Aktivnost 1 &ndash; Igra pitanja i odgovora u Skraču za osnovnu &scaron;kolu </a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+2_Lower+Secondary.docx">Aktivnost 1 &ndash; Igra pitanja i odgovora u Skraču za nižu srednju &scaron;kolu</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+3_+Secondary.docx">Aktivnost 3 &ndash; Igra pitanja i odgovora u Skraču za srednju &scaron;kolu</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ME/CNECT-2018-00222-00-10-ME-TRA-00.DOC">Aktivnost 1 &ndash; Igra pitanja i odgovora u Skraču za osnovnu &scaron;kolu </a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ME/CNECT-2018-00222-00-11-ME-TRA-00.DOC">Aktivnost 1 &ndash; Igra pitanja i odgovora u Skraču za nižu srednju &scaron;kolu</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ME/CNECT-2018-00222-00-12-ME-TRA-00.DOC">Aktivnost 3 &ndash; Igra pitanja i odgovora u Skraču za srednju &scaron;kolu</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

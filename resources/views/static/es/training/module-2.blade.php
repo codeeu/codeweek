@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_+Learning+Bit+2_Computational_Thinking+_Video+script.docx">Descargar el guion del v&iacute;deo</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ES/CNECT-2018-00222-00-16-ES-TRA-00.DOCX">Descargar el guion del v&iacute;deo</a></p>
 
                     <h2>¿Est&aacute;s preparado/a para compartir con tus alumnos lo que has aprendido?</h2>
 
                     <p>Selecciona uno de los planes de aprendizaje que figuran a continuaci&oacute;n y organiza una actividad con tus alumnos.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+1_Primary.docx">Actividad 1. Desarrollo del razonamiento matem&aacute;tico para centros de ense&ntilde;anza primaria</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+2_Secondary.docx">Actividad 2. Introducci&oacute;n a los algoritmos para centros de ense&ntilde;anza secundaria (primer ciclo)</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+3_Upper+Secondary.docx">Actividad 3. Algoritmos para centros de ense&ntilde;anza secundaria (segundo ciclo)</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ES/CNECT-2018-00222-00-04-ES-TRA-00.DOCX">Actividad 1. Desarrollo del razonamiento matem&aacute;tico para centros de ense&ntilde;anza primaria</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ES/CNECT-2018-00222-00-05-ES-TRA-00.DOCX">Actividad 2. Introducci&oacute;n a los algoritmos para centros de ense&ntilde;anza secundaria (primer ciclo)</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ES/CNECT-2018-00222-00-06-ES-TRA-00.DOCX">Actividad 3. Algoritmos para centros de ense&ntilde;anza secundaria (segundo ciclo)</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+5_Making_Robotics_Tinkering+_Video+script.docx">Het videoscript downloaden</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/NL/CNECT-2018-00222-00-20-NL-TRA-00.DOCX">Het videoscript downloaden</a></p>
 
                     <h2>Ben je er klaar voor om wat je hebt geleerd te delen met je leerlingen?</h2>
 
                     <p>Kies een van de onderstaande lesplannen en organiseer een activiteit met je leerlingen.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+1_Primary.docx">Activiteit 1 &ndash; Een mechanische hand van hardboard maken voor het basisonderwijs</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+2_Lower+Secondary.docx">Activiteit 2 &ndash; Een mechanische hand of robothand maken voor de onderbouw van het middelbaar onderwijs</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+3_+Upper+Secondary.docx">Activiteit 3 &ndash; Een mechanische hand of robothand maken voor de bovenbouw van het middelbaar onderwijs</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/NL/CNECT-2018-00222-00-13-NL-TRA-00.DOCX">Activiteit 1 &ndash; Een mechanische hand van hardboard maken voor het basisonderwijs</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/NL/CNECT-2018-00222-00-14-NL-TRA-00.DOCX">Activiteit 2 &ndash; Een mechanische hand of robothand maken voor de onderbouw van het middelbaar onderwijs</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/NL/CNECT-2018-00222-00-15-NL-TRA-00.DOCX">Activiteit 3 &ndash; Een mechanische hand of robothand maken voor de bovenbouw van het middelbaar onderwijs</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
