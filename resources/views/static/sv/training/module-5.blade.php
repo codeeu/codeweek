@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+5_Making_Robotics_Tinkering+_Video+script.docx">H&auml;mta videoskript</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SV/CNECT-2018-00222-00-20-SV-TRA-00.DOCX">H&auml;mta videoskript</a></p>
 
                     <h2>Vill du dela med dig av det du har l&auml;rt dig till dina elever?</h2>
 
                     <p>V&auml;lj en lektionsplan nedan och organisera en aktivitet med dina elever.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+1_Primary.docx">Aktivitet 1 &ndash; Tillverka en mekanisk hand av kartong f&ouml;r grundskolan</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+2_Lower+Secondary.docx">Aktivitet 2 &ndash; Tillverka en mekanisk hand eller robothand f&ouml;r h&ouml;gstadiet och gymnasiet</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+3_+Upper+Secondary.docx">Aktivitet 3 &ndash; Tillverka en mekanisk hand eller robothand f&ouml;r gymnasiet</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SV/CNECT-2018-00222-00-13-SV-TRA-00.DOCX">Aktivitet 1 &ndash; Tillverka en mekanisk hand av kartong f&ouml;r grundskolan</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SV/CNECT-2018-00222-00-14-SV-TRA-00.DOCX">Aktivitet 2 &ndash; Tillverka en mekanisk hand eller robothand f&ouml;r h&ouml;gstadiet och gymnasiet</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SV/CNECT-2018-00222-00-15-SV-TRA-00.DOCX">Aktivitet 3 &ndash; Tillverka en mekanisk hand eller robothand f&ouml;r gymnasiet</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

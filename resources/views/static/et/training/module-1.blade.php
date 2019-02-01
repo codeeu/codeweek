@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/18N1CaQJ0GI "></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Video_script.docx">Laadi alla video skript</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ET/CNECT-2018-00222-00-17-ET-TRA-00.DOCX">Laadi alla video skript</a></p>
 
                     <h2>Kas olete valmis &otilde;pitut oma &otilde;pilastega jagama?</h2>
 
                     <p>Valige altpoolt m&otilde;ni tunnikava ja alustage &otilde;ppimist.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+1_Primary.docx">1. tegevus &ndash; CodyRoby algkoolile</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+2_Lower+Second....docx">2. tegevus &ndash; CodyRoby p&otilde;hikooli esimesele astmele</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson+plan+3_Secondary.docx">3. tegevus &ndash; CodyRoby p&otilde;hikooli teisele astmele</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ET/CNECT-2018-00222-00-00-ET-TRA-00.DOCX">1. tegevus &ndash; CodyRoby algkoolile</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ET/CNECT-2018-00222-00-02-ET-TRA-00.DOCX">2. tegevus &ndash; CodyRoby p&otilde;hikooli esimesele astmele</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ET/CNECT-2018-00222-00-03-ET-TRA-00.DOCX">3. tegevus &ndash; CodyRoby p&otilde;hikooli teisele astmele</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

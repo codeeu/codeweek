@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_+Learning+Bit+2_Computational_Thinking+_Video+script.docx">H&auml;mta videoskript</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SV/CNECT-2018-00222-00-16-SV-TRA-00.DOCX">H&auml;mta videoskript</a></p>
 
                     <h2>Vill du dela med dig av det du har l&auml;rt dig till dina elever?</h2>
 
                     <p>V&auml;lj en lektionsplan nedan och organisera en aktivitet med dina elever.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+1_Primary.docx">Aktivitet 1 &ndash; Utveckla matematiskt t&auml;nkande f&ouml;r grundskolan</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+2_Secondary.docx">Aktivitet 2 &ndash; Introduktion till algoritmer f&ouml;r h&ouml;gstadiet och gymnasiet</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+3_Upper+Secondary.docx">Aktivitet 3 &ndash; Algoritmer f&ouml;r gymnasiet</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SV/CNECT-2018-00222-00-04-SV-TRA-00.DOCX">Aktivitet 1 &ndash; Utveckla matematiskt t&auml;nkande f&ouml;r grundskolan</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SV/CNECT-2018-00222-00-05-SV-TRA-00.DOCX">Aktivitet 2 &ndash; Introduktion till algoritmer f&ouml;r h&ouml;gstadiet och gymnasiet</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SV/CNECT-2018-00222-00-06-SV-TRA-00.DOCX">Aktivitet 3 &ndash; Algoritmer f&ouml;r gymnasiet</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

@@ -24,16 +24,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/M1zJOfmriGU"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+4_Educational_Games_Scratch+_Video+script.docx">St&aacute;hnout sc&eacute;n&aacute;ř videa</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/CS/CNECT-2018-00222-00-19-CS-TRA-00.DOCX">St&aacute;hnout sc&eacute;n&aacute;ř videa</a></p>
 
                     <h2>Jste připraveni podělit se s ž&aacute;ky o to, co jste se dozvěděli?</h2>
 
                     <p>Vyberte si jeden z n&iacute;že uveden&yacute;ch v&yacute;ukov&yacute;ch pl&aacute;nů a zorganizujte akci se sv&yacute;mi ž&aacute;ky.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+1_Primary.docx">Aktivita 1 - Hra s ot&aacute;zkami a odpověďmi pro z&aacute;kladn&iacute; &scaron;kolu</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+2_Lower+Secondary.docx">Aktivita 2 - Hra s ot&aacute;zkami a odpověďmi pro niž&scaron;&iacute; středn&iacute; &scaron;kolu</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+3_+Secondary.docx">Aktivita 3 - Hra s ot&aacute;zkami a odpověďmi pro středn&iacute; &scaron;kolu</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/CS/CNECT-2018-00222-00-10-CS-TRA-00.DOCX">Aktivita 1 - Hra s ot&aacute;zkami a odpověďmi pro z&aacute;kladn&iacute; &scaron;kolu</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/CS/CNECT-2018-00222-00-11-CS-TRA-00.DOCX">Aktivita 2 - Hra s ot&aacute;zkami a odpověďmi pro niž&scaron;&iacute; středn&iacute; &scaron;kolu</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/CS/CNECT-2018-00222-00-12-CS-TRA-00.DOCX">Aktivita 3 - Hra s ot&aacute;zkami a odpověďmi pro středn&iacute; &scaron;kolu</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
