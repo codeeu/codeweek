@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_+Learning+Bit+2_Computational_Thinking+_Video+script.docx">Преземете ја видеоскриптата</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/MK/CNECT-2018-00222-00-16-MK-TRA-00.docx">Преземете ја видеоскриптата</a></p>
 
                     <h2>Подготвени сте да го споделите она што го научивте со учениците?</h2>
 
                     <p>Изберете еден од плановите за лекција подолу и организирајте активност со учениците.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+1_Primary.docx">Активност - Развивање математичко размислување за основно училиште</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+2_Secondary.docx">Активност 2 - Запознавање со алгоритми за почетни години во средно училиште</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+3_Upper+Secondary.docx">Активност 3 - Алгоритми за завршни години во средно училиште</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/MK/CNECT-2018-00222-00-04-MK-TRA-00.docx">Активност - Развивање математичко размислување за основно училиште</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/MK/CNECT-2018-00222-00-05-MK-TRA-00.docx">Активност 2 - Запознавање со алгоритми за почетни години во средно училиште</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/MK/CNECT-2018-00222-00-06-MK-TRA-00.docx">Активност 3 - Алгоритми за завршни години во средно училиште</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

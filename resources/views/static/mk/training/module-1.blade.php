@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/18N1CaQJ0GI "></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Video_script.docx">Преземете ја видеоскриптата</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/MK/CNECT-2018-00222-00-17-MK-TRA-00.docx">Преземете ја видеоскриптата</a></p>
 
                     <h2>Подготвени сте да го споделите она што го научивте со учениците?</h2>
 
                     <p>Изберете еден од плановите за лекција подолу и организирајте активност со учениците.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+1_Primary.docx">Активност 1 - CodyRoby за основно училиште</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+2_Lower+Second....docx">Активност 2 - CodyRoby за почетни години на средно училиште</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson+plan+3_Secondary.docx">Активност 3 - CodyRoby за средно училиште</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/MK/CNECT-2018-00222-00-00-MK-TRA-00.docx">Активност 1 - CodyRoby за основно училиште</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/MK/CNECT-2018-00222-00-02-MK-TRA-00.docx">Активност 2 - CodyRoby за почетни години на средно училиште</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/MK/CNECT-2018-00222-00-03-MK-TRA-00.docx">Активност 3 - CodyRoby за средно училиште</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
