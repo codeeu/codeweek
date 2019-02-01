@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_+Learning+Bit+2_Computational_Thinking+_Video+script.docx">Preuzmite video zapis.</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ME/CNECT-2018-00222-00-16-ME-TRA-00.DOC">Preuzmite video zapis.</a></p>
 
                     <h2>Da li ste spremni podijeliti sa svojim učenicima ono &scaron;to ste naučili?</h2>
 
                     <p>Odaberite jedan plan časa i organizujte aktivnost sa va&scaron;im učenicima.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+1_Primary.docx">Akivnost 1 &ndash; Razvijanje matematičkog razmi&scaron;ljanja za osnovnu &scaron;kolu</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+2_Secondary.docx">Aktivnost 2 &ndash; Upoznavanje sa algoritmima za nižu srednju &scaron;kolu</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+3_Upper+Secondary.docx">Aktivnost 3 &ndash; Algoritmi za vi&scaron;u srednju &scaron;kolu</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ME/CNECT-2018-00222-00-04-ME-TRA-00.DOC">Akivnost 1 &ndash; Razvijanje matematičkog razmi&scaron;ljanja za osnovnu &scaron;kolu</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ME/CNECT-2018-00222-00-05-ME-TRA-00.DOC">Aktivnost 2 &ndash; Upoznavanje sa algoritmima za nižu srednju &scaron;kolu</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ME/CNECT-2018-00222-00-06-ME-TRA-00.DOC">Aktivnost 3 &ndash; Algoritmi za vi&scaron;u srednju &scaron;kolu</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
