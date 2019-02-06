@@ -3,21 +3,21 @@
     <div>
 
 
-        <div class="container mx-auto h-full flex-row bg-blue-light p-8">
+        <div class="container mx-auto h-full flex-row bg-blue-light p-4">
             <div class="flex justify-between w-full">
-                <input type="text" class="multiselect w-full pl-8 pr-8 mb-4" @input="debounceSearch"
-                       v-model="searchInput">
+                <input type="text" class="multiselect w-full pl-8 pr-8 " @input="debounceSearch"
+                       v-model="searchInput" placeholder="Search a resource ...">
             </div>
 
-            <div class="flex justify-between">
+
+
+            <div class="flex justify-between mt-4" v-show="showFilters">
 
                 <multiselect v-model="selectedTypes" :options="types" :multiple="true" :close-on-select="false"
                              :clear-on-select="false" :preserve-search="true" placeholder="Types" label="name"
-                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mb-4 mr-8">
-                    <template slot="selection" slot-scope="{ values, search, isOpen }"><span
-                            class="multiselect__single"
-                            v-if="values.length &amp;&amp; !isOpen">{{ values.length }} types selected</span>
-                    </template>
+                             track-by="name" :preselect-first="false" @input="onSubmit()"
+                             class="mb-4 mr-8">
+                    <pre class="language-json"><code>{{ selectedTypes  }}</code></pre>
                 </multiselect>
 
 
@@ -48,7 +48,7 @@
                     </template>
                 </multiselect>
             </div>
-            <div class="flex justify-between">
+            <div class="flex justify-between" v-show="showFilters">
 
 
                 <multiselect v-model="selectedCategories" :options="categories" :multiple="true"
@@ -88,6 +88,7 @@
 
 
             </div>
+            <span @click="toggleFilters()" class="cursor-pointer text-white text-sm">{{button.text}}</span>
         </div>
 
 
@@ -134,14 +135,27 @@
                 selectedSubjects: [],
                 selectedTypes: [],
                 isOpen: false,
+                showFilters: false,
                 errors: {},
                 pagination: {
                     'current_page': 1
                 },
-                resources: []
+                resources: [],
+                button: {
+                    text: 'Show Filters >>>'
+                },
             };
         },
         methods: {
+            toggleFilters(){
+                this.showFilters = !this.showFilters;
+                if (!this.showFilters) {
+                    this.button.text = "Show Filters >>>"
+                } else {
+
+                    this.button.text = "Hide Filters <<<"
+                }
+            },
             scrollToTop() {
                 window.scrollTo(0,0);
             },
@@ -187,6 +201,3 @@
 
 <style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
 
-<style scoped>
-
-</style>

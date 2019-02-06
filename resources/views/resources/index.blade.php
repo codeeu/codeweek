@@ -6,7 +6,7 @@
         <div class="container resources-container">
 
             <div class="flex flex-col justify-center text-center w-full uppercase">
-                <h1>Resources</h1>
+                {{--<h1>Resources</h1>--}}
             </div>
 
             <resource-form
