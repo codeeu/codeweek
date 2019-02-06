@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+5_Making_Robotics_Tinkering+_Video+script.docx">Scarica lo script video</a></p>
+                    {{--<p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/IT/CNECT-2018-00222-00-20-IT-TRA-00.DOCX">Scarica lo script video</a></p>--}}
 
                     <h2>Pronto a condividere ci&ograve; che hai imparato con i tuoi studenti?</h2>
 
                     <p>Scegli uno dei piani di lezione qui sotto e organizza un&rsquo;attivit&agrave; con i tuoi studenti.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+1_Primary.docx">Attivit&agrave; 1 - Come realizzare una mano meccanica, su pannello duro, per la scuola primaria</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+2_Lower+Secondary.docx">Attivit&agrave; 2 - Come realizzare una mano meccanica o robotica per la scuola secondaria di primo grado</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+3_+Upper+Secondary.docx">Attivit&agrave; 3 - Come realizzare una mano meccanica o robotica per la scuola secondaria di secondo grado</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/IT/CNECT-2018-00222-00-13-IT-TRA-00.DOCX">Attivit&agrave; 1 - Come realizzare una mano meccanica, su pannello duro, per la scuola primaria</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/IT/CNECT-2018-00222-00-14-IT-TRA-00.DOCX">Attivit&agrave; 2 - Come realizzare una mano meccanica o robotica per la scuola secondaria di primo grado</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/IT/CNECT-2018-00222-00-15-IT-TRA-00.DOCX">Attivit&agrave; 3 - Come realizzare una mano meccanica o robotica per la scuola secondaria di secondo grado</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
