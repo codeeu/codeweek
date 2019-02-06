@@ -13000,10 +13000,10 @@ textarea.border-form-control {
 	#top-language .name, #top-login .name{
 		display: none;
 	}
-	#top-login a, #top-login ul li a, #top-language ul li a, #twitter-feed ul li a {
+	#top-login a, #top-login ul li a, #top-language ul li a, #twitter-feed ul li a, #facebook-feed ul li a {
 		padding: 0 5px;
 	}
-	#top-login ul li a i, #top-language ul li a i, #twitter-feed ul li a i{
+	#top-login ul li a i, #top-language ul li a i, #twitter-feed ul li a i, #facebook-feed ul li a i{
 		font-size:14px;
 	}
 	#primary-menu ul li a{
@@ -13019,10 +13019,10 @@ textarea.border-form-control {
 	#top-language .name, #top-login .name{
 		display: none;
 	}
-	#top-login a, #top-login ul li a, #top-language ul li a, #twitter-feed ul li a {
+	#top-login a, #top-login ul li a, #top-language ul li a, #twitter-feed ul li a, #facebook-feed ul li a {
 		padding: 0 5px;
 	}
-	#top-login ul li a i, #top-language ul li a i, #twitter-feed ul li a i {
+	#top-login ul li a i, #top-language ul li a i, #twitter-feed ul li a i, #facebook-feed ul li a i {
 		font-size:14px;
 	}
 	#primary-menu ul li a{
@@ -13038,7 +13038,10 @@ textarea.border-form-control {
 	#top-language .name, #top-login .name{
 		display: block;
 	}
-	#top-login a, #top-login ul li a i, #top-language ul li a i, #twitter-feed ul li a i{
+	#twitter-feed ul li a, #facebook-feed ul li a{
+		width:40px;
+	}
+	#top-login a, #top-login ul li a i, #top-language ul li a i, #twitter-feed ul li a i, #facebook-feed ul li a i{
 		font-size:18px;
 	}
 	#primary-menu ul li a{
@@ -13049,7 +13052,7 @@ textarea.border-form-control {
 		font-size:12px;
 	}
 }
-#top-language, #top-login, #twitter-feed {
+#top-language, #top-login, #twitter-feed, #facebook-feed {
 	float: right;
 	display: flex;
 	flex-direction: row;
@@ -13067,7 +13070,9 @@ textarea.border-form-control {
 #top-login .nav.navbar .nav-item,
 #top-language .nav.navbar .nav-item,
 #twitter-feed .nav.navbar,
-#twitter-feed .nav.navbar .nav-item{
+#twitter-feed .nav.navbar .nav-item,
+#facebook-feed .nav.navbar,
+#facebook-feed .nav.navbar .nav-item{
 	height: 60px;
 }
 
@@ -13182,7 +13187,7 @@ textarea.border-form-control {
 	width: 100%;
 }
 
-#twitter-feed{
+#twitter-feed, #facebook-feed{
 	float:right;
 	height:60px;
 }

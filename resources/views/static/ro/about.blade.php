@@ -16,7 +16,7 @@
                     <hr>
 
 
-                    <p>&Icirc;n 2018, Săptăm&acirc;na UE a programării va avea loc &icirc;ntre <strong>6 și 21 octombrie</strong>.</p>
+                    <p>&Icirc;n 2019, Săptăm&acirc;na UE a programării va avea loc &icirc;ntre <strong>5 și 20 octombrie</strong>.</p>
 
                     <p>Săptăm&acirc;na UE a programării este o mișcare de bază care celebrează creativitatea, rezolvarea de probleme și colaborarea prin programare și alte activități tehnologice. Ideea este de a face programarea mai vizibilă, de a le arăta tinerilor, adulților și v&acirc;rstnicilor cum &icirc;și pot aduce ideile la viață prin programare, de a demistifica aceste aptitudini și de a aduce oamenii motivați &icirc;mpreună, pentru a &icirc;nvăța.</p>
 
@@ -75,12 +75,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 

@@ -72,7 +72,7 @@
                             <h4>Kedy?</h4>
                         </div>
 
-                        <p>6.&nbsp;&ndash; 21.&nbsp;okt&oacute;bra 2018</p>
+                        <p>5.&nbsp;&ndash; 20.&nbsp;okt&oacute;bra 2019</p>
 
 
                     </div>

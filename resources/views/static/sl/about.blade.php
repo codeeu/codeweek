@@ -16,7 +16,7 @@
                     <hr>
 
 
-                    <p>Leto&scaron;nji evropski teden programiranja bo potekal od <strong>6. do 21.&nbsp;oktobra</strong>&nbsp;2018.</p>
+                    <p>Leto&scaron;nji evropski teden programiranja bo potekal od <strong>5. do 20.&nbsp;oktobra</strong>&nbsp;2019.</p>
 
                     <p>Evropski teden programiranja je množično gibanje, ki slavi ustvarjalnost, re&scaron;evanje težav in sodelovanje prek programiranja in drugih tehnolo&scaron;kih dejavnosti. Njegov namen je povečati prepoznavnost programiranja ter mladim, odraslim in starej&scaron;im pokazati, kako uresničiti zamisli s programiranjem, pojasniti ta znanja in spretnosti ter združiti motivirane ljudi v učenju.</p>
 
@@ -75,12 +75,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 

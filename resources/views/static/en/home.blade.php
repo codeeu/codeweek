@@ -98,7 +98,7 @@
                         </div>
 
                         <p>
-                            6-21 October 2018
+                            5-20 October 2019
                         </p>
 
 

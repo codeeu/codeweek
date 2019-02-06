@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+5_Making_Robotics_Tinkering+_Video+script.docx">Κατεβάστε τα λόγια του βίντεο σε μορφή κειμένου</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EL/CNECT-2018-00222-00-20-EL-TRA-00.DOCX">Κατεβάστε τα λόγια του βίντεο σε μορφή κειμένου</a></p>
 
                     <h2>Έτοιμοι να μεταδώσετε όσα μάθατε στους μαθητές σας;</h2>
 
                     <p>Επιλέξτε ένα από τα προγράμματα διδασκαλίας παρακάτω και διοργανώστε μια δραστηριότητα με τους μαθητές σας.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+1_Primary.docx">Δραστηριότητα 1 - Πώς να κατασκευάσετε ένα μηχανικό χέρι από χαρτόνι στο Δημοτικό</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+2_Lower+Secondary.docx">Δραστηριότητα 2 - Πώς να κατασκευάσετε ένα μηχανικό ή ρομποτικό χέρι στο Γυμνάσιο</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+3_+Upper+Secondary.docx">Δραστηριότητα 3 - Πώς να κατασκευάσετε ένα μηχανικό ή ρομποτικό χέρι στο Λύκειο</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EL/CNECT-2018-00222-00-13-EL-TRA-00.DOCX">Δραστηριότητα 1 - Πώς να κατασκευάσετε ένα μηχανικό χέρι από χαρτόνι στο Δημοτικό</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EL/CNECT-2018-00222-00-14-EL-TRA-00.DOCX">Δραστηριότητα 2 - Πώς να κατασκευάσετε ένα μηχανικό ή ρομποτικό χέρι στο Γυμνάσιο</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EL/CNECT-2018-00222-00-15-EL-TRA-00.DOCX">Δραστηριότητα 3 - Πώς να κατασκευάσετε ένα μηχανικό ή ρομποτικό χέρι στο Λύκειο</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

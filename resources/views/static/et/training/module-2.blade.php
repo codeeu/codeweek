@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_+Learning+Bit+2_Computational_Thinking+_Video+script.docx">Laadi alla video skript</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ET/CNECT-2018-00222-00-16-ET-TRA-00.DOCX">Laadi alla video skript</a></p>
 
                     <h2>Kas olete valmis &otilde;pitut oma &otilde;pilastega jagama?</h2>
 
                     <p>Valige altpoolt m&otilde;ni tunnikava ja alustage &otilde;ppimist.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+1_Primary.docx">1. tegevus &ndash; matemaatilise anal&uuml;&uuml;si &otilde;petamine algkoolile</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+2_Secondary.docx">2. tegevus &ndash; algoritmide tutvustamine p&otilde;hikooli esimesele astmele</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+3_Upper+Secondary.docx">3. tegevus &ndash; algoritmid p&otilde;hikooli teisele astmele</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ET/CNECT-2018-00222-00-04-ET-TRA-00.DOCX">1. tegevus &ndash; matemaatilise anal&uuml;&uuml;si &otilde;petamine algkoolile</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ET/CNECT-2018-00222-00-05-ET-TRA-00.DOCX">2. tegevus &ndash; algoritmide tutvustamine p&otilde;hikooli esimesele astmele</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ET/CNECT-2018-00222-00-06-ET-TRA-00.DOCX">3. tegevus &ndash; algoritmid p&otilde;hikooli teisele astmele</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

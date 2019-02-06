@@ -16,7 +16,7 @@
                     <hr>
 
 
-                    <p>Evropska nedjelja programiranja održaće se od <strong>6. do 21. oktobra 2018. godine</strong>.</p>
+                    <p>Evropska nedjelja programiranja održaće se od <strong>5. do 20. oktobra 2019. godine</strong>.</p>
 
                     <p>Evropska nedjelja programiranja je grass-roots (lokalni dru&scaron;tveni projekat) projekat koji promovi&scaron;e kreativnost, rje&scaron;avanje problema i saradnju kroz programiranje i druge tehnolo&scaron;ke aktivnosti. Ideja je da se programiranje učini vidljivijim, da se mladima, odraslima i starijima pokaže kako svoje ideje mogu pretočiti u stvarnost, da im se same vje&scaron;tine približe, te da se motivisani pojedinci okupe kako bi učili.</p>
 
@@ -75,12 +75,12 @@
         $(function($){
 
             var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017"],
+                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
                 datasets: [
                     {
                         fillColor: "rgba(60, 161, 206, 0.61)",
                         strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000]
+                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
                     }
                 ]
 
