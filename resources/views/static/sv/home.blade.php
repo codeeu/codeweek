@@ -72,7 +72,7 @@
                             <h4>N&auml;r?</h4>
                         </div>
 
-                        <p>6&ndash;21 oktober 2018</p>
+                        <p>5&ndash;20 oktober 2019</p>
 
 
                     </div>

@@ -7,7 +7,7 @@
 
             <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
                 <h1>Resources and guides</h1>
-                <span>EU Code Week 2018</span>
+                <span>EU Code Week 2019</span>
             </div>
 
             <hr>
@@ -35,64 +35,12 @@
             <h2>Presentations and toolkits</h2>
             <ul>
 
-                <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/EU+Code+Week+2018+Communications+Toolkit.zip">EU Code Week 2018 Communications Toolkit</a></li>
-                <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/Teachers+Toolkit.zip">EU Code Week 2018 Teachers Toolkit</a></li>
-                <li>EU Code Week 2018 Leaflet.
+                <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/EU%2BCode%2BWeek%2B2019%2BCommunications%2BToolkit.zip">EU Code Week 2019 Communications Toolkit</a></li>
+                <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/EU%2BCode%2BWeek%2B2019%2BTeachers%2BToolkit.zip">EU Code Week 2019 Teachers Toolkit</a></li>
+                <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/leaflet/2019/codeweek_2019_leaflet_en.pdf">EU Code Week 2019 Leaflet</a>
 
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_EN.pdf">EN</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180314_Codeweek_2018_BG.pdf">BG</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_BO.pdf">BO</a>
-                    -
 
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_CS.pdf">CS</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_DA.pdf">DA</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_DE.pdf">DE</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_EL.pdf">EL</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_ES.pdf">ES</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_ET.pdf">ET</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180416_Codeweek_FI.pdf">FI</a> -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_FR.pdf">FR</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_HR.pdf">HR</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_HU.pdf">HU</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_IT.pdf">IT</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_LT.pdf">LT</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180416_Codeweek_LV.pdf">LV</a> -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_ME.pdf">ME</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_MK.pdf">MK</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180314_Codeweek_2018_MT.pdf">MT</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_NL.pdf">NL</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180507_Codeweek_PL.pdf">PL</a> -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_PT.pdf">PT</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_RO.pdf">RO</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_SK.pdf">SK</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_SL.pdf">SL</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_SQ.pdf">SQ</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_SR.pdf">SR</a>
-                    -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180416_Codeweek_SV.pdf">SV</a> -
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/leaflets/20180326_Codeweek_2018_TR.pdf">TR</a>
+
 
 
                 </li>

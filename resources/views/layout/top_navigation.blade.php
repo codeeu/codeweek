@@ -1,3 +1,12 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
 <!-- Header -->
 <header id="header" class="page-section full-header">
     <div id="header-wrap">
@@ -33,8 +42,25 @@
                             <i class="fa fa-twitter"></i>
                             <b class="caret"></b>
                         </a>
-                        <ul class="dropdown-menu twitter-menu" role="menu" style="width: 400px;height: 820px;overflow: auto;">
+                        <ul class="dropdown-menu twitter-menu" role="menu" style="width: 400px;height: 820px;overflow: auto;justify-content: center;">
                             <a class="twitter-timeline" href="https://twitter.com/CodeWeekEU" data-width="400" data-height="300" data-chrome="noscrollbar" data-link-color="#E95F28" data-tweet-limit="4"></a>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Facebook Feed -->
+            <div id="facebook-feed">
+                <ul class="nav navbar navbar-right nobottommargin">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="height: 60px;display: flex;align-items: center;justify-content: center;">
+                            <i class="fa fa-facebook"></i>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu twitter-menu" role="menu" style="width: 400px;height: 820px;overflow: auto;padding: 0px;">
+                            <div class="fb-page" data-width="400" data-height="815" data-href="https://www.facebook.com/codeEU" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                <blockquote cite="https://www.facebook.com/codeEU" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/codeEU">Europe Code Week</a></blockquote>
+                            </div>
                         </ul>
                     </li>
                 </ul>

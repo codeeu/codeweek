@@ -72,7 +72,7 @@
                             <h4>Kad?</h4>
                         </div>
 
-                        <p>2018.&nbsp;gada 6.&ndash;21.&nbsp;oktobrī</p>
+                        <p>2019.&nbsp;gada 5.&ndash;20.&nbsp;oktobrī</p>
 
 
                     </div>

@@ -24,16 +24,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/M1zJOfmriGU"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+4_Educational_Games_Scratch+_Video+script.docx">Descarregue o gui&atilde;o do v&iacute;deo</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/PT/CNECT-2018-00222-00-19-PT-TRA-00.DOCX">Descarregue o gui&atilde;o do v&iacute;deo</a></p>
 
                     <h2>Est&aacute; pronto para partilhar com os seus alunos o que aprendeu?</h2>
 
                     <p>Selecione um dos planos de aula abaixo e organize uma atividade com seus alunos.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+1_Primary.docx">Atividade 1 &mdash; Jogo de perguntas e respostas com o Scratch para o primeiro ciclo do ensino b&aacute;sico</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+2_Lower+Secondary.docx">Atividade 2 &mdash; Jogo de perguntas e respostas com o Scratch para o segundo e terceiro ciclos do ensino b&aacute;sico</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+3_+Secondary.docx">Atividade 3 &mdash; Jogo de perguntas e respostas com o Scratch para o ensino secund&aacute;rio</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/PT/CNECT-2018-00222-00-10-PT-TRA-00.DOCX">Atividade 1 &mdash; Jogo de perguntas e respostas com o Scratch para o primeiro ciclo do ensino b&aacute;sico</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/PT/CNECT-2018-00222-00-11-PT-TRA-00.DOCX">Atividade 2 &mdash; Jogo de perguntas e respostas com o Scratch para o segundo e terceiro ciclos do ensino b&aacute;sico</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/PT/CNECT-2018-00222-00-12-PT-TRA-00.DOCX">Atividade 3 &mdash; Jogo de perguntas e respostas com o Scratch para o ensino secund&aacute;rio</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

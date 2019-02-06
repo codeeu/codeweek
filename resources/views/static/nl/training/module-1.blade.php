@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/18N1CaQJ0GI "></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Video_script.docx">Het videoscript downloaden</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/NL/CNECT-2018-00222-00-17-NL-TRA-00.DOCX">Het videoscript downloaden</a></p>
 
                     <h2>Ben je er klaar voor om wat je hebt geleerd te delen met je leerlingen?</h2>
 
                     <p>Kies een van de onderstaande lesplannen en organiseer een activiteit met je leerlingen.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+1_Primary.docx">Activiteit 1 &ndash; CodyRoby voor het basisonderwijs</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+2_Lower+Second....docx">Activiteit 2 &ndash; CodyRoby voor de onderbouw van het middelbaar onderwijs</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson+plan+3_Secondary.docx">Activiteit 3 &ndash; CodyRoby voor het middelbaar onderwijs</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/NL/CNECT-2018-00222-00-00-NL-TRA-00.DOCX">Activiteit 1 &ndash; CodyRoby voor het basisonderwijs</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/NL/CNECT-2018-00222-00-02-NL-TRA-00.DOCX">Activiteit 2 &ndash; CodyRoby voor de onderbouw van het middelbaar onderwijs</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/NL/CNECT-2018-00222-00-03-NL-TRA-00.DOCX">Activiteit 3 &ndash; CodyRoby voor het middelbaar onderwijs</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

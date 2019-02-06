@@ -72,7 +72,7 @@
                             <h4>Kdy?</h4>
                         </div>
 
-                        <p>6.&ndash;21. ř&iacute;jna 2018</p>
+                        <p>5.&ndash;20. ř&iacute;jna 2019</p>
 
 
                     </div>

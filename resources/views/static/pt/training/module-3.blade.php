@@ -24,16 +24,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Video+script.docx">Descarregue o gui&atilde;o do v&iacute;deo</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/PT/CNECT-2018-00222-00-18-PT-TRA-00.DOCX">Descarregue o gui&atilde;o do v&iacute;deo</a></p>
 
                     <h2>Est&aacute; pronto para partilhar com os seus alunos o que aprendeu?</h2>
 
                     <p>Selecione um dos planos de aula abaixo e organize uma atividade com seus alunos.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+1_Primary.docx">Atividade 1 &mdash; Scratch de n&iacute;vel b&aacute;sico para o primeiro ciclo do ensino b&aacute;sico</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+2_Secondary.docx">Atividade 2 &mdash; Scratch de n&iacute;vel b&aacute;sico para o segundo e terceiro ciclos do ensino b&aacute;sico</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+3_Upper+Secondary.docx">Atividade 3 &mdash; Scratch de n&iacute;vel b&aacute;sico para o ensino secund&aacute;rio</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/PT/CNECT-2018-00222-00-07-PT-TRA-00.DOCX">Atividade 1 &mdash; Scratch de n&iacute;vel b&aacute;sico para o primeiro ciclo do ensino b&aacute;sico</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/PT/CNECT-2018-00222-00-08-PT-TRA-00.DOCX">Atividade 2 &mdash; Scratch de n&iacute;vel b&aacute;sico para o segundo e terceiro ciclos do ensino b&aacute;sico</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/PT/CNECT-2018-00222-00-09-PT-TRA-00.DOCX">Atividade 3 &mdash; Scratch de n&iacute;vel b&aacute;sico para o ensino secund&aacute;rio</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
