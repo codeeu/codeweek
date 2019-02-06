@@ -10,13 +10,13 @@ class ResourcesController extends Controller
     public function index()
     {
 
-        $levels = \App\ResourceLevel::all();
-        $languages = \App\ResourceLanguage::all();
+        $levels = \App\ResourceLevel::whereLearn(true)->get();
+        $languages = \App\ResourceLanguage::whereLearn(true)->get();
 
-        $programmingLanguages = \App\ResourceProgrammingLanguage::all();
-        $categories = \App\ResourceCategory::all();
-        $subjects = \App\ResourceSubject::all();
-        $types = \App\ResourceType::all();
+        $programmingLanguages = \App\ResourceProgrammingLanguage::whereLearn(true)->get();
+        $categories = \App\ResourceCategory::whereLearn(true)->get();
+        $subjects = \App\ResourceSubject::whereLearn(true)->get();
+        $types = \App\ResourceType::whereLearn(true)->get();
 
 
         //dd($audiences);
