@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_+Learning+Bit+2_Computational_Thinking+_Video+script.docx">Scarica lo script video</a></p>
+                    {{--<p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/IT/CNECT-2018-00222-00-16-IT-TRA-00.DOCX">Scarica lo script video</a></p>--}}
 
                     <h2>Pronto a condividere ci&ograve; che hai imparato con i tuoi studenti?</h2>
 
                     <p>Scegli uno dei piani di lezione qui sotto e organizza un&rsquo;attivit&agrave; con i tuoi studenti.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+1_Primary.docx">Attivit&agrave; 1 - Sviluppare il ragionamento matematico per la scuola primaria</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+2_Secondary.docx">Attivit&agrave; 2 - Conoscenza degli algoritmi per la scuola secondaria di primo grado</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+3_Upper+Secondary.docx">Attivit&agrave; 3 - Algoritmi per la scuola secondaria di secondo grado</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/IT/CNECT-2018-00222-00-04-IT-TRA-00.DOCX">Attivit&agrave; 1 - Sviluppare il ragionamento matematico per la scuola primaria</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/IT/CNECT-2018-00222-00-05-IT-TRA-00.DOCX">Attivit&agrave; 2 - Conoscenza degli algoritmi per la scuola secondaria di primo grado</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/IT/CNECT-2018-00222-00-06-IT-TRA-00.DOCX">Attivit&agrave; 3 - Algoritmi per la scuola secondaria di secondo grado</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
