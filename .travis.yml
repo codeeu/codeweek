@@ -5,6 +5,7 @@ php:
 
 before_script:
   - cp .env.travis .env
+  - composer config http-basic.nova.laravel.com ${NOVA_USERNAME} ${NOVA_PASSWORD}
   - composer install --no-interaction
   - php artisan key:generate
 
