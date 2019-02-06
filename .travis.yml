@@ -1,14 +1,18 @@
 language: php
-
 php:
-  - 7.2
+- 7.2
+
+install:
+- echo "{\"http-basic\":{\"nova.laravel.com\":{\"username\":\"${NOVA_USERNAME}\",\"password\":\"${NOVA_PASSWORD}\"}}}" > auth.json
 
 before_script:
-  - cp .env.travis .env
-  - composer config http-basic.nova.laravel.com ${NOVA_USERNAME} ${NOVA_PASSWORD}
-  - composer install --no-interaction
-  - php artisan key:generate
-
+- cp .env.travis .env
+- composer install --no-interaction
+- php artisan key:generate
 cache:
   directories:
-    - vendor
+  - vendor
+env:
+  global:
+  - secure: PYuzncHIaUzAGEKdptcoFACE7YPtixwiy/2tN1lQRwszqnBh1pr6wGzoWMxZZxYrfZqnM10RO9kvcXcJPnnihfO/BTbEuvNkLC+Uquf7+0elO/we2UJr/BezIFW1WczZQGIxxJEpwNHYfb8zRaXjgecSaEGq+lcas4Vkny76WB1Ty5IeefSsQPOaeJ0J1ScRz7+wvsG6FE2DtIqHyvZ3P9+OCN+dbvfSnuIo3NM4/ysHuubHT8sy/sPx/D5jFefPXaApfXC8/alGPF3qadQptS5IJ+NhHU6qQKGS0lH3ZXI6YnHgykpdjLUMEfk3pwz90k3NjpsmI+goqExpI4kgfDej8NSBxiW+mM0s7Bp8gF+br7GcRHjhAe5um9ftnVzs2nt7GrartfVQY7uN527o6yrZkibHHB0ENwiTjgRhuAfypzgys5jLjWvf7868CPdqsnz9XdVfbeN2KwwFdUy6t67S3LEfG1jTObrCS3FNUnkNgBPuPA20QAyNYVLjuYmqmHG2GzIQrv/UmOGhWPg/ulr5N9uqqV28o3Bpf771TwXik92mlcQUGhszexuWc+CkTs/5DIRruzJkJgt0BUuw136mnHy6+3LMt7igyrFFMZITG/4RLjR3QaCrOkXFTPGjSWqiIBSqqlKlJWrl2k2Nav9O+ESMC37ABHzRxz03wNE=
+  - secure: WfOFwRSiwK5n+p8GbS/Lf/Tr4IEENodhUOXYjDQ6BhPdRFZVOlXRh/phHuLif8gwHEyztytzWDdP7sARjBt47u7X8qkYwsuz6B4yWrWbhuHiF4DKVN8474NaVUcksHK/8vV+41lIqIwk+ifMw+4bt+ldkYiLlgK5inenNHCmiUICcU7gio6D5jwJ1eLKc0GG+uduRkNAeFAGvOKWeD7Mf6yIl5iosuiXfsGtX9/6byg1XALhWuyruWU4d+vRjChZlt/8JPfgXytVOMCOqY2vMZtFit1JJAfNZiZQhBgl/2tKLmWfGpNG9weKnRYDxU+THz4LAn/SCMZMiFhWVZnU1zJ26Zx/DyrusZO5F9pr+ysBmyWD6NQAgRD4jFjIzCbRnjgPoxc1p1m8qIxTsPyf37MwS3sFHrAJe9pcAV8SZzqzN9FF1kWK8EWTYyQdoRmUS54buVuUi5C4p8wgmd3FOEhiME+C+xjTmVD/tWddRlv0Gh0cpf49N08Y/f6zf9dFBhFooAFKLiY6fpte9gi2jhj2g+UicYK7R8ZgcGEqVP/SkpiQNBdxVpDBkgMKXY/9MOgbN60yH/XHqvmaNHislHI2SL3vZmu96dpEhhcByEKJw4ar7GPJDCi4UNYwScPdplNMl29cS0gWxRPhGiB+z0imRRYNGS+Mx2l5bdpGSqM=
