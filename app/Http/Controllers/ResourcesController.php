@@ -11,7 +11,7 @@ class ResourcesController extends Controller
     {
 
         $levels = \App\ResourceLevel::whereLearn(true)->get();
-        $languages = \App\ResourceLanguage::whereLearn(true)->get();
+        $languages = \App\ResourceLanguage::all();
 
         $programmingLanguages = \App\ResourceProgrammingLanguage::whereLearn(true)->get();
         $categories = \App\ResourceCategory::whereLearn(true)->get();
@@ -19,8 +19,8 @@ class ResourcesController extends Controller
         $types = \App\ResourceType::whereLearn(true)->get();
 
 
-        //dd($audiences);
-        //dd($levels);
+
+
 
         return view('resources.index', compact(['programmingLanguages', 'levels', 'languages', 'categories', 'subjects', 'types']));
     }
