@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\CertificateExcellence;
 use App\Excellence;
+use App\Queries\ExcellenceQuery;
 use Gate;
 use Illuminate\Http\Request;
+
 
 class ExcellenceController extends Controller
 {
@@ -33,22 +36,24 @@ class ExcellenceController extends Controller
 
         }
 
-
-
-
         $this->validate($request, [
             'name_for_certificate' => 'required'
         ]);
 
-        // Generate Certificate of excellence
-
-        //Update excellence record with name
         $name = $request["name_for_certificate"];
-        Excellence::where('user_id', auth()->id())
-            ->where('edition', $edition)
-            ->update(['name_for_certificate' => $name]);
+
+        $certificate_url = (new CertificateExcellence($edition, $name))->generate();
+        //Update excellence record with name and generated certificate URL
 
 
+        ExcellenceQuery::byYear($edition)
+            ->update([
+                'name_for_certificate' => $name,
+                'certificate_url' => $certificate_url
+            ]);
+
+
+        return redirect('certificates');
 
 
     }

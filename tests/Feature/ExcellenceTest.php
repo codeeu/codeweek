@@ -109,7 +109,7 @@ class ExcellenceTest extends TestCase
         ];
 
         $this->post('/certificates/excellence/2019', $request)
-            ->assertStatus(200);
+            ->assertStatus(302);
 
         $excellence = Excellence::where('edition',"=",2019)->where('user_id',"=",auth()->id())->first();
         $this->assertEquals("foobar user",$excellence->name_for_certificate);
@@ -134,6 +134,26 @@ class ExcellenceTest extends TestCase
 
 
     }
+
+    /** @test */
+    public function excellence_certificates_should_be_visible_on_certificates_page()
+    {
+
+        $user = create('App\User');
+
+        $this->signIn($user);
+        $name = "Tintin et Milou";
+
+        create('App\Excellence', ['edition' => 2018, 'user_id' => $user->id,'name_for_certificate'=>$name]);
+
+
+        $this->get('/certificates')
+            ->assertSee($name);
+
+
+    }
+
+
 
 
 }
