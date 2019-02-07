@@ -19,7 +19,9 @@ class ResourceFilters extends Filters
      */
     protected function searchInput($searchInput)
     {
-        $result = $this->builder->where('name', 'like', '%' . $searchInput . '%');
+        $result = $this->builder->where('name', 'like', '%' . $searchInput . '%')
+            ->orWhere('description', 'like', '%' . $searchInput . '%')
+        ;
         return $result;
     }
 
