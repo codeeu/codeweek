@@ -25,10 +25,7 @@
                              :close-on-select="false"
                              :clear-on-select="false" :preserve-search="true" placeholder="Levels" label="name"
                              track-by="name" :preselect-first="false" @input="onSubmit()" class="mb-4 mr-8">
-                    <template slot="selection" slot-scope="{ values, search, isOpen }"><span
-                            class="multiselect__single"
-                            v-if="values.length &amp;&amp; !isOpen">{{ values.length }} levels selected</span>
-                    </template>
+                    <pre class="language-json"><code>{{ selectedLevels  }}</code></pre>
                 </multiselect>
 
 
@@ -42,10 +39,7 @@
                              placeholder="Programming Languages"
                              label="name"
                              track-by="name" :preselect-first="false" @input="onSubmit()" class="mb-4">
-                    <template slot="selection" slot-scope="{ values, search, isOpen }"><span
-                            class="multiselect__single"
-                            v-if="values.length &amp;&amp; !isOpen">{{ values.length }} programming languages selected</span>
-                    </template>
+                    <pre class="language-json"><code>{{ selectedProgrammingLanguages  }}</code></pre>
                 </multiselect>
             </div>
             <div class="flex justify-between" v-show="showFilters">
@@ -56,10 +50,7 @@
                              :clear-on-select="false" :preserve-search="true" placeholder="Categories"
                              label="name"
                              track-by="name" :preselect-first="false" @input="onSubmit()" class="mr-8">
-                    <template slot="selection" slot-scope="{ values, search, isOpen }"><span
-                            class="multiselect__single"
-                            v-if="values.length &amp;&amp; !isOpen">{{ values.length }} categories selected</span>
-                    </template>
+                    <pre class="language-json"><code>{{ selectedCategories  }}</code></pre>
                 </multiselect>
 
 
@@ -68,10 +59,7 @@
                              :clear-on-select="false" :preserve-search="true" placeholder="Languages"
                              label="name"
                              track-by="name" :preselect-first="false" @input="onSubmit()" class="ml-8">
-                    <template slot="selection" slot-scope="{ values, search, isOpen }"><span
-                            class="multiselect__single"
-                            v-if="values.length &amp;&amp; !isOpen">{{ values.length }} languages selected</span>
-                    </template>
+                    <pre class="language-json"><code>{{ selectedLanguages  }}</code></pre>
                 </multiselect>
 
                 <!--<multiselect v-model="selectedSubjects" :options="subjects" :multiple="true"-->

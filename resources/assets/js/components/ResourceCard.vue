@@ -2,8 +2,8 @@
 
     <div class="min-w-full mr-4 mt-4 flex">
 
-        <div class="flex flex-col border-grey-lighter border-2">
-            <img class="h-48 min-h-48 lg:h-48 lg:w-48 rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+        <div class="flex flex-col border-grey-lighter border-2 justify-between">
+            <img class="w-48 block rounded-b"
                  :src="thumbnail">
 
             <a :href="resource.source"
