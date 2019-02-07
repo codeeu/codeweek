@@ -53,7 +53,7 @@ class MapTest extends TestCase
         create('App\Event', ['start_date' => Carbon::now()->subyear(),'end_date' => Carbon::now()->subyear(), 'status' => 'APPROVED','country_iso' => 'BE'], 3);
 
 
-        $results = $this->json('GET', '/api/event/list?year=2017');
+        $results = $this->json('GET', '/api/event/list?year=' . Carbon::now()->subyear()->year);
 
 
         $this->assertCount(3, $results->json()['BE']);

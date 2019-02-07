@@ -43,13 +43,13 @@ class SearchEventTest extends TestCase
     /** @test */
     public function a_user_can_search_only_this_year_events()
     {
-        $eventLastYear = create('App\Event', ['start_date'=>Carbon::now()->subYear(2),'end_date'=>Carbon::now()->subYear(2), 'status'=>'APPROVED']);
+        $eventLastYear = create('App\Event', ['start_date'=>Carbon::now()->subYear(1),'end_date'=>Carbon::now()->subYear(1), 'status'=>'APPROVED']);
         $eventThisYear = create('App\Event', ['start_date'=>new Carbon('today'), 'status'=>'APPROVED']);
-        $this->get('search?year=2018')
+        $this->get('search?year='.Carbon::now()->year)
             ->assertDontSee($eventLastYear->title)
             ->assertSee($eventThisYear->title);
 
-        $this->get('search?year=2016')
+        $this->get('search?year='.Carbon::now()->subYear(1)->year)
             ->assertSee($eventLastYear->title)
             ->assertDontSee($eventThisYear->title);
 
