@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/18N1CaQJ0GI "></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Video_script.docx">Lejupielādēt video skriptu</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LV/CNECT-2018-00222-00-17-LV-TRA-00.DOCX">Lejupielādēt video skriptu</a></p>
 
                     <h2>Vai esat gatavs dalīties ar iegūtajām zinā&scaron;anām ar saviem skolēniem?</h2>
 
                     <p>Izvēlieties vienu no tālāk sniegtajiem mācību stundu plāniem un noorganizējiet nodarbību saviem skolēniem.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+1_Primary.docx">1.&nbsp;nodarbība&nbsp;&mdash; CodyRoby sākumskolai</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+2_Lower+Second....docx">2.&nbsp;nodarbība&nbsp;&mdash; CodyRoby pamatskolai</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson+plan+3_Secondary.docx">3.&nbsp;nodarbība&nbsp;&mdash; CodyRoby vidusskolai</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LV/CNECT-2018-00222-00-00-LV-TRA-00.DOCX">1.&nbsp;nodarbība&nbsp;&mdash; CodyRoby sākumskolai</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LV/CNECT-2018-00222-00-02-LV-TRA-00.DOCX">2.&nbsp;nodarbība&nbsp;&mdash; CodyRoby pamatskolai</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LV/CNECT-2018-00222-00-03-LV-TRA-00.DOCX">3.&nbsp;nodarbība&nbsp;&mdash; CodyRoby vidusskolai</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
