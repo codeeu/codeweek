@@ -17,9 +17,26 @@
                     <p>@lang('scoreboard.paragraph')</p>
                 </div>
 
-                <div class="scoreboard-total">
-                    {{$total}} @lang('scoreboard.events')
-                </div>
+                <form style="border:0px" id="faceted-search-events" method="get" action="/scoreboard" enctype="multipart/form-data">
+
+                    <div class="scoreboard-total">
+                        {{$total}} @lang('scoreboard.events') - 
+                        <select id="edition" name="edition" onchange="this.form.submit()">
+
+                            @foreach($years as $year_label)
+                                <option value="{{$year_label}}"
+                                        {{ ($year_label == $edition)?'selected':'' }}
+                                >{{$year_label}}</option>
+                            @endforeach
+
+
+                        </select>
+
+                    </div>
+
+                </form>
+
+
 
                 <div class="sb-wrapper">
                     <ol class="one-row">
