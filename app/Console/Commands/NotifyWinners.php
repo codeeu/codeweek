@@ -43,6 +43,7 @@ class NotifyWinners extends Command
 
         $edition = $this->argument('edition');
 
+
         $winners = Excellence::byYear($edition);
 
         foreach ($winners as $winner) {

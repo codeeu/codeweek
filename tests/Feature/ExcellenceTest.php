@@ -2,9 +2,11 @@
 
 namespace Tests\Feature;
 
+use App\CertificateExcellence;
 use App\Excellence;
 use App\School;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Support\Facades\Storage;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -98,6 +100,7 @@ class ExcellenceTest extends TestCase
     /** @test */
     public function reporting_should_update_name_in_database()
     {
+
 
         $user = create('App\User');
         create('App\Excellence', ['edition' => 2019, 'user_id' => $user->id]);

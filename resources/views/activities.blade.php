@@ -6,7 +6,7 @@
             <h3>Activities</h3>
 
             @foreach($activities as $activity)
-                <a href="{{$activity->subject->path()}}"> {{$activity->description}} </a>
+                <a href="{{$activity->subject}}"> {{$activity->description}} </a>
                 @if($activity->causer)
                 by {{$activity->causer->fullName()}}
                 @else
