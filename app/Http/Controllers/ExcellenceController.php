@@ -30,6 +30,7 @@ class ExcellenceController extends Controller
     public function generate($edition, Request $request)
     {
 
+
         if (Gate::denies('report-excellence', $edition)) {
             // The current user can't report for excellence...
             abort(403, 'You are not eligible to receive a Codeweek4All Excellence Certificate.');
@@ -43,8 +44,6 @@ class ExcellenceController extends Controller
         $name = $request["name_for_certificate"];
 
         $certificate_url = (new CertificateExcellence($edition, $name))->generate();
-        //Update excellence record with name and generated certificate URL
-
 
         ExcellenceQuery::byYear($edition)
             ->update([

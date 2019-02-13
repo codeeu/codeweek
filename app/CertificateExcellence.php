@@ -6,13 +6,14 @@ namespace App;
 use Carbon\Carbon;
 use Log;
 use Illuminate\Support\Facades\Storage;
+use Spatie\Activitylog\Traits\LogsActivity;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 
 class CertificateExcellence
 {
 
-    private $templateName = "template.tex";
+    private $templateName = "excellence.tex";
 
     private $name_of_certificate_holder;
     private $resource_path;
@@ -28,6 +29,7 @@ class CertificateExcellence
         $this->resource_path = resource_path() . "/latex";
         $this->pdflatex = env("PDFLATEX_PATH");
         $this->id = auth()->id() . '-' . str_random(10);
+        Log::info("User ID " . auth()->id() . " generating excellence certificate with name: " . $name_for_certificate);
     }
 
     public function generate()
@@ -37,7 +39,6 @@ class CertificateExcellence
         $this->run_pdf_creation();
         $s3path = $this->copy_to_s3();
         $this->clean_temp_files();
-
 
         return $s3path;
 
@@ -115,7 +116,7 @@ class CertificateExcellence
      */
     protected function customize_and_save_latex()
     {
-        if ($this->is_greek()) $this->templateName = "template_greek.tex";
+        if ($this->is_greek()) $this->templateName = "excellence_greek.tex";
         Log::info($this->templateName);
         //open the latex template
         $base_template = Storage::disk('latex')->get($this->templateName);

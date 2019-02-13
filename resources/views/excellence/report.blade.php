@@ -13,9 +13,13 @@
         <header class="flex flex-col justify-between">
 
             <p class="mb-4 text-grey-dark">
-                Some text is coming here
+                @lang('report.phrase1')
+                <a href='mailto:info@codeweek.eu'>@lang('report.contactus')</a>
             </p>
 
+            <p class="mb-4 text-grey-dark">
+                @lang('report.phrase3')
+            </p>
 
         </header>
 

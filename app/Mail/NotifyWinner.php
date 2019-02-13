@@ -35,7 +35,7 @@ class NotifyWinner extends Mailable
     public function build()
     {
         return $this
-            ->subject("[CodeWeekEU] Your are a winner !")
+            ->subject("[CodeWeekEU] You are a winner !")
             ->markdown('emails.en.notify-winner');
     }
 }
