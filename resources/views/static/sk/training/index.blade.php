@@ -20,15 +20,15 @@
                     <p>Nepotrebujete žiadne predch&aacute;dzaj&uacute;ce sk&uacute;senosti s&nbsp;programovan&iacute;m a každ&yacute; modul v&aacute;m zaberie len okolo 15&nbsp;min&uacute;t. V&nbsp;moduloch spozn&aacute;te kľ&uacute;čov&eacute; koncepcie s&uacute;visiace s&nbsp;programovan&iacute;m a aktivity na rozvoj v&yacute;počtov&eacute;ho myslenia. Okrem toho sa v&nbsp;moduloch dozviete praktick&eacute; tipy a rady, ako začleniť tieto koncepcie do vyučovania.</p>
 
                     <div class="flex flex-wrap" style="margin-bottom: 30px;">
-                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning/coding-without-computers.png"><div class="text-xl">Programovanie bez digit&aacute;lnej technol&oacute;gie (bez poč&iacute;tača)</div>
+                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="/img/learning/coding-without-computers.png"><div class="text-xl">Programovanie bez digit&aacute;lnej technol&oacute;gie (bez poč&iacute;tača)</div>
                                 <div class="text-base text-black">Alessandro Bogliolo</div></a></div>
-                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning/computational-thinking-and-problem-solving.png"><div class="text-xl">V&yacute;počtov&eacute; myslenie a rie&scaron;enie probl&eacute;mov</div>
+                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="/img/learning/computational-thinking-and-problem-solving.png"><div class="text-xl">V&yacute;počtov&eacute; myslenie a rie&scaron;enie probl&eacute;mov</div>
                                 <div class="text-base text-black">Miles Berry</div></a></div>
-                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning/visual-programming-introduction-to-scratch.png"><div class="text-xl">Vizu&aacute;lne programovanie &ndash; &uacute;vod do jazyka Scratch</div>
+                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="/img/learning/visual-programming-introduction-to-scratch.png"><div class="text-xl">Vizu&aacute;lne programovanie &ndash; &uacute;vod do jazyka Scratch</div>
                                 <div class="text-base text-black">Margo Tinawi</div></a></div>
-                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning/creating-educational-games-with-scratch.png"><div class="text-xl">Tvorba vzdel&aacute;vac&iacute;ch hier v&nbsp;jazyku Scratch</div>
+                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="/img/learning/creating-educational-games-with-scratch.png"><div class="text-xl">Tvorba vzdel&aacute;vac&iacute;ch hier v&nbsp;jazyku Scratch</div>
                                 <div class="text-base text-black">Jes&uacute;s Moreno Le&oacute;n</div></a></div>
-                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning/making-robotics-and-tinkering-in-the-classroom.png"><div class="text-xl">Tvorba, robotika a majstrovanie v&nbsp;triede</div>
+                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="/img/learning/making-robotics-and-tinkering-in-the-classroom.png"><div class="text-xl">Tvorba, robotika a majstrovanie v&nbsp;triede</div>
                                 <div class="text-base text-black">Tullia Urschitz</div></a></div>
                     </div>
 
