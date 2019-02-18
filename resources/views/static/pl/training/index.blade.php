@@ -20,15 +20,15 @@
                     <p>Nie wymagamy od ciebie żadnego doświadczenia z kodowaniem ani programowaniem. Ukończenie każdego z przedstawionych moduł&oacute;w szkoleniowych zajmie ci około 15&nbsp;minut. Zaprezentowane moduły przedstawiają najważniejsze zagadnienia związane z programowaniem i zadania dotyczące myślenia obliczeniowego. W modułach znajdziesz także praktyczne porady i wskaz&oacute;wki na temat prezentacji opisywanych koncepcji w klasie.</p>
 
                     <div class="flex flex-wrap" style="margin-bottom: 30px;">
-                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning/coding-without-computers.png"><div class="text-xl">Kodowanie bez technologii cyfrowych (bez prądu)</div>
+                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="/img/learning/coding-without-computers.png"><div class="text-xl">Kodowanie bez technologii cyfrowych (bez prądu)</div>
                                 <div class="text-base text-black">Autor: Alessandro Bogliolo</div></a></div>
-                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning/computational-thinking-and-problem-solving.png"><div class="text-xl">Myślenie obliczeniowe i&nbsp;rozwiązywanie problem&oacute;w</div>
+                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="/img/learning/computational-thinking-and-problem-solving.png"><div class="text-xl">Myślenie obliczeniowe i&nbsp;rozwiązywanie problem&oacute;w</div>
                                 <div class="text-base text-black">Autor: Miles Berry</div></a></div>
-                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning/visual-programming-introduction-to-scratch.png"><div class="text-xl">Programowanie wizualne &ndash; wprowadzenie do języka Scratch</div>
+                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="/img/learning/visual-programming-introduction-to-scratch.png"><div class="text-xl">Programowanie wizualne &ndash; wprowadzenie do języka Scratch</div>
                                 <div class="text-base text-black">Autorka: Margo Tinawi</div></a></div>
-                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning/creating-educational-games-with-scratch.png"><div class="text-xl">Tworzenie gier edukacyjnych w&nbsp;języku Scratch</div>
+                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="/img/learning/creating-educational-games-with-scratch.png"><div class="text-xl">Tworzenie gier edukacyjnych w&nbsp;języku Scratch</div>
                                 <div class="text-base text-black">Autor: Jes&uacute;s Moreno Le&oacute;n</div></a></div>
-                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning/making-robotics-and-tinkering-in-the-classroom.png"><div class="text-xl">Majsterkowanie, grzebanie i&nbsp;robotyka w&nbsp;klasie</div>
+                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="/img/learning/making-robotics-and-tinkering-in-the-classroom.png"><div class="text-xl">Majsterkowanie, grzebanie i&nbsp;robotyka w&nbsp;klasie</div>
                                 <div class="text-base text-black">Autorka: Tullia Urschitz</div></a></div>
                     </div>
 
