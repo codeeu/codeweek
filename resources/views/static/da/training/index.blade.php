@@ -20,15 +20,15 @@
                     <p>Der kr&aelig;ves ingen tidligere erfaring med programmering, og de enkelte moduler kan gennemf&oslash;res p&aring; ca. 15 minutter. Modulerne introducerer dig til de vigtigste koncepter i forbindelse med kodning og datalogisk t&aelig;nkning. Desuden giver modulerne praktiske tips og r&aring;d om, hvordan du kan integrere koncepterne i klassev&aelig;relset.</p>
 
                     <div class="flex flex-wrap" style="margin-bottom: 30px;">
-                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning/coding-without-computers.png"><div class="text-xl">Kodning uden digital teknologi (»unplugged«)</div>
+                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="/img/learning/coding-without-computers.png"><div class="text-xl">Kodning uden digital teknologi (»unplugged«)</div>
                                 <div class="text-base text-black">Af Alessandro Bogliolo</div></a></div>
-                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning/computational-thinking-and-problem-solving.png"><div class="text-xl">Datalogisk t&aelig;nkning og probleml&oslash;sning</div>
+                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="/img/learning/computational-thinking-and-problem-solving.png"><div class="text-xl">Datalogisk t&aelig;nkning og probleml&oslash;sning</div>
                                 <div class="text-base text-black">Af Miles Berry</div></a></div>
-                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning/visual-programming-introduction-to-scratch.png"><div class="text-xl">Visuel programmering &ndash; Introduktion til Scratch</div>
+                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="/img/learning/visual-programming-introduction-to-scratch.png"><div class="text-xl">Visuel programmering &ndash; Introduktion til Scratch</div>
                                 <div class="text-base text-black">Af Margo Tinawi</div></a></div>
-                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning/creating-educational-games-with-scratch.png"><div class="text-xl">S&aring;dan laver du uddannelsesspil med Scratch</div>
+                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="/img/learning/creating-educational-games-with-scratch.png"><div class="text-xl">S&aring;dan laver du uddannelsesspil med Scratch</div>
                                 <div class="text-base text-black">Af Jes&uacute;s Moreno Le&oacute;n</div></a></div>
-                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning/making-robotics-and-tinkering-in-the-classroom.png"><div class="text-xl">Robotteknologi og n&oslash;rkleri i klassev&aelig;relset</div>
+                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="/img/learning/making-robotics-and-tinkering-in-the-classroom.png"><div class="text-xl">Robotteknologi og n&oslash;rkleri i klassev&aelig;relset</div>
                                 <div class="text-base text-black">Af Tullia Urschitz</div></a></div>
                     </div>
 
