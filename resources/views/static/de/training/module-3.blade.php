@@ -24,16 +24,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Video+script.docx">Das Video-Script herunterladen</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/DE/CNECT-2018-00222-00-18-DE-TRA-00.DOCX">Das Video-Script herunterladen</a></p>
 
                     <h2>M&ouml;chten Sie Ihre Erfahrungen mit Ihren Sch&uuml;lerinnen und Sch&uuml;lern teilen?</h2>
 
                     <p>W&auml;hlen Sie einen der Unterrichtspl&auml;ne unten aus und organisieren Sie mit Ihren Sch&uuml;lerinnen und Sch&uuml;lern eine Aktivit&auml;t.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+1_Primary.docx">Aktivit&auml;t 1 &ndash; Scratch Grundlagen f&uuml;r die Grundschule</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+2_Secondary.docx">Aktivit&auml;t 2 &ndash; Scratch Grundlagen f&uuml;r die Unterstufe einer weiterf&uuml;hrenden Schule</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+3_Upper+Secondary.docx">Aktivit&auml;t 3 &ndash; Scratch Grundlagen f&uuml;r eine weiterf&uuml;hrende Schule</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/DE/CNECT-2018-00222-00-07-DE-TRA-00.DOCX">Aktivit&auml;t 1 &ndash; Scratch Grundlagen f&uuml;r die Grundschule</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/DE/CNECT-2018-00222-00-08-DE-TRA-00.DOCX">Aktivit&auml;t 2 &ndash; Scratch Grundlagen f&uuml;r die Unterstufe einer weiterf&uuml;hrenden Schule</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/DE/CNECT-2018-00222-00-09-DE-TRA-00.DOCX">Aktivit&auml;t 3 &ndash; Scratch Grundlagen f&uuml;r eine weiterf&uuml;hrende Schule</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
