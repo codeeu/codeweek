@@ -24,16 +24,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/M1zJOfmriGU"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+4_Educational_Games_Scratch+_Video+script.docx">Das Video-Script herunterladen</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/DE/CNECT-2018-00222-00-19-DE-TRA-00.DOCX">Das Video-Script herunterladen</a></p>
 
                     <h2>M&ouml;chten Sie Ihre Erfahrungen mit Ihren Sch&uuml;lerinnen und Sch&uuml;lern teilen?</h2>
 
                     <p>W&auml;hlen Sie einen der Unterrichtspl&auml;ne unten aus und organisieren Sie mit Ihren Sch&uuml;lerinnen und Sch&uuml;lern eine Aktivit&auml;t.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+1_Primary.docx">Aktivit&auml;t 1 &ndash; Frage- und Antwortspiel mit Scratch f&uuml;r die Grundschule</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+2_Lower+Secondary.docx">Aktivit&auml;t 2 &ndash; Frage- und Antwortspiel mit Scratch f&uuml;r die Unterstufe einer weiterf&uuml;hrenden Schule</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+3_+Secondary.docx">Aktivit&auml;t 3 &ndash; Frage- und Antwortspiel mit Scratch f&uuml;r weiterf&uuml;hrende Schulen</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/DE/CNECT-2018-00222-00-10-DE-TRA-00.DOCX">Aktivit&auml;t 1 &ndash; Frage- und Antwortspiel mit Scratch f&uuml;r die Grundschule</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/DE/CNECT-2018-00222-00-11-DE-TRA-00.DOCX">Aktivit&auml;t 2 &ndash; Frage- und Antwortspiel mit Scratch f&uuml;r die Unterstufe einer weiterf&uuml;hrenden Schule</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/DE/CNECT-2018-00222-00-12-DE-TRA-00.DOCX">Aktivit&auml;t 3 &ndash; Frage- und Antwortspiel mit Scratch f&uuml;r weiterf&uuml;hrende Schulen</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
