@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_+Learning+Bit+2_Computational_Thinking+_Video+script.docx">Descărcați textul videoclipului</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/RO/CNECT-2018-00222-00-16-RO-TRA-00.DOCX">Descărcați textul videoclipului</a></p>
 
                     <h2>Sunteți gata să &icirc;mpărtășiți ce ați &icirc;nvățat cu elevii dumneavoastră?</h2>
 
                     <p>Alegeți unul dintre planurile de lecție de mai jos și organizați o activitate cu elevii dumneavoastră.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+1_Primary.docx">Activitatea 1&nbsp;&ndash; Dezvoltarea g&acirc;ndirii matematice pentru &icirc;nvățăm&acirc;ntul primar</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+2_Secondary.docx">Activitatea 2&nbsp;&ndash; Familiarizarea cu algoritmi pentru &icirc;nvățăm&acirc;ntul gimnazial</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+3_Upper+Secondary.docx">Activitatea 3 &ndash; Algoritmi pentru &icirc;nvățăm&acirc;ntul liceal</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/RO/CNECT-2018-00222-00-04-RO-TRA-00.DOCX">Activitatea 1&nbsp;&ndash; Dezvoltarea g&acirc;ndirii matematice pentru &icirc;nvățăm&acirc;ntul primar</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/RO/CNECT-2018-00222-00-05-RO-TRA-00.DOCX">Activitatea 2&nbsp;&ndash; Familiarizarea cu algoritmi pentru &icirc;nvățăm&acirc;ntul gimnazial</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/RO/CNECT-2018-00222-00-06-RO-TRA-00.DOCX">Activitatea 3 &ndash; Algoritmi pentru &icirc;nvățăm&acirc;ntul liceal</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
