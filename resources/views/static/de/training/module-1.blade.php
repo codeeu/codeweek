@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/18N1CaQJ0GI "></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Video_script.docx">Das Video-Script herunterladen</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/DE/CNECT-2018-00222-00-17-DE-TRA-00.DOCX">Das Video-Script herunterladen</a></p>
 
                     <h2>M&ouml;chten Sie Ihre Erfahrungen mit Ihren Sch&uuml;lerinnen und Sch&uuml;lern teilen?</h2>
 
                     <p>W&auml;hlen Sie einen der Unterrichtspl&auml;ne unten aus und organisieren Sie mit Ihren Sch&uuml;lerinnen und Sch&uuml;lern eine Aktivit&auml;t.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+1_Primary.docx">Aktivit&auml;t 1 &ndash; CodyRoby f&uuml;r die Grundschule</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+2_Lower+Second....docx">Aktivit&auml;t 2 &ndash; CodyRoby f&uuml;r die Unterstufe einer weiterf&uuml;hrenden Schule</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson+plan+3_Secondary.docx">Aktivit&auml;t 3 &ndash; CodyRoby f&uuml;r eine weiterf&uuml;hrende Schule</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/DE/CNECT-2018-00222-00-00-DE-TRA-00.DOCX">Aktivit&auml;t 1 &ndash; CodyRoby f&uuml;r die Grundschule</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/DE/CNECT-2018-00222-00-02-DE-TRA-00.DOCX">Aktivit&auml;t 2 &ndash; CodyRoby f&uuml;r die Unterstufe einer weiterf&uuml;hrenden Schule</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/DE/CNECT-2018-00222-00-03-DE-TRA-00.DOCX">Aktivit&auml;t 3 &ndash; CodyRoby f&uuml;r eine weiterf&uuml;hrende Schule</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
