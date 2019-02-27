@@ -20,15 +20,15 @@
                     <p>Δεν χρειάζεται προηγούμενη εμπειρία συγγραφής κώδικα ή προγραμματισμού, και κάθε ενότητα θα σας πάρει γύρω στα 15 λεπτά. Οι ενότητες σας μυούν σε βασικές έννοιες που σχετίζονται με δραστηριότητες προγραμματισμού και υπολογιστικής σκέψης. Επίσης, στις ενότητες παρέχονται πρακτικές συμβουλές και υποδείξεις για τον τρόπο παρουσίασης των εννοιών στην τάξη σας.</p>
 
                     <div class="flex flex-wrap" style="margin-bottom: 30px;">
-                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning/coding-without-computers.png"><div class="text-xl">Προγραμματισμός χωρίς ψηφιακή τεχνολογία (χωρίς σύνδεση στο διαδίκτυο)</div>
+                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="/img/learning/coding-without-computers.png"><div class="text-xl">Προγραμματισμός χωρίς ψηφιακή τεχνολογία (χωρίς σύνδεση στο διαδίκτυο)</div>
                                 <div class="text-base text-black">του Alessandro Bogliolo</div></a></div>
-                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning/computational-thinking-and-problem-solving.png"><div class="text-xl">Υπολογιστική σκέψη και επίλυση προβλημάτων</div>
+                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="/img/learning/computational-thinking-and-problem-solving.png"><div class="text-xl">Υπολογιστική σκέψη και επίλυση προβλημάτων</div>
                                 <div class="text-base text-black">του Miles Berry</div></a></div>
-                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning/visual-programming-introduction-to-scratch.png"><div class="text-xl">Οπτικός προγραμματισμός &ndash; Εισαγωγή στη Scratch</div>
+                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="/img/learning/visual-programming-introduction-to-scratch.png"><div class="text-xl">Οπτικός προγραμματισμός &ndash; Εισαγωγή στη Scratch</div>
                                 <div class="text-base text-black">του Margo Tinawi</div></a></div>
-                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning/creating-educational-games-with-scratch.png"><div class="text-xl">Δημιουργία εκπαιδευτικών παιχνιδιών με Scratch</div>
+                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="/img/learning/creating-educational-games-with-scratch.png"><div class="text-xl">Δημιουργία εκπαιδευτικών παιχνιδιών με Scratch</div>
                                 <div class="text-base text-black">του Jes&uacute;s Moreno Le&oacute;n</div></a></div>
-                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning/making-robotics-and-tinkering-in-the-classroom.png"><div class="text-xl">Ασχολούμαστε με τη ρομποτική και τα μαστορέματα μέσα στις σχολικές τάξεις</div>
+                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="/img/learning/making-robotics-and-tinkering-in-the-classroom.png"><div class="text-xl">Ασχολούμαστε με τη ρομποτική και τα μαστορέματα μέσα στις σχολικές τάξεις</div>
                                 <div class="text-base text-black">της Tullia Urschitz</div></a></div>
                     </div>
 

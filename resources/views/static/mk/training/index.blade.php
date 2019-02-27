@@ -20,15 +20,15 @@
                     <p>Не е потребно претходно искуство за кодирање или програмирање, а за секој модул се потребно само околу 15 минути да се заврши. Модулите ве запознаваат со клучните концепти поврзани со кодирањето и активностите на компјутерско размислување. Како дополнение, модулите исто така ви даваат практични совети и ви укажуваат како да ги интегрирате концептите во училницата.</p>
 
                     <div class="flex flex-wrap" style="margin-bottom: 30px;">
-                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning/coding-without-computers.png"><div class="text-xl">Кодирање без дигитална технологија (без интернет)</div>
+                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="/img/learning/coding-without-computers.png"><div class="text-xl">Кодирање без дигитална технологија (без интернет)</div>
                                 <div class="text-base text-black">Од Алесандро Бољоло</div></a></div>
-                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning/computational-thinking-and-problem-solving.png"><div class="text-xl">Компјутерско размислување и решавање проблеми</div>
+                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="/img/learning/computational-thinking-and-problem-solving.png"><div class="text-xl">Компјутерско размислување и решавање проблеми</div>
                                 <div class="text-base text-black">Од Мајлс Бери</div></a></div>
-                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning/visual-programming-introduction-to-scratch.png"><div class="text-xl">Визуелно програмирање - вовед во Scratch</div>
+                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="/img/learning/visual-programming-introduction-to-scratch.png"><div class="text-xl">Визуелно програмирање - вовед во Scratch</div>
                                 <div class="text-base text-black">Од Марго Тинави</div></a></div>
-                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning/creating-educational-games-with-scratch.png"><div class="text-xl">Креирање едукативни игри со Scratch</div>
+                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="/img/learning/creating-educational-games-with-scratch.png"><div class="text-xl">Креирање едукативни игри со Scratch</div>
                                 <div class="text-base text-black">Од Хесус Морено Леон</div></a></div>
-                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning/making-robotics-and-tinkering-in-the-classroom.png"><div class="text-xl">Креирање, роботика и поправање во училницата</div>
+                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="/img/learning/making-robotics-and-tinkering-in-the-classroom.png"><div class="text-xl">Креирање, роботика и поправање во училницата</div>
                                 <div class="text-base text-black">Од Тулиа Уршиц</div></a></div>
                     </div>
 

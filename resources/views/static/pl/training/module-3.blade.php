@@ -24,16 +24,14 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Video+script.docx">Pobierz scenariusz filmu</a></p>
-
                     <h2>Czujesz, że jesteś w stanie podzielić się zdobytą wiedzą z uczniami?</h2>
 
                     <p>Wybierz jeden z poniższych plan&oacute;w zajęć i zorganizuj zajęcia dla swoich uczni&oacute;w.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+1_Primary.docx">Zajęcia 1 &ndash; Podstawy języka Scratch dla szk&oacute;ł podstawowych</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+2_Secondary.docx">Zajęcia 2 &ndash; Podstawy języka Scratch dla szk&oacute;ł ponadpodstawowych</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+3_Upper+Secondary.docx">Zajęcia 3 &ndash; Podstawy języka Scratch dla szk&oacute;ł średnich</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/PL/CNECT-2018-00222-00-07-PL-TRA-00.DOCX">Zajęcia 1 &ndash; Podstawy języka Scratch dla szk&oacute;ł podstawowych</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/PL/CNECT-2018-00222-00-08-PL-TRA-00.DOCX">Zajęcia 2 &ndash; Podstawy języka Scratch dla szk&oacute;ł ponadpodstawowych</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/PL/CNECT-2018-00222-00-09-PL-TRA-00.DOCX">Zajęcia 3 &ndash; Podstawy języka Scratch dla szk&oacute;ł średnich</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
