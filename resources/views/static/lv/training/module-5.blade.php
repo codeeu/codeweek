@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+5_Making_Robotics_Tinkering+_Video+script.docx">Lejupielādēt video skriptu</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LV/CNECT-2018-00222-00-20-LV-TRA-00.DOCX">Lejupielādēt video skriptu</a></p>
 
                     <h2>Vai esat gatavs dalīties ar iegūtajām zinā&scaron;anām ar saviem skolēniem?</h2>
 
                     <p>Izvēlieties vienu no tālāk sniegtajiem mācību stundu plāniem un noorganizējiet nodarbību saviem skolēniem.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+1_Primary.docx">1.&nbsp;nodarbība&nbsp;&mdash; kā pagatavot mehānisku kartona roku (sākumskolai)</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+2_Lower+Secondary.docx">2.&nbsp;nodarbība&nbsp;&mdash; kā pagatavot mehānisku vai robotisku roku (pamatskolai)</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+3_+Upper+Secondary.docx">3.&nbsp;nodarbība&nbsp;&mdash; kā pagatavot mehānisku vai robotisku roku (vidusskolai)</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LV/CNECT-2018-00222-00-13-LV-TRA-00.DOCX">1.&nbsp;nodarbība&nbsp;&mdash; kā pagatavot mehānisku kartona roku (sākumskolai)</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LV/CNECT-2018-00222-00-14-LV-TRA-00.DOCX">2.&nbsp;nodarbība&nbsp;&mdash; kā pagatavot mehānisku vai robotisku roku (pamatskolai)</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LV/CNECT-2018-00222-00-15-LV-TRA-00.DOCX">3.&nbsp;nodarbība&nbsp;&mdash; kā pagatavot mehānisku vai robotisku roku (vidusskolai)</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

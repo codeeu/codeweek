@@ -34,35 +34,35 @@
                     <div class="flex flex-wrap" style="margin-bottom: 30px;">
                         <div class="learning-card">
                             <a href="/training/coding-without-computers">
-                                <img src="img/learning/coding-without-computers.png">
+                                <img src="/img/learning/coding-without-computers.png">
                                 <div class="text-xl">Coding without digital technology (unplugged)</div>
                                 <div class="text-base text-black">By Alessandro Bogliolo</div>
                             </a>
                         </div>
                         <div class="learning-card">
                             <a href="/training/computational-thinking-and-problem-solving">
-                                <img src="img/learning/computational-thinking-and-problem-solving.png">
+                                <img src="/img/learning/computational-thinking-and-problem-solving.png">
                                 <div class="text-xl">Computational thinking and problem solving</div>
                                 <div class="text-base text-black">By Miles Berry</div>
                             </a>
                         </div>
                         <div class="learning-card">
                             <a href="/training/visual-programming-introduction-to-scratch">
-                                <img src="img/learning/visual-programming-introduction-to-scratch.png">
+                                <img src="/img/learning/visual-programming-introduction-to-scratch.png">
                                 <div class="text-xl">Visual programming – introduction to Scratch</div>
                                 <div class="text-base text-black">By Margo Tinawi</div>
                             </a>
                         </div>
                         <div class="learning-card">
                             <a href="/training/creating-educational-games-with-scratch">
-                                <img src="img/learning/creating-educational-games-with-scratch.png">
+                                <img src="/img/learning/creating-educational-games-with-scratch.png">
                                 <div class="text-xl">Creating educational games with Scratch</div>
                                 <div class="text-base text-black">By Jesús Moreno León</div>
                             </a>
                         </div>
                         <div class="learning-card">
                             <a href="/training/making-robotics-and-tinkering-in-the-classroom">
-                                <img src="img/learning/making-robotics-and-tinkering-in-the-classroom.png">
+                                <img src="/img/learning/making-robotics-and-tinkering-in-the-classroom.png">
                                 <div class="text-xl">Making, robotics and tinkering in the classroom</div>
                                 <div class="text-base text-black">By Tullia Urschitz</div>
                             </a>

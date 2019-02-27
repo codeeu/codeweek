@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+5_Making_Robotics_Tinkering+_Video+script.docx">Descărcați textul videoclipului</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/RO/CNECT-2018-00222-00-20-RO-TRA-00.DOCX">Descărcați textul videoclipului</a></p>
 
                     <h2>Sunteți gata să &icirc;mpărtășiți ce ați &icirc;nvățat cu elevii dumneavoastră?</h2>
 
                     <p>Alegeți unul dintre planurile de lecție de mai jos și organizați o activitate cu elevii dumneavoastră.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+1_Primary.docx">Activitatea 1&nbsp;&ndash; Cum să faci o m&acirc;nă mecanică din placaj, pentru &icirc;nvățăm&acirc;ntul primar</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+2_Lower+Secondary.docx">Activitatea 2&nbsp;&ndash; Cum să faci o m&acirc;nă mecanică sau robotizată, pentru &icirc;nvățăm&acirc;ntul gimnazial</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+3_+Upper+Secondary.docx">Activitatea 3&nbsp;&ndash; Cum să faci o m&acirc;nă mecanică sau robotizată, pentru &icirc;nvățăm&acirc;ntul liceal</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/RO/CNECT-2018-00222-00-13-RO-TRA-00.DOCX">Activitatea 1&nbsp;&ndash; Cum să faci o m&acirc;nă mecanică din placaj, pentru &icirc;nvățăm&acirc;ntul primar</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/RO/CNECT-2018-00222-00-14-RO-TRA-00.DOCX">Activitatea 2&nbsp;&ndash; Cum să faci o m&acirc;nă mecanică sau robotizată, pentru &icirc;nvățăm&acirc;ntul gimnazial</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/RO/CNECT-2018-00222-00-15-RO-TRA-00.DOCX">Activitatea 3&nbsp;&ndash; Cum să faci o m&acirc;nă mecanică sau robotizată, pentru &icirc;nvățăm&acirc;ntul liceal</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

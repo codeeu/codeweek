@@ -20,15 +20,15 @@
                     <p>Nije neophodno prethodno iskustvo u oblasti kodiranja ili programiranja i potrebno vam je samo oko 15 minuta po modulu. Moduli vam predstavljaju ključne koncepte vezane za aktivnosti programiranja i računarskog mi&scaron;ljenja. Poreed toga, moduli vam daju praktične savjete o načinu integracije koncepata u va&scaron;u učionicu.</p>
 
                     <div class="flex flex-wrap" style="margin-bottom: 30px;">
-                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="img/learning/coding-without-computers.png"><div class="text-xl">Programiranje bez upotrebe digitalne tehnologije (unplugged)</div>
+                        <div class="learning-card"><a href="/training/coding-without-computers"> <img src="/img/learning/coding-without-computers.png"><div class="text-xl">Programiranje bez upotrebe digitalne tehnologije (unplugged)</div>
                                 <div class="text-base text-black">Pripremio Alessandro Bogliolo</div></a></div>
-                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="img/learning/computational-thinking-and-problem-solving.png"><div class="text-xl">Računarsko mi&scaron;ljenje i rje&scaron;avanje problema</div>
+                        <div class="learning-card"><a href="/training/computational-thinking-and-problem-solving"> <img src="/img/learning/computational-thinking-and-problem-solving.png"><div class="text-xl">Računarsko mi&scaron;ljenje i rje&scaron;avanje problema</div>
                                 <div class="text-base text-black">Pripremio Miles Berry</div></a></div>
-                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="img/learning/visual-programming-introduction-to-scratch.png"><div class="text-xl">Vizuelno programiranje &ndash; uvod u Skrač (Scratch)</div>
+                        <div class="learning-card"><a href="/training/visual-programming-introduction-to-scratch"> <img src="/img/learning/visual-programming-introduction-to-scratch.png"><div class="text-xl">Vizuelno programiranje &ndash; uvod u Skrač (Scratch)</div>
                                 <div class="text-base text-black">Pripremila Margo Tinawi</div></a></div>
-                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="img/learning/creating-educational-games-with-scratch.png"><div class="text-xl">Kreiranje edukativnih igara uz pomoć Skrača (Scratch)</div>
+                        <div class="learning-card"><a href="/training/creating-educational-games-with-scratch"> <img src="/img/learning/creating-educational-games-with-scratch.png"><div class="text-xl">Kreiranje edukativnih igara uz pomoć Skrača (Scratch)</div>
                                 <div class="text-base text-black">Pripremio Jes&uacute;s Moreno Le&oacute;n</div></a></div>
-                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="img/learning/making-robotics-and-tinkering-in-the-classroom.png"><div class="text-xl">Stvaranje, robotika i promi&scaron;ljanje u učionici</div>
+                        <div class="learning-card"><a href="/training/making-robotics-and-tinkering-in-the-classroom"> <img src="/img/learning/making-robotics-and-tinkering-in-the-classroom.png"><div class="text-xl">Stvaranje, robotika i promi&scaron;ljanje u učionici</div>
                                 <div class="text-base text-black">Pripremila Tullia Urschtz</div></a></div>
                     </div>
 
