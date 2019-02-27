@@ -27,16 +27,15 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Video+script.docx">Niżżel l-iskritt tal-vidjo</a></p>
 
                     <h2>Lest biex taqsam dak li tgħallimt mal-istudenti tiegħek?</h2>
 
                     <p>Agħżel wieħed mill-pjanijiet tal-lezzjoni hawn taħt u organizza attivit&agrave; mal-istudenti tiegħek.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+1_Primary.docx">Attivit&agrave; 1 &ndash;  Scratch Bażiku għall-Iskola Primarja</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+2_Secondary.docx">Attivit&agrave; 2 &ndash; Scratch Bażiku għall-ewwel livelli tal-Iskola Sekondarja</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+3_Intro+Scratch_Lesson+plan+3_Upper+Secondary.docx">Attivit&agrave; 3 &ndash;  Scratch Bażiku għall-Iskola Sekondarja</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/MT/CNECT-2018-00222-00-07-MT-TRA-00.DOCX">Attivit&agrave; 1 &ndash;  Scratch Bażiku għall-Iskola Primarja</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/MT/CNECT-2018-00222-00-08-MT-TRA-00.DOCX">Attivit&agrave; 2 &ndash; Scratch Bażiku għall-ewwel livelli tal-Iskola Sekondarja</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/MT/CNECT-2018-00222-00-09-MT-TRA-00.DOCX">Attivit&agrave; 3 &ndash;  Scratch Bażiku għall-Iskola Sekondarja</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

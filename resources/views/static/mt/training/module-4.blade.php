@@ -28,16 +28,15 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/M1zJOfmriGU"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+4_Educational_Games_Scratch+_Video+script.docx">Niżżel l-iskritt tal-vidjo</a></p>
 
                     <h2>Lest biex taqsam dak li tgħallimt mal-istudenti tiegħek?</h2>
 
                     <p>Agħżel wieħed mill-pjanijiet tal-lezzjoni hawn taħt u organizza attivit&agrave; mal-istudenti tiegħek.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+1_Primary.docx">Attivit&agrave; 1 - Logħba ta&rsquo; mistoqsijiet u tweġibiet bi Scratch għall-Iskola Primarja</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+2_Lower+Secondary.docx">Attivit&agrave; 2 - Logħba ta&rsquo; mistoqsijiet u tweġibiet bi Scratch għall-ewwel livelli tal-Iskola Sekondarja</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+3_+Secondary.docx">Attivit&agrave; 3 - Logħba ta&rsquo; mistoqsijiet u tweġibiet bi Scratch għall-Iskola Sekondarja</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/MT/CNECT-2018-00222-00-10-MT-TRA-00.DOCX">Attivit&agrave; 1 - Logħba ta&rsquo; mistoqsijiet u tweġibiet bi Scratch għall-Iskola Primarja</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/MT/CNECT-2018-00222-00-11-MT-TRA-00.DOCX">Attivit&agrave; 2 - Logħba ta&rsquo; mistoqsijiet u tweġibiet bi Scratch għall-ewwel livelli tal-Iskola Sekondarja</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/MT/CNECT-2018-00222-00-12-MT-TRA-00.DOCX">Attivit&agrave; 3 - Logħba ta&rsquo; mistoqsijiet u tweġibiet bi Scratch għall-Iskola Sekondarja</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer')
 						
 					@endif
