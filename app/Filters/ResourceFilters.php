@@ -9,7 +9,29 @@ class ResourceFilters extends Filters
      *
      * @var array
      */
-    protected $filters = ['searchInput', 'selectedLevels','selectedTypes','selectedSubjects','selectedCategories','selectedLanguages','selectedProgrammingLanguages'];
+    protected $filters = ['selectedSection', 'searchInput', 'selectedLevels', 'selectedTypes', 'selectedSubjects', 'selectedCategories', 'selectedLanguages', 'selectedProgrammingLanguages'];
+
+    /**
+     * Filter the query by section (teach or learn)
+     *
+     * @param  string $selectedSection
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    protected function selectedSection($selectedSection)
+    {
+
+
+        //if (is_null($selectedSection)) return;
+
+        if ($selectedSection === "learn") {
+            return $this->builder->where('learn', '=', true);
+        }
+
+        if ($selectedSection === "teach") {
+            return $this->builder->where('teach', '=', true);
+        }
+
+    }
 
     /**
      * Filter the query by name
@@ -20,9 +42,12 @@ class ResourceFilters extends Filters
     protected function searchInput($searchInput)
     {
         if (is_null($searchInput)) return;
-        $result = $this->builder->where('name', 'like', '%' . $searchInput . '%')
-            ->orWhere('description', 'like', '%' . $searchInput . '%')
-        ;
+
+        $result = $this->builder->where(function ($q) use ($searchInput) { // $term is the search term on the query string
+            $q->where('name', 'like', '%' . $searchInput . '%')
+                ->orWhere('description', 'like', '%' . $searchInput . '%');
+    });
+
         return $result;
     }
 
@@ -58,8 +83,7 @@ class ResourceFilters extends Filters
         return $this->builder
             ->leftJoin('resource_item_resource_type', 'resource_items.id', "=", "resource_item_resource_type.resource_item_id")
             ->whereIn('resource_item_resource_type.resource_type_id', $plucked)
-            ->groupBy('resource_items.id')
-            ;
+            ->groupBy('resource_items.id');
 
     }
 
@@ -77,8 +101,7 @@ class ResourceFilters extends Filters
         return $this->builder
             ->leftJoin('resource_item_resource_subject', 'resource_items.id', "=", "resource_item_resource_subject.resource_item_id")
             ->whereIn('resource_item_resource_subject.resource_subject_id', $plucked)
-            ->groupBy('resource_items.id')
-            ;
+            ->groupBy('resource_items.id');
 
     }
 
