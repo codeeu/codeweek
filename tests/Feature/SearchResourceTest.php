@@ -37,6 +37,22 @@ class SearchResourceTest extends TestCase
 
     }
 
+
+    /** @test */
+    public function user_can_display_teach_resources()
+    {
+        $teachItem = create('App\ResourceItem',["teach"=>1,"learn"=>0]);
+        $learnItem = create('App\ResourceItem',["teach"=>0,"learn"=>1]);
+
+
+        $this->post('/resources/search',["selectedSection" => "teach"])
+            ->assertSee($teachItem->name)
+            ->assertDontSee($learnItem->name);
+
+
+
+    }
+
     /** @test */
     public function no_filters_should_show_all_resources()
     {
@@ -44,8 +60,6 @@ class SearchResourceTest extends TestCase
         $this->post('/resources/search', [])
             ->assertSee($this->item->name)
             ->assertSee($this->item2->name);
-
-
 
     }
 

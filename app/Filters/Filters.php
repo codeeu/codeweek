@@ -3,6 +3,7 @@
 namespace App\Filters;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 abstract class Filters
 {
@@ -49,11 +50,13 @@ abstract class Filters
 
         foreach ($this->getFilters() as $filter => $value) {
             if (method_exists($this, $filter)) {
+                Log::info($filter);
                 session([$filter => $value]);
                 $this->$filter($value);
             }
         }
 
+        Log::info($this->builder->toSql());
         return $this->builder;
     }
 

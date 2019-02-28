@@ -9,7 +9,10 @@
                 {{--<h1>Resources</h1>--}}
             </div>
 
+
+
             <resource-form
+                    :section="'{{ $section }}'"
                     :levels="{{ $levels }}"
                     :programming-languages="{{ $programmingLanguages }}"
                     :languages="{{ $languages }}"

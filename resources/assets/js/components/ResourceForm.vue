@@ -112,9 +112,11 @@
             categories: Array,
             subjects: Array,
             types: Array,
+            section: String
         },
         data() {
             return {
+                selectedSection:this.section,
                 searchInput: "",
                 selectedLevels: [],
                 selectedLanguages: [],
@@ -157,6 +159,7 @@
                 this.scrollToTop();
                 this.onSubmit(true);
             },
+
             onSubmit: function(isPagination) {
                 if (!isPagination){
                     this.pagination.current_page = 1;
