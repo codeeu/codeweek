@@ -1,8 +1,9 @@
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
+<script>(function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
+        js = d.createElement(s);
+        js.id = id;
         js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2';
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
@@ -23,10 +24,23 @@
 
             <!-- Main Menu -->
             <nav id="primary-menu">
+
+
                 <ul>
                     <li class=""><a href="{{route('events_map')}}">@lang('menu.events')</a></li>
-                    <li class=""><a href="{{route('ambassadors')}}">@lang('menu.ambassadors')</a></li>
-                    <li><a href="/resources/">@lang('menu.resources')</a></li>
+
+                    <li><a href="#">@lang('menu.resources')</a>
+                        <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="{{route('resources_learn')}}">Learn</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{route('resources_teach')}}">Teach</a>
+                                        </li>
+                                    </ul>
+                    </li>
+
+
                     <li><a href="{{route('schools')}}">@lang('menu.schools')</a></li>
                     <li><a href="/about/">@lang('menu.about')</a></li>
                     <li><a href="http://blog.codeweek.eu/">@lang('menu.news')</a></li>
@@ -38,12 +52,16 @@
             <div id="twitter-feed">
                 <ul class="nav navbar navbar-right nobottommargin">
                     <li class="nav-item dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="height: 60px;display: flex;align-items: center;">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                           style="height: 60px;display: flex;align-items: center;">
                             <i class="fa fa-twitter"></i>
                             <b class="caret"></b>
                         </a>
-                        <ul class="dropdown-menu twitter-menu" role="menu" style="width: 400px;height: 820px;overflow: auto;justify-content: center;">
-                            <a class="twitter-timeline" href="https://twitter.com/CodeWeekEU" data-width="400" data-height="300" data-chrome="noscrollbar" data-link-color="#E95F28" data-tweet-limit="4"></a>
+                        <ul class="dropdown-menu twitter-menu" role="menu"
+                            style="width: 400px;height: 820px;overflow: auto;justify-content: center;">
+                            <a class="twitter-timeline" href="https://twitter.com/CodeWeekEU" data-width="400"
+                               data-height="300" data-chrome="noscrollbar" data-link-color="#E95F28"
+                               data-tweet-limit="4"></a>
                         </ul>
                     </li>
                 </ul>
@@ -53,13 +71,19 @@
             <div id="facebook-feed">
                 <ul class="nav navbar navbar-right nobottommargin">
                     <li class="nav-item dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="height: 60px;display: flex;align-items: center;justify-content: center;">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                           style="height: 60px;display: flex;align-items: center;justify-content: center;">
                             <i class="fa fa-facebook"></i>
                             <b class="caret"></b>
                         </a>
-                        <ul class="dropdown-menu twitter-menu" role="menu" style="width: 400px;height: 820px;overflow: auto;padding: 0px;">
-                            <div class="fb-page" data-width="400" data-height="815" data-href="https://www.facebook.com/codeEU" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                                <blockquote cite="https://www.facebook.com/codeEU" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/codeEU">Europe Code Week</a></blockquote>
+                        <ul class="dropdown-menu twitter-menu" role="menu"
+                            style="width: 400px;height: 820px;overflow: auto;padding: 0px;">
+                            <div class="fb-page" data-width="400" data-height="815"
+                                 data-href="https://www.facebook.com/codeEU" data-tabs="timeline"
+                                 data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+                                 data-show-facepile="true">
+                                <blockquote cite="https://www.facebook.com/codeEU" class="fb-xfbml-parse-ignore"><a
+                                            href="https://www.facebook.com/codeEU">Europe Code Week</a></blockquote>
                             </div>
                         </ul>
                     </li>
@@ -157,7 +181,8 @@
                                         Volunteers
                                     </a>
                                 </li>
-                                <li><a href="{{route('stats')}}"><i class="fa fa-thumbs-up"></i> @lang('menu.stats')</a></li>
+                                <li><a href="{{route('stats')}}"><i class="fa fa-thumbs-up"></i> @lang('menu.stats')</a>
+                                </li>
                                 @endrole
 
                                 <li>
