@@ -2,18 +2,18 @@
 
 namespace App\Console\Commands;
 
-use App\Imports\ResourcesImport;
+use App\Imports\ResourcesLearnImport;
 use Illuminate\Console\Command;
 use Maatwebsite\Excel\Facades\Excel;
 
-class ImportResources extends Command
+class ImportResourcesLearnCommand extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'import:resources';
+    protected $signature = 'import:resources:learn';
 
     /**
      * The console command description.
@@ -40,6 +40,6 @@ class ImportResources extends Command
     public function handle()
     {
         //Read the Excel Sheet
-        Excel::import(new ResourcesImport, 'resources.xlsx','excel');
+        Excel::import(new ResourcesLearnImport, 'resources.xlsx','excel');
     }
 }

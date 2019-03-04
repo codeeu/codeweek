@@ -152,5 +152,10 @@ class LanguageSeeder extends Seeder
             'name' => 'Japanese',
             'position' => 240
         ]);
+        create('App\ResourceLanguage', [
+            'id' => 25,
+            'name' => 'Montenegrin',
+            'position' => 250
+        ]);
     }
 }
