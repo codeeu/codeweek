@@ -14,7 +14,7 @@ use PhpOffice\PhpSpreadsheet\Cell\Cell;
 use PhpOffice\PhpSpreadsheet\Cell\DataType;
 use PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder;
 
-class ResourcesImport extends DefaultValueBinder implements WithCustomValueBinder, ToModel, WithHeadingRow, WithLimit
+class ResourcesLearnImport extends DefaultValueBinder implements WithCustomValueBinder, ToModel, WithHeadingRow, WithLimit
 {
 
     public function parseDate($date)
