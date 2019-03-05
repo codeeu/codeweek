@@ -9,18 +9,14 @@ class ResourcesController extends Controller
 {
     public function index($section = 'learn')
     {
-        $isLearn = false;
-        if ($section == 'learn') {
-            $isLearn = true;
-        };
 
-        $levels = \App\ResourceLevel::whereLearn($isLearn)->get();
+        $levels = \App\ResourceLevel::where($section ,"=", true)->get();
         $languages = \App\ResourceLanguage::all();
 
-        $programmingLanguages = \App\ResourceProgrammingLanguage::whereLearn($isLearn)->get();
-        $categories = \App\ResourceCategory::whereLearn($isLearn)->get();
-        $subjects = \App\ResourceSubject::whereLearn($isLearn)->get();
-        $types = \App\ResourceType::whereLearn($isLearn)->get();
+        $programmingLanguages = \App\ResourceProgrammingLanguage::where($section ,"=", true)->get();
+        $categories = \App\ResourceCategory::where($section ,"=", true)->get();
+        $subjects = \App\ResourceSubject::where($section ,"=", true)->get();
+        $types = \App\ResourceType::where($section ,"=", true)->get();
 
         return view('resources.index', compact(['programmingLanguages', 'levels', 'languages', 'categories', 'subjects', 'types','section']));
     }
