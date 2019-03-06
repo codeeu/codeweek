@@ -6,7 +6,7 @@
 
 
     @if ($section === "teach")
-        <a href="/schools">
+        <a href="/training">
             @include('static.banner_training')
         </a>
     @endif

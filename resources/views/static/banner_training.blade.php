@@ -35,16 +35,22 @@
 
         @media (min-width: 470px) {
             #banner_teacher {
-                height: 120px;
+                height: 100px;
+                margin-bottom: -20px;
+                margin-top: 20px;
             }
             #banner_teacher .banner_teacher_text{
                 font-size: 25px;
+            }
+            #banner_teacher img{
+                margin-top:0px;
             }
         }
 
         @media (min-width: 990px) {
             #banner_teacher {
                 height: 180px;
+                margin-bottom: -20px;
             }
             #banner_teacher .banner_teacher_text{
                 font-size: 35px;
@@ -54,6 +60,7 @@
         @media (min-width: 1200px) {
             #banner_teacher {
                 height: 220px;
+                margin-bottom: -30px;
             }
             #banner_teacher .banner_teacher_text{
                 font-size: 42px;
@@ -63,10 +70,11 @@
         #banner_teacher {
             display:flex;
             align-items: center;
-            margin-bottom: 30px;
+
             justify-content: center;
         }
         #banner_teacher img{
+            margin-top:-50px;
             height: 100%;
         }
 
