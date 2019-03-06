@@ -93,8 +93,8 @@
         computed: {
 
             thumbnail: function () {
-                console.log(this.resource.thumbnail);
-                if (this.resource.thumbnail.toLowerCase().startsWith('http')) {
+                //console.log(this.resource.thumbnail);
+                if (this.resource.thumbnail && this.resource.thumbnail.toLowerCase().startsWith('http')) {
                     return this.resource.thumbnail
                 }
 
@@ -102,7 +102,7 @@
             }
         },
         mounted: function () {
-            console.log("card mounted")
+            //console.log("card mounted")
         }
 
     };

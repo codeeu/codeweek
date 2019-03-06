@@ -166,7 +166,7 @@
                 }
                 axios.post('/resources/search?page=' + this.pagination.current_page, this.$data)
                     .then(response => {
-                        console.log(response.data.data);
+                        //console.log(response.data.data);
 
                         this.pagination.per_page = response.data.per_page;
                         this.pagination.current_page = response.data.current_page;
