@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+5_Making_Robotics_Tinkering+_Video+script.docx">Vide&oacute; forgat&oacute;k&ouml;nyv&eacute;nek let&ouml;lt&eacute;se</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/HU/CNECT-2018-00222-00-20-HU-TRA-00.DOCX">Vide&oacute; forgat&oacute;k&ouml;nyv&eacute;nek let&ouml;lt&eacute;se</a></p>
 
                     <h2>K&eacute;szen &aacute;ll arra, hogy megossza a tanultakat a di&aacute;kjaival?</h2>
 
                     <p>V&aacute;lasszon ki egyet az al&aacute;bbi &oacute;rav&aacute;zlatok k&ouml;z&uuml;l, &eacute;s szervezzen tev&eacute;kenys&eacute;get a di&aacute;kjaival.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+1_Primary.docx">1. tev&eacute;kenys&eacute;g: Hogyan k&eacute;sz&iacute;ts&uuml;nk mechanikus kezet kem&eacute;ny rostlemezből &aacute;ltal&aacute;nos iskol&aacute;ban?</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+2_Lower+Secondary.docx">2. tev&eacute;kenys&eacute;g: Hogyan k&eacute;sz&iacute;ts&uuml;nk mechanikus vagy robotkezet a k&ouml;z&eacute;piskola als&oacute; tagozat&aacute;n?</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+3_+Upper+Secondary.docx">3. tev&eacute;kenys&eacute;g: Hogyan k&eacute;sz&iacute;ts&uuml;nk mechanikus vagy robotkezet a k&ouml;z&eacute;piskola felső tagozat&aacute;n?</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/HU/CNECT-2018-00222-00-13-HU-TRA-00.DOCX">1. tev&eacute;kenys&eacute;g: Hogyan k&eacute;sz&iacute;ts&uuml;nk mechanikus kezet kem&eacute;ny rostlemezből &aacute;ltal&aacute;nos iskol&aacute;ban?</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/HU/CNECT-2018-00222-00-14-HU-TRA-00.DOCX">2. tev&eacute;kenys&eacute;g: Hogyan k&eacute;sz&iacute;ts&uuml;nk mechanikus vagy robotkezet a k&ouml;z&eacute;piskola als&oacute; tagozat&aacute;n?</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/HU/CNECT-2018-00222-00-15-HU-TRA-00.DOCX">3. tev&eacute;kenys&eacute;g: Hogyan k&eacute;sz&iacute;ts&uuml;nk mechanikus vagy robotkezet a k&ouml;z&eacute;piskola felső tagozat&aacute;n?</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
