@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_+Learning+Bit+2_Computational_Thinking+_Video+script.docx">Prenos besedila videoposnetka</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SL/CNECT-2018-00222-00-16-SL-TRA-00.DOCX">Prenos besedila videoposnetka</a></p>
 
                     <h2>Ste pripravljeni, da svoje znanje delite s svojimi učenci?</h2>
 
                     <p>Izberite enega od spodnjih načrtov učne ure in organizirajte dejavnost s svojimi učenci.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+1_Primary.docx">Dejavnost&nbsp;1 &ndash; Razvijanje matematičnega razmi&scaron;ljanja za osnovne &scaron;ole</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+2_Secondary.docx">Dejavnost&nbsp;2 &ndash; Spoznavanje algoritmov za nižje srednje &scaron;ole</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_+Learning+Bit+2_Computational_Thinking_+Lesson+plan+3_Upper+Secondary.docx">Dejavnost&nbsp;3 &ndash; Algoritmi za vi&scaron;je srednje &scaron;ole</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SL/CNECT-2018-00222-00-04-SL-TRA-00.DOCX">Dejavnost&nbsp;1 &ndash; Razvijanje matematičnega razmi&scaron;ljanja za osnovne &scaron;ole</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SL/CNECT-2018-00222-00-05-SL-TRA-00.DOCX">Dejavnost&nbsp;2 &ndash; Spoznavanje algoritmov za nižje srednje &scaron;ole</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SL/CNECT-2018-00222-00-06-SL-TRA-00.DOCX">Dejavnost&nbsp;3 &ndash; Algoritmi za vi&scaron;je srednje &scaron;ole</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
