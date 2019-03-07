@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/18N1CaQJ0GI "></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Video_script.docx">Prenos besedila videoposnetka</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SL/CNECT-2018-00222-00-17-SL-TRA-00.DOCX">Prenos besedila videoposnetka</a></p>
 
                     <h2>Ste pripravljeni svoje znanje deliti s svojimi učenci?</h2>
 
                     <p>Izberite enega od spodnjih načrtov učne ure in organizirajte dejavnost s svojimi učenci.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+1_Primary.docx">Dejavnost&nbsp;1 &ndash; CodyRoby za osnovne &scaron;ole</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+2_Lower+Second....docx">Dejavnost&nbsp;2 &ndash; CodyRoby za nižje srednje &scaron;ole</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson+plan+3_Secondary.docx">Dejavnost&nbsp;3 &ndash; CodyRoby za vi&scaron;je srednje &scaron;ole</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SL/CNECT-2018-00222-00-00-SL-TRA-00.DOCX">Dejavnost&nbsp;1 &ndash; CodyRoby za osnovne &scaron;ole</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SL/CNECT-2018-00222-00-02-SL-TRA-00.DOCX">Dejavnost&nbsp;2 &ndash; CodyRoby za nižje srednje &scaron;ole</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SL/CNECT-2018-00222-00-03-SL-TRA-00.DOCX">Dejavnost&nbsp;3 &ndash; CodyRoby za vi&scaron;je srednje &scaron;ole</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
