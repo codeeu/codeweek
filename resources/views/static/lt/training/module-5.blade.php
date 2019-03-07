@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+5_Making_Robotics_Tinkering+_Video+script.docx">Atsisiųsti vaizdo įra&scaron;o scenarijų</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LT/CNECT-2018-00222-00-20-LT-TRA-00.DOCX">Atsisiųsti vaizdo įra&scaron;o scenarijų</a></p>
 
                     <h2>Ar pasiruo&scaron;ę su savo mokiniais pasidalyti tuo, ką sužinojote?</h2>
 
                     <p>Pasirinkite vieną i&scaron; toliau pateiktų pamokos planų ir įgyvendinkite jį su savo mokiniais.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+1_Primary.docx">1&nbsp;veikla. Kaip sukurti mechaninę ranką i&scaron; kartono&nbsp;&ndash; pradinės mokyklos mokiniams</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+2_Lower+Secondary.docx">2&nbsp;veikla. Kaip sukurti mechaninę arba roboto ranką&nbsp;&ndash; jaunesnių klasių vidurinės mokyklos mokiniams</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+3_+Upper+Secondary.docx">3&nbsp;veikla. Kaip sukurti mechaninę arba roboto ranką&nbsp;&ndash; vyresnių klasių vidurinės mokyklos mokiniams</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LT/CNECT-2018-00222-00-13-LT-TRA-00.DOCX">1&nbsp;veikla. Kaip sukurti mechaninę ranką i&scaron; kartono&nbsp;&ndash; pradinės mokyklos mokiniams</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LT/CNECT-2018-00222-00-14-LT-TRA-00.DOCX">2&nbsp;veikla. Kaip sukurti mechaninę arba roboto ranką&nbsp;&ndash; jaunesnių klasių vidurinės mokyklos mokiniams</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LT/CNECT-2018-00222-00-15-LT-TRA-00.DOCX">3&nbsp;veikla. Kaip sukurti mechaninę arba roboto ranką&nbsp;&ndash; vyresnių klasių vidurinės mokyklos mokiniams</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
