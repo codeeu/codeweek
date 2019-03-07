@@ -24,16 +24,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/M1zJOfmriGU"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+4_Educational_Games_Scratch+_Video+script.docx">Vide&oacute; forgat&oacute;k&ouml;nyv&eacute;nek let&ouml;lt&eacute;se</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/HU/CNECT-2018-00222-00-19-HU-TRA-00.DOCX">Vide&oacute; forgat&oacute;k&ouml;nyv&eacute;nek let&ouml;lt&eacute;se</a></p>
 
                     <h2>K&eacute;szen &aacute;ll arra, hogy megossza a tanultakat a di&aacute;kjaival?</h2>
 
                     <p>V&aacute;lasszon ki egyet az al&aacute;bbi &oacute;rav&aacute;zlatok k&ouml;z&uuml;l, &eacute;s szervezzen tev&eacute;kenys&eacute;get a di&aacute;kjaival.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+1_Primary.docx">1. tev&eacute;kenys&eacute;g: K&eacute;rd&eacute;sek &eacute;s v&aacute;laszok a Scratch seg&iacute;ts&eacute;g&eacute;vel az &aacute;ltal&aacute;nos iskol&aacute;ban</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+2_Lower+Secondary.docx">2. tev&eacute;kenys&eacute;g: K&eacute;rd&eacute;sek &eacute;s v&aacute;laszok a Scratch seg&iacute;ts&eacute;g&eacute;vel a k&ouml;z&eacute;piskola als&oacute; tagozat&aacute;ban</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+3_+Secondary.docx">3. tev&eacute;kenys&eacute;g: K&eacute;rd&eacute;sek &eacute;s v&aacute;laszok a Scratch seg&iacute;ts&eacute;g&eacute;vel a k&ouml;z&eacute;piskola felső tagozat&aacute;ban</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/HU/CNECT-2018-00222-00-10-HU-TRA-00.DOCX">1. tev&eacute;kenys&eacute;g: K&eacute;rd&eacute;sek &eacute;s v&aacute;laszok a Scratch seg&iacute;ts&eacute;g&eacute;vel az &aacute;ltal&aacute;nos iskol&aacute;ban</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/HU/CNECT-2018-00222-00-11-HU-TRA-00.DOCX">2. tev&eacute;kenys&eacute;g: K&eacute;rd&eacute;sek &eacute;s v&aacute;laszok a Scratch seg&iacute;ts&eacute;g&eacute;vel a k&ouml;z&eacute;piskola als&oacute; tagozat&aacute;ban</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/HU/CNECT-2018-00222-00-12-HU-TRA-00.DOCX">3. tev&eacute;kenys&eacute;g: K&eacute;rd&eacute;sek &eacute;s v&aacute;laszok a Scratch seg&iacute;ts&eacute;g&eacute;vel a k&ouml;z&eacute;piskola felső tagozat&aacute;ban</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
