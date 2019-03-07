@@ -76,6 +76,7 @@ return [
         'private business' => 'Private Business',
         'other' => 'Other',
     ],
+
     'audience' => [
         'Pre-school children' => 'Pre-school children',
         'Elementary school students' => 'Elementary school students',
@@ -129,6 +130,15 @@ return [
         'Webinar'=>'Webinar',
         'Live Streaming Session'=>'Live Streaming Session',
         'Other'=>'Other'
+    ],
+    'activitytype' => [
+        'label' => 'Activity Type',
+        'placeholder' => '',
+        'open online' => 'Open online activity',
+        'invite online' => 'Invite-only online activity',
+        'open in person' => 'Open in-person activity',
+        'invite in person' => 'Invite-only in-person activity'
+
     ],
 
     'More'=>'More',
