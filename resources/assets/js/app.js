@@ -29,6 +29,7 @@ import Multiselect from './components/Multiselect.vue';
 import AutocompleteGeo from './components/AutoCompleteGeo.vue'
 import Autocomplete from 'v-autocomplete'
 import ResourceForm from './components/ResourceForm.vue'
+import SearchPageComponent from './components/SearchPageComponent.vue'
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -57,7 +58,8 @@ const app = new Vue({
         Multiselect,
         AutocompleteGeo,
         Autocomplete,
-        ResourceForm
+        ResourceForm,
+        SearchPageComponent
 
     }
 });

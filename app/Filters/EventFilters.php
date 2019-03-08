@@ -13,7 +13,7 @@ class EventFilters extends Filters
      *
      * @var array
      */
-    protected $filters = ['country_iso', 'q', 'theme', 'audience','year', 'creator_id'];
+    protected $filters = ['countries', 'query', 'themes', 'audiences','year', 'creator_id'];
 
     public function __construct(Request $request)
     {
@@ -33,10 +33,13 @@ class EventFilters extends Filters
      * @param  string $country_iso
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    protected function country_iso($country_iso)
+    protected function countries($countries)
     {
-        if ($country_iso== "") return;
-        $result = $this->builder->where('country_iso', $country_iso);
+        if (empty($countries)) return;
+
+        $countriesIn = collect($countries)->pluck('iso')->all();
+
+        $result = $this->builder->whereIn('country_iso', $countriesIn);
         return $result;
     }
 
@@ -53,28 +56,38 @@ class EventFilters extends Filters
 
     }
 
-    protected function q($q)
+    protected function query($query)
     {
-        return $this->builder->where('title', 'LIKE', "%{$q}%");
-
+        return $this->builder->where(function ($queryInside) use ($query){
+            $queryInside->where('title', 'LIKE', "%$query%")
+                ->orWhere('description', 'LIKE', "%$query%");
+        });
     }
 
-    protected function theme($themes)
+    protected function themes($themes)
     {
+
+        if (empty($themes)) return;
+
+        $themesIds = collect($themes)->pluck('id')->all();
 
         return $this->builder
             ->leftJoin('event_theme', 'events.id', "=", "event_theme.event_id")
-            ->whereIn('event_theme.theme_id', $themes);
+            ->whereIn('event_theme.theme_id', $themesIds);
 
 
     }
 
-    protected function audience($audiences)
+    protected function audiences($audiences)
     {
+
+        if (empty($audiences)) return;
+
+        $audiencesIds = collect($audiences)->pluck('id')->all();
 
         return $this->builder
             ->leftJoin('audience_event', 'events.id', "=", "audience_event.event_id")
-            ->whereIn('audience_event.audience_id', $audiences);
+            ->whereIn('audience_event.audience_id', $audiencesIds);
 
     }
 }
