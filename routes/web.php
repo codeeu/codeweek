@@ -75,6 +75,7 @@ Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCall
 Route::get('/my', 'EventController@my')->middleware('auth')->name('my_events');
 Route::get('/my/reportable', 'EventController@myreportable')->middleware('auth')->name('my_reportable_events');
 Route::get('/search', 'SearchController@search')->name('search_event');
+Route::post('/search', 'SearchController@searchPOST')->name('search_events');
 Route::get('/scoreboard', 'ScoreboardController@index')->name('scoreboard');
 Route::patch('user', 'UserController@update')->name('user.update')->middleware('auth');
 Route::get('view/{event}/{slug}', 'EventController@show')->name('view_event');
