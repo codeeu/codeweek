@@ -261,6 +261,7 @@
         flex: 1;
         justify-content: end;
         display: flex;
+        display: -webkit-box;
     }
 
     .searchbox-container{
