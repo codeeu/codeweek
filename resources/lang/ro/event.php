@@ -122,13 +122,16 @@ return [
         'phrase6'=>'e-mail',
         'phrase7'=>'Puteți distribui codul dumneavoastră Săptămâna programării pentru toți și altora:'
     ],
-    'activity_type'=>[
-        'Event'=>'Eveniment',
-        'Lesson'=>'Lecție',
-        'Workshop'=>'Atelier',
-        'Webinar'=>'Webinar',
-        'Live Streaming Session'=>'Sesiune de Streaming Live',
-        'Other'=>'Altele'
+    'activitytype' => [
+        'label' => 'Tip de activitate',
+        'placeholder' => '',
+        'open online' => 'Activitate on-line',
+        'invite online' => 'Activitate on-line privată',
+        'open in person' => 'Activitate off-line',
+        'invite in person' => 'Activitate off-line privată'
+
     ]
+
+
 
 ];

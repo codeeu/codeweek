@@ -122,13 +122,20 @@ return [
         'phrase6'=>'e-mail',
         'phrase7'=>'Je kunt je Code Week 4 All-code delen met andere mensen:'
     ],
-    'activity_type'=>[
-        'Event'=>'Evenement',
-        'Lesson'=>'Les',
-        'Workshop'=>'Workshop',
-        'Webinar'=>'Webinar',
-        'Live Streaming Session'=>'Live streaming-sessie',
-        'Other'=>'Overige'
+    'activitytype' => [
+        'label' => 'Type activiteit',
+        'placeholder' => '',
+        'open online' => 'Online activiteit - open voor iedereen',
+        'invite online' => 'Online activiteit - alleen met uitnodiging',
+        'open in person' => 'Offline activiteit - open voor iedereen',
+        'invite in person' => 'Offline activiteit - alleen met uitnodiging'
+
     ]
+
+
+
+
+
+
 
 ];

@@ -122,13 +122,19 @@ return [
         'phrase6'=>'e-mailt',
         'phrase7'=>'„Programozási hét mindenkinek” kódját megoszthatja másokkal is:'
     ],
-    'activity_type'=>[
-        'Event'=>'Esemény',
-        'Lesson'=>'Lecke',
-        'Workshop'=>'Workshop',
-        'Webinar'=>'Webes szeminárium',
-        'Live Streaming Session'=>'Élõ közvetítés',
-        'Other'=>'Egyéb'
+    'activitytype' => [
+        'label' => 'Esemény típusa',
+        'placeholder' => '',
+        'open online' => 'Nyilt online tevékenység',
+        'invite online' => 'Csak meghívottaknak szóló online tevékenység',
+        'open in person' => 'Nyilt személyes (offline) tevékenység',
+        'invite in person' => 'Csak meghívottaknak szóló személyes (offline) tevékenység'
+
     ]
+
+
+
+
+
 
 ];

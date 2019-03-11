@@ -122,13 +122,20 @@ return [
         'phrase6'=>'e-poštu',
         'phrase7'=>'Možete podijeliti svoj kod Sedmice kodiranja za sve s drugima.'
     ],
-    'activity_type'=>[
-        'Event'=>'Događaj',
-        'Lesson'=>'Lekcija',
-        'Workshop'=>'Radionica',
-        'Webinar'=>'Vebinar',
-        'Live Streaming Session'=>'Sesija emitovanja uživo',
-        'Other'=>'Ostalo'
+    'activitytype' => [
+        'label' => 'Tip aktivnosti',
+        'placeholder' => '',
+        'open online' => 'Online aktivnost slobodnog učešća',
+        'invite online' => 'Online aktivnost po pozivu',
+        'open in person' => 'Aktivnost slobodnog učešća',
+        'invite in person' => 'Aktivnost po pozivu'
+
     ]
+
+
+
+
+
+
 
 ];

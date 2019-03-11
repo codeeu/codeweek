@@ -122,13 +122,20 @@ return [
         'phrase6'=>'e-mail',
         'phrase7'=>'Możesz udostępnić kod uczestnictwa w Tygodniu kodowania dla wszystkich innym osobom:'
     ],
-    'activity_type'=>[
-        'Event'=>'Wydarzenie',
-        'Lesson'=>'Lekcja',
-        'Workshop'=>'Warsztat',
-        'Webinar'=>'Webinar',
-        'Live Streaming Session'=>'Sesja transmitowana na żywo',
-        'Other'=>'Inny'
+    'activitytype' => [
+        'label' => 'Rodzaj sesji',
+        'placeholder' => '',
+        'open online' => 'Sesja online - ogólnodostępna',
+        'invite online' => 'Sesja online - na zaproszenie',
+        'open in person' => 'Sesja offline - ogólnodostępna',
+        'invite in person' => 'Sesja offline - na zaproszenie'
+
     ]
+
+
+
+
+
+
 
 ];

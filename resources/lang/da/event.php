@@ -122,13 +122,15 @@ return [
         'phrase6'=>'e-mail',
         'phrase7'=>'Du kan dele din Codeweek for all-kode med andre:'
     ],
-    'activity_type'=>[
-        'Event'=>'Arrangement',
-        'Lesson'=>'Lektion',
-        'Workshop'=>'Workshop',
-        'Webinar'=>'Webinar',
-        'Live Streaming Session'=>'Livestreamingsession',
-        'Other'=>'Andet'
+    'activitytype' => [
+        'label' => 'Aktivitetstype',
+        'placeholder' => '',
+        'open online' => 'Åben online aktivitet',
+        'invite online' => 'Online aktivitet for inviterede',
+        'open in person' => 'Åben personlig aktivitet',
+        'invite in person' => 'Personlig aktivitet for inviterede'
+
     ]
+
 
 ];
