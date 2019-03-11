@@ -122,13 +122,19 @@ return [
         'phrase6'=>'e-mail',
         'phrase7'=>'Svůj kód Codeweek for all můžete sdílet s dalšími lidmi:'
     ],
-    'activity_type'=>[
-        'Event'=>'Akce',
-        'Lesson'=>'Lekce',
-        'Workshop'=>'Seminář',
-        'Webinar'=>'Webinář',
-        'Live Streaming Session'=>'Živě streamovaná akce',
-        'Other'=>'Jiné'
+    'activitytype' => [
+        'label' => 'Typ Aktivity',
+        'placeholder' => '',
+        'open online' => 'Veřejná online aktivita',
+        'invite online' => 'Privátní online aktivita',
+        'open in person' => 'Veřejná osobní aktivita',
+        'invite in person' => 'Privátní osobní aktivita'
+
     ]
+
+
+
+
+
 
 ];

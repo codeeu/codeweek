@@ -122,13 +122,20 @@ return [
         'phrase6'=>'e-posta gönderin',
         'phrase7'=>'Herkes için kod haftası kodunuzu diğer kişilerle paylaşabilirsiniz:'
     ],
-    'activity_type'=>[
-        'Event'=>'Etkinlik',
-        'Lesson'=>'Ders',
-        'Workshop'=>'Atölye',
-        'Webinar'=>'Web Semineri',
-        'Live Streaming Session'=>'Canlı Yayın',
-        'Other'=>'Diğer'
+    'activitytype' => [
+        'label' => 'Etkinlik türü',
+        'placeholder' => '',
+        'open online' => 'Açık çevrimiçi etkinlik',
+        'invite online' => 'Sadece davet ile çevrimiçi etkinlik',
+        'open in person' => 'Açık yüz yüze etkinlik',
+        'invite in person' => 'Sadece davetiye ile yüz yüze etkinlik'
+
     ]
+
+
+
+
+
+
 
 ];

@@ -122,13 +122,15 @@ return [
         'phrase6'=>'имейл',
         'phrase7'=>'Можете да споделите вашия код за Codeweek for all с други хора:'
     ],
-    'activity_type'=>[
-        'Event'=>'Събитие',
-        'Lesson'=>'Урок',
-        'Workshop'=>'Семинар',
-        'Webinar'=>'Уебинар',
-        'Live Streaming Session'=>'Предаване на живо',
-        'Other'=>'Друго'
+    'activitytype' => [
+        'label' => 'Тип мероприятие',
+        'placeholder' => '',
+        'open online' => 'Онлайн мероприятие с отворен достъп',
+        'invite online' => 'Онлайн мероприятие с ограничен достъп',
+        'open in person' => 'Мероприятие с отворен достъп',
+        'invite in person' => 'Мероприятие с ограничен достъп'
+
     ]
+
 
 ];

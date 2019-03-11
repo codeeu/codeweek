@@ -122,13 +122,20 @@ return [
         'phrase6'=>'courrier électronique',
         'phrase7'=>'Vous pouvez partager votre code «Code Week 4 All» avec d’autres personnes:'
     ],
-    'activity_type'=>[
-        'Event'=>'Événement',
-        'Lesson'=>'Leçon',
-        'Workshop'=>'Atelier',
-        'Webinar'=>'Webinaire',
-        'Live Streaming Session'=>'Session de diffusion en direct',
-        'Other'=>'Autre'
+    'activitytype' => [
+        'label' => 'Type d\'activité',
+        'placeholder' => '',
+        'open online' => 'Activité en ligne',
+        'invite online' => 'Activité en ligne privée',
+        'open in person' => 'Activité hors-ligne',
+        'invite in person' => 'Activité hors-ligne privée'
+
     ]
+
+
+
+
+
+
 
 ];

@@ -122,13 +122,20 @@ return [
         'phrase6'=>'sähköpostiviesti.',
         'phrase7'=>'Voit antaa Kaikkien koodausviikko -koodin myös ystävillesi:'
     ],
-    'activity_type'=>[
-        'Event'=>'Tapahtuma',
-        'Lesson'=>'Oppitunti',
-        'Workshop'=>'Työpaja',
-        'Webinar'=>'Webinaari',
-        'Live Streaming Session'=>'Live-suoratoistotapahtuma',
-        'Other'=>'Muu'
+    'activitytype' => [
+        'label' => 'Toiminnan tyyppi',
+        'placeholder' => '',
+        'open online' => 'Avoin online-toiminta',
+        'invite online' => 'Online-toiminta vain kutsutuille',
+        'open in person' => 'Avoin toiminta',
+        'invite in person' => 'Toiminta vain kutsutuille'
+
     ]
+
+
+
+
+
+
 
 ];

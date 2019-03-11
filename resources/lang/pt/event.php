@@ -122,13 +122,20 @@ return [
         'phrase6'=>'mensagem de correio eletrónico',
         'phrase7'=>'Pode partilhar o seu código Codeweek4All com outras pessoas:'
     ],
-    'activity_type'=>[
-        'Event'=>'Evento',
-        'Lesson'=>'Aula',
-        'Workshop'=>'Workshop',
-        'Webinar'=>'Webinário',
-        'Live Streaming Session'=>'Sessão de transmissão em direto via Internet',
-        'Other'=>'Outro'
+    'activitytype' => [
+        'label' => 'Tipo de atividade',
+        'placeholder' => '',
+        'open online' => 'Atividade conectada aberta',
+        'invite online' => 'Atividade privada conectada',
+        'open in person' => 'Atividade em pessoa aberta',
+        'invite in person' => 'Atividade em pessoa privada'
+
     ]
+
+
+
+
+
+
 
 ];
