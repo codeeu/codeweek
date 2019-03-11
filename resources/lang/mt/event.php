@@ -122,13 +122,20 @@ return [
         'phrase6'=>'ittra elettronika',
         'phrase7'=>'Tista’ taqsam il-kodiċi tiegħek għall-Ġimga tal-Ikkowdjar għal Kulħadd ma’ persuni oħra:'
     ],
-    'activity_type'=>[
-        'Event'=>'Avveniment',
-        'Lesson'=>'Lezzjoni',
-        'Workshop'=>'Sessjoni ta’ ħidma',
-        'Webinar'=>'Webinar',
-        'Live Streaming Session'=>'Sessjoni ta’ Xandir Dirett',
-        'Other'=>'Oħrajn'
+    'activitytype' => [
+        'label' => 'Tip ta’ Attività',
+        'placeholder' => '',
+        'open online' => 'Attività miftuħa online',
+        'invite online' => 'Stedina għal attività online biss',
+        'open in person' => 'Attività miftuħa għal kulħadd',
+        'invite in person' => 'Attività għal persuni mistiedna'
+
     ]
+
+
+
+
+
+
 
 ];

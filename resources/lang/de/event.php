@@ -122,13 +122,21 @@ return [
         'phrase6'=>'E-Mail',
         'phrase7'=>'Sie können Ihren „Code Week für alle“-Code mit anderen Menschen teilen:'
     ],
-    'activity_type'=>[
-        'Event'=>'Veranstaltung',
-        'Lesson'=>'Unterricht',
-        'Workshop'=>'Workshop',
-        'Webinar'=>'Webinar',
-        'Live Streaming Session'=>'Tagung im Live-Stream',
-        'Other'=>'Sonstige'
+    'activitytype' => [
+        'label' => 'Veranstaltungsart',
+        'placeholder' => '',
+        'open online' => 'Offene Onlineveranstaltung',
+        'invite online' => 'Onlineveranstaltung für geladene Gäste',
+        'open in person' => 'Offene Veranstaltung',
+        'invite in person' => 'Veranstaltung für geladene Gäste'
+
     ]
+
+
+
+
+
+
+
 
 ];

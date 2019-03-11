@@ -122,13 +122,20 @@ return [
         'phrase6'=>'e-kiri.',
         'phrase7'=>'Oma Code Week 4 All koodi võid ka teistele jagada:'
     ],
-    'activity_type'=>[
-        'Event'=>'Üritus',
-        'Lesson'=>'Õppetund',
-        'Workshop'=>'Töötuba',
-        'Webinar'=>'Veebiseminar',
-        'Live Streaming Session'=>'Reaalajas striiming',
-        'Other'=>'Muu'
+    'activitytype' => [
+        'label' => 'Tegevuse tüüp',
+        'placeholder' => '',
+        'open online' => 'Avatud online tegevus',
+        'invite online' => 'Online tegevus kutsega',
+        'open in person' => 'Avalik-isiklik tegevus',
+        'invite in person' => 'Privaatkutsega tegevus'
+
     ]
+
+
+
+
+
+
 
 ];
