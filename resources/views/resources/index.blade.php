@@ -5,22 +5,24 @@
           rel="stylesheet" type="text/css"/>
 
 
-    @if ($section === "teach")
-        <a href="/schools">
-            @include('static.banner_training')
-        </a>
-    @endif
 
 
 
 
-    <div class="container resources-container">
 
-        <div class="flex flex-col justify-center text-center w-full uppercase">
-            {{--<h1>Resources</h1>--}}
+    <div class="resources-container">
 
+        <div class="flex flex-col justify-center text-center w-full">
+        @if ($section === "teach")
+
+            <div class="container">
+                <a href="/training">
+                    <img src="/img/banner_training.svg" class="lg:-mt-6">
+                </a>
+            </div>
+
+        @endif
         </div>
-
 
         <resource-form
                 :section="'{{ $section }}'"
@@ -34,7 +36,6 @@
 
 
     </div>
-    </section>
 
 
 @endsection
