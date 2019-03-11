@@ -10,18 +10,17 @@
 
 
 
-    <div class="container resources-container">
+    <div class="resources-container">
 
         <div class="flex flex-col justify-center text-center w-full">
         @if ($section === "teach")
 
-
-
+            <div class="container">
                 <a href="/training">
                     <img src="/img/banner_training.svg" class="lg:-mt-6">
                 </a>
+            </div>
 
-            
         @endif
         </div>
 
@@ -37,7 +36,6 @@
 
 
     </div>
-    </section>
 
 
 @endsection

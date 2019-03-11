@@ -1,16 +1,16 @@
 <template>
 
-    <div class="min-w-full mr-4 mt-4 flex">
+    <div class="min-w-full flex flex-col">
 
-        <div class="flex flex-col border-grey-lighter border-2 justify-between">
+        <div class="flex flex-col justify-between">
             <img class="w-48 block rounded-b"
                  :src="thumbnail">
 
-            <a :href="resource.source"
+            <a :href="resource.source" target="_blank"
                class="mt-2 text-center inline-block border text-base m-1 border-orange bg-orange-light rounded hover:border-orange-dark text-grey-lighter hover:bg-orange-dark hover:text-orange-lighter py-0 px-1">Visit</a>
         </div>
 
-        <div class="w-full border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+        <div class="w-full bg-white p-4 flex flex-col justify-between leading-normal">
             <div class="mb-8">
                 <div class="text-black font-bold text-xl mb-2">{{resource.name}}</div>
                 <div class="text-grey-darker text-base"><span class="text-black font-bold">Description:</span>
@@ -110,3 +110,40 @@
 
 
 
+<style scoped>
+    .card{
+        border-width: 1px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+    }
+    .card:hover{
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.30);
+    }
+    .card-group{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card img{
+        width:100%;
+        object-fit: cover;
+        height: 200px;
+        background-color: white;
+        border-radius: 8px 8px 0px 0px;
+        border-bottom: 1px solid #EEEEEE;
+    }
+    .card-body{
+        padding:15px;
+    }
+    .card-title{
+        font-size:20px;
+        height:60px;
+        overflow:hidden;
+    }
+    .card-description{
+        font-size:15px;
+        overflow: hidden;
+        padding-top: 10px;
+        height: 140px;
+        color:black;
+    }
+
+</style>
