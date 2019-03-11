@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/18N1CaQJ0GI "></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Video_script.docx">Atsisiųsti vaizdo įra&scaron;o scenarijų</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LT/CNECT-2018-00222-00-17-LT-TRA-00.DOCX">Atsisiųsti vaizdo įra&scaron;o scenarijų</a></p>
 
                     <h2>Ar pasiruo&scaron;ę su savo mokiniais pasidalyti tuo, ką sužinojote?</h2>
 
                     <p>Pasirinkite vieną i&scaron; toliau pateiktų pamokos planų ir įgyvendinkite jį su savo mokiniais.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+1_Primary.docx">1&nbsp;veikla. &bdquo;CodyRoby&ldquo; pradinės mokyklos mokiniams</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+2_Lower+Second....docx">2&nbsp;veikla. &bdquo;CodyRoby&ldquo; jaunesnių klasių vidurinės mokyklos mokiniams</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson+plan+3_Secondary.docx">3&nbsp;veikla. &bdquo;CodyRoby&ldquo; vyresnių klasių vidurinės mokyklos mokiniams</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LT/CNECT-2018-00222-00-00-LT-TRA-00.DOCX">1&nbsp;veikla. &bdquo;CodyRoby&ldquo; pradinės mokyklos mokiniams</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LT/CNECT-2018-00222-00-02-LT-TRA-00.DOCX">2&nbsp;veikla. &bdquo;CodyRoby&ldquo; jaunesnių klasių vidurinės mokyklos mokiniams</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LT/CNECT-2018-00222-00-03-LT-TRA-00.DOCX">3&nbsp;veikla. &bdquo;CodyRoby&ldquo; vyresnių klasių vidurinės mokyklos mokiniams</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

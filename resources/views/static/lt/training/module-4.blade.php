@@ -24,16 +24,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/M1zJOfmriGU"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+4_Educational_Games_Scratch+_Video+script.docx">Atsisiųsti vaizdo įra&scaron;o scenarijų</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LT/CNECT-2018-00222-00-19-LT-TRA-00.DOCX">Atsisiųsti vaizdo įra&scaron;o scenarijų</a></p>
 
                     <h2>Ar pasiruo&scaron;ę su savo mokiniais pasidalyti tuo, ką sužinojote?</h2>
 
                     <p>Pasirinkite vieną i&scaron; toliau pateiktų pamokos planų ir įgyvendinkite jį su savo mokiniais.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+1_Primary.docx">1&nbsp;veikla. Klausimai ir atsakymai apie žaidimą su &bdquo;Scratch&ldquo;&nbsp;&ndash; pradinės mokyklos mokiniams</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+2_Lower+Secondary.docx">2&nbsp;veikla. Klausimai ir atsakymai apie žaidimą su &bdquo;Scratch&ldquo;&nbsp;&ndash; jaunesnių klasių vidurinės mokyklos mokiniams</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_+EUCodeWeek_Learning+Bit+4_+Educational_Games_Scratch+Lesson+plan+3_+Secondary.docx">3&nbsp;veikla. Klausimai ir atsakymai apie žaidimą su &bdquo;Scratch&ldquo;&nbsp;&ndash; vyresnių klasių vidurinės mokyklos mokiniams</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LT/CNECT-2018-00222-00-10-LT-TRA-00.DOCX">1&nbsp;veikla. Klausimai ir atsakymai apie žaidimą su &bdquo;Scratch&ldquo;&nbsp;&ndash; pradinės mokyklos mokiniams</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LT/CNECT-2018-00222-00-11-LT-TRA-00.DOCX">2&nbsp;veikla. Klausimai ir atsakymai apie žaidimą su &bdquo;Scratch&ldquo;&nbsp;&ndash; jaunesnių klasių vidurinės mokyklos mokiniams</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LT/CNECT-2018-00222-00-12-LT-TRA-00.DOCX">3&nbsp;veikla. Klausimai ir atsakymai apie žaidimą su &bdquo;Scratch&ldquo;&nbsp;&ndash; vyresnių klasių vidurinės mokyklos mokiniams</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>

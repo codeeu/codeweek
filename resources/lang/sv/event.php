@@ -122,13 +122,20 @@ return [
         'phrase6'=>'e-postmeddelande',
         'phrase7'=>'Du kan dela din Code Week 4 All-kod med andra:'
     ],
-    'activity_type'=>[
-        'Event'=>'Evenemang',
-        'Lesson'=>'Lektion',
-        'Workshop'=>'Workshop',
-        'Webinar'=>'Webbseminarium',
-        'Live Streaming Session'=>'Livestreaming',
-        'Other'=>'Annat'
+    'activitytype' => [
+        'label' => 'Aktivitetstyp',
+        'placeholder' => '',
+        'open online' => 'Onnlineaktivitet för alla',
+        'invite online' => 'Onlineaktivitet för inbjudna',
+        'open in person' => 'Aktivitet för alla besökare',
+        'invite in person' => 'Aktivitet för inbjudna besökare'
+
     ]
+
+
+
+
+
+
 
 ];

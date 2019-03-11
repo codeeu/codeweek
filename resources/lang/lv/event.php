@@ -122,13 +122,19 @@ return [
         'phrase6'=>'e-pastu.',
         'phrase7'=>'Jūs varat kopīgot “Programmēšanas nedēļa visiem” kodu ar citiem:'
     ],
-    'activity_type'=>[
-        'Event'=>'Pasākums',
-        'Lesson'=>'Mācību stunda',
-        'Workshop'=>'Darbseminārs',
-        'Webinar'=>'Tīmekļseminārs',
-        'Live Streaming Session'=>'Tiešraides straumēšanas sesija',
-        'Other'=>'Cits'
+    'activitytype' => [
+        'label' => 'Pasākuma veids',
+        'placeholder' => '',
+        'open online' => 'Tiešsaistes aktivitāte',
+        'invite online' => 'Tiešsaistes aktivitāte, kurā dalība ar ielūgumiem',
+        'open in person' => 'Klātienes aktivitāte',
+        'invite in person' => 'Klātienes aktivitāte, kurā dalība ar ielūgumiem'
+
     ]
+
+
+
+
+
 
 ];

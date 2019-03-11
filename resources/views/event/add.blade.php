@@ -75,6 +75,29 @@
 
                         </div>
 
+                        <div class="form-group @if($errors->has('activity_type')) has-error @endif">
+                            <label for="activity_type" class="col-sm-3 control-label">
+                                * @lang('event.activitytype.label')
+                            </label>
+
+                            <div class="col-sm-9">
+
+
+                                <select id="id_activity_type" name="activity_type" class="form-control">
+                                    <option value="open-online">@lang('event.activitytype.open online')</option>
+                                    <option value="invite-online">@lang('event.activitytype.invite online')</option>
+                                    <option value="open-in-person">@lang('event.activitytype.open in person')</option>
+                                    <option value="invite-in-person">@lang('event.activitytype.invite in person')</option>
+                                    <option value="other">@lang('event.organizertype.other')</option>
+                                </select>
+
+
+                            </div>
+                            @component('components.validation-errors', ['field'=>'activity_type'])
+                            @endcomponent
+
+                        </div>
+
                         <div class="form-group @if($errors->has('description')) has-error @endif">
                             <label for="id_description" class="col-sm-3 control-label">
                                 *

@@ -26,16 +26,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+5_Making_Robotics_Tinkering+_Video+script.docx">Video metnini indirin</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/TR/CNECT-2018-00222-00-20-TR-TRA-00.DOCX">Video metnini indirin</a></p>
 
                     <h2>&Ouml;ğrendiklerinizi &ouml;ğrencilerinizle paylaşmaya hazır mısınız?</h2>
 
                     <p>Aşağıdaki ders planlarından birini se&ccedil;in ve &ouml;ğrencilerinizle bir aktivite d&uuml;zenleyin.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+1_Primary.docx">Aktivite 1 - İlkokullar i&ccedil;in mekanik duralit el yapımı</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+2_Lower+Secondary.docx">Aktivite 2 - Ortaokullar i&ccedil;in mekanik ya da robotik el yapımı</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+3_+Upper+Secondary.docx">Aktivite 3 - Liseler i&ccedil;in mekanik ya da robotik el yapımı</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/TR/CNECT-2018-00222-00-13-TR-TRA-00.DOCX">Aktivite 1 - İlkokullar i&ccedil;in mekanik duralit el yapımı</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/TR/CNECT-2018-00222-00-14-TR-TRA-00.DOCX">Aktivite 2 - Ortaokullar i&ccedil;in mekanik ya da robotik el yapımı</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/TR/CNECT-2018-00222-00-15-TR-TRA-00.DOCX">Aktivite 3 - Liseler i&ccedil;in mekanik ya da robotik el yapımı</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
