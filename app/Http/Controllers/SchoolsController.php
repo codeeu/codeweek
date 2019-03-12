@@ -20,7 +20,7 @@ class SchoolsController extends Controller
                 "button" => [
                     "show"=> true,
                     "label"=>__('schools.1.button.label'),
-                    "link"=>"/login"
+                    "link"=>"/add"
                 ],
                 "map" => false
             ],
