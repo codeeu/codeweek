@@ -22,16 +22,16 @@
                     <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
                                 src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
 
-                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+5_Making_Robotics_Tinkering+_Video+script.docx">Prenos besedila videoposnetka</a></p>
+                    <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SL/CNECT-2018-00222-00-20-SL-TRA-00.DOCX">Prenos besedila videoposnetka</a></p>
 
                     <h2>Ste pripravljeni, da svoje znanje delite s svojimi učenci?</h2>
 
                     <p>Izberite enega od spodnjih načrtov učne ure in organizirajte dejavnost s svojimi učenci.</p>
 
                     <ul>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+1_Primary.docx">Dejavnost&nbsp;1 &ndash; Kako izdelati mehansko roko iz kartona za osnovne &scaron;ole</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+2_Lower+Secondary.docx">Dejavnost&nbsp;2 &ndash; Kako izdelati mehansko ali robotsko roko za nižje srednje &scaron;ole</a></li>
-                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+3_+Upper+Secondary.docx">Dejavnost&nbsp;3 &ndash; Kako izdelati mehansko ali robotsko roko za vi&scaron;je srednje &scaron;ole</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SL/CNECT-2018-00222-00-13-SL-TRA-00.DOCX">Dejavnost&nbsp;1 &ndash; Kako izdelati mehansko roko iz kartona za osnovne &scaron;ole</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SL/CNECT-2018-00222-00-14-SL-TRA-00.DOCX">Dejavnost&nbsp;2 &ndash; Kako izdelati mehansko ali robotsko roko za nižje srednje &scaron;ole</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SL/CNECT-2018-00222-00-15-SL-TRA-00.DOCX">Dejavnost&nbsp;3 &ndash; Kako izdelati mehansko ali robotsko roko za vi&scaron;je srednje &scaron;ole</a></li>
                     </ul>@if(view()->exists('static.'.App::getLocale().'.training.footer')) @include('static.'.App::getLocale().'.training.footer') @else @include('static.en.training.footer') @endif</div>
 
             </div>
