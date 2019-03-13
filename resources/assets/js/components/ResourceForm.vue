@@ -34,7 +34,7 @@
                     <pre class="language-json"><code>{{ selectedLevels  }}</code></pre>
                 </multiselect>
 
-                <multiselect v-model="selectedProgrammingLanguages" :options="programmingLanguages"
+                <multiselect v-show="section === 'learn'" v-model="selectedProgrammingLanguages" :options="programmingLanguages"
                              :multiple="true"
                              :close-on-select="false"
                              :clear-on-select="false" :preserve-search="true"
@@ -42,6 +42,16 @@
                              label="name"
                              track-by="name" :preselect-first="false" @input="onSubmit()" class="mb-4">
                     <pre class="language-json"><code>{{ selectedProgrammingLanguages  }}</code></pre>
+                </multiselect>
+
+                <multiselect v-show="section === 'teach'" v-model="selectedSubjects" :options="subjects"
+                             :multiple="true"
+                            :close-on-select="false"
+                            :clear-on-select="false" :preserve-search="true"
+                             placeholder="Subjects"
+                            label="name"
+                            track-by="name" :preselect-first="false" @input="onSubmit()" class="mr-8 ml-8">
+                    <pre class="language-json"><code>{{ selectedSubjects  }}</code></pre>
                 </multiselect>
             </div>
 
@@ -64,16 +74,7 @@
                     <pre class="language-json"><code>{{ selectedLanguages  }}</code></pre>
                 </multiselect>
 
-                <!--<multiselect v-model="selectedSubjects" :options="subjects" :multiple="true"-->
-                             <!--:close-on-select="false"-->
-                             <!--:clear-on-select="false" :preserve-search="true" placeholder="Subjects"-->
-                             <!--label="name"-->
-                             <!--track-by="name" :preselect-first="false" @input="onSubmit()" class="mr-8 ml-8">-->
-                    <!--<template slot="selection" slot-scope="{ values, search, isOpen }"><span-->
-                            <!--class="multiselect__single"-->
-                            <!--v-if="values.length &amp;&amp; !isOpen">{{ values.length }} subjects selected</span>-->
-                    <!--</template>-->
-                <!--</multiselect>-->
+
 
             </div>
 

@@ -37,7 +37,7 @@ class ResourcesTeachImport extends DefaultValueBinder implements WithCustomValue
         if (!isset($row["name"])) {
             return null;
         }
-        Log::info($row);
+
 
         //if (is_null($row) || is_null($row["name"])) return null;
 
@@ -54,6 +54,7 @@ class ResourcesTeachImport extends DefaultValueBinder implements WithCustomValue
                 'description' => $row["description_in_progress"],
                 'source' => $row["url"],
                 'thumbnail' => $row["thumbnail"],
+                'learn' => false,
                 'teach' => true,
             ]
         );
@@ -65,6 +66,7 @@ class ResourcesTeachImport extends DefaultValueBinder implements WithCustomValue
         $item->attachLevels($row["level"]);
         $item->attachProgrammingLanguages($row["programming_language"]);
         $item->attachTypes($row["type_of_resource"]);
+        if (!is_null($row["subject"])) $item->attachSubjects($row["subject"]);
 
 
 

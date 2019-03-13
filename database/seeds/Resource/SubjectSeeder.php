@@ -97,6 +97,13 @@ class SubjectSeeder extends Seeder
             'teach' => true,
         ]);
         create('App\ResourceSubject', [
+            'id' => 20,
+            'name' => 'Music',
+            'position' => 125,
+            'learn' => false,
+            'teach' => true,
+        ]);
+        create('App\ResourceSubject', [
             'id' => 13,
             'name' => 'Natural Sciences',
             'position' => 130,
@@ -120,10 +127,19 @@ class SubjectSeeder extends Seeder
         create('App\ResourceSubject', [
             'id' => 16,
             'name' => 'Coding',
+            'position' => 35,
+            'learn' => false,
+            'teach' => true,
+        ]);
+
+        create('App\ResourceSubject', [
+            'id' => 18,
+            'name' => 'Programming',
             'position' => 160,
             'learn' => false,
             'teach' => true,
         ]);
+
         create('App\ResourceSubject', [
             'id' => 17,
             'name' => 'Special Education Needs',
@@ -131,10 +147,12 @@ class SubjectSeeder extends Seeder
             'learn' => false,
             'teach' => true,
         ]);
+
+
         create('App\ResourceSubject', [
-            'id' => 18,
+            'id' => 100,
             'name' => 'Other',
-            'position' => 180,
+            'position' => 1000,
             'learn' => false,
             'teach' => true,
         ]);
