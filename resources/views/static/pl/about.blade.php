@@ -67,6 +67,8 @@
 
                     <p>Włącz się w Europejski Tydzień Kodowania, <a href="/guide">organizując wydarzenia związane z programowaniem</a> w swoim mieście, biorąc udział w <a href="/codeweek4all">wyzwaniu w ramach Tygodnia Kodowania dla wszystkich &bdquo;Code Week 4 All&rdquo;</a> oraz innych wydarzeniach organizowanych w wielu krajach i środowiskach, a także promując wizję Tygodnia Kodowania jako <a href="/ambassadors">Ambasador Europejskiego Tygodnia Kodowania</a> w swoim kraju.</p>
 
+                    @include("static.toolkits")
+
 
                 </div>
             </div>

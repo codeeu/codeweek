@@ -67,6 +67,7 @@
 
                     <p>Participe na Semana Europeia da Programa&ccedil;&atilde;o <a href="/guide">organizando uma atividade de programa&ccedil;&atilde;o</a> na sua cidade, participando no <a href="/codeweek4all">desafio «Code Week 4 all</a>» ou ajudando-nos a transmitir a vis&atilde;o da Semana da Programa&ccedil;&atilde;o enquanto <a href="/ambassadors">embaixador da Semana Europeia da Programa&ccedil;&atilde;o</a> no seu pa&iacute;s!</p>
 
+                    @include("static.toolkits")
 
                 </div>
             </div>
