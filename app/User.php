@@ -87,6 +87,11 @@ class User extends Authenticatable
         return $this->belongsTo('App\Country', 'country_iso', 'iso');
     }
 
+    public function excellences()
+    {
+        return $this->hasMany('App\Excellence');
+    }
+
     public function scopeFilter($query, UserFilters $filters)
     {
         return $filters->apply($query);
