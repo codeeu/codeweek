@@ -68,6 +68,8 @@
                     <p>Delta i EU Code Week genom att <a href="/guide">organisera en kodningsaktivitet</a> p&aring; din ort, delta i <a href="/codeweek4all">Code Week 4 All Challenge</a> och andra aktiviteter som f&ouml;renar n&auml;rsamh&auml;llen och g&aring;r &ouml;ver gr&auml;nserna. Eller hj&auml;lp oss att sprida information om Code Week som <a href="/ambassadors">ambassad&ouml;r f&ouml;r EU Code Week</a> i ditt land!</p>
 
 
+                    @include("static.toolkits")
+
                 </div>
             </div>
         </div>

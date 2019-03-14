@@ -67,6 +67,7 @@
 
                     <p>V&aelig;r med i EU&rsquo;s kodeuge ved at <a href="/guide">afholde en kodeaktivitet</a> i din by og deltage i <a href="/codeweek4all">Code Week 4 All-udfordringen</a> og andre aktiviteter p&aring; tv&aelig;rs af lokalsamfund og gr&aelig;nser, eller hj&aelig;lp os med at udbrede budskabet om kodeugen som <a href="/ambassadors">ambassad&oslash;r for EU&rsquo;s kodeuge</a> i dit land!</p>
 
+                    @include("static.toolkits")
 
                 </div>
             </div>
