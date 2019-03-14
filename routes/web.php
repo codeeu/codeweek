@@ -81,6 +81,10 @@ Route::patch('user', 'UserController@update')->name('user.update')->middleware('
 Route::get('view/{event}/{slug}', 'EventController@show')->name('view_event');
 Route::get('events_to_report', 'ReportController@list')->name('report_list')->middleware('auth');
 Route::get('certificates', 'CertificateController@list')->name('certificates')->middleware('auth');
+
+Route::get('certificates/excellence/{edition}', 'ExcellenceController@report')->name('certificate_excellence')->middleware('auth');
+Route::post('certificates/excellence/{edition}', 'ExcellenceController@generate')->name('certificate_excellence_report')->middleware('auth');
+
 Route::get('event/edit/{event}', 'EventController@edit')->name('edit_event')->middleware('auth');
 Route::get('event/report/{event}', 'ReportController@index')->name('report_event')->middleware('auth');
 Route::post('event/report/{event}', 'ReportController@store');
