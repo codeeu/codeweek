@@ -68,6 +68,8 @@
                     <p>Alăturați-vă Săptăm&acirc;nii UE a programării prin <a href="/guide">organizarea unei activități de programare</a> &icirc;n propriul oraș, particip&acirc;nd la <a href="/codeweek4all">provocarea &bdquo;Săptăm&acirc;na programării pentru toți&rdquo;</a> și conect&acirc;nd activități &icirc;ntre comunități și peste granițe sau ajut&acirc;nd la răsp&acirc;ndirea viziunii Săptăm&acirc;nii programării &icirc;n calitate de <a href="/ambassadors">ambasador al Săptăm&acirc;nii UE a programării</a> pentru țara dumneavoastră!</p>
 
 
+                    @include("static.toolkits")
+
                 </div>
             </div>
         </div>

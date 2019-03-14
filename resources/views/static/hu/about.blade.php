@@ -67,6 +67,8 @@
 
                     <p>Csatlakozzon az eur&oacute;pai programoz&aacute;si h&eacute;thez azzal, hogy <a href="/guide">programoz&aacute;si esem&eacute;nyt szervez</a> a v&aacute;ros&aacute;ban, csatlakozik a <a href="/codeweek4all">Code Week 4 All kih&iacute;v&aacute;shoz</a>, &eacute;s k&ouml;z&ouml;ss&eacute;geken &eacute;s hat&aacute;rokon &aacute;t&iacute;velően kapcsolja &ouml;ssze a tev&eacute;kenys&eacute;geket, vagy orsz&aacute;ga <a href="/ambassadors">eur&oacute;pai programoz&aacute;si h&eacute;t&eacute;rt felelős nagyk&ouml;vetek&eacute;nt</a> seg&iacute;tsen a programoz&aacute;si h&eacute;t elk&eacute;pzel&eacute;seinek n&eacute;pszerűs&iacute;t&eacute;s&eacute;ben!</p>
 
+                    @include("static.toolkits")
+
 
                 </div>
             </div>

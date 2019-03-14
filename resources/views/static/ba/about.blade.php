@@ -68,6 +68,8 @@
                     <p>Pridružite se Sedmici kodiranja EU <a href="/guide">tako &scaron;to ćete organizirati aktivnosti kodiranja</a> u svom gradu, pridružiti se <a href="/codeweek4all">Izazovu Sedmice kodiranja za sve</a> i povezivati aktivnosti kroz zajednice i preko granica, ili nam pomoći da pro&scaron;irujemo viziju Sedmice kodiranja kao <a href="/ambassadors">ambasador Sedmice kodiranja EU</a> za svoju zemlju!</p>
 
 
+                    @include("static.toolkits")
+
                 </div>
             </div>
         </div>

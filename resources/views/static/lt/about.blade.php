@@ -68,6 +68,7 @@
                     <p>Dalyvaukite ES programavimo savaitėje&nbsp;&ndash; <a href="/guide">organizuokite programavimo renginį</a> savo mieste, prisijunkite prie <a href="/codeweek4all">&bdquo;CodeWeek4All&ldquo; i&scaron;&scaron;ūkio</a> ir renkite įvairias veiklas bendruomenėse bei kitose &scaron;alyse arba padėkite mums skleisti Programavimo savaitės idėją ir tapkite <a href="/ambassadors">ES programavimo savaitės ambasadoriumi</a> savo &scaron;alyje!</p>
 
 
+                    @include("static.toolkits")
                 </div>
             </div>
         </div>

@@ -67,6 +67,7 @@
 
                     <p>Liituge ELi programmeerimisn&auml;dalaga Code Week, <a href="/guide">korraldades oma linnas programmeerimistegevusi</a>, liitudes programmeerimisn&auml;dala v&auml;ljakutsega <a href="/codeweek4all">Code Week 4&nbsp;All</a> ning aidates &uuml;hendada erinevaid kogukondi ja rahvuseid v&otilde;i jagades programmeerimisn&auml;dala visiooni <a href="/ambassadors">oma riigi saadikuna</a>!</p>
 
+                    @include("static.toolkits")
 
                 </div>
             </div>
