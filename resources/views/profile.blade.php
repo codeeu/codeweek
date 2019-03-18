@@ -18,6 +18,12 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="email">Display Email</label>
+                    <input type="email" class="form-control" id="email_display" name="email_display" placeholder="Display Email"
+                           value="{{auth()->user()->email_display}}">
+                </div>
+
+                <div class="form-group">
                     <label for="firstname">First Name</label>
                     <input type="text" class="form-control" id="firstname" placeholder="Name" name="firstname"
                            value="{{auth()->user()->firstname}}">

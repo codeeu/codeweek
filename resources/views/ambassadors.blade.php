@@ -31,20 +31,22 @@
                             @if($country->iso === app('request')->input('country_iso'))
 
                                 <h2 class="flex justify-center text-center">
-                                 @lang('countries.'.$country->name)
+                                    @lang('countries.'.$country->name)
                                 </h2>
 
                                 @if($country->facebook)
-                                    <div class="justify-center text-center">@lang('ambassador.visit_the') <a href="{{$country->facebook}}">@lang('ambassador.local_facebook_page')</a></div>
+                                    <div class="justify-center text-center">@lang('ambassador.visit_the') <a
+                                                href="{{$country->facebook}}">@lang('ambassador.local_facebook_page')</a>
+                                    </div>
                                 @endif
 
                                 @if($country->website)
-                                    <div class="justify-center text-center mb-8">@lang('ambassador.visit_the') <a href="{{$country->website}}">@lang('ambassador.local_website')</a></div>
+                                    <div class="justify-center text-center mb-8">@lang('ambassador.visit_the') <a
+                                                href="{{$country->website}}">@lang('ambassador.local_website')</a></div>
                                 @endif
                             @endif
                         @endforeach
                     @endif
-
 
 
                     <div class="fancy-title title-border">
@@ -55,10 +57,12 @@
                     <div style="display: flex;flex-wrap: wrap;flex-direction: row;">
                         @forelse ($ambassadors as $ambassador)
 
-                            <div class="bottommargin flex" style="padding:0px 15px;flex: 0 0 {{$ambassadors->count() > 2 ? '33.3%' : '50%'}};">
+                            <div class="bottommargin flex"
+                                 style="padding:0px 15px;flex: 0 0 {{$ambassadors->count() > 2 ? '33.3%' : '50%'}};">
                                 <div class="team">
                                     <div class="team-image">
-                                        <img src="{{$ambassador->avatar}}" alt="" width="80" height="80" class="img-circle">
+                                        <img src="{{$ambassador->avatar}}" alt="" width="80" height="80"
+                                             class="img-circle">
                                     </div>
 
                                     <div class="team-desc">
@@ -69,13 +73,20 @@
                                             <p>{{ $ambassador->bio }}</p>
                                         </div>
 
-                                        @if($ambassador->email)
+                                        @if($ambassador->email_display)
+                                            <a href="mailto:{{ $ambassador->email_display }}"
+                                               class="social-icon inline-block si-small si-light si-rounded si-mail">
+                                                <i class="icon-line-mail"></i>
+                                                <i class="icon-line-mail"></i>
+                                            </a>
+                                        @elseif($ambassador->email)
                                             <a href="mailto:{{ $ambassador->email }}"
                                                class="social-icon inline-block si-small si-light si-rounded si-mail">
                                                 <i class="icon-line-mail"></i>
                                                 <i class="icon-line-mail"></i>
                                             </a>
                                         @endif
+
                                         @if($ambassador->twitter)
 
                                             <a href="http://twitter.com/{{ $ambassador->twitter }}"

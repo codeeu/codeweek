@@ -21,6 +21,7 @@ class UpdateUserTest extends TestCase
         $this->patch('user', [
             'firstname' => 'Changed firstname',
             'lastname' => 'Changed lastname',
+            'email_display' => 'new@email.com',
             'bio' => 'Changed Bio',
             'twitter' => 'Changed Twitter',
             'website' => 'Changed Website',
@@ -36,6 +37,7 @@ class UpdateUserTest extends TestCase
             $this->assertEquals('Changed Website', $user->website);
             $this->assertEquals('AA', $user->country_iso);
             $this->assertEquals(1, $user->privacy);
+            $this->assertEquals('new@email.com', $user->email_display);
 
         });
 

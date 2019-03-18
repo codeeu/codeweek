@@ -22,7 +22,8 @@ class UserController extends Controller
             'country_iso' => 'nullable',
             'twitter' => 'nullable',
             'website' => 'nullable',
-            'bio' => 'nullable'
+            'bio' => 'nullable',
+            'email_display' => 'nullable|email'
         ]));
 
         return back()->with('flash', 'Your profile has been modified!');;
