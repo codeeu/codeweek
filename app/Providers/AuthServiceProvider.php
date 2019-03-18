@@ -27,6 +27,19 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        Gate::define('report-excellence', function ($user, $edition) {
+
+            $excellences = $user->excellences;
+
+
+            $collection = $excellences->filter(
+                function($value,$key) use ($edition) {
+                    return $value->edition == $edition;
+                }
+            );
+
+
+            return $collection->count() > 0;
+        });
     }
 }

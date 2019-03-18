@@ -68,6 +68,8 @@
                     <p>Pridružite se evropskemu tednu programiranja in <a href="/guide">organizirajte programersko dejavnost</a> v svojem kraju. Pridružite se <a href="/codeweek4all">izzivu Code Week 4 All</a> in dejavnostim, ki povezujejo skupnosti in presegajo meje, ali pa nam pomagajte &scaron;iriti vizijo tedna programiranja kot <a href="/ambassadors">ambasador evropskega tedna programiranja</a> za svojo državo!</p>
 
 
+                    @include("static.toolkits")
+
                 </div>
             </div>
         </div>

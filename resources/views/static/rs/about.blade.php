@@ -67,6 +67,8 @@
 
                     <p>Pridružite se EU nedelji programiranja <a href="/guide">organizovanjem aktivnosti u vezi sa programiranjem</a> u svom gradu, učestvovanjem u <a href="/codeweek4all">izazovu Nedelja programiranja za sve</a> i povezivanjem aktivnosti sa zajednicama u zemlji i van nje, ili nam pomozite da ra&scaron;irimo viziju Nedelje programiranja kao <a href="/ambassadors">Ambasador EU nedelje programiranja</a> za va&scaron;u zemlju!</p>
 
+                    @include("static.toolkits")
+
 
                 </div>
             </div>

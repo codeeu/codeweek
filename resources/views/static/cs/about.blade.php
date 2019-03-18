@@ -67,6 +67,7 @@
 
                     <p>Zapojte se do Evropsk&eacute;ho t&yacute;dne programov&aacute;n&iacute; tak, že ve sv&eacute;m městě <a href="/guide">zorganizujte programovac&iacute; akci</a>, zapoj&iacute;te se do <a href="/codeweek4all">soutěže Code Week 4 All</a> a souvisej&iacute;c&iacute;ch akc&iacute; např&iacute;č komunitami a hranicemi nebo n&aacute;m pomozte &scaron;&iacute;řit vizi T&yacute;dne programov&aacute;n&iacute; jako <a href="/ambassadors">ambasador Evropsk&eacute;ho t&yacute;dne programov&aacute;n&iacute;</a> ve sv&eacute; zemi!</p>
 
+                    @include("static.toolkits")
 
                 </div>
             </div>

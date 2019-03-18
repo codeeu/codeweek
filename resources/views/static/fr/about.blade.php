@@ -67,6 +67,7 @@
 
                     <p>Participez &agrave; la Semaine europ&eacute;enne du Code en <a href="/guide">organisant une activit&eacute; de codage</a> dans votre ville, en participant au <a href="/codeweek4all">Code Week 4 All Challenge</a> et en participant &agrave; des activit&eacute;s transfrontali&egrave;res et intercommunautaires, ou en nous aidant &agrave; diffuser l&rsquo;initiative de la Semaine europ&eacute;enne du Code en tant qu&rsquo;<a href="/ambassadors">ambassadeur Code Week de l&rsquo;UE</a> dans votre pays!</p>
 
+                    @include("static.toolkits")
 
                 </div>
             </div>

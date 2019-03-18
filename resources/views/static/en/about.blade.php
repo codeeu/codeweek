@@ -106,6 +106,10 @@
                     </p>
 
 
+                    @include("static.toolkits")
+
+
+
                 </div>
             </div>
         </div>
