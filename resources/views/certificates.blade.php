@@ -9,11 +9,38 @@
             <h1 style="display: inline-block;">@lang('certificates.certificates_for'){{ Auth::user()->fullName }}</h1>
             <hr>
 
-            @if($reported_events->isEmpty())
+            @if($reported_events->isEmpty() && $excellence->isEmpty())
                 <div class="row">
                     <p>@lang('certificates.no_certificates')</p>
                 </div>
-            @else
+            @endif
+
+            @if(!$excellence->isEmpty())
+                <table class="table table-striped table-hover">
+                <thead class="bg-orange-light text-white">
+                <tr>
+                    <th scope="col">@lang('report.name_for_certificate.label')</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach($excellence as $certificate_of_excellence)
+                    <tr>
+
+                        <td width="*" scope="row">Certificate of Excellence {{$certificate_of_excellence->edition}} ({{$certificate_of_excellence->name_for_certificate}})</td>
+                        <td></td>
+                        <td><a title="Download your certificate" href="{{$certificate_of_excellence->certificate_url}}"><i
+                                        class="fa fa-download" aria-hidden="true"></i></a></td>
+                    </tr>
+
+                @endforeach
+                </tbody>
+                </table>
+            @endif
+
+            @if(!$reported_events->isEmpty())
+
 
                 <table class="table table-striped table-hover">
                     <thead class="bg-orange text-white">
@@ -26,12 +53,14 @@
                     </thead>
                     <tbody>
                     @foreach($reported_events as $event)
-                    <tr>
-                        <td scope="row"><a href="{{$event->certificate_url}}">{{$event->title}}</a></td>
-                        <td width="*" scope="row">{{$event->name_for_certificate}}</td>
-                        <td><a title="Edit your certificate" href="{{route('report_event',$event->id)}}"><i class="fa fa-edit" aria-hidden="true"></i></a></td>
-                        <td><a title="Download your certificate" href="{{$event->certificate_url}}"><i class="fa fa-download" aria-hidden="true"></i></a></td>
-                    </tr>
+                        <tr>
+                            <td scope="row"><a href="{{$event->certificate_url}}">{{$event->title}}</a></td>
+                            <td width="*" scope="row">{{$event->name_for_certificate}}</td>
+                            <td><a title="Edit your certificate" href="{{route('report_event',$event->id)}}"><i
+                                            class="fa fa-edit" aria-hidden="true"></i></a></td>
+                            <td><a title="Download your certificate" href="{{$event->certificate_url}}"><i
+                                            class="fa fa-download" aria-hidden="true"></i></a></td>
+                        </tr>
                     @endforeach
 
                     </tbody>

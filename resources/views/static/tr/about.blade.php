@@ -72,6 +72,8 @@
                     <p>Şehrinizde bir <a href="/guide">kodlama aktivitesi d&uuml;zenleyerek</a>, <a href="/codeweek4all">Herkes i&ccedil;in Kod Haftası M&uuml;cadelesine</a> katılarak ve topluluklarla sınırlar arasındaki etkinlikleri birleştirerek ya da &uuml;lkenizin <a href="/ambassadors">AB Kod Haftası El&ccedil;isi</a> olarak Kod Haftasının vizyonunu yaymamıza yardım ederek AB Kod haftasına katılabilirsiniz!</p>
 
 
+                    @include("static.toolkits")
+
                 </div>
             </div>
         </div>

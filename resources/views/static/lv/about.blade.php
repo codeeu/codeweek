@@ -67,6 +67,7 @@
 
                     <p>Pievienojieties ES programmē&scaron;anas nedēļai, <a href="/guide">organizējot programmē&scaron;anas pasākumu</a> savā pilsētā, pievienojoties <a href="/codeweek4all">&ldquo;Programmē&scaron;anas nedēļas visiem&rdquo; spēku pārbaudei</a> un veidojot sadarbību starp pasākumiem dažādās kopienās un valstīs vai palīdzot mums popularizēt programmē&scaron;ana nedēļu, kļūstot par <a href="/ambassadors">ES programmē&scaron;anas nedēļas vēstnieku</a> savā valstī!</p>
 
+                    @include("static.toolkits")
 
                 </div>
             </div>

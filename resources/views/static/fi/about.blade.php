@@ -67,6 +67,7 @@
 
                     <p>Osallistu EU:n koodausviikkoon <a href="/guide">j&auml;rjest&auml;m&auml;ll&auml; koodaustapahtuma</a> omassa kaupungissasi, liittym&auml;ll&auml; <a href="/codeweek4all">Koodausviikko kaikille -haasteeseen</a> ja yhdist&auml;m&auml;ll&auml; eri yhteis&ouml;iss&auml; ja maissa j&auml;rjestett&auml;vi&auml; tapahtumia tai tekem&auml;ll&auml; koodausviikkoa tunnetuksi oman maasi <a href="/ambassadors">EU:n koodausviikkol&auml;hettil&auml;&auml;n&auml;</a>!</p>
 
+                    @include("static.toolkits")
 
                 </div>
             </div>

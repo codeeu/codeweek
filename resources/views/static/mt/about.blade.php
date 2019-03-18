@@ -71,6 +71,8 @@
 
                     <p>Ingħaqad mal-Ġimgħa tal-UE tal-Ikkowdjar billi <a href="/guide">torganizza attivit&agrave; tal-ikkowdjar</a> fir-raħal tiegħek, billi tingħaqad fl-<a href="/codeweek4all">Isfida Ġimgħa tal-Ikkowdjar għal Kulħadd</a> u billi tgħaqqad attivitajiet madwar il-komunitajiet u l-fruntieri, jew billi tgħinna nxerrdu l-viżjoni tal-Ġimgħa tal-Ikkowdjar bħala <a href="/ambassadors">Ambaxxatur tal-Ġimgħa tal-UE tal-Ikkowdjar</a> għal pajjiżek!</p>
 
+                    @include("static.toolkits")
+
 
                 </div>
             </div>
