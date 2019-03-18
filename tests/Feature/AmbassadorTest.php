@@ -93,6 +93,21 @@ class AmbassadorTest extends TestCase
     }
 
     /** @test */
+    public function display_email_should_be_used_if_present()
+    {
+
+        $ambassador = create('App\User', ['country_iso' => $this->belgium->iso,'email_display'=>'foo@bar.com'])->assignRole('ambassador');
+
+        $this->withExceptionHandling();
+
+        $this->get('/ambassadors?country_iso=BE')->assertSee($ambassador->email_display);
+
+        $this->get('/ambassadors?country_iso=BE')->assertDontSee($ambassador->email);
+
+
+    }
+
+    /** @test */
     public function signedin_users_should_see_their_country_ambassadors()
     {
 
