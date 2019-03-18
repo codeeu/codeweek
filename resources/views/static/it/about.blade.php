@@ -67,6 +67,7 @@
 
                     <p>Unisciti alla Settimana europea della programmazione <a href="/guide">organizzando un&rsquo;attivit&agrave; di programmazione</a> nella tua citt&agrave;, partecipando alla <a href="/codeweek4all">sfida Code Week 4 All</a> e collegando attivit&agrave; tra comunit&agrave; e confini, oppure aiutandoci a diffondere la visione della Settimana della programmazione in qualit&agrave; di <a href="/ambassadors">ambasciatore della Settimana europea della programmazione</a> del tuo paese!</p>
 
+                    @include("static.toolkits")
 
                 </div>
             </div>
