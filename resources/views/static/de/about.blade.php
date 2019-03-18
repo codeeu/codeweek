@@ -68,6 +68,8 @@
                     <p>Beteiligen Sie sich an der EU Code Week, indem Sie in Ihrer Stadt <a href="/guide">eine Programmiert&auml;tigkeit ausrichten</a>, an der <a href="/codeweek4all">Code Week 4 All Challenge</a> teilnehmen und Aktivit&auml;ten gemeinde- und grenz&uuml;bergreifend vernetzen oder indem Sie uns dabei helfen, die Vision der Code Week als <a href="/ambassadors">EU Code Week-Botschafter*in</a> f&uuml;r Ihr Land zu verbreiten!</p>
 
 
+                    @include("static.toolkits")
+
                 </div>
             </div>
         </div>

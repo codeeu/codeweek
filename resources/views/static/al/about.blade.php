@@ -68,6 +68,8 @@
                     <p>B&euml;huni pjes&euml; e EU Code Week <a href="/guide">duke organizuar nj&euml; aktivitet kodimi</a> n&euml; qytetin tuaj, duke u b&euml;r&euml; pjes&euml; e <a href="/codeweek4all">Sfid&euml;s Code Week 4 All</a> dhe duke u lidhur me aktivitete n&euml;p&euml;r komunitete dhe p&euml;rtej kufijve ose duke na ndihmuar t&euml; p&euml;rhapim vizionin e Code si <a href="/ambassadors">Ambasador i EU Code Week</a> p&euml;r vendin tuaj!</p>
 
 
+                    @include("static.toolkits")
+
                 </div>
             </div>
         </div>
