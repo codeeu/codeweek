@@ -122,13 +122,21 @@ return [
         'phrase6'=>'un’e-mail',
         'phrase7'=>'Puoi condividere il tuo codice Codeweek for all con altre persone:'
     ],
-    'activity_type'=>[
-        'Event'=>'Evento',
-        'Lesson'=>'Lezione',
-        'Workshop'=>'Laboratorio',
-        'Webinar'=>'Webinar',
-        'Live Streaming Session'=>'Sessione in live streaming',
-        'Other'=>'Altro'
+    'activitytype' => [
+        'label' => 'Tipo di attività',
+        'placeholder' => '',
+        'open online' => 'Attività online aperta',
+        'invite online' => 'Attività online privata',
+        'open in person' => 'Attività presenziale aperta',
+        'invite in person' => 'Attività presenziale privata'
+
     ]
+
+
+
+
+
+
+
 
 ];

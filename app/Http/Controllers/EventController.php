@@ -91,7 +91,6 @@ class EventController extends Controller
      */
     public function create(Request $request)
     {
-//        $request->session()->flush();
 
         $countries = \App\Country::all()->sortBy('name');
 
@@ -158,6 +157,8 @@ class EventController extends Controller
         $selected_audiences = $event->audiences()->pluck('id')->toArray();
         $selected_audiences = implode(',', $selected_audiences);
         $selected_country = $event->country()->first()->name;
+
+        //dd($event);
 
         return view('event.edit', compact(['event', 'tags', 'selected_themes', 'selected_audiences', 'countries', 'selected_country']));
     }

@@ -123,13 +123,20 @@ Ambasadorët e EU Code Week dhe organizatorët e Code Week të cilët do të kon
         'phrase6'=>'email',
         'phrase7'=>'Ju mund ta ndani kodin e Codeweek for all me persona të tjerë:'
     ],
-    'activity_type'=>[
-        'Event'=>'Evenimenti',
-        'Lesson'=>'Mësimi',
-        'Workshop'=>'Seminari',
-        'Webinar'=>'Uebinari',
-        'Live Streaming Session'=>'Sesioni i transmetimit drejtpërdrejt',
-        'Other'=>'Tjetër'
+    'activitytype' => [
+        'label' => 'Tipi i Aktivitetit',
+        'placeholder' => '',
+        'open online' => 'Aktivitet i hapur online',
+        'invite online' => 'Aktivitet online me ftesë',
+        'open in person' => 'Aktivitet i hapur me prani fizike',
+        'invite in person' => 'Aktivitet me ftesë për prani fizike'
+
     ]
+
+
+
+
+
+
 
 ];

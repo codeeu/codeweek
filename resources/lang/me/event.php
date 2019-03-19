@@ -122,13 +122,26 @@ return [
         'phrase6'=>'email',
         'phrase7'=>'Možete podijeliti vaš kod Nedjelja programiranja za sve sa drugima:'
     ],
-    'activity_type'=>[
-        'Event'=>'Događaj',
-        'Lesson'=>'Predavanje',
-        'Workshop'=>'Radionica',
-        'Webinar'=>'Vebinar',
-        'Live Streaming Session'=>'Sesija sa prenosom uživo',
-        'Other'=>'Drugo'
-    ]
+    'activitytype' => [
+        'label' => 'Tip aktivnosti',
+        'placeholder' => '',
+        'open online' => 'Online aktivnost slobodnog učešća',
+        'invite online' => 'Online aktivnost po pozivu',
+        'open in person' => 'Aktivnost slobodnog učešća',
+        'invite in person' => 'Aktivnost po pozivu'
+
+    ],
+
+
+
+
+
+
+
+
+
+
+
+
 
 ];

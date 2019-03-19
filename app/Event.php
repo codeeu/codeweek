@@ -47,7 +47,8 @@ class Event extends Model
         'certificate_url',
         'certificate_generated_at',
         'approved_by',
-        'last_report_notification_sent_at'
+        'last_report_notification_sent_at',
+        'activity_type'
 
 
     ];

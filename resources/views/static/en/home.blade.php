@@ -19,7 +19,7 @@
 
 
                             <h2 data-caption-animate="fadeInUp">CODEWEEK.EU</h2>
-                            <p data-caption-animate="fadeInUp" data-caption-delay="200"> <a
+                            <p data-caption-animate="fadeInUp" data-caption-delay="200"><a
                                         href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a></p>
                         </div>
                     </div>
@@ -84,9 +84,9 @@
                         </div>
 
                         <p>
-                            EU Code Week is a grassroots initiative which aims to bring coding and digital literacy to everybody in a fun and engaging way.
+                            EU Code Week is a grassroots initiative which aims to bring coding and digital literacy to
+                            everybody in a fun and engaging way.
                         </p>
-
 
 
                     </div>
@@ -111,9 +111,10 @@
                         </div>
 
                         <p>
-                            Learning to code helps us to make sense of the rapidly changing world around us, expand our understanding of how technology works, and develop skills and capabilities in order to explore new ideas and innovate.
+                            Learning to code helps us to make sense of the rapidly changing world around us, expand our
+                            understanding of how technology works, and develop skills and capabilities in order to
+                            explore new ideas and innovate.
                         </p>
-
 
 
                     </div>
@@ -122,13 +123,10 @@
 
             </section>
 
-            <section id="section-banner-teacher" class="section section-banner">
 
-                <a href="/schools">
-                    @include('static.banner_teacher')
-                </a>
-
-            </section>
+            <a href="/schools">
+                @include('static.banner_teacher')
+            </a>
 
 
             <section id="section-join" class="page-section section">
@@ -216,7 +214,8 @@
                         <p>
                             We're on Twitter as <a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>, on <a
                                     href="https://www.facebook.com/codeEU">Facebook</a> and we use the <a
-                                    href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a> hashtag.
+                                    href="https://twitter.com/search?q=%23codeweek&amp;f=realtime">#codeweek</a>
+                            hashtag.
                         </p>
 
                         <a href="http://blog.codeweek.eu" class="button button-border button-rounded button-large">See
