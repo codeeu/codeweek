@@ -28,6 +28,7 @@
 
                 <ul>
                     <li class=""><a href="{{route('events_map')}}">@lang('menu.events')</a></li>
+                    <li class=""><a href="{{route('ambassadors')}}">@lang('menu.ambassadors')</a></li>
 
                     <li><a href="#">@lang('menu.resources')</a>
                         <ul class="dropdown-menu">
