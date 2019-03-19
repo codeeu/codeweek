@@ -6,8 +6,8 @@ use Faker\Generator as Faker;
 $factory->define(App\Event::class, function (Faker $faker) {
 
 
-    $start_date = $faker->dateTimeBetween($start = '-1month', $end = 'now');
-    $end_date = $faker->dateTimeBetween($start = 'now', $end = '+1month');
+    $start_date = $faker->dateTimeBetween($start = '-1week', $end = 'now');
+    $end_date = $faker->dateTimeBetween($start = 'now', $end = '+1week');
 
     $countries = Country::all()->pluck('iso')->toArray();
     $orgtypes = array('school','library','nonprofit','other');

@@ -122,13 +122,20 @@ return [
         'phrase6'=>'el. laišką.',
         'phrase7'=>'Galite pasidalyti savo „CodeWeek4All“ kodu su kitais:'
     ],
-    'activity_type'=>[
-        'Event'=>'Renginys',
-        'Lesson'=>'Pamoka',
-        'Workshop'=>'Praktinis seminaras',
-        'Webinar'=>'Internetinis seminaras',
-        'Live Streaming Session'=>'Tiesioginis srautinis seansas',
-        'Other'=>'Kita'
+    'activitytype' => [
+        'label' => 'Renginio tipas',
+        'placeholder' => '',
+        'open online' => 'Atviras renginys/užsiėmimas internetu',
+        'invite online' => 'Uždaras renginys/užsiėmimas internetu (tik su pakvietimu)',
+        'open in person' => 'Atviras renginys/užsiėmimas (realybėje, ne internetu)',
+        'invite in person' => 'Uždaras renginys/užsiėmimas (realybėje, ne internetu)'
+
     ]
+
+
+
+
+
+
 
 ];

@@ -46,7 +46,6 @@ Route::get('/privacy', 'StaticPageController@index')->name('privacy');
 Route::get('/petition', 'StaticPageController@index')->name('petition');
 Route::get('/beambassador', 'StaticPageController@index')->name('beambassador');
 Route::get('/about', 'StaticPageController@index')->name('about');
-Route::get('/resources', 'StaticPageController@index')->name('resources');
 Route::get('/codeweek4all', 'StaticPageController@index')->name('codeweek4all');
 //Static training pages
 Route::get('/training', 'StaticPageController@index')->name('training.index');
@@ -62,6 +61,9 @@ Route::get('/training/making-robotics-and-tinkering-in-the-classroom', 'StaticPa
 Route::get('/events', 'EventController@index')->name('events_map');
 Route::get('/add', 'EventController@create')->name('create_event');
 Route::get('/map', 'MapController@index')->name('map');
+Route::get('/resources', 'ResourcesController@learn')->name('resources_learn');
+Route::get('/resources/teach', 'ResourcesController@teach')->name('resources_teach');
+Route::post('/resources/search', 'SearchResourcesController@search')->name('search_resources');
 Route::get('/resources/{country}', 'ResourcesController@show')->name('resources_by_country');
 Route::get('/ambassadors', 'AmbassadorController@index')->name('ambassadors');
 Route::get('/volunteer', 'VolunteerController@create')->middleware('auth')->name('volunteer');
@@ -73,6 +75,7 @@ Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCall
 Route::get('/my', 'EventController@my')->middleware('auth')->name('my_events');
 Route::get('/my/reportable', 'EventController@myreportable')->middleware('auth')->name('my_reportable_events');
 Route::get('/search', 'SearchController@search')->name('search_event');
+Route::post('/search', 'SearchController@searchPOST')->name('search_events');
 Route::get('/scoreboard', 'ScoreboardController@index')->name('scoreboard');
 Route::patch('user', 'UserController@update')->name('user.update')->middleware('auth');
 Route::get('view/{event}/{slug}', 'EventController@show')->name('view_event');
@@ -96,6 +99,13 @@ Route::get('api/event/detail', 'Api\EventsController@detail')->name('event_list'
 Route::get('api/event/closest', 'Api\EventsController@closest');
 
 Route::post('api/event/report/{event}', 'ReportController@store')->middleware('auth');
+
+
+Route::group(['middleware' => ['role:super admin']], function () {
+    Route::post('api/resource/level/', 'Api\Resource\LevelController@store')->name('resource_level');
+    Route::post('api/resource/item/', 'Api\Resource\ItemController@store')->name('resource_item');
+});
+
 
 Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/activities', 'AdminController@activities')->name('activities');

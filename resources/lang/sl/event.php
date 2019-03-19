@@ -122,13 +122,16 @@ return [
         'phrase6'=>'elektronsko sporočilo.',
         'phrase7'=>'Svojo kodo Code Week 4 All lahko delite z drugimi:'
     ],
-    'activity_type'=>[
-        'Event'=>'Dogodek',
-        'Lesson'=>'Lekcija',
-        'Workshop'=>'Delavnica',
-        'Webinar'=>'Spletni seminar',
-        'Live Streaming Session'=>'Pretakanje v živo',
-        'Other'=>'Drugo'
+    'activitytype' => [
+        'label' => 'Vrsta dejavnosti',
+        'placeholder' => '',
+        'open online' => 'Odprta spletna dejavnost',
+        'invite online' => 'Spletna dejavnost s povabilom',
+        'open in person' => 'Odprta dejavnost izven spleta',
+        'invite in person' => 'Dejavnost izven spleta s povabilom'
+
     ]
+
+
 
 ];
