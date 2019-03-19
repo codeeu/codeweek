@@ -160,7 +160,7 @@ return [
     'Saint Martin'=>'Saint Martin',
     'Madagascar'=>'Madagaskar',
     'Marshall Islands'=>'Marshallovy ostrovy',
-    'Macedonia'=>'Bývalá jugoslávská republika Makedonie',
+    'Macedonia'=>'Severní Makedonie',
     'Mali'=>'Mali',
     'Myanmar'=>'Myanmar',
     'Mongolia'=>'Mongolsko',
