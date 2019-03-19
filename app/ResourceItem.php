@@ -87,8 +87,16 @@ class ResourceItem extends Model
         $this->levels()->attach($this->getIdsFromNames($levels, '\App\ResourceLevel'));
     }
 
+    public function attachSubjects(String $subjects)
+    {
+
+        $this->subjects()->attach($this->getIdsFromNames($subjects, '\App\ResourceSubject'));
+    }
+
     public function attachLanguages(String $languages)
     {
+
+
 
         if ($languages === "All targeted languages;" || $languages === "All targeted languages") {
             return $this->languages()->attach(ResourceLanguage::all()->pluck('id')->toArray());
