@@ -1,15 +1,9 @@
 <div id="fb-root"></div>
-<script>(function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2';
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+
 
 <!-- Header -->
 <header id="header" class="page-section full-header">
+
     <div id="header-wrap">
         <div class="container clearfix">
             <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
@@ -67,6 +61,8 @@
                     </li>
                 </ul>
             </div>
+
+
 
             <!-- Facebook Feed -->
             <div id="facebook-feed">
