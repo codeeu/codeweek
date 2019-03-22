@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3c7528d7da3d92b2bcee79e1f6ed982b",
+    "content-hash": "ef684bc5a273897bc886e34994a40510",
     "packages": [
         {
             "name": "anahkiasen/underscore-php",
@@ -360,6 +360,56 @@
             ],
             "description": "The laravel charting package",
             "time": "2019-01-15T15:38:55+00:00"
+        },
+        {
+            "name": "ctessier/nova-advanced-image-field",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ctessier/nova-advanced-image-field.git",
+                "reference": "d857333b61209d56ea6dba5f009a102e400f7b59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ctessier/nova-advanced-image-field/zipball/d857333b61209d56ea6dba5f009a102e400f7b59",
+                "reference": "d857333b61209d56ea6dba5f009a102e400f7b59",
+                "shasum": ""
+            },
+            "require": {
+                "intervention/image": "^2.4",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Ctessier\\NovaAdvancedImageField\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ctessier\\NovaAdvancedImageField\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "An advanced image field for Nova with crop and resize.",
+            "keywords": [
+                "advanced",
+                "advanced image",
+                "advanced image field",
+                "crop",
+                "image",
+                "image crop",
+                "image resize",
+                "laravel",
+                "nova",
+                "resize"
+            ],
+            "time": "2019-02-26T20:07:39+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",

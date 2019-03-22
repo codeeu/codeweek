@@ -22,6 +22,18 @@ class ResourceItem extends Model
         return $filters->apply($query);
     }
 
+    public function getThumbnailAttribute($value)
+    {
+
+
+        if (!strncmp($value, "http", 4) === 0) {
+            return env('RESOURCES_URL') + $value;
+        }
+
+        return $value;
+
+    }
+
 
     public function levels()
     {
@@ -97,7 +109,6 @@ class ResourceItem extends Model
     {
 
 
-
         if ($languages === "All targeted languages;" || $languages === "All targeted languages") {
             return $this->languages()->attach(ResourceLanguage::all()->pluck('id')->toArray());
         }
@@ -113,7 +124,6 @@ class ResourceItem extends Model
      */
     protected function getIdsFromNames($types, $resourceObject): array
     {
-
 
 
         $typesArr = array_unique(array_map('trim', explode(";", $types)));
