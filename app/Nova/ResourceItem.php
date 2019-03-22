@@ -2,6 +2,7 @@
 
 namespace App\Nova;
 
+use Ctessier\NovaAdvancedImageField\AdvancedImage;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\Boolean;
@@ -71,7 +72,9 @@ class ResourceItem extends Resource
             Text::make('Source')->sortable(),
             Boolean::make('Teach'),
             Boolean::make('Learn'),
-            Text::make('Thumbnail')->hideFromIndex(),
+            //Text::make('Thumbnail')->hideFromIndex(),
+            AdvancedImage::make('Thumbnail')->croppable(374/200)->resize(374, 200)->disk('resources'),
+
             Text::make('Facebook')->hideFromIndex(),
             Text::make('Twitter')->hideFromIndex(),
 
