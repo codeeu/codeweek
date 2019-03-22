@@ -50,13 +50,13 @@ abstract class Filters
 
         foreach ($this->getFilters() as $filter => $value) {
             if (method_exists($this, $filter)) {
-                Log::info($filter);
+                //Log::info($filter);
                 session([$filter => $value]);
                 $this->$filter($value);
             }
         }
 
-        Log::info($this->builder->toSql());
+        //Log::info($this->builder->toSql());
         return $this->builder;
     }
 
