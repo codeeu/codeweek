@@ -23,7 +23,7 @@
                     </p>
 
 
-                    <simple-question>
+                    <simple-question :visible="true">
                         <template slot="title">What is it?</template>
                         <template slot="content">
                             <p>
@@ -40,7 +40,7 @@
                         </template>
                     </simple-question>
 
-                    <simple-question>
+                    <simple-question :visible="true">
                         <template slot="title">How to participate?</template>
                         <template slot="content">
                             <ol>
@@ -66,7 +66,7 @@
                         </template>
                     </simple-question>
 
-                    <simple-question>
+                    <simple-question :visible="true">
                         <template slot="title">Why join the challenge?</template>
                         <template slot="content">
                             <ul>
