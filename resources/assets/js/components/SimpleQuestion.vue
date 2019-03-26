@@ -20,9 +20,16 @@
 
 <script>
     export default {
+        props:{
+            visible: {
+                type: Boolean,
+                required:false,
+                default: false
+            }
+        },
         data() {
             return {
-                isOpen: false
+                isOpen: this.visible
             };
         },
         computed:{
