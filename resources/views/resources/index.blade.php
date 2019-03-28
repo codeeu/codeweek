@@ -13,15 +13,15 @@
     <div class="resources-container">
 
         <div class="flex flex-col justify-center text-center w-full">
-        @if ($section === "teach")
+            @if ($section === "teach")
 
-            <div class="container">
-                <a href="/training">
-                    <img src="/img/banner_training.svg" class="lg:-mt-6 mb-1">
-                </a>
-            </div>
+                <div class="container">
+                    <a href="/training">
+                        <img src="/img/banner_training.svg" class="lg:-mt-6 mb-1">
+                    </a>
+                </div>
 
-        @endif
+            @endif
         </div>
 
         <resource-form
@@ -34,7 +34,17 @@
                 :types="{{ $types }}"
         ></resource-form>
 
+        <div class="flex flex-col justify-center text-center w-full">
+            <div>
+                <a href="/resources/suggest">
+                    <button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded">
+                        Suggest a resource
+                    </button>
+                </a>
+            </div>
 
+
+        </div>
     </div>
 
 
