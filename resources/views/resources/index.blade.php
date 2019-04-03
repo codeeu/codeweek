@@ -36,11 +36,11 @@
 
         <div class="flex flex-col justify-center text-center w-full">
             <div>
-                <a href="/resources/suggest">
-                    <button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded">
-                        Suggest a resource
-                    </button>
-                </a>
+
+
+                <a href="/resources/suggest" class="btn btn-primary btn-sm">
+                    Suggest a resource </a>
+
             </div>
 
 

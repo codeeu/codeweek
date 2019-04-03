@@ -64,7 +64,10 @@ Route::get('/map', 'MapController@index')->name('map');
 Route::get('/resources', 'ResourcesController@learn')->name('resources_learn');
 Route::get('/resources/teach', 'ResourcesController@teach')->name('resources_teach');
 Route::post('/resources/search', 'SearchResourcesController@search')->name('search_resources');
-Route::get('/resources/suggest', 'SuggestResourcesController@get')->name('suggest_resources');
+
+Route::get('/resources/suggest', 'SuggestResourcesController@get')->name('suggest_resources')->middleware('auth');
+Route::post('/resources/suggest', 'SuggestResourcesController@store')->name('store_suggest_resources')->middleware('auth');
+
 Route::get('/resources/{country}', 'ResourcesController@show')->name('resources_by_country');
 Route::get('/ambassadors', 'AmbassadorController@index')->name('ambassadors');
 Route::get('/volunteer', 'VolunteerController@create')->middleware('auth')->name('volunteer');
