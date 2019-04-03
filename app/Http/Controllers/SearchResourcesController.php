@@ -26,7 +26,7 @@ class SearchResourcesController extends Controller
     protected function getItems(ResourceFilters $filters)
     {
 
-        $items = ResourceItem::filter($filters);
+        $items = ResourceItem::filter($filters)->whereActive(true);
 
 
         //return($items->get()->distinct());
