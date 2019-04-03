@@ -3,7 +3,9 @@
 namespace Tests\Feature;
 
 use App\Event;
+use App\Mail\EventApproved;
 use App\Mail\EventCreated;
+use App\Mail\ResourceSuggested;
 use App\ResourceItem;
 use Mail;
 use Tests\TestCase;
@@ -31,12 +33,23 @@ class SuggestResourceTest extends TestCase
     public function an_authenticated_user_can_suggest_resource()
     {
 
+        $this->seed('RolesAndPermissionsSeeder');
         $this->withoutExceptionHandling();
         $this->signIn();
+
+        Mail::fake();
+
+        $editor = create('App\User',['email' => 'test@boo.com']);
+        $editor->assignRole('resource editor');
 
         $resourceItem = make('App\ResourceItem');
 
         $this->post('/resources/suggest', $resourceItem->toArray());
+
+        Mail::assertQueued(ResourceSuggested::class, function ($mail) use ($editor) {
+
+            return $mail->hasTo($editor->email);
+        });
 
         $ri = ResourceItem::where('name', $resourceItem->name)->first();
 
