@@ -116,6 +116,24 @@ return [
             '6'=>'Lesson plans created to help primary and secondary education teachers introduce coding to students. They will make pupils understand coding concepts in a fun way and offer teachers many ideas and resources.'
         ]
     ],
-    'resources_local_title'=>'Coding resources from'
+    'resources_local_title'=>'Coding resources from',
+    'suggest' => [
+        'main_title'=>'Suggest a resource',
+        'button'=>'Suggest',
+        'required'=>'Required fields are marked with an * asterisk. Feel free to add the resource listing in your local language.',
+        'name' => [
+            'label' => 'Name',
+            'placeholder' => 'What is the name of the resource ?',
+        ],
+        'description' => [
+            'label' => 'Description',
+            'placeholder' => 'Describe the resource',
+        ],
+        'source' => [
+            'label' => 'Source',
+            'placeholder' => 'What is the URL of the resource ?',
+        ],
+        'thankyou' => 'Thank you. Your suggestion will be online soon.'
+    ],
 
 ];
