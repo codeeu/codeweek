@@ -19,7 +19,7 @@ return [
     'resources' => 'Zdroje',
     'schools' => 'Školy',
     'about' => 'O týdnu programování',
-    'news' => 'Novinky',
+    'blog' => 'Blog','news' => 'Novinky',
     'search' => 'Pište a stiskněte Enter...',
     'map' => 'Mapa',
     'add_event' => 'Přidat akci',
