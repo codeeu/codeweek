@@ -19,7 +19,7 @@ return [
     'resources' => 'Riżorsi',
     'schools' => 'Skejjel',
     'about' => 'Dwar',
-    'news' => 'Aħbarijiet',
+    'blog' => 'Blog','news' => 'Aħbarijiet',
     'search' => 'Ittajpja u agħfas Enter...',
     'map' => 'Mappa',
     'add_event' => 'Żid Avveniment',

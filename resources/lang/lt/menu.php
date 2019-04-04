@@ -19,7 +19,7 @@ return [
     'resources' => 'Ištekliai',
     'schools' => 'Mokyklos',
     'about' => 'Apie',
-    'news' => 'Naujienos',
+    'blog' => 'tinklaraštį','news' => 'Naujienos',
     'search' => 'Parašykite ir spauskite įvesties klavišą...',
     'map' => 'Žemėlapis',
     'add_event' => 'Pridėti renginį',

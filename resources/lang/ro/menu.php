@@ -19,7 +19,7 @@ return [
     'resources' => 'Resurse',
     'schools' => 'Școli',
     'about' => 'Despre',
-    'news' => 'Noutăți',
+    'blog' => 'blogul','news' => 'Noutăți',
     'search' => 'Introduceți și apăsați Enter...',
     'map' => 'Hartă',
     'add_event' => 'Adăugare eveniment',

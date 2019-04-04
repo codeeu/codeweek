@@ -19,6 +19,7 @@ return [
     'resources' => 'Resursi',
     'schools' => 'Škole',
     'about' => 'O',
+    'blog' => 'Blog',
     'news' => 'Novosti',
     'search' => 'Ukucajte i pritisnite Enter...',
     'map' => 'Mapa',

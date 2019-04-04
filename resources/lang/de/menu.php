@@ -19,6 +19,7 @@ return [
     'resources' => 'Ressourcen',
     'schools' => 'Schulen',
     'about' => 'Über uns',
+    'blog' => 'Blog',
     'news' => 'Neuigkeiten',
     'search' => 'Eingeben und Enter drücken ...',
     'map' => 'Karte',
