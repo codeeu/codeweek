@@ -19,7 +19,7 @@ return [
     'resources' => 'Materijali',
     'schools' => 'Škole',
     'about' => 'O nama',
-    'news' => 'Novosti',
+    'blog' => 'Blog','news' => 'Novosti',
     'search' => 'Otkucajte i pritisnite Enter...',
     'map' => 'Mapa',
     'add_event' => 'Dodati događaj',
