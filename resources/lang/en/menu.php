@@ -19,7 +19,7 @@ return [
     'resources' => 'Resources',
     'schools' => 'Schools',
     'about' => 'About',
-    'news' => 'News',
+    'blog' => 'Blog','news' => 'News',
     'search' => 'Type & hit Enter...',
     'map' => 'Map',
     'add_event' => 'Add Event',

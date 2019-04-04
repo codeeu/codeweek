@@ -19,7 +19,7 @@ return [
     'resources' => 'Zdroje',
     'schools' => 'Školy',
     'about' => 'O nás',
-    'news' => 'Správy',
+    'blog' => 'Blog','news' => 'Správy',
     'search' => 'Začnite písať a stlačte Enter...',
     'map' => 'Mapa',
     'add_event' => 'Pridať podujatie',

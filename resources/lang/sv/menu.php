@@ -19,7 +19,7 @@ return [
     'resources' => 'Resurser',
     'schools' => 'Skolor',
     'about' => 'Om',
-    'news' => 'Nyheter',
+    'blog' => 'Blog','news' => 'Nyheter',
     'search' => 'Skriv och tryck på Enter ...',
     'map' => 'Karta',
     'add_event' => 'Lägg till evenemang',
