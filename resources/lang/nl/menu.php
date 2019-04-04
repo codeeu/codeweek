@@ -19,7 +19,7 @@ return [
     'resources' => 'Hulpmiddelen',
     'schools' => 'Scholen',
     'about' => 'Over',
-    'news' => 'Nieuws',
+    'blog' => 'Blog','news' => 'Nieuws',
     'search' => 'Typ en druk op Enter...',
     'map' => 'Kaart',
     'add_event' => 'Evenement toevoegen',
