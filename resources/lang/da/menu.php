@@ -19,6 +19,7 @@ return [
     'resources' => 'Ressourcer',
     'schools' => 'Skoler',
     'about' => 'Om',
+    'blog' => 'Blog',
     'news' => 'Nyheder',
     'search' => 'Indtast, og tryk på Enter...',
     'map' => 'Kort',

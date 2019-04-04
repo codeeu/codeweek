@@ -19,7 +19,7 @@ return [
     'resources' => 'Erõforrások',
     'schools' => 'Iskolák',
     'about' => 'Névjegy',
-    'news' => 'Hírek',
+    'blog' => 'Blog','news' => 'Hírek',
     'search' => 'Gépelje be a szöveget és nyomjon entert...',
     'map' => 'Térkép',
     'add_event' => 'Esemény hozzáadása',
