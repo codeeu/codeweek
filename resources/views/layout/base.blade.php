@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en" class="no-js" >
+<html dir="ltr" lang="{{App::getLocale()}}" class="no-js" >
 <head>
     @include('layout.analytics')
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
