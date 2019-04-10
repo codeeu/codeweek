@@ -22,7 +22,7 @@ return [
     'blog' => 'Blog','news' => 'News',
     'search' => 'Type & hit Enter...',
     'map' => 'Map',
-    'add_event' => 'Add Event',
+    'add_event' => 'Add Activity',
     'search_event' => 'Search Events',
     'hello' => 'Hello',
     'profile' => 'Profile',

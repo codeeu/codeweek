@@ -9,7 +9,7 @@
             <div class="flex justify-between w-full">
                 <div class="w-full mr-4" >
                     <input type="text" class="input-text w-full pl-8 pr-8" v-model="searchInput" @input="debounceSearch"
-                           v-on:keyup.13="onSubmit()" placeholder="Search a resource ...">
+                           v-on:keyup.13="onSubmit()" placeholder="Search resources ...">
                 </div>
 
                 <div class="more-button">
