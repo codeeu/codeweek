@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Filters\ResourceFilters;
 use App\ResourceItem;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class SearchResourcesController extends Controller
 {
@@ -27,12 +28,11 @@ class SearchResourcesController extends Controller
 
         $items = ResourceItem::filter($filters);
 
-        //dd($items);
 
         //return($items->get()->distinct());
 
         //dd($items->distinct()->paginate(10)->items);
 
-        return $items->distinct()->paginate(12);
+        return $items->distinct()->paginate(120);
     }
 }

@@ -19,7 +19,7 @@ return [
     'resources' => 'Kaynaklar',
     'schools' => 'Okullar',
     'about' => 'Hakkında',
-    'news' => 'Haberler',
+    'blog' => 'Blog','news' => 'Haberler',
     'search' => 'Yaz ve Enter’a bas...',
     'map' => 'Harita',
     'add_event' => 'Etkinlik Ekle',

@@ -19,7 +19,7 @@ return [
     'resources' => 'Resursi',
     'schools' => 'Skolas',
     'about' => 'Par',
-    'news' => 'Jaunumi',
+    'blog' => 'emuārs','news' => 'Jaunumi',
     'search' => 'Uzrakstiet un nospiediet Enter',
     'map' => 'Karte',
     'add_event' => 'Pievienot notikumu',

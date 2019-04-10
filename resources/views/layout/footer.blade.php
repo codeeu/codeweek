@@ -19,7 +19,7 @@
                     <a href="/resources/">@lang('menu.resources')</a>/
                     <a href="/about/">@lang('menu.about')</a>/
                     <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/CodeWeek+Privacy+Statement+Contact+Points.pdf">@lang('menu.privacy')</a>/
-                    <a href="http://blog.codeweek.eu/">@lang('menu.news')</a>
+                    <a href="http://blog.codeweek.eu/">@lang('menu.blog')</a>
                 </div>
                 <div class="fright clearfix">
                     <a href="https://www.facebook.com/codeEU" class="social-icon si-small si-borderless nobottommargin si-facebook">
