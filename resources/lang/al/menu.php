@@ -19,7 +19,7 @@ return [
     'resources' => 'Burimet',
     'schools' => 'Shkollat',
     'about' => 'Informacion',
-    'news' => 'Lajme',
+    'blog' => 'Blog','news' => 'Lajme',
     'search' => 'Shkruani dhe shtypni Enter...',
     'map' => 'Harta',
     'add_event' => 'Shtoni eveniment',

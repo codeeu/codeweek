@@ -66,6 +66,8 @@
 
     import ResourcePill from "./ResourcePill";
 
+    var RESOURCES_URL = process.env.MIX_RESOURCES_URL;
+
     export default {
         components: {ResourcePill},
         props: {
@@ -93,12 +95,16 @@
         computed: {
 
             thumbnail: function () {
+
+
                 //console.log(this.resource.thumbnail);
                 if (this.resource.thumbnail && this.resource.thumbnail.toLowerCase().startsWith('http')) {
                     return this.resource.thumbnail
-                }
+                } else {
 
-                return 'https://codeweek-s3.s3.amazonaws.com/event_picture/logo_gs_2016_07703ca0-7e5e-4cab-affb-4de93e3f2497.png';
+                    return RESOURCES_URL + this.resource.thumbnail;
+
+                }
             }
         },
         mounted: function () {

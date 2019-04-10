@@ -19,7 +19,7 @@ return [
     'resources' => 'Recursos',
     'schools' => 'Escolas',
     'about' => 'Sobre',
-    'news' => 'Notícias',
+    'blog' => 'Blog','news' => 'Notícias',
     'search' => 'Introduza o texto e pressione a tecla Enter...',
     'map' => 'Mapa',
     'add_event' => 'Adicionar Evento',

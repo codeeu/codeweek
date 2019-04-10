@@ -19,6 +19,7 @@ return [
     'resources' => 'Materjalid',
     'schools' => 'Koolid',
     'about' => 'Üldteave',
+    'blog' => 'blogi',
     'news' => 'Uudised',
     'search' => 'Tipi ja vajuta Enter...',
     'map' => 'Kaart',
