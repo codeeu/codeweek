@@ -17,7 +17,7 @@
 
             <div class="container">
                 <a href="/training">
-                    <img src="/img/banner_training.svg" class="lg:-mt-6 mb-1">
+                    <img src="/img/banner_training_horizontal.svg" class="lg:-mt-6 mb-1">
                 </a>
             </div>
 
