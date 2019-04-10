@@ -58,7 +58,7 @@ Route::get('/training/making-robotics-and-tinkering-in-the-classroom', 'StaticPa
 
 
 
-Route::get('/events', 'EventController@index')->name('events_map');
+Route::get('/events', 'SearchController@search')->name('events_map');
 Route::get('/add', 'EventController@create')->name('create_event');
 Route::get('/map', 'MapController@index')->name('map');
 Route::get('/resources', 'ResourcesController@learn')->name('resources_learn');
