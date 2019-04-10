@@ -32,6 +32,9 @@
                                         <li>
                                             <a href="{{route('resources_teach')}}">Teach</a>
                                         </li>
+                                        <li>
+                                            <a href="{{route('training.index')}}">Training Bits</a>
+                                        </li>
                                     </ul>
                     </li>
 
