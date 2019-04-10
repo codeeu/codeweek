@@ -153,6 +153,7 @@ return [
          */
         Intervention\Image\ImageServiceProvider::class,
         \Torann\GeoIP\GeoIPServiceProvider::class,
+        MartinLindhe\VueInternationalizationGenerator\GeneratorProvider::class,
         /*
          * Application Service Providers...
          */

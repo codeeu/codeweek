@@ -11,6 +11,9 @@ window.Vue = require('vue');
 
 window.Vue.config.debug = true; //TODO: Remove in production
 
+import VueInternationalization from 'vue-i18n';
+import Locale from './vue-i18n-locales.generated';
+
 import example from './components/ExampleComponent.vue';
 
 import countrySelect from './components/CountrySelect.vue';
@@ -36,11 +39,20 @@ import SearchPageComponent from './components/SearchPageComponent.vue'
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-window.Vue.use(Autocomplete)
+window.Vue.use(Autocomplete);
+Vue.use(VueInternationalization);
+const lang = document.documentElement.lang.substr(0, 2);
+// or however you determine your current app locale
+
+const i18n = new VueInternationalization({
+    locale: lang,
+    fallbackLocale: 'en',
+    messages: Locale
+});
 
 const app = new Vue({
     el: "#app",
-
+    i18n,
     components: {
         flash,
         avatarForm,
