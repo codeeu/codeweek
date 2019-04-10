@@ -16,9 +16,10 @@
 
             <div class="basic-fields flex flex-row">
 
+
                 <div class="w-full mr-4" >
                     <input type="text" class="input-text w-full pl-8 pr-8" v-model="query"
-                           v-on:keyup.13="onSubmit()" placeholder="Search by title or description">
+                           v-on:keyup.13="onSubmit()" :placeholder="$t('search.search_placeholder')">
                 </div>
 
                 <div class="year-selection mr-4">
@@ -30,7 +31,7 @@
                 </div>
 
                 <div class="search-button mr-4">
-                    <input type="button" class="btn btn-primary btn-sm w-full button-search" value="Search" @click="onSubmit()">
+                    <input type="button" class="btn btn-primary btn-sm w-full button-search" :value="$t('search.submit')" @click="onSubmit()">
                 </div>
 
                 <div class="more-button">
@@ -42,22 +43,22 @@
             <div class="advanced-fields flex flex-col mt-4" v-show="showFilters">
 
                 <multiselect v-model="countries" :options="countrieslist" :multiple="true" :close-on-select="false"
-                             :clear-on-select="false" :preserve-search="false" placeholder="Countries" :preselect-first="false"
-                             label="name" track-by="iso">
+                             :clear-on-select="false" :preserve-search="false" :placeholder="$t('search.countries')" :preselect-first="false"
+                             label="countries" :custom-label="customLabel" track-by="iso">
                     <pre class="language-json"><code>{{ countries }}</code></pre>
                 </multiselect>
 
                 <div class="flex flex-row mt-4">
 
                     <multiselect v-model="audiences" :options="audienceslist" :multiple="true" :close-on-select="false"
-                                 :clear-on-select="false" :preserve-search="false" placeholder="Audiences" :preselect-first="false"
-                                 label="name" track-by="id" class="mr-4">
+                                 :clear-on-select="false" :preserve-search="false" :placeholder="$t('search.audiences')" :preselect-first="false"
+                                 label="event.audience" :custom-label="customLabel" track-by="id" class="mr-4">
                         <pre class="language-json"><code>{{ audiences }}</code></pre>
                     </multiselect>
 
                     <multiselect v-model="themes" :options="themeslist" :multiple="true" :close-on-select="false"
-                                 :clear-on-select="false" :preserve-search="false" placeholder="Themes" :preselect-first="false"
-                                 label="name" track-by="id">
+                                 :clear-on-select="false" :preserve-search="false" :placeholder="$t('search.themes')" :preselect-first="false"
+                                 label="event.theme" :custom-label="customLabel" track-by="id">
                         <pre class="language-json"><code>{{ themes }}</code></pre>
                     </multiselect>
 
@@ -71,8 +72,7 @@
 
             <div class="flex" style="font-size: 14px;">
 
-                <div class="title events-count" v-if="events.length > 0 && !isLoading">{{pagination.total}} events match in your search criteria</div>
-                <div class="title events-page" v-if="pagination.last_page > 1 && !isLoading">Page {{pagination.current_page}} of {{pagination.last_page}}</div>
+                <div class="title events-count" v-if="events.length > 0 && !isLoading">{{pagination.total}} {{pagination.total > 1 ? $t('search.events') : $t('search.event')}} {{$t('search.search_counter')}}</div>
 
             </div>
 
@@ -121,12 +121,12 @@
                 countries: [],
                 audiences: [],
                 themes: [],
-                showFilters:false,
+                showFilters:true,
                 isLoading: false,
                 events:[],
                 pagination: {
                     'current_page': 1
-                },
+                }
             }
         },
         methods:{
@@ -181,6 +181,9 @@
                     return 'https://codeweek-s3.s3.amazonaws.com/' + event.picture;
                 }
                 return 'https://codeweek-s3.s3.amazonaws.com/event_picture/logo_gs_2016_07703ca0-7e5e-4cab-affb-4de93e3f2497.png';
+            },
+            customLabel(obj, label){
+                return this.$t(label + '.' + obj.name);
             }
         },
         mounted: function () {
@@ -198,7 +201,7 @@
 
     #loadmask{
         position: absolute;
-        height: 450px;
+        height: 560px;
         width: 100%;
         top: 110px;
         background-color: rgba(0,0,0,0.5);

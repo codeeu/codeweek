@@ -3,7 +3,7 @@
     <multiselect
             v-model="values"
             v-bind:options="options"
-            label="name"
+            :label="label"
             track-by="id"
             :multiple="true"
             :taggable="true"
@@ -11,7 +11,9 @@
             :searchable="false"
             :close-on-select=closeOnSelect
             @select="select"
-            @remove="remove">
+            @remove="remove"
+            placeholder=""
+            :custom-label="customLabel">
     </multiselect>
     <input :name="name" type="hidden" :value="innerValues.toString()">
   </div>
@@ -28,7 +30,8 @@
           name: String,
           value: String,
           options: Array,
-          closeOnSelect: Boolean
+          closeOnSelect: Boolean,
+          label: String
       },
       data () {
           var values = null;
@@ -65,6 +68,9 @@
                   }
               }
               console.log(this.innerValues);
+          },
+          customLabel(obj, label){
+            return this.$t(label + '.' + obj.name);
           }
       }
   }
