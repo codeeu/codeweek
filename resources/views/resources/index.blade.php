@@ -13,15 +13,15 @@
     <div class="resources-container">
 
         <div class="flex flex-col justify-center text-center w-full">
-            @if ($section === "teach")
+        @if ($section === "teach")
 
-                <div class="container">
-                    <a href="/training">
-                        <img src="/img/banner_training.svg" class="lg:-mt-6 mb-1">
-                    </a>
-                </div>
+            <div class="container">
+                <a href="/training">
+                    <img src="/img/banner_training_horizontal.svg" class="lg:-mt-6 mb-1">
+                </a>
+            </div>
 
-            @endif
+        @endif
         </div>
 
         <resource-form
@@ -45,6 +45,8 @@
 
 
         </div>
+
+
     </div>
 
 

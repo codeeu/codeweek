@@ -19,7 +19,7 @@ return [
     'resources' => 'Viri',
     'schools' => 'Šole',
     'about' => 'O projektu',
-    'news' => 'Novice',
+    'blog' => 'Blog','news' => 'Novice',
     'search' => 'Vpišite in kliknite Enter ...',
     'map' => 'Zemljevid',
     'add_event' => 'Dodajte dogodek',

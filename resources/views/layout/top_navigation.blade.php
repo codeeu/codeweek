@@ -32,13 +32,16 @@
                                         <li>
                                             <a href="{{route('resources_teach')}}">Teach</a>
                                         </li>
+                                        <li>
+                                            <a href="{{route('training.index')}}">Training Bits</a>
+                                        </li>
                                     </ul>
                     </li>
 
 
                     <li><a href="{{route('schools')}}">@lang('menu.schools')</a></li>
                     <li><a href="/about/">@lang('menu.about')</a></li>
-                    <li><a href="http://blog.codeweek.eu/">@lang('menu.news')</a></li>
+                    <li><a href="http://blog.codeweek.eu/">@lang('menu.blog')</a></li>
                 </ul>
 
             </nav>
@@ -247,12 +250,12 @@
                         </li>
 
                         <li>
-                            <a href="{{route('search_event')}}">
+                            <a href="{{route('scoreboard')}}">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-search fa-stack-1x fa-inverse"></i>
+                                    <i class="fa fa-trophy fa-stack-1x fa-inverse"></i>
                                 </span>
-                                @lang('menu.search_event')
+                                @lang('event.scoreboard_by_country')
                             </a>
                         </li>
 
