@@ -2,6 +2,7 @@
 
 namespace App\Nova;
 
+use App\Nova\Filters\EventStatus;
 use Ctessier\NovaAdvancedImageField\AdvancedImage;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\BelongsToMany;
@@ -16,7 +17,8 @@ class ResourceItem extends Resource
 
     public static $group = 'Resources';
 
-    public static function label() {
+    public static function label()
+    {
         return 'Items';
     }
 
@@ -48,35 +50,37 @@ class ResourceItem extends Resource
      * @var array
      */
     public static $search = [
-        'name','description','source'
+        'name', 'description', 'source'
     ];
 
     /**
      * Get the fields displayed by the resource.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return array
      */
     public function fields(Request $request)
     {
         return [
             ID::make()->sortable(),
-            BelongsToMany::make('ResourceLevel','levels'),
-            BelongsToMany::make('ResourceType','types'),
-            BelongsToMany::make('ResourceSubject','subjects'),
-            BelongsToMany::make('ResourceCategory','categories'),
-            BelongsToMany::make('ResourceProgrammingLanguage','programmingLanguages'),
-            BelongsToMany::make('ResourceLanguage','languages'),
+            BelongsToMany::make('ResourceLevel', 'levels'),
+            BelongsToMany::make('ResourceType', 'types'),
+            BelongsToMany::make('ResourceSubject', 'subjects'),
+            BelongsToMany::make('ResourceCategory', 'categories'),
+            BelongsToMany::make('ResourceProgrammingLanguage', 'programmingLanguages'),
+            BelongsToMany::make('ResourceLanguage', 'languages'),
             Text::make('name')->sortable(),
             Text::make('Description')->sortable()->hideFromIndex(),
-            Text::make('Source')->sortable(),
+            Text::make('Source')->sortable()->hideFromIndex(),
             Boolean::make('Teach'),
             Boolean::make('Learn'),
+
             //Text::make('Thumbnail')->hideFromIndex(),
-            AdvancedImage::make('Thumbnail')->croppable(374/200)->resize(374, 200)->disk('resources'),
+            AdvancedImage::make('Thumbnail')->croppable(374 / 200)->resize(374, 200)->disk('resources')->hideFromIndex(),
 
             Text::make('Facebook')->hideFromIndex(),
             Text::make('Twitter')->hideFromIndex(),
+            Boolean::make('Active'),
 
 
         ];
@@ -85,7 +89,7 @@ class ResourceItem extends Resource
     /**
      * Get the cards available for the request.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return array
      */
     public function cards(Request $request)
@@ -96,18 +100,19 @@ class ResourceItem extends Resource
     /**
      * Get the filters available for the resource.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return array
      */
     public function filters(Request $request)
     {
-        return [];
+        return [new Filters\ResourceActive];
+
     }
 
     /**
      * Get the lenses available for the resource.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return array
      */
     public function lenses(Request $request)
@@ -118,7 +123,7 @@ class ResourceItem extends Resource
     /**
      * Get the actions available for the resource.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return array
      */
     public function actions(Request $request)
