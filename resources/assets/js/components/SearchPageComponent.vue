@@ -201,7 +201,7 @@
 
     #loadmask{
         position: absolute;
-        height: 560px;
+        height: 760px;
         width: 100%;
         top: 110px;
         background-color: rgba(0,0,0,0.5);
@@ -269,7 +269,7 @@
 
     .searchbox-container{
         position:relative;
-        margin-top: -80px;
+        margin-top: 120px;
         background-color: rgba(68,68,68,0.8);
         border-radius: 8px;
     }
