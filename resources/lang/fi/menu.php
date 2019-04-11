@@ -19,6 +19,7 @@ return [
     'resources' => 'Aineistot',
     'schools' => 'Koulut',
     'about' => 'Lisätietoja',
+    'blog' => 'blogi',
     'news' => 'Uutisia',
     'search' => 'Kirjoita ja paina Enter...',
     'map' => 'Kartta',

@@ -2,10 +2,17 @@
 Dear editor,
 
 
-A new resource has been suggested on the Codeweek Website. {{$resourceItem->name}}<br/>
-Please log into the administrative area to moderate this entry<br/>
+A new resource has been suggested on the Codeweek Website. <br/>
+<ul>
+    <li>{{$resourceItem->name}}</li>
+    <li>{{$resourceItem->source}}</li>
+    <li>{{$resourceItem->description}}</li>
+</ul>
 
-@component('mail::button', ['url' => env('APP_URL') . "/nova"])
+
+Please log into the administrative area to complete this entry<br/>
+
+@component('mail::button', ['url' => env('APP_URL') . "/nova/resources/resource-items/{$resourceItem->id}"])
     Admin Area
 @endcomponent
 
