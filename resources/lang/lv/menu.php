@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'home' => 'Sākumlapa',
+    'why' => 'KĀPĒC', 'home'  => 'Sākumlapa',
     'events' => 'Pasākumi',
     'ambassadors' => 'Vēstnieks',
     'resources' => 'Resursi',

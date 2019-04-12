@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'home' => 'Hem',
+    'why' => 'VARFÖR', 'home'  => 'Hem',
     'events' => 'Evenemang',
     'ambassadors' => 'Ambassadörer',
     'resources' => 'Resurser',

@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'home' => 'Strona główna',
+    'why' => 'DLACZEGO', 'home'  => 'Strona główna',
     'events' => 'Wydarzenia',
     'ambassadors' => 'Ambasadorzy',
     'resources' => 'Zasoby',

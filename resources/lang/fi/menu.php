@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'home' => 'Kotisivu',
+    'why' => 'MIKSI', 'home'  => 'Kotisivu',
     'events' => 'Tapahtumat',
     'ambassadors' => 'Lähettiläät',
     'resources' => 'Aineistot',
