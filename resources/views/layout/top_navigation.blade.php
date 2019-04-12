@@ -42,10 +42,10 @@
                     <li><a href="{{route('schools')}}">@lang('menu.schools')</a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="{{route('schools')}}">Why?</a>
+                                <a href="{{route('schools')}}">@lang('menu.why')?</a>
                             </li>
                             <li>
-                                <a href="{{route('codeweek4all')}}">Codeweek4All</a>
+                                <a href="{{route('codeweek4all')}}">CODEWEEK 4 ALL</a>
                             </li>
                         </ul>
 
