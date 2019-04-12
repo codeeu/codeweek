@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'home' => 'Početna stranica',
+    'why' => 'ZAŠTO', 'home'  => 'Početna stranica',
     'events' => 'Događaji',
     'ambassadors' => 'Ambasadori',
     'resources' => 'Materijali',

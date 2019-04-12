@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'home' => 'Accueil',
+    'why' => 'Pourquoi', 'home'  => 'Accueil',
     'events' => 'Événements',
     'ambassadors' => 'Ambassadeurs',
     'resources' => 'Ressources',

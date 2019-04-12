@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'home' => 'Fõoldal',
+    'why' => 'HOGY MIÉRT', 'home'  => 'Fõoldal',
     'events' => 'Események',
     'ambassadors' => 'Nagykövetek',
     'resources' => 'Erõforrások',
