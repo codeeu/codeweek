@@ -54,7 +54,7 @@
         props: ['question'],
         data() {
             return {
-                isOpen: false
+                isOpen: true
             };
         },
         computed:{
