@@ -39,7 +39,18 @@
                     </li>
 
 
-                    <li><a href="{{route('schools')}}">@lang('menu.schools')</a></li>
+                    <li><a href="{{route('schools')}}">@lang('menu.schools')</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="{{route('schools')}}">Why?</a>
+                            </li>
+                            <li>
+                                <a href="{{route('codeweek4all')}}">Codeweek4All</a>
+                            </li>
+                        </ul>
+
+
+                    </li>
                     <li><a href="/about/">@lang('menu.about')</a></li>
                     <li><a href="http://blog.codeweek.eu/">@lang('menu.blog')</a></li>
                 </ul>
