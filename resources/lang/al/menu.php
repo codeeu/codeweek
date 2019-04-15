@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'home' => 'Kreu',
+    'why' => 'Pse', 'home'   => 'Kreu',
     'events' => 'Evenimentet',
     'ambassadors' => 'Ambasadorët',
     'resources' => 'Burimet',

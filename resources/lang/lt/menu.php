@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'home' => 'Pradžios puslapis',
+    'why' => 'KODĖL', 'home'  => 'Pradžios puslapis',
     'events' => 'Renginiai',
     'ambassadors' => 'Ambasadoriai',
     'resources' => 'Ištekliai',

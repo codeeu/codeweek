@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'home' => 'Pagina de pornire',
+    'why' => 'DE CE', 'home'  => 'Pagina de pornire',
     'events' => 'Evenimente',
     'ambassadors' => 'Ambasadori',
     'resources' => 'Resurse',
