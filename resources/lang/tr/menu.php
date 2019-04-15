@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'home' => 'Ana Sayfa',
+    'why' => 'NEDEN', 'home'  => 'Ana Sayfa',
     'events' => 'Etkinlikler',
     'ambassadors' => 'Elçiler',
     'resources' => 'Kaynaklar',
