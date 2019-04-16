@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'why' => 'WAAROM', 'home'  => 'Start',
+    'toolkits' => 'Presentaties en Toolkits', 'why' => 'WAAROM', 'home'  => 'Start',
     'events' => 'Evenementen',
     'ambassadors' => 'Ambassadeurs',
     'resources' => 'Hulpmiddelen',
