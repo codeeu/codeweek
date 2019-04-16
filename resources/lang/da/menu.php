@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'why' => 'HVORFOR', 'home'  => 'Startside',
+    'toolkits' => 'Præsentationer og værktøjssæt', 'why' => 'HVORFOR', 'home'  => 'Startside',
     'events' => 'Arrangementer',
     'ambassadors' => 'Ambassadører',
     'resources' => 'Ressourcer',

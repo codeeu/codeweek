@@ -1049,11 +1049,12 @@ body.stretched #header.full-header .container {
 
 #primary-menu > ul > li.sub-menu > a > div { }
 
+
+
 #primary-menu ul ul,
 #primary-menu ul li .mega-menu-content {
     display: none;
     position: absolute;
-    width: 120px;
     background-color: #FFF;
     box-shadow: 0px 13px 42px 11px rgba(0, 0, 0, 0.05);
     border: 1px solid #EEE;
@@ -1064,6 +1065,7 @@ body.stretched #header.full-header .container {
     left: 0;
     margin: 0;
 }
+
 
 #primary-menu ul ul ul {
     top: -2px !important;

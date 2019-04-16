@@ -25,7 +25,7 @@
                     <li class=""><a href="{{route('ambassadors')}}">@lang('menu.ambassadors')</a></li>
 
                     <li><a href="#">@lang('menu.resources')</a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu resources-menu">
                                         <li>
                                             <a href="{{route('resources_learn')}}">Learn</a>
                                         </li>
@@ -34,6 +34,9 @@
                                         </li>
                                         <li>
                                             <a href="{{route('training.index')}}">Training</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{route('toolkits')}}">@lang('menu.toolkits')</a>
                                         </li>
                                     </ul>
                     </li>

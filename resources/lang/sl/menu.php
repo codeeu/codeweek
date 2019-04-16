@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'why' => 'ZAKAJ', 'home'  => 'Domov',
+    'toolkits' => 'Predstavitve in orodja', 'why' => 'ZAKAJ', 'home'  => 'Domov',
     'events' => 'Dogodki',
     'ambassadors' => 'Ambasadorji',
     'resources' => 'Viri',
