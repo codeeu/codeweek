@@ -17,7 +17,7 @@
 
 
                     <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
-                        <h1>Toolkits</h1>
+                        <h1>@lang('menu.toolkits')</h1>
                         <span></span>
                     </div>
 
