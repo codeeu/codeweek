@@ -102,6 +102,9 @@ Route::get('api/event/list', 'Api\EventsController@list')->name('event_list');
 Route::get('api/event/detail', 'Api\EventsController@detail')->name('event_list');
 Route::get('api/event/closest', 'Api\EventsController@closest');
 
+
+Route::get('toolkits', 'ToolkitsController@get')->name('toolkits');
+
 Route::post('api/event/report/{event}', 'ReportController@store')->middleware('auth');
 
 

@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'why' => 'DE CE', 'home'  => 'Pagina de pornire',
+    'toolkits' => 'Prezentări și instrumente', 'why' => 'DE CE', 'home'  => 'Pagina de pornire',
     'events' => 'Evenimente',
     'ambassadors' => 'Ambasadori',
     'resources' => 'Resurse',

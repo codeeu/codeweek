@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'why' => 'PROČ', 'home'  => 'Domů',
+    'toolkits' => 'Prezentace a sady nástrojů', 'why' => 'PROČ', 'home'  => 'Domů',
     'events' => 'Akce',
     'ambassadors' => 'Ambasadoři',
     'resources' => 'Zdroje',

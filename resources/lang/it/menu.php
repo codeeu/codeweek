@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'why' => 'PERCHÉ', 'home'  => 'Home',
+    'toolkits' => 'Presentazioni e toolkit', 'why' => 'PERCHÉ', 'home'  => 'Home',
     'events' => 'Eventi',
     'ambassadors' => 'Ambasciatori',
     'resources' => 'Risorse',
