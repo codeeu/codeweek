@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'why' => 'MIKSI', 'home'  => 'Kotisivu',
+    'toolkits' => 'Esitykset ja työkalut', 'why' => 'MIKSI', 'home'  => 'Kotisivu',
     'events' => 'Tapahtumat',
     'ambassadors' => 'Lähettiläät',
     'resources' => 'Aineistot',

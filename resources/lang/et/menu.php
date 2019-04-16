@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'why' => 'MIKS', 'home'  => 'Esileht',
+    'toolkits' => 'Presentatsioonid ja tööriistad', 'why' => 'MIKS', 'home'  => 'Esileht',
     'events' => 'Üritused',
     'ambassadors' => 'Saadikud',
     'resources' => 'Materjalid',

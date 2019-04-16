@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'why' => 'VARFÖR', 'home'  => 'Hem',
+    'toolkits' => 'Presentationer och verktyg', 'why' => 'VARFÖR', 'home'  => 'Hem',
     'events' => 'Evenemang',
     'ambassadors' => 'Ambassadörer',
     'resources' => 'Resurser',

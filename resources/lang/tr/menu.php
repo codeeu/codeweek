@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'why' => 'NEDEN', 'home'  => 'Ana Sayfa',
+    'toolkits' => 'Sunu ve Araç setleri', 'why' => 'NEDEN', 'home'  => 'Ana Sayfa',
     'events' => 'Etkinlikler',
     'ambassadors' => 'Elçiler',
     'resources' => 'Kaynaklar',

@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'why' => 'GĦALIEX', 'home'  => 'Paġna Ewlenija',
+    'toolkits' => 'Preżentazzjoni u Għodda', 'why' => 'GĦALIEX', 'home'  => 'Paġna Ewlenija',
     'events' => 'Avvenimenti',
     'ambassadors' => 'Ambaxxaturi',
     'resources' => 'Riżorsi',

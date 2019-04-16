@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'why' => 'PREČO', 'home'  => 'Domov',
+    'toolkits' => 'Prezentácia a sady nástrojov', 'why' => 'PREČO', 'home'  => 'Domov',
     'events' => 'Podujatia',
     'ambassadors' => 'Veľvyslanci',
     'resources' => 'Zdroje',
