@@ -14,7 +14,7 @@ class ResourceItemTest extends TestCase
     use DatabaseMigrations;
     private $admin;
 
-    public function setup()
+    public function setup():void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');

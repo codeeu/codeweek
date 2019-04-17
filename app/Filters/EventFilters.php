@@ -5,6 +5,7 @@ namespace App\Filters;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class EventFilters extends Filters
 {
@@ -17,9 +18,9 @@ class EventFilters extends Filters
 
     public function __construct(Request $request)
     {
-        if (is_null($request->input('year'))) {
+/*        if (is_null($request->input('year'))) {
             $request->merge(['year' => Carbon::now()->year]);
-        }
+        }*/
 
         if (is_null($request->input('country_iso')) && !is_null(session('country_iso'))) {
             $request->merge(['country_iso' => session('country_iso')]);
@@ -45,7 +46,7 @@ class EventFilters extends Filters
 
     protected function year($year)
     {
-
+            Log::info('year' . $year);
             return $this->builder->whereYear('start_date', '=', $year);
 
     }
@@ -58,6 +59,9 @@ class EventFilters extends Filters
 
     protected function query($query)
     {
+
+        if (empty($query)) return;
+
         return $this->builder->where(function ($queryInside) use ($query){
             $queryInside->where('title', 'LIKE', "%$query%")
                 ->orWhere('description', 'LIKE', "%$query%");

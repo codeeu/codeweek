@@ -12,7 +12,7 @@ class SearchEventTest extends TestCase
 {
     use DatabaseMigrations;
 
-    public function setup()
+    public function setup():void
     {
         parent::setUp();
         create('App\Country',[],20);
@@ -58,7 +58,20 @@ class SearchEventTest extends TestCase
         $eventThisYear = create('App\Event', ['start_date'=>new Carbon('today'), 'status'=>'APPROVED']);
 
         //$this->post('search',['years'=>[Carbon::now()->year]])
-        $this->post('search',['year'=>Carbon::now()->subYear(1)->year])
+        $this->post('search',["query"=>"",'year'=>Carbon::now()->subYear(1)->year])
+            ->assertSee($eventLastYear->title)
+            ->assertDontSee($eventThisYear->title);
+
+    }
+
+    /** @test */
+    public function bug_fix_laravel58()
+    {
+        $eventLastYear = create('App\Event', ['start_date'=>Carbon::now()->subYear(1),'end_date'=>Carbon::now()->subYear(1), 'status'=>'APPROVED']);
+        $eventThisYear = create('App\Event', ['start_date'=>new Carbon('today'), 'status'=>'APPROVED']);
+
+        //$this->post('search',['years'=>[Carbon::now()->year]])
+        $this->post('search',["query"=>"",'year'=>Carbon::now()->subYear(1)->year])
             ->assertSee($eventLastYear->title)
             ->assertDontSee($eventThisYear->title);
 

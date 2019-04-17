@@ -15,7 +15,7 @@ class SearchResourceTest extends TestCase
     private $item;
     private $item2;
 
-    public function setup()
+    public function setup():void
     {
         parent::setUp();
         $this->item = create('App\ResourceItem');

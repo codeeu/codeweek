@@ -16,7 +16,7 @@ class ReportEventTest extends TestCase
 
     protected $event;
 
-    public function setup()
+    public function setup():void
     {
         parent::setUp();
 
