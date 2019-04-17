@@ -7,6 +7,7 @@ use App\Event;
 use App\Filters\EventFilters;
 use Illuminate\Http\Request;
 use App\Http\Transformers\EventTransformer;
+use Illuminate\Support\Facades\Log;
 
 class SearchController extends Controller
 {
@@ -42,6 +43,7 @@ class SearchController extends Controller
         if ($request->input('page')) {
             $result = [$events];
         } else {
+            Log::info('no page');
             $eventsMap = $this->getAllEventsToMap($filters);
             $result = [$events, $eventsMap];
         }
@@ -62,15 +64,19 @@ class SearchController extends Controller
     protected function getAllEventsToMap(EventFilters $filters)
     {
 
-
+        Log::info('coucou');
         $events = Event::where('status','like','APPROVED')
             ->filter($filters)
             ->get();
 
-
+        Log::info('before transform');
         $events = $this->eventTransformer->transformCollection($events);
+        Log::info('after transform');
         $events = $events->groupBy('country');
+        Log::info('after groupBy');
 
+
+        Log::info($events);
         return $events;
     }
 }

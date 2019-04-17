@@ -136,6 +136,7 @@ class Event extends Model
 
     public function scopeFilter($query, EventFilters $filters)
     {
+        //Log::info($filters->apply($query));
         return $filters->apply($query);
     }
 
