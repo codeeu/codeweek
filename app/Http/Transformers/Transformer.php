@@ -3,6 +3,8 @@
 namespace App\Http\Transformers;
 
 
+use Illuminate\Support\Facades\Log;
+
 abstract class Transformer
 {
 
