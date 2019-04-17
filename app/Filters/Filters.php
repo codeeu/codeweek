@@ -38,6 +38,14 @@ abstract class Filters
 
     }
 
+
+    public static function getEloquentSqlWithBindings($query)
+    {
+        return vsprintf(str_replace('?', '%s', $query->toSql()), collect($query->getBindings())->map(function ($binding) {
+            return is_numeric($binding) ? $binding : "'{$binding}'";
+        })->toArray());
+    }
+
     /**
      * Apply the filters.
      *
@@ -56,7 +64,8 @@ abstract class Filters
             }
         }
 
-        //Log::info($this->builder->toSql());
+        Log::info($this->builder->toSql());
+        //Log::info(self::getEloquentSqlWithBindings($this->builder));
         return $this->builder;
     }
 

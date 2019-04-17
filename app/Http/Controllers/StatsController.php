@@ -133,7 +133,7 @@ class StatsController extends Controller
                 ->orderBy('events', 'desc')
                 ->pluck('events', 'c.name')
                 ->toArray();
-            Cache::put('eventsPerYearCountry', $eventsPerYear, 60);
+            Cache::put('eventsPerYearCountry', $eventsPerYear, 60*60);
         } else {
             $eventsPerYear = DB::table('countries as c')
                 ->selectRaw('c.name, count(c.iso) as events')
@@ -146,7 +146,7 @@ class StatsController extends Controller
                 ->orderBy('events', 'desc')
                 ->pluck('events', 'c.name')
                 ->toArray();
-            Cache::put('eventsPerYearOrganiser', $eventsPerYear, 60);
+            Cache::put('eventsPerYearOrganiser', $eventsPerYear, 60*60);
         }
 
         return $eventsPerYear;
@@ -184,7 +184,7 @@ class StatsController extends Controller
             ->whereYear('e.end_date', $operator, $year)
             ->distinct()
             ->count('creator_id');
-        Cache::put('creatorsWithOneEvent', $count, 60);
+        Cache::put('creatorsWithOneEvent', $count, 60*60);
         return $count;
 
     }
@@ -198,7 +198,7 @@ class StatsController extends Controller
             ->whereYear('e.end_date', $operator, $year)
             ->where('id', '<>', 183480)
             ->sum('e.participants_count');
-        Cache::put('totalParticipants', $count, 60);
+        Cache::put('totalParticipants', $count, 60*60);
         return $count;
 
     }
@@ -212,7 +212,7 @@ class StatsController extends Controller
             ->whereYear('e.end_date', $operator, $year)
             ->where('e.end_date', '<=', Carbon::now('Europe/Brussels'))
             ->count();
-        Cache::put('eventsFinished', $count, 60);
+        Cache::put('eventsFinished', $count, 60*60);
         return $count;
 
     }
@@ -228,7 +228,7 @@ class StatsController extends Controller
             ->where('e.end_date', '<', Carbon::now('Europe/Brussels'))
             ->whereNull('e.participants_count')
             ->count();
-        Cache::put('eventsNotReported', $count, 60);
+        Cache::put('eventsNotReported', $count, 60*60);
         return $count;
 
     }
@@ -237,7 +237,7 @@ class StatsController extends Controller
     {
         $countries = Country::orderBy('name')
             ->get();
-        Cache::put('countries', $countries, 60);
+        Cache::put('countries', $countries, 60*60);
         return $countries;
     }
 
