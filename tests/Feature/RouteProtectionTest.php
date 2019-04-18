@@ -18,7 +18,7 @@ class RouteProtectionTest extends TestCase
     private $school_manager;
     private $event_owner;
 
-    public function setup()
+    public function setup():void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');

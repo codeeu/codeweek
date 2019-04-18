@@ -11,6 +11,7 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Resources\Event as EventResource;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Log;
 
 
 class EventsController extends Controller
@@ -39,14 +40,17 @@ class EventsController extends Controller
 
         }else {
 
+
             $events = Event::getByYear($year);
 
             $events = $this->eventTransformer->transformCollection($events);
 
             $events = $events->groupBy('country');
 
+
+
             if ($year == Carbon::now()->year) {
-                Cache::add('events' . $year, $events, env('CACHE_MINUTES_CURRENT_YEAR') | 5);
+                Cache::add('events' . $year, $events, env('CACHE_MINUTES_CURRENT_YEAR')*60 | 5);
             }else{
                 Cache::forever('events' . $year, $events);
             }
