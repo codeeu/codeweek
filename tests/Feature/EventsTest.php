@@ -15,7 +15,7 @@ class EventsTest extends TestCase
 
     private $event;
 
-    public function setup()
+    public function setup():void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
