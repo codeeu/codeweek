@@ -29,9 +29,5 @@ class ResourcesController extends Controller
         return $this->index('teach');
     }
 
-    public function show($country)
-    {
-        return view("resources.{$country}.index", compact('country'));
 
-    }
 }
