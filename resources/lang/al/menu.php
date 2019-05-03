@@ -14,7 +14,7 @@ return [
     */
 
     'toolkits' => 'Prezantime dhe mjete', 'why' => 'Pse', 'home'   => 'Kreu',
-    'events' => 'Evenimentet',
+    'events' => 'Aktivitete',
     'ambassadors' => 'Ambasadorët',
     'resources' => 'Burimet',
     'schools' => 'Shkollat',

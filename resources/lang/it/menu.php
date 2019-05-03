@@ -14,7 +14,7 @@ return [
     */
 
     'toolkits' => 'Presentazioni e toolkit', 'why' => 'PERCHÉ', 'home'  => 'Home',
-    'events' => 'Eventi',
+    'events' => 'Attività',
     'ambassadors' => 'Ambasciatori',
     'resources' => 'Risorse',
     'schools' => 'Scuole',

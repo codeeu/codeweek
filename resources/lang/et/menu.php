@@ -14,7 +14,7 @@ return [
     */
 
     'toolkits' => 'Presentatsioonid ja tööriistad', 'why' => 'MIKS', 'home'  => 'Esileht',
-    'events' => 'Üritused',
+    'events' => 'Tegevused',
     'ambassadors' => 'Saadikud',
     'resources' => 'Materjalid',
     'schools' => 'Koolid',
