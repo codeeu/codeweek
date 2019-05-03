@@ -14,7 +14,7 @@ return [
     */
 
     'toolkits' => 'Prezentări și instrumente', 'why' => 'DE CE', 'home'  => 'Pagina de pornire',
-    'events' => 'Evenimente',
+    'events' => 'Activităţi',
     'ambassadors' => 'Ambasadori',
     'resources' => 'Resurse',
     'schools' => 'Școli',

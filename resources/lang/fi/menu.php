@@ -14,7 +14,7 @@ return [
     */
 
     'toolkits' => 'Esitykset ja työkalut', 'why' => 'MIKSI', 'home'  => 'Kotisivu',
-    'events' => 'Tapahtumat',
+    'events' => 'tapahtumiin',
     'ambassadors' => 'Lähettiläät',
     'resources' => 'Aineistot',
     'schools' => 'Koulut',
