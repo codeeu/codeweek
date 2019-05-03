@@ -68,7 +68,7 @@ Route::post('/resources/search', 'SearchResourcesController@search')->name('sear
 //Route::get('/resources/suggest', 'SuggestResourcesController@get')->name('suggest_resources')->middleware('auth');
 //Route::post('/resources/suggest', 'SuggestResourcesController@store')->name('store_suggest_resources')->middleware('auth');
 
-Route::get('/resources/{country}', 'ResourcesController@show')->name('resources_by_country');
+//Route::get('/resources/{country}', 'ResourcesController@show')->name('resources_by_country');
 Route::get('/ambassadors', 'AmbassadorController@index')->name('ambassadors');
 Route::get('/volunteer', 'VolunteerController@create')->middleware('auth')->name('volunteer');
 Route::post('/volunteer', 'VolunteerController@store')->middleware('auth')->name('volunteer_store');
