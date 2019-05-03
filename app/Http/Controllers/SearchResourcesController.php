@@ -26,13 +26,13 @@ class SearchResourcesController extends Controller
     protected function getItems(ResourceFilters $filters)
     {
 
-        $items = ResourceItem::filter($filters)->whereActive(true);
+        $items = ResourceItem::filter($filters)->whereActive(true)->orderBy('created_at', 'desc');
 
 
         //return($items->get()->distinct());
 
         //dd($items->distinct()->paginate(10)->items);
 
-        return $items->distinct()->paginate(120);
+        return $items->distinct()->paginate(30);
     }
 }
