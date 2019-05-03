@@ -14,7 +14,7 @@ return [
     */
 
     'toolkits' => 'Presentaties en Toolkits', 'why' => 'WAAROM', 'home'  => 'Start',
-    'events' => 'Evenementen',
+    'events' => 'Activiteiten',
     'ambassadors' => 'Ambassadeurs',
     'resources' => 'Hulpmiddelen',
     'schools' => 'Scholen',

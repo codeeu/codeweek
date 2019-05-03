@@ -14,7 +14,7 @@ return [
     */
 
     'toolkits' => 'Presentations and Toolkits', 'why' => 'Why', 'home'  => 'Home',
-    'events' => 'Events',
+    'events' => 'Activities',
     'ambassadors' => 'Ambassadors',
     'resources' => 'Resources',
     'schools' => 'Schools',
