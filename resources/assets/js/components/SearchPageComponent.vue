@@ -262,7 +262,7 @@
         margin-left: 20px;
         font-weight: bold;
         flex: 1;
-        justify-content: end;
+        justify-content: flex-end;
         display: flex;
         display: -webkit-box;
     }
