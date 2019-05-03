@@ -14,7 +14,7 @@ return [
     */
 
     'toolkits' => 'Prezentacije i alati', 'why' => 'ZAŠTO', 'home'  => 'Početna stranica',
-    'events' => 'Događaji',
+    'events' => 'Aktivnosti',
     'ambassadors' => 'Ambasadori',
     'resources' => 'Resursi',
     'schools' => 'Škole',

@@ -14,7 +14,7 @@ return [
     */
 
     'toolkits' => 'Preżentazzjoni u Għodda', 'why' => 'GĦALIEX', 'home'  => 'Paġna Ewlenija',
-    'events' => 'Avvenimenti',
+    'events' => 'Attivitajiet',
     'ambassadors' => 'Ambaxxaturi',
     'resources' => 'Riżorsi',
     'schools' => 'Skejjel',

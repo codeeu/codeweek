@@ -14,7 +14,7 @@ return [
     */
 
     'toolkits' => 'Prezentácia a sady nástrojov', 'why' => 'PREČO', 'home'  => 'Domov',
-    'events' => 'Podujatia',
+    'events' => 'Aktivity',
     'ambassadors' => 'Veľvyslanci',
     'resources' => 'Zdroje',
     'schools' => 'Školy',

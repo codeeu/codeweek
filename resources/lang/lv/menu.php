@@ -14,7 +14,7 @@ return [
     */
 
     'toolkits' => 'Prezentācijas un rīkkopas', 'why' => 'KĀPĒC', 'home'  => 'Sākumlapa',
-    'events' => 'Pasākumi',
+    'events' => 'Aktivitātes',
     'ambassadors' => 'Vēstnieks',
     'resources' => 'Resursi',
     'schools' => 'Skolas',

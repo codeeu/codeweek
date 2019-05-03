@@ -14,7 +14,7 @@ return [
     */
 
     'toolkits' => 'Prezentace a sady nástrojů', 'why' => 'PROČ', 'home'  => 'Domů',
-    'events' => 'Akce',
+    'events' => 'Aktivity',
     'ambassadors' => 'Ambasadoři',
     'resources' => 'Zdroje',
     'schools' => 'Školy',

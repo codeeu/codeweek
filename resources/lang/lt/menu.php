@@ -14,7 +14,7 @@ return [
     */
 
     'toolkits' => 'Pristatymai ir priemonių rinkiniai jūsų kalba', 'why' => 'KODĖL', 'home'  => 'Pradžios puslapis',
-    'events' => 'Renginiai',
+    'events' => 'Veikla',
     'ambassadors' => 'Ambasadoriai',
     'resources' => 'Ištekliai',
     'schools' => 'Mokyklos',

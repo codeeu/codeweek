@@ -14,7 +14,7 @@ return [
     */
 
     'toolkits' => 'Præsentationer og værktøjssæt', 'why' => 'HVORFOR', 'home'  => 'Startside',
-    'events' => 'Arrangementer',
+    'events' => 'Aktiviteter',
     'ambassadors' => 'Ambassadører',
     'resources' => 'Ressourcer',
     'schools' => 'Skoler',

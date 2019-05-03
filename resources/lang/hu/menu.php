@@ -14,7 +14,7 @@ return [
     */
 
     'toolkits' => 'Prezentációk és eszközök', 'why' => 'HOGY MIÉRT', 'home'  => 'Fõoldal',
-    'events' => 'Események',
+    'events' => 'Programok',
     'ambassadors' => 'Nagykövetek',
     'resources' => 'Erõforrások',
     'schools' => 'Iskolák',
