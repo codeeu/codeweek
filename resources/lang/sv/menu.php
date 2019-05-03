@@ -14,7 +14,7 @@ return [
     */
 
     'toolkits' => 'Presentationer och verktyg', 'why' => 'VARFÖR', 'home'  => 'Hem',
-    'events' => 'Evenemang',
+    'events' => 'Aktiviteter',
     'ambassadors' => 'Ambassadörer',
     'resources' => 'Resurser',
     'schools' => 'Skolor',
