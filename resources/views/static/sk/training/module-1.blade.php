@@ -19,8 +19,7 @@
 
                     <p>Pomocou program&aacute;torsk&yacute;ch aktiv&iacute;t bez poč&iacute;tača m&ocirc;žeme spoznať v&yacute;počtov&eacute; str&aacute;nky fyzick&eacute;ho sveta okolo n&aacute;s.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/18N1CaQJ0GI "></iframe></div>
+                    @include('static.youtube', ['video_id' => '18N1CaQJ0GI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SK/CNECT-2018-00222-00-17-SK-TRA-00.DOCX">Stiahnuť prepis videa</a></p>
 

@@ -19,8 +19,7 @@
 
                     <p>Oglejte si videoposnetek, v katerem Tullia Urschitz, italijanska ambasadorka združenja Scientix in učiteljica predmetov STEM v kraju Sant&rsquo;Ambrogio di Valpolicella v Italiji, predstavlja nekaj praktičnih primerov, kako lahko učitelji vključijo drobno izbolj&scaron;evanje in robotiko v pouk ter s tem pasivne učence spremenijo v navdu&scaron;ene snovalce.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SL/CNECT-2018-00222-00-20-SL-TRA-00.DOCX">Prenos besedila videoposnetka</a></p>
 

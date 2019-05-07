@@ -19,8 +19,7 @@
 
                     <p>Активностите на кодирање без интернет ги откриваат компјутерските аспекти на физичкиот свет околу нас.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/18N1CaQJ0GI "></iframe></div>
+                    @include('static.youtube', ['video_id' => '18N1CaQJ0GI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/MK/CNECT-2018-00222-00-17-MK-TRA-00.docx">Преземете ја видеоскриптата</a></p>
 

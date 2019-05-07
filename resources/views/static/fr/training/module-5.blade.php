@@ -19,8 +19,7 @@
 
                     <p>La vid&eacute;o de Tullia Urschitz, ambassadrice italienne de Scientix et enseignante STEM &agrave; Sant&rsquo;Ambrogio Di Valpolicella, en Italie, donne des exemples pratiques sur la fa&ccedil;on d&rsquo;int&eacute;grer le bricolage et la robotique en classe, transformant ainsi des &eacute;l&egrave;ves passifs en cr&eacute;ateurs enthousiastes.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/FR/CNECT-2018-00222-00-20-FR-TRA-00.DOCX">T&eacute;l&eacute;charger le script vid&eacute;o</a></p>
 

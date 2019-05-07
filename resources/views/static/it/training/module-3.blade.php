@@ -21,8 +21,7 @@
 
                     <p>Scratch &egrave; uno strumento gratuito, molto intuitivo e motivante per i tuoi studenti. Dai un&rsquo;occhiata al video di Margo per imparare come iniziare.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'pmfCwauN1c0'])
 
                     {{--<p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/IT/CNECT-2018-00222-00-18-IT-TRA-00.DOCX">Scarica lo script video</a></p>--}}
 

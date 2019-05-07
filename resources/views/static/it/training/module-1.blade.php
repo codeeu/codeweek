@@ -19,8 +19,7 @@
 
                     <p>Le attivit&agrave; di programmazione unplugged svelano gli aspetti computazionali del mondo fisico che ci circonda.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/18N1CaQJ0GI "></iframe></div>
+                    @include('static.youtube', ['video_id' => '18N1CaQJ0GI'])
 
                     {{--<p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/IT/CNECT-2018-00222-00-17-IT-TRA-00.DOCX">Scarica lo script video</a></p>--}}
 

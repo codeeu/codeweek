@@ -19,8 +19,7 @@
 
                     <p>U ovom video zapisu, Miles Berry glavni predavač na Fakultetu za obrazovanje Univerziteta Rouhempton u Gilfordu (Ujedinjeno Kraljevstvo)  (org. University of Roehampton School of Education at Guildford (United Kingdom)) predstaviće koncept računarskog mi&scaron;ljenja i različite načine na koje ga nastavnik može uključiti u učionicu uz pomoć jednostavnih igara.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ME/CNECT-2018-00222-00-16-ME-TRA-00.DOC">Preuzmite video zapis.</a></p>
 

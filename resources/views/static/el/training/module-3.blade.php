@@ -21,8 +21,7 @@
 
                     <p>Η Scratch είναι δωρεάν εργαλείο, πολύ εύληπτο και ενδιαφέρον για τους μαθητές σας. Ρίξτε μια ματιά στο βίντεο της Margo για να μάθετε πώς να ξεκινήσετε.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'pmfCwauN1c0'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EL/CNECT-2018-00222-00-18-EL-TRA-00.DOCX">Κατεβάστε τα λόγια του βίντεο σε μορφή κειμένου</a></p>
 

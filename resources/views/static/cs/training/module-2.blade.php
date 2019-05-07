@@ -19,8 +19,7 @@
 
                     <p>Miles Berry, hlavn&iacute; lektor University of Roehampton School of Education v Guildfordu (Velk&aacute; Brit&aacute;nie), představ&iacute; koncept informatick&eacute;ho my&scaron;len&iacute; a různ&eacute; způsoby, jak ho učitel může zařadit do jednoduch&yacute;ch her ve tř&iacute;dě.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/CS/CNECT-2018-00222-00-16-CS-TRA-00.DOCX">St&aacute;hnout sc&eacute;n&aacute;ř videa</a></p>
 

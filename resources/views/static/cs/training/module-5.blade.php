@@ -19,8 +19,7 @@
 
                     <p>Tullia Urschitz, ambasadorka Italian Scientix a učitelka STEM v Sant&rsquo;Ambrogio Di Valpolicella v It&aacute;lii, v&aacute;m v n&aacute;sleduj&iacute;c&iacute;m videu uk&aacute;že praktick&eacute; př&iacute;klady toho, jak učitel&eacute; mohou do vyučov&aacute;n&iacute; začlenit vylep&scaron;ov&aacute;n&iacute; a robotiku, a d&iacute;ky tomu udělat z pasivn&iacute;ch ž&aacute;ků nad&scaron;en&eacute; konstrukt&eacute;ry.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/CS/CNECT-2018-00222-00-20-CS-TRA-00.DOCX">St&aacute;hnout sc&eacute;n&aacute;ř videa</a></p>
 

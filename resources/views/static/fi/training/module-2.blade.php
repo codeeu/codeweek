@@ -19,8 +19,7 @@
 
                     <p>Roehampton School of Education at Guildford&nbsp;-yliopiston (Yhdistynyt kuningaskunta) lehtori Miles Berry esittelee videolla laskennallisen ajattelun k&auml;sitteen ja erilaisia tapoja, joilla opettaja voi sis&auml;llytt&auml;&auml; laskennallista ajattelua opetukseen yksinkertaisilla peleill&auml;.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/FI/CNECT-2018-00222-00-16-FI-TRA-00.DOCX">Lataa videon k&auml;sikirjoitus</a></p>
 

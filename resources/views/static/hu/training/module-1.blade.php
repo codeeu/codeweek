@@ -19,8 +19,7 @@
 
                     <p>Az offline programoz&aacute;si tev&eacute;kenys&eacute;gek a k&ouml;r&uuml;l&ouml;tt&uuml;nk l&eacute;vő fizikai vil&aacute;g sz&aacute;m&iacute;t&aacute;stechnikai szempontjait fedik fel.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/18N1CaQJ0GI "></iframe></div>
+                    @include('static.youtube', ['video_id' => '18N1CaQJ0GI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/HU/CNECT-2018-00222-00-17-HU-TRA-00.DOCX">Vide&oacute; forgat&oacute;k&ouml;nyv&eacute;nek let&ouml;lt&eacute;se</a></p>
 

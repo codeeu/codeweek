@@ -19,8 +19,7 @@
 
                     <p>Pozrite si video, v&nbsp;ktorom Tullia Urschitz, veľvyslankyňa z&nbsp;talianskej komunity Scientix a učiteľka predmetov STEM (veda, technol&oacute;gia, inžinierstvo a matematika) zo Sant&rsquo;Ambrogio Di Valpolicella v&nbsp;Taliansku, pon&uacute;ka niekoľko praktick&yacute;ch pr&iacute;kladov, ako m&ocirc;žu učitelia zahrn&uacute;ť majstrovanie a robotiku do vyučovania a premeniť tak pas&iacute;vnych &scaron;tudentov na nad&scaron;en&yacute;ch tvorcov.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SK/CNECT-2018-00222-00-20-SK-TRA-00.DOCX">Stiahnuť prepis videa</a></p>
 
