@@ -22,14 +22,11 @@ class Locale
     public function handle($request, Closure $next)
     {
 
-        Log::info("In language detection middleware");
-        Log::info("Lang detected: " . $request->lang);
         if (isset($request->lang)) {
-
-            if (in_array($request->lang, config('app.locales'))) {
-                session(['locale' => $request->lang]);
+            $lang = strtolower($request->lang);
+            if (in_array($lang, config('app.locales'))) {
+                session(['locale' => $lang]);
             }
-            Log::info("Session Locale: " . session('locale'));
         }
 
         $raw_locale = session('locale');
