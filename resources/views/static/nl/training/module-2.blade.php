@@ -19,8 +19,7 @@
 
                     <p>In deze video vertelt Miles Berry, hoofddocent aan de School of Education van de University of Roehampton in Guildford (Verenigd Koninkrijk), over het concept van computationeel denken en de manieren waarop een leraar dit met eenvoudige games in lessen kan verwerken.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/NL/CNECT-2018-00222-00-16-NL-TRA-00.DOCX">Het videoscript downloaden</a></p>
 

@@ -19,8 +19,7 @@
 
                     <p>Zajęcia z programowania bez prądu pozwalają wszystkim uczestnikom odkryć r&oacute;żnorodne aspekty obliczeniowe otaczającego świata.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/18N1CaQJ0GI "></iframe></div>
+                    @include('static.youtube', ['video_id' => '18N1CaQJ0GI'])
 
                     <h2>Czujesz, że jesteś w stanie podzielić się zdobytą wiedzą z uczniami?</h2>
 

@@ -19,8 +19,7 @@
 
                     <p>Dai un&rsquo;occhiata a questo video in cui Tullia Urschitz, ambasciatrice italiana Scientix e insegnante di materie STEM a Sant&rsquo;Ambrogio di Valpolicella (Verona), fornir&agrave; alcuni esempi pratici sul modo in cui gli insegnanti possono integrare tinkering e robotica in classe, trasformando cos&igrave; gli studenti passivi in creatori entusiasti.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     {{--<p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/IT/CNECT-2018-00222-00-20-IT-TRA-00.DOCX">Scarica lo script video</a></p>--}}
 

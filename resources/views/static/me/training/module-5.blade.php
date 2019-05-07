@@ -19,8 +19,7 @@
 
                     <p>Pogledajte video zapis u kom će Tullia Urschitz, italijanski ambasador za Scientix i predavač STEM-a u mjestu Sant&rsquo;Ambrođo di Valpoličela (org. Sant&rsquo;Ambrogio Di Valpolicella) (Italija), dati neke praktične primjere o načinu na koji nastavnici mogu uvesti promi&scaron;ljanje i robotiku u učionice i tako pretvoriti pasivne učenike u stvaraoce pune entuzijazma.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ME/CNECT-2018-00222-00-20-ME-TRA-00.DOC">Preuzmite video zapis.</a></p>
 

@@ -21,8 +21,7 @@
 
                     <p>A Scratch ingyenes eszk&ouml;z, r&aacute;ad&aacute;sul rendk&iacute;v&uuml;l intuit&iacute;v, &eacute;s motiv&aacute;l&oacute; hat&aacute;ssal van a di&aacute;kokra. Tekintse meg Margo vide&oacute;j&aacute;t, &eacute;s ismerje meg az első l&eacute;p&eacute;seket.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'pmfCwauN1c0'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/HU/CNECT-2018-00222-00-18-HU-TRA-00.DOCX">Vide&oacute; forgat&oacute;k&ouml;nyv&eacute;nek let&ouml;lt&eacute;se</a></p>
 

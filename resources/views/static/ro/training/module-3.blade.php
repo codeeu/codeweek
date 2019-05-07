@@ -21,8 +21,7 @@
 
                     <p>Scratch este un instrument gratuit, foarte intuitiv și motivant pentru elevii dumneavoastră. Urmăriți videoclipul lui Margo și &icirc;nvățați cum puteți &icirc;ncepe.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'pmfCwauN1c0'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/RO/CNECT-2018-00222-00-18-RO-TRA-00.DOCX">Descărcați textul videoclipului</a></p>
 

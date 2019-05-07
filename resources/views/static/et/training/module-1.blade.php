@@ -19,8 +19,7 @@
 
                     <p>Elektroonikavabad programmeerimistegevused aitavad paljastada f&uuml;&uuml;silise maailma algoritmilisi aspekte.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/18N1CaQJ0GI "></iframe></div>
+                    @include('static.youtube', ['video_id' => '18N1CaQJ0GI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ET/CNECT-2018-00222-00-17-ET-TRA-00.DOCX">Laadi alla video skript</a></p>
 

@@ -31,11 +31,7 @@
                         Have a look at this video where Tullia Urschitz, Italian Scientix ambassador and STEM teacher in Sant’Ambrogio Di Valpolicella, Italy, will give some practical examples on how teachers can integrate tinkering and robotics in the classroom, thus transforming passive students into enthusiastic makers.
                     </p>
 
-                    <div class="flex youtube-container">
-                        <iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik">
-                        </iframe>
-                    </div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p>
                         <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+5_Making_Robotics_Tinkering+_Video+script.docx">Download the video script</a>

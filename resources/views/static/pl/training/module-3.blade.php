@@ -21,8 +21,7 @@
 
                     <p>Scratch to intuicyjne narzędzie, kt&oacute;re motywuje uczni&oacute;w do nauki, a co najważniejsze, jest dostępne całkowicie za darmo. Obejrzyj film przygotowany przez Margo, z kt&oacute;rego dowiesz się, jak zacząć.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'pmfCwauN1c0'])
 
                     <h2>Czujesz, że jesteś w stanie podzielić się zdobytą wiedzą z uczniami?</h2>
 

@@ -19,8 +19,7 @@
 
                     <p>U ovom video snimku, Majls Beri, predavač na Fakultetu za obrazovanje predmetnih nastavnika na Univerzitetu Ruhempton u Gildfordu (Velika Britanija), predstaviće koncept računarskog razmi&scaron;ljanja i različite načine na koje nastavnik može da ga integri&scaron;e u svoju nastavu pomoću jednostavnih igrica.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SR/CNECT-2018-00222-00-16-SR-TRA-00.DOCX">Preuzmite video skriptu</a></p>
 

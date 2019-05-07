@@ -19,8 +19,7 @@
 
                     <p>Fr&aring;nkopplad kodning avsl&ouml;jar de datalogiska aspekterna av den fysiska v&auml;rlden runt omkring oss.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/18N1CaQJ0GI "></iframe></div>
+                    @include('static.youtube', ['video_id' => '18N1CaQJ0GI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SV/CNECT-2018-00222-00-17-SV-TRA-00.DOCX">H&auml;mta videoskript</a></p>
 

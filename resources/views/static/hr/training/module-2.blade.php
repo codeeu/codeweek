@@ -19,8 +19,7 @@
 
                     <p>U ovom videozapisu Miles Berry, glavni predavač na sveučili&scaron;tu University of Roehampton School of Education u Guildfordu (Ujedinjena Kraljevina), upoznaje nas s pojmom računalnog razmi&scaron;ljanja i s različitim načinima na koje ga nastavnik može integrirati u učionicu s pomoću jednostavnih igara.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/HR/CNECT-2018-00222-00-16-HR-TRA-00.DOCX">Preuzmite videoskriptu</a></p>
 

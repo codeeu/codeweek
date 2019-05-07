@@ -19,8 +19,7 @@
 
                     <p>Dans cette vid&eacute;o, Miles Berry, ma&icirc;tre de conf&eacute;rences &agrave; l&rsquo;&Eacute;cole normale de l&rsquo;Universit&eacute; de Roehampton &agrave; Guildford (Royaume-Uni), pr&eacute;sente le concept du raisonnement informatique et les diff&eacute;rentes fa&ccedil;ons dont un enseignant peut l&rsquo;int&eacute;grer en classe &agrave; l&rsquo;aide de jeux simples.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/FR/CNECT-2018-00222-00-16-FR-TRA-00.DOCX">T&eacute;l&eacute;charger le script vid&eacute;o</a></p>
 

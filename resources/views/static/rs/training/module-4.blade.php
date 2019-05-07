@@ -21,8 +21,7 @@
 
                     <p>Pogledajte video i naučite kako da počnete.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/M1zJOfmriGU"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'M1zJOfmriGU'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SR/CNECT-2018-00222-00-19-SR-TRA-00.DOCX">Preuzmite video skriptu</a></p>
 
