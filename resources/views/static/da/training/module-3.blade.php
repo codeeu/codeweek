@@ -21,8 +21,7 @@
 
                     <p>Scratch er gratis, meget intuitivt og motiverende for dine elever. Tag et kig p&aring; Margos video for at l&aelig;re, hvordan du kommer i gang.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'pmfCwauN1c0'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/DA/CNECT-2018-00222-00-18-DA-TRA-00.DOCX">Download videoscriptet</a></p>
 

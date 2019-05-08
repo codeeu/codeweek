@@ -19,8 +19,7 @@
 
                     <p>Ebben a vide&oacute;ban Miles Berry, a University of Roehampton School of Education at Guildford (Egyes&uuml;lt Kir&aacute;lys&aacute;g) egyetemi docense bemutatja a sz&aacute;m&iacute;t&aacute;stechnikai gondolkod&aacute;st &eacute;s azokat a lehetős&eacute;geket, amelyek r&eacute;v&eacute;n a tan&aacute;rok egyszerű j&aacute;t&eacute;kok seg&iacute;ts&eacute;g&eacute;vel alkalmazhatj&aacute;k ezt a tan&iacute;t&aacute;s sor&aacute;n.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/HU/CNECT-2018-00222-00-16-HU-TRA-00.DOCX">Vide&oacute; forgat&oacute;k&ouml;nyv&eacute;nek let&ouml;lt&eacute;se</a></p>
 

@@ -19,8 +19,7 @@
 
                     <p>Pasižiūrėkite &scaron;į vaizdo įra&scaron;ą, kuriame projekto &bdquo;Scientix&ldquo; ambasadorė Italijoje ir gamtos mokslų, technologijų, inžinerijos ir matematikos mokytoja Sant&rsquo;Ambrogio Di Valpolicella (Italija) pateikia prakti&scaron;kų pavyzdžių, kaip mokytojai gali įtraukti tinkinimą ir robotiką į pamoką ir paversti pasyvius mokinius entuziastingais kūrėjais.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LT/CNECT-2018-00222-00-20-LT-TRA-00.DOCX">Atsisiųsti vaizdo įra&scaron;o scenarijų</a></p>
 

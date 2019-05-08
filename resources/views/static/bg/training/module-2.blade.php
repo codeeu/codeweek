@@ -19,8 +19,7 @@
 
                     <p>В този видеоматериал, Майлс Бери, главен лектор във Факултета по педагогика към Университета Роухемптън в Гилдфорд (Обединено кралство), ще представи концепцията за изчислително мислене и различните начини, по които един учител може да го интегрира в клас с лесни игри.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/BG/CNECT-2018-00222-00-16-BG-TRA-00.DOCX">Изтеглете видео скрипта</a></p>
 

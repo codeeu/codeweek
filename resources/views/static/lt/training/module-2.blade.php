@@ -19,8 +19,7 @@
 
                     <p>&Scaron;iame vaizdo įra&scaron;e Gildfordo Roehamptono universiteto &Scaron;vietimo mokyklos (Jungtinė Karalystė) vyr.&nbsp;dėstytojas Miles Berry pristato skaitmeninio mąstymo sąvoką ir įvairius būdus, kaip mokytojas gali įtraukti jį į savo pamokas per paprastus žaidimus.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LT/CNECT-2018-00222-00-16-LT-TRA-00.DOCX">Atsisiųsti vaizdo įra&scaron;o scenarijų</a></p>
 

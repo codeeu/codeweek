@@ -25,8 +25,7 @@
 
                     <p>Agħti titwila lejn il-vidjo biex tara kif tibda:</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/M1zJOfmriGU"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'M1zJOfmriGU'])
 
 
                     <h2>Lest biex taqsam dak li tgħallimt mal-istudenti tiegħek?</h2>

@@ -19,8 +19,7 @@
 
                     <p>Pogledajte ovaj videozapis u kojemu će Tullia Urschitz, talijanska ambasadorica zajednice Scientix i nastavnica STEM-a u općini Sant&rsquo;Ambrogio Di Valpolicella u Italiji, navesti neke praktične primjere o tome kako nastavnici mogu uključiti popravljanje i robotiku u svoju nastavu, preobražavajući tako pasivne učenike u entuzijastične stvaratelje.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/HR/CNECT-2018-00222-00-20-HR-TRA-00.DOCX">Preuzmite videoskriptu</a></p>
 

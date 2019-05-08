@@ -19,8 +19,7 @@
 
                     <p>Aktivnosti kodiranja oflajn otkrivaju računarske aspekte fizičkog svijeta oko nas.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/18N1CaQJ0GI "></iframe></div>
+                    @include('static.youtube', ['video_id' => '18N1CaQJ0GI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Video_script.docx">Preuzmite video skriptu</a></p>
 

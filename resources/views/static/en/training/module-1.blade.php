@@ -31,11 +31,7 @@
                         Unplugged coding activities unveil the computational aspects of the physical world around us.
                     </p>
 
-                    <div class="flex youtube-container">
-                        <iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/18N1CaQJ0GI ">
-                        </iframe>
-                    </div>
+                    @include('static.youtube', ['video_id' => '18N1CaQJ0GI'])
 
                     <p>
                         <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Video_script.docx">Download the video script</a>

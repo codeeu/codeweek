@@ -19,8 +19,7 @@
 
                     <p>N&euml; k&euml;t&euml; video, Miles Berry, Kryelektor n&euml; Universitetin e Roehampton School of Education n&euml; Guildford (Mbret&euml;ria e Bashkuar), do t&euml; prezantoj&euml; konceptin e mendimit kompjuterik dhe m&euml;nyrat e ndryshme se si nj&euml; m&euml;sues mund ta integroj&euml; at&euml; n&euml; klas&euml; me loj&euml;ra t&euml; thjeshta.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_+Learning+Bit+2_Computational_Thinking+_Video+script.docx">Shkarko tekstin e videos</a></p>
 

@@ -21,8 +21,7 @@
 
                     <p>O Scratch &eacute; uma ferramenta gratuita, muito intuitiva e motivante para os seus alunos. Veja o v&iacute;deo da professora Margo para ficar a saber como come&ccedil;ar.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'pmfCwauN1c0'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/PT/CNECT-2018-00222-00-18-PT-TRA-00.DOCX">Descarregue o gui&atilde;o do v&iacute;deo</a></p>
 

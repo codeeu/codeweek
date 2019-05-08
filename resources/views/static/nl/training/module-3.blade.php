@@ -21,8 +21,7 @@
 
                     <p>Scratch is gratis, werkt zeer intu&iuml;tief en zal je leerlingen zeker motiveren. Bekijk de video van Margo en zie hoe je aan de slag kunt gaan.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'pmfCwauN1c0'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/NL/CNECT-2018-00222-00-18-NL-TRA-00.DOCX">Het videoscript downloaden</a></p>
 

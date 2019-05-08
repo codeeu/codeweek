@@ -23,8 +23,7 @@
 
                     <p>F&rsquo;dan il-vidjow, Miles Berry, Lettur Prinċipali fl-Universit&agrave; ta&rsquo; Roehampton School of Education at Guildford (ir-Renju Unit), ser jintroduċi l-kunċett tal-ħsieb komputazzjoni u l-modi differenti ta&rsquo; kif għalliem jista&rsquo; jintegrah fil-klassi b&rsquo;logħob sempliċi.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <h2>Lest biex taqsam dak li tgħallimt mal-istudenti tiegħek?</h2>
 

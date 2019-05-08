@@ -19,8 +19,7 @@
 
                     <p>Pogledajte ovaj video u kom Tulia Ur&scaron;ic, italijanski ambasador <i>Scientix</i>-a i STEM nastavnik u Sant&rsquo;Ambrođo Di Valpoličeli u Italiji, daje neke od praktičnih primera kako nastavnici mogu da integri&scaron;u majstorisanje i robotiku u nastavu, čime pasivne učenike pretvaraju u entuzijastične stvaraoce.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SR/CNECT-2018-00222-00-20-SR-TRA-00.DOCX">Preuzmite video skriptu</a></p>
 

@@ -19,8 +19,7 @@
 
                     <p>Hidhini nj&euml; sy k&euml;saj videoje ku Tullia Urschitz, ambasadore italiane e Scientix dhe m&euml;suese e STEM n&euml; Sant&rsquo;Ambrogio Di Valpolicella, Itali, do t&rsquo;ju jap&euml; disa shembuj praktik&euml; rreth m&euml;nyr&euml;s se si m&euml;suesit mund t&euml; integrojn&euml; riparimet dhe robotik&euml;n n&euml; klas&euml;, duke i transformuar k&euml;shtu nx&euml;n&euml;sit pasiv&euml; n&euml; krijues entuziast&euml;.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+5_Making_Robotics_Tinkering+_Video+script.docx">Shkarko tekstin e videos</a></p>
 

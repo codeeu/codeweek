@@ -19,8 +19,7 @@
 
                     <p>&Eacute;chale un vistazo a este v&iacute;deo en el que Tullia Urschitz, embajadora cient&iacute;fica italiana y profesora de ciencia, tecnolog&iacute;a, ingenier&iacute;a y matem&aacute;ticas (CTIM) en Sant&rsquo;Ambrogio Di Valpolicella (Italia), nos ofrece algunos ejemplos pr&aacute;cticos sobre c&oacute;mo los profesores pueden integrar el  y la rob&oacute;tica en las aulas, convirtiendo as&iacute; a los alumnos pasivos en creadores entusiastas.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ES/CNECT-2018-00222-00-20-ES-TRA-00.DOCX">Descargar el guion del v&iacute;deo</a></p>
 

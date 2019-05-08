@@ -19,8 +19,7 @@
 
                     <p>Погледнете го ова видео каде што Тулиа Урштиц, Италијански амбасадор за Scientix и наставник на STEM во Сант'Aмброџо Ди Валполичела, Италија ќе даде некои практични примери за тоа како наставниците може да го интегрираат поправањето и роботиката во училницата, со тоа трансформирајќи ги пасивните ученици во ентузијастички творци.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/MK/CNECT-2018-00222-00-20-MK-TRA-00.docx">Преземете ја видеоскриптата</a></p>
 

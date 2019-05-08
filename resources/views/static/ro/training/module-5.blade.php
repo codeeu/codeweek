@@ -19,8 +19,7 @@
 
                     <p>Urmăriți acest videoclip &icirc;n care Tullia Urschitz, ambasador italian al Scientix și profesoară STEM la Sant&rsquo;Ambrogio Di Valpolicella, Italia, oferă c&acirc;teva exemple practice cu privire la modul &icirc;n care profesorii pot integra meșteritul și robotica &icirc;n clasă, transform&acirc;nd astfel elevii pasivi &icirc;n creatori entuziaști.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/RO/CNECT-2018-00222-00-20-RO-TRA-00.DOCX">Descărcați textul videoclipului</a></p>
 
