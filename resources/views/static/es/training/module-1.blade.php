@@ -19,8 +19,7 @@
 
                     <p>Las actividades de programaci&oacute;n anal&oacute;gica revelan los aspectos computacionales del mundo f&iacute;sico que nos rodea.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/18N1CaQJ0GI "></iframe></div>
+                    @include('static.youtube', ['video_id' => '18N1CaQJ0GI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ES/CNECT-2018-00222-00-17-ES-TRA-00.DOCX">Descargar el guion del v&iacute;deo</a></p>
 

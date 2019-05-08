@@ -21,8 +21,7 @@
 
                     <p>Katso video, niin p&auml;&auml;set alkuun.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/M1zJOfmriGU"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'M1zJOfmriGU'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/FI/CNECT-2018-00222-00-19-FI-TRA-00.DOCX">Lataa videon k&auml;sikirjoitus</a></p>
 

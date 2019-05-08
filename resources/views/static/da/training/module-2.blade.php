@@ -19,8 +19,7 @@
 
                     <p>I denne video introducerer Miles Berry, lektor ved Roehampton School of Education i Guildford (Det Forenede Kongerige), konceptet datalogisk t&aelig;nkning og de forskellige m&aring;der, hvorp&aring; en l&aelig;rer kan integrere det i klassev&aelig;relset med enkle spil.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/DA/CNECT-2018-00222-00-16-DA-TRA-00.DOCX">Download videoscriptet</a></p>
 

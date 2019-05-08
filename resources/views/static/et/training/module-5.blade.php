@@ -19,8 +19,7 @@
 
                     <p>Vaadake videot, kus Tullia Urschitz, Itaalia Scientixi esindaja ja Sant&rsquo;Ambrogio Di Valpolicella STEM-&otilde;petaja, annab praktilist n&otilde;u, kuidas saaksid &otilde;petajad integreerida meisterdamist ja robootikat klassiruumis ning muuta seel&auml;bi oma &otilde;pilased entusiastlikeks loojateks.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ET/CNECT-2018-00222-00-20-ET-TRA-00.DOCX">Laadi alla video skript</a></p>
 

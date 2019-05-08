@@ -19,8 +19,7 @@
 
                     <p>Tekintse meg az al&aacute;bbi vide&oacute;t, amelyben Tullia Urschitz, az olasz Scientix nagyk&ouml;vete &eacute;s Sant'Ambrogio Di Valpolicella STEM-tan&aacute;ra gyakorlati p&eacute;ld&aacute;kon mutatja be, hogyan műk&ouml;dhet az iskolai integr&aacute;ci&oacute; a b&uuml;tyk&ouml;l&eacute;s &eacute;s a robotika seg&iacute;ts&eacute;g&eacute;vel, amelynek sor&aacute;n a passz&iacute;v di&aacute;kok lelkes alkot&oacute;kk&aacute; v&aacute;lnak.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/HU/CNECT-2018-00222-00-20-HU-TRA-00.DOCX">Vide&oacute; forgat&oacute;k&ouml;nyv&eacute;nek let&ouml;lt&eacute;se</a></p>
 

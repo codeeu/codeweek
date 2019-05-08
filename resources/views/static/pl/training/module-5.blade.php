@@ -19,8 +19,7 @@
 
                     <p>Zapraszamy do obejrzenia filmu, w kt&oacute;rym Tullia Urshchitz, ambasadorka organizacji Scientix z Włoch oraz nauczycielka przedmiot&oacute;w ścisłych we włoskim mieście Sant&rsquo;Ambrogio Di Valpolicella, przedstawi kilka praktycznych przykład&oacute;w, dzięki kt&oacute;rym nauczyciele będą mogli skutecznie włączyć majsterkowanie i robotykę do programu nauczania w klasie, motywując pasywnych uczni&oacute;w do zostania majsterkowiczami.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <h2>Czujesz, że jesteś w stanie podzielić się zdobytą wiedzą z uczniami?</h2>
 

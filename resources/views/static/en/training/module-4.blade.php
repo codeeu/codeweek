@@ -35,11 +35,7 @@
                         Have a look at the video to learn how to get started:
                     </p>
 
-                    <div class="flex youtube-container">
-                        <iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/M1zJOfmriGU">
-                        </iframe>
-                    </div>
+                    @include('static.youtube', ['video_id' => 'M1zJOfmriGU'])
 
                     <p>
                         <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+4_Educational_Games_Scratch+_Video+script.docx">Download the video script</a>

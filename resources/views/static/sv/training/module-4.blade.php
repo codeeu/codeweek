@@ -21,8 +21,7 @@
 
                     <p>I den h&auml;r filmen kan du se hur det g&aring;r till:</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/M1zJOfmriGU"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'M1zJOfmriGU'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SV/CNECT-2018-00222-00-19-SV-TRA-00.DOCX">H&auml;mta videoskript</a></p>
 

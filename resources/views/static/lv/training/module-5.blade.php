@@ -19,8 +19,7 @@
 
                     <p>Noskatieties &scaron;o video, kurā Tulija Ur&scaron;ica (Tullia Urschitz), kura ir Italian Scientix vēstniece un STEM skolotāja Itālijas pilsētā Santambrodžo di Valpoličellā, sniedz praktiskus piemērus tam, kā skolotāji var integrēt eksperimentus un robotiku klases nodarbībās, padarot citādi pasīvus skolēnus par aizrautīgiem radītājiem.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LV/CNECT-2018-00222-00-20-LV-TRA-00.DOCX">Lejupielādēt video skriptu</a></p>
 

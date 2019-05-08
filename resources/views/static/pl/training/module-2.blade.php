@@ -19,8 +19,7 @@
 
                     <p>W przedstawionym filmie Miles Berry, wykładowca School of Education na Roehampton University (Zjednoczone Kr&oacute;lestwo), przedstawi koncepcję myślenia obliczeniowego oraz r&oacute;żnych sposob&oacute;w, przy użyciu kt&oacute;rych nauczyciel może włączyć tego rodzaju myślenie do zajęć dzięki prostym grom i zabawom.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <h2>Czujesz, że jesteś w stanie podzielić się zdobytą wiedzą z uczniami?</h2>
 

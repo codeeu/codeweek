@@ -19,8 +19,7 @@
 
                     <p>In diesem Video stellt Miles Berry, Studienleiter an der University of Roehampton School of Education in Guildford (Vereinigtes K&ouml;nigreich) das Konzept des rechnergest&uuml;tzten Denkens und die unterschiedlichen M&ouml;glichkeiten f&uuml;r Lehrkr&auml;fte zur Einbindung des Konzepts in das Klassenzimmer &uuml;ber einfache Spiele vor.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/DE/CNECT-2018-00222-00-16-DE-TRA-00.DOCX">Das Video-Script herunterladen</a></p>
 

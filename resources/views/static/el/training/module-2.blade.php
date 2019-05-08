@@ -19,8 +19,7 @@
 
                     <p>Σε αυτό το βίντεο, ο Miles Berry, Τακτικός Λέκτορας στο Πανεπιστήμιο του Roehampton στην Παιδαγωγική σχολή του Guildford (Ηνωμένο Βασίλειο), παρουσιάζει την έννοια της υπολογιστικής σκέψης και τους διάφορους τρόπους με τους οποίος ένας δάσκαλος μπορεί να την ενσωματώσει στην τάξη με απλά παιχνίδια.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EL/CNECT-2018-00222-00-16-EL-TRA-00.DOCX">Κατεβάστε τα λόγια του βίντεο σε μορφή κειμένου</a></p>
 

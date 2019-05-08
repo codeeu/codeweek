@@ -19,8 +19,7 @@
 
                     <p>V tem videoposnetku Miles Berry, docent na pedago&scaron;ki fakulteti Univerze v Roehamptonu v Združenem kraljestvu, predstavlja pojem računalni&scaron;kega razmi&scaron;ljanja in tri različne načine, kako ga lahko učitelji s preprostimi igrami vključijo v pouk.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SL/CNECT-2018-00222-00-16-SL-TRA-00.DOCX">Prenos besedila videoposnetka</a></p>
 

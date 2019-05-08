@@ -21,8 +21,7 @@
 
                     <p>Obejrzyj film, z kt&oacute;rego dowiesz się, od czego zacząć:</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/M1zJOfmriGU"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'M1zJOfmriGU'])
 
                     <h2>Czujesz, że jesteś w stanie podzielić się zdobytą wiedzą z uczniami?</h2>
 

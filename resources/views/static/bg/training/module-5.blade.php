@@ -19,8 +19,7 @@
 
                     <p>Изгледайте този видеоматериал, в който Тулиа Уршиц, посланик на Scientix Италия и учител, който използва методите на науката, технологиите, инженерството и математиката (STEM) в Сант'Амбро̀джо ди Валполичѐла, Италия, ще даде практически примери за това как учителите могат да интегрират ремонтните дейности и роботиката при работа в клас и по този начин да превърнат пасивните ученици в ентусиазирани създатели.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/BG/CNECT-2018-00222-00-20-BG-TRA-00.DOCX">Изтеглете видео скрипта</a></p>
 

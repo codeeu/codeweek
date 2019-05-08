@@ -19,8 +19,7 @@
 
                     <p>Werfen Sie einen Blick auf dieses Video, in dem Ihnen Tullia Urschitz, italienische Scientix-Botschafterin und MINT-Lehrerin in Sant&rsquo;Ambrogio Di Valpolicella, Italien, verschiedene praktische Beispiel gibt, wie Lehrkr&auml;fte technische T&uuml;fteleien und Robotik in das Klassenzimmer integrieren k&ouml;nnen, um passive Sch&uuml;lerinnen und Sch&uuml;ler in begeisterte Macher zu verwandeln.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/DE/CNECT-2018-00222-00-20-DE-TRA-00.DOCX">Das Video-Script herunterladen</a></p>
 
