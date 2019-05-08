@@ -23,8 +23,7 @@
 
                     <p>Agħti titwila lejn dan il-vidjo fejn Tullia Urschitz, ambaxxatriċi Taljana ta&rsquo; Scientix u għalliema ta&rsquo; STEM f&rsquo;Sant&rsquo;Ambrogio Di Valpolicella, l-Italja, ser tagħti xi eżempji prattiċi ta&rsquo; kif l-għalliema jistgħu jintegraw it-tiswija u r-robotika fil-klassi, b&rsquo;hekk jibdlu l-istudenti passivi f&rsquo;oħrajn entużjastiċi li joħolqu xi ħaġa.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <h2>Lest biex taqsam dak li tgħallimt mal-istudenti tiegħek?</h2>
 

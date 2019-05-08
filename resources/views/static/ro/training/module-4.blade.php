@@ -21,8 +21,7 @@
 
                     <p>Urmăriți videoclipul și &icirc;nvățați cum puteți &icirc;ncepe:</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/M1zJOfmriGU"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'M1zJOfmriGU'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/RO/CNECT-2018-00222-00-19-RO-TRA-00.DOCX">Descărcați textul videoclipului</a></p>
 

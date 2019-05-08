@@ -21,8 +21,7 @@
 
                     <p>Pogledajte video zapis kako biste saznali odakle da krenete:</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/M1zJOfmriGU"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'M1zJOfmriGU'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ME/CNECT-2018-00222-00-19-ME-TRA-00.DOC">Preuzmite video zapis.</a></p>
 

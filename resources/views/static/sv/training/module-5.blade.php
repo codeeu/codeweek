@@ -19,8 +19,7 @@
 
                     <p>I den h&auml;r filmen ger Tullia Urschitz, Scientix-ambassad&ouml;r och STEM-l&auml;rare fr&aring;n Sant'Ambrogio di Valpolicella, Italien, n&aring;gra konkreta exempel p&aring; hur l&auml;rare kan integrera mekande och robotteknik i klassrummet och d&auml;rmed f&ouml;rvandla passiva elever till entusiastiska medskapare.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SV/CNECT-2018-00222-00-20-SV-TRA-00.DOCX">H&auml;mta videoskript</a></p>
 

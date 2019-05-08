@@ -23,8 +23,7 @@
 
                     <p>Bu videoda, Guildford'daki (Birleşik Krallık) Roehampton &Uuml;niversitesi Eğitim Fak&uuml;ltesi'nde &Ouml;ğretim G&ouml;revlisi olarak g&ouml;rev yapan Miles Berry, sayısal d&uuml;ş&uuml;nme kavramını ve &ouml;ğretmenin bunu basit oyunlarla sınıfa entegre etmesini sağlayacak farklı yolları tanıtacak.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/TR/CNECT-2018-00222-00-16-TR-TRA-00.DOCX">Video metnini indirin</a></p>
 

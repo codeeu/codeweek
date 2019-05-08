@@ -21,8 +21,7 @@
 
                     <p>Scratch je bezplatn&yacute; n&aacute;stroj, ktor&yacute; je pre &scaron;tudentov veľmi intuit&iacute;vny a motivačn&yacute;. Pozrite si Margine video a zistite, ako na to.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'pmfCwauN1c0'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SK/CNECT-2018-00222-00-18-SK-TRA-00.DOCX">Stiahnuť prepis videa</a></p>
 

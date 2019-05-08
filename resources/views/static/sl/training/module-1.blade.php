@@ -19,8 +19,7 @@
 
                     <p>S programerskimi dejavnostmi brez računalnika spoznavamo računalni&scaron;ke vidike fizičnega sveta okoli nas.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/18N1CaQJ0GI "></iframe></div>
+                    @include('static.youtube', ['video_id' => '18N1CaQJ0GI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SL/CNECT-2018-00222-00-17-SL-TRA-00.DOCX">Prenos besedila videoposnetka</a></p>
 

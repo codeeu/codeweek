@@ -19,8 +19,7 @@
 
                     <p>Bekijk deze video, waarin Tullia Urschitz, Scientix-ambassadeur in Itali&euml; en STEM-lerares in Sant&rsquo;Ambrogio Di Valpolicella (ook Itali&euml;), een aantal praktische voorbeelden geeft van hoe leraren sleutelen en robotica kunnen verwerken in hun lessen en zo passieve leerlingen kunnen laten veranderen in enthousiaste creatievelingen.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/NL/CNECT-2018-00222-00-20-NL-TRA-00.DOCX">Het videoscript downloaden</a></p>
 

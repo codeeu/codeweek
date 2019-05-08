@@ -19,8 +19,7 @@
 
                     <p>&Scaron;ajā video Mailzs Berijs, kur&scaron; ir galvenais lektors Rohemptonas Universitātes Gildfordas Izglītības skolā Apvienotajā Karalistē, iepazīstinās ar jēdzienu &ldquo;skaitļo&scaron;anas tipa domā&scaron;ana&rdquo; un dažādajiem veidiem, kā skolotājs var to integrēt klases nodarbībās ar vienkār&scaron;u spēļu palīdzību.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LV/CNECT-2018-00222-00-16-LV-TRA-00.DOCX">Lejupielādēt video skriptu</a></p>
 

@@ -24,8 +24,7 @@
 
                     <p>Scratch hija għodda bla ħlas, intuwittiva ħafna u ta&rsquo; motivazzjoni għall-istudenti tiegħek. Agħti titwila lejn il-vidjo ta&rsquo; Margo biex titgħallem kif tibda.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'pmfCwauN1c0'])
 
 
                     <h2>Lest biex taqsam dak li tgħallimt mal-istudenti tiegħek?</h2>

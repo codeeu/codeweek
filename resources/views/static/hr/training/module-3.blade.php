@@ -21,8 +21,7 @@
 
                     <p>Scratch je besplatan alat, vrlo je intuitivan i motivirajući za va&scaron;e učenike. Pogledajte videozapis koji je snimila Margo i naučite kako početi.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'pmfCwauN1c0'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/HR/CNECT-2018-00222-00-18-HR-TRA-00.DOCX">Preuzmite videoskriptu</a></p>
 

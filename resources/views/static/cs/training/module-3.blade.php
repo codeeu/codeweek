@@ -21,8 +21,7 @@
 
                     <p>Scratch je bezplatn&yacute; intuitivn&iacute; n&aacute;stroj, kter&yacute; bude pro va&scaron;e ž&aacute;ky velmi podnětn&yacute;. Pod&iacute;vejte se na video, ve kter&eacute;m v&aacute;m Margo vysvětl&iacute;, jak zač&iacute;t.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'pmfCwauN1c0'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/CS/CNECT-2018-00222-00-18-CS-TRA-00.DOCX">St&aacute;hnout sc&eacute;n&aacute;ř videa</a></p>
 

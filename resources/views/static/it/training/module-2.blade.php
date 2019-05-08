@@ -19,8 +19,7 @@
 
                     <p>In questo video, Miles Berry, primo lettore presso la School of Education dell&rsquo;Universit&agrave; di Roehampton a Guildford (Regno Unito), presenter&agrave; il concetto di pensiero computazionale e i diversi modi in cui un insegnante pu&ograve; integrarlo in classe con giochi semplici.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     {{--<p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/IT/CNECT-2018-00222-00-16-IT-TRA-00.DOCX">Scarica lo script video</a></p>--}}
 

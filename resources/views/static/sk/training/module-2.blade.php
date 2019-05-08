@@ -19,8 +19,7 @@
 
                     <p>Hlavn&yacute; lektor na Pedagogickej fakulte Univerzity v&nbsp;Roehamptone (Spojen&eacute; kr&aacute;ľovstvo), Miles Berry, predstavuje koncepciu v&yacute;počtov&eacute;ho myslenia a r&ocirc;zne sp&ocirc;soby, ktor&yacute;mi ho učitelia m&ocirc;žu začleniť do vyučovania prostredn&iacute;ctvom jednoduch&yacute;ch hier.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SK/CNECT-2018-00222-00-16-SK-TRA-00.DOCX">Stiahnuť prepis videa</a></p>
 
