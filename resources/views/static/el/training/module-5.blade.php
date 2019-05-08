@@ -19,8 +19,7 @@
 
                     <p>Ρίξτε μια ματιά σε αυτό το βίντεο όπου η Tullia Urschitz, πρέσβης της Ιταλίας για το Scientix και δασκάλα θετικών επιστημών, τεχνολογίας, μηχανικής και μαθηματικών στο Sant&rsquo;Ambrogio Di Valpolicella, στην Ιταλία, δίνει ορισμένα πρακτικά παραδείγματα για το πώς οι δάσκαλοι μπορούν να εισαγάγουν το μαστόρεμα και τη ρομποτική στην τάξη, μεταμορφώνοντας έτσι παθητικούς μαθητές σε ενθουσιώδεις κατασκευαστές.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EL/CNECT-2018-00222-00-20-EL-TRA-00.DOCX">Κατεβάστε τα λόγια του βίντεο σε μορφή κειμένου</a></p>
 

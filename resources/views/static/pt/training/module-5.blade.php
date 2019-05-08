@@ -19,8 +19,7 @@
 
                     <p>Veja este v&iacute;deo em que Tullia Urschitz, embaixadora da Scientix italiana e professora de CTEM em Sant'Ambrogio Di Valpolicella, It&aacute;lia, apresentar&aacute; alguns exemplos pr&aacute;ticos sobre como os professores podem integrar os trabalhos de com hardware e a rob&oacute;tica na sala de aula, transformando estudantes passivos em criadores entusiastas.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/PT/CNECT-2018-00222-00-20-PT-TRA-00.DOCX">Descarregue o gui&atilde;o do v&iacute;deo</a></p>
 

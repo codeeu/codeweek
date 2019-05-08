@@ -19,8 +19,7 @@
 
                     <p>Selles videos tutvustab Miles Berry, Gulidfordis (&Uuml;hendkuningriigis) asuva Roehamptoni &uuml;likooli &otilde;ppej&otilde;ud, algoritmilise m&otilde;tlemise kontseptsiooni ja erinevaid viise, kuidas &otilde;petaja seda erinevate m&auml;ngude abil klassiruumi tuua saab.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/ET/CNECT-2018-00222-00-16-ET-TRA-00.DOCX">Laadi alla video skript</a></p>
 

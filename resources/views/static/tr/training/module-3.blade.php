@@ -25,8 +25,7 @@
 
                     <p>Scratch, son derece sezgisel ve &ouml;ğrencileriniz a&ccedil;ısından motive edici olan &uuml;cretsiz bir ara&ccedil;tır. Nasıl başlayacağınızı &ouml;ğrenmek i&ccedil;in Margo nun videosunu inceleyin.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'pmfCwauN1c0'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/TR/CNECT-2018-00222-00-18-TR-TRA-00.DOCX">Video metnini indirin</a></p>
 

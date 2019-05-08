@@ -19,8 +19,7 @@
 
                     <p>I den h&auml;r filmen introducerar Miles Berry, f&ouml;rste lektor vid universitetet i Roehampton i Storbritannien, begreppet datalogiskt t&auml;nkande och hur l&auml;rare kan integrera det i klassrummet med hj&auml;lp av enkla lekar.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SV/CNECT-2018-00222-00-16-SV-TRA-00.DOCX">H&auml;mta videoskript</a></p>
 

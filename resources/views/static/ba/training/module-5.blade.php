@@ -19,8 +19,7 @@
 
                     <p>Pogledajte ovaj video gdje Tullia Urschitz, Italijanska ambasadorka Scientixa i nastavnica STEM-a u Sant Ambrogio di Valoplicella, Italija, daje neke praktične primjere toga kako nastavnici mogu integrirati praktični rad i robotiku u učionici, čime će transformirati pasivne učenike u entuzijastične kreatore.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+5_Making_Robotics_Tinkering+_Video+script.docx">Preuzmite video skriptu</a></p>
 

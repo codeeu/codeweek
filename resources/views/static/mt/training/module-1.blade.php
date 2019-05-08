@@ -23,8 +23,7 @@
 
                     <p>Attivitajiet ta&rsquo; kkowdjar mhux ipplaggjat jiżvelaw l-aspetti komputazzjonali tad-dinja fiżika madwarna.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/18N1CaQJ0GI "></iframe></div>
+                    @include('static.youtube', ['video_id' => '18N1CaQJ0GI'])
 
                     <h2>Lest biex taqsam dak li tgħallimt mal-istudenti tiegħek?</h2>
 

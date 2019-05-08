@@ -19,8 +19,7 @@
 
                     <p>Neste v&iacute;deo, Miles Berry, assistente principal da Escola de Educa&ccedil;&atilde;o da Universidade de Roehampton, em Guildford (Reino Unido), apresentar&aacute; o conceito de pensamento computacional e as diferentes formas atrav&eacute;s das quais um professor pode integr&aacute;-lo na sala de aula com jogos simples.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/PT/CNECT-2018-00222-00-16-PT-TRA-00.DOCX">Descarregue o gui&atilde;o do v&iacute;deo</a></p>
 

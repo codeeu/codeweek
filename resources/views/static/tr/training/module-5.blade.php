@@ -23,8 +23,7 @@
 
                     <p>İtalya'nın Sant&acirc;&rsquo;Ambrogio Di Valpolicella kentindeki İtalyan Scientix b&uuml;y&uuml;kel&ccedil;isi ve STEM &ouml;ğretmeni olan Tullia Urschitz'in, &ouml;ğretmenlere deneme uygulaması ve robot teknolojisinin sınıfa nasıl entegre edilebileceğine dair uygulamalı &ouml;rnekler verdiği ve bu sayede pasif &ouml;ğrencileri hevesli &uuml;reticilere d&ouml;n&uuml;şt&uuml;rd&uuml;ğ&uuml; bu videoya bir g&ouml;z atın.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/TR/CNECT-2018-00222-00-20-TR-TRA-00.DOCX">Video metnini indirin</a></p>
 

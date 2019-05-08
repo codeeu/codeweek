@@ -19,8 +19,7 @@
 
                     <p>&Icirc;n acest videoclip, Miles Berry, lector principal la School of Education din Guildford, din cadrul Universității din Roehampton (Regatul Unit), va prezenta conceptul de g&acirc;ndire computațională și diversele moduri pe care un profesor le poate integra &icirc;n clasă, prin jocuri simple.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/Nc-V948dXWI"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'Nc-V948dXWI'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/RO/CNECT-2018-00222-00-16-RO-TRA-00.DOCX">Descărcați textul videoclipului</a></p>
 

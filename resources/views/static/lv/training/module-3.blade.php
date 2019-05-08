@@ -21,8 +21,7 @@
 
                     <p>Scratch ir bezmaksas rīks, kas ir ļoti intuitīvs un motivējo&scaron;s skolēniem. Noskatieties Margo sagatavoto video, lai uzzinātu, ar ko sākt:</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/pmfCwauN1c0"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'pmfCwauN1c0'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/LV/CNECT-2018-00222-00-18-LV-TRA-00.DOCX">Lejupielādēt video skriptu</a></p>
 

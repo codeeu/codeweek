@@ -19,8 +19,7 @@
 
                     <p>Katso video, jolla Italian Scientix-l&auml;hettil&auml;s ja Sant&rsquo;Ambrogio Di Valpolicellassa ty&ouml;skentelev&auml; STEM-aineiden opettaja Tullia Urschitz antaa k&auml;yt&auml;nn&ouml;n esimerkkej&auml; siit&auml;, miten opettajat voivat sis&auml;llytt&auml;&auml; nikkaroinnin ja robotiikan opetukseen ja tehd&auml; passiivisista oppilaista innokkaita tekij&ouml;it&auml;.</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/5V9G-vWWSik"></iframe></div>
+                    @include('static.youtube', ['video_id' => '5V9G-vWWSik'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/FI/CNECT-2018-00222-00-20-FI-TRA-00.DOCX">Lataa videon k&auml;sikirjoitus</a></p>
 

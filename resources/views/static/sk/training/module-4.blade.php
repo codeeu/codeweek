@@ -21,8 +21,7 @@
 
                     <p>Pozrite si video a zistite, ako na to:</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/M1zJOfmriGU"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'M1zJOfmriGU'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/SK/CNECT-2018-00222-00-19-SK-TRA-00.DOCX">Stiahnuť prepis videa</a></p>
 

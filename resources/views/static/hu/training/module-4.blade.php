@@ -21,8 +21,7 @@
 
                     <p>Tekintse meg a vide&oacute;t, &eacute;s ismerje meg az első l&eacute;p&eacute;seket:</p>
 
-                    <div class="flex youtube-container"><iframe class="flex-1 youtube-iframe"
-                                src="https://www.youtube.com/embed/M1zJOfmriGU"></iframe></div>
+                    @include('static.youtube', ['video_id' => 'M1zJOfmriGU'])
 
                     <p><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/HU/CNECT-2018-00222-00-19-HU-TRA-00.DOCX">Vide&oacute; forgat&oacute;k&ouml;nyv&eacute;nek let&ouml;lt&eacute;se</a></p>
 
