@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'toolkits' => 'Presentaties en Toolkits', 'why' => 'WAAROM', 'home'  => 'Start',
+    'learn' => 'Leren',
+    'teach' => 'Onderwijzen',
+    'training' => 'Vorming', 'toolkits' => 'Presentaties en Toolkits', 'why' => 'WAAROM', 'home'  => 'Start',
     'events' => 'Activiteiten',
     'ambassadors' => 'Ambassadeurs',
     'resources' => 'Hulpmiddelen',
