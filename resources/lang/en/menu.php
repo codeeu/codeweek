@@ -13,6 +13,9 @@ return [
     |
     */
 
+    'learn' => 'Learn',
+    'teach' => 'Teach',
+    'training' => 'Training',
     'toolkits' => 'Presentations and Toolkits', 'why' => 'Why', 'home'  => 'Home',
     'events' => 'Activities',
     'ambassadors' => 'Ambassadors',
@@ -35,5 +38,4 @@ return [
     'signin' => 'Sign in',
     'privacy' => 'Privacy',
     'stats' => 'Statistics'
-
 ];

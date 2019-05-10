@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'toolkits' => 'Presentationer och verktyg', 'why' => 'VARFÖR', 'home'  => 'Hem',
+    'learn' => 'Lära sig',
+    'teach' => 'Undervisa',
+    'training' => 'Fortbildning', 'toolkits' => 'Presentationer och verktyg', 'why' => 'VARFÖR', 'home'  => 'Hem',
     'events' => 'Aktiviteter',
     'ambassadors' => 'Ambassadörer',
     'resources' => 'Resurser',

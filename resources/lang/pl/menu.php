@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'toolkits' => 'Prezentacje i zestawy narzędzi', 'why' => 'DLACZEGO', 'home'  => 'Strona główna',
+    'learn' => 'Ucz się',
+    'teach' => 'Nauczaj',
+    'training' => 'Szkól', 'toolkits' => 'Prezentacje i zestawy narzędzi', 'why' => 'DLACZEGO', 'home'  => 'Strona główna',
     'events' => 'Zajęcia',
     'ambassadors' => 'Ambasadorzy',
     'resources' => 'Zasoby',

@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'toolkits' => 'Презентациje и алати', 'why' => 'ZAŠTO', 'home'  => 'Naslovna',
+    'learn' => 'За професоре',
+    'teach' => 'За ученике',
+    'training' => 'Oбука', 'toolkits' => 'Презентациje и алати', 'why' => 'ZAŠTO', 'home'  => 'Naslovna',
     'events' => 'Активност',
     'ambassadors' => 'Ambasadori',
     'resources' => 'Resursi',

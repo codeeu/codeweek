@@ -13,6 +13,9 @@ return [
     |
     */
 
+    'learn' => 'Mokytis',
+    'teach' => 'Mokyti',
+    'training' => 'Mokymai',
     'toolkits' => 'Pristatymai ir priemonių rinkiniai jūsų kalba', 'why' => 'KODĖL', 'home'  => 'Pradžios puslapis',
     'events' => 'Veikla',
     'ambassadors' => 'Ambasadoriai',

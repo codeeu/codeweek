@@ -13,13 +13,16 @@ return [
     |
     */
 
-    'toolkits' => 'Prezantime dhe mjete', 'why' => 'Pse', 'home'   => 'Kreu',
+    'learn' => 'Mëso',
+    'teach' => 'Jep mësim',
+    'training' => 'Formimi',
+    'toolkits' => 'Prezantime dhe mjete', 'why' => 'Pse', 'home' => 'Kreu',
     'events' => 'Aktivitete',
     'ambassadors' => 'Ambasadorët',
     'resources' => 'Burimet',
     'schools' => 'Shkollat',
     'about' => 'Informacion',
-    'blog' => 'Blog','news' => 'Lajme',
+    'blog' => 'Blog', 'news' => 'Lajme',
     'search' => 'Shkruani dhe shtypni Enter...',
     'map' => 'Harta',
     'add_event' => 'Shtoni eveniment',
