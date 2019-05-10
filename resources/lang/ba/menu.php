@@ -13,6 +13,9 @@ return [
     |
     */
 
+    'learn' => 'Za učenike',
+    'teach' => 'Za profesore',
+    'training' => 'Trening',
     'toolkits' => 'Prezentacije i alati', 'why' => 'ZAŠTO', 'home'  => 'Početna stranica',
     'events' => 'Aktivnosti',
     'ambassadors' => 'Ambasadori',

@@ -27,13 +27,13 @@
                     <li><a href="#">@lang('menu.resources')</a>
                         <ul class="dropdown-menu resources-menu">
                                         <li>
-                                            <a href="{{route('resources_learn')}}">Learn</a>
+                                            <a href="{{route('resources_learn')}}">@lang('menu.learn')</a>
                                         </li>
                                         <li>
-                                            <a href="{{route('resources_teach')}}">Teach</a>
+                                            <a href="{{route('resources_teach')}}">@lang('menu.teach')</a>
                                         </li>
                                         <li>
-                                            <a href="{{route('training.index')}}">Training</a>
+                                            <a href="{{route('training.index')}}">@lang('menu.training')</a>
                                         </li>
                                         <li>
                                             <a href="{{route('toolkits')}}">@lang('menu.toolkits')</a>

@@ -13,6 +13,9 @@ return [
     |
     */
 
+    'learn' => 'Pro studenty',
+    'teach' => 'Pro učitele',
+    'training' => 'Trénink',
     'toolkits' => 'Prezentace a sady nástrojů', 'why' => 'PROČ', 'home'  => 'Domů',
     'events' => 'Aktivity',
     'ambassadors' => 'Ambasadoři',

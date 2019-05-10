@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'toolkits' => 'Præsentationer og værktøjssæt', 'why' => 'HVORFOR', 'home'  => 'Startside',
+    'learn' => 'Læring',
+    'teach' => 'Undervisning',
+    'training' => 'Træning', 'toolkits' => 'Præsentationer og værktøjssæt', 'why' => 'HVORFOR', 'home'  => 'Startside',
     'events' => 'Aktiviteter',
     'ambassadors' => 'Ambassadører',
     'resources' => 'Ressourcer',
