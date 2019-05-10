@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'toolkits' => 'Presentatsioonid ja tööriistad', 'why' => 'MIKS', 'home'  => 'Esileht',
+    'learn' => 'Õpi',
+    'teach' => 'Õpeta',
+    'training' => 'Koolitus', 'toolkits' => 'Presentatsioonid ja tööriistad', 'why' => 'MIKS', 'home'  => 'Esileht',
     'events' => 'Tegevused',
     'ambassadors' => 'Saadikud',
     'resources' => 'Materjalid',
