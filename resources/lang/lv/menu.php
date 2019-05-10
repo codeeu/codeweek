@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'toolkits' => 'Prezentācijas un rīkkopas', 'why' => 'KĀPĒC', 'home'  => 'Sākumlapa',
+    'learn' => 'Mācīšanās',
+    'teach' => 'Citu apmācība',
+    'training' => 'Trenēšanās', 'toolkits' => 'Prezentācijas un rīkkopas', 'why' => 'KĀPĒC', 'home'  => 'Sākumlapa',
     'events' => 'Aktivitātes',
     'ambassadors' => 'Vēstnieks',
     'resources' => 'Resursi',

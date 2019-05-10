@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'toolkits' => 'Sunu ve Araç setleri', 'why' => 'NEDEN', 'home'  => 'Ana Sayfa',
+    'learn' => 'Öğren',
+    'teach' => 'Öğret',
+    'training' => 'Eğitim', 'toolkits' => 'Sunu ve Araç setleri', 'why' => 'NEDEN', 'home'  => 'Ana Sayfa',
     'events' => 'Etkinlikler',
     'ambassadors' => 'Elçiler',
     'resources' => 'Kaynaklar',

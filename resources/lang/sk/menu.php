@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'toolkits' => 'Prezentácia a sady nástrojov', 'why' => 'PREČO', 'home'  => 'Domov',
+    'learn' => 'Pre študentov',
+    'teach' => 'Pre učiteľov',
+    'training' => 'Tréning', 'toolkits' => 'Prezentácia a sady nástrojov', 'why' => 'PREČO', 'home'  => 'Domov',
     'events' => 'Aktivity',
     'ambassadors' => 'Veľvyslanci',
     'resources' => 'Zdroje',
