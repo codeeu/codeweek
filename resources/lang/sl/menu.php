@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'toolkits' => 'Predstavitve in orodja', 'why' => 'ZAKAJ', 'home'  => 'Domov',
+    'learn' => 'Učiti se',
+    'teach' => 'Poučevati',
+    'training' => 'Usposabljanje', 'toolkits' => 'Predstavitve in orodja', 'why' => 'ZAKAJ', 'home'  => 'Domov',
     'events' => 'Dejavnosti',
     'ambassadors' => 'Ambasadorji',
     'resources' => 'Viri',

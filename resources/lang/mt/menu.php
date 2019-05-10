@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'toolkits' => 'Preżentazzjoni u Għodda', 'why' => 'GĦALIEX', 'home'  => 'Paġna Ewlenija',
+    'learn' => 'Itgħallem',
+    'teach' => 'Għallem',
+    'training' => 'Taħriġ', 'toolkits' => 'Preżentazzjoni u Għodda', 'why' => 'GĦALIEX', 'home'  => 'Paġna Ewlenija',
     'events' => 'Attivitajiet',
     'ambassadors' => 'Ambaxxaturi',
     'resources' => 'Riżorsi',

@@ -13,6 +13,9 @@ return [
     |
     */
 
+    'learn' => 'Apprendere',
+    'teach' => 'Insegnare',
+    'training' => 'Formazione',
     'toolkits' => 'Presentazioni e toolkit', 'why' => 'PERCHÉ', 'home'  => 'Home',
     'events' => 'Attività',
     'ambassadors' => 'Ambasciatori',

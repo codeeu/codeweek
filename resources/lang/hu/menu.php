@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'toolkits' => 'Prezentációk és eszközök', 'why' => 'HOGY MIÉRT', 'home'  => 'Fõoldal',
+    'learn' => 'Tanulj',
+    'teach' => 'Taníts',
+    'training' => 'Továbbképzés', 'toolkits' => 'Prezentációk és eszközök', 'why' => 'HOGY MIÉRT', 'home'  => 'Fõoldal',
     'events' => 'Programok',
     'ambassadors' => 'Nagykövetek',
     'resources' => 'Erõforrások',

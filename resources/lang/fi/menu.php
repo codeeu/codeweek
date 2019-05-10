@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'toolkits' => 'Esitykset ja työkalut', 'why' => 'MIKSI', 'home'  => 'Kotisivu',
+    'learn' => 'Opi',
+    'teach' => 'Opeta',
+    'training' => 'Harjoittelu', 'toolkits' => 'Esitykset ja työkalut', 'why' => 'MIKSI', 'home'  => 'Kotisivu',
     'events' => 'tapahtumiin',
     'ambassadors' => 'Lähettiläät',
     'resources' => 'Aineistot',
