@@ -18,7 +18,7 @@
                     <a href="{{route('ambassadors')}}">@lang('menu.ambassadors')</a>/
                     <a href="/resources/">@lang('menu.resources')</a>/
                     <a href="/about/">@lang('menu.about')</a>/
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/privacy+statement+contact+points-CodeWeekFINAL.pdf">@lang('menu.privacy')</a>/
+                    <a href="/privacy">@lang('menu.privacy')</a>/
                     <a href="http://blog.codeweek.eu/">@lang('menu.blog')</a>
                 </div>
                 <div class="fright clearfix">
