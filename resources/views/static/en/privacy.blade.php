@@ -1,75 +1,159 @@
 @extends('layout.base')
 
 @section('content')
-<section>
+    <section>
 
-    <div class="container clearfix">
+        <div class="container clearfix">
 
-        <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
-            <h1>Privacy policy</h1>
-		    <span>EU Code Week 2018</span>
-		    <ol class="breadcrumb">
-			    <li><a href="http://codeweek.eu">Home</a></li>
-			    <li class="active">Privacy policy</li>
-		    </ol>
-	    </div>
-    </div>
-</section>
-<!-- #page-title end -->
-<!-- Content -->
+            <div class="flex flex-col justify-center text-center w-full  uppercase">
+                <h1>PROTECTION OF YOUR PERSONAL DATA</h1>
+            </div>
+        </div>
+    </section>
+    <!-- #page-title end -->
+    <!-- Content -->
 
-<section id="content">
-	<div class="content-wrap">
-		<div class="container clearfix">
-			<p>This Privacy Policy governs the manner in which Europe Code Week collects, uses, maintains and discloses information collected from users (each, a "User") of the <a href="http://codeweek.eu">http://codeweek.eu</a> website ("Site"). This privacy policy applies to the Site and all products and services offered by Europe Code Week.</p>
+    <section id="content">
+        <div class="content-wrap">
+            <div class="container clearfix">
 
-<p><strong>Personal identification information</strong></p>
 
-<p>We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our site, register on the site, and in connection with other activities, services, features or resources we make available on our Site. Users may be asked for, as appropriate, name, email address. Users may, however, visit our Site anonymously. We will collect personal identification information from Users only if they voluntarily submit such information to us. Users can always refuse to supply personally identification information, except that it may prevent them from engaging in certain Site related activities.</p>
+                <h3><strong>Introduction</strong></h3>
 
-<p><strong>Non-personal identification information</strong></p>
+                <p>This privacy statement concerns the collection and publication of personal data, in particular names
+                    and contact details as well as photos, on publicly accessible Commission websites such as
+                    Codeweek.eu, of persons who serve as contact points for Commission activities (Code Week
+                    ambassadors, Educational Ministry Coordinators, Leading Teachers, activity and event
+                    organisers and general users of Code Week website) and for that purpose have given their consent
+                    to the processing of their personal data</p>
 
-<p>We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information.</p>
+                <p>This privacy statement explains the reason for the collection and processing, the way we collect,
+                    handle and ensure protection of all personal data provided, how that information is used and what
+                    rights you may exercise in relation to your data (the right to access, rectify, block etc.).</p>
 
-<p><strong>Web browser cookies</strong></p>
+                <p>
+                    The European institutions are committed to protecting and respecting your privacy. As this
+                    service/application collects and further processes personal data, Regulation (EC)
+                    N°45/2001<sup><a href="#footer">1</a></sup>
+                    and the
+                    upcoming equivalent data protection rules for the European institutions and bodies (hereafter the
+                    ‘Internal Data Protection Regulation’<sup><a href="#footer">2</a></sup>
+                    ) are applicable.
+                </p>
 
-<p>Our Site may use "cookies" to enhance User experience. User's web browser places cookies on their hard drive for record-keeping purposes and sometimes to track information about them. User may choose to set their web browser to refuse cookies, or to alert you when cookies are being sent. If they do so, note that some parts of the Site may not function properly.</p>
+                <h3><strong>Why do we process your data?</strong></h3>
+                <p>
+                    <span class="underline">Purpose of the processing operation:</span> The European Commission collects
+                    and publishes your personal
+                    information to facilitate the identification of contact points by stakeholders or project/programme
+                    beneficiaries. Offering real persons as contact points is often the best and most efficient way to
+                    ensure that interested people can get in contact with Commission services.
 
-<p><strong>How we use collected information</strong></p>
+                <ul>
+                    <li>article 5 (a): processing is necessary for the performance of a task carried out in the public
+                        interest,
+                        namely the implementation of the EU Code Week as part of the Digital Single Market Strategy. It
+                        is
+                        therefore lawful under Article 5(a) of Regulation (EC) No 45/2001 and the upcoming Internal Data
+                        Protection Regulation.
+                    </li>
+                </ul>
+                and/or<br/><br/>
 
-<p>Europe Code Week may collect and use Users personal information for the following purposes:</p>
-<ul>
-<li><i>To improve customer service</i>:
-	Information you provide helps us respond to your customer service requests and support needs more efficiently.</li>
-<li><i>To personalize user experience</i>:
-	We may use information in the aggregate to understand how our Users as a group use the services and resources provided on our Site.</li>
-<li><i>To send periodic emails</i>:
-We may use the email address to respond to their inquiries, questions, and/or other requests. </li>
-</ul>
-<p><strong>How we protect your information</strong></p>
 
-<p>We adopt appropriate data collection, storage and processing practices and security measures to protect against unauthorized access, alteration, disclosure or destruction of your personal information, username, password, transaction information and data stored on our Site.</p>
+                <ul>
 
-<p><strong>Sharing your personal information</strong></p>
+                    <li>
+                        article 5(d): The data subject has given his/her unambiguous prior-consent (Article 5(d) of
+                        Regulation (EC) No 45/2001 and the upcoming Internal Data Protection Regulation). The consent is
+                        provided and recorded in a written form.
+                    </li>
+                </ul>
+                </p>
 
-<p>We do not sell, trade, or rent Users personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners, trusted affiliates and advertisers for the purposes outlined above.We may use third party service providers to help us operate our business and the Site or administer activities on our behalf, such as sending out newsletters or surveys. We may share your information with these third parties for those limited purposes provided that you have given us your permission.</p>
 
-<p><strong>Changes to this privacy policy</strong></p>
+                <h3><strong>Which data do we collect and process? </strong></h3>
 
-<p>Europe Code Week has the discretion to update this privacy policy at any time. When we do, we will revise the updated date at the bottom of this page. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.</p>
+                <p>Personal data collected are information which make your identification as an contact point easier
+                    and increase your visibility for the public. This includes in particular: title, name, surname,
+                    position,
+                    professional postal & e-mail addresses, phone number, picture, social media account, biography.</p>
 
-<p><strong>Your acceptance of these terms</strong></p>
+                <p>These personal data are provided by you on a voluntary basis, by filling out the application
+                    form. </p>
 
-<p>By using this Site, you signify your acceptance of this policy. If you do not agree to this policy, please do not use our Site. Your continued use of the Site following the posting of changes to this policy will be deemed your acceptance of those changes.</p>
 
-<p><strong>Contacting us</strong></p>
+                <h3><strong>How long do we keep your data?</strong></h3>
 
-<p>If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us at: <a href="mailto:info@codeweek.eu">info@codeweek.eu</a></p>
-<p>This document was last updated on October 12, 2014</p>
+                <p>DG Connect keeps the data for as long as you serve as an contact point. Personal data may be further
+                    kept in a data base for contacting you for participating in future activities if you have agreed to
+                    this.</p>
+                <p>
+                    All personal data will be deleted from databases 1 year after you have put an end to your functions
+                    as an contact point and if you have not given your agreement to be included in the database for
+                    future activities.
+                </p>
 
-<div style="font-size:10px;color:gray;">Privacy policy created by <a style="font-size:10px;color:gray;text-decoration:none;cursor:default;" href="http://www.privacypolicies.com" target="_blank">Generate Privacy Policy</a></div>
+                <h3><strong>How do we protect your data?</strong></h3>
 
-		</div>
-	</div>
-</section>
+                <p>All data in electronic format (e-mails, documents, uploaded batches of data etc.) are stored either
+                    on
+                    the servers of the European Commission or of its contractors in line with its decision C(2006)3602
+                    of
+                    16 August 2006 concerning the security of information systems used by the European Commission. </p>
+                <p>The Commission’s contractors are bound by a specific contractual clause for any processing
+                    operations of your data on behalf of the Commission.</p>
+
+                <h3><strong>Who has access to your data and to whom is it disclosed?</strong></h3>
+
+                <p>All personal data provided by you can be accessed by the websites’ administrators (Commission
+                    staff), as well as by other Commission staff on a need to know basis.</p>
+                <p>For the purpose of increasing the contact points’ visibility, your personal data are published on the
+                    following website: https://codeweek.eu</p>
+                <p>Your personal data may become part of a database (please see notification DPO-3718) with the
+                    purpose of facilitating our future interaction with you as a stakeholder in your areas of interest.
+                    If
+                    you do not wish to be included in this database, please write to <a
+                            href="mailto:CNECT-STAKEHOLDER-RELATIONS@ec.europa.eu">CNECT-STAKEHOLDER-RELATIONS@ec.europa.eu</a>
+                </p>
+                <p>Your personal data may be used by the European Commission for internal quantitative and
+                    qualitative analyses of the stakeholders’ contributions. The results of such analyses may only be
+                    published in an anonymised form.</p>
+
+                <h3><strong>What are your rights and how can you exercise them?</strong></h3>
+
+                <p>You are entitled to have access to your personal data and to request the deletion, blocking or
+                    rectification if the data is inaccurate or incomplete. To do so, please contact the data controller as
+                    provided in the contact information below (section 8).</p>
+                <p>You may lodge a complaint with the European Data Protection Supervisor:
+                    <a href="http://edps.europa.eu">http://edps.europa.eu</a></p>
+
+                <h3><strong>Contact information</strong></h3>
+
+                <p>If you have comments or questions, any concerns or a complaint regarding the collection and use of
+                    your personal data, please feel free to contact the data controller using the following contact
+                    information:</p>
+                <p>DG CONNECT Unit F4<br/>
+                    Building BU25<br/>
+                    B-1049 Brussels <br/>
+                    Email: <a href="mailto:info@codeweek.eu">info@codeweek.eu</a></p>
+                <p>You can find more detailed information in the Register of the Data Protection Officer of the
+                    Commission: <a href="https://ec.europa.eu/info/about-european-commission/service-standards-and-principles/transparency/data-processing-register_en">https://ec.europa.eu/info/about-european-commission/service-standards-and-principles/transparency/data-processing-register_en</a></p>
+                <p></p>
+
+                <hr>
+<small>
+    <a name="footer"></a>
+                <sup>1</sup>
+    <a href="http://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32001R0045">Regulation (EC) N° 45/2001</a> (OJ L8 of 12/01/2001).<br/>
+                <sup>2</sup>
+                The draft Regulation on the protection of natural persons with regard to the processing of personal data by
+                the Union institutions, bodies, offices and agencies and on the free movement of such data, and repealing
+                Regulation (EC) No 45/2001 and Decision No 1247/2002/EC<br/>
+    <a href="http://data.consilium.europa.eu/doc/document/ST-9296-2018-INIT/en/pdf">http://data.consilium.europa.eu/doc/document/ST-9296-2018-INIT/en/pdf</a>
+</small>
+
+            </div>
+        </div>
+    </section>
 @endsection
