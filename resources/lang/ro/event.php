@@ -18,7 +18,7 @@ return [
     'required'=>'Câmpurile obligatorii sunt marcate cu un * asterisc. Adăugați lista de evenimente în limba locală.',
     'audience_title'=>'Public',
     'theme_title'=>'Temă',
-    'scoreboard_by_country'=>'Tabelă de afișare a evenimentelor în funcție de țară',
+    'scoreboard_by_country'=>'Tablou de bord',
     'get_involved'=>'Implică-te',
     'organize_or_support_events'=>'Organizați sau sprijiniți evenimente în orașul dumneavoastră',
     'or_contact_your'=>'sau contactați',

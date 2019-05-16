@@ -18,7 +18,7 @@ return [
     'required'=>'Polja sa zvezdicom (*) su obavezna polja za unos. Slobodno dodajte listu događaja na svom jeziku.',
     'audience_title'=>'Ciljna grupa',
     'theme_title'=>'Tema',
-    'scoreboard_by_country'=>'Tabla sa rezultatima po zemljama',
+    'scoreboard_by_country'=>'Tабeла',
     'get_involved'=>'Pridružite se',
     'organize_or_support_events'=>'Organizujete ili podržite događaje u svom gradu',
     'or_contact_your'=>'ili kontaktirajte svog',

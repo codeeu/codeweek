@@ -18,7 +18,7 @@ return [
     'required'=>'Obligāti aizpildāmie lauki ir norādīti ar * zvaigznīti. Jūs varat pievienot pasākumu savā vietējā valodā.',
     'audience_title'=>'Auditorija',
     'theme_title'=>'Tēma',
-    'scoreboard_by_country'=>'Pasākumu rezultātu apkopojums pēc valsts',
+    'scoreboard_by_country'=>'Rezultāts',
     'get_involved'=>'Iesaistieties',
     'organize_or_support_events'=>'Organizējiet vai atbalstiet pasākumus savā pilsētā',
     'or_contact_your'=>'vai sazinieties ar',
