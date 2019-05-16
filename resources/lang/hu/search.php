@@ -27,4 +27,5 @@ return [
     'event'=>'esemény',
     'events'=>'esemény',
     'year' => 'év',
+    'audiences'=>'Célközönség','themes'=>'Tárgy','countries'=>'Ország','search_placeholder' => 'Keresés cím és leírás szerint',
 ];
