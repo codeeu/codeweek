@@ -27,4 +27,5 @@ return [
     'event'=>'renginys',
     'events'=>'renginiai',
     'year' => 'metai',
+    'audiences'=>'Auditorijos','themes'=>'Temos','countries'=>'Šalys','search_placeholder' => 'Ieškoti pagal pavadinimą arba aprašymą',
 ];

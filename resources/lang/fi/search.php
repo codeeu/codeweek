@@ -27,4 +27,5 @@ return [
     'event'=>'tapahtuma',
     'events'=>'tapahtumaa',
     'year' => 'vuosi',
+    'audiences'=>'Kohderyhmä ','themes'=>'Teemat','countries'=>'Maat','search_placeholder' => 'Hae otsikon tai kuvauksen mukaan',
 ];

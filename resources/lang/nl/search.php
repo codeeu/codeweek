@@ -27,4 +27,5 @@ return [
     'event'=>'evenement',
     'events'=>'evenementen',
     'year' => 'jaar',
+    'audiences'=>'Doelgroepen','themes'=>'themas','countries'=>'Landen','search_placeholder' => 'Zoek op titel of beschrijving',
 ];

@@ -27,4 +27,5 @@ return [
     'event'=>'arrangement',
     'events'=>'arrangementer',
     'year' => 'år',
+    'audiences'=>'Målgrupper','themes'=>'Temaer','countries'=>'Lande','search_placeholder' => 'Søg efter titel eller beskrivelse',
 ];
