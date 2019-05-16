@@ -27,4 +27,5 @@ return [
     'event'=>'etkinlik',
     'events'=>'etkinlik',
     'year' => 'yıl',
+    'audiences'=>'Katılımcılar','themes'=>'Temalar','countries'=>'Ülkeler','search_placeholder' => 'Başlığa veya açıklamaya göre ara',
 ];

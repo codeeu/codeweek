@@ -27,4 +27,5 @@ return [
     'event'=>'üritus',
     'events'=>'üritust',
     'year' => 'aastas',
+    'audiences'=>'Sihtrühm','themes'=>'Teemad','countries'=>'Riigid','search_placeholder' => 'Otsi pealkirja või kirjelduse järgi',
 ];

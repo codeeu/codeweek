@@ -27,4 +27,5 @@ return [
     'event'=>'настан',
     'events'=>'настани',
     'year' => 'година',
+    'audiences'=>'Публика','themes'=>'Теми','countries'=>'Држави','search_placeholder' => 'Пребарај според наслов или опис',
 ];

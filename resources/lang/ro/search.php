@@ -27,4 +27,5 @@ return [
     'event'=>'eveniment',
     'events'=>'evenimente',
     'year' => 'an',
+    'audiences'=>'Public','themes'=>'Teme','countries'=>'Țări','search_placeholder' => 'Căutare după titlu și descriere',
 ];

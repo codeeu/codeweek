@@ -27,4 +27,5 @@ return [
     'event'=>'avveniment',
     'events'=>'avvenimenti',
     'year' => 'sena',
+    'audiences'=>'Udjenzi','themes'=>'Temi','countries'=>'Pajjiżi','search_placeholder' => 'Tfittxija skond it-titlu',
 ];
