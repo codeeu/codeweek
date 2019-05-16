@@ -18,7 +18,7 @@ return [
     'required'=>'Obvezna polja so označena z zvezdico *. Dodajte dogodek v svojem jeziku.',
     'audience_title'=>'Udeleženci',
     'theme_title'=>'Tema',
-    'scoreboard_by_country'=>'Pregled dogodkov po državah',
+    'scoreboard_by_country'=>'Preglednica',
     'get_involved'=>'Vključite se',
     'organize_or_support_events'=>'Organizirajte ali podprite dogodke v svojem mestu',
     'or_contact_your'=>'ali se obrnite na',

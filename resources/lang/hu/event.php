@@ -18,7 +18,7 @@ return [
     'required'=>'A kötelezõ mezõk *-gal vannak jelölve. Nyugodtan adja meg az eseményt a helyi nyelven.',
     'audience_title'=>'Célközönség',
     'theme_title'=>'Téma',
-    'scoreboard_by_country'=>'Eseménytábla országonként',
+    'scoreboard_by_country'=>'Eredménytábla',
     'get_involved'=>'Kapcsolódjon be',
     'organize_or_support_events'=>'Szervezzen vagy támogasson eseményeket városában',
     'or_contact_your'=>'vagy vegye fel a kapcsolatot',
