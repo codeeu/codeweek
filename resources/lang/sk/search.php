@@ -27,4 +27,5 @@ return [
     'event'=>'podujatie',
     'events'=>'podujatia/podujatí',
     'year' => 'rok',
+    'audiences'=>'Publikum','themes'=>'Témy','countries'=>'Krajina','search_placeholder' => 'Hľadaj podľa nadpisu alebo popisu',
 ];

@@ -27,4 +27,5 @@ return [
     'event'=>'pasākums',
     'events'=>'pasākumi',
     'year' => 'gads',
+    'audiences'=>'Mērķauditorija','themes'=>'Tēmas','countries'=>'Valstis','search_placeholder' => 'Meklēšana pēc nosaukuma vai apraksta',
 ];
