@@ -27,4 +27,5 @@ return [
     'event'=>'evento',
     'events'=>'eventos',
     'year' => 'ano',
+    'audiences'=>'Público','themes'=>'Temas','countries'=>'Países','search_placeholder' => 'Busca por título ou descrição',
 ];

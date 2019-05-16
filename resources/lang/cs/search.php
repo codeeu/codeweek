@@ -27,4 +27,5 @@ return [
     'event'=>'akce',
     'events'=>'akcí',
     'year' => 'rok',
+    'audiences'=>'Publikum','themes'=>'Témata','countries'=>'Země','search_placeholder' => 'Hledej podle nadpisu nebo popisu',
 ];

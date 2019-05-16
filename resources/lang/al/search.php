@@ -12,9 +12,9 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'audience_title'=>'Audienca',
-    'theme_title'=>'Tema',
-    
+    'audience_title' => 'Audienca',
+    'theme_title' => 'Tema',
+
     'placeholder' => 'Kërkoni për emrin ose etiketën e evenimentit',
     'submit' => 'Kërkoni',
     'label_country' => 'Zgjidh shtetin',
@@ -24,7 +24,8 @@ return [
         'no' => 'Jo'
     ],
     'search_counter' => 'përputh kriteret e kërkimit',
-    'event'=>'evenimenti',
-    'events'=>'evenimentet',
-    'year' => 'vit'
+    'event' => 'evenimenti',
+    'events' => 'evenimentet',
+    'year' => 'vit',
+    'audiences' => 'Audiencat', 'themes' => 'Temat ', 'countries' => 'Shtetet', 'search_placeholder' => 'Kërko sipas titullit ose përshkrimit',
 ];

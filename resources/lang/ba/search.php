@@ -12,9 +12,9 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'audience_title'=>'Publika',
-    'theme_title'=>'Tema',
-    
+    'audience_title' => 'Publika',
+    'theme_title' => 'Tema',
+
     'placeholder' => 'Pretražite naziv ili oznaku događaja',
     'submit' => 'Pretraga',
     'label_country' => 'Odaberite zemlju',
@@ -24,7 +24,8 @@ return [
         'no' => 'Ne'
     ],
     'search_counter' => 'uskladite svoje kriterije pretrage',
-    'event'=>'događaj',
-    'events'=>'događaji',
+    'event' => 'događaj',
+    'events' => 'događaji',
     'year' => 'godina',
+    'audiences' => 'Ciljane skupine', 'themes' => 'Teme', 'countries' => 'Države', 'search_placeholder' => 'Pretraživanje po naslovu  ili opisu',
 ];
