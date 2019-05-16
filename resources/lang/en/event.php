@@ -18,7 +18,7 @@ return [
     'required'=>'Required fields are marked with an * asterisk. Feel free to add the event listing in your local language.',
     'audience_title'=>'Audience',
     'theme_title'=>'Theme',
-    'scoreboard_by_country'=>'Events Scoreboard by country',
+    'scoreboard_by_country'=>'Scoreboard',
     'get_involved'=>'Get involved',
     'organize_or_support_events'=>'Organize or support events in your city',
     'or_contact_your'=>'or contact your',

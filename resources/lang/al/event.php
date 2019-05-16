@@ -18,7 +18,7 @@ return [
     'required'=>'Fushat e detyrueshme janë të shënuara me yll *. Mos ngurroni të shtoni listën e evenimentit në gjuhën tuaj lokale.',
     'audience_title'=>'Audienca',
     'theme_title'=>'Tema',
-    'scoreboard_by_country'=>'Rezultatet e evenimenteve sipas vendit',
+    'scoreboard_by_country'=>'Tabela e rezultateve',
     'get_involved'=>'Angazhohuni',
     'organize_or_support_events'=>'Organizoni ose mbështetni evenimentet në qytetin tuaj',
     'or_contact_your'=>'ose kontaktoni me',
