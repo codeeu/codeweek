@@ -18,7 +18,7 @@ return [
     'required'=>'Verplichte velden zijn gemarkeerd met een sterretje (*). Je kunt de vermelding van het evenement ook in je lokale taal toevoegen.',
     'audience_title'=>'Doelgroep',
     'theme_title'=>'Thema',
-    'scoreboard_by_country'=>'Scorebord van evenementen per land',
+    'scoreboard_by_country'=>'scorebord',
     'get_involved'=>'Meedoen',
     'organize_or_support_events'=>'Organiseer of ondersteun evenementen in jouw gemeente',
     'or_contact_your'=>'of neem contact op met je',

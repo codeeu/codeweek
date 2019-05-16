@@ -18,7 +18,7 @@ return [
     'required'=>'Gerekli alanlar * işareti ile gösterilmiştir. Etkinliği kendi dilinizde ekleyebilirsiniz.',
     'audience_title'=>'Hedef Kitle',
     'theme_title'=>'Konu',
-    'scoreboard_by_country'=>'Ülkelere göre Etkinlik Puan Tablosu',
+    'scoreboard_by_country'=>'Skor tablosu',
     'get_involved'=>'Katıl',
     'organize_or_support_events'=>'Etkinlik düzenleyin ya da şehrinizdeki etkinlikleri destekleyin',
     'or_contact_your'=>'veya aşağıdakilerle irtibat kurun:',

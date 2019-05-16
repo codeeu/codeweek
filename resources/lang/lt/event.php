@@ -18,7 +18,7 @@ return [
     'required'=>'Laukeliai, kuriuos reikia užpildyti, pažymėti žvaigždute *. Galite įrašyti renginį savo gimtąja kalba.',
     'audience_title'=>'Auditorija',
     'theme_title'=>'Tema',
-    'scoreboard_by_country'=>'Renginių suvestinė pagal šalis',
+    'scoreboard_by_country'=>'Suvestinė',
     'get_involved'=>'Dalyvaukite',
     'organize_or_support_events'=>'Organizuokite arba remkite renginius savo mieste',
     'or_contact_your'=>'arba susisiekite su savo',

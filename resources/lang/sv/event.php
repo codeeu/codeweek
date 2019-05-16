@@ -18,7 +18,7 @@ return [
     'required'=>'Obligatoriska fält är markerade med en asterisk *. Lägg gärna till evenemanget på ditt lokala språk i listan.',
     'audience_title'=>'Målgrupp',
     'theme_title'=>'Tema',
-    'scoreboard_by_country'=>'Poängtavla efter land',
+    'scoreboard_by_country'=>'Resultattavla',
     'get_involved'=>'Engagera dig',
     'organize_or_support_events'=>'Organisera eller stöd evenemang på din ort',
     'or_contact_your'=>'eller kontakta dina',

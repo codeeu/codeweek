@@ -18,7 +18,7 @@ return [
     'required'=>'Povinná pole jsou označená * hvězdičkou Bez obav přidejte seznam akcí ve svém jazyce.',
     'audience_title'=>'Účast',
     'theme_title'=>'Téma',
-    'scoreboard_by_country'=>'Srovnávací přehled akcí podle zemí',
+    'scoreboard_by_country'=>'Srovnání',
     'get_involved'=>'Zapojte se',
     'organize_or_support_events'=>'Zorganizujte nebo podporujte akce ve svém městě',
     'or_contact_your'=>'nebo kontaktujte své',

@@ -18,7 +18,7 @@ return [
     'required'=>'Nõutavad väljad on tähistatud tärniga. Ürituse võid lisada oma kohalikus keeles.',
     'audience_title'=>'Kuulajad',
     'theme_title'=>'Teema',
-    'scoreboard_by_country'=>'Ürituste punktitabel riigiti',
+    'scoreboard_by_country'=>'Tulemustabel',
     'get_involved'=>'Löö kaasa',
     'organize_or_support_events'=>'Korralda või toeta üritusi oma linnas',
     'or_contact_your'=>'või pöördu oma',

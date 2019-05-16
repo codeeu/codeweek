@@ -18,7 +18,7 @@ return [
     'required'=>'Pola wymagane oznaczono gwiazdką *. Możesz dodać informacje o wydarzeniu w swoim lokalnym języku.',
     'audience_title'=>'Adresaci',
     'theme_title'=>'Temat',
-    'scoreboard_by_country'=>'Tablica wyników wydarzeń według kraju',
+    'scoreboard_by_country'=>'Tablica wyników',
     'get_involved'=>'Weź udział',
     'organize_or_support_events'=>'Organizuj lub wspieraj wydarzenia w swoim mieście',
     'or_contact_your'=>'lub skontaktuj się z',

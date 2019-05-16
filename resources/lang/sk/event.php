@@ -18,7 +18,7 @@ return [
     'required'=>'Povinné polia sú označené hviezdičkou*. Záznam o podujatí môžete uviesť aj vo svojom miestnom jazyku.',
     'audience_title'=>'Cieľová skupina',
     'theme_title'=>'Téma',
-    'scoreboard_by_country'=>'Rebríček podujatí podľa krajín',
+    'scoreboard_by_country'=>'Porovnanie',
     'get_involved'=>'Zapojte sa',
     'organize_or_support_events'=>'Usporiadajte alebo podporte podujatia vo svojom meste',
     'or_contact_your'=>'alebo kontaktujte svojich',
