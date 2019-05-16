@@ -27,4 +27,5 @@ return [
     'event'=>'dogodek',
     'events'=>'dogodki',
     'year' => 'leto',
+    'audiences'=>'Občinstvo','themes'=>'Teme','countries'=>'Države','search_placeholder' => 'Iskanje po naslovu ali opisu',
 ];

@@ -27,4 +27,5 @@ return [
     'event'=>'εκδήλωση',
     'events'=>'εκδηλώσεις',
     'year' => 'έτος',
+    'audiences'=>'Κοινό','themes'=>'Θέματα','countries'=>'Χώρες','search_placeholder' => 'Εύρεση με βάση τον τίτλο ή την περιγραφή',
 ];
