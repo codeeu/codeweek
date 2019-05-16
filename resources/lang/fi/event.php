@@ -18,7 +18,7 @@ return [
     'required'=>'Pakolliset kentät on merkitty tähdellä *. Voit lisätä tapahtumia luetteloon paikallisella kielellä.',
     'audience_title'=>'Yleisö',
     'theme_title'=>'Aihe',
-    'scoreboard_by_country'=>'Tapahtumataulukko maittain',
+    'scoreboard_by_country'=>'Tulostaulukko',
     'get_involved'=>'Osallistu',
     'organize_or_support_events'=>'Järjestä tai tue tapahtumia omassa kaupungissasi',
     'or_contact_your'=>'tai ota yhteyttä',

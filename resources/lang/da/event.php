@@ -18,7 +18,7 @@ return [
     'required'=>'Obligatoriske felter er markeret med en stjerne *. Du må gerne tilføje arrangementet på dit lokale sprog.',
     'audience_title'=>'Målgruppe',
     'theme_title'=>'Tema',
-    'scoreboard_by_country'=>'Resultattavle for arrangementer efter land',
+    'scoreboard_by_country'=>'Resultattavle',
     'get_involved'=>'Vær med',
     'organize_or_support_events'=>'Afhold eller støt arrangementer i din by',
     'or_contact_your'=>'eller kontakt dine',
