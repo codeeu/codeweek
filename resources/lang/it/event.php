@@ -18,7 +18,7 @@ return [
     'required'=>'I campi obbligatori sono contrassegnati con un asterisco *. Puoi aggiungere liberamente l’elenco degli eventi nella tua lingua.',
     'audience_title'=>'Pubblico',
     'theme_title'=>'Tema',
-    'scoreboard_by_country'=>'Quadro di valutazione degli eventi per paese',
+    'scoreboard_by_country'=>'Classifica',
     'get_involved'=>'Mettiti in gioco',
     'organize_or_support_events'=>'Organizza o sostieni eventi nella tua città',
     'or_contact_your'=>'oppure contatta i tuoi',

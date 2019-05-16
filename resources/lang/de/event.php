@@ -18,7 +18,7 @@ return [
     'required'=>'Pflichtfelder sind mit einem Stern * gekennzeichnet. Fügen Sie die Veranstaltung der Liste in Ihrer Sprache hinzu.',
     'audience_title'=>'Zielgruppe',
     'theme_title'=>'Thema',
-    'scoreboard_by_country'=>'Anzeige der Veranstaltungen nach Land',
+    'scoreboard_by_country'=>'Tabelle',
     'get_involved'=>'Beteiligen Sie sich',
     'organize_or_support_events'=>'Veranstaltungen in Ihrer Stadt ausrichten oder unterstützen',
     'or_contact_your'=>'oder Ihre',

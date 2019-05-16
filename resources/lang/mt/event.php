@@ -18,7 +18,7 @@ return [
     'required'=>'L-oqsma meħtieġa huma mmarkati b’*asterisk. Ħossok liberu/a li żżid l-elenkar tal-avveniment tiegħek bil-lingwa lokali tiegħek.',
     'audience_title'=>'Udjenza',
     'theme_title'=>'Tema',
-    'scoreboard_by_country'=>'Tabella ta’ valutazzjoni tal-Avveniment skont il-pajjiż',
+    'scoreboard_by_country'=>'Tabella ta’ punti mirbuħa',
     'get_involved'=>'Involvi ruħek',
     'organize_or_support_events'=>'Organizza jew appoġġja avvenimenti fil-belt tiegħek',
     'or_contact_your'=>'jew ikkuntattja',
