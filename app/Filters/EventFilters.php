@@ -14,13 +14,13 @@ class EventFilters extends Filters
      *
      * @var array
      */
-    protected $filters = ['countries', 'query', 'themes', 'audiences','year', 'creator_id'];
+    protected $filters = ['countries', 'query', 'themes', 'audiences', 'year', 'creator_id'];
 
     public function __construct(Request $request)
     {
-/*        if (is_null($request->input('year'))) {
-            $request->merge(['year' => Carbon::now()->year]);
-        }*/
+        /*        if (is_null($request->input('year'))) {
+                    $request->merge(['year' => Carbon::now()->year]);
+                }*/
 
         if (is_null($request->input('country_iso')) && !is_null(session('country_iso'))) {
             $request->merge(['country_iso' => session('country_iso')]);
@@ -28,10 +28,11 @@ class EventFilters extends Filters
         parent::__construct($request);
     }
 
+
     /**
      * Filter the query by country
      *
-     * @param  string $country_iso
+     * @param string $country_iso
      * @return \Illuminate\Database\Eloquent\Builder
      */
     protected function countries($countries)
@@ -46,8 +47,8 @@ class EventFilters extends Filters
 
     protected function year($year)
     {
-            Log::info('year' . $year);
-            return $this->builder->whereYear('start_date', '=', $year);
+        Log::info('year' . $year);
+        return $this->builder->whereYear('start_date', '=', $year);
 
     }
 
@@ -62,7 +63,7 @@ class EventFilters extends Filters
 
         if (empty($query)) return;
 
-        return $this->builder->where(function ($queryInside) use ($query){
+        return $this->builder->where(function ($queryInside) use ($query) {
             $queryInside->where('title', 'LIKE', "%$query%")
                 ->orWhere('description', 'LIKE', "%$query%");
         });

@@ -17,7 +17,7 @@
             <div class="basic-fields flex flex-row">
 
 
-                <div class="w-full mr-4" >
+                <div class="w-full mr-4">
                     <input type="text" class="input-text w-full pl-8 pr-8" v-model="query"
                            v-on:keyup.13="onSubmit()" :placeholder="$t('search.search_placeholder')">
                 </div>
@@ -31,11 +31,13 @@
                 </div>
 
                 <div class="search-button mr-4">
-                    <input type="button" class="btn btn-primary btn-sm w-full button-search" :value="$t('search.submit')" @click="onSubmit()">
+                    <input type="button" class="btn btn-primary btn-sm w-full button-search"
+                           :value="$t('search.submit')" @click="onSubmit()">
                 </div>
 
                 <div class="more-button">
-                    <input type="button" class="btn btn-primary btn-sm w-full fa fa-trophy button-plus" :value="showFilters ? '-' : '+'" @click="toggleFilters()">
+                    <input type="button" class="btn btn-primary btn-sm w-full fa fa-trophy button-plus"
+                           :value="showFilters ? '-' : '+'" @click="toggleFilters()">
                 </div>
 
             </div>
@@ -43,7 +45,8 @@
             <div class="advanced-fields flex flex-col mt-4" v-show="showFilters">
 
                 <multiselect v-model="countries" :options="countrieslist" :multiple="true" :close-on-select="false"
-                             :clear-on-select="false" :preserve-search="false" :placeholder="$t('search.countries')" :preselect-first="false"
+                             :clear-on-select="false" :preserve-search="false" :placeholder="$t('search.countries')"
+                             :preselect-first="false"
                              label="countries" :custom-label="customLabel" track-by="iso">
                     <pre class="language-json"><code>{{ countries }}</code></pre>
                 </multiselect>
@@ -51,13 +54,15 @@
                 <div class="flex flex-row mt-4">
 
                     <multiselect v-model="audiences" :options="audienceslist" :multiple="true" :close-on-select="false"
-                                 :clear-on-select="false" :preserve-search="false" :placeholder="$t('search.audiences')" :preselect-first="false"
+                                 :clear-on-select="false" :preserve-search="false" :placeholder="$t('search.audiences')"
+                                 :preselect-first="false"
                                  label="event.audience" :custom-label="customLabel" track-by="id" class="mr-4">
                         <pre class="language-json"><code>{{ audiences }}</code></pre>
                     </multiselect>
 
                     <multiselect v-model="themes" :options="themeslist" :multiple="true" :close-on-select="false"
-                                 :clear-on-select="false" :preserve-search="false" :placeholder="$t('search.themes')" :preselect-first="false"
+                                 :clear-on-select="false" :preserve-search="false" :placeholder="$t('search.themes')"
+                                 :preselect-first="false"
                                  label="event.theme" :custom-label="customLabel" track-by="id">
                         <pre class="language-json"><code>{{ themes }}</code></pre>
                     </multiselect>
@@ -72,7 +77,9 @@
 
             <div class="flex" style="font-size: 14px;">
 
-                <div class="title events-count" v-if="events.length > 0 && !isLoading">{{pagination.total}} {{pagination.total > 1 ? $t('search.events') : $t('search.event')}} {{$t('search.search_counter')}}</div>
+                <div class="title events-count" v-if="events.length > 0 && !isLoading">{{pagination.total}}
+                    {{pagination.total > 1 ? $t('search.events') : $t('search.event')}} {{$t('search.search_counter')}}
+                </div>
 
             </div>
 
@@ -83,7 +90,9 @@
                         <div class="card-body">
                             <h5 class="card-title">{{event.title}}</h5>
                             <p class="card-text card-description">{{event.description}}</p>
-                            <p class="card-text"><small class="text-muted">{{event.start_date}}</small></p>
+                            <p class="card-text">
+                                <small class="text-muted">{{event.start_date}}</small>
+                            </p>
                         </div>
                     </div>
                 </a>
@@ -108,6 +117,9 @@
         components: {Multiselect, Pagination},
         name: 'SearchPageComponent',
         props: {
+            prpQuery: String,
+            prpYears: Array,
+            prpSelectedCountry: Array,
             name: String,
             countrieslist: Array,
             audienceslist: Array,
@@ -115,38 +127,39 @@
         },
         data() {
             return {
-                query: "",
+                query: this.prpQuery,
+                years: this.prpYears,
                 year: '',
-                years:[2019,2018,2017,2016,2015,2014],
-                countries: [],
+                countries: this.prpSelectedCountry,
                 audiences: [],
                 themes: [],
-                showFilters:true,
+                showFilters: true,
                 isLoading: false,
-                events:[],
+                events: [],
                 pagination: {
                     'current_page': 1
                 }
             }
         },
-        methods:{
-            toggleFilters(){
+        methods: {
+            toggleFilters() {
                 this.showFilters = !this.showFilters;
             },
             scrollToTop() {
-                window.scrollTo(0,0);
+                window.scrollTo(0, 0);
             },
-            paginate: function(){
+            paginate: function () {
                 this.scrollToTop();
                 this.onSubmit(true);
             },
-            onSubmit: function(isPagination) {
+            onSubmit: function (isPagination) {
                 this.events = [];
                 this.isLoading = true;
-                var url="/search";
-                if (isPagination){
+                var url = "/search";
+                if (isPagination) {
                     url = "/search?page=" + this.pagination.current_page;
                 }
+                console.log(this.countries);
                 axios.post(url, this.$data)
                     .then(result => {
                         var response = result.data[0];
@@ -182,7 +195,7 @@
                 }
                 return 'https://codeweek-s3.s3.amazonaws.com/event_picture/logo_gs_2016_07703ca0-7e5e-4cab-affb-4de93e3f2497.png';
             },
-            customLabel(obj, label){
+            customLabel(obj, label) {
                 return this.$t(label + '.' + obj.name);
             }
         },
@@ -194,71 +207,71 @@
 
 <style scoped>
 
-    .landing-wrapper{
+    .landing-wrapper {
         position: relative;
         height: 450px;
     }
 
-    #loadmask{
+    #loadmask {
         position: absolute;
         height: 760px;
         width: 100%;
         top: 110px;
-        background-color: rgba(0,0,0,0.5);
-        z-index:1;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .loading{
+    .loading {
         background-color: white;
         padding: 15px;
         border-radius: 10px;
     }
 
-    .events-map-wrapper{
+    .events-map-wrapper {
         position: absolute;
         width: 100%;
         height: 450px;
     }
 
-    .card-link .card{
+    .card-link .card {
         border-width: 1px;
         border-radius: 8px;
         height: 500px;
-        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
     }
 
-    .card-link .card:hover{
-        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.30);
+    .card-link .card:hover {
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.30);
     }
 
-    .input-text{
+    .input-text {
         min-height: 40px;
         border-radius: 5px;
         border: 1px solid #e8e8e8;
-        font-size:14px;
-        font-family:'Lato'
+        font-size: 14px;
+        font-family: 'Lato'
     }
 
-    .button-search{
+    .button-search {
         border-radius: 5px;
         width: 120px;
-        height:40px;
+        height: 40px;
     }
 
-    .button-plus{
+    .button-plus {
         border-radius: 5px;
         width: 40px;
-        height:40px;
+        height: 40px;
     }
 
-    .events-container{
+    .events-container {
         margin-top: 20px;
     }
 
-    .events-page{
+    .events-page {
         margin-left: 20px;
         font-weight: bold;
         flex: 1;
@@ -267,19 +280,19 @@
         display: -webkit-box;
     }
 
-    .searchbox-container{
-        position:relative;
+    .searchbox-container {
+        position: relative;
         margin-top: 120px;
-        background-color: rgba(68,68,68,0.8);
+        background-color: rgba(68, 68, 68, 0.8);
         border-radius: 8px;
     }
 
-    .card-group{
+    .card-group {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .card img{
-        width:100%;
+    .card img {
+        width: 100%;
         object-fit: cover;
         height: 200px;
         background-color: white;
@@ -287,25 +300,25 @@
         border-bottom: 1px solid #EEEEEE;
     }
 
-    .card-body{
-        padding:15px;
+    .card-body {
+        padding: 15px;
     }
 
-    .card-title{
-        font-size:20px;
-        height:60px;
-        overflow:hidden;
+    .card-title {
+        font-size: 20px;
+        height: 60px;
+        overflow: hidden;
     }
 
-    .card-description{
-        font-size:15px;
+    .card-description {
+        font-size: 15px;
         overflow: hidden;
         padding-top: 10px;
         height: 140px;
-        color:black;
+        color: black;
     }
 
-    .pagination{
+    .pagination {
         display: flex;
         align-items: center;
         justify-content: center;
