@@ -5,9 +5,11 @@ namespace App\Http\Controllers;
 use App\Country;
 use App\Event;
 use App\Filters\EventFilters;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Transformers\EventTransformer;
 use Illuminate\Support\Facades\Log;
+use stdClass;
 
 class SearchController extends Controller
 {
@@ -23,17 +25,31 @@ class SearchController extends Controller
         $this->eventTransformer = $eventTransformer;
     }
 
-    public function search(EventFilters $filters, Request $request)
+    public function search(Request $request)
     {
-        $selected_themes = $request->input('theme') ?: [];
-        $selected_audiences = $request->input('audience') ?: [];
-        $years = [2019, 2018, 2017, 2016, 2015, 2014];
-        $selected_year = $request->input('year') ?: 2019;
-        $selectedYear = $request->input('year') ?: 2019;
 
-        $country = Country::where('iso','=',session('country_iso'))->first();
+        $query = $request->input('q') ?: "";
+        $country_iso = $request->input('country_iso') ?: "";
+        $selected_country = array();
+        $selected_country[] = Country::where('iso',$country_iso)->first();
 
-        return view('event.search', compact(['selected_themes','selected_audiences','years','selected_year','selectedYear','country']));
+        //dd($selected_country);
+        //$selected_country = $country_iso;
+
+
+
+
+
+        $current_year = Carbon::now()->year;
+        $years = array();
+        for ($year = $current_year; $year >= 2014; $year--) {
+            $years[] = $year;
+        }
+
+
+
+
+        return view('event.search', compact(['query', 'years','selected_country']));
     }
 
     public function searchPOST(EventFilters $filters, Request $request)
@@ -54,9 +70,9 @@ class SearchController extends Controller
     protected function getEvents(EventFilters $filters)
     {
 
-        $events = Event::where('status','like','APPROVED')
+        $events = Event::where('status', 'like', 'APPROVED')
             ->filter($filters)
-            ->orderBy('start_date','asc');
+            ->orderBy('start_date', 'asc');
 
         return $events->paginate(12);
     }
@@ -64,19 +80,16 @@ class SearchController extends Controller
     protected function getAllEventsToMap(EventFilters $filters)
     {
 
-        Log::info('coucou');
-        $events = Event::where('status','like','APPROVED')
+
+        $events = Event::where('status', 'like', 'APPROVED')
             ->filter($filters)
             ->get();
 
-        Log::info('before transform');
         $events = $this->eventTransformer->transformCollection($events);
-        Log::info('after transform');
+
         $events = $events->groupBy('country');
-        Log::info('after groupBy');
 
 
-        Log::info($events);
         return $events;
     }
 }
