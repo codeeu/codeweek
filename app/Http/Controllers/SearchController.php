@@ -28,7 +28,10 @@ class SearchController extends Controller
     public function search(Request $request)
     {
 
+
         $query = $request->input('q') ?: "";
+        $selected_year = $request->input('year') ?: Carbon::now()->year;
+
         $country_iso = $request->input('country_iso') ?: null;
         $selected_country = array();
         if (!is_null($country_iso)){
@@ -53,7 +56,7 @@ class SearchController extends Controller
 
 
 
-        return view('event.search', compact(['query', 'years','selected_country']));
+        return view('event.search', compact(['query', 'years','selected_country','selected_year']));
     }
 
     public function searchPOST(EventFilters $filters, Request $request)

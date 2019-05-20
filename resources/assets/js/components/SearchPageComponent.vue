@@ -120,6 +120,7 @@
             prpQuery: String,
             prpYears: Array,
             prpSelectedCountry: Array,
+            prpSelectedYear: Number,
             name: String,
             countrieslist: Array,
             audienceslist: Array,
@@ -129,7 +130,7 @@
             return {
                 query: this.prpQuery,
                 years: this.prpYears,
-                year: '',
+                year: this.prpSelectedYear,
                 countries: this.prpSelectedCountry,
                 audiences: [],
                 themes: [],
