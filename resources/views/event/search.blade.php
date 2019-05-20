@@ -22,6 +22,7 @@
             :prp-years={{json_encode($years)}}
             :prp-query="'{{$query}}'"
             :prp-selected-country="{{json_encode($selected_country)}}"
+            :prp-selected-year="{{$selected_year}}"
             :countrieslist="{{ $countries }}"
             :audienceslist="{{$audiences}}"
             :themeslist="{{$themes}}">
