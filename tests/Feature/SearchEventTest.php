@@ -22,7 +22,7 @@ class SearchEventTest extends TestCase
 
 
     /** @test */
-    public function a_user_can_search_events_by_country_with_get_request()
+    public function a_user_can_search_for_all_events()
     {
         $belgium = create('App\Country', ['iso'=>'BE']);
         $france = create('App\Country', ['iso'=>'FR']);
@@ -31,9 +31,9 @@ class SearchEventTest extends TestCase
         $eventNotInBelgium = create('App\Event', ['country_iso' => $france->iso , 'status'=>'APPROVED']);
 
         //We should return the events filtered for this country
-        $this->get('search',['country_iso'=>"BE"])
-            ->assertSee($eventInBelgium->title);
-            //->assertDontSee($eventNotInBelgium->title);
+        $this->post('search',[])
+            ->assertSee($eventInBelgium->title)
+            ->assertSee($eventNotInBelgium->title);
 
 
     }
