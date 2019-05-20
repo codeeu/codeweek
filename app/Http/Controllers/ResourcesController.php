@@ -11,7 +11,8 @@ class ResourcesController extends Controller
     {
 
         $levels = \App\ResourceLevel::where($section ,"=", true)->orderBy('position')->get();
-        $languages = \App\ResourceLanguage::all();
+        //$languages = \App\ResourceLanguage::all();
+        $languages = \App\ResourceLanguage::where($section ,"=", true)->orderBy('position')->get();
 
         $programmingLanguages = \App\ResourceProgrammingLanguage::where($section ,"=", true)->orderBy('position')->get();
         $categories = \App\ResourceCategory::where($section ,"=", true)->orderBy('position')->get();
