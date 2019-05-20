@@ -29,9 +29,13 @@ class SearchController extends Controller
     {
 
         $query = $request->input('q') ?: "";
-        $country_iso = $request->input('country_iso') ?: "";
+        $country_iso = $request->input('country_iso') ?: null;
         $selected_country = array();
-        $selected_country[] = Country::where('iso',$country_iso)->first();
+        if (!is_null($country_iso)){
+            $selected_country[] = Country::where('iso',$country_iso)->first();
+        }
+
+        //dd($selected_country);
 
         //dd($selected_country);
         //$selected_country = $country_iso;
