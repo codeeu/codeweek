@@ -54,7 +54,7 @@
                                         <span class="scoreboard-country-name {{strtolower($event->country_name)}}">@lang('countries.'.$event->country_name)</span>
                                         <p style="margin-bottom: 5px !important;"> @lang('scoreboard.parcipating_with') </p>
                                     </div>
-                                    <a href="/search?country_iso={{$event->iso}}&past=no">
+                                    <a href="/search?country_iso={{$event->iso}}&year={{$edition}}">
                                         <span class="event-number">{{ $event->total }} @lang('search.' . str_plural('event', $event->total))</span>
                                     </a>
                                 </div>
