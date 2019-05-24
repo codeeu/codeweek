@@ -33,9 +33,6 @@
                                             <a href="{{route('resources_teach')}}">@lang('menu.teach')</a>
                                         </li>
                                         <li>
-                                            <a href="{{route('training.index')}}">@lang('menu.training')</a>
-                                        </li>
-                                        <li>
                                             <a href="{{route('toolkits')}}">@lang('menu.toolkits')</a>
                                         </li>
                                     </ul>
@@ -48,7 +45,10 @@
                                 <a href="{{route('schools')}}">@lang('menu.why')?</a>
                             </li>
                             <li>
-                                <a href="{{route('codeweek4all')}}">CODEWEEK 4 ALL</a>
+                                <a href="{{route('training.index')}}">@lang('menu.training')</a>
+                            </li>
+                            <li>
+                                <a href="{{route('codeweek4all')}}">CODE WEEK 4 ALL</a>
                             </li>
                         </ul>
 
