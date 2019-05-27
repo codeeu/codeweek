@@ -31,6 +31,34 @@
                         No previous coding or programming experience is needed, and each module takes only around 15 minutes to complete. The modules introduce you to key concepts related to coding and computational thinking activities. In addition, the modules also give you practical tips and advice on how to integrate the concepts in your classroom.
                     </p>
 
+                    <div class="flex flex-wrap" style="margin-bottom: 10px;">
+                        <div class="learning-card">
+                            <a href="/training/developing-creative-thinking-through-mobile-app-development">
+                                <img src="/img/learning/developing-creative-thinking-through-mobile-app-development.png">
+                                <div class="text-xl">Developing creative thinking through mobile app development</div>
+                                <div class="text-base text-black">By Rosanna Kurrer</div>
+                            </a>
+                        </div>
+
+                        <div class="learning-card">
+                            <a href="/training/tinkering-and-making">
+                                <img src="/img/learning/tinkering-and-making.png">
+                                <div class="text-xl">Tinkering and Making</div>
+                                <div class="text-base text-black">By Diogo da Silva</div>
+                            </a>
+                        </div>
+
+                        <div class="learning-card">
+                            <a href="/training/coding-for-all-subjects">
+                                <img src="/img/learning/coding-for-all-subjects.png">
+                                <div class="text-xl">Coding for all subjects</div>
+
+                            </a>
+                        </div>
+
+
+                    </div>
+
                     <div class="flex flex-wrap" style="margin-bottom: 30px;">
                         <div class="learning-card">
                             <a href="/training/coding-without-computers">
@@ -68,6 +96,7 @@
                             </a>
                         </div>
                     </div>
+
 
                     <p>
                         Now that you have completed one or more Code Week Learning Bits, we hope that you feel comfortable enough to bring some digital creativity to your classroom and pin your activity on the <a href="/events">Code Week Map</a>!
