@@ -53,6 +53,9 @@ Route::get('/training/computational-thinking-and-problem-solving', 'StaticPageCo
 Route::get('/training/visual-programming-introduction-to-scratch', 'StaticPageController@index')->name('training.module-3');
 Route::get('/training/creating-educational-games-with-scratch', 'StaticPageController@index')->name('training.module-4');
 Route::get('/training/making-robotics-and-tinkering-in-the-classroom', 'StaticPageController@index')->name('training.module-5');
+Route::get('/training/developing-creative-thinking-through-mobile-app-development', 'StaticPageController@index')->name('training.module-6');
+Route::get('/training/tinkering-and-making', 'StaticPageController@index')->name('training.module-7');
+Route::get('/training/coding-for-all-subjects', 'StaticPageController@index')->name('training.module-8');
 
 
 
