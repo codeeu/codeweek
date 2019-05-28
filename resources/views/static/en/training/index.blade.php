@@ -93,6 +93,7 @@
                             <a href="/training/coding-for-all-subjects">
                                 <img src="/img/learning/coding-for-all-subjects.png">
                                 <div class="text-xl">Coding for all subjects</div>
+                                <div class="text-base text-black">By M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri</div>
 
                             </a>
                         </div>
