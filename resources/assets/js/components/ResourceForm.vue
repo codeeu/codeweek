@@ -116,6 +116,7 @@
     export default {
         components: {ResourceCard, Multiselect, Pagination},
         props: {
+            prpQuery: String,
             name: String,
             levels: Array,
             languages: Array,
@@ -127,8 +128,9 @@
         },
         data() {
             return {
+                //query: this.prpQuery,
                 selectedSection:this.section,
-                searchInput: "",
+                searchInput: this.prpQuery,
                 selectedLevels: [],
                 selectedLanguages: [],
                 selectedProgrammingLanguages: [],

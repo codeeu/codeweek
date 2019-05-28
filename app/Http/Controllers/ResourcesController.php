@@ -4,11 +4,20 @@ namespace App\Http\Controllers;
 
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class ResourcesController extends Controller
 {
-    public function index($section = 'learn')
+    public function index(Request $request, $section = 'learn')
     {
+
+
+        $query = $request->input('q') ?: "";
+        $levels = $request->input('levels') ?: [];
+
+        Log::info($levels);
+
+
 
         $levels = \App\ResourceLevel::where($section ,"=", true)->orderBy('position')->get();
         //$languages = \App\ResourceLanguage::all();
@@ -19,15 +28,15 @@ class ResourcesController extends Controller
         $subjects = \App\ResourceSubject::where($section ,"=", true)->orderBy('position')->get();
         $types = \App\ResourceType::where($section ,"=", true)->orderBy('position')->get();
 
-        return view('resources.index', compact(['programmingLanguages', 'levels', 'languages', 'categories', 'subjects', 'types','section']));
+        return view('resources.index', compact(['query','programmingLanguages', 'levels', 'languages', 'categories', 'subjects', 'types','section']));
     }
 
-    public function learn(){
-        return $this->index('learn');
+    public function learn(Request $request){
+        return $this->index($request, 'learn');
     }
 
-    public function teach(){
-        return $this->index('teach');
+    public function teach(Request $request){
+        return $this->index($request, 'teach');
     }
 
 

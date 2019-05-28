@@ -28,6 +28,7 @@
         </div>
 
         <resource-form
+                :prp-query="'{{$query}}'"
                 :section="'{{ $section }}'"
                 :levels="{{ $levels }}"
                 :programming-languages="{{ $programmingLanguages }}"
