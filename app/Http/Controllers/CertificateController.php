@@ -12,6 +12,8 @@ class CertificateController extends Controller
         $reported_events = ReportableEventsQuery::reported();
         $excellence = ExcellenceQuery::mine()->get();
 
+
+
         return view ('certificates', compact(['reported_events','excellence']));
     }
 }
