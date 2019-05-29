@@ -26,6 +26,9 @@
                 </thead>
                 <tbody>
                 @foreach($excellence as $certificate_of_excellence)
+
+
+                    @if(!is_null($certificate_of_excellence->name_for_certificate))
                     <tr>
 
                         <td width="*" scope="row">Certificate of Excellence {{$certificate_of_excellence->edition}} ({{$certificate_of_excellence->name_for_certificate}})</td>
@@ -33,6 +36,15 @@
                         <td><a title="Download your certificate" href="{{$certificate_of_excellence->certificate_url}}"><i
                                         class="fa fa-download" aria-hidden="true"></i></a></td>
                     </tr>
+                    @else
+                        <tr>
+
+                            <td width="*" scope="row"><a href="{{route('certificate_excellence_report', ['edition'=>$certificate_of_excellence->edition])}}">Claim your certificate of excellence for {{$certificate_of_excellence->edition}}</a></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    @endif
+
 
                 @endforeach
                 </tbody>
