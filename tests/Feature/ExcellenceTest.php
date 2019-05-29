@@ -156,6 +156,27 @@ class ExcellenceTest extends TestCase
 
     }
 
+    /** @test */
+    public function excellence_certificates_should_be_visible_on_certificates_page_only_when_reported()
+    {
+
+        $user = create('App\User');
+
+        $this->signIn($user);
+        $name = NULL;
+
+        create('App\Excellence', ['edition' => 2017, 'user_id' => $user->id,'name_for_certificate'=>$name]);
+        create('App\Excellence', ['edition' => 2018, 'user_id' => $user->id,'name_for_certificate'=>$name]);
+
+
+        $this->get('/certificates')
+            ->assertSee("Claim your certificate of excellence for 2017")
+            ->assertSee("Claim your certificate of excellence for 2018")
+            ->assertDontSee("Claim your certificate of excellence for 2019");
+
+
+    }
+
 
 
 
