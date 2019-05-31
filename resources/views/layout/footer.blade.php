@@ -32,10 +32,6 @@
                         <i class="icon-twitter"></i>
                     </a>
 
-                    <a href="https://plus.google.com/+CodeweekEu/" class="social-icon si-small si-borderless nobottommargin si-gplus">
-                        <i class="icon-gplus"></i>
-                        <i class="icon-gplus"></i>
-                    </a>
 
                     <a href="https://github.com/codeeu/codeweek" class="social-icon si-small si-borderless nobottommargin si-github">
                         <i class="icon-github"></i>
