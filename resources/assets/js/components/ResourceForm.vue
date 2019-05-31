@@ -2,10 +2,6 @@
 
     <div>
 
-        Search Query:
-
-        <a :href="searchQuery">{{ searchQuery }}</a>
-
         <div class="container mx-auto h-full flex-row bg-blue-light p-4" style="border-radius: 8px">
 
 
@@ -88,14 +84,24 @@
 
         <div class="container events-container">
 
-            <div class="flex" style="font-size: 14px;">
-
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto" style="font-size: 14px;">
+<div class="text-sm lg:flex-grow">
                 <div class="title events-count" v-if="resources.length > 0">{{pagination.total}} resources match in your
                     search criteria
                 </div>
                 <div class="title events-page" v-if="pagination.last_page > 1">Page {{pagination.current_page}} of
                     {{pagination.last_page}}
                 </div>
+</div>
+<div>
+    <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+            v-clipboard:copy="searchQuery"
+            v-clipboard:success="onCopy"
+            v-clipboard:error="onError">
+        Share
+    </button>
+</div>
+
 
             </div>
 
@@ -120,11 +126,14 @@
     import _ from 'lodash'
     import ResourceCard from "./ResourceCard";
     import Pagination from "./Pagination";
+    import VueClipboard from 'vue-clipboard2'
 
     window.multiselect = this;
 
+
+
     export default {
-        components: {ResourceCard, Multiselect, Pagination},
+        components: {ResourceCard, Multiselect, Pagination, VueClipboard},
         props: {
             prpQuery: String,
             prpLevels: Array,
@@ -151,6 +160,7 @@
                 selectedCategories: this.prpCategories,
                 selectedLanguages: this.prpLanguages,
                 selectedSubjects:[],
+                selectedSection: this.section,
                 isOpen: false,
                 showFilters: false,
                 errors: {},
@@ -164,7 +174,7 @@
         computed: {
             searchQuery: function () {
 
-                let result = "/resources/"+this.section+"?1=1";
+                let result = window.location.hostname + "/resources/"+this.section+"?1=1";
 
                 if (this.searchInput) {
                     result += "&q=" + this.searchInput;
@@ -197,6 +207,12 @@
             }
         },
         methods: {
+            onCopy: function (e) {
+                flash('Link has been copied to the clipboard!');
+            },
+            onError: function (e) {
+                alert('Failed to copy texts')
+            },
             toggleFilters() {
                 this.showFilters = !this.showFilters;
             },
@@ -239,7 +255,10 @@
             }
         },
         mounted: function () {
-
+            console.log(this.searchQuery);
+                if (this.searchQuery !== window.location.hostname + "/resources/"+this.section+"?1=1"){
+                    this.showFilters = true;
+                }
             this.onSubmit();
         }
     };
