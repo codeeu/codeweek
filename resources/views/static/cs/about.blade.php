@@ -56,9 +56,9 @@
                     <p>Pokud se va&scaron;e země je&scaron;tě nezapojila, můžete zorganizovat akce a přidat je na <a href="/events">mapu</a> nebo se zapojit jako <a href="mailto:info@codeweek.eu">dobrovoln&iacute;k</a> a st&aacute;t se ambasadorem t&yacute;dne programov&aacute;n&iacute;.</p>
 
                     <div class="container clearfix">
-                        <div class="col_half" id="PeopleChart" style="opacity: 0;width: 100%;text-align: center">
+                        <div class="col_half" id="PeopleChart" style="opacity: 1;width: 100%;text-align: center">
                             <h3 class="center">&Uacute;častn&iacute;ci</h3>
-                            <canvas id="PeopleChartCanvas" style="width: 70%;height:400px;"></canvas>
+                            <img src="{{asset('img/participation-2018.gif')}}">
                         </div>
                     </div>
 
@@ -72,37 +72,4 @@
                 </div>
             </div>
         </div>
-    </section>@endsection @push('scripts')<script type="text/javascript">
-        $(function($){
-
-            var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
-                datasets: [
-                    {
-                        fillColor: "rgba(60, 161, 206, 0.61)",
-                        strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
-                    }
-                ]
-
-            };
-
-            var globalGraphSettings = {animation: Modernizr.canvas};
-
-
-            function showBarChart() {
-                var ctx = document.getElementById("PeopleChartCanvas").getContext("2d");
-                new Chart(ctx).Bar(peopleChartData, globalGraphSettings);
-            }
-
-
-            $('#PeopleChart').appear(function () {
-                $(this).css({opacity: 1});
-                setTimeout(showBarChart, 300);
-            }, {accX: 0, accY: -155}, 'easeInCubic');
-
-
-
-        });
-
-    </script>@endpush
+    </section>@endsection
