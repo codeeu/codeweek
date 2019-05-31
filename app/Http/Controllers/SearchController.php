@@ -29,11 +29,12 @@ class SearchController extends Controller
     {
 
 
-        $query = $request->input('q') ?: "";
-        $selected_year = $request->input('year') ?: Carbon::now()->year;
+        $query = $request->input('q',"") ;
+        $selected_year = $request->input('year', Carbon::now()->year);
 
-        $country_iso = $request->input('country_iso') ?: null;
+        $country_iso = $request->input('country_iso', null);
         $selected_country = array();
+
         if (!is_null($country_iso)){
             $selected_country[] = Country::where('iso',$country_iso)->first();
         }
