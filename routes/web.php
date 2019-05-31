@@ -61,6 +61,7 @@ Route::get('/events', 'SearchController@search')->name('events_map');
 Route::get('/add', 'EventController@create')->name('create_event');
 Route::get('/map', 'MapController@index')->name('map');
 Route::get('/resources', 'ResourcesController@learn')->name('resources_learn');
+Route::get('/resources/learn', 'ResourcesController@learn');
 Route::get('/resources/teach', 'ResourcesController@teach')->name('resources_teach');
 Route::post('/resources/search', 'SearchResourcesController@search')->name('search_resources');
 
