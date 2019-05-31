@@ -56,9 +56,9 @@
                     <p>Dacă țara ta nu este &icirc;ncă implicată, poți organiza activități și le poți adăuga pe <a href="/events">hartă</a> sau te poți <a href="mailto:info@codeweek.eu">oferi ca voluntar</a> pentru a fi ambasador al Săptăm&acirc;nii programării.</p>
 
                     <div class="container clearfix">
-                        <div class="col_half" id="PeopleChart" style="opacity: 0;width: 100%;text-align: center">
+                        <div class="col_half" id="PeopleChart" style="opacity: 1;width: 100%;text-align: center">
                             <h3 class="center">Participanți</h3>
-                            <canvas id="PeopleChartCanvas" style="width: 70%;height:400px;"></canvas>
+                            <img src="{{asset('img/participation-2018.gif')}}">
                         </div>
                     </div>
 
@@ -73,37 +73,4 @@
                 </div>
             </div>
         </div>
-    </section>@endsection @push('scripts')<script type="text/javascript">
-        $(function($){
-
-            var peopleChartData = {
-                labels: ["2013", "2014", "2015", "2016", "2017","2018"],
-                datasets: [
-                    {
-                        fillColor: "rgba(60, 161, 206, 0.61)",
-                        strokeColor: "rgba(220,220,220,1)",
-                        data: [10000, 150000, 570000, 970000, 1200000, 2744875]
-                    }
-                ]
-
-            };
-
-            var globalGraphSettings = {animation: Modernizr.canvas};
-
-
-            function showBarChart() {
-                var ctx = document.getElementById("PeopleChartCanvas").getContext("2d");
-                new Chart(ctx).Bar(peopleChartData, globalGraphSettings);
-            }
-
-
-            $('#PeopleChart').appear(function () {
-                $(this).css({opacity: 1});
-                setTimeout(showBarChart, 300);
-            }, {accX: 0, accY: -155}, 'easeInCubic');
-
-
-
-        });
-
-    </script>@endpush
+    </section>@endsection
