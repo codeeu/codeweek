@@ -33,6 +33,7 @@ import AutocompleteGeo from './components/AutoCompleteGeo.vue'
 import Autocomplete from 'v-autocomplete'
 import ResourceForm from './components/ResourceForm.vue'
 import SearchPageComponent from './components/SearchPageComponent.vue'
+import VueClipboard from 'vue-clipboard2'
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -49,6 +50,10 @@ const i18n = new VueInternationalization({
     fallbackLocale: 'en',
     messages: Locale
 });
+
+
+Vue.use(VueClipboard);
+
 
 const app = new Vue({
     el: "#app",
