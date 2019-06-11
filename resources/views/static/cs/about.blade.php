@@ -51,7 +51,7 @@
 
                     <h2>T&yacute;den programov&aacute;n&iacute; v č&iacute;slech</h2>
 
-                    <p>V roce 2017 se Evropsk&eacute;ho t&yacute;dne programov&aacute;n&iacute; z&uacute;častnilo 1,2 milionu lid&iacute; ve v&iacute;ce než 50 zem&iacute;ch cel&eacute;ho světa. Dal&scaron;&iacute;ch 1,3 milionu mlad&yacute;ch lid&iacute; se zapojilo do <a href="http://africacodeweek.org/">Africk&eacute;ho t&yacute;dne programov&aacute;n&iacute;</a>, což je spin-off iniciativa, kterou provozuje SAP a dal&scaron;&iacute; neziskov&eacute; organizace.</p>
+                    <p>V roce 2018 se Evropsk&eacute;ho t&yacute;dne programov&aacute;n&iacute; z&uacute;častnilo 2,7 milionu lid&iacute; ve v&iacute;ce než 70 zem&iacute;ch cel&eacute;ho světa. Dal&scaron;&iacute;ch 2,3 milionu mlad&yacute;ch lid&iacute; se zapojilo do <a href="http://africacodeweek.org/">Africk&eacute;ho t&yacute;dne programov&aacute;n&iacute;</a>, což je spin-off iniciativa, kterou provozuje SAP a dal&scaron;&iacute; neziskov&eacute; organizace.</p>
 
                     <p>Pokud se va&scaron;e země je&scaron;tě nezapojila, můžete zorganizovat akce a přidat je na <a href="/events">mapu</a> nebo se zapojit jako <a href="mailto:info@codeweek.eu">dobrovoln&iacute;k</a> a st&aacute;t se ambasadorem t&yacute;dne programov&aacute;n&iacute;.</p>
 

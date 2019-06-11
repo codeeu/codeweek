@@ -55,7 +55,7 @@
 
                     <h2>Rakamlarla Kod Haftası</h2>
 
-                    <p>2017 yılında, d&uuml;nya genelinde 50'den fazla &uuml;lkede 1,2 milyon insan AB Kod Haftasına katıldı. SAP ve k&acirc;r amacı g&uuml;tmeyen kuruluşlar tarafından y&uuml;r&uuml;t&uuml;len bir yan girişim olan <a href="http://africacodeweek.org/">Afrika Kod Haftasına</a> 1,3 milyon gen&ccedil; katıldı.</p>
+                    <p>2018 yılında, d&uuml;nya genelinde 70'den fazla &uuml;lkede 2,7 milyon insan AB Kod Haftasına katıldı. SAP ve k&acirc;r amacı g&uuml;tmeyen kuruluşlar tarafından y&uuml;r&uuml;t&uuml;len bir yan girişim olan <a href="http://africacodeweek.org/">Afrika Kod Haftasına</a> 2,3 milyon gen&ccedil; katıldı.</p>
 
                     <p>&Uuml;lkeniz hen&uuml;z katılmadıysa, aktivite d&uuml;zenleyebilir ve bunu <a href="/events">haritaya</a> ekleyebilir ya da Kod Haftası el&ccedil;isi olarak <a href="mailto:info@codeweek.eu">g&ouml;n&uuml;ll&uuml;</a> olabilirsiniz.</p>
 

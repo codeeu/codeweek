@@ -51,7 +51,7 @@
 
                     <h2>La Semana de la Programaci&oacute;n en cifras</h2>
 
-                    <p>En 2017, 1,2&nbsp;millones de personas de m&aacute;s de cincuenta pa&iacute;ses de todo el mundo participaron en la Semana de la Programaci&oacute;n de la UE. Otros 1,3&nbsp;millones de j&oacute;venes participaron en la <a href="http://africacodeweek.org/">Semana de la Programaci&oacute;n de &Aacute;frica</a>, que es una iniciativa semilla organizada por SAP y entidades sin &aacute;nimo de lucro.</p>
+                    <p>En 2018, 2,7&nbsp;millones de personas de m&aacute;s de setenta pa&iacute;ses de todo el mundo participaron en la Semana de la Programaci&oacute;n de la UE. Otros 2,3&nbsp;millones de j&oacute;venes participaron en la <a href="http://africacodeweek.org/">Semana de la Programaci&oacute;n de &Aacute;frica</a>, que es una iniciativa semilla organizada por SAP y entidades sin &aacute;nimo de lucro.</p>
 
                     <p>Si tu pa&iacute;s no participa todav&iacute;a, puedes organizar actividades y ponerlas en el <a href="/events">mapa</a> o <a href="mailto:info@codeweek.eu">presentarte voluntario</a> como embajador de la Semana de la Programaci&oacute;n.</p>
 
