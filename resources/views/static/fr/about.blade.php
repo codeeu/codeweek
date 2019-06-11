@@ -51,7 +51,7 @@
 
                     <h2>La Semaine du code en chiffres</h2>
 
-                    <p>En 2017, 1,2&nbsp;million de personnes dans plus de 50&nbsp;pays du monde ont particip&eacute; &agrave; la Semaine europ&eacute;enne du code. Et 1,3&nbsp;million de jeunes ont particip&eacute; &agrave; la <a href="http://africacodeweek.org/">Semaine africaine du code</a>, une initiative satellite organis&eacute;e par SAP et des organisations &agrave; but non lucratif.</p>
+                    <p>En 2018, 2,7&nbsp;million de personnes dans plus de 70&nbsp;pays du monde ont particip&eacute; &agrave; la Semaine europ&eacute;enne du code. Et 2,3&nbsp;million de jeunes ont particip&eacute; &agrave; la <a href="http://africacodeweek.org/">Semaine africaine du code</a>, une initiative satellite organis&eacute;e par SAP et des organisations &agrave; but non lucratif.</p>
 
                     <p>Si votre pays ne participe pas encore, vous pouvez organiser des activit&eacute;s et les ajouter &agrave; la <a href="/events">carte</a>, ou vous porter <a href="mailto:info@codeweek.eu">volontaire</a> en tant qu&rsquo;ambassadeur Code Week.</p>
 

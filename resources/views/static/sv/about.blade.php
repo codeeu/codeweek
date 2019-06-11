@@ -51,7 +51,7 @@
 
                     <h2>Code Week i siffror</h2>
 
-                    <p>&Aring;r 2017 deltog 1,2 miljoner personer i &ouml;ver 50 l&auml;nder v&auml;rlden runt i EU Code Week. Ytterligare 1,3 miljoner ungdomar var involverade i <a href="http://africacodeweek.org/">Africa Code Week</a>, ett systerinitiativ som drivs av SAP och icke-vinstdrivande organisationer.</p>
+                    <p>&Aring;r 2018 deltog 2,7 miljoner personer i &ouml;ver 70 l&auml;nder v&auml;rlden runt i EU Code Week. Ytterligare 2,3 miljoner ungdomar var involverade i <a href="http://africacodeweek.org/">Africa Code Week</a>, ett systerinitiativ som drivs av SAP och icke-vinstdrivande organisationer.</p>
 
                     <p>Om ditt land inte deltar &auml;nnu kan du organisera en aktivitet och l&auml;gga upp den p&aring; <a href="/events">kartan</a> eller bli <a href="mailto:info@codeweek.eu">frivillig</a> ambassad&ouml;r f&ouml;r Code Week.</p>
 

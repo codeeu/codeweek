@@ -51,7 +51,7 @@
 
                     <h2>Koodausviikko lukuina</h2>
 
-                    <p>Vuonna 2017 EU:n koodausviikkoon osallistui 1,2 ihmist&auml; yli 50 maassa ymp&auml;ri maailmaa. Lis&auml;ksi 1,3 miljoonaa nuorta osallistui EU:n koodausviikon mallin mukaan j&auml;rjestettyyn <a href="http://africacodeweek.org/">Afrikan koodausviikkoon</a>, josta vastaa SAP yhdess&auml; kansalaisj&auml;rjest&ouml;jen kanssa.</p>
+                    <p>Vuonna 2018 EU:n koodausviikkoon osallistui 2,7 ihmist&auml; yli 70 maassa ymp&auml;ri maailmaa. Lis&auml;ksi 2,3 miljoonaa nuorta osallistui EU:n koodausviikon mallin mukaan j&auml;rjestettyyn <a href="http://africacodeweek.org/">Afrikan koodausviikkoon</a>, josta vastaa SAP yhdess&auml; kansalaisj&auml;rjest&ouml;jen kanssa.</p>
 
                     <p>Vaikka oma maasi ei olisi viel&auml; aloitteessa mukana, voit j&auml;rjest&auml;&auml; tapahtumia ja merkit&auml; ne <a href="/events">karttaan</a> tai voit <a href="mailto:info@codeweek.eu">ilmoittautua vapaaehtoiseksi</a> toimimaan koodausviikkol&auml;hettil&auml;&auml;n&auml;.</p>
 
