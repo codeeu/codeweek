@@ -130,7 +130,9 @@ return [
         'open in person' => 'Offene Veranstaltung',
         'invite in person' => 'Veranstaltung für geladene Gäste'
 
-    ]
+    ],
+
+    'privacy'=>'Ich habe die in diesem Dokument beschriebenen Datenschutzbestimmungen gelesen und bin damit einverstanden'
 
 
 
