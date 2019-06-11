@@ -357,6 +357,7 @@
                         <label>
                             <input id="checkPrivacy" name="privacy" type="checkbox" {{ auth()->user()->privacy === 1 ? 'checked="checked"' : '' }}>
                             @lang('event.privacy')
+                            <a href="/privacy" target="_blank"><i class="fa fa-external-link" style="color: blue;"></i></a>
                         </label>
                         @component('components.validation-errors', ['field'=>'privacy'])
                         @endcomponent
