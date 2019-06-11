@@ -51,7 +51,7 @@
 
                     <h2>Sedmica kodiranja u ciframa</h2>
 
-                    <p>U Sedmici kodiranja EU 2017. učestvovalo je 1,2 miliona ljudi iz preko 50 zemalja &scaron;irom svijeta. Dodatnih 1,3 miliona mladih ljudi bilo je angažirano u <a href="http://africacodeweek.org/">Sedmici kodiranja u Africi</a>, koja predstavlja srodnu inicijativu koju vode SAP i neprofitne organizacije.</p>
+                    <p>U Sedmici kodiranja EU 2018. učestvovalo je 2,7 miliona ljudi iz preko 70 zemalja &scaron;irom svijeta. Dodatnih 2,3 miliona mladih ljudi bilo je angažirano u <a href="http://africacodeweek.org/">Sedmici kodiranja u Africi</a>, koja predstavlja srodnu inicijativu koju vode SAP i neprofitne organizacije.</p>
 
                     <p>Ako va&scaron;a zemlja jo&scaron; uvijek nije angažirana, vi možete organizirati događaje i staviti je na <a href="/events">mapu</a> ili <a href="mailto:info@codeweek.eu">volontirati</a> kao ambasador Sedmice kodiranja.</p>
 

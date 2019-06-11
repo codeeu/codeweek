@@ -84,7 +84,7 @@
                     </h2>
 
                     <p>
-                        In 2017, 1.2 million people in more than 50 countries around the world took part in EU Code Week. An additional 1.3 million young people were engaged in <a href="http://africacodeweek.org/">Africa Code Week</a>, which is a spin-off initiative run by SAP and non-for profit organisations.
+                        In 2018, 2,7 million people in more than 70 countries around the world took part in EU Code Week. An additional 2,3 million young people were engaged in <a href="http://africacodeweek.org/">Africa Code Week</a>, which is a spin-off initiative run by SAP and non-for profit organisations.
                     </p>
 
                     <p>
