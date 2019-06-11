@@ -68,7 +68,9 @@
 
                     <label>
                         <input type="checkbox" name="privacy" value="1" {{ auth()->user()->privacy === 1 ? 'checked="checked"' : '' }}>
-                        I have read and agree with the Privacy Policy terms described on this <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/privacy+statement+contact+points-CodeWeekFINAL.pdf">document</a>.</label>
+                        I have read and agree with the Privacy Policy terms described on this document.
+                        <a href="/privacy" target="_blank"><i class="fa fa-external-link" style="color: blue;"></i></a>
+                    </label>
                 </p>
 
 
