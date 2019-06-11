@@ -51,7 +51,7 @@
 
                     <h2>A programoz&aacute;si h&eacute;t sz&aacute;mokban</h2>
 
-                    <p>2017-ban t&ouml;bb mint 50 orsz&aacute;gban 1,2 milli&oacute; ember vett r&eacute;szt az eur&oacute;pai programoz&aacute;si h&eacute;ten. Ezenk&iacute;v&uuml;l 1,3 milli&oacute; fiatal vett r&eacute;szt az <a href="http://africacodeweek.org/">afrikai programoz&aacute;si h&eacute;t</a> rendezv&eacute;nyeiben, amely az SAP &eacute;s nonprofit szervezetek spin-off kezdem&eacute;nyez&eacute;se.</p>
+                    <p>2018-ban t&ouml;bb mint 70 orsz&aacute;gban 2,7 milli&oacute; ember vett r&eacute;szt az eur&oacute;pai programoz&aacute;si h&eacute;ten. Ezenk&iacute;v&uuml;l 2,3 milli&oacute; fiatal vett r&eacute;szt az <a href="http://africacodeweek.org/">afrikai programoz&aacute;si h&eacute;t</a> rendezv&eacute;nyeiben, amely az SAP &eacute;s nonprofit szervezetek spin-off kezdem&eacute;nyez&eacute;se.</p>
 
                     <p>Ha az orsz&aacute;ga m&eacute;g nem vesz r&eacute;szt a kezdem&eacute;nyez&eacute;sben, szervezzen tev&eacute;kenys&eacute;geket, &eacute;s tegye fel őket a <a href="/events">t&eacute;rk&eacute;pre</a>, vagy jelentkezzen <a href="mailto:info@codeweek.eu">&ouml;nk&eacute;ntesnek</a>, &eacute;s legyen a programoz&aacute;si h&eacute;t nagyk&ouml;vete.</p>
 

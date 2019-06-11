@@ -51,7 +51,7 @@
 
                     <h2>Semana da Programa&ccedil;&atilde;o em n&uacute;meros</h2>
 
-                    <p>Em 2017, 1,2&nbsp;milh&otilde;es de pessoas em mais de 50&nbsp;pa&iacute;ses de todo o mundo participaram na Semana Europeia da Programa&ccedil;&atilde;o. Mais 1,3&nbsp;milh&otilde;es de jovens participaram na <a href="http://africacodeweek.org/">Semana Africana da Programa&ccedil;&atilde;o</a>, uma iniciativa derivada da SAP e de organiza&ccedil;&otilde;es sem fins lucrativos.</p>
+                    <p>Em 2018, 2,7&nbsp;milh&otilde;es de pessoas em mais de 70&nbsp;pa&iacute;ses de todo o mundo participaram na Semana Europeia da Programa&ccedil;&atilde;o. Mais 2,3&nbsp;milh&otilde;es de jovens participaram na <a href="http://africacodeweek.org/">Semana Africana da Programa&ccedil;&atilde;o</a>, uma iniciativa derivada da SAP e de organiza&ccedil;&otilde;es sem fins lucrativos.</p>
 
                     <p>Se o seu pa&iacute;s ainda n&atilde;o for participante, pode organizar atividades e coloc&aacute;-las no <a href="/events">mapa</a> ou oferecer-se como <a href="mailto:info@codeweek.eu">volunt&aacute;rio</a> para a miss&atilde;o de embaixador da Semana da Programa&ccedil;&atilde;o.</p>
 

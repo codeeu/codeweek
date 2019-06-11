@@ -51,7 +51,7 @@
 
                     <h2>T&yacute;ždeň programovania v&nbsp;č&iacute;slach</h2>
 
-                    <p>V&nbsp;roku 2017 sa do Eur&oacute;pskeho t&yacute;ždňa programovania zapojilo 1,2&nbsp;mili&oacute;na ľud&iacute; vo viac ako 50&nbsp;krajin&aacute;ch na celom svete. Ďal&scaron;&iacute;ch 1,3&nbsp;mili&oacute;na mlad&yacute;ch ľud&iacute; sa zapojilo do <a href="http://africacodeweek.org/">Africk&eacute;ho t&yacute;ždňa programovania</a>, čo je pridružen&aacute; iniciat&iacute;va, ktor&uacute; organizuj&uacute; SAP a neziskov&eacute; organiz&aacute;cie.</p>
+                    <p>V&nbsp;roku 2018 sa do Eur&oacute;pskeho t&yacute;ždňa programovania zapojilo 2,7&nbsp;mili&oacute;na ľud&iacute; vo viac ako 70&nbsp;krajin&aacute;ch na celom svete. Ďal&scaron;&iacute;ch 2,3&nbsp;mili&oacute;na mlad&yacute;ch ľud&iacute; sa zapojilo do <a href="http://africacodeweek.org/">Africk&eacute;ho t&yacute;ždňa programovania</a>, čo je pridružen&aacute; iniciat&iacute;va, ktor&uacute; organizuj&uacute; SAP a neziskov&eacute; organiz&aacute;cie.</p>
 
                     <p>Ak sa va&scaron;a krajina e&scaron;te nezapojila, m&ocirc;žete usporiadať aktivity a zaznamenať ich na <a href="/events">mape</a> alebo sa m&ocirc;žete <a href="mailto:info@codeweek.eu">prihl&aacute;siť ako dobrovoľn&iacute;k</a> a stať sa veľvyslancom T&yacute;ždňa programovania.</p>
 

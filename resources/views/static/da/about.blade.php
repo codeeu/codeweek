@@ -51,7 +51,7 @@
 
                     <h2>Kodeugen i tal</h2>
 
-                    <p>I 2017 deltog 1,2&nbsp;millioner mennesker i over 50&nbsp;lande i hele verden i EU&rsquo;s kodeuge. Desuden deltog 1,3&nbsp;millioner unge i <a href="http://africacodeweek.org/">Afrikas kodeuge</a>, som er et spin-off-initiativ, der drives af SAP og nonprofitorganisationer.</p>
+                    <p>I 2018 deltog 2,7&nbsp;millioner mennesker i over 70&nbsp;lande i hele verden i EU&rsquo;s kodeuge. Desuden deltog 2,3&nbsp;millioner unge i <a href="http://africacodeweek.org/">Afrikas kodeuge</a>, som er et spin-off-initiativ, der drives af SAP og nonprofitorganisationer.</p>
 
                     <p>Hvis dit land endnu ikke er involveret, kan du afholde aktiviteter og s&aelig;tte dem p&aring; <a href="/events">kortet</a> eller deltage som <a href="mailto:info@codeweek.eu">frivillig</a> ambassad&oslash;r for kodeugen.</p>
 

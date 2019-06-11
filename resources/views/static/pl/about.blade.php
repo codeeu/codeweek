@@ -51,7 +51,7 @@
 
                     <h2>Tydzień Kodowania w liczbach</h2>
 
-                    <p>W 2017 roku w wydarzeniach Tygodnia Kodowania wzięło udział 1,2&nbsp;miliona uczestnik&oacute;w mieszkających w ponad 50&nbsp;krajach na całym świecie. Dodatkowe 1,3&nbsp;miliona młodych os&oacute;b zaangażowało się w wydarzenia związane z poboczną inicjatywą <a href="http://africacodeweek.org/">Africa Code Week</a> prowadzoną przez firmę SAP i organizacje non-profit.</p>
+                    <p>W 2018 roku w wydarzeniach Tygodnia Kodowania wzięło udział 2,7&nbsp;miliona uczestnik&oacute;w mieszkających w ponad 70&nbsp;krajach na całym świecie. Dodatkowe 2,3&nbsp;miliona młodych os&oacute;b zaangażowało się w wydarzenia związane z poboczną inicjatywą <a href="http://africacodeweek.org/">Africa Code Week</a> prowadzoną przez firmę SAP i organizacje non-profit.</p>
 
                     <p>Jeśli w twoim kraju nie odbywają się żadne wydarzenia, możesz zorganizować je samodzielnie i umieścić je na <a href="/events">mapie</a> lub <a href="mailto:info@codeweek.eu">zgłosić swoją kandydaturę</a> i zostać Ambasadorem Tygodnia Kodowania.</p>
 
