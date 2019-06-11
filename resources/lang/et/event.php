@@ -130,8 +130,8 @@ return [
         'open in person' => 'Avalik-isiklik tegevus',
         'invite in person' => 'Privaatkutsega tegevus'
 
-    ]
-
+    ],
+    'privacy'=>'Ma olen lugenud ja nõustun antud dokumendis kirjeldatud Privaatsuspoliitikaga.'
 
 
 

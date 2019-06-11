@@ -130,8 +130,8 @@ return [
         'open in person' => 'Klātienes aktivitāte',
         'invite in person' => 'Klātienes aktivitāte, kurā dalība ar ielūgumiem'
 
-    ]
-
+    ],
+    'privacy'=>'Es izlasīju un piekrītu privātuma noteikumiem un nosacījumiem kuri minēti šajā dokumentā.'
 
 
 

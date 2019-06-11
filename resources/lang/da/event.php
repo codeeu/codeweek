@@ -130,7 +130,9 @@ return [
         'open in person' => 'Åben personlig aktivitet',
         'invite in person' => 'Personlig aktivitet for inviterede'
 
-    ]
+    ],
+
+    'privacy'=>'Jeg har læst og accepteret de retningslinjer for beskyttelse af personlige oplysninger, der er beskrevet i dette dokument.'
 
 
 ];

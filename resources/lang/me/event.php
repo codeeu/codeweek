@@ -131,7 +131,7 @@ return [
         'invite in person' => 'Aktivnost po pozivu'
 
     ],
-
+    'privacy'=>'Pročitao-la sam i prihvatam uslove u vezi s pravilima o privatnosti opisanih u ovom dokumentu.'
 
 
 

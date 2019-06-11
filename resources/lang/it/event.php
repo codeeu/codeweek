@@ -130,8 +130,8 @@ return [
         'open in person' => 'Attività presenziale aperta',
         'invite in person' => 'Attività presenziale privata'
 
-    ]
-
+    ],
+    'privacy'=>'Dichiaro di aver letto e accetto l\'informativa sulla privacy descritta nel documento'
 
 
 

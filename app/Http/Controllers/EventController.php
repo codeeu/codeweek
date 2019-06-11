@@ -113,6 +113,12 @@ class EventController extends Controller
     {
 
 
+        $user = auth()->user();
+
+        $user->privacy = true;
+
+        $user->save();
+
         $event = EventsQuery::store($request);
 
         $event->notifyAmbassadors();
