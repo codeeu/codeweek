@@ -130,7 +130,9 @@ return [
         'open in person' => 'Aktivnost slobodnog učešća',
         'invite in person' => 'Aktivnost po pozivu'
 
-    ]
+    ],
+
+    'privacy'=>'Pročitao-la sam i slažem se sa uslovima politike privatnosti opisanih u ovom dokumentu.'
 
 
 

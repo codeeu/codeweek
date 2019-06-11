@@ -130,8 +130,8 @@ return [
         'open in person' => 'Activité hors-ligne',
         'invite in person' => 'Activité hors-ligne privée'
 
-    ]
-
+    ],
+    'privacy'=>'J\'ai lu et j\'accepte les conditions de la politique de confidentialité décrites dans ce document'
 
 
 

@@ -142,8 +142,8 @@ return [
     ],
 
     'More'=>'More',
-    'country'=>'Country'
-
+    'country'=>'Country',
+    'privacy'=>'I have read and agree with the privacy policy terms described in this document.'
 
 
 ];

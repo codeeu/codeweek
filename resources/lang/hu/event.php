@@ -130,8 +130,8 @@ return [
         'open in person' => 'Nyilt személyes (offline) tevékenység',
         'invite in person' => 'Csak meghívottaknak szóló személyes (offline) tevékenység'
 
-    ]
-
+    ],
+    'privacy'=>'Elolvastam és elfogadom a jelen dokumentumban ismertetett adatvédelmi feltételeket.'
 
 
 
