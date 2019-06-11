@@ -14,26 +14,26 @@
 use Illuminate\Http\Request;
 
 
-Route::domain('{subdomain}.'.Config::get('app.url'))->group(function () {
+Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
 
     Route::get('/', function ($subdomain) {
 
-        return redirect(Config::get('app.url').'/'.$subdomain);
+        return redirect(Config::get('app.url') . '/' . $subdomain);
     });
 });
 
 
-
-
-
 Route::get('setlocale', function (Request $request) {
 
+
     $locale = $request->input('locale');
+
     if (in_array($locale, config('app.locales'))) {
         session(['locale' => $locale]);
-
+        session(['force_lang' => true]);
     }
-    return redirect()->back();
+    return back();
+
 })->name("setlocale");
 
 
@@ -56,8 +56,6 @@ Route::get('/training/making-robotics-and-tinkering-in-the-classroom', 'StaticPa
 Route::get('/training/developing-creative-thinking-through-mobile-app-development', 'StaticPageController@index')->name('training.module-6');
 Route::get('/training/tinkering-and-making', 'StaticPageController@index')->name('training.module-7');
 Route::get('/training/coding-for-all-subjects', 'StaticPageController@index')->name('training.module-8');
-
-
 
 
 Route::get('/events', 'SearchController@search')->name('events_map');
