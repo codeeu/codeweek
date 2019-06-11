@@ -15,6 +15,7 @@ class UpdateEventTest extends TestCase
     function event_can_be_updated_by_its_owner()
     {
 
+
         $this->signIn();
 
         $event = make('App\Event');
@@ -24,6 +25,7 @@ class UpdateEventTest extends TestCase
         $event->theme = "1";
         $event->tags = "tag:foo,tag:bar";
         $event->audience = "2, 3";
+        $event->privacy = true;
 
         $this->post('/events', $event->toArray());
 
@@ -37,6 +39,7 @@ class UpdateEventTest extends TestCase
         $event->theme = "1,2";
         $event->audience = "1,2,3";
         $event->tags = "foo,bar,joe";
+        $event->privacy = true;
 
         $this->patch('/events/' . $event->id, $event->toArray());
 
@@ -66,6 +69,7 @@ class UpdateEventTest extends TestCase
         $event->theme = "1";
         $event->tags = "tag:foo,tag:bar";
         $event->audience = "2, 3";
+        $event->privacy = true;
 
         $this->post('/events', $event->toArray());
 
@@ -83,6 +87,7 @@ class UpdateEventTest extends TestCase
         $event->theme = "1,2";
         $event->audience = "1,2,3";
         $event->tags = "foo,bar,joe";
+        $event->privacy = true;
 
         $this->patch('/events/' . $event->id, $event->toArray())->assertStatus(403);
 
