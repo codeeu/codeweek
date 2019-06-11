@@ -42,6 +42,7 @@
                 :categories="{{ $categories }}"
                 :subjects="{{ $subjects }}"
                 :types="{{ $types }}"
+                :locale="'{{App::getLocale()}}'"
         ></resource-form>
 
 
