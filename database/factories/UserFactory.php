@@ -31,7 +31,8 @@ $factory->define(App\User::class, function (Faker $faker) {
         'website'=>$faker->url,
         'bio'=>$faker->text,
         'avatar_path'=>'avatars/default.png',
-        'provider'=>$faker->randomElement(['facebook','google','github'])
+        'provider'=>$faker->randomElement(['facebook','google','github']),
+        'privacy'=>true
 
     ];
 });
