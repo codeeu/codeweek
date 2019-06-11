@@ -351,6 +351,19 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="form-group @if($errors->has('privacy')) has-error @endif">
+                    <div class="col-sm-9">
+                        <label>
+                            <input id="checkPrivacy" name="privacy" type="checkbox" {{ auth()->user()->privacy === 1 ? 'checked="checked"' : '' }}>
+                            @lang('event.privacy')
+                            <a href="/privacy" target="_blank"><i class="fa fa-external-link" style="color: blue;"></i></a>
+                        </label>
+                        @component('components.validation-errors', ['field'=>'privacy'])
+                        @endcomponent
+                    </div>
+                </div>
+
                 <div class="col-md-6 first">
                     <div class="col-sm-9 col-sm-offset-3">
                         <div class="btn btn-primary btn-directional fa-plus-circle btn-lg submit-button-wrapper" id="add-div">

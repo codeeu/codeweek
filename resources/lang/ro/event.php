@@ -130,8 +130,8 @@ return [
         'open in person' => 'Activitate off-line',
         'invite in person' => 'Activitate off-line privată'
 
-    ]
-
+    ],
+    'privacy'=>'Am citit şi sunt de acord cu termenii politicii de confidenţialitate descrişi în acest document.'
 
 
 ];

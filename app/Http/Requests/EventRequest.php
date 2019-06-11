@@ -36,7 +36,7 @@ class EventRequest extends FormRequest
             'country_iso' => 'required',
             'user_email' => 'required',
             'organizer_type' => 'required',
-
+            'privacy' => 'required'
 
         ];
     }

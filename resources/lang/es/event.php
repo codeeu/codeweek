@@ -130,8 +130,8 @@ return [
         'open in person' => 'Actividad presencial abierta',
         'invite in person' => 'Actividad presencial privada'
 
-    ]
-
+    ],
+    'privacy'=>'He leído y estoy de acuerdo con los términos descritos en la política de privacidad descrita en el presente documento.'
 
 
 

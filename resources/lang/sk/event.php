@@ -130,8 +130,8 @@ return [
         'open in person' => 'Verejná osobné aktivita',
         'invite in person' => 'Privátne osobné aktivita'
 
-    ]
-
+    ],
+    'privacy'=>'Prečítal(-a) som si a súhlasím s podmienkami ochrany osobných údajov popísanými v tomto dokumente'
 
 
 
