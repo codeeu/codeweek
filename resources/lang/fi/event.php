@@ -130,8 +130,8 @@ return [
         'open in person' => 'Avoin toiminta',
         'invite in person' => 'Toiminta vain kutsutuille'
 
-    ]
-
+    ],
+    'privacy'=>'Olen lukenut ja hyväksyn tätä asiakirjaa koskevat tietosuojaperiaatteet'
 
 
 

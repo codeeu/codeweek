@@ -131,7 +131,9 @@ Ambasadorët e EU Code Week dhe organizatorët e Code Week të cilët do të kon
         'open in person' => 'Aktivitet i hapur me prani fizike',
         'invite in person' => 'Aktivitet me ftesë për prani fizike'
 
-    ]
+    ],
+
+    'privacy'=>'Kam lexuar dhe pranuar termet e politikës së privatësisë, të përshkruara në këtë dokument.'
 
 
 

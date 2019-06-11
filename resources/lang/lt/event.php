@@ -130,8 +130,8 @@ return [
         'open in person' => 'Atviras renginys/užsiėmimas (realybėje, ne internetu)',
         'invite in person' => 'Uždaras renginys/užsiėmimas (realybėje, ne internetu)'
 
-    ]
-
+    ],
+    'privacy'=>'Perskaičiau ir sutinku su šiame dokumente aprašyta privatumo politika.'
 
 
 

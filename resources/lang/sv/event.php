@@ -130,8 +130,8 @@ return [
         'open in person' => 'Aktivitet för alla besökare',
         'invite in person' => 'Aktivitet för inbjudna besökare'
 
-    ]
-
+    ],
+    'privacy'=>'Jag har läst och godkänner integritetspolicyn som beskrivs i detta dokument.'
 
 
 

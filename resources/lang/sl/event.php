@@ -130,7 +130,8 @@ return [
         'open in person' => 'Odprta dejavnost izven spleta',
         'invite in person' => 'Dejavnost izven spleta s povabilom'
 
-    ]
+    ],
+    'privacy'=>'Prebral sem in se strinjam s pogoji o zasebnosti, ki so navedeni v tem dokumentu.'
 
 
 
