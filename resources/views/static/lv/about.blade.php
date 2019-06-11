@@ -51,7 +51,7 @@
 
                     <h2>Programmē&scaron;anas nedēļa skaitļos</h2>
 
-                    <p>2017.&nbsp;gadā ES programmē&scaron;anas nedēļā piedalījās 1,2 miljoni cilvēku vairāk nekā 50 pasaules valstīs. Vēl 1,3 miljoni jaunie&scaron;u piedalījās <a href="http://africacodeweek.org/">Āfrikas programmē&scaron;anas nedēļā</a>, kas ir saistīta iniciatīva, kuru vada SAP un bezpeļņas organizācijas.</p>
+                    <p>2018.&nbsp;gadā ES programmē&scaron;anas nedēļā piedalījās 2,7 miljoni cilvēku vairāk nekā 70 pasaules valstīs. Vēl 2,3 miljoni jaunie&scaron;u piedalījās <a href="http://africacodeweek.org/">Āfrikas programmē&scaron;anas nedēļā</a>, kas ir saistīta iniciatīva, kuru vada SAP un bezpeļņas organizācijas.</p>
 
                     <p>Ja tava valsts vēl nav iesaistījusies, tu vari organizēt pasākumus un pievienot tos <a href="/events">kartē</a> vai kļūt par <a href="mailto:info@codeweek.eu">brīvprātīgo</a>, darbojoties kā programmē&scaron;anas nedēļas vēstnieks.</p>
 

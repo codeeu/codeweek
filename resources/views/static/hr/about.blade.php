@@ -51,7 +51,7 @@
 
                     <h2>Tjedan programiranja u brojkama</h2>
 
-                    <p>Godine 2017. Europski tjedan programiranja okupio je 1,2 milijuna ljudi u vi&scaron;e od 50 zemalja diljem svijeta. Dodatnih 1,3 milijuna ljudi bilo je uključeno u <a href="http://africacodeweek.org/">Afrički tjedan programiranja</a>, inicijativu koja se razvila iz Europskog tjedna programiranja te koju vode SAP i neprofitne organizacije.</p>
+                    <p>Godine 2018. Europski tjedan programiranja okupio je 2,7 milijuna ljudi u vi&scaron;e od 70 zemalja diljem svijeta. Dodatnih 2,3 milijuna ljudi bilo je uključeno u <a href="http://africacodeweek.org/">Afrički tjedan programiranja</a>, inicijativu koja se razvila iz Europskog tjedna programiranja te koju vode SAP i neprofitne organizacije.</p>
 
                     <p>Ako va&scaron;a zemlja jo&scaron; nije uključena, možete organizirati aktivnosti i unijeti ih na <a href="/events">kartu</a> ili možete <a href="mailto:info@codeweek.eu">volontirati</a> kao ambasador Tjedna programiranja.</p>
 

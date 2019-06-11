@@ -100,8 +100,8 @@
 
                     <h2>Code Week n&euml; shifra</h2>
 
-                    <p>N&euml; vitin 2017, 1,2 milion&euml; persona n&euml; m&euml; shum&euml; se 50 vende n&euml; mbar&euml;
-                        bot&euml;n mor&euml;n pjes&euml; n&euml; EU Code Week. Edhe 1,3 milion&euml; t&euml; rinj t&euml;
+                    <p>N&euml; vitin 2018, 2,7 milion&euml; persona n&euml; m&euml; shum&euml; se 70 vende n&euml; mbar&euml;
+                        bot&euml;n mor&euml;n pjes&euml; n&euml; EU Code Week. Edhe 2,3 milion&euml; t&euml; rinj t&euml;
                         tjer&euml; u p&euml;rfshin&euml; n&euml; <a href="http://africacodeweek.org/">Africa Code
                             Week</a>, q&euml; &euml;sht&euml; nj&euml; nism&euml; bij&euml;, e drejtuar nga SAP dhe
                         organizata jofitimprur&euml;se.</p>

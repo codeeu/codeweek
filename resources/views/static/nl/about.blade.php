@@ -51,7 +51,7 @@
 
                     <h2>De programmeerweek in cijfers</h2>
 
-                    <p>In 2017 deden 1,2&nbsp;miljoen mensen in meer dan 50&nbsp;landen over de hele wereld mee aan de EU-programmeerweek. Nog eens 1,3 miljoen jongeren waren betrokken bij de <a href="http://africacodeweek.org/">Africa Code Week</a>, een door SAP en non-profitorganisaties georganiseerde spin-off.</p>
+                    <p>In 2018 deden 2,7&nbsp;miljoen mensen in meer dan 70&nbsp;landen over de hele wereld mee aan de EU-programmeerweek. Nog eens 2,3 miljoen jongeren waren betrokken bij de <a href="http://africacodeweek.org/">Africa Code Week</a>, een door SAP en non-profitorganisaties georganiseerde spin-off.</p>
 
                     <p>Als jouw land nog niet meedoet, kun je zelf activiteiten organiseren en die op de <a href="/events">kaart</a> zetten of als <a href="mailto:info@codeweek.eu">vrijwilliger</a> ambassadeur van de programmeerweek worden.</p>
 
