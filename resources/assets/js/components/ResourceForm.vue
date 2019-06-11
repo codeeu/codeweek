@@ -149,7 +149,8 @@
             categories: Array,
             subjects: Array,
             types: Array,
-            section: String
+            section: String,
+            locale: String
         },
         data() {
             return {
@@ -175,7 +176,7 @@
         computed: {
             searchQuery: function () {
 
-                let result = window.location.hostname + "/resources/"+this.section+"?1=1";
+                let result = window.location.hostname + "/resources/"+this.section+"?lang=" + this.locale;
 
                 if (this.searchInput) {
                     result += "&q=" + this.searchInput;
