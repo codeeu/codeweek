@@ -29,6 +29,7 @@ class CreateEventTest extends TestCase
     /** @test */
     public function an_authenticated_user_can_create_events()
     {
+        //$this->withoutExceptionHandling();
         $this->signIn();
 
         $event = make('App\Event');
@@ -38,6 +39,7 @@ class CreateEventTest extends TestCase
         $event->theme = "1";
         $event->tags = "tag:foo,tag:bar";
         $event->audience = "2, 3";
+        $event->privacy = true;
 
         $this->post('/events', $event->toArray());
 
@@ -61,6 +63,8 @@ class CreateEventTest extends TestCase
         $event->theme = "1";
 
         $event->audience = "2, 3";
+
+        $event->privacy = true;
 
         $event->codeweek_for_all_participation_code="my_custom_code";
 
@@ -110,6 +114,7 @@ class CreateEventTest extends TestCase
         $event->theme = "1";
         $event->tags = "tag:foo,tag:bar";
         $event->audience = "2, 3";
+        $event->privacy = true;
 
         $this->post('/events', $event->toArray());
 

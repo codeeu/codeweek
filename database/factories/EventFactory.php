@@ -41,5 +41,6 @@ $longitude = $faker->longitude(-4,12);
         'report_notifications_count' => 0,
         'name_for_certificate' => $faker->name,
         'organizer_type' => $faker->randomElement($orgtypes)
+
     ];
 });
