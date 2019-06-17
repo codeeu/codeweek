@@ -181,6 +181,12 @@
                                         @lang('menu.report')
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="/participation">
+                                        <i class="fa fa-copy"></i>
+                                        @lang('menu.participation')
+                                    </a>
+                                </li>
 
                                 @role('super admin')
                                 <li>
