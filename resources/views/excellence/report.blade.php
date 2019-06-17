@@ -30,7 +30,7 @@
                       action="/certificates/excellence/{{$edition}}">
                     {{csrf_field()}}
 
-                    @component('components.report.form-field-simple',['field_name'=>'name_for_certificate','type'=>'text','required'=>true,'help'=>'name_for_certificate.help'])@endcomponent
+                    @component('components.report.form-field-simple',['section'=>'report','field_name'=>'name_for_certificate','type'=>'text','required'=>true,'help'=>'name_for_certificate.help'])@endcomponent
 
 
 

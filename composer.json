@@ -29,7 +29,8 @@
         "spatie/laravel-activitylog": "^3.0",
         "spatie/laravel-permission": "^2.9",
         "torann/geoip": "^1.0",
-        "unicodeveloper/laravel-identify": "^1.7"
+        "unicodeveloper/laravel-identify": "^1.7",
+      "ext-zip": "*"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.4",
