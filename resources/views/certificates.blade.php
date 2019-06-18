@@ -9,10 +9,39 @@
             <h1 style="display: inline-block;">@lang('certificates.certificates_for'){{ Auth::user()->fullName }}</h1>
             <hr>
 
-            @if($reported_events->isEmpty() && $excellence->isEmpty())
+            @if($reported_events->isEmpty() && $excellence->isEmpty() && $participation->isEmpty())
                 <div class="row">
                     <p>@lang('certificates.no_certificates')</p>
                 </div>
+            @endif
+
+            @if(!$participation->isEmpty())
+                <table class="table table-striped table-hover">
+                    <thead class="bg-orange-light text-white">
+                    <tr>
+                        <th scope="col">@lang('event.title.label')</th>
+                        <th scope="col">Date</th>
+                        <th scope="col"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach($participation as $certificate_of_participation)
+
+
+                        @if(!is_null($certificate_of_participation->event_name))
+                            <tr>
+
+                                <td width="*" scope="row">{{$certificate_of_participation->event_name}}</td>
+                                <td>{{$certificate_of_participation->event_date}}</td>
+                                <td><a title="Download your certificate" href="{{$certificate_of_participation->participation_url}}"><i
+                                                class="fa fa-download" aria-hidden="true"></i></a></td>
+                            </tr>
+                        @endif
+
+
+                    @endforeach
+                    </tbody>
+                </table>
             @endif
 
             @if(!$excellence->isEmpty())

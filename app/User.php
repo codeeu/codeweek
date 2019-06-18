@@ -92,6 +92,11 @@ class User extends Authenticatable
         return $this->hasMany('App\Excellence');
     }
 
+    public function participations()
+    {
+        return $this->hasMany('App\Participation');
+    }
+
     public function scopeFilter($query, UserFilters $filters)
     {
         return $filters->apply($query);

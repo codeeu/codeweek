@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use App\CertificateParticipation;
 
 
+use App\Participation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -60,6 +61,8 @@ class ParticipationController extends Controller
 
         Storage::disk('latex')->delete($zipname);
 
+
+
         return Storage::disk('s3')->url('participation/' . $zipname);
 
 
@@ -71,16 +74,28 @@ class ParticipationController extends Controller
 
         $this->validate($request, [
             'names' => 'required',
-            'event_name' => 'required',
-            'event_date' => 'required'
+            'event_name' => 'required|max:50',
+            'event_date' => 'required|max:20'
         ]);
+
+        $participation = new Participation([
+                "user_id" => auth()->id(),
+                "names" => $request["names"],
+                "event_name" => $request["event_name"],
+                "event_date" => $request["event_date"]
+            ]
+        );
 
 
         $names = array_map('trim', explode(',', $request["names"]));
 
         $zipUrl = $this->doGenerate($names, $request["event_name"], $request["event_date"]);
 
-        return $zipUrl;
+        $participation["participation_url"] = $zipUrl;
+
+        $participation->save();
+
+        return redirect()->route('certificates');
         /*$certificate_url = (new CertificateExcellence($edition, $name))->generate();
 
         ExcellenceQuery::byYear($edition)
