@@ -8,9 +8,12 @@ use Log;
 use Illuminate\Support\Facades\Storage;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
+use App\Traits\LanguageDetection;
 
 class Certificate
 {
+
+    use LanguageDetection;
 
     private $templateName = "template.tex";
 
@@ -45,6 +48,10 @@ class Certificate
 
     }
 
+    public function is_greek(){
+        return $this->is_greek_text($this->name_of_certificate_holder);
+    }
+
     private function clean_temp_files()
     {
         Storage::disk('latex')->delete($this->event->id . ".aux");
@@ -53,19 +60,7 @@ class Certificate
         Storage::disk('latex')->delete($this->event->id . ".log");
     }
 
-    public function is_greek()
-    {
 
-        $split = preg_split('/[\p{Greek}]/u', $this->name_of_certificate_holder);
-        if (count($split) > 1) {
-            Log::info("Detected as Greek: " . $this->name_of_certificate_holder);
-            return true;
-        }
-
-        return false;
-
-
-    }
 
     private function tex_escape($string)
     {
