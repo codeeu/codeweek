@@ -7,13 +7,14 @@ use Carbon\Carbon;
 use Illuminate\Support\Str;
 use Log;
 use Illuminate\Support\Facades\Storage;
-use Spatie\Activitylog\Traits\LogsActivity;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
+use App\Traits\LanguageDetection;
 
 class CertificateParticipation
 {
 
+    use LanguageDetection;
     private $templateName = "participation.tex";
 
     private $name_of_certificate_holder;
@@ -31,7 +32,12 @@ class CertificateParticipation
         $this->event_name = $event_name;
         $this->event_date = $event_date;
 
-        $random = Str::kebab($this->name_of_certificate_holder) . "-" . Str::random(10);
+        if ($this->is_greek_text($this->name_of_certificate_holder)){
+            $random = Str::random(10);
+        } else {
+            $random = Str::kebab($this->name_of_certificate_holder) . "-" . Str::random(10);
+        }
+
         $this->personalized_template_name = $random . "-" . auth()->id();
         $this->resource_path = resource_path() . "/latex";
         $this->pdflatex = env("PDFLATEX_PATH");
@@ -60,19 +66,6 @@ class CertificateParticipation
         Storage::disk('latex')->delete($this->personalized_template_name . ".log");
     }
 
-    public function is_greek()
-    {
-
-        $split = preg_split('/[\p{Greek}]/u', $this->name_of_certificate_holder);
-        if (count($split) > 1) {
-            Log::info("Detected as Greek: " . $this->name_of_certificate_holder);
-            return true;
-        }
-
-        return false;
-
-
-    }
 
     private function tex_escape($string)
     {
@@ -124,7 +117,8 @@ class CertificateParticipation
      */
     protected function customize_and_save_latex()
     {
-        if ($this->is_greek()) $this->templateName = "participation_greek.tex";
+
+        if ($this->is_greek_text($this->event_name) || $this->is_greek_text($this->event_date) || $this->is_greek_text($this->name_of_certificate_holder)) $this->templateName = "participation_greek.tex";
         Log::info($this->templateName);
         //open the latex template
         $base_template = Storage::disk('latex')->get($this->templateName);
@@ -135,7 +129,7 @@ class CertificateParticipation
         $template = str_replace('<EVENT_DATE>', $this->tex_escape($this->event_date), $template);
 
         //save it locally
-        Storage::disk('latex')->put($this->personalized_template_name.".tex", $template);
+        Storage::disk('latex')->put($this->personalized_template_name . ".tex", $template);
     }
 
     protected function run_pdf_creation(): void
