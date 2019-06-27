@@ -67,9 +67,7 @@
                 <h2>Υλικό προώθησης</h2>
                 <p>Μπορείς να χρησιμοποιήσεις οποιοδήποτε τμήμα του ακόλουθου δελτίου τύπου για να προωθήσεις τη δική σου εκδήλωση:</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">Η Ευρωπαϊκή Εβδομάδα Προγραμματισμού γιορτάζει την 5η επέτειό της στις 7-22 Οκτωβρίου. Ετοιμάσου, δήλωσε συμμετοχή και μάθε πώς να δημιουργείς με κώδικα!</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">Νέο ρεκόρ της Ευρωπαϊκής Εβδομάδας Προγραμματισμού: Ένα εκατομμύριο άτομα ασχολήθηκαν με τη συγγραφή κώδικα κατά τη διάρκεια των εκδηλώσεων του 2016</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">Ευρωπαϊκή Εβδομάδα Προγραμματισμού: Δίνοντας πνοή στις ιδέες με την #codeEU</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>Μπορεί επίσης να χρησιμοποιήσεις το <a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">λογότυπο της Ευρωπαϊκής Εβδομάδας Προγραμματισμού</a>, αρκεί η εκδήλωση που διοργανώνεις να ακολουθεί τις κατευθυντήριες γραμμές μας.</p>
 
