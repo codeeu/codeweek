@@ -51,7 +51,7 @@
 
                     <h2>Programavimo savaitė skaičiais</h2>
 
-                    <p>2018&nbsp;m. ES programavimo savaitėje dalyvavo beveik 2,7&nbsp;milijono žmonių i&scaron; daugiau nei 70&nbsp;pasaulio &scaron;alių. Dar 2,3&nbsp;milijono jaunuolių dalyvavo <a href="http://africacodeweek.org/">Afrikos programavimo savaitėje</a>&nbsp;&ndash; pana&scaron;ioje iniciatyvoje, kurią įgyvendina SAP ir ne&nbsp;pelno organizacijos.</p>
+                    <p>2018 m. ES programavimo savaitėje dalyvavo beveik 2,7 milijono žmonių iš daugiau nei 70 pasaulio šalių. Dar 2,3 milijono jaunuolių dalyvavo <a href="http://africacodeweek.org/">Afrikos programavimo savaitėje</a> – panašioje iniciatyvoje, kurią įgyvendina SAP ir ne pelno organizacijos.</p>
 
                     <p>Jei jūsų &scaron;alis dar nedalyvauja, organizuokite savo renginius ir pažymėkite juos <a href="/events">žemėlapyje</a> arba <a href="mailto:info@codeweek.eu">tapkite</a> Programavimo savaitės ambasadoriumi.</p>
 
