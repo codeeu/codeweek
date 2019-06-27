@@ -72,9 +72,7 @@ section>
                 <h2>Tanıtım materyali</h2>
                 <p>Kendi pazarlama faaliyetleriniz i&ccedil;in aşağıdaki basın b&uuml;lteninin herhangi bir b&ouml;l&uuml;m&uuml;n&uuml; kullanabilirsiniz:</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">AB Kod Haftası, 7-22 Ekim tarihlerinde 5. yılını kutluyor, hazırlanın, aramıza katılın ve kodlarla nasıl bir şeyler oluşturabileceğinizi &ouml;ğrenin!</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">Yeni bir AB Kod haftası rekoru: 2016 yılında bir milyon kodlama yapıldı</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">AB Kod Haftası: Fikirleri #codeEU ile hayata ge&ccedil;iriyoruz</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>Planladığınız etkinlik, y&ouml;nergelerimizle uyumlu olduğu s&uuml;rece <a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">Avrupa Kod haftası logosunu</a> kullanabilirsiniz.</p>
 

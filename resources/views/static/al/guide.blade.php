@@ -67,9 +67,7 @@
                 <h2>Materialet promocionale</h2>
                 <p>Ndihuni i lir&euml; t&euml; p&euml;rdorni &ccedil;do pjes&euml; t&euml; njoftimit t&euml; m&euml;posht&euml;m p&euml;r shtyp p&euml;r marketingun tuaj:</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">EU Code Week feston 5 vjetorin e vet n&euml; datat 7-22 tetor &acirc;€&ldquo; b&euml;huni gati, bashkohuni me ne dhe m&euml;soni se si t&euml; krijoni me kod!</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">Rekordi i ri i EU Code Week: Nj&euml; milion vet&euml; koduan gjat&euml; edicionit t&euml; vitit 2016</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">EU Code Week: Sill n&euml; jet&euml; idet&euml; me #codeEU</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>Ju mund t&euml; p&euml;rdorni gjithashtu edhe <a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">logon e Europe Code week</a>, p&euml;r sa koh&euml; q&euml; evenimenti q&euml; planifikoni p&euml;rputhet me direktivat tona.</p>
 

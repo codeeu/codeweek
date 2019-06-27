@@ -67,9 +67,7 @@
                 <h2>Mainosmateriaali</h2>
                 <p>Voit k&auml;ytt&auml;&auml; tapahtumasi markkinoinnissa vapaasti seuraavaa lehdist&ouml;tiedotetta:</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">EU:n koodausviikko viett&auml;&auml; 5-vuotisjuhlaa 7.&ndash;22. lokakuuta &ndash; valmistaudu, osallistu ja opi luomaan koodaamalla!</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">EU:n koodausviikon uusi enn&auml;tys: Vuoden 2016 koodausviikolle osallistui miljoonaa koodaajaa</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">EU:n koodausviikko: Her&auml;t&auml; ideasi eloon #codeEU-koodausviikolla</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>Voit my&ouml;s k&auml;ytt&auml;&auml; <a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">Euroopan koodausviikkologoa</a>, kunhan tapahtumasi on suuntaviivojemme mukainen.</p>
 

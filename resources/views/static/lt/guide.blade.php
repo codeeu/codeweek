@@ -67,9 +67,7 @@
                 <h2>Reklaminė medžiaga</h2>
                 <p>Reklamos tikslais galite nevaržomai naudotis &scaron;iais prane&scaron;imais spaudai ar jų i&scaron;traukomis:</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">ES programavimo savaitė &scaron;venčia 5-ąjį gimtadienį&nbsp;&ndash; ruo&scaron;kitės, dalyvaukite ir sužinokite, kaip kurti programuojant!</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">Naujas ES programavimo savaitės rekordas: 2016&nbsp;m. programavimo renginiuose dalyvavo milijonas žmonių</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">ES programavimo savaitė. Įgyvendinkite savo idėjas programuodami</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>Taip pat galite naudoti <a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">Europos programavimo savaitės logotipą</a>, jei jūsų planuojamas renginys atitinka mūsų gaires.</p>
 

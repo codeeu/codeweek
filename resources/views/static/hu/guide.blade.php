@@ -67,9 +67,7 @@
                 <h2>Prom&oacute;ci&oacute;s anyagok</h2>
                 <p>Az al&aacute;bbi sajt&oacute;k&ouml;zlem&eacute;ny b&aacute;rmelyik r&eacute;sz&eacute;t felhaszn&aacute;lhatja a saj&aacute;t marketingj&eacute;re:</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">Az eur&oacute;pai programoz&aacute;si h&eacute;t okt&oacute;ber 7-e &eacute;s 22-e k&ouml;z&ouml;tt &uuml;nnepli &ouml;t&ouml;dik sz&uuml;let&eacute;snapj&aacute;t &ndash; rajta, csatlakozzon, &eacute;s saj&aacute;t&iacute;tsa el a programoz&aacute;s mik&eacute;ntj&eacute;t!</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">Az eur&oacute;pai programoz&aacute;si h&eacute;t &uacute;j rekordja: 2016-ban egymilli&oacute;an vettek r&eacute;szt a programoz&aacute;si h&eacute;ten</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">Eur&oacute;pai programoz&aacute;si h&eacute;t: Val&oacute;s&iacute;tsuk meg &ouml;tleteinket a #codeEU seg&iacute;ts&eacute;g&eacute;vel</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>Haszn&aacute;lhatja az <a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">eur&oacute;pai programoz&aacute;si h&eacute;t log&oacute;j&aacute;t is</a>, amennyiben a tervezett esem&eacute;ny illeszkedik az ir&aacute;nymutat&aacute;sainkhoz.</p>
 

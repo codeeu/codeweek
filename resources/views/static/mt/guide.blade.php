@@ -73,9 +73,7 @@
                 <h2>Materjal ta' promozzjoni</h2>
                 <p>Kun liberu li tuża xi partijiet tal-istqarrija għall-istampa li ġejja għall-kummerċjalizzazzjoni tiegħek stess:</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">Il-Ġimgħa tal-UE tal-Ikkowdjar qiegħda tiċċelebra l-5 għeluq snin tagħha bejn is-7 u t-22&nbsp;ta'&nbsp;Ottubru - ipprepara ruħek, issieħeb u tgħallem kif toħloq xi ħaġa bil-kodiċi!</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">Rekord ġdid tal-Ġimgħa tal-UE tal-Ikkowdjar Miljun ikkodifikati matul l-edizzjoni tal-2016</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">Ġimgħa tal-UE tal-Ikkowdjar: Agħti l-ħajja lill-ideat tiegħek b'#codeEU</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>Tista' tuża wkoll il-<a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">logo tal-Ġimgħa tal-Ikkowdjar</a>, sakemm l-avveniment tiegħek jaqbel mal-linji gwida tagħna.</p>
 

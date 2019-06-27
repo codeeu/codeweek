@@ -67,9 +67,7 @@
                 <h2>Reklamemateriale</h2>
                 <p>Du kan frit bruge disse pressemeddelelser i forbindelse med din egen markedsf&oslash;ring:</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">EU&rsquo;s kodeuge fejrer sin 5-&aring;rs f&oslash;dselsdag den 7. til 22.&nbsp;oktober &ndash; v&aelig;r parat, v&aelig;r med, og l&aelig;r, hvordan man kreerer med kode!</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">Ny rekord for EU&rsquo;s kodeuge: En million programmerede under 2016-udgaven</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">EU&rsquo;s kodeuge: F&oslash;r dine id&eacute;er ud i livet med #codeEU</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>Du kan ogs&aring; bruge <a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">logoet for den europ&aelig;iske kodeuge</a>, s&aring; l&aelig;nge dit arrangement overholder vores retningslinjer.</p>
 
