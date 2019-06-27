@@ -126,8 +126,7 @@
                 <p>Check out our <a href="http://blog.codeweek.eu/">blog</a> for latest information and feel free to
                     adapt the most recent press release to your needs, or create your own:</p>
                 <ul>
-                    <li>
-                        <a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a> (available in 29 languages)</li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a> (available in 29 languages)</li>
 
                 </ul>
 

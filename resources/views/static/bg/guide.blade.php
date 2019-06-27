@@ -67,9 +67,7 @@
                 <h2>Промоционален материал</h2>
                 <p>Не се притеснявайте да използвате всяка част от следните съобщения за пресата за вашите собствени маркетингови цели:</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">Европейската седмица на програмирането чества 5-ти рожден ден на 7&mdash;22&nbsp;октомври, подгответе се, присъединете се и научете как да творите чрез програмиране!</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">Нов рекорд на Европейската седмица на програмирането: един милион програмирания по време на изданието за 2016&nbsp;г.</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">Европейска седмица на програмирането: превърнете идеите в реалност с #codeEU</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>Можете също така да използвате <a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">логото на Европейската седмица на програмирането</a>, при условие че събитието, което планирате, съответства на нашите насоки.</p>
 

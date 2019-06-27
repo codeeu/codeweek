@@ -67,9 +67,7 @@
                 <h2>Promotivni materijal</h2>
                 <p>Slobodno iskoristite bilo koje djelove ovog saop&scaron;tenja za javnost za va&scaron; marketing:</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">Evropska Nedjelja programiranja slavi svoj peti rođendan od 7. do 22. oktobra &ndash; spremite se, pridružite se i naučite kako da kreirate programiranjem! </a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">Novi rekord Evropske Nedjelje programiranja: Milion učesnika programiralo je tokom okupljanja 2016. godine.</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">Evropska Nedjelja programiranja: Oživljavanje ideja sa #codeEU</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>Takođe možete koristiti <a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">logo Evropske Nedjelje programiranja</a>, dok god se događaj koji planirate uklapa u na&scaron;e smjernice.</p>
 
