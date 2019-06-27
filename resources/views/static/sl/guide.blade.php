@@ -67,9 +67,7 @@
                 <h2>Promocijsko gradivo</h2>
                 <p>Uporabite kateri koli del naslednje izjave za javnost za svoje trženje:</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">Evropski teden programiranja od 7. do 22.&nbsp;oktobra proslavlja peti rojstni dan &ndash; pripravite se, pridružite se in se naučite programirati!</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">Nov rekord evropskega tedna programiranja: milijon programiranj v letu 2016</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">Evropski teden programiranja: uresničevanje zamisli z #codeEU</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>Če je dogodek, ki ga načrtujete, skladen z na&scaron;imi smernicami, lahko uporabite tudi <a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">logotip evropskega tedna programiranja</a>.</p>
 

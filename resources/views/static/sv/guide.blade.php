@@ -67,9 +67,7 @@
                 <h2>Kampanjmaterial</h2>
                 <p>Du f&aring;r g&auml;rna anv&auml;nda valfria delar av f&ouml;ljande pressmeddelande till din egen marknadsf&ouml;ring:</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">EU Code Week firar 5-&aring;rsdag den 7&ndash;22 oktober &ndash; var med och l&auml;r dig skapa med kod!</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">Nytt rekord f&ouml;r EU Code Week: En miljon kodade 2016</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">EU Code Week: F&ouml;rverkliga dina id&eacute;er med #codeEU</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>Du kan &auml;ven anv&auml;nda <a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">EU Code Weeks logotyp</a>, s&aring; l&auml;nge evenemanget du planerar f&ouml;ljer v&aring;ra riktlinjer.</p>
 

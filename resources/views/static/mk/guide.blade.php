@@ -67,9 +67,7 @@
                 <h2>Промотивен материјал</h2>
                 <p>Слободно користете кои било делови од следните прес конференции за ваш сопствен маркетинг:</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">Европската Недела на кодирање го прославува својот 5-ти роденден од 7-22 октомври &acirc;€&ldquo; подгответе се, придружете се и научете како да креирате со код!</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">Нов рекорд на Европската недела на кодирање: милион кодирања во текот на изданието 2016</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">Европска недела на кодирање: оживување идеи со #codeEU</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>Исто така може да го користите <a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">логото на Европската недела на кодирање</a>, с? додека настанот што го планирате соодветствува со нашите упатства.</p>
 
