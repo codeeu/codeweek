@@ -67,9 +67,7 @@
                 <h2>Werbematerial</h2>
                 <p>Nutzen Sie gern Teile der folgenden Pressemitteilung f&uuml;r Ihre eigene Werbung:</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">EU Code Week feiert vom 7. bis 22.&nbsp;Oktober f&uuml;nfj&auml;hriges Jubil&auml;um &ndash; bereit machen, teilnehmen und das Programmieren erlernen!</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">Neuer Rekord bei der EU Code Week: Eine Million Menschen programmieren w&auml;hrend der Ausgabe 2016</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">EU Code Week: Ideen werden mit #codeEU Wirklichkeit</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>Auch das <a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">Logo der europ&auml;ischen Code Week</a> kann verwendet werden, sofern die geplante Veranstaltung mit unserem Leitfaden vereinbar ist.</p>
 

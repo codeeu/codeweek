@@ -67,9 +67,7 @@
                 <h2>Promotiemateriaal</h2>
                 <p>Voel je vrij om delen uit het volgende persbericht te gebruiken voor je eigen marketing:</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">EU-programmeerweek viert 5e verjaardag van 7 t/m 22 oktober - wees er klaar voor, doe mee en leer dingen te maken met programmeercode!</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">Nieuw record EU-programmeerweek: &eacute;&eacute;n miljoen geprogrammeerd tijdens editie van 2016</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">EU-programmeerweek: idee&euml;n tot leven brengen met #codeEU</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>Je mag ook het <a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">logo van de EU-programmeerweek</a> gebruiken, mits het evenement dat je plant aan onze richtlijnen voldoet.</p>
 

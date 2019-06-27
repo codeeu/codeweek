@@ -67,9 +67,7 @@
                 <h2>Material de promo&ccedil;&atilde;o</h2>
                 <p>Pode utilizar qualquer parte do comunicado de imprensa seguinte para promover o seu evento:</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">A Semana Europeia da Programa&ccedil;&atilde;o celebra o seu 5.º&nbsp;anivers&aacute;rio de 7 a 22 de outubro &mdash; prepare-se, participe e aprenda a criar atrav&eacute;s da programa&ccedil;&atilde;o!</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">Novo recorde da Semana Europeia da Programa&ccedil;&atilde;o: Um milh&atilde;o de pessoas programaram durante a edi&ccedil;&atilde;o de 2016</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">Semana Europeia da Programa&ccedil;&atilde;o: Dar vida &agrave;s ideias com a #codeEU</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>Pode tamb&eacute;m utilizar o <a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">log&oacute;tipo da Semana Europeia da Programa&ccedil;&atilde;o</a>, desde que o evento que est&aacute; a organizar esteja em conformidade com as nossas orienta&ccedil;&otilde;es.</p>
 

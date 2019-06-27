@@ -67,9 +67,7 @@
                 <h2>Materiały promocyjne</h2>
                 <p>Możesz śmiało wykorzystać dowolne fragmenty następujących artykuł&oacute;w i informacji prasowych na potrzeby własnych działań marketingowych:</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">Europejski Tydzień Kodowania obchodzi w dniach 7&ndash;22 października piąte urodziny &ndash; przygotuj się, przyłącz się i dowiedz się, jak tw&oacute;rczo programować!</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">New EU Code Week record: A million coded during the 2016 edition (Nowy rekord Europejskiego Tygodnia Kodowania: Milion os&oacute;b wzięło udział w czwartej edycji wydarzenia w 2016&nbsp;roku)</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">Europejski Tydzień Kodowania: Realizujemy dobre pomysły! #codeEU</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>Możesz także wykorzystać <a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">logo Europejskiego Tygodnia Kodowania</a>, jeśli planowane wydarzenie jest zgodne z naszymi wytycznymi.</p>
 
