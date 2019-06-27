@@ -51,8 +51,7 @@
 
                     <h2>Teden programiranja v &scaron;tevilkah</h2>
 
-                    <p>Evropski teden programiranja je leta&nbsp;2018 privabil k sodelovanju 2,7&nbsp;milijona ljudi iz več kot 70&nbsp;držav po vsem svetu. Dodatnega 2,3&nbsp;milijona mladih je sodelovalo v <a href="http://africacodeweek.org/">afri&scaron;kem tednu programiranja</a>, izpeljani pobudi, ki jo vodijo družba SAP in neprofitne organizacije.</p>
-
+                    <p>Evropski teden programiranja je leta 2018 privabil k sodelovanju 2,7 milijona ljudi iz več kot 70 držav po vsem svetu. Dodatnih 2,3 milijona mladih je sodelovalo v <a href="http://africacodeweek.org/">afri&scaron;kem tednu programiranja</a>, izpeljani pobudi, ki jo vodijo družba SAP in neprofitne organizacije.</p>
                     <p>Če va&scaron;a država &scaron;e ne sodeluje, lahko organizirate dejavnosti in jih dodate na <a href="/events">zemljevid</a> ali se <a href="mailto:info@codeweek.eu">prostovoljno</a> prijavite kot ambasador tedna programiranja.</p>
 
                     <div class="container clearfix">
