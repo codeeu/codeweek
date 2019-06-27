@@ -67,9 +67,7 @@
                 <h2>Reklāmas materiāli</h2>
                 <p>Jūs varat dro&scaron;i izmantot savos reklāmas pasākumos jebkuru daļu no &scaron;ī paziņojuma presei:</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">ES programmē&scaron;anas nedēļa 7.&ndash;22.&nbsp;oktobrī svin piekto dzim&scaron;anas dienu &mdash; sagatavojies, pievienojies un iemācies radīt programmējot!</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">Jauns ES programmē&scaron;anas nedēļas rekords: 2016.&nbsp;gada pasākumos miljons cilvēku programmēja</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">ES programmē&scaron;anas nedēļa: ideju īsteno&scaron;ana ar #codeEU</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>Jūs arī varat izmantot <a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">Eiropas programmē&scaron;anas nedēļas logotipu</a>, ja plānotais pasākums atbilst mūsu vadlīnijām.</p>
 

@@ -67,9 +67,7 @@
                 <h2>Material promoțional</h2>
                 <p>Puteți folosi orice parte a următorului comunicat de presă pentru propria dumneavoastră acțiune de marketing:</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">Săptăm&acirc;na UE a programării sărbătorește cea de-a 5-a aniversare pe 7-22 octombrie &ndash; pregătiți-vă, participați și &icirc;nvățați să creați folosind coduri!</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">Nou record al Săptăm&acirc;nii UE a programării: Un milion de persoane au programat &icirc;n timpul ediției din 2016</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">Săptăm&acirc;na UE a programării: Aduceți idei la viață cu #codeEU</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>Puteți folosi și <a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">sigla Săptăm&acirc;nii europene a programării</a>, at&acirc;t timp c&acirc;t evenimentul pe care &icirc;l planificați se &icirc;ncadrează &icirc;n liniile noastre directoare.</p>
 

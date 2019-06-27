@@ -67,9 +67,7 @@
                 <h2>Mat&eacute;riel promotionnel</h2>
                 <p>N&rsquo;h&eacute;sitez pas &agrave; utiliser des extraits du communiqu&eacute; de presse suivant pour faire votre propre promotion:</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">La Codeweek Europe f&ecirc;tera son 5e&nbsp;anniversaire du 7&nbsp;au 22&nbsp;octobre &ndash; pr&eacute;parez-vous, rejoignez-nous et apprenez comment cr&eacute;er avec du code!</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">La Codeweek Europe atteint un nouveau record: Un million de personnes ont programm&eacute; durant l&rsquo;&eacute;dition 2016</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">Codeweek Europe Concr&eacute;tisez vos id&eacute;es avec #codeEU</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>Vous pouvez &eacute;galement utiliser le <a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">logo de la Codeweek Europe</a> si l&rsquo;&eacute;v&eacute;nement que vous planifiez correspond &agrave; nos lignes directrices.</p>
 

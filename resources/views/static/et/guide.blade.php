@@ -67,9 +67,7 @@
                 <h2>Reklaammaterjal</h2>
                 <p>V&otilde;ite &uuml;rituse reklaamimiseks kasutada k&otilde;iki j&auml;rgmisi pressiteateid.</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">ELi programmeerimisn&auml;dal Code Week t&auml;histab 7.&ndash;22.&nbsp;oktoobrini oma viiendat s&uuml;nnip&auml;eva. Olge valmis liituma ja programmeerimist &otilde;ppima!</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">Uus rekord ELi programmeerimisn&auml;dala Code Week jaoks: miljon osalejat 2016.&nbsp;aastal</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">ELi programmeerimisn&auml;dal Code Week: ideest teostuseni #codeEU</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>Samuti v&otilde;ite kasutada <a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">Euroopa programmeerimisn&auml;dala Code Week logo</a>, tingimusel et teie &uuml;ritus vastab meie visioonile.</p>
 

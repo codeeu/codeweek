@@ -67,9 +67,7 @@
                 <h2>Propagačn&eacute; materi&aacute;ly</h2>
                 <p>V&nbsp;r&aacute;mci svojho marketingu m&ocirc;žete použiť ak&uacute;koľvek časť t&yacute;chto tlačov&yacute;ch spr&aacute;v:</p>
                 <ul>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-celebrating-its-5th-birthday-7-22-october-get-ready-join-and-learn-how-create-code">Eur&oacute;psky t&yacute;ždeň programovania oslavuje 7.&nbsp;až 22.&nbsp;okt&oacute;bra piate narodeniny &ndash; pripravte sa, zapojte sa a naučte sa programovať!</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/million-coded-in-record-2016-EU-code-week">Nov&yacute; rekord Eur&oacute;pskeho t&yacute;ždňa programovania: mili&oacute;n program&aacute;torov v&nbsp;ročn&iacute;ku 2016</a></li>
-                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/save-date-eu-code-week-10-18-october-2015-bringing-ideas-life-codeeu">Eur&oacute;psky t&yacute;ždeň programovania: Vd&yacute;chnite život svojim n&aacute;padom prostredn&iacute;ctvom #codeEU</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a></li>
                 </ul>
                 <p>M&ocirc;žete využiť aj <a href="https://github.com/codeeu/codeeu-resources/tree/master/Logo - generic">logo Eur&oacute;pskeho t&yacute;ždňa programovania</a>, pokiaľ va&scaron;e pl&aacute;novan&eacute; podujatie zodpoved&aacute; na&scaron;im usmerneniam.</p>
 
