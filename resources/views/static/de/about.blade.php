@@ -51,8 +51,7 @@
 
                     <h2>Code Week in Zahlen</h2>
 
-                    <p>Im Jahr 2018 nahmen 2,7 Millionen Menschen in &uuml;ber 70&nbsp;L&auml;ndern weltweit an der EU Code Week teil. Weitere 2,3 Millionen junge Menschen waren an der <a href="http://africacodeweek.org/">Africa Code Week</a> beteiligt, einer Spin-off-Initiative, die von SAP und gemeinn&uuml;tzigen Organisationen veranstaltet wird.</p>
-
+                    <p>Im Jahr 2018 nahmen 2,7 Millionen Menschen in über 70 Ländern weltweit an der EU Code Week teil. Weitere 2,3 Millionen junge Menschen waren an der <a href="http://africacodeweek.org/">Africa Code Week</a> beteiligt, einer Spin-off-Initiative, die von SAP und gemeinnützigen Organisationen veranstaltet wird.</p>
                     <p>Wenn Ihr Land bisher nicht an der Initiative beteiligt ist, k&ouml;nnen Sie Aktivit&auml;ten ausrichten und diese auf der <a href="/events">Karte</a> markieren oder <a href="mailto:info@codeweek.eu">freiwillig</a> als Code-Week-Botschafter*in fungieren.</p>
 
                     <div class="container clearfix">
