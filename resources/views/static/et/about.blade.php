@@ -51,8 +51,7 @@
 
                     <h2>Programmeerimisn&auml;dal Code Week numbrites</h2>
 
-                    <p>2018.&nbsp;aastal v&otilde;ttis ELi programmeerimisn&auml;dalast Code Week osa 2,7&nbsp;miljonit inimest ja rohkem kui 70 riiki. Lisaks sellele oli 2,3&nbsp;miljonit noort seotud ELi algatusest inspiratsiooni saanud <a href="http://africacodeweek.org/">Aafrika programmeerimisn&auml;dalaga Code Week</a>, mille korraldajateks on SAP ja mittetulundus&uuml;hingud.</p>
-
+                    <p>2018. aastal võttis ELi programmeerimisnädalast Code Week osa 2,7 miljonit inimest ja rohkem kui 70 riiki. Lisaks sellele oli 2,3 miljonit noort seotud ELi algatusest inspiratsiooni saanud <a href="http://africacodeweek.org/">Aafrika programmeerimisn&auml;dalaga Code Week</a>, mille korraldajateks on SAP ja mittetulundusühingud.</p>
                     <p>Kui teie riik ei ole veel programmeerimisn&auml;dalaga seotud, siis v&otilde;ite ise tegevusi organiseerida ja need <a href="/events">kaardile</a> lisada v&otilde;i hakata Code Weeki <a href="mailto:info@codeweek.eu">vabatahtlikuks saadikuks</a>.</p>
 
                     <div class="container clearfix">

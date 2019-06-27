@@ -55,8 +55,7 @@
 
                     <h2>Il-Ġimgħa tal-Ikkowdjar f&rsquo;numri</h2>
 
-                    <p>Fl-2018, 2,7&nbsp;miljun ruħ f&rsquo;aktar minn 70&nbsp;pajjiż madwar id-dinja ħadu sehem fil-Ġimgħa tal-UE tal-Ikkowdjar. 2,3&nbsp;miljun żagħżugħ addizzjonali kienu involuti fil-<a href="http://africacodeweek.org/">Ġimgħa Afrikana tal-Ikkowdjar</a>, li hija inizjattiva ta&rsquo; segwitu mmexxija minn SAP u għal organizzazzjonijiet mingħajr skop ta&rsquo; qligħ.</p>
-
+                    <p>Fl-2018, 2.7 miljun ruħ f’aktar minn 70 pajjiż madwar id-dinja ħadu sehem fil-Ġimgħa tal-UE tal-Ikkowdjar. 2.3 miljun żagħżugħ addizzjonali kienu involuti fil-<a href="http://africacodeweek.org/">Ġimgħa Afrikana tal-Ikkowdjar</a>, li hija inizjattiva mmexxija minn SAP u għal organizzazzjonijiet mingħajr skop ta’ qligħ.</p>
                     <p>Jekk pajjiżek għadu mhux involut, tista&rsquo; torganizza attivitajiet u tpoġġihom fuq il-<a href="/events">mappa</a> jew <a href="mailto:info@codeweek.eu">tagħmel xogħol volontarju</a> bħala ambaxxatur tal-Ġimgħa tal-Ikkowdjar.</p>
 
                     <div class="container clearfix">
