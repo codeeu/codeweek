@@ -1,5 +1,6 @@
 <!-- Header -->
 <header id="header">
+    <a id="menu-button" href="/"><img src="/images/menu.svg"></a>
     <a id="logo" href="/"><img src="/images/logo.svg" alt="CodeWeek"></a>
     <nav>
         <ul>
