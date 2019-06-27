@@ -106,6 +106,11 @@
                             Week</a>, q&euml; &euml;sht&euml; nj&euml; nism&euml; bij&euml;, e drejtuar nga SAP dhe
                         organizata jofitimprur&euml;se.</p>
 
+                    <p>
+                        Në vitin 2018, 2,7 milionë persona nga më shumë se 70 vende të botës morën pjesë në EU Code Week. 2,3 milionë të rinj të tjerë u përfshinë në <a href="http://africacodeweek.org/">Africa Code
+                            Week</a>, e frymëzuar EU Code Week dhe e drejtuar nga SAP si dhe organizata jofitimprurëse.
+                    </p>
+
                     <p>N&euml;se vendi juaj nuk &euml;sht&euml; ende i p&euml;rfshir&euml;, mund t&euml; organizoni
                         aktivitete dhe t&rsquo;i vendosni ato n&euml; <a href="/events">hart&euml;</a> ose t&euml; dilni
                         <a href="mailto:info@codeweek.eu">vullnetar</a> si ambasador i Code Week.</p>
