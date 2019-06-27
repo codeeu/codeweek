@@ -127,9 +127,7 @@
                     adapt the most recent press release to your needs, or create your own:</p>
                 <ul>
                     <li>
-                        <a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-2018-breaks-all-time-record-27-million-participants-and-nearly-44000-events">EU
-                            Code Week 2018 Breaks All-time Record, With 2.7 Million Participants and Nearly 44,000
-                            Events</a></li>
+                        <a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019 (available in 29 languages)</a></li>
 
                 </ul>
 
