@@ -80,6 +80,21 @@
                                     </div>
                                 </div>
 
+
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
+                                        <label>
+                                            <input id="checkPrivacy" name="privacy" type="checkbox">
+                                            @lang('event.privacy')
+                                            <a href="/privacy" target="_blank"><i class="fa fa-external-link" style="color: blue;"></i></a>
+                                        </label>
+                                        @component('components.validation-errors', ['field'=>'privacy'])
+                                        @endcomponent
+                                    </div>
+
+
+                                </div>
+
                                 <div class="form-group">
                                     <div class="col-md-8 col-md-offset-4">
                                         <button type="submit" class="btn btn-primary">
