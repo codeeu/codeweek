@@ -16,5 +16,6 @@ return [
     'github' => 'Mit Github anmelden',
     'twitter' => 'Mit Twitter anmelden',
     'facebook' => 'Mit Facebook anmelden',
-    'google' => 'Mit Google anmelden'
+    'google' => 'Mit Google anmelden',
+    'azure' => 'Mit Azure anmelden',
 ];
