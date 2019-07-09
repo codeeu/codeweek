@@ -16,5 +16,6 @@ return [
     'github' => 'Pristupite sa Github nalogom',
     'twitter' => 'Pristupite sa Twitter nalogom',
     'facebook' => 'Pristupite sa Facebook nalogom',
-    'google' => 'Pristupite sa Google nalogom'
+    'google' => 'Pristupite sa Google nalogom',
+    'azure' => 'Pristupite sa Azure nalogom',
 ];

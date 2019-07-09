@@ -16,5 +16,6 @@ return [
     'github' => 'Zaloguj się poprzez serwis Github',
     'twitter' => 'Zaloguj się poprzez serwis Twitter',
     'facebook' => 'Zaloguj się poprzez serwis Facebook',
-    'google' => 'Zaloguj się poprzez serwis Google'
+    'google' => 'Zaloguj się poprzez serwis Google',
+    'azure' => 'Zaloguj się poprzez serwis Azure',
 ];

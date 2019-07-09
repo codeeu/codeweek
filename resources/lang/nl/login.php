@@ -16,5 +16,6 @@ return [
     'github' => 'Aanmelden met Github',
     'twitter' => 'Aanmelden met Twitter',
     'facebook' => 'Aanmelden met Facebook',
-    'google' => 'Aanmelden met Google'
+    'google' => 'Aanmelden met Google',
+    'azure' => 'Aanmelden met Azure',
 ];

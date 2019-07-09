@@ -17,6 +17,7 @@ return [
     'twitter' => 'Sign in with Twitter',
     'facebook' => 'Sign in with Facebook',
     'google' => 'Sign in with Google',
+    'azure' => 'Sign in with Azure',
 
     'email' => 'E-Mail Address',
     'password' => 'Password',
