@@ -16,5 +16,6 @@ return [
     'github' => 'Σύνδεση με Github',
     'twitter' => 'Σύνδεση με Twitter',
     'facebook' => 'Σύνδεση με Facebook',
-    'google' => 'Σύνδεση με Google'
+    'google' => 'Σύνδεση με Google',
+    'azure' => 'Σύνδεση με Azure',
 ];

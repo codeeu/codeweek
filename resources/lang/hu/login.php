@@ -16,5 +16,6 @@ return [
     'github' => 'Bejelentkezés Githubbal',
     'twitter' => 'Bejelentkezés Twitterrel',
     'facebook' => 'Bejelentkezés Facebookkal',
-    'google' => 'Bejelentkezés Google-lel'
+    'google' => 'Bejelentkezés Google-lel',
+    'azure' => 'Bejelentkezés Azure-lel',
 ];
