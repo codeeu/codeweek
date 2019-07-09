@@ -16,5 +16,6 @@ return [
     'github' => 'Logga in med Github',
     'twitter' => 'Logga in med Twitter',
     'facebook' => 'Logga in med Facebook',
-    'google' => 'Logga in med Google'
+    'google' => 'Logga in med Google',
+    'azure' => 'Logga in med Azure',
 ];

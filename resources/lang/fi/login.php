@@ -16,5 +16,6 @@ return [
     'github' => 'Kirjaudu sisään Github-tunnuksilla.',
     'twitter' => 'Kirjaudu sisään Twitter-tunnuksilla.',
     'facebook' => 'Kirjaudu sisään Facebook-tunnuksilla.',
-    'google' => 'Kirjaudu sisään Google-tunnuksilla.'
+    'google' => 'Kirjaudu sisään Google-tunnuksilla.',
+    'azure' => 'Kirjaudu sisään Azure-tunnuksilla.',
 ];
