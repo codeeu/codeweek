@@ -16,5 +16,6 @@ return [
     'github' => 'Prihlásiť sa cez Github',
     'twitter' => 'Prihlásiť sa cez Twitter',
     'facebook' => 'Prihlásiť sa cez Facebook',
-    'google' => 'Prihlásiť sa cez Google'
+    'google' => 'Prihlásiť sa cez Google',
+    'azure' => 'Prihlásiť sa cez Azure',
 ];

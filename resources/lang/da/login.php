@@ -16,5 +16,6 @@ return [
     'github' => 'Log ind med Github',
     'twitter' => 'Log ind med Twitter',
     'facebook' => 'Log ind med Facebook',
-    'google' => 'Log ind med Google'
+    'google' => 'Log ind med Google',
+    'azure' => 'Log ind med Azure',
 ];

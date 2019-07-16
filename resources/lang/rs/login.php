@@ -16,5 +16,6 @@ return [
     'github' => 'Prijavite se pomoću Github naloga',
     'twitter' => 'Prijavite se pomoću Twitter naloga',
     'facebook' => 'Prijavite se pomoću Facebook naloga',
-    'google' => 'Prijavite se pomoću Google naloga'
+    'google' => 'Prijavite se pomoću Google naloga',
+    'azure' => 'Prijavite se pomoću Azure naloga',
 ];
