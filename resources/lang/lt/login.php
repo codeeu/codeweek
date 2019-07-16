@@ -16,5 +16,6 @@ return [
     'github' => 'Prisijunkite per „Github“',
     'twitter' => 'Prisijunkite per „Twitter“',
     'facebook' => 'Prisijunkite per „Facebook“',
-    'google' => 'Prisijunkite per „Google“'
+    'google' => 'Prisijunkite per „Google“',
+    'azure' => 'Prisijunkite per „Azure“',
 ];

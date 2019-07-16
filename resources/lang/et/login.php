@@ -16,5 +16,6 @@ return [
     'github' => 'Logi sisse Githubi kaudu',
     'twitter' => 'Logi sisse Twitteri kaudu',
     'facebook' => 'Logi sisse Facebooki kaudu',
-    'google' => 'Logi sisse Google’i kaudu'
+    'google' => 'Logi sisse Google’i kaudu',
+    'azure' => 'Logi sisse Azure’i kaudu',
 ];

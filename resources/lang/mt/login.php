@@ -16,5 +16,6 @@ return [
     'github' => 'Idħol bi Github',
     'twitter' => 'Idħol bi Twitter',
     'facebook' => 'Idħol b’Facebook',
-    'google' => 'Idħol b’Google'
+    'google' => 'Idħol b’Google',
+    'azure' => 'Idħol b’Azure',
 ];
