@@ -1,0 +1,169 @@
+#main-banner{
+  width:1280px;
+  height:645px;
+  background-color: $main-color;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url('/images/bubbles.svg');
+  background-repeat: no-repeat;
+  background-position-x: 980px;
+  padding-left: 145px;
+  padding-top: 50px;
+}
+
+#main-banner .what{
+  display: flex;
+  padding-right: 200px;
+  margin-bottom: 47px;
+}
+
+#main-banner .what .separator{
+  width: 32px;
+  border: 1px solid $main-color4;
+  border-right: 0;
+}
+
+#main-banner .what .text{
+  font-family: 'OCR A Std', "Open Sans";
+  font-size:25px;
+  color:$main-color4;
+  padding-top:20px;
+  line-height: 1.4;
+  padding-bottom: 10px;
+}
+
+#main-banner .info{
+  display:flex;
+}
+
+#main-banner .when{
+  display: flex;
+  flex-direction: column;
+  width: 355px;
+  color: $main-color4;
+  font-weight: bold;
+}
+
+#main-banner .when .title{
+  font-size: 60px;
+}
+
+#main-banner .when .date{
+  color: $main-color;
+  font-size: 40px;
+  background-color: $main-color4;
+  padding: 5px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+#main-banner .when .text{
+  font-size: 18px;
+  width: 320px;
+  margin-top: 30px;
+  line-height: 1.4;
+}
+
+#main-banner .when .arrow{
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+  background-color: $main-color;
+  margin-top: 15px;
+  margin-left: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#main-banner .when .arrow img{
+  margin-top: 10px;
+}
+
+#main-banner .info .countdown{
+  margin-top: 60px;
+}
+
+/*MOBILE VERSION*/
+
+@media (max-width:480px) {
+
+  #main-banner{
+    width:100%;
+    height:700px;
+    padding-left: 30px;
+    padding-top: 50px;
+    background-image: none;
+  }
+
+  #main-banner .what{
+    padding-right: 20px;
+  }
+
+  #main-banner .what .text{
+    font-size:16px;
+    font-weight: initial;
+  }
+
+  #main-banner .info{
+    flex-direction: column-reverse;
+  }
+
+  #main-banner .when .title{
+    font-size: 35px;
+  }
+
+  #main-banner .when .date{
+    font-size: 23px;
+    width: 220px;
+  }
+
+  #main-banner .info .countdown{
+    margin-top: 0px;
+    margin-left: -40px;
+    margin-bottom: 10px;
+  }
+
+  #main-banner .when .arrow{
+    background-color: transparent;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width:100%;
+    margin-left: 0px;
+  }
+
+}
+
+
+/*TABLET VERSION*/
+@media (min-width: 480px) and (max-width: 1280px) {
+
+  #main-banner{
+    width:100%;
+    padding-left: 70px;
+    padding-top: 50px;
+  }
+
+  #main-banner .what{
+    padding-right: 20px;
+  }
+
+  #main-banner .when .date{
+    font-size: 34px;
+  }
+
+  #main-banner .when .text{
+    font-size:16px;
+  }
+
+  #main-banner .info .countdown{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+  }
+
+}
