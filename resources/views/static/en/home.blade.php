@@ -14,7 +14,7 @@
                     <div class="text">Learning to code helps us make sense of the rapidly changing world around us. Join millions of fellow organisers and participants to inspire the development of coding and computational thinking skills in order to explore new ideas and innovate for the future.</div>
                     <div class="arrow"><img src="/images/arrow_down.svg"></div>
                 </div>
-                <div class="countdown"><img src="/images/countdown.svg" alt="Countdown"></div>
+                <div class="countdown"><img src="/images/countdown.svg" alt="Countdown" class="static-image"></div>
             </div>
         </section>
     </section>

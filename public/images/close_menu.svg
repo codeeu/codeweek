@@ -7,12 +7,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="30.912"
-   height="17.956"
-   viewBox="0 0 30.912 17.956"
+   width="43.321"
+   height="43.321"
+   viewBox="0 0 43.321 43.321"
    version="1.1"
    id="svg8"
-   sodipodi:docname="arrow_down.svg"
+   sodipodi:docname="close_menu.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <metadata
      id="metadata12">
@@ -34,26 +34,26 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
+     inkscape:window-width="716"
      inkscape:window-height="480"
      id="namedview10"
      showgrid="false"
-     inkscape:zoom="9.1873704"
-     inkscape:cx="15.456"
-     inkscape:cy="8.9779997"
-     inkscape:window-x="4007"
-     inkscape:window-y="379"
+     inkscape:zoom="5.4477045"
+     inkscape:cx="21.6605"
+     inkscape:cy="21.6605"
+     inkscape:window-x="2928"
+     inkscape:window-y="369"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg8" />
   <defs
      id="defs4">
     <style
-       id="style2">.a{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:5px;}</style>
+       id="style2">.a{fill:#bababa;}</style>
   </defs>
   <path
      class="a"
-     d="M1804.375,800l12.956,12.956L1830.287,800"
-     transform="translate(-1801.875 -797.5)"
+     d="M-12.75-20.357h12.6V-33.24H5v12.883H17.6V-15.2H5V-2.321H-.153V-15.2h-12.6Z"
+     transform="translate(32.52 35.947) rotate(-45)"
      id="path6"
-     style="fill:none;stroke:#ffffff" />
+     style="fill:#a2a2a2;fill-opacity:1;stroke:none" />
 </svg>
