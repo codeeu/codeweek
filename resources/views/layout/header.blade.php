@@ -7,16 +7,16 @@
     <nav id="primary-menu">
         <ul>
             <li>
-                <a href="#">@lang('menu.events')</a>
+                <a href="javascript:void(null);">@lang('menu.events')</a>
                 <ul>
                     <li><a href="{{route('events_map')}}">@lang('menu.map')</a></li>
                     <li><a href="{{route('create_event')}}">@lang('menu.add_event')</a></li>
                     <li><a href="{{route('scoreboard')}}">@lang('event.scoreboard_by_country')</a></li>
                 </ul>
             </li>
-            <li><a href="/">@lang('menu.ambassadors')</a></li>
+            <li><a href="{{route('ambassadors')}}">@lang('menu.ambassadors')</a></li>
             <li>
-                <a href="#">@lang('menu.resources')</a>
+                <a href="javascript:void(null);">@lang('menu.resources')</a>
                 <ul>
                     <li><a href="{{route('resources_learn')}}">@lang('menu.learn')</a></li>
                     <li><a href="{{route('resources_teach')}}">@lang('menu.teach')</a></li>
@@ -24,21 +24,21 @@
                 </ul>
             </li>
             <li>
-                <a href="#">@lang('menu.schools')</a>
+                <a href="javascript:void(null);">@lang('menu.schools')</a>
                 <ul class="dropdown-menu">
                     <li><a href="{{route('schools')}}">@lang('menu.why')?</a></li>
                     <li><a href="{{route('training.index')}}">@lang('menu.training')</a></li>
                     <li><a href="{{route('codeweek4all')}}">CODE WEEK 4 ALL</a></li>
                 </ul>
             </li>
-            <li><a href="/">@lang('menu.about')</a></li>
-            <li><a href="/">@lang('menu.blog')</a></li>
+            <li><a href="/about/">@lang('menu.about')</a></li>
+            <li><a href="http://blog.codeweek.eu/">@lang('menu.blog')</a></li>
         </ul>
     </nav>
     <div id="right-menu">
         @if (Auth::check())
             <div class="round-button-user-menu menu-trigger user-menu">
-                <a href="#">
+                <a href="javascript:void(null);">
                     <img src="/images/user.svg" class="button-icon">
                 </a>
                 <ul class="menu-dropdown">
@@ -128,7 +128,7 @@
 
         <div id="tools">
             <div class="round-button menu-trigger lang-menu">
-                <a href="#">{{App::getLocale()}}</a>
+                <a href="javascript:void(null);">{{App::getLocale()}}</a>
                 <div class="menu-dropdown">
                     <ul>
                         @foreach ($locales as $key => $value)
