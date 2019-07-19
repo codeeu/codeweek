@@ -19,11 +19,15 @@ header #logo {
 
 header nav{
   flex: 1;
+  height: 50px;
 }
 
 header nav ul {
   list-style: none;
   padding: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
 }
 
 header nav ul li{
@@ -121,10 +125,6 @@ header .round-button-user-menu:hover{
   background-color: #F9F9F9;
 }
 
-
-header #right-menu .round-button-sign:hover a{
-  color: $main-color4;
-}
 
 header #right-menu .round-button:before {
   content: "";
@@ -260,6 +260,16 @@ header .lang-menu .menu-dropdown ul li:hover a{
 
 /* MOBILE AND TABLET VERSION*/
 @media (max-width:1280px) {
+
+
+  header nav{
+    height: auto;
+  }
+
+  header nav ul {
+    height: auto;
+  }
+
   header nav ul li ul{
     display:none;
     position: relative;
@@ -337,6 +347,21 @@ header .lang-menu .menu-dropdown ul li:hover a{
     font-size: 16px;
   }
 
+  header #right-menu .round-button-user-menu {
+    margin-bottom: 15px;
+  }
+
+  header #right-menu .round-button-sign a{
+    color: $main-color4;
+    font-size: 16px;
+    text-transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
   header {
     flex-direction: column;
     min-height: 100px;
@@ -367,6 +392,11 @@ header .lang-menu .menu-dropdown ul li:hover a{
   header .menu-dropdown {
     top: -450px;
     right: auto;
+  }
+
+  header .lang-menu .menu-dropdown {
+    top: -460px;
+    left: -115px;
   }
 
 }
