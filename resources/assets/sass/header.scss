@@ -173,7 +173,7 @@ header .round-button-user-menu.opened,
 header .round-button.opened{
   background-color: $main-color;
 }
-header .menu-trigger.opened .icon-user-menu path{
+header .menu-trigger.opened .button-icon path{
   fill:white !important;
 }
 header .round-button.opened a{
@@ -203,8 +203,22 @@ header .menu-dropdown{
   box-shadow: 0 6px 12px rgba(0,0,0,0.175);
 }
 
-header .lang-menu .menu-dropdown{
+header .lang-menu .menu-dropdown,
+header .facebook-menu .menu-dropdown,
+header .twitter-menu .menu-dropdown{
   padding: 0;
+}
+
+header .facebook-menu .menu-dropdown,
+header .twitter-menu .menu-dropdown{
+  top: 60px;
+}
+
+header .twitter-menu .menu-dropdown{
+  width: 400px;
+  height: 500px;
+  overflow: auto;
+  justify-content: center;
 }
 
 header .user-menu .menu-dropdown li{
@@ -394,10 +408,23 @@ header .lang-menu .menu-dropdown ul li:hover a{
     right: auto;
   }
 
-  header .lang-menu .menu-dropdown {
+  header .lang-menu .menu-dropdown{
     top: -460px;
     left: -115px;
   }
+
+  header .facebook-menu .menu-dropdown {
+    top: -505px;
+    left: -183px;
+    height: 400px;
+  }
+
+  header .twitter-menu .menu-dropdown{
+    top: -505px;
+    left: -240px;
+    height: 500px;
+  }
+
 
 }
 
