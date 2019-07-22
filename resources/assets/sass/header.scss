@@ -332,7 +332,7 @@ header .lang-menu .menu-dropdown ul li:hover a{
 
 /*MOBILE VERSION*/
 
-@media (max-width:480px) {
+@media (max-width:580px) {
 
   #primary-menu {
     width: 100%;
@@ -342,7 +342,7 @@ header .lang-menu .menu-dropdown ul li:hover a{
     display: none;
   }
 
-  header #right-menu, #main-banner .when .text {
+  header #right-menu {
     display: none;
   }
 
@@ -429,7 +429,7 @@ header .lang-menu .menu-dropdown ul li:hover a{
 }
 
 /*TABLET VERSION*/
-@media (min-width: 480px) and (max-width: 1280px) {
+@media (min-width: 580px) and (max-width: 1280px) {
 
   #primary-menu {
     width: 100%;
