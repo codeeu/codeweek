@@ -8,13 +8,24 @@
                 <div class="text">EU Code Week is a grassroots initiative which aims to bring coding and digital literacy to everybody in a fun and engaging way…</div>
             </div>
             <div class="info">
+                <div class="countdown"><img src="/images/countdown.svg" alt="Countdown" class="static-image"></div>
                 <div class="when">
                     <div class="title">#CodeWeek</div>
                     <div class="date">5-20 October 2019</div>
                     <div class="text">Learning to code helps us make sense of the rapidly changing world around us. Join millions of fellow organisers and participants to inspire the development of coding and computational thinking skills in order to explore new ideas and innovate for the future.</div>
                     <div class="arrow"><img src="/images/arrow_down.svg"></div>
                 </div>
-                <div class="countdown"><img src="/images/countdown.svg" alt="Countdown" class="static-image"></div>
+            </div>
+        </section>
+        <section id="school-banner">
+            <div class="title">
+                Get involved!
+            </div>
+            <div class="text">
+                Are you a teacher?
+            </div>
+            <div class="text">
+                Find out how to get involved!
             </div>
         </section>
     </section>
