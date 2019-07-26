@@ -69,7 +69,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin: 20px 15px;
+  margin-bottom: 0;
   padding-bottom: 20px;
   background-color: #FFE3D6;
   padding-top:25px;
@@ -83,6 +84,59 @@
 
 #school-banner .text{
   font-size: 14px;
+}
+
+.sub-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px;
+  padding-top: 40px;
+  color: $main-color;
+}
+
+.sub-section .text{
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 30px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.sub-section .title{
+  margin: 30px 30px;
+  border: 1px solid $main-color;
+  border-radius: 16px;
+  padding: 20px;
+  font-family: 'OCR A Std', "Open Sans";
+  font-size: 21px;
+  line-height: 1.6;
+}
+
+#organize-activity{
+  background-color: #FFE3D6;
+  padding-top: 0;
+}
+
+#get-started{
+  background-color: #FFEEC7;
+}
+
+#access-resources{
+  background-color: #DBECF0;
+}
+
+#content .mobile-arrow{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align:center;
+}
+
+#content .mobile-arrow path{
+  stroke:$main-color !important;
 }
 
 /* smartphones, iPhone, portrait 480x320 phones */
@@ -144,7 +198,7 @@
     background-color: transparent;
     flex-direction: row;
     justify-content: center;
-    margin-top: 40px;
+    margin: 40px 0;
   }
   #school-banner .title{
     font-size: 55px;
@@ -153,6 +207,40 @@
   #school-banner .text{
     font-size: 30px;
     margin-left: 10px;
+  }
+  .sub-section {
+    flex-direction: row-reverse;
+    padding: 60px 0;
+    margin: 0 50px;
+  }
+  .sub-section .text{
+    font-size: 20px;
+    flex-basis: 33%;
+    text-align: left;
+  }
+  .sub-section .title{
+    font-size: 28px;
+    width: 420px;
+  }
+  .sub-section img{
+    height: 400px;
+    flex-basis: 33%;
+  }
+  #content .mobile-arrow{
+    display:none;
+  }
+  #organize-activity{
+    padding: 60px 0;
+  }
+  #get-started img, #access-resources img{
+    margin-left: -100px;
+    z-index: 1;
+  }
+  #access-resources{
+    padding: 30px 0;
+  }
+  #access-resources img{
+    height: 470px;
   }
 }
 /* big landscape tablets, laptops, and desktops */
