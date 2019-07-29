@@ -43,7 +43,7 @@
                                 <a href="/login/azure"
                                    class="btn-block btn-social btn-lg btn-vk">
 
-                                    <i class="fa fa-microsoft mt-6"></i> @lang('login.azure')
+                                    <img src="/img/azure.png" class="mt-4"> @lang('login.azure')
                                 </a>
 
 
