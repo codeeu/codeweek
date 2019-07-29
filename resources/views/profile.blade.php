@@ -1,11 +1,28 @@
 @extends('layout.base')
 
 @section('content')
-    <section>
+
+
+
+
         <div class="container">
+
             <avatar-form :user="{{ $profileUser }}"></avatar-form>
 
+
+
+
             <form method="POST" action="{{ route('user.update') }}">
+
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
 
 
                 {{ method_field('PATCH') }}
@@ -19,7 +36,8 @@
 
                 <div class="form-group">
                     <label for="email">Display Email</label>
-                    <input type="email" class="form-control" id="email_display" name="email_display" placeholder="Display Email"
+                    <input type="email" class="form-control" id="email_display" name="email_display"
+                           placeholder="Display Email"
                            value="{{auth()->user()->email_display}}">
                 </div>
 
@@ -67,7 +85,8 @@
 
 
                     <label>
-                        <input type="checkbox" name="privacy" value="1" {{ auth()->user()->privacy === 1 ? 'checked="checked"' : '' }}>
+                        <input type="checkbox" name="privacy"
+                               value="1" {{ auth()->user()->privacy === 1 ? 'checked="checked"' : '' }}>
                         I have read and agree with the Privacy Policy terms described on this document.
                         <a href="/privacy" target="_blank"><i class="fa fa-external-link" style="color: blue;"></i></a>
                     </label>
@@ -84,6 +103,6 @@
             <br/>
 
         </div>
-    </section>
+
 
 @endsection
