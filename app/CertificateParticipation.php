@@ -4,34 +4,45 @@ namespace App;
 
 
 use Carbon\Carbon;
+use Illuminate\Support\Str;
 use Log;
 use Illuminate\Support\Facades\Storage;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 use App\Traits\LanguageDetection;
 
-class Certificate
+class CertificateParticipation
 {
 
     use LanguageDetection;
-
-    private $templateName = "template.tex";
+    private $templateName = "participation.tex";
 
     private $name_of_certificate_holder;
     private $resource_path;
     private $pdflatex;
     private $personalized_template_name;
-    private $event;
+    //private $event;
     private $id;
+    private $event_name;
+    private $event_date;
 
-    public function __construct(Event $event)
+    public function __construct($name_for_certificate, $event_name, $event_date)
     {
-        $this->name_of_certificate_holder = $event->name_for_certificate;
-        $this->personalized_template_name = $event->id . ".tex";
+        $this->name_of_certificate_holder = $name_for_certificate;
+        $this->event_name = $event_name;
+        $this->event_date = $event_date;
+
+        if ($this->is_greek_text($this->name_of_certificate_holder)){
+            $random = Str::random(10);
+        } else {
+            $random = Str::kebab($this->name_of_certificate_holder) . "-" . Str::random(10);
+        }
+
+        $this->personalized_template_name = $random . "-" . auth()->id();
         $this->resource_path = resource_path() . "/latex";
         $this->pdflatex = env("PDFLATEX_PATH");
-        $this->event = $event;
-        $this->id = $event->id . '-' . str_random(10);
+        $this->id = auth()->id() . '-' . $random;
+        Log::info("User ID " . auth()->id() . " generating participation certificate with name: " . $name_for_certificate);
     }
 
     public function generate()
@@ -39,27 +50,21 @@ class Certificate
 
         $this->customize_and_save_latex();
         $this->run_pdf_creation();
-        $s3path = $this->copy_to_s3();
-        $this->update_event($s3path);
         $this->clean_temp_files();
+        return $this->personalized_template_name;
+        //$s3path = $this->copy_to_s3();
 
 
-        return $s3path;
+        //return $s3path;
 
-    }
-
-    public function is_greek(){
-        return $this->is_greek_text($this->name_of_certificate_holder);
     }
 
     private function clean_temp_files()
     {
-        Storage::disk('latex')->delete($this->event->id . ".aux");
-        Storage::disk('latex')->delete($this->event->id . ".tex");
-        Storage::disk('latex')->delete($this->event->id . ".pdf");
-        Storage::disk('latex')->delete($this->event->id . ".log");
+        Storage::disk('latex')->delete($this->personalized_template_name . ".aux");
+        Storage::disk('latex')->delete($this->personalized_template_name . ".tex");
+        Storage::disk('latex')->delete($this->personalized_template_name . ".log");
     }
-
 
 
     private function tex_escape($string)
@@ -99,7 +104,7 @@ class Certificate
      */
     protected function copy_to_s3(): string
     {
-        $inputStream = Storage::disk('latex')->getDriver()->readStream($this->event->id . '.pdf');
+        $inputStream = Storage::disk('latex')->getDriver()->readStream($this->personalized_template_name . '.pdf');
         $destination = Storage::disk('s3')->getDriver()->getAdapter()->getPathPrefix() . '/certificates/' . $this->id . '.pdf';
         Storage::disk('s3')->getDriver()->putStream($destination, $inputStream);
 
@@ -112,16 +117,19 @@ class Certificate
      */
     protected function customize_and_save_latex()
     {
-        if ($this->is_greek()) $this->templateName = "template_greek.tex";
+
+        if ($this->is_greek_text($this->event_name) || $this->is_greek_text($this->event_date) || $this->is_greek_text($this->name_of_certificate_holder)) $this->templateName = "participation_greek.tex";
         Log::info($this->templateName);
         //open the latex template
         $base_template = Storage::disk('latex')->get($this->templateName);
 
         //replace the text in template
         $template = str_replace('<CERTIFICATE_HOLDER_NAME>', $this->tex_escape($this->name_of_certificate_holder), $base_template);
+        $template = str_replace('<EVENT_NAME>', $this->tex_escape($this->event_name), $template);
+        $template = str_replace('<EVENT_DATE>', $this->tex_escape($this->event_date), $template);
 
         //save it locally
-        Storage::disk('latex')->put($this->personalized_template_name, $template);
+        Storage::disk('latex')->put($this->personalized_template_name . ".tex", $template);
     }
 
     protected function run_pdf_creation(): void
@@ -129,7 +137,7 @@ class Certificate
 
 
 //call the pdflatex command
-        $command = $this->pdflatex . " -interaction=nonstopmode -output-directory " . $this->resource_path . " " . $this->resource_path . "/" . $this->event->id . ".tex";
+        $command = $this->pdflatex . " -interaction=nonstopmode -output-directory " . $this->resource_path . " " . $this->resource_path . "/" . $this->personalized_template_name . ".tex";
 
         $cwd = $this->resource_path;
 
