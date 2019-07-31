@@ -16,5 +16,6 @@ return [
     'github' => 'Pierakstīties ar Github',
     'twitter' => 'Pierakstīties ar Twitter',
     'facebook' => 'Pierakstīties ar Facebook',
-    'google' => 'Pierakstīties ar Google'
+    'google' => 'Pierakstīties ar Google',
+    'azure' => 'Pierakstīties ar Azure',
 ];
