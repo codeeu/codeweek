@@ -16,5 +16,6 @@ return [
     'github' => 'Prijava v Github',
     'twitter' => 'Prijava v Twitter',
     'facebook' => 'Prijava v Facebook',
-    'google' => 'Prijava v Google'
+    'google' => 'Prijava v Google',
+    'azure' => 'Prijava v Azure',
 ];
