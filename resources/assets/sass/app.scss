@@ -21,6 +21,7 @@
 @import "header";
 @import "homepage";
 @import "footer";
+@import "activities";
 
 
 // General classes
@@ -28,6 +29,10 @@
 body{
   font-family: $body-font-family;
   background-color: #EEEEEE;
+}
+a{
+  color: $main-color2;
+  text-decoration: none;
 }
 .show {
   display: block!important;

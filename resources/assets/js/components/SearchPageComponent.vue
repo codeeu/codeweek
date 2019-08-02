@@ -12,17 +12,17 @@
             <div class="loading"><img src="img/loading.gif" style="margin-right:10px;">Loading...</div>
         </div>
 
-        <div class="container mx-auto flex flex-col p-4 searchbox-container">
+        <div class="searchbox-container">
 
-            <div class="basic-fields flex flex-row">
+            <div class="basic-fields">
 
 
-                <div class="w-full mr-4">
-                    <input type="text" class="input-text w-full pl-8 pr-8" v-model="query"
+                <div class="search-text">
+                    <input type="text" class="input-text" v-model="query"
                            v-on:keyup.13="onSubmit()" :placeholder="$t('search.search_placeholder')">
                 </div>
 
-                <div class="year-selection mr-4">
+                <div class="year-selection">
                     <multiselect v-model="year" :options="years" :multiple="false" :close-on-select="true"
                                  :clear-on-select="false" :preserve-search="false" placeholder="Year"
                                  :show-labels="false" :preselect-first="true" :searchable="false" :allowEmpty="false">
@@ -30,19 +30,17 @@
                     </multiselect>
                 </div>
 
-                <div class="search-button mr-4">
-                    <input type="button" class="btn btn-primary btn-sm w-full button-search"
-                           :value="$t('search.submit')" @click="onSubmit()">
+                <div class="search-button">
+                    <input type="button" :value="$t('search.submit')" @click="onSubmit()">
                 </div>
 
-                <div class="more-button">
-                    <input type="button" class="btn btn-primary btn-sm w-full fa fa-trophy button-plus"
-                           :value="showFilters ? '-' : '+'" @click="toggleFilters()">
+                <div class="more-button" @click="toggleFilters()">
+                    <span>{{showFilters ? '-' : '+'}}</span>
                 </div>
 
             </div>
 
-            <div class="advanced-fields flex flex-col mt-4" v-show="showFilters">
+            <div class="advanced-fields" v-show="showFilters">
 
                 <multiselect v-model="countries" :options="countrieslist" :multiple="true" :close-on-select="false"
                              :clear-on-select="false" :preserve-search="false" :placeholder="$t('search.countries')"
@@ -51,7 +49,7 @@
                     <pre class="language-json"><code>{{ countries }}</code></pre>
                 </multiselect>
 
-                <div class="flex flex-row mt-4">
+                <div class="advanced-line2">
 
                     <multiselect v-model="audiences" :options="audienceslist" :multiple="true" :close-on-select="false"
                                  :clear-on-select="false" :preserve-search="false" :placeholder="$t('search.audiences')"
@@ -75,15 +73,17 @@
 
         <div class="container events-container">
 
-            <div class="flex" style="font-size: 14px;">
+            <div class="sub-category-title">Activities</div>
+
+            <!--<div class="flex" style="font-size: 14px;">
 
                 <div class="title events-count" v-if="events.length > 0 && !isLoading">{{pagination.total}}
                     {{pagination.total > 1 ? $t('search.events') : $t('search.event')}} {{$t('search.search_counter')}}
                 </div>
 
-            </div>
+            </div>-->
 
-            <div class="card-group grid mt-6">
+            <div class="card-group">
                 <a :href="'/view/' + event.id + '/' + event.slug" v-for="event in events" class="card-link">
                     <div class="card">
                         <img :src="thumbnail(event)" class="card-img-top">
@@ -134,7 +134,7 @@
                 countries: this.prpSelectedCountry,
                 audiences: [],
                 themes: [],
-                showFilters: true,
+                showFilters: false,
                 isLoading: false,
                 events: [],
                 pagination: {
@@ -208,7 +208,7 @@
 
 <style scoped>
 
-    .landing-wrapper {
+    /*.landing-wrapper {
         position: relative;
         height: 450px;
     }
@@ -323,7 +323,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    }*/
 </style>
 
 <style src="vue-multiselect/dist/vue-multiselect.min.css"></style>

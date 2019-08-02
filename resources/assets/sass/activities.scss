@@ -1,0 +1,186 @@
+.search-page-component{
+  position: relative;
+}
+
+.search-page-component .home-map .wtmap .wtfooter{
+  display:none;
+}
+
+.search-page-component .searchbox-container {
+  background-color: #E5E5E5;
+  padding: 18px 100px;
+}
+
+.search-page-component .searchbox-container .basic-fields{
+  display:flex;
+}
+
+.search-page-component .searchbox-container .basic-fields .search-text{
+  width:100%;
+  margin-right:15px;
+  flex: 1;
+}
+
+.search-page-component .searchbox-container .basic-fields .search-text input{
+  width:100%;
+  height:100%;
+  border-radius: 29px;
+  text-indent: 20px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  color: #C1C1C1;
+}
+
+.search-page-component .searchbox-container .basic-fields .year-selection {
+  margin-right:15px;
+}
+
+.search-page-component .searchbox-container .basic-fields .year-selection .multiselect .multiselect__tags{
+  border-radius: 29px;
+  padding-left: 15px;
+}
+
+.search-page-component .searchbox-container .basic-fields .year-selection .multiselect .multiselect__tags .multiselect__single {
+  color: $main-color;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 9px;
+}
+
+.search-page-component .searchbox-container .basic-fields .year-selection .multiselect .multiselect__select{
+  top:10px;
+}
+
+.search-page-component .searchbox-container .basic-fields .year-selection .multiselect .multiselect__select:before{
+  border-color: $main-color transparent transparent;
+}
+
+.search-page-component .searchbox-container .basic-fields .search-button{
+  margin-right:15px;
+}
+
+.search-page-component .searchbox-container .basic-fields .search-button input{
+  cursor: pointer;
+  height: 100%;
+  padding: 0px 25px;
+  border-radius: 29px;
+  background-color: $main-color;
+  color: $main-color4;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.search-page-component .searchbox-container .basic-fields .more-button{
+  width: 45px;
+  height: 45px;
+  border: 1px solid $main-color;
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  cursor:pointer;
+  margin-top:5px;
+}
+
+.search-page-component .searchbox-container .basic-fields .more-button span{
+  background-color: transparent;
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+  margin-top: -3px;
+  color: $main-color;
+  font-weight: bold;
+}
+
+.search-page-component .searchbox-container .advanced-fields .multiselect{
+  margin-top:18px;
+}
+
+.search-page-component .searchbox-container .advanced-fields .multiselect .multiselect__tags{
+  border-radius: 29px;
+  text-indent: 10px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.search-page-component .searchbox-container .advanced-fields .multiselect .multiselect__placeholder{
+  color: #C1C1C1;
+}
+
+
+#loadmask {
+  width: 100%;
+  height: 452px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+}
+#loadmask .loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-page-component .events-container {
+  width: auto;
+  margin: 50px 100px 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-page-component .events-container .card-group{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.search-page-component .events-container .card-link{
+  display: flex;
+  border-top: 1px solid #C6C6C6;
+  border-bottom: 1px solid #C6C6C6;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.search-page-component .events-container .card-link .card{
+  width:100%;
+}
+
+.search-page-component .events-container .card-link .card-img-top{
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  background-color: white;
+}
+
+.search-page-component .events-container .card-link .card-body .card-title{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 20px 0;
+  color: $main-color3;
+}
+
+.search-page-component .events-container .card-link .card-body .card-description{
+  font-size: 14px;
+  font-weight: normal;
+  margin: 20px 0;
+  color: $main-color3;
+}
+
+.sub-category-title{
+  color: $main-color;
+  font-size: 40px;
+  font-style: italic;
+  width:100%;
+  margin-bottom: 40px;
+}
