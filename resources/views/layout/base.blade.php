@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="{{App::getLocale()}}" class="no-js" >
+<html dir="ltr" lang="{{App::getLocale()}}" class="no-js">
 <head>
+@if(!isset(Request::header()["dnt"]))
     @include('layout.analytics')
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+@else
+    <!-- DO NOT TRACK removed Analytics -->
+    @endif
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -13,40 +17,39 @@
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 
 
-    <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet" />
+    <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet"/>
 
-        <link rel="stylesheet" href="{{asset('css/ext/cache.css')}}" type="text/css" />
+    <link rel="stylesheet" href="{{asset('css/ext/cache.css')}}" type="text/css"/>
 
 
     <!-- Theme stylesheets -->
     @if (Route::getCurrentRoute() && Route::getCurrentRoute()->uri() != 'home' && Route::getCurrentRoute()->uri() != '/')
-        <link rel="stylesheet" href="{{asset('css/ext/style.css')}}" type="text/css" />
-        <link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css" />
+        <link rel="stylesheet" href="{{asset('css/ext/style.css')}}" type="text/css"/>
+        <link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css"/>
     @else
-        <link rel="stylesheet" href="{{asset('css/ext/home.css')}}" type="text/css" />
+        <link rel="stylesheet" href="{{asset('css/ext/home.css')}}" type="text/css"/>
     @endif
-    <link rel="stylesheet" href="{{asset('css/ext/dark.css')}}" type="text/css" />
-    <link rel="stylesheet" href="{{asset('css/font-icons.css')}}" type="text/css" />
+    <link rel="stylesheet" href="{{asset('css/ext/dark.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{asset('css/font-icons.css')}}" type="text/css"/>
 
-    <link rel="stylesheet" href="{{asset('css/ext/responsive.css')}}" type="text/css" />
+    <link rel="stylesheet" href="{{asset('css/ext/responsive.css')}}" type="text/css"/>
 
     @if(App::getLocale() == 'lt' || App::getLocale() == 'me' ||
         App::getLocale() == 'rs' || App::getLocale() == 'lv')
         <style>
             body {
-                font-family:'Open Sans', sans-serif;
+                font-family: 'Open Sans', sans-serif;
             }
         </style>
     @endif
 
 
-    <link rel="stylesheet" href="{{asset('css/ext/colors.css')}}" type="text/css" />
-
+    <link rel="stylesheet" href="{{asset('css/ext/colors.css')}}" type="text/css"/>
 
 
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="{{asset('css/custom.css') }}" media="screen" rel="stylesheet" />
+    <link href="{{asset('css/custom.css') }}" media="screen" rel="stylesheet"/>
 
     @yield('extra-css')
 
@@ -63,7 +66,8 @@
     </script>
 
     <!-- Title, keywords, description -->
-    <meta name="description" content="October 5 - 20, 2019: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding." />
+    <meta name="description"
+          content="October 5 - 20, 2019: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding."/>
 
 
     <title>Europe Code Week</title>
@@ -75,13 +79,15 @@
 <body>
 
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHDNFHF"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHDNFHF"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <!-- Document Wrapper -->
 <div id="app">
-
+    @include('cookieConsent::index')
     @include('layout.top_navigation')
 
 
@@ -92,6 +98,7 @@
 </div>
 
 @include('layout.footer')
+
 
 
 <!-- Scripts -->
@@ -117,9 +124,6 @@
 @stack('scripts')
 
 @yield('extra-js')
-
-
-
 
 
 </body>
