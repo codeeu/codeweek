@@ -43,7 +43,9 @@
     <div id="app">
         @include('layout.header')
 
-        @yield("content")
+        <section id="content">
+            @yield("content")
+        </section>
 
         <flash message="{{ session('flash') }}"></flash>
 

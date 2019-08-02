@@ -2,12 +2,12 @@
 
 return [
 
-    'about' => 'EU Code Week is a grassroots initiative which aims to bring coding and digital literacy to <span class="blue-color">everybody</span> in a fun and engaging way…',
-    'when' => '5-20 October 2019',
-    'when_text' => 'Learning to code helps us make sense of the rapidly changing world around us. Join millions of fellow organisers and participants to inspire the development of coding and computational thinking skills in order to explore new ideas and innovate for the future.',
-    'school_banner_title' => 'Get involved!',
-    'school_banner_text' => 'Are you a teacher?',
-    'school_banner_text2' => 'Find out how to get involved!',
+    'about' => 'A Semana Europeia da Programa&ccedil;&atilde;o &eacute; uma iniciativa popular que visa levar a programa&ccedil;&atilde;o e a literacia digital a todos de uma forma divertida e atrativa...',
+    'when' => '5-20 de outubro de 2019',
+    'when_text' => 'Aprender a programar ajuda-nos a entender o mundo em r&aacute;pida evolu&ccedil;&atilde;o &agrave; nossa volta, a expandir o nosso conhecimento sobre o funcionamento da tecnologia e a desenvolver compet&ecirc;ncias e capacidades para explorar novas ideias e inovar.',
+    'school_banner_title' => 'Participe!',
+    'school_banner_text' => 'É professor(a)?',
+    'school_banner_text2' => 'Clique aqui para saber como pode participar!',
     'organize_activity_title' => 'Organise or join an activity',
     'organize_activity_text' => 'Anyone is welcome to organise or join  an activity. Just pick a topic and a target audience and <a href="/add">add your activity</a> to <a href="/events">the map</a>, or browse for events in your area.',
     'get_started_title' => 'Get started',

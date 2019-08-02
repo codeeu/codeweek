@@ -21,6 +21,7 @@ header #logo {
 header nav{
   flex: 1;
   height: 50px;
+  max-width: 753px;
 }
 
 header nav ul {
@@ -202,6 +203,7 @@ header .menu-dropdown{
   padding: 15px 25px;
   right:0;
   box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+  z-index: 1000;
 }
 
 header .lang-menu .menu-dropdown,
