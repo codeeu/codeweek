@@ -156,3 +156,111 @@ html{
 
 }
 
+/* Cookie Consent */
+
+@media print {
+    .cookie-consent-banner {
+        display: none !important;
+    }
+}
+.cookie-consent-banner {
+    max-width: 944px;
+    min-width: 200px;
+    position: relative;
+    z-index: 999;
+    font-family: Arial,sans-serif;
+    font-size: small;
+    color: black;
+    overflow: auto;
+    text-align: left;
+
+    background: #004494
+}
+.contrast .cookie-consent-banner {
+    background: #000000;
+    color: #FFFF00
+}
+.font-size-1 .cookie-consent-banner{
+    font-size: small;
+}
+.font-size-2  .cookie-consent-banner{
+    font-size: medium;
+}
+.font-size-3  .cookie-consent-banner{
+    font-size: large;
+}
+#cookie-consent-banner h2{
+    margin: 0;
+    padding: 0;
+    color: #fff !important;
+    font-size: 150%;
+    font-weight: normal;
+    border: none;
+}
+.contrast .cookie-consent-banner h2{
+    color: #FFFF00
+}
+.cookie-consent-banner p{
+    color: #fff;
+}
+.contrast .cookie-consent-banner p{
+    color: #FFFF00
+}
+
+#cookie-consent-banner .cookie-consent-inform a{
+    color: #fff;
+    text-decoration: underline !important
+}
+.contrast .cookie-consent-inform a{
+    color: #00FFFF;
+}
+#cookie-consent-banner .cookie-consent-inform a:hover, .cookie-consent-inform a:active, .cookie-consent-inform a:focus{
+    text-decoration: none;
+}
+#cookie-consent-banner .cookie-consent-inform a:visited{
+    text-decoration: underline;
+    color: #fff;
+}
+.contrast .cookie-consent-inform a:hover, .cookie-consent-inform a:active, .cookie-consent-inform a:focus{
+    color: #00FFFF;
+}
+
+#cookie-consent-banner .cookie-consent-actions{
+    float: left;
+    margin-bottom: 5px;
+    padding: 10px 0;
+}
+#cookie-consent-banner .cookie-consent-actions a{
+    white-space: nowrap;
+    text-decoration: none;
+    background: #004494;
+    padding: 10px 15px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.contrast .cookie-consent-actions a{
+    color: #00FFFF;
+    background: #000000;
+    border: 0;
+}
+#cookie-consent-banner .cookie-consent-actions a:hover, .cookie-consent-actions a:active, .cookie-consent-actions a:focus{
+    color: #fff;
+    background: #002F67;
+}
+.contrast .cookie-consent-actions a:hover, .cookie-consent-actions a:active, .cookie-consent-actions a:focus{
+    color: #fff;
+    background: #000000;
+    border: 0;
+}
+.cookie-consent-container{
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
+

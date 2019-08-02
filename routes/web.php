@@ -14,6 +14,7 @@
 use Illuminate\Http\Request;
 
 
+
 Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
 
     Route::get('/', function ($subdomain) {
