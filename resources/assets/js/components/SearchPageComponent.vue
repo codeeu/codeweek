@@ -22,20 +22,22 @@
                            v-on:keyup.13="onSubmit()" :placeholder="$t('search.search_placeholder')">
                 </div>
 
-                <div class="year-selection">
-                    <multiselect v-model="year" :options="years" :multiple="false" :close-on-select="true"
-                                 :clear-on-select="false" :preserve-search="false" placeholder="Year"
-                                 :show-labels="false" :preselect-first="true" :searchable="false" :allowEmpty="false">
-                        <pre class="language-json"><code>{{ year  }}</code></pre>
-                    </multiselect>
-                </div>
+                <div class="right-fields">
+                    <div class="year-selection">
+                        <multiselect v-model="year" :options="years" :multiple="false" :close-on-select="true"
+                                     :clear-on-select="false" :preserve-search="false" placeholder="Year"
+                                     :show-labels="false" :preselect-first="true" :searchable="false" :allowEmpty="false">
+                            <pre class="language-json"><code>{{ year  }}</code></pre>
+                        </multiselect>
+                    </div>
 
-                <div class="search-button">
-                    <input type="button" :value="$t('search.submit')" @click="onSubmit()">
-                </div>
+                    <div class="search-button">
+                        <input type="button" :value="$t('search.submit')" @click="onSubmit()">
+                    </div>
 
-                <div class="more-button" @click="toggleFilters()">
-                    <span>{{showFilters ? '-' : '+'}}</span>
+                    <div class="more-button" @click="toggleFilters()">
+                        <span>{{showFilters ? '-' : '+'}}</span>
+                    </div>
                 </div>
 
             </div>
@@ -205,125 +207,5 @@
         }
     }
 </script>
-
-<style scoped>
-
-    /*.landing-wrapper {
-        position: relative;
-        height: 450px;
-    }
-
-    #loadmask {
-        position: absolute;
-        height: 760px;
-        width: 100%;
-        top: 110px;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .loading {
-        background-color: white;
-        padding: 15px;
-        border-radius: 10px;
-    }
-
-    .events-map-wrapper {
-        position: absolute;
-        width: 100%;
-        height: 450px;
-    }
-
-    .card-link .card {
-        border-width: 1px;
-        border-radius: 8px;
-        height: 500px;
-        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
-    }
-
-    .card-link .card:hover {
-        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.30);
-    }
-
-    .input-text {
-        min-height: 40px;
-        border-radius: 5px;
-        border: 1px solid #e8e8e8;
-        font-size: 14px;
-        font-family: 'Lato'
-    }
-
-    .button-search {
-        border-radius: 5px;
-        width: 120px;
-        height: 40px;
-    }
-
-    .button-plus {
-        border-radius: 5px;
-        width: 40px;
-        height: 40px;
-    }
-
-    .events-container {
-        margin-top: 20px;
-    }
-
-    .events-page {
-        margin-left: 20px;
-        font-weight: bold;
-        flex: 1;
-        justify-content: flex-end;
-        display: flex;
-        display: -webkit-box;
-    }
-
-    .searchbox-container {
-        position: relative;
-        margin-top: 120px;
-        background-color: rgba(68, 68, 68, 0.8);
-        border-radius: 8px;
-    }
-
-    .card-group {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .card img {
-        width: 100%;
-        object-fit: cover;
-        height: 200px;
-        background-color: white;
-        border-radius: 8px 8px 0px 0px;
-        border-bottom: 1px solid #EEEEEE;
-    }
-
-    .card-body {
-        padding: 15px;
-    }
-
-    .card-title {
-        font-size: 20px;
-        height: 60px;
-        overflow: hidden;
-    }
-
-    .card-description {
-        font-size: 15px;
-        overflow: hidden;
-        padding-top: 10px;
-        height: 140px;
-        color: black;
-    }
-
-    .pagination {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }*/
-</style>
 
 <style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
