@@ -1,0 +1,37 @@
+.codeweek-more-button{
+  width: 45px;
+  height: 45px;
+  border: 1px solid $main-color;
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  cursor:pointer;
+  margin-top:5px;
+}
+.codeweek-more-button span{
+  background-color: transparent;
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+  margin-top: -3px;
+  color: $main-color;
+  font-weight: bold;
+}
+.codeweek-button input{
+  cursor: pointer;
+  height: 100%;
+  padding: 0px 25px;
+  border-radius: 29px;
+  background-color: $main-color;
+  color: $main-color4;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.codeweek-blank-button{
+  border: 1px solid #707070;
+  border-radius: 32px;
+  color: $main-color3;
+  font-size: 20px;
+  padding: 20px 40px;
+}

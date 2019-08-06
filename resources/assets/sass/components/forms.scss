@@ -1,0 +1,40 @@
+.multiselect .multiselect__tags{
+  border-radius: 29px;
+  min-height: 57px;
+}
+.multiselect .multiselect__select{
+  width: 60px;
+  height: 54px;
+}
+.multiselect .multiselect__placeholder,
+.multiselect .multiselect__single{
+  padding-top: 10px;
+  padding-left: 12px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  color: $main-color;
+}
+.multiselect .multiselect__single {
+  padding-top: 6px;
+}
+.multiselect .multiselect__select:before {
+  border-color: $main-color transparent transparent;
+}
+.multiselect .multiselect__tags-wrap{
+  display: inline-table;
+  padding: 5px 0 5px 10px;
+}
+.codeweek-search-text{
+  flex:1;
+  margin-right: 10px;
+}
+
+.codeweek-search-text input{
+  width:100%;
+  border-radius: 29px;
+  height:57px;
+  text-indent: 20px;
+  font-size: 18px;
+  font-style: italic;
+}
