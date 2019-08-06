@@ -12,13 +12,13 @@
             <div class="loading"><img src="img/loading.gif" style="margin-right:10px;">Loading...</div>
         </div>
 
-        <div class="searchbox-container">
+        <div class="codeweek-searchbox">
 
             <div class="basic-fields">
 
 
-                <div class="search-text">
-                    <input type="text" class="input-text" v-model="query"
+                <div class="codeweek-search-text">
+                    <input type="text" v-model="query"
                            v-on:keyup.13="onSubmit()" :placeholder="$t('search.search_placeholder')">
                 </div>
 
@@ -31,11 +31,11 @@
                         </multiselect>
                     </div>
 
-                    <div class="search-button">
+                    <div class="codeweek-button">
                         <input type="button" :value="$t('search.submit')" @click="onSubmit()">
                     </div>
 
-                    <div class="more-button" @click="toggleFilters()">
+                    <div class="codeweek-more-button" @click="toggleFilters()">
                         <span>{{showFilters ? '-' : '+'}}</span>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
 
         </div>
 
-        <div class="container events-container">
+        <div class="codeweek-content-wrapper">
 
             <div class="sub-category-title">Activities</div>
 
@@ -85,7 +85,7 @@
 
             </div>-->
 
-            <div class="card-group">
+            <div class="codeweek-card-group">
                 <a :href="'/view/' + event.id + '/' + event.slug" v-for="event in events" class="card-link">
                     <div class="card">
                         <img :src="thumbnail(event)" class="card-img-top">
