@@ -1,5 +1,4 @@
-<!-- Header -->
-<header id="header">
+<header>
     <div id="logo-wrapper">
         <a id="primary-menu-trigger" href="/"><img class="menu" src="/images/menu.svg"><img class="close hide" src="/images/close_menu.svg"></a>
         <a id="logo" href="/"><img src="/images/logo.svg" alt="CodeWeek"></a>
@@ -163,4 +162,3 @@
         </div>
     </div>
 </header>
-<!-- Header End -->

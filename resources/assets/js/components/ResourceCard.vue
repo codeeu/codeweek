@@ -1,61 +1,62 @@
 <template>
 
-    <div class="min-w-full flex flex-col">
+    <div class="card-link">
 
-        <div class="flex flex-col justify-between">
-            <img class="w-48 block rounded-b"
-                 :src="thumbnail">
+        <div class="card">
+
+            <img :src="thumbnail" class="card-img-top">
 
             <a :href="resource.source" target="_blank"
                class="mt-2 text-center inline-block border text-base m-1 border-orange bg-orange-light rounded hover:border-orange-dark text-grey-lighter hover:bg-orange-dark hover:text-orange-lighter py-0 px-1">Visit</a>
-        </div>
 
-        <div class="w-full bg-white p-4 flex flex-col justify-between leading-normal">
-            <div class="mb-8">
-                <div class="text-black font-bold text-xl mb-2">{{resource.name}}</div>
-                <div class="text-grey-darker text-base"><span class="text-black font-bold">Description:</span>
-                    {{resource.description}}
+            <div class="card-body">
+                <div class="mb-8">
+                    <div class="text-black font-bold text-xl mb-2">{{resource.name}}</div>
+                    <div class="text-grey-darker text-base"><span class="text-black font-bold">Description:</span>
+                        {{resource.description}}
+                    </div>
+
+                    <div class="text-grey-darker text-base"><span class="text-black font-bold">Type:</span>
+                        <span v-for="type in resource.types">
+                        <resource-pill :property="type"></resource-pill>
+                        </span>
+                    </div>
+
+                    <div v-show="isOpen">
+                        <div class="text-grey-darker text-base"><span class="text-black font-bold">Level:</span>
+                            <span v-for="level in resource.levels">
+                            <resource-pill :property="level"></resource-pill>
+                            </span>
+                        </div>
+
+                        <div class="text-grey-darker text-base"><span
+                                class="text-black font-bold">Programming Languages:</span>
+                            <span v-for="programmingLanguage in resource.programming_languages">
+                            <resource-pill :property="programmingLanguage"></resource-pill>
+                            </span>
+                        </div>
+
+                        <div class="text-grey-darker text-base"><span class="text-black font-bold">Categories:</span>
+                            <span v-for="category in resource.categories">
+                            <resource-pill :property="category"></resource-pill>
+                            </span>
+                        </div>
+
+                        <div class="text-grey-darker text-base"><span class="text-black font-bold">Languages:</span>
+                            <span v-for="language in resource.languages">
+                            <resource-pill :property="language"></resource-pill>
+                            </span>
+                        </div>
+                    </div>
+
+                    <button @click="toggle()" type="button" class="mt-4 btn btn-sm btn-light">{{button.text}}
+                    </button>
+
                 </div>
-
-                <div class="text-grey-darker text-base"><span class="text-black font-bold">Type:</span>
-                    <span v-for="type in resource.types">
-                    <resource-pill :property="type"></resource-pill>
-                    </span>
-                </div>
-
-                <div v-show="isOpen">
-                    <div class="text-grey-darker text-base"><span class="text-black font-bold">Level:</span>
-                        <span v-for="level in resource.levels">
-                        <resource-pill :property="level"></resource-pill>
-                        </span>
-                    </div>
-
-                    <div class="text-grey-darker text-base"><span
-                            class="text-black font-bold">Programming Languages:</span>
-                        <span v-for="programmingLanguage in resource.programming_languages">
-                        <resource-pill :property="programmingLanguage"></resource-pill>
-                        </span>
-                    </div>
-
-                    <div class="text-grey-darker text-base"><span class="text-black font-bold">Categories:</span>
-                        <span v-for="category in resource.categories">
-                        <resource-pill :property="category"></resource-pill>
-                        </span>
-                    </div>
-
-                    <div class="text-grey-darker text-base"><span class="text-black font-bold">Languages:</span>
-                        <span v-for="language in resource.languages">
-                        <resource-pill :property="language"></resource-pill>
-                        </span>
-                    </div>
-                </div>
-
-                <button @click="toggle()" type="button" class="mt-4 btn btn-sm btn-light">{{button.text}}
-                </button>
 
             </div>
-
         </div>
+
     </div>
 
 

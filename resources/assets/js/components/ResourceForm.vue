@@ -1,7 +1,7 @@
 <template>
 
 
-    <div class="resourceform">
+    <div class="codeweek-resourceform-component">
 
         <div class="codeweek-searchbox">
 

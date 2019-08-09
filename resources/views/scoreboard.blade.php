@@ -2,14 +2,19 @@
 
 @section('content')
 
+    <section id="codeweek-scoreboard-page" class="codeweek-page">
 
+        <section class="codeweek-banner scoreboard">
+            <div class="text">
+                <h2>#Codeweek</h2>
+                <h1>@lang('event.scoreboard_by_country')</h1>
+            </div>
+            <div class="image">
+                <img src="images/banner_scoreboard.svg" class="static-image">
+            </div>
+        </section>
 
-    <div class="container">
-
-
-        <div class="content-wrap">
-
-            <div class="container clearfix">
+        <section class="codeweek-content-wrapper">
 
                 <div class="heading-block center">
                     <h1>@lang('scoreboard.title')</h1>
@@ -35,8 +40,6 @@
                     </div>
 
                 </form>
-
-
 
                 <div class="sb-wrapper">
                     <ol class="one-row">
@@ -64,9 +67,9 @@
 
                     </ol>
                 </div>
-            </div>
-        </div>
-    </div>
+
+        </section>
+    </section>
 
 
 

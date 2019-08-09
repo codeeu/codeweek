@@ -5,7 +5,6 @@ header{
   height: 156px;
   display: flex;
   align-items: center;
-  padding-right: 18px;
   background-color: $main-color4;
 }
 
@@ -30,6 +29,7 @@ header nav ul {
   height: 50px;
   display: flex;
   align-items: center;
+  margin: 0;
 }
 
 header nav ul li{
@@ -101,6 +101,7 @@ header nav ul li ul li a:hover{
 header #right-menu{
   display: flex;
   align-items: flex-end;
+  padding-right: 25px;
 }
 
 header #right-menu .round-button,
@@ -472,6 +473,7 @@ header .lang-menu .menu-dropdown ul li:hover a{
   header #right-menu {
     justify-content: flex-end;
     flex: 1;
+    margin-right: 18px;
   }
 
 }
