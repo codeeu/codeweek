@@ -1,12 +1,5 @@
-@tailwind preflight;
-
-@tailwind components;
-
-@tailwind utilities;
-
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
-
 
 @font-face {
   font-family: 'OCR A Std';
@@ -17,27 +10,53 @@
 @import "variables";
 
 
-// Import components area
-@import "header";
-@import "homepage";
-@import "footer";
-@import "activities";
-@import "resources";
+// Import components
+@import "components/header";
+@import "components/footer";
 @import "components/banner";
 @import "components/searchbox";
 @import "components/forms";
 @import "components/buttons";
 @import "components/cardgroup";
 
+//Import pages
+@import "pages/homepage";
+@import "pages/activities";
+@import "pages/resources";
+@import "pages/about";
+
 // General classes
 
 body{
+  margin:0;
   font-family: $body-font-family;
   background-color: #EEEEEE;
 }
 a{
   color: $main-color2;
   text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+input {
+  margin: 0;
+  line-height: 1.15;
+  border: 0;
+  font-family: inherit;
+}
+blockquote, dd, dl, figure, h1, h2, h3, h4, h5, h6, p, pre {
+  margin: 0;
+}
+button{
+  cursor: pointer;
+  background-color: transparent;
+}
+h1 {
+  color: $main-color;
+  font-weight: bold;
+  font-size: 28px;
 }
 .show {
   display: block!important;
@@ -56,7 +75,7 @@ a{
   color: $main-color4 !important;
 }
 
-#content{
+main{
   margin-left:auto;
   margin-right:auto;
   max-width: 1280px;
@@ -83,12 +102,18 @@ a{
 }
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 @media (min-width:641px)  {
+  h1 {
+    font-size: 35px;
+  }
   .codeweek-content-wrapper{
     margin: 40px 60px 0 60px;
   }
 }
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:961px)  {
+  h1 {
+    font-size: 40px;
+  }
   .codeweek-content-wrapper{
     margin: 50px 100px 0 100px;
   }

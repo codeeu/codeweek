@@ -5,59 +5,7 @@
           rel="stylesheet" type="text/css"/>
 
 
-    <div class="resources-container">
-
-        {{--<section class="codeweek-banner training">
-            <div class="text">
-                <h1>Training</h1>
-                <h2>CODEWEEK</h2>
-                <h2>LEARNING BITS</h2>
-            </div>
-            <div class="image">
-                <img src="images/banner_training.svg" class="static-image">
-            </div>
-        </section>
-
-        <section class="codeweek-banner ambassadors">
-            <div class="text">
-                <h2>#Codeweek</h2>
-                <h1>Ambassadors</h1>
-            </div>
-            <div class="image">
-                <img src="images/banner_ambassadors.svg" class="static-image">
-            </div>
-        </section>
-
-        <section class="codeweek-banner scoreboard">
-            <div class="text">
-                <h2>#Codeweek</h2>
-                <h1>Scoreboard</h1>
-            </div>
-            <div class="image">
-                <img src="images/banner_scoreboard.svg" class="static-image">
-            </div>
-        </section>
-
-        <section class="codeweek-banner about">
-            <div class="text">
-                <h2>#Codeweek</h2>
-                <h1>About</h1>
-            </div>
-            <div class="image">
-                <img src="images/banner_about.svg" class="static-image">
-            </div>
-        </section>
-
-        <section class="codeweek-banner training">
-            <div class="text">
-                <h1>Why</h1>
-                <h2>BRING CODEWEEK</h2>
-                <h2>TO YOUR STUDENTS</h2>
-            </div>
-            <div class="image">
-                <img src="images/banner_training.svg" class="static-image">
-            </div>
-        </section>--}}
+    <section id="codeweek-resources-page" class="codeweek-page">
 
         <section class="codeweek-banner learn-teach">
             <div class="text">
@@ -65,18 +13,9 @@
                 <h1>@lang('menu.'.$section)</h1>
             </div>
             <div class="image">
-                <img src="images/banner_learn_teach.svg" class="static-image">
+                <img src="/images/banner_learn_teach.svg" class="static-image">
             </div>
         </section>
-
-        {{--<div class="flex flex-col justify-center text-center w-full">
-            @if ($section === "teach")
-
-                    <a href="/training">
-                        <img src="/img/banner_training_horizontal.svg" class=" lg:-mt-1 mb-6" style="max-width:1340px">
-                    </a>
-            @endif
-        </div>--}}
 
         <resource-form
                 :prp-query="'{{$query}}'"
@@ -96,8 +35,32 @@
                 :locale="'{{App::getLocale()}}'"
         ></resource-form>
 
+        {{--<section class="codeweek-banner training">
+            <div class="text">
+                <h1>Training</h1>
+                <h2>CODEWEEK</h2>
+                <h2>LEARNING BITS</h2>
+            </div>
+            <div class="image">
+                <img src="images/banner_training.svg" class="static-image">
+            </div>
+        </section>
 
-    </div>
+        <section class="codeweek-banner training">
+            <div class="text">
+                <h1>Why</h1>
+                <h2>BRING CODEWEEK</h2>
+                <h2>TO YOUR STUDENTS</h2>
+            </div>
+            <div class="image">
+                <img src="images/banner_training.svg" class="static-image">
+            </div>
+        </section>--}}
+
+
+
+
+    </section>
 
 
 @endsection

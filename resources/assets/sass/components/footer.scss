@@ -1,16 +1,16 @@
-#footer{
+footer{
   margin-left: auto;
   margin-right: auto;
   max-width: 1280px;
   background-color: $main-color4;
 }
-#footer .content .question{
+footer .content .question{
   display: flex;
   flex-direction: column;
   background-color: #40B5D1;
   padding-top: 65px;
 }
-#footer .content .question .text{
+footer .content .question .text{
   color: $main-color4;
   padding: 0 70px;
   text-align: center;
@@ -18,13 +18,13 @@
   font-weight: bold;
   margin-bottom: 30px;
 }
-#footer .content .question .get-in-touch{
+footer .content .question .get-in-touch{
   display: flex;
   position: relative;
   justify-content: center;
   margin-bottom: -12px;
 }
-#footer .content .question .get-in-touch .button{
+footer .content .question .get-in-touch .button{
   position: absolute;
   top: 105px;
   color: #40B5D1;
@@ -33,69 +33,69 @@
   font-style: italic;
   padding: 20px;
   background-color: $main-color4;
-  width: 260px;
+  width: 215px;
   border-radius: 30px;
   text-align: center;
 }
-#footer .content .about{
+footer .content .about{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
 }
-#footer .content .phrase {
+footer .content .phrase {
   font-size: 14px;
   color: gray;
   text-align: center;
   padding: 20px 60px;
 }
-#footer .content .bubbles_footer{
+footer .content .bubbles_footer{
   margin-left: -50%;
   margin-top: -60px;
 }
 
-#footer .logo_footer{
+footer .logo_footer{
   display: none;
 }
 
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:961px)  {
-  #footer{
+  footer{
     padding-top:40px;
   }
-  #footer .content .question{
+  footer .content .question{
     padding-top:0;
   }
-  #footer .content .question{
+  footer .content .question{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
-  #footer .content .question .text{
+  footer .content .question .text{
     margin-bottom: 0;
     padding:0;
     font-size: 30px;
     margin-right: 105px;
   }
-  #footer .content .question .get-in-touch{
+  footer .content .question .get-in-touch{
     margin-bottom: 20px;
     margin-top: -12px;
   }
-  #footer .content .about{
+  footer .content .about{
     flex-direction: row-reverse;
     margin-top: 0;
     margin-right: 15px;
   }
-  #footer .logo_footer{
+  footer .logo_footer{
     display: initial;
   }
-  #footer .content .bubbles_footer {
+  footer .content .bubbles_footer {
     margin-top: -118px;
     margin-left: -20px;
   }
-  #footer .content .phrase {
+  footer .content .phrase {
     padding: 0px 50px;
   }
 }

@@ -1,21 +1,21 @@
-.search-page-component .home-map .wtmap .wtfooter{
+#codeweek-searchpage-component .home-map .wtmap .wtfooter{
   display:none;
 }
-.search-page-component .codeweek-searchbox .basic-fields .right-fields{
+#codeweek-searchpage-component .codeweek-searchbox .basic-fields .right-fields{
   display: flex;
 }
-.search-page-component .codeweek-searchbox .basic-fields .codeweek-button,
-.search-page-component .codeweek-searchbox .basic-fields .year-selection{
+#codeweek-searchpage-component .codeweek-searchbox .basic-fields .codeweek-button,
+#codeweek-searchpage-component .codeweek-searchbox .basic-fields .year-selection{
   margin-right:10px;
 }
-.search-page-component .codeweek-searchbox .basic-fields{
+#codeweek-searchpage-component .codeweek-searchbox .basic-fields{
   flex-direction: column;
 }
-.search-page-component .codeweek-searchbox .basic-fields .right-fields{
+#codeweek-searchpage-component .codeweek-searchbox .basic-fields .right-fields{
   margin-top: 10px;
   justify-content: center;
 }
-.search-page-component{
+#codeweek-searchpage-component{
   position: relative;
   padding-bottom: 30px;
 }
@@ -58,10 +58,10 @@
 }
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:961px)  {
-  .search-page-component .codeweek-searchbox .basic-fields{
+  #codeweek-searchpage-component .codeweek-searchbox .basic-fields{
     flex-direction: row;
   }
-  .search-page-component .codeweek-searchbox .basic-fields .right-fields{
+  #codeweek-searchpage-component .codeweek-searchbox .basic-fields .right-fields{
     margin-top:0;
   }
 }

@@ -43,13 +43,13 @@
     <div id="app">
         @include('layout.header')
 
-        <section id="content">
+        <main>
             @yield("content")
-        </section>
-
-        <flash message="{{ session('flash') }}"></flash>
+        </main>
 
         @include('layout.footer')
+
+        <flash message="{{ session('flash') }}"></flash>
     </div>
 
 

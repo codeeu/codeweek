@@ -58,6 +58,7 @@
   }
   .codeweek-banner .text{
     margin: 90px 0 0 100px;
+    max-width: 330px;
   }
   .codeweek-banner .image{
     margin: 0 20px 0 0;
@@ -76,7 +77,7 @@
 /* hi-res laptops and desktops */
 @media (min-width:1281px) {
   .codeweek-banner.ambassadors .image{
-    margin-top: -51px;
+    margin-top: -40px;
     margin-right: 0;
   }
   .codeweek-banner .text{

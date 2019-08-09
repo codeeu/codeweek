@@ -1,5 +1,5 @@
 <template>
-    <div class="search-page-component">
+    <section id="codeweek-searchpage-component" class="codeweek-page">
         <div class="home-map">
             <div class="landing-wrapper">
                 <div class="events-map-wrapper">
@@ -107,7 +107,7 @@
 
         </div>
 
-    </div>
+    </section>
 
 </template>
 

@@ -1,16 +1,21 @@
 @extends('layout.base')
 
 @section('content')
-    <section>
+
+    <section id="codeweek-ambassadors-page" class="codeweek-page">
+
+        <section class="codeweek-banner ambassadors">
+            <div class="text">
+                <h2>#Codeweek</h2>
+                <h1>@lang('menu.ambassadors')</h1>
+            </div>
+            <div class="image">
+                <img src="images/banner_ambassadors.svg" class="static-image">
+            </div>
+        </section>
 
 
-        <div class="container">
-
-
-            <div class="content-wrap nopadding">
-
-
-                <div class="container clearfix ">
+        <section class="codeweek-content-wrapper">
 
 
                     <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
@@ -113,50 +118,42 @@
                         @endforelse
                     </div>
 
+                    <div id="showcountries">
 
-                </div>
+                        <ul class="clearfix list-style-none">
+                            <li style="clear:left">@lang('ambassador.countries_with_ambassadors')</li>
 
-
-                <div id="showcountries">
-
-                    <ul class="clearfix list-style-none">
-                        <li style="clear:left">@lang('ambassador.countries_with_ambassadors')</li>
-
-                        @foreach ($countries_with_ambassadors as $country)
+                            @foreach ($countries_with_ambassadors as $country)
 
 
-                            <li>
-                                <a href="/ambassadors?country_iso={{$country->country_iso}}">
-                                    <div class="country-link" data-name="{{$country->country_iso}}">
+                                <li>
+                                    <a href="/ambassadors?country_iso={{$country->country_iso}}">
+                                        <div class="country-link" data-name="{{$country->country_iso}}">
 
-                                        <img src="https://s3-eu-west-1.amazonaws.com/codeweek-s3/flags/{{strtolower($country->country_iso)}}.png"
-                                             alt="{{$country->country_iso}}">
+                                            <img src="https://s3-eu-west-1.amazonaws.com/codeweek-s3/flags/{{strtolower($country->country_iso)}}.png"
+                                                 alt="{{$country->country_iso}}">
 
-                                        <div class="country-name {{strtolower($country->name)}}">
-                                            @lang('countries.'.$country->name) ({{$country->total}})
+                                            <div class="country-name {{strtolower($country->name)}}">
+                                                @lang('countries.'.$country->name) ({{$country->total}})
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </li>
+                                    </a>
+                                </li>
 
-                        @endforeach
-
-
-                    </ul>
-                    <br/>
-                    <p style="text-align: center"><a
-                                href="/beambassador">@lang('ambassador.why_dont_you_volunteer')</a></p>
+                            @endforeach
 
 
-                </div>
+                        </ul>
+                        <br/>
+                        <p style="text-align: center"><a
+                                    href="/beambassador">@lang('ambassador.why_dont_you_volunteer')</a></p>
 
 
-                {{ $ambassadors->appends(['country_iso'=>app('request')->input('country_iso')])->links() }}
+                        {{ $ambassadors->appends(['country_iso'=>app('request')->input('country_iso')])->links() }}
 
+                    </div>
 
-            </div>
-        </div>
-
+            </section>
     </section>
 
 @endsection

@@ -1,5 +1,4 @@
-<!-- Footer -->
-<footer id="footer">
+<footer>
     <div class="content">
         <div class="question">
             <div class="text">
@@ -18,4 +17,3 @@
         </div>
     </div>
 </footer>
-<!-- Footer End -->
