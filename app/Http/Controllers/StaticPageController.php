@@ -34,5 +34,13 @@ class StaticPageController extends Controller
 
     }
 
+    public function static(Request $request)
+    {
+
+        $routeName = Route::currentRouteName();
+        return view('static.' . $routeName);
+
+    }
+
 
 }

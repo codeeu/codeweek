@@ -101,7 +101,7 @@
 
             </div>
 
-            <pagination class="pagination" v-if="pagination.last_page > 1  && !isLoading"
+            <pagination v-if="pagination.last_page > 1  && !isLoading"
                         :pagination="pagination" :offset="5" @paginate="paginate()"></pagination>
 
 

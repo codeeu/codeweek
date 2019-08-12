@@ -1,19 +1,34 @@
 <template>
 
-        <nav class="pagination is-centered is-rounded" role="navigation" aria-label="pagination">
-        <ul class="flex list-reset border border-grey-light rounded w-auto font-sans">
-
-                <li><a class="block hover:text-white hover:bg-blue text-blue border-r border-grey-light px-3 py-2 cursor-pointer" @click.prevent="changePage(pagination.current_page - 1)" :disabled="pagination.current_page <= 1">Previous</a></li>
-                <li v-for="page in pages">
-                        <a v-if="pagination.current_page != page" class="block hover:text-white cursor-pointer hover:bg-blue text-blue border-r border-grey-light px-3 py-2" @click.prevent="changePage(page)">{{ page }}</a>
-                        <a v-else class="block text-white bg-blue-light border-r border-blue-light px-3 py-2 cursor-not-allowed">{{ page }}</a>
-
-                </li>
-                <li><a class="block hover:text-white hover:bg-blue text-blue px-3 py-2 cursor-pointer" @click.prevent="changePage(pagination.current_page + 1)" :disabled="pagination.current_page >= pagination.last_page">Next</a></li>
-
-        </ul>
+        <nav class="codeweek-pagination" role="navigation" aria-label="pagination">
+                <ul>
+                        <li>
+                                <a class="back"
+                                   @click.prevent="changePage(pagination.current_page - 1)"
+                                   :disabled="pagination.current_page <= 1">
+                                        Previous
+                                </a>
+                        </li>
+                        <li v-for="page in pages">
+                                <a v-if="pagination.current_page != page"
+                                   class="page"
+                                   @click.prevent="changePage(page)">
+                                        {{ page }}
+                                </a>
+                                <a v-else
+                                   class="page current">
+                                        {{ page }}
+                                </a>
+                        </li>
+                        <li>
+                                <a class="next"
+                                   @click.prevent="changePage(pagination.current_page + 1)"
+                                   :disabled="pagination.current_page >= pagination.last_page">
+                                        Next
+                                </a>
+                        </li>
+                </ul>
         </nav>
-
 
 </template>
 
@@ -33,6 +48,10 @@
             },
 
             changePage(page) {
+                if (page === 0 || (page > this.pagination.last_page)){
+                        return;
+                }
+
                 if (page > this.pagination.last_page) {
                     page = this.pagination.last_page;
                 }

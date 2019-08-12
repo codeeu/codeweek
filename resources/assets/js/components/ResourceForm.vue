@@ -115,7 +115,7 @@
                 </div>
             </div>
 
-            <pagination class="pagination" v-if="pagination.last_page > 1" :pagination="pagination" :offset="5"
+            <pagination v-if="pagination.last_page > 1" :pagination="pagination" :offset="5"
                     @paginate="paginate()"></pagination>
 
         </div>
