@@ -4,3 +4,115 @@
   width: 100%;
   margin: 10px 0 35px 0;
 }
+.codeweek-question-container{
+  display:flex;
+  flex-direction:column;
+  padding: 30px 20px 0 20px;
+}
+
+.codeweek-question-container .container-expansible.expanded{
+  display: inherit;
+}
+.codeweek-question-container .container-expansible.collapsed{
+  display: none;
+}
+
+.codeweek-question-container .expander-always-visible,
+.codeweek-question-container .container-expansible{
+  display: flex;
+  width:100%;
+}
+
+.codeweek-question-container .expander-always-visible{
+  margin-bottom: 30px;
+}
+
+.codeweek-question-container .expansion {
+  min-width: 40px;
+  margin-right: 70px;
+  display: none;
+}
+
+.codeweek-question-container .container-expansible .expansion{
+  justify-content: center;
+  margin-bottom: -40px;
+  z-index: 1;
+  display: none;
+}
+
+.codeweek-question-container .container-expansible .expansion .expansion-path{
+  border-width: 1px;
+  border-color: $main-color;
+  border-style: dashed;
+  margin-top: -40px;
+}
+
+.codeweek-question-container h2{
+  font-size: 20px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.codeweek-question-container p{
+  padding: 15px 0;
+}
+
+.codeweek-question-container .container-expansible .content{
+  margin-bottom: 50px;
+}
+
+.codeweek-question-container .container-expansible .content .button{
+  margin-top: 40px;
+  text-align: center;
+}
+
+.codeweek-question-container .container-expansible .content .map {
+  width: 100%;
+  height: 400px;
+  border: 0;
+}
+
+
+
+.codeweek-question-container:nth-child(even) {
+  background-color: #EBEBF0;
+}
+#codeweek-schools-page .codeweek-content-wrapper{
+  margin:0;
+  align-items: stretch;
+}
+
+
+
+/*Media queries*/
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px)  {
+}
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px)  {
+}
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px)  {
+  .codeweek-question-container{
+    padding: 40px 50px 0 50px;
+  }
+  .codeweek-question-container .expansion {
+    display: flex;
+  }
+  .codeweek-question-container .container-expansible .expansion{
+    display: flex;
+  }
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px)  {
+}
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+}
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+  .codeweek-question-container{
+    padding: 40px 230px 0 100px;
+  }
+}
