@@ -45,17 +45,7 @@
                 <img src="images/banner_training.svg" class="static-image">
             </div>
         </section>
-
-        <section class="codeweek-banner training">
-            <div class="text">
-                <h1>Why</h1>
-                <h2>BRING CODEWEEK</h2>
-                <h2>TO YOUR STUDENTS</h2>
-            </div>
-            <div class="image">
-                <img src="images/banner_training.svg" class="static-image">
-            </div>
-        </section>--}}
+        --}}
 
 
 

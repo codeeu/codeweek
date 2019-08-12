@@ -20,13 +20,14 @@
 .codeweek-button input{
   cursor: pointer;
   height: 100%;
-  padding: 0px 25px;
+  padding: 0 25px;
   border-radius: 29px;
   background-color: $main-color;
   color: $main-color4;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
+  min-height: 57px;
 }
 .codeweek-blank-button{
   border: 1px solid #707070;
@@ -49,4 +50,41 @@
 }
 .codeweek-svg-button:hover svg path{
   fill: #a2a2a2 !important
+}
+.codeweek-expander-button{
+  background-color: $main-color;
+  color: $main-color4;
+  width:40px;
+  height:40px;
+  padding:0;
+}
+.codeweek-expander-button div{
+  font-size: 30px;
+  font-weight: bold;
+  height: 40px;
+}
+
+
+/*Media queries*/
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px)  {
+}
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px)  {
+}
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px)  {
+  .codeweek-button input{
+    font-size: 20px;
+  }
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px)  {
+}
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+}
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
 }
