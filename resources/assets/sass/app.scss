@@ -18,6 +18,8 @@
 @import "components/forms";
 @import "components/buttons";
 @import "components/cardgroup";
+@import "components/containers";
+@import "components/pagination";
 
 //Import pages
 @import "pages/homepage";
@@ -27,6 +29,9 @@
 
 // General classes
 
+html{
+  line-height: 1.15;
+}
 body{
   margin:0;
   font-family: $body-font-family;
@@ -35,6 +40,7 @@ body{
 a{
   color: $main-color2;
   text-decoration: none;
+  box-sizing: border-box;
 }
 img {
   max-width: 100%;
@@ -52,11 +58,15 @@ blockquote, dd, dl, figure, h1, h2, h3, h4, h5, h6, p, pre {
 button{
   cursor: pointer;
   background-color: transparent;
+  border: 0;
 }
 h1 {
   color: $main-color;
   font-weight: bold;
   font-size: 28px;
+}
+*, ::before, ::after {
+  box-sizing: inherit;
 }
 .show {
   display: block!important;
