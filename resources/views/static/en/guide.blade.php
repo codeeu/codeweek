@@ -2,14 +2,19 @@
 
 @section('content')
 
-    <section>
+    <section id="codeweek-toolkits-page" class="codeweek-page">
 
+        <section class="codeweek-banner learn-teach">
+            <div class="text">
+                <h2>#Codeweek</h2>
+                <h1>Guide</h1>
+            </div>
+            <div class="image">
+                <img src="/images/banner_learn_teach.svg" class="static-image">
+            </div>
+        </section>
 
-        <div class="container">
-
-
-            <div class="content-wrap breathe">
-
+        <div class="codeweek-content-wrapper">
 
                 <div class="container clearfix">
 
@@ -151,7 +156,7 @@
                 <a href="/ambassadors">EU Code Week Ambassadors</a> from your country.
 
             </div>
-        </div>
+
     </section>
 
 @endsection
