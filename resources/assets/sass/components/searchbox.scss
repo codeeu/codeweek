@@ -2,10 +2,14 @@
   background-color: #E5E5E5;
   padding: 18px 30px;
   min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .codeweek-searchbox .basic-fields{
   display: flex;
   flex-direction: row;
+  flex:1;
 }
 .codeweek-searchbox .advanced-fields .line{
   display:flex;
@@ -13,6 +17,22 @@
 }
 .codeweek-searchbox .advanced-fields .multiselect{
   margin-top: 18px;
+}
+
+.codeweek-searchbox .total .number{
+  font-size: 40px;
+  color: $main-color;
+  font-weight: bold;
+}
+
+.codeweek-searchbox .total .label{
+  font-size: 20px;
+  color: $main-color;
+  font-style: italic;
+}
+
+.codeweek-searchbox .total{
+  margin-right: 20px;
 }
 
 /* smartphones, iPhone, portrait 480x320 phones */

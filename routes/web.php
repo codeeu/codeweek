@@ -39,13 +39,13 @@ Route::get('setlocale', function (Request $request) {
 
 //Static pages
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('/home', 'StaticPageController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/guide', 'StaticPageController@index')->name('guide');
 Route::get('/privacy', 'StaticPageController@index')->name('privacy');
 Route::get('/petition', 'StaticPageController@index')->name('petition');
 Route::get('/beambassador', 'StaticPageController@index')->name('beambassador');
 Route::get('/about', 'StaticPageController@static')->name('about');
-Route::get('/codeweek4all', 'StaticPageController@index')->name('codeweek4all');
+Route::get('/codeweek4all', 'StaticPageController@static')->name('codeweek4all');
 //Static training pages
 Route::get('/training', 'StaticPageController@static')->name('training.index');
 Route::get('/training/coding-without-computers', 'StaticPageController@static')->name('training.module-1');
