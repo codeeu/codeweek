@@ -1,7 +1,35 @@
 @extends('layout.base')
 
 @section('content')
-    <section>
+
+    <section id="codeweek-login-page" class="codeweek-page">
+
+        <section class="codeweek-content-wrapper">
+
+            <h1>@lang('login.login')</h1>
+
+            <a href="/login/github"
+               class="btn-block btn-social btn-lg btn-github">
+                <i class="fa fa-github-square mt-6"></i> @lang('login.github')
+            </a>
+            <a href="/login/twitter"
+               class="btn-block btn-social btn-lg btn-twitter">
+                <i class="fa fa-twitter-square mt-6"></i> @lang('login.twitter')
+            </a>
+            <a href="/login/facebook"
+               class="btn-block btn-social btn-lg btn-facebook">
+                <i class="fa fa-facebook-square mt-6"></i> @lang('login.facebook')
+            </a>
+            <a href="/login/google"
+               class="btn-block btn-social btn-lg btn-google-plus">
+                <i class="fa fa-google-plus-square mt-6"></i> @lang('login.google')
+            </a>
+
+        </section>
+
+    </section>
+
+    {{--<section>
 
         <div class="container">
 
@@ -120,28 +148,5 @@
         </div>
 
 
-    </section>
+    </section>--}}
 @endsection
-
-@section('extra-css')
-    <style>
-        .my-divider {
-            border-top: 1px solid #d9dadc;
-            display: block;
-            line-height: 1px;
-            margin: 15px 0;
-            position: relative;
-            text-align: center;
-        }
-
-        .my-divider .my-divider-title {
-            background: #fff;
-            font-size: 12px;
-            letter-spacing: 1px;
-            padding: 0 20px;
-            text-transform: uppercase;
-        }
-
-    </style>
-
-    @endsection

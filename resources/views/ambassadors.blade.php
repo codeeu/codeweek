@@ -70,12 +70,12 @@
                                 @if($ambassador->email_display)
                                     <a href="mailto:{{ $ambassador->email_display }}"
                                        class="codeweek-svg-button">
-                                        <img src="/images/twitter.svg" alt="Twitter">
+                                        <img src="/images/mail.svg" alt="Twitter">
                                     </a>
                                 @elseif($ambassador->email)
                                     <a href="mailto:{{ $ambassador->email }}"
                                        class="codeweek-svg-button">
-                                        <img src="/images/twitter.svg" alt="Twitter">
+                                        <img src="/images/mail.svg" alt="Twitter">
                                     </a>
                                 @endif
                                 {{--Ambassdor twitter--}}
@@ -89,7 +89,7 @@
                                 @if($ambassador->website)
                                     <a href="{{ $ambassador->website }}"
                                        class="codeweek-svg-button">
-                                        <img src="/images/twitter.svg" alt="Twitter">
+                                        <img src="/images/globe.svg" alt="Twitter">
                                     </a>
                                 @endif
                             </div>

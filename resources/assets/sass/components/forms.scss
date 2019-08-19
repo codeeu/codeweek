@@ -81,3 +81,160 @@
   font-weight:normal;
   color: $main-color3;
 }
+
+.codeweek-form {
+  display:flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: flex-start;
+  border-top: 1px solid #e8e8e8;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.codeweek-form-inner-two-columns {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.codeweek-form-inner-container{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+}
+
+.codeweek-form-inner-container:last-child{
+  margin-left: 20px;
+}
+
+.codeweek-form-field-wrapper{
+  margin-bottom: 15px;
+}
+.codeweek-form-field-wrapper .errors{
+  margin-left: 140px;
+  font-size: 13px;
+  color: red;
+}
+
+.codeweek-form-field-wrapper .errors .errorlist{
+  margin: 0;
+}
+
+.codeweek-form-field{
+  display: flex;
+  justify-content: stretch;
+  flex:1;
+  align-items: center;
+}
+
+.codeweek-form-field.align-flex-start{
+  align-items: flex-start;
+}
+
+.codeweek-form-field input{
+  flex: 1;
+  height: 57px;
+  border: 1px solid #e8e8e8;
+  border-radius: 29px;
+  text-indent: 20px;
+  width: 100%;
+}
+
+.codeweek-form-field textarea {
+  flex: 1;
+  border-radius: 29px;
+  border: 1px solid #e8e8e8;
+  text-indent: 20px;
+  font-family: $font-family-sans-serif;
+  font-size: 14px;
+  padding-top: 16px;
+}
+
+.codeweek-form-field label{
+  margin-right: 10px;
+  text-transform: uppercase;
+  width: 120px;
+  text-align: right;
+}
+
+.codeweek-form-field.align-flex-start label{
+  margin-top: 10px;
+}
+
+.codeweek-form .codeweek-input-select {
+  flex: 1;
+  height: 57px;
+  width:auto;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23fe6824%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"), linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+  background-position: right 1.8em top 50%, 0 0;
+  font-weight: normal;
+  border-color: #e8e8e8;
+  color: $main-color3;
+  text-indent: 2px;
+  font-size: 14px;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.codeweek-form .multiselect-wrapper,
+.codeweek-form .datepicker-wrapper,
+.codeweek-form .input-tag-wrapper{
+  flex:1;
+}
+
+
+.codeweek-form .mx-datepicker .mx-input-icon{
+  right: 20px;
+}
+
+.codeweek-form .codeweek-form-inner-container h3 {
+  margin-bottom: 15px;
+}
+
+.codeweek-form .input-tag-wrapper .vue-input-tag-wrapper {
+  border-color: #e8e8e8;
+  padding: 0;
+  border-radius: 29px;
+}
+
+.codeweek-form .input-tag-wrapper .vue-input-tag-wrapper input {
+  padding: 0;
+  margin: 0;
+  height: 59px;
+}
+
+.codeweek-form .group-fields{
+  flex:1;
+}
+
+.codeweek-form-message {
+  padding: 30px;
+  background-color: #e8e8e8;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.codeweek-form-message .message{
+  margin-bottom: 30px;
+}
+
+.codeweek-form-message .codeweek-form-field label{
+  width: auto;
+  text-align: left;
+}
+
+.codeweek-form-field-privacy {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+  padding: 20px;
+}
+.codeweek-form-button-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
