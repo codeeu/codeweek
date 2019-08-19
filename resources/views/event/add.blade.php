@@ -1,17 +1,280 @@
 @extends('layout.base')
 
 @section('content')
-    <section>
+
+
+    <section id="codeweek-events-add-page" class="codeweek-page">
+
+        <section class="codeweek-content-wrapper">
+
+            <h1>@lang('event.main_title')</h1>
+            <a href="{{route('guide')}}" target="_blank">@lang('event.howto')?</a>
+            <p>@lang('event.required')</p>
+
+            <form enctype="multipart/form-data" method="post" role="form" class="codeweek-form" action="/events">
+
+                {{csrf_field()}}
+
+
+                <div class="codeweek-form-inner-two-columns">
+
+                    <div class="codeweek-form-inner-container">
+
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field">
+                                <label for="id_title">* @lang('event.title.label')</label>
+                                <input id="id_title" maxlength="255" name="title"
+                                   placeholder="@lang('event.title.placeholder')" type="text"
+                                   value="{{old('title')}}">
+                            </div>
+                            <div class="errors">
+                                @component('components.validation-errors', ['field'=>'title'])@endcomponent
+                            </div>
+                        </div>
+
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field">
+                                <label for="id_organizer">* @lang('event.organizer.label')</label>
+                                <input id="id_organizer" maxlength="255"
+                                       name="organizer" placeholder="@lang('event.organizer.placeholder')" type="text"
+                                       value="{{old('organizer')}}">
+                            </div>
+                            <div class="errors">
+                                @component('components.validation-errors', ['field'=>'organizer'])@endcomponent
+                            </div>
+                        </div>
+
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field">
+                                <label for="id_organizer">* @lang('event.organizertype.label')</label>
+                                <select id="id_organizer_type" name="organizer_type" class="codeweek-input-select">
+                                    <option value="school">@lang('event.organizertype.school')</option>
+                                    <option value="library">@lang('event.organizertype.library')</option>
+                                    <option value="non profit">@lang('event.organizertype.non profit')</option>
+                                    <option value="private business">@lang('event.organizertype.private business')</option>
+                                    <option value="other">@lang('event.organizertype.other')</option>
+                                </select>
+                            </div>
+                            <div class="errors">
+                                @component('components.validation-errors', ['field'=>'organizer_type'])@endcomponent
+                            </div>
+                        </div>
+
+
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field">
+                                <label for="activity_type">* @lang('event.activitytype.label')</label>
+                                <select id="id_activity_type" name="activity_type" class="codeweek-input-select">
+                                    <option value="open-online">@lang('event.activitytype.open online')</option>
+                                    <option value="invite-online">@lang('event.activitytype.invite online')</option>
+                                    <option value="open-in-person">@lang('event.activitytype.open in person')</option>
+                                    <option value="invite-in-person">@lang('event.activitytype.invite in person')</option>
+                                    <option value="other">@lang('event.organizertype.other')</option>
+                                </select>
+                            </div>
+                            <div class="errors">
+                                @component('components.validation-errors', ['field'=>'activity_type'])@endcomponent
+                            </div>
+                        </div>
+
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field align-flex-start">
+                                <label for="id_description">*@lang('event.description.label')</label>
+                                <textarea cols="40" id="id_description" name="description"
+                                          placeholder="@lang('event.description.placeholder')" rows="10"> {{old('description')}}</textarea>
+                            </div>
+                            <div class="errors">
+                                @component('components.validation-errors', ['field'=>'description'])@endcomponent
+                            </div>
+                        </div>
+
+                        <h3>@lang('event.who')</h3>
+
+
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field">
+                                <label for="id_audience">*@lang('event.audience_title')</label>
+                                <multiselect :options="{{ $audiences }}" value="{{ old('audience') }}" name="audience" label="event.audience"></multiselect>
+                            </div>
+                            <div class="errors">
+                                @component('components.validation-errors', ['field'=>'audience'])@endcomponent
+                            </div>
+                        </div>
+
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field">
+                                <label for="id_theme">*@lang('event.theme_title')</label>
+                                <multiselect :options="{{ $themes }}" value="{{ old('theme') }}" name="theme" label="event.theme"></multiselect>
+                            </div>
+                            <div class="errors">
+                                @component('components.validation-errors', ['field'=>'theme'])@endcomponent
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="codeweek-form-inner-container">
+
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field align-flex-start">
+                                <label for="id_location">*@lang('event.address.label')</label>
+                                <div>
+                                    <autocomplete-geo name="location" placeholder="@lang('event.address.placeholder')" ></autocomplete-geo>
+                                    <div class="errors" style="margin-bottom: 10px; margin-left:0;">
+                                        @component('components.validation-errors', ['field'=>'location'])@endcomponent
+                                    </div>
+                                    <div id = "events-add-map"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field">
+                                <label for="id_country">* @lang('event.country')</label>
+                                <select id="id_country" name="country_iso" class="codeweek-input-select">
+                                    <option value=""></option>
+                                    @foreach ($countries as $country)
+                                        <option value="{{$country->name}}">@lang('countries.'. $country->name)</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="errors">
+                                @component('components.validation-errors', ['field'=>'country'])@endcomponent
+                            </div>
+                        </div>
+
+
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field">
+                                <label for="id_start_date">*@lang('event.start.label')</label>
+                                <date-time name="start_date" placeholder="@lang('event.start.placeholder')"
+                                           value="{{old('start_date')}}"></date-time>
+                            </div>
+                            <div class="errors">
+                                @component('components.validation-errors', ['field'=>'start_date'])@endcomponent
+                            </div>
+                        </div>
+
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field">
+                                <label for="id_end_date">*@lang('event.end.label')</label>
+                                <date-time name="end_date" placeholder="@lang('event.end.placeholder')"
+                                           value="{{old('end_date')}}"></date-time>
+                            </div>
+                            <div class="errors">
+                                @component('components.validation-errors', ['field'=>'end_date'])@endcomponent
+                            </div>
+                        </div>
+
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field">
+                                <label for="id_event_url">@lang('event.website.label')</label>
+                                <input id="id_event_url" maxlength="200" name="event_url"
+                                       placeholder="@lang('event.website.placeholder')" type="text" value="{{old('event_url')}}">
+                            </div>
+                        </div>
+
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field">
+                                <label for="id_contact_person">@lang('event.public.label')</label>
+                                <input id="id_contact_person" maxlength="75" name="contact_person"
+                                       placeholder="@lang('event.public.placeholder')" type="text">
+                            </div>
+                            <div class="errors">
+                                @component('components.validation-errors', ['field'=>'contact_person'])@endcomponent
+                            </div>
+                        </div>
+
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field">
+                                <label for="id_tags">@lang('event.tags')</label>
+                                <input-tags value="{{old('tags')}}"></input-tags>
+                            </div>
+                        </div>
+
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field align-flex-start">
+                                <label for="id_codeweek_forall_code_label">@lang('event.codeweek_for_all_participation_code.title')</label>
+                                <div class="group-fields">
+                                    <input id="id_codeweek_forall_code" maxlength="75"
+                                           name="codeweek_for_all_participation_code" value="">
+                                    <span style="font-size: 13px;font-style: italic;">
+                                        @lang('event.codeweek_for_all_participation_code.explanation')
+                                        <a href="/codeweek4all">@lang('event.codeweek_for_all_participation_code.link')</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="codeweek-form-field">
+                            <label for="id_picture">@lang('event.image')</label>
+                            <div data-provides="fileinput" data-name="picture">
+                                <div class="fileinput-new">
+                                    <div class="fileinput-preview fileinput-exists"></div>
+                                    <div>
+                                        <picture-form></picture-form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="codeweek-form-message">
+                    <div class="message">
+                        @lang('event.contact.explanation')
+                    </div>
+                    <div class="codeweek-form-field-wrapper">
+                        <div class="codeweek-form-field">
+                            <label for="id_user_email">* @lang('event.contact.label')</label>
+                            <input id="id_user_email" name="user_email" type="email"
+                                   placeholder="@lang('event.contact.placeholder')"
+                                   value="{{old('user_email')}}">
+                        </div>
+                        <div class="errors">
+                            @component('components.validation-errors', ['field'=>'user_email'])@endcomponent
+                        </div>
+                    </div>
+                </div>
+
+                <div class="codeweek-form-field-privacy">
+                    <label>
+                        <input id="checkPrivacy" name="privacy" type="checkbox" {{ auth()->user()->privacy === 1 ? 'checked="checked"' : '' }}>
+                        @lang('event.privacy')
+                        <a href="/privacy" target="_blank"><i class="fa fa-external-link" style="color: blue;"></i></a>
+                    </label>
+                    @component('components.validation-errors', ['field'=>'privacy'])
+                    @endcomponent
+                </div>
+
+
+                <div class="codeweek-form-button-container">
+                    <div class="codeweek-button">
+                        <input type="submit" id="add-button" onclick="javascript:return addEvent('{{__('school.required.location')}}');" value="@lang('event.button')">
+                    </div>
+                </div>
+
+            </form>
+
+        </section>
+
+    </section>
+
+
+    {{--<section>
         <div class="container">
+
             <div class="clearfix">
-                <h1 class="pull-left">@lang('event.main_title')</h1>
+
                 <div class="how-to">
-                    <a href="{{route('guide')}}" target="_blank"
-                       class="btn btn-sm pull-right">@lang('event.howto')?
-                    </a>
+
                 </div>
             </div>
-            <p class="aluminum">@lang('event.required')</p>
+
 
             <form enctype="multipart/form-data" method="post" id="event" role="form" class="form-horizontal clearfix"
                   action="/events">
@@ -124,8 +387,8 @@
                             </label>
 
                             <div class="col-sm-9">
-                                {{--@component('components.checkbox-audience',['audiences'=>$audiences, 'selection'=>[],'mode'=>'add'])
-                                @endcomponent--}}
+                                --}}{{--@component('components.checkbox-audience',['audiences'=>$audiences, 'selection'=>[],'mode'=>'add'])
+                                @endcomponent--}}{{--
                                 <multiselect :options="{{ $audiences }}" value="{{ old('audience') }}" name="audience" label="event.audience"></multiselect>
                             </div>
                             @component('components.validation-errors', ['field'=>'audience'])
@@ -140,8 +403,8 @@
                             </label>
 
                             <div class="col-sm-9">
-                                {{--@component('components.checkbox-theme',['themes'=>$themes,'selection'=>[],'mode'=>'add'])
-                                @endcomponent--}}
+                                --}}{{--@component('components.checkbox-theme',['themes'=>$themes,'selection'=>[],'mode'=>'add'])
+                                @endcomponent--}}{{--
                                 <multiselect :options="{{ $themes }}" value="{{ old('theme') }}" name="theme" label="event.theme"></multiselect>
                             </div>
                             @component('components.validation-errors', ['field'=>'theme'])
@@ -301,24 +564,24 @@
                                  data-name="picture">
 
                                 <div class="fileinput-new">
-                                    {{--<img src="/static/img/image_placeholder.png" alt="Image Placeholder"--}}
-                                    {{--style="max-height: 204px; max-width: 100%">--}}
+                                    --}}{{--<img src="/static/img/image_placeholder.png" alt="Image Placeholder"--}}{{--
+                                    --}}{{--style="max-height: 204px; max-width: 100%">--}}{{--
                                 </div>
                                 <div class="fileinput-preview fileinput-exists">
 
                                 </div>
 
                                 <div>
-                                    {{--<span class="help-block">Larger images will be resized to 256 x 512 pixels. Maximum upload size is 256 x 1024.</span>--}}
-                                    {{--<span class="btn btn-sm btn-file">--}}
+                                    --}}{{--<span class="help-block">Larger images will be resized to 256 x 512 pixels. Maximum upload size is 256 x 1024.</span>--}}{{--
+                                    --}}{{--<span class="btn btn-sm btn-file">--}}{{--
                                     <picture-form></picture-form>
 
-                                    {{--<span class="fileinput-new">Select image</span>--}}
-                                    {{--<span class="fileinput-exists">Change</span>--}}
-                                    {{--<input type="file"></span>--}}
+                                    --}}{{--<span class="fileinput-new">Select image</span>--}}{{--
+                                    --}}{{--<span class="fileinput-exists">Change</span>--}}{{--
+                                    --}}{{--<input type="file"></span>--}}{{--
 
-                                    {{--<a href="#" class="btn btn-sm fileinput-exists"--}}
-                                    {{--data-dismiss="fileinput">Remove</a>--}}
+                                    --}}{{--<a href="#" class="btn btn-sm fileinput-exists"--}}{{--
+                                    --}}{{--data-dismiss="fileinput">Remove</a>--}}{{--
                                 </div>
 
 
@@ -373,16 +636,10 @@
                 </div>
             </form>
         </div>
-    </section>
+    </section>--}}
 
 @endsection
 
-
-@push('css')
-
-
-
-@endpush
 
 @push('scripts')
 

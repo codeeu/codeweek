@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="input-tag-wrapper">
         <input-tag :tags.sync="tagsArray" :addTagOnBlur="addTagOnBlur"></input-tag>
         <input type="hidden" name="tags" :value="tagsArray">
     </div>
