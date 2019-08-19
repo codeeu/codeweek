@@ -56,7 +56,7 @@
     <!-- Scripts -->
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script src="{{asset('js/app.js')}}"></script>
-    {{--<script type="text/javascript" src="{{ asset('lib/jquery/jquery.js') }}"></script>--}}
+    <script type="text/javascript" src="{{ asset('lib/jquery/jquery.js') }}"></script>
     {{--<script src=//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js charset=utf-8></script>--}}
     <script type="text/javascript" src="{{ asset('js/ext/plugins.js') }}"></script>
     @include('scripts.countdown')
