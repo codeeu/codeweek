@@ -1,23 +1,23 @@
 @extends('layout.base')
 
 @section('content')
-    <section>
 
 
-        <div class="container">
+    <section id="codeweek-beambassadors-page" class="codeweek-page">
 
+        <section class="codeweek-banner ambassadors">
+            <div class="text">
+                <h2>#Codeweek</h2>
+                <h1>@lang('menu.ambassadors')</h1>
+            </div>
+            <div class="image">
+                <img src="images/banner_ambassadors.svg" class="static-image">
+            </div>
+        </section>
 
-            <div class="content-wrap nopadding">
+        <section class="codeweek-content-wrapper">
 
-
-                <div class="container clearfix ">
-
-
-                    <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
-                        <h1>Become a EU Code Week Ambassador</h1>
-                        <span></span>
-                    </div>
-
+                    <h1>Become a EU Code Week Ambassador</h1>
 
                     <p><a href="http://events.codeweek.eu/ambassadors/">EU Code Week Ambassadors</a> are the main point of contact for Code Week in each country and help spread the vision of Code Week to local communities. Do you believe in the <a href="/about">vision of Code Week</a> and want to promote coding in your own country? Read on!</p>
 
@@ -57,10 +57,7 @@
 
                     <p>Still interested? We want you in on this! Take a quick look at the <a href="http://events.codeweek.eu/ambassadors">list of EU Code Week Ambassadors</a>. If there&rsquo;s one for your country, feel free to get in touch directly with them and see how you can cooperate. Either way, we&rsquo;ll be looking forward to you email at&nbsp; <a href='mailto:info@codeweek.eu?subject=EU Code Week Ambassador'/>info@codeweek.eu</a>.</p>
 
-
-
-                </div>
-        </div>
+        </section>
 
     </section>
 
