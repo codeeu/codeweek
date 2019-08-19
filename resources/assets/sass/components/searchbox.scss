@@ -3,8 +3,14 @@
   padding: 18px 30px;
   min-height: 60px;
   display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  flex-direction: column;
+}
+#codeweek-scoreboard-page .codeweek-searchbox{
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 .codeweek-searchbox .basic-fields{
   display: flex;
