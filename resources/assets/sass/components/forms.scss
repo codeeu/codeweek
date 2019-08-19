@@ -193,16 +193,25 @@
   margin-bottom: 15px;
 }
 
-.codeweek-form .input-tag-wrapper .vue-input-tag-wrapper {
-  border-color: #e8e8e8;
-  padding: 0;
+.codeweek-form .input-tag-wrapper {
+  border: 1px solid #e8e8e8;
   border-radius: 29px;
+}
+.codeweek-form .input-tag-wrapper .vue-input-tag-wrapper {
+  padding: 0;
+  border: none;
+  display: inline-table;
+  width: 100%;
+  background-color: transparent;
+  margin: 10px 25px 0 25px;
+  max-width: 90%;
 }
 
 .codeweek-form .input-tag-wrapper .vue-input-tag-wrapper input {
   padding: 0;
   margin: 0;
   height: 59px;
+  text-indent: 0;
 }
 
 .codeweek-form .group-fields{
@@ -238,4 +247,38 @@
   width: 100%;
   margin-top: 30px;
   margin-bottom: 20px;
+}
+
+
+.v-autocomplete {
+  position: relative;
+}
+.v-autocomplete-list{
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 6px;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+}
+.v-autocomplete-input {
+  width: 100%;
+}
+
+.v-autocomplete-list-item{
+  padding:10px;
+  border-top: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.v-autocomplete-item-active{
+  background-color: #EEEEEE;
+}
+
+.v-autocomplete-list-item .city{
+  font-size:11px;
+}
+
+.v-autocomplete-list-item .name{
+  font-weight: bold;
 }
