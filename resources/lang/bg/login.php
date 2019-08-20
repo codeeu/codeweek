@@ -16,5 +16,6 @@ return [
     'github' => 'Влизане с Github',
     'twitter' => 'Влизане с Twitter',
     'facebook' => 'Влизане с Facebook',
-    'google' => 'Влизане с Google'
+    'google' => 'Влизане с Google',
+    'azure' => 'Влизане с Azure',
 ];

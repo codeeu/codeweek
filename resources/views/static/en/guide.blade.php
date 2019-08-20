@@ -31,11 +31,6 @@
                 </div>
 
 
-                <h4><a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/codeeu_toolkit.pdf"
-                       alt="#codeEU Toolkit"><i class="fa fa-download"></i> Download the complete #CodeWeek
-                        Communication Toolkit here</a>
-                </h4>
-
                 <h2>What is EU Code Week?</h2>
                 <p>
                     EU Code Week is a grass-roots movement run by volunteers and supported by the European Commission.
@@ -62,7 +57,7 @@
                         ask participants to bring their own laptops.
                     </li>
 
-                    <strong>Coding unplugged.</strong> You actually don't need computers and internet connection to
+                    <li><strong>Coding unplugged.</strong> You actually don't need computers and internet connection to
                     learn computational thinking.
                     Take a look at our <a href="/training/coding-without-computers">Unplugged learning bit</a> to get
                     started.
@@ -127,14 +122,11 @@
                 </ul>
 
 
-                <h2>Promotion material</h2>
+                <h2>Promotional material</h2>
                 <p>Check out our <a href="http://blog.codeweek.eu/">blog</a> for latest information and feel free to
                     adapt the most recent press release to your needs, or create your own:</p>
                 <ul>
-                    <li>
-                        <a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-2018-breaks-all-time-record-27-million-participants-and-nearly-44000-events">EU
-                            Code Week 2018 Breaks All-time Record, With 2.7 Million Participants and Nearly 44,000
-                            Events</a></li>
+                    <li><a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a> (available in 29 languages)</li>
 
                 </ul>
 

@@ -16,5 +16,6 @@ return [
     'github' => 'Přihlaste se přes Github',
     'twitter' => 'Přihlaste se přes Twitter',
     'facebook' => 'Přihlaste se přes Facebook',
-    'google' => 'Přihlaste se přes Google'
+    'google' => 'Přihlaste se přes Google',
+    'azure' => 'Přihlaste se přes Azure',
 ];

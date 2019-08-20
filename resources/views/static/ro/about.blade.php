@@ -51,8 +51,7 @@
 
                     <h2>Săptăm&acirc;na programării &icirc;n cifre</h2>
 
-                    <p>&Icirc;n 2018, 2,7 milioane de oameni din peste 70 de țări din &icirc;ntreaga lume au luat parte la Săptăm&acirc;na UE a programării. &Icirc;n plus, 2,3 milioane de tineri au fost implicați &icirc;n <a href="http://africacodeweek.org/">Africa Code Week</a>, care este o inițiativă derivată, condusă de SAP și organizații nonprofit.</p>
-
+                    <p>În 2018, 2,7 milioane de oameni din peste 70 de țări din întreaga lume au luat parte la UE Code Week. În plus, 2,3 milioane de tineri au fost implicați în <a href="http://africacodeweek.org/">Africa Code Week</a>, care este o inițiativă derivată, condusă de SAP și organizații nonprofit.</p>
                     <p>Dacă țara ta nu este &icirc;ncă implicată, poți organiza activități și le poți adăuga pe <a href="/events">hartă</a> sau te poți <a href="mailto:info@codeweek.eu">oferi ca voluntar</a> pentru a fi ambasador al Săptăm&acirc;nii programării.</p>
 
                     <div class="container clearfix">
