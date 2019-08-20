@@ -1,63 +1,49 @@
-@extends('layout.base') @section('content')
-    <section>
+<?php
 
 
-        <div class="container">
-
-
-            <div class="content-wrap nopadding">
-
-
-                <div class="container clearfix ">
-
-
-                    <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
-                        <h1>RRETH CODEWEEK</h1><span></span></div>
-
-                    <hr>
-
-
-                    <p>P&euml;r vitin 2019, EU Code Week do t&euml; zhvillohet mes datave <strong>5 dhe 20
-                            tetor</strong>.</p>
-
-                    <p>EU Code Week &euml;sht&euml; nj&euml; l&euml;vizje n&euml; terren q&euml; feston aft&euml;sin&euml;
+return [
+    'when-title'=> 'P&euml;r vitin 2019, EU Code Week do t&euml; zhvillohet mes datave 5 dhe 20 tetor.',
+    'when-text'=>'<p>EU Code Week &euml;sht&euml; nj&euml; l&euml;vizje n&euml; terren q&euml; feston aft&euml;sin&euml;
                         krijuese, zgjidhjen e problemeve dhe bashk&euml;punimin p&euml;rmes programimit dhe aktiviteteve
                         t&euml; tjera teknologjike. Ideja &euml;sht&euml; q&euml; programimi t&euml; b&euml;het m&euml;
                         i duksh&euml;m, p&euml;r t&rsquo;u treguar t&euml; rinjve, t&euml; rriturve dhe t&euml;
                         moshuarve se si t&euml; sjellin n&euml; jet&euml; idet&euml; n&euml;p&euml;rmjet kodit, p&euml;r
                         t&euml; zbuluar misterin e k&euml;tyre aft&euml;sive dhe p&euml;r t&euml; b&euml;r&euml; bashk&euml;
-                        njer&euml;zit e motivuar q&euml; t&euml; m&euml;sojn&euml;.</p>
+                        njer&euml;zit e motivuar q&euml; t&euml; m&euml;sojn&euml;.</p>',
+    'codeweek_in_numbers-title'=>'Code Week n&euml; shifra',
+    'codeweek_in_numbers-text'=>'<p>N&euml; vitin 2018, 2,7 milion&euml; persona n&euml; m&euml; shum&euml; se 70 vende n&euml; mbar&euml;
+                        bot&euml;n mor&euml;n pjes&euml; n&euml; EU Code Week. Edhe 2,3 milion&euml; t&euml; rinj t&euml;
+                        tjer&euml; u p&euml;rfshin&euml; n&euml; <a href="http://africacodeweek.org/">Africa Code
+                            Week</a>, q&euml; &euml;sht&euml; nj&euml; nism&euml; bij&euml;, e drejtuar nga SAP dhe
+                        organizata jofitimprur&euml;se.</p>
 
-                    <h2>Drejtuar nga vullnetar&euml;</h2>
-
-                    <p>EU Code Week drejtohet nga vullnetar&euml;. Nj&euml; ose disa <a href="/ambassadors">ambasador&euml;
+                    <p>
+                        Në vitin 2018, 2,7 milionë persona nga më shumë se 70 vende të botës morën pjesë në EU Code Week. 2,3 milionë të rinj të tjerë u përfshinë në <a href="http://africacodeweek.org/">Africa Code
+                            Week</a>, e frymëzuar EU Code Week dhe e drejtuar nga SAP si dhe organizata jofitimprurëse.
+                    </p>',
+    'run_by_volunteers-title'=>'Drejtuar nga vullnetar&euml;',
+    'run_by_volunteers-text'=>' <p>EU Code Week drejtohet nga vullnetar&euml;. Nj&euml; ose disa <a href="/ambassadors">ambasador&euml;
                             t&euml; Code Week</a> koordinojn&euml; nism&euml;n n&euml; vendet e tyre, por kushdo mund t&euml;
                         organizoj&euml; aktivitetin e vet dhe ta shtoj&euml; at&euml; n&euml; hart&euml;n e <a href="/">codeweek.eu</a>.
-                    </p>
-
-                    <h2>Mb&euml;shtetur nga Komisioni Evropian</h2>
-
-                    <p>EU Code Week u prezantua n&euml; vitin 2013 nga Young Advisors for the Digital Agenda Europe.
+                    </p>',
+    'supported_by_commission-title'=>'Mb&euml;shtetur nga Komisioni Evropian',
+    'supported_by_commission-text'=>'<p>EU Code Week u prezantua n&euml; vitin 2013 nga Young Advisors for the Digital Agenda Europe.
                         Komisioni Evropian mb&euml;shtet EU Code Week, si pjes&euml; e strategjis&euml; s&euml; tij p&euml;r
                         nj&euml; <a href="http://ec.europa.eu/priorities/digital-single-market/">Treg t&euml; P&euml;rbashk&euml;t
                             Dixhital</a>. N&euml; <a
                                 href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Planin
                             e masave t&euml; Edukimit Dixhital</a> Komisioni ve&ccedil;an&euml;risht inkurajon shkollat
                         q&euml; t&euml; b&euml;hen pjes&euml; e nism&euml;s. Objektivi &euml;sht&euml; t&euml; arrihet
-                        50% e t&euml; gjitha shkollave n&euml; Evrop&euml; deri n&euml; vitin 2020.</p>
-
-                    <h2>Shkollat</h2>
-
-                    <p>Shkollat n&euml; &ccedil;do nivel dhe m&euml;suesit e t&euml; gjitha l&euml;nd&euml;ve jan&euml;
+                        50% e t&euml; gjitha shkollave n&euml; Evrop&euml; deri n&euml; vitin 2020.</p>',
+    'schools-title'=>'Shkollat',
+    'schools-text'=>'<p>Shkollat n&euml; &ccedil;do nivel dhe m&euml;suesit e t&euml; gjitha l&euml;nd&euml;ve jan&euml;
                         ve&ccedil;an&euml;risht t&euml; ftuar t&euml; marrin pjes&euml; n&euml; EU Code Week, p&euml;r t&rsquo;u
                         dh&euml;n&euml; mund&euml;sin&euml; nx&euml;n&euml;sve t&euml; tyre t&euml; eksplorojn&euml; aft&euml;sit&euml;
                         krijuese dixhitale dhe kodimin. M&euml;soni m&euml; shum&euml; rreth nism&euml;s dhe se si t&euml;
                         organizoni aktivitetin tuaj p&euml;rmes faqes s&euml; uebit t&euml; dedikuar p&euml;r m&euml;suesit:
-                        <a href="/schools">CodeWeek.eu/Schools</a></p>
-
-                    <h2>Pse nevojitet kodimi?</h2>
-
-                    <p>&Euml;sht&euml; p&euml;r Pian, e cila zgjodhi t&euml; studionte n&euml; fush&euml;n juridike,
+                        <a href="/schools">CodeWeek.eu/Schools</a></p>',
+    'why_coding-title'=>'Pse nevojitet kodimi?',
+    'why_coding-text'=>'<p>&Euml;sht&euml; p&euml;r Pian, e cila zgjodhi t&euml; studionte n&euml; fush&euml;n juridike,
                         ndon&euml;se gjithmon&euml; i ka p&euml;lqyer matematika dhe t&euml; luaj&euml; me kompjuter&euml;t.
                         &Euml;sht&euml; p&euml;r Markun, i cili ka nj&euml; ide p&euml;r t&euml; pasur nj&euml; rrjet
                         social m&euml; t&euml; mir&euml;, por q&euml; nuk mund ta nd&euml;rtoj&euml; vet&euml;m. &Euml;sht&euml;
@@ -83,9 +69,8 @@
 
                     <p>Kodimi ndihmon gjithashtu n&euml; zhvillimin e kompetencave t&euml; tilla si mendimi kompjuterik,
                         zgjidhja e problemeve, aft&euml;sia krijuese dhe puna n&euml; ekip, q&euml; jan&euml; aft&euml;si
-                        v&euml;rtet t&euml; mira p&euml;r t&euml; gjitha fushat e jet&euml;s.</p>
-
-                    <p>Alessandro Bogliolo, koordinator i ekipit t&euml; vullnetar&euml;ve ambasador&euml; t&euml; EU
+                        v&euml;rtet t&euml; mira p&euml;r t&euml; gjitha fushat e jet&euml;s.</p>',
+    'why_coding-quote'=>'<p>Alessandro Bogliolo, koordinator i ekipit t&euml; vullnetar&euml;ve ambasador&euml; t&euml; EU
                         Code Week tha:
                         <blockquote>
                     <p>&ldquo;N&euml; koh&euml;t e lashta kemi b&euml;r&euml; shum&euml; gj&euml;ra duke p&euml;rdorur
@@ -96,45 +81,11 @@
                         zbuloj&euml; kodimin dhe t&euml; arg&euml;tohet me t&euml;. Le t&euml; m&euml;sojm&euml; si t&euml;
                         kodojm&euml; p&euml;r t&rsquo;i dh&euml;n&euml; form&euml; t&euml; ardhmes son&euml;&rdquo;.</p>
                     </blockquote>
-                    </p>
-
-                    <h2>Code Week n&euml; shifra</h2>
-
-                    <p>N&euml; vitin 2018, 2,7 milion&euml; persona n&euml; m&euml; shum&euml; se 70 vende n&euml; mbar&euml;
-                        bot&euml;n mor&euml;n pjes&euml; n&euml; EU Code Week. Edhe 2,3 milion&euml; t&euml; rinj t&euml;
-                        tjer&euml; u p&euml;rfshin&euml; n&euml; <a href="http://africacodeweek.org/">Africa Code
-                            Week</a>, q&euml; &euml;sht&euml; nj&euml; nism&euml; bij&euml;, e drejtuar nga SAP dhe
-                        organizata jofitimprur&euml;se.</p>
-
-                    <p>
-                        Në vitin 2018, 2,7 milionë persona nga më shumë se 70 vende të botës morën pjesë në EU Code Week. 2,3 milionë të rinj të tjerë u përfshinë në <a href="http://africacodeweek.org/">Africa Code
-                            Week</a>, e frymëzuar EU Code Week dhe e drejtuar nga SAP si dhe organizata jofitimprurëse.
-                    </p>
-
-                    <p>N&euml;se vendi juaj nuk &euml;sht&euml; ende i p&euml;rfshir&euml;, mund t&euml; organizoni
-                        aktivitete dhe t&rsquo;i vendosni ato n&euml; <a href="/events">hart&euml;</a> ose t&euml; dilni
-                        <a href="mailto:info@codeweek.eu">vullnetar</a> si ambasador i Code Week.</p>
-
-                    <div class="container clearfix">
-                        <div class="col_half" id="PeopleChart" style="opacity: 1;width: 100%;text-align: center">
-                            <h3 class="center">Pjes&euml;marr&euml;sit</h3>
-                            <img src="{{asset('img/participation-2018.gif')}}">
-                        </div>
-                    </div>
-
-
-                    <h2>B&euml;huni pjes&euml; e EU Code Week</h2>
-
-                    <p>B&euml;huni pjes&euml; e EU Code Week <a href="/guide">duke organizuar nj&euml; aktivitet
+                    </p>',
+    'join_codeweek-title'=>'B&euml;huni pjes&euml; e EU Code Week',
+    'join_codeweek-text'=>'<p>B&euml;huni pjes&euml; e EU Code Week <a href="/guide">duke organizuar nj&euml; aktivitet
                             kodimi</a> n&euml; qytetin tuaj, duke u b&euml;r&euml; pjes&euml; e <a href="/codeweek4all">Sfid&euml;s
                             Code Week 4 All</a> dhe duke u lidhur me aktivitete n&euml;p&euml;r komunitete dhe p&euml;rtej
                         kufijve ose duke na ndihmuar t&euml; p&euml;rhapim vizionin e Code si <a href="/ambassadors">Ambasador
-                            i EU Code Week</a> p&euml;r vendin tuaj!</p>
-
-
-                    @include("static.toolkits")
-
-                </div>
-            </div>
-        </div>
-    </section>@endsection
+                            i EU Code Week</a> p&euml;r vendin tuaj!</p>'
+];
