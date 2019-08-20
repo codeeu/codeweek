@@ -19,41 +19,7 @@
 
     <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet" />
 
-        <link rel="stylesheet" href="{{asset('css/ext/cache.css')}}" type="text/css" />
-
-
-    <!-- Theme stylesheets -->
-    @if (Route::getCurrentRoute() && Route::getCurrentRoute()->uri() != 'home' && Route::getCurrentRoute()->uri() != '/')
-        <link rel="stylesheet" href="{{asset('css/ext/style.css')}}" type="text/css" />
-        <link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css" />
-    @else
-        <link rel="stylesheet" href="{{asset('css/ext/home.css')}}" type="text/css" />
-    @endif
-    <link rel="stylesheet" href="{{asset('css/ext/dark.css')}}" type="text/css" />
-    <link rel="stylesheet" href="{{asset('css/font-icons.css')}}" type="text/css" />
-
-    <link rel="stylesheet" href="{{asset('css/ext/responsive.css')}}" type="text/css" />
-
-    @if(App::getLocale() == 'lt' || App::getLocale() == 'me' ||
-        App::getLocale() == 'rs' || App::getLocale() == 'lv')
-        <style>
-            body {
-                font-family:'Open Sans', sans-serif;
-            }
-        </style>
-    @endif
-
-
-    <link rel="stylesheet" href="{{asset('css/ext/colors.css')}}" type="text/css" />
-
-
-
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <link href="{{asset('css/custom.css') }}" media="screen" rel="stylesheet" />
-
-    @yield('extra-css')
-
+    <link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css" />
 
     <script>
         window.App = {!! json_encode([
@@ -96,9 +62,6 @@
 
     <flash message="{{ session('flash') }}"></flash>
 </div>
-
-@include('layout.footer')
-
 
 <!-- Scripts -->
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
