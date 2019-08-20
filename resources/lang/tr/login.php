@@ -16,5 +16,6 @@ return [
     'github' => 'Github ile Oturum Aç',
     'twitter' => 'Twitter ile Oturum Aç',
     'facebook' => 'Facebook ile Oturum Aç',
-    'google' => 'Google ile Oturum Aç'
+    'google' => 'Google ile Oturum Aç',
+    'azure' => 'Azure ile Oturum Aç',
 ];

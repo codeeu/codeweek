@@ -40,6 +40,11 @@
                                    class="btn-block btn-social btn-lg btn-google-plus">
                                     <i class="fa fa-google-plus-square mt-6"></i> @lang('login.google')
                                 </a>
+                                <a href="/login/azure"
+                                   class="btn-block btn-social btn-lg btn-vk">
+
+                                    <img src="/img/azure.png" class="mt-4"> @lang('login.azure')
+                                </a>
 
 
                                 <div class="my-divider">

@@ -16,5 +16,6 @@ return [
     'github' => 'Најави се со Github',
     'twitter' => 'Најави се со Twitter',
     'facebook' => 'Најави се со Facebook',
-    'google' => 'Најави се со Google'
+    'google' => 'Најави се со Google',
+    'azure' => 'Најави се со Azure',
 ];
