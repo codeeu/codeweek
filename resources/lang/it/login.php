@@ -16,5 +16,6 @@ return [
     'github' => 'Accedi con Github',
     'twitter' => 'Accedi con Twitter',
     'facebook' => 'Accedi con Facebook',
-    'google' => 'Accedi con Google'
+    'google' => 'Accedi con Google',
+    'azure' => 'Accedi con Azure',
 ];

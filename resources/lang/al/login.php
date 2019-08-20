@@ -16,5 +16,6 @@ return [
     'github' => 'Identifikohuni me Github',
     'twitter' => 'Identifikohuni me Twitter',
     'facebook' => 'Identifikohuni me Facebook',
-    'google' => 'Identifikohuni me Google'
+    'google' => 'Identifikohuni me Google',
+    'azure' => 'Identifikohuni me Azure',
 ];

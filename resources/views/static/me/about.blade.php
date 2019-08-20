@@ -50,8 +50,7 @@
                     </p>
 
                     <h2>Nedjelja programiranja u brojkama</h2>
-
-                    <p>Tokom 2018. godine, 1 200 000 ljudi u vi&scaron;e od 70 zemalja &scaron;irom svijeta učestvovalo je u Evropskoj nedjelji programiranja. Jo&scaron; 1 300 000 mladih učestvovalo je u <a href="http://africacodeweek.org/">Afričkoj nedjelji programiranja </a>, &scaron;to je spin-off inicijativa koju vode SAP i neprofitne organizacije.</p>
+                    <p>Tokom 2018. godine, 2,7 miliona ljudi u više od 70 zemalja širom svijeta učestvovalo je u Evropskoj nedjelji programiranja. Još 2,3 miliona mladih učestvovalo je u <a href="http://africacodeweek.org/">Afričkoj nedjelji programiranja</a> , što je spin-off inicijativa koju vode SAP i neprofitne organizacije.</p>
 
                     <p>Ukoliko va&scaron;a zemlja jo&scaron; uvijek nije uključena, možete organizovati akivnosti i staviti ih na <a href="/events">mapu</a>  ili <a href="mailto:info@codeweek.eu">volontirati</a> kao ambasador Nedjelje programiranja.</p>
 

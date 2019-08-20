@@ -17,7 +17,7 @@ return [
     'phrase1' => 'Fill the form with the name of your students separated by a comma and you will receive the individual certificates of participation',
     'names' => [
         'label' => 'Names for certificate',
-        'help' => 'Use a comma between each class member'
+        'help' => 'Use a comma between each participant\'s name'
     ],
     'event_name' => [
         'label' => 'Activity Name',
