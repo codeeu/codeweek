@@ -1,4 +1,4 @@
-<h2>Presentations and Toolkits</h2>
+<h2>@lang('menu.toolkits')</h2>
 
 <ul>
 

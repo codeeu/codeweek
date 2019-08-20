@@ -16,5 +16,6 @@ return [
     'github' => 'Iniciar sessão com o Github',
     'twitter' => 'Iniciar sessão com o Twitter',
     'facebook' => 'Iniciar sessão com o Facebook',
-    'google' => 'Iniciar sessão com o Google'
+    'google' => 'Iniciar sessão com o Google',
+    'azure' => 'Iniciar sessão com o Azure',
 ];
