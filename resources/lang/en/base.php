@@ -44,8 +44,6 @@ return [
     ],
 
     'resources_local_title'=>'Coding resources from',
-    'are_you_a_teacher' => 'Are you a teacher?',
-    'get_involved_banner' => 'Click here to find out how to get involved!',
     'days'=>'Days',
     'hours'=>'Hours',
     'minutes'=>'Minutes',

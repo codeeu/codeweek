@@ -46,8 +46,6 @@ return [
     ],
 
     'resources_local_title'=>'Programozási erõforrások innen:',
-    'are_you_a_teacher' => 'Ön tanár?',
-    'get_involved_banner' => 'Kattintson ide, hogy megtudja, hogyan kapcsolódhat be!',
     'days'=>'nap',
     'hours'=>'óra',
     'minutes'=>'perc',

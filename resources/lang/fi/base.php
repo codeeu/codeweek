@@ -46,8 +46,6 @@ return [
     ],
 
     'resources_local_title'=>'Koodausaineistoja maasta',
-    'are_you_a_teacher' => 'Oletko opettaja?',
-    'get_involved_banner' => 'Napsauta tästä ja lue, miten voit osallistua!',
     'days'=>'päivää',
     'hours'=>'tuntia',
     'minutes'=>'minuuttia',

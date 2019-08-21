@@ -46,8 +46,6 @@ return [
     ],
 
     'resources_local_title'=>'Programavimo iđtekliai iđ',
-    'are_you_a_teacher' => 'Esate mokytoja (-as)?',
-    'get_involved_banner' => 'Spustelëkite čia ir suţinokite, kaip dalyvauti!',
     'days'=>'Dienos',
     'hours'=>'Valandos',
     'minutes'=>'Minutës',

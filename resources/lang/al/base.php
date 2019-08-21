@@ -46,8 +46,6 @@ return [
     ],
 
     'resources_local_title'=>'Burimet e kodimit nga',
-    'are_you_a_teacher' => 'Jeni mësues?',
-    'get_involved_banner' => 'Klikoni këtu për të mësuar si të përfshiheni!',
     'days'=>'Ditë',
     'hours'=>'Orë',
     'minutes'=>'Minuta',

@@ -46,8 +46,6 @@ return [
     ],
 
     'resources_local_title'=>'Programmeerimismaterjale:',
-    'are_you_a_teacher' => 'Kas oled õpetaja?',
-    'get_involved_banner' => 'Klõpsa siin, et leida teavet, kuidas osaleda!',
     'days'=>'päeva',
     'hours'=>'tundi',
     'minutes'=>'minutit',
