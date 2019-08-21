@@ -46,8 +46,6 @@ return [
     ],
 
     'resources_local_title'=>'Recursos de programação de',
-    'are_you_a_teacher' => 'É professor(a)?',
-    'get_involved_banner' => 'Clique aqui para saber como pode participar!',
     'days'=>'Dias',
     'hours'=>'Horas',
     'minutes'=>'Minutos',

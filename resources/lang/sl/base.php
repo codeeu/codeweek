@@ -46,8 +46,6 @@ return [
     ],
 
     'resources_local_title'=>'Programerski viri iz',
-    'are_you_a_teacher' => 'Ste učitelj?',
-    'get_involved_banner' => 'Kliknite tukaj in si oglejte, kako se lahko vključite!',
     'days'=>'dni',
     'hours'=>'ur',
     'minutes'=>'minut',

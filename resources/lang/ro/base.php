@@ -46,8 +46,6 @@ return [
     ],
 
     'resources_local_title'=>'Resurse de programare din',
-    'are_you_a_teacher' => 'Sunteți profesor?',
-    'get_involved_banner' => 'Clic aici pentru a afla cum vă puteți implica!',
     'days'=>'Zile',
     'hours'=>'Ore',
     'minutes'=>'Minute',

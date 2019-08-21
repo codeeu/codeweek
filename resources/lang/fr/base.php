@@ -46,8 +46,6 @@ return [
     ],
 
     'resources_local_title'=>'Ressources pour le codage en',
-    'are_you_a_teacher' => 'Vous êtes enseignant(e)?',
-    'get_involved_banner' => 'Cliquez ici pour découvrir comment participer!',
     'days'=>'Jours',
     'hours'=>'Heures',
     'minutes'=>'Minutes',

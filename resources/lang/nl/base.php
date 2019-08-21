@@ -46,8 +46,6 @@ return [
     ],
 
     'resources_local_title'=>'Hulpmiddelen voor programmeren van',
-    'are_you_a_teacher' => 'Ben je een leraar?',
-    'get_involved_banner' => 'Klik hier voor meer informatie over hoe je kunt meedoen!',
     'days'=>'Dagen',
     'hours'=>'Uur',
     'minutes'=>'Minuten',

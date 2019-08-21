@@ -46,8 +46,6 @@ return [
     ],
 
     'resources_local_title'=>'Programmēšanas resursi no',
-    'are_you_a_teacher' => 'Vai esat skolotājs?',
-    'get_involved_banner' => 'Noklikšķiniet šeit, lai uzzinātu, kā iesaistīties!',
     'days'=>'Dienas',
     'hours'=>'Stundas',
     'minutes'=>'Minūtes',

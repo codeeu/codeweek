@@ -47,8 +47,6 @@ return [
     ],
 
     'resources_local_title'=>'Zasoby dotyczące kodowania z',
-    'are_you_a_teacher' => 'Czy jesteś nauczycielem?',
-    'get_involved_banner' => 'Kliknij tutaj, aby dowiedzieć się, jak wziąć udział!',
     'days'=>'Dni',
     'hours'=>'Godziny',
     'minutes'=>'Minuty',

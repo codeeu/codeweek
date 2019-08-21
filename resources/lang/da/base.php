@@ -46,8 +46,6 @@ return [
     ],
 
     'resources_local_title'=>'Kodningsressourcer fra',
-    'are_you_a_teacher' => 'Er du lærer?',
-    'get_involved_banner' => 'Klik her for at se, hvordan du kan være med!',
     'days'=>'Dage',
     'hours'=>'Timer',
     'minutes'=>'Minutter',

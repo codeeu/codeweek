@@ -44,8 +44,6 @@ return [
     ],
 
     'resources_local_title'=>'Kodlama kaynakları',
-    'are_you_a_teacher' => 'Öğretmen misiniz?',
-    'get_involved_banner' => 'Nasıl katılabileceğinizi öğrenmek için hemen tıklayın!',
     'days'=>'Gün',
     'hours'=>'Saat',
     'minutes'=>'Dakika',

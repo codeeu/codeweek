@@ -46,8 +46,6 @@ return [
     ],
 
     'resources_local_title'=>'Zdroje o programovaní z',
-    'are_you_a_teacher' => 'Ste učiteľ alebo učiteľka?',
-    'get_involved_banner' => 'Kliknite tu a zistite, ako sa môžete zapojiť!',
     'days'=>'Dni',
     'hours'=>'Hodiny',
     'minutes'=>'Minúty',

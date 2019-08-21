@@ -44,8 +44,6 @@ return [
     ],
 
     'resources_local_title'=>'Ikkowdjar ta’ riżorsi minn',
-    'are_you_a_teacher' => 'Int għalliem?',
-    'get_involved_banner' => 'Ikklikkja hawn biex issir taf kif issir involut/a!',
     'days'=>'Jiem',
     'hours'=>'Sigħat',
     'minutes'=>'Minuti',

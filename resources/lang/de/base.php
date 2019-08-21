@@ -46,8 +46,6 @@ return [
     ],
 
     'resources_local_title'=>'Materialien zum Programmieren aus',
-    'are_you_a_teacher' => 'Sind Sie Lehrerin oder Lehrer?',
-    'get_involved_banner' => 'Klicken Sie hier, um herauszufinden, wie Sie sich beteiligen können!',
     'days'=>'Tage',
     'hours'=>'Stunden',
     'minutes'=>'Minuten',

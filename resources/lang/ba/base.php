@@ -47,8 +47,6 @@ return [
     ],
 
     'resources_local_title'=>'Resursi za kodiranje od',
-    'are_you_a_teacher' => 'Jeste li vi nastavnik?',
-    'get_involved_banner' => 'Kliknite ovdje i saznajte kako da se angažirate!',
     'days'=>'Dani',
     'hours'=>'Sati',
     'minutes'=>'Minute',
