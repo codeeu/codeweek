@@ -56,16 +56,15 @@
             @endif
 
 
-            <div class="codeweek-card-group">
+            <div class="codeweek-grid-layout">
                 @forelse ($ambassadors as $ambassador)
-                    <div class="card card-link">
-                        <img src="{{$ambassador->avatar}}" class="card-img-top">
-                        <div class="card-body">
+                    <div class="codeweek-card">
+                        <img src="{{$ambassador->avatar}}" class="card-image">
+                        <div class="card-content">
                             <h5 class="card-title">{{ $ambassador->fullName() }}</h5>
-                            <p class="card-text card-description">{{ $ambassador->bio }}</p>
+                            <p class="card-description">{{ $ambassador->bio }}</p>
                         </div>
-                        <div class="card-footer">
-                            <div class="card-tools">
+                        <div class="card-actions">
                                 {{--Ambassador email--}}
                                 @if($ambassador->email_display)
                                     <a href="mailto:{{ $ambassador->email_display }}"
@@ -92,7 +91,6 @@
                                         <img src="/images/globe.svg" alt="Twitter">
                                     </a>
                                 @endif
-                            </div>
                         </div>
                     </div>
                 @empty

@@ -109,10 +109,10 @@
             </div>
 
 
-            <div class="codeweek-card-group">
-                <div class="card" v-for="resource in resources">
-                    <resource-card :resource="resource"></resource-card>
-                </div>
+            <div class="codeweek-grid-layout">
+                <template v-for="resource in resources">
+                    <resource-card :resource="resource" ></resource-card>
+                </template>
             </div>
 
             <pagination v-if="pagination.last_page > 1" :pagination="pagination" :offset="5"
