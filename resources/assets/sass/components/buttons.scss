@@ -64,6 +64,30 @@
   font-weight: bold;
   height: 40px;
 }
+.codeweek-action-button{
+  cursor: pointer;
+  padding: 0 25px;
+  border-radius: 10px;
+  background-color: $main-color;
+  color: $main-color4;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  min-height: 40px;
+  outline: none;
+}
+
+.codeweek-action-link-button{
+  cursor: pointer;
+  padding: 9px 25px;
+  border-radius: 10px;
+  background-color: $main-color;
+  color: $main-color4;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  min-height: 40px;
+}
 
 
 /*Media queries*/

@@ -77,27 +77,19 @@
 
             <div class="sub-category-title">Activities</div>
 
-            <!--<div class="flex" style="font-size: 14px;">
-
-                <div class="title events-count" v-if="events.length > 0 && !isLoading">{{pagination.total}}
-                    {{pagination.total > 1 ? $t('search.events') : $t('search.event')}} {{$t('search.search_counter')}}
-                </div>
-
-            </div>-->
-
-            <div class="codeweek-card-group">
-                <a :href="'/view/' + event.id + '/' + event.slug" v-for="event in events" class="card-link">
-                    <div class="card">
-                        <img :src="thumbnail(event)" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">{{event.title}}</h5>
-                            <p class="card-text card-description">{{event.description}}</p>
-                            <p class="card-text">
-                                <small class="text-muted">{{event.start_date}}</small>
-                            </p>
-                        </div>
+            <div class="codeweek-grid-layout">
+                <div class="codeweek-card"  v-for="event in events">
+                    <img :src="thumbnail(event)" class="card-image">
+                    <div class="card-content">
+                        <div class="card-title">{{ event.title }}</div>
+                        <div class="card-subtitle">{{ event.start_date }}</div>
+                        <div class="card-description">{{ event.description }}</div>
                     </div>
-                </a>
+                    <div class="card-actions">
+                        <a class="codeweek-action-link-button"
+                           :href="'/view/' + event.id + '/' + event.slug" >{{ $t('myevents.view') }}</a>
+                    </div>
+                </div>
 
             </div>
 

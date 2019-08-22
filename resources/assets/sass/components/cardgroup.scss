@@ -1,9 +1,101 @@
-.codeweek-card-group{
+.codeweek-grid-layout{
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
 }
-.codeweek-card-group .card-link{
+
+.codeweek-card{
+  box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.codeweek-card .card-image{
+  width:100%;
+  border-radius: 4px 4px 0 0;
+  object-fit: cover;
+  height: 194px;
+}
+
+.codeweek-card .card-content{
+  padding:16px;
+}
+
+.codeweek-card .card-title{
+  font-size: 24px;
+  color: #000000de;
+  margin-bottom: 12px;
+}
+.codeweek-card .card-subtitle{
+  color: #000000de;
+  margin-bottom: 12px;
+}
+.codeweek-card .card-description{
+  font-size: 14px;
+  color: #00000099;
+  margin-bottom: 12px;
+}
+
+.codeweek-card .card-actions{
+  padding:16px;
+  flex:1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.codeweek-card .card-actions .codeweek-action-link-button,
+.codeweek-card .card-actions .codeweek-action-button,
+.codeweek-card .card-actions .codeweek-svg-button{
+  margin-left: 10px;
+}
+
+.codeweek-card .card-expander.collapsed{
+  background-image: url('/images/arrow_down.svg');
+}
+.codeweek-card .card-expander.expanded{
+  background-image: url('/images/arrow_up.svg');
+}
+.codeweek-card .card-expander{
+  cursor: pointer;
+  padding: 3px;
+  margin: 0 10px;
+  text-align: center;
+  background-color: #e8e8e8;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 14px;
+  background-size: 20px;
+}
+
+.codeweek-card .card-expander:hover{
+  background-color: #dddddd;
+}
+
+.codeweek-card .card-divider{
+  border: 1px solid #e8e8e8;
+  margin: 20px 0;
+}
+
+.codeweek-card .card-chips{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.codeweek-card .card-chip {
+  margin: 4px;
+  background-color: #e0e0e0;
+  padding: 7px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+  color: rgba(0,0,0,.87);
+  font-weight: 600;
+}
+
+/*.codeweek-card-group .card-link{
   display: flex;
   border-top: 1px solid #C6C6C6;
   border-bottom: 1px solid #C6C6C6;
@@ -43,7 +135,7 @@
 
 .codeweek-card-group .card-tools{
   display: flex;
-}
+}*/
 
 
 /* smartphones, iPhone, portrait 480x320 phones */
@@ -54,13 +146,13 @@
 }
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 @media (min-width:641px)  {
-  .codeweek-card-group{
+  .codeweek-grid-layout{
     grid-template-columns: 1fr 1fr;
   }
 }
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:961px)  {
-  .codeweek-card-group{
+  .codeweek-grid-layout{
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
