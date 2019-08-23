@@ -10,20 +10,10 @@
 
             <section class="codeweek-content-wrapper-inside">
 
-                <h1>Coding without computers (unplugged)</h1>
-                <span>by Alessandro Bogliolo</span>
+                <h1>@lang('training.lessons.1.title')</h1>
+                <span>@lang('training.lessons.1.author')</span>
 
-                <p>
-                    Coding is the language of things, which allows us to write programs to grant new functionalities to the tens of billions of programmable objects around us. Coding is the fastest way to make our ideas come true and the most effective way to develop computational thinking capabilities. However, technology is not strictly required to develop computational thinking. Rather, our computational thinking skills are essential to make technology work.
-                </p>
-
-                <p>
-                    In this video, Alessandro Bogliolo, Professor of Computer Systems in Italy and Europe Code Week Coordinator, will introduce unplugged coding activities that can be practiced without any electronic device. The main purpose of unplugged activities is to lower the access barriers to bring coding in every school, regardless of funding and equipment.
-                </p>
-
-                <p>
-                    Unplugged coding activities unveil the computational aspects of the physical world around us.
-                </p>
+                @lang('training.lessons.1.text')
 
 
             </section>
@@ -33,28 +23,29 @@
             <section class="codeweek-content-wrapper-inside">
 
                 <p>
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Video_script.docx">Download the video script</a>
+                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Video_script.docx">@lang('training.download_video_script')</a>
                 </p>
 
-                <h2>Ready to share what you learnt with your students?</h2>
+                <h2>@lang('training.ready_to_share')</h2>
 
                 <p>
-                    Choose one of the lesson plans below and organize an activity with your students.
+                    @lang('training.choose_lessons')
                 </p>
 
                 <ul>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+1_Primary.docx">Activity 1 – CodyRoby for Primary School</a>
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+1_Primary.docx">@lang('training.lessons.1.activities.1')</a>
                     </li>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+2_Lower+Second....docx">Activity 2 – CodyRoby for Lower Secondary School</a>
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson_plan+2_Lower+Second....docx">@lang('training.lessons.1.activities.2')</a>
                     </li>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson+plan+3_Secondary.docx">Activity 3 – CodyRoby for Secondary School</a>
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+1_Unplugged_Coding_Lesson+plan+3_Secondary.docx">@lang('training.lessons.1.activities.3')</a>
                     </li>
                 </ul>
 
-                @include('static.training.footer')
+                <h2>@lang('training.footer.title')</h2>
+                @lang('training.footer.text')
 
             </section>
 
