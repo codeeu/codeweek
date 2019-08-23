@@ -10,20 +10,10 @@
 
             <section class="codeweek-content-wrapper-inside">
 
-                <h1>Making robotics and tinkering in the classroom</h1>
-                <span>by Tullia Urschitz</span>
+                <h1>@lang('training.lessons.5.title')</h1>
+                <span>@lang('training.lessons.5.author')</span>
 
-                <p>
-                    The integration of coding, tinkering, robotics, and microelectronics as teaching and learning tools in the school curricula is key in 21st century education.
-                </p>
-
-                <p>
-                    Using tinkering and robotics in schools has many benefits for students, as it helps develop key competences such as problem solving, teamwork and collaboration. It also boosts students´ creativity and confidence and can help students develop perseverance and determination when faced with challenges. Robotics is also a field that promotes inclusivity, as it is easily accessible to a wide range of students with varying talents and skills (both boys and girls) and it positively influences students on the autism spectrum.
-                </p>
-
-                <p>
-                    Have a look at this video where Tullia Urschitz, Italian Scientix ambassador and STEM teacher in Sant’Ambrogio Di Valpolicella, Italy, will give some practical examples on how teachers can integrate tinkering and robotics in the classroom, thus transforming passive students into enthusiastic makers.
-                </p>
+                @lang('training.lessons.5.text')
 
             </section>
 
@@ -32,28 +22,29 @@
             <section class="codeweek-content-wrapper-inside">
 
                 <p>
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+5_Making_Robotics_Tinkering+_Video+script.docx">Download the video script</a>
+                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+5_Making_Robotics_Tinkering+_Video+script.docx">@lang('training.download_video_script')</a>
                 </p>
 
-                <h2>Ready to share what you learnt with your students?</h2>
+                <h2>@lang('training.ready_to_share')</h2>
 
                 <p>
-                    Choose one of the lesson plans below and organize an activity with your students.
+                    @lang('training.choose_lessons')
                 </p>
 
                 <ul>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+1_Primary.docx">Activity 1 - How to make a mechanical, hardboard hand for Primary School</a>
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+1_Primary.docx">@lang('training.lessons.5.activities.1')</a>
                     </li>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+2_Lower+Secondary.docx">Activity 2 - How to make a mechanical or robotic hand for Lower Secondary School</a>
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+2_Lower+Secondary.docx">@lang('training.lessons.5.activities.2')</a>
                     </li>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+3_+Upper+Secondary.docx">Activity 3 - How to make a mechanical or robotic hand for Upper Secondary School</a>
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+5_+Making_Robotics_+Tinkering_Lesson_plan+3_+Upper+Secondary.docx">@lang('training.lessons.5.activities.3')</a>
                     </li>
                 </ul>
 
-                @include('static.training.footer')
+                <h2>@lang('training.footer.title')</h2>
+                @lang('training.footer.text')
 
             </section>
 

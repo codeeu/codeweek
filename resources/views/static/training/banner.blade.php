@@ -1,6 +1,6 @@
 <section class="codeweek-banner training">
     <div class="text">
-        <h1>Training</h1>
+        <h1>@lang('menu.training')</h1>
         <h2>CODEWEEK</h2>
         <h2>LEARNING BITS</h2>
     </div>

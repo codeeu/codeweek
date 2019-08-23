@@ -1,40 +1,34 @@
 @extends('layout.base')
 
 @section('content')
-    <section>
+    <section id="codeweek-pending-events" class="codeweek-page">
 
-        <div class="container" style="padding-top:30px;">
-            <h1 style="display: inline-block;">
-                Pending Events
-            </h1>
-            <hr>
+            <h1>Pending Events</h1>
 
-            @role('super admin')
-            <country-select :code="'{{$country_iso}}'" :countries="{{$countries}}"></country-select>
-            <br/>
-            @endrole
 
-            <div>Total of pending events: {{$events->total()}}</div>
+            <section class="codeweek-searchbox">
+                @role('super admin')
+                    <country-select :code="'{{$country_iso}}'" :countries="{{$countries}}"></country-select>
+                @endrole
+                <div>Total of pending events: {{$events->total()}}</div>
+            </section>
 
-            @if($events->count() > 0)
-                <div class="row pending">
-                    @foreach($events as $event)
-                        @component('event.event_tile', ['event'=>$event])
-                        @endcomponent
-                    @endforeach
+            <section class="codeweek-content-wrapper">
+                @if($events->count() > 0)
+                    <div class="codeweek-grid-layout">
+                        @foreach($events as $event)
+                            @component('event.event_tile', ['event'=>$event])
+                            @endcomponent
+                        @endforeach
 
-                </div>
-                {{ $events->links() }}
-            @else
-
-                No Pending Event found for {{$country_name}}
-            @endif
+                    </div>
+                    {{ $events->links() }}
+                @else
+                    No Pending Event found for {{$country_name}}
+                @endif
+            </section>
 
         </div>
 
     </section>
-
 @endsection
-
-
-

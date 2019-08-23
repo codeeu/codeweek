@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <select v-model="selected_country" class="search-form-element" id="id_country" name="country_iso" @change="newCountry()">
+        <select v-model="selected_country" class="codeweek-input-select" id="id_country" name="country_iso" @change="newCountry()">
             <option value=""> All countries</option>
             <option value="">---------------</option>
             <option v-for="country in countries" v-bind:value="country.iso">{{country.name}} ({{country.iso}})</option>
