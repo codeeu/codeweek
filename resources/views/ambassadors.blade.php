@@ -15,7 +15,13 @@
         </section>
 
         <section class="codeweek-searchbox">
-            <multiselect :options="{{ $countries }}" name="countries" label="event.countries"></multiselect>
+            <form method="get" action="/ambassadors" enctype="multipart/form-data">
+                <select id="id_country" name="country_iso" onchange="this.form.submit()" class="codeweek-input-select">
+                    @foreach ($countries_with_ambassadors as $ctry)
+                        <option value="{{$ctry->country_iso}}" {{app('request')->input('country_iso') == $ctry->country_iso ? 'selected' : ''}}>@lang('countries.'. $ctry->name)</option>
+                    @endforeach
+                </select>
+            </form>
         </section>
 
         <section class="codeweek-content-wrapper">
