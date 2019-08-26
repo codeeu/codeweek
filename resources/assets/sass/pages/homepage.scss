@@ -139,6 +139,33 @@
   stroke:$main-color !important;
 }
 
+.countdown {
+  position:relative;
+  display: flex;
+  flex-direction: column;
+}
+#countdown {
+  display: flex;
+  position: absolute;
+  right: 0;
+  margin-right: 22%;
+  margin-top: 8%;
+}
+
+#countdown div{
+  padding: 10px 5px;
+  margin-right: 2px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  font-family: $decorative-font;
+}
+
+#countdown .separator{
+  background-color: transparent;
+  color: black;
+}
+
 /* smartphones, iPhone, portrait 480x320 phones */
 @media (min-width:320px)  {
 }

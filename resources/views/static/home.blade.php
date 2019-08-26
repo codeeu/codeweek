@@ -8,7 +8,18 @@
                 <div class="text">@lang('home.about')</div>
             </div>
             <div class="info">
-                <div class="countdown"><img src="/images/countdown.svg" class="static-image"></div>
+                <div class="countdown">
+                    <div id="countdown">
+                        <div class="day">39</div>
+                        <div class="separator">:</div>
+                        <div class="hours">13</div>
+                        <div class="separator">:</div>
+                        <div class="minutes">44</div>
+                        <div class="separator">:</div>
+                        <div class="seconds">01</div>
+                    </div>
+                    <img src="/images/countdown.svg" class="static-image">
+                </div>
                 <div class="when">
                     <div class="title">#CodeWeek</div>
                     <div class="date">@lang('home.when')</div>
