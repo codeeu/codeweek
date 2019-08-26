@@ -5,11 +5,13 @@
 
     <section id="codeweek-events-add-page" class="codeweek-page">
 
-        <section class="codeweek-content-wrapper">
-
+        <section class="codeweek-content-header">
             <h1>@lang('event.main_title')</h1>
             <a href="{{route('guide')}}" target="_blank">@lang('event.howto')?</a>
             <p>@lang('event.required')</p>
+        </section>
+
+        <section class="codeweek-content-wrapper" style="margin-top:0px;">
 
             <form enctype="multipart/form-data" method="post" role="form" class="codeweek-form" action="/events">
 
