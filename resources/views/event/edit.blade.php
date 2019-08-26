@@ -4,10 +4,12 @@
 
     <section id="codeweek-events-edit-page" class="codeweek-page">
 
-        <section class="codeweek-content-wrapper">
-
+        <section class="codeweek-content-header">
             <h1>@lang('edit.title')</h1>
             <p>@lang('event.required')</p>
+        </section>
+
+        <section class="codeweek-content-wrapper" style="margin-top:0px;">
 
             <form enctype="multipart/form-data" method="post" id="event" role="form" class="codeweek-form"
                   action="/events/{{$event->id}}">

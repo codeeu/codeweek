@@ -111,6 +111,15 @@
   height: 500px;
 }
 
+.codeweek-content-header{
+  margin: 0 10px 0 10px;
+  h1 {
+    & + p {
+      padding-top: 10px;
+    }
+  }
+}
+
 
 /*Media queries*/
 
@@ -124,6 +133,9 @@
 @media (min-width:641px)  {
   .codeweek-content-wrapper{
     margin: 40px 60px 0 60px;
+  }
+  .codeweek-content-header {
+    margin: 0 60px 0 60px;
   }
   .codeweek-content-wrapper-inside{
     margin: 5px 55px;
@@ -147,6 +159,9 @@
 @media (min-width:961px)  {
   .codeweek-content-wrapper{
     margin: 50px 100px 0 100px;
+  }
+  .codeweek-content-header {
+    margin: 0px 100px 0 100px;
   }
   .codeweek-content-wrapper-inside{
     margin: 15px 115px;

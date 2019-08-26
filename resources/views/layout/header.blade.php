@@ -45,14 +45,12 @@
                     <li>
                         <img src="/images/user_menu_profile.svg" class="icon">
                         <a href="{{route('profile')}}">
-                            <i class="fa fa-user"></i>
                             @lang('menu.profile')
                         </a>
                     </li>
                     <li>
                         <img src="/images/user_menu_pending_events.svg" class="icon">
                         <a href="{{route('pending')}}">
-                            <i class="fa fa-calendar"></i>
                             @lang('menu.pending')
                         </a>
                     </li>
@@ -60,57 +58,50 @@
                     <li>
                         <img src="/images/user_menu_your_events.svg" class="icon">
                         <a href="{{route('my_events')}}">
-                            <i class="fa fa-calendar"></i>
                             @lang('menu.your_events')
                         </a>
                     </li>
                     <li>
                         <img src="/images/user_menu_certificates.svg" class="icon">
                         <a href="{{route('certificates')}}">
-                            <i class="fa fa-file"></i>
                             @lang('menu.your_certificates')
                         </a>
                     </li>
                     <li>
                         <img src="/images/user_menu_report_events.svg" class="icon">
                         <a href="/events_to_report">
-                            <i class="fa fa-calendar-check-o"></i>
                             @lang('menu.report')
                         </a>
                     </li>
                     <li>
                         <img src="/images/user_menu_certificates.svg" class="icon">
                         <a href="/participation">
-                            <i class="fa fa-copy"></i>
                             @lang('menu.participation')
                         </a>
                     </li>
                     @role('super admin')
-                    <li>
+                    {{--<li>
                         <img src="/images/user_menu_activities.svg" class="icon">
                         <a href="{{route('activities')}}">
-                            <i class="fa fa-list"></i>
                             Activities
                         </a>
                     </li>
                     <li>
                         <img src="/images/user_menu_volunteers.svg" class="icon">
                         <a href="{{route('volunteers')}}">
-                            <i class="fa fa-users"></i>
                             Volunteers
                         </a>
                     </li>
                     <li>
                         <img src="/images/user_menu_statistics.svg" class="icon">
-                        <a href="{{route('stats')}}"><i class="fa fa-thumbs-up"></i> @lang('menu.stats')</a>
-                    </li>
+                        <a href="{{route('stats')}}">@lang('menu.stats')</a>
+                    </li>--}}
                     @endrole
 
                     <li>
                         <img src="/images/user_menu_logout.svg" class="icon">
                         <a class="dropdown-item" href="{{ route('logout') }}"
                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                            <i class="fa fa-sign-out"></i>
                             {{ __('menu.logout') }}
                         </a>
                     </li>
