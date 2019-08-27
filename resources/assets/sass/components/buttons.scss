@@ -29,6 +29,12 @@
   text-transform: uppercase;
   min-height: 57px;
 }
+.codeweek-button input:hover,
+.codeweek-action-button:hover,
+.codeweek-action-link-button:hover,
+.codeweek-image-button:hover{
+  background-color: #f15d22;
+}
 .codeweek-blank-button{
   border: 1px solid #707070;
   border-radius: 32px;
@@ -49,7 +55,7 @@
   fill: $main-color !important
 }
 .codeweek-svg-button:hover svg path{
-  fill: #a2a2a2 !important
+  fill: #f15d22 !important
 }
 .codeweek-expander-button{
   background-color: $main-color;
@@ -87,6 +93,22 @@
   font-weight: bold;
   text-transform: uppercase;
   min-height: 40px;
+}
+
+.codeweek-image-button{
+  cursor: pointer;
+  padding: 0 15px;
+  border-radius: 20px;
+  background-color: $main-color;
+  color: $main-color4;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  min-height: 40px;
+  outline: none;
+}
+.codeweek-image-button svg path{
+  fill: $main-color4 !important;
 }
 
 

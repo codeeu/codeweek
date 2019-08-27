@@ -25,7 +25,9 @@
                         @endcomponent
                     @endforeach
                 </div>
-                {{ $events->links() }}
+                <div class="codeweek-pagination">
+                    {{ $events->links() }}
+                </div>
             @endif
 
         </section>

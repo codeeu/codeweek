@@ -1,19 +1,21 @@
 <template>
-    <div>
-        <div class="level">
-            <img :src="avatar" class="mr-1">
-
-            <h1>
-                {{ user.fullName }}
-            </h1>
+    <div class="codeweek-user-avatar">
+        <div class="name">
+            <h1>{{ user.fullName }}</h1>
         </div>
-
-        <form v-if="canUpdate" method="POST" enctype="multipart/form-data">
-            <image-upload name="avatar" class="mr-1" @loaded="onLoad"></image-upload>
-        </form>
-
-        <button @click="remove" v-show="hasAvatar">Delete Avatar</button>
-
+        <div class="avatar">
+            <div class="actions">
+                <form v-if="canUpdate" method="POST" enctype="multipart/form-data">
+                    <image-upload name="avatar" class="mr-1" @loaded="onLoad"></image-upload>
+                </form>
+            </div>
+            <img :src="avatar" class="codeweek-avatar-image">
+            <div style="display: flex;align-items: flex-end;margin-left: -35px;">
+                <button class="codeweek-image-button" @click="remove" v-show="hasAvatar">
+                    <img src="/images/trash.svg">
+                </button>
+            </div>
+        </div>
     </div>
 </template>
 

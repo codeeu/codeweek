@@ -1,7 +1,7 @@
 @extends('layout.base')
 
 @section('content')
-    <section id="codeweek-pending-events-page no-banner" class="codeweek-page">
+    <section id="codeweek-pending-events-page" class="codeweek-page">
 
         <section class="codeweek-content-header">
 
@@ -24,7 +24,9 @@
                     @endforeach
 
                 </div>
-                {{ $events->links() }}
+                <div class="codeweek-pagination">
+                    {{ $events->links() }}
+                </div>
             @else
                 No Pending Event found for {{$country_name}}
             @endif

@@ -113,7 +113,11 @@
                 </ul>
             </div>
         @else
-            <div class="round-button-sign"><a href="/login">@lang('menu.signin')</a></div>
+            <div class="round-button-sign">
+                <a href="/login">
+                    <img src="/images/sign-in.svg" alt="Sign-in" class="button-icon">
+                </a>
+            </div>
         @endif
 
         <div id="tools">
