@@ -4,7 +4,7 @@
 
     <section id="codeweek-profile-page" class="codeweek-page">
 
-        <section class="codeweek-content-wrapper">
+        <section class="codeweek-content-wrapper" style="margin-top:0;">
 
             <avatar-form :user="{{ $profileUser }}"></avatar-form>
 

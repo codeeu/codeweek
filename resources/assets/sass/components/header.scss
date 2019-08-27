@@ -166,6 +166,8 @@ header #right-menu .round-button:after {
 
 header #right-menu .round-button-sign{
   border: 2px solid $main-color;
+  width: 48px;
+  height: 48px;
 }
 
 header #right-menu .round-button-sign a{
@@ -175,6 +177,7 @@ header #right-menu .round-button-sign a{
   display: flex;
   height: 100%;
   align-items: center;
+  justify-content: center;
 }
 
 header #right-menu a{

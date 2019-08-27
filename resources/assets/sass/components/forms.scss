@@ -120,7 +120,7 @@
 .codeweek-form-field-wrapper .info {
   margin-left: 140px;
   font-size: 14px;
-  color: cornflowerblue;
+  color: #40b5d1;
 }
 
 .codeweek-form-field-wrapper .errors .errorlist{
@@ -286,4 +286,63 @@
 
 .v-autocomplete-list-item .name{
   font-weight: bold;
+}
+
+[type="file"] {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  white-space: nowrap;
+  width: 1px;
+}
+
+[type="file"] + label {
+  cursor: pointer;
+  display: inline-block;
+  height: 100%;
+  padding: 18px 25px;
+  border-radius: 29px;
+  background-color: $main-color;
+  color: $main-color4;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+[type="file"]:focus + label,
+[type="file"] + label:hover {
+  background-color: #f15d22;
+}
+
+[type="file"]:focus + label {
+  outline: 1px dotted #000;
+}
+
+.codeweek-user-avatar{
+  display: flex;
+}
+
+.codeweek-user-avatar .name{
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.codeweek-user-avatar .avatar{
+  display: flex;
+}
+
+.codeweek-user-avatar .avatar .codeweek-avatar-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #e8e8e8;
+}
+
+.codeweek-user-avatar .avatar .actions{
+  display: flex;
+  align-items: flex-end;
 }
