@@ -15,7 +15,7 @@
             }
 
             function hideCookieDialog() {
-                const dialogs = document.getElementsByClassName('cookie-consent-banner');
+                const dialogs = document.getElementsByClassName('codeweek-cookie-consent-banner');
 
                 for (let i = 0; i < dialogs.length; ++i) {
                     dialogs[i].style.display = 'none';
