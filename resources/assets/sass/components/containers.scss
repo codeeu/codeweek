@@ -139,7 +139,17 @@
   font-weight: bold;
   margin-right: 10px;
 }
+.codeweek-cookie-consent-banner {
+  padding: 20px 50px;
+  border-bottom: 1px solid #e8e8e8;
+}
 
+.codeweek-cookie-consent-banner .actions {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: flex-end;
+}
 
 /*Media queries*/
 
