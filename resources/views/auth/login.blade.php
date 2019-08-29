@@ -1,7 +1,6 @@
 @extends('layout.base')
 
 @section('content')
-
     <section id="codeweek-login-page" class="codeweek-page">
 
         <section class="codeweek-banner simple">
@@ -102,5 +101,4 @@
         </section>
 
     </section>
-
 @endsection
