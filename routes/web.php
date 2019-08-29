@@ -41,10 +41,10 @@ Route::get('setlocale', function (Request $request) {
 //Static pages
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/guide', 'StaticPageController@index')->name('guide');
+Route::get('/guide', 'StaticPageController@static')->name('guide');
 Route::get('/privacy', 'StaticPageController@static')->name('privacy');
-Route::get('/petition', 'StaticPageController@index')->name('petition');
-Route::get('/beambassador', 'StaticPageController@index')->name('beambassador');
+Route::get('/petition', 'StaticPageController@static')->name('petition');
+Route::get('/beambassador', 'StaticPageController@static')->name('beambassador');
 Route::get('/about', 'StaticPageController@static')->name('about');
 Route::get('/codeweek4all', 'StaticPageController@static')->name('codeweek4all');
 //Static training pages
