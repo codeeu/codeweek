@@ -4,15 +4,18 @@
 
     <section id="codeweek-events-edit-page" class="codeweek-page">
 
-        <section class="codeweek-content-header">
-            <h1>@lang('edit.title')</h1>
-            <p>@lang('event.required')</p>
+        <section class="codeweek-banner simple">
+            <div class="text">
+                <h2>#CodeWeek</h2>
+                <h1>@lang('edit.title')</h1>
+            </div>
         </section>
 
         <section class="codeweek-content-wrapper" style="margin-top:0px;">
 
             <form enctype="multipart/form-data" method="post" id="event" role="form" class="codeweek-form"
                   action="/events/{{$event->id}}">
+                <p>@lang('event.required')</p>
 
                 {{csrf_field()}}
                 {{ method_field('PATCH') }}
