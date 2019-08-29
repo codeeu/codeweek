@@ -4,7 +4,7 @@
 
     <section id="codeweek-privacy-page" class="codeweek-page">
 
-        <section class="codeweek-content-wrapper">
+        <section class="codeweek-content-wrapper" style="margin-top: 0;">
 
             <h1>PROTECTION OF YOUR PERSONAL DATA</h1>
 

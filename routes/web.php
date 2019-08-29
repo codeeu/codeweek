@@ -42,7 +42,7 @@ Route::get('setlocale', function (Request $request) {
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/guide', 'StaticPageController@index')->name('guide');
-Route::get('/privacy', 'StaticPageController@index')->name('privacy');
+Route::get('/privacy', 'StaticPageController@static')->name('privacy');
 Route::get('/petition', 'StaticPageController@index')->name('petition');
 Route::get('/beambassador', 'StaticPageController@index')->name('beambassador');
 Route::get('/about', 'StaticPageController@static')->name('about');
