@@ -49,7 +49,7 @@
 
                             <i>If you are the first one in your alliance:</i>
                             <ol start="2">
-                                <li>Click on Submit</li>
+                                <li>Click on Submit.</li>
                                 <li>Once your activity has been accepted, you will receive a confirmation email with your unique Code Week 4 All code.</li>
                                 <li>Copy the code and share it with your colleagues and others in your network who are also organising a coding activity. Spread the word to encourage others to participate!</li>
                                 <li>After the end of the campaign, all activity organisers will be asked to report back on how many participants they have involved. If you were successful in achieving the threshold, you and your colleagues who were part of your network will receive the Certificate of Excellence!</li>
@@ -59,7 +59,7 @@
                             <ol start="2">
                                 <li>Paste the passcode you received from the initiator, the first to build the alliance, into the CODE WEEK 4 ALL CODE field cell.</li>
                                 <li>Click on Submit.</li>
-                                <li>Spread the word (and the code!)  to get more organisers to join your alliance</li>
+                                <li>Spread the word (and the code!)  to get more organisers to join your alliance.</li>
                                 <li>After the end of the campaign, all activity organisers will be asked to report on how many participants they have involved. If you were successful in achieving the threshold, you and your colleagues who were part of your network will receive the Certificate of Excellence!</li>
 
                             </ol>
