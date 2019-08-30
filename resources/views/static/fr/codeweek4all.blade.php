@@ -32,14 +32,14 @@
                             <ol>
                                 <li>Rendez-vous sur la page <a href="/add">Ajouter une activit&eacute;</a> et renseignez les d&eacute;tails requis de votre activit&eacute; de codage.</li>
                             </ol><i>Si vous &ecirc;tre le premier repr&eacute;sentant de votre alliance:</i><ol start="2">
-                                <li>Cliquez sur Soumettre</li>
+                                <li>Cliquez sur Soumettre.</li>
                                 <li>Une fois votre activit&eacute; accept&eacute;e, vous recevrez un email de confirmation avec votre code unique Code Week 4 All.</li>
                                 <li>Copiez le code et partagez-le avec vos coll&egrave;gues et les autres membres de votre r&eacute;seau qui organisent &eacute;galement une activit&eacute; de codage. Faites passer le mot pour encourager les autres &agrave; participer!</li>
                                 <li>&Agrave; la fin de la campagne, tous les organisateurs d&rsquo;activit&eacute;s seront invit&eacute;s &agrave; indiquer le nombre de participants qu&rsquo;ils ont r&eacute;ussi &agrave; f&eacute;d&eacute;rer. Si vous r&eacute;ussissez &agrave; atteindre le seuil, vous et les coll&egrave;gues de votre r&eacute;seau obtiendrez le Certificat d&rsquo;excellence!</li>
                             </ol><i>Si vous rejoignez une alliance existante:</i><ol start="2">
                                 <li>Collez le code que vous avez re&ccedil;u de l&rsquo;initiateur, le premier &agrave; avoir cr&eacute;&eacute; l&rsquo;alliance, dans la cellule de champ CODE CODE WEEK 4 ALL.</li>
                                 <li>Cliquez sur Soumettre.</li>
-                                <li>Faites passer le mot (et le code!) pour que davantage d&rsquo;organisateurs rejoignent votre alliance</li>
+                                <li>Faites passer le mot (et le code!) pour que davantage d&rsquo;organisateurs rejoignent votre alliance.</li>
                                 <li>&Agrave; la fin de la campagne, tous les organisateurs d&rsquo;activit&eacute;s seront invit&eacute;s &agrave; indiquer le nombre de participants qu&rsquo;ils ont r&eacute;ussi &agrave; f&eacute;d&eacute;rer. Si vous r&eacute;ussissez &agrave; atteindre le seuil, vous et les coll&egrave;gues de votre r&eacute;seau obtiendrez le Certificat d&rsquo;excellence!</li>
 
                             </ol>

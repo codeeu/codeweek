@@ -48,7 +48,7 @@
                             </ol>
                             <i>Ak ste prv&yacute; spomedzi členov skupiny:</i>
                             <ol start="2">
-                                <li>Kliknite na Odoslať</li>
+                                <li>Kliknite na Odoslať.</li>
                                 <li>Po prijat&iacute; danej aktivity v&aacute;m po&scaron;leme potvrdzuj&uacute;ci
                                     e-mail s&nbsp;jedinečn&yacute;m k&oacute;dom Code Week 4 All.
                                 </li>
@@ -68,9 +68,9 @@
                                 <li>Vložte heslo z&iacute;skan&eacute; od inici&aacute;tora &ndash; človeka, ktor&yacute;
                                     začal vytv&aacute;rať skupinu &ndash;, do poľa k&oacute;du CODE WEEK 4 ALL CODE.
                                 </li>
-                                <li>Kliknite na Odoslať</li>
+                                <li>Kliknite na Odoslať.</li>
                                 <li>Hovorte o&nbsp;tom (a&nbsp;&scaron;&iacute;rte k&oacute;d), aby sa do va&scaron;ej
-                                    skupiny zapojili ďal&scaron;&iacute; organiz&aacute;tori
+                                    skupiny zapojili ďal&scaron;&iacute; organiz&aacute;tori.
                                 </li>
                                 <li>Po skončen&iacute; kampane vyzveme v&scaron;etk&yacute;ch organiz&aacute;torov aktiv&iacute;t,
                                     aby n&aacute;m nahl&aacute;sili počet zaangažovan&yacute;ch &uacute;častn&iacute;kov.

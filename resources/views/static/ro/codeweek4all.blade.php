@@ -32,14 +32,14 @@
                             <ol>
                                 <li>Vizitați pagina <a href="/add">Adăugare activitate</a> și completați detaliile necesare ale activității dumneavoastră de programare.</li>
                             </ol><i>Dacă sunteți prima persoană din alianța dumneavoastră:</i><ol start="2">
-                                <li>Faceți clic pe Trimite</li>
+                                <li>Faceți clic pe Trimite.</li>
                                 <li>Odată ce activitatea dumneavoastră a fost acceptată, veți primi un e-mail de confirmare cu codul dumneavoastră unic pentru Săptăm&acirc;na programării pentru toți.</li>
                                 <li>Copiați codul și partajați-l cu colegii dumneavoastră și cu alte persoane din rețeaua dumneavoastră care organizează o activitate de programare. Răsp&acirc;ndiți mesajul pentru a-i &icirc;ncuraja și pe alții să participe!</li>
                                 <li>După &icirc;ncheierea campaniei, tuturor organizatorilor de activități li se va solicita să raporteze numărul de participanți implicați &icirc;n activitatea lor. Dacă ați reușit să atingeți pragul, dumneavoastră și colegii dumneavoastră care au făcut parte din rețeaua dumneavoastră veți primi certificatul de excelență!</li>
                             </ol><i>Dacă vă alăturați unei alianțe existente:</i><ol start="2">
                                 <li>Lipiți codul pe care l-ați primit de la inițiator, pentru a crea mai &icirc;nt&acirc;i alianța, &icirc;n celula CODUL SĂPTĂM&Acirc;NII PROGRAMĂRII PENTRU TOȚI.</li>
                                 <li>Faceți clic pe Trimite.</li>
-                                <li>Răsp&acirc;ndiți mesajul (și codul!) pentru a determina mai mulți organizatori să se alăture alianței dumneavoastră</li>
+                                <li>Răsp&acirc;ndiți mesajul (și codul!) pentru a determina mai mulți organizatori să se alăture alianței dumneavoastră.</li>
                                 <li>După &icirc;ncheierea campaniei, tuturor organizatorilor de activități li se va solicita să raporteze numărul de participanți implicați &icirc;n activitatea lor. Dacă ați reușit să atingeți pragul, dumneavoastră și colegii dumneavoastră care au făcut parte din rețeaua dumneavoastră veți primi certificatul de excelență!</li>
 
                             </ol>

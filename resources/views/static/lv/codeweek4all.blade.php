@@ -32,7 +32,7 @@
                             <ol>
                                 <li>Apmeklējiet lapu <a href="/add">Pievienot notikumu</a> un norādiet nepiecie&scaron;amo informāciju par jūsu programmē&scaron;anas pasākumu.</li>
                             </ol><i>Ja esat pirmais jūsu savienībā:</i><ol start="2">
-                                <li>Klik&scaron;ķiniet uz &ldquo;Iesniegt&rdquo;</li>
+                                <li>Klik&scaron;ķiniet uz &ldquo;Iesniegt&rdquo;.</li>
                                 <li>Pēc jūsu pasākuma apstiprinā&scaron;anas jūs saņemsiet apstiprinājuma e-pastu ar unikālu &ldquo;Programmē&scaron;anas nedēļa visiem&rdquo; kodu.</li>
                                 <li>Nokopējiet kodu un nosūtiet to saviem kolēģiem un citiem jūsu tīkla dalībniekiem, kas arī organizē programmē&scaron;anas pasākumu. Izplatiet informāciju, lai pamudinātu arī citus piedalīties!</li>
                                 <li>Pēc kampaņas beigām visi pasākumu organizatori tiks aicināti paziņot iesaistīto dalībnieku skaitu. Ja jums izdevās sasniegt mērķi, jūs un jūsu kolēģi, kas piedalījās jūsu tīklā, saņems izcilības apliecinājuma sertifikātu!</li>

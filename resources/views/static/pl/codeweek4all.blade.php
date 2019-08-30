@@ -32,14 +32,14 @@
                             <ol>
                                 <li>Wejdź na <a href="/add">Dodaj wydarzenie</a> i wypełnij wymagane dane dotyczące twojego wydarzenia.</li>
                             </ol><i>Jeśli rejestrujesz się jako pierwszy w swoim sojuszu:</i><ol start="2">
-                                <li>Kliknij Dodaj wydarzenie</li>
+                                <li>Kliknij Dodaj wydarzenie.</li>
                                 <li>Gdy twoje wydarzenie zostanie zaakceptowane, otrzymasz potwierdzenie e-mailem wraz z unikatowym kodem wyzwania &bdquo;Code Week 4 All&rdquo;.</li>
                                 <li>Skopiuj kod i podziel się nim z kolegami oraz pozostałymi kontaktami w sieci, kt&oacute;rzy także organizują wydarzenie związanie z kodowaniem. Promuj inicjatywę, aby zachęcić innych do wzięcia udziału w wyzwaniu!</li>
                                 <li>Po zakończeniu kampanii organizatorzy każdego wydarzenia zostaną poproszeni o przedstawienie raportu dotyczącego liczby uczestnik&oacute;w, kt&oacute;rych udało im się zaangażować. Jeśli uda wam się osiągnąć kt&oacute;ryś z prog&oacute;w, ty i twoi koledzy, kt&oacute;rzy należeli do twojej sieci, otrzymacie Certyfikat Doskonałości!</li>
                             </ol><i>Jeśli chcesz dołączyć do istniejącego sojuszu:</i><ol start="2">
                                 <li>W pole KOD UCZESTNICTWA W TYGODNIU KODOWANIA DLA WSZYSTKICH wklej kod uczestnictwa otrzymany od organizatora, kt&oacute;ry stworzył wasz sojusz.</li>
                                 <li>Kliknij Dodaj wydarzenie</li>
-                                <li>Promuj inicjatywę (i podziel się kodem!), aby pozyskać większą liczbę organizator&oacute;w dla swojego sojuszu</li>
+                                <li>Promuj inicjatywę (i podziel się kodem!), aby pozyskać większą liczbę organizator&oacute;w dla swojego sojuszu.</li>
                                 <li>Po zakończeniu kampanii organizatorzy każdego wydarzenia zostaną poproszeni o przedstawienie raportu dotyczącego liczby uczestnik&oacute;w, kt&oacute;rych udało im się zaangażować. Jeśli uda wam się osiągnąć kt&oacute;ryś z prog&oacute;w, ty i twoi koledzy, kt&oacute;rzy należeli do twojej sieci, otrzymacie Certyfikat Doskonałości!</li>
 
                             </ol>

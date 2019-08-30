@@ -32,14 +32,14 @@
                             <ol>
                                 <li>Visita la p&aacute;gina <a href="/add">A&ntilde;adir una actividad</a> y completa la informaci&oacute;n requerida de tu actividad de programaci&oacute;n.</li>
                             </ol><i>Si eres la primera persona de la alianza:</i><ol start="2">
-                                <li>Pulsa en «A&ntilde;adir un evento»</li>
+                                <li>Pulsa en «A&ntilde;adir un evento».</li>
                                 <li>Una vez que tu actividad haya sido aceptada, recibir&aacute;s un correo electr&oacute;nico de confirmaci&oacute;n con un c&oacute;digo &uacute;nico CodeWeek4All.</li>
                                 <li>Copia el c&oacute;digo y comp&aacute;rtelo con los miembros de tu red que tambi&eacute;n organicen una actividad de programaci&oacute;n. ¡Corre la voz para animar a otras personas a participar!</li>
                                 <li>Tras la finalizaci&oacute;n de la campa&ntilde;a, se pedir&aacute; a todos los organizadores de actividades que informen sobre el n&uacute;mero de participantes. ¡Si hab&eacute;is conseguido cumplir alguno de los criterios, t&uacute; y todos los miembros de tu red recibir&eacute;is el Certificado de Excelencia!</li>
                             </ol><i>Si vas a unirte a una alianza que ya existe:</i><ol start="2">
                                 <li>Pega el c&oacute;digo de acceso que hayas recibido del promotor, la persona que haya creado la alianza, en el campo «c&oacute;digo CodeWeek4All».</li>
                                 <li>Pulsa Agregar un evento</li>
-                                <li>Corre la voz (¡y el c&oacute;digo!) para conseguir que m&aacute;s organizadores se unan a tu alianza</li>
+                                <li>Corre la voz (¡y el c&oacute;digo!) para conseguir que m&aacute;s organizadores se unan a tu alianza.</li>
                                 <li>Tras la finalizaci&oacute;n de la campa&ntilde;a, se pedir&aacute; a todos los organizadores de actividades que informen sobre el n&uacute;mero de participantes. ¡Si hab&eacute;is conseguido cumplir alguno de los criterios, t&uacute; y todos los miembros de tu red recibir&eacute;is el Certificado de Excelencia!</li>
 
                             </ol>
