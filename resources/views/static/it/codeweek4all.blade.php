@@ -32,14 +32,14 @@
                             <ol>
                                 <li>Visita la pagina <a href="/add">Aggiungi la tua attivit&agrave;</a> e inserisci le informazioni richieste sulla tua attivit&agrave; di programmazione.</li>
                             </ol><i>Se sei il primo della tua alleanza:</i><ol start="2">
-                                <li>Clicca su Invio</li>
+                                <li>Clicca su Invio.</li>
                                 <li>Quando la tua attivit&agrave; &egrave; stata accettata, riceverai un&rsquo;e-mail di conferma con il tuo codice unico Code Week 4 All.</li>
                                 <li>Copia il codice e condividilo con i tuoi colleghi e altre persone nella tua rete che organizzano attivit&agrave; di programmazione. Diffondi la voce per incoraggiare altri a partecipare!</li>
                                 <li>Alla fine della campagna, tutti gli organizzatori di attivit&agrave; dovranno rendere conto del numero di partecipanti coinvolti. Se riuscirai a raggiungere l&rsquo;obiettivo stabilito, tu e i colleghi parte della tua rete riceverete il Certificato di eccellenza!</li>
                             </ol><i>Se ti stai unendo a un&rsquo;alleanza esistente:</i><ol start="2">
                                 <li>Incolla il codice che hai ricevuto dall&rsquo;organizzatore principale, il primo a costituire l&rsquo;alleanza, nel campo CODE WEEK 4 ALL CODE.</li>
                                 <li>Clicca su Invio.</li>
-                                <li>Diffondi la voce (e il codice!) per invitare pi&ugrave; organizzatori a unirsi alla tua alleanza</li>
+                                <li>Diffondi la voce (e il codice!) per invitare pi&ugrave; organizzatori a unirsi alla tua alleanza.</li>
                                 <li>Alla fine della campagna, tutti gli organizzatori di attivit&agrave; dovranno rendere conto del numero di partecipanti coinvolti. Se riuscirai a raggiungere l&rsquo;obiettivo stabilito, tu e i colleghi parte della tua rete riceverete il Certificato di eccellenza!</li>
 
                             </ol>

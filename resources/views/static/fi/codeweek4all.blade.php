@@ -32,14 +32,14 @@
                             <ol>
                                 <li>K&auml;y <a href="/add">Lis&auml;&auml; tapahtuma</a> -sivulla ja t&auml;yt&auml; tarvittavat tiedot koodaustapahtumastasi.</li>
                             </ol><i>Jos olet verkostosi ensimm&auml;inen:</i><ol start="2">
-                                <li>Napsauta L&auml;het&auml;</li>
+                                <li>Napsauta L&auml;het&auml;.</li>
                                 <li>Kun toimintosi on hyv&auml;ksytty, saat vahvistuss&auml;hk&ouml;postin, jossa on yksil&ouml;llinen Kaikkien koodausviikon koodi.</li>
                                 <li>Kopioi koodi ja jaa se kollegoillesi ja muille verkostosi j&auml;senille, jotka my&ouml;s j&auml;rjest&auml;v&auml;t koodaustapahtuman. Levit&auml; sanaa ja kehota muitakin osallistumaan!</li>
                                 <li>Kampanjan p&auml;&auml;tytty&auml; kaikkia tapahtumien j&auml;rjest&auml;ji&auml; pyydet&auml;&auml;n raportoimaan osanottajien lukum&auml;&auml;r&auml;. Jos onnistuitte saavuttamaan rajan, sin&auml; ja verkostoosi kuuluneet kollegasi saatte osaamissertifikaatin!</li>
                             </ol><i>Jos liityt jo olemassa olevaan verkostoon:</i><ol start="2">
                                 <li>Liit&auml; verkoston perustajalta saamasi koodi KAIKKIEN KOODAUSVIIKON KOODILLE tarkoitettuun kentt&auml;&auml;n.</li>
                                 <li>Napsauta L&auml;het&auml;.</li>
-                                <li>Levit&auml; sanaa (ja koodia!), jotta useampi j&auml;rjest&auml;j&auml; liittyy verkostoosi</li>
+                                <li>Levit&auml; sanaa (ja koodia!), jotta useampi j&auml;rjest&auml;j&auml; liittyy verkostoosi.</li>
                                 <li>Kampanjan p&auml;&auml;tytty&auml; kaikkia tapahtumien j&auml;rjest&auml;ji&auml; pyydet&auml;&auml;n raportoimaan osanottajien lukum&auml;&auml;r&auml;. Jos onnistuitte saavuttamaan rajan, sin&auml; ja verkostoosi kuuluneet kollegasi saatte osaamissertifikaatin!</li>
 
                             </ol>

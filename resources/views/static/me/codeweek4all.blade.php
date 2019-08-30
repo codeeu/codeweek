@@ -32,7 +32,7 @@
                             <ol>
                                 <li>Posjetite stranicu <a href="/add">Dodaj događaj</a> i unesite potrebne informacije o va&scaron;em događaju programiranja.</li>
                             </ol><i>Ukoliko ste prvi u okviru va&scaron;eg saveza:</i><ol start="2">
-                                <li>Kliknite na &bdquo;unesi&ldquo;</li>
+                                <li>Kliknite na &bdquo;unesi&ldquo;.</li>
                                 <li>Nakon &scaron;to va&scaron; događaj bude prihvaćen, dobićete imejl sa potvrdom i va&scaron;im jedinstvenim Code Week 4 All (Nedjelja programiranja za sve) kodom.</li>
                                 <li>Iskopirajte kod i podijelite ga sa kolegama i drugima u va&scaron;oj mreži koji takođe organizuju događaj programiranja. &Scaron;irite vijest kako bi druge podstakli na uče&scaron;će!</li>
                                 <li>Po zavr&scaron;etku kampanje, od svih organizatora događaja zatražiće se povratna informacija o broju učesnika koji su okupili. Ukoliko ste sa uspjehom ispunili kriterijum, vi i va&scaron;e kolege koje su bile dio va&scaron;e mreže dobićete Sertifikat izuzetnosti!</li>

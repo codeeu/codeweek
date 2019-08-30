@@ -32,7 +32,7 @@
                             <ol>
                                 <li>Visite a p&aacute;gina <a href="/add">Adicionar Evento</a> e preencha os dados necess&aacute;rios relativos &agrave; sua atividade de programa&ccedil;&atilde;o.</li>
                             </ol><i>Se for o primeiro da sua alian&ccedil;a:</i><ol start="2">
-                                <li>Clique em Enviar</li>
+                                <li>Clique em Enviar.</li>
                                 <li>Assim que a sua atividade for aceite, receber&aacute; uma mensagem de correio eletr&oacute;nico de confirma&ccedil;&atilde;o com o seu c&oacute;digo "Code Week 4 All" &uacute;nico.</li>
                                 <li>Copie o c&oacute;digo e partilhe-o com os seus colegas e outras pessoas conhecidas que tamb&eacute;m estejam a organizar uma atividade de programa&ccedil;&atilde;o. Espalhe a palavra para incentivar outros a participar!</li>
                                 <li>Terminada a campanha, todos os organizadores de atividades ser&atilde;o convidados a declarar o n&uacute;mero de participantes que angariaram. Caso tenha conseguido alcan&ccedil;ar a meta, receber&aacute; o Certificado de Excel&ecirc;ncia, juntamente com os seus colegas que tenham participado na sua rede!</li>

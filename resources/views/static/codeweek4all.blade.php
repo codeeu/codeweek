@@ -6,7 +6,7 @@
 
         <section class="codeweek-banner training">
             <div class="text">
-                <h1>CodeWeek 4 All challenge</h1>
+                <h1>@lang('codeweek4all.title')</h1>
             </div>
             <div class="image">
                 <img src="/images/banner_training.svg" class="static-image">
@@ -18,54 +18,48 @@
             <section class="codeweek-content-wrapper-inside">
 
                 <p>
-                    The Code Week 4 All challenge encourages you to link your activities with others organised by friends, colleagues and acquaintances, and together gain the Code Week Certificate of Excellence.
+                    @lang('codeweek4all.text')
                 </p>
 
-                <h2>What is it?</h2>
+                <h2>@lang('codeweek4all.what.title')</h2>
 
-                <p>
-                    In addition to submitting your activity to the EU Code Week map, you can also engage others in your network to do the same. If you and your alliance reach one of the following thresholds, you will all earn the Code Week Certificate of Excellence!
-                </p>
-                <p>
-                    Criteria for earning the Certificate of Excellence:
-                </p>
+                @lang('codeweek4all.what.content')
                 <ul>
-                    <li><strong>500 students participated</strong></li> And / Or
-                    <li><strong>10 activities linked</strong></li> And / Or
-                    <li><strong>3 countries involved</strong></li>
+                    <li><strong>@lang('codeweek4all.what.criteria1')</strong></li>@lang('codeweek4all.what.andor')
+                    <li><strong>@lang('codeweek4all.what.criteria2')</strong></li>@lang('codeweek4all.what.andor')
+                    <li><strong>@lang('codeweek4all.what.criteria3')</strong></li>
                 </ul>
 
-                <h2>How to participate?</h2>
+                <h2>@lang('codeweek4all.howto.title')</h2>
 
                 <ol>
-                    <li>Visit the <a href="/add">Add Activity</a> page and fill in the necessary details of your coding activity.</li>
+                    <li>@lang('codeweek4all.howto.content')</li>
                 </ol>
 
-                <i>If you are the first one in your alliance:</i>
+                <i>@lang('codeweek4all.howto.first_alliance.title')</i>
                 <ol start="2">
-                    <li>Click on Submit</li>
-                    <li>Once your activity has been accepted, you will receive a confirmation email with your unique Code Week 4 All code.</li>
-                    <li>Copy the code and share it with your colleagues and others in your network who are also organising a coding activity. Spread the word to encourage others to participate!</li>
-                    <li>After the end of the campaign, all activity organisers will be asked to report back on how many participants they have involved. If you were successful in achieving the threshold, you and your colleagues who were part of your network will receive the Certificate of Excellence!</li>
+                    <li>@lang('codeweek4all.howto.first_alliance.1')</li>
+                    <li>@lang('codeweek4all.howto.first_alliance.2')</li>
+                    <li>@lang('codeweek4all.howto.first_alliance.3')</li>
+                    <li>@lang('codeweek4all.howto.first_alliance.4')</li>
                 </ol>
 
-                <i>If you are joining an existing alliance:</i>
+                <i>@lang('codeweek4all.howto.existing_alliance.title')</i>
                 <ol start="2">
-                    <li>Paste the passcode you received from the initiator, the first to build the alliance, into the CODE WEEK 4 ALL CODE field cell.</li>
-                    <li>Click on Submit.</li>
-                    <li>Spread the word (and the code!)  to get more organisers to join your alliance</li>
-                    <li>After the end of the campaign, all activity organisers will be asked to report on how many participants they have involved. If you were successful in achieving the threshold, you and your colleagues who were part of your network will receive the Certificate of Excellence!</li>
-
+                    <li>@lang('codeweek4all.howto.existing_alliance.1')</li>
+                    <li>@lang('codeweek4all.howto.existing_alliance.2')</li>
+                    <li>@lang('codeweek4all.howto.existing_alliance.3')</li>
+                    <li>@lang('codeweek4all.howto.existing_alliance.4')</li>
                 </ol>
 
-                <h2>Why join the challenge?</h2>
+                <h2>@lang('codeweek4all.why.title')</h2>
 
                 <ul>
-                    <li>To spread the message on the importance of coding.</li>
-                    <li>To see a large number of students get involved.</li>
-                    <li>To build connections with organisations and/or schools in your community or internationally.</li>
-                    <li>To find support from other organisers and teachers.</li>
-                    <li>To gain a <strong>Certificate of Excellence.</strong></li>
+                    <li>@lang('codeweek4all.why.1')</li>
+                    <li>@lang('codeweek4all.why.2')</li>
+                    <li>@lang('codeweek4all.why.3')</li>
+                    <li>@lang('codeweek4all.why.4')</li>
+                    <li>@lang('codeweek4all.why.5')</li>
                 </ul>
 
 

@@ -32,14 +32,14 @@
                             <ol>
                                 <li>Vizitoni faqen <a href="/add">Shto aktivitet</a> dhe plot&euml;soni t&euml; dh&euml;nat e nevojshme t&euml; aktivitetit tuaj t&euml; kodimit.</li>
                             </ol><i>N&euml;se jeni i pari nd&euml;r partner&euml;t tuaj:</i><ol start="2">
-                                <li>Klikoni te &ldquo;D&euml;rgo&rdquo;</li>
+                                <li>Klikoni te &ldquo;D&euml;rgo&rdquo;.</li>
                                 <li>Pasi aktiviteti juaj t&euml; jet&euml; pranuar, do t&euml; merrni nj&euml; email konfirmimi me kodin tuaj unik Code Week 4 All.</li>
                                 <li>Kopjojeni kodin dhe ndajeni me koleg&euml;t tuaj dhe t&euml; tjer&euml;t n&euml; rrjetin tuaj q&euml; po organizojn&euml; gjithashtu nj&euml; aktivitet kodimi. P&euml;rhapni fjal&euml;n p&euml;r t&euml; inkurajuar t&euml; tjer&euml;t t&euml; marrin pjes&euml;!</li>
                                 <li>Pas p&euml;rfundimit t&euml; fushat&euml;s, t&euml; gjith&euml; organizator&euml;ve t&euml; aktivitetit do t&rsquo;u k&euml;rkohet t&euml; raportojn&euml; se sa pjes&euml;marr&euml;s kan&euml; p&euml;rfshir&euml;. N&euml;se arrini kufirin me sukses, ju dhe koleg&euml;t tuaj q&euml; jan&euml; pjes&euml; e rrjetit tuaj do t&euml; merrni Certifikat&euml;n e P&euml;rsosm&euml;ris&euml;!</li>
                             </ol><i>N&euml;se po bashkoheni me nj&euml; partneritet ekzistues:</i><ol start="2">
                                 <li>Ngjisni kodin q&euml; keni marr&euml; nga nism&euml;tari, personi i par&euml; q&euml; nd&euml;rtoi partneritetin, n&euml; qeliz&euml;n e fush&euml;s KODI I CODE WEEK 4 ALL.</li>
                                 <li>Klikoni te &ldquo;D&euml;rgo&rdquo;.</li>
-                                <li>P&euml;rhapni fjal&euml;n (dhe kodin!) q&euml; m&euml; shum&euml; organizator&euml; t&euml; bashkohen me aleanc&euml;n tuaj</li>
+                                <li>P&euml;rhapni fjal&euml;n (dhe kodin!) q&euml; m&euml; shum&euml; organizator&euml; t&euml; bashkohen me aleanc&euml;n tuaj.</li>
                                 <li>Pas p&euml;rfundimit t&euml; fushat&euml;s, t&euml; gjith&euml; organizator&euml;ve t&euml; aktivitetit do t&rsquo;u k&euml;rkohet t&euml; raportojn&euml; se sa pjes&euml;marr&euml;s kan&euml; p&euml;rfshir&euml;. N&euml;se arrini kufirin me sukses, ju dhe koleg&euml;t tuaj q&euml; jan&euml; pjes&euml; e rrjetit tuaj do t&euml; merrni Certifikat&euml;n e P&euml;rsosm&euml;ris&euml;!</li>
 
                             </ol>
