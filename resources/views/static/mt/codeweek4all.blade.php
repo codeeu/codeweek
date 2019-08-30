@@ -32,14 +32,14 @@
                             <ol>
                                 <li>Żur il-paġna <a href="/add">Żid Attivit&agrave;</a> u imla d-dettalji meħtieġa tal-attivit&agrave; tal-ikkowdjar tiegħek.</li>
                             </ol><i>Jekk inti l-ewwel wieħed fl-alleanza tiegħek:</i><ol start="2">
-                                <li>Ikklikkja fuq Issottometti</li>
+                                <li>Ikklikkja fuq Issottometti.</li>
                                 <li>Ladarba l-attivit&agrave; tiegħek tkun ġiet aċċettata, se tirċievi email ta&rsquo; konferma bil-kodiċi uniku tiegħek għall-Ġimgħa tal-Ikkowdjar għal Kulħadd.</li>
                                 <li>Ikkopja l-kodiċi u aqsmu mal-kollegi tiegħek u ma&rsquo; oħrajn fin-netwerk tiegħek li qegħdin jorganizzaw ukoll attivit&agrave; tal-ikkowdjar. Xerred il-kelma biex tħeġġeġ lil oħrajn jipparteċipaw!</li>
                                 <li>Wara t-tmiem tal-kampanja, l-organizzaturi tal-attivit&agrave; kollha se jintalbu jirrapportaw lura n-numru ta&rsquo; parteċipanti li involvew. Jekk kellkom suċċess u lħaqtu l-limitu, inti u l-kollegi tiegħek li kienu parti min-netwerk tiegħek se tirċievu ċ-Ċertifikat ta&rsquo; Eċċellenza!</li>
                             </ol><i>Jekk qed tingħaqad ma&rsquo; alleanza eżistenti:</i><ol start="2">
                                 <li>Ippestja l-passcode li rċevejt mill-inizjatur, l-ewwel wieħed li beda jibni l-alleanza, fil-ċellola tal-qasam KODIĊI TAL-ĠIMGĦA TAL-IKKOWDJAR GĦAL KULĦADD.</li>
                                 <li>Ikklikkja fuq Issottometti.</li>
-                                <li>Xerred il-kelma (u l-kodiċi!) biex tikkonvinċi lil aktar organizzaturi jingħaqdu mal-alleanza tiegħek</li>
+                                <li>Xerred il-kelma (u l-kodiċi!) biex tikkonvinċi lil aktar organizzaturi jingħaqdu mal-alleanza tiegħek.</li>
                                 <li>Wara t-tmiem tal-kampanja, l-organizzaturi tal-attivit&agrave; kollha se jintalbu jirrapportaw in-numru ta&rsquo; parteċipanti li involvew. Jekk kellkom suċċess u lħaqtu l-limitu, inti u l-kollegi tiegħek li kienu parti min-netwerk tiegħek se tirċievu ċ-Ċertifikat ta&rsquo; Eċċellenza!</li>
 
                             </ol>

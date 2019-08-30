@@ -32,14 +32,14 @@
                             <ol>
                                 <li>Ga naar de pagina <a href="/add">Activiteit toevoegen</a> en vul de benodigde gegevens van je programmeeractiviteit in.</li>
                             </ol><i>Als je de initiatiefnemer van je groep bent:</i><ol start="2">
-                                <li>Klik op Verzenden</li>
+                                <li>Klik op Verzenden.</li>
                                 <li>Zodra je activiteit is geaccepteerd, krijg je een bevestigingsmail met je unieke Code Week 4 All-code.</li>
                                 <li>Kopieer de code en deel deze met je collega's en andere mensen in je netwerk die ook een programmeeractiviteit opzetten. Zegt het voort en overtuig anderen om mee te doen!</li>
                                 <li>Na afloop van de campagne vragen we alle organisatoren hoeveel deelnemers zij bij hun activiteit hebben betrokken. Als je de drempel hebt weten te bereiken, krijgen jij en al je collega's uit je netwerk het Certificaat van uitmuntendheid!</li>
                             </ol><i>Als je je aansluit bij een bestaande groep:</i><ol start="2">
                                 <li>Plak het wachtwoord dat je van de initiator, dus diegene die de groep heeft opgezet, hebt gekregen in het veldvak CODE WEEK 4 ALL CODE.</li>
                                 <li>Klik op Verzenden.</li>
-                                <li>Zegt het voort (ook de code!) zodat er meer organisatoren zich bij jullie groep aansluiten</li>
+                                <li>Zegt het voort (ook de code!) zodat er meer organisatoren zich bij jullie groep aansluiten.</li>
                                 <li>Na afloop van de campagne vragen we alle organisatoren hoeveel deelnemers zij bij hun activiteit hebben betrokken. Als je de drempel hebt weten te bereiken, krijgen jij en al je collega's uit je netwerk het Certificaat van uitmuntendheid!</li>
 
                             </ol>

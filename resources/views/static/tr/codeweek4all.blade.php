@@ -32,14 +32,14 @@
                             <ol>
                                 <li><a href="/add">Aktivite Ekle</a> sayfasını ziyaret edin ve kodlama aktivitenize ilişkin gerekli bilgileri doldurun.</li>
                             </ol><i>Yeni bir ekip kuruyorsanız:</i><ol start="2">
-                                <li>G&ouml;nder&rsquo;e Tıklayın</li>
+                                <li>G&ouml;nder&rsquo;e Tıklayın.</li>
                                 <li>Aktiviteniz kabul edildiğinde, size &ouml;zel Code Week 4 All kodunuzun yer aldığı bir onay e-postası alacaksınız.</li>
                                 <li>Kodu kopyalayın ve ağınızdaki kodlama aktivitesi d&uuml;zenleyen iş arkadaşlarınızla ve diğerleriyle paylaşın. Başkalarını da bilgilendirerek katılmaya teşvik edin!</li>
                                 <li>Kampanya sona erdikten sonra, t&uuml;m aktivite organizat&ouml;rlerinden ka&ccedil; katılımcıyı dahil ettiklerine dair bilgi vermeleri istenecektir. Koşullardan herhangi birini yerine getirebildiğiniz takdirde, ağınızın bir par&ccedil;ası olan iş arkadaşlarınızla birlikte M&uuml;kemmeliyet Sertifikasını kazanacaksınız!</li>
                             </ol><i>Mevcut bir ekibe katılıyorsanız:</i><ol start="2">
                                 <li>Ekibi kurmuş olan ekip liderinden aldığınız kodu CODE WEEK 4 ALL KODU alanına yapıştırın.</li>
                                 <li>G&ouml;nder&rsquo;e Tıklayın.</li>
-                                <li>Daha fazla organizat&ouml;r&uuml;n ekibinize katılmasını sağlamak i&ccedil;in herkesi bilgilendirin ve kodu paylaşın!</li>
+                                <li>Daha fazla organizat&ouml;r&uuml;n ekibinize katılmasını sağlamak i&ccedil;in herkesi bilgilendirin ve kodu paylaşın!.</li>
                                 <li>Kampanya sona erdikten sonra, t&uuml;m aktivite organizat&ouml;rlerinden ka&ccedil; katılımcıyı dahil ettiklerine dair bilgi vermeleri istenecektir. Koşullardan herhangi birini yerine getirebildiğiniz takdirde, ağınızın bir par&ccedil;ası olan iş arkadaşlarınızla birlikte M&uuml;kemmeliyet Sertifikasını kazanacaksınız!</li>
 
                             </ol>

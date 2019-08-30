@@ -32,14 +32,14 @@
                             <ol>
                                 <li>G&aring; ind p&aring; siden <a href="/add">Tilf&oslash;j en aktivitet</a>, og udfyld oplysningerne om din kodeaktivitet.</li>
                             </ol><i>Hvis du er den f&oslash;rste i din alliance:</i><ol start="2">
-                                <li>Indsend din aktivitet</li>
+                                <li>Indsend din aktivitet.</li>
                                 <li>N&aring;r din aktivitet er blevet accepteret, f&aring;r du en bekr&aelig;ftelses-e-mail med din unikke Code Week 4 All-kode.</li>
                                 <li>Kopier koden, og del den med dine kolleger og andre i dit netv&aelig;rk, som ogs&aring; arrangerer kodeaktiviteter. Spred budskabet, og f&aring; andre til at deltage!</li>
                                 <li>N&aring;r kampagnen er slut, vil alle, der har arrangeret aktiviteter, blive bedt om at indberette, hvor mange deltagere de har involveret. Hvis I n&aring;r en milep&aelig;l, f&aring;r du og dine kolleger i netv&aelig;rket kvalitetscertifikatet!</li>
                             </ol><i>Hvis du tilslutter dig en eksisterende alliance:</i><ol start="2">
                                 <li>Inds&aelig;t den kode, du har f&aring;et af den f&oslash;rste person i alliancen, i feltet CODE WEEK 4 ALL-KODE.</li>
                                 <li>Indsend aktiviteten.</li>
-                                <li>Spred budskabet (og koden!) for at f&aring; flere arrang&oslash;rer til at deltage i jeres alliance</li>
+                                <li>Spred budskabet (og koden!) for at f&aring; flere arrang&oslash;rer til at deltage i jeres alliance.</li>
                                 <li>N&aring;r kampagnen er slut, vil alle, der har arrangeret aktiviteter, blive bedt om at indberette, hvor mange deltagere de har involveret. Hvis I n&aring;r en milep&aelig;l, f&aring;r du og dine kolleger i netv&aelig;rket kvalitetscertifikatet!</li>
 
                             </ol>
