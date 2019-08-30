@@ -75,8 +75,6 @@
 
         <div class="codeweek-content-wrapper">
 
-            <div class="sub-category-title">Activities</div>
-
             <div class="codeweek-grid-layout">
                 <div class="codeweek-card"  v-for="event in events">
                     <img :src="thumbnail(event)" class="card-image">
