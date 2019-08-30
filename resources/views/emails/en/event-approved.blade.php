@@ -152,8 +152,8 @@
 
         <div class="badge-wrapper">
             <div class="badge">
-                <img src="{{asset('/img/badges/codeweek_badge.png')}}">
-                <span><a target="_blank" href="{{asset('/img/badges/codeweek_badge.png')}}">Click here to download</a></span>
+                <img src="{{asset('/img/badges/codeweek_badge_2019.png')}}">
+                <span><a target="_blank" href="{{asset('/img/badges/codeweek_badge_2019.png')}}">Click here to download</a></span>
             </div>
             <p>
                 Use this badge to post on your organisation or school’s website, and share it on social media to let others know about your involvement in EU Code Week!
