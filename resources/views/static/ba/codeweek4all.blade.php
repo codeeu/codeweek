@@ -32,14 +32,14 @@
                             <ol>
                                 <li>Posjetite stranicu <a href="/add">Dodajte aktivnost</a> i popunite neophodne detalje o svojoj aktivnosti kodiranja.</li>
                             </ol><i>Ako ste vi prvi u svom savezu:</i><ol start="2">
-                                <li>Kliknite na Podnesi</li>
+                                <li>Kliknite na Podnesi.</li>
                                 <li>Kada se va&scaron;a aktivnost prihvati, vi ćete dobiti e-po&scaron;tu s potvrdom sa svojim jedinstvenim kodom Sedmice kodiranja za sve (Code Week 4 All).</li>
                                 <li>Kopirajte taj kod i podijelite ga sa svojim kolegama i drugima u svojoj mreži koji također organiziraju aktivnost kodiranja. Pro&scaron;irite riječ kako biste podstakli i druge na uče&scaron;će!</li>
                                 <li>Nakon kraja kampanje, svi organizatori aktivnosti će biti zamoljeni da po&scaron;alju natrag izvje&scaron;taj o tome koliko su učesnika angažirali. Ako ste bili uspje&scaron;ni u dosezanju praga, vi i va&scaron;e kolege koji ste bili dio va&scaron;e mreže dobiti ćete Certifikat odličnosti!</li>
                             </ol><i>Ako se pridružujete postojećem savezu:</i><ol start="2">
                                 <li>Zalijepite kod propusnice koji ste dobili od pokretača, prvog koji je izgradio savez, u ćeliju polja za KOD SEDMICE KODIRANJA ZA SVE (CODE WEEK 4 ALL).</li>
                                 <li>Kliknite na Podnesi.</li>
-                                <li>Pro&scaron;irite riječ (i kod!) kako biste u svoj savez privukli &scaron;to vi&scaron;e organizatora</li>
+                                <li>Pro&scaron;irite riječ (i kod!) kako biste u svoj savez privukli &scaron;to vi&scaron;e organizatora.</li>
                                 <li>Nakon kraja kampanje, svi organizatori aktivnosti će biti zamoljeni da po&scaron;alju izvje&scaron;taj o tome koliko su učesnika angažirali. Ako ste bili uspje&scaron;ni u dosezanju praga, vi i va&scaron;e kolege koji ste bili dio va&scaron;e mreže dobiti ćete Certifikat odličnosti!</li>
 
                             </ol>

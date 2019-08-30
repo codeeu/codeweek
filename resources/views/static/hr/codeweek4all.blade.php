@@ -32,14 +32,14 @@
                             <ol>
                                 <li>Posjetite stranicu <a href="/add">Dodaj događanje</a> i unesite potrebne pojedinosti o va&scaron;oj aktivnosti programiranja.</li>
                             </ol><i>Ako ste prvi u svojem savezu:</i><ol start="2">
-                                <li>Kliknite na Predaj</li>
+                                <li>Kliknite na Predaj.</li>
                                 <li>Nakon &scaron;to aktivnost bude prihvaćena, dobit ćete poruku e-po&scaron;te s potvrdom u kojoj će biti naveden va&scaron; jedinstven k&ocirc;d Code Week 4 all.</li>
                                 <li>Kopirajte k&ocirc;d i podijelite ga sa svojim kolegama i ostalima u svojoj mreži koji također organiziraju događanje programiranja. Pro&scaron;irite glas i potaknite druge da sudjeluju!</li>
                                 <li>Nakon &scaron;to kampanja zavr&scaron;i, svi organizatori događanja morat će izvijestiti o broju uključenih sudionika. Ako ste uspje&scaron;no dostigli prag, vi i va&scaron;e kolege koji su bili dijelom va&scaron;e mreže primit ćete Potvrdu o izvrsnosti!</li>
                             </ol><i>Ako se pridružujete postojećem savezu:</i><ol start="2">
                                 <li>Zalijepite zaporku koju ste dobili od pokretača, prve osobe koja je izgradila savez, u ćeliju polja CODE WEEK 4 ALL CODE.</li>
                                 <li>Kliknite na Predaj.</li>
-                                <li>Pro&scaron;irite glas (i k&ocirc;d) da bi se vi&scaron;e organizatora pridružilo va&scaron;em savezu</li>
+                                <li>Pro&scaron;irite glas (i k&ocirc;d) da bi se vi&scaron;e organizatora pridružilo va&scaron;em savezu.</li>
                                 <li>Nakon &scaron;to kampanja zavr&scaron;i, svi organizatori događanja morat će izvijestiti o broju uključenih sudionika. Ako ste uspje&scaron;no dostigli prag, vi i va&scaron;e kolege koji su bili dijelom va&scaron;e mreže primit ćete Potvrdu o izvrsnosti!</li>
 
                             </ol>

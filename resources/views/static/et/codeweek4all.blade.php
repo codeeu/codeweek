@@ -46,7 +46,7 @@
                             </ol>
                             <i>Kui olete esimene oma kogukonnast:</i>
                             <ol start="2">
-                                <li>kl&otilde;psake Esita</li>
+                                <li>kl&otilde;psake Esita.</li>
                                 <li>P&auml;rast teie tegevuse vastuv&otilde;tmist saate kinnitusmeili oma kordumatu Code
                                     Week 4 All koodiga.
                                 </li>

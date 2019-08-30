@@ -32,14 +32,14 @@
                             <ol>
                                 <li>Nav&scaron;tivte str&aacute;nku <a href="/add">Přidat akci</a> a vyplňte nezbytn&eacute; podrobnosti o va&scaron;&iacute; programovac&iacute; aktivitě.</li>
                             </ol><i>Pokud jste v alianci prvn&iacute;:</i><ol start="2">
-                                <li>Klikněte na Odeslat</li>
+                                <li>Klikněte na Odeslat.</li>
                                 <li>Po přijet&iacute; va&scaron;&iacute; aktivity obdrž&iacute;te e-mail s potvrzen&iacute;m a s jedinečn&yacute;m k&oacute;dem pro soutěž Code Week 4 All.</li>
                                 <li>K&oacute;d si zkop&iacute;rujte a předejte jej kolegům a dal&scaron;&iacute;m osob&aacute;m ve va&scaron;&iacute; s&iacute;ti, kteř&iacute; tak&eacute; organizuj&iacute; programovac&iacute; akci. Informace d&aacute;le &scaron;iřte, aby se zapojili i dal&scaron;&iacute;!</li>
                                 <li>Na konci kampaně budou v&scaron;ichni organiz&aacute;toři aktivit pož&aacute;d&aacute;ni o zpr&aacute;vu o tom, kolik &uacute;častn&iacute;ků se jim podařilo zapojit. Pokud se v&aacute;m podařilo dos&aacute;hnout prahov&eacute; hodnoty, vy a va&scaron;i kolegov&eacute;, kteř&iacute; byli souč&aacute;st&iacute; va&scaron;&iacute; s&iacute;tě, obdrž&iacute;te Certifik&aacute;t o &scaron;pičkov&eacute; &uacute;rovni!</li>
                             </ol><i>Pokud se chcete přidat ke st&aacute;vaj&iacute;c&iacute; alianci:</i><ol start="2">
                                 <li>Vložte heslo obdržen&eacute; od inici&aacute;tora, kter&yacute; alianci vytvořil, do pole K&Oacute;D CODE WEEK 4 ALL.</li>
                                 <li>Klikněte na Odeslat.</li>
-                                <li>Dejte o akci vědět (a &scaron;iřte k&oacute;d!), aby se do va&scaron;&iacute; aliance přidali dal&scaron;&iacute; organiz&aacute;toři</li>
+                                <li>Dejte o akci vědět (a &scaron;iřte k&oacute;d!), aby se do va&scaron;&iacute; aliance přidali dal&scaron;&iacute; organiz&aacute;toři.</li>
                                 <li>Na konci kampaně budou v&scaron;ichni organiz&aacute;toři aktivit pož&aacute;d&aacute;ni o zpr&aacute;vu o tom, kolik &uacute;častn&iacute;ků se jim podařilo zapojit. Pokud se v&aacute;m podařilo dos&aacute;hnout prahov&eacute; hodnoty, vy a va&scaron;i kolegov&eacute;, kteř&iacute; byli souč&aacute;st&iacute; va&scaron;&iacute; s&iacute;tě, obdrž&iacute;te Certifik&aacute;t o &scaron;pičkov&eacute; &uacute;rovni!</li>
 
                             </ol>

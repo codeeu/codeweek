@@ -46,7 +46,7 @@
                             </ol>
                             <i>Ako ste prvi koji se prijavljuje u va&scaron;em timu:</i>
                             <ol start="2">
-                                <li>Kliknite na Po&scaron;alji</li>
+                                <li>Kliknite na Po&scaron;alji.</li>
                                 <li>Kada va&scaron;a aktivnost bude prihvaćena, dobićete imejl potvrde sa jedinstvenom
                                     &scaron;ifrom za učestvovanje u izazovu Code Week 4 All.
                                 </li>
@@ -65,9 +65,9 @@
                                 <li>Unesite &scaron;ifru koju ste dobili od inicijatora, prvog koji je napravio tim, u
                                     polje za &scaron;ifru CODE WEEK 4 ALL.
                                 </li>
-                                <li>Kliknite na Po&scaron;alji</li>
+                                <li>Kliknite na Po&scaron;alji.</li>
                                 <li>Prenesite vesti (i &scaron;ifru!) kako bi se &scaron;to vi&scaron;e organizatora
-                                    pridružilo va&scaron;em timu
+                                    pridružilo va&scaron;em timu.
                                 </li>
                                 <li>Nakon zavr&scaron;etka kampanje, od svih organizatora aktivnosti će biti zatraženo
                                     da podnesu izve&scaron;taj o tome koliko je bilo učesnika. Ako ste uspe&scaron;no

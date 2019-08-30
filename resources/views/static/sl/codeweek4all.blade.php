@@ -32,14 +32,14 @@
                             <ol>
                                 <li>Obi&scaron;čite stran <a href="/add">Dodajte dejavnost</a> in vnesite potrebne podatke o svoji programerski dejavnosti.</li>
                             </ol><i>Če ste prvi v svojem zavezni&scaron;tvu:</i><ol start="2">
-                                <li>kliknite Po&scaron;lji</li>
+                                <li>kliknite Po&scaron;lji.</li>
                                 <li>Ko bo va&scaron;a dejavnost sprejeta, boste prejeli potrditveno elektronsko po&scaron;to z enolično kodo za teden programiranja za vse.</li>
                                 <li>Kodo kopirajte in jo po&scaron;ljite svojim kolegom ter drugim v va&scaron;i mreži, ki prav tako organizirajo programersko dejavnost. Obve&scaron;čajte druge in jih spodbudite k sodelovanju!</li>
                                 <li>Po koncu kampanje bodo vsi organizatorji dejavnosti sporočili, koliko udeležencev so vključili. Če ste dosegli prag, boste vi in va&scaron;i kolegi, ki so bili del va&scaron;e mreže, prejeli certifikat odličnosti!</li>
                             </ol><i>Če se pridružite obstoječemu zavezni&scaron;tvu:</i><ol start="2">
                                 <li>Kodo, ki ste jo prejeli od pobudnika, tj. prvega, ki je ustvaril zavezni&scaron;tvo, prilepite v polje KODA TEDNA PROGRAMIRANJA ZA VSE.</li>
                                 <li>Kliknite Po&scaron;lji.</li>
-                                <li>Obve&scaron;čajte (in delite kodo!), da pridobite več organizatorjev, ki se bodo pridružili va&scaron;emu zavezni&scaron;tvu</li>
+                                <li>Obve&scaron;čajte (in delite kodo!), da pridobite več organizatorjev, ki se bodo pridružili va&scaron;emu zavezni&scaron;tvu.</li>
                                 <li>Po koncu kampanje bodo vsi organizatorji dejavnosti sporočili, koliko udeležencev so vključili. Če ste dosegli prag, boste vi in va&scaron;i kolegi, ki so bili del va&scaron;e mreže, prejeli certifikat odličnosti!</li>
 
                             </ol>
