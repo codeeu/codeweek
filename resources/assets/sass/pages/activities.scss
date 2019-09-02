@@ -43,6 +43,24 @@
   margin-bottom: 40px;
   text-align: center;
 }
+.moderate-event,
+.reported-event,
+.event-already-reported,
+.report-event{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
+  background-color: #f8f8f8;
+  .actions{
+    margin-left: 10px;
+  }
+}
+.event-is-pending {
+  padding:10px;
+  background-color: #ffffc3;
+  text-align: center;
+}
 
 /* smartphones, iPhone, portrait 480x320 phones */
 @media (min-width:320px)  {
