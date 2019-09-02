@@ -170,8 +170,8 @@
 
             <h2 style="margin-top: 40px; margin-bottom: 30px;">@lang('eventdetails.nearby_upcoming_events')</h2>
             <div class="codeweek-grid-layout">
-                @foreach($event->getClosest() as $event)
-                    @component('event.event_tile', ['event'=>$event])
+                @foreach($event->getClosest() as $evt)
+                    @component('event.event_tile', ['event'=>$evt])
                     @endcomponent
                 @endforeach
             </div>
