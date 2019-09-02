@@ -16,25 +16,30 @@
             <report-event :event="{{$event}}"></report-event>
         @endcan
 
-        @if (Auth::check())
-            @if($event->creator_id === auth()->user()->id && is_null($event->reported_at))
-                <a href="{{route('edit_event',$event->id)}}" class="btn pull-right edit-event-btn">
-                    <i class="fa fa-pencil-square-o"></i>@lang('eventdetails.edit')</a>
+        @if(Auth::check() &&
+            $event->creator_id === auth()->user()->id &&
+            is_null($event->reported_at) &&
+            $event->status === 'PENDING')
 
-                @if($event->status === 'PENDING')
-                    <div class="alert alert-warning">
-                        <strong>@lang('eventdetails.note')</strong>@lang('eventdetails.pending_warning')
-                        <a
-                                href="{{route('ambassadors')}}">@lang('eventdetails.pending_link')</a>.
-                    </div>
-                @endif
+            <div class="event-is-pending">
+                <strong>@lang('eventdetails.note')</strong>@lang('eventdetails.pending_warning')
+                <a href="{{route('ambassadors')}}">@lang('eventdetails.pending_link')</a>.
+            </div>
 
-            @endif
         @endif
+
 
         <section class="codeweek-banner show-event">
             <div class="text">
-                <h1>{{ $event->title }}</h1>
+                <div class="edit-button">
+                    @if(Auth::check() && $event->creator_id === auth()->user()->id && is_null($event->reported_at))
+                        <a class="codeweek-action-link-button"
+                           href="{{route('edit_event',$event->id)}}" >@lang('eventdetails.edit')</a>
+                    @endif
+                </div>
+                <div class="title">
+                    <h1>{{ $event->title }}</h1>
+                </div>
             </div>
             <div class="image">
                 <img src="{{$event->picture_path()}}"/>
