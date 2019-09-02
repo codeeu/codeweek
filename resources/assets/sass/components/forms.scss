@@ -356,3 +356,29 @@
   display: flex;
   align-items: flex-end;
 }
+
+.codeweek-display-field{
+  margin-bottom: 20px;
+  p{
+    padding: 5px;
+  }
+  ul{
+    display: flex;
+    margin: 15px 0;
+    flex-wrap: wrap;
+  }
+  li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .itens .label{
+    border: 1px solid $main-color;
+    border-radius: 5px;
+    padding: 10px;
+    color: $main-color;
+    font-size: 20px;
+  }
+  .share-event-wrapper{
+    margin-top: 5px;
+  }
+}

@@ -1,190 +1,184 @@
 @extends('layout.base')
 
 @section('content')
-    <section>
-        <div class="container">
-            @can('approve', $event)
-                @if($event->certificate_url)
-                    <reported-event :event="{{$event}}"></reported-event>
-                @else
-                    <moderate-event :event="{{$event}}"></moderate-event>
+
+    <section id="codeweek-show-event-page" class="codeweek-page">
+
+        @can('approve', $event)
+            @if($event->certificate_url)
+                <reported-event :event="{{$event}}"></reported-event>
+            @else
+                <moderate-event :event="{{$event}}"></moderate-event>
+            @endif
+        @endcan
+
+        @can('report', $event)
+            <report-event :event="{{$event}}"></report-event>
+        @endcan
+
+        @if (Auth::check())
+            @if($event->creator_id === auth()->user()->id && is_null($event->reported_at))
+                <a href="{{route('edit_event',$event->id)}}" class="btn pull-right edit-event-btn">
+                    <i class="fa fa-pencil-square-o"></i>@lang('eventdetails.edit')</a>
+
+                @if($event->status === 'PENDING')
+                    <div class="alert alert-warning">
+                        <strong>@lang('eventdetails.note')</strong>@lang('eventdetails.pending_warning')
+                        <a
+                                href="{{route('ambassadors')}}">@lang('eventdetails.pending_link')</a>.
+                    </div>
                 @endif
-            @endcan
 
+            @endif
+        @endif
 
+        <section class="codeweek-banner show-event">
+            <div class="text">
+                <h1>{{ $event->title }}</h1>
+            </div>
+            <div class="image">
+                <img src="{{$event->picture_path()}}"/>
+            </div>
+        </section>
 
-            @can('report', $event)
-                <report-event :event="{{$event}}"></report-event>
-            @endcan
+        <section class="codeweek-content-wrapper">
 
-            <div class="clearfix">
-                <div class="col-md-8 event-description first">
+            <div class="codeweek-form-inner-two-columns">
 
+                <div class="codeweek-form-inner-container">
 
-                    <h1>{{ $event->title }}</h1>
-                    <hr>
-
-                    <strong>@lang('eventdetails.organised_by')</strong>
-
-                    <p> {{ $event->organizer }}
-                        @can('approve', $event)
-                            <br/><a href="mailto:{{$event->user_email}}">{{$event->user_email}}</a>
-                        @endcan
-                    </p>
+                    <div class="codeweek-display-field">
+                        <h3>@lang('eventdetails.organised_by')</h3>
+                        <p>
+                            {{ $event->organizer }}
+                            @can('approve', $event)
+                            <a href="mailto:{{$event->user_email}}">{{$event->user_email}}</a>
+                            @endcan
+                        </p>
+                    </div>
 
                     @if($event->contact_person)
-
-                        <strong>@lang('eventdetails.contact_email')</strong><br>
-                        <p><a href="mailto:{{ $event->contact_person }}">{{ $event->contact_person }}</a>
-                        </p>
+                        <div class="codeweek-display-field">
+                            <h3>@lang('eventdetails.contact_email')</h3>
+                            <p><a href="mailto:{{ $event->contact_person }}">{{ $event->contact_person }}</a></p>
+                        </div>
                     @endif
 
-                    <address>
-                        <strong>@lang('eventdetails.happening_at')</strong><br/>
-                        {{ $event->location }}
-                    </address>
-                    <p>
-                        <strong>@lang('eventdetails.from')</strong> {{Carbon\Carbon::parse($event->start_date)->format('l jS \o\f F Y \a\t H:i')}}
-                        {{--<strong>From</strong> {{ $event->start_date }} at {{ $event->start_date }}--}}
-                        <strong>@lang('eventdetails.to')</strong> {{Carbon\Carbon::parse($event->end_date)->format('l jS \o\f F Y \a\t H:i')}}
-                    </p>
-                    <strong>@lang('eventdetails.description')</strong>
+                    <div class="codeweek-display-field">
+                        <h3>@lang('eventdetails.happening_at')</h3>
+                        <p>{{ $event->location }}</p>
+                    </div>
 
-                    <p>
-                        {{ $event->description }}
-                    </p>
+                    <div class="codeweek-display-field">
+                        <div>
+                            <strong>@lang('eventdetails.from')</strong> {{Carbon\Carbon::parse($event->start_date)->format('l jS \o\f F Y \a\t H:i')}}
+                            <strong>@lang('eventdetails.to')</strong> {{Carbon\Carbon::parse($event->end_date)->format('l jS \o\f F Y \a\t H:i')}}
+                        </div>
+                    </div>
+
+                    <div class="codeweek-display-field">
+                        <h3>@lang('eventdetails.description')</h3>
+                        <p>{{ $event->description }}</p>
+                    </div>
 
                     @if($event->event_url)
-
-                        <strong>@lang('eventdetails.more_info')</strong>
-                        <p><a href="{{ $event->event_url }}" target="_blank">{{ $event->event_url }}</a></p>
+                        <div class="codeweek-display-field">
+                            <h3>@lang('eventdetails.more_info')</h3>
+                            <p><a href="{{ $event->event_url }}" target="_blank">{{ $event->event_url }}</a></p>
+                        </div>
                     @endif
 
-                    <strong>@lang('eventdetails.audience')</strong>
 
                     @if($event->audiences->count())
-                        <div class="itens">
-                            <ul class="event-list">
-                                @foreach($event->audiences as $audience)
-                                    <li><span class="label label-info">@lang('event.audience.'.$audience->name)</span>
-                                    </li>
-                                @endforeach
-                            </ul>
+                        <div class="codeweek-display-field" style="margin-bottom: 0;">
+                            <h3>@lang('eventdetails.audience')</h3>
+                            <div class="itens">
+                                <ul class="event-list">
+                                    @foreach($event->audiences as $audience)
+                                        <li><div class="label label-info">@lang('event.audience.'.$audience->name)</div>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
                         </div>
                     @endif
 
                     @if($event->themes->count())
-                        <strong>@lang('eventdetails.themes')</strong>
-                        <div class="itens">
-                            <ul class="event-list">
-                                @foreach($event->themes as $theme)
-                                    <li><span class="label label-info">@lang('event.theme.'.$theme->name)</span></li>
-                                @endforeach
-                            </ul>
+                        <div class="codeweek-display-field" style="margin-bottom: 0;">
+                            <h3>@lang('eventdetails.themes')</h3>
+                            <div class="itens">
+                                <ul class="event-list">
+                                    @foreach($event->themes as $theme)
+                                        <li><div class="label label-info">@lang('event.theme.'.$theme->name)</div></li>
+                                    @endforeach
+                                </ul>
+                            </div>
                         </div>
                     @endif
 
-                    @if($event->tags)
-                        <strong>@lang('eventdetails.tags')</strong>
-                        <div class="itens">
-                            <ul class="event-list">
-                                @foreach($event->tags as $tag)
-                                    <li><span class="label label-info">{{ $tag->name }}</span></li>
-                                @endforeach
-                            </ul>
+                    @if($event->tags->count())
+                        <div class="codeweek-display-field" style="margin-bottom: 0;">
+                            <h3>@lang('eventdetails.tags')</h3>
+                            <div class="itens">
+                                <ul class="event-list">
+                                    @foreach($event->tags as $tag)
+                                        <li><div class="label label-info">{{ $tag->name }}</div></li>
+                                    @endforeach
+                                </ul>
+                            </div>
                         </div>
                     @endif
 
                     @can('edit', $event)
-
                         @if($event->codeweek_for_all_participation_code)
-
-                            <strong>@lang('event.codeweek_for_all_participation_code.title')</strong>
-                            <p>
-                                {{ $event->codeweek_for_all_participation_code }}
-                            </p>
-
+                            <div class="codeweek-display-field">
+                                <h3>@lang('event.codeweek_for_all_participation_code.title')</h3>
+                                <p>{{ $event->codeweek_for_all_participation_code }}</p>
+                            </div>
                         @endif
                     @endcan
 
-                    <strong>@lang('eventdetails.share')</strong>
-                    <div class="share-event-wrapper">
 
-                        <div class="fb-like"
-                             data-href="{{$event->path()}}" data-layout="button_count" data-action="recommend"
-                             data-show-faces="false" data-share="true"></div>
+                    <div class="codeweek-display-field">
+                        <h3>@lang('eventdetails.share')</h3>
+                        <div class="share-event-wrapper">
+                            <div class="fb-like"
+                                 data-href="{{$event->path()}}" data-layout="button_count" data-action="recommend"
+                                 data-show-faces="false" data-share="true"></div>
 
-                        <a href="https://twitter.com/share" class="twitter-share-button"
-                           data-url="http://events.codeweek.eu{{$event->path()}}"
-                           data-text="Check out {{ $event->title }} at" data-via="CodeWeekEU"
-                           data-hashtags="codeEU">Tweet</a>
+                            <a href="https://twitter.com/share" class="twitter-share-button"
+                               data-url="http://events.codeweek.eu{{$event->path()}}"
+                               data-text="Check out {{ $event->title }} at" data-via="CodeWeekEU"
+                               data-hashtags="codeEU">Tweet</a>
 
-                        <div class="g-plusone" data-size="medium" data-href="http://events.codeweek.eu"></div>
-                        <a class="fa fa-envelope" title='@lang('eventdetails.email.tooltip')'
-                           href="mailto:?subject=@lang('eventdetails.email.subject')&amp;body=@lang('eventdetails.email.body_1'){{ $event->title }}@lang('eventdetails.email.body_2'){{env('APP_URL')}}{{$event->path()}}"></a>
+                            <div class="g-plusone" data-size="medium" data-href="http://events.codeweek.eu"></div>
+                            <a class="fa fa-envelope" title='@lang('eventdetails.email.tooltip')'
+                               href="mailto:?subject=@lang('eventdetails.email.subject')&amp;body=@lang('eventdetails.email.body_1'){{ $event->title }}@lang('eventdetails.email.body_2'){{env('APP_URL')}}{{$event->path()}}"></a>
+                        </div>
                     </div>
+
                 </div>
-                <div class="col-md-4 event-time-place">
 
-                    <div>
-
-
-                        @if (Auth::check())
-                            @if($event->creator_id === auth()->user()->id && is_null($event->reported_at))
-                                <a href="{{route('edit_event',$event->id)}}" class="btn pull-right edit-event-btn">
-                                    <i class="fa fa-pencil-square-o"></i>@lang('eventdetails.edit')</a>
-
-                                @if($event->status === 'PENDING')
-                                    <div class="alert alert-warning">
-                                        <strong>@lang('eventdetails.note')</strong>@lang('eventdetails.pending_warning')
-                                        <a
-                                                href="{{route('ambassadors')}}">@lang('eventdetails.pending_link')</a>.
-                                    </div>
-                                @endif
-
-                            @endif
-                        @endif
-                    </div>
-
-                    <div class="event-jumbotron">
-
-                        <img src="{{$event->picture_path()}}"/>
-
-
-                    </div>
-
-
-                    <div id="calendar">
-                        @component('components.calendar',['event'=>$event])
-                        @endcomponent
-                    </div>
-                </div>
-                <div class="col-md-12 first">
-                    <hr>
-                </div>
-            </div>
-
-            <div id="events-show-map"></div>
-
-            <div class="col-md-12">
-                <hr>
-            </div>
-
-            <div class="col-md-12">
-                <h3>@lang('eventdetails.nearby_upcoming_events')</h3>
-
-
-                <div class="justify-between md:flex sm:flex-row">
-                    @component('components.close-events',['closeEvents'=>$event->getClosest()])
+                <div class="codeweek-form-inner-container" style="align-items: flex-end;">
+                    @component('components.calendar',['event'=>$event])
                     @endcomponent
-
                 </div>
-            </div>
-        </div>
 
+            </div>
+
+            <div id="events-show-map" style="margin-bottom: 20px;"></div>
+
+            <h2 style="margin-top: 40px; margin-bottom: 30px;">@lang('eventdetails.nearby_upcoming_events')</h2>
+            <div class="codeweek-grid-layout">
+                @foreach($event->getClosest() as $event)
+                    @component('event.event_tile', ['event'=>$event])
+                    @endcomponent
+                @endforeach
+            </div>
+
+        </section>
 
     </section>
-
 
 @endsection
 
@@ -207,58 +201,6 @@
         }
 
     </script>
-
-
-
-    {{--<script src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAPS_KEY')}}&libraries=places"></script>
-    <script>
-
-
-        var event = {!! json_encode($event->getJavascriptData()) !!};
-
-        var geoposition = event.geoposition;
-        var coordinates = geoposition.split(",");
-
-
-        map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 6,
-            streetViewControl: false,
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            center: {
-                lat: parseFloat(coordinates[0]),
-                lng: parseFloat(coordinates[1])
-            }
-
-        });
-
-        var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(coordinates[0], coordinates[1]),
-            map: map,
-            animation: google.maps.Animation.DROP,
-
-        });
-
-
-        var contentString = '<div id="content">' +
-            '<h1 id="firstHeading" class="firstHeading">' + event.title + '</h1>' +
-            '<div id="bodyContent">' +
-            '<p>' + event.description + '</p>' +
-            '</div>' +
-            '</div>';
-
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString
-        });
-
-        marker.addListener('click', function () {
-            infowindow.open(map, marker);
-        });
-
-
-    </script>--}}
-
-
-
 @endpush
 
 

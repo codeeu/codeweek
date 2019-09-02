@@ -29,7 +29,7 @@ class EventHelper
             ->where('id', '<>', $id)
             ->where('end_date', '>', Carbon::now())
             ->orderBy('distance')
-            ->take(4)
+            ->take(3)
             ->get();
 
         return $events;

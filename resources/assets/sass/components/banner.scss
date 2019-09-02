@@ -113,3 +113,29 @@
 .codeweek-banner.about{
   background-color: #72A8D0;
 }
+.codeweek-banner.show-event{
+  background-color: #E2E2E2;
+
+  .image{
+    margin:0;
+
+    img {
+      width:540px;
+      height: 366px;
+      object-fit: cover;
+      border-bottom: 20px solid $main-color;
+    }
+  }
+  .text {
+    margin: 15px 80px;
+    max-width: none;
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-size: 45px;
+    color: $main-color;
+  }
+}
