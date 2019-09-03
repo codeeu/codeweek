@@ -44,9 +44,10 @@ class Eeducation extends Command
      */
     public function handle()
     {
-        // Create or Load Eeducation Technical User
         dump("Loading Eeducation");
-        $techicalUserID = ImporterHelper::getTechnicalUser("eeducation-technical");
+
+        // Create or Load Eeducation Technical User
+        //$techicalUserID = ImporterHelper::getTechnicalUser("eeducation-technical");
 
         // Read the API
         $endpoint = "https://eeducation.at/rest-api/codeweek-activities/?clientid=" . env("EEDUCATION_CLIENTID");
@@ -57,7 +58,7 @@ class Eeducation extends Command
         $eventsArr = json_decode((string)$response->getBody());
 
 
-        $importer = new RemoteImporter("Eeducation", $eventsArr, $techicalUserID);
+        $importer = new RemoteImporter("Eeducation", $eventsArr);
         $importer->import();
 
 

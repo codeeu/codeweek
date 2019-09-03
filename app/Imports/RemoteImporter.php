@@ -19,18 +19,18 @@ class RemoteImporter
 
     private $website;
     private $events;
-    private $technicalUserId;
+
 
     /**
      * RemoteImporter constructor.
      * @param $website
      * @param $events
      */
-    public function __construct($website, $events, $technicalUserId)
+    public function __construct($website, $events)
     {
         $this->website = $website;
         $this->events = $events;
-        $this->technicalUserId = $technicalUserId;
+
     }
 
 
@@ -43,7 +43,7 @@ class RemoteImporter
             //Create event
             $className = 'App\\Importers\\' . $this->website;
 
-            (new $className($event, $this->technicalUserId))->parse();
+            (new $className($event))->parse();
 
 
             //Store the good completion

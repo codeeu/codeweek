@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands\Importers;
 
+use App\Helpers\ImporterHelper;
 use Illuminate\Console\Command;
 use Feeds;
 
@@ -40,6 +41,8 @@ class MeetAndCode extends Command
     {
 
         dump("Loading MeetAndCode");
+
+        $techicalUserID = ImporterHelper::getTechnicalUser("meetandcode-technical");
 
         $feed = Feeds::make('https://meet-and-code.org/de/de/events/rss');
         $data = array(
