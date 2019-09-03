@@ -5,6 +5,8 @@ namespace App\Importers;
 
 
 use App\Event;
+use App\Helpers\ImporterHelper;
+use App\User;
 use Carbon\Carbon;
 use Illuminate\Support\Str;
 
@@ -13,13 +15,29 @@ class Eeducation
     private $remote;
     private $creator;
 
-    public function __construct($remote_event, $creator)
+    public function __construct($remote_event)
     {
         $this->remote = $remote_event;
-        $this->creator = $creator;
+        $this->creator = $this->loadUser();
     }
 
-    public function parse(){
+    public function loadUser()
+    {
+        //return ImporterHelper::getTechnicalUser("eeducation-technical");
+
+        return User::firstOrCreate([
+            "email" => $this->remote->organizer_email
+        ],[
+            "firstname" => "",
+            "lastname" => "",
+            "username" => "",
+            "password" => bcrypt(Str::random())
+        ]);
+
+    }
+
+    public function parse()
+    {
         dump("parse event inside eeducation");
 
         $this->extract();
