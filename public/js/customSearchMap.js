@@ -5,7 +5,8 @@ L.custom = {
             center: [51, 4],
             zoom: 4,
             height: 450,
-            background: "osmec"
+            background: "osmec",
+            maxZoom: 20
         });
 
         map.menu.remove("print");
@@ -52,6 +53,7 @@ L.custom = {
                     showCoverageOnHover: false,
                     maxClusterRadius: 120,
                     chunkedLoading: true,
+                    maxZoom: 18,
                     iconCreateFunction: function(cluster) {
                         var total = cluster.getAllChildMarkers().length;
                         var iconSize;
