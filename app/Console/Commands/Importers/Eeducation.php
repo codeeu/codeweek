@@ -59,7 +59,11 @@ class Eeducation extends Command
 
 
         $importer = new RemoteImporter("Eeducation", $eventsArr);
-        $importer->import();
+        $metrics = $importer->import();
+
+        dump("Records  : " . $metrics[0]);
+        dump("Added    : " . $metrics[1]);
+        dump("Updated  : " . $metrics[2]);
 
 
         // Process the events

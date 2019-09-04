@@ -3,6 +3,7 @@
 namespace App\Imports;
 
 use App\Event;
+use App\Importer;
 use App\Importers\Eeducation;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Log;
@@ -38,22 +39,37 @@ class RemoteImporter
     {
         if (empty($this->events)) return null;
 
+        $created = 0;
+        $updated = 0;
+
+
         foreach ($this->events as $event) {
 
             //Create event
             $className = 'App\\Importers\\' . $this->website;
 
-            (new $className($event))->parse();
-
+            $importer = new $className($event);
 
             //Store the good completion
-            create('App\Importer', [
-                'original_id' => $event->id,
-                'website' => $this->website,
-                'status' => 'ADDED'
-            ]);
+            $processed = Importer::firstOrNew(
+                [
+                    'original_id' => $event->id,
+                    'website' => $this->website,
+                    'status' => 'ADDED'
+                ]
+            );
+
+            if (!$processed->exists) {
+                $created += $importer->parse();
+                $processed->save();
+            } else {
+                $updated += $importer->update();;
+            }
+
 
         }
+
+        return array(sizeof($this->events), $created, $updated);
     }
 
 
