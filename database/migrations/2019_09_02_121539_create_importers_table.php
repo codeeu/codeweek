@@ -16,6 +16,7 @@ class CreateImportersTable extends Migration
         Schema::create('importers', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('original_id')->unsigned();
+            $table->string('original_')->default("ADDED");
             $table->string('status')->default("ADDED");
             $table->string('website');
             $table->timestamps();

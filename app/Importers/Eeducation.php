@@ -10,7 +10,7 @@ use App\User;
 use Carbon\Carbon;
 use Illuminate\Support\Str;
 
-class Eeducation
+class Eeducation implements Importers
 {
     private $remote;
     private $creator;
@@ -23,8 +23,6 @@ class Eeducation
 
     public function loadUser()
     {
-        //return ImporterHelper::getTechnicalUser("eeducation-technical");
-
         return User::firstOrCreate([
             "email" => $this->remote->organizer_email
         ],[
@@ -41,7 +39,13 @@ class Eeducation
         dump("parse event inside eeducation");
 
         $this->extract();
+        return 1;
 
+    }
+
+    public function update(){
+        dump('nothing to do for eeducation');
+        return 0;
     }
 
     private function extract()
@@ -71,6 +75,8 @@ class Eeducation
             "latitude" => $this->remote->lat
         ]);
 
+
+        //Check for duplicates
         $event->save();
 
 
