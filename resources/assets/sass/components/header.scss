@@ -45,15 +45,6 @@ header nav ul li a{
   color: $main-color3;
 }
 
-:lang(el) header nav ul li a {
-  font-size: 17px;
-}
-:lang(de) header nav ul li a,
-:lang(fr) header nav ul li a,
-:lang(nl) header nav ul li a{
-  font-size: 18px;
-}
-
 header nav ul li ul{
   display:none;
   position: absolute;
