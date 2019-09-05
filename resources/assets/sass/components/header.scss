@@ -369,8 +369,12 @@ header .lang-menu .menu-dropdown ul li:hover a{
     margin-bottom: 20px;
     background-color: $main-color;
     color: $main-color4;
-    width: 100%;
+    width: 90%;
     font-size: 16px;
+  }
+
+  header #right-menu .round-button-sign svg path{
+    fill:white !important;
   }
 
   header #right-menu .round-button-user-menu {
