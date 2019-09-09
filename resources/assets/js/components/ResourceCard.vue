@@ -11,10 +11,10 @@
 
                     <div class="card-divider"></div>
 
-                    <div class="card-subtitle">Type:</div>
+                    <div class="card-subtitle">{{$t('resources.types')}}:</div>
                     <div class="card-chips">
                         <template v-for="type in resource.types">
-                            <resource-pill :property="type"></resource-pill>
+                            <resource-pill :property="type" type="types"></resource-pill>
                         </template>
                     </div>
 
@@ -22,7 +22,7 @@
                         <div class="card-subtitle">Level:</div>
                         <div class="card-chips">
                             <template v-for="level in resource.levels">
-                                <resource-pill :property="level"></resource-pill>
+                                <resource-pill :property="level" type="levels"></resource-pill>
                             </template>
                         </div>
 
@@ -36,7 +36,7 @@
                         <div class="card-subtitle">Categories:</div>
                         <div class="card-chips">
                             <template v-for="category in resource.categories">
-                                <resource-pill :property="category"></resource-pill>
+                                <resource-pill :property="category" type="categories"></resource-pill>
                             </template>
                         </div>
 
@@ -55,7 +55,7 @@
 
             <div class="card-actions">
                 <a :href="resource.source" target="_blank"
-                    class="codeweek-action-link-button">Visit</a>
+                    class="codeweek-action-link-button">{{$t('myevents.view')}}</a>
             </div>
 
     </div>

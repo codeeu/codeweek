@@ -28,8 +28,8 @@
 
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
-                                <label for="id_title">Email</label>
-                                <input id="email" placeholder="Email" type="email"
+                                <label for="id_title">@lang('base.email')</label>
+                                <input id="email" placeholder="@lang('base.email')" type="email"
                                        value="{{auth()->user()->email}}" readonly>
                             </div>
                             <div class="errors">
@@ -39,8 +39,8 @@
 
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
-                                <label for="id_title">Display Email</label>
-                                <input id="email_display" placeholder="Display Email" name="email_display" type="email"
+                                <label for="id_title">@lang('base.display_email')</label>
+                                <input id="email_display" placeholder="@lang('base.display_email')" name="email_display" type="email"
                                        value="{{auth()->user()->email_display}}">
                             </div>
                             <div class="errors">
@@ -50,8 +50,8 @@
 
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
-                                <label for="id_title">First Name</label>
-                                <input id="firstname" placeholder="First Name" name="firstname" type="text"
+                                <label for="id_title">@lang('base.first_name')</label>
+                                <input id="firstname" placeholder="@lang('base.first_name')" name="firstname" type="text"
                                        value="{{auth()->user()->firstname}}">
                             </div>
                             <div class="errors">
@@ -61,8 +61,8 @@
 
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
-                                <label for="id_title">Last Name</label>
-                                <input id="lastname" placeholder="Last Name" name="lastname" type="text"
+                                <label for="id_title">@lang('base.last_name')</label>
+                                <input id="lastname" placeholder="@lang('base.last_name')" name="lastname" type="text"
                                        value="{{auth()->user()->lastname}}">
                             </div>
                             <div class="errors">
@@ -83,8 +83,8 @@
 
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
-                                <label for="id_title">Your Website</label>
-                                <input id="website" placeholder="Your Website" name="website" type="text"
+                                <label for="id_title">@lang('base.your_website')</label>
+                                <input id="website" placeholder="@lang('base.your_website')" name="website" type="text"
                                        value="{{auth()->user()->website}}">
                             </div>
                             <div class="errors">
@@ -94,9 +94,9 @@
 
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field align-flex-start">
-                                <label for="id_description">Biography</label>
+                                <label for="id_description">@lang('base.biography')</label>
                                 <textarea cols="40" id="bio" name="bio"
-                                          placeholder="Biography" rows="10">{{auth()->user()->bio}}</textarea>
+                                          placeholder="@lang('base.biography')" rows="10">{{auth()->user()->bio}}</textarea>
                             </div>
                             <div class="errors">
                                 @component('components.validation-errors', ['field'=>'bio'])@endcomponent
@@ -130,7 +130,7 @@
 
                         <div class="codeweek-form-button-container">
                             <div class="codeweek-button">
-                                <input type="submit" value="Update">
+                                <input type="submit" value="@lang('base.update')">
                             </div>
                         </div>
 

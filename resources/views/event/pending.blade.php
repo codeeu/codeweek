@@ -6,7 +6,7 @@
         <section class="codeweek-content-header">
 
             <h1>@lang('menu.pending')</h1>
-            <p>Total of pending events: {{$events->total()}}</p>
+            <p>@lang('event.total_pending_events') {{$events->total()}}</p>
             @role('super admin')
                 <country-select :code="'{{$country_iso}}'" :countries="{{$countries}}"></country-select>
             @endrole
@@ -28,7 +28,7 @@
                     {{ $events->links() }}
                 </div>
             @else
-                No Pending Event found for {{$country_name}}
+                @lang('event.no_pending_events') @lang('countries.' . $country_name)
             @endif
         </section>
 

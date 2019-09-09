@@ -9,7 +9,7 @@
             <div class="basic-fields">
                 <div class="codeweek-search-text">
                     <input type="text" v-model="searchInput" @input="debounceSearch"
-                           v-on:keyup.13="onSubmit()" placeholder="Search resources ...">
+                           v-on:keyup.13="onSubmit()" :placeholder="$t('resources.search_resources')">
                 </div>
 
                 <div class="codeweek-more-button" @click="toggleFilters()">
@@ -22,14 +22,16 @@
                 <div class="line">
 
                     <multiselect v-model="selectedTypes" :options="types" :multiple="true" :close-on-select="false"
-                                 :clear-on-select="false" :preserve-search="true" placeholder="Types" label="name"
+                                 :clear-on-select="false" :preserve-search="true" :placeholder="$t('resources.types')"
+                                 label="resources.resources.types" :custom-label="customLabel"
                                  track-by="name" :preselect-first="false" @input="onSubmit()">
                         <pre class="language-json"><code>{{ selectedTypes  }}</code></pre>
                     </multiselect>
 
                     <multiselect v-model="selectedLevels" :options="levels" :multiple="true"
                                  :close-on-select="false"
-                                 :clear-on-select="false" :preserve-search="true" placeholder="Levels" label="name"
+                                 :clear-on-select="false" :preserve-search="true" :placeholder="$t('resources.levels')"
+                                 label="resources.resources.levels" :custom-label="customLabel"
                                  track-by="name" :preselect-first="false" @input="onSubmit()">
                         <pre class="language-json"><code>{{ selectedLevels  }}</code></pre>
                     </multiselect>
@@ -39,7 +41,7 @@
                                  :multiple="true"
                                  :close-on-select="false"
                                  :clear-on-select="false" :preserve-search="true"
-                                 placeholder="Programming Languages"
+                                 :placeholder="$t('resources.programming_languages')"
                                  label="name"
                                  track-by="name" :preselect-first="false" @input="onSubmit()">
                         <pre class="language-json"><code>{{ selectedProgrammingLanguages  }}</code></pre>
@@ -50,7 +52,7 @@
                                  :close-on-select="false"
                                  :clear-on-select="false" :preserve-search="true"
                                  placeholder="Subjects"
-                                 label="name"
+                                 label="resources.resources.subjects" :custom-label="customLabel"
                                  track-by="name" :preselect-first="false" @input="onSubmit()">
                         <pre class="language-json"><code>{{ selectedSubjects  }}</code></pre>
                     </multiselect>
@@ -60,8 +62,8 @@
 
                     <multiselect v-model="selectedCategories" :options="categories" :multiple="true"
                                  :close-on-select="false"
-                                 :clear-on-select="false" :preserve-search="true" placeholder="Categories"
-                                 label="name"
+                                 :clear-on-select="false" :preserve-search="true" :placeholder="$t('resources.categories')"
+                                 label="resources.resources.categories" :custom-label="customLabel"
                                  track-by="name" :preselect-first="false" @input="onSubmit()">
                         <pre class="language-json"><code>{{ selectedCategories  }}</code></pre>
                     </multiselect>
@@ -69,7 +71,7 @@
 
                     <multiselect v-model="selectedLanguages" :options="languages" :multiple="true"
                                  :close-on-select="false"
-                                 :clear-on-select="false" :preserve-search="true" placeholder="Languages"
+                                 :clear-on-select="false" :preserve-search="true" :placeholder="$t('resources.Languages')"
                                  label="name"
                                  track-by="name" :preselect-first="false" @input="onSubmit()">
                         <pre class="language-json"><code>{{ selectedLanguages  }}</code></pre>
@@ -86,24 +88,13 @@
 
         <div class="codeweek-content-wrapper">
 
-            <!--<div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto" style="font-size: 14px;">
-                <div class="text-sm lg:flex-grow">
-                    <div class="title events-count" v-if="resources.length > 0">
-                        {{pagination.total}} resources match in your search criteria
-                    </div>
-                    <div class="title events-page" v-if="pagination.last_page > 1">
-                        Page {{pagination.current_page}} of {{pagination.last_page}}
-                    </div>
-                </div>
-            </div>-->
-
             <div class="tools">
 
                 <button class="codeweek-blank-button"
                     v-clipboard:copy="searchQuery"
                     v-clipboard:success="onCopy"
                     v-clipboard:error="onError">
-                Share
+                    {{$t('resources.share')}}
                 </button>
 
             </div>
@@ -257,6 +248,9 @@
                         this.resources = response.data.data;
                     })
                     .catch(error => this.errors = error.response.data)
+            },
+            customLabel(obj, label) {
+                return this.$t(label + '.' + obj.name);
             }
         },
         mounted: function () {

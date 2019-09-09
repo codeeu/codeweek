@@ -9,7 +9,7 @@
         </div>
 
         <div id="loadmask" v-show="isLoading">
-            <div class="loading"><img src="img/loading.gif" style="margin-right:10px;">Loading...</div>
+            <div class="loading"><img src="img/loading.gif" style="margin-right:10px;">{{$t('event.loading')}}</div>
         </div>
 
         <div class="codeweek-searchbox">

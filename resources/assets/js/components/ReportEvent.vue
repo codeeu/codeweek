@@ -2,17 +2,17 @@
     <div v-if="status === 'APPROVED'">
         <div v-if="reported_at == null || certificate_url== null">
             <div class="report-event">
-                <div>Submit a report for this event and claim your Code Week certificate.</div>
+                <div style="text-align: right;">{{$t('event.submit_event_and_report')}}</div>
                 <div class="actions">
-                    <button @click="report" class="codeweek-action-button">Report event and claim certificate</button>
+                    <button @click="report" class="codeweek-action-button">{{$t('event.report_and_claim')}}</button>
                 </div>
             </div>
         </div>
     <div v-else>
         <div class="event-already-reported">
-            <div>Your Code Week certificate is ready. Feel free to download it or share it directly.</div>
+            <div>{{$t('event.certificate_ready')}}</div>
             <div class="actions">
-                <button @click="download" class="codeweek-action-button">View your certificate here</button>
+                <button @click="download" class="codeweek-action-button">{{$t('event.view_your_certificate')}}</button>
             </div>
         </div>
     </div>

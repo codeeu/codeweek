@@ -6,7 +6,7 @@
                                 <a class="back"
                                    @click.prevent="changePage(pagination.current_page - 1)"
                                    :disabled="pagination.current_page <= 1">
-                                        Previous
+                                        {{$t('pagination.previous')}}
                                 </a>
                         </li>
                         <li v-for="page in pages">
@@ -24,7 +24,7 @@
                                 <a class="next"
                                    @click.prevent="changePage(pagination.current_page + 1)"
                                    :disabled="pagination.current_page >= pagination.last_page">
-                                        Next
+                                        {{$t('pagination.next')}}
                                 </a>
                         </li>
                 </ul>

@@ -143,7 +143,22 @@ return [
 
     'More'=>'More',
     'country'=>'Country',
-    'privacy'=>'I have read and agree with the privacy policy terms described in this document.'
+    'privacy'=>'I have read and agree with the privacy policy terms described in this document.',
+    'loading' => 'Loading...',
+    'add_activity' => 'Add activity',
+    'edit_activity' => 'Edit activity',
+    'update_activity' => 'Update activity',
+    'delete_activity' => 'Delete activity',
+
+    'total_pending_events' => 'Total of pending events:',
+    'no_pending_events' => 'No Pending Event found for',
+    'all_countries' => 'All countries',
+
+    'current_status' => 'Current Status',
+    'certificate_ready' => 'Your Code Week certificate is ready. Feel free to download it or share it directly.',
+    'view_your_certificate' => 'View your certificate here',
+    'submit_event_and_report' => 'Submit a report for this event and claim your Code Week certificate.',
+    'report_and_claim' => 'Report event and claim certificate',
 
 
 ];

@@ -6,9 +6,8 @@
 
         <section class="codeweek-banner schools">
             <div class="text">
-                <h1>Why</h1>
-                <h2>BRING CODEWEEK</h2>
-                <h2>TO YOUR STUDENTS</h2>
+                <h1>@lang('menu.why')</h1>
+                <h2 style="text-transform: uppercase;">@lang('schools.title')</h2>
             </div>
             <div class="image">
                 <img src="/images/banner_training.svg" class="static-image">
