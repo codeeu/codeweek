@@ -1,6 +1,6 @@
 <template>
     <div class="moderate-event">
-        <div>Current Status: <strong>{{status}}</strong></div>
+        <div>{{$t('event.current_status')}}: <strong>{{status}}</strong></div>
         <div class="actions">
             <button @click="approve" class="codeweek-action-button">Approve</button>
             <button @click="reject" class="codeweek-action-button">Reject</button>
@@ -16,7 +16,7 @@
         props: ['event'],
         data() {
             return {
-                status: this.event.status
+                status: this.$t('myevents.status.' + this.event.status)
             }
         },
         methods: {

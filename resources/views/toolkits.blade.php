@@ -17,9 +17,9 @@
             <div class="codeweek-content-wrapper">
                 <ul>
 
-                    <li><a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/Comms+Toolkit+2019.zip">EU Code Week 2019 Communications Toolkit</a></li>
-                    <li><a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/Teachers+Toolkit+2019.zip">EU Code Week 2019 Teachers Toolkit</a></li>
-                    <li>EU Code Week 2019 Leaflet (
+                    <li><a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/Comms+Toolkit+2019.zip">EU Code Week 2019 @lang('resources.communication_toolkit')</a></li>
+                    <li><a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/Teachers+Toolkit+2019.zip">EU Code Week 2019 @lang('resources.teachers_toolkit')</a></li>
+                    <li>EU Code Week 2019 @lang('resources.leaflet') (
 
                             @foreach($languages as $lang)
                                 @if($lang === $locale)
@@ -31,8 +31,8 @@
                                  - <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/leaflet/2019/Codeweek_2019_EN.pdf">@lang('base.languages.en')</a>
                             @endif
                         )
-                    <li><a href="/guide">How to organise an activity ?</a>
-
+                    <li>
+                        <a href="/guide">@lang('resources.how_to_organise_an_activity')</a>
                     </li>
 
                 </ul>
