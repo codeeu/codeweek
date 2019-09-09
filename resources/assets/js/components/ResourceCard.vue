@@ -19,28 +19,28 @@
                     </div>
 
                     <div v-show="isOpen">
-                        <div class="card-subtitle">Level:</div>
+                        <div class="card-subtitle">{{$t('resources.levels')}}:</div>
                         <div class="card-chips">
                             <template v-for="level in resource.levels">
                                 <resource-pill :property="level" type="levels"></resource-pill>
                             </template>
                         </div>
 
-                        <div class="card-subtitle">Programming Languages:</div>
+                        <div class="card-subtitle">{{$t('resources.programming_languages')}}:</div>
                         <div class="card-chips">
                             <template v-for="programmingLanguage in resource.programming_languages">
                                 <resource-pill :property="programmingLanguage"></resource-pill>
                             </template>
                         </div>
 
-                        <div class="card-subtitle">Categories:</div>
+                        <div class="card-subtitle">{{$t('resources.categories')}}:</div>
                         <div class="card-chips">
                             <template v-for="category in resource.categories">
                                 <resource-pill :property="category" type="categories"></resource-pill>
                             </template>
                         </div>
 
-                        <div class="card-subtitle">Languages:</div>
+                        <div class="card-subtitle">{{$t('resources.Languages')}}:</div>
                         <div class="card-chips">
                             <template v-for="language in resource.languages">
                                 <resource-pill :property="language"></resource-pill>
