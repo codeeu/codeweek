@@ -259,7 +259,7 @@
 
                 <div class="codeweek-form-button-container">
                     <div class="codeweek-button">
-                        <input type="submit" id="add-button" onclick="javascript:return addEvent('{{__('school.required.location')}}');" value="@lang('event.button')">
+                        <input type="submit" id="add-button" onclick="javascript:return addEvent('{{__('school.required.location')}}');" value="@lang('event.update_activity')">
                     </div>
                 </div>
 
