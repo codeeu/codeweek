@@ -22,9 +22,6 @@ class Locale
     public function handle($request, Closure $next)
     {
 
-        Log::info("force_lang=" . session("force_lang"));
-
-
         $browserLocale = $this->getBrowserLocale();
         if (session("force_lang") && $browserLocale == session('locale')){
             session(['force_lang' => false]);
@@ -32,8 +29,6 @@ class Locale
         if (session("force_lang")) {
             $request->lang = session('locale');
         }
-
-        Log::info("request_lang=" . $request->lang);
 
         if (isset($request->lang)) {
             $lang = strtolower($request->lang);
