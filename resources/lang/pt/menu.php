@@ -36,5 +36,6 @@ return [
     'logout' => 'Terminar sessão',
     'signin' => 'Iniciar sessão',
     'privacy' => 'Privacidade',
+    'participation'=> 'Certificado de participação',
 
 ];

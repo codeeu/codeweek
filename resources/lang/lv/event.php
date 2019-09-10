@@ -131,7 +131,22 @@ return [
         'invite in person' => 'Klātienes aktivitāte, kurā dalība ar ielūgumiem'
 
     ],
-    'privacy'=>'Es izlasīju un piekrītu privātuma noteikumiem un nosacījumiem kuri minēti šajā dokumentā.'
+    'privacy'=>'Es izlasīju un piekrītu privātuma noteikumiem un nosacījumiem kuri minēti šajā dokumentā.',
+    'country' => 'Valsts',
+    'loading' => 'Notiek ielāde...',
+    'add_activity' => 'Pievienot pasākumu',
+    'edit_activity' => 'Rediģēt pasākumu',
+    'update_activity' => 'Atjaunināt pasākumu',
+    'delete_activity' => 'Dzēst pasākumu',
+    'total_pending_events' => 'Kopējais vēl neapstiprināto pasākumu skaits:',
+    'no_pending_events' => 'Nav neapstiprinātu pasākumu',
+    'all_countries' => 'Visas valstis',
+    'current_status' => 'Pašreizējais statuss',
+    'actions' => 'Darbības',
+    'certificate_ready' => 'Jūsu Programmēšanas nedēļas sertifikāts ir sagatavots. Lejupielādējiet to vai arī tiešā veidā dalieties ar to!',
+    'view_your_certificate' => 'Apskatiet savu sertifikātu šeit',
+    'submit_event_and_report' => 'Iesniedziet ziņojumu par pasākumu un pieprasiet Programmēšanas nedēļas sertifikātu.',
+    'report_and_claim' => 'Paziņot par pasākumu un pieprasīt sertifikātu',
 
 
 

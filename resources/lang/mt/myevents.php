@@ -23,6 +23,7 @@ return [
     'status'=>[
         'APPROVED'=>'APPROVAT',
         'REJECTED'=>'IRRIFJUTAT',
-        'PENDING'=>'PENDENTI'
+        'PENDING'=>'PENDENTI',
+        'REPORTED' => 'RAPPURTAT'
     ]
 ];

@@ -64,6 +64,10 @@ return [
     'biography' => 'Βιογραφία',
     'update' => 'Ενημέρωση',
     'delete' => 'Διαγραφή',
-    'choose a file' => 'Επιλέξτε αρχείο'
+    'choose a file' => 'Επιλέξτε αρχείο',
+
+    'learning_bits' => 'Εκπαιδευτικά προγράμματα',
+    'codeweek' => 'CodeWeek',
+    'bring_codeweek_to_your_students' => 'Μίλησε στους μαθητές για την εβδομάδα προγραμματισμού'
 
 ];

@@ -69,6 +69,10 @@ return [
     'biography' => 'Biography',
     'update' => 'Update',
     'delete' => 'Delete',
-    'choose a file' => 'Choose a File'
+    'choose a file' => 'Choose a File',
+
+    'learning_bits' => 'Learning bits',
+    'codeweek' => 'CodeWeek',
+    'bring_codeweek_to_your_students' => 'Bring Code Week to your students',
 
 ];

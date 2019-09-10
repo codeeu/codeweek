@@ -18,4 +18,13 @@ return [
     'facebook' => 'Prihlásiť sa cez Facebook',
     'google' => 'Prihlásiť sa cez Google',
     'azure' => 'Prihlásiť sa cez Azure',
+    'email' => 'E-mail',
+    'password' => 'Heslo',
+    'remember' => 'Zapamätať si ma',
+    'forgotten_password' => 'Zabudli ste heslo?',
+    'no_account' => 'Ešte nemáte účet?',
+    'signup' => 'Registrujte sa',
+    'reset' => 'Obnoviť heslo',
+    'send_password' => 'Poslať odkaz na obnovu hesla',
+    'confirm_password' => 'Potvrdiť heslo',
 ];

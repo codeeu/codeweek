@@ -49,6 +49,22 @@ return [
     'days'=>'Días',
     'hours'=>'Horas',
     'minutes'=>'Minutos',
-    'seconds'=>'Segundos'
+    'seconds'=>'Segundos',
+    'still_have_question' => '¿Tienes más preguntas?',
+    'drop_us_a_line' => 'Tan solo tienes que escribirnos.',
+    'get_in_touch' => 'CONTACTA CON NOSOTROS',
+    'footer_msg' => 'Una iniciativa de base organizada por voluntarios y respaldada por la Comisión Europea.',
+    'email' => 'Correo electrónico',
+    'display_email' => 'Mostrar correo electrónico',
+    'first_name' => 'Nombre',
+    'last_name' => 'Apellidos',
+    'your_website' => 'Tu sitio web',
+    'biography' => 'Biografía',
+    'update' => 'Actualizar',
+    'delete' => 'Eliminar',
+    'choose a file' => 'Elegir un archivo',
+    'learning_bits' => 'Minicursos',
+    'codeweek' => 'CodeWeek',
+    'bring_codeweek_to_your_students' => 'Lleva la Semana de la Programación a tus estudiantes'
 
 ];
