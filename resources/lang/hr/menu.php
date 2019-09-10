@@ -36,5 +36,6 @@ return [
     'logout' => 'Odjavi se',
     'signin' => 'Prijavi se',
     'privacy' => 'Privatnost',
+    'participation'=> 'Potvrda o sudjelovanju',
 
 ];

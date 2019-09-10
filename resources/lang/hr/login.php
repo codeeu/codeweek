@@ -17,5 +17,14 @@ return [
     'twitter' => 'Prijavi se uz Twitter',
     'facebook' => 'Prijavi se uz Facebook',
     'google' => 'Prijavi se uz Google',
-    'azure' => 'Prijavi se uz Azure'
+    'azure' => 'Prijavi se uz Azure',
+    'email' => 'E-pošta',
+    'password' => 'Lozinka',
+    'remember' => 'Zapamti me',
+    'forgotten_password' => 'Zaboravili ste lozinku?',
+    'no_account' => 'Nemate račun?',
+    'signup' => 'Registrirajte se',
+    'reset' => 'Ponovno postavite lozinku',
+    'send_password' => 'Pošalji poveznicu za ponovno postavljanje lozinke',
+    'confirm_password' => 'Potvrdi lozinku',
 ];

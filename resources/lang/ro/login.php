@@ -18,4 +18,13 @@ return [
     'facebook' => 'Conectare cu Facebook',
     'google' => 'Conectare cu Google',
     'azure' => 'Conectare cu Azure',
+    'email' => 'E-mail',
+    'password' => 'Parolă',
+    'remember' => 'Reține-mă',
+    'forgotten_password' => 'Parolă uitată?',
+    'no_account' => 'Nu ai cont?',
+    'signup' => 'Înregistrează-te',
+    'reset' => 'Resetează parola',
+    'send_password' => 'Trimite link de resetare a parolei',
+    'confirm_password' => 'Confirmare parolă',
 ];

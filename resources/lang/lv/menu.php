@@ -36,5 +36,6 @@ return [
     'logout' => 'Iziet',
     'signin' => 'Pieteikties',
     'privacy' => 'Privātums',
+    'participation'=> 'Dalības sertifikāts',
 
 ];

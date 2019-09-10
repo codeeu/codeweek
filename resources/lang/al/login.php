@@ -18,4 +18,13 @@ return [
     'facebook' => 'Identifikohuni me Facebook',
     'google' => 'Identifikohuni me Google',
     'azure' => 'Identifikohuni me Azure',
+    'email' => 'Email',
+    'password' => 'Fjalëkalimi',
+    'remember' => 'Më kujto',
+    'forgotten_password' => 'Ke harruar fjalëkalimin?',
+    'no_account' => 'Nuk ke llogari?',
+    'signup' => 'Regjistrohu',
+    'reset' => 'Rivendos fjalëkalimin',
+    'send_password' => 'Dërgo lidhjen e rivendosjes së fjalëkalimit',
+    'confirm_password' => 'Konfirmo fjalëkalimin'
 ];

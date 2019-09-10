@@ -131,7 +131,22 @@ return [
         'invite in person' => 'Privátne osobné aktivita'
 
     ],
-    'privacy'=>'Prečítal(-a) som si a súhlasím s podmienkami ochrany osobných údajov popísanými v tomto dokumente'
+    'privacy'=>'Prečítal(-a) som si a súhlasím s podmienkami ochrany osobných údajov popísanými v tomto dokumente',
+    'country' => 'Krajina',
+    'loading' => 'Načítava sa...',
+    'add_activity' => 'Pridať aktivitu',
+    'edit_activity' => 'Upraviť aktivitu',
+    'update_activity' => 'Aktualizovať aktivitu',
+    'delete_activity' => 'Odstrániť aktivitu',
+    'total_pending_events' => 'Celkový počet čakajúcich podujatí:',
+    'no_pending_events' => 'Nenašli sa žiadne čakajúce podujatia pre',
+    'all_countries' => 'Všetky krajiny',
+    'current_status' => 'Aktuálny stav',
+    'actions' => 'Akcie',
+    'certificate_ready' => 'Váš certifikát z Týždňa programovania je pripravený. Môžete si ho stiahnuť alebo ho priamo zdieľať.',
+    'view_your_certificate' => 'Tu si môžete certifikát zobraziť.',
+    'submit_event_and_report' => 'Podajte správu o tomto podujatí a vyžiadajte si certifikát Týždňa programovania.',
+    'report_and_claim' => 'Podať správu o podujatí a vyžiadať certifikát',
 
 
 
