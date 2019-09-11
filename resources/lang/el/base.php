@@ -46,11 +46,28 @@ return [
     ],
 
     'resources_local_title'=>'Πόροι για τον προγραμματισμό από',
-    'are_you_a_teacher' => 'Είσαι εκπαιδευτικός;',
-    'get_involved_banner' => 'Κάνε κλικ εδώ για να μάθεις πώς να συμμετάσχεις!',
     'days'=>'Ημέρες',
     'hours'=>'Ώρες',
     'minutes'=>'Λεπτά',
-    'seconds'=>'Δευτερόλεπτα'
+    'seconds'=>'Δευτερόλεπτα',
+
+    'still_have_question' => 'Έχεις κι άλλη ερώτηση;',
+    'drop_us_a_line' => 'Απλώς γράψε μας!',
+    'get_in_touch' => 'ΕΠΙΚΟΙΝΩΝΙΑ',
+    'footer_msg' => 'Ένα κίνημα βάσης που το διαχειρίζονται εθελοντές και το υποστηρίζει η Ευρωπαϊκή Επιτροπή.',
+
+    'email' => 'Email',
+    'display_email' => 'Προβολή email',
+    'first_name' => 'Όνομα',
+    'last_name' => 'Επίθετο',
+    'your_website' => 'Ο ιστότοπός σου',
+    'biography' => 'Βιογραφία',
+    'update' => 'Ενημέρωση',
+    'delete' => 'Διαγραφή',
+    'choose a file' => 'Επιλέξτε αρχείο',
+
+    'learning_bits' => 'Εκπαιδευτικά προγράμματα',
+    'codeweek' => 'CodeWeek',
+    'bring_codeweek_to_your_students' => 'Μίλησε στους μαθητές για την εβδομάδα προγραμματισμού'
 
 ];

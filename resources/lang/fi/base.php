@@ -46,11 +46,24 @@ return [
     ],
 
     'resources_local_title'=>'Koodausaineistoja maasta',
-    'are_you_a_teacher' => 'Oletko opettaja?',
-    'get_involved_banner' => 'Napsauta tästä ja lue, miten voit osallistua!',
     'days'=>'päivää',
     'hours'=>'tuntia',
     'minutes'=>'minuuttia',
-    'seconds'=>'sekuntia'
+    'seconds'=>'sekuntia',
+    'still_have_question' => 'Onko sinulla kysyttävää?',
+    'drop_us_a_line' => 'Kirjoita meille!',
+    'get_in_touch' => 'OTA YHTEYTTÄ',
+    'footer_msg' => 'Vapaaehtoisvoimin ja Euroopan komission tuella järjestettävä ruohonjuuritason aloite.',
+    'display_email' => 'Näytä sähköposti',
+    'first_name' => 'Etunimi',
+    'last_name' => 'Sukunimi',
+    'your_website' => 'Verkkosivustosi',
+    'biography' => 'Biografia',
+    'update' => 'Päivitä',
+    'delete' => 'Poista',
+    'choose a file' => 'Valitse tiedosto',
+    'learning_bits' => 'Oppimismoduulit',
+    'codeweek' => 'Koodausviikko',
+    'bring_codeweek_to_your_students' => 'Ota oppilaat mukaan koodausviikkoon'
 
 ];

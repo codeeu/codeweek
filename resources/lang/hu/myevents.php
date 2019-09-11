@@ -23,6 +23,7 @@ return [
     'status'=>[
         'APPROVED'=>'JÓVÁHAGYVA',
         'REJECTED'=>'ELUTASÍTVA',
-        'PENDING'=>'FÜGGÕBEN'
+        'PENDING'=>'FÜGGÕBEN',
+        'REPORTED' => 'BEJELENTETT'
     ]
 ];

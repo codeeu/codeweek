@@ -46,11 +46,27 @@ return [
     ],
 
     'resources_local_title'=>'Burimet e kodimit nga',
-    'are_you_a_teacher' => 'Jeni mësues?',
-    'get_involved_banner' => 'Klikoni këtu për të mësuar si të përfshiheni!',
     'days'=>'Ditë',
     'hours'=>'Orë',
     'minutes'=>'Minuta',
-    'seconds'=>'Sekonda'
+    'seconds'=>'Sekonda',
+
+    'still_have_question' => 'Keni ende pyetje?',
+    'drop_us_a_line' => 'Thjesht na shkruani!',
+    'get_in_touch' => 'KONTAKTONI',
+    'footer_msg' => 'Një nismë në terren e organizuar nga vullnetarë dhe e mbështetur nga Komisioni Evropian.',
+    'email' => 'Email',
+    'display_email' => 'Shfaq emailin',
+    'first_name' => 'Emri',
+    'last_name' => 'Mbiemri',
+    'your_website' => 'Uebsajti',
+    'biography' => 'Biografia',
+    'update' => 'Përditëso',
+    'delete' => 'Fshi',
+    'choose a file' => 'Zgjidh një skedar',
+
+    'learning_bits' => 'Mësimet',
+    'codeweek' => 'CodeWeek',
+    'bring_codeweek_to_your_students' => 'Sillni Code Week te studentët tuaj'
 
 ];

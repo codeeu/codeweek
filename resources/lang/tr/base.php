@@ -44,11 +44,25 @@ return [
     ],
 
     'resources_local_title'=>'Kodlama kaynakları',
-    'are_you_a_teacher' => 'Öğretmen misiniz?',
-    'get_involved_banner' => 'Nasıl katılabileceğinizi öğrenmek için hemen tıklayın!',
     'days'=>'Gün',
     'hours'=>'Saat',
     'minutes'=>'Dakika',
-    'seconds'=>'Saniye'
+    'seconds'=>'Saniye',
+    'still_have_question' => 'Sorularınız mı var?',
+    'drop_us_a_line' => 'Bizimle iletişime geçin!',
+    'get_in_touch' => 'BİZE ULAŞIN',
+    'footer_msg' => 'Gönüllüler tarafından yürütülen ve Avrupa Komisyonu tarafından desteklenen bir taban inisiyatifidir.',
+    'email' => 'E-posta',
+    'display_email' => 'E-posta Göster',
+    'first_name' => 'Adı',
+    'last_name' => 'Soyadı',
+    'your_website' => 'Web Siteniz',
+    'biography' => 'Biyografi',
+    'update' => 'Güncelle',
+    'delete' => 'Sil',
+    'choose a file' => 'Dosya Seç',
+    'learning_bits' => 'Öğrenim bilgileri',
+    'codeweek' => 'CodeWeek',
+    'bring_codeweek_to_your_students' => 'Öğrencilerinizi Code Week ile buluşturun'
 
 ];

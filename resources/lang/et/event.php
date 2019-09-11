@@ -131,7 +131,22 @@ return [
         'invite in person' => 'Privaatkutsega tegevus'
 
     ],
-    'privacy'=>'Ma olen lugenud ja nõustun antud dokumendis kirjeldatud Privaatsuspoliitikaga.'
+    'privacy'=>'Ma olen lugenud ja nõustun antud dokumendis kirjeldatud Privaatsuspoliitikaga.',
+    'country' => 'Riik',
+    'loading' => 'Laetakse ...',
+    'add_activity' => 'Lisa tegevus',
+    'edit_activity' => 'Muuda tegevust',
+    'update_activity' => 'Uuenda tegevust',
+    'delete_activity' => 'Kustuta tegevus',
+    'total_pending_events' => 'Eelseisvaid üritusi kokku:',
+    'no_pending_events' => 'Eelseisvaid üritusi ei leitud',
+    'all_countries' => 'Kõik riigid',
+    'current_status' => 'Praegune olek',
+    'actions' => 'Tegevused',
+    'certificate_ready' => 'Teie programmeerimisnädala Code Week tunnistus on valmis. Laadige see alla või jagage seda otse.',
+    'view_your_certificate' => 'Vaadake oma tunnistust siin',
+    'submit_event_and_report' => 'Esitage aruanne selle ürituse kohta ja küsige oma tunnistust programmeerimisnädala Code Week kohta.',
+    'report_and_claim' => 'Esitage ürituse aruanne ja küsige tunnistust'
 
 
 

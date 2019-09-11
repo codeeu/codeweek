@@ -18,4 +18,13 @@ return [
     'facebook' => 'Bejelentkezés Facebookkal',
     'google' => 'Bejelentkezés Google-lel',
     'azure' => 'Bejelentkezés Azure-lel',
+    'email' => 'E-mail',
+    'password' => 'Jelszó',
+    'remember' => 'Emlékezzen rám',
+    'forgotten_password' => 'Elfelejtette jelszavát?',
+    'no_account' => 'Még nincs fiókja?',
+    'signup' => 'Regisztráció',
+    'reset' => 'Jelszó visszaállítása',
+    'send_password' => 'Jelszó-visszaállító link',
+    'confirm_password' => 'Jelszó megerősítése',
 ];
