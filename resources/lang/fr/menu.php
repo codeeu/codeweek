@@ -36,5 +36,6 @@ return [
     'logout' => 'Déconnexion',
     'signin' => 'Connexion',
     'privacy' => 'Confidentialité',
+    'participation'=> 'Certificat de participation',
 
 ];

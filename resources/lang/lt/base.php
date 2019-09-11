@@ -46,11 +46,25 @@ return [
     ],
 
     'resources_local_title'=>'Programavimo iđtekliai iđ',
-    'are_you_a_teacher' => 'Esate mokytoja (-as)?',
-    'get_involved_banner' => 'Spustelëkite čia ir suţinokite, kaip dalyvauti!',
     'days'=>'Dienos',
     'hours'=>'Valandos',
     'minutes'=>'Minutës',
-    'seconds'=>'Sekundës'
+    'seconds'=>'Sekundës',
+    'still_have_question' => 'Dar turite klausimų?',
+    'drop_us_a_line' => 'Rašykite mums!',
+    'get_in_touch' => 'SUSISIEKTI',
+    'footer_msg' => 'Savanorių vykdoma ir Europos Komisijos remiama visuomeninė iniciatyva.',
+    'email' => 'El. pašto adresas',
+    'display_email' => 'Rodyti el. pašto adresą',
+    'first_name' => 'Vardas',
+    'last_name' => 'Pavardė',
+    'your_website' => 'Jūsų svetainė',
+    'biography' => 'Biografija',
+    'update' => 'Atnaujinti',
+    'delete' => 'Ištrinti',
+    'choose a file' => 'Pasirinkti failą',
+    'learning_bits' => 'Mokymosi segmentai',
+    'codeweek' => 'Programavimo savaitė',
+    'bring_codeweek_to_your_students' => 'Įtraukite savo moksleivius į Programavimo savaitę'
 
 ];

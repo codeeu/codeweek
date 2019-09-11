@@ -46,11 +46,25 @@ return [
     ],
 
     'resources_local_title'=>'Materialien zum Programmieren aus',
-    'are_you_a_teacher' => 'Sind Sie Lehrerin oder Lehrer?',
-    'get_involved_banner' => 'Klicken Sie hier, um herauszufinden, wie Sie sich beteiligen können!',
     'days'=>'Tage',
     'hours'=>'Stunden',
     'minutes'=>'Minuten',
-    'seconds'=>'Sekunden'
+    'seconds'=>'Sekunden',
+    'still_have_question' => 'Weitere Fragen?',
+    'drop_us_a_line' => 'Einfach schreiben!',
+    'get_in_touch' => 'TRETEN SIE MIT UNS IN KONTAKT',
+    'footer_msg' => 'Eine Breiteninitiative, die von Freiwilligen veranstaltet und von der Europäischen Kommission unterstützt wird.',
+    'email' => 'E-Mail-Adresse',
+    'display_email' => 'E-Mail-Adresse anzeigen',
+    'first_name' => 'Vorname',
+    'last_name' => 'Nachname',
+    'your_website' => 'Ihre Website',
+    'biography' => 'Biographie',
+    'update' => 'Aktualisieren',
+    'delete' => 'Löschen',
+    'choose a file' => 'Datei auswählen',
+    'learning_bits' => 'Lernhäppchen',
+    'codeweek' => 'CodeWeek',
+    'bring_codeweek_to_your_students' => 'Bringen Sie Ihre Schülerinnen und Schüler zur Code Week',
 
 ];

@@ -131,7 +131,22 @@ return [
         'invite in person' => 'Activitate off-line privată'
 
     ],
-    'privacy'=>'Am citit şi sunt de acord cu termenii politicii de confidenţialitate descrişi în acest document.'
+    'privacy'=>'Am citit şi sunt de acord cu termenii politicii de confidenţialitate descrişi în acest document.',
+    'country' => 'Țara',
+    'loading' => 'Se încarcă...',
+    'add_activity' => 'Adaugă activitatea',
+    'edit_activity' => 'Editează activitatea',
+    'update_activity' => 'Actualizează activitatea',
+    'delete_activity' => 'Șterge activitatea',
+    'total_pending_events' => 'Total evenimente în așteptare:',
+    'no_pending_events' => 'Niciun eveniment în așteptare identificat pentru',
+    'all_countries' => 'Toate țările',
+    'current_status' => 'Situația actuală',
+    'actions' => 'Acțiuni',
+    'certificate_ready' => 'Certificatul tău de participare la Săptămâna programării este gata. Îl poți descărca sau partaja direct.',
+    'view_your_certificate' => 'Vizualizează certificatul tău aici',
+    'submit_event_and_report' => 'Trimite un raport pentru acest eveniment și solicită certificatul tău de participare la Săptămâna programării.',
+    'report_and_claim' => 'Raportează evenimentul și solicită certificatul',
 
 
 ];

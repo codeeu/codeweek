@@ -46,11 +46,25 @@ return [
     ],
 
     'resources_local_title'=>'Programovací zdroje od',
-    'are_you_a_teacher' => 'Jste učitel?',
-    'get_involved_banner' => 'Klikněte zde, abyste se dozvěděl/a, jak se zapojit!',
     'days'=>'Dny',
     'hours'=>'Hodiny',
     'minutes'=>'Minuty',
-    'seconds'=>'Sekundy'
+    'seconds'=>'Sekundy',
+    'still_have_question' => 'Máte další otázky?',
+    'drop_us_a_line' => 'Klidně nám napište.',
+    'get_in_touch' => 'KONTAKTUJTE NÁS',
+    'footer_msg' => 'Evropský týden programování je projekt, který spatřil světlo světa díky nadšení dobrovolníků a který podporuje Evropská komise.',
+    'email' => 'E-mail',
+    'display_email' => 'Zobrazit e-mail',
+    'first_name' => 'Jméno',
+    'last_name' => 'Příjmení',
+    'your_website' => 'Váš web',
+    'biography' => 'Biografie',
+    'update' => 'Aktualizovat',
+    'delete' => 'Smazat',
+    'choose a file' => 'Vyberte soubor',
+    'learning_bits' => 'Školicí materiály',
+    'codeweek' => 'CodeWeek',
+    'bring_codeweek_to_your_students' => 'Přibližte Týden programování svým studentům'
 
 ];

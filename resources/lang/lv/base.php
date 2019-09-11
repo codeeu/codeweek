@@ -46,11 +46,25 @@ return [
     ],
 
     'resources_local_title'=>'Programmēšanas resursi no',
-    'are_you_a_teacher' => 'Vai esat skolotājs?',
-    'get_involved_banner' => 'Noklikšķiniet šeit, lai uzzinātu, kā iesaistīties!',
     'days'=>'Dienas',
     'hours'=>'Stundas',
     'minutes'=>'Minūtes',
-    'seconds'=>'Sekundes'
+    'seconds'=>'Sekundes',
+    'still_have_question' => 'Vai jums ir vēl kādi jautājumi?',
+    'drop_us_a_line' => 'Gluži vienkārši uzrakstiet mums!',
+    'get_in_touch' => 'SAZINIETIES AR MUMS',
+    'footer_msg' => 'Iedzīvotāju kustība, ko vada brīvprātīgie un atbalsta Eiropas Komisija.',
+    'email' => 'E-pasts',
+    'display_email' => 'Parādīt e-pasta vēstuli',
+    'first_name' => 'Vārds',
+    'last_name' => 'Uzvārds',
+    'your_website' => 'Jūsu tīmekļa vietne',
+    'biography' => 'Biogrāfija',
+    'update' => 'Atjaunināt',
+    'delete' => 'Dzēst',
+    'choose a file' => 'Atlasīt failu',
+    'learning_bits' => 'Mācību moduļi',
+    'codeweek' => 'Programmēšanas nedēļa',
+    'bring_codeweek_to_your_students' => 'Piedāvājiet Programmēšanas nedēļu saviem skolēniem'
 
 ];

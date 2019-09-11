@@ -1,0 +1,91 @@
+#codeweek-searchpage-component .home-map .wtmap .wtfooter{
+  display:none;
+}
+#codeweek-searchpage-component .codeweek-searchbox .basic-fields .right-fields{
+  display: flex;
+}
+#codeweek-searchpage-component .codeweek-searchbox .basic-fields .codeweek-button,
+#codeweek-searchpage-component .codeweek-searchbox .basic-fields .year-selection{
+  margin-right:10px;
+}
+#codeweek-searchpage-component .codeweek-searchbox .basic-fields{
+  flex-direction: column;
+}
+#codeweek-searchpage-component .codeweek-searchbox .basic-fields .right-fields{
+  margin-top: 10px;
+  justify-content: center;
+}
+#codeweek-searchpage-component{
+  position: relative;
+  padding-bottom: 30px;
+}
+#loadmask {
+  width: 100%;
+  height: 452px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+}
+#loadmask .loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub-category-title{
+  color: $main-color;
+  font-size: 40px;
+  font-style: italic;
+  width:100%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.moderate-event,
+.reported-event,
+.event-already-reported,
+.report-event{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
+  background-color: #f8f8f8;
+  .actions{
+    margin-left: 10px;
+  }
+}
+.event-is-pending {
+  padding:10px;
+  background-color: #ffffc3;
+  text-align: center;
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px)  {
+}
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px)  {
+}
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px)  {
+  .sub-category-title{
+    text-align: left;
+  }
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px)  {
+  #codeweek-searchpage-component .codeweek-searchbox .basic-fields{
+    flex-direction: row;
+  }
+  #codeweek-searchpage-component .codeweek-searchbox .basic-fields .right-fields{
+    margin-top:0;
+  }
+}
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+}
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+}

@@ -1,5 +1,5 @@
-<div id="calendar">
-    <table border="0" cellpadding="0" cellspacing="0" class="month">
+<div class="codeweek-view-calendar">
+    <table border="0" cellpadding="10" cellspacing="0" class="month">
         <tbody>
         <tr>
             <th colspan="7" class="month">{{Calendar::format_month($event->start_date)}}</th>
@@ -14,8 +14,6 @@
             <th class="sun">Sun</th>
         </tr>
         {!! Calendar::get_calendar($event)!!}
-
         </tbody>
     </table>
-
 </div>

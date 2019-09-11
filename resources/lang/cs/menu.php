@@ -37,5 +37,6 @@ return [
     'logout' => 'Odhlásit se',
     'signin' => 'Přihlásit se',
     'privacy' => 'Ochrana osobních údajů',
+    'participation'=> 'Účastnický certifikát',
 
 ];

@@ -131,7 +131,22 @@ return [
         'invite in person' => 'Sesja offline - na zaproszenie'
 
     ],
-    'privacy'=>'Przeczytałem /Przeczytałam i zgadzam się z warunkami polityki prywatności opisanymi w tym dokumencie.'
+    'privacy'=>'Przeczytałem /Przeczytałam i zgadzam się z warunkami polityki prywatności opisanymi w tym dokumencie.',
+    'country' => 'Kraj',
+    'loading' => 'Ładowanie…',
+    'add_activity' => 'Dodaj aktywność',
+    'edit_activity' => 'Edytuj aktywność',
+    'update_activity' => 'Zmień aktywność',
+    'delete_activity' => 'Usuń aktywność',
+    'total_pending_events' => 'Ogólna liczba zaplanowanych wydarzeń:',
+    'no_pending_events' => 'Brak zaplanowanych wydarzeń w:',
+    'all_countries' => 'Wszystkie kraje',
+    'current_status' => 'Aktualny status',
+    'actions' => 'Działania',
+    'certificate_ready' => 'Twój certyfikat Tygodnia Kodowania jest gotowy. Możesz go pobrać lub udostępnić go bezpośrednio.',
+    'view_your_certificate' => 'Zobacz swój certyfikat',
+    'submit_event_and_report' => 'Prześlij sprawozdanie z tego wydarzenia, aby otrzymać certyfikat Tygodnia Kodowania.',
+    'report_and_claim' => 'Zgłoś wydarzenie i odbierz certyfikat.',
 
 
 

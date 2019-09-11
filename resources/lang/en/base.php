@@ -44,8 +44,6 @@ return [
     ],
 
     'resources_local_title'=>'Coding resources from',
-    'are_you_a_teacher' => 'Are you a teacher?',
-    'get_involved_banner' => 'Click here to find out how to get involved!',
     'days'=>'Days',
     'hours'=>'Hours',
     'minutes'=>'Minutes',
@@ -56,6 +54,25 @@ return [
     'day'=>'Day',
     'hour'=>'Hour',
     'minute'=>'Minute',
-    'second'=>'Second'
+    'second'=>'Second',
+
+    'still_have_question' => 'Still have a question?',
+    'drop_us_a_line' => 'Just drop us a line!',
+    'get_in_touch' => 'GET IN TOUCH',
+    'footer_msg' => 'A grassroots initiative run by volunteers and supported by the European Commission.',
+
+    'email' => 'Email',
+    'display_email' => 'Display Email',
+    'first_name' => 'First Name',
+    'last_name' => 'Last Name',
+    'your_website' => 'Your Website',
+    'biography' => 'Biography',
+    'update' => 'Update',
+    'delete' => 'Delete',
+    'choose a file' => 'Choose a File',
+
+    'learning_bits' => 'Learning bits',
+    'codeweek' => 'CodeWeek',
+    'bring_codeweek_to_your_students' => 'Bring Code Week to your students',
 
 ];

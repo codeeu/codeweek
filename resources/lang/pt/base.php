@@ -46,11 +46,25 @@ return [
     ],
 
     'resources_local_title'=>'Recursos de programação de',
-    'are_you_a_teacher' => 'É professor(a)?',
-    'get_involved_banner' => 'Clique aqui para saber como pode participar!',
     'days'=>'Dias',
     'hours'=>'Horas',
     'minutes'=>'Minutos',
-    'seconds'=>'Segundos'
+    'seconds'=>'Segundos',
+    'still_have_question' => 'Ainda tem dúvidas?',
+    'drop_us_a_line' => 'Envie-nos as suas questões!',
+    'get_in_touch' => 'FALE CONNOSCO',
+    'footer_msg' => 'Uma iniciativa popular levada a cabo por voluntários e apoiada pela Comissão Europeia.',
+    'email' => 'Endereço de correio eletrónico',
+    'display_email' => 'Mostrar endereço de correio eletrónico',
+    'first_name' => 'Nome',
+    'last_name' => 'Apelido',
+    'your_website' => 'O seu sítio Web',
+    'biography' => 'Dados biográficos',
+    'update' => 'Atualizar',
+    'delete' => 'Apagar',
+    'choose a file' => 'Selecionar um ficheiro',
+    'learning_bits' => 'Bits de aprendizagem',
+    'codeweek' => 'Semana Europeia da Programação',
+    'bring_codeweek_to_your_students' => 'Faça chegar a Semana da Programação aos seus alunos'
 
 ];

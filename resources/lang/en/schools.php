@@ -12,7 +12,7 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-    'title' =>'Schools: bring Code Week to your students',
+    'title' =>'Bring Code Week to your students',
     '1' => [
         "title1" => "Why should you bring coding to your classroom?",
         "title2" => "How can coding benefit your students? What is in it for you as a teacher ?",

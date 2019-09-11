@@ -36,5 +36,6 @@ return [
     'logout' => 'Odjava',
     'signin' => 'Prijava',
     'privacy' => 'Politika privatnosti',
+    'participation'=> 'Sertifikat za učešće',
 
 ];
