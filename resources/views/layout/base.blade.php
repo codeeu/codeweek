@@ -21,7 +21,7 @@
     <!-- Theme stylesheets -->
     @if (Route::getCurrentRoute() && Route::getCurrentRoute()->uri() != 'home' && Route::getCurrentRoute()->uri() != '/')
         <link rel="stylesheet" href="{{asset('css/ext/style.css')}}" type="text/css" />
-        <link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css" />
+        <link rel="stylesheet" href="{{asset('css/app.css')}}?v=2" type="text/css" />
     @else
         <link rel="stylesheet" href="{{asset('css/ext/home.css')}}" type="text/css" />
     @endif
@@ -46,7 +46,7 @@
 
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="{{asset('css/custom.css') }}" media="screen" rel="stylesheet" />
+    <link href="{{asset('css/custom.css') }}?v=2" media="screen" rel="stylesheet" />
 
     @yield('extra-css')
 
