@@ -15,7 +15,6 @@ return [
         'en' => 'Inglés',
         'fr' => 'Francés',
         'bg' => 'Búlgaro',
-        'mt' => 'Maltés',
         'hr' => 'Croata',
         'de' => 'Alemán',
         'pl' => 'Polaco',
@@ -65,6 +64,7 @@ return [
     'choose a file' => 'Elegir un archivo',
     'learning_bits' => 'Minicursos',
     'codeweek' => 'CodeWeek',
-    'bring_codeweek_to_your_students' => 'Lleva la Semana de la Programación a tus estudiantes'
+    'bring_codeweek_to_your_students' => 'Lleva la Semana de la Programación a tus estudiantes',
+    'or' => 'o'
 
 ];

@@ -41,7 +41,6 @@ return [
         'mk' => 'macedón',
         'me' => 'montenegrói',
         'rs' => 'szerb',
-        'mt' => 'máltai',
         'tr' => 'török'
     ],
 
@@ -65,6 +64,7 @@ return [
     'choose a file' => 'Fájl kiválasztása',
     'learning_bits' => 'Tudásmorzsák',
     'codeweek' => 'CodeWeek',
-    'bring_codeweek_to_your_students' => 'Ismertesse meg a Programozási hetet a diákjaival'
+    'bring_codeweek_to_your_students' => 'Ismertesse meg a Programozási hetet a diákjaival',
+    'or' => 'vagy'
 
 ];

@@ -63,6 +63,7 @@ return [
     'choose a file' => 'Dosya Seç',
     'learning_bits' => 'Öğrenim bilgileri',
     'codeweek' => 'CodeWeek',
-    'bring_codeweek_to_your_students' => 'Öğrencilerinizi Code Week ile buluşturun'
+    'bring_codeweek_to_your_students' => 'Öğrencilerinizi Code Week ile buluşturun',
+    'or' => 'veya'
 
 ];

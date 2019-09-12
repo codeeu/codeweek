@@ -41,7 +41,6 @@ return [
         'mk' => 'Macedónio',
         'me'=>  'Montenegrino',
         'rs' => 'Sérvio',
-        'mt' => 'Maltês',
         'tr' => 'Turco'
     ],
 
@@ -65,6 +64,7 @@ return [
     'choose a file' => 'Selecionar um ficheiro',
     'learning_bits' => 'Bits de aprendizagem',
     'codeweek' => 'Semana Europeia da Programação',
-    'bring_codeweek_to_your_students' => 'Faça chegar a Semana da Programação aos seus alunos'
+    'bring_codeweek_to_your_students' => 'Faça chegar a Semana da Programação aos seus alunos',
+    'or' => 'ou'
 
 ];

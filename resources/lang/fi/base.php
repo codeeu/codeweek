@@ -15,7 +15,6 @@ return [
         'en' => 'englanti',
         'fr' => 'ranska',
         'bg' => 'bulgaria',
-        'mt' => 'malta',
         'hr' => 'kroatia',
         'de' => 'saksa',
         'pl' => 'puola',
@@ -64,6 +63,7 @@ return [
     'choose a file' => 'Valitse tiedosto',
     'learning_bits' => 'Oppimismoduulit',
     'codeweek' => 'Koodausviikko',
-    'bring_codeweek_to_your_students' => 'Ota oppilaat mukaan koodausviikkoon'
+    'bring_codeweek_to_your_students' => 'Ota oppilaat mukaan koodausviikkoon',
+    'or' => 'tai'
 
 ];

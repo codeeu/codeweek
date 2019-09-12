@@ -75,4 +75,6 @@ return [
     'codeweek' => 'CodeWeek',
     'bring_codeweek_to_your_students' => 'Bring Code Week to your students',
 
+    'or' => 'or'
+
 ];

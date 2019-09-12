@@ -15,7 +15,6 @@ return [
         'en' => 'AnglŲ',
         'fr' => 'PrancűzŲ',
         'bg' => 'BulgarŲ',
-        'mt' => 'MaltiečiŲ',
         'hr' => 'KroatŲ',
         'de' => 'VokiečiŲ',
         'pl' => 'LenkŲ',
@@ -65,6 +64,6 @@ return [
     'choose a file' => 'Pasirinkti failą',
     'learning_bits' => 'Mokymosi segmentai',
     'codeweek' => 'Programavimo savaitė',
-    'bring_codeweek_to_your_students' => 'Įtraukite savo moksleivius į Programavimo savaitę'
-
+    'bring_codeweek_to_your_students' => 'Įtraukite savo moksleivius į Programavimo savaitę',
+    'or' => 'arba'
 ];

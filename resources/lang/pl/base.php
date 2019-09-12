@@ -41,7 +41,6 @@ return [
         'mk' => 'macedoński',
         'cnr'=> 'czarnogórski',
         'sr' => 'serbski',
-        'mt' => 'maltański',
         'tr' => 'turecki'
 
     ],
@@ -67,5 +66,6 @@ return [
     'learning_bits' => 'Materiały dydaktyczne',
     'codeweek' => 'CodeWeek',
     'bring_codeweek_to_your_students' => 'Daj swoim uczniom szansę na udział w Tygodniu Kodowania',
+    'or' => 'lub'
 
 ];

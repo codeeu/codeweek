@@ -15,7 +15,6 @@ return [
         'en' => 'Inglise',
         'fr' => 'Prantsuse',
         'bg' => 'Bulgaaria',
-        'mt' => 'Malta',
         'hr' => 'Horvaadi',
         'de' => 'Saksa',
         'pl' => 'Poola',
@@ -65,6 +64,7 @@ return [
     'choose a file' => 'Vali fail',
     'learning_bits' => 'Õppevahendid',
     'codeweek' => 'CodeWeek',
-    'bring_codeweek_to_your_students' => 'Viige Code Week oma õpilasteni'
+    'bring_codeweek_to_your_students' => 'Viige Code Week oma õpilasteni',
+    'or' => 'või'
 
 ];

@@ -15,7 +15,6 @@ return [
         'en' => 'Englisch',
         'fr' => 'Französisch',
         'bg' => 'Bulgarisch',
-        'mt' => 'Maltesisch',
         'hr' => 'Kroatisch',
         'de' => 'Deutsch',
         'pl' => 'Polnisch',
@@ -66,5 +65,6 @@ return [
     'learning_bits' => 'Lernhäppchen',
     'codeweek' => 'CodeWeek',
     'bring_codeweek_to_your_students' => 'Bringen Sie Ihre Schülerinnen und Schüler zur Code Week',
+    'or' => 'oder'
 
 ];

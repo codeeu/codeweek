@@ -63,6 +63,7 @@ return [
     'choose a file' => 'Agħżel Fajl',
     'learning_bits' => 'Sezzjonijiet ta’ tagħlim',
     'codeweek' => 'CodeWeek',
-    'bring_codeweek_to_your_students' => 'Wassal il-Ġimgħa tal-Ikkowdjar lill-istudenti tiegħek'
+    'bring_codeweek_to_your_students' => 'Wassal il-Ġimgħa tal-Ikkowdjar lill-istudenti tiegħek',
+    'or' => 'jew'
 
 ];

@@ -41,7 +41,6 @@ return [
         'mk' => 'macedónčina',
         'me'=> 'čiernohorčina',
         'rs' => 'srbčina',
-        'mt' => 'maltčina',
         'tr' => 'turečtina'
     ],
 
@@ -66,5 +65,6 @@ return [
     'learning_bits' => 'Hodiny programovania',
     'codeweek' => 'CodeWeek',
     'bring_codeweek_to_your_students' => 'Zapojte svojich študentov do Týždňa programovania',
+    'or' => 'alebo'
 
 ];

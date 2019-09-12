@@ -41,7 +41,6 @@ return [
         'mk' => 'Macedoneană',
         'me'=> 'Muntenegreană',
         'rs' => 'Sârbă',
-        'mt' => 'Malteză',
         'tr' => 'Turcă'
     ],
 
@@ -66,5 +65,6 @@ return [
     'learning_bits' => 'Module de învățare',
     'codeweek' => 'CodeWeek',
     'bring_codeweek_to_your_students' => 'Aduceți Săptămâna programării elevilor dumneavoastră',
+    'or' => 'sau'
 
 ];
