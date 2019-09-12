@@ -19,7 +19,7 @@
 
     <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet" />
 
-    <link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css" />
+    <link rel="stylesheet" href="{{asset('css/app.css')}}?v=2" type="text/css" />
 
     <script>
         window.App = {!! json_encode([
