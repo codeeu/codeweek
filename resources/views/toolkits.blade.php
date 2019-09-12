@@ -24,13 +24,13 @@
 
                         @foreach($languages as $lang)
                             @if($lang === $locale)
-                                <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/communications-toolkit-{{strtoupper($lang)}}.pdf">@lang('base.languages.' . $lang)</a>
+                                <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/communications-toolkit-{{strtoupper($lang)}}.zip">@lang('base.languages.' . $lang)</a>
 
                             @endif
                         @endforeach
 
                         @if($locale !== 'en')
-                            - <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/communications-toolkit-EN.pdf">@lang('base.languages.en')</a>
+                            - <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/communications-toolkit-EN.zip">@lang('base.languages.en')</a>
                     @endif
                 )
                     <li>
@@ -40,12 +40,12 @@
 
                         @foreach($languages as $lang)
                             @if($lang === $locale)
-                                <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/teachers-toolkit-{{strtoupper($lang)}}.pdf">@lang('base.languages.' . $lang)</a>
+                                <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/teachers-toolkit-{{strtoupper($lang)}}.zip">@lang('base.languages.' . $lang)</a>
                             @endif
                         @endforeach
 
                         @if($locale !== 'en')
-                            - <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/teachers-toolkit-EN.pdf">@lang('base.languages.en')</a>
+                            - <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/teachers-toolkit-EN.zip">@lang('base.languages.en')</a>
                     @endif
                 )
                     <li>
