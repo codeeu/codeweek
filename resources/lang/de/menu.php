@@ -37,5 +37,6 @@ return [
     'logout' => 'Abmelden',
     'signin' => 'Anmelden',
     'privacy' => 'Datenschutz',
+    'participation'=> 'Teilnahmezertifikat',
 
 ];

@@ -131,7 +131,22 @@ return [
         'invite in person' => 'Attività presenziale privata'
 
     ],
-    'privacy'=>'Dichiaro di aver letto e accetto l\'informativa sulla privacy descritta nel documento'
+    'privacy'=>'Dichiaro di aver letto e accetto l\'informativa sulla privacy descritta nel documento',
+    'country' => 'Paese',
+    'loading' => 'Caricamento in corso...',
+    'add_activity' => 'Aggiungi un’attività',
+    'edit_activity' => 'Modifica l’attività',
+    'update_activity' => 'Aggiorna l’attività',
+    'delete_activity' => 'Cancella l’attività',
+    'total_pending_events' => 'Eventi in sospeso totali:',
+    'no_pending_events' => 'Nessun evento in sospeso trovato per',
+    'all_countries' => 'Tutti i paesi',
+    'current_status' => 'Stato attuale',
+    'actions' => 'Azioni',
+    'certificate_ready' => 'Il tuo certificato della settimana della programmazione è pronto. Sei libero di scaricarlo o di condividerlo direttamente.',
+    'view_your_certificate' => 'Visualizza qui il tuo certificato',
+    'submit_event_and_report' => 'Presenta una relazione su quest’evento e chiedi il tuo certificato della settimana della programmazione.',
+    'report_and_claim' => 'Segnala l’evento e chiedi il certificato',
 
 
 

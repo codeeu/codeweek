@@ -23,6 +23,7 @@ return [
     'status'=>[
         'APPROVED'=>'GENEHMIGT',
         'REJECTED'=>'ABGELEHNT',
-        'PENDING'=>'AUSSTEHEND'
+        'PENDING'=>'AUSSTEHEND',
+        'REPORTED' => 'MELDUNG ÜBERMITTELT'
     ]
 ];

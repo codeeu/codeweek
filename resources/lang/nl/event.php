@@ -131,7 +131,22 @@ return [
         'invite in person' => 'Offline activiteit - alleen met uitnodiging'
 
     ],
-    'privacy'=>'Ik heb de privacyverklaring die in dit document beschreven staat gelezen en ga ermee akkoord.'
+    'privacy'=>'Ik heb de privacyverklaring die in dit document beschreven staat gelezen en ga ermee akkoord.',
+    'country' => 'Land',
+    'loading' => 'Aan het laden...',
+    'add_activity' => 'Activiteit toevoegen',
+    'edit_activity' => 'Activiteit bewerken',
+    'update_activity' => 'Activiteit bijwerken',
+    'delete_activity' => 'Activiteit verwijderen',
+    'total_pending_events' => 'Totaal van aankomende evenementen:',
+    'no_pending_events' => 'Geen aankomend evenement gevonden voor',
+    'all_countries' => 'Alle landen',
+    'current_status' => 'Huidige status',
+    'actions' => 'Acties',
+    'certificate_ready' => 'Je Programmeerweek-certificaat is klaar. Je kunt het downloaden of rechtstreeks delen.',
+    'view_your_certificate' => 'Je certificaat hier bekijken',
+    'submit_event_and_report' => 'Dien een melding voor dit evenement in en vraag je Programmeerweek-certificaat aan.',
+    'report_and_claim' => 'Evenement melden en certificaat aanvragen',
 
 
 

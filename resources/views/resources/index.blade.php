@@ -5,27 +5,17 @@
           rel="stylesheet" type="text/css"/>
 
 
+    <section id="codeweek-resources-page" class="codeweek-page">
 
-
-
-
-
-    <div class="resources-container">
-
-        <div class="flex flex-col justify-center text-center w-full">
-            @if ($section === "teach")
-
-
-
-                    <a href="/training">
-                        <img src="/img/banner_training_horizontal.svg" class=" lg:-mt-1 mb-6" style="max-width:1340px">
-                    </a>
-
-
-
-
-            @endif
-        </div>
+        <section class="codeweek-banner learn-teach">
+            <div class="text">
+                <h2>#Codeweek</h2>
+                <h1>@lang('menu.'.$section)</h1>
+            </div>
+            <div class="image">
+                <img src="/images/banner_learn_teach.svg" class="static-image">
+            </div>
+        </section>
 
         <resource-form
                 :prp-query="'{{$query}}'"
@@ -45,11 +35,7 @@
                 :locale="'{{App::getLocale()}}'"
         ></resource-form>
 
-
-    </div>
+    </section>
 
 
 @endsection
-
-
-

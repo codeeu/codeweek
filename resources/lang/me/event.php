@@ -131,7 +131,22 @@ return [
         'invite in person' => 'Aktivnost po pozivu'
 
     ],
-    'privacy'=>'Pročitao-la sam i prihvatam uslove u vezi s pravilima o privatnosti opisanih u ovom dokumentu.'
+    'privacy'=>'Pročitao-la sam i prihvatam uslove u vezi s pravilima o privatnosti opisanih u ovom dokumentu.',
+    'country' => 'Zemlja',
+    'loading' => 'Učitavanje...',
+    'add_activity' => 'Dodaj aktivnost',
+    'edit_activity' => 'Uredi aktivnost',
+    'update_activity' => 'Ažuriraj aktivnost',
+    'delete_activity' => 'Izbriši aktivnost',
+    'total_pending_events' => 'Ukupno predstojećih događaja:',
+    'no_pending_events' => 'Nema predstojećih događaja za',
+    'all_countries' => 'Sve zemlje',
+    'current_status' => 'Trenutni status',
+    'actions' => 'Mjere',
+    'certificate_ready' => 'Vaš sertifikat za Nedjelju programiranja je spreman. Slobodno ga preuzmite ili ga direktno podijelite.',
+    'view_your_certificate' => 'Pogledajte svoj sertiifkat ovdje',
+    'submit_event_and_report' => 'Dostavite izvještaj za ovaj događaj i zahtijevajte Vaš sertifikat za Nedjelju programiranja.',
+    'report_and_claim' => 'Dostavite izvještaj o događaju i zahtijevajte sertifikat.',
 
 
 

@@ -1,41 +1,195 @@
-@tailwind preflight;
-
-@tailwind components;
-
-@tailwind utilities;
-
-
-
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700");
-@import url("https://fonts.googleapis.com/css?family=Crete+Round:400italic");
+@font-face {
+  font-family: 'PT Sans';
+  src: URL('/fonts/PTSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: URL('/fonts/PTSans-RegularItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: URL('/fonts/PTSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: URL('/fonts/PTSans-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'OCR A Std';
+  src: URL('/fonts/OCR A Std Regular.ttf') format('truetype');
+}
 
 // Variables
 @import "variables";
 
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+// Import components
+@import "components/header";
+@import "components/footer";
+@import "components/banner";
+@import "components/searchbox";
+@import "components/forms";
+@import "components/buttons";
+@import "components/cardgroup";
+@import "components/containers";
+@import "components/pagination";
+@import "components/calendar";
+@import "components/table";
+
+//Import pages
+@import "pages";
+@import "pages/homepage";
+@import "pages/activities";
+@import "pages/resources";
+@import "pages/about";
+@import "pages/scoreboard";
+@import "pages/login";
+
+//Import language adjustments
+@import "langs";
+
+// General classes
+
+html{
+  line-height: 1.15;
+}
+body{
+  margin:0;
+  font-family: $body-font-family;
+  background-color: #EEEEEE;
+}
+a{
+  color: $main-color2;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+input {
+  margin: 0;
+  line-height: 1.15;
+  border: 0;
+  font-family: inherit;
+  outline: none;
+}
+blockquote, dd, dl, figure, h1, h2, h3, h4, h5, h6, p, pre {
+  margin: 0;
+}
+button{
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+h1 {
+  color: $main-color;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.3;
+}
+h2{
+  color: $main-color;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.3;
+}
+p {
+  padding: 15px 0;
 }
 
-.fa-lg{
-  font-size:1.3em;
+h1 {
+  & + p {
+    padding-top: 30px;
+  }
+}
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+main{
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 1280px;
+  background-color: $main-color4;
+}
+ul{
+  list-style: none;
+  line-height: 1.5;
+  padding: 0;
+  margin: 20px 0;
+}
+#app{
+  position: relative;
+  background-color: white;
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.show {
+  display: block!important;
+}
+.hide {
+  display: none!important;
+}
+.show-flex {
+  display: flex!important;
 }
 
-.home-map{
-  position:relative;
-}
-#home-map{
-  height: 650px;
-  width: 100%;
-}
 
-.resources-container h2{
-  margin: 0 0 30px 0;
-}
 
-.resources-container p{
-  line-height: 1.8;
+/*Media queries*/
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px)  {
+}
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px)  {
+}
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px)  {
+  h1 {
+    font-size: 30px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  h1 {
+    & + p {
+      padding-top: 45px;
+    }
+  }
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px)  {
+  h1 {
+    font-size: 40px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  h1 {
+    & + p {
+      padding-top: 65px;
+    }
+  }
+}
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+}
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+
 }

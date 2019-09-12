@@ -1,0 +1,109 @@
+#codeweek-login-page .codeweek-content-wrapper-inside{
+  display: flex;
+  flex-direction: row;
+}
+#codeweek-login-page .codeweek-content-wrapper-inside .social-media-buttons{
+  display: flex;
+  flex-direction: column;
+}
+#codeweek-login-page .codeweek-content-wrapper-inside .social-media-buttons .codeweek-action-link-button{
+  text-transform: none;
+}
+#codeweek-login-page .login-form{
+  flex:1;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+#codeweek-login-page .codeweek-form-field{
+  flex-direction: column;
+  align-items: flex-start;
+}
+#codeweek-login-page .codeweek-form-field-checkbox{
+  text-transform: uppercase;
+  justify-content: flex-start;
+}
+#codeweek-login-page .codeweek-form-field input{
+  min-height:57px;
+}
+#codeweek-login-page .codeweek-form-field label{
+  width: auto;
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+#codeweek-login-page .codeweek-button{
+  display:flex;
+  flex:1;
+}
+#codeweek-login-page .codeweek-button input{
+  flex:1;
+}
+
+#codeweek-login-page .separator{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+}
+
+#codeweek-login-page .separator .line{
+  border-right: 1px solid #ccc;
+  flex: 1;
+}
+
+#codeweek-login-page .separator .text{
+  padding: 20px 0;
+  font-size: 22px;
+}
+
+
+#codeweek-login-page .social-media-buttons .codeweek-action-link-button{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: normal;
+  height: 80px;
+}
+#codeweek-login-page .social-media-buttons .codeweek-action-link-button svg,
+#codeweek-login-page .social-media-buttons .codeweek-action-link-button img{
+  height: 50px;
+  fill: white;
+  margin-right: 30px;
+  border-right: 1px solid;
+  padding-right: 10px;
+}
+
+#codeweek-login-page .social-media-buttons .codeweek-action-link-button.github{
+  background-color: #000000;
+}
+#codeweek-login-page .social-media-buttons .codeweek-action-link-button.twitter{
+  background-color: #38A1F3;
+}
+#codeweek-login-page .social-media-buttons .codeweek-action-link-button.facebook{
+  background-color: #4267b2;
+}
+#codeweek-login-page .social-media-buttons .codeweek-action-link-button.google{
+  background-color: #db3236;
+}
+#codeweek-login-page .social-media-buttons .codeweek-action-link-button.azure{
+  background-color: #0072c6;
+}
+
+#codeweek-login-page .login-other-actions{
+  display: flex;
+  margin-top: 60px;
+  font-size: 14px;
+  height: 30px;
+}
+
+#codeweek-login-page .login-other-actions .forgot-password{
+  margin-right: 20px;
+  border-right: 1px solid #ccc;
+  padding-right: 20px;
+}
+#codeweek-login-page .login-other-actions .forgot-password,
+#codeweek-login-page .login-other-actions .sign-up{
+  display: flex;
+  align-items: center;
+}

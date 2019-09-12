@@ -23,6 +23,7 @@ return [
     'status'=>[
         'APPROVED'=>'APROVADO',
         'REJECTED'=>'REJEITADO',
-        'PENDING'=>'PENDENTE'
+        'PENDING'=>'PENDENTE',
+        'REPORTED' => 'RELATÓRIO APRESENTADO'
     ]
 ];

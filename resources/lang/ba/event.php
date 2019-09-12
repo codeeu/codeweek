@@ -132,10 +132,22 @@ return [
 
     ],
 
-    'privacy'=>'Pročitao-la sam i slažem se sa uslovima politike privatnosti opisanih u ovom dokumentu.'
-
-
-
+    'privacy'=>'Pročitao-la sam i slažem se sa uslovima politike privatnosti opisanih u ovom dokumentu.',
+    'country' => 'Zemlja',
+    'loading' => 'Učitavanje...',
+    'add_activity' => 'Dodajte aktivnost',
+    'edit_activity' => 'Uredite aktivnost',
+    'update_activity' => 'Ažurirajte aktivnost',
+    'delete_activity' => 'Pobrišite aktivnost',
+    'total_pending_events' => 'Ukupno događaja na čekanju:',
+    'no_pending_events' => 'Nema pronađenih događaja na čekanju za',
+    'all_countries' => 'Sve zemlje',
+    'current_status' => 'Aktuelni status',
+    'actions' => 'Akcije',
+    'certificate_ready' => 'Vaš certifikat Sedmice kodiranja je spreman. Slobodno ga preuzmite ili ga direktno podijelite.',
+    'view_your_certificate' => 'Pogledajte svoj certifikat ovdje',
+    'submit_event_and_report' => 'Podnesite prijavu za ovaj događaj i preuzmite svoj certifikat Sedmice kodiranja.',
+    'report_and_claim' => 'Prijavite događaj i preuzmite certifikat'
 
 
 

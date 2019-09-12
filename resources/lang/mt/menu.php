@@ -36,5 +36,6 @@ return [
     'logout' => 'Oħroġ mis-sistema',
     'signin' => 'Idħol fis-sistema',
     'privacy' => 'Privatezza',
+    'participation'=> 'Ċertifikat ta’ Parteċipazzjoni',
 
 ];

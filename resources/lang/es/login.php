@@ -18,4 +18,13 @@ return [
     'facebook' => 'Iniciar sesión con Facebook',
     'google' => 'Iniciar sesión con Google',
     'azure' => 'Iniciar sesión con Azure',
+    'email' => 'Correo electrónico',
+    'password' => 'Contraseña',
+    'remember' => 'Recordarme',
+    'forgotten_password' => '¿Olvidaste tu contraseña?',
+    'no_account' => '¿No tienes una cuenta?',
+    'signup' => 'Inscribirse',
+    'reset' => 'Restablecer contraseña',
+    'send_password' => 'Enviar un enlace para restablecer la contraseña',
+    'confirm_password' => 'Confirmar contraseña',
 ];
