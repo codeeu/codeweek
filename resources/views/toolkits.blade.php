@@ -17,8 +17,39 @@
             <div class="codeweek-content-wrapper">
                 <ul>
 
-                    <li><a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/Comms+Toolkit+2019.zip">EU Code Week 2019 @lang('resources.communication_toolkit')</a></li>
-                    <li><a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/Teachers+Toolkit+2019.zip">EU Code Week 2019 @lang('resources.teachers_toolkit')</a></li>
+
+
+
+                    <li>EU Code Week 2019 @lang('resources.communication_toolkit') (
+
+                        @foreach($languages as $lang)
+                            @if($lang === $locale)
+                                <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/communications-toolkit-{{strtoupper($lang)}}.pdf">@lang('base.languages.' . $lang)</a>
+
+                            @endif
+                        @endforeach
+
+                        @if($locale !== 'en')
+                            - <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/communications-toolkit-EN.pdf">@lang('base.languages.en')</a>
+                    @endif
+                )
+                    <li>
+
+
+                    <li>EU Code Week 2019 @lang('resources.teachers_toolkit') (
+
+                        @foreach($languages as $lang)
+                            @if($lang === $locale)
+                                <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/teachers-toolkit-{{strtoupper($lang)}}.pdf">@lang('base.languages.' . $lang)</a>
+                            @endif
+                        @endforeach
+
+                        @if($locale !== 'en')
+                            - <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/teachers-toolkit-EN.pdf">@lang('base.languages.en')</a>
+                    @endif
+                )
+                    <li>
+
                     <li>EU Code Week 2019 @lang('resources.leaflet') (
 
                             @foreach($languages as $lang)
