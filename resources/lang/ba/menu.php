@@ -38,5 +38,6 @@ return [
     'logout' => 'Odjavite se',
     'signin' => 'Upišite se',
     'privacy' => 'Privatnost',
+    'participation'=> 'Certifikat za učesnike'
 
 ];

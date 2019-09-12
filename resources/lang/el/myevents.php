@@ -23,6 +23,7 @@ return [
     'status'=>[
         'APPROVED'=>'ΕΓΚΡΙΘΗΚΕ',
         'REJECTED'=>'ΑΠΟΡΡΙΦΘΗΚΕ',
-        'PENDING'=>'ΣΕ ΑΝΑΜΟΝΗ'
+        'PENDING'=>'ΣΕ ΑΝΑΜΟΝΗ',
+        'REPORTED' => 'ΥΠΟΒΟΛΗ ΑΝΑΦΟΡΑΣ'
     ]
 ];

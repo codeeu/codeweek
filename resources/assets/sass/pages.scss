@@ -1,0 +1,19 @@
+/*Schools Page*/
+.codeweek-question-container:nth-child(even) {
+  background-color: #EBEBF0;
+}
+#codeweek-schools-page .codeweek-content-wrapper{
+  margin:0;
+  align-items: stretch;
+}
+#codeweek-beambassadors-page ul{
+  list-style: inherit;
+}
+#codeweek-ambassadors-page .codeweek-searchbox,
+#codeweek-pending-events-page .codeweek-searchbox{
+  align-items: center;
+  justify-content: center;
+}
+#codeweek-training-page .codeweek-banner h2{
+  text-transform: uppercase;
+}

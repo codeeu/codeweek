@@ -131,7 +131,22 @@ return [
         'invite in person' => 'Toiminta vain kutsutuille'
 
     ],
-    'privacy'=>'Olen lukenut ja hyväksyn tätä asiakirjaa koskevat tietosuojaperiaatteet'
+    'privacy'=>'Olen lukenut ja hyväksyn tätä asiakirjaa koskevat tietosuojaperiaatteet',
+    'country' => 'Maa',
+    'loading' => 'Ladataan...',
+    'add_activity' => 'Lisää tapahtuma',
+    'edit_activity' => 'Muokkaa tapahtumaa',
+    'update_activity' => 'Päivitä tapahtumaa',
+    'delete_activity' => 'Poista tapahtuma',
+    'total_pending_events' => 'Kaikki tulevat tapahtumat:',
+    'no_pending_events' => 'Tulevia tapahtumia ei löytynyt haulla',
+    'all_countries' => 'Kaikki maat',
+    'current_status' => 'Nykyinen tila',
+    'actions' => 'Toimet',
+    'certificate_ready' => 'Koodausviikon sertifikaattisi on valmis. Voit ladata tai jakaa sen suoraan.',
+    'view_your_certificate' => 'Tutustu sertifikaattiisi täältä',
+    'submit_event_and_report' => 'Lähetä raportti tapahtumasta ja pyydä koodausviikon sertifikaattia.',
+    'report_and_claim' => 'Ilmoita tapahtumasta ja pyydä sertifikaattia'
 
 
 

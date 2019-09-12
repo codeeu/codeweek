@@ -18,4 +18,14 @@ return [
     'facebook' => 'Facebook ile Oturum Aç',
     'google' => 'Google ile Oturum Aç',
     'azure' => 'Azure ile Oturum Aç',
+    'email' => 'E-posta',
+    'password' => 'Parola',
+    'remember' => 'Beni Hatırla',
+    'forgotten_password' => 'Parolanızı Unuttunuz Mu?',
+    'no_account' => 'Hesabınız yok mu?',
+    'signup' => 'Kaydol',
+    'reset' => 'Parola Sıfırla',
+    'send_password' => 'Parola Sıfırlama Bağlantısı Gönder',
+    'confirm_password' => 'Parola Onayla',
+
 ];

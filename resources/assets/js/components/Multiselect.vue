@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="multiselect-wrapper">
     <multiselect
             v-model="values"
             v-bind:options="options"

@@ -23,6 +23,7 @@ return [
     'status'=>[
         'APPROVED'=>'APPROVATO',
         'REJECTED'=>'RIFIUTATO',
-        'PENDING'=>'IN SOSPESO'
+        'PENDING'=>'IN SOSPESO',
+        'REPORTED' => 'SEGNALATO CON RELAZIONE',
     ]
 ];

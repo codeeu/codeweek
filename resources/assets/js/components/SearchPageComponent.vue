@@ -1,5 +1,5 @@
 <template>
-    <div class="search-page-component">
+    <section id="codeweek-searchpage-component" class="codeweek-page">
         <div class="home-map">
             <div class="landing-wrapper">
                 <div class="events-map-wrapper">
@@ -9,40 +9,40 @@
         </div>
 
         <div id="loadmask" v-show="isLoading">
-            <div class="loading"><img src="img/loading.gif" style="margin-right:10px;">Loading...</div>
+            <div class="loading"><img src="img/loading.gif" style="margin-right:10px;">{{$t('event.loading')}}</div>
         </div>
 
-        <div class="container mx-auto flex flex-col p-4 searchbox-container">
+        <div class="codeweek-searchbox">
 
-            <div class="basic-fields flex flex-row">
+            <div class="basic-fields">
 
 
-                <div class="w-full mr-4">
-                    <input type="text" class="input-text w-full pl-8 pr-8" v-model="query"
+                <div class="codeweek-search-text">
+                    <input type="text" v-model="query"
                            v-on:keyup.13="onSubmit()" :placeholder="$t('search.search_placeholder')">
                 </div>
 
-                <div class="year-selection mr-4">
-                    <multiselect v-model="year" :options="years" :multiple="false" :close-on-select="true"
-                                 :clear-on-select="false" :preserve-search="false" placeholder="Year"
-                                 :show-labels="false" :preselect-first="true" :searchable="false" :allowEmpty="false">
-                        <pre class="language-json"><code>{{ year  }}</code></pre>
-                    </multiselect>
-                </div>
+                <div class="right-fields">
+                    <div class="year-selection">
+                        <multiselect v-model="year" :options="years" :multiple="false" :close-on-select="true"
+                                     :clear-on-select="false" :preserve-search="false" placeholder="Year"
+                                     :show-labels="false" :preselect-first="true" :searchable="false" :allowEmpty="false">
+                            <pre class="language-json"><code>{{ year  }}</code></pre>
+                        </multiselect>
+                    </div>
 
-                <div class="search-button mr-4">
-                    <input type="button" class="btn btn-primary btn-sm w-full button-search"
-                           :value="$t('search.submit')" @click="onSubmit()">
-                </div>
+                    <div class="codeweek-button">
+                        <input type="button" :value="$t('search.submit')" @click="onSubmit()">
+                    </div>
 
-                <div class="more-button">
-                    <input type="button" class="btn btn-primary btn-sm w-full fa fa-trophy button-plus"
-                           :value="showFilters ? '-' : '+'" @click="toggleFilters()">
+                    <div class="codeweek-more-button" @click="toggleFilters()">
+                        <span>{{showFilters ? '-' : '+'}}</span>
+                    </div>
                 </div>
 
             </div>
 
-            <div class="advanced-fields flex flex-col mt-4" v-show="showFilters">
+            <div class="advanced-fields" v-show="showFilters">
 
                 <multiselect v-model="countries" :options="countrieslist" :multiple="true" :close-on-select="false"
                              :clear-on-select="false" :preserve-search="false" :placeholder="$t('search.countries')"
@@ -51,7 +51,7 @@
                     <pre class="language-json"><code>{{ countries }}</code></pre>
                 </multiselect>
 
-                <div class="flex flex-row mt-4">
+                <div class="advanced-line2">
 
                     <multiselect v-model="audiences" :options="audienceslist" :multiple="true" :close-on-select="false"
                                  :clear-on-select="false" :preserve-search="false" :placeholder="$t('search.audiences')"
@@ -73,39 +73,31 @@
 
         </div>
 
-        <div class="container events-container">
+        <div class="codeweek-content-wrapper">
 
-            <div class="flex" style="font-size: 14px;">
-
-                <div class="title events-count" v-if="events.length > 0 && !isLoading">{{pagination.total}}
-                    {{pagination.total > 1 ? $t('search.events') : $t('search.event')}} {{$t('search.search_counter')}}
+            <div class="codeweek-grid-layout">
+                <div class="codeweek-card"  v-for="event in events">
+                    <img :src="thumbnail(event)" class="card-image">
+                    <div class="card-content">
+                        <div class="card-title">{{ event.title }}</div>
+                        <div class="card-subtitle">{{ event.start_date }}</div>
+                        <div class="card-description">{{ event.description }}</div>
+                    </div>
+                    <div class="card-actions">
+                        <a class="codeweek-action-link-button"
+                           :href="'/view/' + event.id + '/' + event.slug" >{{ $t('myevents.view') }}</a>
+                    </div>
                 </div>
 
             </div>
 
-            <div class="card-group grid mt-6">
-                <a :href="'/view/' + event.id + '/' + event.slug" v-for="event in events" class="card-link">
-                    <div class="card">
-                        <img :src="thumbnail(event)" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">{{event.title}}</h5>
-                            <p class="card-text card-description">{{event.description}}</p>
-                            <p class="card-text">
-                                <small class="text-muted">{{event.start_date}}</small>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-
-            </div>
-
-            <pagination class="pagination" v-if="pagination.last_page > 1  && !isLoading"
+            <pagination v-if="pagination.last_page > 1  && !isLoading"
                         :pagination="pagination" :offset="5" @paginate="paginate()"></pagination>
 
 
         </div>
 
-    </div>
+    </section>
 
 </template>
 
@@ -134,7 +126,7 @@
                 countries: this.prpSelectedCountry,
                 audiences: [],
                 themes: [],
-                showFilters: true,
+                showFilters: false,
                 isLoading: false,
                 events: [],
                 pagination: {
@@ -205,125 +197,5 @@
         }
     }
 </script>
-
-<style scoped>
-
-    .landing-wrapper {
-        position: relative;
-        height: 450px;
-    }
-
-    #loadmask {
-        position: absolute;
-        height: 760px;
-        width: 100%;
-        top: 110px;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .loading {
-        background-color: white;
-        padding: 15px;
-        border-radius: 10px;
-    }
-
-    .events-map-wrapper {
-        position: absolute;
-        width: 100%;
-        height: 450px;
-    }
-
-    .card-link .card {
-        border-width: 1px;
-        border-radius: 8px;
-        height: 500px;
-        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
-    }
-
-    .card-link .card:hover {
-        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.30);
-    }
-
-    .input-text {
-        min-height: 40px;
-        border-radius: 5px;
-        border: 1px solid #e8e8e8;
-        font-size: 14px;
-        font-family: 'Lato'
-    }
-
-    .button-search {
-        border-radius: 5px;
-        width: 120px;
-        height: 40px;
-    }
-
-    .button-plus {
-        border-radius: 5px;
-        width: 40px;
-        height: 40px;
-    }
-
-    .events-container {
-        margin-top: 20px;
-    }
-
-    .events-page {
-        margin-left: 20px;
-        font-weight: bold;
-        flex: 1;
-        justify-content: flex-end;
-        display: flex;
-        display: -webkit-box;
-    }
-
-    .searchbox-container {
-        position: relative;
-        margin-top: 120px;
-        background-color: rgba(68, 68, 68, 0.8);
-        border-radius: 8px;
-    }
-
-    .card-group {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .card img {
-        width: 100%;
-        object-fit: cover;
-        height: 200px;
-        background-color: white;
-        border-radius: 8px 8px 0px 0px;
-        border-bottom: 1px solid #EEEEEE;
-    }
-
-    .card-body {
-        padding: 15px;
-    }
-
-    .card-title {
-        font-size: 20px;
-        height: 60px;
-        overflow: hidden;
-    }
-
-    .card-description {
-        font-size: 15px;
-        overflow: hidden;
-        padding-top: 10px;
-        height: 140px;
-        color: black;
-    }
-
-    .pagination {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-</style>
 
 <style src="vue-multiselect/dist/vue-multiselect.min.css"></style>

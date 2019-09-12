@@ -18,4 +18,13 @@ return [
     'facebook' => 'Mit Facebook anmelden',
     'google' => 'Mit Google anmelden',
     'azure' => 'Mit Azure anmelden',
+    'email' => 'E-Mail-Adresse',
+    'password' => 'Kennwort',
+    'remember' => 'Angemeldet bleiben',
+    'forgotten_password' => 'Kennwort vergessen?',
+    'no_account' => 'Noch kein Konto?',
+    'signup' => 'Registrieren',
+    'reset' => 'Kennwort zurücksetzen',
+    'send_password' => 'Link zum Zurücksetzen des Kennwortes versenden',
+    'confirm_password' => 'Kennwort bestätigen',
 ];

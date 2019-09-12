@@ -18,4 +18,13 @@ return [
     'facebook' => 'Aanmelden met Facebook',
     'google' => 'Aanmelden met Google',
     'azure' => 'Aanmelden met Azure',
+    'email' => 'E-mail',
+    'password' => 'Wachtwoord',
+    'remember' => 'Onthoud mijn gegevens',
+    'forgotten_password' => 'Ben je je wachtwoord vergeten?',
+    'no_account' => 'Heb je geen account?',
+    'signup' => 'Meld je aan',
+    'reset' => 'Je wachtwoord opnieuw instellen',
+    'send_password' => 'Link voor het opnieuw instellen van wachtwoord verzenden',
+    'confirm_password' => 'Wachtwoord bevestigen',
 ];

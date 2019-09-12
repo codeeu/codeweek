@@ -37,5 +37,6 @@ return [
     'logout' => 'Kirjaudu ulos',
     'signin' => 'Kirjaudu sisään',
     'privacy' => 'Tietosuoja',
+    'participation'=> 'Osallistumissertifikaatti',
 
 ];

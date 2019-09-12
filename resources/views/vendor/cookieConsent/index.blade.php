@@ -15,7 +15,7 @@
             }
 
             function hideCookieDialog() {
-                const dialogs = document.getElementsByClassName('cookie-consent-banner');
+                const dialogs = document.getElementsByClassName('codeweek-cookie-consent-banner');
 
                 for (let i = 0; i < dialogs.length; ++i) {
                     dialogs[i].style.display = 'none';
@@ -48,14 +48,18 @@
 
 @if($cookieConsentConfig['enabled'] && ! $alreadyConsentedWithCookies)
 
-    <div id="cookie-consent-banner" class="cookie-consent-banner"
-         style="border: 1px solid rgb(255, 255, 255); line-height: 1.5; padding: 5px 20px 10px; margin: 0px auto; font-family: Verdana, Arial, Helvetica, &quot;DejaVu Sans&quot;, sans-serif;">
+    <div id="cookie-consent-banner" class="codeweek-cookie-consent-banner">
         <h2>@lang("cookie.cookies")</h2>
         <p class="cookie-consent-inform">@lang("cookie.uses_cookies"). @lang("cookie.find_out_more_on")
-            <a style="color:#fff" id="cookie-notice" href="https://ec.europa.eu/info/cookies_{{App::getLocale()}}" target="_blank">@lang("cookie.how_we_use")</a>.</p>
-        <div class="cookie-consent-actions" style="margin-right: 20px;"><a style="color:#fff"
-                                                                           href="javascript:laravelCookieConsent.consentWithCookies()">@lang("cookie.accept")</a></div>
-        <div class="cookie-consent-actions"><a style="color:#fff" href="javascript:laravelCookieConsent.hideCookieDialog()">@lang("cookie.refuse")</a></div>
+            <a id="cookie-notice" href="https://ec.europa.eu/info/cookies_{{App::getLocale()}}" target="_blank">@lang("cookie.how_we_use")</a>.
+        </p>
+        <div class="actions">
+            <a class="codeweek-action-link-button"
+               style="margin-right: 10px;"
+               href="javascript:laravelCookieConsent.consentWithCookies()">@lang("cookie.accept")</a>
+            <a class="codeweek-action-link-button"
+               href="javascript:laravelCookieConsent.hideCookieDialog()">@lang("cookie.refuse")</a>
+        </div>
     </div>
 
 
