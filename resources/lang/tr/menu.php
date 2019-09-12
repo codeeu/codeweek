@@ -36,5 +36,6 @@ return [
     'logout' => 'Oturumu Kapat',
     'signin' => 'Oturum Aç',
     'privacy' => 'Gizlilik',
+    'participation'=> 'Katılım Sertifikası',
 
 ];

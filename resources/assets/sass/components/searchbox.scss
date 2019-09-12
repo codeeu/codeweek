@@ -1,0 +1,73 @@
+.codeweek-searchbox{
+  background-color: #E5E5E5;
+  padding: 18px 30px;
+  min-height: 60px;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  flex-direction: column;
+}
+#codeweek-scoreboard-page .codeweek-searchbox{
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.codeweek-searchbox .basic-fields{
+  display: flex;
+  flex-direction: row;
+  flex:1;
+}
+.codeweek-searchbox .advanced-fields .line{
+  display:flex;
+  flex-direction: column;
+}
+.codeweek-searchbox .advanced-fields .multiselect{
+  margin-top: 18px;
+}
+
+.codeweek-searchbox .total .number{
+  font-size: 40px;
+  color: $main-color;
+  font-weight: bold;
+}
+
+.codeweek-searchbox .total .label{
+  font-size: 20px;
+  color: $main-color;
+  font-style: italic;
+}
+
+.codeweek-searchbox .total{
+  margin-right: 20px;
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px)  {
+}
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px)  {
+}
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px)  {
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px)  {
+  .codeweek-searchbox {
+    padding: 18px 60px;
+  }
+  .codeweek-searchbox .advanced-fields .line{
+    flex-direction: row;
+  }
+  .codeweek-searchbox .multiselect {
+    margin-right: 10px;
+  }
+}
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+}
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+  .codeweek-searchbox {
+    padding: 18px 100px;
+  }
+}

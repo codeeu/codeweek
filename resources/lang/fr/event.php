@@ -131,7 +131,22 @@ return [
         'invite in person' => 'Activité hors-ligne privée'
 
     ],
-    'privacy'=>'J\'ai lu et j\'accepte les conditions de la politique de confidentialité décrites dans ce document'
+    'privacy'=>'J\'ai lu et j\'accepte les conditions de la politique de confidentialité décrites dans ce document',
+    'country' => 'Pays',
+    'loading' => 'Chargement...',
+    'add_activity' => 'Ajouter une activité',
+    'edit_activity' => 'Modifier une activité',
+    'update_activity' => 'Mettre à jour une activité',
+    'delete_activity' => 'Supprimer une activité',
+    'total_pending_events' => 'Nombre d’événements en attente:',
+    'no_pending_events' => 'Aucun événement en attente trouvé pour',
+    'all_countries' => 'Tous les pays',
+    'current_status' => 'Statut actuel',
+    'actions' => 'Actions',
+    'certificate_ready' => 'Votre certificat Code Week est prêt. N’hésitez pas à le télécharger ou à le partager directement.',
+    'view_your_certificate' => 'Visualisez votre certificat ici',
+    'submit_event_and_report' => 'Signalez cet événement et demandez votre certificat Code Week.',
+    'report_and_claim' => 'Signaler un événement et demander un certificat'
 
 
 

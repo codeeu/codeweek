@@ -15,7 +15,6 @@ return [
         'en' => 'Engleski',
         'fr' => 'Francuski',
         'bg' => 'Bugarski',
-        'mt' => 'Malteški',
         'hr' => 'Hrvatski',
         'de' => 'Njemački',
         'pl' => 'Poljski',
@@ -47,11 +46,27 @@ return [
     ],
 
     'resources_local_title'=>'Resursi za kodiranje od',
-    'are_you_a_teacher' => 'Jeste li vi nastavnik?',
-    'get_involved_banner' => 'Kliknite ovdje i saznajte kako da se angažirate!',
     'days'=>'Dani',
     'hours'=>'Sati',
     'minutes'=>'Minute',
-    'seconds'=>'Sekunde'
+    'seconds'=>'Sekunde',
+    'still_have_question' => 'Još uvijek imate pitanja?',
+    'drop_us_a_line' => 'Samo nam se javite!',
+    'get_in_touch' => 'STUPITE U KONTAKT',
+    'footer_msg' => 'Inicijativa na nivou širokih masa koju vode volonteri i koju podržava Evropska komisija.',
+    'email' => 'E-pošta',
+    'display_email' => 'Prikazati e-poštu',
+    'first_name' => 'Lično ime',
+    'last_name' => 'Prezime',
+    'your_website' => 'Vaš vebsajt',
+    'biography' => 'Biografija',
+    'update' => 'Ažurirajte',
+    'delete' => 'Pobrišite',
+    'choose a file' => 'Odaberite datoteku',
+
+    'learning_bits' => 'Učenje korak po korak',
+    'codeweek' => 'Sedmica kodiranja',
+    'bring_codeweek_to_your_students' => 'Približite Sedmicu kodiranja svojim učenicima',
+    'or' => 'ili'
 
 ];

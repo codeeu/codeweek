@@ -41,16 +41,30 @@ return [
         'mk' => 'makedonščina',
         'me' => 'črnogorščina',
         'rs' => 'srbščina',
-        'mt' => 'malteščina',
         'tr' => 'turščina'
     ],
 
     'resources_local_title'=>'Programerski viri iz',
-    'are_you_a_teacher' => 'Ste učitelj?',
-    'get_involved_banner' => 'Kliknite tukaj in si oglejte, kako se lahko vključite!',
     'days'=>'dni',
     'hours'=>'ur',
     'minutes'=>'minut',
-    'seconds'=>'sekund'
+    'seconds'=>'sekund',
+    'still_have_question' => 'Imate dodatna vprašanja?',
+    'drop_us_a_line' => 'Pišite nam!',
+    'get_in_touch' => 'OBRNITE SE NA NAS',
+    'footer_msg' => 'Družbena pobuda, ki jo vodijo prostovoljci in podpira Evropska komisija.',
+    'email' => 'E-pošta',
+    'display_email' => 'Prikaži e-pošto',
+    'first_name' => 'Ime',
+    'last_name' => 'Priimek',
+    'your_website' => 'Vaše spletno mesto',
+    'biography' => 'Biografija',
+    'update' => 'Posodobi',
+    'delete' => 'Izbriši',
+    'choose a file' => 'Izberite datoteko',
+    'learning_bits' => 'Učni drobci',
+    'codeweek' => 'CodeWeek',
+    'bring_codeweek_to_your_students' => 'Predstavite teden programiranja svojim učencem',
+    'or' => 'ali'
 
 ];

@@ -23,6 +23,7 @@ return [
     'status'=>[
         'APPROVED'=>'HYVÄKSYTTY',
         'REJECTED'=>'HYLÄTTY',
-        'PENDING'=>'ODOTTAA'
+        'PENDING'=>'ODOTTAA',
+        'REPORTED' => 'RAPORTOITU'
     ]
 ];

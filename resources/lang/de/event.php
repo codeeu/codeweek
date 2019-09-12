@@ -132,13 +132,21 @@ return [
 
     ],
 
-    'privacy'=>'Ich habe die in diesem Dokument beschriebenen Datenschutzbestimmungen gelesen und bin damit einverstanden'
-
-
-
-
-
-
-
+    'privacy'=>'Ich habe die in diesem Dokument beschriebenen Datenschutzbestimmungen gelesen und bin damit einverstanden',
+    'country' => 'Land',
+    'loading' => 'Laden ...',
+    'add_activity' => 'Aktivität hinzufügen',
+    'edit_activity' => 'Aktivität bearbeiten',
+    'update_activity' => 'Aktivität aktualisieren',
+    'delete_activity' => 'Aktivität löschen',
+    'total_pending_events' => 'Gesamtanzahl ausstehender Veranstaltungen:',
+    'no_pending_events' => 'Keine ausstehenden Veranstaltungen gefunden für',
+    'all_countries' => 'Alle Länder',
+    'current_status' => 'Aktueller Status',
+    'actions' => 'Maßnahmen',
+    'certificate_ready' => 'Ihr Code Week-Zertifikat ist verfügbar. Gerne können Sie es herunterladen oder direkt teilen.',
+    'view_your_certificate' => 'Ihr Zertifikat hier ansehen',
+    'submit_event_and_report' => 'Übermitteln Sie eine Meldung für diese Veranstaltung und fordern Sie Ihr Code Week-Zertifikat an.',
+    'report_and_claim' => 'Meldung für eine Veranstaltung übermitteln und Zertifikat anfordern',
 
 ];

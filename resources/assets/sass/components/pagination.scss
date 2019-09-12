@@ -1,0 +1,92 @@
+.codeweek-pagination{
+  margin-top:80px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+.codeweek-pagination ul{
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.codeweek-pagination ul li a,
+.codeweek-pagination ul li.active span{
+  cursor: pointer;
+  font-size: 16px;
+}
+.codeweek-pagination ul li a.back,
+.codeweek-pagination ul li a.next{
+  text-transform: uppercase;
+}
+.codeweek-pagination ul li a.back{
+  margin-right:10px;
+}
+.codeweek-pagination ul li a.next{
+  margin-left:5px;
+}
+.codeweek-pagination ul li a.page,
+.codeweek-pagination ul li .page-link{
+  border: 1px solid #E6E6E6;
+  padding: 10px 18px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.codeweek-pagination ul li a.page.current{
+  color: $main-color3;
+}
+.codeweek-pagination ul li a[disabled="disabled"]{
+  color: #9B9B9B;
+  cursor: not-allowed;
+}
+
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px)  {
+}
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px)  {
+}
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px)  {
+  .codeweek-pagination ul li a,
+  .codeweek-pagination ul li.active span{
+    font-size: 18px;
+  }
+  .codeweek-pagination ul li a.page,
+  .codeweek-pagination ul li .page-link{
+    padding: 15px 22px;
+    margin-right: 8px;
+  }
+  .codeweek-pagination ul li a.back{
+    margin-right:20px;
+  }
+  .codeweek-pagination ul li a.next{
+    margin-left:12px;
+  }
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px)  {
+
+}
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+}
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+  .codeweek-pagination ul li a,
+  .codeweek-pagination ul li.active span{
+    font-size: 20px;
+  }
+  .codeweek-pagination ul li a.page,
+  .codeweek-pagination ul li .page-link{
+    padding: 20px 28px;
+    margin-right: 10px;
+  }
+  .codeweek-pagination ul li a.back{
+    margin-right:20px;
+  }
+  .codeweek-pagination ul li a.next{
+    margin-left:10px;
+  }
+}

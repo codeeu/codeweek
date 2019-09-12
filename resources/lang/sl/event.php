@@ -131,7 +131,22 @@ return [
         'invite in person' => 'Dejavnost izven spleta s povabilom'
 
     ],
-    'privacy'=>'Prebral sem in se strinjam s pogoji o zasebnosti, ki so navedeni v tem dokumentu.'
+    'privacy'=>'Prebral sem in se strinjam s pogoji o zasebnosti, ki so navedeni v tem dokumentu.',
+    'country' => 'Država',
+    'loading' => 'Nalaganje ...',
+    'add_activity' => 'Dodaj dejavnost',
+    'edit_activity' => 'Uredi dejavnost',
+    'update_activity' => 'Posodobi dejavnost',
+    'delete_activity' => 'Izbriši dejavnost',
+    'total_pending_events' => 'Skupno število čakajočih dogodkov:',
+    'no_pending_events' => 'Najden ni bil noben čakajoči dogodek za',
+    'all_countries' => 'Vse države',
+    'current_status' => 'Trenutni status',
+    'actions' => 'Dejanja',
+    'certificate_ready' => 'Vaš certifikat za teden programiranja je pripravljen. Prenesite ga ali ga delite neposredno.',
+    'view_your_certificate' => 'Certifikat si lahko ogledate tukaj',
+    'submit_event_and_report' => 'Pošljite prijavo za ta dogodek in prevzemite svoj certifikat za teden programiranja.',
+    'report_and_claim' => 'Prijavite dogodek in prevzemite certifikat',
 
 
 

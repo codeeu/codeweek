@@ -132,7 +132,22 @@ return [
 
     ],
 
-    'privacy'=>'Přečetl (a) jsem si zásady ochrany osobních údajů popsané v tomto dokumentu a souhlasím s nimi.'
+    'privacy'=>'Přečetl (a) jsem si zásady ochrany osobních údajů popsané v tomto dokumentu a souhlasím s nimi.',
+    'country' => 'Země',
+    'loading' => 'Načítání...',
+    'add_activity' => 'Přidat akci',
+    'edit_activity' => 'Upravit akci',
+    'update_activity' => 'Aktualizovat akci',
+    'delete_activity' => 'Smazat akci',
+    'total_pending_events' => 'Čekající akce celkem:',
+    'no_pending_events' => 'Nenalezeny žádné čekající akce pro',
+    'all_countries' => 'Všechny země',
+    'current_status' => 'Aktuální stav',
+    'actions' => 'Akce',
+    'certificate_ready' => 'Váš certifikát za Týden programování je připraven. Můžete si ho stáhnout nebo ho rovnou sdílet.',
+    'view_your_certificate' => 'Certifikát můžete zobrazit zde',
+    'submit_event_and_report' => 'Pošlete hlášení o této akci a požádejte o certifikát k Týdnu programování.',
+    'report_and_claim' => 'Poslat hlášení a požádat o certifikát'
 
 
 

@@ -1,0 +1,22 @@
+.codeweek-table{
+  width:100%;
+}
+.codeweek-table tr:nth-child(even) {
+  background-color: #FFEEE6;
+}
+
+.codeweek-table th{
+  color: #fff;
+  background-color: #fe6824;
+  padding: 5px;
+  font-weight: normal;
+}
+
+.codeweek-table td{
+  padding: 5px;
+}
+
+.codeweek-table .actions{
+  display: flex;
+  justify-content: center;
+}
