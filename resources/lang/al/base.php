@@ -15,7 +15,6 @@ return [
         'en' => 'Anglisht',
         'fr' => 'Frëngjisht',
         'bg' => 'Bullgarisht',
-        'mt' => 'Malteze',
         'hr' => 'Kroatisht',
         'de' => 'Gjermanisht',
         'pl' => 'Polonisht',
@@ -67,6 +66,7 @@ return [
 
     'learning_bits' => 'Mësimet',
     'codeweek' => 'CodeWeek',
-    'bring_codeweek_to_your_students' => 'Sillni Code Week te studentët tuaj'
+    'bring_codeweek_to_your_students' => 'Sillni Code Week te studentët tuaj',
+    'or' => 'ose'
 
 ];

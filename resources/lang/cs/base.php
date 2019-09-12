@@ -15,7 +15,6 @@ return [
         'en' => 'Angličtina',
         'fr' => 'Francouzština',
         'bg' => 'Bulharština',
-        'mt' => 'Maltština',
         'hr' => 'Chorvatština',
         'de' => 'Němčina',
         'pl' => 'Polština',
@@ -65,6 +64,7 @@ return [
     'choose a file' => 'Vyberte soubor',
     'learning_bits' => 'Školicí materiály',
     'codeweek' => 'CodeWeek',
-    'bring_codeweek_to_your_students' => 'Přibližte Týden programování svým studentům'
+    'bring_codeweek_to_your_students' => 'Přibližte Týden programování svým studentům',
+    'or' => 'nebo'
 
 ];

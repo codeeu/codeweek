@@ -15,7 +15,6 @@ return [
         'en' => 'Engleski',
         'fr' => 'Francuski',
         'bg' => 'Bugarski',
-        'mt' => 'Malteški',
         'hr' => 'Hrvatski',
         'de' => 'Njemački',
         'pl' => 'Poljski',
@@ -65,9 +64,9 @@ return [
     'delete' => 'Pobrišite',
     'choose a file' => 'Odaberite datoteku',
 
-
-
     'learning_bits' => 'Učenje korak po korak',
     'codeweek' => 'Sedmica kodiranja',
     'bring_codeweek_to_your_students' => 'Približite Sedmicu kodiranja svojim učenicima',
+    'or' => 'ili'
+
 ];

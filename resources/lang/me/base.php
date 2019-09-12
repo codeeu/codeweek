@@ -41,7 +41,6 @@ return [
         'mk' => 'makedonski',
         'cnr'=> 'crnogorski',
         'sr' => 'srpski',
-        'mt' => 'malteški',
         'tr' => 'turski'
     ],
 
@@ -66,6 +65,7 @@ return [
     'choose a file' => 'Odaberi datoteku',
     'learning_bits' => 'Materijali za učenje',
     'codeweek' => 'CodeWeek',
-    'bring_codeweek_to_your_students' => 'Donesite Nedjelju programiranja vašim učenicima'
+    'bring_codeweek_to_your_students' => 'Donesite Nedjelju programiranja vašim učenicima',
+    'or' => 'ili'
 
 ];

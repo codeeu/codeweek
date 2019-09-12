@@ -41,7 +41,6 @@ return [
         'mk' => 'Maķedoniešu',
         'me'=> 'Melnkalniešu',
         'rs' => 'Serbu',
-        'mt' => 'maltiešu',
         'tr' => 'turku'
     ],
 
@@ -65,6 +64,7 @@ return [
     'choose a file' => 'Atlasīt failu',
     'learning_bits' => 'Mācību moduļi',
     'codeweek' => 'Programmēšanas nedēļa',
-    'bring_codeweek_to_your_students' => 'Piedāvājiet Programmēšanas nedēļu saviem skolēniem'
+    'bring_codeweek_to_your_students' => 'Piedāvājiet Programmēšanas nedēļu saviem skolēniem',
+    'or' => 'vai'
 
 ];

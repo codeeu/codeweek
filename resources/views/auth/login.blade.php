@@ -39,7 +39,7 @@
 
                 <div class="separator">
                     <div class="line"></div>
-                    <div class="text">OR</div>
+                    <div class="text" style="text-transform: uppercase">@lang('base.or')</div>
                     <div class="line"></div>
                 </div>
 

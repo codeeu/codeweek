@@ -15,7 +15,6 @@ return [
         'en' => 'Inglese',
         'fr' => 'Francese',
         'bg' => 'Bulgaro',
-        'mt' => 'Maltese',
         'hr' => 'Croato',
         'de' => 'Tedesco',
         'pl' => 'Polacco',
@@ -66,5 +65,6 @@ return [
     'learning_bits' => 'Pillole d’apprendimento',
     'codeweek' => 'Settimana della programmazione',
     'bring_codeweek_to_your_students' => 'Presenta la settimana della programmazione ai tuoi studenti',
+    'or' => 'o'
 
 ];
