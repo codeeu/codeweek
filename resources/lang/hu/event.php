@@ -131,7 +131,22 @@ return [
         'invite in person' => 'Csak meghívottaknak szóló személyes (offline) tevékenység'
 
     ],
-    'privacy'=>'Elolvastam és elfogadom a jelen dokumentumban ismertetett adatvédelmi feltételeket.'
+    'privacy'=>'Elolvastam és elfogadom a jelen dokumentumban ismertetett adatvédelmi feltételeket.',
+    'country' => 'Országok',
+    'loading' => 'Betöltés...',
+    'add_activity' => 'Tevékenység hozzáadása',
+    'edit_activity' => 'Tevékenység szerkesztése',
+    'update_activity' => 'Tevékenység frissítése',
+    'delete_activity' => 'Tevékenység törlése',
+    'total_pending_events' => 'Függőben lévő események összesen:',
+    'no_pending_events' => 'Nincsenek függőben lévő események',
+    'all_countries' => 'Összes ország',
+    'current_status' => 'Jelenlegi státusz',
+    'actions' => 'Intézkedések',
+    'certificate_ready' => 'A programozási hétről szóló tanúsítványa elkészült. Töltse le vagy ossza meg közvetlenül!',
+    'view_your_certificate' => 'Tanúsítvány megtekintése itt',
+    'submit_event_and_report' => 'Nyújtsa be az eseménnyel kapcsolatos jelentését és igényelje a programozási hétről szóló tanúsítványát!',
+    'report_and_claim' => 'Esemény bejelentése és tanúsítvány igénylése',
 
 
 

@@ -18,4 +18,13 @@ return [
     'facebook' => 'Accedi con Facebook',
     'google' => 'Accedi con Google',
     'azure' => 'Accedi con Azure',
+    'email' => 'Posta elettronica',
+    'password' => 'Password',
+    'remember' => 'Ricordami',
+    'forgotten_password' => 'Hai dimenticato la password?',
+    'no_account' => 'Non hai un account?',
+    'signup' => 'Iscriviti',
+    'reset' => 'Reimposta la password',
+    'send_password' => 'Invia link di reimpostazione della password',
+    'confirm_password' => 'Conferma la password',
 ];

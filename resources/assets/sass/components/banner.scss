@@ -1,0 +1,158 @@
+/*Banner component*/
+
+.codeweek-banner{
+  display: flex;
+  background-color:$main-color;
+  margin: 0 10px;
+  flex-direction: column;
+}
+
+.codeweek-banner .text{
+  margin: 45px 0 45px 25px;
+}
+
+.codeweek-banner h1 {
+  font-size:40px;
+  color: $main-color4;
+}
+
+.codeweek-banner h2 {
+  font-size:20px;
+  color: $main-color4;
+  font-weight: normal;
+}
+
+.codeweek-banner .image{
+  margin: 15px 10px;
+  flex: 1;
+  display: flex;
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px)  {
+}
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px)  {
+}
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px)  {
+  .codeweek-banner h1 {
+    font-size:50px;
+  }
+  .codeweek-banner h2 {
+    font-size:30px;
+  }
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px)  {
+  .codeweek-banner{
+    flex-direction: row;
+    height: 366px;
+    margin: 0;
+  }
+  .codeweek-banner.simple{
+    height: 220px;
+  }
+  .codeweek-banner h1 {
+    font-size:60px;
+  }
+  .codeweek-banner h2 {
+    font-size:35px;
+  }
+  .codeweek-banner .text{
+    margin: 90px 0 0 100px;
+    max-width: 330px;
+  }
+  .codeweek-banner.simple .text{
+    margin: 50px 0 0 100px;
+    max-width: none;
+  }
+  .codeweek-banner .image{
+    margin: 0 20px 0 0;
+    justify-content: flex-end;
+  }
+
+  .codeweek-banner.learn-teach .image,
+  .codeweek-banner.scoreboard .image,
+  .codeweek-banner.about .image{
+    margin-right: 140px;
+  }
+}
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+}
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+  .codeweek-banner.ambassadors .image{
+    margin-top: -40px;
+    margin-right: 0;
+  }
+  .codeweek-banner .text{
+    margin: 90px 0 0 200px;
+  }
+  .codeweek-banner.simple .text{
+    margin: 50px 0 0 200px;
+    max-width: none;
+  }
+}
+
+
+.codeweek-banner.training,
+.codeweek-banner.schools{
+  background-color: #8E90B5;
+}
+.codeweek-banner.learn-teach{
+  background-color: #B5D0D0;
+}
+.codeweek-banner.ambassadors{
+  background-color: #F5B742;
+}
+.codeweek-banner.scoreboard{
+  background-color: #CE80A7;
+}
+.codeweek-banner.about{
+  background-color: #72A8D0;
+}
+.codeweek-banner.show-event{
+  background-color: #E2E2E2;
+
+  .image{
+    margin:0;
+
+    img {
+      width:540px;
+      height: 366px;
+      object-fit: cover;
+      border-bottom: 20px solid $main-color;
+    }
+  }
+  .text {
+    margin: 15px 80px;
+    max-width: none;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .edit-button{
+      display: flex;
+      width: 100%;
+      margin-left: -100px;
+      height: 40px;
+    }
+
+    .title{
+      margin-top: -40px;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+    }
+  }
+  h1 {
+    font-size: 45px;
+    color: $main-color;
+  }
+}

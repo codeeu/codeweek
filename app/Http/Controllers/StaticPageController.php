@@ -12,6 +12,8 @@ class StaticPageController extends Controller
 {
     public function index(Request $request)
     {
+
+
         $routeName = Route::currentRouteName();
         $actual_language = session('locale');
         $view = 'static.' . $actual_language . '.' . $routeName;
@@ -31,6 +33,14 @@ class StaticPageController extends Controller
 
             return view($view);
         }
+
+    }
+
+    public function static(Request $request)
+    {
+
+        $routeName = Route::currentRouteName();
+        return view('static.' . $routeName);
 
     }
 

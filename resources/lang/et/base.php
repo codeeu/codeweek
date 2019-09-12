@@ -15,7 +15,6 @@ return [
         'en' => 'Inglise',
         'fr' => 'Prantsuse',
         'bg' => 'Bulgaaria',
-        'mt' => 'Malta',
         'hr' => 'Horvaadi',
         'de' => 'Saksa',
         'pl' => 'Poola',
@@ -46,11 +45,26 @@ return [
     ],
 
     'resources_local_title'=>'Programmeerimismaterjale:',
-    'are_you_a_teacher' => 'Kas oled õpetaja?',
-    'get_involved_banner' => 'Klõpsa siin, et leida teavet, kuidas osaleda!',
     'days'=>'päeva',
     'hours'=>'tundi',
     'minutes'=>'minutit',
-    'seconds'=>'sekundit'
+    'seconds'=>'sekundit',
+    'still_have_question' => 'Teil on veel küsimusi?',
+    'drop_us_a_line' => 'Kirjutage meile!',
+    'get_in_touch' => 'VÕTKE ÜHENDUST',
+    'footer_msg' => 'Rohujuuretasandil vabatahtlike korraldatud liikumine, mida toetab Euroopa Komisjon.',
+    'email' => 'E-kiri',
+    'display_email' => 'Kuva meiliaadress',
+    'first_name' => 'Eesnimi',
+    'last_name' => 'Perekonnanimi',
+    'your_website' => 'Teie veebisait',
+    'biography' => 'CV',
+    'update' => 'Uuenda',
+    'delete' => 'Kustuta',
+    'choose a file' => 'Vali fail',
+    'learning_bits' => 'Õppevahendid',
+    'codeweek' => 'CodeWeek',
+    'bring_codeweek_to_your_students' => 'Viige Code Week oma õpilasteni',
+    'or' => 'või'
 
 ];

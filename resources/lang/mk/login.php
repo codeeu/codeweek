@@ -18,4 +18,13 @@ return [
     'facebook' => 'Најави се со Facebook',
     'google' => 'Најави се со Google',
     'azure' => 'Најави се со Azure',
+    'email' => 'Е-пошта',
+    'password' => 'Лозинка',
+    'remember' => 'Запамети ме',
+    'forgotten_password' => 'Ја заборави лозинката?',
+    'no_account' => 'Немаш сметка?',
+    'signup' => 'Пријави се',
+    'reset' => 'Ресетирај ја лозинката',
+    'send_password' => 'Испрати врска за ресетирање лозинка',
+    'confirm_password' => 'Потврди лозинка',
 ];

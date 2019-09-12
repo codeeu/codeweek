@@ -1,6 +1,9 @@
 <template>
-    <div class="alert alert-success alert-flash" role="alert" v-show="show">
-        <strong>Success!</strong> {{ body }}
+    <div class="codeweek-flash-message" role="alert" v-show="show">
+        <div class="content">
+            <div class="level">Success!</div>
+            <div class="body">{{ body }}</div>
+        </div>
     </div>
 </template>
 
@@ -45,11 +48,3 @@
         }
     };
 </script>
-
-<style>
-    .alert-flash {
-        position: fixed;
-        right: 25px;
-        top: 75px;
-    }
-</style>

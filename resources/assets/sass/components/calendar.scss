@@ -1,0 +1,17 @@
+.codeweek-view-calendar .month{
+  font-size: 18px;
+  color: #707070;
+  font-family: "Helvetica";
+  text-align: center;
+
+  th {
+    font-weight: normal;
+    font-family: $body-font-family;
+    color: #000;
+    font-size: 20px;
+  }
+  
+  .filled{
+    background-color: #FFEEE6;
+  }
+}

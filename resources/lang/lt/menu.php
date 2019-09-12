@@ -37,5 +37,6 @@ return [
     'logout' => 'Atsijungti',
     'signin' => 'Prisijungti',
     'privacy' => 'Privatumas',
+    'participation'=> 'Dalyvio pažymėjimas',
 
 ];

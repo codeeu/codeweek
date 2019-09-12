@@ -131,7 +131,22 @@ return [
         'invite in person' => 'Aktivitet för inbjudna besökare'
 
     ],
-    'privacy'=>'Jag har läst och godkänner integritetspolicyn som beskrivs i detta dokument.'
+    'privacy'=>'Jag har läst och godkänner integritetspolicyn som beskrivs i detta dokument.',
+    'country' => 'Land',
+    'loading' => 'Laddar ...',
+    'add_activity' => 'Lägg till aktivitet',
+    'edit_activity' => 'Redigera aktivitet',
+    'update_activity' => 'Uppdatera aktivitet',
+    'delete_activity' => 'Radera aktivitet',
+    'total_pending_events' => 'Totalt antal evenemang under behandling:',
+    'no_pending_events' => 'Inga evenemang under behandling hittades för',
+    'all_countries' => 'Alla länder',
+    'current_status' => 'Nuvarande status',
+    'actions' => 'Åtgärder',
+    'certificate_ready' => 'Ditt Code Week-intyg är klart. Ladda ner det eller dela det direkt.',
+    'view_your_certificate' => 'Visa ditt intyg här',
+    'submit_event_and_report' => 'Skicka in en rapport för detta evenemang och få ditt Code Week-intyg',
+    'report_and_claim' => 'Rapportera evenemanget och få ett intyg'
 
 
 

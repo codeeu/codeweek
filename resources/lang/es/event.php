@@ -131,7 +131,22 @@ return [
         'invite in person' => 'Actividad presencial privada'
 
     ],
-    'privacy'=>'He leído y estoy de acuerdo con los términos descritos en la política de privacidad descrita en el presente documento.'
+    'privacy'=>'He leído y estoy de acuerdo con los términos descritos en la política de privacidad descrita en el presente documento.',
+    'country' => 'País',
+    'loading' => 'Cargando...',
+    'add_activity' => 'Agregar un evento',
+    'edit_activity' => 'Editar el evento',
+    'update_activity' => 'Actualizar el evento',
+    'delete_activity' => 'Eliminar el evento',
+    'total_pending_events' => 'Eventos pendientes:',
+    'no_pending_events' => 'No se han encontrado eventos pendientes para',
+    'all_countries' => 'Todos los países',
+    'current_status' => 'Estado actual',
+    'actions' => 'Acciones',
+    'certificate_ready' => 'Tu certificado de la Semana de la Programación está listo. Descárgalo o compártelo directamente.',
+    'view_your_certificate' => 'Puedes ver tu certificado aquí',
+    'submit_event_and_report' => 'Envía un informe sobre este evento y solicita tu certificado de la Semana de la Programación.',
+    'report_and_claim' => 'Informar sobre un evento y solicitar certificado',
 
 
 

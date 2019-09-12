@@ -36,5 +36,6 @@ return [
     'logout' => 'Utloggning',
     'signin' => 'Logga in',
     'privacy' => 'Sekretess',
+    'participation'=> 'Intyg om deltagande',
 
 ];

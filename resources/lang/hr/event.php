@@ -131,7 +131,22 @@ return [
         'invite in person' => 'Aktivnost po pozivu'
 
     ],
-    'privacy'=>'Pročitao-la sam i prihvaćam uvjete u vezi s pravilima o privatnosti opisanih u ovom dokumentu.'
+    'privacy'=>'Pročitao-la sam i prihvaćam uvjete u vezi s pravilima o privatnosti opisanih u ovom dokumentu.',
+    'country' => 'Zemlja',
+    'loading' => 'Učitavanje...',
+    'add_activity' => 'Dodajte događanje',
+    'edit_activity' => 'Uredite događanje',
+    'update_activity' => 'Ažurirajte događanje',
+    'delete_activity' => 'Obrišite događanje',
+    'total_pending_events' => 'Ukupno događanja u tijeku:',
+    'no_pending_events' => 'Nije pronađeno nijedno događanje u tijeku za ',
+    'all_countries' => 'Sve zemlje',
+    'current_status' => 'Trenutačni status',
+    'actions' => 'Djelovanja',
+    'certificate_ready' => 'Vaša Potvrda za Tjedan programiranja je spremna. Slobodno je preuzmite ili izravno podijelite.',
+    'view_your_certificate' => 'Ovdje pogledajte svoju potvrdu',
+    'submit_event_and_report' => 'Predajte prijavu ovog događanja i zatražite svoju potvrdu za Tjedan programiranja.',
+    'report_and_claim' => 'Prijavite događanje i zatražite potvrdu',
 
 
 

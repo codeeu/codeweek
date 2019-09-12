@@ -23,6 +23,7 @@ return [
     'status'=>[
         'APPROVED'=>'KINNITATUD',
         'REJECTED'=>'TAGASI LÜKATUD',
-        'PENDING'=>'OOTEL'
+        'PENDING'=>'OOTEL',
+        'REPORTED' => 'ARUANNE'
     ]
 ];

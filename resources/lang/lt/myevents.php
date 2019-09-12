@@ -23,6 +23,7 @@ return [
     'status'=>[
         'APPROVED'=>'PATVIRTINTI',
         'REJECTED'=>'ATMESTI',
-        'PENDING'=>'DAR NEPATVIRTINTI'
+        'PENDING'=>'DAR NEPATVIRTINTI',
+        'REPORTED' => 'ATASKAITA PATEIKTA'
     ]
 ];
