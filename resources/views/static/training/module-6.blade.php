@@ -22,7 +22,9 @@
             <section class="codeweek-content-wrapper-inside">
 
                 <p>
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/04_EUCodeWeek_Learning+Bit+6_Developing+creative+thinking+through+mobile+app+development_videoscript.docx">@lang('training.download_video_script')</a>
+                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-006-VIDEO-SCRIPT-{{strtoupper(App::getLocale())}}.DOCX">
+                        @lang('training.download_video_script')
+                    </a>
                 </p>
 
                 <h2>@lang('training.ready_to_share')</h2>
@@ -33,13 +35,19 @@
 
                 <ul>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/01_EUCodeWeek_Learning+Bit+6_+Developing+creative+thinking+through+mobile+app+development_+Lesson+plan1_primary.docx">@lang('training.lessons.6.activities.1')</a>
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-006-ACTIVITY-01-{{strtoupper(App::getLocale())}}.DOCX">
+                            @lang('training.lessons.6.activities.1')
+                        </a>
                     </li>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+6_+Developing+creative+thinking+through+mobile+app+development_+Lesson+plan2_Lower+secondary.docx">@lang('training.lessons.6.activities.2')</a>
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-006-ACTIVITY-02-{{strtoupper(App::getLocale())}}.DOCX">
+                            @lang('training.lessons.6.activities.2')
+                        </a>
                     </li>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/03_EUCodeWeek_Learning+Bit+6_+Developing+creative+thinking+through+mobile+app+developmentr_+Lesson+plan3_Upper+secondary.docx">@lang('training.lessons.6.activities.3')</a>
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-006-ACTIVITY-03-{{strtoupper(App::getLocale())}}.DOCX">
+                            @lang('training.lessons.6.activities.3')
+                        </a>
                     </li>
                 </ul>
 

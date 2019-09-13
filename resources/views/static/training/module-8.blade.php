@@ -22,7 +22,9 @@
             <section class="codeweek-content-wrapper-inside">
 
                 <p>
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/02_EUCodeWeek_Learning+Bit+8_+Coding+for+all+subjects-video+script.docx">@lang('training.download_video_script')</a>
+                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-008-VIDEO-SCRIPT-{{strtoupper(App::getLocale())}}.DOCX">
+                        @lang('training.download_video_script')
+                    </a>
                 </p>
 
                 <h2>@lang('training.ready_to_share')</h2>
@@ -33,18 +35,25 @@
 
                 <ul>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/08_EUCodeWeek_Learning+Bit+8_+Coding+for+STEM_Lesson+plan+1_Tinkering+and+coding+with+Makey+Makey+2_Isa.docx">@lang('training.lessons.8.activities.1')</a>
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-008-ACTIVITY-01-{{strtoupper(App::getLocale())}}.DOCX">
+                            @lang('training.lessons.8.activities.1')
+                        </a>
                     </li>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/08_EUCodeWeek_Learning+Bit+8_+Coding+for+Music_Lesson+plan_Music+is+coding+for+lower+secondary.docx">@lang('training.lessons.8.activities.2')</a>
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-008-ACTIVITY-02-{{strtoupper(App::getLocale())}}.DOCX">
+                            @lang('training.lessons.8.activities.2')
+                        </a>
                     </li>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/08_EUCodeWeek_Learning+Bit+8_+Coding+for+Inclusion_Lesson+plan+1_Robotics+and+inclusion+for+primary+in+STEM.docx">@lang('training.lessons.8.activities.3')</a>
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-008-ACTIVITY-03-{{strtoupper(App::getLocale())}}.DOCX">
+                            @lang('training.lessons.8.activities.3')
+                        </a>
                     </li>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/08_EUCodeWeek_Learning+Bit+8_+Coding+for+Foreign+Languages_A+daily+life+algorithm+in+a+CLIL+lesson_Lesson+plan+1_Primary.doc">@lang('training.lessons.8.activities.4')</a>
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-008-ACTIVITY-04-{{strtoupper(App::getLocale())}}.DOCX">
+                            @lang('training.lessons.8.activities.4')
+                        </a>
                     </li>
-
                 </ul>
 
                 <h2>@lang('training.footer.title')</h2>
