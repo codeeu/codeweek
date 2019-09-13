@@ -31,7 +31,7 @@
                 </ul>
             </li>
             <li><a href="/about/">@lang('menu.about')</a></li>
-            <li><a href="http://blog.codeweek.eu/">@lang('menu.blog')</a></li>
+            <li><a href="http://blog.codeweek.eu/" target="_blank">@lang('menu.blog')</a></li>
         </ul>
     </nav>
     <div id="right-menu">

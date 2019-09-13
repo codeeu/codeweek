@@ -45,13 +45,13 @@
                         <div class="codeweek-tools">
 
                             @if($country->facebook)
-                                <a href="{{$country->facebook}}" class="codeweek-blank-button">
+                                <a href="{{$country->facebook}}" class="codeweek-blank-button" target="_blank">
                                     @lang('ambassador.visit_the') <span>@lang('ambassador.local_facebook_page')</span>
                                 </a>
                             @endif
 
                             @if($country->website)
-                                <a href="{{$country->website}}" class="codeweek-blank-button">
+                                <a href="{{$country->website}}" class="codeweek-blank-button" target="_blank">
                                     @lang('ambassador.visit_the') <span>@lang('ambassador.local_website')</span>
                                 </a>
                             @endif
@@ -86,14 +86,14 @@
                                 {{--Ambassdor twitter--}}
                                 @if($ambassador->twitter)
                                     <a href="http://twitter.com/{{ $ambassador->twitter }}"
-                                       class="codeweek-svg-button">
+                                       target="_blank" class="codeweek-svg-button">
                                         <img src="/images/twitter.svg" alt="Twitter">
                                     </a>
                                 @endif
                                 {{--Ambassador website--}}
                                 @if($ambassador->website)
                                     <a href="{{ $ambassador->website }}"
-                                       class="codeweek-svg-button">
+                                       target="_blank" class="codeweek-svg-button">
                                         <img src="/images/globe.svg" alt="Twitter">
                                     </a>
                                 @endif
@@ -103,42 +103,6 @@
                     @lang('ambassador.no_ambassadors') :(<br/>
                 @endforelse
             </div>
-
-
-                    {{--<div id="showcountries">
-
-                        <ul class="clearfix list-style-none">
-                            <li style="clear:left">@lang('ambassador.countries_with_ambassadors')</li>
-
-                            @foreach ($countries_with_ambassadors as $country)
-
-
-                                <li>
-                                    <a href="/ambassadors?country_iso={{$country->country_iso}}">
-                                        <div class="country-link" data-name="{{$country->country_iso}}">
-
-                                            <img src="https://s3-eu-west-1.amazonaws.com/codeweek-s3/flags/{{strtolower($country->country_iso)}}.png"
-                                                 alt="{{$country->country_iso}}">
-
-                                            <div class="country-name {{strtolower($country->name)}}">
-                                                @lang('countries.'.$country->name) ({{$country->total}})
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-
-                            @endforeach
-
-
-                        </ul>
-                        <br/>
-                        <p style="text-align: center"><a
-                                    href="/beambassador">@lang('ambassador.why_dont_you_volunteer')</a></p>
-
-
-                        {{ $ambassadors->appends(['country_iso'=>app('request')->input('country_iso')])->links() }}
-
-                    </div>--}}
 
             </section>
     </section>
