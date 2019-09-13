@@ -86,6 +86,14 @@
   text-align: center;
 }
 
+#school-banner .text a{
+  color: $main-color;
+}
+
+#school-banner .text a:hover{
+  color:$main-color2;
+}
+
 .sub-section {
   display: flex;
   flex-direction: column;
