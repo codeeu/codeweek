@@ -27,4 +27,5 @@ return [
     'reset' => 'Je wachtwoord opnieuw instellen',
     'send_password' => 'Link voor het opnieuw instellen van wachtwoord verzenden',
     'confirm_password' => 'Wachtwoord bevestigen',
+    'name' => 'naam'
 ];

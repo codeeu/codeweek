@@ -27,4 +27,5 @@ return [
     'reset' => 'Ponastavite svoje geslo',
     'send_password' => 'Pošlji povezavo za ponastavitev gesla',
     'confirm_password' => 'Potrdite geslo',
+    'name' => 'ime'
 ];

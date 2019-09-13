@@ -27,4 +27,5 @@ return [
     'reset' => 'Restablecer contraseña',
     'send_password' => 'Enviar un enlace para restablecer la contraseña',
     'confirm_password' => 'Confirmar contraseña',
+    'name' => 'nombre'
 ];

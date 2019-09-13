@@ -27,4 +27,5 @@ return [
     'reset' => 'Reimposta la password',
     'send_password' => 'Invia link di reimpostazione della password',
     'confirm_password' => 'Conferma la password',
+    'name' => 'nome'
 ];
