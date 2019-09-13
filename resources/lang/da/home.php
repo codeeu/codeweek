@@ -11,9 +11,9 @@ return [
     'organize_activity_title' => 'Afhold eller deltag i en aktivitet',
     'organize_activity_text' => 'Alle er velkomne til at afholde eller deltage i  en aktivitet. Du skal bare vælge et emne og en målgruppe og <a href="/add">tilføje din aktivitet</a> til <a href="/events">kortet</a> eller søge efter arrangementer i dit område.',
     'get_started_title' => 'Kom i gang',
-    'get_started_text' => 'Er du i tvivl om, hvordan du kommer i gang? Tag et kig på vores <a href="/add">vejledningsside</a>, og hent vores <a href="/add">pakke for arrangører</a>, så du kan blive klar til at sprede budskabet.',
+    'get_started_text' => 'Er du i tvivl om, hvordan du kommer i gang? Tag et kig på vores <a href="/guide">vejledningsside</a>, og hent vores <a href="/toolkits">pakke for arrangører</a>, så du kan blive klar til at sprede budskabet.',
     'access_resources_title' => 'Få adgang til ressourcer og undervisning',
-    'access_resources_text' => 'Hvis du er i tvivl om, hvordan du afholder en aktivitet, kan du gå ind på vores <a href="/add">side med undervisningsressourcer</a> og <a href="/add">undervisningsbidder og undervisningsmateriale</a>, hvor du kan finde vejledning og skræddersyede læreplaner.',
+    'access_resources_text' => 'Hvis du er i tvivl om, hvordan du afholder en aktivitet, kan du gå ind på vores <a href="/resources/teach">side med undervisningsressourcer</a> og <a href="/training">undervisningsbidder og undervisningsmateriale</a>, hvor du kan finde vejledning og skræddersyede læreplaner.',
 
 
 ];
