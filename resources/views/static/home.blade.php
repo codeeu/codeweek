@@ -36,7 +36,7 @@
                 @lang('home.school_banner_text')
             </div>
             <div class="text">
-                @lang('home.school_banner_text2')
+                <a href="/schools">@lang('home.school_banner_text2')</a>
             </div>
         </section>
         <section class="sub-section" id="organize-activity">
