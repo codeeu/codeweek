@@ -18,7 +18,7 @@
 
                     <div class="codeweek-form-field-wrapper">
                         <div class="codeweek-form-field">
-                            <label for="name">Name</label>
+                            <label for="name">@lang('login.name')</label>
                             <input id="name" type="text" name="name"
                                    value="{{old('name')}}" required>
                         </div>

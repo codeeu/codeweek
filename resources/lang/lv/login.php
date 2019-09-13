@@ -27,5 +27,5 @@ return [
     'reset' => 'Atiestatīt paroli',
     'send_password' => 'Nosūtīt paroles atiestatīšanas saiti',
     'confirm_password' => 'Apstiprināt paroli',
-
+    'name' => 'vārds'
 ];

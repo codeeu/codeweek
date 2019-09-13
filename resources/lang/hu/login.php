@@ -27,4 +27,5 @@ return [
     'reset' => 'Jelszó visszaállítása',
     'send_password' => 'Jelszó-visszaállító link',
     'confirm_password' => 'Jelszó megerősítése',
+    'name' => 'név'
 ];

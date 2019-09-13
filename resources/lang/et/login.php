@@ -27,4 +27,5 @@ return [
     'reset' => 'Lähtesta parool',
     'send_password' => 'Saada parooli lähtestamise link',
     'confirm_password' => 'Kinnita parool',
+    'name' => 'nimi'
 ];

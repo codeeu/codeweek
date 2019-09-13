@@ -27,4 +27,5 @@ return [
     'reset' => 'Resetează parola',
     'send_password' => 'Trimite link de resetare a parolei',
     'confirm_password' => 'Confirmare parolă',
+    'name' => 'Nume'
 ];

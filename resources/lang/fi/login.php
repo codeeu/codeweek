@@ -27,4 +27,5 @@ return [
     'reset' => 'Palauta salasanasi',
     'send_password' => 'Lähetä salasanan palautuslinkki',
     'confirm_password' => 'Vahvista salasana',
+    'name' => 'nimi'
 ];
