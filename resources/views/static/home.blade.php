@@ -10,13 +10,6 @@
             <div class="info">
                 <div class="countdown">
                     <div id="countdown">
-                        <div class="day">39</div>
-                        <div class="separator">:</div>
-                        <div class="hours">13</div>
-                        <div class="separator">:</div>
-                        <div class="minutes">44</div>
-                        <div class="separator">:</div>
-                        <div class="seconds">01</div>
                     </div>
                     <img src="/images/countdown.svg" class="static-image">
                 </div>
