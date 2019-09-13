@@ -8,6 +8,7 @@ return [
     'programming_languages' => 'Programozási nyelvek',
     'categories' => 'Kategóriák',
     'Languages' => 'Nyelvek',
+    'Subjects' => 'Témák',
     'share' => 'Megosztás',
     'communication_toolkit' => 'Kommunikációs eszköztár',
     'teachers_toolkit' => 'Tanári eszköztár',

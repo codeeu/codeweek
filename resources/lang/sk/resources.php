@@ -8,6 +8,7 @@ return [
     'programming_languages' => 'Programovacie jazyky',
     'categories' => 'Kategórie',
     'Languages' => 'Jazyky',
+    'Subjects' => 'Predmety',
     'share' => 'Zdieľať',
     'communication_toolkit' => 'Súbor komunikačných nástrojov',
     'teachers_toolkit' => 'Súbor nástrojov pre učiteľov',

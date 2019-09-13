@@ -51,7 +51,7 @@
                                  :multiple="true"
                                  :close-on-select="false"
                                  :clear-on-select="false" :preserve-search="true"
-                                 placeholder="Subjects"
+                                 :placeholder="$t('resources.Subjects')"
                                  label="resources.resources.subjects" :custom-label="customLabel"
                                  track-by="name" :preselect-first="false" @input="onSubmit()">
                         <pre class="language-json"><code>{{ selectedSubjects  }}</code></pre>
