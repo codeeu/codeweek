@@ -11,9 +11,9 @@ return [
     'organize_activity_title' => 'Usporiadajte aktivitu alebo sa do niektorej zapojte',
     'organize_activity_text' => 'Ktokoľvek môže usporiadať aktivitu alebo sa zapojiť  do aktivity. Stačí si vybrať tému a cieľovú skupinu a <a href="/add">pridať aktivitu</a> na <a href="/events">mapu</a> alebo si vyhľadať podujatia v okolí.',
     'get_started_title' => 'Ako na to?',
-    'get_started_text' => 'Nie je vám jasné, ako na to? S prípravou a šírením informácií vám pomôže <a href="/add">stránka s návodom</a> a naše <a href="/add">súbory nástrojov pre organizátorov</a> na stiahnutie.',
+    'get_started_text' => 'Nie je vám jasné, ako na to? S prípravou a šírením informácií vám pomôže <a href="/guide">stránka s návodom</a> a naše <a href="/toolkits">súbory nástrojov pre organizátorov</a> na stiahnutie.',
     'access_resources_title' => 'Prístup k materiálom a školeniu',
-    'access_resources_text' => 'Ak neviete presne, ako aktivitu usporiadať, pozrite si našu <a href="/add">stránku so vzdelávacími zdrojmi</a> a pomocné materiály a vypracované plány na <a href="/add">hodiny programovania</a>.',
+    'access_resources_text' => 'Ak neviete presne, ako aktivitu usporiadať, pozrite si našu <a href="/resources/teach">stránku so vzdelávacími zdrojmi</a> a pomocné materiály a vypracované plány na <a href="/training">hodiny programovania</a>.',
 
 
 ];
