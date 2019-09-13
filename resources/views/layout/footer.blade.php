@@ -5,7 +5,7 @@
                 @lang('base.still_have_question') @lang('base.drop_us_a_line')
             </div>
             <div class="get-in-touch">
-                <div class="button">@lang('base.get_in_touch')</div>
+                <a href="/ambassadors"><div class="button">@lang('base.get_in_touch')</div></a>
                 <img src="/images/get_in_touch.svg" class="static-image">
             </div>
         </div>

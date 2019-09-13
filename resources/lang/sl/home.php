@@ -11,9 +11,9 @@ return [
     'organize_activity_title' => 'Organizirajte dejavnost ali se ji pridružite',
     'organize_activity_text' => 'Vsi so dobrodošli, da organizirajo  dejavnost ali se ji pridružijo. Samo izberite temo in ciljno občinstvo ter <a href="/add">dodajte svojo dejavnost</a> na <a href="/events">zemljevid</a> ali pa poiščite dogodke v vašem območju.',
     'get_started_title' => 'Kako začeti',
-    'get_started_text' => 'Niste prepričani, kako začeti? Oglejte si <a href="/add">stran z nasveti kako</a> in prenesite naša <a href="/add">orodja za organizatorje,</a> s katerimi se lahko pripravite in razširite glas.',
+    'get_started_text' => 'Niste prepričani, kako začeti? Oglejte si <a href="/guide">stran z nasveti kako</a> in prenesite naša <a href="/toolkits">orodja za organizatorje,</a> s katerimi se lahko pripravite in razširite glas.',
     'access_resources_title' => 'Dostop do virov in usposabljanja',
-    'access_resources_text' => 'Če niste prepričani, kako organizirati dejavnost, obiščite našo <a href="/add">stran z viri za poučevanje</a> in si oglejte gradivo z <a href="/add">učnimi nasveti za usposabljanje</a>, kjer najdete smernice in prilagojene učne načrte.',
+    'access_resources_text' => 'Če niste prepričani, kako organizirati dejavnost, obiščite našo <a href="/resources/teach">stran z viri za poučevanje</a> in si oglejte gradivo z <a href="/training">učnimi nasveti za usposabljanje</a>, kjer najdete smernice in prilagojene učne načrte.',
 
 
 ];

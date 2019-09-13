@@ -11,9 +11,9 @@ return [
     'organize_activity_title' => 'Organizează sau participă la o activitate',
     'organize_activity_text' => 'Oricine este binevenit să organizeze sau să participe  la o activitate. Alege un subiect și un public țintă și <a href="/add">adaugă activitatea ta</a> pe <a href="/events">hartă</a> sau caută evenimente în zona ta.',
     'get_started_title' => 'Începe',
-    'get_started_text' => 'Nu ești sigur cum să începi? Consultă <a href="/add">pagina informativă</a> și descarcă <a href="/add">setul nostru de instrumente pentru organizatori</a> pentru a te pregăti și răspândește mesajul.',
+    'get_started_text' => 'Nu ești sigur cum să începi? Consultă <a href="/guide">pagina informativă</a> și descarcă <a href="/toolkits">setul nostru de instrumente pentru organizatori</a> pentru a te pregăti și răspândește mesajul.',
     'access_resources_title' => 'Accesează resurse și instruire',
-    'access_resources_text' => 'Dacă nu ești sigur cum să organizezi o activitate, vizitează <a href="/add">pagina noastră de resurse didactice</a> și materialele din <a href="/add">module de învățare</a> pentru îndrumare și planuri de lecții personalizate.',
+    'access_resources_text' => 'Dacă nu ești sigur cum să organizezi o activitate, vizitează <a href="/resources/teach">pagina noastră de resurse didactice</a> și materialele din <a href="/training">module de învățare</a> pentru îndrumare și planuri de lecții personalizate.',
 
 
 ];
