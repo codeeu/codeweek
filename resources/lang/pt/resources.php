@@ -8,6 +8,7 @@ return [
     'programming_languages' => 'Linguagens de programação',
     'categories' => 'Categorias',
     'Languages' => 'Idiomas',
+    'Subjects' => 'Assuntos',
     'share' => 'Partilhar',
     'communication_toolkit' => 'Conjunto de ferramentas de comunicação',
     'teachers_toolkit' => 'Conjunto de ferramentas para os professores',

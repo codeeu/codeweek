@@ -8,6 +8,7 @@ return [
     'programming_languages' => 'Gjuhët e programimit',
     'categories' => 'Kategoritë',
     'Languages' => 'Gjuhët',
+    'Subjects' => 'Subjektet',
     'share' => 'Ndaj',
     'communication_toolkit' => 'Seti i mjeteve të komunikimit',
     'teachers_toolkit' => 'Seti i mjeteve të mësuesve',

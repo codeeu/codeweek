@@ -8,6 +8,7 @@ return [
     'programming_languages' => 'Ohjelmointikielet',
     'categories' => 'Luokat',
     'Languages' => 'Kielet',
+    'Subjects' => 'Aiheet',
     'share' => 'Jaa',
     'communication_toolkit' => 'Viestintätyökalut',
     'teachers_toolkit' => 'Opettajien työkalut',

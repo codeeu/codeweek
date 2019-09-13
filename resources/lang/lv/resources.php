@@ -8,6 +8,7 @@ return [
     'programming_languages' => 'Programmēšanas valodas',
     'categories' => 'Kategorijas',
     'Languages' => 'Valodas',
+    'Subjects' => 'Priekšmeti',
     'share' => 'Dalīties',
     'communication_toolkit' => 'Komunikācijas rīkkopa',
     'teachers_toolkit' => 'Rīkkopa skolotājiem',

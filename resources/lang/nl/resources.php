@@ -8,6 +8,7 @@ return [
     'programming_languages' => 'Programmeertalen',
     'categories' => 'Categorieën',
     'Languages' => 'Talen',
+    'Subjects' => 'Vakken',
     'share' => 'Delen',
     'communication_toolkit' => 'Communicatie-toolkit',
     'teachers_toolkit' => 'Toolkit voor leerkrachten',

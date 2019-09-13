@@ -8,6 +8,7 @@ return [
     'programming_languages' => 'Lingwi tal-Ipprogrammar',
     'categories' => 'Kategoriji',
     'Languages' => 'Lingwi',
+    'Subjects' => 'Suġġetti',
     'share' => 'Ixxerja',
     'communication_toolkit' => 'Sett ta’ Għodod għall-Komunikazzjonijiet',
     'teachers_toolkit' => 'Sett ta’ Għodod għall-Għalliema',

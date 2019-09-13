@@ -142,6 +142,7 @@ return [
     'programming_languages' => 'Programming Languages',
     'categories' => 'Categories',
     'Languages' => 'Languages',
+    'Subjects' => 'Subjects',
     'share' => 'Share',
     'communication_toolkit' => 'Communications Toolkit',
     'teachers_toolkit' => 'Teachers Toolkit',
