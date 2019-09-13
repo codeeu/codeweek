@@ -11,8 +11,8 @@ return [
     'organize_activity_title' => 'Järjestä tapahtuma tai osallistu tapahtumaan',
     'organize_activity_text' => 'Kuka tahansa voi järjestää  tapahtuman tai osallistua muiden tapahtumiin. Valitse vain aihe ja kohderyhmä, <a href="/add">lisää tapahtumasi</a> <a href="/events">karttaan</a> tai selaa alueellasi järjestettäviä tapahtumia.',
     'get_started_title' => 'Aloita',
-    'get_started_text' => 'Etkö tiedä, mistä aloittaa? Tutustu <a href="/add">ohjesivuumme</a> ja lataa <a href="/add">järjestäjän työkalupakit</a>, jotta pystyt valmistautumaan ja levittämään sanaa.',
+    'get_started_text' => 'Etkö tiedä, mistä aloittaa? Tutustu <a href="/guide">ohjesivuumme</a> ja lataa <a href="/toolkits">järjestäjän työkalupakit</a>, jotta pystyt valmistautumaan ja levittämään sanaa.',
     'access_resources_title' => 'Selaa aineistoja ja koulutuksia',
-    'access_resources_text' => 'Ellet ole varma, miten tapahtuma järjestetään, tutustu <a href="/add">opetusaineistosivuun</a> ja <a href="/add">oppimismoduulien koulutusaineistoihin</a>, joista saat opastusta ja räätälöityjä opetussuunnitelmia.',
+    'access_resources_text' => 'Ellet ole varma, miten tapahtuma järjestetään, tutustu <a href="/resources/teach">opetusaineistosivuun</a> ja <a href="/training">oppimismoduulien koulutusaineistoihin</a>, joista saat opastusta ja räätälöityjä opetussuunnitelmia.',
 
 ];

@@ -11,9 +11,9 @@ return [
     'organize_activity_title' => 'Organiser ou rejoindre une activité',
     'organize_activity_text' => 'Tout le monde est invité à organiser ou à rejoindre  une activité. Choisissez simplement un thème et un public cible et <a href="/add">ajoutez votre activité</a> à <a href="/events">la carte</a>, ou recherchez des événements autour de vous.',
     'get_started_title' => 'Se lancer',
-    'get_started_text' => 'Vous ne savez pas comment vous lancer? Jetez un œil à la <a href="/add">page Guide pratique</a>, et téléchargez notre <a href="/add">boîtes à outils pour organisateurs</a> pour vous préparer et faire passer le mot.',
+    'get_started_text' => 'Vous ne savez pas comment vous lancer? Jetez un œil à la <a href="/guide">page Guide pratique</a>, et téléchargez notre <a href="/toolkits">boîtes à outils pour organisateurs</a> pour vous préparer et faire passer le mot.',
     'access_resources_title' => 'Accéder à des ressources et des formations',
-    'access_resources_text' => 'Si vous ne savez pas comment organiser une activité, consultez notre <a href="/add">page de ressources pédagogiques</a> et nos supports <a href="/add">d’apprentissage</a> pour obtenir des conseils et des plans de cours personnalisés.',
+    'access_resources_text' => 'Si vous ne savez pas comment organiser une activité, consultez notre <a href="/resources/teach">page de ressources pédagogiques</a> et nos supports <a href="/training">d’apprentissage</a> pour obtenir des conseils et des plans de cours personnalisés.',
 
 
 ];

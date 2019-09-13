@@ -11,9 +11,9 @@ return [
     'organize_activity_title' => 'Organizujte događaj ili se pridružite nekom',
     'organize_activity_text' => 'Svako je dobrodošao da organizuje događaj  ili da mu se priključi. Samo izaberite temu i ciljnu grupu i <a href="/add">dodajte događaj</a> na <a href="/events">mapu događaja</a> ili pretražite događaje u vašoj okolini.',
     'get_started_title' => 'Započnite',
-    'get_started_text' => 'Niste sigurni odakle da počnete? Pogledajte <a href="/add">stranicu sa uputstvima</a>i preuzmite naše <a href="/add">priručnike za organizatore</a> kako biste se pripremili i prenesite vesti.',
+    'get_started_text' => 'Niste sigurni odakle da počnete? Pogledajte <a href="/guide">stranicu sa uputstvima</a>i preuzmite naše <a href="/toolkits">priručnike za organizatore</a> kako biste se pripremili i prenesite vesti.',
     'access_resources_title' => 'Pristupite resursima i obukama',
-    'access_resources_text' => 'Ako niste sigurni kako da organizujete događaj, posetite našu <a href="/add">stranicu sa resursima za nastavnike</a> i <a href="/add">module za učenje</a> kao smernice i prilagođene planove lekcija.',
+    'access_resources_text' => 'Ako niste sigurni kako da organizujete događaj, posetite našu <a href="/resources/teach">stranicu sa resursima za nastavnike</a> i <a href="/training">module za učenje</a> kao smernice i prilagođene planove lekcija.',
 
 
 ];
