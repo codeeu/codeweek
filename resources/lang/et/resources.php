@@ -8,6 +8,7 @@ return [
     'programming_languages' => 'Programmeerimiskeeled',
     'categories' => 'Kategooriad',
     'Languages' => 'Keeled',
+    'Subjects' => 'Õppeained',
     'share' => 'Jaga',
     'communication_toolkit' => 'Teavituskomplekt',
     'teachers_toolkit' => 'Abivahendite komplekt õpetajatele',

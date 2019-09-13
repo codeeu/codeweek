@@ -8,6 +8,7 @@ return [
     'programming_languages' => 'Programlama Dilleri',
     'categories' => 'Kategoriler',
     'Languages' => 'Diller',
+    'Subjects' => 'Denekler',
     'share' => 'Paylaş',
     'communication_toolkit' => 'İletişim Araç Kiti',
     'teachers_toolkit' => 'Öğretmen Araç Kiti',

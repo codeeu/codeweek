@@ -8,6 +8,7 @@ return [
     'programming_languages' => 'Programmeringsspråk',
     'categories' => 'Kategorier',
     'Languages' => 'Språk',
+    'Subjects' => 'ämnen',
     'share' => 'Dela',
     'communication_toolkit' => 'Verktygslåda för kommunikation',
     'teachers_toolkit' => 'Verktygslåda för lärare',

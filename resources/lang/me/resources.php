@@ -8,6 +8,7 @@ return [
     'programming_languages' => 'Programski jezici',
     'categories' => 'Kategorije',
     'Languages' => 'Jezici',
+    'Subjects' => 'predmeti',
     'share' => 'Podijeli',
     'communication_toolkit' => 'Alatke za komunikaciju',
     'teachers_toolkit' => 'Nastavničke alatke',

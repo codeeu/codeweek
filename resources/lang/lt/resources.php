@@ -8,6 +8,7 @@ return [
     'programming_languages' => 'Programavimo kalbos',
     'categories' => 'Kategorijos',
     'Languages' => 'Kalbos',
+    'Subjects' => 'Dalykai',
     'share' => 'Dalytis',
     'communication_toolkit' => 'Ryšių priemonių rinkinys',
     'teachers_toolkit' => 'Priemonių rinkinys mokytojams',
