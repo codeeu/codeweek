@@ -27,7 +27,8 @@ return [
     'signup' => 'Sign Up',
     'reset' => 'Reset Your Password',
     'send_password' => 'Send Password Reset Link',
-    'confirm_password' => 'Confirm Password'
+    'confirm_password' => 'Confirm Password',
+    'name' => 'name'
 
 
 ];

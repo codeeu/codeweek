@@ -26,5 +26,6 @@ return [
     'signup' => 'Prijavite se',
     'reset' => 'Resetirajte svoju lozinku',
     'send_password' => 'Poslati link za resetiranje lozinke',
-    'confirm_password' => 'Potvrdite lozinku'
+    'confirm_password' => 'Potvrdite lozinku',
+    'name' => 'ime'
 ];
