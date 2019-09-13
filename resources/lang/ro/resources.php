@@ -8,6 +8,7 @@ return [
     'programming_languages' => 'Limbaje de programare',
     'categories' => 'Categorii',
     'Languages' => 'Limbaje',
+    'Subjects' => 'Subiecte',
     'share' => 'Partajare',
     'communication_toolkit' => 'Set de instrumente de comunicare',
     'teachers_toolkit' => 'Set de instrumente pentru profesori',

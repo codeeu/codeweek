@@ -8,6 +8,7 @@ return [
     'programming_languages' => 'Езици за програмиране',
     'categories' => 'Категории',
     'Languages' => 'Езици',
+    'Subjects' => 'учебни предмети',
     'share' => 'Споделете',
     'communication_toolkit' => 'Комуникационен набор от инструменти',
     'teachers_toolkit' => 'Набор от инструменти за учители',

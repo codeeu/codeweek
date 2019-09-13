@@ -8,6 +8,7 @@ return [
     'programming_languages' => 'Programmeringssprog',
     'categories' => 'Kategorier',
     'Languages' => 'Sprog',
+    'Subjects' => 'Emner',
     'share' => 'Del',
     'communication_toolkit' => 'Kommunikationspakke',
     'teachers_toolkit' => 'Pakke til lærere',

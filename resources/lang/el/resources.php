@@ -9,6 +9,7 @@ return [
     'programming_languages' => 'Γλώσσες προγραμματισμού',
     'categories' => 'Κατηγορίες',
     'Languages' => 'Γλώσσες',
+    'Subjects' => 'μαθήματα',
     'share' => 'Κοινοποίηση',
     'communication_toolkit' => 'Εργαλειοθήκη επικοινωνίας',
     'teachers_toolkit' => 'Εργαλειοθήκη δασκάλων',
