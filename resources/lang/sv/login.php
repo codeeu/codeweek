@@ -26,6 +26,7 @@ return [
     'signup' => 'Registrera dig',
     'reset' => 'Återställ ditt lösenord',
     'send_password' => 'Skicka en länk för att återställa lösenord',
-    'confirm_password' => 'Bekräfta lösenord'
+    'confirm_password' => 'Bekräfta lösenord',
+    'name' => 'namn'
 
 ];

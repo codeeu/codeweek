@@ -26,6 +26,7 @@ return [
     'signup' => 'Registruotis',
     'reset' => 'Iš naujo nustatyti slaptažodį',
     'send_password' => 'Siųsti slaptažodžio nustatymo iš naujo nuorodą',
-    'confirm_password' => 'Patvirtinti slaptažodį'
+    'confirm_password' => 'Patvirtinti slaptažodį',
+    'name' => 'vardas'
 
 ];

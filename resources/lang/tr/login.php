@@ -27,5 +27,6 @@ return [
     'reset' => 'Parola Sıfırla',
     'send_password' => 'Parola Sıfırlama Bağlantısı Gönder',
     'confirm_password' => 'Parola Onayla',
+    'name' => 'isim'
 
 ];

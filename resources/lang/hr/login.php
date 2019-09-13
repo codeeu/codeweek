@@ -27,4 +27,5 @@ return [
     'reset' => 'Ponovno postavite lozinku',
     'send_password' => 'Pošalji poveznicu za ponovno postavljanje lozinke',
     'confirm_password' => 'Potvrdi lozinku',
+    'name' => 'Ime'
 ];
