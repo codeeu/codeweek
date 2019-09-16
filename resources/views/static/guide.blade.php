@@ -6,7 +6,7 @@
 
         <section class="codeweek-banner learn-teach">
             <div class="text">
-                <h2>#Codeweek</h2>
+                <h2>#CodeWeek</h2>
                 <h1>@lang('guide.title')</h1>
             </div>
             <div class="image">
