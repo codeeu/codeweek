@@ -128,7 +128,7 @@
                         @foreach ($locales as $key => $value)
                             <li>
                                 <a class="dropdown-item"
-                                   href="/setlocale/?locale={{$value}}">@lang('base.languages.' . $value)</a>
+                                   href="/setlocale/?locale={{$value}}">@lang('base.languages_menu.' . $value)</a>
                             </li>
                         @endforeach
                     </ul>

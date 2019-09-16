@@ -39,7 +39,7 @@ return [
         'al' => 'albanski',
         'ba' => 'bosanski',
         'mk' => 'makedonski',
-        'cnr'=> 'crnogorski',
+        'me'=> 'crnogorski',
         'sr' => 'srpski',
         'tr' => 'turski'
     ],
