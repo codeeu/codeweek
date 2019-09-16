@@ -60,6 +60,18 @@
                         </div>
                     </div>
 
+                    <div class="codeweek-form-field-privacy">
+                        <label>
+                            <input id="checkPrivacy" name="privacy" type="checkbox">
+                            @lang('event.privacy')
+                            <a href="/privacy" target="_blank">
+                                <img src="/images/external-link.svg" width="16" class="static-image">
+                            </a>
+                        </label>
+                        @component('components.validation-errors', ['field'=>'privacy'])
+                        @endcomponent
+                    </div>
+
                     <div class="codeweek-form-button-container">
                         <div class="codeweek-button">
                             <input type="submit" value="@lang('login.register')">
