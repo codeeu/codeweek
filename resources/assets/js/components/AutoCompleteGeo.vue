@@ -33,7 +33,8 @@
           template: ItemTemplate,
           inputAttrs: {
             placeholder: this.placeholder,
-            name: this.name
+            name: this.name,
+            autocomplete: "off"
           }
         }
       },
