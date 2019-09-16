@@ -53,11 +53,23 @@
                     <div class="codeweek-form-field-wrapper">
                         <div class="codeweek-form-field">
                             <label for="email">@lang('login.confirm_password')</label>
-                            <input id="password-confirm" type="password" name="password-confirm" required>
+                            <input id="password-confirm" type="password" name="password_confirmation" required>
                         </div>
                         <div class="errors">
                             @component('components.validation-errors', ['field'=>'password-confirm'])@endcomponent
                         </div>
+                    </div>
+
+                    <div class="codeweek-form-field-privacy">
+                        <label>
+                            <input id="checkPrivacy" name="privacy" type="checkbox">
+                            @lang('event.privacy')
+                            <a href="/privacy" target="_blank">
+                                <img src="/images/external-link.svg" width="16" class="static-image">
+                            </a>
+                        </label>
+                        @component('components.validation-errors', ['field'=>'privacy'])
+                        @endcomponent
                     </div>
 
                     <div class="codeweek-form-button-container">
