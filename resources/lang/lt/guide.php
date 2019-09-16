@@ -40,7 +40,8 @@ return [
         'title' => 'Reklaminė medžiaga',
         'text' => '<p>Pasižiūrėkite mūsų <a href="http://blog.codeweek.eu/">tinklaraštį</a>, kuriame rasite naujausios informacijos, ir pritaikykite naujausius pranešimus spaudai savo reikmėms arba parenkite savo:</p>',
         'items' => [
-            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Pasirengimas švęsti 2019 m. ES programavimo savaitę</a> (pateikta 29 kalbomis);'
+            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
+            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Pasirengimas švęsti 2019 m. ES programavimo savaitę</a> (pateikta 29 kalbomis);'
         ]
     ],
     'toolkits' => [

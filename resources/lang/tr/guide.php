@@ -40,7 +40,8 @@ return [
         'title' => 'Tanıtım materyali',
         'text' => '<p>En güncel bilgiler için <a href="http://blog.codeweek.eu/">blogumuzu</a> inceleyebilir ve mevcut basın bültenini ihtiyaçlarınıza göre adapte edebilir veya aşağıdaki bağlantıdan kendi basın bülteninizi oluşturabilirsiniz:</p>',
         'items' => [
-            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">EU Code Week 2019’u kutlamaya hazırlanıyoruz</a> (29 dilde mevcuttur).'
+            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
+            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">EU Code Week 2019’u kutlamaya hazırlanıyoruz</a> (29 dilde mevcuttur).'
         ]
     ],
     'toolkits' => [
