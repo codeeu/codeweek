@@ -230,6 +230,7 @@
                 if (!isPagination) {
                     this.pagination.current_page = 1;
                 }
+                this.resources = [];
                 axios.post('/resources/search?page=' + this.pagination.current_page, this.$data)
                     .then(response => {
                         //console.log(response.data.data);
