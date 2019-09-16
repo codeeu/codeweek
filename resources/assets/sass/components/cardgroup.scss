@@ -19,6 +19,20 @@
   height: 194px;
 }
 
+.codeweek-card .card-avatar{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.codeweek-card .card-image-avatar{
+  width:200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .codeweek-card .card-content{
   padding:16px;
 }

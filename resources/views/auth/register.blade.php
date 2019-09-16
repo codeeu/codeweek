@@ -53,7 +53,7 @@
                     <div class="codeweek-form-field-wrapper">
                         <div class="codeweek-form-field">
                             <label for="email">@lang('login.confirm_password')</label>
-                            <input id="password-confirm" type="password" name="password-confirm" required>
+                            <input id="password-confirm" type="password" name="password_confirmation" required>
                         </div>
                         <div class="errors">
                             @component('components.validation-errors', ['field'=>'password-confirm'])@endcomponent
