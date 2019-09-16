@@ -65,7 +65,9 @@
             <div class="codeweek-grid-layout">
                 @forelse ($ambassadors as $ambassador)
                     <div class="codeweek-card">
-                        <img src="{{$ambassador->avatar}}" class="card-image">
+                        <div class="card-avatar">
+                            <img src="{{$ambassador->avatar}}" class="card-image-avatar">
+                        </div>
                         <div class="card-content">
                             <h5 class="card-title">{{ $ambassador->fullName() }}</h5>
                             <p class="card-description">{{ $ambassador->bio }}</p>
