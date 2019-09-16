@@ -14,6 +14,9 @@ class UserController extends Controller
 
         $user = auth()->user();
 
+        if (request('privacy')){
+            request()['privacy'] =  1;
+        }
 
         $user->update(request()->validate([
             'firstname' => 'required',
