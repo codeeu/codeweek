@@ -18,12 +18,12 @@ class CheckBrowser
     public function handle($request, Closure $next)
     {
 
-        $identify = new Identify();
-        if (strcmp("Internet Explorer",$identify->browser()->getName()) == 0){
-            Log::info($identify->browser()->getName());
-            Log::info($identify->browser()->getVersion());
-            abort(403, 'We are sorry but we do not support Internet Explorer. Please use Microsoft Edge, Chrome or Firefox to access Codeweek.eu');
-        }
+//        $identify = new Identify();
+//        if (strcmp("Internet Explorer",$identify->browser()->getName()) == 0){
+//            Log::info($identify->browser()->getName());
+//            Log::info($identify->browser()->getVersion());
+//            abort(403, 'We are sorry but we do not support Internet Explorer. Please use Microsoft Edge, Chrome or Firefox to access Codeweek.eu');
+//        }
 
         return $next($request);
     }
