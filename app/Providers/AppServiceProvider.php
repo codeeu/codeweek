@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
@@ -17,6 +18,8 @@ class AppServiceProvider extends ServiceProvider
     {
 
         View::share('locales', config('app.locales'));
+
+        Carbon::setLocale('app.locale');
 
         \View::composer(['event.add','event.search','profile','event.edit'], function ($view) {
             $view->with('audiences', \App\Audience::all());
