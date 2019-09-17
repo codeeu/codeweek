@@ -1,7 +1,5 @@
 let mix = require('laravel-mix');
 
-require('laravel-mix-tailwind');
-
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -14,7 +12,12 @@ require('laravel-mix-tailwind');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css')
-   .tailwind();
+   .sass('resources/assets/sass/app.scss', 'public/css');
+
+
+if (mix.inProduction()) {
+    mix.version();
+}
+
 
 
