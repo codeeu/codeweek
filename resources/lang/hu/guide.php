@@ -40,7 +40,8 @@ return [
         'title' => 'Promóciós anyagok',
         'text' => '<p>Olvassa el <a href="http://blog.codeweek.eu/">blogunkat</a> a legfrissebb információkért, és módosítsa a legfrissebb sajtóközleményt saját igényei szerint, vagy hozza létre sajátját:</p>',
         'items' => [
-            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Ráhangolódás a 2019. évi európai programozási hét megünneplésére</a> (29 nyelven áll rendelkezésre)'
+            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
+            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Ráhangolódás a 2019. évi európai programozási hét megünneplésére</a> (29 nyelven áll rendelkezésre)'
         ]
     ],
     'toolkits' => [

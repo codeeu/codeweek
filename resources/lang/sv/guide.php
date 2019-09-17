@@ -40,7 +40,8 @@ return [
         'title' => 'Kampanjmaterial',
         'text' => '<p>Läs den senaste informationen i vår <a href="http://blog.codeweek.eu/">blogg</a> och anpassa det senaste pressmeddelandet efter dina behov eller skapa ett eget:</p>',
         'items' => [
-            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Nu sätter vi fart för att fira EU Code Week 2019</a> (finns på 29 språk)'
+            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
+            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Nu sätter vi fart för att fira EU Code Week 2019</a> (finns på 29 språk)'
         ]
     ],
     'toolkits' => [

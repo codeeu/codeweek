@@ -40,7 +40,8 @@ return [
         'title' => 'Υλικό προώθησης',
         'text' => '<p>Συμβουλέψου το <a href="http://blog.codeweek.eu/">ιστολόγιό</a> μας για πρόσφατες πληροφορίες και προσάρμοσε τα πιο πρόσφατα δελτία τύπου στις ανάγκες σου ή δημιούργησε τα δικά σου:</p>',
         'items' => [
-            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Ετοιμαστείτε να γιορτάσουμε την Ευρωπαϊκή Εβδομάδα Προγραμματισμού του 2019</a> (διατίθεται σε 29 γλώσσες)'
+            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
+            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Ετοιμαστείτε να γιορτάσουμε την Ευρωπαϊκή Εβδομάδα Προγραμματισμού του 2019</a> (διατίθεται σε 29 γλώσσες)'
         ]
     ],
     'toolkits' => [

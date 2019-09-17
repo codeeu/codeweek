@@ -57,6 +57,7 @@
                 @lang('guide.material.text')
                 <ul>
                     <li>@lang('guide.material.items.1')</li>
+                    <li>@lang('guide.material.items.2')</li>
                 </ul>
 
                 <h2>@lang('guide.toolkits.title')</h2>

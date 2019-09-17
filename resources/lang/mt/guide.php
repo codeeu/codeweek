@@ -40,7 +40,8 @@ return [
         'title' => 'Materjal promozzjonali',
         'text' => '<p>Iċċekkja l-<a href="http://blog.codeweek.eu/">blogg</a> tagħna għall-aħħar informazzjoni u tiddejjaq xejn tadatta l-aktar stqarrijiet għall-istampa riċenti għall-ħtiġijiet tiegħek, jew oħloq tiegħek stess:</p>',
         'items' => [
-            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">It-tħejjija għaċ-ċelebrazzjoni tal-Ġimgħa tal-UE tal-Ikkowdjar għall-2019</a> (disponibbli f’29 lingwa)'
+            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
+            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">It-tħejjija għaċ-ċelebrazzjoni tal-Ġimgħa tal-UE tal-Ikkowdjar għall-2019</a> (disponibbli f’29 lingwa)'
         ]
     ],
     'toolkits' => [
