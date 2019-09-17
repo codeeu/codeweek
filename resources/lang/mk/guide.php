@@ -40,7 +40,8 @@ return [
         'title' => 'Промотивен материјал',
         'text' => '<p>Проверувајте го нашиот <a href="http://blog.codeweek.eu/">блог</a> за најнови информации и слободно адаптирајте ги најскорешните прес-конференции на вашите потреби или создадете сопствени:</p>',
         'items' => [
-            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Забрзани подготовки за славење на Европската недела на кодирање 2019</a> (достапно на 29 јазици)'
+            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
+            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Забрзани подготовки за славење на Европската недела на кодирање 2019</a> (достапно на 29 јазици)'
         ]
     ],
     'toolkits' => [

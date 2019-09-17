@@ -40,7 +40,8 @@ return [
         'title' => 'Reklamemateriale',
         'text' => '<p>Vores <a href="http://blog.codeweek.eu/">blog</a> indeholder seneste nyt, og du må gerne bruge den nyeste pressemeddelelse som skabelon – eller du kan skrive din egen:</p>',
         'items' => [
-            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Forberedelser til afholdelse af EU’s kodeuge 2019</a> (på 29 sprog)'
+            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
+            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Forberedelser til afholdelse af EU’s kodeuge 2019</a> (på 29 sprog)'
         ]
     ],
     'toolkits' => [
