@@ -27,7 +27,7 @@ footer .content .question .get-in-touch{
 footer .content .question .get-in-touch .button{
   position: absolute;
   top: 105px;
-  left: -65px;
+  left: 100px;
   color: #40B5D1;
   font-weight: bold;
   font-size: 20px;
@@ -83,6 +83,9 @@ footer .logo_footer{
   footer .content .question .get-in-touch{
     margin-bottom: 20px;
     margin-top: -12px;
+  }
+  footer .content .question .get-in-touch .button{
+    left: -65px;
   }
   footer .content .about{
     flex-direction: row-reverse;
