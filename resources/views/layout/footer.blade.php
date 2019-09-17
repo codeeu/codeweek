@@ -6,8 +6,11 @@
             </div>
             <div class="get-in-touch">
                 <a href="/ambassadors"><div class="button">@lang('base.get_in_touch')</div></a>
-                <img src="/images/get_in_touch.svg" class="static-image">
+                <div>
+                    <img src="/images/get_in_touch.svg" class="static-image">
+                </div>
             </div>
+
         </div>
         <div class="about">
             <img src="/images/EU_logo.png">
