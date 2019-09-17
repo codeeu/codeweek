@@ -86,6 +86,42 @@ return [
                 '2' => 'Aktivität 2 – Wie man eine mechanische oder robotische Hand für die Unterstufe einer weiterführenden Schule herstellt',
                 '3' => 'Aktivität 3 – Wie man eine mechanische oder robotische Hand für die Oberstufe einer weiterführenden Schule herstellt'
             ]
+        ],
+        '6' => [
+            'title'=>'App Inventor und App-Entwicklung',
+            'author'=>'von Rosanna Kurrervon Rosanna Kurrer',
+            'text'=>'<p>Schauen Sie sich dieses Video an, in dem Rosanna Kurrer (die Gründerin von CyberWayFinder) erklärt, was App Inventor ist, welche Vorteile die App-Entwicklung im Klassenzimmer bietet und in dem sie einige praktische Beispiele gibt, wie Lehrpersonen den App Inventor in den Unterricht integrieren können, um passive Schülerinnen und Schüler in begeisterte Spielemacher zu verwandeln.</p>
+    <p>Jeder von uns verwendet Apps, da wir so unsere Aktivitäten bequem und schnell koordinieren können. Sie werden auch immer häufiger im Bildungssektor eingesetzt, da sie einen individuell zugeschnittenen Unterricht ermöglichen und es den Nutzern erlauben, Informationen zu erfassen. Warum sollte man seine Schülerinnen und Schüler also nicht in die Lage versetzen, selbst eine App für Bildungszwecke für andere zu entwickeln?</p>',
+            'activities'=>[
+                '1'=>'Aktivität 1 - Titel, für die Grundschule',
+                '2'=>'Aktivität 2 - Titel, für die Sekundarstufe I',
+                '3'=>'Aktivität 3 - Titel, für die Sekundarstufe II'
+            ]
+        ],
+        '7' => [
+            'title'=>'Basteln und Bauen',
+            'author'=>'von Diogo da Silva',
+            'text'=>'<p>Berufe und Arbeitsplätze befinden sich im Wandel und auch der Bildungsbereich ändert sich entsprechend. Bei der Vorbereitung der Schülerinnen und Schüler auf ihre berufliche Laufbahn im 21. Jahrhundert werden neue Fähigkeiten wie Tüfteln und Bauen aber auch das Hacking immer wichtiger, da sie die Kluft zwischen der Schule und der Welt draußen verringern. Durch die Verwandlung eines Klassenzimmers in einen Raum der Zusammenarbeit, in dem man sich auf die Problemlösung konzentriert, werden die Schüler und Schülerinnen in die Lage versetzt, sich selbst einzubringen und sich weiterzuentwickeln. Solche Aktivitäten regen die Diskussion an und sorgen dafür, dass das Klassenzimmer zu einem Kommunikationshub wird, in dem jeder Beitrag zählt.</p> 
+    <p>Sehen Sie sich das Video unten an, in dem der portugiesische STEAM-Lehrer Diogo da Silva, ein Mitglied der Escola Global, Sie Schritt für Schritt durch die Entwicklung einer Unterrichtseinheit führt, in der Ihre SuS tüfteln, etwas bauen und hacken müssen, um eine Lösung zu finden.</p>',
+            'activities'=>[
+                '1'=>'Aktivität 1 - Titel, für die Grundschule',
+                '2'=>'Aktivität 2 - Titel, für die Sekundarstufe I',
+                '3'=>'Aktivität 3 - Titel, für die Sekundarstufe II'
+            ]
+        ],
+        '8' => [
+            'title'=>'Programmieren für alle Fächer',
+            'author'=>'Von M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Wenn man an Programmieren im Unterricht denkt, kommen einem zunächst Computer, Technologie, Mathematik oder Naturwissenschaften in den Sinn. Warum sollte man es sich aber nicht zunutze machen, dass Schülerinnen und Schüler ganz unterschiedliche Interessen und Fächer haben, und folglich das Programmieren im gesamten Lehrplan umsetzen?</p> 
+    <p>Die Einbeziehung des Programmierens im Klassenzimmer hat viele Vorteile, da sie den Schülerinnen und Schülern hilft, ihr kritisches Denken und ihre Problemlösungsfähigkeiten zu entwickeln, aktive Nutzer zu werden und ihren eigenen Lernprozess zu steuern, was in Schulen unerlässlich ist. Das Wichtigste ist jedoch, dass Ihre Schülerinnen und Schüler Spaß am Lernen haben.</p>
+    <p>Sprachen, Musik oder MINT sind nur einige der Fächer, in denen Lehrkräfte das Programmieren für angehende Wissenschaftler, Musiker, Künstler, aber auch für alle anderen in den Unterricht einbinden können! Jede Lehrkraft kann Programmieren und rechnergestütztes Denken in den Unterricht integrieren. Die Verwendung einer CLIL-Stunde zur Erklärung eines Alltagsalgorithmus, das Herstellen eines Filz-Joysticks, um naturwissenschaftliche Kenntnisse zu vertiefen oder das Nutzen eines Bildungsroboters zur Motivationssteigerung im Mathematikunterricht sind nur einige Beispiele von Unterrichtseinheiten, die Sie in Ihrem Unterricht durchführen können.</p> 
+    <p>Schauen Sie sich das Video unten an, um zu sehen, wie Lehrkräfte im Musik-, naturwissenschaftlichen oder Sprachunterricht auf einfache Weise das Programmieren und das informatische Denken in den Unterricht integrieren können, selbst wenn Sie keine einschlägige Erfahrung damit haben.</p>',
+            'activities'=>[
+                '1'=>'Aktivität 1 Robotik und Inklusion in der Grundschule in MINT-Fächern',
+                '2'=>'Aktivität 2 Musik bedeutet Programmieren',
+                '3'=>'Aktivität 3 Basteln und Programmieren mit Makey Makey',
+                '4'=>'Aktivität 4 Ein Alltagsalgorithmus für eine CLIL-Stunde'
+            ]
         ]
     ],
     'download_video_script' => 'Das Video-Script herunterladen',

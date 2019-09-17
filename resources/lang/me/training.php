@@ -86,6 +86,42 @@ return [
                 '2' => 'Aktivnost 2 - Kako napraviti mehaničku ili robotsku ruku za nižu srednju školu',
                 '3' => 'Aktivnost 3 - Kako napraviti mehaničku ili robotsku ruku za višu srednju školu'
             ]
+        ],
+        '6' => [
+            'title'=>'App Inventor i izrada aplikacija',
+            'author'=>'Rosana Kurer (Rosanna Kurrer)',
+            'text'=>'<p>Pogledajte ovaj video u kojem Rosana Kurer, (osnivač CyberWayFinder-a) objašnjava šta je to App Inventor, ističe prednosti izrade aplikacija u učionici i daje neke praktične primjere o tome kako nastavnici mogu da koriste App Inventor u učionicama, transformišući pasivne učenike u entuzijastične stvaraoce igara.</p>
+<p>Svi mi koristimo aplikacije jer predstavljaju pogodan i brz način usklađivanja naših aktivnosti. Sve se više koriste u obrazovanju, jer omogućavaju personalizovano učenje i korisnicima omogućavaju da dobiju informacije, pa zašto onda da ne podstaknete svoje učenike da izrade obrazovnu aplikaciju za druge?</p>',
+            'activities'=>[
+                '1'=>'Aktivnost 1 – Naziv, za osnovnu školu',
+                '2'=>'Aktivnost 2 – Naziv, za niže razrede srednje škole',
+                '3'=>'Aktivnost 3 – Naziv, za više razrede srednje škole'
+            ]
+        ],
+        '7' => [
+            'title'=>'Eksperimentisanje i izrada',
+            'author'=>'Diogo da Silva',
+            'text'=>'<p>Poslovi i radna mjesta se mijenjaju, a obrazovanje ide u korak sa njima. Prilikom pripreme učenika za poslove 21. vijeka, od značaja su nove vještine kao što su eksperimentisanje, pravljenje stvari i hakovanje, jer one smanjuju razlike između škole i stvarnosti. Pretvarajući učionicu u okruženje usmjereno na saradnju i rješavanje problema, učenici mogu da se uključe i napreduju. Ovim aktivnostima se promoviše razgovor, što omogućava da učionica postane centar komunikacije, u kojem se svačiji doprinos cijeni.</p>
+<p>U nastavku pogledajte video u kojem vas nastavnik matematike, inženjerstva, nauke, umjetnosti i tehnologije (MINUT) Diogo da Silva iz Portugala, član „Globalne škole“, vodi korak po korak kroz predavanje u kojem vaši učenici eksperimentišu, prave stvari i pronalaze svoj put do rješenja.</p>',
+            'activities'=>[
+                '1'=>'Aktivnost 1 – Naziv, za osnovnu školu',
+                '2'=>'Aktivnost 2 – Naziv, za niže razrede srednje škole',
+                '3'=>'Aktivnost 3 – Naziv, za više razrede srednje škole'
+            ]
+        ],
+        '8' => [
+            'title'=>'Programiranje za sve predmete',
+            'author'=>'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Razmišljajući o programiranju u učionici, prvo na šta pomislimo su računari, tehnologija, matematika ili nauka. Međutim, s obzirom na to da studenti imaju niz interesovanja i predmeta, zašto da to ne okrenemo u našu korist i programiranje ne uključimo u nastavni plan i program?</p>
+<p>Uključivanje programiranja u školski sistem ima mnogo prednosti, jer učenicima pomaže da razvijaju kritičko razmišljanje i vještine rješavanja problema, da postanu aktivni korisnici i sami rukovode procesom učenja, koji je ključan u školama. Međutim, najvažnije od svega je da učenici uče dok se zabavljaju!</p>
+<p>Jezici, muzika ili matematika, inženjerstvo, nauka i tehnologija (MINT) su samo neki od predmeta u kojima nastavnici mogu da koriste programiranje za buduće naučnike, muzičare, umjetnike, tj. za bilo koga! Svi nastavnici mogu da u učionicu uvrste programiranje i računarsko promišljanje. Predavanje nejezičkih sadržaja na stranom jeziku kako bismo objasnili algoritam svakodnevnog života, pravljenje palice za igru kako bismo sticali znanja o nauci ili korišćenje obrazovnih robota kako bismo povećali stepen motivacije u matematici, predstavljaju samo neke od primjera aktivnosti koje možete da imate u vašoj učionici.</p>
+<p>Pogledajte ispod video o tome kako nastavnici muzike, nauke ili jezika mogu da na času lako uvrste programiranje i računarsko promišljanje, iako nemaju prethodnog iskustva.</p>',
+            'activities'=>[
+                '1'=>'Aktivnost 1 Robotika i inkluzija za osnovne škole u vezi MINT',
+                '2'=>'Aktivnost 2 Muzika je programiranje',
+                '3'=>'Aktivnost 3 Eksperimentisanje i programiranje sa Makey Makey',
+                '4'=>'Aktivnost 4 Algoritam svakodnevnog života za predavanje nejezičkih sadržaja na stranom jeziku'
+            ]
         ]
     ],
     'download_video_script' => 'Preuzmite video zapis.',

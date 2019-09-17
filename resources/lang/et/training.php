@@ -86,6 +86,42 @@ return [
                 '2' => '2. tegevus – Kuidas luua mehaanilist kätt, põhikooli esimene aste',
                 '3' => '3. tegevus – Kuidas luua mehaanilist kätt, põhikooli teine aste'
             ]
+        ],
+        '6' => [
+            'title'=>'App Inventor ja rakenduste arendamine',
+            'author'=>'Autor: Rosanna Kurrer',
+            'text'=>'<p>Selles videos seletab Rosanna Kurrer (CyberWayFinderi asutaja), mis on App Inventor, millised eelised annab koolitunnis rakenduste arendamine ja toob praktilisi näiteid selle kohta, kuidas õpetajad saavad App Inventorit tunnis kasutada, muutes passiivsed õpilased innustunud mänguloojateks.</p>
+<p>Me kõik kasutame rakendusi, sest see on mugav ja kiire viis tegevusi koordineerida. Samuti kasutatakse rakendusi üha enam hariduses, sest need võimaldavad isikustatud õpet ja annavad kasutajatele võimaluse teadmisi omandada. Nii et miks mitte anda oma õpilastele võimalus luua teistele kasutajatele mõeldud haridusalane rakendus?</p>',
+            'activities'=>[
+                '1'=>'Tegevus 1 – pealkiri, 1.–6. klassile',
+                '2'=>'Tegevus 2 – pealkiri, 7.–9. klassile',
+                '3'=>'Tegevus 3 – pealkiri, 10.–12. klassile'
+            ]
+        ],
+        '7' => [
+            'title'=>'Nokitsemine ja loomine',
+            'author'=>'Autor: Diogo da Silva',
+            'text'=>'<p>Ametid ja töökohad muutuvad ning haridus sammub nende jälgedes. Valmistades õpilasi ette 21. sajandi tööeluks, on oluline arendada selliseid uusi oskusi nagu nokitsemine, loomine ja häkkimine, sest need vähendavad kooli ja tegeliku elu vahelist lõhet. Kui klassiruumist saab koostööd soosiv keskkond, kus keskendutakse probleemide lahendamisele, saavad õpilased aktiivselt kaasa lüüa ja suudavad kõigega edukalt toime tulla. Need tegevused soodustavad arutelusid, tehes klassiruumist nii teabevahetuskeskuse, kus iga osalise panus on oluline.</p> 
+<p>Allolevas videos selgitab STEAM-meetodeid kasutav õpetaja Diogo da Silva Portugalist (Escola Global) samm-sammult, kuidas korraldada õppetundi, kus õpilased peavad lahenduse leidmiseks ise nokitsema, katsetama ja häkkima.</p>',
+            'activities'=>[
+                '1'=>'Tegevus 1 – pealkiri, 1.–6. klassile',
+                '2'=>'Tegevus 2 – pealkiri, 7.–9. klassile',
+                '3'=>'Tegevus 3 – pealkiri, 10.–12. klassile'
+            ]
+        ],
+        '8' => [
+            'title'=>'Programmeerimine kõigis õppeainetes',
+            'author'=>'Autor: M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Kui mõelda programmeerimisele koolitundides, seostub see eelkõige arvutite, tehnoloogia, matemaatika või teadusega. Aga kuna õpilasi köidavad eri tegevused ja teemad, siis miks ei võiks programmeerimist laiemalt kasutada ning rakendada seda kogu õppekava ulatuses?</p> 
+<p>Programmeerimise õpetamisel koolitunnis on mitu eelist – see aitab õpilastel arendada kriitilise mõtlemise ja probleemilahendusoskust, saada aktiivseteks kasutajateks ja juhtida oma õppeprotsessi, mis on koolis käimise puhul oluline. Ent kõige tähtsam on see, et õpilased omandavad teadmisi, veetes samal ajal lõbusalt aega.</p>
+<p>Keeled, muusika, aga ka loodus- ja täppisteadused ning tehnoloogia (LTT) on vaid mõned õppeained, kus õpetajad võivad tulevastele teadlastele, muusikutele, kunstnikele või mis tahes ameti pidajatele programmeerimist tutvustada. Kõik õpetajad võivad programmeerimise ja arvutusliku mõtlemise õpetamise oma tunnitegevusega ühendada. Lõimitud aine- ja keeleõppe rakendamine igapäevaelus kasutatava algoritmi selgitamiseks, vildist juhtkangi valmistamine teaduste tundma õppimiseks või õpperobotite kasutamine motivatsiooni suurendamiseks matemaatikas on vaid mõned näited tegevustest, mida saate tunnis korraldada.</p> 
+<p>Alltoodud videost võite näha, kuidas teadusainete, muusika- ja keeleõpetajad võivad programmeerimise ja arvutusliku mõtlemise õpetamise hõlpsasti tunnitegevusse kaasata, isegi kui neil ei ole varasemat kogemust. </p>',
+            'activities'=>[
+                '1'=>'Tegevus 1. Robootika ja selle kaasamine LTT õpetamisse algkoolis',
+                '2'=>'Tegevus 2. Muusika on programmeerimine!',
+                '3'=>'Tegevus 3. Nokitsemine ja programmeerimine Makey Makeyga.',
+                '4'=>'Tegevus 4. Igapäevaelus kasutatav algoritm lõimitud aine- ja keeleõppe tunni jaoks.'
+            ]
         ]
     ],
     'download_video_script' => 'Laadi alla video skript',

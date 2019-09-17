@@ -86,6 +86,37 @@ return [
                 '2' => 'Aktivitet 2 – Sådan laver man en mekanisk hånd eller en robothånd for udskolingen',
                 '3' => 'Aktivitet 3 – Sådan laver man en mekanisk hånd eller en robothånd for gymnasiale uddannelser'
             ]
+        ],
+        '6' => [
+            'title'=>'',
+            'author'=>'',
+            'text'=>'',
+            'activities'=>[
+                '1'=>'',
+                '2'=>'',
+                '3'=>''
+            ]
+        ],
+        '7' => [
+            'title'=>'',
+            'author'=>'',
+            'text'=>'',
+            'activities'=>[
+                '1'=>'',
+                '2'=>'',
+                '3'=>''
+            ]
+        ],
+        '8' => [
+            'title'=>'',
+            'author'=>'',
+            'text'=>'',
+            'activities'=>[
+                '1'=>'',
+                '2'=>'',
+                '3'=>'',
+                '4'=>''
+            ]
         ]
     ],
     'download_video_script' => 'Download videoscriptet',
