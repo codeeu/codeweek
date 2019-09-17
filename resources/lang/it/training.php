@@ -86,6 +86,42 @@ return [
                 '2' => 'Attività 2 - Come realizzare una mano meccanica o robotica per la scuola secondaria di primo grado',
                 '3' => 'Attività 3 - Come realizzare una mano meccanica o robotica per la scuola secondaria di secondo grado'
             ]
+        ],
+        '6' => [
+            'title'=>'App Inventor e sviluppo di app',
+            'author'=>'di Rosanna Kurrer',
+            'text'=>'<p>In questo video Rosanna Kurrer (fondatrice di CyberWayFinder) spiega che cos\'è App Inventor, illustra i vantaggi di portare in aula lo sviluppo di app e spiega attraverso alcuni esempi pratici come gli insegnanti possono integrare App Inventor in aula trasformando gli studenti passivi in entusiasti creatori di giochi.</p>
+<p>Tutti usiamo le applicazioni perché sono strumenti comodi e veloci che ci permettono di coordinare le nostre attività. Le applicazioni vengono inoltre utilizzate sempre più spesso nell\'istruzione perché rendono possibile un apprendimento personalizzato e permettono agli utenti di acquisire informazioni. Perché, allora, non dare la possibilità ai tuoi studenti di creare un\'app educativa per gli altri?</p>',
+            'activities'=>[
+                '1'=>'Attività 1 – Titolo, per la scuola primaria',
+                '2'=>'Attività 2 – Titolo, per la scuola secondaria di primo grado',
+                '3'=>'Attività 3 – Titolo, per la scuola secondaria di secondo grado'
+            ]
+        ],
+        '7' => [
+            'title'=>'Il tinkering e il making',
+            'author'=>'di Diogo da Silva',
+            'text'=>'<p>I lavori e i posti di lavoro stanno cambiando e l\'istruzione va di pari passo. Per preparare gli studenti alle carriere del 21° secolo, nuove competenze quali il tinkering, il making e l\'hacking diventano fondamentali perché avvicinano la scuola al mondo esterno. Trasformare l\'aula in un ambiente collaborativo, che focalizza l\'attenzione sulla risoluzione dei problemi, coinvolge gli studenti e li fa crescere. Queste attività promuovono la discussione permettendo alla classe di diventare un polo di comunicazione dove ogni contributo è importante.</p> 
+<p>Nel video qui sotto l\'insegnante di STEAM portoghese Diogo da Silva, membro della Escola Global, ti illustrerà passo passo come organizzare una lezione in cui i tuoi studenti dovranno cercare di trovare soluzioni attraverso il tinkering, il making e l\'hacking.</p>',
+            'activities'=>[
+                '1'=>'Attività 1 – Titolo, per la scuola primaria',
+                '2'=>'Attività 2 – Titolo, per la scuola secondaria di primo grado',
+                '3'=>'Attività 3 – Titolo, per la scuola secondaria di secondo grado'
+            ]
+        ],
+        '8' => [
+            'title'=>'La programmazione in tutte le materie',
+            'author'=>'di M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Quando pensiamo a una lezione di programmazione in aula la prima cosa che ci viene in mente sono i computer, la tecnologia, la matematica o le scienze. Ma perché non usare a nostro vantaggio il fatto che gli studenti hanno diversi interessi e studiano diverse materie introducendo la programmazione in tutto il piano di studi?</p> 
+<p>Integrare la programmazione in aula ha molti vantaggi perché aiuta gli studenti a sviluppare le loro abilità di pensiero critico e di risoluzione dei problemi, a diventare utenti attivi e a guidare il loro processo di apprendimento, il che è di fondamentale importanza a scuola. La cosa più importante, però, è che i tuoi studenti impareranno divertendosi!</p>
+<p>Le lingue, la musica o le STEM sono solo alcune delle materie in cui gli insegnanti possono introdurre la programmazione per formare gli scienziati, i musicisti e gli artisti del futuro, o qualsiasi altra professionalità! Tutti gli insegnanti possono integrare la programmazione e il pensiero computazionale in classe. Alcuni esempi di attività che puoi svolgere in aula sono tenere una lezione CLIL per spiegare un algoritmo di vita quotidiana, creare un joystick in feltro per insegnare scienze o utilizzare robot educativi per accrescere la motivazione in matematica.</p> 
+<p>Guarda il video qui sotto per vedere come gli insegnanti di musica, di scienze o di lingue possono facilmente integrare la programmazione e il pensiero computazionale in classe, anche senza precedente esperienza. </p>',
+            'activities'=>[
+                '1'=>'Attività 1 – Robotica e inclusione per la primaria nelle STEM',
+                '2'=>'Attività 2 – La musica è programmazione',
+                '3'=>'Attività 3 – Il tinkering e la programmazione con Makey Makey',
+                '4'=>'Attività 4 – Un algoritmo di vita quotidiana per una lezione CLIL'
+            ]
         ]
     ],
     'download_video_script' => 'Scarica lo script video',

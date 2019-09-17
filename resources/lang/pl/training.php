@@ -86,6 +86,42 @@ return [
                 '2' => 'Zajęcia 2 – Jak wykonać mechaniczne ramię ze sklejki dla szkół ponadpodstawowych',
                 '3' => 'Zajęcia 3 – Jak wykonać mechaniczne ramię ze sklejki dla szkół średnich'
             ]
+        ],
+        '6' => [
+            'title'=>'Tworzenie aplikacji za pomocą App Inventor',
+            'author'=>'Autorka: Rosanna Kurrer',
+            'text'=>'<p>Obejrzyj film, w którym Rosanna Kurrer, (założycielka CyberWayFinder) wyjaśnia, czym jest App Inventor, przedstawia zalety tworzenia aplikacji podczas lekcji i podaje kilka praktycznych przykładów, w jaki sposób nauczyciele mogą wykorzystać platformę App Inventor w klasie, zamieniając biernych uczniów w entuzjastycznych twórców gier.</p>
+<p>Wszyscy korzystamy z aplikacji, ponieważ są one wygodnym i szybkim sposobem koordynowania naszych działań. Są one również coraz częściej wykorzystywane w edukacji, ponieważ pozwalają na indywidualną naukę i umożliwiają użytkownikom zdobywanie informacji. Dlaczego więc nie dać uczniom możliwości stworzenia aplikacji edukacyjnej dla innych?</p>',
+            'activities'=>[
+                '1'=>'Zajęcia nr 1 – Tytuł, na poziomie szkoły podstawowej',
+                '2'=>'Zajęcia nr 2 – Tytuł, na poziomie szkoły średniej I stopnia',
+                '3'=>'Zajęcia nr 3 – Tytuł, na poziomie szkoły średniej II stopnia'
+            ]
+        ],
+        '7' => [
+            'title'=>'Majsterkowanie i kreatywność',
+            'author'=>'Autor: Diogo da Silva',
+            'text'=>'<p>Miejsca i warunki pracy ulegają zmianie, a edukacja podąża ich śladem. Przygotowanie uczniów do pracy w XXI wieku musi uwzględniać nowe umiejętności, takie jak majsterkowanie, budowanie czegoś lub tworzenie oprogramowania, ponieważ pozwalają one zmniejszyć dystans między szkołą a rzeczywistością. Dzięki przekształceniu klasy w środowisko współpracy, w którym nacisk kładzie się na rozwiązywanie problemów, uczniowie są w stanie się zaangażować i rozwijać. Zadania tego rodzaju sprzyjają dyskusji i pozwalają, aby klasa stała się centrum komunikacji, w którym liczy się każdy wkład.</p> 
+<p>Obejrzyj poniższy film, w którym portugalski nauczyciel nauk przyrodniczych, technologii, inżynierii, sztuki i matematyki Diogo da Silva, członek Escola Global, pokazuje krok po kroku, jak przygotować lekcję, podczas której Twoi uczniowie uczą się rozwiązywać zadania, majsterkując, budując coś i tworząc oprogramowanie.</p>',
+            'activities'=>[
+                '1'=>'Zajęcia nr 1 – Tytuł, na poziomie szkoły podstawowej',
+                '2'=>'Zajęcia nr 2 – Tytuł, na poziomie szkoły średniej I stopnia',
+                '3'=>'Zajęcia nr 3 – Tytuł, na poziomie szkoły średniej II stopnia'
+            ]
+        ],
+        '8' => [
+            'title'=>'Kodowanie w ramach wszystkich przedmiotów',
+            'author'=>'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Gdy mowa o kodowaniu podczas lekcji, pierwsze, co przychodzi na myśl, to komputery, technologia, matematyka lub nauki przyrodnicze. Ponieważ uczniowie mają wiele zainteresowań i przedmiotów, dlaczego nie wykorzystać tego na naszą korzyść i nie wprowadzić kodowania do całego programu nauczania?</p> 
+<p>Wykorzystanie kodowania podczas lekcji ma wiele zalet, ponieważ dzięki niemu uczniowie rozwijają krytyczne myślenie i umiejętność rozwiązywania problemów, stają się aktywni i kierują własnym procesem uczenia się, a to ma zasadnicze znaczenie w szkole. Najważniejsze jest jednak to, że Twoi uczniowie będą się bawić podczas nauki!</p>
+<p>Języki, muzyka czy tzw. STEM (ang. science, technology, engineering and maths – nauki przyrodnicze, technologia, inżynieria i matematyka) to tylko niektóre przedmioty, które nauczyciele mogą „zakodować” dla przyszłych naukowców, muzyków, artystów – naprawdę dla każdego! Wszyscy nauczyciele mogą wykorzystać kodowanie i myślenie komputacyjne podczas lekcji. Zastosowanie metody zintegrowanego kształcenia przedmiotowo-językowego, tzw. CLIL (ang. content and language integrated learning) do wyjaśnienia algorytmów w życiu codziennym, budowa filcowego joysticka do zgłębiania nauk przyrodniczych lub wykorzystanie robotów edukacyjnych do zwiększania motywacji na lekcji matematyki to tylko niektóre przykłady działań, które możesz zrealizować w sali lekcyjnej.</p> 
+<p>Na tym filmie zobaczysz, jak nauczyciele muzyki, nauk przyrodniczych lub języków mogą łatwo wykorzystać kodowanie i myślenie komputacyjne podczas lekcji, nawet jeśli nie mają żadnego wcześniejszego doświadczenia w tym zakresie. </p>',
+            'activities'=>[
+                '1'=>'Zajęcia nr 1. Robotyka i integracja na poziomie szkoły podstawowej na zajęciach z nauk przyrodniczych, technologii, inżynierii i matematyki ',
+                '2'=>'Zajęcia nr 2. Muzyka to kodowanie',
+                '3'=>'Zajęcia nr 3. Majsterkowanie i kodowanie z wykorzystaniem Makey Makey',
+                '4'=>'Zajęcia nr 4. Algorytmy w życiu codziennym w zintegrowanym kształceniu przedmiotowo-językowym'
+            ]
         ]
     ],
     'download_video_script' => '',

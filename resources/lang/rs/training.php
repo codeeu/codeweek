@@ -88,6 +88,42 @@ return [
                 '2' => 'Aktivnost 2 - Kako napraviti mehaničku ili robotičku ruku za niže razrede srednje škole',
                 '3' => 'Aktivnost 3 - Kako napraviti mehaničku ili robotičku ruku za srednju školu'
             ]
+        ],
+        '6' => [
+            'title'=>'App Inventor i App Development',
+            'author'=>'Autorica: Rosana Kurer',
+            'text'=>'<p>Pogledajte video u kom Rosana Kurer (osnivač CyberWayFinder) objašnjava šta je App Inventor, prolazi kroz prednosti razvoja aplikacija u učionici i daje neke praktične primere o tome kako nastavnici mogu da integrišu App Inventor u učionicu, preobražavajući i pasivne učenike u entuzijastične kreatore igara.</p>
+<p>Svi mi koristimo aplikacije, jer su zgodan i brz način da koordiniramo svoje aktivnosti. Alikacije se takođe sve više i više koriste u obrazovanju, jer pružaju personalizovano učenje i omogućavaju korisnicima da dobiju informacije, pa zašto onda ne biste osnažili svoje učenike da izgade obrazovnu aplikaciju za druge?</p>',
+            'activities'=>[
+                '1'=>'Aktivnost 1 - Naslov, za osnovnu školu ',
+                '2'=>'Aktivnost 2 - Naslov, za niže razrede srednje škole',
+                '3'=>'Aktivnost 3 - Naslov, za više razrede srednje škole'
+            ]
+        ],
+        '7' => [
+            'title'=>'Mozganje i izrada',
+            'author'=>'Autor: Diogo da Silva',
+            'text'=>'<p>Poslovi i radna mesta se menjaju, a obrazovanje ih prati u stopu. Kada spremamo učenike za karijeru 21. veka, nove veštine kao što su mozganje (eng. tinkering), izrada i hakovanje postaju suštinske, jer smanjuju jaz između škole i stvarnosti. Pretvarajući učionicu u kolaborativno okruženje koje se fokusira na rešavanje problema, učenici mogu da se angažuju i napreduju. Ove aktivnosti promovišu diskusiju i na taj način omogućavaju da učionica postane komunikacijsko čvorište, gde je svaki doprinos važan.</p> 
+<p>Pogledajte video ispod, gde vas portugalski STEAM (eng. nauka, tehnologija, inženjering, umetnost i matematika) učitelj Diogo da Silva, član pokreta Escola Global (Globalna škola), vodi korak po korak kroz razvijanje lekcije u kojoj vaši učenici mozgaju, izrađuju i hakuju svoj put do rešenja.</p>',
+            'activities'=>[
+                '1'=>'Aktivnost 1 - Naslov, za osnovnu školu ',
+                '2'=>'Aktivnost 2 - Naslov, za niže razrede srednje škole',
+                '3'=>'Aktivnost 3 - Naslov, za više razrede srednje škole'
+            ]
+        ],
+        '8' => [
+            'title'=>'Programiranje za sve nastavne predmete',
+            'author'=>'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Kada razmišljate o programiranju u učionici, prva slika koja vam pada na pamet su računari, tehnologija, matematika ili nauka. Međutim, s obzirom na to da učenici imaju niz interesa i predmeta, zašto to ne biste to okrenuli u vašu korist i implementirali programiranje kroz čitav nastavni plan i program?</p> 
+<p>Integracija programiranja u učionici ima brojne prednosti, jer pomaže učenicima da razviju kritičko mišljenje i veštine rešavanja problema, postanu aktivni korisnici i vode sopstveni proces učenja, koji je ključan u školama. Ipak, najvažnije je da će vaši učenici učiti dok se zabavljaju!</p>
+<p>Jezici, muzika ili prirodne nauke (MINT) su samo neki predmeti koje nastavnici mogu da programiraju za buduće naučnike, muzičare, umetnike, zaista - bilo koga! Svi nastavnici mogu integrisati programiranje i računarsko razmišljanje u učionici: koristeći lekcije stranih jezika da objasne algoritam svakodnevnog života, kreirajući džojstik kako bismo učili o nauci ili koristeći obrazovne robote da bi povećali motivaciju u matematici. To su samo neki primeri aktivnosti koje možete da sprovedete u svojoj učionici.</p> 
+<p>Pogledajte video ispod da biste videli kako nastavnici muzike, nauke ili jezika mogu lako integrisati programiranje i računarsko razmišljanje u učionici, iako nemaju prethodno iskustvo.</p>',
+            'activities'=>[
+                '1'=>'Aktivnost 1 Robotika i inkluzija za osnovnu školu u MINT predmetima',
+                '2'=>'Aktivnost 2 Muzika je programiranje',
+                '3'=>'Aktivnost 3 Mozganje i programiranje sa Makey Makey',
+                '4'=>'Aktivnost 4 Algoritam svakodnevnog života za CLIL predavanje'
+            ]
         ]
     ],
     'download_video_script' => 'Preuzmite video skriptu',

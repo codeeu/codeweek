@@ -52,7 +52,7 @@
                         <div class="author">@lang('training.lessons.5.author')</div>
                     </a>
                 </div>
-                @if(App::getLocale() == 'en')
+                @if(App::getLocale() != 'da')
                     <div class="codeweek-card-grid">
                         <a href="/training/developing-creative-thinking-through-mobile-app-development">
                             <img src="/img/learning/developing-creative-thinking-through-mobile-app-development.png">

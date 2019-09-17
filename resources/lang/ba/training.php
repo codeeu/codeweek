@@ -86,6 +86,42 @@ return [
                 '2' => 'Aktivnost 2 - Kako načiniti mehaničku ili robotičku ruku u nižim razredima osnovne škole',
                 '3' => 'Aktivnost 3 - Kako načiniti mehaničku ili robotičku ruku u višim razredima srednje škole'
             ]
+        ],
+        '6' => [
+            'title'=>'Aplikacija Inventor (Izumitelj) i Aplikacija Development (Razvoj)',
+            'author'=>'Autorica: Rosanna Kurrer',
+            'text'=>'<p>Pogledajte video u kojem Rosanna Kurrer, (osnivačica CyberWayFinder-a) objašnjava šta je aplikacija Inventor, predstavlja prednosti aplikacije ‘Razvoj’ u učionici i daje neke praktične primjere kako nastavnici mogu integrisati aplikaciju ‘Inventor’ u učionici, čime će transformisati pasivne učenike u entuzijastične kreatore igara.</p>
+<p>Svi mi koristimo aplikacije jer je to prikladan i brz način usklađivanja aktivnosti. One se sve više koriste u obrazovanju jer omogućavaju personalizirano učenje i korisnicima pomažu da dođu do informacija, pa zašto onda ne podstaći učenike da naprave obrazovnu aplikaciju za druge?</p>',
+            'activities'=>[
+                '1'=>'Aktivnost 1 – Naslov, za osnovnu školu',
+                '2'=>'Aktivnost 2 – Naslov, za niže razrede srednje škole',
+                '3'=>'Aktivnost 3 – Naslov, za više razrede srednje škole'
+            ]
+        ],
+        '7' => [
+            'title'=>'Praktične vježbe i stvaranje',
+            'author'=>'Autor: Diogo da Silva',
+            'text'=>'<p>Poslovi i radna mjesta se mijenjaju, a obrazovanje ide s njima u korak. U pripremanju učenika za karijere 21. stoljeća, nove vještine kao što su praktične vježbe, stvaranje i hakiranje postaju od bitnog značenja jer smanjuju jaz između škole i stvarnosti. Kada se učionica odiše timskim duhom koje je usmjereno u rješavanje problema, učenici mogu da se angažuju i uživaju. Ove aktivnosti promovišu diskusiju i na taj način omogućavaju da učionica postane središte za komunikaciju u kojem je svaki doprinos važan.</p> 
+<p>Pogledajte video ispod u kojem vas portugalski učitelj STEAM predmeta (engl.: science, technology, engineering, the arts & mathematics) Diogo da Silva, član škole Escola Global, vodi korak po korak kroz nastavu u kojoj vaši učenici rade praktičke vježbe, stvaraju i hakuju svoj put do rješenja.</p>',
+            'activities'=>[
+                '1'=>'Aktivnost 1 – Naslov, za osnovnu školu',
+                '2'=>'Aktivnost 2  – Naslov, za niže razrede srednje škole',
+                '3'=>'Aktivnost 3 – Naslov, za više razrede srednje škole'
+            ]
+        ],
+        '8' => [
+            'title'=>'Kodiranje u svim predmetima',
+            'author'=>'Autor: M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Kada pomislimo na kodiranje u učionici, prvo što nam pada na pamet su kompjuteri, tehnologija, matematika ili nauka. Međutim, obzirom na to da učenici imaju različite interese i predmete, zašto to ne bismo iskoristili da praktikujemo kodiranje kroz cjelokupni nastavni plan i program?</p> 
+<p>Integracija kodiranja u učionici ima mnogo prednosti, jer učenicima pomaže da razvijaju kritično mišljenje i vještine rješavanja problema, da postanu aktivni korisnici i imaju sopstveni proces učenja koji je u školi od bitnog značaja. Ipak, najvažnije je da učenici uživaju dok uče!</p>
+<p>Jezici, muzika ili predmeti prirodnog smjera (STEM - science, technology, engineering & math) samo su neki od predmeta gdje nastavnici mogu primjeniti kodiranje za buduće naučnike, muzičare, umjetnike, zapravo bilo koga! Svi nastavnici mogu u nastavu uključiti kodiranje i kompjutersko razmišljanje. Koristeći CLIL metodu (podučavanje sadržaja u raznim predmetima na stranom jeziku) za objašnjenje algoritma svakodnevnog života, kreirajući džojstik za učenje o nauci ili korištenje obrazovnih robota da bi povećali motivaciju u matematici, samo su neki od primjera mogućih aktivnosti u učionici.</p> 
+<p>U videu ispod pogledajte kako nastavnici muzike, nauke ili jezika mogu lako integrisati kodiranje i kompjutersko razmišljanje u učionici čak i bez prethodnog iskustva. </p>',
+            'activities'=>[
+                '1'=>'Aktivnost 1 Robotika i uključivanje njenih osnova u predmete prirodnog smjera',
+                '2'=>'Aktivnost 2 Muzika je kodiranje',
+                '3'=>'Aktivnost 3 Praktične vježbe i kodiranje sa Makey Makey-om',
+                '4'=>'Aktivnost 4 Algoritam svakodnevnog života za nastavu korištenjem stranog jezika'
+            ]
         ]
     ],
     'download_video_script' => 'Preuzmite video skriptu',

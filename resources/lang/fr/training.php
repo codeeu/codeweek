@@ -86,6 +86,42 @@ return [
                 '2' => 'Activité 2 - Comment fabriquer une main mécanique ou robotisée pour le premier cycle du secondaire',
                 '3' => 'Activité 3 - Comment fabriquer une main mécanique ou robotisée pour le secondaire'
             ]
+        ],
+        '6' => [
+            'title'=>'App Inventor et développement d’applications',
+            'author'=>'Par Rosanna Kurrer',
+            'text'=>'<p>La vidéo de Rosanna Kurrer, fondatrice de CyberWayFinder, explique en quoi consiste l’App Inventor, cite les avantages du développement d’applications en classe et donne des exemples pratiques de la manière dont les enseignants peuvent avoir recours à l’App Inventor dans leur classe, transformant les élèves passifs en créateurs de jeux enthousiastes.</p>
+<p>Nous utilisons tous des applications; elles sont pratiques et nous permettent de coordonner rapidement nos activités. Elles sont de plus en plus utilisées dans l’enseignement, car elles donnent la possibilité de personnaliser l’apprentissage et permettent aux utilisateurs d’acquérir des informations. Alors, pourquoi ne pas donner aux élèves les moyens de créer une application éducative destinée à d’autres personnes?</p>',
+            'activities'=>[
+                '1'=>'Activité 1 – Titre, pour le primaire',
+                '2'=>'Activité 2 – Titre, pour le premier cycle du secondaire',
+                '3'=>'Activité 3 – Titre, pour le deuxième cycle du secondaire'
+            ]
+        ],
+        '7' => [
+            'title'=>'Bricolage et création',
+            'author'=>'Par Diogo da Silva',
+            'text'=>'<p>L’emploi et les lieux de travail évoluent, tout comme l’enseignement. Dans le cadre de la préparation des élèves à la vie professionnelle du 21e siècle, de nouvelles compétences telles que le bricolage, la création et le détournement d’objets deviennent essentielles, car elles réduisent l’écart entre l’école et la réalité. En transformant la salle de la classe en un environnement collaboratif axé sur la résolution de problèmes, les élèves peuvent dialoguer et s’épanouir. Ces activités favorisent la discussion, ce qui permet de transformer la salle de classe en un centre de communication, dans lequel chaque contribution compte.</p>
+<p>Dans la vidéo ci-dessous, Diogo da Silva, professeur portugais de sciences, de technologies, d’ingénierie, d’arts et de mathématiques (STEAM) et membre d’Escola Global, montre, étape par étape, comment mettre au point un cours dans lequel les élèves doivent bricoler, créer et détourner des objets pour résoudre un problème.</p>',
+            'activities'=>[
+                '1'=>'Activité 1 – Titre, pour le primaire',
+                '2'=>'Activité 2 – Titre, pour le premier cycle du secondaire',
+                '3'=>'Activité 3 – Titre, pour le deuxième cycle du secondaire'
+            ]
+        ],
+        '8' => [
+            'title'=>'Coder dans toutes les matières',
+            'author'=>'Par M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Lorsqu’on pense au codage en classe, on pense spontanément aux ordinateurs, à la technologie, aux mathématiques ou aux sciences. Toutefois, étant donné que les élèves ont de nombreux centres d’intérêt et apprennent différentes matières, pourquoi ne pas tirer parti du codage et mettre en œuvre cette discipline dans l’ensemble du programme?</p> 
+<p>Faire entrer le codage dans les activités de classe comporte de nombreux avantages, car cette discipline aide les élèves à développer une pensée critique et leur capacité à résoudre des problèmes; elle aide les élèves à devenir des utilisateurs actifs et à développer leur propre processus d’apprentissage, ce qui est essentiel à l\'école. Plus important encore: vos élèves apprendront en s’amusant!</p>
+<p>Les langues, la musique, les sciences, la technologie, l’ingénierie ou les mathématiques ne sont que quelques-unes des matières que les enseignants peuvent coder, à l\'intention des futurs scientifiques, musiciens, artistes, et des autres élèves! Tous les enseignants peuvent avoir recours au codage et au raisonnement informatique en classe. Expliquer un algorithme de la vie quotidienne dans le cadre de l’enseignement d’une matière intégré à une langue étrangère (EMILE), créer une manette de jeu en feutre pour apprendre les sciences ou utiliser des robots éducatifs pour stimuler la motivation en cours de mathématiques constituent quelques exemples d’activités qu’il est possible d’organiser en classe.</p>
+<p>Jetez un coup d’œil à la vidéo ci-dessous pour voir comment les enseignants de musique, de sciences ou de langues peuvent facilement intégrer le codage et le raisonnement informatique en classe, même s’ils n’ont pas d’expérience dans le domaine.</p>',
+            'activities'=>[
+                '1'=>'Activité 1 La robotique et l’inclusion dans les cours de sciences, de technologie, d’ingénierie et de mathématiques pour les élèves du primaire',
+                '2'=>'Activité 2 La musique, c’est du codage',
+                '3'=>'Activité 3 Bricolage et codage avec Makey Makey',
+                '4'=>'Activité 4 Un algorithme de la vie quotidienne pour un cours en EMILE'
+            ]
         ]
     ],
     'download_video_script' => 'Télécharger le script vidéo',
