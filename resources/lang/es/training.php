@@ -90,6 +90,42 @@ return [
                 '2' => 'Actividad 2. Cómo hacer una mano mecánica o robótica, para centros de enseñanza secundaria (primer ciclo)',
                 '3' => 'Actividad 3. Cómo hacer una mano mecánica o robótica, para centros de enseñanza secundaria (segundo ciclo)'
             ]
+        ],
+        '6' => [
+            'title'=>'App Inventor y desarrollo de aplicaciones',
+            'author'=>'por Rosanna Kurrer',
+            'text'=>'<p>Echa un vistazo a este vídeo, en el que Rosanna Kurrer (fundadora de CyberWayFinder) explica en qué consiste App Inventor, enumera las ventajas de utilizar el desarrollo de aplicaciones en el aula y ofrece algunos ejemplos prácticos de la forma en que los profesores pueden integrar App Inventor en el aula, transformando a estudiantes pasivos en entusiastas creadores de juegos.</p>
+<p>Todos utilizamos aplicaciones, ya que son una forma cómoda y rápida de coordinar nuestras actividades. Asimismo, son cada vez más utilizadas en la educación, puesto que propician un aprendizaje personalizado y permiten que los usuarios adquieran información. Por ello, ¿por qué no capacitar a tus alumnos para que desarrollen una aplicación educativa para los demás?</p>',
+            'activities'=>[
+                '1'=>'Actividad 1. Título, para centros de enseñanza primaria',
+                '2'=>'Actividad 2. Título, para centros de enseñanza secundaria (primer ciclo)',
+                '3'=>'Actividad 3. Título, para centros de enseñanza secundaria (segundo ciclo)'
+            ]
+        ],
+        '7' => [
+            'title'=>'Tinkering y making',
+            'author'=>'por Diogo da Silva',
+            'text'=>'<p>El empleo y los lugares de trabajo están cambiando, y la educación sigue sus pasos. A la hora de preparar a los estudiantes para las profesiones del siglo XXI, resultan fundamentales nuevas capacidades como por ejemplo tinkering, making y hacking, ya que reducen la brecha entre la escuela y el mundo real. Al transformar el aula en un entorno colaborativo centrado en la resolución de problemas, los estudiantes participar y progresar. Estas actividades promueven el debate, permitiendo así que el aula se convierta en un núcleo de comunicación en el que todas las contribuciones son importantes.</p> 
+<p>Echa un vistazo al vídeo siguiente, en el que el profesor portugués de CTIAM y miembro de Escola Global, Diogo da Silva, explica paso a paso cómo desarrollar una clase en la que los alumnos, a través de actividades de tinkering, making y hacking, encuentran la solución.</p>',
+            'activities'=>[
+                '1'=>'Actividad 1. Título, para centros de enseñanza primaria',
+                '2'=>'Actividad 2. Título, para centros de enseñanza secundaria (primer ciclo)',
+                '3'=>'Actividad 3. Título, para centros de enseñanza secundaria (segundo ciclo)'
+            ]
+        ],
+        '8' => [
+            'title'=>'Programación para todas las materias',
+            'author'=>'por M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Cuando uno piensa en programación en el aula, la primera imagen que nos viene a la mente es de ordenadores, tecnología, matemáticas o ciencia. Sin embargo, puesto que los estudiantes tienen diversos intereses y asignaturas, ¿por qué no utilizarla a nuestro favor e introducir la programación en todo el plan de estudios?</p> 
+<p>Integrar la programación en el aula ofrece muchos beneficios, ya que les ayuda a desarrollar el pensamiento crítico y las capacidades en materia de resolución de problemas, a convertirse en usuarios activos y a dirigir su propio proceso de aprendizaje, lo que resulta fundamental en los centros escolares. Con todo, lo más importante es que los alumnos aprenderán mientras se divierten.</p>
+<p>Idiomas, Música o CTIM son solo algunas de las asignaturas en las que los profesores pueden aplicar la programación para los futuros científicos, músicos, artistas... para todo el mundo, en realidad. Todos los profesores pueden integrar la programación y el pensamiento computacional en el aula. Utilizar una clase de AICLE para explicar un algoritmo de la vida cotidiana, crear un joystick de fieltro para aprender ciencia o utilizar robots educativos para fomentar la motivación en Matemáticas son algunos ejemplos de actividades que puedes realizar en el aula.</p> 
+<p>Echa un vistazo al siguiente vídeo para averiguar cómo los profesores de Música, Ciencias o Lenguas pueden integrar fácilmente la programación y el pensamiento computacional en el aula, incluso aunque no tengas experiencia previa.</p>',
+            'activities'=>[
+                '1'=>'Actividad 1. Robótica e inclusión de primaria en CTIM',
+                '2'=>'Actividad 2. La música es programación',
+                '3'=>'Actividad 3. Tinkering y programación con Makey Makey',
+                '4'=>'Actividad 4. Un algoritmo de la vida cotidiana para una clase de AICLE'
+            ]
         ]
     ],
     'download_video_script' => 'Descargar el guion del vídeo',

@@ -86,6 +86,42 @@ return [
                 '2' => 'Activiteit 2 – Een mechanische hand of robothand maken voor de onderbouw van het middelbaar onderwijs',
                 '3' => 'Activiteit 3 – Een mechanische hand of robothand maken voor de bovenbouw van het middelbaar onderwijs'
             ]
+        ],
+        '6' => [
+            'title'=>'Apps ontwikkelen met App Inventor',
+            'author'=>'Door Rosanna Kurrer',
+            'text'=>'<p>In deze video legt Rosanna Kurrer (oprichter van CyberWayFinder) uit wat App Inventor is en wat de voordelen zijn van het programmeren en ontwikkelen van apps op school. Ze geeft een paar praktijkvoorbeelden die laten zien hoe leerkrachten App Inventor in de les kunnen gebruiken en van passieve leerlingen enthousiastte gamebouwers kunnen maken.</p>
+<p>We gebruiken allemaal apps. Apps zijn handig en een snelle manier om taken te coördineren. Ze worden ook steeds vaker in het onderwijs gebruikt omdat ze gebruikt kunnen worden om de lessen individueel af te stemmen op de leerling, en die er snel informatie mee kan verzamelen. Waarom niet eens aan uw leerlingen vragen om voor anderen een educatieve app te ontwikkelen?</p>',
+            'activities'=>[
+                '1'=>'Activiteit 1 – Voor het basisonderwijs',
+                '2'=>'Activiteit 2 – Voor de onderbouw van het middelbaar onderwijs',
+                '3'=>'Activiteit 3 – Voor de bovenbouw van het middelbaar onderwijs'
+            ]
+        ],
+        '7' => [
+            'title'=>'Knutselen met programmeertaal: tinkering, making en hacking',
+            'author'=>'door Diogo da Silva',
+            'text'=>'<p>Banen en werkplekken veranderen, en het onderwijs verandert mee. Nieuwe vaardigheden zoals tinkering, making en hacking worden steeds belangrijker om leerlingen voor te bereiden op een loopbaan in de eenentwintigste eeuw, en ze maken de kloof tussen het onderwijs en het dagelijks leven kleiner.  Als de klas een plek wordt waar iedereen samen problemen oplost, is dat leuker en motiverender voor de leerlingen.  Zulke activiteiten bevorderen het overleg en maken van de klas een communicatiehub, waar elke bijdrage telt.</p> 
+<p>In deze video legt de Portugese STEAM-leraar Diogo da Silva, lid van de Escola Global, stap voor stap uit hoe u lessen kunt organiseren waarbij leerlingen door tinkering, making en hacking problemen oplossen.</p>',
+            'activities'=>[
+                '1'=>'Activiteit 1 – Voor het basisonderwijs',
+                '2'=>'Activiteit 2 – Voor de onderbouw van het middelbaar onderwijs',
+                '3'=>'Activiteit 3 – Voor de bovenbouw van het middelbaar onderwijs'
+            ]
+        ],
+        '8' => [
+            'title'=>'Programmeren bij alle vakken',
+            'author'=>'Door M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Wie denkt aan programmeren op school, denkt al snel aan vakken als informatica, techniek, wiskunde of natuurwetenschappen. Maar niet alle leerlingen hebben hetzelfde vakkenpakket en daarom zou het een goed idee zijn om het programmeren in alle vakken te integreren.</p> 
+<p>Dat heeft veel voordelen: leerlingen leren zo kritisch en probleemoplossend te denken, gaan op eigen initiatief programmeren en nemen daarmee hun leerproces in eigen hand, allemaal essentiële zaken op school. Maar het belangrijkste voordeel is dat ze met meer plezier leren!</p>
+<p>Talen, muziek en exacte wetenschappen zijn maar enkele vakken waarbij leerkrachten het leren programmeren kunnen opnemen. Voor toekomstige wetenschappers, musici en kunstenaars, maar eigenlijk voor iedereen! Elke leerkracht kan het programmeren en computergericht denken in zijn lessen verwerken. Bij vakken die in een vreemde taal worden gegeven, kan een algoritme uit het dagelijks leven worden uitgelegd, bij techniek kan een joystick worden gemaakt en een onderwijsrobot kan de wiskundeles aantrekkelijker maken. En zo zijn er nog veel meer voorbeelden te bedenken.</p> 
+<p>Bekijk de video en ontdek hoe muziek-, natuurkunde- of taaldocenten het programmeren en computergericht denken in hun lessen kunnen integreren, zelfs zonder enige voorkennis.</p>',
+            'activities'=>[
+                '1'=>'Activiteit 1 Robotica en inclusie in de STEM-vakken in het basisonderwijs',
+                '2'=>'Activiteit 2 Muziek is programmeren',
+                '3'=>'Activiteit 3 Knutselen en programmeren met Makey Makey',
+                '4'=>'Activiteit 4 Een algoritme uit het dagelijks leven bij een les in een andere taal'
+            ]
         ]
     ],
     'download_video_script' => 'Het videoscript downloaden',

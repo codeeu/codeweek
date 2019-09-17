@@ -86,6 +86,42 @@ return [
                 '2' => '2. nodarbība — kā pagatavot mehānisku vai robotisku roku (pamatskolai)',
                 '3' => '3. nodarbība — kā pagatavot mehānisku vai robotisku roku (vidusskolai)'
             ]
+        ],
+        '6' => [
+            'title'=>'App Inventor un lietotņu veidošana',
+            'author'=>'Rosanna Kīrere (Rosanna Kurrer)',
+            'text'=>'<p>Šajā video CyberWayFinder dibinātāja Rosanna Kīrere skaidro, kas ir App Inventor, stāsta par ieguvumiem, ko sniedz lietotņu veidošana mācību stundās, un parāda dažus praktiskus piemērus, kā skolotāji var stundās izmantot App Inventor, lai pasīvi skolēni kļūtu par aizrautīgiem spēļu veidotājiem.</p>
+<p>Mēs visi izmantojam lietotnes — tās palīdz ērti un ātri koordinēt mūsu ikdienu. Lietotnes arī tiek arvien biežāk izmantotas izglītībā, jo tās nodrošina individualizētu mācīšanos un palīdz lietotājiem iegūt informāciju. Lai skolēni izveido izglītojošu lietotni, ko var izmantot pārējie!</p>',
+            'activities'=>[
+                '1'=>'1. pasākums “Nosaukums” — sākumskolas skolēniem',
+                '2'=>'2. pasākums “Nosaukums” — pamatskolas skolēniem',
+                '3'=>'3. pasākums “Nosaukums” — vidusskolas skolēniem'
+            ]
+        ],
+        '7' => [
+            'title'=>'Meistarošana un veidošana',
+            'author'=>'Djogu da Silva (Diogo da Silva)',
+            'text'=>'<p>Mūsdienās mainās darba vide un saturs, un līdztekus mainās arī izglītība. Lai sagatavotu skolēnus 21. gadsimta karjerai, svarīgi ir attīstīt tādas jaunas prasmes kā meistarošana, veidošana un “uzlaušana”, jo tās mazina plaisu starp skolas mācībām un reālo dzīvi. Ja mācību stundā tiek radīta uz sadarbību vērsta vide ar ievirzi uz problēmu risināšanu, skolēni var līdzdarboties un gūt labākas sekmes. Šādas aktivitātes rosina diskusijas — tādējādi klase kļūst par vietu komunikācijai, kur visi viedokļi ir svarīgi.</p> 
+<p>Šajā video dabaszinātņu, tehnoloģiju, inženierijas, mākslas un matemātikas (STEAM) skolotājs un Escola Global darbinieks no Portugāles Djogu da Silva soli pa solim izskaidro, kā izveidot stundu, kurā skolēni rod nepieciešamo risinājumu, meistarojot, veidojot un izzinot.</p>',
+            'activities'=>[
+                '1'=>'1. pasākums “Nosaukums” — sākumskolas skolēniem',
+                '2'=>'2. pasākums “Nosaukums” — pamatskolas skolēniem',
+                '3'=>'3. pasākums “Nosaukums” — vidusskolas skolēniem'
+            ]
+        ],
+        '8' => [
+            'title'=>'Programmēšana visos mācību priekšmetos',
+            'author'=>'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Domājot par programmēšanu skolā, vispirms parasti nāk prātā datori, tehnoloģijas, matemātika vai dabaszinātnes. Tomēr skolēniem ir plašas intereses un viņi apgūst dažādus mācību priekšmetus — to var izmantot, un programmēšanu var iekļaut visā mācību programmā.</p> 
+<p>Programmēšanas iekļaušana mācību procesā dod daudz ieguvumu, jo tā palīdz skolēniem attīstīt kritisko domāšanu un problēmu risināšanas prasmes, kļūt par aktīviem lietotājiem un pašiem vadīt savu mācību procesu, kas skolās ir ļoti svarīgi. Taču vissvarīgākais — skolēniem mācību process būs aizraujošs!</p>
+<p>Daži no mācību priekšmetiem, kuros skolotāji var iekļaut programmēšanu, ir valodas, mūzika, kā arī zinātne, tehnoloģija, inženierzinātnes un matemātika. Tas noderēs nākotnes zinātniekiem, mūziķiem, māksliniekiem — faktiski ikvienam! Visi skolotāji var mācību procesā integrēt programmēšanu un algoritmisko domāšanu. Daži skolās īstenojami pasākumi: stundā, kurā citu mācību priekšmetu ietvaros tiek apgūta valoda, var izskaidrot kādu ikdienas dzīvē sastopamu algoritmu; no filca var darināt vadības pulti, lai pievērstu uzmanību zinātnēm; var izmantot robotiku, lai palielinātu motivāciju apgūt matemātiku.</p> 
+<p>Šajā video parādīts, kā mūzikas, dabaszinātņu un valodu skolotāji var viegli integrēt programmēšanu un algoritmisko domāšanu mācību procesā, pat ja nav iepriekšējas pieredzes šajā jomā.</p>',
+            'activities'=>[
+                '1'=>'1. pasākums “Robotika un iekļaušana pamatskolēniem dabaszinātņu, tehnoloģiju, inženierzinātņu vai matemātikas stundās”',
+                '2'=>'2. pasākums “Mūzika ir programmēšana”',
+                '3'=>'3. pasākums “Rokdarbi un programmēšana ar Makey Makey komplektu”',
+                '4'=>'4. pasākums “Ikdienā sastopams algoritms mācību satura un valodas integrētas apguves stundā”'
+            ]
         ]
     ],
     'download_video_script' => 'Lejupielādēt video skriptu',

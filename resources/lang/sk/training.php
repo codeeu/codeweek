@@ -86,6 +86,42 @@ return [
                 '2' => 'Aktivita 2 – Ako vyrobiť mechanickú alebo robotickú ruku pre 2. stupeň základných škôl',
                 '3' => 'Aktivita 3 – Ako vyrobiť mechanickú alebo robotickú ruku pre stredné školy'
             ]
+        ],
+        '6' => [
+            'title'=>'Prostredie App Inventor a vývoj aplikácií',
+            'author'=>'Rosanna Kurrerová',
+            'text'=>'<p>Pozrite si toto video, v ktorom Rosanna Kurrerová, (zakladateľka programu CyberWayFinder) vysvetľuje, čo je prostredie App Inventor, približuje výhody vývoja aplikácií pri výuke a uvádza praktické príklady, ako môžu učitelia zaradiť prostredie App Inventor do výučby, a premeniť tak pasívnych žiakov na nadšených tvorcov hier.</p>
+<p>Všetci využívame aplikácie, pretože sú veľmi užitočné a s ich pomocou si môžeme rýchlo koordinovať aktivity. Stále viac a viac sa využívajú aj vo vzdelávaní, keďže umožňujú prispôsobiť vzdelávanie individuálnym potrebám a používateľom získavať informácie. Čo keby sme teda žiakov naučili vytvárať vzdelávacie aplikácie pre ostatných?</p>',
+            'activities'=>[
+                '1'=>'Aktivita 1 – Názov, pre prvý stupeň základnej školy',
+                '2'=>'Aktivita 2 – Názov, pre druhý stupeň základnej školy',
+                '3'=>'Aktivita 3 – Názov, pre stredné školy'
+            ]
+        ],
+        '7' => [
+            'title'=>'Manuálne zručnosti a vyrábanie rôznych vecí',
+            'author'=>'Diogo da Silva',
+            'text'=>'<p>Pracovné miesta a pracoviská sa menia a vzdelávanie sa týmto zmenám prispôsobuje. Pri príprave žiakov na kariéru v 21. storočí sa už nezaobídeme bez nových zručností, ako sú manuálne zručnosti, či upravovanie rôznych vecí, keďže stierajú rozdiel medzi školou a realitou. Pretvorením triedy na prostredie spolupráce, ktoré je zamerané na riešenie problémov, sa žiakom poskytuje možnosť aktívne sa zapájať a rozvíjať sa. V týchto aktivitách sa podporuje diskusia, čím sa trieda stáva centrom komunikácie, v ktorej má každý príspevok význam.</p>
+<p>Pozrite si uvedené video, v ktorom vás učiteľ predmetov STEAM Diogo da Silva, člen medzinárodnej školy Escola Global, prevedie krok za krokom prípravou na hodinu, v ktorej sa žiaci prostredníctvom manuálnych zručností, vyrábania a upravovania rôznych vecí učia riešiť problémy.</p>',
+            'activities'=>[
+                '1'=>'Aktivita 1 – Názov, pre prvý stupeň základnej školy',
+                '2'=>'Aktivita 2 – Názov, pre druhý stupeň základnej školy',
+                '3'=>'Aktivita 3 – Názov, pre stredné školy'
+            ]
+        ],
+        '8' => [
+            'title'=>'Programovanie pre všetky predmety',
+            'author'=>'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Keď sa povie „programovanie v škole“, prvé, čo vám napadne, sú hodiny informatiky, technológie, matematiky alebo prírodovedy. Lenže žiaci majú predsa aj množstvo iných záujmov a predmetov - prečo to teda nevyužiť a nezaviesť programovanie v rámci celého učebného plánu?</p>
+<p>Zaradenie programovania do výučby má mnoho výhod, pretože žiakom pomáha rozvíjať kritické myslenie a schopnosť riešiť problémy, stať sa aktívnymi používateľmi a viesť svoj vlastný proces učenia sa, čo má pre školy zásadný význam. Čo je však najdôležitejšie, vaši žiaci sa budú učiť zábavnou formou!</p>
+<p>Jazyky, hudba alebo veda, technológia, inžinierstvo a matematika (STEM) sú len niektoré z predmetov, v ktorých môžu využiť programovanie pri príprave budúcich vedcov, hudobníkov, umelcov, prakticky hocikoho. Programovanie a výpočtové myslenie môže do svojej triedy zaradiť každý učiteľ. Využívanie integrovaného učenia predmetu a cudzieho jazyka (metódy CLIL) na vysvetlenie algoritmu každodenného života, vytvorenie konzoly z plsti pri výučbe prírodovedy alebo využívanie vzdelávacích robotov na zvýšenie motivácie v matematike sú len niektoré z príkladov aktivít, ktoré môžete vo svojej triede robiť.</p>
+<p>V nasledujúcom videu si ukážeme, ako jednoducho môžu učitelia hudobnej výchovy, prírodovedy či jazykov zaradiť do výučby programovanie a výpočtové myslenie, a to aj bez predchádzajúcich skúseností.</p>',
+            'activities'=>[
+                '1'=>'Aktivita 1 Robotika a inklúzia pre základné školy v rámci STEM',
+                '2'=>'Aktivita 2 Hudba je programovanie',
+                '3'=>'Aktivita 3 Manuálne zručnosti a programovanie s Makey',
+                '4'=>'Aktivita 4 Algoritmus každodenného života na hodine vyučovanej metódou CLIL'
+            ]
         ]
     ],
     'download_video_script' => 'Stiahnuť prepis videa',

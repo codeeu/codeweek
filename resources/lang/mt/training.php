@@ -86,6 +86,42 @@ return [
                 '2' => 'Attività 2 - Kif tagħmel id mekkanika jew robotika għall-ewwel livelli tal-Iskola Sekondarja',
                 '3' => 'Attività 3 - Kif tagħmel id mekkanika jew robotika għall-ogħla livelli tal-Iskola Sekondarja'
             ]
+        ],
+        '6' => [
+            'title'=>'App Inventor u l-Iżvilupp tal-Apps',
+            'author'=>'Minn Rosanna Kurrer',
+            'text'=>'<p>Agħti daqqa t’għajn lejn dan il-video fejn Rosanna Kurrer, (il-Fundatriċi ta’ CyberWayFinder) tispjega x’inhu App Inventor, turi l-vantaġġi tal-użu tal-iżvilupp tal-Apps fil-klassi u tagħti xi eżempji prattiċi dwar kif l-għalliema jistgħu jintegraw l-App Inventor fil-klassi, u jittrasformaw studenti passivi fi f’kreaturi entużjasti ta’ logħbiet.</p>
+<p>Aħna kollha nużaw l-applikazzjonijiet peress li huma mod konvenjenti u mod rapidu biex nikkoordinaw l-attivitajiet tagħna. Huma wkoll qed jintużaw aktar u aktar fl-edukazzjoni peress li dawn jippermettu tagħlim personalizzat u jippermettu lill-utenti jiksbu informazzjoni, għalhekk għaliex ma tagħtix lill-istudenti tiegħek is-setgħa li jibnu app edukattiva għall-oħrajn?</p>',
+            'activities'=>[
+                '1'=>'Attività 1 – Titlu, għal Skola Primarja',
+                '2'=>'Attività 2 – Titlu, għal Skola Sekondarja Inferjuri',
+                '3'=>'Attività 3 – Titlu, għal Skola Sekondarja Superjuri'
+            ]
+        ],
+        '7' => [
+            'title'=>'Innavikar u Kreattività',
+            'author'=>'minn Diogo da Silva',
+            'text'=>'<p>L-impjiegi u l-postijiet tax-xogħol qed jinbidlu u l-edukazzjoni qed issegwi fil-passi tagħhom. Meta l-istudenti jkunu qed jitħejjew għall-karrieri tas-seklu 21, ħiliet ġodda bħall-innavikar, il-kreattività, u l-hacking isiru essenzjali peress li jnaqqsu d-distakk bejn l-iskola u r-realtà. Bit-trasformazzjoni tal-klassi f’ambjent kollaborattiv li jiffoka fuq is-soluzzjoni tal-problemi, l-istudenti huma kapaċi jinvolvu ruħhom u jirnexxu. Dawn l-attivitajiet jippromwovu d-diskussjoni, u b’hekk jippermettu li l-klassi ssir ċentru ta’ komunikazzjoni, fejn kull kontribuzzjoni hija importanti.</p> 
+<p>Agħti daqqa t’għajn lill-video hawn taħt, fejn għalliem Portugiż  tas-suġġetti STEAM, Diogo da Silva, membru tal-Escola Global, jieħdok pass pass fl-iżvilupp ta’ lezzjoni li twassal biex l-istudenti tiegħek jinnavikaw, jikkreaw u jiħħekkjaw biex isibu soluzzjoni.</p>',
+            'activities'=>[
+                '1'=>'Attività 1 – Titlu, għal Skola Primarja',
+                '2'=>'Attività 2 – Titlu, għal Skola Sekondarja Inferjuri',
+                '3'=>'Attività 3 – Titlu, għal Skola Sekondarja Superjuri'
+            ]
+        ],
+        '8' => [
+            'title'=>'Ikkowdjar għas-suġġetti kollha',
+            'author'=>'Minn M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Meta taħseb dwar l-ikkowdjar fil-klassi, l-ewwel stampa li tiġik f’rasek hija dik tal-kompjuters, it-Teknoloġija, il-Matematika jew ix-Xjenza. Madankollu, minħabba li l-istudenti għandhom għadd ta’ interessi u suġġetti, għaliex ma niħdux vantaġġ minn dan u nimplimentaw l-ikkowdjar fil-kurrikulu kollu?</p> 
+<p>L-integrazzjoni tal-ikkowdjar fil-klassi għandha ħafna benefiċċji, peress li tgħinhom jiżviluppaw il-ħsieb kritiku u l-ħiliet ta’ soluzzjoni tal-problemi, isiru utenti attivi u jmexxu l-proċess ta’ tagħlim tagħhom stess, li huwa essenzjali fl-iskejjel. Madankollu, l-aktar ħaġa importanti hi li l-istudenti tiegħek se jitgħallmu waqt li jieħdu pjaċir!</p>
+<p>Il-lingwi, il-mużika jew is-suġġetti STEM (xjenza, teknoloġija, inġinerija u matematika) huma biss ftit mis-suġġetti li l-għalliema jistgħu jikkodifikaw fihom għax-xjenzati, il-mużiċisti, l-artisti tal-futur, fil-verità għal kulħadd! L-għalliema kollha jistgħu jintegraw l-ikkowdjar u l-ħsieb komputazzjonali fil-klassi. L-użu ta’ lezzjoni b’CLIL (tagħlim integrat tal-kontenut u tal-lingwa) biex tispjega algoritmu tal-ħajja ta’ kuljum  il-ħolqien ta’ felt joystick biex tgħallem dwar ix-xjenza jew l-użu ta’ robots edukattivi biex tagħti spinta lill-motivazzjoni fil-matematika huma xi eżempji ta’ attivitajiet li tista’ tagħmel fil-klassi tiegħek.</p> 
+<p>Agħti daqqa t’għajn lill-video hawn taħt biex tara kif l-għalliema tal-Mużika, tax-Xjenza jew tal-Lingwi jistgħu jintegraw b’mod faċli l-ikkowdjar u l-ħsieb komputazzjonali fil-klassi, anki jekk m’għandekx esperjenza preċedenti. </p>',
+            'activities'=>[
+                '1'=>'Attività 1 Robotika u inklużjoni għall-iskejjel primarji għas-suġġetti STEM',
+                '2'=>'Attività 2 Mużika hija kkowdjar',
+                '3'=>'Attività 3 Innavikar u kkowdjar ma’ Makey Makey',
+                '4'=>'Attività 4 Algoritmu tal-ħajja ta’ kuljum għal lezzjoni b\'CLIL'
+            ]
         ]
     ],
     'download_video_script' => '',

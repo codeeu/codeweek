@@ -86,6 +86,42 @@ return [
                 '2' => 'Aktivitet 2 – Tillverka en mekanisk hand eller robothand för högstadiet och gymnasiet',
                 '3' => 'Aktivitet 3 – Tillverka en mekanisk hand eller robothand för gymnasiet'
             ]
+        ],
+        '6' => [
+            'title'=>'App Inventor och apputveckling',
+            'author'=>'av Rosanna Kurrer',
+            'text'=>'<p>I den här videon förklarar Rosanna Kurrer (grundare av CyberWayFinder) vad App Inventor är för något. Hon går igenom fördelarna med att utveckla appar i klassrummet och ger några praktiska exempel på hur du kan integrera App Inventor i undervisningen, så att du kan hjälpa passiva elever att bli engagerade spelskapare.</p>
+<p>Alla använder vi appar. Det är ett praktiskt och snabbt sätt att samordna olika aktiviteter. Appar används alltmer i undervisningen eftersom inlärningen anpassas efter den enskilda eleven och användaren kan inhämta information. Så varför inte låta eleverna skapa en utbildningsapp som andra kan använda?</p>',
+            'activities'=>[
+                '1'=>'Aktivitet 1: Titel – för låg- och mellanstadiet',
+                '2'=>'Aktivitet 2: Titel – för högstadiet',
+                '3'=>'Aktivitet 3: Titel – för gymnasiet'
+            ]
+        ],
+        '7' => [
+            'title'=>'Experimentera och skapa',
+            'author'=>'av Diogo da Silva',
+            'text'=>'<p>Jobben och arbetsplatserna förändras och utbildningen följer i deras fotspår. För att förbereda eleverna på 2000-talets karriärer och minska klyftan mellan skolan och verkligheten behövs nya färdigheter som att kunna experimentera, skapa och hacka. Genom att förvandla klassrummet till en samarbetsmiljö med fokus på problemlösning kan eleverna engagera sig och utvecklas. Dessa aktiviteter leder till diskussioner, vilket gör klassrummet till en sambandscentral där alla bidrag är viktiga.</p> 
+<p>I videon nedan förklarar den portugisiska STEAM-läraren (naturvetenskap, teknik, ingenjörsvetenskap, humaniora och matematik) Diogo da Silva, som är medlem i Escola Global, steg för steg hur du planerar en lektion där eleverna kan experimentera, skapa och hacka sig fram till en lösning.</p>',
+            'activities'=>[
+                '1'=>'Aktivitet 1: Titel – för låg- och mellanstadiet',
+                '2'=>'Aktivitet 2: Titel – för högstadiet',
+                '3'=>'Aktivitet 3: Titel – för gymnasiet'
+            ]
+        ],
+        '8' => [
+            'title'=>'Kodning för alla ämnen',
+            'author'=>'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Kodning i klassrummet förknippas i första hand med datorer, teknik, matematik och naturkunskap, men borde man inte försöka ta vara på att eleverna har många olika intressen och ämnen, och använda kodning i hela kursplanen?</p> 
+<p>Att använda kodning i undervisningen har många fördelar. Det hjälper eleverna att tänka kritiskt och lösa problem, bli aktiva användare och styra sin egen inlärningsprocess, vilket är grundläggande i skolan. Det viktigaste är dock att dina elever har kul medan de lär sig.</p>
+<p>Språk, musik och STEM-ämnen (naturvetenskap, teknik, ingenjörsvetenskap och matematik) är bara några av de ämnen som du kan koda i för att skapa framtidens forskare, musiker, konstnärer eller vad det nu kan vara. Alla lärare kan använda sig av kodning och datalogiskt tänkande i klassrummet. Du kan t.ex. använda CLIL-lektionen (språk- och innehållsintegrerad inlärning) för att presentera en vardagsalgoritm. Du kan låta eleverna skapa sin egen styrspak på naturkunskapen eller använda robotar för att öka intresset för matematik.</p> 
+<p>I videon nedan kan du se hur lärare i musik, naturkunskap och språk enkelt kan använda sig av kodning och datalogiskt tänkande i sin undervisning, även om de saknar tidigare erfarenhet.</p>',
+            'activities'=>[
+                '1'=>'Aktivitet 1: Robotteknik och inkludering för låg- och mellanstadiet i STEM',
+                '2'=>'Aktivitet 2: Musik är att koda',
+                '3'=>'Aktivitet 3: Experimentera och koda med Makey Makey',
+                '4'=>'Aktivitet 4: En vardagsalgoritm för CLIL-lektionen'
+            ]
         ]
     ],
     'download_video_script' => 'Hämta videoskript',

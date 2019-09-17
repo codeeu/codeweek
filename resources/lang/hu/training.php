@@ -86,6 +86,42 @@ return [
                 '2' => '2. tevékenység: Hogyan készítsünk mechanikus vagy robotkezet a középiskola alsó tagozatán?',
                 '3' => '3. tevékenység: Hogyan készítsünk mechanikus vagy robotkezet a középiskola felső tagozatán?'
             ]
+        ],
+        '6' => [
+            'title'=>'App Inventor és alkalmazásfejlesztés',
+            'author'=>'Rosanna Kurrer',
+            'text'=>'<p>Nézze meg az alábbi videót, amelyben Rosanna Kurrer (a CyberWayFinder alapítója) elmagyarázza, hogy mi az az App Inventor, felsorolja az alkalmazásfejlesztés előnyeit az oktatásban, és bemutat néhány gyakorlati példát arra, hogy a tanárok hogyan tudják beépíteni az App Inventort a tanórák menetébe, lelkes játékkészítőkké varázsolva a passzív diákokat.</p>
+<p>Mindannyian használunk alkalmazásokat, mivel azok révén kényelmesen és gyorsan koordinálhatjuk tevékenységeinket. Egyre gyakrabban használják az alkalmazásokat az oktatásban is, mert lehetővé teszik a személyre szabott tanulást, valamint az információszerzést a felhasználók számára. Miért ne tehetné képessé diákjait is arra, hogy egy oktatást támogató alkalmazást hozzanak létre mások számára?</p>',
+            'activities'=>[
+                '1'=>'1. foglalkozás – Cím, általános iskolák számára',
+                '2'=>'2. foglalkozás – Cím, középiskola alsó osztályai számára',
+                '3'=>'3. foglalkozás – Cím, középiskola felső osztályai számára'
+            ]
+        ],
+        '7' => [
+            'title'=>'Bütykölés és alkotás',
+            'author'=>'Diogo da Silva',
+            'text'=>'<p>A foglalkozások és munkahelyek változnak, az oktatás pedig a nyomukban jár. A 21. századi szakmai pályafutásokra való felkészítés során olyan új készségek – mint például a bütykölés, az alkotás és a hekkelés képessége – válnak elengedhetetlenné, amelyek csökkentik a szakadékot az iskola és a valóság között. A diákok elköteleződésének és megfelelő fejlődésének elősegítése érdekében a tantermeket a problémamegoldásra összpontosító, együttműködő környezetté kell alakítani. E tevékenységek előmozdítják az eszmecserét, lehetővé téve ily módon az osztály számára, hogy minden hozzájárulást megbecsülő kommunikációs központtá váljon.</p> 
+<p>Nézze meg az alábbi videót, amelyben a portugál TTMM-tanár és egyúttal az Escola Global tagja, Diogo da Silva, lépésről lépésre végigvezeti egy olyan tanóra felépítésén, amelyen diákjai bütykölés, alkotás és hekkelés útján jutnak el a végső megoldáshoz.</p>',
+            'activities'=>[
+                '1'=>'1. foglalkozás – Cím, általános iskolák számára',
+                '2'=>'2. foglalkozás – Cím, középiskola alsó osztályai számára',
+                '3'=>'3. foglalkozás – Cím, középiskola felső osztályai számára'
+            ]
+        ],
+        '8' => [
+            'title'=>'Programozás minden tantárgyban',
+            'author'=>'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Amikor iskolai programozásra gondolunk, legelőször a számítástechnika, a technológia, a matematika vagy a természettudományok területe jut az eszünkbe. Mivel azonban a diákokat számtalan más dolog is érdekli és többféle tantárgyat tanulnak, miért ne fordítsuk ezt a magunk javára és vezessük be a programozást minden tantárgyban?</p> 
+<p>Rengeteg előnye van annak, ha a programozást beépítjük a tanmenetbe: segít a diákoknak fejleszteni kritikai gondolkodásukat és problémamegoldó készségüket, támogatja, hogy aktív felhasználóvá váljanak és saját maguk irányítsák a tanulás folyamatát, ami elengedhetetlen az iskolában. De ami ezeknél is fontosabb, összeköthetik a kellemeset a hasznossal!</p>
+<p>Idegen nyelvek, ének-zene, természettudományok, technológia, műszaki tudományok, matematika... és még folytathatnánk a sort. Tanárként minden tárgynál ott a lehetőség, hogy programozáson keresztül adjuk át az ismeretanyagot a jövő tudósai, zenészei, művészei, sőt bármely szakma képviselői számára! Minden tanár be tudja építeni a programozást és az algoritmikus gondolkodást saját tantervébe. Miért ne modellezhetnénk algoritmussal a napi rutint akár egy tartalomalapú nyelvórán? Természettudományos ismeretek átadásához készítsünk filcből játékvezérlőt! Egy oktatórobot a matematikához is meghozza a diákok kedvét. Megannyi lehetőség minden tanórán!</p> 
+<p>Az alábbi kisfilmből megtudhatja, hogyan lehet könnyedén – akár minden előképzettség nélkül – beépíteni a programozást és az algoritmikus gondolkodást az ének-zene, a természettudományok vagy az idegen nyelvek oktatásába. </p>',
+            'activities'=>[
+                '1'=>'1. foglalkozás: Robotika és egyéni sikerélmény az általános iskolai TTMM-órákon',
+                '2'=>'2. foglalkozás: A zene nem más mint programozás',
+                '3'=>'3. foglalkozás: Bütykölés és programozás Makey Makey-vel',
+                '4'=>'4. foglalkozás: Napi rutin algoritmusa tartalomalapú nyelvórán'
+            ]
         ]
     ],
     'download_video_script' => 'Videó forgatókönyvének letöltése',

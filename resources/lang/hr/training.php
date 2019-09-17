@@ -86,6 +86,42 @@ return [
                 '2' => '2. aktivnost – Kako izraditi mehaničku ili robotsku ruku za niže razrede srednje škole',
                 '3' => '3. aktivnost – Kako izraditi mehaničku ili robotsku ruku za više razrede srednje škole'
             ]
+        ],
+        '6' => [
+            'title'=>'App Inventor i razvoj aplikacija',
+            'author'=>'autorica: Rosanna Kurrer',
+            'text'=>'<p>Pogledajte ovaj videozapis u kojemu Rosanna Kurrer (osnivačica organizacije CyberWayFinder) objašnjava što je App Inventor, iznosi prednosti uporabe razvoja aplikacija u nastavi i daje neke praktične primjere toga kako učitelji mogu integrirati App Inventor u nastavu, mijenjajući tako pasivne učenike u entuzijastične tvorce igara.</p>
+<p>Svi mi upotrebljavamo aplikacije jer nam omogućuju jednostavan i brz način usklađivanja aktivnosti. One se isto tako sve više upotrebljavaju u obrazovanju jer korisnicima omogućuju personalizirano učenje i stjecanje informacija. Zašto stoga ne biste osposobili svoje učenike da izrade obrazovnu aplikaciju za druge?</p>',
+            'activities'=>[
+                '1'=>'Aktivnost 1. – naslov, za osnovnu školu',
+                '2'=>'Aktivnost 2. – naslov, za niže razrede srednje škole',
+                '3'=>'Aktivnost 3. – naslov, za više razrede srednje škole'
+            ]
+        ],
+        '7' => [
+            'title'=>'Učenje kroz igru i stvaranje',
+            'author'=>'autor: Diogo da Silva',
+            'text'=>'<p>Poslove i radna mjesta zahvatile su promjene, a obrazovanje prati taj trend. U pripremi učenika za karijeru u 21. stoljeću nove vještine kao što su učenje kroz igru, stvaranje i hakiranje postaju ključne jer smanjuju jaz između škole i stvarnosti. Stvaranjem suradničkog okruženja u učionici u kojemu je rad usmjeren na rješavanje problema učenicima se omogućuje da sudjeluju i napreduju. Tim se aktivnostima promiče rasprava, čime se omogućuje da učionica postane komunikacijsko čvorište u kojemu je važan svaki doprinos.</p> 
+<p>Pogledajte videozapis u nastavku u kojemu vas portugalski učitelj predmeta u STEAM području Diogo da Silva, pripadnik škole Escola Global, postupno vodi kroz razvoj nastavnog plana kojim ćete svojim učenicima omogućiti da učenjem kroz igru, stvaranjem i hakiranjem pronađu put prema rješenju.</p>',
+            'activities'=>[
+                '1'=>'Aktivnost 1. – naslov, za osnovnu školu',
+                '2'=>'Aktivnost 2. – naslov, za niže razrede srednje škole',
+                '3'=>'Aktivnost 3. – naslov, za više razrede srednje škole'
+            ]
+        ],
+        '8' => [
+            'title'=>'Programiranje za sve predmete',
+            'author'=>'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Kada pomislite na programiranje u nastavi, prva će vam asocijacija biti računala, tehnologija, matematika ili znanost. Međutim, s obzirom na to da učenici imaju mnogo interesa i predmeta, zašto to ne biste iskoristili i uveli programiranje u cijeli nastavni plan i program?</p> 
+<p>Uvođenje programiranja u nastavu višestruko je korisno jer učenicima pomaže da razviju kritičko razmišljanje i vještine rješavanja problema te da postanu aktivni korisnici i upravljaju vlastitim procesom učenja, što je u školama ključno. Međutim, najvažnije je to što će vaši učenici istodobno učiti i zabavljati se!</p>
+<p>Jezici, glazba ili STEM samo su neki od predmeta u koje učitelji mogu uvesti programiranje za buduće znanstvenike, glazbenike, umjetnike i sve ostale! Svaki učitelj može uvesti u nastavu programiranje i računalno razmišljanje. Uporaba integriranog učenja sadržaja i jezika (engl. Content and Language Integrated Learning – CLIL) za objašnjavanje algoritama iz svakodnevnog života, izrada upravljačke palice (joystick) od filca kao načina učenja o znanosti ili uporaba obrazovnih robota za poticanje motiviranosti na satu matematike neki su od primjera aktivnosti koje možete primijeniti u učionici.</p> 
+<p>Pogledajte videozapis u nastavku kao primjer kako učitelji glazbe, znanosti ili jezika mogu na jednostavan način uvesti u nastavu programiranje i računalno razmišljanje, i to bez prethodnog iskustva.</p>',
+            'activities'=>[
+                '1'=>'Aktivnost 1. Robotika i uključivanje osnovnoškolskih učenika u STEM',
+                '2'=>'Aktivnost 2. Glazba je programiranje',
+                '3'=>'Aktivnost 3. Učenje kroz igru i programiranje s pomoću alata Makey Makey',
+                '4'=>'Aktivnost 4. Algoritam iz svakodnevnog života za uporabu CLIL-a u nastavi'
+            ]
         ]
     ],
     'download_video_script' => 'Preuzmite videoskriptu',

@@ -86,6 +86,42 @@ return [
                 '2' => 'Aktivita 2 - Jak vyrobit mechanickou nebo robotickou ruku pro nižší střední školu',
                 '3' => 'Aktivita 3 - Jak vyrobit mechanickou nebo robotickou ruku pro vyšší střední školu'
             ]
+        ],
+        '6' => [
+            'title'=>'Prostředí App Inventor a vývoj aplikací',
+            'author'=>'Autorka: Rosanna Kurrer',
+            'text'=>'<p>Podívejte se na následující video, kde Rosanna Kurrer (zakladatelka společnosti CyberWayFinder) vysvětluje, co je to prostředí App Inventor, objasňuje přínosy vývoje aplikací při výuce a uvádí několik praktických příkladů, jak mohou učitelé prostředí App Inventor využít ve výuce a proměnit pasivní studenty v nadšené vývojáře her.</p>
+<p>Aplikace dnes používáme všichni, protože nám umožňují pohodlnou a rychlou koordinaci činností. Stále častěji nacházejí uplatnění také ve vzdělávacím procesu, neboť umožňují přizpůsobit učení každému uživateli přesně na míru a usnadňují také získávání informací. Co kdybychom tedy studenty naučili vytvořit vzdělávací aplikaci pro ostatní?</p>',
+            'activities'=>[
+                '1'=>'Aktivita 1 – název, pro první stupeň základních škol',
+                '2'=>'Aktivita 2 – název, pro druhý stupeň základních škol',
+                '3'=>'Aktivita 3 – název, pro střední školy'
+            ]
+        ],
+        '7' => [
+            'title'=>'Pokusy a vyrábění předmětů',
+            'author'=>'Autor: Diogo da Silva',
+            'text'=>'<p>Náplň práce a pracoviště se mění a podle toho se mění i vzdělávání. Při přípravě studentů na kariéru v 21. století se dnes už neobejdeme bez nových dovedností, jako je například pokusy, vyrábění a tvořivé programování, protože stírají rozdíl mezi školou a praxí. Když ve třídě vytvoříme prostředí spolupráce zaměřené na řešení problémů, umožníme tím studentům aktivně se zapojit a úspěšně se rozvíjet. Vítanou součástí těchto aktivit je diskuse – třída se tak stává centrem komunikace, kde každý může něčím přispět ke zdaru společné věci.</p> 
+<p>Podívejte se na video, kde vás Diogo da Silva, portugalský učitel předmětů STEAM (propojení přírodovědy, technologických a technických oborů, matematiky a výtvarné výchovy) a člen Escola Global krok za krokem provede přípravou na hodinu, na které se vaši studenti naučí řešit problémy pomocí pokusů, výroby předmětů a tvořivého programování.</p>',
+            'activities'=>[
+                '1'=>'Aktivita 1 – název, pro první stupeň základních škol',
+                '2'=>'Aktivita 2 – název, pro druhý stupeň základních škol',
+                '3'=>'Aktivita 3 – název, pro střední školy'
+            ]
+        ],
+        '8' => [
+            'title'=>'Programování ve všech vyučovacích předmětech',
+            'author'=>'Autor: M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Když se řekne „programování ve škole“, ze všeho nejdřív se nám vybaví hodina informatiky, technologie, matematiky nebo přírodovědy. Jenže žáci a studenti mají přece i celou řadu dalších zájmů a ve škole jsou taky jiné předměty. Co kdybychom toho zkusili využít a zavedli programování napříč celou učební osnovou?</p> 
+<p>Zařazení programování do výuky má celou řadu výhod, protože pomáhá studentům rozvíjet kritické myšlení a schopnost řešit problémy. Stávají se tak aktivními uživateli, kteří si proces vlastního učení řídí sami, což má při školním vzdělávání zcela zásadní význam. Ze všeho nejdůležitější ale je, že studenty začně učení více bavit!</p>
+<p>Učitelé mohou využít programování například v hodinách jazyků, hudební výchovy nebo předmětů STEM (přírodověda, technologické a technické obory a matematika) při přípravě budoucích vědců, hudebníků nebo umělců – zkrátka úplně každého! Programování a informatické myšlení může do výuky začlenit každý učitel. Hodina CLIL (integrovaná výuka předmětu a cizího jazyka) se například dá využít k tomu, abyste žákům objasnili algoritmus některé z každodenních činností; nebo si žáci mohou vyrobit joystick a přitom se dovědět něco o přírodních vědách; pomocí výukových robotů lze dosáhnout větší motivace žáků v matematice. A to je jen příklad toho, co všechno můžete při svých hodinách podniknout.</p> 
+<p>V následujícím videu si ukážeme, jak snadno může učitel hudební výchovy, přírodovědy nebo jazyků ve svých hodinách využít programování a informatické myšlení, a to i v případě, že s tím nemá žádné předchozí zkušenosti.</p>',
+            'activities'=>[
+                '1'=>'Aktivita 1 Robotika a inkluze pro nižší stupeň základních škol v hodinách STEM',
+                '2'=>'Aktivita 2 Programování v hudbě',
+                '3'=>'Aktivita 3 Pokusy a programování se sadou Makey Makey',
+                '4'=>'Aktivita 4 Algoritmus každodenní činnosti v hodině CLIL'
+            ]
         ]
     ],
     'download_video_script' => 'Stáhnout scénář videa',
