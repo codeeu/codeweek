@@ -86,6 +86,42 @@ return [
                 '2' => 'Activitatea 2 – Cum să faci o mână mecanică sau robotizată, pentru învățământul gimnazial',
                 '3' => 'Activitatea 3 – Cum să faci o mână mecanică sau robotizată, pentru învățământul liceal'
             ]
+        ],
+        '6' => [
+            'title'=>'App Inventor și App Development',
+            'author'=>'de Rosanna Kurrer',
+            'text'=>'<p>Urmăriți acest videoclip în care Rosanna Kurrer (fondatoarea CyberWayFinder) explică ce este App Inventor, trece în revistă avantajele utilizării App development în sala de clasă și oferă câteva exemple practice privind modul în care profesorii pot integra App Inventor în sala de clasă, transformând elevii pasivi în creatori de jocuri entuziaști.</p>
+<p>Cu toții utilizăm aplicații, deoarece acestea reprezintă o modalitate convenabilă și rapidă de a ne coordona activitățile. De asemenea, aplicațiile sunt tot mai utilizate în educație, deoarece fac posibilă învățarea personalizată și le permit utilizatorilor să dobândească informații. Așadar, de ce să nu le dați elevilor dumneavoastră posibilitatea de a crea o aplicație educațională pentru alții?</p>',
+            'activities'=>[
+                '1'=>'Activitatea 1 – Titlu, pentru învățământul primar',
+                '2'=>'Activitatea 2 – Titlu, pentru învățământul secundar inferior',
+                '3'=>'Activitatea 3 – Titlu, pentru învățământul secundar superior'
+            ]
+        ],
+        '7' => [
+            'title'=>'Bricolajul și crearea',
+            'author'=>'de Diogo da Silva',
+            'text'=>'<p>Posturile și locurile de muncă sunt în schimbare și educația le calcă pe urme. Pentru pregătirea elevilor pentru carierele din secolul 21, devin esențiale noi aptitudini, precum bricolajul, crearea și găsirea de soluții ingenioase, deoarece acestea diminuează decalajul dintre școală și realitate. Transformând sala de clasă într-un mediu de colaborare axat pe soluționarea problemelor, elevii se pot implica și pot progresa. Aceste activități promovează discuțiile, permițând astfel ca sala de clasă să devină un centru de comunicare, unde fiecare contribuție este importantă.</p> 
+<p>Urmăriți videoclipul de mai jos, în care profesorul portughez de STIM, Diogo da Silva, membru al Escola Global, vă explică pas cu pas cum să elaborați o lecție care să îi stimuleze pe elevi să bricoleze,, să creeze și să învețe să găsească soluții.</p>',
+            'activities'=>[
+                '1'=>'Activitatea 1 – Titlu, pentru învățământul primar',
+                '2'=>'Activitatea 2 – Titlu, pentru învățământul secundar inferior',
+                '3'=>'Activitatea 3 – Titlu, pentru învățământul secundar superior'
+            ]
+        ],
+        '8' => [
+            'title'=>'Utilizarea programării la toate materiile',
+            'author'=>'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Când te gândești la programare în sala de clasă, te gândești imediat la calculatoare, technologie, matematică sau științe. Totuși, având în vedere că elevii au o serie de interese și de materii, de ce să nu folosim acest lucru în favoarea noastră și să nu punem în aplicare programarea la nivelul întregii programe școlare?</p> 
+<p>Integrarea codificării în sala de clasă are numeroase beneficii, deoarece ajută elevii să își dezvolte gândirea critică și capacitatea de a rezolva probleme, să devină utilizatori activi și să își coordoneze propriul proces de învățare, care este esențial în școli. Cu toate acestea, cel mai important lucru este că elevii dumneavoastră vor învăța și se vor distra în același timp!</p>
+<p>Limbile străine, muzica sau STIM sunt doar câteva dintre materiile pe care profesorii le pot codifica pentru viitorii oameni de știință, muzicieni, artiști, de fapt pentru oricine! Toți profesorii pot integra programarea și gândirea computațională în sala de clasă. Utilizarea unei lecții CLIL pentru a explica un algoritm din viața cotidiană, crearea unui joystick din pâslă pentru a învăța despre știință sau utilizarea unor roboți didactici pentru a stimula motivația în matematică reprezintă câteva exemple de activități pe care le puteți desfășura în sala de clasă.</p> 
+<p>Urmăriți videoclipul de mai jos pentru a vedea modul în care profesorii de muzică, științe sau limbi străine pot integra cu ușurință programarea și gândirea computațională în sala de clasă, fără a avea vreo experiență anterioară.</p>',
+            'activities'=>[
+                '1'=>'Activitatea 1 Robotica și includerea pentru învățământul primar în STIM',
+                '2'=>'Activitatea 2 Muzica înseamnă programare',
+                '3'=>'Activitatea 3 Bricolajul și programarea cu Makey Makey',
+                '4'=>'Activitatea 4 Un algoritm din viața cotidiană pentru o lecție CLIL'
+            ]
         ]
     ],
     'download_video_script' => 'Descărcați textul videoclipului',

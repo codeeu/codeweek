@@ -86,6 +86,42 @@ return [
                 '2' => '2 veikla. Kaip sukurti mechaninę arba roboto ranką – jaunesnių klasių vidurinės mokyklos mokiniams',
                 '3' => '3 veikla. Kaip sukurti mechaninę arba roboto ranką – vyresnių klasių vidurinės mokyklos mokiniams'
             ]
+        ],
+        '6' => [
+            'title'=>'Programėlių kūrimo priemonė „App Inventor“ ir programėlių kūrimas',
+            'author'=>'Parengė Rosanna Kurrer',
+            'text'=>'<p>Pažiūrėkite vaizdo siužetą, kuriame Rosanna Kurrer („CyberWayFinder“ steigėja) aiškina, kas yra „App Inventor“, apžvelgia programėlių kūrimo klasėje naudą ir pateikia keletą praktinių pavyzdžių, kaip mokytojai gali integruoti „App Inventor“ į klasės veiklą ir neaktyvius mokinius paskatinti tapti entuziastingais žaidimų kūrėjais.</p>
+<p>Visi naudojamės taikomosiomis programomis, nes jomis galima patogiai ir greitai koordinuoti savo veiklą. Jos vis plačiau naudojamos ir švietimo srityje, nes leidžia organizuoti prie asmeninių poreikių pritaikytą mokymą, o naudotojams – gauti informacijos, tad kodėl nesuteikus savo mokiniams galimybės sukurti edukacinę programėlę kitiems?</p>',
+            'activities'=>[
+                '1'=>'1 veikla. Pavadinimas, skiriama pradinių mokyklų moksleiviams',
+                '2'=>'2 veikla. Pavadinimas, skiriama jaunesniųjų vidurinės mokyklos klasių mokiniams',
+                '3'=>'3 veikla. Pavadinimas, skiriama vyresniųjų vidurinės mokyklos klasių mokiniams'
+            ]
+        ],
+        '7' => [
+            'title'=>'Meistravimas ir konstravimas',
+            'author'=>'Parengė Diogo da Silva',
+            'text'=>'<p>Darbai ir darbo vietos kinta, o švietimas padeda neatsilikti nuo šios raidos. Rengiant mokinius profesinei veiklai XXI amžiuje, labai svarbūs tampa nauji įgūdžiai – meistravimas, konstravimas ir programavimas, nes jie mažina atotrūkį tarp mokyklos ir tikrovės. Klasėje sukūrus bendradarbiavimo aplinką, orientuotą į problemų sprendimą, mokiniams suteikiama galimybė aktyviai dalyvauti ir tuo džiaugtis. Tokia veikla skatina diskusijas, taigi klasė gali tapti bendravimo centru, kur kiekvieno indėlis svarbus.</p> 
+<p>Pažiūrėkite toliau pateikiamą vaizdo siužetą, kuriame Portugalijos mokyklos „Escola Global“ gamtos mokslų, technologijų, inžinerijos, meno ir matematikos (angl. STEAM) mokytoja Diogo da Silva išsamiai pasakoja, kaip parengti pamoką, kurios metu jūsų mokiniai mokytųsi meistrauti, kurti ir programuoti ieškodami sprendimo.</p>',
+            'activities'=>[
+                '1'=>'1 veikla. Pavadinimas, skiriama pradinių mokyklų moksleiviams',
+                '2'=>'2 veikla. Pavadinimas, skiriama jaunesniųjų vidurinės mokyklos klasių mokiniams',
+                '3'=>'3 veikla. Pavadinimas, skiriama vyresniųjų vidurinės mokyklos klasių mokiniams'
+            ]
+        ],
+        '8' => [
+            'title'=>'Programavimo įtraukimas į visus dalykus',
+            'author'=>'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Kai pagalvojate apie programavimą, pirmiausia, kas jums ateina į galvą, yra kompiuteriai, technologijos, matematika arba mokslas. Tačiau, turint omenyje, kad mokiniai daug kuo domisi ir mokosi įvairių dalykų, kodėl tuo nepasinaudojus ir neįtraukus programavimo į visą mokymo programą?</p> 
+<p>Įtraukti programavimą į klasės veiklą naudinga įvairiais aspektais: jis padeda mokiniams lavinti kritinį mąstymą ir problemų sprendimo įgūdžius, tapti aktyviais naudotojais ir valdyti savo pačių mokymosi procesą, o tai mokykloje labai svarbu. Tačiau svarbiausia, kad jūsų mokiniams bus smagu mokytis!</p>
+<p>Kalbos, muzika arba gamtos mokslai, technologijos, inžinerija ir matematika (angl. STEM) – tai tik keletas dalykų, kurių mokytojai gali pasitelkti programavimą, kad išugdytų būsimus mokslininkus, muzikantus, menininkus, o iš esmės – bet kokios srities specialistus! Programavimą ir skaitmeninį mąstymą į klasės veiklą gali įtraukti visi mokytojai. Kasdienio gyvenimo algoritmo paaiškinimas per integruotą dalyko ir užsienio kalbos pamoką, veltinio žaidimų pulto gamyba siekiant suprasti, kas yra mokslas, arba edukacinių robotų naudojimas siekiant paskatinti mokytis matematikos – tik keletas pavyzdžių, kokios veiklos galite imtis klasėje.</p> 
+<p>Norėdami sužinoti, kaip muzikos, mokslo srities dalykų arba kalbų mokytojai gali nesunkiai įtraukti programavimą ir skaitmeninį mąstymą į klasės veiklą net ir neturėdami ankstesnės patirties, pažiūrėkite toliau pateikiamą vaizdo siužetą.</p>',
+            'activities'=>[
+                '1'=>'1 veikla. Robotika ir įtrauktis pradinėse mokyklose mokant gamtos mokslų, technologijų, inžinerijos ir matematikos (angl. STEM) dalykų',
+                '2'=>'2 veikla. Muzika – tai programavimas',
+                '3'=>'3 veikla. Meistravimas ir programavimas naudojant „Makey Makey“',
+                '4'=>'4 veikla. Kasdienio gyvenimo algoritmo naudojimas integruotam dalyko ir užsienio kalbos mokymui'
+            ]
         ]
     ],
     'download_video_script' => 'Atsisiųsti vaizdo įrašo scenarijų',

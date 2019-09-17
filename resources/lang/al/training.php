@@ -88,6 +88,42 @@ return [
                 '2' => 'Aktiviteti 2 - Si të krijoni një dorë mekanike prej kartoni në ciklin e mesëm të ulët',
                 '3' => 'Aktiviteti 3 - Si të krijoni një dorë mekanike prej kartoni në shkollën e mesme'
             ]
+        ],
+        '6' => [
+            'title'=>'App Inventor dhe zhvillimi i aplikacioneve',
+            'author'=>'Nga Rosanna Kurrer',
+            'text'=>'<p>Hidhini një sy kësaj videoje ku Rosanna Kurrer, (Themeluese e CyberWayFinder) shpjegon se çfarë është App Inventor, shpjegon avantazhet e zhvillimit të aplikacioneve në klasë dhe jep disa shembuj se si mësuesit mund të integrojnë App Inventor në klasë, të transformojnë nxënësit pasivë në krijues entuziastë lojërash.</p>
+<p>Të gjithë ne i përdorim aplikacionet sepse ato janë një mënyrë praktike dhe e shpejtë për të koordinuar aktivitetet tona. Ato përdoren gjithnjë e më shumë në arsim sepse lejojnë mësimin e personalizuar dhe u japin mundësi përdoruesve të mësojnë informacione, prandaj pse të mos u jepni mundësinë nxënësve tuaj të ndërtojnë një aplikacion arsimor për të tjerët?</p>',
+            'activities'=>[
+                '1'=>'Aktiviteti 1 – Titulli, për ciklin e ulët fillor',
+                '2'=>'Aktiviteti 2 – Titulli, për ciklin e mesëm të ulët',
+                '3'=>'Aktiviteti 3 – Titulli, për shkollën e mesme'
+            ]
+        ],
+        '7' => [
+            'title'=>'Modifikimi dhe krijimi',
+            'author'=>'Nga Diogo da Silva',
+            'text'=>'<p>Puna dhe vendet e punës po ndryshojnë dhe arsimi po ndjek hapat e tyre. Kur i përgatisim nxënësit për karrierat e shekullit të 21të, bëhen të rëndësishme aftësitë e reja si modifikim, krijimi dhe “hacking”, sepse ato ngushtojnë hendekun mes shkollës dhe realitetit. Duke e transformuar klasën në një mjedis bashkëpunues që fokusohet te zgjidhja e problemeve, nxënësit janë në gjendje të përfshihen dhe të lulëzojnë. Këto aktivitete nxisin diskutimin, duke lejuar që klasa të bëhet një qendër komunikimi, ku çdo kontribut është i rëndësishëm.</p> 
+<p>Hidhini një sy videos së mëposhtme, ku mësuesi portugez i lëndëve SHTIM, Diogo da Silva, një anëtar i Escola Global, ju çon hap pas hapi përmes zhvillimit të një mësimi që i nxit nxënësit ta gjejnë zgjidhjen duke modifikuar, krijuar dhe bërë “hacking”.</p>',
+            'activities'=>[
+                '1'=>'Aktiviteti 1 – Titulli, për ciklin e ulët fillor',
+                '2'=>'Aktiviteti 2 – Titulli, për ciklin e mesëm të ulët',
+                '3'=>'Aktiviteti 3 – Titulli, për shkollën e mesme'
+            ]
+        ],
+        '8' => [
+            'title'=>'Kodimi për të gjitha lëndët',
+            'author'=>'Nga M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Kur mendoni për kodimin në klasë, imazhi i parë që vjen në mendje janë kompjuterët, teknologjia, matematika ose shkenca. Por, duke qenë se nxënësit kanë një numër interesash dhe lëndësh, pse të mos e përdorim këtë në favorin tonë dhe ta implementojmë kodimin në të gjithë kurrikulën?</p>
+<p>Integrimi i kodimit në klasë ka shumë përfitime, sepse i ndihmon nxënësit të zhvillojnë aftësitë e tyre në mendimin e tyre kritik dhe zgjidhjen e problemeve, të bëhen përdorues aktivë dhe të drejtojnë procesin e tyre të të mësuarit, që është thelbësor në shkolla. Megjithatë, gjëja më e rëndësishme është se nxënësit tuaj do të mësojnë ndërkohë që argëtohen!</p>
+<p>Gjuhësia, muzika ose SHTIM (shkenca, teknologjia, inxhinieria dhe matematika) janë vetëm disa prej lëndëve që mësuesit mund të kodojnë për shkencëtarët, muzikantët dhe artistët e  ardhshëm, praktikisht për këdo! Të gjithë mësuesit mund të integrojnë kodimin dhe mendimin kompjuterik në klasë. Përdorimi i një mësimi të metodës CLIL për të shpjeguar një algoritëm të jetës së përditshme, krijimi i një leve amatore për të mësuar rreth shkencës ose përdorimi i robotëve edukativë për të nxitur motivimin në matematikë, janë disa shembuj të aktiviteteve që mund të bëni në klasë.</p>
+<p>Shikoni videon më poshtë për të parë se si mësuesit e muzikës, shkencës ose gjuhëve mund të integrojnë me lehtësi kodimin ose mendimin kompjuterik në klasë, megjithëse mund të mos keni përvojë të mëparshme.</p>',
+            'activities'=>[
+                '1'=>'Aktiviteti 1 Robotika dhe përfshirja për shkollën fillore në lëndët e SHTIM',
+                '2'=>'Aktiviteti 2 Muzika është kodim',
+                '3'=>'Aktiviteti 3 Modifikimi dhe kodimi me Makey Makey',
+                '4'=>'Aktiviteti 4 Një algoritëm i jetës së përditshme për një mësim të metodës CLIL'
+            ]
         ]
     ],
     'download_video_script' => 'Shkarko tekstin e videos',

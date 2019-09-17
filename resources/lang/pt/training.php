@@ -86,6 +86,42 @@ return [
                 '2' => 'Atividade 2 — Como construir uma mão mecânica ou robótica para o segundo e terceiro ciclos do ensino básico',
                 '3' => 'Atividade 3 — Como construir uma mão mecânica ou robótica para o ensino secundário'
             ]
+        ],
+        '6' => [
+            'title'=>'A App Inventor e o desenvolvimento de aplicações',
+            'author'=>'Por Rosanna Kurrer',
+            'text'=>'<p>Veja este vídeo em que Rosanna Kurrer (fundadora da CyberWayFinder) explica o que é a App Inventor, descreve as vantagens de desenvolver aplicações na sala de aula e apresenta alguns exemplos práticos de como os professores podem integrar a App Inventor nas suas aulas, transformando alunos passivos em criadores de jogos entusiastas.</p>
+<p>Todos nós utilizamos aplicações, uma vez que estas nos ajudam a coordenar as nossas atividades de forma rápida e cómoda. As aplicações são também cada vez mais usadas no ensino, porque possibilitam uma aprendizagem personalizada e a aquisição de informação pelos seus utilizadores. Por isso, porque não dar aos seus alunos os meios necessários para criarem uma aplicação didática que possa ser útil a outras pessoas?</p>',
+            'activities'=>[
+                '1'=>'Atividade 1 – Título, para o primeiro ciclo do ensino básico',
+                '2'=>'Atividade 2 – Título, para o segundo e terceiro ciclos do ensino básico',
+                '3'=>'Atividade 3 – Título, para o ensino secundário'
+            ]
+        ],
+        '7' => [
+            'title'=>'Experimentar e fazer',
+            'author'=>'Por Diogo da Silva',
+            'text'=>'<p>Os postos de trabalho e os locais de trabalho estão a mudar e a educação segue o mesmo caminho. Na missão de preparar os alunos para a vida profissional do século XXI, há novas competências, como a capacidade de experimentar, fazer e descobrir novas soluções, que se tornaram essenciais porque reduzem a distância entre a escola e a vida real. Ao transformar a sala de aula num espaço de colaboração centrado na resolução de problemas, está a dar aos alunos a possibilidade de participar e crescer. Estas atividades promovem o debate, permitindo que a sala de aula se torne uma plataforma de comunicação onde todos os contributos contam.</p> 
+<p>No vídeo a seguir, Diogo da Silva, um professor português da área de STEAM (ciência, tecnologia, engenharia, arte e matemática) e membro da Escola Global, descreve, passo a passo, o desenvolvimento de uma aula que leva os alunos a experimentar, fazer e encontrar as suas próprias soluções.</p>',
+            'activities'=>[
+                '1'=>'Atividade 1 – Título, para o primeiro ciclo do ensino básico',
+                '2'=>'Atividade 2 – Título, para o segundo e terceiro ciclos do ensino básico',
+                '3'=>'Atividade 3 – Título, para o ensino secundário'
+            ]
+        ],
+        '8' => [
+            'title'=>'Programar em todas as disciplinas',
+            'author'=>'Por M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Quando pensamos em programação na sala de aula, lembramo-nos imediatamente de computadores, tecnologias, matemática ou ciências. No entanto, uma vez que os alunos têm múltiplos interesses e disciplinas, por que não tirar partido desse facto e ensinar programação em todas as matérias?</p> 
+<p>A integração da programação na sala de aula tem muitas vantagens, ajudando os alunos a desenvolverem o espírito crítico e a capacidade de resolução de problemas, a tornarem-se utilizadores ativos e a assumirem a liderança do seu próprio processo de aprendizagem, uma atitude essencial na escola. O mais importante, porém, é que os seus alunos estarão a aprender divertindo-se!</p>
+<p>As disciplinas de línguas e música ou na área da ciência, tecnologia, engenharia e matemática (CTEM) são apenas alguns dos domínios em que os professores podem usar a programação em benefício da formação de futuros cientistas, músicos, artistas e, na verdade, de qualquer pessoa. Qualquer professor pode integrar a programação e o pensamento computacional na sala de aula. Aproveitar uma aula de aprendizagem integrada de línguas e conteúdos (AILC) para explicar um algoritmo utilizado na vida diária, criar um joystick em feltro para aprender ciências ou usar robôs educativos para motivar os alunos para a disciplina de matemática são alguns exemplos de atividades que pode realizar na sua sala de aula.</p> 
+<p>O vídeo a seguir mostra-lhe como professores de música, ciências e línguas conseguiram integrar facilmente a programação e o pensamento computacional nas suas aulas, mesmo sem ter experiência anterior. </p>',
+            'activities'=>[
+                '1'=>'Atividade 1 Robótica e inclusão para o primeiro ciclo do ensino básico no domínio das CTEM',
+                '2'=>'Atividade 2 Música é programação!',
+                '3'=>'Atividade 3 Improvisar e programar com a Makey Makey',
+                '4'=>'Atividade 4 Um algoritmo da vida diária para uma aula de AILC'
+            ]
         ]
     ],
     'download_video_script' => 'Descarregue o guião do vídeo',

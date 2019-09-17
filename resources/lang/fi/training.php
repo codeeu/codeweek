@@ -86,6 +86,42 @@ return [
                 '2' => 'Toiminta 2 - Mekaanisen käden tai robottikäden valmistaminen yläkouluissa',
                 '3' => 'Toiminta 3 - Mekaanisen käden tai robottikäden valmistaminen toisen asteen oppilaitoksissa'
             ]
+        ],
+        '6' => [
+            'title'=>'App Inventor ja sovellusten kehittäminen',
+            'author'=>'Tekijä: Rosanna Kurrer',
+            'text'=>'<p>Tutustu Rosanna Kurrerin (CyberWayFinder-ohjelman perustaja) videoon, jolla hän kertoo, mikä on App Inventor, ja selittää, mitä hyötyä on sovellusten kehittämisestä koulussa. Lisäksi hän antaa joitakin käytännön esimerkkejä siitä, miten opettajat voivat hyödyntää App Inventor  sovellusta opetuksessa ja miten passiivisista oppilaista saadaan innokkaita pelintekijöitä.</p>
+<p>Me kaikki käytämme sovelluksia: ne ovat kätevä ja helppo tapa koordinoida toimintaamme. Sovelluksia käytetään myös jatkuvasti enemmän koulutuksessa, koska ne mahdollistavat yksilöllisen oppimisen ja koska käyttäjät voivat hankkia tietoja niiden avulla. Mikset siis antaisi oppilaille mahdollisuutta kehittää koulutussovellus muille?</p>',
+            'activities'=>[
+                '1'=>'Tapahtuma 1 – Otsikko, alakoulu',
+                '2'=>'Tapahtuma 2 – Otsikko, yläkoulu',
+                '3'=>'Tapahtuma 3 – Otsikko, lukio'
+            ]
+        ],
+        '7' => [
+            'title'=>'Rakentelu ja valmistaminen',
+            'author'=>'Tekijä: Diogo da Silva',
+            'text'=>'<p>Työt ja työpaikat ovat muuttumassa, ja niiden myötä myös koulutus. Uudet taidot, kuten rakentelu, valmistaminen ja hakkerointi, kaventavat koulun ja todellisuuden välistä kuilua. Siksi niillä on tärkeä rooli, kun oppilaita autetaan valmistautumaan 2000-luvun työuriin. Kun luokkahuoneesta luodaan yhteistyöhön perustuva ympäristö, jossa painotetaan ongelmanratkaisua, oppilaat saavat eväät osallistumiseen ja menestymiseen. Nämä harjoitukset edistävät keskustelua, minkä ansiosta luokkahuoneesta tulee viestinnän keskus, jossa jokaisen panos on tärkeä.</p> 
+<p>Tutustu alla olevaan Diogo da Silvan videoon, jossa hän neuvoo vaihe vaiheelta, miten laaditaan oppitunti, jolla oppilaat rakentelevat, valmistavat ja hakkeroivat tiensä ratkaisuun. Diogo da Silva on portugalilainen STEAM-aineiden  opettaja ja Escola Global  koulun jäsen.</p>',
+            'activities'=>[
+                '1'=>'Tapahtuma 1 – Otsikko, alakoulu',
+                '2'=>'Tapahtuma 2 – Otsikko, yläkoulu',
+                '3'=>'Tapahtuma 3 – Otsikko, lukio'
+            ]
+        ],
+        '8' => [
+            'title'=>'Koodausta kaikkiin oppiaineisiin',
+            'author'=>'Tekijä: M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Koodauksesta opetuksessa tulevat ensin mieleen tietokoneet, tekniikka, matematiikka tai luonnontieteet. Oppilailla on kuitenkin monia kiinnostuksenkohteita ja aineita, joten eikö se kannattaisi hyödyntää ja sisällyttää koodaus koko opetussuunnitelmaan?</p> 
+<p>Koodauksen yhdistämisestä opetukseen on monia etuja: sen avulla oppilaat kehittävät kriittiseen ajatteluun ja ongelmanratkaisuun liittyviä taitoja, oppivat toimimaan aktiivisina käyttäjinä ja ohjaamaan omaa oppimistaan, mikä on koulussa erittäin tärkeää. Kaikkein tärkeintä kuitenkin on, että oppiminen on oppilaista hauskaa!</p>
+<p>Opettajat voivat yhdistää koodauksen esimerkiksi kieliin, musiikkiin ja STEM-aineisiin ja opettaa koodausta vaikkapa tuleville tieteilijöille, muusikoille tai artisteille. Kaikki opettajat voivat yhdistää koodausta ja laskennallista ajattelua opetukseensa. Opetuksessa voidaan käyttää esimerkiksi seuraavia harjoituksia: arkipäivän algoritmin selittäminen CLIL-tunnilla, ohjainsauvan tekeminen huovasta tiedetunneilla tai koulutuksellisten robottien käyttö motivaation lisäämiseksi matematiikassa.</p> 
+<p>Kurkista alla olevaan videoon ja havainnoi, miten musiikin, luonnontieteiden tai kielten opettajat voivat yhdistää helposti koodausta ja laskennallista ajattelua opetukseen. Aiempaa kokemusta ei tarvita.</p>',
+            'activities'=>[
+                '1'=>'Tapahtuma 1 Robotiikkaa ja osallistamista alakoulun STEM-aineissa',
+                '2'=>'Tapahtuma 2 Musisoidaan koodaamalla',
+                '3'=>'Tapahtuma 3 Rakentelua ja koodausta Makey Makey  rakennussarjalla',
+                '4'=>'Tapahtuma 4 Tosielämän algoritmi CLIL-tunnille'
+            ]
         ]
     ],
     'download_video_script' => 'Lataa videon käsikirjoitus',

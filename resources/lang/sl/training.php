@@ -86,6 +86,42 @@ return [
                 '2' => 'Dejavnost 2 – Kako izdelati mehansko ali robotsko roko za nižje srednje šole',
                 '3' => 'Dejavnost 3 – Kako izdelati mehansko ali robotsko roko za višje srednje šole'
             ]
+        ],
+        '6' => [
+            'title'=>'App Inventor in razvoj aplikacij',
+            'author'=>'Avtorica: Rosanna Kurrer',
+            'text'=>'<p>Oglejte si ta videoposnetek, v katerem Rosanna Kurrer (ustanoviteljica platforme CyberWayFinder) razloži, kaj je App Inventor, pojasni prednosti vključevanja razvoja aplikacij v pouk in navede nekaj praktičnih primerov, kako lahko učitelji App Inventor vključijo v pouk in tako pasivne učence preoblikujejo v navdušene ustvarjalce iger.</p>
+<p>Vsi uporabljamo aplikacije, saj lahko z njimi priročno in hitro usklajujemo svoje dejavnosti. Vse pogosteje se uporabljajo tudi v izobraževanju, saj omogočajo prilagojeno učenje, uporabnikom pa pridobivanje informacij – zakaj ne bi torej učencem omogočili, da ustvarijo učno aplikacijo za druge?</p>',
+            'activities'=>[
+                '1'=>'Dejavnost 1 ‒ naslov za razredno stopnjo',
+                '2'=>'Dejavnost 2 ‒ naslov za predmetno stopnjo',
+                '3'=>'Dejavnost 3 ‒ naslov za srednjo šolo'
+            ]
+        ],
+        '7' => [
+            'title'=>'Eksperimentalno proučevanje in ustvarjanje',
+            'author'=>'Avtor: Diogo da Silva',
+            'text'=>'<p>Službe in delovna mesta se spreminjajo in z njimi se spreminja tudi izobraževanje. Ko učence pripravljamo na poklice 21. stoletja, nova znanja in spretnosti, kot so eksperimentalno proučevanje, ustvarjanje in računalniško mojstrstvo, postajajo vse pomembnejša, saj zmanjšujejo razkorak med šolo in realnim življenjem. Če učilnico spremenimo v sodelovalno okolje s poudarkom na reševanju problemov, spodbujamo angažiranost učencev in omogočamo njihov razcvet. Te dejavnosti krepijo razprave in s tem omogočajo, da razred postane komunikacijsko vozlišče, v katerem šteje vsak prispevek.</p> 
+<p>Oglejte si spodnji videoposnetek, v katerem portugalski učitelj naravoslovja, tehnologije, inženirstva, umetnosti in matematike Diogo da Silva, član projekta Escola Global, po korakih razloži pripravo učne ure, v kateri učenci iščejo rešitve po načelih eksperimentalnega proučevanja, ustvarjanja in računalniškega mojstrstva.</p>',
+            'activities'=>[
+                '1'=>'Dejavnost 1 ‒ naslov za razredno stopnjo',
+                '2'=>'Dejavnost 2 ‒ naslov za predmetno stopnjo',
+                '3'=>'Dejavnost 3 ‒ naslov za srednjo šolo'
+            ]
+        ],
+        '8' => [
+            'title'=>'Programiranje za vse predmete',
+            'author'=>'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Kadar pomislimo na programiranje pri pouku, najprej pomislimo na računalništvo, tehnologijo, matematiko ali naravoslovje. Glede na to, da imajo učenci različne interese in predmete, bi bilo to dobro izkoristiti in programiranje uvesti v celotni učni načrt.</p> 
+<p>Vključevanje programiranja v pouk ima številne koristi, saj učencem pomaga razvijati kritično mišljenje in spretnosti reševanja problemov ter postati aktivni uporabniki in voditi svoj učni proces, kar je v šolah ključnega pomena. Najpomembnejše pa je, da se bodo vaši učenci ob učenju zabavali!</p>
+<p>Jeziki, glasba ali pa naravoslovje, tehnologija, inženirstvo in matematika so le nekateri od predmetov, pri katerih lahko učitelji uvedejo programiranje za bodoče znanstvenike, glasbenike, umetnike, pravzaprav za vsakogar! Vsak učitelj lahko v pouk vključi programiranje in računalniško mišljenje. Učna ura nejezikovnega predmeta v tujem jeziku za pojasnitev algoritma vsakdanjega življenja, učenje naravoslovja, kjer učenci iz klobučevine izdelajo igralno palico, ali pa uporaba učnih robotov za večjo motivacijo pri matematiki so le nekateri primeri dejavnosti, ki jih lahko izvajate v svojem razredu.</p> 
+<p>Spodnji videoposnetek prikazuje, kako lahko učitelji glasbe, naravoslovja ali jezikov preprosto vključijo programiranje in računalniško mišljenje v pouk, tudi brez predhodnih izkušenj.</p>',
+            'activities'=>[
+                '1'=>'Dejavnost 1 ‒ Robotika in vključevanje pri poučevanju naravoslovja, tehnologije, inženirstva in matematike na razredni stopnji',
+                '2'=>'Dejavnost 2 ‒ Glasbeno programiranje',
+                '3'=>'Dejavnost 3 ‒ Eksperimentalno proučevanje in programiranje z orodjem Makey Makey',
+                '4'=>'Dejavnost 4 ‒ Algoritem vsakdanjega življenja za učno uro nejezikovnega predmeta v tujem jeziku'
+            ]
         ]
     ],
     'download_video_script' => 'Prenos besedila videoposnetka',
