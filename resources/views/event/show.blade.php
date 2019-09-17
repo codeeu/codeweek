@@ -75,9 +75,10 @@
                     </div>
 
                     <div class="codeweek-display-field">
-                        <div>
-                            <strong>@lang('eventdetails.from')</strong> {{Carbon\Carbon::parse($event->start_date)->format('l jS \o\f F Y \a\t H:i')}}
-                            <strong>@lang('eventdetails.to')</strong> {{Carbon\Carbon::parse($event->end_date)->format('l jS \o\f F Y \a\t H:i')}}
+                        <div style="text-transform: capitalize;">
+                            <strong>@lang('eventdetails.from')</strong> {{Carbon\Carbon::parse($event->start_date)->isoFormat('LLLL')}}
+                            <br>
+                            <strong style="text-transform: capitalize">@lang('eventdetails.to')</strong> {{Carbon\Carbon::parse($event->end_date)->isoFormat('LLLL')}}
                         </div>
                     </div>
 
