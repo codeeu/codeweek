@@ -16,6 +16,7 @@ abstract class TestCase extends BaseTestCase
         parent::setUp();
         //$this->withoutExceptionHandling();
         $this->mockLocale();
+        $this->mockBrowserCheck();
     }
 
     protected function signIn($user = null)
@@ -28,6 +29,18 @@ abstract class TestCase extends BaseTestCase
     protected function mockLocale(): void
     {
         $this->mock('App\Http\Middleware\Locale', function ($mock) {
+            $mock->shouldReceive('handle')
+                ->andReturnUsing(function ($request, \Closure $next) {
+                    return $next($request);
+                });
+        });
+
+    }
+
+    protected function mockBrowserCheck(): void
+    {
+
+        $this->mock('App\Http\Middleware\CheckBrowser', function ($mock) {
             $mock->shouldReceive('handle')
                 ->andReturnUsing(function ($request, \Closure $next) {
                     return $next($request);
