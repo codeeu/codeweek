@@ -70,7 +70,8 @@ return [
         'text' => '<p>Check out our <a href="http://blog.codeweek.eu/">blog</a> for latest information and feel free to
                     adapt the most recent press release to your needs, or create your own:</p>',
         'items' => [
-            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a> (available in 29 languages)'
+            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
+            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Gearing up to celebrate EU Code Week 2019</a> (available in 29 languages)',
         ]
     ],
     'toolkits' => [

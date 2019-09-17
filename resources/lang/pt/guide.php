@@ -40,7 +40,8 @@ return [
         'title' => 'Material promocional',
         'text' => '<p>Veja o nosso <a href="http://blog.codeweek.eu/">blogue</a> para obter as últimas informações. Pode adaptar o comunicado de imprensa mais recente às suas necessidades, ou criar o seu próprio comunicado de imprensa:</p>',
         'items' => [
-            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Preparativos para comemorar a Semana Europeia da Programação 2019</a> (disponível em 29 idiomas)'
+            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
+            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Preparativos para comemorar a Semana Europeia da Programação 2019</a> (disponível em 29 idiomas)'
         ]
     ],
     'toolkits' => [

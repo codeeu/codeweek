@@ -86,7 +86,8 @@ Jetez un coup d’œil à notre section <a
                     informations et n’hésitez pas à adapter les dernières parutions à
                     vos besoins pour créer les vôtres:</p>',
         'items' => [
-            '1' => ' <a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">S’équiper
+            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
+            '2' => ' <a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">S’équiper
                             pour la Semaine européenne du code 2019!</a> (disponible dans 29 langues)'
         ]
     ],
