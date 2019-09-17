@@ -20,7 +20,7 @@
     <!-- Theme stylesheets -->
     @if (Route::getCurrentRoute() && Route::getCurrentRoute()->uri() != 'home' && Route::getCurrentRoute()->uri() != '/')
         <link rel="stylesheet" href="{{asset('css/ext/style.css')}}" type="text/css" />
-        <link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css" />
+        <link rel="stylesheet" href="{{mix('css/app.css')}}" type="text/css" />
     @else
         <link rel="stylesheet" href="{{asset('css/ext/home.css')}}" type="text/css" />
     @endif
@@ -80,7 +80,7 @@
 
 <!-- Scripts -->
 
-<script src="{{asset('js/app.js')}}"></script>
+<script src="{{mix('js/app.js')}}"></script>
 <script type="text/javascript" src="{{ asset('lib/jquery/jquery.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/ext/plugins.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/ext/functions.js') }}"></script>
