@@ -40,7 +40,8 @@ return [
         'title' => 'Propagační materiály',
         'text' => '<p>Nejnovější informace můžete hledat na našem <a href="http://blog.codeweek.eu/">blogu</a> a neváhejte upravit poslední tiskové zprávy podle svých potřeb nebo si vytvořte vlastní:</p>',
         'items' => [
-            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Přípravy na oslavu Evropského týdne programování 2019</a> (k dispozici v 29 jazycích)'
+            '1' => '<a href="https://ec.europa.eu/digital-single-market/en/news/getting-ready-eu-code-week-2019-new-online-course-teachers-extended-repository-handy-materials">Getting ready for EU Code Week 2019: new online course for teachers, an extended repository of handy materials and a revamped website</a>',
+            '2' => '<a href="https://ec.europa.eu/digital-single-market/en/news/gearing-celebrate-eu-code-week-2019">Přípravy na oslavu Evropského týdne programování 2019</a> (k dispozici v 29 jazycích)'
         ]
     ],
     'toolkits' => [
