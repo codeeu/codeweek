@@ -2,7 +2,7 @@
     <img src="{{$event->picture_path()}}" class="card-image">
     <div class="card-content">
         <h5 class="card-title">{{ $event->title }}</h5>
-        <p class="card-subtitle">{{ $event->get_start_date() }}</p>
+        <p class="card-subtitle" style="text-transform: capitalize;">{{Carbon\Carbon::parse($event->start_date)->isoFormat('llll')}}</p>
         <p class="card-description">{{ $event->description }}</p>
     </div>
     <div class="card-actions">
