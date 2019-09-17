@@ -19,7 +19,7 @@
 
     <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet" />
 
-    <link rel="stylesheet" href="{{asset('css/app.css')}}?v=2" type="text/css" />
+    <link rel="stylesheet" href="{{mix('css/app.css')}}" type="text/css" />
 
     <script>
         window.App = {!! json_encode([
@@ -65,7 +65,7 @@
 
 <!-- Scripts -->
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-<script src="{{asset('js/app.js')}}"></script>
+<script src="{{mix('js/app.js')}}"></script>
 <script type="text/javascript" src="{{ asset('lib/jquery/jquery.js') }}"></script>
 {{--<script src=//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js charset=utf-8></script>--}}
 <script type="text/javascript" src="{{ asset('js/ext/plugins.js') }}"></script>
