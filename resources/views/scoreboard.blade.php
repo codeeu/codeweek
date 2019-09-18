@@ -80,13 +80,8 @@
                                         <div class="digit">{{ $digit }}</div>
                                     @endforeach
                                 </div>
-                                @if(count(str_split($event->total)) < 4)
-                                    <div class="text">@lang('search.' . str_plural('event', $event->total))</div>
-                                @endif
                             </div>
-                            @if(count(str_split($event->total)) >= 4)
-                                <div class="text">@lang('search.' . str_plural('event', $event->total))</div>
-                            @endif
+                            <div class="text">@lang('search.' . str_plural('event', $event->total))</div>
                         </div>
                     </div>
                 @endforeach
