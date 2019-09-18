@@ -9,6 +9,9 @@
 
 .codeweek-banner .text{
   margin: 45px 0 45px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .codeweek-banner h1 {
@@ -60,8 +63,8 @@
     font-size:35px;
   }
   .codeweek-banner .text{
-    margin: 90px 0 0 100px;
-    max-width: 330px;
+    margin-left: 100px;
+    max-width: 380px;
   }
   .codeweek-banner.simple .text{
     margin: 50px 0 0 100px;
@@ -88,7 +91,7 @@
     margin-right: 0;
   }
   .codeweek-banner .text{
-    margin: 90px 0 0 200px;
+    margin-left: 200px;
   }
   .codeweek-banner.simple .text{
     margin: 50px 0 0 200px;
