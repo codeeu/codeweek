@@ -1,7 +1,7 @@
 
 .codeweek-content-grid-scoreboard{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 10px;
   margin-left: -50px;
   margin-right: -50px;
@@ -107,10 +107,16 @@
 }
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:961px)  {
+  .codeweek-content-grid-scoreboard{
+    grid-template-columns: 1fr 1fr;
+  }
 }
 /* big landscape tablets, laptops, and desktops */
 @media (min-width:1025px) {
 }
 /* hi-res laptops and desktops */
 @media (min-width:1281px) {
+  .codeweek-content-grid-scoreboard{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
