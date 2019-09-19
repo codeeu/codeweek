@@ -26,7 +26,7 @@ return [
     'search' => 'Type & hit Enter...',
     'map' => 'Map',
     'add_event' => 'Add Activity',
-    'search_event' => 'Search Events',
+    'search_event' => 'Search Activities',
     'hello' => 'Hello',
     'profile' => 'Profile',
     'pending' => 'Pending Activities',
