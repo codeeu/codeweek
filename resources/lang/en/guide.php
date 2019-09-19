@@ -21,9 +21,9 @@ return [
             '1' => '<strong>A group of people willing to learn.</strong> For example, your friends, kids, teenagers,
                         adults colleagues, friends, parents or grandparents. Remember, two is a group already!',
             '2' => '<strong>Teachers or trainers</strong> who are familiar with the coding activity, and how to
-                        teach and inspire others. The number depends on the type and size of the event.',
+                        teach and inspire others. The number depends on the type and size of the activity.',
             '3' => '<strong>A place to learn.</strong> Classrooms, libraries, conference rooms and various public
-                        spaces all make a great event venue.',
+                        spaces all make a great activity venue.',
             '4' => '<strong>Computers and internet connection.</strong> Depending on your target group, you might
                         ask participants to bring their own laptops.',
             '5' => '<strong>Coding unplugged.</strong> You actually don\'t need computers and internet connection to
@@ -46,14 +46,14 @@ return [
     'how_to' => [
         'title' => 'How to organise your activity?',
         'items' => [
-            '1' => 'The format of your coding event is up to you, but we do recommend that you include some <strong>practical,
+            '1' => 'The format of your coding activity is up to you, but we do recommend that you include some <strong>practical,
                             hands-on time</strong>, where participants can create on their own and/or tinker with some
                         hardware.',
             '2' => 'Make use of <strong>tools and technologies</strong> appropriate to your target group. We
                         recommend using <a href="http://codeweek.eu/resources/">freely
                             available open source material</a>.',
             '3' => 'Encourage participants to <strong>show and present</strong> what they have created to each other
-                        at the end of your event.',
+                        at the end of your activity.',
             '4' => '<strong>Spread the news!</strong> Promote and share what you did during your activity on social
                         media by using
                         the #CodeWeek hashtag. You can also share on the <a
@@ -81,7 +81,7 @@ return [
     ],
     'questions' => [
         'title' => 'Questions?',
-        'content' => '<p>If you have questions about organising and promoting your #CodeWeek event, get in touch with one of the <a href="/ambassadors">EU Code Week Ambassadors</a> from your country.</p>'
+        'content' => '<p>If you have questions about organising and promoting your #CodeWeek activity, get in touch with one of the <a href="/ambassadors">EU Code Week Ambassadors</a> from your country.</p>'
     ]
 
 ];
