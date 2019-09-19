@@ -13,8 +13,8 @@ return [
     |
     */
 
-    'title' => 'Report your #codeEU event',
-    'event_title' => 'Event title',
+    'title' => 'Report your #codeEU activity',
+    'event_title' => 'Activity title',
     'number_required' => 'Please provide a rough estimate, even if you don\'t have exact data.',
     'phrase1'=>'You can fill this form only once! Please check your data carefully. If you make a mistake, ',
     'phrase2'=>'After submitting the report, a personalized certificate for participation in Code Week will be issued automatically and will become available for you to download or share. You can see an example certificate here.',
@@ -36,14 +36,14 @@ return [
     ],
     'name_for_certificate' => [
         'label' => 'Name for certificate',
-        'help' => 'Change this to the name of the event organizer who will be issued a certificate of participation in Code Week. Please use only ASCII (Latin) letters. Letters with accents, umlauts and the like are not supported.'
+        'help' => 'Change this to the name of the activity organizer who will be issued a certificate of participation in Code Week. Please use only ASCII (Latin) letters. Letters with accents, umlauts and the like are not supported.'
     ],
-    'submit' => 'Submit Event Report',
+    'submit' => 'Submit Activity Report',
     'thanks_page'=>[
-        'title'=>'Thanks for reporting your event!',
+        'title'=>'Thanks for reporting your activity!',
         'certificate_ready'=>'Your certificate is ready.',
         'download_button'=>'Click here to download it.',
-        'back_events'=>'Go back to your event'
+        'back_events'=>'Go back to your activity'
     ]
 
 
