@@ -1,6 +1,12 @@
 <template>
     <section id="codeweek-searchpage-component" class="codeweek-page">
+
+
         <div class="home-map">
+            <div class="add-button">
+                <a class="codeweek-action-link-button"
+                   href="/add" >{{$t('menu.add_event')}}</a>
+            </div>
             <div class="landing-wrapper">
                 <div class="events-map-wrapper">
                     <div id="home-map"></div>
