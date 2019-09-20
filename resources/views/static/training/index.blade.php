@@ -52,30 +52,28 @@
                         <div class="author">@lang('training.lessons.5.author')</div>
                     </a>
                 </div>
-                @if(App::getLocale() != 'da')
-                    <div class="codeweek-card-grid">
-                        <a href="/training/developing-creative-thinking-through-mobile-app-development">
-                            <img src="/img/learning/developing-creative-thinking-through-mobile-app-development.png">
-                            <div class="title">@lang('training.lessons.6.title')</div>
-                            <div class="author">@lang('training.lessons.6.author')</div>
-                        </a>
-                    </div>
-                    <div class="codeweek-card-grid">
-                        <a href="/training/tinkering-and-making">
-                            <img src="/img/learning/tinkering-and-making.png">
-                            <div class="title">@lang('training.lessons.7.title')</div>
-                            <div class="author">@lang('training.lessons.7.author')</div>
-                        </a>
-                    </div>
-                    <div class="codeweek-card-grid">
-                        <a href="/training/coding-for-all-subjects">
-                            <img src="/img/learning/coding-for-all-subjects.png">
-                            <div class="title">@lang('training.lessons.8.title')</div>
-                            <div class="author">@lang('training.lessons.8.author')</div>
+                <div class="codeweek-card-grid">
+                    <a href="/training/developing-creative-thinking-through-mobile-app-development">
+                        <img src="/img/learning/developing-creative-thinking-through-mobile-app-development.png">
+                        <div class="title">@lang('training.lessons.6.title')</div>
+                        <div class="author">@lang('training.lessons.6.author')</div>
+                    </a>
+                </div>
+                <div class="codeweek-card-grid">
+                    <a href="/training/tinkering-and-making">
+                        <img src="/img/learning/tinkering-and-making.png">
+                        <div class="title">@lang('training.lessons.7.title')</div>
+                        <div class="author">@lang('training.lessons.7.author')</div>
+                    </a>
+                </div>
+                <div class="codeweek-card-grid">
+                    <a href="/training/coding-for-all-subjects">
+                        <img src="/img/learning/coding-for-all-subjects.png">
+                        <div class="title">@lang('training.lessons.8.title')</div>
+                        <div class="author">@lang('training.lessons.8.author')</div>
 
-                        </a>
-                    </div>
-                @endif
+                    </a>
+                </div>
             </section>
 
             <section class="codeweek-content-wrapper-inside">
