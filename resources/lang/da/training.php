@@ -88,34 +88,39 @@ return [
             ]
         ],
         '6' => [
-            'title'=>'',
-            'author'=>'',
-            'text'=>'',
+            'title'=>'App Inventor og appudvikling',
+            'author'=>'Af Rosanna Kurrer',
+            'text'=>'<p>Se denne video, hvor Rosanna Kurrer (stifter af CyberWayFinder) forklarer, hvad App Inventor er, gennemgår fordelene ved at anvende appudvikling i undervisningen og kommer med nogle praktiske eksempler på, hvordan lærere kan integrere App Inventor i undervisningen og gøre passive elever til entusiastiske spilproducenter.</p>
+<p>Vi bruger alle applikationer, da de er en bekvem og hurtig måde at koordinere vores aktiviteter på. De bruges også i stigende grad på uddannelsesområdet, da de giver mulighed for personaliseret læring og giver brugerne mulighed for at få oplysninger, så hvorfor ikke lære dine elever at bygge en uddannelsesapp til andre?</p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>''
+                '1'=>'Aktivitet 1 – Titel, for primærskolen',
+                '2'=>'Aktivitet 2 – Titel, for det nedre trin i sekundærskolen',
+                '3'=>'Aktivitet 3 – Titel, for det øvre trin i sekundærskolen'
             ]
         ],
         '7' => [
-            'title'=>'',
-            'author'=>'',
-            'text'=>'',
+            'title'=>'Tinkering og making',
+            'author'=>'Af Diogo da Silva',
+            'text'=>'<p>Vores job og arbejdspladser er under forandring, og det samme gælder på uddannelsesområdet. Som led i forberedelsen af eleverne til en karriere i det 21. århundrede er nye færdigheder såsom tinkering, making og hacking blevet af afgørende betydning, da de mindsker afstanden mellem skolen og virkeligheden. Ved at omdanne klasseværelset til et samarbejdsmiljø med fokus på problemløsning, får man engagerede elever, der trives. Disse aktiviteter fremmer diskussion, og klasseværelset bliver således et kommunikationsknudepunkt, hvor alle bidrag er vigtige.</p> 
+<p>Se nedenstående videoklip, hvor den portugisiske STEAM-lærer Diogo da Silva, der er medlem af Escola Global, trin for trin viser, hvordan man udvikler en lektion, hvor eleverne finder frem til en løsning gennem tinkering, making og hacking.</p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>''
+                '1'=>'Aktivitet 1 – Titel, for primærskolen',
+                '2'=>'Aktivitet 2 – Titel, for det nedre trin i sekundærskolen',
+                '3'=>'Aktivitet 3 – Titel, for det øvre trin i sekundærskolen'
             ]
         ],
         '8' => [
-            'title'=>'',
-            'author'=>'',
-            'text'=>'',
+            'title'=>'Programmering på alle fagområder',
+            'author'=>'Af M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text'=>'<p>Det første, der falder en ind, når man tænker på programmering i klasseværelset, er computere, teknologi, matematik eller naturvidenskab. Da elever har forskellige interesser og fag, hvorfor så ikke bruge dette til vores fordel og foretage programmering på tværs af alle læseplanerne?</p> 
+<p>Integrering af programmering i undervisningen har mange fordele, da det hjælper eleverne med at udvikle færdigheder såsom kritisk tænkning og problemløsning, blive aktive brugere og styre deres egen læringsproces, hvilket er afgørende i skolen. Det vigtigste er imidlertid, at eleverne lærer, mens de har det sjovt!</p>
+<p>Sprog, musik eller STEM er blot nogle af de fag, hvor lærerne kan anvende programmering for fremtidige forskere, musikere, kunstnere og ja, alle andre! Alle lærere kan integrere programmering og computertænkning i undervisningen. Brug af en CLIL-lektion til at forklare en algoritme til dagligdags ting, fremstilling af et joystick i filt for at lære om naturfag eller brug af undervisningsrobotter for at øge motivationen inden for matematik er eksempler på mulige aktiviteter i klasseværelset.</p> 
+<p>Se videoen nedenfor for at lære, hvordan undervisere i musik, naturvidenskab og sprog let kan integrere programmering og computertænkning i undervisningen, selv om de ikke har tidligere erfaringer.</p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
-                '4'=>''
+                '1'=>'Aktivitet 1 – Robotteknik og inklusion for elever i primærskolen i STEM',
+                '2'=>'Aktivitet 2 – Musik er programmering',
+                '3'=>'Aktivitet 3 – Tinkering og programmering med Makey Makey',
+                '4'=>'Aktivitet 4 – En algoritme til dagligdags ting til en CLIL-lektion'
             ]
         ]
     ],
