@@ -2,39 +2,30 @@
 
 @section('content')
 
+    <section id="codeweek-error-page" class="codeweek-page">
 
-    <section>
-
-
-        <div class="container">
-
-
-            <div class="content-wrap nopadding">
-
-
-                <div class="container clearfix ">
-
-
-                    <div class="flex flex-col justify-center text-center w-full mb-8">
-                        @if($exception->getMessage())
-
-                            <h4>{{$exception->getMessage()}}</h4>
-
-                        @else
-                            <h1>You are not authorized to perform this action !</h1>
-                        @endif
-
-
-                        <span></span>
-                    </div>
-
-                </div>
+        <section class="codeweek-banner error">
+            <div class="text">
+                <h2>#CodeWeek</h2>
+                <h1>Error!</h1>
             </div>
-        </div>
+            <div class="image">
+                <img src="images/robot_error.svg" class="static-image">
+            </div>
+        </section>
+
+        <section class="codeweek-content-wrapper" style="align-items: center;">
+
+            @if($exception->getMessage())
+                <h1>{{$exception->getMessage()}}</h1>
+            @else
+                <h1>You are not authorized to perform this action!</h1>
+            @endif
+
+            <a href="/" class="codeweek-action-link-button" style="width: 200px;margin-top: 15px;">GO TO HOMEPAGE</a>
+
+        </section>
+
     </section>
-
-
-
-
 
 @endsection
