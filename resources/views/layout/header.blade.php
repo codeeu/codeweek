@@ -41,13 +41,13 @@
                     <img src="/images/user.svg" class="button-icon">
                 </a>
                 <ul class="menu-dropdown">
-                    @role('ambassador|super admin')
                     <li>
                         <img src="/images/user_menu_profile.svg" class="icon">
                         <a href="{{route('profile')}}">
                             @lang('menu.profile')
                         </a>
                     </li>
+                    @role('ambassador|super admin')
                     <li>
                         <img src="/images/user_menu_pending_events.svg" class="icon">
                         <a href="{{route('pending')}}">
