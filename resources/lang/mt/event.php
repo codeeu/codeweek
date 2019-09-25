@@ -130,7 +130,22 @@ return [
         'open in person' => 'Attività miftuħa għal kulħadd',
         'invite in person' => 'Attività għal persuni mistiedna'
 
-    ]
+    ],
+    'country' => 'Pajjiż',
+    'loading' => 'Qed itella’...',
+    'add_activity' => 'Żid attività',
+    'edit_activity' => 'Editja attività',
+    'update_activity' => 'Aġġorna attività',
+    'delete_activity' => 'Ħassar attività',
+    'total_pending_events' => 'Total ta’ avvenimenti pendenti:',
+    'no_pending_events' => 'Ma nstab ebda avveniment pendenti',
+    'all_countries' => 'Il-pajjiżi kollha',
+    'current_status' => 'Status Kurrenti',
+    'actions' => 'Azzjonijiet',
+    'certificate_ready' => 'Iċ-ċertifikat tal-Ġimgħa tal-Ikkowdjar tiegħek lest. Tista’ tniżżlu jew tixxerjah direttament.',
+    'view_your_certificate' => 'Ara ċ-ċertifikat tiegħek hawn',
+    'submit_event_and_report' => 'Issottometti rapport għal dan l-avveniment u itlob iċ-ċertifikat tal-Ġimgħa tal-Ikkowdjar tiegħek.',
+    'report_and_claim' => 'Irrapporta l-avveniment u itlob iċ-ċertifikat',
 
 
 

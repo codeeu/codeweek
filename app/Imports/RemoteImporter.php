@@ -43,27 +43,40 @@ class RemoteImporter
         $updated = 0;
 
 
-        foreach ($this->events as $event) {
+        foreach ($this->events as $remote_event) {
 
             //Create event
             $className = 'App\\Importers\\' . $this->website;
 
-            $importer = new $className($event);
+            $remote_site = new $className($remote_event);
 
             //Store the good completion
-            $processed = Importer::firstOrNew(
+            $tracker = Importer::firstOrNew(
                 [
-                    'original_id' => $event->id,
+                    'original_id' => $remote_event->id,
                     'website' => $this->website,
                     'status' => 'ADDED'
                 ]
             );
 
-            if (!$processed->exists) {
-                $created += $importer->parse();
-                $processed->save();
+            if (!$tracker->exists) {
+                // Create Event in the Codeweek Database
+                $event = $remote_site->parse();
+
+                //Update the importer with the newly created ID
+                $tracker->original_updated_at = $remote_site->getUpdatedTimestamp();
+                $tracker->event_id = $event->id;
+                $tracker->save();
             } else {
-                $updated += $importer->update();;
+                if ($tracker->original_updated_at != $remote_site->getUpdatedTimestamp()) {
+                    $remote_site->update($tracker->event);
+                    $tracker->original_updated_at = $remote_site->getUpdatedTimestamp();
+                    $tracker->save();
+                    $updated++;
+                } else {
+                    dump("same timestamp, nothing to do");
+                }
+
             }
 
 

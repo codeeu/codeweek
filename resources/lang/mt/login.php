@@ -18,4 +18,14 @@ return [
     'facebook' => 'Idħol b’Facebook',
     'google' => 'Idħol b’Google',
     'azure' => 'Idħol b’Azure',
+    'email' => 'Indirizz elettroniku',
+    'password' => 'Password',
+    'remember' => 'Ftakarni',
+    'forgotten_password' => 'Insejt il-Password tiegħek?',
+    'no_account' => 'M’għandekx kont?',
+    'signup' => 'Irreġistra',
+    'reset' => 'Irrisettja l-Password Tiegħek',
+    'send_password' => 'Ibgħat il-Link tar-Risettjar tal-Password',
+    'confirm_password' => 'Ikkonferma l-Password',
+    'name' => 'isem'
 ];

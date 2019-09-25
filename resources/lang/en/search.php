@@ -15,17 +15,17 @@ return [
     'audience_title'=>'Audience',
     'theme_title'=>'Theme',
     
-    'placeholder' => 'Search for event name or tag',
+    'placeholder' => 'Search for activity name or tag',
     'submit' => 'Search',
     'label_country' => 'Select country',
     'last_year_events' => [
-        'label' => 'Include last years events',
+        'label' => 'Include last years activities',
         'yes' => 'Yes',
         'no' => 'No'
     ],
     'search_counter' => 'match your search criteria',
-    'event'=>'event',
-    'events'=>'events',
+    'event'=>'activity',
+    'events'=>'activities',
     'year' => 'year',
     'audiences'=>'Audiences',
     'themes'=>'Themes',

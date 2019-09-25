@@ -131,7 +131,22 @@ return [
         'invite in person' => 'Uždaras renginys/užsiėmimas (realybėje, ne internetu)'
 
     ],
-    'privacy'=>'Perskaičiau ir sutinku su šiame dokumente aprašyta privatumo politika.'
+    'privacy'=>'Perskaičiau ir sutinku su šiame dokumente aprašyta privatumo politika.',
+    'country' => 'Šalis',
+    'loading' => 'Kraunama...',
+    'add_activity' => 'Pridėti renginį',
+    'edit_activity' => 'Redaguoti renginį',
+    'update_activity' => 'Atnaujinti renginį',
+    'delete_activity' => 'Ištrinti renginį',
+    'total_pending_events' => 'Iš viso dar nepatvirtintų renginių:',
+    'no_pending_events' => 'Nerasta jokių nepatvirtintų renginių',
+    'all_countries' => 'Visos šalys',
+    'current_status' => 'Dabartinė būsena',
+    'actions' => 'Veiksmai',
+    'certificate_ready' => 'Jūsų Programavimo savaitės pažymėjimas jau paruoštas. Atsisiųskite jį arba dalykitės tiesiogiai.',
+    'view_your_certificate' => 'Peržiūrėkite savo pažymėjimą čia',
+    'submit_event_and_report' => 'Pateikite šio renginio ataskaitą ir gaukite Programavimo savaitės pažymėjimą',
+    'report_and_claim' => 'Pateikti renginio ataskaitą ir gauti pažymėjimą',
 
 
 

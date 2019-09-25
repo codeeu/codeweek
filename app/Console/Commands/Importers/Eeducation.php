@@ -4,10 +4,12 @@ namespace App\Console\Commands\Importers;
 
 use App\Helpers\ImporterHelper;
 use App\Imports\RemoteImporter;
+use Exception;
 use Illuminate\Console\Command;
 use Feeds;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Client;
+
 
 class Eeducation extends Command
 {
@@ -49,14 +51,19 @@ class Eeducation extends Command
         // Create or Load Eeducation Technical User
         //$techicalUserID = ImporterHelper::getTechnicalUser("eeducation-technical");
 
+        if (is_null(env("EEDUCATION_CLIENTID"))) {
+            throw new Exception('Please Specify the EEducation Endpoint in the .env file');
+        };
+
+
         // Read the API
         $endpoint = "https://eeducation.at/rest-api/codeweek-activities/?clientid=" . env("EEDUCATION_CLIENTID");
 
         $client = new Client();
 
         $response = $client->get($endpoint);
-        $eventsArr = json_decode((string)$response->getBody());
 
+        $eventsArr = json_decode((string)$response->getBody());
 
         $importer = new RemoteImporter("Eeducation", $eventsArr);
         $metrics = $importer->import();

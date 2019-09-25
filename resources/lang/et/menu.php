@@ -37,5 +37,6 @@ return [
     'logout' => 'Logi välja',
     'signin' => 'Logi sisse',
     'privacy' => 'Privaatsus',
+    'participation'=> 'Osalemise tunnistus',
 
 ];

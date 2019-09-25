@@ -18,4 +18,14 @@ return [
     'facebook' => 'Pristupite sa Facebook nalogom',
     'google' => 'Pristupite sa Google nalogom',
     'azure' => 'Pristupite sa Azure nalogom',
+    'email' => 'Email pošta',
+    'password' => 'Lozinka',
+    'remember' => 'Zapamti me',
+    'forgotten_password' => 'Zaboravili ste lozinku?',
+    'no_account' => 'Nemate nalog?',
+    'signup' => 'Registruj se',
+    'reset' => 'Resetuj lozinku',
+    'send_password' => 'Pošalji link za resetovanje lozinke',
+    'confirm_password' => 'Potvrdi lozinku',
+    'name' => 'naziv'
 ];

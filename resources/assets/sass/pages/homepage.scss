@@ -1,0 +1,316 @@
+/* Standard all sizes */
+
+#main-banner{
+  background-color: $main-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#main-banner .what{
+  display: flex;
+  margin: 50px 10%;
+}
+
+#main-banner .what .separator{
+  width: 32px;
+  border: 1px solid $main-color4;
+  border-right: 0;
+}
+
+#main-banner .what .text{
+  font-family: 'OCR A Std', "Open Sans";
+  color:$main-color4;
+  padding-top:20px;
+  line-height: 1.4;
+  padding-bottom: 10px;
+}
+
+#main-banner .info{
+  display: flex;
+  flex-direction: column;
+}
+
+#main-banner .info .when{
+  margin: 40px 0 20px 10%;
+}
+
+#main-banner .info .when .arrow{
+  text-align: center;
+  margin-top: 70px;
+  margin-left: -10%;
+}
+
+#main-banner .info .when .text{
+  display: none;
+}
+
+#main-banner .info .when .title{
+  color: $main-color4;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#main-banner .info .when .date{
+  color: $main-color;
+  font-size: 23px;
+  font-weight: bold;
+  background-color: $main-color4;
+  padding: 5px;
+  margin-top: 15px;
+  text-align: center;
+  width: 220px;
+}
+#main-banner .info .countdown {
+  margin-bottom: 15px;
+}
+
+#school-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 15px 0 15px;
+  background-color: #FFE3D6;
+  padding: 25px 20px 20px 20px;
+  font-weight: bold;
+  color: $main-color;
+}
+
+#school-banner .title{
+  font-size: 40px;
+  text-align: center;
+}
+
+#school-banner .text{
+  font-size: 14px;
+  text-align: center;
+}
+
+#school-banner .text a{
+  color: $main-color;
+}
+
+#school-banner .text a:hover{
+  color:$main-color2;
+}
+
+.sub-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px;
+  padding-top: 40px;
+  color: $main-color;
+}
+
+.sub-section .text{
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 30px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.sub-section .title{
+  margin: 30px 30px;
+  border: 1px solid $main-color;
+  border-radius: 16px;
+  padding: 20px;
+  font-family: 'OCR A Std', "Open Sans";
+  font-size: 21px;
+  line-height: 1.6;
+}
+
+#organize-activity{
+  background-color: #FFE3D6;
+  padding-top: 0;
+}
+
+#get-started{
+  background-color: #FFEEC7;
+}
+
+#access-resources{
+  background-color: #DBECF0;
+}
+
+#content .mobile-arrow{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align:center;
+}
+
+#content .mobile-arrow path{
+  stroke:$main-color !important;
+}
+
+.countdown {
+  position:relative;
+  display: flex;
+  flex-direction: column;
+}
+#countdown {
+  display: flex;
+  position: absolute;
+  right: 0;
+  margin-right: 22%;
+  margin-top: 8%;
+}
+
+#countdown div{
+  padding: 10px 5px;
+  margin-right: 2px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  font-family: $decorative-font;
+}
+
+#countdown .separator{
+  background-color: transparent;
+  color: black;
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px)  {
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px)  {
+
+}
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px)  {
+  #main-banner{
+    background-image: url('/images/bubbles.svg');
+    background-repeat: no-repeat;
+    background-position-x: 112%;
+  }
+  #main-banner .what .text{
+    font-size: 20px;
+  }
+  #main-banner .info .when .title{
+    font-size: 50px;
+  }
+  #main-banner .info .when .date{
+    font-size: 25px;
+  }
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px)  {
+  #main-banner .what .text{
+    font-size: 25px;
+  }
+  #main-banner .info{
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  #main-banner .info .when{
+    width: 320px;
+    margin: 0 10px 20px 10%;
+  }
+  #main-banner .info .when .title{
+    font-size: 60px;
+  }
+  #main-banner .info .when .date{
+    font-size: 35px;
+    width:auto;
+    margin: 15px 0;
+  }
+  #main-banner .info .when .text {
+    display: initial;
+    color: $main-color4;
+    font-weight: bold;
+    line-height: 1.3;
+  }
+  #main-banner .info .when .arrow{
+    margin-top:40px;
+  }
+  #school-banner {
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px 0;
+  }
+  #school-banner .title{
+    font-size: 55px;
+    margin-right: 20px;
+  }
+  #school-banner .text{
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  .sub-section {
+    flex-direction: row-reverse;
+    padding: 60px 0;
+    margin: 0 50px;
+  }
+  .sub-section .text{
+    font-size: 20px;
+    flex-basis: 33%;
+    text-align: left;
+  }
+  .sub-section .title{
+    font-size: 28px;
+    width: 420px;
+  }
+  .sub-section img{
+    height: 400px;
+    flex-basis: 33%;
+  }
+  #content .mobile-arrow{
+    display:none;
+  }
+  #organize-activity{
+    padding: 60px 0;
+  }
+  #get-started img, #access-resources img{
+    margin-left: -100px;
+    z-index: 1;
+  }
+  #access-resources{
+    padding: 30px 0;
+  }
+  #access-resources img{
+    height: 470px;
+  }
+}
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+
+}
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+  #main-banner{
+    height: 644px;
+  }
+  #main-banner .info .when{
+    margin-right: 50px;
+    width: 350px;
+  }
+  #main-banner .info .when .date{
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  #main-banner .info .when .text {
+    font-size: 18px;
+  }
+  #main-banner .info .countdown {
+    margin-top: 50px;
+  }
+  #main-banner .info .when .arrow{
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    background-color: $main-color;
+    margin-left: 94px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}

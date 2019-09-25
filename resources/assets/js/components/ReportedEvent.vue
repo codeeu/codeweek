@@ -1,10 +1,7 @@
 <template>
-    <div class="flex lg:justify-between bg-blue-lighter min-w-full p-4 mb-3">
-
-
-        <div>Current Status: Reported</div>
-        Participants Count: {{participants_count}}
-
+    <div class="reported-event">
+        <div>Current Status: <strong>Reported </strong></div>
+        &nbsp;-&nbsp;Participants Count:&nbsp;<strong>{{participants_count}}</strong>
     </div>
 </template>
 

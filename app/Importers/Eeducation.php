@@ -25,7 +25,7 @@ class Eeducation implements Importers
     {
         return User::firstOrCreate([
             "email" => $this->remote->organizer_email
-        ],[
+        ], [
             "firstname" => "",
             "lastname" => "",
             "username" => "",
@@ -34,23 +34,14 @@ class Eeducation implements Importers
 
     }
 
+    public function getUpdatedTimestamp()
+    {
+        return Carbon::createFromTimestamp(intval($this->remote->tstamp));
+    }
+
     public function parse()
     {
         dump("parse event inside eeducation");
-
-        $this->extract();
-        return 1;
-
-    }
-
-    public function update(){
-        dump('nothing to do for eeducation');
-        return 0;
-    }
-
-    private function extract()
-    {
-
         $event = new Event([
             'status' => "APPROVED",
             'title' => $this->remote->activity_title,
@@ -79,6 +70,32 @@ class Eeducation implements Importers
         //Check for duplicates
         $event->save();
 
+        return $event;
 
     }
+
+
+    public function update(Event $event)
+    {
+
+        dump('update eeducation');
+
+        $event->title = $this->remote->activity_title;
+        $event->slug = Str::slug($this->remote->activity_title);
+        $event->description = $this->remote->activity_description;
+        $event->organizer_type = $this->remote->organisation_type;
+        $event->location = $this->remote->address;
+
+        $event->country_iso = $this->remote->country;
+        $event->start_date = Carbon::parse($this->remote->starttime)->toDateTimeString();
+        $event->end_date = Carbon::parse($this->remote->endtime)->toDateTimeString();
+        $event->geoposition = $this->remote->lat . "," . $this->remote->lng;
+        $event->longitude = $this->remote->lng;
+        $event->latitude = $this->remote->lat;
+
+        $event->save();
+        return $event;
+    }
+
+
 }

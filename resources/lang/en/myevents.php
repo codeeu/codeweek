@@ -12,9 +12,9 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'created_by'=>'All events created by ',
+    'created_by'=>'All activities created by ',
     'no_events'=>[
-        'first_call_to_action' => "You haven't added any events yet. Why don't you ",
+        'first_call_to_action' => "You haven't added any activities yet. Why don't you ",
         'first_link' => 'add one now',
         'second_call_to_action' => 'or read our ',
         'second_link' => 'guide for organizers'
@@ -23,6 +23,7 @@ return [
     'status'=>[
         'APPROVED'=>'APPROVED',
         'REJECTED'=>'REJECTED',
-        'PENDING'=>'PENDING'
+        'PENDING'=>'PENDING',
+        'reported' => 'REPORTED'
     ]
 ];

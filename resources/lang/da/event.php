@@ -132,7 +132,22 @@ return [
 
     ],
 
-    'privacy'=>'Jeg har læst og accepteret de retningslinjer for beskyttelse af personlige oplysninger, der er beskrevet i dette dokument.'
+    'privacy'=>'Jeg har læst og accepteret de retningslinjer for beskyttelse af personlige oplysninger, der er beskrevet i dette dokument.',
+    'country' => 'Land',
+    'loading' => 'Indlæser ...',
+    'add_activity' => 'Tilføj aktivitet',
+    'edit_activity' => 'Rediger aktivitet',
+    'update_activity' => 'Opdater aktivitet',
+    'delete_activity' => 'Slet aktivitet',
+    'total_pending_events' => 'Antal ventende arrangementer i alt:',
+    'no_pending_events' => 'Ingen ventende arrangementer fundet for',
+    'all_countries' => 'Alle lande',
+    'current_status' => 'Aktuel status',
+    'actions' => 'Handlinger',
+    'certificate_ready' => 'Dit kodeuge-certifikatet er klar. Download det, eller del det direkte.',
+    'view_your_certificate' => 'Se dit certifikat her',
+    'submit_event_and_report' => 'Indsend en rapport for dette arrangement, og få dit kodeuge-certifikat.',
+    'report_and_claim' => 'Rapporter et arrangement, og få dit certifikat',
 
 
 ];

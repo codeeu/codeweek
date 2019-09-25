@@ -18,4 +18,14 @@ return [
     'facebook' => 'Pierakstīties ar Facebook',
     'google' => 'Pierakstīties ar Google',
     'azure' => 'Pierakstīties ar Azure',
+    'email' => 'E-pasts',
+    'password' => 'Parole',
+    'remember' => 'Atcerēties mani',
+    'forgotten_password' => 'Vai esat aizmirsis paroli?',
+    'no_account' => 'Vai jums vēl nav sava konta?',
+    'signup' => 'Reģistrēties',
+    'reset' => 'Atiestatīt paroli',
+    'send_password' => 'Nosūtīt paroles atiestatīšanas saiti',
+    'confirm_password' => 'Apstiprināt paroli',
+    'name' => 'vārds'
 ];

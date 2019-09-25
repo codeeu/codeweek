@@ -18,4 +18,14 @@ return [
     'facebook' => 'Kirjaudu sisään Facebook-tunnuksilla.',
     'google' => 'Kirjaudu sisään Google-tunnuksilla.',
     'azure' => 'Kirjaudu sisään Azure-tunnuksilla.',
+    'email' => 'Sähköposti',
+    'password' => 'Salasana',
+    'remember' => 'Muista minut',
+    'forgotten_password' => 'Unohditko salasanan?',
+    'no_account' => 'Eikö sinulla ole tiliä?',
+    'signup' => 'Kirjaudu',
+    'reset' => 'Palauta salasanasi',
+    'send_password' => 'Lähetä salasanan palautuslinkki',
+    'confirm_password' => 'Vahvista salasana',
+    'name' => 'nimi'
 ];

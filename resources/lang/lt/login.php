@@ -18,4 +18,15 @@ return [
     'facebook' => 'Prisijunkite per „Facebook“',
     'google' => 'Prisijunkite per „Google“',
     'azure' => 'Prisijunkite per „Azure“',
+    'email' => 'El. pašto adresas',
+    'password' => 'Slaptažodis',
+    'remember' => 'Prisiminti mane',
+    'forgotten_password' => 'Pamiršote savo slaptažodį?',
+    'no_account' => 'Neturite paskyros?',
+    'signup' => 'Registruotis',
+    'reset' => 'Iš naujo nustatyti slaptažodį',
+    'send_password' => 'Siųsti slaptažodžio nustatymo iš naujo nuorodą',
+    'confirm_password' => 'Patvirtinti slaptažodį',
+    'name' => 'vardas'
+
 ];
