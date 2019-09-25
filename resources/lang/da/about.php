@@ -28,5 +28,6 @@ return [
                         </blockquote>
                     </p>',
     'join_codeweek-title'=>'Vær med i EU’s kodeuge',
-    'join_codeweek-text'=>'<p>Vær med i EU’s kodeuge ved at <a href="/guide">afholde en kodeaktivitet</a> i din by og deltage i <a href="/codeweek4all">Code Week 4 All-udfordringen</a> og andre aktiviteter på tværs af lokalsamfund og grænser, eller hjælp os med at udbrede budskabet om kodeugen som <a href="/ambassadors">ambassadør for EU’s kodeuge</a> i dit land!</p>'
+    'join_codeweek-text'=>'<p>Vær med i EU’s kodeuge ved at <a href="/guide">afholde en kodeaktivitet</a> i din by og deltage i <a href="/codeweek4all">Code Week 4 All-udfordringen</a> og andre aktiviteter på tværs af lokalsamfund og grænser, eller hjælp os med at udbrede budskabet om kodeugen som <a href="/ambassadors">ambassadør for EU’s kodeuge</a> i dit land!</p>',
+    'partners_and_sponsors' => 'Partnere og sponsorer'
 ];

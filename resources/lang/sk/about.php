@@ -28,5 +28,6 @@ return [
                         </blockquote>
                     </p>',
     'join_codeweek-title' => 'Zapojte sa do Európskeho týždňa programovania',
-    'join_codeweek-text' => '<p>Zapojte sa do Európskeho týždňa programovania <a href="/guide">usporiadaním programátorskej aktivity</a> vo svojom meste, zapojením do <a href="/codeweek4all">výzvy Code Week 4 All</a> a príbuzných aktivít v rôznych komunitách a krajinách alebo nám pomôžte šíriť víziu Týždňa programovania z pozície <a href="/ambassadors">veľvyslanca Európskeho týždňa programovania</a> vo svojej vlasti!</p>'
+    'join_codeweek-text' => '<p>Zapojte sa do Európskeho týždňa programovania <a href="/guide">usporiadaním programátorskej aktivity</a> vo svojom meste, zapojením do <a href="/codeweek4all">výzvy Code Week 4 All</a> a príbuzných aktivít v rôznych komunitách a krajinách alebo nám pomôžte šíriť víziu Týždňa programovania z pozície <a href="/ambassadors">veľvyslanca Európskeho týždňa programovania</a> vo svojej vlasti!</p>',
+    'partners_and_sponsors' => 'Partneri a sponzori'
 ];
