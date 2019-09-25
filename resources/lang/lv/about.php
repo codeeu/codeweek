@@ -28,5 +28,6 @@ return [
                         </blockquote>
                     </p>',
     'join_codeweek-title' => 'Pievienojieties ES programmēšanas nedēļai',
-    'join_codeweek-text' => '<p>Pievienojieties ES programmēšanas nedēļai, <a href="/guide">organizējot programmēšanas pasākumu</a> savā pilsētā, pievienojoties <a href="/codeweek4all">“Programmēšanas nedēļas visiem” spēku pārbaudei</a> un veidojot sadarbību starp pasākumiem dažādās kopienās un valstīs vai palīdzot mums popularizēt programmēšana nedēļu, kļūstot par <a href="/ambassadors">ES programmēšanas nedēļas vēstnieku</a> savā valstī!</p>'
+    'join_codeweek-text' => '<p>Pievienojieties ES programmēšanas nedēļai, <a href="/guide">organizējot programmēšanas pasākumu</a> savā pilsētā, pievienojoties <a href="/codeweek4all">“Programmēšanas nedēļas visiem” spēku pārbaudei</a> un veidojot sadarbību starp pasākumiem dažādās kopienās un valstīs vai palīdzot mums popularizēt programmēšana nedēļu, kļūstot par <a href="/ambassadors">ES programmēšanas nedēļas vēstnieku</a> savā valstī!</p>',
+    'partners_and_sponsors' => 'Partneri un sponsori'
 ];

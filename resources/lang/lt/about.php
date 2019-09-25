@@ -29,5 +29,6 @@ return [
                         </blockquote>
                     </p>',
     'join_codeweek-title' => 'Prisijunkite prie ES programavimo savaitės',
-    'join_codeweek-text' => '<p>Dalyvaukite ES programavimo savaitėje – <a href="/guide">organizuokite programavimo renginį</a> savo mieste, prisijunkite prie <a href="/codeweek4all">„CodeWeek4All“ iššūkio</a> ir renkite įvairias veiklas bendruomenėse bei kitose šalyse arba padėkite mums skleisti Programavimo savaitės idėją ir tapkite <a href="/ambassadors">ES programavimo savaitės ambasadoriumi</a> savo šalyje!</p>'
+    'join_codeweek-text' => '<p>Dalyvaukite ES programavimo savaitėje – <a href="/guide">organizuokite programavimo renginį</a> savo mieste, prisijunkite prie <a href="/codeweek4all">„CodeWeek4All“ iššūkio</a> ir renkite įvairias veiklas bendruomenėse bei kitose šalyse arba padėkite mums skleisti Programavimo savaitės idėją ir tapkite <a href="/ambassadors">ES programavimo savaitės ambasadoriumi</a> savo šalyje!</p>',
+    'partners_and_sponsors' => 'Partneriai ir rėmėjai'
 ];

@@ -49,6 +49,10 @@ footer .content .phrase {
   color: gray;
   text-align: center;
   padding: 20px 60px;
+  z-index: 1;
+}
+footer .content .phrase .text{
+  margin-bottom: 10px;
 }
 footer .content .bubbles_footer{
   margin-left: -50%;
