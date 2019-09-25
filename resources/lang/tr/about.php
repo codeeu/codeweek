@@ -29,5 +29,6 @@ return [
                         </blockquote>
                     </p>',
     'join_codeweek-title' => 'AB Kod Haftasına Katılın',
-    'join_codeweek-text' => '<p>Şehrinizde bir <a href="/guide">kodlama aktivitesi düzenleyerek</a>, <a href="/codeweek4all">Herkes için Kod Haftası Mücadelesine</a> katılarak ve topluluklarla sınırlar arasındaki etkinlikleri birleştirerek ya da ülkenizin <a href="/ambassadors">AB Kod Haftası Elçisi</a> olarak Kod Haftasının vizyonunu yaymamıza yardım ederek AB Kod haftasına katılabilirsiniz!</p>'
+    'join_codeweek-text' => '<p>Şehrinizde bir <a href="/guide">kodlama aktivitesi düzenleyerek</a>, <a href="/codeweek4all">Herkes için Kod Haftası Mücadelesine</a> katılarak ve topluluklarla sınırlar arasındaki etkinlikleri birleştirerek ya da ülkenizin <a href="/ambassadors">AB Kod Haftası Elçisi</a> olarak Kod Haftasının vizyonunu yaymamıza yardım ederek AB Kod haftasına katılabilirsiniz!</p>',
+    'partners_and_sponsors' => 'Partnerler ve Sponsorlar'
 ];

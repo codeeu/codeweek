@@ -23,3 +23,46 @@
   z-index: 3;
   left: 20px;
 }
+
+/*Sponsors page*/
+#codeweek-sponsors-page .codeweek-content-wrapper ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+}
+
+#codeweek-sponsors-page .codeweek-content-wrapper ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+
+/*Media queries*/
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px)  {
+}
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px)  {
+}
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px)  {
+  #codeweek-sponsors-page .codeweek-content-wrapper ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px)  {
+  #codeweek-sponsors-page .codeweek-content-wrapper ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+}
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+
+}
