@@ -87,5 +87,7 @@ return [
                             kodimi</a> në qytetin tuaj, duke u bërë pjesë e <a href="/codeweek4all">Sfidës
                             Code Week 4 All</a> dhe duke u lidhur me aktivitete nëpër komunitete dhe përtej
                         kufijve ose duke na ndihmuar të përhapim vizionin e Code si <a href="/ambassadors">Ambasador
-                            i EU Code Week</a> për vendin tuaj!</p>'
+                            i EU Code Week</a> për vendin tuaj!</p>',
+    'partners_and_sponsors' => 'Partnerët dhe sponsorët'
+
 ];

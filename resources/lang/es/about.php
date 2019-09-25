@@ -28,5 +28,6 @@ return [
                         </blockquote>
                     </p>',
     'join_codeweek-title' => 'Únete a la Semana de la Programación de la UE',
-    'join_codeweek-text' => '<p>Únete a la Semana de la Programación de la UE <a href="/guide">organizando una actividad de programación</a> en tu ciudad, inscribiéndote en el <a href="/codeweek4all">reto CodeWeek4All</a> y conectando las actividades a lo largo de las comunidades y fronteras, o ayudándonos a difundir la visión de la Semana de la Programación como <a href="/ambassadors">embajador de la Semana de la Programación de la UE</a> en tu país.</p>'
+    'join_codeweek-text' => '<p>Únete a la Semana de la Programación de la UE <a href="/guide">organizando una actividad de programación</a> en tu ciudad, inscribiéndote en el <a href="/codeweek4all">reto CodeWeek4All</a> y conectando las actividades a lo largo de las comunidades y fronteras, o ayudándonos a difundir la visión de la Semana de la Programación como <a href="/ambassadors">embajador de la Semana de la Programación de la UE</a> en tu país.</p>',
+    'partners_and_sponsors' => 'Socios y patrocinadores'
 ];

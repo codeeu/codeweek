@@ -28,5 +28,6 @@ return [
                         </blockquote>
                     </p>',
     'join_codeweek-title' => 'EU Code Week',
-    'join_codeweek-text' => '<p>Beteiligen Sie sich an der EU Code Week, indem Sie in Ihrer Stadt <a href="/guide">eine Programmiertätigkeit ausrichten</a>, an der <a href="/codeweek4all">Code Week 4 All Challenge</a> teilnehmen und Aktivitäten gemeinde- und grenzübergreifend vernetzen oder indem Sie uns dabei helfen, die Vision der Code Week als <a href="/ambassadors">EU Code Week-Botschafter*in</a> für Ihr Land zu verbreiten!</p>'
+    'join_codeweek-text' => '<p>Beteiligen Sie sich an der EU Code Week, indem Sie in Ihrer Stadt <a href="/guide">eine Programmiertätigkeit ausrichten</a>, an der <a href="/codeweek4all">Code Week 4 All Challenge</a> teilnehmen und Aktivitäten gemeinde- und grenzübergreifend vernetzen oder indem Sie uns dabei helfen, die Vision der Code Week als <a href="/ambassadors">EU Code Week-Botschafter*in</a> für Ihr Land zu verbreiten!</p>',
+    'partners_and_sponsors' => 'Partner und Sponsoren'
 ];
