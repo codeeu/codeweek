@@ -26,7 +26,7 @@ class SearchResourcesController extends Controller
     protected function getItems(ResourceFilters $filters)
     {
 
-        $items = ResourceItem::filter($filters)->whereActive(true)->orderBy('created_at', 'desc');
+        $items = ResourceItem::filter($filters)->whereActive(true)->orderBy('name', 'asc');
 
 
         //return($items->get()->distinct());

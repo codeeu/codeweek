@@ -1,162 +1,112 @@
 @extends('layout.base')
 
 @section('content')
-    <section>
+
+    <section id="codeweek-ambassadors-page" class="codeweek-page">
+
+        <section class="codeweek-banner ambassadors">
+            <div class="text">
+                <h2>#CodeWeek</h2>
+                <h1>@lang('menu.ambassadors')</h1>
+            </div>
+            <div class="image">
+                <img src="images/banner_ambassadors.svg" class="static-image">
+            </div>
+        </section>
+
+        <section class="codeweek-searchbox">
+            <form method="get" action="/ambassadors" enctype="multipart/form-data">
+                <select id="id_country" name="country_iso" onchange="this.form.submit()" class="codeweek-input-select">
+                    @foreach ($countries_with_ambassadors as $ctry)
+                        <option value="{{$ctry->country_iso}}" {{app('request')->input('country_iso') == $ctry->country_iso ? 'selected' : ''}}>@lang('countries.'. $ctry->name)</option>
+                    @endforeach
+                </select>
+            </form>
+        </section>
+
+        <section class="codeweek-content-wrapper">
+
+            @if(auth()->user() && auth()->user()->country)
+                <div class="container clearfix h-full mt-8 mb-8">
+                    @lang('ambassador.your_current_country'):
+                    <a href="/ambassadors">@lang('countries.'.auth()->user()->country->name)</a>
+                </div>
+            @endif
 
 
-        <div class="container">
+            @if(app('request')->input('country_iso'))
+                @foreach ($countries as $country)
+                    @if($country->iso === app('request')->input('country_iso'))
 
+                        {{--<h1>
+                            @lang('countries.'.$country->name)
+                        </h1>--}}
 
-            <div class="content-wrap nopadding">
+                        <div class="codeweek-tools">
 
+                            @if($country->facebook)
+                                <a href="{{$country->facebook}}" class="codeweek-blank-button" target="_blank">
+                                    @lang('ambassador.visit_the') <span>@lang('ambassador.local_facebook_page')</span>
+                                </a>
+                            @endif
 
-                <div class="container clearfix ">
+                            @if($country->website)
+                                <a href="{{$country->website}}" class="codeweek-blank-button" target="_blank">
+                                    @lang('ambassador.visit_the') <span>@lang('ambassador.local_website')</span>
+                                </a>
+                            @endif
 
-
-                    <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
-                        <h1>@lang('ambassador.title')</h1>
-                        <span></span>
-                    </div>
-
-                    @if(auth()->user() && auth()->user()->country)
-                        <div class="container clearfix h-full mt-8 mb-8">
-                            @lang('ambassador.your_current_country'):
-                            <a href="/ambassadors">@lang('countries.'.auth()->user()->country->name)</a>
                         </div>
                     @endif
+                @endforeach
+            @endif
 
 
-                    @if(app('request')->input('country_iso'))
-                        @foreach ($countries as $country)
-                            @if($country->iso === app('request')->input('country_iso'))
-
-                                <h2 class="flex justify-center text-center">
-                                    @lang('countries.'.$country->name)
-                                </h2>
-
-                                @if($country->facebook)
-                                    <div class="justify-center text-center">@lang('ambassador.visit_the') <a
-                                                href="{{$country->facebook}}">@lang('ambassador.local_facebook_page')</a>
-                                    </div>
+            <div class="codeweek-grid-layout">
+                @forelse ($ambassadors as $ambassador)
+                    <div class="codeweek-card">
+                        <div class="card-avatar">
+                            <img src="{{$ambassador->avatar}}" class="card-image-avatar">
+                        </div>
+                        <div class="card-content">
+                            <h5 class="card-title">{{ $ambassador->fullName() }}</h5>
+                            <p class="card-description">{{ $ambassador->bio }}</p>
+                        </div>
+                        <div class="card-actions">
+                                {{--Ambassador email--}}
+                                @if($ambassador->email_display)
+                                    <a href="mailto:{{ $ambassador->email_display }}"
+                                       class="codeweek-svg-button">
+                                        <img src="/images/mail.svg" alt="Twitter">
+                                    </a>
+                                @elseif($ambassador->email)
+                                    <a href="mailto:{{ $ambassador->email }}"
+                                       class="codeweek-svg-button">
+                                        <img src="/images/mail.svg" alt="Twitter">
+                                    </a>
                                 @endif
-
-                                @if($country->website)
-                                    <div class="justify-center text-center mb-8">@lang('ambassador.visit_the') <a
-                                                href="{{$country->website}}">@lang('ambassador.local_website')</a></div>
+                                {{--Ambassdor twitter--}}
+                                @if($ambassador->twitter)
+                                    <a href="http://twitter.com/{{ $ambassador->twitter }}"
+                                       target="_blank" class="codeweek-svg-button">
+                                        <img src="/images/twitter.svg" alt="Twitter">
+                                    </a>
                                 @endif
-                            @endif
-                        @endforeach
-                    @endif
-
-
-                    <div class="fancy-title title-border">
-                        <h3>@lang('ambassador.ambassadors')</h3>
+                                {{--Ambassador website--}}
+                                @if($ambassador->website)
+                                    <a href="{{ $ambassador->website }}"
+                                       target="_blank" class="codeweek-svg-button">
+                                        <img src="/images/globe.svg" alt="Twitter">
+                                    </a>
+                                @endif
+                        </div>
                     </div>
-
-
-                    <div style="display: flex;flex-wrap: wrap;flex-direction: row;">
-                        @forelse ($ambassadors as $ambassador)
-
-                            <div class="bottommargin flex"
-                                 style="padding:0px 15px;flex: 0 0 {{$ambassadors->count() > 2 ? '33.3%' : '50%'}};">
-                                <div class="team">
-                                    <div class="team-image">
-                                        <img src="{{$ambassador->avatar}}" alt="" width="80" height="80"
-                                             class="img-circle">
-                                    </div>
-
-                                    <div class="team-desc">
-                                        <div class="team-title">
-                                            <h4>{{ $ambassador->fullName() }}</h4>
-                                        </div>
-                                        <div class="team-content">
-                                            <p>{{ $ambassador->bio }}</p>
-                                        </div>
-
-                                        @if($ambassador->email_display)
-                                            <a href="mailto:{{ $ambassador->email_display }}"
-                                               class="social-icon inline-block si-small si-light si-rounded si-mail">
-                                                <i class="icon-line-mail"></i>
-                                                <i class="icon-line-mail"></i>
-                                            </a>
-                                        @elseif($ambassador->email)
-                                            <a href="mailto:{{ $ambassador->email }}"
-                                               class="social-icon inline-block si-small si-light si-rounded si-mail">
-                                                <i class="icon-line-mail"></i>
-                                                <i class="icon-line-mail"></i>
-                                            </a>
-                                        @endif
-
-                                        @if($ambassador->twitter)
-
-                                            <a href="http://twitter.com/{{ $ambassador->twitter }}"
-                                               class="social-icon inline-block si-small si-light si-rounded si-twitter">
-                                                <i class="icon-twitter"></i>
-                                                <i class="icon-twitter"></i>
-                                            </a>
-                                        @endif
-
-                                        @if($ambassador->website)
-
-                                            <a href="{{ $ambassador->website }}"
-                                               class="social-icon inline-block si-small si-light si-rounded si-gplus">
-                                                <i class="icon-world"></i>
-                                                <i class="icon-world"></i>
-                                            </a>
-                                        @endif
-                                    </div>
-                                </div>
-                            </div>
-
-                        @empty
-                            @lang('ambassador.no_ambassadors') :(<br/>
-                        @endforelse
-                    </div>
-
-
-                </div>
-
-
-                <div id="showcountries">
-
-                    <ul class="clearfix list-style-none">
-                        <li style="clear:left">@lang('ambassador.countries_with_ambassadors')</li>
-
-                        @foreach ($countries_with_ambassadors as $country)
-
-
-                            <li>
-                                <a href="/ambassadors?country_iso={{$country->country_iso}}">
-                                    <div class="country-link" data-name="{{$country->country_iso}}">
-
-                                        <img src="https://s3-eu-west-1.amazonaws.com/codeweek-s3/flags/{{strtolower($country->country_iso)}}.png"
-                                             alt="{{$country->country_iso}}">
-
-                                        <div class="country-name {{strtolower($country->name)}}">
-                                            @lang('countries.'.$country->name) ({{$country->total}})
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-
-                        @endforeach
-
-
-                    </ul>
-                    <br/>
-                    <p style="text-align: center"><a
-                                href="/beambassador">@lang('ambassador.why_dont_you_volunteer')</a></p>
-
-
-                </div>
-
-
-                {{ $ambassadors->appends(['country_iso'=>app('request')->input('country_iso')])->links() }}
-
-
+                @empty
+                    @lang('ambassador.no_ambassadors') :(<br/>
+                @endforelse
             </div>
-        </div>
 
+            </section>
     </section>
 
 @endsection

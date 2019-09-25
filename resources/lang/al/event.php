@@ -133,8 +133,23 @@ Ambasadorët e EU Code Week dhe organizatorët e Code Week të cilët do të kon
 
     ],
 
-    'privacy'=>'Kam lexuar dhe pranuar termet e politikës së privatësisë, të përshkruara në këtë dokument.'
-
+    'privacy'=>'Kam lexuar dhe pranuar termet e politikës së privatësisë, të përshkruara në këtë dokument.',
+    'country' => 'Shteti',
+    'loading' => 'Po ngarkohet...',
+    'add_activity' => 'Shto aktivitet',
+    'edit_activity' => 'Modifiko aktivitetin',
+    'update_activity' => 'Përditëso aktivitetin',
+    'delete_activity' => 'Fshi aktivitetin',
+    'total_pending_events' => 'Totali i evenimenteve në pritje:',
+    'no_pending_events' => 'Nuk u gjetën evenimente në pritje për',
+    'all_countries' => 'Të gjitha shtetet',
+    'current_status' => 'Statusi aktual',
+    'actions' => 'Veprimet',
+    'certificate_ready' => 'Certifikata juaj e Code Week është gati. Mos ngurroni ta shkarkoni ose ta ndani direkt.',
+    'view_your_certificate' => 'Shikoni këtu certifikatën',
+    'reported' => 'RAPORTUAR',
+    'submit_event_and_report' => 'Dërgoni një raportim për këtë eveniment dhe kërkoni certifikatën tuaj të Code Week.',
+    'report_and_claim' => 'Raportoni evenimentin dhe kërkoni certifikatën'
 
 
 

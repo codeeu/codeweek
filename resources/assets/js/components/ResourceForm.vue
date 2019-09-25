@@ -1,80 +1,84 @@
 <template>
 
-    <div>
 
-        <div class="container mx-auto h-full flex-row bg-blue-light p-4" style="border-radius: 8px">
+    <div class="codeweek-resourceform-component">
+
+        <div class="codeweek-searchbox">
 
 
-            <div class="flex justify-between w-full">
-                <div class="w-full mr-4">
-                    <input type="text" class="input-text w-full pl-8 pr-8" v-model="searchInput" @input="debounceSearch"
-                           v-on:keyup.13="onSubmit()" placeholder="Search resources ...">
+            <div class="basic-fields">
+                <div class="codeweek-search-text">
+                    <input type="text" v-model="searchInput" @input="debounceSearch"
+                           v-on:keyup.13="onSubmit()" :placeholder="$t('resources.search_resources')">
                 </div>
 
-                <div class="more-button">
-                    <input type="button" class="btn btn-primary btn-sm w-full fa fa-trophy button-plus"
-                           :value="showFilters ? '-' : '+'" @click="toggleFilters()">
+                <div class="codeweek-more-button" @click="toggleFilters()">
+                    <span>{{showFilters ? '-' : '+'}}</span>
                 </div>
             </div>
 
 
-            <div class="flex justify-between mt-4" v-show="showFilters">
+            <div class="advanced-fields" v-show="showFilters">
+                <div class="line">
 
-                <multiselect v-model="selectedTypes" :options="types" :multiple="true" :close-on-select="false"
-                             :clear-on-select="false" :preserve-search="true" placeholder="Types" label="name"
-                             track-by="name" :preselect-first="false" @input="onSubmit()"
-                             class="mb-4 mr-8">
-                    <pre class="language-json"><code>{{ selectedTypes  }}</code></pre>
-                </multiselect>
+                    <multiselect v-model="selectedTypes" :options="types" :multiple="true" :close-on-select="false"
+                                 :clear-on-select="false" :preserve-search="true" :placeholder="$t('resources.types')"
+                                 label="resources.resources.types" :custom-label="customLabel"
+                                 track-by="name" :preselect-first="false" @input="onSubmit()">
+                        <pre class="language-json"><code>{{ selectedTypes  }}</code></pre>
+                    </multiselect>
 
-                <multiselect v-model="selectedLevels" :options="levels" :multiple="true"
-                             :close-on-select="false"
-                             :clear-on-select="false" :preserve-search="true" placeholder="Levels" label="name"
-                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mb-4 mr-8">
-                    <pre class="language-json"><code>{{ selectedLevels  }}</code></pre>
-                </multiselect>
+                    <multiselect v-model="selectedLevels" :options="levels" :multiple="true"
+                                 :close-on-select="false"
+                                 :clear-on-select="false" :preserve-search="true" :placeholder="$t('resources.levels')"
+                                 label="resources.resources.levels" :custom-label="customLabel"
+                                 track-by="name" :preselect-first="false" @input="onSubmit()">
+                        <pre class="language-json"><code>{{ selectedLevels  }}</code></pre>
+                    </multiselect>
 
-                <multiselect v-show="section === 'learn'" v-model="selectedProgrammingLanguages"
-                             :options="programmingLanguages"
-                             :multiple="true"
-                             :close-on-select="false"
-                             :clear-on-select="false" :preserve-search="true"
-                             placeholder="Programming Languages"
-                             label="name"
-                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mb-4">
-                    <pre class="language-json"><code>{{ selectedProgrammingLanguages  }}</code></pre>
-                </multiselect>
+                    <multiselect v-show="section === 'learn'" v-model="selectedProgrammingLanguages"
+                                 :options="programmingLanguages"
+                                 :multiple="true"
+                                 :close-on-select="false"
+                                 :clear-on-select="false" :preserve-search="true"
+                                 :placeholder="$t('resources.programming_languages')"
+                                 label="name"
+                                 track-by="name" :preselect-first="false" @input="onSubmit()">
+                        <pre class="language-json"><code>{{ selectedProgrammingLanguages  }}</code></pre>
+                    </multiselect>
 
-                <multiselect v-show="section === 'teach'" v-model="selectedSubjects" :options="subjects"
-                             :multiple="true"
-                             :close-on-select="false"
-                             :clear-on-select="false" :preserve-search="true"
-                             placeholder="Subjects"
-                             label="name"
-                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mr-8 ml-8">
-                    <pre class="language-json"><code>{{ selectedSubjects  }}</code></pre>
-                </multiselect>
-            </div>
+                    <multiselect v-show="section === 'teach'" v-model="selectedSubjects" :options="subjects"
+                                 :multiple="true"
+                                 :close-on-select="false"
+                                 :clear-on-select="false" :preserve-search="true"
+                                 :placeholder="$t('resources.Subjects')"
+                                 label="resources.resources.subjects" :custom-label="customLabel"
+                                 track-by="name" :preselect-first="false" @input="onSubmit()">
+                        <pre class="language-json"><code>{{ selectedSubjects  }}</code></pre>
+                    </multiselect>
+                </div>
 
-            <div class="flex justify-between" v-show="showFilters">
+                <div class="line">
 
-                <multiselect v-model="selectedCategories" :options="categories" :multiple="true"
-                             :close-on-select="false"
-                             :clear-on-select="false" :preserve-search="true" placeholder="Categories"
-                             label="name"
-                             track-by="name" :preselect-first="false" @input="onSubmit()" class="mr-8">
-                    <pre class="language-json"><code>{{ selectedCategories  }}</code></pre>
-                </multiselect>
+                    <multiselect v-model="selectedCategories" :options="categories" :multiple="true"
+                                 :close-on-select="false"
+                                 :clear-on-select="false" :preserve-search="true" :placeholder="$t('resources.categories')"
+                                 label="resources.resources.categories" :custom-label="customLabel"
+                                 track-by="name" :preselect-first="false" @input="onSubmit()">
+                        <pre class="language-json"><code>{{ selectedCategories  }}</code></pre>
+                    </multiselect>
 
 
-                <multiselect v-model="selectedLanguages" :options="languages" :multiple="true"
-                             :close-on-select="false"
-                             :clear-on-select="false" :preserve-search="true" placeholder="Languages"
-                             label="name"
-                             track-by="name" :preselect-first="false" @input="onSubmit()" class="ml-8">
-                    <pre class="language-json"><code>{{ selectedLanguages  }}</code></pre>
-                </multiselect>
+                    <multiselect v-model="selectedLanguages" :options="languages" :multiple="true"
+                                 :close-on-select="false"
+                                 :clear-on-select="false" :preserve-search="true" :placeholder="$t('resources.Languages')"
+                                 label="name"
+                                 track-by="name" :preselect-first="false" @input="onSubmit()">
+                        <pre class="language-json"><code>{{ selectedLanguages  }}</code></pre>
+                    </multiselect>
 
+
+                </div>
 
             </div>
 
@@ -82,40 +86,30 @@
         </div>
 
 
-        <div class="container events-container">
+        <div class="codeweek-content-wrapper">
 
-            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto" style="font-size: 14px;">
-<div class="text-sm lg:flex-grow">
-                <div class="title events-count" v-if="resources.length > 0">{{pagination.total}} resources match in your
-                    search criteria
-                </div>
-                <div class="title events-page" v-if="pagination.last_page > 1">Page {{pagination.current_page}} of
-                    {{pagination.last_page}}
-                </div>
-</div>
-<div>
-    <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
-            v-clipboard:copy="searchQuery"
-            v-clipboard:success="onCopy"
-            v-clipboard:error="onError">
-        Share
-    </button>
-</div>
+            <div class="tools">
 
+                <button class="codeweek-blank-button"
+                    v-clipboard:copy="searchQuery"
+                    v-clipboard:success="onCopy"
+                    v-clipboard:error="onError">
+                    {{$t('resources.share')}}
+                </button>
 
             </div>
 
-            <div class="card-group grid mt-6">
-                <div class="card flex mb-4" v-for="resource in resources">
-                    <resource-card :resource="resource"></resource-card>
-                </div>
+
+            <div class="codeweek-grid-layout">
+                <template v-for="resource in resources">
+                    <resource-card :resource="resource" ></resource-card>
+                </template>
             </div>
 
             <pagination v-if="pagination.last_page > 1" :pagination="pagination" :offset="5"
-                        @paginate="paginate()"></pagination>
+                    @paginate="paginate()"></pagination>
 
         </div>
-
 
     </div>
 
@@ -236,6 +230,7 @@
                 if (!isPagination) {
                     this.pagination.current_page = 1;
                 }
+                this.resources = [];
                 axios.post('/resources/search?page=' + this.pagination.current_page, this.$data)
                     .then(response => {
                         //console.log(response.data.data);
@@ -254,106 +249,19 @@
                         this.resources = response.data.data;
                     })
                     .catch(error => this.errors = error.response.data)
+            },
+            customLabel(obj, label) {
+                return this.$t(label + '.' + obj.name);
             }
         },
         mounted: function () {
-            console.log(this.searchQuery);
-                if (this.searchQuery !== window.location.hostname + "/resources/"+this.section+"?1=1"){
-                    this.showFilters = true;
-                }
+            //console.log(this.searchQuery);
+            /*if (this.searchQuery !== window.location.hostname + "/resources/"+this.section+"?1=1"){
+                this.showFilters = true;
+            }*/
             this.onSubmit();
         }
     };
 </script>
 
 <style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
-<style scoped>
-    .landing-wrapper {
-        position: relative;
-        height: 450px;
-    }
-
-    #loadmask {
-        position: absolute;
-        height: 450px;
-        width: 100%;
-        top: 110px;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .loading {
-        background-color: white;
-        padding: 15px;
-        border-radius: 10px;
-    }
-
-    .events-map-wrapper {
-        position: absolute;
-        width: 100%;
-        height: 450px;
-    }
-
-    .card {
-        border-width: 1px;
-        border-radius: 8px;
-        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
-    }
-
-    .card:hover {
-        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.30);
-    }
-
-    .input-text {
-        min-height: 40px;
-        border-radius: 5px;
-        border: 1px solid #e8e8e8;
-        font-size: 14px;
-        font-family: 'Lato'
-    }
-
-    .button-search {
-        border-radius: 5px;
-        width: 120px;
-        height: 40px;
-    }
-
-    .button-plus {
-        border-radius: 5px;
-        width: 40px;
-        height: 40px;
-    }
-
-    .events-container {
-        margin-top: 20px;
-    }
-
-    .events-page {
-        margin-left: 20px;
-        font-weight: bold;
-        flex: 1;
-        justify-content: flex-end;
-        display: flex;
-        display: -webkit-box;
-    }
-
-    .searchbox-container {
-        position: relative;
-        margin-top: -80px;
-        background-color: rgba(68, 68, 68, 0.8);
-        border-radius: 8px;
-    }
-
-    .card-group {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .pagination {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-</style>

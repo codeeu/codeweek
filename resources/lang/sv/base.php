@@ -45,11 +45,26 @@ return [
     ],
 
     'resources_local_title'=>'Kodningsresurser från',
-    'are_you_a_teacher' => 'Är du lärare?',
-    'get_involved_banner' => 'Klicka här för att få reda på hur du kan engagera dig!',
     'days'=>'Dagar',
     'hours'=>'Timmar',
     'minutes'=>'Minuter',
-    'seconds'=>'Sekunder'
+    'seconds'=>'Sekunder',
+    'still_have_question' => 'Har du fortfarande frågor?',
+    'drop_us_a_line' => 'Skicka ett e-postmeddelande!',
+    'get_in_touch' => 'KONTAKTA OSS',
+    'footer_msg' => 'Ett gräsrotsinitiativ som drivs av frivilliga och stöttas av Europeiska kommissionen.',
+    'email' => 'E-post',
+    'display_email' => 'Visa e-post',
+    'first_name' => 'Förnamn',
+    'last_name' => 'Efternamn',
+    'your_website' => 'Din webbplats',
+    'biography' => 'Biografi',
+    'update' => 'Uppdatera',
+    'delete' => 'Ta bort',
+    'choose a file' => 'Välj en fil',
+    'learning_bits' => 'Infomoduler',
+    'codeweek' => 'CodeWeek',
+    'bring_codeweek_to_your_students' => 'Låt eleverna delta i Code Week',
+    'or' => 'eller'
 
 ];

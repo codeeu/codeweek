@@ -853,27 +853,28 @@ var SEMICOLON = SEMICOLON || {};
 
             if ( $().superfish ) {
                 if( $body.hasClass('device-lg') || $body.hasClass('device-md') ) {
-                    $('#primary-menu ul ul, #primary-menu ul .mega-menu-content').css('display', 'block');
+                    $('#primary-menu ul ul, #primary-menu ul .mega-menu-content').css('display', 'flex');
                     SEMICOLON.header.menuInvert();
+
+                    $('body:not(.side-header) #primary-menu > ul, body:not(.side-header) #primary-menu > div > ul,.top-links > ul').superfish({
+                        popUpSelector: 'ul,.mega-menu-content,.top-link-section',
+                        delay: 250,
+                        speed: 350,
+                        animation: {opacity: 'show'},
+                        animationOut: {opacity: 'hide'},
+                        cssArrows: false
+                    });
+
+                    $('body.side-header #primary-menu > ul').superfish({
+                        popUpSelector: 'ul',
+                        delay: 250,
+                        speed: 350,
+                        animation: {opacity: 'show', height: 'show'},
+                        animationOut: {opacity: 'hide', height: 'hide'},
+                        cssArrows: false
+                    });
+
                 }
-
-                $('body:not(.side-header) #primary-menu > ul, body:not(.side-header) #primary-menu > div > ul,.top-links > ul').superfish({
-                    popUpSelector: 'ul,.mega-menu-content,.top-link-section',
-                    delay: 250,
-                    speed: 350,
-                    animation: {opacity:'show'},
-                    animationOut:  {opacity:'hide'},
-                    cssArrows: false
-                });
-
-                $('body.side-header #primary-menu > ul').superfish({
-                    popUpSelector: 'ul',
-                    delay: 250,
-                    speed: 350,
-                    animation: {opacity:'show',height:'show'},
-                    animationOut:  {opacity:'hide',height:'hide'},
-                    cssArrows: false
-                });
             }
 
         },
@@ -2193,22 +2194,92 @@ var SEMICOLON = SEMICOLON || {};
 
         extras: function(){
             $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+
+            /* PRIMARY MENU */
             $('#primary-menu-trigger,#overlay-menu-close').click(function() {
+                if ($( '#primary-menu-trigger .menu' ).attr('class').indexOf('hide') !== -1){
+                    $( '#primary-menu-trigger .menu' ).attr('class','menu');
+                }else{
+                    $( '#primary-menu-trigger .menu' ).attr('class','menu hide');
+                }
+                if ($( '#primary-menu-trigger .close' ).attr('class').indexOf('hide') !== -1){
+                    $( '#primary-menu-trigger .close' ).attr('class','close');
+                }else{
+                    $( '#primary-menu-trigger .close' ).attr('class','close hide');
+                }
+
                 $( '#primary-menu > ul, #primary-menu > div > ul' ).toggleClass("show");
+                $( '#right-menu' ).toggleClass("show-flex");
                 return false;
-            });
-            $('#page-submenu-trigger').click(function() {
-                $body.toggleClass('top-search-open', false);
-                $pagemenu.toggleClass("pagemenu-active");
-                return false;
-            });
-            $pagemenu.find('nav').click(function(e){
-                $body.toggleClass('top-search-open', false);
-                $topCart.toggleClass('top-cart-open', false);
             });
             if( SEMICOLON.isMobile.any() ){
                 $body.addClass('device-touch');
+                $('#primary-menu ul li a').click(function() {
+                    $(this.parentNode).children('ul').toggleClass('show')
+                })
             }
+
+            /*DROPDOWN MENUS*/
+            $('.menu-trigger').click(function() {
+                if (!$(this).children('.menu-dropdown').hasClass('show')) {
+                    $('.menu-trigger').children('.menu-dropdown').removeClass('show');
+                    $('.menu-trigger').removeClass('opened');
+                }
+                $(this).children('.menu-dropdown').toggleClass('show');
+                $(this).toggleClass('opened');
+            });
+
+            $(document).on('click', function(event) {
+                if (!$(event.target).closest('.menu-trigger').length) {
+                    $('.menu-trigger').children('.menu-dropdown').removeClass('show');
+                    $('.menu-trigger').removeClass('opened');
+                }
+            });
+
+            /*$('#page-submenu-trigger').click(function() {
+                $body.toggleClass('top-search-open', false);
+                $pagemenu.toggleClass("pagemenu-active");
+                return false;
+            });*/
+            /*$pagemenu.find('nav').click(function(e){
+                $body.toggleClass('top-search-open', false);
+                $topCart.toggleClass('top-cart-open', false);
+            });*/
+
+            $('img[src$=".svg"]').each(function(){
+                var $img = $(this);
+                var imgID = $img.attr('id');
+                var imgClass = $img.attr('class');
+                var imgURL = $img.attr('src');
+
+                if (!imgClass || imgClass.indexOf('static-image') == -1){
+
+                    $.get(imgURL, function(data) {
+                        // Get the SVG tag, ignore the rest
+                        var $svg = $(data).find('svg');
+
+                        // Add replaced image's ID to the new SVG
+                        if(typeof imgID !== 'undefined') {
+                            $svg = $svg.attr('id', imgID);
+                        }
+                        // Add replaced image's classes to the new SVG
+                        if(typeof imgClass !== 'undefined') {
+                            $svg = $svg.attr('class', imgClass+' replaced-svg');
+                        }
+
+                        // Remove any invalid XML tags as per http://validator.w3.org
+                        $svg = $svg.removeAttr('xmlns:a');
+
+                        // Replace image with new SVG
+                        $img.replaceWith($svg);
+
+                    }, 'xml');
+
+                }
+
+            });
+
+
             // var el = {
             //     darkLogo : $("<img>", {src: defaultDarkLogo}),
             //     darkRetinaLogo : $("<img>", {src: retinaDarkLogo})

@@ -2,61 +2,73 @@
 
 @section('content')
 
+    <section id="codeweek-toolkits-page" class="codeweek-page">
 
-
-    <section>
-
-
-        <div class="container">
-
-
-            <div class="content-wrap nopadding">
-
-
-                <div class="container clearfix">
-
-
-                    <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
-                        <h1>@lang('menu.toolkits')</h1>
-                        <span></span>
-                    </div>
-
-                    <hr>
-
-
+            <section class="codeweek-banner learn-teach">
+                <div class="text">
+                    <h2>#CodeWeek</h2>
+                    <h1>@lang('menu.toolkits')</h1>
                 </div>
+                <div class="image">
+                    <img src="/images/banner_learn_teach.svg" class="static-image">
+                </div>
+            </section>
 
+            <div class="codeweek-content-wrapper">
                 <ul>
 
-                    <li><a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/Comms+Toolkit+2019.zip">EU Code Week 2019 Communications Toolkit</a></li>
-                    <li><a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/Teachers+Toolkit+2019.zip">EU Code Week 2019 Teachers Toolkit</a></li>
-                    <li>EU Code Week 2019 Leaflet (
+
+
+
+                    <li>EU Code Week 2019 @lang('resources.communication_toolkit') (
+
+                        @foreach($languages as $lang)
+                            @if($lang === $locale)
+                                <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/communications-toolkit-{{strtoupper($lang)}}.zip">@lang('base.languages.' . $lang)</a>
+
+                            @endif
+                        @endforeach
+
+                        @if($locale !== 'en')
+                            - <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/communications-toolkit-EN.zip">@lang('base.languages.en')</a>
+                    @endif
+                )
+                    <li>
+
+
+                    <li>EU Code Week 2019 @lang('resources.teachers_toolkit') (
+
+                        @foreach($languages as $lang)
+                            @if($lang === $locale)
+                                <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/teachers-toolkit-{{strtoupper($lang)}}.zip">@lang('base.languages.' . $lang)</a>
+                            @endif
+                        @endforeach
+
+                        @if($locale !== 'en')
+                            - <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/teachers-toolkit-EN.zip">@lang('base.languages.en')</a>
+                    @endif
+                )
+                    <li>
+
+                    <li>EU Code Week 2019 @lang('resources.leaflet') (
 
                             @foreach($languages as $lang)
                                 @if($lang === $locale)
                                     <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/leaflet/2019/Codeweek_2019_{{strtoupper($lang)}}.pdf">@lang('base.languages.' . $lang)</a>
                                 @endif
-
                             @endforeach
 
                             @if($locale !== 'en')
                                  - <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/leaflet/2019/Codeweek_2019_EN.pdf">@lang('base.languages.en')</a>
                             @endif
-
                         )
-                    <li><a href="/guide">How to organise an activity ?</a>
-
+                    <li>
+                        <a href="/guide">@lang('resources.how_to_organise_an_activity')</a>
                     </li>
 
-
                 </ul>
-
-
             </div>
-        </div>
+
     </section>
-
-
-
 
 @endsection

@@ -12,19 +12,19 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title'=>'Add your #codeweek event',
-    'button'=>'Add Event',
-    'howto'=>'How to organize your own event',
-    'required'=>'Required fields are marked with an * asterisk. Feel free to add the event listing in your local language.',
+    'main_title'=>'Add your #codeweek activity',
+    'button'=>'Add Activity',
+    'howto'=>'How to organize your own activity',
+    'required'=>'Required fields are marked with an * asterisk. Feel free to add the activity listing in your local language.',
     'audience_title'=>'Audience',
     'theme_title'=>'Theme',
     'scoreboard_by_country'=>'Scoreboard',
     'get_involved'=>'Get involved',
-    'organize_or_support_events'=>'Organize or support events in your city',
+    'organize_or_support_events'=>'Organize or support activities in your city',
     'or_contact_your'=>'or contact your',
     'eu_code_week_ambassadors'=>'EU Code Week Ambassadors',
-    'show_events_for'=>'Show events for ',
-    'who' => 'Who is the event for?',
+    'show_events_for'=>'Show activities for ',
+    'who' => 'Who is the activity for?',
     'tags' => 'Tags',
     'image' => 'Image',
     'start' => [
@@ -50,7 +50,7 @@ return [
     'contact' => [
         'label' => 'Contact email',
         'placeholder' => 'This email will be used for important EU Code Week correspondence',
-        'explanation' => 'Your contact email will only be visible to EU Code Week Ambassadors and Code week organisers, who will check your event before it appears on the map and might contact you if edits are necessary or for administering surveys for statistical purposes after the event.',
+        'explanation' => 'Your contact email will only be visible to EU Code Week Ambassadors and Code week organisers, who will check your activity before it appears on the map and might contact you if edits are necessary or for administering surveys for statistical purposes after the activity.',
     ],
     'public' => [
         'label' => 'Public email',
@@ -114,8 +114,8 @@ return [
         'link' => 'here',
     ],
     'thanks_page'=>[
-        'title'=>'Thanks for adding your event!',
-        'phrase1'=>'One of our local ambassadors will now review your event',
+        'title'=>'Thanks for adding your activity!',
+        'phrase1'=>'One of our local ambassadors will now review your activity',
         'phrase2'=>'and make sure everything looks ok.',
         'phrase3'=>'If you have any questions, get in touch with one of our',
         'phrase4'=>'national ambassadors',
@@ -124,7 +124,7 @@ return [
         'phrase7'=>'You can share your Codeweek for all code with other people:'
     ],
     'activity_type'=>[
-        'Event'=>'Event',
+        'Event'=>'Activity',
         'Lesson'=>'Lesson',
         'Workshop'=>'Workshop',
         'Webinar'=>'Webinar',
@@ -143,7 +143,22 @@ return [
 
     'More'=>'More',
     'country'=>'Country',
-    'privacy'=>'I have read and agree with the privacy policy terms described in this document.'
+    'privacy'=>'I have read and agree with the privacy policy terms described in this document.',
+    'loading' => 'Loading...',
+    'add_activity' => 'Add activity',
+    'edit_activity' => 'Edit activity',
+    'update_activity' => 'Update activity',
+    'delete_activity' => 'Delete activity',
+
+    'total_pending_events' => 'Total of pending activities:',
+    'no_pending_events' => 'No Pending Activity found for',
+    'all_countries' => 'All countries',
+
+    'current_status' => 'Current Status',
+    'certificate_ready' => 'Your Code Week certificate is ready. Feel free to download it or share it directly.',
+    'view_your_certificate' => 'View your certificate here',
+    'submit_event_and_report' => 'Submit a report for this activity and claim your Code Week certificate.',
+    'report_and_claim' => 'Report activity and claim certificate',
 
 
 ];

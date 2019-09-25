@@ -36,5 +36,6 @@ return [
     'logout' => 'Deconectare',
     'signin' => 'Conectare',
     'privacy' => 'Confidențialitate',
+    'participation'=> 'Certificat de participare',
 
 ];

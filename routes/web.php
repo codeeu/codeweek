@@ -39,24 +39,24 @@ Route::get('setlocale', function (Request $request) {
 
 
 //Static pages
-Route::get('/', 'StaticPageController@index')->name('home');
-Route::get('/home', 'StaticPageController@index')->name('home');
-Route::get('/guide', 'StaticPageController@index')->name('guide');
-Route::get('/privacy', 'StaticPageController@index')->name('privacy');
-Route::get('/petition', 'StaticPageController@index')->name('petition');
-Route::get('/beambassador', 'StaticPageController@index')->name('beambassador');
-Route::get('/about', 'StaticPageController@index')->name('about');
-Route::get('/codeweek4all', 'StaticPageController@index')->name('codeweek4all');
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/guide', 'StaticPageController@static')->name('guide');
+Route::get('/privacy', 'StaticPageController@static')->name('privacy');
+Route::get('/petition', 'StaticPageController@static')->name('petition');
+Route::get('/beambassador', 'StaticPageController@static')->name('beambassador');
+Route::get('/about', 'StaticPageController@static')->name('about');
+Route::get('/codeweek4all', 'StaticPageController@static')->name('codeweek4all');
 //Static training pages
-Route::get('/training', 'StaticPageController@index')->name('training.index');
-Route::get('/training/coding-without-computers', 'StaticPageController@index')->name('training.module-1');
-Route::get('/training/computational-thinking-and-problem-solving', 'StaticPageController@index')->name('training.module-2');
-Route::get('/training/visual-programming-introduction-to-scratch', 'StaticPageController@index')->name('training.module-3');
-Route::get('/training/creating-educational-games-with-scratch', 'StaticPageController@index')->name('training.module-4');
-Route::get('/training/making-robotics-and-tinkering-in-the-classroom', 'StaticPageController@index')->name('training.module-5');
-Route::get('/training/developing-creative-thinking-through-mobile-app-development', 'StaticPageController@index')->name('training.module-6');
-Route::get('/training/tinkering-and-making', 'StaticPageController@index')->name('training.module-7');
-Route::get('/training/coding-for-all-subjects', 'StaticPageController@index')->name('training.module-8');
+Route::get('/training', 'StaticPageController@static')->name('training.index');
+Route::get('/training/coding-without-computers', 'StaticPageController@static')->name('training.module-1');
+Route::get('/training/computational-thinking-and-problem-solving', 'StaticPageController@static')->name('training.module-2');
+Route::get('/training/visual-programming-introduction-to-scratch', 'StaticPageController@static')->name('training.module-3');
+Route::get('/training/creating-educational-games-with-scratch', 'StaticPageController@static')->name('training.module-4');
+Route::get('/training/making-robotics-and-tinkering-in-the-classroom', 'StaticPageController@static')->name('training.module-5');
+Route::get('/training/developing-creative-thinking-through-mobile-app-development', 'StaticPageController@static')->name('training.module-6');
+Route::get('/training/tinkering-and-making', 'StaticPageController@static')->name('training.module-7');
+Route::get('/training/coding-for-all-subjects', 'StaticPageController@static')->name('training.module-8');
 
 
 Route::get('/events', 'SearchController@search')->name('events_map');
@@ -108,6 +108,8 @@ Route::delete('api/users/avatar', 'Api\UserAvatarController@delete')->middleware
 Route::get('api/event/list', 'Api\EventsController@list')->name('event_list');
 Route::get('api/event/detail', 'Api\EventsController@detail')->name('event_list');
 Route::get('api/event/closest', 'Api\EventsController@closest');
+
+Route::get('api/event/list/eeducation', 'Api\EventsController@eeducation');
 
 
 Route::get('toolkits', 'ToolkitsController@get')->name('toolkits');
@@ -162,17 +164,21 @@ Route::group(['middleware' => ['role:super admin']], function () {
 
 Route::group(['middleware' => ['role:super admin|ambassador']], function () {
     Route::get('/pending', 'PendingEventsController@index')->name('pending');
-
     Route::post('/api/event/approve/{event}', 'EventController@approve')->name('event.approve');
     Route::post('/api/event/reject/{event}', 'EventController@reject')->name('event.reject');
 
-    Route::get('/profile', function () {
-        $data = ['profileUser' => Auth()->user()];
-
-        return view('profile', $data);
-    })->name('profile')->middleware('auth');
 });
 
+
+
+Route::get('/profile', function () {
+    $data = ['profileUser' => Auth()->user()];
+
+    return view('profile', $data);
+})->name('profile')->middleware('auth');
+
+
+Route::get('/api/events/eeducation', 'EventsAPIController@eeducation');
 
 Auth::routes();
 

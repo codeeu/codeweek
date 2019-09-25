@@ -18,4 +18,14 @@ return [
     'facebook' => 'Se connecter avec Facebook',
     'google' => 'Se connecter avec Google',
     'azure' => 'Se connecter avec Azure',
+    'email' => 'Adresse e-mail',
+    'password' => 'Mot de passe',
+    'remember' => 'Se souvenir de moi',
+    'forgotten_password' => 'Mot de passe oublié?',
+    'no_account' => 'Vous n’avez pas de compte?',
+    'signup' => 'S’inscrire',
+    'reset' => 'Réinitialiser votre mot de passe',
+    'send_password' => 'Envoyer le lien permettant de réinitialiser votre mot de passe',
+    'confirm_password' => 'Confirmer le mot de passe',
+    'name' => 'prénom'
 ];

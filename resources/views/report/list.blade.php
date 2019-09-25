@@ -1,20 +1,19 @@
 @extends('layout.base')
 
 @section('content')
-    <section>
+    <section id="codeweek-report-events-page" class="codeweek-page">
 
-        <div class="container">
-
-            <h1 style="display:inline-block;">@lang('eventreports.reports_by'){{ Auth::user()->fullName }}</h1>
+        <section class="codeweek-content-header">
+            <h1>@lang('eventreports.reports_by'){{ Auth::user()->fullName }}</h1>
             <p>@lang('eventreports.report')</p>
-            <hr>
+        </section>
+
+        <section class="codeweek-content-wrapper">
 
             @if($events->isEmpty())
-                <div class="row">
-                    <p>@lang('eventreports.no_reports')</p>
-                </div>
+                <p>@lang('eventreports.no_reports')</p>
             @else
-                <div class="row">
+                <div class="codeweek-grid-layout">
                     @foreach($events as $event)
                         @component('event.event_tile', ['event'=>$event])
                         @endcomponent
@@ -23,7 +22,7 @@
                 {{ $events->links() }}
             @endif
 
-        </div>
+        </section>
 
     </section>
 

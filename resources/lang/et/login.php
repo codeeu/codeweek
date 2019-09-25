@@ -18,4 +18,14 @@ return [
     'facebook' => 'Logi sisse Facebooki kaudu',
     'google' => 'Logi sisse Google’i kaudu',
     'azure' => 'Logi sisse Azure’i kaudu',
+    'email' => 'E-kiri',
+    'password' => 'Parool',
+    'remember' => 'Jäta mind meelde',
+    'forgotten_password' => 'Unustasite parooli?',
+    'no_account' => 'Teil pole kontot?',
+    'signup' => 'Registreeri',
+    'reset' => 'Lähtesta parool',
+    'send_password' => 'Saada parooli lähtestamise link',
+    'confirm_password' => 'Kinnita parool',
+    'name' => 'nimi'
 ];

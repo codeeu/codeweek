@@ -24,8 +24,8 @@ return [
         'no' => 'Nie'
     ],
     'search_counter' => 'pasuje do Twoich kryteriów wyszukiwania',
-    'event'=>'wydarzenie',
-    'events'=>'wydarzeń',
+    'event'=>'wydarzeniu',
+    'events'=>'wydarzeniach',
     'year' => 'rok',
     'audiences'=>'Publiczność','themes'=>'Tematy','countries'=>'Kraje','search_placeholder' => 'Szukaj według tytułu lub opisu',
 ];

@@ -130,7 +130,22 @@ return [
         'open in person' => 'Açık yüz yüze etkinlik',
         'invite in person' => 'Sadece davetiye ile yüz yüze etkinlik'
 
-    ]
+    ],
+    'country' => 'Ülke',
+    'loading' => 'Yükleniyor...',
+    'add_activity' => 'Etkinlik ekle',
+    'edit_activity' => 'Etkinlik düzenle',
+    'update_activity' => 'Etkinlik güncelle',
+    'delete_activity' => 'Etkinlik sil',
+    'total_pending_events' => 'Toplam bekleyen etkinlik:',
+    'no_pending_events' => 'Şu öğe için Bekleyen Etkinlik bulunamadı:',
+    'all_countries' => 'Tüm ülkeler',
+    'current_status' => 'Mevcut Durum',
+    'actions' => 'Eylemler',
+    'certificate_ready' => 'Code Week sertifikanız hazır. İndirebilir veya doğrudan paylaşabilirsiniz.',
+    'view_your_certificate' => 'Buradan sertifikanızı görüntüleyebilirsiniz',
+    'submit_event_and_report' => 'Bu etkinlik için bir rapor gönderin ve Code Week sertifikanızı isteyin.',
+    'report_and_claim' => 'Etkinliği raporla ve sertifika iste'
 
 
 

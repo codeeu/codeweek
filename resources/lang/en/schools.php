@@ -12,7 +12,7 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-    'title' =>'Schools: bring Code Week to your students',
+    'title' =>'Bring Code Week to your students',
     '1' => [
         "title1" => "Why should you bring coding to your classroom?",
         "title2" => "How can coding benefit your students? What is in it for you as a teacher ?",
@@ -27,9 +27,9 @@ return [
     ],
     '2' => [
         "title1" => "Ready to get involved?",
-        "title2" => "Organise a lesson, a training session, or an event, and pin it on the map.",
+        "title2" => "Organise a lesson, a training session, or an activity, and pin it on the map.",
         "content" => [
-            "Whether you have any coding or programming knowledge or not, you can easily organise a lesson in your classroom, an open day, or an event at your school. Just find a date and register your activity in the map below. If you feel like you need support with preparing a lesson with coding, skip to the next section.",
+            "Whether you have any coding or programming knowledge or not, you can easily organise a lesson in your classroom, an open day, or an activity at your school. Just find a date and register your activity in the map below. If you feel like you need support with preparing a lesson with coding, skip to the next section.",
             "Have a look at some examples of activities that are being organised browsing the map below and add your own to join thousands of fellow educators across Europe and beyond: "
 
         ],

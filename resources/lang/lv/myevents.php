@@ -23,6 +23,7 @@ return [
     'status'=>[
         'APPROVED'=>'APSTIPRINĀTS',
         'REJECTED'=>'NORAIDĪTS',
-        'PENDING'=>'GAIDA APSTIPRINĀJUMU'
+        'PENDING'=>'GAIDA APSTIPRINĀJUMU',
+        'REPORTED' => 'PAZIŅOTS'
     ]
 ];

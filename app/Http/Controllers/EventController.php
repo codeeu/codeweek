@@ -137,6 +137,10 @@ class EventController extends Controller
     public function show(Event $event)
     {
 
+        /*$start_date = Carbon::parse($event->start_date);
+        dd($start_date->isoFormat('MMMM Do YYYY, h:mm:ss a'));*/
+        //dd(\Carbon\Carbon::now()->firstOfMonth(1)->isoFormat('ddd'));
+
         if ($event->status != "APPROVED") {
             $this->authorize('view', $event);
         }

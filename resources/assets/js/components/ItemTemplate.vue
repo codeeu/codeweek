@@ -1,7 +1,6 @@
 <template>
   <div class="address-list-item">
-    <i class="fa fa-map-marker"></i>
-    <div class="info">
+    <div class="address-info">
         <div class="name">{{item.name}} {{item.housenumber}}</div>
         <div class="city">{{line2}}</div>
     </div>

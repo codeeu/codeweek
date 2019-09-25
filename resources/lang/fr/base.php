@@ -15,7 +15,6 @@ return [
         'en' => 'Anglais',
         'fr' => 'Français',
         'bg' => 'Bulgare',
-        'mt' => 'Maltais',
         'hr' => 'Croate',
         'de' => 'Allemand',
         'pl' => 'Polonais',
@@ -46,11 +45,26 @@ return [
     ],
 
     'resources_local_title'=>'Ressources pour le codage en',
-    'are_you_a_teacher' => 'Vous êtes enseignant(e)?',
-    'get_involved_banner' => 'Cliquez ici pour découvrir comment participer!',
     'days'=>'Jours',
     'hours'=>'Heures',
     'minutes'=>'Minutes',
-    'seconds'=>'Secondes'
+    'seconds'=>'Secondes',
+    'still_have_question' => 'Vous avez d’autres questions?',
+    'drop_us_a_line' => 'Écrivez-nous!',
+    'get_in_touch' => 'CONTACTEZ-NOUS',
+    'footer_msg' => 'Une initiative citoyenne dirigée par des volontaires et soutenue par la Commission européenne.',
+    'email' => 'Adresse e-mail',
+    'display_email' => 'Afficher adresse e-mail',
+    'first_name' => 'Prénom',
+    'last_name' => 'Nom',
+    'your_website' => 'Votre site web',
+    'biography' => 'Biographie',
+    'update' => 'Mettre à jour',
+    'delete' => 'Supprimer',
+    'choose a file' => 'Choisir un fichier',
+    'learning_bits' => 'Apprentissage',
+    'codeweek' => 'CodeWeek',
+    'bring_codeweek_to_your_students' => 'Faites découvrir la Semaine du code à vos élèves',
+    'or' => 'ou'
 
 ];
