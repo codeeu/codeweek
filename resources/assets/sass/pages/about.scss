@@ -13,6 +13,18 @@
   padding-left: 0;
 }
 
+#codeweek-about-page .codeweek-content-wrapper .partners a{
+  display: flex;
+}
+
+#codeweek-about-page .codeweek-content-wrapper .partners a:hover h1{
+  color: $main-color2;
+}
+
+#codeweek-about-page .codeweek-content-wrapper .partners a h1{
+  padding-right: 10px;
+}
+
 /*Media queries*/
 
 /* smartphones, iPhone, portrait 480x320 phones */
