@@ -29,5 +29,6 @@ return [
                         </blockquote>
                     </p>',
     'join_codeweek-title' => 'Włącz się w Europejski Tydzień Kodowania',
-    'join_codeweek-text' => '<p>Włącz się w Europejski Tydzień Kodowania, <a href="/guide">organizując wydarzenia związane z programowaniem</a> w swoim mieście, biorąc udział w <a href="/codeweek4all">wyzwaniu w ramach Tygodnia Kodowania dla wszystkich „Code Week 4 All”</a> oraz innych wydarzeniach organizowanych w wielu krajach i środowiskach, a także promując wizję Tygodnia Kodowania jako <a href="/ambassadors">Ambasador Europejskiego Tygodnia Kodowania</a> w swoim kraju.</p>'
+    'join_codeweek-text' => '<p>Włącz się w Europejski Tydzień Kodowania, <a href="/guide">organizując wydarzenia związane z programowaniem</a> w swoim mieście, biorąc udział w <a href="/codeweek4all">wyzwaniu w ramach Tygodnia Kodowania dla wszystkich „Code Week 4 All”</a> oraz innych wydarzeniach organizowanych w wielu krajach i środowiskach, a także promując wizję Tygodnia Kodowania jako <a href="/ambassadors">Ambasador Europejskiego Tygodnia Kodowania</a> w swoim kraju.</p>',
+    'partners_and_sponsors' => 'Partnerzy i sponsorzy'
 ];

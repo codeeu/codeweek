@@ -28,5 +28,6 @@ return [
                         </blockquote>
                     </p>',
     'join_codeweek-title' => 'Liituge ELi programmeerimisnädalaga Code Week',
-    'join_codeweek-text' => '<p>Liituge ELi programmeerimisnädalaga Code Week, <a href="/guide">korraldades oma linnas programmeerimistegevusi</a>, liitudes programmeerimisnädala väljakutsega <a href="/codeweek4all">Code Week 4 All</a> ning aidates ühendada erinevaid kogukondi ja rahvuseid või jagades programmeerimisnädala visiooni <a href="/ambassadors">oma riigi saadikuna</a>!</p>'
+    'join_codeweek-text' => '<p>Liituge ELi programmeerimisnädalaga Code Week, <a href="/guide">korraldades oma linnas programmeerimistegevusi</a>, liitudes programmeerimisnädala väljakutsega <a href="/codeweek4all">Code Week 4 All</a> ning aidates ühendada erinevaid kogukondi ja rahvuseid või jagades programmeerimisnädala visiooni <a href="/ambassadors">oma riigi saadikuna</a>!</p>',
+    'partners_and_sponsors' => 'Partnerid ja sponsorid'
 ];
