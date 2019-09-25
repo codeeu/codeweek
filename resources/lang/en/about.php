@@ -68,5 +68,6 @@ return [
     'join_codeweek-text' => '
                 <p>
                     Join EU Code Week by <a href="/guide">organising a coding activity</a> in your town, joining the <a href="/codeweek4all">Code Week 4 All Challenge</a> and connecting activities across communities and borders, or helping us spread the vision of Code Week as an <a href="/ambassadors">EU Code Week Ambassador</a> for your country!
-                </p>'
+                </p>',
+    'partners_and_sponsors' => 'Partners and Sponsors'
 ];
