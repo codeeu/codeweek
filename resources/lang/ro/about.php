@@ -28,5 +28,6 @@ return [
                         </blockquote>
                     </p>',
     'join_codeweek-title' => 'Alăturați-vă Săptămânii UE a programării',
-    'join_codeweek-text' => '<p>Alăturați-vă Săptămânii UE a programării prin <a href="/guide">organizarea unei activități de programare</a> în propriul oraș, participând la <a href="/codeweek4all">provocarea „Săptămâna programării pentru toți”</a> și conectând activități între comunități și peste granițe sau ajutând la răspândirea viziunii Săptămânii programării în calitate de <a href="/ambassadors">ambasador al Săptămânii UE a programării</a> pentru țara dumneavoastră!</p>'
+    'join_codeweek-text' => '<p>Alăturați-vă Săptămânii UE a programării prin <a href="/guide">organizarea unei activități de programare</a> în propriul oraș, participând la <a href="/codeweek4all">provocarea „Săptămâna programării pentru toți”</a> și conectând activități între comunități și peste granițe sau ajutând la răspândirea viziunii Săptămânii programării în calitate de <a href="/ambassadors">ambasador al Săptămânii UE a programării</a> pentru țara dumneavoastră!</p>',
+    'partners_and_sponsors' => 'Parteneri și sponsori'
 ];

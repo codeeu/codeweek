@@ -72,6 +72,13 @@
 
             </div>
 
+            <div class="partners">
+                <a href="/partners">
+                    <h1>@lang('about.partners_and_sponsors')</h1>
+                    <img src="/images/external-link.svg" width="16" class="static-image">
+                </a>
+            </div>
+
         </section>
 
     </section>
