@@ -66,6 +66,10 @@ class Eeducation extends Command
 
         $eventsArr = json_decode((string)$response->getBody());
 
+        if (is_null($eventsArr)){
+            Log::error($response->getBody());
+            return;
+        }
         $importer = new RemoteImporter("Eeducation", $eventsArr);
         $metrics = $importer->import();
 
