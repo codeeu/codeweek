@@ -66,15 +66,19 @@ class RemoteImporter
                 //Update the importer with the newly created ID
                 $tracker->original_updated_at = $remote_site->getUpdatedTimestamp();
                 $tracker->event_id = $event->id;
+                $tracker->seen_at = Carbon::now();
                 $tracker->save();
             } else {
                 if ($tracker->original_updated_at != $remote_site->getUpdatedTimestamp()) {
                     $remote_site->update($tracker->event);
                     $tracker->original_updated_at = $remote_site->getUpdatedTimestamp();
+                    $tracker->seen_at = Carbon::now();
                     $tracker->save();
                     $updated++;
                 } else {
-                    dump("same timestamp, nothing to do");
+                    dump("same timestamp, let's update the seen at and leave");
+                    $tracker->seen_at = Carbon::now();
+                    $tracker->save();
                 }
 
             }
