@@ -46,6 +46,7 @@ Route::get('/privacy', 'StaticPageController@static')->name('privacy');
 Route::get('/petition', 'StaticPageController@static')->name('petition');
 Route::get('/beambassador', 'StaticPageController@static')->name('beambassador');
 Route::get('/about', 'StaticPageController@static')->name('about');
+Route::get('/partners', 'StaticPageController@static')->name('sponsors');
 Route::get('/codeweek4all', 'StaticPageController@static')->name('codeweek4all');
 //Static training pages
 Route::get('/training', 'StaticPageController@static')->name('training.index');

@@ -28,5 +28,6 @@ return [
                         </blockquote>
                     </p>',
     'join_codeweek-title' => 'Delta i EU Code Week',
-    'join_codeweek-text' => '<p>Delta i EU Code Week genom att <a href="/guide">organisera en kodningsaktivitet</a> på din ort, delta i <a href="/codeweek4all">Code Week 4 All Challenge</a> och andra aktiviteter som förenar närsamhällen och går över gränserna. Eller hjälp oss att sprida information om Code Week som <a href="/ambassadors">ambassadör för EU Code Week</a> i ditt land!</p>'
+    'join_codeweek-text' => '<p>Delta i EU Code Week genom att <a href="/guide">organisera en kodningsaktivitet</a> på din ort, delta i <a href="/codeweek4all">Code Week 4 All Challenge</a> och andra aktiviteter som förenar närsamhällen och går över gränserna. Eller hjälp oss att sprida information om Code Week som <a href="/ambassadors">ambassadör för EU Code Week</a> i ditt land!</p>',
+    'partners_and_sponsors' => 'Partners och sponsorer'
 ];

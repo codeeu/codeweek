@@ -29,5 +29,6 @@ return [
                         </blockquote>
                     </p>',
     'join_codeweek-title' => 'Meedoen met de EU-programmeerweek',
-    'join_codeweek-text' => '<p>Doe mee met de EU-programmeerweek: <a href="/guide">organiseer een programmeeractiviteit</a> in jouw woonplaats, doe mee met de <a href="/codeweek4all">Code Week 4 All-uitdaging</a> en verbindende activiteiten in andere community’s en landen of help ons de visie van de programmeerweek te verspreiden als <a href="/ambassadors">ambassadeur van de EU-programmeerweek</a> in jouw land!</p>'
+    'join_codeweek-text' => '<p>Doe mee met de EU-programmeerweek: <a href="/guide">organiseer een programmeeractiviteit</a> in jouw woonplaats, doe mee met de <a href="/codeweek4all">Code Week 4 All-uitdaging</a> en verbindende activiteiten in andere community’s en landen of help ons de visie van de programmeerweek te verspreiden als <a href="/ambassadors">ambassadeur van de EU-programmeerweek</a> in jouw land!</p>',
+    'partners_and_sponsors' => 'Partners en sponsoren'
 ];
