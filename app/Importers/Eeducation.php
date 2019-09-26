@@ -36,7 +36,7 @@ class Eeducation implements Importers
 
     public function getUpdatedTimestamp()
     {
-        return Carbon::createFromTimestamp(intval($this->remote->tstamp));
+        return Carbon::createFromTimestamp($this->remote->tstamp);
     }
 
     public function parse()
