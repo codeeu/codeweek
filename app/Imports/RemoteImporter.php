@@ -76,7 +76,6 @@ class RemoteImporter
                     $tracker->save();
                     $updated++;
                 } else {
-                    dump("same timestamp, let's update the seen at and leave");
                     $tracker->seen_at = Carbon::now();
                     $tracker->save();
                 }

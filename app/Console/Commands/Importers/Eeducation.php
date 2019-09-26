@@ -9,6 +9,7 @@ use Illuminate\Console\Command;
 use Feeds;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Client;
+use Illuminate\Support\Facades\Log;
 
 
 class Eeducation extends Command
@@ -46,7 +47,7 @@ class Eeducation extends Command
      */
     public function handle()
     {
-        dump("Loading Eeducation");
+        Log::info("Loading Eeducation");
 
         // Create or Load Eeducation Technical User
         //$techicalUserID = ImporterHelper::getTechnicalUser("eeducation-technical");
@@ -68,9 +69,9 @@ class Eeducation extends Command
         $importer = new RemoteImporter("Eeducation", $eventsArr);
         $metrics = $importer->import();
 
-        dump("Records  : " . $metrics[0]);
-        dump("Added    : " . $metrics[1]);
-        dump("Updated  : " . $metrics[2]);
+        Log::info("Records  : " . $metrics[0]);
+        Log::info("Added    : " . $metrics[1]);
+        Log::info("Updated  : " . $metrics[2]);
 
 
         // Process the events
