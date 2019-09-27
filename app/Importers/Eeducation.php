@@ -86,7 +86,8 @@ class Eeducation implements Importers
         $event->description = $this->remote->activity_description;
         $event->organizer_type = $this->remote->organisation_type;
         $event->location = $this->remote->address;
-
+        $event->organizer = $this->remote->school_name;
+        $event->event_url = $this->remote->url;
         $event->country_iso = $this->remote->country;
         $event->start_date = Carbon::parse($this->remote->starttime)->toDateTimeString();
         $event->end_date = Carbon::parse($this->remote->endtime)->toDateTimeString();
