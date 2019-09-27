@@ -42,15 +42,16 @@ class Eeducation implements Importers
     public function parse()
     {
         dump("parse event inside eeducation");
+        $tz =
         $event = new Event([
             'status' => "APPROVED",
             'title' => $this->remote->activity_title,
             'slug' => Str::slug($this->remote->activity_title),
-            'organizer' => "",
+            'organizer' => $this->remote->school_name,
             'description' => $this->remote->activity_description,
             'organizer_type' => $this->remote->organisation_type,
             'location' => $this->remote->address,
-            'event_url' => null,
+            'event_url' => $this->remote->url,
             'user_email' => "",
             'creator_id' => $this->creator->id,
             'country_iso' => $this->remote->country,

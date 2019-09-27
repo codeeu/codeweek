@@ -179,7 +179,5 @@ Route::get('/profile', function () {
 })->name('profile')->middleware('auth');
 
 
-Route::get('/api/events/eeducation', 'EventsAPIController@eeducation');
-
 Auth::routes();
 
