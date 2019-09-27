@@ -4,21 +4,32 @@ namespace Tests\Feature;
 
 use App\Importer;
 use App\Imports\RemoteImporter;
-use App\ResourceCategory;
 use App\Event;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Foundation\Testing\WithoutEvents;
+use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+
 
 class EeducationTest extends TestCase
 {
     use DatabaseMigrations;
 
+
     private $input;
 
-    public function setupWorld()
+    public function _setupWorld()
     {
+
+    }
+
+    /** @test */
+    public function it_should_create_event_from_eeducation()
+    {
+
+        $this->withoutExceptionHandling();
+        // Setup World
+
         $this->input[] = (object) array(
             "id"=> "1111",
             "organizer_email"=> "reinhard.grass@bhak-bludenz.ac.at",
@@ -31,8 +42,8 @@ class EeducationTest extends TestCase
             "country"=> "AT",
             "starttime"=> 1561932000,
             "endtime"=> 1562018340,
-            "tstamp"=> "1564514814",
-            "url"=> "",
+            "tstamp"=> 1564514814,
+            "url"=> "http://some.foo",
             "lat"=> "47.15237",
             "lng"=> "9.82636"
         );
@@ -48,20 +59,11 @@ class EeducationTest extends TestCase
             "country"=> "AT",
             "starttime"=> 1561932000,
             "endtime"=> 1562018340,
-            "tstamp"=> "1564514814",
-            "url"=> "",
+            "tstamp"=> 1564514814,
+            "url"=> "http://some.bar",
             "lat"=> "47.15237",
             "lng"=> "9.82636"
         );
-    }
-
-    /** @test */
-    public function it_should_create_event_from_eeducation()
-    {
-
-        // Setup World
-
-        $this->setupWorld();
 
 
         //When we process it
@@ -77,32 +79,4 @@ class EeducationTest extends TestCase
 
     }
 
-    /** @test */
-    public function it_should_create_event_only_once()
-    {
-
-        // Setup World
-
-        $this->setupWorld();
-
-
-        // When we process it
-        $ri = new RemoteImporter("Eeducation", $this->input);
-        $ri->import();
-
-        // Test an event has been created
-        $this->assertEquals(2, sizeof(Event::all()));
-
-        // Test a record is linked into importers table for eeducation
-        $this->assertEquals(2, sizeof(Importer::where("website","=","Eeducation")->get()));
-
-        // Call Import again
-        $ri->import();
-
-        // Should still be the same
-        $this->assertEquals(2, sizeof(Event::all()));
-        $this->assertEquals(2, sizeof(Importer::where("website","=","Eeducation")->get()));
-
-
-    }
 }

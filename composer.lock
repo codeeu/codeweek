@@ -288,8 +288,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova-components/NovaTheme",
-                "reference": "e582a7d3d0fc4145e7a885f796ed90f78daa09f3",
-                "shasum": null
+                "reference": "e582a7d3d0fc4145e7a885f796ed90f78daa09f3"
             },
             "require": {
                 "php": ">=7.1.0"
