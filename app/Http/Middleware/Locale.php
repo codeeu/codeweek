@@ -55,18 +55,25 @@ class Locale
 
         $websiteLanguages = config('app.locales');
 
+        if(isset($_SERVER["HTTP_ACCEPT_LANGUAGE"])) {
+            $http_accept_language = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
+        } else {
+            Log::info("No http accept language detected. Using the default one");
+            $http_accept_language = "en-US,en;q=0.9,fr;q=0.8";
+        }
+
+
 
         preg_match_all(
             '/([a-z]{1,8})' .       // M1 - First part of language e.g en
             '(-[a-z]{1,8})*\s*' .   // M2 -other parts of language e.g -us
             // Optional quality factor M3 ;q=, M4 - Quality Factor
             '(;\s*q\s*=\s*((1(\.0{0,3}))|(0(\.[0-9]{0,3}))))?/i',
-            $_SERVER['HTTP_ACCEPT_LANGUAGE'],
+            $http_accept_language,
             $langParse);
 
         $langs = $langParse[1]; // M1 - First part of language
         $quals = $langParse[4]; // M4 - Quality Factor
-
 
         $numLanguages = count($langs);
         $langArr = array();
