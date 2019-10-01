@@ -78,7 +78,7 @@
             },
             updateItems (text) {
                 var me = this;
-                var baseURL = "http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/suggest?f=json";
+                var baseURL = "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/suggest?f=json";
                 $.ajax({
                     url: baseURL + "&text="+text,
                     success: function (res) {
