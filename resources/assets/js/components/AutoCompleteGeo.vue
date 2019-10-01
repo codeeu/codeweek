@@ -11,7 +11,7 @@
             :keep-open=false
             :auto-select-one-item=false
             :input-attrs="inputAttrs"
-            :wait=0
+            :wait=300
             >
         </v-autocomplete>
         <input type="hidden" name="geoposition" id="geoposition" :value="geoposition">
@@ -21,6 +21,7 @@
 <script>
     import ItemTemplate from './ItemTemplate.vue'
     import Autocomplete from 'v-autocomplete'
+    import allCountries from "./allCountries";
 
 
     export default {
@@ -42,49 +43,56 @@
           placeholder: null,
           name: null,
           value: null,
-          geoposition:null
+          geoposition: null
       },
-      methods: {
-        itemSelected (item) {
-            if (item.coordinates && map){
-                var coords = new Array().concat(item.coordinates).reverse();
-                this.geoposition = coords.join(",");
-                map.setView(coords,16);
-
-                $("#id_country").val(item.country);
-            }
-        },
-        getLabel (item) {
-            if (item && item.name) {
-              return item.name + (item.city ? ', ' + item.city : '') + (item.country ? ', ' + item.country : '')
-            }
-            return ''
-        },
-        change (text) {
-            if (text == ""){
-                this.items = null;
-            }
-        },
-        updateItems (text) {
-          var me = this;
-          $.ajax({
-              url: "https://europa.eu/webtools/rest/gisco/api?q="+text+"&limit=5",
-              success: function (res) {
-                    var locations = [];
-                    $.each(res.features, function (key, location) {
-                        locations.push({
-                            coordinates: location.geometry.coordinates,
-                            name: location.properties.name || location.properties.street,
-                            housenumber: location.properties.housenumber,
-                            city: location.properties.city,
-                            country: location.properties.country
-                        });
+        methods: {
+            itemSelected (item) {
+                if (map && item && item.name && item.magicKey){
+                    var me = this;
+                    var baseURL = "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?f=json";
+                    $.ajax({
+                        url: baseURL + "&singleLine=" + item.name + "&magicKey=" + item.magicKey + "&outFields=Country",
+                        success: function (res) {
+                            var candidate = res.candidates[0];
+                            me.geoposition = [candidate.location.y, candidate.location.x];
+                            map.setView(me.geoposition,16);
+                            var countryName = me.findCountry(candidate.attributes.Country).name;
+                            $("#id_country").val(countryName);
+                        }
                     });
-                    //console.log(locations);
-                  me.items = locations;
-              }
-          });
+                }
+            },
+            findCountry(iso) {
+                return allCountries.find(country => country.iso3 === iso);
+            },
+            getLabel (item) {
+                if (item && item.name) {
+                    return item.name;
+                }
+                return ''
+            },
+            change (text) {
+                if (text == ""){
+                    this.items = null;
+                }
+            },
+            updateItems (text) {
+                var me = this;
+                var baseURL = "http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/suggest?f=json";
+                $.ajax({
+                    url: baseURL + "&text="+text,
+                    success: function (res) {
+                        var locations = [];
+                        $.each(res.suggestions, function (key, location) {
+                            locations.push({
+                                name: location.text,
+                                magicKey: location.magicKey
+                            });
+                        });
+                        me.items = locations;
+                    }
+                });
+            }
         }
-      }
     }
 </script>
