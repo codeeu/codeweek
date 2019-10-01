@@ -19,7 +19,7 @@ class CreateResourceLanguagesTable extends Migration
             $table->integer('position');
             $table->boolean('active')->default(true);
             $table->boolean('teach')->default(true);
-            $table->boolean('learn')->default(true);
+            $table->boolean('learn')->default(false);
             $table->timestamps();
         });
     }

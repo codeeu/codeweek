@@ -110,6 +110,8 @@ Route::get('api/event/list', 'Api\EventsController@list')->name('event_list');
 Route::get('api/event/detail', 'Api\EventsController@detail')->name('event_list');
 Route::get('api/event/closest', 'Api\EventsController@closest');
 
+Route::get('api/event/list/eeducation', 'Api\EventsController@eeducation');
+
 
 Route::get('toolkits', 'ToolkitsController@get')->name('toolkits');
 
@@ -167,6 +169,9 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
     Route::post('/api/event/reject/{event}', 'EventController@reject')->name('event.reject');
 
 });
+
+
+
 Route::get('/profile', function () {
     $data = ['profileUser' => Auth()->user()];
 

@@ -1,27 +1,35 @@
 <?php
 
-namespace App\Console\Commands;
+namespace App\Console\Commands\Importers;
 
+use App\Helpers\ImporterHelper;
+use App\Imports\CoderDojoEventsImport;
 use App\Imports\EventsImport;
+use App\Imports\RemoteImporter;
+use Exception;
 use Illuminate\Console\Command;
+use Feeds;
+use GuzzleHttp\Exception\GuzzleException;
+use GuzzleHttp\Client;
 use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Facades\Excel;
 
-class ExcelImporter extends Command
+
+class CoderDojo extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'excel:import';
+    protected $signature = 'import:coderdojo';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Import the data from CoderDojo';
 
     /**
      * Create a new command instance.
@@ -31,6 +39,8 @@ class ExcelImporter extends Command
     public function __construct()
     {
         parent::__construct();
+
+
     }
 
     /**
@@ -40,10 +50,12 @@ class ExcelImporter extends Command
      */
     public function handle()
     {
-        Log::info("Read excel file");
-        Excel::import(new EventsImport, 'coderdojo2019.xlsx','excel');
-//        Excel::import(new EventsImport, 'apple2.xlsx','excel');
-        // Read the xls file
-        // WARNING: Excel file should have only ONE tab !!!
+        Log::info("Loading CoderDojo");
+
+        Excel::import(new CoderDojoEventsImport, 'coderdojo2019.xlsx','excel');
+
+
+        // Process the events
+
     }
 }

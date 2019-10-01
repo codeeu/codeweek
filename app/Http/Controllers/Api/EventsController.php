@@ -7,6 +7,8 @@ use App\Certificate;
 use App\Event;
 use App\Http\Controllers\Controller;
 use App\Http\Transformers\EventTransformer;
+use App\Importer;
+use App\Importers\Eeducation;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Resources\Event as EventResource;
@@ -94,6 +96,10 @@ class EventsController extends Controller
 
         //return new EventResource($event);
 
+    }
+
+    public function eeducation(){
+        return (Importer::where('website',"=","eeducation"))->with('event')->with('event.owner')->get();
     }
 
 //    public function generate(Event $event)
