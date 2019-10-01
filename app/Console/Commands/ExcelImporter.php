@@ -41,11 +41,9 @@ class ExcelImporter extends Command
     public function handle()
     {
         Log::info("Read excel file");
-        Excel::import(new EventsImport, 'apple2.xlsx','excel');
+        Excel::import(new EventsImport, 'coderdojo2019.xlsx','excel');
+//        Excel::import(new EventsImport, 'apple2.xlsx','excel');
         // Read the xls file
-        // For each line:
-        //   Create en event
-        //   Link it with admin account
-        //   Approve it
+        // WARNING: Excel file should have only ONE tab !!!
     }
 }
