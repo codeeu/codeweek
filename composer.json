@@ -19,6 +19,7 @@
         "doctrine/dbal": "^2.8",
         "facade/ignition": "^1.6",
         "fideloper/proxy": "^4.0",
+        "guzzlehttp/guzzle": "^6.3",
         "intervention/image": "^2.4",
         "laravel/framework": "6.*",
         "laravel/nova": "~2.0",
@@ -33,6 +34,7 @@
         "spatie/laravel-cookie-consent": "^2.9",
         "spatie/laravel-permission": "^3.0",
         "torann/geoip": "^1.0",
+        "willvincent/feeds": "^2.0",
         "facade/ignition-code-editor": "^1.0"
     },
     "require-dev": {

@@ -14,7 +14,8 @@ class LanguageSeeder extends Seeder
         create('App\ResourceLanguage', [
             'id' => 1,
             'name' => 'English',
-            'position' => 10
+            'position' => 10,
+            'teach' => true
         ]);
 
         create('App\ResourceLanguage', [

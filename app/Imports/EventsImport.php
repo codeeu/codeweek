@@ -33,6 +33,9 @@ class EventsImport extends DefaultValueBinder implements WithCustomValueBinder, 
         //dd(implode(",",$arr));
         //dd(Carbon::parse($this->parseDate($row["start_date"]))->toDateTimeString());
 //dd(Carbon::createFromFormat("d/m/Y",$row["start_date"])->toDateTimeString());
+
+        Log::info($row);
+
         //Log::info($row["Address"]);
         $event = new Event([
             'status' => "APPROVED",
@@ -59,12 +62,14 @@ class EventsImport extends DefaultValueBinder implements WithCustomValueBinder, 
             "latitude" => $row["latitude"]
         ]);
 
-        $event->save();
 
-        $event->audiences()->attach(explode(",", $row["audience_comma_separated_ids"]));
-        $event->themes()->attach(explode(",", $row["theme_comma_separated_ids"]));
+            $event->save();
 
-        return $event;
+            $event->audiences()->attach(explode(",", $row["audience_comma_separated_ids"]));
+            $event->themes()->attach(explode(",", $row["theme_comma_separated_ids"]));
+
+            return $event;
+
     }
 
 

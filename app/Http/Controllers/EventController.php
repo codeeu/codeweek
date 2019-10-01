@@ -166,7 +166,7 @@ class EventController extends Controller
         $selected_themes = implode(',', $selected_themes);
         $selected_audiences = $event->audiences()->pluck('id')->toArray();
         $selected_audiences = implode(',', $selected_audiences);
-        $selected_country = $event->country()->first()->name;
+        $selected_country = $event->country()->first()->iso;
 
         //dd($event);
 

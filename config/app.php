@@ -154,6 +154,7 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         \Torann\GeoIP\GeoIPServiceProvider::class,
         MartinLindhe\VueInternationalizationGenerator\GeneratorProvider::class,
+        willvincent\Feeds\FeedsServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -198,6 +199,7 @@ return [
         'DB' => Illuminate\Support\Facades\DB::class,
         'Eloquent' => Illuminate\Database\Eloquent\Model::class,
         'Event' => Illuminate\Support\Facades\Event::class,
+        'Feeds'    => willvincent\Feeds\Facades\FeedsFacade::class,
         'File' => Illuminate\Support\Facades\File::class,
         'Gate' => Illuminate\Support\Facades\Gate::class,
         'GeoIP' => \Torann\GeoIP\Facades\GeoIP::class,
