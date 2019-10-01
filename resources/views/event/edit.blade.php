@@ -139,7 +139,7 @@
                                 <select id="id_country" name="country_iso" class="codeweek-input-select">
                                     <option value=""></option>
                                     @foreach ($countries as $country)
-                                        <option value="{{$country->name}}" {{$selected_country == $country->name ? 'selected' : ''}}>@lang('countries.'. $country->name)</option>
+                                        <option value="{{$country->iso}}" {{$selected_country == $country->iso ? 'selected' : ''}}>@lang('countries.'. $country->name)</option>
                                     @endforeach
                                 </select>
                             </div>
