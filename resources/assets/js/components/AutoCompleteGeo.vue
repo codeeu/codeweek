@@ -56,14 +56,14 @@
                             var candidate = res.candidates[0];
                             me.geoposition = [candidate.location.y, candidate.location.x];
                             map.setView(me.geoposition,16);
-                            var countryName = me.findCountry(candidate.attributes.Country).name;
-                            $("#id_country").val(countryName);
+                            var countryIso2 = me.findCountry(candidate.attributes.Country).iso2;
+                            $("#id_country").val(countryIso2);
                         }
                     });
                 }
             },
-            findCountry(iso) {
-                return allCountries.find(country => country.iso3 === iso);
+            findCountry(iso3) {
+                return allCountries.find(country => country.iso3 === iso3);
             },
             getLabel (item) {
                 if (item && item.name) {
