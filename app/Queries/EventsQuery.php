@@ -37,10 +37,6 @@ class EventsQuery
             $request['codeweek_for_all_participation_code'] = $codeweek_4_all_generated_code;
         }
 
-        $iso = CountriesQuery::getCountryIsoPerName($request['country_iso']);
-
-        $request['country_iso'] = $iso;
-
         $event = Event::create($request->toArray());
 
 
@@ -78,10 +74,6 @@ class EventsQuery
 
         $request['latitude'] = explode(",", $request['geoposition'])[0];
         $request['longitude'] = explode(",", $request['geoposition'])[1];
-
-        $iso = CountriesQuery::getCountryIsoPerName($request['country_iso']);
-
-        $request['country_iso'] = $iso;
 
         $event->update($request->toArray());
 
