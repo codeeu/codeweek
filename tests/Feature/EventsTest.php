@@ -138,5 +138,27 @@ class EventsTest extends TestCase
 
     }
 
+    /** @test */
+    public function user_see_detail_picture_if_available()
+    {
+
+        $event = create('App\Event', ["picture_detail"=>"foobar.png", "status"=>"APPROVED"]);
+
+        $this->get('/view/' . $event->id . '/random')
+            ->assertSee('foobar.png');
+
+    }
+
+    /** @test */
+    public function user_see_normal_picture_if_detail_is_not_available()
+    {
+
+        $event = create('App\Event', ["picture"=>"normal.png", "status"=>"APPROVED"]);
+
+        $this->get('/view/' . $event->id . '/random')
+            ->assertSee('normal.png');
+
+    }
+
 
 }
