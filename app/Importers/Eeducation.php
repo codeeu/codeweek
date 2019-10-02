@@ -42,7 +42,7 @@ class Eeducation implements Importers
     public function parse()
     {
         dump("parse event inside eeducation");
-        $tz =
+
         $event = new Event([
             'status' => "APPROVED",
             'title' => $this->remote->activity_title,
@@ -60,15 +60,13 @@ class Eeducation implements Importers
             "created" => now(),
             "updated" => now(),
             "codeweek_for_all_participation_code" => null,
-            "start_date" => Carbon::parse($this->remote->starttime)->toDateTimeString(),
-            "end_date" => Carbon::parse($this->remote->endtime)->toDateTimeString(),
+            "start_date" => Carbon::parse($this->remote->starttime)->addHours(2)->toDateTimeString(),
+            "end_date" => Carbon::parse($this->remote->endtime)->addHours(2)->toDateTimeString(),
             "geoposition" => $this->remote->lat . "," . $this->remote->lng,
             "longitude" => $this->remote->lng,
             "latitude" => $this->remote->lat
         ]);
 
-
-        //Check for duplicates
         $event->save();
 
         return $event;
@@ -89,8 +87,8 @@ class Eeducation implements Importers
         $event->organizer = $this->remote->school_name;
         $event->event_url = $this->remote->url;
         $event->country_iso = $this->remote->country;
-        $event->start_date = Carbon::parse($this->remote->starttime)->toDateTimeString();
-        $event->end_date = Carbon::parse($this->remote->endtime)->toDateTimeString();
+        $event->start_date = Carbon::parse($this->remote->starttime)->addHours(2)->toDateTimeString();
+        $event->end_date = Carbon::parse($this->remote->endtime)->addHours(2)->toDateTimeString();
         $event->geoposition = $this->remote->lat . "," . $this->remote->lng;
         $event->longitude = $this->remote->lng;
         $event->latitude = $this->remote->lat;
