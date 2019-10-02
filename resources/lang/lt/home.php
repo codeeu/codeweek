@@ -7,7 +7,7 @@ return [
     'when_text' => 'Mokydamiesi programuoti suvokiame sparčiai besikeičiantį pasaulį, geriau suprantame, kaip veikia technologijos, ir tobuliname savo įgūdžius bei gebėjimus, kad galėtume rasti naujų idėjų ir kurti inovacijas.',
     'school_banner_title' => 'Dalyvaukite!',
     'school_banner_text' => 'Esate mokytoja (-as)?',
-    'school_banner_text2' => 'Spustelëkite čia ir suţinokite, kaip dalyvauti!',
+    'school_banner_text2' => 'Spustelėkite čia ir sužinokite, kaip dalyvauti!',
     'organize_activity_title' => 'Organizuokite renginį arba prisijunkite prie jau organizuojamo',
     'organize_activity_text' => 'Visi kviečiami organizuoti  renginius ar prie jų prisijungti. Tiesiog pasirinkite temą, tikslinę auditoriją ir <a href="/add">pažymėkite savo renginį</a> <a href="/events">žemėlapyje</a> arba peržiūrėkite savo vietovėje organizuojamus renginius.',
     'get_started_title' => 'Pradėkite',
