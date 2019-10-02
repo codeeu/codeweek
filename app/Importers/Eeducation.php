@@ -42,7 +42,7 @@ class Eeducation implements Importers
     public function parse()
     {
         dump("parse event inside eeducation");
-        $tz =
+
         $event = new Event([
             'status' => "APPROVED",
             'title' => $this->remote->activity_title,
@@ -67,8 +67,6 @@ class Eeducation implements Importers
             "latitude" => $this->remote->lat
         ]);
 
-
-        //Check for duplicates
         $event->save();
 
         return $event;
