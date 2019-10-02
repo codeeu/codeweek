@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="image">
-                <img src="{{$event->picture_path()}}"/>
+                <img src="{{$event->picture_detail_path()}}"/>
             </div>
         </section>
 

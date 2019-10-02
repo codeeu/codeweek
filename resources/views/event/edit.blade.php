@@ -219,7 +219,7 @@
                                 <div class="fileinput-new">
                                     <div class="fileinput-preview fileinput-exists"></div>
                                     <div>
-                                        <picture-form picture="{{$event->picture_path()}}" image="{{$event->picture}}"></picture-form>
+                                        <picture-form picture="{{$event->picture_detail_path()}}" image="{{$event->picture}}"></picture-form>
                                     </div>
                                 </div>
                             </div>

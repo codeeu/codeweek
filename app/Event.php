@@ -48,7 +48,8 @@ class Event extends Model
         'certificate_generated_at',
         'approved_by',
         'last_report_notification_sent_at',
-        'activity_type'
+        'activity_type',
+        'picture_detail'
 
 
     ];
@@ -96,7 +97,15 @@ class Event extends Model
             return 'https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png';
         }
 
+    }
 
+    public function picture_detail_path()
+    {
+        if ($this->picture_detail) {
+            return env('AWS_URL') . $this->picture_detail;
+        }
+
+        return $this->picture_path();
 
     }
 
