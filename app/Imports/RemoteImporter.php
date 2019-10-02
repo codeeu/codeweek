@@ -68,6 +68,7 @@ class RemoteImporter
                 $tracker->event_id = $event->id;
                 $tracker->seen_at = Carbon::now();
                 $tracker->save();
+                $created++;
             } else {
                 if ($tracker->original_updated_at != $remote_site->getUpdatedTimestamp()) {
                     $remote_site->update($tracker->event);
