@@ -158,7 +158,6 @@
                 if (isPagination) {
                     url = "/search?page=" + this.pagination.current_page;
                 }
-                console.log(this.countries);
                 axios.post(url, this.$data)
                     .then(result => {
                         var response = result.data[0];
@@ -182,6 +181,7 @@
                                 window.eventsToMap = result.data[1];
                             }
                         }
+                        this.setSelectedCountryToCenterMap();
                         this.isLoading = false;
                     })
                     .catch(error => {
@@ -196,10 +196,24 @@
             },
             customLabel(obj, label) {
                 return this.$t(label + '.' + obj.name);
+            },
+            setSelectedCountryToCenterMap(){
+                if (this.countries && this.countries.length === 1 && this.countries[0]){
+                    window.countrySelected = this.countries[0].iso;
+                    if (window.centralizeMap) {
+                        window.centralizeMap(window.countrySelected);
+                    }
+                }else{
+                    window.countrySelected = null;
+                    if (window.centralizeMap) {
+                        window.centralizeMap();
+                    }
+                }
             }
         },
         mounted: function () {
             this.onSubmit();
+            this.setSelectedCountryToCenterMap();
         }
     }
 </script>
