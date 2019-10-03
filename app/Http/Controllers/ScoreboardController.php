@@ -24,7 +24,7 @@ class ScoreboardController extends Controller
 
         $events = DB::table('events')
             ->join('countries', 'events.country_iso', '=', 'countries.iso')
-            ->select('countries.iso', 'countries.name as country_name','countries.population as country_population', DB::raw('count(*) as total'), DB::raw('countries.population / count(*) as rank'))
+            ->select('countries.iso as country_iso', 'countries.name as country_name','countries.population as country_population', DB::raw('count(*) as total'), DB::raw('countries.population / count(*) as rank'))
             ->where('status',"=","APPROVED")
             ->whereYear('start_date', '=', $edition)
             ->groupBy('countries.iso')

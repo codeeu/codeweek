@@ -43,7 +43,7 @@
                         <img src="/images/trophy.svg" class="static-image" style="height:160px;">
                     </div>
                     <div class="country-data">
-                        <div class="country-name">@lang('countries.'.$events{0}->country_name)</div>
+                        <div class="country-name"><a href="/events?country_iso={{$events{0}->country_iso}}">@lang('countries.'.$events{0}->country_name)</a></div>
                         <div class="participating-with">@lang('scoreboard.parcipating_with')</div>
                         <div class="number">
                             <div class="count">
@@ -72,7 +72,7 @@
                             <img src="/images/trophy.svg" class="static-image" style="height:130px;">
                         </div>
                         <div class="country-data">
-                            <div class="country-name">@lang('countries.'.$event->country_name)</div>
+                            <div class="country-name"><a href="/events?country_iso={{$event->country_iso}}">@lang('countries.'.$event->country_name)</a></div>
                             <div class="participating-with">@lang('scoreboard.parcipating_with')</div>
                             <div class="number">
                                 <div class="count">
