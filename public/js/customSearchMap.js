@@ -102,6 +102,29 @@ L.custom = {
 
         window.getEvents = success;
 
+        window.centralizeMap = function(country_iso){
+            if (map) {
+                let centerInfo = {
+                    latitude: 51,
+                    longitude: 4,
+                    zoom: 4
+                };
+                if (country_iso) {
+                    const countryInfo = centroids.find(ctrds => ctrds.iso === country_iso);
+                    console.log("COUNTRY_INFO="+countryInfo);
+                    if (countryInfo){
+                        centerInfo = countryInfo;
+                    }
+                }
+                const latlng = new L.LatLng(centerInfo.latitude, centerInfo.longitude);
+                map.setView(latlng, centerInfo.zoom, {animation: true});
+            }
+        };
+
+        if (window.countrySelected) {
+            window.centralizeMap(window.countrySelected);
+        }
+
         /*function getEvents(year) {
             $.ajax({
                 dataType: "json",
