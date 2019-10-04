@@ -3,8 +3,8 @@
         <div v-if="!refresh">{{$t('event.current_status')}}: <strong>{{status}}</strong></div>
         <div v-if="refresh"><strong>Moderation:</strong></div>
         <div class="actions">
-            <button @click="approve" class="codeweek-action-button">Approve</button>
-            <button @click="reject" class="codeweek-action-button">Reject</button>
+            <button @click="approve" class="codeweek-action-button green">Approve</button>
+            <button @click="reject" class="codeweek-action-button red">Reject</button>
         </div>
     </div>
 </template>

@@ -5,8 +5,17 @@
 
         <section class="codeweek-content-header">
 
-            <h1>@lang('menu.pending')</h1>
-            <p>@lang('event.total_pending_events') {{$events->total()}}</p>
+            <div class="header">
+                <div>
+                    <h1>@lang('menu.pending')</h1>
+                    <p>@lang('event.total_pending_events') {{$events->total()}}</p>
+                </div>
+                <div class="actions">
+                    @if($country_iso)
+                        <a class="codeweek-action-link-button" href="{{'/api/event/approveAll/' . $country_iso}}">Approve all events</a>
+                    @endif
+                </div>
+            </div>
             @role('super admin')
                 <country-select :code="'{{$country_iso}}'" :countries="{{$countries}}"></country-select>
             @endrole
