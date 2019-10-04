@@ -92,6 +92,7 @@ class Event extends Model
 
     public function picture_path()
     {
+
         if ($this->picture) {
             if (Str::startsWith($this->picture, 'http')) return $this->picture;
             return env('AWS_URL') . $this->picture;
