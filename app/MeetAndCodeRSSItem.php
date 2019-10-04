@@ -25,6 +25,32 @@ class MeetAndCodeRSSItem extends Model
 
     }
 
+    private function mapOrganisationTypes($organisation_type)
+    {
+        switch ($organisation_type) {
+            case "Non-Profit Organisation":
+                return "non profit";
+            default:
+                return "other";
+        }
+
+
+    }
+
+    private function mapActivityTypes($activity_type)
+    {
+        switch ($activity_type) {
+            case "offline and open":
+                return "open-in-person";
+            case "online and open":
+                return "open-online";
+            default:
+                return "other";
+        }
+
+
+    }
+
     public function createEvent($technicalUser)
     {
 
@@ -48,36 +74,14 @@ class MeetAndCodeRSSItem extends Model
             "codeweek_for_all_participation_code" => 'cw19-meetcode',
             "start_date" => $this->start_date,
             "end_date" => $this->end_date,
-            //"geoposition" => $this->remote->lat . "," . $this->remote->lng,
-            //"longitude" => $this->remote->lng,
-            //"latitude" => $this->remote->lat
+            "longitude" => $this->lon,
+            "latitude" => $this->lat,
+            "geoposition" => $this->lat . "," . $this->lon,
         ]);
 
         $event->save();
 
     }
 
-    private function mapOrganisationTypes($organisation_type)
-    {
-        switch ($organisation_type) {
-            case "Non-Profit Organisation":
-                return "non profit";
-            default:
-                return "other";
-        }
 
-
-    }
-
-    private function mapActivityTypes($activity_type)
-    {
-        switch ($activity_type) {
-            case "offline and open":
-                return "open-in-person";
-            default:
-                return "other";
-        }
-
-
-    }
 }
