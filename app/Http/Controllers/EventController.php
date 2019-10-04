@@ -9,6 +9,7 @@ use App\Filters\UserFilters;
 use App\Helpers\EventHelper;
 use App\Http\Requests\EventRequest;
 use App\Queries\EventsQuery;
+use App\Queries\PendingEventsQuery;
 use App\User;
 use Carbon\Carbon;
 use Exception;
@@ -210,6 +211,23 @@ class EventController extends Controller
         $this->authorize('approve', $event);
 
         $event->approve();
+
+    }
+
+    public function approveAll($country)
+    {
+
+        $object = (object) ['iso' => $country];
+
+        $events = PendingEventsQuery::trigger($object);
+
+        foreach ($events as $event) {
+            $this->authorize('approve', $event);
+
+            $event->approve();
+        }
+
+        return redirect('pending/' . $country);
 
     }
 

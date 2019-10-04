@@ -166,6 +166,7 @@ Route::group(['middleware' => ['role:super admin']], function () {
 Route::group(['middleware' => ['role:super admin|ambassador']], function () {
     Route::get('/pending', 'PendingEventsController@index')->name('pending');
     Route::post('/api/event/approve/{event}', 'EventController@approve')->name('event.approve');
+    Route::get('/api/event/approveAll/{country}', 'EventController@approveAll')->name('event.approveAll');
     Route::post('/api/event/reject/{event}', 'EventController@reject')->name('event.reject');
 
 });
