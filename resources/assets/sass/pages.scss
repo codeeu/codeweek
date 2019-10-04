@@ -39,6 +39,16 @@
   border-radius: 10px;
 }
 
+#codeweek-pending-events-page .codeweek-content-header .header{
+  display: flex;
+  justify-content: space-between;
+}
+
+#codeweek-pending-events-page .codeweek-content-header .header .actions{
+  display: flex;
+  align-items: center;
+}
+
 /*Media queries*/
 
 /* smartphones, iPhone, portrait 480x320 phones */
