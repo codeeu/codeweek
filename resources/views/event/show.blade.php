@@ -71,7 +71,7 @@
 
                     <div class="codeweek-display-field">
                         <h3>@lang('eventdetails.happening_at')</h3>
-                        <p>{{ $event->location }}</p>
+                        <p>{!! $event->location !!}</p>
                     </div>
 
                     <div class="codeweek-display-field">
