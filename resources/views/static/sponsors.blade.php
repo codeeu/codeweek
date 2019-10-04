@@ -50,6 +50,9 @@
                     <a href="http://scratch.mit.edu/codeweekeu" target="_blank"><img src="img/partners/colabora_scratch.png" alt="Scratch"></a>
                 </li>
                 <li>
+                    <a href="https://publiclibraries2030.eu/" target="_blank"><img src="img/partners/colabora_PublicLibraries2030.png" alt="Public Libraries 2030"></a>
+                </li>
+                <li>
                     <a href="https://education.ti.com/en/select-country/europe" target="_blank"><img src="img/partners/texas-instruments.png" alt="Texas Instruments"></a>
                 </li>
                 <li>
