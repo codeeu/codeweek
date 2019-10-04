@@ -19,7 +19,7 @@
             @if($events->count() > 0)
                 <div class="codeweek-grid-layout">
                     @foreach($events as $event)
-                        @component('event.event_tile', ['event'=>$event])
+                        @component('event.event_tile', ['event'=>$event, 'moderation'=>'true'])
                         @endcomponent
                     @endforeach
 
