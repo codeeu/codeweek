@@ -38,6 +38,12 @@
   font-size:24px;
   font-family: $decorative-font;
 }
+.scoreboard-card .country-data .country-name a{
+  color: $main-color;
+}
+.scoreboard-card .country-data .country-name a:hover{
+  color: $main-color2;
+}
 .scoreboard-card .country-data .participating-with{
   font-size:12px;
   font-family: $decorative-font;
