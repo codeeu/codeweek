@@ -3,8 +3,13 @@
 namespace App\Console\Commands\Importers;
 
 use App\Helpers\ImporterHelper;
+
+use App\MeetAndCodeRSSItem;
 use Illuminate\Console\Command;
-use Feeds;
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Log;
+
 
 class MeetAndCode extends Command
 {
@@ -13,14 +18,14 @@ class MeetAndCode extends Command
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'import:meetandcode';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Import the data from MeetAndCode RSS Feed';
 
     /**
      * Create a new command instance.
@@ -30,6 +35,8 @@ class MeetAndCode extends Command
     public function __construct()
     {
         parent::__construct();
+
+
     }
 
     /**
@@ -39,22 +46,24 @@ class MeetAndCode extends Command
      */
     public function handle()
     {
+        Log::info("Loading Meet and Code RSS Items in Database");
 
-        dump("Loading MeetAndCode");
-
-        $techicalUserID = ImporterHelper::getTechnicalUser("meetandcode-technical");
-
-        $feed = Feeds::make('https://meet-and-code.org/de/de/events/rss');
-        $data = array(
-            'title'        => $feed->get_title(),
-            'description'     => $feed->get_description(),
-            'items'     => $feed->get_items(),
-
-        );
+        $techicalUser = ImporterHelper::getTechnicalUser("meetandcode-technical");
+        $items = MeetAndCodeRSSItem::whereNull('imported_at')->get();
 
 
-        foreach ($data['items'] as $item){
-            dump($item->get_link());
+
+        foreach ($items as $item){
+            $item->createEvent($techicalUser);
+            $item->imported_at = Carbon::now();
+            //TODO: check for updating the event if it already exists
+            $item->save();
         }
+
+        Log::info("Activities created from RSS Feed: " . count($items));
+
+        dd('done importing events');
+
+
     }
 }

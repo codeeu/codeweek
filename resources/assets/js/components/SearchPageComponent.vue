@@ -189,6 +189,7 @@
                     })
             },
             thumbnail: function (event) {
+                if (event.picture.startsWith("http")) return event.picture;
                 if (event.picture) {
                     return 'https://codeweek-s3.s3.amazonaws.com/' + event.picture;
                 }
