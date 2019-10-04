@@ -10,6 +10,7 @@ use DB;
 use Illuminate\Database\Eloquent\Model;
 
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Str;
 use Log;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Laravel\Nova\Actions\Actionable;
@@ -91,7 +92,9 @@ class Event extends Model
 
     public function picture_path()
     {
+
         if ($this->picture) {
+            if (Str::startsWith($this->picture, 'http')) return $this->picture;
             return env('AWS_URL') . $this->picture;
         } else {
             return 'https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png';
