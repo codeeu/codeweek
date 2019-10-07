@@ -10,6 +10,8 @@ before_script:
 - travis_retry composer self-update
 - travis_retry composer install ${COMPOSER_FLAGS} --no-interaction --prefer-source
 - php artisan vue-i18n:generate
+- yarn install
+- npm run prod
 - php artisan key:generate
 
 cache:
