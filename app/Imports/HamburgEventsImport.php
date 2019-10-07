@@ -46,7 +46,7 @@ class HamburgEventsImport extends DefaultValueBinder implements WithCustomValueB
             'user_email' => "",
             'creator_id' => $row["creator_id"],
             'contact_person' => $row["contact_email"],
-            'country_iso' => $row["country"],
+            'country_iso' => "DE",
             'picture' => $row["image_path"],
             "pub_date" => now(),
             "created" => now(),
