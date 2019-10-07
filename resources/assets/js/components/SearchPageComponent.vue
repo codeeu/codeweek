@@ -41,9 +41,9 @@
                         <input type="button" :value="$t('search.submit')" @click="onSubmit()">
                     </div>
 
-                    <div class="codeweek-more-button" @click="toggleFilters()">
+                    <!--<div class="codeweek-more-button" @click="toggleFilters()">
                         <span>{{showFilters ? '-' : '+'}}</span>
-                    </div>
+                    </div>-->
                 </div>
 
             </div>
@@ -57,23 +57,19 @@
                     <pre class="language-json"><code>{{ countries }}</code></pre>
                 </multiselect>
 
-                <div class="advanced-line2">
+                <multiselect v-model="audiences" :options="audienceslist" :multiple="true" :close-on-select="false"
+                             :clear-on-select="false" :preserve-search="false" :placeholder="$t('search.audiences')"
+                             :preselect-first="false"
+                             label="event.audience" :custom-label="customLabel" track-by="id" class="mr-4">
+                    <pre class="language-json"><code>{{ audiences }}</code></pre>
+                </multiselect>
 
-                    <multiselect v-model="audiences" :options="audienceslist" :multiple="true" :close-on-select="false"
-                                 :clear-on-select="false" :preserve-search="false" :placeholder="$t('search.audiences')"
-                                 :preselect-first="false"
-                                 label="event.audience" :custom-label="customLabel" track-by="id" class="mr-4">
-                        <pre class="language-json"><code>{{ audiences }}</code></pre>
-                    </multiselect>
-
-                    <multiselect v-model="themes" :options="themeslist" :multiple="true" :close-on-select="false"
-                                 :clear-on-select="false" :preserve-search="false" :placeholder="$t('search.themes')"
-                                 :preselect-first="false"
-                                 label="event.theme" :custom-label="customLabel" track-by="id">
-                        <pre class="language-json"><code>{{ themes }}</code></pre>
-                    </multiselect>
-
-                </div>
+                <multiselect v-model="themes" :options="themeslist" :multiple="true" :close-on-select="false"
+                             :clear-on-select="false" :preserve-search="false" :placeholder="$t('search.themes')"
+                             :preselect-first="false"
+                             label="event.theme" :custom-label="customLabel" track-by="id">
+                    <pre class="language-json"><code>{{ themes }}</code></pre>
+                </multiselect>
 
             </div>
 
@@ -132,7 +128,7 @@
                 countries: this.prpSelectedCountry,
                 audiences: [],
                 themes: [],
-                showFilters: false,
+                showFilters: true,
                 isLoading: false,
                 events: [],
                 pagination: {
