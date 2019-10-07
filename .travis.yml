@@ -8,9 +8,10 @@ install:
 before_script:
 - cp .env.travis .env
 - travis_retry composer self-update
-- travis_retry composer update --no-interaction
 - travis_retry composer install ${COMPOSER_FLAGS} --no-interaction --prefer-source
 - php artisan vue-i18n:generate
+- yarn install
+- npm run prod
 - php artisan key:generate
 
 cache:
