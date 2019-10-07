@@ -17,12 +17,18 @@
   flex-direction: row;
   flex:1;
 }
+
+.codeweek-searchbox .advanced-fields{
+  display: flex;
+  flex-direction: column;
+}
+
 .codeweek-searchbox .advanced-fields .line{
   display:flex;
   flex-direction: column;
 }
 .codeweek-searchbox .advanced-fields .multiselect{
-  margin-top: 18px;
+  margin-top: 10px;
 }
 
 .codeweek-searchbox .total .number{
@@ -60,6 +66,12 @@
   }
   .codeweek-searchbox .multiselect {
     margin-right: 10px;
+  }
+  .codeweek-searchbox .advanced-fields{
+    flex-direction: row;
+  }
+  .codeweek-searchbox .advanced-fields .multiselect{
+    margin-top: 18px;
   }
 }
 /* big landscape tablets, laptops, and desktops */
