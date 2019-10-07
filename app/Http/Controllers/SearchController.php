@@ -59,6 +59,7 @@ class SearchController extends Controller
     {
         $events = $this->getEvents($filters);
 
+        Log::info($request->input('page'));
         if ($request->input('page')) {
             $result = [$events];
         } else {
