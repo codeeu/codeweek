@@ -29,23 +29,20 @@ class SearchController extends Controller
     {
 
 
-        $query = $request->input('q',"") ;
+        $query = $request->input('q', "");
         $selected_year = $request->input('year', Carbon::now()->year);
 
         $country_iso = $request->input('country_iso', null);
         $selected_country = array();
 
-        if (!is_null($country_iso)){
-            $selected_country[] = Country::where('iso',$country_iso)->first();
+        if (!is_null($country_iso)) {
+            $selected_country[] = Country::where('iso', $country_iso)->first();
         }
 
         //dd($selected_country);
 
         //dd($selected_country);
         //$selected_country = $country_iso;
-
-
-
 
 
         $current_year = Carbon::now()->year;
@@ -55,9 +52,7 @@ class SearchController extends Controller
         }
 
 
-
-
-        return view('event.search', compact(['query', 'years','selected_country','selected_year']));
+        return view('event.search', compact(['query', 'years', 'selected_country', 'selected_year']));
     }
 
     public function searchPOST(EventFilters $filters, Request $request)
@@ -80,9 +75,20 @@ class SearchController extends Controller
 
         $events = Event::where('status', 'like', 'APPROVED')
             ->filter($filters)
-            ->orderBy('start_date', 'asc');
+            ->orderBy('start_date')
+            ->get()
+            ->groupBy(function ($event) {
+                if ($event->start_date <= Carbon::today()) {
+                    return 'past';
+                }
+                return 'future';
+            });
 
-        return $events->paginate(12);
+        if (is_null($events->get('future'))) return $events->flatten()->paginate(12);
+
+        return  $events->get('future')->merge($events->get('past'))->paginate(12);
+
+
     }
 
     protected function getAllEventsToMap(EventFilters $filters)
