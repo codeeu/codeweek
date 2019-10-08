@@ -53,7 +53,7 @@ class Apple extends Command
     {
         Log::info("Loading Apple Excel File");
 
-        Excel::import(new AppleEventsImport, 'apple2019.xlsx','excel');
+        Excel::import(new AppleEventsImport, 'apple2019-2.xlsx','excel');
 
 
         // Process the events
