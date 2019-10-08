@@ -85,7 +85,7 @@ class SearchController extends Controller
                 return 'future';
             });
 
-        if (is_null($events->get('future'))) return $events->flatten()->paginate(12);
+        if (is_null($events->get('future')) || is_null($events->get('past'))) return $events->flatten()->paginate(12);
 
         return  $events->get('future')->merge($events->get('past'))->paginate(12);
 
