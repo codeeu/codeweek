@@ -12,6 +12,8 @@ class SearchEventTest extends TestCase
 {
     use DatabaseMigrations;
 
+
+
     public function setup():void
     {
         parent::setUp();
@@ -48,8 +50,11 @@ class SearchEventTest extends TestCase
         $eventNotInBelgium = create('App\Event', ['country_iso' => $france->iso , 'status'=>'APPROVED']);
 
         //We should return the events filtered for this country
-        $this->post('search',['countries'=>[(object)["iso"=>"BE"]]])
-            ->assertSee($eventInBelgium->title)
+        $result = $this->post('search',['countries'=>[(object)["iso"=>"BE"]]]);
+
+
+
+            $result->assertSee($eventInBelgium->title)
             ->assertDontSee($eventNotInBelgium->title);
 
 
