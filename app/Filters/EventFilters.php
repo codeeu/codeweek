@@ -5,7 +5,6 @@ namespace App\Filters;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
 
 class EventFilters extends Filters
 {
@@ -47,7 +46,6 @@ class EventFilters extends Filters
 
     protected function year($year)
     {
-        Log::info('year' . $year);
         return $this->builder->whereYear('start_date', '=', $year);
 
     }
