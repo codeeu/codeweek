@@ -6,6 +6,8 @@ use App\Country;
 use App\Event;
 use App\Filters\EventFilters;
 use Carbon\Carbon;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Http\Request;
 use App\Http\Transformers\EventTransformer;
 use Illuminate\Support\Facades\Log;
@@ -96,15 +98,33 @@ class SearchController extends Controller
     {
 
 
-        $events = Event::where('status', 'like', 'APPROVED')
-            ->filter($filters)
-            ->get();
+        $flattened = Arr::flatten($filters->getFilters());
+        $composed_key='';
+        foreach ($flattened as $value){
+            $composed_key .=  $value.',';
+        }
+        ;
 
-        $events = $this->eventTransformer->transformCollection($events);
+        $value = Cache::get($composed_key, function () use ($composed_key, $filters) {
+            Log::info("Building cache [{$composed_key}]");
+            $events = Event::where('status', 'like', 'APPROVED')
+                ->filter($filters)
+                ->get();
 
-        $events = $events->groupBy('country');
+            $events = $this->eventTransformer->transformCollection($events);
+
+            $events = $events->groupBy('country');
+
+            Cache::put($composed_key,$events,5*60);
+
+            return $events;
+        });
+
+        Log::info("Serving from cache [{$composed_key}]");
+
+        return $value;
 
 
-        return $events;
+
     }
 }

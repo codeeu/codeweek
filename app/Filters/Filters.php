@@ -64,7 +64,7 @@ abstract class Filters
             }
         }
 
-        Log::info($this->builder->toSql());
+        //Log::info($this->builder->toSql());
         //Log::info(self::getEloquentSqlWithBindings($this->builder));
         return $this->builder;
     }
