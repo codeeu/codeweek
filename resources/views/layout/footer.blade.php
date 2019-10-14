@@ -16,7 +16,6 @@
             <img src="/images/EU_logo.png">
             <div class="phrase">
                 <div class="text">@lang('base.footer_msg')</div>
-                <a href="/partners">@lang('about.partners_and_sponsors')</a>
             </div>
             <img src="/images/logo.svg" class="logo_footer">
             <img src="/images/bubbles_footer.svg" class="static-image bubbles_footer">
