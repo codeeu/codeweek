@@ -63,7 +63,8 @@ class EventFilters extends Filters
 
         return $this->builder->where(function ($queryInside) use ($query) {
             $queryInside->where('title', 'LIKE', "%$query%")
-                ->orWhere('description', 'LIKE', "%$query%");
+                ->orWhere('description', 'LIKE', "%$query%")
+                ->orWhere('codeweek_for_all_participation_code', 'LIKE', "%$query%");
         });
     }
 

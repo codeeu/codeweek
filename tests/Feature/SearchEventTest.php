@@ -129,6 +129,23 @@ class SearchEventTest extends TestCase
     }
 
     /** @test */
+    public function a_user_can_search_by_query_on_codeweek_4_all_code()
+    {
+
+        $this->withExceptionHandling();
+
+
+        $eventWithCodeweek4AllCode = create('App\Event', ['codeweek_for_all_participation_code' => 'foobar', 'status' => 'APPROVED']);
+        $eventWithoutCodeweek4AllCode = create('App\Event', ['title' => 'Learn JAVA with us', 'status' => 'APPROVED']);
+
+        $this->post('search', ["query" => "foobar"])
+            ->assertSee($eventWithCodeweek4AllCode->title)
+            ->assertDontSee($eventWithoutCodeweek4AllCode->title);
+
+
+    }
+
+    /** @test */
     public function a_user_can_search_by_theme()
     {
 
