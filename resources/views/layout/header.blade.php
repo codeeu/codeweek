@@ -30,7 +30,13 @@
                     <li><a href="{{route('codeweek4all')}}">CODE WEEK 4 ALL</a></li>
                 </ul>
             </li>
-            <li><a href="/about/">@lang('menu.about')</a></li>
+            <li>
+                <a href="javascript:void(null);">@lang('menu.about')</a>
+                <ul>
+                    <li><a href="/about/">Codeweek</a></li>
+                    <li><a href="/partners/">@lang('about.partners_and_sponsors')</a></li>
+                </ul>
+            </li>
             <li><a href="http://blog.codeweek.eu/" target="_blank">@lang('menu.blog')</a></li>
         </ul>
     </nav>
