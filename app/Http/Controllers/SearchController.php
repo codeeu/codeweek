@@ -89,7 +89,7 @@ class SearchController extends Controller
 
         if (is_null($events->get('future')) || is_null($events->get('past'))) return $events->flatten()->paginate(12);
 
-        return  $events->get('future')->merge($events->get('past'))->paginate(12);
+        return $events->get('future')->merge($events->get('past'))->paginate(12);
 
 
     }
@@ -99,11 +99,13 @@ class SearchController extends Controller
 
 
         $flattened = Arr::flatten($filters->getFilters());
-        $composed_key='';
-        foreach ($flattened as $value){
-            $composed_key .=  $value.',';
-        }
-        ;
+
+        $composed_key = '';
+
+        foreach ($flattened as $value) {
+            $composed_key .= $value . ',';
+        };
+
 
         $value = Cache::get($composed_key, function () use ($composed_key, $filters) {
             Log::info("Building cache [{$composed_key}]");
@@ -115,7 +117,7 @@ class SearchController extends Controller
 
             $events = $events->groupBy('country');
 
-            Cache::put($composed_key,$events,5*60);
+            Cache::put($composed_key, $events, 5 * 60);
 
             return $events;
         });
@@ -123,7 +125,6 @@ class SearchController extends Controller
         Log::info("Serving from cache [{$composed_key}]");
 
         return $value;
-
 
 
     }
