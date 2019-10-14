@@ -5,6 +5,7 @@ L.custom = {
             center: [48, 4],
             zoom: 4,
             height: 450,
+            maxZoom: 18,
             background: "osmec"
         });
 
