@@ -38,6 +38,7 @@
         "facade/ignition-code-editor": "^1.0"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.2",
         "barryvdh/laravel-ide-helper": "^2.4",
         "fzaninotto/faker": "^1.4",
         "laracasts/generators": "^1.1",
