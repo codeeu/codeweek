@@ -6,7 +6,7 @@ L.custom = {
             zoom: 4,
             height: 450,
             background: "osmec",
-            maxZoom: 20
+            maxZoom: 18
         });
 
         map.menu.remove("print");
