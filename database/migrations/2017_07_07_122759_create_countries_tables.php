@@ -21,6 +21,7 @@ class CreateCountriesTables extends Migration
             $table->string('continent');
             $table->string('facebook');
             $table->string('website');
+            $table->string('parent')->nullable();
             $table->timestamps();
         });
     }
