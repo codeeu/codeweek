@@ -16,7 +16,7 @@ before_script:
 
 cache:
   directories:
-  - vendor
+    - $HOME/.composer/cache
 
 env:
   matrix:
