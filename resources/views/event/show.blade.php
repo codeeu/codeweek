@@ -165,7 +165,7 @@
 
                 </div>
 
-                <div class="codeweek-form-inner-container" style="align-items: flex-end;">
+                <div class="codeweek-form-inner-container">
                     @component('components.calendar',['event'=>$event])
                     @endcomponent
                 </div>
