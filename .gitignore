@@ -18,3 +18,4 @@ public/js/app.js
 auth.json
 composer.lock
 vue-i18n-locales.generated.js
+/storage/debugbar/
