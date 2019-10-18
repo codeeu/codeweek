@@ -34,8 +34,7 @@
         "spatie/laravel-cookie-consent": "^2.9",
         "spatie/laravel-permission": "^3.0",
         "torann/geoip": "^1.0",
-        "willvincent/feeds": "^2.0",
-        "facade/ignition-code-editor": "^1.0"
+        "willvincent/feeds": "^2.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.2",
