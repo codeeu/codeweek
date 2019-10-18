@@ -199,7 +199,7 @@ return [
     'Saint Pierre and Miquelon'=>'Saint Pierre and Miquelon',
     'Pitcairn'=>'Pitcairn',
     'Puerto Rico'=>'Puerto Rico',
-    'Palestinian Territory'=>'Palestinian Territory',
+    'Palestine'=>'Palestine',
     'Portugal'=>'Portugal',
     'Palau'=>'Palau',
     'Paraguay'=>'Paraguay',
