@@ -32,11 +32,11 @@ class CertificateParticipation
         $this->event_name = $event_name;
         $this->event_date = $event_date;
 
-        if ($this->is_greek_text($this->name_of_certificate_holder)){
+        //if ($this->is_greek_text($this->name_of_certificate_holder)){
             $random = Str::random(10);
-        } else {
-            $random = Str::kebab($this->name_of_certificate_holder) . "-" . Str::random(10);
-        }
+        //} else {
+          //  $random = Str::kebab($this->name_of_certificate_holder) . "-" . Str::random(10);
+        //}
 
         $this->personalized_template_name = $random . "-" . auth()->id();
         $this->resource_path = resource_path() . "/latex";
