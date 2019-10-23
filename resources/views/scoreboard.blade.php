@@ -19,7 +19,8 @@
                 <span class="number">{{$total}}</span>
                 <span class="label">@lang('scoreboard.events')</span>
             </div>
-            <form style="border:0px" id="faceted-search-events" method="get" action="/scoreboard" enctype="multipart/form-data">
+            <form style="border:0px" id="faceted-search-events" method="get" action="/scoreboard"
+                  enctype="multipart/form-data">
                 <select id="edition" name="edition" onchange="this.form.submit()" class="codeweek-input-select">
                     @foreach($years as $year_label)
                         <option value="{{$year_label}}" {{ ($year_label == $edition)?'selected':'' }} >
@@ -43,21 +44,29 @@
                         <img src="/images/trophy.svg" class="static-image" style="height:160px;">
                     </div>
                     <div class="country-data">
-                        <div class="country-name"><a href="/events?country_iso={{$events{0}->country_iso}}">@lang('countries.'.$events{0}->country_name)</a></div>
-                        <div class="participating-with">@lang('scoreboard.parcipating_with')</div>
-                        <div class="number">
-                            <div class="count">
-                                @foreach(str_split($events{0}->total) as $digit)
-                                    <div class="digit">{{ $digit }}</div>
-                                @endforeach
-                            </div>
-                            @if(count(str_split($events{0}->total)) < 4)
-                                <div class="text">@lang('search.' . str_plural('event', $events{0}->total))</div>
+                        @foreach($events as $event)
+                            @if ($loop->first)
+
+                                <div class="country-name"><a
+                                            href="/events?country_iso={{$event->country_iso}}">@lang('countries.'.$event->country_name)</a>
+                                </div>
+                                <div class="participating-with">@lang('scoreboard.parcipating_with')</div>
+                                <div class="number">
+                                    <div class="count">
+                                        @foreach(str_split($event->total) as $digit)
+                                            <div class="digit">{{ $digit }}</div>
+                                        @endforeach
+                                    </div>
+                                    @if(count(str_split($event->total)) < 4)
+                                        <div class="text">@lang('search.' . str_plural('event', $event->total))</div>
+                                    @endif
+                                </div>
+                                @if(count(str_split($event->total)) >= 4)
+                                    <div class="text">@lang('search.' . str_plural('event', $event->total))</div>
+                                @endif
+
                             @endif
-                        </div>
-                        @if(count(str_split($events{0}->total)) >= 4)
-                            <div class="text">@lang('search.' . str_plural('event', $events{0}->total))</div>
-                        @endif
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -72,7 +81,10 @@
                             <img src="/images/trophy.svg" class="static-image" style="height:130px;">
                         </div>
                         <div class="country-data">
-                            <div class="country-name"><a href="/events?country_iso={{$event->country_iso}}">@lang('countries.'.$event->country_name)</a></div>
+
+                            <div class="country-name"><a
+                                        href="/events?country_iso={{$event->country_iso}}">@lang('countries.'.$event->country_name)</a>
+                            </div>
                             <div class="participating-with">@lang('scoreboard.parcipating_with')</div>
                             <div class="number">
                                 <div class="count">

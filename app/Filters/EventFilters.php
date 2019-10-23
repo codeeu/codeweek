@@ -5,7 +5,6 @@ namespace App\Filters;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
 
 class EventFilters extends Filters
 {
@@ -47,7 +46,6 @@ class EventFilters extends Filters
 
     protected function year($year)
     {
-        Log::info('year' . $year);
         return $this->builder->whereYear('start_date', '=', $year);
 
     }
@@ -65,7 +63,8 @@ class EventFilters extends Filters
 
         return $this->builder->where(function ($queryInside) use ($query) {
             $queryInside->where('title', 'LIKE', "%$query%")
-                ->orWhere('description', 'LIKE', "%$query%");
+                ->orWhere('description', 'LIKE', "%$query%")
+                ->orWhere('codeweek_for_all_participation_code', 'LIKE', "%$query%");
         });
     }
 
