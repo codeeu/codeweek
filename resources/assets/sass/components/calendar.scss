@@ -16,3 +16,9 @@
     background-color: #FFEEE6;
   }
 }
+
+@media (max-width:600px)  {
+  .codeweek-view-calendar{
+    display:none;
+  }
+}

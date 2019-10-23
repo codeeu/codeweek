@@ -83,7 +83,7 @@
                     <div class="card-content">
                         <div class="card-title">{{ event.title }}</div>
                         <div class="card-subtitle">{{ event.start_date }}</div>
-                        <div class="card-description">{{ event.description }}</div>
+                        <div class="card-description">{{limit(event.description)}}</div>
                     </div>
                     <div class="card-actions">
                         <a class="codeweek-action-link-button"
@@ -207,7 +207,15 @@
                         window.centralizeMap();
                     }
                 }
+            },
+            limit(text){
+
+                if(text.length > 200) {
+                    return text.substring(0,200)+"...";
+                }
+                return text;
             }
+
         },
         mounted: function () {
             this.onSubmit();
