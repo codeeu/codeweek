@@ -9,8 +9,8 @@ class Tag extends Model
     //
     protected $guarded = [];
 
-    public function hello(){
-
-
+    public function events()
+    {
+        return $this->belongsToMany('App\Event');
     }
 }
