@@ -23,6 +23,11 @@ class TagsHelper
             ->groupBy('name')
             ->get();
 
+        dump(count($duplicate_tags));
+
+        dd('ok');
+
+
 
         // For each tag, get the ids.
         foreach ($duplicate_tags as $duplicate_tag) {
