@@ -17,9 +17,9 @@ class TagsHelper
     {
 
 
-
-        DB::raw("SET SESSION max_heap_table_size=536870912;");
-        DB::raw("SET SESSION tmp_table_size=536870912;");
+        // Mysql bug: https://bugs.mysql.com/bug.php?id=62755
+        DB::statement("SET SESSION max_heap_table_size=536870912");
+        DB::statement("SET SESSION tmp_table_size=536870912");
 
 
         // Get all the duplicate tags
@@ -32,7 +32,7 @@ class TagsHelper
 
         dump(count($duplicate_tags));
 
-        dd('ok');
+        dd('OK');
 
 
 
