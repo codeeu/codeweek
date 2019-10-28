@@ -16,12 +16,19 @@ class TagsHelper
     public static function cleanTags()
     {
 
+
+
+        DB::raw("SET SESSION max_heap_table_size=536870912;");
+        DB::raw("SET SESSION tmp_table_size=536870912;");
+
+
         // Get all the duplicate tags
         $duplicate_tags = DB::table('tags')
-            ->select(DB::raw('count(*) as tag_count, name'))
-            ->having('tag_count', '>', 1)
+            ->select(DB::raw('count(id),  name'))
+            ->having('count(id)', '>', 1)
             ->groupBy('name')
             ->get();
+
 
         dump(count($duplicate_tags));
 
