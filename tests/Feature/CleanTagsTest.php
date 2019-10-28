@@ -4,30 +4,15 @@ namespace Tests\Feature;
 
 use App\Event;
 use App\Helpers\TagsHelper;
-use App\Tag;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
-use Illuminate\Foundation\Testing\DatabaseMigrations;
-
-
-class TagsTest extends TestCase
+class CleanTagsTest extends TestCase
 {
+
     use DatabaseMigrations;
-
-    /** @test */
-    public function tags_should_not_be_duplicated()
-    {
-        //$this->withoutExceptionHandling();
-        $this->signIn();
-
-        $event_A = $this->createEvent();
-        $event_B = $this->createEvent();
-
-        $this->assertEquals($event_A->tags[0]->id, $event_B->tags[0]->id);
-
-    }
-
     /** @test */
     public function duplicates_should_be_removed()
     {
@@ -76,11 +61,20 @@ class TagsTest extends TestCase
 
     }
 
+    /** @test */
+    public function tags_should_not_be_duplicated()
+    {
+        //$this->withoutExceptionHandling();
+        $this->signIn();
+
+        $event_A = $this->createEvent();
+        $event_B = $this->createEvent();
+
+        $this->assertEquals($event_A->tags[0]->id, $event_B->tags[0]->id);
+
+    }
 
 
-    /**
-     * @return mixed
-     */
     public function createEvent()
     {
         $event = make('App\Event');
@@ -97,6 +91,4 @@ class TagsTest extends TestCase
         $event = Event::where('title', $event->title)->first();
         return $event;
     }
-
-
 }
