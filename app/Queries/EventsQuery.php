@@ -42,7 +42,7 @@ class EventsQuery
 
         if (!empty($request['tags'])) {
             foreach (explode(",", $request['tags']) as $item) {
-                $tag = Tag::create([
+                $tag = Tag::firstOrCreate([
                     "name" => trim($item),
                     "slug" => str_slug(trim($item))
                 ]);
