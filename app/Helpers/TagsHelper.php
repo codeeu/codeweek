@@ -18,8 +18,8 @@ class TagsHelper
 
 
         // Mysql bug: https://bugs.mysql.com/bug.php?id=62755
-        DB::statement("SET SESSION max_heap_table_size=536870912");
-        DB::statement("SET SESSION tmp_table_size=536870912");
+        //DB::statement("SET SESSION max_heap_table_size=536870912");
+        //DB::statement("SET SESSION tmp_table_size=536870912");
 
 
         // Get all the duplicate tags
