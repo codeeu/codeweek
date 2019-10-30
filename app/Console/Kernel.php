@@ -30,6 +30,9 @@ class Kernel extends ConsoleKernel
         $schedule->command('remind:creators')
             ->dailyAt('10:00');
 
+        $schedule->command('clean:remote')
+            ->dailyAt('12:00');
+
         $schedule->command('import:eeducation')
             ->hourly();
 
