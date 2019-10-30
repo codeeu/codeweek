@@ -31,7 +31,7 @@ class Kernel extends ConsoleKernel
             ->dailyAt('10:00');
 
         $schedule->command('clean:remote')
-            ->dailyAt('12:00');
+            ->dailyAt('12:05');
 
         $schedule->command('import:eeducation')
             ->hourly();
