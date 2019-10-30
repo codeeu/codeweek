@@ -78,7 +78,7 @@ class Eeducation extends Command
         Log::info("Updated  : " . $metrics[2]);
 
 
-        // Process the events
+
 
     }
 }
