@@ -3,7 +3,7 @@
 return [
 
     'about' => 'Evropský týden programování je iniciativa, jejímž cílem je zábavným a aktivním způsobem přiblížit programování a digitální gramotnost každému člověku.',
-    'when' => '5.–20. října 2019',
+    'when' => '10.–25. října 2020',
     'when_text' => 'Naučit se programovat nám pomáhá chápat rychle se měnící svět kolem nás, lépe rozumět tomu, jak fungují technologie, rozvíjet dovednosti a schopnosti potřebné ke zkoumání nových myšlenek a inovovat.',
     'school_banner_title' => 'Zapojte se!',
     'school_banner_text' => 'Jste učitel?',
