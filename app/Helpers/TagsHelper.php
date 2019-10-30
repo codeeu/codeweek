@@ -80,7 +80,7 @@ class TagsHelper
             //Log::info($arrayOfIds);
 
 
-            dump('done for ' . $duplicate_tag->name);
+            Log::info('done for ' . $duplicate_tag->name);
 
         }
     }
