@@ -9,7 +9,7 @@ return [
         'content' => '<p>Jūs varat ne vien pievienot savu pasākumu ES programmēšanas nedēļas kartē, bet arī aicināt citus sava tīkla dalībniekus darīt to pašu. Ja jūs ar savu sadarbības savienību sasniegsiet kādu no turpmāk minētajiem mērķiem, jūs nopelnīsiet Programmēšanas nedēļas izcilības apliecinājuma sertifikātu.</p>
                             <p>Kritēriji izcilības apliecinājuma sertifikāta iegūšanai:</p>',
         'criteria1' => 'pasākumos piedalījušies 500 skolēni',
-        'criteria2' => 'sasaistīti 10 pasākumi',
+        'criteria2' => 'sasaistīti 10 pasākumi (ar 10 dažādiem organizatoriem).',
         'criteria3' => 'iesaistītas 3 valstis',
         'andor' => 'un/vai',
     ],

@@ -9,7 +9,7 @@ return [
         'content' => '<p>Aktivitenizi EU Code Week haritasına göndermenin yanı sıra, ağınızdaki diğer kişilerin de aynısını yapmalarını sağlayabilirsiniz. Ekibinizle birlikte aşağıdaki koşullardan birini sağladığınızda, hepiniz Code Week Mükemmeliyet Sertifikasını kazanacaksınız!</p>
                             <p>Mükemmeliyet Sertifikası kazanma kriterleri:</p>',
         'criteria1' => '500 öğrencinin katılımını sağlama',
-        'criteria2' => '10 aktivite ekleme',
+        'criteria2' => '(10 farklı düzenleyiciden) bağlantılı 10 aktivite',
         'criteria3' => '3 ülke dahil etme',
         'andor' => 'Ve/Veya',
     ],

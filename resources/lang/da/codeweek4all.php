@@ -9,7 +9,7 @@ return [
         'content' => '<p>Udover at vise din egen aktivitet på EU’s kodeuges kort kan du også være med til at sikre, at andre i dit netværk gør det samme. Hvis du og din alliance når en af følgende milepæle, får I alle kodeugens kvalitetscertifikat!</p>
                             <p>Kriterier for at få kvalitetscertifikatet:</p>',
         'criteria1' => '500 deltagende elever',
-        'criteria2' => '10 linkede aktiviteter',
+        'criteria2' => '10 linkede aktiviteter (af 10 forskellige organisatorer)',
         'criteria3' => '3 involverede lande',
         'andor' => 'og/eller',
     ],

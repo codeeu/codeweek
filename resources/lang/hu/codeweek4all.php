@@ -9,7 +9,7 @@ return [
         'content' => '<p>Azon túlmenően, hogy felteszi tevékenységét az európai programozási hét térképére, másokat is felkérhet saját hálózatában arra, hogy hasonlóan cselekedjenek. Azzal, ha Ön és társai elérik az alábbi küszöbértékek egyikét, már meg is szerezték a programozási hét Kiválósági tanúsítványát!</p>
                             <p>A Kiválósági tanúsítvány elnyerésének feltételei a következők:</p>',
         'criteria1' => '500 diák részvétele',
-        'criteria2' => '10 összekapcsolt tevékenység',
+        'criteria2' => '10 összekapcsolt tevékenység 10 különböző szervező által',
         'criteria3' => '3 ország részvétele',
         'andor' => 'És / Vagy',
     ],

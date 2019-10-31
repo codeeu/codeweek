@@ -9,7 +9,7 @@ return [
         'content' => '<p>Para além de inscreverem as suas atividades no mapa da Semana Europeia da Programação, os participantes também podem incentivar outros elementos das respetivas redes a fazerem o mesmo. Se o participante e a respetiva aliança alcançarem uma das seguintes metas, conquistarão todos o Certificado de Excelência da Semana da Programação!</p>
                             <p>Critérios para conquistar o Certificado de Excelência:</p>',
         'criteria1' => 'Participação de 500 alunos',
-        'criteria2' => 'Ligação de 10 atividades',
+        'criteria2' => '10 atividades ligadas (por 10 Organizações diferentes)',
         'criteria3' => 'Envolvimento de 3 países',
         'andor' => 'e/ou',
     ],

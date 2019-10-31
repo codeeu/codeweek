@@ -9,7 +9,7 @@ return [
         'content' => '<p>Usto što predajete svoju aktivnost za kartu Europskog tjedna programiranja, također možete potaknuti druge u svojoj mreži da učine to isto. Ako vi i vaš saveznik dosegnete jedan od sljedećih pragova, zaradit ćete Potvrdu o izvrsnosti Tjedna programiranja!</p>
                             <p>Kriteriji za dobivanje Potvrde o izvrsnosti:</p>',
         'criteria1' => 'sudjelovalo je 500 učenika',
-        'criteria2' => 'povezano je 10 aktivnosti',
+        'criteria2' => '10 povezanih aktivnosti ( 10 različitih organizatora )',
         'criteria3' => 'uključene su tri zemlje',
         'andor' => 'i/ili',
     ],

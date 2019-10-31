@@ -12,7 +12,7 @@ return [
                                 eest programmeerimisnädalal Code Week!</p>
                             <p>Nõuded tunnistuse saamiseks</p>',
         'criteria1' => 'Osales 500 õpilast',
-        'criteria2' => 'seotud on 10 tegevust',
+        'criteria2' => '10 seotud tegevust (koostatud 10 erineva organisatsiooni poolt)',
         'criteria3' => 'hõlmatud kolm riiki',
         'andor' => 'ja/või',
     ],
