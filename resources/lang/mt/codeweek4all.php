@@ -9,7 +9,7 @@ return [
         'content' => '<p>Minbarra li tissottometti l-attività tiegħek fuq il-mappa tal-Ġimgħa tal-UE tal-Ikkowdjar, tista’ wkoll tinvolvi lil oħrajn fin-netwerk tiegħek biex jagħmlu l-istess. Jekk inti u l-alleanza tiegħek tilħqu wieħed mil-limiti li ġejjin, se tingħataw ilkoll iċ-Ċertifikat ta’ Eċċellenza tal-Ġimgħa tal-Ikkowdjar!</p>
                             <p>Kriterji biex tingħata ċ-Ċertifikat ta’ Eċċellenza:</p>',
         'criteria1' => 'parteċipazzjoni ta’ 500 student',
-        'criteria2' => '10 attivitajiet marbuta',
+        'criteria2' => '10 attivitajiet marbuta (Minn 10 organizzazjonijiet differenti)',
         'criteria3' => '3 pajjiżi involuti',
         'andor' => 'U / Jew',
     ],

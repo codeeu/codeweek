@@ -9,7 +9,7 @@ return [
         'content' => '<p>Je kunt je eigen activiteit op de kaart van de EU-programmeerweek zetten, maar je kunt ook anderen in je netwerk overhalen dit te doen. Als jij met je groep een van de volgende drempels bereikt, krijgen jullie allemaal een Programmeerweek-certificaat van uitmuntendheid.</p>
                             <p>Criteria om het Certificaat van uitmuntendheid te behalen:</p>',
         'criteria1' => 'deelname van 500 studenten',
-        'criteria2' => '10 gelinkte activiteiten',
+        'criteria2' => '10 gelinkte activiteiten (door 10 verschillende organisatoren)',
         'criteria3' => 'betrokkenheid van 3 landen',
         'andor' => 'en/of',
     ],

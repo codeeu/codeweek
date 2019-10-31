@@ -9,7 +9,7 @@ return [
         'content' => '<p>Pored dodavanja vašeg događaja na mapu Evropske Nedjelje programiranja, takođe možete zainteresovati i druge unutar vaše mreže da učine isto. Ukoliko vi i vaši saveznici ispunite jedan od sljedećih uslova, svi ćete dobiti Sertifikat izuzetnosti Nedjelje programiranja!</p>
                             <p>Kriterijumi za dobijanje Sertifikata izuzetnosti:</p>',
         'criteria1' => 'Učešće 500 učenika',
-        'criteria2' => '10 povezanih događaja',
+        'criteria2' => '10 povezanih aktivnosti ( 10 razlicitih organizatora )',
         'criteria3' => 'Učešće 3 države',
         'andor' => 'I / ili',
     ],
