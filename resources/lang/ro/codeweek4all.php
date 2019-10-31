@@ -9,7 +9,7 @@ return [
         'content' => '<p>Suplimentar față de înregistrarea activității dumneavoastră pe harta Săptămânii programării UE, puteți implica și alte persoane din rețeaua dumneavoastră să facă același lucru. Dacă dumneavoastră și alianța dumneavoastră atingeți unul dintre pragurile următoare, veți câștiga certificatul de excelență al Săptămânii programării!</p>
                             <p>Criterii pentru câștigarea certificatului de excelență:</p>',
         'criteria1' => '500 de studenți participanți',
-        'criteria2' => '10 activități conectate',
+        'criteria2' => '10 activități corelate (de 10 organizatori diferiți)',
         'criteria3' => '3 țări implicate',
         'andor' => 'și/sau',
     ],

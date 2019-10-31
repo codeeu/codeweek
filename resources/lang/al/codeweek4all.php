@@ -9,7 +9,7 @@ return [
         'content' => '<p>Përveç paraqitjes së aktivitetit tuaj në hartën e EU Code Week, ju mund të angazhoni edhe të tjerë në rrjetin tuaj që të bëjnë të njëjtën gjë. Nëse ju dhe partnerët tuaj arrini një prej kufijve të mëposhtëm, ju të gjithë do të fitoni Certifikatën e Përsosmërisë së Code Week!</p>
                             <p>Kriteret për të fituar Certifikatën e Përsosmërisë:</p>',
         'criteria1' => '500 studentë pjesëmarrës',
-        'criteria2' => '10 aktivitete të lidhura',
+        'criteria2' => '10 aktivitete të lidhura (nga 10 organizatorë të ndryshëm)',
         'criteria3' => '3 shtete të përfshira',
         'andor' => 'Dhe / ose',
     ],

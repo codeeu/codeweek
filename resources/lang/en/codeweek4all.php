@@ -13,7 +13,7 @@ return [
                         Criteria for earning the Certificate of Excellence:
                     </p>',
         'criteria1' => '500 students participated',
-        'criteria2' => '10 activities linked',
+        'criteria2' => '10 activities linked (from 10 different organizers)',
         'criteria3' => '3 countries involved',
         'andor' => 'And / Or',
     ],

@@ -9,7 +9,7 @@ return [
         'content' => '<p>Pored toga što ćete podnijeti svoju aktivnost za mapu Sedmice kodiranja EU, možete angažirati i druge u svojoj mreži da učine to isto. Ako vi i vaš savez dostignete jedan od sljedećih pragova, svi ćete osvojiti Certifikat odličnosti Sedmice kodiranja!</p>
                             <p>Kriteriji za osvajanje Certifikata odličnosti:</p>',
         'criteria1' => 'Učestvovalo 500 polaznika',
-        'criteria2' => 'Povezano linkom 10 aktivnosti',
+        'criteria2' => '10 povezanih aktivnosti (10 različitih organizatora )',
         'criteria3' => '3 angažirane zemlje',
         'andor' => 'I / ili',
     ],

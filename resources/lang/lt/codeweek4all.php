@@ -9,7 +9,7 @@ return [
         'content' => '<p>Jūs galite ne tik pateikti savo renginį ES programavimo savaitei, bet ir paskatinti tai padaryti kitus savo tinklo narius. Jei jūs ir jūsų aljansas pasieks vieną iš nustatytų tikslų, gausite Programavimo savaitės meistriškumo pažymėjimą!</p>
                             <p>Kriterijai meistriškumo pažymėjimui gauti:</p>',
         'criteria1' => 'dalyvavo 500 moksleivių',
-        'criteria2' => 'susieta 10 renginių',
+        'criteria2' => 'Susieta 10 renginių (iš 10 skirtingų organizatorių)',
         'criteria3' => 'dalyvavo 3 šalys.',
         'andor' => 'ir (arba)',
     ],

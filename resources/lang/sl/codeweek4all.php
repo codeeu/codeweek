@@ -9,7 +9,7 @@ return [
         'content' => ' <p>Svojo dejavnost dodajte na zemljevid evropskega tedna programiranja, prav tako pa lahko spodbudite druge v svoji mreži, da storijo enako. Če vi in vaši zavezniki dosežete enega od naslednjih pragov, boste vsi pridobili certifikat odličnosti tedna programiranja!</p>
                             <p>Merila za pridobitev certifikata odličnosti:</p>',
         'criteria1' => '500 sodelujočih študentov',
-        'criteria2' => '10 povezanih dejavnosti',
+        'criteria2' => '10 povezanih dejavnosti (10 različnih organizatorjev)',
         'criteria3' => 'vključene 3 države',
         'andor' => 'in/ali',
     ],

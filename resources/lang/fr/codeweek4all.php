@@ -9,7 +9,7 @@ return [
         'content' => '<p>En plus de soumettre votre activité à la carte de la Semaine européenne du code, vous pouvez inciter des personnes de votre réseau à en faire autant. Si vous et votre alliance atteignez l’un des seuils suivants, chacun obtiendra le certificat d’excellence Code Week!</p>
                             <p>Critères pour décrocher le Certificat d’excellence:</p>',
         'criteria1' => '500 étudiants participants',
-        'criteria2' => '10 activités liées',
+        'criteria2' => '10 activités liées (par 10 organisateurs différents)',
         'criteria3' => '3 pays impliqués',
         'andor' => 'et/ou',
     ],

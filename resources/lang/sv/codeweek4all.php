@@ -9,7 +9,7 @@ return [
         'content' => '<p>När du lägger till din aktivitet på Code Week-kartan kan du också engagera andra i ditt nätverk att göra samma sak. Om du och din grupp uppnår en av följande trösklar kommer ni alla att få ett Code Week Certificate of Excellence!</p>
                             <p>Kriterier för att få ett Certificate of Excellence:</p>',
         'criteria1' => '500 deltagande elever',
-        'criteria2' => '10 sammankopplade aktiviteter',
+        'criteria2' => '10 sammankopplade aktiviteter (med 10 olika arrangörer)',
         'criteria3' => '3 inblandade länder',
         'andor' => 'och/eller',
     ],
