@@ -9,7 +9,7 @@ return [
         'content' => '<p>Kromě přidání vaší aktivity na mapu Týdne programování můžete také zapojit ostatní ve své síti, aby udělali totéž. Pokud vy a vaše aliance dosáhnete na některou z následujících prahových hodnot, získáte Certifikát o špičkové úrovni v rámci Týdne programování!</p>
                             <p>Kritéria pro získání Certifikátu o špičkové úrovni:</p>',
         'criteria1' => '500 zapojených studentů',
-        'criteria2' => '10 propojených aktivit',
+        'criteria2' => '10 propojených aktivit (10 různých organizátorů)',
         'criteria3' => '3 zúčastněné země',
         'andor' => 'a / nebo',
     ],

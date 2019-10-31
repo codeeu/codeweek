@@ -199,7 +199,7 @@ return [
     'Saint Pierre and Miquelon'=>'Σαιν-Πιερ και Μικελόν',
     'Pitcairn'=>'Νήσοι Πίτκαιρν',
     'Puerto Rico'=>'Πουέρτο Ρίκο',
-    'Palestine'=>'Παλαιστινιακά εδάφη',
+    'Palestine'=>'Παλαιστίνη',
     'Portugal'=>'Πορτογαλία',
     'Palau'=>'Παλάου',
     'Paraguay'=>'Παραγουάη',

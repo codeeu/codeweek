@@ -9,7 +9,7 @@ return [
         'content' => '<p>Oltre a inviare la tua attività sulla mappa della settimana europea della programmazione, puoi invitare altre persone nella tua rete a partecipare. Se tu e la tua alleanza raggiungerete uno degli obiettivi seguenti, riceverete il Certificato di eccellenza della settimana della programmazione!</p>
                             <p>Requisiti per ottenere il Certificato di eccellenza:</p>',
         'criteria1' => '500 studenti partecipanti',
-        'criteria2' => '10 attività collegate',
+        'criteria2' => '10 attività collegate (da 10 diversi organizzatori)',
         'criteria3' => '3 paesi coinvolti',
         'andor' => 'e/o',
     ],

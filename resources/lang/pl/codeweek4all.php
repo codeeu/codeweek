@@ -9,7 +9,7 @@ return [
         'content' => '<p>Możesz nie tylko dodać swoje wydarzenie na mapę Europejskiego Tygodnia Kodowania, ale także zachęcić do tego innych z sieci twoich kontaktów. Jeśli twojemu sojuszowi uda się osiągnąć któryś z poniższych progów, zdobędziecie Certyfikat Doskonałości Tygodnia Kodowania!</p>
                             <p>Kryteria, które należy spełnić, by zdobyć Certyfikat Doskonałości:</p>',
         'criteria1' => '500 uczestników',
-        'criteria2' => '10 połączonych aktywności',
+        'criteria2' => '10 połączonych aktywności (przez 10 różnych organizatorów)',
         'criteria3' => '3 zaangażowane państwa',
         'andor' => 'i/lub',
     ],

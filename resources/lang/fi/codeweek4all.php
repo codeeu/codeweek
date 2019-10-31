@@ -9,7 +9,7 @@ return [
         'content' => '<p>Sen lisäksi, että lähetät itse tapahtumasi EU:n koodausviikon karttaan, voit myös kutsua muut verkostosi jäsenet tekemään samoin. Jos sinä ja verkostosi saavutatte jonkin seuraavista rajoista, saatte kaikki koodausviikon osaamissertifikaatin!</p>
                             <p>Osaamissertifikaatin ansaitsemiskriteerit:</p>',
         'criteria1' => '500 osallistuvaa opiskelijaa',
-        'criteria2' => '10 yhdistettyä tapahtumaa',
+        'criteria2' => '10 yhdistettyä tapahtumaa (10 eri järjestelijältä)',
         'criteria3' => '3 osallistuvaa maata',
         'andor' => 'ja/tai',
     ],

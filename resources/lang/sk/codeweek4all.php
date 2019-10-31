@@ -15,7 +15,7 @@ return [
                                 programovania certifikát excelentnosti.</p>
                             <p>Kritériá na získanie certifikátu excelentnosti:</p>',
         'criteria1' => '500 zapojených študentov',
-        'criteria2' => '10 prepojených aktivít',
+        'criteria2' => '10 prepojených aktivít (od 10 rôznych organizátorov)',
         'criteria3' => '3 zapojené krajiny',
         'andor' => 'a/alebo',
     ],

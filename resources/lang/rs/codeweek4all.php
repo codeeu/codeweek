@@ -14,7 +14,7 @@ return [
                                 izvrsnosti Nedelje programiranja!</p>
                             <p>Kriterijumi za osvajanje Sertifikata izvrsnosti:</p>',
         'criteria1' => '500 učesnika',
-        'criteria2' => '10 povezanih aktivnosti',
+        'criteria2' => '10 povezanih aktivnosti ( 10 različitih organizatora )',
         'criteria3' => '3 zemlje učesnice',
         'andor' => 'I / Ili',
     ],

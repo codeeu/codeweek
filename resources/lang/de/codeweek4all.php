@@ -9,7 +9,7 @@ return [
         'content' => '<p>Nachdem Sie Ihre Aktivität zur EU Code Week-Karte hinzugefügt haben, können Sie andere Personen in Ihrem Netzwerk dazu auffordern, das gleiche zu tun. Wenn Sie und Ihre Allianz eine der folgenden Meilensteine erreichen, verdienen Sie sich damit das Code Week-Exzellenzzertifikat!</p>
                             <p>Kriterien für die Verleihung eines Exzellenzzertifikats:</p>',
         'criteria1' => '500 Schüler haben teilgenommen',
-        'criteria2' => '10 Aktivitäten wurden vernetzt',
+        'criteria2' => '10 vernetzte Aktivitäten (von 10 verschiedenen Organisatoren)',
         'criteria3' => '3 Länder waren beteiligt',
         'andor' => 'und / oder',
     ],
