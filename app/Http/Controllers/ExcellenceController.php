@@ -56,6 +56,9 @@ class ExcellenceController extends Controller
 
 
     }
+    public function list(){
+
+    }
 
 
 }

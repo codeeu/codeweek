@@ -18,11 +18,11 @@ class StatsController extends Controller
 
     public function getMetrics(Request $request)
     {
-        $year = ($request->has('yearSelector')) ? $request->input('yearSelector') : 2018;
-        $creatorsWithOneEvent = (Cache::has('creatorsWithOneEvent')) ? Cache::get('creatorsWithOneEvent') : $this->creatorsWithAtLeastOneEvent($year);
-        $totalParticipants = (Cache::has('totalParticipants')) ? Cache::get('totalParticipants') : $this->totalParticipants($year);
-        $eventsNotReported = (Cache::has('eventsNotReported')) ? Cache::get('eventsNotReported') : $this->eventsNotReported($year);
-        $eventsFinished = (Cache::has('eventsFinished')) ? Cache::get('eventsFinished') : $this->eventsFinished($year);
+        $year = ($request->has('yearSelector')) ? $request->input('yearSelector') : 2019;
+        $creatorsWithOneEvent = (Cache::has('creatorsWithOneEvent{$year}')) ? Cache::get('creatorsWithOneEvent{$year}') : $this->creatorsWithAtLeastOneEvent($year);
+        $totalParticipants = (Cache::has('totalParticipants{$year}')) ? Cache::get('totalParticipants{$year}') : $this->totalParticipants($year);
+        $eventsNotReported = (Cache::has('eventsNotReported{$year}')) ? Cache::get('eventsNotReported{$year}') : $this->eventsNotReported($year);
+        $eventsFinished = (Cache::has('eventsFinished{$year}')) ? Cache::get('eventsFinished{$year}') : $this->eventsFinished($year);
         $years = $this->getYearsArray();
 
         return view('stats', [
@@ -39,10 +39,10 @@ class StatsController extends Controller
 
     public function getEventsPerYear(Request $request)
     {
-        $year = ($request->has('yearSelector')) ? $request->input('yearSelector') : 2018;
+        $year = ($request->has('yearSelector')) ? $request->input('yearSelector') : 2019;
         $years = $this->getYearsArray();
         $total = 0;
-        $eventsPerYear = (Cache::has('eventsPerYearCountry')) ? Cache::get('eventsPerYearCountry') : $this->eventsPerYear($year, null);
+        $eventsPerYear = (Cache::has('eventsPerYearCountry{$year}')) ? Cache::get('eventsPerYearCountry{$year}') : $this->eventsPerYear($year, null);
         $groupedEvents = $this->groupSmallEvents($eventsPerYear, $total);
         $chart = $this->setPieChart(array_sort($groupedEvents), $year);
 
@@ -69,7 +69,7 @@ class StatsController extends Controller
         $now = Carbon::now('Europe/Brussels');
         $year = $now->year;
         $type = ($request->has('typeSelector')) ? $types[$request->input('typeSelector')] : $types['Schools'];
-        $eventsPerYear = (Cache::has('eventsPerYearOrganiser')) ? Cache::get('eventsPerYearOrganiser') : $this->eventsPerYear($year, $type);
+        $eventsPerYear = $this->eventsPerYear($year, $type);
         $total = 0;
         $groupedEvents = $this->groupSmallEvents($eventsPerYear, $total, sizeof($eventsPerYear));
         $chart = $this->setBarChart($groupedEvents, $year);
@@ -85,7 +85,7 @@ class StatsController extends Controller
     }
 
 
-    public function getNotReportedEvents(Request $request)
+    public function getByParticipationCountDesc(Request $request)
     {
 
         $country_iso = ($request->has('country_iso')) ? $request->input('country_iso') : '';
@@ -93,9 +93,9 @@ class StatsController extends Controller
         $now = Carbon::now('Europe/Brussels');
         $year = $now->year;
 
-        $notReportedEvents = (Cache::has('listEventsNotReported')) ? Cache::get('listEventsNotReported') : $this->topEventsNotReportedGlobally($year, $country_iso);
-        Cache::forget('countries');
-        $countries = (Cache::has('countries')) ? Cache::get('countries') : $this->getCountriesArray();
+        $notReportedEvents = $this->topEventsNotReportedGlobally($year, $country_iso);
+
+        $countries = $this->getCountriesArray();
 
         $chartData = $this->getChartDataFromObjectArray($notReportedEvents, ['title', 'participants_count']);
         $chart = $this->setPieChart($chartData, $year);
@@ -133,7 +133,7 @@ class StatsController extends Controller
                 ->orderBy('events', 'desc')
                 ->pluck('events', 'c.name')
                 ->toArray();
-            Cache::put('eventsPerYearCountry', $eventsPerYear, 60*60);
+
         } else {
             $eventsPerYear = DB::table('countries as c')
                 ->selectRaw('c.name, count(c.iso) as events')
@@ -146,7 +146,7 @@ class StatsController extends Controller
                 ->orderBy('events', 'desc')
                 ->pluck('events', 'c.name')
                 ->toArray();
-            Cache::put('eventsPerYearOrganiser', $eventsPerYear, 60*60);
+
         }
 
         return $eventsPerYear;
@@ -169,7 +169,7 @@ class StatsController extends Controller
                 ->get();
         }
 
-       // Cache::put('listEventsNotReported',$topEventsNotReported, 60);
+
 
         return $topEventsNotReported;
     }
@@ -177,49 +177,49 @@ class StatsController extends Controller
 
     private function creatorsWithAtLeastOneEvent($year)
     {
-        $operator = ($year == 2018) ? '>=' : '=';
+        $operator = ($year == 2019) ? '>=' : '=';
         $count = DB::table('events as e')
             ->select()
             ->where('e.status', '=', 'APPROVED')
             ->whereYear('e.end_date', $operator, $year)
             ->distinct()
             ->count('creator_id');
-        Cache::put('creatorsWithOneEvent', $count, 60*60);
+        Cache::put('creatorsWithOneEvent{$year}', $count, 60*60);
         return $count;
 
     }
 
     private function totalParticipants($year)
     {
-        $operator = ($year == 2018) ? '>=' : '=';
+        $operator = ($year == 2019) ? '>=' : '=';
         $count = DB::table('events as e')
             ->select()
             ->where('e.status', '=', 'APPROVED')
             ->whereYear('e.end_date', $operator, $year)
             ->where('id', '<>', 183480)
             ->sum('e.participants_count');
-        Cache::put('totalParticipants', $count, 60*60);
+        Cache::put('totalParticipants{$year}', $count, 60*60);
         return $count;
 
     }
 
     private function eventsFinished($year)
     {
-        $operator = ($year == 2018) ? '>=' : '=';
+        $operator = ($year == 2019) ? '>=' : '=';
         $count = DB::table('events as e')
             ->select()
             ->where('e.status', '=', 'APPROVED')
             ->whereYear('e.end_date', $operator, $year)
             ->where('e.end_date', '<=', Carbon::now('Europe/Brussels'))
             ->count();
-        Cache::put('eventsFinished', $count, 60*60);
+        Cache::put('eventsFinished{$year}', $count, 60*60);
         return $count;
 
     }
 
     private function eventsNotReported($year)
     {
-        $operator = ($year == 2018) ? '>=' : '=';
+        $operator = ($year == 2019) ? '>=' : '=';
         $count = DB::table('events as e')
             ->select()
             ->where('e.status', '=', 'APPROVED')
@@ -228,7 +228,7 @@ class StatsController extends Controller
             ->where('e.end_date', '<', Carbon::now('Europe/Brussels'))
             ->whereNull('e.participants_count')
             ->count();
-        Cache::put('eventsNotReported', $count, 60*60);
+        Cache::put('eventsNotReported{$year}', $count, 60*60);
         return $count;
 
     }

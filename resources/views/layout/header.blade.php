@@ -86,6 +86,12 @@
                         </a>
                     </li>
                     @role('super admin')
+                    <li>
+                        <img src="/images/user_menu_activities.svg" class="icon">
+                        <a href="{{route('excellence_list')}}">
+                            Excellence
+                        </a>
+                    </li>
                     {{--<li>
                         <img src="/images/user_menu_activities.svg" class="icon">
                         <a href="{{route('activities')}}">
