@@ -18,7 +18,7 @@
                 <a class="nav-link" href="{{route("stats.organiser")}}">Events per organizer type</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{route("stats_notreported")}}">Not reported events</a>
+                <a class="nav-link" href="{{route("stats.partipants")}}">Largest Activities</a>
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
