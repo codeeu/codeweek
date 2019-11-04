@@ -9,10 +9,16 @@
                name="{{$field_name}}"
                value="{{old($field_name)}}">
     </div>
-    <div class="errors">
-        @component('components.validation-errors', ['field'=>'title'])@endcomponent
-    </div>
-    <div class="info">
-        @lang($section.'.'.$help)
-    </div>
+
+    @if($errors->has($field_name))
+        <div class="errors">
+        @component('components.validation-errors', ['field'=>$field_name])@endcomponent
+        </div>
+    @else
+        <div class="info">
+            @lang($section.'.'.$help)
+        </div>
+    @endif
+
+
 </div>
