@@ -110,8 +110,7 @@ class ExcellenceWinnersHelper
             ])
             ->whereIn('codeweek_for_all_participation_code',$toArray)
             ->groupBy('codeweek_for_all_participation_code')
-            ->get()
-            ->toArray();
+            ->get();
     }
 
 
