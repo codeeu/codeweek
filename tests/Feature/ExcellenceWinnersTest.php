@@ -7,6 +7,7 @@ use App\Excellence;
 use App\Helpers\ExcellenceWinnersHelper;
 use App\School;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Storage;
 use Tests\TestCase;
@@ -78,6 +79,7 @@ class ExcellenceWinnersTest extends TestCase
 
         $codes = ExcellenceWinnersHelper::criteria2(2019);
 
+
         $this->assertContains("cw19-10-organisers", $codes);
         $this->assertNotContains("cw19-10-events-one-organiser", $codes);
         $this->assertNotContains("cw19-500-participants-multiple", $codes);
@@ -147,18 +149,17 @@ class ExcellenceWinnersTest extends TestCase
 
         $codes = ExcellenceWinnersHelper::getWinnerCodes();
 
-        $detail = ExcellenceWinnersHelper::getDetailsByCodeweek4All($codes->toArray());
+        $details = ExcellenceWinnersHelper::getDetailsByCodeweek4All($codes->toArray());
 
-        dd($detail);
+//        dd($details);
+        //      $this->assertContains("cw19-10-3-countries", $details);
 
-        $this->assertContains("cw18-previous-year", $codes);
-
-        $this->assertEquals($codes, $codes->unique());
+        $this->assertTrue($details->contains(function ($line) {
+            return($line->codeweek_for_all_participation_code == "cw19-10-3-countries") ;
+        }));
 
 
     }
-
-
 
 
 }

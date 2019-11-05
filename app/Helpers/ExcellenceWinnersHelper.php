@@ -27,6 +27,7 @@ class ExcellenceWinnersHelper
             ->groupBy('codeweek_for_all_participation_code')
             ->having('total_participants',">=",500)
             ->get()
+            ->pluck('codeweek_for_all_participation_code')
             ->toArray();
 
 
