@@ -88,8 +88,8 @@
                     @role('super admin')
                     <li>
                         <img src="/images/user_menu_activities.svg" class="icon">
-                        <a href="{{route('excellence_list')}}">
-                            Excellence
+                        <a href="{{route('excellence_winners')}}">
+                            Excellence Winners
                         </a>
                     </li>
                     {{--<li>
