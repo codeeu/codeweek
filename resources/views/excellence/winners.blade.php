@@ -8,8 +8,18 @@
         </section>
 
         <section class="codeweek-content-wrapper" style="margin-top:0px;">
+            <ul>
+                @foreach($details as $detail)
+                    <li>
+                        {{$detail->codeweek_for_all_participation_code}} - {{$detail->total_participants}}
+                        - {{$detail->total_creators}} - {{$detail->total_countries}}
+                    </li>
+                @endforeach
 
-            Hello :)
+
+            </ul>
+
+            {{ $details->links() }}
 
         </section>
 

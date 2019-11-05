@@ -19,9 +19,11 @@ class ExcellenceWinnersController extends Controller
         //Get the winning CW4All codes
         $codes = ExcellenceWinnersHelper::getWinnerCodes($edition);
 
-        $detail = ExcellenceWinnersHelper::getWinnerCodesDetails($codes->toArray());
+        $details = ExcellenceWinnersHelper::getDetailsByCodeweek4All($codes->toArray())->paginate(20);
 
-        return view('excellence.winners', compact(['codes','edition']));
+        //dd($details);
+
+        return view('excellence.winners', compact(['edition','details']));
 
     }
 
