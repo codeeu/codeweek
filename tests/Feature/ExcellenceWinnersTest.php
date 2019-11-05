@@ -151,11 +151,8 @@ class ExcellenceWinnersTest extends TestCase
 
         $details = ExcellenceWinnersHelper::getDetailsByCodeweek4All($codes->toArray());
 
-//        dd($details);
-        //      $this->assertContains("cw19-10-3-countries", $details);
-
         $this->assertTrue($details->contains(function ($line) {
-            return($line->codeweek_for_all_participation_code == "cw19-10-3-countries") ;
+            return($line->codeweek_for_all_participation_code == "cw19-10-3-countries");
         }));
 
 
