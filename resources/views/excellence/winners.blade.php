@@ -4,7 +4,7 @@
     <section id="codeweek-participation-report-page" class="codeweek-page">
 
         <section class="codeweek-content-header">
-            <h1>Excellence Winners for {{$edition}}</h1>
+            <h1>Excellence Winners for {{$edition}} - {{count($details)}}</h1>
         </section>
 
 
