@@ -15,6 +15,7 @@
                 <th><a href="?participants={{request()->input('participants')==-1?1:-1}}"># Participants</a></th>
                 <th><a href="?teachers={{request()->input('teachers')==-1?1:-1}}"># Teachers</a></th>
                 <th><a href="?countries={{request()->input('countries')==-1?1:-1}}"># Countries</a></th>
+                <th><a href="?activities={{request()->input('activities')==-1?1:-1}}"># Activities</a></th>
             </tr>
             </thead>
             <tbody>
@@ -26,6 +27,7 @@
                         <td>{{$detail->total_participants}}</td>
                         <td>{{$detail->total_creators}}</td>
                         <td>{{$detail->total_countries}}</td>
+                        <td>{{$detail->total_activities}}</td>
                     </tr>
 
                 @endforeach

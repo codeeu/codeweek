@@ -54,6 +54,14 @@ class ExcellenceWinnersController extends Controller
             }
         }
 
+        if ($request->input('activities')) {
+            if ($request->input('activities') == -1) {
+                $details = $details->sortByDesc('total_activities');
+            } else {
+                $details = $details->sortBy('total_activities');
+            }
+        }
+
         return view('excellence.winners', compact(['edition', 'details']));
         //return view('excellence.winners',compact(['edition']));
 

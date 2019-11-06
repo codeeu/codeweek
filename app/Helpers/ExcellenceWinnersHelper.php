@@ -14,7 +14,6 @@ class ExcellenceWinnersHelper
 {
 
 
-
     public static function criteria1($edition)
     {
 
@@ -25,11 +24,10 @@ class ExcellenceWinnersHelper
             ])
             ->whereYear('end_date', '=', $edition)
             ->groupBy('codeweek_for_all_participation_code')
-            ->having('total_participants',">=",500)
+            ->having('total_participants', ">=", 500)
             ->get()
             ->pluck('codeweek_for_all_participation_code')
             ->toArray();
-
 
 
         Log::info('Criteria 1');
@@ -41,13 +39,14 @@ class ExcellenceWinnersHelper
     {
 
         $codes = Event::
-        select(DB::raw('count(DISTINCT creator_id) as total_creators, codeweek_for_all_participation_code'))
+        select(DB::raw('count(DISTINCT creator_id) as total_creators, sum(participants_count) as total_participants, codeweek_for_all_participation_code'))
             ->where([
                 ['status', 'like', 'APPROVED']
             ])
             ->whereYear('end_date', '=', $edition)
             ->groupBy('codeweek_for_all_participation_code')
-            ->having('total_creators',">=",10)
+            ->having('total_participants', ">", 0)
+            ->having('total_creators', ">=", 10)
             ->get()
             ->pluck('codeweek_for_all_participation_code')
             ->toArray();
@@ -61,13 +60,14 @@ class ExcellenceWinnersHelper
     {
 
         $codes = Event::
-        select(DB::raw('count(DISTINCT country_iso) as total_countries, codeweek_for_all_participation_code'))
+        select(DB::raw('count(DISTINCT country_iso) as total_countries, sum(participants_count) as total_participants,codeweek_for_all_participation_code'))
             ->where([
                 ['status', 'like', 'APPROVED']
             ])
             ->whereYear('end_date', '=', $edition)
             ->groupBy('codeweek_for_all_participation_code')
-            ->having('total_countries',">=",3)
+            ->having('total_countries', ">=", 3)
+            ->having('total_participants', ">", 0)
             ->get()
             ->pluck('codeweek_for_all_participation_code')
             ->toArray();
@@ -97,19 +97,17 @@ class ExcellenceWinnersHelper
         return $result;
 
 
-
-
     }
 
     public static function getDetailsByCodeweek4All(array $toArray)
     {
 
         return Event::
-        select(DB::raw('sum(participants_count) as total_participants, count(DISTINCT creator_id) as total_creators, count(DISTINCT country_iso) as total_countries,  codeweek_for_all_participation_code'))
+        select(DB::raw('sum(participants_count) as total_participants, count(DISTINCT creator_id) as total_creators, count(DISTINCT country_iso) as total_countries,  count(id) as total_activities, codeweek_for_all_participation_code'))
             ->where([
                 ['status', 'like', 'APPROVED']
             ])
-            ->whereIn('codeweek_for_all_participation_code',$toArray)
+            ->whereIn('codeweek_for_all_participation_code', $toArray)
             ->groupBy('codeweek_for_all_participation_code')
             ->get();
     }
