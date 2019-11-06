@@ -7,11 +7,26 @@ use App\Tag;
 use App\User;
 use Carbon\Carbon;
 use Exception;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 
 class ExcellenceWinnersHelper
 {
+
+    public static function query($edition = null){
+        $ttl = 60*60;
+        return Cache::remember('details', $ttl, function () use ($edition) {
+            Log::info('query without cache');
+            $edition = !is_null($edition) ? $edition : Carbon::now()->year;
+            $codes = self::getWinnerCodes($edition);
+            $details =  self::getDetailsByCodeweek4All($codes->toArray());
+            $full = self::tagSuperWinners($details);
+            return $full;
+
+        });
+
+    }
 
 
     public static function criteria1($edition)
@@ -122,9 +137,9 @@ class ExcellenceWinnersHelper
          */
         foreach ($details as $detail) {
 
-            $detail->super_winner = 0;
+            $detail->super_winner = "0";
             if (($detail->total_participants >= 500) && ($detail->total_creators >= 10) && ($detail->total_countries >= 3) && ($detail->total_activities >= 10)) {
-                Log::info("Super winner: {$detail->codeweek_for_all_participation_code}");
+                //Log::info("Super winner: {$detail->codeweek_for_all_participation_code}");
                 $detail->super_winner = 1;
             }
         }

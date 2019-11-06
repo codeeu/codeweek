@@ -4,12 +4,15 @@ namespace App\Http\Controllers;
 
 use App\CertificateExcellence;
 use App\Excellence;
+use App\Exports\ExcellenceExport;
 use App\Helpers\ExcellenceWinnersHelper;
 use App\Queries\ExcellenceQuery;
+use Carbon\Carbon;
 use Gate;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Log;
+use Maatwebsite\Excel\Facades\Excel;
 
 
 class ExcellenceWinnersController extends Controller
@@ -18,8 +21,8 @@ class ExcellenceWinnersController extends Controller
     public function list($edition = 2019, Request $request)
     {
 
-        $ttl = 1;
-        //$ttl = 60 * 60 * 24;
+//        $ttl = 1;
+        $ttl = 60 * 60 * 24;
 
 //        dd($request->all());
         if ($request->input('clear_cache')) {
@@ -27,14 +30,9 @@ class ExcellenceWinnersController extends Controller
             Cache::forget('details');
         }
 
-        $details = Cache::remember('details', $ttl, function () use ($edition) {
-            Log::info('query without cache');
-            $codes = ExcellenceWinnersHelper::getWinnerCodes($edition);
-            $details =  ExcellenceWinnersHelper::getDetailsByCodeweek4All($codes->toArray());
-            $full = ExcellenceWinnersHelper::tagSuperWinners($details);
-            return $full;
-            //return $details;
-        });
+        $details = ExcellenceWinnersHelper::query();
+
+
 
         if ($request->input('participants')) {
             if ($request->input('participants') == -1) {
@@ -68,10 +66,23 @@ class ExcellenceWinnersController extends Controller
             }
         }
 
+        if ($request->input('super')) {
+            if ($request->input('super') == -1) {
+                $details = $details->sortByDesc('super_winner');
+            } else {
+                $details = $details->sortBy('super_winner');
+            }
+        }
+
 
 
         return view('excellence.winners', compact(['edition', 'details']));
         //return view('excellence.winners',compact(['edition']));
+
+    }
+
+    public function excel(){
+        return (new ExcellenceExport)->download('excellence.xlsx');
 
     }
 
