@@ -18,16 +18,22 @@ class ExcellenceWinnersController extends Controller
     public function list($edition = 2019, Request $request)
     {
 
+        $ttl = 1;
+        //$ttl = 60 * 60 * 24;
+
 //        dd($request->all());
         if ($request->input('clear_cache')) {
             Log::info ("cache cleaned");
             Cache::forget('details');
         }
 
-        $details = Cache::remember('details', 60 * 60 * 24, function () use ($edition) {
+        $details = Cache::remember('details', $ttl, function () use ($edition) {
             Log::info('query without cache');
             $codes = ExcellenceWinnersHelper::getWinnerCodes($edition);
-            return ExcellenceWinnersHelper::getDetailsByCodeweek4All($codes->toArray());
+            $details =  ExcellenceWinnersHelper::getDetailsByCodeweek4All($codes->toArray());
+            $full = ExcellenceWinnersHelper::tagSuperWinners($details);
+            return $full;
+            //return $details;
         });
 
         if ($request->input('participants')) {
@@ -61,6 +67,8 @@ class ExcellenceWinnersController extends Controller
                 $details = $details->sortBy('total_activities');
             }
         }
+
+
 
         return view('excellence.winners', compact(['edition', 'details']));
         //return view('excellence.winners',compact(['edition']));

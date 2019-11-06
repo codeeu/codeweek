@@ -65,6 +65,10 @@ class ExcellenceWinnersTest extends TestCase
 
         create('App\Event', ["codeweek_for_all_participation_code" => "cw18-previous-year", "status" => "APPROVED", "participants_count" => 5000, "end_date" => Carbon::now()->subYear()]);
 
+        create('App\Event', ["codeweek_for_all_participation_code" => "cw19-everything", "status" => "APPROVED", "participants_count" => 50, 'country_iso' => 'LU'], 10);
+        create('App\Event', ["codeweek_for_all_participation_code" => "cw19-everything", "status" => "APPROVED", "participants_count" => 50, 'country_iso' => 'BE'], 10);
+        create('App\Event', ["codeweek_for_all_participation_code" => "cw19-everything", "status" => "APPROVED", "participants_count" => 50, 'country_iso' => 'FR'], 10);
+
     }
 
 
@@ -125,6 +129,7 @@ class ExcellenceWinnersTest extends TestCase
         $this->assertContains("cw19-500-participants-multiple", $codes);
         $this->assertContains("cw19-10-organisers", $codes);
         $this->assertContains("cw19-10-3-countries", $codes);
+        $this->assertContains("cw19-everything", $codes);
         $this->assertNotContains("cw19-no", $codes);
         $this->assertNotContains("cw19-rejected", $codes);
         $this->assertNotContains("cw19-multiple-years", $codes);
@@ -166,6 +171,25 @@ class ExcellenceWinnersTest extends TestCase
 
         $this->assertTrue($details->contains(function ($line) {
             return($line->codeweek_for_all_participation_code == "cw19-10-3-countries");
+        }));
+
+
+    }
+
+    /** @test */
+    public function should_get_winners_fulfilling_all_criteria()
+    {
+
+        $codes = ExcellenceWinnersHelper::getWinnerCodes();
+
+        $details = ExcellenceWinnersHelper::getDetailsByCodeweek4All($codes->toArray());
+
+        $full = ExcellenceWinnersHelper::tagSuperWinners($details);
+
+
+
+        $this->assertTrue($full->contains(function ($line) {
+            return($line->codeweek_for_all_participation_code == "cw19-everything" && $line->super_winner == 1);
         }));
 
 

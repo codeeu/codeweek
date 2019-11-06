@@ -112,5 +112,25 @@ class ExcellenceWinnersHelper
             ->get();
     }
 
+    public static function tagSuperWinners($details)
+    {
+        /*
+         *     "total_participants" => "600"
+    "total_creators" => "10"
+    "total_countries" => "1"
+    "total_activities" => "10"
+         */
+        foreach ($details as $detail) {
+
+            $detail->super_winner = 0;
+            if (($detail->total_participants >= 500) && ($detail->total_creators >= 10) && ($detail->total_countries >= 3) && ($detail->total_activities >= 10)) {
+                Log::info("Super winner: {$detail->codeweek_for_all_participation_code}");
+                $detail->super_winner = 1;
+            }
+        }
+
+        return $details;
+    }
+
 
 }
