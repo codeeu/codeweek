@@ -38,6 +38,7 @@ class ExcellenceWinnersTest extends TestCase
         create('App\Event', ["codeweek_for_all_participation_code" => "cw19-500-participants-multiple", "status" => "APPROVED", "participants_count" => 300]);
         create('App\Event', ["codeweek_for_all_participation_code" => "cw19-500-participants-multiple", "status" => "APPROVED", "participants_count" => 0]);
 
+
         create('App\Event', ["codeweek_for_all_participation_code" => "cw19-no", "status" => "APPROVED", "participants_count" => 50]);
         create('App\Event', ["codeweek_for_all_participation_code" => "cw19-rejected", "status" => "REJECTED", "participants_count" => 5000]);
 
@@ -50,6 +51,14 @@ class ExcellenceWinnersTest extends TestCase
         create('App\Event', ["codeweek_for_all_participation_code" => "cw19-10-2-countries", "status" => "APPROVED", 'country_iso' => 'FR']);
         create('App\Event', ["codeweek_for_all_participation_code" => "cw19-10-2-countries", "status" => "APPROVED", 'country_iso' => 'BE']);
         create('App\Event', ["codeweek_for_all_participation_code" => "cw19-10-2-countries", "status" => "REJECTED", 'country_iso' => 'LU']);
+
+        create('App\Event', ["codeweek_for_all_participation_code" => "cw19-not-reported", "status" => "APPROVED", "participants_count" => NULL]);
+        create('App\Event', ["codeweek_for_all_participation_code" => "cw19-not-reported", "status" => "APPROVED", "participants_count" => NULL], 20);
+        create('App\Event', ["codeweek_for_all_participation_code" => "cw19-not-reported", "status" => "APPROVED", 'country_iso' => 'FR', "participants_count" => NULL]);
+        create('App\Event', ["codeweek_for_all_participation_code" => "cw19-not-reported", "status" => "APPROVED", 'country_iso' => 'BE', "participants_count" => NULL]);
+        create('App\Event', ["codeweek_for_all_participation_code" => "cw19-not-reported", "status" => "APPROVED", 'country_iso' => 'LU', "participants_count" => NULL]);
+
+
 
         create('App\Event', ["codeweek_for_all_participation_code" => "cw19-multiple-years", "status" => "APPROVED", "participants_count" => 250, "end_date" => Carbon::now()->subYear()]);
         create('App\Event', ["codeweek_for_all_participation_code" => "cw19-multiple-years", "status" => "APPROVED", "participants_count" => 250, "end_date" => Carbon::now()]);
@@ -70,6 +79,7 @@ class ExcellenceWinnersTest extends TestCase
         $this->assertContains("cw19-500-participants-multiple", $codes);
         $this->assertNotContains("cw19-no", $codes);
         $this->assertNotContains("cw19-rejected", $codes);
+        $this->assertNotContains("cw19-not-reported", $codes);
     }
 
     /** @test */
@@ -85,6 +95,7 @@ class ExcellenceWinnersTest extends TestCase
         $this->assertNotContains("cw19-500-participants-multiple", $codes);
         $this->assertNotContains("cw19-no", $codes);
         $this->assertNotContains("cw19-rejected", $codes);
+        $this->assertNotContains("cw19-not-reported", $codes);
     }
 
     /** @test */
@@ -100,6 +111,7 @@ class ExcellenceWinnersTest extends TestCase
         $this->assertNotContains("cw19-500-participants-multiple", $codes);
         $this->assertNotContains("cw19-no", $codes);
         $this->assertNotContains("cw19-rejected", $codes);
+        $this->assertNotContains("cw19-not-reported", $codes);
     }
 
 
@@ -117,6 +129,7 @@ class ExcellenceWinnersTest extends TestCase
         $this->assertNotContains("cw19-rejected", $codes);
         $this->assertNotContains("cw19-multiple-years", $codes);
         $this->assertNotContains("cw18-previous-year", $codes);
+        $this->assertNotContains("cw19-not-reported", $codes);
 
         $this->assertEquals($codes, $codes->unique());
 
