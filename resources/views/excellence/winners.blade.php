@@ -3,9 +3,20 @@
 @section('content')
     <section id="codeweek-participation-report-page" class="codeweek-page">
 
-        <section class="codeweek-content-header">
-            <h1>Excellence Winners for {{$edition}} - {{count($details)}}</h1>
+        <section class="codeweek-content-header" style="display: flex; justify-content: space-between;">
+            <h1>Excellence Winners for {{$edition}}</h1>
+
+            <form action="{{route('excellence_excel')}}" method="post">
+                {{ csrf_field() }}
+
+                <button class="codeweek-action-button" type="submit">
+                    Download Excel
+                </button>
+            </form>
         </section>
+
+
+
 
 
         <table class="codeweek-table">
@@ -16,6 +27,7 @@
                 <th><a href="?teachers={{request()->input('teachers')==-1?1:-1}}"># Teachers</a></th>
                 <th><a href="?countries={{request()->input('countries')==-1?1:-1}}"># Countries</a></th>
                 <th><a href="?activities={{request()->input('activities')==-1?1:-1}}"># Activities</a></th>
+                <th><a href="?super={{request()->input('super')==-1?1:-1}}">Super winner</a></th>
             </tr>
             </thead>
             <tbody>
@@ -28,6 +40,7 @@
                         <td>{{$detail->total_creators}}</td>
                         <td>{{$detail->total_countries}}</td>
                         <td>{{$detail->total_activities}}</td>
+                        <td>{{$detail->super_winner}}</td>
                     </tr>
 
                 @endforeach
@@ -37,7 +50,7 @@
             </tbody>
         </table>
         <form action="#" method="get">
-            <input type="hidden" name="clear_cache" value="1" />
+            <input type="hidden" name="clear_cache" value="1"/>
             <button class="codeweek-blank-button" type="submit">
                 Clear Cache
             </button>
@@ -45,21 +58,6 @@
 
 
 
-        {{--   <section class="codeweek-content-wrapper" style="margin-top:0px;">
-               <ul>
-                   @foreach($details as $detail)
-                       <li>
-                           {{$detail->codeweek_for_all_participation_code}} - {{$detail->total_participants}}
-                           - {{$detail->total_creators}} - {{$detail->total_countries}}
-                       </li>
-                   @endforeach
-
-
-               </ul>
-
-               {{ $details->links() }}
-
-           </section>--}}
 
     </section>
 @endsection

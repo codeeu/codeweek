@@ -138,6 +138,7 @@ Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/mail/template/creators/rejected', 'MailTemplateController@rejected');
 
     Route::get('/admin/excellence/winners','ExcellenceWinnersController@list')->name('excellence_winners');
+    Route::post('/admin/excellence/excel','ExcellenceWinnersController@excel')->name('excellence_excel');
 
 
     Route::get('/mail/template/remind/creators', 'MailTemplateController@remindcreators');
