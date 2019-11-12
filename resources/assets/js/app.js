@@ -35,6 +35,8 @@ import ResourceForm from './components/ResourceForm.vue'
 import SearchPageComponent from './components/SearchPageComponent.vue'
 import VueClipboard from 'vue-clipboard2'
 
+
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -42,6 +44,7 @@ import VueClipboard from 'vue-clipboard2'
  */
 window.Vue.use(Autocomplete);
 Vue.use(VueInternationalization);
+
 const lang = document.documentElement.lang.substr(0, 2);
 // or however you determine your current app locale
 
@@ -77,6 +80,7 @@ const app = new Vue({
         Autocomplete,
         ResourceForm,
         SearchPageComponent
+
 
     }
 });

@@ -86,22 +86,12 @@
                         </a>
                     </li>
                     @role('super admin')
-                    {{--<li>
+                    <li>
                         <img src="/images/user_menu_activities.svg" class="icon">
-                        <a href="{{route('activities')}}">
-                            Activities
+                        <a href="{{route('excellence_winners')}}">
+                            Excellence Winners
                         </a>
                     </li>
-                    <li>
-                        <img src="/images/user_menu_volunteers.svg" class="icon">
-                        <a href="{{route('volunteers')}}">
-                            Volunteers
-                        </a>
-                    </li>
-                    <li>
-                        <img src="/images/user_menu_statistics.svg" class="icon">
-                        <a href="{{route('stats')}}">@lang('menu.stats')</a>
-                    </li>--}}
                     @endrole
 
                     <li>
