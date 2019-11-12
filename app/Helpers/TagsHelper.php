@@ -30,7 +30,7 @@ class TagsHelper
             ->get();
 
 
-        dump(count($duplicate_tags));
+
 
 
 
