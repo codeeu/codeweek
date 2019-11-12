@@ -26,7 +26,8 @@ class ExcellenceExport implements FromCollection, WithHeadings
             'Teachers Count',
             'Countries Count',
             'Activities Count',
-            'Codeweek4All Code'
+            'Codeweek4All Code',
+            'Super Winner'
         ];
     }
 }
