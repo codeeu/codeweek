@@ -40,7 +40,9 @@ $longitude = $faker->longitude(-4,12);
         },
         'report_notifications_count' => 0,
         'name_for_certificate' => $faker->name,
-        'organizer_type' => $faker->randomElement($orgtypes)
+        'organizer_type' => $faker->randomElement($orgtypes),
+        "participants_count" => $faker->numberBetween(0,100),
+        "codeweek_for_all_participation_code" => $faker->randomAscii
 
     ];
 });

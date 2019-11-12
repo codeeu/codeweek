@@ -14,7 +14,6 @@
 use Illuminate\Http\Request;
 
 
-
 Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
 
     Route::get('/', function ($subdomain) {
@@ -138,27 +137,9 @@ Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/mail/template/creators/approved', 'MailTemplateController@approved');
     Route::get('/mail/template/creators/rejected', 'MailTemplateController@rejected');
 
-    Route::get('stats', [
-        'uses' => 'StatsController@getMetrics',
-        'as' => 'stats'
-    ]);
+    Route::get('/admin/excellence/winners','ExcellenceWinnersController@list')->name('excellence_winners');
+    Route::post('/admin/excellence/excel','ExcellenceWinnersController@excel')->name('excellence_excel');
 
-
-    Route::get('stats/events/years', [
-        'uses' => 'StatsController@getEventsPerYear',
-        'as' => 'stats.year'
-    ]);
-
-
-    Route::get('stats/events/organiser', [
-        'uses' => 'StatsController@getEventsPerOrganiserType',
-        'as' => 'stats.organiser'
-    ]);
-
-    Route::get('stats/events/reported', [
-        'uses' => 'StatsController@getNotReportedEvents',
-        'as' => 'stats_notreported'
-    ]);
 
     Route::get('/mail/template/remind/creators', 'MailTemplateController@remindcreators');
 });
@@ -170,7 +151,6 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
     Route::post('/api/event/reject/{event}', 'EventController@reject')->name('event.reject');
 
 });
-
 
 
 Route::get('/profile', function () {
