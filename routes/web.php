@@ -152,6 +152,8 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
 
 });
 
+Route::get('/codeweek4all/{code}/detail', 'Codeweek4AllController@detail')->name('codeweek4all_details');
+
 
 Route::get('/profile', function () {
     $data = ['profileUser' => Auth()->user()];

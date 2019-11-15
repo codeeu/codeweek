@@ -16,9 +16,6 @@
         </section>
 
 
-
-
-
         <table class="codeweek-table">
             <thead>
             <tr>
@@ -35,7 +32,9 @@
             @if(!$details->isEmpty())
                 @foreach($details as $detail)
                     <tr>
-                        <td>{{$detail->codeweek_for_all_participation_code}}</td>
+                        <td>
+                            <a href="{{route('codeweek4all_details',['code'=>$detail->codeweek_for_all_participation_code])}}">{{$detail->codeweek_for_all_participation_code}}</a>
+                        </td>
                         <td>{{$detail->total_participants}}</td>
                         <td>{{$detail->total_creators}}</td>
                         <td>{{$detail->total_countries}}</td>
@@ -55,8 +54,6 @@
                 Clear Cache
             </button>
         </form>
-
-
 
 
     </section>
