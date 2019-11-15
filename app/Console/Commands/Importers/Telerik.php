@@ -3,6 +3,7 @@
 namespace App\Console\Commands\Importers;
 
 use App\Imports\BulgariaEventsImport;
+use App\Imports\TelerikEventsImport;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Facades\Excel;
@@ -46,7 +47,7 @@ class Telerik extends Command
     {
         Log::info("Loading Telerik Excel File");
 
-        Excel::import(new BulgariaEventsImport, 'telerik.xlsx','excel');
+        Excel::import(new TelerikEventsImport, 'telerik.xlsx','excel');
 
 
         // Process the events
