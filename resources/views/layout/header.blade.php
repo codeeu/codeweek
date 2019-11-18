@@ -131,27 +131,29 @@
                     </ul>
                 </div>
             </div>
-            @if (Cookie::get('codeweek_cookie_consent') == 1)
-                <div class="round-button menu-trigger facebook-menu">
-                    <img src="/images/facebook.svg" alt="Facebook" class="button-icon">
-                    <div class="menu-dropdown">
-                        <div class="fb-page" data-width="400"
-                             data-href="https://www.facebook.com/codeEU" data-tabs="timeline"
-                             data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
-                             data-show-facepile="true">
-                            <blockquote cite="https://www.facebook.com/codeEU" class="fb-xfbml-parse-ignore"><a
-                                        href="https://www.facebook.com/codeEU">Europe Code Week</a></blockquote>
+            @if(!isset(Request::header()["dnt"]))
+                @if (Cookie::get('codeweek_cookie_consent') == 1)
+                    <div class="round-button menu-trigger facebook-menu">
+                        <img src="/images/facebook.svg" alt="Facebook" class="button-icon">
+                        <div class="menu-dropdown">
+                            <div class="fb-page" data-width="400"
+                                 data-href="https://www.facebook.com/codeEU" data-tabs="timeline"
+                                 data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+                                 data-show-facepile="true">
+                                <blockquote cite="https://www.facebook.com/codeEU" class="fb-xfbml-parse-ignore"><a
+                                            href="https://www.facebook.com/codeEU">Europe Code Week</a></blockquote>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="round-button menu-trigger twitter-menu">
-                    <img src="/images/twitter.svg" alt="Twitter" class="button-icon">
-                    <div class="menu-dropdown">
-                        <a class="twitter-timeline" href="https://twitter.com/CodeWeekEU" data-width="400"
-                           data-height="300" data-chrome="noscrollbar" data-link-color="#E95F28"
-                           data-tweet-limit="4"></a>
+                    <div class="round-button menu-trigger twitter-menu">
+                        <img src="/images/twitter.svg" alt="Twitter" class="button-icon">
+                        <div class="menu-dropdown">
+                            <a class="twitter-timeline" href="https://twitter.com/CodeWeekEU" data-width="400"
+                               data-height="300" data-chrome="noscrollbar" data-link-color="#E95F28"
+                               data-tweet-limit="4"></a>
+                        </div>
                     </div>
-                </div>
+                @endif
             @endif
         </div>
     </div>
