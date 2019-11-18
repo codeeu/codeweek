@@ -94,7 +94,7 @@
             <p>If you would like to exercise your rights under Regulation (EU) 2018/1725, or if you have comments, questions or concerns, or if you would like to submit a complaint regarding the collection and use of your personal data, please feel free to contact the Data Controller,</p>
 
             <address style="margin-bottom: 10px;">
-                DG CONNECT Unit F4<br>
+                Directorate-General for Communications Networks, Content and Technology Unit F4<br>
                 Building BU25<br>
                 B-1049 Brussels<br>
                 Email: <a href="mailto:info@codeweek.eu">info@codeweek.eu</a>
