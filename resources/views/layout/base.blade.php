@@ -59,6 +59,7 @@
 </div>
 
 <!-- Scripts -->
+@if(!isset(Request::header()["dnt"]))
 @if (Cookie::get('codeweek_cookie_consent') == 1)
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script>(function (d, s, id) {
@@ -70,6 +71,7 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
+@endif
 @endif
 
 <script src="{{mix('js/app.js')}}"></script>
