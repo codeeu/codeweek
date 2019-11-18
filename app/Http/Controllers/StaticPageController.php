@@ -13,7 +13,6 @@ class StaticPageController extends Controller
     public function index(Request $request)
     {
 
-
         $routeName = Route::currentRouteName();
         $actual_language = session('locale');
         $view = 'static.' . $actual_language . '.' . $routeName;
