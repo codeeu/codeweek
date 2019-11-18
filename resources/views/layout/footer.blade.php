@@ -16,7 +16,7 @@
             <img src="/images/EU_logo.png">
             <div class="phrase">
                 <div class="text">@lang('base.footer_msg')</div>
-                <div class="text"><a href="{{route('privacy')}}">@lang('footer.privacy_policy')</a> - <a href="https://ec.europa.eu/info/cookies_{{App::getLocale()}}" target="_blank">@lang('footer.cookies_policy')</a></div>
+                <div class="text"><a href="{{route('privacy')}}">@lang('footer.privacy_policy')</a> - <a href="{{route('cookie')}}">@lang('footer.cookies_policy')</a></div>
             </div>
             <img src="/images/logo.svg" class="logo_footer">
             <img src="/images/bubbles_footer.svg" class="static-image bubbles_footer">
