@@ -10,8 +10,13 @@
                 hideCookieDialog();
             }
 
+            function refuseCookies() {
+                setCookie('{{ $cookieConsentConfig['cookie_name'] }}', 0, {{ $cookieConsentConfig['cookie_lifetime'] }});
+                hideCookieDialog();
+            }
+
             function cookieExists(name) {
-                return (document.cookie.split('; ').indexOf(name + '=' + COOKIE_VALUE) !== -1);
+                return (document.cookie.split('; ').indexOf(name) !== -1);
             }
 
             function hideCookieDialog() {
@@ -40,6 +45,7 @@
 
             return {
                 consentWithCookies: consentWithCookies,
+                refuseCookies: refuseCookies,
                 hideCookieDialog: hideCookieDialog
             };
         })();
@@ -58,7 +64,7 @@
                style="margin-right: 10px;"
                href="javascript:laravelCookieConsent.consentWithCookies()">@lang("cookie.accept")</a>
             <a class="codeweek-action-link-button"
-               href="javascript:laravelCookieConsent.hideCookieDialog()">@lang("cookie.refuse")</a>
+               href="javascript:laravelCookieConsent.refuseCookies()">@lang("cookie.refuse")</a>
         </div>
     </div>
 
