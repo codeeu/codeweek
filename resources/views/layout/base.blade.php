@@ -59,7 +59,19 @@
 </div>
 
 <!-- Scripts -->
+@if (Cookie::get('codeweek_cookie_consent') == 1)
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script>(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+@endif
+
 <script src="{{mix('js/app.js')}}"></script>
 <script type="text/javascript" src="{{ asset('lib/jquery/jquery.js') }}"></script>
 {{--<script src=//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js charset=utf-8></script>--}}
@@ -69,14 +81,7 @@
 
 <script src="https://unpkg.com/vue-select@latest"></script>
 
-<script>(function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2';
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+
 
 @stack('scripts')
 
