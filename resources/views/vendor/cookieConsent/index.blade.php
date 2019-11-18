@@ -57,7 +57,7 @@
     <div id="cookie-consent-banner" class="codeweek-cookie-consent-banner">
         <h2>@lang("cookie.cookies")</h2>
         <p class="cookie-consent-inform">@lang("cookie.uses_cookies"). @lang("cookie.find_out_more_on")
-            <a id="cookie-notice" href="https://ec.europa.eu/info/cookies_{{App::getLocale()}}" target="_blank">@lang("cookie.how_we_use")</a>.
+            <a id="cookie-notice" href="{{route('cookie')}}" target="_blank">@lang("cookie.how_we_use")</a>.
         </p>
         <div class="actions">
             <a class="codeweek-action-link-button"
