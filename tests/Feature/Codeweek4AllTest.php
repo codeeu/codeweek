@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use App\Country;
 use App\Event;
+use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Tests\TestCase;
 
@@ -21,8 +22,8 @@ class Codeweek4AllTest extends TestCase
     {
         parent::setUp();
 
-        $france = create('App\Country',['iso'=>'FR', 'name'=>"France"]);
-        $belgium = create('App\Country',['iso'=>'BE','name'=>'Belgium']);
+        $france = create('App\Country', ['iso' => 'FR', 'name' => "France"]);
+        $belgium = create('App\Country', ['iso' => 'BE', 'name' => 'Belgium']);
 
         create('App\Event', ["codeweek_for_all_participation_code" => "cw19-foo", "status" => "APPROVED", "participants_count" => 17, "country_iso" => $france->iso], 15);
         create('App\Event', ["codeweek_for_all_participation_code" => "cw19-foo", "status" => "APPROVED", "participants_count" => 17, "country_iso" => $belgium->iso], 20);
@@ -52,8 +53,8 @@ class Codeweek4AllTest extends TestCase
     public function count_of_unique_members_should_be_visible()
     {
         create('App\Event', ["codeweek_for_all_participation_code" => "cw19-bar", "status" => "APPROVED", "creator_id" => 1], 2);
-        create('App\Event', ["codeweek_for_all_participation_code" => "cw19-bar", "status" => "APPROVED", "creator_id" => 2],3);
-        create('App\Event', ["codeweek_for_all_participation_code" => "cw19-bar", "status" => "APPROVED", "creator_id" => 3],11);
+        create('App\Event', ["codeweek_for_all_participation_code" => "cw19-bar", "status" => "APPROVED", "creator_id" => 2], 3);
+        create('App\Event', ["codeweek_for_all_participation_code" => "cw19-bar", "status" => "APPROVED", "creator_id" => 3], 11);
 
 
         $this->get(route('codeweek4all_details', ['code' => 'cw19-bar']))
@@ -66,8 +67,21 @@ class Codeweek4AllTest extends TestCase
     {
         $this->withoutExceptionHandling();
         $this->get(route('codeweek4all_details', ['code' => 'cw19-foo']))
-            ->assertSeeInOrder(['Belgium','France'])
+            ->assertSeeInOrder(['Belgium', 'France'])
             ->assertDontSee('Bulgaria');
+    }
+
+    /** @test */
+    public function reporting_percentage_should_be_displayed()
+    {
+        create('App\Event', ["codeweek_for_all_participation_code" => "cw19-reporting", "status" => "APPROVED", "creator_id" => 1, "reported_at" => Carbon::now()], 3);
+        create('App\Event', ["codeweek_for_all_participation_code" => "cw19-reporting", "status" => "APPROVED", "creator_id" => 2], 7);
+
+        $this->withoutExceptionHandling();
+
+        $this->get(route('codeweek4all_details', ['code' => 'cw19-reporting']))
+            ->assertSee('30%');
+
     }
 
 

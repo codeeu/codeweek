@@ -16,6 +16,8 @@ class Codeweek4AllController extends Controller
         $countries = Codeweek4AllHelper::getCountriesByCodeweek4All($code);
 
 
+
+
       /*  $events = Event::where([
             ['codeweek_for_all_participation_code', '=', $code],
             ['status', 'like', 'APPROVED'],
