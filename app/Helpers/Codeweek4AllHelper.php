@@ -76,7 +76,7 @@ class Codeweek4AllHelper
         }
 
         return Event::
-        select(DB::raw('sum(participants_count) as total_participants, count(DISTINCT creator_id) as total_creators, count(DISTINCT country_iso) as total_countries,  count(id) as total_activities, codeweek_for_all_participation_code'))
+        select(DB::raw('FORMAT(((100.0*count(reported_at))/count(*)),2) as reporting_percentage, sum(participants_count) as total_participants, count(DISTINCT creator_id) as total_creators, count(DISTINCT country_iso) as total_countries,  count(id) as total_activities, codeweek_for_all_participation_code'))
             ->where([
                 ['status', 'like', 'APPROVED']
             ])
@@ -94,8 +94,8 @@ class Codeweek4AllHelper
 
         $result = Event::
 
-            select(DB::raw('countries.name , count(events.id) as event_per_country'))
-        ->join('countries', 'events.country_iso', '=', 'countries.iso')
+        select(DB::raw('countries.name , count(events.id) as event_per_country'))
+            ->join('countries', 'events.country_iso', '=', 'countries.iso')
             ->where([
                 ['status', 'like', 'APPROVED'],
                 ['codeweek_for_all_participation_code', 'like', $code],
@@ -103,8 +103,6 @@ class Codeweek4AllHelper
             ->whereYear('end_date', '=', $edition)
             ->groupBy('country_iso')
             ->get();
-
-
 
 
         return $result;
