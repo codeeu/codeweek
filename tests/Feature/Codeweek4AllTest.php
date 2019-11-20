@@ -84,5 +84,20 @@ class Codeweek4AllTest extends TestCase
 
     }
 
+    /** @test */
+    public function dispaly_initiator()
+    {
+        $user1 = create('App\User', ['email' => 'foo@bar.com']);
+
+        create('App\Event', ["codeweek_for_all_participation_code" => "cw19-initiator", "status" => "APPROVED", "creator_id" => 2, "created_at" => Carbon::now()]);
+        create('App\Event', ["codeweek_for_all_participation_code" => "cw19-initiator", "status" => "APPROVED", "creator_id" => $user1->id, "created_at" => Carbon::now()->subDays(10)]);
+
+        $this->withoutExceptionHandling();
+
+        $this->get(route('codeweek4all_details', ['code' => 'cw19-initiator']))
+            ->assertSee('foo@bar.com');
+
+    }
+
 
 }

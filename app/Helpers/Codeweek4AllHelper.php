@@ -108,5 +108,24 @@ class Codeweek4AllHelper
         return $result;
     }
 
+    public static function getInitiatorByCodeweek4All($code)
+    {
+        $result = Event::
+
+        select(DB::raw('users.email'))
+            ->join('users', 'events.creator_id', '=', 'users.id')
+            ->where([
+                ['status', 'like', 'APPROVED'],
+                ['codeweek_for_all_participation_code', 'like', $code],
+            ])
+            ->orderBy('events.created_at', 'asc')
+            ->first()
+            ->email;
+
+
+        return $result;
+
+    }
+
 
 }
