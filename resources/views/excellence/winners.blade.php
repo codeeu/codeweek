@@ -16,9 +16,6 @@
         </section>
 
 
-
-
-
         <table class="codeweek-table">
             <thead>
             <tr>
@@ -28,6 +25,7 @@
                 <th><a href="?countries={{request()->input('countries')==-1?1:-1}}"># Countries</a></th>
                 <th><a href="?activities={{request()->input('activities')==-1?1:-1}}"># Activities</a></th>
                 <th><a href="?super={{request()->input('super')==-1?1:-1}}">Super winner</a></th>
+                <th><a href="?reporting={{request()->input('reporting')==-1?1:-1}}">Reporting %</a></th>
             </tr>
             </thead>
             <tbody>
@@ -35,12 +33,15 @@
             @if(!$details->isEmpty())
                 @foreach($details as $detail)
                     <tr>
-                        <td>{{$detail->codeweek_for_all_participation_code}}</td>
+                        <td>
+                            <a href="{{route('codeweek4all_details',['code'=>$detail->codeweek_for_all_participation_code])}}">{{$detail->codeweek_for_all_participation_code}}</a>
+                        </td>
                         <td>{{$detail->total_participants}}</td>
                         <td>{{$detail->total_creators}}</td>
                         <td>{{$detail->total_countries}}</td>
                         <td>{{$detail->total_activities}}</td>
                         <td>{{$detail->super_winner}}</td>
+                        <td>{{number_format($detail->reporting_percentage,2)}}%</td>
                     </tr>
 
                 @endforeach
@@ -55,8 +56,6 @@
                 Clear Cache
             </button>
         </form>
-
-
 
 
     </section>
