@@ -20,7 +20,7 @@ class ExcellenceWinnersHelper
             Log::info('query without cache');
             $edition = !is_null($edition) ? $edition : Carbon::now()->year;
             $codes = self::getWinnerCodes($edition);
-            $details =  self::getDetailsByCodeweek4All($codes->toArray());
+            $details = Codeweek4AllHelper::getDetailsByCodeweek4All($codes->toArray());
             $full = self::tagSuperWinners($details);
             return $full;
 
@@ -112,19 +112,6 @@ class ExcellenceWinnersHelper
         return $result;
 
 
-    }
-
-    public static function getDetailsByCodeweek4All(array $toArray)
-    {
-
-        return Event::
-        select(DB::raw('sum(participants_count) as total_participants, count(DISTINCT creator_id) as total_creators, count(DISTINCT country_iso) as total_countries,  count(id) as total_activities, codeweek_for_all_participation_code'))
-            ->where([
-                ['status', 'like', 'APPROVED']
-            ])
-            ->whereIn('codeweek_for_all_participation_code', $toArray)
-            ->groupBy('codeweek_for_all_participation_code')
-            ->get();
     }
 
     public static function tagSuperWinners($details)
