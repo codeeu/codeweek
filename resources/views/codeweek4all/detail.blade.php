@@ -18,6 +18,7 @@
                 @endforeach
             )</span>
             <span>Reported percentage: {{number_format($result['reporting_percentage'],2)}}%</span>
+            <span>Initiated by: {{$initiator}}</span>
         </section>
 
 
