@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use App\CertificateExcellence;
 use App\Excellence;
+use App\Helpers\Codeweek4AllHelper;
 use App\Helpers\ExcellenceWinnersHelper;
 use App\School;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -167,7 +168,7 @@ class ExcellenceWinnersTest extends TestCase
 
         $codes = ExcellenceWinnersHelper::getWinnerCodes();
 
-        $details = ExcellenceWinnersHelper::getDetailsByCodeweek4All($codes->toArray());
+        $details = Codeweek4AllHelper::getDetailsByCodeweek4All($codes->toArray());
 
         $this->assertTrue($details->contains(function ($line) {
             return($line->codeweek_for_all_participation_code == "cw19-10-3-countries");
@@ -182,7 +183,7 @@ class ExcellenceWinnersTest extends TestCase
 
         $codes = ExcellenceWinnersHelper::getWinnerCodes();
 
-        $details = ExcellenceWinnersHelper::getDetailsByCodeweek4All($codes->toArray());
+        $details = Codeweek4AllHelper::getDetailsByCodeweek4All($codes->toArray());
 
         $full = ExcellenceWinnersHelper::tagSuperWinners($details);
 

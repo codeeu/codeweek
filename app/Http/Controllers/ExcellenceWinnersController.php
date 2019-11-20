@@ -74,6 +74,14 @@ class ExcellenceWinnersController extends Controller
             }
         }
 
+        if ($request->input('reporting')) {
+            if ($request->input('reporting') == -1) {
+                $details = $details->sortByDesc('reporting_percentage');
+            } else {
+                $details = $details->sortBy('reporting_percentage');
+            }
+        }
+
 
 
         return view('excellence.winners', compact(['edition', 'details']));
