@@ -25,6 +25,7 @@
                 <th><a href="?countries={{request()->input('countries')==-1?1:-1}}"># Countries</a></th>
                 <th><a href="?activities={{request()->input('activities')==-1?1:-1}}"># Activities</a></th>
                 <th><a href="?super={{request()->input('super')==-1?1:-1}}">Super winner</a></th>
+                <th><a href="?reporting={{request()->input('reporting')==-1?1:-1}}">Reporting %</a></th>
             </tr>
             </thead>
             <tbody>
@@ -40,6 +41,7 @@
                         <td>{{$detail->total_countries}}</td>
                         <td>{{$detail->total_activities}}</td>
                         <td>{{$detail->super_winner}}</td>
+                        <td>{{number_format($detail->reporting_percentage,2)}}%</td>
                     </tr>
 
                 @endforeach

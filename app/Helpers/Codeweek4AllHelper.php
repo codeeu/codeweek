@@ -76,7 +76,7 @@ class Codeweek4AllHelper
         }
 
         return Event::
-        select(DB::raw('FORMAT(((100.0*count(reported_at))/count(*)),2) as reporting_percentage, sum(participants_count) as total_participants, count(DISTINCT creator_id) as total_creators, count(DISTINCT country_iso) as total_countries,  count(id) as total_activities, codeweek_for_all_participation_code'))
+        select(DB::raw('codeweek_for_all_participation_code, sum(participants_count) as total_participants, count(DISTINCT creator_id) as total_creators, count(DISTINCT country_iso) as total_countries,  count(id) as total_activities, ((100.0*count(reported_at))/count(*)) as reporting_percentage'))
             ->where([
                 ['status', 'like', 'APPROVED']
             ])
