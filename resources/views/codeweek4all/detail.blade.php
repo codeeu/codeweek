@@ -17,7 +17,7 @@
                     {{$country['name']}} [{{$country['event_per_country']}}]@if(!$loop->last) - @endif
                 @endforeach
             )</span>
-            <span>Reporting: {{$result['reporting_percentage']}}%</span>
+            <span>Reported percentage: {{number_format($result['reporting_percentage'],2)}}%</span>
         </section>
 
 

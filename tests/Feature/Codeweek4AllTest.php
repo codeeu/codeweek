@@ -80,7 +80,7 @@ class Codeweek4AllTest extends TestCase
         $this->withoutExceptionHandling();
 
         $this->get(route('codeweek4all_details', ['code' => 'cw19-reporting']))
-            ->assertSee('30%');
+            ->assertSee('30.00%');
 
     }
 
