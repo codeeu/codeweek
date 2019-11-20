@@ -14,6 +14,7 @@ class Codeweek4AllController extends Controller
 
         $result = Codeweek4AllHelper::getDetailsByCodeweek4All([$code])->first();
         $countries = Codeweek4AllHelper::getCountriesByCodeweek4All($code);
+        $initiator = Codeweek4AllHelper::getInitiatorByCodeweek4All([$code]);
 
 
 
@@ -39,6 +40,6 @@ class Codeweek4AllController extends Controller
 
 
 
-        return view('codeweek4all.detail', compact(['result','countries']));
+        return view('codeweek4all.detail', compact(['result','countries','initiator']));
     }
 }
