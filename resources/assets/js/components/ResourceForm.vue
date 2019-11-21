@@ -36,7 +36,7 @@
                         <pre class="language-json"><code>{{ selectedLevels  }}</code></pre>
                     </multiselect>
 
-                    <multiselect v-show="section === 'learn'" v-model="selectedProgrammingLanguages"
+                    <multiselect v-model="selectedProgrammingLanguages"
                                  :options="programmingLanguages"
                                  :multiple="true"
                                  :close-on-select="false"
