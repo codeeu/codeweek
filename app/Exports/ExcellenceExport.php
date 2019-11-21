@@ -22,12 +22,14 @@ class ExcellenceExport implements FromCollection, WithHeadings
     public function headings(): array
     {
         return [
+            'Codeweek4All Code',
             'Participants Count',
             'Teachers Count',
             'Countries Count',
             'Activities Count',
-            'Codeweek4All Code',
+            'Reporting Percentage',
             'Super Winner'
+
         ];
     }
 }
