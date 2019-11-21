@@ -210,9 +210,10 @@
 
                 Third-party providers on Codeweek
                 <ul>
-                    <li><a href="https://www.youtube.com/t/terms">YouTube</a></li>
-                    <li><a href="https://twitter.com/en/tos?wcmmode=disabled#intlTerms">Twitter</a></li>
                     <li><a href="https://www.facebook.com/legal/terms">Facebook</a></li>
+                    <li><a href="https://twitter.com/en/tos?wcmmode=disabled#intlTerms">Twitter</a></li>
+                    <li><a href="https://www.tumblr.com/policy/en/terms-of-service">Tumblr</a></li>
+                    <li><a href="https://www.youtube.com/t/terms">YouTube</a></li>
                 </ul>
 
                 These third-party services are outside of the control of the Codeweek Website. Providers may, at any time,
