@@ -11,7 +11,7 @@ class ResourceProgrammingLanguage extends Model
     protected $attributes = [
         'active' => true,
         'learn' => true,
-        'teach' => false,
+        'teach' => true,
     ];
 
     public function items()
