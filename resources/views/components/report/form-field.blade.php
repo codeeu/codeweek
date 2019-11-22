@@ -10,7 +10,7 @@
                value="{{old($field_name, $event[$field_name])}}">
     </div>
     <div class="errors">
-        @component('components.validation-errors', ['field'=>'$field_name'])@endcomponent
+        @component('components.validation-errors', ['field'=>$field_name])@endcomponent
     </div>
     <div class="info">
         @lang('report.'.$help)
