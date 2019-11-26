@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => 'În 2019, Săptămâna UE a programării va avea loc între 5 și 20 octombrie.',
+    'when-title' => 'În 2020, Săptămâna UE a programării va avea loc între 10 și 25 octombrie.',
     'when-text' => '<p>Săptămâna UE a programării este o mișcare de bază care celebrează creativitatea, rezolvarea de probleme și colaborarea prin programare și alte activități tehnologice. Ideea este de a face programarea mai vizibilă, de a le arăta tinerilor, adulților și vârstnicilor cum își pot aduce ideile la viață prin programare, de a demistifica aceste aptitudini și de a aduce oamenii motivați împreună, pentru a învăța.</p>',
     'codeweek_in_numbers-title' => 'Săptămâna programării în cifre',
     'codeweek_in_numbers-text' => '<p>În 2018, 2,7 milioane de oameni din peste 70 de țări din întreaga lume au luat parte la UE Code Week. În plus, 2,3 milioane de tineri au fost implicați în <a href="http://africacodeweek.org/">Africa Code Week</a>, care este o inițiativă derivată, condusă de SAP și organizații nonprofit.</p>
