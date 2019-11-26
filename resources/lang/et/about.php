@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => '2019. aasta ELi programmeerimisnädal Code Week toimub ajavahemikus 5. kuni 20. oktoober.',
+    'when-title' => '2020. aasta ELi programmeerimisnädal Code Week toimub ajavahemikus 10. kuni 25. oktoober.',
     'when-text' => '<p>ELi programmeerimisnädal Code Week on rohujuuretasandil toimuv liikumine, millega tähistatakse loomingulisust, probleemide lahendamist ja koostööd nii programmeerimises kui ka teistes tehnoloogilistes tegevustes. Selle eesmärk on muuta programmeerimine nähtavamaks ning tutvustada noortele ja vanadele, kuidas koodikirjutamisega oma ideid ellu viia, hajutada programmeerimisega seotud saladusi ning motiveerida inimesi õppima.</p>',
     'codeweek_in_numbers-title' => 'Programmeerimisnädal Code Week numbrites',
     'codeweek_in_numbers-text' => ' <p>2018. aastal võttis ELi programmeerimisnädalast Code Week osa 2,7 miljonit inimest ja rohkem kui 70 riiki. Lisaks sellele oli 2,3 miljonit noort seotud ELi algatusest inspiratsiooni saanud <a href="http://africacodeweek.org/">Aafrika programmeerimisnädalaga Code Week</a>, mille korraldajateks on SAP ja mittetulundusühingud.</p>
