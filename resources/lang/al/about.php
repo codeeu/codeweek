@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title'=> 'Për vitin 2019, EU Code Week do të zhvillohet mes datave 5 dhe 20 tetor.',
+    'when-title'=> 'Për vitin 2020, EU Code Week do të zhvillohet mes datave 10 dhe 25 tetor.',
     'when-text'=>'<p>EU Code Week është një lëvizje në terren që feston aftësinë
                         krijuese, zgjidhjen e problemeve dhe bashkëpunimin përmes programimit dhe aktiviteteve
                         të tjera teknologjike. Ideja është që programimi të bëhet më

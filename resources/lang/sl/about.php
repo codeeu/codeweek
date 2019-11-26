@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => 'Letošnji evropski teden programiranja bo potekal od 5. do 20. oktobra 2019.',
+    'when-title' => 'Letošnji evropski teden programiranja bo potekal od 10. do 25. oktobra 2020.',
     'when-text' => '<p>Evropski teden programiranja je množično gibanje, ki slavi ustvarjalnost, reševanje težav in sodelovanje prek programiranja in drugih tehnoloških dejavnosti. Njegov namen je povečati prepoznavnost programiranja ter mladim, odraslim in starejšim pokazati, kako uresničiti zamisli s programiranjem, pojasniti ta znanja in spretnosti ter združiti motivirane ljudi v učenju.</p>',
     'codeweek_in_numbers-title' => 'Teden programiranja v številkah',
     'codeweek_in_numbers-text' => '<p>Evropski teden programiranja je leta 2018 privabil k sodelovanju 2,7 milijona ljudi iz več kot 70 držav po vsem svetu. Dodatnih 2,3 milijona mladih je sodelovalo v <a href="http://africacodeweek.org/">afriškem tednu programiranja</a>, izpeljani pobudi, ki jo vodijo družba SAP in neprofitne organizacije.</p>

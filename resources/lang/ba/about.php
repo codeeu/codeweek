@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title'=> 'Tokom 2019, Sedmica kodiranja EU će se odvijati od 5. do 20. oktobra.',
+    'when-title'=> 'Tokom 2020, Sedmica kodiranja EU će se odvijati od 10. do 25. oktobra.',
     'when-text'=>'<p>Sedmica kodirnja EU je pokret širokih masa u kom se slavi kreativnost, rješavanje problema i saradnja putem programiranja i drugih tehnoloških aktivnosti. Zamisao je da se programiranje načini vidljivijim, da se mladima, odraslima i starijima pokaže kako kodiranjem mogu svoje ideje sprovesti u realnost, da se te vještine demistificiraju i da se okupe oni koji su motivirani za učenje.</p>',
     'codeweek_in_numbers-title'=>'Sedmica kodiranja u ciframa',
     'codeweek_in_numbers-text'=>'<p>U Sedmici kodiranja EU 2018. učestvovalo je 2,7 miliona ljudi iz preko 70 zemalja širom svijeta. Dodatnih 2,3 miliona mladih ljudi bilo je angažirano u <a href="http://africacodeweek.org/">Sedmici kodiranja u Africi</a>, koja predstavlja srodnu inicijativu koju vode SAP i neprofitne organizacije.</p>

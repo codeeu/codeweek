@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => 'Evropska nedjelja programiranja održaće se od 5. do 20. oktobra 2019. godine.',
+    'when-title' => 'Evropska nedjelja programiranja održaće se od 10. do 25. oktobra 2020. godine.',
     'when-text' => '<p>Evropska nedjelja programiranja je grass-roots (lokalni društveni projekat) projekat koji promoviše kreativnost, rješavanje problema i saradnju kroz programiranje i druge tehnološke aktivnosti. Ideja je da se programiranje učini vidljivijim, da se mladima, odraslima i starijima pokaže kako svoje ideje mogu pretočiti u stvarnost, da im se same vještine približe, te da se motivisani pojedinci okupe kako bi učili.</p>',
     'codeweek_in_numbers-title' => '>Nedjelja programiranja u brojkama',
     'codeweek_in_numbers-text' => '<p>Tokom 2018. godine, 2,7 miliona ljudi u više od 70 zemalja širom svijeta učestvovalo je u Evropskoj nedjelji programiranja. Još 2,3 miliona mladih učestvovalo je u <a href="http://africacodeweek.org/">Afričkoj nedjelji programiranja</a> , što je spin-off inicijativa koju vode SAP i neprofitne organizacije.</p>
