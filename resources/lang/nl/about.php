@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => 'De EU-programmeerweek van 2019 vindt plaats van 5 t/m 20 oktober.',
+    'when-title' => 'De EU-programmeerweek van 2020 vindt plaats van 10 t/m 25 oktober.',
     'when-text' => '<p>De EU-programmeerweek is een burgerinitiatief waarin creativiteit, probleemoplossing en samenwerking worden gestimuleerd door middel van programmeren en andere technische activiteiten. Het idee erachter is om programmeren zichtbaarder te maken, om jongeren, volwassenen en ouderen te laten zien hoe je ideeën met programmeercode tot leven kunt brengen, om deze vaardigheden te ontsluieren en om gemotiveerde mensen bij elkaar te brengen om te leren.</p>',
     'codeweek_in_numbers-title' => 'De programmeerweek in cijfers',
     'codeweek_in_numbers-text' => '<p>In 2018 deden 2,7 miljoen mensen in meer dan 70 landen over de hele wereld mee aan de EU-programmeerweek. Nog eens 2,3 miljoen jongeren waren betrokken bij de <a href="http://africacodeweek.org/">Africa Code Week</a>, een door SAP en non-profitorganisaties georganiseerde spin-off.</p>

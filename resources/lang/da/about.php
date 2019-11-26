@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title'=> 'EU’s kodeuge 2019 finder sted mellem den 5. og 20. oktober.',
+    'when-title'=> 'EU’s kodeuge 2020 finder sted mellem den 10. og 25. oktober.',
     'when-text'=>'<p>EU’s kodeuge er en græsrodsbevægelse, der fejrer kreativitet, problemløsning og samarbejde gennem programmering og andre tekniske aktiviteter. Idéen er at gøre programmering mere synligt for at vise unge, voksne og ældre, hvordan man fører sine idéer ud i livet med kode, at afmystificere disse færdigheder og at samle motiverede mennesker i et læringsmiljø.</p>',
     'codeweek_in_numbers-title'=>'Kodeugen i tal',
     'codeweek_in_numbers-text'=>'<p>I 2018 deltog 2,7 millioner mennesker i over 70 lande på tværs af kloden i EU’s kodeuge. Desuden deltog 2,3 millioner unge i <a href="http://africacodeweek.org/">Afrikas kodeuge</a>, som er et spin-off-initiativ, der drives af SAP og nonprofitorganisationer.</p>

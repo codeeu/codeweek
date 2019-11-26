@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => '2019 AB Kod Haftası <strong>5 ile 20 Ekim</strong> tarihleri arasında gerçekleşecek.',
+    'when-title' => '2020 AB Kod Haftası <strong>10 ile 25 Ekim</strong> tarihleri arasında gerçekleşecek.',
     'when-text' => '<p>AB Kod Haftası, programlama ve diğer teknolojik aktiviteler yoluyla yaratıcılığı, problem çözmeyi ve iş birliğini teşvik eden bir taban hareketidir. Buradaki amaç, programlamayı daha görünür kılmak, gençlere, yetişkinlere ve yaşlılara fikirleri kodlamayla nasıl hayata geçirdiğinizi göstermek, bu becerileri ortaya çıkarmak ve motive olmuş kişileri öğrenme amacıyla bir araya getirmektir.</p>',
     'codeweek_in_numbers-title' => 'Rakamlarla Kod Haftası',
     'codeweek_in_numbers-text' => '<p>2018 yılında, dünya genelinde 70\'den fazla ülkede 2,7 milyon insan AB Kod Haftasına katıldı. SAP ve kâr amacı gütmeyen kuruluşlar tarafından yürütülen bir yan girişim olan <a href="http://africacodeweek.org/">Afrika Kod Haftasına</a> 2,3 milyon genç katıldı.</p>
