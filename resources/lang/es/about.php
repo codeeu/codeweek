@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => 'La edición de 2019 de la Semana de la Programación de la Unión Europea (UE) se celebrará entre el 5 y el 20 de octubre.',
+    'when-title' => 'La edición de 2020 de la Semana de la Programación de la Unión Europea (UE) se celebrará entre el 10 y el 25 de octubre.',
     'when-text' => '<p>La Semana de la Programación de la UE es un movimiento de base que promueve la creatividad, la resolución de problemas y la colaboración a través de la programación y otras actividades tecnológicas. La idea es impulsar la visibilidad de la programación y enseñar a jóvenes, adultos y personas mayores a hacer realidad sus ideas mediante la programación, acercar estas capacidades al gran público y reunir a personas motivadas para que aprendan juntas.</p>',
     'codeweek_in_numbers-title' => 'La Semana de la Programación en cifras',
     'codeweek_in_numbers-text' => '<p>En 2018, 2,7 millones de personas de más de setenta países de todo el mundo participaron en la Semana de la Programación de la UE. Otros 2,3 millones de jóvenes participaron en la <a href="http://africacodeweek.org/">Semana de la Programación de África</a>, que es una iniciativa semilla organizada por SAP y entidades sin ánimo de lucro.</p>
