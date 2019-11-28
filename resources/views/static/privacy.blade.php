@@ -68,7 +68,7 @@
 
             <p>Access to your personal data is provided to the Commission staff responsible for carrying out this processing operation and to authorised staff according to the “need to know” principle. Such staff abide by statutory, and when required, additional confidentiality agreements.</p>
 
-            <p>Concretely, all personal data provided by you can be accessed by the websites’ administrators (Commission staff), as well as by other Commission staff on a need to know basis.</p>
+            <p>Concretely, all personal data provided by you can be accessed by the websites’ administrators (Commission staff), as well as by other Commission staff on a need to know basis. . Furthermore, you personal information and event information will be shared with members of the EU Code Week Ambassadors and Educational coordinators networks for local activities organisation or follow up. </p>
 
             <p>For the purpose of increasing the contact points’ visibility, your personal data are published without any access limitation on the public website: https://codeweek.eu.</p>
 
