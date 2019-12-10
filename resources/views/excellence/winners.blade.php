@@ -4,7 +4,9 @@
     <section id="codeweek-participation-report-page" class="codeweek-page">
 
         <section class="codeweek-content-header" style="display: flex; justify-content: space-between;">
+
             <h1>Excellence Winners for {{$edition}}</h1>
+
 
             <form action="{{route('excellence_excel')}}" method="post">
                 {{ csrf_field() }}
@@ -14,6 +16,8 @@
                 </button>
             </form>
         </section>
+        <section class="codeweek-content-header" style="display: flex; justify-content: space-between;">
+            <h4>{{$total_reported}} events reported out of {{$total_events}} ({{number_format($percentage_reported,2)}}%)</h4></section>
 
 
         <table class="codeweek-table">
