@@ -48,6 +48,7 @@ Route::get('/beambassador', 'StaticPageController@static')->name('beambassador')
 Route::get('/about', 'StaticPageController@static')->name('about');
 Route::get('/partners', 'StaticPageController@static')->name('sponsors');
 Route::get('/codeweek4all', 'StaticPageController@static')->name('codeweek4all');
+
 //Static training pages
 Route::get('/training', 'StaticPageController@static')->name('training.index');
 Route::get('/training/coding-without-computers', 'StaticPageController@static')->name('training.module-1');
@@ -154,6 +155,8 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
 });
 
 Route::get('/codeweek4all/{code}/detail', 'Codeweek4AllController@detail')->name('codeweek4all_details');
+
+Route::get('/hackathons', 'HackathonsController@index')->name('hackathons');
 
 
 Route::get('/profile', function () {
