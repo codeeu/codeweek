@@ -18,4 +18,5 @@ class CertificateController extends Controller
 
         return view ('certificates', compact(['reported_events','excellence','participation']));
     }
+
 }
