@@ -34,13 +34,18 @@ class Certificate
         $this->id = $event->id . '-' . str_random(10);
     }
 
+
+
     public function generate()
     {
 
         $this->customize_and_save_latex();
         $this->run_pdf_creation();
         $s3path = $this->copy_to_s3();
-        $this->update_event($s3path);
+        if ($this->event->id !== 0){
+            $this->update_event($s3path);
+        }
+
         $this->clean_temp_files();
 
 
