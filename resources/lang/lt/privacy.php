@@ -2,85 +2,21 @@
 
 return [
 
-    'title' => '',
-    '1-intro' => [
-       'title' => '',
-       'items' => [
-           '1' => '',
-           '2' => '',
-           '3' => ''
-       ]
-    ],
-    '2-why' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => ''
-        ]
-    ],
-    '3-legal_process' => [
-        'title' => '',
-        'items' => [
-            '1' => ''
-        ]
-    ],
-    '4-collect_data' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => '',
-            '3' => '',
-            '4' => ''
-        ]
-    ],
-    '5-how_long' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => ''
-        ]
-    ],
-    '6-protect_data' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => '',
-            '3' => ''
-        ]
-    ],
-    '7-access_data' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => '',
-            '3' => '',
-            '4' => '',
-            '5' => ''
-        ]
-    ],
-    '8-rights' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => '',
-            '3' => ''
-        ]
-    ],
-    '9-contact' => [
-        'title' => '',
+    'title' => 'JŪSŲ ASMENS DUOMENŲ APSAUGA','1-intro'=>['title' => '1. Įvadas','items' => ['1' => '<p>Europos Komisija (toliau&nbsp;&ndash; Komisija) yra įsipareigojusi apsaugoti jūsų asmens duomenis ir gerbti jūsų privatumą. Asmens duomenis Komisija renka ir toliau tvarko pagal 2018&nbsp;m. spalio 23&nbsp;d. Europos Parlamento ir Tarybos reglamentą (ES)&nbsp;2018/1725 dėl fizinių asmenų apsaugos Sąjungos institucijoms, organams, tarnyboms ir agentūroms tvarkant asmens duomenis ir dėl laisvo tokių duomenų judėjimo (kuriuo panaikinamas Reglamentas (EB)&nbsp;Nr.&nbsp;45/2001).</p>','2' => '<p>&Scaron;iame privatumo parei&scaron;kime paai&scaron;kinta, kodėl renkame ir tvarkome jūsų asmens duomenis, kaip juos renkame, tvarkome, kaip užtikriname visų jūsų asmens duomenų apsaugą, kaip &scaron;i informacija naudojama ir kokiomis galite pasinaudoti su savo asmens duomenimis susijusiomis teisėmis (teise susipažinti, i&scaron;taisyti, užblokuoti ir kt.). Jame taip pat nurodyti atsakingo duomenų valdytojo, su kuriuo susisiekę galite pasinaudoti savo teisėmis, duomenų apsaugos pareigūno ir Europos duomenų apsaugos priežiūros pareigūno kontaktiniai duomenys.</p>','3' => '<p>&Scaron;iame privatumo parei&scaron;kime apra&scaron;ytas asmenų, kurie veikia kaip ES programavimo savaitės veiklos kontaktiniai asmenys (programavimo savaitės ambasadoriai, &scaron;vietimo ministerijos koordinatoriai, vadovaujantys mokytojai ir veiklos bei renginių organizatoriai) asmens duomenų rinkimas ir skelbimas vie&scaron;ai prieinamoje svetainėje &bdquo;codeweek.eu&ldquo;.</p>',]],'2-why'=>['title' => '2. Kodėl tvarkome jūsų duomenis?','items' => ['1' => '<p>Europos Komisija renka ir skelbia jūsų asmens duomenis, kad suinteresuotiesiems subjektams arba susidomėjusiems piliečiams būtų lengviau nustatyti kontaktinius asmenis. Kaip kontaktinius asmenis nurodžius tikrus asmenis, galima geriausiai ir veiksmingiausiai užtikrinti, kad susidomėję žmonės galėtų susisiekti su Komisijos tarnybomis.</p>','2' => '<p>Jūsų asmens duomenys nebus naudojami jokiam automatizuotam sprendimų priėmimui, įskaitant profiliavimą.</p>',]],'3-legal_process'=>['title' => '3. Kokiu teisiniu pagrindu (kokiais teisiniais pagrindais) tvarkome jūsų asmens duomenis?','items' => ['1' => '<p>Asmens duomenų tvarkymo operacijos kontaktinių asmenų skelbimo tikslais yra teisėtos pagal Reglamento (ES)&nbsp;2018/1725 5 straipsnio 1&nbsp;dalies d&nbsp;punktą, nes davėte sutikimą tvarkyti jūsų asmens duomenis, pateikdami internetinę formą arba sutikdami su tuo, kad naudotume jūsų el.&nbsp;pa&scaron;tą ir naudotojo vardą, jei prisijungėte per socialinį tinklą.</p>',]],'4-collect_data'=>['title' => '4. Kokius asmens duomenis renkame ir toliau tvarkome?','items' => ['1' => '<p>Renkami asmens duomenys yra informacija, pagal kurią lengviau nustatyti jus, kaip kontaktinį asmenį, ir kuri didina jūsų matomumą visuomenei, t.&nbsp;y. titulas, pavardė, vardas, pareigos, darbiniai pa&scaron;to ir el.&nbsp;pa&scaron;to adresai, telefono numeris, nuotrauka, socialinės žiniasklaidos paskyra, biografija.</p>','2' => '<p>&Scaron;iuos asmens duomenis teikiate savanori&scaron;kai, užpildydami pra&scaron;ymo formą.</p>','3' => '<p>Pateikti tam tikrus asmens duomenis būtina, kad svetainėje &bdquo;codeweek.eu&ldquo; būtų galima paskelbti veiklą ir (arba) kontaktinę informaciją. Jums nepateikus savo asmens duomenų, jūsų veikla nebūtų skelbiama ir (arba) negalėtume dalyvauti pirmiau nurodytuose tinkluose.</p>','4' => '<p>Visus kitus asmens duomenis teikiate savanori&scaron;kai.</p>',]],'5-how_long'=>['title' => '5. Kiek laiko saugome jūsų asmens duomenis?','items' => ['1' => '<p>Komisija jūsų asmens duomenis saugo tik tol, kol jų reikia 2&nbsp;punkte apra&scaron;ytam rinkimo ir tolesnio tvarkymo tikslui įgyvendinti, t.&nbsp;y. tol, kol veikiate kaip kontaktinis asmuo.</p>','2' => '<p>Jūsų asmens duomenys i&scaron; vie&scaron;ai prieinamos svetainės bus pa&scaron;alinti, kai nustosite veikti kaip kontaktinis asmuo, nebent davėte sutikimą įtraukti jus į duomenų bazę būsimai veiklai.</p>',]],'6-protect_data'=>['title' => '6. Kaip saugome ir apsaugome jūsų asmens duomenis?','items' => ['1' => '<p>Visi asmens duomenys elektroniniu formatu (el.&nbsp;lai&scaron;kai, dokumentai, i&scaron;siųsti duomenų paketai ir pan.) saugomi Europos Komisijos arba jos rangovų serveriuose. Visos tvarkymo operacijos atliekamos pagal 2017&nbsp;m. sausio 10&nbsp;d. Komisijos sprendimą (ES, Euratomas)&nbsp;2017/46 dėl Europos Komisijos ry&scaron;ių ir informacinių sistemų saugumo.</p>','2' => '<p>Komisijos rangovai privalo laikytis specialios sutartinės sąlygos, kuri taikoma bet kokioms Komisijos vardu atliekamoms jūsų duomenų tvarkymo operacijoms, ir konfidencialumo įsipareigojimų, nustatytų į ES valstybių narių teisę perkeltame Bendrajame duomenų apsaugos reglamente (BDAR, Reglamentas (ES)&nbsp;2016/679).</p>','3' => '<p>Siekdama apsaugoti jūsų asmens duomenis, Komisija taiko įvairias technines ir organizacines priemones. Technines priemones sudaro tinkami veiksmai, kuriais siekiama užtikrinti saugumą internete, apsisaugoti nuo duomenų praradimo rizikos, duomenų pakeitimo arba neteisėtos prieigos, atsižvelgiant į riziką, kylančią tvarkant duomenis, ir tvarkomų asmens duomenų pobūdį. Organizacines priemones sudaro prieigos prie asmens duomenų apribojimas, kad su &scaron;iais duomenimis galėtų susipažinti tik įgaliotieji asmenys, kuriems pagrįstai reikia juos žinoti atliekant &scaron;ią tvarkymo operaciją.</p>',]],'7-access_data'=>['title' => '7. Kas gali susipažinti su jūsų asmens duomenimis ir kam jie atskleidžiami?','items' => ['1' => '<p>Prieiga prie jūsų asmens duomenų suteikiama už &scaron;ios tvarkymo operacijos atlikimą atsakingiems Komisijos darbuotojams ir įgaliotiesiems darbuotojams, vadovaujantis būtinybės žinoti principu. &Scaron;ie darbuotojai privalo laikytis teisės aktais nustatytų ir, jei reikia, papildomų konfidencialumo susitarimų.</p>','2' => '<p>Konkrečiai tariant, su visais jūsų pateiktais asmens duomenimis gali susipažinti svetainių administratoriai (Komisijos darbuotojai) ir kiti Komisijos darbuotojai, remiantis būtinybės žinoti principu.  Be to, jūsų asmens duomenimis ir renginių informacija bus dalijamasi su ES programavimo savaitės ambasadorių ir &scaron;vietimo koordinatorių tinklų nariais, kad būtų galima organizuoti veiklą vietoje arba imtis tolesnių veiksmų.</p>','3' => '<p>Kad kontaktiniai asmenys būtų matomesni, jūsų asmens duomenys be jokių prieigos apribojimų skelbiami vie&scaron;oje svetainėje &bdquo;https://codeweek.eu&ldquo;.</p>','4' => '<p><i>Apie duomenų perdavimą trečiosioms &scaron;alims</i></p>','5' => '<p>Mūsų renkama informacija nebus perduodama jokiai trečiajai &scaron;aliai, i&scaron;skyrus tokiu mastu ir tokiu tikslu, kuriais to i&scaron; mūsų gali būti reikalaujama pagal teisės aktus.</p>',]],'8-rights'=>['title' => '8. Kokios yra jūsų teisės ir kaip jomis galite pasinaudoti?','items' => ['1' => '<p>Pagal Reglamento (ES)&nbsp;2018/1725 III&nbsp;skyrių (14&ndash;25&nbsp;straipsnius) jūs, kaip duomenų subjektas, turite konkrečias teises, ypač teisę susipažinti su savo asmens duomenimis, juos i&scaron;taisyti arba i&scaron;trinti ir teisę apriboti savo asmens duomenų tvarkymą. Tinkamais atvejais taip pat turite teisę nesutikti su tvarkymu arba teisę į duomenų perkeliamumą.</p>','2' => '<p>Jūs sutikote pateikti mums savo asmens duomenis &scaron;iai tvarkymo operacijai, bet savo sutikimą galite bet kada at&scaron;aukti, prane&scaron;dami apie tai duomenų valdytojui. At&scaron;aukimas nedarys poveikio tvarkymo teisėtumui iki tol, kol at&scaron;aukėte sutikimą.</p>','3' => '<p>Savo teisėmis galite pasinaudoti susisiekę su duomenų valdytoju arba konflikto atveju&nbsp;&ndash; su duomenų apsaugos pareigūnu. Prireikus taip pat galite kreiptis į Europos duomenų apsaugos priežiūros pareigūną. Jų kontaktinė informacija pateikta toliau 9&nbsp;skirsnyje.</p>',]], '9-contact' => [
+        'title' => '9. Kontaktinė informacija',
         'data-controller' => [
-            'title'=>'',
-            'text' => '',
-            'address' => '',
-            'email' => ''
+            'title'=>'&ndash; Duomenų valdytojas',
+            'text' => '<p>Jei norėtumėte pasinaudoti savo teisėmis pagal Reglamentą (ES)&nbsp;2018/1725, turite pastabų, klausimų ar abejonių arba norėtumėte pateikti skundą dėl jūsų asmens duomenų rinkimo ir naudojimo, nedvejodami susisiekite su duomenų valdytoju &scaron;iuo adresu: Data Controller</p>',
+            'address' => 'Directorate-General for Communications Networks, Content and Technology Unit F4<br> Building BU25<br> B-1049 Brussels<br> ',
+            'email' => 'El.&nbsp;pa&scaron;tas '
         ],
         'data-protection-officer' => [
-            'title' => '',
-            'text' => ''
+            'title' => '&ndash; Komisijos duomenų apsaugos pareigūnas (DPA)',
+            'text' => '<p>Jūsų asmens duomenų tvarkymo pagal Reglamentą (ES)&nbsp;2018/1725 klausimais galite susisiekti su duomenų apsaugos pareigūnu (<a href="mailto:DATA-PROTECTION-OFFICER@ec.europa.eu">DATA-PROTECTION-OFFICER@ec.europa.eu</a>).</p>'
         ],
         'european-data-protection' => [
-            'title' => '',
-            'text' => ''
+            'title' => '&ndash; Europos duomenų apsaugos priežiūros pareigūnas (EDAPP)',
+            'text' => '<p>Jei manote, kad, duomenų valdytojui tvarkant jūsų asmens duomenis, buvo pažeistos Reglamente (ES)&nbsp;2018/1725 nustatytos jūsų teisės, turite teisę kreiptis į Europos duomenų apsaugos priežiūros pareigūną (t.&nbsp;y. galite pateikti jam skundą) (<a href="mailto:edps@edps.europa.eu">edps@edps.europa.eu</a>).</p>'
         ]
     ]
 ];
