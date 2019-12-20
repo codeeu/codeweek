@@ -2,85 +2,21 @@
 
 return [
 
-    'title' => '',
-    '1-intro' => [
-       'title' => '',
-       'items' => [
-           '1' => '',
-           '2' => '',
-           '3' => ''
-       ]
-    ],
-    '2-why' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => ''
-        ]
-    ],
-    '3-legal_process' => [
-        'title' => '',
-        'items' => [
-            '1' => ''
-        ]
-    ],
-    '4-collect_data' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => '',
-            '3' => '',
-            '4' => ''
-        ]
-    ],
-    '5-how_long' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => ''
-        ]
-    ],
-    '6-protect_data' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => '',
-            '3' => ''
-        ]
-    ],
-    '7-access_data' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => '',
-            '3' => '',
-            '4' => '',
-            '5' => ''
-        ]
-    ],
-    '8-rights' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => '',
-            '3' => ''
-        ]
-    ],
-    '9-contact' => [
-        'title' => '',
+    'title' => 'ZA&Scaron;TITA LIČNIH PODATAKA','1-intro'=>['title' => '1. Uvod','items' => ['1' => '<p>Evropska komisija (u daljem tekstu &bdquo;Komisija&ldquo;) je posvećena za&scaron;titi va&scaron;ih ličnih podataka i po&scaron;tovanju va&scaron;e privatnosti. Komisija prikuplja i dalje obrađuje lične podatke u skladu sa Uredbom (EU) 2018/1725 Evropskog parlamenta i Saveta od 23. oktobra 2018. godine o za&scaron;titi fizičkih lica po pitanju obrade ličnih podataka od strane institucija, tela, kancelarija i agencija Unije i o slobodnom kretanju tih podataka (ukidajući Uredbu (EK) br. 45/2001).</p>','2' => '<p>Ova izjava o privatnosti obja&scaron;njava razlog za prikupljanje i obradu, način na koji prikupljamo, obrađujemo i osiguravamo za&scaron;titu svih navedenih ličnih podataka, kako se te informacije koriste i koja prava možete da primenjujete u vezi sa va&scaron;im ličnim podacima (pravo pristupa, ispravke, blokade itd.). Takođe navodi detalje o kontaktu odgovornog kontrolora podataka sa kojim možete da primenite ova prava, službenika za za&scaron;titu podataka i evropskog supervizora za za&scaron;titu podataka.</p>','3' => '<p>Ova izjava o privatnosti se odnosi na prikupljanje i objavljivanje ličnih podataka na javno dostupnom veb-sajtu Codeweek.eu, lica koja služe kao kontakt osobe za aktivnosti EU Nedelje programiranja (ambasadori Nedelje programiranja, koordinatori Ministarstva obrazovanja, vodeći nastavnici, kao i organizatori aktivnosti i događaja).</p>',]],'2-why'=>['title' => '2. Zbog čega obrađujemo va&scaron;e podatke?','items' => ['1' => '<p>Evropska komisija prikuplja i objavljuje va&scaron;e lične informacije kako bi potpomogla da zainteresovane strane ili građani identifikuju kontakt osobe. Postavljanje stvarnih osoba kao kontakt osoba je najbolji i najefikasniji način da osiguramo da zainteresovana lica mogu da stupe u kontakt sa službama Komisije.</p>','2' => '<p>Va&scaron;i lični podaci se neće koristiti ni za kakvo automatsko odlučivanje, uključujući profilisanje.</p>',]],'3-legal_process'=>['title' => '3. Prema kom pravnom osnovu obrađujemo va&scaron;e lične podatke','items' => ['1' => '<p>Operacije obrade ličnih podataka za objavljivanje ili kontakt osobe su zakonite prema članu 5(1)(d) Uredbe (EU) 2018/1725 jer ste dali svoj pristanak na obradu ličnih podataka putem veb-obrasca ili kada ste se složili da koristimo va&scaron; imejl i korisničko ime ako ste se prijavili pomoću dru&scaron;tvene mreže.</p>',]],'4-collect_data'=>['title' => '4. Koje lične podatke prikupljamo i dalje obrađujemo?','items' => ['1' => '<p>Prikupljeni lični podaci su informacije koje olak&scaron;avaju va&scaron;e identifikovanje kao kontakt osobe i povećavaju va&scaron;u vidljivost za javnost, naime: zvanje, ime, prezime, pozicija, poslovna po&scaron;tanska i imejl adresa, broj telefona, slika, nalog na dru&scaron;tvenim mrežama, biografija.</p>','2' => '<p>Ove podatke ste nam dali dobrovoljno, popunjavajući obrazac prijave.</p>','3' => '<p>Navođenje određenih podataka je obavezno da bi bilo omogućeno objavljivanje aktivnosti i/ili kontakt podataka na veb-sajtu codeweek.eu. Ako ne navedete svoje lične podatke, va&scaron;a aktivnost ne bi bila objavljena i/ili ne biste mogli da učestvujete u gore navedenim mrežama.</p>','4' => '<p>Sve ostale lične podatke navodite dobrovoljno.</p>',]],'5-how_long'=>['title' => '5. Koliko dugo čuvamo va&scaron;e lične podatke?','items' => ['1' => '<p>Komisija čuva va&scaron;e lične podatke samo onoliko koliko je to potrebno da bi ispunila svrhu prikupljanja ili dalje obrade opisane u tački 2, naime dok predstavljate kontakt osobu.</p>','2' => '<p>Va&scaron;i lični podaci biće uklonjeni sa javno dostupnog veb-sajta čim vi&scaron;e ne budete kontakt osoba osim ako ste dali pristanak da budete uključeni u bazu podataka za dalje aktivnosti.</p>',]],'6-protect_data'=>['title' => '6. Kako &scaron;titimo i čuvamo va&scaron;e lične podatke?','items' => ['1' => '<p>Svi lični podaci u elektronskom obliku (imejlovi, dokumenta, baze podataka, otpremljene grupe podataka itd.) se čuvaju ili na serverima Evropske komisije ili njenih ugovarača. Sve operacije obrade se sprovode u skladu sa Odlukom Komisije (EU, Euratom) 2017/46 od 10. januara 2017. godine o bezbednosti komunikacionih i informacionih sistema u Evropskoj komisiji.</p>','2' => '<p>Ugovarači Komisije su obvezani određenom ugovornom odredbom za sve operacije obrade va&scaron;ih podataka u ime Komisije, kao i obavezama o poverljivosti koje proističu iz transpozicije Op&scaron;te uredbe o za&scaron;titi podataka u državama članicama EU (Uredba &bdquo;GDPR&ldquo; (EU) 2016/679).</p>','3' => '<p>Kako bi za&scaron;titila va&scaron;e lične podatke, Komisija je utvrdila izvestan broj tehničkih i organizacionih mera. Tehničke mere obuhvataju odgovarajuće radnje po pitanju bezbednosti na mreži, rizika od gubitka podataka, izmene podataka ili neovla&scaron;ćenog pristupa, uzimajući u obzir rizik koji predstavljaju obrada i priroda ličnih podataka koji se obrađuju. Organizacione mere obuhvataju ograničavanje pristupa ličnim podacima isključivo ovla&scaron;ćenim osobama sa legitimnom potrebom da znaju podatke u svrhe ove obrade.</p>',]],'7-access_data'=>['title' => '7. Ko ima pristup va&scaron;im podacima i kome se oni razotkrivaju?','items' => ['1' => '<p>Pristup va&scaron;im ličnim podacima dat je osoblju Komisije koje je odgovorno za sprovođenje ove obrade i ovla&scaron;ćenom osoblju prema principu &bdquo;neophodno je  da znaju podatke&ldquo;. Na takvo osoblje se odnose zakonski, a kada je to potrebno, dodatni ugovori o poverljivosti.</p>','2' => '<p>Konkretno, svim ličnim podacima koje navedete mogu da pristupe administratori veb-sajta (osoblje Komisije), kao i drugo osoblje Komisije koje ima potrebu da zna podatke. . Osim toga, va&scaron;e lične informacije i informacije o događajima će biti podeljene sa članovima ambasadora EU Nedelje programiranja i mrežama obrazovnih koordinatora za organizaciju lokalnih aktivnosti ili naknadnih radnji.</p>','3' => '<p>U svrhe povećanja vidljivosti kontakt osobe, va&scaron;i lični podaci se objavljuju bez ograničenja pristupa na javnom veb-sajtu: https://codeweek.eu.</p>','4' => '<p><i>Po pitanju prenosa podataka trećim licima</i></p>','5' => '<p>Informacije koje prikupljamo neće biti date nijednom trećem licu, osim u obimu i u svrhe koje mogu biti obavezne prema zakonu.</p>',]],'8-rights'=>['title' => '8. Koja su va&scaron;a prava i kako možete da ih primenite?','items' => ['1' => '<p>Vi imate određena prava kao &bdquo;subjekt podataka&ldquo; prema Poglavlju III (članovi 14-25) Uredbe (EU) 2018/1725, posebno pravo pristupa, ispravke ili brisanja ličnih podataka i pravo da ograničite obradu va&scaron;ih ličnih podataka. Gde je to primenjivo, imate i pravo da se usprotivite obradi ili pravo na prenosivost podataka.</p>','2' => '<p>Pristali ste da nam date svoje lične podatke za trenutnu obradu i možete povući svoju saglasnost u bilo kom trenutku tako &scaron;to ćete obavestiti kontrolera podataka. Povlačenje neće uticati na zakonitost obrade koja je sprovedena pre povlačenja saglasnosti.</p>','3' => '<p>Možete da primenite svoja prava tako &scaron;to ćete se obratiti kontroleru podataka ili u slučaju sukoba, službeniku za za&scaron;titu podataka. Po potrebi, možete se obratiti i evropskom supervizoru za za&scaron;titu podataka. Njegove kontakt informacije su date u okviru Naslova 9 ispod.</p>',]], '9-contact' => [
+        'title' => '9. Kontakt informacije',
         'data-controller' => [
-            'title'=>'',
-            'text' => '',
-            'address' => '',
-            'email' => ''
+            'title'=>'-Kontroler podataka',
+            'text' => '<p>Ako želite da se pozovete na svoja prava u okviru Uredbe (EU) 2018/1725 ili ako imate komentare, pitanja ili ste zabrinuti ili ako biste želeli da po&scaron;aljete pritužbu u vezi sa prikupljanjem i kori&scaron;ćenjem va&scaron;ih ličnih podataka, slobodno se obratite kontroleru podataka,</p>',
+            'address' => 'Directorate-General for Communications Networks, Content and Technology Unit F4<br> Building BU25<br> B-1049 Brussels<br> ',
+            'email' => 'imejl: '
         ],
         'data-protection-officer' => [
-            'title' => '',
-            'text' => ''
+            'title' => '-Službenik za za&scaron;titu podataka (DPO) Komisije',
+            'text' => '<p>Možete se obratiti službeniku za za&scaron;titu podataka (<a href="mailto:DATA-PROTECTION-OFFICER@ec.europa.eu">DATA-PROTECTION-OFFICER@ec.europa.eu</a>) po pitanju problema u vezi sa obradom va&scaron;ih ličnih podataka u okviru Uredbe (EU) 2018/1725.</p>'
         ],
         'european-data-protection' => [
-            'title' => '',
-            'text' => ''
+            'title' => '-Evropski supervizor za za&scaron;titu podataka (EDPS)',
+            'text' => '<p>Imate pravo da se obratite (tj. možete uložiti žalbu) evropskom supervizoru za za&scaron;titu podataka (<a href="mailto:edps@edps.europa.eu">edps@edps.europa.eu</a>) ako smatrate da su va&scaron;a prava u okviru Uredbe (EU) 2018/1725 naru&scaron;ena kao rezultat obrade va&scaron;ih ličnih podataka od strane kontrolera podataka.</p>'
         ]
     ]
 ];
