@@ -2,85 +2,21 @@
 
 return [
 
-    'title' => '',
-    '1-intro' => [
-       'title' => '',
-       'items' => [
-           '1' => '',
-           '2' => '',
-           '3' => ''
-       ]
-    ],
-    '2-why' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => ''
-        ]
-    ],
-    '3-legal_process' => [
-        'title' => '',
-        'items' => [
-            '1' => ''
-        ]
-    ],
-    '4-collect_data' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => '',
-            '3' => '',
-            '4' => ''
-        ]
-    ],
-    '5-how_long' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => ''
-        ]
-    ],
-    '6-protect_data' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => '',
-            '3' => ''
-        ]
-    ],
-    '7-access_data' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => '',
-            '3' => '',
-            '4' => '',
-            '5' => ''
-        ]
-    ],
-    '8-rights' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => '',
-            '3' => ''
-        ]
-    ],
-    '9-contact' => [
-        'title' => '',
+    'title' => 'SKYDD AV DINA PERSONUPPGIFTER','1-intro'=>['title' => '1. Inledning','items' => ['1' => '<p>Europeiska kommissionen (nedan &rdquo;kommissionen&rdquo;) f&ouml;rbinder sig att skydda dina personuppgifter och respektera din personliga integritet. Kommissionen samlar in och behandlar personuppgifter i enlighet med Europaparlamentets och r&aring;dets f&ouml;rordning (EU) 2018/1725 av den 23 oktober 2018 om skydd f&ouml;r fysiska personer med avseende p&aring; behandling av personuppgifter som utf&ouml;rs av unionens institutioner, organ och byr&aring;er och om det fria fl&ouml;det av s&aring;dana uppgifter samt om upph&auml;vande av f&ouml;rordning (EG) nr 45/2001.</p>','2' => '<p>I denna integritetspolicy f&ouml;rklaras anledningen till att vi samlar in och behandlar personuppgifter, hur vi samlar in dem, hanterar dem och s&auml;kerst&auml;ller att alla personuppgifter som l&auml;mnas &auml;r skyddade, hur denna information anv&auml;nds och vilka r&auml;ttigheter du kan ut&ouml;va r&ouml;rande dina personuppgifter (r&auml;tt till tillg&aring;ng, att r&auml;tta, blockera osv.) I den anges ocks&aring; kontaktuppgifter till den personuppgiftsansvarige som du kan v&auml;nda dig till f&ouml;r att ut&ouml;va dina r&auml;ttigheter, dataskyddsombudet och Europeiska datatillsynsmannen.</p>','3' => '<p>Den h&auml;r integritetspolicyn r&ouml;r insamling och offentligg&ouml;rande av personuppgifter p&aring; webbplatsen Codeweek.eu, som &auml;r tillg&auml;nglig f&ouml;r allm&auml;nheten, fr&aring;n personer som fungerar som kontaktpersoner f&ouml;r aktiviteter inom ramen f&ouml;r EU Code Week (Code Week-ambassad&ouml;rer, samordnare vid utbildningsministerier, ledarl&auml;rare samt aktivitets- och evenemangsarrang&ouml;rer).</p>',]],'2-why'=>['title' => '2. Varf&ouml;r behandlar vi dina personuppgifter?','items' => ['1' => '<p>Europeiska kommissionen samlar in och offentligg&ouml;r dina personuppgifter f&ouml;r att underl&auml;tta f&ouml;r intressenter och intresserade medborgare att hitta kontaktpersoner. Att erbjuda riktiga personer som kontaktpunkter &auml;r det b&auml;sta och mest effektiva s&auml;ttet att s&auml;kerst&auml;lla att intresserade personer kan komma i kontakt med kommissionens tj&auml;nster.</p>','2' => '<p>Dina personuppgifter kommer inte att anv&auml;ndas f&ouml;r n&aring;got automatiserat beslutsfattande inklusive profilering.</p>',]],'3-legal_process'=>['title' => '3. P&aring; vilka r&auml;ttsliga grunder behandlar vi dina personuppgifter?','items' => ['1' => '<p>Behandlingen av personuppgifter f&ouml;r offentligg&ouml;rande av kontaktpersoner &auml;r lagenlig i enlighet med artikel 5.1.d i f&ouml;rordning (EU) 2018/1725 eftersom du givit ditt samtycke till behandlingen av dina personuppgifter via ett webbformul&auml;r eller d&aring; du accepterade att vi anv&auml;nder din e-postadress och ditt anv&auml;ndarnamn n&auml;r du registrerade dig via ett social n&auml;tverk.</p>',]],'4-collect_data'=>['title' => '4. Vilka personuppgifter samlar vi in och behandlar?','items' => ['1' => '<p>De personuppgifter som samlas in &auml;r information som g&ouml;r det l&auml;ttare att hitta dig som kontaktperson och g&ouml;r dig mer synlig f&ouml;r allm&auml;nheten, n&auml;mligen titel, namn, efternamn, position, post- och e-postadresser till arbetet, telefonnummer, bild, konto i sociala medier, biografi.</p>','2' => '<p>Du l&auml;mnade frivilligt dessa personuppgifter i och med att du fyllde i ans&ouml;kningsformul&auml;ret.</p>','3' => '<p>Att l&auml;mna vissa personuppgifter &auml;r obligatoriskt f&ouml;r att kunna offentligg&ouml;ra aktiviteter och/eller kontaktinformation p&aring; webbplatsen codeweek.eu. Om du inte l&auml;mnar dina personuppgifter kommer din aktivitet inte att offentligg&ouml;ras och/eller s&aring; kommer du inte att kunna delta i de ovann&auml;mnda n&auml;tverken.</p>','4' => '<p>Det &auml;r frivilligt att l&auml;mna alla andra personuppgifter.</p>',]],'5-how_long'=>['title' => '5. Hur l&auml;nge beh&aring;ller vi dina personuppgifter?','items' => ['1' => '<p>Kommissionen beh&aring;ller bara dina personuppgifter s&aring; l&auml;nge som det kr&auml;vs f&ouml;r att kunna uppfylla det syfte f&ouml;r insamling och behandling av personuppgifter som beskrivs i punkt 2, det vill s&auml;ga under den tid som du fungerar som kontaktperson.</p>','2' => '<p>Dina personuppgifter kommer att tas bort fr&aring;n den webbplats som &auml;r tillg&auml;nglig f&ouml;r allm&auml;nheten s&aring; snart som du avslutar din funktion som kontaktperson, s&aring;vida du inte har givit ditt samtycke till att finnas kvar i databasen f&ouml;r framtida aktiviteter.</p>',]],'6-protect_data'=>['title' => '6. Hur skyddar vi dina personuppgifter?','items' => ['1' => '<p>Alla personuppgifter i elektroniskt format (e-post, dokument, databaser, uppladdade datasamlingar osv.) lagras antingen p&aring; Europeiska kommissionens eller dess leverant&ouml;rs servrar. All behandling sker i enlighet med kommissionens beslut (EU, Euratom) 2017/46 av den 10 januari 2017 om s&auml;kerheten i Europeiska kommissionens kommunikations- och informationssystem.</p>','2' => '<p>Kommissionens leverant&ouml;rer &auml;r bundna av en s&auml;rskild avtalsklausul f&ouml;r all behandling av dina personuppgifter som g&ouml;rs p&aring; kommissionens v&auml;gnar, samt av de sekretesskyldigheter som f&ouml;ljer av &ouml;verf&ouml;ringen av den allm&auml;nna dataskyddsf&ouml;rordningen i EU:s medlemsl&auml;nder (&rdquo;GDPR&rdquo;, f&ouml;rordning (EU) 2016/679).</p>','3' => '<p>F&ouml;r att skydda dina personuppgifter har kommissionen inr&auml;ttat ett antal tekniska och organisatoriska &aring;tg&auml;rder. De tekniska &aring;tg&auml;rderna omfattar l&auml;mpliga &aring;tg&auml;rder f&ouml;r att hantera s&auml;kerhet p&aring; n&auml;tet, risker g&auml;llande dataf&ouml;rlust, &auml;ndring av uppgifter eller obeh&ouml;rig &aring;tkomst, med h&auml;nsyn till den risk behandlingen inneb&auml;r och den typ av personuppgifter som behandlas. De organisatoriska &aring;tg&auml;rderna omfattar att begr&auml;nsa tillg&aring;ngen till personuppgifterna till enbart beh&ouml;riga personer som har ett legitimt behov av att ha tillg&aring;ng till dem f&ouml;r att kunna utf&ouml;ra behandlingen.</p>',]],'7-access_data'=>['title' => '7. Vem har tillg&aring;ng till dina uppgifter och f&ouml;r vem visas de?','items' => ['1' => '<p>Tillg&aring;ng till dina personuppgifter ges till de anst&auml;llda inom kommissionen som ansvarar f&ouml;r att utf&ouml;ra denna behandling och till beh&ouml;rig personal utifr&aring;n behov.  Denna personal lyder under lagstadgade, och vid behov, &auml;ven ytterligare sekretessavtal.</p>','2' => '<p>Konkret s&aring; har webbplatsens administrat&ouml;rer (anst&auml;llda inom kommissionen) samt annan kommissionspersonal utifr&aring;n behov av tillg&aring;ng till dina personuppgifter. . D&auml;rut&ouml;ver kommer dina personuppgifter och evenemangsinformation att delas med medlemmar i n&auml;tverken f&ouml;r ambassad&ouml;rer f&ouml;r EU Code Week och utbildningssamordnare f&ouml;r anordnande eller uppf&ouml;ljning av lokala aktiviteter.</p>','3' => '<p>I syfte att g&ouml;ra kontaktpersonerna mer synliga offentligg&ouml;rs dina personuppgifter utan n&aring;gon begr&auml;nsning av tillg&aring;ngen p&aring; webbplatsen https://codeweek.eu som &auml;r tillg&auml;nglig f&ouml;r allm&auml;nheten.</p>','4' => '<p><i>R&ouml;rande &ouml;verf&ouml;ring av personuppgifter till tredje part</i></p>','5' => '<p>De uppgifter vi samlas in kommer inte att l&auml;mnas ut till n&aring;gon tredje part, f&ouml;rutom i den utstr&auml;ckning och f&ouml;r det syfte som lagen kr&auml;ver att vi g&ouml;r det.</p>',]],'8-rights'=>['title' => '8. Vilka r&auml;ttigheter har du och hur kan du ut&ouml;va dem?','items' => ['1' => '<p>Du har specifika r&auml;ttigheter som &rdquo;registrerad&rdquo; i enlighet med kapitel III (artiklarna 14&ndash;25) i f&ouml;rordning (EU) 2018/1725, framf&ouml;r allt r&auml;tten att f&aring; tillg&aring;ng till, r&auml;tta eller radera dina personuppgifter samt r&auml;tten att begr&auml;nsa behandlingen av dina personuppgifter. N&auml;r det &auml;r till&auml;mpligt har du ocks&aring; r&auml;tt att inv&auml;nda mot behandlingen och r&auml;tt till dataportabilitet.</p>','2' => '<p>Du har samtyckt till att l&auml;mna dina personuppgifter till oss f&ouml;r den aktuella behandlingen och du kan n&auml;r som helst ta tillbaka ditt samtycke genom att meddela den personuppgiftsansvarige detta. &Aring;terkallandet inneb&auml;r inte att behandlingen inte sker p&aring; ett lagenligt s&auml;tt innan du &aring;terkallar samtycket.</p>','3' => '<p>Du kan ut&ouml;va dina r&auml;ttigheter genom att kontakta den personuppgiftsansvarige eller, i h&auml;ndelse av konflikt, dataskyddsombudet. Om det beh&ouml;vs kan du ocks&aring; kontakta europeiska datatillsynsmannen. Alla kontaktuppgifter finns under punkt 9 nedan.</p>',]], '9-contact' => [
+        'title' => '9. Kontaktuppgifter',
         'data-controller' => [
-            'title'=>'',
-            'text' => '',
-            'address' => '',
-            'email' => ''
+            'title'=>'- Den personuppgiftsansvarige',
+            'text' => '<p>Om du skulle vilja ut&ouml;va dina r&auml;ttigheter i enlighet med f&ouml;rordning (EU) 2018/1725 eller om du har kommentarer, fr&aring;gor eller problem eller om du vill l&auml;mna in ett klagom&aring;l r&ouml;rande insamlingen och anv&auml;ndningen av dina personuppgifter, f&aring;r du g&auml;rna kontakta den personuppgiftsansvarige.</p>',
+            'address' => 'Directorate-General for Communications Networks, Content and Technology Unit F4<br> Building BU25<br> B-1049 Brussels<br> ',
+            'email' => 'Email: '
         ],
         'data-protection-officer' => [
-            'title' => '',
-            'text' => ''
+            'title' => '- Kommissionens dataskyddsombud',
+            'text' => '<p>Du kan kontakta dataskyddsombudet (<a href="mailto:DATA-PROTECTION-OFFICER@ec.europa.eu">DATA-PROTECTION-OFFICER@ec.europa.eu</a>) g&auml;llande fr&aring;gor som r&ouml;r behandlingen av dina personuppgifter i enlighet med f&ouml;rordning (EU) 2018/1725.</p>'
         ],
         'european-data-protection' => [
-            'title' => '',
-            'text' => ''
+            'title' => '- Europeiska datatillsynsmannen (EDPS)',
+            'text' => '<p>Du har r&auml;tt till regresstalan (du kan allts&aring; framf&ouml;ra ett klagom&aring;l) till Europeiska datatillsynsmannen (<a href="mailto:edps@edps.europa.eu">edps@edps.europa.eu</a>) om du anser att dina r&auml;ttigheter enligt f&ouml;rordning (EU) 2018/1725 har &ouml;vertr&auml;tts som ett resultat av den personuppgiftsansvariges behandling av dina personuppgifter.</p>'
         ]
     ]
 ];

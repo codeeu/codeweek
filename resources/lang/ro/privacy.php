@@ -2,85 +2,21 @@
 
 return [
 
-    'title' => '',
-    '1-intro' => [
-       'title' => '',
-       'items' => [
-           '1' => '',
-           '2' => '',
-           '3' => ''
-       ]
-    ],
-    '2-why' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => ''
-        ]
-    ],
-    '3-legal_process' => [
-        'title' => '',
-        'items' => [
-            '1' => ''
-        ]
-    ],
-    '4-collect_data' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => '',
-            '3' => '',
-            '4' => ''
-        ]
-    ],
-    '5-how_long' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => ''
-        ]
-    ],
-    '6-protect_data' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => '',
-            '3' => ''
-        ]
-    ],
-    '7-access_data' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => '',
-            '3' => '',
-            '4' => '',
-            '5' => ''
-        ]
-    ],
-    '8-rights' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => '',
-            '3' => ''
-        ]
-    ],
-    '9-contact' => [
-        'title' => '',
+    'title' => 'PROTEJAREA DATELOR DVS. CU CARACTER PERSONAL','1-intro'=>['title' => '1. Introducere','items' => ['1' => '<p>Comisia Europeană (denumită &icirc;n continuare &bdquo;Comisia&rdquo;) se angajează să protejeze datele dvs. cu caracter personal și să vă respecte confidențialitatea. Comisia colectează și prelucrează ulterior date cu caracter personal &icirc;n conformitate cu Regulamentul (UE) 2018/1725 al Parlamentului European și al Consiliului din 23&nbsp;octombrie&nbsp;2018 privind protecția persoanelor fizice &icirc;n ceea ce privește prelucrarea datelor cu caracter personal de către instituțiile, organele, oficiile și agențiile Uniunii și privind libera circulație a acestor date (de abrogare a Regulamentului (CE) nr. 45/2001).</p>','2' => '<p>Această declarație de confidențialitate explică motivul colectării și prelucrării, modul &icirc;n care colectăm, tratăm și asigurăm protecția tuturor datelor cu caracter personal, modul &icirc;n care este utilizată informația și ce drepturi vă puteți exercita &icirc;n legătură cu datele dvs. cu caracter personal (dreptul de a le accesa, rectifica, bloca etc.). Aceasta specifică, de asemenea, datele de contact ale operatorului de date prin intermediul căruia vă puteți exercita drepturile, ale responsabilului cu protecția datelor și ale Autorității Europene pentru Protecția Datelor.</p>','3' => '<p>Declarația de confidențialitate se referă la colectarea și publicarea, pe site-ul accesibil publicului Codeweek.eu, de date cu caracter personal ale persoanelor care servesc drept puncte de contact pentru activități ale Săptăm&acirc;nii UE a programării (ambasadori ai Săptăm&acirc;nii UE a programării, coordonatori ai Ministerului Educației, cadre didactice de frunte, precum și organizatori de activități și evenimente).</p>',]],'2-why'=>['title' => '2. De ce vă prelucrăm datele?','items' => ['1' => '<p>Comisia Europeană colectează și publică informațiile dvs. cu caracter personal pentru a facilita identificarea punctelor de contact de către părțile interesate sau de către cetățenii interesați. Oferirea de persoane reale ca puncte de contact este cel mai bun și mai eficient mod de a asigura că persoanele interesate pot intra &icirc;n contact cu serviciile Comisiei.</p>','2' => '<p>Datele dvs. cu caracter personal nu vor fi folosite pentru vreun proces decizional automat, inclusiv realizarea de profiluri.</p>',]],'3-legal_process'=>['title' => '3. Pe ce temei(uri) juridic(e) prelucrăm datele dvs. cu caracter personal','items' => ['1' => '<p>Operațiunile de prelucrare a datelor cu caracter personal pentru publicarea punctelor de contact sunt legale &icirc;n conformitate cu articolul 5(1)(d) al Regulamentului (UE) 2018/1725, datorită faptului că v-ați dat consimțăm&acirc;ntul pentru prelucrarea datelor dvs. cu caracter personal prin intermediul unui formular pe internet sau atunci c&acirc;nd ați fost de acord să folosim adresa dvs. de e-mail și numele de utilizator dacă v-ați &icirc;nregistrat printr-o rețea socială.</p>',]],'4-collect_data'=>['title' => '4. Ce date cu caracter personal colectăm și prelucrăm ulterior?','items' => ['1' => '<p>Datele cu caracter personal colectate sunt informații care fac mai ușoară identificarea dvs. ca punct de contact și care vă sporesc vizibilitatea pentru public și anume: formula de adresare, numele, numele de familie, poziția, adresa profesională poștală și de e-mail, numărul de telefon, poza, contul de rețea socială, biografia.</p>','2' => '<p>Ați furnizat aceste date &icirc;n mod voluntar, prin completarea formularului de cerere.</p>','3' => '<p>Furnizarea anumitor date cu caracter personal este obligatorie pentru publicarea activităților și/sau a informațiilor de contact posibile pe site-ul codeweek.eu. Dacă nu furnizați datele dvs. cu caracter personal, activitatea dvs. nu ar fi publicată și/sau nu ați putea lua parte la rețelele menționate anterior.</p>','4' => '<p>Toate datele dvs. cu caracter personal le furnizați &icirc;n mod voluntar.</p>',]],'5-how_long'=>['title' => '5. C&acirc;t timp păstrăm datele dvs. cu caracter personal?','items' => ['1' => '<p>Comisia păstrează datele dvs. cu caracter personal numai pe durata de timp necesară pentru &icirc;ndeplinirea scopului colectării sau prelucrării ulterioare descrise la punctul 2 și anume at&acirc;t timp c&acirc;t sunteți punct de contact.</p>','2' => '<p>Datele dvs. cu caracter personal vor fi eliminate de pe site-ul disponibil publicului de &icirc;ndată ce vă &icirc;ncetați funcția de punct de contact, cu excepția cazului &icirc;n care v-ați exprimat acordul să fiți inclus(ă) &icirc;n baza de date pentru activități viitoare.</p>',]],'6-protect_data'=>['title' => '6. Cum vă protejăm și garantăm datele cu caracter personal?','items' => ['1' => '<p>Toate datele cu caracter personal &icirc;n format electronic (e-mail-uri, documente, baze de date, loturi de date &icirc;ncărcate etc.) sunt stocate fie pe serverele Comisiei Europene, fie pe cele ale contractantului său. Toate operațiunile de prelucrare sunt efectuate &icirc;n conformitate cu Decizia (UE, Euratom) 2017/46 a Comisiei din 10&nbsp;ianuarie&nbsp;2017 privind securitatea sistemelor informatice și de comunicații &icirc;n cadrul Comisiei Europene.</p>','2' => '<p>Contractanții Comisiei sunt obligați, printr-o clauză contractuală specifică, cu privire la orice operațiuni de prelucrare a datelor dvs. &icirc;n numele Comisiei și prin obligațiile de confidențialitate care derivă din transpunerea Regulamentul general privind protecția datelor &icirc;n statele membre UE [Regulamentul (UE) 2016/679 &bdquo;RGPD&rdquo;].</p>','3' => '<p>Pentru a vă proteja datele cu caracter personal, Comisia a pus &icirc;n aplicare o serie de măsuri tehnice și organizatorice. Măsurile tehnice includ acțiuni adecvate pentru abordarea securității online, riscului de pierdere a datelor, modificării datelor sau accesului neautorizat, lu&acirc;nd &icirc;n considerare riscul prezentat de prelucrarea și de natura datelor cu caracter personal care sunt prelucrate. Măsurile organizatorice includ restricționarea accesului la datele cu caracter personal doar la persoanele autorizate cu o nevoie legitimă de a le cunoaște &icirc;n scopul acestor operațiuni de prelucrare.</p>',]],'7-access_data'=>['title' => '7. Cine are acces la datele dvs. și cui &icirc;i sunt dezvăluite acestea?','items' => ['1' => '<p>Accesul la datele dvs. cu caracter personal este acordat personalului Comisiei responsabil de efectuarea acestei operațiuni de prelucrare și personalului autorizat pe baza principiului &bdquo;nevoii de cunoaștere&rdquo;. Acest personal respectă acorduri legale și, dacă este necesar, acorduri de confidențialitate suplimentare.</p>','2' => '<p>La modul concret, toate datele cu caracter personal furnizate de dvs. pot fi accesate de administratorii site-urilor (personalul Comisiei), precum și de alt personal al Comisiei, &icirc;n măsura &icirc;n care există nevoia de a cunoaște aceste date. . Mai mult, informațiile dvs. cu caracter personal și informațiile referitoare la evenimente vor fi &icirc;mpărtășite membrilor ambasadorilor Săptăm&acirc;nii UE a programării și rețelelor de coordonatori educaționali, pentru organizarea activităților locale sau pentru activități ulterioare.</p>','3' => '<p>&Icirc;n scopul sporirii vizibilității punctelor de contact, datele dvs. cu caracter personal sunt publicate fără vreo limitare a accesului pe site-ul public: https://codeweek.eu.</p>','4' => '<p><i>Cu privire la transferul datelor către terțe părți</i></p>','5' => '<p>Informațiile pe care le colectăm nu vor fi date niciunei terțe părți, dec&acirc;t &icirc;n măsura și &icirc;n scopul &icirc;n care suntem obligați prin lege să facem acest lucru.</p>',]],'8-rights'=>['title' => '8. Care sunt drepturile dvs. și cum vă puteți exercita aceste drepturi?','items' => ['1' => '<p>Aveți anumite drepturi &icirc;n calitate de &bdquo;persoană vizată&rdquo; &icirc;n conformitate cu Capitolul III (articolele 14-25) din Regulamentul (UE) 2018/1725, &icirc;n particular dreptul de a accesa, de a rectifica sau de a șterge datele dvs. cu caracter personal și dreptul de a restricționa prelucrarea datelor dvs. cu caracter personal. După caz, aveți de asemenea dreptul de a vă opune prelucrării sau dreptul la portabilitatea datelor.</p>','2' => '<p>V-ați dat consimțăm&acirc;ntul privind furnizarea datelor dvs. cu caracter personal către noi &icirc;n scopul actualei operații de prelucrare și vă puteți retrage &icirc;n orice moment consimțăm&acirc;ntul anunț&acirc;nd operatorul de date. Retragerea nu va afecta legalitatea prelucrării efectuate &icirc;nainte de a vă retrage consimțăm&acirc;ntul.</p>','3' => '<p>Vă puteți exercita drepturile contact&acirc;nd operatorul de date sau, &icirc;n caz de conflict, contact&acirc;nd responsabilul cu protecția datelor. Dacă este necesar, puteți contacta și Autoritatea Europeană pentru Protecția Datelor. Datele de contact ale acesteia sunt indicate la punctul 9 de mai jos.</p>',]], '9-contact' => [
+        'title' => '9. Informații de contact',
         'data-controller' => [
-            'title'=>'',
-            'text' => '',
-            'address' => '',
-            'email' => ''
+            'title'=>'- Operatorul de date',
+            'text' => '<p>Dacă doriți să vă exercitați drepturile &icirc;n conformitate cu Regulamentul (UE) 2018/1725, sau dacă aveți comentarii, &icirc;ntrebări sau &icirc;ngrijorări, sau dacă doriți să depuneți o pl&acirc;ngere privind colectarea și utilizarea datelor dvs. cu caracter personal, puteți contacta operatorul de date,</p>',
+            'address' => 'Directorate-General for Communications Networks, Content and Technology (Direcția Generală pentru Rețele de comunicare, Conținut și Tehnologie) Unit F4<br> Building BU25<br> B-1049 Brussels<br> ',
+            'email' => 'e-mail: '
         ],
         'data-protection-officer' => [
-            'title' => '',
-            'text' => ''
+            'title' => '- Responsabilul cu protecția datelor (RPD) din cadrul Comisiei',
+            'text' => '<p>Puteți contacta Responsabilul cu protecția datelor (<a href="mailto:DATA-PROTECTION-OFFICER@ec.europa.eu">DATA-PROTECTION-OFFICER@ec.europa.eu</a>) cu privire la probleme legate de prelucrarea datelor dvs. cu caracter personal &icirc;n conformitate cu Regulamentul (UE) 2018/1725.</p>'
         ],
         'european-data-protection' => [
-            'title' => '',
-            'text' => ''
+            'title' => '- Autoritatea Europeană pentru Protecția Datelor (AEPD)',
+            'text' => '<p>Aveți dreptul de a sesiza (adică de a depune o pl&acirc;ngere la) Autoritatea Europeană pentru Protecția Datelor (<a href="mailto:edps@edps.europa.eu">edps@edps.europa.eu</a>) &icirc;n cazul &icirc;n care considerați că v-au fost &icirc;ncălcate drepturile conferite prin Regulamentul (UE) 2018/1725 ca urmare a prelucrării datelor dvs. cu caracter personal de către operatorul de date.</p>'
         ]
     ]
 ];

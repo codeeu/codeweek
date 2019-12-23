@@ -2,85 +2,21 @@
 
 return [
 
-    'title' => '',
-    '1-intro' => [
-       'title' => '',
-       'items' => [
-           '1' => '',
-           '2' => '',
-           '3' => ''
-       ]
-    ],
-    '2-why' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => ''
-        ]
-    ],
-    '3-legal_process' => [
-        'title' => '',
-        'items' => [
-            '1' => ''
-        ]
-    ],
-    '4-collect_data' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => '',
-            '3' => '',
-            '4' => ''
-        ]
-    ],
-    '5-how_long' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => ''
-        ]
-    ],
-    '6-protect_data' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => '',
-            '3' => ''
-        ]
-    ],
-    '7-access_data' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => '',
-            '3' => '',
-            '4' => '',
-            '5' => ''
-        ]
-    ],
-    '8-rights' => [
-        'title' => '',
-        'items' => [
-            '1' => '',
-            '2' => '',
-            '3' => ''
-        ]
-    ],
-    '9-contact' => [
-        'title' => '',
+    'title' => 'PROTE&Ccedil;&Atilde;O DOS SEUS DADOS PESSOAIS','1-intro'=>['title' => '1. Introdu&ccedil;&atilde;o','items' => ['1' => '<p>A Comiss&atilde;o Europeia (a seguir designada «Comiss&atilde;o») est&aacute; empenhada em proteger os seus dados pessoais e respeitar a sua privacidade. A Comiss&atilde;o recolhe e trata dados pessoais ao abrigo do Regulamento (UE) 2018/1725 do Parlamento Europeu e do Conselho, de 23 de outubro de 2018, relativo &agrave; prote&ccedil;&atilde;o das pessoas singulares no que diz respeito ao tratamento de dados pessoais pelas institui&ccedil;&otilde;es e pelos &oacute;rg&atilde;os e organismos da Uni&atilde;o e &agrave; livre circula&ccedil;&atilde;o desses dados (que revoga o Regulamento (CE) n.º&nbsp;45/2001).</p>','2' => '<p>A presente declara&ccedil;&atilde;o de privacidade explica o motivo por que recolhemos e tratamos dados pessoais, a forma como os recolhemos, processamos e garantimos a sua prote&ccedil;&atilde;o, o modo como a informa&ccedil;&atilde;o obtida &eacute; utilizada e os direitos que lhe assistem relativamente aos seus dados pessoais (o direito a aceder, retificar, bloquear, etc.). Indica igualmente os contactos do respons&aacute;vel pelo tratamento a quem pode dirigir-se para exercer os seus direitos, do encarregado da prote&ccedil;&atilde;o dos dados e da Autoridade Europeia para a Prote&ccedil;&atilde;o de Dados.</p>','3' => '<p>A presente declara&ccedil;&atilde;o de privacidade diz respeito &agrave; recolha e publica&ccedil;&atilde;o de dados pessoais no s&iacute;tio Codeweek.eu acess&iacute;vel ao p&uacute;blico, das pessoas que servem de pontos de contacto para as atividades da Semana Europeia da Programa&ccedil;&atilde;o (embaixadores da Semana Europeia da Programa&ccedil;&atilde;o, coordenadores dos minist&eacute;rios da Educa&ccedil;&atilde;o, professores proeminentes, bem como organizadores de atividades e eventos).</p>',]],'2-why'=>['title' => '2. Por que motivo tratamos os seus dados?','items' => ['1' => '<p>A Comiss&atilde;o Europeia recolhe e publica as suas informa&ccedil;&otilde;es pessoais para facilitar a identifica&ccedil;&atilde;o dos pontos de contacto por parte dos intervenientes ou cidad&atilde;os interessados. A disponibiliza&ccedil;&atilde;o de pessoas reais como pontos de contacto &eacute; a melhor e mais eficaz forma de assegurar que as pessoas interessadas podem entrar em contacto com os servi&ccedil;os da Comiss&atilde;o.</p>','2' => '<p>Os seus dados pessoais n&atilde;o ser&atilde;o utilizados para uma tomada automatizada de decis&otilde;es, incluindo a defini&ccedil;&atilde;o de perfis.</p>',]],'3-legal_process'=>['title' => '3. Quais os fundamentos jur&iacute;dicos em que nos baseamos para tratar os seus dados pessoais?','items' => ['1' => '<p>As opera&ccedil;&otilde;es de tratamento de dados pessoais para a publica&ccedil;&atilde;o de pontos de contacto s&atilde;o l&iacute;citas ao abrigo do artigo&nbsp;5.º, n.º&nbsp;1, al&iacute;nea&nbsp;d), do Regulamento (UE) 2018/1725, uma vez que deu o seu consentimento ao tratamento dos seus dados pessoais atrav&eacute;s de um formul&aacute;rio em linha ou quando aceitou que utilizemos o seu endere&ccedil;o eletr&oacute;nico e nome de utilizador, caso se tenha registado numa rede social.</p>',]],'4-collect_data'=>['title' => '4. Que dados pessoais recolhemos e tratamos posteriormente?','items' => ['1' => '<p>Os dados pessoais recolhidos s&atilde;o informa&ccedil;&otilde;es que facilitam a sua identifica&ccedil;&atilde;o como ponto de contacto e aumentam a sua visibilidade para o p&uacute;blico, nomeadamente: t&iacute;tulo, nome, apelido, cargo, endere&ccedil;o postal e endere&ccedil;o eletr&oacute;nico profissionais, n&uacute;mero de telefone, fotografia, conta nas redes sociais, biografia.</p>','2' => '<p>Forneceu estes dados pessoais a t&iacute;tulo volunt&aacute;rio mediante o preenchimento do formul&aacute;rio de candidatura.</p>','3' => '<p>O fornecimento de determinados dados pessoais &eacute; obrigat&oacute;rio para a publica&ccedil;&atilde;o de atividades e/ou informa&ccedil;&otilde;es de contacto no s&iacute;tio codeweek.eu. Se n&atilde;o fornecer os seus dados pessoais, a sua atividade n&atilde;o ser&aacute; publicada e/ou n&atilde;o ser&aacute; capaz de participar nas redes acima indicadas.</p>','4' => '<p>Os restantes dados pessoais s&atilde;o fornecidos a t&iacute;tulo volunt&aacute;rio.</p>',]],'5-how_long'=>['title' => '5. Durante quanto tempo conservamos os seus dados pessoais?','items' => ['1' => '<p>A Comiss&atilde;o conserva os seus dados pessoais apenas durante o tempo necess&aacute;rio para cumprir o objetivo que presidiu &agrave; recolha ou ao tratamento dos mesmos, descrito no ponto&nbsp;2, nomeadamente enquanto servir de ponto de contacto.</p>','2' => '<p>Os seus dados pessoais ser&atilde;o removidos do s&iacute;tio Web dispon&iacute;vel ao p&uacute;blico logo que deixe de exercer a sua fun&ccedil;&atilde;o de ponto de contacto, a menos que tenha autorizado a sua inclus&atilde;o na base de dados para atividades futuras.</p>',]],'6-protect_data'=>['title' => '6. Como protegemos e salvaguardamos os seus dados pessoais?','items' => ['1' => '<p>Todos os dados pessoais em formato eletr&oacute;nico (mensagens eletr&oacute;nicas, documentos, bases de dados, lotes de dados carregados, etc.) s&atilde;o armazenados em servidores da Comiss&atilde;o Europeia ou de empresas por ela contratadas para o efeito. Todas as opera&ccedil;&otilde;es de tratamento s&atilde;o realizadas nos termos da Decis&atilde;o (UE, Euratom) 2017/46 da Comiss&atilde;o, de 10 de janeiro de 2017, relativa &agrave; seguran&ccedil;a dos sistemas de comunica&ccedil;&atilde;o e de informa&ccedil;&atilde;o na Comiss&atilde;o Europeia.</p>','2' => '<p>Os contratantes da Comiss&atilde;o est&atilde;o vinculados por uma cl&aacute;usula contratual espec&iacute;fica respeitante &agrave;s opera&ccedil;&otilde;es de tratamento dos seus dados em nome da Comiss&atilde;o e pelas obriga&ccedil;&otilde;es de confidencialidade decorrentes da transposi&ccedil;&atilde;o do Regulamento Geral sobre a Prote&ccedil;&atilde;o de Dados nos Estados-Membros da UE (Regulamento (UE) 2016/679 &mdash; RGPD).</p>','3' => '<p>A Comiss&atilde;o adotou v&aacute;rias medidas t&eacute;cnicas e organizativas para proteger os seus dados pessoais. As medidas t&eacute;cnicas incluem a&ccedil;&otilde;es adequadas para garantir a seguran&ccedil;a em linha e minimizar o risco de perda, altera&ccedil;&atilde;o ou acesso n&atilde;o autorizado aos dados, tendo em conta o risco inerente ao tratamento e a natureza dos dados pessoais objeto de tratamento. As medidas organizativas incluem a limita&ccedil;&atilde;o do acesso aos dados pessoais exclusivamente a pessoas autorizadas com uma necessidade leg&iacute;tima de tomar conhecimento dos dados para efeitos da opera&ccedil;&atilde;o de tratamento.</p>',]],'7-access_data'=>['title' => '7. Quem tem acesso aos seus dados e a quem podem ser divulgados?','items' => ['1' => '<p>O acesso aos seus dados pessoais &eacute; facultado a membros do pessoal da Comiss&atilde;o Europeia respons&aacute;veis pela execu&ccedil;&atilde;o da opera&ccedil;&atilde;o de tratamento e a membros do pessoal autorizados, em conformidade o princ&iacute;pio da «necessidade de tomar conhecimento». As pessoas em causa est&atilde;o obrigadas a respeitar os acordos de confidencialidade estatut&aacute;rios e, se necess&aacute;rio, acordos de confidencialidade adicionais.</p>','2' => '<p>Mais concretamente, todos os dados pessoais fornecidos por si podem ser acedidos pelos administradores dos s&iacute;tios Web (membros do pessoal da Comiss&atilde;o), bem como por outros membros do pessoal da Comiss&atilde;o com base na «necessidade de tomar conhecimento». . Al&eacute;m disso, as suas informa&ccedil;&otilde;es pessoais e informa&ccedil;&otilde;es de eventos ser&atilde;o partilhadas com membros das redes de embaixadores da Semana Europeia da Programa&ccedil;&atilde;o e de coordenadores pedag&oacute;gicos para a organiza&ccedil;&atilde;o ou o seguimento de atividades locais.</p>','3' => '<p>Tendo em vista o aumento da visibilidade dos pontos de contacto, os seus dados pessoais s&atilde;o publicados sem qualquer limita&ccedil;&atilde;o de acesso no s&iacute;tio Web p&uacute;blico: https://codeweek.eu.</p>','4' => '<p><i>Relativamente &agrave; transfer&ecirc;ncia de dados para terceiros</i></p>','5' => '<p>As informa&ccedil;&otilde;es que recolhemos n&atilde;o ser&atilde;o cedidas a qualquer terceiro, exceto na medida e para os efeitos previstos por lei.</p>',]],'8-rights'=>['title' => '8. Quais s&atilde;o os seus direitos e como pode exerc&ecirc;-los?','items' => ['1' => '<p>Enquanto «titular de dados», assistem-lhe direitos espec&iacute;ficos ao abrigo do cap&iacute;tulo&nbsp;III (artigos&nbsp;14.º a 25.º) do Regulamento (UE) 2018/1725, designadamente o direito a aceder, retificar ou apagar os seus dados pessoais e o direito de limitar o tratamento dos seus dados pessoais. Quando aplic&aacute;vel, tamb&eacute;m lhe assiste o direito de se opor ao tratamento ou o direito &agrave; portabilidade dos dados.</p>','2' => '<p>Embora tenha consentido em fornecer-nos os seus dados pessoais para a presente opera&ccedil;&atilde;o de tratamento, pode retirar o seu consentimento, em qualquer momento, notificando o respons&aacute;vel pelo tratamento. A retirada do consentimento n&atilde;o afeta a licitude do tratamento anteriormente efetuado.</p>','3' => '<p>Pode exercer os seus direitos contactando o respons&aacute;vel pelo tratamento ou, em caso de conflito, o encarregado da prote&ccedil;&atilde;o de dados. Caso necess&aacute;rio, pode igualmente dirigir-se &agrave; Autoridade Europeia para a Prote&ccedil;&atilde;o de Dados. Os contactos s&atilde;o indicados no ponto&nbsp;9 abaixo.</p>',]], '9-contact' => [
+        'title' => '9. Contactos',
         'data-controller' => [
-            'title'=>'',
-            'text' => '',
-            'address' => '',
-            'email' => ''
+            'title'=>'&ndash; Respons&aacute;vel pelo tratamento',
+            'text' => '<p>Se pretender exercer os direitos que lhe assistem ao abrigo do Regulamento (UE) 2018/1725, tiver observa&ccedil;&otilde;es, perguntas ou d&uacute;vidas ou quiser apresentar uma reclama&ccedil;&atilde;o relativa &agrave; recolha e utiliza&ccedil;&atilde;o dos seus dados pessoais, contacte o respons&aacute;vel pelo tratamento:</p>',
+            'address' => 'Dire&ccedil;&atilde;o-Geral das Redes de Comunica&ccedil;&atilde;o, Conte&uacute;dos e Tecnologias, Unidade F4<br> Edif&iacute;cio BU25<br> B-1049 Bruxelas<br> ',
+            'email' => 'Endere&ccedil;o eletr&oacute;nico: '
         ],
         'data-protection-officer' => [
-            'title' => '',
-            'text' => ''
+            'title' => '&ndash; Encarregado da prote&ccedil;&atilde;o de dados (EPD) da Comiss&atilde;o',
+            'text' => '<p>Para quest&otilde;es relacionadas com o tratamento dos seus dados pessoais ao abrigo do Regulamento (UE) 2018/1725, pode contactar o encarregado da prote&ccedil;&atilde;o de dados (<a href="mailto:DATA-PROTECTION-OFFICER@ec.europa.eu">DATA-PROTECTION-OFFICER@ec.europa.eu</a>).</p>'
         ],
         'european-data-protection' => [
-            'title' => '',
-            'text' => ''
+            'title' => '&ndash; Autoridade Europeia para a Prote&ccedil;&atilde;o de Dados (AEPD)',
+            'text' => '<p>Caso considere que os seus direitos ao abrigo do Regulamento (UE) 2018/1725 foram infringidos em resultado do tratamento dos seus dados pessoais pelo respons&aacute;vel pelo tratamento, pode apresentar uma reclama&ccedil;&atilde;o &agrave; Autoridade Europeia para a Prote&ccedil;&atilde;o de Dados (<a href="mailto:edps@edps.europa.eu">edps@edps.europa.eu</a>).</p>'
         ]
     ]
 ];
