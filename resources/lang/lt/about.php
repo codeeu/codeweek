@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => '2019 m. ES programavimo savaitė vyks spalio 5–20 d.',
+    'when-title' => '2020 m. ES programavimo savaitė vyks spalio 10-25 d.',
     'when-text' => '<p>ES programavimo savaitė yra visuomeninė iniciatyva, kuria skatinamas kūrybiškumas, problemų sprendimas ir bendradarbiavimas pasitelkiant programavimą ir kitą technologinę veiklą. Šios iniciatyvos tikslas yra populiarinti programavimą, parodyti, kaip žmonės gali įgyvendinti idėjas programuodami, susipažinti su programavimo įgūdžiais ir suburti motyvuotus žmones mokytis.</p>',
     'codeweek_in_numbers-title' => 'Programavimo savaitė skaičiais',
     'codeweek_in_numbers-text' => '<p>2018 m. ES programavimo savaitėje dalyvavo beveik 2,7 milijono žmonių iš daugiau nei 70 pasaulio šalių. Dar 2,3 milijono jaunuolių dalyvavo <a href="http://africacodeweek.org/">Afrikos programavimo savaitėje</a> – panašioje iniciatyvoje, kurią įgyvendina SAP ir ne pelno organizacijos.</p>

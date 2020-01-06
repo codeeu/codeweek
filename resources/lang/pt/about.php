@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => 'Em 2019, a Semana Europeia da Programação irá decorrer entre 5 e 20 de outubro.',
+    'when-title' => 'Em 2020, a Semana Europeia da Programação irá decorrer entre 10 e 25 de outubro.',
     'codeweek_in_numbers-title' => 'Semana da Programação em números',
     'run_by_volunteers-title' => 'Executada por voluntários',
     'supported_by_commission-title' => 'Apoiada pela Comissão Europeia',

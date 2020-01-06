@@ -15,12 +15,13 @@ class ExcellenceWinnersHelper
 {
 
     public static function query($edition = null){
+//        $ttl = 1;
         $ttl = 60*60;
         return Cache::remember('details', $ttl, function () use ($edition) {
             Log::info('query without cache');
             $edition = !is_null($edition) ? $edition : Carbon::now()->year;
             $codes = self::getWinnerCodes($edition);
-            $details = Codeweek4AllHelper::getDetailsByCodeweek4All($codes->toArray());
+            $details = Codeweek4AllHelper::getDetailsByCodeweek4All($codes->toArray(), $edition);
             $full = self::tagSuperWinners($details);
             return $full;
 
@@ -99,6 +100,7 @@ class ExcellenceWinnersHelper
             $edition = Carbon::now()->year;
         }
 
+
         $winnerCodes = [];
 
         $crit1 = self::criteria1($edition);
@@ -108,6 +110,8 @@ class ExcellenceWinnersHelper
         array_push($winnerCodes, $crit1, $crit2, $crit3);
 
         $result = collect($winnerCodes)->flatten()->unique();
+
+        Log::info($result);
 
         return $result;
 
@@ -126,7 +130,7 @@ class ExcellenceWinnersHelper
 
             $detail->super_winner = "0";
             if (($detail->total_participants >= 500) && ($detail->total_creators >= 10) && ($detail->total_countries >= 3) && ($detail->total_activities >= 10)) {
-                //Log::info("Super winner: {$detail->codeweek_for_all_participation_code}");
+                Log::info("Super winner: {$detail->codeweek_for_all_participation_code}");
                 $detail->super_winner = 1;
             }
         }

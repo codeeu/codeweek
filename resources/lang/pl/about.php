@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => 'W 2019 roku Europejski Tydzień Kodowania odbędzie się w dniach od 5 do 20 października.',
+    'when-title' => 'W 2020 roku Europejski Tydzień Kodowania odbędzie się w dniach od 10 do 25 października.',
     'when-text' => '<p>Europejski Tydzień Kodowania to oddolna inicjatywa, w ramach której świętujemy kreatywność, rozwiązywanie problemów i współpracę poprzez programowanie i inne działania związane z technologią. Główną ideą stojącą za wydarzeniem jest promowanie programowania poprzez pokazywanie młodzieży i dorosłym sposobów na realizację pomysłów przy pomocy kodu, rozwiewanie wątpliwości i mitów otaczających te umiejętności oraz gromadzenie zmotywowanych jednostek w celu wspólnej nauki.</p>',
     'codeweek_in_numbers-title' => 'Tydzień Kodowania w liczbach',
     'codeweek_in_numbers-text' => '<p>W 2018 roku w wydarzeniach Tygodnia Kodowania wzięło udział 2,7 miliona uczestników mieszkających w ponad 70 krajach na całym świecie. Dodatkowe 2,3 miliona młodych osób zaangażowało się w wydarzenia związane z poboczną inicjatywą <a href="http://africacodeweek.org/">Africa Code Week</a> prowadzoną przez firmę SAP i organizacje non-profit.</p>
