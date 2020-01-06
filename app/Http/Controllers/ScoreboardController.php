@@ -44,7 +44,7 @@ class ScoreboardController extends Controller
                 ->select('countries.iso as country_iso', 'countries.name as country_name', 'countries.population as country_population', DB::raw('count(*) as total'))
                 ->where('status', "=", "APPROVED")
                 ->whereYear('end_date', '=', $edition)
-                //->where('countries.parent', "=", "")
+                ->where('countries.parent', "=", "")
                 ->groupBy('countries.iso')
                 ->get();
 
