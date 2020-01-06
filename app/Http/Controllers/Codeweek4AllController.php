@@ -11,9 +11,9 @@ class Codeweek4AllController extends Controller
 {
     public function detail($code)
     {
-
-        $result = Codeweek4AllHelper::getDetailsByCodeweek4All([$code])->first();
-        $countries = Codeweek4AllHelper::getCountriesByCodeweek4All($code);
+$edition = 2019;
+        $result = Codeweek4AllHelper::getDetailsByCodeweek4All([$code],$edition)->first();
+        $countries = Codeweek4AllHelper::getCountriesByCodeweek4All($code, $edition);
         $initiator = Codeweek4AllHelper::getInitiatorByCodeweek4All([$code]);
 
 
