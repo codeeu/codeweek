@@ -11,6 +11,7 @@ use Carbon\Carbon;
 use Gate;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Facades\Excel;
 
@@ -25,14 +26,32 @@ class ExcellenceWinnersController extends Controller
         $ttl = 60 * 60 * 24;
 
 //        dd($request->all());
+
+        if ($request->input('edition')) {
+            $edition = $request->get('edition');
+        }
+
+        Log::info("Edition: " . $edition);
+
         if ($request->input('clear_cache')) {
             Log::info ("cache cleaned");
             Cache::forget('details');
         }
 
-        $details = ExcellenceWinnersHelper::query();
+        $details = ExcellenceWinnersHelper::query($edition);
 
+        $total_events = DB::table('events')
+            ->where('status', "=", "APPROVED")
+            ->whereYear('end_date', '=', $edition)
+            ->count();
 
+        $total_reported = DB::table('events')
+            ->where('status', "=", "APPROVED")
+            ->whereNotNull('reported_at')
+            ->whereYear('end_date', '=', $edition)
+            ->count();
+
+        $percentage_reported = ($total_reported / $total_events)*100;
 
         if ($request->input('participants')) {
             if ($request->input('participants') == -1) {
@@ -84,7 +103,7 @@ class ExcellenceWinnersController extends Controller
 
 
 
-        return view('excellence.winners', compact(['edition', 'details']));
+        return view('excellence.winners', compact(['edition', 'details','total_events', 'total_reported','percentage_reported']));
         //return view('excellence.winners',compact(['edition']));
 
     }
