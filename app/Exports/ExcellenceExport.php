@@ -15,7 +15,7 @@ class ExcellenceExport implements FromCollection, WithHeadings
 
     public function collection()
     {
-        $results = ExcellenceWinnersHelper::query(Carbon::now()->year);
+        $results = ExcellenceWinnersHelper::query(Carbon::now()->year(2019));
         return $results;
     }
 
