@@ -26,12 +26,19 @@ class ExcellenceWinnersController extends Controller
         $ttl = 60 * 60 * 24;
 
 //        dd($request->all());
+
+        if ($request->input('edition')) {
+            $edition = $request->get('edition');
+        }
+
+        Log::info("Edition: " . $edition);
+
         if ($request->input('clear_cache')) {
             Log::info ("cache cleaned");
             Cache::forget('details');
         }
 
-        $details = ExcellenceWinnersHelper::query();
+        $details = ExcellenceWinnersHelper::query($edition);
 
         $total_events = DB::table('events')
             ->where('status', "=", "APPROVED")
