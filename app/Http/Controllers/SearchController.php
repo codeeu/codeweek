@@ -41,12 +41,6 @@ class SearchController extends Controller
             $selected_country[] = Country::where('iso', $country_iso)->first();
         }
 
-        //dd($selected_country);
-
-        //dd($selected_country);
-        //$selected_country = $country_iso;
-
-
         $current_year = Carbon::now()->year;
         $years = array();
         for ($year = $current_year; $year >= 2014; $year--) {
