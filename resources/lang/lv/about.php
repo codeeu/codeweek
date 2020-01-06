@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => '2019. gadā ES programmēšanas nedēļa notiks no 5. līdz 20. oktobrim.',
+    'when-title' => '2020. gadā ES programmēšanas nedēļa notiks no 10. līdz 25. oktobrim.',
     'when-text' => '<p>ES programmēšanas nedēļa ir iedzīvotāju kustība, kas veltīta radošumam, problēmu risināšanai un sadarbībai, izmantojot programmēšanu un citas tehnoloģiskas aktivitātes. Pamatideja ir padarīt programmēšanu populārāku, parādīt jauniešiem, pieaugušajiem un vecāka gadagājuma cilvēkiem, kā ar programmēšanas palīdzību īstenot idejas, kliedēt maldīgus priekšstatus par programmēšanas prasmēm un sapulcināt kopā motivētus cilvēkus, kuri vēlas tās apgūt.</p>',
     'codeweek_in_numbers-title' => 'Programmēšanas nedēļa skaitļos',
     'codeweek_in_numbers-text' => '<p>2018. gadā ES programmēšanas nedēļā piedalījās 2,7 miljoni cilvēku vairāk nekā 70 pasaules valstīs. Vēl 2,3 miljoni jauniešu piedalījās <a href="http://africacodeweek.org/">Āfrikas programmēšanas nedēļā</a>, kas ir saistīta iniciatīva, kuru vada SAP un bezpeļņas organizācijas.</p>

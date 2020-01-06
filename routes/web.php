@@ -141,8 +141,10 @@ Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/admin/excellence/winners','ExcellenceWinnersController@list')->name('excellence_winners');
     Route::post('/admin/excellence/excel','ExcellenceWinnersController@excel')->name('excellence_excel');
 
-
     Route::get('/mail/template/remind/creators', 'MailTemplateController@remindcreators');
+
+    Route::get('/admin/certificates','AdminController@certificates')->name('admin_certificates');
+    Route::post('/admin/certificates','AdminController@generateCertificates')->name('generate_certificates');
 });
 
 Route::group(['middleware' => ['role:super admin|ambassador']], function () {

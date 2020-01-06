@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => 'En 2019, la Semaine européenne du code aura lieu du 5 au 20 octobre.',
+    'when-title' => 'En 2020, la Semaine européenne du code aura lieu du 10 au 25 octobre.',
     'when-text' => '<p>La Semaine européenne du code est un mouvement citoyen qui met à l’honneur la créativité, la résolution de problèmes et la collaboration par le biais de la programmation et d’autres activités technologiques. L’idée consiste à rendre la programmation plus visible, à montrer aux jeunes, aux adultes et aux personnes âgées comment concrétiser des idées grâce au code, à démystifier ces compétences et à rassembler un public désireux d’apprendre.</p>',
     'codeweek_in_numbers-title' => 'La Semaine du code en chiffres',
     'codeweek_in_numbers-text' => '<p>En 2018, 2,7 millions de personnes dans plus de 70 pays du monde ont participé à la Semaine européenne du code. Et 2,3 millions de jeunes ont participé à la <a href="http://africacodeweek.org/">Semaine africaine du code</a>, une initiative satellite organisée par SAP et des organisations à but non lucratif.</p>
