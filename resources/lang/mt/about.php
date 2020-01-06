@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => 'Fl-2019, il-Ġimgħa tal-Ikkowdjar ser issir bejn is-5 u l-20 ta’ Ottubru.',
+    'when-title' => 'Fl-2020, il-Ġimgħa tal-Ikkowdjar ser issir bejn is-10 u l-25 ta’ Ottubru.',
     'when-text' => '<p>Il-Ġimgħa Ewropea tal-Ikkowdjar hija moviment bażiku li jiċċelebra l-kreattività, is-soluzzjoni tal-problemi u kollaborazzjoni permezz ta’ programmazzjoni u attivitajiet tekniċi oħra. L-idea hija li l-programmazzjoni ssir aktar viżibbli, biex iż-żgħażagħ, l-adulti u l-anzjani jintwerew kif tista’ tingħata l-ħajja lill-ideat bil-kodiċi, biex dawn il-ħiliet isiru aktar ċari u biex jingħaqdu persuni motivati biex jitgħallmu.</p>',
     'codeweek_in_numbers-title' => 'Il-Ġimgħa tal-Ikkowdjar f’numri',
     'codeweek_in_numbers-text' => '<p>Fl-2018, 2.7 miljun ruħ f’aktar minn 70 pajjiż madwar id-dinja ħadu sehem fil-Ġimgħa tal-UE tal-Ikkowdjar. 2.3 miljun żagħżugħ addizzjonali kienu involuti fil-<a href="http://africacodeweek.org/">Ġimgħa Afrikana tal-Ikkowdjar</a>, li hija inizjattiva mmexxija minn SAP u għal organizzazzjonijiet mingħajr skop ta’ qligħ.</p>

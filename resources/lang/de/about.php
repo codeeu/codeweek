@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => 'Die EU Code Week 2019 findet im Zeitraum vom 5. bis 20. Oktober statt.',
+    'when-title' => 'Die EU Code Week 2020 findet im Zeitraum vom 10. bis 25. Oktober statt.',
     'when-text' => '<p>Die EU Code Week ist eine Breiteninitiative zur Feier von Kreativität, Problemlösung und Zusammenarbeit durch Programmierung und andere technische Aktivitäten. Dahinter steckt die Idee, das Programmieren bekannter zu machen, jungen Menschen, Erwachsenen und Älteren zu zeigen, wie sie mit dem Programmieren Ideen Wirklichkeit werden lassen, diese Kompetenzen begreifbar zu machen und motivierte Menschen beim Lernen zusammenzubringen.</p>',
     'codeweek_in_numbers-title' => 'Code Week in Zahlen',
     'codeweek_in_numbers-text' => '<p>Im Jahr 2018 nahmen 2,7 Millionen Menschen in über 70 Ländern weltweit an der EU Code Week teil. Weitere 2,3 Millionen junge Menschen waren an der <a href="http://africacodeweek.org/">Africa Code Week</a> beteiligt, einer Spin-off-Initiative, die von SAP und gemeinnützigen Organisationen veranstaltet wird.</p>
