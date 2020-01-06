@@ -71,6 +71,18 @@
                     <pre class="language-json"><code>{{ themes }}</code></pre>
                 </multiselect>
 
+                <multiselect v-model="types" :options="typeslist" :multiple="true" :close-on-select="false"
+                             :clear-on-select="false" :preserve-search="false" :placeholder="$t('event.activitytype.label')"
+                             :preselect-first="false"
+                             label="event.activitytype.label" :custom-label="customLabel" track-by="id">
+                    <pre class="language-json"><code>{{ themes }}</code></pre>
+                </multiselect>
+
+
+
+
+
+
             </div>
 
         </div>
@@ -118,7 +130,8 @@
             name: String,
             countrieslist: Array,
             audienceslist: Array,
-            themeslist: Array
+            themeslist: Array,
+            typeslist: Array,
         },
         data() {
             return {
@@ -128,6 +141,7 @@
                 countries: this.prpSelectedCountry,
                 audiences: [],
                 themes: [],
+                types: [],
                 showFilters: true,
                 isLoading: false,
                 events: [],
@@ -220,6 +234,7 @@
         mounted: function () {
             this.onSubmit();
             this.setSelectedCountryToCenterMap();
+
         }
     }
 </script>
