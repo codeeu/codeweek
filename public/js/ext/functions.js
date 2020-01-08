@@ -173,8 +173,14 @@ var SEMICOLON = SEMICOLON || {};
             jRes.addFunc([
                 {
                     breakpoint: 'desktop',
-                    enter: function() { $body.addClass('device-lg'); },
-                    exit: function() { $body.removeClass('device-lg'); }
+                    enter: function() {
+                        $body.addClass('device-lg');
+                        SEMICOLON.header.superfish();
+                    },
+                    exit: function() {
+                        $body.removeClass('device-lg');
+                        SEMICOLON.header.superfishDESTROY();
+                    }
                 },{
                     breakpoint: 'laptop',
                     enter: function() { $body.addClass('device-md'); },
@@ -834,7 +840,7 @@ var SEMICOLON = SEMICOLON || {};
 
         init: function(){
 
-            SEMICOLON.header.superfish();
+            //SEMICOLON.header.superfish();
             SEMICOLON.header.menufunctions();
             SEMICOLON.header.fullWidthMenu();
             SEMICOLON.header.overlayMenu();
@@ -850,13 +856,11 @@ var SEMICOLON = SEMICOLON || {};
         },
 
         superfish: function(){
-
             if ( $().superfish ) {
-                if( $body.hasClass('device-lg') || $body.hasClass('device-md') ) {
-                    $('#primary-menu ul ul, #primary-menu ul .mega-menu-content').css('display', 'flex');
-                    SEMICOLON.header.menuInvert();
-
-                    $('body:not(.side-header) #primary-menu > ul, body:not(.side-header) #primary-menu > div > ul,.top-links > ul').superfish({
+                var menuSelector = '#primary-menu > ul';
+                if( $body.hasClass('device-lg')) {
+                    $('#primary-menu ul ul').css('display', 'flex');
+                    $(menuSelector).superfish({
                         popUpSelector: 'ul,.mega-menu-content,.top-link-section',
                         delay: 250,
                         speed: 350,
@@ -864,19 +868,21 @@ var SEMICOLON = SEMICOLON || {};
                         animationOut: {opacity: 'hide'},
                         cssArrows: false
                     });
-
-                    $('body.side-header #primary-menu > ul').superfish({
-                        popUpSelector: 'ul',
-                        delay: 250,
-                        speed: 350,
-                        animation: {opacity: 'show', height: 'show'},
-                        animationOut: {opacity: 'hide', height: 'hide'},
-                        cssArrows: false
-                    });
-
+                    $('#primary-menu ul li a').unbind('click');
+                    $('#primary-menu ul li a').off('click');
                 }
             }
 
+        },
+
+        superfishDESTROY: function(){
+            if ( $().superfish ) {
+                var menuSelector = '#primary-menu > ul';
+                $(menuSelector).superfish('destroy');
+                $('#primary-menu ul li a').click(function() {
+                    $(this.parentNode).children('ul').toggleClass('show')
+                });
+            }
         },
 
         menuInvert: function() {
@@ -2212,7 +2218,7 @@ var SEMICOLON = SEMICOLON || {};
                 $( '#right-menu' ).toggleClass("show-flex");
                 return false;
             });
-            if( SEMICOLON.isMobile.any() ){
+            if( SEMICOLON.isMobile.any() || !$body.hasClass('device-lg')){
                 $body.addClass('device-touch');
                 $('#primary-menu ul li a').click(function() {
                     $(this.parentNode).children('ul').toggleClass('show')
