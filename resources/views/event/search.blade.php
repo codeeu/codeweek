@@ -24,7 +24,10 @@
             :prp-selected-year="{{$selected_year}}"
             :countrieslist="{{ $countries }}"
             :audienceslist="{{$audiences}}"
-            :themeslist="{{$themes}}">
+            :themeslist="{{$themes}}"
+            :typeslist="{{$activity_types}}"
+
+    >
     </search-page-component>
 
 @endsection
