@@ -21,7 +21,7 @@ class ScoreboardController extends Controller
         $cache_time = 60 * 60 * 24; // One day cache
 
         if ($edition == Carbon::now('Europe/Brussels')->year) {
-            $cache_time = 5 * 60; // 5 minutes Cache
+            $cache_time = 15 * 60; // 15 minutes Cache
         };
 
 
@@ -34,17 +34,21 @@ class ScoreboardController extends Controller
         });
 
 
+
+
         $events = Cache::remember('events_' . $edition, $cache_time, function () use ($edition) {
             Log::info("Setting cache for scoreboard events in " . $edition);
 
             $events = DB::table('events')
                 ->join('countries', 'events.country_iso', '=', 'countries.iso')
-                ->select('countries.iso as country_iso', 'countries.name as country_name', 'countries.population as country_population', DB::raw('count(*) as total'), DB::raw('0 as rank'))
+                ->select('countries.iso as country_iso', 'countries.name as country_name', 'countries.population as country_population', DB::raw('count(*) as total'))
                 ->where('status', "=", "APPROVED")
                 ->whereYear('end_date', '=', $edition)
                 ->where('countries.parent', "=", "")
                 ->groupBy('countries.iso')
                 ->get();
+
+
 
 
             $eventsFromDependencies = DB::table('events')
@@ -95,7 +99,8 @@ class ScoreboardController extends Controller
 
         Log::info("Total displayed in scoreboard: " . $total);
 
-        $years = [2019, 2018, 2017, 2016, 2015, 2014];
+        $years = range(\Carbon\Carbon::now()->year, 2014, -1);
+
         return view('scoreboard', [
             'events' => $events->sortBy('rank'),
             'total' => $total,
