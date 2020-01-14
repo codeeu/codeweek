@@ -35,9 +35,10 @@ return [
         'title' => 'Pourquoi rejoindre le défi?',
         '1' => 'Pour diffuser le message sur l’importance du codage.',
         '2' => 'Pour qu’un grand nombre d’étudiants s’implique.',
-        '3' => '',
+        '3' => 'Pour créer des connections avec des organisations et/ou écoles dans votre communauté ou au niveau international',
         '4' => 'Pour trouver un soutien auprès d’autres organisateurs et enseignants.',
         '5' => 'Pour obtenir un <strong>Certificat d’excellence.</strong>'
     ]
+
 
 ];
