@@ -5,7 +5,12 @@
                 @lang('base.still_have_question') @lang('base.drop_us_a_line')
             </div>
             <div class="get-in-touch">
-                <a href="/ambassadors"><div class="button">@lang('base.get_in_touch')</div></a>
+                @if(Route::current()->getName() == 'ambassadors')
+                    <a href="mailto:info@codeweek.eu"><div class="button">@lang('base.get_in_touch')</div></a>
+                @else
+                    <a href="/ambassadors"><div class="button">@lang('base.get_in_touch')</div></a>
+                @endif
+
                 <div>
                     <img src="/images/get_in_touch.svg" class="static-image">
                 </div>

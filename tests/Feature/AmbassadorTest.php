@@ -143,6 +143,16 @@ class AmbassadorTest extends TestCase
 
     }
 
+    /** @test */
+    public function info_email_should_be_displayed_in_footer_only_on_ambassadors_page()
+    {
+
+        $this->get('/ambassadors?country_iso=BE')->assertSee('mailto:info@codeweek.eu');
+
+
+    }
+
+
 
 
 
