@@ -19,7 +19,7 @@
         <section class="codeweek-content-wrapper">
 
 
-            Welcome to Codeweek Hackathons
+            @lang("hackathons.intro")
 
 
 
