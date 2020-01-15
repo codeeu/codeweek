@@ -25,7 +25,6 @@
 
                 @lang('codeweek4all.what.content')
                 <ul>
-                    <li><strong>@lang('codeweek4all.what.criteria1')</strong></li>@lang('base.or')
                     <li><strong>@lang('codeweek4all.what.criteria2')</strong></li>@lang('base.or')
                     <li><strong>@lang('codeweek4all.what.criteria3')</strong></li>
                 </ul>

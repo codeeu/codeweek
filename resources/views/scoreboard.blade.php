@@ -48,7 +48,7 @@
                             @if ($loop->first)
 
                                 <div class="country-name"><a
-                                            href="/events?country_iso={{$event->country_iso}}">@lang('countries.'.$event->country_name)</a>
+                                            href="/events?country_iso={{$event->country_iso}}&year={{$edition}}">@lang('countries.'.$event->country_name)</a>
                                 </div>
                                 <div class="participating-with">@lang('scoreboard.parcipating_with')</div>
                                 <div class="number">
@@ -83,7 +83,7 @@
                         <div class="country-data">
 
                             <div class="country-name"><a
-                                        href="/events?country_iso={{$event->country_iso}}">@lang('countries.'.$event->country_name)</a>
+                                        href="/events?country_iso={{$event->country_iso}}&year={{$edition}}">@lang('countries.'.$event->country_name)</a>
                             </div>
                             <div class="participating-with">@lang('scoreboard.parcipating_with')</div>
                             <div class="number">
