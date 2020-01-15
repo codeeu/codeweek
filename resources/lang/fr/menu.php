@@ -19,7 +19,7 @@ return [
     'events' => 'Activités',
     'ambassadors' => 'Ambassadeurs',
     'resources' => 'Ressources',
-    'schools' => 'Établissements scolaires',
+    'schools' => 'Écoles',
     'about' => 'À propos',
     'blog' => 'Blog','news' => 'Actualités',
     'search' => 'Saisissez votre recherche et appuyez sur «Entrée»',
