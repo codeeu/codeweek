@@ -3,7 +3,7 @@ Dear Code Week 4 All challenge participant,
 
 We are delighted to share with you today that you have successfully completed the Code Week 4 All challenge.<br/>
 
-We would like to extend our warmest congratulations and thank you for playing a major part in making last year’s Code Week, <a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-2018-breaks-all-time-record-27-million-participants-and-nearly-44000-events">the most successful edition yet.</a><br/>
+We would like to extend our warmest congratulations and thank you for playing a major part in making last year’s Code Week, <a href="https://ec.europa.eu/digital-single-market/en/news/new-record-eu-code-week-42-million-participants-and-more-72-000-activities-2019">the most successful edition yet.</a><br/>
 
 It is our belief that the creation of alliances between teachers and educators all over Europe is vital to bringing coding to more students across Europe – and you have helped up move closer to this goal!<br/>
 
