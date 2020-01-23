@@ -13,7 +13,7 @@ use Symfony\Component\Process\Process;
 class CertificateExcellence
 {
 
-    private $templateName = "excellence.tex";
+    private $templateName;
 
     private $name_of_certificate_holder;
     private $resource_path;
@@ -21,14 +21,18 @@ class CertificateExcellence
     private $personalized_template_name;
     private $event;
     private $id;
+    private $edition;
 
     public function __construct($edition, $name_for_certificate)
     {
+        $this->edition = $edition;
         $this->name_of_certificate_holder = $name_for_certificate;
         $this->personalized_template_name = $edition . "-" . auth()->id();
         $this->resource_path = resource_path() . "/latex";
         $this->pdflatex = env("PDFLATEX_PATH");
         $this->id = auth()->id() . '-' . str_random(10);
+        $this->templateName = "excellence-{$this->edition}.tex";
+
         Log::info("User ID " . auth()->id() . " generating excellence certificate with name: " . $name_for_certificate);
     }
 
@@ -116,7 +120,7 @@ class CertificateExcellence
      */
     protected function customize_and_save_latex()
     {
-        if ($this->is_greek()) $this->templateName = "excellence_greek.tex";
+        if ($this->is_greek()) $this->templateName = "excellence_greek-{$this->edition}.tex";
         Log::info($this->templateName);
         //open the latex template
         $base_template = Storage::disk('latex')->get($this->templateName);
