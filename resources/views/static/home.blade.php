@@ -21,33 +21,47 @@
                 </div>
             </div>
         </section>
+
         <section id="school-banner">
-            <div class="title">
+            <a href="/schools" style="color:inherit">
+                <div class="title">
                 @lang('home.school_banner_title')
             </div>
+            </a>
+            <a href="/schools" style="color:inherit">
             <div class="text">
                 @lang('home.school_banner_text')
             </div>
+            </a>
             <div class="text">
                 <a href="/schools">@lang('home.school_banner_text2')</a>
             </div>
         </section>
+
         <section class="sub-section" id="organize-activity">
+
             <div class="text">@lang('home.organize_activity_text')</div>
+
             <img src="/images/organize_your_activity.svg" class="static-image">
+            <a href="{{route('create_event')}}" style="color:inherit">
             <div class="title">@lang('home.organize_activity_title')</div>
+            </a>
         </section>
         <div class="mobile-arrow"><img src="/images/arrow_down.svg"></div>
         <section class="sub-section" id="get-started">
             <div class="text">@lang('home.get_started_text')</div>
             <img src="/images/get_started.svg" class="static-image">
+            <a href="{{route('guide')}}" style="color:inherit">
             <div class="title">@lang('home.get_started_title')</div>
+            </a>
         </section>
         <div class="mobile-arrow"><img src="/images/arrow_down.svg"></div>
         <section class="sub-section" id="access-resources">
             <div class="text">@lang('home.access_resources_text')</div>
             <img src="/images/access_resources.svg" class="static-image">
+            <a href="{{route('resources_teach')}}" style="color:inherit">
             <div class="title">@lang('home.access_resources_title')</div>
+            </a>
         </section>
         <div class="mobile-arrow"><img src="/images/arrow_down.svg"></div>
     </section>
