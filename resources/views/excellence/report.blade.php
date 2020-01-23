@@ -1,49 +1,38 @@
 @extends('layout.base')
 
 @section('content')
-    <div class="container">
 
-        <div class="flex flex-col justify-center text-center w-full mb-8 uppercase">
-            <h1>Report Excellence for Codeweek edition of {{$edition}}</h1>
+    <section id="codeweek-participation-report-page" class="codeweek-page">
 
-        </div>
+        <section class="codeweek-content-header">
+            <h1>@lang('excellence.title') {{$edition}}</h1>
+            <p>@lang('excellence.required')</p>
+        </section>
 
-        <hr>
+        <section class="codeweek-content-wrapper" style="margin-top:0px;">
 
-        <header class="flex flex-col justify-between">
+            <form method="POST" id="event" role="form" enctype="multipart/form-data"
+                  action="/certificates/excellence/{{$edition}}" class="codeweek-form">
 
-            <p class="mb-4 text-grey-dark">
-                @lang('report.phrase1')
-                <a href='mailto:info@codeweek.eu'>@lang('report.contactus')</a>
-            </p>
+                {{csrf_field()}}
 
-            <p class="mb-4 text-grey-dark">
-                @lang('report.phrase3')
-            </p>
+                <div class="codeweek-form-inner-container">
 
-        </header>
+                    @component('components.report.form-field-simple',['section'=>'excellence','field_name'=>'name_for_certificate','type'=>'text','required'=>true,'help'=>'name_for_certificate.help'])@endcomponent
 
-        <div class="flex justify-center">
-            <div class="w-full max-w-4xl">
-                <form enctype="multipart/form-data" method="post" id="event" role="form"
-                      class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
-                      action="/certificates/excellence/{{$edition}}">
-                    {{csrf_field()}}
-
-                    @component('components.report.form-field-simple',['section'=>'report','field_name'=>'name_for_certificate','type'=>'text','required'=>true,'help'=>'name_for_certificate.help'])@endcomponent
-
-
-
-                    <div class="flex items-center justify-between mt-8">
-                        <button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded"
-                                type="submit">
-                            @lang('report.submit')
-                        </button>
-
+                    <div class="codeweek-form-button-container">
+                        <div class="codeweek-button">
+                            <input type="submit" value="@lang('excellence.generate')">
+                        </div>
                     </div>
-                </form>
-            </div>
-        </div>
 
-    </div>
+                </div>
+
+            </form>
+
+        </section>
+
+    </section>
+
+
 @endsection
