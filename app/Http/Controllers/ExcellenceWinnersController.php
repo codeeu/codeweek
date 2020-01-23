@@ -42,6 +42,7 @@ class ExcellenceWinnersController extends Controller
 
         $total_events = DB::table('events')
             ->where('status', "=", "APPROVED")
+            //->where('codeweek_for_all_participation_code', '<>', 'cw19-apple-eu')
             ->whereYear('end_date', '=', $edition)
             ->count();
 
