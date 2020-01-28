@@ -26,6 +26,26 @@
             <img src="/images/logo.svg" class="logo_footer">
             <img src="/images/bubbles_footer.svg" class="static-image bubbles_footer">
         </div>
+        <div class="social-media-buttons">
+            <div class="social-network">
+                <a href="https://www.facebook.com/codeEU/" target="_blank">
+                    <img src="/images/facebook.svg" alt="Twitter" class="button-icon">
+                    Facebook
+                </a>
+            </div>
+            <div class="social-network">
+                <a href="https://www.facebook.com/codeEU/" target="_blank">
+                    <img src="/images/twitter.svg" alt="Twitter" class="button-icon">
+                    Twitter
+                </a>
+            </div>
+            <div class="social-network">
+                <a href="https://www.facebook.com/codeEU/" target="_blank">
+                    <img src="/images/instagram.svg" alt="Twitter" class="button-icon">
+                    Instagram
+                </a>
+            </div>
+        </div>
 
     </div>
 </footer>
