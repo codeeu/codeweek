@@ -14,8 +14,8 @@ return [
     |
     */
 
-    'title' => 'Tabelă de afișare a evenimentelor #codeweek',
-    'paragraph'=>'Ce țări din Europa freamătă de activitate de programare? Tabela de afișaj este sortată în funcție de numărul de evenimente de programare per locuitori, așa că să nu vă surprindă să vedeți țări mai mici care sunt mai sus în listă!',
+    'title' => 'Ce țări freamătă de activitate de programare?',
+    'paragraph'=>'Tabela de afișaj este sortată în funcție de numărul de evenimente de programare per locuitori, așa că să nu vă surprindă să vedeți țări mai mici care sunt mai sus în listă!',
     'parcipating_with'=>'participă cu',
     'events'=>'evenimente'
 
