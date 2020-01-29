@@ -14,8 +14,8 @@ return [
     |
     */
 
-    'title' => '#codeweek renginių suvestinė',
-    'paragraph'=>'Kurios Europos šalys daugiausiai pluša programavimo veiklose? Suvestinėje šalys nurodytos pagal užregistruotų programavimo renginių skaičių šalies gyventojų skaičiui, tad nenustebkite pamatę, kad kai kurios mažesnės šalys atsidūrė sąrašo viršuje!',
+    'title' => 'Kurios šalys daugiausiai pluša programavimo veiklose?',
+    'paragraph'=>'Suvestinėje šalys nurodytos pagal užregistruotų programavimo renginių skaičių šalies gyventojų skaičiui, tad nenustebkite pamatę, kad kai kurios mažesnės šalys atsidūrė sąrašo viršuje!',
     'parcipating_with'=>'dalyvauja su',
     'events'=>'renginiai'
 

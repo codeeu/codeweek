@@ -5,8 +5,9 @@ return [
     'when-title' => 'În 2020, Săptămâna UE a programării va avea loc între 10 și 25 octombrie.',
     'when-text' => '<p>Săptămâna UE a programării este o mișcare de bază care celebrează creativitatea, rezolvarea de probleme și colaborarea prin programare și alte activități tehnologice. Ideea este de a face programarea mai vizibilă, de a le arăta tinerilor, adulților și vârstnicilor cum își pot aduce ideile la viață prin programare, de a demistifica aceste aptitudini și de a aduce oamenii motivați împreună, pentru a învăța.</p>',
     'codeweek_in_numbers-title' => 'Săptămâna programării în cifre',
-    'codeweek_in_numbers-text' => '<p>În 2018, 2,7 milioane de oameni din peste 70 de țări din întreaga lume au luat parte la UE Code Week. În plus, 2,3 milioane de tineri au fost implicați în <a href="http://africacodeweek.org/">Africa Code Week</a>, care este o inițiativă derivată, condusă de SAP și organizații nonprofit.</p>
-                    <p>Dacă țara ta nu este încă implicată, poți organiza activități și le poți adăuga pe <a href="/events">hartă</a> sau te poți <a href="mailto:info@codeweek.eu">oferi ca voluntar</a> pentru a fi ambasador al Săptămânii programării.</p>',
+    'codeweek_in_numbers-text' => '<p>În 2019, 4,2 milioane de oameni din peste 80 de țări din întreaga lume au luat parte la UE Code Week.</p>
+                    <p>Vârsta medie a participanților a fost de 11 ani, iar 49 % dintre participanți în 2019 au fost femei sau fete. 92 % din evenimentele din Săptămâna UE a programării au avut loc în școli, ceea ce arată că eforturile de abilitare a cadrelor didactice în timpul campaniei din 2019 au avut succes.</p>
+                    <p>Oricine este binevenit să organizeze sau să participe la o activitate. Alege un subiect și un public țintă și <a href="/add">adaugă activitatea</a> ta pe <a href="/events">hartă</a></p>',
     'run_by_volunteers-title' => 'Organizată de voluntari',
     'run_by_volunteers-text' => '<p>Săptămâna UE a programării este organizată de voluntari. Unu sau mai mulți <a href="/ambassadors">ambasadori ai Săptămânii programării</a> coordonează inițiativa în țara lor, dar oricine poate organiza propria activitate, pe care o poate adăuga pe harta <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'Sprijinită de Comisia Europeană',

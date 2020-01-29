@@ -5,8 +5,9 @@ return [
     'when-title' => 'EU Code Week 2020 anordnas mellan den 10 och 25 oktober.',
     'when-text' => '<p>EU Code Week är ett gräsrotsinitiativ som hyllar kreativitet, problemlösning och samarbete via programmering och andra tekniska aktiviteter. Tanken är att göra programmering mer synligt, att visa unga, vuxna och äldre hur man kan förverkliga idéer med kod, att avmystifiera dessa färdigheter och få motiverade människor att lära sig tillsammans.</p>',
     'codeweek_in_numbers-title' => 'Code Week i siffror',
-    'codeweek_in_numbers-text' => '<p>År 2018 deltog 2,7 miljoner personer i över 70 länder världen runt i EU Code Week. Ytterligare 2,3 miljoner ungdomar var involverade i <a href="http://africacodeweek.org/">Africa Code Week</a>, ett systerinitiativ som drivs av SAP och icke-vinstdrivande organisationer.</p>
-                    <p>Om ditt land inte deltar ännu kan du organisera en aktivitet och lägga upp den på <a href="/events">kartan</a> eller bli <a href="mailto:info@codeweek.eu">frivillig</a> ambassadör för Code Week.</p>',
+    'codeweek_in_numbers-text' => '<p>År 2019 deltog 4,2 miljoner personer i över 80 länder världen runt i EU Code Week.</p>
+                    <p>Genomsnittsdeltagaren var 11 år och 49 % av deltagarna 2019 var kvinnor eller flickor. 92 % av EU Code Week-evenemangen ägde rum i skolor, vilket visar att insatserna för att stärka lärarna under 2019 års kampanj har varit lyckade.</p>
+                    <p>Vem som helst är välkommen att organisera eller delta i en aktivitet. Välj ett ämne och en målgrupp och <a href="/add">lägg till din aktivitet</a> på <a href="/events">kartan</a></p>',
     'run_by_volunteers-title' => 'Leds av volontärer',
     'run_by_volunteers-text' => '<p>EU Code Week organiseras av frivilliga. En eller flera <a href="/ambassadors">ambassadörer för Code Week</a> samordnar initiativet i de olika länderna, men vem som helst kan organisera en aktivitet och lägga till den på kartan på <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'Stöds av Europeiska kommissionen',
