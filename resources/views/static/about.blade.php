@@ -26,7 +26,7 @@
 
                 @lang('about.codeweek_in_numbers-text')
 
-                <img src="{{asset('img/participation-2018.gif')}}">
+                <img src="{{asset('img/participation-2019.gif')}}">
 
             </div>
 
