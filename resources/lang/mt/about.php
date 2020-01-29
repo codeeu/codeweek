@@ -5,8 +5,9 @@ return [
     'when-title' => 'Fl-2020, il-Ġimgħa tal-Ikkowdjar ser issir bejn is-10 u l-25 ta’ Ottubru.',
     'when-text' => '<p>Il-Ġimgħa Ewropea tal-Ikkowdjar hija moviment bażiku li jiċċelebra l-kreattività, is-soluzzjoni tal-problemi u kollaborazzjoni permezz ta’ programmazzjoni u attivitajiet tekniċi oħra. L-idea hija li l-programmazzjoni ssir aktar viżibbli, biex iż-żgħażagħ, l-adulti u l-anzjani jintwerew kif tista’ tingħata l-ħajja lill-ideat bil-kodiċi, biex dawn il-ħiliet isiru aktar ċari u biex jingħaqdu persuni motivati biex jitgħallmu.</p>',
     'codeweek_in_numbers-title' => 'Il-Ġimgħa tal-Ikkowdjar f’numri',
-    'codeweek_in_numbers-text' => '<p>Fl-2018, 2.7 miljun ruħ f’aktar minn 70 pajjiż madwar id-dinja ħadu sehem fil-Ġimgħa tal-UE tal-Ikkowdjar. 2.3 miljun żagħżugħ addizzjonali kienu involuti fil-<a href="http://africacodeweek.org/">Ġimgħa Afrikana tal-Ikkowdjar</a>, li hija inizjattiva mmexxija minn SAP u għal organizzazzjonijiet mingħajr skop ta’ qligħ.</p>
-                    <p>Jekk pajjiżek għadu mhux involut, tista’ torganizza attivitajiet u tpoġġihom fuq il-<a href="/events">mappa</a> jew <a href="mailto:info@codeweek.eu">tagħmel xogħol volontarju</a> bħala ambaxxatur tal-Ġimgħa tal-Ikkowdjar.</p>',
+    'codeweek_in_numbers-text' => '<p>Fl-2019, 4.2 miljun ruħ f’aktar minn 80 pajjiż madwar id-dinja ħadu sehem fil-Ġimgħa tal-UE tal-Ikkowdjar.</p>
+                    <p>Il-parteċipant medju kellu 11-il sena u 49 % tal-parteċipanti fl-2019 kienu nisa jew bniet. 92 % tal-avvenimenti tal-Ġimgħa Ewropea tal-Ikkowdjar seħħew fl-iskejjel, li juru li l-isforzi biex tingħata s-setgħa lill-għalliema matul il-kampanja tal-2019 kienu ta’ suċċess.</p>
+                    <p>Kulħadd huwa mistieden biex jorganizza jew jingħaqad ma’ attività. Agħżel suġġett u udjenza fil-mira <a href="/add">użid l-attività tiegħek</a> <a href="/events">mal-mappa</a>.</p>',
     'run_by_volunteers-title' => 'Immexxija mill-voluntiera',
     'run_by_volunteers-text' => '<p>Il-Ġimgħa tal-UE tal-Ikkowdjar hija mmexxija mill-voluntiera. Wieħed, jew bosta <a href="/ambassadors">Ambaxxaturi tal-Ġimgħa tal-Ikkowdjar</a> jikkoordinaw l-inizjattiva f’pajjiżhom, iżda kulħadd jista’ jorganizza l-attività tiegħu stess u jżidha fuq il-mappa <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'Appoġġjata mill-Kummisjoni Ewropea',

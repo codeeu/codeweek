@@ -15,13 +15,10 @@ return [
                     EU Code Week is a grass-roots movement that celebrates creativity, problem solving and collaboration through programming and other tech activities. The idea is to make programming more visible, to show young, adults and elderly how you bring ideas to life with code, to demystify these skills and bring motivated people together to learn.
                 </p>',
 
-    'codeweek_in_numbers-text' => '
-                <p>
-                    In 2018, 2,7 million people in more than 70 countries around the world took part in EU Code Week. An additional 2,3 million young people were engaged in <a href="http://africacodeweek.org/">Africa Code Week</a>, which is a spin-off initiative run by SAP and non-for profit organisations.
-                </p>
-                <p>
-                    If your country is not involved yet, you can organise activities and put them on the <a href="/events">map</a> or <a href="mailto:info@codeweek.eu">volunteer</a> as a Code Week ambassador.
-                </p>',
+
+    'codeweek_in_numbers-text' => '<p>In 2019, 4,2 million people in more than 80 countries around the world took part in EU Code Week.</p>
+                    <p>The average participant was 11 years old and 49% of participants in 2019 were women or girls. 92% of EU Code Week events took place in schools, which show that efforts to empower teachers during the 2019 campaign have been successful.</p>
+                    <p>Anyone is welcome to organise or join an activity. Just pick a topic and a target audience and <a href="/add">add your activity</a> to the <a href="/events">map</a>.</p>',
 
     'run_by_volunteers-text' => '
                 <p>

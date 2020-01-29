@@ -5,9 +5,9 @@ return [
     'when-title' => 'De EU-programmeerweek van 2020 vindt plaats van 10 t/m 25 oktober.',
     'when-text' => '<p>De EU-programmeerweek is een burgerinitiatief waarin creativiteit, probleemoplossing en samenwerking worden gestimuleerd door middel van programmeren en andere technische activiteiten. Het idee erachter is om programmeren zichtbaarder te maken, om jongeren, volwassenen en ouderen te laten zien hoe je ideeën met programmeercode tot leven kunt brengen, om deze vaardigheden te ontsluieren en om gemotiveerde mensen bij elkaar te brengen om te leren.</p>',
     'codeweek_in_numbers-title' => 'De programmeerweek in cijfers',
-    'codeweek_in_numbers-text' => '<p>In 2018 deden 2,7 miljoen mensen in meer dan 70 landen over de hele wereld mee aan de EU-programmeerweek. Nog eens 2,3 miljoen jongeren waren betrokken bij de <a href="http://africacodeweek.org/">Africa Code Week</a>, een door SAP en non-profitorganisaties georganiseerde spin-off.</p>
-
-                    <p>Als jouw land nog niet meedoet, kun je zelf activiteiten organiseren en die op de <a href="/events">kaart</a> zetten of als <a href="mailto:info@codeweek.eu">vrijwilliger</a> ambassadeur van de programmeerweek worden.</p>',
+    'codeweek_in_numbers-text' => '<p>In 2019 deden 4,2 miljoen mensen in meer dan 80 landen over de hele wereld mee aan de EU-programmeerweek.</p>
+                    <p>De gemiddelde deelnemer was 11 jaar oud en 49% van de deelnemers in 2019 waren vrouwen of meisjes. 92% van de evenementen in het kader van de EU-programmeerweek vond plaats op scholen, waaruit blijkt dat de inspanningen om leerkrachten tijdens de campagne van 2019 mondiger te maken, succesvol zijn geweest.</p>
+                    <p>Iedereen mag een activiteit organiseren of met een activiteit meedoen. Kies gewoon een onderwerp en doelgroep en <a href="/add">zet je activiteit</a> op de <a href="/events">kaart</a>.</p>',
     'run_by_volunteers-title' => 'Georganiseerd door vrijwilligers',
     'run_by_volunteers-text' => '<p>De EU-programmeerweek wordt georganiseerd door vrijwilligers. Een of meer <a href="/ambassadors">ambassadeurs van de programmeerweek</a> coördineren het initiatief in hun land, maar daarnaast kan iedereen zelf een activiteit organiseren en dat op de kaart zetten op <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'Ondersteund door de Europese commissie',
