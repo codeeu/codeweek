@@ -5,9 +5,9 @@ return [
     'when-title' => '2020 AB Kod Haftası <strong>10 ile 25 Ekim</strong> tarihleri arasında gerçekleşecek.',
     'when-text' => '<p>AB Kod Haftası, programlama ve diğer teknolojik aktiviteler yoluyla yaratıcılığı, problem çözmeyi ve iş birliğini teşvik eden bir taban hareketidir. Buradaki amaç, programlamayı daha görünür kılmak, gençlere, yetişkinlere ve yaşlılara fikirleri kodlamayla nasıl hayata geçirdiğinizi göstermek, bu becerileri ortaya çıkarmak ve motive olmuş kişileri öğrenme amacıyla bir araya getirmektir.</p>',
     'codeweek_in_numbers-title' => 'Rakamlarla Kod Haftası',
-    'codeweek_in_numbers-text' => '<p>2018 yılında, dünya genelinde 70\'den fazla ülkede 2,7 milyon insan AB Kod Haftasına katıldı. SAP ve kâr amacı gütmeyen kuruluşlar tarafından yürütülen bir yan girişim olan <a href="http://africacodeweek.org/">Afrika Kod Haftasına</a> 2,3 milyon genç katıldı.</p>
-
-                    <p>Ülkeniz henüz katılmadıysa, aktivite düzenleyebilir ve bunu <a href="/events">haritaya</a> ekleyebilir ya da Kod Haftası elçisi olarak <a href="mailto:info@codeweek.eu">gönüllü</a> olabilirsiniz.</p>',
+    'codeweek_in_numbers-text' => '<p>2019 yılında, dünya genelinde 80\'den fazla ülkede 4,2 milyon insan AB Kod Haftasına katıldı.</p>
+                    <p>Ortalama katılımcı yaşı 11 olurken, 2019’daki katılımcıların %49’u kadınlar veya genç kızlardı. EU Code Week etkinliklerinin %92’si okullarda gerçekleştirildi; bu da 2019 kampanyası sırasında öğretmenleri güçlendirmeye yönelik çabaların başarıya ulaştığı anlamına geliyor.</p>
+                    <p>Herkes bir aktivite düzenleyebilir veya mevcut bir aktiviteye katılabilir. Bir konu seçip hedef kitlenizi belirleyin ve <a href="/add">haritaya aktivitenizi</a> <a href="/events">ekleyin</a>.</p>',
     'run_by_volunteers-title' => 'Gönüllülüğe dayalı etkinlik',
     'run_by_volunteers-text' => '<p>AB Kod Haftası gönüllüler tarafından yönetilmektedir. Bir ya da birkaç <a href="/ambassadors">Kod Hafta Elçisi</a> ülkelerindeki girişimi koordine etmektedir, fakat herkes kendi aktivitesini düzenleyebilir ve bunu <a href="/">codeweek.eu</a> haritasına ekleyebilir.</p>',
     'supported_by_commission-title' => 'Avrupa Komisyonu tarafından desteklenmektedir',

@@ -14,8 +14,8 @@ return [
     |
     */
 
-    'title' => 'Resultattavle for #codeweek-arrangementer',
-    'paragraph'=>'Hvilke lande i Europa summer af kodeaktivitet? Resultattavlen er sorteret efter antallet af oplistede kodearrangementer i forhold til befolkningen, så bliv ikke overrasket over at se nogle af de mindre lande højt oppe på listen!',
+    'title' => 'Hvilke lande summer af kodeaktivitet?',
+    'paragraph'=>'Resultattavlen er sorteret efter antallet af oplistede kodearrangementer i forhold til befolkningen, så bliv ikke overrasket over at se nogle af de mindre lande højt oppe på listen!',
     'parcipating_with'=>'deltager med',
     'events'=>'arrangementer'
 

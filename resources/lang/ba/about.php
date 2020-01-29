@@ -5,8 +5,9 @@ return [
     'when-title'=> 'Tokom 2020, Sedmica kodiranja EU će se odvijati od 10. do 25. oktobra.',
     'when-text'=>'<p>Sedmica kodirnja EU je pokret širokih masa u kom se slavi kreativnost, rješavanje problema i saradnja putem programiranja i drugih tehnoloških aktivnosti. Zamisao je da se programiranje načini vidljivijim, da se mladima, odraslima i starijima pokaže kako kodiranjem mogu svoje ideje sprovesti u realnost, da se te vještine demistificiraju i da se okupe oni koji su motivirani za učenje.</p>',
     'codeweek_in_numbers-title'=>'Sedmica kodiranja u ciframa',
-    'codeweek_in_numbers-text'=>'<p>U Sedmici kodiranja EU 2018. učestvovalo je 2,7 miliona ljudi iz preko 70 zemalja širom svijeta. Dodatnih 2,3 miliona mladih ljudi bilo je angažirano u <a href="http://africacodeweek.org/">Sedmici kodiranja u Africi</a>, koja predstavlja srodnu inicijativu koju vode SAP i neprofitne organizacije.</p>
-                    <p>Ako vaša zemlja još uvijek nije angažirana, vi možete organizirati događaje i staviti je na <a href="/events">mapu</a> ili <a href="mailto:info@codeweek.eu">volontirati</a> kao ambasador Sedmice kodiranja.</p>',
+    'codeweek_in_numbers-text' => '<p>U Sedmici kodiranja EU 2019. učestvovalo je 4,2 miliona ljudi iz preko 80 zemalja širom svijeta.</p>
+                    <p>Prosječni učesnik imao je 11 godina, a 49% učesnika u 2019. bili su žene ili djevojčice. 92% događaja vezanih za Sedmicu kodiranja EU dešavalo se u školama, što pokazuje da su napori na jačanju nastavnika tokom kampanje 2019. bili uspješni.</p>
+                    <p>Të gjithë janë të mirëpritur të organizojnë ose të marrin pjesë në një aktivitet. Thjesht zgjidhni një temë dhe audiencën e synuar dhe <a href="/add">shtoni aktivitetin</a> tuaj në <a href="/events">harta</a>.</p>',
     'run_by_volunteers-title'=>'Vode je volonteri',
     'run_by_volunteers-text'=>'<p>Sedmicu kodiranja EU vode volonteri. Jedan, ili nekoliko <a href="/ambassadors">ambasadora Sedmice kodiranja</a> koordinira tu inicijativu u svojiim zemljama, ali svako može organizirati svoju vlastitu aktivnosti i dodavati i svoj doprinos na mapi <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title'=>'Podržava je Evropska komisija',

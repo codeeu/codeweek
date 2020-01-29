@@ -5,9 +5,9 @@ return [
     'when-title' => 'U 2020. Europski tjedan programiranja održavat će se između 10. i 25. listopada.',
     'when-text' => '<p>Europski tjedan programiranja društvena je inicijativa kojom se slavi kreativnost, rješavanje problema i suradnja kroz programiranje i ostale tehnološke aktivnosti. Ideja je učiniti programiranje vidljivijim, pokazati mladima, odraslima i starijima kako programiranjem realizirati ideje, demistificirati te vještine i okupiti motivirane osobe kako bi učile.</p>',
     'codeweek_in_numbers-title' => 'Tjedan programiranja u brojkama',
-    'codeweek_in_numbers-text' => '<p>Godine 2018. Europski tjedan programiranja okupio je 2,7 milijuna ljudi u više od 70 zemalja diljem svijeta. Dodatnih 2,3 milijuna ljudi bilo je uključeno u <a href="http://africacodeweek.org/">Afrički tjedan programiranja</a>, inicijativu koja se razvila iz Europskog tjedna programiranja te koju vode SAP i neprofitne organizacije.</p>
-
-                    <p>Ako vaša zemlja još nije uključena, možete organizirati aktivnosti i unijeti ih na <a href="/events">kartu</a> ili možete <a href="mailto:info@codeweek.eu">volontirati</a> kao ambasador Tjedna programiranja.</p>',
+    'codeweek_in_numbers-text' => '<p>Godine 2019. Europski tjedan programiranja okupio je 4,2 milijuna ljudi u više od 80 zemalja diljem svijeta.</p>
+                    <p>Prosječni sudionik imao je 11 godina, a 49 % sudionika u 2019. bile su žene ili djevojke. Čak 92 % događaja tijekom Europskog tjedna programiranja odvijalo se u školama čime se ukazuje da su nastojanja koja su tijekom kampanje u 2019. uložena u osnaživanje nastavnika bila uspješna.</p>
+                    <p>Svi su dobrodošli organizirati događanje ili mu se pridružiti. Odaberite temu i ciljanu publiku te <a href="/add">dodajte svoju aktivnost</a> na <a href="/events">kartu</a>.</p>',
     'run_by_volunteers-title' => 'Organizatori su volonteri',
     'run_by_volunteers-text' => '<p>Europski tjedan programiranja organiziraju volonteri. Jedan <a href="/ambassadors">ambasador Tjedna programiranja</a> ili njih nekoliko koordiniraju inicijativu u svojim zemljama, no bilo tko može organizirati svoju aktivnost i unijeti je na kartu na stranici <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'Podrška Europske komisije',

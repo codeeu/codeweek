@@ -2,11 +2,12 @@
 
 
 return [
-    'when-title' => 'V roku 2020 sa Európsky týždeň programovania koná od 10. do 25. októbra>.',
+    'when-title' => 'V roku 2020 sa Európsky týždeň programovania koná od 10. do 25. októbra.',
     'when-text' => '<p>Európsky týždeň programovania je nezávislé hnutie, ktoré oslavuje tvorivosť, riešenie problémov a spoluprácu prostredníctvom programovania a ďalších technologických aktivít. Zámerom je viac zviditeľniť programovanie, ukázať mladým, dospelým a starším ľuďom, ako vdýchnuť život nápadom pomocou programovania, rúcať mýty o týchto zručnostiach a spojiť motivovaných ľudí, aby sa spolu vzdelávali.</p>',
     'codeweek_in_numbers-title' => 'Týždeň programovania v číslach',
-    'codeweek_in_numbers-text' => '<p>V roku 2018 sa Európskeho týždňa programovanie zúčastnilo 2,7 milióna ľudí vo viac ako 70 krajinách celého sveta. Ďalších 2,3 milióna mladých ľudí sa zapojilo do <a href="http://africacodeweek.org/">Afrického týždňa programovania</a>, čo je spin-off iniciatíva, ktorú organizuje SAP a iné neziskové organizácie.</p>
-                    <p>Ak sa vaša krajina ešte nezapojila, môžete usporiadať aktivity a zaznamenať ich na <a href="/events">mape</a> alebo sa môžete <a href="mailto:info@codeweek.eu">prihlásiť ako dobrovoľník</a> a stať sa veľvyslancom Týždňa programovania.</p>',
+    'codeweek_in_numbers-text' => '<p>V roku 2019 sa Európskeho týždňa programovanie zúčastnilo 4,2 milióna ľudí vo viac ako 80 krajinách celého sveta.</p>
+                    <p>Priemerný vek účastníkov bol 11 rokov a v roku 2019 bolo 49 % účastníkov ženského pohlavia. 92 % podujatí Európskeho týždňa programovania sa uskutočnilo na školách, čo dosvedčuje úspešnosť úsilia o vybavenie učiteľov zručnosťami počas kampane v roku 2019.</p>
+                    <p>Ktokoľvek môže usporiadať aktivitu alebo sa zapojiť do aktivity. Stačí si vybrať tému a cieľovú skupinu a <a href="/add">pridať aktivitu</a> na <a href="/events">mapu</a></p>',
     'run_by_volunteers-title' => 'Hnutie dobrovoľníkov',
     'run_by_volunteers-text' => '<p>Európsky týždeň programovania organizujú dobrovoľníci. Jeden či niekoľkí <a href="/ambassadors">veľvyslanci Týždňa programovania</a> koordinujú iniciatívu vo svojej vlasti, no ktokoľvek môže usporiadať vlastnú programátorskú aktivitu a pridať ju na mapu na stránke <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'S podporou Európskej komisie',
