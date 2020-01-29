@@ -5,9 +5,9 @@ return [
     'when-title' => 'Nel 2020 la Settimana europea della programmazione si terrà dal 10 al 25 ottobre.',
     'when-text' => '<p>La Settimana europea della programmazione è un evento che nasce dal basso e celebra la creatività, la risoluzione dei problemi e la collaborazione attraverso la programmazione e altre attività tecnologiche. L’idea è di rendere la programmazione più visibile, mostrare ai giovani, agli adulti e agli anziani come dare vita alle proprie idee con la programmazione, spiegare queste capacità e mettere insieme persone motivate per imparare.</p>',
     'codeweek_in_numbers-title' => 'Settimana della programmazione in numeri',
-    'codeweek_in_numbers-text' => '<p>Nel 2018, 2,7 milioni di persone provenienti da più di 70 paesi in tutto il mondo hanno partecipato alla Settimana europea della programmazione. In aggiunta, 2,3 milioni di giovani sono stati impegnati nella <a href="http://africacodeweek.org/">Settimana di programmazione africana</a>, un’iniziativa spin-off gestita da SAP e organizzazioni no profit.</p>
-
-                    <p>Se il tuo paese non è ancora coinvolto, puoi organizzare delle attività e inserirle sulla <a href="/events">mappa</a> o <a href="mailto:info@codeweek.eu">fare volontariato</a> come ambasciatore della Settimana europea della programmazione.</p>',
+    'codeweek_in_numbers-text' => '<p>Nel 2019, 4,2 milioni di persone provenienti da più di 80 paesi in tutto il mondo hanno partecipato alla Settimana europea della programmazione.</p>
+                    <p>L’età media dei partecipanti era di 11 anni e il 49 % di loro nel 2019 erano donne o ragazze. Il 92 % degli eventi della settimana europea della programmazione si è svolto nelle scuole, mostrando che gli sforzi per rafforzare gli insegnanti durante la campagna 2019 hanno avuto successo.</p>
+                    <p>Tutti sono ben accetti ad organizzare un’attività o ad unirvisi. Non dovrai far altro che scegliere un argomento e un pubblico di destinazione e <a href="/add">aggiungere la tua attività</a> alla <a href="/events">mappa</a>.</p>',
     'run_by_volunteers-title' => 'Gestita da volontari',
     'run_by_volunteers-text' => '<p>La Settimana europea della programmazione è gestita da volontari. Uno o più <a href="/ambassadors">ambasciatori della Settimana europea della programmazione</a> coordinano l’iniziativa nei loro paesi, ma ognuno può organizzare la propria attività e aggiungerla alla mappa di <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'Sostenuta dalla Commissione europea',

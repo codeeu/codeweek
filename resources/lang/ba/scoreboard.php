@@ -14,8 +14,8 @@ return [
     |
     */
 
-    'title' => 'Tabela s rezultatima događaja #codeweek',
-    'paragraph'=>'Koje zemlje u Evropi su prepune aktivnostima kodiranja? Tabela s rezultatima je sortirana po broju navedenih događaja kodiranja po broju stanovnika, tako da se ne iznenadite što su neke od manjih zemalja visočije na listi!',
+    'title' => 'Koje zemlje su prepune aktivnostima kodiranja?',
+    'paragraph'=>'Tabela s rezultatima je sortirana po broju navedenih događaja kodiranja po broju stanovnika, tako da se ne iznenadite što su neke od manjih zemalja visočije na listi!',
     'parcipating_with'=>'učestvuje sa',
     'events'=>'događaji'
 

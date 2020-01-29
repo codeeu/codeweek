@@ -14,8 +14,8 @@ return [
     |
     */
 
-    'title' => 'Tabella ta’ valutazzjoni tal-Avvenimenti ta’ #codeweek',
-    'paragraph'=>'Liema pajjiżi fl-Ewropa mimlijin antiċipazzjoni għal attivitajiet ta’ kkowdjar? Din it-tabella ta’ valutazzjoni hija rranġata skont in-numru ta’ avvenimenti ta’ kkowdjar elenkati għall-popolazzjoni, għalhekk tiħux qatgħa jekk tara xi wħud mill-pajjiżi iżgħar iktar ’il fuq fil-lista!',
+    'title' => 'Liema pajjiżi qedin jeċċellaw f’attivitajiet tal-coding?',
+    'paragraph'=>'Din it-tabella ta’ valutazzjoni hija rranġata skont in-numru ta’ avvenimenti ta’ kkowdjar elenkati għall-popolazzjoni, għalhekk tiħux qatgħa jekk tara xi wħud mill-pajjiżi iżgħar iktar ’il fuq fil-lista!',
     'parcipating_with'=>'qed jipparteċipa ma’',
     'events'=>'avvenimenti'
 

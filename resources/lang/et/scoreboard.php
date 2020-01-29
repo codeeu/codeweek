@@ -14,8 +14,8 @@ return [
     |
     */
 
-    'title' => '#codeweek ürituste punktitabel',
-    'paragraph'=>'Mis Euroopa riigid kihavad programmeerimisest? Riigid on punktitabelis järjestatud registreeritud programmeerimisürituste arvu järgi elanike kohta ja seepärast ära imesta, kui mõned väiksemad riigid nimekirja tipus troonivad!',
+    'title' => 'Mis riigid kihavad programmeerimisest?',
+    'paragraph'=>'Riigid on punktitabelis järjestatud registreeritud programmeerimisürituste arvu järgi elanike kohta ja seepärast ära imesta, kui mõned väiksemad riigid nimekirja tipus troonivad!',
     'parcipating_with'=>'osaleb',
     'events'=>'üritusega'
 

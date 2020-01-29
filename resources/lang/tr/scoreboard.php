@@ -14,8 +14,8 @@ return [
     |
     */
 
-    'title' => '#codeweek Etkinlik Puan Tablosu',
-    'paragraph'=>'Avrupa’da hangi ülkeler kodlama faaliyeti ile uğraşıyor? Puan tablosu, popülasyona göre listelenen kodlama etkinliklerinin sayısı baz alınarak hazırlanmıştır, bu nedenle bazı küçük ülkelerin listede yukarılarda yer alması sizi şaşırtmasın!',
+    'title' => 'Hangi ülkeler kodlama faaliyeti ile uğraşıyor?',
+    'paragraph'=>'Puan tablosu, popülasyona göre listelenen kodlama etkinliklerinin sayısı baz alınarak hazırlanmıştır, bu nedenle bazı küçük ülkelerin listede yukarılarda yer alması sizi şaşırtmasın!',
     'parcipating_with'=>'katılımcı ülke:',
     'events'=>'etkinlik adı:'
 
