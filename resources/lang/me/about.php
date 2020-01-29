@@ -5,9 +5,9 @@ return [
     'when-title' => 'Evropska nedjelja programiranja održaće se od 10. do 25. oktobra 2020. godine.',
     'when-text' => '<p>Evropska nedjelja programiranja je grass-roots (lokalni društveni projekat) projekat koji promoviše kreativnost, rješavanje problema i saradnju kroz programiranje i druge tehnološke aktivnosti. Ideja je da se programiranje učini vidljivijim, da se mladima, odraslima i starijima pokaže kako svoje ideje mogu pretočiti u stvarnost, da im se same vještine približe, te da se motivisani pojedinci okupe kako bi učili.</p>',
     'codeweek_in_numbers-title' => '>Nedjelja programiranja u brojkama',
-    'codeweek_in_numbers-text' => '<p>Tokom 2018. godine, 2,7 miliona ljudi u više od 70 zemalja širom svijeta učestvovalo je u Evropskoj nedjelji programiranja. Još 2,3 miliona mladih učestvovalo je u <a href="http://africacodeweek.org/">Afričkoj nedjelji programiranja</a> , što je spin-off inicijativa koju vode SAP i neprofitne organizacije.</p>
-
-                    <p>Ukoliko vaša zemlja još uvijek nije uključena, možete organizovati akivnosti i staviti ih na <a href="/events">mapu</a>  ili <a href="mailto:info@codeweek.eu">volontirati</a> kao ambasador Nedjelje programiranja.</p>',
+    'codeweek_in_numbers-text' => '<p>Tokom 2019. godine, 4,2 miliona ljudi u više od 80 zemalja širom svijeta učestvovalo je u Evropskoj nedjelji programiranja.</p>
+                    <p>Prosječna starost učesnika bila je 11 godina, a 49% učesnika tokom 2019. godine bile su žene ili djevojčice. 92% događaja Evropske Nedjelje programiranja odvijalo se u školama što pokazuje da su napori usmjereni na osnaženje predavača tokom kampanje 2019. godine urodili plodom.</p>
+                    <p>Svako može organizovati ili se pridružiti događaju. Jednostavno odaberite temu i ciljnu grupu i <a href="/add">dodajte vaš događaj</a> na <a href="/events">map</a>.</p>',
     'run_by_volunteers-title' => 'Događaj vode volonteri',
     'run_by_volunteers-text' => '<p>Evropsku nedjelju programiranja vode volonteri. Jedan ili više <a href="/ambassadors">ambasadora Nedjelje programiranja </a> koordinišu inicijativom u svojim zemljama, ali svako može organizovati svoju aktivnost i dodati je na <a href="/">codeweek.eu</a> mapu.</p>',
     'supported_by_commission-title' => 'Podržano od strane Evropske komisije',
