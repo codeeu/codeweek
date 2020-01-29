@@ -5,8 +5,9 @@ return [
     'when-title' => '2020. gadā ES programmēšanas nedēļa notiks no 10. līdz 25. oktobrim.',
     'when-text' => '<p>ES programmēšanas nedēļa ir iedzīvotāju kustība, kas veltīta radošumam, problēmu risināšanai un sadarbībai, izmantojot programmēšanu un citas tehnoloģiskas aktivitātes. Pamatideja ir padarīt programmēšanu populārāku, parādīt jauniešiem, pieaugušajiem un vecāka gadagājuma cilvēkiem, kā ar programmēšanas palīdzību īstenot idejas, kliedēt maldīgus priekšstatus par programmēšanas prasmēm un sapulcināt kopā motivētus cilvēkus, kuri vēlas tās apgūt.</p>',
     'codeweek_in_numbers-title' => 'Programmēšanas nedēļa skaitļos',
-    'codeweek_in_numbers-text' => '<p>2018. gadā ES programmēšanas nedēļā piedalījās 2,7 miljoni cilvēku vairāk nekā 70 pasaules valstīs. Vēl 2,3 miljoni jauniešu piedalījās <a href="http://africacodeweek.org/">Āfrikas programmēšanas nedēļā</a>, kas ir saistīta iniciatīva, kuru vada SAP un bezpeļņas organizācijas.</p>
-                    <p>Ja tava valsts vēl nav iesaistījusies, tu vari organizēt pasākumus un pievienot tos <a href="/events">kartē</a> vai kļūt par <a href="mailto:info@codeweek.eu">brīvprātīgo</a>, darbojoties kā programmēšanas nedēļas vēstnieks.</p>',
+    'codeweek_in_numbers-text' => '<p>2019. gadā ES programmēšanas nedēļā piedalījās 4,2 miljoni cilvēku vairāk nekā 80 pasaules valstīs.</p>
+                    <p>Vidējais dalībnieks bija 11 gadus vecs, un 49 % dalībnieku 2019. gadā bija sievietes un meitenes. 92 % ES Programmēšanas nedēļas pasākumu notika skolās, kas pierāda, ka centieni apmācīt skolotājus 2019. gada kampaņā ir bijuši sekmīgi.</p>
+                    <p>Ikviens ir aicināts organizēt vai pievienoties pasākumiem. Vienkārši izvēlieties tematu un mērķa auditoriju un <a href="/add">pievienojiet savu pasākumu</a> <a href="/events">kartei</a></p>',
     'run_by_volunteers-title' => 'To vada brīvprātīgie',
     'run_by_volunteers-text' => '<p>ES programmēšanas nedēļu vada brīvprātīgie. Viens vai vairāki <a href="/ambassadors">programmēšanas nedēļas vēstnieki</a> koordinē šo iniciatīvu savā valstī, bet ikviens var noorganizēt savu pasākumu un pievienot to <a href="/">codeweek.eu</a> kartē.</p>',
     'supported_by_commission-title' => 'Eiropas Komisijas atbalsts',

@@ -5,9 +5,9 @@ return [
     'when-title' => '2020 m. ES programavimo savaitė vyks spalio 10-25 d.',
     'when-text' => '<p>ES programavimo savaitė yra visuomeninė iniciatyva, kuria skatinamas kūrybiškumas, problemų sprendimas ir bendradarbiavimas pasitelkiant programavimą ir kitą technologinę veiklą. Šios iniciatyvos tikslas yra populiarinti programavimą, parodyti, kaip žmonės gali įgyvendinti idėjas programuodami, susipažinti su programavimo įgūdžiais ir suburti motyvuotus žmones mokytis.</p>',
     'codeweek_in_numbers-title' => 'Programavimo savaitė skaičiais',
-    'codeweek_in_numbers-text' => '<p>2018 m. ES programavimo savaitėje dalyvavo beveik 2,7 milijono žmonių iš daugiau nei 70 pasaulio šalių. Dar 2,3 milijono jaunuolių dalyvavo <a href="http://africacodeweek.org/">Afrikos programavimo savaitėje</a> – panašioje iniciatyvoje, kurią įgyvendina SAP ir ne pelno organizacijos.</p>
-
-                    <p>Jei jūsų šalis dar nedalyvauja, organizuokite savo renginius ir pažymėkite juos <a href="/events">žemėlapyje</a> arba <a href="mailto:info@codeweek.eu">tapkite</a> Programavimo savaitės ambasadoriumi.</p>',
+    'codeweek_in_numbers-text' => '<p>2019 m. ES programavimo savaitėje dalyvavo beveik 4,2 milijono žmonių iš daugiau nei 80 pasaulio šalių.</p>
+                    <p>Vidutinis dalyvio amžius buvo 11 metų, o 49 proc. dalyvių sudarė moterys ir mergaitės. 92 proc. ES programavimo savaitės renginių vyko mokyklose, o tai reiškia, kad 2019 m. kampanijos dėl mokytojų įgalinimo pastangos buvo vaisingos.</p>
+                    <p>Visi kviečiami organizuoti renginius ar prie jų prisijungti. Tiesiog pasirinkite temą bei tikslinę auditoriją <a href="/add">ir pažymėkite savo renginį</a> <a href="/events">žemėlapyje</a>.</p>',
     'run_by_volunteers-title' => 'Vykdo savanoriai',
     'run_by_volunteers-text' => '<p>ES programavimo savaitę vykdo savanoriai. Šią iniciatyvą savo šalyse koordinuoja vienas ar keli <a href="/ambassadors">Programavimo savaitės ambasadoriai</a>, o suorganizuoti savo renginį ir įtraukti jį į <a href="/">codeweek.eu</a> žemėlapį gali visi norintys.</p>',
     'supported_by_commission-title' => 'Remia Europos Komisija',
