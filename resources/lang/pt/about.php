@@ -14,13 +14,9 @@ return [
             A Semana Europeia da Programação é uma iniciativa de base que celebra a criatividade, a resolução de problemas e a colaboração através da programação e de outras atividades tecnológicas. A ideia é tornar a programação mais visível, mostrar aos jovens, adultos e idosos a forma de dar vida às ideias através da programação, desmistificar estas competências e reunir pessoas motivadas para aprender.
         </p>',
 
-    'codeweek_in_numbers-text' => '
-        <p>
-            Em 2018, 2,7 milhões de pessoas em mais de 70 países à volta do mundo participaram na Semana Europeia da Programação. Para além destes, mais 2,3 milhões de jovens participaram na <a href="http://africacodeweek.org/">Semana Africana da Programação</a>, uma iniciativa gerida pela SAP e por organizações sem fins lucrativos.
-        </p>
-        <p>
-            Se o seu país ainda não for participante, pode organizar atividades e colocá-las no <a href="/events">mapa</a> ou oferecer-se como <a href="mailto:info@codeweek.eu">voluntário</a> para a missão de embaixador da Semana da Programação.
-        </p>',
+    'codeweek_in_numbers-text' => '<p>Em 2019, 4,2 milhões de pessoas em mais de 80 países à volta do mundo participaram na Semana Europeia da Programação.</p>
+                    <p>A idade média dos participantes rondou os 11 anos e 49 % dos participantes em 2019 eram mulheres ou raparigas. 92 % dos eventos da Semana Europeia da Programação decorreram em escolas, o que demonstra que os esforços para capacitar os professores na campanha de 2019 tiveram êxito.</p>
+                    <p>Qualquer pessoa pode organizar ou juntar-se a uma atividade. Basta escolher um tema e um público-alvo e <a href="/add">adicionar a sua atividade</a> ao <a href="/events">mapa</a>.</p>',
 
     'run_by_volunteers-text' => '
         <p>

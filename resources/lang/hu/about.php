@@ -5,9 +5,9 @@ return [
     'when-title' => '2020-ban az európai programozási hétre október 10. és 25. között kerül sor.',
     'when-text' => '<p>Az európai programozási hét alulról szerveződő kezdeményezés, amely a kreativitást, a problémamegoldást és az együttműködést ünnepli a programozáson és egyéb technológiai tevékenységeken keresztül. Az alapgondolat a programozás láthatóbbá tétele, valamint hogy megmutassa a fiataloknak, a felnőtteknek és az időseknek, hogyan valósíthatók meg az ötletek a programozás révén, továbbá a készségek demisztifikálása, valamint a tanulni vágyó emberek egymással való összekapcsolása.</p>',
     'codeweek_in_numbers-title' => 'A programozási hét számokban',
-    'codeweek_in_numbers-text' => '<p>2018-ban világszerte több mint 70 országban 2,7 millió ember vett részt az európai programozási héten. Ezenkívül 2,3 millió fiatal vett részt az <a href="http://africacodeweek.org/">afrikai programozási hét</a> rendezvényeiben, amely az SAP és nonprofit szervezetek spin-off kezdeményezése.</p>
-
-                    <p>Ha az országa még nem vesz részt a kezdeményezésben, szervezzen tevékenységeket, és tegye fel őket a <a href="/events">térképre</a>, vagy jelentkezzen <a href="mailto:info@codeweek.eu">önkéntesnek</a>, és legyen a programozási hét nagykövete.</p>',
+    'codeweek_in_numbers-text' => '<p>2019-ban világszerte több mint 80 országban 4,2 millió ember vett részt az európai programozási héten.</p>
+                    <p>A résztvevők átlagéletkora 11 év volt és 49%-uk nő vagy leány volt. Az európai programozási hét eseményeinek 92%-ára iskolákban került sor, ami azt mutatja, hogy a tanárok felhatalmazására irányuló erőfeszítések a 2019-es kampány során sikeresnek bizonyultak.</p>
+                    <p>Bárki szervezhet tevékenységet, vagy csatlakozhat egy már meglévőhöz. Válasszon témát és célközönséget, ezt követően pedig <a href="/add">adja hozzá tevékenységét</a> a <a href="/events">térképhez</a></p>',
     'run_by_volunteers-title' => 'Önkéntesek működtetik',
     'run_by_volunteers-text' => '<p>Az európai programozási hetet önkéntesek működtetik. A kezdeményezést egy vagy több <a href="/ambassadors">nagykövet</a> koordinálja a saját országában, de bárki megszervezheti a saját tevékenységét, és felteheti a <a href="/">codeweek.eu</a> térképre.</p>',
     'supported_by_commission-title' => 'Az Európai Bizottság támogatásával',

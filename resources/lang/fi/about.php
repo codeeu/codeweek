@@ -5,8 +5,9 @@ return [
     'when-title' => 'Vuonna 2020 EU:n koodausviikko järjestetään 10.–25. lokakuuta.',
     'when-text' => '<p>EU:n koodausviikko on ruohonjuuritason hanke, jolla edistetään luovuutta, ongelmanratkaisukykyä ja yhteistyötä ohjelmoinnin ja muiden tekniikan alan tapahtumien kautta. Ajatuksena on tehdä ohjelmointia tunnetuksi ja näyttää nuorille, aikuisille ja senioreille, miten ideat voidaan herättää henkiin koodin avulla. Tavoitteena on myös hälventää koodaukseen kohdistuvaa mystiikkaa ja tuoda motivoituneet ihmiset oppimaan yhdessä.</p>',
     'codeweek_in_numbers-title' => 'Koodausviikko lukuina',
-    'codeweek_in_numbers-text' => '<p>Vuonna 2018 EU:n koodausviikkoon osallistui 2,7 ihmistä yli 70 maassa ympäri maailmaa. Lisäksi 2,3 miljoonaa nuorta osallistui EU:n koodausviikon mallin mukaan järjestettyyn <a href="http://africacodeweek.org/">Afrikan koodausviikkoon</a>, josta vastaa SAP yhdessä kansalaisjärjestöjen kanssa.</p>
-                    <p>Vaikka oma maasi ei olisi vielä aloitteessa mukana, voit järjestää tapahtumia ja merkitä ne <a href="/events">karttaan</a> tai voit <a href="mailto:info@codeweek.eu">ilmoittautua vapaaehtoiseksi</a> toimimaan koodausviikkolähettiläänä.</p>',
+    'codeweek_in_numbers-text' => '<p>Vuonna 2019 EU:n koodausviikkoon osallistui 4,2 ihmistä yli 80 maassa ympäri maailmaa.</p>
+                    <p>Osallistujien keskimääräinen ikä oli 11, ja 49 % osanottajista vuonna 2019 oli naisia tai tyttöjä. EU:n koodausviikon tapahtumista 92 % järjestettiin kouluissa, mikä osoittaa, että pyrkimykset opettajien valmiuksien tukemiseksi vuoden 2019 kampanjoissa ovat onnistuneet.</p>
+                    <p>Kuka tahansa voi järjestää tapahtuman tai liittyä sellaiseen. Valitse aihe ja kohdeyleisö ja <a href="/add">lisää tapahtumasi</a> <a href="/events">kartalle</a>.</p>',
     'run_by_volunteers-title' => 'Vapaaehtoisten vetämä aloite',
     'run_by_volunteers-text' => '<p>EU:n koodausviikon toiminnasta vastaavat vapaaehtoiset. Yksi tai useampi <a href="/ambassadors">koodausviikkolähettiläs</a> koordinoi aloitetta omassa maassaan, mutta kuka tahansa voi järjestää oman tapahtuman ja merkitä sen <a href="/">codeweek.eu</a>-karttaan.</p>',
     'supported_by_commission-title' => 'Euroopan komission tukema aloite',

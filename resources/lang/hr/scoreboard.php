@@ -14,8 +14,8 @@ return [
     |
     */
 
-    'title' => 'Pregled #codeweek događanja',
-    'paragraph'=>'Koje zemlje u Europi vrve aktivnostima u vezi s programiranjem? Pregled je razvrstan prema broju popisanih događanja programiranja po stanovništvu, stoga se nemojte iznenaditi ako neke manje zemlje vidite na višim mjestima na popisu.',
+    'title' => 'Koje zemlje vrve aktivnostima u vezi s programiranjem?',
+    'paragraph'=>'Pregled je razvrstan prema broju popisanih događanja programiranja po stanovništvu, stoga se nemojte iznenaditi ako neke manje zemlje vidite na višim mjestima na popisu.',
     'parcipating_with'=>'sudjeluje s',
     'events'=>'događanja'
 

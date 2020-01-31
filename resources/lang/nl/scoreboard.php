@@ -14,8 +14,8 @@ return [
     |
     */
 
-    'title' => 'Scorebord evenementen #codeweek',
-    'paragraph'=>'Welke landen in Europa bruist het van de programmeeractiviteiten? Het scorebord wordt gesorteerd volgens het aantal weergegeven programmeerevenementen per inwoner. Vandaar dat je enkele van de kleinere landen hoger op de lijst kunt zien staan!',
+    'title' => 'In welke landen bruist het van de programmeeractiviteiten ?',
+    'paragraph'=>'Het scorebord wordt gesorteerd volgens het aantal weergegeven programmeerevenementen per inwoner. Vandaar dat je enkele van de kleinere landen hoger op de lijst kunt zien staan!',
     'parcipating_with'=>'neemt deel met',
     'events'=>'evenementen'
 

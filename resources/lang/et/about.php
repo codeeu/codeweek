@@ -5,8 +5,9 @@ return [
     'when-title' => '2020. aasta ELi programmeerimisnädal Code Week toimub ajavahemikus 10. kuni 25. oktoober.',
     'when-text' => '<p>ELi programmeerimisnädal Code Week on rohujuuretasandil toimuv liikumine, millega tähistatakse loomingulisust, probleemide lahendamist ja koostööd nii programmeerimises kui ka teistes tehnoloogilistes tegevustes. Selle eesmärk on muuta programmeerimine nähtavamaks ning tutvustada noortele ja vanadele, kuidas koodikirjutamisega oma ideid ellu viia, hajutada programmeerimisega seotud saladusi ning motiveerida inimesi õppima.</p>',
     'codeweek_in_numbers-title' => 'Programmeerimisnädal Code Week numbrites',
-    'codeweek_in_numbers-text' => ' <p>2018. aastal võttis ELi programmeerimisnädalast Code Week osa 2,7 miljonit inimest ja rohkem kui 70 riiki. Lisaks sellele oli 2,3 miljonit noort seotud ELi algatusest inspiratsiooni saanud <a href="http://africacodeweek.org/">Aafrika programmeerimisnädalaga Code Week</a>, mille korraldajateks on SAP ja mittetulundusühingud.</p>
-                    <p>Kui teie riik ei ole veel programmeerimisnädalaga seotud, siis võite ise tegevusi organiseerida ja need <a href="/events">kaardile</a> lisada või hakata Code Weeki <a href="mailto:info@codeweek.eu">vabatahtlikuks saadikuks</a>.</p>',
+    'codeweek_in_numbers-text' => '<p>2019. aastal võttis ELi programmeerimisnädalast Code Week osa 4,2 miljonit inimest ja rohkem kui 80 riiki.</p>
+                    <p>2019. aastal oli keskmine osaleja 11-aastane ja 49% osalejatest olid naised või tüdrukud. ELi programmeerimisnädala Code Week üritustest toimus 92% koolides, mis näitab, et 2019. aasta õpetajate toetamise kampaania on olnud edukas.</p>
+                    <p>Kõik on oodatud tegevusi korraldama või neis osalema. Valige teema ja sihtrühm ning <a href="/add">lisage oma tegevus</a> <a href="/events">kaardile</a>.</p>',
     'run_by_volunteers-title' => 'Vabatahtlikest koosnev korraldustiim',
     'run_by_volunteers-text' => '<p>ELi programmeerimisnädala Code Week korraldajateks on vabatahtlikud. Algatust aitavad koordineerida iga riigi üks (või mitu) <a href="/ambassadors">Code Weeki saadikut</a>, kuid igaüks võib organiseerida ka oma tegevuse ja selle veebilehe <a href="/">codeweek.eu</a> kaardile lisada.</p>',
     'supported_by_commission-title' => 'Euroopa Komisjoni toetus',

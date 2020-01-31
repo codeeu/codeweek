@@ -5,8 +5,8 @@ return [
     'when-title' => 'Letošnji evropski teden programiranja bo potekal od 10. do 25. oktobra 2020.',
     'when-text' => '<p>Evropski teden programiranja je množično gibanje, ki slavi ustvarjalnost, reševanje težav in sodelovanje prek programiranja in drugih tehnoloških dejavnosti. Njegov namen je povečati prepoznavnost programiranja ter mladim, odraslim in starejšim pokazati, kako uresničiti zamisli s programiranjem, pojasniti ta znanja in spretnosti ter združiti motivirane ljudi v učenju.</p>',
     'codeweek_in_numbers-title' => 'Teden programiranja v številkah',
-    'codeweek_in_numbers-text' => '<p>Evropski teden programiranja je leta 2018 privabil k sodelovanju 2,7 milijona ljudi iz več kot 70 držav po vsem svetu. Dodatnih 2,3 milijona mladih je sodelovalo v <a href="http://africacodeweek.org/">afriškem tednu programiranja</a>, izpeljani pobudi, ki jo vodijo družba SAP in neprofitne organizacije.</p>
-                    <p>Če vaša država še ne sodeluje, lahko organizirate dejavnosti in jih dodate na <a href="/events">zemljevid</a> ali se <a href="mailto:info@codeweek.eu">prostovoljno</a> prijavite kot ambasador tedna programiranja.</p>',
+    'codeweek_in_numbers-text' => '<p>Evropski teden programiranja je leta 2019 privabil k sodelovanju 4,2 milijona ljudi iz več kot 80 držav po vsem svetu.</p>
+                    <p>Povprečna starost udeleženca je bila 11 let in 49 % udeležencev v letu 2019 je bilo žensk ali deklet. 92 % dogodkov evropskega tedna programiranja je potekalo v šolah, kar kaže, da so bila prizadevanja za okrepitev vloge učiteljev v kampanji leta 2019 uspešna.</p>',
     'run_by_volunteers-title' => 'Vodijo ga prostovoljci',
     'run_by_volunteers-text' => '<p>Evropski teden programiranja vodijo prostovoljci. Eden ali več <a href="/ambassadors">ambasadorjev tedna programiranja</a> usklajuje pobude v svoji državi, vsakdo pa lahko organizira svojo dejavnost in jo doda na zemljevid na spletnem mestu <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'Podpira ga Evropska komisija',
