@@ -5,8 +5,9 @@ return [
     'when-title'=> 'EU’s kodeuge 2020 finder sted mellem den 10. og 25. oktober.',
     'when-text'=>'<p>EU’s kodeuge er en græsrodsbevægelse, der fejrer kreativitet, problemløsning og samarbejde gennem programmering og andre tekniske aktiviteter. Idéen er at gøre programmering mere synligt for at vise unge, voksne og ældre, hvordan man fører sine idéer ud i livet med kode, at afmystificere disse færdigheder og at samle motiverede mennesker i et læringsmiljø.</p>',
     'codeweek_in_numbers-title'=>'Kodeugen i tal',
-    'codeweek_in_numbers-text'=>'<p>I 2018 deltog 2,7 millioner mennesker i over 70 lande på tværs af kloden i EU’s kodeuge. Desuden deltog 2,3 millioner unge i <a href="http://africacodeweek.org/">Afrikas kodeuge</a>, som er et spin-off-initiativ, der drives af SAP og nonprofitorganisationer.</p>
-                    <p>Hvis dit land endnu ikke er involveret, kan du afholde aktiviteter og sætte dem på <a href="/events">kortet</a> eller deltage som <a href="mailto:info@codeweek.eu">frivillig</a> ambassadør for kodeugen.</p>',
+    'codeweek_in_numbers-text' => '<p>I 2019 deltog 4,2 millioner mennesker i over 80 lande på tværs af kloden i EU’s kodeuge.</p>
+                    <p>Gennemsnitsdeltageren var 11 år, og 49 % af deltagerne i 2019 var kvinder eller piger. 92 % af arrangementerne i EU’s kodeuge foregik på skoler, og det viser, at indsatsen med at styrke lærerne i 2019-kampagnen har virket.</p>
+                    <p>Alle er velkomne til at afholde eller deltage i en aktivitet. Du skal bare vælge et emne og en målgruppe og <a href="/add">tilføje din aktivitet</a> på <a href="/events">kortet</a>.</p>',
     'run_by_volunteers-title'=>'Drevet af frivillige',
     'run_by_volunteers-text'=>'<p>EU’s kodeuge drives af frivillige. En eller flere <a href="/ambassadors">ambassadører for kodeugen</a> koordinerer initiativet i deres land, men alle kan afholde deres egne aktiviteter og sætte dem på kortet på <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title'=>'Støttet af Europa-Kommissionen',

@@ -14,8 +14,8 @@ return [
     |
     */
 
-    'title' => 'Poängtavla för #codeweek-evenemang',
-    'paragraph'=>'Vilka länder i Europa sjuder av kodningsaktiviteter? Poängtavlan sorteras efter antalet registrerade kodningsevenemang per invånare, så bli inte förvånad om några av de mindre länderna kommer högt upp på listan!',
+    'title' => 'Vilka länder sjuder av kodningsaktiviteter?',
+    'paragraph'=>'Poängtavlan sorteras efter antalet registrerade kodningsevenemang per invånare, så bli inte förvånad om några av de mindre länderna kommer högt upp på listan!',
     'parcipating_with'=>'deltar med',
     'events'=>'evenemang'
 

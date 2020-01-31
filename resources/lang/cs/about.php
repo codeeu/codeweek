@@ -5,8 +5,9 @@ return [
     'when-title'=> 'V roce 2020 proběhne Evropský týden programování od 10. do 25. října.',
     'when-text'=>'<p>Evropský týden programování je projekt, který propaguje kreativitu, řešení problémů a spolupráci pomocí programování a jiných technických aktivit. Cílem je programování zviditelnit – ukázat mladým lidem, dospělým i seniorům, jak je díky programování možné realizovat myšlenky. Chceme tyto dovednosti zbavit roušky tajemství a spojit motivované lidi, aby se učili.</p>',
     'codeweek_in_numbers-title'=>'Týden programování v číslech',
-    'codeweek_in_numbers-text'=>'<p>V roce 2018 se Evropského týdne programování zúčastnilo 2,7 milionu lidí ve více než 70 zemích celého světa. Dalších 2,3 milionu mladých lidí se zapojilo do <a href="http://africacodeweek.org/">Afrického týdne programování</a>, což je spin-off iniciativa, kterou provozuje SAP a další neziskové organizace.</p>
-                    <p>Pokud se vaše země ještě nezapojila, můžete zorganizovat akce a přidat je na <a href="/events">mapu</a> nebo se zapojit jako <a href="mailto:info@codeweek.eu">dobrovolník</a> a stát se ambasadorem týdne programování.</p>',
+    'codeweek_in_numbers-text' => '<p>V roce 2019 se Evropského týdne programování zúčastnilo 4,2 milionu lidí ve více než 80 zemích celého světa.</p>
+                    <p>Průměrnému účastníkovi bylo 11 let, 49 % účastníků ročníku 2019 byly ženy nebo dívky. 92 % akcí Evropského týdne programování se konalo ve školách, což ukazuje, že snahy o větší zapojení učitelů do ročníku 2019 byly úspěšné.</p>
+                    <p>Zveme každého, aby zorganizoval akci nebo se k ní připojil. Stačí si vybrat námět a cílovou skupinu <a href="/add">a přidat svou akci</a> do <a href="/events">mapy</a>.</p>',
     'run_by_volunteers-title'=>'Organizováno dobrovolníky',
     'run_by_volunteers-text'=>'<p>Evropský týden programování organizují dobrovolníci. Jeden nebo několik <a href="/ambassadors">ambasadorů týdne programování</a> koordinuje tuto iniciativu ve své zemi, ale vlastní akci může zorganizovat každý a přidat ji na mapu na stránkách <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title'=>'Projekt má podporu Evropské komise',
