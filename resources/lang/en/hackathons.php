@@ -2,7 +2,7 @@
 
 return [
 
-    'title' => 'EU Code Week Hackathons',
+    'title' => 'EU Code Week HACKATONS',
     'subtitle' => 'Bring your ideas to life!',
     'more-info' => 'more info',
     'sections' => [
