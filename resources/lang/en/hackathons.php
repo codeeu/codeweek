@@ -40,7 +40,7 @@ return [
             ]
         ],
 
-        7 => [
+        6 => [
             'title' => 'Partners',
         ],
 

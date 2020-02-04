@@ -144,11 +144,11 @@
             <img src="images/hackathons/how_coding.svg" class="static-image">
         </section>
 
-        <section class="codeweek-content-wrapper">
+{{--        <section class="codeweek-content-wrapper">--}}
 
-            <h1 class="align-center">Our partners</h1>
+{{--            <h1 class="align-center">@lang('hackathons.sections.6.title')</h1>--}}
 
-        </section>
+{{--        </section>--}}
 
 
 
