@@ -4,7 +4,6 @@ return [
 
     'title' => 'Hackathons de la Semaine européenne du code',
     'subtitle' => 'Donnez vie à vos idées!',
-    'more-info' => 'more info',
     'sections' => [
         1 => [
             'title' => '6 hackathons, 6 défis',
@@ -60,30 +59,32 @@ return [
 
     'cities' => [
         1 => [
-            'title' => "HACKATHON 01",
-            'subtitle' => "BRUSSELS",
-            'date' => "April 25-26, 2020",
-            'location' => "Brussels, Belgium"
+            'city' => "",
+            'country' => "Lettonie",
+            'date' => "Avril 2020"
         ],
         2 => [
-            'title' => "HACKATHON 02",
-            'subtitle' => "DÜSSELDORF",
-            'date' => "May 8-9, 2020",
-            'location' => "Düsseldorf, Germany"
+            'city' => "",
+            'country' => "Irelande",
+            'date' => "Avril 2020"
         ],
         3 => [
-            'title' => "HACKATHON 03",
-            'subtitle' => "Coming soon...",
+            'city' => "",
+            'country' => "Roumanie",
+            'date' => "Mai 2020"
         ],
         4 => [
-            'title' => "HACKATHON 04",
-            'subtitle' => "Coming soon...",
+            'city' => "",
+            'country' => "Espagne",
+            'date' => "Juin 2020"
         ], 5 => [
-            'title' => "HACKATHON 05",
-            'subtitle' => "Coming soon...",
+            'city' => "",
+            'country' => "Slovénie",
+            'date' => "Juillet 2020"
         ], 6 => [
-            'title' => "HACKATHON 06",
-            'subtitle' => "Coming soon...",
+            'city' => "",
+            'country' => "Italie",
+            'date' => "Septembre 2020"
         ],
     ],
 
