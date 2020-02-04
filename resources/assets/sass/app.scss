@@ -59,6 +59,9 @@
 @import "pages/login";
 @import "pages/schools";
 
+//Concentrate in one page all the styles and when the hackathons are finished we can delete this file
+@import "pages/hackathons";
+
 
 //Import language adjustments
 @import "langs";
