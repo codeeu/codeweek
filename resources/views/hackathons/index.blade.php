@@ -4,7 +4,7 @@
 
     <section id="codeweek-hackathons-page" class="codeweek-page">
 
-        <section class="codeweek-banner hackatons">
+        <section class="codeweek-banner hackathons">
             <div class="image">
                 <div class="text">
                     <div class="text-inside">
@@ -152,23 +152,11 @@
             <img src="images/hackathons/how_coding.svg" class="static-image">
         </section>
 
-        <section class="codeweek-content-wrapper">
+        <!--<section class="codeweek-content-wrapper">
 
             <h1 class="align-center">Our partners</h1>
 
-        </section>
-
-        <section class="codeweek-content-wrapper-inside">
-
-            <h2>@lang('hackathons.sections.6.title')</h2>
-            <div>@lang('hackathons.sections.6.content.1')</div>
-            <div>@lang('hackathons.sections.6.content.2')</div>
-            <div>@lang('hackathons.sections.6.content.3')</div>
-            <div>@lang('hackathons.sections.6.content.4')</div>
-            <div>@lang('hackathons.sections.6.content.5')</div>
-            <div>@lang('hackathons.sections.6.content.6')</div>
-
-        </section>
+        </section>-->
 
     </section>
 
