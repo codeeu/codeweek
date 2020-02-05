@@ -1,174 +1,371 @@
+.codeweek-banner.hackathons {
+  height: auto;
+  margin: 0;
+  display: block;
+}
+.codeweek-banner.hackathons .image{
+  margin:0;
+}
+.codeweek-banner.hackathons .image .text{
+  position:absolute;
+  margin: 215px 5px 10px 5px;
+  max-width: 300px;
+  text-align:center;
+}
+.codeweek-banner.hackathons .image .desktop{
+  display: none;
+}
+.hackathons-content-grid {
+  grid-template-columns: 1fr;
+}
+.codeweek-banner.hackathons .image {
+  justify-content: center;
+}
+.codeweek-banner.hackathons .image .text .text-inside h1{
+  color: $main-color;
+}
+#codeweek-hackathons-page h1{
+    font-size: 30px;
+    font-weight: normal;
+}
+#codeweek-hackathons-page .align-center{
+  text-align: center;
+}
+.hackathons_section {
+  display: flex;
+  padding: 20px 40px;
+  img{
+    flex:1;
+  }
+}
+#codeweek-hackathons-page p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.hackathons_section{
+  flex-direction: column;
+  .text-inside{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  p{
+    color: $main-color4;
+  }
+  &.take_part{
+    background-color: #180053;
+  }
+
+}
+.hackathons-content-grid{
+  margin-top:35px;
+  margin-bottom: 80px;
+  .codeweek-card-grid{
+    background-color: transparent;
+    .date{
+      font-size: 25px;
+      color: $main-color;
+      font-weight: bold;
+    }
+    .location{
+      font-size: 18px;
+      color: $main-color;
+    }
+    .city-image {
+      position: relative;
+      margin-bottom: 5px;
+
+      .transparent {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        opacity: 0.35;
+        background-color: #180253;
+      }
+
+      .text {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .title {
+          padding: 0;
+          color: $main-color4;
+          font-family: $decorative-font;
+
+          &.hackaton {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    :hover {
+      .transparent {
+        opacity: 0.69;
+      }
+      .city-image{
+        .text .title{
+          color:$main-color;
+        }
+      }
+    }
+  }
+}
+
 /* smartphones, iPhone, portrait 480x320 phones */
 @media (min-width:320px)  {
 }
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 @media (min-width:481px)  {
+  .codeweek-banner.hackathons .image .desktop{
+    display: block;
+  }
+  .codeweek-banner.hackathons .image .mobile{
+    display: none;
+  }
+  .codeweek-banner.hackathons .image .text {
+    margin: 10px 5px;
+  }
+  .codeweek-banner.hackathons .image {
+    justify-content: flex-end;
+  }
 }
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 @media (min-width:641px)  {
-}
-/* tablet, landscape iPad, lo-res laptops ands desktops */
-@media (min-width:961px)  {
-}
-/* big landscape tablets, laptops, and desktops */
-@media (min-width:1025px) {
-}
-/* hi-res laptops and desktops */
-@media (min-width:1281px) {
-  .codeweek-banner.hackatons{
-    height:auto;
-    display:block;
+  #codeweek-hackathons-page h2{
+    font-size: 20px;
   }
-  .codeweek-banner.hackatons .image{
-    margin:0;
-  }
-  .codeweek-banner.hackatons .image .text{
-    position:absolute;
-    margin: 40px 25px;
-    max-width: 415px;
-  }
-  .codeweek-banner.hackatons .image .text .text-inside{
+
+  .codeweek-banner.hackathons .image .text .text-inside{
     text-align: center;
   }
-  .codeweek-banner.hackatons .image .text .text-inside h1{
-    color: $main-color;
+
+  #codeweek-hackathons-page p {
+    font-size: 16px;
   }
+  .hackathons-content-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   #codeweek-hackathons-page{
     h1 {
-      font-size: 55px;
-      font-weight: normal;
+      font-size: 40px;
       & + p {
         padding-top: 30px;
       }
-    }
-    p{
-      font-size: 18px;
-      line-height: 1.4;
     }
     .align-center{
       text-align: center;
     }
   }
-  .hackathons_section{
-    display: flex;
-    padding: 90px 120px;
-
-    .text-inside{
-      flex: 1;
+  .hackathons_section {
+    flex-direction: row;
+    .text-inside {
       margin-left: 70px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    }
+  }
+
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px)  {
+  #codeweek-hackathons-page h1{
+    font-size: 45px;
+  }
+  #codeweek-hackathons-page h2{
+    font-size: 25px;
+  }
+  .codeweek-banner.hackathons .image .text{
+    position:absolute;
+    margin: 15px 10px;
+    max-width: 350px;
+  }
+}
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+  #codeweek-hackathons-page h1{
+    font-size: 50px;
+  }
+  #codeweek-hackathons-page h2{
+    font-size: 30px;
+  }
+  .codeweek-banner.hackathons .image .text{
+    position:absolute;
+    margin: 30px 20px;
+    max-width: 400px;
+  }
+}
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+  #codeweek-hackathons-page h1{
+    font-size: 55px;
+  }
+  #codeweek-hackathons-page h2{
+    font-size: 35px;
+  }
+  .hackathons-content-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .codeweek-banner.hackathons .image .text{
+    position:absolute;
+    margin: 40px 25px;
+    max-width: 415px;
+  }
+  .hackathons_section {
+    padding: 90px 120px;
+  }
+  #codeweek-hackathons-page p {
+    font-size: 18px;
+  }
+}
+
+
+/*Organisers Section*/
+#codeweek-hackathons-page .hackathons_section.organisers{
+  background-color: #DDDDDD;
+  padding: 0 0 20px 0;
+  align-items: flex-start;
+  p{
+    color:$main-color3;
+  }
+  img{
+    flex: initial;
+  }
+  .text-inside {
+    padding: 20px;
+  }
+
+  /*Media queries*/
+  /* smartphones, iPhone, portrait 480x320 phones */
+  @media (min-width:320px)  {
+  }
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  @media (min-width:481px)  {
+  }
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  @media (min-width:641px)  {
+    padding: 0 0 40px 0;
+    flex-direction: row-reverse;
+    img{
+      width:450px;
+    }
+    h1{
+      margin-top: 30px;
+      margin-right: 0;
+    }
+    .text-inside {
+      margin-left: 40px;
+    }
+  }
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  @media (min-width:961px)  {
+  }
+  /* big landscape tablets, laptops, and desktops */
+  @media (min-width:1025px) {
+    img{
+      width:auto;
+    }
+    h1{
+      margin-right: -150px;
+      margin-top: 80px;
+    }
+    .text-inside {
+      padding-top: 80px;
+    }
+  }
+
+  @media (min-width:1281px) {
+  }
+}
+
+/*Look Like Section*/
+#codeweek-hackathons-page .hackathons_section.look_like{
+  background-image: url('/images/hackathons/look_like.png');
+  background-repeat: no-repeat;
+  padding: 0;
+  justify-content: flex-end;
+  background-size: cover;
+  .text-inside{
+    background-color: rgb(24,0,83, 0.65);
+    flex: 1;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  /*Media queries*/
+  /* smartphones, iPhone, portrait 480x320 phones */
+  @media (min-width:320px)  {
+  }
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  @media (min-width:481px)  {
+  }
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  @media (min-width:641px)  {
+    .text-inside{
+      width: 60%;
+      flex: initial;
+      margin: 0;
+      padding: 30px 20px;
+      text-align: left;
+    }
+  }
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  @media (min-width:961px)  {
+    .text-inside{
+      width: 40%;
+      padding: 100px 60px;
+    }
+  }
+  /* big landscape tablets, laptops, and desktops */
+  @media (min-width:1025px) {
+  }
+  /* hi-res laptops and desktops */
+  @media (min-width:1281px) {
+  }
+}
+
+/*How Coding Section*/
+#codeweek-hackathons-page .hackathons_section.how_coding{
+  background-color: #F2F2F2;
+  padding: 20px;
+  p{
+    color:$main-color3;
+  }
+  .text-inside{
+    margin:0;
+  }
+  /*Media queries*/
+  /* smartphones, iPhone, portrait 480x320 phones */
+  @media (min-width:320px)  {
+  }
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  @media (min-width:481px)  {
+  }
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  @media (min-width:641px)  {
+
+  }
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  @media (min-width:961px)  {
+    padding: 120px 70px 30px 70px;
+    h1{
+      padding-right: 30px;
     }
     p{
-      color: $main-color4;
-    }
-    &.take_part{
-      background-color: #180053;
-    }
-    &.organisers{
-      background-color: #DDDDDD;
-      padding: 0 0 40px 0;
-
-      h1{
-        margin-right: -150px;
-        margin-top: 80px;
-      }
-      p{
-        color:$main-color3;
-      }
-    }
-    &.look_like{
-      background-image: url('/images/hackathons/look_like.png');
-      background-repeat: no-repeat;
-      padding: 0;
-      justify-content: flex-end;
-      background-size: cover;
-      .text-inside{
-        background-color: rgb(24,0,83, 0.65);
-        width: 40%;
-        flex: initial;
-        margin: 0;
-        padding: 100px 60px;
-      }
-    }
-    &.how_coding{
-      background-color: #F2F2F2;
-      padding: 150px 70px 30px 70px;
-      h1{
-        padding-right: 30px;
-      }
-      p{
-        color:$main-color3;
-        padding-right: 70px;
-      }
-      .text-inside{
-        margin:0;
-      }
-    }
-
-  }
-
-  .hackathons-content-grid{
-    margin-top:35px;
-    margin-bottom: 80px;
-    .codeweek-card-grid{
-      background-color: transparent;
-      .date{
-        font-size: 25px;
-        color: $main-color;
-        font-weight: bold;
-      }
-      .location{
-        font-size: 18px;
-        color: $main-color;
-      }
-      .city-image {
-        position: relative;
-        margin-bottom: 5px;
-
-        .transparent {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          opacity: 0.35;
-          background-color: #180253;
-        }
-
-        .text {
-          position: absolute;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-
-          .title {
-            padding: 0;
-            color: $main-color4;
-            font-family: $decorative-font;
-
-            &.hackaton {
-              font-size: 14px;
-            }
-          }
-        }
-      }
-      :hover {
-        .transparent {
-          opacity: 0.69;
-        }
-        .city-image{
-          .text .title{
-            color:$main-color;
-          }
-        }
-      }
+      padding-right: 70px;
     }
   }
-
+  /* big landscape tablets, laptops, and desktops */
+  @media (min-width:1025px) {
+  }
+  /* hi-res laptops and desktops */
+  @media (min-width:1281px) {
+  }
 }
