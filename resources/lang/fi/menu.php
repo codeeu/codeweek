@@ -32,7 +32,7 @@ return [
     'pending' => 'Odottavat tapahtumat',
     'your_events' => 'Omat tapahtumat',
     'your_certificates' => 'Omat sertifikaatit',
-    'report' => 'Raportoi tapahtumista',
+    'report' => 'Raportoi tapahtunista',
     'volunteers' => 'Vapaaehtoiset',
     'logout' => 'Kirjaudu ulos',
     'signin' => 'Kirjaudu sisään',
