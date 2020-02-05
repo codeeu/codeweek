@@ -29,9 +29,9 @@ return [
     'hello' => 'Bonjour',
     'profile' => 'Profil',
     'pending' => 'Événements prévus',
-    'your_events' => 'Vos événements',
-    'your_certificates' => 'Vos certificats',
-    'report' => 'Signaler vos événements',
+    'your_events' => 'Mes activités',
+    'your_certificates' => 'Mes certificats',
+    'report' => 'Renseigner mes activités',
     'volunteers' => 'Volontaires',
     'logout' => 'Déconnexion',
     'signin' => 'Connexion',
@@ -39,3 +39,5 @@ return [
     'participation'=> 'Certificat de participation',
 
 ];
+
+        
