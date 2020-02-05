@@ -12,7 +12,8 @@
                         <h2>@lang('hackathons.subtitle')</h2>
                     </div>
                 </div>
-                <img src="images/hackathons/banner_hackathons.svg" class="static-image">
+                <img src="images/hackathons/banner_hackathons.svg" class="static-image desktop">
+                <img src="images/hackathons/banner_hackathons_mobile.svg" class="static-image mobile">
             </div>
         </section>
 
@@ -123,6 +124,7 @@
         </section>
 
         <section class="hackathons_section organisers">
+            <img src="images/hackathons/organisers.svg" class="static-image">
             <div class="text-inside">
                 <h1>@lang('hackathons.sections.3.title')</h1>
                 <p>
@@ -131,7 +133,6 @@
                     @lang('hackathons.sections.3.content.3')
                 </p>
             </div>
-            <img src="images/hackathons/organisers.svg" class="static-image">
         </section>
 
         <section class="hackathons_section look_like">
