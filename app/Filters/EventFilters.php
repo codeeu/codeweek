@@ -46,7 +46,7 @@ class EventFilters extends Filters
 
     protected function year($year)
     {
-        return $this->builder->whereYear('start_date', '=', $year);
+        return $this->builder->whereYear('end_date', '=', $year);
 
     }
 
