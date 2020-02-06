@@ -20,7 +20,7 @@
         <section class="codeweek-content-wrapper">
 
             <h1 class="align-center">@lang('hackathons.sections.1.title')</h1>
-            <p class="align-center">
+            <p>
                 @lang('hackathons.sections.1.content.1')
                 @lang('hackathons.sections.1.content.2')
             </p>
@@ -32,12 +32,10 @@
                             <img src="/images/hackathons/city_image_1.png">
                             <div class="transparent"></div>
                             <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.1.title')</div>
-                                <div class="title name">@lang('hackathons.cities.1.subtitle')</div>
+                                <div class="title hackaton">@lang('hackathons.cities.1.country')</div>
                             </div>
                         </div>
                         <div class="date">@lang('hackathons.cities.1.date')</div>
-                        <div class="location">@lang('hackathons.cities.1.location')</div>
                     </a>
                 </div>
                 <div class="codeweek-card-grid">
@@ -46,12 +44,10 @@
                             <img src="/images/hackathons/city_image_2.png">
                             <div class="transparent"></div>
                             <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.2.title')</div>
-                                <div class="title name">@lang('hackathons.cities.2.subtitle')</div>
+                                <div class="title hackaton">@lang('hackathons.cities.2.country')</div>
                             </div>
                         </div>
                         <div class="date">@lang('hackathons.cities.2.date')</div>
-                        <div class="location">@lang('hackathons.cities.2.location')</div>
                     </a>
                 </div>
                 <div class="codeweek-card-grid">
@@ -60,12 +56,10 @@
                             <img src="/images/hackathons/city_image_2.png">
                             <div class="transparent"></div>
                             <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.3.title')</div>
-                                <div class="title name">@lang('hackathons.cities.3.subtitle')</div>
+                                <div class="title hackaton">@lang('hackathons.cities.3.country')</div>
                             </div>
                         </div>
                         <div class="date">@lang('hackathons.cities.3.date')</div>
-                        <div class="location">@lang('hackathons.cities.3.location')</div>
                     </a>
                 </div>
                 <div class="codeweek-card-grid">
@@ -74,12 +68,10 @@
                             <img src="/images/hackathons/city_image_2.png">
                             <div class="transparent"></div>
                             <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.4.title')</div>
-                                <div class="title name">@lang('hackathons.cities.4.subtitle')</div>
+                                <div class="title hackaton">@lang('hackathons.cities.4.country')</div>
                             </div>
                         </div>
                         <div class="date">@lang('hackathons.cities.4.date')</div>
-                        <div class="location">@lang('hackathons.cities.4.location')</div>
                     </a>
                 </div>
                 <div class="codeweek-card-grid">
@@ -88,12 +80,10 @@
                             <img src="/images/hackathons/city_image_2.png">
                             <div class="transparent"></div>
                             <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.5.title')</div>
-                                <div class="title name">@lang('hackathons.cities.5.subtitle')</div>
+                                <div class="title hackaton">@lang('hackathons.cities.5.country')</div>
                             </div>
                         </div>
                         <div class="date">@lang('hackathons.cities.5.date')</div>
-                        <div class="location">@lang('hackathons.cities.5.location')</div>
                     </a>
                 </div>
                 <div class="codeweek-card-grid">
@@ -102,12 +92,10 @@
                             <img src="/images/hackathons/city_image_2.png">
                             <div class="transparent"></div>
                             <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.6.title')</div>
-                                <div class="title name">@lang('hackathons.cities.6.subtitle')</div>
+                                <div class="title hackaton">@lang('hackathons.cities.6.country')</div>
                             </div>
                         </div>
                         <div class="date">@lang('hackathons.cities.6.date')</div>
-                        <div class="location">@lang('hackathons.cities.6.location')</div>
                     </a>
                 </div>
 
