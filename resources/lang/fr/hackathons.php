@@ -3,7 +3,7 @@
 
 return [
 
-    'title' => 'Hackathons de la Semaine européenne du code',
+    'title' => 'EU Code Week HACKATONS',
     'subtitle' => 'Donnez vie à vos idées!',
     'sections' => [
         1 => [
