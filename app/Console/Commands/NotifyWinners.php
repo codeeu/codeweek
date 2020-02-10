@@ -3,7 +3,9 @@
 namespace App\Console\Commands;
 
 use App\Excellence;
+use Carbon\Carbon;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
@@ -52,6 +54,10 @@ class NotifyWinners extends Command
 
             if ($user->email){
                 Mail::to($user->email)->queue(new \App\Mail\NotifyWinner($user, $edition));
+                $excellence = $user->excellences->where('edition', '=' , $edition)->first();
+                $excellence->notified_at = Carbon::now();
+                $excellence->save();
+
             } else {
                 Log::info($user->id . " has no valid email address");
             }
