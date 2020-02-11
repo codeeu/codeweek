@@ -58,6 +58,9 @@
                 <li>
                     <a href="https://mooc.uniurb.it/wp/codeweekmooc/" target="_blank"><img src="img/partners/urbinocarlo.png" alt="CodeWeek in Your Classroom, Now!"></a>
                 </li>
+                <li>
+                    <a href="https://microbit.org/" target="_blank"><img src="img/partners/microbit.png" alt="Micro:bit"></a>
+                </li>
             </ul>
 
         </section>
