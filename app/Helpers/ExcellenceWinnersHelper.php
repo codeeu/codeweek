@@ -15,8 +15,8 @@ class ExcellenceWinnersHelper
 {
 
     public static function query($edition = null){
-//        $ttl = 1;
-        $ttl = 60*60;
+        $ttl = 1;
+//        $ttl = 60*60;
         return Cache::remember('details', $ttl, function () use ($edition) {
             Log::info('query without cache');
             $edition = !is_null($edition) ? $edition : Carbon::now()->year;
@@ -132,6 +132,21 @@ class ExcellenceWinnersHelper
             if (($detail->total_participants >= 500) && ($detail->total_creators >= 10) && ($detail->total_countries >= 3) && ($detail->total_activities >= 10)) {
                 Log::info("Super winner: {$detail->codeweek_for_all_participation_code}");
                 $detail->super_winner = 1;
+
+                $detail->initiator_email = Codeweek4AllHelper::getInitiatorByCodeweek4All([$detail->codeweek_for_all_participation_code]);
+                $countries = Codeweek4AllHelper::getCountriesByCodeweek4All($detail->codeweek_for_all_participation_code, 2019);
+
+                $info = "";
+                foreach ($countries as $country){
+                    $info .= "{$country->name} ({$country->event_per_country})";
+
+                        $info .= " | ";
+
+                }
+
+                $detail->zoubidou = $info;
+
+
             }
         }
 
