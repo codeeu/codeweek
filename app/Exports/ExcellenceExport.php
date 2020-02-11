@@ -28,7 +28,9 @@ class ExcellenceExport implements FromCollection, WithHeadings
             'Countries Count',
             'Activities Count',
             'Reporting Percentage',
-            'Super Winner'
+            'Super Winner',
+            'Initiator Email',
+            'Countries detail'
 
         ];
     }
