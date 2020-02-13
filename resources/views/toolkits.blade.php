@@ -17,7 +17,7 @@
             <div class="codeweek-content-wrapper">
                 <ul>
 
-                    <li>EU Code Week 2019 @lang('resources.communication_toolkit') (
+                    <li>EU Code Week 2020 @lang('resources.communication_toolkit') (
 
                         @foreach($languages as $lang)
                             @if($lang === $locale)
@@ -33,7 +33,7 @@
                     </li>
 
 
-                    <li>EU Code Week 2019 @lang('resources.teachers_toolkit') (
+                    <li>EU Code Week 2020 @lang('resources.teachers_toolkit') (
 
                         @foreach($languages as $lang)
                             @if($lang === $locale)
