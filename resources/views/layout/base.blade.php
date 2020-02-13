@@ -50,7 +50,12 @@
 <!-- Document Wrapper -->
 <div id="app">
     @include('cookieConsent::index')
-    @include('layout.header')
+
+    @if((Request::is('hackathons/*')))
+        @yield('hackathons.header')
+    @else
+        @include('layout.header')
+    @endif
 
     <main>
         @yield("content")
