@@ -462,8 +462,7 @@ header.hackathons #right-menu #hackathons-register-button{
 #codeweek-hackathons-before-page .questions{
   display: flex;
   padding: 50px 20px 50px 70px;
-  background-color: #180053;
-  color: white;
+  color: $main-color3;
   h1{
     font-weight: normal;
   }
@@ -494,5 +493,91 @@ header.hackathons #right-menu #hackathons-register-button{
       margin-bottom:3px;
       font-size: 18px;
     }
+  }
+}
+
+
+
+#codeweek-hackathons-before-page{
+  .registration{
+    background-image: url('/images/hackathons/banner_dublin_ireland.png');
+    display:flex;
+  }
+  .register-wrapper{
+    width:50%;
+  }
+  .register{
+    margin: 20px;
+    padding: 100px 80px 50px 80px;
+    background-color: rgb(24,0,83, 0.65);
+    text-align: center;
+    .title{
+      color: $main-color;
+      font-family: $decorative-font;
+      font-size: 20px;
+    }
+    .city{
+      color: $main-color;
+      font-family: $decorative-font;
+      font-size: 30px;
+    }
+    .date{
+      color: $main-color4;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 100px;
+    }
+    .codeweek-action-link-button{
+      background-color: white;
+      color: #FE6824;
+      padding: 20px 110px;
+      font-weight: normal;
+      border-radius: 40px;
+    }
+  }
+}
+
+#codeweek-hackathons-before-page #challenge{
+  margin: 60px 45px;
+  display: flex;
+  img{
+    flex:1;
+  }
+  .text{
+    flex:1;
+    .challenge-text{
+      padding: 50px 100px;
+      h1{
+        font-size: 55px;
+        font-weight: normal;
+        text-align: center;
+      }
+      p{
+        padding-top: 30px;
+        margin-bottom: 30px;
+      }
+      .codeweek-action-link-button{
+        padding: 20px 100px;
+        border-radius: 35px;
+      }
+    }
+  }
+}
+
+#codeweek-hackathons-before-page #programme{
+  background-color: #180053;
+  background-image: url('/images/hackathons/programme_background.svg');
+  background-position-y: 40px;
+  background-repeat: no-repeat;
+  padding: 100px 150px;
+  color: $main-color4;
+  h1{
+    font-size: 55px;
+    font-weight: normal;
+    text-align: center;
+  }
+  p{
+    line-height: 1.6;
+    font-size: 18px;
   }
 }

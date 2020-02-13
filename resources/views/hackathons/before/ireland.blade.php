@@ -44,10 +44,57 @@
             </div>
         </section>
 
-        <section id="challenge">
-            Challenge
+        <section class="registration">
+            <div class="register-wrapper">
+                <div class="register">
+                    <div class="title">EU Code Week Hackathon</div>
+                    <div class="city">IRELAND, DUBLIN</div>
+                    <div class="date">17-18 April 2020</div>
+                    <a href="#" class="codeweek-action-link-button">REGISTER</a>
+                </div>
+            </div>
         </section>
+
+        <section id="challenge">
+            <img src="/images/hackathons/challenge.png">
+            <div class="text">
+                <div class="challenge-text">
+                    <h1>The challenges</h1>
+                    <p>The idea of the EU Code Week Hackathon is to show how concrete solutions come to life with the help of young people’s creativity, enthusiasm, fresh ideas and coding skills. ‘Concrete’ means solving real problems – things that affect you, your school, community, city or specific challenges in your area.</p>
+                    <a href="#" class="codeweek-action-link-button">VOTE</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="programme">
+            <h1>Programme</h1>
+            <p>Secondary students aged 16-19 compete in teams to solve a ‘city challenge’ selected from proposals submitted ahead of the event. After two days of ‘non-stop’ hacking, each team then pitches their solution to an Expert Jury. The successful team in each local hackathon wins a trip to Brussels including a short and intense entrepreneurial coaching session and the honour of pitching their work to tech experts, business leaders and EU policymakers on 12 October 2020.</p>
+            <p>Hackers are going to need a break from the ‘coding’, so we provide plenty of refreshments to keep energy levels up. Mentors are also on hand to coach teams through the tough stages. We also organise fun activities and workshops to keep spirits high while teaching new skills like robotics and app building.</p>
+        </section>
+
+        <section id="pratical-info">
+
+        </section>
+
+        <input type="hidden" name="geoposition" id="geoposition" value="50.8141898,4.4099089">
+        <input type="hidden" name="geoposition_marker" id="geoposition_marker" value="true">
 
     </section>
 
 @endsection
+
+@push('scripts')
+
+    <script defer src="https://europa.eu/webtools/load.js" type="text/javascript"></script>
+    <link href="{{asset('css/MarkerCluster.css')}}" media="screen" rel="stylesheet"/>
+    <link href="{{asset('css/MarkerCluster.Default.css')}}" media="screen" rel="stylesheet"/>
+    <script type="application/json">
+        {
+            "service" : "map",
+            "version" : "2.0",
+            "renderTo" : "pratical-info",
+            "custom": ["/js/hideMenuMap.js","/js/leaflet.markercluster.js"]
+        }
+
+    </script>
+@endpush
