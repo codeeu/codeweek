@@ -49,32 +49,32 @@ return [
     'cities' => [
 
         1 => [
-            'city' => "",
+            'city' => "Dublin",
             'country' => "Ireland",
-            'date' => "April 2020"
+            'date' => "17 April 2020"
         ],
         2 => [
-            'city' => "",
+            'city' => "Nova Gorica",
             'country' => "Slovenia",
-            'date' => "May 2020"
+            'date' => "30 May 2020"
         ],
         3 => [
-            'city' => "",
+            'city' => "Iasi",
             'country' => "Romania",
-            'date' => "May 2020"
+            'date' => "09 May 2020"
         ],
         4 => [
-            'city' => "",
+            'city' => "Cornellà de Llobregat",
             'country' => "Spain",
-            'date' => "June 2020"
+            'date' => "May 2020"
         ],
         5 => [
-            'city' => "",
+            'city' => "Riga",
             'country' => "Latvia",
-            'date' => "September 2020"
+            'date' => "19 September 2020"
         ],
         6 => [
-            'city' => "",
+            'city' => "Urbino",
             'country' => "Italy",
             'date' => "September 2020"
         ],
