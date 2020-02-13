@@ -1,3 +1,56 @@
+header.hackathons nav{
+  max-width: none;
+}
+
+header.hackathons nav ul li a{
+  font-size: 19px;
+}
+
+header.hackathons #right-menu{
+  padding-right: 0;
+}
+
+header.hackathons #right-menu #hackathons-register-button{
+  background-color: $main-color;
+  width: 195px;
+  height: 156px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a{
+    height:100%;
+    color: $main-color4;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.hackathons-content-header{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+#secondary-menu{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+  flex: initial;
+  margin-bottom: 10px;
+
+  ul li a{
+    font-size: 16px;
+    display: flex;
+    color: #9B9B9B;
+    img{
+      margin-right: 10px;
+    }
+  }
+}
+
 .codeweek-banner.hackathons {
   height: auto;
   margin: 0;
@@ -102,7 +155,7 @@
           font-family: $decorative-font;
 
           &.hackaton {
-            font-size: 14px;
+            font-size: 20px;
           }
         }
       }
@@ -367,5 +420,79 @@
   }
   /* hi-res laptops and desktops */
   @media (min-width:1281px) {
+  }
+}
+
+
+/*BEFORE PAGE*/
+#codeweek-hackathons-before-page .codeweek-banner.hackathons{
+  background-color: transparent;
+}
+#codeweek-hackathons-before-page .image{
+  background-image: url('/images/hackathons/banner_hackathon_before.svg');
+  background-repeat: no-repeat;
+  height: 535px;
+  .title{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 30px;
+    h1{
+      text-align: center;
+      color: $main-color;
+      margin-left: 70px;
+    }
+    h2{
+      color:#180053;
+      margin-left: 70px;
+    }
+  }
+  .paragraph{
+    flex:1;
+    p{
+      margin: 70px 135px 0 40px;
+      line-height: 1.4;
+      color:#180053;
+    }
+  }
+}
+
+#codeweek-hackathons-before-page .questions{
+  display: flex;
+  padding: 50px 20px 50px 70px;
+  background-color: #180053;
+  color: white;
+  h1{
+    font-weight: normal;
+  }
+  .expect{
+    flex:1;
+    border-right: 2px solid #1237FF;
+    margin-right: 70px;
+  }
+  .bring{
+    flex:1;
+    border-right: 2px solid #1237FF;
+    padding-right: 40px;
+  }
+  .provide{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+      padding-left: 80px;
+    }
+  }
+  ul{
+    list-style: none;
+    list-style-image: url('/images/tick.svg');
+    margin:10px;
+    li{
+      margin-bottom:3px;
+      font-size: 18px;
+    }
   }
 }
