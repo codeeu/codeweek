@@ -12,6 +12,16 @@ L.custom = {
                 background: "osmec"
             });
 
+            var coordinates = coords.split(",");
+
+            if ($("#geoposition_marker").val()){
+                var marker = L.marker(L.latLng(coordinates[0], coordinates[1]));
+                marker.on('click', function(){
+                    map.setView([coordinates[0], coordinates[1]], 16);
+                });
+                map.addLayer(marker);
+            }
+
         }else if (event_coordinates){
 
             window.map = L.map(obj, {

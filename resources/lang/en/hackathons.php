@@ -64,7 +64,7 @@ return [
             'date' => "09 May 2020"
         ],
         4 => [
-            'city' => "Cornellà de Llobregat",
+            'city' => "Spain",
             'country' => "Spain",
             'date' => "May 2020"
         ],
