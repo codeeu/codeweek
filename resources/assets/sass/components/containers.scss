@@ -184,6 +184,11 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
   }
+  .hackathons-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
 }
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:961px)  {
@@ -204,10 +209,37 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 15px;
   }
+  .hackathons-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
 }
 /* hi-res laptops and desktops */
 @media (min-width:1281px) {
   .codeweek-question-container{
     padding: 40px 230px 0 100px;
   }
+}
+
+.hackathons-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.hackathons-content-grid .codeweek-card-grid{
+  background-color: #F2F2F8;
+}
+
+.hackathons-content-grid .title{
+  font-size: 20px;
+  font-weight: bold;
+  color: $main-color;
+  padding: 20px;
+}
+
+.hackathons-content-grid .author{
+  color: $main-color;
+  padding: 20px;
 }
