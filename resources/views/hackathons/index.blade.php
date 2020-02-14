@@ -27,7 +27,7 @@
 
             <section class="hackathons-content-grid">
                 <div class="codeweek-card-grid">
-                    <a href="#">
+                    <a href="https://ec.europa.eu/eusurvey/runner/preregistrationEUCWhackathonIreland">
                         <div class="city-image">
                             <img src="/images/hackathons/dublin_ireland_small.png">
                             <div class="transparent"></div>
@@ -40,7 +40,7 @@
                     </a>
                 </div>
                 <div class="codeweek-card-grid">
-                    <a href="#">
+                    <a href="https://ec.europa.eu/eusurvey/runner/PreregistrationEUCWhackathonSpain">
                         <div class="city-image">
                             <img src="/images/hackathons/palafrugell_spain_small.png">
                             <div class="transparent"></div>
@@ -53,7 +53,7 @@
                     </a>
                 </div>
                 <div class="codeweek-card-grid">
-                    <a href="#">
+                    <a href="https://ec.europa.eu/eusurvey/runner/preregistrationEUCWhackathonRomania">
                         <div class="city-image">
                             <img src="/images/hackathons/iasi_romania_small.png">
                             <div class="transparent"></div>
@@ -66,7 +66,7 @@
                     </a>
                 </div>
                 <div class="codeweek-card-grid">
-                    <a href="#">
+                    <a href="https://ec.europa.eu/eusurvey/runner/PreregistrationEUCWhackathonSlovenia">
                         <div class="city-image">
                             <img src="/images/hackathons/nova_gorica_slovenia_small.png">
                             <div class="transparent"></div>
@@ -79,7 +79,7 @@
                     </a>
                 </div>
                 <div class="codeweek-card-grid">
-                    <a href="#">
+                    <a href="https://ec.europa.eu/eusurvey/runner/PreregistrationEUCWhackathonLatvia">
                         <div class="city-image">
                             <img src="/images/hackathons/riga_latvia_small.png">
                             <div class="transparent"></div>
@@ -92,7 +92,7 @@
                     </a>
                 </div>
                 <div class="codeweek-card-grid">
-                    <a href="#">
+                    <a href="https://ec.europa.eu/eusurvey/runner/PreregistrationEUCWhackathonItaly">
                         <div class="city-image">
                             <img src="/images/hackathons/urbino_italy_small.png">
                             <div class="transparent"></div>
