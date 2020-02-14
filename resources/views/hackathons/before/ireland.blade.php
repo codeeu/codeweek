@@ -73,7 +73,8 @@
         </section>
 
         <section id="pratical-info">
-
+            <div id="map"></div>
+            <div class="info"></div>
         </section>
 
         <input type="hidden" name="geoposition" id="geoposition" value="50.8141898,4.4099089">
@@ -92,7 +93,7 @@
         {
             "service" : "map",
             "version" : "2.0",
-            "renderTo" : "pratical-info",
+            "renderTo" : "map",
             "custom": ["/js/hideMenuMap.js","/js/leaflet.markercluster.js"]
         }
 
