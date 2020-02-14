@@ -51,27 +51,27 @@ return [
         1 => [
             'city' => "Dublin",
             'country' => "Ireland",
-            'date' => "17 April 2020"
+            'date' => "April 2020"
         ],
         2 => [
             'city' => "Nova Gorica",
             'country' => "Slovenia",
-            'date' => "30 May 2020"
+            'date' => "May 2020"
         ],
         3 => [
             'city' => "Iasi",
             'country' => "Romania",
-            'date' => "09 May 2020"
+            'date' => "May 2020"
         ],
         4 => [
-            'city' => "Spain",
+            'city' => "Palafrugell",
             'country' => "Spain",
             'date' => "May 2020"
         ],
         5 => [
             'city' => "Riga",
             'country' => "Latvia",
-            'date' => "19 September 2020"
+            'date' => "September 2020"
         ],
         6 => [
             'city' => "Urbino",

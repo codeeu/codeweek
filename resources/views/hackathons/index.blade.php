@@ -35,34 +35,8 @@
                                 <div class="title hackaton">@lang('hackathons.cities.1.city')</div>
                             </div>
                         </div>
-                        <div class="date">{{ucfirst(__('hackathons.cities.1.date'))}}</div>
+                        <div class="date">17-18 {{ucfirst(__('hackathons.cities.1.date'))}}</div>
                         <div class="location">@lang('hackathons.cities.1.city') - @lang('hackathons.cities.1.country')</div>
-                    </a>
-                </div>
-                <div class="codeweek-card-grid">
-                    <a href="#">
-                        <div class="city-image">
-                            <img src="/images/hackathons/nova_gorica_slovenia_small.png">
-                            <div class="transparent"></div>
-                            <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.2.city')</div>
-                            </div>
-                        </div>
-                        <div class="date">{{ucfirst(__('hackathons.cities.2.date'))}}</div>
-                        <div class="location">@lang('hackathons.cities.2.city') - @lang('hackathons.cities.2.country')</div>
-                    </a>
-                </div>
-                <div class="codeweek-card-grid">
-                    <a href="#">
-                        <div class="city-image">
-                            <img src="/images/hackathons/iasi_romania_small.png">
-                            <div class="transparent"></div>
-                            <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.3.city')</div>
-                            </div>
-                        </div>
-                        <div class="date">{{ucfirst(__('hackathons.cities.3.date'))}}</div>
-                        <div class="location">@lang('hackathons.cities.3.city') - @lang('hackathons.cities.3.country')</div>
                     </a>
                 </div>
                 <div class="codeweek-card-grid">
@@ -74,8 +48,34 @@
                                 <div class="title hackaton">@lang('hackathons.cities.4.city')</div>
                             </div>
                         </div>
-                        <div class="date">{{ucfirst(__('hackathons.cities.4.date'))}}</div>
-                        <div class="location">@lang('hackathons.cities.4.country')</div>
+                        <div class="date">7-8 {{ucfirst(__('hackathons.cities.4.date'))}}</div>
+                        <div class="location">@lang('hackathons.cities.4.city') - @lang('hackathons.cities.4.country')</div>
+                    </a>
+                </div>
+                <div class="codeweek-card-grid">
+                    <a href="#">
+                        <div class="city-image">
+                            <img src="/images/hackathons/iasi_romania_small.png">
+                            <div class="transparent"></div>
+                            <div class="text">
+                                <div class="title hackaton">@lang('hackathons.cities.3.city')</div>
+                            </div>
+                        </div>
+                        <div class="date">9-10 {{ucfirst(__('hackathons.cities.3.date'))}}</div>
+                        <div class="location">@lang('hackathons.cities.3.city') - @lang('hackathons.cities.3.country')</div>
+                    </a>
+                </div>
+                <div class="codeweek-card-grid">
+                    <a href="#">
+                        <div class="city-image">
+                            <img src="/images/hackathons/nova_gorica_slovenia_small.png">
+                            <div class="transparent"></div>
+                            <div class="text">
+                                <div class="title hackaton">@lang('hackathons.cities.2.city')</div>
+                            </div>
+                        </div>
+                        <div class="date">30-31 {{ucfirst(__('hackathons.cities.2.date'))}}</div>
+                        <div class="location">@lang('hackathons.cities.2.city') - @lang('hackathons.cities.2.country')</div>
                     </a>
                 </div>
                 <div class="codeweek-card-grid">
@@ -87,7 +87,7 @@
                                 <div class="title hackaton">@lang('hackathons.cities.5.city')</div>
                             </div>
                         </div>
-                        <div class="date">{{ucfirst(__('hackathons.cities.5.date'))}}</div>
+                        <div class="date">19-20 {{ucfirst(__('hackathons.cities.5.date'))}}</div>
                         <div class="location">@lang('hackathons.cities.5.city') - @lang('hackathons.cities.5.country')</div>
                     </a>
                 </div>
