@@ -42,7 +42,7 @@
                 <div class="codeweek-card-grid">
                     <a href="#">
                         <div class="city-image">
-                            <img src="/images/hackathons/cornella_spain_small.png">
+                            <img src="/images/hackathons/palafrugell_spain_small.png">
                             <div class="transparent"></div>
                             <div class="text">
                                 <div class="title hackaton">@lang('hackathons.cities.4.city')</div>
