@@ -32,7 +32,7 @@
                             <img src="/images/hackathons/dublin_ireland_small.png">
                             <div class="transparent"></div>
                             <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.1.city')</div>
+                                <div class="title hackaton">Dublin</div>
                             </div>
                         </div>
                         <div class="date">17-18 {{ucfirst(__('hackathons.cities.1.date'))}}</div>
@@ -45,7 +45,7 @@
                             <img src="/images/hackathons/palafrugell_spain_small.png">
                             <div class="transparent"></div>
                             <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.4.city')</div>
+                                <div class="title hackaton">Palafrugell</div>
                             </div>
                         </div>
                         <div class="date">7-8 {{ucfirst(__('hackathons.cities.4.date'))}}</div>
@@ -58,7 +58,7 @@
                             <img src="/images/hackathons/iasi_romania_small.png">
                             <div class="transparent"></div>
                             <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.3.city')</div>
+                                <div class="title hackaton">Iasi</div>
                             </div>
                         </div>
                         <div class="date">9-10 {{ucfirst(__('hackathons.cities.3.date'))}}</div>
@@ -71,7 +71,7 @@
                             <img src="/images/hackathons/nova_gorica_slovenia_small.png">
                             <div class="transparent"></div>
                             <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.2.city')</div>
+                                <div class="title hackaton">Nova Gorica</div>
                             </div>
                         </div>
                         <div class="date">30-31 {{ucfirst(__('hackathons.cities.2.date'))}}</div>
@@ -84,7 +84,7 @@
                             <img src="/images/hackathons/riga_latvia_small.png">
                             <div class="transparent"></div>
                             <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.5.city')</div>
+                                <div class="title hackaton">Riga</div>
                             </div>
                         </div>
                         <div class="date">19-20 {{ucfirst(__('hackathons.cities.5.date'))}}</div>
@@ -97,7 +97,7 @@
                             <img src="/images/hackathons/urbino_italy_small.png">
                             <div class="transparent"></div>
                             <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.6.city')</div>
+                                <div class="title hackaton">Urbino</div>
                             </div>
                         </div>
                         <div class="date">{{ucfirst(__('hackathons.cities.6.date'))}}</div>
