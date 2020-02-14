@@ -63,6 +63,21 @@ footer .logo_footer{
   display: none;
 }
 
+footer .social-media-buttons{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  align-items: center;
+  margin-top: -45px;
+  padding-bottom: 20px;
+}
+
+footer .social-media-buttons .social-network a{
+  display: flex;
+  margin-right: 10px;
+  text-indent: 5px;
+}
+
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:961px)  {
