@@ -22,7 +22,7 @@
                     <a href="#programme">Programme</a>
                 </li>
                 <li>
-                    <a href="#partical-info">Pratical info</a>
+                    <a href="#pratical-info">Pratical info</a>
                 </li>
                 <li>
                     <a href="#jury-mentors">Jury & Mentors</a>
