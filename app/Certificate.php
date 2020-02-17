@@ -124,6 +124,10 @@ class Certificate
 
         $end_of_event_year = Carbon::parse($this->event->end_date)->year;
 
+        if ($end_of_event_year > Carbon::now('Europe/Brussels')->year) {
+            $end_of_event_year = Carbon::now('Europe/Brussels')->year;
+        }
+
         //replace the text in template
         $template = str_replace('<CERTIFICATE_HOLDER_NAME>', $this->tex_escape($this->name_of_certificate_holder), $base_template);
         $template = str_replace('<CERTIFICATE_YEAR>', $end_of_event_year, $template);
