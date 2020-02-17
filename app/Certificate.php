@@ -122,8 +122,11 @@ class Certificate
         //open the latex template
         $base_template = Storage::disk('latex')->get($this->templateName);
 
+        $end_of_event_year = Carbon::parse($this->event->end_date)->year;
+
         //replace the text in template
         $template = str_replace('<CERTIFICATE_HOLDER_NAME>', $this->tex_escape($this->name_of_certificate_holder), $base_template);
+        $template = str_replace('<CERTIFICATE_YEAR>', $end_of_event_year, $template);
 
         //save it locally
         Storage::disk('latex')->put($this->personalized_template_name, $template);
