@@ -124,6 +124,7 @@ class Certificate
 
         //replace the text in template
         $template = str_replace('<CERTIFICATE_HOLDER_NAME>', $this->tex_escape($this->name_of_certificate_holder), $base_template);
+        $template = str_replace('<CERTIFICATE_YEAR>', $this->event->end_date->format('Y'), $template);
 
         //save it locally
         Storage::disk('latex')->put($this->personalized_template_name, $template);
