@@ -10,7 +10,7 @@ return [
             'title' => '6 hackathons, 6 défis',
             'content' => [
                 1 => 'Vous habitez en Lettonie, en Irlande, en Italie, en Roumanie, en Slovénie ou en Espagne? C’est l’occasion de faire appel à votre créativité, votre curiosité, votre dynamisme et vos compétences techniques. Participez à l’un des hackathons de la Semaine européenne du code et développez une solution innovante qui profitera à la société.',
-                2 => 'En 2020, la Semaine européenne du code propose six hackathons extraordinaires dans six pays européens et invite les élèves des lycées (16-19 ans) à utiliser leurs compétences en codage pour proposer des solutions concernant un enjeu local, en 36 heures.'
+                2 => 'En 2020, la Semaine européenne du code propose six hackathons extraordinaires dans six pays européens et invite les élèves des lycées (16-19 ans) à utiliser leurs compétences en codage pour proposer des solutions concernant un enjeu local, durant 2 jours.'
             ]
         ],
         2 => [
@@ -30,7 +30,7 @@ return [
         4 => [
             'title' => 'À quoi ressemble un hackathon?',
             'content' => [
-                1 => 'Chaque hackathon verra 60 lycéens s’affronter par équipes pendant 36 heures. À la fin, chaque équipe présentera sa solution à un jury d’experts. Des mentors expérimentés encadreront les équipes et des ateliers seront organisés pour permettre aux participants d’acquérir de nouvelles compétences et de s’amuser. Les hackathons offrent également aux participants une excellente occasion de nouer des contacts et de discuter avec des personnes du milieu technologique local.',
+                1 => 'Chaque hackathon verra 60 lycéens s’affronter par équipes durant 2 jours. À la fin, chaque équipe présentera sa solution à un jury d’experts. Des mentors expérimentés encadreront les équipes et des ateliers seront organisés pour permettre aux participants d’acquérir de nouvelles compétences et de s’amuser. Les hackathons offrent également aux participants une excellente occasion de nouer des contacts et de discuter avec des personnes du milieu technologique local.',
                 2 => 'L’équipe gagnante de chaque hackathon local sera récompensée par différents prix, notamment la possibilité de se rendre à Bruxelles et de présenter sa solution à un public international le 12 octobre 2020.',
             ]
         ],

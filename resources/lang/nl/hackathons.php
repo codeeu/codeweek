@@ -9,7 +9,7 @@ return [
             'title' => 'Zes hackathons, zes uitdagingen',
             'content' => [
                 1 => 'Woon je in Letland, Ierland, Italië, Roemenië, Slovenië of Spanje? Dan is dit je kans om je creativiteit, nieuwsgierigheid, inzet en technische vaardigheden te gebruiken. Doe mee aan een van de EU-programmeerweek hackathons en ontwikkel een vernieuwende oplossing waarvan de samenleving kan profiteren.',
-                2 => 'In 2020 brengt de EU-programmeerweek zes opmerkelijke hackathons naar zes Europese landen en worden ouderejaars in het voortgezet onderwijs (16 tot 19 jaar) uitgenodigd om hun programmeervaardigheden in te zetten om binnen 36 uur een antwoord te bieden op een lokale uitdaging.'
+                2 => 'In 2020 brengt de EU-programmeerweek zes opmerkelijke hackathons naar zes Europese landen en worden ouderejaars in het voortgezet onderwijs (16 tot 19 jaar) uitgenodigd om hun programmeervaardigheden in te zetten om binnen de twee dagen een antwoord te bieden op een lokale uitdaging.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'Hoe ziet een hackathon eruit?',
             'content' => [
-                1 => 'Bij elke hackathon nemen 60 middelbarescholieren het in teams gedurende 36 uur tegen elkaar op. Na afloop toont elk team zijn oplossing tijdens een pitch aan een jury bestaande uit experts. Ervaren mentoren coachen de teams en er zijn workshops waar deelnemers de mogelijkheid krijgen nieuwe vaardigheden te leren en plezier te maken. De hackathons zijn bovendien een uitstekende mogelijkheid voor deelnemers om te netwerken en te socialiseren met mensen uit de plaatselijke technologiesector.',
+                1 => 'Bij elke hackathon nemen 60 middelbarescholieren het in teams gedurende twee dagen tegen elkaar op. Na afloop toont elk team zijn oplossing tijdens een pitch aan een jury bestaande uit experts. Ervaren mentoren coachen de teams en er zijn workshops waar deelnemers de mogelijkheid krijgen nieuwe vaardigheden te leren en plezier te maken. De hackathons zijn bovendien een uitstekende mogelijkheid voor deelnemers om te netwerken en te socialiseren met mensen uit de plaatselijke technologiesector.',
                 2 => 'Het winnende team van elke lokale hackathon ontvangt verschillende prijzen, waaronder de kans om naar Brussel te gaan en de eigen oplossing op 12 oktober 2020 voor een internationaal publiek te presenteren.',
             ]
         ],

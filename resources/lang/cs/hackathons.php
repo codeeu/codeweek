@@ -9,7 +9,7 @@ return [
             'title' => '6 hackathonů, 6 výzev',
             'content' => [
                 1 => 'Žijete v Lotyšsku, Irsku, Itálii, Rumunsku, Slovinsku nebo Španělsku? Máme pro vás šanci, jak využít svou kreativitu, zvídavost, zápal a technické dovednosti. Zapojte se do jednoho z hackathonů v rámci Evropského týdne programování a podílejte se na vývoji inovativního řešení, které pomůže společnosti.',
-                2 => 'V roce 2020 Evropský týden programování uspořádá šest výjimečných hackathonů v šesti evropských zemích a zve studenty vyšších ročníků středních škol (ve věku 16–19 let), aby využili své programovací schopnosti při vývoji řešení místní výzvy v limitu 36 hodin.'
+                2 => 'V roce 2020 přinese Evropský týden programování šest mimořádných hackathonů do šesti evropských zemí. Zveme středoškoláky (16–19leté), aby ukázali své dovednosti v programování a aby vyřešili místní výzvy během hackathonu, který bude trvat 2 dny.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'Jak takový hackathon vypadá?',
             'content' => [
-                1 => 'Každého hackathonu se zúčastní 60 středoškolských studentů, kteří spolu v týmech budou soutěžit po dobu 36 hodin. Na konci každý tým představí své řešení odborné porotě. Týmy povedou zkušení mentoři, probíhat budou také semináře, na kterých budou mít účastníci příležitost naučit se zábavnou formou novým dovednostem. Hackathony jsou pro účastníky rovněž vynikající příležitostí k navazování kontaktů mezi sebou a s lidmi v místním technologickém sektoru.',
+                1 => 'Každého hackathonu se zúčastní 60 středoškolských studentů, kteří spolu v týmech budou soutěžit po dobu 2 dnů. Na konci každý tým představí své řešení odborné porotě. Týmy povedou zkušení mentoři, probíhat budou také semináře, na kterých budou mít účastníci příležitost naučit se zábavnou formou novým dovednostem. Hackathony jsou pro účastníky rovněž vynikající příležitostí k navazování kontaktů mezi sebou a s lidmi v místním technologickém sektoru.',
                 2 => 'Vítězný tým v každém z hackathonů získá různé ceny včetně návštěvy Bruselu a příležitosti prezentovat své řešení mezinárodnímu publiku dne 12. října 2020.',
             ]
         ],

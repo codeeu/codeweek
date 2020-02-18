@@ -9,7 +9,7 @@ return [
             'title' => '6 Hackathons, 6 Herausforderungen',
             'content' => [
                 1 => 'Leben Sie in Irland, Spanien, Italien, Lettland, Rumänien oder Slowenien? Dies ist Ihre Chance, um Ihre Kreativität, Neugier, Begeisterung und technischen Fähigkeiten einzubringen. Nehmen Sie an den Hackathons der EU Code Week teil und entwickeln Sie eine innovative Lösung, die der Gesellschaft hilft.',
-                2 => 'Im Jahr 2020 bringt die EU Code Week sechs außergewöhnliche Hackathons in sechs europäische Länder, bei denen Schülerinnen und Schüler der Oberstufe (16-19 Jahre) dazu eingeladen sind, ihre Programmierfähigkeiten einzubringen, um innerhalb von 36 Stunden Lösungen für eine lokale Herausforderung zu entwickeln.'
+                2 => 'Im Jahr 2020 bringt die EU Code Week sechs außergewöhnliche Hackathons in sechs europäische Länder, bei denen Schülerinnen und Schüler der Oberstufe (16-19 Jahre) dazu eingeladen sind, ihre Programmierfähigkeiten einzubringen, um innerhalb von 2 Tagen Lösungen für eine lokale Herausforderung zu entwickeln.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'Wie sieht ein Hackathon aus?',
             'content' => [
-                1 => 'Bei jedem Hackathon treten 60 weiterführende Schulen 36 Stunden lang in Teams gegeneinander an. Am Ende präsentiert jedes Team einer Expertenjury seine Lösung. Erfahrene Mentoren schulen die Teams und es gibt Workshops, die Teilnehmenden die Möglichkeit bieten, neue Fähigkeiten auf unterhaltsame Weise zu erlernen. Die Hackathons sind ebenfalls eine ausgezeichnete Möglichkeit für Teilnehmende zum Netzwerken und um Kontakte mit Menschen im lokalen Technologiesektor zu knüpfen.',
+                1 => 'Bei jedem Hackathon treten 60 weiterführende Schulen 2 Tage lang in Teams gegeneinander an. Am Ende präsentiert jedes Team einer Expertenjury seine Lösung. Erfahrene Mentoren schulen die Teams und es gibt Workshops, die Teilnehmenden die Möglichkeit bieten, neue Fähigkeiten auf unterhaltsame Weise zu erlernen. Die Hackathons sind ebenfalls eine ausgezeichnete Möglichkeit für Teilnehmende zum Netzwerken und um Kontakte mit Menschen im lokalen Technologiesektor zu knüpfen.',
                 2 => 'Die siegreichen Teams von allen lokalen Hackathons erhalten unterschiedliche Preise, darunter die Möglichkeit, nach Brüssel zu reisen und die Lösung am 12. Oktober 2020 einem internationalen Publikum vorzustellen.',
             ]
         ],

@@ -9,7 +9,7 @@ return [
             'title' => '6 maratonas de programação, 6 desafios',
             'content' => [
                 1 => 'Vives na Letónia, na Irlanda, em Itália, na Roménia, na Eslovénia ou em Espanha? Eis a oportunidade para pores em prática a tua criatividade, curiosidade, motivação e competências tecnológicas. Participa numa das maratonas de programação da Semana Europeia da Programação e desenvolve uma solução inovadora que seja útil à sociedade.',
-                2 => 'Em 2020, a Semana Europeia da Programação conta com seis maratonas de programação extraordinárias em seis países europeus e convida os estudantes do ensino secundário (16-19 anos de idade) a utilizarem as suas competências de programação para encontrar soluções para um desafio local em 36 horas.'
+                2 => 'Em 2020, a Semana Europeia da Programação conta com seis maratonas de programação extraordinárias em seis países europeus e convida os estudantes do ensino secundário (16-19 anos de idade) a utilizarem as suas competências de programação para encontrar soluções para um desafio local em dois dias.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'Em que consiste uma maratona de programação?',
             'content' => [
-                1 => 'Cada maratona de programação corresponde a uma competição de 36 horas entre 60 estudantes do ensino secundário, organizados em equipas. No final, cada equipa apresenta a sua solução a um júri de peritos. As equipas serão orientadas por mentores experientes e haverá ateliês com oportunidades para os participantes aprenderem novas competências de forma divertida. As maratonas de programação também são uma oportunidade excelente para os participantes trabalharem em rede e sociabilizarem com pessoas do setor tecnológico local.',
+                1 => 'Cada maratona de programação corresponde a uma competição de dois dias entre 60 estudantes do ensino secundário, organizados em equipas. No final, cada equipa apresenta a sua solução a um júri de peritos. As equipas serão orientadas por mentores experientes e haverá ateliês com oportunidades para os participantes aprenderem novas competências de forma divertida. As maratonas de programação também são uma oportunidade excelente para os participantes trabalharem em rede e sociabilizarem com pessoas do setor tecnológico local.',
                 2 => 'As equipas vencedoras das diferentes maratonas de programação locais receberão diferentes prémios, incluindo a oportunidade de ir a Bruxelas e apresentar a sua solução a um público internacional em 12 de outubro de 2020.',
             ]
         ],

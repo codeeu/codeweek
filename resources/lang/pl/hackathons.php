@@ -9,7 +9,7 @@ return [
             'title' => '6 maratonów programowania, 6 wyzwań',
             'content' => [
                 1 => 'Mieszkasz na Łotwie, w Irlandii, we Włoszech, w Rumunii, w Słowenii lub w Hiszpanii? Teraz masz okazję do wykorzystania własnej kreatywności, ciekawości, determinacji i umiejętności technicznych. Weź udział w jednym z maratonów programowania organizowanych w ramach Europejskiego Tygodnia Kodowania i opracuj innowacyjne rozwiązanie, które pomoże społeczeństwu.',
-                2 => 'W 2020 roku w sześciu różnych krajach europejskich zorganizowanych zostanie sześć niezwykłych maratonów programowania, podczas których uczniowie szkół średnich (w wieku 16–19 lat) będą mieli okazję do wykorzystania swoich umiejętności w zakresie kodowania i znalezienia rozwiązania lokalnego problemu w ciągu 36 godzin.'
+                2 => 'W 2020 roku w sześciu różnych krajach europejskich zorganizowanych zostanie sześć niezwykłych maratonów programowania, podczas których uczniowie szkół średnich (w wieku 16–19 lat) będą mieli okazję do wykorzystania swoich umiejętności w zakresie kodowania i znalezienia rozwiązania lokalnego problemu w ciągu 2 dni.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'Jak wygląda maraton programowania?',
             'content' => [
-                1 => 'W każdym maratonie programowania, który trwa 36 godzin, bierze udział 60 uczniów szkół średnich, którzy rywalizują ze sobą w zespołach. Na koniec każdy zespół przedstawia swoje rozwiązanie jury składającemu się z ekspertów. Zespołom będą pomagać doświadczeni mentorzy. Odbędą się również warsztaty dające uczestnikom możliwość zdobycia nowych umiejętności i dobrej zabawy. Maratony programowania są również doskonałą okazją do nawiązywania kontaktów z przedstawicielami lokalnego sektora technologicznego.',
+                1 => 'W każdym maratonie programowania, który trwa 2 dni, bierze udział 60 uczniów szkół średnich, którzy rywalizują ze sobą w zespołach. Na koniec każdy zespół przedstawia swoje rozwiązanie jury składającemu się z ekspertów. Zespołom będą pomagać doświadczeni mentorzy. Odbędą się również warsztaty dające uczestnikom możliwość zdobycia nowych umiejętności i dobrej zabawy. Maratony programowania są również doskonałą okazją do nawiązywania kontaktów z przedstawicielami lokalnego sektora technologicznego.',
                 2 => 'Zespół, który zwycięży w lokalnym maratonie programowania, otrzyma różne nagrody, w tym możliwość wyjazdu do Brukseli i przedstawienia swojego rozwiązania międzynarodowej publiczności 12 października 2020 r.',
             ]
         ],
