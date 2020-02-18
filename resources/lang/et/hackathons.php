@@ -9,7 +9,7 @@ return [
             'title' => 'Kuus häkatoni, kuus väljakutset',
             'content' => [
                 1 => 'Kas elate Lätis, Iirimaal, Itaalias, Rumeenias, Sloveenias või Hispaanias? Nüüd saate võimaluse kasutada oma loovust, uudishimu, innukust ja tehnilisi oskusi. Osalege ELi programmeerimisnädala Code Week häkatonil ja looge ühiskonnale kasulik uuenduslik lahendus.',
-                2 => '2020. aastal toob ELi programmeerimisnädal Code Week kuus erakordset häkatoni kuude Euroopa riiki ja kutsub gümnaasiumiõpilasi (vanuses 16–19 aastat) leidma 36 tunni jooksul oma programmeerimisoskuste abil lahendusi kohalikule väljakutsele.'
+                2 => '2020. aastal toob ELi programmeerimisnädal Code Week kuus erakordset häkatoni kuude Euroopa riiki ja kutsub gümnaasiumiõpilasi (vanuses 16–19 aastat) leidma 2 päeva jooksul oma programmeerimisoskuste abil lahendusi kohalikule väljakutsele.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'Mida häkaton endast kujutab?',
             'content' => [
-                1 => 'Igal häkatonil toimub 36 tundi kestev võistlus tiimidesse jagatud 60 gümnaasiumiõpilase vahel. Lõpuks esitavad tiimid oma lahendused ekspertidest koosnevale žüriile. Neid tiime juhendavad kogenud mentorid. Samuti toimub õpikodasid, kus osalejad saavad omandada uusi oskusi ja lõbusalt aega veeta. Häkatonid annavad osalejatele ka suurepäraseid võimalusi kontakte luua ja kohalike tehnikainimestega suhelda.',
+                1 => 'Igal häkatonil toimub 2 päeva kestev võistlus tiimidesse jagatud 60 gümnaasiumiõpilase vahel. Lõpuks esitavad tiimid oma lahendused ekspertidest koosnevale žüriile. Neid tiime juhendavad kogenud mentorid. Samuti toimub õpikodasid, kus osalejad saavad omandada uusi oskusi ja lõbusalt aega veeta. Häkatonid annavad osalejatele ka suurepäraseid võimalusi kontakte luua ja kohalike tehnikainimestega suhelda.',
                 2 => 'Kohaliku häkatoni võitnud tiim saab erinevaid auhindu, näiteks võimaluse minna 12. oktoobril 2020 Brüsselisse ja esitleda oma lahendust rahvusvahelisele kuulajaskonnale.',
             ]
         ],

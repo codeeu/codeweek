@@ -9,7 +9,7 @@ return [
             'title' => '6 hackathon, 6 sfide',
             'content' => [
                 1 => 'Vivi in Lettonia, Irlanda, Italia, Romania, Slovenia o Spagna? Questa è la tua occasione per usare al meglio creatività, curiosità, grinta e competenze tecniche. Partecipa a uno degli hackathon della settimana europea della programmazione e sviluppa una soluzione innovativa che aiuterà la società.',
-                2 => 'Nel 2020, la settimana europea della programmazione organizza sei straordinari hackathon in sei paesi europei e invita gli studenti delle scuole secondarie superiori (16-19 anni) a utilizzare le loro abilità di programmazione per cercare di risolvere un problema locale in 36 ore.'
+                2 => 'Nel 2020, la settimana europea della programmazione organizza sei straordinari hackathon in sei paesi europei e invita gli studenti delle scuole secondarie superiori (16-19 anni) a utilizzare le loro abilità di programmazione per cercare di risolvere un problema locale in due giorni.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'Come si svolge un hackathon?',
             'content' => [
-                1 => 'Ad ogni hackathon partecipano 60 studenti delle scuole secondarie che si affrontano in squadre per 36 ore. Alla fine, ogni squadra presenterà la propria soluzione ad una giuria di esperti. Mentori esperti assisteranno le squadre e i partecipanti avranno l’opportunità, tramite workshop, di acquisire nuove competenze divertendosi. Gli hackathon sono anche un’ottima occasione per fare rete e conoscere persone del settore tecnologico locale.',
+                1 => 'Ad ogni hackathon partecipano 60 studenti delle scuole secondarie che si affrontano in squadre per due giorni. Alla fine, ogni squadra presenterà la propria soluzione ad una giuria di esperti. Mentori esperti assisteranno le squadre e i partecipanti avranno l’opportunità, tramite workshop, di acquisire nuove competenze divertendosi. Gli hackathon sono anche un’ottima occasione per fare rete e conoscere persone del settore tecnologico locale.',
                 2 => 'Il team vincitore di ogni hackathon riceverà diversi premi, tra cui l’opportunità di andare a Bruxelles il 12 ottobre 2020 a presentare la propria soluzione a un pubblico internazionale.',
             ]
         ],
