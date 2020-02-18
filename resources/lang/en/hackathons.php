@@ -9,7 +9,7 @@ return [
             'title' => '6 hackathons, 6 challenges',
             'content' => [
                 1 => 'Do you live in Latvia, Ireland, Italy, Romania, Slovenia or Spain? Here is your chance to use your creativity, curiosity, drive and tech skills. Join one of the EU Code Week hackathons and develop an innovative solution that will help society.',
-                2 => 'In 2020, EU Code Week brings six extraordinary hackathons to six European countries and invites upper secondary students (16-19 year-olds) to use their coding skills to come up with solutions to a local challenge in 36 hours.'
+                2 => 'In 2020, EU Code Week brings six extraordinary hackathons to six European countries and invites upper secondary students (16-19 year-olds) to use their coding skills to come up with solutions to a local challenge in 2 days.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'What does a hackathon look like?',
             'content' => [
-                1 => 'Each hackathon will see 60 secondary school students competing in teams for 36 hours. At the end, each team will pitch their solution to an expert jury. Experienced mentors will coach the teams and there will be workshops providing opportunities for participants to learn new skills and have fun. The hackathons are also an excellent opportunity for participants to network and socialise with people in the local tech sector.',
+                1 => 'Each hackathon will see 60 secondary school students competing in teams for 2 days. At the end, each team will pitch their solution to an expert jury. Experienced mentors will coach the teams and there will be workshops providing opportunities for participants to learn new skills and have fun. The hackathons are also an excellent opportunity for participants to network and socialise with people in the local tech sector.',
                 2 => 'The winning team in each local hackathon will receive different prizes, including the opportunity to go to Brussels and present their solution to an international audience on 12 October 2020.',
             ]
         ],
