@@ -74,7 +74,74 @@
 
         <section id="pratical-info">
             <div id="map"></div>
-            <div class="info"></div>
+            <div class="info">
+                <h1>Practical Info</h1>
+                <div class="info-details">
+                    <h3>Date</h3>
+                    <p>April 25-26, 2020</p>
+                </div>
+                <div class="info-details">
+                    <h3>Address</h3>
+                    <p>Name of the venue</p>
+                    <p>Avenue de Beaulieu 25</p>
+                    <p>Auderghem - Bruxelles, Belgique</p>
+                </div>
+                <div class="get-directions">
+                    <img src="/images/tick.svg" class="static-image">
+                    <a href="#">GET DIRECTIONS</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="jury-mentors">
+            <h1>Jury & Mentors</h1>
+            <p>
+                Imagine being in a room full of designers, developers, creators, coders and business mentors, all with the same curiosity and drive as you. EU Code Week Hackathon [City] brings together leading figures from the worlds of business, IT, venture capital, education, as well as local, national and EU leaders, influencers and coaches to guide and support you and your team during this intensive marathon. A select number of Jury members is also chosen to decide the final winning team, according to relevant guidelines and competition rules.
+            </p>
+            <div class="jury-grid">
+                <div class="item">
+                    <img src="https://codeweek-s3.s3.amazonaws.com/avatars/34/bruno ferreira.jpg">
+                    <h2>First Lastname</h2>
+                    <h3>Function,</h3>
+                    <h3>INSTITUTION</h3>
+                </div>
+                <div class="item">
+                    <img src="https://codeweek-s3.s3.amazonaws.com/avatars/156389/aż.jpg">
+                    <h2>First Lastname</h2>
+                    <h3>Function,</h3>
+                    <h3>INSTITUTION</h3>
+                </div>
+                <div class="item">
+                    <img src="https://codeweek-s3.s3.amazonaws.com/avatars/JankoRadigovic/janko-radigovic.jpg">
+                    <h2>First Lastname</h2>
+                    <h3>Function,</h3>
+                    <h3>INSTITUTION</h3>
+                </div>
+                <div class="item">
+                    <img src="https://codeweek-s3.s3.amazonaws.com/avatars/turtlestitch/cam_bearb2_07_2016sm.jpg">
+                    <h2>First Lastname</h2>
+                    <h3>Function,</h3>
+                    <h3>INSTITUTION</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="side-events">
+            <div class="left">
+                <h1>Side events</h1>
+                <p>Are you a young person, a teacher or parent who doesn’t know anything about coding? Sign up to our side events and discover the thrill of coding, innovation, entrepreneurship and other skills vital to empowering people in a digital world. Our Side events will include several different workshops. They are free of charge you just have to sign up here. Come and learn more</p>
+                <a href="" class="codeweek-action-link-button">REGISTER TO ONE OF WORKSHOPS HERE</a>
+            </div>
+            <img src="/images/hackathons/side_events.png">
+        </section>
+
+        <section id="about-codeweek">
+            <div class="text">
+                <h1>About CODEWEEK.EU</h1>
+                <p>EU Code Week (#CodeWeek) is a grassroots movement run by volunteers to promote digital literacy through activities linked to coding and computer science. It inspires and engages people to explore new ideas and innovate for the future. Activities for EU Code Week take place all over Europe between 10 and 25 October 2020. To raise its profile throughout the community, broaden its appeal and provide tangible outcomes, the EU Code Week Hackathon series has been created and co-organised by the European Commission and local EU Code Week Ambassadors. The initiative is financed by the European Parliament.</p>
+            </div>
+            <img src="/images/hackathons/about_codeweek.svg" class="static-image">
+            <a href="https://codeweek.eu/about" class="codeweek-action-link-button">DISCOVER MORE</a>
         </section>
 
         <input type="hidden" name="geoposition" id="geoposition" value="50.8141898,4.4099089">
