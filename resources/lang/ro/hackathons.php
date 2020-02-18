@@ -9,7 +9,7 @@ return [
             'title' => '6 evenimente hackathon, 6 provocări',
             'content' => [
                 1 => 'Locuiești în Letonia, Irlanda, Italia, România, Slovenia sau Spania? Acum ai șansa de a-ți folosi creativitatea, curiozitatea, ambiția și competențele tehnice. Participă la unul dintre evenimentele hackathon din cadrul Săptămânii UE a programării și dezvoltă o soluție inovatoare care să ajute societatea.',
-                2 => 'În 2020, Săptămâna UE a programării aduce șase evenimente hackathon în șase țări europene și invită elevii de liceu (cu vârste între 16 și 19 ani) să își folosească abilitățile de programare pentru a găsi soluții la o provocare locală în 36 de ore.'
+                2 => 'În 2020, Săptămâna UE a programării aduce șase evenimente hackathon în șase țări europene și invită elevii de liceu (cu vârste între 16 și 19 ani) să își folosească abilitățile de programare pentru a găsi soluții la o problemă specifică în 2 zile.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'Cum arată un hackathon?',
             'content' => [
-                1 => 'La fiecare hackathon vor concura în echipe 60 de elevi de liceu, pe parcursul a 36 de ore. La sfârșit, fiecare echipă își va prezenta soluția în fața unui juriu format din experți. Echipele vor fi îndrumate de către mentori cu experiență, iar participanții vor avea ocazia de a deprinde competențe noi și de a se distra în cadrul unor ateliere. Evenimentele hackathon reprezintă și o ocazie excelentă pentru participanți de a stabili legături și a socializa cu oameni din sectorul local al tehnologiei.',
+                1 => 'La fiecare hackathon vor concura 60 de elevi de liceu, organizați in echipe, timp de 2 zile. La sfârșit, fiecare echipă își va prezenta soluția în fața unui juriu format din experți. Echipele vor fi îndrumate de către mentori cu experiență, iar participanții vor avea ocazia de a deprinde competențe noi și de a se distra în cadrul unor ateliere. Evenimentele hackathon reprezintă și o ocazie excelentă pentru participanți de a stabili legături și a socializa cu oameni din sectorul local al tehnologiei.',
                 2 => 'Echipa câștigătoare de la fiecare hackathon local va primi diferite premii, inclusiv posibilitatea de a merge la Bruxelles pentru a-și prezenta soluția în fața unui public internațional în 12 octombrie 2020.',
             ]
         ],
