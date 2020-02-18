@@ -9,7 +9,7 @@ return [
             'title' => '6 hak-festova, 6 izazova',
             'content' => [
                 1 => 'Da li živite u Letoniji, Irskoj, Italiji, Rumuniji, Sloveniji ili Španiji? Ovo je vaša prilika da iskoristite svoju kreativnost, znatiželju, motivaciju i tehničke veštine. Pridružite se jednom od hak-festova EU Nedelje programiranja i razvijte inovativno rešenje koje će biti od koristi društvu.',
-                2 => 'U 2020. godini, EU Nedelja programiranja donosi šest izvanrednih hak-festova u šest evropskih država i poziva učenike zavšnih godina srednjih škola (16-19 godina) da iskoriste svoje veštine kodiranja i pronađu rešenja na lokalnom izazovu u roku od 36 sati.'
+                2 => 'U 2020., EU nedelja programiranja donosi šest izvanrednih hakatona u šest evropskih zemalja i poziva učenike zavšnih godina srednjih škola (16-19 godina) da iskoriste svoje veštine programiranja kako bi za dva dana pronašli rešenja za lokalni izazov.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'Kako izgleda hak-fest?',
             'content' => [
-                1 => 'Na svakom hak-festu, 60 učenika srednjih škola će se takmičiti u timovima tokom 36 sati. Na kraju, svaki tim će predstaviti svoje rešenje stručnom žiriju. Iskusni mentori će obučavati timove, a postojaće radionice koje će učesnicima pružati mogućnosti da nauče nove veštine i da se zabave. Hak-festovi predstavljaju i sjajnu priliku za umrežavanje učesnika i za druženje sa ljudima iz svog lokalnog stručnog sektora.',
+                1 => 'Na svakom hakatonu 60 srednjoškolaca će se takmičiti u timovima tokom dva dana. Na kraju, svaki tim će predstaviti svoje rešenje stručnom žiriju. Iskusni mentori će obučavati timove, a postojaće radionice koje će učesnicima pružati mogućnosti da nauče nove veštine i da se zabave. Hak-festovi predstavljaju i sjajnu priliku za umrežavanje učesnika i za druženje sa ljudima iz svog lokalnog stručnog sektora.',
                 2 => 'Pobednički timovi na svakom lokalnom hak-festu će dobiti različite nagrade, uključujući mogućnost da otputuju u Brisel i predstave svoje rešenje međunarodnoj publici 12. oktobra 2020. godine.',
             ]
         ],

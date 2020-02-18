@@ -9,7 +9,7 @@ return [
             'title' => '6 hackathon, 6 mücadele',
             'content' => [
                 1 => 'Letonya, İrlanda, İtalya, Romanya, Slovenya veya İspanya’da mı yaşıyorsunuz? İşte yaratıcılığınızı, merakınızı, enerjinizi ve teknoloji becerilerinizi kullanma şansı. EU Code Week hackathon’larından birine katılın ve topluma yararlı yenilikçi bir çözüm geliştirin.',
-                2 => 'EU Code Week, 2020 yılında altı Avrupa ülkesinde olağanüstü altı hackathon düzenliyor ve 36 saat içerisinde yerel bir sorunu çözmek için kodlama yeteneklerini kullanmak üzere üst orta öğretim öğrencilerini (16-19 yaş) davet ediyor.'
+                2 => 'EU Code Week, 2020 yılında altı Avrupa ülkesinde olağanüstü altı hackathon düzenliyor ve iki gün içerisinde yerel bir sorunu çözmek için kodlama yeteneklerini kullanmak üzere lise öğrencilerini (16-19 yaş) davet ediyor.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'Hackathon neye benzer?',
             'content' => [
-                1 => 'Her hackathon’da ekipler olarak 36 saat yarışan 60 orta öğretim öğrencisi bulunur. Sonuçta, her ekibin sonucu uzman bir jüri tarafından değerlendirilir. Tecrübeli danışmanlar ekiplere koçluk yaparken, katılımcılara yeni beceriler öğrenip eğlenme fırsatı sunan çalıştaylar yapılır. Hackathon’lar, yerel teknoloji sektöründeki kişilerle çevre kurup sosyalleşmek isteyen katılımcılar için de mükemmel bir fırsattır.',
+                1 => 'Her hackathon’da ekipler olarak iki gün boyunca yarışan 60 lise öğrencisi bulunur. Sonuçta, her ekibin sonucu uzman bir jüri tarafından değerlendirilir. Tecrübeli danışmanlar ekiplere koçluk yaparken, katılımcılara yeni beceriler öğrenip eğlenme fırsatı sunan çalıştaylar yapılır. Hackathon’lar, yerel teknoloji sektöründeki kişilerle çevre kurup sosyalleşmek isteyen katılımcılar için de mükemmel bir fırsattır.',
                 2 => 'Her yerel hackathon’un kazanan ekibi, 12 Ekim 2020 tarihinde Brüksel’e gidip çözümlerini uluslararası bir kitleye sunma fırsatını da kapsayan farklı ödüller kazanacaktır.',
             ]
         ],

@@ -9,7 +9,7 @@ return [
             'title' => '6 hakatonai, 6 iššūkiai',
             'content' => [
                 1 => 'Gyvenate Latvijoje, Airijoje, Italijoje, Rumunijoje, Slovėnijoje arba Ispanijoje? Turite progą parodyti savo kūrybiškumą, smalsumą, norą judėti pirmyn ir technologinius įgūdžius. Prisijunkite prie vieno iš ES programavimo savaitės hakatonų ir sukurkite novatorišką visuomenei naudingą sprendimą.',
-                2 => '2020 m. ES programavimo savaitė rengia šešis išskirtinius hakatonus šešiose Europos šalyse. Aukštesniojo vidurinio ugdymo moksleiviai (16–19 metų)  kviečiami pasitelkti savo programavimo įgūdžius ir per 36 valandas sukurti sprendimą vietinei problemai išspręsti.'
+                2 => '2020 m. Europos programavimo savaitė sukvies šešis nepakartojamus hakatonus, į šešias Europos šalis ir pakvies vyresniųjų klasių vidurinės mokyklos mokinius (16-19 metų), parodyti savo programavimo sugebėjimus ir per dvi dienas pateikti sprendimus į vietinį iššūkį'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'Kaip vyksta hakatonas?',
             'content' => [
-                1 => 'Kiekviename hakatone 36 valandas komandose varžysis 60 moksleivių. Galiausiai kiekviena komanda pristatys savo sprendimą ekspertų komisijai. Komandoms padės patyrę mentoriai, vyks užsiėmimai, kurių metu dalyviai galės įgyti naujų įgūdžių ir smagiai praleisti laiką. Hakatonai taip pat yra puiki galimybė dalyviams užmegzti naujų pažinčių vietos technologijų sektoriuje ir sukurti kontaktų tinklą.',
+                1 => 'Kiekviename hakatone dalyvaus 60 vidurinių mokyklų mokinių, kurie dvi dienas rungtyniaus komandose. Galiausiai kiekviena komanda pristatys savo sprendimą ekspertų komisijai. Komandoms padės patyrę mentoriai, vyks užsiėmimai, kurių metu dalyviai galės įgyti naujų įgūdžių ir smagiai praleisti laiką. Hakatonai taip pat yra puiki galimybė dalyviams užmegzti naujų pažinčių vietos technologijų sektoriuje ir sukurti kontaktų tinklą.',
                 2 => 'Nugalėjusi komanda kiekviename vietos hakatone gaus skirtingų prizų, taip pat turės galimybę vykti į Briuselį ir 2020 m. spalio 12 d. pristatyti savo sprendimą tarptautinei auditorijai.',
             ]
         ],

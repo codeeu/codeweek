@@ -9,7 +9,7 @@ return [
             'title' => 'Kuusi hackathon-tapahtumaa, kuusi haastetta',
             'content' => [
                 1 => 'Asutko Latviassa, Irlannissa, Italiassa, Romaniassa, Sloveniassa tai Espanjassa? Nyt sinulla on tilaisuus käyttää luovuuttasi, uteliaisuuttasi, energiaasi ja tietotekniikkataitojasi. Osallistu yhteen EU:n koodausviikon hackathon-tapahtumista ja kehitä yhteiskuntaa hyödyttävä innovatiivinen ratkaisu.',
-                2 => 'Vuonna 2020 EU:n koodausviikolla järjestetään kuusi suurenmoista hackathon-tapahtumaa kuudessa Euroopan maassa. Niissä keskiasteen opiskelijat (iältään 16–19 vuotta) pääsevät käyttämään koodaustaitojaan löytääkseen ratkaisun paikalliseen haasteeseen 36 tunnin kuluessa.'
+                2 => 'Vuonna 2020 EU:n koodausviikolla järjestetään kuusi suurenmoista hackathon-tapahtumaa kuudessa Euroopan maassa. Niissä keskiasteen opiskelijat (iältään 16–19 vuotta) pääsevät käyttämään koodaustaitojaan löytääkseen ratkaisun paikalliseen haasteeseen kahden päivän kuluessa.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'Mikä hackathon on?',
             'content' => [
-                1 => 'Kussakin hackathon-tapahtumassa 60 keskiasteen opiskelijaa osallistuu joukkueina 36 tuntia kestävään kilpailuun. Lopuksi kukin joukkue esittelee ratkaisunsa asiantuntijaraadille. Kokeneet mentorit valmentavat joukkueita, ja työpajoissa osallistujilla on tilaisuus oppia uusia taitoja hauskanpitoa unohtamatta. Hackathon-tapahtumat ovat myös erinomainen tilaisuus verkostoitua ja tavata paikallisia tietotekniikka-alan osaajia.',
+                1 => 'Kussakin hackathon-tapahtumassa 60 keskiasteen opiskelijaa osallistuu joukkueina kaksi päivää kestävään kilpailuun. Lopuksi kukin joukkue esittelee ratkaisunsa asiantuntijaraadille. Kokeneet mentorit valmentavat joukkueita, ja työpajoissa osallistujilla on tilaisuus oppia uusia taitoja hauskanpitoa unohtamatta. Hackathon-tapahtumat ovat myös erinomainen tilaisuus verkostoitua ja tavata paikallisia tietotekniikka-alan osaajia.',
                 2 => 'Kunkin maan hackathon-tapahtuman voittajajoukkue saa erilaisia palkintoja sekä mahdollisuuden matkustaa Brysseliin esittelemään ratkaisuaan kansainväliselle yleisölle 12. lokakuuta 2020.',
             ]
         ],

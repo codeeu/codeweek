@@ -9,7 +9,7 @@ return [
             'title' => '6 hekatonov, 6 izzivov',
             'content' => [
                 1 => 'Ali živite v Latviji, na Irskem, v Italiji, Romuniji, Sloveniji ali Španiji? Zdaj imate priložnost, da uporabite svojo ustvarjalnost, radovednost, zagon ter znanje in spretnosti na področju tehnologije. Pridružite se enemu od hekatonov evropskega tedna programiranja in razvijte inovativno rešitev, ki bo koristila družbi.',
-                2 => 'Evropski teden programiranja v letu 2020 prinaša šest izjemnih hekatonov v šest evropskih držav in vabi srednješolce (stare 16–19 let), da uporabijo svoje znanje programiranja in v 36 urah najdejo rešitev za lokalni izziv.'
+                2 => 'Evropski teden programiranja v letu 2020 prinaša šest izjemnih hekatonov v šest evropskih držav in vabi srednješolce (stare 16–19 let), da uporabijo svoje znanje programiranja in v dveh dneh najdejo rešitev za lokalni izziv.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'Kako je videti hekaton?',
             'content' => [
-                1 => 'V vsakem hekatonu bo sodelovalo 60 srednješolcev, ki bodo 36 ur tekmovali v ekipah. Na koncu bo vsaka ekipa predstavila svojo rešitev strokovni žiriji. Z ekipami bodo delali izkušeni mentorji in organizirane bodo delavnice, kjer bodo lahko udeleženci pridobili nova znanja in spretnosti ter se ob tem še zabavali. Hekatoni so tudi odlična priložnost, da se udeleženci povežejo in družijo z ljudmi iz lokalnega tehnološkega sektorja.',
+                1 => 'V vsakem hekatonu bo sodelovalo 60 srednješolcev, ki bodo dva dni tekmovali v ekipah. Na koncu bo vsaka ekipa predstavila svojo rešitev strokovni žiriji. Z ekipami bodo delali izkušeni mentorji in organizirane bodo delavnice, kjer bodo lahko udeleženci pridobili nova znanja in spretnosti ter se ob tem še zabavali. Hekatoni so tudi odlična priložnost, da se udeleženci povežejo in družijo z ljudmi iz lokalnega tehnološkega sektorja.',
                 2 => 'Na vsakem lokalnem hekatonu bo zmagovalna ekipa prejela različne nagrade in imela priložnost, da 12. oktobra 2020 odpotuje v Bruselj in tam predstavi svojo rešitev mednarodnemu občinstvu.',
             ]
         ],
