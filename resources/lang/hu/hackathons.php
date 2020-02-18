@@ -9,7 +9,7 @@ return [
             'title' => '6 hackathon, 6 kihívás',
             'content' => [
                 1 => 'Lettországban, Írországban, Olaszországban, Romániában, Szlovéniában  vagy Spanyolországban élsz? Most esélyed van arra, hogy használd a kreativitásodat, a kíváncsiságodat, valamint a vezetési és technikai képességeidet. Csatlakozz az európai programozási hét egyik hackatonjához és fejlessz egy olyan innovatív megoldást, amely segíti a társadalmat.',
-                2 => '2020-ban az európai programozási hét hat rendkívüli hackathonst visz el hat európai országba, amelynek keretében középiskolás (16-19 éves) diákokat hív meg arra, hogy programozási ismereteik felhasználásával 36 órán belül álljanak elő egy helyi kihívás kezelésére alkalmas megoldásokkal.'
+                2 => 'Az európai programozási hét 2020-ban hat rendkívüli hackathont szervez hat európai országban, amelynek keretében középiskolás (16-19 éves) diákokat hív meg, hogy programozási ismereteik felhasználásával 2 napon belül találjanak megoldást egy helyi problémára.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'Hogyan néz ki egy hackathon?',
             'content' => [
-                1 => 'Minden egyes hackathon keretében 60 középiskolás diák versenyez csapatokban 36 órán keresztül. A végén pedig minden egyes csapat beszámol megoldásukról egy szakértői zsűrinek. Tapasztalt mentorok fogják coacholni a csapatokat, és lesznek műhelybeszélgetések, amelyek lehetőséget biztosítanak a résztvevőknek arra, hogy új képességeket tanuljanak és jól érezzék magukat. A hackathonok egyúttal kiváló lehetőséget nyújtanak a résztvevők számára arra is, hogy hálózatot építsenek és társas kapcsolatokat alakítsanak ki a helyi IT ágazat szereplőivel.',
+                1 => 'Minden egyes hackathon keretében 60 középiskolás diák csapatokban versenyez 2 napig. A végén pedig minden egyes csapat beszámol megoldásukról egy szakértői zsűrinek. Tapasztalt mentorok fogják coacholni a csapatokat, és lesznek műhelybeszélgetések, amelyek lehetőséget biztosítanak a résztvevőknek arra, hogy új képességeket tanuljanak és jól érezzék magukat. A hackathonok egyúttal kiváló lehetőséget nyújtanak a résztvevők számára arra is, hogy hálózatot építsenek és társas kapcsolatokat alakítsanak ki a helyi IT ágazat szereplőivel.',
                 2 => 'A győztes csapat minden egyes helyi hackathonon különböző díjakat fog kapni, egy brüsszeli utazás lehetőségét is beleértve, ahol 2020. október 12-én nemzetközi hallgatóságnak mutathatják be megoldásukat.',
             ]
         ],

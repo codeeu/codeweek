@@ -9,7 +9,7 @@ return [
             'title' => '6 hackatonov, 6 výziev',
             'content' => [
                 1 => 'Žijete v Lotyšsku, Írsku, Taliansku, Rumunsku, Slovinsku alebo Španielsku? Teraz máte príležitosť využiť svoju tvorivosť, zvedavosť, nasadenie a technologické zručnosti. Zapojte sa do hackatonov Európskeho týždňa programovania a vytvorte inovačné riešenie, ktoré pomôže spoločnosti.',
-                2 => 'V roku 2020 prináša Európsky týždeň programovania šesť výnimočných hackatonov do šiestich európskych krajín. Výzva je určená stredoškolákom (16 – 19 rokov), ktorých úlohou bude za 36 hodín vyvinúť riešenia s využitím svojich programátorských zručností.'
+                2 => 'V roku 2020 prináša Európsky týždeň programovania šesť výnimočných hackatonov do šiestich európskych krajín. Výzva je určená stredoškolákom (16 – 19 rokov), ktorých úlohou bude za 2 dni vyvinúť riešenia s využitím svojich programátorských zručností.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'Ako vyzerá hackaton?',
             'content' => [
-                1 => 'V každom hackatone bude počas 36 hodín súťažiť v tímoch 60 stredoškolákov. Na záver každý tím predvedie svoje riešenie odbornej porote. Tímy budú viesť skúsení mentori a zorganizujú sa semináre, na ktorých sa účastníci môžu naučiť nové zručnosti a zabaviť sa. Hackatony sú tiež vynikajúcou možnosťou pre účastníkov, aby nadviazali kontakty a zoznámili sa s ľuďmi, ktorí pôsobia v miestnom technologickom odvetví.',
+                1 => 'V každom hackatone bude počas 32 dní súťažiť v tímoch 60 stredoškolákov. Na záver každý tím predvedie svoje riešenie odbornej porote. Tímy budú viesť skúsení mentori a zorganizujú sa semináre, na ktorých sa účastníci môžu naučiť nové zručnosti a zabaviť sa. Hackatony sú tiež vynikajúcou možnosťou pre účastníkov, aby nadviazali kontakty a zoznámili sa s ľuďmi, ktorí pôsobia v miestnom technologickom odvetví.',
                 2 => 'Víťazné tímy všetkých miestnych hackatonov získajú rozličné ceny vrátane možnosti cestovať do Bruselu a predstaviť svoje riešenie medzinárodnému publiku 12. októbra 2020.',
             ]
         ],

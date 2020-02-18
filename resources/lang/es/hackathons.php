@@ -9,7 +9,7 @@ return [
             'title' => 'Seis hackatones, seis retos',
             'content' => [
                 1 => '¿Vives en Letonia, Irlanda, Italia, Rumanía, Eslovenia o España? Esta es tu oportunidad de utilizar tu creatividad, curiosidad, ímpetu y habilidades técnicas. Participa en uno de los hackatones de la Semana de la Programación de la Unión Europea (UE) y desarrolla una solución innovadora que contribuirá a la sociedad.',
-                2 => 'En 2020, la Semana de la Programación de la UE lleva seis hackatones extraordinarios a seis países europeos e invita a estudiantes de secundaria superior (16-19 años) a utilizar sus habilidades de programación para encontrar soluciones a un reto local en treinta y seis horas.'
+                2 => 'En 2020, la Semana de la Programación de la UE lleva seis hackatones extraordinarios a seis países europeos e invita a estudiantes de secundaria superior (16-19 años) a utilizar sus habilidades de programación para encontrar soluciones a un reto local en 2 días.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => '¿Cómo es un hackatón?',
             'content' => [
-                1 => 'En cada hackatón habrá sesenta alumnos de secundaria compitiendo en equipos durante treinta y seis horas. Al finalizar, cada equipo explicará su solución a un jurado experto. Habrá tutores expertos que asesorarán a los equipos y talleres que ofrecerán oportunidades para que los participantes aprendan nuevas habilidades y se diviertan. Los hackatones también son una excelente oportunidad para que los participantes hagan contactos y socialicen con personas del sector tecnológico local.',
+                1 => 'En cada hackatón habrá 60 alumnos de secundaria compitiendo en equipos durante 2 días. Al finalizar, cada equipo explicará su solución a un jurado experto. Habrá tutores expertos que asesorarán a los equipos y talleres que ofrecerán oportunidades para que los participantes aprendan nuevas habilidades y se diviertan. Los hackatones también son una excelente oportunidad para que los participantes hagan contactos y socialicen con personas del sector tecnológico local.',
                 2 => 'El equipo ganador de cada hackatón local recibirá distintos premios, como la oportunidad de ir a Bruselas y presentar su solución ante un público internacional el 12 de octubre de 2020.',
             ]
         ],
