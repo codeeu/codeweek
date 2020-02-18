@@ -9,7 +9,7 @@ return [
             'title' => '6 hackatona, 6 izazova',
             'content' => [
                 1 => 'Živite li u Irskoj, Italiji, Latviji, Rumunjskoj, Sloveniji ili Španjolskoj? Evo prilike za iskorištavanje vaše kreativnosti, znatiželje, težnji i tehničkih vještina. Pridružite se jednom od hackatona Europskog tjedna programiranja i razvijte inovativno rješenje koje će pomoći društvu.',
-                2 => 'Europski tjedan programiranja u 2020. donosi šest izvanrednih hackatona u šest europskih zemalja i pozivaju se stariji srednjoškolci (od 16 do 19 godina) da primijene vještine programiranja i u 36 sati osmisle rješenja za lokalni izazov.'
+                2 => 'Europski tjedan programiranja u 2020. donosi šest izvanrednih hackatona u šest europskih zemalja i pozivaju se stariji srednjoškolci (od 16 do 19 godina) da primijene vještine programiranja i u dva dana i osmisle rješenja za lokalni izazov.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'Kako hackaton izgleda?',
             'content' => [
-                1 => 'U svakom je hackatonu 60 srednjoškolaca koji se natječu u timovima 36 sati. Po završetku će svaki tim svoje rješenje prezentirati stručnom žiriju. Iskusni mentori bit će treneri timovima, a kroz radionice će se pružiti prilike sudionicima da nauče nove vještine i zabave se. Hackatoni su i izvrsna prilika sudionicima za umrežavanje i druženje s ljudima u lokalnom tehničkom sektoru.',
+                1 => 'U svakom je hackatonu 60 srednjoškolaca koji se natječu u timovima dva dana. Po završetku će svaki tim svoje rješenje prezentirati stručnom žiriju. Iskusni mentori bit će treneri timovima, a kroz radionice će se pružiti prilike sudionicima da nauče nove vještine i zabave se. Hackatoni su i izvrsna prilika sudionicima za umrežavanje i druženje s ljudima u lokalnom tehničkom sektoru.',
                 2 => 'Pobjednički tim u svakom lokalnom hackatonu osvojit će različite nagrade, uključujući priliku za posjet Bruxellesu i prezentiranje svojeg rješenja međunarodnoj publici 12. listopada 2020.',
             ]
         ],

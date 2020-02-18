@@ -9,7 +9,7 @@ return [
             'title' => '6 hackaton, 6 utmaningar',
             'content' => [
                 1 => 'Bor du i Lettland, Irland, Italien, Rumänien, Slovenien eller Spanien? Här får du chansen att använda din kreativitet, nyfikenhet, drivkraft och dina tekniska kunskaper. Delta i ett av EU Code Weeks hackaton och utveckla en innovativ lösning som är till hjälp i samhället.',
-                2 => 'Under 2020 kommer EU Code Week att hålla i sex särskilda hackaton i sex europeiska länder och man bjuder in gymnasieelever (16–19 år) till att använda sina kodningskunskaper för att hitta en lösning på en lokal utmaning på 36 timmar.'
+                2 => 'Under 2020 kommer EU Code Week att hålla i sex särskilda hackaton i sex europeiska länder och man bjuder in gymnasieelever (16–19 år) till att använda sina kodningskunskaper för att hitta en lösning på en lokal utmaning på två dagar.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'Hur fungerar ett hackaton?',
             'content' => [
-                1 => 'Vid varje hackaton kommer 60 gymnasieelever att tävla i lag under 36 timmar. I slutet kommer varje lag att få presentera sin lösning för en expertjury. Erfarna mentorer kommer att leda lagen och det kommer att hållas workshopar där deltagarna både får möjlighet att lära sig nya färdigheter och ha kul. Våra hackaton är också en fantastisk möjlighet för deltagarna att nätverka och umgås med folk från den lokala tekniksektorn.',
+                1 => 'Vid varje hackaton kommer 60 gymnasieelever att tävla i lag under två dagar. I slutet kommer varje lag att få presentera sin lösning för en expertjury. Erfarna mentorer kommer att leda lagen och det kommer att hållas workshopar där deltagarna både får möjlighet att lära sig nya färdigheter och ha kul. Våra hackaton är också en fantastisk möjlighet för deltagarna att nätverka och umgås med folk från den lokala tekniksektorn.',
                 2 => 'Det vinnande laget vid varje lokalt hackaton kommer att få olika priser, däribland möjligheten att åka till Bryssel och presentera sin lösning för en internationell publik den 12 oktober 2020.',
             ]
         ],
