@@ -9,7 +9,7 @@ return [
             'title' => '6 hakatona, 6 izazova',
             'content' => [
                 1 => 'Živite li u Latviji, Irskoj, Italiji, Rumuniji, Sloveniji ili Španiji? Evo vaše prilike da upotrijebite svoju kreativnost, radoznalost, entuzijazam i tehnička znanja. Pridružite se jednom od hakatona Sedmice kodiranja EU i kreirajte inovativno rješenje koje će pomoći društvu.',
-                2 => 'Sedmica kodiranja EU 2020. godine organizira šest izvanrednih hakatona u šest evropskih zemalja i poziva učenike starijih razreda srednjih škola (od 16 do 19 godina) da svoja znanja iz kodiranja upotrijebe u cilju iznalaženja rješenja za lokalni izazov u roku od 36 sati.'
+                2 => 'Sedmica kodiranja EU 2020. godine organizira šest izvanrednih hakatona u šest evropskih zemalja i poziva učenike starijih razreda srednjih škola (od 16 do 19 godina) da svoja znanja iz kodiranja upotrijebe u cilju iznalaženja rješenja za lokalni izazov u dva dana.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'Kako izgleda hakaton?',
             'content' => [
-                1 => 'Na svakom hakatonu će se 36 sati natjecati 60 srednjoškolaca u timovima. Na kraju će svaki tim iznijeti svoje rješenje pred stručnim žirijem. Iskusni mentori podučavat će svaki od timova i organizirati će se radionice koje će učesnicima pružiti priliku da usvoje nova znanja i da se zabave. Hakatoni su također odlična mogućnost da se učesnici umrežavaju i druže sa ljudima u lokalnom IT sektoru.',
+                1 => 'Na svakom hakathonu 60 srednjoškolaca će se takmičiti u timovima tokom dva dana. Na kraju će svaki tim iznijeti svoje rješenje pred stručnim žirijem. Iskusni mentori podučavat će svaki od timova i organizirati će se radionice koje će učesnicima pružiti priliku da usvoje nova znanja i da se zabave. Hakatoni su također odlična mogućnost da se učesnici umrežavaju i druže sa ljudima u lokalnom IT sektoru.',
                 2 => 'Pobjednički tim sa svakog lokalnog hakatona dobit će različite nagrade, uključujući i priliku da ide u Brisel i predstavi svoje rješenje pred međunarodnom publikom 12. oktobra 2020. godine.',
             ]
         ],

@@ -9,7 +9,7 @@ return [
             'title' => '6 hakatona, 6 sfida',
             'content' => [
                 1 => 'Jetoni në Letoni, Irlandë, Itali, Rumani, Slloveni ose Spanjë? Atëherë, keni shansin që të përdorni kreativitetin, kuriozitetin, nxitjen dhe aftësitë tuaja teknike. Bëhuni pjesë e një prej hakatonave të EU Code Week dhe zhvilloni një zgjidhje inovative që do të ndihmojë shoqërinë.',
-                2 => 'Gjatë vitit 2020, EU Code Week sjell gjashtë hakatona të jashtëzakonshme në gjashtë vende evropiane dhe fton nxënësit e ciklit të mesëm (16-19 vjeç) që të përdorin aftësitë e tyre në kodim për të gjetur zgjidhje për një sfidë lokale brenda 36 orëve.'
+                2 => 'Gjatë vitit 2020, EU Code Week sjell gjashtë hakatona të jashtëzakonshme në gjashtë vende evropiane dhe fton nxënësit e ciklit të mesëm (16-19 vjeç) që të përdorin aftësitë e tyre në kodim për të gjetur zgjidhje për një sfidë lokale brenda 2 ditësh.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'Si janë hakatonat?',
             'content' => [
-                1 => 'Çdo hakatonë do të ketë 60 nxënës të ciklit të mesëm që konkurrojnë në ekipe për 36 orë. Në fund, secili ekip do ta prezantojë zgjidhjen e tyre para një jurie me ekspertë. Mentorë me përvojë do të trajnojnë ekipet dhe do të ketë seminare që u japin pjesëmarrësve mundësinë të mësojnë aftësi të reja dhe të argëtohen. Hakatonat janë gjithashtu një mundësi e shkëlqyer që pjesëmarrësit të krijojnë lidhje dhe të socializohen me persona në sektorin lokal të teknologjisë.',
+                1 => 'Çdo hakatonë do të ketë 60 nxënës të ciklit të mesëm që konkurrojnë në ekipe për 2 ditë. Në fund, secili ekip do ta prezantojë zgjidhjen e tyre para një jurie me ekspertë. Mentorë me përvojë do të trajnojnë ekipet dhe do të ketë seminare që u japin pjesëmarrësve mundësinë të mësojnë aftësi të reja dhe të argëtohen. Hakatonat janë gjithashtu një mundësi e shkëlqyer që pjesëmarrësit të krijojnë lidhje dhe të socializohen me persona në sektorin lokal të teknologjisë.',
                 2 => 'Ekipi fitues në secilën hakatonë lokale do të marrë çmime të ndryshme, duke përfshirë mundësinë për të shkuar në Bruksel për të prezantuar zgjidhjen e tyre para një audience ndërkombëtare më 12 tetor 2020.',
             ]
         ],

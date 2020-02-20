@@ -9,7 +9,7 @@ return [
             'title' => '6 programmēšanas maratoni, 6 spēku pārbaudes',
             'content' => [
                 1 => 'Vai tu dzīvo Latvijā, Īrijā, Itālijā, Rumānijā, Slovēnijā vai Spānijā? Šī ir tava iespēja likt lietā tavu radošumu, zinātkāri, enerģiju un tehnoloģiju zināšanas. Pievienojies kādam no ES programmēšanas nedēļas programmēšanas maratoniem un radi inovatīvu risinājumu, kas palīdzēs sabiedrībai.',
-                2 => '2020. gadā ES programmēšanas nedēļa sešās Eiropas valstīs rīkos sešus īpašus programmēšanas maratonus, kuros ir aicināti piedalīties vidusskolēni (16–19 g. v.), lai 36 stundu laikā, izmantojot savas programmēšanas prasmes, rastu risinājumus kādam uzdevumam.'
+                2 => '2020. gadā ES programmēšanas nedēļa sešās Eiropas valstīs rīkos sešus aizraujošus programmēšanas hakatonus, kuros ir aicināti piedalīties vidusskolēni (16–19 gadu vecumā), lai 36 stundu laikā, izmantojot savas programmēšanas prasmes, rastu risinājumus kādam uzdevumam.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'Kas notiek programmēšanas maratonā?',
             'content' => [
-                1 => 'Katrā programmēšanas maratonā 60 vidusskolēni 36 stundas sacentīsies komandās. Noslēgumā katra komanda prezentēs savu risinājumu žūrijai. Komandām padomus sniegs pieredzējuši mentori, un būs arī darbsemināri, kuros dalībnieki varēs apgūt jaunas prasmes un arī jautri pavadīt laiku. Programmēšanas maratoni ir arī lieliska iespēja dalībniekiem satikties un iepazīties ar cilvēkiem, kuri darbojas vietējā tehnoloģiju nozarē.',
+                1 => 'Katrā programmēšanas hakatonā piedalīsies 60 vidusskolēni, kuri divu dienu laikā sacentīsies komandās. Noslēgumā katra komanda prezentēs savu risinājumu žūrijai. Komandām padomus sniegs pieredzējuši mentori, un būs arī darbsemināri, kuros dalībnieki varēs apgūt jaunas prasmes un arī jautri pavadīt laiku. Programmēšanas maratoni ir arī lieliska iespēja dalībniekiem satikties un iepazīties ar cilvēkiem, kuri darbojas vietējā tehnoloģiju nozarē.',
                 2 => 'Katra programmēšanas maratona uzvarētāju komanda saņems dažādas balvas, ieskaitot iespēju doties uz Briseli un prezentēt savu risinājumu starptautiskai auditorijai 2020. gada 12. oktobrī.',
             ]
         ],
