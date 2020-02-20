@@ -9,7 +9,7 @@ return [
             'title' => '6 hackathons, 6 sfidi',
             'content' => [
                 1 => 'Tgħix fil-Latvja, l-Irlanda, l-Italja, ir-Rumanija, is-Slovenja jew Spanja? Dan huwa ċ-ċans tiegħek biex tuża l-kreattività, il-kurżità, l-ambizzjoni u l-ħiliet teknoloġiċi tiegħek.  Ingħaqad f’waħda mill-hackathons tal-Ġimgħa tal-Ikkowdjar tal-UE u żviluppa soluzzjoni innovattiva li se tgħin lis-soċjetà.',
-                2 => 'Fl-2020, il-Ġimgħa tal-Ikkowdjar tal-UE qed iġġib magħha sitt hackathons straordinarji f’sitt pajjiżi Ewropej u qed tistieden studenti fil-livell għoli sekondarju (ta’ 16-19-il sena) biex jużaw il-ħiliet tagħhom tal-ikkowdjar biex isibu soluzzjonijiet għal problema lokali f’36 siegħa. '
+                2 => 'Fl-2020, l’EU Codeweek qed iġġib magħha sitt hackathons straordinarji f’sitt pajjiżi Ewropej u qed tistieden studenti fil-livell għoli sekondarju (ta’ 16-19-il sena) biex jużaw il-ħiliet tagħhom tal-ikkowdjar biex isibu soluzzjonijiet għal problema lokali f’jumejn.'
             ]
         ],
         2 => [
@@ -29,7 +29,7 @@ return [
         4 => [
             'title' => 'Kif tkun hackathon?',
             'content' => [
-                1 => 'Kull hackathon ser ikollha 60 student minn skejjel sekondarji li jikkompetu f’timijiet għal 36 siegħa. Fit-tmiem, kull tim ser joħroġ b’soluzzjoni quddiem ġurija ta’ esperti. Mentors b’esperjenza ser jikkowċjaw lit-timijiet u ser ikun hemm workshops li jipprovdu opportunitajiet biex il-parteċipanti jitgħallmu ħiliet ġodda u jiddevertu. Il-hackathons huma wkoll opportunità eċċellenti biex il-parteċipanti jkabbru n-netwerk soċjali tagħhom u jissoċjalizzaw ma’ nies fis-settur lokali teknoloġiku.',
+                1 => 'Kull hackathon ser ikollha 60 student minn skejjel sekondarji li jikkompetu f’timijiet għal jumejn. Fit-tmiem, kull tim ser joħroġ b’soluzzjoni quddiem ġurija ta’ esperti. Mentors b’esperjenza ser jikkowċjaw lit-timijiet u ser ikun hemm workshops li jipprovdu opportunitajiet biex il-parteċipanti jitgħallmu ħiliet ġodda u jiddevertu. Il-hackathons huma wkoll opportunità eċċellenti biex il-parteċipanti jkabbru n-netwerk soċjali tagħhom u jissoċjalizzaw ma’ nies fis-settur lokali teknoloġiku.',
                 2 => 'It-tim rebbieħ f’kull hackathon lokali ser jirċievi premjijiet differenti, inkluż l-opportunità li jmur Brussell u jippreżenta s-soluzzjoni tiegħu lil udjenza internazzjonali fit-12 ta’ Ottubru 2020.',
             ]
         ],
