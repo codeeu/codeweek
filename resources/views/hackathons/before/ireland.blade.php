@@ -143,7 +143,7 @@
             <a href="https://codeweek.eu/about" class="codeweek-action-link-button">DISCOVER MORE</a>
         </section>
 
-        <input type="hidden" name="geoposition" id="geoposition" value="51.8317878,-5.1698204">
+        <input type="hidden" name="geoposition" id="geoposition" value="53.2689607,-6.1960533">
         <input type="hidden" name="geoposition_marker" id="geoposition_marker" value="true">
 
     </section>
