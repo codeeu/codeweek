@@ -78,17 +78,16 @@
                 <h1>Practical Info</h1>
                 <div class="info-details">
                     <h3>Date</h3>
-                    <p>April 25-26, 2020</p>
+                    <p>April 17-18, 2020</p>
                 </div>
                 <div class="info-details">
                     <h3>Address</h3>
-                    <p>Name of the venue</p>
-                    <p>Avenue de Beaulieu 25</p>
-                    <p>Auderghem - Bruxelles, Belgique</p>
+                    <p>Dream Space, Microsoft Ireland</p>
+                    <p>South Country Business Park, Leopardstown, Dublin 18, D18 P521</p>
                 </div>
                 <div class="get-directions">
                     <img src="/images/tick.svg" class="static-image">
-                    <a href="#">GET DIRECTIONS</a>
+                    <a href="https://goo.gl/maps/aqLnCse4egywXVKc9">GET DIRECTIONS</a>
                 </div>
             </div>
         </section>
@@ -144,7 +143,7 @@
             <a href="https://codeweek.eu/about" class="codeweek-action-link-button">DISCOVER MORE</a>
         </section>
 
-        <input type="hidden" name="geoposition" id="geoposition" value="50.8141898,4.4099089">
+        <input type="hidden" name="geoposition" id="geoposition" value="51.8317878,-5.1698204">
         <input type="hidden" name="geoposition_marker" id="geoposition_marker" value="true">
 
     </section>
