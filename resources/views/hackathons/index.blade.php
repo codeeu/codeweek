@@ -12,8 +12,8 @@
                         <h2>@lang('hackathons.subtitle')</h2>
                     </div>
                 </div>
-                <img src="images/hackathons/banner_hackathons.svg" class="static-image desktop">
-                <img src="images/hackathons/banner_hackathons_mobile.svg" class="static-image mobile">
+                <img src="{{asset('images/hackathons/banner_hackathons.svg')}}" class="static-image desktop">
+                <img src="{{asset('images/hackathons/banner_hackathons_mobile.svg')}}" class="static-image mobile">
             </div>
         </section>
 
@@ -110,7 +110,7 @@
         </section>
 
         <section class="hackathons_section take_part">
-            <img src="images/hackathons/take_part.svg" class="static-image">
+            <img src="{{asset('images/hackathons/take_part.svg')}}" class="static-image">
             <div class="text-inside">
                 <h1>@lang('hackathons.sections.2.title')</h1>
                 <p>@lang('hackathons.sections.2.content.1')</p>
@@ -118,7 +118,7 @@
         </section>
 
         <section class="hackathons_section organisers">
-            <img src="images/hackathons/organisers.svg" class="static-image">
+            <img src="{{asset('images/hackathons/organisers.svg')}}" class="static-image">
             <div class="text-inside">
                 <h1>@lang('hackathons.sections.3.title')</h1>
                 <p>
@@ -144,7 +144,7 @@
                 <h1>@lang('hackathons.sections.5.title')</h1>
                 <p>@lang('hackathons.sections.5.content.1')</p>
             </div>
-            <img src="images/hackathons/how_coding.svg" class="static-image">
+            <img src="{{asset('images/hackathons/how_coding.svg')}}hackathons/how_coding.svg" class="static-image">
         </section>
 
         <!--<section class="codeweek-content-wrapper">
