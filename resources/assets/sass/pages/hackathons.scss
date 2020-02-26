@@ -581,3 +581,141 @@ header.hackathons #right-menu #hackathons-register-button{
     font-size: 18px;
   }
 }
+
+#map{
+  opacity: 0.7;
+}
+
+#codeweek-hackathons-before-page #pratical-info{
+  position: relative;
+  min-height: 436px;
+  .info{
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    z-index: 2;
+    padding: 20px 60px;
+    background-color: rgba(24, 0, 83, 0.65);
+    color: white;
+
+    h1{
+      font-size: 55px;
+      font-weight: normal;
+    }
+    .info-details{
+      margin: 15px 0;
+      p{
+        padding: 0;
+      }
+    }
+    .get-directions{
+      margin-top: 30px;
+      margin-bottom: 30px;
+      a{
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+#codeweek-hackathons-before-page #jury-mentors{
+  padding: 80px 100px 100px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    font-size: 55px;
+    font-weight: normal;
+  }
+  p{
+    padding-top: 30px;
+    text-align: center;
+    line-height: 1.8;
+  }
+  .jury-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin-top: 20px;
+    .item{
+      display: flex;
+      flex-direction: column;
+      img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+      }
+      h3{
+        color: $main-color;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+#codeweek-hackathons-before-page #side-events{
+  display: flex;
+  padding: 100px;
+  background-color: #180053;
+  color: $main-color4;
+  .left{
+    flex: 1;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    p{
+      padding-top: 30px;
+      line-height: 1.4;
+      padding-bottom: 30px;
+      font-size: 18px;
+    }
+    a{
+      border-radius: 35px;
+      font-weight: normal;
+      text-align: center;
+      padding: 20px;
+    }
+  }
+  img{
+    flex: 1;
+  }
+  h1{
+    font-size: 55px;
+    font-weight: normal;
+  }
+}
+
+#codeweek-hackathons-before-page #about-codeweek{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .text{
+    display: flex;
+    background-color: $main-color;
+    padding: 100px 100px 250px 100px;
+    h1{
+      font-size: 55px;
+      font-weight: normal;
+      color: $main-color4;
+      flex:1;
+    }
+    p{
+      padding: 0;
+      flex: 1;
+      color: $main-color4;
+    }
+  }
+  img{
+    margin-top: -210px;
+  }
+  a{
+    border-radius: 35px;
+    font-weight: normal;
+    text-align: center;
+    padding: 20px 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
