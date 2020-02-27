@@ -17,6 +17,8 @@
                 <div class="paragraph">
                     <p>Do you dream of creating the next big app or inventing a cool IT solution to a problem in your school, town, or region? Maybe you want to be an entrepreneur or you have a killer idea to pitch to the world, but you don’t know where to start. The EU Code Week Hackathon is designed for passionate young people like you. This European journey will fuel your curiosity, inspire your creativity, encourage your entrepreneurial spirit, and most importantly, help to bring your ideas to life.</p>
                 </div>
+{{--                <img src="/images/hackathons/banner_hackathon_before.svg" class="static-image desktop">--}}
+                <img src="/images/hackathons/banner_hackathon_before_mobile.svg" class="static-image mobile">
             </div>
         </section>
 
@@ -61,7 +63,7 @@
                 <div class="challenge-text">
                     <h1>The challenges</h1>
                     <p>The idea of the EU Code Week Hackathon is to show how concrete solutions come to life with the help of young people’s creativity, enthusiasm, fresh ideas and coding skills. ‘Concrete’ means solving real problems – things that affect you, your school, community, city or specific challenges in your area.</p>
-                    <a href="#" class="codeweek-action-link-button">VOTE</a>
+                    <a href="#" class="codeweek-action-link-button">PROPOSE</a>
                 </div>
             </div>
         </section>
