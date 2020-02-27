@@ -6,21 +6,47 @@
 
 @section('content')
 
-    <section id="codeweek-hackathons-before-page" class="codeweek-page ireland">
+    <section id="codeweek-hackathons-page" class="codeweek-page ireland">
 
-        <section class="codeweek-banner hackathons">
-            <div class="image">
-                <div class="title">
-                    <h1 style="font-weight: bold;">@lang('hackathons.title')</h1>
-                    <h2>@lang('hackathons.subtitle')</h2>
-                </div>
-                <div class="paragraph">
-                    <p>Do you dream of creating the next big app or inventing a cool IT solution to a problem in your school, town, or region? Maybe you want to be an entrepreneur or you have a killer idea to pitch to the world, but you don’t know where to start. The EU Code Week Hackathon is designed for passionate young people like you. This European journey will fuel your curiosity, inspire your creativity, encourage your entrepreneurial spirit, and most importantly, help to bring your ideas to life.</p>
-                </div>
+{{--        <section class="codeweek-banner hackathons">--}}
+{{--            <div class="image">--}}
+{{--                <div class="text">--}}
+{{--                    <div class="text-inside">--}}
+{{--                        <h1 style="font-weight: bold;">@lang('hackathons.title')</h1>--}}
+{{--                        <h2>@lang('hackathons.subtitle')</h2>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="paragraph">--}}
+{{--                    <p>Do you dream of creating the next big app or inventing a cool IT solution to a problem in your--}}
+{{--                        school, town, or region? Maybe you want to be an entrepreneur or you have a killer idea to pitch--}}
+{{--                        to the world, but you don’t know where to start. The EU Code Week Hackathon is designed for--}}
+{{--                        passionate young people like you. This European journey will fuel your curiosity, inspire your--}}
+{{--                        creativity, encourage your entrepreneurial spirit, and most importantly, help to bring your--}}
+{{--                        ideas to life.</p>--}}
+{{--                </div>--}}
+{{--                --}}{{--                <img src="{{asset('images/hackathons/banner_hackathons.svg')}}" class="static-image desktop">--}}
+{{--                --}}{{--                <img src="{{asset('images/hackathons/banner_hackathons_mobile.svg')}}" class="static-image mobile">--}}
 {{--                <img src="/images/hackathons/banner_hackathon_before.svg" class="static-image desktop">--}}
-                <img src="/images/hackathons/banner_hackathon_before_mobile.svg" class="static-image mobile">
-            </div>
-        </section>
+{{--                <img src="/images/hackathons/banner_hackathon_before_mobile.svg" class="static-image mobile">--}}
+{{--            </div>--}}
+{{--        </section>--}}
+
+                        <section class="codeweek-banner hackathon">
+                            <div class="image">
+                                <div class="text">
+                                    <div class="text-inside">
+                                        <h1 style="font-weight: bold;">@lang('hackathons.title')</h1>
+                                        <h2>@lang('hackathons.subtitle')</h2>
+                                    </div>
+                                </div>
+{{--                                <div class="paragraph">--}}
+{{--                                    <p>Do you dream of creating the next big app or inventing a cool IT solution to a problem in your school, town, or region? Maybe you want to be an entrepreneur or you have a killer idea to pitch to the world, but you don’t know where to start. The EU Code Week Hackathon is designed for passionate young people like you. This European journey will fuel your curiosity, inspire your creativity, encourage your entrepreneurial spirit, and most importantly, help to bring your ideas to life.</p>--}}
+{{--                                </div>--}}
+                                <img src="/images/hackathons/banner_hackathon_before.svg" class="static-image desktop">
+                                <img src="/images/hackathons/banner_hackathon_before_mobile.svg" class="static-image mobile">
+{{--                                <img src="/images/hackathons/banner_hackathon_before_mobile.svg" class="static-image mobile">--}}
+                            </div>
+                        </section>
 
         <section class="questions">
             <div class="expect">
@@ -62,7 +88,10 @@
             <div class="text">
                 <div class="challenge-text">
                     <h1>The challenges</h1>
-                    <p>The idea of the EU Code Week Hackathon is to show how concrete solutions come to life with the help of young people’s creativity, enthusiasm, fresh ideas and coding skills. ‘Concrete’ means solving real problems – things that affect you, your school, community, city or specific challenges in your area.</p>
+                    <p>The idea of the EU Code Week Hackathon is to show how concrete solutions come to life with the
+                        help of young people’s creativity, enthusiasm, fresh ideas and coding skills. ‘Concrete’ means
+                        solving real problems – things that affect you, your school, community, city or specific
+                        challenges in your area.</p>
                     <a href="#" class="codeweek-action-link-button">PROPOSE</a>
                 </div>
             </div>
@@ -70,8 +99,15 @@
 
         <section id="programme">
             <h1>Programme</h1>
-            <p>Secondary students aged 16-19 compete in teams to solve a ‘city challenge’ selected from proposals submitted ahead of the event. After two days of ‘non-stop’ hacking, each team then pitches their solution to an Expert Jury. The successful team in each local hackathon wins a trip to Brussels including a short and intense entrepreneurial coaching session and the honour of pitching their work to tech experts, business leaders and EU policymakers on 12 October 2020.</p>
-            <p>Hackers are going to need a break from the ‘coding’, so we provide plenty of refreshments to keep energy levels up. Mentors are also on hand to coach teams through the tough stages. We also organise fun activities and workshops to keep spirits high while teaching new skills like robotics and app building.</p>
+            <p>Secondary students aged 16-19 compete in teams to solve a ‘city challenge’ selected from proposals
+                submitted ahead of the event. After two days of ‘non-stop’ hacking, each team then pitches their
+                solution to an Expert Jury. The successful team in each local hackathon wins a trip to Brussels
+                including a short and intense entrepreneurial coaching session and the honour of pitching their work to
+                tech experts, business leaders and EU policymakers on 12 October 2020.</p>
+            <p>Hackers are going to need a break from the ‘coding’, so we provide plenty of refreshments to keep energy
+                levels up. Mentors are also on hand to coach teams through the tough stages. We also organise fun
+                activities and workshops to keep spirits high while teaching new skills like robotics and app
+                building.</p>
         </section>
 
         <section id="pratical-info">
@@ -97,7 +133,12 @@
         <section id="jury-mentors">
             <h1>Jury & Mentors</h1>
             <p>
-                Imagine being in a room full of designers, developers, creators, coders and business mentors, all with the same curiosity and drive as you. EU Code Week Hackathon [City] brings together leading figures from the worlds of business, IT, venture capital, education, as well as local, national and EU leaders, influencers and coaches to guide and support you and your team during this intensive marathon. A select number of Jury members is also chosen to decide the final winning team, according to relevant guidelines and competition rules.
+                Imagine being in a room full of designers, developers, creators, coders and business mentors, all with
+                the same curiosity and drive as you. EU Code Week Hackathon [City] brings together leading figures from
+                the worlds of business, IT, venture capital, education, as well as local, national and EU leaders,
+                influencers and coaches to guide and support you and your team during this intensive marathon. A select
+                number of Jury members is also chosen to decide the final winning team, according to relevant guidelines
+                and competition rules.
             </p>
             <div class="jury-grid">
                 <div class="item">
@@ -130,7 +171,10 @@
         <section id="side-events">
             <div class="left">
                 <h1>Side events</h1>
-                <p>Are you a young person, a teacher or parent who doesn’t know anything about coding? Sign up to our side events and discover the thrill of coding, innovation, entrepreneurship and other skills vital to empowering people in a digital world. Our Side events will include several different workshops. They are free of charge you just have to sign up here. Come and learn more</p>
+                <p>Are you a young person, a teacher or parent who doesn’t know anything about coding? Sign up to our
+                    side events and discover the thrill of coding, innovation, entrepreneurship and other skills vital
+                    to empowering people in a digital world. Our Side events will include several different workshops.
+                    They are free of charge you just have to sign up here. Come and learn more</p>
                 <a href="" class="codeweek-action-link-button">REGISTER TO ONE OF WORKSHOPS HERE</a>
             </div>
             <img src="/images/hackathons/side_events.png">
@@ -139,7 +183,13 @@
         <section id="about-codeweek">
             <div class="text">
                 <h1>About CODEWEEK.EU</h1>
-                <p>EU Code Week (#CodeWeek) is a grassroots movement run by volunteers to promote digital literacy through activities linked to coding and computer science. It inspires and engages people to explore new ideas and innovate for the future. Activities for EU Code Week take place all over Europe between 10 and 25 October 2020. To raise its profile throughout the community, broaden its appeal and provide tangible outcomes, the EU Code Week Hackathon series has been created and co-organised by the European Commission and local EU Code Week Ambassadors. The initiative is financed by the European Parliament.</p>
+                <p>EU Code Week (#CodeWeek) is a grassroots movement run by volunteers to promote digital literacy
+                    through activities linked to coding and computer science. It inspires and engages people to explore
+                    new ideas and innovate for the future. Activities for EU Code Week take place all over Europe
+                    between 10 and 25 October 2020. To raise its profile throughout the community, broaden its appeal
+                    and provide tangible outcomes, the EU Code Week Hackathon series has been created and co-organised
+                    by the European Commission and local EU Code Week Ambassadors. The initiative is financed by the
+                    European Parliament.</p>
             </div>
             <img src="/images/hackathons/about_codeweek.svg" class="static-image">
             <a href="https://codeweek.eu/about" class="codeweek-action-link-button">DISCOVER MORE</a>
@@ -165,6 +215,8 @@
             "renderTo" : "map",
             "custom": ["/js/hideMenuMap.js","/js/leaflet.markercluster.js"]
         }
+
+
 
     </script>
 @endpush
