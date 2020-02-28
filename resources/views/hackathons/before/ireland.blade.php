@@ -14,7 +14,7 @@
                 <div class="text">
                     <div class="text-inside">
                         <h1 style="font-weight: bold;">@lang('hackathons.title')</h1>
-                        <h2>@lang('hackathons.subtitle')</h2>
+                        <h2>Bring your ideas to life!</h2>
                     </div>
                 </div>
                 <div class="paragraph">
@@ -66,19 +66,23 @@
             </div>
         </section>
 
-{{--        <section id="challenge">--}}
-{{--            <img src="/images/hackathons/challenge.png">--}}
-{{--            <div class="text">--}}
-{{--                <div class="challenge-text">--}}
-{{--                    <h1>The challenges</h1>--}}
-{{--                    <p>The idea of the EU Code Week Hackathon is to show how concrete solutions come to life with the--}}
-{{--                        help of young people’s creativity, enthusiasm, fresh ideas and coding skills. ‘Concrete’ means--}}
-{{--                        solving real problems – things that affect you, your school, community, city or specific--}}
-{{--                        challenges in your area.</p>--}}
-{{--                    <a href="#" class="codeweek-action-link-button">PROPOSE</a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </section>--}}
+        <section id="challenge">
+            <img src="/images/hackathons/challenge.png" class="desktop">
+            <div class="text">
+                <div class="challenge-text">
+                    <h1>Propose challenges to be solved at the Hackathon</h1>
+                    <p>The idea of the EU Code Week Hackathon is to show how concrete solutions come to life with the
+                        help of young people’s creativity, enthusiasm, fresh ideas and coding skills. ‘Concrete’ means
+                        solving real problems – things that affect you, your school, community, city or specific
+                        challenges in your area.</p>
+                    <p>Do you want to make Dublin greener, smarter or just nicer for everyone to live in? Propose a challenge that will be “hacked” at the Hackathon. Something concrete that will help you, your school, city or community…</p>
+                    <div class="button">
+                        <a href="#" class="codeweek-action-link-button">Propose a challenge here</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
         <section id="programme">
             <h1>Programme</h1>
@@ -117,51 +121,51 @@
             <h1>Jury & Mentors</h1>
             <p>
                 Imagine being in a room full of designers, developers, creators, coders and business mentors, all with
-                the same curiosity and drive as you. EU Code Week Hackathon [City] brings together leading figures from
+                the same curiosity and drive as you. EU Code Week Hackathon Dublin brings together leading figures from
                 the worlds of business, IT, venture capital, education, as well as local, national and EU leaders,
                 influencers and coaches to guide and support you and your team during this intensive marathon. A select
                 number of Jury members is also chosen to decide the final winning team, according to relevant guidelines
                 and competition rules.
             </p>
-            <div class="jury-grid">
-                <div class="item">
-                    <img src="https://codeweek-s3.s3.amazonaws.com/avatars/34/bruno ferreira.jpg">
-                    <h2>First Lastname</h2>
-                    <h3>Function,</h3>
-                    <h3>INSTITUTION</h3>
-                </div>
-                <div class="item">
-                    <img src="https://codeweek-s3.s3.amazonaws.com/avatars/156389/aż.jpg">
-                    <h2>First Lastname</h2>
-                    <h3>Function,</h3>
-                    <h3>INSTITUTION</h3>
-                </div>
-                <div class="item">
-                    <img src="https://codeweek-s3.s3.amazonaws.com/avatars/JankoRadigovic/janko-radigovic.jpg">
-                    <h2>First Lastname</h2>
-                    <h3>Function,</h3>
-                    <h3>INSTITUTION</h3>
-                </div>
-                <div class="item">
-                    <img src="https://codeweek-s3.s3.amazonaws.com/avatars/turtlestitch/cam_bearb2_07_2016sm.jpg">
-                    <h2>First Lastname</h2>
-                    <h3>Function,</h3>
-                    <h3>INSTITUTION</h3>
-                </div>
-            </div>
+{{--            <div class="jury-grid">--}}
+{{--                <div class="item">--}}
+{{--                    <img src="https://codeweek-s3.s3.amazonaws.com/avatars/34/bruno ferreira.jpg">--}}
+{{--                    <h2>First Lastname</h2>--}}
+{{--                    <h3>Function,</h3>--}}
+{{--                    <h3>INSTITUTION</h3>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <img src="https://codeweek-s3.s3.amazonaws.com/avatars/156389/aż.jpg">--}}
+{{--                    <h2>First Lastname</h2>--}}
+{{--                    <h3>Function,</h3>--}}
+{{--                    <h3>INSTITUTION</h3>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <img src="https://codeweek-s3.s3.amazonaws.com/avatars/JankoRadigovic/janko-radigovic.jpg">--}}
+{{--                    <h2>First Lastname</h2>--}}
+{{--                    <h3>Function,</h3>--}}
+{{--                    <h3>INSTITUTION</h3>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <img src="https://codeweek-s3.s3.amazonaws.com/avatars/turtlestitch/cam_bearb2_07_2016sm.jpg">--}}
+{{--                    <h2>First Lastname</h2>--}}
+{{--                    <h3>Function,</h3>--}}
+{{--                    <h3>INSTITUTION</h3>--}}
+{{--                </div>--}}
+{{--            </div>--}}
         </section>
 
-{{--        <section id="side-events">--}}
-{{--            <div class="left">--}}
-{{--                <h1>Side events</h1>--}}
-{{--                <p>Are you a young person, a teacher or parent who doesn’t know anything about coding? Sign up to our--}}
-{{--                    side events and discover the thrill of coding, innovation, entrepreneurship and other skills vital--}}
-{{--                    to empowering people in a digital world. Our Side events will include several different workshops.--}}
-{{--                    They are free of charge you just have to sign up here. Come and learn more</p>--}}
-{{--                <a href="" class="codeweek-action-link-button">REGISTER TO ONE OF WORKSHOPS HERE</a>--}}
-{{--            </div>--}}
-{{--            <img src="/images/hackathons/side_events.png">--}}
-{{--        </section>--}}
+        <section id="side-events">
+            <div class="left">
+                <h1>Side events</h1>
+                <p>Are you a young person, a teacher or parent who doesn’t know anything about coding? Sign up to our
+                    side events and discover the thrill of coding, innovation, entrepreneurship and other skills vital
+                    to empowering people in a digital world. Our Side events will include several different workshops.
+                    They are free of charge you just have to sign up here. Come and learn more</p>
+                <a href="" class="codeweek-action-link-button">REGISTER</a>
+            </div>
+            <img src="/images/hackathons/side_events.png">
+        </section>
 
         <section id="about-codeweek">
             <div class="text">

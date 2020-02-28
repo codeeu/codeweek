@@ -20,10 +20,11 @@
 
 @media (max-width: 960px) {
 
-  .codeweek-banner.hackathon .image .desktop {
+   .desktop {
     display: none;
   }
-  .codeweek-banner.hackathon .image .mobile {
+
+  .mobile {
     display: block;
   }
 
@@ -57,7 +58,8 @@
 
       text-align: center;
       margin: 135px 30px 0 30px;
-      font-size: 20px;
+      font-size: 1.2em;
+      min-width: 400px;
     }
 
     .text-inside {
@@ -275,49 +277,7 @@
   display: none;
 }
 
-#codeweek-hackathons-before-page .questions {
-  display: flex;
-  padding: 50px 20px 50px 70px;
-  color: $main-color3;
 
-  h1 {
-    font-weight: normal;
-  }
-
-  .expect {
-    flex: 1;
-    border-right: 2px solid #1237FF;
-    margin-right: 70px;
-  }
-
-  .bring {
-    flex: 1;
-    border-right: 2px solid #1237FF;
-    padding-right: 40px;
-  }
-
-  .provide {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    h1 {
-      padding-left: 80px;
-    }
-  }
-
-  ul {
-    list-style: none;
-    list-style-image: url('/images/tick.svg');
-    margin: 10px;
-
-    li {
-      margin-bottom: 3px;
-      font-size: 18px;
-    }
-  }
-}
 
 
 #codeweek-hackathons-before-page {
@@ -373,26 +333,33 @@
     flex: 1;
   }
 
+  .button{
+    display:flex;
+    justify-content: center;
+  }
   .text {
     flex: 1;
 
     .challenge-text {
-      padding: 50px 100px;
+      padding: 10px 60px;
+      display: flex;
+      flex-direction: column;
 
       h1 {
-        font-size: 55px;
+        font-size: 40px;
         font-weight: normal;
         text-align: center;
       }
 
       p {
-        padding-top: 30px;
-        margin-bottom: 30px;
+        padding-top: 20px;
+        margin-bottom: 10px;
       }
 
       .codeweek-action-link-button {
         padding: 20px 100px;
         border-radius: 35px;
+        margin-top: 10px;
       }
     }
   }
