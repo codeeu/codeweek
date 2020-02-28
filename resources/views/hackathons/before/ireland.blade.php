@@ -6,47 +6,30 @@
 
 @section('content')
 
-    <section id="codeweek-hackathons-page" class="codeweek-page ireland">
+    <section id="codeweek-hackathons-before-page" class="codeweek-page ireland">
 
-{{--        <section class="codeweek-banner hackathons">--}}
-{{--            <div class="image">--}}
-{{--                <div class="text">--}}
-{{--                    <div class="text-inside">--}}
-{{--                        <h1 style="font-weight: bold;">@lang('hackathons.title')</h1>--}}
-{{--                        <h2>@lang('hackathons.subtitle')</h2>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="paragraph">--}}
-{{--                    <p>Do you dream of creating the next big app or inventing a cool IT solution to a problem in your--}}
-{{--                        school, town, or region? Maybe you want to be an entrepreneur or you have a killer idea to pitch--}}
-{{--                        to the world, but you don’t know where to start. The EU Code Week Hackathon is designed for--}}
-{{--                        passionate young people like you. This European journey will fuel your curiosity, inspire your--}}
-{{--                        creativity, encourage your entrepreneurial spirit, and most importantly, help to bring your--}}
-{{--                        ideas to life.</p>--}}
-{{--                </div>--}}
-{{--                --}}{{--                <img src="{{asset('images/hackathons/banner_hackathons.svg')}}" class="static-image desktop">--}}
-{{--                --}}{{--                <img src="{{asset('images/hackathons/banner_hackathons_mobile.svg')}}" class="static-image mobile">--}}
-{{--                <img src="/images/hackathons/banner_hackathon_before.svg" class="static-image desktop">--}}
+
+        <section class="codeweek-banner hackathon">
+            <div class="image">
+                <div class="text">
+                    <div class="text-inside">
+                        <h1 style="font-weight: bold;">@lang('hackathons.title')</h1>
+                        <h2>@lang('hackathons.subtitle')</h2>
+                    </div>
+                </div>
+                <div class="paragraph">
+                    <p>Do you dream of creating the next big app or inventing a cool IT solution to a problem in your
+                        school, town, or region? Maybe you want to be an entrepreneur or you have a killer idea to pitch
+                        to the world, but you don’t know where to start. The EU Code Week Hackathon is designed for
+                        passionate young people like you. This European journey will fuel your curiosity, inspire your
+                        creativity, encourage your entrepreneurial spirit, and most importantly, help to bring your
+                        ideas to life.</p>
+                </div>
+                <img src="/images/hackathons/banner_hackathon_before.svg" class="static-image desktop">
 {{--                <img src="/images/hackathons/banner_hackathon_before_mobile.svg" class="static-image mobile">--}}
-{{--            </div>--}}
-{{--        </section>--}}
 
-                        <section class="codeweek-banner hackathon">
-                            <div class="image">
-                                <div class="text">
-                                    <div class="text-inside">
-                                        <h1 style="font-weight: bold;">@lang('hackathons.title')</h1>
-                                        <h2>@lang('hackathons.subtitle')</h2>
-                                    </div>
-                                </div>
-{{--                                <div class="paragraph">--}}
-{{--                                    <p>Do you dream of creating the next big app or inventing a cool IT solution to a problem in your school, town, or region? Maybe you want to be an entrepreneur or you have a killer idea to pitch to the world, but you don’t know where to start. The EU Code Week Hackathon is designed for passionate young people like you. This European journey will fuel your curiosity, inspire your creativity, encourage your entrepreneurial spirit, and most importantly, help to bring your ideas to life.</p>--}}
-{{--                                </div>--}}
-                                <img src="/images/hackathons/banner_hackathon_before.svg" class="static-image desktop">
-                                <img src="/images/hackathons/banner_hackathon_before_mobile.svg" class="static-image mobile">
-{{--                                <img src="/images/hackathons/banner_hackathon_before_mobile.svg" class="static-image mobile">--}}
-                            </div>
-                        </section>
+            </div>
+        </section>
 
         <section class="questions">
             <div class="expect">
@@ -83,19 +66,19 @@
             </div>
         </section>
 
-        <section id="challenge">
-            <img src="/images/hackathons/challenge.png">
-            <div class="text">
-                <div class="challenge-text">
-                    <h1>The challenges</h1>
-                    <p>The idea of the EU Code Week Hackathon is to show how concrete solutions come to life with the
-                        help of young people’s creativity, enthusiasm, fresh ideas and coding skills. ‘Concrete’ means
-                        solving real problems – things that affect you, your school, community, city or specific
-                        challenges in your area.</p>
-                    <a href="#" class="codeweek-action-link-button">PROPOSE</a>
-                </div>
-            </div>
-        </section>
+{{--        <section id="challenge">--}}
+{{--            <img src="/images/hackathons/challenge.png">--}}
+{{--            <div class="text">--}}
+{{--                <div class="challenge-text">--}}
+{{--                    <h1>The challenges</h1>--}}
+{{--                    <p>The idea of the EU Code Week Hackathon is to show how concrete solutions come to life with the--}}
+{{--                        help of young people’s creativity, enthusiasm, fresh ideas and coding skills. ‘Concrete’ means--}}
+{{--                        solving real problems – things that affect you, your school, community, city or specific--}}
+{{--                        challenges in your area.</p>--}}
+{{--                    <a href="#" class="codeweek-action-link-button">PROPOSE</a>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </section>--}}
 
         <section id="programme">
             <h1>Programme</h1>
@@ -168,17 +151,17 @@
             </div>
         </section>
 
-        <section id="side-events">
-            <div class="left">
-                <h1>Side events</h1>
-                <p>Are you a young person, a teacher or parent who doesn’t know anything about coding? Sign up to our
-                    side events and discover the thrill of coding, innovation, entrepreneurship and other skills vital
-                    to empowering people in a digital world. Our Side events will include several different workshops.
-                    They are free of charge you just have to sign up here. Come and learn more</p>
-                <a href="" class="codeweek-action-link-button">REGISTER TO ONE OF WORKSHOPS HERE</a>
-            </div>
-            <img src="/images/hackathons/side_events.png">
-        </section>
+{{--        <section id="side-events">--}}
+{{--            <div class="left">--}}
+{{--                <h1>Side events</h1>--}}
+{{--                <p>Are you a young person, a teacher or parent who doesn’t know anything about coding? Sign up to our--}}
+{{--                    side events and discover the thrill of coding, innovation, entrepreneurship and other skills vital--}}
+{{--                    to empowering people in a digital world. Our Side events will include several different workshops.--}}
+{{--                    They are free of charge you just have to sign up here. Come and learn more</p>--}}
+{{--                <a href="" class="codeweek-action-link-button">REGISTER TO ONE OF WORKSHOPS HERE</a>--}}
+{{--            </div>--}}
+{{--            <img src="/images/hackathons/side_events.png">--}}
+{{--        </section>--}}
 
         <section id="about-codeweek">
             <div class="text">
@@ -215,6 +198,7 @@
             "renderTo" : "map",
             "custom": ["/js/hideMenuMap.js","/js/leaflet.markercluster.js"]
         }
+
 
 
 
