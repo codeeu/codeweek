@@ -1,0 +1,55 @@
+#codeweek-hackathons-before-page .questions {
+  display: flex;
+  padding: 50px 20px 50px 70px;
+  color: $main-color3;
+  @media (max-width: 960px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-weight: normal;
+  }
+
+  .expect {
+    flex: 1;
+    margin-right: 70px;
+    @media (min-width: 961px) {
+      border-right: 2px solid #1237FF;
+    }
+
+
+  }
+
+
+  .bring {
+    flex: 1;
+    padding-right: 40px;
+    @media (min-width: 961px) {
+      border-right: 2px solid #1237FF;
+    }
+
+  }
+
+  .provide {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      padding-left: 80px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    list-style-image: url('/images/tick.svg');
+    margin: 10px;
+
+    li {
+      margin-bottom: 3px;
+      font-size: 18px;
+    }
+  }
+}
