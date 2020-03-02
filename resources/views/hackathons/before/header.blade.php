@@ -38,7 +38,7 @@
     </div>
     <div id="right-menu">
         <div id="hackathons-register-button">
-            <a href="/login">REGISTER</a>
+            <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCWHackathonIreland">REGISTER</a>
         </div>
     </div>
 </header>
