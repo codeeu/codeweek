@@ -504,8 +504,16 @@
   }
 
   .jury-grid {
+
+    @media (max-width: 960px) {
+      grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 961px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+
     grid-gap: 40px;
     margin-top: 20px;
 

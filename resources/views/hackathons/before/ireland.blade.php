@@ -118,6 +118,7 @@
         </section>
 
         <section id="jury-mentors">
+
             <h1>Jury & Mentors</h1>
             <p>
                 Imagine being in a room full of designers, developers, creators, coders and business mentors, all with
@@ -127,32 +128,32 @@
                 number of Jury members is also chosen to decide the final winning team, according to relevant guidelines
                 and competition rules.
             </p>
-{{--            <div class="jury-grid">--}}
-{{--                <div class="item">--}}
-{{--                    <img src="https://codeweek-s3.s3.amazonaws.com/avatars/34/bruno ferreira.jpg">--}}
-{{--                    <h2>First Lastname</h2>--}}
+            <div class="jury-grid">
+                <div class="item">
+                    <img src="{{asset('/images/hackathons/profiles/_blank1.png')}}">
+                    <h2>To Be Announced</h2>
 {{--                    <h3>Function,</h3>--}}
 {{--                    <h3>INSTITUTION</h3>--}}
-{{--                </div>--}}
-{{--                <div class="item">--}}
-{{--                    <img src="https://codeweek-s3.s3.amazonaws.com/avatars/156389/aż.jpg">--}}
-{{--                    <h2>First Lastname</h2>--}}
+                </div>
+                <div class="item">
+                    <img src="{{asset('/images/hackathons/profiles/_blank2.png')}}">
+                    <h2>To Be Announced</h2>
 {{--                    <h3>Function,</h3>--}}
 {{--                    <h3>INSTITUTION</h3>--}}
-{{--                </div>--}}
-{{--                <div class="item">--}}
-{{--                    <img src="https://codeweek-s3.s3.amazonaws.com/avatars/JankoRadigovic/janko-radigovic.jpg">--}}
-{{--                    <h2>First Lastname</h2>--}}
-{{--                    <h3>Function,</h3>--}}
-{{--                    <h3>INSTITUTION</h3>--}}
-{{--                </div>--}}
-{{--                <div class="item">--}}
-{{--                    <img src="https://codeweek-s3.s3.amazonaws.com/avatars/turtlestitch/cam_bearb2_07_2016sm.jpg">--}}
-{{--                    <h2>First Lastname</h2>--}}
-{{--                    <h3>Function,</h3>--}}
-{{--                    <h3>INSTITUTION</h3>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+                </div>
+                <div class="item">
+                    <img src="{{asset('/images/hackathons/profiles/_blank3.png')}}">
+                    <h2>To Be Announced</h2>
+                    {{--                    <h3>Function,</h3>--}}
+                    {{--                    <h3>INSTITUTION</h3>--}}
+                </div>
+                <div class="item">
+                    <img src="{{asset('/images/hackathons/profiles/_blank4.png')}}">
+                    <h2>To Be Announced</h2>
+                    {{--                    <h3>Function,</h3>--}}
+                    {{--                    <h3>INSTITUTION</h3>--}}
+                </div>
+            </div>
         </section>
 
         <section id="side-events">

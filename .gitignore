@@ -20,3 +20,4 @@ auth.json
 composer.lock
 vue-i18n-locales.generated.js
 /storage/debugbar/
+/phpunit.xml
