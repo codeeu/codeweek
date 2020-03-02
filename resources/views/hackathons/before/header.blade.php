@@ -9,7 +9,7 @@
         <nav id="secondary-menu">
             <ul>
                 <li>
-                    <a href=""><img src="/images/tick.svg" class="static-image">TO CODEWEEK.EU</a>
+                    <a href="https://codeweek.eu"><img src="/images/tick.svg" class="static-image">TO CODEWEEK.EU</a>
                 </li>
             </ul>
         </nav>
