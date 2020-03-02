@@ -144,7 +144,7 @@
                 <h1>@lang('hackathons.sections.5.title')</h1>
                 <p>@lang('hackathons.sections.5.content.1')</p>
             </div>
-            <img src="{{asset('images/hackathons/how_coding.svg')}}hackathons/how_coding.svg" class="static-image">
+            <img src="{{asset('images/hackathons/how_coding.svg')}}" class="static-image">
         </section>
 
         <!--<section class="codeweek-content-wrapper">
