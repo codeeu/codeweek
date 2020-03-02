@@ -26,29 +26,29 @@
                         ideas to life.</p>
                 </div>
                 <img src="/images/hackathons/banner_hackathon_before.svg" class="static-image desktop">
-{{--                <img src="/images/hackathons/banner_hackathon_before_mobile.svg" class="static-image mobile">--}}
-
             </div>
         </section>
 
         <section class="questions">
-            <div class="expect">
-                <h1>What to expect?</h1>
-                <ul>
-                    <li>Two-day hacking marathon</li>
-                    <li>Expert coaching</li>
-                    <li>Skills workshops</li>
-                    <li>Fun activities</li>
-                    <li>Prizes and glory</li>
-                </ul>
-            </div>
-            <div class="bring">
-                <h1>What to bring?</h1>
-                <ul>
-                    <li>Laptops, connectors, chargers… the stuff you need to code</li>
-                    <li>Sleeping bags, mats, drinking bottles, toiletries… teddy bears</li>
-                    <li>Enthusiasm, curiosity and go-getting attitude</li>
-                </ul>
+            <div class="left-wrapper">
+                <div class="expect">
+                    <h1>What to expect?</h1>
+                    <ul>
+                        <li>Two-day hacking marathon</li>
+                        <li>Expert coaching</li>
+                        <li>Skills workshops</li>
+                        <li>Fun activities</li>
+                        <li>Prizes and glory</li>
+                    </ul>
+                </div>
+                <div class="bring">
+                    <h1>What to bring?</h1>
+                    <ul>
+                        <li>Laptops, connectors, chargers… the stuff you need to code</li>
+                        <li>Sleeping bags, mats, drinking bottles, toiletries… teddy bears</li>
+                        <li>Enthusiasm, curiosity and go-getting attitude</li>
+                    </ul>
+                </div>
             </div>
             <div class="provide">
                 <h1>...We provide the rest!</h1>
@@ -118,6 +118,7 @@
         </section>
 
         <section id="jury-mentors">
+
             <h1>Jury & Mentors</h1>
             <p>
                 Imagine being in a room full of designers, developers, creators, coders and business mentors, all with
@@ -127,32 +128,32 @@
                 number of Jury members is also chosen to decide the final winning team, according to relevant guidelines
                 and competition rules.
             </p>
-{{--            <div class="jury-grid">--}}
-{{--                <div class="item">--}}
-{{--                    <img src="https://codeweek-s3.s3.amazonaws.com/avatars/34/bruno ferreira.jpg">--}}
-{{--                    <h2>First Lastname</h2>--}}
+            <div class="jury-grid">
+                <div class="item">
+                    <img src="{{asset('/images/hackathons/profiles/_blank1.png')}}">
+                    <h2>To Be Announced</h2>
 {{--                    <h3>Function,</h3>--}}
 {{--                    <h3>INSTITUTION</h3>--}}
-{{--                </div>--}}
-{{--                <div class="item">--}}
-{{--                    <img src="https://codeweek-s3.s3.amazonaws.com/avatars/156389/aż.jpg">--}}
-{{--                    <h2>First Lastname</h2>--}}
+                </div>
+                <div class="item">
+                    <img src="{{asset('/images/hackathons/profiles/_blank2.png')}}">
+                    <h2>To Be Announced</h2>
 {{--                    <h3>Function,</h3>--}}
 {{--                    <h3>INSTITUTION</h3>--}}
-{{--                </div>--}}
-{{--                <div class="item">--}}
-{{--                    <img src="https://codeweek-s3.s3.amazonaws.com/avatars/JankoRadigovic/janko-radigovic.jpg">--}}
-{{--                    <h2>First Lastname</h2>--}}
-{{--                    <h3>Function,</h3>--}}
-{{--                    <h3>INSTITUTION</h3>--}}
-{{--                </div>--}}
-{{--                <div class="item">--}}
-{{--                    <img src="https://codeweek-s3.s3.amazonaws.com/avatars/turtlestitch/cam_bearb2_07_2016sm.jpg">--}}
-{{--                    <h2>First Lastname</h2>--}}
-{{--                    <h3>Function,</h3>--}}
-{{--                    <h3>INSTITUTION</h3>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+                </div>
+                <div class="item">
+                    <img src="{{asset('/images/hackathons/profiles/_blank3.png')}}">
+                    <h2>To Be Announced</h2>
+                    {{--                    <h3>Function,</h3>--}}
+                    {{--                    <h3>INSTITUTION</h3>--}}
+                </div>
+                <div class="item">
+                    <img src="{{asset('/images/hackathons/profiles/_blank4.png')}}">
+                    <h2>To Be Announced</h2>
+                    {{--                    <h3>Function,</h3>--}}
+                    {{--                    <h3>INSTITUTION</h3>--}}
+                </div>
+            </div>
         </section>
 
         <section id="side-events">
