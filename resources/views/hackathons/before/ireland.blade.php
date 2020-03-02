@@ -26,29 +26,29 @@
                         ideas to life.</p>
                 </div>
                 <img src="/images/hackathons/banner_hackathon_before.svg" class="static-image desktop">
-{{--                <img src="/images/hackathons/banner_hackathon_before_mobile.svg" class="static-image mobile">--}}
-
             </div>
         </section>
 
         <section class="questions">
-            <div class="expect">
-                <h1>What to expect?</h1>
-                <ul>
-                    <li>Two-day hacking marathon</li>
-                    <li>Expert coaching</li>
-                    <li>Skills workshops</li>
-                    <li>Fun activities</li>
-                    <li>Prizes and glory</li>
-                </ul>
-            </div>
-            <div class="bring">
-                <h1>What to bring?</h1>
-                <ul>
-                    <li>Laptops, connectors, chargers… the stuff you need to code</li>
-                    <li>Sleeping bags, mats, drinking bottles, toiletries… teddy bears</li>
-                    <li>Enthusiasm, curiosity and go-getting attitude</li>
-                </ul>
+            <div class="left-wrapper">
+                <div class="expect">
+                    <h1>What to expect?</h1>
+                    <ul>
+                        <li>Two-day hacking marathon</li>
+                        <li>Expert coaching</li>
+                        <li>Skills workshops</li>
+                        <li>Fun activities</li>
+                        <li>Prizes and glory</li>
+                    </ul>
+                </div>
+                <div class="bring">
+                    <h1>What to bring?</h1>
+                    <ul>
+                        <li>Laptops, connectors, chargers… the stuff you need to code</li>
+                        <li>Sleeping bags, mats, drinking bottles, toiletries… teddy bears</li>
+                        <li>Enthusiasm, curiosity and go-getting attitude</li>
+                    </ul>
+                </div>
             </div>
             <div class="provide">
                 <h1>...We provide the rest!</h1>
