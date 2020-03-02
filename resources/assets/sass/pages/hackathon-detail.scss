@@ -687,12 +687,12 @@
 }
 @media (min-width:961px) {
   #codeweek-hackathons-before-page #about-codeweek {
-    padding: 100px 100px 250px 100px;
     h1 {
       font-size: 55px;
     }
     .text {
       flex-direction: row;
+      padding: 100px 100px 250px 100px;
     }
   }
 }
