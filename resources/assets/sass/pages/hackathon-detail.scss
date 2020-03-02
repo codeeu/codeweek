@@ -14,8 +14,9 @@
   color: $main-color;
 }
 
-.codeweek-banner.hackathon .image .text .text-inside h2 {
-  color: $main-color3;
+.codeweek-banner.hackathon .image .text .text-inside h2,
+.codeweek-banner.hackathon .paragraph p{
+  color: $main-color4;
 }
 
 @media (max-width: 960px) {
@@ -30,6 +31,7 @@
 
   .codeweek-banner.hackathon .image {
     margin: 0;
+    background-color: #180053;
     // justify-content: center;
   }
 
@@ -57,7 +59,7 @@
     .paragraph {
 
       text-align: center;
-      margin: 135px 30px 0 30px;
+      margin: 135px 30px 0 10px;
       font-size: 1.2em;
       min-width: 400px;
     }
@@ -162,14 +164,13 @@
 
   .paragraph {
     text-align: center;
-    margin: 0 1em 0 1em;
+    margin: 0;
     font-size: 20px;
 
     p {
       position: absolute;
       margin: 60px 0 0 680px;
       line-height: 1.4;
-      color: #180053;
       max-width: 400px;
       font-size: 17px;
 
@@ -200,7 +201,7 @@
     .paragraph {
 
       text-align: center;
-      margin: 0 1em 0 1em;
+      margin: 0;
       font-size: 20px;
     }
 
@@ -260,7 +261,6 @@
       position: absolute;
       margin: 60px 0 0 53vw;
       line-height: 1.4;
-      color: #180053;
       max-width: 400px;
       font-size: 17px;
 
@@ -278,21 +278,79 @@
 }
 
 
+#codeweek-hackathons-before-page .questions {
+  display: flex;
+  padding: 30px 40px;
+  color: $main-color3;
+  flex-direction: column;
+  .left-wrapper{
+    display: flex;
+  }
+  h1 {
+    font-weight: normal;
+  }
+  .expect {
+    flex: 1;
+    border-right: 2px solid #1237FF;
+  }
+  .bring {
+    flex: 1;
+    padding-left: 40px;
+  }
+  .provide {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    h1 {
+      padding-left: 50px;
+    }
+  }
+  ul {
+    list-style: none;
+    list-style-image: url('/images/tick.svg');
+    margin: 10px;
+    li {
+      margin-bottom: 3px;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width:961px)  {
+  #codeweek-hackathons-before-page .questions {
+    padding: 50px 20px 50px 70px;
+    flex-direction: row;
+    .expect {
+      margin-right: 70px;
+    }
+    .bring {
+      padding-left: 0;
+      padding-right: 40px;
+      border-right: 2px solid #1237FF;
+    }
+    .provide {
+      padding-top: 0;
+    }
+  }
+}
 
 
 #codeweek-hackathons-before-page {
   .registration {
     background-image: url('/images/hackathons/banner_dublin_ireland.png');
     display: flex;
+    background-repeat: no-repeat;
   }
 
   .register-wrapper {
-    width: 50%;
+    width: 100%;
   }
 
   .register {
     margin: 20px;
-    padding: 100px 80px 50px 80px;
+    padding: 50px 80px 50px 80px;
     background-color: rgb(24, 0, 83, 0.65);
     text-align: center;
 
@@ -321,69 +379,85 @@
       padding: 20px 110px;
       font-weight: normal;
       border-radius: 40px;
+      margin-left: -35px;
+    }
+  }
+}
+
+@media (min-width:961px) {
+  #codeweek-hackathons-before-page {
+    .register-wrapper {
+      width: 50%;
+    }
+    .register {
+      padding: 100px 80px 50px 80px;
     }
   }
 }
 
 #codeweek-hackathons-before-page #challenge {
-  margin: 60px 45px;
+  padding: 20px 0;
   display: flex;
-
   img {
     flex: 1;
   }
-
   .button{
     display:flex;
     justify-content: center;
   }
   .text {
     flex: 1;
-
     .challenge-text {
-      padding: 10px 60px;
+      padding: 10px 30px;
       display: flex;
       flex-direction: column;
-
       h1 {
         font-size: 40px;
         font-weight: normal;
         text-align: center;
       }
-
       p {
         padding-top: 20px;
         margin-bottom: 10px;
       }
-
       .codeweek-action-link-button {
-        padding: 20px 100px;
+        padding: 20px 30px;
         border-radius: 35px;
         margin-top: 10px;
       }
     }
   }
-
   .intro {
     flex: 1;
-
     .challenge-text {
       padding: 50px 100px;
-
       h1 {
         font-size: 55px;
         font-weight: normal;
         text-align: center;
       }
-
       p {
         padding-top: 30px;
         margin-bottom: 30px;
       }
-
       .codeweek-action-link-button {
         padding: 20px 100px;
         border-radius: 35px;
+      }
+    }
+  }
+}
+
+@media (min-width:961px) {
+  #codeweek-hackathons-before-page #challenge {
+    padding: 60px 45px;
+    .text {
+      flex: 1;
+      .challenge-text {
+        padding: 10px 60px;
+        .codeweek-action-link-button {
+          padding: 20px 100px;
+        }
       }
     }
   }
@@ -394,18 +468,30 @@
   background-image: url('/images/hackathons/programme_background.svg');
   background-position-y: 40px;
   background-repeat: no-repeat;
-  padding: 100px 150px;
+  padding: 20px 30px;
   color: $main-color4;
 
   h1 {
-    font-size: 55px;
+    font-size: 40px;
     font-weight: normal;
     text-align: center;
   }
 
   p {
     line-height: 1.6;
-    font-size: 18px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width:961px) {
+  #codeweek-hackathons-before-page #programme {
+    padding: 100px 150px;
+    h1 {
+      font-size: 55px;
+    }
+    p {
+      font-size: 18px;
+    }
   }
 }
 
@@ -418,12 +504,11 @@
   min-height: 436px;
 
   .info {
-    position: absolute;
     top: 30px;
     right: 100px;
     z-index: 2;
     padding: 20px 60px;
-    background-color: rgba(24, 0, 83, 0.65);
+    background-color: #180053;
     color: white;
 
     h1 {
@@ -449,15 +534,23 @@
     }
   }
 }
+@media (min-width:961px) {
+  #codeweek-hackathons-before-page #pratical-info {
+    .info {
+      position: absolute;
+      background-color: rgba(24, 0, 83, 0.65);
+    }
+  }
+}
 
 #codeweek-hackathons-before-page #jury-mentors {
-  padding: 80px 100px 100px 100px;
+  padding: 20px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   h1 {
-    font-size: 55px;
+    font-size: 40px;
     font-weight: normal;
   }
 
@@ -500,16 +593,23 @@
     }
   }
 }
+@media (min-width:961px) {
+  #codeweek-hackathons-before-page #jury-mentors {
+    padding: 80px 100px 100px 100px;
+    h1 {
+      font-size: 55px;
+    }
+  }
+}
 
 #codeweek-hackathons-before-page #side-events {
   display: flex;
-  padding: 100px;
+  flex-direction: column-reverse;
+  padding: 20px 30px;
   background-color: #180053;
   color: $main-color4;
-
   .left {
     flex: 1;
-    padding-right: 50px;
     display: flex;
     flex-direction: column;
 
@@ -537,6 +637,15 @@
     font-weight: normal;
   }
 }
+@media (min-width:641px)  {
+  #codeweek-hackathons-before-page #side-events {
+    flex-direction: row;
+    padding: 100px;
+    .left {
+      padding-right: 50px;
+    }
+  }
+}
 
 #codeweek-hackathons-before-page #about-codeweek {
   display: flex;
@@ -545,11 +654,12 @@
 
   .text {
     display: flex;
+    flex-direction: column;
     background-color: $main-color;
-    padding: 100px 100px 250px 100px;
+    padding: 30px 50px 250px 50px;
 
     h1 {
-      font-size: 55px;
+      font-size: 40px;
       font-weight: normal;
       color: $main-color4;
       flex: 1;
@@ -573,5 +683,16 @@
     padding: 20px 40px;
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+}
+@media (min-width:961px) {
+  #codeweek-hackathons-before-page #about-codeweek {
+    padding: 100px 100px 250px 100px;
+    h1 {
+      font-size: 55px;
+    }
+    .text {
+      flex-direction: row;
+    }
   }
 }
