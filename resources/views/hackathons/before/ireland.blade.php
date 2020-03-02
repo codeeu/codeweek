@@ -61,7 +61,7 @@
                     <div class="title">EU Code Week Hackathon</div>
                     <div class="city">IRELAND, DUBLIN</div>
                     <div class="date">17-18 April 2020</div>
-                    <a href="#" class="codeweek-action-link-button">REGISTER</a>
+                    <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCWHackathonIreland" class="codeweek-action-link-button">REGISTER</a>
                 </div>
             </div>
         </section>
@@ -77,7 +77,7 @@
                         challenges in your area.</p>
                     <p>Do you want to make Dublin greener, smarter or just nicer for everyone to live in? Propose a challenge that will be “hacked” at the Hackathon. Something concrete that will help you, your school, city or community…</p>
                     <div class="button">
-                        <a href="#" class="codeweek-action-link-button">Propose a challenge here</a>
+                        <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCodeWeek2020_Challenges_Ireland" class="codeweek-action-link-button">Propose a challenge</a>
                     </div>
 
                 </div>
@@ -95,6 +95,13 @@
                 levels up. Mentors are also on hand to coach teams through the tough stages. We also organise fun
                 activities and workshops to keep spirits high while teaching new skills like robotics and app
                 building.</p>
+
+            <div class="conditions-participation">
+                <img src="/images/tick.svg" class="static-image">
+                <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/hackathons/CONDITIONS_PARTICIPATION_CWHACKATHON_IE.pdf">Conditions of Participation</a>
+            </div>
+
+
         </section>
 
         <section id="pratical-info">
@@ -156,17 +163,17 @@
             </div>
         </section>
 
-        <section id="side-events">
-            <div class="left">
-                <h1>Side events</h1>
-                <p>Are you a young person, a teacher or parent who doesn’t know anything about coding? Sign up to our
-                    side events and discover the thrill of coding, innovation, entrepreneurship and other skills vital
-                    to empowering people in a digital world. Our Side events will include several different workshops.
-                    They are free of charge you just have to sign up here. Come and learn more</p>
-                <a href="" class="codeweek-action-link-button">REGISTER</a>
-            </div>
-            <img src="/images/hackathons/side_events.png">
-        </section>
+{{--        <section id="side-events">--}}
+{{--            <div class="left">--}}
+{{--                <h1>Side events</h1>--}}
+{{--                <p>Are you a young person, a teacher or parent who doesn’t know anything about coding? Sign up to our--}}
+{{--                    side events and discover the thrill of coding, innovation, entrepreneurship and other skills vital--}}
+{{--                    to empowering people in a digital world. Our Side events will include several different workshops.--}}
+{{--                    They are free of charge you just have to sign up here. Come and learn more</p>--}}
+{{--                <a href="" class="codeweek-action-link-button">REGISTER</a>--}}
+{{--            </div>--}}
+{{--            <img src="/images/hackathons/side_events.png">--}}
+{{--        </section>--}}
 
         <section id="about-codeweek">
             <div class="text">
