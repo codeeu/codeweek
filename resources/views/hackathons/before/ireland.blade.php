@@ -98,7 +98,7 @@
 
             <div class="conditions-participation">
                 <img src="/images/tick.svg" class="static-image">
-                <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/hackathons/CONDITIONS_PARTICIPATION_CWHACKATHON_IE.pdf">Conditions of Participation</a>
+                <a target="_blank" href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/hackathons/CONDITIONS_PARTICIPATION_CWHACKATHON_IE.pdf">Conditions of Participation</a>
             </div>
 
 
@@ -119,7 +119,7 @@
                 </div>
                 <div class="get-directions">
                     <img src="/images/tick.svg" class="static-image">
-                    <a href="https://goo.gl/maps/aqLnCse4egywXVKc9">GET DIRECTIONS</a>
+                    <a target="_blank" href="https://goo.gl/maps/aqLnCse4egywXVKc9">GET DIRECTIONS</a>
                 </div>
             </div>
         </section>
@@ -187,7 +187,7 @@
                     European Parliament.</p>
             </div>
             <img src="/images/hackathons/about_codeweek.svg" class="static-image">
-            <a href="https://codeweek.eu/about" class="codeweek-action-link-button">DISCOVER MORE</a>
+            <a target="_blank" href="https://codeweek.eu/about" class="codeweek-action-link-button">DISCOVER MORE</a>
         </section>
 
         <input type="hidden" name="center" id="center" value="53.26931964206903, -5.806274414062501">
