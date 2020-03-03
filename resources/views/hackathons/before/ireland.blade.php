@@ -45,7 +45,7 @@
                     <h1>What to bring?</h1>
                     <ul>
                         <li>Laptops, connectors, chargers… the stuff you need to code</li>
-                        <li>Sleeping bags, mats, drinking bottles, toiletries… teddy bears</li>
+                        <li>Drinking bottles, toiletries… teddy bears</li>
                         <li>Enthusiasm, curiosity and go-getting attitude</li>
                     </ul>
                 </div>
