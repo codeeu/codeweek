@@ -35,8 +35,9 @@
                                 <div class="title hackaton">Dublin</div>
                             </div>
                         </div>
-                        <div class="date">17-18 {{ucfirst(__('hackathons.cities.1.date'))}}</div>
-                        <div class="location">Dublin - @lang('hackathons.cities.1.country')</div>
+{{--                        <div class="date">{{ucfirst(__('hackathons.cities.1.date'))}}</div>--}}
+
+                        <div class="date">Dublin - @lang('hackathons.cities.1.country')</div>
                     </a>
                 </div>
                 <div class="codeweek-card-grid">
@@ -45,11 +46,12 @@
                             <img src="/images/hackathons/palafrugell_spain_small.png">
                             <div class="transparent"></div>
                             <div class="text">
-                                <div class="title hackaton">Palafrugell</div>
+                                <div class="title hackaton">Spain</div>
                             </div>
                         </div>
-                        <div class="date">7-8 {{ucfirst(__('hackathons.cities.4.date'))}}</div>
-                        <div class="location">Palafrugell - @lang('hackathons.cities.4.country')</div>
+{{--                        <div class="date">7-8 {{ucfirst(__('hackathons.cities.4.date'))}}</div>--}}
+{{--                        <div class="date"></div>--}}
+                        <div class="date">@lang('hackathons.cities.4.country')</div>
                     </a>
                 </div>
                 <div class="codeweek-card-grid">
@@ -61,8 +63,8 @@
                                 <div class="title hackaton">Iasi</div>
                             </div>
                         </div>
-                        <div class="date">9-10 {{ucfirst(__('hackathons.cities.3.date'))}}</div>
-                        <div class="location">Iasi - @lang('hackathons.cities.3.country')</div>
+{{--                        <div class="date">9-10 {{ucfirst(__('hackathons.cities.3.date'))}}</div>--}}
+                        <div class="date">Iasi - @lang('hackathons.cities.3.country')</div>
                     </a>
                 </div>
                 <div class="codeweek-card-grid">
@@ -87,8 +89,8 @@
                                 <div class="title hackaton">Riga</div>
                             </div>
                         </div>
-                        <div class="date">19-20 {{ucfirst(__('hackathons.cities.5.date'))}}</div>
-                        <div class="location">Riga - @lang('hackathons.cities.5.country')</div>
+{{--                        <div class="date">19-20 {{ucfirst(__('hackathons.cities.5.date'))}}</div>--}}
+                        <div class="date">Riga - @lang('hackathons.cities.5.country')</div>
                     </a>
                 </div>
                 <div class="codeweek-card-grid">
