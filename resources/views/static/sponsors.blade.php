@@ -61,6 +61,9 @@
                 <li>
                     <a href="https://microbit.org/" target="_blank"><img src="img/partners/microbit.png" alt="Micro:bit"></a>
                 </li>
+                <li>
+                    <a href="https://code.org/" target="_blank"><img src="img/partners/code-org.png" alt="Code.org"></a>
+                </li>
             </ul>
 
         </section>
