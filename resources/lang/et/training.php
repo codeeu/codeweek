@@ -122,6 +122,86 @@ return [
                 '3'=>'Tegevus 3. Nokitsemine ja programmeerimine Makey Makeyga.',
                 '4'=>'Tegevus 4. Igapäevaelus kasutatav algoritm lõimitud aine- ja keeleõppe tunni jaoks.'
             ]
+        ],
+        '9' => [
+            'title'=>'',
+            'author'=>'',
+            'text'=>'<p>
+                   
+                   </p>
+                   <p>
+                   
+                </p>',
+            'activities'=>[
+                '1'=>'',
+                '2'=>'',
+                '3'=>'',
+            ]
+        ],
+        '10' => [
+            'title'=>'',
+            'author'=>'',
+            'text'=>'<p>
+
+                   </p>
+                   <p>                   
+                   
+</p>
+<p> 
+
+                </p>',
+            'activities'=>[
+                '1'=>'',
+                '2'=>'',
+                '3'=>'',
+            ],
+            'links'=>[
+                'title' => '',
+                '1' => [
+                    "url"=>"https://docs.python.org/3/library/",
+                    "title"=>"Python Standard Library",
+                    "description"=>"",
+                ],
+                '2' => [
+                    "url"=>"https://codecombat.com/",
+                    "title"=>"CodeCombat",
+                    "description"=>"",
+                ],
+                '3' => [
+                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
+                    "title"=>"",
+                    "description"=>"",
+                ],
+                '4' => [
+                    "url"=>"https://inventwithpython.com/invent4thed/",
+                    "title"=>"Invent your own computer games with Python",
+                    "description"=>"",
+                ],
+                '5' => [
+                    "url"=>"https://www.codewars.com/",
+                    "title"=>"CodeWars",
+                    "description"=>"",
+                ],
+                '6' => [
+                    "url"=>"https://hourofpython.com/",
+                    "title"=>"Hour of Python",
+                    "description"=>"",
+                ],
+            ]
+        ],
+        '11' => [
+            'title'=>'',
+            'author'=>'',
+            'text'=>'<p>
+                   
+                   </p><p>
+                   
+                </p>',
+            'activities'=>[
+                '1'=>'',
+                '2'=>'',
+                '3'=>'',
+            ]
         ]
     ],
     'download_video_script' => 'Laadi alla video skript',

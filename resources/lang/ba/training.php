@@ -122,6 +122,85 @@ return [
                 '3'=>'Aktivnost 3 Praktične vježbe i kodiranje sa Makey Makey-om',
                 '4'=>'Aktivnost 4 Algoritam svakodnevnog života za nastavu korištenjem stranog jezika'
             ]
+        ],
+        '9' => [
+            'title'=>'Kako napraviti automat sa mikro:bitom',
+            'author'=>'Autorica Pauline Maas',
+            'text'=>'<p>
+                   Upotreba Micro: bita, lako programabilnog kompjutera veličine džepa, zna biti zabavan i lak način za pravljenje zanimljivih kreacija, od robota do muzičkih instrumenata sa vašim učenicima, dok ih u isto vrijeme podučavate kako kodirati. On je jednostavan i lak za upotrebu čak i najmlađim programerima, dok je istovremeno dovoljno jak za naprednije učenike. Njega možete inkorporirati u raznolike časove, od historije do matematike, pa čak i naučne predmete. Mogućnosti su beskrajne. Micro:bit je atraktivan i jeftin način da učenici nauče kodirati, uz usađivanje presudnih vještina poput računarskog razmišljanja, rješavanja problema i kreativnosti.
+                   </p>
+                   <p>
+                   U ovom videu, Pauline Maas, nastavnica kompjuterskih nauka iz Koninlijke Visio, predstavit će Micro: bit i dati par praktičnih primjera kako ga nastavnici mogu integrirati u učionici, te pretvoriti pasivne učenike u kreatore entuzijaste.
+                </p>',
+            'activities'=>[
+                '1'=>'Morzeov kod sa mikro: bitom, za osnovnu školu',
+                '2'=>'Soba za bijeg sa mikro: bitom, za niže razrede srednje škole',
+                '3'=>'Pravljenje automata, za više razrede srednje škole',
+            ]
+        ],
+        '10' => [
+            'title'=>'Kreativno kodiranje sa Pythonom',
+            'author'=>'Autorica Ivana Vezjak',
+            'text'=>'<p>
+Pomak od vizualnog prema tekstualnom programiranju prirodan je tok u kodiranju. Dok je vizualno programiranje često odlično za početnike, nakon nekog vremena, učenici mogu poželjeti neki novi izazov. Tekstualno programiranje naredni je korak za svakog ko želi uroniti dalje u programiranje i računarsko razmišljanje. 
+                   </p>
+                   <p>                   
+         U ovom videu, Ivana Vezjak uvodi vas u osnovnu sintaksu Pythona. Python je jedan od najpopularnijih programskih jezika današnjice, koji se koristi u mnogim poljima, poput podatkovnih nauka, vještačke inteligencije, mašinskog učenja, mrežnog razvoja i slično. Iako je Python moćan programski jezik koji koriste iskusni programeri, njega mogu koristiti čak i oni bez ikakvog iskustva u kodiranju, zbog njegove jednostavnosti i jasne sintakse.           
+</p>
+<p> 
+Sa Pythonom, učenici mogu kreirati kvizove o historijskim događanjima, rješavati matematičke probleme i praviti fizičke simulacije, kreirati igre, graditi vebsajtove, obavljati analizu podataka za naučne projekte i još mnogo više. Python ima bogatu i obimnu standardnu biblioteku, veliku zajednicu i veliki broj priručnika i projekata dostupnih online, koji se mogu koristiti za podučavanje, učenje i vježbanje. Kodiranjem u Pythonu, analizom programa i popravljanjem grešaka, učenici razvijaju kreativnost i uče kako biti dosljedni, uporni i strpljivi. Oni uče analitičko razmišljanje i stiču vještine rješavanja problema razlaganjem kompleksnih problema u manje komponente. Te sposobnosti pomoći će im kako da pristupe problemima u svakom drugom domenu života.
+                </p>',
+            'activities'=>[
+                '1'=>'Moj prvi kviz, za osnovnu školu',
+                '2'=>'Igra vješanja, za niže razrede srednje škole',
+                '3'=>'Pogodi zastavu!, za više razrede srednje škole',
+            ],   'links'=>[
+                'title' => '',
+                '1' => [
+                    "url"=>"https://docs.python.org/3/library/",
+                    "title"=>"Python Standard Library",
+                    "description"=>"",
+                ],
+                '2' => [
+                    "url"=>"https://codecombat.com/",
+                    "title"=>"CodeCombat",
+                    "description"=>"",
+                ],
+                '3' => [
+                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
+                    "title"=>"",
+                    "description"=>"",
+                ],
+                '4' => [
+                    "url"=>"https://inventwithpython.com/invent4thed/",
+                    "title"=>"Invent your own computer games with Python",
+                    "description"=>"",
+                ],
+                '5' => [
+                    "url"=>"https://www.codewars.com/",
+                    "title"=>"CodeWars",
+                    "description"=>"",
+                ],
+                '6' => [
+                    "url"=>"https://hourofpython.com/",
+                    "title"=>"Hour of Python",
+                    "description"=>"",
+                ],
+            ]
+        ],
+        '11' => [
+            'title'=>'',
+            'author'=>'',
+            'text'=>'<p>
+                   
+                   </p><p>
+                   
+                </p>',
+            'activities'=>[
+                '1'=>'',
+                '2'=>'',
+                '3'=>'',
+            ]
         ]
     ],
     'download_video_script' => 'Preuzmite video skriptu',
