@@ -22,9 +22,9 @@
             <section class="codeweek-content-wrapper-inside">
 
                 <p>
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EN/CODEWEEK-TRAINING-011-VIDEO-SCRIPT-EN.DOCX">
+                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-011-VIDEO-SCRIPT-{{strtoupper(App::getLocale())}}.DOCX">
                         @lang('training.download_video_script')
-                    </a> (EN)
+                    </a>
                 </p>
 
                 <h2>@lang('training.ready_to_share')</h2>
