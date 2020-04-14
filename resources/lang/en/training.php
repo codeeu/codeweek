@@ -196,7 +196,84 @@ return [
                 '3'=>'Robotics and inclusion for primary in STEM, by Debora Carmela Niutta.',
                 '4'=>'A daily life algorithm for a CLIL lesson, by Stefania Altieri.'
             ]
-        ]
+        ],
+        '9' => [
+            'title'=>'Making an automaton with a micro:bit',
+            'author'=>'by Pauline Maas',
+            'text'=>'<p>
+                   Using a Micro: bit, the easily programmable, pocket-sized computer, can be a fun and easy way to make interesting creations, from robots to musical instruments with your students, while at the same time teaching them how to code. It’s simple and easy to use for even the youngest programmers, while at the same time powerful enough for more advanced students. You can incorporate it in a variety of lessons from history to maths and even science. The possibilities are endless. The Micro: bit is an engaging and inexpensive way to teach students about coding while instilling crucial skills such as computational thinking, problem-solving, and creativity.
+                   </p>
+                   <p>
+                        In this video, Pauline Maas, Computer Science teacher at Koninklijke Visio, will introduce the Micro: bit and give a few practical examples of how teachers can integrate it into the classroom, transforming passive students into enthusiastic creators.
+                </p>',
+            'activities'=>[
+                '1'=>'Morse Code with the micro: bit, for Primary School',
+                '2'=>'Escape room with the micro: bit, for Lower Secondary School',
+                '3'=>'Making an automaton, for Upper Secondary School',
+            ]
+        ],
+        '10' => [
+            'title'=>'Creative coding with Python',
+            'author'=>'by Ivana Vezjak',
+            'text'=>'<p>
+                   Moving from visual to text-based programming is a natural flow in coding. While visual programming is often great for beginners, after a while, students may crave a new challenge. Text-based programming is the next step for anyone who wants to dive further into programming and computational thinking.</p><p> 
+In this video, Ivana Vezjak introduces you to  Python’s basic syntax. Python is one of the most popular programming languages today, used in many fields like data science, AI, machine learning, web development, etc. While Python is a powerful programming language used by experienced programmers, it can be used even by those without any coding experience because of its simplicity and clear syntax.</p><p> 
+With Python, students can create quizzes about historical events, solve math problems and make physics simulations, create games, build websites, conduct data analysis for scientific projects, and much more. Python has a rich and extensive standard library, a large community, and a great number of tutorials and projects available online, which can be used for teaching, learning, and practicing. By coding in Python, analysing programs, and fixing bugs, students develop creativity and learn how to be consistent, persistent, and patient. They learn analytical thinking and problem-solving skills by breaking down complex problems into smaller components. These competences will help them in how they approach problems in every other domain of their lives.
+
+                </p>',
+            'activities'=>[
+                '1'=>'My first quiz, for Primary School',
+                '2'=>'Hangman, for Lower Secondary School',
+                '3'=>'Guess the flag!, for Upper Secondary School',
+            ],
+            'links'=>[
+                'title' => 'Other related resources',
+                '1' => [
+                    "url"=>"https://docs.python.org/3/library/",
+                    "title"=>"Python Standard Library",
+                    "description"=>"Collection of pre-built code and modules (e.g. turtle module, math module etc.)",
+                ],
+                '2' => [
+                    "url"=>"https://codecombat.com/",
+                    "title"=>"CodeCombat",
+                    "description"=>"Educational video game for learning programming concepts.",
+                ],
+                '3' => [
+                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
+                    "title"=>"CodeClub projects",
+                    "description"=>"From beginners to advanced, step-by-step programming projects for kids.",
+                ],
+                '4' => [
+                    "url"=>"https://inventwithpython.com/invent4thed/",
+                    "title"=>"Invent your own computer games with Python",
+                    "description"=>"Book that will teach you how to program your own computer games with Python.",
+                ],
+                '5' => [
+                    "url"=>"https://www.codewars.com/",
+                    "title"=>"CodeWars",
+                    "description"=>"Educational community where students and teachers can train themselves through a series of challenges.",
+                ],
+                '6' => [
+                    "url"=>"https://hourofpython.com/",
+                    "title"=>"Hour of Python",
+                    "description"=>"Collection of Python introductory lessons (both text-based and blocks) using interactive Trinkets.",
+                ],
+            ]
+        ],
+        '11' => [
+            'title'=>'Coding for Inclusion',
+            'author'=>'by the Code Week team',
+            'text'=>'<p>
+                   Bringing coding into your classroom can be a challenge, especially if you have students with certain disabilities in your class. But it’s important to remember that anyone, no matter their abilities, can learn how to code. Children with special needs can greatly benefit from learning aspects of coding because it teaches students important life skills such as solving problems, organization, and independence. Coding can also improve interpersonal skills and social skills through collaboration and teamwork, skills which many children with disabilities struggle with. Most importantly, students have fun while learning alongside their peers.
+                   </p><p>
+                   In this video, the Code Week team will show you some practical, easy, and fun coding activities especially adapted for students with visual impairments, Down syndrome, and students on the Autism Spectrum, that teachers can easily bring to their classroom.
+                </p>',
+            'activities'=>[
+                '1'=>'Egg carton Unplugged',
+                '2'=>'A very smart mouse ',
+                '3'=>'A star making stars',
+            ]
+        ],
     ],
     'download_video_script' => 'Download the video script',
     'ready_to_share' => 'Ready to share what you learnt with your students?',

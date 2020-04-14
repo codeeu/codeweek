@@ -59,6 +59,9 @@ Route::get('/training/making-robotics-and-tinkering-in-the-classroom', 'StaticPa
 Route::get('/training/developing-creative-thinking-through-mobile-app-development', 'StaticPageController@static')->name('training.module-6');
 Route::get('/training/tinkering-and-making', 'StaticPageController@static')->name('training.module-7');
 Route::get('/training/coding-for-all-subjects', 'StaticPageController@static')->name('training.module-8');
+Route::get('/training/making-an-automaton-with-microbit', 'StaticPageController@static')->name('training.module-9');
+Route::get('/training/creative-coding-with-python', 'StaticPageController@static')->name('training.module-10');
+Route::get('/training/coding-for-inclusion', 'StaticPageController@static')->name('training.module-11');
 
 
 Route::get('/events', 'SearchController@search')->name('events_map');

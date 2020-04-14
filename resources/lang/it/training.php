@@ -122,6 +122,86 @@ return [
                 '3'=>'Attività 3 – Il tinkering e la programmazione con Makey Makey',
                 '4'=>'Attività 4 – Un algoritmo di vita quotidiana per una lezione CLIL'
             ]
+        ],
+        '9' => [
+            'title'=>'',
+            'author'=>'',
+            'text'=>'<p>
+                   
+                   </p>
+                   <p>
+                   
+                </p>',
+            'activities'=>[
+                '1'=>'',
+                '2'=>'',
+                '3'=>'',
+            ]
+        ],
+        '10' => [
+            'title'=>'',
+            'author'=>'',
+            'text'=>'<p>
+
+                   </p>
+                   <p>                   
+                   
+</p>
+<p> 
+
+                </p>',
+            'activities'=>[
+                '1'=>'',
+                '2'=>'',
+                '3'=>'',
+            ],
+            'links'=>[
+                'title' => '',
+                '1' => [
+                    "url"=>"https://docs.python.org/3/library/",
+                    "title"=>"Python Standard Library",
+                    "description"=>"",
+                ],
+                '2' => [
+                    "url"=>"https://codecombat.com/",
+                    "title"=>"CodeCombat",
+                    "description"=>"",
+                ],
+                '3' => [
+                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
+                    "title"=>"",
+                    "description"=>"",
+                ],
+                '4' => [
+                    "url"=>"https://inventwithpython.com/invent4thed/",
+                    "title"=>"Invent your own computer games with Python",
+                    "description"=>"",
+                ],
+                '5' => [
+                    "url"=>"https://www.codewars.com/",
+                    "title"=>"CodeWars",
+                    "description"=>"",
+                ],
+                '6' => [
+                    "url"=>"https://hourofpython.com/",
+                    "title"=>"Hour of Python",
+                    "description"=>"",
+                ],
+            ]
+        ],
+        '11' => [
+            'title'=>'',
+            'author'=>'',
+            'text'=>'<p>
+                   
+                   </p><p>
+                   
+                </p>',
+            'activities'=>[
+                '1'=>'',
+                '2'=>'',
+                '3'=>'',
+            ]
         ]
     ],
     'download_video_script' => 'Scarica lo script video',
