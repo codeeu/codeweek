@@ -124,83 +124,83 @@ return [
             ]
         ],
         '9' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Stavba automatu s micro:bitem',
+            'author'=>'Autorka: Pauline Maas',
             'text'=>'<p>
-                   
+                 Použití micro:bitu, programovatelného kapesního počítače, může být zábavným a snadným způsobem, jak se studenty vytvořit zajímavé výtvory, od robotů po hudební nástroje, a zároveň je naučit programovat. Je to snadné i pro ty nejmladší programátory, a zároveň dostatečně mocné pro pokročilejší studenty. Micro:bit je možné začlenit do řady předmětů, od dějepisu po matematiku, a dokonce do přírodních věd. Možnosti jsou nekonečné. Micro:bit je motivující a nenákladný způsob, jak studenty naučit programovat a podpořit rozvoj zásadních dovedností, jako je matematické myšlení, řešení problémů a kreativita.  
                    </p>
                    <p>
-                   
+                 V tomto videu vám Pauline Maas, učitelka informatiky v Koninklijke Visio, představí micro:bit a poskytne několik praktických příkladů, jak jej mohou učitelé využít ve třídě a přeměnit pasivní studenty na zapálené tvůrce.  
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Morseův kód s micro:bitem, pro základní školy',
+                '2'=>'Úniková hra s micro:bitem, pro nižší ročníky středních škol',
+                '3'=>'Stavba automatu, pro vyšší ročníky středních škol',
             ]
         ],
         '10' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Kreativní programování s Pythonem',
+            'author'=>'Autorka: Ivana Vezjak',
             'text'=>'<p>
-
+Posun od vizuálního k textovému programování je v programování přirozený vývoj. Zatímco vizuální programování je často skvělé pro začátečníky, studenti mohou toužit po nové výzvě. Textové programování je dalším krokem pro kohokoli, kdo se chce do programování a matematického myšlení ponořit ještě hlouběji. 
                    </p>
                    <p>                   
-                   
+V tomto videu vám Ivana Vezjak představí základní syntax Pythonu. Python je jedním z nejpopulárnějších programovacích jazyků dneška a používá se v mnoha oblastech, jako je datová věda, umělá inteligence, strojové učení, vývoj webu atd. Ačkoli je Python mocný programovací jazyk používaný zkušenými programátory, díky jeho jednoduchosti a srozumitelné syntaxi ho mohou používat i ti, kteří žádnou předchozí zkušenost s programováním nemají.                    
 </p>
 <p> 
-
+V Pythonu mohou studenti vytvářet kvízy o historických událostech, řešit matematické problémy, vytvářet fyzikální simulace, tvořit hry, stavět webové stránky, provádět datové analýzy ve vědeckých projektech a mnoho dalšího. Python má bohatou a rozsáhlou standardní knihovnu, velkou komunitu a řadu návodů a projektů dostupných online, které lze využít při učení a procvičování. Programováním v Pythonu, analyzováním programů a opravováním chyb studenti rozvíjejí svou kreativitu a učí se důslednosti, vytrvalosti a trpělivosti. Rozložením složitých problémů na menší součásti se naučí kritickému myšlení a řešení problémů. Tyto kompetence jim pomohou zaujímat správný přístup k řešení problémů v každé oblasti jejich života.
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Můj první kvíz, pro základní školy',
+                '2'=>'Šibenice, pro nižší ročníky středních škol',
+                '3'=>'Uhodni vlajku!, pro vyšší ročníky středních škol',
             ],
             'links'=>[
-                'title' => '',
+                'title' => 'Další související zdroje',
                 '1' => [
                     "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Python Standard Library",
-                    "description"=>"",
+                    "title"=>"•	Standardní knihovna Pythonu",
+                    "description"=>"Sbírka předem sestavených kódů a modulů (např. želví modul, matematický modul atd.).",
                 ],
                 '2' => [
                     "url"=>"https://codecombat.com/",
                     "title"=>"CodeCombat",
-                    "description"=>"",
+                    "description"=>"Vzdělávací videohra, která učí koncepty programování.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
-                    "title"=>"",
-                    "description"=>"",
+                    "url"=>"https://projects.raspberrypi.org/cs-CZ/codeclub",
+                    "title"=>"Projekty CodeClub",
+                    "description"=>"Programovací projekty pro děti krok za krokem, od začátečníků po pokročilé.",
                 ],
                 '4' => [
                     "url"=>"https://inventwithpython.com/invent4thed/",
                     "title"=>"Invent your own computer games with Python",
-                    "description"=>"",
+                    "description"=>"Kniha, která vás naučí, jak v Pythonu naprogramovat své vlastní počítačové hry.",
                 ],
                 '5' => [
                     "url"=>"https://www.codewars.com/",
                     "title"=>"CodeWars",
-                    "description"=>"",
+                    "description"=>"Vzdělávací komunita, ve které se studenti a učitelé mohou zdokonalovat prostřednictvím řady výzev.",
                 ],
                 '6' => [
                     "url"=>"https://hourofpython.com/",
                     "title"=>"Hour of Python",
-                    "description"=>"",
+                    "description"=>"Sbírka lekcí úvodu do Pythonu (textové a blokové), používajících interaktivní rozhraní Trinket.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Programování pomáhá se začleněním do kolektivu',
+            'author'=>'od týmu Týdne programování',
             'text'=>'<p>
-                   
+                   Zavést ve vaší třídě programování nemusí být snadné, zvlášť když v ní máte studenty s určitým postižením. Je ale důležité nezapomínat, že naučit se programovat může každý, bez ohledu na jeho schopnosti, Dětem se zvláštními potřebami může programování hodně dát, protože je učí důležitým životním dovednostem, jako je řešení problémů, organizace a nezávislost. Programování může také prostřednictvím spolupráce a týmové práce zlepšit mezilidské a sociální dovednosti, se kterými mnoho dětí se zdravotním postižením bojuje. A co je nejdůležitější, když se studenti učí společně se svými vrstevníky, užijí si při tom spoustu legrace.
                    </p><p>
-                   
+                   V tomto videu vám tým Týdne programování představí několik praktických, snadných a zábavných programovacích aktivit speciálně přizpůsobených pro studenty se zrakovým postižením, Downovým syndromem a studenty s poruchou autistického spektra, které mohou učitelé snadno začlenit do výuky.
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Karton od vajec unplugged',
+                '2'=>'Velmi chytrá myš',
+                '3'=>'Hvězda vyrábí hvězdy',
             ]
         ]
     ],

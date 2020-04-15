@@ -124,83 +124,83 @@ return [
             ]
         ],
         '9' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Byg en automat med en micro:bit',
+            'author'=>'af Pauline Maas',
             'text'=>'<p>
-                   
+                   Med en Micro:bit, som er en computer i lommestørrelse, der er nem at programmere, kan du og dine elever lave spændende kreationer på en sjov og let måde, lige fra robotter til musikinstrumenter, mens du lærer eleverne at kode. Den er enkel og let at bruge for selv de yngste programmører, mens den på samme tid er kraftig nok til elever på mere avancerede trin. Du kan indarbejde den i mange forskellige fag, lige fra historie til matematik og endda fysik. Mulighederne er uendelige. Micro:bit er en spændende og billig måde at lære eleverne om at kode og samtidig give dem vigtige færdigheder som for eksempel datalogisk tænkning, problemløsning og kreativitet.
                    </p>
                    <p>
-                   
+                   Pauline Maas, som er lærer i datalogi ved Koninklijke Visio, præsenterer micro:bit i denne video og giver et par praktiske eksempler på, hvordan lærere kan indarbejde den i klasselokalet og gøre passive elever til entusiastiske skabere.
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Morsekode med micro:bit, for indskolingen/mellemtrinnet',
+                '2'=>'Escape room med micro:bit, for udskolingen',
+                '3'=>'Byg en automat, for ungdomsuddannelser',
             ]
         ],
         '10' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Kreativ kodning med Python',
+            'author'=>'af Ivana Vezjak',
             'text'=>'<p>
-
+At gå fra visuel til tekstbaseret programmering er en naturlig udvikling i kodning. Visuel programmering kan være glimrende til begyndere, men efter et stykke tid har eleverne ofte brug for en ny udfordring. Tekstbaseret programmering er næste skridt for alle, der vil dykke længere ned i programmering og datalogisk tænkning. 
                    </p>
                    <p>                   
-                   
+I denne video præsenterer Ivana Vezjak den grundlæggende syntaks i Python. Python er et af de mest populære programmeringssprog i dag, og det bruges på mange områder som for eksempel datavidenskab, kunstig intelligens, maskinlæring, webudvikling osv. Python er et effektivt programmeringssprog, som bruges af erfarne programmører, men det kan også bruges af folk uden erfaring med kodning overhovedet, da det er enkelt og har en tydelig syntaks.                    
 </p>
 <p> 
-
+Med Python kan eleverne lave quizzer om historiske begivenheder, løse matematikproblemer og lave fysiksimuleringer, lave spil, bygge websteder, analysere data til videnskabelige projekter og meget mere. Python har et fyldigt og omfattende standardbibliotek, et bredt fællesskab og et væld af vejledninger og projekter, som alle er tilgængelige på internettet, og de kan bruges til at undervise, lære og øve sig. Ved at kode i Python, analysere programmer og rette fejl udvikler eleverne deres kreativitet og lærer, hvordan man er konsekvent, vedholdende og tålmodig. De lærer analytisk tankegang og problemløsning ved at nedbryde komplekse problemer i mindre komponenter. Disse kompetencer vil hjælpe dem med deres tilgang til problemer på alle andre områder i livet.
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Min første quiz, for indskolingen/mellemtrinnet',
+                '2'=>'Galgespil, for udskolingen',
+                '3'=>'Gæt flaget!, for ungdomsuddannelser',
             ],
             'links'=>[
-                'title' => '',
+                'title' => 'Andre relaterede ressourcer',
                 '1' => [
                     "url"=>"https://docs.python.org/3/library/",
                     "title"=>"Python Standard Library",
-                    "description"=>"",
+                    "description"=>"En samling færdige kodestumper og moduler (f.eks. turtle-modul, matematikmodul osv.).",
                 ],
                 '2' => [
                     "url"=>"https://codecombat.com/",
                     "title"=>"CodeCombat",
-                    "description"=>"",
+                    "description"=>"Pædagogisk videospil til at lære programmeringskoncepter med.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
-                    "title"=>"",
-                    "description"=>"",
+                    "url"=>"https://projects.raspberrypi.org/da-DK/codeclub",
+                    "title"=>"CodeClub projects",
+                    "description"=>"Trinvise programmeringsprojekter til børn, fra begyndere til avancerede brugere.",
                 ],
                 '4' => [
                     "url"=>"https://inventwithpython.com/invent4thed/",
                     "title"=>"Invent your own computer games with Python",
-                    "description"=>"",
+                    "description"=>"En bog, hvor du kan lære at programmere dine egne computerspil med Python.",
                 ],
                 '5' => [
                     "url"=>"https://www.codewars.com/",
                     "title"=>"CodeWars",
-                    "description"=>"",
+                    "description"=>"Et pædagogisk fællesskab, hvor elever og lærere kan øve sig via en række udfordringer.",
                 ],
                 '6' => [
                     "url"=>"https://hourofpython.com/",
                     "title"=>"Hour of Python",
-                    "description"=>"",
+                    "description"=>"En samling begynderlektioner i Python (både tekstbaseret og med blokke) vha. det interaktive Trinket.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Kodning med inklusion',
+            'author'=>'af Kodeuge-teamet',
             'text'=>'<p>
-                   
+                   Det kan være en udfordring at bringe kodning ind i klasseværelset, især hvis du har elever med visse funktionsnedsættelser. Det er dog vigtigt at huske, at alle uanset evner kan lære at kode. Børn med særlige behov kan få stor gavn af at lære at kode, da det giver eleverne vigtige kompetencer som for eksempel problemløsning, organisering og uafhængighed. Kodning kan også forbedre sociale kompetencer gennem samarbejde og gruppearbejde – kompetencer, som er en udfordring for mange børn med funktionsnedsættelser. Det vigtigste er, at eleverne har det sjovt, mens de lærer sammen med deres kammerater.
                    </p><p>
-                   
+I denne video viser Kodeuge-teamet nogle praktiske, nemme og sjove kodeaktiviteter, der er tilpasset specielt til elever med Downs syndrom eller diagnoser på autismespektret eller synshæmmede elever, som lærerne let kan bringe ind i klasseværelset.                   
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Æggebakkelabyrint',
+                '2'=>'En meget klog mus',
+                '3'=>'Stjerner fra stjernen',
             ]
         ]
     ],
