@@ -124,83 +124,83 @@ return [
             ]
         ],
         '9' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Creare un automa con un micro:bit',
+            'author'=>'di Pauline Maas',
             'text'=>'<p>
-                   
+                   Utilizzare un micro:bit, ovvero un computer formato tascabile facilmente programmabile, può rivelarsi un modo facile e divertente per realizzare delle creazioni interessanti con i tuoi studenti, dai robot agli strumenti musicali, insegnando loro allo stesso tempo a programmare. È semplice e facile da usare perfino per i programmatori più giovani, ma allo stesso tempo tanto potente quanto basta per gli studenti più avanzati. Puoi integrarlo in svariate lezioni, dalla storia alla matematica e perfino alla scienza. Le possibilità sono infinite. Il micro:bit è un modo coinvolgente ed economico per insegnare agli studenti la programmazione e allo stesso tempo infondere delle abilità fondamentali come il pensiero computazionale, la risoluzione dei problemi e la creatività.
                    </p>
                    <p>
-                   
+In questo video, Pauline Maas, insegnante di informatica al Koninklijke Visio, introdurrà il micro:bit e fornirà alcuni esempi pratici su come gli insegnanti possono integrarlo in classe, trasformando degli studenti passivi in creatori entusiasti.                   
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Codice Morse con il micro:bit, per la scuola primaria',
+                '2'=>'Escape room con il micro:bit, per la scuola secondaria di primo grado',
+                '3'=>'Creare un automa, per la scuola secondaria di secondo grado',
             ]
         ],
         '10' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Programmazione creativa con Python',
+            'author'=>'di Ivana Vezjak',
             'text'=>'<p>
-
+Passare dalla programmazione visuale a quella testuale è un processo naturale nella programmazione. Nonostante la programmazione visuale sia spesso ottima per i principianti, gli studenti, dopo un po’, potrebbero desiderare una nuova sfida. La programmazione testuale è il passo successivo per chiunque voglia approfondire la programmazione e il pensiero computazionale. 
                    </p>
                    <p>                   
-                   
+In questo video, Ivana Vezjak ti introdurrà la sintassi di base di Python. Python è attualmente uno dei linguaggi di programmazione più conosciuti, utilizzato in molti campi come la scienza dei dati, l’IA, l’apprendimento automatico, lo sviluppo web, ecc. Nonostante Python sia un linguaggio di programmazione potente utilizzato dai programmatori esperti, può essere utilizzato anche da chi non ha alcuna esperienza di programmazione grazie alla sua semplicità e a una sintassi chiara.                    
 </p>
 <p> 
-
+Con Python gli studenti possono creare quiz su eventi storici, risolvere problemi di matematica e realizzare simulazioni di fisica, creare giochi, costruire siti web, condurre analisi di dati per progetti scientifici e tanto altro ancora. Python dispone di una ricca ed estesa libreria standard, una vasta community e un gran numero di tutorial e progetti disponibili online utilizzabili per insegnare, apprendere ed esercitarsi. Programmando in Python, analizzando i programmi e aggiustando i bug, gli studenti sviluppano la creatività e imparano a diventare costanti, persistenti e pazienti. Acquisiscono abilità di pensiero analitico e di risoluzione dei problemi scomponendo dei problemi complessi in parti più piccole. Queste capacità li aiuteranno ad affrontare i problemi in ogni aspetto della loro vita.
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Il mio primo quiz, per la scuola primaria',
+                '2'=>'Il gioco dell’impiccato, per la scuola secondaria di primo grado',
+                '3'=>'Indovina la bandiera!, per la scuola secondaria di secondo grado',
             ],
             'links'=>[
-                'title' => '',
+                'title' => 'Altre risorse correlate',
                 '1' => [
                     "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Python Standard Library",
-                    "description"=>"",
+                    "title"=>"Libreria standard Python (in inglese)",
+                    "description"=>"Raccolta di codice pre-costruito e moduli (es. modulo tartaruga, modulo di matematica, ecc.).",
                 ],
                 '2' => [
                     "url"=>"https://codecombat.com/",
                     "title"=>"CodeCombat",
-                    "description"=>"",
+                    "description"=>"Videogioco educativo per apprendere i concetti di programmazione.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
-                    "title"=>"",
-                    "description"=>"",
+                    "url"=>"https://projects.raspberrypi.org/it-IT/codeclub",
+                    "title"=>"Progetti graduali di programmazione per bambini, dai principianti agli avanzati.",
+                    "description"=>"Progetti graduali di programmazione per bambini, dai principianti agli avanzati.",
                 ],
                 '4' => [
                     "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Invent your own computer games with Python",
-                    "description"=>"",
+                    "title"=>"Inventa i tuoi giochi al computer con Python (in inglese)",
+                    "description"=>"Libro che ti insegnerà a programmare i tuoi giochi al computer con Python.",
                 ],
                 '5' => [
                     "url"=>"https://www.codewars.com/",
                     "title"=>"CodeWars",
-                    "description"=>"",
+                    "description"=>"Community educativa in cui gli studenti e gli insegnanti possono esercitarsi attraverso una serie di sfide.",
                 ],
                 '6' => [
                     "url"=>"https://hourofpython.com/",
                     "title"=>"Hour of Python",
-                    "description"=>"",
+                    "description"=>"Raccolta di lezioni introduttive su Python (sia testuali che a blocchi) utilizzando i Trinket interattivi.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Programmare per includere',
+            'author'=>'gruppo di lavoro della Settimana europea della programmazione',
             'text'=>'<p>
-                   
+                   Portare la programmazione in classe può essere difficoltoso, soprattutto se ci sono studenti con determinate disabilità. Ma è importante ricordare che chiunque, indipendentemente dalle proprie capacità, può imparare a programmare. I bambini con bisogni speciali possono trarre grande beneficio dall’apprendimento di alcuni aspetti della programmazione, perché essa insegna agli studenti competenze importanti per la vita come la risoluzione di problemi, l’organizzazione e l’indipendenza. La programmazione può anche migliorare le competenze relazionali e sociali, con le quali molti bambini con disabilità hanno difficoltà, attraverso la collaborazione e il lavoro di gruppo. È importante inoltre sottolineare che gli studenti si divertano mentre imparano a fianco dei loro coetanei.
                    </p><p>
-                   
+                   In questo video, il gruppo di lavoro della Settimana europea della programmazione mostrerà alcune attività pratiche, divertenti e facili da portare in classe, adattate nello specifico per studenti con disabilità visive, sindrome di Down e che rientrano nello spettro dell’autismo.
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Il portauova analogico',
+                '2'=>'Un mouse molto intelligente',
+                '3'=>'La stella che fa le stelle',
             ]
         ]
     ],
