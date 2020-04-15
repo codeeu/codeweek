@@ -124,83 +124,83 @@ return [
             ]
         ],
         '9' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Izrada automata sa micro:bit uređajem',
+            'author'=>'Autor : Pauline Maas',
             'text'=>'<p>
-                   
+                   Korišćenje Micro:bit uređaja, džepnog računara koji se lako programira, može biti zabavan i jednostavan način da se s vašim učenicima stvore zanimljive kreacije, od robota do muzičkih instrumenata, dok ih istovremeno podučavate programiranju. Jednostavan je i lak za upotrebu, čak i za najmlađe programere, a  istovremeno je dovoljno snažan za naprednije učenike. Možete ga uključiti u različite vrste časova, od istorije do matematike, čak i časove prirodnih nauka. Mogućnosti su neograničene. Micro:bit uređaj je zanimljiv i pristupačan način podučavanja učenika o programiranju dok im se usađuju ključne vještine, poput računarskog razmišljanja, rješavanja problema i kreativnosti.
                    </p>
                    <p>
-                   
+U ovom video zapisu, Pauline Maas, nastavnik informatike u školi Koninklijke Visio, predstaviće micro:bit uređaj i dati nekoliko praktičnih primjera kako ga nastavnici mogu uključiti u učionice, pretvarajući pasivne učenike u stvaraoce pune entuzijazma.                   
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Morzeovo pismo s micro:bit uređajem, za osnovu školu',
+                '2'=>'Escape room s micro:bit uređajem, za niže razrede srednje škole',
+                '3'=>'Izrada automata, za više razrede srednje škole',
             ]
         ],
         '10' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Kreativno programiranje s Python-om',
+            'author'=>'Autor: Ivana Vezjak',
             'text'=>'<p>
-
+Prelazak sa vizuelnog na tekstualno programiranje prirodan je slijed u oblasti programiranja. Premda je vizuelno programiranje često sjajno za početnike, nakon izvjesnog vremena učenici mogu poželjeti novi izazov. Tekstualno programiranje je sljedeći korak za svakog ko želi da sazna više o programiranju i računarskom razmišljanju.
                    </p>
                    <p>                   
-                   
+U ovoim video zapisu, Ivana Vezjak predstavlja vam osnovnu sintaksu Python-a. Python je jedan od najpopularnijih programskih jezika današnjice, koristi se u velikom broju oblasti poput nauke o podacima (data science), vještačke inteligencije, mašinskog učenja, razvoja internet softvera (web development), itd. Iako je Python moćan programski jezik koji koriste iskusni programeri, mogu ga koristiti čak i oni koji ne posjeduju nikakvo iskustvo u programiranju, zbog njegove mo                   
 </p>
 <p> 
-
+Pomoću Python-a učenici mogu kreirati kvizove o istorijskim događajima, rješavati matematičke probleme i raditi simulacije iz fizike, kreirati igrice, internet stranice, sprovoditi analize podataka za potrebe naučnih projekata i mnogo toga još. Python posjeduje bogatu i obimnu standardnu biblioteku, veliku zajednicu kao i veliki broj tutorijala i projekata dostupnih putem interneta a koji se mogu koristiti za podučavanje, učenje i vježbanje. Programiranjem u Python-u, analizom programa, otklanjanjem bagova, učenici razvijaju kreativnost i uče kako da budu dosljedni, uporni i strpljivi. Oni uče vještine analitičkog mišljenja i rješavanja problema razlagajući složene probleme na manje segmente. Ove vještine će im pomoći u samom pristupu problemima u svakom drugom aspektu njihovih života.
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Moj prvi kviz, za osnovne škole',
+                '2'=>'Igra vješala, za niže razrede srednje škole',
+                '3'=>'Pogodi zastavu!, za više razrede srednje škole',
             ],
             'links'=>[
-                'title' => '',
+                'title' => 'Drugi relevantni izvori informacija',
                 '1' => [
                     "url"=>"https://docs.python.org/3/library/",
                     "title"=>"Python Standard Library",
-                    "description"=>"",
+                    "description"=>"Kolekcija ranije pripremljenih kodova i modula (na primjer: modul kornjače (turtle module), matematički modul, itd.",
                 ],
                 '2' => [
                     "url"=>"https://codecombat.com/",
                     "title"=>"CodeCombat",
-                    "description"=>"",
+                    "description"=>"Edukativne video igrice za učenje koncepata programiranja.",
                 ],
                 '3' => [
                     "url"=>"https://projects.raspberrypi.org/en/codeclub",
-                    "title"=>"",
-                    "description"=>"",
+                    "title"=>"CodeClub projects",
+                    "description"=>"Od početnika do naprednih korisnika, projekti programiranja za djecu po principu korak-po-korak.",
                 ],
                 '4' => [
                     "url"=>"https://inventwithpython.com/invent4thed/",
                     "title"=>"Invent your own computer games with Python",
-                    "description"=>"",
+                    "description"=>"Knjiga uz koju ćete naučiti kako da programirate svoje kompjuterske igrice pomoću Python-a.",
                 ],
                 '5' => [
                     "url"=>"https://www.codewars.com/",
                     "title"=>"CodeWars",
-                    "description"=>"",
+                    "description"=>"Edukativna zajednica gdje učenici i nastavnici mogu samostalno da se obučavaju kroz niz izazova.",
                 ],
                 '6' => [
                     "url"=>"https://hourofpython.com/",
                     "title"=>"Hour of Python",
-                    "description"=>"",
+                    "description"=>"Zbirka uvodnih lekcija o Python-u (tekstualne lekcije i blokovi) uz korišćenje internaktivnih alata Trinkets.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Programiranje za inkluziju',
+            'author'=>'autor: Tim Nedjelje programiranja',
             'text'=>'<p>
-                   
+                   Uključivanje programiranja u vašu učionicu može biti izazov, naročito ako u razredu imate učenike sa izvjesnim smetnjama u razvoju. Ali, važno je upamtiti da svako, bez obzira na sposobnosti, može naučiti kako da programira. Djeca sa posebnim potrebama mogu imati značajne koristi od učenja karakteristika programiranja jer ono učenike uči važnim životnim vještinama poput rješavanja problema, organizacije i samostalnosti. Programiranje takođe može unaprijediti interpersonalne i društvene vještine kroz saradnju i timski rad, vještine s kojima mnoga djeca sa smetnjama u razvoju imaju poteškoće. Najvažnije od svega, učenici se zabavljaju dok uče zajedno sa svojim vršnjacima.
                    </p><p>
-                   
+U ovom video zapisu, tim Nedjelje programiranja pokazaće vam nekoliko praktičnih, lakih i zabavnih aktivnosti programiranja koje su posebno prilagođene slabovidim učenicima, učenicima sa Daunovim sindromom kao i učenicima kojima je dijagnostikovan poremećaj autističnog spektra, a koje nastavnici mogu lako uključiti u učionicu.                    
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Kutija za jaja - bez internet konekcije (unplugged)',
+                '2'=>'Vrlo pametan miš',
+                '3'=>'Zvijezda pravi zvijezde',
             ]
         ]
     ],
