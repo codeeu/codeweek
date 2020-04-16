@@ -124,6 +124,86 @@ return [
                 '3'=>'Aktiviteti 3 Modifikimi dhe kodimi me Makey Makey',
                 '4'=>'Aktiviteti 4 Një algoritëm i jetës së përditshme për një mësim të metodës CLIL'
             ]
+        ],
+        '9' => [
+            'title'=>'Krijimi i një pajisjeje automatike me micro:bit',
+            'author'=>'nga Pauline Maas',
+            'text'=>'<p>
+                   Përdorimi i një micro: bit, kompjuterin e xhepit me programim të lehtë, mund të jetë mënyrë argëtuese dhe e lehtë për të bërë krijime interesante, nga robotët te veglat muzikore me nxënësit tuaj, duke i mësuar në të njëjtën kohë si të kodojnë. Është e thjeshtë dhe e lehtë për t’u përdorur edhe për programuesit më të vegjël, ndërsa në të njëjtën kohë ka fuqi të mjaftueshme edhe për nxënësit e përparuar. Atë mund ta përfshini në një shumëllojshmëri mësimesh nga historia te matematika, dhe madje edhe shkenca. Mundësitë janë të pafundme. Micro: bit është një mënyrë tërheqëse dhe ekonomike për t’u mësuar nxënësve rreth kodimit duke u ngulitur aftësi themelore si p.sh. mendimi kritik, zgjidhja e problemeve, dhe krijueshmëria.
+                   </p>
+                   <p>
+Në këtë video, Pauline Maas, mësuese e shkencave kompjuterike pranë Koninklijke Visio, do të prezantojë micro:bit dhe do të japë disa shembuj praktikë se si mësuesit mund ta integrojnë atë në klasë, duke i transformuar nxënësit pasivë në krijues entuziastë.                   
+                </p>',
+            'activities'=>[
+                '1'=>'Kodi mors me micro: bit, për shkollën fillore',
+                '2'=>'Sfidë arratisjeje me micro: bit, për ciklin e mesëm të ulët',
+                '3'=>'Krijimi i një pajisjeje të automatizuar, për shkollën e mesme',
+            ]
+        ],
+        '10' => [
+            'title'=>'Kodimi krijues me Python',
+            'author'=>'nga Ivana Vezjak',
+            'text'=>'<p>
+Lëvizja nga programimi vizual te ai me tekst është një rrjedhë natyrale në kodim. Ndërkohë që programimi vizual është shpesh i shkëlqyer për fillestarët, pas pak, nxënësit mund të kërkojnë një sfidë të re. Programimi me tekst është hapi i radhës për këdo që dëshiron të përfshihet më tej në programim dhe mendimin kompjuterik. 
+                   </p>
+                   <p>                   
+Në këtë video, Ivana Vezjak ju prezanton me sintaksën bazë të Python. Python është një prej gjuhëve më të njohura të programimit sot, e përdorur në shumë fusha si shkenca e të dhënave, AI, mësimi mekanik, zhvillimi i uebit etj. Ndërsa Python është një gjuhë programimi e fuqishme e përdorur nga programues me përvojë, ajo mund të përdoret edhe nga ata që nuk kanë përvojë me kodimin, për shkak të thjeshtësisë dhe sintaksës së qartë.                    
+</p>
+<p> 
+Me Python, nxënësit mund të krijojnë kuize rreth ngjarjeve historike, të zgjidhin probleme matematikore dhe të bëjnë simulime fizike, të krijojnë lojëra, të ndërtojnë uebsajte, të kryejnë analizime të dhënash për projekte shkencore e më shumë. Python ka një bibliotekë të pasur dhe të gjerë standarde, një komunitet të madh dhe një numër të madh tutorialësh dhe projektesh të disponueshme në internet, që mund të përdoren për mësimdhënie, mësim dhe praktikim. Duke koduar në Python, duke analizuar programe dhe duke rregulluar defekte në kod, nxënësit mësojnë kreativitetin dhe mësojnë se si të jenë konsistentë, këmbëngulës dhe të duruar. Ata mësojnë mendimin analitik dhe aftësitë e tyre për zgjidhjen e problemeve duke i zbërthyer problemet komplekse në komponentë më të vegjël. Këto kompetenca do t’i ndihmojnë ata në mënyrën e trajtimit të problemeve dhe në çdo fushë tjetër të jetës së tyre.
+                </p>',
+            'activities'=>[
+                '1'=>'“Kuizi im i parë”, për ciklin e ulët fillor',
+                '2'=>'“Hangman”, për ciklin e mesëm të ulët',
+                '3'=>'“Gjeni flamurin!”, për shkollën e mesme',
+            ],
+            'links'=>[
+                'title' => 'Burime të tjera të lidhura',
+                '1' => [
+                    "url"=>"https://docs.python.org/3/library/",
+                    "title"=>"•	Biblioteka standarde e Python",
+                    "description"=>"Koleksion me kode dhe module të ndërtuara paraprakisht (p.sh. moduli “turtle”, moduli “math” etj.).",
+                ],
+                '2' => [
+                    "url"=>"https://codecombat.com/",
+                    "title"=>"CodeCombat",
+                    "description"=>"Videolojë edukative për të mësuar konceptet e programimit.",
+                ],
+                '3' => [
+                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
+                    "title"=>"Projektet CodeClub",
+                    "description"=>"Nga fillestarët deri te të përparuarit, projekte programimi hap pas hapi për fëmijët.",
+                ],
+                '4' => [
+                    "url"=>"https://inventwithpython.com/invent4thed/",
+                    "title"=>"Shpikni lojërat tuaja kompjuterike me Python",
+                    "description"=>"Libër që do t’ju mësojë të programoni lojërat tuaja kompjuterike me Python.",
+                ],
+                '5' => [
+                    "url"=>"https://www.codewars.com/",
+                    "title"=>"CodeWars",
+                    "description"=>"Komunitet arsimor ku nxënësit dhe mësuesit mund të stërviten vetë përmes një serie sfidash.",
+                ],
+                '6' => [
+                    "url"=>"https://hourofpython.com/",
+                    "title"=>"Hour of Python",
+                    "description"=>"Koleksion me mësime prezantuese Python (si me tekst ashtu edhe me blloqet) duke përdorur Trinkets interaktive.",
+                ],
+            ]
+        ],
+        '11' => [
+            'title'=>'Kodimi për përfshirje',
+            'author'=>'nga ekipi i Code Week',
+            'text'=>'<p>
+                   Kodimi në klasën tuaj mund të jetë sfidë, sidomos nëse keni nxënës me aftësi të kufizuara në klasë. Por është e rëndësishme që të mos harroni se kushdo, pavarësisht aftësive të tyre, mund të mësojë të kodojë. Fëmijët me nevoja të veçanta mund të përfitojnë shumë nga aspektet e mësimdhënies të kodimit, sepse u mëson nxënësve aftësi të rëndësishme të jetës, siç është zgjidhja e problemeve, organizimi dhe pavarësia. Kodimi mund të përmirësojë gjithashtu aftësitë sociale dhe ndërpersonale përmes bashkëpunimit dhe punës në ekip, aftësi me të cilat shumë fëmijë me aftësi të kufizuara kanë vështirësi. Ç’është më e rëndësishme, nxënësit argëtohen ndërkohë që mësojnë së bashku me bashkëmoshatarët.
+                   </p><p>
+Në këtë video, ekipi i Code Week do t’ju tregojë disa aktivitete praktike, të thjeshta dhe argëtuese të përshtatura në veçanti për nxënës me vështirësi në shikim, sindromën Down dhe nxënës në spektrin e autizimit, që mësuesit mund t’i sjellin me lehtësi në klasën e tyre.                   
+                </p>',
+            'activities'=>[
+                '1'=>'Forma e vezëve, jashtë linje',
+                '2'=>'Një mi shumë inteligjent',
+                '3'=>'Një yll që krijon yje',
+            ]
         ]
     ],
     'download_video_script' => 'Shkarko tekstin e videos',

@@ -122,6 +122,85 @@ return [
                 '3'=>'Aktivita 3 Manuálne zručnosti a programovanie s Makey',
                 '4'=>'Aktivita 4 Algoritmus každodenného života na hodine vyučovanej metódou CLIL'
             ]
+        ],  '9' => [
+            'title'=>'Výroba automatu pomocou mikropočítača micro:bit',
+            'author'=>'Autorka: Pauline Maas',
+            'text'=>'<p>
+                   Používanie jednoducho programovateľného vreckového mikropočítača micro:bit je zábavný a jednoduchý spôsob, ako si môžete so žiakmi zostrojiť zaujímavé výtvory vrátane robotov či hudobných nástrojov, a zároveň ich naučiť programovať. Aj tí najmladší programátori ocenia jeho nenáročný a jednoduchý spôsob používania, no zároveň poskytuje dostatočnú výkonnosť aj pre pokročilejších žiakov. Môžete ho zaradiť do rôznych vyučovacích hodín, či už na dejepise, matematike, alebo prírodovedných predmetoch. Možnosti sú nekonečné. Mikropočítač micro:bit predstavuje pútavý a finančne nenáročný spôsob, ako žiakov naučiť programovať a vštepiť im základné zručnosti, ako sú výpočtové myslenie, schopnosť riešiť problémy a tvorivosť.
+                   </p>
+                   <p>
+                   Pauline Maas, učiteľka informatiky v centre Koninklijke Visio, predstavuje v tomto videu mikropočítač micro:bit a prezentuje niekoľko praktických príkladov toho, ako ho môžu učitelia zapojiť do svojej výučby a vzbudiť tvorivé nadšenie aj u pasívnych žiakov.
+                </p>',
+            'activities'=>[
+                '1'=>'Morseova abeceda s mikropočítačom micro:bit pre základné školy',
+                '2'=>'Úniková hra s mikropočítačom micro:bit pre 2. stupeň základných škôl',
+                '3'=>'Výroba automatu pre stredné školy',
+            ]
+        ],
+        '10' => [
+            'title'=>'Tvorivé programovanie v jazyku Python',
+            'author'=>'Autorka: Ivana Vezjak',
+            'text'=>'<p>
+Prechod od vizuálneho k textovému programovaniu je v rámci programovania prirodzený vývoj. Vizuálne programovanie je skvelé pre začiatočníkov, no po určitom čase môžu mať žiaci chuť pokoriť nové výzvy. Textové programovanie predstavuje ďalší krok pre každého, kto sa chce venovať programovaniu a výpočtovému mysleniu detailnejšie. 
+                   </p>
+                   <p>                   
+                   V tomto videu vám Ivana Vezjak predstaví základnú syntax jazyka Python. Python patrí medzi jeden z najobľúbenejších programovacích jazykov súčasnosti a používa sa v mnohých oblastiach vrátane dátovej vedy, umelej inteligencie, strojového učenia, vývoja webu atď. Hoci Python je výkonný programovací jazyk používaný skúsenými programátormi, vďaka jeho jednoduchosti a zrozumiteľnej syntaxi ho môžu používať aj osoby bez akýchkoľvek skúseností s programovaním. 
+</p>
+<p> 
+Pomocou jazyka Python môžu žiaci vytvárať kvízy o historických udalostiach, riešiť matematické problémy, vytvárať fyzikálne simulácie či hry, vyvíjať webové stránky, vykonávať analýzu dát vedeckých projektov a veľa ďalších vecí. Jazyk Python disponuje bohatou a širokou štandardnou knižnicou, veľkou komunitou používateľov a mnohými návodmi a projektmi dostupnými online, ktoré možno použiť pri výučbe, štúdiu aj v rámci praxe. Prostredníctvom programovania v jazyku Python, analýzy programov a opravy chýb si žiaci rozvíjajú tvorivosť a učia sa, ako zachovávať súlad, byť vytrvalí a trpezliví. Vďaka rozkladu zložitých problémov na menšie časti získavajú zručnosti analytického myslenia a riešenia problémov. Tieto kompetencie im pomôžu zlepšiť si postoj k problémom vo všetkých ostatných oblastiach života.
+                </p>',
+            'activities'=>[
+                '1'=>'Môj prvý kvíz pre základné školy',
+                '2'=>'Obesenec pre 2. stupeň základných škôl',
+                '3'=>'Uhádni vlajku! pre stredné školy',
+            ],
+            'links'=>[
+                'title' => 'Ďalšie súvisiace zdroje',
+                '1' => [
+                    "url"=>"https://docs.python.org/3/library/",
+                    "title"=>"Štandardná knižnica jazyka Python",
+                    "description"=>"Zbierka pripravených kódov a modulov (napr. modul korytnačky, matematický modul atď.).",
+                ],
+                '2' => [
+                    "url"=>"https://codecombat.com/",
+                    "title"=>"CodeCombat",
+                    "description"=>"Vzdelávacia video hra na výučbu koncepcií programovania.",
+                ],
+                '3' => [
+                    "url"=>"https://projects.raspberrypi.org/sk-SK/codeclub",
+                    "title"=>"Projekty CodeClub",
+                    "description"=>"Podrobné projekty programovania pre deti vhodné pre začiatočníkov aj pokročilých.",
+                ],
+                '4' => [
+                    "url"=>"https://inventwithpython.com/invent4thed/",
+                    "title"=>"Vymyslite si vlastnú počítačovú hru s jazykom Python",
+                    "description"=>"Kniha, ktorá vás naučí programovať vlastné počítačové hry pomocou jazyka Python.",
+                ],
+                '5' => [
+                    "url"=>"https://www.codewars.com/",
+                    "title"=>"CodeWars",
+                    "description"=>"Vzdelávacia komunita, kde si žiaci aj učitelia môžu precvičovať zručnosti v rámci rôznych výziev.",
+                ],
+                '6' => [
+                    "url"=>"https://hourofpython.com/",
+                    "title"=>"Hour of Python",
+                    "description"=>"Zbierka úvodných lekcií jazyka Python (texty aj bloky) s využitím interaktívnych prostredí Trinket.",
+                ],
+            ]
+        ],
+        '11' => [
+            'title'=>'Programovaním k inklúzii',
+            'author'=>'od tímu Týždňa programovania',
+            'text'=>'<p>
+                   Zahrnúť programovanie do vyučovania môže byť výzva, najmä ak máte v triede žiakov s nejakým zdravotným postihnutím. Je však dôležité nezabúdať na to, že programovať sa môže naučiť každý, bez ohľadu na schopnosti. Pre deti so špeciálnymi potrebami môže byť oboznámenie sa s jednotlivými aspektmi programovania veľkým prínosom. Žiaci získajú zručnosti dôležité pre život, ako sú riešenie problémov, organizačné schopnosti a nezávislosť. Pri programovaní si môžu prostredníctvom spolupráce a tímovej práce zlepšiť aj medziľudské a sociálne zručnosti, ktoré predstavujú pre mnohé deti so zdravotným postihnutím problém. A čo je najdôležitejšie, žiaci zažijú pri spoločnom učení s rovesníkmi veľa zábavy.
+                   </p><p>
+V tomto videu vám tím Týždňa programovania ukáže niekoľko praktických, jednoduchých a zábavných programátorských aktivít, ktoré sú špeciálne prispôsobené pre žiakov s poruchou zraku, Downovým syndrómom a žiakov s poruchami autistického spektra, a ktoré môžu učitelia ľahko zahrnúť do vyučovania.                   
+                </p>',
+            'activities'=>[
+                '1'=>'Kartón na vajíčka bez počítača',
+                '2'=>'Mimoriadne inteligentná myš',
+                '3'=>'Hviezdy vyrábajú hviezdy',
+            ]
         ]
     ],
     'download_video_script' => 'Stiahnuť prepis videa',

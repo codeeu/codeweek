@@ -122,6 +122,86 @@ return [
                 '3'=>'Dejavnost 3 ‒ Eksperimentalno proučevanje in programiranje z orodjem Makey Makey',
                 '4'=>'Dejavnost 4 ‒ Algoritem vsakdanjega življenja za učno uro nejezikovnega predmeta v tujem jeziku'
             ]
+        ],
+        '9' => [
+            'title'=>'Izdelava avtomata z micro:bitom',
+            'author'=>'Pauline Maas',
+            'text'=>'<p>
+                   Uporaba micro:bita, žepnega računalnika, s katerim je programiranje zelo preprosto, je zabaven in preprost način, da s svojimi učenci izdelate zanimive izdelke – od robotov do glasbenih instrumentov, hkrati pa jih učite programiranja. Je preprost in enostaven za uporabo tudi za najmlajše programerje, hkrati pa dovolj zmogljiv za naprednejše učence. Lahko ga vključite v različne učne ure od zgodovine do matematike in celo naravoslovja. Možnosti so neskončne. Micro:bit je vključujoč in poceni način za učenje o programiranju, hkrati pa vzpostavlja ključne veščine, kot so računalniško razmišljanje, reševanje težav in ustvarjalnost.
+                   </p>
+                   <p>
+                  V tem videoposnetku bo Pauline Maas, učiteljica računalništva v kraju Koninklijke Visio, predstavila micro:bit in nekaj praktičnih primerov, kako ga učitelji lahko vključijo v pouk, pasivne učence pa spremenijo v navdušene ustvarjalce.
+                </p>',
+            'activities'=>[
+                '1'=>'Morsejeva koda/abeceda z micro:bitom za osnovne šole',
+                '2'=>'Soba pobega z micro:bitom za nižje srednje šole',
+                '3'=>'Izdelava avtomata za višje srednje šole',
+            ]
+        ],
+        '10' => [
+            'title'=>'Ustvarjalno programiranje v Pythonu',
+            'author'=>'Ivana Vezjak',
+            'text'=>'<p>
+Prehod od vizualnega na tekstovno programiranja je naravni proces učenja programiranja. Medtem ko je vizualno programiranje pogosto odlično za začetnike, si lahko učenci čez nekaj časa zaželijo nov izziv. Tekstovno programiranje je naslednji korak za vse, ki se želite še globlje potopiti v programiranje in računalniško razmišljanje. 
+                   </p>
+                   <p>                   
+V tem videoposnetku vam Ivana Vezjak predstavi Pythonovo osnovno sintakso. Python je danes eden izmed najbolj priljubljenih programskih jezikov, ki se uporablja na številnih področjih, kot so podatkovna znanost, umetna inteligenca, strojno učenje, razvijanje spletišč itd. Čeprav je Python močan programski jezik, ki ga uporabljajo izkušeni programerji, ga zaradi njegove preprostosti in jasne sintakse lahko uporabljajo tudi tisti, ki nimajo nobenih izkušenj s programiranjem.                    
+</p>
+<p> 
+S Pythonom lahko učenci ustvarijo kvize o zgodovinskih dogodkih, rešujejo matematične probleme in oblikujejo fizikalne simulacije, ustvarijo igre, izdelajo spletna mesta, izvedejo analizo podatkov za znanstvene projekte in še veliko več. Python ima bogato in obsežno standardno knjižnico, veliko skupnost ter veliko spletnih vadnic in projektov, ki jih je mogoče uporabiti za poučevanje, učenje in vadbo. S programiranjem v Pythonu, analizo programov in popravljanjem napak učenci razvijajo ustvarjalnost in se naučijo biti dosledni, vztrajni in potrpežljivi. Naučijo se analitičnega razmišljanja in sposobnosti reševanja težav z razčlenitvijo kompleksnih težav na manjše sestavne dele. Te sposobnosti jim bodo pomagale pri pristopu k reševanju težav na vseh drugih področjih njihovega življenja.
+                </p>',
+            'activities'=>[
+                '1'=>'Moj prvi kviz za osnovne šole',
+                '2'=>'Vislice za nižje srednje šole',
+                '3'=>'Ugani zastavo! za višje srednje šole',
+            ],
+            'links'=>[
+                'title' => 'Drugi povezani viri',
+                '1' => [
+                    "url"=>"https://docs.python.org/3/library/",
+                    "title"=>"Python Standard Library",
+                    "description"=>"Zbirka vnaprej pripravljene kode in modulov (npr. modul turtle, modul math itd.)",
+                ],
+                '2' => [
+                    "url"=>"https://codecombat.com/",
+                    "title"=>"CodeCombat",
+                    "description"=>"Izobraževalna videoigra za učenje konceptov programiranja.",
+                ],
+                '3' => [
+                    "url"=>"https://projects.raspberrypi.org/sl-SI/codeclub",
+                    "title"=>"CodeClub projects",
+                    "description"=>"Od začetnih do naprednih programov programiranja po korakih za otroke.",
+                ],
+                '4' => [
+                    "url"=>"https://inventwithpython.com/invent4thed/",
+                    "title"=>"Invent your own computer games with Python",
+                    "description"=>"Knjiga, ki vas bo naučila, kako programirati svoje računalniške igre v Pythonu.",
+                ],
+                '5' => [
+                    "url"=>"https://www.codewars.com/",
+                    "title"=>"CodeWars",
+                    "description"=>"Izobraževalna skupnost, v kateri se lahko učenci in učitelji sami urijo skozi vrsto izzivov.",
+                ],
+                '6' => [
+                    "url"=>"https://hourofpython.com/",
+                    "title"=>"Hour of Python",
+                    "description"=>"Zbirka uvodnih lekcij Pythona (tako tekstovno kot v blokih) z uporabo interaktivnega orodja Trinkets.",
+                ],
+            ]
+        ],
+        '11' => [
+            'title'=>'Programiranje za vključevanje',
+            'author'=>'pripravila ekipa tedna programiranja',
+            'text'=>'<p>
+                   Vključevanje programiranja v pouk vam lahko predstavlja izziv, zlasti če so v vašem razredu otroci s posebnimi potrebami. Pomembno pa si je zapomniti, da se lahko programiranja nauči vsak – ne glede na svoje sposobnosti. Otroci s posebnimi potrebami imajo lahko veliko koristi od učnih vidikov programiranja, saj se učenci naučijo pomembnih življenjskih veščin, kot so reševanje težav, organizacija in neodvisnost. Programiranje lahko s sodelovanjem in timskim delom izboljša tudi medosebne in socialne veščine, s katerimi imajo otroci s posebnimi potrebami pogosto težave. Najpomembneje pa je, da se bodo učenci zabavali s svojimi vrstniki pri skupnem učenju.
+                   </p><p>
+V tem videoposnetku vam bo ekipa tedna programiranja pokazala nekaj praktičnih, preprostih in zabavnih programerskih dejavnosti, posebej prilagojenih za slabovidne učence, učence z Downovim sindromom in učence z motnjami avtističnega spektra, ki jih lahko učitelji zlahka vključijo v svoj pouk.                   
+                </p>',
+            'activities'=>[
+                '1'=>'Izklopljeno s škatlami za jajca',
+                '2'=>'Zelo pametna miška',
+                '3'=>'Zvezda ustvarja zvezde',
+            ]
         ]
     ],
     'download_video_script' => 'Prenos besedila videoposnetka',

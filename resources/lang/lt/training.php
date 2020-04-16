@@ -122,6 +122,86 @@ return [
                 '3'=>'3 veikla. Meistravimas ir programavimas naudojant „Makey Makey“',
                 '4'=>'4 veikla. Kasdienio gyvenimo algoritmo naudojimas integruotam dalyko ir užsienio kalbos mokymui'
             ]
+        ],
+        '9' => [
+            'title'=>'Roboto gamyba naudojant „micro:bit“',
+            'author'=>'autorius Pauline Maas',
+            'text'=>'<p>
+                   Lengvai programuojamo, kišeninio kompiuterio „Micro: bit“ naudojimas gali būti įdomus ir paprastas būdas įdomiems kūriniams – nuo robotų iki muzikos instrumentų – kurti kartu su savo mokiniais, tuo pačiu išmokant juos kodavimo. Juos paprasta ir lengva naudoti net jauniausiems programuotojams, tačiau taip pat pakanka galios labiau pažengusiems mokiniams. Galite juos įtraukti į įvairias pamokas – nuo istorijos iki matematikos ir net gamtos mokslų. Galimybėms ribų nėra. „Micro: bit“ yra patrauklus ir nebrangus būdas mokyti mokinius kodavimo, tuo pačiu formuojant esminius įgūdžius, tokius kaip skaitmeninis mąstymas, problemų sprendimas ir kūrybingumas.
+                   </p>
+                   <p>
+Šiame vaizdo įraše Pauline Maas, „Koninklijke Visio“ informatikos mokytoja, pristatys „Micro: bit“ ir pateiks keletą praktinių pavyzdžių, kaip mokytojai gali juos integruoti į klasės darbą, pasyvius mokinius paversdami entuziastingais kūrėjais.                   
+                </p>',
+            'activities'=>[
+                '1'=>'Morzės kodas su „micro: bit“ pradinės mokyklos mokiniams',
+                '2'=>'Pabėgimo kambarys su „micro: bit“ pagrindinės mokyklos mokiniams',
+                '3'=>'Roboto gamyba vyresnių klasių vidurinės mokyklos mokiniams',
+            ]
+        ],
+        '10' => [
+            'title'=>'Kūrybinis programavimas naudojant „Python“ kalbą',
+            'author'=>'Autorius Ivana Vezjak',
+            'text'=>'<p>
+Perėjimas nuo vaizdinio programavimo prie tekstinio yra natūrali kodavimo eiga. Nors vaizdinis programavimas dažnai puikiai tinka pradedantiesiems, po kurio laiko studentai gali trokšti naujo iššūkio. Tekstinis programavimas yra kitas žingsnis visiems, norintiems pasinerti giliau į programavimą ir skaičiuojamąjį mąstymą.
+                   </p>
+                   <p>                   
+Šiame vaizdo įraše Ivana Vezjak pristatys jums „Python“ kalbos bazinę sintaksę. Šiuo metu „Python“ yra viena populiariausių programavimo kalbų, naudojama daugelyje sričių, tokių kaip duomenų mokslas, AI, automatizuotas mokymasis, interneto svetainių kūrimas ir kt. Nors „Python“ yra galinga patyrusių programuotojų naudojama programavimo kalba, dėl paprastumo ir aiškios sintaksės ją gali naudoti net ir tie, kurie neturi jokios programavimo patirties.                   
+</p>
+<p> 
+Naudodami „Python“, mokiniai gali kurti viktorinas apie istorinius įvykius, spręsti matematikos problemas ir atlikti fizikos simuliacijas, kurti žaidimus, interneto svetaines, atlikti duomenų analizę moksliniams projektams ir dar daugiau. „Python“ turi turtingą ir išsamią standartinę biblioteką, didelę bendruomenę ir daugybę internetinių mokymo programų ir projektų, kuriuos galima naudoti mokymui, mokymuisi ir praktikai. Šifruojant „Python“ programoje, analizuojant programas ir taisant klaidas, studentai ugdo kūrybiškumą ir išmoksta būti nuoseklūs, atkaklūs ir kantrūs. Jie įgauna analitinio mąstymo ir problemų sprendimo įgūdžių, suskaidydami sudėtingas problemas į mažesnius komponentus. Šios žinios padės jiems spręsti problemas visose kitose gyvenimo srityse.
+                </p>',
+            'activities'=>[
+                '1'=>'Mano pirmoji viktorina, pradinės mokyklos mokiniams',
+                '2'=>'„Kartuvės“, jaunesnių klasių vidurinės mokyklos mokiniams',
+                '3'=>'„Atspėk vėliavą!“ Vyresnių klasių vidurinės mokyklos mokiniams',
+            ],
+            'links'=>[
+                'title' => 'Kiti susiję ištekliai',
+                '1' => [
+                    "url"=>"https://docs.python.org/3/library/",
+                    "title"=>"Python standartinė biblioteka",
+                    "description"=>"Iš anksto sukurto kodo ir modulių rinkinys (pvz., vėžlio modulis, matematikos modulis ir t. t.).",
+                ],
+                '2' => [
+                    "url"=>"https://codecombat.com/",
+                    "title"=>"CodeCombat",
+                    "description"=>"Mokomasis vaizdo žaidimas programavimo sąvokoms išmokti.",
+                ],
+                '3' => [
+                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
+                    "title"=>"CodeClub projektai",
+                    "description"=>"Nuo pradedančiųjų iki pažangių, laipsniškų programavimo projektų vaikams.",
+                ],
+                '4' => [
+                    "url"=>"https://inventwithpython.com/invent4thed/",
+                    "title"=>"Kurkite savo kompiuterinius žaidimus naudodami Python",
+                    "description"=>"Knyga, kurioje mokoma programuoti savo kompiuterinius žaidimus naudojant „Python“.",
+                ],
+                '5' => [
+                    "url"=>"https://www.codewars.com/",
+                    "title"=>"CodeWars",
+                    "description"=>"Švietimo bendruomenė, kurioje mokiniai ir mokytojai gali mokytis, spręsdami daugybę iššūkių.",
+                ],
+                '6' => [
+                    "url"=>"https://hourofpython.com/",
+                    "title"=>"Hour of Python",
+                    "description"=>"„Python“ įvadinių pamokų (tiek teksto, tiek blokų) kolekcija naudojant interaktyvias figūrėles.",
+                ],
+            ]
+        ],
+        '11' => [
+            'title'=>'Įtrauktį skatinantis programavimas',
+            'author'=>'Programavimo savaitės komanda',
+            'text'=>'<p>
+                   Sudominti klasę programavimu gali būti nelengva, ypač jei yra tam tikrą negalią turinčių mokinių. Tačiau svarbu nepamiršti, kad programuoti gali išmokti visi, nepriklausomai nuo jų gebėjimų. Specialiųjų poreikių turintiems vaikams gali būti labai naudinga mokytis programavimo, nes jis ugdo svarbius gyvenimo įgūdžius, tokius kaip problemų sprendimas, organizuotumas ir savarankiškumas. Bendradarbiaujant ir dirbant komandoje programavimas taip pat gali pagerinti bendravimo ir socialinius įgūdžius – įgūdžius, kurie kelia sunkumų daugeliui neįgalių vaikų. Svarbiausia, kad mokiniai smagiai mokosi kartu su savo bendraamžiais.
+                   </p><p>
+                   Šiame vaizdo įraše Programavimo savaitės komanda parodys jums keletą praktinių, lengvų ir linksmų programavimo veiklų, kurios yra specialiai pritaikytos regos negalią, Dauno sindromą ar autizmo spektro sutrikimų turintiems mokiniams ir kurias mokytojai gali lengvai pristatyti savo klasei.
+                </p>',
+            'activities'=>[
+                '1'=>'Kiaušinių dėklas: be kompiuterio',
+                '2'=>'Labai išmani pelė',
+                '3'=>'Žvaigždes kurianti žvaigždė',
+            ]
         ]
     ],
     'download_video_script' => 'Atsisiųsti vaizdo įrašo scenarijų',
