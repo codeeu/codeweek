@@ -124,83 +124,83 @@ return [
             ]
         ],
         '9' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Construção de um autómato com um micro:bit',
+            'author'=>'Pauline Maas',
             'text'=>'<p>
-                   
+                  Utilizar um micro:bit, um computador de bolso facilmente programável, pode ser uma forma divertida e fácil de criar invenções interessantes — desde robôs até instrumentos musicais — com os seus alunos, enquanto os ensina a programar. É simples e fácil de utilizar, mesmo para os programadores mais jovens, sendo também suficientemente desafiante para alunos de níveis avançados. Pode integrá-lo em diferentes disciplinas, desde História e Matemática até Ciências. As possibilidades são infinitas. O micro:bit é uma forma atrativa e económica de ensinar programação aos alunos, incutindo-lhes simultaneamente competências fundamentais como o pensamento computacional, a capacidade de resolução de problemas e a criatividade. 
                    </p>
                    <p>
-                   
+Neste vídeo, Pauline Maas, professora de Ciência de Computadores no centro Koninklijke Visio, apresentará o micro:bit e dará alguns exemplos práticos de formas como os professores o podem integrar na sala de aula, transformando alunos passivos em criadores entusiastas.                   
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Código Morse com o micro:bit, para o primeiro ciclo do ensino básico',
+                '2'=>'Sala de fuga com o micro:bit, para o segundo e terceiro ciclos do ensino básico',
+                '3'=>'Construção de um autómato, para o ensino secundário',
             ]
         ],
         '10' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Programação criativa com Python',
+            'author'=>'Ivana Vezjak',
             'text'=>'<p>
-
+Passar da programação visual para a programação baseada em texto é uma transição natural. Embora a programação visual seja, em regra, excelente para principiantes, com o passar do tempo, os alunos podem ansiar por um novo desafio. A programação baseada em texto é a etapa seguinte para quem quer aprofundar a programação e o pensamento computacional. 
                    </p>
                    <p>                   
-                   
+Neste vídeo, Ivana Vezjak apresenta a sintaxe básica do Python. Atualmente, o Python é uma das linguagens de programação mais populares, utilizada em muitos campos, tais como ciência de dados, IA, aprendizagem automática, desenvolvimento Web, etc. Embora o Python seja uma linguagem de programação poderosa utilizada por programadores experientes, pode ser utilizada até mesmo por quem não tem qualquer experiência em programação, dada a sua simplicidade e clareza de sintaxe.                    
 </p>
 <p> 
-
+Com o Python, os alunos podem criar questionários sobre acontecimentos históricos, resolver problemas de Matemática e fazer simulações de Física, criar jogos, criar páginas Web, efetuar análises de dados para projetos científicos e muito mais. O Python conta com uma biblioteca-padrão rica e extensa, uma vasta comunidade e um grande número de tutoriais e projetos disponíveis em linha, que podem ser utilizados para o ensino, a aprendizagem e a prática. Ao programar em Python, analisar programas e corrigir erros de programação, os alunos desenvolvem a criatividade e aprendem a ser coerentes, persistentes e pacientes. Adquirem competências ao nível do pensamento analítico e da resolução de problemas, decompondo problemas complexos em níveis de menor complexidade. Estas competências irão ajudá-los a mudar a forma como abordam os problemas em todos os outros domínios da sua vida.
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'O meu primeiro questionário, para o primeiro ciclo do ensino básico',
+                '2'=>'Jogo da forca, para o segundo e terceiro ciclos do ensino básico',
+                '3'=>'Jogo das bandeiras, para o ensino secundário',
             ],
             'links'=>[
-                'title' => '',
+                'title' => 'Outros recursos relacionados',
                 '1' => [
                     "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Python Standard Library",
-                    "description"=>"",
+                    "title"=>"Biblioteca Padrão do Python",
+                    "description"=>"Uma coleção de códigos e módulos predefinidos (p. ex., módulo Turtle, módulo Math, etc.).",
                 ],
                 '2' => [
                     "url"=>"https://codecombat.com/",
                     "title"=>"CodeCombat",
-                    "description"=>"",
+                    "description"=>"Videojogo didático para aprender conceitos de programação.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
-                    "title"=>"",
-                    "description"=>"",
+                    "url"=>"https://projects.raspberrypi.org/pt-PT/codeclub",
+                    "title"=>"Projetos CodeClub",
+                    "description"=>"Projetos de programação passo a passo para crianças, desde o nível básico até ao avançado.",
                 ],
                 '4' => [
                     "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Invent your own computer games with Python",
-                    "description"=>"",
+                    "title"=>"Invente os seus jogos de computador com o Python",
+                    "description"=>"Um livro que o ensinará a programar os seus próprios jogos de computador com o Python.",
                 ],
                 '5' => [
                     "url"=>"https://www.codewars.com/",
                     "title"=>"CodeWars",
-                    "description"=>"",
+                    "description"=>"Comunidade pedagógica na qual alunos e professores podem praticar através de uma série de desafios.",
                 ],
                 '6' => [
                     "url"=>"https://hourofpython.com/",
                     "title"=>"Hour of Python",
-                    "description"=>"",
+                    "description"=>"Um conjunto de aulas introdutórias de Python (quer com base em texto, quer em blocos), que utilizam Trinkets interativos.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Programação para a inclusão',
+            'author'=>'pela equipa da Semana da Programação',
             'text'=>'<p>
-                   
+                   Levar a programação para a sala de aula pode ser desafiante, especialmente se tiver alunos com determinadas deficiências. Mas é importante lembrar que qualquer pessoa, independentemente das suas capacidades, pode aprender a programar. As crianças com necessidades especiais podem beneficiar muito dos aspetos de aprendizagem da programação, porque esta ensina aos alunos competências importantes para a vida, como a capacidade de resolução de problemas, a organização e a autonomia. A programação também pode melhorar as competências interpessoais e sociais por meio da colaboração e do trabalho em equipa, competências essas com as quais muitas crianças se debatem. Acima de tudo, os alunos divertem-se enquanto aprendem juntamente com os seus colegas.
                    </p><p>
-                   
+Neste vídeo, a equipa da Semana da Programação vai mostrar-lhe algumas atividades de programação práticas, fáceis e divertidas especialmente adaptadas para alunos com deficiências visuais, síndrome de Down e perturbações do espetro do autismo, que os professores podem introduzir facilmente na sala de aula.                   
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Embalagem de ovos sem fios',
+                '2'=>'Um rato muito esperto',
+                '3'=>'Uma estrela que cria estrelas',
             ]
         ]
     ],
