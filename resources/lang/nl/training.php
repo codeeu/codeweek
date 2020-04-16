@@ -122,6 +122,86 @@ return [
                 '3'=>'Activiteit 3 Knutselen en programmeren met Makey Makey',
                 '4'=>'Activiteit 4 Een algoritme uit het dagelijks leven bij een les in een andere taal'
             ]
+        ],
+        '9' => [
+            'title'=>'Een automaton maken met een micro:bit',
+            'author'=>'door Pauline Maas',
+            'text'=>'<p>
+                   Met een micro:bit, een eenvoudig te programmeren computer op zakformaat, kun je met je leerlingen op een leuke en eenvoudige manier interessante dingen maken, variërend van robots tot muziekinstrumenten, terwijl je ze tegelijkertijd leert programmeren. Het is eenvoudig en zelfs voor de jongste programmeurs gemakkelijk te gebruiken, en tegelijkertijd krachtig genoeg voor leerlingen die al wat meer kunnen en willen. Je kunt het in een breed scala aan lessen opnemen, variërend van geschiedenis tot wiskunde en zelfs natuurkunde of scheikunde. Er zijn talloze mogelijkheden. De micro:bit biedt een aantrekkelijke en voordelige manier om leerlingen te leren programmeren en ze tegelijkertijd essentiële vaardigheden als computationeel denken, probleemoplossing en creativiteit bij te brengen.
+                   </p>
+                   <p>
+In deze video introduceert Pauline Maas, ICT-docent bij Koninklijke Visio, de micro:bit en laat ze met een paar praktijkvoorbeelden zien hoe leraren dit in hun lessen kunnen integreren en van passieve leerlingen enthousiaste ontwikkelaars kunnen maken.                   
+                </p>',
+            'activities'=>[
+                '1'=>'Morse met de micro:bit, voor de lagere school',
+                '2'=>'Escaperoom met de micro:bit, voor de onderbouw van het middelbaar onderwijs',
+                '3'=>'Een automaton maken, voor de bovenbouw van het middelbaar onderwijs',
+            ]
+        ],
+        '10' => [
+            'title'=>'Creatief programmeren met Python',
+            'author'=>'door Ivana Vezjak',
+            'text'=>'<p>
+De overgang van visueel naar tekstgebaseerd programmeren is een vrij gangbare stap. Visueel programmeren biedt een prima kennismaking voor beginners, maar leerlingen zijn na een tijdje vaak wel toe aan een nieuwe uitdaging. Tekstgebaseerd programmeren is de volgende stap voor iedereen die zijn kennis van programmeren en computationeel denken wil vergroten. 
+                   </p>
+                   <p>                   
+In deze video laat Ivana Vezjak je kennismaken met de basissyntaxis van Python. Python is momenteel een van de populairste programmeertalen en wordt gebruikt op het gebied van datawetenschappen, kunstmatige intelligentie, machinaal leren, webontwikkeling, enzovoort. Python is een krachtige programmeertaal die door ervaren programmeurs wordt gebruikt, maar kan vanwege de eenvoud en heldere syntaxis ook prima worden gebruikt door mensen zonder enige programmeerervaring.                    
+</p>
+<p> 
+Met Python kunnen leerlingen quizzen maken over historische gebeurtenissen, wiskundevraagstukken oplossen en natuurkundige simulaties maken, games en websites maken, gegevensanalyse uitvoeren bij wetenschappelijke projecten en nog veel meer. Voor Python zijn online een rijke en uitgebreide standaardbibliotheek, een grote community en veel tutorials en projecten te vinden die voor het geven van onderwijs en bij het leren en oefenen kunnen worden gebruikt. Met programmeren in Python, het analyseren van programma\'s en het oplossen van problemen ontwikkelen leerlingen hun creativiteit en trainen ze consistentie, doorzettingsvermogen en geduld. Ze leren vaardigheden aan voor analytisch denken en probleemoplossing door complexe problemen op te delen in kleinere onderdelen. Deze competenties helpen hen bij het aanpakken van problemen in alle aspecten van het leven.
+                </p>',
+            'activities'=>[
+                '1'=>'Mijn eerste quiz, voor het basisonderwijs',
+                '2'=>'Galgje, voor de onderbouw van het middelbaar onderwijs',
+                '3'=>'Raad de vlag, voor de bovenbouw van het middelbaar onderwijs',
+            ],
+            'links'=>[
+                'title' => 'Andere gerelateerde hulpmiddelen',
+                '1' => [
+                    "url"=>"https://docs.python.org/3/library/",
+                    "title"=>"Standaard Python-bibliotheek",
+                    "description"=>"Verzameling vooraf samengestelde code en modules (b.v. turtle-module, math-module, enzovoort).",
+                ],
+                '2' => [
+                    "url"=>"https://codecombat.com/",
+                    "title"=>"CodeCombat",
+                    "description"=>"Educatieve videogame voor het leren van programmeerconcepten.",
+                ],
+                '3' => [
+                    "url"=>"https://projects.raspberrypi.org/nl-NL/codeclub",
+                    "title"=>"CodeClub-projecten",
+                    "description"=>"Stapsgewijze programmeerprojecten voor kinderen, van beginners tot gevorderden.",
+                ],
+                '4' => [
+                    "url"=>"https://inventwithpython.com/invent4thed/",
+                    "title"=>"Ontwikkel je eigen computergames met Python",
+                    "description"=>"Boek waarin je leert hoe je met Python je eigen computerspellen kunt programmeren.",
+                ],
+                '5' => [
+                    "url"=>"https://www.codewars.com/",
+                    "title"=>"CodeWars",
+                    "description"=>"Educatieve community waar leerlingen en leraren  hun eigen vaardigheden met een reeks vraagstukken kunnen trainen",
+                ],
+                '6' => [
+                    "url"=>"https://hourofpython.com/",
+                    "title"=>"Hour of Python",
+                    "description"=>"Verzameling inleidende lessen over Python (zowel tekstgebaseerd als blokken) met interactieve Trinkets.",
+                ],
+            ]
+        ],
+        '11' => [
+            'title'=>'Programmeren voor inclusie',
+            'author'=>'door het team van de programmeerweek',
+            'text'=>'<p>
+                   Het kan best lastig zijn om programmeren te introduceren in je lessen, helemaal als je leerlingen met een beperking in je klas hebt. Maar vergeet niet dat iedereen, ongeacht zijn of haar vaardigheden, kan leren programmeren. Voor kinderen met speciale behoeften kan het leren van bepaalde aspecten van programmeren enorm helpen bij het leren van belangrijke levensvaardigheden, zoals probleemoplossing en onafhankelijkheid. Programmeren kan ook helpen interpersoonlijke vaardigheden en sociale vaardigheden te verbeteren via samenwerking en teamwork; dit zijn vaardigheden waar veel kinderen met een beperking moeite mee hebben. Maar het belangrijkste: leerlingen beleven er plezier aan samen met hun leeftijdgenoten te leren.
+                   </p><p>
+                   In deze video laat het team van de programmeerweek een aantal praktische, eenvoudige en leuke programmeeractiviteiten zien die speciaal zijn aangepast voor leerlingen met een visuele beperking of downsyndroom en leerlingen met een vorm van autisme, die leraren gemakkelijk in de les kunnen introduceren.
+                </p>',
+            'activities'=>[
+                '1'=>'Eierdoos unplugged',
+                '2'=>'Een erg slimme muis',
+                '3'=>'Een ster die sterren voortbrengt',
+            ]
         ]
     ],
     'download_video_script' => 'Het videoscript downloaden',

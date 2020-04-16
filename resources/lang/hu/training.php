@@ -122,6 +122,86 @@ return [
                 '3'=>'3. foglalkozás: Bütykölés és programozás Makey Makey-vel',
                 '4'=>'4. foglalkozás: Napi rutin algoritmusa tartalomalapú nyelvórán'
             ]
+        ],
+        '9' => [
+            'title'=>'Robot készítése micro:bittel',
+            'author'=>'Szerző: Pauline Maas',
+            'text'=>'<p>
+                   Egy micro:bit, a könnyen programozható, zsebnyi méretű számítógép használatával szórakoztató módon és könnyen hozhat létre érdekes alkotásokat tanulóival a robotoktól kezdve a zenei eszközökig, egyúttal pedig a programozás módját is megtaníthatja számukra. Ennek használata könnyű és egyszerű akár a legfiatalabb programozók számára is, de ugyanakkor eléggé erős még a legelőrehaladottabb tanulóknak is. A történelemtől a matematikán át akár a tudományig terjedően számos különböző tanóra keretében felhasználhatja. A lehetőségek végtelenek. A micro:bit egy érdekes és olcsó módja annak, hogy megtanítsuk a tanulóknak a kódolást úgy, hogy közben az olyan alapvető készségeket is beléjük csepegtessük, mint például a számítógépes gondolkodás, a problémamegoldás és kreativitás.
+                   </p>
+                   <p>
+Ebben a videóban, Pauline Maas, a Koninklijke Visio informatikatanára mutatja be a micro:bitet és mond néhány gyakorlati példát arra, hogy miként integrálhatják a tanárok ezt az eszközt az osztályterembe oly módon, hogy a passzív tanulókból lelkes alkotók válhassanak.                    
+                </p>',
+            'activities'=>[
+                '1'=>'Morzekód a micro: bittel, általános iskolák számára',
+                '2'=>'Szabadulószoba micro:bittel, középiskolák alsóbb évfolyamai számára',
+                '3'=>'Robot készítése, középiskolák felsőbb évfolyamai számára',
+            ]
+        ],
+        '10' => [
+            'title'=>'Kreatív kódolás Pythonnal',
+            'author'=>'Szerző: Ivana Vezjak',
+            'text'=>'<p>
+A kódolásban a vizuálistól a szöveg-alapú programozáshoz való továbblépés a természetes irány. Bár a vizuális programozás gyakran remek dolog kezdők számára, a diákok egy idő után új kihívásra vágynak. A szöveg-alapú programozás jelenti a következő lépést bárki számára, aki mélyebben el szeretne merülni a programozásban és a számítógépes gondolkodásban. 
+                   </p>
+                   <p>                   
+Ebben a videóban Ivana Vezjak vezeti be Önt a Python szintaxisának alapjaiba. A Python manapság az egyik legnépszerűbb programozási nyelv, amelyet számos területen használnak, ilyenek például az adattudomány, a mesterséges intelligencia (AI), a gépi tanulás, a webfejlesztés stb. Miközben a Python egy hatékony programozási nyelv, amelyet tapasztalt programozók használnak, egyszerűsége és világos szintaxisa miatt olyanok is tudják használni, akiknek semmilyen kódolási tapasztalatuk nincs.                    
+</p>
+<p> 
+A Pythonnal a diákok kvízeket hozhatnak létre történelmi eseményekről, matematikai problémákat oldhatnak meg és fizikai szimulációkat végezhetnek, játékokat készíthetnek, honlapokat építhetnek, adatelemzést végezhetnek tudományos projektekhez, sok minden más mellett. A Pythonnak gazdag és kiterjedt standard könyvtára és nagy közössége van, továbbá nagyszámú oktatóanyag és projekt érhető el online, amelyeket tanítási, tanulási és gyakorlási célokra lehet felhasználni. A Pythonnal kódolva, programokat elemezve és hibákat javítva (bug fixing) a tanulók kreativitást fejleszthetnek ki és megtanulják, hogyan legyenek következetesek, kitartók és türelmesek. A komplex problémák kisebb összetevőkre bontásával megtanulják az analitikus gondolkodási és problémamegoldási készségeket. Ezek a kompetenciák segítik őket abban, hogy miként közelítsék meg a problémákat életük minden egyéb területén.
+                </p>',
+            'activities'=>[
+                '1'=>'Első kvízem, általános iskolák számára',
+                '2'=>'Akasztófa, a középiskola alsóbb évfolyamai számára',
+                '3'=>'Találd ki a zászlót!, a középiskola felsőbb évfolyamai számára',
+            ],
+            'links'=>[
+                'title' => 'Egyéb kapcsolódó erőforrások',
+                '1' => [
+                    "url"=>"https://docs.python.org/3/library/",
+                    "title"=>"Python standard könyvtár",
+                    "description"=>"Előre kidolgozott kódok és modulok gyűjteménye (pl. teknős modul, matematikai modul stb.).",
+                ],
+                '2' => [
+                    "url"=>"https://codecombat.com/",
+                    "title"=>"CodeCombat",
+                    "description"=>"Oktató videójátékok a programozási koncepciók tanulásához.",
+                ],
+                '3' => [
+                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
+                    "title"=>"KódKlub projektek",
+                    "description"=>"Lépésenkénti programozási projektek gyerekek számára kezdőtől haladó szintig.",
+                ],
+                '4' => [
+                    "url"=>"https://inventwithpython.com/invent4thed/",
+                    "title"=>"Találd fel saját számítógépes játékaidat Pythonnal",
+                    "description"=>"Könyv, amely arra tanítja meg, hogy miként programozzon saját számítógépes játékokat Pythonnal.",
+                ],
+                '5' => [
+                    "url"=>"https://www.codewars.com/",
+                    "title"=>"Kódháborúk",
+                    "description"=>"Oktatási közösség, ahol a tanulók és a tanárok kihívások sorozatán keresztül képezhetik egymást.",
+                ],
+                '6' => [
+                    "url"=>"https://hourofpython.com/",
+                    "title"=>"A Python órája",
+                    "description"=>"Interaktív Trinketeket használó Python bevezető (szöveg-alapú és blokkos) leckék gyűjteménye.",
+                ],
+            ]
+        ],
+        '11' => [
+            'title'=>'Programozás a befogadásért',
+            'author'=>'a programozási hét csapatával',
+            'text'=>'<p>
+                   A programozás osztálytermi tevékenységeibe történő beillesztése kihívásokkal teli lehet, főleg akkor, ha osztályához fogyatékossággal élő tanulók is tartoznak. Nem szabad megfeledkezni azonban arról, hogy fogyatékosságtól függetlenül, mindenki megtanulhat programozni. A sajátos igényű gyermekek nagy mértékben hasznosíthatják a programozás tanulási szempontjait, hiszen a kódolás olyan rendkívül fontos életviteli készségeket tanít a gyermekeknek, mint a problémamegoldás, a szervezés és a függetlenség. A programozás ezen túlmenően az együttműködés és a csapatmunka által javíthatja az interperszonális és szociális készségeket, amelyekkel a fogyatékossággal élő gyermekek közül sokan küzdenek. Ami pedig a legfontosabb, hogy a tanulók a közös tanulás közben jól érzik magukat.
+                   </p><p>
+                   Videónkban a programozási hét csapata bemutat Önnek néhány olyan – főként látássérült, illetve autizmus spektrumzavarral élő tanulók igényeihez igazított – praktikus, egyszerű és szórakoztató programozási tevékenységet, amelyeket könnyedén meg lehet valósítani osztálytermen belül is.
+                </p>',
+            'activities'=>[
+                '1'=>'Tojástartó (offline)',
+                '2'=>'Egy irtó okos egér',
+                '3'=>'A csillagkészítő sztár',
+            ]
         ]
     ],
     'download_video_script' => 'Videó forgatókönyvének letöltése',

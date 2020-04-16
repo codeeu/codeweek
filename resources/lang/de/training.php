@@ -122,6 +122,86 @@ return [
                 '3'=>'Aktivität 3 Basteln und Programmieren mit Makey Makey',
                 '4'=>'Aktivität 4 Ein Alltagsalgorithmus für eine CLIL-Stunde'
             ]
+        ],
+        '9' => [
+            'title'=>'Basteln eines Automaten mit einem micro:bit',
+            'author'=>'von Pauline Maas',
+            'text'=>'<p>
+                   Als leicht programmierbarer, taschengroßer Computer bietet der micro:bit eine unterhaltsame und unkomplizierte Möglichkeit, um mit Schülerinnen und Schülern interessante Dinge vom Roboter bis zum Musikinstrument zu entwickeln und ihnen dabei zugleich Grundkenntnisse im Programmieren zu vermitteln. Er ist auch für die jüngsten Nachwuchsprogrammierer einfach und unkompliziert zu benutzen, zugleich aber so leistungsstark, dass er sich auch für fortgeschrittenere Schülerinnen und Schüler eignet. Sie können ihn in den verschiedensten Unterrichtsstunden verwenden – von Geschichte über Mathematik bis zu den wissenschaftlichen Fächern. Ihren Ideen sind keine Grenzen gesetzt. Mit dem micro:bit können Sie Ihren Schülerinnen und Schülern auf interessante und kostengünstige Weise mehr über das Thema Programmieren beibringen und dabei wichtige Fähigkeiten wie rechnerisches Denken, Problemlösung und Kreativität fördern.
+                   </p>
+                   <p>
+                   In diesem Video wird Ihnen Pauline Maas, Informatiklehrerin bei Koninklijke Visio, den micro:bit vorstellen und an einigen Anwendungsbeispielen aus der Praxis zeigen, wie Lehrkräfte den micro:bit in den Unterricht integrieren und damit passive Schülerinnen und Schüler für die aktive Mitarbeit begeistern können.
+                </p>',
+            'activities'=>[
+                '1'=>'Morsecode mit dem micro:bit, für die Grundschule',
+                '2'=>'Escape Room mit dem micro:bit, für die Unterstufe einer weiterführenden Schule',
+                '3'=>'Basteln eines Automaten, für die Oberstufe einer weiterführenden Schule',
+            ]
+        ],
+        '10' => [
+            'title'=>'Kreatives Programmieren mit Python',
+            'author'=>'von Ivana Vezjak',
+            'text'=>'<p>
+Beim Schreiben von Codes geht man früher oder später ganz automatisch vom visuellen zum textbasierten Programmieren über. Visuelles Programmieren kann für Neulinge zwar eine tolle Sache sein, doch nach einer gewissen Zeit könnten sich Ihre Schülerinnen und Schüler vielleicht eine neue Herausforderung wünschen. Das textbasierte Programmieren wäre dann der nächste Schritt für Lernbegierige, die sich noch eingehender mit Programmierung und rechnerischem Denken befassen möchten. 
+                   </p>
+                   <p>                   
+           In diesem Video stellt Ihnen Ivana Vezjak die grundlegende Syntax der Programmiersprache Python vor. Python ist eine der beliebtesten Programmiersprachen in der heutigen Welt und kommt in vielen unterschiedlichen Bereichen wie unter anderem Datenwissenschaft, künstlicher Intelligenz, maschinellem Lernen und Web-Entwicklung zum Einsatz. Obwohl Python eine leistungsfähige Programmiersprache ist, die von erfahrenen Programmiererinnen und Programmierern genutzt wird, eignet es sich dank seines schlichten Aufbaus und der klaren Syntax auch für Unerfahrene ohne Vorkenntnisse.         
+</p>
+<p> 
+Mit Python können Ihre Schülerinnen und Schüler u. a. Ratespiele zu historischen Ereignissen erstellen, mathematische Probleme lösen und Physik-Simulationen erstellen, Spiele entwickeln, Websites erstellen, Datenanalysen für wissenschaftliche Projekte durchführen. Python verfügt über eine große und umfassende Standardbibliothek, eine große Gemeinschaft sowie zahlreiche online verfügbare Tutorials und Projekte, die zum Unterrichten, Lernen und Üben verwendet werden können. Durch das Programmieren in Python, das Analysieren von Programmen und die Behebung von Fehlern entwickeln die Schülerinnen und Schüler ihre Kreativität und lernen, wie man seine Arbeit mit Konstanz, Durchhaltevermögen und Geduld erledigt. Sie lernen analytisches Denken und erwerben Problemlösungsfähigkeiten, da sie komplexe Probleme in kleinere Teile zerlegen müssen. Diese Kompetenzen werden ihnen auch in allen anderen Bereichen ihres Lebens beim Umgang mit Problemen nützlich sein.
+                </p>',
+            'activities'=>[
+                '1'=>'„Mein erstes Quiz“, für die Grundschule',
+                '2'=>'„Galgenmännchen“, für die Unterstufe einer weiterführenden Schule',
+                '3'=>'Flaggenraten, für die Oberstufe einer weiterführenden Schule',
+            ],
+            'links'=>[
+                'title' => 'Weitere relevante Quellen',
+                '1' => [
+                    "url"=>"https://docs.python.org/3/library/",
+                    "title"=>"•	Python-Standardbibliothek",
+                    "description"=>"Eine Sammlung bereits vorprogrammierter Codes und Module (z. B. Turtle-Modul, Mathematik-Modul usw.).",
+                ],
+                '2' => [
+                    "url"=>"https://codecombat.com/",
+                    "title"=>"CodeCombat",
+                    "description"=>"Pädagogisches Videospiel zum Erlernen von Programmierungskonzepten",
+                ],
+                '3' => [
+                    "url"=>"https://projects.raspberrypi.org/de-DE/codeclub",
+                    "title"=>"CodeClub-Projekte",
+                    "description"=>"Programmierprojekte für Kinder mit und ohne Vorkenntnisse.",
+                ],
+                '4' => [
+                    "url"=>"https://inventwithpython.com/invent4thed/",
+                    "title"=>"Mit Python eigene Computerspiele erfinden",
+                    "description"=>"Ein Buch, das Ihnen beibringt, wie man mit Python eigene Computerspiele programmieren kann.",
+                ],
+                '5' => [
+                    "url"=>"https://www.codewars.com/",
+                    "title"=>"CodeWars",
+                    "description"=>"Eine Bildungsgemeinschaft, die Schülerinnen, Schülern und Lehrkräften die Möglichkeit gibt, ihre Programmierfähigkeiten durch verschiedene Aufgaben zu üben.",
+                ],
+                '6' => [
+                    "url"=>"https://hourofpython.com/",
+                    "title"=>"Hour of Python",
+                    "description"=>"Eine Sammlung verschiedener (text- und blockbasierter) Einführungskurse in Python, die interaktive Trinkets verwenden.",
+                ],
+            ]
+        ],
+        '11' => [
+            'title'=>'Programmieren für eine bessere Inklusion',
+            'author'=>'vom Code Week-Team',
+            'text'=>'<p>
+                   Programmiertätigkeiten in den eigenen Unterricht einzubauen, kann anspruchsvoll sein, insbesondere, wenn Sie Schülerinnen und Schüler mit bestimmten Behinderungen in Ihrer Klasse haben. Es ist aber wichtig, sich in Erinnerung zu rufen, dass jeder Mensch programmieren lernen kann, unabhängig von seinen Fähigkeiten. Kinder mit besonderen pädagogischen Bedürfnissen können stark von Lernaspekten des Programmierens profitieren, denn es vermittelt ihnen wichtige Lebenskompetenzen wie Problemlösefähigkeiten, Organisation und Unabhängigkeit. Durch Zusammenarbeit und Teamwork beim Programmieren können zudem zwischenmenschliche und soziale Fähigkeiten verbessert werden, die vielen Kindern mit Behinderungen schwerfallen. Was aber besonders wichtig ist: Sie haben Freude beim gemeinsamen Lernen mit ihren Altersgenossen.
+                   </p><p>
+                   In diesem Video zeigt Ihnen das Code Week-Team einige praktische, einfache und unterhaltsame Programmiertätigkeiten, die speziell für Schülerinnen und Schüler mit Sehbehinderungen, Trisomie 21 und Autismus-Spektrum-Störungen angepasst wurden und die Lehrkräfte ganz einfach in ihren Unterricht einbauen können.
+                </p>',
+            'activities'=>[
+                '1'=>'Analoger Eierkarton',
+                '2'=>'Eine sehr schlaue Maus',
+                '3'=>'Ein Star stellt Sterne her',
+            ]
         ]
     ],
     'download_video_script' => 'Das Video-Script herunterladen',

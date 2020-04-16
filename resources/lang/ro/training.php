@@ -122,6 +122,86 @@ return [
                 '3'=>'Activitatea 3 Bricolajul și programarea cu Makey Makey',
                 '4'=>'Activitatea 4 Un algoritm din viața cotidiană pentru o lecție CLIL'
             ]
+        ],
+        '9' => [
+            'title'=>'Crearea unui automat folosind un micro:bit',
+            'author'=>'de Pauline Maas',
+            'text'=>'<p>
+                   Utilizarea unui micro:bit, computerul de buzunar ușor de programat, poate fi un mod distractiv și simplu de a realiza cu elevii dvs. creații interesante, de la roboți la instrumente muzicale, învățându-i în același timp să scrie cod. Este simplu și ușor de utilizat chiar și pentru cei mai tineri dintre programatori, fiind însă totodată suficient de puternic pentru elevii mai avansați. Îl puteți încorpora într-o varietate de lecții, de la istorie la matematică și chiar științe. Posibilitățile sunt nelimitate. Micro:bit este un mod interesant și necostisitor de a-i învăța pe elevi să scrie cod, dezvoltându-le în același timp abilități esențiale, precum gândirea computațională, rezolvarea problemelor și creativitatea.
+                   </p>
+                   <p>
+În acest clip, Pauline Maas, profesoară de informatică la Koninklijke Visio, prezintă micro: bit și oferă câteva exemple practice de modalități în care profesorii îl pot integra la clasă, transformând elevii pasivi în creatori entuziaști.                   
+                </p>',
+            'activities'=>[
+                '1'=>'Codul Morse cu micro:bit, pentru învățământul primar',
+                '2'=>'Escape room cu micro:bit, pentru învățământul gimnazial',
+                '3'=>'Construirea unui automat, pentru învățământul liceal',
+            ]
+        ],
+        '10' => [
+            'title'=>'Creativitate la scrierea de cod cu Python',
+            'author'=>'de Ivana Vezjak',
+            'text'=>'<p>
+Trecerea de la programarea vizuală la cea sub formă de text reprezintă o continuare naturală în domeniul programării. Deși programarea vizuală este adesea excelentă pentru începători, după un timp este posibil ca elevii să își dorească o provocare nouă. Programarea sub formă de text este pasul următor pentru oricine dorește să își aprofundeze cunoștințele de programare și gândirea computațională. 
+                   </p>
+                   <p>                   
+În acest clip, Ivana Vezjak vă prezintă sintaxa de bază a limbajului Python. Python este unul dintre cele mai apreciate limbaje de programare de azi. Acesta se folosește în numeroase domenii, precum științele datelor, inteligența artificială, învățarea automatizată, crearea paginilor web etc. Deși Python este un limbaj de programare puternic, utilizat de programatori cu experiență, aceasta poate fi folosit chiar și de către cei care nu au experiență de programare, datorită simplității și sintaxei sale clare.                    
+</p>
+<p> 
+Cu Python, elevii pot să creeze jocuri cu întrebări despre evenimente istorice, să rezolve probleme de matematică și să realizeze simulări de fizică, să creeze jocuri, să construiască site-uri web, să efectueze analize de date pentru proiecte științifice și multe altele. Python are o bibliotecă standard bogată și cuprinzătoare, o comunitate numeroasă și un număr mare de tutoriale și proiecte disponibile online, care se pot folosi pentru predare, învățare și exersare. Scriind cod în Python, analizând programe și remediind erori, elevii își dezvoltă creativitatea și învață să fie consecvenți, perseverenți și răbdători. Aceștia deprind abilități de gândire analitică și de rezolvare a problemelor, defalcând problemele complexe în componente mai mici. Aceste competențe îi vor ajuta la abordarea problemelor din orice alt domeniu al vieții lor.
+                </p>',
+            'activities'=>[
+                '1'=>'Primul meu joc cu întrebări, pentru învățământul primar',
+                '2'=>'Spânzurătoarea, pentru învățământul gimnazial',
+                '3'=>'Ghicește steagul!, pentru învățământul liceal',
+            ],
+            'links'=>[
+                'title' => 'Alte resurse conexe',
+                '1' => [
+                    "url"=>"https://docs.python.org/3/library/",
+                    "title"=>"Biblioteca Python standard",
+                    "description"=>"Colecție de cod gata scris și de module (de exemplu, modulul turtle, modulul math etc.).",
+                ],
+                '2' => [
+                    "url"=>"https://codecombat.com/",
+                    "title"=>"CodeCombat",
+                    "description"=>"Un joc video educativ pentru învățarea conceptelor de programare prin joc.",
+                ],
+                '3' => [
+                    "url"=>"https://projects.raspberrypi.org/ro-RO/codeclub",
+                    "title"=>"CodeClub projects",
+                    "description"=>"De la începători la avansați, proiecte de programare pas cu pas pentru copii.",
+                ],
+                '4' => [
+                    "url"=>"https://inventwithpython.com/invent4thed/",
+                    "title"=>"Inventați-vă propriile jocuri pe computer cu Python",
+                    "description"=>"O carte care vă va învăța să vă programați propriile jocuri pe computer folosind Python.",
+                ],
+                '5' => [
+                    "url"=>"https://www.codewars.com/",
+                    "title"=>"CodeWars",
+                    "description"=>"O comunitate educațională în care elevii și profesorii se pot pregăti parcurgând o serie de provocări.",
+                ],
+                '6' => [
+                    "url"=>"https://hourofpython.com/",
+                    "title"=>"Hour of Python",
+                    "description"=>"O colecție de lecții introductive privind Python (atât pe bază de text, cât și blocuri) folosind interfețe Trinket interactive.",
+                ],
+            ]
+        ],
+        '11' => [
+            'title'=>'Programarea pentru incluziune',
+            'author'=>'autor: echipa Săptămâna programării',
+            'text'=>'<p>
+                Poate fi dificil să introduceți programarea în lecții, mai ales dacă aveți în clasă elevi cu anumite dizabilități. E important să rețineți însă că oricine, indiferent de abilitățile sale, poate învăța să programeze. Învățarea aspectelor programării le poate aduce mari beneficii copiilor cu nevoi speciale, deoarece aceasta ajută elevii să își dezvolte competențe importante pentru viață, precum rezolvarea problemelor, organizarea și independența. De asemenea, prin cooperare și muncă de echipă, programarea poate îmbunătăți abilitățile interpersonale și sociale, care reprezintă o dificultate pentru numeroși copii cu dizabilități. Iar cel mai important este că elevii se amuză învățând împreună cu colegii lor.   
+                   </p><p>
+În acest clip, echipa Săptămâna programării vă va arăta activități de programare practice, ușoare și distractive adaptate mai ales pentru elevii cu deficiențe de vedere, cu sindromul Down și cu tulburări din spectrul Autismului, activități pe care cadrele didactice pot să le aplice cu ușurință la clasă.                   
+                </p>',
+            'activities'=>[
+                '1'=>'Cofrajul de ouă',
+                '2'=>'Un șoricel foarte isteț',
+                '3'=>'O stea creează stele',
+            ]
         ]
     ],
     'download_video_script' => 'Descărcați textul videoclipului',

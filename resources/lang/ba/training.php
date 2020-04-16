@@ -122,6 +122,85 @@ return [
                 '3'=>'Aktivnost 3 Praktične vježbe i kodiranje sa Makey Makey-om',
                 '4'=>'Aktivnost 4 Algoritam svakodnevnog života za nastavu korištenjem stranog jezika'
             ]
+        ],
+        '9' => [
+            'title'=>'Kako napraviti automat sa mikro:bitom',
+            'author'=>'Autorica Pauline Maas',
+            'text'=>'<p>
+                   Upotreba Micro: bita, lako programabilnog kompjutera veličine džepa, zna biti zabavan i lak način za pravljenje zanimljivih kreacija, od robota do muzičkih instrumenata sa vašim učenicima, dok ih u isto vrijeme podučavate kako kodirati. On je jednostavan i lak za upotrebu čak i najmlađim programerima, dok je istovremeno dovoljno jak za naprednije učenike. Njega možete inkorporirati u raznolike časove, od historije do matematike, pa čak i naučne predmete. Mogućnosti su beskrajne. Micro:bit je atraktivan i jeftin način da učenici nauče kodirati, uz usađivanje presudnih vještina poput računarskog razmišljanja, rješavanja problema i kreativnosti.
+                   </p>
+                   <p>
+                   U ovom videu, Pauline Maas, nastavnica kompjuterskih nauka iz Koninlijke Visio, predstavit će Micro: bit i dati par praktičnih primjera kako ga nastavnici mogu integrirati u učionici, te pretvoriti pasivne učenike u kreatore entuzijaste.
+                </p>',
+            'activities'=>[
+                '1'=>'Morzeov kod sa mikro: bitom, za osnovnu školu',
+                '2'=>'Soba za bijeg sa mikro: bitom, za niže razrede srednje škole',
+                '3'=>'Pravljenje automata, za više razrede srednje škole',
+            ]
+        ],
+        '10' => [
+            'title'=>'Kreativno kodiranje sa Pythonom',
+            'author'=>'Autorica Ivana Vezjak',
+            'text'=>'<p>
+Pomak od vizualnog prema tekstualnom programiranju prirodan je tok u kodiranju. Dok je vizualno programiranje često odlično za početnike, nakon nekog vremena, učenici mogu poželjeti neki novi izazov. Tekstualno programiranje naredni je korak za svakog ko želi uroniti dalje u programiranje i računarsko razmišljanje. 
+                   </p>
+                   <p>                   
+         U ovom videu, Ivana Vezjak uvodi vas u osnovnu sintaksu Pythona. Python je jedan od najpopularnijih programskih jezika današnjice, koji se koristi u mnogim poljima, poput podatkovnih nauka, vještačke inteligencije, mašinskog učenja, mrežnog razvoja i slično. Iako je Python moćan programski jezik koji koriste iskusni programeri, njega mogu koristiti čak i oni bez ikakvog iskustva u kodiranju, zbog njegove jednostavnosti i jasne sintakse.           
+</p>
+<p> 
+Sa Pythonom, učenici mogu kreirati kvizove o historijskim događanjima, rješavati matematičke probleme i praviti fizičke simulacije, kreirati igre, graditi vebsajtove, obavljati analizu podataka za naučne projekte i još mnogo više. Python ima bogatu i obimnu standardnu biblioteku, veliku zajednicu i veliki broj priručnika i projekata dostupnih online, koji se mogu koristiti za podučavanje, učenje i vježbanje. Kodiranjem u Pythonu, analizom programa i popravljanjem grešaka, učenici razvijaju kreativnost i uče kako biti dosljedni, uporni i strpljivi. Oni uče analitičko razmišljanje i stiču vještine rješavanja problema razlaganjem kompleksnih problema u manje komponente. Te sposobnosti pomoći će im kako da pristupe problemima u svakom drugom domenu života.
+                </p>',
+            'activities'=>[
+                '1'=>'Moj prvi kviz, za osnovnu školu',
+                '2'=>'Igra vješanja, za niže razrede srednje škole',
+                '3'=>'Pogodi zastavu!, za više razrede srednje škole',
+            ],   'links'=>[
+                'title' => 'Drugi povezani resursi',
+                '1' => [
+                    "url"=>"https://docs.python.org/3/library/",
+                    "title"=>"Python Standard Library",
+                    "description"=>"Zbirka unaprijed izgrađenih kodova i modula (npr. modul kornjače, matematički model, itd).",
+                ],
+                '2' => [
+                    "url"=>"https://codecombat.com/",
+                    "title"=>"CodeCombat",
+                    "description"=>"Obrazovna video igra za učenje programskih koncepata.",
+                ],
+                '3' => [
+                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
+                    "title"=>"CodeClub projekti",
+                    "description"=>"Od početnika do naprednih polaznika, projekti programiranja korak po korak za djecu.",
+                ],
+                '4' => [
+                    "url"=>"https://inventwithpython.com/invent4thed/",
+                    "title"=>"Osmislite svoje vlastite kompjuterske igre sa Pythonom",
+                    "description"=>"Knjiga koja će vas naučiti kako da programirate svoje vlastite kompjuterske igre sa Pythonom.",
+                ],
+                '5' => [
+                    "url"=>"https://www.codewars.com/",
+                    "title"=>"CodeWars",
+                    "description"=>"Obrazovna zajednica gdje se učenici i nastavnici mogu sami obučavati kroz niz izazova.",
+                ],
+                '6' => [
+                    "url"=>"https://hourofpython.com/",
+                    "title"=>"Hour of Python",
+                    "description"=>"Zbirka uvodnih lekcija za Python (i tekstualnih i blokovskih) uz pomoć interaktivnih Trinketa.",
+                ],
+            ]
+        ],
+        '11' => [
+            'title'=>'Kodiranje za inkluziju',
+            'author'=>'od tima Sedmice kodiranja',
+            'text'=>'<p>
+                   Uvođenje kodiranja u razred zna predstavljati izazov, posebno ako u razredu imate učenika s određenim invaliditetom. Međutim, važno je zapamtiti da svako, kakve god sposobnosti da ima, može naučiti kako se kodira. Djeca s posebnim potrebama mogu imati velike koristi od obrazovnih aspekata kodiranja, jer ono učenike uči važnim životnim vještinama poput rješavanja problema, organizacije i nezavisnosti. Kodiranjem se isto tako mogu unaprijediti međupersonalne vještine i društvene vještine, kroz suradnju i timski rad, s kojim vještinama se muče mnoga djeca s invaliditetom. Što je najvažnije, učenici se zabavljaju dok uče uz svoje vršnjake.
+                   </p><p>
+U ovom videu, tim Sedmice kodiranja će vam pokazati neke praktične, lake i zabavne aktivnosti kodiranja posebno prilagođene slabovidnim učenicima, onima s Downovim sindromom i učenicima u autističnom spektru, a koje nastavnici mogu lako unijeti u razred.                   
+                </p>',
+            'activities'=>[
+                '1'=>'Karton od jaja "Unplugged"',
+                '2'=>'Vrlo pametan miš ',
+                '3'=>'Zvijezda koja pravi zvijezde ',
+            ]
         ]
     ],
     'download_video_script' => 'Preuzmite video skriptu',

@@ -122,6 +122,86 @@ return [
                 '3'=>'Etkinlik 3 Makey Makey ile deneme-yanılma ve kodlama',
                 '4'=>'Etkinlik 4 Bir CLIL dersi için günlük yaşam algoritması'
             ]
+        ],
+        '9' => [
+            'title'=>'Micro:bit ile modelleme yapımı',
+            'author'=>'Yazan: Pauline Maas',
+            'text'=>'<p>
+                   Kolay programlanabilen, küçük boy bir bilgisayar olan Micro:bit\'in kullanımı, bir yandan öğrencilerinize kodlamayı öğretmenizi sağlarken, bir yandan da onlarla birlikte robottan müzik enstrümanına kadar pek çok ilginç nesne oluşturmanın kolay ve eğlenceli bir yolu olabilir. En küçük programcılar için bile kullanımı kolay ve basit olan Micro:bit, ileri düzey öğrenciler için de son derece tatmin edicidir. Tarihten matematiğe ve hatta fen bilimlerine kadar pek çok derste kullanabilirsiniz. Seçenekleriniz sınırsızdır. Micro:bit, öğrencilerinize kodlamayı öğretirken, bir yandan da onlara sayısal düşünme, problem çözme ve yaratıcılık gibi önemli becerileri aşılamanızın keyifli ve ekonomik bir yoludur.
+                   </p>
+                   <p>
+                Bu videoda, Koninklijke Visio’da Bilgisayar Bilimleri öğretmeni olarak görev yapan Pauline Maas, sizlere Micro:bit’i tanıtacak ve öğretmenlerin bunu derslerde kullanarak pasif öğrencileri nasıl hevesli yaratıcılara dönüştürebileceğine dair birkaç uygulamalı örnek sunacaktır.   
+                </p>',
+            'activities'=>[
+                '1'=>'Micro:bit ile Mors Alfabesi, İlkokul',
+                '2'=>'Micro:bit ile odadan kaçış, Ortaokul',
+                '3'=>'Modelleme yapımı, Lise',
+            ]
+        ],
+        '10' => [
+            'title'=>'Python ile yaratıcı kodlama',
+            'author'=>'Yazan: Ivana Vezjak',
+            'text'=>'<p>
+Görselden metin tabanlı programlamaya geçiş, kodlamanın doğal bir akışıdır. Görsel programlama yeni başlayanlar için genellikle heyecan verici olsa da, bir süre sonra öğrenciler daha zorlu şeyler isteyebilir. Programlama ve sayısal düşünme ile daha detaylı ilgilenmek isteyenler için bir sonraki adım, metin tabanlı programlamadır. 
+                   </p>
+                   <p>                   
+                   Bu videoda, Ivana Vezjak sizlere Python’ın temel söz dizimini anlatacaktır. Günümüzün en popüler programlama dillerinden biri olan Python, veri bilimi, yapay zekâ, makine öğrenimi ve web geliştirme gibi pek çok alanda kullanılmaktadır. Python, deneyimli programcıların kullandığı güçlü bir programlama dili olsa da, basit oluşu ve anlaşılır söz dizimi sayesinde, herhangi bir kodlama deneyimine sahip olmayan biri tarafından da kullanılabilir. 
+</p>
+<p> 
+Python ile öğrenciler, tarihi olaylar hakkında testler hazırlayabilir, matematik problemleri çözüp fizik simülasyonları oluşturabilir, oyunlar hazırlayabilir, web siteleri oluşturabilir, bilimsel projelerin veri analizlerini yapabilir ve çok daha fazlasını gerçekleştirebilirler. Python, zengin ve kapsamlı bir standart kitaplığa, büyük bir topluluğa ve ayrıca öğretim, öğrenim ve uygulamada kullanılabilecek çevrimiçi öğreticilere ve projelere sahiptir. Python’da kodlama yapan, program analiz eden ve program hatalarını düzelten öğrenciler, yaratıcılıklarını geliştirerek istikrarlı, inatçı ve sabırlı olmayı öğrenir. Karmaşık problemleri daha küçük bileşenlere ayırarak, analitik düşünmeyi öğrenirler ve problem çözme becerilerini geliştirirler. Bu beceriler, yaşamlarının her alanında problemleri ele alma konusunda onlara yardımcı olacaktır.
+                </p>',
+            'activities'=>[
+                '1'=>'İlk testim, İlkokul',
+                '2'=>'Adam asmaca, Ortaokul',
+                '3'=>'Bayrak bilmece, Lise',
+            ],
+            'links'=>[
+                'title' => 'Diğer kaynaklar',
+                '1' => [
+                    "url"=>"https://docs.python.org/3/library/",
+                    "title"=>"Python Standart Kitaplık",
+                    "description"=>"Önceden derlenmiş kod ve modüller (ör. turtle modülü, math modülü vb.).",
+                ],
+                '2' => [
+                    "url"=>"https://codecombat.com/",
+                    "title"=>"CodeCombat",
+                    "description"=>"Programlama kavramlarını öğrenmeye yönelik eğitici video oyunu.",
+                ],
+                '3' => [
+                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
+                    "title"=>"CodeClub projeleri",
+                    "description"=>"Yeni başlayanlardan ileri düzey kullanıcılara kadar tüm çocuklara yönelik adım adım programlama projeleri.",
+                ],
+                '4' => [
+                    "url"=>"https://inventwithpython.com/invent4thed/",
+                    "title"=>"Python ile kendi bilgisayar oyununu icat et",
+                    "description"=>"Python ile kendi bilgisayar oyunlarınızı nasıl programlayacağınızı öğreten bir kitap.",
+                ],
+                '5' => [
+                    "url"=>"https://www.codewars.com/",
+                    "title"=>"CodeWars",
+                    "description"=>"Öğrencilerin ve öğretmenlerin bir dizi mücadele ile kendilerini eğitebileceği öğretici bir topluluk.",
+                ],
+                '6' => [
+                    "url"=>"https://hourofpython.com/",
+                    "title"=>"Hour of Python",
+                    "description"=>"İnteraktif Trinkets kullanılan Python tanıtım dersleri (metin tabanlı ve blok).",
+                ],
+            ]
+        ],
+        '11' => [
+            'title'=>'Katılım için Kodlama',
+            'author'=>'Kod Haftası Ekibi',
+            'text'=>'<p>
+                   Kodlama aktivitelerini sınıfınıza taşımak, özellikle sınıfınızda belli engelleri bulunan öğrencileriniz varsa zorlu olabilir. Ancak engeli ne olursa olsun herkesin kodlamayı öğrenebileceğini aklınızdan çıkarmayın. Özel ihtiyaçları bulunan çocuklar, kodlama öğrenmenin büyük ölçüde faydasını görebilir, çünkü kodlama öğrencilere problem çözme, organizasyon ve bağımsızlık gibi önemli hayat becerilerini öğretir. Kodlama ayrıca işbirliği ve ekip çalışması sayesinde, engelli birçok çocuğun zorlandığı bireyler arası ve sosyal becerileri de geliştirebilir. En önemlisi, öğrenciler yaşıtlarıyla birlikte öğrenirken eğlenir.
+                   </p><p>
+Bu videoda, Kod Haftası ekibi size özellikle görme bozukluğu, Down sendromu ve Otizm Spektrumu bulunan öğrencilere uygun hale getirilmiş bazı pratik, kolay ve eğlenceli kodlama aktivitelerini gösterecek.                   
+                </p>',
+            'activities'=>[
+                '1'=>'Bağlantısız Yumurta Kutusu',
+                '2'=>'Çok Akıllı Bir Fare',
+                '3'=>'Yıldız Yapan Yıldız',
+            ]
         ]
     ],
     'download_video_script' => 'Video metnini indirin',

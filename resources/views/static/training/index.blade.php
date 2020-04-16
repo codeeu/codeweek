@@ -71,7 +71,27 @@
                         <img src="/img/learning/coding-for-all-subjects.png">
                         <div class="title">@lang('training.lessons.8.title')</div>
                         <div class="author">@lang('training.lessons.8.author')</div>
-
+                    </a>
+                </div>
+                <div class="codeweek-card-grid">
+                    <a href="/training/making-an-automaton-with-microbit">
+                        <img src="/img/learning/making-an-automaton-with-microbit.png">
+                        <div class="title">@lang('training.lessons.9.title')</div>
+                        <div class="author">@lang('training.lessons.9.author')</div>
+                    </a>
+                </div>
+                <div class="codeweek-card-grid">
+                    <a href="/training/creative-coding-with-python">
+                        <img src="/img/learning/creative-coding-with-python.png">
+                        <div class="title">@lang('training.lessons.10.title')</div>
+                        <div class="author">@lang('training.lessons.10.author')</div>
+                    </a>
+                </div>
+                <div class="codeweek-card-grid">
+                    <a href="/training/coding-for-inclusion">
+                        <img src="/img/learning/coding-for-inclusion.png">
+                        <div class="title">@lang('training.lessons.11.title')</div>
+                        <div class="author">@lang('training.lessons.11.author')</div>
                     </a>
                 </div>
             </section>
