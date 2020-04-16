@@ -124,83 +124,83 @@ return [
             ]
         ],
         '9' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Créer un automate à l’aide d’un micro:bit',
+            'author'=>'par Pauline Maas',
             'text'=>'<p>
-                   
+                   L’utilisation d’un micro:bit, cet ordinateur de poche programmable avec facilité, peut représenter une façon ludique et simple de créer des objets intéressants avec vos élèves, allant des robots aux instruments de musique, tout en leur enseignant la programmation. Il est simple et facile à utiliser, même pour les programmeurs les plus jeunes, mais également suffisamment puissant pour des élèves plus avancés. Vous pouvez l’intégrer à une multitude de cours, de l’histoire aux mathématiques, en passant par la science. Les possibilités sont illimitées. Le micro:bit est un dispositif stimulant et peu coûteux, qui vous permettra d’enseigner le codage à vos élèves, tout en leur inculquant des compétences essentielles, telles que la pensée informatique, la résolution de problèmes et la créativité.
                    </p>
                    <p>
-                   
+Dans cette vidéo, Pauline Maas, enseignante en informatique chez Visio (Pays-Bas), présentera le micro:bit et donnera quelques exemples pratiques sur la manière dont les enseignants peuvent l’intégrer au sein de leur classe, afin de transformer des élèves passifs en créateurs enthousiastes.                   
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Le code Morse avec le micro:bit, pour école primaire',
+                '2'=>'Le jeu d’évasion avec le micro:bit, pour premier cycle du secondaire',
+                '3'=>'Créer un automate, pour deuxième cycle du secondaire',
             ]
         ],
         '10' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'La programmation créative avec Python',
+            'author'=>'par Ivana Vezjak',
             'text'=>'<p>
-
+Passer d’une programmation visuelle à une programmation basée sur le texte résulte d’un cheminement naturel dans le domaine du codage. Bien que la programmation visuelle soit souvent bien adaptée aux débutants, après un certain temps, les élèves peuvent avoir envie de relever de nouveaux défis. La programmation basée sur le texte constitue l’étape suivante pour toute personne souhaitant aller plus loin dans la programmation et dans la pensée informatique. 
                    </p>
                    <p>                   
-                   
+Dans cette vidéo, Ivana Vezjak vous présente la syntaxe de base du langage Python. Python est l’un des langages de programmation les plus populaires aujourd’hui. Il est utilisé dans de nombreux domaines, comme la science des données, l’IA, l’apprentissage automatique, le développement web, etc. Alors que ce puissant langage de programmation est utilisé par des programmeurs expérimentés, il s’avère également adapté à ceux ne disposant d’aucune expérience du codage, en raison de sa simplicité et de la clarté de sa syntaxe.                    
 </p>
 <p> 
-
+Avec Python, les élèves peuvent créer des questionnaires au sujet d’événements historiques, résoudre des problèmes mathématiques et réaliser des simulations de physique, créer des jeux, des sites web, effectuer des analyses de données pour des projets scientifiques, et bien plus encore. Python possède une bibliothèque standard diversifiée et complète, une vaste communauté et un grand nombre de tutoriels et de projets disponibles en ligne, pouvant s’appliquer à l’enseignement, à l’apprentissage et à la pratique. En codant en Python, en analysant des programmes et en corrigeant des bogues, les élèves développent leur créativité et apprennent à être cohérents, persévérants et patients. Ils apprennent à tenir un raisonnement analytique et intègrent des compétences en matière de résolution de problèmes par la décomposition de problèmes complexes en éléments plus petits. Ces compétences leur seront utiles dans leur manière d’aborder les problèmes dans tous les domaines de la vie.
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Mon premier questionnaire, pour école primaire',
+                '2'=>'Le jeu du pendu, pour premier cycle du secondaire',
+                '3'=>'Devinez le pays! pour deuxième cycle du secondaire',
             ],
             'links'=>[
-                'title' => '',
+                'title' => 'Autres ressources associées',
                 '1' => [
                     "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Python Standard Library",
-                    "description"=>"",
+                    "title"=>"Bibliothèque standard de Python",
+                    "description"=>"Collection de code préconstruit et de modules (par exemple, module turtle, module math, etc.).",
                 ],
                 '2' => [
                     "url"=>"https://codecombat.com/",
                     "title"=>"CodeCombat",
-                    "description"=>"",
+                    "description"=>"Jeu vidéo éducatif pour l’apprentissage des concepts de la programmation.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
-                    "title"=>"",
-                    "description"=>"",
+                    "url"=>"https://projects.raspberrypi.org/fr-FR/codeclub",
+                    "title"=>"Projets Code Club",
+                    "description"=>"Projets de programmation pas-à-pas pour les enfants, du niveau débutant à avancé.",
                 ],
                 '4' => [
                     "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Invent your own computer games with Python",
-                    "description"=>"",
+                    "title"=>"Inventez vos propres jeux vidéo avec Python (en anglais)",
+                    "description"=>"Un livre qui vous apprendra à programmer vos propres jeux vidéo avec Python.",
                 ],
                 '5' => [
                     "url"=>"https://www.codewars.com/",
-                    "title"=>"CodeWars",
-                    "description"=>"",
+                    "title"=>"Codewars (en anglais)",
+                    "description"=>"Communauté éducative au sein de laquelle élèves et enseignants peuvent se former à travers une série de défis.",
                 ],
                 '6' => [
                     "url"=>"https://hourofpython.com/",
-                    "title"=>"Hour of Python",
-                    "description"=>"",
+                    "title"=>"Hour of Python (en anglais)",
+                    "description"=>"Collection de cours introductifs à Python (à la fois une programmation basée sur le texte et de blocs) utilisant des Trinkets interactifs.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Le codage pour l’inclusion',
+            'author'=>'par l’équipe de la Semaine du code',
             'text'=>'<p>
-                   
+                   Promouvoir le codage dans votre classe peut être un défi, en particulier si certains de vos élèves présentent un handicap. Mais il est important de se souvenir que chacun, quelles que soient ses capacités, peut apprendre à coder. Apprendre certains aspects du codage peut être très bénéfique pour les enfants qui ont des besoins particuliers, car cela leur apprend des compétences essentielles de la vie quotidienne, comme la résolution de problèmes, l’organisation ou l’indépendance. Le codage contribue également à améliorer les compétences interpersonnelles et sociales par la collaboration et le travail d’équipe; compétences souvent difficiles à acquérir pour beaucoup d’enfants souffrant d’un handicap. Plus important encore, les élèves s’amusent tout en apprenant aux côtés de leurs camarades.
                    </p><p>
-                   
+Dans cette vidéo, l’équipe de la Semaine du code vous présentera quelques activités de codage pratiques, faciles et ludiques, particulièrement adaptées aux élèves malvoyants, atteints de trisomie 21 ou de troubles du spectre autistique, que les enseignants peuvent facilement mettre en place dans leur classe.                   
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Boîte d’œufs (activité non connectée)',
+                '2'=>'Une souris très intelligente ',
+                '3'=>'Fabriquer des étoiles',
             ]
         ]
     ],

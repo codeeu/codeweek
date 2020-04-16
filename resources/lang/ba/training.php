@@ -155,51 +155,51 @@ Sa Pythonom, učenici mogu kreirati kvizove o historijskim događanjima, rješav
                 '2'=>'Igra vješanja, za niže razrede srednje škole',
                 '3'=>'Pogodi zastavu!, za više razrede srednje škole',
             ],   'links'=>[
-                'title' => '',
+                'title' => 'Drugi povezani resursi',
                 '1' => [
                     "url"=>"https://docs.python.org/3/library/",
                     "title"=>"Python Standard Library",
-                    "description"=>"",
+                    "description"=>"Zbirka unaprijed izgrađenih kodova i modula (npr. modul kornjače, matematički model, itd).",
                 ],
                 '2' => [
                     "url"=>"https://codecombat.com/",
                     "title"=>"CodeCombat",
-                    "description"=>"",
+                    "description"=>"Obrazovna video igra za učenje programskih koncepata.",
                 ],
                 '3' => [
                     "url"=>"https://projects.raspberrypi.org/en/codeclub",
-                    "title"=>"",
-                    "description"=>"",
+                    "title"=>"CodeClub projekti",
+                    "description"=>"Od početnika do naprednih polaznika, projekti programiranja korak po korak za djecu.",
                 ],
                 '4' => [
                     "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Invent your own computer games with Python",
-                    "description"=>"",
+                    "title"=>"Osmislite svoje vlastite kompjuterske igre sa Pythonom",
+                    "description"=>"Knjiga koja će vas naučiti kako da programirate svoje vlastite kompjuterske igre sa Pythonom.",
                 ],
                 '5' => [
                     "url"=>"https://www.codewars.com/",
                     "title"=>"CodeWars",
-                    "description"=>"",
+                    "description"=>"Obrazovna zajednica gdje se učenici i nastavnici mogu sami obučavati kroz niz izazova.",
                 ],
                 '6' => [
                     "url"=>"https://hourofpython.com/",
                     "title"=>"Hour of Python",
-                    "description"=>"",
+                    "description"=>"Zbirka uvodnih lekcija za Python (i tekstualnih i blokovskih) uz pomoć interaktivnih Trinketa.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Kodiranje za inkluziju',
+            'author'=>'od tima Sedmice kodiranja',
             'text'=>'<p>
-                   
+                   Uvođenje kodiranja u razred zna predstavljati izazov, posebno ako u razredu imate učenika s određenim invaliditetom. Međutim, važno je zapamtiti da svako, kakve god sposobnosti da ima, može naučiti kako se kodira. Djeca s posebnim potrebama mogu imati velike koristi od obrazovnih aspekata kodiranja, jer ono učenike uči važnim životnim vještinama poput rješavanja problema, organizacije i nezavisnosti. Kodiranjem se isto tako mogu unaprijediti međupersonalne vještine i društvene vještine, kroz suradnju i timski rad, s kojim vještinama se muče mnoga djeca s invaliditetom. Što je najvažnije, učenici se zabavljaju dok uče uz svoje vršnjake.
                    </p><p>
-                   
+U ovom videu, tim Sedmice kodiranja će vam pokazati neke praktične, lake i zabavne aktivnosti kodiranja posebno prilagođene slabovidnim učenicima, onima s Downovim sindromom i učenicima u autističnom spektru, a koje nastavnici mogu lako unijeti u razred.                   
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Karton od jaja "Unplugged"',
+                '2'=>'Vrlo pametan miš ',
+                '3'=>'Zvijezda koja pravi zvijezde ',
             ]
         ]
     ],

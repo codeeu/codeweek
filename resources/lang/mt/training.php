@@ -124,83 +124,83 @@ return [
             ]
         ],
         '9' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Nagħmlu automaton b\'mikro:bit',
+            'author'=>'Minn Pauline Maas',
             'text'=>'<p>
-                   
+                   Meta tuża Mikro:bit, il-kompjuter daqs but li jista’ jiġi pprogrammat faċilment, jista’ jkun mod divertenti u faċli biex tagħmel kreazzjonijiet interessanti, minn robots sa strumenti mużikali mal-istudenti tiegħek, waqt li fl-istess ħin tgħallimhom kif jikkodifikaw. Huwa sempliċi u faċli biex jintuża anke mill-iżgħar programmaturi, filwaqt li fl-istess ħin huwa b’saħħtu biżżejjed għal studenti aktar avvanzati. Tista’ tinkorporah f’varjetà ta’ lezzjonijiet mill-istorja sal-matematika u anke x-xjenza. Il-possibbiltajiet huma bla tmiem. Il-Mikro: bit huwa mod impenjattiv u rħis kif tgħallem lill-istudenti dwar l-ikkodifikar waqt li jnissel il-ħiliet kruċjali bħall-ħsieb komputazzjonali, is-soluzzjoni tal-problemi u l-kreattività.
                    </p>
                    <p>
-                   
+F’dan il-vidjow, Pauline Maas, għalliema tax-Xjenza tal-Kompjuter fi Koninklijke Visio, se tintroduċi l-Mikro:bit u tagħti ftit eżempji prattiċi ta’ kif l-għalliema jistgħu jintegrawh fil-klassi, billi jittrasformaw lill-istudenti passivi f’ideaturi entużjasti.                   
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Morse Code bil-mikro:bit, għall-Iskejjel Primarji',
+                '2'=>'Escape room bil-mikro:bit, għall-Iskejjel Sekondarji tal-ewwel livell',
+                '3'=>'Nagħmlu automaton, għall-Iskejjel Sekondarji Għolja',
             ]
         ],
         '10' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Kodifikazzjoni kreattiva b’Python',
+            'author'=>'minn Ivana Vezjak',
             'text'=>'<p>
-
+Li timxi minn programmar viżiv għal dak ibbażat fuq it-test hija mogħdija naturali fil-kodifikazzjoni. Filwaqt li l-ipprogrammar viżiv ħafna drabi huwa tajjeb għall-prinċipjanti, wara ftit żmien, l-istudenti jistgħu jkunu mxennqa għal sfida ġdida. L-ipprogrammar ibbażat fuq it-test huwa l-pass li jmiss għal kull min irid jidħol aktar fil-fond fil-programmazzjoni u l-ħsieb komputazzjonali. 
                    </p>
                    <p>                   
-                   
+F\'dan il-video, Ivana Vezjak tintroduċik għas-sintassi bażika ta’ Python. Python hija waħda mill-iktar lingwi ta’ programmazzjoni popolari llum, użata f’ħafna oqsma bħax-xjenza tad-data, l-AI, it-tagħlim bil-magni, l-iżvilupp tal-web, eċċ. Filwaqt li Python hija lingwa ta’ programmazzjoni b’saħħitha użata minn programmaturi b’esperjenza, tista’ wkoll tintuża minn dawk li ma għandhom ebda esperjenza ta’ kodifikazzjoni minħabba s-sempliċità u s-sintassi ċara tagħha.                    
 </p>
 <p> 
-
+B’Python, l-istudenti jistgħu joħolqu kwiżż dwar avvenimenti storiċi, isolvu problemi tal-matematika u jagħmlu simulazzjonijiet tal-fiżika, joħolqu logħob, jibnu siti web, iwettqu analiżi tad-data għal proġetti xjentifiċi u ħafna aktar. Python għandha librerija standard rikka u estensiva, komunità kbira u għadd kbir ta’ tutorials u proġetti disponibbli online, li jistgħu jintużaw għat-tagħlim, it-taħriġ u l-prattika.  Jekk jikkodifikaw b’Python, janalizzaw programmi u jsewwu bugs, l-istudenti jiżviluppaw il-kreattività u jitgħallmu kif ikunu konsistenti, persistenti u paċenzjużi. Jitgħallmu ħiliet ta’ ħsieb analitiku u ta’ soluzzjoni ta’ problemi billi jaqsmu problemi kumplessi f’komponenti iżgħar. Dawn il-kompetenzi għandhom jgħinuhom jindirizzaw problemi f’kull qasam ta’ ħajjithom.
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'L-ewwel kwiżż tiegħi, għall-Iskejjel Primarji',
+                '2'=>'Hangman, għall-Iskejjel Sekondarji tal-Ewwel Livell',
+                '3'=>'Aqta’ l-bandiera!, għall-Iskejjel Sekondarji Għolja',
             ],
             'links'=>[
-                'title' => '',
+                'title' => 'Riżorsi oħra relatati',
                 '1' => [
                     "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Python Standard Library",
-                    "description"=>"",
+                    "title"=>"Librerija Standard ta’ Python",
+                    "description"=>"Ġabra ta’ kodiċi u moduli mibnija minn qabel (eż. modulu ta’ fekruna, modulu tal-matematika eċċ.).",
                 ],
                 '2' => [
                     "url"=>"https://codecombat.com/",
                     "title"=>"CodeCombat",
-                    "description"=>"",
+                    "description"=>"Logħba tal-vidjow edukattiva għat-tagħlim ta’ kunċetti ta’ programmazzjoni.",
                 ],
                 '3' => [
                     "url"=>"https://projects.raspberrypi.org/en/codeclub",
-                    "title"=>"",
-                    "description"=>"",
+                    "title"=>"Proġetti ta’ CodeClub",
+                    "description"=>"Proġetti ta’ programmazzjoni pass-pass, minn prinċipjanti sa avvanzati, għat-tfal.",
                 ],
                 '4' => [
                     "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Invent your own computer games with Python",
-                    "description"=>"",
+                    "title"=>"Ivvinta l-logħob tal-kompjuter tiegħek b’Python",
+                    "description"=>"Ktieb li se jgħallmek kif għandek tipprogramma l-logħob tal-kompjuter tiegħek b’Python.",
                 ],
                 '5' => [
                     "url"=>"https://www.codewars.com/",
                     "title"=>"CodeWars",
-                    "description"=>"",
+                    "description"=>"Komunità edukattiva fejn studenti u għalliema jistgħu jħarrġu lilhom infushom permezz ta’ għadd ta’ sfidi.",
                 ],
                 '6' => [
                     "url"=>"https://hourofpython.com/",
-                    "title"=>"Hour of Python",
-                    "description"=>"",
+                    "title"=>"Is-Siegħa ta’ Python",
+                    "description"=>"Ġabra ta’ lezzjonijiet ta’ introduzzjoni għal Python (ibbażati fuq it-test u blokki) permezz ta’ Trinkets interattivi.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Ikkowdjar għal Inklużjoni',
+            'author'=>'mit-tim tal-Ġimgħa tal-Ikkowdjar',
             'text'=>'<p>
-                   
+                   Li ddaħħal l-ikkowdjar fil-klassi tiegħek jista’ jkun diffiċli, speċjalment jekk għandek studenti b’ċerti diżabilitajiet fil-klassi tiegħek. Iżda huwa importanti li żżomm f’moħħok li kulħadd jista’ jitgħallem kif jikkowdja indipendentement mill-kapaċitajiet tiegħu. It-tfal bi bżonnijiet speċjali jistgħu jibbenefikaw bil-kbir mill-aspetti tat-tagħlim tal-ikkowdjar għax dan jgħallem lill-istudenti ħiliet importanti dwar il-ħajja bħal kif isolvu l-problemi, l-organizzazzjoni u l-indipendenza. L-ikkowdjar jista’ jtejjeb ukoll il-ħiliet interpersonali u l-ħiliet soċjali permezz ta’ kollaborazzjoni u ħidma f’tim. Dawn huma ħiliet li ħafna tfal b’diżabilità jsibu diffikultà biex jagħmluhom. B’mod iktar importanti, l-istudenti jieħdu gost waqt li jitgħallmu flimkien ma’ sħabhom.
                    </p><p>
-                   
+F’dan il-vidjow, it-tim tal-Ġimgħa tal-Ikkowdjar se jurik xi attivitajiet prattiċi, faċli u divertenti li huma adattati b’mod speċjali għal studenti li għandhom defiċjenzi tal-vista, bis-sindromu Down u studenti fl-Ispettru tal-Awtiżmu, li l-għalliema jistgħu jdaħħluhom fil-klassi tagħhom faċilment.                   
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Kartuna tal-bajd Manwali (“Egg Carton Unplugged”)',
+                '2'=>'Ġurdien intelliġenti ħafna (“A very smart mouse”) ',
+                '3'=>'Stilla tagħmel l-istilel (“A star making stars”) ',
             ]
         ]
     ],
