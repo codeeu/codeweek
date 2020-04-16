@@ -124,83 +124,83 @@ return [
             ]
         ],
         '9' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Tworzenie automatu za pomocą urządzenia micro:bit',
+            'author'=>'Pauline Maas',
             'text'=>'<p>
-                   
+                   Micro:bit to łatwe do zaprogramowania, kieszonkowe urządzenie obliczeniowe, które pozwoli ci w łatwy i przyjemny sposób tworzyć wspólnie z uczniami przeróżne rozwiązania – od robotów po instrumenty muzyczne – ucząc ich jednocześnie programowania. To proste narzędzie, które nie sprawia kłopotów w obsłudze nawet najmłodszym programistom, a przy tym jest wystarczająco rozbudowane, by zainteresować bardziej doświadczonych uczniów. Można je wykorzystać na wielu różnych lekcjach, na przykład na historii, matematyce, a nawet podczas zajęć z przedmiotów przyrodniczych. Możliwości są nieograniczone. Micro:bit jest niedrogim, rozbudzającym ciekawość rozwiązaniem, które uczy programowania i rozwija inne potrzebne umiejętności, takie jak myślenie obliczeniowe, rozwiązywanie problemów i kreatywne działanie.
                    </p>
                    <p>
-                   
+W proponowanym filmiku Pauline Maas, nauczycielka informatyki w szkole Koninklijke Visio, prezentuje urządzenie micro:bit i daje kilka praktycznych wskazówek, jak wykorzystać je na lekcjach, by zmienić uczniów z biernych użytkowników technologii w jej zaangażowanych twórców.                   
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Kod Morse’a z micro:bit, dla młodszych klas szkoły podstawowej',
+                '2'=>'Pokój zagadek z micro:bit, dla starszych klas szkoły podstawowej',
+                '3'=>'Tworzenie automatu, dla szkół ponadpodstawowych',
             ]
         ],
         '10' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Kreatywne programowanie z Pythonem',
+            'author'=>'Ivana Vezjak',
             'text'=>'<p>
-
+Przejście z programowania wizualnego do tekstowego jest naturalnym krokiem w nauce programowania. Programowanie wizualne często sprawdza się w wypadku osób początkujących, ale po pewnym czasie uczniowi może zabraknąć nowych wyzwań. Programowanie tekstowe to następny etap wtajemniczenia dla każdego, kto chce rozwinąć umiejętność pisania kodu i myślenia obliczeniowego. 
                    </p>
                    <p>                   
-                   
+                   W proponowanym filmiku Ivana Vezjak przybliża podstawową składnię języka Python. Python jest dziś jednym z najpopularniejszych języków programowania, który znajduje zastosowanie w wielu różnych obszarach, takich jak analityka danych, sztuczna inteligencja, uczenie maszynowe, tworzenie stron internetowych itp. Choć Python jest niezwykle funkcjonalnym językiem programowania, którym posługują się doświadczeni programiści, ma na tyle prostą i zrozumiałą składnię, że mogą korzystać z niego również osoby niemające wcześniej styczności z kodowaniem. 
 </p>
 <p> 
-
+Za pomocą Pythona uczniowie mogą między innymi przygotowywać quizy historyczne, rozwiązywać zadania matematyczne i przygotowywać symulację zjawisk fizycznych, tworzyć gry, budować strony internetowe, analizować dane na potrzeby projektów badawczych – a to tylko niektóre z możliwości. Python oferuje bogatą, rozszerzoną biblioteką standardową, skupia się wokół niego duża społeczność użytkowników, a w Internecie dostępnych jest wiele samouczków i projektów, które można wykorzystać do nauczania, poznawania i ćwiczenia tego języka. Pisząc kod w języku Python, analizując programy i naprawiając błędy, uczniowie rozwijają kreatywność i ćwiczą konsekwencję, wytrwałość i cierpliwość. Ponadto uczą się też analitycznego myślenia i rozwiązywania problemów, rozkładając złożone zagadnienia na mniejsze części. Dzięki tym kompetencjom łatwiej im będzie pokonywać przeszkody napotykane w różnych aspektach życia.
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Mój pierwszy quiz, dla młodszych klas szkoły podstawowej',
+                '2'=>'Wisielec, dla starszych klas szkoły podstawowej',
+                '3'=>'Dopasuj flagę, dla szkół ponadpodstawowych',
             ],
             'links'=>[
-                'title' => '',
+                'title' => 'Inne powiązane zasoby',
                 '1' => [
                     "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Python Standard Library",
-                    "description"=>"",
+                    "title"=>"Standardowa biblioteka Pythona",
+                    "description"=>"Kolekcja gotowych fragmentów kodu i modułów (np. moduł turtle, moduł math itd.).",
                 ],
                 '2' => [
                     "url"=>"https://codecombat.com/",
                     "title"=>"CodeCombat",
-                    "description"=>"",
+                    "description"=>"Edukacyjna gra wideo do nauki pojęć związanych z programowaniem.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
-                    "title"=>"",
-                    "description"=>"",
+                    "url"=>"https://projects.raspberrypi.org/pl-PL/codeclub",
+                    "title"=>"Projekty CodeClub",
+                    "description"=>"Projekty dla dzieci do stopniowej nauki programowania – od poziomu podstawowego do zaawansowanego.",
                 ],
                 '4' => [
                     "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Invent your own computer games with Python",
-                    "description"=>"",
+                    "title"=>"Książka „Invent your own computer games with Python”",
+                    "description"=>"Dzięki tej książce dowiesz się, jak napisać własną grę komputerową w Pythonie.",
                 ],
                 '5' => [
                     "url"=>"https://www.codewars.com/",
                     "title"=>"CodeWars",
-                    "description"=>"",
+                    "description"=>"Społeczność edukacyjna, w której uczniowie i nauczyciele mogą ćwiczyć swoje umiejętności, podejmując różne wyzwania.",
                 ],
                 '6' => [
                     "url"=>"https://hourofpython.com/",
                     "title"=>"Hour of Python",
-                    "description"=>"",
+                    "description"=>"Kolekcja lekcji wprowadzających do nauki Pythona (w formie tekstowej i blokowej) przy użyciu interaktywnego edytora Trinket.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Integracja przez kodowanie',
+            'author'=>'według zespołu Tygodnia Kodowania',
             'text'=>'<p>
-                   
+                   Włączenie programowania do zajęć może być wyzwaniem, zwłaszcza jeśli w klasie są uczniowie z różnymi niepełnosprawnościami. Trzeba jednak pamiętać, że programowania może nauczyć się każdy, niezależnie od ograniczeń. Nauka różnych aspektów programowania może przynieść dziecku o specjalnych potrzebach liczne korzyści, ponieważ pomaga mu rozwinąć ważne w życiu kompetencje, takie jak umiejętność rozwiązywania problemów, zorganizowanie i samodzielność. Współdziałanie i praca w grupie podczas kodowania mogą pomóc w doskonaleniu zdolności społecznych i interpersonalnych, z którymi dzieci z niepełnosprawnościami często mają trudności. Najważniejsze jest jednak to, że nauka z rówieśnikami sprawia uczniom po prostu frajdę.
                    </p><p>
-                   
+W proponowanym filmie zespół Tygodnia Kodowania prezentuje kilka praktycznych, łatwych i przyjemnych ćwiczeń z programowania, które dostosowano specjalnie do potrzeb uczniów z wadami wzroku, zespołem Downa lub zaburzeniami ze spektrum autyzmu. Ćwiczenia te nauczyciel bez trudu może włączyć do programu swoich zajęć.                   
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Wytłaczanka offline',
+                '2'=>'Bardzo bystra mysz ',
+                '3'=>'Gwiezdna robota',
             ]
         ]
     ],

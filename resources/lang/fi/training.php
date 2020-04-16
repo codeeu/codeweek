@@ -124,83 +124,83 @@ return [
             ]
         ],
         '9' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Rakenna automaatti micro:bitin avulla',
+            'author'=>'tekijä: Pauline Maas',
             'text'=>'<p>
-                   
+                   Helposti ohjelmoitavan taskukokoisen micro:bit-tietokoneen avulla voit hauskalla ja helpolla tavalla rakentaa oppilaidesi kanssa kiinnostavia laitteita aina roboteista erilaisiin soittimiin ja samalla opettaa heille koodausta. Yksinkertainen ja helppokäyttöinen micro:bit sopii kaikkein nuorimmillekin ohjelmoijille, mutta on samalla riittävän tehokas opinnoissaan pidemmälle ehtineille. Micro:bitin voi yhdistää eri oppiaineisiin historiasta matematiikkaan ja jopa luonnontieteisiin. Mahdollisuudet ovat rajattomat. Micro:bit on kiehtova ja edullinen tapa opettaa oppilaille koodausta ja samalla perehdyttää heitä laskennallisen ajattelun, ongelmanratkaisun ja luovuuden kaltaisiin keskeisiin taitoihin.
                    </p>
                    <p>
-                   
+Tällä videolla Koninklijke Visio -keskuksen tietotekniikan opettaja Pauline Maas esittelee micro:bit-tietokonetta ja antaa muutamia käytännön esimerkkejä siitä, miten opettajat voivat hyödyntää sitä opetuksessa ja muuttaa oppilaiden passiivisuuden luovaksi innostukseksi.                   
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Morseaakkoset micro:bitin avulla: peruskoulun ala-aste',
+                '2'=>'Pakohuone micro:bitin avulla: peruskoulun yläaste',
+                '3'=>'Automaatin rakentaminen: toisen asteen oppilaitokset',
             ]
         ],
         '10' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Luovaa ohjelmointia Pythonilla',
+            'author'=>'Tekijä: Ivana Vezjak',
             'text'=>'<p>
-
+Koodauksessa siirtyminen visuaalisesta ohjelmoinnista tekstipohjaiseen käy usein luonnostaan. Visuaalinen ohjelmointi sopii hienosti vasta-alkajille, mutta jonkin ajan kuluttua oppilaat saattavat janota uusia haasteita. Tekstipohjainen ohjelmointi on seuraava askel niille, jotka haluavat perehtyä ohjelmointiin ja laskennalliseen ajatteluun pintaa syvemmältä. 
                    </p>
                    <p>                   
-                   
+Tällä videolla Ivana Vezjak esittelee Python-ohjelmointikielen perussyntaksin. Python on nykyään yksi suosituimmista ohjelmointikielistä, jota käytetään monilla aloilla tietojenkäsittelytieteestä tekoälyyn, koneoppimiseen ja verkkosisältöjen kehittämiseen. Vaikka kokeneetkin ohjelmoijat käyttävät tehokasta Python-ohjelmointikieltä, se soveltuu yksinkertaisuutensa ja selkeän syntaksinsa ansiosta jopa niille, joilla ei ole mitään kokemusta koodauksesta.                    
 </p>
 <p> 
-
+Pythonin avulla oppilaat voivat suunnitella historiallisiin tapahtumiin liittyviä tietokilpailuja, ratkaista matemaattisia ongelmia ja tehdä fysikaalisia mallinnuksia, luoda pelejä, toteuttaa verkkosivustoja, suorittaa tutkimuksen data-analyysin ja paljon muuta. Pythonilla on monipuolinen ja kattava vakiokirjasto sekä laaja käyttäjäyhteisö, ja lisäksi verkossa on saatavana runsaasti oppaita ja projekteja, joita voidaan hyödyntää opetuksessa, opiskelussa ja harjoittelussa. Koodaamalla Python-ohjelmointikielellä, analysoimalla ohjelmia ja korjaamalla bugeja oppilaat kehittävät luovuuttaan ja oppivat johdonmukaisuutta, pitkäjänteisyyttä ja kärsivällisyyttä. He oppivat analyyttista ajattelua ja ongelmanratkaisutaitoja pilkkomalla monimutkaisia ongelmia pienempiin osiin. Nämä taidot auttavat heitä ratkomaan ongelmia myös kaikilla muilla elämänalueilla.
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Ensimmäinen tietokilpailuni, peruskoulun ala-aste',
+                '2'=>'Hirsipuupeli, peruskoulun yläaste',
+                '3'=>'Arvaa lippu! -peli, toisen asteen oppilaitokset',
             ],
             'links'=>[
-                'title' => '',
+                'title' => 'Muita aiheeseen liittyviä aineistoja',
                 '1' => [
                     "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Python Standard Library",
-                    "description"=>"",
+                    "title"=>"Python-vakiokirjasto",
+                    "description"=>"Kokoelma valmiiksi kirjoitettuja koodeja ja moduuleja (esim. turtle-moduuli, matematiikkamoduuli jne.).",
                 ],
                 '2' => [
                     "url"=>"https://codecombat.com/",
                     "title"=>"CodeCombat",
-                    "description"=>"",
+                    "description"=>"Pedagoginen videopeli ohjelmointikäsitteiden opetteluun.",
                 ],
                 '3' => [
                     "url"=>"https://projects.raspberrypi.org/en/codeclub",
-                    "title"=>"",
-                    "description"=>"",
+                    "title"=>"CodeClub projects",
+                    "description"=>"Vaihe vaiheelta eteneviä ohjelmointiharjoitteita lapsille, aloittelijoista edistyneisiin.",
                 ],
                 '4' => [
                     "url"=>"https://inventwithpython.com/invent4thed/",
                     "title"=>"Invent your own computer games with Python",
-                    "description"=>"",
+                    "description"=>"Verkkokirja, jonka avulla opit ohjelmoimaan omia tietokonepelejä Pythonilla.",
                 ],
                 '5' => [
                     "url"=>"https://www.codewars.com/",
                     "title"=>"CodeWars",
-                    "description"=>"",
+                    "description"=>"Koulutusyhteisö, jossa opiskelijat ja opettajat voivat harjoitusten avulla läpäistä erilaisia haasteita.",
                 ],
                 '6' => [
                     "url"=>"https://hourofpython.com/",
                     "title"=>"Hour of Python",
-                    "description"=>"",
+                    "description"=>"Kokoelma Python-ohjelmointikieleen perehdyttäviä johdantokursseja (sekä tekstipohjaisia että lohkoperusteisia), joissa käytetään interaktiivisia Trinket-ohjelmointiympäristöjä.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Koodaus osallistamisen edistäjänä',
+            'author'=>'EU:n koodausviikon tiimi',
             'text'=>'<p>
-                   
+                   Koodauksen hyödyntäminen opetuksessa voi olla haastavaa, etenkin jos luokassa on erityistä tukea tarvitsevia oppilaita. On kuitenkin tärkeää muistaa, että kuka tahansa voi oppia koodaamaan kyvyistään riippumatta. Koodaukseen liittyvien asioiden oppimisesta voi olla erityislapselle suurta hyötyä, koska hän saa elämässä tärkeitä ongelmanratkaisu- ja organisointitaitoja sekä eväitä itsenäiseen toimintaan. Koodaus voi myös parantaa ihmissuhde- ja vuorovaikutustaitoja yhdessä toimimisen ja ryhmätöiden kautta. Juuri nämä taidot tuottavat monelle erityislapselle vaikeuksia. Mikä tärkeintä, oppiminen yhdessä muiden oppilaiden kanssa on hauskaa.
                    </p><p>
-                   
+Tällä videolla koodausviikon tiimi esittelee muutamia helppoja ja hauskoja käytännön koodaustehtäviä, jotka opettaja voi vaivatta toteuttaa luokassa ja jotka soveltuvat erityisesti sekä näkövammaisille että niille oppilaille, joilla on Downin oireyhtymä tai autismikirjon häiriö.                   
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Munakennopeli',
+                '2'=>'Erittäin älykäs hiiri',
+                '3'=>'Tähdentekijä',
             ]
         ]
     ],

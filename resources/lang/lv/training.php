@@ -124,85 +124,86 @@ return [
             ]
         ],
         '9' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Automāta izveide, izmantojot micro:bit kontrolleri',
+            'author'=>'Pauline Maas',
             'text'=>'<p>
-                   
-                   </p>
-                   <p>
-                   
+                   Micro:bit kontrolleri, kas ir viegli programmējams kabatas formāta dators, var izmantot, lai kopā ar skolēniem aizraujošā un vienkāršā veidā radītu interesantus priekšmetus, sākot ar robotiem un beidzot ar mūzikas instrumentiem, vienlaikus mācot viņiem programmēšanu. Tā lietošana ir vienkārša un viegla pat visjaunākajiem programmētājiem, bet vienlaikus micro:bit ir pietiekami jaudīgs arī skolēniem ar augstāka līmeņa programmēšanas prasmēm. Jūs to varat iekļaut dažādos mācību priekšmetos: vēsturē, matemātikā un pat dabaszinībās. Iespējas ir neierobežotas. Micro:bit ir saistošs un nedārgs veids, kā iepazīstināt skolēnus ar programmēšanu, vienlaikus iemācot tādas būtiskas prasmes kā skaitļošanas tipa domāšana, problēmu risināšana un radošums.
+                   </p><p>
+Šajā video datorzinību skolotāja Pauline Maas no centra “Koninklijke Visio” iepazīstina ar micro:bit un sniedz dažus praktiskus piemērus, kā skolotāji var integrēt to klases nodarbībās, pārvēršot pat pasīvus skolēnus entuziastiskos radītājos.                   
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Morzes kods ar micro:bit, sākumskolai',
+                '2'=>'Izlaušanās istaba ar micro:bit, pamatskolai',
+                '3'=>'Automāta izveide, vidusskolai',
             ]
         ],
         '10' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Radoša programmēšana ar Python',
+            'author'=>'Ivana Vezjak',
             'text'=>'<p>
-
+Pāreja no vizuālās uz tekstuālo programmēšanu ir dabisks process programmēšanā. Kaut arī vizuālā programmēšana bieži ir ideāla iesācējiem, tomēr pēc kāda laika skolēniem var rasties vēlme pēc jauna izaicinājuma. Tekstuālā programmēšana ir nākamais solis ikvienam, kurš vēlas ienirt dziļāk programmēšanā un skaitļošanas tipa domāšanā. 
                    </p>
                    <p>                   
-                   
+Šajā video Ivana Vezjak jūs iepazīstina ar Python pamata sintaksi. Python mūsdienās ir viena no populārākajām programmēšanas valodām, ko izmanto daudzās jomās, piemēram, datu zinātnē, mākslīgā intelekta, mašīnmācīšanās, tīmekļa izstrādes u. c. jomās. Python ir ne vien jaudīga programmēšanas valoda, ko izmanto pieredzējuši programmētāji, bet to var izmantot arī cilvēki bez programmēšanas pieredzes, jo tā ir vienkārša un ar skaidru sintaksi.                    
 </p>
 <p> 
-
+Ar Python skolēni var veidot viktorīnas par vēstures notikumiem, risināt matemātiskas problēmas un veidot fizikas simulācijas, spēles, tīmekļa vietnes, veikt datu analīzi zinātniskiem projektiem un vēl daudz ko citu. Python ir bagātīga un plaša standarta bibliotēka, plaša kopiena, kā arī ļoti daudz internetā pieejamu pamācību un projektu, ko var izmantot, lai mācītu, mācītos un vingrinātos. Programmējot Python valodā, analizējot programmas un novēršot kļūdas, skolēni attīsta radošumu un mācās būt konsekventi, neatlaidīgi un pacietīgi. Viņi apgūst analītiskās domāšanas un problēmu risināšanas prasmes, sadalot komplicētas problēmas sīkākās sastāvdaļās. Šīs kompetences viņiem palīdzēs izvēlēties optimālu pieeju problēmu risināšanā ikvienā citā dzīves jomā.
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Mana pirmā viktorīna, sākumskolai',
+                '2'=>'Karātavu spēle, pamatskolai',
+                '3'=>'Uzmini karogu!, vidusskolai',
             ],
             'links'=>[
-                'title' => '',
+                'title' => 'Citi saistīti resursi',
                 '1' => [
                     "url"=>"https://docs.python.org/3/library/",
                     "title"=>"Python Standard Library",
-                    "description"=>"",
+                    "description"=>"Iepriekš izveidota koda un moduļu kolekcija (piemēram, bruņurupuča modulis, matemātikas modulis u. c.)",
                 ],
                 '2' => [
                     "url"=>"https://codecombat.com/",
                     "title"=>"CodeCombat",
-                    "description"=>"",
+                    "description"=>"Izglītojoša video spēle, kas iepazīstina ar programmēšanas jēdzieniem.",
                 ],
                 '3' => [
                     "url"=>"https://projects.raspberrypi.org/en/codeclub",
-                    "title"=>"",
-                    "description"=>"",
+                    "title"=>"CodeClub projects",
+                    "description"=>"Pakāpeniski programmēšanas projekti bērniem no iesācēju līmeņa līdz augstākajam līmenim.",
                 ],
                 '4' => [
                     "url"=>"https://inventwithpython.com/invent4thed/",
                     "title"=>"Invent your own computer games with Python",
-                    "description"=>"",
+                    "description"=>"Grāmata, kas iemācīs ar Python programmēt pašiem savas datorspēles.",
                 ],
                 '5' => [
                     "url"=>"https://www.codewars.com/",
                     "title"=>"CodeWars",
-                    "description"=>"",
+                    "description"=>"Izglītības kopiena, kurā skolēni un skolotāji var vingrināties, risinot dažādus uzdevumus.",
                 ],
                 '6' => [
                     "url"=>"https://hourofpython.com/",
                     "title"=>"Hour of Python",
-                    "description"=>"",
+                    "description"=>"Python ievadlekciju kolekcija (gan tekstuāli, gan bloku veidā), izmantojot interaktīvus “Trinkets”.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Programmēšana iekļaušanas veicināšanai',
+            'author'=>'Izstrādājusi Programmēšanas nedēļas komanda',
             'text'=>'<p>
-                   
-                   </p><p>
-                   
+                   Klases iepazīstināšana ar programmēšanu var būt īsts izaicinājums, jo īpaši, ja jūsu klasē ir skolēni ar invaliditāti. Taču ir svarīgi atcerēties, ka ikviens var iemācīties programmēt neatkarīgi no savām spējām. Programmēšanas aspektu apgūšana bērniem ar īpašām vajadzībām var būt liels ieguvums, jo programmēšana skolēniem iemāca tādas dzīvē noderīgas prasmes kā problēmu risināšana, darba organizēšana un neatkarība. Sadarbošanās un darbs grupā programmēšanas laikā var arī palīdzēt uzlabot saskarsmes spējas un sociālās prasmes, kuras daudziem bērniem ar invaliditāti sagādā grūtības. Vissvarīgākais ir tas, ka skolēni jautrā veidā apgūst ko jaunu kopā ar vienaudžiem.
+                   </p>
+                   <p>
+                   Šajā video Programmēšanas nedēļas komanda jūs iepazīstinās ar dažām praktiskām, vienkāršām un jautrām programmēšanas nodarbībām, kas pielāgotas skolēniem ar redzes traucējumiem, Dauna sindromu un autiskā spektra traucējumiem un ko skolotāji var viegli īstenot klasē.
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Olu brete. Nodarbība bez datora',
+                '2'=>'Gudrā pele',
+                '3'=>'Zvaigžņu radītājs',
             ]
         ]
+
     ],
     'download_video_script' => 'Lejupielādēt video skriptu',
     'ready_to_share' => 'Vai esat gatavs dalīties ar iegūtajām zināšanām ar saviem skolēniem?',
