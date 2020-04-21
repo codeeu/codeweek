@@ -15,15 +15,19 @@
                     <li><a href="{{route('hackathons')}}">Hackathons</a></li>
                 </ul>
             </li>
-            <li><a href="{{route('ambassadors')}}">@lang('menu.ambassadors')</a></li>
+
             <li>
                 <a href="javascript:void(null);">@lang('menu.resources')</a>
                 <ul>
                     <li><a href="{{route('resources_learn')}}">@lang('menu.learn')</a></li>
                     <li><a href="{{route('resources_teach')}}">@lang('menu.teach')</a></li>
                     <li><a href="{{route('toolkits')}}">@lang('menu.toolkits')</a></li>
+                    <li><a href="{{route('coding@home')}}">@lang('menu.coding@home')</a></li>
                 </ul>
             </li>
+
+            <li><a href="{{route('ambassadors')}}">@lang('menu.ambassadors')</a></li>
+
             <li>
                 <a href="javascript:void(null);">@lang('menu.schools')</a>
                 <ul class="dropdown-menu">
