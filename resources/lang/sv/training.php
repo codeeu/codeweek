@@ -124,83 +124,83 @@ return [
             ]
         ],
         '9' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Tillverka en självgående maskin med micro:bit',
+            'author'=>'av Pauline Maas',
             'text'=>'<p>
-                   
+                   Att använda en micro:bit, den lätt-programmerade datorn i fickformat, kan vara ett roligt och enkelt sätt att skapa intressanta alster, från robotar till musikinstrument med dina elever, samtidigt som du lär dem att koda. Den är enkel och lätt att använda även för de yngsta programmerarna, men också tillräckligt kraftfull för mer avancerade elever. Du kan integrera den i en mängd olika lektioner från historia till matematik och till och med naturvetenskap. Möjligheterna är oändliga. Micro:bit är ett engagerande och billigt sätt att lära eleverna om kodning samtidigt som de utvecklar viktiga färdigheter som datalogiskt tänkande, problemlösning och kreativitet.
                    </p>
                    <p>
-                   
+                   I den här videon kommer Pauline Maas, datavetenskapslärare vid Koninklijke Visio, att introducera micro:bit och ge några praktiska exempel på hur lärare kan integrera den i klassrummet och omvandla passiva elever till entusiastiska skapare.
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Morsealfabetet med micro:bit, för grundskolan ',
+                '2'=>'Escape room med micro:bit, för högstadiet',
+                '3'=>'Tillverka en självgående maskin, för gymnasiet',
             ]
         ],
         '10' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Kreativ kodning med Python',
+            'author'=>'av Ivana Vezjak',
             'text'=>'<p>
-
+Att gå från visuell till textbaserad programmering är ett naturligt flöde i kodning. Medan visuell programmering ofta är bra för nybörjare, kan eleverna efter ett tag vilja ha en ny utmaning. Textbaserad programmering är nästa steg för alla som vill dyka längre in i programmering och datalogiskt tänkande. 
                    </p>
                    <p>                   
-                   
+I den här videon ger Ivana Vezjak en introduktion i Pythons grundläggande syntax. Python är ett av de mest populära programmeringsspråken idag, som används inom många områden som datavetenskap, AI, maskininlärning, webbutveckling, etc. Även om Python är ett kraftfullt programmeringsspråk som används av erfarna programmerare, kan det även användas om man inte har erfarenhet av kodning tack vare dess enkelhet och tydliga syntax.                    
 </p>
 <p> 
-
+Med Python kan eleverna skapa frågesporter om historiska händelser, lösa matematiska problem och göra fysiksimuleringar, skapa spel, bygga webbplatser, genomföra dataanalys för vetenskapliga projekt och mycket mer. Python har ett rikt och omfattande standardbibliotek, ett stort användarforum och ett stort antal utbildningsprogram och projekt tillgängliga online, som kan användas för undervisning, lärande och övning. Genom att koda i Python, analysera program och fixa buggar, utvecklar elever kreativitet och lär sig att vara konsekventa, envetna och tålmodiga. De lär sig analytiskt tänkande och problemlösning genom att dela upp komplexa problem i mindre komponenter. Dessa kompetenser hjälper dem i hur de närmar sig problem inom alla andra områden i livet.
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Min första frågesport, för grundskolan',
+                '2'=>'Hänga gubbe, för högstadiet',
+                '3'=>'Gissa flaggan!, för gymnasiet',
             ],
             'links'=>[
-                'title' => '',
+                'title' => 'Andra relaterade resurser',
                 '1' => [
                     "url"=>"https://docs.python.org/3/library/",
                     "title"=>"Python Standard Library",
-                    "description"=>"",
+                    "description"=>"Samling av förbyggd kod och moduler (t.ex. turtle-modul, matematikmodul etc.).",
                 ],
                 '2' => [
                     "url"=>"https://codecombat.com/",
                     "title"=>"CodeCombat",
-                    "description"=>"",
+                    "description"=>"Pedagogiskt videospel för att lära sig programmeringskoncept.",
                 ],
                 '3' => [
                     "url"=>"https://projects.raspberrypi.org/en/codeclub",
-                    "title"=>"",
-                    "description"=>"",
+                    "title"=>"CodeClub projects",
+                    "description"=>"Från nybörjare till avancerade, steg-för-steg-programmeringsprojekt för barn.",
                 ],
                 '4' => [
                     "url"=>"https://inventwithpython.com/invent4thed/",
                     "title"=>"Invent your own computer games with Python",
-                    "description"=>"",
+                    "description"=>"Bok som lär dig hur du programmerar dina egna datorspel med Python.",
                 ],
                 '5' => [
                     "url"=>"https://www.codewars.com/",
                     "title"=>"CodeWars",
-                    "description"=>"",
+                    "description"=>"Utbildningsmiljö där elever och lärare kan träna sig genom en serie utmaningar.",
                 ],
                 '6' => [
                     "url"=>"https://hourofpython.com/",
                     "title"=>"Hour of Python",
-                    "description"=>"",
+                    "description"=>"Samling av inledande Python-lektioner (både textbaserade och i block) med interaktiva Trinkets.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'',
-            'author'=>'',
+            'title'=>'Kodning för inkludering',
+            'author'=>'av Code Week-teamet',
             'text'=>'<p>
-                   
+                   Att införa kodning i klassrummet kan bli en utmaning, särskilt om du har elever med någon slags funktionsnedsättning i klassen. Men det är viktigt att komma ihåg att vem som helst, oavsett förmågor, kan lära sig koda. Barn med särskilda behov kan ha stor nytta av att kunna olika aspekter av kodning, eftersom det lär elever viktiga förmågor i livet, som problemlösning, organisation och självständighet. Kodning kan också förbättra den interpersonella och sociala kompetensen genom samarbete och teamwork – förmågor som många barn med funktionsnedsättning har svårt med. Framför allt får eleverna ha kul när de lär sig tillsammans med kompisarna.
                    </p><p>
-                   
+I den här videon kommer Code Week-teamet att visa dig några praktiska, enkla och roliga kodningsaktiviteter som är särskilt anpassade för elever med synnedsättning, med Downs syndrom och i autismspektrumet, och som lärare enkelt kan ha med i klassrummet.                   
                 </p>',
             'activities'=>[
-                '1'=>'',
-                '2'=>'',
-                '3'=>'',
+                '1'=>'Äggkartongen Unplugged',
+                '2'=>'En mycket smart mus',
+                '3'=>'Stjärna på att göra stjärnor',
             ]
         ]
     ],
