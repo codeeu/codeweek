@@ -38,5 +38,6 @@ return [
     'signin' => 'Sign in',
     'privacy' => 'Privacy',
     'stats' => 'Statistics',
-    'participation'=> 'Participation Certificate'
+    'participation'=> 'Participation Certificate',
+    'coding@home'=> 'Coding@Home',
 ];

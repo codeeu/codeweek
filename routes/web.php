@@ -63,6 +63,8 @@ Route::get('/training/making-an-automaton-with-microbit', 'StaticPageController@
 Route::get('/training/creative-coding-with-python', 'StaticPageController@static')->name('training.module-10');
 Route::get('/training/coding-for-inclusion', 'StaticPageController@static')->name('training.module-11');
 
+Route::get('Coding@home', 'CodingAtHomeController@show')->name('coding@home');
+
 
 Route::get('/events', 'SearchController@search')->name('events_map');
 Route::get('/add', 'EventController@create')->name('create_event');
