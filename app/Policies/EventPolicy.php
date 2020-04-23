@@ -86,10 +86,7 @@ class EventPolicy
         Log::info("Is ambassador ? {$user->hasRole('ambassador')}");
 
 
-        if ($user->email === $event->owner->email) {
-            Log::info("Email is matching");
-            return true;
-        }
+
 
         if ($user->hasRole('super admin')) {
             return true;
@@ -98,6 +95,13 @@ class EventPolicy
         if ($user->hasRole('ambassador')) {
             if ($event->country_iso === $user->country_iso) return true;
             Log::info("Country is not matching");
+        }
+
+        if (!is_null($event->reported_at)) return false;
+
+        if ($user->email === $event->owner->email) {
+            Log::info("Email is matching");
+            return true;
         }
 
 
