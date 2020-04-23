@@ -32,10 +32,10 @@
         <section class="codeweek-banner show-event">
             <div class="text">
                 <div class="edit-button">
-                    @if(Auth::check() && $event->creator_id === auth()->user()->id && is_null($event->reported_at))
+                    @can('edit', $event)
                         <a class="codeweek-action-link-button"
                            href="{{route('edit_event',$event->id)}}" >@lang('eventdetails.edit')</a>
-                    @endif
+                    @endcan
                 </div>
                 <div class="title">
                     <h1>{{ $event->title }}</h1>
