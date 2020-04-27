@@ -55,7 +55,7 @@
                 <div class="codeweek-card-grid">
                     <a target="_blank" href="https://www.youtube.com/watch?v=ENIDrNsnGV0">
                         <img src="/img/codingathome/0.jpg">
-                        <div class="author">Coding@home - Introduction</div>
+                        <div class="title" style="text-align:center">Coding@home - Introduction</div>
                     </a>
                 </div>
 
@@ -63,14 +63,14 @@
                 <div class="codeweek-card-grid">
                     <a target="_blank" href="">
                         <img src="/img/codingathome/1.jpg">
-                        <div class="author">Coding@home - The explorer</div>
+                        <div class="title" style="text-align:center">Coding@home - The explorer</div>
                     </a>
                 </div>
 
                 <div class="codeweek-card-grid">
                     <a target="_blank" href="">
                         <img src="/img/codingathome/2.jpg">
-                        <div class="author">Coding@home - Left and Right</div>
+                        <div class="title" style="text-align:center">Coding@home - Left and Right</div>
                     </a>
                 </div>
             </section>
