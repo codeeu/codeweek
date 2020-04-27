@@ -70,7 +70,7 @@
                 <div class="codeweek-card-grid">
                     <a target="_blank" href="">
                         <img src="/img/codingathome/2.jpg">
-                        <div class="title" style="text-align:center">Coding@home - Left and Right</div>
+                        <div class="title" style="text-align:center">Coding@home - Left and right</div>
                     </a>
                 </div>
             </section>
