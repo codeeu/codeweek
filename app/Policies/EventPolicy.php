@@ -6,7 +6,7 @@ use App\Event;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Auth\Access\HandlesAuthorization;
-use Log;
+use Illuminate\Support\Facades\Log;
 
 class EventPolicy
 {
