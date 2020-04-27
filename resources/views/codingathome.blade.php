@@ -53,35 +53,15 @@
 
             <section class="codeweek-content-grid">
                 <div class="codeweek-card-grid">
-                    <a href="/training/coding-without-computers">
-                        <img src="/img/learning/coding-without-computers.png">
-                        <div class="title">@lang('training.lessons.1.title')</div>
-                        <div class="author">@lang('training.lessons.1.author')</div>
-                    </a>
-                </div>
-                <div class="codeweek-card-grid">
-                    <a href="/training/coding-without-computers">
-                        <img src="/img/learning/coding-without-computers.png">
-                        <div class="title">@lang('training.lessons.1.title')</div>
-                        <div class="author">@lang('training.lessons.1.author')</div>
-                    </a>
-                </div>
-                <div class="codeweek-card-grid">
-                    <a href="/training/coding-without-computers">
-                        <img src="/img/learning/coding-without-computers.png">
-                        <div class="title">@lang('training.lessons.1.title')</div>
-                        <div class="author">@lang('training.lessons.1.author')</div>
-                    </a>
-                </div>
-                <div class="codeweek-card-grid">
-                    <a href="/training/coding-without-computers">
-                        <img src="/img/learning/coding-without-computers.png">
-                        <div class="title">@lang('training.lessons.1.title')</div>
-                        <div class="author">@lang('training.lessons.1.author')</div>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=ENIDrNsnGV0">
+                        <img src="/img/codingathome/0.jpg">
+                        <div class="author">Coding@home - Introduction</div>
+{{--                        <div class="author">CodeMOOC</div>--}}
                     </a>
                 </div>
             </section>
 
+            <br/>
 
         </section>
 
