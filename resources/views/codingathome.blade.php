@@ -51,20 +51,33 @@
 
             </section>
 
-            <section class="codeweek-content-grid">
+            <section class="codeweek-content-grid" style="grid-template-columns: 1fr 1fr 1fr;">
                 <div class="codeweek-card-grid">
                     <a target="_blank" href="https://www.youtube.com/watch?v=ENIDrNsnGV0">
                         <img src="/img/codingathome/0.jpg">
                         <div class="author">Coding@home - Introduction</div>
-{{--                        <div class="author">CodeMOOC</div>--}}
+                    </a>
+                </div>
+
+
+                <div class="codeweek-card-grid">
+                    <a target="_blank" href="">
+                        <img src="/img/codingathome/1.jpg">
+                        <div class="author">Coding@home - The explorer</div>
+                    </a>
+                </div>
+
+                <div class="codeweek-card-grid">
+                    <a target="_blank" href="">
+                        <img src="/img/codingathome/2.jpg">
+                        <div class="author">Coding@home - Left and Right</div>
                     </a>
                 </div>
             </section>
 
             <br/>
 
-        </section>
 
-    </section>
+        </section>
 
 @endsection
