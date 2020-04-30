@@ -63,9 +63,10 @@ Route::get('/training/making-an-automaton-with-microbit', 'StaticPageController@
 Route::get('/training/creative-coding-with-python', 'StaticPageController@static')->name('training.module-10');
 Route::get('/training/coding-for-inclusion', 'StaticPageController@static')->name('training.module-11');
 
-Route::get('/Coding@home', 'CodingAtHomeController@show');
-Route::get('/CodingAtHome', 'CodingAtHomeController@show')->name('coding@home');
 Route::get('/resources/CodingAtHome', 'CodingAtHomeController@show');
+Route::view('/resources/CodingAtHome/introduction', 'codingathome.introduction')->name('codingathome-introduction');
+Route::view('/resources/CodingAtHome/the-explorer', 'codingathome.the-explorer')->name('codingathome-the-explorer');
+Route::view('/resources/CodingAtHome/right-and-left', 'codingathome.right-and-left')->name('codingathome-right-and-left');
 
 
 Route::get('/events', 'SearchController@search')->name('events_map');
