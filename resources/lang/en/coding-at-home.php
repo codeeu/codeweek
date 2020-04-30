@@ -28,7 +28,7 @@ return [
     ],
 
     'right-and-left' => [
-        'title' => '2. Right and Left',
+        'title' => '2. Right and left',
         'text' => 'Right and left is a competitive and collaborative game. The two teams collaborate to create a path towards the target, while they compete to use as many as possible of the tiles assigned to them: the yellow team tries to insert as many turns to the left as possible and the red team tries to insert as many turns to the right as possible.',
         'material' => 'Required material: chequered board, tiles with footprint pictures.',
         'questions' => [
