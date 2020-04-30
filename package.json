@@ -17,7 +17,7 @@
     "cross-spawn": "^6.0.5",
     "false": "^0.0.4",
     "in-viewport": "^3.6.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "laravel-mix": "^4.1.2",
     "laravel-mix-tailwind": "^0.1.0",
     "lodash": "^4.17.15",
