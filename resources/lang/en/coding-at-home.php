@@ -14,7 +14,7 @@ return [
     'explorer' => [
         'title' => '1. The explorer',
         'text' => 'The explorer is the first Coding@Home activity. Move the explorer around the board to reach the target after visiting as many squares as possible.',
-        'material' => 'Required material: chequered board, tiles with footprint pictures.',
+        'material' => 'Required material: <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/board-and-roby-en.pdf">chequered board</a>, tiles with footprint pictures.',
         'questions' => [
             'title' => 'Questions',
             'content' =>
