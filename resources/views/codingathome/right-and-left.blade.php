@@ -10,10 +10,13 @@
 
             <section class="codeweek-content-wrapper-inside">
 
-                <h1>@lang('coding-at-home.right-and-left.title')</h1>
+                <h1>2. @lang('coding-at-home.right-and-left.title')</h1>
 
                 <div style="margin-top:10px;margin-bottom:10px">
-                    @lang('coding-at-home.right-and-left.text')
+                    @lang('coding-at-home.right-and-left.text')<br/><br/>
+
+                    @lang('coding-at-home.material.required'): <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/board-and-roby-en.pdf">@lang('coding-at-home.material.chequered')</a>, <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/CodyFeet-sheet.pdf">@lang('coding-at-home.material.footprint')</a>
+                    <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/coding%40home/explorer-materials.zip"><img src="/img/download.png" width="20px" style="margin-left:8px;position:absolute"></a>
                 </div>
 
 
@@ -23,14 +26,14 @@
 
             <section class="codeweek-content-wrapper-inside">
 
-                <h2>@lang('coding-at-home.right-and-left.questions.title')</h2>
+                <h2>@lang('coding-at-home.questions')</h2>
 
 
                 <p>
-                    Q1. @lang('coding-at-home.right-and-left.questions.content.1')<br/><br/>
-                    Q2. @lang('coding-at-home.right-and-left.questions.content.2')<br/><br/>
-                    Q3. @lang('coding-at-home.right-and-left.questions.content.3')<br/><br/>
-                    Q4. @lang('coding-at-home.right-and-left.questions.content.4')
+                    @lang('coding-at-home.right-and-left.questions.content.1')<br/><br/>
+                    @lang('coding-at-home.right-and-left.questions.content.2')<br/><br/>
+                    @lang('coding-at-home.right-and-left.questions.content.3')<br/><br/>
+                    @lang('coding-at-home.right-and-left.questions.content.4')
                 </p>
 
 
