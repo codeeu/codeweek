@@ -10,7 +10,7 @@
 
             <section class="codeweek-content-wrapper-inside">
 
-                <h1>@lang('coding-at-home.right-and-left.title')</h1>
+                <h1>2. @lang('coding-at-home.right-and-left.title')</h1>
 
                 <div style="margin-top:10px;margin-bottom:10px">
                     @lang('coding-at-home.right-and-left.text')
@@ -23,14 +23,14 @@
 
             <section class="codeweek-content-wrapper-inside">
 
-                <h2>@lang('coding-at-home.right-and-left.questions.title')</h2>
+                <h2>@lang('coding-at-home.questions')</h2>
 
 
                 <p>
-                    Q1. @lang('coding-at-home.right-and-left.questions.content.1')<br/><br/>
-                    Q2. @lang('coding-at-home.right-and-left.questions.content.2')<br/><br/>
-                    Q3. @lang('coding-at-home.right-and-left.questions.content.3')<br/><br/>
-                    Q4. @lang('coding-at-home.right-and-left.questions.content.4')
+                    @lang('coding-at-home.right-and-left.questions.content.1')<br/><br/>
+                    @lang('coding-at-home.right-and-left.questions.content.2')<br/><br/>
+                    @lang('coding-at-home.right-and-left.questions.content.3')<br/><br/>
+                    @lang('coding-at-home.right-and-left.questions.content.4')
                 </p>
 
 
