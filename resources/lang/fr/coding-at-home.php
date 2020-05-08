@@ -7,10 +7,14 @@ return [
     'intro' => [
         'title' => 'Présentation de Coding@Home',
     ],
+    'material' => [
+        "required" => "Matériel nécessaire",
+        "chequered" => "tableau à damiers",
+        "footprint" => "tuiles avec des images d’empreintes"
+    ],
     'explorer' => [
         'title' => 'L’explorateur',
         'text' => 'L’explorateur désigne la première activité de Coding@Home. Déplacez l’explorateur sur le tableau pour atteindre la cible après avoir visité autant de cases que possible. ',
-        'material' => 'Matériel nécessaire : tableau à damiers, tuiles avec des images d’empreintes.',
         'questions' => [
             'content' =>
                 [
@@ -25,7 +29,6 @@ return [
     'right-and-left' => [
         'title' => 'Droite et gauche',
         'text' => 'Right and Left est un jeu de compétition et de collaboration. Les deux équipes collaborent pour créer un chemin vers la cible, tandis qu’elles s’affrontent pour utiliser le plus grand nombre possible de tuiles qui leur sont attribuées : l’équipe jaune tente d’insérer le plus grand nombre possible de tours à gauche et l’équipe rouge tente d’insérer le plus grand nombre possible de tours à droite.',
-        'material' => 'Matériel nécessaire : tableau à damiers, tuiles avec des images d’empreintes.',
         'questions' => [
             'content' =>
                 [

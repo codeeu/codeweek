@@ -4,13 +4,17 @@ return [
 
     'title' => 'Coding@Home',
     'questions' => 'Fragen',
+    'material' => [
+        "required" => "Benötigtes Material",
+        "chequered" => "schachbrettartiges Spielfeld",
+        "footprint" => "Kärtchen mit Bildern von Fußabdrücken"
+    ],
     'intro' => [
         'title' => 'Was ist Coding@Home?',
     ],
     'explorer' => [
         'title' => 'Der Entdecker',
         'text' => 'Der Entdecker ist die erste Coding@Home-Aktivität. Bewegen Sie den Entdecker über das Brett. Bis er das Ziel erreicht, soll der Entdecker so viele Felder wie möglich besucht haben.',
-        'material' => 'Benötigtes Material: schachbrettartiges Spielfeld, Kärtchen mit Bildern von Fußabdrücken.',
         'questions' => [
             'content' =>
                 [
@@ -25,7 +29,6 @@ return [
     'right-and-left' => [
         'title' => 'Rechts und links',
         'text' => 'Bei „Rechts und links“ treten die Teilnehmer gegenseitig an, müssen dafür aber zusammenarbeiten. Die Spieler teilen sich in zwei Teams auf, die jeweils einen Pfad in Richtung Ziel entwickeln. Dabei geht es darum, möglichst viele der ihnen zugewiesenen Felder zu nutzen: Das gelbe Team versucht, so oft wie möglich nach links abzubiegen, und das rote Team versucht, so oft wie möglich nach rechts abzubiegen.',
-        'material' => 'Benötigtes Material: schachbrettartiges Spielfeld, Kärtchen mit Bildern von Fußabdrücken.',
         'questions' => [
             'content' =>
                 [

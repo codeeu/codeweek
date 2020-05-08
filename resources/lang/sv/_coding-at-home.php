@@ -4,13 +4,17 @@ return [
 
     'title' => 'Coding@Home',
     'questions' => '',
+    'material' => [
+        "required" => "",
+        "chequered" => "",
+        "footprint" => ""
+    ],
     'intro' => [
         'title' => '',
     ],
     'explorer' => [
         'title' => '',
         'text' => '',
-        'material' => '',
         'questions' => [
             'content' =>
                 [
@@ -25,7 +29,6 @@ return [
     'right-and-left' => [
         'title' => '',
         'text' => '',
-        'material' => '',
         'questions' => [
             'content' =>
                 [

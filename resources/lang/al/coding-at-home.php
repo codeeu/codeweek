@@ -4,13 +4,17 @@ return [
 
     'title' => 'Coding@Home',
     'questions' => 'Pyetje',
+    'material' => [
+        "required" => "Materialet e nevojshme",
+        "chequered" => "tabela me katrorë",
+        "footprint" => "pllakëza me imazhe të gjurmëve"
+    ],
     'intro' => [
         'title' => 'Hyrje në Coding@Home',
     ],
     'explorer' => [
         'title' => 'Eksploruesi',
         'text' => 'Eksploruesi është aktiviteti i parë i Coding@Home. Zhvendoseni eksploruesin nëpër tabelë për të arritur objektivin pasi të përshkoni sa më shumë katrorë. ',
-        'material' => 'Materialet e nevojshme: tabela me katrorë, pllakëza me imazhe të gjurmëve.',
         'questions' => [
             'content' =>
                 [
@@ -25,7 +29,6 @@ return [
     'right-and-left' => [
         'title' => 'Djathtas dhe majtas',
         'text' => 'Djathtas dhe e majtas është një lojë konkurruese dhe bashkëpunuese. Të dy ekipet bashkëpunojnë për të krijuar një rrugëtim drejt objektivit, ndërsa ata garojnë të përdorin sa më shumë të pllakëza që u janë caktuar: skuadra e verdhë përpiqet të futë sa më shumë kthesa në të majtë dhe skuadra e kuqe përpiqet të futë sa më shumë kthesa në të djathtë të jetë e mundur.',
-        'material' => 'Materialet e nevojshme: tabela me katrorë, pllakëza me imazhe të gjurmëve.',
         'questions' => [
             'content' =>
                 [

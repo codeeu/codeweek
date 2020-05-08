@@ -4,13 +4,17 @@ return [
 
     'title' => 'Coding@Home',
     'questions' => 'Otázky',
+    'material' => [
+        "required" => "Potřebné materiály",
+        "chequered" => "herní plán s mřížkou",
+        "footprint" => "kartička s otiskem chodidla"
+    ],
     'intro' => [
         'title' => 'Úvod ke Coding@Home',
     ],
     'explorer' => [
         'title' => 'Průzkumník',
         'text' => 'Průzkumník je první aktivitou série Coding@Home. Veďte průzkumníka po herním plánu tak, abyste po cestě k cíli navštívili co nejvíce polí. ',
-        'material' => 'Potřebné materiály: herní plán s mřížkou, kartička s otiskem chodidla',
         'questions' => [
             'content' =>
                 [
@@ -25,7 +29,6 @@ return [
     'right-and-left' => [
         'title' => 'Doprava a doleva',
         'text' => 'Doprava a doleva je hra, ve které hráči soutěží a zároveň spolupracují. Dva týmy spolupracují na vytvoření cesty k cíli a každý z nich se snaží, aby bylo využito co nejvíce kartiček barvy, která mu byla přidělena: žlutý tým se snaží o položení co nejvíce odboček doleva a červený tým o položení co nejvíce odboček doprava.',
-        'material' => 'Potřebné materiály: herní plán s mřížkou, kartička s otiskem chodidla',
         'questions' => [
             'content' =>
                 [
