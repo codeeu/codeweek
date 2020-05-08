@@ -4,14 +4,19 @@ return [
 
     'title' => 'Coding@Home – video tutorials',
     'questions' => 'Questions',
+    'material' => [
+        "required" => "Required material",
+        "chequered" => "chequered board",
+        "footprint" => "tiles with footprint pictures"
+    ],
     'intro' => [
         'title' => 'Introduction to Coding@Home',
     ],
     'explorer' => [
         'title' => 'The explorer',
         'text' => 'The explorer is the first Coding@Home activity. Move the explorer around the board to reach the target after visiting as many squares as possible.',
-        'material' => 'Required material: chequered board, tiles with footprint pictures.',
         'questions' => [
+            'title' => 'Questions',
             'content' =>
                 [
                     1 => 'Q1. With the starting and finishing positions shown in the video, is it possible for the explorer to visit all the boxes on the board?',
@@ -25,7 +30,6 @@ return [
     'right-and-left' => [
         'title' => 'Right and left',
         'text' => 'Right and left is a competitive and collaborative game. The two teams collaborate to create a path towards the target, while they compete to use as many as possible of the tiles assigned to them: the yellow team tries to insert as many turns to the left as possible and the red team tries to insert as many turns to the right as possible.',
-        'material' => 'Required material: chequered board, tiles with footprint pictures.',
         'questions' => [
             'content' =>
                 [
