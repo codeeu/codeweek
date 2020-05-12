@@ -7,7 +7,7 @@ return [
     'material' => [
         "required" => "Materjal meħtieġ",
         "chequered" => "bord b’disinn ta’ ċangaturi",
-        "footprint" => "karti maqtugħin kwadri żgħar bi stampi tal-marka tas-sieq"
+        "footprint" => "karti maqtugħin kwadri żgħar bi stampi tal-marka tas-saqajn"
     ],
     'intro' => [
         'title' => 'Introduzzjoni għal Coding@Home',
@@ -28,11 +28,11 @@ return [
 
     'right-and-left' => [
         'title' => 'Lemin u xellug',
-        'text' => 'Lemin u xellug hija logħba kompetittiva u kollaborattiva. Iż-żewġ timijiet jikkollaboraw flimkien biex joħolqu mogħdija lejn il-mira filwaqt li jikkompetu biex jużaw kemm jistgħu mill-karti kwadri żgħar li ngħatawlhom: it-tim l-isfar għandu jipprova jdaħħal kemm jista’ liwjiet lejn ix-xellug , u t-tim l-aħmar għandu jipprova jdaħħal kemm jista’ liwjiet lejn il-lemin.',
+        'text' => 'Lemin u xellug hija logħba kompetittiva u kollaborattiva. Iż-żewġ timijiet jikkollaboraw flimkien biex joħolqu passaġġ lejn il-mira filwaqt li jikkompetu biex jużaw kemm jistgħu mill-karti kwadri żgħar li ngħatawlhom: it-tim l-isfar għandu jipprova jdaħħal kemm jista’ liwjiet lejn ix-xellug , u t-tim l-aħmar għandu jipprova jdaħħal kemm jista’ liwjiet lejn il-lemin.',
         'questions' => [
             'content' =>
                 [
-                    1 => 'Q1. Bil-pożizzjonijiet tal-bidu u tat-tmiem bħal fl-ewwel partita f’dan il-vidjow, huwa possibbli li jirbaħ wieħed miż-żewġ timijiet?',
+                    1 => 'Q1. Bil-pożizzjonijiet tal-bidu u tat-tmiem bħal fl-ewwel logħba f’dan il-vidjow, huwa possibbli li jirbaħ wieħed miż-żewġ timijiet?',
                     2 => 'Q2. Bil-pożizzjonijiet tal-bidu u tat-tmiem bħal fil-logħba li rebħet Anna, jista’ jkun hemm il-possibbiltà ta’ dro?',
                     3 => 'Q3. Hemm pożizzjonijiet tal-bidu u t-tmiem li jiffavorixxu wieħed miż-żewġ timijiet?',
                     4 => 'Q4: Mill-mod ta’ kif inhuma l-pożizzjonijiet tal-bidu u t-tmiem, huwa possibbli li wieħed ibassar id-distakk bejn it-tim rebbieħ u t-tim tellief?'
