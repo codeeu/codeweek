@@ -67,6 +67,9 @@ Route::get('/resources/CodingAtHome', 'CodingAtHomeController@show')->name('codi
 Route::view('/resources/CodingAtHome/introduction', 'codingathome.introduction')->name('codingathome-introduction');
 Route::view('/resources/CodingAtHome/the-explorer', 'codingathome.the-explorer')->name('codingathome-the-explorer');
 Route::view('/resources/CodingAtHome/right-and-left', 'codingathome.right-and-left')->name('codingathome-right-and-left');
+Route::view('/resources/CodingAtHome/keep-off-my-path', 'codingathome.keep-off-my-path')->name('codingathome-keep-off-my-path');
+Route::view('/resources/CodingAtHome/tug-of-war', 'codingathome.tug-of-war')->name('codingathome-tug-of-war');
+Route::view('/resources/CodingAtHome/explorer-without-footprints', 'codingathome.explorer-without-footprints')->name('codingathome-explorer-without-footprints');
 
 
 Route::get('/events', 'SearchController@search')->name('events_map');
