@@ -27,7 +27,7 @@
 
             <section class="hackathons-content-grid">
                 <div class="codeweek-card-grid">
-                    <a href="https://ec.europa.eu/eusurvey/runner/preregistrationEUCWhackathonIreland" target="_blank">
+                    <a href="{{route("ireland")}}" target="_blank">
                         <div class="city-image">
                             <img src="/images/hackathons/dublin_ireland_small.png">
                             <div class="transparent"></div>
