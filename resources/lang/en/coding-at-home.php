@@ -43,6 +43,56 @@ return [
 
     ],
 
+    'keep-off-my-path' => [
+        'title' => 'Keep of my path',
+        'text' => 'Keep of my path is a competitive game with two teams. Starting from opposite ends of the board, the two teams build paths that hinder each other. The team that prevents the other from extending their path wins.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. Are there any starting points that favour one of the two teams?',
+                    2 => 'Q2. Could there be a draw?',
+                    3 => 'Q3. Does the player that goes first have an advantage?',
+                    4 => 'Q4. Is there an watertight game strategy that the player who moves first can adopt to make sure he never loses?'
+                ]
+
+        ]
+
+    ],
+
+    'tug-of-war' => [
+        'title' => 'Tug of war',
+        'text' => 'Tug of war is a collaborative and competitive game. Starting from the centre of the bottom of the board, two teams (yellow and red) work together to reach the top. The yellow team is trying to reach the boxes on the left while the red team is trying to reach the boxes on the right.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. Is there a strategy that will always result in victory?',
+                    2 => 'Q2. Does the player that goes first have an advantage?',
+                    3 => 'Q3. If the two players are equally attentive does the game always end in a draw, i.e. in the centre?',
+                ]
+
+        ]
+
+    ],
+
+    'explorer-without-footprints' => [
+        'title' => 'The explorer without footprints',
+        'text' => 'The explorer walks around the board from the starting point to the target, trying to visit all the boxes. As the explorer  walks s/he leaves coloured footprints, which allow the robot to follow the steps by interpreting the colours. The game becomes even more intriguing when the explorer clears away the footprints leaving only the colours.',
+        'material' => 'red, yellow, and grey markers (or pencils)',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. What is the difference between the board full of coloured footprints and the one with colours but no footprints?',
+                    2 => 'Q2. Which board offers more freedom of movement, keeping the same rules for turning as indicated by colour?',
+                    3 => 'Q3. Are there possible paths on the board with colours, which are not possible on the board with coloured footprints?',
+                    4 => 'Q4. Are there possible paths on the board with coloured footprints, which are not possible on the board with just colours?'
+                ]
+
+        ]
+
+    ],
+
+
+
 
     'texts' => [
         1 => 'Coding@Home is a collection of short videos, do-it-yourself materials, puzzles, games, and

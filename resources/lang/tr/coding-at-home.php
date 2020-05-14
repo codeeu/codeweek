@@ -42,6 +42,8 @@ return [
 
     ],
 
+
+
     'texts' => [
         1 => 'Coding@Home, ailenin yanı sıra okulda günlük kullanım için kısa videolar, kendin yap materyalleri, bulmacalar, oyunlar ve kodlama ile ilgili alıştırmalar içeren bir servistir. Faaliyetleri yapmak için herhangi bir ön bilgiye veya elektronik cihaza ihtiyacınız yoktur. Faaliyetler, sayısal düşünmeyi teşvik edecek ve evde ya da okulda öğrencilerin, ebeveynlerin ve öğretmenlerin becerilerini geliştirecektir.',
         2 => 'AB Kod Haftası\'nın Coding@Home serisi, Rai Cultura ile işbirliği içindeki Urbino Üniversitesi ve CodeMOOCnet Derneği\'nin <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> girişimi üzerine kuruludur. Alessandro Bogliolo, Urbino Üniversitesi\'nde Bilgi İşlem Sistemleri Profesörü, tüm temsilcilerin <a href="/ambassadors?country_iso=IT" target="_blank">İtalya AB Kod Haftası temsilcisi</a> ve koordinatörü ve aynı zamanda Dijital Beceri ve İş İttifakı Yönetim Kurulu üyesidir. ',
