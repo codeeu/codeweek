@@ -3,7 +3,7 @@
 return [
 
     'learning_bits' => 'Codeweek Learning Bits',
-    'title' => 'Are you considering participating in EU Code Week but you don’t know where to start?',
+    'title' => 'Free training materials and online courses',
     'text' => '<p>Here you can find free training materials & resources that will help you get started and plan your next innovative lesson.</p>
 <h2 class="subtitle">1. Learning Bits</h2>
                 <p>
