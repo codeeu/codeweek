@@ -13,14 +13,14 @@ return [
     |
     */
 
-    'title' => 'Report your #codeEU activity',
+    'title' => 'Report your #CodeWeek activity',
     'event_title' => 'Activity title',
     'number_required' => 'Please provide a rough estimate, even if you don\'t have exact data.',
-    'phrase1'=>'You can fill this form only once! Please check your data carefully. If you make a mistake, ',
-    'phrase2'=>'After submitting the report, a personalized certificate for participation in Code Week will be issued automatically and will become available for you to download or share. You can see an example certificate here.',
-    'phrase3'=>'Required fields are marked with an * asterisk.',
-    'phrase4'=>'You can fill this form only once! Please check your data carefully. If you make a mistake,',
-    'contactus'=>'contact us',
+    'phrase1' => 'You can fill this form only once! Please check your data carefully. If you make a mistake, ',
+    'phrase2' => 'After submitting the report, a personalized certificate for participation in Code Week will be issued automatically and will become available for you to download or share. You can see an example certificate here.',
+    'phrase3' => 'Required fields are marked with an * asterisk.',
+    'phrase4' => 'You can fill this form only once! Please check your data carefully. If you make a mistake,',
+    'contactus' => 'contact us',
     'participants_count' => [
         'label' => 'Participants count',
     ],

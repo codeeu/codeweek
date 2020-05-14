@@ -13,14 +13,14 @@ return [
     |
     */
 
-    'title' => 'Signalez votre événement #codeEU',
+    'title' => 'Signalez votre événement #CodeWeek',
     'event_title' => 'Titre de l’événement',
     'number_required' => 'Même si vous ne disposez pas de données exactes, veuillez fournir une estimation approximative.',
-    'phrase1'=>'Ce formulaire ne peut être complété qu’une seule fois! Veuillez vérifier soigneusement les données saisies. En cas d’erreur, ',
-    'phrase2'=>'Après avoir ajouté votre événement, un certificat personnalisé attestant de votre participation à la Semaine européenne du code vous sera délivré automatiquement; vous pourrez le télécharger ou le partager. Vous trouverez un exemple de certificat ici.',
-    'phrase3'=>'Les champs obligatoires sont indiqués par un astérisque.',
-    'phrase4'=>'Ce formulaire ne peut être complété qu’une seule fois! Veuillez vérifier soigneusement les données saisies. En cas d’erreur,',
-    'contactus'=>'veuillez nous contacter',
+    'phrase1' => 'Ce formulaire ne peut être complété qu’une seule fois! Veuillez vérifier soigneusement les données saisies. En cas d’erreur, ',
+    'phrase2' => 'Après avoir ajouté votre événement, un certificat personnalisé attestant de votre participation à la Semaine européenne du code vous sera délivré automatiquement; vous pourrez le télécharger ou le partager. Vous trouverez un exemple de certificat ici.',
+    'phrase3' => 'Les champs obligatoires sont indiqués par un astérisque.',
+    'phrase4' => 'Ce formulaire ne peut être complété qu’une seule fois! Veuillez vérifier soigneusement les données saisies. En cas d’erreur,',
+    'contactus' => 'veuillez nous contacter',
     'participants_count' => [
         'label' => 'Nombre de participants',
     ],

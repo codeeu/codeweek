@@ -13,14 +13,14 @@ return [
     |
     */
 
-    'title' => 'Rapportér dit #codeEU-arrangement',
+    'title' => 'Rapportér dit #CodeWeek-arrangement',
     'event_title' => 'Arrangementets titel',
     'number_required' => 'Angiv et cirkatal, også selvom du ikke har nøjagtige data.',
-    'phrase1'=>'Du kan kun udfylde denne formular én gang! Kontrollér dine data omhyggeligt. Hvis du har lavet en fejl, ',
-    'phrase2'=>'Når du har indsendt rapporten, vil der blive udstedt et personligt certifikat for deltagelse i kodeugen, og du vil kunne downloade eller dele det. Du kan se et eksempel på certifikatet her.',
-    'phrase3'=>'Obligatoriske felter er markeret med en stjerne *.',
-    'phrase4'=>'Du kan kun udfylde denne formular én gang! Kontrollér dine data omhyggeligt. Hvis du har lavet en fejl,',
-    'contactus'=>'kontakt os',
+    'phrase1' => 'Du kan kun udfylde denne formular én gang! Kontrollér dine data omhyggeligt. Hvis du har lavet en fejl, ',
+    'phrase2' => 'Når du har indsendt rapporten, vil der blive udstedt et personligt certifikat for deltagelse i kodeugen, og du vil kunne downloade eller dele det. Du kan se et eksempel på certifikatet her.',
+    'phrase3' => 'Obligatoriske felter er markeret med en stjerne *.',
+    'phrase4' => 'Du kan kun udfylde denne formular én gang! Kontrollér dine data omhyggeligt. Hvis du har lavet en fejl,',
+    'contactus' => 'kontakt os',
     'participants_count' => [
         'label' => 'Deltagerantal',
     ],

@@ -13,14 +13,14 @@ return [
     |
     */
 
-    'title' => 'Izvještaj o vašem #codeEU događaju',
+    'title' => 'Izvještaj o vašem #CodeWeek događaju',
     'event_title' => 'Naziv događaja',
     'number_required' => 'Molimo da date okvirnu procjenu ukoliko ne raspolažete preciznim podacima.',
-    'phrase1'=>'Ovaj formular možete popuniti samo jednom! Molimo da pažljivo provjerite unesene podatke. Ukoliko učinite grešku, ',
-    'phrase2'=>'Nakon što dostavite izvještaj, automatski se izdaje personalizovani sertifikat za učešće u Nedjelji programiranja i biće vam dostupan za peruzimanje ili djeljenje. Primjer sertifikata možete pogledati ovdje.',
-    'phrase3'=>'Obavezna polja označena su zvjezdicom (*).',
-    'phrase4'=>'Ovaj formular možete popuniti samo jednom! Molimo da pažljivo provjerite unesene podatke. Ukoliko učinite grešku, ',
-    'contactus'=>'Kontaktirajte nas',
+    'phrase1' => 'Ovaj formular možete popuniti samo jednom! Molimo da pažljivo provjerite unesene podatke. Ukoliko učinite grešku, ',
+    'phrase2' => 'Nakon što dostavite izvještaj, automatski se izdaje personalizovani sertifikat za učešće u Nedjelji programiranja i biće vam dostupan za peruzimanje ili djeljenje. Primjer sertifikata možete pogledati ovdje.',
+    'phrase3' => 'Obavezna polja označena su zvjezdicom (*).',
+    'phrase4' => 'Ovaj formular možete popuniti samo jednom! Molimo da pažljivo provjerite unesene podatke. Ukoliko učinite grešku, ',
+    'contactus' => 'Kontaktirajte nas',
     'participants_count' => [
         'label' => 'Broj učesnika',
     ],

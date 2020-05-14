@@ -16,12 +16,12 @@ return [
 
     'title' => 'Resources and guides',
     'initial_content' => [
-        '1'=>'EU Code Week is a grass-root movement run by volunteers who promote coding in their countries as ',
-        '2'=>'Code Week Ambassadors',
-        '3'=>'Anyone – schools, teachers, libraries, code clubs, businesses, public authorities – can organise a #CodeEU event and add it to the',
-        '4'=>'map. To make organising and running coding events easier, we have prepared different toolkits and selected some of the best lesson plans, guides and other resources.',
-        'how_to_organise_event'=>'How do I organise a Code Week event?',
-        'button'=>'Don\'t forget to pin your event on the map!'
+        '1' => 'EU Code Week is a grass-root movement run by volunteers who promote coding in their countries as ',
+        '2' => 'Code Week Ambassadors',
+        '3' => 'Anyone – schools, teachers, libraries, code clubs, businesses, public authorities – can organise a #CodeWeek event and add it to the',
+        '4' => 'map. To make organising and running coding events easier, we have prepared different toolkits and selected some of the best lesson plans, guides and other resources.',
+        'how_to_organise_event' => 'How do I organise a Code Week event?',
+        'button' => 'Don\'t forget to pin your event on the map!'
     ],
     'presentations_toolkits'=>[
         'title'=>'Presentations and toolkits',
