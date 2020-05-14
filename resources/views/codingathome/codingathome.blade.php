@@ -51,6 +51,28 @@
                         <div class="title" style="text-align:center">@lang('coding-at-home.right-and-left.title')</div>
                     </a>
                 </div>
+
+                <div class="codeweek-card-grid">
+                    <a href="{{route('codingathome-keep-off-my-path')}}">
+                        <img src="/img/codingathome/3.jpg">
+                        <div class="title" style="text-align:center">@lang('coding-at-home.keep-off-my-path.title')</div>
+                    </a>
+                </div>
+
+
+                <div class="codeweek-card-grid">
+                    <a href="{{route('codingathome-tug-of-war')}}">
+                        <img src="/img/codingathome/4.jpg">
+                        <div class="title" style="text-align:center">@lang('coding-at-home.tug-of-war.title')</div>
+                    </a>
+                </div>
+
+                <div class="codeweek-card-grid">
+                    <a href="{{route('codingathome-explorer-without-footprints')}}">
+                        <img src="/img/codingathome/5.jpg">
+                        <div class="title" style="text-align:center">@lang('coding-at-home.explorer-without-footprints.title')</div>
+                    </a>
+                </div>
             </section>
 
             <section class="codeweek-content-wrapper-inside">
