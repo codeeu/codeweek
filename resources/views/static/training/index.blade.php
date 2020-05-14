@@ -12,6 +12,7 @@
 
                 <h1>@lang('training.title')</h1>
 
+
                 @lang('training.text')
 
             </section>
@@ -137,6 +138,7 @@
                 <p>Follow <a href="https://twitter.com/CodeWeekEU">EU Code Week on social media</a> to find out when the
                     next course will start.</p>
 
+                <h2 class="subtitle">3. @lang('event.main_title')</h2>
                 @lang('training.text_2')
 
             </section>
