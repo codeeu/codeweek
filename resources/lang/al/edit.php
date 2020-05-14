@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Modifikoni evenimentin tuaj të #codeEU',
+    'title' => 'Modifikoni evenimentin tuaj të #CodeWeek',
     'required_fields' => 'Fushat e detyrueshme janë të shënuara me yll *. Mos ngurroni të shtoni listën e evenimentit në gjuhën tuaj lokale.',
     'description' => 'Përshkrimi',
     'audience' => 'Audienca',

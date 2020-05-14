@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Edit your #codeEU activity',
+    'title' => 'Edit your #CodeWeek activity',
     'required_fields' => 'Required fields are marked with an * asterisk. Feel free to add the activity listing in your local language.',
     'description' => 'Description',
     'audience' => 'Audience',
