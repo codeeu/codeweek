@@ -13,14 +13,14 @@ return [
     |
     */
 
-    'title' => 'A #codeEU eseménye jelentése',
+    'title' => 'A #CodeWeek eseménye jelentése',
     'event_title' => 'Az esemény címe',
     'number_required' => 'Adjon meg egy hozzávetõleges becslést, még ha nem is rendelkezik pontos adatokkal.',
-    'phrase1'=>'Ezt az ûrlapot mindössze egyszer töltheti ki! Kérjük, alaposan ellenõrizze az adatokat. Ha hibázik, ',
-    'phrase2'=>'A jelentés beküldését követõen automatikusan kiállításra kerül egy személyre szabott tanúsítvány a programozási héten való részvételérõl, melyet letölthet vagy megoszthat másokkal. A tanúsítványról itt talál egy mintát.',
-    'phrase3'=>'A kötelezõ mezõk *-gal vannak jelölve.',
-    'phrase4'=>'Ezt az ûrlapot mindössze egyszer töltheti ki! Kérjük, alaposan ellenõrizze az adatokat. Ha hibázik,',
-    'contactus'=>'vegye fel velünk a kapcsolatot',
+    'phrase1' => 'Ezt az ûrlapot mindössze egyszer töltheti ki! Kérjük, alaposan ellenõrizze az adatokat. Ha hibázik, ',
+    'phrase2' => 'A jelentés beküldését követõen automatikusan kiállításra kerül egy személyre szabott tanúsítvány a programozási héten való részvételérõl, melyet letölthet vagy megoszthat másokkal. A tanúsítványról itt talál egy mintát.',
+    'phrase3' => 'A kötelezõ mezõk *-gal vannak jelölve.',
+    'phrase4' => 'Ezt az ûrlapot mindössze egyszer töltheti ki! Kérjük, alaposan ellenõrizze az adatokat. Ha hibázik,',
+    'contactus' => 'vegye fel velünk a kapcsolatot',
     'participants_count' => [
         'label' => 'Résztvevõk száma',
     ],

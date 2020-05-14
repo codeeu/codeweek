@@ -13,14 +13,14 @@ return [
     |
     */
 
-    'title' => 'Meld je #codeEU-evenement aan',
+    'title' => 'Meld je #CodeWeek-evenement aan',
     'event_title' => 'Titel van evenement',
     'number_required' => 'Geef een ruwe schatting, ook als je niet over exacte gegevens beschikt.',
-    'phrase1'=>'Je kunt dit formulier maar één keer invullen. Controleer je gegevens zorgvuldig. Als je een fout maakt, ',
-    'phrase2'=>'Nadat je het rapport hebt verzonden, wordt automatisch een persoonlijk certificaat voor deelname aan de Programmeerweek uitgegeven. Je kunt dit certificaat vervolgens downloaden of delen. Hier zie je een voorbeeldcertificaat.',
-    'phrase3'=>'Verplichte velden zijn gemarkeerd met een sterretje (*).',
-    'phrase4'=>'Je kunt dit formulier maar één keer invullen. Controleer je gegevens zorgvuldig. Als je een fout maakt,',
-    'contactus'=>'neem contact met ons op',
+    'phrase1' => 'Je kunt dit formulier maar één keer invullen. Controleer je gegevens zorgvuldig. Als je een fout maakt, ',
+    'phrase2' => 'Nadat je het rapport hebt verzonden, wordt automatisch een persoonlijk certificaat voor deelname aan de Programmeerweek uitgegeven. Je kunt dit certificaat vervolgens downloaden of delen. Hier zie je een voorbeeldcertificaat.',
+    'phrase3' => 'Verplichte velden zijn gemarkeerd met een sterretje (*).',
+    'phrase4' => 'Je kunt dit formulier maar één keer invullen. Controleer je gegevens zorgvuldig. Als je een fout maakt,',
+    'contactus' => 'neem contact met ons op',
     'participants_count' => [
         'label' => 'Aantal deelnemers',
     ],
