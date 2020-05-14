@@ -99,22 +99,19 @@
 
             <section class="codeweek-content-wrapper-inside">
 
-                <h2 class="subtitle">2. Free online courses</h2>
+                <h2 class="subtitle">2. @lang('mooc.free-online-courses')</h2>
 
                 <p>
-                    EU Code Week offers professional development opportunities in the form of online courses. The aim is
-                    to support teachers in bringing coding and computational thinking to the classroom.
+                    @lang('mooc.intro')
                 </p>
 
-                <h4>The introductory “Icebreaker” course</h4>
-                <p>The
-                    <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Icebreaker+2020/about">Code
-                        Week Icebreaker course</a> is a five-hour course in English that targets anyone interested in
-                    the basics of coding and computational thinking. The participants learn how to inspire curiosity and
-                    an innovative spirit in young people, while empowering them to become digital creators. The course
-                    helps participants to discover the benefits and relevance of computational thinking and coding in
-                    our everyday lives. It also provides ideas, free training materials and resources to organise fun
-                    and educational activities for children, anytime, anywhere – especially during Code Week.</p>
+                <h4>@lang('mooc.icebreaker.title')</h4>
+                <p>
+                    @lang('mooc.icebreaker.text.0')
+                    <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Icebreaker+2020/about">@lang('mooc.icebreaker.text.1')</a>
+                    @lang('mooc.icebreaker.text.2')
+                </p>
+
                 <p>You do not need any previous experience or knowledge in coding to participate in this course, just a
                     curious mind. </p>
                 <p><a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Icebreaker+2020/about">Registrations
@@ -137,6 +134,7 @@
                         2019 “Deep dive” course.</a></p>
                 <p>Follow <a href="https://twitter.com/CodeWeekEU">EU Code Week on social media</a> to find out when the
                     next course will start.</p>
+
 
                 <h2 class="subtitle">3. @lang('event.main_title')</h2>
                 @lang('training.text_2')
