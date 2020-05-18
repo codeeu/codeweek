@@ -115,7 +115,7 @@
                 <p> @lang('mooc.icebreaker.text.3')</p>
                 <p>
                     <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Icebreaker+2020/about">@lang('mooc.icebreaker.registration.0')</a> @lang('mooc.icebreaker.registration.1')
-                    .</p>
+                    </p>
                 <p>
                     <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Icebreaker+2019/about">@lang('mooc.icebreaker.check-out')</a>
                 </p>
@@ -123,12 +123,12 @@
                 <h4>@lang('mooc.deep-dive.title')</h4>
                 <p>@lang('mooc.deep-dive.text.0') <a
                             href="https://codeweek.eu/resources/teach">@lang('mooc.deep-dive.text.1')</a> @lang('mooc.deep-dive.text.2')
-                    .</p>
+                </p>
                 <p>
                     <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+CWDive+2019/about">@lang('mooc.deep-dive.course-link')</a>
                 </p>
                 <p>@lang('mooc.social-media.0') <a
-                            href="https://twitter.com/CodeWeekEU">@lang('mooc.social-media.1')</a>@lang('mooc.social-media.2')
+                            href="https://twitter.com/CodeWeekEU">@lang('mooc.social-media.1')</a> @lang('mooc.social-media.2')
                     .</p>
 
 
@@ -140,10 +140,10 @@
 
             <div class="copyright">
                 @lang('copyright.title') ©<br/>
-                <a href="#">@lang('copyright.training.0')</a> @lang('copyright.training.1'). <br/>
+                <a href="#">@lang('copyright.training.0')</a> @lang('copyright.training.1')<br/>
                 @lang('copyright.licence.0') <a
                         href="@lang('copyright.licence.1')">@lang('copyright.licence.2')</a><br/>
-                @lang('copyright.creative-commons').<br/>
+                @lang('copyright.creative-commons')<br/>
                 @lang('copyright.third-party').
             </div>
 
