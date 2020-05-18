@@ -21,7 +21,7 @@ return [
             ],
             'registration' => [
                 0 => 'Registrations are open here',
-                1 => 'for the course that runs between 11 May and 15 June 2020. Please notethat you need to create an account in the European Schoolnet Academy to register',
+                1 => 'for the course that runs between 11 May and 15 June 2020. Please note that you need to create an account in the European Schoolnet Academy to register.',
             ],
             'check-out' => 'Check out the 2019 edition'
         ],
