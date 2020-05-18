@@ -112,28 +112,24 @@
                     @lang('mooc.icebreaker.text.2')
                 </p>
 
-                <p>You do not need any previous experience or knowledge in coding to participate in this course, just a
-                    curious mind. </p>
-                <p><a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Icebreaker+2020/about">Registrations
-                        are open here</a> for the course that runs between 11 May and 15 June 2020. Please note
-                    that you need to create an account in the European Schoolnet Academy to register. </p>
-                <p><a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Icebreaker+2019/about">Check
-                        out the 2019 edition</a>.</p>
+                <p> @lang('mooc.icebreaker.text.3')</p>
+                <p>
+                    <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Icebreaker+2020/about">@lang('mooc.icebreaker.registration.0')</a> @lang('mooc.icebreaker.registration.1')
+                    .</p>
+                <p>
+                    <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Icebreaker+2019/about">@lang('mooc.icebreaker.check-out')</a>
+                </p>
 
-                <h4>The in-depth “Deep Dive” course</h4>
-                <p>The EU Code Week Deep Dive online course is a twenty-five-hour course in English that offers teachers
-                    the opportunity to get familiarised with coding related principles and gain the knowledge and
-                    confidence to organize easy and fun, interactive coding activities with their students. Teachers
-                    discover EU Code Week’s free <a href="https://codeweek.eu/resources/teach">resources</a> and
-                    training materials available in 29 languages, and
-                    particular aspects of coding, such as computational thinking, unplugged activities, and the endless
-                    possibilities of robotics, tinkering and making, visual programming languages, app creation and much
-                    more.</p>
-                <p>Check out <a
-                            href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+CWDive+2019/about">the
-                        2019 “Deep dive” course.</a></p>
-                <p>Follow <a href="https://twitter.com/CodeWeekEU">EU Code Week on social media</a> to find out when the
-                    next course will start.</p>
+                <h4>@lang('mooc.deep-dive.title')</h4>
+                <p>@lang('mooc.deep-dive.text.0') <a
+                            href="https://codeweek.eu/resources/teach">@lang('mooc.deep-dive.text.1')</a> @lang('mooc.deep-dive.text.2')
+                    .</p>
+                <p>
+                    <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+CWDive+2019/about">@lang('mooc.deep-dive.course-link')</a>
+                </p>
+                <p>@lang('mooc.social-media.0') <a
+                            href="https://twitter.com/CodeWeekEU">@lang('mooc.social-media.1')</a>@lang('mooc.social-media.2')
+                    .</p>
 
 
                 <h2 class="subtitle">3. @lang('event.main_title')</h2>
