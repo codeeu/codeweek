@@ -35,19 +35,19 @@
 
                 <ul>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EN/CODEWEEK-TRAINING-011-ACTIVITY-01-EN.DOCX">
-                            @lang('training.lessons.11.activities.1')
-                        </a> (EN)
-                    </li>
-                    <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EN/CODEWEEK-TRAINING-011-ACTIVITY-02-EN.DOCX">
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-011-ACTIVITY-01-{{strtoupper(App::getLocale())}}.DOCX">
                             @lang('training.lessons.11.activities.2')
-                        </a> (EN)
+                        </a>
                     </li>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/EN/CODEWEEK-TRAINING-011-ACTIVITY-03-EN.DOCX">
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-011-ACTIVITY-02-{{strtoupper(App::getLocale())}}.DOCX">
                             @lang('training.lessons.11.activities.3')
-                        </a> (EN)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-011-ACTIVITY-03-{{strtoupper(App::getLocale())}}.DOCX">
+                            @lang('training.lessons.11.activities.1')
+                        </a>
                     </li>
                 </ul>
 
