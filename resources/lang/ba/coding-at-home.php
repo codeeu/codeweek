@@ -44,15 +44,15 @@ return [
 
 
     'keep-off-my-path' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Drži se dalje od mog puta',
+        'text' => 'Drži se dalje od mog puta je takmičarska igra s dvije ekipe. Polazeći od suprotnih krajeva table, dvije ekipe grade staze koje se ometaju. Pobjeđuje ekipa koji spriječi protivničku ekipu da produži svoj put.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'Q1. Postoje li polazišta koja favoriziraju jednu od dvije ekipe?',
+                    2 => 'Q2. Može li rezultat biti neriješen?',
+                    3 => 'Q3. Da li igrač koji prvi igra ima prednost?',
+                    4 => 'Q4. Postoji li nepobjediva strategija igre koju igrač koji krene prvi može usvojiti kako bi bio siguran da nikad neće izgubiti?'
                 ]
 
         ]
@@ -60,14 +60,14 @@ return [
     ],
 
     'tug-of-war' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Potezanje konopca',
+        'text' => 'Potezanje konopca je kolaborativna i takmičarska igra. Počevši od srednjeg donjeg dijela table, dvije ekipe (žuta i crvena) rade zajedno kako bi došli do vrha. Žuta ekipa pokušava doći do polja s lijeve strane dok crvena ekipa pokušava doći do polja s desne strane.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
+                    1 => 'Q1. Postoji li strategija koja će uvijek rezultirati pobjedom?',
+                    2 => 'Q2. Da li igrač koji prvi igra ima prednost?',
+                    3 => 'Q3. Ako su oba igrača jednako pažljiva, da li igra uvijek završava neriješeno, tj. u sredini?',
                 ]
 
         ]
