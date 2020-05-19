@@ -13,14 +13,14 @@ return [
     |
     */
 
-    'title' => 'Rapportera ditt evenemang för #codeEU',
+    'title' => 'Rapportera ditt evenemang för #CodeWeek',
     'event_title' => 'Evenemangstitel',
     'number_required' => 'Gör en ungefärlig beräkning om du inte har de exakta uppgifterna.',
-    'phrase1'=>'Du kan bara fylla i det här formuläret en gång! Kontrollera dina uppgifter noga. Om du gör fel ',
-    'phrase2'=>'När du har lämnat in rapporten utfärdas automatiskt ett personligt intyg om deltagande i Code Week som du kan ladda ner eller dela. Du kan se ett exempel på ett intyg här.',
-    'phrase3'=>'Obligatoriska fält är markerade med en asterisk *.',
-    'phrase4'=>'Du kan bara fylla i det här formuläret en gång! Kontrollera dina uppgifter noga. Om du gör fel',
-    'contactus'=>'kontakta oss',
+    'phrase1' => 'Du kan bara fylla i det här formuläret en gång! Kontrollera dina uppgifter noga. Om du gör fel ',
+    'phrase2' => 'När du har lämnat in rapporten utfärdas automatiskt ett personligt intyg om deltagande i Code Week som du kan ladda ner eller dela. Du kan se ett exempel på ett intyg här.',
+    'phrase3' => 'Obligatoriska fält är markerade med en asterisk *.',
+    'phrase4' => 'Du kan bara fylla i det här formuläret en gång! Kontrollera dina uppgifter noga. Om du gör fel',
+    'contactus' => 'kontakta oss',
     'participants_count' => [
         'label' => 'Antal deltagare',
     ],

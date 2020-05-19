@@ -13,14 +13,14 @@ return [
     |
     */
 
-    'title' => 'Pateikite ataskaitą apie savo #codeEU renginį',
+    'title' => 'Pateikite ataskaitą apie savo #CodeWeek renginį',
     'event_title' => 'Renginio pavadinimas',
     'number_required' => 'Pateikite apytikrius skaičius, net jei neturite tikslių duomenų.',
-    'phrase1'=>'Šią formą galima užpildyti tik vieną kartą! Atidžiai patikrinkite duomenis. Jei padarysite klaidą, ',
-    'phrase2'=>'Kai pateiksite ataskaitą, jums bus automatiškai išduotas Programavimo savaitės dalyvio sertifikatas, kurį galėsite parsisiųsti ir parodyti kitiems. Sertifikato pavyzdį galite pamatyti čia.',
-    'phrase3'=>'Laukeliai, kuriuos reikia užpildyti, pažymėti žvaigždute *.',
-    'phrase4'=>'Šią formą galima užpildyti tik vieną kartą! Atidžiai patikrinkite duomenis. Jei padarysite klaidą,',
-    'contactus'=>'susisiekite su mumis.',
+    'phrase1' => 'Šią formą galima užpildyti tik vieną kartą! Atidžiai patikrinkite duomenis. Jei padarysite klaidą, ',
+    'phrase2' => 'Kai pateiksite ataskaitą, jums bus automatiškai išduotas Programavimo savaitės dalyvio sertifikatas, kurį galėsite parsisiųsti ir parodyti kitiems. Sertifikato pavyzdį galite pamatyti čia.',
+    'phrase3' => 'Laukeliai, kuriuos reikia užpildyti, pažymėti žvaigždute *.',
+    'phrase4' => 'Šią formą galima užpildyti tik vieną kartą! Atidžiai patikrinkite duomenis. Jei padarysite klaidą,',
+    'contactus' => 'susisiekite su mumis.',
     'participants_count' => [
         'label' => 'Dalyvių skaičius',
     ],
