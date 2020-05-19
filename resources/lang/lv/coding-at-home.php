@@ -44,15 +44,15 @@ return [
 
 
     'keep-off-my-path' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Nost no mana ceļa',
+        'text' => '“Nost no mana ceļa” ir sāncensības spēle divām komandām. Sākot no spēles laukuma pretējām pusēm abas komandas veido ceļus, kas kavē viens otru. Uzvar tā komanda, kurai izdodas neļaut pretinieku komandai pagarināt savu ceļu.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => '1. JAUTĀJUMS. Vai ir tādi sākuma stāvokļi, kas ir labvēlīgāki vienai no komandām?',
+                    2 => '2. JAUTĀJUMS. Vai ir iespējams neizšķirts rezultāts?',
+                    3 => '3. JAUTĀJUMS. Vai spēlētājam, kurš sāk pirmais, ir priekšrocības?',
+                    4 => '4. JAUTĀJUMS. Vai ir kāda pilnīgi droša spēles stratēģija, kuru spēlētājs, kurš veic pirmo gājienu, var īstenot, lai noteikti nezaudētu?'
                 ]
 
         ]
@@ -60,14 +60,14 @@ return [
     ],
 
     'tug-of-war' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Virves vilkšana',
+        'text' => '“Virves vilkšana” ir sadarbības un sāncensības spēle. Sākot no centra spēles laukuma apakšā, divas komandas (dzeltenā un sarkanā) sadarbojas, lai sasniegtu spēles laukuma augšu. Dzeltenā komanda mēģina sasniegt lauciņus kreisajā pusē, bet sarkanā komanda mēģina sasniegt lauciņus labajā pusē.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
+                    1 => '1. JAUTĀJUMS. Vai ir kāda stratēģija, kas ļauj vienmēr uzvarēt?',
+                    2 => '2. JAUTĀJUMS. Vai spēlētājam, kurš sāk pirmais, ir priekšrocības?',
+                    3 => '3. JAUTĀJUMS. Ja divi spēlētāji ir vienlīdz uzmanīgi, vai spēle vienmēr beidzas ar neizšķirtu rezultāti, t. i. centrā?',
                 ]
 
         ]
@@ -75,16 +75,16 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => '',
-        'text' => '',
-        'material' => '',
+        'title' => 'Pētnieks',
+        'text' => 'Pētnieks apstaigā spēles laukumu no sākuma punkta līdz galamērķim, mēģinot apmeklēt visus lauciņus. Kamēr pētnieks staigā, viņš aiz sevis atstāj krāsainas pēdas, kas ļauj robotam viņam sekot, interpretējot krāsu nozīmi. Spēle kļūst vēl intirģējošāka, ja pētnieks noņem pēdas, atstājot tikai krāsas.',
+        'material' => 'kā arī sarkans, dzeltens un pelēks marķieris (vai zīmulis).',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => '1. JAUTĀJUMS. Kā atšķiras spēles laukums, uz kura ir krāsainas pēdas, no laukuma, uz kura ir krāsas, bet nav pēdu?',
+                    2 => '2. JAUTĀJUMS. Kurš laukums sniedz lielāku pārvietošanās brīvību, saglabājot tos pašus pagriešanās noteikumus, kādus nosaka krāsas?',
+                    3 => '3. JAUTĀJUMS. Vai uz spēles laukuma ar krāsām ir iespējami ceļi, kādi nav iespējami uz spēles laukuma ar krāsainajām pēdām?',
+                    4 => '4. JAUTĀJUMS. Vai uz spēles laukuma ar krāsainajām pēdām ir iespējami ceļi, kādi nav iespējami uz spēles laukuma tikai ar krāsām?'
                 ]
 
         ]

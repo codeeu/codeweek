@@ -44,15 +44,15 @@ return [
 
 
     'keep-off-my-path' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Ne hodi po moji poti',
+        'text' => 'Ne hodi po moji poti je tekmovalna igra z dvema ekipama. Ekipi začneta igro na nasprotni strani plošče in gradita poti, ki ovirata druga drugo. Zmaga ekipa, ki drugi preprečiti gradnjo poti.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'V1. Obstajajo začetni položaji, pri katerih ima več možnosti ena od obeh ekip?',
+                    2 => 'V2. Lahko pride do izenačenja?',
+                    3 => 'V3. Ima igralec, ki začne prvi, prednost?',
+                    4 => 'V4. Obstaja zanesljiva strategija igre, ki jo lahko izkoristi igralec, ki začne, in tako poskrbi za to, da nikoli ne izgubi?'
                 ]
 
         ]
@@ -60,14 +60,14 @@ return [
     ],
 
     'tug-of-war' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Vlečenje vrvi',
+        'text' => 'Vlečenje vrvi je sodelovalna in tekmovalna igra. Začne se na sredini spodnjega dela plošče, ekipi (rumena in rdeča) pa sodelujeta, da skupaj dosežeta vrh. Rumena ekipa poskuša doseči polja na levi, rdeča ekipa pa polja na desni.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
+                    1 => 'V1. Obstaja strategija, ki bo vedno prinesla zmago?',
+                    2 => 'V2. Ima igralec, ki začne prvi, prednost?',
+                    3 => 'V3. Če sta dva igralca enako pozorna, ali se igra vedno konča izenačeno, tj. na sredini?',
                 ]
 
         ]
@@ -75,16 +75,16 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => '',
-        'text' => '',
-        'material' => '',
+        'title' => 'Raziskovalec',
+        'text' => 'Raziskovalec hodi po plošči od začetne točke do cilja in poskuša obiskati vsa polja. Med hojo raziskovalec pušča raznobarvne stopinje, ki omogočajo robotu, da sledi korakom z interpretiranjem barv. Igra postane še bolj zanimiva, ko raziskovalec umakne stopinje in pusti samo barve.',
+        'material' => 'in rdeče, rumene ter sive oznake (ali svinčniki).',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'V1. Kakšna je razlika me ploščo, polno raznobarvnih stopinj in tisto, ki vsebuje barve, ne pa tudi stopinj?',
+                    2 => 'V2. Katera plošča omogoča več svobodnega gibanja, če ohranimo enaka pravila za obračanje, kot jih določajo barve?',
+                    3 => 'V3. Ali obstajajo poti na plošči z barvami, ki niso možne na plošči z raznobarvnimi stopinjami?',
+                    4 => 'V4. Ali obstajajo poti na plošči z raznobarvnimi stopinjami, ki niso možne na plošči z barvami?'
                 ]
 
         ]

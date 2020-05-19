@@ -44,15 +44,15 @@ return [
 
 
     'keep-off-my-path' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Menj az utamból!',
+        'text' => 'A „Menj az utamból!” egy versengésen alapuló játék, két csapattal. A tábla két végéből indulva a két csapatnak olyan útvonalakat kell építenie, amelyek hátráltatják egymást. Az a csapat nyer, amelyiknek sikerül megakadályoznia a másik csapat kiterjeszkedését.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => '1. kérdés: Van olyan kezdő és befejező állás, amely az egyik csapatnak kedvez?',
+                    2 => '2. kérdés: Lehetséges döntetlent játszani?',
+                    3 => '3. kérdés: Előnye van annak a játékosnak, aki kezd?',
+                    4 => '4. kérdés: Van olyan biztos stratégia, amivel a kezdő játékos mindenképpen nyer?'
                 ]
 
         ]
@@ -60,14 +60,14 @@ return [
     ],
 
     'tug-of-war' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Kötélhúzás',
+        'text' => 'A Kötélhúzás egy versengésen és együttműködésen alapuló játék. A tábla aljának közepéről kezdve a két csapat (sárga és piros) együttműködik, hogy elérjék a tábla tetejét. A sárga csapat a bal oldali mezőket szeretné elérni, a piros csapat a jobb oldaliakat.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
+                    1 => '1. kérdés: Van olyan stratégia, amellyel mindig nyerni lehet?',
+                    2 => '2. kérdés: Előnye van annak a játékosnak, aki kezd?',
+                    3 => '3. kérdés: Ha a két játékos ugyanannyira koncentrál, mindig döntetlen lesz a játék, azaz közepén ér véget?',
                 ]
 
         ]
@@ -75,16 +75,16 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => '',
-        'text' => '',
-        'material' => '',
+        'title' => 'A felfedező ',
+        'text' => 'A felfedező a táblán mozog, a kezdőponttól a célpontig, és próbál minden mezőt érinteni. Ahogy megy, színes lábnyomokat hagy maga után, amelyek segítségével, a színek interpretálásával, a robot követni tudja a lépéseit. A játék még élvezetesebb, ha a felfedező letörli a lábnyomokat, és csak a színek maradnak.',
+        'material' => 'valamint piros, sárga és szürke filctollak (vagy ceruzák)',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => '1. kérdés: Mi a különbség a színes lábnyomokkal teli és csak színes, lábnyomok nélküli tábla között?',
+                    2 => '2. kérdés: Melyik tábla ad nagyobb mozgásszabadságot, a megadott szín szerinti kanyarodás szabályának megőrzésével?',
+                    3 => '3. kérdés: Vannak olyan lehetséges útvonalak a színes táblán, amelyek a színes lábnyomos táblán nem lehetségesek?',
+                    4 => '4. kérdés: Vannak olyan lehetséges útvonalak a színes lábnyomos táblán, amelyek a színes táblán nem lehetségesek?'
                 ]
 
         ]

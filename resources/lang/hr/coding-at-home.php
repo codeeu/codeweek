@@ -44,15 +44,15 @@ return [
 
 
     'keep-off-my-path' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Miči mi se s puta',
+        'text' => 'Miči mi se s puta natjecateljska je igra za dvije ekipe. Počevši na suprotnim krajevima ploče dvije ekipe grade putove kojima ometaju jedni druge. Pobjeđuje ekipa koja spriječi drugu u širenju puta.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'P1. Postoje li polazišta koja idu u prilog jednoj od dviju ekipa?',
+                    2 => 'P2. Je li moguć neriješen rezultat?',
+                    3 => 'P3. Je li u prednosti igrač koji igra prvi?',
+                    4 => 'P4. Postoji li sigurna strategija kojom se može poslužiti igrač koji igra prvi kako bi bio siguran da nikad neće izgubiti?'
                 ]
 
         ]
@@ -60,14 +60,14 @@ return [
     ],
 
     'tug-of-war' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Potezanje užeta',
+        'text' => 'Potezanje užeta suradnička je i natjecateljska igra. Počevši od središta na dnu ploče dvije ekipe (žuta i crvena) surađuju kako bi došle do vrha. Žuta ekipa pokušava dosegnuti polja na lijevoj strani, dok crvena ekipa pokušava dosegnuti polja na desnoj strani.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
+                    1 => 'P1. Postoji li strategija koja će uvijek dovesti do pobjede?',
+                    2 => 'P2. Je li u prednosti igrač koji igra prvi?',
+                    3 => 'P3. Ako su oba igrača jednako pažljiva, hoće li igra uvijek završiti neriješeno, tj. u središtu?',
                 ]
 
         ]
@@ -75,16 +75,16 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => '',
-        'text' => '',
-        'material' => '',
+        'title' => 'Istraživač ',
+        'text' => 'Istraživač hoda pločom od polazišta do cilja i pokušava posjetiti sva polja. Istraživač hodajući iza sebe ostavlja obojene otiske stopala po kojima ih robot slijedi tumačeći boje. Igra postaje još intrigantnija kad istraživač obriše otiske stopala i ostavi samo boje.',
+        'material' => 'žuti i sivi flomasteri (ili bojice).',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'P1. Koja je razlika između ploče ispunjene obojenim otiscima stopala i ploče s bojama bez otisaka stopala?',
+                    2 => 'P2. Koja ploča omogućava veću slobodu kretanja uz poštivanje istih pravila za skretanje u skladu s bojama?',
+                    3 => 'P3. Postoje li mogući putovi na ploči s bojama koji nisu mogući na ploči s obojenim otiscima stopala?',
+                    4 => 'P4. Postoje li mogući putovi na ploči s obojenim otiscima stopala koji nisu mogući na ploči na kojoj su samo boje?'
                 ]
 
         ]

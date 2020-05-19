@@ -43,15 +43,15 @@ return [
 
 
     'keep-off-my-path' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Fuera de mi camino',
+        'text' => 'Fuera de mi camino es un juego competitivo entre dos equipos. Comenzando desde extremos opuestos del tablero, los dos equipos deberán construir caminos que se obstaculicen entre sí. El equipo que evite que el otro amplíe su camino gana.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'P1. ¿Hay algún punto de partida que favorezca a uno de los dos equipos?',
+                    2 => 'P2. . ¿Podría haber un empate?',
+                    3 => 'P3. ¿Tiene ventaja el primer jugador que empiece?',
+                    4 => 'P4. ¿Hay alguna estrategia de juego cerrada que pueda adoptar el jugador que mueve primero para no perder nunca?'
                 ]
 
         ]
@@ -59,14 +59,14 @@ return [
     ],
 
     'tug-of-war' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Tira y afloja',
+        'text' => 'Tira y afloja es un juego colaborativo y competitivo. Comenzando por el centro de la parte inferior del tablero, dos equipos (amarillo y rojo) deberán trabajan juntos para llegar a la parte superior. El equipo amarillo intentará llegar a las casillas de la izquierda, mientras que el equipo rojo intentará llegar a las casillas de la derecha.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
+                    1 => 'P1. ¿Hay alguna estrategia que siempre dé la victoria?',
+                    2 => 'P2. ¿Tiene ventaja el primer jugador que empiece?',
+                    3 => 'P3. Si los dos jugadores están igual de atentos, ¿el juego siempre termina en un empate, es decir, en el centro?',
                 ]
 
         ]
@@ -74,16 +74,16 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => '',
-        'text' => '',
-        'material' => '',
+        'title' => 'El explorador',
+        'text' => 'El explorador debe caminar alrededor del tablero desde el punto de salida hasta la meta tratando de pasar por todas las casillas. A medida que el explorador avanza va dejando huellas de colores que permiten al robot seguir los pasos interpretando dichos colores. El juego se vuelve aún más intrigante cuando el explorador elimina las huellas dejando solo los colores.',
+        'material' => 'Así como marcadores (o lapiceros) rojo, amarillo y gris.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'P1. ¿Cuál es la diferencia entre el tablero lleno de huellas de colores y el que tiene colores pero no huellas?',
+                    2 => 'P2. ¿Qué tablero ofrece más libertad de movimiento, manteniendo las mismas reglas de giro indicadas por el color?',
+                    3 => 'P3. ¿Hay caminos que son posibles en el tablero solo con colores pero que no lo son en el tablero con huellas de colores?',
+                    4 => 'P4. ¿Hay caminos que son posibles en el tablero con huellas de colores pero que no lo son en el tablero solo con colores?'
                 ]
 
         ]

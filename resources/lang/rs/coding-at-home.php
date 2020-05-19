@@ -44,15 +44,15 @@ return [
 
 
     'keep-off-my-path' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Beži sa moje putanje',
+        'text' => '„Beži sa moje putanje“ je takmičarska igra sa dva tima. Krećući sa suprotnih krajeva table, dva tima prave putanje koje ometaju jedna drugu. Onaj tim koji uspe da spreči drugi tim da nastavi pravljenje svoje putanje je pobednik.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'Pitanje 1. Da li postoje neke početne tačke koje favorizuju jednu od dve ekipe?',
+                    2 => 'Pitanje 2. Da li igra može da se završi nerešeno?',
+                    3 => 'Pitanje 3. Da li tim koji kreće prvi ima neku prednost?',
+                    4 => 'Pitanje 4. Da li postoji neka sigurna strategija pomoću koje tim koji prvi igra može da bude siguran da nikada neće izgubiti?'
                 ]
 
         ]
@@ -60,14 +60,14 @@ return [
     ],
 
     'tug-of-war' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Potezanje konopca',
+        'text' => '„Potezanje konopca“ je kolaborativna i takmičarska igra. Počevši od sredine donjeg reda na tabli, dva tima (žuti i crveni) rade zajedno kako bi došli do vrha. Žuti tim pokušava da stigne do polja na levoj strani, dok crveni tim pokušava da stigne do polja na desnoj.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
+                    1 => 'Pitanje 1. Da li postoji strategija koja će uvek dovesti do pobede?',
+                    2 => 'Pitanje 2. Da li tim koji kreće prvi ima neku prednost?',
+                    3 => 'Pitanje 3. Ako su dva igrača podjednako pažljiva, da li se igra uvek završava nerešeno, tj. u sredini?',
                 ]
 
         ]
@@ -75,16 +75,16 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => '',
-        'text' => '',
-        'material' => '',
+        'title' => 'Istraživač ',
+        'text' => 'Istraživač šeta po tabli od početne pozicije do cilja, pokušavajući da poseti sva polja. Dok hoda, Istraživač ostavlja obojene otiske stopala, koji robotu omogućavaju da prati njegove korake tako što tumači boje. Igra postaje još zanimljivija kada Istraživač obriše otiske stopala i ostavi samo boje.',
+        'material' => 'kao i crveni, žuti i sivi flomasteri (ili olovke).',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'Pitanje 1. Kakva je razlika između table pune obojenih otisaka stopala i table sa bojama, ali bez otisaka stopala?',
+                    2 => 'Pitanje 2. Koja tabla nudi veću slobodu kretanja, uz zadržavanje istih pravila za skretanje na osnovu boja?',
+                    3 => 'Pitanje 3. Da li na tabli sa bojama postoje neke putanje koje nisu moguće na tabli sa obojenim otiscima stopala?',
+                    4 => 'Pitanje 4. Da li na tabli sa obojenim otiscima stopala postoje neke putanje koje nisu moguće na tabli na kojoj su samo boje?'
                 ]
 
         ]

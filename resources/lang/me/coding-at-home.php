@@ -44,15 +44,15 @@ return [
 
 
     'keep-off-my-path' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Skloni mi se s puta',
+        'text' => '‘Skloni mi se s puta ‘je takmičarsa igra dvije ekipe. Svaka od ekipa započinje sa suprotnih krajeva table i pravi put pri čemu sprečava onog drugog da napreduje. Onaj tim koji uspije da spriječi drugog da gradi svoj put pobjeđuje.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'Pitanje 1. Postoji li neki početni i završni raspored koji ide više na ruku jednom timu?',
+                    2 => 'Pitanje 2. Da li može biti neriješeno?',
+                    3 => 'Pitanje 3. Da li igrač koji započne prvi ima prednost?',
+                    4 => 'Pitanje 4. Postoji li neka idealna strategija kojom se igrač koji prvi započne može služiti i sa kojom sigurno dobija?'
                 ]
 
         ]
@@ -60,14 +60,14 @@ return [
     ],
 
     'tug-of-war' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Potezanje konopca',
+        'text' => '‘Potezanje konopca’ je takmičarska igra ali traži i saradnju. Počevši od sredine dna table, dva tima – žuti i crveni, sarađuju kako bi došli do vrha. Žuti tim pokušava da dođe do polja lijevo dok se crveni trudi da dođe do polja nadesno.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
+                    1 => 'Pitanje 1. Da li postoji neka strategija koja uvijek vodi do pobjede?',
+                    2 => 'Pitanje 2. Da li igrač koji prvi počinje ima prednost?',
+                    3 => 'Pitanje 3. Ako su oba igrača podjednako pažljiva, da li je igra uvijek neriješena, tj. da li se završava na centru?',
                 ]
 
         ]
@@ -75,16 +75,16 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => '',
-        'text' => '',
-        'material' => '',
+        'title' => 'Explorer ',
+        'text' => 'Explorer/Istraživač se kreće po tabli od početne pozicije do cilja pokušavajući da pređe sva polja. Dok se kreće ostavlja otiske stopala u boji zbog čega robot može da prati stope po boji. Igra postaje još zanimljivija kada explorer ukloni stope a ostanu samo boje.',
+        'material' => 'crveni, žuti i sivi marker (ili drvene bojice)',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'Pitanje 1.U čemu je razlika između table sa stopama u boji i one samo sa bojama bez stopa?',
+                    2 => 'Pitanje 2. Na kojoj tabli se može više kretati pridržavajući se istih pravila skretanja po bojama?',
+                    3 => 'Pitanje 3. Da li na tabli sa bojama postoje staze koje ne postoje na tabli sa stopama u boji?',
+                    4 => 'Pitanje 4. Da li na tabli sa stopama u boji postoje staze koje ne postoje na tabli sa bojama?'
                 ]
 
         ]

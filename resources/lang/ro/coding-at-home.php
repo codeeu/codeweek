@@ -44,15 +44,15 @@ return [
 
 
     'keep-off-my-path' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Nu-mi sta în cale',
+        'text' => '„Nu-mi sta în cale” este un joc competitiv cu două echipe. Începând din părți opuse ale tablei de joc, cele două echipe își construiesc rute care să se blocheze reciproc. Echipa care o blochează pe cealaltă să își extindă ruta câștigă.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'Î1. Există poziții de pornire care favorizează una dintre cele două echipe?',
+                    2 => 'Î2. Se poate ajunge la egalitate?',
+                    3 => 'Î3. Are un avantaj jucătorul care pornește primul?',
+                    4 => 'Î4. Există vreo strategie de joc infailibilă pe care o poate adopta jucătorul care face prima mutare pentru a se asigura că nu pierde niciodată?'
                 ]
 
         ]
@@ -60,14 +60,14 @@ return [
     ],
 
     'tug-of-war' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Trasul parâmei',
+        'text' => '„Trasul parâmei” este un joc colaborativ și competitiv. Pornind din centrul părții de jos a tablei de joc, două echipe (galbenă și roșie) colaborează pentru a ajunge în partea de sus. Echipa galbenă încearcă să ajungă la căsuțele din stânga, în timp ce echipa roșie încearcă să ajungă la căsuțele din dreapta.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
+                    1 => 'Î1. Există vreo strategie care să asigure întotdeauna victoria?',
+                    2 => 'Î2. Are un avantaj jucătorul care pornește primul?',
+                    3 => 'Î3. Dacă cei doi jucători sunt la fel de calculați în mutări, se va ajunge întotdeauna la egalitate, adică în centru?',
                 ]
 
         ]
@@ -75,16 +75,16 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => '',
-        'text' => '',
-        'material' => '',
+        'title' => 'Exploratorul',
+        'text' => 'Exploratorul se deplasează pe tabla de joc, din poziția de pornire spre cea de destinație, încercând să viziteze toate căsuțele. Pe măsură ce se deplasează, acesta lasă urme de pași colorate, care îi permit robotului să urmeze pașii, interpretând culorile. Jocul devine și mai incitant atunci când exploratorul șterge urmele de pași, lăsând în urmă numai culorile.',
+        'material' => 'precum și un marker roșu, unul galben și unul gri (sau creioane cu aceste culori)',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'Î1. Care este diferența dintre tabla de joc plină de urme de pași colorate și cea fără urme de pași, numai cu culori?',
+                    2 => 'Î2. Care tablă de joc oferă mai multă libertate de mișcare, păstrându-se aceleași reguli pentru deplasare, așa cum indică culorile?',
+                    3 => 'Î3. Există rute posibile pe tabla de joc cu culori care nu sunt posibile pe tabla de joc cu urme de pași colorate?',
+                    4 => 'Î4. Există rute posibile pe tabla de joc cu urme de pași colorate care nu sunt posibile pe tabla de joc numai cu culori?'
                 ]
 
         ]

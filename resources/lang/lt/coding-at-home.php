@@ -44,15 +44,15 @@ return [
 
 
     'keep-off-my-path' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Šalin nuo mano tako',
+        'text' => '„Šalin nuo mano tako“ yra varžybinis žaidimas dviem komandoms. Komandos pradeda žaidimą priešingose lentos pusėse ir tiesia kelius taip, kad jie užkirstų priešingos komandos kelius. Laimi ta komanda, kuri neleidžia kitai komandai nutiesti kelio.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'K1. Ar yra tokių pradžios taškų, kurie suteiktų pranašumą vienai iš komandų?',
+                    2 => 'K2. Ar gali būti pasiektos lygiosios?',
+                    3 => 'K3. Ar žaidėjas, kuris pradeda pirmas, įgyja pranašumą?',
+                    4 => 'K4. Ar yra tokia absoliučios pergalės žaidimo strategija, kurią naudodamas žaidimą pradedantis žaidėjas niekada nepralaimėtų?'
                 ]
 
         ]
@@ -60,14 +60,14 @@ return [
     ],
 
     'tug-of-war' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Virvės traukimas',
+        'text' => ' „Virvės traukimas“ yra bendradarbiavimo ir varžybinis žaidimas. Dvi komandos (geltonoji ir raudonoji) pradeda žaidimą nuo lentos apačios vidurio ir bendradarbiauja, norėdamos pasiekti lentos viršų. Geltonoji komanda stengiasi pasiekti langelius kairėje, o raudonoji komanda – langelius dešinėje.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
+                    1 => 'K1. Ar yra tokia žaidimo strategija, kuri visada užtikrintų pergalę?',
+                    2 => 'K2. Ar žaidėjas, kuris pradeda pirmas, įgyja pranašumą?',
+                    3 => 'K3. Jei abu žaidėjai žaidžia vienodai atidžiai, ar žaidimas visada pasibaigs lygiosiomis, t. y. centre?',
                 ]
 
         ]
@@ -75,16 +75,16 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => '',
-        'text' => '',
-        'material' => '',
+        'title' => 'Tyrinėtojas',
+        'text' => ' „Tyrinėtojas“ vaikšto po lentą nuo pradžios taško iki pabaigos taško, stengdamasis aplankyti visus langelius. Eidamas „tyrinėtojas“ palieka spalvotus pėdsakus, kurie leidžia robotui jais sekti, iššifruojant spalvas. Žaidimas tampa dar įdomesnis, kai „tyrinėtojas“ ištrina pėdsakus ir palieka tik spalvas.',
+        'material' => 'ir raudonas, geltonas ir pilkas žymekliai (arba pieštukai)',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'K1. Kuo skiriasi lenta, pilna spalvotų pėdsakų, nuo lentos su spalvomis, bet be pėdsakų?',
+                    2 => 'K2. Kuri lenta suteikia didesnę judėjimo laisvę, taikant tas pačias krypčių pagal spalvas taisykles?',
+                    3 => 'K3. Ar lentoje su spalvomis yra tokių galimų kelių, kurie negalimi lentoje su spalvotais pėdsakais?',
+                    4 => 'K4. Ar lentoje su spalvotais pėdsakais yra tokių galimų kelių, kurie negalimi lentoje tik su spalvomis? '
                 ]
 
         ]

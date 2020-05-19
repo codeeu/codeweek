@@ -44,15 +44,15 @@ return [
 
 
     'keep-off-my-path' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Tidħolx fil-passaġġ tiegħi',
+        'text' => 'Tidħolx fil-passaġġ tiegħi hija logħba kompetittiva bejn żewġ timijiet. It-timijiet jibdew miż-żewġ naħat opposti tal-bord u jibnu passaġġi biex jibblukkaw lil xulxin. It-tim li jipprevjeni lill-ieħor milli jtawwal il-passaġġ tiegħu huwa r-rebbieħ.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'Q1. Hemm pożizzjonijiet tal-bidu li jiffavorixxu wieħed miż-żewġ timijiet?',
+                    2 => 'Q2. Jista’ jkun hemm dro?',
+                    3 => 'Q3. Il-plejer li jibda l-ewwel għandu vantaġġ?',
+                    4 => 'Q4. Teżisti strateġija soda li l-plejer li jagħmel l-ewwel mossa jista’ jadotta biex jiżgura li ma jitlef qatt? '
                 ]
 
         ]
@@ -60,14 +60,14 @@ return [
     ],
 
     'tug-of-war' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Ġbid tal-ħabel',
+        'text' => 'Ġbid tal-ħabel hija logħba kompetittiva u kollaborattiva . Iż-żewġ timijiet (l-isfar u l-aħmar) jibdew fil-parti t’isfel tal-bord fin-nofs u jaħdmu flimkien biex jaslu fil-parti ta’ fuq tal-bord. It-tim l-isfar se jipprova jilħaq il-kaxxi fuq ix-xellug filwaqt li t-tim l-aħmar se jipprova jilħaq il-kaxxi fuq il-lemin.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
+                    1 => 'Q1. Teżisti strateġija li dejjem se twassal għal rebħa?',
+                    2 => 'Q2. Il-plejer li jibda l-ewwel għandu vantaġġ?',
+                    3 => 'Q3. Jekk iż-żewġ plejers joqogħdu attenti ndaqs, il-logħba dejjem se tintemm bi dro, jiġifieri fin-nofs?',
                 ]
 
         ]
@@ -75,16 +75,16 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => '',
-        'text' => '',
-        'material' => '',
+        'title' => 'L-esploratur',
+        'text' => 'L-esploratur jimxi fuq il-bord mill-punt tat-tluq sal-mira waqt li jipprova jżur il-kaxxi kollha. Hu u jimxi, iħalli passi kkuluriti li jippermettu lir-robot isegwi l-passi billi jinterpreta l-kuluri. Il-logħba ssir aktar interessanti meta l-esploratur ineħħi l-passi u jħalli biss il-kuluri.',
+        'material' => 'kif ukoll markers (jew lapsijiet) ħomor, sofor u griżi.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'Q1. X’inhi d-differenza bejn il-bord mimli passi kkuluriti u l-bord bil-kuluri imma mingħajr il-passi?',
+                    2 => 'Q2. Liem bord joffri aktar libertà biex tiċċaqlaq waqt li jsegwi l-istess regoli biex iddur bħalma hu indikat bil-kulur?',
+                    3 => 'Q3. Hemm passaġġi possibbli fuq il-bord bil-kuluri li mhumiex possibbli fuq il-bord bil-passi kkuluriti?',
+                    4 => 'Q4. Hemm passaġġi possibbli fuq il-bord bil-passi kkuluriti li mhumiex possibbli fuq il-bord li għandu kuluri biss?'
                 ]
 
         ]

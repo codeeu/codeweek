@@ -44,15 +44,15 @@ return [
 
 
     'keep-off-my-path' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Blijf van mijn pad',
+        'text' => 'Blijf van mijn pad is een wedstrijdspel met twee teams. Vanaf twee tegenoverliggende zijden van het bord stellen de twee teams paden samen die elkaar in de weg moeten gaan zitten. Het team dat voorkomt dat het andere zijn pad uitbreidt, wint.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'V1. Zijn er startpunten die een van de twee teams bevoordelen?',
+                    2 => 'V2. Kan het in gelijkspel eindigen?',
+                    3 => 'V3. Heeft de speler die begint een voordeel?',
+                    4 => 'V4. Is er een waterdichte spelstrategie die de speler die begint kan overnemen om er zeker van te zijn dat hij nooit verliest?'
                 ]
 
         ]
@@ -60,14 +60,14 @@ return [
     ],
 
     'tug-of-war' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Touwtrekken',
+        'text' => 'Touwtrekken is een samenwerkings- en wedstrijdspel. Vanaf middenonderaan op het bord werken twee teams (geel en rood) samen om de bovenzijde te bereiken. Het gele team probeert de vakjes aan de linkerzijde te bereiken, terwijl het rode team de vakjes aan de rechterzijde probeert te bereiken.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
+                    1 => 'V1. Is er een strategie die altijd tot de overwinning leidt?',
+                    2 => 'V2. Heeft de speler die begint een voordeel?',
+                    3 => 'V3. Als de twee spelers even oplettend zijn, eindigt het spel dan altijd in gelijkspel, d.w.z. in het midden?',
                 ]
 
         ]
@@ -75,16 +75,16 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => '',
-        'text' => '',
-        'material' => '',
+        'title' => 'De verkenner',
+        'text' => 'De verkenner loopt over het bord vanaf het startpunt naar het doel en probeert alle vakjes aan te doen. Terwijl de verkenner loopt, laat hij gekleurde voetstappen achter, die de robot in staat stellen de stappen te volgen door de kleuren te interpreteren. Het spel wordt nog intrigerender als de verkenner de voetstappen wegwerkt en alleen de kleuren overblijven.',
+        'material' => 'rode, gele en grijze markeerstiften (of potloden).',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'V1. Wat is het verschil tussen een bord vol met gekleurde voetstappen en een met kleuren, maar zonder de voetstappen?',
+                    2 => 'V2. Welk bord biedt meer bewegingsvrijheid met behoud van dezelfde richtingsregels zoals aangegeven door de kleur?',
+                    3 => 'V3. Zijn er paden mogelijk op het bord met kleuren die niet mogelijk zijn op het bord met gekleurde voetstappen?',
+                    4 => 'V4. Zijn er paden mogelijk op het bord met gekleurde voetstappen die niet mogelijk zijn op het bord met alleen maar kleuren?'
                 ]
 
         ]
