@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => '#codeEU-Veranstaltung bearbeiten',
+    'title' => '#CodeWeek-Veranstaltung bearbeiten',
     'required_fields' => 'Pflichtfelder sind mit einem Stern * gekennzeichnet. Fügen Sie die Veranstaltung der Liste in Ihrer Sprache hinzu.',
     'description' => 'Beschreibung',
     'audience' => 'Zielgruppe',

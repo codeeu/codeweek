@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Upravte svoje podujatie #codeEU',
+    'title' => 'Upravte svoje podujatie #CodeWeek',
     'required_fields' => 'Povinné polia sú označené hviezdičkou*. Záznam o podujatí môžete uviesť aj vo svojom miestnom jazyku.',
     'description' => 'Opis',
     'audience' => 'Cieľová skupina',

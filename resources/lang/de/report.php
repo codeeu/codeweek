@@ -13,14 +13,14 @@ return [
     |
     */
 
-    'title' => '#codeEU-Veranstaltung melden',
+    'title' => '#CodeWeek-Veranstaltung melden',
     'event_title' => 'Titel der Veranstaltung',
     'number_required' => 'Bitte geben Sie eine grobe Einschätzung ab, auch wenn Sie keine genauen Zahlen kennen.',
-    'phrase1'=>'Sie können dieses Formular nur einmal ausfüllen! Prüfen Sie Ihre Daten daher sorgfältig. Wenn Sie einen Fehler bemerken, ',
-    'phrase2'=>'nachdem Sie die Meldung übermittelt haben, wird automatisch ein persönliches Teilnahmezertifikat für die Code Week erstellt und steht Ihnen zum Herunterladen oder Teilen zur Verfügung. Sie können hier ein Beispielzertifikat sehen.',
-    'phrase3'=>'Pflichtfelder sind mit einem Stern * gekennzeichnet.',
-    'phrase4'=>'Sie können dieses Formular nur einmal ausfüllen! Prüfen Sie Ihre Daten daher sorgfältig. Wenn Sie einen Fehler bemerken,',
-    'contactus'=>'setzen Sie sich mit uns in Verbindung',
+    'phrase1' => 'Sie können dieses Formular nur einmal ausfüllen! Prüfen Sie Ihre Daten daher sorgfältig. Wenn Sie einen Fehler bemerken, ',
+    'phrase2' => 'nachdem Sie die Meldung übermittelt haben, wird automatisch ein persönliches Teilnahmezertifikat für die Code Week erstellt und steht Ihnen zum Herunterladen oder Teilen zur Verfügung. Sie können hier ein Beispielzertifikat sehen.',
+    'phrase3' => 'Pflichtfelder sind mit einem Stern * gekennzeichnet.',
+    'phrase4' => 'Sie können dieses Formular nur einmal ausfüllen! Prüfen Sie Ihre Daten daher sorgfältig. Wenn Sie einen Fehler bemerken,',
+    'contactus' => 'setzen Sie sich mit uns in Verbindung',
     'participants_count' => [
         'label' => 'Teilnehmerzählung',
     ],
