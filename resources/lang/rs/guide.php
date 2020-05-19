@@ -8,7 +8,7 @@ return [
     'register_activity' => 'Registrujte svoj događaj ovde',
     'what' => [
         'title' => 'Šta je EU nedelja programiranja?',
-        'content' => '<p>EU nedelja programiranja je samonikli pokret koji vode volonteri i koji podržava Evropska komisija. Svako – škole, nastavnici, biblioteke, klubovi programiranja, firme, vladine agencije – može da organizuje događaj #CodeEU i da ga doda na <a href="/events">codeweek.eu</a> mapu.</p>'
+        'content' => '<p>EU nedelja programiranja je samonikli pokret koji vode volonteri i koji podržava Evropska komisija. Svako – škole, nastavnici, biblioteke, klubovi programiranja, firme, vladine agencije – može da organizuje događaj #CodeWeek i da ga doda na <a href="/events">codeweek.eu</a> mapu.</p>'
     ],
     'what_you_need_organise' => [
         'title' => 'Šta vam je potrebno da biste organizovali događaj?',

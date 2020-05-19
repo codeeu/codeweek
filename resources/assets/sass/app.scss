@@ -170,28 +170,28 @@ ul{
   h1 {
     font-size: 30px;
   }
-  h2{
+  h2 {
     font-size: 25px;
   }
-  h1 {
-    & + p {
-      padding-top: 45px;
-    }
-  }
+  //h1 {
+  //  & + p {
+  //    padding-top: 45px;
+  //  }
+  //}
 }
 /* tablet, landscape iPad, lo-res laptops ands desktops */
-@media (min-width:961px)  {
+@media (min-width:961px) {
   h1 {
     font-size: 40px;
   }
-  h2{
+  h2 {
     font-size: 30px;
   }
-  h1 {
-    & + p {
-      padding-top: 65px;
-    }
-  }
+  //h1 {
+  //  & + p {
+  //    padding-top: 65px;
+  //  }
+  //}
 }
 /* big landscape tablets, laptops, and desktops */
 @media (min-width:1025px) {

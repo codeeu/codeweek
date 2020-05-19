@@ -13,14 +13,14 @@ return [
     |
     */
 
-    'title' => 'Irrapporta l-avveniment tiegħek ta’ #codeEU',
+    'title' => 'Irrapporta l-avveniment tiegħek ta’ #CodeWeek',
     'event_title' => 'Titlu tal-avveniment',
     'number_required' => 'Jekk jogħġbok ipprovdi stima approssimattiva anki jekk m’għandekx id-data eżatta.',
-    'phrase1'=>'Tista’ timla din il-formola darba biss! Jekk jogħġbok iċċekkja d-data tiegħek sew. Jekk tagħmel żball, ',
-    'phrase2'=>'Wara li tissottometti r-rapport, ser jinħareġ ċertifikat personalizzat b’mod awtomatiku għall-parteċipazzjoni fil-Ġimgħa tal-Ikkowdjar u dan ser isir disponibbli lilek biex tniżżlu jew tikkondividih. Tista’ tara eżempju ta’ ċertifikat hawn.',
-    'phrase3'=>'L-oqsma meħtieġa huma mmarkati b’*asterisk.',
-    'phrase4'=>'Tista’ timla din il-formola darba biss! Jekk jogħġbok iċċekkja d-data tiegħek sew. Jekk tagħmel żball,',
-    'contactus'=>'ikkuntattjana',
+    'phrase1' => 'Tista’ timla din il-formola darba biss! Jekk jogħġbok iċċekkja d-data tiegħek sew. Jekk tagħmel żball, ',
+    'phrase2' => 'Wara li tissottometti r-rapport, ser jinħareġ ċertifikat personalizzat b’mod awtomatiku għall-parteċipazzjoni fil-Ġimgħa tal-Ikkowdjar u dan ser isir disponibbli lilek biex tniżżlu jew tikkondividih. Tista’ tara eżempju ta’ ċertifikat hawn.',
+    'phrase3' => 'L-oqsma meħtieġa huma mmarkati b’*asterisk.',
+    'phrase4' => 'Tista’ timla din il-formola darba biss! Jekk jogħġbok iċċekkja d-data tiegħek sew. Jekk tagħmel żball,',
+    'contactus' => 'ikkuntattjana',
     'participants_count' => [
         'label' => 'Għadd tal-parteċipanti',
     ],

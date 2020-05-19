@@ -13,14 +13,14 @@ return [
     |
     */
 
-    'title' => 'Esita oma #codeEU ürituse aruanne',
+    'title' => 'Esita oma #CodeWeek ürituse aruanne',
     'event_title' => 'Ürituse nimi',
     'number_required' => 'Anna ligikaudne hinnang, kui täpseid andmeid ei ole.',
-    'phrase1'=>'Seda vormi saad täita ainult üks kord! Palun vaata andmed hoolega üle. Kui tegid vea, ',
-    'phrase2'=>'Pärast aruande esitamist antakse automaatselt välja isikustatud tunnistus Code Weekil osalemise kohta ning selle saad alla laadida või seda teistega jagada. Tunnistuse näidist saad vaadata siin.',
-    'phrase3'=>'Nõutavad väljad on tähistatud tärniga.',
-    'phrase4'=>'Seda vormi saad täita ainult üks kord! Palun vaata andmed hoolega üle. Kui tegid vea,',
-    'contactus'=>'võta meiega ühendust',
+    'phrase1' => 'Seda vormi saad täita ainult üks kord! Palun vaata andmed hoolega üle. Kui tegid vea, ',
+    'phrase2' => 'Pärast aruande esitamist antakse automaatselt välja isikustatud tunnistus Code Weekil osalemise kohta ning selle saad alla laadida või seda teistega jagada. Tunnistuse näidist saad vaadata siin.',
+    'phrase3' => 'Nõutavad väljad on tähistatud tärniga.',
+    'phrase4' => 'Seda vormi saad täita ainult üks kord! Palun vaata andmed hoolega üle. Kui tegid vea,',
+    'contactus' => 'võta meiega ühendust',
     'participants_count' => [
         'label' => 'Osalejate arv',
     ],

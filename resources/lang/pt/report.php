@@ -13,14 +13,14 @@ return [
     |
     */
 
-    'title' => 'Comunicar o seu evento #codeEU',
+    'title' => 'Comunicar o seu evento #CodeWeek',
     'event_title' => 'Título do evento',
     'number_required' => 'Indique uma estimativa aproximada, mesmo que não disponha de dados exatos.',
-    'phrase1'=>'Este formulário só pode ser preenchido uma vez! Verifique atentamente os seus dados. Em caso de erro, ',
-    'phrase2'=>'Após a apresentação do relatório do evento, será emitido automaticamente um certificado personalizado de participação na Semana da Programação, que poderá descarregar ou partilhar. Pode visualizar um modelo de certificado aqui.',
-    'phrase3'=>'Os campos de preenchimento obrigatório estão marcados com um * asterisco.',
-    'phrase4'=>'Este formulário só pode ser preenchido uma vez! Verifique atentamente os seus dados. Em caso de erro,',
-    'contactus'=>'contacte-nos',
+    'phrase1' => 'Este formulário só pode ser preenchido uma vez! Verifique atentamente os seus dados. Em caso de erro, ',
+    'phrase2' => 'Após a apresentação do relatório do evento, será emitido automaticamente um certificado personalizado de participação na Semana da Programação, que poderá descarregar ou partilhar. Pode visualizar um modelo de certificado aqui.',
+    'phrase3' => 'Os campos de preenchimento obrigatório estão marcados com um * asterisco.',
+    'phrase4' => 'Este formulário só pode ser preenchido uma vez! Verifique atentamente os seus dados. Em caso de erro,',
+    'contactus' => 'contacte-nos',
     'participants_count' => [
         'label' => 'Contagem de participantes',
     ],

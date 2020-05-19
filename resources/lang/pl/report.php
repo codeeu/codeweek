@@ -13,14 +13,14 @@ return [
     |
     */
 
-    'title' => 'Zgłoś swoje wydarzenie #codeEU',
+    'title' => 'Zgłoś swoje wydarzenie #CodeWeek',
     'event_title' => 'Tytuł wydarzenia',
     'number_required' => 'Podaj informacje szacunkowe, nawet jeżeli nie masz dokładnych danych.',
-    'phrase1'=>'Możesz wypełnić ten formularz tylko raz! Sprawdź dokładnie wprowadzone dane. Jeżeli znajdziesz błąd, ',
-    'phrase2'=>'Po przesłaniu zgłoszenia zostanie automatycznie wystawiony certyfikat uczestnictwa w Tygodniu Kodowania, który możesz pobrać lub udostępnić. Przykładowy certyfikat można znaleźć tutaj.',
-    'phrase3'=>'Pola wymagane oznaczono gwiazdką *.',
-    'phrase4'=>'Możesz wypełnić ten formularz tylko raz! Sprawdź dokładnie wprowadzone dane. Jeżeli znajdziesz błąd,',
-    'contactus'=>'skontaktuj się z nami',
+    'phrase1' => 'Możesz wypełnić ten formularz tylko raz! Sprawdź dokładnie wprowadzone dane. Jeżeli znajdziesz błąd, ',
+    'phrase2' => 'Po przesłaniu zgłoszenia zostanie automatycznie wystawiony certyfikat uczestnictwa w Tygodniu Kodowania, który możesz pobrać lub udostępnić. Przykładowy certyfikat można znaleźć tutaj.',
+    'phrase3' => 'Pola wymagane oznaczono gwiazdką *.',
+    'phrase4' => 'Możesz wypełnić ten formularz tylko raz! Sprawdź dokładnie wprowadzone dane. Jeżeli znajdziesz błąd,',
+    'contactus' => 'skontaktuj się z nami',
     'participants_count' => [
         'label' => 'Liczba uczestników',
     ],

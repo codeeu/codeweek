@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Editați-vă evenimentul #codeEU',
+    'title' => 'Editați-vă evenimentul #CodeWeek',
     'required_fields' => 'Câmpurile obligatorii sunt marcate cu un * asterisc. Adăugați lista de evenimente în limba locală.',
     'description' => 'Descriere',
     'audience' => 'Public',

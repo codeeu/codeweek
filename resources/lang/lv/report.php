@@ -13,14 +13,14 @@ return [
     |
     */
 
-    'title' => 'Paziņojiet par savu #codeEU pasākumu',
+    'title' => 'Paziņojiet par savu #CodeWeek pasākumu',
     'event_title' => 'Pasākuma nosaukums',
     'number_required' => 'Lūdzu, norādiet aptuveni, ja jums nav precīzu datu.',
-    'phrase1'=>'Jūs varat aizpildīt šo veidlapu tikai vienreiz! Lūdzu, pārbaudiet datus uzmanīgi. Ja pieļauta kļūda, ',
-    'phrase2'=>'Pēc ziņojuma iesniegšanas tiks automātiski izsniegts personalizēts sertifikāts par piedalīšanos programmēšanas nedēļā un jūs varēsiet to lejupielādēt vai kopīgot. Jūs varat redzēt šī sertifikāta piemēru šeit.',
-    'phrase3'=>'Obligāti aizpildāmie lauki ir norādīti ar * zvaigznīti.',
-    'phrase4'=>'Jūs varat aizpildīt šo veidlapu tikai vienreiz! Lūdzu, pārbaudiet datus uzmanīgi. Ja pieļauta kļūda,',
-    'contactus'=>'sazinieties ar mums',
+    'phrase1' => 'Jūs varat aizpildīt šo veidlapu tikai vienreiz! Lūdzu, pārbaudiet datus uzmanīgi. Ja pieļauta kļūda, ',
+    'phrase2' => 'Pēc ziņojuma iesniegšanas tiks automātiski izsniegts personalizēts sertifikāts par piedalīšanos programmēšanas nedēļā un jūs varēsiet to lejupielādēt vai kopīgot. Jūs varat redzēt šī sertifikāta piemēru šeit.',
+    'phrase3' => 'Obligāti aizpildāmie lauki ir norādīti ar * zvaigznīti.',
+    'phrase4' => 'Jūs varat aizpildīt šo veidlapu tikai vienreiz! Lūdzu, pārbaudiet datus uzmanīgi. Ja pieļauta kļūda,',
+    'contactus' => 'sazinieties ar mums',
     'participants_count' => [
         'label' => 'Dalībnieku skaits',
     ],
