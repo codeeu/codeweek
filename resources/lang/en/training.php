@@ -4,6 +4,9 @@ return [
 
     'learning_bits' => 'Codeweek Learning Bits',
     'title' => 'Are you considering participating in EU Code Week but you don’t know where to start?',
+    'copyright' => '"Copyright notice ©
+The EU Code Week website for schools (https://codeweek.eu/training) is a service supported by the European Commission. Except where stated otherwise, content made available on this site is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license (https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)
+Licensing under Creative Commons licenses does not of itself affect the ownership of the copyright. Content from third party websites is subject to their own copyright restrictions; please refer to the site of origin for more information."',
     'text' => '<p>
                     Here you can find free training materials & resources that will help you get started and plan your next innovative lesson.
                 </p>
