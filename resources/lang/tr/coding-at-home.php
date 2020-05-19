@@ -43,6 +43,55 @@ return [
     ],
 
 
+    'keep-off-my-path' => [
+        'title' => 'Yolumdan Çekil (Keep of my path)',
+        'text' => 'Yolumdan Çekil (Keep of my path), iki takımlı, rekabete dayalı bir oyundur. Tahtanın karşı uçlarından başlayarak, iki takım bir birini engelleyen yollar kurar. Karşısındakinin yolunun uzamasını engelleyen takım kazanır. ',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'S1: İki takımdan birinin lehine olan başlangıç noktaları var mı?',
+                    2 => 'S2: Beraberlik olabilir mi?',
+                    3 => 'S3: İlk başlayan oyuncu avantaj sahibi mi olur?',
+                    4 => 'S4: İlk hareketi başlatan oyuncunun hiç kaybetmemesini sağlamak için kabul edebileceği, hata kabul etmeyen bir oyun stratejisi var mı?'
+                ]
+
+        ]
+
+    ],
+
+    'tug-of-war' => [
+        'title' => 'Savaş Mücadelesi (Tug of war)',
+        'text' => 'Savaş Mücadelesi (Tug of war) iş birliğine ve rekabete dayalı bir oyundur. Tahtanın altının ortasından başlayarak, iki takım (sarı ve kırmızı) en üste ulaşmak için beraber çalışır. Sarı takım, soldaki kutulara ulaşmaya çalışır, öte yandan kırmızı takım sağdaki kutulara ulaşmaya çalışır.
+Gerekli malzeme: dama tahtası, ayak izli taşlar.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'S1: Her zaman zaferle sonuçlanacak bir strateji var mıdır?',
+                    2 => 'S2: İlk başlayan oyuncu avantaj sahibi mi olur?',
+                    3 => 'S3: İki oyuncu eşit derecede dikkatli olursa, oyun her zaman beraberlikle mi, yani ortada, sonuçlanır?',
+                ]
+
+        ]
+
+    ],
+
+    'explorer-without-footprints' => [
+        'title' => 'Kaşif (The explorer)',
+        'text' => 'Kaşif; başlangıç noktasından hedefe kadar, tüm kutuları ziyaret etmeye çalışarak tahtayı dolaşır. Kaşif yürüdükçe, renkli ayak izleri bırakır, bu durum robotun renkleri yorumlayarak adımları takip etmesine olanak tanır. Kaşif sadece renkleri bırakarak ayak izlerini temizlediğinde, oyun daha da ilginç hale gelir.',
+        'material' => 'ayrıca kırmızı, sarı ve gri keçeli kalemler (ya da boya kalemleri)',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'S1: Renkli ayak izleriyle dolu tahta ile renklerin olduğu ama hiç ayak izinin olmadığı tahta arasındaki fark nedir?',
+                    2 => 'S2: Renkle gösterilen yere dönme konusundaki aynı kuralı koruyarak hangi tahta daha fazla hareket özgürlüğü sunar?',
+                    3 => 'S3: Renkli tahta üzerinde, renkli ayak izleri olan tahtada mümkün olmayan olası yollar var mıdır?',
+                    4 => 'S4: Renkli ayak izleri olan tahta üzerinde, renkli tahtada mümkün olmayan olası yollar var mıdır?'
+                ]
+
+        ]
+
+    ],
+
 
     'texts' => [
         1 => 'Coding@Home, ailenin yanı sıra okulda günlük kullanım için kısa videolar, kendin yap materyalleri, bulmacalar, oyunlar ve kodlama ile ilgili alıştırmalar içeren bir servistir. Faaliyetleri yapmak için herhangi bir ön bilgiye veya elektronik cihaza ihtiyacınız yoktur. Faaliyetler, sayısal düşünmeyi teşvik edecek ve evde ya da okulda öğrencilerin, ebeveynlerin ve öğretmenlerin becerilerini geliştirecektir.',
