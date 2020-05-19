@@ -12,6 +12,7 @@
 
                 <h1>@lang('training.title')</h1>
 
+
                 @lang('training.text')
 
             </section>
@@ -98,6 +99,46 @@
 
             <section class="codeweek-content-wrapper-inside">
 
+                <h2 class="subtitle">2. Free online courses</h2>
+
+                <p>
+                    EU Code Week offers professional development opportunities in the form of online courses. The aim is
+                    to support teachers in bringing coding and computational thinking to the classroom.
+                </p>
+
+                <h4>The introductory “Icebreaker” course</h4>
+                <p>The
+                    <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Icebreaker+2020/about">Code
+                        Week Icebreaker course</a> is a five-hour course in English that targets anyone interested in
+                    the basics of coding and computational thinking. The participants learn how to inspire curiosity and
+                    an innovative spirit in young people, while empowering them to become digital creators. The course
+                    helps participants to discover the benefits and relevance of computational thinking and coding in
+                    our everyday lives. It also provides ideas, free training materials and resources to organise fun
+                    and educational activities for children, anytime, anywhere – especially during Code Week.</p>
+                <p>You do not need any previous experience or knowledge in coding to participate in this course, just a
+                    curious mind. </p>
+                <p><a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Icebreaker+2020/about">Registrations
+                        are open here</a> for the course that runs between 11 May and 15 June 2020. Please note
+                    that you need to create an account in the European Schoolnet Academy to register. </p>
+                <p><a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Icebreaker+2019/about">Check
+                        out the 2019 edition</a>.</p>
+
+                <h4>The in-depth “Deep Dive” course</h4>
+                <p>The EU Code Week Deep Dive online course is a twenty-five-hour course in English that offers teachers
+                    the opportunity to get familiarised with coding related principles and gain the knowledge and
+                    confidence to organize easy and fun, interactive coding activities with their students. Teachers
+                    discover EU Code Week’s free <a href="https://codeweek.eu/resources/teach">resources</a> and
+                    training materials available in 29 languages, and
+                    particular aspects of coding, such as computational thinking, unplugged activities, and the endless
+                    possibilities of robotics, tinkering and making, visual programming languages, app creation and much
+                    more.</p>
+                <p>Check out <a
+                            href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+CWDive+2019/about">the
+                        2019 “Deep dive” course.</a></p>
+                <p>Follow <a href="https://twitter.com/CodeWeekEU">EU Code Week on social media</a> to find out when the
+                    next course will start.</p>
+
+                <h2 class="subtitle">3. @lang('event.main_title')</h2>
                 @lang('training.text_2')
 
             </section>
