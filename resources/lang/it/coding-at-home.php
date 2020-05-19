@@ -44,15 +44,15 @@ return [
 
 
     'keep-off-my-path' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Passo a due',
+        'text' => 'Passo a due è un gioco competitivo a due squadre. Partendo da due punti opposti della scacchiera, le due squadre costruiscono percorsi che si ostacolano a vicenda. Vince la squadra che impedisce all\'altra di estendere il proprio percorso.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'Q1. Esistono disposizioni di partenza che favoriscono una delle due squadre?',
+                    2 => 'Q2. Esiste la possibilità di un pareggio?',
+                    3 => 'Q3. Chi fa la prima mossa è avvantaggiato?',
+                    4 => 'Q4. Esiste una strategia di gioco infallibile che il giocatore che fa la prima mossa può adottare per essere certo di non perdere mai?'
                 ]
 
         ]
@@ -60,14 +60,14 @@ return [
     ],
 
     'tug-of-war' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Tiro alla fune',
+        'text' => 'Il Tiro alla fune è un gioco collaborativo e competitivo. Partendo dal centro del lato inferiore della scacchiera, due squadre (quella gialla e quella rossa) collaborano per raggiungere il lato superiore. La squadra gialla cerca di raggiungere le caselle di sinistra, mentre quella rossa cerca di raggiungere le caselle di destra.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
+                    1 => 'Q1. Esiste una strategia che garantisce sempre la vittoria?',
+                    2 => 'Q2. Chi fa la prima mossa è avvantaggiato?',
+                    3 => 'Q3. Se i due giocatori sono ugualmente attenti, la partita finisce sempre pari, cioè al centro?',
                 ]
 
         ]
@@ -75,16 +75,16 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => '',
-        'text' => '',
-        'material' => '',
+        'title' => 'L\'esploratore ',
+        'text' => 'L\'esploratore cammina sulla scacchiera dal punto di partenza al punto di arrivo, cercando di visitare tutte le caselle. Nel camminare, l\'esploratore o esploratrice lascia impronte colorate, che consentono al robot di seguire i suoi passi interpretando i colori. Il gioco diventa ancora più intrigante quando l\'esploratore cancella le impronte e lascia solo i colori.',
+        'material' => 'e pennarelli (o matite) di colore rosso, giallo e grigio.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'Q1. Che differenza c\'è tra la scacchiera piena di impronte colorate e quella con i soli colori?',
+                    2 => 'Q2. Quale delle due scacchiere offre più libertà di movimento, pur rispettando le stesse regole per associare le rotazioni ai colori?',
+                    3 => 'Q3. Ci sono percorsi possibili nella scacchiera con i colori, che non sarebbero ammessi nella scacchiera con le impronte colorate?',
+                    4 => 'Q4. Ci sono percorsi possibili nella scacchiera con le impronte colorate, che non sarebbero ammessi nella scacchiera con i soli colori?'
                 ]
 
         ]

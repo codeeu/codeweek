@@ -42,15 +42,15 @@ return [
 
 
     'keep-off-my-path' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Hoidu mu teelt',
+        'text' => '"Hoidu mu teelt“ on võistlusmäng kahe võistkonnaga. Alustades mängualuse vastaskülgedest, tekitavad kaks võistkonda teid, mis üksteist takistavad. Võidab meeskond, kes takistab teisel oma teed pikendamast.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'K1. Kas on lähtepositsioone, mis annavad eelise ühele kahest võistkonnast?',
+                    2 => 'K2. Kas saaks tulla viik?',
+                    3 => 'K3. Kas esimesena käival mängijal on eelis?',
+                    4 => 'K4. Kas on olemas vettpidav mängustrateegia, mida esimesena käiv mängija saab kasutada, et olla kindel, et ta kunagi ei kaota?'
                 ]
 
         ]
@@ -58,14 +58,14 @@ return [
     ],
 
     'tug-of-war' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Köievedu',
+        'text' => '„Köievedu“ on koostöö- ja võistlusmäng. Alustades mängualuse allääre keskelt, tegutsevad kaks võistkonda (kollane ja punane) koos, et jõuda ülaäärele. Kollane võistkond üritab jõuda vasakul olevatesse kastidesse, samal ajal kui punane võistkond üritab jõuda paremal olevatesse kastidesse.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
+                    1 => 'K1. Kas on olemas strateegia, mis annab alati tulemuseks võidu?',
+                    2 => 'K2. Kas esimesena käival mängijal on eelis?',
+                    3 => 'K3. Kas siis, kui kaks mängijat on võrdselt tähelepanelikud, lõpeb mäng alati viigiga, st keskel?',
                 ]
 
         ]
@@ -73,16 +73,16 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => '',
-        'text' => '',
-        'material' => '',
+        'title' => 'Maadeuurija',
+        'text' => 'Maadeuurija kõnnib mängualust mööda lähtepunktist sihtpunkti, püüdes külastada kõiki kaste. Kui maadeuurija  kõnnib, jätab ta värvilisi jälgi, mis võimaldavad robotil värve tõlgendades tema samme järgida. Mäng muutub veelgi intrigeerivamaks, kui maadeavastaja puhastab jalajäljed ära, jättes alles ainult värvid.',
+        'material' => 'samuti punased, kollased ja hallid markerid (või pliiatsid)',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'K1. Mis vahe on värvilisi jälgi täis mängualusel ja mängualusel värvidega, kuid ilma jälgedeta?',
+                    2 => 'K2. Milline mängualus pakub rohkem liikumisvabadust, säilitades samad pööramisreeglid, mida tähistab värv?',
+                    3 => 'K3. Kas värvidega mängualusel on võimalikud teed, mis pole võimalikud värviliste jalajälgedega mängualusel?',
+                    4 => 'K4. Kas värviliste jalajälgedega mängualusel on võimalikud teed, mis pole võimalikud ainult värvidega mängualusel?'
                 ]
 
         ]

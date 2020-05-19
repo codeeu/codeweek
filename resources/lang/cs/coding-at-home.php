@@ -44,15 +44,15 @@ return [
 
 
     'keep-off-my-path' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Jdi mi z cesty',
+        'text' => 'Jdi mi z cesty je hra, v níž soutěží dva týmy. Začínají na opačných koncích herního plánu a vytvářejí trasy, kterými se vzájemně blokují. Vyhrává tým, který druhému týmu znemožní prodloužení trasy.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'O1. Existují startovní body, které zvýhodňují jeden ze dvou týmů?',
+                    2 => 'O2. Může hra skončit remízou?',
+                    3 => 'O3. Má hráč, který začíná, výhodu?',
+                    4 => 'O4. Existuje neprůstřelná strategie, která začínajícímu hráči zajistí, že nikdy nemůže prohrát?'
                 ]
 
         ]
@@ -60,14 +60,14 @@ return [
     ],
 
     'tug-of-war' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Přetahovaná',
+        'text' => 'Přetahovaná je hra, která obnáší spolupráci i soutěžení. Začíná se ze středu spodního okraje herního plánu a týmy (žlutý a červený) se společně snaží propracovat k hornímu okraji. Žlutý tým chce dosáhnout polí vlevo nahoře, zatímco červený tým se snaží, aby trasa skončila vpravo nahoře.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
+                    1 => 'O1. Existuje strategie, která vždy vede k vítězství?',
+                    2 => 'O2. Má hráč, který začíná, výhodu?',
+                    3 => 'O3. Pokud oba týmy hrají soustředěně, skončí hra vždy remízou, tj. uprostřed?',
                 ]
 
         ]
@@ -75,16 +75,16 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => '',
-        'text' => '',
-        'material' => '',
+        'title' => 'Průzkumník bez stop',
+        'text' => 'Průzkumník chodí po herním plánu z výchozího bodu do cíle a snaží se vstoupit na všechna pole. Při chůzi nechává barevné otisky svých chodidel, takže robot může jít v jeho stopách na základě interpretace barev. Hra nabývá na zajímavosti, když průzkumník smaže stopy a ponechá pouze barvy.',
+        'material' => 'a červené, žluté a šedé fixy (nebo tužky)',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'O1. Jaký je rozdíl mezi herním plánem plným barevných stop a herním plánem s barvami, ale bez stop?',
+                    2 => 'O2. Který herní plán poskytuje větší svobodu pohybu, pokud nadále platí pravidla pro odbočování na základě barev?',
+                    3 => 'O3. Existují na herním plánu, na němž jsou pouze barvy, trasy, které na plánu s barevnými otisky chodidel nejsou možné?',
+                    4 => 'O4. Existují na herním plánu s barevnými otisky chodidel trasy, které na plánu s barvami nejsou možné?'
                 ]
 
         ]

@@ -75,16 +75,16 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => '',
-        'text' => '',
-        'material' => '',
+        'title' => 'Istraživač',
+        'text' => 'Istraživač se kreće po tabli od početne tačke do cilja, pokušavajući posjetiti sva polja. Dok se istraživač kreće, on ostavlja obojene tragove koji omogućuju robotu da slijedi korake interpretirajući boje. Igra postaje još intrigantnija kada istraživač ukloni otiske stopala ostavljajući samo boje.',
+        'material' => 'kao i crveni, žuti i sivi marker (ili olovka)',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'P1. Koja je razlika između table pune obojenih tragova i one s bojama, ali bez tragova?',
+                    2 => 'P2. Koja tabla nudi više slobode kretanja, pridržavajući se istih pravila za skretanje kako je naznačeno bojom?',
+                    3 => 'P3. Postoje li staze na tabli s bojama, koje nisu moguće na tabli s obojenim tragovima?',
+                    4 => 'P4. Postoje li staze na tabli s obojenim tragovima, koje nisu moguće na tabli samo s bojama?'
                 ]
 
         ]

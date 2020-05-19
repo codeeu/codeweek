@@ -44,15 +44,15 @@ return [
 
 
     'keep-off-my-path' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Keep off my path (Af banen!)',
+        'text' => '’Keep off my path’ er et konkurrencespil med to hold. De to hold starter i hver sin ende, hvor de hver især danner ruter, der hindrer hinandens fremmarch. Det hold der kan forhindre det andet hold i at komme videre, vinder.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'Sp. 1 Er der startopstillinger, der tilgodeser det ene af de to hold?',
+                    2 => 'Sp. 2 Kan resultatet ende uafgjort?',
+                    3 => 'Sp. 3 Har spilleren, der starter, en fordel?',
+                    4 => 'Sp. 4 Findes der en perfekt spilstrategi, som den spiller, der starter, kan tage for at sikre sig, at han/hun aldrig vil tabe?'
                 ]
 
         ]
@@ -60,14 +60,14 @@ return [
     ],
 
     'tug-of-war' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Tug of war (tovtrækning)',
+        'text' => 'Tug of war er både et konkurrence- og et samarbejdsspil. Med udgangspunkt nederst i midten af spillepladen samarbejder de to hold (gul og rød) om at nå toppen. Det gule hold prøver at nå felterne til venstre, mens det røde hold prøver at nå felterne til højre.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
+                    1 => 'Sp. 1 Er der en strategi, der altid vil resultere i sejr?',
+                    2 => 'Sp. 2 Har spilleren, der starter, en fordel?',
+                    3 => 'Sp. 3 Hvis de to spillere er lige opmærksomme, vil spillet så ende uafgjort, dvs midt på pladen?',
                 ]
 
         ]
@@ -75,16 +75,16 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => '',
-        'text' => '',
-        'material' => '',
+        'title' => 'The Explorer without footprints',
+        'text' => 'Exploreren bevæger sig rundt på spillepladen fra start- til slutpunkt, mens han forsøger at komme rundt til alle felter. Når exploreren bevæger sig rundt efterlader han fodaftryk, der gør det muligt for robotten at følge i hans fodspor ved at oversætte farverne. Spillet bliver endnu mere spændende, når exploreren fjerner fodsporene og kun efterlade sig farverne.',
+        'material' => 'samt tuschpenne (eller blyanter) i rød, gul og grå',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'Sp. 1 Hvad er forskellen på en spilleplade fuld af fodaftryk i forskellige farver, og en spilleplade med de forskellige farver men uden fodaftryk?',
+                    2 => 'Sp. 2 Underlagt de samme regler for drejning som farverne indikerer, hvilken spilleplade giver så mest bevægelsesfrihed?',
+                    3 => 'Sp. 3 Er der ruter med farver, som ikke kan laves med fodaftrykkene?',
+                    4 => 'Sp. 4 Er der ruter med fodaftryk, som ikke kan laves med farverne?'
                 ]
 
         ]

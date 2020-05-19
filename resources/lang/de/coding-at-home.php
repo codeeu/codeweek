@@ -44,15 +44,15 @@ return [
 
 
     'keep-off-my-path' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Aus dem Weg!',
+        'text' => '„Aus dem Weg!“ ist ein kompetitives Spiel mit zwei Teams. Diese starten von den entgegengesetzten Seiten des Spielfelds und legen Wege an, wobei sie das gegnerische Team davon abhalten sollen, ihren Pfad fortzusetzen. Das Team, dem dies gelingt, gewinnt.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'Frage 1: Gibt es Startpositionen, die einem der beiden Teams einen Vorteil verschaffen?',
+                    2 => 'Frage 2: Kann es zu einem Unentschieden kommen?',
+                    3 => 'Frage 3: Hat derjenige Spieler, der anfängt, einen Vorteil?',
+                    4 => 'Frage 4: Gibt es eine Spielstrategie, die den Spieler, der anfängt, ganz sicher davor bewahrt, jemals zu verlieren?'
                 ]
 
         ]
@@ -60,14 +60,14 @@ return [
     ],
 
     'tug-of-war' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Tauziehen',
+        'text' => '„Tauziehen“ ist ein kollaboratives und gleichzeitig kompetitives Spiel. Die Startposition ist das mittlere Kästchen in der untersten Reihe. Zwei Teams (gelb und rot) arbeiten zusammen, um an das obere Ende des Spielfelds zu gelangen. Dabei versucht das gelbe Team, die Kästchen auf der linken Seite zu erreichen, und das rote Team visiert die Kästchen auf der rechten Seite an.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
+                    1 => 'Frage 1: Gibt es eine Strategie, die jedes Mal zum Sieg führt?',
+                    2 => 'Frage 2: Hat der Spieler, der anfängt, einen Vorteil?',
+                    3 => 'Frage 3: Wenn die beiden Spieler gleich gut aufpassen, endet das Spiel dann immer mit einem Unentschieden, also in der Mitte des Spielfelds?',
                 ]
 
         ]
@@ -75,16 +75,16 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => '',
-        'text' => '',
-        'material' => '',
+        'title' => 'Der Entdecker ',
+        'text' => 'Der Entdecker wandelt auf dem Spielfeld umher, von einer Start- zu einer Zielposition zu gelangen und versucht dabei, alle Kästchen zu besuchen. Auf seinem Weg hinterlässt der Entdecker bunte Fußabdrücke. Diese geben wiederum dem Roboter klare Anweisungen, wohin er gehen soll. Das Spiel wird noch spannender, wenn der Entdecker keine Fußabdrücke, sondern nur die entsprechenden Farben hinterlässt.',
+        'material' => 'sowie rote, gelbe und graue Filz- oder Buntstifte',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'Frage 1: Worin besteht der Unterschied zwischen dem mit bunten Fußabdrücken bedeckten Spielfeld und dem bunten Spielfeld ohne Fußabdrücke?',
+                    2 => 'Frage 2: Welches Spielfeld gewährt eine größere Bewegungsfreiheit, wenn dieselben Regeln zum Abbiegen gelten, so wie sie durch die Farben angezeigt werden?',
+                    3 => 'Frage 3: Gibt es mögliche Pfade auf dem bunten Spielfeld, die auf dem Spielfeld mit den bunten Fußabdrücken nicht möglich sind?',
+                    4 => 'Frage 4: Gibt es mögliche Pfade auf dem Spielfeld mit den bunten Fußabdrücken, die auf dem bunten Spielfeld nicht möglich sind?'
                 ]
 
         ]

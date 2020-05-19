@@ -44,15 +44,15 @@ return [
 
 
     'keep-off-my-path' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Pysy poissa polultani',
+        'text' => 'Pysy poissa polultani on kilpailullinen peli, jossa on kaksi joukkuetta. Alkaen pelilaudan vastakkaisista päistä, kaksi joukkuetta rakentavat polkuja, joilla pyritään estämään toista joukkuetta. Se joka onnistuu estämään toista pidentämästä polkuaan, voittaa.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => '1. Onko olemassa aloituspaikkoja, jotka suosivat jompaa kumpaa joukkuetta?',
+                    2 => '2. Onko tasapeli mahdollinen?',
+                    3 => '3. Onko pelaajalla, joka aloittaa, etulyöntiasema?',
+                    4 => '4. Onko olemassa vedenpitävää pelistrategiaa, jonka ensimmäisen siirron tehnyt pelaaja voi ottaa käyttöönsä varmistaakseen, ettei koskaan häviä.'
                 ]
 
         ]
@@ -60,14 +60,14 @@ return [
     ],
 
     'tug-of-war' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Köydenveto',
+        'text' => 'Köydenveto on yhteistyöhön perustuva ja kilpailullinen peli. Kaksi joukkuetta (keltainen ja punainen) työskentelevät yhdessä päästäkseen pelilaudan ylimpiin ruutuihin aloittaen reitin rakentamisen alimmaisten ruutujen keskimmäisestä ruudusta. Keltainen joukkue yrittää päästä vasemmalla puolella oleviin ruutuihin, kun taas punainen joukkue yrittää päästä oikealla puolella oleviin ruutuihin.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
+                    1 => '1. Onko olemassa strategiaa, joka johtaa aina voittoon?',
+                    2 => '2. Onko aloittavalla pelaajalla etulyöntiasema?',
+                    3 => '3. Jos molemmat pelaajat (tai joukkueet) ovat yhtä tarkkaavaisia, loppuuko peli aina tasapeliin, toisin sanoen keskelle?',
                 ]
 
         ]
@@ -75,16 +75,16 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => '',
-        'text' => '',
-        'material' => '',
+        'title' => 'Tutkimusmatkailija',
+        'text' => 'Tutkimusmatkailija kulkee ympäri pelilautaa aloituspisteestä maaliin yrittäen käydä kaikissa ruuduissa. Tutkimusmatkailijan kulkiessa pelialustalla hän jättää erivärisiä jalanjälkiä, joita seuraamalla ja askelten värejä tulkitsemalla robotti voi kulkea maaliin. Pelistä tulee entistä kiehtovampi, kun tutkimusmatkailija poistaa jalanjäljet ja jättää ruutuihin vain värit.',
+        'material' => 'ja punaisia, keltaisia ja harmaita tusseja (tai lyijykyniä)',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => '1. Mitä eroa on pelilaudalla, jolla on värillisiä jalanjälkiä, ja pelilaudalla, jolla on pelkästään värejä ilman jalanjälkiä?',
+                    2 => '2. Kumpi pelilauta tarjoaa enemmän liikkumisvapautta, jos voimassa ovat samat kääntymissäännöt, jotka perustuvat väreihin?',
+                    3 => '3. Onko pelilaudalla mahdollisia reittejä, kun käytetään pelkkiä värejä, jotka eivät ole mahdollisia, kun käytetään värillisiä jalanjälkiä?',
+                    4 => '4. Onko pelilaudalla mahdollisia reittejä, kun käytetään värillisiä jalanjälkiä, jotka eivät ole mahdollisia, kun käytetään pelkkiä värejä?'
                 ]
 
         ]

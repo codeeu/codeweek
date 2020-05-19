@@ -44,15 +44,15 @@ return [
 
 
     'keep-off-my-path' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Ur vägen',
+        'text' => 'Ur vägen är ett tävlingsinriktat spel mellan två lag. Man börjar från varsin ände av spelplanen och försöker lägga vägar som hindrar det andra laget. Det lag som lyckas hindra det andra från att lägga sin väg vinner.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'F1. Finns det någon startpunkt som är till fördel för något av lagen?',
+                    2 => 'F2. Kan det bli oavgjort?',
+                    3 => 'F3. Har den spelare som börjar en fördel?',
+                    4 => 'F4. Finns det en vattentät strategi som den spelare som gör det första draget kan använda för att aldrig förlora?'
                 ]
 
         ]
@@ -60,14 +60,14 @@ return [
     ],
 
     'tug-of-war' => [
-        'title' => '',
-        'text' => '',
+        'title' => 'Dragkamp',
+        'text' => 'Dragkamp är ett spel för både samarbete och tävling. Man börjar längst ned i mitten av spelplanen. Två lag (gult och rött) arbetar ihop för att nå till toppen. Det gula laget försöker nå rutorna på vänster sida medan det röda laget försöker nå rutorna på höger sida.',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
+                    1 => 'F1. Finns det någon strategi som alltid resulterar i seger?',
+                    2 => 'F2. Har den spelare som börjar någon fördel?',
+                    3 => 'F3. Om båda spelare är lika duktiga, slutar spelet alltid oavgjort då?',
                 ]
 
         ]
@@ -75,16 +75,16 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => '',
-        'text' => '',
-        'material' => '',
+        'title' => 'Utforskaren ',
+        'text' => 'Utforskaren går runt spelplanen från startpunkten till mål och försöker att ha gått på alla rutor. När utforskaren rör sig lämnar den fotavtryck, vilket gör att roboten kan följa stegen genom att se på färgerna. Spelet blir ännu mer utmanande om utforskaren röjer undan fotspåren och bara lämnar kvar färgerna.',
+        'material' => 'samt röda, gula och gråa färgpennor',
         'questions' => [
             'content' =>
                 [
-                    1 => '',
-                    2 => '',
-                    3 => '',
-                    4 => ''
+                    1 => 'F1. Vad är skillnaden mellan en spelplan full av färgade fotavtryck och en med färger men inga fotavtryck?',
+                    2 => 'F2. Vilken spelplan ger mest rörelsefrihet, med samma regler för att svänga som anges med färg?',
+                    3 => 'F3. Finns det möjliga vägar på spelplanen med bara färger som inte är möjliga på en spelplan med färgade fotavtryck?',
+                    4 => 'F4. Finns det möjliga vägar på spelplanen med färgade fotavtryck som inte är möjliga på en spelplan med bara färger?'
                 ]
 
         ]
