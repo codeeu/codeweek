@@ -42,6 +42,55 @@ return [
 
     ],
 
+
+    'keep-off-my-path' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
+    'tug-of-war' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                ]
+
+        ]
+
+    ],
+
+    'explorer-without-footprints' => [
+        'title' => '',
+        'text' => '',
+        'material' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
     'texts' => [
         1 => '„Coding@Home” însumează scurte videoclipuri cu materiale de tipul „fă singur”, puzzle-uri, jocuri antrenante și competiții de programare pentru activități zilnice atât în familie, cât și la școală. Nu aveți nevoie de cunoștințe inițiale de programare și nici de dispozitive electronice pentru aceste activități. Activitățile vor stimula gândirea computațională și vor dezvolta abilitățile elevilor, părinților și profesorilor acasă sau la școală.',
         2 => 'Seria Coding@Home  din cadrul Săptămânii UE a programării s-a dezvoltat având la bază inițiativa <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> a Universității din Urbino și a Asociației CodeMOOCnet, în colaborare cu Rai Cultura. Activitățile sunt prezentate de Alessandro Bogliolo, profesor de sisteme computerizate la Universitatea din Urbino, <a href="/ambassadors?country_iso=IT" target="_blank">ambasador al Italiei la Săptămâna UE a programării</a> și coordonator al tuturor ambasadorilor, precum și membru al Consiliului director al Coaliției pentru aptitudini și locuri de muncă digitale. ',

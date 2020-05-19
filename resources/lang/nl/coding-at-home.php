@@ -42,6 +42,55 @@ return [
 
     ],
 
+
+    'keep-off-my-path' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
+    'tug-of-war' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                ]
+
+        ]
+
+    ],
+
+    'explorer-without-footprints' => [
+        'title' => '',
+        'text' => '',
+        'material' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
     'texts' => [
         1 => 'De "Coding@Home" zijn korte video\'s met doe-het-zelf-materiaal, puzzels, boeiende spelletjes en programmeeruitdagingen voor dagelijks gebruik in het gezin en op school. Je hebt geen voorkennis van codering nodig en je hebt geen elektronische apparaten nodig om de activiteiten uit te voeren. De activiteiten zullen het digitaal denken stimuleren en de vaardigheden van leerlingen, ouders en leerkrachten thuis of op school bevorderen.',
         2 => 'De serie Coding@Home van de EU Code Week bouwt voort op het initiatief <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> van de Universiteit van Urbino en de Vereniging CodeMOOCnet, in samenwerking met Rai Cultura. De activiteiten worden gepresenteerd door Alessandro Bogliolo, hoogleraar informatieverwerkingssystemen aan de Universiteit van Urbino, <a href="/ambassadors?country_iso=IT" target="_blank">ambassadeur van de italiaanse EU Code Week</a>, coördinator van alle andere ambassadeurs en lid van de raad van bestuur van de Digital Skills and Jobs Coalition,. ',

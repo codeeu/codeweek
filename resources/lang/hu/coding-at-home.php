@@ -42,6 +42,55 @@ return [
 
     ],
 
+
+    'keep-off-my-path' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
+    'tug-of-war' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                ]
+
+        ]
+
+    ],
+
+    'explorer-without-footprints' => [
+        'title' => '',
+        'text' => '',
+        'material' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
     'texts' => [
         1 => 'A Coding@Home rövid videók, „csináld magad” anyagok, rejtvények és programozási kihívások gyűjteménye családok és iskolák számára, mindennapos használatra. A tevékenységekhez nincs szükség semmilyen előzetes tudásra vagy elektronikus eszközre. A tevékenységek ösztönzik az algoritmikus gondolkodást és fejlesztik a diákok, szülők és tanárok készségeit, otthon és az iskolában.',
         2 => 'Az európai programozási hét Coding@Home sorozata az Urbinói Egyetem és a CodeMOOCnet Association által a Rai Culturával együttműködésben indított <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> kezdeményezésre épül. Alessandro Bogliolo, az Urbinói Egyetem információfeldolgozási rendszerekkel foglalkozó professzora az <a href="/ambassadors?country_iso=IT" target="_blank">európai programozási hét olasz nagykövete</a>, valamennyi nagykövet koordinátora, valamint a Digitális készségekkel és munkahelyekkel foglalkozó koalíció igazgatótanácsának tagja. ',

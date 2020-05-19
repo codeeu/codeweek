@@ -42,6 +42,55 @@ return [
 
     ],
 
+
+    'keep-off-my-path' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
+    'tug-of-war' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                ]
+
+        ]
+
+    ],
+
+    'explorer-without-footprints' => [
+        'title' => '',
+        'text' => '',
+        'material' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
     'texts' => [
         1 => 'Coding@Home" to zbiór krótkich filmów  z materiałami do samodzielnego wykonania, łamigłówkami, wciągającymi grami i wyzwaniami związanymi z kodowaniem do codziennego użytku w rodzinie i w szkole. Nie potrzebujesz posiadać żadnej wiedzy na temat kodowania i nie potrzebujesz żadnych urządzeń elektronicznych do wykonywania zadań. Działania te będą stymulować myślenie obliczeniowe i rozwijać umiejętności uczniów, rodziców i nauczycieli w domu lub w szkole.',
         2 => 'Seria Coding@Home w ramach Europejskiego Tygodnia Kodowania opiera się na inicjatywie <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">„Rodzinnego kodowania”</a> Uniwersytetu w Urbino i Stowarzyszenia CodeMOOCnet we współpracy z Rai Cultura. Zadania prezentuje Alessandro Bogliolo, który jest profesorem ds. systemów przetwarzania informacji na Uniwersytecie w Urbino, <a href="/ambassadors?country_iso=IT" target="_blank">włoski ambasador Europejskiego Tygodnia Kodowania</a> i koordynator wszystkich ambasadorów, a także członek Rady Zarządzającej ds. Umiejętności i Zatrudnienia w Sektorze Cyfrowym. ',

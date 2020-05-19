@@ -42,6 +42,55 @@ return [
 
     ],
 
+
+    'keep-off-my-path' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
+    'tug-of-war' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                ]
+
+        ]
+
+    ],
+
+    'explorer-without-footprints' => [
+        'title' => '',
+        'text' => '',
+        'material' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
     'texts' => [
         1 => '"Coding@Home" sisältää lyhyitä videoita, joissa on tee-se-itse-materiaalia, pulmapelejä, arvoituksia, kiinnostavia pelejä ja koodaushaasteita jokapäiväiseen käyttöön perheen parissa tai koulussa. Et tarvitse aikaisempaa tietoa ohjelmoinnista etkä elektronisia laitteita harjoitusten tekemiseen. Harjoitukset stimuloivat laskennallista ajattelua ja kasvattavat oppilaiden, vanhempien ja opettajien taitoja kotona tai koulussa.',
         2 => 'Euroopan Unionin koodausviikon Coding@Home-sarja perustuu Urbinon yliopiston ja CodeMOOCnet-yhdistyksen <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> -aloitteeseen yhteistyössä Rai Culturan kanssa. Tehtäviä vetää Alessandro Bogliolo, joka on tietokonejärjestelmien opettaja Urbinon yliopistossa, <a href="/ambassadors?country_iso=IT" target="_blank">Italian EU-koodiviikon lähettiläs</a> ja kaikkien lähettiläiden koordinaattori sekä Digital Skills and Jobs -koalition hallintoneuvoston jäsen. ',

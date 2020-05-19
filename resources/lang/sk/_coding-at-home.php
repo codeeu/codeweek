@@ -42,6 +42,55 @@ return [
 
     ],
 
+
+    'keep-off-my-path' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
+    'tug-of-war' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                ]
+
+        ]
+
+    ],
+
+    'explorer-without-footprints' => [
+        'title' => '',
+        'text' => '',
+        'material' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
     'texts' => [
         1 => '»Programiranje@Doma« je zbirka kratkih videoposnetkov z gradivi za samostojne projekte, igrami in programerskimi izzivi za vsakdanjo uporabo doma in v šoli. Za te dejavnosti ne potrebujete predhodnega znanja o programiranju ali elektronskih naprav. Dejavnosti spodbujajo računalniško razmišljanje in razvoj spretnosti pri učencih, starših in učiteljih doma in v šoli.',
         2 => 'Serija Evropskega tedna programiranja Coding@Home gradi na pobudi Univerze v Urbinu in združenja CodeMOOCnet <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> v sodelovanju z Rai Cultura. Dejavnosti predstavlja Alessandro Bogliolo – profesor na področju sistemov za obdelavo podatkov na Univerzi v Urbinu, <a href="/ambassadors?country_iso=IT" target="_blank">italijanski ambasador Evropskega tedna programiranja</a> in usklajevalec vseh ambasadorjev ter član upravnega odbora koalicije za digitalne spretnosti in delovna mesta. ',

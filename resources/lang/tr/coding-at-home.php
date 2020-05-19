@@ -43,6 +43,54 @@ return [
     ],
 
 
+    'keep-off-my-path' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
+    'tug-of-war' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                ]
+
+        ]
+
+    ],
+
+    'explorer-without-footprints' => [
+        'title' => '',
+        'text' => '',
+        'material' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
 
     'texts' => [
         1 => 'Coding@Home, ailenin yanı sıra okulda günlük kullanım için kısa videolar, kendin yap materyalleri, bulmacalar, oyunlar ve kodlama ile ilgili alıştırmalar içeren bir servistir. Faaliyetleri yapmak için herhangi bir ön bilgiye veya elektronik cihaza ihtiyacınız yoktur. Faaliyetler, sayısal düşünmeyi teşvik edecek ve evde ya da okulda öğrencilerin, ebeveynlerin ve öğretmenlerin becerilerini geliştirecektir.',
