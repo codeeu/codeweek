@@ -42,6 +42,55 @@ return [
 
     ],
 
+
+    'keep-off-my-path' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
+    'tug-of-war' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                ]
+
+        ]
+
+    ],
+
+    'explorer-without-footprints' => [
+        'title' => '',
+        'text' => '',
+        'material' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
     'texts' => [
         1 => 'Coding in famiglia è una raccolta di brevi video, materiali fai da te, enigmi, giochi e sfide di coding, da usare quotidianamente in famiglia e a scuola. Per svolgere le attività, non occorre avere già conoscenze specifiche né dispositivi elettronici. Le attività intendono stimolare il pensiero computazionale e coltivare le abilità di allievi, genitori e insegnanti, a casa o a scuola.',
         2 => 'La serie Coding in famiglia della Settimana europea della programmazione si basa sull\'iniziativa <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> dell\'Università di Urbino e dell’Associazione CodeMOOCnet, in collaborazione con Rai Cultura. Alessandro Bogliolo è professore di Sistemi per l’elaborazione dell’informazione all’Università di Urbino, <a href="/ambassadors?country_iso=IT" target="_blank">Ambasciatore italiano della Settimana europea della programmazione</a> e coordinatore di tutti gli ambasciatori, nonché membro del Governing Board of the Digital Skills and Jobs Coalition. ',

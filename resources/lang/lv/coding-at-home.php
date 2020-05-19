@@ -42,6 +42,55 @@ return [
 
     ],
 
+
+    'keep-off-my-path' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
+    'tug-of-war' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                ]
+
+        ]
+
+    ],
+
+    'explorer-without-footprints' => [
+        'title' => '',
+        'text' => '',
+        'material' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
     'texts' => [
         1 => 'Coding@Home ir īsu videoklipu, patstāvīgi veicamu uzdevumu, mīklu, aizraujošu spēļu un programmēšanas izaicinājumu kopums ikdienas lietošanai ģimenē un skolā. Jums nav vajadzīgas programmēšanas priekšzināšanas vai elektroniskas ierīces, lai veiktu šīs nodarbības. Tās stimulēs skaitļošanas tipa domāšanu un uzlabos prasmes skolēniem, vecākiem un skolotājiem gan mājās, gan skolā.',
         2 => 'ES programmēšanas nedēļas Coding@Home sērija turpina <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> — Urbīno Universitātes un CodeMOOCnet asociācijas aizsākto iniciatīvu sadarbībā ar Rai Cultura. Ar aktivitātēm iepazīstina Alesandro Bodžliolo, Urbīno Universitātes informācijas apstrādes sistēmu profesors, <a href="/ambassadors?country_iso=IT" target="_blank">ES programmēšanas nedēļas Itālijas vēstnieks</a> un visu vēstnieku koordinators, kā arī Digitālo prasmju un darbvietu koalīcijas valdes loceklis.',

@@ -42,6 +42,55 @@ return [
 
     ],
 
+
+    'keep-off-my-path' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
+    'tug-of-war' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                ]
+
+        ]
+
+    ],
+
+    'explorer-without-footprints' => [
+        'title' => '',
+        'text' => '',
+        'material' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
     'texts' => [
         1 => ' „Coding@Home“ – tai trumpų vaizdo įrašų, „pasidaryk pats“ reikmenų, galvosūkių, žaidimų ir programavimo iššūkių rinkinys, tinkantis kasdien naudoti namuose ir mokykloje. Norint mėgautis šiais užsiėmimais, nebūtina turėti jokių ankstesnių žinių ar elektroninių prietaisų. Užsiėmimai skirti ugdyti informatinį mąstymą ir lavinti mokinių, jų tėvų ir mokytojų žinias tiek namų aplinkoje, tiek mokykloje.',
         2 => 'ES programavimo savaitės „Coding@Home“ vaizdo įrašų serija sukurta remiantis Urbino universiteto ir CodeMOOCnet asociacijos <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> iniciatyva bendradarbiaujant su „Rai Cultura“. Alessandro Bogliolo dirba Informacijos tvarkymo sistemų profesoriumi Urbino universitete, yra <a href="/ambassadors?country_iso=IT" target="_blank">Italijos ES programavimo savaitės ambasadorius</a> ir visų ambasadorių koordinatorius bei Skaitmeninių įgūdžių ir užimtumo koalicijos valdybos narys.',

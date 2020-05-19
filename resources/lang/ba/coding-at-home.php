@@ -42,6 +42,55 @@ return [
 
     ],
 
+
+    'keep-off-my-path' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
+    'tug-of-war' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                ]
+
+        ]
+
+    ],
+
+    'explorer-without-footprints' => [
+        'title' => '',
+        'text' => '',
+        'material' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
     'texts' => [
         1 => '"Coding@Home" su kratki video snimci sa uradi sam materijalima, slagalicama, zanimljivim igrama i izazovima kodiranja za svakodnevnu upotrebu u kući kao i u školi. Nije vam potrebno nikakvo predznanje u kodiranju niti su vam potrebni blo kakvi elektronski uređaji da bi uradili aktivnosti. Aktivnosti će podstaknuti računarsko razmišljanje i njegovati vještine učenika, roditelja i učitelja u kući ili u školi.',
         2 => 'Serija Coding@Home EU Sedmice Kodiranja se zasniva na <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> inicijativi Urbino Univerziteta i CodeMOCCnet Udruženja u saradnji sa RAI Cultura. Aktivnosti predstavlja Alessandro Bogliolo profesor Informacionih Procesnih Sistema na Urbino Univerzitetu, <a href="/ambassadors?country_iso=IT" target="_blank">Italijanski ambasador EU Sedmice Kodiranja</a> i koordinator svim ambasadorima kao i članovima Upravnog odbora Digital Skills and Jobs Koalicije.',

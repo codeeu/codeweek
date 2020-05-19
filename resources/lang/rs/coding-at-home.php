@@ -42,6 +42,55 @@ return [
 
     ],
 
+
+    'keep-off-my-path' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
+    'tug-of-war' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                ]
+
+        ]
+
+    ],
+
+    'explorer-without-footprints' => [
+        'title' => '',
+        'text' => '',
+        'material' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
     'texts' => [
         1 => 'Coding@Home është një koleksion i videove të shkurtra, modeleve që i bëni vetë, gjëegjëzave, lojërave dhe sfidave të kodimit për përdorim të përditshëm në familje, si dhe në shkollë. Ju nuk duhet të keni njohuri të mëparshme ose pajisje elektronike për të kryer aktivitetet. Aktivitetet stimulojnë mendimin llogaritës dhe kultivojnë aftësitë e nxënësve, prindërve dhe mësuesve në shtëpi ose në shkollë.',
         2 => 'Seria Coding@Home e EU Code Week bazohet në iniciativës <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> të Universitetit të Urbinos dhe Shoqatës CodeMOOCnet në bashkëpunim me Rai Cultura. Alessandro Bogliolo është Profesori i Sistemeve të Përpunimit të Informacionit në Universitetin e Urbinos, <a href="/ambassadors?country_iso=IT" target="_blank">Ambasador i EU Code Week</a> dhe koordinator i të gjithë ambasadorëve si dhe anëtar i Bordit Drejtues të Koalicionit të Aftësive Dixhitale dhe Punës. ',

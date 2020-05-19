@@ -42,6 +42,55 @@ return [
 
     ],
 
+
+    'keep-off-my-path' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
+    'tug-of-war' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                ]
+
+        ]
+
+    ],
+
+    'explorer-without-footprints' => [
+        'title' => '',
+        'text' => '',
+        'material' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
     'texts' => [
         1 => 'Série Coding@Home představuje sbírku krátkých videí, návodů, hádanek, her a programovacích úkolů pro každodenní využití doma i ve škole. Veškeré aktivity můžete provádět bez předchozích znalostí či elektronických přístrojů. Aktivity stimulují výpočetní myšlení a rozvíjejí dovednosti žáků, rodičů i učitelů doma i ve škole.',
         2 => 'Série Coding@Home projektu Evropský týden programování je založena na iniciativě <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a>, kterou připravily univerzita v Urbinu a asociace CodeMOOCnet ve spolupráci s italskou televizní stanicí Rai Cultura. Alessandro Bogliolo působí na univerzitě v Urbinu jako profesor systémů pro zpracování informací a je <a href="/ambassadors?country_iso=IT" target="_blank">italským ambasadorem Evropského týdne programování</a> a koordinátorem všech ambasadorů i členů správní rady Koalice pro digitální dovednosti a pracovní místa. ',

@@ -42,6 +42,55 @@ return [
 
     ],
 
+
+    'keep-off-my-path' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
+    'tug-of-war' => [
+        'title' => '',
+        'text' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                ]
+
+        ]
+
+    ],
+
+    'explorer-without-footprints' => [
+        'title' => '',
+        'text' => '',
+        'material' => '',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '',
+                    2 => '',
+                    3 => '',
+                    4 => ''
+                ]
+
+        ]
+
+    ],
+
     'texts' => [
         1 => '“Coding@Home” huma vidjows qosra b’materjal do-it-yourself, logħob ta’ taħbil il-moħħ, logħob interessanti, u sfidi tal-ikkowdjar għall-użu ta’ kuljum fil-familja kif ukoll fl-iskola. Mhu meħtieġ ebda għarfien minn qabel tal-ikkowdjar, u lanqas apparat elettroniku sabiex twettaq l-attivitajiet. L-attivitajiet se jistimulaw il-ħsieb komputazzjonali u se jikkultivaw il-ħiliet tal-istudenti, tal-ġenituri u tal-għalliema fid-dar jew fl-iskola.',
         2 => 'Is-serje Coding@Home tal-Ġimgħa tal-UE tal-Ikkowdjar tibni fuq l-inizjattiva <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> tal-Università ta’ Urbino u l-CodeMOOCnet Association f’kollaborazzjoni ma’ Rai Cultura. L-attivitajiet huma ppreżentati minn Alessandro Bogliolo li huwa l-Professur tas-Sistemi tal-Ipproċessar tal-Informazzjoni fl-Università ta’ Urbino, l-<a href="/ambassadors?country_iso=IT" target="_blank">ambaxxatur tal-Ġimgħa tal-UE tal-Ikkowdjar għall-Italja</a>, u l-koordinatur tal-ambaxxaturi kollha kif ukoll membru tal-Bord Governattiv tal-Koalizzjoni għall-Ħiliet u l-Impjiegi Diġitali.',
