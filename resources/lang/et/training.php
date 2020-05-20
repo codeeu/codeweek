@@ -3,9 +3,9 @@
 return [
 
     'learning_bits' => 'Programmeerimisnädala Code Week õpivahendid',
-    'title' => 'Kas tahaksite osaleda ELi programmeerimisnädalal Code Week, aga ei tea, kust alustada?',
+    'title' => 'Tasuta õppematerjalid ja veebikursused',
     'text' => '<p>Siit leiate tasuta õppematerjale ja -vahendeid, mis aitavad teil plaanida oma esimest innovaatilist tunniplaani.</p>
-
+<h2 class="subtitle">1. õpivahendid</h2>
                     <p>Eelnev koodikirjutamise või programmeerimiskogemus ei ole vajalik ning iga mooduli läbimine võtab aega ainult 15 minutit. Moodulites tutvustatakse programmeerimise põhitõdesid ja algoritmilise mõtlemise arendamiseks mõeldud tegevusi. Lisaks sellele antakse moodulites praktilisi nippe ja nõu, kuidas neid kontseptsioone oma klassiruumis kasutada.</p>',
     'text_2' => '<p>Nüüd, kui olete tutvunud programmeerimisnädala Code Week õppevahenditega, olete ehk valmis tooma veidi digitaalset loomingulisust ka klassiruumi ja lisama oma tegevuse programmeerimisnädala <a href="/events">Code Week kaardile</a>!</p>
 
