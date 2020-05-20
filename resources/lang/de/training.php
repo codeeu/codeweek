@@ -3,9 +3,9 @@
 return [
 
     'learning_bits' => 'Code Week-Lernhäppchen',
-    'title' => 'Sie ziehen es in Erwägung, an der EU Code Week teilzunehmen, Ihnen fällt der Einstieg aber schwer?',
+    'title' => 'Kostenlose Trainingsmaterialien und Onlinekurse',
     'text' => '<p>Hier finden Sie kostenloses Trainingsmaterial und -Ressourcen, die Ihnen beim Einstieg und bei der Planung Ihrer nächsten innovativen Unterrichtsstunde behilflich sind.</p>
-
+<h2 class="subtitle">1. Lernhäppchen</h2>
                     <p>Es ist keine vorherige Kodierungs- oder Programmiererfahrung erforderlich und das Abschließen eines Moduls dauert lediglich ca. 15 Minuten. Die Module stellen Ihnen wichtige Konzepte in Verbindung mit Aktivitäten in den Bereichen Programmieren und rechnergestütztes Denken vor. Darüber hinaus erhalten Sie über die Module praktische Tipps und Empfehlungen zur Integration der Konzepte in das Klassenzimmer.</p>',
     'text_2' => '<p>Da Sie mittlerweile eines oder mehrere der Code Week-Lernhäppchen abgeschlossen haben, hoffen wir, dass Sie sich jetzt sicher genug fühlen, um digitale Kreativität in Ihr Klassenzimmer zu bringen und Ihre Aktivität an die <a href="/events">Code Week-Karte</a> zu heften!</p>
 
