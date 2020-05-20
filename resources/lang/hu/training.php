@@ -3,9 +3,9 @@
 return [
 
     'learning_bits' => 'Programozási hét – tudásmorzsák',
-    'title' => 'Szeretne részt venni az európai programozási hét tevékenységeiben, de nem tudja, hol kezdje?',
+    'title' => 'Ingyenes képzési anyagok és online tanfolyamok',
     'text' => '<p>Itt ingyenes képzési anyagokat és forrásokat talál, amelyek segítenek az első lépésekben és a következő innovatív tanóra megtervezésében.</p>
-
+<h2 class="subtitle">1. Tudásmorzsák</h2>
                     <p>Nincs szükség előzetes programozási tapasztalatra, és mindegyik modul csak 15 percet vesz igénybe. A modulok a programozási és algoritmikus gondolkodási tevékenységekhez kapcsolódó kulcsfontosságú fogalmakat mutatják be. Ezenkívül a modulok gyakorlati tippeket és tanácsokat is adnak arra vonatkozóan, hogyan építheti be ezeket a fogalmakat a tanóra menetébe.</p>',
     'text_2' => '<p>Miután már egy vagy több tudásmorzsán is átrágta magát, reméljük, hogy elég magabiztosnak érzi magát ahhoz, hogy némi digitális kreativitással dobja fel az óráit, és megjelöli tevékenységét a <a href="/events">programozási hét térképén</a>!</p>
 
