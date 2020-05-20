@@ -3,9 +3,9 @@
 return [
 
     'learning_bits' => 'Male lekcije o Sedmici kodiranja',
-    'title' => 'Da li razmatrate mogućnost učešća u Sedmici kodiranja EU, ali ne znate gdje početi?',
+    'title' => 'Besplatni materijali za obuku i onlajn kurseve',
     'text' => '<p>Ovdje možete pronaći besplatne materijale i resurse za obuku koji će vam pomoći da otpočnete i planirate svoju narednu inovativnu lekciju.</p>
-
+<h2 class="subtitle">1. Male lekcije</h2>
                     <p>Nije potrebno nikakvo prethodno iskustvo u kodiranju ili programiranju i svaki modul traje tek oko 15 minuta. Ti moduli uvode vas u ključne koncepte vezane za kodiranje i aktivnosti računarskog razmišljanja. Pored toga, ti moduli pružaju vam i praktične savjete o tome kako integrirati te koncepte u svojoj učionici.</p>',
     'text_2' => '<p>Sad kad ste završili jednu ili više lekcija iz Sedmice kodiranja, nadamo se da ćete se osjećati dovoljno lagodno da možete uvesti nešto od digitalne kreativnosti i u svoju učionicu i označiti svoju aktivnost na <a href="/events">Mapu Sedmice kodiranja</a>!</p>
 
