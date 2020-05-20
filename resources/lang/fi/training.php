@@ -3,9 +3,9 @@
 return [
 
     'learning_bits' => 'Koodausviikon oppimisaineistot',
-    'title' => 'Haluaisitko osallistua EU:n koodausviikkoon, mutta et tiedä, mistä aloittaa?',
+    'title' => 'Ilmaisia harjoitusmateriaaleja ja verkkokursseja',
     'text' => '<p>Täältä löydät maksuttomia koulutusmateriaaleja ja aineistoja, jotka auttavat sinut alkuun, ja pääset suunnittelemaan seuraavaa innovatiivista oppituntiasi.</p>
-
+<h2 class="subtitle">1. Oppimisaineistot</h2>
                     <p>Aikaisempi koodaus- tai ohjelmointikokemus ei ole tarpeen, ja jokainen moduuli kestää noin 15 minuuttia. Moduuleissa esitellään koodauksen ja laskennallisen ajattelun tärkeimmät käsitteet. Moduuleista saat myös käytännön vinkkejä ja neuvoja käsitteiden sisällyttämiseksi opetukseen.</p>',
     'text_2' => '<p>Olet nyt käynyt läpi yhden tai useamman oppimismoduulin. Toivottavasti tunnet olosi riittävän varmaksi, jotta voit sisällyttää digitaalisen luovuuden opetukseesi ja merkitä tapahtumasi <a href="/events">koodausviikkokarttaan</a>!</p>
 
