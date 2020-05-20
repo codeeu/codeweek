@@ -3,9 +3,9 @@
 return [
 
     'learning_bits' => 'Module de învățare pentru Săptămâna programării',
-    'title' => 'Vă gândiți să participați la Săptămâna UE a programării, dar nu știți de unde să începeți?',
+    'title' => 'Materiale de instruire și cursuri online gratuite',
     'text' => '<p>Aici puteți găsi materiale de instruire și resurse gratuite care vă vor ajuta să începeți și să vă planificați următoarea lecție inovatoare.</p>
-
+<h2 class="subtitle">1.	Module de învățare</h2>
                     <p>Nu este necesară experiență anterioară de scriere de cod sau programare, iar fiecare modul necesită aproximativ 15 minute pentru a fi finalizat. Modulele vă prezintă concepte-cheie legate de activități de programare și gândire computațională. În plus, modulele vă oferă idei și sfaturi practice cu privire la modul de integrare a conceptelor în clasa dumneavoastră.</p>',
     'text_2' => '<p>Acum că ați finalizat unu sau mai multe module de învățare pentru Săptămâna programării, sperăm că vă simțiți suficient de pregătit să aduceți puțină creativitate digitală în clasa dumneavoastră și să vă adăugați activitatea pe <a href="/events">harta Săptămânii programării</a>!</p>
 

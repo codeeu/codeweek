@@ -3,9 +3,9 @@
 return [
 
     'learning_bits' => 'Programmēšanas nedēļas mācību moduļi',
-    'title' => 'Vai vēlaties piedalīties ES programmēšanas nedēļā, bet nezināt, ar ko sākt?',
+    'title' => 'Bezmaksas mācību materiāli un tiešsaistes kursi',
     'text' => '<p>Šeit jūs atradīsiet bezmaksas mācību materiālus un resursus, kas jums palīdzēs sākt darboties un plānot jūsu nākamo inovatīvo mācību stundu.</p>
-
+<h2 class="subtitle">1.	Mācību moduļi</h2>
                     <p>Nav nepieciešama iepriekšēja programmēšanas pieredze, un katra moduļa pabeigšanai ir nepieciešamas tikai apmēram 15 minūtes. Moduļos ietverta iepazīstināšana ar svarīgākajiem jēdzieniem, kas saistīti ar programmēšanu un skaitļošanas tipa domāšanu. Moduļos ir sniegti arī prakstiski padomi un ieteikumi par to, kā integrēt šos jēdzienus klases nodarbībās.</p>',
     'text_2' => '<p>Tagad, kad esat pabeidzis vienu vai vairākus programmēšanas nedēļas mācību moduļus, mēs ceram, ka jūtaties pietiekami drošs, lai ienestu digitālu radošumu savā klasē un pievienotu savu pasākumu <a href="/events">programmēšanas nedēļas kartē</a>!</p>
 

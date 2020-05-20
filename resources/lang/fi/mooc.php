@@ -31,7 +31,7 @@ return [
     "social-media" => [
         0 => 'Seuraa',
         1 => 'Euroopan koodausviikkoa sosiaalisessa mediassa,',
-        2 => 'jotta tiedät milloin seuraava kurssi alkaa.',
+        2 => 'jotta tiedät milloin seuraava kurssi alkaa',
     ]
 
 ];

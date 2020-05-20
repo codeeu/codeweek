@@ -3,9 +3,9 @@
 return [
 
     'learning_bits' => 'Učni drobci za teden programiranja',
-    'title' => 'Razmišljate, da bi sodelovali v evropskem tednu programiranja, vendar ne veste, kje začeti?',
+    'title' => 'Brezplačna gradiva za vajo in spletni tečaji',
     'text' => '<p>Tu boste našli brezplačno gradivo za usposabljanje in vire, ki vam bodo v pomoč, da boste lažje začeli in načrtovali naslednjo inovativno učno uro.</p>
-
+<h2 class="subtitle">1. 1.	Učni drobci</h2>
                     <p>Predhodno znanje o programiranju ni potrebno, vsak modul pa traja le približno 15 minut. V modulih boste spoznali ključne pojme, povezane s programiranjem in računalniškim razmišljanjem. Poleg tega boste v našli tudi praktične nasvete, kako te pojme vključiti v svoj razred.</p>',
     'text_2' => '<p>Zdaj ko ste zaključili enega ali več učnih drobcev za teden programiranja, upamo, da ste dovolj samozavestni, da nekaj digitalne ustvarjalnosti prenesete v razred in dodate svojo dejavnost na <a href="/events">zemljevid tedna programiranja</a>!</p>
 

@@ -3,9 +3,9 @@
 return [
 
     'learning_bits' => 'Programavimo savaitės mokymosi segmentai',
-    'title' => 'Norite dalyvauti ES programavimo savaitėje, bet nežinote, nuo ko pradėti?',
+    'title' => 'Nemokama mokymo medžiaga ir nuotolinio mokymo kursai',
     'text' => ' <p>Čia rasite nemokamos mokymo medžiagos ir išteklių, kurie padės pasiruošti ir suplanuoti naujovišką pamoką.</p>
-
+<h2 class="subtitle">1. Programavimo savaitės mokymosi segmentai</h2>
                     <p>Tam nereikia jokios programavimo patirties, o kiekvienam moduliui užbaigti tereikia apie 15 minučių. Moduliuose pristatomos pagrindinės su programavimu susijusios sąvokos ir skaitmeninio mąstymo veiklos. Be to, juose pateikiama praktinių patarimų, kaip į savo pamoką įtraukti įvairias sąvokas.</p>',
     'text_2' => '<p>Dabar, kai jau esate susipažinę su vienu ar daugiau Programavimo savaitės mokymosi segmentų, tikimės, kad turite pakankamai žinių, kad savo pamokoms suteiktumėte šiek tiek skaitmeninio kūrybiškumo ir pažymėtumėte savo renginį <a href="/events">Programavimo savaitės žemėlapyje</a>!</p>
 

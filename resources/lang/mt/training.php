@@ -3,9 +3,9 @@
 return [
 
     'learning_bits' => 'Għajnuniet ta’ Tagħlim tal-Ġimgħa tal-Ikkowdjar',
-    'title' => 'Qed tikkunsidra tipparteċipa fil-Ġimgħa tal-UE tal-Ikkowdjar iżda ma tafx minn fejn se tibda?',
+    'title' => 'Materjal ta’ taħriġ u korsijiet online  mingħajr ħlas',
     'text' => '<p>Hawn tista’ ssib materjal u riżorsi ta’ taħriġ bla ħlas li ser jgħinuk tibda u tippjana l-lezzjoni innovattivi tiegħek li jmiss.</p>
-
+<h2 class="subtitle">1. Għajnuniet ta’ Tagħlim tal-Ġimgħa tal-Ikkowdjar</h2>
                     <p>Mhi meħtieġa ebda esperjenza preċedenti fl-ikkowdjar jew fl-ipprogrammar, u kull modulu jieħu biss madwar 15-il minuta biex tlestih. Il-modulu jintroduċuk għal kunċetti ewlenin relatati mal-ikkowdjar u attivitajiet tal-ħsieb komputazzjonali. Barra minn hekk, il-moduli jagħtuk ukoll għajnuniet prattiċi u pariri dwar kif tintegra l-kunċetti fil-klassi tiegħek.</p>',
     'text_2' => '<p>Issa li lestejt waħda jew aktar mill-Għajnuniet ta’ Tagħlim tal-Ġimgħa tal-Ikkowdjar, nittamaw li tħossok komdu biżżejjed biex twassal xi kreattività diġitali fil-klassi tiegħek u timmarka l-attività tiegħek fuq il-<a href="/events">Mappa tal-Ġimgħa tal-Ikkowdjar</a>!</p>
 
