@@ -3,9 +3,9 @@
 return [
 
     'learning_bits' => 'Undervisningsbidder til kodeugen',
-    'title' => 'Overvejer du at deltage i EU’s kodeuge, men er du ikke sikker på, hvor du skal starte?',
+    'title' => 'Gratis undervisningsmateriale og onlinekurser',
     'text' => '<p>Her kan du finde gratis undervisningsmaterialer og ressourcer, som kan hjælpe dig med at komme i gang og planlægge din næste innovative lektion.</p>
-
+    <h2 class="subtitle">1. Undervisningsbidder til kodeugen</h2>
                     <p>Der kræves ingen tidligere erfaring med programmering, og de enkelte moduler kan gennemføres på ca. 15 minutter. Modulerne introducerer dig til de vigtigste koncepter i forbindelse med kodning og datalogisk tænkning. Desuden giver modulerne praktiske tips og råd om, hvordan du kan integrere koncepterne i klasseværelset.</p>',
     'text_2' => '<p>Nu da du har gennemført en eller flere af undervisningsbidderne til kodeugen, håber vi, at du føler dig klædt på til at tage den digitale kreativitet med ind i klasseværelset, og at du tilføjer din aktivitet til <a href="/events">kodeugekortet</a>!</p>
 
