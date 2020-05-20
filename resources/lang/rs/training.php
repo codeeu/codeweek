@@ -3,9 +3,9 @@
 return [
 
     'learning_bits' => 'Moduli Nedelje programiranja',
-    'title' => 'Da li razmišljate o učešću u EU nedelji programiranja, ali ne znate odakle da počnete?',
+    'title' => 'Besplatni materijali za trening i onlajn kursevi',
     'text' => ' <p>Ovde možete pronaći besplatne materijale i resurse za obuku koji će vam pomoći da počnete i isplanirate sledeću inovativnu lekciju.</p>
-
+<h2 class="subtitle">1.	Mini lekcije</h2>
                     <p>Nije potrebno prethodno iskustvo u kodiranju ili programiranju, a za svaki modul je potrebno otprilike 15 minuta. Moduli vas uvode u ključne koncepte koji su u vezi sa aktivnostima vezanim za programiranje i računarsko razmišljanje. Osim toga, moduli vam takođe pružaju praktične savete o tome kako da integrišete te koncepte u učionici.</p>
 ',
     'text_2' => '<p>Sada kada ste završili jedan ili više modula Nedelje programiranja, nadamo se da ste spremni da uvedete kreativnu digitalnost u vašu učionicu i da prikačite aktivnost na <a href="/events">mapu Nedelje programiranja</a>!</p>

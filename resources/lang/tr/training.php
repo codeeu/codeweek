@@ -3,9 +3,9 @@
 return [
 
     'learning_bits' => 'Kod Haftası Öğrenim Parçaları',
-    'title' => 'AB Kod Haftasına katılmayı düşünüyor ama nereden başlayacağınızı bilmiyor musunuz?',
+    'title' => 'Ücretsiz eğitim materyalleri ve online kurslar',
     'text' => '<p>Başlangıç yapmanıza ve bir sonraki yeniliklerle dolu dersinizi planlamanıza yardımcı olacak ücretsiz eğitim materyallerini ve kaynakları burada bulabilirsiniz.</p>
-
+<h2 class="subtitle">1. Kod Haftası Öğrenim Parçaları</h2>
                     <p>Herhangi bir kodlama ya da programlama deneyiminizin olması gerekmemekte olup, her modülün tamamlanması yaklaşık 15 dakika sürecektir. Modüller sizi kodlama ve sayısal düşünme aktivitelerine ilişkin temel kavramlar hakkında bilgilendirecektir. Bu modüllerde aynı zamanda, kavramları sınıfınıza nasıl entegre edebileceğinize dair uygulamalı ipuçları ve tavsiyeler de mevcuttur.</p>',
     'text_2' => '<p>Bir ya da daha fazla Kod Haftası Öğrenim Parçasını tamamladığınıza göre, sınıfınıza rahatlıkla dijital yaratıcılık getireceğinizi ve aktivitenizi <a href="/events">Kod Haftası Haritasına</a> ekleyeceğinizi umuyoruz!</p>
 
