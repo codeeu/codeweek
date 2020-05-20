@@ -31,7 +31,7 @@ return [
     "social-media" => [
         0 => 'Kövesse az',
         1 => 'európai programozási hetet a közösségi médián,',
-        2 => 'hogy megtudja, mikor kezdődik a következő tanfolyam.',
+        2 => 'hogy megtudja, mikor kezdődik a következő tanfolyam',
     ]
 
 ];
