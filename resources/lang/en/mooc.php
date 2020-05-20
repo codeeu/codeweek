@@ -44,8 +44,7 @@ return [
     "social-media" => [
         0 => 'Follow',
         1 => 'EU Code Week on social media',
-        2 => 'to find out when the
-                    next course will start',
+        2 => 'to find out when the next course will start',
     ]
 
 
