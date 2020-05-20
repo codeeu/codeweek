@@ -3,9 +3,9 @@
 return [
 
     'learning_bits' => 'Minicursos de la Semana de la Programación',
-    'title' => '¿Estás pensando en participar en la Semana de la Programación de la UE pero no sabes por dónde empezar?',
+    'title' => 'Materiales para la formación y cursos en línea gratuitos',
     'text' => ' <p>Aquí podrás encontrar materiales y recursos formativos gratuitos que te ayudarán a empezar y a preparar tu próxima clase innovadora.</p>
-
+<h2 class="subtitle">1. Minicursos</h2>
                     <p>No se necesita ninguna experiencia previa en programación y tan solo te llevará unos quince minutos completar cada módulo. En ellos, se presentan conceptos básicos relacionados con la programación y actividades de pensamiento computacional. Además, se ofrecen consejos prácticos y asesoramiento sobre cómo integrar estos conceptos en el aula.</p>
 ',
     'text_2' => '<p>Ahora que has completado uno o más minicursos de la Semana de la Programación, esperamos que te sientas con la confianza suficiente como para introducir algo de creatividad digital en tus clases y señalar tu actividad en el <a href="/events">mapa de la Semana de la Programación</a>.</p>
