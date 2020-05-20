@@ -3,9 +3,9 @@
 return [
 
     'learning_bits' => 'Leerbits van de programmeerweek',
-    'title' => 'Denk je erover om mee te doen met de EU-programmeerweek, maar weet je niet waar je moet beginnen?',
+    'title' => 'Gratis trainingsmateriaal en online cursussen',
     'text' => '<p>Hier vind je gratis trainingsmateriaal en bronnen waarmee je aan de slag kunt en je volgende innovatieve les kunt plannen.</p>
-
+<h2 class="subtitle">1. Leerbitjes</h2>
                     <p>Je hoeft geen ervaring te hebben met programmeercode of programmeren. Elke module duurt ongeveer 15 minuten. In de modules maak je kennis met basisconcepten van programmeren en activiteiten voor computationeel denken. Bovendien vind je in de modules praktische tips en adviezen over hoe je de concepten kunt verwerken in je lessen.</p>',
     'text_2' => '<p>Je hebt inmiddels een of meer leerbits van de programmeerweek gedaan. We hopen dat je je nu zeker genoeg voelt om digitale creativiteit naar je klaslokaal te halen en je activiteit op de <a href="/events">kaart van de programmeerweek</a> te zetten!</p>
 

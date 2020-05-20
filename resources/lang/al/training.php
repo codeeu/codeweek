@@ -3,9 +3,9 @@
 return [
 
     'learning_bits' => 'Mësimet e Code Week',
-    'title' => 'Mësimet e Code Week',
+    'title' => 'Materiale trajnimi falas dhe kurse nëpërmjet internetit',
     'text' => '<p>Po mendoni të merrni pjesë në EU Code Week, por nuk dini se ku të filloni?</p>
-
+<h2 class="subtitle">1.	Mësimet</h2>
                     <p>Këtu mund të gjeni falas materiale trajnimi dhe burime që do t’ju ndihmojnë të filloni dhe të planifikoni mësimin tuaj novator të radhës.</p>
 
                     <p>Nuk nevojitet përvojë e mëparshme me kodim ose programim, dhe secili modul kërkon vetëm rreth 15 minuta që të plotësohet. Modulet ju prezantojnë konceptet kyçe që lidhen me kodimin dhe aktivitetet e mendimit kompjuterik. Gjithashtu, modulet ju japin sugjerime dhe këshilla praktike se si të integroni konceptet tuaja në klasë.</p>',

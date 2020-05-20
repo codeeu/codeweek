@@ -3,9 +3,9 @@
 return [
 
     'learning_bits' => 'Hodiny Týždňa programovania',
-    'title' => 'Radi by ste sa zapojili do Európskeho týždňa programovania, ale neviete, kde začať?',
+    'title' => 'Bezplatné školiace materiály a online kurzy',
     'text' => '<p>Tu nájdete bezplatné školiace materiály a zdroje, ktoré vám pomôžu zoznámiť sa s problematikou a naplánovať si najbližšiu inovačnú hodinu.</p>
-
+<h2 class="subtitle">1. Hodiny Týždňa programovania</h2>
                     <p>Nepotrebujete žiadne predchádzajúce skúsenosti s programovaním a každý modul vám zaberie len okolo 15 minút. V moduloch spoznáte kľúčové koncepcie súvisiace s programovaním a aktivity na rozvoj výpočtového myslenia. Okrem toho sa v moduloch dozviete praktické tipy a rady, ako začleniť tieto koncepcie do vyučovania.</p>',
     'text_2' => '<p>Dúfame, že po jednej alebo viacerých hodinách Týždňa programovania ste odhodlaní vniesť trocha digitálnej tvorivosti do vyučovania. Nezabudnite zaregistrovať svoju aktivitu na <a href="/events">mapu Týždňa programovania</a>!</p>
 
