@@ -31,7 +31,7 @@ return [
     "social-media" => [
         0 => 'Ndiqni',
         1 => 'EU Code Week në mediat sociale',
-        2 => 'për të zbuluar se kur do të fillojë kursi tjetër.',
+        2 => 'për të zbuluar se kur do të fillojë kursi tjetër',
     ]
 
 ];

@@ -3,9 +3,9 @@
 return [
 
     'learning_bits' => 'Pillole di apprendimento della Settimana europea della programmazione',
-    'title' => 'Stai pensando di partecipare alla Settimana europea della programmazione ma non sai da dove cominciare?',
+    'title' => 'Materiali didattici e corsi online gratuiti',
     'text' => ' <p>Qui puoi trovare materiali e risorse per la formazione gratuiti che ti aiuteranno a cominciare e a pianificare la tua prossima lezione innovativa.</p>
-
+<h2 class="subtitle">1.	Pillole di apprendimento</h2>
                     <p>Non è necessaria alcuna precedente esperienza di programmazione e ogni modulo richiede soltanto 15 minuti circa per essere completato. I moduli presentano concetti fondamentali relativi alla programmazione e alle attività di pensiero computazionale, oltre a fornirti anche consigli e suggerimenti pratici su come integrare i concetti in classe.</p>',
     'text_2' => '<p>Ora che hai completato una o più pillole di apprendimento della Settimana europea della programmazione, speriamo che ti senta abbastanza a tuo agio per portare un po’ di creatività digitale in classe e appuntare la tua attività sulla <a href="/events">mappa della Settimana europea della programmazione</a>!</p>
 

@@ -3,9 +3,9 @@
 return [
 
     'learning_bits' => 'Materijali za učenje Nedjelje programiranja',
-    'title' => 'Da li razmišljate o učešću u Evropskoj nedjelji programiranja, ali ne znate odakle da krenete?',
+    'title' => 'Besplatni materijali za obuku i internetski tečajevi',
     'text' => '<p>Ovdje možete pronaći besplatan materijal za obuku i literaturu koja će vam pomoći da počnete i isplanirate svoje novo, inovativno predavanje.</p>
-
+<h2 class="subtitle">1. Materijali za učenje Nedjelje programiranja</h2>
                     <p>Nije neophodno prethodno iskustvo u oblasti kodiranja ili programiranja i potrebno vam je samo oko 15 minuta po modulu. Moduli vam predstavljaju ključne koncepte vezane za aktivnosti programiranja i računarskog mišljenja. Poreed toga, moduli vam daju praktične savjete o načinu integracije koncepata u vašu učionicu.</p>',
     'text_2' => '<p>Sada kada ste prošli kroz jedan ili više materijala za učenje Nedjelje programiranja, nadamo se da se osjećate dovoljno spremnim da u svoje učionice unesete malo digitalne kreativnosti i svoju aktivnost dodate na <a href="/events">mapu Nedjelje programiranja</a>!</p>
 
