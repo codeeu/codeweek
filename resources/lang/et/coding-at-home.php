@@ -73,7 +73,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'Maadeuurija',
+        'title' => 'Maadeuurija ilma jalajälgedeta',
         'text' => 'Maadeuurija kõnnib mängualust mööda lähtepunktist sihtpunkti, püüdes külastada kõiki kaste. Kui maadeuurija  kõnnib, jätab ta värvilisi jälgi, mis võimaldavad robotil värve tõlgendades tema samme järgida. Mäng muutub veelgi intrigeerivamaks, kui maadeavastaja puhastab jalajäljed ära, jättes alles ainult värvid.',
         'material' => 'samuti punased, kollased ja hallid markerid (või pliiatsid)',
         'questions' => [

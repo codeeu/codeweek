@@ -76,7 +76,7 @@ Gerekli malzeme: dama tahtası, ayak izli taşlar.',
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'Kaşif (The explorer)',
+        'title' => 'Ayak izi olmayan Explorer',
         'text' => 'Kaşif; başlangıç noktasından hedefe kadar, tüm kutuları ziyaret etmeye çalışarak tahtayı dolaşır. Kaşif yürüdükçe, renkli ayak izleri bırakır, bu durum robotun renkleri yorumlayarak adımları takip etmesine olanak tanır. Kaşif sadece renkleri bırakarak ayak izlerini temizlediğinde, oyun daha da ilginç hale gelir.',
         'material' => 'ayrıca kırmızı, sarı ve gri keçeli kalemler (ya da boya kalemleri)',
         'questions' => [

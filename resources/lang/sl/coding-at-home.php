@@ -75,7 +75,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'Raziskovalec',
+        'title' => 'Raziskovalec brez stopinj',
         'text' => 'Raziskovalec hodi po plošči od začetne točke do cilja in poskuša obiskati vsa polja. Med hojo raziskovalec pušča raznobarvne stopinje, ki omogočajo robotu, da sledi korakom z interpretiranjem barv. Igra postane še bolj zanimiva, ko raziskovalec umakne stopinje in pusti samo barve.',
         'material' => 'in rdeče, rumene ter sive oznake (ali svinčniki).',
         'questions' => [

@@ -75,7 +75,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'Bádateľ ',
+        'title' => 'Prieskumník bez stôp',
         'text' => 'Bádateľ chodí po hracej ploche od štartu do cieľa a snaží sa navštíviť všetky políčka. Ako sa bádateľ pohybuje, zanecháva za sebou farebné stopy, ktoré robotovi umožňujú interpretáciou farieb sledovať jeho kroky. Hra je ešte zaujímavejšia, keď po sebe bádateľ zahladí stopy a ostanú len farby.',
         'material' => 'a červená, žltá a sivá fixka (alebo pastelky)',
         'questions' => [
