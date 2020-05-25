@@ -75,7 +75,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'O Explorador ',
+        'title' => 'Explorador sem pegadas',
         'text' => 'O explorador percorre o tabuleiro desde o ponto de partida até ao ponto de chegada, tentando passar por todas as casas. À medida que o explorador avança, vai deixando pegadas coloridas, que permitem ao robô seguir os seus passos ao interpretar as cores. O jogo torna-se ainda mais desafiante quando o explorador limpa as pegadas deixando apenas as cores.',
         'material' => 'bem como marcadores (ou lápis) em vermelho, amarelo e cinzento',
         'questions' => [

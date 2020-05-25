@@ -75,7 +75,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'Der Entdecker ',
+        'title' => 'Der Entdecker ohne Fußabdrücke',
         'text' => 'Der Entdecker wandelt auf dem Spielfeld umher, von einer Start- zu einer Zielposition zu gelangen und versucht dabei, alle Kästchen zu besuchen. Auf seinem Weg hinterlässt der Entdecker bunte Fußabdrücke. Diese geben wiederum dem Roboter klare Anweisungen, wohin er gehen soll. Das Spiel wird noch spannender, wenn der Entdecker keine Fußabdrücke, sondern nur die entsprechenden Farben hinterlässt.',
         'material' => 'sowie rote, gelbe und graue Filz- oder Buntstifte',
         'questions' => [

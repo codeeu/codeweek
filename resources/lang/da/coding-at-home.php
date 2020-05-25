@@ -75,7 +75,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'The Explorer without footprints',
+        'title' => 'Exploreren uden fodaftryk',
         'text' => 'Exploreren bevæger sig rundt på spillepladen fra start- til slutpunkt, mens han forsøger at komme rundt til alle felter. Når exploreren bevæger sig rundt efterlader han fodaftryk, der gør det muligt for robotten at følge i hans fodspor ved at oversætte farverne. Spillet bliver endnu mere spændende, når exploreren fjerner fodsporene og kun efterlade sig farverne.',
         'material' => 'samt tuschpenne (eller blyanter) i rød, gul og grå',
         'questions' => [

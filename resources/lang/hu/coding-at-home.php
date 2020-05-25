@@ -75,7 +75,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'A felfedező ',
+        'title' => 'Felfedező lábnyom nélkül',
         'text' => 'A felfedező a táblán mozog, a kezdőponttól a célpontig, és próbál minden mezőt érinteni. Ahogy megy, színes lábnyomokat hagy maga után, amelyek segítségével, a színek interpretálásával, a robot követni tudja a lépéseit. A játék még élvezetesebb, ha a felfedező letörli a lábnyomokat, és csak a színek maradnak.',
         'material' => 'valamint piros, sárga és szürke filctollak (vagy ceruzák)',
         'questions' => [
