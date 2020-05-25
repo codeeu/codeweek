@@ -75,7 +75,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'Odkrywca',
+        'title' => 'Odkrywca bez œladów',
         'text' => 'Odkrywca spaceruje po planszy, zaczyna w punkcie wyjścia i kieruje się do celu, starając się odwiedzić wszystkie pola. Podczas spaceru odkrywca pozostawia kolorowe ślady, które pozwalają robotowi na śledzenie kroków poprzez interpretację kolorów. Gra staje się jeszcze bardziej intrygująca, gdy odkrywca usuwa ślady, pozostawiając jedynie kolory.',
         'material' => 'oraz czerwony, żółty i szary marker (lub ołówek)',
         'questions' => [

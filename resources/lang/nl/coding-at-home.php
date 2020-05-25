@@ -75,7 +75,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'De verkenner',
+        'title' => 'De Verkenner zonder voetstappen',
         'text' => 'De verkenner loopt over het bord vanaf het startpunt naar het doel en probeert alle vakjes aan te doen. Terwijl de verkenner loopt, laat hij gekleurde voetstappen achter, die de robot in staat stellen de stappen te volgen door de kleuren te interpreteren. Het spel wordt nog intrigerender als de verkenner de voetstappen wegwerkt en alleen de kleuren overblijven.',
         'material' => 'rode, gele en grijze markeerstiften (of potloden).',
         'questions' => [

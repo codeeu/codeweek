@@ -74,7 +74,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'El explorador',
+        'title' => 'Explorador sin huellas',
         'text' => 'El explorador debe caminar alrededor del tablero desde el punto de salida hasta la meta tratando de pasar por todas las casillas. A medida que el explorador avanza va dejando huellas de colores que permiten al robot seguir los pasos interpretando dichos colores. El juego se vuelve aún más intrigante cuando el explorador elimina las huellas dejando solo los colores.',
         'material' => 'Así como marcadores (o lapiceros) rojo, amarillo y gris.',
         'questions' => [
