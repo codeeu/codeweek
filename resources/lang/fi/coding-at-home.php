@@ -75,7 +75,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'Tutkimusmatkailija',
+        'title' => 'Tutkimusmatkailija ilman jalanjälkiä',
         'text' => 'Tutkimusmatkailija kulkee ympäri pelilautaa aloituspisteestä maaliin yrittäen käydä kaikissa ruuduissa. Tutkimusmatkailijan kulkiessa pelialustalla hän jättää erivärisiä jalanjälkiä, joita seuraamalla ja askelten värejä tulkitsemalla robotti voi kulkea maaliin. Pelistä tulee entistä kiehtovampi, kun tutkimusmatkailija poistaa jalanjäljet ja jättää ruutuihin vain värit.',
         'material' => 'ja punaisia, keltaisia ja harmaita tusseja (tai lyijykyniä)',
         'questions' => [

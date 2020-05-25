@@ -75,7 +75,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'Istraživač ',
+        'title' => 'Istraživač bez tragova',
         'text' => 'Istraživač hoda pločom od polazišta do cilja i pokušava posjetiti sva polja. Istraživač hodajući iza sebe ostavlja obojene otiske stopala po kojima ih robot slijedi tumačeći boje. Igra postaje još intrigantnija kad istraživač obriše otiske stopala i ostavi samo boje.',
         'material' => 'žuti i sivi flomasteri (ili bojice).',
         'questions' => [
