@@ -75,7 +75,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'Průzkumník bez stop',
+        'title' => 'Průzkumník beze stop',
         'text' => 'Průzkumník chodí po herním plánu z výchozího bodu do cíle a snaží se vstoupit na všechna pole. Při chůzi nechává barevné otisky svých chodidel, takže robot může jít v jeho stopách na základě interpretace barev. Hra nabývá na zajímavosti, když průzkumník smaže stopy a ponechá pouze barvy.',
         'material' => 'a červené, žluté a šedé fixy (nebo tužky)',
         'questions' => [

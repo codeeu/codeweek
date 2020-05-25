@@ -75,7 +75,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'L\'esploratore ',
+        'title' => 'L\'esploratore senza impronte',
         'text' => 'L\'esploratore cammina sulla scacchiera dal punto di partenza al punto di arrivo, cercando di visitare tutte le caselle. Nel camminare, l\'esploratore o esploratrice lascia impronte colorate, che consentono al robot di seguire i suoi passi interpretando i colori. Il gioco diventa ancora più intrigante quando l\'esploratore cancella le impronte e lascia solo i colori.',
         'material' => 'e pennarelli (o matite) di colore rosso, giallo e grigio.',
         'questions' => [

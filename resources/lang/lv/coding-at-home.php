@@ -75,7 +75,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'Pētnieks',
+        'title' => 'Pētnieks bez pēdām',
         'text' => 'Pētnieks apstaigā spēles laukumu no sākuma punkta līdz galamērķim, mēģinot apmeklēt visus lauciņus. Kamēr pētnieks staigā, viņš aiz sevis atstāj krāsainas pēdas, kas ļauj robotam viņam sekot, interpretējot krāsu nozīmi. Spēle kļūst vēl intirģējošāka, ja pētnieks noņem pēdas, atstājot tikai krāsas.',
         'material' => 'kā arī sarkans, dzeltens un pelēks marķieris (vai zīmulis).',
         'questions' => [

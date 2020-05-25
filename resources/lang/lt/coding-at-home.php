@@ -75,7 +75,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'Tyrinėtojas',
+        'title' => 'Tyrinëtojas be pëdsakø',
         'text' => ' „Tyrinėtojas“ vaikšto po lentą nuo pradžios taško iki pabaigos taško, stengdamasis aplankyti visus langelius. Eidamas „tyrinėtojas“ palieka spalvotus pėdsakus, kurie leidžia robotui jais sekti, iššifruojant spalvas. Žaidimas tampa dar įdomesnis, kai „tyrinėtojas“ ištrina pėdsakus ir palieka tik spalvas.',
         'material' => 'ir raudonas, geltonas ir pilkas žymekliai (arba pieštukai)',
         'questions' => [
