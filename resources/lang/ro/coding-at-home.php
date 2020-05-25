@@ -75,7 +75,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'Exploratorul',
+        'title' => 'Exploratorul fără urme',
         'text' => 'Exploratorul se deplasează pe tabla de joc, din poziția de pornire spre cea de destinație, încercând să viziteze toate căsuțele. Pe măsură ce se deplasează, acesta lasă urme de pași colorate, care îi permit robotului să urmeze pașii, interpretând culorile. Jocul devine și mai incitant atunci când exploratorul șterge urmele de pași, lăsând în urmă numai culorile.',
         'material' => 'precum și un marker roșu, unul galben și unul gri (sau creioane cu aceste culori)',
         'questions' => [

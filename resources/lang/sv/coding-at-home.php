@@ -75,7 +75,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'Utforskaren ',
+        'title' => 'Utforskare utan fotavtryck',
         'text' => 'Utforskaren går runt spelplanen från startpunkten till mål och försöker att ha gått på alla rutor. När utforskaren rör sig lämnar den fotavtryck, vilket gör att roboten kan följa stegen genom att se på färgerna. Spelet blir ännu mer utmanande om utforskaren röjer undan fotspåren och bara lämnar kvar färgerna.',
         'material' => 'samt röda, gula och gråa färgpennor',
         'questions' => [

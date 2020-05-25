@@ -75,7 +75,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'L-esploratur',
+        'title' => 'L-Esploratur mingħajr passi',
         'text' => 'L-esploratur jimxi fuq il-bord mill-punt tat-tluq sal-mira waqt li jipprova jżur il-kaxxi kollha. Hu u jimxi, iħalli passi kkuluriti li jippermettu lir-robot isegwi l-passi billi jinterpreta l-kuluri. Il-logħba ssir aktar interessanti meta l-esploratur ineħħi l-passi u jħalli biss il-kuluri.',
         'material' => 'kif ukoll markers (jew lapsijiet) ħomor, sofor u griżi.',
         'questions' => [

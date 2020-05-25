@@ -75,7 +75,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'Eksploruesi',
+        'title' => 'Eksploruesi pa gjurmë',
         'text' => 'Eksploruesi shëtit rreth tabelës nga pika e fillimit deri në objektiv, duke u përpjekur të përshkojë të gjitha kutitë. Ndërsa eksploruesi ecën ai lë gjurmë me ngjyrë, të cilat lejojnë që roboti të ndjekë hapat duke interpretuar ngjyrat. Loja bëhet edhe më intriguese kur eksploruesi pastron gjurmët duke lënë vetëm ngjyrat.',
         'material' => 'si dhe shënjues (ose lapsa) të kuq, të verdhë dhe gri',
         'questions' => [
