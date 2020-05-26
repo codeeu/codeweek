@@ -11,7 +11,7 @@ return [
 
                     <p>Sınıfınızda, halka açık ziyaret günlerinde ya da okulunuzdaki bir etkinlikte kolayca ders organize edebilirsiniz. Uygun bir tarih bulup aktivitenizi <a href="/events">Kod Haftası haritasına</a> eklemeniz yeterli. Tüm aktivite organizatörlerine çabalarından dolayı katılım sertifikası verilecektir.</p>
 
-                    <p>Birbirinden hevesli öğretmenlerin yer aldığı uluslararası bir grubun parçası olmak isterseniz, <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">AB Kod Haftası Facebook öğretmenler grubuna</a> katılın! Bunu bir adım daha öteye taşımak ve ülkenizdeki ya da diğer ülkelerdeki okullarla iş birliği yapmak isterseniz - <a href="codeweek4all">Herkes için Kod Haftası mücadelesine</a> katılın.</p>',
+                    <p>Birbirinden hevesli öğretmenlerin yer aldığı uluslararası bir grubun parçası olmak isterseniz, <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">AB Kod Haftası Facebook öğretmenler grubuna</a> katılın! Bunu bir adım daha öteye taşımak ve ülkenizdeki ya da diğer ülkelerdeki okullarla iş birliği yapmak isterseniz - <a href="/codeweek4all">Herkes için Kod Haftası mücadelesine</a> katılın.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Dijital teknolojisiz (bağlantısız) kodlama',
@@ -211,7 +211,7 @@ Bu videoda, Kod Haftası ekibi size özellikle görme bozukluğu, Down sendromu 
         'title' => 'Aktivitenizi Kod Haftası Haritasına eklemeyi unutmayın!',
         'text' => '<p>Sınıfınızda, halka açık ziyaret günlerinde ya da okulunuzdaki bir etkinlikte kolayca ders organize edebilirsiniz. Uygun bir tarih bulup aktivitenizi <a href="/events">Kod Haftası haritasına</a> eklemeniz yeterli. Tüm aktivite organizatörlerine çabalarından dolayı katılım sertifikası verilecektir.</p>
 
-<p>Birbirinden hevesli öğretmenlerin yer aldığı uluslararası bir grubun parçası olmak isterseniz, <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">AB Kod Haftası Facebook öğretmenler grubuna</a> katılın! Bunu bir adım daha öteye taşımak ve ülkenizdeki ya da diğer ülkelerdeki okullarla iş birliği yapmak isterseniz - <a href="codeweek4all">Herkes için Kod Haftası mücadelesine</a> katılın.</p>'
+<p>Birbirinden hevesli öğretmenlerin yer aldığı uluslararası bir grubun parçası olmak isterseniz, <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">AB Kod Haftası Facebook öğretmenler grubuna</a> katılın! Bunu bir adım daha öteye taşımak ve ülkenizdeki ya da diğer ülkelerdeki okullarla iş birliği yapmak isterseniz - <a href="/codeweek4all">Herkes için Kod Haftası mücadelesine</a> katılın.</p>'
     ]
 
 ];

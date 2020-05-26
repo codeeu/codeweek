@@ -11,7 +11,7 @@ return [
 
                     <p>Du kan lätt organisera en lektion, hålla öppet hus eller anordna ett evenemang på din skola. Hitta ett datum och registrera din aktivitet på <a href="/events">Code Week-kartan</a>. Alla arrangörer får ett certifikat för sina insatser.</p>
 
-                    <p>Gå med i <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">lärargruppen för EU Code Week på Facebook</a> om du vill få kontakt med en internationell grupp av engagerade lärare! Gå ett steg längre och samarbeta med andra skolor i ditt land eller något annat genom att delta i <a href="codeweek4all">Code Week 4 All challenge</a>.</p>',
+                    <p>Gå med i <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">lärargruppen för EU Code Week på Facebook</a> om du vill få kontakt med en internationell grupp av engagerade lärare! Gå ett steg längre och samarbeta med andra skolor i ditt land eller något annat genom att delta i <a href="/codeweek4all">Code Week 4 All challenge</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Kodning utan digital teknik (frånkopplad)',
@@ -211,7 +211,7 @@ I den här videon kommer Code Week-teamet att visa dig några praktiska, enkla o
         'title' => 'Glöm inte att lägga till din aktivitet på Code Week-kartan!',
         'text' => '<p>Du kan lätt organisera en lektion, hålla öppet hus eller anordna ett evenemang på din skola. Hitta ett datum och registrera din aktivitet på <a href="/events">Code Week-kartan</a>. Alla arrangörer får ett certifikat för sina insatser.</p>
 
-<p>Gå med i <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">lärargruppen för EU Code Week på Facebook</a> om du vill få kontakt med en internationell grupp av engagerade lärare! Gå ett steg längre och samarbeta med andra skolor i ditt land eller något annat genom att delta i <a href="codeweek4all">Code Week 4 All challenge</a>.</p>'
+<p>Gå med i <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">lärargruppen för EU Code Week på Facebook</a> om du vill få kontakt med en internationell grupp av engagerade lärare! Gå ett steg längre och samarbeta med andra skolor i ditt land eller något annat genom att delta i <a href="/codeweek4all">Code Week 4 All challenge</a>.</p>'
     ]
 
 ];
