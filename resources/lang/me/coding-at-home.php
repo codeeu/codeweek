@@ -75,7 +75,7 @@ return [
     ],
 
     'explorer-without-footprints' => [
-        'title' => 'Explorer',
+        'title' => 'Eksplorer bez otisaka',
         'text' => 'Explorer/Istraživač se kreće po tabli od početne pozicije do cilja pokušavajući da pređe sva polja. Dok se kreće ostavlja otiske stopala u boji zbog čega robot može da prati stope po boji. Igra postaje još zanimljivija kada explorer ukloni stope a ostanu samo boje.',
         'material' => 'crveni, žuti i sivi marker (ili drvene bojice)',
         'questions' => [
