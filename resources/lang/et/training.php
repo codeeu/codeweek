@@ -11,7 +11,7 @@ return [
 
                     <p>Võite näiteks organiseerida ühe tunni, avatud päeva või kooliürituse. Lihtsalt valige kuupäev ja registreerige oma üritus programmeerimisnädala <a href="/events">Code Week kaardile</a>. Iga tegevuse ja/või ürituse organiseerija saab oma pingutuse eest osaleja tunnistuse.</p>
 
-                    <p>Kui soovite võtta ühendust teiste entusiastlike õpetajatega, siis liituge <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ELi programmeerimisnädala Code Week Facebooki õpetajate grupiga</a>! Kui soovite astuda sammu veelgi kaugemale ja teha koostööd teiste koolidega kas enda riigis või piiri taga, siis liituge <a href="codeweek4all">programmeerimisnädala väljakutsega Code Week 4 All</a>.</p>',
+                    <p>Kui soovite võtta ühendust teiste entusiastlike õpetajatega, siis liituge <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ELi programmeerimisnädala Code Week Facebooki õpetajate grupiga</a>! Kui soovite astuda sammu veelgi kaugemale ja teha koostööd teiste koolidega kas enda riigis või piiri taga, siis liituge <a href="/codeweek4all">programmeerimisnädala väljakutsega Code Week 4 All</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Programmeerimine ilma digitaalse tehnoloogiata',
@@ -211,7 +211,7 @@ Pythoni abil saavad õpilased koostada viktoriine ajaloosündmuste kohta, lahend
         'title' => 'Ärge unustage lisada oma tegevust programmeerimisnädala Code Week kaardile!',
         'text' => '<p>Võite näiteks organiseerida ühe tunni, avatud päeva või kooliürituse. Lihtsalt valige kuupäev ja kandke oma üritus programmeerimisnädala <a href="/events">Code Week kaardile</a>. Iga tegevuse ja/või ürituse organiseerija saab oma pingutuse eest osaleja tunnistuse.</p>
 
-<p>Kui soovite võtta ühendust teiste entusiastlike õpetajatega, siis liituge <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ELi programmeerimisnädala Code Week Facebooki õpetajate grupiga</a>! Kui soovite astuda sammu veelgi kaugemale ja teha koostööd teist koolidega kas enda riigis või üle piiri, siis liituge <a href="codeweek4all">programmeerimisnädala väljakutsega Code Week 4 All</a>.</p>'
+<p>Kui soovite võtta ühendust teiste entusiastlike õpetajatega, siis liituge <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ELi programmeerimisnädala Code Week Facebooki õpetajate grupiga</a>! Kui soovite astuda sammu veelgi kaugemale ja teha koostööd teist koolidega kas enda riigis või üle piiri, siis liituge <a href="/codeweek4all">programmeerimisnädala väljakutsega Code Week 4 All</a>.</p>'
     ]
 
 ];

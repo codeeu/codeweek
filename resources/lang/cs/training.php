@@ -11,7 +11,7 @@ return [
 
                     <p>Můžete snadno zorganizovat lekci ve své třídě, den otevřených dveří nebo akci ve své škole. Stačí si vybrat datum a zaregistrovat svou akci na <a href="/events">mapu na stránkách Týdne programování</a>. Za svou snahu každý organizátor akce dostane certifikát o účasti.</p>
 
-                    <p>Pokud byste se chtěli spojit s mezinárodní skupinou nadšených učitelů, připojte se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">na Facebooku ke skupině Evropského týdne programování pro učitele</a>! Pokud chcete udělat další krok a spolupracovat s dalšími školami ve vaší zemi nebo v zahraničí, zapojte se do <a href="codeweek4all">soutěže Code Week 4 All</a>.</p>',
+                    <p>Pokud byste se chtěli spojit s mezinárodní skupinou nadšených učitelů, připojte se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">na Facebooku ke skupině Evropského týdne programování pro učitele</a>! Pokud chcete udělat další krok a spolupracovat s dalšími školami ve vaší zemi nebo v zahraničí, zapojte se do <a href="/codeweek4all">soutěže Code Week 4 All</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Programování bez digitální technologie (unplugged)',
@@ -211,7 +211,7 @@ V Pythonu mohou studenti vytvářet kvízy o historických událostech, řešit 
         'title' => '>Nezapomeňte přidat svou akci na mapu na stránkách Týdne programování!',
         'text' => '<p>Můžete snadno zorganizovat lekci ve své třídě, den otevřených dveří nebo akci ve své škole. Stačí si vybrat datum a zaregistrovat svou akci na <a href="/events">mapu na stránkách Týdne programování</a>. Za svou snahu každý organizátor akce dostane certifikát o účasti.</p>
 
-<p>Pokud byste se chtěli spojit s mezinárodní skupinou nadšených učitelů, připojte se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">na Facebooku ke skupině Evropského týdne programování pro učitele</a>! Pokud chcete udělat další krok a spolupracovat s dalšími školami ve vaší zemi nebo v zahraničí, zapojte se do <a href="codeweek4all">soutěže Code Week 4 All</a>.</p>'
+<p>Pokud byste se chtěli spojit s mezinárodní skupinou nadšených učitelů, připojte se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">na Facebooku ke skupině Evropského týdne programování pro učitele</a>! Pokud chcete udělat další krok a spolupracovat s dalšími školami ve vaší zemi nebo v zahraničí, zapojte se do <a href="/codeweek4all">soutěže Code Week 4 All</a>.</p>'
     ]
 
 ];

@@ -11,7 +11,7 @@ return [
 
                     <p>Voit helposti järjestää oppitunnin luokassasi, avoimien ovien päivän tai tapahtuman koulullasi. Sovi vain päivä ja merkitse tapahtuma <a href="/events">koodausviikkokarttaan</a>. Jokainen tapahtumajärjestäjä saa osallistumistodistuksen.</p>
 
-                    <p>Jos haluat pitää yhteyttä innokkaisiin opettajiin kansainvälisesti, liity <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU:n koodausviikon opettajien Facebook-ryhmään</a>! Jos haluat tehdä enemmän, ryhdy yhteistyöhön oman maasi tai ulkomaisten koulujen kanssa liittymällä <a href="codeweek4all">Koodausviikko kaikille -haasteeseen</a>.</p>',
+                    <p>Jos haluat pitää yhteyttä innokkaisiin opettajiin kansainvälisesti, liity <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU:n koodausviikon opettajien Facebook-ryhmään</a>! Jos haluat tehdä enemmän, ryhdy yhteistyöhön oman maasi tai ulkomaisten koulujen kanssa liittymällä <a href="/codeweek4all">Koodausviikko kaikille -haasteeseen</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Koodaus ilman digitaalista teknologiaa (unplugged)',
@@ -211,7 +211,7 @@ Tällä videolla koodausviikon tiimi esittelee muutamia helppoja ja hauskoja kä
         'title' => 'Muista merkitä oma tapahtumasi koodausviikkokarttaan!',
         'text' => '<p>Voit helposti järjestää oppitunnin luokassasi, avoimien ovien päivän tai tapahtuman koulullasi. Sovi vain päivä ja merkitse tapahtuma <a href="/events">koodausviikkokarttaan</a>. Jokainen tapahtumajärjestäjä saa osallistumistodistuksen.</p>
 
-<p>Jos haluat pitää yhteyttä innokkaisiin opettajiin kansainvälisesti, liity <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU:n koodausviikon opettajien Facebook-ryhmään</a>! Jos haluat tehdä enemmän, ryhdy yhteistyöhön oman maasi tai ulkomaisten koulujen kanssa liittymällä <a href="codeweek4all">Koodausviikko kaikille -haasteeseen</a>.</p>'
+<p>Jos haluat pitää yhteyttä innokkaisiin opettajiin kansainvälisesti, liity <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU:n koodausviikon opettajien Facebook-ryhmään</a>! Jos haluat tehdä enemmän, ryhdy yhteistyöhön oman maasi tai ulkomaisten koulujen kanssa liittymällä <a href="/codeweek4all">Koodausviikko kaikille -haasteeseen</a>.</p>'
     ]
 
 ];

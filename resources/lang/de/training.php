@@ -11,7 +11,7 @@ return [
 
                     <p>Sie können ganz einfach eine Lehrstunde in Ihrem Klassenzimmer, einen Tag der offenen Tür oder eine Veranstaltung an Ihrer Schule ausrichten. Überlegen Sie sich nur ein Datum und registrieren Sie Ihre Aktivität auf der <a href="/events">Code Week-Karte</a>. Alle Organisatoren von Aktivitäten erhalten für ihre Beteiligung ein Teilnahmezertifikat.</p>
 
-                    <p>Treten Sie der <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU Code Week Facebook-Gruppe für Lehrerinnen und Lehrer</a> bei, falls Sie sich mit einer internationalen Gruppe von begeisterten Lehrerkräften vernetzen möchten! Nehmen Sie an der <a href="codeweek4all">Code Week 4 All Challenge</a> teil, wenn Sie noch einen Schritt weiter gehen und mit anderen Schulen in Ihrem Land oder im Ausland zusammenarbeiten möchten.</p>',
+                    <p>Treten Sie der <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU Code Week Facebook-Gruppe für Lehrerinnen und Lehrer</a> bei, falls Sie sich mit einer internationalen Gruppe von begeisterten Lehrerkräften vernetzen möchten! Nehmen Sie an der <a href="/codeweek4all">Code Week 4 All Challenge</a> teil, wenn Sie noch einen Schritt weiter gehen und mit anderen Schulen in Ihrem Land oder im Ausland zusammenarbeiten möchten.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Programmieren ohne digitale Technologie (ohne Computer)',
@@ -211,7 +211,7 @@ Mit Python können Ihre Schülerinnen und Schüler u. a. Ratespiele zu historisc
         'title' => 'Vergessen Sie nicht, Ihre Aktivität auf der Code Week-Karte zu markieren!',
         'text' => '<p>Sie können ganz einfach eine Lehrstunde in Ihrem Klassenzimmer, einen Tag der offenen Tür oder eine Veranstaltung an Ihrer Schule ausrichten. Überlegen Sie sich nur ein Datum und registrieren Sie Ihre Aktivität in der <a href="/events">Code Week-Karte</a>. Alle Organisatoren von Aktivitäten erhalten für ihre Beteiligung ein Teilnahmezertifikat.</p>
 
-<p>Treten Sie der <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU Code Week-Facebook-Gruppe für Lehrerinnen und Lehrer</a> bei, falls Sie sich mit einer internationalen Gruppe von begeisterten Lehrkräften vernetzen möchten! Nehmen Sie an der <a href="codeweek4all">Code Week 4 All Challenge</a> teil, wenn Sie noch einen Schritt weiter gehen und mit anderen Schulen in Ihrem Land oder im Ausland zusammenarbeiten möchten.</p>'
+<p>Treten Sie der <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU Code Week-Facebook-Gruppe für Lehrerinnen und Lehrer</a> bei, falls Sie sich mit einer internationalen Gruppe von begeisterten Lehrkräften vernetzen möchten! Nehmen Sie an der <a href="/codeweek4all">Code Week 4 All Challenge</a> teil, wenn Sie noch einen Schritt weiter gehen und mit anderen Schulen in Ihrem Land oder im Ausland zusammenarbeiten möchten.</p>'
     ]
 
 ];

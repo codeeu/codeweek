@@ -11,7 +11,7 @@ return [
 
                     <p>Vous pouvez facilement organiser un cours en classe, une journée portes ouvertes ou un événement dans votre établissement. Choisissez une date et inscrivez votre activité sur la <a href="/events">carte Code Week</a>. Chaque organisateur d’activité sera récompensé pour ses efforts par un certificat de participation.</p>
 
-                    <p>Si vous souhaitez entrer en contact avec un groupe international d’enseignants enthousiastes, rejoignez le <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">groupe Facebook de la Semaine européenne du code pour enseignants</a>! Pour aller plus loin et collaborer avec d’autres écoles dans votre pays ou par-delà les frontières, participez au <a href="codeweek4all">Code Week 4 All challenge</a>.</p>',
+                    <p>Si vous souhaitez entrer en contact avec un groupe international d’enseignants enthousiastes, rejoignez le <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">groupe Facebook de la Semaine européenne du code pour enseignants</a>! Pour aller plus loin et collaborer avec d’autres écoles dans votre pays ou par-delà les frontières, participez au <a href="/codeweek4all">Code Week 4 All challenge</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Coder sans technologie numérique (hors ligne)',
@@ -211,7 +211,7 @@ Dans cette vidéo, l’équipe de la Semaine du code vous présentera quelques a
         'title' => 'N’oubliez pas d’ajouter votre activité à la carte Code Week!',
         'text' => '<p>Vous pouvez facilement organiser un cours en classe, une journée portes ouvertes ou un événement dans votre établissement. Choisissez une date et inscrivez votre activité sur la <a href="/events">carte Code Week</a>. Chaque organisateur d’activité sera récompensé pour ses efforts par un certificat de participation.</p>
 
-<p>Si vous souhaitez entrer en contact avec un groupe international d’enseignants enthousiastes, rejoignez le <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">groupe Facebook de la Semaine européenne du code pour enseignants</a>! Pour aller plus loin et collaborer avec d’autres écoles dans votre pays ou par-delà les frontières, participez au <a href="codeweek4all">Code Week 4 All challenge</a>.</p>'
+<p>Si vous souhaitez entrer en contact avec un groupe international d’enseignants enthousiastes, rejoignez le <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">groupe Facebook de la Semaine européenne du code pour enseignants</a>! Pour aller plus loin et collaborer avec d’autres écoles dans votre pays ou par-delà les frontières, participez au <a href="/codeweek4all">Code Week 4 All challenge</a>.</p>'
     ]
 
 ];
