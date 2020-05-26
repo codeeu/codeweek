@@ -11,7 +11,7 @@ return [
 
                     <p>Puteți organiza cu ușurință o lecție în clasa dumneavoastră, o zi a porților deschise sau un eveniment la școala dumneavoastră. Trebuie doar să găsiți o dată și să vă înregistrați activitatea pe <a href="/events">harta Săptămânii programării</a>. Fiecare organizator de activități va primi un certificat de participare pentru efortul depus.</p>
 
-                    <p>Dacă doriți să intrați în legătură cu un grup internațional de profesori entuziaști, alăturați-vă <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupului de Facebook pentru profesori Săptămâna UE a programării</a>! Pentru a face un pas în plus și a colabora cu alte școli din țara dumneavoastră sau din străinătate, alăturați-vă <a href="codeweek4all">provocării Săptămâna programării pentru toți</a>.</p>',
+                    <p>Dacă doriți să intrați în legătură cu un grup internațional de profesori entuziaști, alăturați-vă <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupului de Facebook pentru profesori Săptămâna UE a programării</a>! Pentru a face un pas în plus și a colabora cu alte școli din țara dumneavoastră sau din străinătate, alăturați-vă <a href="/codeweek4all">provocării Săptămâna programării pentru toți</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Programarea fără tehnologie digitală (fără dispozitive electronice)',
@@ -211,7 +211,7 @@ Cu Python, elevii pot să creeze jocuri cu întrebări despre evenimente istoric
         'title' => 'Nu uitați să vă adăugați activitatea pe harta Săptămânii programării!',
         'text' => '<p>Puteți organiza cu ușurință o lecție în clasa dumneavoastră, o zi a porților deschise sau un eveniment la școala dumneavoastră. Trebuie doar să găsiți o dată și să vă înregistrați activitatea pe <a href="/events">harta Săptămânii programării</a>. Fiecare organizator de activități va primi un certificat de participare pentru efortul depus.</p>
 
-<p>Dacă doriți să intrați în legătură cu un grup internațional de profesori entuziaști, alăturați-vă <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupului de Facebook pentru profesori Săptămâna UE a programării</a>! Pentru a face un pas în plus și a colabora cu alte școli din țara dumneavoastră sau din străinătate, alăturați-vă <a href="codeweek4all">provocării Săptămâna programării pentru toți</a>.</p>'
+<p>Dacă doriți să intrați în legătură cu un grup internațional de profesori entuziaști, alăturați-vă <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupului de Facebook pentru profesori Săptămâna UE a programării</a>! Pentru a face un pas în plus și a colabora cu alte școli din țara dumneavoastră sau din străinătate, alăturați-vă <a href="/codeweek4all">provocării Săptămâna programării pentru toți</a>.</p>'
     ]
 
 ];
