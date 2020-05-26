@@ -12,7 +12,7 @@ return [
 
                     <p>Puedes organizar fácilmente una clase en tu aula, una jornada de puertas abiertas o un evento en tu centro escolar. Simplemente busca una fecha e inscribe tu actividad en el <a href="/events">mapa de la Semana de la Programación</a>. Cada organizador de actividades obtendrá un certificado de participación por su colaboración.</p>
 
-                    <p>Si deseas conectarte con un grupo internacional de profesores entusiastas, ¡<a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">únete al grupo de Facebook de la Semana de la Programación de la UE para profesores</a>! Si deseas ir un paso más allá y colaborar con otros centros escolares de tu país o incluso a escala internacional, únete al <a href="codeweek4all">reto CodeWeek4All</a>.</p>
+                    <p>Si deseas conectarte con un grupo internacional de profesores entusiastas, ¡<a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">únete al grupo de Facebook de la Semana de la Programación de la UE para profesores</a>! Si deseas ir un paso más allá y colaborar con otros centros escolares de tu país o incluso a escala internacional, únete al <a href="/codeweek4all">reto CodeWeek4All</a>.</p>
 ',
     'lessons' => [
         '1' => [
@@ -215,7 +215,7 @@ Con Python, los alumnos pueden crear cuestionarios sobre hechos históricos, res
         'title' => '¡No te olvides de añadir tu actividad al mapa de la Semana de la Programación!',
         'text' => '<p>Puedes organizar fácilmente una clase en tu aula, una jornada de puertas abiertas o un evento en tu centro escolar. Simplemente busca una fecha e inscribe tu actividad en el <a href="/events">mapa de la Semana de la Programación</a>. Cada organizador de actividades obtendrá un certificado de participación por su colaboración.</p>
 
-<p>Si deseas conectarte con un grupo internacional de profesores entusiastas, ¡<a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">únete al grupo de Facebook de la Semana de la Programación de la UE para profesores</a>! Si deseas ir un paso más allá y colaborar con otros centros escolares de tu país o incluso a escala internacional, únete al <a href="codeweek4all">reto CodeWeek4All</a>.</p>'
+<p>Si deseas conectarte con un grupo internacional de profesores entusiastas, ¡<a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">únete al grupo de Facebook de la Semana de la Programación de la UE para profesores</a>! Si deseas ir un paso más allá y colaborar con otros centros escolares de tu país o incluso a escala internacional, únete al <a href="/codeweek4all">reto CodeWeek4All</a>.</p>'
     ]
 
 ];

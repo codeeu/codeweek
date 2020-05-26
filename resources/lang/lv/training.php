@@ -11,7 +11,7 @@ return [
 
                     <p>Jūs varat vienkārši noorganizēt mācību stundu klasē, atvērto durvju dienu vai pasākumu savā skolā. Gluži vienkārši atrodiet datumu un reģistrējiet šo aktivitāti . Ikviens pasākuma organizators par savām pūlēm saņems sertifikātu par piedalīšanos.</p>
 
-                    <p>Ja vēlaties iesaistīties starptautiskā aizrautīgu skolotāju grupā, pievienojieties <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ES programmēšanas nedēļas Facebook grupai skolotājiem</a>! Speriet nākamo soli un sadarbojieties ar citām skolām jūsu valstī vai citās valstīs — pievienojieties <a href="codeweek4all">“Programmēšanas nedēļas visiem” spēku pārbaudei</a>.</p>',
+                    <p>Ja vēlaties iesaistīties starptautiskā aizrautīgu skolotāju grupā, pievienojieties <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ES programmēšanas nedēļas Facebook grupai skolotājiem</a>! Speriet nākamo soli un sadarbojieties ar citām skolām jūsu valstī vai citās valstīs — pievienojieties <a href="/codeweek4all">“Programmēšanas nedēļas visiem” spēku pārbaudei</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Programmēšana bez digitālās tehnoloģijas (bez datora)',
@@ -212,7 +212,7 @@ Ar Python skolēni var veidot viktorīnas par vēstures notikumiem, risināt mat
         'title' => 'Neaizmirstiet pievienot savu pasākumu programmēšanas nedēļas kartē!',
         'text' => '<p>Jūs varat vienkārši noorganizēt mācību stundu klasē, atvērto durvju dienu vai pasākumu savā skolā. Gluži vienkārši atrodiet datumu un reģistrējiet šo aktivitāti <a href="/events">programmēšanas nedēļas kartē</a>. Ikviens pasākuma organizators par savām pūlēm saņems sertifikātu par piedalīšanos.</p>
 
-<p>Ja vēlaties iesaistīties starptautiskā aizrautīgu skolotāju grupā, pievienojieties <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ES programmēšanas nedēļas Facebook grupai skolotājiem</a>! Speriet nākamo soli un sadarbojieties ar citām skolām jūsu valstī vai citās valstīs — pievienojieties <a href="codeweek4all">“Programmēšanas nedēļas visiem” spēku pārbaudei</a>.</p>'
+<p>Ja vēlaties iesaistīties starptautiskā aizrautīgu skolotāju grupā, pievienojieties <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ES programmēšanas nedēļas Facebook grupai skolotājiem</a>! Speriet nākamo soli un sadarbojieties ar citām skolām jūsu valstī vai citās valstīs — pievienojieties <a href="/codeweek4all">“Programmēšanas nedēļas visiem” spēku pārbaudei</a>.</p>'
     ]
 
 ];
