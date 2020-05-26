@@ -11,7 +11,7 @@ return [
 
                     <p>Pode organizar facilmente uma aula na sua sala de aula, um dia aberto ou um evento na sua escola. Para isso, basta encontrar uma data e registar a sua atividade no <a href="/events">mapa da Semana da Programação</a>. Cada organizador de atividades receberá um certificado de participação em reconhecimento do seu esforço.</p>
 
-                    <p>Se desejar fazer parte de um grupo internacional de professores entusiastas, adira ao <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupo de professores da Semana Europeia da programação no Facebook</a>! Para ir mais longe e colaborar com outras escolas no seu país ou além-fronteiras, participe no <a href="codeweek4all">desafio Code Week 4 All</a>.</p>',
+                    <p>Se desejar fazer parte de um grupo internacional de professores entusiastas, adira ao <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupo de professores da Semana Europeia da programação no Facebook</a>! Para ir mais longe e colaborar com outras escolas no seu país ou além-fronteiras, participe no <a href="/codeweek4all">desafio Code Week 4 All</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Programação sem tecnologia digital (<i>unplugged</i>)',
@@ -211,7 +211,7 @@ Neste vídeo, a equipa da Semana da Programação vai mostrar-lhe algumas ativid
         'title' => 'Não se esqueça de adicionar a sua atividade no mapa da Semana da Programação!',
         'text' => '<p>Pode organizar facilmente uma aula na sua sala de aula, um dia aberto ou um evento na sua escola. Para isso, basta encontrar uma data e registar a sua atividade no <a href="/events">mapa da Semana da Programação</a>. Cada organizador de atividades receberá um certificado de participação em reconhecimento do seu esforço.</p>
 
-<p>Se desejar fazer parte de um grupo internacional de professores entusiastas, adira ao <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupo de professores da Semana Europeia da Programação no Facebook</a>! Para ir mais longe e colaborar com outras escolas no seu país ou além-fronteiras, participe no <a href="codeweek4all">desafio Code Week 4 All</a>.</p>'
+<p>Se desejar fazer parte de um grupo internacional de professores entusiastas, adira ao <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupo de professores da Semana Europeia da Programação no Facebook</a>! Para ir mais longe e colaborar com outras escolas no seu país ou além-fronteiras, participe no <a href="/codeweek4all">desafio Code Week 4 All</a>.</p>'
     ]
 
 ];

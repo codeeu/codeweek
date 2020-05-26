@@ -11,7 +11,7 @@ return [
 
                     <p>Možete lako organizirati lekciju u svojoj učionici, otvoreni dan ili događaj u vašoj školi. Samo pronađite datum i registrirajte svoju aktivnost na <a href="/events">mapi Sedmice kodiranja</a>. Svaki organizator aktivnosti dobit će certifikat o učešću za svoj trud.</p>
 
-                    <p>Ako se želite povezati s međunarodnom grupom entuzijastičnih nastavnika, pridružite se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Facebook grupi Sedmice kodiranja EU za nastavnike</a>! Poduzmite dodatni korak i sarađujte sa drugim školama u svojoj zemlji ili preko granica - pridružite se <a href="codeweek4all">Izazovu Sedmice kodiranja za sve</a>.</p>',
+                    <p>Ako se želite povezati s međunarodnom grupom entuzijastičnih nastavnika, pridružite se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Facebook grupi Sedmice kodiranja EU za nastavnike</a>! Poduzmite dodatni korak i sarađujte sa drugim školama u svojoj zemlji ili preko granica - pridružite se <a href="/codeweek4all">Izazovu Sedmice kodiranja za sve</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Kodiranje bez digitalne tehnologije (oflajn)',
@@ -210,7 +210,7 @@ U ovom videu, tim Sedmice kodiranja će vam pokazati neke praktične, lake i zab
         'title' => 'Ne zaboravite dodati svoje događanje na mapu Sedmice kodiranja!',
         'text' => '<p>Možete lako organizirati lekciju u svojoj učionici, otvoreni dan ili događaj u vašoj školi. Samo pronađite datum i registrirajte svoju aktivnost na <a href="/events">mapi Sedmice kodiranja</a>. Svaki organizator aktivnosti dobit će certifikat o učešću za svoj trud.</p>
 
-<p>Ako se želite povezati s međunarodnom grupom entuzijastičnih nastavnika, pridružite se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Facebook grupi Sedmice kodiranja EU za nastavnike</a>! Poduzmite dodatni korak i sarađujte sa drugim školama u svojoj zemlji ili preko granica - pridružite se <a href="codeweek4all">Izazovu Sedmice kodiranja za sve</a>.</p>'
+<p>Ako se želite povezati s međunarodnom grupom entuzijastičnih nastavnika, pridružite se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Facebook grupi Sedmice kodiranja EU za nastavnike</a>! Poduzmite dodatni korak i sarađujte sa drugim školama u svojoj zemlji ili preko granica - pridružite se <a href="/codeweek4all">Izazovu Sedmice kodiranja za sve</a>.</p>'
     ]
 
 ];
