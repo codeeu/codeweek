@@ -11,7 +11,7 @@ return [
 
                     <p>Môžete jednoducho usporiadať hodinu v triede, deň otvorených dverí alebo podujatie vo vašej škole. Stačí nájsť dátum a zaregistrovať aktivitu na <a href="/events">mape Týždňa programovania</a>. Každý organizátor aktivity získa za svoje úsilie certifikát za účasť.</p>
 
-                    <p>Ak sa chcete spojiť s medzinárodnou skupinou nadšencov, pripojte sa k <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">skupine učiteľov Európskeho týždňa programovania na Facebooku</a>. Ak by ste chceli zájsť o krok ďalej a spolupracovať s inými školami vo vašej krajine alebo v zahraničí, zapojte sa do <a href="codeweek4all">výzvy Code Week 4 All</a> (Týždeň programovania pre všetkých).</p>',
+                    <p>Ak sa chcete spojiť s medzinárodnou skupinou nadšencov, pripojte sa k <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">skupine učiteľov Európskeho týždňa programovania na Facebooku</a>. Ak by ste chceli zájsť o krok ďalej a spolupracovať s inými školami vo vašej krajine alebo v zahraničí, zapojte sa do <a href="/codeweek4all">výzvy Code Week 4 All</a> (Týždeň programovania pre všetkých).</p>',
     'lessons' => [
         '1' => [
             'title' => 'Programovanie bez digitálnej technológie (bez počítača)',
@@ -210,7 +210,7 @@ V tomto videu vám tím Týždňa programovania ukáže niekoľko praktických, 
         'title' => 'Nezabudnite pridať aktivitu na mapu Týždňa programovania!',
         'text' => '<p>Môžete jednoducho usporiadať hodinu v triede, deň otvorených dverí alebo podujatie vo vašej škole. Stačí nájsť dátum a zaregistrovať aktivitu na <a href="/events">mape Týždňa programovania</a>. Každý organizátor aktivity získa za svoje úsilie certifikát za účasť.</p>
 
-<p>Ak sa chcete spojiť s medzinárodnou skupinou nadšencov, pripojte sa k <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">skupine učiteľov Európskeho týždňa programovania na Facebooku</a>. Ak by ste chceli zájsť o krok ďalej a spolupracovať s inými školami vo vašej krajine alebo v zahraničí, zapojte sa do <a href="codeweek4all">výzvy Code Week 4 All</a> (Týždeň programovania pre všetkých).</p>'
+<p>Ak sa chcete spojiť s medzinárodnou skupinou nadšencov, pripojte sa k <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">skupine učiteľov Európskeho týždňa programovania na Facebooku</a>. Ak by ste chceli zájsť o krok ďalej a spolupracovať s inými školami vo vašej krajine alebo v zahraničí, zapojte sa do <a href="/codeweek4all">výzvy Code Week 4 All</a> (Týždeň programovania pre všetkých).</p>'
     ]
 
 ];

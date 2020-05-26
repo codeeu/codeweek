@@ -11,7 +11,7 @@ return [
 
                     <p>Könnyen megszervezhet egy tematikus tanórát saját tantermében, vagy pedig egy nyílt napot vagy rendezvényt iskolájában. Mindössze találnia kell egy időpontot hozzá, majd regisztrálnia kell tevékenységét a <a href="/events">programozási hét térképén</a>. Minden tevékenységszervező részvételi oklevelet kap munkája elismeréseként.</p>
 
-                    <p>Ha szeretne kapcsolatba lépni lelkes tanárok nemzetközi csoportjával, csatlakozzon az <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Európai programozási hét tanároknak szánt Facebook-csoportjához</a>! Ha az országon belül vagy határokon átívelő együttműködést szeretne kialakítani más iskolákkal, csatlakozzon a <a href="codeweek4all">Code Week 4 All kihíváshoz</a>.</p>',
+                    <p>Ha szeretne kapcsolatba lépni lelkes tanárok nemzetközi csoportjával, csatlakozzon az <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Európai programozási hét tanároknak szánt Facebook-csoportjához</a>! Ha az országon belül vagy határokon átívelő együttműködést szeretne kialakítani más iskolákkal, csatlakozzon a <a href="/codeweek4all">Code Week 4 All kihíváshoz</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Programozás digitális technológia nélkül (offline)',
@@ -211,7 +211,7 @@ A Pythonnal a diákok kvízeket hozhatnak létre történelmi eseményekről, ma
         'title' => 'Ne felejtse el tevékenységét feltenni a programozási hét térképére!',
         'text' => '<p>Könnyen szervezhet tematikus tanórát saját tantermében, vagy pedig egy nyílt napot vagy rendezvényt iskolájában. Mindössze találnia kell egy időpontot hozzá, majd regisztrálnia kell tevékenységét a <a href="/events">programozási hét térképén</a>. Minden tevékenységszervező részvételi oklevelet kap munkája elismeréseként.</p>
 
-<p>Ha szeretne kapcsolatba lépni lelkes tanárok nemzetközi csoportjával, csatlakozzon az <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Európai programozási hét tanároknak szánt Facebook-csoportjához</a>! Ha az országon belül vagy határokon átívelő együttműködést szeretne kialakítani más iskolákkal, csatlakozzon a <a href="codeweek4all">Code Week 4 All kihíváshoz</a>.</p>'
+<p>Ha szeretne kapcsolatba lépni lelkes tanárok nemzetközi csoportjával, csatlakozzon az <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Európai programozási hét tanároknak szánt Facebook-csoportjához</a>! Ha az országon belül vagy határokon átívelő együttműködést szeretne kialakítani más iskolákkal, csatlakozzon a <a href="/codeweek4all">Code Week 4 All kihíváshoz</a>.</p>'
     ]
 
 ];
