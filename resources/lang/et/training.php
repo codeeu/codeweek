@@ -3,15 +3,15 @@
 return [
 
     'learning_bits' => 'Programmeerimisnädala Code Week õpivahendid',
-    'title' => 'Kas tahaksite osaleda ELi programmeerimisnädalal Code Week, aga ei tea, kust alustada?',
+    'title' => 'Tasuta õppematerjalid ja veebikursused',
     'text' => '<p>Siit leiate tasuta õppematerjale ja -vahendeid, mis aitavad teil plaanida oma esimest innovaatilist tunniplaani.</p>
-
+<h2 class="subtitle">1. õpivahendid</h2>
                     <p>Eelnev koodikirjutamise või programmeerimiskogemus ei ole vajalik ning iga mooduli läbimine võtab aega ainult 15 minutit. Moodulites tutvustatakse programmeerimise põhitõdesid ja algoritmilise mõtlemise arendamiseks mõeldud tegevusi. Lisaks sellele antakse moodulites praktilisi nippe ja nõu, kuidas neid kontseptsioone oma klassiruumis kasutada.</p>',
     'text_2' => '<p>Nüüd, kui olete tutvunud programmeerimisnädala Code Week õppevahenditega, olete ehk valmis tooma veidi digitaalset loomingulisust ka klassiruumi ja lisama oma tegevuse programmeerimisnädala <a href="/events">Code Week kaardile</a>!</p>
 
                     <p>Võite näiteks organiseerida ühe tunni, avatud päeva või kooliürituse. Lihtsalt valige kuupäev ja registreerige oma üritus programmeerimisnädala <a href="/events">Code Week kaardile</a>. Iga tegevuse ja/või ürituse organiseerija saab oma pingutuse eest osaleja tunnistuse.</p>
 
-                    <p>Kui soovite võtta ühendust teiste entusiastlike õpetajatega, siis liituge <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ELi programmeerimisnädala Code Week Facebooki õpetajate grupiga</a>! Kui soovite astuda sammu veelgi kaugemale ja teha koostööd teiste koolidega kas enda riigis või piiri taga, siis liituge <a href="codeweek4all">programmeerimisnädala väljakutsega Code Week 4 All</a>.</p>',
+                    <p>Kui soovite võtta ühendust teiste entusiastlike õpetajatega, siis liituge <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ELi programmeerimisnädala Code Week Facebooki õpetajate grupiga</a>! Kui soovite astuda sammu veelgi kaugemale ja teha koostööd teiste koolidega kas enda riigis või piiri taga, siis liituge <a href="/codeweek4all">programmeerimisnädala väljakutsega Code Week 4 All</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Programmeerimine ilma digitaalse tehnoloogiata',
@@ -211,7 +211,7 @@ Pythoni abil saavad õpilased koostada viktoriine ajaloosündmuste kohta, lahend
         'title' => 'Ärge unustage lisada oma tegevust programmeerimisnädala Code Week kaardile!',
         'text' => '<p>Võite näiteks organiseerida ühe tunni, avatud päeva või kooliürituse. Lihtsalt valige kuupäev ja kandke oma üritus programmeerimisnädala <a href="/events">Code Week kaardile</a>. Iga tegevuse ja/või ürituse organiseerija saab oma pingutuse eest osaleja tunnistuse.</p>
 
-<p>Kui soovite võtta ühendust teiste entusiastlike õpetajatega, siis liituge <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ELi programmeerimisnädala Code Week Facebooki õpetajate grupiga</a>! Kui soovite astuda sammu veelgi kaugemale ja teha koostööd teist koolidega kas enda riigis või üle piiri, siis liituge <a href="codeweek4all">programmeerimisnädala väljakutsega Code Week 4 All</a>.</p>'
+<p>Kui soovite võtta ühendust teiste entusiastlike õpetajatega, siis liituge <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ELi programmeerimisnädala Code Week Facebooki õpetajate grupiga</a>! Kui soovite astuda sammu veelgi kaugemale ja teha koostööd teist koolidega kas enda riigis või üle piiri, siis liituge <a href="/codeweek4all">programmeerimisnädala väljakutsega Code Week 4 All</a>.</p>'
     ]
 
 ];

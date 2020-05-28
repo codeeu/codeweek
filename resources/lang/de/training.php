@@ -3,15 +3,15 @@
 return [
 
     'learning_bits' => 'Code Week-Lernhäppchen',
-    'title' => 'Sie ziehen es in Erwägung, an der EU Code Week teilzunehmen, Ihnen fällt der Einstieg aber schwer?',
+    'title' => 'Kostenlose Trainingsmaterialien und Onlinekurse',
     'text' => '<p>Hier finden Sie kostenloses Trainingsmaterial und -Ressourcen, die Ihnen beim Einstieg und bei der Planung Ihrer nächsten innovativen Unterrichtsstunde behilflich sind.</p>
-
+<h2 class="subtitle">1. Lernhäppchen</h2>
                     <p>Es ist keine vorherige Kodierungs- oder Programmiererfahrung erforderlich und das Abschließen eines Moduls dauert lediglich ca. 15 Minuten. Die Module stellen Ihnen wichtige Konzepte in Verbindung mit Aktivitäten in den Bereichen Programmieren und rechnergestütztes Denken vor. Darüber hinaus erhalten Sie über die Module praktische Tipps und Empfehlungen zur Integration der Konzepte in das Klassenzimmer.</p>',
     'text_2' => '<p>Da Sie mittlerweile eines oder mehrere der Code Week-Lernhäppchen abgeschlossen haben, hoffen wir, dass Sie sich jetzt sicher genug fühlen, um digitale Kreativität in Ihr Klassenzimmer zu bringen und Ihre Aktivität an die <a href="/events">Code Week-Karte</a> zu heften!</p>
 
                     <p>Sie können ganz einfach eine Lehrstunde in Ihrem Klassenzimmer, einen Tag der offenen Tür oder eine Veranstaltung an Ihrer Schule ausrichten. Überlegen Sie sich nur ein Datum und registrieren Sie Ihre Aktivität auf der <a href="/events">Code Week-Karte</a>. Alle Organisatoren von Aktivitäten erhalten für ihre Beteiligung ein Teilnahmezertifikat.</p>
 
-                    <p>Treten Sie der <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU Code Week Facebook-Gruppe für Lehrerinnen und Lehrer</a> bei, falls Sie sich mit einer internationalen Gruppe von begeisterten Lehrerkräften vernetzen möchten! Nehmen Sie an der <a href="codeweek4all">Code Week 4 All Challenge</a> teil, wenn Sie noch einen Schritt weiter gehen und mit anderen Schulen in Ihrem Land oder im Ausland zusammenarbeiten möchten.</p>',
+                    <p>Treten Sie der <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU Code Week Facebook-Gruppe für Lehrerinnen und Lehrer</a> bei, falls Sie sich mit einer internationalen Gruppe von begeisterten Lehrerkräften vernetzen möchten! Nehmen Sie an der <a href="/codeweek4all">Code Week 4 All Challenge</a> teil, wenn Sie noch einen Schritt weiter gehen und mit anderen Schulen in Ihrem Land oder im Ausland zusammenarbeiten möchten.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Programmieren ohne digitale Technologie (ohne Computer)',
@@ -211,7 +211,7 @@ Mit Python können Ihre Schülerinnen und Schüler u. a. Ratespiele zu historisc
         'title' => 'Vergessen Sie nicht, Ihre Aktivität auf der Code Week-Karte zu markieren!',
         'text' => '<p>Sie können ganz einfach eine Lehrstunde in Ihrem Klassenzimmer, einen Tag der offenen Tür oder eine Veranstaltung an Ihrer Schule ausrichten. Überlegen Sie sich nur ein Datum und registrieren Sie Ihre Aktivität in der <a href="/events">Code Week-Karte</a>. Alle Organisatoren von Aktivitäten erhalten für ihre Beteiligung ein Teilnahmezertifikat.</p>
 
-<p>Treten Sie der <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU Code Week-Facebook-Gruppe für Lehrerinnen und Lehrer</a> bei, falls Sie sich mit einer internationalen Gruppe von begeisterten Lehrkräften vernetzen möchten! Nehmen Sie an der <a href="codeweek4all">Code Week 4 All Challenge</a> teil, wenn Sie noch einen Schritt weiter gehen und mit anderen Schulen in Ihrem Land oder im Ausland zusammenarbeiten möchten.</p>'
+<p>Treten Sie der <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU Code Week-Facebook-Gruppe für Lehrerinnen und Lehrer</a> bei, falls Sie sich mit einer internationalen Gruppe von begeisterten Lehrkräften vernetzen möchten! Nehmen Sie an der <a href="/codeweek4all">Code Week 4 All Challenge</a> teil, wenn Sie noch einen Schritt weiter gehen und mit anderen Schulen in Ihrem Land oder im Ausland zusammenarbeiten möchten.</p>'
     ]
 
 ];

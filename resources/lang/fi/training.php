@@ -3,15 +3,15 @@
 return [
 
     'learning_bits' => 'Koodausviikon oppimisaineistot',
-    'title' => 'Haluaisitko osallistua EU:n koodausviikkoon, mutta et tiedä, mistä aloittaa?',
+    'title' => 'Ilmaisia harjoitusmateriaaleja ja verkkokursseja',
     'text' => '<p>Täältä löydät maksuttomia koulutusmateriaaleja ja aineistoja, jotka auttavat sinut alkuun, ja pääset suunnittelemaan seuraavaa innovatiivista oppituntiasi.</p>
-
+<h2 class="subtitle">1. Oppimisaineistot</h2>
                     <p>Aikaisempi koodaus- tai ohjelmointikokemus ei ole tarpeen, ja jokainen moduuli kestää noin 15 minuuttia. Moduuleissa esitellään koodauksen ja laskennallisen ajattelun tärkeimmät käsitteet. Moduuleista saat myös käytännön vinkkejä ja neuvoja käsitteiden sisällyttämiseksi opetukseen.</p>',
     'text_2' => '<p>Olet nyt käynyt läpi yhden tai useamman oppimismoduulin. Toivottavasti tunnet olosi riittävän varmaksi, jotta voit sisällyttää digitaalisen luovuuden opetukseesi ja merkitä tapahtumasi <a href="/events">koodausviikkokarttaan</a>!</p>
 
                     <p>Voit helposti järjestää oppitunnin luokassasi, avoimien ovien päivän tai tapahtuman koulullasi. Sovi vain päivä ja merkitse tapahtuma <a href="/events">koodausviikkokarttaan</a>. Jokainen tapahtumajärjestäjä saa osallistumistodistuksen.</p>
 
-                    <p>Jos haluat pitää yhteyttä innokkaisiin opettajiin kansainvälisesti, liity <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU:n koodausviikon opettajien Facebook-ryhmään</a>! Jos haluat tehdä enemmän, ryhdy yhteistyöhön oman maasi tai ulkomaisten koulujen kanssa liittymällä <a href="codeweek4all">Koodausviikko kaikille -haasteeseen</a>.</p>',
+                    <p>Jos haluat pitää yhteyttä innokkaisiin opettajiin kansainvälisesti, liity <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU:n koodausviikon opettajien Facebook-ryhmään</a>! Jos haluat tehdä enemmän, ryhdy yhteistyöhön oman maasi tai ulkomaisten koulujen kanssa liittymällä <a href="/codeweek4all">Koodausviikko kaikille -haasteeseen</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Koodaus ilman digitaalista teknologiaa (unplugged)',
@@ -211,7 +211,7 @@ Tällä videolla koodausviikon tiimi esittelee muutamia helppoja ja hauskoja kä
         'title' => 'Muista merkitä oma tapahtumasi koodausviikkokarttaan!',
         'text' => '<p>Voit helposti järjestää oppitunnin luokassasi, avoimien ovien päivän tai tapahtuman koulullasi. Sovi vain päivä ja merkitse tapahtuma <a href="/events">koodausviikkokarttaan</a>. Jokainen tapahtumajärjestäjä saa osallistumistodistuksen.</p>
 
-<p>Jos haluat pitää yhteyttä innokkaisiin opettajiin kansainvälisesti, liity <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU:n koodausviikon opettajien Facebook-ryhmään</a>! Jos haluat tehdä enemmän, ryhdy yhteistyöhön oman maasi tai ulkomaisten koulujen kanssa liittymällä <a href="codeweek4all">Koodausviikko kaikille -haasteeseen</a>.</p>'
+<p>Jos haluat pitää yhteyttä innokkaisiin opettajiin kansainvälisesti, liity <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU:n koodausviikon opettajien Facebook-ryhmään</a>! Jos haluat tehdä enemmän, ryhdy yhteistyöhön oman maasi tai ulkomaisten koulujen kanssa liittymällä <a href="/codeweek4all">Koodausviikko kaikille -haasteeseen</a>.</p>'
     ]
 
 ];

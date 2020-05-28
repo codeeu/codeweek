@@ -3,15 +3,15 @@
 return [
 
     'learning_bits' => 'Pillole di apprendimento della Settimana europea della programmazione',
-    'title' => 'Stai pensando di partecipare alla Settimana europea della programmazione ma non sai da dove cominciare?',
+    'title' => 'Materiali didattici e corsi online gratuiti',
     'text' => ' <p>Qui puoi trovare materiali e risorse per la formazione gratuiti che ti aiuteranno a cominciare e a pianificare la tua prossima lezione innovativa.</p>
-
+<h2 class="subtitle">1.	Pillole di apprendimento</h2>
                     <p>Non è necessaria alcuna precedente esperienza di programmazione e ogni modulo richiede soltanto 15 minuti circa per essere completato. I moduli presentano concetti fondamentali relativi alla programmazione e alle attività di pensiero computazionale, oltre a fornirti anche consigli e suggerimenti pratici su come integrare i concetti in classe.</p>',
     'text_2' => '<p>Ora che hai completato una o più pillole di apprendimento della Settimana europea della programmazione, speriamo che ti senta abbastanza a tuo agio per portare un po’ di creatività digitale in classe e appuntare la tua attività sulla <a href="/events">mappa della Settimana europea della programmazione</a>!</p>
 
                     <p>Organizzare una lezione con la tua classe, una giornata a porte aperte o un evento nella tua scuola è semplice. Trova una data e registra la tua attività sulla <a href="/events">mappa della Settimana europea della programmazione</a>. Ogni organizzatore riceverà un certificato di partecipazione per il proprio impegno.</p>
 
-                    <p>Se desideri entrare in contatto con un gruppo internazionale di insegnanti entusiasti, iscriviti <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">al gruppo Facebook per insegnanti della Settimana europea della programmazione</a>! Per fare un ulteriore passo avanti e collaborare con altre scuole nel tuo paese oppure oltre frontiera, unisciti alla <a href="codeweek4all"> sfida Code Week 4 All</a>.</p>',
+                    <p>Se desideri entrare in contatto con un gruppo internazionale di insegnanti entusiasti, iscriviti <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">al gruppo Facebook per insegnanti della Settimana europea della programmazione</a>! Per fare un ulteriore passo avanti e collaborare con altre scuole nel tuo paese oppure oltre frontiera, unisciti alla <a href="/codeweek4all"> sfida Code Week 4 All</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Programmazione senza tecnologia digitale (unplugged)',
@@ -211,7 +211,7 @@ Con Python gli studenti possono creare quiz su eventi storici, risolvere problem
         'title' => 'Non dimenticare di aggiungere la tua attività sulla mappa della settimana europea della programmazione!',
         'text' => '<p>Organizzare una lezione con la tua classe, una giornata a porte aperte o un evento nella tua scuola è semplice. Trova una data e registra la tua attività sulla <a href="/events">mappa della settimana europea della programmazione</a>. Ogni organizzatore riceverà un certificato di partecipazione per il proprio impegno.</p>
 
-<p>Se desideri entrare in contatto con un gruppo internazionale di insegnanti entusiasti, iscriviti al <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">gruppo Facebook per insegnanti della Settimana europea della programmazione</a>! Per fare un ulteriore passo avanti e collaborare con altre scuole nel tuo paese oppure oltre frontiera, unisciti alla <a href="codeweek4all">sfida Code Week 4 All</a>.</p>'
+<p>Se desideri entrare in contatto con un gruppo internazionale di insegnanti entusiasti, iscriviti al <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">gruppo Facebook per insegnanti della Settimana europea della programmazione</a>! Per fare un ulteriore passo avanti e collaborare con altre scuole nel tuo paese oppure oltre frontiera, unisciti alla <a href="/codeweek4all">sfida Code Week 4 All</a>.</p>'
     ]
 
 ];

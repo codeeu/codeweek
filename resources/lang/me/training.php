@@ -3,15 +3,15 @@
 return [
 
     'learning_bits' => 'Materijali za učenje Nedjelje programiranja',
-    'title' => 'Da li razmišljate o učešću u Evropskoj nedjelji programiranja, ali ne znate odakle da krenete?',
+    'title' => 'Besplatni materijali za obuku i internetski tečajevi',
     'text' => '<p>Ovdje možete pronaći besplatan materijal za obuku i literaturu koja će vam pomoći da počnete i isplanirate svoje novo, inovativno predavanje.</p>
-
+<h2 class="subtitle">1. Materijali za učenje Nedjelje programiranja</h2>
                     <p>Nije neophodno prethodno iskustvo u oblasti kodiranja ili programiranja i potrebno vam je samo oko 15 minuta po modulu. Moduli vam predstavljaju ključne koncepte vezane za aktivnosti programiranja i računarskog mišljenja. Poreed toga, moduli vam daju praktične savjete o načinu integracije koncepata u vašu učionicu.</p>',
     'text_2' => '<p>Sada kada ste prošli kroz jedan ili više materijala za učenje Nedjelje programiranja, nadamo se da se osjećate dovoljno spremnim da u svoje učionice unesete malo digitalne kreativnosti i svoju aktivnost dodate na <a href="/events">mapu Nedjelje programiranja</a>!</p>
 
                     <p>Možete lako organizovati predavanje u vašoj učionici, dan otvorenih vrata ili događaj u vašoj školi. Samo pronađite datum i registrujte svoju aktivnostu na <a href="/events">mapi Nedjelje programiranja</a>. Svaki organizator aktivnosti dobiće sertifikat o učešću za uloženi trud.</p>
 
-                    <p>Ukoliko želite da se povežete sa međunarodnom grupom nastavnika punih entuzijazma, pridružite se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Fejsbuk grupi Evropske nedjelje programiranja namijenenoj nastavnicima</a>! Kako biste otišli korak dalje i sarađivali sa drugim školama u vašoj zemlji ili u inostranstvu – pridružite se izazovu<a href="codeweek4all"> Nedjelja programiranja za sve (org. Code Week 4 All)</a>.</p>',
+                    <p>Ukoliko želite da se povežete sa međunarodnom grupom nastavnika punih entuzijazma, pridružite se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Fejsbuk grupi Evropske nedjelje programiranja namijenenoj nastavnicima</a>! Kako biste otišli korak dalje i sarađivali sa drugim školama u vašoj zemlji ili u inostranstvu – pridružite se izazovu<a href="/codeweek4all"> Nedjelja programiranja za sve (org. Code Week 4 All)</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Programiranje bez upotrebe digitalne tehnologije (unplugged)',
@@ -211,7 +211,7 @@ U ovom video zapisu, tim Nedjelje programiranja pokazaće vam nekoliko praktičn
         'title' => 'Ne zaboravite da svoju aktivnost unesete na mapu Nedjelje programiranja!',
         'text' => '<p>Možete lako organizovati predavanje u vašoj učionici, dan otvorenih vrata ili događaj u vašoj školi. Samo pronađite datum i registrujte svoju aktivnostu na <a href="/events">mapi Nedjelje programiranja</a>. Svaki organizator aktivnosti dobiće sertifikat o učešću za uloženi trud.</p>
 
-<p>Ukoliko želite da se povežete sa međunarodnom grupom nastavnika punih entuzijazma, pridružite se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Fejsbuk grupi Evropske nedjelje programiranja namijenenoj nastavnicima</a>! Kako biste otišli korak dalje i sarađivali sa drugim školama u vašoj zemlji ili u inostranstvu – pridružite se izazovu<a href="codeweek4all"> Nedjelja programiranja za sve (org. Code Week 4 All)</a>.</p>'
+<p>Ukoliko želite da se povežete sa međunarodnom grupom nastavnika punih entuzijazma, pridružite se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Fejsbuk grupi Evropske nedjelje programiranja namijenenoj nastavnicima</a>! Kako biste otišli korak dalje i sarađivali sa drugim školama u vašoj zemlji ili u inostranstvu – pridružite se izazovu<a href="/codeweek4all"> Nedjelja programiranja za sve (org. Code Week 4 All)</a>.</p>'
     ]
 
 ];

@@ -3,15 +3,15 @@
 return [
 
     'learning_bits' => 'Undervisningsbidder til kodeugen',
-    'title' => 'Overvejer du at deltage i EU’s kodeuge, men er du ikke sikker på, hvor du skal starte?',
+    'title' => 'Gratis undervisningsmateriale og onlinekurser',
     'text' => '<p>Her kan du finde gratis undervisningsmaterialer og ressourcer, som kan hjælpe dig med at komme i gang og planlægge din næste innovative lektion.</p>
-
+    <h2 class="subtitle">1. Undervisningsbidder til kodeugen</h2>
                     <p>Der kræves ingen tidligere erfaring med programmering, og de enkelte moduler kan gennemføres på ca. 15 minutter. Modulerne introducerer dig til de vigtigste koncepter i forbindelse med kodning og datalogisk tænkning. Desuden giver modulerne praktiske tips og råd om, hvordan du kan integrere koncepterne i klasseværelset.</p>',
     'text_2' => '<p>Nu da du har gennemført en eller flere af undervisningsbidderne til kodeugen, håber vi, at du føler dig klædt på til at tage den digitale kreativitet med ind i klasseværelset, og at du tilføjer din aktivitet til <a href="/events">kodeugekortet</a>!</p>
 
                     <p>Det er let at afholde en lektion i klasseværelset, en åbent hus-dag eller et arrangement på skolen. Du skal bare vælge en dato og registrere aktiviteten på <a href="/events">kodeugekortet</a>. Alle, der afholder en aktivitet, får et certifikat for deltagelse som tak for indsatsen.</p>
 
-                    <p>Hvis du gerne vil i kontakt med en international gruppe af engagerede lærere, kan du tilmelde dig <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU’s kodeuges Facebookgruppe for lærere</a>! Gå trinnet videre, og samarbejd med andre skoler i dit land eller andre lande – vær med i <a href="codeweek4all">Code Week 4 All-udfordringen</a>.</p>',
+                    <p>Hvis du gerne vil i kontakt med en international gruppe af engagerede lærere, kan du tilmelde dig <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU’s kodeuges Facebookgruppe for lærere</a>! Gå trinnet videre, og samarbejd med andre skoler i dit land eller andre lande – vær med i <a href="/codeweek4all">Code Week 4 All-udfordringen</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Kodning uden digital teknologi (»unplugged«)',
@@ -211,7 +211,7 @@ I denne video viser Kodeuge-teamet nogle praktiske, nemme og sjove kodeaktivitet
         'title' => 'Glem ikke at tilføje din aktivitet på kodeugekortet!',
         'text' => '<p>Det er let at afholde en lektion i klasseværelset, en åbent hus-dag eller et arrangement på skolen. Du skal bare vælge en dato og registrere aktiviteten på <a href="/events">kodeugekortet</a>. Alle, der afholder en aktivitet, får et certifikat for deltagelse som tak for indsatsen.</p>
 
-<p>Hvis du gerne vil i kontakt med en international gruppe af engagerede lærere, kan du tilmelde dig <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU’s kodeuges Facebookgruppe for lærere</a>! Gå trinnet videre, og samarbejd med andre skoler i dit land eller andre lande – vær med i <a href="codeweek4all">Code Week 4 All-udfordringen</a>.</p>'
+<p>Hvis du gerne vil i kontakt med en international gruppe af engagerede lærere, kan du tilmelde dig <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU’s kodeuges Facebookgruppe for lærere</a>! Gå trinnet videre, og samarbejd med andre skoler i dit land eller andre lande – vær med i <a href="/codeweek4all">Code Week 4 All-udfordringen</a>.</p>'
     ]
 
 ];

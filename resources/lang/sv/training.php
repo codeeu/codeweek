@@ -3,15 +3,15 @@
 return [
 
     'learning_bits' => 'Infomoduler om Code Week',
-    'title' => 'Funderar du på att delta i EU Code Week, men vet inte var du ska börja?',
+    'title' => 'Gratis utbildningsmaterial och onlinekurser',
     'text' => '<p>Här kan du hitta kostnadsfritt utbildningsmaterial och resurser som hjälper dig att komma igång och planera nästa innovativa lektion.</p>
-
+<h2 class="subtitle">1. Infomoduler</h2>
                     <p>Ingen tidigare erfarenhet av kodning eller programmering behövs och varje modul tar bara cirka 15 minuter att slutföra. Modulerna introducerar centrala begrepp inom kodning och datalogiska aktiviteter. Modulerna ger dig också praktiska tips och råd om hur du använder begreppen i klassrummet.</p>',
     'text_2' => '<p>Nu när du har slutfört en eller flera infomoduler om Code Week hoppas vi att du känner dig motiverad att introducera lite digital kreativitet i ditt klassrum och lägga upp en aktivitet på <a href="/events">Code Week-kartan</a>!</p>
 
                     <p>Du kan lätt organisera en lektion, hålla öppet hus eller anordna ett evenemang på din skola. Hitta ett datum och registrera din aktivitet på <a href="/events">Code Week-kartan</a>. Alla arrangörer får ett certifikat för sina insatser.</p>
 
-                    <p>Gå med i <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">lärargruppen för EU Code Week på Facebook</a> om du vill få kontakt med en internationell grupp av engagerade lärare! Gå ett steg längre och samarbeta med andra skolor i ditt land eller något annat genom att delta i <a href="codeweek4all">Code Week 4 All challenge</a>.</p>',
+                    <p>Gå med i <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">lärargruppen för EU Code Week på Facebook</a> om du vill få kontakt med en internationell grupp av engagerade lärare! Gå ett steg längre och samarbeta med andra skolor i ditt land eller något annat genom att delta i <a href="/codeweek4all">Code Week 4 All challenge</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Kodning utan digital teknik (frånkopplad)',
@@ -211,7 +211,7 @@ I den här videon kommer Code Week-teamet att visa dig några praktiska, enkla o
         'title' => 'Glöm inte att lägga till din aktivitet på Code Week-kartan!',
         'text' => '<p>Du kan lätt organisera en lektion, hålla öppet hus eller anordna ett evenemang på din skola. Hitta ett datum och registrera din aktivitet på <a href="/events">Code Week-kartan</a>. Alla arrangörer får ett certifikat för sina insatser.</p>
 
-<p>Gå med i <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">lärargruppen för EU Code Week på Facebook</a> om du vill få kontakt med en internationell grupp av engagerade lärare! Gå ett steg längre och samarbeta med andra skolor i ditt land eller något annat genom att delta i <a href="codeweek4all">Code Week 4 All challenge</a>.</p>'
+<p>Gå med i <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">lärargruppen för EU Code Week på Facebook</a> om du vill få kontakt med en internationell grupp av engagerade lärare! Gå ett steg längre och samarbeta med andra skolor i ditt land eller något annat genom att delta i <a href="/codeweek4all">Code Week 4 All challenge</a>.</p>'
     ]
 
 ];

@@ -13,14 +13,14 @@ return [
     |
     */
 
-    'title' => '#codeEU etkinliğinizi raporlayın',
+    'title' => '#CodeWeek etkinliğinizi raporlayın',
     'event_title' => 'Etkinlik başlığı',
     'number_required' => 'Elinizde net veriler olmasa bile lütfen yaklaşık bilgiler verin.',
-    'phrase1'=>'Bu formu sadece bir kez doldurabilirsiniz! Bilgilerinizi dikkatle kontrol edin. Hata yaparsanız, ',
-    'phrase2'=>'Raporu gönderdikten sonra, size özel Kod Haftası katılım sertifikanız otomatik olarak hazırlanacak olup, sertifikayı bilgisayarınıza indirebilir ya da paylaşabilirsiniz. Örnek sertifikaya buradan ulaşabilirsiniz.',
-    'phrase3'=>'Gerekli alanlar * işareti ile gösterilmiştir.',
-    'phrase4'=>'Bu formu sadece bir kez doldurabilirsiniz! Bilgilerinizi dikkatle kontrol edin. Hata yaparsanız,',
-    'contactus'=>'bizimle irtibat kurun',
+    'phrase1' => 'Bu formu sadece bir kez doldurabilirsiniz! Bilgilerinizi dikkatle kontrol edin. Hata yaparsanız, ',
+    'phrase2' => 'Raporu gönderdikten sonra, size özel Kod Haftası katılım sertifikanız otomatik olarak hazırlanacak olup, sertifikayı bilgisayarınıza indirebilir ya da paylaşabilirsiniz. Örnek sertifikaya buradan ulaşabilirsiniz.',
+    'phrase3' => 'Gerekli alanlar * işareti ile gösterilmiştir.',
+    'phrase4' => 'Bu formu sadece bir kez doldurabilirsiniz! Bilgilerinizi dikkatle kontrol edin. Hata yaparsanız,',
+    'contactus' => 'bizimle irtibat kurun',
     'participants_count' => [
         'label' => 'Katılımcı sayısı',
     ],

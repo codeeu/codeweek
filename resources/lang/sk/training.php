@@ -3,15 +3,15 @@
 return [
 
     'learning_bits' => 'Hodiny Týždňa programovania',
-    'title' => 'Radi by ste sa zapojili do Európskeho týždňa programovania, ale neviete, kde začať?',
+    'title' => 'Bezplatné školiace materiály a online kurzy',
     'text' => '<p>Tu nájdete bezplatné školiace materiály a zdroje, ktoré vám pomôžu zoznámiť sa s problematikou a naplánovať si najbližšiu inovačnú hodinu.</p>
-
+<h2 class="subtitle">1. Hodiny Týždňa programovania</h2>
                     <p>Nepotrebujete žiadne predchádzajúce skúsenosti s programovaním a každý modul vám zaberie len okolo 15 minút. V moduloch spoznáte kľúčové koncepcie súvisiace s programovaním a aktivity na rozvoj výpočtového myslenia. Okrem toho sa v moduloch dozviete praktické tipy a rady, ako začleniť tieto koncepcie do vyučovania.</p>',
     'text_2' => '<p>Dúfame, že po jednej alebo viacerých hodinách Týždňa programovania ste odhodlaní vniesť trocha digitálnej tvorivosti do vyučovania. Nezabudnite zaregistrovať svoju aktivitu na <a href="/events">mapu Týždňa programovania</a>!</p>
 
                     <p>Môžete jednoducho usporiadať hodinu v triede, deň otvorených dverí alebo podujatie vo vašej škole. Stačí nájsť dátum a zaregistrovať aktivitu na <a href="/events">mape Týždňa programovania</a>. Každý organizátor aktivity získa za svoje úsilie certifikát za účasť.</p>
 
-                    <p>Ak sa chcete spojiť s medzinárodnou skupinou nadšencov, pripojte sa k <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">skupine učiteľov Európskeho týždňa programovania na Facebooku</a>. Ak by ste chceli zájsť o krok ďalej a spolupracovať s inými školami vo vašej krajine alebo v zahraničí, zapojte sa do <a href="codeweek4all">výzvy Code Week 4 All</a> (Týždeň programovania pre všetkých).</p>',
+                    <p>Ak sa chcete spojiť s medzinárodnou skupinou nadšencov, pripojte sa k <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">skupine učiteľov Európskeho týždňa programovania na Facebooku</a>. Ak by ste chceli zájsť o krok ďalej a spolupracovať s inými školami vo vašej krajine alebo v zahraničí, zapojte sa do <a href="/codeweek4all">výzvy Code Week 4 All</a> (Týždeň programovania pre všetkých).</p>',
     'lessons' => [
         '1' => [
             'title' => 'Programovanie bez digitálnej technológie (bez počítača)',
@@ -210,7 +210,7 @@ V tomto videu vám tím Týždňa programovania ukáže niekoľko praktických, 
         'title' => 'Nezabudnite pridať aktivitu na mapu Týždňa programovania!',
         'text' => '<p>Môžete jednoducho usporiadať hodinu v triede, deň otvorených dverí alebo podujatie vo vašej škole. Stačí nájsť dátum a zaregistrovať aktivitu na <a href="/events">mape Týždňa programovania</a>. Každý organizátor aktivity získa za svoje úsilie certifikát za účasť.</p>
 
-<p>Ak sa chcete spojiť s medzinárodnou skupinou nadšencov, pripojte sa k <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">skupine učiteľov Európskeho týždňa programovania na Facebooku</a>. Ak by ste chceli zájsť o krok ďalej a spolupracovať s inými školami vo vašej krajine alebo v zahraničí, zapojte sa do <a href="codeweek4all">výzvy Code Week 4 All</a> (Týždeň programovania pre všetkých).</p>'
+<p>Ak sa chcete spojiť s medzinárodnou skupinou nadšencov, pripojte sa k <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">skupine učiteľov Európskeho týždňa programovania na Facebooku</a>. Ak by ste chceli zájsť o krok ďalej a spolupracovať s inými školami vo vašej krajine alebo v zahraničí, zapojte sa do <a href="/codeweek4all">výzvy Code Week 4 All</a> (Týždeň programovania pre všetkých).</p>'
     ]
 
 ];

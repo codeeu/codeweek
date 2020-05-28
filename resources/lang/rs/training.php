@@ -3,16 +3,16 @@
 return [
 
     'learning_bits' => 'Moduli Nedelje programiranja',
-    'title' => 'Da li razmišljate o učešću u EU nedelji programiranja, ali ne znate odakle da počnete?',
+    'title' => 'Besplatni materijali za trening i onlajn kursevi',
     'text' => ' <p>Ovde možete pronaći besplatne materijale i resurse za obuku koji će vam pomoći da počnete i isplanirate sledeću inovativnu lekciju.</p>
-
+<h2 class="subtitle">1.	Mini lekcije</h2>
                     <p>Nije potrebno prethodno iskustvo u kodiranju ili programiranju, a za svaki modul je potrebno otprilike 15 minuta. Moduli vas uvode u ključne koncepte koji su u vezi sa aktivnostima vezanim za programiranje i računarsko razmišljanje. Osim toga, moduli vam takođe pružaju praktične savete o tome kako da integrišete te koncepte u učionici.</p>
 ',
     'text_2' => '<p>Sada kada ste završili jedan ili više modula Nedelje programiranja, nadamo se da ste spremni da uvedete kreativnu digitalnost u vašu učionicu i da prikačite aktivnost na <a href="/events">mapu Nedelje programiranja</a>!</p>
 
                     <p>Možete lako da organizujete čas u svojoj učionici, otvoreni dan ili događaj u svojoj školi. Samo odredite datum i prijavite svoju aktivnost na <a href="/events">mapi Nedelje programiranja</a>. Svi organizatori aktivnosti dobiće sertifikat o učešću za svoj trud.</p>
 
-                    <p>Ako želite da se povežete sa međunarodnom grupom nastavnika entuzijasta, pridružite se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Facebook grupi EU nedelje programiranja za nastavnike</a>! Da biste napravili korak dalje i sarađivali sa drugim školama u svojoj zemlji ili van granica – pridružite se <a href="codeweek4all">izazovu Nedelja programiranja za sve</a>.</p>
+                    <p>Ako želite da se povežete sa međunarodnom grupom nastavnika entuzijasta, pridružite se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Facebook grupi EU nedelje programiranja za nastavnike</a>! Da biste napravili korak dalje i sarađivali sa drugim školama u svojoj zemlji ili van granica – pridružite se <a href="/codeweek4all">izazovu Nedelja programiranja za sve</a>.</p>
 ',
     'lessons' => [
         '1' => [
@@ -213,7 +213,7 @@ Pomoću Pythona učenici mogu da prave kvizove o istorijskim događajima, da re�
         'title' => 'Ne zaboravite da dodate vašu aktivnost na mapu događaja Nedelje programiranja!',
         'text' => '<p>Možete lako da organizujete čas u svojoj učionici, otvoreni dan ili događaj u svojoj školi. Samo odredite datum i prijavite svoju aktivnost na <a href="/events">mapi Nedelje programiranja</a>. Svi organizatori aktivnosti dobiće sertifikat o učešću za svoj trud.</p>
 
-<p>Ako želite da se povežete sa međunarodnom grupom nastavnika entuzijasta, pridružite se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Facebook grupi EU nedelje programiranja za nastavnike</a>! Da biste napravili korak dalje i sarađivali sa drugim školama u svojoj zemlji ili van granica – pridružite se <a href="codeweek4all">izazovu Nedelja programiranja za sve</a>.</p>'
+<p>Ako želite da se povežete sa međunarodnom grupom nastavnika entuzijasta, pridružite se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Facebook grupi EU nedelje programiranja za nastavnike</a>! Da biste napravili korak dalje i sarađivali sa drugim školama u svojoj zemlji ili van granica – pridružite se <a href="/codeweek4all">izazovu Nedelja programiranja za sve</a>.</p>'
     ]
 
 ];

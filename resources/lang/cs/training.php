@@ -3,15 +3,15 @@
 return [
 
     'learning_bits' => 'Školicí materiály pro Týden programování',
-    'title' => 'Uvažujete o tom, že se zapojíte do Evropského týdne programování, ale nevíte, kde začít?',
+    'title' => 'Bezplatné školicí materiály a internetové kurzy',
     'text' => '<p>Zde najdete bezplatné školicí materiály a zdroje, které vám pomohou začít a naplánovat svou inovativní lekci.</p>
-
+<h2 class="subtitle">1. Školicí materiály</h2>
                     <p>Nejsou zapotřebí žádné předchozí zkušenosti s programováním a kódováním a dokončení každého modulu zabere jen něco kolem 15 minut. V modulech se seznámíte se základními koncepty, které souvisejí s programováním a aktivitami informatického myšlení. Kromě toho v modulech najdete praktické tipy a rady, jak koncepty začlenit ve své třídě.</p>',
     'text_2' => '<p>Když jste teď prošli jeden nebo více školicích materiálů pro Týden programování, doufáme, že jste získali důvěru představit něco z digitální kreativity ve své třídě a přidáte svou akci na <a href="/events">mapu na stránkách Týdne programování</a>!</p>
 
                     <p>Můžete snadno zorganizovat lekci ve své třídě, den otevřených dveří nebo akci ve své škole. Stačí si vybrat datum a zaregistrovat svou akci na <a href="/events">mapu na stránkách Týdne programování</a>. Za svou snahu každý organizátor akce dostane certifikát o účasti.</p>
 
-                    <p>Pokud byste se chtěli spojit s mezinárodní skupinou nadšených učitelů, připojte se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">na Facebooku ke skupině Evropského týdne programování pro učitele</a>! Pokud chcete udělat další krok a spolupracovat s dalšími školami ve vaší zemi nebo v zahraničí, zapojte se do <a href="codeweek4all">soutěže Code Week 4 All</a>.</p>',
+                    <p>Pokud byste se chtěli spojit s mezinárodní skupinou nadšených učitelů, připojte se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">na Facebooku ke skupině Evropského týdne programování pro učitele</a>! Pokud chcete udělat další krok a spolupracovat s dalšími školami ve vaší zemi nebo v zahraničí, zapojte se do <a href="/codeweek4all">soutěže Code Week 4 All</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Programování bez digitální technologie (unplugged)',
@@ -211,7 +211,7 @@ V Pythonu mohou studenti vytvářet kvízy o historických událostech, řešit 
         'title' => '>Nezapomeňte přidat svou akci na mapu na stránkách Týdne programování!',
         'text' => '<p>Můžete snadno zorganizovat lekci ve své třídě, den otevřených dveří nebo akci ve své škole. Stačí si vybrat datum a zaregistrovat svou akci na <a href="/events">mapu na stránkách Týdne programování</a>. Za svou snahu každý organizátor akce dostane certifikát o účasti.</p>
 
-<p>Pokud byste se chtěli spojit s mezinárodní skupinou nadšených učitelů, připojte se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">na Facebooku ke skupině Evropského týdne programování pro učitele</a>! Pokud chcete udělat další krok a spolupracovat s dalšími školami ve vaší zemi nebo v zahraničí, zapojte se do <a href="codeweek4all">soutěže Code Week 4 All</a>.</p>'
+<p>Pokud byste se chtěli spojit s mezinárodní skupinou nadšených učitelů, připojte se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">na Facebooku ke skupině Evropského týdne programování pro učitele</a>! Pokud chcete udělat další krok a spolupracovat s dalšími školami ve vaší zemi nebo v zahraničí, zapojte se do <a href="/codeweek4all">soutěže Code Week 4 All</a>.</p>'
     ]
 
 ];
