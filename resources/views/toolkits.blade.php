@@ -42,23 +42,25 @@
                         @endforeach
 
                         @if($locale !== 'en')
-                            - <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/teachers-toolkit-EN.zip">@lang('base.languages.en')</a>
-                    @endif
-                )
+                            -
+                            <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/teachers-toolkit-EN.zip">@lang('base.languages.en')</a>
+                        @endif
+                    )
                     </li>
 
-                    <li>EU Code Week 2019 @lang('resources.leaflet') (
+                    <li>EU Code Week 2020 @lang('resources.leaflet') (
 
-                            @foreach($languages as $lang)
-                                @if($lang === $locale)
-                                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/leaflet/2019/Codeweek_2019_{{strtoupper($lang)}}.pdf">@lang('base.languages.' . $lang)</a>
-                                @endif
-                            @endforeach
-
-                            @if($locale !== 'en')
-                                 - <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/leaflet/2019/Codeweek_2019_EN.pdf">@lang('base.languages.en')</a>
+                        @foreach($languages as $lang)
+                            @if($lang === $locale)
+                                <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/leaflet/2020/Codeweek_2020_{{strtoupper($lang)}}.pdf">@lang('base.languages.' . $lang)</a>
                             @endif
-                        )
+                        @endforeach
+
+                        @if($locale !== 'en')
+                            -
+                            <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/leaflet/2020/Codeweek_2020_EN.pdf">@lang('base.languages.en')</a>
+                        @endif
+                    )
                     </li>
                     <li>
                         <a href="{{route("guide")}}">@lang('resources.how_to_organise_an_activity')</a>
