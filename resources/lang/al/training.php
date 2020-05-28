@@ -3,9 +3,9 @@
 return [
 
     'learning_bits' => 'Mësimet e Code Week',
-    'title' => 'Mësimet e Code Week',
+    'title' => 'Materiale trajnimi falas dhe kurse nëpërmjet internetit',
     'text' => '<p>Po mendoni të merrni pjesë në EU Code Week, por nuk dini se ku të filloni?</p>
-
+<h2 class="subtitle">1.	Mësimet</h2>
                     <p>Këtu mund të gjeni falas materiale trajnimi dhe burime që do t’ju ndihmojnë të filloni dhe të planifikoni mësimin tuaj novator të radhës.</p>
 
                     <p>Nuk nevojitet përvojë e mëparshme me kodim ose programim, dhe secili modul kërkon vetëm rreth 15 minuta që të plotësohet. Modulet ju prezantojnë konceptet kyçe që lidhen me kodimin dhe aktivitetet e mendimit kompjuterik. Gjithashtu, modulet ju japin sugjerime dhe këshilla praktike se si të integroni konceptet tuaja në klasë.</p>',
@@ -13,7 +13,7 @@ return [
 
                     <p>Ju mund të organizoni me lehtësi një mësim në klasën tuaj, një ditë të hapur ose një eveniment në shkollën tuaj. Thjesht gjeni një datë dhe regjistroni aktivitetin tuaj në <a href="/events">hartën e Code Week</a>. Secili organizator aktiviteti do të marrë një certifikatë pjesëmarrjeje për përpjekjet e veta.</p>
 
-                    <p>Nëse doni të lidheni me një grup mësuesish entuziastë, bëhuni pjesë e <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Grupit të EU Code Week në Facebook për mësuesit</a>! Për të marrë një hap më tej dhe për të bashkëpunuar me shkollat e tjera në vendin tuaj ose përtej kufijve, bëhuni pjesë e <a href="codeweek4all">Sfidës Code Week 4 All</a>.</p>',
+                    <p>Nëse doni të lidheni me një grup mësuesish entuziastë, bëhuni pjesë e <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Grupit të EU Code Week në Facebook për mësuesit</a>! Për të marrë një hap më tej dhe për të bashkëpunuar me shkollat e tjera në vendin tuaj ose përtej kufijve, bëhuni pjesë e <a href="/codeweek4all">Sfidës Code Week 4 All</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Kodimi pa teknologjinë dixhitale (jashtë linje)',
@@ -213,7 +213,7 @@ Në këtë video, ekipi i Code Week do t’ju tregojë disa aktivitete praktike,
         'title' => 'Mos harroni të shtoni aktivitetin tuaj në hartën e Code Week!',
         'text' => '<p>Ju mund të organizoni me lehtësi një mësim në klasën tuaj, një ditë të hapur ose një eveniment në shkollën tuaj. Thjesht gjeni një datë dhe regjistroni aktivitetin tuaj në <a href="/events">hartën e Code Week</a>. Secili organizator aktiviteti do të marrë një certifikatë pjesëmarrjeje për përpjekjet e veta.</p>
 
-<p>Nëse doni të lidheni me një grup mësuesish entuziastë, bëhuni pjesë e <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Grupit të EU Code Week në Facebook për mësuesit</a>! Për të marrë një hap më tej dhe për të bashkëpunuar me shkollat e tjera në vendin tuaj ose përtej kufijve, bëhuni pjesë e <a href="codeweek4all">Sfidës Code Week 4 All</a>.</p>'
+<p>Nëse doni të lidheni me një grup mësuesish entuziastë, bëhuni pjesë e <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Grupit të EU Code Week në Facebook për mësuesit</a>! Për të marrë një hap më tej dhe për të bashkëpunuar me shkollat e tjera në vendin tuaj ose përtej kufijve, bëhuni pjesë e <a href="/codeweek4all">Sfidës Code Week 4 All</a>.</p>'
     ]
 
 ];

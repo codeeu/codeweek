@@ -13,14 +13,14 @@ return [
     |
     */
 
-    'title' => 'Raportoni evenimentin tuaj të #codeEU',
+    'title' => 'Raportoni evenimentin tuaj të #CodeWeek',
     'event_title' => 'Titulli i evenimentit',
     'number_required' => 'Jepni një përllogaritje të përafërt, edhe nëse nuk keni të dhëna të sakta.',
-    'phrase1'=>'Këtë formular mund ta plotësoni vetëm një herë! Kontrolloni me kujdes të dhënat tuaja. Nëse bëni një gabim, ',
-    'phrase2'=>'Pasi të dorëzoni raportin, do t’ju lëshohet automatikisht një certifikatë e personalizuar për pjesëmarrjen në Code Week dhe do t’ju vihet në dispozicion për ta shkarkuar ose ndarë. Një shembull të certifikatës mund ta shikoni këtu.',
-    'phrase3'=>'Fushat e detyrueshme janë të shënuara me yll *.',
-    'phrase4'=>'Këtë formular mund ta plotësoni vetëm një herë! Kontrolloni me kujdes të dhënat tuaja. Nëse bëni një gabim,',
-    'contactus'=>'na kontaktoni',
+    'phrase1' => 'Këtë formular mund ta plotësoni vetëm një herë! Kontrolloni me kujdes të dhënat tuaja. Nëse bëni një gabim, ',
+    'phrase2' => 'Pasi të dorëzoni raportin, do t’ju lëshohet automatikisht një certifikatë e personalizuar për pjesëmarrjen në Code Week dhe do t’ju vihet në dispozicion për ta shkarkuar ose ndarë. Një shembull të certifikatës mund ta shikoni këtu.',
+    'phrase3' => 'Fushat e detyrueshme janë të shënuara me yll *.',
+    'phrase4' => 'Këtë formular mund ta plotësoni vetëm një herë! Kontrolloni me kujdes të dhënat tuaja. Nëse bëni një gabim,',
+    'contactus' => 'na kontaktoni',
     'participants_count' => [
         'label' => 'Numri i pjesëmarrësve',
     ],

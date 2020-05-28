@@ -13,14 +13,14 @@ return [
     |
     */
 
-    'title' => 'Presenta il tuo evento #codeEU',
+    'title' => 'Presenta il tuo evento #CodeWeek',
     'event_title' => 'Titolo evento',
     'number_required' => 'Ti preghiamo di fornire una stima approssimativa, anche se non disponi di dati esatti.',
-    'phrase1'=>'Puoi compilare questo modulo solo una volta! Ti preghiamo di controllare i dati con attenzione. Se commetti un errore, ',
-    'phrase2'=>'Dopo aver inviato il rapporto, un certificato personalizzato per la partecipazione alla Settimana europea della programmazione verrà emesso automaticamente e sarà disponibile per il download o la condivisione. Puoi vedere un esempio di certificato qui.',
-    'phrase3'=>'I campi obbligatori sono contrassegnati con un asterisco *.',
-    'phrase4'=>'Puoi compilare questo modulo solo una volta! Ti preghiamo di controllare i dati con attenzione. Se commetti un errore,',
-    'contactus'=>'contattaci',
+    'phrase1' => 'Puoi compilare questo modulo solo una volta! Ti preghiamo di controllare i dati con attenzione. Se commetti un errore, ',
+    'phrase2' => 'Dopo aver inviato il rapporto, un certificato personalizzato per la partecipazione alla Settimana europea della programmazione verrà emesso automaticamente e sarà disponibile per il download o la condivisione. Puoi vedere un esempio di certificato qui.',
+    'phrase3' => 'I campi obbligatori sono contrassegnati con un asterisco *.',
+    'phrase4' => 'Puoi compilare questo modulo solo una volta! Ti preghiamo di controllare i dati con attenzione. Se commetti un errore,',
+    'contactus' => 'contattaci',
     'participants_count' => [
         'label' => 'Conteggio partecipanti',
     ],

@@ -40,6 +40,55 @@ return [
         ]
     ],
 
+
+    'keep-off-my-path' => [
+        'title' => 'Hoidu mu teelt',
+        'text' => '"Hoidu mu teelt“ on võistlusmäng kahe võistkonnaga. Alustades mängualuse vastaskülgedest, tekitavad kaks võistkonda teid, mis üksteist takistavad. Võidab meeskond, kes takistab teisel oma teed pikendamast.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'K1. Kas on lähtepositsioone, mis annavad eelise ühele kahest võistkonnast?',
+                    2 => 'K2. Kas saaks tulla viik?',
+                    3 => 'K3. Kas esimesena käival mängijal on eelis?',
+                    4 => 'K4. Kas on olemas vettpidav mängustrateegia, mida esimesena käiv mängija saab kasutada, et olla kindel, et ta kunagi ei kaota?'
+                ]
+
+        ]
+
+    ],
+
+    'tug-of-war' => [
+        'title' => 'Köievedu',
+        'text' => '„Köievedu“ on koostöö- ja võistlusmäng. Alustades mängualuse allääre keskelt, tegutsevad kaks võistkonda (kollane ja punane) koos, et jõuda ülaäärele. Kollane võistkond üritab jõuda vasakul olevatesse kastidesse, samal ajal kui punane võistkond üritab jõuda paremal olevatesse kastidesse.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'K1. Kas on olemas strateegia, mis annab alati tulemuseks võidu?',
+                    2 => 'K2. Kas esimesena käival mängijal on eelis?',
+                    3 => 'K3. Kas siis, kui kaks mängijat on võrdselt tähelepanelikud, lõpeb mäng alati viigiga, st keskel?',
+                ]
+
+        ]
+
+    ],
+
+    'explorer-without-footprints' => [
+        'title' => 'Maadeuurija ilma jalajälgedeta',
+        'text' => 'Maadeuurija kõnnib mängualust mööda lähtepunktist sihtpunkti, püüdes külastada kõiki kaste. Kui maadeuurija  kõnnib, jätab ta värvilisi jälgi, mis võimaldavad robotil värve tõlgendades tema samme järgida. Mäng muutub veelgi intrigeerivamaks, kui maadeavastaja puhastab jalajäljed ära, jättes alles ainult värvid.',
+        'material' => 'samuti punased, kollased ja hallid markerid (või pliiatsid)',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'K1. Mis vahe on värvilisi jälgi täis mängualusel ja mängualusel värvidega, kuid ilma jälgedeta?',
+                    2 => 'K2. Milline mängualus pakub rohkem liikumisvabadust, säilitades samad pööramisreeglid, mida tähistab värv?',
+                    3 => 'K3. Kas värvidega mängualusel on võimalikud teed, mis pole võimalikud värviliste jalajälgedega mängualusel?',
+                    4 => 'K4. Kas värviliste jalajälgedega mängualusel on võimalikud teed, mis pole võimalikud ainult värvidega mängualusel?'
+                ]
+
+        ]
+
+    ],
+
     'texts' => [
         1 => 'Coding@Home on lühikeste videote, isevalmistatavate materjalide, nuputusülesannete, mängude ja põnevate programmeerimisülesannete kogumik igapäevaseks kasutamiseks nii perekonnas kui ka koolis. Nendeks tegevusteks ei vaja te eelnevaid teadmisi ega elektroonilisi seadmeid. Tegevused stimuleerivad arvutuslikku mõtlemist ning arendavad õpilaste, vanemate ja õpetajate oskusi kodus ja koolis.',
         2 => 'ELi programmeerimisnädala Code Week sari Coding@Home põhineb Urbino ülikooli ja ühenduse CodeMOOCnet Association algatusel <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> koostöös Itaalia televisiooni kultuuriosakonnaga. Alessandro Bogliolo on Urbino ülikooli infotöötlussüsteemide professor, <a href="/ambassadors?country_iso=IT" target="_blank">ELi programmeerimisnädala Code Week Itaalia saadik</a> ja kõigi saadikute koordinaator ning digitaalsete oskuste ja töökohtade koalitsiooni juhatuse liige.',

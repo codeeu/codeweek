@@ -13,14 +13,14 @@ return [
     |
     */
 
-    'title' => 'Kirjoita raportti #codeEU-tapahtumasta.',
+    'title' => 'Kirjoita raportti #CodeWeek-tapahtumasta.',
     'event_title' => 'Tapahtuman otsikko',
     'number_required' => 'Anna omat arviosi, jos sinulla ei ole tarkkoja tietoja.',
-    'phrase1'=>'Voit täyttää lomakkeen vain kerran! Tarkista tiedot huolella. Jos teet virheen, ',
-    'phrase2'=>'Raportin lähettämisen jälkeen räätälöity koodausviikon osallistumistodistus laaditaan automaattisesti, minkä jälkeen se on ladattavissa tai jaettavissa. Näet esimerkin todistuksesta täältä.',
-    'phrase3'=>'Pakolliset kentät on merkitty tähdellä *.',
-    'phrase4'=>'Voit täyttää lomakkeen vain kerran! Tarkista tiedot huolella. Jos teet virheen,',
-    'contactus'=>'ota meihin yhteyttä.',
+    'phrase1' => 'Voit täyttää lomakkeen vain kerran! Tarkista tiedot huolella. Jos teet virheen, ',
+    'phrase2' => 'Raportin lähettämisen jälkeen räätälöity koodausviikon osallistumistodistus laaditaan automaattisesti, minkä jälkeen se on ladattavissa tai jaettavissa. Näet esimerkin todistuksesta täältä.',
+    'phrase3' => 'Pakolliset kentät on merkitty tähdellä *.',
+    'phrase4' => 'Voit täyttää lomakkeen vain kerran! Tarkista tiedot huolella. Jos teet virheen,',
+    'contactus' => 'ota meihin yhteyttä.',
     'participants_count' => [
         'label' => 'Osallistujamäärä',
     ],

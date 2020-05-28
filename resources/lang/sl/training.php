@@ -3,15 +3,15 @@
 return [
 
     'learning_bits' => 'Učni drobci za teden programiranja',
-    'title' => 'Razmišljate, da bi sodelovali v evropskem tednu programiranja, vendar ne veste, kje začeti?',
+    'title' => 'Brezplačna gradiva za vajo in spletni tečaji',
     'text' => '<p>Tu boste našli brezplačno gradivo za usposabljanje in vire, ki vam bodo v pomoč, da boste lažje začeli in načrtovali naslednjo inovativno učno uro.</p>
-
+<h2 class="subtitle">1. 1.	Učni drobci</h2>
                     <p>Predhodno znanje o programiranju ni potrebno, vsak modul pa traja le približno 15 minut. V modulih boste spoznali ključne pojme, povezane s programiranjem in računalniškim razmišljanjem. Poleg tega boste v našli tudi praktične nasvete, kako te pojme vključiti v svoj razred.</p>',
     'text_2' => '<p>Zdaj ko ste zaključili enega ali več učnih drobcev za teden programiranja, upamo, da ste dovolj samozavestni, da nekaj digitalne ustvarjalnosti prenesete v razred in dodate svojo dejavnost na <a href="/events">zemljevid tedna programiranja</a>!</p>
 
                     <p>Enostavno lahko pripravite učno uro v svojem razredu, dan odprtih vrat ali dogodek na svoji šoli. Samo poiščite datum in prijavite svojo dejavnost na <a href="/events">zemljevidu tedna programiranja</a>. Vsakdo, ki bo organiziral dejavnost, bo za svoj trud prejel certifikat o udeležbi.</p>
 
-                    <p>Če se želite povezati z mednarodno skupino zagnanih učiteljev, se pridružite <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">skupini evropskega tedna programiranja za učitelje na Facebooku</a>! Če želite narediti še korak dlje in sodelovati z drugimi šolami v svoji državi ali drugod, se pridružite <a href="codeweek4all">izzivu Code Week 4 All</a>.</p>',
+                    <p>Če se želite povezati z mednarodno skupino zagnanih učiteljev, se pridružite <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">skupini evropskega tedna programiranja za učitelje na Facebooku</a>! Če želite narediti še korak dlje in sodelovati z drugimi šolami v svoji državi ali drugod, se pridružite <a href="/codeweek4all">izzivu Code Week 4 All</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Programiranje brez digitalne tehnologije (brez računalnika)',
@@ -211,7 +211,7 @@ V tem videoposnetku vam bo ekipa tedna programiranja pokazala nekaj praktičnih,
         'title' => 'Ne pozabite dodati svoje dejavnosti na zemljevid tedna programiranja!',
         'text' => '<p>Enostavno lahko pripravite učno uro v svojem razredu, dan odprtih vrat ali dogodek na svoji šoli. Samo poiščite datum in prijavite svojo dejavnost na <a href="/events">zemljevidu tedna programiranja</a>. Vsakdo, ki bo organiziral dejavnost, bo za svoj trud prejel certifikat o udeležbi.</p>
 
-<p>Če se želite povezati z mednarodno skupino zagnanih učiteljev, se pridružite <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">skupini evropskega tedna programiranja za učitelje na Facebooku</a>! Če želite narediti še korak dlje in sodelovati z drugimi šolami v svoji državi ali drugod, se pridružite <a href="codeweek4all">izzivu Code Week 4 All</a>.</p>'
+<p>Če se želite povezati z mednarodno skupino zagnanih učiteljev, se pridružite <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">skupini evropskega tedna programiranja za učitelje na Facebooku</a>! Če želite narediti še korak dlje in sodelovati z drugimi šolami v svoji državi ali drugod, se pridružite <a href="/codeweek4all">izzivu Code Week 4 All</a>.</p>'
     ]
 
 ];

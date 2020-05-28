@@ -43,6 +43,55 @@ return [
     ],
 
 
+    'keep-off-my-path' => [
+        'title' => 'Keep of my path',
+        'text' => 'Keep of my path est un jeu compétitif opposant deux équipes. En partant des extrémités opposées du plateau, les deux équipes tracent des chemins qui se gênent mutuellement. L’équipe qui empêche l’autre de prolonger son chemin gagne.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. Y a-t-il des points de départ qui favorisent l’une des deux équipes ?',
+                    2 => 'Q2. Pourrait-il y avoir un match nul ?',
+                    3 => 'Q3. Le joueur qui part le premier a-t-il un avantage ?',
+                    4 => 'Q4. Existe-t-il une stratégie de jeu imparable que le joueur commençant le premier pourrait adopter pour s’assurer de ne jamais perdre ?'
+                ]
+
+        ]
+
+    ],
+
+    'tug-of-war' => [
+        'title' => 'Tug of war',
+        'text' => 'Tug of war est un jeu de collaboration et de compétition. En partant du centre du bas du plateau, deux équipes (jaune et rouge) s’allient pour atteindre le sommet. L’équipe jaune essaie d’atteindre les cases de gauche tandis que l’équipe rouge essaie d’atteindre les cases de droite.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. Existe-t-il une stratégie qui aboutira systématiquement à une victoire ?',
+                    2 => 'Q2. Le joueur qui part le premier a-t-il un avantage ?',
+                    3 => 'Q3. Si les deux joueurs sont aussi attentifs l’un que l’autre, la partie se termine-t-elle toujours par un match nul, c’est-à-dire au centre ?',
+                ]
+
+        ]
+
+    ],
+
+    'explorer-without-footprints' => [
+        'title' => 'L’explorateur sans traces de pas',
+        'text' => 'L’explorateur fait le tour du tableau, du point de départ à la cible, en essayant de passer par toutes les cases. Ce faisant, l’explorateur laisse des traces de pas colorées, qui permettent au robot de suivre les étapes en interprétant les couleurs. Le jeu devient encore plus intrigant lorsque l’explorateur efface les traces de pas en ne laissant que les couleurs.',
+        'material' => 'marqueurs (ou des crayons) rouges, jaunes et gris',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. Quelle est la différence entre le tableau rempli de traces de couleur et celui avec des couleurs, mais sans traces ?',
+                    2 => 'Q2. Quel tableau offre une plus grande liberté de mouvement, en conservant les mêmes règles de rotation que celles indiquées par la couleur ?',
+                    3 => 'Q3. Y a-t-il des chemins possibles sur le tableau avec des couleurs, qui ne sont pas possibles sur le tableau avec des traces de pas de couleur ?',
+                    4 => 'Q4. Existe-t-il sur le tableau des pistes possibles avec des traces de couleur, ce qui n’est pas possible sur le tableau avec des couleurs uniquement ?'
+                ]
+
+        ]
+
+    ],
+
+
     'texts' => [
         1 => 'Coding@Home propose une série de courtes vidéos, de matériel de bricolage, de puzzles, de jeux et de défis de codage pour une utilisation quotidienne en famille et à l’école. Pas besoin de connaissances préalables ou d’appareils électroniques pour réaliser ces activités. Les activités stimuleront la réflexion informatique et cultiveront les compétences des élèves, des parents et des enseignants à la maison ou en milieu scolaire.',
         2 => 'La série Coding@Home du Code Week de l’UE s’appuie sur l’initiative <a

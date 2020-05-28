@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Bewerk je #codeEU-evenement',
+    'title' => 'Bewerk je #CodeWeek-evenement',
     'required_fields' => 'Verplichte velden zijn gemarkeerd met een sterretje (*). Je kunt de vermelding van het evenement ook in je lokale taal toevoegen.',
     'description' => 'Beschrijving',
     'audience' => 'Doelgroep',

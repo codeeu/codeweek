@@ -51,7 +51,7 @@ return [
     ],
     'questions' => [
         'title' => 'Máte otázky?',
-        'content' => '<p>Ak máte otázky o organizovaní a propagácii vášho podujatia #codeEU, obráťte sa na niektorého z <a href="/ambassadors">veľvyslancov Európskeho týždňa programovania</a> vo vašej krajine.</p>'
+        'content' => '<p>Ak máte otázky o organizovaní a propagácii vášho podujatia #CodeWeek, obráťte sa na niektorého z <a href="/ambassadors">veľvyslancov Európskeho týždňa programovania</a> vo vašej krajine.</p>'
     ]
 
 ];

@@ -3,15 +3,15 @@
 return [
 
     'learning_bits' => 'Modules d’apprentissage de la Semaine du code',
-    'title' => 'Vous envisagez de participer à la Semaine européenne du code mais vous ne savez pas comment vous y prendre?',
+    'title' => 'Matériel de formation et cours en ligne gratuits',
     'text' => '<p>Vous trouverez ici des documents et des ressources de formation gratuits qui vous aideront à démarrer et à planifier votre prochaine leçon innovante.</p>
-
+<h2 class="subtitle">1. Notions</h2>
                     <p>Aucune expérience préalable en matière de programmation n’est requise, et chaque module ne prend environ que 15 minutes. Les modules vous présentent les concepts clés liés aux activités de codage et de raisonnement informatique. De plus, les modules vous donnent également des conseils pratiques sur la façon d’intégrer ces concepts dans votre classe.</p>',
     'text_2' => '<p>Maintenant que vous avez terminé un ou plusieurs modules d’apprentissage de la Semaine du code, nous espérons que vous vous sentirez suffisamment à l’aise pour donner une touche de créativité numérique à votre classe et épingler votre activité sur la <a href="/events">carte Code Week</a>!</p>
 
                     <p>Vous pouvez facilement organiser un cours en classe, une journée portes ouvertes ou un événement dans votre établissement. Choisissez une date et inscrivez votre activité sur la <a href="/events">carte Code Week</a>. Chaque organisateur d’activité sera récompensé pour ses efforts par un certificat de participation.</p>
 
-                    <p>Si vous souhaitez entrer en contact avec un groupe international d’enseignants enthousiastes, rejoignez le <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">groupe Facebook de la Semaine européenne du code pour enseignants</a>! Pour aller plus loin et collaborer avec d’autres écoles dans votre pays ou par-delà les frontières, participez au <a href="codeweek4all">Code Week 4 All challenge</a>.</p>',
+                    <p>Si vous souhaitez entrer en contact avec un groupe international d’enseignants enthousiastes, rejoignez le <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">groupe Facebook de la Semaine européenne du code pour enseignants</a>! Pour aller plus loin et collaborer avec d’autres écoles dans votre pays ou par-delà les frontières, participez au <a href="/codeweek4all">Code Week 4 All challenge</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Coder sans technologie numérique (hors ligne)',
@@ -211,7 +211,7 @@ Dans cette vidéo, l’équipe de la Semaine du code vous présentera quelques a
         'title' => 'N’oubliez pas d’ajouter votre activité à la carte Code Week!',
         'text' => '<p>Vous pouvez facilement organiser un cours en classe, une journée portes ouvertes ou un événement dans votre établissement. Choisissez une date et inscrivez votre activité sur la <a href="/events">carte Code Week</a>. Chaque organisateur d’activité sera récompensé pour ses efforts par un certificat de participation.</p>
 
-<p>Si vous souhaitez entrer en contact avec un groupe international d’enseignants enthousiastes, rejoignez le <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">groupe Facebook de la Semaine européenne du code pour enseignants</a>! Pour aller plus loin et collaborer avec d’autres écoles dans votre pays ou par-delà les frontières, participez au <a href="codeweek4all">Code Week 4 All challenge</a>.</p>'
+<p>Si vous souhaitez entrer en contact avec un groupe international d’enseignants enthousiastes, rejoignez le <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">groupe Facebook de la Semaine européenne du code pour enseignants</a>! Pour aller plus loin et collaborer avec d’autres écoles dans votre pays ou par-delà les frontières, participez au <a href="/codeweek4all">Code Week 4 All challenge</a>.</p>'
     ]
 
 ];

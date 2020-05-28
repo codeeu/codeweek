@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Rediģējiet savu #codeEU pasākumu',
+    'title' => 'Rediģējiet savu #CodeWeek pasākumu',
     'required_fields' => 'Obligāti aizpildāmie lauki ir norādīti ar * zvaigznīti. Jūs varat pievienot pasākumu savā vietējā valodā.',
     'description' => 'Apraksts',
     'audience' => 'Auditorija',

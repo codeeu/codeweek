@@ -3,15 +3,15 @@
 return [
 
     'learning_bits' => 'Module de învățare pentru Săptămâna programării',
-    'title' => 'Vă gândiți să participați la Săptămâna UE a programării, dar nu știți de unde să începeți?',
+    'title' => 'Materiale de instruire și cursuri online gratuite',
     'text' => '<p>Aici puteți găsi materiale de instruire și resurse gratuite care vă vor ajuta să începeți și să vă planificați următoarea lecție inovatoare.</p>
-
+<h2 class="subtitle">1.	Module de învățare</h2>
                     <p>Nu este necesară experiență anterioară de scriere de cod sau programare, iar fiecare modul necesită aproximativ 15 minute pentru a fi finalizat. Modulele vă prezintă concepte-cheie legate de activități de programare și gândire computațională. În plus, modulele vă oferă idei și sfaturi practice cu privire la modul de integrare a conceptelor în clasa dumneavoastră.</p>',
     'text_2' => '<p>Acum că ați finalizat unu sau mai multe module de învățare pentru Săptămâna programării, sperăm că vă simțiți suficient de pregătit să aduceți puțină creativitate digitală în clasa dumneavoastră și să vă adăugați activitatea pe <a href="/events">harta Săptămânii programării</a>!</p>
 
                     <p>Puteți organiza cu ușurință o lecție în clasa dumneavoastră, o zi a porților deschise sau un eveniment la școala dumneavoastră. Trebuie doar să găsiți o dată și să vă înregistrați activitatea pe <a href="/events">harta Săptămânii programării</a>. Fiecare organizator de activități va primi un certificat de participare pentru efortul depus.</p>
 
-                    <p>Dacă doriți să intrați în legătură cu un grup internațional de profesori entuziaști, alăturați-vă <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupului de Facebook pentru profesori Săptămâna UE a programării</a>! Pentru a face un pas în plus și a colabora cu alte școli din țara dumneavoastră sau din străinătate, alăturați-vă <a href="codeweek4all">provocării Săptămâna programării pentru toți</a>.</p>',
+                    <p>Dacă doriți să intrați în legătură cu un grup internațional de profesori entuziaști, alăturați-vă <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupului de Facebook pentru profesori Săptămâna UE a programării</a>! Pentru a face un pas în plus și a colabora cu alte școli din țara dumneavoastră sau din străinătate, alăturați-vă <a href="/codeweek4all">provocării Săptămâna programării pentru toți</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Programarea fără tehnologie digitală (fără dispozitive electronice)',
@@ -211,7 +211,7 @@ Cu Python, elevii pot să creeze jocuri cu întrebări despre evenimente istoric
         'title' => 'Nu uitați să vă adăugați activitatea pe harta Săptămânii programării!',
         'text' => '<p>Puteți organiza cu ușurință o lecție în clasa dumneavoastră, o zi a porților deschise sau un eveniment la școala dumneavoastră. Trebuie doar să găsiți o dată și să vă înregistrați activitatea pe <a href="/events">harta Săptămânii programării</a>. Fiecare organizator de activități va primi un certificat de participare pentru efortul depus.</p>
 
-<p>Dacă doriți să intrați în legătură cu un grup internațional de profesori entuziaști, alăturați-vă <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupului de Facebook pentru profesori Săptămâna UE a programării</a>! Pentru a face un pas în plus și a colabora cu alte școli din țara dumneavoastră sau din străinătate, alăturați-vă <a href="codeweek4all">provocării Săptămâna programării pentru toți</a>.</p>'
+<p>Dacă doriți să intrați în legătură cu un grup internațional de profesori entuziaști, alăturați-vă <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupului de Facebook pentru profesori Săptămâna UE a programării</a>! Pentru a face un pas în plus și a colabora cu alte școli din țara dumneavoastră sau din străinătate, alăturați-vă <a href="/codeweek4all">provocării Săptămâna programării pentru toți</a>.</p>'
     ]
 
 ];

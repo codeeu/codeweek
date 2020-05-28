@@ -3,15 +3,15 @@
 return [
 
     'learning_bits' => 'Għajnuniet ta’ Tagħlim tal-Ġimgħa tal-Ikkowdjar',
-    'title' => 'Qed tikkunsidra tipparteċipa fil-Ġimgħa tal-UE tal-Ikkowdjar iżda ma tafx minn fejn se tibda?',
+    'title' => 'Materjal ta’ taħriġ u korsijiet online  mingħajr ħlas',
     'text' => '<p>Hawn tista’ ssib materjal u riżorsi ta’ taħriġ bla ħlas li ser jgħinuk tibda u tippjana l-lezzjoni innovattivi tiegħek li jmiss.</p>
-
+<h2 class="subtitle">1. Għajnuniet ta’ Tagħlim tal-Ġimgħa tal-Ikkowdjar</h2>
                     <p>Mhi meħtieġa ebda esperjenza preċedenti fl-ikkowdjar jew fl-ipprogrammar, u kull modulu jieħu biss madwar 15-il minuta biex tlestih. Il-modulu jintroduċuk għal kunċetti ewlenin relatati mal-ikkowdjar u attivitajiet tal-ħsieb komputazzjonali. Barra minn hekk, il-moduli jagħtuk ukoll għajnuniet prattiċi u pariri dwar kif tintegra l-kunċetti fil-klassi tiegħek.</p>',
     'text_2' => '<p>Issa li lestejt waħda jew aktar mill-Għajnuniet ta’ Tagħlim tal-Ġimgħa tal-Ikkowdjar, nittamaw li tħossok komdu biżżejjed biex twassal xi kreattività diġitali fil-klassi tiegħek u timmarka l-attività tiegħek fuq il-<a href="/events">Mappa tal-Ġimgħa tal-Ikkowdjar</a>!</p>
 
                     <p>Tista’ faċilment torganizza lezzjoni fil-klassi tiegħek, jum għall-pubbliku jew avveniment fl-iskola tiegħek. Kemm issib data u tirreġistra l-attività tiegħek fuq il-<a href="/events">mappa tal-Ġimgħa tal-Ikkowdjar</a>. Kull organizzatur ta’ attività ser jirċievi ċertifikat ta’ parteċipazzjoni għall-isforz tiegħu.</p>
 
-                    <p>Jekk tixtieq tingħaqad ma’ grupp internazzjonali ta’ għalliema entużjastiċi, issieħeb fil-grupp ta’ Facebook tal-<a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Ġimgħa tal-UE tal-Ikkowdjar għall-għalliema</a>! Biex tieħu pass oltre u tikkollabora ma’ skejjel oħra f’pajjiżek jew bejn il-fruntieri – issieħeb fl-<a href="codeweek4all">isfida Ġimgħa tal-Ikkowdjar għal Kulħadd</a>.</p>',
+                    <p>Jekk tixtieq tingħaqad ma’ grupp internazzjonali ta’ għalliema entużjastiċi, issieħeb fil-grupp ta’ Facebook tal-<a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Ġimgħa tal-UE tal-Ikkowdjar għall-għalliema</a>! Biex tieħu pass oltre u tikkollabora ma’ skejjel oħra f’pajjiżek jew bejn il-fruntieri – issieħeb fl-<a href="/codeweek4all">isfida Ġimgħa tal-Ikkowdjar għal Kulħadd</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'L-ikkowdjar mingħajr teknoloġija diġitali (mhux ipplaggjat)',
@@ -213,7 +213,7 @@ F’dan il-vidjow, it-tim tal-Ġimgħa tal-Ikkowdjar se jurik xi attivitajiet pr
    Tista’ faċilment torganizza lezzjoni fil-klassi tiegħek, jum għall-pubbliku, jew avveniment fl-iskola tiegħek. Kemm issib data u rreġistra l-attività tiegħek fil-<a href="/events">mappa tal-Ġimgħa tal-Ikkowdjar</a>. Kull organizzatur ta’ attività ser jirċievi ċertifikat ta’ parteċipazzjoni għall-isforz tagħhom.</p>
 
 <p>
-    Jekk tixtieq tingħaqad ma’ grupp internazzjonali ta’ għalliema entużjastiċi, issieħeb fil-<a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupp ta’ Facebook tal-Ġimgħa tal-UE tal-Ikkowdjar għall-għalliema</a>! Biex tieħu pass oltre u tikkollabora ma’ skejjel oħra f’pajjiżek jew bejn il-fruntieri – issieħeb fl-<a href="codeweek4all">isfida Ġimgħa tal-Ikkowdjar għal Kulħadd</a>.
+    Jekk tixtieq tingħaqad ma’ grupp internazzjonali ta’ għalliema entużjastiċi, issieħeb fil-<a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupp ta’ Facebook tal-Ġimgħa tal-UE tal-Ikkowdjar għall-għalliema</a>! Biex tieħu pass oltre u tikkollabora ma’ skejjel oħra f’pajjiżek jew bejn il-fruntieri – issieħeb fl-<a href="/codeweek4all">isfida Ġimgħa tal-Ikkowdjar għal Kulħadd</a>.
 </p>'
     ]
 

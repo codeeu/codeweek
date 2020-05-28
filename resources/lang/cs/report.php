@@ -13,14 +13,14 @@ return [
     |
     */
 
-    'title' => 'Podejte zprávu o své #codeEU akci',
+    'title' => 'Podejte zprávu o své #CodeWeek akci',
     'event_title' => 'Název akce',
     'number_required' => 'Pokud nemáte přesné údaje, uveďte prosím alespoň přibližný odhad.',
-    'phrase1'=>'Tento formulář můžete vyplnit pouze jednou! Údaje prosím pečlivě zkontrolujte. Pokud uděláte chybu, ',
-    'phrase2'=>'Po odeslání zprávy vám bude automaticky vydán osobní certifikát za účast na Týdnu programování, který si budete moci stáhnout nebo sdílet. Příklad certifikátu si můžete prohlédnout zde.',
-    'phrase3'=>'Povinná pole jsou označená * hvězdičkou.',
-    'phrase4'=>'Tento formulář můžete vyplnit pouze jednou! Údaje prosím pečlivě zkontrolujte. Pokud uděláte chybu,',
-    'contactus'=>'kontaktujte nás',
+    'phrase1' => 'Tento formulář můžete vyplnit pouze jednou! Údaje prosím pečlivě zkontrolujte. Pokud uděláte chybu, ',
+    'phrase2' => 'Po odeslání zprávy vám bude automaticky vydán osobní certifikát za účast na Týdnu programování, který si budete moci stáhnout nebo sdílet. Příklad certifikátu si můžete prohlédnout zde.',
+    'phrase3' => 'Povinná pole jsou označená * hvězdičkou.',
+    'phrase4' => 'Tento formulář můžete vyplnit pouze jednou! Údaje prosím pečlivě zkontrolujte. Pokud uděláte chybu,',
+    'contactus' => 'kontaktujte nás',
     'participants_count' => [
         'label' => 'Počet účastníků',
     ],

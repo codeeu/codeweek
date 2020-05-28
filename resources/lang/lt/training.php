@@ -3,15 +3,15 @@
 return [
 
     'learning_bits' => 'Programavimo savaitės mokymosi segmentai',
-    'title' => 'Norite dalyvauti ES programavimo savaitėje, bet nežinote, nuo ko pradėti?',
+    'title' => 'Nemokama mokymo medžiaga ir nuotolinio mokymo kursai',
     'text' => ' <p>Čia rasite nemokamos mokymo medžiagos ir išteklių, kurie padės pasiruošti ir suplanuoti naujovišką pamoką.</p>
-
+<h2 class="subtitle">1. Programavimo savaitės mokymosi segmentai</h2>
                     <p>Tam nereikia jokios programavimo patirties, o kiekvienam moduliui užbaigti tereikia apie 15 minučių. Moduliuose pristatomos pagrindinės su programavimu susijusios sąvokos ir skaitmeninio mąstymo veiklos. Be to, juose pateikiama praktinių patarimų, kaip į savo pamoką įtraukti įvairias sąvokas.</p>',
     'text_2' => '<p>Dabar, kai jau esate susipažinę su vienu ar daugiau Programavimo savaitės mokymosi segmentų, tikimės, kad turite pakankamai žinių, kad savo pamokoms suteiktumėte šiek tiek skaitmeninio kūrybiškumo ir pažymėtumėte savo renginį <a href="/events">Programavimo savaitės žemėlapyje</a>!</p>
 
                     <p>Galite organizuoti pamoką savo klasėje, atvirą dieną ar kitą renginį savo mokykloje. Tiesiog pasirinkite datą ir pažymėkite savo renginį <a href="/events">Programavimo savaitės žemėlapyje</a>. Kiekvienas renginio organizatorius gaus dalyvio sertifikatą už pastangas.</p>
 
-                    <p>Jei norite užmegzti ryšį su tarptautine entuziastingų mokytojų grupe, prisijunkite prie <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ES programavimo savaitės „Facebook“ grupės mokytojams</a>! Jei norite žengti dar toliau ir bendradarbiauti su kitomis mokyklomis savo šalyje ar už jos ribų, prisijunkite prie <a href="codeweek4all">„CodeWeek4All“ iššūkio</a>.</p>',
+                    <p>Jei norite užmegzti ryšį su tarptautine entuziastingų mokytojų grupe, prisijunkite prie <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ES programavimo savaitės „Facebook“ grupės mokytojams</a>! Jei norite žengti dar toliau ir bendradarbiauti su kitomis mokyklomis savo šalyje ar už jos ribų, prisijunkite prie <a href="/codeweek4all">„CodeWeek4All“ iššūkio</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Programavimas be skaitmeninių technologijų (atsijungus)',
@@ -211,7 +211,7 @@ Naudodami „Python“, mokiniai gali kurti viktorinas apie istorinius įvykius,
         'title' => 'Nepamirškite įtraukti savo renginio į Programavimo savaitės žemėlapį!',
         'text' => '<p>Galite organizuoti pamoką savo klasėje, atvirą dieną ar kitą renginį savo mokykloje. Tiesiog pasirinkite datą ir pažymėkite savo renginį <a href="/events">Programavimo savaitės žemėlapyje</a>. Kiekvienas renginio organizatorius gaus dalyvio sertifikatą už pastangas.</p>
 
-<p>Jei norite užmegzti ryšį su tarptautine entuziastingų mokytojų grupe, prisijunkite prie <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ES programavimo savaitės „Facebook“ grupės mokytojams</a>! Jei norite žengti dar toliau ir bendradarbiauti su kitomis mokyklomis savo šalyje ar už jos ribų, prisijunkite prie <a href="codeweek4all">„CodeWeek4All“ iššūkio</a>.</p>'
+<p>Jei norite užmegzti ryšį su tarptautine entuziastingų mokytojų grupe, prisijunkite prie <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ES programavimo savaitės „Facebook“ grupės mokytojams</a>! Jei norite žengti dar toliau ir bendradarbiauti su kitomis mokyklomis savo šalyje ar už jos ribų, prisijunkite prie <a href="/codeweek4all">„CodeWeek4All“ iššūkio</a>.</p>'
     ]
 
 ];
