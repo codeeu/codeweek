@@ -35,7 +35,7 @@
 
                 <ul>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-008-ACTIVITY-01-{{strtoupper(App::getLocale())}}.DOCX">
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-008-ACTIVITY-03-{{strtoupper(App::getLocale())}}.DOCX">
                             @lang('training.lessons.8.activities.1')
                         </a>
                     </li>
@@ -45,7 +45,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-008-ACTIVITY-03-{{strtoupper(App::getLocale())}}.DOCX">
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-008-ACTIVITY-01-{{strtoupper(App::getLocale())}}.DOCX">
                             @lang('training.lessons.8.activities.3')
                         </a>
                     </li>
