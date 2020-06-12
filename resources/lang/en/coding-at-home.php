@@ -91,7 +91,67 @@ return [
 
     ],
 
+    'walk-as-long-as-you-can' => [
+        'title' => 'Walk as long as you can',
+        'text' => 'In this activity the challenge is to stay as long as possible on the board using colours instead of footprints. The activity becomes harder when the freedom of movement increases',
+        'coloured-cards' => "coloured cards, or red, yellow and grey markers",
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. When do the two paths collide and block each other?',
+                    2 => 'Q2. This game is presented as a two-player game? Is it possible to play it in 3 or 4 players? Do we need to change the rules?',
+                ]
 
+        ]
+
+    ],
+
+    'ada-charles-roby' => [
+        'title' => 'Ada, Charles and Roby',
+        'text' => 'The story of Ada Lovelace and Charles Babbage is an interesting one. They conceived and programmed computers a hundred years before they were actually invented',
+        'material' => 'modelling clay and a short pencil',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. Try to imagine that the robot you built with modelling clay and a pencil is able to move on the board to reach any position and, if needed, to trace its path. What instructions would you use to program it?'
+                ]
+
+        ]
+
+    ],
+
+    'cody-and-roby' => [
+        'title' => 'Cody and Roby',
+        'text' => 'This is a role-playing game with the programmer, Cody, and the robot, Roby. The video introduces the cards of CodyRoby, that we will use from now on to determine movements on the board. Cody will use these cards to give Roby instructions for how to move on the board',
+        'material' => 'chequered board with labels, instruction cards (left, right, forward), and any counters to be placed on the board',
+        'starter-kit' => 'CodyRoby starter kit',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. Where does Roby arrive if, starting from position C2 facing South, he executes the last sequence of instructions shown in the video?',
+                    2 => 'Q2. Could the movements Roby carries out by executing the last sequence of instructions shown in the video be described by applying the instructions of CodyFeet or CodyColor to the board?',
+                    3 => 'Q3. The three types of instructions introduced in the video, represented by the green, red and yellow cards, constitute an instruction set capable of driving Roby anywhere on the board. Can you come up with an instruction set with fewer than 3 instructions to do the same?',
+                ]
+
+        ]
+
+    ],
+
+    'the-tourist' => [
+        'title' => 'The tourist',
+        'text' => 'With the CodyRoby cards, two teams challenge each other to find, in the shortest time possible, the sequence of instructions that will guide the tourist to the monuments that she wants to visit on the board',
+        'material' => 'Larger cards can be useful to play on the floor',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. What sequence of instructions would guide the tourist to the Statue of Raphael in the first example shown in the video?',
+                    2 => 'Q2. What sequence of instructions would guide the tourist to the Torricini of the Ducal Palace in the second example shown in the video?',
+                    3 => 'Q3. Can you think of a fun way to do some exercise every time one of the two teams chooses a card to add to the program? Invent a way by rethinking the relay race shown in the video',
+                ]
+
+        ]
+
+    ],
 
 
     'texts' => [
