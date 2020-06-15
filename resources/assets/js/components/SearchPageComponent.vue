@@ -72,15 +72,12 @@
                 </multiselect>
 
                 <multiselect v-model="types" :options="typeslist" :multiple="true" :close-on-select="false"
-                             :clear-on-select="false" :preserve-search="false" :placeholder="$t('event.activitytype.label')"
+                             :clear-on-select="false" :preserve-search="false"
+                             :placeholder="$t('event.activitytype.label')"
                              :preselect-first="false"
-                             label="event.activitytype.label" :custom-label="customLabel" track-by="id">
-                    <pre class="language-json"><code>{{ themes }}</code></pre>
+                             label="event.activitytype" :custom-label="customLabel" track-by="id">
+                    <pre class="language-json"><code>{{ types }}</code></pre>
                 </multiselect>
-
-
-
-
 
 
             </div>
@@ -234,6 +231,9 @@
         mounted: function () {
             this.onSubmit();
             this.setSelectedCountryToCenterMap();
+            console.log(this.themeslist);
+            console.log(this.typeslist);
+            console.log(this.prpYears);
 
         }
     }
