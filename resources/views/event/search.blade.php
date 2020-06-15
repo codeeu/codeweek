@@ -17,6 +17,7 @@
 
 @section('content')
 
+
     <search-page-component
             :prp-years={{json_encode($years)}}
             :prp-query="'{{$query}}'"
