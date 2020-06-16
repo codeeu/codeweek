@@ -10,7 +10,7 @@
 
             <section class="codeweek-content-wrapper-inside">
 
-                <h1>0. @lang('coding-at-home.intro.title')</h1>
+                <h1>@lang('coding-at-home.intro.title')</h1>
 
                 <div style="margin-top:10px;margin-bottom:10px">
                     @lang('coding-at-home.texts.1')
@@ -32,7 +32,7 @@
 
 
             </section>
-
+            @include("include.licence")
         </section>
 
     </section>
