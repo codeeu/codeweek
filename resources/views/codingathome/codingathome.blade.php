@@ -93,7 +93,7 @@
 
             </section>
 
-
+            @include("include.licence")
         </section>
 
 @endsection
