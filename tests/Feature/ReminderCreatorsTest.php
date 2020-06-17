@@ -12,7 +12,7 @@ use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class ReminderCreatorsTest extends TestCase
+class RemindCreatorsTest extends TestCase
 {
 
     use DatabaseMigrations;
@@ -133,9 +133,6 @@ class ReminderCreatorsTest extends TestCase
     /** @test */
     public function notification_reports_should_increase()
     {
-
-        Mail::fake();
-
         $this->withExceptionHandling();
 
         $reportableevent = create('App\Event', ['report_notifications_count' => 0, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
@@ -165,9 +162,6 @@ class ReminderCreatorsTest extends TestCase
     /** @test */
     public function notification_date_should_be_updated()
     {
-
-        Mail::fake();
-
         $this->withExceptionHandling();
 
         $reportableevent = create('App\Event', ['last_report_notification_sent_at' => Carbon::now()->subDays(8), 'report_notifications_count' => 0, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
