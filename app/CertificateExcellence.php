@@ -141,7 +141,8 @@ class CertificateExcellence
 
         $cwd = $this->resource_path;
 
-        $process = new Process($command, $cwd);
+        // $process = new Process($command, $cwd);
+        $process = Process::fromShellCommandline($command, $cwd);
         $process->run();
 
 
