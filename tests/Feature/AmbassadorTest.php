@@ -35,30 +35,28 @@ class AmbassadorTest extends TestCase
         $this->ambassador_fr = create('App\User', ['country_iso' => $this->france->iso])->assignRole('ambassador');
 
 
-
-
-
     }
 
+//   Does not feel right not to have all countries
+//    /** @test */
+//    public function ambassadors_page_should_only_display_countries_with_ambassadors(){
+//
+//        $italy = create('App\Country',['iso'=>'foobar']);
+//        create('App\Event',['country_iso' => $italy->iso]);
+//        $this->get('/ambassadors?country_iso=BE')->assertDontSee($italy->iso);
+//
+//    }
 
     /** @test */
-    public function ambassadors_page_should_only_display_countries_with_ambassadors(){
+    public function ambassadors_without_bio_and_avatars_should_not_be_displayed()
+    {
 
-        $italy = create('App\Country',['iso'=>'foobar']);
-        create('App\Event',['country_iso' => $italy->iso]);
-        $this->get('/ambassadors?country_iso=BE')->assertDontSee($italy->iso);
+        $ambassador_without_bio = create('App\User', ['bio' => NULL, 'avatar_path' => NULL, 'country_iso' => $this->france->iso])->assignRole('ambassador');
 
-    }
-
-    /** @test */
-    public function ambassadors_without_bio_and_avatars_should_not_be_displayed(){
-
-        $ambassador_without_bio = create('App\User', ['bio'=>NULL, 'avatar_path'=>NULL,'country_iso' => $this->france->iso])->assignRole('ambassador');
-
-        create('App\Event',['country_iso' => $this->france->iso]);
+        create('App\Event', ['country_iso' => $this->france->iso]);
         $this->get('/ambassadors?country_iso=FR')->assertDontSee($ambassador_without_bio->lastname);
 
-        $ambassador_without_bio->bio="updated bio";
+        $ambassador_without_bio->bio = "updated bio";
         $ambassador_without_bio->save();
         $this->get('/ambassadors?country_iso=FR')->assertDontSee($ambassador_without_bio->lastname);
 
@@ -69,13 +67,23 @@ class AmbassadorTest extends TestCase
     }
 
     /** @test */
-    public function ambassadors_without_picture_should_not_be_displayed(){
+    public function ambassadors_without_picture_should_not_be_displayed()
+    {
 
-        $ambassador_without_bio = create('App\User', ['avatar_path'=>NULL, 'country_iso' => $this->france->iso])->assignRole('ambassador');
+        $ambassador_without_bio = create('App\User', ['avatar_path' => NULL, 'country_iso' => $this->france->iso])->assignRole('ambassador');
+//dd($ambassador_without_bio);
+        $italy = create('App\Country', ['iso' => 'foobar']);
+        create('App\Event', ['country_iso' => $italy->iso]);
+        $this->get('/ambassadors?country_iso=' . $this->france->iso)->assertDontSee($ambassador_without_bio->lastname);
 
-        $italy = create('App\Country',['iso'=>'foobar']);
-        create('App\Event',['country_iso' => $italy->iso]);
-        $this->get('/ambassadors?country_iso=BE')->assertDontSee($italy->iso);
+    }
+
+    /** @test */
+    public function ambassadors_with_picture_should_be_displayed()
+    {
+
+        $ambassador_without_bio = create('App\User', ['avatar_path' => 'something.jpg', 'country_iso' => $this->france->iso])->assignRole('ambassador');
+        $this->get('/ambassadors?country_iso=' . $this->france->iso)->assertSee($ambassador_without_bio->lastname);
 
     }
 
