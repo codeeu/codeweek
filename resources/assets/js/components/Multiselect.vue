@@ -27,11 +27,12 @@
   export default {
       components: { Multiselect },
       props: {
-          name: String,
-          value: String,
-          options: Array,
-          closeOnSelect: Boolean,
-          label: String
+        name: String,
+        value: String,
+        options: Array,
+        closeOnSelect: Boolean,
+        label: String,
+        translated: String
       },
       data () {
           var values = null;
@@ -39,16 +40,18 @@
           if (this.value) {
               this.value = this.value.split(',');
               innerValues = this.value;
-              values = [];
-              for (var i = 0; i < this.value.length; i++) {
-                  for (var j = 0; j < this.options.length; j++) {
-                      if (this.value[i]==this.options[j].id) {
-                          console.log("equals id="+this.value[i]);
-                          values.push(this.options[j]);
-                          break;
-                      }
-                  }
+            values = [];
+            for (var i = 0; i < this.value.length; i++) {
+              for (var j = 0; j < this.options.length; j++) {
+                if (this.value[i] == this.options[j].id) {
+                  console.log("equals id=" + this.value[i]);
+                  values.push(this.options[j]);
+                  break;
+                }
               }
+            }
+
+            console.log(values);
           }
         return {
             values: values,
@@ -68,10 +71,8 @@
                   }
               }
               console.log(this.innerValues);
-          },
-          customLabel(obj, label){
-            return this.$t(label + '.' + obj.name);
           }
+
       }
   }
 </script>
