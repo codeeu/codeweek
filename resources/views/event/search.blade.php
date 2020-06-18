@@ -12,18 +12,21 @@
             "renderTo" : "home-map",
             "custom": ["js/customSearchMap.js","js/leaflet.markercluster.js"]
         }
+
     </script>
 @endpush
 
 @section('content')
 
+    {{--    {{dd($countries)}}--}}
+    {{--    {{dd($active_countries)}}--}}
 
     <search-page-component
             :prp-years={{json_encode($years)}}
-            :prp-query="'{{$query}}'"
+                    :prp-query="'{{$query}}'"
             :prp-selected-country="{{json_encode($selected_country)}}"
             :prp-selected-year="{{$selected_year}}"
-            :countrieslist="{{ $countries }}"
+            :countrieslist="{{$active_countries->values()}}"
             :audienceslist="{{$audiences}}"
             :themeslist="{{$themes}}"
             :typeslist="{{$activity_types}}"
