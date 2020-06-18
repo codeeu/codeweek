@@ -5,7 +5,7 @@
         <div class="home-map">
             <div class="add-button">
                 <a class="codeweek-action-link-button"
-                   href="/add" >{{$t('menu.add_event')}}</a>
+                   href="/add">{{$t('menu.add_event')}}</a>
             </div>
             <div class="landing-wrapper">
                 <div class="events-map-wrapper">
@@ -32,7 +32,8 @@
                     <div class="year-selection">
                         <multiselect v-model="year" :options="years" :multiple="false" :close-on-select="true"
                                      :clear-on-select="false" :preserve-search="false" placeholder="Year"
-                                     :show-labels="false" :preselect-first="true" :searchable="false" :allowEmpty="false">
+                                     :show-labels="false" :preselect-first="true" :searchable="false"
+                                     :allowEmpty="false">
                             <pre class="language-json"><code>{{ year  }}</code></pre>
                         </multiselect>
                     </div>
@@ -53,7 +54,7 @@
                 <multiselect v-model="countries" :options="countrieslist" :multiple="true" :close-on-select="false"
                              :clear-on-select="false" :preserve-search="false" :placeholder="$t('search.countries')"
                              :preselect-first="false"
-                             label="countries" :custom-label="customLabel" track-by="iso">
+                             label="countries" :custom-label="translated" track-by="iso">
                     <pre class="language-json"><code>{{ countries }}</code></pre>
                 </multiselect>
 
@@ -87,7 +88,7 @@
         <div class="codeweek-content-wrapper">
 
             <div class="codeweek-grid-layout">
-                <div class="codeweek-card"  v-for="event in events">
+                <div class="codeweek-card" v-for="event in events">
                     <img :src="thumbnail(event)" class="card-image">
                     <div class="card-content">
                         <div class="card-title">{{ event.title }}</div>
@@ -96,7 +97,7 @@
                     </div>
                     <div class="card-actions">
                         <a class="codeweek-action-link-button"
-                           :href="'/view/' + event.id + '/' + event.slug" >{{ $t('myevents.view') }}</a>
+                           :href="'/view/' + event.id + '/' + event.slug">{{ $t('myevents.view') }}</a>
                     </div>
                 </div>
 
@@ -144,7 +145,8 @@
                 events: [],
                 pagination: {
                     'current_page': 1
-                }
+                },
+                sortedCountries: []
             }
         },
         methods: {
@@ -203,38 +205,36 @@
                 }
                 return 'https://codeweek-s3.s3.amazonaws.com/event_picture/logo_gs_2016_07703ca0-7e5e-4cab-affb-4de93e3f2497.png';
             },
+            translated(obj) {
+                return obj.translation;
+            },
             customLabel(obj, label) {
                 return this.$t(label + '.' + obj.name);
             },
-            setSelectedCountryToCenterMap(){
-                if (this.countries && this.countries.length === 1 && this.countries[0]){
+            setSelectedCountryToCenterMap() {
+                if (this.countries && this.countries.length === 1 && this.countries[0]) {
                     window.countrySelected = this.countries[0].iso;
                     if (window.centralizeMap) {
                         window.centralizeMap(window.countrySelected);
                     }
-                }else{
+                } else {
                     window.countrySelected = null;
                     if (window.centralizeMap) {
                         window.centralizeMap();
                     }
                 }
             },
-            limit(text){
+            limit(text) {
 
-                if(text.length > 200) {
-                    return text.substring(0,200)+"...";
+                if (text.length > 200) {
+                    return text.substring(0, 200) + "...";
                 }
                 return text;
             }
-
         },
         mounted: function () {
             this.onSubmit();
             this.setSelectedCountryToCenterMap();
-            console.log(this.themeslist);
-            console.log(this.typeslist);
-            console.log(this.prpYears);
-
         }
     }
 </script>
