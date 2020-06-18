@@ -25,12 +25,29 @@ class Country extends Model
             ->get()
             ->pluck('country_iso');
 
+        $countries = Country::findMany($isos);
 
-        $countries = Country::findMany($isos)->sortBy('name');
+        foreach ($countries as $country) {
+            $country->translation = __('countries.' . $country->name);
+        }
+
+        return $countries->sortBy("translation");
+
+    }
+
+    public static function translated()
+    {
+        $countries = Country::all();
 
 
-        return $countries;
+        foreach ($countries as $country) {
+            $country->translation = __('countries.' . $country->name);
+        }
 
+//       dd($countries->sortBy("translation"));
+//       return($countries);
+
+        return $countries->sortBy("translation")->values();
     }
 
     public static function withActualYearEvents()
