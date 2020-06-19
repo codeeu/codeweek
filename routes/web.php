@@ -47,6 +47,7 @@ Route::get('/cookie', 'StaticPageController@static')->name('cookie');
 Route::get('/petition', 'StaticPageController@static')->name('petition');
 Route::get('/beambassador', 'StaticPageController@static')->name('beambassador');
 Route::get('/about', 'StaticPageController@static')->name('about');
+Route::get('/values', 'StaticPageController@static')->name('values');
 Route::get('/partners', 'StaticPageController@static')->name('sponsors');
 Route::get('/codeweek4all', 'StaticPageController@static')->name('codeweek4all');
 

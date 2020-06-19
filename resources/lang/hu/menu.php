@@ -36,6 +36,6 @@ return [
     'logout' => 'Kijelentkezés',
     'signin' => 'Bejelentkezés',
     'privacy' => 'Adatvédelem',
-    'participation'=> 'Részvételi tanúsítvány'
-
+    'participation'=> 'Részvételi tanúsítvány',
+    'values' => 'Értékeink',
 ];
