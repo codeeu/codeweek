@@ -49,7 +49,7 @@ class EventRejected extends Mailable
 
         return $this
             ->subject($subject)
-            ->view($view);
+            ->markdown($view);
 
     }
 }

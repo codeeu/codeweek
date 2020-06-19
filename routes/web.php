@@ -12,6 +12,7 @@
 */
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 
 Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
@@ -169,9 +170,6 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
 });
 
 Route::get('/codeweek4all/{code}/detail', 'Codeweek4AllController@detail')->name('codeweek4all_details');
-
-Route::get('/hackathons', 'HackathonsController@index')->name('hackathons');
-Route::get('/hackathons/ireland', 'HackathonsController@before')->name('ireland');
 
 
 Route::get('/profile', function () {

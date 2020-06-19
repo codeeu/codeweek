@@ -12,7 +12,6 @@
                     <li><a href="{{route('events_map')}}">@lang('menu.map')</a></li>
                     <li><a href="{{route('create_event')}}">@lang('menu.add_event')</a></li>
                     <li><a href="{{route('scoreboard')}}">@lang('event.scoreboard_by_country')</a></li>
-                    <li><a href="{{route('hackathons')}}">Hackathons</a></li>
                 </ul>
             </li>
 
