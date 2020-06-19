@@ -36,6 +36,6 @@ return [
     'logout' => 'Afmelden',
     'signin' => 'Aanmelden',
     'privacy' => 'Privacy',
-    'participation'=> 'Deelnamecertificaat'
-
+    'participation'=> 'Deelnamecertificaat',
+    'values' => 'Onze waardes',
 ];

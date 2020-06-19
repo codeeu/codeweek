@@ -37,5 +37,5 @@ return [
     'signin' => 'Prijava',
     'privacy' => 'Zasebnost',
     'participation'=> 'Certifikat o udeležbi',
-
+    'values' => 'Naše vrednote',
 ];

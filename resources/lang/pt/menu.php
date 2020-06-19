@@ -37,5 +37,6 @@ return [
     'signin' => 'Iniciar sessão',
     'privacy' => 'Privacidade',
     'participation'=> 'Certificado de participação',
+    'values' => 'Os nossos valores',
 
 ];
