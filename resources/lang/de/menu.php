@@ -38,5 +38,5 @@ return [
     'signin' => 'Anmelden',
     'privacy' => 'Datenschutz',
     'participation'=> 'Teilnahmezertifikat',
-
+    'values' => 'Unsere Werte',
 ];

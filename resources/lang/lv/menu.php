@@ -37,5 +37,5 @@ return [
     'signin' => 'Pieteikties',
     'privacy' => 'Privātums',
     'participation'=> 'Dalības sertifikāts',
-
+    'values' => 'Mūsu vērtības',
 ];

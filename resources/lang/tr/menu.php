@@ -37,5 +37,5 @@ return [
     'signin' => 'Oturum Aç',
     'privacy' => 'Gizlilik',
     'participation'=> 'Katılım Sertifikası',
-
+    'values' => 'Değerlerimiz',
 ];
