@@ -38,5 +38,5 @@ return [
     'signin' => 'Přihlásit se',
     'privacy' => 'Ochrana osobních údajů',
     'participation'=> 'Účastnický certifikát',
-
+    'values' => 'Naše hodnoty',
 ];

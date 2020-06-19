@@ -38,5 +38,5 @@ return [
     'signin' => 'Log ind',
     'privacy' => 'Beskyttelse af personoplysninger',
     'participation'=> 'Deltagerbevis',
-
+    'values' => 'Vores værdier',
 ];
