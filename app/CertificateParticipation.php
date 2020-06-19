@@ -140,8 +140,8 @@ class CertificateParticipation
         $command = $this->pdflatex . " -interaction=nonstopmode -output-directory " . $this->resource_path . " " . $this->resource_path . "/" . $this->personalized_template_name . ".tex";
 
         $cwd = $this->resource_path;
-
-        $process = new Process($command, $cwd);
+        $process = Process::fromShellCommandline($command, $cwd);
+        //$process = new Process($command, $cwd);
         $process->run();
 
 
