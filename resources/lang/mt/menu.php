@@ -37,5 +37,5 @@ return [
     'signin' => 'Idħol fis-sistema',
     'privacy' => 'Privatezza',
     'participation'=> 'Ċertifikat ta’ Parteċipazzjoni',
-
+    'values' => 'Il-valuri tagħna',
 ];
