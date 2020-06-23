@@ -7,7 +7,7 @@ Unfortunately, the EU Code Week ambassadors in your country were not able to app
 
 If you feel that this decision was made in error, please feel free to visit your application, edit any details necessary and resubmit via the following link: [Your activities]({{route('my_events')}})
 
-If you have any other questions, do not hesitate to contact the [Ambassador]() in your country.
+If you have any other questions, do not hesitate to contact the [Ambassador]({{route('ambassadors')}}) in your country.
 
 In the meantime, are you interested in learning more about coding or looking for some inspiration for preparing a #CodeWeek activity?
 
