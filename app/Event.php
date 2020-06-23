@@ -215,7 +215,13 @@ class Event extends Model
     public function reject(){
         $data = ['status' => "REJECTED", 'approved_by' => auth()->user()->id];
 
-        $this->update($data);
+        if (!empty($this->user_email)) {
+            Mail::to($this->user_email)->queue(new \App\Mail\EventRejected($this, $this->owner));
+        } else if (!is_null($this->owner) && (!is_null($this->owner->email))) {
+            Mail::to($this->owner->email)->queue(new \App\Mail\EventRejected($this, $this->owner));
+        }
+
+        return $this->update($data);
     }
 
 
