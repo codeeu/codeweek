@@ -182,6 +182,14 @@ Route::get('/profile', function () {
     return view('profile', $data);
 })->name('profile')->middleware('auth');
 
+Route::get('mailable', function () {
+    $event = App\Event::find(287144);
+    $user = App\User::find(19588);
+//    return new \App\Mail\EventApproved($event, $user);
+//    return new \App\Mail\EventRegistered($event, $user);
+    return new \App\Mail\EventRejected($event, $user);
+
+});
 
 Auth::routes();
 
