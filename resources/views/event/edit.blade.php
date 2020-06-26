@@ -97,7 +97,7 @@
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
                                 <label for="id_audience">*@lang('event.audience_title')</label>
-                                <multiselect :options="{{ $audiences }}" value="{{$selected_audiences}}" name="audience" label="event.audience"></multiselect>
+                                <multiselect :options="{{ $audiences }}" value="{{$selected_audiences}}" name="audience" label="name"></multiselect>
                             </div>
                             <div class="errors">
                                 @component('components.validation-errors', ['field'=>'audience'])@endcomponent
@@ -107,7 +107,7 @@
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
                                 <label for="id_theme">*@lang('event.theme_title')</label>
-                                <multiselect :options="{{ $themes }}" value="{{$selected_themes}}" name="theme" label="event.theme"></multiselect>
+                                <multiselect :options="{{ $themes }}" value="{{$selected_themes}}" name="theme" label="name"></multiselect>
                             </div>
                             <div class="errors">
                                 @component('components.validation-errors', ['field'=>'theme'])@endcomponent
@@ -285,7 +285,7 @@
             "renderTo" : "events-edit-map",
             "height": "250",
             "width": "422",
-            "custom": ["/js/hideMenuMap.js"]
+            "custom": ["js/hideMenuMap.js"]
         }
     </script>
 
