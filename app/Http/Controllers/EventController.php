@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use App\ActivityType;
 use App\Country;
 use App\Event;
 use App\Filters\UserFilters;
@@ -96,7 +97,21 @@ class EventController extends Controller
 
         $countries = \App\Country::all()->sortBy('name');
 
-        return view('event.add', compact('countries'));
+
+        $themes =  \App\Theme::orderBy('order', 'asc')->get();
+
+//        $countries = Country::all();
+//
+//
+//        foreach ($countries as $country) {
+//            $country->translation = __('countries.' . $country->name);
+//        }
+
+
+
+
+
+        return view('event.add', compact(['countries','themes']));
     }
 
     public function search()
