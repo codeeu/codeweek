@@ -96,10 +96,11 @@
                         <h3>@lang('event.who')</h3>
 
 
+
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
                                 <label for="id_audience">*@lang('event.audience_title')</label>
-                                <multiselect :options="{{ $audiences }}" value="{{ old('audience') }}" name="audience" label="event.audience"></multiselect>
+                                <multiselect :options="{{ $audiences }}" value="{{ old('audience') }}" name="audience" label="name"></multiselect>
                             </div>
                             <div class="errors">
                                 @component('components.validation-errors', ['field'=>'audience'])@endcomponent
@@ -109,7 +110,7 @@
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
                                 <label for="id_theme">*@lang('event.theme_title')</label>
-                                <multiselect :options="{{ $themes }}" value="{{ old('theme') }}" name="theme" label="event.theme"></multiselect>
+                                <multiselect :options="{{ $themes }}" value="{{ old('theme') }}" name="theme" label="name"></multiselect>
                             </div>
                             <div class="errors">
                                 @component('components.validation-errors', ['field'=>'theme'])@endcomponent
