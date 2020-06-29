@@ -71,7 +71,10 @@
                   }
               }
               console.log(this.innerValues);
-          }
+          },
+        customLabel(obj, label){
+          return this.$t(label + '.' + obj.name);
+        }
 
       }
   }
