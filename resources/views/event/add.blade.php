@@ -53,6 +53,7 @@
                             <div class="codeweek-form-field">
                                 <label for="id_organizer">* @lang('event.organizertype.label')</label>
                                 <select id="id_organizer_type" name="organizer_type" class="codeweek-input-select">
+                                    <option disabled selected value> --- </option>
                                     <option value="school">@lang('event.organizertype.school')</option>
                                     <option value="library">@lang('event.organizertype.library')</option>
                                     <option value="non profit">@lang('event.organizertype.non profit')</option>
@@ -70,6 +71,7 @@
                             <div class="codeweek-form-field">
                                 <label for="activity_type">* @lang('event.activitytype.label')</label>
                                 <select id="id_activity_type" name="activity_type" class="codeweek-input-select">
+                                    <option disabled selected value> --- </option>
                                     <option value="open-online">@lang('event.activitytype.open online')</option>
                                     <option value="invite-online">@lang('event.activitytype.invite online')</option>
                                     <option value="open-in-person">@lang('event.activitytype.open in person')</option>
