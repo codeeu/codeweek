@@ -21,7 +21,13 @@
 
     <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet"/>
 
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+          rel="stylesheet">
+
     <link rel="stylesheet" href="{{mix('css/app.css')}}" type="text/css"/>
+
+
 
     <script>
         window.App = {!! json_encode([
@@ -34,12 +40,14 @@
 
     </script>
 
+
     <!-- Title, keywords, description -->
     <meta name="description"
           content="October 10 - 25, 2020: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding."/>
 
 
     <title>Europe Code Week</title>
+
 
 
 </head>

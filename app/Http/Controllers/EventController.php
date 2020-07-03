@@ -14,6 +14,7 @@ use App\Queries\PendingEventsQuery;
 use App\User;
 use Carbon\Carbon;
 use Exception;
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
@@ -247,12 +248,17 @@ class EventController extends Controller
 
     }
 
-    public function reject(Event $event)
+    public function reject(Request $request, Event $event)
     {
 
-        $this->authorize('approve', $event);
+        $rejectionText = $request->get('rejectionText');
 
-        $event->reject();
+        try {
+            $this->authorize('approve', $event);
+        } catch (AuthorizationException $e) {
+        }
+
+        $event->reject($rejectionText);
 
 
     }
