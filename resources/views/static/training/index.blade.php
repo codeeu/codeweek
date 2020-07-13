@@ -114,7 +114,7 @@
 
                 <p> @lang('mooc.icebreaker.text.3')</p>
                 <p>
-                    <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Icebreaker+2020/about">@lang('mooc.icebreaker.registration.0')</a> @lang('mooc.icebreaker.registration.1')
+                    <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+CWDive+2020/about">@lang('mooc.icebreaker.registration.0')</a> @lang('mooc.icebreaker.registration.1')
                     </p>
                 <p>
                     <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Icebreaker+2019/about">@lang('mooc.icebreaker.check-out')</a>
