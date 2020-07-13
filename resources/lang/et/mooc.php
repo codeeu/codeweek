@@ -15,7 +15,7 @@ return [
             ],
             'registration' => [
                 0 => 'Registreerimine on avatud siin',
-                1 => 'kursusele, mis kestab 11. maist kuni 15. juunini 2020. Pange tähele, et registreerumiseks peate looma konto European Schoolnet Academys.',
+                1 => 'kursusele, mis kestab 16. september ja 30. oktoober 2020. Pange tähele, et registreerumiseks peate looma konto European Schoolnet Academys.',
             ],
             'check-out' => 'Vaadake 2019. aasta väljaannet.'
         ],

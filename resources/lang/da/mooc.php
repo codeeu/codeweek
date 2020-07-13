@@ -15,7 +15,7 @@ return [
             ],
             'registration' => [
                 0 => 'Der er åbent for tilmeldinger',
-                1 => 'her til kurset, der løber fra den 11. maj til den 15. juni 2020. For at kunne tilmelde dig, er du nødt til at oprette en konto hos the European Schoolnet Academy. ',
+                1 => 'her til kurset, der løber fra den 16. september og 30. oktober 2020. For at kunne tilmelde dig, er du nødt til at oprette en konto hos the European Schoolnet Academy. ',
             ],
             'check-out' => 'Tjek 2019-udgaven'
         ],
