@@ -251,7 +251,7 @@ class EventController extends Controller
     public function reject(Request $request, Event $event)
     {
 
-        $rejectionText = $request->get('rejectionText');
+        $rejectionText = $request->get('rejectionText', null);
 
         try {
             $this->authorize('approve', $event);

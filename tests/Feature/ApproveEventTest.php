@@ -28,6 +28,8 @@ class ApproveEventTest extends TestCase
     public function event_can_be_approved_by_admin()
     {
 
+        Mail::fake();
+
         $this->withExceptionHandling();
 
 
@@ -153,6 +155,7 @@ class ApproveEventTest extends TestCase
 
         $this->withExceptionHandling();
 
+        Mail::fake();
 
         $ambassador = create('App\User', ['country_iso' => 'FR']);
         $ambassador->assignRole('ambassador');

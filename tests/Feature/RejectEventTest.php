@@ -29,6 +29,8 @@ class RejectEventTest extends TestCase
     public function event_can_be_rejected_by_admin()
     {
 
+        Mail::fake();
+
         $this->withExceptionHandling();
 
 
