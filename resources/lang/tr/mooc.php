@@ -14,7 +14,7 @@ return [
 
             ],
             'registration' => [
-                0 => '11 Mayıs – 15 Haziran 2020 tarihleri arasında yapılacak kurs için buradan kayıtlar açıktır.',
+                0 => '16 Eylül - 30 Ekim 2020 tarihleri arasında yapılacak kurs için buradan kayıtlar açıktır.',
                 1 => 'Lütfen kayıt olmak için Avrupa Okul Ağı Akademisinde (European Schoolnet Academy) hesap oluşturmanız gerektiğini unutmayınız.',
             ],
             'check-out' => '2019 yayınına bakınız…'
