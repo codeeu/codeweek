@@ -15,7 +15,7 @@ return [
             ],
             'registration' => [
                 0 => 'Ilmoittautuminen on avoinna täällä',
-                1 => 'kurssille, joka pidetään 11. toukokuuta 2020 – 15. kesäkuuta 2020. Huomaa, että sinun on luotava tili European Schoolnet Academyssa rekisteröityäksesi.',
+                1 => 'kurssille, joka pidetään 16. syyskuuta ja 30. lokakuuta 2020. Huomaa, että sinun on luotava tili European Schoolnet Academyssa rekisteröityäksesi.',
             ],
             'check-out' => 'Tutustu vuoden 2019 materiaaliin.'
         ],

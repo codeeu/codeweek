@@ -14,7 +14,7 @@ return [
             ],
             'registration' => [
                 0 => 'Las inscripciones están abiertas aquí',
-                1 => 'para el curso que se desarrollará entre el 11 de mayo y el 15 de junio de 2020. Por favor, ten en cuenta que para inscribirte necesitas crear una cuenta en la Academia de European Schoolnet. ',
+                1 => 'para el curso que se desarrollará entre el 16 de septiembre y 30 de octubre de 2020. Por favor, ten en cuenta que para inscribirte necesitas crear una cuenta en la Academia de European Schoolnet. ',
             ],
             'check-out' => 'Consulta la edición 2019'
         ],

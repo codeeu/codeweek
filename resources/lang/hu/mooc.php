@@ -15,7 +15,7 @@ return [
             ],
             'registration' => [
                 0 => 'Megnyílt a regisztráció',
-                1 => 'itt a 2020. május 11. és június 15. közötti tanfolyamra. Kérjük, vegye figyelembe, hogy a regisztrációhoz létre kell hoznia egy fiókot az European Schoolnet Academyn. ',
+                1 => 'itt a 2020. Szeptember 16 és október 30. közötti tanfolyamra. Kérjük, vegye figyelembe, hogy a regisztrációhoz létre kell hoznia egy fiókot az European Schoolnet Academyn. ',
             ],
             'check-out' => 'Nézze meg a 2019-es kiadást'
         ],

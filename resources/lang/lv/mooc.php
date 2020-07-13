@@ -15,7 +15,7 @@ return [
             ],
             'registration' => [
                 0 => 'Reģistrēties kursam var šeit,',
-                1 => 'un tas norisināsies no 2020. gada 11. maija līdz 15. jūnijam. Lūdzam ņemt vērā, ka, lai reģistrētos, ir jāizveido European Schoolnet Academy konts.',
+                1 => 'un tas norisināsies no 2020. gada 16. septembris un 30. oktobris. Lūdzam ņemt vērā, ka, lai reģistrētos, ir jāizveido European Schoolnet Academy konts.',
             ],
             'check-out' => 'Apskatiet 2019. gada izdevumu.'
         ],
