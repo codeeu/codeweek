@@ -211,7 +211,7 @@ class Event extends Model
         return true;
     }
 
-    public function reject($rejectionText = ""){
+    public function reject($rejectionText = null){
 
         $this->moderations()->create([
             'status' => 'REJECTED',
@@ -222,9 +222,9 @@ class Event extends Model
         $data = ['status' => "REJECTED", 'approved_by' => auth()->user()->id];
 
         if (!empty($this->user_email)) {
-            Mail::to($this->user_email)->queue(new \App\Mail\EventRejected($this, $this->owner));
+            Mail::to($this->user_email)->queue(new \App\Mail\EventRejected($this, $this->owner, $rejectionText));
         } else if (!is_null($this->owner) && (!is_null($this->owner->email))) {
-            Mail::to($this->owner->email)->queue(new \App\Mail\EventRejected($this, $this->owner));
+            Mail::to($this->owner->email)->queue(new \App\Mail\EventRejected($this, $this->owner, $rejectionText));
         }
 
         return $this->update($data);
