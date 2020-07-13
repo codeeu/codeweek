@@ -6,7 +6,7 @@
 Unfortunately, the EU Code Week ambassadors in your country were not able to approve your submission.
 
 @if($reason)
-Here is the feedback provided by the ambassador:
+Here is the feedback provided by the ambassador:\
 {{$reason}}
 @else
 This could be because there was some question about the content of your application, or more information is needed.
