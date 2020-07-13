@@ -15,7 +15,7 @@ return [
             ],
             'registration' => [
                 0 => 'U kunt zich hier',
-                1 => 'inschrijven voor de cursus, die plaatsvindt tussen 11 mei en 15 juni 2020. Houd er rekening mee dat u een account moet aanmaken in de European Schoolnet Academy om u te kunnen aanmelden. ',
+                1 => 'inschrijven voor de cursus, die plaatsvindt tussen 16 september en 30 oktober 2020. Houd er rekening mee dat u een account moet aanmaken in de European Schoolnet Academy om u te kunnen aanmelden. ',
             ],
             'check-out' => 'Bekijk de editie van 2019.'
         ],

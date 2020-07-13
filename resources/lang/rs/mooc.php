@@ -15,7 +15,7 @@ return [
             ],
             'registration' => [
                 0 => 'Prijave su otvorene ovde',
-                1 => 'za kurs koji traje od 11. maja do 15. juna 2020. godine. Molimo imajte u vidu da je za prijavu potrebno da kreirate nalog na European Schoolnet Academy. ',
+                1 => 'za kurs koji traje od 16. septembra i 30. oktobra. godine. Molimo imajte u vidu da je za prijavu potrebno da kreirate nalog na European Schoolnet Academy. ',
             ],
             'check-out' => 'Pogledajte izdanje za 2019.'
         ],

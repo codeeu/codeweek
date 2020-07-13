@@ -15,7 +15,7 @@ return [
             ],
             'registration' => [
                 0 => 'Tutaj zarejestrujesz się',
-                1 => 'na kurs, który trwa od 11 maja do 15 czerwca 2020 roku. Pamiętaj, aby się zarejestrować, należy założyć konto w European Schoolnet Academy. ',
+                1 => 'na kurs, który trwa od 16 września i 30 października 2020 roku. Pamiętaj, aby się zarejestrować, należy założyć konto w European Schoolnet Academy. ',
             ],
             'check-out' => 'Zobacz informacje na temat edycji w 2019 r.'
         ],
