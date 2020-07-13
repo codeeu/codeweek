@@ -14,7 +14,7 @@ return [
 
             ],
             'registration' => [
-                0 => 'Registracije za tečaj, ki bo potekal med 11. majem in 15. junijem 2020, so odprte tukaj.',
+                0 => 'Registracije za tečaj, ki bo potekal med 16. septembra in 30. oktobra 2020, so odprte tukaj.',
                 1 => 'Upoštevajte, da si morate za registracijo ustvariti račun pri Evropskem šolskem omrežju (European Schoolnet Academy). ',
             ],
             'check-out' => 'Oglejte si izdajo 2019.'
