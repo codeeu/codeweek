@@ -25,7 +25,6 @@ class RejectEvent extends Action
     {
         foreach ($models as $model) {
             $model->reject();
-            //(new Event($model))->approve();
         }
     }
 
