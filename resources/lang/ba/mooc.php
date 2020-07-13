@@ -15,7 +15,7 @@ return [
             ],
             'registration' => [
                 0 => 'Registracije su otvorene',
-                1 => 'ovdje za kurseve koji se organizuju između 11. Maja i 15. Juna 2020. godine. Molimo obratite pažnju da morate da kreirate račun na stranici European Schoolnet Academy da bi se registrovali. ',
+                1 => 'ovdje za kurseve koji se organizuju između 16. septembra i 30. oktobra 2020. godine. Molimo obratite pažnju da morate da kreirate račun na stranici European Schoolnet Academy da bi se registrovali. ',
             ],
             'check-out' => 'Provjerite izdanje iz 2019'
         ],

@@ -15,7 +15,7 @@ return [
             ],
             'registration' => [
                 0 => 'Ir-reġistrazzjonijiet huma miftuħa',
-                1 => 'għall-kors ta’ bejn il-11 ta’ Mejju u l-15 ta’ Ġunju 2020. Jekk jogħġbok kun af li sabiex tirreġistra, trid toħloq kont fil-European Schoolnet Academy. Ikklikkja hawn biex tirreġistra.',
+                1 => 'għall-kors ta’ bejn is-16 ta ’Settembru u t-30 ta’ Ottubru 2020. Jekk jogħġbok kun af li sabiex tirreġistra, trid toħloq kont fil-European Schoolnet Academy. Ikklikkja hawn biex tirreġistra.',
             ],
             'check-out' => 'Ara l-edizzjoni tal-2019.'
         ],
