@@ -15,7 +15,7 @@ return [
             ],
             'registration' => [
                 0 => 'Hier können Sie sich für den Kurs anmelden',
-                1 => '; dieser kann zwischen dem 11. Mai und dem 15. Juni 2020 absolviert werden. Für die Anmeldung brauchen Sie einen Account bei der European Schoolnet Academy.',
+                1 => '; dieser kann zwischen dem 16. September und 30. Oktober 2020 absolviert werden. Für die Anmeldung brauchen Sie einen Account bei der European Schoolnet Academy.',
             ],
             'check-out' => 'Hier finden Sie Informationen zum Kurs aus dem Jahr 2019'
         ],

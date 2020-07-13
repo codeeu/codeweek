@@ -15,7 +15,7 @@ return [
             ],
             'registration' => [
                 0 => 'Le iscrizioni sono aperte qui',
-                1 => 'per il corso che si terrà tra l\'11 maggio e il 15 giugno 2020. Si ricorda che per l\'iscrizione è necessario creare un account nella European Schoolnet Academy. ',
+                1 => 'per il corso che si terrà tra il 16 settembre e 30 ottobre 2020. Si ricorda che per l\'iscrizione è necessario creare un account nella European Schoolnet Academy. ',
             ],
             'check-out' => 'Guarda l\'edizione 2019'
         ],
