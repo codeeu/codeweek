@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Str;
 use Log;
 use Spatie\Activitylog\Traits\LogsActivity;
@@ -61,10 +62,8 @@ class Event extends Model
         Event::class => EventPolicy::class,
     ];
 
+    protected $appends = ['LatestModeration'];
 
-    public function test(){
-        return "foo";
-    }
 
     public function getJavascriptData(){
         return $this->only(["geoposition","title","description"]);
@@ -212,11 +211,34 @@ class Event extends Model
         return true;
     }
 
-    public function reject(){
+    public function reject($rejectionText = null){
+
+        $this->moderations()->create([
+            'status' => 'REJECTED',
+            'message' => $rejectionText,
+            'status_by' => auth()->id()
+        ]);
+
         $data = ['status' => "REJECTED", 'approved_by' => auth()->user()->id];
 
-        $this->update($data);
+        if (!empty($this->user_email)) {
+            Mail::to($this->user_email)->queue(new \App\Mail\EventRejected($this, $this->owner, $rejectionText));
+        } else if (!is_null($this->owner) && (!is_null($this->owner->email))) {
+            Mail::to($this->owner->email)->queue(new \App\Mail\EventRejected($this, $this->owner, $rejectionText));
+        }
+
+        return $this->update($data);
     }
+
+    public function moderations(){
+        return $this->hasMany('App\Moderation');
+    }
+
+    public function getLatestModerationAttribute(){
+        return optional($this->moderations()->latest('created_at'))->first();
+    }
+
+
 
 
 

@@ -3,7 +3,15 @@
 
 ## Thank you for submitting [your activity]({{env('APP_URL')}}{{$event->path()}}) for EU Code Week!
 
-Unfortunately, the EU Code Week ambassadors in your country were not able to approve your submission. This could be because there was some question about the content of your application, or more information is needed.
+Unfortunately, the EU Code Week ambassadors in your country were not able to approve your submission.
+
+@if($reason)
+Here is the feedback provided by the ambassador:\
+{{$reason}}
+@else
+This could be because there was some question about the content of your application, or more information is needed.
+@endif
+
 
 If you feel that this decision was made in error, please feel free to visit your application, edit any details necessary and resubmit via the following link: [Your activities]({{route('my_events')}})
 
