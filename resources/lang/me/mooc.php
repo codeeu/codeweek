@@ -15,7 +15,7 @@ return [
             ],
             'registration' => [
                 0 => 'Proces registracije je počeo ovdje',
-                1 => 'za kurseve koji se održavaju u period od 11. maja do 15. juna 2020. Imajte u vidu da je potrebno prvo napraviti nalog i registrovati se na European Schoolnet Academy.',
+                1 => 'za kurseve koji se održavaju u period od 16. septembara do 30. oktobara 2020. Imajte u vidu da je potrebno prvo napraviti nalog i registrovati se na European Schoolnet Academy.',
             ],
             'check-out' => 'Pogledajte izdanje iz 2019.'
         ],
