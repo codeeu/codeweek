@@ -112,11 +112,12 @@
                     @lang('mooc.icebreaker.text.2')
                 </p>
 
-                <p> @lang('mooc.icebreaker.text.3')</p>
-                <p>
-                    <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+CWDive+2020/about">@lang('mooc.icebreaker.registration.0')</a> @lang('mooc.icebreaker.registration.1')
-                    </p>
-                <p>
+                <p> @lang('mooc.icebreaker.text.3')
+                    <br/><br/>
+                    <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Icebreaker+2020/about">{{Illuminate\Support\Str::replaceFirst('2019','2020',__('mooc.icebreaker.check-out'))}}</a><br/><br/>
+
+
+
                     <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Icebreaker+2019/about">@lang('mooc.icebreaker.check-out')</a>
                 </p>
 
@@ -124,8 +125,14 @@
                 <p>@lang('mooc.deep-dive.text.0') <a
                             href="https://codeweek.eu/resources/teach">@lang('mooc.deep-dive.text.1')</a> @lang('mooc.deep-dive.text.2')
                 </p>
+
+
                 <p>
                     <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+CWDive+2019/about">@lang('mooc.deep-dive.course-link')</a>
+                </p>
+
+                <p>
+                    <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+CWDive+2020/about">@lang('mooc.icebreaker.registration.0')</a> @lang('mooc.icebreaker.registration.1')
                 </p>
                 <p>@lang('mooc.social-media.0') <a
                             href="https://twitter.com/CodeWeekEU">@lang('mooc.social-media.1')</a> @lang('mooc.social-media.2')
