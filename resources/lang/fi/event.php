@@ -125,10 +125,10 @@ return [
     'activitytype' => [
         'label' => 'Toiminnan tyyppi',
         'placeholder' => '',
-        'open online' => 'Avoin online-toiminta',
-        'invite online' => 'Online-toiminta vain kutsutuille',
-        'open in person' => 'Avoin toiminta',
-        'invite in person' => 'Toiminta vain kutsutuille'
+        'open-online' => 'Avoin online-toiminta',
+        'invite-online' => 'Online-toiminta vain kutsutuille',
+        'open-in-person' => 'Avoin toiminta',
+        'invite-in-person' => 'Toiminta vain kutsutuille'
 
     ],
     'privacy'=>'Olen lukenut ja hyväksyn tätä asiakirjaa koskevat tietosuojaperiaatteet',

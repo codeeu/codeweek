@@ -125,10 +125,10 @@ return [
     'activitytype' => [
         'label' => 'Tip de activitate',
         'placeholder' => '',
-        'open online' => 'Activitate on-line',
-        'invite online' => 'Activitate on-line privată',
-        'open in person' => 'Activitate off-line',
-        'invite in person' => 'Activitate off-line privată'
+        'open-online' => 'Activitate on-line',
+        'invite-online' => 'Activitate on-line privată',
+        'open-in-person' => 'Activitate off-line',
+        'invite-in-person' => 'Activitate off-line privată'
 
     ],
     'privacy'=>'Am citit şi sunt de acord cu termenii politicii de confidenţialitate descrişi în acest document.',
