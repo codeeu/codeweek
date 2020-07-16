@@ -125,10 +125,10 @@ return [
     'activitytype' => [
         'label' => 'Aktivitetstyp',
         'placeholder' => '',
-        'open online' => 'Onnlineaktivitet för alla',
-        'invite online' => 'Onlineaktivitet för inbjudna',
-        'open in person' => 'Aktivitet för alla besökare',
-        'invite in person' => 'Aktivitet för inbjudna besökare'
+        'open-online' => 'Onnlineaktivitet för alla',
+        'invite-online' => 'Onlineaktivitet för inbjudna',
+        'open-in-person' => 'Aktivitet för alla besökare',
+        'invite-in-person' => 'Aktivitet för inbjudna besökare'
 
     ],
     'privacy'=>'Jag har läst och godkänner integritetspolicyn som beskrivs i detta dokument.',

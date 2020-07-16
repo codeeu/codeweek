@@ -125,10 +125,10 @@ return [
     'activitytype' => [
         'label' => 'Tip ta’ Attività',
         'placeholder' => '',
-        'open online' => 'Attività miftuħa online',
-        'invite online' => 'Stedina għal attività online biss',
-        'open in person' => 'Attività miftuħa għal kulħadd',
-        'invite in person' => 'Attività għal persuni mistiedna'
+        'open-online' => 'Attività miftuħa online',
+        'invite-online' => 'Stedina għal attività online biss',
+        'open-in-person' => 'Attività miftuħa għal kulħadd',
+        'invite-in-person' => 'Attività għal persuni mistiedna'
 
     ],
     'country' => 'Pajjiż',

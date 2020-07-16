@@ -125,10 +125,10 @@ return [
     'activitytype' => [
         'label' => 'Rodzaj sesji',
         'placeholder' => '',
-        'open online' => 'Sesja online - ogólnodostępna',
-        'invite online' => 'Sesja online - na zaproszenie',
-        'open in person' => 'Sesja offline - ogólnodostępna',
-        'invite in person' => 'Sesja offline - na zaproszenie'
+        'open-online' => 'Sesja online - ogólnodostępna',
+        'invite-online' => 'Sesja online - na zaproszenie',
+        'open-in-person' => 'Sesja offline - ogólnodostępna',
+        'invite-in-person' => 'Sesja offline - na zaproszenie'
 
     ],
     'privacy'=>'Przeczytałem /Przeczytałam i zgadzam się z warunkami polityki prywatności opisanymi w tym dokumencie.',
