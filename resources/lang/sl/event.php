@@ -125,10 +125,10 @@ return [
     'activitytype' => [
         'label' => 'Vrsta dejavnosti',
         'placeholder' => '',
-        'open online' => 'Odprta spletna dejavnost',
-        'invite online' => 'Spletna dejavnost s povabilom',
-        'open in person' => 'Odprta dejavnost izven spleta',
-        'invite in person' => 'Dejavnost izven spleta s povabilom'
+        'open-online' => 'Odprta spletna dejavnost',
+        'invite-online' => 'Spletna dejavnost s povabilom',
+        'open-in-person' => 'Odprta dejavnost izven spleta',
+        'invite-in-person' => 'Dejavnost izven spleta s povabilom'
 
     ],
     'privacy'=>'Prebral sem in se strinjam s pogoji o zasebnosti, ki so navedeni v tem dokumentu.',

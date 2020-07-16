@@ -126,10 +126,10 @@ Ambasadorët e EU Code Week dhe organizatorët e Code Week të cilët do të kon
     'activitytype' => [
         'label' => 'Tipi i Aktivitetit',
         'placeholder' => '',
-        'open online' => 'Aktivitet i hapur online',
-        'invite online' => 'Aktivitet online me ftesë',
-        'open in person' => 'Aktivitet i hapur me prani fizike',
-        'invite in person' => 'Aktivitet me ftesë për prani fizike'
+        'open-online' => 'Aktivitet i hapur online',
+        'invite-online' => 'Aktivitet online me ftesë',
+        'open-in-person' => 'Aktivitet i hapur me prani fizike',
+        'invite-in-person' => 'Aktivitet me ftesë për prani fizike'
 
     ],
 
