@@ -125,10 +125,10 @@ return [
     'activitytype' => [
         'label' => 'Tegevuse tüüp',
         'placeholder' => '',
-        'open online' => 'Avatud online tegevus',
-        'invite online' => 'Online tegevus kutsega',
-        'open in person' => 'Avalik-isiklik tegevus',
-        'invite in person' => 'Privaatkutsega tegevus'
+        'open-online' => 'Avatud online tegevus',
+        'invite-online' => 'Online tegevus kutsega',
+        'open-in-person' => 'Avalik-isiklik tegevus',
+        'invite-in-person' => 'Privaatkutsega tegevus'
 
     ],
     'privacy'=>'Ma olen lugenud ja nõustun antud dokumendis kirjeldatud Privaatsuspoliitikaga.',

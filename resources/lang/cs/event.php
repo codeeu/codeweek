@@ -125,10 +125,10 @@ return [
     'activitytype' => [
         'label' => 'Typ Aktivity',
         'placeholder' => '',
-        'open online' => 'Veřejná online aktivita',
-        'invite online' => 'Privátní online aktivita',
-        'open in person' => 'Veřejná osobní aktivita',
-        'invite in person' => 'Privátní osobní aktivita'
+        'open-online' => 'Veřejná online aktivita',
+        'invite-online' => 'Privátní online aktivita',
+        'open-in-person' => 'Veřejná osobní aktivita',
+        'invite-in-person' => 'Privátní osobní aktivita'
 
     ],
 

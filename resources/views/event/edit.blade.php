@@ -68,10 +68,10 @@
                             <div class="codeweek-form-field">
                                 <label for="activity_type">* @lang('event.activitytype.label')</label>
                                 <select id="id_activity_type" name="activity_type" class="codeweek-input-select">
-                                    <option value="open-online" {{$event->activity_type == 'open-online' ? 'selected' : ''}}>@lang('event.activitytype.open online')</option>
-                                    <option value="invite-online" {{$event->activity_type == 'invite-online' ? 'selected' : ''}}>@lang('event.activitytype.invite online')</option>
-                                    <option value="open-in-person" {{$event->activity_type == 'open-in-person' ? 'selected' : ''}}>@lang('event.activitytype.open in person')</option>
-                                    <option value="invite-in-person" {{$event->activity_type == 'invite-in-person' ? 'selected' : ''}}>@lang('event.activitytype.invite in person')</option>
+                                    <option value="open-online" {{$event->activity_type == 'open-online' ? 'selected' : ''}}>@lang('event.activitytype.open-online')</option>
+                                    <option value="invite-online" {{$event->activity_type == 'invite-online' ? 'selected' : ''}}>@lang('event.activitytype.invite-online')</option>
+                                    <option value="open-in-person" {{$event->activity_type == 'open-in-person' ? 'selected' : ''}}>@lang('event.activitytype.open-in-person')</option>
+                                    <option value="invite-in-person" {{$event->activity_type == 'invite-in-person' ? 'selected' : ''}}>@lang('event.activitytype.invite-in-person')</option>
                                     <option value="other" {{(is_null($event->activity_type) || $event->activity_type == 'other')  ? 'selected' : ''}}>@lang('event.organizertype.other')</option>
                                 </select>
                             </div>
