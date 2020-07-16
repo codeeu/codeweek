@@ -134,7 +134,7 @@ class Event extends Model
 
     public function tags()
     {
-        return $this->belongsToMany('App\Tag');
+        return $this->belongsToMany('App\Tag')->where('name', '<>', '');
     }
 
     public function get_start_date()

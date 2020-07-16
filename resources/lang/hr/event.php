@@ -125,10 +125,10 @@ return [
     'activitytype' => [
         'label' => 'Tip aktivnosti',
         'placeholder' => '',
-        'open online' => 'Internetska aktivnost slobodnog sudjelovanja',
-        'invite online' => 'Internetska aktivnost po pozivu',
-        'open in person' => 'Aktivnost slobodnog sudjelovanja',
-        'invite in person' => 'Aktivnost po pozivu'
+        'open-online' => 'Internetska aktivnost slobodnog sudjelovanja',
+        'invite-online' => 'Internetska aktivnost po pozivu',
+        'open-in-person' => 'Aktivnost slobodnog sudjelovanja',
+        'invite-in-person' => 'Aktivnost po pozivu'
 
     ],
     'privacy'=>'Pročitao-la sam i prihvaćam uvjete u vezi s pravilima o privatnosti opisanih u ovom dokumentu.',

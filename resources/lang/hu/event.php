@@ -125,10 +125,10 @@ return [
     'activitytype' => [
         'label' => 'Esemény típusa',
         'placeholder' => '',
-        'open online' => 'Nyilt online tevékenység',
-        'invite online' => 'Csak meghívottaknak szóló online tevékenység',
-        'open in person' => 'Nyilt személyes (offline) tevékenység',
-        'invite in person' => 'Csak meghívottaknak szóló személyes (offline) tevékenység'
+        'open-online' => 'Nyilt online tevékenység',
+        'invite-online' => 'Csak meghívottaknak szóló online tevékenység',
+        'open-in-person' => 'Nyilt személyes (offline) tevékenység',
+        'invite-in-person' => 'Csak meghívottaknak szóló személyes (offline) tevékenység'
 
     ],
     'privacy'=>'Elolvastam és elfogadom a jelen dokumentumban ismertetett adatvédelmi feltételeket.',
