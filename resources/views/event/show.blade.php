@@ -248,15 +248,6 @@
             "custom": ["/js/hideMenuMap.js","/js/leaflet.markercluster.js"]
         }
 
-
-
-
-
-
-
-
-
-
     </script>
 @endpush
 
