@@ -125,10 +125,10 @@ return [
     'activitytype' => [
         'label' => 'Tip aktivnosti',
         'placeholder' => '',
-        'open online' => 'Online aktivnost slobodnog učešća',
-        'invite online' => 'Online aktivnost po pozivu',
-        'open in person' => 'Aktivnost slobodnog učešća',
-        'invite in person' => 'Aktivnost po pozivu'
+        'open-online' => 'Online aktivnost slobodnog učešća',
+        'invite-online' => 'Online aktivnost po pozivu',
+        'open-in-person' => 'Aktivnost slobodnog učešća',
+        'invite-in-person' => 'Aktivnost po pozivu'
 
     ],
 

@@ -134,10 +134,10 @@ return [
     'activitytype' => [
         'label' => 'Activity Type',
         'placeholder' => '',
-        'open online' => 'Open online activity',
-        'invite online' => 'Invite-only online activity',
-        'open in person' => 'Open in-person activity',
-        'invite in person' => 'Invite-only in-person activity'
+        'open-online' => 'Open online activity',
+        'invite-online' => 'Invite-only online activity',
+        'open-in-person' => 'Open in-person activity',
+        'invite-in-person' => 'Invite-only in-person activity'
 
     ],
 

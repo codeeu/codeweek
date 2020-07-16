@@ -125,10 +125,10 @@ return [
     'activitytype' => [
         'label' => 'Tipo de atividade',
         'placeholder' => '',
-        'open online' => 'Atividade conectada aberta',
-        'invite online' => 'Atividade privada conectada',
-        'open in person' => 'Atividade em pessoa aberta',
-        'invite in person' => 'Atividade em pessoa privada'
+        'open-online' => 'Atividade conectada aberta',
+        'invite-online' => 'Atividade privada conectada',
+        'open-in-person' => 'Atividade em pessoa aberta',
+        'invite-in-person' => 'Atividade em pessoa privada'
 
     ],
     'privacy'=>'Li e concordo com os termos da política de privacidade descritos neste documento.',
