@@ -14,7 +14,7 @@ return [
 
             ],
             'registration' => [
-                0 => 'Į kursą, kuris vyks nuo 2020 m. gegužės 11 d. iki birželio 15 d., galima registruotis čia.',
+                0 => 'Į kursą, kuris vyks nuo 2020 m. rugsėjo 16 d. ir spalio 30 d., galima registruotis čia.',
                 1 => 'Atkreipkite dėmesį, kad, norėdami užsiregistruoti kurse, turite susikurti Europos mokyklų tinklo akademijos paskyrą.',
             ],
             'check-out' => 'Informacija apie 2019 m. kursą'

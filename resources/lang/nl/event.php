@@ -125,10 +125,10 @@ return [
     'activitytype' => [
         'label' => 'Type activiteit',
         'placeholder' => '',
-        'open online' => 'Online activiteit - open voor iedereen',
-        'invite online' => 'Online activiteit - alleen met uitnodiging',
-        'open in person' => 'Offline activiteit - open voor iedereen',
-        'invite in person' => 'Offline activiteit - alleen met uitnodiging'
+        'open-online' => 'Online activiteit - open voor iedereen',
+        'invite-online' => 'Online activiteit - alleen met uitnodiging',
+        'open-in-person' => 'Offline activiteit - open voor iedereen',
+        'invite-in-person' => 'Offline activiteit - alleen met uitnodiging'
 
     ],
     'privacy'=>'Ik heb de privacyverklaring die in dit document beschreven staat gelezen en ga ermee akkoord.',

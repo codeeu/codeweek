@@ -15,7 +15,7 @@ return [
             ],
             'registration' => [
                 0 => 'Zde probíhá registrace',
-                1 => 'pro kurz, který poběží od 11. května do 15. června 2020. Upozorňujeme, že k registraci potřebujete účet v projektu European Schoolnet Academy. ',
+                1 => 'pro kurz, který poběží od 16. září a 30. října 2020. Upozorňujeme, že k registraci potřebujete účet v projektu European Schoolnet Academy. ',
             ],
             'check-out' => 'Podívejte se na verzi z roku 2019'
         ],

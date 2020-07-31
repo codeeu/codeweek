@@ -37,5 +37,5 @@ return [
     'signin' => 'Logga in',
     'privacy' => 'Sekretess',
     'participation'=> 'Intyg om deltagande',
-
+    'values' => 'Våra värderingar',
 ];

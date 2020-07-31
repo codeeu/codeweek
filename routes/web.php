@@ -12,6 +12,7 @@
 */
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 
 Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
@@ -46,6 +47,7 @@ Route::get('/cookie', 'StaticPageController@static')->name('cookie');
 Route::get('/petition', 'StaticPageController@static')->name('petition');
 Route::get('/beambassador', 'StaticPageController@static')->name('beambassador');
 Route::get('/about', 'StaticPageController@static')->name('about');
+Route::get('/our-values', 'StaticPageController@static')->name('our-values');
 Route::get('/partners', 'StaticPageController@static')->name('sponsors');
 Route::get('/codeweek4all', 'StaticPageController@static')->name('codeweek4all');
 
@@ -173,16 +175,12 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
 
 Route::get('/codeweek4all/{code}/detail', 'Codeweek4AllController@detail')->name('codeweek4all_details');
 
-Route::get('/hackathons', 'HackathonsController@index')->name('hackathons');
-Route::get('/hackathons/ireland', 'HackathonsController@before')->name('ireland');
-
 
 Route::get('/profile', function () {
     $data = ['profileUser' => Auth()->user()];
 
     return view('profile', $data);
 })->name('profile')->middleware('auth');
-
 
 Auth::routes();
 

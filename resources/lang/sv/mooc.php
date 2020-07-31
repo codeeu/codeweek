@@ -15,7 +15,7 @@ return [
             ],
             'registration' => [
                 0 => 'Anmälan öppnar här',
-                1 => 'för kursen som pågår mellan 11 maj och 15 juni 2020. Du måste skapa ett användarkonto i European Schoolnet Academy för att anmäla dig. ',
+                1 => 'för kursen som pågår mellan 16 september och 30 oktober 2020. Du måste skapa ett användarkonto i European Schoolnet Academy för att anmäla dig. ',
             ],
             'check-out' => 'Ta en titt på 2019 års upplaga.'
         ],

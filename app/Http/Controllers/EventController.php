@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use App\ActivityType;
 use App\Country;
 use App\Event;
 use App\Filters\UserFilters;
@@ -13,6 +14,7 @@ use App\Queries\PendingEventsQuery;
 use App\User;
 use Carbon\Carbon;
 use Exception;
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
@@ -96,7 +98,21 @@ class EventController extends Controller
 
         $countries = \App\Country::all()->sortBy('name');
 
-        return view('event.add', compact('countries'));
+
+        $themes =  \App\Theme::orderBy('order', 'asc')->get();
+
+//        $countries = Country::all();
+//
+//
+//        foreach ($countries as $country) {
+//            $country->translation = __('countries.' . $country->name);
+//        }
+
+
+
+
+
+        return view('event.add', compact(['countries','themes']));
     }
 
     public function search()
@@ -232,12 +248,17 @@ class EventController extends Controller
 
     }
 
-    public function reject(Event $event)
+    public function reject(Request $request, Event $event)
     {
 
-        $this->authorize('approve', $event);
+        $rejectionText = $request->get('rejectionText', null);
 
-        $event->reject();
+        try {
+            $this->authorize('approve', $event);
+        } catch (AuthorizationException $e) {
+        }
+
+        $event->reject($rejectionText);
 
 
     }

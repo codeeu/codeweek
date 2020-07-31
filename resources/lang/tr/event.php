@@ -125,10 +125,10 @@ return [
     'activitytype' => [
         'label' => 'Etkinlik türü',
         'placeholder' => '',
-        'open online' => 'Açık çevrimiçi etkinlik',
-        'invite online' => 'Sadece davet ile çevrimiçi etkinlik',
-        'open in person' => 'Açık yüz yüze etkinlik',
-        'invite in person' => 'Sadece davetiye ile yüz yüze etkinlik'
+        'open-online' => 'Açık çevrimiçi etkinlik',
+        'invite-online' => 'Sadece davet ile çevrimiçi etkinlik',
+        'open-in-person' => 'Açık yüz yüze etkinlik',
+        'invite-in-person' => 'Sadece davetiye ile yüz yüze etkinlik'
 
     ],
     'country' => 'Ülke',

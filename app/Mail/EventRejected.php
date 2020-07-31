@@ -15,16 +15,18 @@ class EventRejected extends Mailable
 
     public $event;
     public $user;
+    public $reason;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct(Event $event, User $user)
+    public function __construct(Event $event, User $user, $reason)
     {
         $this->event = $event;
         $this->user = $user;
+        $this->reason = $reason;
     }
 
     /**
@@ -49,7 +51,7 @@ class EventRejected extends Mailable
 
         return $this
             ->subject($subject)
-            ->view($view);
+            ->markdown($view);
 
     }
 }

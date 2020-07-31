@@ -125,10 +125,10 @@ return [
     'activitytype' => [
         'label' => 'Aktivitetstype',
         'placeholder' => '',
-        'open online' => 'Åben online aktivitet',
-        'invite online' => 'Online aktivitet for inviterede',
-        'open in person' => 'Åben personlig aktivitet',
-        'invite in person' => 'Personlig aktivitet for inviterede'
+        'open-online' => 'Åben online aktivitet',
+        'invite-online' => 'Online aktivitet for inviterede',
+        'open-in-person' => 'Åben personlig aktivitet',
+        'invite-in-person' => 'Personlig aktivitet for inviterede'
 
     ],
 

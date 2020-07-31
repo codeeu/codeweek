@@ -21,12 +21,12 @@ class AppServiceProvider extends ServiceProvider
 
         View::share('locales', config('app.locales'));
 
-        Carbon::setLocale('app.locale');
 
+        Carbon::setLocale('app.locale');
         \View::composer(['event.add','event.search','profile','event.edit'], function ($view) {
             $view->with('audiences', \App\Audience::all());
-            $view->with('activity_types', \App\Audience::all());
-            $view->with('countries', \App\Country::all());
+            $view->with('activity_types', \App\ActivityType::list());
+            $view->with('countries', \App\Country::translated());
             $view->with('active_countries', \App\Country::withEvents());
             $view->with('themes', \App\Theme::orderBy('order', 'asc')->get());
         });

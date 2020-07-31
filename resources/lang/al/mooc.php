@@ -15,7 +15,7 @@ return [
             ],
             'registration' => [
                 0 => 'Regjistrimet janë të hapura',
-                1 => 'këtu për kursin që zhvillohet midis 11 majit dhe 15 qershorit 2020. Ju lutemi vini re se ju duhet të krijoni një llogari në European Schoolnet Academy për t\'u regjistruar. ',
+                1 => 'këtu për kursin që zhvillohet midis 16 shtator dhe 30 tetor 2020. Ju lutemi vini re se ju duhet të krijoni një llogari në European Schoolnet Academy për t\'u regjistruar. ',
             ],
             'check-out' => 'Shikoni botimin 2019'
         ],

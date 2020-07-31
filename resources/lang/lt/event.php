@@ -125,10 +125,10 @@ return [
     'activitytype' => [
         'label' => 'Renginio tipas',
         'placeholder' => '',
-        'open online' => 'Atviras renginys/užsiėmimas internetu',
-        'invite online' => 'Uždaras renginys/užsiėmimas internetu (tik su pakvietimu)',
-        'open in person' => 'Atviras renginys/užsiėmimas (realybėje, ne internetu)',
-        'invite in person' => 'Uždaras renginys/užsiėmimas (realybėje, ne internetu)'
+        'open-online' => 'Atviras renginys/užsiėmimas internetu',
+        'invite-online' => 'Uždaras renginys/užsiėmimas internetu (tik su pakvietimu)',
+        'open-in-person' => 'Atviras renginys/užsiėmimas (realybėje, ne internetu)',
+        'invite-in-person' => 'Uždaras renginys/užsiėmimas (realybėje, ne internetu)'
 
     ],
     'privacy'=>'Perskaičiau ir sutinku su šiame dokumente aprašyta privatumo politika.',
