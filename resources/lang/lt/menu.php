@@ -38,5 +38,5 @@ return [
     'signin' => 'Prisijungti',
     'privacy' => 'Privatumas',
     'participation'=> 'Dalyvio pažymėjimas',
-
+    'values' => 'Mūsų principai',
 ];

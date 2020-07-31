@@ -38,5 +38,5 @@ return [
     'signin' => 'Logi sisse',
     'privacy' => 'Privaatsus',
     'participation'=> 'Osalemise tunnistus',
-
+    'values' => 'Meie väärtused',
 ];

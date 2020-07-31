@@ -125,10 +125,10 @@ return [
     'activitytype' => [
         'label' => 'Typ Aktivity',
         'placeholder' => '',
-        'open online' => 'Verejná online aktivita',
-        'invite online' => 'Privátne online aktivita',
-        'open in person' => 'Verejná osobné aktivita',
-        'invite in person' => 'Privátne osobné aktivita'
+        'open-online' => 'Verejná online aktivita',
+        'invite-online' => 'Privátne online aktivita',
+        'open-in-person' => 'Verejná osobné aktivita',
+        'invite-in-person' => 'Privátne osobné aktivita'
 
     ],
     'privacy'=>'Prečítal(-a) som si a súhlasím s podmienkami ochrany osobných údajov popísanými v tomto dokumente',

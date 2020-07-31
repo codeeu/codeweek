@@ -36,6 +36,6 @@ return [
     'logout' => 'Odjavljivanje',
     'signin' => 'Pristup',
     'privacy' => 'Privatnost',
-    'participation'=> 'Sertifikat o učešću'
-
+    'participation'=> 'Sertifikat o učešću',
+    'values' => 'Naše vrijednosti',
 ];

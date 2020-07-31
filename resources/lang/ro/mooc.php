@@ -15,7 +15,7 @@ return [
             ],
             'registration' => [
                 0 => 'Înscrierile au început',
-                1 => 'aici pentru cursul care se desfășoară între 11 mai și 15 iunie 2020. Rețineți faptul că pentru înscriere trebuie să vă creați un cont pe European Schoolnet Academy. ',
+                1 => 'aici pentru cursul care se desfășoară între 16 septembrie și 30 octombrie 2020. Rețineți faptul că pentru înscriere trebuie să vă creați un cont pe European Schoolnet Academy. ',
             ],
             'check-out' => 'Vezi ediția 2019.'
         ],

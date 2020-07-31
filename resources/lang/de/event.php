@@ -125,10 +125,10 @@ return [
     'activitytype' => [
         'label' => 'Veranstaltungsart',
         'placeholder' => '',
-        'open online' => 'Offene Onlineveranstaltung',
-        'invite online' => 'Onlineveranstaltung für geladene Gäste',
-        'open in person' => 'Offene Veranstaltung',
-        'invite in person' => 'Veranstaltung für geladene Gäste'
+        'open-online' => 'Offene Onlineveranstaltung',
+        'invite-online' => 'Onlineveranstaltung für geladene Gäste',
+        'open-in-person' => 'Offene Veranstaltung',
+        'invite-in-person' => 'Veranstaltung für geladene Gäste'
 
     ],
 

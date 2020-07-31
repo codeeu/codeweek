@@ -37,5 +37,6 @@ return [
     'signin' => 'Conectare',
     'privacy' => 'Confidențialitate',
     'participation'=> 'Certificat de participare',
+    'values' => 'Valorile noastre',
 
 ];

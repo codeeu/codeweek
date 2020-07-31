@@ -13,7 +13,7 @@ class EventFilters extends Filters
      *
      * @var array
      */
-    protected $filters = ['countries', 'query', 'themes', 'audiences', 'year', 'creator_id'];
+    protected $filters = ['countries', 'query', 'themes', 'audiences', 'types', 'year', 'creator_id'];
 
     public function __construct(Request $request)
     {
@@ -92,6 +92,19 @@ class EventFilters extends Filters
         return $this->builder
             ->leftJoin('audience_event', 'events.id', "=", "audience_event.event_id")
             ->whereIn('audience_event.audience_id', $audiencesIds);
+
+    }
+
+    protected function types($types)
+    {
+
+        if (empty($types)) return;
+
+        $keys = collect($types)->pluck('key')->all();
+
+        $result = $this->builder->whereIn('activity_type', $keys);
+        return $result;
+
 
     }
 }

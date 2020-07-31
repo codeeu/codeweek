@@ -37,6 +37,7 @@ return [
     'logout' => 'Dilni',
     'signin' => 'Identifikohuni',
     'privacy' => 'Privatësia',
-    'participation'=> 'Certifikata e pjesëmarrjes'
+    'participation'=> 'Certifikata e pjesëmarrjes',
+    'values' => 'Vlerat tona',
 
 ];

@@ -14,7 +14,7 @@ return [
 
             ],
             'registration' => [
-                0 => 'Na kurz, ktorý sa koná od 11. mája do 15. júna 2020, sa môžete zaregistrovať tu.',
+                0 => 'Na kurz, ktorý sa koná od 16. septembra a 30. októbra 2020, sa môžete zaregistrovať tu.',
                 1 => 'Zaregistrovať sa však môžete, len ak si vytvoríte účet na platforme European Schoolnet Academy. ',
             ],
             'check-out' => 'Pozrite si vydanie z roku 2019.'

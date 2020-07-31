@@ -17,22 +17,14 @@
         <section class="codeweek-searchbox">
             <form method="get" action="/ambassadors" enctype="multipart/form-data">
                 <select id="id_country" name="country_iso" onchange="this.form.submit()" class="codeweek-input-select">
-                    @foreach ($countries_with_ambassadors as $ctry)
-                        <option value="{{$ctry->country_iso}}" {{app('request')->input('country_iso') == $ctry->country_iso ? 'selected' : ''}}>@lang('countries.'. $ctry->name)</option>
+                    @foreach ($countries as $country)
+                        <option value="{{$country->iso}}" {{app('request')->input('country_iso') == $country->iso ? 'selected' : ''}}>{{$country->translation}}</option>
                     @endforeach
                 </select>
             </form>
         </section>
 
         <section class="codeweek-content-wrapper">
-
-            @if(auth()->user() && auth()->user()->country)
-                <div class="container clearfix h-full mt-8 mb-8">
-                    @lang('ambassador.your_current_country'):
-                    <a href="/ambassadors">@lang('countries.'.auth()->user()->country->name)</a>
-                </div>
-            @endif
-
 
             @if(app('request')->input('country_iso'))
                 @foreach ($countries as $country)
