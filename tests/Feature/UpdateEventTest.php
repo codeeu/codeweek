@@ -50,13 +50,14 @@ class UpdateEventTest extends TestCase
             $this->assertCount(2,$t->themes);
             $this->assertCount(3,$t->audiences);
             $this->assertCount(3,$t->tags);
+            $this->assertEquals('PENDING', $t->status);
 
 
         });
 
     }
 
-    /** @test */
+      /** @test */
     function event_can_not_be_updated_by_visitor()
     {
 

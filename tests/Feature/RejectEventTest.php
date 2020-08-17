@@ -2,8 +2,10 @@
 
 namespace Tests\Feature;
 
+use App\Event;
 use App\Mail\EventApproved;
 use App\Mail\EventRejected;
+use App\Queries\EventsQuery;
 use App\School;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
@@ -118,6 +120,39 @@ class RejectEventTest extends TestCase
 
         $this->assertEquals('REJECTED', $event->LatestModeration->status);
         $this->assertEquals('', $event->LatestModeration->message);
+
+    }
+
+    /** @test */
+    public function updating_rejected_event_should_set_status_back_to_pending()
+    {
+
+        $eventA = $this->createEvent();
+
+        $eventA->reject();
+
+        $this->assertEquals('REJECTED', $eventA->LatestModeration->status);
+        $this->assertEquals('', $eventA->LatestModeration->message);
+
+        $event = Event::where('title', $eventA->title)->first();
+
+
+        $event->title = 'Changed';
+        $event->description = 'Changed description.';
+        $event->theme = "1,2";
+        $event->audience = "1,2,3";
+        $event->tags = "foo,bar,joe";
+        $event->privacy = true;
+
+        $this->patch('/events/' . $event->id, $event->toArray());
+
+
+        tap($event->fresh(), function ($t) {
+            $this->assertEquals('PENDING', $t->status);
+            $this->assertEquals('Changed description.', $t->description);
+
+        });
+
 
     }
 

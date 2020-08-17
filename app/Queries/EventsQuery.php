@@ -70,10 +70,15 @@ class EventsQuery
     public static function update(Request $request, Event $event)
     {
 
-
+//        dd($event->status);
 
         $request['latitude'] = explode(",", $request['geoposition'])[0];
         $request['longitude'] = explode(",", $request['geoposition'])[1];
+
+        //In order to appear again in the list for the moderators
+        if ($event->status == "REJECTED") {
+            $request['status'] = "PENDING";
+        }
 
         $event->update($request->toArray());
 
