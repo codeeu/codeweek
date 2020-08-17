@@ -92,6 +92,68 @@ Gerekli malzeme: dama tahtası, ayak izli taşlar.',
 
     ],
 
+    'walk-as-long-as-you-can' => [
+        'title' => 'Yürüyebildiğin kadar yürü',
+        'text' => 'Bu aktivitede ayak izi yerine renk kullanarak tahtada olabildiğince uzun kalmaya çalışacağız. Hareket özgürlüğü arttıkça aktivite zorlaşıyor.',
+        'coloured-cards' => "Renkli kartlar veya kırmızı, sarı ve gri keçeli kalem",
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Soru 1 İki yol ne zaman çakışıp birbirlerinin önünü keser?',
+                    2 => 'Soru 2 Bu oyun iki kişilik bir oyun olarak sunuluyor. Oyun 3 veya 4 kişi arasında oynanabilir mi? Kuralları değiştirmemiz gerekir mi?',
+                ]
+
+        ]
+
+    ],
+
+    'ada-charles-roby' => [
+        'title' => 'Ada, Charles ve Robi',
+        'text' => 'Ada Lovelace ve Charles Babbage’ın ilginç bir hikayesi var. Bilgisayarlar daha icat edilmeden 100 yıl önce bilgisayar geliştirip programlamışlar. ',
+        'material' => 'Oyun hamuru ve kısa bir kurşun kalem',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Soru 1 Oyun hamuru ve kurşun kalemle yaptığınız robotun tahta üzerinde hareket edip istediği konuma ulaşabildiğini ve gerektiğinde yolunu çizebildiğini hayal etmeye çalışın. Robotu programlamak için hangi komutları kullanırdınız?'
+                ]
+
+        ]
+
+    ],
+
+    'cody-and-roby' => [
+        'title' => 'Kodi ve Robi',
+        'text' => 'Bu, bilgisayar programcısı Kodi ve robot Robi ile oynanan bir rol yapma oyunudur. Bu videoda KodiRobi’nin kartları tanıtılıyor; bundan böyle tahta üzerindeki hareketleri belirlemek için bu kartları kullanacağız. Kodi, bu kartları kullanarak Robi’ye tahta üzerinde nasıl hareket edeceğine dair komutlar verir.',
+        'material' => 'İşaretli dama tahtası, komut kartları (sol, sağ, ileri) ve tahta üzerine konacak her türlü sayaç',
+        'starter-kit' => 'KodiRobi başlangıç kiti',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Soru 1 Robi, güneye doğru C2 konumuncdan başlayarak videoda gösterilen son komut setini uygularsa nereye varır?',
+                    2 => 'Soru 2 Robi’nin videoda gösterilen son komut setini uygularken gerçekleştirdiği hareketler, CodyFeet veya CodyColor komutlarını tahtaya uygulayarak tanımlanabilir mi?',
+                    3 => 'Soru 3 Bu videoda sunulan ve yeşil, kırmızı ve sarı kartlarla temsil edilen üç komut türü, Robi’yi tahtanın her yerine götürebilecek bir komut setini oluşturur. Aynı şeyi yapmak için 3’ten az komuttan oluşan bir set bulabilir misin?',
+                ]
+
+        ]
+
+    ],
+
+    'the-tourist' => [
+        'title' => 'Turist',
+        'text' => 'İki takım, KodiRobi kartlarını kullanarak turisti tahtada gezmek istediği anıtlara götürecek komut setini en kısa zamanda bulmak için yarışır.',
+        'material' => 'Daha büyük kartlar yerde oynamak için faydalı olabilir.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Soru 1 Videoda gösterilen ilk örnekte, hangi komut seti turisti Rafael Heykeli’ne götürür?',
+                    2 => 'Soru 2 Videoda gösterilen ikinci örnekte, hangi komut seti turisti Dük Sarayı İkiz Kulelerine götürür?',
+                    3 => 'Soru 3 İki takımdan biri programa eklemek için her bir kart seçtiğinde yapılacak eğlenceli bir egzersiz düşünebilir misin? Videoda bahsedilen bayrak yarışını düşünerek bir yöntem bul.',
+                ]
+
+        ]
+
+    ],
+
 
     'texts' => [
         1 => 'Coding@Home, ailenin yanı sıra okulda günlük kullanım için kısa videolar, kendin yap materyalleri, bulmacalar, oyunlar ve kodlama ile ilgili alıştırmalar içeren bir servistir. Faaliyetleri yapmak için herhangi bir ön bilgiye veya elektronik cihaza ihtiyacınız yoktur. Faaliyetler, sayısal düşünmeyi teşvik edecek ve evde ya da okulda öğrencilerin, ebeveynlerin ve öğretmenlerin becerilerini geliştirecektir.',
