@@ -91,6 +91,69 @@ return [
 
     ],
 
+    'walk-as-long-as-you-can' => [
+        'title' => 'Jdi tak daleko, jak to jen jde',
+        'text' => 'Během této aktivity je důležité zůstat na desce tak dlouho, jak to jen jde. Místo stop se budou používat barvy. Aktivita se stane složitější, jakmile se rozšíří svoboda pohybu.',
+        'coloured-cards' => "barevné kartičky nebo červené, žluté a zelené zvýrazňovače",
+        'questions' => [
+            'content' =>
+                [
+                    1 => '1. otázka: Kdy se obě cesty zkříží a navzájem se zablokují?',
+                    2 => '2. otázka: Hra je prezentována jako hra pro dva hráče. Je možné ji hrát se třemi nebo čtyřmi hráči? Musíme změnit pravidla?',
+                ]
+
+        ]
+
+    ],
+
+    'ada-charles-roby' => [
+        'title' => 'Ada, Charles a Roby',
+        'text' => 'Příběh Ady Lovelaceové a Charlese Babbageho je zajímavý. Vymysleli a programovali počítače sto let předtím, než byly ve skutečnosti vynalezeny.',
+        'material' => 'plastelína a krátká tužka',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '1. otázka: Představte si, že robot, kterého jste vytvořili pomocí plastelíny a tužky, se může pohybovat po desce tak, aby se dostal na jakoukoliv pozici a v případě potřeby mohl sledovat svou trasu. Jaké instrukce byste k naprogramování použili?'
+                ]
+
+        ]
+
+    ],
+
+    'cody-and-roby' => [
+        'title' => 'Cody a Roby',
+        'text' => 'Tohle je hra s rolemi programátora Codyho a robota Robyho. Ve videu vám představíme karty CodyRoby, které odteď budeme používat k určení pohybů po desce. Cody karty použije, aby Robymu dal instrukce ohledně toho, jak se má na desce pohybovat.',
+        'material' => 'šachovnice se štítky, karty s instrukcemi (vlevo, vpravo, rovně) a dílky, které se umístí na desku',
+        'starter-kit' => 'startovací sada CodyRoby',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '1. otázka: Kam se Roby dostane, pokud začne na pozici C2 čelem na jih a provede poslední sadu instrukcí z videa?',
+                    2 => '2. otázka: Mohly by pohyby, které Roby provede podle poslední sady instrukcí z videa, být popsány prostřednictvím instrukcí v podobě stop CodyFeet nebo CodyColor na desce?',
+                    3 => '3. otázka: Tři typy instrukcí z videa, které jsou reprezentovány prostřednictvím zelených, červených a žlutých kartiček, představují sadu instrukcí, pomocí nichž se Roby může dostat na jakékoliv místo na desce. Dokážete vymyslet sadu, která obsahuje méně než tři instrukce a zvládne to samé?',
+                ]
+
+        ]
+
+    ],
+
+    'the-tourist' => [
+        'title' => 'Turista',
+        'text' => 'Dva týmy s kartami CodyRoby soupeří o to, aby v co nejkratším čase našly sadu instrukcí, která turistu dovede k památce, již chce na desce navštívit.',
+        'material' => 'S většími kartami se dá hrát na podlaze.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '1. otázka: Jaká sada instrukcí by turistu v prvním příkladu z videa dovedla k soše Rafaela?',
+                    2 => '2. otázka: Která sada instrukcí by turistu ve druhém příkladu z videa dovedla k věžím vévodského paláce?',
+                    3 => '3. otázka: Napadne vás nějaký zábavný způsob, jak udělat nějaké cvičení pokaždé, když jeden z týmů zvolí kartu pro přidání do programu? Vymyslete způsob, jak upravit štafetový závod z videa.',
+                ]
+
+        ]
+
+    ],
+
+
     'texts' => [
         1 => 'Série Coding@Home představuje sbírku krátkých videí, návodů, hádanek, her a programovacích úkolů pro každodenní využití doma i ve škole. Veškeré aktivity můžete provádět bez předchozích znalostí či elektronických přístrojů. Aktivity stimulují výpočetní myšlení a rozvíjejí dovednosti žáků, rodičů i učitelů doma i ve škole.',
         2 => 'Série Coding@Home projektu Evropský týden programování je založena na iniciativě <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a>, kterou připravily univerzita v Urbinu a asociace CodeMOOCnet ve spolupráci s italskou televizní stanicí Rai Cultura. Alessandro Bogliolo působí na univerzitě v Urbinu jako profesor systémů pro zpracování informací a je <a href="/ambassadors?country_iso=IT" target="_blank">italským ambasadorem Evropského týdne programování</a> a koordinátorem všech ambasadorů i členů správní rady Koalice pro digitální dovednosti a pracovní místa. ',

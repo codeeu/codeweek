@@ -91,6 +91,69 @@ return [
 
     ],
 
+    'walk-as-long-as-you-can' => [
+        'title' => 'Gehe solange du kannst',
+        'text' => 'Bei diesem Spiel liegt die Herausforderung darin, so lange wie möglich auf dem Spielbrett zu bleiben, indem man Farben anstelle von Fußabdrücken verwendet. Das Spiel wird schwieriger, wenn die Bewegungsfreiheit zunimmt',
+        'coloured-cards' => "farbige Karten oder rote, gelbe und graue Filzstifte",
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'F1. Wann treffen sich die beiden Wege und blockieren einander?',
+                    2 => 'F2. Dieses Spiel wird als Spiel für zwei Spieler vorgestellt. Ist es möglich, es mit 3 oder 4 Spielern zu spielen? Müssen wir die Regeln ändern?',
+                ]
+
+        ]
+
+    ],
+
+    'ada-charles-roby' => [
+        'title' => 'Ada, Charles und Roby',
+        'text' => 'Die Geschichte von Ada Lovelace und Charles Babbage ist sehr interessant. Sie konzipierten und programmierten Computer hundert Jahre, bevor sie tatsächlich erfunden wurden',
+        'material' => 'Knete und ein kurzer Bleistift',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'F1. Versucht euch vorzustellen, dass der Roboter, den ihr aus Knete und einem Bleistift gebastelt habt, in der Lage ist, sich auf dem Brett zu bewegen, um jede beliebige Stelle zu erreichen und, falls nötig, seinen Weg zurückverfolgen kann. Welche Befehle würdet ihr für seine Programmierung verwenden?'
+                ]
+
+        ]
+
+    ],
+
+    'cody-and-roby' => [
+        'title' => 'Cody und Roby',
+        'text' => 'Dies ist ein Rollenspiel mit dem Programmierer Cody und dem Roboter Roby. Das Video stellt die Karten von CodyRoby vor, mit denen wir von nun an die Bewegungen auf dem Brett bestimmen werden. Cody wird diese Karten verwenden, um Roby Befehle zu geben, wie er sich auf dem Spielbrett zu bewegen hat',
+        'material' => 'schachbrettartiges Spielbrett mit Beschriftungen, Befehlskarten (links, rechts, vorwärts) und auf dem Brett als Zähler zu platzierende Gegenstände',
+        'starter-kit' => 'CodyRoby-Starter-Kit',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'F1. Wo kommt Roby an, wenn er von der Position C2 in Richtung Süden startet und die letzte im Video gezeigte Befehlsfolge ausführt?',
+                    2 => 'F2. Könnten die Bewegungen, die Roby macht, indem er die letzte im Video gezeigte Befehlssequenz ausführt, beschrieben werden, indem man die Befehle von CodyFeet oder CodyColor auf das Spielbrett anwendet?',
+                    3 => 'F3. Die drei Arten von Befehlen, die im Video vorgestellt werden, dargestellt durch die grüne, rote und gelbe Karte, stellen einen Befehlssatz dar, mit dem Roby überall auf dem Spielbrett bewegt werden kann. Könnt ihr einen Befehlssatz mit weniger als 3 Befehlen schreiben, um dasselbe zu tun?',
+                ]
+
+        ]
+
+    ],
+
+    'the-tourist' => [
+        'title' => 'Der Tourist',
+        'text' => 'Mit den CodyRoby-Karten fordern sich zwei Teams gegenseitig heraus, in kürzester Zeit die Befehlsfolge zu finden, die die Touristin zu den Denkmälern führt, die sie auf dem Spielbrett besichtigen möchte',
+        'material' => 'Größere Karten können nützlich sein, um auf dem Fußboden zu spielen',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'F1. Welcher Befehlssatz würde die Touristin im ersten Beispiel des Videos zur Statue von Raphael führen?',
+                    2 => 'F2. Welche Befehlssätze würden die Touristin im zweiten Beispiel des Videos zum Torricini des Herzogspalastes führen?',
+                    3 => 'F3. Fällt euch eine lustige Möglichkeit ein, wie man, wenn eines der beiden Teams eine Karte auswählt, jeweils eine Übung in das Programm einbauen könnte? Überlege es euch, indem ihr den im Video gezeigten Staffellauf neu überdenkt',
+ ]
+
+        ]
+
+    ],
+
+
     'texts' => [
         1 => 'Coding@Home bietet Ihnen eine Sammlung aus kurzen Videos, DIY-Materialien, Puzzles, Spielen und Kodierungs-Challenges, die ganz einfach zu Hause mit der Familie oder in der Schule genutzt/durchgeführt werden können. Für diese Aktivitäten brauchen Sie weder Vorkenntnisse noch elektronische Geräte. Die Aktivitäten stimulieren das rechnerische Denken und erweitern die Fähigkeiten von Schülern, Eltern und Lehrern, sowohl zu Hause als auch in der Schule.',
         2 => 'Die Coding@Home-Reihe im Rahmen der EU Code Week basiert auf der <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a>-Initiative der Universität Urbino und des Verbands CodeMOOCnet in Zusammenarbeit mit Rai Cultura. Alessandro Bogliolo ist Professor für informationsverarbeitende Systeme an der Universität Urbino, <a href="/ambassadors?country_iso=IT" target="_blank">italienischer Botschafter der EU Code Week</a> sowie der Koordinator aller Botschafter. Außerdem ist Bogliolo Verwaltungsratsmitglied der Koalition für digitale Kompetenzen und Arbeitsplätze. ',

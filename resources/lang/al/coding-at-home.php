@@ -91,6 +91,69 @@ return [
 
     ],
 
+    'walk-as-long-as-you-can' => [
+        'title' => 'Ec sa më gjatë që të mundesh',
+        'text' => 'Në këtë aktivitet sfida është të qëndrosh sa më gjatë që të mundesh në fushë duke përdorur ngjyrat në vend të gjurmëve të këmbëve. Aktiviteti vështirësohet kur rritet liria e lëvizjes',
+        'coloured-cards' => "karta me ngjyra ose kolora të kuq, të verdhë dhe gri",
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Pyetja 1. Kur përplasen dy rrugët dhe bllokojnë njëra-tjetrën?',
+                    2 => 'Pyetja 2. Kjo lojë paraqitet si lojë me dy lojtarë. A është e mundur që të luajnë në të 3 ose 4 lojtarë? Si duhet t’i ndryshojmë rregullat?',
+                ]
+
+        ]
+
+    ],
+
+    'ada-charles-roby' => [
+        'title' => 'Ada, Çarlsi dhe Roby',
+        'text' => 'Historia e Ada Lovlejs dhe Çarls Babixh është interesante. Ata krijuan dhe programuan kompjuterë njëqind vjet përpara shpikjes së tyre reale',
+        'material' => 'plastelinë dhe një laps i shkurtër',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Pyetja 1. Përpiqu të imagjinosh se roboti që ndërtove me plastelinë dhe laps është në gjendje të lëvizë në fushë për të arritur çdo pozicion dhe, nëse është e nevojshme, të gjejë rrugën e tij. Çfarë udhëzimesh do të përdorje për ta programuar?'
+                ]
+
+        ]
+
+    ],
+
+    'cody-and-roby' => [
+        'title' => 'Cody dhe Roby',
+        'text' => 'Kjo është një lojë me role me programuesin, Cody, dhe robotin, Roby. Videoja prezanton kartat e CodyRoby, që do t’i përdorim nga tani e tutje për të përcaktuar lëvizjet në bord. Cody do t’i përdorë këto karta për t’i dhënë Roby udhëzime rreth mënyrës së lëvizjes në fushë',
+        'material' => 'fushë me kuadrate me etiketa, karta udhëzimesh (majtas, djathtas, përpara) dhe çdo numërues që do të vendoset në fushë',
+        'starter-kit' => 'Set fillestar i CodyRoby',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Pyetja 1. Ku mbërrin Roby nëse, duke u nisur nga pozicioni C2 me pamje nga jugu, ai kryen sekuencën e fundit të udhëzimeve të treguara në video?',
+                    2 => 'Pyetja 2. A mundet që lëvizjet që kryen Roby duke ekzekutuar sekuencën e fundit të udhëzimeve në video, të përshkruhen duke aplikuar udhëzimet e CodyFeet ose CodyColor në fushë?',
+                    3 => 'Pyetja 3. Tre llojet e udhëzimeve të prezantuara në video, të paraqitura me karta të gjelbra, të kuqe dhe të verdha, përbëjnë një set udhëzimesh që mund ta drejtojnë Roby-n kudo në fushë. A mund të krijosh një set udhëzimesh me më pak se 3 udhëzime për të bërë të njëjtën gjë?',
+                ]
+
+        ]
+
+    ],
+
+    'the-tourist' => [
+        'title' => 'Turisti',
+        'text' => 'Me kartat CodyRoby, dy ekipet sfidojnë njëra-tjetrën për të gjetur, brenda një kohe sa më të shkurtër, sekuencën e udhëzimeve që do ta drejtojnë turistin drejt monumenteve që do të vizitojë në fushë',
+        'material' => 'Kartat më të mëdha mund të jenë të dobishme për të luajtur në dysheme',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Pyetja 1. Çfarë sekuence udhëzimesh do ta drejtonin turistin drejt Statujës së Rafaelit në shembullin e parë të shfaqur në video?',
+                    2 => 'Pyetja 2. Çfarë sekuence udhëzimesh do ta drejtonin turistin drejt Torriçinit të Pallatit të Dukës në shembullin e dytë të shfaqur në video?',
+                    3 => 'Pyetja 3. A mund të mendosh një mënyrë argëtuese për të bërë ushtrime çdo herë që një prej dy ekipeve zgjedh një kartë për ta shtuar në program? Shpik një mënyrë duke rimenduar garën e shfaqur në video',
+                ]
+
+        ]
+
+    ],
+
+
     'texts' => [
         1 => 'Coding@Home është një koleksion i videove të shkurtra, modeleve që i bëni vetë, gjëegjëzave, lojërave dhe sfidave të kodimit për përdorim të përditshëm në familje, si dhe në shkollë. Ju nuk duhet të keni njohuri të mëparshme ose pajisje elektronike për të kryer aktivitetet. Aktivitetet stimulojnë mendimin llogaritës dhe kultivojnë aftësitë e nxënësve, prindërve dhe mësuesve në shtëpi ose në shkollë.',
         2 => 'Seria Coding@Home e EU Code Week bazohet në iniciativës <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">« Coding in famiglia»</a> të Universitetit të Urbinos dhe Shoqatës CodeMOOCnet në bashkëpunim me Rai Cultura. Alessandro Bogliolo është Profesori i Sistemeve të Përpunimit të Informacionit në Universitetin e Urbinos, <a href="/ambassadors?country_iso=IT"

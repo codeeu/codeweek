@@ -91,6 +91,69 @@ return [
 
     ],
 
+    'walk-as-long-as-you-can' => [
+        'title' => 'Hodaj dok god možeš',
+        'text' => 'U ovoj aktivnosti izazov je ostati što duže na ploči koristeći boje umjesto tragova. Aktivnost postaje teža kada se povećava sloboda kretanja',
+        'coloured-cards' => "obojene kartice, ili crvene, žute i sive oznake",
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'P1. Kada se dva puta sudaraju i blokiraju jedan drugog?',
+                    2 => 'P2. Ova igra je predstavljena kao igra za dva igrača? Da li je moguće igrati sa 3 ili 4 igrača? Da li trebamo mijenjati pravila?',
+                ]
+
+        ]
+
+    ],
+
+    'ada-charles-roby' => [
+        'title' => 'Ada, Charles i Roby',
+        'text' => 'Priča o Adi Lovelace i Charlesu Babbageu je zanimljiva. Oni su osmislili i programirali kompjutere stotinu godina prije nego što su zapravo izumljeni',
+        'material' => 'glina za modeliranje i kratka olovka',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'P1. Pokušajte zamisliti da je robot kojeg ste napravili glinom za modeliranje i olovkom u stanju da se kreće po ploči kako bi dostigao bilo koji položaj i, ako treba, pronašao svoj put. Koja uputstva biste koristili za programiranje?'
+                ]
+
+        ]
+
+    ],
+
+    'cody-and-roby' => [
+        'title' => 'Cody i Roby',
+        'text' => 'Ovo je igra uloga s programerom Codyjem i robotom Robyjem. Video predstavlja kartice CodyRobyja koje ćemo od sada koristiti za određivanje pokreta na ploči. Cody će koristiti ove kartice kako bi dao Robyju uputstva kako se kretati po ploči',
+        'material' => 'ploča sa naljepnicama, kartice sa uputstvima (lijevo, desno, pravo) i bilo kakvi brojači da se postave na ploču',
+        'starter-kit' => 'CodyRoby početni komplet',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'P1. Gdje stiže Roby ako, počevši od položaja C2 prema jugu, izvrši posljednji niz uputstava prikazanih u videu?',
+                    2 => 'P2. Mogu li se pokreti koje Roby provodi izvodeći posljednji niz uputstava prikazanih u videu opisati primjenom na ploči uputstava iz Cody Stopala ili Cody Boja?',
+                    3 => 'P3. Tri vrste uputstava prezentiranih u videu, predstavljenih zelenim, crvenim i žutim karticama, predstavljaju skup uputstava koji mogu odvesti Robyja bilo gdje na ploči. Možete li smisliti skup uputstava sa manje od tri uputstva kako učiniti to isto?',
+                ]
+
+        ]
+
+    ],
+
+    'the-tourist' => [
+        'title' => 'Turista',
+        'text' => 'Sa CodyRoby karticama, dva tima se međusobno izazivaju da pronađu, u najkraćem mogućem roku, niz uputstava koje će turistu uputiti do spomenika koji želi posjetiti na ploči.',
+        'material' => 'Veće kartice mogu biti korisne za igranje na podu',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'P1. Koji niz uputstava bi vodio turistu do statue Rafaela u prvom primjeru prikazanom u videu?',
+                    2 => 'P2. Koji niz uputstava bi vodio turistu do Torricinija iz Vojvodske palače u drugom primjeru prikazanom u videu?',
+                    3 => 'P3. Možete li smisliti zabavan način vježbanja svaki put kada neki od dva tima odabere karticu koju će dodati programu? Smislite način ponovnim promišljanjem štafetne utrke prikazane u videu',
+                ]
+
+        ]
+
+    ],
+
+
     'texts' => [
         1 => '"Coding@Home" su kratki video snimci sa uradi sam materijalima, slagalicama, zanimljivim igrama i izazovima kodiranja za svakodnevnu upotrebu u kući kao i u školi. Nije vam potrebno nikakvo predznanje u kodiranju niti su vam potrebni blo kakvi elektronski uređaji da bi uradili aktivnosti. Aktivnosti će podstaknuti računarsko razmišljanje i njegovati vještine učenika, roditelja i učitelja u kući ili u školi.',
         2 => 'Serija Coding@Home EU Sedmice Kodiranja se zasniva na <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> inicijativi Urbino Univerziteta i CodeMOCCnet Udruženja u saradnji sa RAI Cultura. Aktivnosti predstavlja Alessandro Bogliolo profesor Informacionih Procesnih Sistema na Urbino Univerzitetu, <a href="/ambassadors?country_iso=IT" target="_blank">Italijanski ambasador EU Sedmice Kodiranja</a> i koordinator svim ambasadorima kao i članovima Upravnog odbora Digital Skills and Jobs Koalicije.',

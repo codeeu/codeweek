@@ -91,6 +91,69 @@ return [
 
     ],
 
+    'walk-as-long-as-you-can' => [
+        'title' => 'Gå, så langt du kan',
+        'text' => 'I denne aktivitet er udfordringen at blive længst muligt på spillepladen ved at bruge farver i stedet for fodtrin. Aktiviteten bliver sværere, når bevægefriheden stiger',
+        'coloured-cards' => "farvede kort eller røde, gule og grå tuscher",
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'SP1. Hvornår mødes og blokerer to baner hinanden?',
+                    2 => 'SP2. Dette spil præsenteres som et spil for to spillere. Er det muligt at spille det med 3 eller 4 spillere? Skal vi ændre reglerne?',
+                ]
+
+        ]
+
+    ],
+
+    'ada-charles-roby' => [
+        'title' => 'Ada, Charles og Roby',
+        'text' => 'Historien om Ada Lovelace og Charles Babbage er interessant. De udtænkte og programmerede computere, hundrede år før computere faktisk blev opfundet',
+        'material' => 'modellervoks og en kort blyant',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'SP1. Forestil dig, at den robot, du har bygget med modellervoks og en blyant, kan bevæge sig på spillepladen og gå til en vilkårlig position, og at man om nødvendigt kan følge dens bane. Hvilke kommandoer ville du bruge til at programmere den?'
+                ]
+
+        ]
+
+    ],
+
+    'cody-and-roby' => [
+        'title' => 'Cody og Roby',
+        'text' => 'Dette er et rollespil med programmøren Cody og robotten Roby. Videoen introducerer CodyRoby-kortene, som vi fra nu af vil bruge til at bestemme træk på spillepladen. Cody vil bruge kortene til at give Roby kommandoer om, hvordan han skal bevæge sig på spillepladen.',
+        'material' => 'skakternet spilleplade med betegnelser, kommandokort (venstre, højre, ligeud) samt eventuelle tællere, der skal placeres på spillepladen',
+        'starter-kit' => 'CodyRoby-startsæt',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'SP1. Hvor ender Roby, hvis han starter fra position C2, vendt mod syd, og udfører den sidste sekvens af kommandoer, der vises i videoen?',
+                    2 => 'SP2. Kan de bevægelser, som Roby udfører ved hjælp af den sidste sekvens af kommandoer i videoen, beskrives ved at anvende kommandoerne for CodyFeet eller CodyColor på spillepladen?',
+                    3 => 'SP3. De tre typer af kommandoer, der introduceres i videoen og repræsenteres af de grønne, røde og gule kort, udgør et kommandosæt, der kan flytte Roby til et hvilket som helst sted på spillepladen. Kan du finde på et kommandosæt med færre end tre kommandoer, der kan gøre det samme?',
+                ]
+
+        ]
+
+    ],
+
+    'the-tourist' => [
+        'title' => 'Turisten',
+        'text' => 'To hold skal ved hjælp af CodyRoby-kortene spille mod hinanden for på kortest mulig tid at finde den sekvens af kommandoer, der kan føre turisten til de monumenter, som vedkommende gerne vil se på spillepladen',
+        'material' => 'Store kort kan være nyttige, hvis der skal spilles på gulvet',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'SP1. Hvilken sekvens af kommandoer vil føre turisten til statuen af Raphael i det første eksempel, der vises i videoen?',
+                    2 => 'SP2. Hvilken sekvens af kommandoer vil føre turisten til hertugpaladset Torricini i det andet eksempel, der vises i videoen?',
+                    3 => 'SP3. Kan du finde på en sjov måde at lave motion på, hver gang et af de to hold vælger et kort, der skal tilføjes til programmet? Find på noget ved at gentænke det stafetløb, der vises i videoen',
+ ]
+
+        ]
+
+    ],
+
+
     'texts' => [
         1 => 'Coding@Home er en samling af korte videoer, gør-det-selv-materialer, opgaveløsningsspil og andre spændende spil samt kodningsudfordringer til daglig brug i familien og i skolen. Man behøver hverken forudgående viden om emnet eller adgang til en elektronisk enhed for at kunne udføre de forskellige aktiviteter. Aktiviteterne stimulerer computerorienteret tænkning og fremmer elevernes/de studerendes, forældrenes og undervisernes kompetencer i hjemmet og i skolen.',
         2 => 'EU’s Coding@Home-serie er baseret på <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> initiativet fra Urbino Universitet og CodeMOOCnet i samarbejde med Rai Cultura. Aktiviteterne præsenteres af Alessandro Bogliolo, der er professor i databehandlingssystemer ved universitetet i Urbino, <a href="/ambassadors?country_iso=IT" target="_blank">Italiensk EU Code Week-ambassadør</a> og koordinator for ambassadørerne samt medlem af bestyrelsen for the Digital Skills and Jobs Coalition. ',

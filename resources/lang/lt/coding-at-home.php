@@ -91,6 +91,73 @@ return [
 
     ],
 
+    'walk-as-long-as-you-can' => [
+        'title' => 'Nueik kuo ilgesnį kelią',
+        'text' => 'Šio žaidimo tikslas – kuo ilgiau išsilaikyti ant languotos lentos naudojant spalvas vietoj pėdelių. Žaidimas tampa sudėtingesnis, kai atsiranda daugiau laisvės judėti',
+        'coloured-cards' => "spalvotos kortelės arba raudoni, geltoni ir žali flomasteriai",
+        'questions' => [
+            'content' =>
+                [
+                    1 => '1 klausimas. Kada keliai susikerta ir blokuoja vienas kitą?',
+                    2 => '2 klausimas. Ar šis žaidimas skirtas dviems žaidėjams? Ar jį gali žaisti 3 ar 4 žaidėjai? Ar mums reikia keisti taisykles?'
+                ]
+
+        ]
+
+    ],
+
+    'ada-charles-roby' => [
+        'title' => 'Ada, Čarlzas ir Robis',
+        'text' => 'Ados Lavleis (Ada Lovelace) ir Čarlzo Babidžo (Charles Babbage) istorija yra labai įdomi. Jie sukūrė ir suprogramavo kompiuterių pirmtakus visu šimtmečiu anksčiau, nei kompiuteriai buvo faktiškai išrasti',
+        'material' => 'modelinas ir trumpas pieštukas',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '1 klausimas. Pamėginkite įsivaizduoti, kad robotas, kurį pagaminote iš modelino ir pieštuko, gali judėti ant languotos lentos ir pasiekti bet kurį tašką ir, jei reikia, atsekti nueitą kelią. Kokias komandas naudotumėte jį programuodami?'
+                ]
+
+        ]
+
+    ],
+
+    'cody-and-roby' => [
+        'title' => 'Kodis and Robis',
+        'text' => 'Tai vaidmenų žaidimas su programuotoju Kodžiu ir robotu Robiu. Vaizdo įraše pristatomos Kodžio ir Robio kortelės, kurias nuo šiol naudosime, kad nurodytume ėjimus languotoje lentoje. Kodis naudos šias korteles duodamas Robiui nurodymus, kaip judėti languotoje lentoje',
+        'material' => 'languota lenta su žymėmis, kortelės su komandomis (į kairę, į dešinę, tiesiai) ir bet kokie daiktai, kuriuos reikia dėti ant languotos lentos',
+        'starter-kit' => 'Kodžio ir Robio pradinis rinkinys',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '1 klausimas. Kur atsidurs Robis, jei pradės keliauti iš taško C2 į pietus ir įvykdys paskutinę vaizdo įraše parodytų komandų seką?',
+                    2 => '2 klausimas. Ar būtų galima aprašyti Robio ėjimus, kuriuos jis atlieka vykdydamas paskutinę vaizdo įraše parodytų komandų seką, taikant Kodžio pėdelių ar Kodžio spalvų komandas keliavimui languota lenta?',
+                    3 => '3 klausimas. Vaizdo įraše parodytos trijų rūšių komandos – žalios, raudonos ir geltonos kortelės – sudaro komandų rinkinį, kurį naudojant galima nusiųsti Robį į bet kurį languotos lentos tašką. Ar galite sukurti komandų rinkinį, kurį sudarytų mažiau nei 3 komandos, kad būtų galima atlikti tą patį?',
+                ]
+
+        ]
+
+    ],
+
+    'the-tourist' => [
+        'title' => 'Turistas',
+        'text' => 'Naudodamos Kodžio ir Robio korteles tarpusavyje varžosi dvi grupės, kuri greičiau sukurs komandų seką, nuvesiančią turistus prie jų pasirinktų paminklų ant languotos lentos',
+        'material' => 'Žaidžiant ant grindų būtų patogiau naudoti didesnes korteles',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '1 klausimas. Kokią komandų seką pirmame vaizdo įraše rodytame pavyzdyje turėtų įvykdyti turistai, kad nukeliautų iki Rafaelio paminklo?',
+                    2 => '2 klausimas. Kokią komandų seką antrame vaizdo įraše rodytame pavyzdyje turėtų įvykdyti turistai, kad nukeliautų iki kunigaikščių rūmų Torricini fasado?',
+                    3 => '3 klausimas. Sugalvokite, kaip būtų galima smagiai atlikti tą patį veiksmą, kai kaskart viena iš dviejų grupių pasirenka kortelę, kad ją pridėtų prie programos. Persvarstykite vaizdo įraše parodytą estafetės žaidimą ir sugalvokite naują būdą',
+ ]
+
+        ]
+
+    ],
+
+
+
+
+    
+
     'texts' => [
         1 => ' „Coding@Home“ – tai trumpų vaizdo įrašų, „pasidaryk pats“ reikmenų, galvosūkių, žaidimų ir programavimo iššūkių rinkinys, tinkantis kasdien naudoti namuose ir mokykloje. Norint mėgautis šiais užsiėmimais, nebūtina turėti jokių ankstesnių žinių ar elektroninių prietaisų. Užsiėmimai skirti ugdyti informatinį mąstymą ir lavinti mokinių, jų tėvų ir mokytojų žinias tiek namų aplinkoje, tiek mokykloje.',
         2 => 'ES programavimo savaitės „Coding@Home“ vaizdo įrašų serija sukurta remiantis Urbino universiteto ir CodeMOOCnet asociacijos <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> iniciatyva bendradarbiaujant su „Rai Cultura“. Alessandro Bogliolo dirba Informacijos tvarkymo sistemų profesoriumi Urbino universitete, yra <a href="/ambassadors?country_iso=IT" target="_blank">Italijos ES programavimo savaitės ambasadorius</a> ir visų ambasadorių koordinatorius bei Skaitmeninių įgūdžių ir užimtumo koalicijos valdybos narys.',

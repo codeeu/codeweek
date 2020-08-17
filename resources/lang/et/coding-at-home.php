@@ -89,6 +89,69 @@ return [
 
     ],
 
+    'walk-as-long-as-you-can' => [
+        'title' => 'Kõnni võimalikult kaugele',
+        'text' => 'Selle mängu puhul tuleb mängulaual püsida võimalikult kaua, kasutades jalajälgede asemel värve. Mäng muutub liikumisvabaduse suurenedes üha raskemaks',
+        'coloured-cards' => "värvilised kaardid, st punane, kollane ja hall kaart",
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'K1. Millal kaks teed kokku saavad ja teineteist blokeerivad?',
+                    2 => 'K2. See mäng on mõeldud kahele mängijale. Kas seda saab mängida ka kolmekesi või neljakesi? Kas me peame selleks reegleid muutma?',
+                ]
+
+        ]
+
+    ],
+
+    'ada-charles-roby' => [
+        'title' => 'Ada, Charles ja Roby',
+        'text' => 'Ada Lovelace’i ja Charles Babbage’i lugu on huvitav. Nad mõtlesid välja ja programmeerisid arvuti sada aastat enne selle tegelikku leiutamist',
+        'material' => 'voolimissavi ja lühike pliiats',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'K1. Püüdke kujutleda, et voolimissavist ja pliiatsist ehitatud robot liigub mööda mängulauda mis tahes kohta ja võib vajadusel sama teed mööda tagasi minna. Milliseid käske te kasutaksite liikumise programmeerimiseks?'
+                ]
+
+        ]
+
+    ],
+
+    'cody-and-roby' => [
+        'title' => 'Cody ja Roby',
+        'text' => 'See on rollimäng, mille tegelased on programmeerija Cody ja robot Roby. Videos tutvustatakse CodyRoby kaarte, mida kasutatakse mängulaual liikumiseks. Cody annab kaartide abil Robyle käske mängulaual liikumiseks',
+        'material' => 'ruutudega mängulaud, mis on varustatud siltidega, käsukaartidega (vasakule, paremale, edasi) ja mängunuppudega',
+        'starter-kit' => 'CodyRoby stardikomplekt',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'K1. Kuhu jõuab Roby, kui ta väljalt C2 lõuna poole liikudes järgib videos näidatud viimaseid käske?',
+                    2 => 'K2. Kas videos näidatud viimaste käskude järgi liikuva Roby liikumisteed saab kirjeldada CodyFeet või CodyColor käskude abil?',
+                    3 => 'K3. Videos näidatud kolme liiki käsud, mida väljendavad roheline, punane ja kollane kaart, moodustavad käsustiku, mida järgides saab Roby liikuda mängulaual igale poole. Kas saate sama tegemiseks koostada vähem kui kolmest käsust koosneva käsustiku?',
+                ]
+
+        ]
+
+    ],
+
+    'the-tourist' => [
+        'title' => 'Turist',
+        'text' => 'CodyRoby kaarte kasutades peavad kaks meeskonda leidma võimalikult lühikese aja jooksul käsud, mis juhatavad turisti mängulaual teda huvitavate vaatamisväärsuste juurde',
+        'material' => 'Põrandal on parem mängida suuremate kaartidega',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'K1. Millised käsud juhatavad videos näidatud esimese näite puhul turisti Raffaeli kuju juurde?',
+                    2 => 'K2. Millised käsud juhatavad videos näidatud teise näite puhul turisti Urbino hertsogilossi juurde?',
+                    3 => 'K3. Kas sulle tuleb pähe mõni lõbus harjutus, mida tuleks teha iga kord, kui üks meeskondadest valib kaardi? Selle leidmiseks mõtestage videos näidatud teatevõistlus ümber',
+                ]
+
+        ]
+
+    ],
+
+
     'texts' => [
         1 => 'Coding@Home on lühikeste videote, isevalmistatavate materjalide, nuputusülesannete, mängude ja põnevate programmeerimisülesannete kogumik igapäevaseks kasutamiseks nii perekonnas kui ka koolis. Nendeks tegevusteks ei vaja te eelnevaid teadmisi ega elektroonilisi seadmeid. Tegevused stimuleerivad arvutuslikku mõtlemist ning arendavad õpilaste, vanemate ja õpetajate oskusi kodus ja koolis.',
         2 => 'ELi programmeerimisnädala Code Week sari Coding@Home põhineb Urbino ülikooli ja ühenduse CodeMOOCnet Association algatusel <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> koostöös Itaalia televisiooni kultuuriosakonnaga. Alessandro Bogliolo on Urbino ülikooli infotöötlussüsteemide professor, <a href="/ambassadors?country_iso=IT" target="_blank">ELi programmeerimisnädala Code Week Itaalia saadik</a> ja kõigi saadikute koordinaator ning digitaalsete oskuste ja töökohtade koalitsiooni juhatuse liige.',

@@ -91,6 +91,68 @@ return [
 
     ],
 
+    'walk-as-long-as-you-can' => [
+        'title' => 'Nájdi najdlhšiu cestu',
+        'text' => 'Pri tejto hre má hráč za úlohu zostať čo najdlhšie na hracej doske, pričom používa farby namiesto stôp. Pri väčšej slobode pohybu sa zvyšuje náročnosť hry',
+        'coloured-cards' => "farebné karty alebo červená, žltá a sivá fixka",
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'O1. Kedy sa tieto dve trasy skrížia a navzájom zablokujú?',
+                    2 => 'O2. Je táto hra určená pre dvoch hráčov? Môžu ju hrať 3 alebo 4 hráči? Treba zmeniť pravidlá?',
+                ]
+
+        ]
+
+    ],
+
+    'ada-charles-roby' => [
+        'title' => 'Ada, Charles a Roby',
+        'text' => 'Príbeh Ady Lovelaceovej a Charlesa Babbagea je zaujímavý. Vymysleli a naprogramovali počítače sto rokov predtým, než boli skutočne vynájdené',
+        'material' => 'modelovacia hmota a krátka ceruzka',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'O1. Skúste si predstaviť, že robot, ktorý ste vyrobili z modelovacej hmoty a ceruzky, sa dokáže pohybovať po hracej doske, aby sa dostal na ktorúkoľvek pozíciu, a prípadne sledovať svoju trasu. Aké pokyny by ste použili na jeho naprogramovanie?'
+                ]
+
+        ]
+
+    ],
+
+    'cody-and-roby' => [
+        'title' => 'Cody a Roby',
+        'text' => 'Toto je rolová hra s programátorom Codym a robotom Robym. Vo videu vám predstavíme karty CodyRoby, ktoré budeme odteraz používať na určenie ťahov po hracej doske. Cody bude pomocou týchto kariet dávať Robymu pokyny, ako sa má pohybovať po hracej doske',
+        'material' => 'hracia doska so značkami, karty s pokynmi (vľavo, vpravo, dopredu) a ľubovoľné žetóny, ktoré sa budú klásť na hraciu dosku',
+        'starter-kit' => 'štartovacia sada CodyRoby',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'O1. Kam sa Roby dostane, ak začne z pozície C2 otočený na juh a vykoná poslednú sériu pokynov ukázaných vo videu?',
+                    2 => 'O2. Dali by sa ťahy, ktoré Roby urobí vykonaním poslednej série pokynov ukázaných vo videu, opísať pomocou pokynov CodyFeet alebo CodyColor na hracej doske?',
+                    3 => 'O3. Tri typy pokynov, ktoré sú predstavené vo videu a zastúpené zelenou, červenou a žltou farbou, tvoria súbor pokynov, ktoré môžu Robyho priviesť kamkoľvek na hracej doske. Vedeli by ste vymyslieť súbor pokynov s menej ako 3 pokynmi, ktorý by dokázal to isté?',
+                ]
+
+        ]
+
+    ],
+
+    'the-tourist' => [
+        'title' => 'Turista',
+        'text' => 'Pri hre s kartami CodyRoby navzájom súperia dva tímy o to, ktorý z nich v čo najkratšom čase nájde sériu pokynov, ktoré privedú turistu k pamätihodnostiam, ktoré chce na hracej doske navštíviť',
+        'material' => 'Na hru na zemi môžu byť vhodné väčšie karty',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'O1. Aká séria pokynov by priviedla turistu k soche Rafaela v prvom príklade ukázanom vo videu?',
+                    2 => 'O2. Aká séria pokynov by priviedla turistu k vežiam Dóžovho paláca v druhom príklade ukázanom vo videu?',
+                    3 => 'O3. Vymyslíte nejaký zábavný pohyb alebo gesto, ktoré sa urobia vždy, keď si jeden z tímov potiahne ďalšiu kartu do programu? Porozmýšľajte nad štafetou spomenutou vo videu a vymyslite spôsob',
+                ]
+
+        ]
+
+    ],
+
     'texts' => [
         1 => 'Coding@Home je zbierka krátkych videí obsahujúcich materiály typu „urob si sám“, hlavolamy, pútavé hry a programátorské úlohy na každodenné použitie doma či v škole. Na vykonávanie aktivít nepotrebujete žiadne znalosti v oblasti programovania ani elektronické zariadenia. Tieto aktivity stimulujú výpočtové myslenie a cibria zručnosti žiakov, rodičov a učiteľov doma aj v škole.',
         2 => 'Séria Coding@Home v rámci európskeho týždňa programovania nadväzuje na iniciatívu <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> Univerzity v Urbine a asociáciu CodeMOOCnet v spolupráci so štruktúrou Rai Cultura. Aktivity prezentuje Alessandro Bogliolo, ktorý vyučuje systémy na spracovávanie informácií na Univerzite v Urbine a je <a href="/ambassadors?country_iso=IT" target="_blank">ambasádorom európskeho týždňa programovania v Taliansku</a>, koordinátorom všetkých ambasádorov a tiež členom správnej rady koalície digitálnych zručností a pracovných miest.',

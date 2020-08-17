@@ -77,6 +77,40 @@
                     </a>
                 </div>
 
+                <div class="codeweek-card-grid">
+                    <a href="{{route('codingathome-walk-as-long-as-you-can')}}">
+                        <img src="/img/codingathome/6.jpg">
+                        <div class="title"
+                             style="text-align:center">@lang('coding-at-home.walk-as-long-as-you-can.title')</div>
+                    </a>
+                </div>
+
+                <div class="codeweek-card-grid">
+{{--                    <a href="{{route('codingathome-ada-charles-roby')}}">--}}
+{{--                    <a href="#">--}}
+                        <img src="/img/codingathome/7.jpg" style=" opacity: 0.4;filter: alpha(opacity=40);">
+{{--                        <div class="title"--}}
+{{--                             style="text-align:center">@lang('coding-at-home.ada-charles-roby.title')</div>--}}
+{{--                    </a>--}}
+                    <div class="text-center text-xl title">@lang('coding-at-home.ada-charles-roby.title')<br/>(Coming soon)</div>
+                </div>
+
+                <div class="codeweek-card-grid">
+                    <a href="{{route('codingathome-cody-and-roby')}}">
+                        <img src="/img/codingathome/8.jpg">
+                        <div class="title"
+                             style="text-align:center">@lang('coding-at-home.cody-and-roby.title')</div>
+                    </a>
+                </div>
+
+                <div class="codeweek-card-grid">
+                    <a href="{{route('codingathome-the-tourist')}}">
+                        <img src="/img/codingathome/9.jpg">
+                        <div class="title"
+                             style="text-align:center">@lang('coding-at-home.the-tourist.title')</div>
+                    </a>
+                </div>
+
             </section>
 
             <section class="codeweek-content-wrapper-inside">
