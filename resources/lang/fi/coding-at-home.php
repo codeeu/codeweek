@@ -91,6 +91,70 @@ return [
 
     ],
 
+    'walk-as-long-as-you-can' => [
+        'title' => 'Kulje niin pitkälle kuin pystyt',
+        'text' => 'Tässä pelissä tavoitteena on pysyä laudalla mahdollisimman pitkään käyttämällä värejä jalanjälkien sijaan. Peli vaikeutuu, kun liikkumisen vapaus kasvaa',
+        'coloured-cards' => "värikortit tai punaiset, keltaiset ja harmaat merkinnät",
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'K1. Milloin kaksi reittiä törmää ja estää toistensa etenemisen?',
+                    2 => 'K2. Tämä peli esitetään kahden pelaajan pelinä. Voiko sitä pelata 3 tai 4 pelaajalla? Pitääkö sääntöjä muuttaa?',
+                ]
+
+        ]
+
+    ],
+
+    'ada-charles-roby' => [
+        'title' => 'Ada, Charles ja Roby',
+        'text' => 'Ada Lovelacen ja Charles Babbagen tarina on mielenkiintoinen. He suunnittelivat ja ohjelmoivat tietokoneita sata vuotta ennen kuin ne todella keksittiin.',
+        'material' => 'muovailuvahaa ja lyijykynän pätkä',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'K1. Kuvittele, että muovailuvahasta ja lyijykynän pätkästä tekemäsi robotti pystyy liikkumaan laudalla, pääsemään mihin tahansa kohtaan ja tarvittaessa seuraamaan reittiään. Millä ohjeilla ohjelmoisit sen?'
+                ]
+
+        ]
+
+    ],
+
+    'cody-and-roby' => [
+        'title' => 'Cody ja Roby',
+        'text' => 'Tämä on roolipeli, jossa on ohjelmoija Cody ja robotti Roby. Videolla näytetään CodyRoby-kortit, joita tästä lähin käytetään esittämään laudalla tehtävät siirrot. Cody antaa näillä korteilla Robylle ohjeita laudalla liikkumiseen',
+        'material' => 'ruudukko, jossa on merkinnät, ohjekortit (vasemmalle, oikealle, suoraan) ja kaikki laudalle asetettavat nappulat',
+        'starter-kit' => 'CodyRoby-aloituspaketti',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'K1. Minne Roby päätyy, jos se suorittaa videolla nähtyjen ohjeiden viimeisen sarjan alkaen kohdasta C2 etelän suuntaan?',
+                    2 => 'K2. Voidaanko siirtoja, jotka Roby tekee suorittamalla videolla nähtyjen ohjeiden viimeisen sarjan, kuvata käyttämällä laudalla CodyFeet- tai CodyColor-ohjeita?',
+                    3 => 'K3. Videolla nähdyt kolmentyyppiset ohjeet, jotka esitetään vihreillä, punaisilla ja keltaisilla korteilla, muodostavat ohjekokonaisuuden, jolla Robya voidaan ohjata minne tahansa laudalla. Pystytkö keksimään ohjekokonaisuuden, jolla sama tehdään vähemmällä kuin kolmella ohjeella?',
+                ]
+
+        ]
+
+    ],
+
+    'the-tourist' => [
+        'title' => 'Matkailija',
+        'text' => 'CodyRoby-korteilla kaksi ryhmää haastaa toisensa löytämään mahdollisimman nopeasti ohjesarjan, joka ohjaa matkailijan monumenteille, joilla tämä haluaa laudalla käydä',
+        'material' => 'Lattialla pelatessa suuremmat kortit voivat olla käteviä',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'K1. Millä ohjesarjalla matkailija ohjattaisiin videon ensimmäisessä esimerkissä esitettävän Rafaelin patsaan luo?',
+                    2 => 'K2. Millä ohjesarjalla matkailija ohjattaisiin videon toisessa esimerkissä esitettävän herttuanpalatsin luo?',
+                    3 => 'K3. Keksisitkö hauskan tavan liikkua aina, kun jompikumpi tiimi valitsee kortin lisättäväksi ohjelmaan? Keksi tapa pohtimalla videolla esitettyä viestikilpailua',
+                ]
+
+        ]
+
+    ],
+
+
+
     'texts' => [
         1 => '"Coding@Home" sisältää lyhyitä videoita, joissa on tee-se-itse-materiaalia, pulmapelejä, arvoituksia, kiinnostavia pelejä ja koodaushaasteita jokapäiväiseen käyttöön perheen parissa tai koulussa. Et tarvitse aikaisempaa tietoa ohjelmoinnista etkä elektronisia laitteita harjoitusten tekemiseen. Harjoitukset stimuloivat laskennallista ajattelua ja kasvattavat oppilaiden, vanhempien ja opettajien taitoja kotona tai koulussa.',
         2 => 'Euroopan Unionin koodausviikon Coding@Home-sarja perustuu Urbinon yliopiston ja CodeMOOCnet-yhdistyksen <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> -aloitteeseen yhteistyössä Rai Culturan kanssa. Tehtäviä vetää Alessandro Bogliolo, joka on tietokonejärjestelmien opettaja Urbinon yliopistossa, <a href="/ambassadors?country_iso=IT" target="_blank">Italian EU-koodiviikon lähettiläs</a> ja kaikkien lähettiläiden koordinaattori sekä Digital Skills and Jobs -koalition hallintoneuvoston jäsen. ',

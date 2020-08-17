@@ -73,7 +73,7 @@ Route::view('/resources/CodingAtHome/keep-off-my-path', 'codingathome.keep-off-m
 Route::view('/resources/CodingAtHome/tug-of-war', 'codingathome.tug-of-war')->name('codingathome-tug-of-war');
 Route::view('/resources/CodingAtHome/explorer-without-footprints', 'codingathome.explorer-without-footprints')->name('codingathome-explorer-without-footprints');
 Route::view('/resources/CodingAtHome/walk-as-long-as-you-can', 'codingathome.walk-as-long-as-you-can')->name('codingathome-walk-as-long-as-you-can');
-Route::view('/resources/CodingAtHome/ada-charles-roby', 'codingathome.ada-charles-roby')->name('codingathome-ada-charles-roby');
+//Route::view('/resources/CodingAtHome/ada-charles-roby', 'codingathome.ada-charles-roby')->name('codingathome-ada-charles-roby');
 Route::view('/resources/CodingAtHome/cody-and-roby', 'codingathome.cody-and-roby')->name('codingathome-cody-and-roby');
 Route::view('/resources/CodingAtHome/the-tourist', 'codingathome.the-tourist')->name('codingathome-the-tourist');
 

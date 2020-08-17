@@ -91,6 +91,74 @@ return [
 
     ],
 
+    'walk-as-long-as-you-can' => [
+        'title' => 'Gå så långt du kan',
+        'text' => 'Det här spelet går ut på att stanna kvar på spelplanen så länge som möjligt genom att använda färger i stället för fotavtryck. Det blir svårare och svårare, i takt med att din rörelsefrihet minskar',
+        'coloured-cards' => "färgade kort eller röda, gula och grå markörer",
+
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'F1. När krockar de två banorna och blockerar varandra?',
+                    2 => 'F2. Spelet presenteras som ett spel för två spelare. Går det att spela det med tre eller fyra spelare? Behöver vi ändra reglerna?',
+
+                ]
+
+        ]
+
+    ],
+
+    'ada-charles-roby' => [
+        'title' => 'Ada, Charles och Roby',
+        'text' => 'Historien om Ada Lovelace och Charles Babbage är intressant. De byggde och programmerade datorer 100 år innan de uppfanns på riktigt',
+        'material' => 'modellera och kort blyertspenna',
+
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'F1. Föreställ dig att den robot som du byggde av modellera och en penna kan flytta sig vart som helst på spelplanen och, vid behov, rita ut sin väg. Vilka instruktioner skulle du använda för att programmera den?'
+                ]
+
+        ]
+
+    ],
+
+    'cody-and-roby' => [
+        'title' => 'Cody och Roby',
+        'text' => 'Det här är ett rollspel med programmeraren Cody och roboten Roby. I videoklippet visas korten Cody–Roby, som vi från och med nu kommer att använda för att bestämma pjäsernas drag på spelplanen. Cody kommer att använda korten för att ge Roby instruktioner om vart han ska gå på planen',
+        'material' => 'rutbräde med bokstäver och siffror, instruktionskort (vänster, höger, rakt fram)',
+        'starter-kit' => 'Cody–Roby grundkit',
+
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'F1. Var hamnar Roby om han utgår från position C2 och står vänd mot söder och sedan utför den sista instruktionssekvensen i videon?',
+                    2 => 'F2. Skulle de drag som Roby gör när han utför den sista instruktionssekvensen i videon också kunna beskrivas med hjälp av markörer med fotavtryck eller med färger?',
+                    3 => 'F3. De tre sorters instruktioner som visas i videon – de gröna, röda och gula korten – utgör en instruktionsuppsättning som kan flytta Roby vart som helst på spelplanen. Kan du hitta på en instruktionsuppsättning som innehåller färre än tre instruktioner för att göra samma sak?',
+
+                ]
+
+        ]
+
+    ],
+
+    'the-tourist' => [
+        'title' => 'Turisten',
+        'text' => 'Två lag utmanar varandra med hjälp av Cody–Roby-korten. Målet är att vara först med att hitta den instruktionssekvens som visar turisten vägen till de monument som hon vill besöka på spelplanen.',
+        'material' => 'Större kort kan användas om du vill spela på golvet',
+
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'F1. Vilken instruktionssekvens skulle leda turisten fram till statyn av Rafael i det första exemplet i videon?',
+                    2 => 'F2. Vilken instruktionssekvens skulle leda turisten fram till Torricini i hertigens palats i det andra exemplet i videon?',
+                    3 => 'F3. Kan du komma på ett roligt sätt att inkludera något slags fysisk aktivitet varje gång ett av de två lagen drar ett kort att lägga till i programmet? Kom på ett sätt genom att ändra på den stafett som visas i videon',
+                ]
+
+        ]
+
+    ],
+
     'texts' => [
         1 => 'Coding@Home är en samling korta videor, gör det själv-material, kluriga övningar, spel och kodningsutmaningar för vardagsbruk både hemma och i skolan. Man behöver inga tidigare kunskaper eller elektronisk utrustning för att göra aktiviteterna. Uppgifterna uppmuntrar till datorförståelse och övar kompetensen hos elever, föräldrar och lärare hemma eller i skolan.',
         2 => 'EU:s serie Code Week Coding@Home bygger på initiativet <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> från universitetet i Urbino och CodeMOOCnet Association i samarbete med Rai Cultura. Alessandro Bogliolo är professor i informationssystem på universitetet i Urbino, tillika <a href="/ambassadors?country_iso=IT" target="_blank">Italiens ambassadör för EU Code Week</a> och han koordinerar alla ambassadörer och är styrelsemedlem i Governing Board of the Digital Skills and Jobs Coalition. ',
