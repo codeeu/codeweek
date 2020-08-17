@@ -91,6 +91,69 @@ return [
 
     ],
 
+    'walk-as-long-as-you-can' => [
+        'title' => 'Menj a lehető legmesszebb!',
+        'text' => 'Ennek a játéknak az a lényege, hogy a játékosok a lehető legtovább a táblán maradjanak, lábnyomok helyett színeket használva. A feladat egyre nehezebb lesz, ahogy nő a lépési lehetőségek száma',
+        'coloured-cards' => "színes kártyák vagy piros, sárga és szürke filctollak",
+        'questions' => [
+            'content' =>
+                [
+                    1 => '1. kérdés Mikor keresztezi és akadályozza egymást a két útvonal?',
+                    2 => '2. kérdés A játékot két játékos segítségével mutattuk be. Lehetséges lenne 3 vagy 4 játékossal játszani? Meg kellene változtatni ehhez a szabályokat?',
+                ]
+
+        ]
+
+    ],
+
+    'ada-charles-roby' => [
+        'title' => 'Ada, Charles és Roby',
+        'text' => 'Ada Lovelace és Charles Babbage története rendkívül érdekes. Számítógépeket álmodtak meg és programoztak száz évvel azelőtt, hogy azokat valóban feltalálták volna',
+        'material' => 'gyurma és egy rövid ceruza',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '1. kérdés Képzeld el, hogy a robot, amelyet a gyurmából és a ceruzából készítettél, képes mozogni a táblán, bármilyen pozíciót fel tud venni, és szükség esetén vissza tudja követni az útvonalát. Milyen utasításokat használnál a programozásához?'
+                ]
+
+        ]
+
+    ],
+
+    'cody-and-roby' => [
+        'title' => 'Cody és Roby',
+        'text' => 'A CodyRoby egy szerepjáték, amelyben Cody, a programozó, és Roby, a robot vesznek részt. A videóban bemutatjuk a CodyRoby kártyákat, amelyek a táblán való mozgás irányítására szolgálnak. Cody ezeket a kártyákat használva fog utasításokat adni Roby-nak a táblán való mozgáshoz',
+        'material' => 'négyzethálós tábla címkékkel, utasítást adó kártyák (bal, jobb, előre) és bármilyen felület, amelyre a táblát el lehet helyezni',
+        'starter-kit' => 'CodyRoby kezdőkészlet',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '1. kérdés Hova érkezik meg Roby, ha a C2-es mezőből, dél felé fordulva kezdi meg a videóban bemutatott utolsó utasításszekvencia végrehajtását?',
+                    2 => '2. kérdés Leírható a CodyFeet nevű, lábnyomos, illetve a CodyColor nevű, színes lapkák táblára helyezése által Roby mozgása, ha az a videóban bemutatott utolsó utasításszekvenciának megfelelően történik?',
+                    3 => '3. kérdés A videóban bemutatott három utasítástípus – amelyeket a zöld, piros és sárga kártyák jelképeznek – együttesen olyan utasításkészletet alkot, amelyet használva Roby a tábla bármely pontjára eljuttatható. Össze tudsz állítani egy olyan utasításkészletet, amely kevesebb mint 3 utasításból áll, és alkalmas ugyanerre?',
+                ]
+
+        ]
+
+    ],
+
+    'the-tourist' => [
+        'title' => 'A turista',
+        'text' => 'Két csapat verseng egymással azzal a céllal, hogy a CodyRoby kártyákból a lehető legrövidebb idő alatt összeállítsa azt az utasításszekvenciát, amellyel elvezetheti a turistát a meglátogatni kívánt nevezetességhez',
+        'material' => 'Ha a padlón játszotok, érdemes nagyobb kártyákat használnotok',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '1. kérdés Milyen utasításszekvenciával vezethetjük el a turistát a videó második példája szerint a Raffaello szoborhoz?',
+                    2 => '2. kérdés Milyen utasításszekvenciával vezethetjük el a turistát a videó első példája szerint a Torricinihez, azaz a hercegi palota homlokzatához?',
+                    3 => '3. kérdés Hogyan lehetne szórakoztatóbbá tenni a játéknak azt a részét, amikor az egyik csapat új kártyával egészíti ki a programot? Találj ki egy feladatot a videóban bemutatott váltóverseny újragondolásával',
+                ]
+
+        ]
+
+    ],
+
+
     'texts' => [
         1 => 'A Coding@Home rövid videók, „csináld magad” anyagok, rejtvények és programozási kihívások gyűjteménye családok és iskolák számára, mindennapos használatra. A tevékenységekhez nincs szükség semmilyen előzetes tudásra vagy elektronikus eszközre. A tevékenységek ösztönzik az algoritmikus gondolkodást és fejlesztik a diákok, szülők és tanárok készségeit, otthon és az iskolában.',
         2 => 'Az európai programozási hét Coding@Home sorozata az Urbinói Egyetem és a CodeMOOCnet Association által a Rai Culturával együttműködésben indított <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> kezdeményezésre épül. Alessandro Bogliolo, az Urbinói Egyetem információfeldolgozási rendszerekkel foglalkozó professzora az <a href="/ambassadors?country_iso=IT" target="_blank">európai programozási hét olasz nagykövete</a>, valamennyi nagykövet koordinátora, valamint a Digitális készségekkel és munkahelyekkel foglalkozó koalíció igazgatótanácsának tagja. ',

@@ -91,6 +91,69 @@ return [
 
     ],
 
+    'walk-as-long-as-you-can' => [
+        'title' => 'Hodi čim dlje',
+        'text' => 'Cilj te igre je, da čim dlje ostaneš na igralni plošči, tako da namesto stopinj uporabljaš barve. Z več svobode gibanja se težavnost igre stopnjuje.',
+        'coloured-cards' => "barvni kartončki ali rdeči, rumeni in sivi flomaster",
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'V1: Kdaj se poti križata in druga drugo blokirata?',
+                    2 => 'V2: Igra je predstavljena kot igra za dve osebi. Ali je igro mogoče igrati s 3 ali 4 igralci? Ali je treba pravila igre spremeniti?',
+                ]
+
+        ]
+
+    ],
+
+    'ada-charles-roby' => [
+        'title' => 'Ada, Charles in Roby',
+        'text' => 'Zgodba Ade Lovelace in Charlesa Babbagea je zelo zanimiva. Računalnike sta zasnovala in programirala že sto let, preden so bili izumljeni',
+        'material' => 'glina in kratek svinčnik',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'V1: Predstavljaj si, da se robot, ki si ga izdelal iz gline za modeliranje in svinčnika, premika po igralni plošči in da lahko doseže katero koli točko ter, če je treba, označi opravljeno pot. S katerimi ukazi bi ga programiral/-a?'
+                ]
+
+        ]
+
+    ],
+
+    'cody-and-roby' => [
+        'title' => 'Cody in Roby',
+        'text' => 'To je igra vlog, v kateri sodelujeta programer Cody in robot Roby. V videoposnetku so predstavljeni kartončki CodyRoby, ki jih bomo odslej uporabljali za določanje premikov po igralni plošči. Cody z uporabo kartončkov Robyju daje ukaze za premikanje po igralni plošči',
+        'material' => 'igralna plošča z oznakami, kartončki z ukazi (levo, desno, naravnost) in žetoni, ki jih postavimo na igralno ploščo',
+        'starter-kit' => 'Začetni paket CodyRoby',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'V1: Kam prispe Roby, če se obrnjen proti jugu nahaja na poziciji C2 in izvrši zadnje zaporedje ukazov, prikazano v videoposnetku?',
+                    2 => 'V2: Ali bi lahko premike, ki jih Roby izvede na podlagi zadnjega zaporedja ukazov, prikazanega v videoposnetku, opisali z uporabo ukazov CodyFeet in CodyColor na igralni plošči?',
+                    3 => 'V3: Barvni kartončki zelene, rdeče in rumene barve sestavljajo nabor treh vrst ukazov, ki si jih spoznal v videoposnetku, s katerimi lahko Robyja pripeljemo do katere koli točke na igralni plošči. Ali lahko oblikuješ nabor ukazov, sestavljen iz manj kot 3 ukazov, s katerim bi dosegel isto?',
+                ]
+
+        ]
+
+    ],
+
+    'the-tourist' => [
+        'title' => 'Turist',
+        'text' => 'Od dveh ekip, ki tekmujeta med seboj, zmaga tista, ki s pomočjo kartončkov CodyRoby v najkrajšem možnem času oblikuje zaporedje ukazov, ki bo turista pripeljalo do želenih znamenitosti na igralni plošči',
+        'material' => 'Večji kartončki so primerni za igro na tleh',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'V1: Katero zaporedje ukazov bi turista v prvem primeru, prikazanem v videoposnetku, pripeljalo do Rafaelovega spomenika?',
+                    2 => 'V2: Katero zaporedje ukazov bi turista v drugem primeru, prikazanem v videoposnetku, pripeljalo do vogalnih stolpičev Vojvodske palače?',
+                    3 => 'V3: Ali se lahko domisliš zabavnega načina telesne vadbe, ki jo morata ekipi opraviti vsakič, ko izbereta dodatni kartonček za program? Pomisli na štafeto, prikazano v videoposnetku, in poišči rešitev',
+                ]
+
+        ]
+
+    ],
+
+
     'texts' => [
         1 => 'Coding@Home je zbirka kratkih videov, gradiv za »naredi-si-sam«, ugank, iger in izzivov s področja programiranja za vsakdanjo uporabo doma in v šoli. Za izvajanje aktivnosti ne potrebujete predhodnega znanja ali elektronskih naprav. Spodbujale bodo računalniško razmišljanje in razvijale veščine učencev, staršev in učiteljev tako doma kot v šoli.',
         2 => 'Serija Coding@Home evropskega tedna programiranja gradi na pobudi <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> Univerze v Urbinu in Zveze CodeMOOCnet v sodelovanju s programom Rai Cultura. Alessandro Bogliolo je profesor za sisteme za obdelavo podatkov na Univerzi v Urbinu, <a href="/ambassadors?country_iso=IT" target="_blank">ambasador italijanskega evropskega tedna programiranja</a> in koordinator vseh ambasadorjev ter član upravnega odbora Koalicije za digitalne veščine in delovna mesta. ',

@@ -91,6 +91,69 @@ return [
 
     ],
 
+    'walk-as-long-as-you-can' => [
+        'title' => 'Marchez aussi longtemps que vous le pouvez',
+        'text' => 'Dans le cadre de cette activité, le défi consiste à rester le plus longtemps possible sur le plateau de jeu en utilisant des couleurs à la place des empreintes. L’activité devient plus difficile à mesure que les possibilités de déplacement augmentent',
+        'coloured-cards' => "des cartes de couleur, ou des balises rouges, jaunes et grises",
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. Quand les deux parcours se rencontrent-ils et se bloquent-ils l’un l’autre?',
+                    2 => 'Q2. Ce jeu est-il présenté comme un jeu à deux joueurs? Est-il possible d’y jouer à trois ou quatre joueurs? Faut-il modifier les règles?',
+                ]
+
+        ]
+
+    ],
+
+    'ada-charles-roby' => [
+        'title' => 'Ada, Charles et Roby',
+        'text' => 'L’histoire d’Ada Lovelace et de Charles Babbage est intéressante. Ils ont conçu et programmé des ordinateurs cent ans avant qu’ils ne soient réellement inventés',
+        'material' => 'de la pâte à modeler et un petit crayon',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. Essayez d’imaginer que le robot que vous avez fabriqué avec de la pâte à modeler et un crayon est capable de se déplacer sur le plateau de jeu pour atteindre n’importe quel emplacement et, si nécessaire, de tracer son parcours. Quelles instructions utiliseriez-vous pour le programmer?'
+                ]
+
+        ]
+
+    ],
+
+    'cody-and-roby' => [
+        'title' => 'Cody et Roby',
+        'text' => 'Il s’agit d’un jeu de rôle avec le programmeur, Cody, et le robot, Roby. La vidéo présente les cartes de CodyRoby, que nous utiliserons désormais pour décider des déplacements sur le plateau de jeu. Cody utilisera ces cartes pour donner à Roby des instructions sur la façon de se déplacer sur le plateau de jeu',
+        'material' => 'un damier avec des étiquettes, des cartes d’instructions (gauche, droite, en avant) et tous les jetons à placer sur le plateau de jeu',
+        'starter-kit' => 'kit de démarrage CodyRoby',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. Où arrive Roby si, à partir de la position C2, face au sud, il exécute la dernière séquence d’instructions de la vidéo?',
+                    2 => 'Q2. Les déplacements que Roby effectue en exécutant la dernière séquence d’instructions de la vidéo pourraient-ils être décrits en appliquant les instructions de CodyFeet ou de CodyColor au plateau de jeu?',
+                    3 => 'Q3. Les trois types d’instructions présentés dans la vidéo, représentés par les cartes vertes, rouges et jaunes, constituent un jeu d’instructions capable de conduire Roby n’importe où sur le plateau. Pouvez-vous trouver un jeu d’instructions comportant moins de trois instructions pour faire la même chose?',
+                ]
+
+        ]
+
+    ],
+
+    'the-tourist' => [
+        'title' => 'Le touriste',
+        'text' => 'Avec les cartes CodyRoby, deux équipes s’affrontent pour trouver, le plus rapidement possible, la séquence d’instructions qui guidera le touriste vers les monuments qu’il veut visiter sur le plateau de jeu',
+        'material' => 'De plus grandes cartes peuvent être utiles pour jouer sur le sol',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. Quelle séquence d’instructions guiderait le touriste vers la statue de Raphaël dans le premier exemple de la vidéo?',
+                    2 => 'Q2. Quelle séquence d’instructions guiderait le touriste vers les tourelles du palais ducal dans le second exemple de la vidéo?',
+                    3 => 'Q3. Pouvez-vous imaginer une façon amusante de faire de l’exercice à chaque fois que l’une des deux équipes choisit une carte à ajouter au programme? Inventez-en une en repensant la course de relais montrée dans la vidéo',
+ ]
+
+        ]
+
+    ],
+
+
 
     'texts' => [
         1 => 'Coding@Home propose une série de courtes vidéos, de matériel de bricolage, de puzzles, de jeux et de défis de codage pour une utilisation quotidienne en famille et à l’école. Pas besoin de connaissances préalables ou d’appareils électroniques pour réaliser ces activités. Les activités stimuleront la réflexion informatique et cultiveront les compétences des élèves, des parents et des enseignants à la maison ou en milieu scolaire.',

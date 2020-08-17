@@ -86,11 +86,13 @@
                 </div>
 
                 <div class="codeweek-card-grid">
-                    <a href="{{route('codingathome-ada-charles-roby')}}">
-                        <img src="/img/codingathome/7.jpg">
-                        <div class="title"
-                             style="text-align:center">@lang('coding-at-home.ada-charles-roby.title')</div>
-                    </a>
+{{--                    <a href="{{route('codingathome-ada-charles-roby')}}">--}}
+{{--                    <a href="#">--}}
+                        <img src="/img/codingathome/7.jpg" style=" opacity: 0.4;filter: alpha(opacity=40);">
+{{--                        <div class="title"--}}
+{{--                             style="text-align:center">@lang('coding-at-home.ada-charles-roby.title')</div>--}}
+{{--                    </a>--}}
+                    <div class="text-center text-xl title">@lang('coding-at-home.ada-charles-roby.title')<br/>(Coming soon)</div>
                 </div>
 
                 <div class="codeweek-card-grid">
