@@ -41,6 +41,7 @@
     </script>
 
 
+
     <!-- Title, keywords, description -->
     <meta name="description"
           content="October 10 - 25, 2020: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding."/>
@@ -57,6 +58,7 @@
 
 <!-- Document Wrapper -->
 <div id="app">
+
     @include('cookieConsent::index')
 
     @if((Request::is('hackathons/*')))
