@@ -91,6 +91,69 @@ return [
 
     ],
 
+    'walk-as-long-as-you-can' => [
+        'title' =>'Imxi sakemm tista',
+        'text' => "F’din l-attività l-isfida hija li tibqa' kemm jista' jkun fuq il-bord bl-użu ta' kuluri minflok marki tas-sieq. L-attività ssir aktar diffiċli aktar ma tiżdied il-libertà tal-moviment",
+        'coloured-cards' => "kards ikkuluriti, jew markaturi ħomor, sofor u griżi",
+        'questions' => [
+    'content' =>
+        [
+            1 => 'M1. Meta ż-żewġ toroq jaħbtu u jimblukkaw lil xulxin?',
+            2 => "M2. Din il-logħba hija ppreżentata bħala logħba b'żewġ parteċipanti? Tista’ tintlagħab minn tlieta jew erba’ parteċipanti? Ikollna nibdlu r-regoli?",
+                ]
+
+        ]
+
+    ],
+
+    'ada-charles-roby' => [
+        'title' => 'Ada, Charles u Roby',
+        'text' => 'L-istorja ta’ Ada Lovelace u Charles Babbage hija waħda interessanti. Dawn ħolqu u pprogrammaw kompjuters mitt sena qabel ma fil-fatt ġew ivvintati',
+        'material' => 'tafal artab u lapes qasir',
+        'questions' => [
+    'content' =>
+        [
+            1 => "M1. Ippruvaw immaġinaw li r-robot li bnejtu bit-tafal artab u b’lapes huwa kapaċi jiċċaqlaq fuq il-bord sabiex jasal fi kwalunkwe pożizzjoni u, jekk ikun meħtieġ, jerġa' jsib it-triq tiegħu. Xi struzzjonijiet tużaw biex tipprogrammawh?"
+                ]
+
+        ]
+
+    ],
+
+    'cody-and-roby' => [
+        'title' => 'Cody u Roby',
+        'text' => "Din hija logħba ta' rwoli bil-programmatur, Cody u r-robot, Roby. Il-vidjow jintroduċi l-kards ta' CodyRoby li se nużaw minn issa 'l quddiem biex naraw fejn se nimxu fuq il-bord. Cody se juża dawn il-kards biex jagħti struzzjonijiet lil Roby dwar kif għandu jimxi fuq il-bord",
+        'material' => "bord iċċangjat bit-tikketti, kards bl-istruzzjonijiet (xellug, lemin, 'il quddiem), u markaturi li jitpoġġew fuq il-bord",
+        'starter-kit' => 'Kitt biex tibda l-logħba CodyRoby',
+        'questions' => [
+            'content' =>
+                [
+                    1 => "M1. Fejn jasal Roby jekk, mill-pożizzjoni C2 fid-direzzjoni tan-Nofsinhar, isegwi l-aħħar sekwenza ta' struzzjonijiet murija fil-vidjow?",
+                    2 => "M2. Il-movimenti li Roby jagħmel billi jsegwi l-aħħar sekwenza ta’ struzzjonijiet murija fil-vidjow, jistgħu jiġu deskritti billi jiġu applikati l-istruzzjonijiet ta' CodyFeet jew CodyColor għall-bord?",
+                    3 => "M3. It-tliet tipi ta' struzzjonijiet introdotti fil-vidjow, irrappreżentati mill-kards ħodor, ħomor u sofor, huma sett ta' struzzjonijiet li kapaċi jmexxu lil Roby fi kwalunkwe post fuq il-bord. Tistgħu toħorġu b'sett ta' struzzjonijiet b'inqas minn tliet struzzjonijiet li jagħmlu l-istess ħaġa?",
+                ]
+
+        ]
+
+    ],
+
+    'the-tourist' => [
+    'title' => 'It-turist',
+    'text' => "Bil-kards CodyRoby, żewġ timijiet jisfidaw lil xulxin biex isibu, fl-iqsar żmien possibbli, is-sekwenza ta' struzzjonijiet li se jiggwidaw lit-turist sal-monumenti li jixtieq iżur fuq il-bord",
+        'material' => "B'kards akbar il-logħba tkun tista' tintlagħab mal-art",
+        'questions' => [
+    'content' =>
+        [
+            1 => "M1. Liema sekwenza ta' struzzjonijiet tiggwida lit-turist sal-Istatwa ta' Raffaello fl-ewwel eżempju muri fil-vidjow?",
+                    2 => "M2. Liema sekwenza ta' struzzjonijiet tiggwida lit-turist sat-Torricini tal-Palazz Dukali fit-tieni eżempju muri fil-vidjow?",
+                    3 => "M3. Tistgħu taħsbu f'mod divertenti biex tagħmlu xi eżerċizzju kull darba li wieħed miż-żewġ timijiet jagħżel kard biex iżidha mal-programm? Ivvintaw mod billi tirrevedu t-tellieqa relay murija fil-vidjow",
+                ]
+
+        ]
+
+    ],
+
+
     'texts' => [
         1 => '“Coding@Home” huma vidjows qosra b’materjal do-it-yourself, logħob ta’ taħbil il-moħħ, logħob interessanti, u sfidi tal-ikkowdjar għall-użu ta’ kuljum fil-familja kif ukoll fl-iskola. Mhu meħtieġ ebda għarfien minn qabel tal-ikkowdjar, u lanqas apparat elettroniku sabiex twettaq l-attivitajiet. L-attivitajiet se jistimulaw il-ħsieb komputazzjonali u se jikkultivaw il-ħiliet tal-istudenti, tal-ġenituri u tal-għalliema fid-dar jew fl-iskola.',
         2 => 'Is-serje Coding@Home tal-Ġimgħa tal-UE tal-Ikkowdjar tibni fuq l-inizjattiva <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> tal-Università ta’ Urbino u l-CodeMOOCnet Association f’kollaborazzjoni ma’ Rai Cultura. L-attivitajiet huma ppreżentati minn Alessandro Bogliolo li huwa l-Professur tas-Sistemi tal-Ipproċessar tal-Informazzjoni fl-Università ta’ Urbino, l-<a href="/ambassadors?country_iso=IT" target="_blank">ambaxxatur tal-Ġimgħa tal-UE tal-Ikkowdjar għall-Italja</a>, u l-koordinatur tal-ambaxxaturi kollha kif ukoll membru tal-Bord Governattiv tal-Koalizzjoni għall-Ħiliet u l-Impjiegi Diġitali.',

@@ -91,6 +91,69 @@ return [
 
     ],
 
+    'walk-as-long-as-you-can' => [
+        'title' => 'Idi što dalje',
+        'text' => 'Cilj ove aktivnosti je da se što duže ostane na tabli pomoću boja umesto otisaka stopala. Ova aktivnost postaje sve teža kako se sloboda kretanja uvećava',
+        'coloured-cards' => "obojene karte ili crveni, žuti i sivi markeri",
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'P1. Kada se dve putanje ukrštaju i blokiraju jedna drugu?',
+                    2 => 'P2. Rečeno je da je ovo igra za dva igrača. Da li mogu da je igraju 3 ili 4 igrača? Da li onda moramo da promenimo pravila?',
+                ]
+
+        ]
+
+    ],
+
+    'ada-charles-roby' => [
+        'title' => 'Ejda, Čarls i Robi',
+        'text' => 'Priča o Ejdi Lavlejs i Čarlsu Bebidžu veoma je zanimljiva. Oni su zamislili i programirali računare sto godina pre izuma pravih računara',
+        'material' => 'plastelin i kraća drvena olovka',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'P1. Pokušajte da zamislite da vaš robot od olovke u plastelinu može da se kreće po tabli da bi stigao do bilo kog polja i da, po potrebi, ide svojim putem. Koje naredbe biste mu davali da ga programirate?'
+                ]
+
+        ]
+
+    ],
+
+    'cody-and-roby' => [
+        'title' => 'Kodi i Robi',
+        'text' => 'Ovo je igra uloga u kojoj učestvuju programer Kodi i robot Robi. Ovaj video pokazuje karte iz seta Kodi i Robi koje ćemo od sada koristiti za određivanje pokreta na tabli. Kodi će ovim kartama davati naredbe Robiju kako da se pomera na tabli',
+        'material' => 'izdeljena tabla sa oznakama, karte sa naredbama (levo, desno, pravo) i svi predmeti koji treba da se postave na tablu',
+        'starter-kit' => 'Početni set Kodi i Robi',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'P1. Gde će Robi da stigne ako, počev sa polja C2 i okrenut ka jugu, prati poslednji niz naredbi iz videa?',
+                    2 => 'P2. Mogu li se kretnje koje Robi izvodi dok prati poslednji niz naredbi iz videa opisati tako što ćemo postaviti naredbe, tj. Kodijeva stopala ili Kodijeve boje na tablu?',
+                    3 => 'P3. Tri vrste naredbi koje smo predstavili u videu u vidu zelenih, crvenih i žutih karata, čine skup naredbi koje Robija mogu da odvedu na bilo koje mesto na tabli. Možete li da osmislite set naredbi koji će moći da postigne isto to, ali sa manje od 3 naredbe?',
+                ]
+
+        ]
+
+    ],
+
+    'the-tourist' => [
+        'title' => 'Turista',
+        'text' => 'Dva tima pokušavaju da izazovu protivnika da za najkraće moguće vreme pronađe niz naredbi na kartama iz seta Kodi i Robi koje će turistu odvesti do spomenika koji želi da poseti na tabli',
+        'material' => 'Veće karte mogu biti zgodne za igru na podu',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'P1. Koji niz naredbi će dovesti turistu do Rafaelove statue iz prvog primera koji je prikazan u videu?',
+                    2 => 'P2. Koji niz naredbi će dovesti turistu do fasade Torićini na Duždevoj palati iz drugog primera koji je prikazan u videu?',
+                    3 => 'P3. Možete li da smislite neki zabavan način da uradite neke fizičke vežbe svaki put kada jedan od dva tima izabere kartu koju će dodati u program? Smislite nešto tako što ćete ponovo promisliti o štafetnoj trci prikazanoj u videu',
+                ]
+
+        ]
+
+    ],
+
+
     'texts' => [
         1 => 'Coding@Home është një koleksion i videove të shkurtra, modeleve që i bëni vetë, gjëegjëzave, lojërave dhe sfidave të kodimit për përdorim të përditshëm në familje, si dhe në shkollë. Ju nuk duhet të keni njohuri të mëparshme ose pajisje elektronike për të kryer aktivitetet. Aktivitetet stimulojnë mendimin llogaritës dhe kultivojnë aftësitë e nxënësve, prindërve dhe mësuesve në shtëpi ose në shkollë.',
         2 => 'Seria Coding@Home e EU Code Week bazohet në iniciativës <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> të Universitetit të Urbinos dhe Shoqatës CodeMOOCnet në bashkëpunim me Rai Cultura. Alessandro Bogliolo është Profesori i Sistemeve të Përpunimit të Informacionit në Universitetin e Urbinos, <a href="/ambassadors?country_iso=IT" target="_blank">Ambasador i EU Code Week</a> dhe koordinator i të gjithë ambasadorëve si dhe anëtar i Bordit Drejtues të Koalicionit të Aftësive Dixhitale dhe Punës. ',

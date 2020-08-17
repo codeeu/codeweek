@@ -91,6 +91,69 @@ return [
 
     ],
 
+    'walk-as-long-as-you-can' => [
+        'title' => 'Mergi cât poți de mult',
+        'text' => 'În această activitate, provocarea este să rămâi cât mai mult pe tablă,  folosind culori în loc de urme de pași. Activitatea devine mai dificilă când crește libertatea de mișcare',
+        'coloured-cards' => "jetoane colorate sau markere roșii, galbene și gri",
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. Când se intersectează și se blochează cele două traiectorii?',
+                    2 => 'Q2. Acest joc e prezentat ca joc cu doi jucători. E posibil să fie jucat în 3 sau în 4? Trebuie să schimbăm regulile?',
+                ]
+
+        ]
+
+    ],
+
+    'ada-charles-roby' => [
+        'title' => 'Ada, Charles și Roby',
+        'text' => 'Ada Lovelace și Charles Babbage au o poveste interesantă. Ei au conceput și au programat calculatoare cu o sută de ani înainte ca ele să fie inventate',
+        'material' => 'plastilină și un creion scurt',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. Încearcă să-ți imaginezi că robotul pe care l-ai construit din plastilină și un creion poate să se miște pe tablă ca să ajungă în orice poziție și, la nevoie, să își traseze traiectoria. Ce instrucțiuni ai folosi pentru a-l programa?'
+                ]
+
+        ]
+
+    ],
+
+    'cody-and-roby' => [
+        'title' => 'Cody și Roby',
+        'text' => 'Acesta este un joc de roluri cu un programator, Cody, și un robot, Roby. Clipul prezintă cartonașele CodyRoby, pe care le vom folosi de acum înainte pentru a determina mutările pe tablă. Cody va folosi aceste cartonașe pentru a-i da lui Roby instrucțiuni ca să se miște pe tablă',
+        'material' => 'tablă cu pătrățele și etichete, cartonașe cu instrucțiuni (stânga, dreapta, înainte) și contoarele de pus pe tablă',
+        'starter-kit' => 'kitul de început CodyRoby',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. Unde ajunge Roby dacă, pornind din poziția C2 îndreptat spre sud, execută ultima secvență de instrucțiuni arătată în clip?',
+                    2 => 'Q2. Se pot descrie mișcările făcute de Roby prin executarea ultimei secvențe de instrucțiuni arătate  în clip prin aplicarea instrucțiunilor CodyFeet sau CodyColor pe tablă?',
+                    3 => 'Q3. Cele trei tipuri de instrucțiuni introduse în clip, reprezentate de cartonașele verzi, roșii și galbene, reprezintă un set de instrucțiuni cu care Roby poate ajunge oriunde pe tablă. Poți inventa un set de instrucțiuni cu mai puțin de 3 instrucțiuni pentru același scop?',
+                ]
+
+        ]
+
+    ],
+
+    'the-tourist' => [
+        'title' => 'Turistul',
+        'text' => 'Cu cartonașele CodyRoby, cele două echipe se întrec în a găsi în cel mai scurt timp ssecvența de instrucțiuni care vor duce turistul la monumentele pe care vrea să le viziteze pe tablă',
+        'material' => 'Cu cartonașe mai mari se poate juca pe podea',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. Ce secvență de instrucțiuni ar duce turistul la statuia lui Rafael din primul exemplu arătat în clip?',
+                    2 => 'Q2. Ce secvență de instrucțiuni ar duce turistul la fațada Torricini a Palatului Ducal în al doilea exemplu arătat în clip?',
+                    3 => 'Q3. Te poți gândi la un mod amuzant de a face mișcare de fiecare dată când o echipă alege un cartonaș pentru a-l adăuga la program? Inventează o modalitate regândind cursa cu ștafetă arătată în clip',
+ ]
+
+        ]
+
+    ],
+
+
     'texts' => [
         1 => '„Coding@Home” însumează scurte videoclipuri cu materiale de tipul „fă singur”, puzzle-uri, jocuri antrenante și competiții de programare pentru activități zilnice atât în familie, cât și la școală. Nu aveți nevoie de cunoștințe inițiale de programare și nici de dispozitive electronice pentru aceste activități. Activitățile vor stimula gândirea computațională și vor dezvolta abilitățile elevilor, părinților și profesorilor acasă sau la școală.',
         2 => 'Seria Coding@Home  din cadrul Săptămânii UE a programării s-a dezvoltat având la bază inițiativa <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> a Universității din Urbino și a Asociației CodeMOOCnet, în colaborare cu Rai Cultura. Activitățile sunt prezentate de Alessandro Bogliolo, profesor de sisteme computerizate la Universitatea din Urbino, <a href="/ambassadors?country_iso=IT" target="_blank">ambasador al Italiei la Săptămâna UE a programării</a> și coordonator al tuturor ambasadorilor, precum și membru al Consiliului director al Coaliției pentru aptitudini și locuri de muncă digitale. ',

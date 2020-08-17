@@ -91,6 +91,71 @@ return [
 
     ],
 
+    'walk-as-long-as-you-can' => [
+        'title' => "Cammina più che puoi",
+        'text' => "In questa attività la sfida consiste nel rimanere sulla scacchiera il più a lungo possibile, utilizzando i colori anziché le impronte. L'attività diventa più difficile quando la libertà di movimento aumenta",
+        'coloured-cards' => "carte colorate, o pennarelli rossi, gialli e grigi",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Quando i due percorsi si incontrano e si bloccano l'un l'altro?",
+                    2 => "Q2. Questo gioco è adatto per due giocatori? È possibile giocare in tre o in quattro? Dobbiamo cambiare le regole?",
+                ]
+
+        ]
+
+    ],
+
+    'ada-charles-roby' => [
+        'title' => "Ada, Charles e Roby",
+        'text' => "La storia di Ada Lovelace e Charles Babbage è davvero interessante. Essi progettarono e programmarono dei computer un centinaio di anni prima della loro effettiva invenzione",
+        'material' => "creta per modellare e una matita corta",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Provate a immaginare che il robot che avete costruito con la creta per modellare e una matita possa spostarsi sulla scacchiera per raggiungere qualsiasi posizione e, se necessario, tracciare il proprio percorso. Quali istruzioni usereste per programmarlo?"
+                ]
+
+        ]
+
+    ],
+
+    'cody-and-roby' => [
+        'title' => "Cody e Roby",
+        'text' => "Si tratta di un gioco di ruolo con il programmatore, Cody, e il robot, Roby. Il video introduce le carte di CodyRoby, che utilizzeremo da questo momento per determinare i movimenti sulla scacchiera. Cody utilizzerà queste carte per dare istruzioni a Roby e farlo muovere sulla scacchiera",
+        'material' => "scacchiera con etichette, carte con le istruzioni (sinistra, destra e avanti) ed eventuali contatori da mettere sulla scacchiera",
+        'starter-kit' => "Kit iniziale CodyRoby",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Dove arriva Roby se, partendo dalla casella C2 orientato a sud, esegue l'ultima sequenza di istruzioni mostrata nel video?",
+                    2 => "Q2. I movimenti che Roby esegue secondo l'ultima sequenza di istruzioni mostrata nel video potrebbero essere descritti applicando sulla scacchiera le istruzioni di CodyFeet o CodyColor?",
+                    3 => "Q3. I tre tipi di istruzioni introdotti nel video, e rappresentati dalle carte color verde, rosso e giallo, costituiscono un insieme di istruzioni in grado di guidare Roby ovunque sulla scacchiera. Sei capace di creare un insieme di istruzioni costituito da meno di tre istruzioni per fare la stessa cosa?",
+                ]
+
+        ]
+
+    ],
+
+    'the-tourist' => [
+        'title' => "La turista",
+        'text' => "Con le carte CodyRoby, due squadre si sfidano per trovare, nel più breve tempo possibile, la sequenza di istruzioni che guiderà la turista ai monumenti che desidera visitare",
+        'material' => "carte più grandi possono essere utili per giocare sul pavimento",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Quale sequenza di istruzioni guiderà la turista verso la statua di Raffaello nel primo esempio riportato nel video?",
+                    2 => "Q2. Quale sequenza di istruzioni guiderà la turista verso i Torricini del Palazzo Ducale nel secondo esempio riportato nel video?",
+                    3 => "Q3. Riesci a pensare a un modo divertente per fare esercizio ogni volta che una delle due squadre sceglie una carta da aggiungere al programma? Inventa un metodo ripensando alla staffetta mostrata nel video",
+                ]
+
+        ]
+
+    ],
+
+
+
+
     'texts' => [
         1 => 'Coding in famiglia è una raccolta di brevi video, materiali fai da te, enigmi, giochi e sfide di coding, da usare quotidianamente in famiglia e a scuola. Per svolgere le attività, non occorre avere già conoscenze specifiche né dispositivi elettronici. Le attività intendono stimolare il pensiero computazionale e coltivare le abilità di allievi, genitori e insegnanti, a casa o a scuola.',
         2 => 'La serie Coding in famiglia della Settimana europea della programmazione si basa sull\'iniziativa <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> dell\'Università di Urbino e dell’Associazione CodeMOOCnet, in collaborazione con Rai Cultura. Alessandro Bogliolo è professore di Sistemi per l’elaborazione dell’informazione all’Università di Urbino, <a href="/ambassadors?country_iso=IT" target="_blank">Ambasciatore italiano della Settimana europea della programmazione</a> e coordinatore di tutti gli ambasciatori, nonché membro del Governing Board of the Digital Skills and Jobs Coalition. ',

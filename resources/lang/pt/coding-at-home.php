@@ -91,6 +91,69 @@ return [
 
     ],
 
+    'walk-as-long-as-you-can' => [
+        'title' => 'Caminha enquanto puderes',
+        'text' => 'Nesta atividade, o desafio consiste em permanecer no tabuleiro o máximo de tempo possível utilizando cores em vez de pegadas. A atividade torna-se mais difícil à medida que a liberdade de movimentos aumenta',
+        'coloured-cards' => "peças coloridas ou marcadores vermelhos, amarelos e cinzentos",
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'P1. Em que circunstâncias é que os dois caminhos se cruzam e se bloqueiam mutuamente?',
+                    2 => 'P2. Este jogo é apresentado como um jogo para dois jogadores. É possível jogá-lo a 3 ou 4 jogadores? É necessário alterar as regras?',
+                ]
+
+        ]
+
+    ],
+
+    'ada-charles-roby' => [
+        'title' => 'Ada, Charles e Roby',
+        'text' => 'A história de Ada Lovelace e Charles Babbage é interessante. Eles criaram e programaram computadores cem anos antes de estes terem sido inventados.',
+        'material' => 'plasticina e um pequeno lápis',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'P1. Imagina que o robô que construíste com plasticina e um lápis pode mover-se através do tabuleiro para chegar a qualquer posição e, se necessário, traçar o seu caminho. Que instruções utilizarias para o programar?'
+                ]
+
+        ]
+
+    ],
+
+    'cody-and-roby' => [
+        'title' => 'Cody e Roby',
+        'text' => 'Este é um jogo de simulação com o programador, Cody, e o robô, Roby. O vídeo apresenta as cartas do CodyRoby, que utilizaremos a partir de agora para determinar os movimentos no tabuleiro. O Cody utilizará estas cartas para dar instruções ao Roby sobre a forma de se mover no tabuleiro.',
+        'material' => 'tabuleiro quadriculado com legendas, cartas de instruções (esquerda, direita, em frente) e obstáculos a colocar no tabuleiro',
+        'starter-kit' => 'kit de iniciação CodyRoby',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'P1. Onde chega o Roby se, a partir da posição C2 e virado para o Sul, executar a última sequência de instruções indicadas no vídeo?',
+                    2 => 'P2. Os movimentos que o Roby faz ao seguir a última sequência de instruções apresentada no vídeo poderiam ser descritos aplicando as instruções do CodyFeet ou do CodyColor ao tabuleiro?',
+                    3 => 'P3. Os três tipos de instruções introduzidas no vídeo, representados pelas cartas verdes, vermelhas e amarelas, constituem um conjunto de instruções capaz de conduzir o Roby até qualquer ponto do tabuleiro. Consegues pensar numa forma de fazer o mesmo com um conjunto de menos de 3 instruções?',
+                ]
+
+        ]
+
+    ],
+
+    'the-tourist' => [
+        'title' => 'O/A turista',
+        'text' => 'Duas equipas utilizam as cartas CodyRoby para formar o mais rapidamente possível a sequência de instruções que guiarão a turista através do tabuleiro até ao monumento que ela pretende visitar.',
+        'material' => 'Pode ser útil utilizar cartas maiores para jogar no chão',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'P1. Que sequência de instruções guiaria a turista até à estátua de Rafael no primeiro exemplo apresentado no vídeo?',
+                    2 => 'P2. Que sequência de instruções guiaria a turista até às Torricini do Palácio Ducal no segundo exemplo apresentado no vídeo?',
+                    3 => 'P3. Consegues pensar num exercício divertido para fazer cada vez que uma equipa escolhe uma carta para acrescentar ao programa? Inventa um inspirando-te na corrida de estafetas apresentada no vídeo',
+                ]
+
+        ]
+
+    ],
+
+
     'texts' => [
         1 => 'A Coding@Home é uma coleção de vídeos curtos, materiais do tipo «faça-você-mesmo», quebra-cabeças, jogos e desafios de programação para o dia a dia em família bem como na escola. Não necessita de conhecimentos prévios nem de dispositivos eletrónicos para realizar as atividades. As atividades irão estimular o pensamento computacional e cultivar as competências dos alunos, dos pais e dos professores em casa ou na escola.',
         2 => 'A série Coding@Home da Semana Europeia da Programação tem por base a iniciativa <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> da Universidade de Urbino e a CodeMOOCnet Association em cooperação com a Rai Cultura. Alessandro Bogliolo é professor de Sistemas de Processamento de Informação na Universidade de Urbino, <a href="/ambassadors?country_iso=IT" target="_blank">embaixador italiano da Semana Europeia da Programação</a>, coordenador de todos os embaixadores e membro do conselho de administração da Digital Skills and Jobs Coalition. ',

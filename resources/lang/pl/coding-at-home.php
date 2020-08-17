@@ -91,6 +91,68 @@ return [
 
     ],
 
+    'walk-as-long-as-you-can' => [
+        'title' => ' Idź tak długo, jak możesz',
+        'text' => "Celem tego zadania jest pozostanie jak najdłużej na planszy przy użyciu kolorów zamiast śladów stóp. Zadanie staje się trudniejsze, w miarę jak zwiększa się swoboda ruchów.
+kolorowe karty lub czerwony, żółty i szary pisak",
+        'questions' => [
+            'content' =>
+                [
+                    1 => ' Pytanie 1. Kiedy dwie ścieżki krzyżują się ze sobą i blokują się nawzajem?',
+                    2 => ' Pytanie 2. Czy ta gra została zaprezentowana jako gra dla dwóch graczy? Czy można w nią grać w 3 lub 4 osoby? Czy musimy wtedy zmienić zasady gry?',
+                ]
+
+        ]
+
+    ],
+
+    'ada-charles-roby' => [
+        'title' => 'Ada, Charles i Roby',
+        'text' => "Historia Ady Lovelace i Charlesa Baggage'a jest bardzo interesująca. Wymyślili oni i zaprogramowali komputery sto lat przed ich wynalezieniem.",
+        'material' => 'modelina i krótki ołówek',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Pytanie 1. Spróbuj wyobrazić sobie, że robot, którego zrobiłeś/zrobiłaś z modeliny i ołówka, może poruszać się po planszy, żeby zająć dowolną pozycję. Następnie, w razie potrzeby, wyobraź sobie ścieżkę, jaką robot przejdzie. Jakie instrukcje wykorzystałbyś/wykorzystałabyś, żeby go zaprogramować?'
+                ]
+        ]
+    ],
+
+    'cody-and-roby' => [
+        'title' => 'Cody i Roby',
+        'text' => "Jest to gra z odtwarzaniem ról programisty Cody'ego i robota Roby'ego . W materiale wideo pokazano karty do gry CodyRoby, które od tej pory będą nam służyć do określania ruchów na planszy . Cody będzie używać tych kart, żeby dawać Roby'emu instrukcje, jak ma się poruszać po planszy.",
+        'material' => 'plansza z oznaczonymi polami, karty z instrukcjami(skręt w lewo, skręt w prawo, ruch do przodu) i dowolne pionki, które zostaną umieszczone na planszy',
+        'starter - kit' => 'zestaw startowy CodyRoby',
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Pytanie 1. Gdzie dojdzie Roby, jeżeli wyruszy z pola C2 na południe i wykona ostatni ciąg instrukcji pokazany w materiale wideo ?",
+                    2 => "Pytanie 2. Czy ruchy Roby'ego wykonującego ostatni ciąg instrukcji pokazany w materiale wideo można opisać na planszy przy użyciu instrukcji CodyFeet lub CodyColor?",
+                    3 => "Pytanie 3. Trzy rodzaje instrukcji, które są przedstawione w materiale wideo jako zielona, czerwona i żółta karta, stanowią zestaw instrukcji, za pomocą których można przesunąć Roby'ego w dowolne miejsce na planszy . Czy możesz wymyślić zestaw składający się z mniej niż trzech instrukcji, aby uzyskać ten sam efekt ?",
+                ]
+
+        ]
+
+    ],
+
+    'the-tourist' => [
+        'title' => 'Turysta',
+        'text' => 'Używając kart CodyRoby, dwie drużyny rywalizują ze sobą, starając się wymyślić w jak najkrótszym czasie ciąg instrukcji, za pomocą których turystka dojdzie do zabytków, które chce odwiedzić na planszy.',
+        'material' => 'Większe karty mogą być praktyczne, jeżeli chcesz grać na podłodze.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Pytanie 1. Jaki ciąg instrukcji zaprowadzi turystkę do pomnika Rafaela w pierwszym przykładzie pokazanym w materiale wideo ? ',
+                    2 => 'Pytanie 2. Jaki ciąg instrukcji zaprowadzi turystkę do wież Pałacu Książęcego w drugim przykładzie pokazanym w materiale wideo ? ',
+                    3 => 'Pytanie 3. Czy możesz wymyślić zabawny pomysł na ćwiczenie, które można by dodać do programu i wykonywać za każdym razem, kiedy jedna z drużyn wybiera kartę ? Wymyśl go, analizując jeszcze raz sztafetę pokazaną w materiale wideo . ',
+                ]
+
+        ]
+
+    ],
+
+
+
     'texts' => [
         1 => 'Coding@Home" to zbiór krótkich filmów  z materiałami do samodzielnego wykonania, łamigłówkami, wciągającymi grami i wyzwaniami związanymi z kodowaniem do codziennego użytku w rodzinie i w szkole. Nie potrzebujesz posiadać żadnej wiedzy na temat kodowania i nie potrzebujesz żadnych urządzeń elektronicznych do wykonywania zadań. Działania te będą stymulować myślenie obliczeniowe i rozwijać umiejętności uczniów, rodziców i nauczycieli w domu lub w szkole.',
         2 => 'Seria Coding@Home w ramach Europejskiego Tygodnia Kodowania opiera się na inicjatywie <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">„Rodzinnego kodowania”</a> Uniwersytetu w Urbino i Stowarzyszenia CodeMOOCnet we współpracy z Rai Cultura. Zadania prezentuje Alessandro Bogliolo, który jest profesorem ds. systemów przetwarzania informacji na Uniwersytecie w Urbino, <a href="/ambassadors?country_iso=IT" target="_blank">włoski ambasador Europejskiego Tygodnia Kodowania</a> i koordynator wszystkich ambasadorów, a także członek Rady Zarządzającej ds. Umiejętności i Zatrudnienia w Sektorze Cyfrowym. ',
