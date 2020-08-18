@@ -99,7 +99,7 @@ class EventController extends Controller
         $countries = \App\Country::all()->sortBy('name');
 
 
-        $themes =  \App\Theme::orderBy('order', 'asc')->get();
+        $themes = \App\Theme::orderBy('order', 'asc')->get();
 
 //        $countries = Country::all();
 //
@@ -109,10 +109,7 @@ class EventController extends Controller
 //        }
 
 
-
-
-
-        return view('event.add', compact(['countries','themes']));
+        return view('event.add', compact(['countries', 'themes']));
     }
 
     public function search()
@@ -149,7 +146,7 @@ class EventController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Event $event
+     * @param \App\Event $event
      * @return \Illuminate\Http\Response
      */
     public function show(Event $event)
@@ -170,7 +167,7 @@ class EventController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Event $event
+     * @param \App\Event $event
      * @return \Illuminate\Http\Response
      */
     public function edit(Event $event)
@@ -195,7 +192,7 @@ class EventController extends Controller
      * Update the specified resource in storage.
      *
      * @param EventRequest $request
-     * @param  \App\Event $event
+     * @param \App\Event $event
      * @return \Illuminate\Http\Response
      */
     public function update(EventRequest $request, Event $event)
@@ -214,7 +211,7 @@ class EventController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Event $event
+     * @param \App\Event $event
      * @return \Illuminate\Http\Response
      */
     public function destroy(Event $event)
@@ -234,7 +231,7 @@ class EventController extends Controller
     public function approveAll($country)
     {
 
-        $object = (object) ['iso' => $country];
+        $object = (object)['iso' => $country];
 
         $events = PendingEventsQuery::trigger($object);
 
@@ -259,6 +256,29 @@ class EventController extends Controller
         }
 
         $event->reject($rejectionText);
+
+
+    }
+
+    public function delete(Request $request, Event $event)
+    {
+
+        $this->authorize('delete', $event);
+
+        $event->delete();
+
+        if($request->ajax()){
+            $redirectUrl = "/my";
+
+            if(auth()->user()->can('approve', $event)){
+                $redirectUrl = "/pending";
+            }
+
+            return ["redirectUrl"=> $redirectUrl];
+        }
+
+        return redirect()->route('my_events')->with('flash', 'Your event has been deleted!');
+
 
 
     }

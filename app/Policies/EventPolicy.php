@@ -81,31 +81,20 @@ class EventPolicy
     public function edit(User $user, Event $event)
     {
 
-        Log::info("Trying to edit event {$event->id} from {$event->owner->email} as user {$user->id} with email {$user->email}");
-        Log::info("Is super admin? {$user->hasRole('super admin')}");
-        Log::info("Is ambassador ? {$user->hasRole('ambassador')}");
-
-
-
-
         if ($user->hasRole('super admin')) {
             return true;
         }
 
         if ($user->hasRole('ambassador')) {
             if ($event->country_iso === $user->country_iso) return true;
-            Log::info("Country is not matching");
         }
 
         if (!is_null($event->reported_at)) return false;
 
         if ($user->email === $event->owner->email) {
-            Log::info("Email is matching");
             return true;
         }
 
-
-        Log::info("Email is not matching -> EDITION REFUSED");
 
         return false;
     }
@@ -117,7 +106,20 @@ class EventPolicy
 
     public function delete(User $user, Event $event)
     {
-        return $this->edit($user,$event);
+
+        if ($user->hasRole('super admin')) {
+            return true;
+        }
+
+        if ($user->hasRole('ambassador')) {
+            if ($event->country_iso === $user->country_iso) return true;
+        }
+
+        if ($user->email === $event->owner->email) {
+            return true;
+        }
+
+        return false;
     }
 
 
