@@ -33,9 +33,14 @@
             <div class="text">
                 <div class="edit-button">
                     @can('edit', $event)
-                        <a class="codeweek-action-link-button"
+                        <a class="codeweek-action-link-button mr-2"
                            href="{{route('edit_event',$event->id)}}">@lang('eventdetails.edit')</a>
                     @endcan
+
+                        @can('delete', $event)
+                            <a class="codeweek-action-link-button red"
+                               href="{{route('delete_event',$event->id)}}">@lang('base.delete')</a>
+                        @endcan
                 </div>
                 <div class="title">
                     <h1>{{ $event->title }}</h1>

@@ -267,13 +267,18 @@ class EventController extends Controller
 
         $event->delete();
 
-        $redirectUrl = "/my";
+        if($request->ajax()){
+            $redirectUrl = "/my";
 
-        if(auth()->user()->can('approve', $event)){
-            $redirectUrl = "/pending";
+            if(auth()->user()->can('approve', $event)){
+                $redirectUrl = "/pending";
+            }
+
+            return ["redirectUrl"=> $redirectUrl];
         }
 
-        return ["redirectUrl"=> $redirectUrl];
+        return redirect()->route('my_events')->with('flash', 'Your event has been deleted!');
+
 
 
     }
