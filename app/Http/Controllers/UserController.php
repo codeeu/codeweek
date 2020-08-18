@@ -29,7 +29,7 @@ class UserController extends Controller
             'email_display' => 'nullable|email'
         ]));
 
-        return back()->with('flash', 'Your profile has been modified!');;
+        return back()->with('flash', 'Your profile has been modified!');
     }
 
     public static function getMainAccount($email)
