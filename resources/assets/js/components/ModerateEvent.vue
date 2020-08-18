@@ -110,7 +110,7 @@
 
     export default {
 
-        props: ['event', 'refresh'],
+        props: ['event', 'refresh', 'ambassador'],
         name: "reject-activity",
         data() {
             return {
@@ -139,13 +139,13 @@
             },
             deleteEvent(){
                 axios.post('/api/event/delete/' + this.event.id)
-                    .then(() => {
+                    .then((res) => {
                         this.status = "DELETED";
                         flash('Event Deleted!');
                         if (this.refresh) {
                           this.reRender();
                         } else {
-                          window.location.assign("/pending")
+                          window.location.assign(res.data.redirectUrl);
                         }
 
                     });
