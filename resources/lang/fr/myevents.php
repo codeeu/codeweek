@@ -19,7 +19,7 @@ return [
         'second_call_to_action' => 'ou consultez notre ',
         'second_link' => 'guide pour les organisateurs'
     ],
-    'view'=>'Statut',
+    'view'=>'Détails',
     'status'=>[
         'APPROVED'=>'APPROUVÉ',
         'REJECTED'=>'REJETÉ',
