@@ -127,6 +127,7 @@ Route::delete('api/users/avatar', 'Api\UserAvatarController@delete')->middleware
 Route::get('api/event/list', 'Api\EventsController@list')->name('event_list');
 Route::get('api/event/detail', 'Api\EventsController@detail')->name('event_list');
 Route::get('api/event/closest', 'Api\EventsController@closest');
+Route::post('/api/event/delete/{event}', 'EventController@delete')->name('event.delete')->middleware('auth');
 
 Route::get('api/event/list/eeducation', 'Api\EventsController@eeducation');
 
@@ -170,7 +171,6 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
     Route::post('/api/event/approve/{event}', 'EventController@approve')->name('event.approve');
     Route::get('/api/event/approveAll/{country}', 'EventController@approveAll')->name('event.approveAll');
     Route::post('/api/event/reject/{event}', 'EventController@reject')->name('event.reject');
-
 });
 
 Route::get('/codeweek4all/{code}/detail', 'Codeweek4AllController@detail')->name('codeweek4all_details');
