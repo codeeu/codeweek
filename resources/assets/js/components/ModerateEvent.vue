@@ -122,9 +122,9 @@
         },
         methods: {
             reRender() {
-                // if (this.refresh) {
+                if (this.refresh) {
                     window.location.reload(false);
-                // }
+                }
             },
             approve() {
                 axios.post('/api/event/approve/' + this.event.id)
@@ -140,8 +140,14 @@
             deleteEvent(){
                 axios.post('/api/event/delete/' + this.event.id)
                     .then(() => {
+                        this.status = "DELETED";
                         flash('Event Deleted!');
-                        this.reRender();
+                        if (this.refresh) {
+                          this.reRender();
+                        } else {
+                          window.location.assign("/pending")
+                        }
+
                     });
             },
             toggleModal() {
