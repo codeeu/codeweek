@@ -72,14 +72,13 @@
 }
 .codeweek-action-button{
   cursor: pointer;
-  padding: 0 25px;
+  padding: 7px;
   border-radius: 10px;
   background-color: $main-color;
   color: $main-color4;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
-  min-height: 40px;
   outline: none;
 }
 
@@ -118,6 +117,10 @@
 
 .codeweek-action-button.red{
   background-color: firebrick;
+}
+
+.codeweek-action-button.orange{
+  background-color: $main-color;
 }
 
 

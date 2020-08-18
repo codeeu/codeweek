@@ -8,7 +8,8 @@
         <div v-if="refresh"><strong>Moderation:</strong></div>
         <div class="actions">
             <button @click="approve" class="codeweek-action-button green">Approve</button>
-            <button @click="toggleModal" class="codeweek-action-button red">Reject</button>
+            <button @click="toggleModal" class="codeweek-action-button orange">Reject</button>
+            <button @click="deleteEvent" class="codeweek-action-button red">Delete</button>
         </div>
 
         <div v-if="showModal"
@@ -53,6 +54,8 @@
                         </button>
 
 
+
+
                     </div>
                 </div>
             </div>
@@ -91,6 +94,9 @@
 
                     });
 
+            },
+            deleteEvent(){
+                console.log("Delete incoming");
             },
             toggleModal() {
                 this.showModal = !this.showModal;
