@@ -32,7 +32,8 @@ $factory->define(App\User::class, function (Faker $faker) {
         'bio'=>$faker->text,
         'avatar_path'=>'avatars/default.png',
         'provider'=>$faker->randomElement(['facebook','google','github']),
-        'privacy'=>true
+        'privacy'=>true,
+        'receive_emails'=>true
 
     ];
 });
