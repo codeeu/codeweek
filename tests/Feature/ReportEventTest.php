@@ -7,6 +7,7 @@ use App\Event;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Storage;
 use Tests\TestCase;
 
 class ReportEventTest extends TestCase
@@ -88,6 +89,7 @@ class ReportEventTest extends TestCase
 
         $this->withExceptionHandling();
 
+        Storage::fake('latex');
 
         $this->signIn($this->event->owner);
 

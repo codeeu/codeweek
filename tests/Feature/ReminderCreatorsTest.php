@@ -5,6 +5,7 @@ namespace Tests\Feature;
 use App\Event;
 use App\Helpers\ReminderHelper;
 use App\Mail\RemindCreator;
+use App\Mail\RemindersSummary;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
@@ -28,7 +29,7 @@ class ReminderCreatorsTest extends TestCase
 
 
         //Setup world
-//        $this->createNonReportableEvents();
+
 
         $userC = create('App\User', ['email' => ""]);
         $userE = create('App\User');
@@ -107,6 +108,8 @@ class ReminderCreatorsTest extends TestCase
     {
         $this->withExceptionHandling();
 
+        Mail::fake();
+
         $userA = create('App\User');
 
         $reportableevent = create('App\Event', ['creator_id' => $userA->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)], 20);
@@ -138,12 +141,17 @@ class ReminderCreatorsTest extends TestCase
 
         $this->withExceptionHandling();
 
-        $reportableevent = create('App\Event', ['report_notifications_count' => 0, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
+        $reportableevent0 = create('App\Event', ['report_notifications_count' => 0, 'creator_id' => 1, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
+        $reportableevent1 = create('App\Event', ['report_notifications_count' => 1, 'creator_id' => 1, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
+        $reportableevent2 = create('App\Event', ['report_notifications_count' => 2, 'creator_id' => 1, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
+        $reportableevent3 = create('App\Event', ['report_notifications_count' => 3, 'creator_id' => 1, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
 
         $this->artisan('remind:creators');
 
-        $this->assertEquals(1, Event::first()->report_notifications_count);
-
+        $this->assertEquals(1, $reportableevent0->fresh()->report_notifications_count);
+        $this->assertEquals(2, $reportableevent1->fresh()->report_notifications_count);
+        $this->assertEquals(3, $reportableevent2->fresh()->report_notifications_count);
+        $this->assertEquals(3, $reportableevent3->fresh()->report_notifications_count);
 
     }
 
@@ -152,6 +160,8 @@ class ReminderCreatorsTest extends TestCase
     public function notification_reports_should_increase_up_to_3_times()
     {
         $this->withExceptionHandling();
+
+        Mail::fake();
 
         $reportableevent = create('App\Event', ['last_report_notification_sent_at' => Carbon::now()->subDays(8), 'report_notifications_count' => 3, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
 
@@ -166,15 +176,56 @@ class ReminderCreatorsTest extends TestCase
     public function notification_date_should_be_updated()
     {
 
-        Mail::fake();
-
         $this->withExceptionHandling();
+
+        Mail::fake();
 
         $reportableevent = create('App\Event', ['last_report_notification_sent_at' => Carbon::now()->subDays(8), 'report_notifications_count' => 0, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)]);
 
         $this->artisan('remind:creators');
 
         $this->assertEquals(Carbon::now()->dayOfYear, Carbon::parse(Event::first()->last_report_notification_sent_at)->dayOfYear);
+
+    }
+
+    /** @test */
+    public function deleted_users_should_not_receive_emails()
+    {
+
+        Mail::fake();
+        $this->withExceptionHandling();
+
+        //Create a 'deleted' user
+        $userDeleted = create('App\User', ['deleted_at' => Carbon::now()->subDay()]);
+
+        //Create event with a user
+        $reportableevent = create('App\Event', ['last_report_notification_sent_at' => Carbon::now()->subDays(8), 'report_notifications_count' => 0, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1), 'creator_id' => $userDeleted->id]);
+
+        //no mails should have been sent
+        $this->artisan('remind:creators');
+
+
+
+    }
+
+    /** @test */
+    public function opted_out_users_should_not_receive_emails()
+    {
+
+        Mail::fake();
+        $this->withExceptionHandling();
+
+        //Create a 'deleted' user
+        $userOptedout = create('App\User', ['receive_emails' => 0]);
+
+        //Create event with a user
+        $reportableevent = create('App\Event', ['report_notifications_count' => 0, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1), 'creator_id' => $userOptedout->id]);
+
+        //no mails should have been sent
+        $this->artisan('remind:creators');
+
+        Mail::assertQueued(RemindersSummary::class);
+        Mail::assertNotQueued(RemindCreator::class);
 
     }
 
