@@ -48,22 +48,31 @@ class RemindCreators extends Command
 
         //Get email from creators having at least one event that has less than 3 reminders sent
         $creators = ReminderHelper::getCreatorsWithReportableEvents();
-        Log::info(count($creators) . " emails will be sent");
+        Log::info(count($creators) . " emails should be sent");
         //Send one email per creator.
+        $mailsQueued=0;
         foreach ($creators as $creator) {
             $user = User::find($creator->creator_id);
-            Mail::to($user->email)->queue(new \App\Mail\RemindCreator($user));
+            //Skip deleted users && users that do not wish to receive emails
+            if ($user && $user->receive_emails){
+                Mail::to($user->email)->queue(new \App\Mail\RemindCreator($user));
+                $mailsQueued++;
+            }
+
         }
-        Log::info(count($creators) . " emails have been queued");
+        Log::info($mailsQueued . " emails have been queued");
 
         $events = ReminderHelper::getReportableEvents();
-        Log::info(count($events->get()) . " events will be updated");
+        $eventsCount = count($events->get());
+        Log::info($eventsCount . " events will be updated");
         $updated = $events
             ->update([
                 'report_notifications_count' => DB::raw('report_notifications_count+1'),
                 'last_report_notification_sent_at' => Carbon::now()
             ]);
         Log::info($updated . " events have been updated with success.");
+
+        Mail::to(env('ADMIN_EMAIL'))->queue(new \App\Mail\RemindersSummary(count($creators), $eventsCount, $updated, $mailsQueued));
 
 
     }
