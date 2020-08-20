@@ -124,6 +124,21 @@
                             </div>
                         </div>
 
+                            <div class="codeweek-form-field-wrapper">
+                                <div class="codeweek-form-field">
+                                <label for="receive_emails">* @lang('base.receive emails')</label>
+
+                                <select id="receive_emails" name="receive_emails" class="codeweek-input-select">
+                                        <option value=1 {{$profileUser->receive_emails === 1 ? 'selected' : ''}}>@lang('search.last_year_events.yes')</option>
+                                        <option value=0 {{$profileUser->receive_emails !== 1 ? 'selected' : ''}}>@lang('search.last_year_events.no')</option>
+
+                                </select>
+                            </div>
+                            <div class="errors">
+                                @component('components.validation-errors', ['field'=>'country'])@endcomponent
+                            </div>
+                        </div>
+
                         <div class="codeweek-form-field-privacy">
                             <label>
                                 <input id="checkPrivacy" name="privacy" type="checkbox" {{ $profileUser->privacy === 1 ? 'checked="checked"' : '' }}>

@@ -26,7 +26,8 @@ class UpdateUserTest extends TestCase
             'twitter' => 'Changed Twitter',
             'website' => 'Changed Website',
             'country_iso' => 'AA',
-            'privacy' => 1
+            'privacy' => 1,
+            'receive_emails' => 0,
         ]);
 
         tap($user->fresh(), function ($user) {
@@ -38,6 +39,7 @@ class UpdateUserTest extends TestCase
             $this->assertEquals('AA', $user->country_iso);
             $this->assertEquals(1, $user->privacy);
             $this->assertEquals('new@email.com', $user->email_display);
+            $this->assertEquals(0, $user->receive_emails);
 
         });
 
@@ -48,12 +50,14 @@ class UpdateUserTest extends TestCase
             'twitter' => 'Changed Twitter',
             'website' => 'Changed Website',
             'country_iso' => 'AAA',
-            'privacy' => 0
+            'privacy' => 0,
+            'receive_emails' => 1
         ]);
 
         tap($user->fresh(), function ($user) {
             $this->assertEquals('AAA', $user->country_iso);
             $this->assertEquals(0, $user->privacy);
+            $this->assertEquals(1, $user->receive_emails);
 
         });
     }
