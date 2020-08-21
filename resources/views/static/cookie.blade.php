@@ -4,7 +4,7 @@
 
     <section id="codeweek-privacy-page" class="codeweek-page">
 
-        <section class="codeweek-content-wrapper" style="margin-top: 0;">
+        <section class="codeweek-content-wrapper cookies" style="margin-top: 0;">
 
             <h1 style="margin-bottom:10px;">@lang('cookie_policy.title')</h1>
 
