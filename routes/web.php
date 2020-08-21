@@ -98,13 +98,16 @@ Route::patch('/events/{event}', 'EventController@update');
 Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 Route::get('/my', 'EventController@my')->middleware('auth')->name('my_events');
-Route::get('/my/reportable', 'EventController@myreportable')->middleware('auth')->name('my_reportable_events');
+
 Route::get('/search', 'SearchController@search')->name('search_event');
 Route::post('/search', 'SearchController@searchPOST')->name('search_events');
 Route::get('/scoreboard', 'ScoreboardController@index')->name('scoreboard');
 Route::patch('user', 'UserController@update')->name('user.update')->middleware('auth');
 Route::get('view/{event}/{slug}', 'EventController@show')->name('view_event');
+
+Route::get('/my/reportable', 'ReportController@list')->middleware('auth')->name('my_reportable_events');
 Route::get('events_to_report', 'ReportController@list')->name('report_list')->middleware('auth');
+
 Route::get('certificates', 'CertificateController@list')->name('certificates')->middleware('auth');
 
 Route::get('certificates/excellence/{edition}', 'ExcellenceController@report')->name('certificate_excellence')->middleware('auth');
