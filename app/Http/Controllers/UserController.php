@@ -18,10 +18,12 @@ class UserController extends Controller
             request()['privacy'] =  1;
         }
 
+        //dd(request()->all());
         $user->update(request()->validate([
             'firstname' => 'required',
             'lastname' => 'required',
             'privacy' => 'required',
+            'receive_emails' => 'required',
             'country_iso' => 'nullable',
             'twitter' => 'nullable',
             'website' => 'nullable',
