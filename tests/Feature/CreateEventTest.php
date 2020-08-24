@@ -41,6 +41,7 @@ class CreateEventTest extends TestCase
         $event->audience = "2, 3";
         $event->privacy = true;
 
+
         $this->post('/events', $event->toArray());
 
         $event = Event::where('title', $event->title)->first();
