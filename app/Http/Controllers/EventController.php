@@ -11,12 +11,16 @@ use App\Helpers\EventHelper;
 use App\Http\Requests\EventRequest;
 use App\Queries\EventsQuery;
 use App\Queries\PendingEventsQuery;
+use App\ResourceLanguage;
 use App\User;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Lang;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
 class EventController extends Controller
@@ -101,15 +105,11 @@ class EventController extends Controller
 
         $themes = \App\Theme::orderBy('order', 'asc')->get();
 
-//        $countries = Country::all();
-//
-//
-//        foreach ($countries as $country) {
-//            $country->translation = __('countries.' . $country->name);
-//        }
+        $languages = ResourceLanguage::orderBy('name')->get();
 
+        $languages = Arr::sort(Lang::get('base.languages'));
 
-        return view('event.add', compact(['countries', 'themes']));
+        return view('event.add', compact(['countries', 'themes','languages']));
     }
 
     public function search()
