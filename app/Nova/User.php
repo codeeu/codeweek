@@ -55,6 +55,9 @@ class User extends Resource
 
             Boolean::make('ambassador'),
 
+            Boolean::make('Receive Email Notifications','receive_emails')
+                ->hideFromIndex(),
+
             Text::make('Email', 'email')
                 ->onlyOnIndex(),
 
