@@ -46,6 +46,7 @@ $longitude = $faker->longitude(-4,12);
         "participants_count" => $faker->numberBetween(0,100),
         "codeweek_for_all_participation_code" => $faker->randomAscii,
         "activity_type" => "offline",
+        "language"=>"en"
 
     ];
 });
