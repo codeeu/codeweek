@@ -75,6 +75,7 @@ $new = 0;
             $RSSitem->start_date = $this->parseDate($this->getCustomTag($item, 'start_date'));
             $RSSitem->end_date = $this->parseDate($this->getCustomTag($item, 'end_date'));
 
+
             try{
             $RSSitem->save();
             $new++;
@@ -82,7 +83,12 @@ $new = 0;
                 if ($exception->getCode() !== '23000'){
                     Log::error($exception->errorInfo);
                 }
-                $line = MeetAndCodeRSSItem::where('title',$item->get_title())->first();
+
+                Log::info($item->get_link());
+
+                $line = MeetAndCodeRSSItem::where('link',$item->get_link())->first();
+
+                Log::info($line);
 
                 if ($RSSitem->start_date < $line->start_date){
                     $line->start_date = $RSSitem->start_date;
