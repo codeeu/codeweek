@@ -24,11 +24,13 @@ class EventRequest extends FormRequest
     public function rules()
     {
         return [
-
+            'activity_type' => 'required',
             'title' => 'required',
             'description' => 'required',
             'organizer' => 'required',
-            'location' => 'required',
+            'location' => 'required_unless:activity_type,open-online',
+            "event_url" => 'required_if:activity_type,open-online|url',
+            'language' => 'required',
             'start_date' => 'required',
             'end_date' => 'required|after:start_date',
             'audience' => 'required',
@@ -53,7 +55,8 @@ class EventRequest extends FormRequest
             'audience.required' => 'If unsure, choose Other and provide more information in the description.',
             'theme.required' => 'If unsure, choose Other and provide more information in the description.',
             'country.required' => 'The event\'s location should be in Europe.',
-
+            'event_url.url' => 'The activity\'s web page address should be a valid URL.',
+            'event_url.required' => 'The activity\'s web page is required for online activities.',
             'user_email.required' => 'Please enter a valid email address.',
         ];
     }

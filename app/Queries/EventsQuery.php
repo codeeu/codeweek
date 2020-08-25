@@ -26,11 +26,16 @@ class EventsQuery
         $request['updated'] = Carbon::now();
         $request['creator_id'] = Auth::user()->id;
 
-        $request['latitude'] = explode(",", $request['geoposition'])[0];
-        $request['longitude'] = explode(",", $request['geoposition'])[1];
-
         $request['theme'] = explode(',', $request['theme']);
         $request['audience'] = explode(',', $request['audience']);
+
+        if($request['activity_type'] == "open-online") {
+            $request['location'] = "online";
+            $request['geoposition'] = "0,0";
+        }
+
+        $request['latitude'] = explode(",", $request['geoposition'])[0];
+        $request['longitude'] = explode(",", $request['geoposition'])[1];
 
         if (empty($request['codeweek_for_all_participation_code'])){
             $codeweek_4_all_generated_code = 'cw' . Carbon::now()->format('y') . '-' . str_random(5);

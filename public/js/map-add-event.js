@@ -20,8 +20,9 @@ autocomplete.addListener('place_changed', onPlaceChanged);*/
 
 function addEvent(errorMsg){
     var geoposition = $("#geoposition").val();
+    var activity_type = $("#id_activity_type").val();
 
-    if (geoposition === "") {
+    if (activity_type !== 'open-online' && geoposition === "") {
         alert(errorMsg);
     } else {
         return true;

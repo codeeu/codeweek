@@ -52,7 +52,8 @@ class Event extends Model
         'approved_by',
         'last_report_notification_sent_at',
         'activity_type',
-        'picture_detail'
+        'picture_detail',
+        'language',
 
 
     ];
