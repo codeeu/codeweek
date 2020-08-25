@@ -23,6 +23,7 @@ class CountriesQuery
         $isos = DB::table('events')
             ->select(['country_iso'])
             ->where('status',"=","PENDING")
+            ->whereNull('deleted_at')
             ->whereYear('end_date', '>=', Carbon::now('Europe/Brussels')->year)
             ->groupBy('country_iso')
             ->get()
