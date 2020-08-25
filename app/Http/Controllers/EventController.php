@@ -17,6 +17,7 @@ use Carbon\Carbon;
 use Exception;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\Log;
@@ -106,16 +107,7 @@ class EventController extends Controller
 
         $languages = ResourceLanguage::orderBy('name')->get();
 
-        $languages = Lang::get('base.languages');
-
-
-//        $countries = Country::all();
-//
-//
-//        foreach ($countries as $country) {
-//            $country->translation = __('countries.' . $country->name);
-//        }
-
+        $languages = Arr::sort(Lang::get('base.languages'));
 
         return view('event.add', compact(['countries', 'themes','languages']));
     }

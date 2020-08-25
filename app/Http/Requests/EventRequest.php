@@ -30,6 +30,7 @@ class EventRequest extends FormRequest
             'organizer' => 'required',
             'location' => 'required_unless:activity_type,open-online',
             "event_url" => 'required_if:activity_type,open-online|url',
+            'language' => 'required',
             'start_date' => 'required',
             'end_date' => 'required|after:start_date',
             'audience' => 'required',

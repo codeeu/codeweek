@@ -40,6 +40,7 @@ class CreateEventTest extends TestCase
         $event->tags = "tag:foo,tag:bar";
         $event->audience = "2, 3";
         $event->privacy = true;
+        $event->language = "fi";
 
 
         $this->post('/events', $event->toArray());

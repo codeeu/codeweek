@@ -75,7 +75,7 @@
                                 <label for="id_language">* @lang('resources.Languages')</label>
                                 <select id="id_language" name="language" class="codeweek-input-select">
                                     @foreach($languages as $key => $value)
-                                        <option value="{{$key}}">{{$value}}</option>
+                                        <option value="{{$key}}" {{ $key == App::getLocale() ? 'selected' : '' }}>{{$value}}</option>
                                     @endforeach
 
                                 </select>

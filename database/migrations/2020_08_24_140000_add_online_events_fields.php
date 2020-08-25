@@ -17,6 +17,7 @@ class AddOnlineEventsFields extends Migration
             //$table->string('registration_url')->nullable();
             $table->string('playback_url')->nullable();
             $table->string('highlighted_status')->default('NONE');
+            $table->string('language')->nullable();
         });
     }
 
@@ -32,9 +33,10 @@ class AddOnlineEventsFields extends Migration
 
         Schema::table('events', function (Blueprint $table)
         {
-//            $table->dropColumn('registration_url');
+//
 //            $table->dropColumn('playback_url');
 //            $table->dropColumn('highlighted_status');
+//            $table->dropColumn('language');
         });
     }
 }

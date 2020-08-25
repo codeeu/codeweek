@@ -34,6 +34,7 @@ class CreateOnlineEventTest extends TestCase
         $event->activity_type = "open-online";
         $event->event_url = "http://lesoir.be";
         $event->geoposition = null;
+        $event->language = "fi";
 
         $this->post('/events', $event->toArray());
 
@@ -41,6 +42,7 @@ class CreateOnlineEventTest extends TestCase
 
         $this->assertEquals("online",$event->fresh()->location);
         $this->assertEquals("http://lesoir.be",$event->fresh()->event_url);
+        $this->assertEquals("fi",$event->fresh()->language);
     }
 
 }
