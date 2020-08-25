@@ -32,7 +32,8 @@
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
                                 <label for="activity_type">* @lang('event.activitytype.label')</label>
-                                <select id="id_activity_type" name="activity_type" class="codeweek-input-select" x-model="selectedActivityType">
+                                <select id="id_activity_type" name="activity_type" class="codeweek-input-select"
+                                        x-model="selectedActivityType">
                                     <option value="open-online" {{ old('activity_type') == "open-online" ? 'selected' : '' }}>@lang('event.activitytype.open-online')</option>
                                     <option value="invite-online" {{ old('activity_type') == "invite-online" ? 'selected' : '' }}>@lang('event.activitytype.invite-online')</option>
                                     <option value="open-in-person" {{ old('activity_type') == "open-in-person" ? 'selected' : '' }}>@lang('event.activitytype.open-in-person')</option>
@@ -49,8 +50,8 @@
                             <div class="codeweek-form-field">
                                 <label for="id_title">* @lang('event.title.label')</label>
                                 <input id="id_title" maxlength="255" name="title"
-                                   placeholder="@lang('event.title.placeholder')" type="text"
-                                   value="{{old('title')}}">
+                                       placeholder="@lang('event.title.placeholder')" type="text"
+                                       value="{{old('title')}}">
                             </div>
                             <div class="errors">
                                 @component('components.validation-errors', ['field'=>'title'])@endcomponent
@@ -71,9 +72,22 @@
 
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
+                                <label for="id_language">* @lang('resources.Languages')</label>
+                                <select id="id_language" name="language" class="codeweek-input-select">
+                                    @foreach($languages as $key => $value)
+                                        <option value="{{$key}}">{{$value}}</option>
+                                    @endforeach
+
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field">
                                 <label for="id_organizer">* @lang('event.organizertype.label')</label>
                                 <select id="id_organizer_type" name="organizer_type" class="codeweek-input-select">
-                                    <option disabled selected value> --- </option>
+                                    <option disabled selected value> ---</option>
                                     <option value="school">@lang('event.organizertype.school')</option>
                                     <option value="library">@lang('event.organizertype.library')</option>
                                     <option value="non profit">@lang('event.organizertype.non profit')</option>
@@ -87,13 +101,12 @@
                         </div>
 
 
-
-
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field align-flex-start">
                                 <label for="id_description">*@lang('event.description.label')</label>
                                 <textarea cols="40" id="id_description" name="description"
-                                          placeholder="@lang('event.description.placeholder')" rows="10"> {{old('description')}}</textarea>
+                                          placeholder="@lang('event.description.placeholder')"
+                                          rows="10"> {{old('description')}}</textarea>
                             </div>
                             <div class="errors">
                                 @component('components.validation-errors', ['field'=>'description'])@endcomponent
@@ -106,7 +119,8 @@
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
                                 <label for="id_audience">*@lang('event.audience_title')</label>
-                                <multiselect :options="{{ $audiences }}" value="{{ old('audience') }}" name="audience" label="event.audience"></multiselect>
+                                <multiselect :options="{{ $audiences }}" value="{{ old('audience') }}" name="audience"
+                                             label="event.audience"></multiselect>
                             </div>
                             <div class="errors">
                                 @component('components.validation-errors', ['field'=>'audience'])@endcomponent
@@ -116,7 +130,8 @@
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
                                 <label for="id_theme">*@lang('event.theme_title')</label>
-                                <multiselect :options="{{ $themes }}" value="{{ old('theme') }}" name="theme" label="event.theme"></multiselect>
+                                <multiselect :options="{{ $themes }}" value="{{ old('theme') }}" name="theme"
+                                             label="event.theme"></multiselect>
                             </div>
                             <div class="errors">
                                 @component('components.validation-errors', ['field'=>'theme'])@endcomponent
@@ -132,11 +147,12 @@
                             <div class="codeweek-form-field align-flex-start">
                                 <label for="id_location">*@lang('event.address.label')</label>
                                 <div>
-                                    <autocomplete-geo name="location" placeholder="@lang('event.address.placeholder')" ></autocomplete-geo>
+                                    <autocomplete-geo name="location"
+                                                      placeholder="@lang('event.address.placeholder')"></autocomplete-geo>
                                     <div class="errors" style="margin-bottom: 10px; margin-left:0;">
                                         @component('components.validation-errors', ['field'=>'location'])@endcomponent
                                     </div>
-                                    <div id = "events-add-map"></div>
+                                    <div id="events-add-map"></div>
                                 </div>
                             </div>
                         </div>
@@ -181,9 +197,12 @@
 
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
-                                <label for="id_event_url"><span x-show="isOnlineActivitySelected()">*</span>@lang('event.website.label')</label>
+                                <label for="id_event_url"><span
+                                            x-show="isOnlineActivitySelected()">*</span>@lang('event.website.label')
+                                </label>
                                 <input id="id_event_url" maxlength="200" name="event_url"
-                                       placeholder="@lang('event.website.placeholder')" type="text" value="{{old('event_url')}}">
+                                       placeholder="@lang('event.website.placeholder')" type="text"
+                                       value="{{old('event_url')}}">
                             </div>
                             <div class="errors">
                                 @component('components.validation-errors', ['field'=>'event_url'])@endcomponent
@@ -258,7 +277,8 @@
 
                 <div class="codeweek-form-field-privacy">
                     <label>
-                        <input id="checkPrivacy" name="privacy" type="checkbox" {{ auth()->user()->privacy === 1 ? 'checked="checked"' : '' }}>
+                        <input id="checkPrivacy" name="privacy"
+                               type="checkbox" {{ auth()->user()->privacy === 1 ? 'checked="checked"' : '' }}>
                         @lang('event.privacy')
                         <a href="/privacy" target="_blank">
                             <img src="/images/external-link.svg" width="16" class="static-image">
@@ -271,7 +291,9 @@
 
                 <div class="codeweek-form-button-container">
                     <div class="codeweek-button">
-                        <input type="submit" id="add-button" onclick="javascript:return addEvent('{{__('school.required.location')}}');" value="@lang('event.add_activity')">
+                        <input type="submit" id="add-button"
+                               onclick="javascript:return addEvent('{{__('school.required.location')}}');"
+                               value="@lang('event.add_activity')">
                     </div>
                 </div>
 
@@ -296,6 +318,7 @@
             "width": "422",
             "custom": ["js/hideMenuMap.js"]
         }
+
     </script>
 
     <script src="{{asset('js/map-add-event.js')}}"></script>
@@ -306,7 +329,9 @@
         function addActivity() {
             return {
                 selectedActivityType: 'open-in-person',
-                isOnlineActivitySelected() { return this.selectedActivityType === 'open-online' },
+                isOnlineActivitySelected() {
+                    return this.selectedActivityType === 'open-online'
+                },
             }
         }
     </script>
