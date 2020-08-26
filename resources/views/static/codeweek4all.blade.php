@@ -24,7 +24,7 @@
                 <h2>@lang('codeweek4all.what.title')</h2>
 
                 @lang('codeweek4all.what.content')
-                <ul>
+                <ul style="margin-top:2px;">
                     <li><strong>@lang('codeweek4all.what.criteria2')</strong></li>@lang('base.or')
                     <li><strong>@lang('codeweek4all.what.criteria3')</strong></li>
                 </ul>
@@ -36,7 +36,7 @@
                 </ol>
 
                 <i>@lang('codeweek4all.howto.first_alliance.title')</i>
-                <ol start="2">
+                <ol start="2" style=" line-height: 1.7;">
                     <li>@lang('codeweek4all.howto.first_alliance.1')</li>
                     <li>@lang('codeweek4all.howto.first_alliance.2')</li>
                     <li>@lang('codeweek4all.howto.first_alliance.3')</li>
@@ -44,7 +44,7 @@
                 </ol>
 
                 <i>@lang('codeweek4all.howto.existing_alliance.title')</i>
-                <ol start="2">
+                <ol start="2" style=" line-height: 1.7;">
                     <li>@lang('codeweek4all.howto.existing_alliance.1')</li>
                     <li>@lang('codeweek4all.howto.existing_alliance.2')</li>
                     <li>@lang('codeweek4all.howto.existing_alliance.3')</li>
@@ -53,7 +53,7 @@
 
                 <h2>@lang('codeweek4all.why.title')</h2>
 
-                <ul>
+                <ul style=" line-height: 1.7; list-style-type: disc">
                     <li>@lang('codeweek4all.why.1')</li>
                     <li>@lang('codeweek4all.why.2')</li>
                     <li>@lang('codeweek4all.why.3')</li>

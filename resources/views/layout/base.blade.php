@@ -22,9 +22,6 @@
     <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet"/>
 
 
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-          rel="stylesheet">
-
     <link rel="stylesheet" href="{{mix('css/app.css')}}" type="text/css"/>
 
 
