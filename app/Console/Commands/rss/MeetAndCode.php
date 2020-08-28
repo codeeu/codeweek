@@ -3,6 +3,7 @@
 namespace App\Console\Commands\rss;
 
 
+use App\Event;
 use App\MeetAndCodeRSSItem;
 use Illuminate\Console\Command;
 use Feeds;
@@ -18,7 +19,7 @@ class MeetAndCode extends Command
      *
      * @var string
      */
-    protected $signature = 'rss:meetandcode';
+    protected $signature = 'rss:meetandcode {--force}';
 
     /**
      * The console command description.
@@ -37,7 +38,8 @@ class MeetAndCode extends Command
         parent::__construct();
     }
 
-    function parseDate($date){
+    function parseDate($date)
+    {
         return Carbon::parse($date);
     }
 
@@ -50,9 +52,11 @@ class MeetAndCode extends Command
     {
 
         dump("Loading MeetAndCode");
+        $force = $this->option('force');
 
         $feed = Feeds::make('https://meet-and-code.org/de/de/events/rss');
-$new = 0;
+        $new = 0;
+        $updated = 0;
 
         foreach ($feed->get_items() as $item) {
             $RSSitem = new MeetAndCodeRSSItem();
@@ -76,29 +80,49 @@ $new = 0;
             $RSSitem->end_date = $this->parseDate($this->getCustomTag($item, 'end_date'));
 
 
-            try{
-            $RSSitem->save();
-            $new++;
-            } catch (\PDOException $exception){
-                if ($exception->getCode() !== '23000'){
+            try {
+
+                $RSSitem->save();
+
+
+                $new++;
+
+            } catch (\PDOException $exception) {
+                if ($exception->getCode() !== '23000') {
                     Log::error($exception->errorInfo);
                 }
 
-                Log::info($item->get_link());
+                //Log::info($item->get_link());
 
-                $line = MeetAndCodeRSSItem::where('link',$item->get_link())->first();
+                $line = MeetAndCodeRSSItem::where('link', $item->get_link())->first();
 
-                Log::info($line);
+                //Log::info($line);
 
-                if ($RSSitem->start_date < $line->start_date){
+                if ($RSSitem->start_date < $line->start_date) {
                     $line->start_date = $RSSitem->start_date;
                 }
 
-                if ($RSSitem->end_date > $line->end_date){
+                if ($RSSitem->end_date > $line->end_date) {
                     $line->end_date = $RSSitem->end_date;
                 }
 
+                if ($force) {
+                    $line->description = $RSSitem->description;
+
+                    $event = Event::where('event_url', $line->link)->first();
+                    if ($event && $event->description !== $RSSitem->description) {
+                        $event->update([
+                            "description" => $RSSitem->description
+                        ]);
+                        Log::info($event->id . " has been force updated");
+                        $updated++;
+                    }
+
+                }
+
                 $line->save();
+
+
                 //dump($exception->getCode());
             }
 
@@ -106,7 +130,13 @@ $new = 0;
         }
         Log::info("New items imported from Meet & Code RSS Feed: " . $new);
 
+        if ($force) {
+            Log::info("Updated items from Meet & Code RSS Feed: " . $updated);
+        }
+
+
         Artisan::call("import:meetandcode");
+
 
     }
 
