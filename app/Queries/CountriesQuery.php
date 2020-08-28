@@ -34,6 +34,22 @@ class CountriesQuery
         return $countries;
     }
 
+    public static function withOnlineEvents(){
+        $isos = DB::table('events')
+            ->select(['country_iso'])
+            ->where('activity_type',"=","open-online")
+            ->where('status',"<>","REJECTED")
+            ->whereNull('deleted_at')
+            ->whereDate('start_date', '>=', Carbon::now('Europe/Brussels'))
+            ->groupBy('country_iso')
+            ->get()
+            ->pluck('country_iso')
+        ;
+
+        $countries = Country::findMany($isos)->sortBy('name');
+        return $countries;
+    }
+
     public static function getCountryIsoPerName(string $name)
 
     {

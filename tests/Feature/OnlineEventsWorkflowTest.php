@@ -18,12 +18,10 @@ class OnlineEventsWorkflowTest extends TestCase
      */
 
     /*
-     * online events only
-     * ambassadors only see online events from their own countries
-     * all online events for admins
      * ambassador should be able to promote an event
      * admins should receive an email when event is promoted
      * only admins can feature a promoted event
+     * amabassadors cannot feature an activity
      */
 
     /** @test */
