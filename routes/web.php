@@ -150,6 +150,7 @@ Route::group(['middleware' => ['role:super admin']], function () {
 Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/activities', 'AdminController@activities')->name('activities');
     Route::get('/pending/{country}', 'PendingEventsController@index')->name('pending_by_country');
+    Route::get('/online/list/{country}', 'OnlineEventsController@list')->name('online_events_by_country');
     Route::get('/volunteers', 'VolunteerController@index')->middleware('auth')->name('volunteers');
     Route::get('/volunteer/{volunteer}/approve', 'VolunteerController@approve')->middleware('auth')->name('volunteer_approve');
     Route::get('/volunteer/{volunteer}/reject', 'VolunteerController@reject')->middleware('auth')->name('volunteer_reject');

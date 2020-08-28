@@ -17,18 +17,23 @@
         </div>
     </td>
     <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-        <div class="text-sm leading-5 text-gray-900">{{$countries[$event->country_iso]}}</div>
+        <div class="text-sm leading-5 text-gray-900">{{$countryNames[$event->country_iso]}}</div>
+
         <div class="text-sm leading-5 text-gray-500">{{$event->language ?  __("base.languages.{$event->language}") : "N/A"}}</div>
     </td>
-    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-center">
               <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                 {{$event->status}}
               </span>
     </td>
-    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5 text-gray-500">
-        Admin
-    </td>
-    <td class="px-6 py-4 whitespace-no-wrap text-right border-b border-gray-200 text-sm leading-5 font-medium">
-        <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+    <td class="px-6 py-4 whitespace-no-wrap text-center border-b border-gray-200 text-sm leading-5 font-medium">
+        {{--        <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>--}}
+        <span class="inline-flex rounded-md shadow-sm">
+  <button type="button"
+          class="inline-flex items-center px-2 py-2 border border-transparent text-xs leading-4 font-medium rounded text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150">
+    Promote
+  </button>
+</span>
+
     </td>
 </tr>
