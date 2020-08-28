@@ -1,33 +1,22 @@
 @extends('layout.base')
 
-
 @include('components.tailwind')
 
 @section('content')
 
-    <div class="bg-gray-200 overflow-hidden rounded-lg mx-6">
-        <div class="px-4 py-5 sm:p-6">
+    <section class="codeweek-content-header">
 
-            <div class="mt-6 grid grid-cols-1 row-gap-6 col-gap-4 sm:grid-cols-6">
-
-                <div class="sm:col-span-3">
-                    <label for="country" class="block text-sm font-medium leading-5 text-gray-700">
-                        Country / Region
-                    </label>
-                    <div class="mt-1 rounded-md shadow-sm">
-                        <select id="country" class="form-select block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5">
-                            @foreach($countries as $key => $country)
-                            <option>{{$country}}</option>
-                            @endforeach
-                        </select>
-                    </div>
-                </div>
-
+        <div class="header">
+            <div>
+                <h1>@lang('menu.online_events')</h1>
+                <p>Total of Online Activities: {{$events->total()}}</p>
             </div>
-
         </div>
-    </div>
+        @role('super admin')
+        <country-select :target="'online/list'" :code="'{{$country_iso}}'" :countries="{{$countries}}"></country-select>
+        @endrole
 
+    </section>
 
     <div class="bg-gray-50 overflow-hidden rounded-lg">
         <div class="px-4 py-5 sm:p-6">
@@ -44,14 +33,12 @@
                                 <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
                                     Country
                                 </th>
-                                <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
                                     Status
                                 </th>
-                                <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-
+                                <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider align-center">
                                     Actions
                                 </th>
-
 
                             </tr>
                             </thead>
@@ -67,6 +54,10 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="codeweek-pagination">
+        {{ $events->links() }}
     </div>
 @endsection
 
