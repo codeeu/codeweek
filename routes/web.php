@@ -50,6 +50,8 @@ Route::get('/about', 'StaticPageController@static')->name('about');
 Route::get('/our-values', 'StaticPageController@static')->name('our-values');
 Route::get('/partners', 'StaticPageController@static')->name('sponsors');
 Route::get('/codeweek4all', 'StaticPageController@static')->name('codeweek4all');
+Route::get('/code-hunting-game', 'StaticPageController@static')->name('code-hunting-game');
+
 
 //Static training pages
 Route::get('/training', 'StaticPageController@static')->name('training.index');

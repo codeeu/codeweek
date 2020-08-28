@@ -105,6 +105,7 @@ class EventController extends Controller
 
         $themes = \App\Theme::orderBy('order', 'asc')->get();
 
+
         $languages = Arr::sort(Lang::get('base.languages'));
 
         return view('event.add', compact(['countries', 'themes','languages']));
