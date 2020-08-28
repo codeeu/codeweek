@@ -1,5 +1,7 @@
 @extends('layout.base')
 
+@include('components.tailwind')
+
 @section('content')
 
     <div class="bg-gray-200 overflow-hidden rounded-lg mx-6">

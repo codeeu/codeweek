@@ -62,6 +62,13 @@
                     </li>
                     @role('ambassador|super admin')
                     <li>
+                        <img src="/images/user_menu_volunteers.svg" class="icon">
+                        <a href="{{route('admin.online-events')}}">
+                            @lang('menu.online_events')
+                        </a>
+                    </li>
+
+                    <li>
                         <img src="/images/user_menu_pending_events.svg" class="icon">
                         <a href="{{route('pending')}}">
                             @lang('menu.pending')
