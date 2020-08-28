@@ -4,7 +4,6 @@
 
 @section('content')
     <section id="codeweek-pending-events-page" class="codeweek-page">
-
         <section class="codeweek-content-header">
 
             <div class="header">
@@ -19,10 +18,11 @@
                 </div>
             </div>
             @role('super admin')
-                <country-select :code="'{{$country_iso}}'" :countries="{{$countries}}"></country-select>
+            <country-select :target="'pending'" :code="'{{$country_iso}}'" :countries="{{$countries}}"></country-select>
             @endrole
 
         </section>
+
 
 
         <section class="codeweek-content-wrapper">

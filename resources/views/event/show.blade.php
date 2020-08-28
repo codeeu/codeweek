@@ -39,10 +39,10 @@
                            href="{{route('edit_event',$event->id)}}">@lang('eventdetails.edit')</a>
                     @endcan
 
-                        @can('delete', $event)
-                            <a class="codeweek-action-link-button red"
-                               href="{{route('delete_event',$event->id)}}">@lang('base.delete')</a>
-                        @endcan
+                    @can('delete', $event)
+                        <a class="codeweek-action-link-button red"
+                           href="{{route('delete_event',$event->id)}}">@lang('base.delete')</a>
+                    @endcan
                 </div>
                 <div class="title">
                     <h1>{{ $event->title }}</h1>
@@ -100,6 +100,14 @@
                         <label class="block text-orange-500 font-bold mb-1 md:mb-0 pr-4"
                                for="inline-full-name">@lang('eventdetails.contact_email')</label>
                         <p><a href="mailto:{{ $event->contact_person }}">{{ $event->contact_person }}</a></p>
+                    </div>
+                @endif
+
+                @if($event->language)
+                    <div class="codeweek-display-field">
+                        <label class="block text-orange-500 font-bold mb-1 md:mb-0 pr-4"
+                               for="inline-full-name">@lang('resources.Languages')</label>
+                        <p>@lang("base.languages.{$event->language}")</p>
                     </div>
                 @endif
 
@@ -254,6 +262,8 @@
             "renderTo" : "events-show-map",
             "custom": ["/js/hideMenuMap.js","/js/leaflet.markercluster.js"]
         }
+
+
 
     </script>
 @endpush

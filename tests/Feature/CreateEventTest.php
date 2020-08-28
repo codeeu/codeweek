@@ -40,7 +40,9 @@ class CreateEventTest extends TestCase
         $event->tags = "tag:foo,tag:bar";
         $event->audience = "2, 3";
         $event->privacy = true;
-        $event->language = "fi";
+
+        $event->language = "nl";
+
 
 
         $this->post('/events', $event->toArray());
@@ -51,6 +53,7 @@ class CreateEventTest extends TestCase
         $this->get($event->path())->assertSee("tag:foo");
         $this->get($event->path())->assertSee("tag:bar");
         $this->get($event->path())->assertSee($event->codeweek_for_all_participation_code);
+        $this->get($event->path())->assertSee("Dutch");
     }
 
     /** @test */
