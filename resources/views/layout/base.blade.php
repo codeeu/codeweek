@@ -21,6 +21,7 @@
 
     <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet"/>
 
+    @stack('extra-css')
 
 
     <link rel="stylesheet" href="{{mix('css/app.css')}}" type="text/css"/>
