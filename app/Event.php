@@ -66,8 +66,9 @@ class Event extends Model
     protected $appends = ['LatestModeration'];
 
 
-    public function getJavascriptData(){
-        return $this->only(["geoposition","title","description"]);
+    public function getJavascriptData()
+    {
+        return $this->only(["geoposition", "title", "description"]);
     }
 
     public function getDescriptionForEvent(string $eventName): string
@@ -78,7 +79,8 @@ class Event extends Model
     protected static $logFillable = true;
 
 
-    public function getEventUrlAttribute($url){
+    public function getEventUrlAttribute($url)
+    {
         if ($url && strpos($url, "http") !== 0) return "http://" . $url;
 
         return $url;
@@ -212,7 +214,8 @@ class Event extends Model
         return true;
     }
 
-    public function reject($rejectionText = null){
+    public function reject($rejectionText = null)
+    {
 
         $this->moderations()->create([
             'status' => 'REJECTED',
@@ -231,21 +234,31 @@ class Event extends Model
         return $this->update($data);
     }
 
-    public function moderations(){
+    public function moderations()
+    {
         return $this->hasMany('App\Moderation');
     }
 
-    public function getLatestModerationAttribute(){
+    public function getLatestModerationAttribute()
+    {
         return optional($this->moderations()->latest('created_at'))->first();
     }
 
-    public function promote(){
-        $this->highlighted_status == "NONE" ? $this->highlighted_status = "PROMOTED" : $this->highlighted_status = "NONE";
-        return $this->save();
+    public function promote()
+    {
+        if (auth()->user()->can('promote', $this)) {
+            $this->highlighted_status == "NONE" ? $this->highlighted_status = "PROMOTED" : $this->highlighted_status = "NONE";
+            return $this->save();
+        }
     }
 
-
-
+    public function feature()
+    {
+        if (auth()->user()->can('feature', $this)) {
+            $this->highlighted_status == "FEATURED" ? $this->highlighted_status = "PROMOTED" : $this->highlighted_status = "FEATURED";
+            return $this->save();
+        }
+    }
 
 
 }

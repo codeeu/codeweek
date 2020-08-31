@@ -85,4 +85,61 @@ class OnlineEventsWorkflowTest extends TestCase
             ->assertDontSee($offlineEventInCountry->title);
 
     }
+
+    /** @test */
+    public function ambassadors_can_promote_events_from_their_countries()
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+
+
+        $ambassador = create('App\User');
+        $ambassador->assignRole('ambassador');
+
+        $this->signIn($ambassador);
+
+        $onlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+
+        $onlineEventInCountry->promote();
+
+        $this->assertEquals('PROMOTED', $onlineEventInCountry->fresh()->highlighted_status);
+
+    }
+
+    /** @test */
+    public function visitors_cannot_promote_events()
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+
+        $user = create('App\User');
+
+        $this->signIn($user);
+
+        $onlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => $user->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+
+        $onlineEventInCountry->promote();
+
+        $this->assertEquals('NONE', $onlineEventInCountry->fresh()->highlighted_status);
+
+    }
+
+    /** @test */
+    public function ambassadors_cannot_feature_events()
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+
+
+        $ambassador = create('App\User');
+        $ambassador->assignRole('ambassador');
+
+        $this->signIn($ambassador);
+
+        $onlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+
+        $onlineEventInCountry->feature();
+
+        $this->assertNotEquals('FEATURED', $onlineEventInCountry->fresh()->highlighted_status);
+
+    }
+
+
 }
