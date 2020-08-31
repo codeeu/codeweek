@@ -136,5 +136,15 @@ class EventPolicy
         return false;
     }
 
+    public function feature(User $user, Event $event)
+    {
+
+        if ($user->hasRole('super admin')) {
+            return true;
+        }
+
+        return false;
+    }
+
 
 }
