@@ -122,5 +122,19 @@ class EventPolicy
         return false;
     }
 
+    public function promote(User $user, Event $event)
+    {
+
+        if ($user->hasRole('super admin')) {
+            return true;
+        }
+
+        if ($user->hasRole('ambassador')) {
+            if ($event->country_iso === $user->country_iso) return true;
+        }
+
+        return false;
+    }
+
 
 }

@@ -28,6 +28,8 @@
 
 
 
+
+
     <script>
         window.App = {!! json_encode([
             'csrfToken' => csrf_token(),
@@ -89,6 +91,7 @@
 
     @endif
 @endif
+
 
 <script src="{{mix('js/app.js')}}"></script>
 <script type="text/javascript" src="{{ asset('lib/jquery/jquery.js') }}"></script>
