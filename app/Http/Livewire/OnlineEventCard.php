@@ -35,4 +35,11 @@ class OnlineEventCard extends Component
         return $this->event->promote();
     }
 
+    public function feature()
+    {
+        $this->authorize('feature', $this->event);
+        Log::info('going to feature');
+        return $this->event->feature();
+    }
+
 }
