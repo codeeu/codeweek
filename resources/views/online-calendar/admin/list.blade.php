@@ -2,6 +2,8 @@
 
 @include('components.tailwind')
 
+@include('components.livewire')
+
 @section('content')
 
     <section class="codeweek-content-header">
@@ -43,8 +45,11 @@
                             </tr>
                             </thead>
                             <tbody class="bg-white divide-y divide-gray-200">
+
                             @foreach($events as $event)
-                                @include('online-calendar._oc-event')
+
+                                @livewire('online-event-card', ['event' => $event, 'countryName' => $countryNames[$event->country_iso]])
+
                             @endforeach
 
                             <!-- More rows... -->

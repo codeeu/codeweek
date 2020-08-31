@@ -239,6 +239,11 @@ class Event extends Model
         return optional($this->moderations()->latest('created_at'))->first();
     }
 
+    public function promote(){
+        $this->highlighted_status == "NONE" ? $this->highlighted_status = "PROMOTED" : $this->highlighted_status = "NONE";
+        return $this->save();
+    }
+
 
 
 
