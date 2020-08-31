@@ -19,7 +19,6 @@ public/vendor/nova/*
 resources/lang/vendor/*
 !app/Nova
 auth.json
-composer.lock
 vue-i18n-locales.generated.js
 /storage/debugbar/
 /phpunit.xml
