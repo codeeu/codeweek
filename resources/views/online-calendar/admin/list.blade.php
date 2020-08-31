@@ -46,18 +46,10 @@
                             </thead>
                             <tbody class="bg-white divide-y divide-gray-200">
 
-{{--                            @livewire('test-me')--}}
-{{--                            @livewire('test-me')--}}
-{{--                            <livewire:online-event-card></livewire:online-event-card>--}}
                             @foreach($events as $event)
 
-{{--                                @livewire('test-me')--}}
-{{--                                <div wire:key="{{ $loop->index }}">--}}
                                 @livewire('online-event-card', ['event' => $event, 'countryName' => $countryNames[$event->country_iso]])
-{{--                                    <livewire:online-event-card :event="$event" :countryName="$countryNames[$event->country_iso]" :key="$loop->index">--}}
 
-{{--                                </div>--}}
-{{--                                @include('online-calendar._oc-event')--}}
                             @endforeach
 
                             <!-- More rows... -->
