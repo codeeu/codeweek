@@ -34,11 +34,12 @@ class CountriesQuery
         return $countries;
     }
 
-    public static function withOnlineEvents(){
+    public static function withOnlineEvents($highlighted_status){
         $isos = DB::table('events')
             ->select(['country_iso'])
             ->where('activity_type',"=","open-online")
             ->where('status',"<>","REJECTED")
+            ->where('highlighted_status',"=",$highlighted_status)
             ->whereNull('deleted_at')
             ->whereDate('start_date', '>=', Carbon::now('Europe/Brussels'))
             ->groupBy('country_iso')
