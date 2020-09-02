@@ -18,10 +18,7 @@ class OnlineEventsWorkflowTest extends TestCase
      */
 
     /*
-     * ambassador should be able to promote an event
      * admins should receive an email when event is promoted
-     * only admins can feature a promoted event
-     * amabassadors cannot feature an activity
      */
 
     /** @test */
@@ -138,6 +135,33 @@ class OnlineEventsWorkflowTest extends TestCase
         $onlineEventInCountry->feature();
 
         $this->assertNotEquals('FEATURED', $onlineEventInCountry->fresh()->highlighted_status);
+
+    }
+
+    /** @test */
+    public function promoted_event_creates_notification_for_administrators()
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+
+        $ambassador = create('App\User');
+        $ambassador->assignRole('ambassador');
+
+        $this->signIn($ambassador);
+
+        $onlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+        $this->assertDatabaseCount('notifications',0);
+
+        $onlineEventInCountry->promote();
+
+        $this->assertDatabaseCount('notifications',1);
+
+        $this->assertNotNull($onlineEventInCountry->notification->created_at);
+        $this->assertNull($onlineEventInCountry->notification->sent_at);
+
+        //We will cancel the promote
+        $onlineEventInCountry->promote();
+
+        $this->assertDatabaseCount('notifications',0);
 
     }
 
