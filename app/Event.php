@@ -247,7 +247,18 @@ class Event extends Model
     public function promote()
     {
         if (auth()->user()->can('promote', $this)) {
-            $this->highlighted_status == "NONE" ? $this->highlighted_status = "PROMOTED" : $this->highlighted_status = "NONE";
+            if ($this->highlighted_status == "NONE") {
+                //Promote
+                $this->highlighted_status = "PROMOTED";
+                $notification = new Notification();
+                $this->notification()->save($notification);
+            } else {
+                //Cancel Promote
+                $this->highlighted_status = "NONE";
+                $this->notification()->delete();
+            }
+
+
             return $this->save();
         }
     }
@@ -258,6 +269,11 @@ class Event extends Model
             $this->highlighted_status == "FEATURED" ? $this->highlighted_status = "PROMOTED" : $this->highlighted_status = "FEATURED";
             return $this->save();
         }
+    }
+
+    public function notification()
+    {
+        return $this->hasOne('App\Notification', 'event_id', 'id');
     }
 
 
