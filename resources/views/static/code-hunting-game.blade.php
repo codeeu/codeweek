@@ -87,7 +87,7 @@
                 });
             const randomCoordinate = getRandomLatLng(polygon);
             L.marker(randomCoordinate, {icon: treasureIcon}).addTo(map)
-                .bindPopup("Wrong point");
+                .bindPopup("No event here! Sorry...");
         });
 
     </script>
