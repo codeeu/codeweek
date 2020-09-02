@@ -1,0 +1,26 @@
+.codeweek-code-hunting-map-card{
+  display: flex;
+  img{
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .center{
+    margin-left: 10px;
+    .title{
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .description{
+      line-height: 1.5;
+      margin-top: 5px;
+    }
+    .link{
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
