@@ -21,9 +21,12 @@
 
     <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet"/>
 
+    @stack('extra-css')
 
 
     <link rel="stylesheet" href="{{mix('css/app.css')}}" type="text/css"/>
+
+
 
 
 
@@ -88,6 +91,7 @@
 
     @endif
 @endif
+
 
 <script src="{{mix('js/app.js')}}"></script>
 <script type="text/javascript" src="{{ asset('lib/jquery/jquery.js') }}"></script>

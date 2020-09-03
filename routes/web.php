@@ -50,6 +50,8 @@ Route::get('/about', 'StaticPageController@static')->name('about');
 Route::get('/our-values', 'StaticPageController@static')->name('our-values');
 Route::get('/partners', 'StaticPageController@static')->name('sponsors');
 Route::get('/codeweek4all', 'StaticPageController@static')->name('codeweek4all');
+Route::get('/code-hunting-game', 'StaticPageController@static')->name('code-hunting-game');
+
 
 //Static training pages
 Route::get('/training', 'StaticPageController@static')->name('training.index');
@@ -150,6 +152,11 @@ Route::group(['middleware' => ['role:super admin']], function () {
 Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/activities', 'AdminController@activities')->name('activities');
     Route::get('/pending/{country}', 'PendingEventsController@index')->name('pending_by_country');
+    Route::get('/online/list/{country}', 'OnlineEventsController@list')->name('online_events_by_country');
+    Route::get('/online/promoted', 'OnlineEventsController@promoted')->name('promoted_events');
+    Route::get('/online/promoted/{country}', 'OnlineEventsController@promoted')->name('promoted_events_by_country');
+    Route::get('/online/featured', 'OnlineEventsController@featured')->name('featured_events');
+    Route::get('/online/featured/{country}', 'OnlineEventsController@featured')->name('featured_events_by_country');
     Route::get('/volunteers', 'VolunteerController@index')->middleware('auth')->name('volunteers');
     Route::get('/volunteer/{volunteer}/approve', 'VolunteerController@approve')->middleware('auth')->name('volunteer_approve');
     Route::get('/volunteer/{volunteer}/reject', 'VolunteerController@reject')->middleware('auth')->name('volunteer_reject');
@@ -172,12 +179,16 @@ Route::group(['middleware' => ['role:super admin']], function () {
 
 Route::group(['middleware' => ['role:super admin|ambassador']], function () {
     Route::get('/pending', 'PendingEventsController@index')->name('pending');
+    Route::get('/online/list', 'OnlineEventsController@list')->name('admin.online-events');
     Route::post('/api/event/approve/{event}', 'EventController@approve')->name('event.approve');
     Route::get('/api/event/approveAll/{country}', 'EventController@approveAll')->name('event.approveAll');
     Route::post('/api/event/reject/{event}', 'EventController@reject')->name('event.reject');
 });
 
 Route::get('/codeweek4all/{code}/detail', 'Codeweek4AllController@detail')->name('codeweek4all_details');
+
+
+//Route::get('/online-calendar', 'OnlineCalendarController@index')->name('online_calendar');
 
 
 Route::get('/profile', function () {

@@ -42,7 +42,7 @@ class EventHelper
         $country_isos_ambassadors = User::role('ambassador')
             ->distinct()
             ->select('country_iso')
-            ->where("country_iso","<>", "")
+            ->where("country_iso", "<>", "")
             ->get();
 
         $countries = [];
@@ -60,6 +60,22 @@ class EventHelper
 
 
         return $events;
+
+    }
+
+    public static function getOnlineEvents()
+    {
+        $events = Event::where([
+            'activity_type' => 'open-online',
+            'status' => 'APPROVED',
+            'highlighted_status' => 'FEATURED'
+        ])
+            ->where('start_date', '>=', Carbon::now())
+            ->orderBy('start_date')
+            ->get();
+
+        return $events;
+
 
     }
 
