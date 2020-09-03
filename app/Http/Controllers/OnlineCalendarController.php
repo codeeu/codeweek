@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Country;
 use App\Helpers\EventHelper;
 use App\Queries\CountriesQuery;
+use App\Queries\OnlineEventsQuery;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -20,13 +21,21 @@ class OnlineCalendarController extends Controller
             $event->start_date = Carbon::parse($event->start_date)->toDateString();
         });
 
+
+        $countries = CountriesQuery::withOnlineEvents('FEATURED');
+
         $country_codes = $events->groupBy('country_iso')->keys()->all();
 
-        $countries = Country::whereIn("iso", $country_codes)->get()->mapWithKeys(function ($item) {
+        $countriesObjects = Country::whereIn("iso", $country_codes)->get();
+        $countryNames = $countriesObjects->mapWithKeys(function ($item) {
             return [$item['iso'] => __("countries." . $item['name'])];
         });
 
+        return view('online-calendar.oc-index', [
+            'events'=> $events,
+            'countries' => $countries,
+            'countryNames' => $countryNames
+        ]);
 
-        return view('online-calendar.oc-index', compact('events', 'countries'));
     }
 }
