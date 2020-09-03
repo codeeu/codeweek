@@ -8,6 +8,7 @@
     <div class="bg-gray-200 overflow-hidden rounded-lg mx-6">
         <div class="px-4 py-5 sm:p-6">
 
+
 {{--            <div class="mt-6 grid grid-cols-1 row-gap-6 col-gap-4 sm:grid-cols-6">--}}
 
 {{--                <div class="sm:col-span-3">--}}
@@ -24,6 +25,7 @@
 {{--                </div>--}}
 
 {{--            </div>--}}
+
 
         </div>
     </div>
