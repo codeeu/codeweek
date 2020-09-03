@@ -20,6 +20,7 @@ class NotifyAdministratorsTest extends TestCase
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
+        $this->seed('ActivitiesAdministratorRoleSeeder');
 
 
     }
@@ -38,12 +39,17 @@ class NotifyAdministratorsTest extends TestCase
         $superadmin2 = create('App\User');
         $superadmin2->assignRole('super admin');
 
+        $activitiesadmin = create('App\User')->assignRole('activities admin');
+        $activitiesadmin2 = create('App\User')->assignRole('activities admin');
+        $activitiesadmin3 = create('App\User')->assignRole('activities admin');
+        $activitiesadmin4 = create('App\User')->assignRole('activities admin');
+
         $this->assertEquals(3, Notification::whereNull('sent_at')->count());
 
         //If we haven't notified the administrators about this event, we send an email
         $this->artisan('notify:administrators');
 
-        Mail::assertQueued(NotifyAdministrator::class, 2);
+        Mail::assertQueued(NotifyAdministrator::class, 4);
 
         $this->assertEquals(0, Notification::whereNull('sent_at')->count());
 
