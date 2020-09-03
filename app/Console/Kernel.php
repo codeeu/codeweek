@@ -36,6 +36,9 @@ class Kernel extends ConsoleKernel
         $schedule->command('import:eeducation')
             ->hourly();
 
+        $schedule->command('notify:administrators')
+            ->hourlyAt(30);
+
         $schedule->command('rss:meetandcode')
             ->hourlyAt(5);
     }

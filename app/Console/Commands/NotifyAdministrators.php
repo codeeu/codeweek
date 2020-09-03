@@ -47,7 +47,7 @@ class NotifyAdministrators extends Command
 
         if ($notifications_to_be_sent->count() > 0){
             //Get the admins
-            $admins = User::role('super admin')->get();
+            $admins = User::role('activities admin')->get();
 
 
             //Queue an email for each of them
