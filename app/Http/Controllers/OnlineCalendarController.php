@@ -21,6 +21,7 @@ class OnlineCalendarController extends Controller
             $event->start_date = Carbon::parse($event->start_date)->toDateString();
         });
 
+
         $countries = CountriesQuery::withOnlineEvents('FEATURED');
 
         $country_codes = $events->groupBy('country_iso')->keys()->all();
@@ -35,5 +36,6 @@ class OnlineCalendarController extends Controller
             'countries' => $countries,
             'countryNames' => $countryNames
         ]);
+
     }
 }
