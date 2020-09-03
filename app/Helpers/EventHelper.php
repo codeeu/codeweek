@@ -68,6 +68,7 @@ class EventHelper
         $events = Event::where([
             'activity_type' => 'open-online',
             'status' => 'APPROVED',
+            'highlighted_status' => 'FEATURED'
         ])
             ->where('start_date', '>=', Carbon::now())
             ->orderBy('start_date')
