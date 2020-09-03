@@ -30,7 +30,6 @@
         return {
           item: this.value ? {name:this.value} : null,
           items: null,
-          geoposition: null,
           template: ItemTemplate,
           inputAttrs: {
             placeholder: this.placeholder,

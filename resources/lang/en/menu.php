@@ -41,4 +41,5 @@ return [
     'participation' => 'Participation Certificate',
     'coding@home' => 'Coding@Home',
     'values' => 'Our values',
+    'online_events' => 'Online Activities'
 ];

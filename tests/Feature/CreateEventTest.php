@@ -41,6 +41,10 @@ class CreateEventTest extends TestCase
         $event->audience = "2, 3";
         $event->privacy = true;
 
+        $event->language = "nl";
+
+
+
         $this->post('/events', $event->toArray());
 
         $event = Event::where('title', $event->title)->first();
@@ -49,6 +53,7 @@ class CreateEventTest extends TestCase
         $this->get($event->path())->assertSee("tag:foo");
         $this->get($event->path())->assertSee("tag:bar");
         $this->get($event->path())->assertSee($event->codeweek_for_all_participation_code);
+        $this->get($event->path())->assertSee("Dutch");
     }
 
     /** @test */
