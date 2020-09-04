@@ -50,6 +50,26 @@
 
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
+                                <label for="id_language">* @lang('resources.Languages')</label>
+                                <select id="id_language" name="language" class="codeweek-input-select">
+                                    @if(is_null($event->language))
+                                    <option value="" disabled selected>---</option>
+                                    @endif
+
+                                @foreach($languages as $key => $value)
+                                        <option value="{{$key}}" {{ $key == $event->language ? 'selected' : '' }}>{{$value}}</option>
+                                    @endforeach
+
+                                </select>
+                            </div>
+                            <div class="errors">
+                                @component('components.validation-errors', ['field'=>'language'])@endcomponent
+                            </div>
+
+                        </div>
+
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field">
                                 <label for="id_organizer">* @lang('event.organizertype.label')</label>
                                 <select id="id_organizer_type" name="organizer_type" class="codeweek-input-select">
                                     <option value="school">@lang('event.organizertype.school')</option>
