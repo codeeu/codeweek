@@ -181,10 +181,12 @@ class EventController extends Controller
         $selected_audiences = $event->audiences()->pluck('id')->toArray();
         $selected_audiences = implode(',', $selected_audiences);
         $selected_country = $event->country()->first()->iso;
+        $selected_language = is_null($event->language)?'en':$event->language;
 
+        $languages = Arr::sort(Lang::get('base.languages'));
         //dd($event);
 
-        return view('event.edit', compact(['event', 'tags', 'selected_themes', 'selected_audiences', 'countries', 'selected_country']));
+        return view('event.edit', compact(['event', 'tags', 'selected_themes', 'selected_audiences', 'countries', 'selected_country','languages','selected_language']));
     }
 
     /**
