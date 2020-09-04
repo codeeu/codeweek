@@ -73,13 +73,15 @@ class OnlineEventsWorkflowTest extends TestCase
         $france = create('App\Country', ['iso' => 'FR']);
 
         $onlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(),'country_iso' => $belgium->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+        $PendingOnlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(),'country_iso' => $belgium->iso, 'status' => 'PENDING', 'activity_type' => 'open-online']);
         $onlineEventInAnotherCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(),'country_iso' => $france->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
         $offlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(),'country_iso' => $belgium->iso, 'status' => 'APPROVED', 'activity_type' => 'offline']);
 
         $response = $this->get('/online/list')
             ->assertSee($onlineEventInCountry->title)
             ->assertSee($onlineEventInAnotherCountry->title)
-            ->assertDontSee($offlineEventInCountry->title);
+            ->assertDontSee($offlineEventInCountry->title)
+            ->assertDontSee($PendingOnlineEventInCountry->title);
 
     }
 
