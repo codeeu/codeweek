@@ -200,7 +200,7 @@ class EventController extends Controller
     {
 
 
-        //$this->authorize('edit', $event);
+        $this->authorize('edit', $event);
 
         EventsQuery::update($request, $event);
 
