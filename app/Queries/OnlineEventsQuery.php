@@ -33,6 +33,7 @@ class OnlineEventsQuery
                 $query->where('highlighted_status', '=', $highlighted_status);
             }
 
+            $query->where('status', 'APPROVED');
             $query->where('activity_type', 'open-online');
             $query->where('start_date', '>=', Carbon::now());
 

@@ -11,7 +11,7 @@
             </div>
         </section>
 
-        <section class="codeweek-content-wrapper" style="margin-top:0px;">
+        <section class="codeweek-content-wrapper" style="margin-top:0px;" x-data="addActivity('{{$event->activity_type}}')">
 
             <form enctype="multipart/form-data" method="post" id="event" role="form" class="codeweek-form"
                   action="/events/{{$event->id}}">
@@ -50,6 +50,26 @@
 
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
+                                <label for="id_language">* @lang('resources.Languages')</label>
+                                <select id="id_language" name="language" class="codeweek-input-select">
+                                    @if(is_null($event->language))
+                                    <option value="" disabled selected>---</option>
+                                    @endif
+
+                                @foreach($languages as $key => $value)
+                                        <option value="{{$key}}" {{ $key == $event->language ? 'selected' : '' }}>{{$value}}</option>
+                                    @endforeach
+
+                                </select>
+                            </div>
+                            <div class="errors">
+                                @component('components.validation-errors', ['field'=>'language'])@endcomponent
+                            </div>
+
+                        </div>
+
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field">
                                 <label for="id_organizer">* @lang('event.organizertype.label')</label>
                                 <select id="id_organizer_type" name="organizer_type" class="codeweek-input-select">
                                     <option value="school">@lang('event.organizertype.school')</option>
@@ -67,7 +87,7 @@
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
                                 <label for="activity_type">* @lang('event.activitytype.label')</label>
-                                <select id="id_activity_type" name="activity_type" class="codeweek-input-select">
+                                <select id="id_activity_type" name="activity_type" class="codeweek-input-select" x-model="selectedActivityType">
                                     <option value="open-online" {{$event->activity_type == 'open-online' ? 'selected' : ''}}>@lang('event.activitytype.open-online')</option>
                                     <option value="invite-online" {{$event->activity_type == 'invite-online' ? 'selected' : ''}}>@lang('event.activitytype.invite-online')</option>
                                     <option value="open-in-person" {{$event->activity_type == 'open-in-person' ? 'selected' : ''}}>@lang('event.activitytype.open-in-person')</option>
@@ -118,7 +138,7 @@
 
                     <div class="codeweek-form-inner-container">
 
-                        <div class="codeweek-form-field-wrapper">
+                        <div class="codeweek-form-field-wrapper" x-show="!isOnlineActivitySelected()">
                             <div class="codeweek-form-field align-flex-start">
                                 <label for="id_location">*@lang('event.address.label')</label>
                                 <div>
@@ -173,9 +193,15 @@
 
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
-                                <label for="id_event_url">@lang('event.website.label')</label>
+                                <label for="id_event_url"><span
+                                            x-show="isOnlineActivitySelected()">*</span>@lang('event.website.label')
+                                </label>
                                 <input id="id_event_url" maxlength="200" name="event_url"
-                                       placeholder="@lang('event.website.placeholder')" type="text" value="{{old('event_url',$event->event_url)}}">
+                                       placeholder="@lang('event.website.placeholder')" type="text"
+                                       value="{{old('event_url')}}">
+                            </div>
+                            <div class="errors">
+                                @component('components.validation-errors', ['field'=>'event_url'])@endcomponent
                             </div>
                         </div>
 
@@ -291,6 +317,18 @@
 
     <script src="{{asset('js/map-add-event.js')}}"></script>
 
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+
+    <script>
+        function addActivity(activityType) {
+            return {
+                selectedActivityType: activityType,
+                isOnlineActivitySelected() {
+                    return this.selectedActivityType === 'open-online'
+                }
+            }
+        }
+    </script>
 
 @endpush
 
