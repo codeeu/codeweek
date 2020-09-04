@@ -198,7 +198,7 @@
                                 </label>
                                 <input id="id_event_url" maxlength="200" name="event_url"
                                        placeholder="@lang('event.website.placeholder')" type="text"
-                                       value="{{old('event_url')}}">
+                                       value="{{old('event_url')?old('event_url'):$event->event_url}}">
                             </div>
                             <div class="errors">
                                 @component('components.validation-errors', ['field'=>'event_url'])@endcomponent
