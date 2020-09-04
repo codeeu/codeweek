@@ -75,7 +75,7 @@ class EventsQuery
     public static function update(Request $request, Event $event)
     {
 
-//        dd($event->status);
+        //dd($event->status);
 
         $request['latitude'] = explode(",", $request['geoposition'])[0];
         $request['longitude'] = explode(",", $request['geoposition'])[1];
