@@ -39,8 +39,10 @@
                         <select wire:model="selectedDate" id="selectedDate"
                                 class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
                         >
-                            <option value="9/2020">September 2020</option>
-                            <option value="10/2020">October 2020</option>
+
+                            @foreach($months as $key => $value)
+                            <option value="{{$key}}">{{$value}}</option>
+                            @endforeach
 
                         </select>
 
