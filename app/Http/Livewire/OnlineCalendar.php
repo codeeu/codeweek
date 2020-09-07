@@ -23,18 +23,39 @@ class OnlineCalendar extends Component
     public $selectedYear;
     public $selectedMonth;
     public $selectedDate;
+    public $months;
 
     public $listeners = ['eventsUpdated' => 'render'];
+    private $whereClause = [
+            'activity_type' => 'open-online',
+            'status' => 'APPROVED',
+            'highlighted_status' => 'FEATURED'
+        ];
 
 
 
 
     public function mount()
     {
+
+
         $this->selectedLanguage = strtolower(App::getLocale());
         $this->selectedYear= Carbon::now()->year;
         $this->selectedMonth = Carbon::now()->month;
         $this->selectedDate = $this->selectedMonth . "/" . $this->selectedYear;
+
+        $byMonths = Event::selectRaw('year(start_date) year, month(start_date) month, monthname(start_date) monthname, count(*) data')
+            ->where($this->whereClause)
+            ->where('start_date', '>=', Carbon::now())
+            ->groupBy('year', 'month')
+            ->orderBy('year', 'desc')
+            ->get();
+
+        $this->months = [];
+
+        foreach ($byMonths as $result) {
+            $this->months[$result->month . "/" . $result->year] = $result->monthname . " " . $result->year;
+        }
 
     }
 
@@ -43,33 +64,14 @@ class OnlineCalendar extends Component
 
         $parts = explode("/",$this->selectedDate);
 
-        $this->events = Event::where([
-            'activity_type' => 'open-online',
-            'status' => 'APPROVED',
-            'highlighted_status' => 'FEATURED'
-        ])
+
+        $this->events = Event::where($this->whereClause)
             ->whereYear('start_date',$parts[1])
             ->whereMonth('start_date',$parts[0])
             ->where('start_date', '>=', Carbon::now())
             ->orderBy('start_date')
             ->get();
 
-//        $byMonths = $this->events->groupBy(function($val) {
-//            return Carbon::parse($val->start_date)->format('M');
-//        });
-
-//        $byMonths = Event::selectRaw('year(start_date) year, monthname(start_date) month, count(*) data')
-//            ->where([
-//                'activity_type' => 'open-online',
-//                'status' => 'APPROVED',
-//                'highlighted_status' => 'FEATURED'
-//            ])
-//            ->where('start_date', '>=', Carbon::now())
-//            ->groupBy('year', 'month')
-//            ->orderBy('year', 'desc')
-//            ->get();
-//
-//        dd($byMonths);
 
 
         $this->events->map(function ($event) {
