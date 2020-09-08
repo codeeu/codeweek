@@ -27,22 +27,19 @@ class OnlineCalendar extends Component
 
     public $listeners = ['eventsUpdated' => 'render'];
     private $whereClause = [
-            'activity_type' => 'open-online',
-            'status' => 'APPROVED',
-            'highlighted_status' => 'FEATURED'
-        ];
-
-
+        'activity_type' => 'open-online',
+        'status' => 'APPROVED',
+        'highlighted_status' => 'FEATURED'
+    ];
 
 
     public function mount()
     {
 
-
         $this->selectedLanguage = strtolower(App::getLocale());
-        $this->selectedYear= Carbon::now()->year;
+        $this->selectedYear = Carbon::now()->year;
         $this->selectedMonth = Carbon::now()->month;
-        $this->selectedDate = $this->selectedMonth . "/" . $this->selectedYear;
+
 
         $byMonths = Event::selectRaw('year(start_date) year, month(start_date) month, monthname(start_date) monthname, count(*) data')
             ->where($this->whereClause)
@@ -57,21 +54,29 @@ class OnlineCalendar extends Component
             $this->months[$result->month . "/" . $result->year] = $result->monthname . " " . $result->year;
         }
 
+        //Go back to start of array to get the first item
+        reset($this->months);
+        $parts = explode("/", key($this->months));
+        if ($parts[0] !== $this->selectedMonth){
+            $this->selectedMonth = $parts[0];
+        }
+
+        $this->selectedDate = $this->selectedMonth . "/" . $this->selectedYear;
+
     }
 
     public function render()
     {
-
         $parts = explode("/",$this->selectedDate);
-
+        $this->selectedMonth = $parts[0];
+        $this->selectedYear = $parts[1];
 
         $this->events = Event::where($this->whereClause)
-            ->whereYear('start_date',$parts[1])
-            ->whereMonth('start_date',$parts[0])
+            ->whereMonth('start_date', $this->selectedMonth)
+            ->whereYear('start_date', $this->selectedYear)
             ->where('start_date', '>=', Carbon::now())
             ->orderBy('start_date')
             ->get();
-
 
 
         $this->events->map(function ($event) {
@@ -84,7 +89,7 @@ class OnlineCalendar extends Component
                 return $event->language == $this->selectedLanguage;
             });
 
-            if ($this->filteredEvents->isEmpty()){
+            if ($this->filteredEvents->isEmpty()) {
                 $this->filteredEvents = $this->events;
             }
         } else {
@@ -92,8 +97,6 @@ class OnlineCalendar extends Component
         }
 
         Log::info($this->selectedDate);
-
-
 
 
         $countries = CountriesQuery::withOnlineEvents('FEATURED');
