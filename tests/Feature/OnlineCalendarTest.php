@@ -35,16 +35,16 @@ class OnlineCalendarTest extends TestCase
     }
 
 
-    /** @test */
-    public function it_should_list_all_languages_if_the_selected_language_does_not_have_at_least_one_event()
-    {
-        //Good ones
-        create('App\Event', ['language'=>'fr','title'=>'foobar','activity_type' => "open-online", "status"=>"APPROVED",'start_date'=>Carbon::now(), 'highlighted_status' => 'FEATURED']);
-        create('App\Event', ['language'=>'es','activity_type' => "open-online", "status"=>"APPROVED",'start_date'=>Carbon::now()->addDays(10), 'highlighted_status' => 'FEATURED']);
-
-        $response = $this->get('/online-calendar');
-
-        $response->assertStatus(200)
-        ->assertSee('foobar');
-    }
+//    /** @test */
+//    public function it_should_list_all_languages_if_the_selected_language_does_not_have_at_least_one_event()
+//    {
+//        //Good ones
+//        create('App\Event', ['language'=>'fr','title'=>'foobar','activity_type' => "open-online", "status"=>"APPROVED",'start_date'=>Carbon::now(), 'highlighted_status' => 'FEATURED']);
+//        create('App\Event', ['language'=>'es','activity_type' => "open-online", "status"=>"APPROVED",'start_date'=>Carbon::now()->addDays(10), 'highlighted_status' => 'FEATURED']);
+//
+//        $response = $this->get('/online-calendar');
+//
+//        $response->assertStatus(200)
+//        ->assertSee('foobar');
+//    }
 }
