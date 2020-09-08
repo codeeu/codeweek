@@ -38,7 +38,7 @@ class OnlineEventsQuery
             $query->where('start_date', '>=', Carbon::now());
 
 
-        })->orderBy('created_at', 'desc')->paginate(20);
+        })->orderBy('start_date', 'asc')->paginate(20);
 
     }
 }
