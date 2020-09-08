@@ -1,13 +1,26 @@
 .codeweek-code-hunting-map-card{
   display: flex;
-  img{
-    border-radius: 15px;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+  .left{
+    display: flex;
+    flex-direction: column;
+    img{
+      border-radius: 15px;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+    .links{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .link{
+        padding: 5px;
+      }
+    }
   }
   .center{
-    margin-left: 10px;
+    margin: 0 10px;
+    flex:1;
     .title{
       font-size: 18px;
       font-weight: bold;
@@ -22,5 +35,8 @@
       align-items: center;
       justify-content: center;
     }
+  }
+  .qrcode{
+    width: 150px;
   }
 }
