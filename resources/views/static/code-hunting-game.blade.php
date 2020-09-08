@@ -26,6 +26,8 @@
             integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
             crossorigin=""></script>
 
+    <script src="js/code-hunting/qrcode.min.js"></script>
+
     <script src="js/code-hunting/points.js"></script>
     <script src="js/code-hunting/europe_polygon.js"></script>
 
@@ -67,8 +69,8 @@
 
         const polygon = L.polygon(europe_polygon);
 
-        const treasureIcon = L.icon({
-            iconUrl: 'images/treasure-icon.png',
+        const robotIcon = L.icon({
+            iconUrl: 'images/robot-orange.png',
             iconSize:     [32, 32], // size of the icon
             iconAnchor:   [16, 16], // point of the icon which will correspond to marker's location
             popupAnchor:  [0, -10] // point from which the popup should open relative to the iconAnchor
@@ -77,22 +79,34 @@
             const coordinates = point.coordinates.split(",");
             let card =
                 "<div class='codeweek-code-hunting-map-card'>" +
-                    "<img src='images/code-hunting-game/" + point.image + "'>" +
+                    "<div class='left'>" +
+                        "<img src='images/code-hunting-game/" + point.image + "'>" +
+                        "<div class='links'>" +
+                            "<div class='link'><a class='codeweek-button' href='" + point.link_wikipedia + "' target='_blank'>WIKIPEDIA</a></div>" +
+                            "<div class='link'><a class='codeweek-button' href='" + point.link_more + "' target='_blank'>READ MORE</a></div>" +
+                        "</div>" +
+                    "</div>" +
                     "<div class='center'>" +
                         "<div class='title'>" + point.title + '</div>' +
                         "<div class='description'>" + point.description + '</div>' +
-                        "<div class='link'><a href='" + point.link + "' target='_blank'>READ MORE</a></div>" +
                     "</div>" +
-                    "<img src='images/code-hunting-game/qrcode.png'>" +
+                    "<div class='qrcode' id='qrcode-hunting-game'></div>" +
                 "</div>";
-            L.marker(coordinates, {icon: treasureIcon}).addTo(map)
+            const marker = L.marker(coordinates, {icon: robotIcon}).addTo(map)
                 .bindPopup(card,{
                     maxWidth: 600,
                     minWidth: 300
                 });
             const randomCoordinate = getRandomLatLng(polygon);
-            L.marker(randomCoordinate, {icon: treasureIcon}).addTo(map)
+            L.marker(randomCoordinate, {icon: robotIcon}).addTo(map)
                 .bindPopup("No event here! Sorry...");
+
+            marker.on('popupopen', () => {
+                setTimeout(()=> {
+                    const url_hunt_game = 'https://t.me/treasurehuntbot?start=' + point.hunt_code;
+                    new QRCode(document.getElementById("qrcode-hunting-game"), url_hunt_game);
+                }, 200);
+            });
         });
 
 
