@@ -25,14 +25,18 @@
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
             integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
             crossorigin=""></script>
+
     <script src="js/code-hunting/qrcode.min.js"></script>
+
     <script src="js/code-hunting/points.js"></script>
     <script src="js/code-hunting/europe_polygon.js"></script>
+
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
           integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
           crossorigin=""/>
 
     <script>
+
 
         const map = L.map('map-code-hunting-game').setView([50, -0.09], 4);
 
@@ -53,6 +57,7 @@
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
+
         L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-labels/{z}/{x}/{y}{r}.{ext}', {
             attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
             subdomains: 'abcd',
@@ -60,6 +65,7 @@
             maxZoom: 20,
             ext: 'png'
         }).addTo(map);
+
 
         const polygon = L.polygon(europe_polygon);
 
@@ -102,6 +108,7 @@
                 }, 200);
             });
         });
+
 
     </script>
 
