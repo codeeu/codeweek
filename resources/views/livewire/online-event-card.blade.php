@@ -26,15 +26,15 @@
 
             <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium leading-4 bg-indigo-100 text-indigo-800">
   {{ __("base.languages.{$event->language}") }}
-  <button type="button" class="flex-shrink-0 ml-2 inline-flex text-indigo-500 focus:outline-none focus:text-indigo-700" aria-label="Remove small badge" wire:click="clearLanguage()">
+  <button type="button" class="flex-shrink-0 ml-2 inline-flex text-indigo-500 focus:outline-none focus:text-indigo-700"
+          aria-label="Remove small badge" wire:click="clearLanguage()">
     <svg class="h-2 w-2" stroke="currentColor" fill="none" viewBox="0 0 8 8">
-      <path stroke-linecap="round" stroke-width="1.5" d="M1 1l6 6m0-6L1 7" />
+      <path stroke-linecap="round" stroke-width="1.5" d="M1 1l6 6m0-6L1 7"/>
     </svg>
   </button>
 </span>
 
             <div class="text-sm leading-5 text-gray-500">
-
 
 
             </div>
@@ -64,8 +64,6 @@
         <div class="text-sm leading-5 text-gray-900">{{$countryName}}</div>
 
 
-
-
     </td>
     <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-center">
               <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
@@ -88,17 +86,18 @@
                     @endif
 
   </button>
-
-                <button type="button"
-                        class="inline-flex items-center ml-2 px-2 py-2 border border-transparent text-xs leading-4 font-medium rounded text-white bg-green-600 hover:bg-green-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150"
-                        wire:click="feature"
-                >
+                @can('feature',$event)
+                    <button type="button"
+                            class="inline-flex items-center ml-2 px-2 py-2 border border-transparent text-xs leading-4 font-medium rounded text-white bg-green-600 hover:bg-green-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150"
+                            wire:click="feature"
+                    >
 
                         @if($event->highlighted_status !== 'FEATURED')
-                        Add to Calendar
-                    @else
-                        Remove from Calendar
-                    @endif
+                            Add to Calendar
+                        @else
+                            Remove from Calendar
+                        @endif
+                        @endcan
 
 
 
