@@ -14,7 +14,7 @@
             </div>
         </section>
 
-        <div id="map-code-hunting-game" style="height: 500px;"></div>
+        <div id="map-code-hunting-game" style="height: 800px;"></div>
 
     </section>
 
@@ -77,10 +77,11 @@
         });
         codeHuntingPoints.forEach(point=>{
             const coordinates = point.coordinates.split(",");
+            const image = point.image ? "images/code-hunting-game/" + point.image : "https://codeweek-s3.s3.amazonaws.com/event_picture/logo_gs_2016_07703ca0-7e5e-4cab-affb-4de93e3f2497.png";
             let card =
                 "<div class='codeweek-code-hunting-map-card'>" +
                     "<div class='left'>" +
-                        "<img src='images/code-hunting-game/" + point.image + "'>" +
+                        "<img src='" + image + "'>" +
                         "<div class='links'>" +
                             "<div class='link'><a class='codeweek-button' href='" + point.link_wikipedia + "' target='_blank'>WIKIPEDIA</a></div>" +
                             "<div class='link'><a class='codeweek-button' href='" + point.link_more + "' target='_blank'>READ MORE</a></div>" +
