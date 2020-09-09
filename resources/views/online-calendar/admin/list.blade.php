@@ -5,7 +5,7 @@
 @include('components.livewire')
 
 @section('content')
-    <div x-data="{promotedOnly: false, inCalendar:false}">
+    <div>
         <section class="codeweek-content-header">
 
             <div class="header">
@@ -65,6 +65,9 @@
                                 <tr>
                                     <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
                                         Title
+                                    </th>
+                                    <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                        Language
                                     </th>
                                     <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
                                         Country
