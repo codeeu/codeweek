@@ -78,6 +78,7 @@
         codeHuntingPoints.forEach(point=>{
             const coordinates = point.coordinates.split(",");
             const image = point.image ? "images/code-hunting-game/" + point.image : "https://codeweek-s3.s3.amazonaws.com/event_picture/logo_gs_2016_07703ca0-7e5e-4cab-affb-4de93e3f2497.png";
+            const url_hunt_game = 'https://t.me/treasurehuntbot?start=' + point.hunt_code;
             let card =
                 "<div class='codeweek-code-hunting-map-card'>" +
                     "<div class='left'>" +
@@ -91,23 +92,24 @@
                         "<div class='title'>" + point.title + '</div>' +
                         "<div class='description'>" + point.description + '</div>' +
                     "</div>" +
-                    "<div class='qrcode' id='qrcode-hunting-game'></div>" +
+                    "<a class='qrcode-link' target='_blank' href='" + url_hunt_game + "'><div class='qrcode' id='qrcode-hunting-game'></div></a>" +
                 "</div>";
             const marker = L.marker(coordinates, {icon: robotIcon}).addTo(map)
                 .bindPopup(card,{
                     maxWidth: 600,
                     minWidth: 300
                 });
+            marker.on('popupopen', () => {
+                setTimeout(()=> {
+                    new QRCode(document.getElementById("qrcode-hunting-game"), url_hunt_game);
+                }, 200);
+            });
+
+            /*Create the random point*/
             const randomCoordinate = getRandomLatLng(polygon);
             L.marker(randomCoordinate, {icon: robotIcon}).addTo(map)
                 .bindPopup("No event here! Sorry...");
 
-            marker.on('popupopen', () => {
-                setTimeout(()=> {
-                    const url_hunt_game = 'https://t.me/treasurehuntbot?start=' + point.hunt_code;
-                    new QRCode(document.getElementById("qrcode-hunting-game"), url_hunt_game);
-                }, 200);
-            });
         });
 
 
