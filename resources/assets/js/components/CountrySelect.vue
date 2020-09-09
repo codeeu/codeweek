@@ -23,6 +23,7 @@ export default {
   },
   methods: {
     newCountry() {
+      console.log(this.target);
       window.location.href = '/' + this.target + '/' + this.selected_country;
     }
   }
