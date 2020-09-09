@@ -53,7 +53,9 @@ class OnlineEventsWorkflowTest extends TestCase
             ->assertSee($onlineEventInCountry->title)
             ->assertDontSee($onlineEventInAnotherCountry->title)
             ->assertDontSee($pastOnlineEventInCountry->title)
-            ->assertDontSee($offlineEventInCountry->title);
+            ->assertDontSee($offlineEventInCountry->title)
+            ->assertSee('Promote')
+            ->assertDontSee('Add to Calendar');
 
         $response->assertStatus(200);
     }
