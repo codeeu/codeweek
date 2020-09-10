@@ -27,8 +27,6 @@
 
                     <div class="codeweek-form-inner-container">
 
-                        <div x-text="selectedActivityType"></div>
-
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
                                 <label for="activity_type">* @lang('event.activitytype.label')</label>
