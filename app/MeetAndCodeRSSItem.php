@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Helpers\MeetAndCodeHelper;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
@@ -77,9 +78,16 @@ class MeetAndCodeRSSItem extends Model
             "longitude" => $this->lon,
             "latitude" => $this->lat,
             "geoposition" => $this->lat . "," . $this->lon,
+            "language" => MeetAndCodeHelper::getLanguage($this->link)
         ]);
 
         $event->save();
+
+        //Link Other as theme and audience
+        $event->audiences()->attach(8);
+        $event->themes()->attach(8);
+
+
 
     }
 
