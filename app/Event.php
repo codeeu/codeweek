@@ -275,46 +275,6 @@ class Event extends Model
         return $this->hasOne('App\Notification', 'event_id', 'id');
     }
 
-    public function updateLanguage(){
-
-        $language_table = [
-            'al' => 'Albanian',
-            'ba' => 'Bosnian',
-            'bg' => 'Bulgarian',
-            'cs' => 'Czech',
-            'da' => 'Danish',
-            'de' => 'German',
-            'el' => 'Greek',
-            'en' => 'English',
-            'es' => 'Spanish',
-            'et' => 'Estonian',
-            'fi' => 'Finnish',
-            'fr' => 'French',
-            'hr' => 'Croatian',
-            'hu' => 'Hungarian',
-            'it' => 'Italian',
-            'lt' => 'Lithuanian',
-            'lv' => 'Latvian',
-            'me' => 'Montenegrin',
-            'mk' => 'Macedonian',
-            'mt' => 'Maltese',
-            'nl' => 'Dutch',
-            'pl' => 'Polish',
-            'pt' => 'Portuguese',
-            'ro' => 'Romanian',
-            'rs' => 'Serbian',
-            'sk' => 'Slovak',
-            'sl' => 'Slovenian',
-            'sv' => 'Swedish',
-            'tr' => 'Turkish'
-        ];
-
-        if (is_null($this->language)){
-
-        }
-    }
-
-
 
 
 }
