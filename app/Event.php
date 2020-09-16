@@ -157,7 +157,6 @@ class Event extends Model
 
     public static function getByYear($year)
 
-
     {
 
         $events = Event::where('status', 'like', 'APPROVED')
@@ -275,7 +274,6 @@ class Event extends Model
     {
         return $this->hasOne('App\Notification', 'event_id', 'id');
     }
-
 
 
 
