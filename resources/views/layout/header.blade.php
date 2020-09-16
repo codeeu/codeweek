@@ -10,6 +10,7 @@
                 <a href="javascript:void(null);">@lang('menu.events')</a>
                 <ul>
                     <li><a href="{{route('events_map')}}">@lang('menu.map')</a></li>
+                    <li><a href="{{route('online_calendar')}}">@lang('menu.for_all')</a></li>
                     <li><a href="{{route('create_event')}}">@lang('menu.add_event')</a></li>
                     <li><a href="{{route('scoreboard')}}">@lang('event.scoreboard_by_country')</a></li>
                 </ul>
