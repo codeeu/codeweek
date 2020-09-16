@@ -40,9 +40,7 @@ class UpdateThemeAndAudience extends Command
      */
     public function handle()
     {
-        $events = Event::where("event_url","like","https://meet-and-code.org/%")->whereNull("language")->get();
-
-
+        $events = Event::where("event_url","like","https://meet-and-code.org/%")->get();
 
         foreach ($events as $event) {
 
