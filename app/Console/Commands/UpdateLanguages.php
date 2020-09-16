@@ -2,7 +2,10 @@
 
 namespace App\Console\Commands;
 
+use App\Event;
+use App\Helpers\MeetAndCodeHelper;
 use Illuminate\Console\Command;
+use Illuminate\Support\Arr;
 
 class UpdateLanguages extends Command
 {
@@ -11,7 +14,7 @@ class UpdateLanguages extends Command
      *
      * @var string
      */
-    protected $signature = 'update:languages';
+    protected $signature = 'meetandcode:languages';
 
     /**
      * The console command description.
@@ -37,6 +40,20 @@ class UpdateLanguages extends Command
      */
     public function handle()
     {
-        return 0;
+        $events = Event::where("event_url","like","https://meet-and-code.org/%")->whereNull("language")->get();
+
+        foreach ($events as $event) {
+            MeetAndCodeHelper::detectLanguage($event);
+        }
+
+        $this->info('Languages have been updated');
+
+
+
+
+
+
+
+
     }
 }
