@@ -81,6 +81,12 @@ class MeetAndCodeRSSItem extends Model
 
         $event->save();
 
+        //Link Other as theme and audience
+        $event->audiences()->attach(8);
+        $event->themes()->attach(8);
+
+
+
     }
 
 
