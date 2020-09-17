@@ -214,13 +214,15 @@
                     @lang('cw2020.kick-off.content.8'). <a
                             href="https://www.linkedin.com/in/alessandro-bogliolo-a8395b29">Alessandro Bogliolo</a>,
                     @lang('cw2020.kick-off.content.9')
-                    <a href="{{route("ambassadors")}}">@lang('cw2020.kick-off.content.10')</a> @lang('cw2020.kick-off.content.11')<br/><br/>
+                    <a href="{{route("ambassadors")}}">@lang('cw2020.kick-off.content.10')</a> @lang('cw2020.kick-off.content.11')
+{{--                    @lang('cw2020.kick-off.content.12')--}}
+                    <br/><br/>
 
 
-                    @lang('cw2020.kick-off.content.12')<br/><br/>
+                    @lang('cw2020.kick-off.content.13')<br/><br/>
 
-                    @lang('cw2020.kick-off.content.13') <a href="https://www.facebook.com/codeEU/">Facebook</a> @lang('cw2020.kick-off.content.14') <a
-                            href="https://www.youtube.com/channel/UCw30ZaWtCvGb4yudW6tCXAA">YouTube</a> @lang('cw2020.kick-off.content.15')
+                    @lang('cw2020.kick-off.content.14') <a href="https://www.facebook.com/codeEU/">Facebook</a> @lang('cw2020.kick-off.content.15') <a
+                            href="https://www.youtube.com/channel/UCw30ZaWtCvGb4yudW6tCXAA">YouTube</a> @lang('cw2020.kick-off.content.16')
                 </div>
             </div>
 
