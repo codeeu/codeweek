@@ -159,14 +159,11 @@
 
                     <div>Winners will be selected every day and announced on our Instagram channel via Stories, so don't
                         forget to check your notifications regularly, you might just run into good luck today.
-                    </div>
 
-                    {{--                    <h4>Resources you will need:</h4>--}}
-                    {{--                    <ul style="list-style-type: circle;margin-left:40px; margin-top:-4px;">--}}
-                    {{--                        <li>The Code Week soundtrack</li>--}}
-                    {{--                        <li>The #CodeWeekDance moves</li>--}}
-                    {{--                        <li>An example of the Code Week Dance</li>--}}
-                    {{--                    </ul>--}}
+                    <br/>
+                    <br/>
+                        The #CodeWeekDance is based on the <a href="http://www.codeweek.it/ode-to-code/">Ode to Code</a>, composed by Brendan Paolini, and the dance developed by Bianca Maria Berardi in 2015, from an idea of Alessandro Bogliolo, Professor of Computer Systems at the University of Urbino.
+                    </div>
 
                 </div>
 
