@@ -1,14 +1,5 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Base Language Lines
-|--------------------------------------------------------------------------
-|
-| The following language lines contain the default labels.
-|
-*/
-
 return [
     "common" => [
         "resources" => "Resources you will need",
@@ -155,7 +146,8 @@ return [
             "And if this is not enough, the Code Week team will also be showcasing new website features, resources and challenges.",
             "Professor of Computer Systems at the University of Urbino and coordinator of the",
             "Code Week ambassadors",
-            "will be telling you more about the Code Week virtual Treasure Hunt. And xxx will give you the heads-up on the new #CodeWeekDance challenge.",
+            "will be telling you more about the Code Week virtual Treasure Hunt.",
+            "And xxx will give you the heads-up on the new #CodeWeekDance challenge.",
             "Members of the EU Code Week Community will introduce new local and global or “glocal” activities as we like to call them. We will also be connecting with schools and students from all over Europe who will be sharing their coding stories and exchanging ideas with the guest speakers.",
             "You will also have the chance to share your thoughts, ideas and ask your questions. All you need to do is tune in to our live stream on",
             "or",
