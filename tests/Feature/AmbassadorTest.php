@@ -30,9 +30,9 @@ class AmbassadorTest extends TestCase
         $this->belgium = create('App\Country',['iso'=>'BE','facebook'=>'facebook_url']);
 
 
-        $this->admin_be = create('App\User', ['country_iso' => $this->belgium->iso])->assignRole('super admin');
-        $this->ambassador_be = create('App\User', ['country_iso' => $this->belgium->iso])->assignRole('ambassador');
-        $this->ambassador_fr = create('App\User', ['country_iso' => $this->france->iso])->assignRole('ambassador');
+        $this->admin_be = create('App\User', ['country_iso' => $this->belgium->iso, 'lastname' => 'foobar_name_1'])->assignRole('super admin');
+        $this->ambassador_be = create('App\User', ['country_iso' => $this->belgium->iso,'lastname' => 'foobar_name_2'])->assignRole('ambassador');
+        $this->ambassador_fr = create('App\User', ['country_iso' => $this->france->iso, 'lastname' => 'foobar_name_3'])->assignRole('ambassador');
 
 
     }
