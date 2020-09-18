@@ -12,14 +12,19 @@ class EventPolicy
 {
     use HandlesAuthorization;
 
+    public function before($user, $ability)
+    {
+        if ($user->hasRole('super admin')) {
+            return true;
+        }
+    }
+
     public function approve(User $user, Event $event)
     {
 
         Log::info("can approve ?" . $user->hasRole('super admin'));
 
-        if ($user->hasRole('super admin')) {
-            return true;
-        }
+
         if ($user->hasRole('ambassador')) {
             return $event->country_iso === $user->country_iso;
         }
@@ -32,17 +37,13 @@ class EventPolicy
     {
 
 
-        if ($event->status != "APPROVED") {
+        if ($event->status !== "APPROVED") {
             return false;
         }
 
         if (!Carbon::parse($event->start_date)->isPast()) {
             return false;
         };
-
-        if ($user->hasRole('super admin')) {
-            return true;
-        }
 
         if ($user->email === $event->owner->email) {
             return true;
@@ -66,10 +67,7 @@ class EventPolicy
             return true;
         }
 
-        if ($user->hasRole('super admin')) {
 
-            return true;
-        }
         if ($user->hasRole('ambassador')) {
             return $event->country_iso === $user->country_iso;
         }
@@ -81,15 +79,15 @@ class EventPolicy
     public function edit(User $user, Event $event)
     {
 
-        if ($user->hasRole('super admin')) {
-            return true;
-        }
+
 
         if ($user->hasRole('ambassador')) {
             if ($event->country_iso === $user->country_iso) return true;
         }
 
         if (!is_null($event->reported_at)) return false;
+
+        if ($event->status == "APPROVED") return false;
 
         if ($user->email === $event->owner->email) {
             return true;
@@ -107,10 +105,6 @@ class EventPolicy
     public function delete(User $user, Event $event)
     {
 
-        if ($user->hasRole('super admin')) {
-            return true;
-        }
-
         if ($user->hasRole('ambassador')) {
             if ($event->country_iso === $user->country_iso) return true;
         }
@@ -125,10 +119,6 @@ class EventPolicy
     public function promote(User $user, Event $event)
     {
 
-        if ($user->hasRole('super admin')) {
-            return true;
-        }
-
         if ($user->hasRole('ambassador')) {
             if ($event->country_iso === $user->country_iso) return true;
         }
@@ -138,10 +128,6 @@ class EventPolicy
 
     public function feature(User $user, Event $event)
     {
-
-        if ($user->hasRole('super admin')) {
-            return true;
-        }
 
         return false;
     }
