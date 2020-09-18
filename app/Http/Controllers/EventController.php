@@ -171,6 +171,9 @@ class EventController extends Controller
      */
     public function edit(Event $event)
     {
+
+        $this->authorize('edit', $event);
+
         $t = $event->tags()->pluck('name')->toArray();
 
         $countries = \App\Country::all()->sortBy('name');
@@ -198,7 +201,6 @@ class EventController extends Controller
      */
     public function update(EventRequest $request, Event $event)
     {
-
 
         $this->authorize('edit', $event);
 
