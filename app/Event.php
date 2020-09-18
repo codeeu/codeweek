@@ -148,6 +148,14 @@ class Event extends Model
 
     }
 
+    public function get_start_date_simple()
+    {
+        $dt = Carbon::parse($this->start_date);
+
+        return $dt->format('d/m/Y \\- H:i');
+
+    }
+
 
     public function scopeFilter($query, EventFilters $filters)
     {
