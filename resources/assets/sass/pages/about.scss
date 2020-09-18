@@ -8,6 +8,10 @@
   padding: 20px 20px;
 }
 
+#codeweek-about-page .codeweek-content-wrapper .codeweek-about-white-box{
+  padding: 20px 20px;
+}
+
 #codeweek-about-page .codeweek-content-wrapper .codeweek-about-blue-box h1,
 #codeweek-about-page .codeweek-content-wrapper .codeweek-about-blue-box p{
   padding-left: 0;
@@ -39,7 +43,19 @@
   #codeweek-about-page .codeweek-content-wrapper p{
     padding: 15px 40px;
   }
-  #codeweek-about-page .codeweek-content-wrapper .codeweek-about-blue-box{
+
+
+  #codeweek-about-page h3{
+    margin-top:15px;
+  }
+
+  #codeweek-about-page h4{
+    margin-top:8px;
+    margin-left:10px;
+    margin-bottom:4px;
+    color: #0d2460;
+  }
+  #codeweek-about-page .codeweek-content-wrapper .codeweek-about-blue-box .codeweek-about-white-box{
     padding: 20px 40px;
   }
 }
@@ -51,6 +67,9 @@
   }
   #codeweek-about-page .codeweek-content-wrapper .codeweek-about-blue-box{
     background-color: $category-background5;
+    padding: 40px 100px;
+  }
+  #codeweek-about-page .codeweek-content-wrapper .codeweek-about-white-box{
     padding: 40px 100px;
   }
 
