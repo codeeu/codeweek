@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use App\Event;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Support\Carbon;
 use Tests\TestCase;
 
 class UpdateEventTest extends TestCase
@@ -53,6 +54,41 @@ class UpdateEventTest extends TestCase
             $this->assertEquals('PENDING', $t->status);
 
 
+        });
+
+    }
+
+    /** @test */
+    function event_cannot_be_updated_by_its_owner_when_approved()
+    {
+
+
+        $user = create(\App\User::class);
+
+        $this->signIn($user);
+
+        $event = create('App\Event',["creator_id"=>$user->id,"status"=>"APPROVED"]);
+
+        $event->title = 'Initial Title';
+        $event->description = 'Initial description.';
+        $event->theme = "1,2";
+        $event->audience = "1,2,3";
+        $event->tags = "foo,bar,joe";
+        $event->privacy = true;
+        $event->reported_at = null;
+
+        $this->patch('/events/' . $event->id, $event->toArray());
+
+
+        $event->title = 'Changed';
+        $event->description = 'Changed description.';
+
+        $this->patch('/events/' . $event->id, $event->toArray());
+
+
+        tap($event->fresh(), function ($t) {
+            $this->assertNotEquals('Changed', $t->title);
+            $this->assertNotEquals('Changed description.', $t->description);
         });
 
     }

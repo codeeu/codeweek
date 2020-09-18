@@ -121,9 +121,6 @@ class MeetAndCode extends Command
                 }
 
                 $line->save();
-
-
-                //dump($exception->getCode());
             }
 
 
