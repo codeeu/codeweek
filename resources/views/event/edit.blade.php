@@ -312,7 +312,7 @@
             "renderTo" : "events-edit-map",
             "height": "250",
             "width": "422",
-            "custom": ["js/hideMenuMap.js"]
+            "custom": ["/js/hideMenuMap.js"]
         }
     </script>
 
