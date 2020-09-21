@@ -42,5 +42,5 @@ return [
     'coding@home' => 'Coding@Home',
     'values' => 'Our values',
     'online_events' => 'Online Activities',
-    'for_all' => 'For All',
+    'featured_activities' => 'Featured Activities',
 ];

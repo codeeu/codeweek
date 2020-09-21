@@ -191,7 +191,7 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
 Route::get('/codeweek4all/{code}/detail', 'Codeweek4AllController@detail')->name('codeweek4all_details');
 
 
-Route::get('/online-calendar', 'OnlineEventsController@calendar')->name('online_calendar');
+Route::get('/featured-activities', 'OnlineEventsController@calendar')->name('featured_activities');
 
 
 Route::get('/profile', function () {
