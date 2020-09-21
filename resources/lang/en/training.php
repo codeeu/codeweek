@@ -23,9 +23,9 @@ return [
 
     'lessons' => [
         '1' => [
-            'title'=>'Coding without digital technology (unplugged)',
-            'author'=>'By Alessandro Bogliolo',
-            'text'=>'<p>
+            'title' => 'Coding without digital technology (unplugged)',
+            'author' => 'By Alessandro Bogliolo',
+            'text' => '<p>
                     Coding is the language of things, which allows us to write programs to grant new functionalities to the tens of billions of programmable objects around us. Coding is the fastest way to make our ideas come true and the most effective way to develop computational thinking capabilities. However, technology is not strictly required to develop computational thinking. Rather, our computational thinking skills are essential to make technology work.
                 </p>
 
@@ -36,16 +36,16 @@ return [
                 <p>
                     Unplugged coding activities unveil the computational aspects of the physical world around us.
                 </p>',
-            'activities'=>[
-                '1'=>'Activity 1 – CodyRoby for Primary School',
-                '2'=>'Activity 2 – CodyRoby for Lower Secondary School',
-                '3'=>'Activity 3 – CodyRoby for Secondary School'
+            'activities' => [
+                '1' => 'Activity 1 – CodyRoby for Primary School',
+                '2' => 'Activity 2 – CodyRoby for Lower Secondary School',
+                '3' => 'Activity 3 – CodyRoby for Secondary School'
             ]
         ],
         '2' => [
-            'title'=>'Computational thinking and problem solving',
-            'author'=>'By Miles Berry',
-            'text'=>'<p>
+            'title' => 'Computational thinking and problem solving',
+            'author' => 'By Miles Berry',
+            'text' => '<p>
                     Computational thinking (CT) describes a way of looking at problems and systems so that a computer can be used to help us solve or understand them. Computational thinking is not only essential to the development of computer programs, but can also be used to support problem solving across all disciplines.
                 </p>
 
@@ -56,16 +56,16 @@ return [
                 <p>
                     In this video, Miles Berry, Principal Lecturer at University of Roehampton School of Education at Guildford (United Kingdom), will introduce the concept of computational thinking and the different ways a teacher can integrate it in the classroom with simple games.
                 </p>',
-            'activities'=>[
-                '1'=>'Activity 1 – Developing Mathematical Reasoning for Primary School',
-                '2'=>'Activity 2 – Acquaintance with Algorithms for Lower Secondary School',
-                '3'=>'Activity 3 – Algorithms for Upper Secondary School'
+            'activities' => [
+                '1' => 'Activity 1 – Developing Mathematical Reasoning for Primary School',
+                '2' => 'Activity 2 – Acquaintance with Algorithms for Lower Secondary School',
+                '3' => 'Activity 3 – Algorithms for Upper Secondary School'
             ]
         ],
         '3' => [
-            'title'=>'Visual programming – introduction to Scratch',
-            'author'=>'By Margo Tinawi',
-            'text'=>'<p>
+            'title' => 'Visual programming – introduction to Scratch',
+            'author' => 'By Margo Tinawi',
+            'text' => '<p>
                     Visual programming lets humans describe processes using illustrations or graphics. We usually speak of visual programming as opposed to text-based programming. Visual programming languages (VPLs) are especially well adapted to introduce algorithmic thinking to children (and even adults). With VPLs, there is less to read and no syntax to implement.
                 </p>
 
@@ -80,16 +80,16 @@ return [
                 <p>
                     Scratch is a free tool, very intuitive and motivating for your students. Have a look at Margo’s video to learn how to get started.
                 </p>',
-            'activities'=>[
-                '1'=>'Activity 1 – Scratch Basic for Primary School',
-                '2'=>'Activity 2 – Scratch Basic for Lower Secondary School',
-                '3'=>'Activity 3 – Scratch Basic for Secondary School'
+            'activities' => [
+                '1' => 'Activity 1 – Scratch Basic for Primary School',
+                '2' => 'Activity 2 – Scratch Basic for Lower Secondary School',
+                '3' => 'Activity 3 – Scratch Basic for Secondary School'
             ]
         ],
         '4' => [
-            'title'=>'Creating educational games with Scratch',
-            'author'=>'By Jesús Moreno León',
-            'text'=>'<p>
+            'title' => 'Creating educational games with Scratch',
+            'author' => 'By Jesús Moreno León',
+            'text' => '<p>
                     Critical thinking, persistence, problem solving, computational thinking and creativity are only some of the key skills that your students need to succeed in the 21st century, and coding can help you achieve these in a fun and motivating way.
                 </p>
 
@@ -104,16 +104,16 @@ return [
                 <p>
                     Have a look at the video to learn how to get started:
                 </p>',
-            'activities'=>[
-                '1'=>'Activity 1 - Questions and answers game with Scratch for Primary School',
-                '2'=>'Activity 2 - Questions and answers game with Scratch for Lower Secondary School',
-                '3'=>'Activity 3 - Questions and answers game with Scratch for Secondary School'
+            'activities' => [
+                '1' => 'Activity 1 - Questions and answers game with Scratch for Primary School',
+                '2' => 'Activity 2 - Questions and answers game with Scratch for Lower Secondary School',
+                '3' => 'Activity 3 - Questions and answers game with Scratch for Secondary School'
             ]
         ],
         '5' => [
-            'title'=>'Making, robotics and tinkering in the classroom',
-            'author'=>'By Tullia Urschitz',
-            'text'=>'<p>
+            'title' => 'Making, robotics and tinkering in the classroom',
+            'author' => 'By Tullia Urschitz',
+            'text' => '<p>
                     The integration of coding, tinkering, robotics, and microelectronics as teaching and learning tools in the school curricula is key in 21st century education.
                 </p>
 
@@ -124,32 +124,32 @@ return [
                 <p>
                     Have a look at this video where Tullia Urschitz, Italian Scientix ambassador and STEM teacher in Sant’Ambrogio Di Valpolicella, Italy, will give some practical examples on how teachers can integrate tinkering and robotics in the classroom, thus transforming passive students into enthusiastic makers.
                 </p>',
-            'activities'=>[
-                '1'=>'Activity 1 - How to make a mechanical, hardboard hand for Primary School',
-                '2'=>'Activity 2 - How to make a mechanical or robotic hand for Lower Secondary School',
-                '3'=>'Activity 3 - How to make a mechanical or robotic hand for Upper Secondary School'
+            'activities' => [
+                '1' => 'Activity 1 - How to make a mechanical, hardboard hand for Primary School',
+                '2' => 'Activity 2 - How to make a mechanical or robotic hand for Lower Secondary School',
+                '3' => 'Activity 3 - How to make a mechanical or robotic hand for Upper Secondary School'
             ]
         ],
         '6' => [
-            'title'=>'Developing creative thinking through mobile app development',
-            'author'=>'By Rosanna Kurrer',
-            'text'=>'<p>
+            'title' => 'Developing creative thinking through mobile app development',
+            'author' => 'By Rosanna Kurrer',
+            'text' => '<p>
                     Have a look at this video where Rosanna Kurrer, (Founder of <a href="https://www.cyberwayfinder.com">CyberWayFinder</a>) explains what App Inventor is, goes through the advantages of using App development in the classroom and gives some practical examples on how teachers can integrate App Inventor in the classroom, transforming passive students into enthusiastic game makers.
                 </p>
 
                 <p>
                     We all use applications as they are a convenient and fast way to coordinate our activities. They are also more and more used in education as they allow personalised learning and enable users to acquire information, so why not empower your students to build an educational app for others?
                 </p>',
-            'activities'=>[
-                '1'=>'Activity 1 – My First HelloWorld! Mobile App',
-                '2'=>'Activity 2 – Drawing with Shapes App - Using Geometrical shapes and Math equations to draw',
-                '3'=>'Activity 3 – TranslateMe App - Using Voice Computing blocks and the Yandex Translation Service'
+            'activities' => [
+                '1' => 'Activity 1 – My First HelloWorld! Mobile App',
+                '2' => 'Activity 2 – Drawing with Shapes App - Using Geometrical shapes and Math equations to draw',
+                '3' => 'Activity 3 – TranslateMe App - Using Voice Computing blocks and the Yandex Translation Service'
             ]
         ],
         '7' => [
-            'title'=>'Tinkering and Making',
-            'author'=>'By Diogo da Silva',
-            'text'=>'<p>
+            'title' => 'Tinkering and Making',
+            'author' => 'By Diogo da Silva',
+            'text' => '<p>
                     Jobs and workplaces are changing and education is following in their footsteps. When preparing
                     students for 21st century careers, new skills such as tinkering, making and hacking become
                     essential, as they narrow the gap between school and reality. By transforming the classroom into
@@ -164,16 +164,16 @@ return [
                     make and hack their way to a solution.
 
                 </p>',
-            'activities'=>[
-                '1'=>'Activity 1 – Time gates: measuring speed with micro:bit',
-                '2'=>'Activity 2 – Building a conductivity-based game using BBC micro:bit',
-                '3'=>'Activity 3 – Building a smart luminaire using micro:bit'
+            'activities' => [
+                '1' => 'Activity 1 – Time gates: measuring speed with micro:bit',
+                '2' => 'Activity 2 – Building a conductivity-based game using BBC micro:bit',
+                '3' => 'Activity 3 – Building a smart luminaire using micro:bit'
             ]
         ],
         '8' => [
-            'title'=>'Coding for all subjects',
-            'author'=>'By M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
-            'text'=>'<p>
+            'title' => 'Coding for all subjects',
+            'author' => 'By M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text' => '<p>
                     When you think of coding in the classroom, the first image that comes to mind is of computers, Technology, Mathematics or Science. However, given that students have a number of interests and subjects, why not use this in our favor and implement coding across the entire curriculum?
                 </p>
 
@@ -188,97 +188,128 @@ return [
                 <p>
                     Have a look at the video below to see how Music, Science or Languages teachers can easily integrate coding and computational thinking in the classroom, even though you have no previous experience.
                 </p>',
-            'activities'=>[
-                '1'=>'Tinkering and coding with Makey Makey, by M. Isabel Blanco and M. Concepción Fernández.',
-                '2'=>'Music is coding, by Elisabetta Nanni.',
-                '3'=>'Robotics and inclusion for primary in STEM, by Debora Carmela Niutta.',
-                '4'=>'A daily life algorithm for a CLIL lesson, by Stefania Altieri.'
+            'activities' => [
+                '1' => 'Tinkering and coding with Makey Makey, by M. Isabel Blanco and M. Concepción Fernández.',
+                '2' => 'Music is coding, by Elisabetta Nanni.',
+                '3' => 'Robotics and inclusion for primary in STEM, by Debora Carmela Niutta.',
+                '4' => 'A daily life algorithm for a CLIL lesson, by Stefania Altieri.'
             ]
         ],
         '9' => [
-            'title'=>'Making an automaton with a micro:bit',
-            'author'=>'by Pauline Maas',
-            'text'=>'<p>
+            'title' => 'Making an automaton with a micro:bit',
+            'author' => 'by Pauline Maas',
+            'text' => '<p>
                    Using a Micro: bit, the easily programmable, pocket-sized computer, can be a fun and easy way to make interesting creations, from robots to musical instruments with your students, while at the same time teaching them how to code. It’s simple and easy to use for even the youngest programmers, while at the same time powerful enough for more advanced students. You can incorporate it in a variety of lessons from history to maths and even science. The possibilities are endless. The Micro: bit is an engaging and inexpensive way to teach students about coding while instilling crucial skills such as computational thinking, problem-solving, and creativity.
                    </p>
                    <p>
                         In this video, Pauline Maas, Computer Science teacher at Koninklijke Visio, will introduce the Micro: bit and give a few practical examples of how teachers can integrate it into the classroom, transforming passive students into enthusiastic creators.
                 </p>',
-            'activities'=>[
-                '1'=>'Morse Code with the micro: bit, for Primary School',
-                '2'=>'Escape room with the micro: bit, for Lower Secondary School',
-                '3'=>'Making an automaton, for Upper Secondary School',
+            'activities' => [
+                '1' => 'Morse Code with the micro: bit, for Primary School',
+                '2' => 'Escape room with the micro: bit, for Lower Secondary School',
+                '3' => 'Making an automaton, for Upper Secondary School',
             ]
         ],
         '10' => [
-            'title'=>'Creative coding with Python',
-            'author'=>'by Ivana Vezjak',
-            'text'=>'<p>
+            'title' => 'Creative coding with Python',
+            'author' => 'by Ivana Vezjak',
+            'text' => '<p>
                    Moving from visual to text-based programming is a natural flow in coding. While visual programming is often great for beginners, after a while, students may crave a new challenge. Text-based programming is the next step for anyone who wants to dive further into programming and computational thinking.</p><p> 
 In this video, Ivana Vezjak introduces you to  Python’s basic syntax. Python is one of the most popular programming languages today, used in many fields like data science, AI, machine learning, web development, etc. While Python is a powerful programming language used by experienced programmers, it can be used even by those without any coding experience because of its simplicity and clear syntax.</p><p> 
 With Python, students can create quizzes about historical events, solve math problems and make physics simulations, create games, build websites, conduct data analysis for scientific projects, and much more. Python has a rich and extensive standard library, a large community, and a great number of tutorials and projects available online, which can be used for teaching, learning, and practicing. By coding in Python, analysing programs, and fixing bugs, students develop creativity and learn how to be consistent, persistent, and patient. They learn analytical thinking and problem-solving skills by breaking down complex problems into smaller components. These competences will help them in how they approach problems in every other domain of their lives.
 
                 </p>',
-            'activities'=>[
-                '1'=>'My first quiz, for Primary School',
-                '2'=>'Hangman, for Lower Secondary School',
-                '3'=>'Guess the flag!, for Upper Secondary School',
+            'activities' => [
+                '1' => 'My first quiz, for Primary School',
+                '2' => 'Hangman, for Lower Secondary School',
+                '3' => 'Guess the flag!, for Upper Secondary School',
             ],
-            'links'=>[
+            'links' => [
                 'title' => 'Other related resources',
                 '1' => [
-                    "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Python Standard Library",
-                    "description"=>"Collection of pre-built code and modules (e.g. turtle module, math module etc.)",
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "Python Standard Library",
+                    "description" => "Collection of pre-built code and modules (e.g. turtle module, math module etc.)",
                 ],
                 '2' => [
-                    "url"=>"https://codecombat.com/",
-                    "title"=>"CodeCombat",
-                    "description"=>"Educational video game for learning programming concepts.",
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Educational video game for learning programming concepts.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
-                    "title"=>"CodeClub projects",
-                    "description"=>"From beginners to advanced, step-by-step programming projects for kids.",
+                    "url" => "https://projects.raspberrypi.org/en/codeclub",
+                    "title" => "CodeClub projects",
+                    "description" => "From beginners to advanced, step-by-step programming projects for kids.",
                 ],
                 '4' => [
-                    "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Invent your own computer games with Python",
-                    "description"=>"Book that will teach you how to program your own computer games with Python.",
+                    "url" => "https://inventwithpython.com/invent4thed/",
+                    "title" => "Invent your own computer games with Python",
+                    "description" => "Book that will teach you how to program your own computer games with Python.",
                 ],
                 '5' => [
-                    "url"=>"https://www.codewars.com/",
-                    "title"=>"CodeWars",
-                    "description"=>"Educational community where students and teachers can train themselves through a series of challenges.",
+                    "url" => "https://www.codewars.com/",
+                    "title" => "CodeWars",
+                    "description" => "Educational community where students and teachers can train themselves through a series of challenges.",
                 ],
                 '6' => [
-                    "url"=>"https://hourofpython.com/",
-                    "title"=>"Hour of Python",
-                    "description"=>"Collection of Python introductory lessons (both text-based and blocks) using interactive Trinkets.",
+                    "url" => "https://hourofpython.com/",
+                    "title" => "Hour of Python",
+                    "description" => "Collection of Python introductory lessons (both text-based and blocks) using interactive Trinkets.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'Coding for Inclusion',
-            'author'=>'by the Code Week team',
-            'text'=>'<p>
+            'title' => 'Coding for Inclusion',
+            'author' => 'by the Code Week team',
+            'text' => '<p>
                    Bringing coding into your classroom can be a challenge, especially if you have students with certain disabilities in your class. But it’s important to remember that anyone, no matter their abilities, can learn how to code. Children with special needs can greatly benefit from learning aspects of coding because it teaches students important life skills such as solving problems, organization, and independence. Coding can also improve interpersonal skills and social skills through collaboration and teamwork, skills which many children with disabilities struggle with. Most importantly, students have fun while learning alongside their peers.
                    </p><p>
                    In this video, the Code Week team will show you some practical, easy, and fun coding activities especially adapted for students with visual impairments, Down syndrome, and students on the Autism Spectrum, that teachers can easily bring to their classroom.
                 </p>',
-            'activities'=>[
-                '1'=>'Egg carton Unplugged',
-                '2'=>'A very smart mouse ',
-                '3'=>'A star making stars',
+            'activities' => [
+                '1' => 'Egg carton Unplugged',
+                '2' => 'A very smart mouse ',
+                '3' => 'A star making stars',
+            ]
+        ],
+        '12' => [
+            'title' => 'Introduction to Artificial Intelligence in the classroom',
+            'author' => 'by Artur Coelho and Marjana Prifti Skenduli',
+            'text' => [
+                '1' => 'Artificial Intelligence (AI) has an impact on many areas of daily life: it autocorrects the text you type on your phone, choses the music your favourite music app plays, and it remembers your passwords when you have forgotten them. AI refers to a combination of machine learning, robotics, and algorithms, with applications in all fields: from computer science to manufacturing, and from medicine to fashion. Therefore, it has an undeniable place in our lives and in our societies and it plays a key role in science development. And as any other important phenomena in our lives, students will benefit from learning about it. But how to teach about such a complex thing as AI?',
+                '2' => 'This Learning Bit will help you explain to students what AI is and what role does it play in students’ lives. These activities are designed for non-experts to easily understand the contents, and to be able to effectively break down complex terms into easily understandable ideas. With these lesson plans you can help students learn the uses of AI and some of the mechanisms behind it. These activities are designed for students to develop their analytical and critical thinking skills: for example, in Marjana’s activity students develop a classification pipeline. These activities will also help students understand the varied applications of AI: in Artur’s activity they will learn about the link between AI and Art, and how AI can be used to enhance visual expression. With these activities, students will also reflect on the dangers of AI, and their impact.'
+            ],
+            'activities' => [
+                '1' => 'Human-AI- Art, for Primary School',
+                '2' => 'Teaching Machines to Classify: Intro to Supervised Machine Learning, for Lower Secondary School',
+                '3' => 'Teaching Machines to Classify: Intro to Supervised Machine Learning, for Upper Secondary School',
+            ]
+        ],
+        '13' => [
+            'title' => 'Coding for sustainable development goals',
+            'author' => 'by Francisco Javier Masero, Cristina Nicolaita and Erviola Konomi',
+            'text' => [
+                '1' => 'Traditional education provides students with few opportunities to understand and solve real world problems such as global climate change, gender equality, hunger, poverty or good health and well-being. ',
+                '2' => 'The Sustainable Development Goals (SDGs) are the core of the 2030 Agenda for Sustainable Development, adopted by all member states of the United Nations as a road map to achieve peace and prosperity on the planet, encouraging global development. Teachers can use the SDGs in the classroom as a tool for students to develop their critical thinking, but also to help them find their identity and purpose. Combining basic elements of coding and computational thinking with the SDGs will boost your students’ confidence, and you will help them develop their creativity, entrepreneurial spirit, problem-solving or communication skills.',
+                '3' => 'In the activities below, students will apply the principles Scratch, ASCII coding and unplugged coding to topics of global and social relevance today. Teachers will be raising awareness about the sustainable development goals while helping them develop empathy, active citizenship, and prosocial skills in a fun and engaging way.',
+                '4' => 'These lesson plans focus on one of the SDGs each:',
+                '5' => 'Sustainable Development Goal 3: Ensure healthy lives and promote well-being for all at all ages',
+                '6' => 'Sustainable Development Goal 5: Achieve gender equality and empower all women and girls',
+                '7' => 'Sustainable Development Goal 13: Take urgent action to combat climate change and its impacts ',
+            ],
+            'activities' => [
+                '1' => 'Karateka project: Knowing the karate through programming, for Primary, Lower and Upper Secondary School',
+                '2' => 'Sustainable development goals and coding for climate change, for Primary School',
+                '3' => 'Coding for gender equality, for Upper Secondary School',
             ]
         ],
     ],
     'download_video_script' => 'Download the video script',
     'ready_to_share' => 'Ready to share what you learnt with your students?',
     'choose_lessons' => 'Choose one of the lesson plans below and organize an activity with your students.',
-    'footer'=>[
-        'title'=>'Do not forget to add your activity to the Code Week Map!',
-        'text'=>'<p>
+    'footer' => [
+        'title' => 'Do not forget to add your activity to the Code Week Map!',
+        'text' => '<p>
     You can easily organize a lesson in your classroom, an open day, or an event at your school. Just find a date and register your activity in the <a href="/events">Code Week map</a>.  Each activity organizer will get a certificate of participation for their effort.
 </p>
 
