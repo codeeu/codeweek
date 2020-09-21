@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Zaposleni',
         'Unemployed adults' => 'Nezaposleni',
         'Other (see description)' => 'Drugi (vidi opis)',
+          'Teachers' => 'Učitelji',
     ],
     'theme' => [
         'Basic programming concepts' => 'Osnovni koncepti programiranja',

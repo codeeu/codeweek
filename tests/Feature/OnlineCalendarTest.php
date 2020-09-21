@@ -21,7 +21,7 @@ class OnlineCalendarTest extends TestCase
     public function it_should_get_upcoming_online_events()
     {
         //Good ones
-        create('App\Event', ['activity_type' => "open-online", "status"=>"APPROVED",'start_date'=>Carbon::now(), 'highlighted_status' => 'FEATURED']);
+        create('App\Event', ['activity_type' => "open-online", "status"=>"APPROVED",'start_date'=>Carbon::now()->addDay(), 'highlighted_status' => 'FEATURED']);
         create('App\Event', ['activity_type' => "open-online", "status"=>"APPROVED",'start_date'=>Carbon::now()->addDays(10), 'highlighted_status' => 'FEATURED']);
 
 

@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Korralda või toeta üritusi oma linnas',
     'or_contact_your' => 'või pöördu oma',
     'eu_code_week_ambassadors' => 'ELi programmeerimisnädala Code Week saadikute poole',
-    'show_events_for'=>'Kuva üritusi: ',
+    'show_events_for' => 'Kuva üritusi: ',
     'who' => 'Kelle jaoks on üritus mõeldud?',
     'tags' => 'Sildid',
     'image' => 'Pilt',
@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Töötavad täiskasvanud',
         'Unemployed adults' => 'Töötud täiskasvanud',
         'Other (see description)' => 'Muud (vt kirjeldust)',
+        'Teachers' => 'Õpetajad',
     ],
     'theme' => [
         'Basic programming concepts' => 'Programmeerimise algtõed',
@@ -112,15 +113,15 @@ return [
         'explanation' => 'Kui said koolikaaslaselt või sõbralt Code Week 4 All koodi, siis kleebi see siia või jäta tühjaks. Lisateavet Code Week 4 All kohta leiad',
         'link' => 'siit',
     ],
-    'thanks_page'=>[
-        'title'=>'Aitäh, et lisasid oma ürituse!',
-        'phrase1'=>'Mõni meie saadikutest vaatab nüüd su ürituse üle',
-        'phrase2'=>'ja veendub, et kõik on korras.',
-        'phrase3'=>'Kui sul on küsimusi, pöördu mõne meie',
-        'phrase4'=>'riikliku saadiku poole',
-        'phrase5'=>'või saada meile',
-        'phrase6'=>'e-kiri.',
-        'phrase7'=>'Oma Code Week 4 All koodi võid ka teistele jagada:'
+    'thanks_page' => [
+        'title' => 'Aitäh, et lisasid oma ürituse!',
+        'phrase1' => 'Mõni meie saadikutest vaatab nüüd su ürituse üle',
+        'phrase2' => 'ja veendub, et kõik on korras.',
+        'phrase3' => 'Kui sul on küsimusi, pöördu mõne meie',
+        'phrase4' => 'riikliku saadiku poole',
+        'phrase5' => 'või saada meile',
+        'phrase6' => 'e-kiri.',
+        'phrase7' => 'Oma Code Week 4 All koodi võid ka teistele jagada:'
     ],
     'activitytype' => [
         'label' => 'Tegevuse tüüp',
@@ -131,7 +132,7 @@ return [
         'invite-in-person' => 'Privaatkutsega tegevus'
 
     ],
-    'privacy'=>'Ma olen lugenud ja nõustun antud dokumendis kirjeldatud Privaatsuspoliitikaga.',
+    'privacy' => 'Ma olen lugenud ja nõustun antud dokumendis kirjeldatud Privaatsuspoliitikaga.',
     'country' => 'Riik',
     'loading' => 'Laetakse ...',
     'add_activity' => 'Lisa tegevus',
@@ -147,10 +148,6 @@ return [
     'view_your_certificate' => 'Vaadake oma tunnistust siin',
     'submit_event_and_report' => 'Esitage aruanne selle ürituse kohta ja küsige oma tunnistust programmeerimisnädala Code Week kohta.',
     'report_and_claim' => 'Esitage ürituse aruanne ja küsige tunnistust'
-
-
-
-
 
 
 ];

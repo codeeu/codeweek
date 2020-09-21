@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Etkinlik düzenleyin ya da şehrinizdeki etkinlikleri destekleyin',
     'or_contact_your' => 'veya aşağıdakilerle irtibat kurun:',
     'eu_code_week_ambassadors' => 'AB Kod Haftası Elçileri',
-    'show_events_for'=>'Etkinlikleri göster ',
+    'show_events_for' => 'Etkinlikleri göster ',
     'who' => 'Etkinlik kimler için?',
     'tags' => 'Etiketler',
     'image' => 'Resim',
@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Çalışan',
         'Unemployed adults' => 'İşsiz',
         'Other (see description)' => 'Diğer (açıklamaya bakınız)',
+        'Teachers' => 'Öğretmenler',
     ],
     'theme' => [
         'Basic programming concepts' => 'Temel programlama kavramları',
@@ -112,15 +113,15 @@ return [
         'explanation' => 'Bir iş arkadaşınızdan ya da bir yakınınızdan Herkes için Kod Haftası kodu aldıysanız buraya yapıştırın, aksi hâlde lütfen boş bırakın. Herkes için Kod Haftası hakkında daha fazla bilgiye',
         'link' => 'buradan ulaşabilirsiniz',
     ],
-    'thanks_page'=>[
-        'title'=>'Etkinliğinizi eklediğiniz için teşekkürler!',
-        'phrase1'=>'Yerel elçilerimizden biri, etkinliğinizi inceleyecek',
-        'phrase2'=>'ve her şeyin yolunda olup olmadığını kontrol edecek.',
-        'phrase3'=>'Herhangi bir sorunuz varsa,',
-        'phrase4'=>'ulusal elçilerimizden biriyle iletişime geçin',
-        'phrase5'=>'veya bize bir',
-        'phrase6'=>'e-posta gönderin',
-        'phrase7'=>'Herkes için kod haftası kodunuzu diğer kişilerle paylaşabilirsiniz:'
+    'thanks_page' => [
+        'title' => 'Etkinliğinizi eklediğiniz için teşekkürler!',
+        'phrase1' => 'Yerel elçilerimizden biri, etkinliğinizi inceleyecek',
+        'phrase2' => 've her şeyin yolunda olup olmadığını kontrol edecek.',
+        'phrase3' => 'Herhangi bir sorunuz varsa,',
+        'phrase4' => 'ulusal elçilerimizden biriyle iletişime geçin',
+        'phrase5' => 'veya bize bir',
+        'phrase6' => 'e-posta gönderin',
+        'phrase7' => 'Herkes için kod haftası kodunuzu diğer kişilerle paylaşabilirsiniz:'
     ],
     'activitytype' => [
         'label' => 'Etkinlik türü',
@@ -146,11 +147,6 @@ return [
     'view_your_certificate' => 'Buradan sertifikanızı görüntüleyebilirsiniz',
     'submit_event_and_report' => 'Bu etkinlik için bir rapor gönderin ve Code Week sertifikanızı isteyin.',
     'report_and_claim' => 'Etkinliği raporla ve sertifika iste'
-
-
-
-
-
 
 
 ];
