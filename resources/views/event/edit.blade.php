@@ -138,9 +138,9 @@
 
                     <div class="codeweek-form-inner-container">
 
-                        <div class="codeweek-form-field-wrapper" x-show="!isOnlineActivitySelected()">
+                        <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field align-flex-start">
-                                <label for="id_location">*@lang('event.address.label')</label>
+                                <label for="id_location"><span x-show="!isOnlineActivitySelected()">*</span>@lang('event.address.label')</label>
                                 <div>
                                     <autocomplete-geo name="location" placeholder="@lang('event.address.placeholder')"
                                                       value="{{old('location',$event->location)}}"

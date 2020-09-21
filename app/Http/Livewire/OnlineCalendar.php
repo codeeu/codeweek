@@ -81,7 +81,7 @@ class OnlineCalendar extends Component
 
         $this->events->map(function ($event) {
             $event->title = str_limit($event->title, 50);
-            $event->start_date = Carbon::parse($event->start_date)->toDateString();
+            $event->start_date = Carbon::parse($event->start_date);
         });
 
         if ($this->selectedLanguage !== "") {
