@@ -1,73 +1,85 @@
 <div>
 
     <div class="bg-gray-200 overflow-hidden rounded-lg mx-6">
+
         <div class="px-2 py-2 sm:p-2">
 
-            <div class="mt-2 grid grid-cols-1 row-gap-6 col-gap-4 sm:grid-cols-6">
+            <div class="mt-2 flex flex-row justify-between">
+                <div>
+                    <div class="sm:col-span-3 flex">
+                        <label for="language"
+                               class="inline-block text-lg font-medium leading-5 text-gray-700 mr-2 align-middle mt-2">
+                            Language
+                        </label>
 
-                <div class="sm:col-span-3 flex">
-                    <label for="language"
-                           class="inline-block text-lg font-medium leading-5 text-gray-700 mr-2 align-middle mt-2">
-                        Language
-                    </label>
+                        <div class="inline-block relative w-128" style="box-sizing: border-box;">
+                            <select wire:model="selectedLanguage" id="language"
+                                    class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
+                            >
+                                <option value="">All Languages</option>
+                                @foreach($languages as $language)
+                                    @if($language !== "")
+                                        <option value="{{$language}}">{{__("base.languages.{$language}")}}</option>
+                                    @endif
+                                @endforeach
+                            </select>
 
-                    <div class="inline-block relative w-128" style="box-sizing: border-box;">
-                        <select wire:model="selectedLanguage" id="language"
-                                class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
-                        >
-                            <option value="">All Languages</option>
-                            @foreach($languages as $language)
-                                @if($language !== "")
-                                    <option value="{{$language}}">{{__("base.languages.{$language}")}}</option>
-                                @endif
-                            @endforeach
-                        </select>
-
-                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
-                            </svg>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 20 20">
+                                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
 
-                    <label for="selectedDate"
-                           class="ml-4  inline-block text-lg font-medium leading-5 text-gray-700 mr-2 align-middle mt-2">
-                        Month
-                    </label>
+                        <label for="selectedDate"
+                               class="ml-4  inline-block text-lg font-medium leading-5 text-gray-700 mr-2 align-middle mt-2">
+                            Month
+                        </label>
 
-                    <div class="inline-block relative w-128" style="box-sizing: border-box;">
-                        <select wire:model="selectedDate" id="selectedDate"
-                                class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
-                        >
+                        <div class="inline-block relative w-128" style="box-sizing: border-box;">
+                            <select wire:model="selectedDate" id="selectedDate"
+                                    class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
+                            >
 
-                            @foreach($months as $key => $value)
-                            <option value="{{$key}}">{{$value}}</option>
-                            @endforeach
+                                @foreach($months as $key => $value)
+                                    <option value="{{$key}}">{{$value}}</option>
+                                @endforeach
 
-                        </select>
+                            </select>
 
-                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
-                            </svg>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 20 20">
+                                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
 
-                    {{--                    <div class="inline-block relative w-64">--}}
-                    {{--                        <select wire:model="selectedLanguage" id="language"--}}
-                    {{--                                class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"--}}
-                    {{--                                >--}}
-                    {{--                            <option value="">All Languages</option>--}}
-                    {{--                            @foreach($languages as $language)--}}
-                    {{--                                @if($language !== "")--}}
-                    {{--                                    <option value="{{$language}}">{{__("base.languages.{$language}")}}</option>--}}
-                    {{--                                @endif--}}
-                    {{--                            @endforeach--}}
-                    {{--                        </select>--}}
-                    {{--                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">--}}
-                    {{--                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>--}}
-                    {{--                        </div>--}}
-                    {{--                    </div>--}}
+                        {{--                    <div class="inline-block relative w-64">--}}
+                        {{--                        <select wire:model="selectedLanguage" id="language"--}}
+                        {{--                                class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"--}}
+                        {{--                                >--}}
+                        {{--                            <option value="">All Languages</option>--}}
+                        {{--                            @foreach($languages as $language)--}}
+                        {{--                                @if($language !== "")--}}
+                        {{--                                    <option value="{{$language}}">{{__("base.languages.{$language}")}}</option>--}}
+                        {{--                                @endif--}}
+                        {{--                            @endforeach--}}
+                        {{--                        </select>--}}
+                        {{--                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">--}}
+                        {{--                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>--}}
+                        {{--                        </div>--}}
+                        {{--                    </div>--}}
+                    </div>
+                </div>
+                <div>
+                    <!-- On: "bg-indigo-600", Off: "bg-gray-200" -->
+                    <span role="checkbox" tabindex="0" aria-checked="false" class="bg-gray-200 relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:shadow-outline">
+  <!-- On: "translate-x-5", Off: "translate-x-0" -->
+  <span aria-hidden="true" class="translate-x-0 inline-block h-5 w-5 rounded-full bg-white shadow transform transition ease-in-out duration-200"></span>
+</span>
+
                 </div>
 
             </div>
