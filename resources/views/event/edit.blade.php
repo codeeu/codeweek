@@ -87,7 +87,6 @@
 
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
-                                {{$event->activity_type}}
                                 <label for="activity_type">* @lang('event.activitytype.label')</label>
                                 <select id="id_activity_type" name="activity_type" class="codeweek-input-select" x-model="selectedActivityType">
                                     <option value="open-online" {{$event->activity_type == 'open-online' ? 'selected' : ''}}>@lang('event.activitytype.open-online')</option>
