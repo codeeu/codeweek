@@ -149,7 +149,7 @@
                                     <div class="errors" style="margin-bottom: 10px; margin-left:0;">
                                         @component('components.validation-errors', ['field'=>'location'])@endcomponent
                                     </div>
-                                    <div id = "events-edit-map"></div>
+                                    <div id="events-edit-map"></div>
                                 </div>
                             </div>
                         </div>
@@ -312,7 +312,7 @@
             "renderTo" : "events-edit-map",
             "height": "250",
             "width": "422",
-            "custom": ["/js/hideMenuMap.js"]
+            "custom": ["js/hideMenuMap.js"]
         }
     </script>
 
@@ -325,8 +325,8 @@
             return {
                 selectedActivityType: activityType,
                 isOnlineActivitySelected() {
-                    return this.selectedActivityType === 'open-online'
-                }
+                    return (this.selectedActivityType === 'open-online' || this.selectedActivityType === 'invite-online')
+                },
             }
         }
     </script>
