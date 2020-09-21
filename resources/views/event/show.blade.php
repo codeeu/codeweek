@@ -86,7 +86,7 @@
                     <label class="block text-orange-500 font-bold mb-1 md:mb-0 pr-4"
                            for="activity_type">@lang('event.activitytype.label')</label>
                     <p>
-                        @if($event->activity_type)
+                        @if($event->activity_type && $event->activity_type !== 'other')
                             {{__("event.activitytype.{$event->activity_type}")}}
                         @else
                             {{__("event.organizertype.other")}}
