@@ -148,6 +148,14 @@ class Event extends Model
 
     }
 
+    public function get_start_date_simple()
+    {
+        $dt = Carbon::parse($this->start_date);
+
+        return $dt->format('d/m/Y \\- H:i');
+
+    }
+
 
     public function scopeFilter($query, EventFilters $filters)
     {
@@ -156,7 +164,6 @@ class Event extends Model
     }
 
     public static function getByYear($year)
-
 
     {
 
@@ -275,7 +282,6 @@ class Event extends Model
     {
         return $this->hasOne('App\Notification', 'event_id', 'id');
     }
-
 
 
 
