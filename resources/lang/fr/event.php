@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Organisez ou soutenez des événements dans votre ville',
     'or_contact_your' => 'ou contactez vos',
     'eu_code_week_ambassadors' => 'ambassadeurs Code Week de l’UE',
-    'show_events_for'=>'Afficher les événements pour ',
+    'show_events_for' => 'Afficher les événements pour ',
     'who' => 'À quel public l’événement s’adresse-t-il?',
     'tags' => 'Étiquettes',
     'image' => 'Image',
@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Adultes salariés',
         'Unemployed adults' => 'Adultes au chômage',
         'Other (see description)' => 'Autre (voir description)',
+        'Teachers' => 'Professeurs',
     ],
     'theme' => [
         'Basic programming concepts' => 'Concepts de programmation de base',
@@ -112,15 +113,15 @@ return [
         'explanation' => 'Si vous avez reçu un code «Code Week 4 all» de la part d’un collègue enseignant ou d’un ami, introduisez-le ici, sinon laissez le champ vide. Vous trouverez plus d’informations sur «Code Week 4 All»',
         'link' => 'ici',
     ],
-    'thanks_page'=>[
-        'title'=>'Merci d’avoir ajouté votre événement!',
-        'phrase1'=>'L’un de nos ambassadeurs locaux va maintenant passer en revue votre événement',
-        'phrase2'=>'pour s’assurer que tout est en ordre.',
-        'phrase3'=>'Si vous avez des questions, n’hésitez pas à contacter l’un de nos',
-        'phrase4'=>'ambassadeurs locaux',
-        'phrase5'=>'ou envoyez-nous un',
-        'phrase6'=>'courrier électronique',
-        'phrase7'=>'Vous pouvez partager votre code «Code Week 4 All» avec d’autres personnes:'
+    'thanks_page' => [
+        'title' => 'Merci d’avoir ajouté votre événement!',
+        'phrase1' => 'L’un de nos ambassadeurs locaux va maintenant passer en revue votre événement',
+        'phrase2' => 'pour s’assurer que tout est en ordre.',
+        'phrase3' => 'Si vous avez des questions, n’hésitez pas à contacter l’un de nos',
+        'phrase4' => 'ambassadeurs locaux',
+        'phrase5' => 'ou envoyez-nous un',
+        'phrase6' => 'courrier électronique',
+        'phrase7' => 'Vous pouvez partager votre code «Code Week 4 All» avec d’autres personnes:'
     ],
     'activitytype' => [
         'label' => 'Type d\'activité',
@@ -131,7 +132,7 @@ return [
         'invite-in-person' => 'Activité hors-ligne privée'
 
     ],
-    'privacy'=>'J\'ai lu et j\'accepte les conditions de la politique de confidentialité décrites dans ce document',
+    'privacy' => 'J\'ai lu et j\'accepte les conditions de la politique de confidentialité décrites dans ce document',
     'country' => 'Pays',
     'loading' => 'Chargement...',
     'add_activity' => 'Ajouter une activité',
@@ -147,10 +148,6 @@ return [
     'view_your_certificate' => 'Visualisez votre certificat ici',
     'submit_event_and_report' => 'Signalez cet événement et demandez votre certificat Code Week.',
     'report_and_claim' => 'Signaler un événement et demander un certificat'
-
-
-
-
 
 
 ];

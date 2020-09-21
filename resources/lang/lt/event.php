@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Organizuokite arba remkite renginius savo mieste',
     'or_contact_your' => 'arba susisiekite su savo',
     'eu_code_week_ambassadors' => 'ES programavimo savaitės ambasadoriais',
-    'show_events_for'=>'Rodyti renginius, skirtus ',
+    'show_events_for' => 'Rodyti renginius, skirtus ',
     'who' => 'Kam skirtas renginys?',
     'tags' => 'Žymės',
     'image' => 'Paveikslėlis',
@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Dirbantys suaugusieji',
         'Unemployed adults' => 'Nedirbantys suaugusieji',
         'Other (see description)' => 'Kita (žr. aprašymą)',
+        'Teachers' => 'Mokytojai',
     ],
     'theme' => [
         'Basic programming concepts' => 'Pagrindinės programavimo sąvokos',
@@ -112,15 +113,15 @@ return [
         'explanation' => 'Jei kodą „CodeWeek4All“ gavote iš kolegos mokykloje ar draugo, nurodykite jį čia. Jei kodo neturite, palikite laukelį tuščią. Daugiau informacijos apie „CodeWeek4All“ rasite',
         'link' => 'čia',
     ],
-    'thanks_page'=>[
-        'title'=>'Ačiū, kad pridėjote savo renginį!',
-        'phrase1'=>'Dabar mūsų ambasadorius jūsų šalyje peržiūrės jūsų renginį',
-        'phrase2'=>'ir patikrins, ar viskas gerai.',
-        'phrase3'=>'Jei turite klausimų, susisiekite su vienu iš mūsų',
-        'phrase4'=>'nacionalinių ambasadorių',
-        'phrase5'=>'arba atsiųskite mums',
-        'phrase6'=>'el. laišką.',
-        'phrase7'=>'Galite pasidalyti savo „CodeWeek4All“ kodu su kitais:'
+    'thanks_page' => [
+        'title' => 'Ačiū, kad pridėjote savo renginį!',
+        'phrase1' => 'Dabar mūsų ambasadorius jūsų šalyje peržiūrės jūsų renginį',
+        'phrase2' => 'ir patikrins, ar viskas gerai.',
+        'phrase3' => 'Jei turite klausimų, susisiekite su vienu iš mūsų',
+        'phrase4' => 'nacionalinių ambasadorių',
+        'phrase5' => 'arba atsiųskite mums',
+        'phrase6' => 'el. laišką.',
+        'phrase7' => 'Galite pasidalyti savo „CodeWeek4All“ kodu su kitais:'
     ],
     'activitytype' => [
         'label' => 'Renginio tipas',
@@ -131,7 +132,7 @@ return [
         'invite-in-person' => 'Uždaras renginys/užsiėmimas (realybėje, ne internetu)'
 
     ],
-    'privacy'=>'Perskaičiau ir sutinku su šiame dokumente aprašyta privatumo politika.',
+    'privacy' => 'Perskaičiau ir sutinku su šiame dokumente aprašyta privatumo politika.',
     'country' => 'Šalis',
     'loading' => 'Kraunama...',
     'add_activity' => 'Pridėti renginį',
@@ -147,10 +148,6 @@ return [
     'view_your_certificate' => 'Peržiūrėkite savo pažymėjimą čia',
     'submit_event_and_report' => 'Pateikite šio renginio ataskaitą ir gaukite Programavimo savaitės pažymėjimą',
     'report_and_claim' => 'Pateikti renginio ataskaitą ir gauti pažymėjimą',
-
-
-
-
 
 
 ];

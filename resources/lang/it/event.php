@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Organizza o sostieni eventi nella tua città',
     'or_contact_your' => 'oppure contatta i tuoi',
     'eu_code_week_ambassadors' => 'Ambasciatori della settimana europea della programmazione',
-    'show_events_for'=>'Mostra eventi per ',
+    'show_events_for' => 'Mostra eventi per ',
     'who' => 'A chi è rivolto l\'evento?',
     'tags' => 'Tag',
     'image' => 'Immagine',
@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Adulti occupati',
         'Unemployed adults' => 'Adulti disoccupati',
         'Other (see description)' => 'Altro (vedi descrizione)',
+        'Teachers' => 'Insegnanti',
     ],
     'theme' => [
         'Basic programming concepts' => 'Concetti di programmazione di base',
@@ -112,15 +113,15 @@ return [
         'explanation' => 'Se hai ricevuto un codice Code Week 4 all da un collega o da un amico, incollalo qui, altrimenti lascia il campo vuoto. Maggiori informazioni su Code Week 4 All sono disponibili',
         'link' => 'qui',
     ],
-    'thanks_page'=>[
-        'title'=>'Grazie per aver aggiunto il tuo evento!',
-        'phrase1'=>'Uno dei nostri ambasciatori locali esaminerà il tuo evento',
-        'phrase2'=>'e si accerterà che tutto vada bene.',
-        'phrase3'=>'In caso di domande, rivolgiti a uno dei nostri',
-        'phrase4'=>'Ambasciatori nazionali',
-        'phrase5'=>'oppure inviaci',
-        'phrase6'=>'un’e-mail',
-        'phrase7'=>'Puoi condividere il tuo codice Codeweek for all con altre persone:'
+    'thanks_page' => [
+        'title' => 'Grazie per aver aggiunto il tuo evento!',
+        'phrase1' => 'Uno dei nostri ambasciatori locali esaminerà il tuo evento',
+        'phrase2' => 'e si accerterà che tutto vada bene.',
+        'phrase3' => 'In caso di domande, rivolgiti a uno dei nostri',
+        'phrase4' => 'Ambasciatori nazionali',
+        'phrase5' => 'oppure inviaci',
+        'phrase6' => 'un’e-mail',
+        'phrase7' => 'Puoi condividere il tuo codice Codeweek for all con altre persone:'
     ],
     'activitytype' => [
         'label' => 'Tipo di attività',
@@ -131,7 +132,7 @@ return [
         'invite-in-person' => 'Attività presenziale privata'
 
     ],
-    'privacy'=>'Dichiaro di aver letto e accetto l\'informativa sulla privacy descritta nel documento',
+    'privacy' => 'Dichiaro di aver letto e accetto l\'informativa sulla privacy descritta nel documento',
     'country' => 'Paese',
     'loading' => 'Caricamento in corso...',
     'add_activity' => 'Aggiungi un’attività',
@@ -147,11 +148,6 @@ return [
     'view_your_certificate' => 'Visualizza qui il tuo certificato',
     'submit_event_and_report' => 'Presenta una relazione su quest’evento e chiedi il tuo certificato della settimana della programmazione.',
     'report_and_claim' => 'Segnala l’evento e chiedi il certificato',
-
-
-
-
-
 
 
 ];

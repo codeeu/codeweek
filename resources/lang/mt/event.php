@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Organizza jew appoġġja avvenimenti fil-belt tiegħek',
     'or_contact_your' => 'jew ikkuntattja',
     'eu_code_week_ambassadors' => 'lill-Ambaxxaturi tal-Ġimgħa tal-UE tal-Ikkowdjar tiegħek',
-    'show_events_for'=>'Uri avvenimenti għal ',
+    'show_events_for' => 'Uri avvenimenti għal ',
     'who' => 'Għal min huwa l-avveniment?',
     'tags' => 'Tags',
     'image' => 'Immaġni',
@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Adulti impjegati',
         'Unemployed adults' => 'Adulti qiegħda',
         'Other (see description)' => 'Oħrajn (ara d-deskrizzjoni)',
+        'Teachers' => 'Għalliem',
     ],
     'theme' => [
         'Basic programming concepts' => 'Kunċetti ta’ pprogrammar bażiċi',
@@ -112,15 +113,15 @@ return [
         'explanation' => 'Jekk irċivejt kodiċi tal-Ġimgħa tal-Ikkowdjar għal Kulħadd minn kollega tal-iskola jew ħabib, ippejstjah hawn, inkella jekk jogħġbok, ħalli hawn vojt. Aktar informazzjoni dwar il-Ġimgħa tal-Ikkowdjar għal Kulħadd hija disponibbli',
         'link' => 'hawn',
     ],
-    'thanks_page'=>[
-        'title'=>'Grazzi talli żidt l-avveniment tiegħek!',
-        'phrase1'=>'Wieħed mill-ambaxxaturi lokali tagħna issa ser jirrevedi l-avveniment tiegħek',
-        'phrase2'=>'u jara li kollox sew.',
-        'phrase3'=>'Jekk għandek xi mistoqsijiet, ikkuntattja wieħed mill-',
-        'phrase4'=>'ambaxxaturi nazzjonali tagħna',
-        'phrase5'=>'jew ibgħatilna',
-        'phrase6'=>'ittra elettronika',
-        'phrase7'=>'Tista’ taqsam il-kodiċi tiegħek għall-Ġimga tal-Ikkowdjar għal Kulħadd ma’ persuni oħra:'
+    'thanks_page' => [
+        'title' => 'Grazzi talli żidt l-avveniment tiegħek!',
+        'phrase1' => 'Wieħed mill-ambaxxaturi lokali tagħna issa ser jirrevedi l-avveniment tiegħek',
+        'phrase2' => 'u jara li kollox sew.',
+        'phrase3' => 'Jekk għandek xi mistoqsijiet, ikkuntattja wieħed mill-',
+        'phrase4' => 'ambaxxaturi nazzjonali tagħna',
+        'phrase5' => 'jew ibgħatilna',
+        'phrase6' => 'ittra elettronika',
+        'phrase7' => 'Tista’ taqsam il-kodiċi tiegħek għall-Ġimga tal-Ikkowdjar għal Kulħadd ma’ persuni oħra:'
     ],
     'activitytype' => [
         'label' => 'Tip ta’ Attività',
@@ -146,11 +147,6 @@ return [
     'view_your_certificate' => 'Ara ċ-ċertifikat tiegħek hawn',
     'submit_event_and_report' => 'Issottometti rapport għal dan l-avveniment u itlob iċ-ċertifikat tal-Ġimgħa tal-Ikkowdjar tiegħek.',
     'report_and_claim' => 'Irrapporta l-avveniment u itlob iċ-ċertifikat',
-
-
-
-
-
 
 
 ];

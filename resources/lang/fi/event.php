@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Järjestä tai tue tapahtumia omassa kaupungissasi',
     'or_contact_your' => 'tai ota yhteyttä',
     'eu_code_week_ambassadors' => 'EU:n koodausviikkolähettilääseen.',
-    'show_events_for'=>'Näytä tapahtumat vuodelle ',
+    'show_events_for' => 'Näytä tapahtumat vuodelle ',
     'who' => 'Kenelle tapahtuma on tarkoitettu?',
     'tags' => 'Tägit',
     'image' => 'Kuva',
@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Työssäkäyvät aikuiset',
         'Unemployed adults' => 'Työttömät aikuiset',
         'Other (see description)' => 'Muu (ks. kuvaus)',
+        'Teachers' => 'Opettajat',
     ],
     'theme' => [
         'Basic programming concepts' => 'Ohjelmoinnin peruskäsitteet',
@@ -112,15 +113,15 @@ return [
         'explanation' => 'Jos olet saanut koulusta tai kaveriltasi CodeWeek4All-koodin, kirjoita se tähän. Muussa tapauksessa jätä kohta tyhjäksi. Lisätietoja Kaikkien koodausviikosta löytyy',
         'link' => 'täältä',
     ],
-    'thanks_page'=>[
-        'title'=>'Kiitos, kun lisäsit tapahtuman!',
-        'phrase1'=>'Yksi paikallisista lähettiläistämme tarkistaa nyt tapahtuman',
-        'phrase2'=>'ja varmistaa, että kaikki on ok.',
-        'phrase3'=>'Jos sinulla on kysyttävää, ota yhteyttä',
-        'phrase4'=>'oman maasi lähettilääseen',
-        'phrase5'=>'tai lähetä meille ',
-        'phrase6'=>'sähköpostiviesti.',
-        'phrase7'=>'Voit antaa Kaikkien koodausviikko -koodin myös ystävillesi:'
+    'thanks_page' => [
+        'title' => 'Kiitos, kun lisäsit tapahtuman!',
+        'phrase1' => 'Yksi paikallisista lähettiläistämme tarkistaa nyt tapahtuman',
+        'phrase2' => 'ja varmistaa, että kaikki on ok.',
+        'phrase3' => 'Jos sinulla on kysyttävää, ota yhteyttä',
+        'phrase4' => 'oman maasi lähettilääseen',
+        'phrase5' => 'tai lähetä meille ',
+        'phrase6' => 'sähköpostiviesti.',
+        'phrase7' => 'Voit antaa Kaikkien koodausviikko -koodin myös ystävillesi:'
     ],
     'activitytype' => [
         'label' => 'Toiminnan tyyppi',
@@ -131,7 +132,7 @@ return [
         'invite-in-person' => 'Toiminta vain kutsutuille'
 
     ],
-    'privacy'=>'Olen lukenut ja hyväksyn tätä asiakirjaa koskevat tietosuojaperiaatteet',
+    'privacy' => 'Olen lukenut ja hyväksyn tätä asiakirjaa koskevat tietosuojaperiaatteet',
     'country' => 'Maa',
     'loading' => 'Ladataan...',
     'add_activity' => 'Lisää tapahtuma',
@@ -147,10 +148,6 @@ return [
     'view_your_certificate' => 'Tutustu sertifikaattiisi täältä',
     'submit_event_and_report' => 'Lähetä raportti tapahtumasta ja pyydä koodausviikon sertifikaattia.',
     'report_and_claim' => 'Ilmoita tapahtumasta ja pyydä sertifikaattia'
-
-
-
-
 
 
 ];
