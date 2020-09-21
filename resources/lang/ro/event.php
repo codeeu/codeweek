@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Organizați sau sprijiniți evenimente în orașul dumneavoastră',
     'or_contact_your' => 'sau contactați',
     'eu_code_week_ambassadors' => 'Ambasadori ai Săptămânii UE a programării',
-    'show_events_for'=>'Vizualizare evenimente pentru ',
+    'show_events_for' => 'Vizualizare evenimente pentru ',
     'who' => 'Pentru cine este evenimentul?',
     'tags' => 'Etichete',
     'image' => 'Imagine',
@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Adulți angajați',
         'Unemployed adults' => 'Adulți neangajați',
         'Other (see description)' => 'Alții (consultați descrierea)',
+        'Teachers' => 'Profesori',
     ],
     'theme' => [
         'Basic programming concepts' => 'Concepte de programare de bază',
@@ -112,15 +113,15 @@ return [
         'explanation' => 'Dacă ați primit un cod Săptămâna programării pentru toți de la un coleg de școală sau de la un prieten,  introduceți-l aici, în caz contrar lăsați spațiul necompletat. Mai multe informații despre Săptămâna programării pentru toți sunt disponibile',
         'link' => 'aici',
     ],
-    'thanks_page'=>[
-        'title'=>'Vă mulțumim pentru adăugarea evenimentului dumneavoastră!',
-        'phrase1'=>'Unul dintre ambasadorii noștri locali va revizui acum evenimentul dumneavoastră',
-        'phrase2'=>'și se va asigura că totul este în regulă.',
-        'phrase3'=>'Dacă aveți întrebări, contactați unul dintre',
-        'phrase4'=>'ambasadorii naționali',
-        'phrase5'=>'sau trimiteți-ne un',
-        'phrase6'=>'e-mail',
-        'phrase7'=>'Puteți distribui codul dumneavoastră Săptămâna programării pentru toți și altora:'
+    'thanks_page' => [
+        'title' => 'Vă mulțumim pentru adăugarea evenimentului dumneavoastră!',
+        'phrase1' => 'Unul dintre ambasadorii noștri locali va revizui acum evenimentul dumneavoastră',
+        'phrase2' => 'și se va asigura că totul este în regulă.',
+        'phrase3' => 'Dacă aveți întrebări, contactați unul dintre',
+        'phrase4' => 'ambasadorii naționali',
+        'phrase5' => 'sau trimiteți-ne un',
+        'phrase6' => 'e-mail',
+        'phrase7' => 'Puteți distribui codul dumneavoastră Săptămâna programării pentru toți și altora:'
     ],
     'activitytype' => [
         'label' => 'Tip de activitate',
@@ -131,7 +132,7 @@ return [
         'invite-in-person' => 'Activitate off-line privată'
 
     ],
-    'privacy'=>'Am citit şi sunt de acord cu termenii politicii de confidenţialitate descrişi în acest document.',
+    'privacy' => 'Am citit şi sunt de acord cu termenii politicii de confidenţialitate descrişi în acest document.',
     'country' => 'Țara',
     'loading' => 'Se încarcă...',
     'add_activity' => 'Adaugă activitatea',
