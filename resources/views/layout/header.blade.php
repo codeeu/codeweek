@@ -11,7 +11,7 @@
                 <ul>
 {{--                    <li><a href="{{route('codeweek2020')}}">Codeweek 2020</a></li>--}}
                     <li><a href="{{route('events_map')}}">@lang('menu.map')</a></li>
-                    @if(App::getLocale() == "en")<li><a href="{{route('online_calendar')}}">@lang('menu.for_all')</a></li>@endif
+                    @if(App::getLocale() == "en")<li><a href="{{route('featured_activities')}}">@lang('menu.featured_activities')</a></li>@endif
                     <li><a href="{{route('create_event')}}">@lang('menu.add_event')</a></li>
                     <li><a href="{{route('scoreboard')}}">@lang('event.scoreboard_by_country')</a></li>
                 </ul>
