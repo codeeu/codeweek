@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Foglalkoztatásban levõ felnõttek',
         'Unemployed adults' => 'Munkanélküli felnõttek',
         'Other (see description)' => 'Egyéb (lásd a leírást)',
+          'Teachers' => 'Tanárok',
     ],
     'theme' => [
         'Basic programming concepts' => 'Programozási alapfogalmak',

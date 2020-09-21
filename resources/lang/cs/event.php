@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Zorganizujte nebo podporujte akce ve svém městě',
     'or_contact_your' => 'nebo kontaktujte své',
     'eu_code_week_ambassadors' => 'ambasadory Evropského týdne programování',
-    'show_events_for'=>'Zobrazit akce pro ',
+    'show_events_for' => 'Zobrazit akce pro ',
     'who' => 'Pro koho tato akce je?',
     'tags' => 'Tagy',
     'image' => 'Obrázek',
@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Zaměstnaní dospělí',
         'Unemployed adults' => 'Nezaměstnaní dospělí',
         'Other (see description)' => 'Jiné (viz popis)',
+        'Teachers' => 'Učitelé',
     ],
     'theme' => [
         'Basic programming concepts' => 'Základní koncepty programování',
@@ -112,15 +113,15 @@ return [
         'explanation' => 'Pokud jste obdrželi kód Code Week 4 all od spolužáka nebo kamaráda, vložte ho zde; jinak nechte místo prázdné. Více informací o Code Week 4 all najdete',
         'link' => 'zde',
     ],
-    'thanks_page'=>[
-        'title'=>'Děkujeme, že jste přidali svou akci!',
-        'phrase1'=>'Jeden z našich místních ambasadorů teď vaši akci zkontroluje',
-        'phrase2'=>'a ujistí se, že je všechno v pořádku.',
-        'phrase3'=>'Pokud máte nějaké otázky, kontaktujte jednoho z našich',
-        'phrase4'=>'národních ambasadorů',
-        'phrase5'=>'nebo nám pošlete',
-        'phrase6'=>'e-mail',
-        'phrase7'=>'Svůj kód Codeweek for all můžete sdílet s dalšími lidmi:'
+    'thanks_page' => [
+        'title' => 'Děkujeme, že jste přidali svou akci!',
+        'phrase1' => 'Jeden z našich místních ambasadorů teď vaši akci zkontroluje',
+        'phrase2' => 'a ujistí se, že je všechno v pořádku.',
+        'phrase3' => 'Pokud máte nějaké otázky, kontaktujte jednoho z našich',
+        'phrase4' => 'národních ambasadorů',
+        'phrase5' => 'nebo nám pošlete',
+        'phrase6' => 'e-mail',
+        'phrase7' => 'Svůj kód Codeweek for all můžete sdílet s dalšími lidmi:'
     ],
     'activitytype' => [
         'label' => 'Typ Aktivity',
@@ -132,7 +133,7 @@ return [
 
     ],
 
-    'privacy'=>'Přečetl (a) jsem si zásady ochrany osobních údajů popsané v tomto dokumentu a souhlasím s nimi.',
+    'privacy' => 'Přečetl (a) jsem si zásady ochrany osobních údajů popsané v tomto dokumentu a souhlasím s nimi.',
     'country' => 'Země',
     'loading' => 'Načítání...',
     'add_activity' => 'Přidat akci',
@@ -148,10 +149,6 @@ return [
     'view_your_certificate' => 'Certifikát můžete zobrazit zde',
     'submit_event_and_report' => 'Pošlete hlášení o této akci a požádejte o certifikát k Týdnu programování.',
     'report_and_claim' => 'Poslat hlášení a požádat o certifikát'
-
-
-
-
 
 
 ];

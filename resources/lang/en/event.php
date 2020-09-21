@@ -86,6 +86,7 @@ return [
         'Employed adults' => 'Employed adults',
         'Unemployed adults' => 'Unemployed adults',
         'Other (see description)' => 'Other (see description)',
+        'Teachers' => 'Teachers',
     ],
     'theme' => [
         'Basic programming concepts' => 'Basic programming concepts',

@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Organize ou apoie eventos na sua cidade',
     'or_contact_your' => 'ou contacte os seus',
     'eu_code_week_ambassadors' => 'embaixadores da Semana Europeia da Programação',
-    'show_events_for'=>'Mostrar eventos de ',
+    'show_events_for' => 'Mostrar eventos de ',
     'who' => 'A quem se destina o evento?',
     'tags' => 'Etiquetas',
     'image' => 'Imagem',
@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Adultos empregados',
         'Unemployed adults' => 'Adultos desempregados',
         'Other (see description)' => 'Outros (ver descrição)',
+        'Teachers' => 'Professores',
     ],
     'theme' => [
         'Basic programming concepts' => 'Noções básicas de programação',
@@ -112,15 +113,15 @@ return [
         'explanation' => 'Se recebeu um código «Code Week 4 all» de um colega de escola ou de um amigo cole-o aqui, caso contrário deixe este espaço em branco. Pode consultar mais informações sobre o «Code Week 4 All»',
         'link' => 'aqui',
     ],
-    'thanks_page'=>[
-        'title'=>'Obrigado por adicionar o seu evento!',
-        'phrase1'=>'Um dos nossos embaixadores locais irá agora analisar o seu evento',
-        'phrase2'=>'e garantir que está tudo certo.',
-        'phrase3'=>'Para qualquer esclarecimento, contacte um dos nossos',
-        'phrase4'=>'embaixadores nacionais',
-        'phrase5'=>'ou envie-nos uma',
-        'phrase6'=>'mensagem de correio eletrónico',
-        'phrase7'=>'Pode partilhar o seu código Codeweek4All com outras pessoas:'
+    'thanks_page' => [
+        'title' => 'Obrigado por adicionar o seu evento!',
+        'phrase1' => 'Um dos nossos embaixadores locais irá agora analisar o seu evento',
+        'phrase2' => 'e garantir que está tudo certo.',
+        'phrase3' => 'Para qualquer esclarecimento, contacte um dos nossos',
+        'phrase4' => 'embaixadores nacionais',
+        'phrase5' => 'ou envie-nos uma',
+        'phrase6' => 'mensagem de correio eletrónico',
+        'phrase7' => 'Pode partilhar o seu código Codeweek4All com outras pessoas:'
     ],
     'activitytype' => [
         'label' => 'Tipo de atividade',
@@ -131,7 +132,7 @@ return [
         'invite-in-person' => 'Atividade em pessoa privada'
 
     ],
-    'privacy'=>'Li e concordo com os termos da política de privacidade descritos neste documento.',
+    'privacy' => 'Li e concordo com os termos da política de privacidade descritos neste documento.',
     'country' => 'País',
     'loading' => 'A carregar...',
     'add_activity' => 'Adicionar atividade',
@@ -147,10 +148,6 @@ return [
     'view_your_certificate' => 'Visualize o seu certificado aqui',
     'submit_event_and_report' => 'Apresente um relatório relativo a este evento e solicite o seu certificado de participação na Semana da Programação.',
     'report_and_claim' => 'Apresentar relatório de evento e solicitar certificado',
-
-
-
-
 
 
 ];

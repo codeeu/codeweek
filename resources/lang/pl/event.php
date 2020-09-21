@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Osoby dorosłe aktywne zawodowo',
         'Unemployed adults' => 'Osoby dorosłe nieaktywne zawodowo',
         'Other (see description)' => 'Inne (patrz opis)',
+          'Teachers' => 'Nauczyciele',
     ],
     'theme' => [
         'Basic programming concepts' => 'Podstawowe pojęcia związane z programowaniem',
