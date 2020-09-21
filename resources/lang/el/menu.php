@@ -41,4 +41,5 @@ return [
     'privacy' => 'Προστασία προσωπικών δεδομένων',
     'participation' => 'Πιστοποιητικό συμμετοχής',
     'values' => 'Oι αξίες μας',
-];
+    'featured_activities' => '',
+    'codeweek2020' => ''];

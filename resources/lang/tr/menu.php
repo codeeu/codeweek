@@ -38,4 +38,5 @@ return [
     'privacy' => 'Gizlilik',
     'participation'=> 'Katılım Sertifikası',
     'values' => 'Değerlerimiz',
-];
+    'featured_activities' => '',
+    'codeweek2020' => ''];

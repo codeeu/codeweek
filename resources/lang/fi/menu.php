@@ -39,4 +39,5 @@ return [
     'privacy' => 'Tietosuoja',
     'participation'=> 'Osallistumissertifikaatti',
     'values' => 'Meidän arvomme',
-];
+    'featured_activities' => '',
+    'codeweek2020' => ''];
