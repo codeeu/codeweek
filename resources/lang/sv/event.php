@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Organisera eller stöd evenemang på din ort',
     'or_contact_your' => 'eller kontakta dina',
     'eu_code_week_ambassadors' => 'Ambassadörer för EU Code Week',
-    'show_events_for'=>'Visa evenemang för ',
+    'show_events_for' => 'Visa evenemang för ',
     'who' => 'Vem är evenemanget till för?',
     'tags' => 'Taggar',
     'image' => 'Bild',
@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Arbetande vuxna',
         'Unemployed adults' => 'Arbetslösa vuxna',
         'Other (see description)' => 'Annat (se beskrivning)',
+        'Teachers' => 'Lärare',
     ],
     'theme' => [
         'Basic programming concepts' => 'Grundläggande programmeringskoncept',
@@ -112,15 +113,15 @@ return [
         'explanation' => 'Om du har fått en Code Week 4 All-kod av en skolkollega eller en vän klistrar du in den här, annars lämnar du fältet tomt. Mer info om Code Week 4 All finns',
         'link' => 'här',
     ],
-    'thanks_page'=>[
-        'title'=>'Tack för att du lagt till ditt evenemang!',
-        'phrase1'=>'En av våra lokala ambassadörer kommer nu att granska ditt evenemang',
-        'phrase2'=>'och se till att allt ser bra ut.',
-        'phrase3'=>'Om du har frågor kan du kontakta en av våra',
-        'phrase4'=>'nationella ambassadörer',
-        'phrase5'=>'eller skicka oss ett',
-        'phrase6'=>'e-postmeddelande',
-        'phrase7'=>'Du kan dela din Code Week 4 All-kod med andra:'
+    'thanks_page' => [
+        'title' => 'Tack för att du lagt till ditt evenemang!',
+        'phrase1' => 'En av våra lokala ambassadörer kommer nu att granska ditt evenemang',
+        'phrase2' => 'och se till att allt ser bra ut.',
+        'phrase3' => 'Om du har frågor kan du kontakta en av våra',
+        'phrase4' => 'nationella ambassadörer',
+        'phrase5' => 'eller skicka oss ett',
+        'phrase6' => 'e-postmeddelande',
+        'phrase7' => 'Du kan dela din Code Week 4 All-kod med andra:'
     ],
     'activitytype' => [
         'label' => 'Aktivitetstyp',
@@ -131,7 +132,7 @@ return [
         'invite-in-person' => 'Aktivitet för inbjudna besökare'
 
     ],
-    'privacy'=>'Jag har läst och godkänner integritetspolicyn som beskrivs i detta dokument.',
+    'privacy' => 'Jag har läst och godkänner integritetspolicyn som beskrivs i detta dokument.',
     'country' => 'Land',
     'loading' => 'Laddar ...',
     'add_activity' => 'Lägg till aktivitet',
@@ -147,10 +148,6 @@ return [
     'view_your_certificate' => 'Visa ditt intyg här',
     'submit_event_and_report' => 'Skicka in en rapport för detta evenemang och få ditt Code Week-intyg',
     'report_and_claim' => 'Rapportera evenemanget och få ett intyg'
-
-
-
-
 
 
 ];
