@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Organiseer of ondersteun evenementen in jouw gemeente',
     'or_contact_your' => 'of neem contact op met je',
     'eu_code_week_ambassadors' => 'Ambassadeurs van de EU-Programmeerweek',
-    'show_events_for'=>'Evenementen weergeven voor ',
+    'show_events_for' => 'Evenementen weergeven voor ',
     'who' => 'Voor wie is het evenement bedoeld?',
     'tags' => 'Tags',
     'image' => 'Afbeelding',
@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Werkende volwassenen',
         'Unemployed adults' => 'Werkloze volwassenen',
         'Other (see description)' => 'Overige (zie beschrijving)',
+        'Teachers' => 'Leraren',
     ],
     'theme' => [
         'Basic programming concepts' => 'Basisconcepten voor programmeren',
@@ -112,15 +113,15 @@ return [
         'explanation' => 'Als je een Code Week 4 All-code hebt ontvangen van een schoolcollega of een vriend plak je deze hier; anders laat je dit veld leeg. Er is meer info over Code Week 4 All beschikbaar',
         'link' => 'hier',
     ],
-    'thanks_page'=>[
-        'title'=>'Bedankt voor het toevoegen van je evenement!',
-        'phrase1'=>'Een van onze lokale ambassadeurs zal je evenement nu controleren',
-        'phrase2'=>'en nakijken of alles in orde is.',
-        'phrase3'=>'Als je vragen hebt, neem dan contact op met een van onze',
-        'phrase4'=>'nationale ambassadeurs',
-        'phrase5'=>'of stuur ons een',
-        'phrase6'=>'e-mail',
-        'phrase7'=>'Je kunt je Code Week 4 All-code delen met andere mensen:'
+    'thanks_page' => [
+        'title' => 'Bedankt voor het toevoegen van je evenement!',
+        'phrase1' => 'Een van onze lokale ambassadeurs zal je evenement nu controleren',
+        'phrase2' => 'en nakijken of alles in orde is.',
+        'phrase3' => 'Als je vragen hebt, neem dan contact op met een van onze',
+        'phrase4' => 'nationale ambassadeurs',
+        'phrase5' => 'of stuur ons een',
+        'phrase6' => 'e-mail',
+        'phrase7' => 'Je kunt je Code Week 4 All-code delen met andere mensen:'
     ],
     'activitytype' => [
         'label' => 'Type activiteit',
@@ -131,7 +132,7 @@ return [
         'invite-in-person' => 'Offline activiteit - alleen met uitnodiging'
 
     ],
-    'privacy'=>'Ik heb de privacyverklaring die in dit document beschreven staat gelezen en ga ermee akkoord.',
+    'privacy' => 'Ik heb de privacyverklaring die in dit document beschreven staat gelezen en ga ermee akkoord.',
     'country' => 'Land',
     'loading' => 'Aan het laden...',
     'add_activity' => 'Activiteit toevoegen',
@@ -147,10 +148,6 @@ return [
     'view_your_certificate' => 'Je certificaat hier bekijken',
     'submit_event_and_report' => 'Dien een melding voor dit evenement in en vraag je Programmeerweek-certificaat aan.',
     'report_and_claim' => 'Evenement melden en certificaat aanvragen',
-
-
-
-
 
 
 ];

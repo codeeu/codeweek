@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Veranstaltungen in Ihrer Stadt ausrichten oder unterstützen',
     'or_contact_your' => 'oder Ihre',
     'eu_code_week_ambassadors' => 'EU Code Week-Botschafter*innen kontaktieren',
-    'show_events_for'=>'Veranstaltungen anzeigen für ',
+    'show_events_for' => 'Veranstaltungen anzeigen für ',
     'who' => 'Für wen ist diese Veranstaltung vorgesehen?',
     'tags' => 'Tags',
     'image' => 'Bild',
@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Berufstätige Erwachsene',
         'Unemployed adults' => 'Nicht berufstätige Erwachsene',
         'Other (see description)' => 'Sonstige (siehe Beschreibung)',
+        'Teachers' => 'Lehrer',
     ],
     'theme' => [
         'Basic programming concepts' => 'Grundlagen des Programmierens',
@@ -112,15 +113,15 @@ return [
         'explanation' => 'Wenn Sie einen „Code Week 4 all“-Code von Mitschüler*innen oder aus dem Freundeskreis erhalten haben, kopieren Sie ihn hier hinein, sonst lassen Sie dieses Feld leer. Weiterführende Informationen zu Code Week 4 All sind',
         'link' => 'hier verfügbar',
     ],
-    'thanks_page'=>[
-        'title'=>'Vielen Dank fürs Hinzufügen Ihrer Veranstaltung!',
-        'phrase1'=>'Eine*r unserer lokalen Botschafter*innen prüft jetzt Ihre Veranstaltung',
-        'phrase2'=>'und stellt sicher, dass alles in Ordnung ist.',
-        'phrase3'=>'Kontaktieren Sie bei Fragen eine*n unserer',
-        'phrase4'=>'nationalen Botschafter*innen',
-        'phrase5'=>'oder senden Sie uns eine',
-        'phrase6'=>'E-Mail',
-        'phrase7'=>'Sie können Ihren „Code Week für alle“-Code mit anderen Menschen teilen:'
+    'thanks_page' => [
+        'title' => 'Vielen Dank fürs Hinzufügen Ihrer Veranstaltung!',
+        'phrase1' => 'Eine*r unserer lokalen Botschafter*innen prüft jetzt Ihre Veranstaltung',
+        'phrase2' => 'und stellt sicher, dass alles in Ordnung ist.',
+        'phrase3' => 'Kontaktieren Sie bei Fragen eine*n unserer',
+        'phrase4' => 'nationalen Botschafter*innen',
+        'phrase5' => 'oder senden Sie uns eine',
+        'phrase6' => 'E-Mail',
+        'phrase7' => 'Sie können Ihren „Code Week für alle“-Code mit anderen Menschen teilen:'
     ],
     'activitytype' => [
         'label' => 'Veranstaltungsart',
@@ -132,7 +133,7 @@ return [
 
     ],
 
-    'privacy'=>'Ich habe die in diesem Dokument beschriebenen Datenschutzbestimmungen gelesen und bin damit einverstanden',
+    'privacy' => 'Ich habe die in diesem Dokument beschriebenen Datenschutzbestimmungen gelesen und bin damit einverstanden',
     'country' => 'Land',
     'loading' => 'Laden ...',
     'add_activity' => 'Aktivität hinzufügen',

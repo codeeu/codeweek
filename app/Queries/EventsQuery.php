@@ -29,7 +29,7 @@ class EventsQuery
         $request['theme'] = explode(',', $request['theme']);
         $request['audience'] = explode(',', $request['audience']);
 
-        if($request['activity_type'] == "open-online") {
+        if(is_null($request['location']) && ($request['activity_type'] == "open-online" || $request['activity_type'] == "invite-online")) {
             $request['location'] = "online";
             $request['geoposition'] = "0,0";
         }

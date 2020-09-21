@@ -86,6 +86,7 @@ Ambasadorët e EU Code Week dhe organizatorët e Code Week të cilët do të kon
         'Employed adults' => 'Të rritur të punësuar',
         'Unemployed adults' => 'Të rritur të papunësuar',
         'Other (see description)' => 'Tjetër (shihni përshkrimin)',
+        'Teachers' => 'Mësues',
     ],
     'theme' => [
         'Basic programming concepts' => 'Konceptet bazë të programimit',

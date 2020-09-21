@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Organizirajte događanja u svojem gradu ili im pružite podršku',
     'or_contact_your' => 'ili se obratite svojim',
     'eu_code_week_ambassadors' => 'ambasadorima Europskog tjedna programiranja',
-    'show_events_for'=>'Pokaži događanja za ',
+    'show_events_for' => 'Pokaži događanja za ',
     'who' => 'Za koga je ovo događanje?',
     'tags' => 'Oznake',
     'image' => 'Slika',
@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Zaposlene odrasle osobe',
         'Unemployed adults' => 'Nezaposlene odrasle osobe',
         'Other (see description)' => 'Ostali (vidjeti opis)',
+        'Teachers' => 'učitelji',
     ],
     'theme' => [
         'Basic programming concepts' => 'Osnovni koncepti programiranja',
@@ -112,15 +113,15 @@ return [
         'explanation' => 'Ako ste od školskog kolege ili prijatelja dobili kôd Code Week 4 all, zalijepite ga ovdje. U suprotnome, ovo mjesto ostavite praznim. Više informacija o kôdu Code Week 4 all dostupno je',
         'link' => 'ovdje',
     ],
-    'thanks_page'=>[
-        'title'=>'Hvala na dodavanju događanja!',
-        'phrase1'=>'Jedan od naših lokalnih ambasadora sada će pregledati vaše događanje',
-        'phrase2'=>'i provjeriti izgleda li sve u redu.',
-        'phrase3'=>'Ako imate bilo kakvih pitanja, obratite se nekom od naših',
-        'phrase4'=>'nacionalnih ambasadora',
-        'phrase5'=>'ili nam pošaljite',
-        'phrase6'=>'poruku e-pošte',
-        'phrase7'=>'Svoj kôd Code Week 4 all možete podijelit s drugima:'
+    'thanks_page' => [
+        'title' => 'Hvala na dodavanju događanja!',
+        'phrase1' => 'Jedan od naših lokalnih ambasadora sada će pregledati vaše događanje',
+        'phrase2' => 'i provjeriti izgleda li sve u redu.',
+        'phrase3' => 'Ako imate bilo kakvih pitanja, obratite se nekom od naših',
+        'phrase4' => 'nacionalnih ambasadora',
+        'phrase5' => 'ili nam pošaljite',
+        'phrase6' => 'poruku e-pošte',
+        'phrase7' => 'Svoj kôd Code Week 4 all možete podijelit s drugima:'
     ],
     'activitytype' => [
         'label' => 'Tip aktivnosti',
@@ -131,7 +132,7 @@ return [
         'invite-in-person' => 'Aktivnost po pozivu'
 
     ],
-    'privacy'=>'Pročitao-la sam i prihvaćam uvjete u vezi s pravilima o privatnosti opisanih u ovom dokumentu.',
+    'privacy' => 'Pročitao-la sam i prihvaćam uvjete u vezi s pravilima o privatnosti opisanih u ovom dokumentu.',
     'country' => 'Zemlja',
     'loading' => 'Učitavanje...',
     'add_activity' => 'Dodajte događanje',
@@ -147,11 +148,6 @@ return [
     'view_your_certificate' => 'Ovdje pogledajte svoju potvrdu',
     'submit_event_and_report' => 'Predajte prijavu ovog događanja i zatražite svoju potvrdu za Tjedan programiranja.',
     'report_and_claim' => 'Prijavite događanje i zatražite potvrdu',
-
-
-
-
-
 
 
 ];
