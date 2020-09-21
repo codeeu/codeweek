@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Organizirajte ali podprite dogodke v svojem mestu',
     'or_contact_your' => 'ali se obrnite na',
     'eu_code_week_ambassadors' => 'ambasadorje tedna programiranja EU',
-    'show_events_for'=>'Prikaži dogodke za ',
+    'show_events_for' => 'Prikaži dogodke za ',
     'who' => 'Komu je dogodek namenjen?',
     'tags' => 'Oznake',
     'image' => 'Slika',
@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Zaposleni odrasli',
         'Unemployed adults' => 'Nezaposleni odrasli',
         'Other (see description)' => 'Drugo (glejte opis)',
+        'Teachers' => 'Učitelji',
     ],
     'theme' => [
         'Basic programming concepts' => 'Osnovni pojmi programiranja',
@@ -112,15 +113,15 @@ return [
         'explanation' => 'Če ste od sošolca ali prijatelja prejeli kodo Code Week 4 All, jo prilepite tukaj, sicer pustite prazno polje. Več informacij o kodi Code Week 4 All je na voljo',
         'link' => 'tukaj',
     ],
-    'thanks_page'=>[
-        'title'=>'Hvala, da ste dodali svoj dogodek!',
-        'phrase1'=>'Eden od naših lokalnih ambasadorjev ga bo zdaj pregledal',
-        'phrase2'=>'in se prepričal, da je vse v redu.',
-        'phrase3'=>'Če imate kakršno koli vprašanje, se obrnite na enega od naših',
-        'phrase4'=>'nacionalnih ambasadorjev',
-        'phrase5'=>'ali nam pošljite',
-        'phrase6'=>'elektronsko sporočilo.',
-        'phrase7'=>'Svojo kodo Code Week 4 All lahko delite z drugimi:'
+    'thanks_page' => [
+        'title' => 'Hvala, da ste dodali svoj dogodek!',
+        'phrase1' => 'Eden od naših lokalnih ambasadorjev ga bo zdaj pregledal',
+        'phrase2' => 'in se prepričal, da je vse v redu.',
+        'phrase3' => 'Če imate kakršno koli vprašanje, se obrnite na enega od naših',
+        'phrase4' => 'nacionalnih ambasadorjev',
+        'phrase5' => 'ali nam pošljite',
+        'phrase6' => 'elektronsko sporočilo.',
+        'phrase7' => 'Svojo kodo Code Week 4 All lahko delite z drugimi:'
     ],
     'activitytype' => [
         'label' => 'Vrsta dejavnosti',
@@ -131,7 +132,7 @@ return [
         'invite-in-person' => 'Dejavnost izven spleta s povabilom'
 
     ],
-    'privacy'=>'Prebral sem in se strinjam s pogoji o zasebnosti, ki so navedeni v tem dokumentu.',
+    'privacy' => 'Prebral sem in se strinjam s pogoji o zasebnosti, ki so navedeni v tem dokumentu.',
     'country' => 'Država',
     'loading' => 'Nalaganje ...',
     'add_activity' => 'Dodaj dejavnost',
@@ -147,7 +148,6 @@ return [
     'view_your_certificate' => 'Certifikat si lahko ogledate tukaj',
     'submit_event_and_report' => 'Pošljite prijavo za ta dogodek in prevzemite svoj certifikat za teden programiranja.',
     'report_and_claim' => 'Prijavite dogodek in prevzemite certifikat',
-
 
 
 ];

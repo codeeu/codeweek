@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Organizējiet vai atbalstiet pasākumus savā pilsētā',
     'or_contact_your' => 'vai sazinieties ar',
     'eu_code_week_ambassadors' => 'ES programmēšanas nedēļas vēstniekiem',
-    'show_events_for'=>'Parādīt pasākumus, kuru mērķauditorija ir šāda: ',
+    'show_events_for' => 'Parādīt pasākumus, kuru mērķauditorija ir šāda: ',
     'who' => 'Kam šis pasākums ir paredzēts?',
     'tags' => 'Tagi',
     'image' => 'Attēls',
@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Strādājoši pieaugušie',
         'Unemployed adults' => 'Bezdarbnieki',
         'Other (see description)' => 'Cits (skatiet aprakstu)',
+        'Teachers' => 'Skolotāji',
     ],
     'theme' => [
         'Basic programming concepts' => 'Programmēšanas pamatjēdzieni',
@@ -112,15 +113,15 @@ return [
         'explanation' => 'Ja esat saņēmis “Programmēšanas nedēļa visiem” (Code Week 4 All) kodu no skolas, kolēģa vai drauga, lūdzu, ielīmējiet to šeit. Ja jums tāda nav, lūdzu, atstājiet šo lauku tukšu. Plašāka informācija par “Programmēšanas nedēļa visiem” ir pieejama',
         'link' => 'šeit',
     ],
-    'thanks_page'=>[
-        'title'=>'Paldies par pasākuma pievienošanu!',
-        'phrase1'=>'Viens no mūsu vietējiem vēstniekiem tagad pārskatīs jūsu pasākumu',
-        'phrase2'=>'un pārliecināsies, ka viss ir kārtībā.',
-        'phrase3'=>'Ja Jums ir jautājumi, lūdzu, sazinieties ar vienu no mūsu',
-        'phrase4'=>'valsts vēstniekiem',
-        'phrase5'=>'vai nosūtiet mums',
-        'phrase6'=>'e-pastu.',
-        'phrase7'=>'Jūs varat kopīgot “Programmēšanas nedēļa visiem” kodu ar citiem:'
+    'thanks_page' => [
+        'title' => 'Paldies par pasākuma pievienošanu!',
+        'phrase1' => 'Viens no mūsu vietējiem vēstniekiem tagad pārskatīs jūsu pasākumu',
+        'phrase2' => 'un pārliecināsies, ka viss ir kārtībā.',
+        'phrase3' => 'Ja Jums ir jautājumi, lūdzu, sazinieties ar vienu no mūsu',
+        'phrase4' => 'valsts vēstniekiem',
+        'phrase5' => 'vai nosūtiet mums',
+        'phrase6' => 'e-pastu.',
+        'phrase7' => 'Jūs varat kopīgot “Programmēšanas nedēļa visiem” kodu ar citiem:'
     ],
     'activitytype' => [
         'label' => 'Pasākuma veids',
@@ -131,7 +132,7 @@ return [
         'invite-in-person' => 'Klātienes aktivitāte, kurā dalība ar ielūgumiem'
 
     ],
-    'privacy'=>'Es izlasīju un piekrītu privātuma noteikumiem un nosacījumiem kuri minēti šajā dokumentā.',
+    'privacy' => 'Es izlasīju un piekrītu privātuma noteikumiem un nosacījumiem kuri minēti šajā dokumentā.',
     'country' => 'Valsts',
     'loading' => 'Notiek ielāde...',
     'add_activity' => 'Pievienot pasākumu',
@@ -147,9 +148,6 @@ return [
     'view_your_certificate' => 'Apskatiet savu sertifikātu šeit',
     'submit_event_and_report' => 'Iesniedziet ziņojumu par pasākumu un pieprasiet Programmēšanas nedēļas sertifikātu.',
     'report_and_claim' => 'Paziņot par pasākumu un pieprasīt sertifikātu',
-
-
-
 
 
 ];
