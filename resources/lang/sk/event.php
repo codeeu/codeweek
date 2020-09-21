@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Usporiadajte alebo podporte podujatia vo svojom meste',
     'or_contact_your' => 'alebo kontaktujte svojich',
     'eu_code_week_ambassadors' => 'veľvyslancov Európskeho týždňa programovania',
-    'show_events_for'=>'Zobraziť udalosti pre ',
+    'show_events_for' => 'Zobraziť udalosti pre ',
     'who' => 'Komu je podujatie určené?',
     'tags' => 'Značky',
     'image' => 'Obrázok',
@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Zamestnaní dospelí',
         'Unemployed adults' => 'Nezamestnaní dospelí',
         'Other (see description)' => 'Iné (pozri opis)',
+        'Teachers' => 'Učitelia',
     ],
     'theme' => [
         'Basic programming concepts' => 'Základné koncepcie programovania',
@@ -112,15 +113,15 @@ return [
         'explanation' => 'Ak ste od kolegu v škole alebo od priateľa dostali kód Code Week 4 all, zadajte ho tu. V opačnom prípade nič nevypĺňajte. Ďalšie informácie o výzve Code Week 4 All nájdete',
         'link' => 'tu',
     ],
-    'thanks_page'=>[
-        'title'=>'Ďakujeme, že ste pridali svoje podujatie!',
-        'phrase1'=>'Niektorý z vašich miestnych veľvyslancov teraz skontroluje vaše podujatie',
-        'phrase2'=>'a ubezpečí sa, že je všetko v poriadku.',
-        'phrase3'=>'V prípade otázok sa obráťte na niektorého z našich',
-        'phrase4'=>'národných veľvyslancov',
-        'phrase5'=>'alebo nám pošlite',
-        'phrase6'=>'e-mail',
-        'phrase7'=>'O svoj kód Codeweek for all sa môžete podeliť aj s inými:'
+    'thanks_page' => [
+        'title' => 'Ďakujeme, že ste pridali svoje podujatie!',
+        'phrase1' => 'Niektorý z vašich miestnych veľvyslancov teraz skontroluje vaše podujatie',
+        'phrase2' => 'a ubezpečí sa, že je všetko v poriadku.',
+        'phrase3' => 'V prípade otázok sa obráťte na niektorého z našich',
+        'phrase4' => 'národných veľvyslancov',
+        'phrase5' => 'alebo nám pošlite',
+        'phrase6' => 'e-mail',
+        'phrase7' => 'O svoj kód Codeweek for all sa môžete podeliť aj s inými:'
     ],
     'activitytype' => [
         'label' => 'Typ Aktivity',
@@ -131,7 +132,7 @@ return [
         'invite-in-person' => 'Privátne osobné aktivita'
 
     ],
-    'privacy'=>'Prečítal(-a) som si a súhlasím s podmienkami ochrany osobných údajov popísanými v tomto dokumente',
+    'privacy' => 'Prečítal(-a) som si a súhlasím s podmienkami ochrany osobných údajov popísanými v tomto dokumente',
     'country' => 'Krajina',
     'loading' => 'Načítava sa...',
     'add_activity' => 'Pridať aktivitu',
@@ -147,10 +148,6 @@ return [
     'view_your_certificate' => 'Tu si môžete certifikát zobraziť.',
     'submit_event_and_report' => 'Podajte správu o tomto podujatí a vyžiadajte si certifikát Týždňa programovania.',
     'report_and_claim' => 'Podať správu o podujatí a vyžiadať certifikát',
-
-
-
-
 
 
 ];

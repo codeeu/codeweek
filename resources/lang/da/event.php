@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Afhold eller støt arrangementer i din by',
     'or_contact_your' => 'eller kontakt dine',
     'eu_code_week_ambassadors' => 'ambassadører for EU’s kodeuge',
-    'show_events_for'=>'Vis arrangementer for ',
+    'show_events_for' => 'Vis arrangementer for ',
     'who' => 'Hvem henvender arrangementet sig til?',
     'tags' => 'Tags',
     'image' => 'Billede',
@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Voksne i arbejde',
         'Unemployed adults' => 'Voksne arbejdssøgende',
         'Other (see description)' => 'Andre (se beskrivelse)',
+        'Teachers' => 'Lærere',
     ],
     'theme' => [
         'Basic programming concepts' => 'Grundlæggende programmeringskoncepter',
@@ -112,15 +113,15 @@ return [
         'explanation' => 'Hvis du har fået en Code Week 4 all-kode fra en kollega eller ven, kan du indtaste den her. Ellers skal feltet være tomt. Der er flere oplysninger om Code Week 4 All',
         'link' => 'her',
     ],
-    'thanks_page'=>[
-        'title'=>'Tak, fordi du tilføjede dit arrangement!',
-        'phrase1'=>'En af vores lokale ambassadører vil nu tjekke dit arrangement',
-        'phrase2'=>'og sikre, at alt er, som det skal være.',
-        'phrase3'=>'Hvis du har spørgsmål, kan du kontakte en af vores',
-        'phrase4'=>'nationale ambassadører',
-        'phrase5'=>'eller sende os en',
-        'phrase6'=>'e-mail',
-        'phrase7'=>'Du kan dele din Codeweek for all-kode med andre:'
+    'thanks_page' => [
+        'title' => 'Tak, fordi du tilføjede dit arrangement!',
+        'phrase1' => 'En af vores lokale ambassadører vil nu tjekke dit arrangement',
+        'phrase2' => 'og sikre, at alt er, som det skal være.',
+        'phrase3' => 'Hvis du har spørgsmål, kan du kontakte en af vores',
+        'phrase4' => 'nationale ambassadører',
+        'phrase5' => 'eller sende os en',
+        'phrase6' => 'e-mail',
+        'phrase7' => 'Du kan dele din Codeweek for all-kode med andre:'
     ],
     'activitytype' => [
         'label' => 'Aktivitetstype',
@@ -132,7 +133,7 @@ return [
 
     ],
 
-    'privacy'=>'Jeg har læst og accepteret de retningslinjer for beskyttelse af personlige oplysninger, der er beskrevet i dette dokument.',
+    'privacy' => 'Jeg har læst og accepteret de retningslinjer for beskyttelse af personlige oplysninger, der er beskrevet i dette dokument.',
     'country' => 'Land',
     'loading' => 'Indlæser ...',
     'add_activity' => 'Tilføj aktivitet',

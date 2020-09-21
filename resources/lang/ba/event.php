@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Organizirajte ili podržite događaje u svom gradu',
     'or_contact_your' => 'ili kontaktirajte svoje',
     'eu_code_week_ambassadors' => 'Ambasadore Sedmice kodiranja EU',
-    'show_events_for'=>'Prikažite događaje za ',
+    'show_events_for' => 'Prikažite događaje za ',
     'who' => 'Za koga je događaj?',
     'tags' => 'Oznake',
     'image' => 'Slika',
@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Zaposleni odrasli',
         'Unemployed adults' => 'Nezaposleni odrasli',
         'Other (see description)' => 'Ostalo (vidi opis)',
+        'Teachers' => 'Nastavnici',
     ],
     'theme' => [
         'Basic programming concepts' => 'Osnovni koncepti programiranja',
@@ -112,15 +113,15 @@ return [
         'explanation' => 'Ako ste dobili kod Sedmice kodiranja za sve od školskog kolege ili prijatelja, zalijepite ga ovdje, inače ostavite prazno.  Više informacija o Sedmici kodiranja za sve se može naći',
         'link' => 'ovdje',
     ],
-    'thanks_page'=>[
-        'title'=>'Hvala što ste dodali svoj događaj!',
-        'phrase1'=>'Jedan od naših lokalnih ambasadora će sad pregledati vaš događaj',
-        'phrase2'=>'i pobrinuti se da sve izgleda uredu.',
-        'phrase3'=>'Ako imate nekih pitanja, stupite u kontakt s našim',
-        'phrase4'=>'nacionalnim ambasadorima',
-        'phrase5'=>'ili nam pošaljite',
-        'phrase6'=>'e-poštu',
-        'phrase7'=>'Možete podijeliti svoj kod Sedmice kodiranja za sve s drugima.'
+    'thanks_page' => [
+        'title' => 'Hvala što ste dodali svoj događaj!',
+        'phrase1' => 'Jedan od naših lokalnih ambasadora će sad pregledati vaš događaj',
+        'phrase2' => 'i pobrinuti se da sve izgleda uredu.',
+        'phrase3' => 'Ako imate nekih pitanja, stupite u kontakt s našim',
+        'phrase4' => 'nacionalnim ambasadorima',
+        'phrase5' => 'ili nam pošaljite',
+        'phrase6' => 'e-poštu',
+        'phrase7' => 'Možete podijeliti svoj kod Sedmice kodiranja za sve s drugima.'
     ],
     'activitytype' => [
         'label' => 'Tip aktivnosti',
@@ -132,7 +133,7 @@ return [
 
     ],
 
-    'privacy'=>'Pročitao-la sam i slažem se sa uslovima politike privatnosti opisanih u ovom dokumentu.',
+    'privacy' => 'Pročitao-la sam i slažem se sa uslovima politike privatnosti opisanih u ovom dokumentu.',
     'country' => 'Zemlja',
     'loading' => 'Učitavanje...',
     'add_activity' => 'Dodajte aktivnost',
@@ -148,8 +149,6 @@ return [
     'view_your_certificate' => 'Pogledajte svoj certifikat ovdje',
     'submit_event_and_report' => 'Podnesite prijavu za ovaj događaj i preuzmite svoj certifikat Sedmice kodiranja.',
     'report_and_claim' => 'Prijavite događaj i preuzmite certifikat'
-
-
 
 
 ];

@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Organizujete ili podržite događaje u svom gradu',
     'or_contact_your' => 'ili kontaktirajte svog',
     'eu_code_week_ambassadors' => 'Ambasadora EU nedelje programiranja',
-    'show_events_for'=>'Prikaži događaj za ',
+    'show_events_for' => 'Prikaži događaj za ',
     'who' => 'Za koga je događaj?',
     'tags' => 'Oznake',
     'image' => 'Fotografije',
@@ -85,6 +85,7 @@ return [
         'Employed adults' => 'Zaposleni',
         'Unemployed adults' => 'Nezaposleni',
         'Other (see description)' => 'Drugo (vidi opis)',
+        'Teachers' => 'Nastavnici',
     ],
     'theme' => [
         'Basic programming concepts' => 'Osnovni koncepti programiranja',
@@ -112,15 +113,15 @@ return [
         'explanation' => 'Ukoliko ste dobili kod „Nedelja programiranja za sve“ od kolege u školi ili prijatelja unesite ga ovde ili ostavite polje prazno. Više informacija o „Nedelji programiranja za sve“ je dostupno',
         'link' => 'ovde',
     ],
-    'thanks_page'=>[
-        'title'=>'Hvala što ste dodali događaj!',
-        'phrase1'=>'Jedan od naših lokalnih ambasadora će sada pregledati informacije o vašem događaju',
-        'phrase2'=>'i uveriti se da je u sve u redu.',
-        'phrase3'=>'Ako imate bilo kakvih pitanja, kontaktirajte jednog od naših',
-        'phrase4'=>'nacionalnih ambasadora',
-        'phrase5'=>'ili nam pošaljite',
-        'phrase6'=>'imejl',
-        'phrase7'=>'Možete da delite svoj kod „Nedelja programiranja za sve“ sa drugima:'
+    'thanks_page' => [
+        'title' => 'Hvala što ste dodali događaj!',
+        'phrase1' => 'Jedan od naših lokalnih ambasadora će sada pregledati informacije o vašem događaju',
+        'phrase2' => 'i uveriti se da je u sve u redu.',
+        'phrase3' => 'Ako imate bilo kakvih pitanja, kontaktirajte jednog od naših',
+        'phrase4' => 'nacionalnih ambasadora',
+        'phrase5' => 'ili nam pošaljite',
+        'phrase6' => 'imejl',
+        'phrase7' => 'Možete da delite svoj kod „Nedelja programiranja za sve“ sa drugima:'
     ],
     'activitytype' => [
         'label' => 'Tip aktivnosti',
@@ -131,7 +132,7 @@ return [
         'invite-in-person' => 'Aktivnost po pozivu'
 
     ],
-    'privacy'=>'Прочитао-ла сам сам и слажем се са условима политике приватности описаних у овом документу.',
+    'privacy' => 'Прочитао-ла сам сам и слажем се са условима политике приватности описаних у овом документу.',
     'country' => 'Zemlja',
     'loading' => 'Učitava se...',
     'add_activity' => 'Dodajte događaj',
@@ -147,10 +148,6 @@ return [
     'view_your_certificate' => 'Pogledajte svoj sertifikat ovde',
     'submit_event_and_report' => 'Pošaljite izveštaj za ovaj događaj i zatražite svoj sertifikat Nedelje programiranja.',
     'report_and_claim' => 'Podnesite izveštaj o događaju i zatražite sertifikat'
-
-
-
-
 
 
 ];
