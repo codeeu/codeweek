@@ -304,19 +304,7 @@
 @push('scripts')
 
 
-    <script defer src="//europa.eu/webtools/load.js" type="text/javascript"></script>
-    <script type="application/json">
-        {
-            "service" : "map",
-            "version" : "2.0",
-            "renderTo" : "events-edit-map",
-            "height": "250",
-            "width": "422",
-            "custom": ["../js/hideMenuMap.js"]
-        }
-    </script>
-
-    <script src="{{asset('js/map-add-event.js')}}"></script>
+{{--    <script defer src="//europa.eu/webtools/load.js" type="text/javascript"></script>--}}
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
 
