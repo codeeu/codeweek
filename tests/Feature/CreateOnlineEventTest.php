@@ -4,7 +4,8 @@ namespace Tests\Feature;
 
 use App\Event;
 use App\Mail\EventCreated;
-use Mail;
+use Illuminate\Support\Facades\Mail;
+
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -14,6 +15,13 @@ class CreateOnlineEventTest extends TestCase
 
     use DatabaseMigrations;
 
+    public function setup() :void
+    {
+        parent::setUp();
+        Mail::fake();
+
+
+    }
 
 
     /** @test */
