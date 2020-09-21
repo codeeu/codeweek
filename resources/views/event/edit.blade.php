@@ -84,6 +84,7 @@
                             </div>
                         </div>
 
+
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
                                 <label for="activity_type">* @lang('event.activitytype.label')</label>
