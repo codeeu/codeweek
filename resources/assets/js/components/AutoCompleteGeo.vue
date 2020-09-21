@@ -46,7 +46,10 @@
       },
         methods: {
             itemSelected (item) {
-                if (map && item && item.name && item.magicKey){
+
+                console.log("Map: ", window.map);
+
+                if (item && item.name && item.magicKey){
                     var me = this;
                     var baseURL = "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?f=json";
                     $.ajax({
@@ -54,7 +57,9 @@
                         success: function (res) {
                             var candidate = res.candidates[0];
                             me.geoposition = [candidate.location.y, candidate.location.x];
-                            map.setView(me.geoposition,16);
+                            if (window.map){
+                              map.setView(me.geoposition,16);
+                            }
                             var countryIso2 = me.findCountry(candidate.attributes.Country).iso2;
                             $("#id_country").val(countryIso2);
                         }
