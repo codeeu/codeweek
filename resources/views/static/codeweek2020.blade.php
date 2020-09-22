@@ -131,7 +131,7 @@
                     <h4> @lang('cw2020.common.resources'):</h4>
                     <ul style="list-style-type: circle;margin-left:40px; margin-top:-4px;">
                         @include("static._cw2020-common")
-                        <li>@lang('cw2020.dance.activity4.resources.0')</li>
+{{--                        <li>@lang('cw2020.dance.activity4.resources.0')</li>--}}
                     </ul>
 
                     <h4>5. @lang('cw2020.dance.activity5.title') </h4>
