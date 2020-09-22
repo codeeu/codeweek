@@ -39,4 +39,5 @@ return [
     'participation'=> 'Potvrda o sudjelovanju',
     'values' => 'Naše vrijednosti',
 
-];
+    'featured_activities' => '',
+    'codeweek2020' => ''];

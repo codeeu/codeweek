@@ -15,13 +15,13 @@ return [
 
     'learn' => 'Za učenike',
     'teach' => 'Za profesore',
-    'training' => 'Trening', 'toolkits' => 'Prezentacije i alati', 'why' => 'ZAŠTO', 'home'  => 'Početna stranica',
+    'training' => 'Trening', 'toolkits' => 'Prezentacije i alati', 'why' => 'ZAŠTO', 'home' => 'Početna stranica',
     'events' => 'Aktivnosti',
     'ambassadors' => 'Ambasadori',
     'resources' => 'Materijali',
     'schools' => 'Škole',
     'about' => 'O nama',
-    'blog' => 'Blog','news' => 'Novosti',
+    'blog' => 'Blog', 'news' => 'Novosti',
     'search' => 'Otkucajte i pritisnite Enter...',
     'map' => 'Mapa',
     'add_event' => 'Dodati događaj',
@@ -36,6 +36,7 @@ return [
     'logout' => 'Odjavljivanje',
     'signin' => 'Pristup',
     'privacy' => 'Privatnost',
-    'participation'=> 'Sertifikat o učešću',
+    'participation' => 'Sertifikat o učešću',
     'values' => 'Naše vrijednosti',
-];
+    'featured_activities' => '',
+    'codeweek2020' => ''];
