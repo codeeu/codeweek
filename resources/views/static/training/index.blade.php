@@ -95,20 +95,20 @@
                         <div class="author">@lang('training.lessons.11.author')</div>
                     </a>
                 </div>
-                <div class="codeweek-card-grid">
-                    <a href="/training/introduction-to-artificial-intelligence-in-the-classroom">
-                        <img src="/img/learning/introduction-to-artificial-intelligence-in-the-classroom.png">
-                        <div class="title">@lang('training.lessons.12.title')</div>
-                        <div class="author">@lang('training.lessons.12.author')</div>
-                    </a>
-                </div>
-                <div class="codeweek-card-grid">
-                    <a href="/training/coding-for-sustainable-development-goals">
-                        <img src="/img/learning/coding-for-sustainable-development-goals.png">
-                        <div class="title">@lang('training.lessons.13.title')</div>
-                        <div class="author">@lang('training.lessons.13.author')</div>
-                    </a>
-                </div>
+{{--                <div class="codeweek-card-grid">--}}
+{{--                    <a href="/training/introduction-to-artificial-intelligence-in-the-classroom">--}}
+{{--                        <img src="/img/learning/introduction-to-artificial-intelligence-in-the-classroom.png">--}}
+{{--                        <div class="title">@lang('training.lessons.12.title')</div>--}}
+{{--                        <div class="author">@lang('training.lessons.12.author')</div>--}}
+{{--                    </a>--}}
+{{--                </div>--}}
+{{--                <div class="codeweek-card-grid">--}}
+{{--                    <a href="/training/coding-for-sustainable-development-goals">--}}
+{{--                        <img src="/img/learning/coding-for-sustainable-development-goals.png">--}}
+{{--                        <div class="title">@lang('training.lessons.13.title')</div>--}}
+{{--                        <div class="author">@lang('training.lessons.13.author')</div>--}}
+{{--                    </a>--}}
+{{--                </div>--}}
             </section>
 
             <section class="codeweek-content-wrapper-inside">
