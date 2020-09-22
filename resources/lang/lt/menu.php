@@ -39,4 +39,5 @@ return [
     'privacy' => 'Privatumas',
     'participation'=> 'Dalyvio pažymėjimas',
     'values' => 'Mūsų principai',
-];
+    'featured_activities' => '',
+    'codeweek2020' => ''];
