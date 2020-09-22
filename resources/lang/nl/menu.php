@@ -38,4 +38,5 @@ return [
     'privacy' => 'Privacy',
     'participation'=> 'Deelnamecertificaat',
     'values' => 'Onze waardes',
-];
+    'featured_activities' => '',
+    'codeweek2020' => ''];

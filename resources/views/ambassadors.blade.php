@@ -77,7 +77,7 @@
                                         <img src="/images/mail.svg" alt="Twitter">
                                     </a>
                                 @endif
-                                {{--Ambassdor twitter--}}
+                                {{--Ambassador twitter--}}
                                 @if($ambassador->twitter)
                                     <a href="http://twitter.com/{{ $ambassador->twitter }}"
                                        target="_blank" class="codeweek-svg-button">
