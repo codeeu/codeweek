@@ -64,7 +64,7 @@
     @if((Request::is('hackathons/*')))
         @yield('hackathons.header')
     @else
-        @include('layout.header')
+        @include('layout.menu')
     @endif
 
     <main>

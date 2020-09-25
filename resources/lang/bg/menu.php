@@ -40,5 +40,5 @@ return [
     'privacy' => 'Поверителност',
     'participation'=> 'Сертификат за участие',
     'values' => 'Нашите ценности',
-    'featured_activities' => '',
-    'codeweek2020' => ''];
+    'featured_activities' => 'Подбрани събития ',
+    'codeweek2020' => 'Издание 2020'];
