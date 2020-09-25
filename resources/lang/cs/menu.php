@@ -39,5 +39,5 @@ return [
     'privacy' => 'Ochrana osobních údajů',
     'participation'=> 'Účastnický certifikát',
     'values' => 'Naše hodnoty',
-    'featured_activities' => '',
-    'codeweek2020' => ''];
+    'featured_activities' => 'Vybrané aktivity',
+    'codeweek2020' => 'Ročník 2020'];
