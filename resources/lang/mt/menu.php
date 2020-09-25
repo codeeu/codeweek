@@ -38,5 +38,5 @@ return [
     'privacy' => 'Privatezza',
     'participation'=> 'Ċertifikat ta’ Parteċipazzjoni',
     'values' => 'Il-valuri tagħna',
-    'featured_activities' => '',
-    'codeweek2020' => ''];
+    'featured_activities' => 'Attiitajiet prominenti',
+    'codeweek2020' => 'Edizzjoni 2020'];

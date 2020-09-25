@@ -39,5 +39,5 @@ return [
     'participation'=> 'Certificat de participare',
     'values' => 'Valorile noastre',
 
-    'featured_activities' => '',
-    'codeweek2020' => ''];
+    'featured_activities' => 'Activități prevăzute',
+    'codeweek2020' => 'Ediția 2020'];
