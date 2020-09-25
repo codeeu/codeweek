@@ -40,6 +40,6 @@ return [
     'participation'=> 'Certifikata e pjesëmarrjes',
     'values' => 'Vlerat tona',
 
-    'featured_activities' => '',
-    'codeweek2020' => ''
+    'featured_activities' => 'Aktivitete tё evidentuara',
+    'codeweek2020' => 'Edicioni 2020'
 ];

@@ -38,5 +38,5 @@ return [
     'privacy' => 'Adatvédelem',
     'participation'=> 'Részvételi tanúsítvány',
     'values' => 'Értékeink',
-    'featured_activities' => '',
-    'codeweek2020' => ''];
+    'featured_activities' => 'Kiemelt programok',
+    'codeweek2020' => '2020. évi kiadás'];
