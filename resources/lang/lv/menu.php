@@ -38,5 +38,5 @@ return [
     'privacy' => 'Privātums',
     'participation'=> 'Dalības sertifikāts',
     'values' => 'Mūsu vērtības',
-    'featured_activities' => '',
-    'codeweek2020' => ''];
+    'featured_activities' => 'Rodoma veikla',
+    'codeweek2020' => '2020 m. laida'];
