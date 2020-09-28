@@ -45,6 +45,10 @@ know about your involvement in EU Code Week!
 </p>
 </div>
 
+<div>
+Join our virtual kick-off event on 8 October 17:00 CET and learn about new free courses, challenges and activities. Our exciting line-up includes EU Commissioners Thierry Breton and Mariya Gabriel, Mitch Resnick MIT Professor, Alessandro Bogliolo Professor at Urbino University, Linda Liukas author of Hello Ruby and Dipty Chander president of E-MMA. The event will be live-streamed on <a href="https://www.youtube.com/user/CodeWeekEU">YouTube</a> and <a href="https://www.facebook.com/events/2623761004602631/">Facebook</a>. Learn more on our <a href="https://codeweek.eu/codeweek2020">website</a>.
+</div>
+
 
 <br>
 
