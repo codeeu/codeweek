@@ -145,7 +145,7 @@ return [
             "Code Week ambassadors",
             "will be telling you more about the Code Week virtual Treasure Hunt",
             "And xxx will give you the heads-up on the new #CodeWeekDance challenge",
-            "Members of the EU Code Week Community will introduce new local and global or “glocal” activities as we like to call them. We will also be connecting with schools and students from all over Europe who will be sharing their coding stories and exchanging ideas with the guest speakers",
+            "We will also be connecting with schools and students from all over Europe who will be sharing their coding stories and exchanging ideas with the guest speakers",
             "You will also have the chance to share your thoughts, ideas and ask your questions. All you need to do is tune in to our live stream on",
             "or",
             "on 8 October 2020 at 17:00-18.30 CET and comment or tweet with the #CodeWeek hashtag",
