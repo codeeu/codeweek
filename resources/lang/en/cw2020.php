@@ -67,10 +67,11 @@ return [
             "title" => "Visual Programmming",
             "subtitle" => "Code your Code Week dance in Scratch. Use the Code Week characters or make your own in Scratch and programme them to do the #CodeWeekDance",
             "resources" => [
-                "A guide on how to remix the Code Week Dance on Scratch",
+                "An example of a Scratch #CodeWeekDance project",
                 "The Code Week characters",
                 "A guide from Code.org on how to animate a character",
                 "A guide by Code.org to organise your Dance Party",
+                "Share your project with us in this Scratch Studio.",
             ]
         ], "activity3" => [
             "title" => "Text-based programming",
@@ -145,7 +146,7 @@ return [
             "Code Week ambassadors",
             "will be telling you more about the Code Week virtual Treasure Hunt",
             "And xxx will give you the heads-up on the new #CodeWeekDance challenge",
-            "Members of the EU Code Week Community will introduce new local and global or “glocal” activities as we like to call them. We will also be connecting with schools and students from all over Europe who will be sharing their coding stories and exchanging ideas with the guest speakers",
+            "We will also be connecting with schools and students from all over Europe who will be sharing their coding stories and exchanging ideas with the guest speakers",
             "You will also have the chance to share your thoughts, ideas and ask your questions. All you need to do is tune in to our live stream on",
             "or",
             "on 8 October 2020 at 17:00-18.30 CET and comment or tweet with the #CodeWeek hashtag",
