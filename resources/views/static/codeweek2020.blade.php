@@ -96,12 +96,12 @@
                     <h4>2. @lang('cw2020.dance.activity2.title') </h4>
 
                     <div>
-                        @lang('cw2020.dance.activity2.subtitle').
+                        @lang('cw2020.dance.activity2.subtitle') <a href="https://scratch.mit.edu/studios/27581197/">@lang('cw2020.dance.activity2.resources.4')</a>
                     </div>
                     <h4> @lang('cw2020.common.resources'):</h4>
                     <ul style="list-style-type: circle;margin-left:40px; margin-top:-4px;">
                         @include("static._cw2020-common")
-                        <li>@lang('cw2020.dance.activity2.resources.0')</li>
+                        <li><a href="https://scratch.mit.edu/projects/428131435">@lang('cw2020.dance.activity2.resources.0')</a></li>
                         <li><a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/cw2020/finaldancecharacters.rar">@lang('cw2020.dance.activity2.resources.1')</a></li>
                         <li><a href="https://sip.scratch.mit.edu/guides/animation/">@lang('cw2020.dance.activity2.resources.2')</a></li>
                         <li>
