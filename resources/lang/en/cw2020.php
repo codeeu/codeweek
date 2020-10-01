@@ -67,10 +67,11 @@ return [
             "title" => "Visual Programmming",
             "subtitle" => "Code your Code Week dance in Scratch. Use the Code Week characters or make your own in Scratch and programme them to do the #CodeWeekDance",
             "resources" => [
-                "A guide on how to remix the Code Week Dance on Scratch",
+                "An example of a Scratch #CodeWeekDance project",
                 "The Code Week characters",
                 "A guide from Code.org on how to animate a character",
                 "A guide by Code.org to organise your Dance Party",
+                "Share your project with us in this Scratch Studio.",
             ]
         ], "activity3" => [
             "title" => "Text-based programming",
