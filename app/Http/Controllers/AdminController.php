@@ -51,7 +51,7 @@ class AdminController extends Controller
 
         }
 
-        Log::info($results);
+       // Log::info($results);
 
 
 
