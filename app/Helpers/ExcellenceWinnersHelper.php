@@ -18,7 +18,7 @@ class ExcellenceWinnersHelper
         $ttl = 1;
 //        $ttl = 60*60;
         return Cache::remember('details', $ttl, function () use ($edition) {
-            Log::info('query without cache');
+//            Log::info('query without cache');
             $edition = !is_null($edition) ? $edition : Carbon::now()->year;
             $codes = self::getWinnerCodes($edition);
             $details = Codeweek4AllHelper::getDetailsByCodeweek4All($codes->toArray(), $edition);
@@ -46,7 +46,7 @@ class ExcellenceWinnersHelper
             ->toArray();
 
 
-        Log::info('Criteria 1');
+//        Log::info('Criteria 1');
         return $codes;
 
     }
@@ -67,7 +67,7 @@ class ExcellenceWinnersHelper
             ->pluck('codeweek_for_all_participation_code')
             ->toArray();
 
-        Log::info('Criteria 2');
+//        Log::info('Criteria 2');
         return $codes;
 
     }
@@ -88,7 +88,7 @@ class ExcellenceWinnersHelper
             ->pluck('codeweek_for_all_participation_code')
             ->toArray();
 
-        Log::info('Criteria 3');
+//        Log::info('Criteria 3');
         return $codes;
 
     }
@@ -111,7 +111,7 @@ class ExcellenceWinnersHelper
 
         $result = collect($winnerCodes)->flatten()->unique();
 
-        Log::info($result);
+        //Log::info($result);
 
         return $result;
 

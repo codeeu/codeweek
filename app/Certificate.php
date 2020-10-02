@@ -118,7 +118,7 @@ class Certificate
     protected function customize_and_save_latex()
     {
         if ($this->is_greek()) $this->templateName = "template_greek.tex";
-        Log::info($this->templateName);
+//        Log::info($this->templateName);
         //open the latex template
         $base_template = Storage::disk('latex')->get($this->templateName);
 

@@ -67,8 +67,8 @@ class TagsHelper
                         dump($ex->getTrace()[0]["args"]);
                         if ($ex->getCode() === "23000") {
                             dump('caught unicity exception');
-                            Log::info($ex->getMessage());
-                            Log::info("Deleting {$id}");
+//                            Log::info($ex->getMessage());
+//                            Log::info("Deleting {$id}");
                             DB::table('event_tag')->where('tag_id', $id)->delete();
                         }
                     }

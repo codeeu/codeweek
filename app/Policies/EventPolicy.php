@@ -22,7 +22,7 @@ class EventPolicy
     public function approve(User $user, Event $event)
     {
 
-        Log::info("can approve ?" . $user->hasRole('super admin'));
+//        Log::info("can approve ?" . $user->hasRole('super admin'));
 
 
         if ($user->hasRole('ambassador')) {
