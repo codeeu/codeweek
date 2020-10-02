@@ -119,7 +119,7 @@ class CertificateParticipation
     {
 
         if ($this->is_greek_text($this->event_name) || $this->is_greek_text($this->event_date) || $this->is_greek_text($this->name_of_certificate_holder)) $this->templateName = "participation_greek.tex";
-        Log::info($this->templateName);
+//        Log::info($this->templateName);
         //open the latex template
         $base_template = Storage::disk('latex')->get($this->templateName);
 
