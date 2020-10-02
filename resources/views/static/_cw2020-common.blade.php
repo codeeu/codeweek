@@ -1,3 +1,6 @@
+{{--<li>--}}
+{{--    <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/Final_Code+Week+Dance+Challenge++organisers'+guide.pdf">@lang('cw2020.dance.title') - @lang('cw2020.common.organizer-guide')</a>--}}
+{{--</li>--}}
 <li>
     <a href="http://www.codeweek.it/ode-to-code/">@lang('cw2020.common.soundtrack')</a>
 </li>
