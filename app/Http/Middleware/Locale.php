@@ -58,7 +58,7 @@ class Locale
         if(isset($_SERVER["HTTP_ACCEPT_LANGUAGE"])) {
             $http_accept_language = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
         } else {
-            Log::info("No http accept language detected. Using the default one");
+//            Log::info("No http accept language detected. Using the default one");
             $http_accept_language = "en-US,en;q=0.9,fr;q=0.8";
         }
 
