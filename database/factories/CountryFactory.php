@@ -12,6 +12,8 @@ $factory->define(App\Country::class, function (Faker $faker, $country) {
         'continent' => 'EU',
         'facebook' => $faker->url,
         'website' => $faker->url,
+        'longitude' => $faker->randomFloat(),
+        'latitude' => $faker->randomFloat()
     ];
 });
 
