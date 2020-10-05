@@ -157,7 +157,7 @@ return [
         "subtitle" => "Vill du börja koda genast? Om du vill gå med i EU Code Weeks community men inte vet hur du gör, kolla in de här resurserna som kan hjälpa dig att komma igång, lagom i tid för vårt årliga firande i oktober.",
         "content" => [
             "Kom igång med Code Week",
-            "Hur du lägger till en aktivitet under kodveckan",
+            "Hur du lägger till en aktivitet under Code Week",
             "Infomoduler",
             "Deep Dive mooc-kurs",
             "Serien Coding@Home"
