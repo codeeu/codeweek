@@ -133,6 +133,7 @@ class CreateEventTest extends TestCase
     /** @test */
     public function an_authenticated_user_can_create_events_without_geoposition()
     {
+        Mail::fake();
         $this->seed('RolesAndPermissionsSeeder');
         $this->withoutExceptionHandling();
         $this->signIn();
