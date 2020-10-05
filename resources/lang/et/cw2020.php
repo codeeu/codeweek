@@ -4,7 +4,8 @@ return [
         "resources" => "Vajaminevad vahendid",
         "soundtrack" => "Programmeerimisnädala heliriba",
         "moves" => "Liigutused",
-        "dance-example" => "Programmeerimisnädala tantsunäide"
+        "dance-example" => "Programmeerimisnädala tantsunäide",
+        "organizer-guide" => "Korraldaja juhend"
     ],
     "title" => [
         "EU Code Week",

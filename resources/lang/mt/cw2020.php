@@ -4,7 +4,8 @@ return [
         "resources" => "Riżorsi li se teħtieġ",
         "soundtrack" => "Is-soundtrack tal-Ġimgħa tal-Ikkowdjar",
         "moves" => "Il-movimenti",
-        "dance-example" => "Eżempju taż-Żifna tal-Ġimgħa tal-Ikkowdjar"
+        "dance-example" => "Eżempju taż-Żifna tal-Ġimgħa tal-Ikkowdjar",
+        "organizer-guide" => "Gwida tal-organizzatur"
     ],
     "title" => [
         "EU Code Week",

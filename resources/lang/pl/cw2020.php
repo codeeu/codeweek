@@ -4,7 +4,8 @@ return [
         "resources" => "Zasoby, których będziesz potrzebować",
         "soundtrack" => "Ścieżka dźwiękowa Tygodnia Kodowania",
         "moves"=> "Kroki",
-        "dance-example" => "Przykład tańca Tygodnia Kodowania"
+        "dance-example" => "Przykład tańca Tygodnia Kodowania",
+        "organizer-guide" => "Przewodnik organizatora"
     ],
     "title" => [
         "EU Code Week",
