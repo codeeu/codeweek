@@ -4,7 +4,8 @@ return [
         "resources" => "Recursos que necesitarás",
         "soundtrack" => "La banda sonora de la Semana de la Programación",
         "moves"=> "Los pasos",
-        "dance-example" => "Un ejemplo de la danza de la Semana de la Programación"
+        "dance-example" => "Un ejemplo de la danza de la Semana de la Programación",
+        "organizer-guide" => "Guía del organizador"
     ],
     "title" => [
         "Semana de la Programación de la UE",

@@ -4,7 +4,8 @@ return [
         "resources" => "Recursos de que vais precisar",
         "soundtrack" => "Banda sonora da Semana Europeia da Programação",
         "moves" => "Os movimentos",
-        "dance-example" => "Exemplo de dança da Semana Europeia da Programação"
+        "dance-example" => "Exemplo de dança da Semana Europeia da Programação",
+        "organizer-guide" => "Guia do organizador"
     ],
     "title" => [
         "EU Code Week",
