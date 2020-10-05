@@ -4,7 +4,8 @@ return [
         "resources" => "Det skal du bruge",
         "soundtrack" => "programmeringsugens soundtrack",
         "moves"=> "bevægelserne",
-        "dance-example" => "Et eksempel på programmeringsugedansen"
+        "dance-example" => "Et eksempel på programmeringsugedansen",
+        "organizer-guide" => "Arrangørguide"
     ],
     "title" => [
         "EU Code Week",
