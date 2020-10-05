@@ -4,7 +4,8 @@ return [
         "resources" => "Burimet që do t’ju nevojiten",
         "soundtrack" => "Kolona zanore e Code Week",
         "moves"=> "Lëvizjet",
-        "dance-example" => "Një shembull i kërcimit të Code Week"
+        "dance-example" => "Një shembull i kërcimit të Code Week",
+        "organizer-guide" => "Udhëzuesi i organizatorit"
     ],
     "title" => [
         "EU Code Week",

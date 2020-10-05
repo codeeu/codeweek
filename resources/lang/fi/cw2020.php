@@ -4,7 +4,8 @@ return [
         "resources" => "Näitä tarvitset",
         "soundtrack" => "EU:n koodausviikon soundtrack",
         "moves"=> "Tanssiliikkeet",
-        "dance-example" => "Tässä mallia koodausviikon tanssista"
+        "dance-example" => "Tässä mallia koodausviikon tanssista",
+        "organizer-guide" => "Järjestäjien opas"
     ],
     "title" => [
         "EU Code Week",

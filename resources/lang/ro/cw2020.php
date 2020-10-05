@@ -4,7 +4,8 @@ return [
         "resources" => "Resursele de care veți avea nevoie",
         "soundtrack" => "Coloana sonoră a Săptămânii programării",
         "moves" => "Mișcările",
-        "dance-example" => "Un exemplu de dans din Săptămâna programării"
+        "dance-example" => "Un exemplu de dans din Săptămâna programării",
+        "organizer-guide" => "Ghidul organizatorului"
     ],
     "title" => [
         "EU Code Week",

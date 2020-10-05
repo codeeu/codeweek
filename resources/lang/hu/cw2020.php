@@ -4,7 +4,8 @@ return [
         "resources" => "Szükséges anyagok",
         "soundtrack" => "A programozási hét dala",
         "moves"=> "A mozdulatok",
-        "dance-example" => "Egy példa a programozási hét táncára"
+        "dance-example" => "Egy példa a programozási hét táncára",
+        "organizer-guide" => "Szervezői útmutató"
     ],
     "title" => [
         "EU Code Week",

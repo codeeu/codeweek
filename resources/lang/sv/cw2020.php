@@ -4,7 +4,8 @@ return [
         "resources" => "Resurser du kommer att behöva:",
         "soundtrack" => "Kodveckans soundtrack",
         "moves" => "Dansstegen",
-        "dance-example" => "Ett exempel på kodveckans dans"
+        "dance-example" => "Ett exempel på kodveckans dans",
+        "organizer-guide" => "Arrangörsguide"
     ],
     "title" => [
         "EU Code Week",
