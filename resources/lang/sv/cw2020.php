@@ -67,11 +67,11 @@ return [
             "title" => "Visuell programmering",
             "subtitle" => "Koda din dans i Scratch. Använd kodveckans figurer eller gör dina egna i Scratch och programmera dem att dansa #CodeWeekDance.",
             "resources" => [
-                "An example of a Scratch #CodeWeekDance project",
+                "Exempel på ett #CodeWeekDance-projekt i Scratch",
                 "Kodveckans figurer",
                 "En guide från Code.org om hur du kan animera en figur",
                 "En guide från Code.org om hur anordnar ditt dansparty",
-                "Share your project with us in this Scratch Studio."
+                "Dela ditt projekt med oss i denna Scratch Studio"
             ]
         ], "activity3" => [
             "title" => "Textprogrammering",
