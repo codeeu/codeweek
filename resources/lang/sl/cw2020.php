@@ -4,7 +4,8 @@ return [
         "resources" => "Viri, ki jih boste potrebovali",
         "soundtrack" => "Glasba tedna programiranja",
         "moves"=> "Gibi",
-        "dance-example" => "Primer plesa za teden programiranja"
+        "dance-example" => "Primer plesa za teden programiranja",
+        "organizer-guide" => "Vodnik organizatorja"
     ],
     "title" => [
         "EU Code Week",

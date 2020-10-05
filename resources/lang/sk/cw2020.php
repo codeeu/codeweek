@@ -4,7 +4,8 @@ return [
         "resources" => "Zdroje, ktoré budete potrebovať",
         "soundtrack" => "Zvukové stopy k Týždňu programovania",
         "moves"=> "Pohyby",
-        "dance-example" => "Ako môže vyzerať tanec Týždňa programovania"
+        "dance-example" => "Ako môže vyzerať tanec Týždňa programovania",
+        "organizer-guide" => "Sprievodca organizátora"
     ],
     "title" => [
         "EU Code Week",

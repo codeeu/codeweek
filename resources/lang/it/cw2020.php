@@ -4,7 +4,8 @@ return [
         "resources" => "Le risorse che ti serviranno",
         "soundtrack" => "La colonna sonora della Settimana della programmazione",
         "moves"=> "I passi",
-        "dance-example" => "Un esempio di \"Code Week Dance\""
+        "dance-example" => "Un esempio di \"Code Week Dance\"",
+        "organizer-guide" => "Manuale per gli organizzatori"
     ],
     "title" => [
         "EU Code Week",
