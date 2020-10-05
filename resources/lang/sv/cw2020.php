@@ -2,9 +2,9 @@
 return [
     "common" => [
         "resources" => "Resurser du kommer att behöva:",
-        "soundtrack" => "Kodveckans soundtrack",
+        "soundtrack" => "Code Weeks soundtrack",
         "moves" => "Dansstegen",
-        "dance-example" => "Ett exempel på kodveckans dans",
+        "dance-example" => "Ett exempel på Code Week-dansen",
         "organizer-guide" => "Arrangörsguide"
     ],
     "title" => [
@@ -12,17 +12,17 @@ return [
         "2020 års upplaga"
     ],
 
-    "intro" => "I år firar vi kodveckan från den 10 till den 25 oktober 2020! På grund av det rådande smittläget kommer vi att hålla fler aktiviteter på nätet. Vi kommer att lansera nya, roliga och spännande aktiviteter som du kan delta i hemma eller i skolan",
+    "intro" => "I år firar vi EU Code Week från den 10 till den 25 oktober 2020! På grund av det rådande smittläget kommer vi att hålla fler aktiviteter på nätet. Vi kommer att lansera nya, roliga och spännande aktiviteter som du kan delta i hemma eller i skolan",
     "online-activities" => [
         "title" => "Utvalda öppna onlineaktiviteter",
         "subtitle" => [
-            "För att göra det enklare att delta i kodveckans aktiviteter på distans lanserar vi en",
+            "För att göra det enklare att delta i Code Weeks aktiviteter på distans lanserar vi en",
             "kalender",
             "med utvalda onlineaktiviteter"
         ],
         "section1" => [
             "title" => "Vad är en onlineaktivitet?",
-            "content" => "En onlineaktivitet kan vara en aktivitet som du vanligtvis skulle lägga till eller anmäla dig till på kodveckans webbplats – enda skillnaden är att du deltar på nätet. Tanken är att det ska vara enkelt för alla att delta i kodningsträffar och seminarier som helt och hållet hålls på nätet utan att behöva riskera sin hälsa."
+            "content" => "En onlineaktivitet kan vara en aktivitet som du vanligtvis skulle lägga till eller anmäla dig till på Code Weeks webbplats – enda skillnaden är att du deltar på nätet. Tanken är att det ska vara enkelt för alla att delta i kodningsträffar och seminarier som helt och hållet hålls på nätet utan att behöva riskera sin hälsa."
         ],
         "section2" => [
             "title" => "Utvalda öppna aktiviteter",
@@ -31,7 +31,7 @@ return [
         "section3" => [
             "title" => "Vad innebär det här för deltagarna?",
             "content" => [
-                "Varje dag under kodveckan kan du kolla i ",
+                "Varje dag under Code Week kan du kolla i ",
                 "kalendern",
                 "och välja ut de aktiviteter som verkar mest intressant. Det kan vara allt från workshoppar om robotteknik, e-lärandekurser och webbseminarier till kurser i kodning och mycket annat. Så välj dina favoriter!"
             ]
@@ -40,13 +40,13 @@ return [
 
 
     "dance" => [
-        "title" => "Kodveckans dans",
-        "subtitle" => "Vem har sagt att programmerare inte kan dansa? För att fira 2020 års upplaga av kodveckan lanserar vi en ny aktivitet – utmaningen #CodeWeekDance",
+        "title" => "Code Week-dansen",
+        "subtitle" => "Vem har sagt att programmerare inte kan dansa? För att fira 2020 års upplaga av Code Week lanserar vi en ny aktivitet – utmaningen #CodeWeekDance",
         "section1" => [
             "title" => "Vem får vara med?",
             "content" => [
-                "Alla – från skolor, lärare och bibliotekarier till kodningsklubbar, företag och myndigheter – är välkomna att fira EU:s kodvecka 2020 genom att organisera en #CodeWeekDance och lägga in den på",
-                "kodveckans karta",
+                "Alla – från skolor, lärare och bibliotekarier till kodningsklubbar, företag och myndigheter – är välkomna att fira EU Code Week 2020 genom att organisera en #CodeWeekDance och lägga in den på",
+                "Code Weeks karta",
             ]
         ],
         "section2" => [
@@ -65,10 +65,10 @@ return [
 
         "activity2" => [
             "title" => "Visuell programmering",
-            "subtitle" => "Koda din dans i Scratch. Använd kodveckans figurer eller gör dina egna i Scratch och programmera dem att dansa #CodeWeekDance.",
+            "subtitle" => "Koda din dans i Scratch. Använd Code Week-figurerna eller gör dina egna i Scratch och programmera dem att dansa #CodeWeekDance.",
             "resources" => [
                 "Exempel på ett #CodeWeekDance-projekt i Scratch",
-                "Kodveckans figurer",
+                "Code Weekfigurerna",
                 "En guide från Code.org om hur du kan animera en figur",
                 "En guide från Code.org om hur anordnar ditt dansparty",
                 "Dela ditt projekt med oss i denna Scratch Studio"
@@ -84,13 +84,13 @@ return [
         ],
         "activity4" => [
             "title" => "Robotteknik",
-            "subtitle" => "Programmera din robot att följa dina instruktioner och dansa kodveckans dans",
+            "subtitle" => "Programmera din robot att följa dina instruktioner och dansa Code Week-dansen",
             "resources" => [
                 "En lektion i robotprogrammering",
             ]
         ], "activity5" => [
             "title" => "Live Dance Challenge",
-            "subtitle" => "Filma dig själv, ditt team eller din robot som dansar #CodeWeekDance, dela på Instagram och bli ”viral”, så kan du vinna några av kodveckans priser! Är du intresserad? Gör så här:",
+            "subtitle" => "Filma dig själv, ditt team eller din robot som dansar #CodeWeekDance, dela på Instagram och bli ”viral”, så kan du vinna några av Code Weeks priser! Är du intresserad? Gör så här:",
             "resources" => [
                 "Spela in filmen med hjälp av Instagrams händelser",
                 "Följ",
@@ -107,10 +107,10 @@ return [
 
     ],
     "treasure-hunt" => [
-        "title" => "Kodveckans skattjakt",
+        "title" => "Code Weeks skattjakt",
         "subtitle" => [
-            "Vi har ett nytt äventyr i kodveckan 2020. Det är ett spel på Telegram som är lätt nog för en nybörjare men svårt nog att vara en utmaning även för våra mer erfarna deltagare.",
-            "Kodveckans skattjakt",
+            "Vi har ett nytt äventyr i Code Week 2020. Det är ett spel på Telegram som är lätt nog för en nybörjare men svårt nog att vara en utmaning även för våra mer erfarna deltagare.",
+            "Code Week-skattjakten",
             "är ett spel som du helst ska spela på din dator med mobilen i handen. I spelet ska du lösa olika kodningsuppdrag och du guidas genom historien om kodning, datorvetenskap och teknik i Europa."
         ],
         "section" => [
@@ -124,7 +124,7 @@ return [
                 "och skannar QR-koden som tar dig till Telegram-appen och ger dig den första omgången instruktioner.",
                 "För att vinna måste du lösa tio kodningsuppdrag och hitta tio platser på Europakartan som är kopplade till kodningens och teknikens intåg.",
                 "När du har spelat färdigt, delar du dina poäng med dina vänner genom att tagga #CodeWeek och utmanar dem att spela och lära sig mer om kodningens historia. Vem kommer att få högst poäng?",
-                "Kodveckans skattjakt är 2020 års virtuella version av EU-kodveckans ursprungliga skattjakt som först utvecklades av Alessandro Bogliolo, professor i datorsystem vid Urbinos universitet. Du kan läsa mer om hans första spel på vår",
+                "Code Weeks skattjakt är 2020 års virtuella version av EU Code Weeks ursprungliga skattjakt som först utvecklades av Alessandro Bogliolo, professor i datorsystem vid Urbinos universitet. Du kan läsa mer om hans första spel på vår",
                 "blogg."
 
             ]
@@ -133,7 +133,7 @@ return [
     "kick-off" => [
         "title" => "Kick-off: 8 oktober 2020",
         "content" => [
-            "Den virtuella invigningen för Kodveckan 2020 går av stapeln den 8 oktober kl. 17 (Bryssel-, Paris- och Stockholmstid). Evenemanget kommer att direktsändas på Facebook Live, Instagram TV och YouTube Live.",
+            "Den virtuella invigningen för Code Week 2020 går av stapeln den 8 oktober kl. 17 (Bryssel-, Paris- och Stockholmstid). Evenemanget kommer att direktsändas på Facebook Live, Instagram TV och YouTube Live.",
             "I vårt spännande startfält finns gästtalarna",
             "EU:s inremarknadskommissionär",
             "EU:s innovations-, forsknings-, kultur-, utbildnings- och ungdomskommissionär",
@@ -141,7 +141,7 @@ return [
             "författare och illustratör till Hello Ruby",
             "och",
             "ordförande för E-MMA, en fransk ideell organisation som jobbar för jämnare könsfördelningen inom teknik.",
-            "Och som om detta inte räcker kommer teamet för kodveckan att visa nya webbplatsfunktioner, resurser och utmaningar.",
+            "Och som om detta inte räcker kommer Code Week-teamet att visa nya webbplatsfunktioner, resurser och utmaningar.",
             "professor i datorsystem vid Urbinos universitet och samordnare av",
             "kodveckans ambassadörer",
             "kommer att berätta mer om kodveckans virtuella skattjakt.",
@@ -154,9 +154,9 @@ return [
     ],
     "get-involved" => [
         "title" => "Vill du vara med?",
-        "subtitle" => "Vill du börja koda genast? Om du vill gå med i EU-kodveckans community men inte vet hur du gör, kolla in de här resurserna som kan hjälpa dig att komma igång, lagom i tid för vårt årliga firande i oktober.",
+        "subtitle" => "Vill du börja koda genast? Om du vill gå med i EU Code Weeks community men inte vet hur du gör, kolla in de här resurserna som kan hjälpa dig att komma igång, lagom i tid för vårt årliga firande i oktober.",
         "content" => [
-            "Kom igång med kodveckan",
+            "Kom igång med Code Week",
             "Hur du lägger till en aktivitet under kodveckan",
             "Infomoduler",
             "Deep Dive mooc-kurs",
