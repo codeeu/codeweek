@@ -4,7 +4,8 @@ return [
         "resources" => "Vajadzīgie resursi",
         "soundtrack" => "Programmēšanas nedēļas fonogramma",
         "moves" => "Kustības",
-        "dance-example" => "Programmēšanas nedēļas dejas piemērs"
+        "dance-example" => "Programmēšanas nedēļas dejas piemērs",
+        "organizer-guide" => "Organizatora ceļvedis"
     ],
     "title" => [
         "EU Code Week",
