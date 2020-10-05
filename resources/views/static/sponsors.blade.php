@@ -32,9 +32,6 @@
                     <a href="http://www.eun.org/" target="_blank"><img src="img/partners/colabora_eun.png" alt="European Schoolnet"></a>
                 </li>
                 <li>
-                    <a href="https://facebook.com/" target="_blank"><img src="img/partners/facebook.png" alt="Facebook"></a>
-                </li>
-                <li>
                     <a href="https://edu.google.com/resources/computerscience" target="_blank"><img src="img/partners/google.png" alt="Google"></a>
                 </li>
                 <li>
