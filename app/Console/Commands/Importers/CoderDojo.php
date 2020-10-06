@@ -52,7 +52,7 @@ class CoderDojo extends Command
     {
         Log::info("Loading CoderDojo");
 
-        Excel::import(new CoderDojoEventsImport, 'coderdojo2019.xlsx','excel');
+        Excel::import(new CoderDojoEventsImport, 'coderdojo2020.xlsx','excel');
 
 
         // Process the events

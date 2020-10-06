@@ -29,9 +29,10 @@ class CoderDojoEventsImport extends DefaultValueBinder implements WithCustomValu
     public function model(array $row)
     {
 
-        //dd($row);
+//        dd($row["start_date"]);
         //dd(implode(",",$arr));
-        //dd(Carbon::parse($this->parseDate($row["start_date"]))->toDateTimeString());
+        (\PhpOffice\PhpSpreadsheet\Shared\Date::excelToDateTimeObject($row['start_date']));
+//        dd(Carbon::parse($this->parseDate($row["start_date"]))->toDateTimeString());
 //dd(Carbon::createFromFormat("d/m/Y",$row["start_date"])->toDateTimeString());
         Log::info($row);
 
@@ -43,7 +44,7 @@ class CoderDojoEventsImport extends DefaultValueBinder implements WithCustomValu
                 'description' => $row["description"],
                 'organizer_type' => $row["type_of_organisation"],
                 'activity_type' => $row["activity_type"],
-                'location' => $row["address"],
+                'location' => isset($row["address"])?$row["address"]:"online",
                 'event_url' => $row["organiser_website"],
                 'user_email' => "",
                 'creator_id' => $row["creator_id"],
@@ -52,12 +53,14 @@ class CoderDojoEventsImport extends DefaultValueBinder implements WithCustomValu
                 "pub_date" => now(),
                 "created" => now(),
                 "updated" => now(),
-                "codeweek_for_all_participation_code" => "cw19-coderdojo-eu",
-                "start_date" => Carbon::parse($this->parseDate($row["start_date"]))->toDateTimeString(),
-                "end_date" => Carbon::parse($this->parseDate($row["end_date"]))->toDateTimeString(),
+                "codeweek_for_all_participation_code" => "cw20-coderdojo-eu",
+                "start_date" => \PhpOffice\PhpSpreadsheet\Shared\Date::excelToDateTimeObject($row['start_date']),
+                "end_date" => \PhpOffice\PhpSpreadsheet\Shared\Date::excelToDateTimeObject($row['end_date']),
                 "geoposition" => $row["latitude"] . "," . $row["longitude"],
                 "longitude" => $row["longitude"],
-                "latitude" => $row["latitude"]
+                "latitude" => $row["latitude"],
+                "language"=> "nl",
+                "approved_by"=>19588
             ]);
 
             $event->save();
