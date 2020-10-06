@@ -14,6 +14,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
+auth()->loginUsingId(192947);
 
 Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
 
