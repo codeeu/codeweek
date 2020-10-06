@@ -59,7 +59,7 @@ class UpdateEventTest extends TestCase
     }
 
     /** @test */
-    function event_cannot_be_updated_by_its_owner_when_approved()
+    function event_can_be_updated_by_its_owner_when_approved()
     {
 
 
@@ -87,8 +87,8 @@ class UpdateEventTest extends TestCase
 
 
         tap($event->fresh(), function ($t) {
-            $this->assertNotEquals('Changed', $t->title);
-            $this->assertNotEquals('Changed description.', $t->description);
+            $this->assertEquals('Changed', $t->title);
+            $this->assertEquals('Changed description.', $t->description);
         });
 
     }
