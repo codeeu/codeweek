@@ -34,6 +34,10 @@ class EventsQuery
             $request['geoposition'] = "0,0";
         }
 
+        if (is_null($request['geoposition'])){
+            $request['geoposition'] = "0,0";
+        }
+
         $request['latitude'] = explode(",", $request['geoposition'])[0];
         $request['longitude'] = explode(",", $request['geoposition'])[1];
 

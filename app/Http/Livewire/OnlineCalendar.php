@@ -96,7 +96,7 @@ class OnlineCalendar extends Component
             $this->filteredEvents = $this->events;
         }
 
-        Log::info($this->selectedDate);
+        //Log::info($this->selectedDate);
 
 
         $countries = CountriesQuery::withOnlineEvents('FEATURED');
