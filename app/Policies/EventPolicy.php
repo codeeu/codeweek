@@ -87,8 +87,6 @@ class EventPolicy
 
         if (!is_null($event->reported_at)) return false;
 
-        if ($event->status == "APPROVED") return false;
-
         if ($user->email === $event->owner->email) {
             return true;
         }
