@@ -50,7 +50,7 @@ class User extends Authenticatable
     }
 
     public function setAmbassadorAttribute($value){
-        Log::info($value);
+//        Log::info($value);
         if ($value){
             $this->assignRole('ambassador');
         } else {

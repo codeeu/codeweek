@@ -31,7 +31,7 @@ class ExcellenceWinnersController extends Controller
             $edition = $request->get('edition');
         }
 
-        Log::info("Edition: " . $edition);
+        //Log::info("Edition: " . $edition);
 
         if ($request->input('clear_cache')) {
             Log::info ("cache cleaned");
