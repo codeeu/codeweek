@@ -2,10 +2,10 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\MeetAndCodeRSSItem;
+use App\HamburgRSSItem;
 use Faker\Generator as Faker;
 
-$factory->define(MeetAndCodeRSSItem::class, function (Faker $faker) {
+$factory->define(HamburgRSSItem::class, function (Faker $faker) {
     return [
         //
     ];
