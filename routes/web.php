@@ -14,7 +14,6 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
-
 Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
 
     Route::get('/', function ($subdomain) {
