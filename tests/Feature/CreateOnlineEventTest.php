@@ -15,14 +15,6 @@ class CreateOnlineEventTest extends TestCase
 
     use DatabaseMigrations;
 
-    public function setup() :void
-    {
-        parent::setUp();
-        Mail::fake();
-
-
-    }
-
 
     /** @test */
     public function an_authenticated_user_can_create_online_event_without_location()
@@ -81,8 +73,8 @@ class CreateOnlineEventTest extends TestCase
         $this->assertEquals("online",$event->fresh()->location);
         $this->assertEquals("http://lesoir.be",$event->fresh()->event_url);
         $this->assertEquals("fi",$event->fresh()->language);
-        $this->assertEquals(0,$event->fresh()->latitude);
-        $this->assertEquals(0,$event->fresh()->longitude);
+        $this->assertNotEquals(0,$event->fresh()->latitude);
+        $this->assertNotEquals(0,$event->fresh()->longitude);
     }
 
     /** @test */

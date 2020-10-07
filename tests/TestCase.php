@@ -5,6 +5,7 @@ namespace Tests;
 use App\Exceptions\Handler;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+use Illuminate\Support\Facades\Mail;
 use Mockery;
 
 abstract class TestCase extends BaseTestCase
@@ -17,6 +18,7 @@ abstract class TestCase extends BaseTestCase
         //$this->withoutExceptionHandling();
         $this->mockLocale();
         $this->mockBrowserCheck();
+        Mail::fake();
     }
 
     protected function signIn($user = null)

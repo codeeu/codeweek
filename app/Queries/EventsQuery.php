@@ -72,6 +72,10 @@ class EventsQuery
             $event->audiences()->save($audience);
         }
 
+        if ($event->geoposition == "0,0"){
+            $event->relocate();
+        }
+
 
         return $event;
     }
