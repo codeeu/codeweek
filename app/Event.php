@@ -283,6 +283,13 @@ class Event extends Model
         return $this->hasOne('App\Notification', 'event_id', 'id');
     }
 
+    public function relocate(){
+        $this->longitude = $this->country->longitude;
+        $this->latitude = $this->country->latitude;
+        $this->geoposition = $this->country->latitude . "," . $this->country->longitude;
+        $this->save();
+    }
+
 
 
 }
