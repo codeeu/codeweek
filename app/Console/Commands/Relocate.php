@@ -45,10 +45,7 @@ class Relocate extends Command
 
         $updated = 0;
         foreach ($misplaced_events as $event){
-            $event->longitude = $event->country->longitude;
-            $event->latitude = $event->country->latitude;
-            $event->geoposition = $event->country->latitude . "," . $event->country->longitude;
-            $event->save();
+            $event->relocate();
             $updated++;
         }
 
