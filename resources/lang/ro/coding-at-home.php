@@ -153,6 +153,59 @@ return [
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "tablă cu căsuțe și cu etichete",
+        "cards" => "24 de cărți „Mergi înainte”, 8 cărți „Întoarce-te la stânga” și 8 cărți „Întoarce-te la dreapta”",
+        "larger-cards" => "Dacă jucați pe jos, se recomandă cărți de dimensiuni mai mari",
+        "video" => "Materialul video explică, de asemenea, cum puteți juca și fără pachetul de cărți de joc",
+        "pieces-of-paper" => "Este nevoie și de 24 de bucățele de hârtie care se plasează pe căsuțele prin care deja ați trecut",
+        "card-alternative" => "Ca alternativă la cărțile CodyRoby, puteți utiliza pictogramele disponibile aici",
+        "small-drawings" => "În plus, s-ar putea folosi desene de mici dimensiuni care să ajute la prezentarea poveștii. Cele utilizate în materialul video sunt aici",
+        "rest-of-cards" => "În rest, folosim cărțile CodyRoby, CodyFeet sau CodyColour."
+    ],
+
+
+    'catch-the-robot' => [
+        'title' => "Prinde robotul",
+        'text' => "Prinde robotul este un joc competitiv care se poate juca pe masă sau pe jos. Câștigă jucătorul care capturează robotul echipei adverse ajungând în căsuța lui pe tabla de joc. Din cauza caracterului aleatoriu al cărților de joc, ambele echipe trebuie să își ajusteze în mod continuu strategia de joc.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. Dacă pionul roz (Roby) se află în căsuța din mijloc – C3 –, cu fața spre nord, iar echipa roz are 2 cărți „Mergi înainte”, 2 cărți „Întoarce-te la stânga” și 1 carte „Întoarce-te la dreapta”, în ce căsuțe se poate deplasa?",
+                ]
+
+        ]
+
+    ],
+
+    'the-snake' => [
+        'title' => "Șarpele",
+        'text' => "Șarpele este un fel de Solitaire care se joacă cu cărți CodyRoby. Scopul jocului este să mutați șarpele prin toate căsuțele de pe tablă fără ca acesta să își muște coada.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. Există puncte de pornire care fac imposibilă trecerea prin toate căsuțele fără ca șarpele să își muște coada?",
+                ]
+
+        ]
+
+    ],
+
+    'storytelling' => [
+        'title' => "Spune o poveste!",
+        'text' => "Tema de astăzi sunt poveștile! Folosiți instrucțiunile CodyRoby, cartonașele CodyFeet sau culorile CodyColour pentru a muta pionul pe tabla de joc pentru a spune o poveste. Plasați diferitele elemente ale poveștii pe tabla de joc.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. Care este instrumentul cel mai versatil cu ajutorul căruia Roby poate să spună o poveste?",
+                    2 => "2. Puteți aranja părțile din povestea pe care doriți să o spuneți pe tabla de joc în așa fel încât să fie imposibil să le recuperați pe toate cu ajutorul CodyFeet?",
+                ]
+
+        ]
+
+    ],
+
+
 
     'texts' => [
         1 => '„Coding@Home” însumează scurte videoclipuri cu materiale de tipul „fă singur”, puzzle-uri, jocuri antrenante și competiții de programare pentru activități zilnice atât în familie, cât și la școală. Nu aveți nevoie de cunoștințe inițiale de programare și nici de dispozitive electronice pentru aceste activități. Activitățile vor stimula gândirea computațională și vor dezvolta abilitățile elevilor, părinților și profesorilor acasă sau la școală.',

@@ -159,6 +159,59 @@ return [
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "Rutbräde med etiketter Instruktionskort",
+        "cards" => "24 st. ”gå framåt”, 8 st. ”sväng vänster” och 8 st. ”sväng höger”",
+        "larger-cards" => "Ni kan använda större kort om ni spelar på golvet",
+        "video" => "Videon förklarar även hur ni spelar utan en kortlek",
+        "pieces-of-paper" => 'Ni behöver även 24 pappersbitar som placeras på de rutor som ni har besökt',
+        "card-alternative" => "I stället för CodyRoby-korten kan man också använda de kortsymboler som finns här",
+        "small-drawings" => "Små teckningar kan användas för att hjälpa till att berätta historien. De som används i videon finns här",
+        "rest-of-cards" => "I övrigt använde vi korten från CodyRoby, CodyFeet och CodyColor."
+    ],
+
+
+    'catch-the-robot' => [
+        'title' => "Fånga roboten",
+        'text' => "Fånga roboten är ett brädspel eller golvspel där ni tävlar mot varandra. Den spelare vinner som fångar motståndarlagets robot genom att ta sig fram till rutan den står på. Spelkorten ger en slumpeffekt som gör att båda lagen hela tiden måste justera sina strategier.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "F1. Vilka rutor kan den rosa spelpjäsen (Roby) gå till om han står på mittrutan C3 och pekar mot norr och det rosa laget har 2 ”gå framåt”-kort, 2 ”sväng vänster”-kort och 1 ”sväng höger”-kort?",
+                ]
+
+        ]
+
+    ],
+
+    'the-snake' => [
+        'title' => "Ormen",
+        'text' => "Ormen är en sorts patiens som spelas med CodyRoby-kort. Spelet går ut på att flytta ormen över alla rutor på brädet utan att den biter sig i svansen.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "F1. Finns det någon utgångspunkt som gör det omöjligt att besöka alla rutor utan att ormen biter sig i svansen?",
+                ]
+
+        ]
+
+    ],
+
+    'storytelling' => [
+        'title' => "Berättande",
+        'text' => "Dagens ämne är berättande! Använd instruktionerna från CodyRoby, fotspåren från CodyFeet eller färgerna från CodyColor för att flytta spelpjäserna på brädet och berätta en historia. Sprid ut olika delar av berättelsen över spelplanen.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "F1. Vilket verktyg är mest mångsidigt när du hjälper Roby att berätta en historia?",
+                    2 => "F2. Kan du arrangera delarna till din berättelse på brädet så att det inte går att ta tillbaka alla med CodyFeet?",
+                ]
+
+        ]
+
+    ],
+
+
     'texts' => [
         1 => 'Coding@Home är en samling korta videor, gör det själv-material, kluriga övningar, spel och kodningsutmaningar för vardagsbruk både hemma och i skolan. Man behöver inga tidigare kunskaper eller elektronisk utrustning för att göra aktiviteterna. Uppgifterna uppmuntrar till datorförståelse och övar kompetensen hos elever, föräldrar och lärare hemma eller i skolan.',
         2 => 'EU:s serie Code Week Coding@Home bygger på initiativet <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> från universitetet i Urbino och CodeMOOCnet Association i samarbete med Rai Cultura. Alessandro Bogliolo är professor i informationssystem på universitetet i Urbino, tillika <a href="/ambassadors?country_iso=IT" target="_blank">Italiens ambassadör för EU Code Week</a> och han koordinerar alla ambassadörer och är styrelsemedlem i Governing Board of the Digital Skills and Jobs Coalition. ',
