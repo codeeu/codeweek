@@ -153,6 +153,59 @@ return [
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "Spielbrett mit Schachbrettmuster und Beschriftungen",
+        "cards" => "24 Vorwärtskarten, 8 Links- und 8 Rechts-Karten",
+        "larger-cards" => "Für die Bodenversion des Spiels sind größere Karten zu empfehlen",
+        "video" => "In dem Video wird auch erläutert, wie man ohne den Kartenstapel spielen kann",
+        "pieces-of-paper" => "Zudem werden 24 kleine Quadrate aus Papier benötigt, um sie auf den bereits besuchten Kästchen zu platzieren",
+        "card-alternative" => "Alternativ zum CodyRoby-Kartenstapel könnt ihr die Kartensymbole hier herunterladen",
+        "small-drawings" => "Mit zusätzlichen kleinen Zeichnungen kannst du die Geschichte anschaulicher erzählen. Die Zeichnungen, die im Video verwendet werden, findet ihr hier",
+        "rest-of-cards" => "Für den Rest verwenden wir die Karten von CodyRoby, CodyFeet oder CodyColour."
+    ],
+
+
+    'catch-the-robot' => [
+        'title' => "Fang den Roboter",
+        'text' => "Fang den Roboter ist ein Spiel, das am Tisch und auf dem Boden gespielt werden kann. Es gewinnt der Spieler, der den Roboter des gegnerischen Teams fängt, indem er dessen Kästchen auf dem Spielbrett erreicht. Die Spielkarten sind durcheinander gemischt und daher müssen beide Teams ihre Strategien kontinuierlich anpassen.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "F1. Die rosa Spielfigur (Roby) befindet sich auf dem zentralen Quadrat  C3 Richtung Norden und das rosa Team hat 2 Vorwärts-, 2 Links- und 1 Rechts-Karte(n). Auf welche Quadrate kann sich Roby nun bewegen?",
+                ]
+
+        ]
+
+    ],
+
+    'the-snake' => [
+        'title' => "Die Schlange",
+        'text' => "Die Schlange ist eine Art Solitärspiel, das mit CodyRoby-Karten gespielt wird. Ziel des Spiels ist es, die Schlange über alle Kästchen des Spielbretts zu führen, ohne dass sie sich in den Schwanz beißt.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "F1. Gibt es Startpunkte, von denen es unmöglich ist, alle Quadrate zu erreichen, ohne dass sich die Schlange in den Schwanz beißt?",
+                ]
+
+        ]
+
+    ],
+
+    'storytelling' => [
+        'title' => "Geschichten erzählen",
+        'text' => "Das heutige Thema ist das Geschichten erzählen. Verwende die Befehle von CodyRoby, die Fußabdrücke von CodyFeet oder die Farben von CodyColour, um die Spielfiguren über das Spielbrett zu lenken und eine Geschichte zu erzählen. Verteile die verschiedenen Teile der Geschichte auf dem Spielbrett.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "F1. Mit welchen Hilfsmitteln (CodyRoby, CodyFeet oder CodyColour) könnt ihr Roby beim Erzählen einer Geschichte am besten steuern?",
+                    2 => "F2. Könnt ihr die Teile eurer Geschichte auf dem Spielbrett so anordnen, dass es unmöglich ist, alle Teile mit CodyFeet zu erreichen?",
+                ]
+
+        ]
+
+    ],
+
+
 
     'texts' => [
         1 => 'Coding@Home bietet Ihnen eine Sammlung aus kurzen Videos, DIY-Materialien, Puzzles, Spielen und Kodierungs-Challenges, die ganz einfach zu Hause mit der Familie oder in der Schule genutzt/durchgeführt werden können. Für diese Aktivitäten brauchen Sie weder Vorkenntnisse noch elektronische Geräte. Die Aktivitäten stimulieren das rechnerische Denken und erweitern die Fähigkeiten von Schülern, Eltern und Lehrern, sowohl zu Hause als auch in der Schule.',

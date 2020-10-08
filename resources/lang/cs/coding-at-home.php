@@ -153,6 +153,59 @@ return [
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "čtverečkovaná hrací deska s popisky",
+        "cards" => "24  karet pro pohyb vpřed, 8  karet pro otočení vlevo a 8  karet pro otočení vpravo",
+        "larger-cards" => "Pro verzi hry na podlaze se doporučují větší karty",
+        "video" => "Video také ukazuje, jak hrát bez karet",
+        "pieces-of-paper" => "Také je potřeba 24  kousků papíru, které se umístí na již navštívená pole",
+        "card-alternative" => "Jako alternativu k balíčku karet CodyRoby můžete použít ikony karet, které jsou dostupné zde",
+        "small-drawings" => "Jako doplněk můžete použít malé kresby, které pomohou s vyprávěním příběhu. Ty, které jsme použili ve videu, najdete zde",
+        "rest-of-cards" => "Pro zbytek používáme karty CodyRoby, CodyFeet nebo CodyColour."
+    ],
+
+
+    'catch-the-robot' => [
+        'title' => "Chyťte robota",
+        'text' => "„Chyťte robota“ je soutěžní hra, kterou lze hrát na stole nebo podlaze. Vyhrává hráč, který zajme robota druhého týmu tak, že vstoupí na jeho pole na hrací desce. Náhodné pořadí herních karet vyžaduje, aby oba týmy neustále přizpůsobovaly svou strategii.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "O1. Pokud se růžová figurka (Roby) nachází na středním poli C3 čelem na sever a růžový tým má dvě karty pro pohyb vpřed, dvě karty pro otočení vlevo a jednu kartu pro otočení vpravo, na která pole může jít?",
+                ]
+
+        ]
+
+    ],
+
+    'the-snake' => [
+        'title' => "Had",
+        'text' => "„Had“ je typ solitéru, který lze hrát s kartami CodyRoby. Cílem je provést hada přes všechna pole na hrací desce tak, aby se přitom nekousl do ocasu.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "O1. Existují nějaká startovní místa, ze kterých není možné navštívit všechna pole tak, aby se had nekousl do ocasu?",
+                ]
+
+        ]
+
+    ],
+
+    'storytelling' => [
+        'title' => "Vyprávění příběhu",
+        'text' => "Dnešním tématem je vyprávění příběhu. S využitím povelů CodyRoby, stop CodyFeet nebo barev CodyColour veďte figurky po hrací desce tak, aby vyprávěly příběh. Na hrací desce rozmístěte různé části příběhu.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "O1. Který nástroj je při vedení Robyho tak, aby vyprávěl příběh, nejvšestrannější?",
+                    2 => "O2. Dají se části příběhu, který chcete vyprávět, na hrací desce rozmístit tak, aby je nebylo možné všechny posbírat pomocí CodyFeet?",
+                ]
+
+        ]
+
+    ],
+
+
 
     'texts' => [
         1 => 'Série Coding@Home představuje sbírku krátkých videí, návodů, hádanek, her a programovacích úkolů pro každodenní využití doma i ve škole. Veškeré aktivity můžete provádět bez předchozích znalostí či elektronických přístrojů. Aktivity stimulují výpočetní myšlení a rozvíjejí dovednosti žáků, rodičů i učitelů doma i ve škole.',

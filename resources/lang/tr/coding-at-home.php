@@ -154,6 +154,59 @@ Gerekli malzeme: dama tahtası, ayak izli taşlar.',
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "işaretli dama tahtası",
+        "cards" => "24 adet “İleri Git” yön kartı, 8 adet “Sola Dön” kartı ve 8 adet “Sağa Dön” kartı",
+        "larger-cards" => "Yerde oynanacaksa daha büyük kart kullanılması tavsiye edilir",
+        "video" => "Deste olmadan nasıl oynanacağı da videoda anlatılıyor",
+        "pieces-of-paper" => "Üstünden geçilen karelere koymak için 24 adet kağıt da gereklidir",
+        "card-alternative" => "CodyRoby kart destesi yerine buradaki kart ikonlarını kullanabilirsiniz",
+        "small-drawings" => "Hikayeyi anlatmaya yardımcı olacak küçük çizimler de ekleyebilirsiniz. Videoda kullanılanlara buradan ulaşabilirsiniz",
+        "rest-of-cards" => "Gerisi için CodyRoby, CodyFeet veya CodyColour kartlarını kullanıyoruz."
+    ],
+
+
+    'catch-the-robot' => [
+        'title' => "Robotu yakala",
+        'text' => "“Robotu yakala”, masada veya yerde rakipler arası oynanan bir oyundur. Rakip takımın robotunun tahtadaki karesine yetişip onu yakalayan oyuncu oyunu kazanır. Oyun kartları rastgele geldiğinden her iki takım sürekli olarak stratejilerini duruma uydurmalıdır.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. Soru Pembe piyon (Robi) kuzeye dönük şekilde ortadaki C3 karesinde ise ve pembe takımın elinde 2 adet “İleri Git”, 2 adet “Sola Dön” ve 1 adet “Sağa Dön” kartı varsa, Robi hangi kareye gidebilir?",
+                ]
+
+        ]
+
+    ],
+
+    'the-snake' => [
+        'title' => "Yılan",
+        'text' => "Yılan, CodyRoby kartlarıyla oynanan tek kişilik bir oyundur. Oyunun amacı, yılanı kuyruğunu ısırmadan tahtadaki tüm karelerden geçirmektir.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. Soru Yılanın kuyruğunu ısırmadan bütün karelerden geçmesini engelleyecek giriş noktaları var mı?",
+                ]
+
+        ]
+
+    ],
+
+    'storytelling' => [
+        'title' => "Hikaye",
+        'text' => "Bugünün konusu hikaye! CodyRoby komutlarını, CodyFeet ayak izlerini veya CodyColour renklerini kullanarak piyonları tahtada yürütün ve bir hikaye anlatın. Hikayenin farklı bölümlerini tahtaya yayın.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. Soru Hikaye anlatırken Robi’yi yürütmek için en fazla seçeneği hangi araç sunuyor?",
+                    2 => "2. Soru Anlatmak istediğiniz hikayenin parçalarını tahtada CodyFeet’le hepsini toplamanıza imkan vermeyecek şekilde dizebilir misiniz?",
+                ]
+
+        ]
+
+    ],
+
+
 
     'texts' => [
         1 => 'Coding@Home, ailenin yanı sıra okulda günlük kullanım için kısa videolar, kendin yap materyalleri, bulmacalar, oyunlar ve kodlama ile ilgili alıştırmalar içeren bir servistir. Faaliyetleri yapmak için herhangi bir ön bilgiye veya elektronik cihaza ihtiyacınız yoktur. Faaliyetler, sayısal düşünmeyi teşvik edecek ve evde ya da okulda öğrencilerin, ebeveynlerin ve öğretmenlerin becerilerini geliştirecektir.',
