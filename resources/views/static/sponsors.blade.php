@@ -29,6 +29,9 @@
                     <a href="http://ec.europa.eu/digital-agenda/en/grand-coalition-digital-jobs-0" target="_blank"><img src="img/partners/digital-skills.png" alt="Grote coalitie van digitale banen"></a>
                 </li>
                 <li>
+                    <a href="https://www.e-mma.org/codezchezvous/" target="_blank"><img src="img/partners/emma.png" alt="E-mma"></a>
+                </li>
+                <li>
                     <a href="http://www.eun.org/" target="_blank"><img src="img/partners/colabora_eun.png" alt="European Schoolnet"></a>
                 </li>
                 <li>
