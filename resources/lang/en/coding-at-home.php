@@ -170,7 +170,7 @@ return [
         'questions' => [
             'content' =>
                 [
-                    1 => "If the pink pawn (Roby) is on the central square C3 facing North, and the pink team has 2 ‘Go Forward’ cards, 2 ‘Turn Left’ cards, and 1 ‘Turn Right’ card, to which squares can he go?",
+                    1 => "Q1. If the pink pawn (Roby) is on the central square C3 facing North, and the pink team has 2 ‘Go Forward’ cards, 2 ‘Turn Left’ cards, and 1 ‘Turn Right’ card, to which squares can he go?",
                 ]
 
         ]
@@ -183,7 +183,7 @@ return [
         'questions' => [
             'content' =>
                 [
-                    1 => "Are there any starting points that make it impossible to visit all the squares without biting the snake's tail?",
+                    1 => "Q1. Are there any starting points that make it impossible to visit all the squares without biting the snake's tail?",
                 ]
 
         ]
@@ -196,8 +196,8 @@ return [
         'questions' => [
             'content' =>
                 [
-                    1 => "Which tool is the most versatile for guiding Roby to tell a story?",
-                    2 => "Can you arrange the parts of the story that you want to tell on the board in positions that make it impossible to retrieve them all with CodyFeet?",
+                    1 => "Q1. Which tool is the most versatile for guiding Roby to tell a story?",
+                    2 => "Q2. Can you arrange the parts of the story that you want to tell on the board in positions that make it impossible to retrieve them all with CodyFeet?",
                 ]
 
         ]
