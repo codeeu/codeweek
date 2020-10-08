@@ -18,8 +18,8 @@ return [
         'questions' => [
             'content' =>
                 [
-                    1 => '1. otázka. Ak je štart a cieľ na ploche umiestnený tak ako vo videu, je možné, aby bádateľ navštívil všetky políčka? ',
-                    2 => '2. otázka. Aké umiestnenie štartu a cieľa bádateľovi znemožní navštíviť najväčší počet políčok na ploche? '
+                    1 => '1. otázka. Ak je štart a cieľ na ploche umiestnený tak ako vo videu, je možné, aby bádateľ navštívil všetky políčka? ',
+                    2 => '2. otázka. Aké umiestnenie štartu a cieľa bádateľovi znemožní navštíviť najväčší počet políčok na ploche? '
                 ]
 
         ]
@@ -32,10 +32,10 @@ return [
         'questions' => [
             'content' =>
                 [
-                    1 => '1. otázka. Ak sú štart a cieľ umiestnené tak ako v prvej hre v tomto videu, je možné, aby jeden z tímov vyhral? ',
-                    2 => '2. otázka. Ak sú štart a cieľ umiestnené tak ako v hre, ktorú vyhrala Anna, je možná aj remíza? ',
-                    3 => '3. otázka. Zvýhodňuje určité umiestnenie štartu a cieľa jeden z tímov? ',
-                    4 => '4. otázka. Možno na základe usporiadania štartu a cieľa predpokladať, aká medzera vznikne medzi víťazným a porazeným tímom? '
+                    1 => '1. otázka. Ak sú štart a cieľ umiestnené tak ako v prvej hre v tomto videu, je možné, aby jeden z tímov vyhral? ',
+                    2 => '2. otázka. Ak sú štart a cieľ umiestnené tak ako v hre, ktorú vyhrala Anna, je možná aj remíza? ',
+                    3 => '3. otázka. Zvýhodňuje určité umiestnenie štartu a cieľa jeden z tímov? ',
+                    4 => '4. otázka. Možno na základe usporiadania štartu a cieľa predpokladať, aká medzera vznikne medzi víťazným a porazeným tímom? '
                 ]
 
         ]
@@ -153,9 +153,62 @@ return [
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "hracia doska so značkami",
+        "cards" => "24 kariet „Choď dopredu“, 8 kariet „Otoč sa doľava“ a  8 kariet „Otoč sa doprava“",
+        "larger-cards" => "Pri hre na podlahe sa odporúčajú väčšie karty",
+        "video" => "Vo videu sa vysvetľuje aj to, ako hrať bez balíčka kariet",
+        "pieces-of-paper" => "Budete potrebovať aj 24 kúskov papiera na označenie políčok, na ktorých už figúrka stála",
+        "card-alternative" => "Ako alternatívu k  balíčku kariet CodyRoby môžete použiť kartové ikony, ktoré sú dostupné tu",
+        "small-drawings" => "Doplniť možno malé obrázky, ktoré pomôžu pri rozprávaní príbehu. Tie, ktoré boli použité vo videu, sú dostupné tu",
+        "rest-of-cards" => "Na záver použijeme karty CodyRoby, CodyFeet alebo CodyColour."
+    ],
+
+
+    'catch-the-robot' => [
+        'title' => "Chyť robota",
+        'text' => "Chyť robota je súťažná stolová hra alebo podlahová hra. Vyhráva hráč, ktorý chytí robota protihráčov tým, že sa dostane na jeho políčko na hracej doske. Náhodnosť hracích kariet núti oba tímy neustále prispôsobovať svoje stratégie.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "O1. Ak ružová figúrka (Roby) stojí na stredovom políčku C3 otočená na sever a  ružový tím má 2 karty „Choď dopredu“, 2 karty „Otoč sa doľava“ a  1 kartu „Otoč sa doprava“, na ktoré políčka sa môže figúrka postaviť?",
+                ]
+
+        ]
+
+    ],
+
+    'the-snake' => [
+        'title' => "Had",
+        'text' => "Had je druh kartovej hry pre jedného hráča, ktorá sa hrá s  hracími kartami CodyRoby. Cieľom tejto hry je previesť hada cez všetky políčka na hracej doske bez toho, aby si zahryzol do chvosta.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "O1. Existujú štartovacie body, z  ktorých sa nedá dostať na všetky políčka bez toho, aby si had zahryzol do chvosta?",
+                ]
+
+        ]
+
+    ],
+
+    'storytelling' => [
+        'title' => "Rozprávanie príbehu",
+        'text' => "Dnešnou témou je rozprávanie príbehu. Pomocou pokynov na kartách CodyRoby, kartách so stopami CodyFeet alebo farebných kartách CodyColour preveďte figúrky cez hraciu dosku a  porozprávajte príbeh. Rozmiestnite jednotlivé časti príbehu po hracej doske.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "O1. Ktorá pomôcka môže najlepšie nasmerovať Robyho pri rozprávaní príbehu?",
+                    2 => "O2. Dajú sa časti príbehu, ktorý chcete porozprávať, rozmiestniť na hracej doske tak, že sa k  všetkým nebudete vedieť dostať pomocou kariet CodyFeet?",
+                ]
+
+        ]
+
+    ],
+
+
     'texts' => [
         1 => 'Coding@Home je zbierka krátkych videí obsahujúcich materiály typu „urob si sám“, hlavolamy, pútavé hry a programátorské úlohy na každodenné použitie doma či v škole. Na vykonávanie aktivít nepotrebujete žiadne znalosti v oblasti programovania ani elektronické zariadenia. Tieto aktivity stimulujú výpočtové myslenie a cibria zručnosti žiakov, rodičov a učiteľov doma aj v škole.',
-        2 => 'Séria Coding@Home v rámci európskeho týždňa programovania nadväzuje na iniciatívu <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> Univerzity v Urbine a asociáciu CodeMOOCnet v spolupráci so štruktúrou Rai Cultura. Aktivity prezentuje Alessandro Bogliolo, ktorý vyučuje systémy na spracovávanie informácií na Univerzite v Urbine a je <a href="/ambassadors?country_iso=IT" target="_blank">ambasádorom európskeho týždňa programovania v Taliansku</a>, koordinátorom všetkých ambasádorov a tiež členom správnej rady koalície digitálnych zručností a pracovných miest.',
+        2 => 'Séria Coding@Home v rámci európskeho týždňa programovania nadväzuje na iniciatívu <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> Univerzity v Urbine a asociáciu CodeMOOCnet v spolupráci so štruktúrou Rai Cultura. Aktivity prezentuje Alessandro Bogliolo, ktorý vyučuje systémy na spracovávanie informácií na Univerzite v Urbine a je <a href="/ambassadors?country_iso=IT" target="_blank">ambasádorom európskeho týždňa programovania v Taliansku</a>, koordinátorom všetkých ambasádorov a tiež členom správnej rady koalície digitálnych zručností a pracovných miest.',
         3 => 'Ak máte záujem o ďalšie aktivity, pri ktorých nepotrebujete elektrinu, aktivity v iných programovacích jazykoch, v oblasti robotiky alebo micro:bit a pod., pozrite si <a href="https://codeweek.eu/training">Hodiny programovania na webe európskeho týždňa programovania</a>, kde nájdete videonávody a rozvrh kurzov pre základné a stredné školy. Na webe európskeho týždňa programovania na stránke Zdroje si tiež môžete pozrieť sekcie <a href="/resources/learn">Pre študentov</a> a <a href="/resources/teach">Pre učiteľov.</a> '
     ]
 ];

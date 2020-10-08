@@ -153,6 +153,58 @@ return [
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "rūtots laukums ar apzīmējumiem",
+        "cards" => "kārtis ar norādījumiem 24 – “uz priekšu”, 8 – “pa kreisi”, 8 – “pa labi”",
+        "larger-cards" => "Grīdas versijā ieteicams izmantot lielākas kārtis",
+        "video" => "Videomateriālā arī izskaidrots, kā spēlēt bez kāršu komplekta",
+        "pieces-of-paper" => "Vajadzīgi arī 24 papīra gabali izvietošanai jau apmeklētajos lauciņos",
+        "card-alternative" => "Par alternatīvu “CodyRoby” kāršu komplektam var izmantot te pieejamos kāršu attēlus",
+        "small-drawings" => "Papildus varētu būt nelieli zīmējumi, kas palīdzētu izstāstīt stāstu. Video izmantotie zīmējumi ir te",
+        "rest-of-cards" => "Pārējam mēs izmantojam “CodyRoby”, “CodyFeet” vai “CodyColour” kārtis."
+    ],
+
+
+    'catch-the-robot' => [
+        'title' => "“Noķer robotu!”",
+        'text' => "“Noķer robotu!” ir galda vai grīdas spēle, kurā cenšas uzvarēt. Uzvar spēlētājs, kurš notver pretinieku komandas robotu, sasniedzot tā lauciņu. Spēļu kāršu nejaušības dēļ abām komandām ir pastāvīgi jākoriģē stratēģija.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. jaut. Ja sārtā figūra – Robijs (“Roby”) – atrodas centrālajā lauciņā C3 ar skatu uz ziemeļiem un sārtajai komandai ir 2 kārtis “uz priekšu”, 2 “pa kreisi” un 1 “pa labi”, tad uz kuriem lauciņiem viņš var iet?",
+                ]
+
+        ]
+
+    ],
+
+    'the-snake' => [
+        'title' => "“Čūska”",
+        'text' => "“Čūska” ir kas līdzīgs pasjansam, ko var spēlēt ar “CodyRoby” kārtīm. Spēles mērķis ir čūsku izvadīt pa visiem lauciņiem, neļaujot tai iekost sev astē.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. jaut. Vai ir kādi sākumpunkti, kas neļauj apmeklēt visus lauciņus, neiekožot čūskai astē?",
+                ]
+
+        ]
+
+    ],
+
+    'storytelling' => [
+        'title' => "Stāstniecība",
+        'text' => "Šāsdienas temats ir stāstniecība! Izmantojiet “CodyRoby” pamācību, “CodyFeet” pēdas nospiedumus vai “CodyColour” krāsas, lai vadītu figūras pa galdiņu un izstāstītu stāstu! Ap laukumu izmētā dažādas stāsta daļas.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. jaut. Kurš rīks visdaudzveidīgāk palīdz Robijam (“Roby”) izstāstīt kādu stāstu?",
+                    2 => "2. jaut. Vai varat tās stāsta daļas, kuras vēlaties izstāstīt, uz spēles laukuma izkārtot pozīcijās, kurās nav iespējams tās visas savākt ar “CodyFeet”?",
+                ]
+
+        ]
+
+    ],
+
 
     'texts' => [
         1 => 'Coding@Home ir īsu videoklipu, patstāvīgi veicamu uzdevumu, mīklu, aizraujošu spēļu un programmēšanas izaicinājumu kopums ikdienas lietošanai ģimenē un skolā. Jums nav vajadzīgas programmēšanas priekšzināšanas vai elektroniskas ierīces, lai veiktu šīs nodarbības. Tās stimulēs skaitļošanas tipa domāšanu un uzlabos prasmes skolēniem, vecākiem un skolotājiem gan mājās, gan skolā.',

@@ -153,6 +153,59 @@ return [
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "bord maqsum f’kaxxi u b’tikketti",
+        "cards" => "24  karta “Imxi 'l Quddiem”, 8  karti “Dur Lejn ix-Xellug” u 8  karti “Dur Lejn il-Lemin” li jindikaw id-direzzjoni",
+        "larger-cards" => "Għall-verżjoni li tintlagħab fl-art, huma rrakkomandati karti akbar",
+        "video" => "Il-vidjow jispjega wkoll kif tistgħu tilagħbu mingħajr il-mazz karti",
+        "pieces-of-paper" => "Huma meħtieġa wkoll 24  biċċa tal-karta biex dawn jitqiegħdu fuq il-kaxxi li jkunu diġà nżaru",
+        "card-alternative" => "Bħala alternattiva għall-mazz karti  CodyRoby, tista’ tuża l-ikoni tal-karti disponibbli hawnhekk",
+        "small-drawings" => "Jistgħu jiżdiedu tpinġijiet żgħar biex jgħinu fir-rakkontar tal-istorja. Dawk li jintużaw fil-vidjow jinsabu hawnhekk",
+        "rest-of-cards" => "Għall-bqija nużaw il-karti ta’ CodyRoby, CodyFeet, jew CodyColour."
+    ],
+
+
+    'catch-the-robot' => [
+        'title' => "Aqbad ir-robot",
+        'text' => "Aqbad ir-robot hija logħba kompetittiva li tista’ tintlagħab fuq mejda jew mal-art. Jirbaħ dak li jirnexxielu jaqbad ir-robot tat-tim l-ieħor billi jidħol fil-kaxxa tiegħu fuq il-bord. L-element aleatorju tal-karti tal-logħob jeħtieġ li ż-żewġ timijiet jaġġustaw l-istrateġiji tagħhom il-ħin kollu.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "M1. Jekk il-pawn ir-roża (Roby) ikun jinsab fuq il-kaxxa ċentrali  C3 jħares lejn it-Tramuntana, u t-tim ir-roża jkollu 2  karti “Imxi 'l Quddiem”, 2  karti “Dur Lejn ix-Xellug” u karta “Dur Lejn il-Lemin”, sa liema kaxxi jista’ jasal?",
+                ]
+
+        ]
+
+    ],
+
+    'the-snake' => [
+        'title' => "Is-serp",
+        'text' => "Is-serp huwa tip ta’ logħba solitaire li tintlagħab bil-karti CodyRoby. L-għan tal-logħba huwa li s-serp jiġi ggwidat minn ġol-kaxxi kollha fuq il-bord mingħajr ma jigdem denbu.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "M1. Hemm xi punti tat-tluq li jagħmluha impossibbli li jinżaru l-kaxxi kollha mingħajr ma jingidem denb is-serp?",
+                ]
+
+        ]
+
+    ],
+
+    'storytelling' => [
+        'title' => "Rakkontar ta’ stejjer",
+        'text' => "Is-suġġett tal-lum huwa r-rakkontar ta' stejjer! Uża l-istruzzjonijiet ta’ CodyRoby, il-marki tas-saqajn ta’ CodyFeet, jew il-kuluri ta’ CodyColour biex tiggwida l-pawns fuq il-bord biex tirrakkonta storja. Ifrex partijiet differenti mill-istorja madwar il-bord.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "M1. Liema għodda hija dik l-aktar versatili biex Roby jiġi ggwidat biex jirrakkonta storja?",
+                    2 => "M2. Tista’ tirranġa l-partijiet tal-istorja li tixtieq tirrakkonta fuq il-bord f’pożizzjonijiet li jagħmluha impossibbli li dawn jinġabru kollha b’CodyFeet?",
+                ]
+
+        ]
+
+    ],
+
+
 
     'texts' => [
         1 => '“Coding@Home” huma vidjows qosra b’materjal do-it-yourself, logħob ta’ taħbil il-moħħ, logħob interessanti, u sfidi tal-ikkowdjar għall-użu ta’ kuljum fil-familja kif ukoll fl-iskola. Mhu meħtieġ ebda għarfien minn qabel tal-ikkowdjar, u lanqas apparat elettroniku sabiex twettaq l-attivitajiet. L-attivitajiet se jistimulaw il-ħsieb komputazzjonali u se jikkultivaw il-ħiliet tal-istudenti, tal-ġenituri u tal-għalliema fid-dar jew fl-iskola.',

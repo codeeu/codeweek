@@ -154,6 +154,57 @@ return [
     ],
 
 
+    'material2' => [
+        "chequered-with-labels" => "lenta su langeliais ir žymomis",
+        "cards" => "24 kortelės „Eik pirmyn“, 8 kortelės „Pasuk į kairę“ ir 8 kortelės „Pasuk į dešinę“",
+        "larger-cards" => "Žaidžiant ant grindų rekomenduojama naudoti didesnes korteles",
+        "video" => "Vaizdo įraše paaiškinama ir kaip žaisti be kortelių",
+        "pieces-of-paper" => "Taip pat reikia 24 popieriaus lapelių, kurie bus dedami ant pereitų langelių",
+        "card-alternative" => "Vietoj „CodyRoby“ kortelių galima naudoti ir kortelių piktogramas, kurias galite rasti čia",
+        "small-drawings" => "Papasakoti istoriją galėtų padėti nedideli piešinėliai. Vaizdo įraše naudotus piešinius rasite čia",
+        "rest-of-cards" => "Likusiai daliai naudojame „CodyRoby“, „CodyFeet“ arba „CodyColour“ korteles."
+    ],
+
+
+    'catch-the-robot' => [
+        'title' => "Pagauk robotą",
+        'text' => "„Pagauk robotą“ – varžymosi žaidimas, žaidžiamas ant stalo arba grindų. Laimi žaidėjas, kuris pagauna priešingos komandos robotą pasiekdamas jo langelį lentoje. Žaidimo kortelės išmaišomos ir traukiamos atsitiktine tvarka, todėl abi komandos turi nuolat atitinkamai keisti savo strategijas.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "K1. Jeigu rožinė figūrėlė (Roby) yra viduriniame laukelyje C3 pasukta į šiaurę ir rožinė komanda turi 2 korteles „Eik pirmyn“, 2 korteles „Pasuk į kairę“ ir 1 kortelę „Pasuk į dešinę“, į kuriuos langelius ji gali eiti?",
+                ]
+
+        ]
+
+    ],
+
+    'the-snake' => [
+        'title' => "Gyvatė",
+        'text' => "„Gyvatė“ – tam tikra pasianso rūšis, žaidžiama su „CodyRoby“ kortelėmis. Žaidimo tikslas – pervesti gyvatę per visus lentos langelius taip, kad ji neįsikąstų uodegos.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "K1. Ar yra tokių pradinių taškų, nuo kurių pradėjusi gyvatė negalėtų aplankyti visų langelių neįsikandusi uodegos?",
+                ]
+
+        ]
+
+    ],
+
+    'storytelling' => [
+        'title' => "Pasakojimas",
+        'text' => "Šiandienos tema – pasakojimas! Naudodamiesi „CodyRoby“ nurodymais, „CodyFeet“ pėdsakais ir „CodyColour“ spalvomis, veskite figūrėles lentoje taip, kad papasakotumėte istoriją. Paskleiskite įvairias istorijos dalis ant lentos.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "K1. Kokia priemonė suteikia daugiausiai galimybių vedant Roby pasakojimo keliu?",
+                    2 => "K2.  Ar įmanoma lentoje taip išdėstyti norimos papasakoti istorijos dalis, kad pasiekti jas visas su „CodyFeet“ nebūtų įmanoma?",
+                ]
+
+        ]
+
+    ],
 
 
     
