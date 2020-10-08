@@ -151,6 +151,59 @@ kolorowe karty lub czerwony, żółty i szary pisak",
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "plansza na wzór szachownicy z oznaczonymi polami",
+        "cards" => "24 karty „Idź naprzód”, 8 kart „Skręć w lewo” oraz 8 kart „Skręć w prawo” do wyznaczania kierunku",
+        "larger-cards" => "Do gry na podłodze zalecane są większe karty",
+        "video" => "W filmie wideo wyjaśniono również, jak wygląda gra bez talii kart",
+        "pieces-of-paper" => "Potrzeba również 24 kawałków papieru, aby oznaczyć już odwiedzone pola",
+        "card-alternative" => "Jako alternatywę dla talii kart CodyRoby można wykorzystać ikony kart dostępne tutaj",
+        "small-drawings" => "Dodatkiem mogą być małe rysunki jako pomoc w opowiedzeniu historii. Te wykorzystane w filmie wideo można znaleźć tutaj",
+        "rest-of-cards" => "Oprócz tego potrzebujemy kart z CodyRoby, CodyFeet lub CodyColour."
+    ],
+
+
+    'catch-the-robot' => [
+        'title' => "Złap robota",
+        'text' => "„Złap robota” to gra, w której rywalizuje się na planszy lub na podłodze. Wygrywa zawodnik, któremu uda się złapać robota przeciwnej drużyny poprzez dotarcie do jego pola na planszy. Losowanie kart do gry oznacza, że obie drużyny muszą ciągle dopasowywać swoją strategię.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Jeżeli różowy pionek (Roby) znajduje się na centralnym polu C3 i jest zwrócony na północ, a różowa drużyna ma 2 karty „Idź naprzód”, 2 karty „Skręć w lewo” i 1 kartę „Skręć w prawo”, na których polach może stanąć pionek?",
+                ]
+
+        ]
+
+    ],
+
+    'the-snake' => [
+        'title' => "Wąż",
+        'text' => "„Wąż” to rodzaj pasjansa, w którego gra się z użyciem kart CodyRoby. Celem gry jest przeprowadzenie węża przez wszystkie pola na planszy tak, aby nie ugryzł się w ogon.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Czy istnieją jakieś punkty startowe, które sprawiają, że odwiedzenie wszystkich pól bez ugryzienia ogona węża nie jest możliwe?",
+                ]
+
+        ]
+
+    ],
+
+    'storytelling' => [
+        'title' => "Opowiadanie historii",
+        'text' => "Dzisiejszy temat to opowiadanie historii! Wykorzystaj instrukcje do CodyRoby, ślady stóp z CodyFeet lub kolory z CodyColour, aby pokierować pionkami na planszy i opowiedzieć historię. Rozstaw różne elementy historii na planszy.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Które narzędzie daje największą swobodę podczas sterowania Roby w celu opowiedzenia historii?",
+                    2 => "P2. Czy możliwe jest ułożenie na planszy elementów historii, którą chcemy opowiedzieć, w taki sposób, że zebranie ich wszystkich za pomocą CodyFeet nie będzie możliwe?",
+                ]
+
+        ]
+
+    ],
+
+
 
 
     'texts' => [

@@ -153,6 +153,59 @@ return [
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => 'Bræt med felter og etiketter 24 "gå fremad"-kort',
+"cards" => '8 "drej til venstre"-kort og 8 "drej til højre"-kort',
+"larger-cards" => "Vi anbefaler større kort til gulvudgaven",
+"video" => "Denne video forklarer også, hvordan du spiller uden kortbunken",
+"pieces-of-paper" => "Du skal bruge 24 stykker papir til at lægge på de felter, der allerede er besøgt",
+"card-alternative" => "Som alternativ til bunken af CodyRoby-kort kan du bruge de kort, der er tilgængelige her",
+"small-drawings" => "En tilføjelse kunne være små tegninger, der hjælper med at fortælle historien. Du finder dem, der bruges i videoen, her",
+"rest-of-cards" => "Til resten bruger vi kortene til CodyRoby, CodyFeet eller CodyColour."
+],
+
+
+'catch-the-robot' => [
+    'title' => "Catch the robot",
+    'text' => "Catch the robot er et konkurrencespil, der kan spilles på bord eller gulv. Den spiller, der fanger modstanderholdets robot ved at nå dens felt på brættet, vinder. Spillekortenes vilkårlighed betyder, at begge hold løbende må justere deres strategier.",
+    'questions' => [
+        'content' =>
+            [
+                1 => 'Spørgsmål 1: Hvis den lyserøde brik (Roby) er på det midterste felt C3 og vender mod nord, og det lyserøde hold har 2 "gå fremad"-kort, 2 "drej til venstre"-kort og 1 "drej til højre"-kort, hvilke felter kan den så gå til?',
+]
+
+]
+
+],
+
+'the-snake' => [
+    'title' => "The snake",
+    'text' => "The snake er en form for solitaire, der spilles med CodyRoby-kort. Spillets mål er at styre slangen gennem alle felterne på brættet, uden at den bider i sin egen hale.",
+    'questions' => [
+        'content' =>
+            [
+                1 => "Spørgsmål 1: Er der nogen startpunkter, der gør det umuligt at besøge alle felterne, uden at slangen bider sig selv i halen?",
+            ]
+
+    ]
+
+],
+
+'storytelling' => [
+    'title' => "Historiefortælling",
+    'text' => "Dagens emne er historiefortælling! Brug instruktionerne til CodyRoby, fodaftrykkene til CodyFeet eller farverne til CodyColour til at styre brikkerne rundt på brættet og fortælle en historie. Placer forskellige dele af historien rundt omkring på brættet.",
+    'questions' => [
+        'content' =>
+            [
+                1 => "Spørgsmål 1: Hvilket værktøj er det mest alsidige til at styre Roby til at fortælle en historie?",
+                2 => "Spørgsmål 2: Kan du arrangere de dele af historien, du vil fortælle, på brættet i positioner, der gør det umuligt at hente dem alle sammen med CodyFeet?",
+            ]
+
+    ]
+
+],
+
+
 
     'texts' => [
         1 => 'Coding@Home er en samling af korte videoer, gør-det-selv-materialer, opgaveløsningsspil og andre spændende spil samt kodningsudfordringer til daglig brug i familien og i skolen. Man behøver hverken forudgående viden om emnet eller adgang til en elektronisk enhed for at kunne udføre de forskellige aktiviteter. Aktiviteterne stimulerer computerorienteret tænkning og fremmer elevernes/de studerendes, forældrenes og undervisernes kompetencer i hjemmet og i skolen.',

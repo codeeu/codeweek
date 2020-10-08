@@ -153,6 +153,59 @@ return [
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "ploča sa oznakama",
+        "cards" => '24 karte "Idi naprijed", 8 karata "Okreni se lijevo" i 8 karata "Okreni se desno"',
+"larger-cards" => "Veće karte se preporučuju za verziju igre na podu",
+"video" => "Ovaj video također objašnjava kako se može igrati bez špila karata",
+"pieces-of-paper" => "Također su potrebna 24 komada papira za postavljanje na polja koja su već pređena",
+"card-alternative" => "Kao alternativu CodyRoby kartama, možete koristiti ikonice karata koje su dostupne ovdje",
+"small-drawings" => "Dodatak mogu biti mali crteži koji će pomoći u pričanju priče. Oni koji su korišteni u videu se nalaze ovdje",
+"rest-of-cards" => "Za ostatak koristimo karte od CodyRoby, CodyFeet ili CodyColour."
+],
+
+
+'catch-the-robot' => [
+    'title' => "Uhvati robota",
+    'text' => "Uhvati robota je takmičarska igra koja se igra na stolu ili na podu. Pobjeđuje onaj igrač koji uhvati robota iz protivničkog tima tako što stigne do njegovog polja na ploči. Nasumičnost karata za igranje zahtijeva od oba tima konstantno prilagođavanje njihovih strategija.",
+    'questions' => [
+        'content' =>
+            [
+                1 => 'P1 Ako se ružičasti pješak (Roby) nalazi na centralnom polju C3 usmjeren prema Sjeveru, a ružičasti tim ima 2 karte "Idi naprijed", 2 karte "Okreni se lijevo" i 1 kartu "Okreni se desno", na koja polja se može pomjeriti?',
+]
+
+]
+
+],
+
+'the-snake' => [
+    'title' => "Zmija",
+    'text' => "Zmija je vrsta pasijans igre koja se igra s CodyRoby kartama. Cilj igre je provesti zmiju kroz sva polja na ploči, a da pri tome ne ugrize svoj rep.",
+    'questions' => [
+        'content' =>
+            [
+                1 => "P1 Postoje li neke polazne tačke s kojih je nemoguće posjetiti sva polja, a pri tome ne ugristi rep zmije?",
+            ]
+
+    ]
+
+],
+
+'storytelling' => [
+    'title' => "Pričanje priča",
+    'text' => "Današnja tema je pričanje priča! Koristi uputstva od CodyRoby, otiske stopala od CodyFeet ili boje od CodyColour za vođenje pješaka preko ploče i pričanje priče. Razbacaj različite dijelove priče po cijeloj ploči.",
+    'questions' => [
+        'content' =>
+            [
+                1 => "P1 Koje sredstvo je najsvestranije za vođenje Robyja u pričanju priče?",
+                2 => "P2 Možete li postaviti dijelove priče koju želite ispričati na ploči na pozicijama s kojih je nemoguće pokupiti sve dijelove s CodyFeet?",
+            ]
+
+    ]
+
+],
+
+
 
     'texts' => [
         1 => '"Coding@Home" su kratki video snimci sa uradi sam materijalima, slagalicama, zanimljivim igrama i izazovima kodiranja za svakodnevnu upotrebu u kući kao i u školi. Nije vam potrebno nikakvo predznanje u kodiranju niti su vam potrebni blo kakvi elektronski uređaji da bi uradili aktivnosti. Aktivnosti će podstaknuti računarsko razmišljanje i njegovati vještine učenika, roditelja i učitelja u kući ili u školi.',

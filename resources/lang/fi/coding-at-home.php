@@ -153,6 +153,59 @@ return [
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "ruudullinen pelilauta, jonka rivit on merkitty",
+        "cards" => "24 ”Mene eteenpäin” korttia, 8 ”Käänny vasemmalle” korttia ja 8 ”Käänny oikealle” korttia",
+        "larger-cards" => "Lattialla pelattavaan versioon suositellaan suurempia kortteja",
+        "video" => "Videolla näytetään, miten peliä voi pelata ilman korttipakkaa",
+        "pieces-of-paper" => "Tarvitaan myös 24 paperipalaa, jotka asetetaan ruuduille, joissa on jo käyty",
+        "card-alternative" => "CodyRoby-korttipakan sijaan voit käyttää korttisymboleja, jotka voi ladata täältä",
+        "small-drawings" => "Lisänä voisi käyttää pieniä piirroksia, jotka auttavat kertomaan tarinaa. Videolla käytetyt kuvat voi ladata täältä",
+        "rest-of-cards" => "Muuten käytämme CodyRobyn, CodyFeetin tai CodyColourin kortteja."
+    ],
+
+
+    'catch-the-robot' => [
+        'title' => "Nappaa robotti",
+        'text' => "”Nappaa robotti” on kilpailullinen pöytä- tai lattiapeli. Voittaja on se pelaaja, joka ottaa vastajoukkueen robotin kiinni menemällä sen ruutuun pelilaudalla. Pelikortteja nostetaan pakasta sokkona, joten molempien joukkueiden on jatkuvasti tarkistettava strategiaansa.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Jos vaaleanpunainen pelinappula eli Roby on keskimmäisessä ruudussa C3 kääntyneenä kohti pohjoista, ja vaaleanpunaisella joukkueella on kaksi ”Mene eteenpäin” korttia, kaksi ”Käänny vasemmalle” korttia ja yksi ”Käänny oikealle” kortti, mihin ruutuun Roby voi mennä?",
+                ]
+
+        ]
+
+    ],
+
+    'the-snake' => [
+        'title' => "Käärme",
+        'text' => "”Käärme” on eräänlainen lautapasianssi, jota pelataan CodyRoby-korteilla. Pelin tavoitteena on ohjata käärme pelilaudan kaikkien ruutujen läpi ilman, että se puree häntäänsä.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Onko pelilaudalla lähtöruutuja, joista lähtiessä on mahdotonta käydä kaikissa ruuduissa ilman käärmeen hännän puremista?",
+                ]
+
+        ]
+
+    ],
+
+    'storytelling' => [
+        'title' => "Tarinankerrontaa",
+        'text' => "Tänään aiheena on tarinankerronta! Käytä CodyRobyn ohjeita, CodyFeetin jalanjälkiä tai CodyColourin värejä, joilla ohjaat pelinappuloita laudalla kertoaksesi tarinan. Ripottele tarinan osat eri puolille pelilautaa.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Mikä välineistä on kaikista monikäyttöisin, kun Robya ohjataan kertomaan tarina?",
+                    2 => "Q2. Osaatko järjestää kertomasi tarinan osat pelilaudalla sellaisiin paikkoihin, ettei niitä kaikkia ole mahdollista kerätä, jos käyttää CodyFeetiä?",
+                ]
+
+        ]
+
+    ],
+
+
 
 
     'texts' => [

@@ -153,6 +153,59 @@ return [
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "tabuleiro quadriculado com etiquetas",
+        "cards" => "24  cartas «ir em frente», 8  cartas «virar à esquerda» e 8  cartas «virar à direita»",
+        "larger-cards" => "é recomendável utilizar cartas maiores caso se jogue no chão",
+        "video" => "No vídeo explica-se também como jogar sem o baralho de cartas",
+        "pieces-of-paper" => "São também necessários 24  pedaços de papel, para colocar nas casas já visitadas",
+        "card-alternative" => "Como alternativa ao baralho de cartas CodyRoby, é possível utilizar os ícones das cartas disponíveis aqui",
+        "small-drawings" => "É possível recorrer a pequenos desenhos para ajudar a contar a história. Encontram-se aqui os desenhos utilizados no vídeo",
+        "rest-of-cards" => "Nas outras situações, utilizamos as cartas CodyRoby, CodyFeet ou CodyColour."
+    ],
+
+
+    'catch-the-robot' => [
+        'title' => "Caça ao robô",
+        'text' => "A caça ao robô é um jogo competitivo, que pode ser jogado em cima da mesa ou no chão. Vence o jogador que conseguir caçar o robô da equipa adversária, chegando à respetiva casa no tabuleiro. Como as cartas são tiradas à sorte, ambas as equipas têm constantemente de adaptar as suas estratégias.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Se o peão cor-de-rosa (Roby) estiver na casa central C3 voltado para norte e a equipa cor-de-rosa tiver 2 cartas «ir em frente», 2 cartas «virar à esquerda» e 1 carta «virar à direita», para que casas se pode o peão deslocar?",
+                ]
+
+        ]
+
+    ],
+
+    'the-snake' => [
+        'title' => "A cobra",
+        'text' => "A cobra é um jogo de paciência jogado com cartas CodyRoby. O objetivo do jogo é fazer passar a cobra por todas as casas do tabuleiro sem que morda a cauda.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Existem pontos de partida que tornem impossível passar por todas as casas sem morder a cauda da cobra?",
+                ]
+
+        ]
+
+    ],
+
+    'storytelling' => [
+        'title' => "Contar histórias",
+        'text' => "Hoje é dia de contar histórias! Utiliza as instruções do CodyRoby, as pegadas do CodyFeet ou as cores do CodyColour para guiares os peões no tabuleiro de modo a contar uma história. Espalha diferentes partes da história pelo tabuleiro.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Qual é a ferramenta mais versátil para ajudar o Roby a contar uma história?",
+                    2 => "P2. Consegues colocar as partes da história que pretendes contar no tabuleiro em posições que tornem impossível obtê-las todas com o CodyFeet?",
+                ]
+
+        ]
+
+    ],
+
+
 
     'texts' => [
         1 => 'A Coding@Home é uma coleção de vídeos curtos, materiais do tipo «faça-você-mesmo», quebra-cabeças, jogos e desafios de programação para o dia a dia em família bem como na escola. Não necessita de conhecimentos prévios nem de dispositivos eletrónicos para realizar as atividades. As atividades irão estimular o pensamento computacional e cultivar as competências dos alunos, dos pais e dos professores em casa ou na escola.',
