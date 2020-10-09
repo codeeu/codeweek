@@ -4,6 +4,7 @@ namespace App\Console\Commands\Importers;
 
 use App\Helpers\ImporterHelper;
 
+use App\HamburgRSSItem;
 use App\MeetAndCodeRSSItem;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
