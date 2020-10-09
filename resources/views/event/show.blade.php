@@ -120,7 +120,7 @@
                 <div class="codeweek-display-field">
                     <label class="block text-orange-500 font-bold mb-1 md:mb-0 pr-4"
                            for="inline-full-name">@lang('eventdetails.description')</label>
-                    <p>{{ $event->description }}</p>
+                    <p>{!!   $event->description !!}</p>
                 </div>
 
                 @if($event->event_url)

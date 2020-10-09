@@ -5,28 +5,27 @@ namespace App\Console\Commands\Importers;
 use App\Helpers\ImporterHelper;
 
 use App\HamburgRSSItem;
-use App\MeetAndCodeRSSItem;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Log;
 
 
-class MeetAndCode extends Command
+class Hamburg extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'import:meetandcode';
+    protected $signature = 'import:hamburg';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Import the data from MeetAndCode RSS Feed';
+    protected $description = 'Import the data from Hamburg API';
 
     /**
      * Create a new command instance.
@@ -47,17 +46,16 @@ class MeetAndCode extends Command
      */
     public function handle()
     {
-        Log::info("Loading Meet and Code RSS Items in Database");
+        Log::info("Loading Hamburg API Items in Database");
 
-        $techicalUser = ImporterHelper::getTechnicalUser("meetandcode-technical");
-        $items = MeetAndCodeRSSItem::whereNull('imported_at')->get();
+        $techicalUser = ImporterHelper::getTechnicalUser("hamburg-technical");
+        $items = HamburgRSSItem::whereNull('imported_at')->get();
 
 
 
         foreach ($items as $item){
             $item->createEvent($techicalUser);
             $item->imported_at = Carbon::now();
-            //TODO: check for updating the event if it already exists
             $item->save();
         }
 
