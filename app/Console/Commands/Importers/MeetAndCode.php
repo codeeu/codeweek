@@ -5,6 +5,7 @@ namespace App\Console\Commands\Importers;
 use App\Helpers\ImporterHelper;
 
 use App\HamburgRSSItem;
+use App\MeetAndCodeRSSItem;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Artisan;
@@ -49,7 +50,7 @@ class MeetAndCode extends Command
         Log::info("Loading Meet and Code RSS Items in Database");
 
         $techicalUser = ImporterHelper::getTechnicalUser("meetandcode-technical");
-        $items = HamburgRSSItem::whereNull('imported_at')->get();
+        $items = MeetAndCodeRSSItem::whereNull('imported_at')->get();
 
 
 
