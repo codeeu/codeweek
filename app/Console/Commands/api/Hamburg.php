@@ -67,8 +67,6 @@ class Hamburg extends Command
 
         foreach ($json as $item) {
 
-            Log::info($item);
-
             $RSSitem = new HamburgRSSItem();
 
             $RSSitem->uid = $item['uid'];
