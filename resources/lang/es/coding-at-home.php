@@ -152,6 +152,59 @@ return [
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "tablero cuadriculado con marcas",
+        "cards" => "veinticuatro tarjetas de «avanzar», ocho de «girar a la izquierda» y ocho de «girar a la derecha»",
+        "larger-cards" => "Para la versión en el suelo se recomienda utilizar tarjetas más grandes",
+        "video" => "El vídeo también explica cómo jugar sin el mazo de cartas",
+        "pieces-of-paper" => "Asimismo, se requieren veinticuatro pedazos de papel para colocarlos en las casillas ya visitadas",
+        "card-alternative" => "Como alternativa al mazo de tarjetas de CodyRoby, se pueden utilizar los iconos disponibles aquí",
+        "small-drawings" => "Un suplemento pueden ser pequeños dibujos para ayudar a contar la historia. Los utilizados en el vídeo pueden encontrarse aquí",
+        "rest-of-cards" => "Para el resto utilizamos las tarjetas de CodyRoby, CodyFeet o CodyColour."
+    ],
+
+
+    'catch-the-robot' => [
+        'title' => "Captura al robot",
+        'text' => "Captura al robot es un juego competitivo al que se puede jugar sobre la mesa o en el suelo. El jugador que capture al robot del equipo contrario llegando a su casilla en el tablero gana. La aleatoriedad de las tarjetas requiere que ambos equipos adapten continuamente sus estrategias.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Si el peón rosa (Roby) se encuentra en la casilla central C3 orientado hacia el norte, y el equipo rosa tiene dos tarjetas de «avanzar», dos de «girar a la izquierda» y una de «girar a la derecha», ¿a qué casillas puede ir?",
+                ]
+
+        ]
+
+    ],
+
+    'the-snake' => [
+        'title' => "La serpiente",
+        'text' => "La serpiente es un tipo de solitario que se juega con las tarjetas de CodyRoby. El objetivo del juego es guiar a la serpiente por todas las casillas del tablero sin que se muerda la cola.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. ¿Hay algún punto de partida que haga imposible visitar todas las casillas sin que la serpiente se muerda la cola?",
+                ]
+
+        ]
+
+    ],
+
+    'storytelling' => [
+        'title' => "Narración de historias",
+        'text' => "¡El tema de hoy es la narración! Utiliza las instrucciones de CodyRoby, las huellas de CodyFeet o los colores de CodyColour para guiar a los peones alrededor del tablero para contar una historia. Dispersa diferentes partes de la historia alrededor del tablero.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. ¿Cuál es la herramienta más versátil para guiar a Roby y contar una historia?",
+                    2 => "P2. ¿Puedes colocar en el tablero las partes de la historia que deseas contar en posiciones que hagan imposible recuperar todas con CodyFeet?",
+                ]
+
+        ]
+
+    ],
+
+
 
     'texts' => [
         1 => 'Coding@Home es una colección de vídeos cortos, material DIY (hazlo tú mismo), rompecabezas, juegos y desafíos de programación para el uso cotidiano tanto en la familia como en la escuela. No se requieren conocimientos previos ni dispositivos electrónicos para realizar las actividades. Estas actividades están ideadas para estimular el pensamiento computacional y cultivar las competencias de alumnos, padres y maestros en el hogar o en la escuela.',

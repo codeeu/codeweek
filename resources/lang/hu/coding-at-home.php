@@ -153,6 +153,59 @@ return [
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "négyzethálós tábla címkékkel",
+        "cards" => "24 „Lépj előre” kártya, 8 „Fordulj balra” kártya és 8 „Fordulj jobbra” utasítást adó kártya",
+        "larger-cards" => "A padlón játszható változathoz nagyobb kártyák ajánlottak",
+        "video" => "A videó azt is bemutatja, hogyan lehet kártya nélkül játszani",
+        "pieces-of-paper" => "Szükség lesz 24 további lapkára, amelyeket a már felkeresett négyzetekre kell helyezni",
+        "card-alternative" => "A CodyRoby kártyapakli helyett az itt elérhető kártyaikonok is használhatóak",
+        "small-drawings" => "A történet elmeséléséhez használhatsz kiegészítő rajzokat is. A videóban használt figurák itt találhatók",
+        "rest-of-cards" => "Ezeken kívül a CodyRoby, a CodyFeet vagy a CodyColor kártyáit használjuk."
+    ],
+
+
+    'catch-the-robot' => [
+        'title' => "Kapd el a robotot!",
+        'text' => "A „Kapd el a robotot!” egy asztalon vagy földön játszható játék, melyben a játékosok egymással versengenek. Az a játékos nyer, aki elkapja az ellenfél robotját oly módon, hogy rálép arra a mezőre, amelyen a robot áll. A játékkártyák véletlenszerűsége miatt mindkét csapatnak folyamatosan változtatnia kell a stratégiáját.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. kérdés: Ha a rózsaszín robot (Roby) a C3 központi négyzeten áll, és észak felé néz, a rózsaszín csapatnak pedig 2 „Lépj előre”, 2 „Fordulj balra” és 1 „Fordulj jobbra” kártyája van, mely négyzetekre léphet Roby?",
+                ]
+
+        ]
+
+    ],
+
+    'the-snake' => [
+        'title' => "A kígyó",
+        'text' => "„A kígyó” egyfajta pasziánsz, amelyet a CodyRoby kártyákkal lehet játszani. A játéknak az a célja, hogy a kígyó végighaladjon a tábla valamennyi mezőjén, anélkül, hogy a farkába harapna.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. kérdés: Vannak olyan kiindulópontok, amelyekről indulva nem lehetséges anélkül végigjárni az összes mezőt, hogy a kígyó a farkába harapna?",
+                ]
+
+        ]
+
+    ],
+
+    'storytelling' => [
+        'title' => "Történetmesélés",
+        'text' => "Mai témánk a történetmesélés! A CodyRoby utasításait, a CodyFeet lábnyomait vagy a CodyColor színeit használva vezesd végig a robotot a táblán, ezáltal elmesélve egy történetet. A történet elemeit helyezd a tábla különböző pontjaira.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. kérdés: Melyik a legsokoldalúbb eszköz, amellyel irányíthatjuk Roby-t a történetmesélés során?",
+                    2 => "2. kérdés: El tudod helyezni a táblán a történeted elemeit úgy, hogy a pozíciójuk lehetetlenné tegye azt, hogy mindegyiket összegyűjtsd a CodyFeet lapokkal?",
+                ]
+
+        ]
+
+    ],
+
+
 
     'texts' => [
         1 => 'A Coding@Home rövid videók, „csináld magad” anyagok, rejtvények és programozási kihívások gyűjteménye családok és iskolák számára, mindennapos használatra. A tevékenységekhez nincs szükség semmilyen előzetes tudásra vagy elektronikus eszközre. A tevékenységek ösztönzik az algoritmikus gondolkodást és fejlesztik a diákok, szülők és tanárok készségeit, otthon és az iskolában.',

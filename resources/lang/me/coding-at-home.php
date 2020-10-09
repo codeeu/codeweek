@@ -153,6 +153,58 @@ return [
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "šahovska tabla sa naljepnicama",
+        "cards" => '24 karte "Idi naprijed", 8 karata "Skreni lijevo" i 8 karata "Skreni desno"',
+        "larger-cards" => "Za podnu verziju se preporučuju veće karte",
+        "video" => "Video takođe objašnjava kako da se igra bez špila karata",
+        "pieces-of-paper" => "Takođe je potrebno da se postave 24 papira na već posjećene kvadrate",
+        "card-alternative" => "Kao alternativu špilu CodyRoby karata možete koristiti ovdje dostupne ikone karata",
+        "small-drawings" => "Dodatak bi mogli biti mali crteži koji će vam pomoći da se ispriča priča. Oni koji se koriste u videu su ovdje",
+        "rest-of-cards" => "Za ostalo koristimo karte CodyRoby, CodyFeet ili CodyColour."
+    ],
+
+
+    'catch-the-robot' => [
+        'title' => "Uhvati robota",
+        'text' => "Uhvati robota je takmičarska igra koja se igra na stolu ili na podu. Pobjeđuje onaj igrač koji uhvati robota protivničkog tima tako da dosegne njegov kvadrat na tabli. Slučajan redoslijed karata za igranje zahtijeva da obe ekipe da kontinuirano prilagođavaju svoje strategije.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'P1. Ako je rozi pijun (Roby) na glavnom kvadratu C3 okrenut prema sjeveru, a rozi tim ima 2 karte "Idi naprijed", 2 karte "Skreni lijevo" i 1 "Skreni desno", na koje kvadrate može ići?',
+                ]
+
+        ]
+
+    ],
+
+    'the-snake' => [
+        'title' => "Zmija",
+        'text' => "Zmija je vrsta pasijansa koji se igra sa CodyRoby kartama. Cilj je da se zmija vodi kroz sve kvadrate na tabli, a da se ne ugrize za rep.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Postoje li početne tačke zbog kojih je nemoguće posjetiti sve kvadrate, a da se ne ugrize zmijin rep?",
+                ]
+
+        ]
+
+    ],
+
+    'storytelling' => [
+        'title' => "Pričanje priča",
+        'text' => "Današnja tema je pričanje priča! Koristite CodyRoby uputstva, otiske stopala CodyFeet ili CodyColour boje, da vodite pijune oko table da ispričaju priču. Raširite različite dijelove priče po tabli.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Koji je alat najsvestraniji za vođenje Robyja da ispriča priču?",
+                    2 => "P2. Možete li da rasporedite dijelove priče koje želite da ispričate na tabli na položaje koji onemogućavaju da se svi preuzmu pomoću CodyFeet-a?",
+                ]
+
+        ]
+
+    ],
+
 
     'texts' => [
         1 => 'Coding@Home je zbirka kratkih video zapisa, materijala za samostalan rad, slagalica, igara i izazova za kodiranje namijenjenih svakodnevnoj upotrebi u porodici i u školi. Za obavljanje ovih aktivnosti vam nije potrebno nikakvo prethodno znanje ili elektronski uređaj. Aktivnosti imaju za cilj podsticanje računarskog mišljenja i unapređenje vještina učenika, roditelja i nastavnika, kod kuće ili u školi.',

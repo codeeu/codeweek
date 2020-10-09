@@ -153,6 +153,59 @@ return [
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "kvadratno mrežo z označenimi polji",
+        "cards" => "24  kart „pojdi naravnost“, 8  kart „obrni se v levo“ in 8  kart „obrni se v desno“",
+        "larger-cards" => "Pri talni različici igre se priporoča uporaba večjih kart",
+        "video" => "V videu je prikazano tudi, kako igrati brez igralnih kart",
+        "pieces-of-paper" => "Potrebujete tudi 24  koščkov papirja, ki jih položite na že obiskana polja",
+        "card-alternative" => "Namesto igralnih kart CodyRoby lahko uporabite ikone kart, ki so na voljo tukaj",
+        "small-drawings" => "Lahko uporabite sličice kot dodatek pri pripovedovanju zgodbe. Te, ki smo jih uporabili v videu, so na voljo tukaj",
+        "rest-of-cards" => "Za ostalo smo uporabili karte CodyRoby, CodyFeet ali CodyColour."
+    ],
+
+
+    'catch-the-robot' => [
+        'title' => "Ujemi robota",
+        'text' => "Ujemi robota je tekmovalna namizna ali talna igra. Zmaga tisti igralec, ki ujame robota nasprotne ekipe tako, da doseže njegovo polje. Zaradi naključne porazdelitve igralnih kart morata obe ekipi ves čas prilagajati svojo strategijo.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "V1: Če je rožnata figura (Roby) na osrednjem polju  C3 obrnjena proti severu, rožnata ekipa pa ima dve  karti „pojdi naravnost“, dve karti „obrni se v levo“ in eno karto „obrni se v desno“, na katera polja se lahko figura premakne?",
+                ]
+
+        ]
+
+    ],
+
+    'the-snake' => [
+        'title' => "Kača",
+        'text' => "Kača je vrsta igre za enega igralca, ki se igra s kartami CodyRoby. Cilj igre je voditi kačo prek vseh polj na igralni plošči, ne da bi se kača pri tem ugriznila v rep.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "V1: Ali obstaja začetno polje, s katerega bi bilo nemogoče obiskati vsa polja, ne da bi se kača pri tem ugriznila v rep?",
+                ]
+
+        ]
+
+    ],
+
+    'storytelling' => [
+        'title' => "Pripovedovanje zgodb",
+        'text' => "Današnja tema je pripovedovanje zgodb! Uporabite navodila CodyRoby, sledi CodyFeet ali barve CodyColour in vodite figure po igralni plošči, da pripovedujete zgodbo. Naključno razvrstite dele zgodbe po igralni plošči.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "V1: Katero orodje je najpriročnejše za vodenje Robyja pri pripovedovanju zgodbe?",
+                    2 => "V2: Ali lahko dele zgodbe razporedite po igralni plošči tako, da ni mogoče vseh pobrati s kartami CodyFeet?",
+                ]
+
+        ]
+
+    ],
+
+
 
     'texts' => [
         1 => 'Coding@Home je zbirka kratkih videov, gradiv za »naredi-si-sam«, ugank, iger in izzivov s področja programiranja za vsakdanjo uporabo doma in v šoli. Za izvajanje aktivnosti ne potrebujete predhodnega znanja ali elektronskih naprav. Spodbujale bodo računalniško razmišljanje in razvijale veščine učencev, staršev in učiteljev tako doma kot v šoli.',

@@ -151,6 +151,58 @@ return [
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "siltidega varustatud ruuduline mängulaud",
+        "cards" => "24 „mine otse“ kaarti, 8 „pööra vasakule“ kaarti ja 8 „pööra paremale“ kaarti",
+        "larger-cards" => "põrandal mängides on parem kasutada suuremaid kaarte",
+        "video" => "Videos selgitatakse ka seda, kuidas mängida ilma kaardipakita",
+        "pieces-of-paper" => "Samuti on vaja 24 väikest paberit, mis asetatakse ruutudesse, kus „uss“ on juba olnud",
+        "card-alternative" => "CodyRoby kaartide asemel võid kasutada suunakaarte, mille leiad siit",
+        "small-drawings" => "Oma loo rääkimisel võid lisaks kasutada väikesi joonistusi. Videos kasutatud joonistusi näed siin",
+        "rest-of-cards" => "Muidu aga kasutame CodyRoby, CodyFeet või CodyColour kaarte."
+    ],
+
+
+    'catch-the-robot' => [
+        'title' => "Püüa robot kinni!",
+        'text' => "„Püüa robot kinni!“ on võistluslik lauamäng, mida saab mängida ka põrandal. Võidab mängija, kes „püüab kinni“ vastasmeeskonna roboti, jõudes ruutu, kus robot asub. Kuna mängukaardid võetakse pakist juhuslikult, peavad mõlemad meeskonnad pidevalt oma strateegiat kohandama.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "K1. Kui roosa mängunupp (Roby) on keskmises ruudus C3 näoga põhja poole ja roosal meeskonnal on 2 „mine otse“ kaarti, 2 „pööra vasakule“ kaarti ja 1 „pööra paremaleׅ“ kaart, siis millisesse ruutu saab ta liikuda?",
+                ]
+
+        ]
+
+    ],
+
+    'the-snake' => [
+        'title' => "Uss",
+        'text' => "„Uss“ on pasjansi-tüüpi mäng, mida mängitakse CodyRoby kaartidega. Mängu eesmärk on juhtida „uss“ läbi mängulaua kõikide ruutude nii, et ta ei hammustaks oma saba.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "K1. Kas on mõni lähtepunkt, kust alustades ei ole võimalik kõiki ruute läbida, ilma et „uss“ hammustaks oma saba?",
+                ]
+
+        ]
+
+    ],
+
+    'storytelling' => [
+        'title' => "Jutuvestmine",
+        'text' => "Tänane teema on jutuvestmine! Kasuta mängulaual nuppude juhtimiseks ja oma loo rääkimiseks CodyRoby mängujuhendit, CodyFeet jalajäljekaarte või CodyColour värvikaarte. Paiguta oma loo erinevad osad mängulauale laiali.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "K1. Milline vahend on Roby juhtimiseks kõige parem, et rääkida oma lugu?",
+                    2 => "K2. Kas saad paigutada oma loo osad mängulauale nii, et CodyFeet kaartidega ei oleks võimalik kõikideni jõuda?",
+                ]
+
+        ]
+
+    ],
+
 
     'texts' => [
         1 => 'Coding@Home on lühikeste videote, isevalmistatavate materjalide, nuputusülesannete, mängude ja põnevate programmeerimisülesannete kogumik igapäevaseks kasutamiseks nii perekonnas kui ka koolis. Nendeks tegevusteks ei vaja te eelnevaid teadmisi ega elektroonilisi seadmeid. Tegevused stimuleerivad arvutuslikku mõtlemist ning arendavad õpilaste, vanemate ja õpetajate oskusi kodus ja koolis.',

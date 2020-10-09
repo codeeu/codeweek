@@ -153,6 +153,59 @@ return [
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "scacchiera con etichette",
+        "cards" => 'carte con le istruzioni di spostamento 24 carte "vai avanti", 8 carte "gira a sinistra" e 8 carte "gira a destra"',
+"larger-cards" => "per la versione da pavimento si raccomanda l'uso di carte più grandi",
+"video" => "Il video spiega inoltre come giocare senza il mazzo di carte",
+"pieces-of-paper" => "Sono necessari anche: 24 pezzi di carta da mettere sulle caselle in cui siete già passati",
+"card-alternative" => "In alternativa al mazzo di carte CodyRoby, si possono utilizzare le carte con le frecce che trovate qui",
+"small-drawings" => "Si possono aggiungere piccoli disegni che facilitino il racconto della storia. Quelli utilizzati nel video sono disponibili qui",
+"rest-of-cards" => "Per concludere, utilizziamo le carte di CodyRoby, CodyFeet o CodyColour."
+],
+
+
+'catch-the-robot' => [
+    'title' => "Cattura il robot",
+    'text' => '"Cattura il robot" è un gioco competitivo da tavolo o da pavimento. Vince il giocatore che cattura il robot della squadra avversaria raggiungendo la sua casella sulla scacchiera. Poiché le carte da gioco vengono estratte in modo casuale, entrambe le squadre devono continuamente adattare le proprie strategie.',
+'questions' => [
+    'content' =>
+        [
+            1 => 'D1. Se la pedina rosa (Roby) si trova sulla casella centrale C3 orientata a nord e la squadra rosa ha 2 carte "vai avanti", 2 carte "gira a sinistra" e 1 carta "gira a destra", in quali caselle può andare la pedina?',
+]
+
+]
+
+],
+
+'the-snake' => [
+    'title' => "Il serpente",
+    'text' => '"Il serpente" è un tipo di solitario giocato con le carte CodyRoby. L\'obiettivo del gioco è guidare il serpente attraverso tutte le caselle della scacchiera senza che si morda la coda."',
+'questions' => [
+    'content' =>
+        [
+            1 => "D1. Ci sono punti di partenza dai quali diventa impossibile passare su tutte le caselle senza mordere la coda del serpente?",
+        ]
+
+]
+
+],
+
+'storytelling' => [
+    'title' => "Raccontare una storia",
+    'text' => "L'argomento di oggi è raccontare una storia! Usate le istruzioni di CodyRoby, le impronte di CodyFeet o i colori di CodyColour per guidare le pedine attraverso la scacchiera e raccontare una storia. Distribuite le diverse parti della storia sulla scacchiera.",
+    'questions' => [
+        'content' =>
+            [
+                1 => "D1. Quale strumento è il più adatto per guidare Roby in modo da raccontare una storia?",
+                2 => "D2. Riuscite a disporre sulla scacchiera le parti della storia che vorreste raccontare in posizioni che rendano impossibile recuperarle tutte con CodyFeet?",
+            ]
+
+    ]
+
+],
+
+
 
 
 

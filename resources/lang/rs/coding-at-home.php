@@ -153,6 +153,59 @@ return [
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "izdeljena tabla sa oznakama",
+        "cards" => "24 karte sa naredbom „Idi pravo“, 8 karata sa naredbom „Okret levo“ i 8 karata sa naredbom „Okret desno“",
+        "larger-cards" => "u verziji igre na podu, preporučuju se velike karte",
+        "video" => "U ovom videu takođe je objašnjeno kako se može igrati bez špila karata",
+        "pieces-of-paper" => "Potrebna su vam i 24 parčeta papira koja se postavljaju na polja kroz koja ste već prošli",
+        "card-alternative" => "Kao zamenu za karte iz seta CodyRoby, možete da koristite oznake za karte koje postoje ovde",
+        "small-drawings" => "Možete da dodate male crteže da biste lakše ispričali priču. Oni koji se pojavljuju u videu su ovde",
+        "rest-of-cards" => "Za sve ostalo koristimo karte za CodyRoby, CodyFeet ili CodyColour."
+    ],
+
+
+    'catch-the-robot' => [
+        'title' => "Uhvati robota",
+        'text' => "Uhvati robota je takmičarska igra koja se može igrati na stolu ili na podu. Pobednik je igrač koji uhvati robota protivničkog tima dolaskom na njegovo polje na tabli. Proizvoljnost karata za igru traži od oba tima da neprestano menjaju svoje strategije.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Ako je crvena figura (Roby) u centralnom polju C3 i gleda na sever, a ružičasti tim ima 2 karte sa naredbom „Idi pravo“, 2 karte „Okret levo“ i 1 kartu „Okret desno“, na koja polja ona može da ode?",
+                ]
+
+        ]
+
+    ],
+
+    'the-snake' => [
+        'title' => "Zmijica",
+        'text' => "Zmijica je vrsta pasijansa koja se igra sa kartama iz seta CodyRoby. Cilj igre je da se zmijica provede kroz sva polja na tabli, ali tako da ne ugrize sopstveni rep.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Postoje li neke početne tačke odakle nije moguće posetiti sva polja, a da se ne ugrize zmijin rep?",
+                ]
+
+        ]
+
+    ],
+
+    'storytelling' => [
+        'title' => "Pričam ti priču",
+        'text' => "Današnja tema je pripovedanje! Iskoristite uputstva za CodyRoby, otiske stopala iz seta CodyFeet ili boje iz seta CodyColour da biste navodili figure na tabli i tako ispričali priču. Razvezite delove priče po čitavoj tabli.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Koja alatka je najsvestranija za navođenje robota Roby tokom pričanja priče?",
+                    2 => "P2. Možete li da rasporedite delove priče koju želite da ispričate na položaje na tabli tako da se do svih njih nikako ne može doći pomoću seta CodyFeet?",
+                ]
+
+        ]
+
+    ],
+
+
 
     'texts' => [
         1 => 'Coding@Home është një koleksion i videove të shkurtra, modeleve që i bëni vetë, gjëegjëzave, lojërave dhe sfidave të kodimit për përdorim të përditshëm në familje, si dhe në shkollë. Ju nuk duhet të keni njohuri të mëparshme ose pajisje elektronike për të kryer aktivitetet. Aktivitetet stimulojnë mendimin llogaritës dhe kultivojnë aftësitë e nxënësve, prindërve dhe mësuesve në shtëpi ose në shkollë.',
