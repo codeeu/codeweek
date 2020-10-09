@@ -153,6 +153,57 @@ return [
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "chequered board with labels",
+        "cards" => "24 ‘Go Forward’ cards, 8 ‘Turn Left’ cards, and 8 ‘Turn Right’ direction cards",
+        "larger-cards" => "Larger cards are recommended for the floor version",
+        "video" => "The video also explains how to play without the deck of cards",
+        "pieces-of-paper" => "24 pieces of paper are also needed to be placed on the squares already visited",
+        "card-alternative" => "As an alternative to the deck of CodyRoby cards, you can use the card icons available here",
+        "small-drawings" => "An addition could be small drawings to help tell the story. Those used in the video are here",
+        "rest-of-cards" => "For the rest we use the cards of CodyRoby, CodyFeet, or CodyColour"
+    ],
+
+    'catch-the-robot' => [
+        'title' => "Catch the robot",
+        'text' => "Catch the robot is a competitive table top or floor game. The player who captures the opposing team's robot by reaching its square on the board wins. The randomness of the playing cards requires both teams to continuously adjust their strategies.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. If the pink pawn (Roby) is on the central square C3 facing North, and the pink team has 2 ‘Go Forward’ cards, 2 ‘Turn Left’ cards, and 1 ‘Turn Right’ card, to which squares can he go?",
+                ]
+
+        ]
+
+    ],
+
+    'the-snake' => [
+        'title' => "The snake",
+        'text' => "The snake is a type of solitaire played with CodyRoby cards. The aim of the game is to guide the snake through all of the squares on the board without biting its tail.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Are there any starting points that make it impossible to visit all the squares without biting the snake's tail?",
+                ]
+
+        ]
+
+    ],
+
+    'storytelling' => [
+        'title' => "Storytelling",
+        'text' => "Today's topic is storytelling! Use the instructions of CodyRoby, the footprints of CodyFeet, or the colours of CodyColour, to guide the pawns around the board to tell a story. Scatter different parts of the story around the board.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Which tool is the most versatile for guiding Roby to tell a story?",
+                    2 => "Q2. Can you arrange the parts of the story that you want to tell on the board in positions that make it impossible to retrieve them all with CodyFeet?",
+                ]
+
+        ]
+
+    ],
+
 
     'texts' => [
         1 => 'Coding@Home is a collection of short videos, do-it-yourself materials, puzzles, games, and
