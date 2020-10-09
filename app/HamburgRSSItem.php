@@ -10,48 +10,6 @@ use Illuminate\Support\Str;
 class HamburgRSSItem extends Model
 {
 
-    public function getCounryIso()
-    {
-
-        switch ($this->country) {
-            case 'North Macedonia':
-                return 'MK';
-            case 'Italia':
-                return 'IT';
-            case 'Bosnia&Herzegovina':
-                return 'BA';
-            default:
-                return Country::where('name', 'like', $this->country)->first()->iso;
-        }
-
-    }
-
-    private function mapOrganisationTypes($organisation_type)
-    {
-        switch ($organisation_type) {
-            case "Non-Profit Organisation":
-                return "non profit";
-            default:
-                return "other";
-        }
-
-
-    }
-
-    private function mapActivityTypes($activity_type)
-    {
-        switch ($activity_type) {
-            case "offline and open":
-                return "open-in-person";
-            case "online and open":
-                return "open-online";
-            default:
-                return "other";
-        }
-
-
-    }
-
     public function createEvent($technicalUser)
     {
 
@@ -59,35 +17,52 @@ class HamburgRSSItem extends Model
             'status' => "APPROVED",
             'title' => htmlspecialchars_decode($this->title),
             'slug' => Str::slug($this->title),
-            'organizer' => $this->school_name,
+            'organizer' => $this->organizer,
             'description' => $this->description,
-            'organizer_type' => $this->mapOrganisationTypes($this->organisation_type),
-            'activity_type' => $this->mapActivityTypes($this->activity_type),
-            'location' => $this->address,
-            'event_url' => $this->link,
-            'user_email' => $this->organiser_email,
+            'organizer_type' => $this->user_type,
+            'activity_type' => $this->activity_type,
+            'location' => $this->location,
+            'event_url' => $this->user_website,
+            'contact_person' => $this->user_publicEmail,
+            'user_email' => $this->user_email,
             'creator_id' => $technicalUser->id,
-            'country_iso' => $this->getCounryIso(),
-            'picture' => $this->image_link,
+            'country_iso' => "DE",
+            'picture' => $this->photo,
             "pub_date" => now(),
             "created" => now(),
             "updated" => now(),
-            "codeweek_for_all_participation_code" => 'cw19-meetcode',
-            "start_date" => $this->start_date,
-            "end_date" => $this->end_date,
-            "longitude" => $this->lon,
-            "latitude" => $this->lat,
-            "geoposition" => $this->lat . "," . $this->lon,
-            "language" => MeetAndCodeHelper::getLanguage($this->link)
+            "codeweek_for_all_participation_code" => 'cw20-hamburg',
+            "start_date" => $this->eventStartDate,
+            "end_date" => $this->eventEndDate,
+            "longitude" => $this->longitude,
+            "latitude" => $this->latitude,
+            "geoposition" => $this->latitude . "," . $this->longitude,
+            "language" => "de"
         ]);
 
         $event->save();
 
         //Link Other as theme and audience
-        $event->audiences()->attach(8);
-        $event->themes()->attach(8);
+        if ($this->audience) {
+            $event->audiences()->attach(explode(",",$this->audience));
+        }
+        if ($this->themes) {
+            $event->themes()->attach(explode(",",$this->themes));
+        }
 
+        if ($this->tags){
+            $tagsArray = [];
 
+            foreach (explode(";", $this->tags) as $item) {
+                $tag = Tag::firstOrCreate([
+                    "name" => trim($item),
+                    "slug" => str_slug(trim($item))
+                ]);
+                array_push($tagsArray, $tag->id);
+            }
+
+            $event->tags()->sync($tagsArray);
+        }
 
     }
 

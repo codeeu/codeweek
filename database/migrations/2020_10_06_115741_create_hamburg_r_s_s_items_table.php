@@ -15,24 +15,26 @@ class CreateHamburgRSSItemsTable extends Migration
     {
         Schema::create('hamburg_r_s_s_items', function (Blueprint $table) {
             $table->id();
+            $table->integer('uid')->unique();
             $table->string('title');
-            $table->string('description');
-            $table->string('link')->unique();
-            $table->dateTime('pubDate');
-            $table->string('organisation_mail');
-            $table->string('school_name');
-            $table->string('organisation_type');
+            $table->longText('description');
+            $table->string('organizer');
+            $table->string('photo')->nullable();
+            $table->dateTime('eventEndDate');
+            $table->dateTime('eventStartDate');
+            $table->float('latitude', 12,6);
+            $table->float('longitude', 12, 6);
+            $table->string('location');
+            $table->string('user_company');
+            $table->string('user_email');
+            $table->string('user_publicEmail');
+            $table->string('user_type');
+            $table->string('user_website');
             $table->string('activity_type');
-            $table->string('country');
-            $table->string('address');
-            $table->string('organiser_website');
-            $table->string('organiser_email');
-            $table->string('image_link');
-            $table->dateTime('start_date');
-            $table->dateTime('end_date');
-            $table->float('lat', 12,6);
-            $table->float('lon', 12, 6);
             $table->dateTime('imported_at')->nullable();
+            $table->string('audience')->nullable();
+            $table->string('themes')->nullable();
+            $table->string('tags')->nullable();
             $table->timestamps();
         });
 
