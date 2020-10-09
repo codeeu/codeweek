@@ -147,12 +147,63 @@ return [
                     1 => 'Q1. Quelle séquence d’instructions guiderait le touriste vers la statue de Raphaël dans le premier exemple de la vidéo?',
                     2 => 'Q2. Quelle séquence d’instructions guiderait le touriste vers les tourelles du palais ducal dans le second exemple de la vidéo?',
                     3 => 'Q3. Pouvez-vous imaginer une façon amusante de faire de l’exercice à chaque fois que l’une des deux équipes choisit une carte à ajouter au programme? Inventez-en une en repensant la course de relais montrée dans la vidéo',
- ]
+                ]
 
         ]
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "un damier avec des étiquettes",
+        "cards" => "24 cartes «Avancer», 8 cartes «Tourner à gauche» et 8 cartes «Tourner à droite»",
+        "larger-cards" => "il est recommandé d’utiliser de plus grandes cartes pour la version au sol",
+        "video" => "La vidéo explique également comment jouer sans le jeu de cartes",
+        "pieces-of-paper" => "Il faut également 24 morceaux de papier à placer sur les cases déjà empruntées",
+        "card-alternative" => "À la place du jeu de cartes CodyRoby, vous pouvez utiliser les icônes des cartes disponibles ici",
+        "small-drawings" => "Il est possible d’ajouter de petits dessins afin d’aider à raconter l’histoire. Les dessins utilisés dans la vidéo sont disponibles ici",
+        "rest-of-cards" => "Pour le reste, nous utilisons les cartes de CodyRoby, CodyFeet ou CodyColour."
+    ],
+
+
+    'catch-the-robot' => [
+        'title' => "Attrape le robot",
+        'text' => "«Attrape le robot» est un jeu de compétition qui peut être joué sur une table ou au sol. Le joueur qui capture le robot de l’équipe adverse en atteignant sa case sur le plateau remporte la partie. Le caractère aléatoire des cartes à jouer oblige les deux équipes à adapter continuellement leurs stratégies.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Sur quelles cases peut aller le pion rose (Roby) s’il se trouve sur la case centrale C3 face au nord, et que l’équipe rose a 2 cartes «Avancer», 2 cartes «Tourner à gauche» et 1 carte «Tourner à droite»?",
+                ]
+
+        ]
+
+    ],
+
+    'the-snake' => [
+        'title' => "Le serpent",
+        'text' => "«Le serpent» est une sorte de solitaire qui se joue avec les cartes CodyRoby. Le but du jeu est de guider le serpent pour qu’il traverse toutes les cases du plateau sans se mordre la queue.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Certains points de départ rendent-ils impossible de passer par toutes les cases sans que le serpent se morde la queue?",
+                ]
+
+        ]
+
+    ],
+
+    'storytelling' => [
+        'title' => "Narration",
+        'text' => "Aujourd’hui, nous allons parler de narration! Utilisez les instructions de CodyRoby, les empreintes de pieds de CodyFeet, ou les couleurs de CodyColour, pour déplacer les pions sur le plateau afin de raconter une histoire. Dispersez les différents éléments de l’histoire sur le plateau.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Quel est l’outil le plus polyvalent permettant à Roby de raconter une histoire?",
+                    2 => "Q2. Pouvez-vous organiser les parties de l’histoire que vous voulez raconter dans certaines positions sur le plateau afin qu’il soit impossible de toutes les récupérer en jouant avec CodyFeet?",
+                ]
+
+        ]
+
+    ],
 
 
     'texts' => [

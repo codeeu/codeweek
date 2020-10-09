@@ -153,6 +153,59 @@ return [
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "fushë me katrorë me etiketa",
+        "cards" => "24 letra “shko përpara”, 8 letra “kthehu majtas”, 8 letra “kthehu djathtas”",
+        "larger-cards" => "rekomandohen letra më të mëdha për versionin e dyshemesë",
+        "video" => "Videoja gjithashtu shpjegon se si të luash pa pasur tufë me letra",
+        "pieces-of-paper" => "Nevojiten gjithashtu 24 copa letre për t’u vendosur mbi katrorët e shkelur më parë",
+        "card-alternative" => "Si alternativë ndaj tufës së letrave të CodyRoby, mund të përdorësh ikonat e letrave të disponueshme këtu",
+        "small-drawings" => "Mund të shtohen vizatime të vogla për të ndihmuar me tregimin e historisë. Ato që përdoren në video janë këtu",
+        "rest-of-cards" => "Për të tjerat përdorim letrat e CodyRoby, CodyFeet ose CodyColour."
+    ],
+
+
+    'catch-the-robot' => [
+        'title' => "Kap robotin",
+        'text' => "“Kap robotin” është një lojë konkurruese tavoline ose dyshemeje. Lojtari që kap robotin e ekipit kundërshtar duke arritur katrorin e tij në fushë, fiton. Rastësia e letrave kërkon që të dyja ekipet të përshtatin vazhdimisht strategjitë e tyre.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Nëse ushtari rozë (Roby) është në katrorin qendror C3 me pamje nga veriu, dhe skuadra rozë ka 2 letra “shko përpara”, 2 letra “kthehu majtas” dhe 1 letër “kthehu djathtas”, në cilët katrorë mund të shkojë ai?",
+                ]
+
+        ]
+
+    ],
+
+    'the-snake' => [
+        'title' => "Gjarpri",
+        'text' => "Gjarpri është një lloj loje solo që luhet me letrat e CodyRoby. Objektivi i lojës është të drejtohet gjarpri nëpër të gjithë katrorët në fushë pa kafshuar bishtin.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. A ka ndonjë pikë nisjeje që e bën të pamundur të shkelen të gjithë katrorët pa kafshuar bishtin e gjarprit?",
+                ]
+
+        ]
+
+    ],
+
+    'storytelling' => [
+        'title' => "Tregimi i historisë",
+        'text' => "Tema e sotme është tregimi i historisë! Përdor udhëzimet e CodyRoby, gjurmët e këmbëve të CodyFeet, ose ngjyrat e CodyColour, për të drejtuar ushtarët nëpër fushë për të treguar një histori. Shpërndajini pjesët e ndryshme të historisë nëpër fushë.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Cili është mjeti më i përdorshëm për të drejtuar Roby në tregimin e historisë?",
+                    2 => "P2. A mund t’i sistemosh pjesët e historisë që dëshiron të tregosh në fushë në pozicione që e bëjnë të pamundur arritjen e të gjithave me CodyFeet?",
+                ]
+
+        ]
+
+    ],
+
+
 
     'texts' => [
         1 => 'Coding@Home është një koleksion i videove të shkurtra, modeleve që i bëni vetë, gjëegjëzave, lojërave dhe sfidave të kodimit për përdorim të përditshëm në familje, si dhe në shkollë. Ju nuk duhet të keni njohuri të mëparshme ose pajisje elektronike për të kryer aktivitetet. Aktivitetet stimulojnë mendimin llogaritës dhe kultivojnë aftësitë e nxënësve, prindërve dhe mësuesve në shtëpi ose në shkollë.',

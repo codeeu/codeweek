@@ -153,6 +153,59 @@ return [
 
     ],
 
+    'material2' => [
+        "chequered-with-labels" => "speelbord met opschriften",
+        "cards" => "24 vooruit-kaarten, 8 linksaf-kaarten en 8 rechtsaf-kaarten",
+        "larger-cards" => "Als het spel op de grond wordt gespeeld, zijn grotere kaarten wel handig",
+        "video" => "In de video wordt uitgelegd hoe je het spel ook zonder kaarten kan spelen",
+        "pieces-of-paper" => "Er zijn ook 24 papieren vierkantjes nodig om al bezochte vakjes te bedekken",
+        "card-alternative" => "In plaats van de CodyRoby-kaarten kan je ook kaarticoontjes gebruiken",
+        "small-drawings" => "Als extraatje kunnen tekeningetjes worden gebruikt die helpen het verhaal te vertellen, zoals die uit de video.",
+        "rest-of-cards" => "Daarnaast gebruiken we de kaarten van CodyRoby, CodyFeet of CodyColour."
+    ],
+
+
+    'catch-the-robot' => [
+        'title' => "Vang de robot",
+        'text' => '"Vang de robot" is een competitief bord of vloerspel tussen twee spelers of teams. De speler die de robot van de tegenspeler vangt door op het bord diens vakje te bereiken, wint. Doordat de spelers niet weten welke kaart ze trekken, moeten ze hun strategie voortdurend aanpassen.',
+'questions' => [
+    'content' =>
+        [
+            1 => "V1. Als de roze robot (Roby) met zijn gezicht naar het noorden op het middelste vakje, C3, staat, en de roze speler 2 vooruit-kaarten, 2 linksaf-kaarten en 1 rechtsaf-kaart heeft, welke vakjes kan hij dan bereiken?",
+        ]
+
+]
+
+],
+
+'the-snake' => [
+    'title' => "De slang",
+    'text' => "De slang is een soort solitaire met CodyRoby-kaarten. Het doel van het spel is met de slang alle vakjes van het bord te bezoeken zonder dat de slang in zijn eigen staart bijt.",
+    'questions' => [
+        'content' =>
+            [
+                1 => "V1. Zijn er beginvakjes van waaruit het onmogelijk is alle vakjes te bezoeken zonder in de staart van de slang te bijten?",
+            ]
+
+    ]
+
+],
+
+'storytelling' => [
+    'title' => "Verhalen vertellen",
+    'text' => "Vandaag gaan we verhalen vertellen! Gebruik de instructies van CodyRoby, de voetafdrukken van CodyFeet en de kleuren van CodyColour om de pionnen over het bord te sturen om een verhaal te vertellen. Verspreid de verschillende delen van het verhaal over het bord.",
+    'questions' => [
+        'content' =>
+            [
+                1 => "V1. Wat helpt Roby het meest om het verhaal te vertellen?",
+                2 => "V2. Kun je de verschillende delen van het verhaal dat je wilt vertellen zo over het bord verdelen dat het onmogelijk is ze allemaal met CodyFeet binnen te halen?",
+            ]
+
+    ]
+
+],
+
+
 
     'texts' => [
         1 => 'De "Coding@Home" zijn korte video\'s met doe-het-zelf-materiaal, puzzels, boeiende spelletjes en programmeeruitdagingen voor dagelijks gebruik in het gezin en op school. Je hebt geen voorkennis van codering nodig en je hebt geen elektronische apparaten nodig om de activiteiten uit te voeren. De activiteiten zullen het digitaal denken stimuleren en de vaardigheden van leerlingen, ouders en leerkrachten thuis of op school bevorderen.',
