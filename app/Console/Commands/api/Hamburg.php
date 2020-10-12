@@ -120,8 +120,5 @@ class Hamburg extends Command
 
     }
 
-    public function createEvents()
-    {
 
-    }
 }

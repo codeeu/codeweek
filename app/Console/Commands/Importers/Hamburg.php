@@ -61,8 +61,6 @@ class Hamburg extends Command
 
         Log::info("Activities created from RSS Feed: " . count($items));
 
-        dd('done importing events');
-
 
     }
 }
