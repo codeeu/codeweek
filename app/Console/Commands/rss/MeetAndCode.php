@@ -4,7 +4,7 @@ namespace App\Console\Commands\rss;
 
 
 use App\Event;
-use App\MeetAndCodeRSSItem;
+use App\HamburgRSSItem;
 use Illuminate\Console\Command;
 use Feeds;
 use Illuminate\Support\Carbon;
@@ -59,7 +59,7 @@ class MeetAndCode extends Command
         $updated = 0;
 
         foreach ($feed->get_items() as $item) {
-            $RSSitem = new MeetAndCodeRSSItem();
+            $RSSitem = new HamburgRSSItem();
 
             $RSSitem->title = $item->get_title();
             $RSSitem->description = $item->get_description();
@@ -94,7 +94,7 @@ class MeetAndCode extends Command
 
                 //Log::info($item->get_link());
 
-                $line = MeetAndCodeRSSItem::where('link', $item->get_link())->first();
+                $line = HamburgRSSItem::where('link', $item->get_link())->first();
 
                 //Log::info($line);
 
