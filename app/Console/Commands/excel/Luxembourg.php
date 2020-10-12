@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands\excel;
 
-use App\Imports\HamburgEventsImport;
+use App\Imports\LuxembourgEventsImport;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Facades\Excel;
