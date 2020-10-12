@@ -3,8 +3,8 @@
 namespace App\Console\Commands\api;
 
 
+use App\BonnRSSItem;
 use App\Event;
-use App\HamburgRSSItem;
 use Illuminate\Console\Command;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Carbon;
@@ -13,21 +13,21 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 
 
-class Hamburg extends Command
+class Bonn extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'api:hamburg {--force}';
+    protected $signature = 'api:bonn';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Import Hamburg Events';
+    protected $description = 'Import Bonn Events';
 
     /**
      * Create a new command instance.
@@ -52,9 +52,8 @@ class Hamburg extends Command
     public function handle()
     {
 
-        $url = "https://hamburg.codeweek.de/?tx_codeweekevents_api%5Baction%5D=listForEu&tx_codeweekevents_api%5Bcontroller%5D=Api&tx_codeweekevents_api%5Bformat%5D=.json&tx_typoscriptrendering%5Bcontext%5D=%7B%22record%22:%22pages_42%22,%22path%22:%22tt_content.list.20.codeweekevents_api%22%7D&cHash=c5952d04181fb05e7d86ef43efcd7f26";
-        dump("Loading Hamburg events");
-        $force = $this->option('force');
+        $url = "https://bonn.codeweek.de/?tx_codeweekevents_api[action]=listForEu&tx_codeweekevents_api[controller]=Api&tx_codeweekevents_api[format]=.json&tx_typoscriptrendering[context]={%22record%22%3A%22pages_1%22%2C%22path%22%3A%22tt_content.list.20.codeweekevents_api%22}&cHash=74bb9d71d62e381ebe95b33c1e197943";
+        dump("Loading Bonn events");
 
         $response = Http::get($url);
 
@@ -67,7 +66,7 @@ class Hamburg extends Command
 
         foreach ($json as $item) {
 
-            $RSSitem = new HamburgRSSItem();
+            $RSSitem = new BonnRSSItem();
 
             $RSSitem->uid = $item['uid'];
             $RSSitem->title = $item['title'];
@@ -107,9 +106,9 @@ class Hamburg extends Command
             }
 
         }
-        Log::info("New items imported from Hamburg API: " . $new);
+        Log::info("New items imported from Bonn API: " . $new);
 
-        Artisan::call("import:hamburg");
+        Artisan::call("import:bonn");
 
 
     }
@@ -119,6 +118,5 @@ class Hamburg extends Command
         return $item->get_item_tags("", $tag)[0]['data'];
 
     }
-
 
 }
