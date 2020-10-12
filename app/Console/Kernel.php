@@ -41,6 +41,9 @@ class Kernel extends ConsoleKernel
 
         $schedule->command('rss:meetandcode')
             ->hourlyAt(5);
+
+        $schedule->command('api:hamburg')
+            ->hourlyAt(10);
     }
 
     /**
