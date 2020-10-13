@@ -8,7 +8,7 @@ L.custom = {
         if (coords){
 
             window.map = L.map(obj, {
-                center: center.split(","),
+                center: coords.split(","),
                 zoom: 10,
                 background: "osmec"
             });
