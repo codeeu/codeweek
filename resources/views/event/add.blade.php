@@ -319,7 +319,7 @@
 
     </script>
 
-    <script src="{{asset('js/map-add-event.js')}}"></script>
+{{--    <script src="{{asset('js/map-add-event.js')}}"></script>--}}
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
