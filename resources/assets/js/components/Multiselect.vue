@@ -44,14 +44,12 @@
             for (var i = 0; i < this.value.length; i++) {
               for (var j = 0; j < this.options.length; j++) {
                 if (this.value[i] == this.options[j].id) {
-                  console.log("equals id=" + this.value[i]);
                   values.push(this.options[j]);
                   break;
                 }
               }
             }
 
-            console.log(values);
           }
         return {
             values: values,
