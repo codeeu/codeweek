@@ -7,7 +7,7 @@ return [
         "moves" => "The movements",
         "dance-example" => "An example of the Code Week Dance",
         "organizer-guide" => "organiser’s guide",
-        "scratch-tutorial" => "#codeWeekDance Scratch Tutorial"
+        "scratch-tutorial" => "#CodeWeekDance Scratch Tutorial"
     ],
     "title" => [
         "EU Code Week",
