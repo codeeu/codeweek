@@ -11,7 +11,7 @@ class AudienceTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+
         DB::table('audiences')->insert([
             'id' => 1,
             'name' => 'Pre-school children'
@@ -43,6 +43,10 @@ class AudienceTableSeeder extends Seeder
         DB::table('audiences')->insert([
             'id' => 8,
             'name' => 'Other (see description)'
+        ]);
+        DB::table('audiences')->insert([
+            'id' => 9,
+            'name' => 'Teachers'
         ]);
     }
 }
