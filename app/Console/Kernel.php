@@ -44,6 +44,9 @@ class Kernel extends ConsoleKernel
 
         $schedule->command('api:germany')
             ->hourlyAt(10);
+
+        $schedule->command('relocate')
+            ->hourlyAt(30);
     }
 
     /**
