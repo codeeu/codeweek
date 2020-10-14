@@ -1,6 +1,7 @@
 <div
         id="testMap"
         class="w-full" style="height: 600px;"
+        wire:ignore
         x-data
         x-init="leaflet()"
 
