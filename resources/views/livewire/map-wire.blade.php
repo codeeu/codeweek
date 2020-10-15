@@ -7,7 +7,7 @@
 
 {{--        <div class="my-6 py-2 px-4 bg-blue-200 h-auto">--}}
 
-        <x-search.fields></x-search.fields>
+        <x-search.fields :years="$years"></x-search.fields>
 
 
 {{--        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" wire:click="$emit('testEvent')">--}}
