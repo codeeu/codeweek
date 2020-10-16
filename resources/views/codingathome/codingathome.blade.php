@@ -122,7 +122,7 @@
 
                 <div class="codeweek-card-grid">
                     <a href="{{route('codingathome-the-snake')}}">
-                        <img src="/img/codingathome/11.png">
+                        <img src="/img/codingathome/12.png">
                         <div class="title"
                              style="text-align:center">@lang('coding-at-home.the-snake.title')</div>
                     </a>
@@ -130,7 +130,7 @@
 
                 <div class="codeweek-card-grid">
                     <a href="{{route('codingathome-storytelling')}}">
-                        <img src="/img/codingathome/12.png">
+                        <img src="/img/codingathome/11.png">
                         <div class="title"
                              style="text-align:center">@lang('coding-at-home.storytelling.title')</div>
                     </a>
