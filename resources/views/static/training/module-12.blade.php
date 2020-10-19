@@ -11,14 +11,21 @@
             <section class="codeweek-content-wrapper-inside">
 
                 <h1>@lang('training.lessons.12.title')</h1>
-                <span>@lang('training.lessons.12.author')</span>
+                <span style="font-weight: bold">@lang('training.lessons.12.author')</span>
 
                 <p>@lang('training.lessons.12.text.1')</p>
                 <p>@lang('training.lessons.12.text.2')</p>
+                <p>@lang('training.lessons.12.text.3')</p>
+                <p>@lang('training.lessons.12.text.4')</p>
+                <ul style="list-style-type: circle;margin-left:40px; margin-top:-4px; font-weight: bold">
+                    <li>@lang('training.lessons.12.text.5')</li>
+                    <li>@lang('training.lessons.12.text.6')</li>
+                    <li>@lang('training.lessons.12.text.7')</li>
+                </ul>
 
             </section>
 
-{{--            @include('static.youtube', ['video_id' => '6tTD4CJqzAs'])--}}
+            @include('static.youtube', ['video_id' => 'onjRnnAdDpA'])
 
             <section class="codeweek-content-wrapper-inside">
 
@@ -34,7 +41,7 @@
                     @lang('training.choose_lessons')
                 </p>
 
-                <ul>
+                <ul style="list-style-type: circle;margin-left:40px; margin-top:-4px;">
                     <li>
                         <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-012-ACTIVITY-01-{{strtoupper(App::getLocale())}}.DOCX">
                             @lang('training.lessons.12.activities.2')
