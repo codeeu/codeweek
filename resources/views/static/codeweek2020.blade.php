@@ -167,39 +167,39 @@
 
             </div>
 
-{{--            <div class="codeweek-about-blue-box" style="line-height: 22px;">--}}
-{{--                <h2>@lang('cw2020.treasure-hunt.title')</h2>--}}
-{{--                <p>--}}
-{{--                    @lang('cw2020.treasure-hunt.subtitle.0').--}}
-{{--                    <br/>--}}
-{{--                    <br/>--}}
-{{--                    <a href="{{route('code-hunting-game')}}">@lang('cw2020.treasure-hunt.subtitle.1')</a> @lang('cw2020.treasure-hunt.subtitle.2').--}}
-{{--                </p>--}}
-
-{{--                <h4>@lang('cw2020.treasure-hunt.section.title')</h4>--}}
-{{--                <ol style="margin-left:10px; margin-top:0px;">--}}
-{{--                    <li>@lang('cw2020.treasure-hunt.section.content.0') <a href="https://desktop.telegram.org/">@lang('cw2020.treasure-hunt.section.content.1')</a> (Windows, macOS @lang('cw2020.kick-off.content.6') Linux), <a href="https://apps.apple.com/app/telegram-messenger/id686449807">iOS</a> @lang('cw2020.kick-off.content.6') <a href="https://play.google.com/store/apps/details?id=org.telegram.messenger">Android</a>--}}
-{{--                    </li>--}}
-{{--                    <li>@lang('cw2020.treasure-hunt.section.content.2').--}}
-{{--                    </li>--}}
-{{--                    <li>@lang('cw2020.treasure-hunt.section.content.3'), <a--}}
-{{--                                href="{{route('code-hunting-game')}}">@lang('cw2020.treasure-hunt.section.content.4')</a> @lang('cw2020.treasure-hunt.section.content.5').--}}
-{{--                    </li>--}}
-{{--                    <li>@lang('cw2020.treasure-hunt.section.content.6').--}}
-{{--                    </li>--}}
-{{--                    <li>@lang('cw2020.treasure-hunt.section.content.7')!--}}
-{{--                    </li>--}}
-{{--                </ol>--}}
-
-{{--                <div>--}}
-{{--                    @lang('cw2020.treasure-hunt.section.content.8') <a--}}
-{{--                            href="https://blog.codeweek.eu">@lang('cw2020.treasure-hunt.section.content.9')</a>.--}}
-{{--                </div>--}}
-
-{{--            </div>--}}
-
-{{--            <div class="codeweek-about-white-box" style="line-height: 22px;">--}}
             <div class="codeweek-about-blue-box" style="line-height: 22px;">
+                <h2>@lang('cw2020.treasure-hunt.title')</h2>
+                <p>
+                    @lang('cw2020.treasure-hunt.subtitle.0').
+                    <br/>
+                    <br/>
+                    <a href="{{route('code-hunting-game')}}">@lang('cw2020.treasure-hunt.subtitle.1')</a> @lang('cw2020.treasure-hunt.subtitle.2').
+                </p>
+
+                <h4>@lang('cw2020.treasure-hunt.section.title')</h4>
+                <ol style="margin-left:10px; margin-top:0px;">
+                    <li>@lang('cw2020.treasure-hunt.section.content.0') <a href="https://desktop.telegram.org/">@lang('cw2020.treasure-hunt.section.content.1')</a> (Windows, macOS @lang('cw2020.kick-off.content.6') Linux), <a href="https://apps.apple.com/app/telegram-messenger/id686449807">iOS</a> @lang('cw2020.kick-off.content.6') <a href="https://play.google.com/store/apps/details?id=org.telegram.messenger">Android</a>
+                    </li>
+                    <li>@lang('cw2020.treasure-hunt.section.content.2').
+                    </li>
+                    <li>@lang('cw2020.treasure-hunt.section.content.3'), <a
+                                href="{{route('code-hunting-game')}}">@lang('cw2020.treasure-hunt.section.content.4')</a> @lang('cw2020.treasure-hunt.section.content.5').
+                    </li>
+                    <li>@lang('cw2020.treasure-hunt.section.content.6').
+                    </li>
+                    <li>@lang('cw2020.treasure-hunt.section.content.7')!
+                    </li>
+                </ol>
+
+                <div>
+                    @lang('cw2020.treasure-hunt.section.content.8') <a
+                            href="https://blog.codeweek.eu">@lang('cw2020.treasure-hunt.section.content.9')</a>.
+                </div>
+
+            </div>
+
+            <div class="codeweek-about-white-box" style="line-height: 22px;">
+
                 <h2>@lang('cw2020.kick-off.title')</h2>
                 <div style="margin-top:10px">
                     @lang('cw2020.kick-off.content.0').<br/><br/>
@@ -227,7 +227,7 @@
                 </div>
             </div>
 
-            <div class="codeweek-about-white-box" style="line-height: 22px;">
+            <div class="codeweek-about-blue-box" style="line-height: 22px;">
                 <h2>@lang('cw2020.get-involved.title')</h2>
                 <div>
                     @lang('cw2020.get-involved.subtitle').
