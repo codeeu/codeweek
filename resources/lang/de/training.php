@@ -151,8 +151,8 @@ Beim Schreiben von Codes geht man früher oder später ganz automatisch vom visu
 Mit Python können Ihre Schülerinnen und Schüler u. a. Ratespiele zu historischen Ereignissen erstellen, mathematische Probleme lösen und Physik-Simulationen erstellen, Spiele entwickeln, Websites erstellen, Datenanalysen für wissenschaftliche Projekte durchführen. Python verfügt über eine große und umfassende Standardbibliothek, eine große Gemeinschaft sowie zahlreiche online verfügbare Tutorials und Projekte, die zum Unterrichten, Lernen und Üben verwendet werden können. Durch das Programmieren in Python, das Analysieren von Programmen und die Behebung von Fehlern entwickeln die Schülerinnen und Schüler ihre Kreativität und lernen, wie man seine Arbeit mit Konstanz, Durchhaltevermögen und Geduld erledigt. Sie lernen analytisches Denken und erwerben Problemlösungsfähigkeiten, da sie komplexe Probleme in kleinere Teile zerlegen müssen. Diese Kompetenzen werden ihnen auch in allen anderen Bereichen ihres Lebens beim Umgang mit Problemen nützlich sein.
                 </p>',
             'activities'=>[
-                '1'=>'„Mein erstes Quiz“, für die Grundschule',
-                '2'=>'„Galgenmännchen“, für die Unterstufe einer weiterführenden Schule',
+                '1'=>'"Mein erstes Quiz", für die Grundschule',
+                '2'=>'"Galgenmännchen", für die Unterstufe einer weiterführenden Schule',
                 '3'=>'Flaggenraten, für die Oberstufe einer weiterführenden Schule',
             ],
             'links'=>[
@@ -202,7 +202,40 @@ Mit Python können Ihre Schülerinnen und Schüler u. a. Ratespiele zu historisc
                 '2'=>'Eine sehr schlaue Maus',
                 '3'=>'Ein Star stellt Sterne her',
             ]
-        ]
+        ],
+        "12" => [
+            "title" => "Programmieren für die UN-Nachhaltigkeitsziele",
+    "author" => "von Francisco Javier Masero, Cristina Nicolaita und Erviola Konomi",
+    "text" => [
+    "1" => "Traditionelle Bildungsstrukturen bieten den Schülern nur wenige Möglichkeiten, tatsächlich bestehende Probleme wie den globalen Klimawandel, Geschlechtergleichheit, Hunger, Armut oder Gesundheit und Wohlergehen zu verstehen und diese zu lösen.",
+        "2" => "Die Nachhaltigkeitsziele (Englisch: Sustainable Development Goals, kurz SDGs) sind das Herzstück der Agenda 2030 für nachhaltige Entwicklung, die alle Mitgliedstaaten der Vereinten Nationen (Englisch: United Nations, kurz UN) verabschiedet haben. Die Agenda ist ein Fahrplan für Frieden und Wohlstand auf der ganzen Welt und befördert die globale Entwicklung. Lehrer können die SDGs nutzen, um das kritische Denken ihrer Schüler zu unterstützen, aber auch, um ihnen dabei zu helfen, ihre Identität und ihren Lebenssinn zu finden. Grundlegende Elemente des Programmierens und des rechnergestützten Denkens mit den Nachhaltigkeitszielen zu kombinieren, wird das Selbstbewusstsein Ihrer Schüler erheblich verbessern und Sie werden ihnen dabei helfen, Kreativität, einen unternehmerischen Geist sowie problemlösende und kommunikative Fähigkeiten zu entwickeln.",
+        "3" => "Bei den unten aufgeführten Aktivitäten werden die Schüler mit Scratch programmieren, nach ASCII kodieren und ganz ohne Computer arbeiten, und zwar zu Themen von aktueller globaler und sozialer Relevanz. Lehrer werden das Bewusstsein zu den UN-Nachhaltigkeitszielen schärfen und ihren Schülern dabei helfen, Empathie, aktive Bürgerschaft sowie prosoziale Fähigkeiten zu entwickeln – auf eine lustige und einnehmende Art und Weise.",
+        "4" => "Die Unterrichtspläne konzentrieren sich auf je eins der SDGs:",
+        "5" => "SDG 3: Ein gesundes Leben für alle Menschen jeden Alters gewährleisten und ihr Wohlergehen fördern",
+        "6" => "SDG 5: Geschlechtergleichstellung erreichen und alle Frauen und Mädchen zur Selbstbestimmung befähigen",
+        "7" => "SDG 13: Umgehend Maßnahmen zur Bekämpfung des Klimawandels und seiner Auswirkungen ergreifen"
+    ],
+    "activities" => [
+    "1" => "Karateka-Projekt: Karate durch Programmieren kennenlernen – für die Grundschule, Sekundarstufe I und Sekundarstufe II",
+        "2" => "UN-Nachhaltigkeitsziele und Programmieren für den Klimawandel – für die Grundschule",
+        "3" => "Programmieren für Geschlechtergleichheit – für die Sekundarstufe II"
+    ]
+],
+
+    "13" => [
+    "title" => "Künstliche Intelligenz im Klassenzimmer: eine Einführung",
+    "author" => "von Artur Coelho und Marjana Prifti Skenduli",
+    "text" => [
+        "1" => "In unserem Alltag hat die Künstliche Intelligenz (KI) schon in viele Bereiche Einzug gehalten: Sie korrigiert automatisch die Nachrichten, die Sie auf Ihrem Smartphone verfassen, wählt die Musik aus, die Sie in Ihrer Lieblings-Musik-App hören und erinnert sich an Ihre Passwörter, wenn Sie diese vergessen haben. KI ist eine Kombination aus Maschinellem Lernen, Robotik und Algorithmen und wird in sämtlichen Bereichen angewendet: von der Informatik bis hin zur Fertigung, von der Medizin bis hin zur Mode. Somit ist KI schon jetzt nicht mehr aus unserem Leben und unseren Gesellschaften wegzudenken. Außerdem spielt sie eine entscheidende Rolle in der wissenschaftlichen Entwicklung. Wie bei jedem anderen wichtigen Phänomen unserer Zeit profitieren die Schüler davon, mehr darüber zu erfahren. Doch wie kann man ein so komplexes Thema wie KI vermitteln?",
+        "2" => "Dieses Lernhäppchen hilft Ihnen dabei, Ihren Schülern zu erklären, was KI ist und welche Rolle sie in ihrem Leben spielt. Die Aktivitäten wurden für Laien entworfen, damit diese die Inhalte leicht verstehen sowie die komplexen Begriffe wirkungsvoll zu verständlichen Ideen herunterbrechen können. Mit diesen Unterrichtsplänen können Sie Ihren Schülern dabei helfen, die Anwendungsmöglichkeiten von KI sowie einige der zugrunde liegenden Mechanismen zu begreifen. Dabei sind die Aktivitäten so gestaltet, dass das analytische und kritische Denken weiterentwickelt wird; beispielsweise entwerfen die Schüler in der von Marjana Prifti Skenduli entwickelten Aktivität eine Klassifikationspipeline. Darüber hinaus helfen die Aktivitäten den Schülern dabei, die unterschiedlichen Anwendungsmöglichkeiten von KI zu verstehen; bei der Aktivität von Artur Coelho lernen sie die Verbindung zwischen KI und Kunst kennen und wie KI für die Verbesserung des visuelle Ausdrucks genutzt werden kann. Die Schüler werden in diesen Aktivitäten aber auch über die Gefahren der KI sowie deren potenziellen Auswirkungen reflektieren."
+    ],
+    "activities" => [
+        "1" => "Menschliche und KI-Künstler, für die Grundschule",
+        "2" => "Maschinen das Klassifizieren beibringen: Einführung in das Überwachte Maschinelle Lernen, für die Sekundarstufe I ",
+        "3" => "Maschinen das Klassifizieren beibringen: Einführung in das Überwachte Maschinelle Lernen, für die Sekundarstufe II ",
+    ]
+],
+
     ],
     'download_video_script' => 'Das Video-Script herunterladen',
     'ready_to_share' => 'Möchten Sie Ihre Erfahrungen mit Ihren Schülerinnen und Schülern teilen?',
