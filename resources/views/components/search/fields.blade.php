@@ -9,7 +9,7 @@
     <div class="flex justify-start px-6 py-6">
 
 
-        <input wire:model.debounce.500ms="search"
+        <input wire:model.debounce.300ms="search"
                id="search"
                type="search"
                placeholder="{{__('search.search_placeholder')}}"
