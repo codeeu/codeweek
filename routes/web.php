@@ -202,7 +202,7 @@ Route::get('/profile', function () {
     return view('profile', $data);
 })->name('profile')->middleware('auth');
 
-Route::get('/activities', 'SearchActivitiesController@index')->name('search_activities');
+Route::get('/map/new', 'SearchActivitiesController@index')->name('events_map');
 
 Auth::routes();
 
