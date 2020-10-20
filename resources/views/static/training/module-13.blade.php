@@ -23,7 +23,7 @@
             <section class="codeweek-content-wrapper-inside">
 
                 <p>
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-013-VIDEO-SCRIPT-{{strtoupper(App::getLocale())}}.DOCX">
+                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-013-VIDEO-SCRIPT-{{strtoupper(App::getLocale())}}.docx">
                         @lang('training.download_video_script')
                     </a>
                 </p>
@@ -36,17 +36,17 @@
 
                 <ul style="list-style-type: circle;margin-left:40px; margin-top:-4px;">
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-013-ACTIVITY-01-{{strtoupper(App::getLocale())}}.DOCX">
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-013-ACTIVITY-01-{{strtoupper(App::getLocale())}}.docx">
                             @lang('training.lessons.13.activities.1')
                         </a>
                     </li>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-013-ACTIVITY-02-{{strtoupper(App::getLocale())}}.DOCX">
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-013-ACTIVITY-02-{{strtoupper(App::getLocale())}}.docx">
                             @lang('training.lessons.13.activities.2')
                         </a>
                     </li>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-013-ACTIVITY-03-{{strtoupper(App::getLocale())}}.DOCX">
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-013-ACTIVITY-03-{{strtoupper(App::getLocale())}}.docx">
                             @lang('training.lessons.13.activities.3')
                         </a>
                     </li>
