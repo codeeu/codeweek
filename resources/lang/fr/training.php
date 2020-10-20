@@ -6,7 +6,7 @@ return [
     'title' => 'Matériel de formation et cours en ligne gratuits',
     'text' => '<p>Vous trouverez ici des documents et des ressources de formation gratuits qui vous aideront à démarrer et à planifier votre prochaine leçon innovante.</p>
 <h2 class="subtitle">1. Notions</h2>
-                    <p>Aucune expérience préalable en matière de programmation n’est requise, et chaque module ne prend environ que 15 minutes. Les modules vous présentent les concepts clés liés aux activités de codage et de raisonnement informatique. De plus, les modules vous donnent également des conseils pratiques sur la façon d’intégrer ces concepts dans votre classe.</p>',
+                    <p>Aucune expérience préalable en matière de programmation n’est requise, et chaque module ne prend environ que 15minutes. Les modules vous présentent les concepts clés liés aux activités de codage et de raisonnement informatique. De plus, les modules vous donnent également des conseils pratiques sur la façon d’intégrer ces concepts dans votre classe.</p>',
     'text_2' => '<p>Maintenant que vous avez terminé un ou plusieurs modules d’apprentissage de la Semaine du code, nous espérons que vous vous sentirez suffisamment à l’aise pour donner une touche de créativité numérique à votre classe et épingler votre activité sur la <a href="/events">carte Code Week</a>!</p>
 
                     <p>Vous pouvez facilement organiser un cours en classe, une journée portes ouvertes ou un événement dans votre établissement. Choisissez une date et inscrivez votre activité sur la <a href="/events">carte Code Week</a>. Chaque organisateur d’activité sera récompensé pour ses efforts par un certificat de participation.</p>
@@ -60,7 +60,7 @@ return [
         '4' => [
             'title' => 'Créer des jeux éducatifs avec Scratch',
             'author' => 'Par Jesús Moreno León',
-            'text' => '<p>La pensée critique, la persévérance, la résolution de problèmes, le raisonnement informatique et la créativité ne sont que quelques-unes des compétences clés dont vos élèves ont besoin pour réussir au XXIe siècle, et le codage peut les aider à les acquérir de manière ludique et motivante.</p>
+            'text' => '<p>La pensée critique, la persévérance, la résolution de problèmes, le raisonnement informatique et la créativité ne sont que quelques-unes des compétences clés dont vos élèves ont besoin pour réussir au XXIesiècle, et le codage peut les aider à les acquérir de manière ludique et motivante.</p>
 
                     <p>Si les notions algorithmiques du contrôle de flux à l’aide de séquences d’instructions et de boucles, de la représentation de données à l’aide de variables et de listes ou de la synchronisation de processus vous semblent compliquées, vous vous rendrez compte, grâce à cette vidéo, que ces concepts sont plus faciles à maîtriser que vous ne le pensiez.</p>
 
@@ -76,7 +76,7 @@ return [
         '5' => [
             'title' => 'La robotique et le bricolage en classe',
             'author' => 'Par Tullia Urschitz',
-            'text' => '<p>L’intégration dans les programmes scolaires du codage, du bricolage, de la robotique et de la microélectronique comme outils d’enseignement et d’apprentissage est essentielle à l’enseignement du XXIe siècle.</p>
+            'text' => '<p>L’intégration dans les programmes scolaires du codage, du bricolage, de la robotique et de la microélectronique comme outils d’enseignement et d’apprentissage est essentielle à l’enseignement du XXIesiècle.</p>
 
                     <p>Le recours au bricolage et à la robotique dans les écoles présente de nombreux avantages pour les élèves, car ces activités leur permettent de développer des compétences clés telles que la résolution de problèmes, le travail en équipe et la collaboration. Ces activités stimulent également la créativité et la confiance en soi des étudiants et peuvent aider les élèves à faire preuve de persévérance et de détermination face aux défis. La robotique est également un domaine qui favorise l’inclusion, car elle est facilement accessible à un large éventail d’élèves (filles et garçons) aux talents et aux compétences variés, et s’avère bénéfique pour les élèves atteints de troubles du spectre autistique.</p>
 
@@ -202,7 +202,45 @@ Dans cette vidéo, l’équipe de la Semaine du code vous présentera quelques a
                 '2'=>'Une souris très intelligente ',
                 '3'=>'Fabriquer des étoiles',
             ]
-        ]
+        ],
+
+
+        "12" => [
+            "title" => "Le codage pour les Objectifs de développement durable",
+    "author" => " par Francisco Javier Masero, Cristina Nicolaita et Erviola Konomi ",
+    "text" => [
+    "1" => "L'enseignement traditionnel offre aux élèves peu de possibilités de comprendre et de résoudre les problèmes du monde réel tels que le changement climatique mondial, l'égalité des sexes, la faim, la pauvreté ou encore la bonne santé et le bien-être.",
+        "2" => "Les Objectifs de développement durable (ODD) figurent au cœur de l'Agenda 2030 pour le Développement durable, adopté par tous les États Membres des Nations Unies et considéré comme une feuille de route pour instaurer la paix et la prospérité sur la planète, en encourageant le développement mondial. Les enseignants peuvent recourir aux ODD en classe comme un outil permettant aux élèves de développer leur esprit critique, mais aussi les aider à trouver leur identité et leur but. La combinaison des éléments de base du codage et de la pensée informatique avec les SDG renforcera la confiance de vos élèves, et vous les aiderez à développer leur créativité, leur esprit d'entreprise, leur capacité à résoudre des problèmes ou à communiquer ",
+        "3" => "Dans les activités suivantes, les élèves appliqueront les principes du Scratch, du codage ASCII et du codage débranché à des sujets d'actualité mondiale et sociale. Les enseignants sensibiliseront les élèves aux objectifs du développement durable tout en les aidant à renforcer leur empathie, leur citoyenneté active et leurs compétences prosociales de manière ludique et stimulante",
+        "4" => "Ces plans de cours sont tous axés sur un des ODD :",
+        "5" => "Objectif de développement durable 3 : Permettre à tous de vivre en bonne santé et promouvoir le bien-être de tous à tout âge ",
+        "6" => "Objectif de développement durable 5 : Parvenir à l’égalité des sexes et autonomiser toutes les femmes et les filles",
+        "7" => "Objectif de développement durable 13 : Prendre d’urgence des mesures pour lutter contre les changements climatiques et leurs répercussions ",
+    ],
+    "activities" => [
+        "1" => " Projet Karatéka : Apprendre le karaté par la programmation, à l'école primaire, au lycée et au collège ",
+        "2" => " Les Objectifs de développement durable et codage pour le changement climatique, pour l'école primaire ",
+        "3" => " Le codage pour l'égalité des sexes, pour l'école secondaire supérieure ",
+    ]
+]
+
+,
+
+"13" => [
+    "title" => "Introduction à l’intelligence artificielle en classe",
+    "author" => " par Artur Coelho et Marjana Prifti Skenduli ",
+    "text" => [
+        "1" => " L’intelligence artificielle (IA) intervient dans de nombreux domaines de la vie quotidienne : elle corrige automatiquement le texte que vous tapez sur votre téléphone, choisit la musique que joue votre application musicale préférée et se souvient de vos mots de passe lorsque vous les avez oubliés. L’IA désigne une combinaison d’apprentissage machine, de robotique et d’algorithmes, avec des applications dans tous les domaines : de l’informatique à la fabrication, et de la médecine à la mode. Elle occupe donc une place indéniable dans nos vies et dans nos sociétés et joue un rôle clé dans le développement de la science. Et comme tout autre phénomène important dans nos vies, les étudiants tireront profit de son apprentissage. Mais comment enseigner une matière aussi complexe que l’IA ? ",
+        "2" => "Cette formation vous aidera à expliquer aux élèves ce qu’est l’IA et quel rôle elle joue dans leur quotidien. Ces activités sont conçues pour que des néophytes comprennent facilement le contenu et soient capables de décomposer efficacement des termes complexes en idées facilement compréhensibles. Grâce à ces plans de formation, vous aiderez les élèves à assimiler l’utilisation de l’IA dans différents domaines, ainsi que certains des mécanismes qui la sous-tendent. Ces cours sont conçus pour que les étudiants développent leurs capacités d’analyse et de réflexion critique : par exemple, dans l’activité de Marjana, les élèves développent un pipeline de classification. Les élèves pourront également comprendre les diverses applications de l’IA : dans l’activité d’Artur, ils verront le lien entre l’IA et l’art, et comment l’IA peut être utilisée au service de l’expression visuelle. Par ailleurs, les élèves réfléchiront également aux dangers de l’IA et à leur impact."
+    ],
+    "activities" => [
+        "1" => "L’interaction humain-AI- dans l’Art, pour l’école primaire",
+        "2" => " Des machines pour apprendre à classer : Introduction à l’apprentissage machine supervisé, pour l’école secondaire de cycle inférieur ",
+        "3" => "Des machines pour apprendre à classer : Introduction à l’apprentissage machine supervisé, pour l’école secondaire de cycle supérieur",
+    ]
+],
+
+
     ],
     'download_video_script' => 'Télécharger le script vidéo',
     'ready_to_share' => 'Prêt à partager vos connaissances avec vos élèves?',

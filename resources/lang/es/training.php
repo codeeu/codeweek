@@ -206,7 +206,43 @@ Con Python, los alumnos pueden crear cuestionarios sobre hechos históricos, res
                 '2'=>'Un ratón muy inteligente',
                 '3'=>'Una estrella que hace estrellas',
             ]
-        ]
+        ],
+
+        "12" => [
+            "title" => "Programación para los Objetivos de Desarrollo Sostenible",
+            "author" => "por Francisco Javier Masero, Cristina Nicolaita y Erviola Konomi",
+            "text" => [
+                "1" => "La educación tradicional ofrece a los alumnos pocas oportunidades para entender y resolver los problemas del mundo real, como el cambio climático, la igualdad entre los géneros, el hambre, la pobreza o la buena salud y el bienestar.",
+                "2" => "Los Objetivos de Desarrollo Sostenible (ODS) son el centro de la Agenda 2030 sobre el Desarrollo Sostenible, adoptada por todos los Estados miembros de las Naciones Unidas como hoja de ruta para lograr la paz y la prosperidad en el planeta, y fomentando el desarrollo global. Los profesores pueden utilizar los ODS en el aula como una herramienta para que los alumnos desarrollen su pensamiento crítico, pero también para ayudarles a encontrar su identidad y propósito. La combinación de los elementos básicos de codificación y pensamiento computacional con los ODS servirá para potenciar la confianza de los alumnos y les ayudará a desarrollar su creatividad, su espíritu empresarial y sus habilidades a la hora de resolver problemas o de comunicarse.",
+                "3" => "En las actividades siguientes, los alumnos aplicarán los principios del Scratch, la codificación ASCII y codificación analógica a temas de actual relevancia mundial y social. Esto permite a los profesores concienciar a sus alumnos acerca de los Objetivos de Desarrollo Sostenible y ayudarles a desarrollar la empatía, el sentido de ciudadanía activa y las habilidades prosociales de una forma divertida y atractiva.",
+                "4" => "Cada actividad se centra en uno de los ODS:",
+                "5" => "Objetivo de Desarrollo Sostenible 3: Garantizar una vida sana y promover el bienestar para todos en todas las edades",
+                "6" => "Objetivo de Desarrollo Sostenible 5: Lograr la igualdad entre los géneros y empoderar a todas las mujeres y las niñas",
+                "7" => "Objetivo de Desarrollo Sostenible 13: Adoptar medidas urgentes para combatir el cambio climático y sus efectos",
+            ],
+            "activities" => [
+                "1" => "Proyecto Karateka: Conocer el karate a través de la programación para centros de enseñanza primaria y primer y segundo ciclo de secundaria",
+                "2" => "Objetivos de Desarrollo Sostenible y programación para el cambio climático para centros de enseñanza primaria",
+                "3" => "Programación para la igualdad de género para centros de enseñanza secundaria",
+            ]
+        ],
+
+        "13" => [
+            "title" => "Introducción a la inteligencia artificial en el aula",
+            "author" => "por Artur Coelho y Marjana Prifti Skenduli",
+            "text" => [
+                "1" => "La inteligencia artificial (IA) ya se aplica en muchas áreas de tu vida diaria: autocorrige el texto que escribes en tu teléfono, elige la música que reproduce tu aplicación musical favorita y recuerda tus contraseñas cuando las has olvidado. La IA consiste en una combinación de aprendizaje automático, robótica y algoritmos con aplicaciones en todos los ámbitos: desde la informática hasta la fabricación, y desde la medicina hasta la moda. Por lo tanto, tiene un lugar innegable en nuestra vida y en nuestra sociedad y juega un papel clave en el desarrollo de la ciencia. Y como cualquier otro fenómeno importante en nuestras vidas, los alumnos también se beneficiarán si aprenden sobre ella. Pero, ¿cómo enseñar sobre una cosa tan compleja como la IA?",
+                "2" => "Este minicurso te ayudará a explicar a tus alumnos qué es la IA y qué papel juega en su vida. Cuenta con actividades diseñadas para que quienes no son expertos entiendan fácilmente los contenidos y puedan desglosar eficazmente términos complejos en ideas fácilmente comprensibles. Con estas lecciones podrás ayudar a los alumnos a aprender las aplicaciones de la IA y algunos de los mecanismos que hay detrás de ella. Estas actividades están diseñadas para que los alumnos desarrollen sus habilidades analíticas y el pensamiento crítico; así, por ejemplo, en la actividad de Marjana aprenderán a desarrollan una arquitectura de clasificación y también les ayudarán a comprender las variadas aplicaciones de la IA: en la actividad de Artur aprenderán el vínculo que hay entre la IA y el arte, y cómo la IA puede utilizarse para mejorar la expresión visual. Asimismo, harán que los alumnos reflexionen sobre los peligros de la IA y su impacto."
+            ],
+            "activities" => [
+                "1" => "Arte humano-IA para centros de educación primaria",
+                "2" => "Máquinas para enseñar a clasificar: Introducción al aprendizaje supervisado por máquinas para centros de educación secundaria (primer ciclo)",
+                "3" => "Máquinas para enseñar a clasificar: Introducción al aprendizaje supervisado por máquinas para centros de educación secundaria (segundo ciclo)",
+            ]
+        ],
+
+
+
     ],
     'download_video_script' => 'Descargar el guion del vídeo',
     'ready_to_share' => '¿Estás preparado/a para compartir con tus alumnos lo que has aprendido?',

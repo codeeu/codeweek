@@ -88,60 +88,60 @@ return [
             ]
         ],
         '6' => [
-            'title'=>'Tworzenie aplikacji za pomocą App Inventor',
-            'author'=>'Autorka: Rosanna Kurrer',
-            'text'=>'<p>Obejrzyj film, w którym Rosanna Kurrer, (założycielka CyberWayFinder) wyjaśnia, czym jest App Inventor, przedstawia zalety tworzenia aplikacji podczas lekcji i podaje kilka praktycznych przykładów, w jaki sposób nauczyciele mogą wykorzystać platformę App Inventor w klasie, zamieniając biernych uczniów w entuzjastycznych twórców gier.</p>
+            'title' => 'Tworzenie aplikacji za pomocą App Inventor',
+            'author' => 'Autorka: Rosanna Kurrer',
+            'text' => '<p>Obejrzyj film, w którym Rosanna Kurrer, (założycielka CyberWayFinder) wyjaśnia, czym jest App Inventor, przedstawia zalety tworzenia aplikacji podczas lekcji i podaje kilka praktycznych przykładów, w jaki sposób nauczyciele mogą wykorzystać platformę App Inventor w klasie, zamieniając biernych uczniów w entuzjastycznych twórców gier.</p>
 <p>Wszyscy korzystamy z aplikacji, ponieważ są one wygodnym i szybkim sposobem koordynowania naszych działań. Są one również coraz częściej wykorzystywane w edukacji, ponieważ pozwalają na indywidualną naukę i umożliwiają użytkownikom zdobywanie informacji. Dlaczego więc nie dać uczniom możliwości stworzenia aplikacji edukacyjnej dla innych?</p>',
-            'activities'=>[
-                '1'=>'Zajęcia nr 1 – Tytuł, na poziomie szkoły podstawowej',
-                '2'=>'Zajęcia nr 2 – Tytuł, na poziomie szkoły średniej I stopnia',
-                '3'=>'Zajęcia nr 3 – Tytuł, na poziomie szkoły średniej II stopnia'
+            'activities' => [
+                '1' => 'Zajęcia nr 1 – Tytuł, na poziomie szkoły podstawowej',
+                '2' => 'Zajęcia nr 2 – Tytuł, na poziomie szkoły średniej I stopnia',
+                '3' => 'Zajęcia nr 3 – Tytuł, na poziomie szkoły średniej II stopnia'
             ]
         ],
         '7' => [
-            'title'=>'Majsterkowanie i kreatywność',
-            'author'=>'Autor: Diogo da Silva',
-            'text'=>'<p>Miejsca i warunki pracy ulegają zmianie, a edukacja podąża ich śladem. Przygotowanie uczniów do pracy w XXI wieku musi uwzględniać nowe umiejętności, takie jak majsterkowanie, budowanie czegoś lub tworzenie oprogramowania, ponieważ pozwalają one zmniejszyć dystans między szkołą a rzeczywistością. Dzięki przekształceniu klasy w środowisko współpracy, w którym nacisk kładzie się na rozwiązywanie problemów, uczniowie są w stanie się zaangażować i rozwijać. Zadania tego rodzaju sprzyjają dyskusji i pozwalają, aby klasa stała się centrum komunikacji, w którym liczy się każdy wkład.</p> 
+            'title' => 'Majsterkowanie i kreatywność',
+            'author' => 'Autor: Diogo da Silva',
+            'text' => '<p>Miejsca i warunki pracy ulegają zmianie, a edukacja podąża ich śladem. Przygotowanie uczniów do pracy w XXI wieku musi uwzględniać nowe umiejętności, takie jak majsterkowanie, budowanie czegoś lub tworzenie oprogramowania, ponieważ pozwalają one zmniejszyć dystans między szkołą a rzeczywistością. Dzięki przekształceniu klasy w środowisko współpracy, w którym nacisk kładzie się na rozwiązywanie problemów, uczniowie są w stanie się zaangażować i rozwijać. Zadania tego rodzaju sprzyjają dyskusji i pozwalają, aby klasa stała się centrum komunikacji, w którym liczy się każdy wkład.</p> 
 <p>Obejrzyj poniższy film, w którym portugalski nauczyciel nauk przyrodniczych, technologii, inżynierii, sztuki i matematyki Diogo da Silva, członek Escola Global, pokazuje krok po kroku, jak przygotować lekcję, podczas której Twoi uczniowie uczą się rozwiązywać zadania, majsterkując, budując coś i tworząc oprogramowanie.</p>',
-            'activities'=>[
-                '1'=>'Zajęcia nr 1 – Tytuł, na poziomie szkoły podstawowej',
-                '2'=>'Zajęcia nr 2 – Tytuł, na poziomie szkoły średniej I stopnia',
-                '3'=>'Zajęcia nr 3 – Tytuł, na poziomie szkoły średniej II stopnia'
+            'activities' => [
+                '1' => 'Zajęcia nr 1 – Tytuł, na poziomie szkoły podstawowej',
+                '2' => 'Zajęcia nr 2 – Tytuł, na poziomie szkoły średniej I stopnia',
+                '3' => 'Zajęcia nr 3 – Tytuł, na poziomie szkoły średniej II stopnia'
             ]
         ],
         '8' => [
-            'title'=>'Kodowanie w ramach wszystkich przedmiotów',
-            'author'=>'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
-            'text'=>'<p>Gdy mowa o kodowaniu podczas lekcji, pierwsze, co przychodzi na myśl, to komputery, technologia, matematyka lub nauki przyrodnicze. Ponieważ uczniowie mają wiele zainteresowań i przedmiotów, dlaczego nie wykorzystać tego na naszą korzyść i nie wprowadzić kodowania do całego programu nauczania?</p> 
+            'title' => 'Kodowanie w ramach wszystkich przedmiotów',
+            'author' => 'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text' => '<p>Gdy mowa o kodowaniu podczas lekcji, pierwsze, co przychodzi na myśl, to komputery, technologia, matematyka lub nauki przyrodnicze. Ponieważ uczniowie mają wiele zainteresowań i przedmiotów, dlaczego nie wykorzystać tego na naszą korzyść i nie wprowadzić kodowania do całego programu nauczania?</p> 
 <p>Wykorzystanie kodowania podczas lekcji ma wiele zalet, ponieważ dzięki niemu uczniowie rozwijają krytyczne myślenie i umiejętność rozwiązywania problemów, stają się aktywni i kierują własnym procesem uczenia się, a to ma zasadnicze znaczenie w szkole. Najważniejsze jest jednak to, że Twoi uczniowie będą się bawić podczas nauki!</p>
 <p>Języki, muzyka czy tzw. STEM (ang. science, technology, engineering and maths – nauki przyrodnicze, technologia, inżynieria i matematyka) to tylko niektóre przedmioty, które nauczyciele mogą „zakodować” dla przyszłych naukowców, muzyków, artystów – naprawdę dla każdego! Wszyscy nauczyciele mogą wykorzystać kodowanie i myślenie komputacyjne podczas lekcji. Zastosowanie metody zintegrowanego kształcenia przedmiotowo-językowego, tzw. CLIL (ang. content and language integrated learning) do wyjaśnienia algorytmów w życiu codziennym, budowa filcowego joysticka do zgłębiania nauk przyrodniczych lub wykorzystanie robotów edukacyjnych do zwiększania motywacji na lekcji matematyki to tylko niektóre przykłady działań, które możesz zrealizować w sali lekcyjnej.</p> 
 <p>Na tym filmie zobaczysz, jak nauczyciele muzyki, nauk przyrodniczych lub języków mogą łatwo wykorzystać kodowanie i myślenie komputacyjne podczas lekcji, nawet jeśli nie mają żadnego wcześniejszego doświadczenia w tym zakresie. </p>',
-            'activities'=>[
-                '1'=>'Zajęcia nr 1. Robotyka i integracja na poziomie szkoły podstawowej na zajęciach z nauk przyrodniczych, technologii, inżynierii i matematyki ',
-                '2'=>'Zajęcia nr 2. Muzyka to kodowanie',
-                '3'=>'Zajęcia nr 3. Majsterkowanie i kodowanie z wykorzystaniem Makey Makey',
-                '4'=>'Zajęcia nr 4. Algorytmy w życiu codziennym w zintegrowanym kształceniu przedmiotowo-językowym'
+            'activities' => [
+                '1' => 'Zajęcia nr 1. Robotyka i integracja na poziomie szkoły podstawowej na zajęciach z nauk przyrodniczych, technologii, inżynierii i matematyki ',
+                '2' => 'Zajęcia nr 2. Muzyka to kodowanie',
+                '3' => 'Zajęcia nr 3. Majsterkowanie i kodowanie z wykorzystaniem Makey Makey',
+                '4' => 'Zajęcia nr 4. Algorytmy w życiu codziennym w zintegrowanym kształceniu przedmiotowo-językowym'
             ]
         ],
         '9' => [
-            'title'=>'Tworzenie automatu za pomocą urządzenia micro:bit',
-            'author'=>'Pauline Maas',
-            'text'=>'<p>
+            'title' => 'Tworzenie automatu za pomocą urządzenia micro:bit',
+            'author' => 'Pauline Maas',
+            'text' => '<p>
                    Micro:bit to łatwe do zaprogramowania, kieszonkowe urządzenie obliczeniowe, które pozwoli ci w łatwy i przyjemny sposób tworzyć wspólnie z uczniami przeróżne rozwiązania – od robotów po instrumenty muzyczne – ucząc ich jednocześnie programowania. To proste narzędzie, które nie sprawia kłopotów w obsłudze nawet najmłodszym programistom, a przy tym jest wystarczająco rozbudowane, by zainteresować bardziej doświadczonych uczniów. Można je wykorzystać na wielu różnych lekcjach, na przykład na historii, matematyce, a nawet podczas zajęć z przedmiotów przyrodniczych. Możliwości są nieograniczone. Micro:bit jest niedrogim, rozbudzającym ciekawość rozwiązaniem, które uczy programowania i rozwija inne potrzebne umiejętności, takie jak myślenie obliczeniowe, rozwiązywanie problemów i kreatywne działanie.
                    </p>
                    <p>
 W proponowanym filmiku Pauline Maas, nauczycielka informatyki w szkole Koninklijke Visio, prezentuje urządzenie micro:bit i daje kilka praktycznych wskazówek, jak wykorzystać je na lekcjach, by zmienić uczniów z biernych użytkowników technologii w jej zaangażowanych twórców.                   
                 </p>',
-            'activities'=>[
-                '1'=>'Kod Morse’a z micro:bit, dla młodszych klas szkoły podstawowej',
-                '2'=>'Pokój zagadek z micro:bit, dla starszych klas szkoły podstawowej',
-                '3'=>'Tworzenie automatu, dla szkół ponadpodstawowych',
+            'activities' => [
+                '1' => 'Kod Morse’a z micro:bit, dla młodszych klas szkoły podstawowej',
+                '2' => 'Pokój zagadek z micro:bit, dla starszych klas szkoły podstawowej',
+                '3' => 'Tworzenie automatu, dla szkół ponadpodstawowych',
             ]
         ],
         '10' => [
-            'title'=>'Kreatywne programowanie z Pythonem',
-            'author'=>'Ivana Vezjak',
-            'text'=>'<p>
+            'title' => 'Kreatywne programowanie z Pythonem',
+            'author' => 'Ivana Vezjak',
+            'text' => '<p>
 Przejście z programowania wizualnego do tekstowego jest naturalnym krokiem w nauce programowania. Programowanie wizualne często sprawdza się w wypadku osób początkujących, ale po pewnym czasie uczniowi może zabraknąć nowych wyzwań. Programowanie tekstowe to następny etap wtajemniczenia dla każdego, kto chce rozwinąć umiejętność pisania kodu i myślenia obliczeniowego. 
                    </p>
                    <p>                   
@@ -150,68 +150,104 @@ Przejście z programowania wizualnego do tekstowego jest naturalnym krokiem w na
 <p> 
 Za pomocą Pythona uczniowie mogą między innymi przygotowywać quizy historyczne, rozwiązywać zadania matematyczne i przygotowywać symulację zjawisk fizycznych, tworzyć gry, budować strony internetowe, analizować dane na potrzeby projektów badawczych – a to tylko niektóre z możliwości. Python oferuje bogatą, rozszerzoną biblioteką standardową, skupia się wokół niego duża społeczność użytkowników, a w Internecie dostępnych jest wiele samouczków i projektów, które można wykorzystać do nauczania, poznawania i ćwiczenia tego języka. Pisząc kod w języku Python, analizując programy i naprawiając błędy, uczniowie rozwijają kreatywność i ćwiczą konsekwencję, wytrwałość i cierpliwość. Ponadto uczą się też analitycznego myślenia i rozwiązywania problemów, rozkładając złożone zagadnienia na mniejsze części. Dzięki tym kompetencjom łatwiej im będzie pokonywać przeszkody napotykane w różnych aspektach życia.
                 </p>',
-            'activities'=>[
-                '1'=>'Mój pierwszy quiz, dla młodszych klas szkoły podstawowej',
-                '2'=>'Wisielec, dla starszych klas szkoły podstawowej',
-                '3'=>'Dopasuj flagę, dla szkół ponadpodstawowych',
+            'activities' => [
+                '1' => 'Mój pierwszy quiz, dla młodszych klas szkoły podstawowej',
+                '2' => 'Wisielec, dla starszych klas szkoły podstawowej',
+                '3' => 'Dopasuj flagę, dla szkół ponadpodstawowych',
             ],
-            'links'=>[
+            'links' => [
                 'title' => 'Inne powiązane zasoby',
                 '1' => [
-                    "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Standardowa biblioteka Pythona",
-                    "description"=>"Kolekcja gotowych fragmentów kodu i modułów (np. moduł turtle, moduł math itd.).",
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "Standardowa biblioteka Pythona",
+                    "description" => "Kolekcja gotowych fragmentów kodu i modułów (np. moduł turtle, moduł math itd.).",
                 ],
                 '2' => [
-                    "url"=>"https://codecombat.com/",
-                    "title"=>"CodeCombat",
-                    "description"=>"Edukacyjna gra wideo do nauki pojęć związanych z programowaniem.",
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Edukacyjna gra wideo do nauki pojęć związanych z programowaniem.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/pl-PL/codeclub",
-                    "title"=>"Projekty CodeClub",
-                    "description"=>"Projekty dla dzieci do stopniowej nauki programowania – od poziomu podstawowego do zaawansowanego.",
+                    "url" => "https://projects.raspberrypi.org/pl-PL/codeclub",
+                    "title" => "Projekty CodeClub",
+                    "description" => "Projekty dla dzieci do stopniowej nauki programowania – od poziomu podstawowego do zaawansowanego.",
                 ],
                 '4' => [
-                    "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Książka „Invent your own computer games with Python”",
-                    "description"=>"Dzięki tej książce dowiesz się, jak napisać własną grę komputerową w Pythonie.",
+                    "url" => "https://inventwithpython.com/invent4thed/",
+                    "title" => "Książka „Invent your own computer games with Python”",
+                    "description" => "Dzięki tej książce dowiesz się, jak napisać własną grę komputerową w Pythonie.",
                 ],
                 '5' => [
-                    "url"=>"https://www.codewars.com/",
-                    "title"=>"CodeWars",
-                    "description"=>"Społeczność edukacyjna, w której uczniowie i nauczyciele mogą ćwiczyć swoje umiejętności, podejmując różne wyzwania.",
+                    "url" => "https://www.codewars.com/",
+                    "title" => "CodeWars",
+                    "description" => "Społeczność edukacyjna, w której uczniowie i nauczyciele mogą ćwiczyć swoje umiejętności, podejmując różne wyzwania.",
                 ],
                 '6' => [
-                    "url"=>"https://hourofpython.com/",
-                    "title"=>"Hour of Python",
-                    "description"=>"Kolekcja lekcji wprowadzających do nauki Pythona (w formie tekstowej i blokowej) przy użyciu interaktywnego edytora Trinket.",
+                    "url" => "https://hourofpython.com/",
+                    "title" => "Hour of Python",
+                    "description" => "Kolekcja lekcji wprowadzających do nauki Pythona (w formie tekstowej i blokowej) przy użyciu interaktywnego edytora Trinket.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'Integracja przez kodowanie',
-            'author'=>'według zespołu Tygodnia Kodowania',
-            'text'=>'<p>
+            'title' => 'Integracja przez kodowanie',
+            'author' => 'według zespołu Tygodnia Kodowania',
+            'text' => '<p>
                    Włączenie programowania do zajęć może być wyzwaniem, zwłaszcza jeśli w klasie są uczniowie z różnymi niepełnosprawnościami. Trzeba jednak pamiętać, że programowania może nauczyć się każdy, niezależnie od ograniczeń. Nauka różnych aspektów programowania może przynieść dziecku o specjalnych potrzebach liczne korzyści, ponieważ pomaga mu rozwinąć ważne w życiu kompetencje, takie jak umiejętność rozwiązywania problemów, zorganizowanie i samodzielność. Współdziałanie i praca w grupie podczas kodowania mogą pomóc w doskonaleniu zdolności społecznych i interpersonalnych, z którymi dzieci z niepełnosprawnościami często mają trudności. Najważniejsze jest jednak to, że nauka z rówieśnikami sprawia uczniom po prostu frajdę.
                    </p><p>
 W proponowanym filmie zespół Tygodnia Kodowania prezentuje kilka praktycznych, łatwych i przyjemnych ćwiczeń z programowania, które dostosowano specjalnie do potrzeb uczniów z wadami wzroku, zespołem Downa lub zaburzeniami ze spektrum autyzmu. Ćwiczenia te nauczyciel bez trudu może włączyć do programu swoich zajęć.                   
                 </p>',
-            'activities'=>[
-                '1'=>'Wytłaczanka offline',
-                '2'=>'Bardzo bystra mysz ',
-                '3'=>'Gwiezdna robota',
+            'activities' => [
+                '1' => 'Wytłaczanka offline',
+                '2' => 'Bardzo bystra mysz ',
+                '3' => 'Gwiezdna robota',
             ]
-        ]
+        ],
+
+        "12" => [
+            "title" => "Kodowanie celów zrównoważonego rozwoju",
+            "author" => "Francisco Javier Masero, Cristina Nicolaita i Erviola Konomi",
+            "text" => [
+                "1" => "Tradycyjna edukacja daje uczniom niewiele możliwości zrozumienia i rozwiązania rzeczywistych problemów, takich jak globalne zmiany klimatyczne, równość płci, głód, ubóstwo lub dobry stan zdrowia i dobrobyt.",
+                "2" => "Cele Zrównoważonego Rozwoju (SDG) stanowią trzon Agendy Zrównoważonego Rozwoju do 2030 r., przyjętej przez wszystkie państwa członkowskie ONZ jako mapa drogowa na rzecz osiągnięcia pokoju i dobrobytu na naszej planecie, zachęcająca do globalnego rozwoju. Nauczyciele mogą używać SDG w klasie jako narzędzia dla uczniów do rozwijania ich krytycznego myślenia, ale również do pomocy w odnalezieniu ich tożsamości i celu. Połączenie podstawowych elementów kodowania i myślenia obliczeniowego z SDG zwiększy pewność siebie uczniów i pomoże im rozwinąć kreatywność, ducha przedsiębiorczości, umiejętności rozwiązywania problemów lub komunikacji.",
+                "3" => "W poniższych działaniach uczniowie będą stosować zasady języka programowania Scratch, ASCII i kodowania bez komputera do tematów o znaczeniu globalnym i społecznym w dzisiejszych czasach. Nauczyciele będą podnosić świadomość na temat celów zrównoważonego rozwoju, jednocześnie pomagając im rozwijać empatię, aktywną postawę obywatelską i umiejętności prospołeczne w zabawny i angażujący sposób.",
+                "4" => "Każdy z tych planów lekcji koncentruje się na jednym z SDG:",
+                "5" => "Cel zrównoważonego rozwoju 3: Zapewnić zdrowe życie i promować dobre samopoczucie dla wszystkich w każdym wieku",
+                "6" => "Cel zrównoważonego rozwoju 5: Osiągnąć równość płci i wzmocnić pozycję wszystkich kobiet i dziewcząt",
+                "7" => "Cel zrównoważonego rozwoju 13: Podjąć pilne działania w celu przeciwdziałania zmianom klimatycznym i ich skutkom",
+            ],
+            "activities" => [
+                "1" => "Projekt Karateka: Poznanie karate poprzez programowanie, dla szkoły podstawowej, gimnazjum i ponadpodstawowej",
+                "2" => "Cele zrównoważonego rozwoju i kodowanie zmian klimatycznych, dla szkoły podstawowej",
+                "3" => "Kodowanie dla równości płci, dla szkoły ponadpodstawowej",
+            ]
+        ],
+
+        "13" => [
+            "title" => "Wprowadzenie do sztucznej inteligencji podczas zajęć w klasie",
+            "autor" => "Artur Coelho i Marjana Prifti Skenduli",
+            "text" => [
+                "1" => "Sztuczna inteligencja (AI) ma wpływ na wiele dziedzin życia codziennego: autokorektę tekstu, który piszesz w telefonie, wybór muzyki, którą odtwarza twoja ulubiona aplikacja muzyczna i zapamiętuje twoje hasła, gdy o nich zapomniałeś. Sztuczna inteligencja odnosi się do połączenia uczenia maszynowego, robotyki i algorytmów z zastosowaniami we wszystkich dziedzinach: od informatyki do produkcji i od medycyny do mody. Dlatego też ma ona niezaprzeczalne miejsce w naszym życiu i w naszych społeczeństwach i odgrywa kluczową rolę w rozwoju nauki. I jak każde inne ważne zjawisko w naszym życiu, uczniowie skorzystają na tym, że się o nim dowiedzą. Ale jak uczyć o tak złożonej rzeczy jaką jest sztuczna inteligencja?",
+                "2" => "Ten bit dydaktyczny pomoże Ci wyjaśnić uczniom, czym jest sztuczna inteligencja i jaką rolę odgrywa w ich życiu. Działania te są przeznaczone dla osób nie będących ekspertami, które z łatwością rozumieją treść i są w stanie skutecznie rozbić złożone terminy na łatwo zrozumiałe idee. Dzięki tym planom lekcyjnym możesz pomóc uczniom nauczyć się korzystać ze sztucznej inteligencji i niektórych mechanizmów, które są z nią związane. Zajęcia te mają na celu rozwinięcie u uczniów umiejętności analitycznego i krytycznego myślenia: na przykład, w ramach zajęć, które prowadzi Marjana uczniowie opracowują ciąg klasyfikacyjny. Zajęcia te pomogą również uczniom zrozumieć różne zastosowania sztucznej inteligencji: podczas wszystkich zajęć z Arturem dowiedzą się o związku między sztuczną inteligencją, a sztuką oraz o tym, jak można wykorzystać sztuczną inteligencję do wzmocnienia ekspresji wizualnej. Dzięki tym działaniom uczniowie będą również zastanawiać się nad zagrożeniami związanymi ze sztuczną inteligencją i ich wpływem."
+            ],
+            "activities" => [
+                "1" => "Człowiek-Sztuczna inteligencja- Sztuka, dla szkoły podstawowej",
+                "2" => "Maszyny samouczące się do klasyfikowania: Wprowadzenie do Nadzorowanego uczenia się maszyn, dla uczniów szkoły ponadpodstawowej pierwszego stopnia",
+                "3" => "Maszyny samouczące się do klasyfikowania: Wprowadzenie do Nadzorowanego uczenia się maszyn, dla uczniów szkoły ponadpodstawowej drugiego stopnia",
+    ]
+],
+
+
+
     ],
     'download_video_script' => '',
     'ready_to_share' => 'Czujesz, że jesteś w stanie podzielić się zdobytą wiedzą z uczniami?',
     'choose_lessons' => 'Wybierz jeden z poniższych planów zajęć i zorganizuj zajęcia dla swoich uczniów.',
     'footer' => [
-        'title' => 'Nie zapomnij o zaznaczeniu swojego wydarzenia na mapie Tygodnia Kodowania.',
-        'text' => '<p>Możesz z łatwością zorganizować lekcję w klasie, dzień otwarty lub wydarzenie w swojej szkole. Wybierz tylko datę i dodaj swoje wydarzenie na <a href="/events">mapie Tygodnia Kodowania</a>. Każdy organizator wydarzenia otrzyma certyfikat uczestnictwa za udział i włożony wysiłek.</p>
+    'title' => 'Nie zapomnij o zaznaczeniu swojego wydarzenia na mapie Tygodnia Kodowania.',
+    'text' => '<p>Możesz z łatwością zorganizować lekcję w klasie, dzień otwarty lub wydarzenie w swojej szkole. Wybierz tylko datę i dodaj swoje wydarzenie na <a href=" / events">mapie Tygodnia Kodowania</a>. Każdy organizator wydarzenia otrzyma certyfikat uczestnictwa za udział i włożony wysiłek.</p>
 
 <p>Jeśli chcesz nawiązać kontakty z międzynarodową grupą nauczycieli – entuzjastów, dołącz do <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupy dla nauczycieli poświęconej Europejskiemu Tygodniowi Kodowania na Facebooku</a>! Aby pójść o krok dalej i nawiązać współpracę z innymi szkołami w twoim kraju lub w całej Europie, podejmij <a href="/codeweek4all">wyzwanie Tygodnia Kodowania dla wszystkich „Code Week 4 All”</a>.</p>'
-    ]
+]
 
 ];

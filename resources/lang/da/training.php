@@ -202,7 +202,43 @@ I denne video viser Kodeuge-teamet nogle praktiske, nemme og sjove kodeaktivitet
                 '2'=>'En meget klog mus',
                 '3'=>'Stjerner fra stjernen',
             ]
-        ]
+        ],
+
+        "12" => [
+            "title" => "Klassificering for bæredygtige udviklingsmål",
+            "author" => "af Francisco Javier Masero, Cristina Nicolaita og Erviola Konomi",
+            "text" => [
+                "1" => "Traditionel uddannelse giver eleverne få muligheder for at forstå og løse problemer i den virkelige verden såsom globale klimaændringer, ligestilling mellem kønnene, sult, fattigdom eller godt helbred og velvære.",
+                "2" => "Verdensmålene for bæredygtig udvikling (SDG) er kernen i 2030-agendaen for bæredygtig udvikling, vedtaget af alle FN's medlemslande som en køreplan for at opnå fred og velstand på planeten og tilskynde til global udvikling. Lærere kan bruge SDG'erne i klasseværelset som et redskab til eleverne til at udvikle deres evne til at tænke kritisk, men også til at hjælpe dem med at finde deres identitet og formål. Ved at kombinere grundlæggende elementer i kodning og databehandlet tænkning med SDG'erne vil det øge dine elevers selvtillid, og du vil hjælpe dem med at udvikle deres kreativitet, iværksætterånd, problemløsning eller kommunikationsevner.",
+                "3" => "I nedenstående aktiviteter vil elever anvende principperne Scratch, ASCII-kodning og unplugged kodning på emner af global og social relevans i dag. Lærere vil øge bevidstheden om målene for bæredygtig udvikling, samtidigt med at de hjælper dem med at udvikle empati, aktivt medborgerskab og prosociale færdigheder på en sjov og engagerende måde.",
+                "4" => "Disse lektionsplaner fokuserer hver på ét af SDG'erne:",
+                "5" => "Verdensmål for bæredygtig udvikling, mål 3: Vi skal sikre et sundt liv for alle og fremme trivsel for alle aldersgrupper",
+                "6" => "Verdensmål for bæredygtig udvikling, mål 5: Vi skal opnå ligestilling mellem kønnene og styrke kvinders og pigers rettigheder og muligheder",
+                "7" => "Verdensmål for bæredygtig udvikling, mål 13: Vi skal handle hurtigt for at bekæmpe klimaforandringer og deres konsekvenser",
+            ],
+            "activities" => [
+                "1" => "Karateka-projekt: At kende karate gennem programmering, for folkeskolen og for børn og unge op til 18 år",
+                "2" => "Verdensmål for bæredygtig udvikling og klassificering for klimaændringer, for folkeskolen",
+                "3" => "Klassificering for ligestilling mellem kønnene, for børn og unge 14-18 år",
+            ]
+        ],
+
+        "13" => [
+            "title" => "Introduktion to kunstig intelligens i klasseværelset",
+            "author" => "af Artur Coelho og Marjana Prifti Skenduli",
+            "text" => [
+                "1" => "Kunstig intelligens (AI) har indflydelse på mange områder i dagligdagen: Den korrigerer automatisk den tekst, du skriver på din telefon, vælger den musik, som din foretrukne musikapp spiller, og den husker dine adgangskoder, når du har glemt dem. AI refererer til en kombination af maskinlæring, robotteknik og algoritmer, med applikationer inden for alle områder: Fra datalogi til fremstilling og fra medicin til mode. Derfor har den en ubestridelig plads i vores liv og i vores samfund, og den spiller en vigtig rolle i videnskabens udvikling. Og som alle andre vigtige fænomener i vores liv vil elever drage fordel af at lære om den. Men hvordan skal man undervise i sådan en kompleks ting som AI?",
+                "2" => "Denne læringsdel vil hjælpe dig med at forklare eleverne, hvad AI er, og hvilken rolle den spiller i elevernes liv. Disse aktiviteter er udviklet sådan, at ikke-eksperter nemt kan forstå indholdet og blive i stand til effektivt at nedbryde komplekse termer til letforståelige ideer. Med disse lektionsplaner kan du hjælpe eleverne med at lære om brugen af AI og nogle af mekanismerne bag den. Disse aktiviteter er udviklet sådan, at eleverne kan udvikle deres færdigheder i analytisk og kritisk tænkning: I Marjanas aktivitet udvikler eleverne for eksempel en klassifikationsudvikler. Disse aktiviteter hjælper også eleverne med at forstå de forskellige anvendelser af AI: I Arturs aktivitet lærer de om forbindelsen mellem AI og kunst, og hvordan AI kan bruges til at forbedre det visuelle udtryk. Med disse aktiviteter vil eleverne også reflektere over farerne ved AI og deres effekt."
+            ],
+            "activities" => [
+                "1" => "Human AI-kunst, for folkeskolen",
+                "2" => "At lære maskiner at klassificere: Introduktion til superviseret maskinlæring, for elever i alderen 11-14 år",
+                "3" => "At lære maskiner at klassificere: Introduktion til superviseret maskinlæring, for elever i alderen 14-18 år",
+            ]
+        ],
+
+
+
     ],
     'download_video_script' => 'Download videoscriptet',
     'ready_to_share' => 'Er du klar til at dele det, du har lært, med dine elever?',

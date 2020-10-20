@@ -204,7 +204,45 @@ Në këtë video, ekipi i Code Week do t’ju tregojë disa aktivitete praktike,
                 '2'=>'Një mi shumë inteligjent',
                 '3'=>'Një yll që krijon yje',
             ]
-        ]
+        ],
+
+        "12" => [
+            "title" => "Kodimi për synimet për zhvillim të qëndrueshëm",
+            "author" => "nga Francisco Javier Masero, Cristina Nicolaita dhe Erviola Konomi",
+            "text" => [
+                "1" => "Shkollimi i zakonshëm u jep studentëve pak mundësi për të kuptuar dhe për të zgjidhur problemet e vërteta, si ndryshimi botëror i klimës, barazia gjinore, uria, varfëria, shëndeti i mirë dhe mirëqenia.",
+                "2" => "Sustainable Development Goals (SDG-të) ose synimet për zhvillim të qëndrueshëm  janë qendra e axhendës së vitit 2030 për zhvillimin e qëndrueshëm, e cila është adoptuar nga të gjitha shtetet anëtare të Bashkimit Evropian si rrugë për të arritur paqe dhe mbarësi në planet, duke nxitur zhvillimin global.. Mësuesit mund t’i përdorin SDG-të në klasë si mjet që studentët të zhvillojnë të menduarit e tyre kritik, por edhe për t’i ndihmuar të gjejnë identitetin dhe qëllimin e tyre. Kombinimi i elementëve bazë të kodimit dhe mendimit kompjuterik me SDG-të do të bëjë që studentët tuaj të kenë më tepër besim te vetja dhe do t’i ndihmojë të zhvillojnë kreativitetin, shpirtin sipërmarrës, aftësitë e zgjidhjes së problemeve ose të komunikimit..",
+                "3" => "Në aktivitetet e mëposhtme, studentët do të aplikojnë parimet Scratch, kodimi ASCII dhe kodimin “unplugged” në temat e me rëndësi botërore dhe sociale sot. Mësuesit do të rritin ndërgjegjësimin në lidhje me synimet për zhvillim të qëndrueshëm ndërkohë që do t’i ndihmojnë të zhvillojnë empati, të jenë qytetarë aktivë dhe të fitojnë aftësi sociale në një mënyrë argëtuese dhe përfshirëse.",
+                "4" => "Secili prej këtyre planeve mësimore fokusohet në një SDG:",
+                "5" => "Synimi për zhvillim të qëndrueshëm 3: Siguro jetë të shëndetshme dhe nxit mirëqenien për të gjitha moshat",
+                "6" => "Synimi për zhvillim të qëndrueshëm 5: Arri barazinë gjinore dhe jepu të drejta të gjitha grave dhe vajzave",
+                "7" => "Synimi për zhvillim të qëndrueshëm 13: Merr me urgjencë masa për të luftuar ndryshimin e klimës dhe ndikimet e tij",
+            ],
+            "activities" => [
+                "1" => "Projekti Karateka: Të mësosh karate nëpërmjet programimit për Shkollën Kryesore, dhe për Shkollën Dytësore të Ulët dhe të Lartë",
+                "2" => "Synimet për zhvillimin e qëndrueshëm dhe kodimi për ndryshimin e klimës, për Shkollën Kryesore",
+                "3" => "Kodimi për barazinë gjinore, për Shkollën Dytësore të Lartë",
+            ]
+        ],
+
+        "13" => [
+            "title" => "Hyrje për inteligjencën artificiale në klasë",
+            "author" => "nga Artur Coelho dhe Marjana Prifti Skenduli",
+            "text" => [
+                "1" => "Artificial Intelligence (AI), ose inteligjenca artificiale, ndikon në shumë fusha të jetës së përditshme: ajo korrigjon automatikisht tekstin që shkruani në telefon, zgjedh që luan aplikacioni juaj i preferuar i muzikës, dhe mban mend fjalëkalimet tuaja kur i harroni. AI i referohet një kombinimi të mësimit të makinerive, robotikës dhe algoritmeve, dhe gjen zbatim në të gjitha fushat: nga shkencat kompjuterike deri te prodhimi, dhe nga mjekësia deri te moda. Prandaj, ka një vend të pakundërshtueshëm në jetën dhe në shoqërinë tonë, dhe luanë një rol të rëndësishëm në zhvillimin e shkencës. Ashtu si me fenomene të tjera të rëndësishme të jetës sonë, studentët do të nxjerrin dobi duke mësuar rreth saj. Por si të japim mësim në lidhje me diçka kaq të ndërlikuar, siç është AI?",
+                "2" => "Kjo pjesë mësimore do t’ju ndihmojë që t’u shpjegoni studentëve çfarë është AI dhe çfarë roli luan ajo në jetën e studentëve. Këto aktivitete janë përgatitur për jo-ekspertët që ta kuptojnë me lehtësi përmbajtjen dhe të jenë në gjendje t’i ndajnë me efektshmëri shprehjet komplekse në ide që kuptohen me lehtësi. Me këto plane mësimore mund t’i ndihmoni studentët të mësojnë cilat janë përdorimet e AI-së, si dhe disa mekanizma që fshihen pas saj. Këto aktivitete janë përgatitur që studentët të zhvillojnë aftësitë e tyre për mendimin analitik dhe kritik: për shembull, në aktivitetin e Marjanës, studentët zhvillojnë një strukturë klasifikimi. Gjithashtu, këto aktivitete do t’i ndihmojnë studentët të kuptojnë aplikimet e ndryshme të AI-së: në aktivitetin e Arturit, ata do të mësojnë cila është lidhja mes AI-së dhe Artit, dhe si mund të përdoret AI për të përmirësuar shprehinë vizuale. Me këto aktivitete, studentët do të reflektojnë gjithashtu lidhur me rreziqet e AI-së dhe ndikimin që ajo ka."
+            ],
+            "activities" => [
+                "1" => "Human-AI- Art, për Shkollën Kryesore",
+                "2" => "T’i mësosh makineritë të klasifikojnë: Hyrje për mësimin e mbikëqyrur të makinerive, për Shkollën Dytësore të Ulët",
+                "3" => "T’i mësosh makineritë të klasifikojnë: Hyrje për mësimin e mbikëqyrur të makinerive, për Shkollën Dytësore të Lartë",
+            ]
+        ],
+
+
+
+
+
     ],
     'download_video_script' => 'Shkarko tekstin e videos',
     'ready_to_share' => 'Jeni gati të ndani atë që keni mësuar me nxënësit tuaj?',
