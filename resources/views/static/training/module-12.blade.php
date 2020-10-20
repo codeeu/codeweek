@@ -43,17 +43,17 @@
 
                 <ul style="list-style-type: circle;margin-left:40px; margin-top:-4px;">
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-012-ACTIVITY-01-{{strtoupper(App::getLocale())}}.docx">
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-012-ACTIVITY-02-{{strtoupper(App::getLocale())}}.docx">
                             @lang('training.lessons.12.activities.2')
                         </a>
                     </li>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-012-ACTIVITY-02-{{strtoupper(App::getLocale())}}.docx">
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-012-ACTIVITY-03-{{strtoupper(App::getLocale())}}.docx">
                             @lang('training.lessons.12.activities.3')
                         </a>
                     </li>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-012-ACTIVITY-03-{{strtoupper(App::getLocale())}}.docx">
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-012-ACTIVITY-01-{{strtoupper(App::getLocale())}}.docx">
                             @lang('training.lessons.12.activities.1')
                         </a>
                     </li>
