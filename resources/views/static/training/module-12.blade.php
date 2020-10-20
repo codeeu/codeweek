@@ -29,11 +29,11 @@
 
             <section class="codeweek-content-wrapper-inside">
 
-                <p>
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-012-VIDEO-SCRIPT-{{strtoupper(App::getLocale())}}.docx">
-                        @lang('training.download_video_script')
-                    </a>
-                </p>
+{{--                <p>--}}
+{{--                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-012-VIDEO-SCRIPT-{{strtoupper(App::getLocale())}}.docx">--}}
+{{--                        @lang('training.download_video_script')--}}
+{{--                    </a>--}}
+{{--                </p>--}}
 
                 <h2>@lang('training.ready_to_share')</h2>
 
