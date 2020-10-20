@@ -272,20 +272,8 @@ With Python, students can create quizzes about historical events, solve math pro
                 '3' => 'A star making stars',
             ]
         ],
+
         '12' => [
-            'title' => 'Introduction to Artificial Intelligence in the classroom',
-            'author' => 'by Artur Coelho and Marjana Prifti Skenduli',
-            'text' => [
-                '1' => 'Artificial Intelligence (AI) has an impact on many areas of daily life: it autocorrects the text you type on your phone, choses the music your favourite music app plays, and it remembers your passwords when you have forgotten them. AI refers to a combination of machine learning, robotics, and algorithms, with applications in all fields: from computer science to manufacturing, and from medicine to fashion. Therefore, it has an undeniable place in our lives and in our societies and it plays a key role in science development. And as any other important phenomena in our lives, students will benefit from learning about it. But how to teach about such a complex thing as AI?',
-                '2' => 'This Learning Bit will help you explain to students what AI is and what role does it play in students’ lives. These activities are designed for non-experts to easily understand the contents, and to be able to effectively break down complex terms into easily understandable ideas. With these lesson plans you can help students learn the uses of AI and some of the mechanisms behind it. These activities are designed for students to develop their analytical and critical thinking skills: for example, in Marjana’s activity students develop a classification pipeline. These activities will also help students understand the varied applications of AI: in Artur’s activity they will learn about the link between AI and Art, and how AI can be used to enhance visual expression. With these activities, students will also reflect on the dangers of AI, and their impact.'
-            ],
-            'activities' => [
-                '1' => 'Human-AI- Art, for Primary School',
-                '2' => 'Teaching Machines to Classify: Intro to Supervised Machine Learning, for Lower Secondary School',
-                '3' => 'Teaching Machines to Classify: Intro to Supervised Machine Learning, for Upper Secondary School',
-            ]
-        ],
-        '13' => [
             'title' => 'Coding for sustainable development goals',
             'author' => 'by Francisco Javier Masero, Cristina Nicolaita and Erviola Konomi',
             'text' => [
@@ -301,6 +289,19 @@ With Python, students can create quizzes about historical events, solve math pro
                 '1' => 'Karateka project: Knowing the karate through programming, for Primary, Lower and Upper Secondary School',
                 '2' => 'Sustainable development goals and coding for climate change, for Primary School',
                 '3' => 'Coding for gender equality, for Upper Secondary School',
+            ]
+        ],
+        '13' => [
+            'title' => 'Introduction to Artificial Intelligence in the classroom',
+            'author' => 'by Artur Coelho and Marjana Prifti Skenduli',
+            'text' => [
+                '1' => 'Artificial Intelligence (AI) has an impact on many areas of daily life: it autocorrects the text you type on your phone, choses the music your favourite music app plays, and it remembers your passwords when you have forgotten them. AI refers to a combination of machine learning, robotics, and algorithms, with applications in all fields: from computer science to manufacturing, and from medicine to fashion. Therefore, it has an undeniable place in our lives and in our societies and it plays a key role in science development. And as any other important phenomena in our lives, students will benefit from learning about it. But how to teach about such a complex thing as AI?',
+                '2' => 'This Learning Bit will help you explain to students what AI is and what role does it play in students’ lives. These activities are designed for non-experts to easily understand the contents, and to be able to effectively break down complex terms into easily understandable ideas. With these lesson plans you can help students learn the uses of AI and some of the mechanisms behind it. These activities are designed for students to develop their analytical and critical thinking skills: for example, in Marjana’s activity students develop a classification pipeline. These activities will also help students understand the varied applications of AI: in Artur’s activity they will learn about the link between AI and Art, and how AI can be used to enhance visual expression. With these activities, students will also reflect on the dangers of AI, and their impact.'
+            ],
+            'activities' => [
+                '1' => 'Human-AI- Art, for Primary School',
+                '2' => 'Teaching Machines to Classify: Intro to Supervised Machine Learning, for Lower Secondary School',
+                '3' => 'Teaching Machines to Classify: Intro to Supervised Machine Learning, for Upper Secondary School',
             ]
         ],
     ],

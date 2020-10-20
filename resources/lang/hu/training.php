@@ -202,7 +202,42 @@ A Pythonnal a diákok kvízeket hozhatnak létre történelmi eseményekről, ma
                 '2'=>'Egy irtó okos egér',
                 '3'=>'A csillagkészítő sztár',
             ]
+        ],
+
+        "12" => [
+            "title" => "Kódolás a fenntartható fejlődési célokért",
+            "author" => "írta Francisco Javier Masero, Cristina Nicolaita és Erviola Konomi",
+            "text" => [
+                "1" => "A hagyományos oktatás kevés lehetőséget nyújt a diákoknak a valódi világ problémáinak megértésére és megoldására, mint például a globális éghajlatváltozás, a nemek közötti egyenlőség, az éhség, a szegénység vagy a jó egészség és jólét.",
+                "2" => "A fenntartható fejlődési célok (Sustainable Development Goal - SDG) az Egyesült Nemzetek Szövetségének minden tagállama által elfogadott „Fenntartható Fejlődési Keretrendszer 2030” központi eleme, amely útmutatóként szolgál a béke és a jólét eléréséhez a bolygón, ösztönözve a globális fejlődést. A tanárok eszközként használhatják az SDG-ket az osztályteremben arra, hogy a diákok fejlesszék a kritikus gondolkodásukat, illetve arra, hogy segítsen megtalálni az identitásukat és céljukat. A kódolás és a számítástechnikai gondolkodás alapvető elemeinek ötvözése az SDG-kkel növelni fogja a diákok önbizalmát, és segít nekik abban, hogy fejlesszék kreativitásukat, vállalkozói szellemüket, problémamegoldó, illetve kommunikációs képességeiket.",
+                "3" => "Az alábbi tevékenységekben a diákok a Scratch, az ASCII kódolás és a digitális technológia nélküli kódolás elveit fogják alkalmazni mai, globálisan és társadalmilag releváns témákra. A tanárok fel fogják hívni a figyelmet a fenntartható fejlődési célokra, miközben szórakoztató és vonzó módon segítik őket az empátia, az aktív állampolgári és a proszociális készségek fejlesztésében.",
+                "4" => "Az alábbi leckék mindegyike egy SDG-re összpontosít:",
+                "5" => "3-as fenntartható fejlődési cél: Az egészséges élet biztosítása és a jóllét előmozdítása minden korosztály valamennyi  tagjának",
+                "6" => "5-ös fenntartható fejlődési cél: A nemek egyenlőségének megvalósítása, minden nő és lány társadalmi szerepének megerősítése",
+                "7" => "13-as fenntartható fejlődési cél: Sürgős lépések megtétele a klímaváltozás és hatásainak leküzdésére",
+            ],
+            "activities" => [
+                "1" => "Karatéka projekt: A karate megismerése programozás útján, általános iskolásoknak és gimnazistáknak",
+                "2" => "Fenntartható fejlődési célok és kódolás a klímaváltozásért, általános iskolásoknak",
+                "3" => "Kódolás a nemek egyenlőségéért, felsős gimnazistáknak",
+            ]
         ]
+        ,
+        "13" => [
+            "title" => "Bevezetés a mesterséges intelligenciába az osztályteremben",
+            "author" => "írta Artur Coelho és Marjana Prifti Skenduli",
+            "text" => [
+                "1" => "A mesterséges intelligencia (MI) a mindennapi élet számos területére van hatással: automatikusan kijavítja a telefonba írt szöveget, kiválasztja, milyen zenét játsszon a kedvenc zenei alkalmazása, és megjegyzi a jelszavakat, amikor elfelejtette azokat. Az MI a gépi tanulás, a robotika és az algoritmusok kombinációját jelenti, és minden területen alkalmazzák: az informatikától a gyártásig, az orvostudománytól a divatszakmáig. Ezért tagadhatatlanul helye van az életünkben és a társadalmainkban, és kulcsfontosságú szerepet játszik a tudomány fejlődésében. És mint életünk bármely más fontos jelensége esetén, a diákoknak hasznos lesz, ha tanulnak róla. De hogyan oktassunk egy olyan komplex dolgot, mint az MI?",
+                "2" => "Ez az oktatómodul segít Önnek elmagyarázni a diákoknak, mi az MI, és milyen szerepet játszik a diákok életében. Ezeket a tevékenységeket szakértelemmel nem rendelkezőknek tervezték, hogy könnyen megértsék a tartalmat, és képesek legyenek komplex témákat hatékonyan lebontani könnyen érthető fogalmakká. Ezekkel a lecketervekkel segíthet a diákoknak megtanulni az MI használatát és egyes háttérmechanizmusait. Ezeket a tevékenységeket arra tervezték, hogy a diákok fejlesszék az elemzés és kritikai gondolkodás képességét: Marjana tevékenységében például a diákok egy osztályozási módszert fejlesztenek. Ezek a tevékenységek segítik a diákokat az AI változatos alkalmazásainak megértésében is: Artur tevékenységében megismerik az MI és a művészet kapcsolatát, és azt, hogy az MI hogyan használható a vizuális kifejezés fokozására. Ezekkel a tevékenységekkel a diákok átgondolják az AI veszélyeit és azok hatásait is."
+            ],
+            "activities" => [
+                "1" => "Humán-MI művészet, általános iskolásoknak",
+                "2" => "Gépek megtanítása osztályozásra: Bevezetés a felügyelettel történő gépi tanulásba, alsós gimnazistáknak",
+                "3" => "Gépek megtanítása osztályozásra: Bevezetés a felügyelettel történő gépi tanulásba, felsős gimnazistáknak",
+            ]
+        ],
+
+
     ],
     'download_video_script' => 'Videó forgatókönyvének letöltése',
     'ready_to_share' => 'Készen áll arra, hogy megossza a tanultakat a diákjaival?',
