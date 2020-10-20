@@ -202,7 +202,43 @@ Tällä videolla koodausviikon tiimi esittelee muutamia helppoja ja hauskoja kä
                 '2'=>'Erittäin älykäs hiiri',
                 '3'=>'Tähdentekijä',
             ]
-        ]
+        ],
+
+        "12" => [
+            "title" => "Kestävän kehityksen tavoitteiden koodaaminen ",
+            "author" => "Tekijät: Francisco Javier Masero, Cristina Nicolaita ja Erviola Konomi",
+            "text" => [
+                "1" => "Perinteinen koulutus tarjoaa vain vähän mahdollisuuksia ymmärtää ja ratkaista todellisen maailman ongelmia, kuten maailmanlaajuista ilmastonmuutosta, sukupuolten välistä tasa-arvoa, nälänhätää, köyhyyttä tai hyvää terveyttä ja hyvinvointia.",
+                "2" => "Kestävän kehityksen tavoitteet (SDG:t) ovat kestävän kehityksen tavoiteohjelman 2030 ydin. Kaikki Yhdistyneiden kansakuntien jäsenvaltiot ovat hyväksyneet sen etenemissuunnitelmana rauhan ja vaurauden saavuttamiseksi planeetallamme kannustamalla maailmanlaajuista kehitystä. Opettajat voivat käyttää luokkahuoneessa kestävän kehityksen tavoitteita oppilaiden kriittistä ajattelua kehittävänä työkaluna mutta myös apuvälineenä heidän identiteettinsä ja tarkoituksensa tunnistamisessa. Yhdistämällä koodauksen ja laskennallisen ajattelun peruselementtejä kestävän kehityksen tavoitteisiin lisäät oppilaidesi luottamusta ja autat heitä kehittämään heidän luovuuttaan, yrittäjyyttään ja ongelmanratkaisu- ja viestintätaitojaan.",
+                "3" => "Alla olevissa tehtävissä oppilaat soveltavat Scratch-, ASCII- ja unplugged-ohjelmoinnin periaatteita tänä päivänä olennaisiin globaaleihin ja sosiaalisiin aiheisiin. Opettajat lisäävät tietoisuutta kestävän kehityksen tavoitteista ja auttavat oppilaita kehittämään empatiaa, aktiivista kansalaisuutta ja prososiaalisia taitoja hauskalla ja mukaansatempaavalla tavalla.",
+                "4" => "Jokainen oppituntisuunnitelma keskittyy yhteen kestävän kehityksen tavoitteista:",
+                "5" => "Kestävän kehityksen tavoite 3: Taata terveellinen elämä ja hyvinvointi kaikenikäisille",
+                "6" => "Kestävän kehityksen tavoite 5: Saavuttaa sukupuolten välinen tasa-arvo sekä vahvistaa naisten ja tyttöjen oikeuksia ja mahdollisuuksia",
+                "7" => "Kestävän kehityksen tavoite 13: Toimia kiireellisesti ilmastonmuutosta ja sen vaikutuksia vastaan",
+            ],
+            "activities" => [
+                "1" => "Karateka-projekti: Karaten opettelu ohjelmoinnin avulla, peruskoulun ala- ja yläaste ja toisen asteen oppilaitokset",
+                "2" => "Kestävän kehityksen tavoitteet ja ilmastonmuutoksen koodaaminen, peruskoulun ala-aste",
+                "3" => " Sukupuolten tasa-arvon koodaaminen, toisen asteen oppilaitokset",
+            ]
+        ],
+
+        "13" => [
+            "title" => "Johdanto tekoälyyn luokkahuoneessa",
+            "author" => "tekijät: Artur Coelho ja Marjana Prifti Skenduli",
+            "text" => [
+                "1" => "Tekoäly (AI) vaikuttaa moniin jokapäiväisen elämän osa-alueisiin: se korjaa puhelimeesi kirjoittamasi tekstin automaattisesti, valitsee suosikkimusiikkisovelluksesi soittaman musiikin ja muistaa salasanasi, kun olet ne unohtanut. AI eli tekoäly viittaa koneoppimisen, robotiikan ja algoritmien yhdistelmään kaikilla aloilla: aina tietojenkäsittelystä valmistukseen ja lääketieteestä muotiin. Siksi sillä on kiistaton paikka elämissämme ja yhteiskunnissamme ja keskeinen rooli tieteen kehityksessä. Kuten mistä tahansa tärkeästä ilmiöstä elämässämme, oppilaat hyötyvät sen oppimisesta. Mutta kuinka opettaa niinkin monimutkaista asiaa kuin tekoäly?",
+                "2" => "Tämä oppimismoduuli auttaa sinua selittämään oppilaille, mitä tekoäly on ja mikä rooli sillä on oppilaiden elämässä. Nämä tehtävät on suunniteltu muille kuin asiantuntijoille, jotta he ymmärtäisivät helposti sisällön ja voisivat tehokkaasti hajottaa monimutkaisetkin termit helposti ymmärrettäviksi. Näiden tuntisuunnitelmien avulla voit helposti auttaa oppilaita oppimaan tekoälyn käytön ja joitain sen taustalla olevia mekanismeja. Nämä harjoitukset on suunniteltu oppilaille, jotta he voisivat kehittää analyyttisen ja kriittisen ajattelun taitojaan: esimerkiksi Marjanan harjoituksessa oppilaat suunnittelevat luokitteluputken. Nämä harjoitukset auttavat oppilaita myös ymmärtämään tekoälyn monipuolisia käyttötapoja: Arturin harjoituksessa he oppivat linkistä tekoälyn ja taiteen välillä ja siitä kuinka tekoälyä voidaan käyttää visuaalisen ilmaisun parantamiseen. Näiden harjoitusten avulla oppilaat pohtivat myös tekoälyn vaaroja ja niiden vaikutuksia."
+            ],
+            "activities" => [
+                "1" => "Ihmisen ja tekoälyn luoma taide, peruskoulun ala-aste",
+                "2" => "Luokittelun opettaminen koneelle: johdatus ohjattuun koneoppimiseen, peruskoulun yläaste",
+                "3" => "Luokittelun opettaminen koneelle: johdatus ohjattuun koneoppimiseen, toisen asteen oppilaitokset",
+            ]
+        ],
+
+
+
     ],
     'download_video_script' => 'Lataa videon käsikirjoitus',
     'ready_to_share' => 'Oletko valmis jakamaan oppimasi oppilaittesi kanssa?',
