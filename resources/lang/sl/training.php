@@ -88,60 +88,60 @@ return [
             ]
         ],
         '6' => [
-            'title'=>'App Inventor in razvoj aplikacij',
-            'author'=>'Avtorica: Rosanna Kurrer',
-            'text'=>'<p>Oglejte si ta videoposnetek, v katerem Rosanna Kurrer (ustanoviteljica platforme CyberWayFinder) razloži, kaj je App Inventor, pojasni prednosti vključevanja razvoja aplikacij v pouk in navede nekaj praktičnih primerov, kako lahko učitelji App Inventor vključijo v pouk in tako pasivne učence preoblikujejo v navdušene ustvarjalce iger.</p>
+            'title' => 'App Inventor in razvoj aplikacij',
+            'author' => 'Avtorica: Rosanna Kurrer',
+            'text' => '<p>Oglejte si ta videoposnetek, v katerem Rosanna Kurrer (ustanoviteljica platforme CyberWayFinder) razloži, kaj je App Inventor, pojasni prednosti vključevanja razvoja aplikacij v pouk in navede nekaj praktičnih primerov, kako lahko učitelji App Inventor vključijo v pouk in tako pasivne učence preoblikujejo v navdušene ustvarjalce iger.</p>
 <p>Vsi uporabljamo aplikacije, saj lahko z njimi priročno in hitro usklajujemo svoje dejavnosti. Vse pogosteje se uporabljajo tudi v izobraževanju, saj omogočajo prilagojeno učenje, uporabnikom pa pridobivanje informacij – zakaj ne bi torej učencem omogočili, da ustvarijo učno aplikacijo za druge?</p>',
-            'activities'=>[
-                '1'=>'Dejavnost 1 ‒ naslov za razredno stopnjo',
-                '2'=>'Dejavnost 2 ‒ naslov za predmetno stopnjo',
-                '3'=>'Dejavnost 3 ‒ naslov za srednjo šolo'
+            'activities' => [
+                '1' => 'Dejavnost 1 ‒ naslov za razredno stopnjo',
+                '2' => 'Dejavnost 2 ‒ naslov za predmetno stopnjo',
+                '3' => 'Dejavnost 3 ‒ naslov za srednjo šolo'
             ]
         ],
         '7' => [
-            'title'=>'Eksperimentalno proučevanje in ustvarjanje',
-            'author'=>'Avtor: Diogo da Silva',
-            'text'=>'<p>Službe in delovna mesta se spreminjajo in z njimi se spreminja tudi izobraževanje. Ko učence pripravljamo na poklice 21. stoletja, nova znanja in spretnosti, kot so eksperimentalno proučevanje, ustvarjanje in računalniško mojstrstvo, postajajo vse pomembnejša, saj zmanjšujejo razkorak med šolo in realnim življenjem. Če učilnico spremenimo v sodelovalno okolje s poudarkom na reševanju problemov, spodbujamo angažiranost učencev in omogočamo njihov razcvet. Te dejavnosti krepijo razprave in s tem omogočajo, da razred postane komunikacijsko vozlišče, v katerem šteje vsak prispevek.</p> 
+            'title' => 'Eksperimentalno proučevanje in ustvarjanje',
+            'author' => 'Avtor: Diogo da Silva',
+            'text' => '<p>Službe in delovna mesta se spreminjajo in z njimi se spreminja tudi izobraževanje. Ko učence pripravljamo na poklice 21. stoletja, nova znanja in spretnosti, kot so eksperimentalno proučevanje, ustvarjanje in računalniško mojstrstvo, postajajo vse pomembnejša, saj zmanjšujejo razkorak med šolo in realnim življenjem. Če učilnico spremenimo v sodelovalno okolje s poudarkom na reševanju problemov, spodbujamo angažiranost učencev in omogočamo njihov razcvet. Te dejavnosti krepijo razprave in s tem omogočajo, da razred postane komunikacijsko vozlišče, v katerem šteje vsak prispevek.</p> 
 <p>Oglejte si spodnji videoposnetek, v katerem portugalski učitelj naravoslovja, tehnologije, inženirstva, umetnosti in matematike Diogo da Silva, član projekta Escola Global, po korakih razloži pripravo učne ure, v kateri učenci iščejo rešitve po načelih eksperimentalnega proučevanja, ustvarjanja in računalniškega mojstrstva.</p>',
-            'activities'=>[
-                '1'=>'Dejavnost 1 ‒ naslov za razredno stopnjo',
-                '2'=>'Dejavnost 2 ‒ naslov za predmetno stopnjo',
-                '3'=>'Dejavnost 3 ‒ naslov za srednjo šolo'
+            'activities' => [
+                '1' => 'Dejavnost 1 ‒ naslov za razredno stopnjo',
+                '2' => 'Dejavnost 2 ‒ naslov za predmetno stopnjo',
+                '3' => 'Dejavnost 3 ‒ naslov za srednjo šolo'
             ]
         ],
         '8' => [
-            'title'=>'Programiranje za vse predmete',
-            'author'=>'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
-            'text'=>'<p>Kadar pomislimo na programiranje pri pouku, najprej pomislimo na računalništvo, tehnologijo, matematiko ali naravoslovje. Glede na to, da imajo učenci različne interese in predmete, bi bilo to dobro izkoristiti in programiranje uvesti v celotni učni načrt.</p> 
+            'title' => 'Programiranje za vse predmete',
+            'author' => 'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text' => '<p>Kadar pomislimo na programiranje pri pouku, najprej pomislimo na računalništvo, tehnologijo, matematiko ali naravoslovje. Glede na to, da imajo učenci različne interese in predmete, bi bilo to dobro izkoristiti in programiranje uvesti v celotni učni načrt.</p> 
 <p>Vključevanje programiranja v pouk ima številne koristi, saj učencem pomaga razvijati kritično mišljenje in spretnosti reševanja problemov ter postati aktivni uporabniki in voditi svoj učni proces, kar je v šolah ključnega pomena. Najpomembnejše pa je, da se bodo vaši učenci ob učenju zabavali!</p>
 <p>Jeziki, glasba ali pa naravoslovje, tehnologija, inženirstvo in matematika so le nekateri od predmetov, pri katerih lahko učitelji uvedejo programiranje za bodoče znanstvenike, glasbenike, umetnike, pravzaprav za vsakogar! Vsak učitelj lahko v pouk vključi programiranje in računalniško mišljenje. Učna ura nejezikovnega predmeta v tujem jeziku za pojasnitev algoritma vsakdanjega življenja, učenje naravoslovja, kjer učenci iz klobučevine izdelajo igralno palico, ali pa uporaba učnih robotov za večjo motivacijo pri matematiki so le nekateri primeri dejavnosti, ki jih lahko izvajate v svojem razredu.</p> 
 <p>Spodnji videoposnetek prikazuje, kako lahko učitelji glasbe, naravoslovja ali jezikov preprosto vključijo programiranje in računalniško mišljenje v pouk, tudi brez predhodnih izkušenj.</p>',
-            'activities'=>[
-                '1'=>'Dejavnost 1 ‒ Robotika in vključevanje pri poučevanju naravoslovja, tehnologije, inženirstva in matematike na razredni stopnji',
-                '2'=>'Dejavnost 2 ‒ Glasbeno programiranje',
-                '3'=>'Dejavnost 3 ‒ Eksperimentalno proučevanje in programiranje z orodjem Makey Makey',
-                '4'=>'Dejavnost 4 ‒ Algoritem vsakdanjega življenja za učno uro nejezikovnega predmeta v tujem jeziku'
+            'activities' => [
+                '1' => 'Dejavnost 1 ‒ Robotika in vključevanje pri poučevanju naravoslovja, tehnologije, inženirstva in matematike na razredni stopnji',
+                '2' => 'Dejavnost 2 ‒ Glasbeno programiranje',
+                '3' => 'Dejavnost 3 ‒ Eksperimentalno proučevanje in programiranje z orodjem Makey Makey',
+                '4' => 'Dejavnost 4 ‒ Algoritem vsakdanjega življenja za učno uro nejezikovnega predmeta v tujem jeziku'
             ]
         ],
         '9' => [
-            'title'=>'Izdelava avtomata z micro:bitom',
-            'author'=>'Pauline Maas',
-            'text'=>'<p>
+            'title' => 'Izdelava avtomata z micro:bitom',
+            'author' => 'Pauline Maas',
+            'text' => '<p>
                    Uporaba micro:bita, žepnega računalnika, s katerim je programiranje zelo preprosto, je zabaven in preprost način, da s svojimi učenci izdelate zanimive izdelke – od robotov do glasbenih instrumentov, hkrati pa jih učite programiranja. Je preprost in enostaven za uporabo tudi za najmlajše programerje, hkrati pa dovolj zmogljiv za naprednejše učence. Lahko ga vključite v različne učne ure od zgodovine do matematike in celo naravoslovja. Možnosti so neskončne. Micro:bit je vključujoč in poceni način za učenje o programiranju, hkrati pa vzpostavlja ključne veščine, kot so računalniško razmišljanje, reševanje težav in ustvarjalnost.
                    </p>
                    <p>
                   V tem videoposnetku bo Pauline Maas, učiteljica računalništva v kraju Koninklijke Visio, predstavila micro:bit in nekaj praktičnih primerov, kako ga učitelji lahko vključijo v pouk, pasivne učence pa spremenijo v navdušene ustvarjalce.
                 </p>',
-            'activities'=>[
-                '1'=>'Morsejeva koda/abeceda z micro:bitom za osnovne šole',
-                '2'=>'Soba pobega z micro:bitom za nižje srednje šole',
-                '3'=>'Izdelava avtomata za višje srednje šole',
+            'activities' => [
+                '1' => 'Morsejeva koda/abeceda z micro:bitom za osnovne šole',
+                '2' => 'Soba pobega z micro:bitom za nižje srednje šole',
+                '3' => 'Izdelava avtomata za višje srednje šole',
             ]
         ],
         '10' => [
-            'title'=>'Ustvarjalno programiranje v Pythonu',
-            'author'=>'Ivana Vezjak',
-            'text'=>'<p>
+            'title' => 'Ustvarjalno programiranje v Pythonu',
+            'author' => 'Ivana Vezjak',
+            'text' => '<p>
 Prehod od vizualnega na tekstovno programiranja je naravni proces učenja programiranja. Medtem ko je vizualno programiranje pogosto odlično za začetnike, si lahko učenci čez nekaj časa zaželijo nov izziv. Tekstovno programiranje je naslednji korak za vse, ki se želite še globlje potopiti v programiranje in računalniško razmišljanje. 
                    </p>
                    <p>                   
@@ -150,59 +150,92 @@ V tem videoposnetku vam Ivana Vezjak predstavi Pythonovo osnovno sintakso. Pytho
 <p> 
 S Pythonom lahko učenci ustvarijo kvize o zgodovinskih dogodkih, rešujejo matematične probleme in oblikujejo fizikalne simulacije, ustvarijo igre, izdelajo spletna mesta, izvedejo analizo podatkov za znanstvene projekte in še veliko več. Python ima bogato in obsežno standardno knjižnico, veliko skupnost ter veliko spletnih vadnic in projektov, ki jih je mogoče uporabiti za poučevanje, učenje in vadbo. S programiranjem v Pythonu, analizo programov in popravljanjem napak učenci razvijajo ustvarjalnost in se naučijo biti dosledni, vztrajni in potrpežljivi. Naučijo se analitičnega razmišljanja in sposobnosti reševanja težav z razčlenitvijo kompleksnih težav na manjše sestavne dele. Te sposobnosti jim bodo pomagale pri pristopu k reševanju težav na vseh drugih področjih njihovega življenja.
                 </p>',
-            'activities'=>[
-                '1'=>'Moj prvi kviz za osnovne šole',
-                '2'=>'Vislice za nižje srednje šole',
-                '3'=>'Ugani zastavo! za višje srednje šole',
+            'activities' => [
+                '1' => 'Moj prvi kviz za osnovne šole',
+                '2' => 'Vislice za nižje srednje šole',
+                '3' => 'Ugani zastavo! za višje srednje šole',
             ],
-            'links'=>[
+            'links' => [
                 'title' => 'Drugi povezani viri',
                 '1' => [
-                    "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Python Standard Library",
-                    "description"=>"Zbirka vnaprej pripravljene kode in modulov (npr. modul turtle, modul math itd.)",
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "Python Standard Library",
+                    "description" => "Zbirka vnaprej pripravljene kode in modulov (npr. modul turtle, modul math itd.)",
                 ],
                 '2' => [
-                    "url"=>"https://codecombat.com/",
-                    "title"=>"CodeCombat",
-                    "description"=>"Izobraževalna videoigra za učenje konceptov programiranja.",
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Izobraževalna videoigra za učenje konceptov programiranja.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/sl-SI/codeclub",
-                    "title"=>"CodeClub projects",
-                    "description"=>"Od začetnih do naprednih programov programiranja po korakih za otroke.",
+                    "url" => "https://projects.raspberrypi.org/sl-SI/codeclub",
+                    "title" => "CodeClub projects",
+                    "description" => "Od začetnih do naprednih programov programiranja po korakih za otroke.",
                 ],
                 '4' => [
-                    "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Invent your own computer games with Python",
-                    "description"=>"Knjiga, ki vas bo naučila, kako programirati svoje računalniške igre v Pythonu.",
+                    "url" => "https://inventwithpython.com/invent4thed/",
+                    "title" => "Invent your own computer games with Python",
+                    "description" => "Knjiga, ki vas bo naučila, kako programirati svoje računalniške igre v Pythonu.",
                 ],
                 '5' => [
-                    "url"=>"https://www.codewars.com/",
-                    "title"=>"CodeWars",
-                    "description"=>"Izobraževalna skupnost, v kateri se lahko učenci in učitelji sami urijo skozi vrsto izzivov.",
+                    "url" => "https://www.codewars.com/",
+                    "title" => "CodeWars",
+                    "description" => "Izobraževalna skupnost, v kateri se lahko učenci in učitelji sami urijo skozi vrsto izzivov.",
                 ],
                 '6' => [
-                    "url"=>"https://hourofpython.com/",
-                    "title"=>"Hour of Python",
-                    "description"=>"Zbirka uvodnih lekcij Pythona (tako tekstovno kot v blokih) z uporabo interaktivnega orodja Trinkets.",
+                    "url" => "https://hourofpython.com/",
+                    "title" => "Hour of Python",
+                    "description" => "Zbirka uvodnih lekcij Pythona (tako tekstovno kot v blokih) z uporabo interaktivnega orodja Trinkets.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'Programiranje za vključevanje',
-            'author'=>'pripravila ekipa tedna programiranja',
-            'text'=>'<p>
+            'title' => 'Programiranje za vključevanje',
+            'author' => 'pripravila ekipa tedna programiranja',
+            'text' => '<p>
                    Vključevanje programiranja v pouk vam lahko predstavlja izziv, zlasti če so v vašem razredu otroci s posebnimi potrebami. Pomembno pa si je zapomniti, da se lahko programiranja nauči vsak – ne glede na svoje sposobnosti. Otroci s posebnimi potrebami imajo lahko veliko koristi od učnih vidikov programiranja, saj se učenci naučijo pomembnih življenjskih veščin, kot so reševanje težav, organizacija in neodvisnost. Programiranje lahko s sodelovanjem in timskim delom izboljša tudi medosebne in socialne veščine, s katerimi imajo otroci s posebnimi potrebami pogosto težave. Najpomembneje pa je, da se bodo učenci zabavali s svojimi vrstniki pri skupnem učenju.
                    </p><p>
 V tem videoposnetku vam bo ekipa tedna programiranja pokazala nekaj praktičnih, preprostih in zabavnih programerskih dejavnosti, posebej prilagojenih za slabovidne učence, učence z Downovim sindromom in učence z motnjami avtističnega spektra, ki jih lahko učitelji zlahka vključijo v svoj pouk.                   
                 </p>',
-            'activities'=>[
-                '1'=>'Izklopljeno s škatlami za jajca',
-                '2'=>'Zelo pametna miška',
-                '3'=>'Zvezda ustvarja zvezde',
+            'activities' => [
+                '1' => 'Izklopljeno s škatlami za jajca',
+                '2' => 'Zelo pametna miška',
+                '3' => 'Zvezda ustvarja zvezde',
             ]
-        ]
+        ],
+        "12" => [
+            "title" => "Programiranje za cilje trajnostnega razvoja",
+            "author" => "Francisco Javier Masero, Cristina Nicolaita in Erviola Konomi",
+            "text" => [
+                "1" => "Tradicionalno izobraževanje učencem ponuja malo priložnosti za razumevanje in reševanje pravih svetovnih problemov, kot so spremembe svetovnega podnebja, enakost spolov, lakota, revščina in dobro zdravje ter počutje.",
+                "2" => "Cilji trajnostnega razvoja (SDG) so bistvo Agende za trajnostni razvoj 2030, ki so jo sprejele vse države članice Združenih narodov kot načrt za doseganje miru in blagostanja na planetu s spodbujanjem svetovnega razvoja. Učitelji lahko cilje SDG uporabijo v učilnicah kot orodje za razvoj kritičnega razmišljanja pri učencih, pa tudi da jim pomagajo poiskati njihovo identiteto in namen. Združevanje osnovnih elementov programiranja in računalniškega razmišljanja s SDG bo spodbudilo samozavest vaših učencev, vi pa jim boste pomagali razvijati njihovo ustvarjalnost, podjetniški duh in veščine za reševanje težav ali komunikacije.",
+                "3" => "Pri spodnjih dejavnostih bodo učenci uporabljali načela programa Scratch, ASCII-kodiranja in programiranja brez računalnika na teme, ki so globalno in družbeno pomembne danes. Učitelji bodo krepili zavedanje o ciljih trajnostnega razvoja ter jim pomagali razvijati empatijo, dejavno državljanstvo ter prodružbene veščine na zabaven in vključujoč način.",
+                "4" => "Ti učni načrti se osredotočajo na posamezne SDG:",
+                "5" => "Cilj trajnostnega razvoja 3: Poskrbeti za zdravo življenje in spodbujati splošno dobro počutje v vseh življenjskih obdobjih",
+                "6" => "Cilj trajnostnega razvoja 5: Doseči enakost spolov ter krepiti vlogo vseh žensk in deklic",
+                "7" => "Cilj trajnostnega razvoja 13: Sprejeti nujne ukrepe za boj proti podnebnim spremembam in njihovim posledicam",
+            ],
+            "activities" => [
+                "1" => "Projekt Karateka: Spoznavanje karateja prek programiranja za osnovne in srednje šole",
+                "2" => "Cilji trajnostnega razvoja in programiranje za podnebne spremembe za osnovno šolo",
+                "3" => "Programiranje za enakost spolov za srednje šole",
+            ]
+        ],
+        "13" => [
+            "title" => "Uvod v umetno inteligenco v učilnici ",
+            "author" => "Avtorja: Artur Coelho in Marjana Prifti Skenduli",
+            "text" => [
+                "1" => "Umetna inteligenca vpliva na številna področja vsakodnevnega življenja: samodejno popravlja besedilo med tipkanjem po vašem telefonu, izbiro glasbo, ki jo predvaja vaša najljubša aplikacija za glasbo, in si zapomni vaša gesla, ko jih pozabite. Umetna inteligenca se nanaša na kombinacijo strojnega učenja, robotike in algoritmov, uporabna pa je na vseh področjih: od računalništva do proizvodnje in od medicine do mode. Nesporno ima torej mesto v naših življenjih in družbah ter igra ključno vlogo v razvoju znanosti. Kot pri vseh drugih pomembnih pojavih v naših življenjih bodo učenci imeli o učenju o njej veliko koristi. Ampak kako učiti tako kompleksno stvar, kot je umetna inteligenca?",
+                "2" => "Ta učni drobec vam bo pomagal pojasniti učencem, kaj je umetna inteligenca in kakšno vlogo igra v njihovem življenju. Dejavnosti so zasnovane za nestrokovnjake, da ne bo težko razumeti vsebine in boste kompleksne izraze zlahka razdelali v preprosto razumljive ideje. S tem načrtom učne ure lahko učencem pomagate, da se naučijo uporabljati umetno inteligenco in nekatere mehanizme, ki stojijo za njo. Te dejavnosti so zasnovane za razvoj veščin analitičnega in kritičnega mišljenja pri učencih: pri Marjanini dejavnosti učenci razvijejo lijak za razvrščanje. Te dejavnosti bodo učencem prav tako pomagale razumeti različne uporabe umetne inteligence: pri Arturjevi dejavnosti se bodo učili o povezavi med umetno inteligenco in umetnostjo ter kako lahko umetno inteligenco uporabi za izboljšanje vizualnega izražanja. S temi dejavnostmi bodo učenci razmišljali tudi o nevarnostih umetne inteligence in njenem vplivu."
+            ],
+            "activities" => [
+                "1" => "Umetnost človek-umetna inteligenca, za osnovno šolo ",
+                "2" => "Stroji za učenje za razvrstitev: uvod v nadzorovano strojno učenje, za predmetno stopnjo in nižje razrede srednje šole",
+                "3" => " Stroji za učenje za razvrstitev: uvod v nadzorovano strojno učenje, za zadnje razrede srednje šole ",
+            ]
+        ],
+
+
     ],
     'download_video_script' => 'Prenos besedila videoposnetka',
     'ready_to_share' => 'Ste pripravljeni svoje znanje deliti s svojimi učenci?',

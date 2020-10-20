@@ -202,7 +202,41 @@ Cu Python, elevii pot să creeze jocuri cu întrebări despre evenimente istoric
                 '2'=>'Un șoricel foarte isteț',
                 '3'=>'O stea creează stele',
             ]
-        ]
+        ],
+
+        "12" => [
+            "title" => "Programarea  pentru obiective de dezvoltare sustenabilă",
+            "author" => "de Francisco Javier Masero, Cristina Nicolaita și Erviola Konomi",
+            "text" => [
+                "1" => "Educația tradițională oferă elevilor puține oportunități de a înțelege și de a rezolva probleme din lumea reală precum schimbările climatice la nivel global, egalitatea de gen, foametea, sărăcia sau o bună sănătate și bunăstarea.",
+                "2" => "Obiectivele de dezvoltare sustenabilă (ODS) reprezintă nucleul Agendei pentru dezvoltare sustenabilă din 2030, adoptate de către toate statele membre ale Națiunilor Unite ca foaie de parcurs în scopul obținerii păcii și prosperității pe planetă și al încurajării dezvoltării globale. Profesorii pot folosi obiectivele ODS în sălile de clasă ca un instrument care să ajute elevii să își dezvolte gândirea critică, dar și să îi ajute să își descopere identitatea și scopul în viață. Combinarea elementelor de bază de programare și gândire computațională cu obiectivele ODS va spori încrederea elevilor dvs., iar dvs. îi veți ajuta să își dezvolte creativitatea, spiritul antreprenorial și abilitățile de rezolvare a problemelor sau de comunicare.",
+                "3" => "În cadrul activităților expuse mai jos, elevii vor aplica principii de programare Scratch, ASCII, precum și de programare fără tehnologie digitală unor subiecte actuale cu relevanță globală și socială. Profesorii vor contribui la creșterea conștientizării importanței obiectivelor de dezvoltare sustenabilă, ajutând în același timp elevii să își dezvolte empatia, conștientizarea statutului de cetățean activ și abilitățile prosociale într-o manieră distractivă și participativă.",
+                "4" => "Aceste planuri de cursuri se concentrează pe rând pe câte un obiectiv ODS:",
+                "5" => "Obiectivul de dezvoltare sustenabilă 3: Asigurați o viață sănătoasă și promovați bunăstarea pentru toate persoanele, la toate vârstele ",
+                "6" => " Obiectivul de dezvoltare sustenabilă 5: Asigurați egalitatea de gen și promovați afirmarea tuturor femeilor și fetelor ",
+                "7" => " Obiectivul de dezvoltare sustenabilă 13: Luați măsuri urgente pentru combaterea schimbărilor climatice și a impactului acestora ",
+            ],
+            "activities" => [
+                "1" => "Proiectul Karateka: Învățând de karate prin intermediul programării, pentru clasele primare și ciclul inferior și superior de liceu ",
+                "2" => "Obiective de dezvoltare sustenabilă și programare pentru schimbările climatice, pentru clasele primare ",
+                "3" => "Programare pentru egalitatea de gen, pentru ciclul superior de liceu ",
+            ]
+        ],
+        "13" => [
+            "title" => "Introducere în conceptul de Inteligență Artificială în sala de clasă",
+            "author" => "de Artur Coelho și Marjana Prifti Skenduli",
+            "text" => [
+                "1" => "Inteligența Artificială (AI) are impact asupra multor sfere din viața noastră zilnică: corectează automat mesajul pe care îl scrieți pe telefon, alege muzica pe care o redă aplicația voastră preferată de muzică și vă reamintește parolele atunci când le-ați uitat. AI se referă la o combinație de învățare automată, robotică și algoritmi cu aplicații din toate domeniile: de la informatică la fabricație și de la medicină la modă. Prin urmare, a câștigat un loc de necontestat în viețile noastre și în societățile noastre și joacă un rol cheie în dezvoltarea științifică. Și, precum orice alt fenomen important din viețile noastre, elevii vor avea beneficii învățând despre acesta. Însă, cum să abordăm predarea unui asemenea lucru complex precum AI?",
+                "2" => "Acest modul de învățare vă va ajuta să le explicați elevilor ce este AI și ce rol joacă aceasta în viețile lor. Aceste activități sunt concepute în așa fel încât non-experții să poată înțelege cu ușurință conținutul și să poată descompune eficient termeni complecși în idei ușor de înțeles. Cu ajutorul acestor planuri de cursuri veți putea ajuta elevii să învețe modurile de utilizare a AI și unele dintre mecanismele care stau în spatele acesteia. Aceste activități au ca scop dezvoltarea abilităților de gândire analitică și critică ale elevilor: de exemplu, în activitatea Marjanei, elevii dezvoltă o cale de clasificare. Aceste activități vor ajuta elevii și să înțeleagă aplicațiile diverse ale AI: în activitatea lui Artur, elevii vor învăța despre legătura dintre AI și artă și modurile în care se poate folosi AI pentru a îmbunătăți expresia vizuală. În cadrul acestor activități, elevii vor reflecta și la pericolele reprezentate de AI și impactul acestora."
+            ],
+            "activities" => [
+                "1" => "Arta umană-AI pentru clasele primare ",
+                "2" => "Învățarea mașinilor să clasifice: Introducere în Învățarea Automată Supervizată (Supervised Machine Learning) pentru elevii din ciclul inferior de liceu ",
+                "3" => " Învățarea mașinilor să clasifice: Introducere în Învățarea Automată Supervizată (Supervised Machine Learning) pentru elevii din ciclul superior de liceu ",
+            ]
+        ],
+
+
     ],
     'download_video_script' => 'Descărcați textul videoclipului',
     'ready_to_share' => 'Sunteți gata să împărtășiți ce ați învățat cu elevii dumneavoastră?',

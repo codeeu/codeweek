@@ -202,7 +202,41 @@ U ovom video zapisu, tim Nedjelje programiranja pokazaće vam nekoliko praktičn
                 '2'=>'Vrlo pametan miš',
                 '3'=>'Zvijezda pravi zvijezde',
             ]
-        ]
+        ],
+
+        "12" => [
+            "title" => "Kodiranje za ciljeve održivog razvoja",
+            "author" => "Francisco Javier Masero, Cristina Nicolaita i Erviola Konomi",
+            "text" => [
+                "1" => "Tradicionalno obrazovanje pruža male mogućnosti učenicima da razumiju i rješavaju probleme stvarnog svijeta poput globalnih klimatskih promjena, rodne ravnopravnosti, gladi, siromaštva ili dobrog zdravlja i opšte dobrobiti.",
+                "2" => "Ciljevi održivog razvoja (Sustainable Development Goals -SDGs) čine suštinu Agende za održivi razvoj do 2030. godine, usvojenu od strane svih država članica Ujedinjenih nacija kao putokaz ka postizanju mira i prosperiteta na planeti, podstičući globalni razvoj. Nastavnici mogu koristiti ciljeve održivog razvoja u učionici kao alat za razvijanje kritičkog mišljenja učenika ali takođe kako bi im pomogli u pronalaženju sopstvenog identiteta i svrhe. Kombinovanjem osnovnih elemenata kodiranja i računarskog razmišljanja sa ciljevima održivog razvoja unapređuje samopouzdanje vaših učenika a vi im pomažete da razviju svoju kreativnost, preduzetnički duh, vještine rješavanja problema ili komunikacijske vještine.",
+                "3" => "U sljedećim navedenim aktivnostima učenici će primijeniti principe Skrač (Scratch), ASCII kodiranje i programiranje bez upotrebe digitalne tehnologije (unplugged)  na danas aktuelne teme od globalnog i društvenog značaja. Nastavnici će podizati svijest o ciljevima održivog razvoja, pomažući im da na zabavan način svojim učešćem razviju empatiju, aktivan građanski odnos i pro-društvene vještine.",
+                "4" => "Nastavni planovi za ove lekcije se fokusiraju pojedinačno na svaki od ciljeva održivog razvoja",
+                "5" => "Cilj održivog razvoja 3: Obezbijediti zdrav život i promovisati dobrobit za sve u svim uzrastima",
+                "6" => "Cilj održivog razvoja 5: Postići rodnu ravnopravnost i osnažiti sve žene i djevojke",
+                "7" => "Cilj održivog razvoja 13: Preduzeti hitne mjere u borbi protiv klimatskih promjena i njihovog uticaja",
+            ],
+            "activities" => [
+                "1" => "Karateka projekat:Učenje karatea kroz programiranje za osnovnu, niže i više razrede srednje škole",
+                "2" => "Ciljevi održivog razvoja i kodiranje radi klimatskih promjena za osnovnu školu",
+                "3" => "Kodiranje za rodnu ravnopravnost za više razrede srednje škole",
+            ]
+        ],
+        "13" => [
+            "title" => "Uvod u Vještačku inteligenciju u učionici",
+            "author" => "Artur Coelho i Marjana Prifti Skenduli",
+            "text" => [
+                "1" => "Vještačka inteligencija (Artificial intelligence - AI) utiče na mnoge oblasti svakodnevnog života: automatski ispravlja tekst koji kucate na telefonu, bira muziku na vašoj omiljenoj muzičkoj aplikaciji i pamti vaše lozinke onda kada ih vi zaboravite. AI se odnosi na kombinaciju mašinskog učenja, robotike i algoritama i ima primjenu u svim oblastima: od računarstva do proizvodnje, od medicine do mode. Stoga nesporno zauzima mjesto u našim životima i društvu i igra ključnu ulogu u razvoju nauke. I kao i svaki drugi bitan fenomen u našem životu, učeći o ovome učenici će imati koristi. Ali kako podučavati o tako složenoj materiji kao što je AI?",
+                "2" => "Ovi Materijali za učenje će vam pomoći da učenicima objasnite šta je to AI i koju ulogu igra u životu učenika. Ove aktivnosti su namjenjene kako bi laici lako razumjeli sadržaj i kako bi složene pojmove mogli efikasno razložiti na lako razumljive ideje. Uz ove nastavne planove možete pomoći učenicima da nauče kako se koristi vještačka inteligencija kao i neke od mehanizama koji je pokreću. Namjena ovih aktivnosti je da učenici razviju vještine analitičkog i kritičkog mišljenja: na primjer, Marjana izvodi aktivnosti kroz koje učenici razvijaju klasifikacione šeme. Ove aktivnosti takođe pomažu učenicima razumijevanje različite primjene vještačke inteligencije: Arturova aktivnosti podučiće o vezi između vještačke inteligencije i umjetnosti i kako se putem AI može poboljšati vizuelni izraz. Uz ove aktivnosti, učenici će se takođe baviti opasnostima vještačke inteligencije i njenom uticaju."
+    ],
+    "activities" => [
+        "1" => "Čovjek – Vještačka inteligencija – Umjetnost, za osnovnu školu",
+        "2" => "Podučavanje mašina metodi klasifikacije: Uvod u nadgledano mašinsko učenje, za niže razrede srednje škole",
+        "3" => "Podučavanje mašina metodi klasifikacije: Uvod u nadgledano mašinsko učenje, za više razrede srednje škole",
+    ]
+],
+
+
     ],
     'download_video_script' => 'Preuzmite video zapis.',
     'ready_to_share' => 'Da li ste spremni podijeliti sa svojim učenicima ono što ste naučili?',
