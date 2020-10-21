@@ -30,7 +30,6 @@
 
         methods: {
             flash(data) {
-              console.log(data);
                 if (data) {
                     this.body = data.message;
                     this.level = data.level;
