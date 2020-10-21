@@ -20,7 +20,7 @@ class EventPictureController extends Controller
     public function store()
     {
         request()->validate([
-            'picture' => ['required', 'image']
+            'picture' => ['required', 'image','max:1024']
         ]);
 
 
