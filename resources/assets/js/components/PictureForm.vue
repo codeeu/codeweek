@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="error !== ''" style="background-color: darkred; color:white; padding: 4px;">{{error}}</div>
+    <div v-if="error !== ''" style="background-color: darkred; color:white; padding: 4px;">{{ error }}</div>
     <div class="level">
       <img :src="pictureClone" class="mr-1">
     </div>
@@ -45,8 +45,14 @@ export default {
             flash('Picture uploaded !');
           }).catch(error => {
 
-        flash(error.response.data.errors.picture[0],"Error");
-        this.error = error.response.data.errors.picture[0];
+
+        if (error.response.data.errors && error.response.data.errors.picture) {
+          this.error = error.response.data.errors.picture[0];
+        } else {
+          this.error = "Image is too large. Maximum is 1Mb";
+        }
+        flash(this.error, "Error");
+
 
       })
     },
