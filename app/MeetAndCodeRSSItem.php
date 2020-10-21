@@ -7,6 +7,56 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 
+/**
+ * App\MeetAndCodeRSSItem
+ *
+ * @property int $id
+ * @property string $title
+ * @property string $description
+ * @property string $link
+ * @property string $pubDate
+ * @property string $organisation_mail
+ * @property string $school_name
+ * @property string $organisation_type
+ * @property string $activity_type
+ * @property string $country
+ * @property string $address
+ * @property string $organiser_website
+ * @property string $organiser_email
+ * @property string $image_link
+ * @property string $start_date
+ * @property string $end_date
+ * @property float $lat
+ * @property float $lon
+ * @property string|null $imported_at
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem query()
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereActivityType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereAddress($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereCountry($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereDescription($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereEndDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereImageLink($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereImportedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereLat($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereLink($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereLon($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereOrganisationMail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereOrganisationType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereOrganiserEmail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereOrganiserWebsite($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem wherePubDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereSchoolName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereStartDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|MeetAndCodeRSSItem whereUpdatedAt($value)
+ * @mixin \Eloquent
+ */
 class MeetAndCodeRSSItem extends Model
 {
 
