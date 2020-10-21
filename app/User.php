@@ -10,6 +10,76 @@ use Illuminate\Support\Facades\Storage;
 use Spatie\Permission\Traits\HasRoles;
 use App\Filters\UserFilters;
 
+/**
+ * App\User
+ *
+ * @property int $id
+ * @property string $firstname
+ * @property string $lastname
+ * @property string $username
+ * @property string $password
+ * @property string|null $email
+ * @property string|null $country_iso
+ * @property string|null $twitter
+ * @property string|null $website
+ * @property string|null $bio
+ * @property string $avatar_path
+ * @property string|null $provider
+ * @property string|null $remember_token
+ * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property int $privacy
+ * @property string|null $email_display
+ * @property int $receive_emails
+ * @property-read \App\Country|null $country
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Event[] $events
+ * @property-read int|null $events_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Excellence[] $excellences
+ * @property-read int|null $excellences_count
+ * @property mixed $ambassador
+ * @property-read string $avatar
+ * @property-read mixed $full_name
+ * @property-read \Illuminate\Notifications\DatabaseNotificationCollection|\Illuminate\Notifications\DatabaseNotification[] $notifications
+ * @property-read int|null $notifications_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Participation[] $participations
+ * @property-read int|null $participations_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Spatie\Permission\Models\Permission[] $permissions
+ * @property-read int|null $permissions_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Spatie\Permission\Models\Role[] $roles
+ * @property-read int|null $roles_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\School[] $schools
+ * @property-read int|null $schools_count
+ * @method static \Illuminate\Database\Eloquent\Builder|User filter(\App\Filters\UserFilters $filters)
+ * @method static \Illuminate\Database\Eloquent\Builder|User newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|User newQuery()
+ * @method static \Illuminate\Database\Query\Builder|User onlyTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder|User permission($permissions)
+ * @method static \Illuminate\Database\Eloquent\Builder|User query()
+ * @method static \Illuminate\Database\Eloquent\Builder|User role($roles, $guard = null)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereAvatarPath($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereBio($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereCountryIso($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereDeletedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereEmail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereEmailDisplay($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereFirstname($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereLastname($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User wherePassword($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User wherePrivacy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereProvider($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereReceiveEmails($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereRememberToken($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereTwitter($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereUsername($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereWebsite($value)
+ * @method static \Illuminate\Database\Query\Builder|User withTrashed()
+ * @method static \Illuminate\Database\Query\Builder|User withoutTrashed()
+ * @mixin \Eloquent
+ */
 class User extends Authenticatable
 {
     use Notifiable;

@@ -7,6 +7,60 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 
+/**
+ * App\BonnRSSItem
+ *
+ * @property int $id
+ * @property int $uid
+ * @property string $title
+ * @property string $description
+ * @property string $organizer
+ * @property string|null $photo
+ * @property string $eventEndDate
+ * @property string $eventStartDate
+ * @property float $latitude
+ * @property float $longitude
+ * @property string $location
+ * @property string $user_company
+ * @property string $user_email
+ * @property string $user_publicEmail
+ * @property string $user_type
+ * @property string $user_website
+ * @property string $activity_type
+ * @property string|null $imported_at
+ * @property string|null $audience
+ * @property string|null $themes
+ * @property string|null $tags
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem query()
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereActivityType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereAudience($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereDescription($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereEventEndDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereEventStartDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereImportedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereLatitude($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereLocation($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereLongitude($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereOrganizer($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem wherePhoto($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereTags($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereThemes($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereUid($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereUserCompany($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereUserEmail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereUserPublicEmail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereUserType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BonnRSSItem whereUserWebsite($value)
+ * @mixin \Eloquent
+ */
 class BonnRSSItem extends Model
 {
 

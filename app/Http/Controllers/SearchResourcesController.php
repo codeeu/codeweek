@@ -28,7 +28,6 @@ class SearchResourcesController extends Controller
 
         $items = ResourceItem::filter($filters)->whereActive(true)->orderBy('name', 'asc');
 
-
         //return($items->get()->distinct());
 
         //dd($items->distinct()->paginate(10)->items);
