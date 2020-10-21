@@ -15,7 +15,7 @@
         </section>
 
         <section class="codeweek-content-wrapper" style="align-items: center;">
-            <h1>Something went horribly wrong</h1>
+            <h1>Oops! Something is not working. Try again in a bit!</h1>
             <a href="/" class="codeweek-action-link-button" style="width: 200px;margin-top: 15px;">GO TO HOMEPAGE</a>
         </section>
 

@@ -8,6 +8,12 @@
             <div class="text">
                 <h2>#CodeWeek</h2>
                 <h1>Code Hunting Game</h1>
+                    <h4>
+                        <div>
+                            <span style="">Scan this QR Code to start the game:</span>
+                            <a href="https://t.me/treasurehuntbot?start=codeweek2020"><img style="vertical-align:middle" width="100" src="https://codeweek-s3.s3-eu-west-1.amazonaws.com/img/qrcode-codeweek-2020.png"></a>
+                        </div>
+                </h4>
             </div>
             <div class="image">
                 <img src="/images/banner_about.svg" class="static-image">
@@ -15,6 +21,8 @@
         </section>
 
         <div id="map-code-hunting-game" style="height: 800px;"></div>
+
+
 
     </section>
 
