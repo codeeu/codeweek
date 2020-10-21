@@ -7,6 +7,51 @@ use Exception;
 use Illuminate\Database\Eloquent\Model;
 use phpDocumentor\Reflection\Types\String_;
 
+/**
+ * App\ResourceItem
+ *
+ * @property int $id
+ * @property string $name
+ * @property string $source
+ * @property string $description
+ * @property string|null $thumbnail
+ * @property string|null $facebook
+ * @property string|null $twitter
+ * @property int $active
+ * @property int $teach
+ * @property int $learn
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\ResourceCategory[] $categories
+ * @property-read int|null $categories_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\ResourceLanguage[] $languages
+ * @property-read int|null $languages_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\ResourceLevel[] $levels
+ * @property-read int|null $levels_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\ResourceProgrammingLanguage[] $programmingLanguages
+ * @property-read int|null $programming_languages_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\ResourceSubject[] $subjects
+ * @property-read int|null $subjects_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\ResourceType[] $types
+ * @property-read int|null $types_count
+ * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem filter(\App\Filters\ResourceFilters $filters)
+ * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem query()
+ * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem whereActive($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem whereDescription($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem whereFacebook($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem whereLearn($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem whereSource($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem whereTeach($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem whereThumbnail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem whereTwitter($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem whereUpdatedAt($value)
+ * @mixin \Eloquent
+ */
 class ResourceItem extends Model
 {
     protected $guarded = [];
