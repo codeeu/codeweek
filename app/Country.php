@@ -6,6 +6,38 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Carbon;
 
+/**
+ * App\Country
+ *
+ * @property string $iso
+ * @property string $parent
+ * @property string $name
+ * @property int|null $population
+ * @property string $continent
+ * @property string $facebook
+ * @property string $website
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property float|null $longitude
+ * @property float|null $latitude
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Event[] $events
+ * @property-read int|null $events_count
+ * @method static \Illuminate\Database\Eloquent\Builder|Country newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Country newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Country query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Country whereContinent($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Country whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Country whereFacebook($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Country whereIso($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Country whereLatitude($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Country whereLongitude($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Country whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Country whereParent($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Country wherePopulation($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Country whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Country whereWebsite($value)
+ * @mixin \Eloquent
+ */
 class Country extends Model
 {
     protected $table = 'countries';
