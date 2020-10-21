@@ -2,30 +2,31 @@
 
 namespace App\Console\Commands\Importers;
 
+use App\BonnRSSItem;
 use App\Helpers\ImporterHelper;
 
-use App\HamburgRSSItem;
+
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Log;
 
 
-class Hamburg extends Command
+class Bonn extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'import:hamburg';
+    protected $signature = 'import:bonn';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Import the data from Hamburg API';
+    protected $description = 'Import the data from Bonn API';
 
     /**
      * Create a new command instance.
@@ -46,10 +47,10 @@ class Hamburg extends Command
      */
     public function handle()
     {
-        Log::info("Loading Hamburg API Items in Database");
+        Log::info("Loading Bonn API Items in Database");
 
-        $techicalUser = ImporterHelper::getTechnicalUser("hamburg-technical");
-        $items = HamburgRSSItem::whereNull('imported_at')->get();
+        $techicalUser = ImporterHelper::getTechnicalUser("bonn-technical");
+        $items = BonnRSSItem::whereNull('imported_at')->get();
 
 
 
