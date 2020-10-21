@@ -1,7 +1,7 @@
 <template>
     <div class="codeweek-flash-message" role="alert" v-show="show">
         <div class="content">
-            <div class="level">Success!</div>
+            <div class="level">{{ level }}!</div>
             <div class="body">{{ body }}</div>
         </div>
     </div>

@@ -2,6 +2,7 @@
     <div>
         <input id="image" type="file" accept="image/*" @change="onChange"/>
         <label for="image">Choose a file</label>
+      Max size: 1 Mb
     </div>
 </template>
 
