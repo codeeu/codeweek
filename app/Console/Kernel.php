@@ -34,7 +34,7 @@ class Kernel extends ConsoleKernel
             ->dailyAt('12:05');
 
         $schedule->command('import:eeducation')
-            ->hourly();
+            ->dailyAt('04:00');
 
         $schedule->command('notify:administrators')
             ->hourlyAt(30);
