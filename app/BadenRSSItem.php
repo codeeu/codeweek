@@ -7,6 +7,60 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 
+/**
+ * App\BadenRSSItem
+ *
+ * @property int $id
+ * @property int $uid
+ * @property string $title
+ * @property string $description
+ * @property string $organizer
+ * @property string|null $photo
+ * @property string $eventEndDate
+ * @property string $eventStartDate
+ * @property float $latitude
+ * @property float $longitude
+ * @property string $location
+ * @property string $user_company
+ * @property string $user_email
+ * @property string $user_publicEmail
+ * @property string $user_type
+ * @property string $user_website
+ * @property string $activity_type
+ * @property string|null $imported_at
+ * @property string|null $audience
+ * @property string|null $themes
+ * @property string|null $tags
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem query()
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereActivityType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereAudience($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereDescription($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereEventEndDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereEventStartDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereImportedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereLatitude($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereLocation($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereLongitude($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereOrganizer($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem wherePhoto($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereTags($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereThemes($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereUid($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereUserCompany($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereUserEmail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereUserPublicEmail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereUserType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|BadenRSSItem whereUserWebsite($value)
+ * @mixin \Eloquent
+ */
 class BadenRSSItem extends Model
 {
 

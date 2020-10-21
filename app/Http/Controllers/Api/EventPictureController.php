@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Api;
 
-define("DEFAULT_AVATAR_PATH","avatars/default.png");
 
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
@@ -60,7 +59,7 @@ class EventPictureController extends Controller
         //Storage::disk('s3')->delete(auth()->user()->getOriginal('avatar_path'));
 
         auth()->user()->update([
-            'avatar_path' => DEFAULT_AVATAR_PATH
+            'avatar_path' => "avatars/default.png"
         ]);
 
         return response([], 204);

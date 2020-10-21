@@ -7,6 +7,60 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 
+/**
+ * App\HamburgRSSItem
+ *
+ * @property int $id
+ * @property int $uid
+ * @property string $title
+ * @property string $description
+ * @property string $organizer
+ * @property string|null $photo
+ * @property string $eventEndDate
+ * @property string $eventStartDate
+ * @property float $latitude
+ * @property float $longitude
+ * @property string $location
+ * @property string $user_company
+ * @property string $user_email
+ * @property string $user_publicEmail
+ * @property string $user_type
+ * @property string $user_website
+ * @property string $activity_type
+ * @property string|null $imported_at
+ * @property string|null $audience
+ * @property string|null $themes
+ * @property string|null $tags
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem query()
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereActivityType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereAudience($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereDescription($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereEventEndDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereEventStartDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereImportedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereLatitude($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereLocation($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereLongitude($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereOrganizer($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem wherePhoto($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereTags($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereThemes($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereUid($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereUserCompany($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereUserEmail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereUserPublicEmail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereUserType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|HamburgRSSItem whereUserWebsite($value)
+ * @mixin \Eloquent
+ */
 class HamburgRSSItem extends Model
 {
 
