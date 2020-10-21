@@ -7,7 +7,7 @@ return [
     'levels' => 'Niveluri',
     'programming_languages' => 'Limbaje de programare',
     'categories' => 'Categorii',
-    'Languages' => 'Limbaje',
+    'Languages' => 'Limba',
     'Subjects' => 'Subiecte',
     'share' => 'Partajare',
     'communication_toolkit' => 'Set de instrumente de comunicare',
