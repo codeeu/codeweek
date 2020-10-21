@@ -48,6 +48,16 @@ class Event extends Resource
         return [
 
             Text::make('Title')->sortable(),
+            Text::make('Certificate', function () {
+                $certificate_url = $this->certificate_url;
+                return "<a target='_blank' href='{$certificate_url}'>{$certificate_url}</a>";
+            })->asHtml()->onlyOnDetail(),
+            Text::make('Web Link', function () {
+                $slug = $this->slug;
+                $id = $this->id;
+                $url = env("APP_URL");
+                return "<a target='_blank' href='{$url}/view/{$id}/{$slug}'>View Activity's Page</a>";
+            })->asHtml()->onlyOnDetail(),
             Text::make('Description')->onlyOnDetail(),
             Text::make('Organizer')->onlyOnDetail(),
             Text::make('codeweek_for_all_participation_code')->sortable()->onlyOnDetail(),
