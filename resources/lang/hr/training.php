@@ -202,7 +202,41 @@ U ovom videozapisu tim Tjedna kodiranja pokazat će vam nekoliko praktičnih, je
                 '2'=>'Jedan jako pametan miš ',
                 '3'=>'Zvijezda koja rađa zvijezde ',
             ]
-        ]
+        ],
+
+        "12" => [
+            "title" => "Kodiranje za ciljeve održivog razvoja",
+            "author" => "napisali Francisco Javier Masero, Cristina Nicolaita i Erviola Konomi",
+            "text" => [
+                "1" => "Tradicionalno obrazovanje pruža učenicima malo prilika za razumijevanje i rješavanje problema iz stvarnog svijeta kao što su globalne klimatske promjene, ravnopravnost spolova, glad, siromaštvo ili dobro zdravlje i dobrobit.",
+                "2" => "Ciljevi održivog razvoja (SDG) su srž Agende za održivi razvoj do 2030. godine, koju su sve države članice Ujedinjenih naroda usvojile kao putokaz za postizanje mira i prosperiteta na planetu, potičući globalni razvoj. Nastavnici mogu koristiti SDG-ove u učionici kao alat za razvijanje ključnog mišljenja učenika, ali i kao pomoć u pronalaženju identiteta i svrhe. Kombinacija osnovnih elemenata kodiranja i računskog razmišljanja sa SDG-ovima povećat će samopouzdanje vaših učenika, a vi ćete im pomoći da razviju svoju kreativnost, poduzetnički duh, vještine rješavanja problema ili komunikacijske vještine.",
+                "3" => "U dolje datim aktivnostima učenici će primijeniti principe Scratch, ASCII kodiranja i „unplugged“ kodiranja na teme od globalne i društvene važnosti danas. Nastavnici će podizati svijest o ciljevima održivog razvoja, pomažući im da na zabavan i zanimljiv način razviju empatiju, aktivno građanstvo i prosocijalne vještine.",
+                "4" => "Ovi se planovi lekcija usredotočuju na svaki od SDG-ova:",
+                "5" => "Cilj održivog razvoja 3: Osigurati zdrav život i promovirati dobrobit svih u svim dobnim skupinama",
+                "6" => "Cilj održivog razvoja 5: Postići rodnu ravnopravnost i osnažiti sve žene i djevojke",
+                "7" => "Cilj održivog razvoja 13: Poduzeti hitne mjere u borbi protiv klimatskih promjena i njihovih utjecaja",
+            ],
+            "activities" => [
+                "1" => "Karateka projekt: Učenje karatea kroz programiranje, za osnovnu, nižu i višu srednju školu",
+                "2" => "Ciljevi održivog razvoja i kodiranje za klimatske promjene, za osnovnu školu",
+                "3" => "Kodiranje za ravnopravnost spolova, za srednju školu",
+            ]
+        ],
+        "13" => [
+            "title" => "Uvod u umjetnu inteligenciju u učionici",
+            "author" => "autori Artur Coelho i Marjana Prifti Skenduli",
+            "text" => [
+                "1" => "Umjetna inteligencija (AI) utječe na mnoga područja svakodnevnog života: automatski ispravlja tekst koji pišete na telefonu, bira glazbu koju vaša omiljena glazbena aplikacija pušta i pamti vaše lozinke kad ste ih zaboravili. AI se odnosi na kombinaciju strojnog učenja, robotike i algoritama, s aplikacijama u svim poljima: od informatike do proizvodnje i od medicine do mode. Stoga ima neporecivo mjesto u našim životima i našim društvima i igra ključnu ulogu u razvoju znanosti. I kao i svaki drugi važan fenomen u našem životu, i učenici će imati koristi od učenja o njemu. Ali kako podučavati o tako složenoj stvari kao što je AI?",
+                "2" => "Ovaj dio učenja pomoći će vam objasniti učenicima što je AI i koju ulogu on ima u životu učenika. Te su aktivnosti namijenjene nestručnjacima da lako razumiju sadržaj i da složene pojmove mogu učinkovito razbiti na lako razumljive ideje. Ovim planovima lekcija možete pomoći učenicima da nauče koristi AI i neke od mehanizama koji stoje iza njega. Te su aktivnosti namijenjene učenicima da razviju svoje vještine analitičkog i kritičkog mišljenja: na primjer, u Marjaninoj aktivnosti učenici razvijaju klasifikacijski cjevovod. Te će aktivnosti također pomoći učenicima da razumiju različite primjene umjetne inteligencije: u Arturovoj aktivnosti naučit će o vezi između umjetne inteligencije i umjetnosti i kako se umjetna inteligencija može koristiti za poboljšanje vizualnog izražavanja. Ovim aktivnostima učenici će također razmišljati o opasnostima umjetne inteligencije i njihovom utjecaju."
+            ],
+            "activities" => [
+                "1" => "Umjetnost čovjek - umjetna inteligencija, osnovna škola",
+                "2" => "Učenje strojeva da klasificiraju: Uvod u nadzirano strojno učenje, za niže srednje škole",
+                "3" => "Učenje strojeva da klasificiraju: Uvod u nadzirano strojno učenje, za više srednje škole",
+            ]
+        ],
+
+
     ],
     'download_video_script' => 'Preuzmite videoskriptu',
     'ready_to_share' => 'Jeste li spremni podijeliti naučeno sa svojim učenicima?',

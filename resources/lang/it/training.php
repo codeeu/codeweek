@@ -202,7 +202,49 @@ Con Python gli studenti possono creare quiz su eventi storici, risolvere problem
                 '2'=>'Un mouse molto intelligente',
                 '3'=>'La stella che fa le stelle',
             ]
-        ]
+        ],
+
+        "12" => [
+            "title" => "Programmare per raggiungere obiettivi di sviluppo sostenibile",
+            "author" => "di Francisco Javier Masero, Cristina Nicolaita e Erviola Konomi",
+            "text" => [
+                "1" => "L'istruzione tradizionale offre agli studenti poche opportunità per comprendere e risolvere i problemi del mondo reale, come il cambiamento climatico a livello globale, l'uguaglianza di genere, la fame, la povertà, buone condizioni di salute e benessere. ",
+                "2" => "Gli Obiettivi di Sviluppo Sostenibile (SDG) sono il nucleo dell'Agenda per lo Sviluppo Sostenibile del 2030, adottata da tutti gli Stati membri delle Nazioni Unite come mappa per orientarsi a raggiungere la pace e la prosperità sul pianeta, incoraggiando lo sviluppo globale. Gli insegnanti possono usare gli SDG in classe come strumento per far sviluppare il pensiero critico ai loro studenti, ma anche per aiutarli a trovare la loro identità e i loro obiettivi. La combinazione di elementi di base della codifica e del pensiero computazionale con gli SDG aumenterà la fiducia dei vostri studenti e voi li aiuterete a sviluppare la loro creatività, lo spirito imprenditoriale, la capacità di risolvere problemi o di comunicare. ",
+                "3" => "Nelle attività che seguono, gli studenti applicheranno i principi Scratch, di codifica ASCII e di codifica unplugged ad argomenti attuali di rilevanza globale e sociale. Gli insegnanti sensibilizzeranno gli studenti sugli obiettivi dello sviluppo sostenibile e li aiuteranno a sviluppare empatia, cittadinanza attiva e le competenze prosociali in modo divertente e coinvolgente. ",
+                "4" => "Ciascun piano di lezione si concentra su un SDG:",
+         "5" => "Obiettivo 3 dello sviluppo sostenibile: garantire una vita sana e promuovere il benessere per tutti a tutte le età",
+         "6" => "Obiettivo 5 dello sviluppo sostenibile: raggiungere l'uguaglianza di genere e dare potere a tutte le donne e le ragazze",
+         "7" => "Obiettivo 13 dello sviluppo sostenibile: agire con urgenza per combattere il cambiamento climatico e le sue conseguenze",
+     ],
+    "activities" => [
+    "1" => "Progetto Karateka: conoscere il karate attraverso la programmazione, per scuole elementari, medie e superiori",
+    "2" => "Obiettivi di sviluppo sostenibile e di programmazione per il cambiamento climatico, per la scuola primaria",
+    "3" => "Codifica per l'uguaglianza di genere, per la scuola secondaria superiore",
+]
+]
+
+     ,
+
+
+"13" => [
+    "title" => "Introduzione all'intelligenza artificiale a scuola",
+    "author" => "di Artur Coelho e Marjana Prifti Skenduli",
+    "text" => [
+        "1" => "L'Intelligenza Artificiale (IA) ha un impatto su molte aree della vita quotidiana: autocorregge il testo che digiti sul tuo cellulare, sceglie i brani per la tua app musicale preferita e ti suggerisce password quando le hai dimenticate. Per IA si intende una combinazione di apprendimento automatico, robotica e algoritmi, con applicazioni in tutti i campi: dall'informatica alla produzione, dalla medicina alla moda. Perciò essa occupa uno spazio importante nelle nostre vite e nella nostra società e svolge un ruolo chiave nello sviluppo della scienza. E come da ogni altro importante fenomeno nella nostra vita, gli studenti trarranno beneficio dall'apprenderla. Ma come insegnare una cosa così complessa come l'IA? ",
+        "2" => "Questo Bit di apprendimento ti aiuterà a spiegare agli studenti cos'è l'IA e quale ruolo svolge nella loro vita. Queste attività sono pensate per i non esperti, in modo da renderne i contenuti facilmente comprensibili e analizzare efficacemente termini complessi trasformandoli in concetti semplici. Con questi modelli di lezione puoi aiutare gli studenti ad apprendere gli usi dell'IA e alcuni dei meccanismi che stanno dietro ad essa. Le attività sono progettate per consentire ai ragazzi di sviluppare le loro capacità analitiche e di pensiero critico: per esempio, in quella proposta da Marjana gli studenti sviluppano una pipeline di classificazione. Queste proposte aiuteranno anche gli studenti a comprendere le varie applicazioni dell'IA: nell'attività di Artur impareranno il legame tra l'IA e l'arte e come l'IA possa essere usata per migliorare l'espressione visiva. Grazie ad esse, gli alunni rifletteranno anche sui pericoli dell'IA e sul suo impatto. "
+    ],
+    "activities" => [
+        "1" => "Human-AI- Art, per la scuola elementare",
+        "2" => "Insegnare le macchine da classificare: introduzione al Supervised Machine Learning, per la scuola secondaria inferiore",
+        "3" => "Insegnare le macchine da classificare: introduzione al Supervised Machine Learning, per la scuola secondaria superiore",
+    ]
+],
+
+
+
+
+
+
     ],
     'download_video_script' => 'Scarica lo script video',
     'ready_to_share' => 'Pronto a condividere ciò che hai imparato con i tuoi studenti?',

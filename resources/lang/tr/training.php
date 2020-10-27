@@ -202,7 +202,42 @@ Bu videoda, Kod Haftası ekibi size özellikle görme bozukluğu, Down sendromu 
                 '2'=>'Çok Akıllı Bir Fare',
                 '3'=>'Yıldız Yapan Yıldız',
             ]
-        ]
+        ],
+
+        "12" => [
+            "title" => "Sürdürülebilir kalkınma hedefleri için kodlama",
+    "author" => "Hazırlayan: Francisco Javier Masero, Cristina Nicolaita ve Erviola Konomi",
+    "text" => [
+        "1" => "Geleneksel eğitim, öğrencilere küresel iklim değişikliği, cinsiyet eşitliği, açlık, yoksulluk veya sağlık ve refah gibi gerçek dünyadaki sorunları anlama ve çözme konusunda çok az fırsat sunar.",
+        "2" => "Sürdürülebilir Kalkınma Hedefleri (SKH'ler), Birleşmiş Milletlerin tüm üye devletleri tarafından dünyada barış ve refaha ulaşmak için bir yol haritası olarak kabul edilen ve küresel kalkınmayı teşvik eden 2030 Sürdürülebilir Kalkınma Gündeminin temelini oluşturmaktadır. Öğretmenler, öğrencilerin eleştirel düşüncelerini geliştirmelerinin yanı sıra kimliklerini bulmada ve hedeflerini belirlemelerine yardımcı olmak için sınıfta SDG'leri kullanabilir. Temel kodlama ve sayısal düşünme unsurlarını SKH'lerle birleştirmek, öğrencilerinizin güvenini artıracak ve onların yaratıcılıklarını, girişimcilik ruhlarını, problem çözme veya iletişim becerilerini geliştirmelerine yardımcı olacaksınız.",
+        "3" => "Aşağıdaki etkinliklerde öğrenciler Scratch, ASCII kodlama ve bağlantısız kodlama ilkelerini bugün küresel ve sosyal ilgisi düzeyindeki konulara uygulayacaklar. Öğretmenler, empati, etkin vatandaşlık ve toplum yanlısı becerilerini eğlenceli ve ilgi çekici bir şekilde geliştirmelerine yardımcı olurken sürdürülebilir kalkınma hedefleri hakkında farkındalık yaratacaklar.",
+        "4" => "Bu ders planlarının her biri, SKH'lerden birine odaklanmaktadır:",
+        "5" => "Sürdürülebilir Kalkınma Hedefi 3: İnsanların sağlıklarının iyi olmasını sağlamak ve her yaştan herkes için refahı teşvik etmek",
+        "6" => "Sürdürülebilir Kalkınma Hedefi 5: Cinsiyet eşitliğini sağlamak ve tüm kadınların haklarını savunmak ",
+        "7" => "Sürdürülebilir Kalkınma Hedefi 13: İklim değişikliği ve etkileriyle mücadele için acil önlem almak",
+    ],
+    "activities" => [
+        "1" => "Karateka projesi: İlkokul, Ortaokul ve Liseler için programlama yoluyla karateyi öğrenmek",
+        "2" => "İlkokullar için sürdürülebilir kalkınma hedefleri ve iklim değişikliği kodlaması",
+        "3" => "Liseler için cinsiyet eşitliği konusunda kodlama",
+    ]
+],
+
+"13" => [
+    "title" => "Sınıfta Yapay Zekaya Giriş",
+    "author" => "hazırlayan: Artur Coelho ve Marjana Prifti Skenduli",
+    "text" => [
+        "1" => "Yapay Zeka (AI), günlük yaşamın birçok alanını etkilemektedir: telefonunuza yazdığınız metni otomatik olarak düzeltir, en sevdiğiniz müzik uygulamanızın çaldığı müziği seçer ve unuttuğunuzda parolalarınızı hatırlar. AI, bilgisayar biliminden üretime ve tıptan modaya kadar tüm alanlardaki uygulamalarla birlikte makine öğrenimi, robotik ve algoritmaların bir kombinasyonunu ifade eder. Bu nedenle hayatımızda ve toplumlarımızda yadsınamaz bir yere sahiptir ve bilimin gelişmesinde anahtar rol oynar. Ve hayatımızdaki diğer önemli olaylar gibi, öğrenciler de öğrenerek bundan faydalanacaklardır. Ama yapay zeka gibi karmaşık bir şey onlara nasıl öğretilir?",
+        "2" => "LearningBit, öğrencilere yapay zekanın ne olduğunu ve öğrencilerin yaşamlarında ne gibi bir rol oynadığını açıklamanıza yardımcı olacaktır. Bu faaliyetler, uzman olmayanların içeriği kolayca anlamaları ve karmaşık terimleri kolayca anlaşılabilir fikirlere etkili bir şekilde ayırabilmeleri için tasarlanmıştır. Bu ders planları ile öğrencilerin yapay zekanın kullanımlarını ve arkasındaki bazı mekanizmaları öğrenmelerine yardımcı olabilirsiniz. Bu etkinlikler, öğrencilerin analitik ve eleştirel düşünme becerilerini geliştirmeleri için tasarlanmıştır: örneğin, Marjana'nın etkinliğinde öğrenciler bir sınıflandırma hattı geliştirmektedir. Bu etkinlikler ayrıca öğrencilerin yapay zekanın çeşitli uygulamalarını anlamalarına yardımcı olacaktır: Artur'un aktivitesinde, Yapay Zeka ile Sanat arasındaki bağlantıyı ve yapay zekanın görsel ifadenin geliştirilmesi için nasıl kullanılabileceğini öğrenecekler. Bu etkinliklerle öğrenciler ayrıca yapay zekanın tehlikeleri ve etkileri üzerine düşünecekler."
+    ],
+    "activities" => [
+    "1" => "İlkokul için İnsan-Yapay Zeka Sanatı",
+        "2" => "Makinelere Sınıflandırmayı Öğretmek: Ortaokul için Gözetimli Makine Öğrenimine Giriş",
+        "3" => "Makinelere Sınıflandırmayı Öğretmek: Lise için Denetimli Makine Öğrenimine Giriş",
+    ]
+],
+
+    
     ],
     'download_video_script' => 'Video metnini indirin',
     'ready_to_share' => 'Öğrendiklerinizi öğrencilerinizle paylaşmaya hazır mısınız?',

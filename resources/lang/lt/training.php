@@ -202,7 +202,43 @@ Naudodami „Python“, mokiniai gali kurti viktorinas apie istorinius įvykius,
                 '2'=>'Labai išmani pelė',
                 '3'=>'Žvaigždes kurianti žvaigždė',
             ]
-        ]
+        ],
+
+        "12" => [
+            "title" => "Programavimas ir darnūs vystymosi tikslai",
+            "author" => "Francisco Javier Masero, Cristina Nicolaita ir Erviola Konomi",
+            "text" => [
+                "1" => "Tradicinės švietimo sistemos suteikia mokiniams nedaug galimybių mokytis suprasti ir spręsti gyvenimiškas problemas, tokias kaip pasaulio klimato kaitą, lyčių lygybę, badą, skurdą ar sveikatą ir gerovę.",
+                "2" => "Darnūs vystymosi tikslai (DVT) yra Darnaus vystymosi darbotvarkės iki 2030 m. šerdis. Darbotvarkę patvirtino visos Jungtinių Tautų valstybės narės kaip veiksmų planą siekti taikos ir gerovės pasaulyje, skatinant visuotinį vystymąsi. Mokytojai gali taikyti DVT klasėje kaip priemonę mokiniams ugdyti kritinį mąstymą bei padėti rasti savo tapatybę ir tikslą. Derindami pagrindinius programavimo ir informatinio mąstymo elementus sustiprinsite savo mokinių pasitikėjimą ir padėsite jiems ugdyti savo kūrybiškumą,  verslumą, problemų sprendimo ir bendravimo įgūdžius.",
+                "3" => "Toliau pateiktuose užsiėmimuose mokiniai pritaikys „Scratch“, ASCII ir analoginio programavimo principus visuotiniu ir socialiniu požiūriu šiandien aktualiose temose. Mokytojai didins informuotumą apie darnius vystymosi tikslus, tuo pačiu padėdami mokiniams ugdyti empatiją, aktyvų pilietiškumą ir prosocialius įgūdžius smagiu ir patraukliu būdu.",
+                "4" => "Kiekviename pamokų plane akcentuojamas vienas iš DVT:",
+                "5" => "3-ias darnaus vystymosi tikslas: užtikrinti sveiką gyvenseną ir skatinti visų amžiaus grupių gerovę;",
+                "6" => "5-as darnaus vystymosi tikslas: užtikrinti lyčių lygybę ir įgalėti visas moteris ir mergaites;",
+                "7" => "13-as darnaus vystymosi tikslas: imtis skubių veiksmų siekiant švelninti klimato kaitą ir jos poveikį.",
+            ],
+            "activities" => [
+                "1" => "Karateka projektas: mokytis karate programavimo būdu pradinėse, žemesniosiose ir aukštesniosiose vidurinėse mokyklose",
+                "2" => "Darnaus vystymosi tikslai ir programavimas kovojant su klimato kaita. Pradinėms mokykloms",
+                "3" => "Programavimas ir lyčių lygybė. Aukštesniosioms vidurinėms mokykloms",
+            ]
+        ],
+
+        "13" => [
+            "title" => "Supažindinimas su dirbtiniu intelektu klasėje",
+            "author" => "Artur Coelho ir Marjana Prifti Skenduli",
+            "text" => [
+                "1" => "Dirbtinis intelektas (DI) turi įtakos daugeliui kasdienio gyvenimo sričių: jis automatiškai taiso telefone įvedamą tekstą, parenka muziką, kurią groja jūsų mėgstama muzikos programa, ir atsimena jūsų slaptažodžius, kai juos pamirštate. DI – tai mašininio mokymo, robotikos ir algoritmų derinys, taikomas visose srityse: nuo kompiuterinių technologijų iki gamybos, nuo medicinos iki mados. Todėl jis užima neabejotiną vietą mūsų gyvenime ir bendruomenėse ir atlieka svarbų vaidmenį mokslo raidoje. Mokiniams bus naudinga sužinoti apie dirbtinį intelektą, kaip ir apie visus kitus svarbius mūsų gyvenimo reiškinius. Tačiau kaip mokyti apie tokį sudėtingą dalyką kaip DI?",
+                "2" => "Ši Mokymo dalis (angl. Learning Bit) padės jums paaiškinti studentams, kas yra DI ir kokį vaidmenį jis atlieka mokinių gyvenime. Pateikti užsiėmimai sukurti ne specialistams, todėl jų turinys lengvai suprantamas, o sudėtingus terminus galima veiksmingai išskaidyti į lengvai suprantamas mintis. Naudodami šiuos pamokų planus galite padėti mokiniams sužinoti apie DI naudojimo sritis ir kai kuriuos jo mechanizmus. Užsiėmimai skirti mokiniams lavinti jų analitinius ir kritinio mąstymo įgūdžius. Pavyzdžiui, Marjanos užsiėmime mokiniai kurs klasifikacijos procesą. Užsiėmimai taip pat padės mokiniams suprasti įvairias DI taikymo sritis. Arturo užsiėmime jie sužinos apie sąsają tarp DI ir meno ir kaip pasitelkus DI galima patobulinti vizualinę raišką. Šių užsiėmimų metu mokiniai taip pat svarstys apie DI keliamus pavojus ir jų poveikį."
+            ],
+            "activities" => [
+                "1" => "Žmogaus ir DI menas. Pradinėms mokykloms",
+                "2" => "Mokome mašinas klasifikuoti: įvadas į prižiūrimą mašininį mokymą. Žemesniosioms vidurinėms mokykloms",
+                "3" => "Mokome mašinas klasifikuoti: įvadas į prižiūrimą mašininį mokymą. Aukštesniosioms vidurinėms mokykloms",
+            ]
+        ],
+
+
+
     ],
     'download_video_script' => 'Atsisiųsti vaizdo įrašo scenarijų',
     'ready_to_share' => 'Ar pasiruošę su savo mokiniais pasidalyti tuo, ką sužinojote?',
