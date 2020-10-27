@@ -88,60 +88,60 @@ return [
             ]
         ],
         '6' => [
-            'title'=>'Apps ontwikkelen met App Inventor',
-            'author'=>'Door Rosanna Kurrer',
-            'text'=>'<p>In deze video legt Rosanna Kurrer (oprichter van CyberWayFinder) uit wat App Inventor is en wat de voordelen zijn van het programmeren en ontwikkelen van apps op school. Ze geeft een paar praktijkvoorbeelden die laten zien hoe leerkrachten App Inventor in de les kunnen gebruiken en van passieve leerlingen enthousiastte gamebouwers kunnen maken.</p>
+            'title' => 'Apps ontwikkelen met App Inventor',
+            'author' => 'Door Rosanna Kurrer',
+            'text' => '<p>In deze video legt Rosanna Kurrer (oprichter van CyberWayFinder) uit wat App Inventor is en wat de voordelen zijn van het programmeren en ontwikkelen van apps op school. Ze geeft een paar praktijkvoorbeelden die laten zien hoe leerkrachten App Inventor in de les kunnen gebruiken en van passieve leerlingen enthousiastte gamebouwers kunnen maken.</p>
 <p>We gebruiken allemaal apps. Apps zijn handig en een snelle manier om taken te coördineren. Ze worden ook steeds vaker in het onderwijs gebruikt omdat ze gebruikt kunnen worden om de lessen individueel af te stemmen op de leerling, en die er snel informatie mee kan verzamelen. Waarom niet eens aan uw leerlingen vragen om voor anderen een educatieve app te ontwikkelen?</p>',
-            'activities'=>[
-                '1'=>'Activiteit 1 – Voor het basisonderwijs',
-                '2'=>'Activiteit 2 – Voor de onderbouw van het middelbaar onderwijs',
-                '3'=>'Activiteit 3 – Voor de bovenbouw van het middelbaar onderwijs'
+            'activities' => [
+                '1' => 'Activiteit 1 – Voor het basisonderwijs',
+                '2' => 'Activiteit 2 – Voor de onderbouw van het middelbaar onderwijs',
+                '3' => 'Activiteit 3 – Voor de bovenbouw van het middelbaar onderwijs'
             ]
         ],
         '7' => [
-            'title'=>'Knutselen met programmeertaal: tinkering, making en hacking',
-            'author'=>'door Diogo da Silva',
-            'text'=>'<p>Banen en werkplekken veranderen, en het onderwijs verandert mee. Nieuwe vaardigheden zoals tinkering, making en hacking worden steeds belangrijker om leerlingen voor te bereiden op een loopbaan in de eenentwintigste eeuw, en ze maken de kloof tussen het onderwijs en het dagelijks leven kleiner.  Als de klas een plek wordt waar iedereen samen problemen oplost, is dat leuker en motiverender voor de leerlingen.  Zulke activiteiten bevorderen het overleg en maken van de klas een communicatiehub, waar elke bijdrage telt.</p> 
+            'title' => 'Knutselen met programmeertaal: tinkering, making en hacking',
+            'author' => 'door Diogo da Silva',
+            'text' => '<p>Banen en werkplekken veranderen, en het onderwijs verandert mee. Nieuwe vaardigheden zoals tinkering, making en hacking worden steeds belangrijker om leerlingen voor te bereiden op een loopbaan in de eenentwintigste eeuw, en ze maken de kloof tussen het onderwijs en het dagelijks leven kleiner.  Als de klas een plek wordt waar iedereen samen problemen oplost, is dat leuker en motiverender voor de leerlingen.  Zulke activiteiten bevorderen het overleg en maken van de klas een communicatiehub, waar elke bijdrage telt.</p> 
 <p>In deze video legt de Portugese STEAM-leraar Diogo da Silva, lid van de Escola Global, stap voor stap uit hoe u lessen kunt organiseren waarbij leerlingen door tinkering, making en hacking problemen oplossen.</p>',
-            'activities'=>[
-                '1'=>'Activiteit 1 – Voor het basisonderwijs',
-                '2'=>'Activiteit 2 – Voor de onderbouw van het middelbaar onderwijs',
-                '3'=>'Activiteit 3 – Voor de bovenbouw van het middelbaar onderwijs'
+            'activities' => [
+                '1' => 'Activiteit 1 – Voor het basisonderwijs',
+                '2' => 'Activiteit 2 – Voor de onderbouw van het middelbaar onderwijs',
+                '3' => 'Activiteit 3 – Voor de bovenbouw van het middelbaar onderwijs'
             ]
         ],
         '8' => [
-            'title'=>'Programmeren bij alle vakken',
-            'author'=>'Door M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
-            'text'=>'<p>Wie denkt aan programmeren op school, denkt al snel aan vakken als informatica, techniek, wiskunde of natuurwetenschappen. Maar niet alle leerlingen hebben hetzelfde vakkenpakket en daarom zou het een goed idee zijn om het programmeren in alle vakken te integreren.</p> 
+            'title' => 'Programmeren bij alle vakken',
+            'author' => 'Door M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text' => '<p>Wie denkt aan programmeren op school, denkt al snel aan vakken als informatica, techniek, wiskunde of natuurwetenschappen. Maar niet alle leerlingen hebben hetzelfde vakkenpakket en daarom zou het een goed idee zijn om het programmeren in alle vakken te integreren.</p> 
 <p>Dat heeft veel voordelen: leerlingen leren zo kritisch en probleemoplossend te denken, gaan op eigen initiatief programmeren en nemen daarmee hun leerproces in eigen hand, allemaal essentiële zaken op school. Maar het belangrijkste voordeel is dat ze met meer plezier leren!</p>
 <p>Talen, muziek en exacte wetenschappen zijn maar enkele vakken waarbij leerkrachten het leren programmeren kunnen opnemen. Voor toekomstige wetenschappers, musici en kunstenaars, maar eigenlijk voor iedereen! Elke leerkracht kan het programmeren en computergericht denken in zijn lessen verwerken. Bij vakken die in een vreemde taal worden gegeven, kan een algoritme uit het dagelijks leven worden uitgelegd, bij techniek kan een joystick worden gemaakt en een onderwijsrobot kan de wiskundeles aantrekkelijker maken. En zo zijn er nog veel meer voorbeelden te bedenken.</p> 
 <p>Bekijk de video en ontdek hoe muziek-, natuurkunde- of taaldocenten het programmeren en computergericht denken in hun lessen kunnen integreren, zelfs zonder enige voorkennis.</p>',
-            'activities'=>[
-                '1'=>'Activiteit 1 Robotica en inclusie in de STEM-vakken in het basisonderwijs',
-                '2'=>'Activiteit 2 Muziek is programmeren',
-                '3'=>'Activiteit 3 Knutselen en programmeren met Makey Makey',
-                '4'=>'Activiteit 4 Een algoritme uit het dagelijks leven bij een les in een andere taal'
+            'activities' => [
+                '1' => 'Activiteit 1 Robotica en inclusie in de STEM-vakken in het basisonderwijs',
+                '2' => 'Activiteit 2 Muziek is programmeren',
+                '3' => 'Activiteit 3 Knutselen en programmeren met Makey Makey',
+                '4' => 'Activiteit 4 Een algoritme uit het dagelijks leven bij een les in een andere taal'
             ]
         ],
         '9' => [
-            'title'=>'Een automaton maken met een micro:bit',
-            'author'=>'door Pauline Maas',
-            'text'=>'<p>
+            'title' => 'Een automaton maken met een micro:bit',
+            'author' => 'door Pauline Maas',
+            'text' => '<p>
                    Met een micro:bit, een eenvoudig te programmeren computer op zakformaat, kun je met je leerlingen op een leuke en eenvoudige manier interessante dingen maken, variërend van robots tot muziekinstrumenten, terwijl je ze tegelijkertijd leert programmeren. Het is eenvoudig en zelfs voor de jongste programmeurs gemakkelijk te gebruiken, en tegelijkertijd krachtig genoeg voor leerlingen die al wat meer kunnen en willen. Je kunt het in een breed scala aan lessen opnemen, variërend van geschiedenis tot wiskunde en zelfs natuurkunde of scheikunde. Er zijn talloze mogelijkheden. De micro:bit biedt een aantrekkelijke en voordelige manier om leerlingen te leren programmeren en ze tegelijkertijd essentiële vaardigheden als computationeel denken, probleemoplossing en creativiteit bij te brengen.
                    </p>
                    <p>
 In deze video introduceert Pauline Maas, ICT-docent bij Koninklijke Visio, de micro:bit en laat ze met een paar praktijkvoorbeelden zien hoe leraren dit in hun lessen kunnen integreren en van passieve leerlingen enthousiaste ontwikkelaars kunnen maken.                   
                 </p>',
-            'activities'=>[
-                '1'=>'Morse met de micro:bit, voor de lagere school',
-                '2'=>'Escaperoom met de micro:bit, voor de onderbouw van het middelbaar onderwijs',
-                '3'=>'Een automaton maken, voor de bovenbouw van het middelbaar onderwijs',
+            'activities' => [
+                '1' => 'Morse met de micro:bit, voor de lagere school',
+                '2' => 'Escaperoom met de micro:bit, voor de onderbouw van het middelbaar onderwijs',
+                '3' => 'Een automaton maken, voor de bovenbouw van het middelbaar onderwijs',
             ]
         ],
         '10' => [
-            'title'=>'Creatief programmeren met Python',
-            'author'=>'door Ivana Vezjak',
-            'text'=>'<p>
+            'title' => 'Creatief programmeren met Python',
+            'author' => 'door Ivana Vezjak',
+            'text' => '<p>
 De overgang van visueel naar tekstgebaseerd programmeren is een vrij gangbare stap. Visueel programmeren biedt een prima kennismaking voor beginners, maar leerlingen zijn na een tijdje vaak wel toe aan een nieuwe uitdaging. Tekstgebaseerd programmeren is de volgende stap voor iedereen die zijn kennis van programmeren en computationeel denken wil vergroten. 
                    </p>
                    <p>                   
@@ -150,59 +150,93 @@ In deze video laat Ivana Vezjak je kennismaken met de basissyntaxis van Python. 
 <p> 
 Met Python kunnen leerlingen quizzen maken over historische gebeurtenissen, wiskundevraagstukken oplossen en natuurkundige simulaties maken, games en websites maken, gegevensanalyse uitvoeren bij wetenschappelijke projecten en nog veel meer. Voor Python zijn online een rijke en uitgebreide standaardbibliotheek, een grote community en veel tutorials en projecten te vinden die voor het geven van onderwijs en bij het leren en oefenen kunnen worden gebruikt. Met programmeren in Python, het analyseren van programma\'s en het oplossen van problemen ontwikkelen leerlingen hun creativiteit en trainen ze consistentie, doorzettingsvermogen en geduld. Ze leren vaardigheden aan voor analytisch denken en probleemoplossing door complexe problemen op te delen in kleinere onderdelen. Deze competenties helpen hen bij het aanpakken van problemen in alle aspecten van het leven.
                 </p>',
-            'activities'=>[
-                '1'=>'Mijn eerste quiz, voor het basisonderwijs',
-                '2'=>'Galgje, voor de onderbouw van het middelbaar onderwijs',
-                '3'=>'Raad de vlag, voor de bovenbouw van het middelbaar onderwijs',
+            'activities' => [
+                '1' => 'Mijn eerste quiz, voor het basisonderwijs',
+                '2' => 'Galgje, voor de onderbouw van het middelbaar onderwijs',
+                '3' => 'Raad de vlag, voor de bovenbouw van het middelbaar onderwijs',
             ],
-            'links'=>[
+            'links' => [
                 'title' => 'Andere gerelateerde hulpmiddelen',
                 '1' => [
-                    "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Standaard Python-bibliotheek",
-                    "description"=>"Verzameling vooraf samengestelde code en modules (b.v. turtle-module, math-module, enzovoort).",
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "Standaard Python-bibliotheek",
+                    "description" => "Verzameling vooraf samengestelde code en modules (b.v. turtle-module, math-module, enzovoort).",
                 ],
                 '2' => [
-                    "url"=>"https://codecombat.com/",
-                    "title"=>"CodeCombat",
-                    "description"=>"Educatieve videogame voor het leren van programmeerconcepten.",
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Educatieve videogame voor het leren van programmeerconcepten.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/nl-NL/codeclub",
-                    "title"=>"CodeClub-projecten",
-                    "description"=>"Stapsgewijze programmeerprojecten voor kinderen, van beginners tot gevorderden.",
+                    "url" => "https://projects.raspberrypi.org/nl-NL/codeclub",
+                    "title" => "CodeClub-projecten",
+                    "description" => "Stapsgewijze programmeerprojecten voor kinderen, van beginners tot gevorderden.",
                 ],
                 '4' => [
-                    "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Ontwikkel je eigen computergames met Python",
-                    "description"=>"Boek waarin je leert hoe je met Python je eigen computerspellen kunt programmeren.",
+                    "url" => "https://inventwithpython.com/invent4thed/",
+                    "title" => "Ontwikkel je eigen computergames met Python",
+                    "description" => "Boek waarin je leert hoe je met Python je eigen computerspellen kunt programmeren.",
                 ],
                 '5' => [
-                    "url"=>"https://www.codewars.com/",
-                    "title"=>"CodeWars",
-                    "description"=>"Educatieve community waar leerlingen en leraren  hun eigen vaardigheden met een reeks vraagstukken kunnen trainen",
+                    "url" => "https://www.codewars.com/",
+                    "title" => "CodeWars",
+                    "description" => "Educatieve community waar leerlingen en leraren  hun eigen vaardigheden met een reeks vraagstukken kunnen trainen",
                 ],
                 '6' => [
-                    "url"=>"https://hourofpython.com/",
-                    "title"=>"Hour of Python",
-                    "description"=>"Verzameling inleidende lessen over Python (zowel tekstgebaseerd als blokken) met interactieve Trinkets.",
+                    "url" => "https://hourofpython.com/",
+                    "title" => "Hour of Python",
+                    "description" => "Verzameling inleidende lessen over Python (zowel tekstgebaseerd als blokken) met interactieve Trinkets.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'Programmeren voor inclusie',
-            'author'=>'door het team van de programmeerweek',
-            'text'=>'<p>
+            'title' => 'Programmeren voor inclusie',
+            'author' => 'door het team van de programmeerweek',
+            'text' => '<p>
                    Het kan best lastig zijn om programmeren te introduceren in je lessen, helemaal als je leerlingen met een beperking in je klas hebt. Maar vergeet niet dat iedereen, ongeacht zijn of haar vaardigheden, kan leren programmeren. Voor kinderen met speciale behoeften kan het leren van bepaalde aspecten van programmeren enorm helpen bij het leren van belangrijke levensvaardigheden, zoals probleemoplossing en onafhankelijkheid. Programmeren kan ook helpen interpersoonlijke vaardigheden en sociale vaardigheden te verbeteren via samenwerking en teamwork; dit zijn vaardigheden waar veel kinderen met een beperking moeite mee hebben. Maar het belangrijkste: leerlingen beleven er plezier aan samen met hun leeftijdgenoten te leren.
                    </p><p>
                    In deze video laat het team van de programmeerweek een aantal praktische, eenvoudige en leuke programmeeractiviteiten zien die speciaal zijn aangepast voor leerlingen met een visuele beperking of downsyndroom en leerlingen met een vorm van autisme, die leraren gemakkelijk in de les kunnen introduceren.
                 </p>',
-            'activities'=>[
-                '1'=>'Eierdoos unplugged',
-                '2'=>'Een erg slimme muis',
-                '3'=>'Een ster die sterren voortbrengt',
+            'activities' => [
+                '1' => 'Eierdoos unplugged',
+                '2' => 'Een erg slimme muis',
+                '3' => 'Een ster die sterren voortbrengt',
             ]
-        ]
+        ],
+        "12" => [
+            "title" => "Programmeren voor duurzame ontwikkelingsdoelen",
+            "author" => "door Francisco Javier Masero, Cristina Nicolaita en Erviola Konomi",
+            "text" => [
+                "1" => "Traditioneel onderwijs biedt leerlingen weinig mogelijkheden om de echte wereldproblemen te begrijpen en op te lossen, zoals wereldwijde klimaatverandering, genderongelijkheid, honger, armoede of ziekte.",
+                "2" => "De doelstellingen voor duurzame ontwikkeling (SDG's, Sustainable Development Goals) vormen de kern van de agenda voor duurzame ontwikkeling voor 2030, die door alle lidstaten van de Verenigde Naties is aangenomen als een routekaart om vrede en welvaart op de planeet te bereiken, waarbij mondiale ontwikkeling wordt aangemoedigd. Leerkrachten kunnen de SDG's in de klas gebruiken als hulpmiddel voor leerlingen om bij hen kritisch denken te ontwikkelen, maar ook om hen te helpen hun identiteit en hun levensdoel te vinden. Het combineren van de basiselementen van programmeren en computerdenken met de SDG's zal het vertrouwen van je leerlingen vergroten, en je helpt hen daarmee hun creativiteit, ondernemersgeest en hun probleemoplossende of communicatieve vaardigheden te ontwikkelen.",
+                "3" => "In de onderstaande activiteiten zullen de leerlingen de principes van Scratch, ASCII-codering en programmeren zonder computer toepassen op onderwerpen die vandaag de dag wereldwijd en maatschappelijk relevant zijn. De leerkrachten zullen de doelstellingen van duurzame ontwikkeling onder de aandacht brengen en hen tegelijkertijd helpen om op een leuke en boeiende manier empathie, actief burgerschap en sociale vaardigheden te ontwikkelen.",
+                "4" => "Deze lesplannen richten zich elk op een van de SDG's:",
+                "5" => "Duurzaam ontwikkelingsdoel 3: Voor een gezond leven zorgen en het welzijn van alle mensen van alle leeftijden bevorderen",
+                "6" => "Duurzaam ontwikkelingsdoel 5: Voor gendergelijkheid zorgen en alle vrouwen en meisjes mondig maken",
+                "7" => "Duurzaam ontwikkelingsdoel 13: Snel maatregelen treffen om de klimaatverandering en de gevolgen daarvan te bestrijden",
+            ],
+            "activities" => [
+                "1" => "Karateka-project: Kennismaken met karate door middel van programmeren, voor de lagere school en de onder- en bovenbouw van de middelbare school",
+                "2" => "Doelstellingen voor duurzame ontwikkeling en programmeren voor klimaatverandering, voor de basisschool",
+                "3" => "Programmeren voor gendergelijkheid, voor de bovenbouw van de middelbare school",
+            ]
+        ],
+
+        "13" => [
+            "title" => "Inleiding tot Artificiële Intelligentie in het klaslokaal",
+            "auteur" => "door Artur Coelho en Marjana Prifti Skenduli",
+            "text" => [
+                "1" => "Artificiële Intelligentie (AI) heeft een impact op vele terreinen in het dagelijkse leven: het corrigeert de tekst die je op je telefoon typt, kiest de muziek die je favoriete muziek-app afspeelt en onthoudt je wachtwoorden voor als je ze bent vergeten. AI verwijst naar een combinatie van machinaal leren, robotica en algoritmes, met toepassingen op alle terreinen: van computerwetenschap tot productie en van geneeskunde tot mode. Daarom neemt AI een onmiskenbare plaats in ons leven en in onze samenleving in en speelt een sleutelrol in de ontwikkeling van de wetenschap. En zoals alle bij andere belangrijke fenomenen in ons leven, hebben de leerlingen er baat bij om er iets over te leren. Maar hoe kun je lesgeven over zulke complexe materie als AI?",
+                "2" => "Dit leerproces helpt je om uit te leggen wat AI is en welke rol AI speelt in het leven van de leerlingen. Deze activiteiten zijn bedoeld voor leken om de inhoud gemakkelijk te begrijpen en om complexe concepten effectief op te kunnen splitsen in gemakkelijk te begrijpen ideeën. Met deze lesplannen kun je de leerlingen helpen om het gebruik van AI en enkele van de achterliggende mechanismen te leren begrijpen. Deze activiteiten zijn bedoeld voor leerlingen om hun analytische en kritische denkvermogen te ontwikkelen: in Marjana's activiteit ontwikkelen leerlingen bijvoorbeeld een zogenaamde classificatiepijplijn. Deze activiteiten helpen de leerlingen ook om de verschillende toepassingen van AI te begrijpen: in Artur's activiteit leren ze over de link tussen AI en kunst, en hoe AI kan worden gebruikt om visuele expressie te verbeteren. Dankzij deze activiteiten gaan de leerlingen ook nadenken over de gevaren van AI en de impact ervan."
+            ],
+            "activities" => [
+                "1" => "Menselijke-AI kunst, voor de basisschool",
+                "2" => "Machines leren classificeren: Introductie op Begeleid Machineleren, voor de onderbouw van de middelbare school",
+                "3" => "Machines leren classificeren: Introductie op Begeleid Machineleren, voor de bovenbouw van de middelbare school",
+            ]
+        ],
+
+
     ],
     'download_video_script' => 'Het videoscript downloaden',
     'ready_to_share' => 'Ben je er klaar voor om wat je hebt geleerd te delen met je leerlingen?',

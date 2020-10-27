@@ -66,8 +66,8 @@ Route::get('/training/coding-for-all-subjects', 'StaticPageController@static')->
 Route::get('/training/making-an-automaton-with-microbit', 'StaticPageController@static')->name('training.module-9');
 Route::get('/training/creative-coding-with-python', 'StaticPageController@static')->name('training.module-10');
 Route::get('/training/coding-for-inclusion', 'StaticPageController@static')->name('training.module-11');
-//Route::get('/training/introduction-to-artificial-intelligence-in-the-classroom', 'StaticPageController@static')->name('training.module-12');
-//Route::get('/training/coding-for-sustainable-development-goals', 'StaticPageController@static')->name('training.module-13');
+Route::get('/training/introduction-to-artificial-intelligence-in-the-classroom', 'StaticPageController@static')->name('training.module-13');
+Route::get('/training/coding-for-sustainable-development-goals', 'StaticPageController@static')->name('training.module-12');
 
 Route::get('/resources/CodingAtHome', 'CodingAtHomeController@show')->name('coding@home');
 Route::view('/resources/CodingAtHome/introduction', 'codingathome.introduction')->name('codingathome-introduction');
