@@ -88,60 +88,60 @@ return [
             ]
         ],
         '6' => [
-            'title'=>'App Inventor och apputveckling',
-            'author'=>'av Rosanna Kurrer',
-            'text'=>'<p>I den här videon förklarar Rosanna Kurrer (grundare av CyberWayFinder) vad App Inventor är för något. Hon går igenom fördelarna med att utveckla appar i klassrummet och ger några praktiska exempel på hur du kan integrera App Inventor i undervisningen, så att du kan hjälpa passiva elever att bli engagerade spelskapare.</p>
+            'title' => 'App Inventor och apputveckling',
+            'author' => 'av Rosanna Kurrer',
+            'text' => '<p>I den här videon förklarar Rosanna Kurrer (grundare av CyberWayFinder) vad App Inventor är för något. Hon går igenom fördelarna med att utveckla appar i klassrummet och ger några praktiska exempel på hur du kan integrera App Inventor i undervisningen, så att du kan hjälpa passiva elever att bli engagerade spelskapare.</p>
 <p>Alla använder vi appar. Det är ett praktiskt och snabbt sätt att samordna olika aktiviteter. Appar används alltmer i undervisningen eftersom inlärningen anpassas efter den enskilda eleven och användaren kan inhämta information. Så varför inte låta eleverna skapa en utbildningsapp som andra kan använda?</p>',
-            'activities'=>[
-                '1'=>'Aktivitet 1: Titel – för låg- och mellanstadiet',
-                '2'=>'Aktivitet 2: Titel – för högstadiet',
-                '3'=>'Aktivitet 3: Titel – för gymnasiet'
+            'activities' => [
+                '1' => 'Aktivitet 1: Titel – för låg- och mellanstadiet',
+                '2' => 'Aktivitet 2: Titel – för högstadiet',
+                '3' => 'Aktivitet 3: Titel – för gymnasiet'
             ]
         ],
         '7' => [
-            'title'=>'Experimentera och skapa',
-            'author'=>'av Diogo da Silva',
-            'text'=>'<p>Jobben och arbetsplatserna förändras och utbildningen följer i deras fotspår. För att förbereda eleverna på 2000-talets karriärer och minska klyftan mellan skolan och verkligheten behövs nya färdigheter som att kunna experimentera, skapa och hacka. Genom att förvandla klassrummet till en samarbetsmiljö med fokus på problemlösning kan eleverna engagera sig och utvecklas. Dessa aktiviteter leder till diskussioner, vilket gör klassrummet till en sambandscentral där alla bidrag är viktiga.</p> 
+            'title' => 'Experimentera och skapa',
+            'author' => 'av Diogo da Silva',
+            'text' => '<p>Jobben och arbetsplatserna förändras och utbildningen följer i deras fotspår. För att förbereda eleverna på 2000-talets karriärer och minska klyftan mellan skolan och verkligheten behövs nya färdigheter som att kunna experimentera, skapa och hacka. Genom att förvandla klassrummet till en samarbetsmiljö med fokus på problemlösning kan eleverna engagera sig och utvecklas. Dessa aktiviteter leder till diskussioner, vilket gör klassrummet till en sambandscentral där alla bidrag är viktiga.</p> 
 <p>I videon nedan förklarar den portugisiska STEAM-läraren (naturvetenskap, teknik, ingenjörsvetenskap, humaniora och matematik) Diogo da Silva, som är medlem i Escola Global, steg för steg hur du planerar en lektion där eleverna kan experimentera, skapa och hacka sig fram till en lösning.</p>',
-            'activities'=>[
-                '1'=>'Aktivitet 1: Titel – för låg- och mellanstadiet',
-                '2'=>'Aktivitet 2: Titel – för högstadiet',
-                '3'=>'Aktivitet 3: Titel – för gymnasiet'
+            'activities' => [
+                '1' => 'Aktivitet 1: Titel – för låg- och mellanstadiet',
+                '2' => 'Aktivitet 2: Titel – för högstadiet',
+                '3' => 'Aktivitet 3: Titel – för gymnasiet'
             ]
         ],
         '8' => [
-            'title'=>'Kodning för alla ämnen',
-            'author'=>'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
-            'text'=>'<p>Kodning i klassrummet förknippas i första hand med datorer, teknik, matematik och naturkunskap, men borde man inte försöka ta vara på att eleverna har många olika intressen och ämnen, och använda kodning i hela kursplanen?</p> 
+            'title' => 'Kodning för alla ämnen',
+            'author' => 'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text' => '<p>Kodning i klassrummet förknippas i första hand med datorer, teknik, matematik och naturkunskap, men borde man inte försöka ta vara på att eleverna har många olika intressen och ämnen, och använda kodning i hela kursplanen?</p> 
 <p>Att använda kodning i undervisningen har många fördelar. Det hjälper eleverna att tänka kritiskt och lösa problem, bli aktiva användare och styra sin egen inlärningsprocess, vilket är grundläggande i skolan. Det viktigaste är dock att dina elever har kul medan de lär sig.</p>
 <p>Språk, musik och STEM-ämnen (naturvetenskap, teknik, ingenjörsvetenskap och matematik) är bara några av de ämnen som du kan koda i för att skapa framtidens forskare, musiker, konstnärer eller vad det nu kan vara. Alla lärare kan använda sig av kodning och datalogiskt tänkande i klassrummet. Du kan t.ex. använda CLIL-lektionen (språk- och innehållsintegrerad inlärning) för att presentera en vardagsalgoritm. Du kan låta eleverna skapa sin egen styrspak på naturkunskapen eller använda robotar för att öka intresset för matematik.</p> 
 <p>I videon nedan kan du se hur lärare i musik, naturkunskap och språk enkelt kan använda sig av kodning och datalogiskt tänkande i sin undervisning, även om de saknar tidigare erfarenhet.</p>',
-            'activities'=>[
-                '1'=>'Aktivitet 1: Robotteknik och inkludering för låg- och mellanstadiet i STEM',
-                '2'=>'Aktivitet 2: Musik är att koda',
-                '3'=>'Aktivitet 3: Experimentera och koda med Makey Makey',
-                '4'=>'Aktivitet 4: En vardagsalgoritm för CLIL-lektionen'
+            'activities' => [
+                '1' => 'Aktivitet 1: Robotteknik och inkludering för låg- och mellanstadiet i STEM',
+                '2' => 'Aktivitet 2: Musik är att koda',
+                '3' => 'Aktivitet 3: Experimentera och koda med Makey Makey',
+                '4' => 'Aktivitet 4: En vardagsalgoritm för CLIL-lektionen'
             ]
         ],
         '9' => [
-            'title'=>'Tillverka en självgående maskin med micro:bit',
-            'author'=>'av Pauline Maas',
-            'text'=>'<p>
+            'title' => 'Tillverka en självgående maskin med micro:bit',
+            'author' => 'av Pauline Maas',
+            'text' => '<p>
                    Att använda en micro:bit, den lätt-programmerade datorn i fickformat, kan vara ett roligt och enkelt sätt att skapa intressanta alster, från robotar till musikinstrument med dina elever, samtidigt som du lär dem att koda. Den är enkel och lätt att använda även för de yngsta programmerarna, men också tillräckligt kraftfull för mer avancerade elever. Du kan integrera den i en mängd olika lektioner från historia till matematik och till och med naturvetenskap. Möjligheterna är oändliga. Micro:bit är ett engagerande och billigt sätt att lära eleverna om kodning samtidigt som de utvecklar viktiga färdigheter som datalogiskt tänkande, problemlösning och kreativitet.
                    </p>
                    <p>
                    I den här videon kommer Pauline Maas, datavetenskapslärare vid Koninklijke Visio, att introducera micro:bit och ge några praktiska exempel på hur lärare kan integrera den i klassrummet och omvandla passiva elever till entusiastiska skapare.
                 </p>',
-            'activities'=>[
-                '1'=>'Morsealfabetet med micro:bit, för grundskolan ',
-                '2'=>'Escape room med micro:bit, för högstadiet',
-                '3'=>'Tillverka en självgående maskin, för gymnasiet',
+            'activities' => [
+                '1' => 'Morsealfabetet med micro:bit, för grundskolan ',
+                '2' => 'Escape room med micro:bit, för högstadiet',
+                '3' => 'Tillverka en självgående maskin, för gymnasiet',
             ]
         ],
         '10' => [
-            'title'=>'Kreativ kodning med Python',
-            'author'=>'av Ivana Vezjak',
-            'text'=>'<p>
+            'title' => 'Kreativ kodning med Python',
+            'author' => 'av Ivana Vezjak',
+            'text' => '<p>
 Att gå från visuell till textbaserad programmering är ett naturligt flöde i kodning. Medan visuell programmering ofta är bra för nybörjare, kan eleverna efter ett tag vilja ha en ny utmaning. Textbaserad programmering är nästa steg för alla som vill dyka längre in i programmering och datalogiskt tänkande. 
                    </p>
                    <p>                   
@@ -150,59 +150,95 @@ I den här videon ger Ivana Vezjak en introduktion i Pythons grundläggande synt
 <p> 
 Med Python kan eleverna skapa frågesporter om historiska händelser, lösa matematiska problem och göra fysiksimuleringar, skapa spel, bygga webbplatser, genomföra dataanalys för vetenskapliga projekt och mycket mer. Python har ett rikt och omfattande standardbibliotek, ett stort användarforum och ett stort antal utbildningsprogram och projekt tillgängliga online, som kan användas för undervisning, lärande och övning. Genom att koda i Python, analysera program och fixa buggar, utvecklar elever kreativitet och lär sig att vara konsekventa, envetna och tålmodiga. De lär sig analytiskt tänkande och problemlösning genom att dela upp komplexa problem i mindre komponenter. Dessa kompetenser hjälper dem i hur de närmar sig problem inom alla andra områden i livet.
                 </p>',
-            'activities'=>[
-                '1'=>'Min första frågesport, för grundskolan',
-                '2'=>'Hänga gubbe, för högstadiet',
-                '3'=>'Gissa flaggan!, för gymnasiet',
+            'activities' => [
+                '1' => 'Min första frågesport, för grundskolan',
+                '2' => 'Hänga gubbe, för högstadiet',
+                '3' => 'Gissa flaggan!, för gymnasiet',
             ],
-            'links'=>[
+            'links' => [
                 'title' => 'Andra relaterade resurser',
                 '1' => [
-                    "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Python Standard Library",
-                    "description"=>"Samling av förbyggd kod och moduler (t.ex. turtle-modul, matematikmodul etc.).",
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "Python Standard Library",
+                    "description" => "Samling av förbyggd kod och moduler (t.ex. turtle-modul, matematikmodul etc.).",
                 ],
                 '2' => [
-                    "url"=>"https://codecombat.com/",
-                    "title"=>"CodeCombat",
-                    "description"=>"Pedagogiskt videospel för att lära sig programmeringskoncept.",
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Pedagogiskt videospel för att lära sig programmeringskoncept.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
-                    "title"=>"CodeClub projects",
-                    "description"=>"Från nybörjare till avancerade, steg-för-steg-programmeringsprojekt för barn.",
+                    "url" => "https://projects.raspberrypi.org/en/codeclub",
+                    "title" => "CodeClub projects",
+                    "description" => "Från nybörjare till avancerade, steg-för-steg-programmeringsprojekt för barn.",
                 ],
                 '4' => [
-                    "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Invent your own computer games with Python",
-                    "description"=>"Bok som lär dig hur du programmerar dina egna datorspel med Python.",
+                    "url" => "https://inventwithpython.com/invent4thed/",
+                    "title" => "Invent your own computer games with Python",
+                    "description" => "Bok som lär dig hur du programmerar dina egna datorspel med Python.",
                 ],
                 '5' => [
-                    "url"=>"https://www.codewars.com/",
-                    "title"=>"CodeWars",
-                    "description"=>"Utbildningsmiljö där elever och lärare kan träna sig genom en serie utmaningar.",
+                    "url" => "https://www.codewars.com/",
+                    "title" => "CodeWars",
+                    "description" => "Utbildningsmiljö där elever och lärare kan träna sig genom en serie utmaningar.",
                 ],
                 '6' => [
-                    "url"=>"https://hourofpython.com/",
-                    "title"=>"Hour of Python",
-                    "description"=>"Samling av inledande Python-lektioner (både textbaserade och i block) med interaktiva Trinkets.",
+                    "url" => "https://hourofpython.com/",
+                    "title" => "Hour of Python",
+                    "description" => "Samling av inledande Python-lektioner (både textbaserade och i block) med interaktiva Trinkets.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'Kodning för inkludering',
-            'author'=>'av Code Week-teamet',
-            'text'=>'<p>
+            'title' => 'Kodning för inkludering',
+            'author' => 'av Code Week-teamet',
+            'text' => '<p>
                    Att införa kodning i klassrummet kan bli en utmaning, särskilt om du har elever med någon slags funktionsnedsättning i klassen. Men det är viktigt att komma ihåg att vem som helst, oavsett förmågor, kan lära sig koda. Barn med särskilda behov kan ha stor nytta av att kunna olika aspekter av kodning, eftersom det lär elever viktiga förmågor i livet, som problemlösning, organisation och självständighet. Kodning kan också förbättra den interpersonella och sociala kompetensen genom samarbete och teamwork – förmågor som många barn med funktionsnedsättning har svårt med. Framför allt får eleverna ha kul när de lär sig tillsammans med kompisarna.
                    </p><p>
 I den här videon kommer Code Week-teamet att visa dig några praktiska, enkla och roliga kodningsaktiviteter som är särskilt anpassade för elever med synnedsättning, med Downs syndrom och i autismspektrumet, och som lärare enkelt kan ha med i klassrummet.                   
                 </p>',
-            'activities'=>[
-                '1'=>'Äggkartongen Unplugged',
-                '2'=>'En mycket smart mus',
-                '3'=>'Stjärna på att göra stjärnor',
+            'activities' => [
+                '1' => 'Äggkartongen Unplugged',
+                '2' => 'En mycket smart mus',
+                '3' => 'Stjärna på att göra stjärnor',
             ]
-        ]
+        ],
+
+        "12" => [
+            "title" => "Kodning för hållbara utvecklingsmål",
+            "author" => "av Francisco Javier Masero, Cristina Nicolaita och Erviola Konomi",
+            "text" => [
+                "1" => "Traditionell utbildning ger elever få möjligheter att förstå och lösa verkliga världsproblem som global klimatförändring, jämställdhet, hunger, fattigdom eller god hälsa och välbefinnande.",
+                "2" => "Sustainable Developement Goals (SDG) – Målen för hållbar utveckling, är kärnan i agendan för 2030 som gäller hållbar utveckling, antagen av alla Förenta Nationerna som en färdplan för att uppnå fred och välstånd på planeten samt uppmuntra global utveckling. Lärare kan använda SDG i klassrummet som ett verktyg för eleverna att utveckla sitt kritiska tänkande, men också för att hjälpa dem att hitta sin identitet och syfte. Genom att kombinera grundläggande element i kodning och beräkningstänkande med SDG:er ökar elevernas självförtroende och du kommer att hjälpa dem att utveckla sin kreativitet, entreprenörsanda, problemlösning eller kommunikationsförmåga. ",
+                "3" => "I aktiviteterna nedan kommer eleverna att tillämpa principerna Scratch, ASCII-kodning och unplugged-kodning på ämnen för global och social relevans idag. Lärare kommer att öka medvetenheten om målen för hållbar utveckling samtidigt som de hjälper eleverna att utveckla empati, aktivt medborgarskap och prosociala färdigheter på ett roligt och engagerande sätt",
+                "4" => "Dessa lektionsplaner fokuserar på en av SDG:erna:",
+                "5" => "Mål 3 för hållbar utveckling: Säkerställa hälsosamma liv och främja välbefinnande för alla i alla åldrar",
+                "6" => "Mål 5 för hållbar utveckling: Uppnå jämställdhet och stärka alla kvinnor och flickor",
+                "7" => "Mål 13 för hållbar utveckling: Vidta brådskande åtgärder för att bekämpa klimatförändringarna och dess effekter",
+            ],
+            "activities" => [
+                "1" => "Karateka-projektet: Att känna till karate genom programmering för grundskolan, lägre och gymnasieskolan",
+                "2" => "Hållbara utvecklingsmål och kodning för klimatförändringar, för grundskolan",
+                "3" => "Kodning för jämställdhet, för gymnasieskolan",
+            ]
+        ],
+
+
+        "13" => [
+            "title" => "Introduktion till artificiell intelligens i klassrummet i klassrummet",
+            "author" => "av Artur Coelho och Marjana Prifti Skenduli",
+            "text" => [
+                "1" => "Artificiell intelligens (AI) påverkar många områden i det dagliga livet: den korrigerar automatiskt texten du skriver på din telefon, väljer musiken som din favoritmusikapp spelar och den kommer ihåg dina lösenord när du har glömt dem. AI syftar till en kombination av maskininlärning, robotik och algoritmer, med applikationer inom alla områden: från datavetenskap till tillverkning och från medicin till mode. Den har därför en obestridlig plats i våra liv och i våra samhällen, och spelar en nyckelroll i vetenskapens utveckling. Och som alla andra viktiga fenomen i våra liv kommer studenter att dra nytta av att lära sig om det. Men hur lär man mig om en så komplex sak som AI?",
+                "2" => "Denna inlärningsbit hjälper dig att förklara för studenterna vad AI är, och vilken roll spelar den i elevernas liv. Dessa aktiviteter är utformade för icke-experter att enkelt förstå innehållet och effektivt kunna bryta ner komplexa termer till lättförståeliga idéer. Med dessa lektionsplaner kan du hjälpa eleverna lära sig användningen av AI och några av mekanismerna bakom den. Dessa aktiviteter är utformade för att eleverna ska utveckla sina analytiska och kritiskt tänkande färdigheter: till exempel i Marjanas aktivitet utvecklar studenterna en klassificeringspipeline. Dessa aktiviteter hjälper också eleverna att förstå de olika tillämpningarna av AI: i Arturs aktivitet lär de sig om länken mellan AI och konst, och hur AI kan användas för att förbättra visuellt uttryck. Med dessa aktiviteter kommer eleverna också att reflektera över farorna med AI och dess inverkan"
+            ],
+            "activities" => [
+                "1" => "Mänsklig-AI- konst, för grundskolan",
+                "2" => "Lär maskiner att klassificera: Introduktion till övervakad maskininlärning för högstadiet",
+                "3" => "Lär maskiner att klassificera: IIntroduktion till övervakad maskininlärning för gymnasiet",
+            ]
+        ],
+
+
     ],
     'download_video_script' => 'Hämta videoskript',
     'ready_to_share' => 'Vill du dela med dig av det du har lärt dig till dina elever?',

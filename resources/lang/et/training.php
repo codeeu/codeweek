@@ -202,7 +202,43 @@ Pythoni abil saavad õpilased koostada viktoriine ajaloosündmuste kohta, lahend
                 '2'=>'väga nutikas hiir',
                 '3'=>'tähti loov täht',
             ]
-        ]
+        ],
+        "12" => [
+            "title" => "Jätkusuutliku arengu eesmärkide kodeerimine",
+            "author" => ", autorid Francisco Javier Masero, Cristina Nicolaita ja Erviola Konomi",
+            "text" => [
+                "1" => "Traditsiooniline haridus annab õpilastele vähe võimalusi mõista ja lahendada tegelikke probleeme, nagu globaalne kliimamuutus, sooline võrdõiguslikkus, nälg, vaesus või hea tervis ja heaolu.",
+                "2" => "Jätkusuutliku arengu eesmärgid (SDG) on 2030. aasta säästva arengu tegevuskava tuum, mille kõik Ühinenud Rahvaste Organisatsiooni liikmesriigid on vastu võtnud, et planeerida planeedil rahu ja jõukuse saavutamise juhiseid, toetades globaalset arengut. Õpetajad saavad kasutada klassiruumis säästva arengu eesmärke õpilaste kriitilise mõtlemise arendamise vahendina, aga ka oma identiteedi ja eesmärgi leidmisel. Kodeerimise ja arvutusliku mõtlemise põhielementide kombineerimine säästva arengu eesmärkidega suurendab teie õpilaste enesekindlust aidates neil arendada loovust, ettevõtlikkust, probleemide lahendamist või suhtlemisoskust.",
+                "3" => "Allolevates tegevustes rakendavad õpilased täna ülemaailmse ja sotsiaalse tähtsusega teemadele põhimõtteid Scratch, ASCII kodeerimine ja lahtiühendatud kodeerimine. Õpetajad suurendavad teadlikkust säästva arengu eesmärkidest, aidates neil samal ajal lõbusalt ja kaasahaaravalt arendada empaatiavõimet, kodanikuaktiivsust ja prosotsiaalseid oskusi.",
+                "4" => "Need tunniplaanid keskenduvad igaüks ühele SDG-le:",
+                "5" => "Säästva arengu eesmärk 3: Tagada kõikidele vanuserühmadele hea tervis ja heaolu",
+                "6" => "Säästva arengu eesmärk 5: Saavutada sooline võrdõiguslikkus ning julgustada naisi ja neidusid",
+                "7" => "Säästva arengu eesmärk 13: Võtta viivitamata vastu meetmeid kliimamuutuste ja nende mõjude vastu võitlemiseks",
+            ],
+            "activities" => [
+                "1" => "Karateka projekt: Karate tundmine programmeerimise kaudu alg-, põhi- ja gümnaasiumi jaoks",
+                "2" => "Algkooli säästva arengu eesmärgid ja kliimamuutuste kodeerimine",
+                "3" => "Soolise võrdõiguslikkuse kodeerimine, gümnaasiumi jaoks",
+            ]
+        ],
+
+        "13" => [
+            "title" => "Tehisintellekt klassiruumis, sissejuhatus",
+            "author" => "autorid Artur Coelho ja Marjana Prifti Skenduli",
+            "text" => [
+                "1" => "Tehisintellekt (AI) mõjutab paljusid igapäevaelu valdkondi: see parandab automaatselt teie telefoni sisestatud teksti, valib muusika, mida teie lemmikmuusikarakendus esitab, ja mäletab teie paroole, kui olete need unustanud. Tehisintellekt viitab masinõppe, robootika ja algoritmide kombinatsioonile koos rakendustega kõigis valdkondades: arvutiteadusest tootmiseni ja meditsiinist moeni. Seetõttu on sellel vaieldamatu koht meie elus ja ühiskondades ning sellel on teaduse arendamisel võtmeroll. Nagu kõigil teistel meie elus olulistel nähtustel, on ka õpilastel selle tundmaõppimine kasulik. Aga kuidas õpetada midagi nii keerulist nagu tehisintellekt?",
+                "2" => "See õppebitt aitab teil õpilastele selgitada, mis on tehisintellekt ja millist rolli mängib see õpilaste elus. Need tegevused on mõeldud mitteekspertidele sisu hõlpsaks mõistmiseks ja keerukate terminite tõhusaks kujundamiseks paremini mõistetavateks ideedeks. Nende tunniplaanide abil saate aidata õpilastel õppida selgeks tehisintellekti kasutamise ja mõned selle taga olevad mehhanismid. Need tegevused on mõeldud õpilastele oma analüütilise ja kriitilise mõtlemisoskuste arendamiseks: näiteks Marjana tegevuses töötavad õpilased välja klassifikatsioonijuhtme. Need tegevused aitavad õpilastel mõista ka tehisintellekti erinevaid rakendusi: Arturi tegevuses saavad nad teada tehisintellekti ja kunsti seosest ning sellest, kuidas tehisintellekti saab kasutada visuaalse väljenduse parandamiseks. Nende tegevuste käigus mõtlevad õpilased ka tehisintellekti ohtudele ja nende mõjudele."
+            ],
+            "activities" => [
+                "1" => "Inimese-AI-kunst, algkoolile",
+                "2" => "Klassifitseerimise masinate õpetamine: Juhend masinõppe tutvustamiseks põhikoolile",
+                "3" => "Klassifitseerimise masinate õpetamine: Juhend masinõppe tutvustamiseks gümnaasiumile",
+            ]
+        ],
+
+
+
+
     ],
     'download_video_script' => 'Laadi alla video skript',
     'ready_to_share' => 'Kas olete valmis õpitut oma õpilastega jagama?',
