@@ -11,7 +11,7 @@ return [
 
                     <p>Jūs varat vienkārši noorganizēt mācību stundu klasē, atvērto durvju dienu vai pasākumu savā skolā. Gluži vienkārši atrodiet datumu un reģistrējiet šo aktivitāti . Ikviens pasākuma organizators par savām pūlēm saņems sertifikātu par piedalīšanos.</p>
 
-                    <p>Ja vēlaties iesaistīties starptautiskā aizrautīgu skolotāju grupā, pievienojieties <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ES programmēšanas nedēļas Facebook grupai skolotājiem</a>! Speriet nākamo soli un sadarbojieties ar citām skolām jūsu valstī vai citās valstīs — pievienojieties <a href="/codeweek4all">“Programmēšanas nedēļas visiem” spēku pārbaudei</a>.</p>',
+                    <p>Ja vēlaties iesaistīties starptautiskā aizrautīgu skolotāju grupā, pievienojieties <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ES programmēšanas nedēļas Facebook grupai skolotājiem</a>! Speriet nākamo soli un sadarbojieties ar citām skolām jūsu valstī vai citās valstīs— pievienojieties <a href="/codeweek4all">"Programmēšanas nedēļas visiem” spēku pārbaudei</a>.</p>',
     'lessons' => [
         '1' => [
             'title' => 'Programmēšana bez digitālās tehnoloģijas (bez datora)',
@@ -22,9 +22,9 @@ return [
 
                     <p>Programmēšanas nodarbības bez datora atklāj dalībniekiem apkārtējās pasaules skaitļošanas aspektus.</p>',
             'activities' => [
-                '1' => '1. nodarbība — CodyRoby sākumskolai',
-                '2' => '2. nodarbība — CodyRoby pamatskolai',
-                '3' => '3. nodarbība — CodyRoby vidusskolai'
+                '1' => '1.nodarbība— CodyRoby sākumskolai',
+                '2' => '2.nodarbība— CodyRoby pamatskolai',
+                '3' => '3.nodarbība— CodyRoby vidusskolai'
             ]
         ],
         '2' => [
@@ -34,57 +34,57 @@ return [
 
                     <p>Jūs varat mācīt skaitļošanas tipa domāšanu saviem skolēniem, uzdodot viņiem sadalīt kompleksas problēmas mazākās sastāvdaļās (dekompozīcija), lai atpazītu sistēmas (sistēmu atpazīšana), identificētu problēmas atrisināšanai būtiskos elementus (abstrakcija) vai arī noteiktu noteikumus vai instrukcijas, kas jāievēro, lai sasniegtu vēlamo rezultātu (algoritmu izstrāde). Skaitļošanas tipa domāšanu var mācīt dažādās disciplīnās, piemēram, matemātikā (izdomāt noteikumus otrās pakāpes polinomu reizināšanai), literatūrā (sadalīt dzejoļa analīzi sīkāk, analizējot pantmēru, ritmu un struktūru), valodā (atrast sistēmu darbības vārda pēdējos burtos, kas ietekmē tā rakstību, mainoties gramatiskajam laikam), un daudzos citos priekšmetos.</p>
 
-                    <p>Šajā video Mailzs Berijs, kurš ir galvenais lektors Rohemptonas Universitātes Gildfordas Izglītības skolā Apvienotajā Karalistē, iepazīstinās ar jēdzienu “skaitļošanas tipa domāšana” un dažādajiem veidiem, kā skolotājs var to integrēt klases nodarbībās ar vienkāršu spēļu palīdzību.</p>',
+                    <p>Šajā video Mailzs Berijs, kurš ir galvenais lektors Rohemptonas Universitātes Gildfordas Izglītības skolā Apvienotajā Karalistē, iepazīstinās ar jēdzienu "skaitļošanas tipa domāšana” un dažādajiem veidiem, kā skolotājs var to integrēt klases nodarbībās ar vienkāršu spēļu palīdzību.</p>',
             'activities' => [
-                '1' => '1. nodarbība — matemātiskās spriestspējas attīstīšana sākumskolai',
-                '2' => '2. nodarbība — iepazīstināšana ar algoritmiem pamatskolai',
-                '3' => '3. nodarbība — algoritmi vidusskolai'
+                '1' => '1.nodarbība— matemātiskās spriestspējas attīstīšana sākumskolai',
+                '2' => '2.nodarbība— iepazīstināšana ar algoritmiem pamatskolai',
+                '3' => '3.nodarbība— algoritmi vidusskolai'
             ]
         ],
         '3' => [
-            'title' => 'Vizuālā programmēšana — iepazīstināšana ar Scratch',
+            'title' => 'Vizuālā programmēšana— iepazīstināšana ar Scratch',
             'author' => 'Margo Tinavi (Margo Tinawi)',
             'text' => '<p>Vizuālā programmēšana ļauj cilvēkiem aprakstīt procesus, izmantojot ilustrācijas jeb grafiku. Mēs parasti runājam par vizuālo programmēšanu pretstatā tekstuālajai programmēšanai. Vizuālās programmēšanas valodas (VPV) ir īpaši labi piemērotas, lai bērnus (un arī pieaugušos) iepazīstinātu ar algoritmisko domāšanu. VPV ir mazāk lasāmā teksta un nav jāievēro sintakse.</p>
 
-                    <p>Šajā video Margo Tinavi, kura ir tīmekļa izstrādes skolotāja Le Wagon programmēšanas nometnē un Techies Lab asbl (Beļģija) līdzdibinātāja, palīdzēs jums atklāt Scratch, kas ir viena no populārākajām VPV, ko izmanto visā pasaulē. Scratch 2002. gadā izstrādāja Masačūsetsas Tehnoloģijas institūts, un kopš tā laika ap programmu ir izveidota liela kopiena, kurā varat atrast miljoniem projektu, ko atkārtot kopā ar saviem skolēniem, kā arī neskaitāmas rokasgrāmatas vairākās valodās.</p>
+                    <p>Šajā video Margo Tinavi, kura ir tīmekļa izstrādes skolotāja Le Wagon programmēšanas nometnē un Techies Lab asbl (Beļģija) līdzdibinātāja, palīdzēs jums atklāt Scratch, kas ir viena no populārākajām VPV, ko izmanto visā pasaulē. Scratch 2002.gadā izstrādāja Masačūsetsas Tehnoloģijas institūts, un kopš tā laika ap programmu ir izveidota liela kopiena, kurā varat atrast miljoniem projektu, ko atkārtot kopā ar saviem skolēniem, kā arī neskaitāmas rokasgrāmatas vairākās valodās.</p>
 
                     <p>Jums nav nepieciešama nekāda programmēšanas pieredze, lai izmantotu Scratch, un jūs to varat izmantot visdažādākajos projektos. Piemēram, izmantojot Scratch kā digitālu stāstu stāstīšanas rīku, skolēni var radīt stāstus, ilustrēt matemātisku problēmu vai spēlēt mākslas viktorīnas, lai uzzinātu vairāk par kultūras mantojumu, vienlaikus apgūstot programmēšanu un skaitļošanas tipa domāšanu un darot to interesanti (kas ir pats galvenais).</p>
 
                     <p>Scratch ir bezmaksas rīks, kas ir ļoti intuitīvs un motivējošs skolēniem. Noskatieties Margo sagatavoto video, lai uzzinātu, ar ko sākt:</p>',
             'activities' => [
-                '1' => '1. nodarbība — Scratch pamati sākumskolai',
-                '2' => '2. nodarbība — Scratch pamati pamatskolai',
-                '3' => '3. nodarbība — Scratch pamati vidusskolai'
+                '1' => '1.nodarbība— Scratch pamati sākumskolai',
+                '2' => '2.nodarbība— Scratch pamati pamatskolai',
+                '3' => '3.nodarbība— Scratch pamati vidusskolai'
             ]
         ],
         '4' => [
             'title' => 'Izglītojošu spēļu veidošana ar Scratch',
             'author' => 'Hesuss Moreno Leons (Jesús Moreno León)',
-            'text' => '<p>Kritiskā domāšana, neatlaidība, problēmu risināšana, skaitļošanas tipa domāšana un radošums ir tikai dažas no būtiskajām prasmēm, kuras jūsu skolēniem ir nepieciešamas, lai gūtu panākumus 21. gadsimtā, un programmēšana var palīdzēt šīs prasmes iegūt aizraujošā un motivējošā veidā.</p>
+            'text' => '<p>Kritiskā domāšana, neatlaidība, problēmu risināšana, skaitļošanas tipa domāšana un radošums ir tikai dažas no būtiskajām prasmēm, kuras jūsu skolēniem ir nepieciešamas, lai gūtu panākumus 21.gadsimtā, un programmēšana var palīdzēt šīs prasmes iegūt aizraujošā un motivējošā veidā.</p>
 
                     <p>Tādi algoritmiski jēdzieni kā plūsmas kontrole, izmantojot instrukciju un cilpu virknes, datu attēlošana ar mainīgajiem un sarakstiem vai procesu sinhronizācija var izklausīties sarežģīti, bet šajā video jūs redzēsiet, ka tos apgūt ir vieglāk, nekā domājat.</p>
 
-                    <p>Šajā video Spānijas datorzinību skolotājs un pētnieks Hesuss Moreno Leons paskaidros, kā jūs varat attīstīt šīs un citas savu skolēnu prasmes, vienlaikus padarot mācīšanās procesu interesantu. Kā to var izdarīt? Veidojot jautājumu un atbilžu spēli ar Scratch — pasaulē populārāko skolās izmantoto programmēšanas valodu. Scratch ne tikai sekmē skaitļošanas tipa domāšanu, bet arī ļauj mācībās integrēt spēļu elementus, tādējādi motivējot skolēnus mācīties ar prieku.</p>
+                    <p>Šajā video Spānijas datorzinību skolotājs un pētnieks Hesuss Moreno Leons paskaidros, kā jūs varat attīstīt šīs un citas savu skolēnu prasmes, vienlaikus padarot mācīšanās procesu interesantu. Kā to var izdarīt? Veidojot jautājumu un atbilžu spēli ar Scratch— pasaulē populārāko skolās izmantoto programmēšanas valodu. Scratch ne tikai sekmē skaitļošanas tipa domāšanu, bet arī ļauj mācībās integrēt spēļu elementus, tādējādi motivējot skolēnus mācīties ar prieku.</p>
 
                     <p>Noskatieties video, lai uzzinātu, ar ko sākt:</p>',
             'activities' => [
-                '1' => '1. nodarbība — jautājumu un atbilžu spēle ar Scratch sākumskolai',
-                '2' => '2. nodarbība — jautājumu un atbilžu spēle ar Scratch pamatskolai',
-                '3' => '3. nodarbība — jautājumu un atbilžu spēle ar Scratch vidusskolai'
+                '1' => '1.nodarbība— jautājumu un atbilžu spēle ar Scratch sākumskolai',
+                '2' => '2.nodarbība— jautājumu un atbilžu spēle ar Scratch pamatskolai',
+                '3' => '3.nodarbība— jautājumu un atbilžu spēle ar Scratch vidusskolai'
             ]
         ],
         '5' => [
             'title' => 'Radošas nodarbības, robotika un eksperimenti klasē',
             'author' => 'Tulija Uršica (Tullia Urschitz)',
-            'text' => '<p>21. gadsimta izglītībā ļoti svarīgi ir skolas mācību programmās iekļaut programmēšanu, eksperimentus, robotiku un mikroelektroniku kā apmācības un mācību līdzekļus.</p>
+            'text' => '<p>21.gadsimta izglītībā ļoti svarīgi ir skolas mācību programmās iekļaut programmēšanu, eksperimentus, robotiku un mikroelektroniku kā apmācības un mācību līdzekļus.</p>
 
                     <p>Eksperimentu un robotikas izmantošana skolās sniedz daudzus ieguvumus skolēniem, jo palīdz attīstīt tādas svarīgas kompetences kā problēmu risināšana, darbs grupā un sadarbība. Tā arī veicina skolēnu radošumu un pašpārliecinātību un palīdz viņiem nostiprināt neatlaidību un apņēmību, saskaroties ar grūtībām. Robotika ir arī joma, kas veicina iekļaušanu, jo tā ir viegli pieejama ļoti dažādiem skolēniem (gan zēniem, gan meitenēm) ar dažādiem talantiem un prasmēm, un tā pozitīvi ietekmē skolēnus ar autiskā spektra traucējumiem.</p>
 
                     <p>Noskatieties šo video, kurā Tulija Uršica (Tullia Urschitz), kura ir Italian Scientix vēstniece un STEM skolotāja Itālijas pilsētā Santambrodžo di Valpoličellā, sniedz praktiskus piemērus tam, kā skolotāji var integrēt eksperimentus un robotiku klases nodarbībās, padarot citādi pasīvus skolēnus par aizrautīgiem radītājiem.</p>',
             'activities' => [
-                '1' => '1. nodarbība — kā pagatavot mehānisku kartona roku (sākumskolai)',
-                '2' => '2. nodarbība — kā pagatavot mehānisku vai robotisku roku (pamatskolai)',
-                '3' => '3. nodarbība — kā pagatavot mehānisku vai robotisku roku (vidusskolai)'
+                '1' => '1.nodarbība— kā pagatavot mehānisku kartona roku (sākumskolai)',
+                '2' => '2.nodarbība— kā pagatavot mehānisku vai robotisku roku (pamatskolai)',
+                '3' => '3.nodarbība— kā pagatavot mehānisku vai robotisku roku (vidusskolai)'
             ]
         ],
         '6' => [
@@ -93,20 +93,20 @@ return [
             'text'=>'<p>Šajā video CyberWayFinder dibinātāja Rosanna Kīrere skaidro, kas ir App Inventor, stāsta par ieguvumiem, ko sniedz lietotņu veidošana mācību stundās, un parāda dažus praktiskus piemērus, kā skolotāji var stundās izmantot App Inventor, lai pasīvi skolēni kļūtu par aizrautīgiem spēļu veidotājiem.</p>
 <p>Mēs visi izmantojam lietotnes — tās palīdz ērti un ātri koordinēt mūsu ikdienu. Lietotnes arī tiek arvien biežāk izmantotas izglītībā, jo tās nodrošina individualizētu mācīšanos un palīdz lietotājiem iegūt informāciju. Lai skolēni izveido izglītojošu lietotni, ko var izmantot pārējie!</p>',
             'activities'=>[
-                '1'=>'1. pasākums “Nosaukums” — sākumskolas skolēniem',
-                '2'=>'2. pasākums “Nosaukums” — pamatskolas skolēniem',
-                '3'=>'3. pasākums “Nosaukums” — vidusskolas skolēniem'
+                '1'=>'1. pasākums "Nosaukums” — sākumskolas skolēniem',
+                '2'=>'2. pasākums "Nosaukums” — pamatskolas skolēniem',
+                '3'=>'3. pasākums "Nosaukums” — vidusskolas skolēniem'
             ]
         ],
         '7' => [
             'title'=>'Meistarošana un veidošana',
             'author'=>'Djogu da Silva (Diogo da Silva)',
-            'text'=>'<p>Mūsdienās mainās darba vide un saturs, un līdztekus mainās arī izglītība. Lai sagatavotu skolēnus 21. gadsimta karjerai, svarīgi ir attīstīt tādas jaunas prasmes kā meistarošana, veidošana un “uzlaušana”, jo tās mazina plaisu starp skolas mācībām un reālo dzīvi. Ja mācību stundā tiek radīta uz sadarbību vērsta vide ar ievirzi uz problēmu risināšanu, skolēni var līdzdarboties un gūt labākas sekmes. Šādas aktivitātes rosina diskusijas — tādējādi klase kļūst par vietu komunikācijai, kur visi viedokļi ir svarīgi.</p> 
+            'text'=>'<p>Mūsdienās mainās darba vide un saturs, un līdztekus mainās arī izglītība. Lai sagatavotu skolēnus 21. gadsimta karjerai, svarīgi ir attīstīt tādas jaunas prasmes kā meistarošana, veidošana un "uzlaušana”, jo tās mazina plaisu starp skolas mācībām un reālo dzīvi. Ja mācību stundā tiek radīta uz sadarbību vērsta vide ar ievirzi uz problēmu risināšanu, skolēni var līdzdarboties un gūt labākas sekmes. Šādas aktivitātes rosina diskusijas — tādējādi klase kļūst par vietu komunikācijai, kur visi viedokļi ir svarīgi.</p> 
 <p>Šajā video dabaszinātņu, tehnoloģiju, inženierijas, mākslas un matemātikas (STEAM) skolotājs un Escola Global darbinieks no Portugāles Djogu da Silva soli pa solim izskaidro, kā izveidot stundu, kurā skolēni rod nepieciešamo risinājumu, meistarojot, veidojot un izzinot.</p>',
             'activities'=>[
-                '1'=>'1. pasākums “Nosaukums” — sākumskolas skolēniem',
-                '2'=>'2. pasākums “Nosaukums” — pamatskolas skolēniem',
-                '3'=>'3. pasākums “Nosaukums” — vidusskolas skolēniem'
+                '1'=>'1. pasākums "Nosaukums” — sākumskolas skolēniem',
+                '2'=>'2. pasākums "Nosaukums” — pamatskolas skolēniem',
+                '3'=>'3. pasākums "Nosaukums” — vidusskolas skolēniem'
             ]
         ],
         '8' => [
@@ -117,10 +117,10 @@ return [
 <p>Daži no mācību priekšmetiem, kuros skolotāji var iekļaut programmēšanu, ir valodas, mūzika, kā arī zinātne, tehnoloģija, inženierzinātnes un matemātika. Tas noderēs nākotnes zinātniekiem, mūziķiem, māksliniekiem — faktiski ikvienam! Visi skolotāji var mācību procesā integrēt programmēšanu un algoritmisko domāšanu. Daži skolās īstenojami pasākumi: stundā, kurā citu mācību priekšmetu ietvaros tiek apgūta valoda, var izskaidrot kādu ikdienas dzīvē sastopamu algoritmu; no filca var darināt vadības pulti, lai pievērstu uzmanību zinātnēm; var izmantot robotiku, lai palielinātu motivāciju apgūt matemātiku.</p> 
 <p>Šajā video parādīts, kā mūzikas, dabaszinātņu un valodu skolotāji var viegli integrēt programmēšanu un algoritmisko domāšanu mācību procesā, pat ja nav iepriekšējas pieredzes šajā jomā.</p>',
             'activities'=>[
-                '1'=>'1. pasākums “Robotika un iekļaušana pamatskolēniem dabaszinātņu, tehnoloģiju, inženierzinātņu vai matemātikas stundās”',
-                '2'=>'2. pasākums “Mūzika ir programmēšana”',
-                '3'=>'3. pasākums “Rokdarbi un programmēšana ar Makey Makey komplektu”',
-                '4'=>'4. pasākums “Ikdienā sastopams algoritms mācību satura un valodas integrētas apguves stundā”'
+                '1'=>'1. pasākums "Robotika un iekļaušana pamatskolēniem dabaszinātņu, tehnoloģiju, inženierzinātņu vai matemātikas stundās”',
+                '2'=>'2. pasākums "Mūzika ir programmēšana”',
+                '3'=>'3. pasākums "Rokdarbi un programmēšana ar Makey Makey komplektu”',
+                '4'=>'4. pasākums "Ikdienā sastopams algoritms mācību satura un valodas integrētas apguves stundā”'
             ]
         ],
         '9' => [
@@ -129,7 +129,7 @@ return [
             'text'=>'<p>
                    Micro:bit kontrolleri, kas ir viegli programmējams kabatas formāta dators, var izmantot, lai kopā ar skolēniem aizraujošā un vienkāršā veidā radītu interesantus priekšmetus, sākot ar robotiem un beidzot ar mūzikas instrumentiem, vienlaikus mācot viņiem programmēšanu. Tā lietošana ir vienkārša un viegla pat visjaunākajiem programmētājiem, bet vienlaikus micro:bit ir pietiekami jaudīgs arī skolēniem ar augstāka līmeņa programmēšanas prasmēm. Jūs to varat iekļaut dažādos mācību priekšmetos: vēsturē, matemātikā un pat dabaszinībās. Iespējas ir neierobežotas. Micro:bit ir saistošs un nedārgs veids, kā iepazīstināt skolēnus ar programmēšanu, vienlaikus iemācot tādas būtiskas prasmes kā skaitļošanas tipa domāšana, problēmu risināšana un radošums.
                    </p><p>
-Šajā video datorzinību skolotāja Pauline Maas no centra “Koninklijke Visio” iepazīstina ar micro:bit un sniedz dažus praktiskus piemērus, kā skolotāji var integrēt to klases nodarbībās, pārvēršot pat pasīvus skolēnus entuziastiskos radītājos.                   
+Šajā video datorzinību skolotāja Pauline Maas no centra "Koninklijke Visio” iepazīstina ar micro:bit un sniedz dažus praktiskus piemērus, kā skolotāji var integrēt to klases nodarbībās, pārvēršot pat pasīvus skolēnus entuziastiskos radītājos.                   
                 </p>',
             'activities'=>[
                 '1'=>'Morzes kods ar micro:bit, sākumskolai',
@@ -184,7 +184,7 @@ Ar Python skolēni var veidot viktorīnas par vēstures notikumiem, risināt mat
                 '6' => [
                     "url"=>"https://hourofpython.com/",
                     "title"=>"Hour of Python",
-                    "description"=>"Python ievadlekciju kolekcija (gan tekstuāli, gan bloku veidā), izmantojot interaktīvus “Trinkets”.",
+                    "description"=>'Python ievadlekciju kolekcija (gan tekstuāli, gan bloku veidā), izmantojot interaktīvus "Trinkets".',
                 ],
             ]
         ],
@@ -202,7 +202,43 @@ Ar Python skolēni var veidot viktorīnas par vēstures notikumiem, risināt mat
                 '2'=>'Gudrā pele',
                 '3'=>'Zvaigžņu radītājs',
             ]
-        ]
+        ],
+
+        "12" => [
+            "title" => "Programmēšana ilgtspējīgas attīstības mērķiem",
+            "author" => "Francisko Havjērs Mazero, Kristīna Nikolaita un Erviola Konomi",
+            "text" => [
+                "1" => "Tradicionālā izglītība reti sniedz skolēniem iespēju saprast un risināt reālās pasaules problēmas, piemēram, globālās klimata pārmaiņas, dzimumu līdztiesības, bada, nabadzības vai veselības un labklājības problēmas.",
+                "2" => "Ilgtspējīgas attīstības mērķi (IAM) ir Ilgtspējīgas attīstības programmas 2030.gadam pamats, ko visas Apvienoto Nāciju Organizācijas dalībvalstis ir apstiprinājušas kā ceļvedi miera un pārticības nodrošināšanai pasaulē un globālas attīstības veicināšanai. Skolotāji var izmantot šos IAM klasē kā rīku skolēnu kritiskās domāšanas attīstībai, bet arī, lai palīdzētu viņiem atklāt savu identitāti un mērķi. Apvienojot programmēšanas un analītiski algoritmiskās domāšanas pamatelementus ar IAM, pieaugs studentu pašpārliecība, un jūs palīdzēsiet viņiem attīstīt radošumu, uzņēmību, kā arī problēmu risināšanas un komunikācijas prasmes.",
+                "3" => "Tālāk izklāstītajās aktivitātēs skolēni izmantos Scratch, ASCII programmēšanas un programmēšanas bez datora principus tēmām, kas mūsdienās ir svarīgas visā pasaulē un visās sabiedrībās. Skolotāji uzlabos skolēnu izpratni par ilgtspējīgas attīstības mērķiem, palīdzot viņiem attīstīt empātiju, aktīvu pilsonisko garu un sociālās prasmes interesantā un aizraujošā veidā.",
+                "4" => "Katrs no šiem mācību plāniem koncentrējas uz vienu no šiem IAM:",
+        "5" => "Ilgtspējīgas attīstības 3.mērķis: Nodrošināt veselīgu dzīvi un sekmēt labklājību jebkura vecuma cilvēkiem",
+        "6" => "Ilgtspējīgas attīstības 5.mērķis: Panākt dzimumu līdztiesību un iespējināt visas sievietes un meitenes",
+        "7" => "Ilgtspējīgas attīstības 13.mērķis: Veikt steidzamus pasākumus, lai cīnītos pret klimata pārmaiņām un to ietekmi",
+    ],
+    "activities" => [
+        "1" => "Karateka projekts: Karatē apguve ar programmēšanas palīdzību pamatskolai, kā arī vidusskolas jaunākajām un vecākajām klasēm",
+        "2" => "Ilgtspējīgas attīstības mērķi un programmēšana klimata pārmaiņām pamatskolai",
+        "3" => "Programmēšana dzimumu līdztiesībai vidusskolas vecākajām klasēm",
+    ]
+],
+"13" => [
+    "title" => "Ievads par mākslīgo intelektu klasē",
+    "author" => "Autori: Arturs Koelho un Marjana Prifti Skenduli",
+    "text" => [
+        "1" => "Mākslīgais intelekts (MI) ietekmē daudzas mūsu dzīves jomas: tas automātiski labo tekstu, ko rakstāt telefonā, tas izvēlas mūziku, ko atskaņo jūsu iecienītākās mūzikas lietotnes, un tas atceras paroles, kad jūs tās aizmirstat. MI ietver sevī mašīnmācīšanos, robotiku un algoritmus, ko izmanto daudzās dzīves jomās: no datorzinātnes līdz ražošanai, no medicīnas līdz modei. Tādēļ MI nenoliedzami ir būtiska vieta mūsu dzīvē un sabiedrībā, un tam ir būtiska nozīme zinātnes attīstībā. Tādēļ skolēniem ir vērtīgi mācīties par MI, tāpat kā par jebkuru citu svarīgu parādību mūsu dzīvē. Bet kā mācīt par tik sarežģītu lietu kā MI?",
+        "2" => "Šis mācību kurss palīdzēs jums izskaidrot skolēniem, kas ir MI un kāda ir tā loma skolēnu dzīvē. Šīs aktivitātes ir izstrādātas cilvēkiem, kuri nav eksperti— saturs ir viegli uztverams, sadalot sarežģītus terminus vieglāk uztveramās idejās. Ar šīm mācību programmām varat palīdzēt skolēniem apgūt MI izmantošanas veidus un dažus to pamatā esošos mehānismus. Šīs aktivitātes ir izstrādātas skolēniem, lai attīstītu analītiskās un kritiskās domāšanas prasmes: piemēram, Marjanas aktivitātē skolēni izstrādā klasifikācijas sistēmu. Turklāt šīs aktivitātes palīdz skolēniem izprast dažādus MI pielietojumus: Artūra aktivitātē viņi atklās saikni starp MI un mākslu un uzzinās, kā MI var izmantot, lai papildinātu vizuālās izteiksmes iespējas. Šīs aktivitātes liks skolēniem padomāt arī par MI bīstamību un ietekmi."
+    ],
+    "activities" => [
+        "1" => "Cilvēka-MI māksla pamatskolai",
+        "2" => "Kā iemācīt mašīnām klasificēt. Ievads par uzraudzīto mašīnmācīšanos vidusskolas jaunākajām klasēm",
+        "3" => "Kā iemācīt mašīnām klasificēt. Ievads par uzraudzīto mašīnmācīšanos vidusskolas vecākajām klasēm",
+    ]
+],
+
+
+
+
 
     ],
     'download_video_script' => 'Lejupielādēt video skriptu',
@@ -212,7 +248,7 @@ Ar Python skolēni var veidot viktorīnas par vēstures notikumiem, risināt mat
         'title' => 'Neaizmirstiet pievienot savu pasākumu programmēšanas nedēļas kartē!',
         'text' => '<p>Jūs varat vienkārši noorganizēt mācību stundu klasē, atvērto durvju dienu vai pasākumu savā skolā. Gluži vienkārši atrodiet datumu un reģistrējiet šo aktivitāti <a href="/events">programmēšanas nedēļas kartē</a>. Ikviens pasākuma organizators par savām pūlēm saņems sertifikātu par piedalīšanos.</p>
 
-<p>Ja vēlaties iesaistīties starptautiskā aizrautīgu skolotāju grupā, pievienojieties <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ES programmēšanas nedēļas Facebook grupai skolotājiem</a>! Speriet nākamo soli un sadarbojieties ar citām skolām jūsu valstī vai citās valstīs — pievienojieties <a href="/codeweek4all">“Programmēšanas nedēļas visiem” spēku pārbaudei</a>.</p>'
+<p>Ja vēlaties iesaistīties starptautiskā aizrautīgu skolotāju grupā, pievienojieties <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ES programmēšanas nedēļas Facebook grupai skolotājiem</a>! Speriet nākamo soli un sadarbojieties ar citām skolām jūsu valstī vai citās valstīs— pievienojieties <a href="/codeweek4all">"Programmēšanas nedēļas visiem” spēku pārbaudei</a>.</p>'
     ]
 
 ];

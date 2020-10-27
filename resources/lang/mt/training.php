@@ -88,60 +88,60 @@ return [
             ]
         ],
         '6' => [
-            'title'=>'App Inventor u l-Iżvilupp tal-Apps',
-            'author'=>'Minn Rosanna Kurrer',
-            'text'=>'<p>Agħti daqqa t’għajn lejn dan il-video fejn Rosanna Kurrer, (il-Fundatriċi ta’ CyberWayFinder) tispjega x’inhu App Inventor, turi l-vantaġġi tal-użu tal-iżvilupp tal-Apps fil-klassi u tagħti xi eżempji prattiċi dwar kif l-għalliema jistgħu jintegraw l-App Inventor fil-klassi, u jittrasformaw studenti passivi fi f’kreaturi entużjasti ta’ logħbiet.</p>
+            'title' => 'App Inventor u l-Iżvilupp tal-Apps',
+            'author' => 'Minn Rosanna Kurrer',
+            'text' => '<p>Agħti daqqa t’għajn lejn dan il-video fejn Rosanna Kurrer, (il-Fundatriċi ta’ CyberWayFinder) tispjega x’inhu App Inventor, turi l-vantaġġi tal-użu tal-iżvilupp tal-Apps fil-klassi u tagħti xi eżempji prattiċi dwar kif l-għalliema jistgħu jintegraw l-App Inventor fil-klassi, u jittrasformaw studenti passivi fi f’kreaturi entużjasti ta’ logħbiet.</p>
 <p>Aħna kollha nużaw l-applikazzjonijiet peress li huma mod konvenjenti u mod rapidu biex nikkoordinaw l-attivitajiet tagħna. Huma wkoll qed jintużaw aktar u aktar fl-edukazzjoni peress li dawn jippermettu tagħlim personalizzat u jippermettu lill-utenti jiksbu informazzjoni, għalhekk għaliex ma tagħtix lill-istudenti tiegħek is-setgħa li jibnu app edukattiva għall-oħrajn?</p>',
-            'activities'=>[
-                '1'=>'Attività 1 – Titlu, għal Skola Primarja',
-                '2'=>'Attività 2 – Titlu, għal Skola Sekondarja Inferjuri',
-                '3'=>'Attività 3 – Titlu, għal Skola Sekondarja Superjuri'
+            'activities' => [
+                '1' => 'Attività 1 – Titlu, għal Skola Primarja',
+                '2' => 'Attività 2 – Titlu, għal Skola Sekondarja Inferjuri',
+                '3' => 'Attività 3 – Titlu, għal Skola Sekondarja Superjuri'
             ]
         ],
         '7' => [
-            'title'=>'Innavikar u Kreattività',
-            'author'=>'minn Diogo da Silva',
-            'text'=>'<p>L-impjiegi u l-postijiet tax-xogħol qed jinbidlu u l-edukazzjoni qed issegwi fil-passi tagħhom. Meta l-istudenti jkunu qed jitħejjew għall-karrieri tas-seklu 21, ħiliet ġodda bħall-innavikar, il-kreattività, u l-hacking isiru essenzjali peress li jnaqqsu d-distakk bejn l-iskola u r-realtà. Bit-trasformazzjoni tal-klassi f’ambjent kollaborattiv li jiffoka fuq is-soluzzjoni tal-problemi, l-istudenti huma kapaċi jinvolvu ruħhom u jirnexxu. Dawn l-attivitajiet jippromwovu d-diskussjoni, u b’hekk jippermettu li l-klassi ssir ċentru ta’ komunikazzjoni, fejn kull kontribuzzjoni hija importanti.</p> 
+            'title' => 'Innavikar u Kreattività',
+            'author' => 'minn Diogo da Silva',
+            'text' => '<p>L-impjiegi u l-postijiet tax-xogħol qed jinbidlu u l-edukazzjoni qed issegwi fil-passi tagħhom. Meta l-istudenti jkunu qed jitħejjew għall-karrieri tas-seklu 21, ħiliet ġodda bħall-innavikar, il-kreattività, u l-hacking isiru essenzjali peress li jnaqqsu d-distakk bejn l-iskola u r-realtà. Bit-trasformazzjoni tal-klassi f’ambjent kollaborattiv li jiffoka fuq is-soluzzjoni tal-problemi, l-istudenti huma kapaċi jinvolvu ruħhom u jirnexxu. Dawn l-attivitajiet jippromwovu d-diskussjoni, u b’hekk jippermettu li l-klassi ssir ċentru ta’ komunikazzjoni, fejn kull kontribuzzjoni hija importanti.</p> 
 <p>Agħti daqqa t’għajn lill-video hawn taħt, fejn għalliem Portugiż  tas-suġġetti STEAM, Diogo da Silva, membru tal-Escola Global, jieħdok pass pass fl-iżvilupp ta’ lezzjoni li twassal biex l-istudenti tiegħek jinnavikaw, jikkreaw u jiħħekkjaw biex isibu soluzzjoni.</p>',
-            'activities'=>[
-                '1'=>'Attività 1 – Titlu, għal Skola Primarja',
-                '2'=>'Attività 2 – Titlu, għal Skola Sekondarja Inferjuri',
-                '3'=>'Attività 3 – Titlu, għal Skola Sekondarja Superjuri'
+            'activities' => [
+                '1' => 'Attività 1 – Titlu, għal Skola Primarja',
+                '2' => 'Attività 2 – Titlu, għal Skola Sekondarja Inferjuri',
+                '3' => 'Attività 3 – Titlu, għal Skola Sekondarja Superjuri'
             ]
         ],
         '8' => [
-            'title'=>'Ikkowdjar għas-suġġetti kollha',
-            'author'=>'Minn M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
-            'text'=>'<p>Meta taħseb dwar l-ikkowdjar fil-klassi, l-ewwel stampa li tiġik f’rasek hija dik tal-kompjuters, it-Teknoloġija, il-Matematika jew ix-Xjenza. Madankollu, minħabba li l-istudenti għandhom għadd ta’ interessi u suġġetti, għaliex ma niħdux vantaġġ minn dan u nimplimentaw l-ikkowdjar fil-kurrikulu kollu?</p> 
+            'title' => 'Ikkowdjar għas-suġġetti kollha',
+            'author' => 'Minn M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text' => '<p>Meta taħseb dwar l-ikkowdjar fil-klassi, l-ewwel stampa li tiġik f’rasek hija dik tal-kompjuters, it-Teknoloġija, il-Matematika jew ix-Xjenza. Madankollu, minħabba li l-istudenti għandhom għadd ta’ interessi u suġġetti, għaliex ma niħdux vantaġġ minn dan u nimplimentaw l-ikkowdjar fil-kurrikulu kollu?</p> 
 <p>L-integrazzjoni tal-ikkowdjar fil-klassi għandha ħafna benefiċċji, peress li tgħinhom jiżviluppaw il-ħsieb kritiku u l-ħiliet ta’ soluzzjoni tal-problemi, isiru utenti attivi u jmexxu l-proċess ta’ tagħlim tagħhom stess, li huwa essenzjali fl-iskejjel. Madankollu, l-aktar ħaġa importanti hi li l-istudenti tiegħek se jitgħallmu waqt li jieħdu pjaċir!</p>
 <p>Il-lingwi, il-mużika jew is-suġġetti STEM (xjenza, teknoloġija, inġinerija u matematika) huma biss ftit mis-suġġetti li l-għalliema jistgħu jikkodifikaw fihom għax-xjenzati, il-mużiċisti, l-artisti tal-futur, fil-verità għal kulħadd! L-għalliema kollha jistgħu jintegraw l-ikkowdjar u l-ħsieb komputazzjonali fil-klassi. L-użu ta’ lezzjoni b’CLIL (tagħlim integrat tal-kontenut u tal-lingwa) biex tispjega algoritmu tal-ħajja ta’ kuljum  il-ħolqien ta’ felt joystick biex tgħallem dwar ix-xjenza jew l-użu ta’ robots edukattivi biex tagħti spinta lill-motivazzjoni fil-matematika huma xi eżempji ta’ attivitajiet li tista’ tagħmel fil-klassi tiegħek.</p> 
 <p>Agħti daqqa t’għajn lill-video hawn taħt biex tara kif l-għalliema tal-Mużika, tax-Xjenza jew tal-Lingwi jistgħu jintegraw b’mod faċli l-ikkowdjar u l-ħsieb komputazzjonali fil-klassi, anki jekk m’għandekx esperjenza preċedenti. </p>',
-            'activities'=>[
-                '1'=>'Attività 1 Robotika u inklużjoni għall-iskejjel primarji għas-suġġetti STEM',
-                '2'=>'Attività 2 Mużika hija kkowdjar',
-                '3'=>'Attività 3 Innavikar u kkowdjar ma’ Makey Makey',
-                '4'=>'Attività 4 Algoritmu tal-ħajja ta’ kuljum għal lezzjoni b\'CLIL'
+            'activities' => [
+                '1' => 'Attività 1 Robotika u inklużjoni għall-iskejjel primarji għas-suġġetti STEM',
+                '2' => 'Attività 2 Mużika hija kkowdjar',
+                '3' => 'Attività 3 Innavikar u kkowdjar ma’ Makey Makey',
+                '4' => 'Attività 4 Algoritmu tal-ħajja ta’ kuljum għal lezzjoni b\'CLIL'
             ]
         ],
         '9' => [
-            'title'=>'Nagħmlu automaton b\'mikro:bit',
-            'author'=>'Minn Pauline Maas',
-            'text'=>'<p>
+            'title' => 'Nagħmlu automaton b\'mikro:bit',
+            'author' => 'Minn Pauline Maas',
+            'text' => '<p>
                    Meta tuża Mikro:bit, il-kompjuter daqs but li jista’ jiġi pprogrammat faċilment, jista’ jkun mod divertenti u faċli biex tagħmel kreazzjonijiet interessanti, minn robots sa strumenti mużikali mal-istudenti tiegħek, waqt li fl-istess ħin tgħallimhom kif jikkodifikaw. Huwa sempliċi u faċli biex jintuża anke mill-iżgħar programmaturi, filwaqt li fl-istess ħin huwa b’saħħtu biżżejjed għal studenti aktar avvanzati. Tista’ tinkorporah f’varjetà ta’ lezzjonijiet mill-istorja sal-matematika u anke x-xjenza. Il-possibbiltajiet huma bla tmiem. Il-Mikro: bit huwa mod impenjattiv u rħis kif tgħallem lill-istudenti dwar l-ikkodifikar waqt li jnissel il-ħiliet kruċjali bħall-ħsieb komputazzjonali, is-soluzzjoni tal-problemi u l-kreattività.
                    </p>
                    <p>
 F’dan il-vidjow, Pauline Maas, għalliema tax-Xjenza tal-Kompjuter fi Koninklijke Visio, se tintroduċi l-Mikro:bit u tagħti ftit eżempji prattiċi ta’ kif l-għalliema jistgħu jintegrawh fil-klassi, billi jittrasformaw lill-istudenti passivi f’ideaturi entużjasti.                   
                 </p>',
-            'activities'=>[
-                '1'=>'Morse Code bil-mikro:bit, għall-Iskejjel Primarji',
-                '2'=>'Escape room bil-mikro:bit, għall-Iskejjel Sekondarji tal-ewwel livell',
-                '3'=>'Nagħmlu automaton, għall-Iskejjel Sekondarji Għolja',
+            'activities' => [
+                '1' => 'Morse Code bil-mikro:bit, għall-Iskejjel Primarji',
+                '2' => 'Escape room bil-mikro:bit, għall-Iskejjel Sekondarji tal-ewwel livell',
+                '3' => 'Nagħmlu automaton, għall-Iskejjel Sekondarji Għolja',
             ]
         ],
         '10' => [
-            'title'=>'Kodifikazzjoni kreattiva b’Python',
-            'author'=>'minn Ivana Vezjak',
-            'text'=>'<p>
+            'title' => 'Kodifikazzjoni kreattiva b’Python',
+            'author' => 'minn Ivana Vezjak',
+            'text' => '<p>
 Li timxi minn programmar viżiv għal dak ibbażat fuq it-test hija mogħdija naturali fil-kodifikazzjoni. Filwaqt li l-ipprogrammar viżiv ħafna drabi huwa tajjeb għall-prinċipjanti, wara ftit żmien, l-istudenti jistgħu jkunu mxennqa għal sfida ġdida. L-ipprogrammar ibbażat fuq it-test huwa l-pass li jmiss għal kull min irid jidħol aktar fil-fond fil-programmazzjoni u l-ħsieb komputazzjonali. 
                    </p>
                    <p>                   
@@ -150,59 +150,94 @@ F\'dan il-video, Ivana Vezjak tintroduċik għas-sintassi bażika ta’ Python. 
 <p> 
 B’Python, l-istudenti jistgħu joħolqu kwiżż dwar avvenimenti storiċi, isolvu problemi tal-matematika u jagħmlu simulazzjonijiet tal-fiżika, joħolqu logħob, jibnu siti web, iwettqu analiżi tad-data għal proġetti xjentifiċi u ħafna aktar. Python għandha librerija standard rikka u estensiva, komunità kbira u għadd kbir ta’ tutorials u proġetti disponibbli online, li jistgħu jintużaw għat-tagħlim, it-taħriġ u l-prattika.  Jekk jikkodifikaw b’Python, janalizzaw programmi u jsewwu bugs, l-istudenti jiżviluppaw il-kreattività u jitgħallmu kif ikunu konsistenti, persistenti u paċenzjużi. Jitgħallmu ħiliet ta’ ħsieb analitiku u ta’ soluzzjoni ta’ problemi billi jaqsmu problemi kumplessi f’komponenti iżgħar. Dawn il-kompetenzi għandhom jgħinuhom jindirizzaw problemi f’kull qasam ta’ ħajjithom.
                 </p>',
-            'activities'=>[
-                '1'=>'L-ewwel kwiżż tiegħi, għall-Iskejjel Primarji',
-                '2'=>'Hangman, għall-Iskejjel Sekondarji tal-Ewwel Livell',
-                '3'=>'Aqta’ l-bandiera!, għall-Iskejjel Sekondarji Għolja',
+            'activities' => [
+                '1' => 'L-ewwel kwiżż tiegħi, għall-Iskejjel Primarji',
+                '2' => 'Hangman, għall-Iskejjel Sekondarji tal-Ewwel Livell',
+                '3' => 'Aqta’ l-bandiera!, għall-Iskejjel Sekondarji Għolja',
             ],
-            'links'=>[
+            'links' => [
                 'title' => 'Riżorsi oħra relatati',
                 '1' => [
-                    "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Librerija Standard ta’ Python",
-                    "description"=>"Ġabra ta’ kodiċi u moduli mibnija minn qabel (eż. modulu ta’ fekruna, modulu tal-matematika eċċ.).",
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "Librerija Standard ta’ Python",
+                    "description" => "Ġabra ta’ kodiċi u moduli mibnija minn qabel (eż. modulu ta’ fekruna, modulu tal-matematika eċċ.).",
                 ],
                 '2' => [
-                    "url"=>"https://codecombat.com/",
-                    "title"=>"CodeCombat",
-                    "description"=>"Logħba tal-vidjow edukattiva għat-tagħlim ta’ kunċetti ta’ programmazzjoni.",
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Logħba tal-vidjow edukattiva għat-tagħlim ta’ kunċetti ta’ programmazzjoni.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
-                    "title"=>"Proġetti ta’ CodeClub",
-                    "description"=>"Proġetti ta’ programmazzjoni pass-pass, minn prinċipjanti sa avvanzati, għat-tfal.",
+                    "url" => "https://projects.raspberrypi.org/en/codeclub",
+                    "title" => "Proġetti ta’ CodeClub",
+                    "description" => "Proġetti ta’ programmazzjoni pass-pass, minn prinċipjanti sa avvanzati, għat-tfal.",
                 ],
                 '4' => [
-                    "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Ivvinta l-logħob tal-kompjuter tiegħek b’Python",
-                    "description"=>"Ktieb li se jgħallmek kif għandek tipprogramma l-logħob tal-kompjuter tiegħek b’Python.",
+                    "url" => "https://inventwithpython.com/invent4thed/",
+                    "title" => "Ivvinta l-logħob tal-kompjuter tiegħek b’Python",
+                    "description" => "Ktieb li se jgħallmek kif għandek tipprogramma l-logħob tal-kompjuter tiegħek b’Python.",
                 ],
                 '5' => [
-                    "url"=>"https://www.codewars.com/",
-                    "title"=>"CodeWars",
-                    "description"=>"Komunità edukattiva fejn studenti u għalliema jistgħu jħarrġu lilhom infushom permezz ta’ għadd ta’ sfidi.",
+                    "url" => "https://www.codewars.com/",
+                    "title" => "CodeWars",
+                    "description" => "Komunità edukattiva fejn studenti u għalliema jistgħu jħarrġu lilhom infushom permezz ta’ għadd ta’ sfidi.",
                 ],
                 '6' => [
-                    "url"=>"https://hourofpython.com/",
-                    "title"=>"Is-Siegħa ta’ Python",
-                    "description"=>"Ġabra ta’ lezzjonijiet ta’ introduzzjoni għal Python (ibbażati fuq it-test u blokki) permezz ta’ Trinkets interattivi.",
+                    "url" => "https://hourofpython.com/",
+                    "title" => "Is-Siegħa ta’ Python",
+                    "description" => "Ġabra ta’ lezzjonijiet ta’ introduzzjoni għal Python (ibbażati fuq it-test u blokki) permezz ta’ Trinkets interattivi.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'Ikkowdjar għal Inklużjoni',
-            'author'=>'mit-tim tal-Ġimgħa tal-Ikkowdjar',
-            'text'=>'<p>
+            'title' => 'Ikkowdjar għal Inklużjoni',
+            'author' => 'mit-tim tal-Ġimgħa tal-Ikkowdjar',
+            'text' => '<p>
                    Li ddaħħal l-ikkowdjar fil-klassi tiegħek jista’ jkun diffiċli, speċjalment jekk għandek studenti b’ċerti diżabilitajiet fil-klassi tiegħek. Iżda huwa importanti li żżomm f’moħħok li kulħadd jista’ jitgħallem kif jikkowdja indipendentement mill-kapaċitajiet tiegħu. It-tfal bi bżonnijiet speċjali jistgħu jibbenefikaw bil-kbir mill-aspetti tat-tagħlim tal-ikkowdjar għax dan jgħallem lill-istudenti ħiliet importanti dwar il-ħajja bħal kif isolvu l-problemi, l-organizzazzjoni u l-indipendenza. L-ikkowdjar jista’ jtejjeb ukoll il-ħiliet interpersonali u l-ħiliet soċjali permezz ta’ kollaborazzjoni u ħidma f’tim. Dawn huma ħiliet li ħafna tfal b’diżabilità jsibu diffikultà biex jagħmluhom. B’mod iktar importanti, l-istudenti jieħdu gost waqt li jitgħallmu flimkien ma’ sħabhom.
                    </p><p>
 F’dan il-vidjow, it-tim tal-Ġimgħa tal-Ikkowdjar se jurik xi attivitajiet prattiċi, faċli u divertenti li huma adattati b’mod speċjali għal studenti li għandhom defiċjenzi tal-vista, bis-sindromu Down u studenti fl-Ispettru tal-Awtiżmu, li l-għalliema jistgħu jdaħħluhom fil-klassi tagħhom faċilment.                   
                 </p>',
-            'activities'=>[
-                '1'=>'Kartuna tal-bajd Manwali (“Egg Carton Unplugged”)',
-                '2'=>'Ġurdien intelliġenti ħafna (“A very smart mouse”) ',
-                '3'=>'Stilla tagħmel l-istilel (“A star making stars”) ',
+            'activities' => [
+                '1' => 'Kartuna tal-bajd Manwali (“Egg Carton Unplugged”)',
+                '2' => 'Ġurdien intelliġenti ħafna (“A very smart mouse”) ',
+                '3' => 'Stilla tagħmel l-istilel (“A star making stars”) ',
             ]
-        ]
+        ],
+
+        "12" => [
+            "title" => "L-ikkowdjar għal skopijiet ta’ żvilupp sostenibbli",
+            "author" => "minn Francisco Javier Masero, Cristina Nicolaita u Erviola Konomi",
+            "text" => [
+                "1" => "L-edukazzjoni tradizzjonali tipprovdi l-istudenti bi ftit opportunitajiet biex jifhmu u jsolvu l-problemi  tad-dinja reali, bħalma huma l-bidla fil-klima globali, l-ugwaljanza bejn is-sessi, il-ġuħ, il-faqar jew is-saħħa tajba u l-benesseri.",
+                "2" => "L-Għanijiet ta’ Żvilupp Sostenibbli (SDGs) huma fil-qalba tal-Aġenda 2030 għall-Iżvilupp Sostenibbli li ġew adottati mill-istati membri kollha tan-Nazzjonijiet Uniti biex iservu ta’ pjan direzzjonali fl-akkwist tal-paċi u l-prosperità fuq il-pjaneta billi jħeġġu l-iżvilupp globali. L-għalliema jistgħu jużaw l-SDGs fil-klassi bħala għodda għall-istudenti biex jiżviluppaw il-ħsieb kritiku u wkoll biex jgħinuhom isibu l-identità u l-għan tagħhom. L-għaqda tal-elementi bażiċi tal-ikkowdjar u l-ħsieb komputazzjonali flimkien mal-SDGs se żżid il-kunfidenza tal-istudenti tiegħek u se tkun tista’ tgħinhom jiżviluppaw il-kreattività tagħhom, l-ispirtu intraprenditorjali tagħhom, u l-ħiliet tagħhom ta’ komunikazzjoni u ta’ kif isolvu l-problemi.",
+                "3" => "Fl-attivitajiet t’hawn isfel, l-istudenti se japplikaw il-prinċipji Scratch, l-ikkowdjar ASCII u l-ikkowdjar mhux ipplaggjat għal suġġetti  kurrenti li għandhom rilevanza globali u soċjali. L-għalliema se jqajmu għarfien dwar l-għanijiet tal-iżvilupp sostenibbli filwaqt li jgħinuhom jiżviluppaw l-empatija, iċ-ċittadinanza attiva, u l-ħiliet prosoċjali b’mod divertenti u interattiv.",
+                "4" => "Kull pjan tal-lezzjoni jiffoka fuq wieħed mill-SDGs:",
+                "5" => "Għan ta’ Żvilupp Sostenibbli 3: Iżgura ħajja sana u ppromwovi l-benesseri għal kulħadd f’kull età",
+                "6" => "Għan ta’ Żvilupp Sostenibbli 5: Akkwista l-ugwaljanza bejn is-sessi u agħti setgħa lin-nisa u lit-tfajliet kollha",
+                "7" => "Għan ta’ Żvilupp Sostenibbli 13: Ħu azzjoni urġenti biex tiġġieled il-bidla fil-klima u l-impatti tagħha",
+            ],
+            "activities" => [
+                "1" => "Il-proġett Karateka: Tgħallem il-karatè permezz tal-ipprogrammar, għall-Iskejjel tal-Primarja, tas-Sekondarja tal-Ewwel Livell, u tas-Sekondarja tat-Tieni Livell",
+                "2" => "Għanijiet tal-Iżvilupp Sostenibbli u l-ikkowdjar għall-bidla fil-klima, għall-Iskejjel tal-Primarja",
+                "3" => "L-Ikkowdjar għall-ugwaljanza bejn is-sessi, għall-Iskejjel tas-Sekondarja tat-Tieni Livell",
+            ]
+        ],
+
+        "13" => [
+            "title" => "Introduzzjoni għall-Intelliġenza Artifiċjali fil-klassi tal-iskola",
+            "author" => "minn Artur Coelho u Marjana Prifti Skenduli",
+            "text" => [
+                "1" => "L-Intelliġenza Artifiċjali (IA) għandha impatt fuq ħafna oqsma fil-ħajja tagħna ta’ kuljum: tikkoreġi b’mod awtomatiku dak li tikteb fuq il-mowbajl tiegħek, tagħżel il-mużika li ddoqq l-app favorita tiegħek tal-mużika, u tiftakar il-passwords tiegħek meta tinsiehom. L-IA tirreferi għal taħlita tat-tagħlim bil-magni, ir-robotika, u l-algoritmi u għandha applikazzjonijiet fl-oqsma kollha: mix-xjenza informatika għall-manifatturar, u mill-mediċina għall-moda. Għalhekk, ma nistgħux ninnegaw il-post importanti li l-IA għandha fil-ħajja u fis-soċjetà tagħna u għandha rwol ewlieni fl-iżvilupp tax-xjenza. U bħal kull fenomenu importanti ieħor f’ħajjitna, l-istudenti se jibbenifikaw jekk jitgħallmu dwarha. Imma kif nistgħu ngħallmu xi ħaġa daqstant kumplessa bħalma hi l-IA?",
+                "2" => "Din l-Għajnuna tat-Tagħlim se tgħinek tispjega l-IA lill-istudenti tiegħek u r-rwol tagħha f’ħajjithom. Dawn l-attivitajiet huma maħsuba għal min mhuwiex espert fis-suġġett sabiex ikun jista’ faċilament jifhem il-kontenut u jikkategorizza termini kumplessi b’mod effettiv f’ideat li jistgħu jinftiehmu faċilment. Permezz ta’ dawn il-pjanijiet tal-lezzjonijiet se tkun tista’ tgħin l-istudenti jitgħallmu dwar fejn tintuża l-IA u xi wħud mill-mekkaniżmi warajha. Dawn l-attivitajiet huma maħsuba biex l-istudenti jiżviluppaw il-ħiliet analitiċi u l-ħiliet tal-ħsieb kritiku: pereżempju, fl-attività ta’ Marjana, l-istudenti se jkunu jistgħu jiżviluppaw sistema sħiħa ta’ klassifikazzjoni. Dawn l-attivitajiet se jgħinu wkoll l-istudenti biex jifhmu l-applikazzjonijiet varjati tal-IA: fl-attività ta’ Artur, l-istudenti se jitgħallmu dwar ir-rabta bejn l-IA u l-Arti u kif l-IA tista’ tintuża biex ittejjeb l-espressjoni viżwali. Permezz ta’ dawn l-attivitajiet, l-istudenti se jirriflettu wkoll fuq il-perikli tal-IA u l-impatt tagħhom."
+            ],
+            "activities" => [
+                "1" => "L-Arti tal-Umani u l-IA, għall-Iskejjel tal-Primarja",
+                "2" => "Ngħallmu l-Magni kif Jikklassifikaw: Introduzzjoni għat-Tagħlim Sorveljat bil-Magni, għall-Iskola Sekondarja tal-Ewwel Livell",
+                "3" => "Ngħallmu l-Magni kif Jikklassifikaw: Introduzzjoni għat-Tagħlim Sorveljat bil-Magni, għall-Iskola Sekondarja tat-Tieni Livell",
+            ]
+        ],
+
+
     ],
     'download_video_script' => '',
     'ready_to_share' => 'Lest biex taqsam dak li tgħallimt mal-istudenti tiegħek?',

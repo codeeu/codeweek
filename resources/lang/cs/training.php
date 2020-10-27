@@ -202,7 +202,40 @@ V Pythonu mohou studenti vytvářet kvízy o historických událostech, řešit 
                 '2'=>'Velmi chytrá myš',
                 '3'=>'Hvězda vyrábí hvězdy',
             ]
-        ]
+        ],
+        "12" => [
+            "title" => "Programování ve službách udržitelného rozvoje",
+            "author" => "autoři: Francisco Javier Masero, Cristina Nicolaita a Erviola Konomi",
+            "text" => [
+                "1" => "Tradiční vzdělání poskytuje studentům jen málo příležitostí pochopit a řešit reálné světové problémy jako globální změna klimatu, rovnost pohlaví, hlad, chudoba či dobré zdraví a pohoda.",
+                "2" => "Cíle udržitelného rozvoje (SDG) jsou jádrem Agendy 2030 pro udržitelný rozvoj, kterou všechny členské státy OSN přijaly jako harmonogram na cestě k míru a prosperitě na naší planetě, a podporují globální rozvoj. Učitelé mohou SDG využívat při výuce jako nástroj pro rozvíjení kritického myšlení a také k tomu, aby studentům pomohli najít identitu a smysluplné aktivity. Kombinace základních prvků programování a výpočetního myšlení s cíli udržitelného rozvoje podnítí sebedůvěru žáků a studentů a pomůže jim s rozvojem kreativity, podnikavosti, schopnosti řešit problémy a komunikačních dovedností.",
+                "3" => "V níže uvedených aktivitách aplikují žáci a studenti zásady Scratch, programování ASCII a programování bez počítače na relevantní globální a sociální témata dneška. Učitelé budou zvyšovat povědomí o cílech udržitelného rozvoje a zábavným způsobem pomáhat žákům a studentům s rozvíjením empatie, aktivního občanství a sociálních dovedností.",
+                "4" => "Každá z těchto lekcí se zaměří na jeden SDG:",
+                "5" => "Cíl udržitelného rozvoje 3: Zajistit zdravý život a zvyšovat jeho kvalitu pro všechny v jakémkoli věku",
+                "6" => "Cíl udržitelného rozvoje 5: Dosáhnout genderové rovnosti a posílit postavení všech žen a dívek",
+                "7" => "Cíl udržitelného rozvoje 13: Přijmout bezodkladná opatření na boj se změnou klimatu a zvládání jejích dopadů",
+            ],
+            "activities" => [
+        "1" => "Projekt Karateka: Seznámení se s karate prostřednictvím programování pro základní a střední školy",
+        "2" => "Cíle udržitelného rozvoje a programování pro změnu klimatu, pro první stupeň základních škol",
+        "3" => "Programování pro genderovou rovnost, pro střední školy",
+    ]
+],
+"13" => [
+    "title" => "Úvod do umělé inteligence ve třídě",
+    "author" => "Artur Coelho a Marjana Prifti Skenduli",
+    "text" => [
+        "1" => "Umělá inteligence (AI) má dopad na řadu oblastí každodenního života: opravuje texty, které píšete na telefonu, vybírá hudbu, kterou přehrává váš oblíbený program, a pamatuje si hesla, která jste zapomněli. AI představuje kombinaci strojového učení, robotiky a algoritmů s aplikacemi ve všech oblastech od kybernetiky po výrobu a od medicíny pro módu. Má tedy nezaměnitelné místo v našich životech a společnostech a hraje klíčovou roli v rozvoji vědy. Studentům rozhodně prospěje, pokud se s ní seznámí blíže. Jak jim ale zprostředkovat něco tak složitého jako AI?",
+        "2" => "Tato část vám pomůže vysvětlit studentům, co je AI a jakou roli hraje v jejich životech. Tyto aktivity jsou koncipovány tak, aby je snadno pochopili laici a aby dokázali složité koncepty efektivně přeměnit ve snadno srozumitelné myšlenky. Pomocí těchto učebních plánů můžete studenty seznámit s využitím AI a některými mechanismy, o které se opírá. Tyto aktivity mají za cíl, aby si studenti rozvinuli analytické dovednosti a kritické myšlení. Kupříkladu v Marjanině aktivitě budou mít za úkol vybudovat klasifikační model. Aktivity rovněž studentům pomohou pochopit různé aplikace AI: v Arturově aktivitě se jim ozřejmí vazba mezi AI a uměním a uvidí, jak lze pomocí AI vylepšit vizuální vyjadřování. Při práci na aktivitách se studenti zamyslí i nad nebezpečími a dopady AI."
+    ],
+    "activities" => [
+    "1" => "Umění v souhře lidí aAI, pro první stupeň základních škol",
+    "2" => "Jak naučit stroje klasifikaci: Úvod do řízeného strojového učení, pro druhý stupeň základních škol",
+    "3" => "Jak naučit stroje klasifikaci: Úvod do řízeného strojového učení, pro střední školy",
+]
+],
+
+
     ],
     'download_video_script' => 'Stáhnout scénář videa',
     'ready_to_share' => 'Jste připraveni podělit se s žáky o to, co jste se dozvěděli?',
