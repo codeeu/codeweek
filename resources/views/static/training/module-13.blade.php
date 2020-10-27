@@ -22,11 +22,13 @@
 
             <section class="codeweek-content-wrapper-inside">
 
-{{--                <p>--}}
-{{--                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-013-VIDEO-SCRIPT-{{strtoupper(App::getLocale())}}.docx">--}}
-{{--                        @lang('training.download_video_script')--}}
-{{--                    </a>--}}
-{{--                </p>--}}
+                @if(strtoupper(App::getLocale()) !== "ME")
+                <p>
+                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-013-VIDEO-SCRIPT-{{strtoupper(App::getLocale())}}.docx">
+                        @lang('training.download_video_script')
+                    </a>
+                </p>
+                @endif
 
                 <h2>@lang('training.ready_to_share')</h2>
 
