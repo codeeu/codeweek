@@ -24,8 +24,9 @@
 
             </div>
 
-            <div class="codeweek-about-blue-box" style="line-height: 22px;">
 
+            <div class="codeweek-about-blue-box" style="line-height: 22px;">
+                <a name="featured-activities"></a>
                 <h2>@lang('cw2020.online-activities.title')</h2>
                 <div>
                     @lang('cw2020.online-activities.subtitle.0')
@@ -54,6 +55,7 @@
                 </div>
 
             </div>
+            <a name="dance-challenge"></a>
             <div class="codeweek-about-white-box" style="line-height: 22px;">
 
                 <h2> @lang('cw2020.dance.title')</h2>
@@ -167,7 +169,9 @@
 
             </div>
 
+
             <div class="codeweek-about-blue-box" style="line-height: 22px;">
+                <a name="treasure-hunt"></a>
                 <h2>@lang('cw2020.treasure-hunt.title')</h2>
                 <p>
                     @lang('cw2020.treasure-hunt.subtitle.0').
@@ -198,36 +202,36 @@
 
             </div>
 
-            <div class="codeweek-about-white-box" style="line-height: 22px;">
+{{--            <div class="codeweek-about-white-box" style="line-height: 22px;">--}}
 
-                <h2>@lang('cw2020.kick-off.title')</h2>
-                <div style="margin-top:10px">
-                    @lang('cw2020.kick-off.content.0').<br/><br/>
+{{--                <h2>@lang('cw2020.kick-off.title')</h2>--}}
+{{--                <div style="margin-top:10px">--}}
+{{--                    @lang('cw2020.kick-off.content.0').<br/><br/>--}}
 
-                    @lang('cw2020.kick-off.content.1') <a href="https://ec.europa.eu/commission/commissioners/2019-2024/breton_en">Thierry
-                        Breton</a>, @lang('cw2020.kick-off.content.2'); <a
-                            href="https://ec.europa.eu/commission/commissioners/2019-2024/gabriel_en">Mariya Gabriеl</a>,
-                    @lang('cw2020.kick-off.content.3'); <a
-                            href="https://www.media.mit.edu/people/mres/overview/">Mitch Resnick</a>, @lang('cw2020.kick-off.content.4'); <a href="http://lindaliukas.com/">Linda
-                        Liukas</a>, @lang('cw2020.kick-off.content.5'); @lang('cw2020.kick-off.content.6') <a href="https://www.wef.org.in/dipty-chander/">Dipty Chander</a>,
-                    @lang('cw2020.kick-off.content.7').<br/><br/>
+{{--                    @lang('cw2020.kick-off.content.1') <a href="https://ec.europa.eu/commission/commissioners/2019-2024/breton_en">Thierry--}}
+{{--                        Breton</a>, @lang('cw2020.kick-off.content.2'); <a--}}
+{{--                            href="https://ec.europa.eu/commission/commissioners/2019-2024/gabriel_en">Mariya Gabriеl</a>,--}}
+{{--                    @lang('cw2020.kick-off.content.3'); <a--}}
+{{--                            href="https://www.media.mit.edu/people/mres/overview/">Mitch Resnick</a>, @lang('cw2020.kick-off.content.4'); <a href="http://lindaliukas.com/">Linda--}}
+{{--                        Liukas</a>, @lang('cw2020.kick-off.content.5'); @lang('cw2020.kick-off.content.6') <a href="https://www.wef.org.in/dipty-chander/">Dipty Chander</a>,--}}
+{{--                    @lang('cw2020.kick-off.content.7').<br/><br/>--}}
 
-                    @lang('cw2020.kick-off.content.8'). <a
-                            href="https://www.linkedin.com/in/alessandro-bogliolo-a8395b29">Alessandro Bogliolo</a>,
-                    @lang('cw2020.kick-off.content.9')
-                    <a href="{{route("ambassadors")}}">@lang('cw2020.kick-off.content.10')</a> @lang('cw2020.kick-off.content.11').
+{{--                    @lang('cw2020.kick-off.content.8'). <a--}}
+{{--                            href="https://www.linkedin.com/in/alessandro-bogliolo-a8395b29">Alessandro Bogliolo</a>,--}}
+{{--                    @lang('cw2020.kick-off.content.9')--}}
+{{--                    <a href="{{route("ambassadors")}}">@lang('cw2020.kick-off.content.10')</a> @lang('cw2020.kick-off.content.11').--}}
 {{--                    @lang('cw2020.kick-off.content.12').--}}
-                    <br/><br/>
+{{--                    <br/><br/>--}}
 
 
-                    @lang('cw2020.kick-off.content.13').<br/><br/>
+{{--                    @lang('cw2020.kick-off.content.13').<br/><br/>--}}
 
-                    @lang('cw2020.kick-off.content.14') <a href="https://www.facebook.com/codeEU/">Facebook</a> @lang('cw2020.kick-off.content.15') <a
-                            href="https://www.youtube.com/channel/UCw30ZaWtCvGb4yudW6tCXAA">YouTube</a> @lang('cw2020.kick-off.content.16').
-                </div>
-            </div>
+{{--                    @lang('cw2020.kick-off.content.14') <a href="https://www.facebook.com/codeEU/">Facebook</a> @lang('cw2020.kick-off.content.15') <a--}}
+{{--                            href="https://www.youtube.com/channel/UCw30ZaWtCvGb4yudW6tCXAA">YouTube</a> @lang('cw2020.kick-off.content.16').--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
-            <div class="codeweek-about-blue-box" style="line-height: 22px;">
+            <div class="codeweek-about-white-box" style="line-height: 22px;">
                 <h2>@lang('cw2020.get-involved.title')</h2>
                 <div>
                     @lang('cw2020.get-involved.subtitle').
