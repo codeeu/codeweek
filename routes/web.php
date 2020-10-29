@@ -51,6 +51,8 @@ Route::get('/partners', 'StaticPageController@static')->name('sponsors');
 Route::get('/codeweek4all', 'StaticPageController@static')->name('codeweek4all');
 Route::get('/code-hunting-game', 'StaticPageController@static')->name('code-hunting-game');
 Route::get('/codeweek2020', 'StaticPageController@static')->name('codeweek2020');
+Route::get('/treasure-hunt', 'StaticPageController@static')->name('treasure-hunt');
+Route::get('/dance', 'StaticPageController@static')->name('dance');
 
 
 //Static training pages
