@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => '2020 AB Kod Haftası <strong>10 ile 25 Ekim</strong> tarihleri arasında gerçekleşecek.',
+    'when-title' => '2021 AB Kod Haftası <strong> 9 ile 24 Ekim</strong> tarihleri arasında gerçekleşecek.',
     'when-text' => '<p>AB Kod Haftası, programlama ve diğer teknolojik aktiviteler yoluyla yaratıcılığı, problem çözmeyi ve iş birliğini teşvik eden bir taban hareketidir. Buradaki amaç, programlamayı daha görünür kılmak, gençlere, yetişkinlere ve yaşlılara fikirleri kodlamayla nasıl hayata geçirdiğinizi göstermek, bu becerileri ortaya çıkarmak ve motive olmuş kişileri öğrenme amacıyla bir araya getirmektir.</p>',
     'codeweek_in_numbers-title' => 'Rakamlarla Kod Haftası',
     'codeweek_in_numbers-text' => '<p>2019 yılında, dünya genelinde 80\'den fazla ülkede 4,2 milyon insan AB Kod Haftasına katıldı.</p>

@@ -3,7 +3,7 @@
 return [
 
     'about' => 'Az európai programozási hét egy alulról szerveződő kezdeményezés, amelynek célja a programozás és a digitális jártasság szórakoztató és érdekes módon történő bemutatása.',
-    'when' => '2020. október 10-25.',
+    'when' => '2021. október 9-24.',
     'when_text' => 'A programozás megtanulásával jobban tájékozódunk a gyorsan változó világban, segít megérteni a különböző technológiák működését, készség- és képességfejlesztő hatásának köszönhetően pedig új ötleteket és innovációkat dolgozhatunk ki.',
     'school_banner_title' => 'Vegyen részt!',
     'school_banner_text' => 'Ön tanár?',

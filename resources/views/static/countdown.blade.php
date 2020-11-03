@@ -1,6 +1,6 @@
 <script>
     window.$(function ($) {
-        var codeweekDate = new Date(2020, 9, 10);
+        var codeweekDate = new Date(2021, 9, 8);
         var now = new Date();
         if (codeweekDate > now) {
             $('#countdown').countdown({

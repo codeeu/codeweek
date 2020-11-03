@@ -3,7 +3,7 @@
 return [
 
     'about' => 'EU Code Week is a grassroots initiative which aims to bring coding and digital literacy to <span class="blue-color">everybody</span> in a fun and engaging way…',
-    'when' => '10-25 October 2020',
+    'when' => '9-24 October 2021',
     'when_text' => 'Learning to code helps us make sense of the rapidly changing world around us. Join millions of fellow organisers and participants to inspire the development of coding and computational thinking skills in order to explore new ideas and innovate for the future.',
     'school_banner_title' => 'Get involved!',
     'school_banner_text' => 'Are you a teacher?',

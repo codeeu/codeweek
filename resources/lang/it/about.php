@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => 'Nel 2020 la Settimana europea della programmazione si terrà dal 10 al 25 ottobre.',
+    'when-title' => 'Nel 2021 la Settimana europea della programmazione si terrà dal 9 al 24 ottobre.',
     'when-text' => '<p>La Settimana europea della programmazione è un evento che nasce dal basso e celebra la creatività, la risoluzione dei problemi e la collaborazione attraverso la programmazione e altre attività tecnologiche. L’idea è di rendere la programmazione più visibile, mostrare ai giovani, agli adulti e agli anziani come dare vita alle proprie idee con la programmazione, spiegare queste capacità e mettere insieme persone motivate per imparare.</p>',
     'codeweek_in_numbers-title' => 'Settimana della programmazione in numeri',
     'codeweek_in_numbers-text' => '<p>Nel 2019, 4,2 milioni di persone provenienti da più di 80 paesi in tutto il mondo hanno partecipato alla Settimana europea della programmazione.</p>
