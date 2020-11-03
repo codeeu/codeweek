@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => '2020-ban az európai programozási hétre október 10. és 25. között kerül sor.',
+    'when-title' => '2021-ban az európai programozási hétre október 9. és 24. között kerül sor.',
     'when-text' => '<p>Az európai programozási hét alulról szerveződő kezdeményezés, amely a kreativitást, a problémamegoldást és az együttműködést ünnepli a programozáson és egyéb technológiai tevékenységeken keresztül. Az alapgondolat a programozás láthatóbbá tétele, valamint hogy megmutassa a fiataloknak, a felnőtteknek és az időseknek, hogyan valósíthatók meg az ötletek a programozás révén, továbbá a készségek demisztifikálása, valamint a tanulni vágyó emberek egymással való összekapcsolása.</p>',
     'codeweek_in_numbers-title' => 'A programozási hét számokban',
     'codeweek_in_numbers-text' => '<p>2019-ban világszerte több mint 80 országban 4,2 millió ember vett részt az európai programozási héten.</p>

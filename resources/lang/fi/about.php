@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => 'Vuonna 2020 EU:n koodausviikko järjestetään 10.–25. lokakuuta.',
+    'when-title' => 'Vuonna 2021 EU:n koodausviikko järjestetään 9.– 24. lokakuuta.',
     'when-text' => '<p>EU:n koodausviikko on ruohonjuuritason hanke, jolla edistetään luovuutta, ongelmanratkaisukykyä ja yhteistyötä ohjelmoinnin ja muiden tekniikan alan tapahtumien kautta. Ajatuksena on tehdä ohjelmointia tunnetuksi ja näyttää nuorille, aikuisille ja senioreille, miten ideat voidaan herättää henkiin koodin avulla. Tavoitteena on myös hälventää koodaukseen kohdistuvaa mystiikkaa ja tuoda motivoituneet ihmiset oppimaan yhdessä.</p>',
     'codeweek_in_numbers-title' => 'Koodausviikko lukuina',
     'codeweek_in_numbers-text' => '<p>Vuonna 2019 EU:n koodausviikkoon osallistui 4,2 ihmistä yli 80 maassa ympäri maailmaa.</p>

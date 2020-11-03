@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => 'U 2020. godini EU nedelja programiranja će se održati između 10. i 25. oktobra.',
+    'when-title' => 'U 2021. godini EU nedelja programiranja će se održati između 9. i 24. oktobra.',
     'when-text' => '<p>EU nedelja programiranja je samonikli pokret koji slavi kreativnost, rešavanje problema i saradnju kroz programiranje i druge aktivnosti u vezi sa tehnologijom. Ideja je da se programiranje učini vidljivijim i dostupnijim, da se pokaže mladima, odraslima i starijim osobama kako se ideje realizuju pomoću kodova, da se demistifikuje programiranje i okupe motivisani ljudi da uče zajedno.</p>',
     'codeweek_in_numbers-title' => 'Nedelja programiranja u brojevima',
     'codeweek_in_numbers-text' => '<p>U 2019. godini, 4,2 miliona ljudi u više od 80 zemalja širom sveta učestvovalo je u EU nedelji programiranja.</p>

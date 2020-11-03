@@ -12,7 +12,7 @@ return [
     "2020 Etkinliği"
     ],
 
-    "intro" => "Bu sene kodlama kutlamalarımızı 10-25 Ekim 2020 günlerinde düzenliyoruz! Yaşadığımız salgından dolayı, bu sene daha fazla sayıda Kod Haftası etkinliği internetten yapılacak. Evde veya okulda uzaktan katılabileceğiniz eğlenceli ve öğretici yeni aktiviteler sunacağız.",
+    "intro" => "Bu sene kodlama kutlamalarımızı 9-24 Ekim 2020 günlerinde düzenliyoruz! Yaşadığımız salgından dolayı, bu sene daha fazla sayıda Kod Haftası etkinliği internetten yapılacak. Evde veya okulda uzaktan katılabileceğiniz eğlenceli ve öğretici yeni aktiviteler sunacağız.",
     "online-activities" => [
     "title" => "Öne çıkan açık çevrim içi aktiviteler",
         "subtitle" => [
