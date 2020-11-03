@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => 'U 2020. Europski tjedan programiranja održavat će se između 10. i 25. listopada.',
+    'when-title' => 'U 2021. Europski tjedan programiranja održavat će se između 9. i 24. listopada.',
     'when-text' => '<p>Europski tjedan programiranja društvena je inicijativa kojom se slavi kreativnost, rješavanje problema i suradnja kroz programiranje i ostale tehnološke aktivnosti. Ideja je učiniti programiranje vidljivijim, pokazati mladima, odraslima i starijima kako programiranjem realizirati ideje, demistificirati te vještine i okupiti motivirane osobe kako bi učile.</p>',
     'codeweek_in_numbers-title' => 'Tjedan programiranja u brojkama',
     'codeweek_in_numbers-text' => '<p>Godine 2019. Europski tjedan programiranja okupio je 4,2 milijuna ljudi u više od 80 zemalja diljem svijeta.</p>
@@ -11,7 +11,7 @@ return [
     'run_by_volunteers-title' => 'Organizatori su volonteri',
     'run_by_volunteers-text' => '<p>Europski tjedan programiranja organiziraju volonteri. Jedan <a href="/ambassadors">ambasador Tjedna programiranja</a> ili njih nekoliko koordiniraju inicijativu u svojim zemljama, no bilo tko može organizirati svoju aktivnost i unijeti je na kartu na stranici <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'Podrška Europske komisije',
-    'supported_by_commission-text' => '<p>Europski tjedan programiranja pokrenuli su 2013. Mladi savjetnici za Digitalnu agendu Europe (engl. Young Advisors for the Digital Agenda Europe). Europska komisija podupire Europski tjedan programiranja u okviru svoje strategije za <a href="http://ec.europa.eu/priorities/digital-single-market/">jedinstveno digitalno tržište</a>, a u <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Akcijskom planu za digitalno obrazovanje</a> Komisija posebice potiče škole da se pridruže inicijativi. Cilj je do 2020. godine doseći do 50 % svih škola u Europi.</p>',
+    'supported_by_commission-text' => '<p>Europski tjedan programiranja pokrenuli su 2013. Mladi savjetnici za Digitalnu agendu Europe (engl. Young Advisors for the Digital Agenda Europe). Europska komisija podupire Europski tjedan programiranja u okviru svoje strategije za <a href="http://ec.europa.eu/priorities/digital-single-market/">jedinstveno digitalno tržište</a>, a u <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Akcijskom planu za digitalno obrazovanje</a> Komisija posebice potiče škole da se pridruže inicijativi. Cilj je do 2020. godine doseći do 50 % svih škola u Europi.</p>',
     'schools-title' => 'Škole',
     'schools-text' => '<p>Škole bilo koje razine i nastavnici bilo kojeg predmeta posebice su pozvani sudjelovati u Europskom tjednu programiranja, ponuditi svojim učenicima mogućnost da istraže digitalnu kreativnost i programiranje. Saznajte više o inicijativi i o tome kako organizirati svoju aktivnost putem internetske stranice namijenjene nastavnicima: <a href="/schools">CodeWeek.eu/Škole</a></p>',
     'why_coding-title' => 'Zašto programiranje?',
