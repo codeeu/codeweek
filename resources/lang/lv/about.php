@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => '2020. gadā ES programmēšanas nedēļa notiks no 10. līdz 25. oktobrim.',
+    'when-title' => '2021. gadā ES programmēšanas nedēļa notiks no 9. līdz 24. oktobrim.',
     'when-text' => '<p>ES programmēšanas nedēļa ir iedzīvotāju kustība, kas veltīta radošumam, problēmu risināšanai un sadarbībai, izmantojot programmēšanu un citas tehnoloģiskas aktivitātes. Pamatideja ir padarīt programmēšanu populārāku, parādīt jauniešiem, pieaugušajiem un vecāka gadagājuma cilvēkiem, kā ar programmēšanas palīdzību īstenot idejas, kliedēt maldīgus priekšstatus par programmēšanas prasmēm un sapulcināt kopā motivētus cilvēkus, kuri vēlas tās apgūt.</p>',
     'codeweek_in_numbers-title' => 'Programmēšanas nedēļa skaitļos',
     'codeweek_in_numbers-text' => '<p>2019. gadā ES programmēšanas nedēļā piedalījās 4,2 miljoni cilvēku vairāk nekā 80 pasaules valstīs.</p>
@@ -11,7 +11,7 @@ return [
     'run_by_volunteers-title' => 'To vada brīvprātīgie',
     'run_by_volunteers-text' => '<p>ES programmēšanas nedēļu vada brīvprātīgie. Viens vai vairāki <a href="/ambassadors">programmēšanas nedēļas vēstnieki</a> koordinē šo iniciatīvu savā valstī, bet ikviens var noorganizēt savu pasākumu un pievienot to <a href="/">codeweek.eu</a> kartē.</p>',
     'supported_by_commission-title' => 'Eiropas Komisijas atbalsts',
-    'supported_by_commission-text' => '<p>ES programmēšanas nedēļas iniciatīvu 2013. gadā aizsāka Eiropas digitālās programmas jaunie padomdevēji. Eiropas Komisija atbalsta ES programmēšanas nedēļu <a href="http://ec.europa.eu/priorities/digital-single-market/">Digitālā vienotā tirgus</a> stratēģijas ietvaros. <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Digitālās izglītības rīcības plānā</a> Komisija īpaši mudina skolas pievienoties šai iniciatīvai. Mērķis ir līdz 2020. gadam iesaistīt pusi no visām Eiropas skolām.</p>',
+    'supported_by_commission-text' => '<p>ES programmēšanas nedēļas iniciatīvu 2013. gadā aizsāka Eiropas digitālās programmas jaunie padomdevēji. Eiropas Komisija atbalsta ES programmēšanas nedēļu <a href="http://ec.europa.eu/priorities/digital-single-market/">Digitālā vienotā tirgus</a> stratēģijas ietvaros. <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Digitālās izglītības rīcības plānā</a> Komisija īpaši mudina skolas pievienoties šai iniciatīvai. Mērķis ir līdz 2020. gadam iesaistīt pusi no visām Eiropas skolām.</p>',
     'schools-title' => 'Skolas',
     'schools-text' => '<p>Visu līmeņu skolas un visu mācību priekšmetu skolotāji ir jo īpaši aicināti piedalīties ES programmēšanas nedēļā, lai saviem skolēniem sniegtu iespēju iepazīt digitālo radošumu un programmēšanu. Uzziniet vairāk par šo iniciatīvu un to, kā noorganizēt savu pasākumu, apmeklējot skolotājiem veltīto tīmekļa vietni: <a href="/schools">CodeWeek.eu/Schools</a></p>',
     'why_coding-title' => 'Kāpēc programmēšana?',
@@ -23,7 +23,7 @@ return [
 
                     <p>Nekad agrāk nav bijis tik viegli izveidot pašam savu lietotni, uzbūvēt savu robotu vai izgudrot lidojošas mašīnas! Kāpēc gan ne? Tas nav vienkāršs, bet radošiem izaicinājumiem pilns ceļš, kurā var doties kopā ar atbalstošu kopienu un gūt daudz prieka. Vai esi gatavs pieņemt izaicinājumu un kļūt par veidotāju?</p>
 
-                    <p>Programmēšana arī palīdz attīstīt tādas kompetences kā skaitļošanas tipa domāšana, problēmu risināšana, radošums un darbs grupā — šādas prasmes lieti noder jebkura gadagājuma cilvēkam.</p>',
+                    <p>Programmēšana arī palīdz attīstīt tādas kompetences kā skaitļošanas tipa domāšana, problēmu risināšana, radošums un darbs grupā — šādas prasmes lieti noder jebkura gadagājuma cilvēkam.</p>',
     'why_coding-quote' => '<p>Alesandro Bodžliolo, kurš koordinē ES programmēšanas nedēļas 90 brīvprātīgos, teica:<blockquote>
                             <p>“Jau kopš aizvēsturiskiem laikiem esam darījuši dažādas tādas lietas ar akmeni, dzelzi, papīru un zīmuli, kas ir pārveidojušas mūsu dzīvi. Tagad mēs dzīvojam citādā laikmetā, kur mūsu pasaule ir ietverta programmēšanas kodā. Dažādos laikmetos ir nepieciešami atšķirīgi arodi un prasmes. Programmēšanas nedēļas laikā mēs vēlamies ikvienam eiropietim sniegt iespēju atklāt programmēšanu un gūt prieku no tās. Mācīsimies programmēt, lai veidotu savu nākotni”.</p>
                         </blockquote>
