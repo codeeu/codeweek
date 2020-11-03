@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => '2020. aasta ELi programmeerimisnädal Code Week toimub ajavahemikus 10. kuni 25. oktoober.',
+    'when-title' => '2021. aasta ELi programmeerimisnädal Code Week toimub ajavahemikus 9. kuni 24. oktoober.',
     'when-text' => '<p>ELi programmeerimisnädal Code Week on rohujuuretasandil toimuv liikumine, millega tähistatakse loomingulisust, probleemide lahendamist ja koostööd nii programmeerimises kui ka teistes tehnoloogilistes tegevustes. Selle eesmärk on muuta programmeerimine nähtavamaks ning tutvustada noortele ja vanadele, kuidas koodikirjutamisega oma ideid ellu viia, hajutada programmeerimisega seotud saladusi ning motiveerida inimesi õppima.</p>',
     'codeweek_in_numbers-title' => 'Programmeerimisnädal Code Week numbrites',
     'codeweek_in_numbers-text' => '<p>2019. aastal võttis ELi programmeerimisnädalast Code Week osa 4,2 miljonit inimest ja rohkem kui 80 riiki.</p>
@@ -11,7 +11,7 @@ return [
     'run_by_volunteers-title' => 'Vabatahtlikest koosnev korraldustiim',
     'run_by_volunteers-text' => '<p>ELi programmeerimisnädala Code Week korraldajateks on vabatahtlikud. Algatust aitavad koordineerida iga riigi üks (või mitu) <a href="/ambassadors">Code Weeki saadikut</a>, kuid igaüks võib organiseerida ka oma tegevuse ja selle veebilehe <a href="/">codeweek.eu</a> kaardile lisada.</p>',
     'supported_by_commission-title' => 'Euroopa Komisjoni toetus',
-    'supported_by_commission-text' => '<p>ELi programmeerimisnädala Code Week lükkasid 2013. aastal käima Euroopa digitaalse tegevuskava noored konsultandid. Euroopa Komisjon toetab ELi programmeerimisnädalat Code Week osana <a href="http://ec.europa.eu/priorities/digital-single-market/">digitaalse ühisturu</a> strateegiast. <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Digiõppe tegevuskava</a> abil soovib komisjon kaasata algatusse eelkõige just koole. Eesmärgiks on jõuda 2020. aastaks 50 protsendini Euroopa koolidest.</p>',
+    'supported_by_commission-text' => '<p>ELi programmeerimisnädala Code Week lükkasid 2013. aastal käima Euroopa digitaalse tegevuskava noored konsultandid. Euroopa Komisjon toetab ELi programmeerimisnädalat Code Week osana <a href="http://ec.europa.eu/priorities/digital-single-market/">digitaalse ühisturu</a> strateegiast. <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Digiõppe tegevuskava</a> abil soovib komisjon kaasata algatusse eelkõige just koole. Eesmärgiks on jõuda 2020. aastaks 50 protsendini Euroopa koolidest.</p>',
     'schools-title' => 'Koolid',
     'schools-text' => '<p>ELi programmeerimisnädalast on oodatud osa võtma kõiki kooliastmeid ja erinevate õppeainete õpetajaid, kes annaksid oma õpilastele võimaluse avastada digitaalset loomingulisust ja programmeerimist. Algatuse ja selle kohta, kuidas ise tegevusi organiseerida, leiate lisateavet õpetajatele suunatud veebisaidilt: <a href="/schools">CodeWeek.eu/Schools</a></p>',
     'why_coding-title' => 'Miks on programmeerimine hea?',
@@ -29,6 +29,6 @@ return [
                         </blockquote>
                     </p>',
     'join_codeweek-title' => 'Liituge ELi programmeerimisnädalaga Code Week',
-    'join_codeweek-text' => '<p>Liituge ELi programmeerimisnädalaga Code Week, <a href="/guide">korraldades oma linnas programmeerimistegevusi</a>, liitudes programmeerimisnädala väljakutsega <a href="/codeweek4all">Code Week 4 All</a> ning aidates ühendada erinevaid kogukondi ja rahvuseid või jagades programmeerimisnädala visiooni <a href="/ambassadors">oma riigi saadikuna</a>!</p>',
+    'join_codeweek-text' => '<p>Liituge ELi programmeerimisnädalaga Code Week, <a href="/guide">korraldades oma linnas programmeerimistegevusi</a>, liitudes programmeerimisnädala väljakutsega <a href="/codeweek4all">Code Week 4 All</a> ning aidates ühendada erinevaid kogukondi ja rahvuseid või jagades programmeerimisnädala visiooni <a href="/ambassadors">oma riigi saadikuna</a>!</p>',
     'partners_and_sponsors' => 'Partnerid ja sponsorid'
 ];

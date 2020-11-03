@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => 'In 2020 EU Code Week will take place between 10 and 25 October.',
+    'when-title' => 'In 2021 EU Code Week will take place between 9 and 24 October.',
     'codeweek_in_numbers-title' => 'Code Week in numbers',
     'run_by_volunteers-title' => 'Run by volunteers',
     'supported_by_commission-title' => 'Supported by the European Commission',
