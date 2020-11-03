@@ -3,7 +3,7 @@
 return [
 
     'about' => 'EU Code Week är ett gräsrotsinitiativ som verkar för att alla ska få tillgång till kodning och digitala kunskaper på ett roligt och engagerande sätt.',
-    'when' => '10–25 oktober 2020',
+    'when' => '9–24 oktober 2021',
     'when_text' => 'Genom att lära oss koda kan vi få ut mer av den snabbt föränderliga världen runt omkring oss, utöka våra kunskaper om hur tekniken fungerar samt utveckla vår kompetens och våra färdigheter så att vi kan utforska nya idéer och förnya.',
     'school_banner_title' => 'Engagera dig!',
     'school_banner_text' => 'Är du lärare?',
