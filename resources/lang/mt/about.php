@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title' => 'Fl-2020, il-Ġimgħa tal-Ikkowdjar ser issir bejn is-10 u l-25 ta’ Ottubru.',
+    'when-title' => 'Fl-2021, il-Ġimgħa tal-Ikkowdjar ser issir bejn is- 9 u l- 24 ta’ Ottubru.',
     'when-text' => '<p>Il-Ġimgħa Ewropea tal-Ikkowdjar hija moviment bażiku li jiċċelebra l-kreattività, is-soluzzjoni tal-problemi u kollaborazzjoni permezz ta’ programmazzjoni u attivitajiet tekniċi oħra. L-idea hija li l-programmazzjoni ssir aktar viżibbli, biex iż-żgħażagħ, l-adulti u l-anzjani jintwerew kif tista’ tingħata l-ħajja lill-ideat bil-kodiċi, biex dawn il-ħiliet isiru aktar ċari u biex jingħaqdu persuni motivati biex jitgħallmu.</p>',
     'codeweek_in_numbers-title' => 'Il-Ġimgħa tal-Ikkowdjar f’numri',
     'codeweek_in_numbers-text' => '<p>Fl-2019, 4.2 miljun ruħ f’aktar minn 80 pajjiż madwar id-dinja ħadu sehem fil-Ġimgħa tal-UE tal-Ikkowdjar.</p>
@@ -11,7 +11,7 @@ return [
     'run_by_volunteers-title' => 'Immexxija mill-voluntiera',
     'run_by_volunteers-text' => '<p>Il-Ġimgħa tal-UE tal-Ikkowdjar hija mmexxija mill-voluntiera. Wieħed, jew bosta <a href="/ambassadors">Ambaxxaturi tal-Ġimgħa tal-Ikkowdjar</a> jikkoordinaw l-inizjattiva f’pajjiżhom, iżda kulħadd jista’ jorganizza l-attività tiegħu stess u jżidha fuq il-mappa <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'Appoġġjata mill-Kummisjoni Ewropea',
-    'supported_by_commission-text' => '<p>Il-Ġimgħa tal-UE tal-Ikkowdjar ġiet imnedija fl-2013 mill-Konsulenti Żgħażagħ għall-Aġenda Diġitali għall-Ewropa. Il-Kummisjoni Ewropea tappoġġja l-Ġimgħa tal-UE tal-Ikkowdjar, bħal parti mill-istrateġija tagħha għal <a href="http://ec.europa.eu/priorities/digital-single-market/">Suq Uniku Diġitali</a>, fil-<a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Pjan ta’ Azzjoni għall-Edukazzjoni Diġitali</a>, il-Kummissjoni tħeġġeġ speċjalment lill-iskejjel biex jissieħbu fl-inizjattiva. Il-mira hija li jintlaħqu 50 % tal-iskejjel kollha fl-Ewropa sal-2020.</p>',
+    'supported_by_commission-text' => '<p>Il-Ġimgħa tal-UE tal-Ikkowdjar ġiet imnedija fl-2013 mill-Konsulenti Żgħażagħ għall-Aġenda Diġitali għall-Ewropa. Il-Kummisjoni Ewropea tappoġġja l-Ġimgħa tal-UE tal-Ikkowdjar, bħal parti mill-istrateġija tagħha għal <a href="http://ec.europa.eu/priorities/digital-single-market/">Suq Uniku Diġitali</a>, fil-<a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Pjan ta’ Azzjoni għall-Edukazzjoni Diġitali</a>, il-Kummissjoni tħeġġeġ speċjalment lill-iskejjel biex jissieħbu fl-inizjattiva. Il-mira hija li jintlaħqu 50 % tal-iskejjel kollha fl-Ewropa sal-2020.</p>',
     'schools-title' => 'Skejjel',
     'schools-text' => '<p>L-iskejjel fil-livelli kollha u l-għalliema tas-suġġetti kollha huma speċjalment mistiedna biex jipparteċipaw fil-Ġimgħa tal-UE tal-Ikkowdjar, biex jagħtu l-opportunità lill-istudenti tagħhom biex jesploraw il-kreattività diġitali u l-ikkowdjar. Tgħallem aktar dwar l-inizjattiva u kif torganizza l-attività tiegħek permezz tal-paġna web dedikata għall-għalliema: <a href="/schools">CodeWeek.eu/Schools</a></p>',
     'why_coding-title' => 'Għaliex l-ikkowdjar?',

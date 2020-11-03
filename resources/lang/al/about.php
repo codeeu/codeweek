@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title'=> 'Për vitin 2020, EU Code Week do të zhvillohet mes datave 10 dhe 25 tetor.',
+    'when-title'=> 'Për vitin 2021, EU Code Week do të zhvillohet mes datave 9 dhe 24 tetor.',
     'when-text'=>'<p>EU Code Week është një lëvizje në terren që feston aftësinë
                         krijuese, zgjidhjen e problemeve dhe bashkëpunimin përmes programimit dhe aktiviteteve
                         të tjera teknologjike. Ideja është që programimi të bëhet më
@@ -27,7 +27,7 @@ return [
                                 href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Planin
                             e masave të Edukimit Dixhital</a> Komisioni veçanërisht inkurajon shkollat
                         që të bëhen pjesë e nismës. Objektivi është të arrihet
-                        50% e të gjitha shkollave në Evropë deri në vitin 2020.</p>',
+                        50% e të gjitha shkollave në Evropë deri në vitin 2021.</p>',
     'schools-title'=>'Shkollat',
     'schools-text'=>'<p>Shkollat në çdo nivel dhe mësuesit e të gjitha lëndëve janë
                         veçanërisht të ftuar të marrin pjesë në EU Code Week, për t’u
