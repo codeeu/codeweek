@@ -3,7 +3,7 @@
 return [
 
     'about' => 'Evropski teden programiranja je družbena pobuda, katere cilj je približati programersko in digitalno pismenost vsem na zabaven in vključujoč način.',
-    'when' => '10.–25. oktobra 2020',
+    'when' => '9.-24. oktobra 2021',
     'when_text' => 'Učenje programiranja nam pomaga dojemati hitro spreminjajoči se svet okrog nas, bolje razumeti delovanje tehnologije ter razviti znanja in spretnosti za raziskovanje novih zamisli in inovacije.',
     'school_banner_title' => 'Vključite se!',
     'school_banner_text' => 'Ste učitelj?',

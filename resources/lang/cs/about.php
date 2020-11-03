@@ -2,7 +2,7 @@
 
 
 return [
-    'when-title'=> 'V roce 2020 proběhne Evropský týden programování od 10. do 25. října.',
+    'when-title'=> 'V roce 2021 proběhne Evropský týden programování od 9. do 24. října.',
     'when-text'=>'<p>Evropský týden programování je projekt, který propaguje kreativitu, řešení problémů a spolupráci pomocí programování a jiných technických aktivit. Cílem je programování zviditelnit – ukázat mladým lidem, dospělým i seniorům, jak je díky programování možné realizovat myšlenky. Chceme tyto dovednosti zbavit roušky tajemství a spojit motivované lidi, aby se učili.</p>',
     'codeweek_in_numbers-title'=>'Týden programování v číslech',
     'codeweek_in_numbers-text' => '<p>V roce 2019 se Evropského týdne programování zúčastnilo 4,2 milionu lidí ve více než 80 zemích celého světa.</p>
@@ -11,7 +11,7 @@ return [
     'run_by_volunteers-title'=>'Organizováno dobrovolníky',
     'run_by_volunteers-text'=>'<p>Evropský týden programování organizují dobrovolníci. Jeden nebo několik <a href="/ambassadors">ambasadorů týdne programování</a> koordinuje tuto iniciativu ve své zemi, ale vlastní akci může zorganizovat každý a přidat ji na mapu na stránkách <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title'=>'Projekt má podporu Evropské komise',
-    'supported_by_commission-text'=>'<p>Evropský týden programování zahájili v roce 2013 mladí poradci pro evropskou digitální agendu. Evropská komise podporuje Evropský týden programování jako součást své strategie <a href="http://ec.europa.eu/priorities/digital-single-market/">digitálního jednotného trhu</a>. V rámci <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Akčního plánu digitálního vzdělávání</a> komise povzbuzuje zvláště školy, aby se k této iniciativě připojily. Cílem je, aby se do roku 2020 zapojilo 50 % všech evropských škol.</p>',
+    'supported_by_commission-text'=>'<p>Evropský týden programování zahájili v roce 2013 mladí poradci pro evropskou digitální agendu. Evropská komise podporuje Evropský týden programování jako součást své strategie <a href="http://ec.europa.eu/priorities/digital-single-market/">digitálního jednotného trhu</a>. V rámci <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Akčního plánu digitálního vzdělávání</a> komise povzbuzuje zvláště školy, aby se k této iniciativě připojily. Cílem je, aby se do roku 2020 zapojilo 50 % všech evropských škol.</p>',
     'schools-title'=>'Školy',
     'schools-text'=>'<p>Školy všech stupňů a učitelé bez ohledu na to, které předměty vyučují, jsou zvláště zváni, aby se Evropského týdne programování zúčastnili a dali tak svým žákům příležitost prozkoumat digitální kreativitu a programování. Více informací o iniciativě a o tom, jak svou akci zorganizovat, najdete na webové stránce pro učitele: <a href="/schools">CodeWeek.eu/Schools</a></p>',
     'why_coding-title'=>'Proč programování?',
