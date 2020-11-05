@@ -123,7 +123,7 @@ return [
                 "i skenirajte QR kod koji će vas odvesti na aplikaciju Telegram sa prvim dijelom uputstava",
                 "Kako biste pobijedili, morate riješiti 10 izazova kodiranja i pronaći 10 lokacija na mapi Evrope koje su povezane s porastom kodiranja i tehnologije",
                 "Nakon što završite igru, podijelite svoj rezultat s prijateljima koristeći #CodeWeek i izazovite ih da se igraju i nauče o istoriji kodiranja. Pogledajmo ko postiže najbolje rezultate",
-                "Potraga za blagom u Sedmici kodiranja je virtualna verzija originalne EU Potrage za blagom u Sedmici kodiranja za 2020. godinu koju je prvi razvio Alessandro Bogliolo, profesor računarskih sistema sa Univerziteta u Urbinu. Da biste saznali više o njegovoj originalnoj igri, posjetite naš",
+                "Potraga za blagom u Sedmici kodiranja je virtualna verzija originalne EU Potrage za blagom. godinu koju je prvi razvio Alessandro Bogliolo, profesor računarskih sistema sa Univerziteta u Urbinu. Da biste saznali više o njegovoj originalnoj igri, posjetite naš",
                 "blog"
 
             ]

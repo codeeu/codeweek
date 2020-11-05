@@ -124,7 +124,7 @@ return [
                 "un ielasa kvadrātkodu, kas aizvedīs uz lietotni “Telegram” un dos pirmos norādījumus",
                 "Lai uzvarētu, jāizpilda 10 programmēšanas uzdevumi un Eiropas kartē jāsameklē 10 vietas, kas saistās ar programmēšanas izcelšanos un tehnoloģiju",
                 "Pēc spēles kopīgojiet savu rezultātu ar draugiem, izmantojot tēmturi #CodeWeek, un mudiniet arī viņus uzspēlēt un kaut ko iemācīties par programmēšanas vēsturi. Redzēs, kuram būs labākais rezultāts.",
-                "“Programmēšanas nedēļas bagātību medības” ir Urbīno Universitātes datorsistēmu profesora Alesandro Boljolo izstrādāto sākotnējo ES programmēšanas nedēļas bagātību medību 2020. gada virtuālā versija Varat uzzināt vairāk par viņa spēles sākotnējo versiju, iegriežoties mūsu",
+                "“Programmēšanas nedēļas bagātību medības” ir Urbīno Universitātes datorsistēmu profesora Alesandro Boljolo izstrādāto sākotnējo ES programmēšanas nedēļas bagātību medību. gada virtuālā versija Varat uzzināt vairāk par viņa spēles sākotnējo versiju, iegriežoties mūsu",
                 "emuārā"
 
             ]

@@ -124,7 +124,7 @@ return [
                 "et scannez le code QR qui vous conduira à l’app Telegram et vous donnera la première série d’instructions",
                 "Pour gagner, vous devez résoudre 10 défis de codage et trouver 10 endroits sur la carte de l’Europe qui sont liés à l’essor du codage et des technologies",
                 "Après avoir terminé le jeu, partagez votre score avec vos amis en utilisant #CodeWeek et mettez-les au défi de jouer et d’apprendre l’histoire du codage. Voyons qui obtient les meilleurs résultats",
-                "La chasse aux trésors de la semaine du code est la version virtuelle 2020 de la chasse aux trésors mise au point pour la première fois par Alessandro Bogliolo, professeur de systèmes informatiques à l’université d’Urbino. Pour en savoir plus sur sa première version du jeu, visitez notre",
+                "La chasse aux trésors de la semaine du code est la version virtuelle de la chasse aux trésors mise au point pour la première fois par Alessandro Bogliolo, professeur de systèmes informatiques à l’université d’Urbino. Pour en savoir plus sur sa première version du jeu, visitez notre",
                 "blog"
 
             ]
