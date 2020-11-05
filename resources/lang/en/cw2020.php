@@ -126,7 +126,7 @@ return [
                 "and scan the QR code that will take you to the Telegram app and give you the first set of instructions",
                 "To win, you need to solve 10 coding challenges and find 10 locations on the map of Europe that are linked to the rise of coding and technology",
                 "After you complete the game, share your your score with your friends using #CodeWeek and challenge them to play and learn about the history of coding too. Let's see who scores the top results",
-                "The Code Week Treasure Hunt is the 2020 virtual version of the original EU Code Week Treasure Hunt which was first developed by Alessandro Bogliolo, Professor of Computer Systems at the University of Urbino. To learn more about his original game, visit our",
+                "The Code Week Treasure Hunt is the virtual version of the original EU Code Week Treasure Hunt which was first developed by Alessandro Bogliolo, Professor of Computer Systems at the University of Urbino. To learn more about his original game, visit our",
                 "blog"
 
             ]
