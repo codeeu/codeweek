@@ -124,7 +124,7 @@ return [
                 "și scanați codul QR care vă va duce la aplicația Telegram și vă va da primul set de instrucțiuni",
                 "Pentru a câștiga, trebuie să rezolvați 10 probleme de programare și să găsiți 10 locuri pe harta Europei care sunt legate de dezvoltarea programării și tehnologiei",
                 "După ce finalizați jocul, comunicați punctajul pe care l-ați obținut prietenilor voștri utilizând #CodeWeek și provocați-i să joace și ei și să afle mai multe despre istoria programării. Haideți să vedem cine obține cele mai bune rezultate",
-                "Vânătoarea de comori din Săptămâna programării este versiunea virtuală din 2020 a Vânătorii de comori originale din Săptămâna europeană a programării care a fost creată pentru prima dată de Alessandro Bogliolo, profesor de sisteme informatice la Universitatea din Urbino. Pentru a afla mai multe despre jocul său original, vizitați",
+                "Vânătoarea de comori din Săptămâna programării este versiunea virtuală a Vânătorii de comori originale din Săptămâna europeană a programării care a fost creată pentru prima dată de Alessandro Bogliolo, profesor de sisteme informatice la Universitatea din Urbino. Pentru a afla mai multe despre jocul său original, vizitați",
                 "blogul nostru"
 
             ]
