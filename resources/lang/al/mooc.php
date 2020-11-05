@@ -26,7 +26,7 @@ return [
             1 => 'burimet',
             2 => 'falas të EU Code Week dhe materiale trajnimi të disponueshme në 29 gjuhë dhe aspekte të veçanta të kodimit, të tilla si mendimin llogaritës, aktivitete të shkëputura dhe mundësi të pafundme të robotikës, modifikimin dhe bërjen, gjuhët e programimit vizual, krijimin e aplikacioneve dhe shumë më tepër.'
         ],
-        'course-link' => "Shikoni kursin “Deep dive” 2019"
+        'course-link' => "Shikoni kursin “Deep dive” 2019",
     ],
     "social-media" => [
         0 => 'Ndiqni',
