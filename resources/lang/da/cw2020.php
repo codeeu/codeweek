@@ -124,7 +124,7 @@ return [
                 "og scanne QR-koden, som vil føre dig til Telegram-app'en og give dig det første sæt instrukser",
                 "For at vinde skal du løse 10 programmeringsudfordringer og finde 10 placeringer på Europa-kortet, som spiller en rolle i programmeringens og teknologiens fremkomst",
                 "Når du har gennemført spillet, kan du dele din score med dine venner ved hjælp af #CodeWeek og udfordre dem til at spille og lære om programmeringens historie. Lad os se, hvem der får de højeste scorer",
-                "Programmeringsuge-skattejagten er den virtuelle 2020-udgave af den originale EU-programmeringsuge-skattejagt, som oprindeligt blev udviklet af Alessandro Bogliolo, professor i computersystemer ved universitetet i Urbino. For at lære mere om hans oprindelige spil, kan du læse vores",
+                "Programmeringsuge-skattejagten er den virtuelle af den originale EU-programmeringsuge-skattejagt, som oprindeligt blev udviklet af Alessandro Bogliolo, professor i computersystemer ved universitetet i Urbino. For at lære mere om hans oprindelige spil, kan du læse vores",
                 "blog"
 
             ]

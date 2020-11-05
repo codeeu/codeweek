@@ -124,7 +124,7 @@ return [
                 "dhe skanoni kodin QR që do t’ju çojë juve tek aplikacioni Telegram dhe do t’ju japë setin e parë të udhëzimeve",
                 "Për të fituar, duhet të zgjidhni 10 sfida kodimi dhe të gjeni 10 vendndodhje në hartën e Evropës që lidhen me lindjen e kodimit dhe teknologjisë",
                 "Pasi të përfundoni lojën, ndajeni rezultatin tuaj me miqtë duke përdorur #CodeWeek dhe sfidojini të luajnë dhe të mësojnë edhe ata rreth historisë së kodimit. Le të shohim kush arrin të ketë pikët më të larta",
-                "Code Week Treasure Hunt është versioni virtual i vitit 2020 i lojës origjinale EU Code Week Treasure Hunt që u zhvillua fillimisht nga Alessandro Bogliolo, Profesor i Sistemeve Kompjuterike pranë Universitetit të Urbinos. Për të mësuar më shumë rreth lojës së tij origjinale, vizitoni",
+                "Code Week Treasure Hunt është versioni virtual i vitit i lojës origjinale EU Code Week Treasure Hunt që u zhvillua fillimisht nga Alessandro Bogliolo, Profesor i Sistemeve Kompjuterike pranë Universitetit të Urbinos. Për të mësuar më shumë rreth lojës së tij origjinale, vizitoni",
                 "blogun tonë"
 
             ]
