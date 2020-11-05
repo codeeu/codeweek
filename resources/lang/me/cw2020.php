@@ -123,7 +123,7 @@ return [
                 "i skenirajte QR kod koji će vas odvesti u Telegram aplikaciju gdje ćete dobiti prvi skup uputstava",
                 "Za pobjedu, potrebno je da riješite 10 izazova iz programiranja i pronađete 10 lokacija na mapi Evrope koje su povezane sa napretkom programiranja i tehnologije",
                 "Nakon što završite igru, podijelite vaš rezultat sa svojim prijateljima koristeći tag #CodeWeek i izazovite ih da i oni odigraju igru i nauče o istoriji programiranja. Hajde da vidimo ko će ostvariti najbolje rezultate",
-                "Lov na blago Nedelje programiranja je virtuelna verzija za 2020. godinu originalnog Lova na blago EU Nedelje programiranja koji je najprije razvio Alessandro Bogliolo, profesor računarskih sistema na Univerzitetu Urbina. Da naučite više o njegovoj originalnoj igri, posjetite naš",
+                "Lov na blago Nedelje programiranja je virtuelna verzija za godinu originalnog Lova na blago EU Nedelje programiranja koji je najprije razvio Alessandro Bogliolo, profesor računarskih sistema na Univerzitetu Urbina. Da naučite više o njegovoj originalnoj igri, posjetite naš",
                 "blog"
 
             ]

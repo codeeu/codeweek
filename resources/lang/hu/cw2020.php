@@ -124,7 +124,7 @@ return [
                 "és olvasd be a QR-kódot a telefonoddal. Ezt követően megnyílik a Telegram alkalmazás, és megkapod az első utasításkészletet",
                 "Ahhoz, hogy nyerj, meg kell oldanod 10 programozási feladatot, és meg kell találnod 10 olyan helyszínt Európa térképén, amelyek kapcsolódnak a programozás és a technológia térnyeréséhez",
                 "A játék befejezése után oszd meg a pontszámodat a barátaiddal a #CodeWeek hashtaget használva, és hívd ki őket arra, hogy játsszanak, és ismerjék meg a programozás történetét. Lássuk, ki éri el a legmagasabb pontszámot!",
-                "A programozási hét kincsvadászata az eredeti európai programozási hét kincsvadászatának 2020-as virtuális változata. Az eredeti játékot Alessandro Bogliolo, az Urbinói Egyetem információfeldolgozási rendszerekkel foglalkozó professzora dolgozta ki. Ha többet szeretnél tudni az eredeti játékról, látogass el",
+                "A programozási hét kincsvadászata az eredeti európai programozási hét kincsvadászatának virtuális változata. Az eredeti játékot Alessandro Bogliolo, az Urbinói Egyetem információfeldolgozási rendszerekkel foglalkozó professzora dolgozta ki. Ha többet szeretnél tudni az eredeti játékról, látogass el",
                 "a blogunkra"
 
             ]

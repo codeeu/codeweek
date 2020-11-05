@@ -124,7 +124,7 @@ return [
                 "e digitaliza o código QR, que te levará à aplicação Telegram e te dará o primeiro conjunto de instruções",
                 "Para ganhar, tens de resolver 10 desafios de programação e de encontrar 10 locais no mapa da Europa relacionados com o desenvolvimento da programação e da tecnologia",
                 "Depois de completares o jogo, podes partilhar a tua pontuação com os teus amigos utilizando a hashtag #CodeWeek e desafiá-los a jogarem também e a descobrirem a história da programação. Vamos ver quem obtém a melhor pontuação",
-                "A caça ao tesouro da Semana Europeia da Programação é a versão virtual de 2020 da caça ao tesouro original, que foi criada pela primeira vez por Alessandro Bogliolo, Professor de Sistemas Informáticos na Universidade de Urbino. Para mais informações sobre o jogo original, visita o nosso",
+                "A caça ao tesouro da Semana Europeia da Programação é a versão virtual da caça ao tesouro original, que foi criada pela primeira vez por Alessandro Bogliolo, Professor de Sistemas Informáticos na Universidade de Urbino. Para mais informações sobre o jogo original, visita o nosso",
                 "blog"
 
             ]

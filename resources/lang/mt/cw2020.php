@@ -124,7 +124,7 @@ return [
                 "u skennja l-kodiċi QR li jieħdok fl-app Telegram u jagħtik l-ewwel sett ta’ struzzjonijiet",
                 "Biex tirbaħ, jeħtieġ li ssolvi 10 sfidi ta’ kkowdjar u ssib 10 postijiet fuq il-mappa tal-Ewropa li huma marbuta maż-żieda f’ħajjitna tal-ikkowdjar u t-teknoloġija",
                 "Wara li tlesti l-logħba, aqsam il-punteġġ tiegħek ma’ sħabek billi tuża #CodeWeek u sfidahom biex jilagħbu u jitgħallmu dwar l-istorja tal-ikkowdjar ukoll. Ejjew naraw min jirnexxilu jġib l-ogħla riżultati",
-                "It-Treasure Hunt tal-Ġimgħa tal-Ikkowdjar hija l-verżjoni virtwali tal-2020 tat-Treasure Hunt tal-Ġimgħa Ewropea tal-Ikkowdjar li ġiet żviluppata għall-ewwel darba minn Alessandro Bogliolo, Professur tas-Sistemi tal-Kompjuter fl-Università ta’ Urbino. Biex issir taf aktar dwar il-logħba oriġinali tiegħu, żur il-",
+                "It-Treasure Hunt tal-Ġimgħa tal-Ikkowdjar hija l-verżjoni virtwali tat-Treasure Hunt tal-Ġimgħa Ewropea tal-Ikkowdjar li ġiet żviluppata għall-ewwel darba minn Alessandro Bogliolo, Professur tas-Sistemi tal-Kompjuter fl-Università ta’ Urbino. Biex issir taf aktar dwar il-logħba oriġinali tiegħu, żur il-",
                 "blog tagħna"
 
             ]

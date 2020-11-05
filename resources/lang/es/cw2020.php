@@ -124,7 +124,7 @@ return [
                 "escanea el código QR, que te llevará a la aplicación Telegram y la primera serie de instrucciones",
                 "Para ganar, tendrás que resolver 10 problemas de programación y encontrar 10 lugares en el mapa de Europa relacionados con el nacimiento de la programación y la tecnología",
                 "Al terminar el juego, comparte tu puntuación con tus amigos utilizando la etiqueta #CodeWeek y desafíales a jugar y aprender como tú historia de la programación. ¡A ver quién consigue el mejor resultado!",
-                "La Búsqueda del Tesoro de la Semana de la Programación es la versión virtual para 2020 del juego creado para la Semana de la Programación de la UE por Alessandro Bogliolo, profesor de sistemas informáticos de la Universidad de Urbino. Para más información sobre este original juego, visita nuestro",
+                "La Búsqueda del Tesoro de la Semana de la Programación es la versión virtual del juego creado para la Semana de la Programación de la UE por Alessandro Bogliolo, profesor de sistemas informáticos de la Universidad de Urbino. Para más información sobre este original juego, visita nuestro",
                 "blog"
 
             ]

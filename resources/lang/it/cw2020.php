@@ -124,7 +124,7 @@ return [
             "e scansiona il codice QR che ti farà aprire l'app Telegram e ti darà la prima serie di istruzioni",
             "Per vincere, devi risolvere 10 sfide di coding e trovare 10 siti sulla mappa dell'Europa collegati alla diffusione del coding e della tecnologia",
             "Dopo aver completato il gioco, condividi il tuo punteggio con i tuoi amici usando l'hashtag #CodeWeek e sfidali a giocare e a scoprire la storia della programmazione. Vediamo chi fa più punti",
-            "La caccia al tesoro della Settimana della programmazione è la versione virtuale 2020 di quella originale sviluppata per la prima volta da Alessandro Bogliolo, professore di sistemi per l'elaborazione dell'informazione presso l'Università di Urbino. Per saperne di più sul suo gioco originale, segui il nostro",
+            "La caccia al tesoro della Settimana della programmazione è la versione virtuale di quella originale sviluppata per la prima volta da Alessandro Bogliolo, professore di sistemi per l'elaborazione dell'informazione presso l'Università di Urbino. Per saperne di più sul suo gioco originale, segui il nostro",
             "blog"
 
         ]
