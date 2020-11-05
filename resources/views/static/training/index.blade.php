@@ -148,8 +148,9 @@
                 </p>
 
                 <p>
-                    <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+CWDive+2020/about">@lang('mooc.icebreaker.registration.0')</a> @lang('mooc.icebreaker.registration.1')
+                    <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+CWDive+2020/about">{{Illuminate\Support\Str::replaceFirst('2019','2020',__('mooc.deep-dive.course-link'))}}</a>
                 </p>
+
                 <p>@lang('mooc.social-media.0') <a
                             href="https://twitter.com/CodeWeekEU">@lang('mooc.social-media.1')</a> @lang('mooc.social-media.2')
                     .</p>

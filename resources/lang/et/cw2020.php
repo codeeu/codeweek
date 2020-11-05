@@ -124,7 +124,7 @@ return [
                 "ja skaneerige QR-kood, mis viib äppi Telegram ja annab teile esimesed juhised",
                 "Võitmiseks peate lahendama 10 programmeerimisprobleemi ja leidma Euroopa kaardil 10 kohta, mis on seotud programmeerimise ja tehnoloogia arenguga",
                 "Pärast mängu lõpetamist jagage oma tulemust sõpradega, kasutades teemaviidet #CodeWeek, ning esitage neile väljakutse mängimiseks ja programmeerimise ajalooga tutvumiseks. Vaatame, kes saab parima tulemuse",
-                "Programmeerimisnädala aardejaht on 2020. aasta virtuaalne versioon algsest ELi programmeerimisnädala aardejahist, mille töötas esmakordselt välja Urbino Ülikooli arvutisüsteemide professor Alessandro Bogliolo. Selleks et lugeda lisaks tema algse mängu kohta, külastage meie",
+                "Programmeerimisnädala aardejaht aasta virtuaalne versioon algsest ELi programmeerimisnädala aardejahist, mille töötas esmakordselt välja Urbino Ülikooli arvutisüsteemide professor Alessandro Bogliolo. Selleks et lugeda lisaks tema algse mängu kohta, külastage meie",
                 "blogi"
 
             ]

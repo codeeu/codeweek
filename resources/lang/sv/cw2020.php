@@ -124,7 +124,7 @@ return [
                 "och skannar QR-koden som tar dig till Telegram-appen och ger dig den första omgången instruktioner.",
                 "För att vinna måste du lösa tio kodningsuppdrag och hitta tio platser på Europakartan som är kopplade till kodningens och teknikens intåg.",
                 "När du har spelat färdigt, delar du dina poäng med dina vänner genom att tagga #CodeWeek och utmanar dem att spela och lära sig mer om kodningens historia. Vem kommer att få högst poäng?",
-                "Code Weeks skattjakt är 2020 års virtuella version av EU Code Weeks ursprungliga skattjakt som först utvecklades av Alessandro Bogliolo, professor i datorsystem vid Urbinos universitet. Du kan läsa mer om hans första spel på vår",
+                "Code Weeks skattjakt års virtuella version av EU Code Weeks ursprungliga skattjakt som först utvecklades av Alessandro Bogliolo, professor i datorsystem vid Urbinos universitet. Du kan läsa mer om hans första spel på vår",
                 "blogg."
 
             ]
