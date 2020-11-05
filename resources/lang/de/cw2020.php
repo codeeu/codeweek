@@ -124,7 +124,7 @@ return [
                 "und scannt den QR-Code, der Euch zur Telegramm-App bringt, sodass Ihr die ersten Anweisungen erhaltet",
                 "Um zu gewinnen, müsst Ihr 10 Kodierungsaufgaben lösen und 10 Orte auf einer Europakarte finden, die mit dem Aufstieg von Kodierung und Technologie zu tun haben",
                 "Danach könnt Ihr Euren Punktestand über #Codeweek mit Euren Freunden und Freundinnen teilen und Sie herausfordern, das Spiel auch zu spielen und etwas über die Geschichte des Kodierens zu lernen. Wer schafft die besten Ergebnisse?",
-                "Die Code Week-Schatzsuche 2020 ist die virtuelle Version der ursprünglichen EU Code Week-Schatzsuche, die von Alessandro Bogliolo, Professor für Computersysteme an der Universität Urbino, entwickelt wurde. Mehr über sein Originalspiel erfahrt Ihr in unserem",
+                "Die Code Week-Schatzsuche ist die virtuelle Version der ursprünglichen EU Code Week-Schatzsuche, die von Alessandro Bogliolo, Professor für Computersysteme an der Universität Urbino, entwickelt wurde. Mehr über sein Originalspiel erfahrt Ihr in unserem",
                 "Blog"
 
             ]
