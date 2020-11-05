@@ -124,7 +124,7 @@ return [
             "ja lue puhelimella QR-koodi. Siirryt Telegram-sovellukseen, jossa saat ensimmäiset ohjeet.",
             "Voitat, kun ratkaiset kymmenen koodaustehtävää ja etsit Euroopan kartalta kymmenen paikkaa, jotka liittyvät teknologian ja koodaamisen historiaan.",
             "Kun olet pelannut pelin läpi, kerro pistemäärä kavereillesi ja haasta heidätkin pelaamaan ja oppimaan samalla mielenkiintoisia asioita koodaamisen historiasta. Käytä aihetunnistetta #CodeWeek. Kuka saa parhaat pisteet?",
-            "Koodausviikon aarteenetsintä on vuoden 2020 tapahtumaa varten suunniteltu virtuaalinen versio alkuperäisestä EU:n koodausviikon aarteenetsintäpelistä, jonka laati Alessandro Bogliolo, italialaisen Urbinon yliopiston tietojärjestelmäkehityksen professori. Alkuperäisestä pelistä kerrotaan tarkemmin EU:n koodausviikon",
+            "Koodausviikon aarteenetsintä tapahtumaa varten suunniteltu virtuaalinen versio alkuperäisestä EU:n koodausviikon aarteenetsintäpelistä, jonka laati Alessandro Bogliolo, italialaisen Urbinon yliopiston tietojärjestelmäkehityksen professori. Alkuperäisestä pelistä kerrotaan tarkemmin EU:n koodausviikon",
             "blogissa."
 
         ]

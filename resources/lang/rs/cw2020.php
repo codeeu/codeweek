@@ -124,7 +124,7 @@ return [
                 "i skenirajte QR kod koji će vas usmeriti na aplikaciju Telegram i dati vam prvi skup uputstava",
                 "Za pobedu je neophodno da rešite 10 programerskih zagonetki i pronađete 10 mesta na mapi Evrope koja se vezuju za razvoj programiranja i tehnologije",
                 "Kada završite igru, podelite svoj rezultat sa prijateljima koristeći heš oznaku #CodeWeek i pozovite ih da i oni igraju i saznaju više o istoriji programiranja. Hajde da vidimo ko će postići najbolje rezultate",
-                "Potraga za blagom u Nedelji programiranja je virtuelna verzija izvorne Potrage za blagom u Nedelji programiranja u EU za 2020. godinu koju je osmislio Alesandro Boljiolo, profesor računarskih sistema na Univerzitetu u Urbinu. Da biste saznali više o originalnoj igri, posetite naš",
+                "Potraga za blagom u Nedelji programiranja je virtuelna verzija izvorne Potrage za blagom koju je osmislio Alesandro Boljiolo, profesor računarskih sistema na Univerzitetu u Urbinu. Da biste saznali više o originalnoj igri, posetite naš",
                 "blog"
 
             ]

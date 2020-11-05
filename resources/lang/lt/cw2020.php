@@ -124,7 +124,7 @@ return [
                 "ir nuskaityk QR kodą – taip atsidarysi programėlę „Telegram“ ir galėsi susipažinti su pirmaisiais nurodymais",
                 "Norėdamas laimėti, turi išspręsti 10 programavimo uždavinių ir Europos žemėlapyje surasti 10 vietų, susijusių su programavimo ir technologijų ištakomis",
                 "Užbaigęs žaidimą, pasidalyk savo rezultatu su draugais naudodamas saitažodį #CodeWeek ir pakviesk juos taip pat prisijungti prie žaidimo bei sužinoti apie programavimo istoriją. Pažiūrėkime, kieno rezultatai bus geriausi",
-                "Programavimo savaitės lobių paieškos – tai originalaus ES programavimo savaitės lobių paieškų žaidimo, kurį sukūrė Urbino universiteto kompiuterinių sistemų docentas Alessandro Bogliolo, virtuali 2020 m. versija. Daugiau apie originalią žaidimo versiją skaityk mūsų",
+                "Programavimo savaitės lobių paieškos – tai originalaus ES programavimo savaitės lobių paieškų žaidimo, kurį sukūrė Urbino universiteto kompiuterinių sistemų docentas Alessandro Bogliolo, virtuali versija. Daugiau apie originalią žaidimo versiją skaityk mūsų",
                 "tinklaraštyje"
 
             ]

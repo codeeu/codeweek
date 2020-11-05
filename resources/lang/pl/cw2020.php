@@ -124,7 +124,7 @@ return [
                 "i zeskanuj kod QR, który przeniesie Cię do aplikacji Telegram, gdzie znajdziesz pierwsze instrukcje",
                 "Aby wygrać, musisz rozwiązać 10 zagadek związanych z kodowaniem i znaleźć 10 miejsc na mapie Europy, które są powiązane z rozwojem kodowania i technologii",
                 "Po zakończeniu gry udostępnij swój wynik kolegom, używając hashtaga #CodeWeek, i ich też zaproś do zabawy i zapoznania się z historią kodowania. Ciekawe, kto uzyska najlepszy wynik",
-                "Podchody w ramach Tygodnia Kodowania to zainaugurowana w 2020 r. wersja wirtualna oryginalnej gry, którą pierwotnie opracował Alessandro Bogliolo, profesor systemów komputerowych na Uniwersytecie w Urbino. Aby dowiedzieć się więcej o pierwotnej grze, odwiedź nasz",
+                "Podchody w ramach Tygodnia Kodowania to zainaugurowana wersja wirtualna oryginalnej gry, którą pierwotnie opracował Alessandro Bogliolo, profesor systemów komputerowych na Uniwersytecie w Urbino. Aby dowiedzieć się więcej o pierwotnej grze, odwiedź nasz",
                 "blog"
 
             ]
