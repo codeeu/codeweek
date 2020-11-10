@@ -859,7 +859,7 @@ var SEMICOLON = SEMICOLON || {};
             if ( $().superfish ) {
                 var menuSelector = '#primary-menu > ul';
                 if( $body.hasClass('device-lg')) {
-                    $('#primary-menu ul ul').css('display', 'flex');
+                    // $('#primary-menu ul ul').css('display', 'flex');
                     $(menuSelector).superfish({
                         popUpSelector: 'ul,.mega-menu-content,.top-link-section',
                         delay: 250,
