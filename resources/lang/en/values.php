@@ -17,6 +17,16 @@ return [
         3 => 'EU Code Week is also its millions of participants, who are people of all genders, ages, backgrounds, cultures and skill sets from across the world.',
         4 => 'We are proud to be EU Code Week. These are our values. They guide our work and decisions at all times.'
     ],
+    "videos" => [
+        1 => "Watch EU Code Week ambassadors’ videos on our values",
+        2 => "Watch Katja Osljak, Ambassador for Slovenia, on why Code Week is independent",
+        3 => "Watch Laurent Touché, Ambassador for France, on why Code Week is for everyone",
+        4 => "Watch Fatma Bouaziz, Ambassador for Tunisia, on why Code Week is glocal",
+        5 => "Watch Linda Sinka, Ambassador for Latvia on why Code Week is about cooperation",
+        6 => "Watch Alessandro Bogliolo, Ambassador for Italy, on why Code Week is non-profit",
+        7 => "Watch Marjana Prifti, Ambassador for Albania, on why Code Week encourages innovation and creativity",
+        8 => "Watch Cristiana Lucaci, Ambassador for Romania, on why Code Week is thankful to its community",
+    ],
     '1' => [
         'title' => 'EU Code Week is independent',
         'content' => 'EU Code Week is a volunteer-driven community. We do not act out of economic interest. We respect and value other people’s ideas, beliefs and cultures. We take part in EU Code Week, because we believe in the importance of what we are doing. That is our strength. We want to make computational thinking, coding, programming, computer science, robotics, tinkering with hardware and digital skills at large accessible to everybody. '
