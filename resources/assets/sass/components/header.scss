@@ -33,10 +33,9 @@ header nav ul {
 }
 
 header nav ul li{
-  display: inline;
+  //display: inline;
   padding-left: 46px;
   position: relative;
-  text-align: center;
 }
 
 header nav ul li a{
@@ -49,14 +48,21 @@ header nav ul li ul{
   z-index: 1;
   display:none;
   position: absolute;
-  left:46px;
-  background-color: $main-color;
-  border-radius: 13px;
-  align-items: center;
+  //left:46px;
+  background-color: #F2F2F2;
+  border-radius: 7px;
+  padding: 15px 25px;
+  //right:0;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.775);
+  //border-radius: 1px;
+  //align-items: center;
   margin-top:12px;
   padding-right: 46px;
-  max-height: 40px;
+  //max-height: 400px;
   min-height: 40px;
+  height: auto;
+
+
 }
 
 header nav ul li ul:before{
@@ -77,26 +83,29 @@ header nav ul li ul:after{
   border: 9px solid transparent;
   border-bottom-color: $main-color;
   border-top: 0;
-  margin-left: -9px;
+  margin-left: 0px;
   margin-top: -9px;
 }
 
 header nav ul li ul li{
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+
 }
 
 header nav ul li ul li a{
-  font-size: 16px;
-  color: $main-color4;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 20px;
+  color: $main-color3;
+  //font-weight: bold;
+  //text-transform: uppercase;
   text-align:center;
   white-space: nowrap;
 }
 
 header nav ul li ul li a:hover{
-  color: $main-color3;
+  color: $main-color;
 }
 
 header #right-menu{
