@@ -45,7 +45,6 @@ header nav ul li a{
 }
 
 header nav ul li ul{
-  z-index: 1;
   display:none;
   position: absolute;
   //left:46px;
@@ -61,6 +60,7 @@ header nav ul li ul{
   //max-height: 400px;
   min-height: 40px;
   height: auto;
+  z-index: 9999;
 
 
 }
