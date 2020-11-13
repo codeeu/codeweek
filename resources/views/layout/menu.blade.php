@@ -42,7 +42,7 @@
                 <a href="javascript:void(null);">@lang('menu.about')</a>
                 <ul>
                     <li><a href="/codeweek2020">@lang('menu.codeweek2020')</a></li>
-                    <li><a href="/about">Codeweek</a></li>
+                    <li><a href="/about">Code Week</a></li>
                     <li><a href="/our-values">@lang('menu.values')</a></li>
                     <li><a href="/partners">@lang('about.partners_and_sponsors')</a></li>
                 </ul>
