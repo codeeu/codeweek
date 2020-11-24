@@ -35,14 +35,14 @@
                 <ul class="dropdown-menu">
                     <li><a href="{{route('schools')}}">@lang('menu.why')?</a></li>
                     <li><a href="{{route('training.index')}}">@lang('menu.training')</a></li>
-                    <li><a href="{{route('codeweek4all')}}">CODE WEEK 4 ALL</a></li>
                 </ul>
             </li>
             <li>
                 <a href="javascript:void(null);">@lang('menu.about')</a>
                 <ul>
                     <li><a href="/codeweek2020">@lang('menu.codeweek2020')</a></li>
-                    <li><a href="/about">Codeweek</a></li>
+                    <li><a href="/about">Code Week</a></li>
+                    <li><a href="{{route('codeweek4all')}}">Code Week 4 All</a></li>
                     <li><a href="/our-values">@lang('menu.values')</a></li>
                     <li><a href="/partners">@lang('about.partners_and_sponsors')</a></li>
                 </ul>
