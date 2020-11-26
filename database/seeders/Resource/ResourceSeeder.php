@@ -1,11 +1,13 @@
 <?php
 
+namespace Database\Seeders\Resource;
+
 use Illuminate\Database\Seeder;
 
 class ResourceSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Run the database seeders.
      *
      * @return void
      */
