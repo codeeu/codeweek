@@ -55,8 +55,8 @@ class ImporterHelper
         $currentSeenAt = Carbon::parse(Importer::max('seen_at'));
 
         //Get Event IDs that have not been seen in the last 24 hours
-        $IDstoDelete = Importer::where('seen_at', '<=', $currentSeenAt->subDay(1))->pluck('event_id');
-
+        $IDstoDelete = Importer::where('seen_at', '<=', $currentSeenAt->subDay())->pluck('event_id')->all();
+dump($IDstoDelete);
         return $IDstoDelete;
 
 

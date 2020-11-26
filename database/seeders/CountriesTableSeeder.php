@@ -1,12 +1,14 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
 class CountriesTableSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Run the database seeders.
      *
      * @return void
      */
@@ -14,7 +16,7 @@ class CountriesTableSeeder extends Seeder
     {
         Eloquent::unguard();
 
-        $path = 'database/seeds/countries.sql';
+        $path = 'database/seeders/countries.sql';
         DB::unprepared(file_get_contents($path));
         $this->command->info('Country table seeded!');
     }
