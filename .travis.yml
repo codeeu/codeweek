@@ -11,6 +11,7 @@ install:
 before_script:
   - cp .env.travis .env
   - travis_retry composer self-update
+  - if [ -n "$GH_TOKEN" ]; then composer config github-oauth.github.com ${GH_TOKEN}; fi;
   - travis_retry composer install ${COMPOSER_FLAGS} --no-interaction --prefer-source
   - php artisan vue-i18n:generate
   - yarn install
