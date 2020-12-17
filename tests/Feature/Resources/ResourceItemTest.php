@@ -2,6 +2,11 @@
 
 namespace Tests\Feature\Resources;
 
+use Database\Seeders\Resource\CategorySeeder;
+use Database\Seeders\Resource\LanguageSeeder;
+use Database\Seeders\Resource\LevelSeeder;
+use Database\Seeders\Resource\ProgrammingLanguageSeeder;
+use Database\Seeders\Resource\TypeSeeder;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -147,7 +152,7 @@ class ResourceItemTest extends TestCase
 
         $this->signIn($this->admin);
 
-        $this->seed('TypeSeeder');
+        $this->seed(TypeSeeder::class);
 
         $item = create('App\ResourceItem');
 
@@ -170,7 +175,7 @@ class ResourceItemTest extends TestCase
         $this->withoutExceptionHandling();
 
 
-        $this->seed('CategorySeeder');
+        $this->seed(CategorySeeder::class);
 
         $this->signIn($this->admin);
 
@@ -197,7 +202,7 @@ class ResourceItemTest extends TestCase
         $this->signIn($this->admin);
 
 
-        $this->seed('ProgrammingLanguageSeeder');
+        $this->seed(ProgrammingLanguageSeeder::class);
 
         $item = create('App\ResourceItem');
 
@@ -219,7 +224,7 @@ class ResourceItemTest extends TestCase
 
         $this->signIn($this->admin);
 
-        $this->seed('LevelSeeder');
+        $this->seed(LevelSeeder::class);
 
         $item = create('App\ResourceItem');
 
@@ -239,7 +244,7 @@ class ResourceItemTest extends TestCase
 
         $this->signIn($this->admin);
 
-        $this->seed('LanguageSeeder');
+        $this->seed(LanguageSeeder::class);
 
         $item = create('App\ResourceItem');
 
@@ -260,7 +265,7 @@ class ResourceItemTest extends TestCase
 
         $this->signIn($this->admin);
 
-        $this->seed('LanguageSeeder');
+        $this->seed(LanguageSeeder::class);
 
         $item = create('App\ResourceItem');
 
@@ -296,7 +301,7 @@ class ResourceItemTest extends TestCase
 
         $this->signIn($this->admin);
 
-        $this->seed('LanguageSeeder');
+        $this->seed(LanguageSeeder::class);
 
         $item = create('App\ResourceItem');
 
