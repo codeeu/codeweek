@@ -136,6 +136,38 @@
                     </a>
                 </div>
 
+                <div class="codeweek-card-grid">
+                    <a href="{{route('codingathome-two-snakes')}}">
+                        <img src="/img/codingathome/13.png">
+                        <div class="title"
+                             style="text-align:center">@lang('coding-at-home.two-snakes.title')</div>
+                    </a>
+                </div>
+
+                <div class="codeweek-card-grid">
+                    <a href="{{route('codingathome-round-trip')}}">
+                        <img src="/img/codingathome/14.png">
+                        <div class="title"
+                             style="text-align:center">@lang('coding-at-home.round-trip.title')</div>
+                    </a>
+                </div>
+
+                <div class="codeweek-card-grid">
+                    <a href="{{route('codingathome-meeting-point')}}">
+                        <img src="/img/codingathome/15.png">
+                        <div class="title"
+                             style="text-align:center">@lang('coding-at-home.meeting-point.title')</div>
+                    </a>
+                </div>
+
+                <div class="codeweek-card-grid">
+                    <a href="{{route('codingathome-follow-the-music')}}">
+                        <img src="/img/codingathome/16.png">
+                        <div class="title"
+                             style="text-align:center">@lang('coding-at-home.follow-the-music.title')</div>
+                    </a>
+                </div>
+
             </section>
 
             <section class="codeweek-content-wrapper-inside">
