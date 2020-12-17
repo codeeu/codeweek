@@ -85,6 +85,10 @@ Route::view('/resources/CodingAtHome/the-tourist', 'codingathome.the-tourist')->
 Route::view('/resources/CodingAtHome/catch-the-robot', 'codingathome.catch-the-robot')->name('codingathome-catch-the-robot');
 Route::view('/resources/CodingAtHome/the-snake', 'codingathome.the-snake')->name('codingathome-the-snake');
 Route::view('/resources/CodingAtHome/storytelling', 'codingathome.storytelling')->name('codingathome-storytelling');
+Route::view('/resources/CodingAtHome/two-snakes', 'codingathome.two-snakes')->name('codingathome-two-snakes');
+Route::view('/resources/CodingAtHome/round-trip', 'codingathome.round-trip')->name('codingathome-round-trip');
+Route::view('/resources/CodingAtHome/meeting-point', 'codingathome.meeting-point')->name('codingathome-meeting-point');
+Route::view('/resources/CodingAtHome/follow-the-music', 'codingathome.follow-the-music')->name('codingathome-follow-the-music');
 
 
 Route::get('/events', 'SearchController@search')->name('events_map');
