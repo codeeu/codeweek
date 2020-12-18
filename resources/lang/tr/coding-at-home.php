@@ -206,6 +206,64 @@ Gerekli malzeme: dama tahtası, ayak izli taşlar.',
 
     ],
 
+    'two-snakes' => [
+        'title' => "İki yılan",
+    'text' => "İki yılan, CodyRoby kartlarıyla tahtada dolaşarak birbirlerinin önünü tıkamaya çalışır. Oyunun kuralı çok basit: bir yılanın üstünden geçtiği bir kareden tekrar geçemezsiniz. En uzun sure tahtada dolaşabilen yılan oyunu kazanır.",
+    'material' => "CodyRoby kartları, 1 adet 5 × 5 dama tahtası, 2 adet piyon ve üstünden geçtiğiniz kareleri işaretlemek için kağıt parçaları.",
+    'questions' => [
+    'content' =>
+        [
+            1 => 'Soru 1. Videoda ilk gösterilen düzende, iki oyuncu sola dönmelerini sağlayacak sarı kart dışında hangi kartları seçseler işlerine yarar?',
+            ]
+
+    ]
+
+],
+
+'round-trip' => [
+    'title' => "Gidiş-dönüş",
+    'text' => "Takımlar sırayla oynar. İlk takım gidiş yolunu programlarken diğer takım Roby’yi başlangıç noktasına geri götürmelidir. Kolay gibi görünse de kolay değildir. Özellikle de Roby’yi hareket ettirmeden hamleleri yalnızca aklınızdan planlamaya çalışırsanız...",
+    'material' => "CodyRoby kartları, 1 adet 5 × 5 dama tahtası, 2 adet piyon ve üstünden geçtiğiniz kareleri işaretlemek için kağıt parçaları.",
+    'questions' => [
+        'content' =>
+            [
+                1 => "Soru 1. Roby’yi başlangıç noktasına geri götüren programın gidiş yolundan daha kısa olması -yani daha az komuttan oluşması- mümkün mü?",
+            ]
+
+    ]
+
+],
+
+'meeting-point' => [
+    'title' => "Buluşma noktası",
+    'text' => "Bu sefer hamlelerimizi başlamadan önce planlıyoruz. İki takım robotlarını hareket ettirmek için masaya bir dizi komut kartı açar; ancak oyunculardan biri “Başla!” diyene kadar hiçbir şey hareket etmez. O an, programlama biter ve yarış başlar. “Başla!” diyen oyuncu ancak takımlarının komutlarını yerine getiren iki robot aynı karede buluşursa oyunu kazanır.",
+    'material' => "CodyRoby kartları, 1 adet 5 × 5 dama tahtası, 2 adet piyon.",
+    'questions' => [
+        'content' =>
+            [
+                1 => "Soru 1. İki robotun hiç karşılaşamayabileceğini düşünüyorsanız, tüm olası durumları düşünerek yeni oyun kuralları üretin.",
+            ]
+
+    ]
+
+],
+
+'follow-the-music' => [
+    'title' => "Müziğin peşinden",
+    'text' => "Programlama komutlarından oluşan diziler belirli aralıklarla kendilerini tekrar ettiğinde, ritimleri varmış gibi görünür. Her komuta bir ses atarsak, Roby’yi müzikle yönlendirebiliriz. Şimdi aynen bunu yapacağız. Her komuta farklı bir ses atayarak sizin için bir program geliştireceğim. Siz de bu sesli komutları izleyerek Roby’yi tahtada hareket ettireceksiniz.",
+    'material' => "CodyRoby kartları, dama tahtası ve piyona ek olarak üç farklı ses çıkarmamız gerekiyor. Ben içi farklı miktarlarda su dolu üç cam bardak kullandım. Siz ne kullanacaksınız?",
+    'questions' => [
+    'content' =>
+        [
+            1 => "Soru 1. Videoyu takip edin ve kartlara bakmadan bardakların çıkardığı seslerle hareket etmeye çalışın. Seslerin verdiği komutları anlayıp uygulayabiliyor musunuz?",
+                2 => "Soru 2. Üç temel komuta üç ses atayın. Roby’yi tahtanın dışına çıkarmadan sonsuza kadar tekrar edebileceğiniz bir ses dizisi bulun....",
+            ]
+
+    ]
+
+],
+
+
 
 
     'texts' => [

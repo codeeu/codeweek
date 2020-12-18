@@ -205,6 +205,64 @@ return [
 
     ],
 
+    'two-snakes' => [
+        'title' => "Dve zmijice",
+        'text' => "Dve zmijice se pomeraju na tabli na osnovu CodyRoby karata, trudeći se da otežaju kretanje onoj drugoj. Osnovno pravilo je vrlo jednostavno: ne možete da se vratite na polje preko kog je zmijica već prošla. Pobednik je ona zmijica koja najduže može slobodno da se kreće.",
+        'material' => "Karte CodyRoby, tabla sa 5×5 polja, dve figure i papirići kojima će se označavati polja preko kojih se već prešlo.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Ako uzmemo prvobitni raspored prikazan u videu i nijedan igrač ne izvuče žute karte za okret levo, kojim kartama bi trebalo da se nadaju?",
+                ]
+
+        ]
+
+    ],
+
+    'round-trip' => [
+        'title' => "Povratno putovanje",
+        'text' => "Timovi se smenjuju u igri. Prvi planira odlazno putovanje, dok drugi mora da vrati Robyja na početnu poziciju. Deluje jednostavno, ali nije, a naročito ako pokrete planirate samo u sebi, bez da uopšte pomerate Robyja...",
+        'material' => "Karte CodyRoby, tabla sa 5×5 polja, dve figure i papirići kojima će se označavati polja preko kojih se već prešlo.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Da li program koji će Robyja vratiti na početnu poziciju može da bude kraći (tj. da sadrži manje naredbi) od programa za odlazak?",
+                ]
+
+        ]
+
+    ],
+
+    'meeting-point' => [
+        'title' => "Mesto sastanka",
+        'text' => "Ovog puta planiramo svoje pokrete pre nego što počnemo. Dva tima ređaju karte na stolu da bi napravili nizove naredbi prema kojima će svako pomerati svog robota, ali ništa se ne pomera dok neko od igrača ne vikne: „Start!“. U tom trenutku programiranje prestaje, a počinje akcija. Igrač koji naredi start pobeđuje samo ako se dva robota, od kojih svaki izvršava naredbe svog tima, nađu na istom polju.",
+        'material' => "Karte CodyRoby, tabla sa 5×5 polja i dve figure.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Ako mislite da je moguće da se dva robota nikada ne susretnu, smislite pravila igre koja pokrivaju sve moguće situacije.",
+                ]
+
+        ]
+
+    ],
+
+    'follow-the-music' => [
+        'title' => "Igra po notama",
+        'text' => "Kada se nizovi programerskih naredbi periodično ponavljaju, to je kao da imaju neki ritam. Ako svaku naredbu povežemo sa nekim zvukom, Robyja možemo da navodimo muzikom. To je upravo ono što ćemo sada raditi. Ja ću vam napraviti program koristeći različite zvukove koji će predstavljati različite naredbe, a vi ćete pomerati Robyja po tabli prateći te zvučne naredbe.",
+        'material' => "Pored karata CodyRoby, table sa poljima i figure, moramo da napravimo i tri različita zvuka. Ja sam koristio tri čaše ispunjene različitim količinama vode. Šta ćete vi koristiti?",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Pokušajte da pratite video i zvukove koje proizvode čaše, bez gledanja u karte. Možete li da prepoznate i izvršite naredbe u vidu zvukova?",
+                    2 => "P2. Odaberite tri zvuka koja ćete povezati sa tri osnovne naredbe. Napravite niz zvukova koje možete da ponavljate u nedogled, bez izvođenja Robyja sa table...",
+                ]
+
+        ]
+
+    ],
+
+
 
 
     'texts' => [

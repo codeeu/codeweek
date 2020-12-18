@@ -205,6 +205,64 @@ return [
 
     ],
 
+    'two-snakes' => [
+        'title' => "“Dy gjarpërinjtë”",
+        'text' => "Duke përdorur kartat e CodyRoby, dy gjarpërinj lëvizin rrotull tavolinës duke u përpjekur të bllokojnë lëvizjen e njëri-tjetrit. Rregulli bazë është shumë i thjeshtë: nuk mund të kthehesh në një kuadrat ku ka shkelur më parë një gjarpër. Fituesi është gjarpri që mund të lëvizë rrotull lirshëm më gjatë.",
+        'material' => "Kartat e CodyRoby, një fushë me kuadrate 5×5, dy ushtarë, dhe një copë letre që do të përdoret për të shënuar kutitë që janë shkelur tashmë.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Në konfigurimin fillestar të treguar në video, nëse dy lojtarët nuk tërheqin kartat e verdha për t’u kthyer majtas, cilat karta duhet të shpresojnë të tërheqin?",
+                ]
+
+        ]
+
+    ],
+
+    'round-trip' => [
+        'title' => "“Udhëtim vajtje-ardhje”",
+        'text' => "Ekipet luajnë me radhë. I pari planifikon udhëtimin e vajtjes ndërsa i dyti duhet ta kthejë Roby përsëri në pikën e nisjes. Duket e lehtë, por nuk është, sidomos nëse e planifikon lëvizjen vetëm në mendje pa e lëvizur robotin Roby...",
+        'material' => "Kartat e CodyRoby, një fushë me kuadrate 5×5, dy ushtarë, dhe një copë letre që do të përdoret për të shënuar kutitë që janë shkelur tashmë.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. A është e mundur që programi që kthen robotin Roby përsëri në pikën e nisjes, të jetë më i shkurtër (pra, i përbërë nga më pak udhëzime) se ai i nisjes?",
+                ]
+
+        ]
+
+    ],
+
+    'meeting-point' => [
+        'title' => "Pika e nisjes",
+        'text' => "Kësaj here ne planifikojmë lëvizjet tona përpara se të nisemi. Dy ekipet i vendosin kartat në tavolinë për të krijuar sekuencën e udhëzimeve që do të lëvizin robotët përkatës, por nuk lëviz asgjë derisa një prej lojtarëve të thotë “Fillo!”. Në atë pikë përfundon programimi dhe fillon veprimi. Lojtari që tha “Fillo!” fiton vetëm nëse dy robotët, secili duke ekzekutuar udhëzimet e ekipit, përfundon në të njëjtin kuadrat.",
+        'material' => "Kartat e CodyRoby, një fushë me kuadrate 5×5, dy ushtarë.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Nëse mendon se është e mundur që dy robotë të mos takohen asnjëherë, shpikni rregulla loje që mbulojnë të gjitha situatat e mundshme.",
+                ]
+
+        ]
+
+    ],
+
+    'follow-the-music' => [
+    'title' => "“Ndiq muzikën”",
+    'text' => "Kur sekuencat e udhëzimeve të programimit përsëriten periodikisht, është njësoj si të kishin një ritëm. Nëse e shoqërojmë një tingull me secilin udhëzim, mund ta udhëzojmë robotin Roby me muzikë. Kjo është pikërisht ajo që do të bëjmë këtë herë. Do të krijoj një program për ty duke përdorur tinguj të ndryshëm që përfaqësojnë udhëzime të ndryshme, dhe do ta lëvizësh robotin Roby nëpër fushë duke ndjekur këto udhëzime të bazuara te tingujt.",
+    'material' => "Përveç kartave të CodyRoby, fushës me kuadrate dhe ushtarëve, na duhen tre tinguj të ndryshëm. Unë përdora tri gota të mbushura me sasi të ndryshme uji, po ti çfarë do të përdorësh?",
+    'questions' => [
+        'content' =>
+            [
+                1 => "Q1. Provo të ndjekësh videon dhe orientohu nga tingujt që prodhojnë gotat, pa parë te kartat. A mund t’i dallosh dhe ekzekutosh udhëzimet e krijuara nga tingujt?",
+                2 => "Q2. Zgjidh tre tinguj për t’i shoqëruar me tre udhëzime bazë. Krijo një sekuencë tingujsh që mund ta përsërisje pafundësisht pa e nxjerrë asnjëherë robotin Roby jashtë fushës...",
+            ]
+
+    ]
+
+],
+
+
 
 
     'texts' => [

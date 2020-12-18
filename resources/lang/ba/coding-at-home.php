@@ -153,63 +153,126 @@ return [
 
     ],
 
+
+    'two-snakes' => [
+
+        'title' => "Dvije zmije",
+        'text' => "Koristeći CodyRoby karte, dvije zmije se kreću po ploči pokušavajući da jedna drugoj ometaju kretanje. Osnovno pravilo je jednostavno: ne možete se vratiti na polje koje je zmija već posjetila. Pobjednik je zmija koja se bude mogla najduže kretati slobodno.",
+        'material' => "CodyRoby karte, ploča s poljima 5 × 5, dva piona i komadići papira za obilježavanje već posjećenih polja.",
+        'questions' => [
+            'content' =>
+
+                [
+                    1 => "P1. U početnoj postavci prikazanoj u videozapisu, ako dva igrača ne povuku žute karte za okretanje lijevo, koje karte bi mogli povući?",
+                ]
+        ]
+
+    ],
+
+
+    'round-trip' => [
+        'title' => "Povratno putovanje",
+        'text' => "Timovi igraju naizmjenično. Prvi tim planira odlazno putovanje, dok drugi tim mora vratiti Robyja nazad na početnu tačku. Izgleda lako, ali nije, posebno ako kretanje planirate samo u mislima, bez stvarnog pomjeranja Robyja...",
+        'material' => "CodyRoby karte, ploča s poljima 5 × 5, dva piona i komadići papira za obilježavanje već posjećenih polja.",
+        'questions' => [
+            'content' =>
+
+                [
+                    1 => "P1. Da li je moguće da program koji Robyja vraća nazad na početnu tačku bude kraći (tj. da sadrži manje uputa) od odlaznog putovanja?",
+                ]
+        ]
+
+    ]
+
+    ,
+
+    'meeting-point' => [
+        'title' => "Tačka susreta",
+        'text' => "Ovaj put planiramo naše poteze prije nego što započnemo. Dva tima stavljaju karte na stol kako bi kreirale redoslijed uputa kojima će pomjerati svoje robote, ali nema pomjeranja dok jedan od igrača ne kaže \"Start!\". U tom trenutku programiranje završava i započinje radnja. Igrač koji bi rekao \"Start!\" pobjeđuje samo ako dva robota, svaki izvršavajući upute svog tima, završe na istom polju.",
+        'material' => "CodyRoby karte, ploča s poljima 5 × 5, dva piona.",
+        'questions' => [
+            'content' =>
+
+                [
+                    1 => "P1. Ako mislite da je moguće da se dva robota nikada ne sretnu, izmislite pravila igre koja pokrivaju sve moguće situacije.",
+                ]
+        ]
+
+    ],
+
+
+    'follow-the-music' => [
+        'title' => "Prati muziku",
+        'text' => "Kada se nizovi programskih uputa periodično ponavljaju, to je kao da imaju ritam. Ako svakoj uputi pridružimo zvuk, možemo Robyja usmjeravati muzikom. Upravo ćemo to učiniti ovaj put. Napravit ću za vas program koji koristi različite zvukove za predstavljanje različitih uputa, a vi ćete Robyja pomjerati po ploči slijedeći ove zvučne upute.",
+        'material' => "pored CodyRoby karata, ploče i piona, trebamo proizvesti tri različita zvuka. Koristio sam tri čaše napunjene različitim količinama vode, a šta ćete vi koristiti?",
+        'questions' => [
+            'content' =>
+
+                [
+                    1 => "P1. Pokušajte da pratite video i da se vodite zvukovima koje proizvode čaše, ne gledajući karte. Možete li prepoznati i izvršiti upute koje proizvode zvukovi?",
+                    2 => "P2. Odaberite tri zvuka koja ćete povezati s tri osnovne upute. Smislite niz zvukova koje biste mogli beskrajno ponavljati, a da Robyja nikada ne odvedete s ploče...",
+                ]
+        ]
+
+    ],
+
+
     'material2' => [
         "chequered-with-labels" => "ploča sa oznakama",
         "cards" => '24 karte "Idi naprijed", 8 karata "Okreni se lijevo" i 8 karata "Okreni se desno"',
-"larger-cards" => "Veće karte se preporučuju za verziju igre na podu",
-"video" => "Ovaj video također objašnjava kako se može igrati bez špila karata",
-"pieces-of-paper" => "Također su potrebna 24 komada papira za postavljanje na polja koja su već pređena",
-"card-alternative" => "Kao alternativu CodyRoby kartama, možete koristiti ikonice karata koje su dostupne ovdje",
-"small-drawings" => "Dodatak mogu biti mali crteži koji će pomoći u pričanju priče. Oni koji su korišteni u videu se nalaze ovdje",
-"rest-of-cards" => "Za ostatak koristimo karte od CodyRoby, CodyFeet ili CodyColour."
-],
+        "larger-cards" => "Veće karte se preporučuju za verziju igre na podu",
+        "video" => "Ovaj video također objašnjava kako se može igrati bez špila karata",
+        "pieces-of-paper" => "Također su potrebna 24 komada papira za postavljanje na polja koja su već pređena",
+        "card-alternative" => "Kao alternativu CodyRoby kartama, možete koristiti ikonice karata koje su dostupne ovdje",
+        "small-drawings" => "Dodatak mogu biti mali crteži koji će pomoći u pričanju priče. Oni koji su korišteni u videu se nalaze ovdje",
+        "rest-of-cards" => "Za ostatak koristimo karte od CodyRoby, CodyFeet ili CodyColour."
+    ],
 
 
-'catch-the-robot' => [
-    'title' => "Uhvati robota",
-    'text' => "Uhvati robota je takmičarska igra koja se igra na stolu ili na podu. Pobjeđuje onaj igrač koji uhvati robota iz protivničkog tima tako što stigne do njegovog polja na ploči. Nasumičnost karata za igranje zahtijeva od oba tima konstantno prilagođavanje njihovih strategija.",
-    'questions' => [
-        'content' =>
-            [
-                1 => 'P1 Ako se ružičasti pješak (Roby) nalazi na centralnom polju C3 usmjeren prema Sjeveru, a ružičasti tim ima 2 karte "Idi naprijed", 2 karte "Okreni se lijevo" i 1 kartu "Okreni se desno", na koja polja se može pomjeriti?',
-]
+    'catch-the-robot' => [
+        'title' => "Uhvati robota",
+        'text' => "Uhvati robota je takmičarska igra koja se igra na stolu ili na podu. Pobjeđuje onaj igrač koji uhvati robota iz protivničkog tima tako što stigne do njegovog polja na ploči. Nasumičnost karata za igranje zahtijeva od oba tima konstantno prilagođavanje njihovih strategija.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'P1 Ako se ružičasti pješak (Roby) nalazi na centralnom polju C3 usmjeren prema Sjeveru, a ružičasti tim ima 2 karte "Idi naprijed", 2 karte "Okreni se lijevo" i 1 kartu "Okreni se desno", na koja polja se može pomjeriti?',
+                ]
 
-]
+        ]
 
-],
+    ],
 
-'the-snake' => [
-    'title' => "Zmija",
-    'text' => "Zmija je vrsta pasijans igre koja se igra s CodyRoby kartama. Cilj igre je provesti zmiju kroz sva polja na ploči, a da pri tome ne ugrize svoj rep.",
-    'questions' => [
-        'content' =>
-            [
-                1 => "P1 Postoje li neke polazne tačke s kojih je nemoguće posjetiti sva polja, a pri tome ne ugristi rep zmije?",
-            ]
+    'the-snake' => [
+        'title' => "Zmija",
+        'text' => "Zmija je vrsta pasijans igre koja se igra s CodyRoby kartama. Cilj igre je provesti zmiju kroz sva polja na ploči, a da pri tome ne ugrize svoj rep.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1 Postoje li neke polazne tačke s kojih je nemoguće posjetiti sva polja, a pri tome ne ugristi rep zmije?",
+                ]
 
-    ]
+        ]
 
-],
+    ],
 
-'storytelling' => [
-    'title' => "Pričanje priča",
-    'text' => "Današnja tema je pričanje priča! Koristi uputstva od CodyRoby, otiske stopala od CodyFeet ili boje od CodyColour za vođenje pješaka preko ploče i pričanje priče. Razbacaj različite dijelove priče po cijeloj ploči.",
-    'questions' => [
-        'content' =>
-            [
-                1 => "P1 Koje sredstvo je najsvestranije za vođenje Robyja u pričanju priče?",
-                2 => "P2 Možete li postaviti dijelove priče koju želite ispričati na ploči na pozicijama s kojih je nemoguće pokupiti sve dijelove s CodyFeet?",
-            ]
+    'storytelling' => [
+        'title' => "Pričanje priča",
+        'text' => "Današnja tema je pričanje priča! Koristi uputstva od CodyRoby, otiske stopala od CodyFeet ili boje od CodyColour za vođenje pješaka preko ploče i pričanje priče. Razbacaj različite dijelove priče po cijeloj ploči.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1 Koje sredstvo je najsvestranije za vođenje Robyja u pričanju priče?",
+                    2 => "P2 Možete li postaviti dijelove priče koju želite ispričati na ploči na pozicijama s kojih je nemoguće pokupiti sve dijelove s CodyFeet?",
+                ]
 
-    ]
+        ]
 
-],
-
+    ],
 
 
     'texts' => [
         1 => '"Coding@Home" su kratki video snimci sa uradi sam materijalima, slagalicama, zanimljivim igrama i izazovima kodiranja za svakodnevnu upotrebu u kući kao i u školi. Nije vam potrebno nikakvo predznanje u kodiranju niti su vam potrebni blo kakvi elektronski uređaji da bi uradili aktivnosti. Aktivnosti će podstaknuti računarsko razmišljanje i njegovati vještine učenika, roditelja i učitelja u kući ili u školi.',
-        2 => 'Serija Coding@Home EU Sedmice Kodiranja se zasniva na <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> inicijativi Urbino Univerziteta i CodeMOCCnet Udruženja u saradnji sa RAI Cultura. Aktivnosti predstavlja Alessandro Bogliolo profesor Informacionih Procesnih Sistema na Urbino Univerzitetu, <a href="/ambassadors?country_iso=IT" target="_blank">Italijanski ambasador EU Sedmice Kodiranja</a> i koordinator svim ambasadorima kao i članovima Upravnog odbora Digital Skills and Jobs Koalicije.',
-        3 => 'Ako vas interesuje više o unplugged aktivnostima, ili aktivnostima u različitim programskim jezicima, robotici, micro:bit, itd., pogledajte <a href="/training">EU Sedmica Kodiranja “Learning Bits”</a> sa video vježbama i planovim lekcija za osnovne i srednje škole. Takođe pogledajte stranicu sa resursima EU Sedmice Kodiranja za <a href="/resources/learn">učenike</a> i <a href="/resources/teach">učitelje</a>. '
+        2 => 'Serija Coding@Home EU Sedmice Kodiranja se zasniva na <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">"Coding in famiglia”</a> inicijativi Urbino Univerziteta i CodeMOCCnet Udruženja u saradnji sa RAI Cultura. Aktivnosti predstavlja Alessandro Bogliolo profesor Informacionih Procesnih Sistema na Urbino Univerzitetu, <a href="/ambassadors?country_iso=IT" target="_blank">Italijanski ambasador EU Sedmice Kodiranja</a> i koordinator svim ambasadorima kao i članovima Upravnog odbora Digital Skills and Jobs Koalicije.',
+        3 => 'Ako vas interesuje više o unplugged aktivnostima, ili aktivnostima u različitim programskim jezicima, robotici, micro:bit, itd., pogledajte <a href="/training">EU Sedmica Kodiranja "Learning Bits”</a> sa video vježbama i planovim lekcija za osnovne i srednje škole. Takođe pogledajte stranicu sa resursima EU Sedmice Kodiranja za <a href="/resources/learn">učenike</a> i <a href="/resources/teach">učitelje</a>. '
     ]
 ];

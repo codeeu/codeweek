@@ -205,6 +205,63 @@ return [
 
     ],
 
+    'two-snakes' => [
+        'title' => "Dva hadíky",
+        'text' => "Pomocou kariet CodyRoby sa dva hadíky pohybujú po hracej ploche a snažia sa zablokovať pohyb toho druhého. Základné pravidlo je veľmi jednoduché. Hadík sa nemôže vrátiť na políčko, na ktorom už bol. Vyhrá hadík, ktorý sa dokáže voľne pohybovať najdlhšie.",
+        'material' => "Karty CodyRoby, šachovnicová hracia plocha (5 × 5), dve figúrky a kúsky papiera na označenie navštívených políčok.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. otázka: Ak v pôvodnom usporiadaní zobrazenom vo videu by si ani jeden z hráčov nepotiahol žltú kartu a nepohli by sa doľava, ktoré karty by si mali potiahnuť?",
+                ]
+
+        ]
+
+    ],
+
+    'round-trip' => [
+        'title' => "Cesta tam a späť",
+        'text' => "Hráči sa striedajú. Prvý hráč naprogramuje cestu tam a druhý hráč sa musí s Robym vrátiť na začiatočné políčko. Vyzerá to jednoducho, ale nie je to tak, najmä ak jednotlivé ťahy plánujete iba v hlave a Robym nehýbete...",
+        'material' => "Karty CodyRoby, šachovnicová hracia plocha (5 × 5), dve figúrky a kúsky papiera na označenie navštívených políčok.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. otázka: Je možné, aby bol program, pomocou ktorého sa Roby vráti na začiatočné políčko, kratší (tzn. aby bol zložený z menšieho množstva inštrukcií) ako program cesty tam?",
+                ]
+
+        ]
+
+    ],
+
+    'meeting-point' => [
+        'title' => "Stretávka",
+        'text' => "V tejto hre naplánujeme ťahy skôr, ako začneme hýbať robotmi. Obaja hráči vyložia karty na stôl a vytvoria rad inštrukcií, pomocou ktorých sa budú ich roboty pohybovať. Nič sa však v skutočnosti nehýbe, až kým jeden z hráčov nepovie „Štart“. Vtedy sa končí programovanie a začína sa pohybovať robotmi. Hráč, ktorý povedal „Štart“, hru vyhrá, iba ak sa roboty, z ktorých každý vykonáva svoj program, stretnú na rovnakom políčku.",
+        'material' => "Karty CodyRoby, šachovnicová hracia plocha (5 × 5), dve figúrky.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. otázka: Ak si myslíte, že je možné vyhnúť sa stretnutie dvoch robotov, vytvorte pravidlá hry, ktoré pokrývajú všetky možné situácie.",
+                ]
+
+        ]
+
+    ],
+
+    'follow-the-music' => [
+        'title' => "Nasleduj hudbu",
+        'text' => "Ak sa programovacie inštrukcie pravidelne opakujú, vytvára to dojem rytmu. Ak priradíme ku každej inštrukcii zvuk, môžeme Robyho ovládať pomocou hudby. Presne to teraz urobíme. Vytvorím program pomocou rôznych zvukov, ktoré budú predstavovať jednotlivé inštrukcie, a vy budete pohybovať Robym po hracej ploche podľa týchto zvukových inštrukcií.",
+        'material' => "Okrem kariet CodyRoby, šachovnicovej hracej plochy a figúrok budeme potrebovať aj tri rôzne zvuky. Použil som tri poháre naplnené rôznym množstvom vody. Čo sa rozhodnete použiť vy?",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. otázka: Postupujte podľa videa a nechajte sa viesť zvukmi pohárov bez toho, aby ste sa pozerali na karty. Dokážete rozoznať a vykonať zvukové inštrukcie?",
+                    2 => "2. otázka: Vyberte si tri zvuky a priraďte ich k trom základným inštrukciám. Vymyslite zvukovú postupnosť, ktorú môžete opakovať do nekonečna bez toho, aby sa Roby dostal mimo hraciu plochu...",
+                ]
+
+        ]
+
+    ],
+
 
     'texts' => [
         1 => 'Coding@Home je zbierka krátkych videí obsahujúcich materiály typu „urob si sám“, hlavolamy, pútavé hry a programátorské úlohy na každodenné použitie doma či v škole. Na vykonávanie aktivít nepotrebujete žiadne znalosti v oblasti programovania ani elektronické zariadenia. Tieto aktivity stimulujú výpočtové myslenie a cibria zručnosti žiakov, rodičov a učiteľov doma aj v škole.',
