@@ -205,6 +205,64 @@ return [
 
     ],
 
+    'two-snakes' => [
+        'title' => "Divas čūskas",
+        'text' => "Izmantojot “CodyRoby” kārtis, divas čūskas jāpārvieto pa laukumu tā, lai viena čūska kavētu otras čūskas pārvietošanos. Pamatnoteikums ir ļoti vienkāršs: nevari atgriezties lauciņā, kurā čūska jau ir bijusi. Uzvar tā čūska, kas spēj brīvi pārvietoties visilgāk.",
+        'material' => '“CodyRoby” kārtis, rūtiņu laukums 5 × 5, divi spēļu kauliņi un papīra gabaliņi izvietošanai jau apmeklētajos lauciņos.',
+ 'questions' => [
+ 'content' =>
+            [
+ 1 => "1. jautājums. Ja videoklipā redzamajā sākotnējā konfigurācijā neviens no spēlētājiem neizvelk dzelteno kārti pagriezienam pa kreisi, kuru kārti viņiem būtu jācer izvilkt?",
+ ]
+
+    ]
+
+],
+
+'round-trip' => [
+ 'title' => "Ceļojums turp un atpakaļ",
+ 'text' => "Komandas izdara gājienus pēc kārtas. Pirmā komanda plāno turpceļu, bet otrai komandai Robijs ir jāatved atpakaļ sākumpunktā. Tas šķiet viegli, bet patiesībā nav, jo īpaši tad, ja kustības plāno tikai savā prātā, nepārvietojot Robiju...",
+ 'material' => '“CodyRoby” kārtis, rūtiņu laukums 5 × 5, divi spēļu kauliņi un papīra gabaliņi izvietošanai jau apmeklētajos lauciņos.',
+ 'questions' => [
+    'content' =>
+        [
+            1 => "1. jautājums. Vai ir iespējams, ka programma, ar kuru Robiju aizved atpakaļ sākumpunktā, ir īsāka (t. i., tajā ir mazāk norādījumu) nekā turpceļa programma?",
+        ]
+
+]
+
+],
+
+'meeting-point' => [
+    'title' => "Tikšanās vieta",
+    'text' => "Šoreiz gājienus izplānosim pirms spēles sākšanas. Abas komandas liek kārtis uz galda, lai secīgi izvietotu norādījumus, kas pārvietos viņu robotus, taču nekāda kustība nenotiek, līdz kāds no spēlētājiem nepasaka “Starts!”. Šajā brīdī programmēšana beidzas un sākas darbība. Spēlētājs, kurš teicis “Starts!”, uzvar tikai tad, ja abi roboti, katrs izpildot savas komandas norādījumus, nonāk vienā un tajā pašā lauciņā.",
+    'material' => '“CodyRoby” kārtis, 5 × 5 rūtiņu laukums, divi spēļu kauliņi.',
+ 'questions' => [
+ 'content' =>
+            [
+ 1 => "1. jautājums. Ja tu domā, ka abiem robotiem ir iespējams nekad nesatikties, izdomā spēles noteikumus, kas aptver visas iespējamās situācijas.",
+ ]
+
+    ]
+
+],
+
+'follow-the-music' => [
+ 'title' => "Seko mūzikai",
+ 'text' => "Programmēšanas norādījumu secības periodiskā atkārtošanās atgādina mūzikas ritmu. Katru norādījumu saistot ar attiecīgu skaņu, mēs varam vadīt Robiju mūzikas pavadījumā. Tieši to mēs šoreiz darīsim. Es tev izveidošu programmu, izmantojot dažādas skaņas dažādu norādījumu atveidošanai, un tu pārvietosi Robiju pa laukumu, izpildot šos norādījumus, kas balstīti uz skaņu.",
+ 'material' => "Papildus “CodyRoby” kārtīm, rūtiņu laukumam un spēļu kauliņam mums ir jārada trīs dažādas skaņas. Es izmantoju trīs glāzes, kas piepildītas ar atšķirīgu ūdens daudzumu. Ko tu izmantosi?",
+ 'questions' => [
+ 'content' =>
+            [
+ 1 => "1. jautājums. Mēģini sekot videoklipam un vadīties pēc glāžu radītajām skaņām, neskatoties uz kārtīm. Vai vari atpazīt un izpildīt skaņu veidā sniegtos norādījumus?",
+ 2 => "2. jautājums. Izvēlies trīs skaņas, ko sasaistīt ar trim pamata norādījumiem. Izveido skaņu secību, kuru tu varētu atkārtot bezgalīgi, nenovirzot Robiju no laukuma...",
+ ]
+
+    ]
+
+],
+
+
 
     'texts' => [
         1 => 'Coding@Home ir īsu videoklipu, patstāvīgi veicamu uzdevumu, mīklu, aizraujošu spēļu un programmēšanas izaicinājumu kopums ikdienas lietošanai ģimenē un skolā. Jums nav vajadzīgas programmēšanas priekšzināšanas vai elektroniskas ierīces, lai veiktu šīs nodarbības. Tās stimulēs skaitļošanas tipa domāšanu un uzlabos prasmes skolēniem, vecākiem un skolotājiem gan mājās, gan skolā.',

@@ -153,6 +153,64 @@ return [
 
     ],
 
+    'two-snakes' => [
+        'title' => "De to slanger",
+        'text' => "Brug CodyRoby-kortene til at få to slanger til at bevæge sig rundt på brættet i forsøg på at hindre hinandens bevægelser. Grundreglen er meget enkel: du kan ikke vende tilbage til et felt, der allerede har været en slange på. Vinderen er den slange, der kan bevæge sig frit omkring i længst tid.",
+        'material' => "CodyRoby-kort, en 5 × 5 spilleplade, to brikker samt papirstykker, der skal bruges til at markere de felter, en slange allerede har været på.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "SP1. I den første konfiguration, der vises i videoen: Hvis de to spillere ikke trækker gule kort for at dreje til venstre, hvilke kort bør de så håbe på at trække?",
+                ]
+
+        ]
+
+    ],
+
+    'round-trip' => [
+        'title' => "Rundrejse",
+        'text' => "Holdene trækker efter tur. Det første hold programmerer udrejsen, mens det andet skal bringe Roby tilbage til startpunktet. Det virker nemt, men det er det ikke, især hvis man kun planlægger trækkene i tankerne uden faktisk at flytte Roby ...",
+        'material' => "CodyRoby-kort, en 5 × 5 spilleplade, to brikker samt papirstykker, der skal bruges til at markere de felter, en slange allerede har været på.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "SP1. Er det muligt, at det program, der bringer Roby tilbage til startpunktet, kan være kortere (dvs. sammensat af færre kommandoer) end programmet for udrejsen?",
+                ]
+
+        ]
+
+    ],
+
+    'meeting-point' => [
+        'title' => "Mødestedet",
+        'text' => 'Denne gang planlægger vi vores træk, før vi starter. De to hold placerer kort på bordet for at skabe en sekvens af kommandoer, der skal flytte deres respektive robotter, men ingen foretager nogen træk, før en af spillerne siger "Start!". Derefter stopper programmeringen, og holdene begynder at udføre deres træk. Den spiller, som sagde "Start!", vinder kun, hvis de to robotter, som hver udfører deres holds kommandoer, ender på det samme felt.',
+ 'material' => "CodyRoby-kort, en 5 × 5 spilleplade, to brikker.",
+ 'questions' => [
+    'content' =>
+        [
+            1 => "SP1. Hvis du mener, det er muligt for de to robotter aldrig at mødes, skal du udvikle spilleregler, der dækker alle mulige situationer.",
+        ]
+
+]
+
+],
+
+'follow-the-music' => [
+    'title' => "Følg musikken",
+    'text' => "Når sekvenser af programmeringskommandoer gentager sig selv periodisk, lyder det, som om de har en rytme. Hvis vi forbinder en lyd med hver kommando, kan vi styre Roby ved hjælp af musik. Det er netop, hvad vi skal gøre denne gang. Jeg laver et program for jer med forskellige lyde, der repræsenterer forskellige kommandoer, og I skal flytte Roby på spillepladen ved at følge disse lydbaserede kommandoer.",
+    'material' => "Ud over CodyRoby-kortene, spillepladen og en brik skal vi lave tre forskellige lyde. Jeg brugte tre glas, der indeholdt forskellige mængder vand. Hvad vil du bruge?",
+    'questions' => [
+        'content' =>
+            [
+                1 => "SP1. Prøv at følge videoen og lade dig styre af de lyde, som glassene laver, uden at kigge på kortene. Kan du genkende og udføre de kommandoer, som lydene laver?",
+                2 => "SP2. Vælg tre lyde, som du kan forbinde med de tre grundlæggende kommandoer. Lav en sekvens af lyde, som du kan gentage i det uendelige uden at føre Roby ud af spillepladen ...",
+            ]
+
+    ]
+
+],
+
+
     'material2' => [
         "chequered-with-labels" => 'Bræt med felter og etiketter 24 "gå fremad"-kort',
 "cards" => '8 "drej til venstre"-kort og 8 "drej til højre"-kort',

@@ -147,7 +147,7 @@ return [
                     1 => '1. pitanje Kojim bi se slijedom uputa dovelo turista do kipa Rafaela u prvom primjeru prikazanom u videozapisu?',
                     2 => '2. pitanje Kojim bi se slijedom uputa dovelo turista do pročelja Torricini Duždeve palače u drugom primjeru prikazanom u videozapisu?',
                     3 => '3. pitanje Možete li smisliti zabavan način za vježbanje svaki put kada jedan od dva tima odabere kartu koju će dodati u program? Smislite rješenje promišljanjem štafete prikazane u videozapisu',
- ]
+                ]
 
         ]
 
@@ -155,7 +155,7 @@ return [
 
     'material2' => [
         "chequered-with-labels" => "šahovska ploča s oznakama",
-        "cards" => "24 karte „idi naprijed”, 8 karata „skreni ulijevo” i 8 karata „skreni udesno”",
+        "cards" => '24 karte "idi naprijed", 8 karata "skreni ulijevo" i 8 karata "skreni udesno"',
         "larger-cards" => "Za verziju na podu preporučuju se veće karte",
         "video" => "U videozapisu je objašnjeno i kako igrati bez snopa karata",
         "pieces-of-paper" => "Potrebna su i 24 papirića za pokrivanje već posjećenih polja",
@@ -171,7 +171,7 @@ return [
         'questions' => [
             'content' =>
                 [
-                    1 => "Pitanje 1. Ako je ružičasti pijun (Roby) na središnjem polju C3 okrenut prema sjeveru, a ružičasti tim ima dvije karte „idi naprijed”, dvije karte „skreni ulijevo” i jednu kartu „skreni udesno”, do kojih polja može doći?",
+                    1 => 'Pitanje 1. Ako je ružičasti pijun (Roby) na središnjem polju C3 okrenut prema sjeveru, a ružičasti tim ima dvije karte "idi naprijed", dvije karte "skreni ulijevo" i jednu kartu "skreni udesno", do kojih polja može doći?',
                 ]
 
         ]
@@ -205,11 +205,67 @@ return [
 
     ],
 
+    'two-snakes' => [
+        'title' => "Dvije zmije",
+        'text' => 'S pomoću karata CodyRoby dvije zmije kreću se po ploči pokušavajući si međusobno ograničiti kretanje. Osnovno pravilo vrlo je jednostavno: ne možete se vratiti na polje koje je zmija već posjetila. Pobjednik je zmija koja se najduže može slobodno kretati.',
+        'material' => 'Karte CodyRoby, šahovska ploča 5 × 5, dvije figurice i komadići papira za označivanje već posjećenih polja.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => '1. pitanje Na početku videozapisa, ako dva igrača ne izvuku žute karte za skretanje ulijevo, koje bi im karte najviše odgovarale?',
+                ]
+
+        ]
+
+    ],
+
+    'round-trip' => [
+        'title' => "Povratno putovanje",
+        'text' => "Timovi se izmjenjuju . Prvi planira polazno putovanje, a drugi mora dovesti Robyja natrag na početnu točku . Čini se jednostavnim, ali nije, osobito ako poteze planirate samo u glavi, bez pomicanja Robyja...",
+    'material' => 'Karte CodyRoby, šahovska ploča 5 × 5, dvije figurice i komadići papira za označivanje već posjećenih polja . ',
+    'questions' => [
+    'content' =>
+        [
+            1 => '1. pitanje Može li program vratiti Robyja natrag na početnu točku kraćom putanjom(tj . putanjom koja se sastoji od manje naredbi) od polazne ? ',
+            ]
+
+    ]
+
+],
+
+'meeting-point' => [
+    'title' => "Sastajalište",
+    'text' => 'Ovaj put planiramo poteze prije početka . Dva tima stavljaju karte na stol da bi izradili niz naredbi prema kojima će se njihovi roboti kretati, ali nitko se ne kreće dok jedan od igrača ne kaže: "Start!" U tom trenutku programiranje završava i počinje akcija . Igrač koji kaže: "Start!" pobjeđuje samo ako dva robota, od kojih svaki izvršava naredbe svog tima, završe na istom polju . ',
+    'material' => "Karte CodyRoby, šahovska ploča 5 × 5, dvije figurice.",
+    'questions' => [
+    'content' =>
+        [
+            1 => "1. pitanje Ako mislite da je moguće da se dva robota nikada ne susretnu, izmislite pravila igre koja pokrivaju sve moguće situacije . ",
+            ]
+
+    ]
+
+],
+
+'follow-the-music' => [
+    'title' => "Slijedi glazbu",
+    'text' => "Kada se nizovi programskih naredbi periodički ponavljaju, to je kao da imaju ritam . Ako svakoj naredbi dodijelimo zvuk, možemo voditi Robyja s pomoću glazbe . Upravo to ćemo i raditi ovaj put . Izradit ću program za vas s pomoću različitih zvukova koji predstavljaju različite naredbe, a vi ćete pomicati Robyja po ploči slijedeći te naredbe na temelju zvuka . ",
+    'material' => "Osim karata CodyRoby, šahovske ploče i figurica, trebamo proizvesti i tri različita zvuka . Upotrijebio sam tri čaše napunjene različitim količinama vode . Što ćete vi upotrijebiti ? ",
+    'questions' => [
+    'content' =>
+        [
+            1 => "1. pitanje Pokušajte slijediti videozapis i vodite se zvukovima koje čaše proizvode, ali nemojte gledati u karte . Možete li prepoznati i izvršiti naredbe koje ti zvukovi predstavljaju ? ",
+                2 => "2. pitanje Odaberite tri zvuka koja ćete povezati s tri osnovne naredbe . Izmislite niz zvukova koje biste mogli beskonačno ponavljati, a da nikada ne izvedete Robyja izvan ploče...",
+            ]
+
+    ]
+
+],
 
 
     'texts' => [
-        1 => 'Coding@Home je zbirka kratkih video zapisa, materijala za samoučenje, zadataka, igara i izazova za programiranje za svakodnevnu upotrebu u obitelji i školi. Za te aktivnosti ne trebate nikakvo prethodno znanje niti elektroničke uređaje. Aktivnosti će poticati računalno razmišljanje i njegovat će vještine učenika, roditelja i učitelja kod kuće i u školi.',
-        2 => 'Ciklus Coding@Home Europskog tjedna programiranja temelji se na inicijativi <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a> Sveučilišta u Urbinu i Udruženja CodeMOOCnet u suradnji s portalom Rai Cultura. Alessandro Bogliolo profesor je koji na Sveučilištu u Urbinu poučava sustave za obradu informacija, <a href="/ambassadors?country_iso=IT" target="_blank">ambasador je Europskog tjedna programiranja u Italiji</a>, koordinator je svih ambasadora i član je Upravnog odbora Koalicije za digitalne vještine i radna mjesta. ',
-        3 => 'Ako želite više aktivnosti bez struje ili aktivnosti u različitim programskim jezicima, robotici, micro:bit itd., pogledajte <a href="/training">“Materijale za učenje” u Europskom tjednu programiranja</a> s video tečajevima i nastavnim planovima za osnovne i srednje škole. Bacite pogled i na stranicu s materijalima za Europski tjedan programiranja za <a href="/resources/learn">učenike</a> i <a href="/resources/teach">učitelje</a>. '
-    ]
+    1 => 'Coding@Home je zbirka kratkih video zapisa, materijala za samoučenje, zadataka, igara i izazova za programiranje za svakodnevnu upotrebu u obitelji i školi. Za te aktivnosti ne trebate nikakvo prethodno znanje niti elektroničke uređaje. Aktivnosti će poticati računalno razmišljanje i njegovat će vještine učenika, roditelja i učitelja kod kuće i u školi.',
+    2 => 'Ciklus Coding@Home Europskog tjedna programiranja temelji se na inicijativi <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia"</a> Sveučilišta u Urbinu i Udruženja CodeMOOCnet u suradnji s portalom Rai Cultura. Alessandro Bogliolo profesor je koji na Sveučilištu u Urbinu poučava sustave za obradu informacija, <a href="/ambassadors?country_iso=IT" target="_blank">ambasador je Europskog tjedna programiranja u Italiji</a>, koordinator je svih ambasadora i član je Upravnog odbora Koalicije za digitalne vještine i radna mjesta. ',
+    3 => 'Ako želite više aktivnosti bez struje ili aktivnosti u različitim programskim jezicima, robotici, micro:bit itd., pogledajte <a href="/training">“Materijale za učenje" u Europskom tjednu programiranja</a> s video tečajevima i nastavnim planovima za osnovne i srednje škole. Bacite pogled i na stranicu s materijalima za Europski tjedan programiranja za <a href="/resources/learn">učenike</a> i <a href="/resources/teach">učitelje</a>. '
+]
 ];

@@ -203,6 +203,64 @@ return [
 
     ],
 
+    'two-snakes' => [
+        'title' => "Kaks ussi",
+        'text' => 'Kaks „ussi“ liiguvad CodyRoby kaarte kasutades mängulaual ringi ja püüavad teineteise liikumist takistada. Põhireegel on väga lihtne: väljale, kus üks „ussidest“ juba olnud on, enam uuesti astuda ei saa. Mängu võidab „uss“, kellel õnnestub kõige kauem vabalt ringi liikuda.',
+        'material' => "CodyRoby kaardid, 5 × 5 ruuduga mängulaud, kaks mängunuppu ja väikesed paberitükid külastatud väljade märkimiseks.",
+ 'questions' => [
+ 'content' =>
+            [
+ 1 => "K1. Kui mängijad ei saa videos näidatud mängu algseisus vasakule pööramist tähistavaid kollaseid kaarte, siis missuguste kaartide tõmbamist võiksid nad loota?",
+ ]
+
+    ]
+
+],
+
+'round-trip' => [
+ 'title' => "Edasi-tagasi",
+ 'text' => "Mängitakse kordamööda. Esimene mängija kodeerib Roby mineku teekonna ja teine peab ta algpunkti tagasi tooma. Tundub lihtne, aga pole seda. Eriti siis, kui planeerida Roby liikumist vaid mõttes, ilma teda tegelikult liigutamata ...",
+ 'material' => "CodyRoby kaardid, 5 × 5 ruuduga mängulaud, kaks mängunuppu ja väikesed paberitükid külastatud väljade märkimiseks.",
+ 'questions' => [
+ 'content' =>
+            [
+ 1 => "K1. Kas tagasitulekukood võib olla minekukoodist lühem (st koosneda vähematest juhiskaartidest)?",
+ ]
+
+    ]
+
+],
+
+'meeting-point' => [
+ 'title' => "Kohtumispaik",
+ 'text' => "Selles mängus kavandatakse liikumine esialgu mõttes ette ja seejärel hakatakse nuppe liigutama. Mängijad loovad kaarte lauale asetades oma robotitele liikumisjuhised, kuid liikuma hakkavad nad alles siis, kui üks mängijatest ütleb „start“. Siis lõpeb programmeerimine ja algab liikumine. Mängija, kes ütles „start“, võidab ainult juhul, kui robotid oma juhiseid järgides lõpuks ühel ja samal väljal kokku saavad.",
+ 'material' => "CodyRoby kaardid, 5 × 5 ruuduga mängulaud, kaks mängunuppu.",
+ 'questions' => [
+ 'content' =>
+            [
+ 1 => "K1. Kui sinu meelest on võimalik, et robotid kunagi ei kohtugi, mõtle välja kõikvõimalikke olukordi hõlmavad mängureeglid.",
+ ]
+
+    ]
+
+],
+
+'follow-the-music' => [
+ 'title' => "Muusika taktis",
+ 'text' => "Kui koodis on teatud aja tagant korduvaid jadasid, võime seda tajuda rütmilisena. Kui igale juhisele kindel heli anda, saab Robyt muusikaga juhendada. Täpselt seda me sel korral tegema hakkamegi. Mina kirjutan ees koodi, kasutades juhiseid tähistavaid helisid, ja sinul tuleb heli järgi Robyt mängulaual liigutada.",
+ 'material' => "Lisaks CodyRoby kaartidele, mängulauale ja -nuppudele on vaja kolme eristatavat heli. Mina kasutan kolme klaasi, kus on erinev kogus vett, aga sina?",
+ 'questions' => [
+ 'content' =>
+            [
+ 1 => "K1. Pane video mängima ja püüa juhiseid mõista vaid klaaside tekitatud heli järgi kaarte vaatamata. Kas tunned helid ära ja suudad juhised täide viia?",
+ 2 => "K2. Anna igale juhisele kindel heli. Mõtle välja helijada, mida saaks lõputult korrata, ilma et Roby ruudustikust välja satuks ...",
+ ]
+
+    ]
+
+],
+
+
 
     'texts' => [
         1 => 'Coding@Home on lühikeste videote, isevalmistatavate materjalide, nuputusülesannete, mängude ja põnevate programmeerimisülesannete kogumik igapäevaseks kasutamiseks nii perekonnas kui ka koolis. Nendeks tegevusteks ei vaja te eelnevaid teadmisi ega elektroonilisi seadmeid. Tegevused stimuleerivad arvutuslikku mõtlemist ning arendavad õpilaste, vanemate ja õpetajate oskusi kodus ja koolis.',

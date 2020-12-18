@@ -206,8 +206,66 @@ return [
 
     ],
 
+    'two-snakes' => [
+        'title' => "Dvi gyvatės",
+        'text' => "Naudojant „CodyRoby“ korteles lentoje juda ir viena kitai užkirsti kelią bando dvi gyvatės. Pagrindinė taisyklė labai paprasta: negalite įžengti į langelį, kuriame jau apsilankė gyvatė. Nugali ta gyvatė, kuriai pavyksta ilgiausiai laisvai judėti.",
+        'material' => "„CodyRoby“ kortelės, 5 x 5 langelių lenta, dvi figūrėlės ir popieriaus lapeliai, kuriais bus žymimi jau aplankyti langeliai.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "K1 Jei pirmajame vaizdo įraše rodomame scenarijuje nė vienas žaidėjas neištrauks geltonos kortelės, leidžiančios pasukti į kairę, kokias korteles jie turėtų tikėtis ištraukti?",
+                ]
 
-    
+        ]
+
+    ],
+
+    'round-trip' => [
+        'title' => "Kelionė į abi puses",
+        'text' => "Komandos žaidžia paeiliui. Pirmoji planuoja kelionę į priekį, o antroji turi grąžinti Robį į pradžios tašką. Atrodo, paprasta, bet taip nėra, ypač jei ėjimus planuoji tik mintyse, o fiziškai Robis nėra judinamas...",
+        'material' => "„CodyRoby“ kortelės, 5 x 5 langelių lenta, dvi figūrėlės ir popieriaus lapeliai, kuriais bus žymimi jau aplankyti langeliai.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "K1 Ar Robį į pradinį tašką grąžinanti programa gali būti trumpesnė (t. y. sudaryta iš mažiau nurodymų) nei kelionės į priekį programa?",
+                ]
+
+        ]
+
+    ],
+
+    'meeting-point' => [
+        'title' => "Susitikimo vieta",
+        'text' => "Šį kartą savo ėjimus suplanuojame prieš pradėdami judėti. Abi komandos, dėdamos korteles ant stalo, kuria nurodymų, pagal kuriuos judės jų robotai, seką, bet niekas nepradeda judėti, kol vienas iš žaidėjų nepasako„Startas!“. Tą akimirką programavimas baigiamas ir prasideda veiksmas. Žaidėjas, kuris ištarė „Startas!“, laimi tik tuo atveju, jei abu savo komandų nurodymus vykdantys robotai atsiduria tame pačiame langelyje.",
+        'material' => "„CodyRoby“ kortelės, 5 × 5 langelių lenta, dvi figūrėlės.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "K1 Jei manote, kad įmanoma dviem robotams niekada nesusitikti, sukurkite žaidimo taisykles, kurios apimtų visas įmanomas situacijas.",
+                ]
+
+        ]
+
+    ],
+
+    'follow-the-music' => [
+        'title' => "Sekite muziką",
+        'text' => "Kai tam tikrų programavimo nurodymų sekos periodiškai kartojasi, atrodo, tarsi jos turėtų ritmą. Jei kiekvieną nurodymą pakeistume garsu, Robį galėtume valdyti muzikuodami. Būtent tai ir padarysime šį kartą. Aš sukursiu programą, kurioje skirtingi nurodymai bus išreikšti skirtingais garsais, o jūs pagal šiuos garsinius nurodymus darysite Robio ėjimus lentoje.",
+        'material' => "Be „CodyRoby“ kortelių, langelių lentos ir figūrėlės, mums dar reikės trijų skirtingų garsų. Aš panaudojau tris stiklines, į kurias įpiltas nevienodas kiekis vandens, o ką naudosite jūs?",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "K1 Pasistenkite vadovautis vaizdo įrašu ir stiklinių skleidžiamus garsus sekti nežiūrėdami į korteles. Ar atpažįstate ir galite vykdyti nurodymus pagal garsus?",
+                    2 => "K2. Pasirinkite tris garsus, kuriais pakeisite tris pagrindinius nurodymus. Sukurkite garsų seką, kurią galėtumėte nepertraukiamai kartoti ir Robis niekada neišeitų iš lentos...",
+                ]
+
+        ]
+
+    ],
+
+
+
+
 
     'texts' => [
         1 => ' „Coding@Home“ – tai trumpų vaizdo įrašų, „pasidaryk pats“ reikmenų, galvosūkių, žaidimų ir programavimo iššūkių rinkinys, tinkantis kasdien naudoti namuose ir mokykloje. Norint mėgautis šiais užsiėmimais, nebūtina turėti jokių ankstesnių žinių ar elektroninių prietaisų. Užsiėmimai skirti ugdyti informatinį mąstymą ir lavinti mokinių, jų tėvų ir mokytojų žinias tiek namų aplinkoje, tiek mokykloje.',

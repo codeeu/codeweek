@@ -205,6 +205,64 @@ return [
 
     ],
 
+    'two-snakes' => [
+        'title' => "Kači",
+        'text' => "Z uporabo kart CodyRoby se kači premikata po igralni plošči in, pri tem poskušata ovirati druga drugo. Osnovno pravilo je zelo preprosto: ne morete se vrniti na polje, ki ga je kača že obiskala. Zmaga kača, ki se lahko najdlje prosto premika naokrog.",
+        'material' => "Karte CodyRoby, igralna plošča 5 × 5, figurici in koščki papirja za označevanje že obiskanih polj.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "V1. Če pri začetni postavitvi, prikazani v videoposnetku, igralca ne izvlečeta rumenih kart za obrat na levo, kateri karti bi morala izvleči?",
+                ]
+
+        ]
+
+    ],
+
+    'round-trip' => [
+        'title' => "Tja in nazaj",
+        'text' => "Ekipi se izmenjujeta. Prva začrta odhodno potovanje, druga pa mora Robyja pripeljati nazaj na začetni položaj. Zdi se preprosto, vendar ni, zlasti če poteze načrtujete samo v glavi, ne da bi dejansko premikali Robyja ...",
+        'material' => "Karte CodyRoby, igralna plošča 5 × 5, figurici in koščki papirja za označevanje že obiskanih polj.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "V1. Ali je lahko program, ki pripelje Robyja nazaj na začetni položaj, krajši (tj. sestavljen iz manj ukazov) kot program za odhodno potovanje?",
+                ]
+
+        ]
+
+    ],
+
+    'meeting-point' => [
+        'title' => "Točka srečanja",
+        'text' => "Tokrat svoje poteze načrtujemo, še preden začnemo. Ekipi razporedita karte po mizi, da ustvarita niz ukazov, s katerimi bosta premikali svojega robota, vendar ga začneta premikati šele, ko eden od igralcev reče „Start!“ V tem trenutku se programiranje konča in začne se akcija. Igralec, ki je rekel „Start!“, zmaga samo, če robota, ki izvajata ukaze svojih ekip, končata na istem polju.",
+        'material' => "Karte CodyRoby, igralna plošča 5 × 5, figurici.",
+ 'questions' => [
+ 'content' =>
+            [
+ 1 => "V1. Če je po vašem mnenju mogoče, da se robota nikoli ne srečata, si izmislite pravila igre, ki bodo zajela vse mogoče položaje.",
+ ]
+
+    ]
+
+],
+
+'follow-the-music' => [
+ 'title' => "Sledi glasbi",
+ 'text' => "Kadar se zaporedja programskih ukazov od časa do časa ponovijo, se zdi, kot da imajo ritem. Če zvok povežemo s posameznim ukazom, lahko Robyja usmerjamo z glasbo. Točno to bomo storili tokrat. Za vas bom ustvaril program, pri čemer bom uporabil različne zvoke, ki bodo predstavljali različne ukaze, vi pa boste Robyja premikali po igralni plošči z upoštevanjem teh zvočnih ukazov.",
+ 'material' => "Poleg tega, da potrebujemo karte CodyRoby, igralno ploščo in figurico, moramo ustvariti tri različne zvoke. Jaz sem uporabil tri kozarce, v katerih je različna količina vode. Kaj pa boste uporabili vi?",
+ 'questions' => [
+ 'content' =>
+            [
+ 1 => "V1. Poskusite slediti videoposnetku, pri tem pa naj vas vodijo zvoki kozarcev, ne da bi gledali karte. Ali lahko prepoznate in izvedete ukaze, ki jih ustvarjajo zvoki?",
+ 2 => "V2. Izberite tri zvoke in jih povežite s tremi osnovnimi ukazi. Izmislite si zaporedje zvokov, ki bi jih lahko stalno ponavljali, ne da bi Roby zašel z igralne plošče ...",
+ ]
+
+    ]
+
+],
+
+
 
 
     'texts' => [

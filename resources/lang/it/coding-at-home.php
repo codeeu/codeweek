@@ -205,6 +205,63 @@ return [
 
 ],
 
+    'two-snakes' => [
+        'title' => "I due serpenti",
+        'text' => "Usando le carte CodyRoby, due serpenti si spostano sulla scacchiera e ciascuno di loro cerca di bloccare lo spostamento dell'altro. La regola di base è molto semplice: non si può tornare su una casella su cui è già passato un serpente. Vince il serpente che riesce a spostarsi liberamente per più tempo.",
+        'material' => "Carte CodyRoby, una scacchiera 5 × 5, due pedine e pezzetti di carta da usare per segnare le caselle già attraversate.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Se nella situazione iniziale mostrata nel video i due giocatori non pescano carte gialle per girare a sinistra, quali carte dovrebbero sperare di pescare?",
+                ]
+
+        ]
+
+    ],
+
+    'round-trip' => [
+        'title' => "Andata e ritorno",
+        'text' => "Le squadre giocano a turno. La prima programma il viaggio di andata mentre la seconda deve riportare Roby al punto di partenza. Può sembrare facile ma non lo è, specialmente se si pianificano le mosse solo a mente senza spostare davvero Roby...",
+        'material' => "Carte CodyRoby, una scacchiera 5 × 5, due pedine e pezzetti di carta da usare per segnare le caselle già attraversate.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. È possibile che il programma che riporta Roby al punto di partenza sia più breve (ovvero composto da meno istruzioni) del programma per l'andata?",
+                ]
+
+        ]
+
+    ],
+
+    'meeting-point' => [
+        'title' => "Punto di incontro",
+        'text' => 'Questa volta pianifichiamo le nostre mosse prima di iniziare. Le due squadre mettono sul tavolo le carte per creare la sequenza di istruzioni che sposterà i rispettivi robot, ma non spostano niente fino a che uno dei giocatori dice "Partenza!". A quel punto la programmazione finisce e inizia l\'azione. Il giocatore che ha detto "Partenza!" vince solo se i due robot, ciascuno dei quali esegue le istruzioni della propria squadra, finiscono sulla stessa casella.',
+ 'material' => "Carte CodyRoby, una scacchiera 5 × 5, due pedine.",
+ 'questions' => [
+    'content' =>
+        [
+            1 => "Q1. Se pensate che i due robot potrebbero non incontrarsi mai, inventate regole che coprano tutte le situazioni possibili.",
+        ]
+
+]
+
+],
+
+'follow-the-music' => [
+    'title' => "Segui la musica",
+    'text' => "Quando le sequenze di istruzioni di programmazione si ripetono periodicamente è come se avessero un ritmo. Se associamo un suono a ogni istruzione possiamo guidare Roby con la musica. È proprio quello che faremo questa volta. Creerò un programma usando suoni diversi che rappresentano istruzioni diverse e voi muoverete Roby sulla scacchiera seguendo queste istruzioni formate da suoni.",
+    'material' => "Oltre alle carte CodyRoby, alla scacchiera e alla pedina, ci servono tre suoni diversi. Io ho usato tre bicchieri riempiti con diverse quantità di acqua, voi che cosa userete?",
+    'questions' => [
+        'content' =>
+            [
+                1 => "Q1. Provate a seguire il video e a farvi guidare dai suoni prodotti dai bicchieri senza guardare le carte. Sapete riconoscere ed eseguire le istruzioni espresse dai suoni?",
+                2 => "Q2. Scegliete tre suoni da associare alle tre istruzioni di base. Inventate una sequenza di suoni che potreste ripetere all'infinito senza far mai uscire Roby dalla scacchiera...",
+            ]
+
+    ]
+
+],
+
 
 
 

@@ -205,6 +205,64 @@ return [
 
     ],
 
+    'two-snakes' => [
+        'title' => "Les deux serpents",
+        'text' => "À l’aide des cartes CodyRoby, deux serpents se déplacent sur le damier en tentant de se bloquer mutuellement. La règle de base est très simple: vous ne pouvez pas retourner sur une case où un serpent est déjà passé. Celui qui parvient à se déplacer librement le plus longtemps remporte la partie.",
+        'material' => "les cartes CodyRoby, un damier de 5 × 5, deux pions, et des morceaux de papier pour indiquer les cases où les serpents sont déjà passés.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Dans la configuration initiale utilisée dans la vidéo, si les deux joueurs ne tirent pas de cartes jaunes pour tourner à gauche, quelles cartes devraient-ils espérer tirer?",
+                ]
+
+        ]
+
+    ],
+
+    'round-trip' => [
+        'title' => "Aller-retour",
+        'text' => "Les équipes jouent à tour de rôle. La première trace le trajet aller, tandis que la seconde doit ramener Roby au point de départ. Le jeu semble simple, mais il ne l’est pas, surtout si vous planifiez les déplacements simplement en les visualisant, sans réellement déplacer Roby...",
+        'material' => "les cartes CodyRoby, un damier de 5 × 5, deux pions, et des morceaux de papier pour indiquer les cases où les serpents sont déjà passés.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Est-il possible que le programme conçu pour ramener Roby au point de départ soit plus court (c’est-à-dire, composé de moins d’instructions), que le programmer aller?",
+                ]
+
+        ]
+
+    ],
+
+    'meeting-point' => [
+        'title' => "Point de rencontre",
+        'text' => "Cette fois-ci, nous planifions nos déplacements avant de commencer. Les deux équipes posent les cartes sur la table pour créer la séquence d’instructions qui leur permettra de déplacer leurs robots respectifs, mais aucun robot ne bouge tant que l’un des joueurs n’a pas dit «Partez!». Au moment où ce mot est prononcé, la programmation prend fin et les joueurs passent à l’action. Le joueur qui a dit «Partez!» ne gagnera que si les deux robots finissent, en suivant les instructions de leur équipe, sur la même case.",
+        'material' => "les cartes CodyRoby, un damier de 5 × 5 et deux pions.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Si, d’après vous, il est possible que les deux robots ne se rencontrent jamais, inventez des règles du jeu qui s’appliquent à toutes les situations possibles.",
+                ]
+
+        ]
+
+    ],
+
+    'follow-the-music' => [
+        'title' => "Suivez la musique",
+        'text' => "Lorsque les séquences d’instructions de programmation se répètent, elles donnent l’impression de suivre un rythme. Si nous associons un son à chaque instruction, nous pouvons guider Roby en musique. C’est précisément ce que nous allons faire ici. Je vais créer un programme pour vous à partir de différents sons représentant diverses instructions, et vous déplacerez Roby sur le damier en suivant ces instructions sonores.",
+        'material' => "outre les cartes CodyRoby, le damier et le pion, nous aurons besoin de produire trois sons différents. J’ai utilisé pour ce faire trois verres d’eau remplis à différents niveaux. Et vous, qu’allez-vous utiliser?",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Essayez de suivre la vidéo et de vous laisser guider par les sons produits par le verre, sans regarder les cartes. Parvenez-vous à reconnaître et à suivre les instructions sonores?",
+                    2 => "Q2. Choisissez trois sons que vous associerez aux trois instructions de base. Trouvez une séquence de sons que vous pourriez répéter à l’infini sans jamais faire sortir Roby du damier...",
+                ]
+
+        ]
+
+    ],
+
+
 
     'texts' => [
         1 => 'Coding@Home propose une série de courtes vidéos, de matériel de bricolage, de puzzles, de jeux et de défis de codage pour une utilisation quotidienne en famille et à l’école. Pas besoin de connaissances préalables ou d’appareils électroniques pour réaliser ces activités. Les activités stimuleront la réflexion informatique et cultiveront les compétences des élèves, des parents et des enseignants à la maison ou en milieu scolaire.',
