@@ -167,7 +167,7 @@ return [
 
     'catch-the-robot' => [
         'title' => "Chyťte robota",
-        'text' => "„Chyťte robota“ je soutěžní hra, kterou lze hrát na stole nebo podlaze. Vyhrává hráč, který zajme robota druhého týmu tak, že vstoupí na jeho pole na hrací desce. Náhodné pořadí herních karet vyžaduje, aby oba týmy neustále přizpůsobovaly svou strategii.",
+        'text' => "Chyťte robota je soutěžní hra, kterou lze hrát na stole nebo podlaze. Vyhrává hráč, který zajme robota druhého týmu tak, že vstoupí na jeho pole na hrací desce. Náhodné pořadí herních karet vyžaduje, aby oba týmy neustále přizpůsobovaly svou strategii.",
         'questions' => [
             'content' =>
                 [
@@ -180,7 +180,7 @@ return [
 
     'the-snake' => [
         'title' => "Had",
-        'text' => "„Had“ je typ solitéru, který lze hrát s kartami CodyRoby. Cílem je provést hada přes všechna pole na hrací desce tak, aby se přitom nekousl do ocasu.",
+        'text' => "Had je typ solitéru, který lze hrát s kartami CodyRoby. Cílem je provést hada přes všechna pole na hrací desce tak, aby se přitom nekousl do ocasu.",
         'questions' => [
             'content' =>
                 [
@@ -205,11 +205,67 @@ return [
 
     ],
 
+    'two-snakes' => [
+        'title' => "Dva hadi",
+        'text' => "Pomocí karet CodyRoby se po herní desce pohybují dva hadi a snaží se bránit si navzájem v pohybu. Základní pravidlo je úplně jednoduché: nemůžeš se vrátit na políčko, na kterém už had byl. Vyhrává had, který se dokáže nejdéle libovolně pohybovat.",
+        'material' => "Karty CodyRoby, hrací deska s 5 × 5 políčky, dvě figurky, a kousky papíru, kterými označíme již navštívená políčka.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Otázka 1. Vraťme se k počátečnímu nastavení z videa. Pokud si hráči nevytáhnou žluté karty, se kterými můžou zahnout doleva, jaké jiné karty by bylo nejlepší si vytáhnout?",
+                ]
+
+        ]
+
+    ],
+
+    'round-trip' => [
+        'title' => "Cesta tam a zpátky",
+        'text' => "Týmy se střídají. První plánuje cestu tam, zatímco druhý musí přivést Robyho zpět do výchozího bodu. Zdá se, že je to snadné, ale není, zvláště pokud plánujete tahy v duchu, aniž byste Robym skutečně pohybovali...",
+        'material' => "Karty CodyRoby, hrací deska s 5 × 5 políčky, dvě figurky a kousky papíru, kterými označíme již navštívená políčka.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Otázka 1. Je možné, aby program, který přivede Robyho zpět do výchozího bodu, byl kratší (tj. obsahoval méně pokynů) než ten pro cestu z výchozího bodu?",
+                ]
+
+        ]
+
+    ],
+
+    'meeting-point' => [
+        'title' => "Setkání",
+        'text' => 'Tentokrát si naplánujeme tahy dříve, než začneme. Oba týmy postupně pokládají karty na stůl a vytváří sekvenci pokynů, podle kterých budou přesouvat své roboty. Žádný robot se ale nepohne, dokud jeden z hráčů neřekne "start!". V tomto okamžiku přestávají programovat a začínají přesouvat roboty. Hráč, který řekl "start!" vyhraje, pouze pokud se oba roboti, každý provádějící pokyny svého týmu, sejdou na stejném políčku.',
+        'material' => "Karty CodyRoby, hrací deska s 5 × 5 políčky, dvě figurky.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Otázka 1. Pokud si myslíš, že je možné, aby se dva roboti nikdy nesetkali, vymysli pravidla hry, která zahrnou všechny možné situace.",
+                ]
+
+        ]
+
+    ],
+
+    'follow-the-music' => [
+        'title' => "Jdi podle hudby",
+        'text' => "Když se sekvence několika programovacích pokynů pravidelně opakuje, je to jako by měla svůj rytmus. Když ke každému pokynu přiřadíme určitý tón, můžeme Robyho vést pomocí hudby. A přesně to teď uděláme. Vytvořím pro tebe program složený z různých tónů, které představují jednotlivé pokyny, a ty budeš podle nich Robyho přesouvat po hrací desce.",
+        'material' => "Kromě karet CodyRoby, hrací desky a figurky potřebujeme ještě vytvořit tři různé tóny. Já jsem použil tři sklenice naplněné do různé výšky vodou. Co použiješ ty?",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Otázka 1. Snaž se sledovat video a nechat se vést tóny skleniček, a nedívej se přitom na karty. Rozeznáš tóny a dokážeš provést pokyny, které představují?",
+                    2 => "Otázka 2. Vyber si tři tóny, které přiřadíš ke třem základním pokynům. Seřaď za sebou několik tónů, které můžeš ve stejném pořadí znovu a znovu opakovat, aniž by se Roby dostal mimo hrací desku...",
+                ]
+
+        ]
+
+    ],
 
 
     'texts' => [
-        1 => 'Série Coding@Home představuje sbírku krátkých videí, návodů, hádanek, her a programovacích úkolů pro každodenní využití doma i ve škole. Veškeré aktivity můžete provádět bez předchozích znalostí či elektronických přístrojů. Aktivity stimulují výpočetní myšlení a rozvíjejí dovednosti žáků, rodičů i učitelů doma i ve škole.',
-        2 => 'Série Coding@Home projektu Evropský týden programování je založena na iniciativě <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank">“Coding in famiglia”</a>, kterou připravily univerzita v Urbinu a asociace CodeMOOCnet ve spolupráci s italskou televizní stanicí Rai Cultura. Alessandro Bogliolo působí na univerzitě v Urbinu jako profesor systémů pro zpracování informací a je <a href="/ambassadors?country_iso=IT" target="_blank">italským ambasadorem Evropského týdne programování</a> a koordinátorem všech ambasadorů i členů správní rady Koalice pro digitální dovednosti a pracovní místa. ',
-        3 => 'Máte-li zájem o další aktivity bez počítače či aktivity v různých programovacích jazycích, robotiku, micro:bit apod., podívejte se na stránku <a href="/training">Školicí materiály pro Evropský týden programování</a>, kde najdete videonávody a programy lekcí pro první a druhý stupeň základních škol a střední školy. Seznamte se také se stránkou Evropského programovacího týdne pro <a href="/resources/learn">studenty</a> a <a href="/resources/teach">učitele</a>. '
+        1 => 'Série Coding@Home představuje sbírku krátkých videí, návodů, hádanek, her a programovacích úkolů pro každodenní využití doma i ve škole . Veškeré aktivity můžete provádět bez předchozích znalostí či elektronických přístrojů . Aktivity stimulují výpočetní myšlení a rozvíjejí dovednosti žáků, rodičů i učitelů doma i ve škole . ',
+        2 => 'Série Coding@Home projektu Evropský týden programování je založena na iniciativě <a href="https://www.raicultura.it/speciali/codinginfamiglia/" target="_blank" > “Coding in famiglia” </a>, kterou připravily univerzita v Urbinu a asociace CodeMOOCnet ve spolupráci s italskou televizní stanicí Rai Cultura . Alessandro Bogliolo působí na univerzitě v Urbinu jako profesor systémů pro zpracování informací a je < a href = "/ambassadors?country_iso=IT" target = "_blank" > italským ambasadorem Evropského týdne programování </a > a koordinátorem všech ambasadorů i členů správní rady Koalice pro digitální dovednosti a pracovní místa . ',
+        3 => 'Máte - li zájem o další aktivity bez počítače či aktivity v různých programovacích jazycích, robotiku, micro:bit apod ., podívejte se na stránku <a href="/training"> Školicí materiály pro Evropský týden programování </a >, kde najdete videonávody a programy lekcí pro první a druhý stupeň základních škol a střední školy . Seznamte se také se stránkou Evropského programovacího týdne pro <a href="/resources/learn"> studenty</a> a <a href="/resources/teach"> učitele</a >. '
     ]
 ];

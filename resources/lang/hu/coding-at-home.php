@@ -205,6 +205,64 @@ return [
 
     ],
 
+    'two-snakes' => [
+        'title' => "A két kígyó",
+        'text' => "A CodyRoby kártyák segítségével két kígyó lépked a játéktáblán, miközben próbálják egymást akadályozni. Az alapszabály nagyon egyszerű: nem lehet még egyszer olyan mezőre lépni, amelyre a kígyó már lépett. Az a kígyó nyeri a játékot, amelyik a legtovább képes szabadon mozogni.",
+        'material' => "CodyRoby kártyák, egy 5x5-ös kockás tábla, két bábu, és papírdarabok a már meglátogatott mezők jelölésére.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. kérdés A videóban látható kezdeti felállás alapján, ha a két játékos nem a balra fordulást jelző sárga kártyát húzza, melyik kártya lenne a legszerencsésebb húzás?",
+                ]
+
+        ]
+
+    ],
+
+    'round-trip' => [
+        'title' => "Oda-vissza út",
+        'text' => "A csapatok felváltva játszanak. Az első csapat az odautat tervezi meg, míg a másiknak vissza kell hoznia Robyt a kiindulási mezőig. Ez könnyűnek tűnik, de nem az, különösen ha csak elméletben gondolod át a lépéseket anélkül, hogy ténylegesen elmozdítanád Robyt...",
+        'material' => "CodyRoby kártyák, egy 5x5-ös kockás tábla, két bábu, és papírdarabok a már meglátogatott mezők jelölésére.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. kérdés Lehetséges-e, hogy az odaúthoz képest rövidebb legyen a program (pl. kevesebb utasításból áll), amellyel Roby-t visszahozzuk a kiindulási helyzetbe?",
+                ]
+
+        ]
+
+    ],
+
+    'meeting-point' => [
+        'title' => "Találkozópont",
+        'text' => "Ezúttal a kezdés előtt eltervezzük a lépéseinket. A két csapat az asztalra teszi a kártyákat és kirakja az utasítások sorát, amelyekkel a saját robotját mozgatja, de nem kezdhetnek el lépni, amíg az egyikük nem mondja, hogy „Start!”. Ennél a pontnál befejezik a programozást, és megkezdődik a játék. Az a játékos, aki az elején kimondta, hogy “Start!”, csak akkor nyerhet, ha a saját csapata utasításait követve a két robot ugyanarra a mezőre érkezik.",
+        'material' => "CodyRoby kártyák, egy 5x5-ös kockás tábla, két bábu.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. kérdés Ha szerinted lehetséges, hogy a két robot sosem találkozik, találj ki olyan játékszabályokat, amelyek minden lehetséges helyzetet lefednek.",
+                ]
+
+        ]
+
+    ],
+
+    'follow-the-music' => [
+        'title' => "Kövesd a zenét",
+        'text' => "Ha a programozási utasítások sorozatai időnként ismétlődnek, az olyan, mintha ritmusuk lenne. Ha az egyes utasításokhoz hangot társítunk, akkor Roby-t irányíthatjuk zenével is. Pontosan ezt fogjuk most tenni. Létre fogok hozni egy programot különböző hangokat felhasználva, amelyek mindegyike más utasítást szimbolizál, és te ezeket a hangalapú utasításokat követve fogod mozgatni Robyt a táblán.",
+        'material' => "A CodyRoby kártyák, a kockás tábla és a bábuk mellett három különböző hangot kell létrehoznunk. Három poharat használtam, amelyekbe különböző mennyiségű vizet öntöttem, te mit fogsz használni?",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. kérdés Próbáld követni a videót, és kövesd a pohár által keltett hangokat anélkül, hogy megnéznéd a kártyákat. Fel tudod ismerni és végre tudod hajtani a hangok által adott utasításokat?",
+                    2 => "2. kérdés Válassz három hangot a három alaputasításhoz. Olyan hangsorozatot hozz létre, amelyet végtelenszer megismételhetsz anélkül, hogy levezetnéd Robyt a tábláról.",
+                ]
+
+        ]
+
+    ],
+
+
 
 
     'texts' => [

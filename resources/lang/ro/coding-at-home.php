@@ -205,6 +205,64 @@ return [
 
     ],
 
+    'two-snakes' => [
+        'title' => "Cei doi șerpi",
+        'text' => "Cu ajutorul cărților CodyRoby, doi șerpi se deplasează pe tabla de joc încercând să își obstrucționeze reciproc mișcările. Regula de bază este foarte simplă: nu te poți întoarce la o casetă care a fost deja vizitată de un șarpe. Câștigătorul este șarpele care reușește să se miște liber cel mai mult.",
+        'material' => "Cărți CodyRoby, o tablă de joc cu pătrățele 5×5, doi pioni și bucăți de hârtie care vor fi utilizate ca să marchezi casetele deja vizitate",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Î1. În configurația inițială arătată în clip, dacă cei doi jucători nu trag cărți galbene ca să meargă la stânga, ce cărți ar trebui să spere că for trage?",
+                ]
+
+        ]
+
+    ],
+
+    'round-trip' => [
+        'title' => "Round trip (Traseu dus-întors)",
+        'text' => "Echipele joacă pe rând. Prima echipă concepe traseul dus, în timp ce a doua trebuie să îl aducă pe Roby înapoi la punctul de pornire. Pare ușor, dar nu este, mai ales dacă planifici mișcările doar în minte, fără să îl deplasezi efectiv pe Roby...",
+        'material' => "Cărți CodyRoby, o tablă de joc cu pătrățele 5×5, doi pioni și bucăți de hârtie care vor fi utilizate ca să marchezi casetele deja vizitate",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Î1. Este posibil ca programul care îl aduce pe Roby înapoi la punctul de plecare să fie mai scurt (cu alte cuvinte să fie compus din mai puține instrucțiuni) decât cel pentru traseul dus?",
+                ]
+
+        ]
+
+    ],
+
+    'meeting-point' => [
+        'title' => "Meeting point (Punctul de întâlnire)",
+        'text' => "De această dată ne planificăm mișcările înainte să începem. Cele două echipe pun cărți pe masă pentru a crea secvența de instrucțiuni cu care se vor deplasa roboții lor respectivi, dar nu se face nicio mutare până când unul dintre jucători nu spune „Start!”. În acel moment se încheie programarea și începe acțiunea. Jucătorul care a zis „Start!” câștigă numai dacă cei doi roboți care execută fiecare instrucțiunile propriei echipe ajung în aceeași casetă.",
+        'material' => "Cărți CodyRoby, o tablă de joc cu pătrățele 5×5, doi pioni.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Î1. Dacă crezi că este posibil ca cei doi roboți să nu se întâlnească niciodată, inventează reguli ale jocului care să acopere toate situațiile posibile.",
+                ]
+
+        ]
+
+    ],
+
+    'follow-the-music' => [
+        'title' => "Follow the music (Urmează muzica)",
+        'text' => "Când secvențele de instrucțiuni de programare se repetă periodic, este ca și cum ar avea un ritm. Dacă asociem un sunet fiecărei instrucțiuni, îl putem ghida pe Roby prin muzică. Este exact ce urmează să facem acum. O să creez un program pentru voi folosind diverse sunete pentru a reprezenta diverse instrucțiuni, și voi îl veți deplasa pe Roby pe tabla de joc urmând aceste instrucțiuni sonore.",
+        'material' => "pe lângă cărțile CodyRoby, tabla de joc cu pătrățele și pionul, trebuie să facem trei sunete diferite. Eu am folosit trei pahare umplute cu cantități diferite de apă - tu ce vei folosi?",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Î1. Încearcă să urmărești clipul video și să te lași ghidat de sunetele produse de pahare, fără a te uita la cărți. Poți să recunoști și să execuți instrucțiunile date prin sunete?",
+                    2 => "Î2. Alege trei sunete pe care să le asociezi cu cele trei instrucțiuni de bază. Inventează o secvență de sunete pe care ai putea să le repeți la infinit fără ca Roby să iasă de pe tablă...",
+                ]
+
+        ]
+
+    ],
+
+
 
 
     'texts' => [

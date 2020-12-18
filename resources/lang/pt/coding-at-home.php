@@ -205,6 +205,64 @@ return [
 
     ],
 
+    'two-snakes' => [
+        'title' => "As duas cobras",
+        'text' => "Utilizando as cartas do CodyRoby, duas cobras movem-se pelo tabuleiro na tentativa de se bloquearem uma à outra. A regra principal é muito simples: não pode voltar para uma casa já visitada por uma cobra. O vencedor é a cobra que se conseguir mover livremente durante mais tempo.",
+        'material' => "Cartas do CodyRoby, um tabuleiro 5 x 5, dois peões, e papelinhos para marcar as casas já visitadas.",
+ 'questions' => [
+ 'content' =>
+            [
+ 1 => "Q1. Na parte inicial do vídeo, se não calhar aos dois jogadores cartas amarelas «virar à esquerda», que cartas devem esperar retirar?",
+ ]
+
+    ]
+
+],
+
+'round-trip' => [
+    'title' => "Viagem de ida e volta",
+ 'text' => "Cada equipa espera pela sua vez. A primeira equipa programa a viagem de ida, enquanto a segunda deve fazer regressar o Roby ao ponto de partida. Parece fácil mas não é, em particular se programar as jogadas de cabeça sem mover o Roby no tabuleiro...",
+ 'material' => "Cartas do CodyRoby, um tabuleiro 5 x 5, dois peões, e papelinhos para marcar as casas já visitadas.",
+ 'questions' => [
+ 'content' =>
+            [
+ 1 => "Q1. É possível que o trajeto que faz regressar o Roby seja mais curto, isto é, que seja composto por menos instruções, que a viagem de ida?",
+ ]
+
+    ]
+
+],
+
+'meeting-point' => [
+    'title' => "Ponto de encontro",
+    'text' => "Desta vez, podemos planear as jogadas antes de começar. As duas equipas colocam as cartas na mesa para criar a sequência de instruções que moverão os respetivos robôs, mas nenhum se move até um dos jogadores dizer «Começar!». Nesse momento, a programação termina e a ação começa. O jogador que disse «Começar!» ganha apenas se os dois robôs, cada um executando as instruções da sua equipa, terminarem na mesma casa.",
+ 'material' => "Cartas do CodyRoby, um tabuleiro 5 x 5 e dois peões.",
+ 'questions' => [
+ 'content' =>
+            [
+ 1 => "Q1. Se achar possível que os dois robôs nunca se encontrem, inventa novas regras para abranger todas as situações possíveis.",
+ ]
+
+    ]
+
+],
+
+'follow-the-music' => [
+ 'title' => "Seguir a música",
+ 'text' => "Quando as sequências de instruções de programação se repetem de forma periódica, é como se criassem um ritmo. Se associarmos um som a cada instrução, podemos guiar o Roby com música. É precisamente o que vamos fazer desta vez. Vou criar um programa utilizando diferentes sons para representar as diferentes instruções, e vai mover o Roby pelo tabuleiro seguindo estas instruções sonoras.",
+ 'material' => "Para além das cartas do CodyRoby, do tabuleiro e dos peões, precisamos de criar três sons diferentes. Eu utilizei três copos com diferentes quantidades de água. O que vai utilizar?",
+ 'questions' => [
+    'content' =>
+        [
+            1 => "Q1. Tente seguir o vídeo e guiar-se com os sons produzidos pelos copos, sem olhar para as cartas. Consegue reconhecer e executar as instruções mediante os sons?",
+            2 => "Q2. Escolha três sons para associar às três instruções básicas. Elabore uma sequência de sons que podia repetir continuamente sem que o Roby nunca saísse do tabuleiro...",
+        ]
+
+]
+
+],
+
+
 
 
     'texts' => [

@@ -205,6 +205,63 @@ return [
 
     ],
 
+    'two-snakes' => [
+        'title' => "Dvije zmije",
+        'text' => "Koristeći CodyRoby kartice, dvije zmije se kreću po tabli pokušavajući da međusobno ometaju kretanje jedna drugoj. Osnovno pravilo je vrlo jednostavno: ne možete da se vratite na kvadrat koji je zmija već posjetila. Pobjednik je zmija koja može da se najduže slobodno kreće.",
+        'material' => "CodyRoby kartice, tabla sa kvadratima 5 × 5, dva pijuna i komadi papira koji će se koristiti za označavanje već posjećenih kvadrata.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. U početnoj postavci prikazanoj u videu, ako dva igrača ne izvuku žute kartice da bi skrenuli ulijevo, kojim karticama se mogu nadati u izvlačenju?",
+                ]
+
+        ]
+
+    ],
+
+    'round-trip' => [
+        'title' => "Kružno putovanje",
+        'text' => "Timovi se izmjenjuju. Prvi planira izlazni put, dok drugi mora da vrati Robyja na početnu tačku. Čini se lako, ali nije, posebno ako poteze planirate samo u mislima, a da zapravo ne pomaknete Robyja...",
+        'material' => "CodyRoby kartice, tabla sa kvadratima 5 × 5, dva pijuna i komadi papira koji će se koristiti za označavanje već posjećenih kvadrata.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Da li je moguće da program koji vraća Robyja na početnu tačku bude kraći (tj. sastavljen od manje uputstava) od izlaznog?",
+                ]
+
+        ]
+
+    ],
+
+    'meeting-point' => [
+        'title' => "Tačka sastajanja",
+        'text' => 'Tako planiramo svoje poteze prije nego što započnemo. Dvije ekipe stavljaju kartice na sto da bi napravile redoslijed uputstava kojima će premjestiti svoje robote, ali ništa se ne pomjera sve dok jedan od igrača ne kaže "Start!". U tom momentu završava programiranje i počinje akcija. Igrač koji bi rekao “Start!” pobjeđuje samo ako dva robota, svaki izvršavajući uputstva svog tima, završe na istom kvadratu.',
+    'material' => "CodyRoby kartice, tabla sa kvadratima 5 × 5, dva pijuna.",
+    'questions' => [
+    'content' =>
+        [
+            1 => "P1. Ako mislite da je moguće da se dva robota nikada ne sretnu, izmislite pravila igre koja pokrivaju sve moguće situacije.",
+        ]
+
+]
+
+],
+
+'follow-the-music' => [
+    'title' => "Slijedite muziku",
+    'text' => "Kada se sekvence programskih uputstava periodično ponavljaju, to je kao da imaju ritam. Ako uz svako uputstvo pridružimo zvuk, možemo Robyja voditi uz muziku. Upravo to ćemo učiniti ovaj put. Ja ću za vas napraviti program koji će koristiti različite zvukove za predstavljanje različitih uputstava, a vi ćete Robyja kretati po tabli slijedeći ova uputstva bazirana na zvuku.",
+    'material' => "pored CodyRoby kartica, table sa kvadratima i pijuna, trebamo proizvesti tri različita zvuka. Ja sam koristio tri čaše napunjene različitim količinama vode, šta ćete vi koristiti?",
+    'questions' => [
+        'content' =>
+            [
+                1 => "P1. Pokušajte da pratite video i da se vodite zvukovima koje proizvode čaše, bez gledanja u kartice. Možete li prepoznati i izvršiti uputstva napravljena zvukom?",
+                2 => "P2. Odaberite tri zvuka koja ćete povezati sa tri osnovna uputstva. Smislite niz zvukova koje biste mogli beskrajno ponavljati, a da Robyja nikada ne odvedete sa table...",
+            ]
+
+    ]
+
+],
+
 
     'texts' => [
         1 => 'Coding@Home je zbirka kratkih video zapisa, materijala za samostalan rad, slagalica, igara i izazova za kodiranje namijenjenih svakodnevnoj upotrebi u porodici i u školi. Za obavljanje ovih aktivnosti vam nije potrebno nikakvo prethodno znanje ili elektronski uređaj. Aktivnosti imaju za cilj podsticanje računarskog mišljenja i unapređenje vještina učenika, roditelja i nastavnika, kod kuće ili u školi.',

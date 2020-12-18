@@ -152,6 +152,64 @@ return [
 
     ],
 
+    'two-snakes' => [
+        'title' => "Las dos serpientes",
+        'text' => " Con las cartas CodyRoby, dos serpientes se desplazan por el tablero y tratan de obstaculizar los respectivos movimientos. La regla básica es muy sencilla: no se puede volver a una casilla por donde ya haya pasado una serpiente. Gana la serpiente que pueda moverse libremente más tiempo.",
+        'material' => "Cartas CodyRoby, un tablero de 5 × 5 casillas, dos piezas y fichas de papel para marcar las casillas ya visitadas.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. En la configuración inicial que aparece en el vídeo, si los dos jugadores no roban cartas amarillas para girar a la izquierda,¿qué cartas cabe esperar que les salgan?",
+                ]
+
+        ]
+
+    ],
+
+    'round-trip' => [
+        'title' => " Ida y vuelta",
+        'text' => "Se turnan los equipos. El primero planea el viaje de ida, y el segundo debe llevar a Roby de vuelta al punto de partida. Parece fácil, pero no lo es, sobre todo si planeas las jugadas mentalmente, sin mover a Roby",
+        'material' => "Cartas CodyRoby, un tablero de 5 × 5 casillas, dos piezas y fichas de papel para marcar las casillas ya visitadas.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. ¿Es posible que el programa que lleva a Roby de vuelta al punto de partida sea más corto (tenga menos instrucciones) que el del viaje de ida?",
+                ]
+
+        ]
+
+    ],
+
+    'meeting-point' => [
+        'title' => "Punto de encuentro",
+        'text' => 'Esta vez, programamos las jugadas antes de empezar. Los dos equipos ponen las cartas sobre la mesa para crear la secuencia de instrucciones que moverán a sus respectivos robots, pero nadie se mueve hasta que uno de los jugadores dice “¡Empezar!” En ese momento, termina la programación y empieza la acción. Gana el jugador que dijo "¡Empezar!" si los dos robots acaban en la misma casilla ejecutando cada uno las instrucciones de su equipo.',
+ 'material' => "Cartas CodyRoby, tablero de 5 × 5 casillas, dos piezas.",
+ 'questions' => [
+ 'content' =>
+            [
+ 1 => "P1. Si crees posible que los dos robots no se encuentren nunca, inventa reglas para todas las situaciones posibles.",
+ ]
+
+    ]
+
+],
+
+'follow-the-music' => [
+ 'title' => "Sigue la música",
+ 'text' => " Cuando se repiten periódicamente secuencias de instrucciones de programación, es como si tuvieran ritmo. Si asociamos un sonido a cada instrucción, podemos guiar a Roby con música. Es justo lo que haremos esta vez. Voy a crear un programa para que sigáis distintos sonidos (que representan distintas instrucciones sónicas), para mover a Roby por el tablero.",
+ 'material' => "Además de las cartas CodyRoby, el tablero y las piezas, hay que hacer tres sonidos diferentes. Yo he utilizado tres vasos con distintas cantidades de agua. ¿Qué utilizaréis vosotros?",
+ 'questions' => [
+ 'content' =>
+            [
+ 1 => "P1. Tratad de seguir el vídeo y guiaros por los sonidos que generan los vasos sin mirar las cartas. ¿Podéis reconocer y ejecutar las instrucciones transmitidas mediante los sonidos?",
+ 2 => "P2. Elegid los tres sonidos asociados a las tres instrucciones básicas. Inventad una secuencia de sonidos que podáis repetir indefinidamente sin que en ningún momento Roby se salga del tablero...",
+ ]
+
+    ]
+
+],
+
+
     'material2' => [
         "chequered-with-labels" => "tablero cuadriculado con marcas",
         "cards" => "veinticuatro tarjetas de «avanzar», ocho de «girar a la izquierda» y ocho de «girar a la derecha»",
