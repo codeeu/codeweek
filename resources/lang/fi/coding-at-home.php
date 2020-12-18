@@ -205,6 +205,64 @@ return [
 
     ],
 
+    'two-snakes' => [
+        'title' => "Kaksi käärmettä",
+        'text' => "Kahta käärmettä liikutetaan pelilaudalla CodyRoby-korttien avulla, ja tarkoitus on estää vastustajan eteneminen. Periaate on yksinkertainen: ruutuun, jossa jompikumpi käärme on käynyt, ei voi enää mennä. Se käärme voittaa, joka pystyy liikkumaan pisimpään.",
+        'material' => "CodyRoby-kortit, 5 x 5 ¬ruudukollinen pelilauta, kaksi pelinappulaa ja paperinpaloja, joilla merkitään ne ruudut, joissa on jo käyty.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Kysymys 1: Jos peli alkaa videolla näkyvästä lähtöasetelmasta eivätkä pelaajat voi saada keltaisia kortteja (käännös vasemmalle), mitä kortteja heidän kannattaisi toivoa nostavansa?",
+                ]
+
+        ]
+
+    ],
+
+    'round-trip' => [
+        'title' => "Meno-paluumatka",
+        'text' => "Joukkueet vuorottelevat keskenään. Aloittava joukkue suunnittelee menomatkan, ja toisen joukkueen tehtävä on tuoda Robyn takaisin lähtöpisteeseen. Tehtävä on yllättävän vaikea, varsinkin, jos siirrot suunnittelee omassa päässään liikuttamatta Robya.",
+        'material' => "CodyRoby-kortit, 5 x 5 ¬ruudukollinen pelilauta, kaksi pelinappulaa ja paperinpaloja, joilla merkitään ne ruudut, joissa on jo käyty.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Kysymys 1: Voiko ohjelma, jolla Roby tuodaan takaisin lähtöpisteeseen, olla lyhyempi (eli sisältää vähemmän ohjeita) kuin menomatkan ohjelma?",
+                ]
+
+        ]
+
+    ],
+
+    'meeting-point' => [
+        'title' => "Kohtaamispaikka",
+        'text' => "Tällä kertaa siirrot suunnitellaan ennen robotin liikuttamista. Kortteja käyttäen joukkueet asettavat pöydälle ohjeet, joiden mukaisesti robotin on tarkoitus liikkua, mutta robotteja ei liikuteta ennen kuin joku pelaajista sanoo ”hep”. Silloin lopetetaan ohjelmointi ja aletaan liikuttaa robotteja. Pelaaja, joka sanoi ”hep”, voittaa, jos robotit päätyvät samaan ruutuun liikkumalla niille ohjelmoitujen ohjeiden mukaisesti.",
+        'material' => "CodyRoby-kortit, 5 × 5  ruudukollinen pelilauta ja kaksi pelinappulaa.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Kysymys 1: Jos sinusta on mahdollista, etteivät robotit koskaan kohtaa, keksi pelisäännöt, joissa otetaan huomioon kaikki mahdolliset tilanteet.",
+                ]
+
+        ]
+
+    ],
+
+    'follow-the-music' => [
+        'title' => "Seuraa säveltä",
+        'text' => "Kun ohjelman sisältämät ohjeet toistuvat samanlaisina tietyissä jaksoissa, niillä on eräänlainen rytmi. Jos yhdistämme ohjeisiin eri äänet, voimme ohjata Robya sävelin. Siitä tässä pelissä on kyse. Kirjoitan ohjelman käyttäen ääniä, jotka edustavat eri ohjeita, ja sinä liikutat Robya pelilaudalla näitä ohjeita kuunnellen.",
+        'material' => "CodyRoby-korttien, pelilaudan ja pelinappulan lisäksi tarvitaan jokin keino tuottaa kolme erilaista ääntä. Minä käytin kolmea lasia, joissa on eri määrä vettä, mutta sinä voit keksiä jonkin muun äänenlähteen.",
+ 'questions' => [
+ 'content' =>
+            [
+ 1 => "Kysymys 1: Yritä seurata videolla kuulemiasi ohjeita, jotka annetaan vesilasien helähdyksinä, ilman, että katsot kortteja. Tunnistatko äänten avulla annetut ohjeet ja pystytkö seuraamaan niitä?",
+ 2 => "Kysymys 2: Valitse kolme eri ääntä, jotka yhdistät perusohjeisiin. Keksi sellainen ohjeyhdistelmä, jota voisit äänten avulla toistaa loputtomiin ilman, että Roby joutuisi ulos pelilaudalta.",
+ ]
+
+    ]
+
+],
+
+
 
 
 

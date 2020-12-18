@@ -203,6 +203,64 @@ kolorowe karty lub czerwony, żółty i szary pisak",
 
     ],
 
+    'two-snakes' => [
+        'title' => "Dwa węże",
+        'text' => "Za pomocą kart CodyRoby dwa węże poruszają się po planszy i próbują wzajemnie sobie zablokować ruch.. Podstawowa zasada jest bardzo prosta: nie możesz przejść na pole, na którym wąż już był. Zwycięzcą jest wąż, który jest w stanie najdłużej swobodnie się poruszać.",
+        'material' => "Talia kart CodyRoby, plansza na wzór szachownicy o rozmiarach 5 × 5 pól, dwa pionki i kawałki papieru, aby oznaczać już odwiedzone pola.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. W początkowej konfiguracji pokazanej na filmie, jeśli obaj gracze nie wyciągną żółtych kart pozwalających skręcić w lewo, na jakie karty powinni liczyć?",
+                ]
+
+        ]
+
+    ],
+
+    'round-trip' => [
+        'title' => "Tam i z powrotem",
+        'text' => "Drużyny grają po kolei. Pierwsza wytycza drogę w jedną stronę, a druga musi sprowadzić Roby’ego z powrotem do punktu startowego. Wydaje się to proste, ale nie jest, zwłaszcza kiedy planujesz ruchy tylko w wyobraźni, bez poruszania Robym w rzeczywistości...",
+        'material' => "Talia kart CodyRoby, plansza na wzór szachownicy o rozmiarach 5 × 5 pól, dwa pionki i kawałki papieru, aby oznaczać już odwiedzone pola.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Czy program, który sprowadza Roby’ego z powrotem do punktu startowego, może być krótszy (tj. składać się z mniejszej liczby poleceń) niż program, który wyznacza drogę w tamtą stronę?",
+                ]
+
+        ]
+
+    ],
+
+    'meeting-point' => [
+        'title' => "Miejsce spotkania",
+        'text' => "Tym razem planujemy ruchy przed rozpoczęciem gry. Obie drużyny wykładają karty, aby utworzyć ciąg poleceń sterujących ich robotami, ale żaden robot nie rusza się, dopóki jeden z graczy nie powie: „Start!”. W tym momencie kończy się programowanie, a zaczyna akcja. Gracz, który powiedział „Start!”, wygrywa tylko wtedy, gdy oba roboty wykonujące polecenia swojej drużyny znajdą się na tym samym polu.",
+        'material' => "Talia kart CodyRoby, plansza na wzór szachownicy o rozmiarach 5 × 5 pól, dwa pionki.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Jeśli uważasz, że możliwe jest, aby oba roboty nigdy się nie spotkały, wymyśl zasady gry, które uwzględnią wszystkie możliwe sytuacje.",
+                ]
+
+        ]
+
+    ],
+
+    'follow-the-music' => [
+        'title' => "Podążaj za muzyką",
+        'text' => "Kiedy ciągi poleceń w kodzie powtarzają się co jakiś czas, wygląda to tak, jakby miały rytm. Jeżeli poszczególnym poleceniom przypiszemy dźwięki, będziemy mogli sterować Robym za pomocą muzyki. Właśnie to zrobimy tym razem. Napiszę dla was program z użyciem różnych dźwięków oznaczających poszczególne polecenia, a wy będziecie przemieszczać Roby’ego po planszy, wykonując te polecenia dźwiękowe.",
+        'material' => "Poza talią kart CodyRoby, planszą na wzór szachownicy i pionkiem potrzebujemy czegoś, co umożliwi wytworzenie trzech różnych dźwięków. Ja użyłem trzech szklanek w różnym stopniu napełnionych wodą, a co wy wykorzystacie?",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Spróbuj śledzić film wideo i podążać za dźwiękami, które wydają szklanki, bez patrzenia na karty. Czy możesz rozróżnić i wykonać polecenia odpowiadające dźwiękom?",
+                    2 => "P2. Wybierz trzy dźwięki, które przypiszesz trzem podstawowym poleceniom. Wymyśl sekwencję dźwięków, którą możesz powtarzać bez końca w taki sposób, by Roby nigdy nie znalazł się poza planszą...",
+                ]
+
+        ]
+
+    ],
+
+
 
 
 

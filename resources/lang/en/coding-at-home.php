@@ -204,6 +204,63 @@ return [
 
     ],
 
+    'two-snakes' => [
+        'title' => "The two snakes",
+        'text' => "Using the CodyRoby cards, two snakes move around the board trying to obstruct each other’s movement. The basic rule is very simple: you cannot go back to a square already visited by a snake. The winner is the snake that is able to move around freely for the longest.",
+        'material' => "CodyRoby cards, a 5 × 5 chequered board, two pawns, and pieces of paper to be used to mark the boxes already visited.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. In the initial setup shown in the video, if the two players don't draw yellow cards to turn left, which cards should they hope to draw?",
+                ]
+
+        ]
+
+    ],
+
+    'round-trip' => [
+        'title' => "Round trip",
+        'text' => "The teams take turns. The first plots the outward journey while the second must bring Roby back to the starting point. It seems easy but it is not, especially if you only plan the moves in your mind without actually moving Roby...",
+        'material' => "CodyRoby cards, a 5 × 5 chequered board, two pawns, and pieces of paper to be used to mark the boxes already visited.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Is it possible for the program that brings Roby back to the starting point to be shorter (i.e. composed of fewer instructions) than the outward one?",
+                ]
+
+        ]
+
+    ],
+
+    'meeting-point' => [
+        'title' => "Meeting point",
+        'text' => "This time we plan our moves before we start. The two teams put cards on the table to create the sequence of instructions that will move their respective robots, but nothing moves until one of the players says “Start!”. At that point the programming ends and the action begins. The player would said “Start!” wins only if the two robots, each executing the instructions of their team, end up on the same square.",
+        'material' => "CodyRoby cards, a 5 × 5 chequered board, two pawns.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. If you think it's possible for the two robots to never meet, invent game rules that cover all possible situations.",
+                ]
+
+        ]
+
+    ],
+
+    'follow-the-music' => [
+        'title' => "Follow the music",
+        'text' => "When sequences of programming instructions repeat themselves periodically, it is as if they have a rhythm. If we associate a sound with each instruction, we can guide Roby with music. This is precisely what we will do this time. I will create a program for you using different sounds to represent different instructions, and you will move Roby around the board by following these sound-based instructions.",
+        'material' => "in addition to the CodyRoby cards, the chequered board and the pawn, we need to make three different sounds. I used three glasses filled with different amounts of water, what will you use?",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Try to follow the video and be guided by the sounds that the glasses produce, without looking at the cards. Can you recognise and execute the instructions made by the sounds?",
+                    2 => "Q2. Choose three sounds to associate with the three basic instructions. Come up with a sequence of sounds that you could repeat endlessly without ever leading Roby off the board...",
+                ]
+
+        ]
+
+    ],
+
 
     'texts' => [
         1 => 'Coding@Home is a collection of short videos, do-it-yourself materials, puzzles, games, and
