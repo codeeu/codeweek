@@ -109,7 +109,7 @@ return [
     "treasure-hunt" => [
         "title" => "lt-Treasure Hunt tal-Ġimgħa tal-Ikkowdjar",
         "subtitle" => [
-            "Qed inwasslu esperjenza ġdida fil-Ġimgħa tal-Ikkowdjar tal-2020 b’logħba fuq Telegram li hija sempliċi biżżejjed għal dawk li għadhom jibdew, iżda wkoll sfida biex iżżomm lill-parteċipanti esperjenzati b’seba għajnejn",
+            "Din hija logħba dwar it-Telegramma li hija sempliċi biżżejjed għal dawk li għadhom jibdew, iżda wkoll sfida biex iżżomm lill-parteċipanti esperjenzati b’seba għajnejn",
             "lt-Treasure Hunt tal-Ġimgħa tal-Ikkowdjar",
             "Hija logħba li tintlagħab l-aħjar fuq il-kompjuter tiegħek b’mowbajl f’idek. Il-logħba se titolbok issolvi l-isfidi tal-ikkowdjar u tiggwidak matul l-istorja tal-ikkowdjar, ix-xjenza tal-kompjuter u t-teknoloġija fl-Ewropa"
         ],

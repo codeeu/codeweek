@@ -109,7 +109,7 @@ return [
     "treasure-hunt" => [
         "title" => "Code Week-schattenzoektocht",
         "subtitle" => [
-            "We introduceren dit jaar ook iets nieuws voor Code Week 2020: een spel op Telegram dat makkelijk genoeg is voor beginners en tegelijkertijd uitdagend genoeg voor ervaren spelers",
+            "Dit is een spel op Telegram dat makkelijk genoeg is voor beginners en tegelijkertijd uitdagend genoeg voor ervaren spelers",
             "De Code Week-schattenzoektocht",
             "kan je het beste spelen achter de desktop of laptop, met een mobiele telefoon in de hand. In het spel moet je programmeerpuzzels oplossen en word je door de geschiedenis van programmeren, computerwetenschap en technologie in Europa heen geleid"
         ],

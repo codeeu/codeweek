@@ -109,7 +109,7 @@ return [
     "treasure-hunt"=>[
         "title"=>"Lov za zakladom v tednu programiranja",
         "subtitle"=>[
-            "Teden programiranja v letu 2020 prinaša novo izkušnjo, in sicer igro v aplikaciji Telegram, ki je dovolj preprosta za začetnike, vendar tudi dovolj zahtevna, da bo izziv za izkušene udeležence.",
+            "To je igra v aplikaciji Telegram, ki je dovolj preprosta za začetnike, vendar tudi dovolj zahtevna, da bo izziv za izkušene udeležence.",
             "Lov za zakladom v tednu programiranja",
             "je igra, ki jo boste najlažje igrali na osebnem računalniku, hkrati pa potrebujete mobilni telefon. V igri boste reševali programerske izzive, ki vas bodo vodili skozi zgodovino programiranja, računalništva in tehnologije v Evropi."
         ],

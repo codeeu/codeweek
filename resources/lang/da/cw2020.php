@@ -109,7 +109,7 @@ return [
     "treasure-hunt"=>[
         "title"=>"Programmeringsuge-skattejagt",
         "subtitle"=>[
-            "Vi beriger programmeringsugen i 2020 med en ny oplevelse i form af et spil på Telegram, der er enkelt nok til at kunne spilles af begyndere, men samtidig udfordrende nok for erfarne deltagere",
+            "Dette er et spil på Telegram, der er enkelt nok til at kunne spilles af begyndere, men samtidig udfordrende nok for erfarne deltagere",
             "Programmeringsuge-skattejagten",
             "spilles bedst på din PC med en mobiltelefon i hånden. I spillet vil du blive bedt om at løse programmeringsudfordringer, og du vil blive guidet gennem programmeringens og computervidenskabens og -teknologiens historie i Europa"
         ],

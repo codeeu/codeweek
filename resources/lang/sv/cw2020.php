@@ -109,7 +109,7 @@ return [
     "treasure-hunt" => [
         "title" => "Code Weeks skattjakt",
         "subtitle" => [
-            "Vi har ett nytt äventyr i Code Week 2020. Det är ett spel på Telegram som är lätt nog för en nybörjare men svårt nog att vara en utmaning även för våra mer erfarna deltagare.",
+            "Det här är ett spel på Telegram som är lätt nog för en nybörjare men svårt nog att vara en utmaning även för våra mer erfarna deltagare.",
             "Code Week-skattjakten",
             "är ett spel som du helst ska spela på din dator med mobilen i handen. I spelet ska du lösa olika kodningsuppdrag och du guidas genom historien om kodning, datorvetenskap och teknik i Europa."
         ],
