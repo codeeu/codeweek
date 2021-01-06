@@ -109,7 +109,7 @@ return [
     "treasure-hunt"=>[
     "title"=>"Lov na blago Tjedna programiranja",
     "subtitle"=>[
-        "Ovogodišnji Tjedan programiranja donosi novo iskustvo: igru u Telegramu, dovoljno jednostavnu za početnike, ali i dovoljno zahtjevnu da zaokupi iskusne sudionike.",
+        "Ovo je igra na telegramu, dovoljno jednostavnu za početnike, ali i dovoljno zahtjevnu da zaokupi iskusne sudionike.",
         "Lov na blago Tjedna programiranja",
         "najbolje je igrati na računalu i s mobitelom u ruci. Igra će testirati vaše znanje programiranja i provesti vas kroz povijest programiranja, računalstva i računalne tehnologije u Europi."
         ],

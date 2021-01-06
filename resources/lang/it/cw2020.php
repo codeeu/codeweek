@@ -109,7 +109,7 @@ return [
     "treasure-hunt"=>[
     "title"=>"La caccia al tesoro della Settimana della programmazione",
     "subtitle"=>[
-        "L'edizione 2020 della Settimana della programmazione prevede una novità: un gioco su Telegram, semplice quanto basta per i principianti, ma anche sufficientemente impegnativo da mettere alla prova i partecipanti più esperti",
+        "Questo gioco è su Telegram, semplice quanto basta per i principianti, ma anche sufficientemente impegnativo da mettere alla prova i partecipanti più esperti",
         "title"=>"La caccia al tesoro della Settimana della programmazione",
         "è un gioco da svolgere su PC con un cellulare in mano. Ti sarà chiesto di risolvere delle sfide di coding mentre percorrerai la storia della programmazione, dell'informatica e della tecnologia in Europa"
     ],

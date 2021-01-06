@@ -109,7 +109,7 @@ return [
     "treasure-hunt" => [
         "title" => "Programmeerimisnädala aardejaht",
         "subtitle" => [
-            "Lisame 2020. aasta programmeerimisnädalale uue kogemuse äpis Telegram toimuva mängu näol, mis on piisavalt lihtne algajatele, kuid paneb ka kogenud osalejad pingutama",
+            "Mäng toimub rakenduses Telegram toimuva mängu näol, mis on piisavalt lihtne algajatele, kuid paneb ka kogenud osalejad pingutama",
             "Programmeerimisnädala aardejaht",
             "on mäng, mida on kõige parem mängida arvutis nii, et mobiil oleks käeulatuses. Mängus palutakse teil lahendada programmeerimisprobleeme ja tutvustatakse programmeerimise, arvutiteaduse ja tehnoloogia ajalugu Euroopas."
         ],

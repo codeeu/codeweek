@@ -23,15 +23,14 @@
 
                 <h2> @lang('cw2020.dance.title')</h2>
                 <div>
-                    @lang('cw2020.dance.subtitle').
+                    @lang('snippets.dance.subtitle').
                 </div>
 
                 <h3>
                     @lang('cw2020.dance.section1.title')
                 </h3>
                 <div>
-                    @lang('cw2020.dance.section1.content.0')
-                    <a href="{{route("events_map")}}">@lang('cw2020.dance.section1.content.1')</a>.<br/>
+                    @lang('snippets.dance.content').<br/>
                 </div>
 
                 <h3>

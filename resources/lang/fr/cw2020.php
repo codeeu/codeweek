@@ -109,7 +109,7 @@ return [
     "treasure-hunt"=>[
         "title"=>"Chasse aux trésors de la semaine du code",
         "subtitle"=>[
-            "Lors de la semaine du code 2020, nous vous proposons une nouvelle expérience: un jeu sur Telegram accessible aux débutants, mais suffisamment difficile pour passionner les participants expérimentés",
+            "Ce jeu se joue sur Telegram accessible aux débutants, mais suffisamment difficile pour passionner les participants expérimentés",
             "La chasse aux trésors de la semaine du code",
             "est un jeu à jouer de préférence sur votre ordinateur avec un téléphone portable à la main. Le jeu vous demandera de résoudre des problèmes de codage et vous guidera dans l’histoire du codage, de l’informatique et des technologies en Europe"
         ],
