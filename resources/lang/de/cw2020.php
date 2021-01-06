@@ -109,7 +109,7 @@ return [
     "treasure-hunt" => [
         "title" => "Code Week-Schatzsuche",
         "subtitle" => [
-            "In der Code Week 2020 bringen wir etwas Neues: ein Spiel auf Telegram, das einfach genug für Anfänger ist, aber auch für erfahrene Mitspielende immer noch eine Herausforderung darstellt",
+            "Ein Spiel auf Telegram, das einfach genug für Anfänger ist, aber auch für erfahrene Mitspielende immer noch eine Herausforderung darstellt",
             "Die Code Week-Schatzsuche",
             "wird am besten am PC und mit einem Smartphone in der Hand gespielt. Im Laufe des Spiels müsst Ihr Kodierungsaufgaben lösen, und das Spiel führt Euch durch die Geschichte der Kodierung, der Informatik und der Technologie in Europa"
         ],

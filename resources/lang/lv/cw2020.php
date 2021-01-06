@@ -109,7 +109,7 @@ return [
     "treasure-hunt" => [
         "title" => "Programmēšanas nedēļas bagātību medības",
         "subtitle" => [
-            "2020. gada programmēšanas nedēļā esam ienesuši svaigas izjūtas – spēli lietotnē “Telegram”, kas ir ne tikai vienkārša iesācējiem, bet arī pārbaudījums, kas liks iesvīst pat pieredzējušiem dalībniekiem",
+            "Šī ir spēle lietotnē Telegram, kas ir ne tikai vienkārša iesācējiem, bet arī pārbaudījums, kas liks iesvīst pat pieredzējušiem dalībniekiem",
             "Programmēšanas nedēļas bagātību medības",
             "ir spēle, ko vislabāk spēlēt datorā ar mobilo tālruni rokā. Spēlē jums liks risināt programmēšanas uzdevumus un jūs iepazīstinās ar Eiropas programmēšanas vēsturi, datorzinātni un datortehniku"
         ],

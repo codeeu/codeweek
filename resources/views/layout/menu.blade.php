@@ -40,9 +40,10 @@
             <li>
                 <a href="javascript:void(null);">@lang('menu.about')</a>
                 <ul>
-                    <li><a href="/codeweek2020">@lang('menu.codeweek2020')</a></li>
                     <li><a href="/about">Code Week</a></li>
                     <li><a href="{{route('codeweek4all')}}">Code Week 4 All</a></li>
+                    <li><a href="/dance">@lang('snippets.dance.menu')</a></li>
+                    <li><a href="/treasure-hunt">@lang('snippets.treasure-hunt.menu')</a></li>
                     <li><a href="/our-values">@lang('menu.values')</a></li>
                     <li><a href="/partners">@lang('about.partners_and_sponsors')</a></li>
                 </ul>

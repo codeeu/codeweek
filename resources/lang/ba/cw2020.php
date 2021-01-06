@@ -108,7 +108,7 @@ return [
     "treasure-hunt"=>[
         "title"=>"Potraga za blagom u Sedmici kodiranja",
         "subtitle"=>[
-            "Donosimo novo iskustvo u Sedmici kodiranja 2020. godine igrom na Telegramu koja je dovoljno jednostavna za početnike, ali i izazovna da iskusne sudionike drži na nogama",
+            "Ovo je igra na Telegramu koja je dovoljno jednostavna za početnike, ali i izazovna da iskusne sudionike drži na nogama",
             "Potraga za blagom u Sedmici kodiranja",
             "je igra koju je najbolje igrati na računaru s mobilnim telefonom u ruci. Igra će od vas tražiti da riješite izazove kodiranja i voditi vas kroz istoriju kodiranja, informatike i tehnologije u Evropi"
         ],
