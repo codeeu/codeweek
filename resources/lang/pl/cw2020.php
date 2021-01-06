@@ -109,7 +109,7 @@ return [
     "treasure-hunt"=>[
         "title"=>"Gra w podchody w ramach Tygodnia Kodowania",
         "subtitle"=>[
-            "Wprowadzamy nowość do obchodów Tygodnia Kodowania 2020 – grę na aplikacji Telegram, która jest wystarczająco prosta dla uczestników początkujących, ale też dostatecznie ekscytująca dla osób zaawansowanych",
+            "Jest to gra na aplikacji Telegram, która jest wystarczająco prosta dla uczestników początkujących, ale też dostatecznie ekscytująca dla osób zaawansowanych",
             "Gra w podchody w ramach Tygodnia Kodowania",
             "to gra, w którą najlepiej grać na komputerze, mając w ręku smartfona. Gracze będą musieli rozwiązać zagadki dotyczące kodowania, poznając jednocześnie historię kodowania, informatyki i technologii komputerowych w Europie"
         ],

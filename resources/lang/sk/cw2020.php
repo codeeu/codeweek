@@ -109,7 +109,7 @@ return [
     "treasure-hunt"=>[
         "title"=>"Honba za pokladom Týždňa programovania",
         "subtitle"=>[
-            "V rámci Týždňa programovania 2020 vám prinášame nový zážitok. Ide o hru v apke Telegram, ktorá je dostatočne jednoduchá pre začiatočníkov, no zároveň predstavuje výzvu, ktorá udrží v strehu aj skúsených hráčov",
+            "Táto hra sa hrá v aplikácii Telegram, ktorá je dostatočne jednoduchá pre začiatočníkov, no zároveň predstavuje výzvu, ktorá udrží v strehu aj skúsených hráčov",
             "Honba za pokladom Týždňa programovania",
             "je hra, ktorú si najlepšie zahráte na počítači s mobilom v ruke. Hra vás bude nabádať na vyriešenie programovacích úloh a prevedie vás históriou programovania, informatiky a počítačových technológií v Európe"
         ],

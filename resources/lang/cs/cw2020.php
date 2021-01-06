@@ -109,7 +109,7 @@ return [
     "treasure-hunt"=>[
     "title"=>"Honba za pokladem v rámci týdne programování",
     "subtitle"=>[
-        "V týdnu programování 2020 vám přinášíme něco nového: na Telegramu si můžete zahrát hru, která je dost jednoduchá, aby ji zvládl i začátečník, ale ne zas tolik, aby neudržela ve střehu i zkušeného hráče",
+        "To je hra na Telegramu si můžete zahrát hru, která je dost jednoduchá, aby ji zvládl i začátečník, ale ne zas tolik, aby neudržela ve střehu i zkušeného hráče",
         "title"=>"Honbu za pokladem týdne programování",
         "si nejlépe zahrajete na počítači s mobilním telefonem v ruce. Hra spočívá v řešení různých programovacích úkolů a přitom vás provede historií programování, počítačových věd a technologií v Evropě"
     ],

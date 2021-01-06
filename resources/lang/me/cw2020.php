@@ -108,7 +108,7 @@ return [
     "treasure-hunt"=>[
         "title"=>"Lov na blago Nedelje programiranja",
         "subtitle"=>[
-            "Donosimo novo iskustvo u Nedelju programiranja za 2020. godinu sa igrom na aplikaciji Telegram koja je dovoljno jednostavna za početnike, ali takođe dovoljno izazovna da iskusne učesnike drži u neizvjesnosti",
+            "Ovo je igra na Telegramu koja je dovoljno jednostavna za početnike, ali takođe dovoljno izazovna da iskusne učesnike drži u neizvjesnosti",
             "Lov na blago Nedelje programiranja",
             "je igra koja se najbolje igra na vašem PC računaru dok vam je mobilni telefon u ruci. Igra će od vas zatražiti da riješite izazove programiranja i sprovešće vas kroz istoriju programiranja, računarskih nauka i tehnologije u Evropi"
         ],

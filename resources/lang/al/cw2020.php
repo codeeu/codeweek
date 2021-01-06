@@ -109,7 +109,7 @@ return [
     "treasure-hunt"=>[
         "title"=>"Code Week Treasure Hunt",
         "subtitle"=>[
-            "Ne po sjellim një përvojë të re në 2020 Code Week me një lojë në Telegram që është mjaft e thjeshtë për fillestarët, por edhe sfiduese për t’i mbajtur të angazhuar edhe pjesëmarrësit me përvojë",
+            "Kjo është një lojë në Telegram që është mjaft e thjeshtë për fillestarët, por edhe sfiduese për t’i mbajtur të angazhuar edhe pjesëmarrësit me përvojë",
             "Code Week Treasure Hunt",
             "është loja më e mirë e luajtur në kompjuter me telefonin celular në dorë. Loja do t’ju kërkojë të zgjidhni sfidat e kodimit dhe do t’ju udhëzojë përmes historisë së kodimit, shkencës kompjuterike dhe teknologjisë në Evropë"
         ],
