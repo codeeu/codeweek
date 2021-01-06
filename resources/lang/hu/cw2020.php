@@ -109,7 +109,7 @@ return [
     "treasure-hunt"=>[
         "title"=>"A programozási hét kincsvadászata",
         "subtitle"=>[
-            "A 2020-as programozási hét során új élménnyel lehetsz gazdagabb, ha kipróbálod a Telegramon elérhető játékot, amely elég egyszerű ahhoz, hogy kezdők is játszhassák, ugyanakkor a tapasztalt részvevők számára is kihívást jelent.",
+            "Ez a játék elérhető a Telegramon elérhető játékot, amely elég egyszerű ahhoz, hogy kezdők is játszhassák, ugyanakkor a tapasztalt részvevők számára is kihívást jelent.",
             "A programozási hét kincsvadászatát",
             "a legjobb élmény érdekében számítógépen játszd, és tarts kéznél egy mobiltelefont. A játék során programozási feladatokat kell megoldanod, miközben megismerheted a programozás, a számítástechnika és a technológia európai történetét"
         ],

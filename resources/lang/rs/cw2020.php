@@ -109,7 +109,7 @@ return [
     "treasure-hunt" => [
         "title" => "Potraga za blagom u Nedelji programiranja",
         "subtitle" => [
-            "U Nedelju programiranja 2020 donosimo novo iskustvo u vidu igre za Telegram koja je dovoljno jednostavna za početnike, ali i dovoljno zahtevna da iskusni igrači prestanu da trepću",
+            "Ovo je igra u aplikaciji Telegram koja je dovoljno jednostavna za početnike, ali i dovoljno zahtevna da iskusni igrači prestanu da trepću",
             "Potraga za blagom u Nedelji programiranja",
             "je igra koju je najbolje igrati na PC računaru uz mobilni telefon u ruci. Igra će se od vas tražiti da rešite programerske zagonetke i provešće vas kroz istoriju programiranja, informatike i tehnologije u Evropi"
         ],

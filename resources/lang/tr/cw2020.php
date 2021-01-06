@@ -103,7 +103,7 @@ return [
     "treasure-hunt"=>[
     "title" => "Kod Haftası Hazine Avı",
         "subtitle" =>[
-    "Telegram uygulamasında yer alan bir oyun ile Kod Haftası 2020’ye yeni bir deneyim katıyoruz. Yeni başlayanlar için basit bir oyun olduğu kadar ustası için de zorlayıcı.",
+            "Telegram’da oynanan bir oyundur. Yeni başlayanlar için basit bir oyun olduğu kadar ustası için de zorlayıcı.",
             "Kod Haftası Hazine Avı, tercihen elinde bir cep telefonu tutarken bilgisayardan oynayabileceğin bir oyun. Oyun senden kodlama problemleri çözmeni isteyip seni Avrupa’da kodlama, bilgisayar bilimi ve teknolojinin tarihinde bir yolculuğa çıkaracak."
         ],
         "section" => [
