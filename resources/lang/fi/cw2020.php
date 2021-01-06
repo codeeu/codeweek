@@ -109,7 +109,7 @@ return [
     "treasure-hunt"=>[
     "title"=>"Koodausviikon aarteenetsintä",
     "subtitle"=>[
-        "Uutta koodausviikolla 2020: Telegram-peli, jota aloittelijatkin voivat pelata, mutta jossa riittää haastetta kokeneemmallekin koodarille!",
+        "Tätä peliä pelataan Telegramissa, jota aloittelijatkin voivat pelata, mutta jossa riittää haastetta kokeneemmallekin koodarille!",
         "Koodausviikon aarteenetsintää",
         "on helpointa pelata tietokoneella niin, että matkapuhelin on samalla käden ulottuvilla. Pelissä ratkaiset koodaustehtäviä ja tutustut samalla eurooppalaiseen koodaamisen, tietotekniikan ja teknologian historiaan."
     ],

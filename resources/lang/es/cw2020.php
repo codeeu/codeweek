@@ -109,7 +109,7 @@ return [
     "treasure-hunt"=>[
     "title"=>"Búsqueda del Tesoro en la Semana de la Programación",
     "subtitle"=>[
-        "Queremos aportar una nueva experiencia a la Semana de la Programación 2020: un juego en Telegram que sea a la vez sencillo para los principiantes pero lo bastante difícil para entretener a los participantes más avanzados",
+        "Se trata de un juego por Telegram que sea a la vez sencillo para los principiantes pero lo bastante difícil para entretener a los participantes más avanzados",
         "La Búsqueda del Tesoro de la Semana de la Programación",
             "se juega mejor con un ordenador y un teléfono en la mano. El juego consiste en resolver problemas de programación mientras el programa te lleva por un recorrido de la historia de la programación, la informática y la tecnología en Europa"
         ],

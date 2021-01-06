@@ -109,7 +109,7 @@ return [
     "treasure-hunt" => [
         "title" => "Caça ao tesouro da Semana Europeia da Programação",
         "subtitle" => [
-            "Trazemos uma nova experiência para a Semana Europeia da Programação de 2020, com um jogo no Telegram que é suficientemente simples para principiantes, mas também estimulante, para manter os participantes experientes interessados",
+            "Este é um jogo no Telegram que é suficientemente simples para principiantes, mas também estimulante, para manter os participantes experientes interessados",
             "A caça ao tesouro da Semana Europeia da Programação",
             "é um jogo que se joga de preferência num computador com um telemóvel na mão. O jogo pedir-te-á para resolveres os desafios de programação e guiar-te-á através da história da programação, da informática e da tecnologia na Europa"
         ],

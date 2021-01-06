@@ -111,7 +111,7 @@ return [
     "treasure-hunt" => [
         "title" => "Code Week Treasure Hunt",
         "subtitle" => [
-            "We are bringing a new experience to the 2020 Code Week with a game on Telegram that is simple enough for beginners, but also challenging to keep experienced participants on their toes",
+            "This is a game on Telegram that is simple enough for beginners, but also challenging to keep experienced participants on their toes",
             "The Code Week Treasure Hunt",
             "is a game best played on your PC with a mobile phone in hand. The game will ask you to solve coding challenges and guide you through the history of coding, computer science and technology in Europe"
         ],

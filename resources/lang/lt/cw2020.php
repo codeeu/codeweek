@@ -109,7 +109,7 @@ return [
     "treasure-hunt"=>[
         "title"=>"Programavimo savaitės lobių paieškos",
         "subtitle"=>[
-            "2020 m. programavimo savaitės metu laukia naujovė: programėlėje „Telegram“ žaisime žaidimą, kuris bus pakankamai nesudėtingas pradedantiesiems, tačiau ir patyrusius dalyvius privers paplušėti",
+            "Šis žaidimas vyksta per „Telegram“ žaisime žaidimą, kuris bus pakankamai nesudėtingas pradedantiesiems, tačiau ir patyrusius dalyvius privers paplušėti",
             "Programavimo savaitės lobių paieškos",
             " – žaidimas, kurį geriausia žaisti kompiuteriu, po ranka turint mobilųjį telefoną. Žaisdamas šį žaidimą turėsi spręsti programavimo uždavinius ir daug sužinosi apie Europos programavimo istoriją, kompiuterių mokslą ir technologijas"
         ],

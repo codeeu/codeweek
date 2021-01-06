@@ -109,7 +109,7 @@ return [
     "treasure-hunt" => [
         "title" => "Vânătoarea de comori din Săptămâna programării",
         "subtitle" => [
-            "În Săptămâna programării din 2020, vă propunem o nouă experiență: un joc pe Telegram suficient de simplu pentru începători, dar care este în același timp destul de dificil ca să suscite interesul participanților experimentați",
+            "Acesta este un joc pe Telegram suficient de simplu pentru începători, dar care este în același timp destul de dificil ca să suscite interesul participanților experimentați",
             "Vânătoarea de comori din Săptămâna programării",
             "se joacă cel mai bine pe computer, cu telefonul mobil în mână. Jocul vă va cere să găsiți soluții la probleme de programare și vă va purta prin istoria programării, a informaticii și tehnologiei din Europa"
         ],
