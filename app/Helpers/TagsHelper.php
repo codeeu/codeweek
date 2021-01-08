@@ -64,7 +64,7 @@ class TagsHelper
                     } catch (Exception $ex) {
                         dump("Error with : '" . $duplicate_tag->name . "'");
 
-                        dump($ex->getTrace()[0]["args"]);
+                        //dump($ex->getTrace()[0]["args"]);
                         if ($ex->getCode() === "23000") {
                             dump('caught unicity exception');
 //                            Log::info($ex->getMessage());

@@ -14,15 +14,16 @@ use Illuminate\Support\Facades\Log;
 class ExcellenceWinnersHelper
 {
 
-    public static function query($edition = null){
+    public static function query($edition = null, $withFullDetails = false)
+    {
         $ttl = 1;
 //        $ttl = 60*60;
-        return Cache::remember('details', $ttl, function () use ($edition) {
+        return Cache::remember('details', $ttl, function () use ($withFullDetails, $edition) {
 //            Log::info('query without cache');
             $edition = !is_null($edition) ? $edition : Carbon::now()->year;
             $codes = self::getWinnerCodes($edition);
             $details = Codeweek4AllHelper::getDetailsByCodeweek4All($codes->toArray(), $edition);
-            $full = self::tagSuperWinners($details);
+            $full = self::tagSuperWinners($details, $withFullDetails);
             return $full;
 
         });
@@ -103,11 +104,11 @@ class ExcellenceWinnersHelper
 
         $winnerCodes = [];
 
-        $crit1 = self::criteria1($edition);
+        //$crit1 = self::criteria1($edition);
         $crit2 = self::criteria2($edition);
         $crit3 = self::criteria3($edition);
 
-        array_push($winnerCodes, $crit1, $crit2, $crit3);
+        array_push($winnerCodes, $crit2, $crit3);
 
         $result = collect($winnerCodes)->flatten()->unique();
 
@@ -118,33 +119,31 @@ class ExcellenceWinnersHelper
 
     }
 
-    public static function tagSuperWinners($details)
+    public static function tagSuperWinners($details, $withFullDetails)
     {
-        /*
-         *     "total_participants" => "600"
-    "total_creators" => "10"
-    "total_countries" => "1"
-    "total_activities" => "10"
-         */
+
         foreach ($details as $detail) {
 
             $detail->super_winner = "0";
-            if (($detail->total_participants >= 500) && ($detail->total_creators >= 10) && ($detail->total_countries >= 3) && ($detail->total_activities >= 10)) {
+            if ($detail->total_creators >= 10 && $detail->total_activities >= 10 && $detail->total_countries >= 3) {
                 Log::info("Super winner: {$detail->codeweek_for_all_participation_code}");
                 $detail->super_winner = 1;
 
-                $detail->initiator_email = Codeweek4AllHelper::getInitiatorByCodeweek4All([$detail->codeweek_for_all_participation_code]);
-                $countries = Codeweek4AllHelper::getCountriesByCodeweek4All($detail->codeweek_for_all_participation_code, 2019);
+                if ($withFullDetails) {
+                    $detail->initiator_email = Codeweek4AllHelper::getInitiatorByCodeweek4All([$detail->codeweek_for_all_participation_code]);
+                    $countries = Codeweek4AllHelper::getCountriesByCodeweek4All($detail->codeweek_for_all_participation_code, 2019);
 
-                $info = "";
-                foreach ($countries as $country){
-                    $info .= "{$country->name} ({$country->event_per_country})";
+
+                    $info = "";
+                    foreach ($countries as $country) {
+                        $info .= "{$country->name} ({$country->event_per_country})";
 
                         $info .= " | ";
 
-                }
+                    }
 
-                $detail->zoubidou = $info;
+                    $detail->zoubidou = $info;
+                }
 
 
             }

@@ -19,11 +19,11 @@ use Maatwebsite\Excel\Facades\Excel;
 class ExcellenceWinnersController extends Controller
 {
 
-    public function list($edition = 2019, Request $request)
+    public function list($edition = 2020, Request $request)
     {
 
-//        $ttl = 1;
-        $ttl = 60 * 60 * 24;
+        $ttl = 1;
+//        $ttl = 60 * 60 * 24;
 
 //        dd($request->all());
 
@@ -38,7 +38,7 @@ class ExcellenceWinnersController extends Controller
             Cache::forget('details');
         }
 
-        $details = ExcellenceWinnersHelper::query($edition);
+        $details = ExcellenceWinnersHelper::query($edition, false);
 
         $total_events = DB::table('events')
             ->where('status', "=", "APPROVED")
