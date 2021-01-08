@@ -64,7 +64,9 @@ class ExcellenceWinnersTest extends TestCase
         create('App\Event', ["codeweek_for_all_participation_code" => "cw19-multiple-years", "status" => "APPROVED", "participants_count" => 250, "end_date" => Carbon::now()->year(2019)]);
         create('App\Event', ["codeweek_for_all_participation_code" => "cw19-multiple-years", "status" => "APPROVED", "participants_count" => 250, "end_date" => Carbon::now()->year(2018)]);
 
-        create('App\Event', ["codeweek_for_all_participation_code" => "cw18-previous-year", "status" => "APPROVED", "participants_count" => 5000, "end_date" => Carbon::now()->year(2018)]);
+        create('App\Event', ["codeweek_for_all_participation_code" => "cw18-previous-year", "status" => "APPROVED", 'country_iso' => 'FR', "end_date" => Carbon::now()->year(2018)]);
+        create('App\Event', ["codeweek_for_all_participation_code" => "cw18-previous-year", "status" => "APPROVED", 'country_iso' => 'BE', "end_date" => Carbon::now()->year(2018)]);
+        create('App\Event', ["codeweek_for_all_participation_code" => "cw18-previous-year", "status" => "APPROVED", 'country_iso' => 'LU', "end_date" => Carbon::now()->year(2018)]);
 
         create('App\Event', ["codeweek_for_all_participation_code" => "cw19-everything", "status" => "APPROVED", "participants_count" => 50, 'country_iso' => 'LU', "end_date" => Carbon::now()->year(2019)], 10);
         create('App\Event', ["codeweek_for_all_participation_code" => "cw19-everything", "status" => "APPROVED", "participants_count" => 50, 'country_iso' => 'BE', "end_date" => Carbon::now()->year(2019)], 10);
@@ -90,7 +92,6 @@ class ExcellenceWinnersTest extends TestCase
     /** @test */
     public function should_get_codes_with_10_organisers_or_more()
     {
-
 
         $codes = ExcellenceWinnersHelper::criteria2(2019);
 
@@ -126,8 +127,8 @@ class ExcellenceWinnersTest extends TestCase
 
         $codes = ExcellenceWinnersHelper::getWinnerCodes(2019);
 
-        $this->assertContains("cw19-500-participants-single", $codes);
-        $this->assertContains("cw19-500-participants-multiple", $codes);
+        $this->assertNotContains("cw19-500-participants-single", $codes);
+        $this->assertNotContains("cw19-500-participants-multiple", $codes);
         $this->assertContains("cw19-10-organisers", $codes);
         $this->assertContains("cw19-10-3-countries", $codes);
         $this->assertContains("cw19-everything", $codes);
@@ -185,7 +186,7 @@ class ExcellenceWinnersTest extends TestCase
 
         $details = Codeweek4AllHelper::getDetailsByCodeweek4All($codes->toArray(), 2019);
 
-        $full = ExcellenceWinnersHelper::tagSuperWinners($details);
+        $full = ExcellenceWinnersHelper::tagSuperWinners($details, false);
 
 
 
