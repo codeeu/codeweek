@@ -14,7 +14,7 @@ class EmailController extends Controller
         //Get the ambassador list based on the event country
         $ambassadors = User::role('ambassador')->where('country_iso', $event->country_iso)->get();
 
-        var_dump($ambassadors);
+        //var_dump($ambassadors);
 
         //send emails
         foreach ($ambassadors as $ambassador) {

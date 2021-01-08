@@ -56,7 +56,7 @@ class ImporterHelper
 
         //Get Event IDs that have not been seen in the last 24 hours
         $IDstoDelete = Importer::where('seen_at', '<=', $currentSeenAt->subDay())->pluck('event_id')->all();
-dump($IDstoDelete);
+//dump($IDstoDelete);
         return $IDstoDelete;
 
 
