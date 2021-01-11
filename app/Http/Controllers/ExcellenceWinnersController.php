@@ -22,8 +22,8 @@ class ExcellenceWinnersController extends Controller
     public function list($edition = 2020, Request $request)
     {
 
-        $ttl = 1;
-//        $ttl = 60 * 60 * 24;
+//        $ttl = 1;
+        $ttl = 60 * 60 * 24;
 
 //        dd($request->all());
 
