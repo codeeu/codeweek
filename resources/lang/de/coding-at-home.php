@@ -205,6 +205,64 @@ return [
 
     ],
 
+    'two-snakes' => [
+        'title' => "Die zwei Schlangen",
+        'text' => "Mithilfe der CodyRoby-Karten wandern zwei Schlangen über das Spielbrett und versuchen, sich gegenseitig zu blockieren. Die Grundregel ist ganz einfach: Ihr könnt nicht auf ein Feld gehen, auf dem bereits eine Schlange war. Es gewinnt derjenige, der sich am längsten frei bewegen kann.",
+        'material' => "CodyRoby-Karten, ein kariertes Spielbrett mit 5 x 5 Feldern, zwei Figuren und Papierstücke, mit denen die bereits besuchten Felder markiert werden.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "F1. Wenn die zwei Spieler in der Ausgangssituation im Video keine gelben Karten ziehen, um sich nach links zu drehen, auf welche Karten sollten sie dann hoffen?",
+                ]
+
+        ]
+
+    ],
+
+    'round-trip' => [
+        'title' => "Hin und wieder zurück",
+        'text' => "Die Teams wechseln sich ab. Das erste Team plant den Hinweg, das zweite Team muss Roby zurück zu seinem Ausgangspunkt bringen. Klingt einfach, ist es aber nicht. Vor allem dann nicht, wenn ihr die Züge im Kopf plant, ohne Roby zu bewegen …",
+        'material' => "CodyRoby-Karten, ein kariertes Spielbrett mit 5 x 5 Feldern, zwei Figuren und Papierstücke, mit denen die bereits besuchten Felder markiert werden.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "F1. Ist es möglich, dass das Programm, das Roby zum Ausgangspunkt zurückbringt, kürzer ist (dass es also aus weniger Befehlen besteht) als das Programm für den Hinweg?",
+                ]
+
+        ]
+
+    ],
+
+    'meeting-point' => [
+        'title' => "Treffpunkt",
+        'text' => "Dieses Mal planen wir unsere Züge, bevor es losgeht. Die beiden Teams legen Karten auf den Tisch, um eine Abfolge von Befehlen zu erstellen, die den Weg ihrer jeweiligen Roboter bestimmt. Aber keiner bewegt sich, bis einer der Spieler „Start!“ sagt. Dann wird nicht mehr programmiert und es heißt „Action“. Der Spieler, der „Start!“ gerufen hat, gewinnt nur, wenn die beiden Roboter, die die Befehle ihres Teams ausführen, auf demselben Feld landen.",
+        'material' => "CodyRoby-Karten, ein kariertes Spielbrett mit 5 x 5 Feldern, zwei Figuren.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "F1. Wenn ihr glaubt, dass es möglich ist, dass sich die beiden Roboter niemals treffen, könnt ihr Spielregeln erfinden, die alle möglichen Fälle abdecken.",
+                ]
+
+        ]
+
+    ],
+
+    'follow-the-music' => [
+        'title' => "Folge der Musik",
+        'text' => "Wenn Abfolgen von Programmbefehlen sich periodisch wiederholen, ist es, als hätten sie einen Rhythmus. Wenn wir jedem Befehl einen Klang zuordnen, können wir Roby mit Musik anleiten. Und genau das machen wir diesmal. Ich schreibe ein Programm für euch und verwende dabei verschiedene Klänge, die für verschiedene Befehle stehen. Und ihr bewegt Roby anhand dieser klangbasierten Befehle auf dem Brett.",
+        'material' => "Zusätzlich zu den CodyRoby-Karten, dem karierten Spielbrett und der Figur, benötigen wir etwas, um drei verschiedene Klänge zu erzeugen. Ich habe drei Gläser mit unterschiedlich viel Wasser gefüllt. Was benutzt ihr?",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "F1. Versucht, dem Video zu folgen, und lasst euch von den Klängen führen, die die Gläser erzeugen, ohne dabei die Karten anzusehen. Erkennt ihr die Befehle, die hinter den Klängen stecken, und könnt sie ausführen?",
+                    2 => "F2. Wählt drei Klänge, die ihr den drei grundlegenden Befehlen zuordnet. Denkt euch eine Abfolge von Klängen aus, die ihr endlos wiederholen könntet, ohne Roby damit vom Spielbrett zu leiten.",
+                ]
+
+        ]
+
+    ],
+
+
 
 
     'texts' => [
