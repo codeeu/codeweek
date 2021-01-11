@@ -211,6 +211,64 @@ return [
 
     ],
 
+    'two-snakes' => [
+        'title' => "De två ormarna",
+        'text' => "Två ormar rör sig på spelbrädet med hjälp av CodyRoby-korten. Målet är att blockera den andra spelaren. Grundregeln är väldigt enkel: du får inte gå in i en ruta där en orm redan har varit. Den orm som kan röra sig fritt längst vinner.",
+        'material' => "CodyRoby-kort, ett spelbräde med 5 × 5 rutor, två spelpjäser, pappersbitar för att markera de rutor som redan har besökts.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "F1. I den situation som visas i videon, om de två spelarna inte drar gula kort för att svänga till vänster, vilka kort är det då bäst för dem att dra?",
+                ]
+
+        ]
+
+    ],
+
+    'round-trip' => [
+        'title' => "Tur och retur",
+        'text' => "Lagen turas om. Det första laget programmerar utresan, medan det andra ska föra Roby tillbaka till utgångspunkten. Det verkar enkelt, men det är det inte. Särskilt om du bara planerar dragen i huvudet utan att faktiskt flytta Roby ...",
+        'material' => "CodyRoby-kort, ett spelbräde med 5 × 5 rutor, två spelpjäser, pappersbitar för att markera de rutor som redan har besökts.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "F1. Kan det program som tar Roby tillbaka till utgångspunkten någonsin vara kortare (dvs. bestå av färre instruktioner) än programmet för utresan?",
+                ]
+
+        ]
+
+    ],
+
+    'meeting-point' => [
+        'title' => "Mötesplatsen",
+        'text' => "Den här gången planerar vi våra drag innan spelet börjar. De två lagen lägger ut kort på bordet för att skapa en serie av instruktioner som de sedan ska använda för att flytta sin robot, men ingen börjar att flytta sin pjäs förrän en av spelarna säger ”Börja!”. Då slutar alla att programmera och spelet tar sin början. Den spelare som sa ”Börja!” vinner bara om de två robotarna, med hjälp av instruktionerna från sina lag, hamnar på samma ruta.",
+        'material' => "CodyRoby-kort, ett spelbräde med 5 × 5 rutor, två spelpjäser.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "F1. Om du tror att det är möjligt för de två robotarna att aldrig mötas, hitta på spelregler som täcker in alla tänkbara situationer.",
+                ]
+
+        ]
+
+    ],
+
+    'follow-the-music' => [
+        'title' => "Följ musiken",
+        'text' => "När en serie av programmeringsinstruktioner upprepas regelbundet kan man börja urskilja en rytm. Om vi parar samman varje instruktion med ett ljud kan vi vägleda Roby med hjälp av musik. Det är precis det vi ska göra den här gången. Jag ska skriva ett program för dig med hjälp av olika ljud som representerar olika instruktioner. Sedan ska du flytta Roby runt på spelbrädet genom att följa ljudinstruktionerna.",
+        'material' => "Utöver CodyRoby-korten behövs spelbrädet och en spelpjäs och något som kan göra tre olika ljud. Jag använde tre glas fyllda med olika mycket vatten. Vad kommer du själv att använda?",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "F1. Försök att följa instruktionerna i videon genom att låta dig vägledas av ljuden från glasen, utan att titta på korten. Kan du känna igen och följa de instruktioner som ljuden representerar?",
+                    2 => "F2. Välj tre ljud som ska representera de tre grundläggande instruktionerna. Hitta på en ljudsekvens som du skulle kunna upprepa hur länge som helst utan att Roby någonsin hamnar utanför brädet.",
+                ]
+
+        ]
+
+    ],
+
+
 
     'texts' => [
         1 => 'Coding@Home är en samling korta videor, gör det själv-material, kluriga övningar, spel och kodningsutmaningar för vardagsbruk både hemma och i skolan. Man behöver inga tidigare kunskaper eller elektronisk utrustning för att göra aktiviteterna. Uppgifterna uppmuntrar till datorförståelse och övar kompetensen hos elever, föräldrar och lärare hemma eller i skolan.',

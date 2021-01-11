@@ -205,6 +205,64 @@ return [
 
 ],
 
+    'two-snakes' => [
+        'title' => "De twee slangen",
+        'text' => "Twee slangen bewegen met behulp van de CodyRoby-kaarten over het veld en proberen elkaar te blokkeren. De basisregel is eenvoudig: je kunt niet terug naar een vakje waar al een slang is geweest. De slang die het langst vrij kan bewegen is de winnaar.",
+        'material' => "CodyRoby-kaarten, een speelveld van 5 × 5, twee pionnen en stukjes papier om te markeren welke vakjes al zijn bezocht.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "V1. Als de twee spelers in de oorspronkelijke opstelling in de video geen gele kaarten trekken om naar links te draaien, welke kaarten hopen ze dan te trekken?",
+                ]
+
+        ]
+
+    ],
+
+    'round-trip' => [
+        'title' => "Rondreis",
+        'text' => "De teams spelen om beurten. De eerste speler plant de heenreis en de tweede speler moet Roby terugbrengen naar het beginpunt. Dat lijkt makkelijk, maar dat is niet zo, vooral als je de zetten in je hoofd plant zonder Roby echt te verplaatsen...",
+        'material' => "CodyRoby-kaarten, een speelveld van 5 × 5, twee pionnen en stukjes papier om te markeren welke vakjes al zijn bezocht.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "V1. Is het mogelijk dat het programma waarmee Roby terugkomt naar het beginpunt korter is (dus uit minder instructies bestaat) dan de heenreis?",
+                ]
+
+        ]
+
+    ],
+
+    'meeting-point' => [
+        'title' => "Trefpunt",
+        'text' => "Deze keer plannen we onze zetten voordat we beginnen. De twee teams leggen kaarten op tafel om de reeks instructies te creëren waarmee hun respectieve robots bewegen, maar deze worden niet verplaatst tot een van de spelers “Start!” zegt. Op dat moment stoppen zij met programmeren en begint de actie. De speler die “Start!” zei, wint alleen als de twee robots, die de instructies van hun team uitvoeren, op hetzelfde vakje uitkomen.",
+        'material' => "CodyRoby-kaarten, een speelveld van 5 × 5 en twee pionnen.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "V1. Als je denkt dat het mogelijk is dat de twee robots nooit bij elkaar komen, verzin dan spelregels die alle mogelijke situaties afdekken.",
+                ]
+
+        ]
+
+    ],
+
+    'follow-the-music' => [
+        'title' => "Volg de muziek",
+        'text' => "Als de reeks programmeerinstructies zich regelmatig herhaalt, lijkt het alsof deze een ritme hebben. Als we aan elke instructie een geluid koppelen, kunnen we Roby met muziek sturen. Dat is precies wat we deze keer gaan doen. Ik maak een programma voor je met verschillende geluiden die voor verschillende instructies staan en jij verplaatst Roby over het bord door deze geluidsinstructies op te volgen.",
+        'material' => "We hebben de CodyRoby-kaarten, het speelveld en de pion nodig en we moeten drie verschillende geluiden maken. Ik heb drie glazen met verschillende hoeveelheden water gebruikt, wat gebruik jij?",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "V1. Probeer de video te volgen en je te laten sturen door de geluiden van de glazen zonder naar de kaarten te kijken. Kun je de instructies van de geluiden herkennen en uitvoeren?",
+                    2 => "V2. Kies drie geluiden om aan de drie basisinstructies te koppelen. Bedenk een reeks geluiden die je eindeloos kunt herhalen zonder Roby van het speelveld te sturen...",
+                ]
+
+        ]
+
+    ],
+
+
 
 
     'texts' => [
