@@ -16,7 +16,7 @@ return [
     'learn' => 'Opi',
     'teach' => 'Opeta',
     'training' => 'Harjoittelu', 'toolkits' => 'Esitykset ja työkalut', 'why' => 'MIKSI', 'home'  => 'Kotisivu',
-    'events' => 'tapahtumiin',
+    'events' => 'Tapahtumat',
     'ambassadors' => 'Lähettiläät',
     'resources' => 'Aineistot',
     'schools' => 'Koulut',
