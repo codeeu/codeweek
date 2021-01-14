@@ -21,7 +21,7 @@ return [
     'resources' => 'Aineistot',
     'schools' => 'Koulut',
     'about' => 'Lisätietoja',
-    'blog' => 'blogi',
+    'blog' => 'Blogi',
     'news' => 'Uutisia',
     'search' => 'Kirjoita ja paina Enter...',
     'map' => 'Kartta',
