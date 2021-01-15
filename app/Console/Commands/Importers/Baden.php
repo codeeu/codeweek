@@ -20,7 +20,7 @@ class Baden extends Command
      *
      * @var string
      */
-    protected $signature = 'import:germany';
+    protected $signature = 'import:baden';
 
     /**
      * The console command description.
@@ -51,6 +51,7 @@ class Baden extends Command
         Log::info("Loading Baden API Items in Database");
 
         $techicalUser = ImporterHelper::getTechnicalUser("germany-technical");
+
         $items = BadenRSSItem::whereNull('imported_at')->get();
 
 
