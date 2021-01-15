@@ -49,7 +49,7 @@ class Germany extends Command
         dump("Loading German events");
 
 
-        $this->call("api:germany");
+        $this->call("api:baden");
         $this->call("api:bonn");
         $this->call("api:hamburg");
 
