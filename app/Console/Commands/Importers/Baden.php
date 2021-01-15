@@ -57,6 +57,7 @@ class Baden extends Command
 
 
         foreach ($items as $item){
+
             $item->createEvent($techicalUser);
             $item->imported_at = Carbon::now();
             $item->save();

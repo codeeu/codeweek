@@ -19,7 +19,7 @@ class Baden extends Command
      *
      * @var string
      */
-    protected $signature = 'api:germany';
+    protected $signature = 'api:baden';
 
     /**
      * The console command description.
@@ -107,7 +107,7 @@ class Baden extends Command
         }
         Log::info("New items imported from Baden API: " . $new);
 
-        return Artisan::call("import:germany");
+        return Artisan::call("import:baden");
 
 
 

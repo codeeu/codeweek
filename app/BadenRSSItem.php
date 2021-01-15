@@ -67,6 +67,22 @@ class BadenRSSItem extends Model
     public function createEvent($technicalUser)
     {
 
+        $user = User::where(['email' => $this->user_email])->first();
+
+        if ($user == null) {
+
+            //Create user
+            $user = User::create(
+                [
+                    'email' => $this->user_email,
+                    'firstname' => $this->organizer,
+                    'lastname' => '',
+                    'username' => $this->organizer,
+                    "password" => bcrypt(Str::random()),
+                ]);
+
+        }
+
         $event = new Event([
             'status' => "APPROVED",
             'title' => htmlspecialchars_decode($this->title),
@@ -79,7 +95,7 @@ class BadenRSSItem extends Model
             'event_url' => $this->user_website,
             'contact_person' => $this->user_publicEmail,
             'user_email' => $this->user_email,
-            'creator_id' => $technicalUser->id,
+            'creator_id' => $user->id,
             'country_iso' => "DE",
             'picture' => $this->photo,
             "pub_date" => now(),
