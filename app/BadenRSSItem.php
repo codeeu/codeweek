@@ -85,7 +85,7 @@ class BadenRSSItem extends Model
             "pub_date" => now(),
             "created" => now(),
             "updated" => now(),
-            "codeweek_for_all_participation_code" => 'cw20-baden',
+            "codeweek_for_all_participation_code" => 'cw20-germany',
             "start_date" => $this->eventStartDate,
             "end_date" => $this->eventEndDate,
             "longitude" => $this->longitude,
