@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
         $this->call(UserSeeder::class);
         $this->call(AudienceTableSeeder::class);
         $this->call(ThemeTableSeeder::class);
-        $this->call(ResourceSeeder::class);
+        //$this->call(ResourceSeeder::class);
 
         //$this->call(OldSeeder::class);
         //$this->call(EventSeeder::class);
