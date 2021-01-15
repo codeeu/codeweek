@@ -50,12 +50,14 @@ class Baden extends Command
     {
         Log::info("Loading Baden API Items in Database");
 
-        $techicalUser = ImporterHelper::getTechnicalUser("baden-technical");
+        $techicalUser = ImporterHelper::getTechnicalUser("germany-technical");
+
         $items = BadenRSSItem::whereNull('imported_at')->get();
 
 
 
         foreach ($items as $item){
+
             $item->createEvent($techicalUser);
             $item->imported_at = Carbon::now();
             $item->save();

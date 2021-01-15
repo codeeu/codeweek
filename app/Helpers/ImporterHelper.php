@@ -16,10 +16,8 @@ class ImporterHelper
 
 
     //Create or load Technical user based on username
-
     public static function getTechnicalUser($username)
     {
-
 
         if (!User::where("username", "=", $username)->get()->isEmpty()) {
             return User::where("username", "=", $username)->first();
