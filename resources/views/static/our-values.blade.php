@@ -111,7 +111,7 @@
 
                     <div style="position: relative; margin-left: 10px;">
                         <div style="position: relative; margin-right: 10px;" class="relative_box">
-                            <a href="https://www.youtube.com/watch?v=oU2kG_Z_Ev" class="youtube_link" target="_blank">
+                            <a href="https://www.youtube.com/watch?v=oU2kG_Z_EvI" class="youtube_link" target="_blank">
                                 <img src="{{asset('img/values/value-4.png')}}" class="static-image" width="160vh">
                                 <h3><span>@lang('snippets.videos.5')</span></h3></a>
                         </div>
