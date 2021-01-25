@@ -151,6 +151,33 @@
   justify-content: flex-end;
 }
 
+.codeweek-blue-box{
+  background-color: $category-background5;
+  padding: 20px 20px;
+}
+
+.community_type{
+  display:flex;
+  padding: 20px;
+  flex-direction: column-reverse;
+  .text{
+    flex:2;
+    p {
+      line-height: 30px;
+      text-align: justify;
+    }
+  }
+  .image{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+
+    }
+  }
+}
+
 /*Media queries*/
 
 /* smartphones, iPhone, portrait 480x320 phones */
@@ -200,6 +227,9 @@
   }
   .codeweek-content-wrapper-inside{
     margin: 15px 115px;
+  }
+  .community_type {
+    flex-direction: row;
   }
 }
 /* big landscape tablets, laptops, and desktops */
