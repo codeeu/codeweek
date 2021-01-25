@@ -158,7 +158,6 @@
 
 .community_type{
   display:flex;
-  padding: 20px;
   flex-direction: column-reverse;
   .text{
     flex:2;
@@ -176,6 +175,10 @@
 
     }
   }
+}
+
+.community_type_section{
+  padding: 20px;
 }
 
 /*Media queries*/
