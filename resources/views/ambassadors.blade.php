@@ -7,7 +7,7 @@
         <section class="codeweek-banner ambassadors">
             <div class="text">
                 <h2>#CodeWeek</h2>
-                <h1>@lang('menu.ambassadors')</h1>
+                <h1>@lang('ambassador.community')</h1>
             </div>
             <div class="image">
                 <img src="images/banner_ambassadors.svg" class="static-image">
@@ -15,9 +15,8 @@
         </section>
 
         <section class="codeweek-content-wrapper">
-            <h1>Community</h1>
-            <p>EU Code Week thrives thanks to a vast, international community of volunteers. In this page you can meet the members that are active in your country.
-            <p style="line-height: 30px;">EU Code Week’s backbone is the Ambassadors, the Leading teachers and representatives of ministries of education in the EU and Western Balkans countries – the “Edu coordinators”.</p>
+            <p style="line-height: 30px;">EU Code Week thrives thanks to a vast, international community of volunteers. In this page you can meet the members that are active in your country.
+            EU Code Week’s backbone is the Ambassadors, the Leading teachers and representatives of ministries of education in the EU and Western Balkans countries – the “Edu coordinators”.
             <h3>Find out more about your local community by selecting your country:</h3>
 
             <section class="codeweek-searchbox">
@@ -56,7 +55,7 @@
             @endif
 
             <section class="codeweek-blue-box" >
-                <section>
+                <section class="community_type_section">
                     <h2 class="subtitle">Ambassadors</h2>
                     <div class="community_type">
                         <div class="text">
@@ -120,7 +119,7 @@
                     @endforelse
                 </div>
 
-                <section>
+                <section class="community_type_section">
                     <h2 class="subtitle">Leading teachers</h2>
                     <div class="community_type">
                         <div class="text">
@@ -138,7 +137,7 @@
                         </div>
                     </div>
                 </section>
-                <section>
+                <section class="community_type_section">
                     <h2 class="subtitle">Edu coordinators</h2>
                     <div class="community_type">
                         <div class="text">
@@ -158,7 +157,7 @@
                         </div>
                     </div>
                 </section>
-                <section>
+                <section class="community_type_section">
                     <h2 class="subtitle">Volunteer for EU Code Week</h2>
                     <div class="community_type">
                         <div class="text">
