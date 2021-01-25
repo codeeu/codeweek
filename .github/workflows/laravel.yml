@@ -22,13 +22,13 @@ jobs:
     - uses: actions/checkout@v2
     - name: Copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+    - name: Delete composer.json
+      run: rm composer.json
+
+    - name: Copy composer test file
+      run: cp composer-test.json composer.json
     - name: Install Dependencies
-      run: |
-          composer config "http-basic.nova.laravel.com" "${NOVA_USERNAME}" "${NOVA_PASSWORD}"
-          composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist --no-cache
-      env:
-        NOVA_USERNAME: ${{ secrets.NOVA_USERNAME }}
-        NOVA_PASSWORD: ${{ secrets.NOVA_PASSWORD }}
+      run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist --no-cache
     - name: Generate key
       run: php artisan key:generate
     - name: Directory Permissions
