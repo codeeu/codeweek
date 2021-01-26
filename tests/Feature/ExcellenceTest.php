@@ -42,8 +42,23 @@ class ExcellenceTest extends TestCase
 
         create('App\Excellence', ['edition' => 2018, 'user_id' => $user->id]);
         create('App\Excellence', ['edition' => 2019, 'user_id' => $user->id]);
+        create('App\Excellence', ['edition' => 2019, 'user_id' => $user->id, 'type' => 'SuperOrganiser']);
 
         $this->assertCount(2, $user->excellences);
+
+    }
+
+    /** @test */
+    public function user_can_have_a_super_organiser_certificate()
+    {
+
+        $user = create('App\User');
+
+        create('App\Excellence', ['edition' => 2018, 'user_id' => $user->id]);
+        create('App\Excellence', ['edition' => 2019, 'user_id' => $user->id]);
+        create('App\Excellence', ['edition' => 2019, 'user_id' => $user->id, 'type' => 'SuperOrganiser']);
+
+        $this->assertCount(1, $user->superOrganisers);
 
     }
 
@@ -96,29 +111,22 @@ class ExcellenceTest extends TestCase
 
     }
 
-
     /** @test */
-  /*  public function reporting_should_update_name_in_database()
+    public function winner_can_report_for_super_organiser()
     {
 
-
         $user = create('App\User');
-        create('App\Excellence', ['edition' => 2019, 'user_id' => $user->id]);
+        create('App\Excellence', ['edition' => 2020, 'user_id' => $user->id, 'type' => 'SuperOrganiser']);
 
         $this->signIn($user);
 
-        $request = [
-            "name_for_certificate" => "foobar user"
-        ];
-
-        $this->post('/certificates/excellence/2019', $request)
-            ->assertStatus(302);
-
-        $excellence = Excellence::where('edition',"=",2019)->where('user_id',"=",auth()->id())->first();
-        $this->assertEquals("foobar user",$excellence->name_for_certificate);
+        $this->get('/certificates/super-organiser/2020')
+            ->assertStatus(200);
 
 
-    }*/
+    }
+
+
 
 
     /** @test */
@@ -133,6 +141,23 @@ class ExcellenceTest extends TestCase
             ->assertStatus(403);
 
         $this->post('/certificates/excellence/2019')
+            ->assertStatus(403);
+
+
+    }
+
+    /** @test */
+    public function non_winner_cant_report_for_super_organiser()
+    {
+
+        $user = create('App\User');
+
+        $this->signIn($user);
+
+        $this->get('/certificates/super-organiser/2019')
+            ->assertStatus(403);
+
+        $this->post('/certificates/super-organiser/2019')
             ->assertStatus(403);
 
 
@@ -157,6 +182,25 @@ class ExcellenceTest extends TestCase
     }
 
     /** @test */
+    public function super_organiser_certificates_should_be_visible_on_certificates_page()
+    {
+
+        $user = create('App\User');
+
+        $this->signIn($user);
+        $name = "Bob et Bobette";
+
+        create('App\Excellence', ['edition' => 2020, 'user_id' => $user->id,'name_for_certificate'=>$name, 'type'=>'SuperOrganiser']);
+
+
+        $this->get('/certificates')
+            ->assertSee("Super Organiser Certificate 2020")
+            ->assertSee($name);
+
+
+    }
+
+    /** @test */
     public function excellence_certificates_should_be_visible_on_certificates_page_only_when_reported()
     {
 
@@ -172,7 +216,26 @@ class ExcellenceTest extends TestCase
         $this->get('/certificates')
             ->assertSee("Claim your certificate of excellence for 2017")
             ->assertSee("Claim your certificate of excellence for 2018")
-            ->assertDontSee("Claim your certificate of excellence for 2019");
+            ->assertDontSee("Claim your certificate of excellence for 2020");
+
+
+    }
+
+    /** @test */
+    public function super_organiser_certificates_should_be_visible_on_certificates_page_only_when_reported()
+    {
+
+        $user = create('App\User');
+
+        $this->signIn($user);
+        $name = NULL;
+
+        create('App\Excellence', ['edition' => 2020, 'user_id' => $user->id,'name_for_certificate'=>$name, 'type' => "SuperOrganiser"]);
+
+
+        $this->get('/certificates')
+            ->assertSee("Claim your super organiser certificate for 2020");
+
 
 
     }

@@ -1,5 +1,5 @@
 \documentclass[12pt]{article}
-\usepackage[T2A,T1]{fontenc}
+\usepackage[T1,LGR,T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[greek,russian,english]{babel}
 \usepackage{mathpazo}
@@ -18,6 +18,9 @@
 
 \usepackage{substitutefont}
 \substitutefont{T2A}{\rmdefault}{PTSerif-TLF}
+\substitutefont{LGR}{\rmdefault}{udidot}
+
+\definecolor{myorange}{RGB}{226, 83, 48}
 
 \newcommand\BackgroundPic{%
 \put(0,0){%
@@ -25,7 +28,7 @@
 \vfill
 \centering
 \includegraphics[width=\paperwidth,height=\paperheight,%
-keepaspectratio]{images/excellence-2020.png}%
+keepaspectratio]{images/super-organiser-2020.jpg}%
 \vfill
 }}}
 
@@ -37,11 +40,19 @@ keepaspectratio]{images/excellence-2020.png}%
 ~
 \begin{center}
 
-\vspace{6.5cm}
+\vspace{5.5cm}
 
 {\centering\Huge\
-\begin{otherlanguage*}{russian}
-\textbf{<CERTIFICATE_HOLDER_NAME>}
+\begin{otherlanguage*}{greek}
+\textcolor{myorange}{<CERTIFICATE_HOLDER_NAME>}
+\end{otherlanguage*}
+\par}
+
+\vspace{2.6cm}
+
+{\centering\Huge\
+\begin{otherlanguage*}{greek}
+\textbf{<NUMBER_OF_ACTIVITIES>}
 \end{otherlanguage*}
 \par}
 
@@ -68,3 +79,4 @@ keepaspectratio]{images/excellence-2020.png}%
 
 \end{center}
 \end{document}
+

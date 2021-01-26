@@ -19,13 +19,15 @@
 \usepackage{substitutefont}
 \substitutefont{T2A}{\rmdefault}{PTSerif-TLF}
 
+\definecolor{myorange}{RGB}{226, 83, 48}
+
 \newcommand\BackgroundPic{%
 \put(0,0){%
 \parbox[b][\paperheight]{\paperwidth}{%
 \vfill
 \centering
 \includegraphics[width=\paperwidth,height=\paperheight,%
-keepaspectratio]{images/excellence-2020.png}%
+keepaspectratio]{images/super-organiser-2020.jpg}%
 \vfill
 }}}
 
@@ -37,11 +39,19 @@ keepaspectratio]{images/excellence-2020.png}%
 ~
 \begin{center}
 
-\vspace{6.5cm}
+\vspace{5.5cm}
 
 {\centering\Huge\
 \begin{otherlanguage*}{russian}
-\textbf{<CERTIFICATE_HOLDER_NAME>}
+\textcolor{myorange}{<CERTIFICATE_HOLDER_NAME>}
+\end{otherlanguage*}
+\par}
+
+\vspace{2.6cm}
+
+{\centering\Huge\
+\begin{otherlanguage*}{russian}
+\textbf{<NUMBER_OF_ACTIVITIES>}
 \end{otherlanguage*}
 \par}
 

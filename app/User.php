@@ -2,6 +2,7 @@
 
 namespace App;
 
+use DB;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -159,7 +160,12 @@ class User extends Authenticatable
 
     public function excellences()
     {
-        return $this->hasMany('App\Excellence');
+        return $this->hasMany('App\Excellence')->where('type',"Excellence");
+    }
+
+    public function superOrganisers()
+    {
+        return $this->hasMany('App\Excellence')->where('type',"SuperOrganiser");
     }
 
     public function participations()
@@ -225,6 +231,16 @@ class User extends Authenticatable
     public static function getGeoIPData()
     {
         return geoip(geoip()->getClientIP());
+    }
+
+    public function activities($edition){
+
+        return  DB::table('events')
+            ->where('creator_id','=',$this->id)
+            ->where('status', "=", "APPROVED")
+            ->whereNull('deleted_at')
+            ->whereYear('end_date', '=', $edition)
+            ->count();
     }
 
 
