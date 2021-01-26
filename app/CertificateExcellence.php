@@ -23,7 +23,7 @@ class CertificateExcellence
     private $id;
     private $edition;
 
-    public function __construct($edition, $name_for_certificate)
+    public function __construct($edition, $name_for_certificate, $type = "excellence", $number_of_activities = null)
     {
         $this->edition = $edition;
         $this->name_of_certificate_holder = $name_for_certificate;
@@ -31,9 +31,11 @@ class CertificateExcellence
         $this->resource_path = resource_path() . "/latex";
         $this->pdflatex = env("PDFLATEX_PATH");
         $this->id = auth()->id() . '-' . str_random(10);
-        $this->templateName = "excellence-{$this->edition}.tex";
+        $this->type = $type;
+        $this->number_of_activities = $number_of_activities;
+        $this->templateName = "{$this->type}-{$this->edition}.tex";
 
-        Log::info("User ID " . auth()->id() . " generating excellence certificate with name: " . $name_for_certificate);
+        Log::info("User ID " . auth()->id() . " generating {$this->type} certificate with name: " . $name_for_certificate);
     }
 
     public function generate()
@@ -120,16 +122,19 @@ class CertificateExcellence
      */
     protected function customize_and_save_latex()
     {
-        if ($this->is_greek()) $this->templateName = "excellence_greek-{$this->edition}.tex";
+        if ($this->is_greek()) $this->templateName = "{$this->type}_greek-{$this->edition}.tex";
 //        Log::info($this->templateName);
         //open the latex template
         $base_template = Storage::disk('latex')->get($this->templateName);
 
         //replace the text in template
         $template = str_replace('<CERTIFICATE_HOLDER_NAME>', $this->tex_escape($this->name_of_certificate_holder), $base_template);
+        if ($this->type == "super-organiser") {
+            $template = str_replace('<NUMBER_OF_ACTIVITIES>', $this->tex_escape($this->number_of_activities), $template);
+        }
 
         //save it locally
-        Storage::disk('latex')->put($this->personalized_template_name.".tex", $template);
+        Storage::disk('latex')->put($this->personalized_template_name . ".tex", $template);
     }
 
     protected function run_pdf_creation(): void
