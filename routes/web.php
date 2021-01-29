@@ -208,5 +208,8 @@ Route::get('/profile', function () {
     return view('profile', $data);
 })->name('profile')->middleware('auth');
 
+Route::get('/hackathons', 'HackathonsController@index')->name('hackathons');
+Route::get('/hackathons/ireland', 'HackathonsController@before')->name('ireland');
+
 Auth::routes();
 
