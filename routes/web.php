@@ -208,5 +208,15 @@ Route::get('/profile', function () {
     return view('profile', $data);
 })->name('profile')->middleware('auth');
 
+
+Route::get('/leading-teachers/signup', 'LeadingTeachersSignup@index')->name('LT.signup');
+Route::post('/leading-teachers/signup', 'LeadingTeachersSignup@store')->name('LT.signup.store');
+
+Route::group(['middleware' => ['role:leading teacher|super admin|leading teacher admin']], function () {
+    Route::get('/leading-teachers/report', 'LeadingTeachersReport@index')->name('LT.report');
+});
+
+
+
 Auth::routes();
 
