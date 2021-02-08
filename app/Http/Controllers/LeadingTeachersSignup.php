@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Audience;
+use App\City;
+use App\Country;
 use Illuminate\Http\Request;
 
 class LeadingTeachersSignup extends Controller
@@ -18,28 +20,58 @@ class LeadingTeachersSignup extends Controller
             [
                 "id" => "Pre-primary",
                 "name" => "Pre-primary"
-            ],[
+            ], [
                 "id" => "Primary",
                 "name" => "Primary"
-            ],[
+            ], [
                 "id" => "Lower Secondary",
                 "name" => "Lower Secondary"
-            ],[
+            ], [
                 "id" => "Upper Secondary",
                 "name" => "Upper Secondary"
-            ],[
+            ], [
                 "id" => "Tertiary",
                 "name" => "Tertiary"
-            ],[
+            ], [
                 "id" => "Other",
                 "name" => "Other"
             ],
 
         ]);
 
-//        Pre-primary, Primary, Lower Secondary, Upper Secondary, Tertiary, Other
+        $countries = Country::whereIn("iso", [
+            "AL", "AT", "BE", "BA", "BG",
+            "HR", "CY", "CZ", "DK", "EE",
+            "FI", "FR", "DE", "GR", "HU",
+            "IN", "IE", "IL", "IT", "XK",
+            "LV", "LT", "LU", "MT", "ME",
+            "NL", "MK", "NO", "PL", "PT",
+            "RO", "RS", "SK", "SI", "ES",
+            "SE", "TN", "GB"
+        ])->orderBy("name")->get();
 
-        return view('leading-teachers.signup-form', compact(['countries', 'levels']));
+        $cities = City::whereIn("country_iso", [
+            "AL", "AT", "BE", "BA", "BG",
+            "HR", "CY", "CZ", "DK", "EE",
+            "FI", "FR", "DE", "GR", "HU",
+            "IN", "IE", "IL", "IT", "XK",
+            "LV", "LT", "LU", "MT", "ME",
+            "NL", "MK", "NO", "PL", "PT",
+            "RO", "RS", "SK", "SI", "ES",
+            "SE", "TN", "GB"
+        ])
+
+        ->get()
+            ->sortBy([
+                ["country","asc"],
+                ["city","asc"]
+            ])
+        ;
+
+//        dd($cities);
+
+
+        return view('leading-teachers.signup-form', compact(['countries', 'levels', 'cities']));
     }
 
     public function store(Request $request)

@@ -49,6 +49,21 @@
                         </div>
                     </div>
 
+                    <div class="codeweek-form-field-wrapper">
+                        <div class="codeweek-form-field">
+                            <label for="id_country">* City</label>
+                            <select id="id_country" name="country" class="codeweek-input-select">
+                                <option value="">Choose your city</option>
+                                @foreach ($cities as $city)
+                                    <option value="{{$city->id}}">{{$city->country}} / {{$city->city}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="errors">
+                            @component('components.validation-errors', ['field'=>'country'])@endcomponent
+                        </div>
+                    </div>
+
                     @component('components.report.form-field-LT',['label'=>'City where you teach','field_name'=>'city','type'=>'text','required'=>true])@endcomponent
 
 
