@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Report Excellence for Codeweek edition of',
+    'title' => 'Generate your certificate of Excellence for Codeweek',
     'generate' => 'Generate the Certificate of Excellence',
     'required'=>'Required fields are marked with an * asterisk.',
     'name_for_certificate' => [

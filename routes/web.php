@@ -126,6 +126,9 @@ Route::get('certificates', 'CertificateController@list')->name('certificates')->
 Route::get('certificates/excellence/{edition}', 'ExcellenceController@report')->name('certificate_excellence')->middleware('auth');
 Route::post('certificates/excellence/{edition}', 'ExcellenceController@generate')->name('certificate_excellence_report')->middleware('auth');
 
+Route::get('certificates/super-organiser/{edition}', 'SuperOrganiserController@report')->name('certificate_super_organiser')->middleware('auth');
+Route::post('certificates/super-organiser/{edition}', 'SuperOrganiserController@generate')->name('certificate_super_organiser_report')->middleware('auth');
+
 Route::get('participation', 'ParticipationController@show')->name('participation')->middleware('auth');
 Route::post('participation', 'ParticipationController@generate')->name('participation_submit')->middleware('auth');
 
