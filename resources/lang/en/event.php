@@ -77,16 +77,17 @@ return [
     ],
 
     'audience' => [
-        'Pre-school children' => 'Pre-school children',
-        'Elementary school students' => 'Elementary school students',
-        'High school students' => 'High school students',
-        'Graduate students' => 'Graduate students',
+        'Pre-school children' => 'Pre-primary education',
+        'Elementary school students' => 'Primary school',
+        'High school students' => 'Secondary school',
+        'Graduate students' => 'Higher Education',
         'Post graduate students' => 'Post graduate students',
         'Employed adults' => 'Employed adults',
         'Unemployed adults' => 'Unemployed adults',
         'Other (see description)' => 'Other (see description)',
         'Teachers' => 'Teachers',
     ],
+
     'theme' => [
         'Basic programming concepts' => 'Basic programming concepts',
         'Web development' => 'Web development',

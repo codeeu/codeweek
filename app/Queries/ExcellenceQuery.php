@@ -20,7 +20,10 @@ class ExcellenceQuery
     public static function mine()
     {
 
-        return Excellence::where('user_id', auth()->id());
+        return Excellence::where([
+            'user_id' => auth()->id(),
+            'type' => 'Excellence'
+        ]);
 
     }
 

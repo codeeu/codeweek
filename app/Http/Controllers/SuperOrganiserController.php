@@ -3,27 +3,25 @@
 namespace App\Http\Controllers;
 
 use App\CertificateExcellence;
-use App\Excellence;
 use App\Queries\ExcellenceQuery;
-use Gate;
+use App\Queries\SuperOrganiserQuery;
 use Illuminate\Http\Request;
+use Gate;
 
-
-class ExcellenceController extends Controller
+class SuperOrganiserController extends Controller
 {
-
     public function report($edition)
     {
 
         // Check if user is a winner for this edition
-        if (Gate::denies('report-excellence', $edition)) {
+        if (Gate::denies('report-super-organiser', $edition)) {
             // The current user can't report for excellence...
-            abort(403, 'You are not eligible to receive a Codeweek4All Excellence Certificate.');
+            abort(403, 'You are not eligible to receive a Codeweek4All Super Organiser Certificate.');
 
         }
 
 
-        return view('excellence.report', compact('edition'));
+        return view('super-organiser.report', compact('edition'));
 
     }
 
@@ -31,9 +29,9 @@ class ExcellenceController extends Controller
     {
 
 
-        if (Gate::denies('report-excellence', $edition)) {
+        if (Gate::denies('report-super-organiser', $edition)) {
             // The current user can't report for excellence...
-            abort(403, 'You are not eligible to receive a Codeweek4All Excellence Certificate.');
+            abort(403, 'You are not eligible to receive a Codeweek4All Super Organiser Certificate.');
 
         }
 
@@ -43,9 +41,11 @@ class ExcellenceController extends Controller
 
         $name = $request["name_for_certificate"];
 
-        $certificate_url = (new CertificateExcellence($edition, $name))->generate();
+        $number_of_activities = auth()->user()->activities($edition);
 
-        ExcellenceQuery::byYear($edition)
+        $certificate_url = (new CertificateExcellence($edition, $name, 'super-organiser', $number_of_activities))->generate();
+
+        SuperOrganiserQuery::byYear($edition)
             ->update([
                 'name_for_certificate' => $name,
                 'certificate_url' => $certificate_url
@@ -56,7 +56,4 @@ class ExcellenceController extends Controller
 
 
     }
-
-
-
 }
