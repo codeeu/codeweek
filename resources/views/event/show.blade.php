@@ -2,6 +2,8 @@
 
 <x-tailwind></x-tailwind>
 
+
+
 @section('content')
 
     <section id="codeweek-show-event-page" class="codeweek-page">
@@ -269,10 +271,3 @@
 @endpush
 
 
-<script>
-    import ReportedEvent from "../../assets/js/components/ReportedEvent";
-
-    export default {
-        components: {ReportedEvent}
-    }
-</script>
