@@ -14,7 +14,8 @@
         data() {
             return {
                 body: '',
-                show: false
+                show: false,
+                level: ''
             }
         },
 

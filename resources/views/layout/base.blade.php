@@ -21,6 +21,8 @@
 
     <link href="{{asset('css/cookiecuttr.css')}}" media="screen" rel="stylesheet"/>
 
+    @stack('extra-css')
+
     @yield('extra-css')
 
 
