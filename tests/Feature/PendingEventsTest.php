@@ -21,9 +21,9 @@ class PendingEventsTest extends TestCase
         $this->signIn($ambassador);
 
 
-        $eventPendingInCountry = create('App\Event', ['country_iso' => $ambassador->country->iso, 'status' => 'PENDING']);
-        $eventPendingInAnotherCountry = create('App\Event', ['country_iso' => create('App\Country')->iso, 'status' => 'PENDING']);
-        $eventApprovedInCountry = create('App\Event', ['country_iso' => $ambassador->country->iso, 'status' => 'APPROVED']);
+        $eventPendingInCountry = create('App\Event', ['country_iso' => $ambassador->country->iso, 'status' => 'PENDING', 'title'=> 'foobar title 1']);
+        $eventPendingInAnotherCountry = create('App\Event', ['country_iso' => create('App\Country')->iso, 'status' => 'PENDING', 'title'=> 'foobar title 2']);
+        $eventApprovedInCountry = create('App\Event', ['country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'title'=> 'foobar title 3']);
 
 
         $this->get('/pending')

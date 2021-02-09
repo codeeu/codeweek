@@ -38,7 +38,7 @@ class ExcellenceController extends Controller
         }
 
         $this->validate($request, [
-            'name_for_certificate' => 'required'
+            'name_for_certificate' => 'required|max:40'
         ]);
 
         $name = $request["name_for_certificate"];

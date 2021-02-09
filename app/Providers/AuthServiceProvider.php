@@ -41,5 +41,19 @@ class AuthServiceProvider extends ServiceProvider
 
             return $collection->count() > 0;
         });
+
+        Gate::define('report-super-organiser', function ($user, $edition) {
+
+            $superOrganisers = $user->superOrganisers;
+
+            $collection = $superOrganisers->filter(
+                function($value,$key) use ($edition) {
+                    return $value->edition == $edition;
+                }
+            );
+
+
+            return $collection->count() > 0;
+        });
     }
 }
