@@ -16,7 +16,7 @@ class ExcellenceWinnersHelper
 
     public static function query($edition = null, $withFullDetails = false)
     {
-        $ttl = 1;
+        $ttl = 60*60;
 //        $ttl = 60*60;
         return Cache::remember('details', $ttl, function () use ($withFullDetails, $edition) {
 //            Log::info('query without cache');

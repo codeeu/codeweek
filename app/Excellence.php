@@ -35,11 +35,13 @@ class Excellence extends Model
 
     protected $fillable=['edition','name_for_certificate','certificate_url'];
 
-    public static function byYear($year){
+    public static function byYear($year, $type = "Excellence"){
         return Excellence::with('user')->where(
             [
                 ["edition", "=", $year],
-                ["notified_at" , "=", null]
+                ["notified_at" , "=", null],
+                ["type" , "=", $type],
+
             ]
             )->get();
     }
