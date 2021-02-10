@@ -213,6 +213,7 @@ Route::get('/profile', function () {
 
 
 Route::get('/leading-teachers/signup', 'LeadingTeachersSignup@index')->name('LT.signup');
+Route::view('/leading-teachers/success','leading-teachers.signup-form-success');
 Route::post('/leading-teachers/signup', 'LeadingTeachersSignup@store')->name('LT.signup.store');
 
 Route::group(['middleware' => ['role:leading teacher|super admin|leading teacher admin']], function () {
