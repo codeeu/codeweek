@@ -7,7 +7,8 @@
         <input id="{{$field_name}}"
                type="{{$type}}"
                name="{{$field_name}}"
-               value="{{old($field_name)}}">
+               wire:model="{{$field_name}}"
+               >
     </div>
 
     @if($errors->has($field_name))

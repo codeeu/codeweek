@@ -2,9 +2,12 @@
 
 namespace Tests\Feature;
 
+use App\Http\Livewire\LeadingTeacherSignupForm;
 use App\School;
+use App\User;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Http\Response;
+use Livewire;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -57,23 +60,20 @@ class LeadingTeacherTest extends TestCase
     /** @test */
     public function should_become_leading_teacher_after_signup_()
     {
+        //TODO: change to livewire testing
 
-        // Sign-in as a user
         $user = create('App\User');
         $this->signIn($user);
 
         $this->assertFalse($user->hasRole('leading teacher'));
 
-        $request = [
-            "first_name" => "Foo",
-            "last_name" => "Bar",
-            "country" => "Mars",
-            "twitter" => null,
+        Livewire::test(LeadingTeacherSignupForm::class)
+            ->set('first_name', 'Foo')
+            ->set('last_name', 'Bar')
+            ->set('country', 'Mars')
+            ->set('twitter', null)
+            ->call('submit');
 
-        ];
-
-        $this->post(route('LT.signup.store'), $request)
-            ->assertStatus(Response::HTTP_OK);
 
         $this->assertTrue($user->hasRole('leading teacher'));
 
