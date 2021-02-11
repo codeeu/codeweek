@@ -220,7 +220,8 @@ Route::group(['middleware' => ['role:leading teacher|super admin|leading teacher
     Route::get('/leading-teachers/report', 'LeadingTeachersReport@index')->name('LT.report');
 });
 
-
+Route::get('/hackathons', 'HackathonsController@index')->name('hackathons');
+Route::get('/hackathons/ireland', 'HackathonsController@before')->name('ireland');
 
 Auth::routes();
 
