@@ -60,17 +60,74 @@
 
             <div class="codeweek-form-field-wrapper">
                 <div class="codeweek-form-field">
-                    <label for="id_audience">* Students Levels</label>
-                    <select name="studentLevels" id="studentLevels" multiple size="6" class="codeweek-input-select" wire:model="studentLevels" style="height:140px">
+                    <label for="selectedLevels">* What level of students do you teach ?</label>
+                    <select name="selectedLevels" id="selectedLevels" multiple size="6" class="codeweek-input-select" wire:model="selectedLevels" style="height:140px">
                         @foreach($levels as $level)
-                            <option value="{{$level['id']}}">{{$level['name']}}</option>
+                            <option value="{{$level['id']}}">{{__("resources.resources.levels.{$level['name']}")}}</option>
                         @endforeach
                     </select>
                 </div>
                 <div class="errors">
-                    @component('components.validation-errors', ['field'=>'studentLevels'])@endcomponent
+                    @component('components.validation-errors', ['field'=>'selectedLevels'])@endcomponent
                 </div>
             </div>
+
+            <div class="codeweek-form-field-wrapper">
+                <div class="codeweek-form-field">
+                    <label for="selectedSubjects">* What subject(s) do you teach ?</label>
+                    <select name="selectedSubjects" id="selectedSubjects" multiple size="6" class="codeweek-input-select" wire:model="selectedSubjects" style="height:140px">
+                        @foreach($subjects as $subject)
+                            <option value="{{$subject['id']}}">{{$subject['name']}}</option>
+                        @endforeach
+                    </select>
+                </div>
+                <div class="errors">
+                    @component('components.validation-errors', ['field'=>'selectedSubjects'])@endcomponent
+                </div>
+            </div>
+
+            <div class="codeweek-form-field-wrapper">
+                <div class="codeweek-form-field">
+                    <label for="selectedExpertises">What are your expertise(s)</label>
+                    <select name="selectedExpertises" id="selectedExpertises" multiple size="6" class="codeweek-input-select" wire:model="selectedExpertises" style="height:170px">
+                        @foreach($expertises as $expertise)
+                            <option value="{{$expertise['id']}}">{{$expertise['name']}}</option>
+                        @endforeach
+                    </select>
+                </div>
+                <div class="errors">
+                    @component('components.validation-errors', ['field'=>'selectedExpertises'])@endcomponent
+                </div>
+            </div>
+
+            <div class="codeweek-form-field-privacy">
+                <label>
+                    <input id="isLeadingTeacher" name="isLeadingTeacher" wire:model="isLeadingTeacher"
+                           type="checkbox">
+                    I declare that I am currently a Leading Teacher for EU Code Week.
+                    <div style="color: red; margin-top:-20px;">
+                    @component('components.validation-errors', ['field'=>'isLeadingTeacher'])
+                        @endcomponent
+                </div>
+                </label>
+
+            </div>
+
+
+            <div class="codeweek-form-field-privacy">
+                <label>
+                    <input id="checkPrivacy" name="privacy" wire:model="privacy"
+                           type="checkbox">
+                    By ticking this box, I confirm that I have read and consent with the <a href="/privacy" target="_blank">treatment of the personal information</a>. <br/>
+                    I have shared in this form and namely with the publication of that on the codeweek.eu. I understand that this information is shared in order to give better visibility to the Leading Teachers and allow interested teachers and individuals to contact me for specific questions or queries regarding the EU Code Week initiative.
+                    <div style="color: red; margin-top:-20px;">
+                @component('components.validation-errors', ['field'=>'privacy'])
+                        @endcomponent
+            </div>
+                </label>
+
+            </div>
+
 
 
             <div class="codeweek-form-button-container">

@@ -131,6 +131,21 @@ class User extends Authenticatable
 
     }
 
+    public function getLeadingTeacherAttribute(){
+        return $this->isLeadingTeacher();
+    }
+
+    public function setLeadingTeacherAttribute($value){
+
+        if ($value){
+            $this->assignRole('leading teacher');
+        } else {
+            $this->removeRole('leading teacher');
+        }
+
+
+    }
+
     public function isAdmin()
     {
 
@@ -139,8 +154,12 @@ class User extends Authenticatable
 
     public function isAmbassador()
     {
-
         return $this->hasRole("ambassador");
+    }
+
+    public function isLeadingTeacher()
+    {
+        return $this->hasRole("leading teacher");
     }
 
     public function events()
@@ -171,6 +190,21 @@ class User extends Authenticatable
     public function participations()
     {
         return $this->hasMany('App\Participation');
+    }
+
+    public function expertises()
+    {
+        return $this->belongsToMany(LeadingTeacherExpertise::class,'leading_teacher_expertise_user','lte_id','user_id');
+    }
+
+    public function levels()
+    {
+        return $this->belongsToMany(ResourceLevel::class);
+    }
+
+    public function subjects()
+    {
+        return $this->belongsToMany(ResourceSubject::class);
     }
 
     public function scopeFilter($query, UserFilters $filters)
