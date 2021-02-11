@@ -5,6 +5,9 @@ namespace App\Http\Livewire;
 use App\Audience;
 use App\City;
 use App\Country;
+use App\LeadingTeacherExpertise;
+use App\ResourceLevel;
+use App\ResourceSubject;
 use Livewire\Component;
 
 class LeadingTeacherSignupForm extends Component
@@ -17,41 +20,48 @@ class LeadingTeacherSignupForm extends Component
     public $first_name;
     public $last_name;
     public $selectedCountry;
+    public $subjects;
+    public $expertises;
     public $city;
-    public $studentLevels = null;
     public $twitter;
     public $message;
+    public $privacy;
+    public $isLeadingTeacher;
+    public $selectedSubjects = null;
+    public $selectedExpertises = null;
+    public $selectedLevels = null;
 
     public function mount()
     {
         $countries = \App\Country::all()->sortBy('name');
-        $levels = Audience::all();
+        $levels = ResourceLevel::whereTeach(true)->get();
+        $subjects = ResourceSubject::orderBy('position')->get();
 
 
         //dd($levels);
-
-        $levels = [
-            [
-                "id" => "Pre-primary",
-                "name" => "Pre-primary"
-            ], [
-                "id" => "Primary",
-                "name" => "Primary"
-            ], [
-                "id" => "Lower Secondary",
-                "name" => "Lower Secondary"
-            ], [
-                "id" => "Upper Secondary",
-                "name" => "Upper Secondary"
-            ], [
-                "id" => "Tertiary",
-                "name" => "Tertiary"
-            ], [
-                "id" => "Other",
-                "name" => "Other"
-            ],
-
-        ];
+//
+//        $levels = [
+//            [
+//                "id" => "Pre-primary",
+//                "name" => "Pre-primary"
+//            ], [
+//                "id" => "Primary",
+//                "name" => "Primary"
+//            ], [
+//                "id" => "Lower Secondary",
+//                "name" => "Lower Secondary"
+//            ], [
+//                "id" => "Upper Secondary",
+//                "name" => "Upper Secondary"
+//            ], [
+//                "id" => "Tertiary",
+//                "name" => "Tertiary"
+//            ], [
+//                "id" => "Other",
+//                "name" => "Other"
+//            ],
+//
+//        ];
 
         $countries = Country::whereIn("iso", [
             "AL", "AT", "BE", "BA", "BG",
@@ -82,11 +92,16 @@ class LeadingTeacherSignupForm extends Component
 //            ])
 //        ;
 
+        $expertises = LeadingTeacherExpertise::orderBy('position')->get();
+
 
         $this->countries = $countries;
 
 //        $this->cities = $cities;
         $this->levels = $levels;
+        $this->subjects = $subjects;
+        $this->expertises = $expertises;
+        $this->privacy = auth()->user()->privacy === 1;
         $this->email = auth()->user()->email;
 
     }
@@ -102,7 +117,12 @@ class LeadingTeacherSignupForm extends Component
         'selectedCountry' => 'required|filled',
 //        'city' => 'required|filled',
         'twitter' => 'present',
-        'studentLevels' => 'required'
+        'selectedLevels' => 'required',
+        'selectedSubjects' => 'required',
+        'selectedExpertises' => 'required',
+        'isLeadingTeacher' => 'accepted',
+        'privacy' => 'accepted',
+
     ];
 
     public function submit()
@@ -112,11 +132,23 @@ class LeadingTeacherSignupForm extends Component
 
         $user = auth()->user();
         $user->assignRole('leading teacher');
+        $user->expertises()->attach($this->selectedExpertises);
+        $user->levels()->attach($this->selectedLevels);
+        $user->subjects()->attach($this->selectedSubjects);
+        $user->firstname = $this->first_name;
+        $user->lastname = $this->last_name;
+        $user->twitter = $this->twitter;
+        $user->privacy = true;
+
+        $user->save();
+
+//        dd($user->expertises()->count());
+
 
         return redirect()->to('/leading-teachers/success');
 
-        //dd('coucou');
-        // Execution doesn't reach here if validation fails.
+
+
 
 
     }

@@ -3,6 +3,8 @@
 namespace Tests\Feature;
 
 use App\Http\Livewire\LeadingTeacherSignupForm;
+use App\LeadingTeacherExpertise;
+use App\ResourceSubject;
 use App\School;
 use App\User;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -65,17 +67,38 @@ class LeadingTeacherTest extends TestCase
         $user = create('App\User');
         $this->signIn($user);
 
-        $this->assertFalse($user->hasRole('leading teacher'));
+        $this->assertFalse($user->leadingTeacher);
+
+        $level1 = create('App\ResourceLevel', ["id"=>80,"teach" => true]);
+        $level2 = create('App\ResourceLevel', ["id"=>85,"teach" => true]);
+        $subject1 = create('App\ResourceSubject',["id"=>511]);
+        $subject2 = create('App\ResourceSubject',["id"=>512]);
+        $subject3 = create('App\ResourceSubject',["id"=>400]);
+        $expertise1 = create('App\LeadingTeacherExpertise', ["id" => 101]);
+        $expertise2 = create('App\LeadingTeacherExpertise', ["id" => 102]);
+
 
         Livewire::test(LeadingTeacherSignupForm::class)
             ->set('first_name', 'Foo')
             ->set('last_name', 'Bar')
-            ->set('country', 'Mars')
+            ->set('selectedCountry', 'Mars')
             ->set('twitter', null)
+            ->set('selectedLevels', [$level1->id, $level2->id])
+            ->set('selectedSubjects', [$subject1->id, $subject2->id, $subject3->id])
+            ->set('selectedExpertises', [$expertise1->id, $expertise2->id])
+            ->set('isLeadingTeacher', true)
+            ->set('privacy', true)
             ->call('submit');
 
 
-        $this->assertTrue($user->hasRole('leading teacher'));
+
+        $this->assertEquals([101, 102], $user->expertises()->pluck('id')->toArray());
+        $this->assertEquals([80,85], $user->levels()->pluck('id')->toArray());
+        $this->assertEquals([511,512,400], $user->subjects()->pluck('id')->toArray());
+        $this->assertEquals('Foo Bar', $user->fullName);
+
+
+        $this->assertTrue($user->leadingTeacher);
 
 
     }
