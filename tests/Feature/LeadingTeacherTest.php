@@ -62,13 +62,13 @@ class LeadingTeacherTest extends TestCase
     /** @test */
     public function should_become_leading_teacher_after_signup_()
     {
-        //TODO: change to livewire testing
 
         $user = create('App\User');
         $this->signIn($user);
 
         $this->assertFalse($user->leadingTeacher);
 
+        $city = create('App\City', ["id"=>1004436363,"city" => "FooBarCity"]);
         $level1 = create('App\ResourceLevel', ["id"=>80,"teach" => true]);
         $level2 = create('App\ResourceLevel', ["id"=>85,"teach" => true]);
         $subject1 = create('App\ResourceSubject',["id"=>511]);
@@ -86,6 +86,7 @@ class LeadingTeacherTest extends TestCase
             ->set('selectedLevels', [$level1->id, $level2->id])
             ->set('selectedSubjects', [$subject1->id, $subject2->id, $subject3->id])
             ->set('selectedExpertises', [$expertise1->id, $expertise2->id])
+            ->set('selectedCity', 1004436363)
             ->set('isLeadingTeacher', true)
             ->set('privacy', true)
             ->call('submit');
@@ -96,10 +97,10 @@ class LeadingTeacherTest extends TestCase
         $this->assertEquals([80,85], $user->levels()->pluck('id')->toArray());
         $this->assertEquals([511,512,400], $user->subjects()->pluck('id')->toArray());
         $this->assertEquals('Foo Bar', $user->fullName);
+        $this->assertEquals('FooBarCity', $user->city->name);
 
 
         $this->assertTrue($user->leadingTeacher);
-
 
     }
 
