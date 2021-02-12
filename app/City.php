@@ -42,7 +42,7 @@ class City extends Model
          AS distance', [$latitude, $longitude, $latitude])
             ->orderBy('distance')
             ->take(1)
-            ->get();
+            ->first();
 
         return $city;
 

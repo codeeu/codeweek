@@ -49,24 +49,6 @@ class LeadingTeacherSignupForm extends Component
             "SE", "TN", "GB"
         ])->orderBy("name")->get();
 
-//        $cities = City::whereIn("country_iso", [
-//            "AL", "AT", "BE", "BA", "BG",
-//            "HR", "CY", "CZ", "DK", "EE",
-//            "FI", "FR", "DE", "GR", "HU",
-//            "IN", "IE", "IL", "IT", "XK",
-//            "LV", "LT", "LU", "MT", "ME",
-//            "NL", "MK", "NO", "PL", "PT",
-//            "RO", "RS", "SK", "SI", "ES",
-//            "SE", "TN", "GB"
-//        ])
-//
-//            ->get()
-//            ->sortBy([
-//                ["country","asc"],
-//                ["city","asc"]
-//            ])
-//        ;
-
         $expertises = LeadingTeacherExpertise::orderBy('position')->get();
 
 
@@ -80,7 +62,13 @@ class LeadingTeacherSignupForm extends Component
         $this->email = auth()->user()->email;
 
         $location = geoip(geoip()->getClientIP());
-        $this->closestCity = City::getClosestCity($location->lon, $location->lat);
+        if (!is_null($location)){
+            $this->closestCity = City::getClosestCity($location->lon, $location->lat);
+            $this->selectedCity = $this->closestCity->id;
+            $this->selectedCountry = $this->closestCity->country_iso;
+        }
+
+
 
     }
 
