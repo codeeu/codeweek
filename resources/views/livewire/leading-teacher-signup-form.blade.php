@@ -4,9 +4,6 @@
           wire:submit.prevent="submit">
 
 
-        Coucou {{$closestCity}}
-
-
         <div class="codeweek-form-inner-container">
 
 
