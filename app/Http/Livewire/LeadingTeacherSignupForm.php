@@ -14,6 +14,7 @@ class LeadingTeacherSignupForm extends Component
 {
 
     public $countries;
+    public $closestCity;
     public $cities = [];
     public $levels;
     public $email;
@@ -22,7 +23,7 @@ class LeadingTeacherSignupForm extends Component
     public $selectedCountry;
     public $subjects;
     public $expertises;
-    public $city;
+    public $selectedCity;
     public $twitter;
     public $message;
     public $privacy;
@@ -36,32 +37,6 @@ class LeadingTeacherSignupForm extends Component
         $countries = \App\Country::all()->sortBy('name');
         $levels = ResourceLevel::whereTeach(true)->get();
         $subjects = ResourceSubject::orderBy('position')->get();
-
-
-        //dd($levels);
-//
-//        $levels = [
-//            [
-//                "id" => "Pre-primary",
-//                "name" => "Pre-primary"
-//            ], [
-//                "id" => "Primary",
-//                "name" => "Primary"
-//            ], [
-//                "id" => "Lower Secondary",
-//                "name" => "Lower Secondary"
-//            ], [
-//                "id" => "Upper Secondary",
-//                "name" => "Upper Secondary"
-//            ], [
-//                "id" => "Tertiary",
-//                "name" => "Tertiary"
-//            ], [
-//                "id" => "Other",
-//                "name" => "Other"
-//            ],
-//
-//        ];
 
         $countries = Country::whereIn("iso", [
             "AL", "AT", "BE", "BA", "BG",
@@ -95,19 +70,32 @@ class LeadingTeacherSignupForm extends Component
         $expertises = LeadingTeacherExpertise::orderBy('position')->get();
 
 
+        $this->geoposition =
         $this->countries = $countries;
 
-//        $this->cities = $cities;
         $this->levels = $levels;
         $this->subjects = $subjects;
         $this->expertises = $expertises;
         $this->privacy = auth()->user()->privacy === 1;
         $this->email = auth()->user()->email;
 
+        $location = geoip(geoip()->getClientIP());
+        $this->closestCity = City::getClosestCity($location->lon, $location->lat);
+
     }
 
     public function render()
     {
+
+        if ($this->selectedCountry) {
+            $cities = City::where("country_iso", "=", $this->selectedCountry)
+                ->get()
+                ->sortBy([
+                    ["city", "asc"]
+                ]);
+            $this->cities = $cities;
+        }
+
         return view('livewire.leading-teacher-signup-form');
     }
 
@@ -115,7 +103,7 @@ class LeadingTeacherSignupForm extends Component
         'first_name' => 'required',
         'last_name' => 'required',
         'selectedCountry' => 'required|filled',
-//        'city' => 'required|filled',
+        'selectedCity' => 'required|filled',
         'twitter' => 'present',
         'selectedLevels' => 'required',
         'selectedSubjects' => 'required',
@@ -131,24 +119,25 @@ class LeadingTeacherSignupForm extends Component
         $this->validate();
 
         $user = auth()->user();
-        $user->assignRole('leading teacher');
-        $user->expertises()->attach($this->selectedExpertises);
+
+        $user->levels()->detach();
+        $user->subjects()->detach();
+        $user->expertises()->detach();
+
         $user->levels()->attach($this->selectedLevels);
         $user->subjects()->attach($this->selectedSubjects);
+        $user->expertises()->attach($this->selectedExpertises);
         $user->firstname = $this->first_name;
         $user->lastname = $this->last_name;
         $user->twitter = $this->twitter;
         $user->privacy = true;
+        $user->city_id = $this->selectedCity;
 
         $user->save();
 
-//        dd($user->expertises()->count());
-
+        $user->assignRole('leading teacher');
 
         return redirect()->to('/leading-teachers/success');
-
-
-
 
 
     }

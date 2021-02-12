@@ -194,7 +194,7 @@ class User extends Authenticatable
 
     public function expertises()
     {
-        return $this->belongsToMany(LeadingTeacherExpertise::class,'leading_teacher_expertise_user','lte_id','user_id');
+        return $this->belongsToMany(LeadingTeacherExpertise::class,'leading_teacher_expertise_user','user_id','lte_id');
     }
 
     public function levels()
@@ -207,9 +207,18 @@ class User extends Authenticatable
         return $this->belongsToMany(ResourceSubject::class);
     }
 
+    public function city()
+    {
+        return $this->belongsTo(City::class);
+    }
+
     public function scopeFilter($query, UserFilters $filters)
     {
         return $filters->apply($query);
+    }
+
+    public function getClosestCity(){
+
     }
 
 

@@ -4,6 +4,9 @@
           wire:submit.prevent="submit">
 
 
+        Coucou {{$closestCity}}
+
+
         <div class="codeweek-form-inner-container">
 
 
@@ -45,15 +48,15 @@
             <div class="codeweek-form-field-wrapper">
                 <div class="codeweek-form-field">
                     <label for="id_city">* City</label>
-                    <select id="id_city" name="city" class="codeweek-input-select" wire:model="city">
+                    <select id="id_city" name="selectedCity" class="codeweek-input-select" wire:model="selectedCity">
                         <option value="">Choose your city</option>
                         @foreach ($cities as $city)
-                            <option value="{{$city->id}}">{{$city->country}} / {{$city->city}}</option>
+                            <option value="{{$city->id}}">{{$city->city}}</option>
                         @endforeach
                     </select>
                 </div>
                 <div class="errors">
-                    @component('components.validation-errors', ['field'=>'city'])@endcomponent
+                    @component('components.validation-errors', ['field'=>'selectedCity'])@endcomponent
                 </div>
             </div>
             @endif
