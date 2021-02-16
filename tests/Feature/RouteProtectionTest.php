@@ -35,8 +35,6 @@ class RouteProtectionTest extends TestCase
         $this->event_owner = create('App\User');
         $this->event_owner->assignRole('event owner');
 
-
-
     }
 
 

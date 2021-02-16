@@ -44,9 +44,4 @@ class ResourceLevel extends Model
     {
         return $this->belongsToMany('App\ResourceItem');
     }
-
-    public function users()
-    {
-        return $this->belongsToMany('App\User');
-    }
 }
