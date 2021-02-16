@@ -44,7 +44,7 @@
             @if(!is_null($selectedCountry) && $selectedCountry !== '')
             <div class="codeweek-form-field-wrapper">
                 <div class="codeweek-form-field">
-                    <label for="id_city">* City</label>
+                    <label for="id_city">* Closest City</label>
                     <select id="id_city" name="selectedCity" class="codeweek-input-select" wire:model="selectedCity">
                         <option value="">Choose your city</option>
                         @foreach ($cities as $city)
@@ -60,7 +60,7 @@
 
             <div class="codeweek-form-field-wrapper">
                 <div class="codeweek-form-field">
-                    <label for="selectedLevels">* What level of students do you teach ?</label>
+                    <label for="selectedLevels">* What level(s) of students do you teach ?</label>
                     <select name="selectedLevels" id="selectedLevels" multiple size="6" class="codeweek-input-select" wire:model="selectedLevels" style="height:140px">
                         @foreach($levels as $level)
                             <option value="{{$level['id']}}">{{__("resources.resources.levels.{$level['name']}")}}</option>
