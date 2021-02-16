@@ -268,7 +268,7 @@ return [
         'questions' => [
             'content' =>
                 [
-                    1 => 'Q1. Is it possible to draw the two hearts like in the final part of the video by guiding the robot on all the necessary boxes without ever passing twice on a box?',
+                    1 => 'Is it possible to draw the two hearts like in the final part of the video by guiding the robot on all the necessary boxes without ever passing twice on a box?',
                 ]
 
         ]
@@ -282,8 +282,8 @@ return [
         'questions' => [
             'content' =>
                 [
-                    1 => 'Q1. Can you explain the difference between a plotter and a printer?',
-                    2 => 'Q1. What design would RobyPrinter produce by moving along the lines on the board, if it executed the sequence of commands dictated at the end of the video?',
+                    1 => 'Can you explain the difference between a plotter and a printer?',
+                    2 => 'What design would RobyPrinter produce by moving along the lines on the board, if it executed the sequence of commands dictated at the end of the video?',
                 ]
 
         ]
@@ -297,7 +297,7 @@ return [
         'questions' => [
             'content' =>
                 [
-                    1 => 'Q1. Try to make a chequered design and represent it with RLE encoding. The size of the design is equal to the number of squares, but what is the size of its RLE representation?'
+                    1 => 'Try to make a chequered design and represent it with RLE encoding. The size of the design is equal to the number of squares, but what is the size of its RLE representation?'
                 ]
 
         ]
@@ -313,7 +313,7 @@ return [
         'questions' => [
             'content' =>
                 [
-                    1 => 'Q1. Try to decode and draw the images I mention at the end of the video.'
+                    1 => 'Try to decode and draw the images I mention at the end of the video.'
                 ]
 
         ]
