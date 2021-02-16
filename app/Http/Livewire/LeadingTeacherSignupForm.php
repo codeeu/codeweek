@@ -62,6 +62,7 @@ class LeadingTeacherSignupForm extends Component
         $this->email = auth()->user()->email;
 
         $location = geoip(geoip()->getClientIP());
+
         if (!is_null($location)){
             $this->closestCity = City::getClosestCity($location->lon, $location->lat);
             $this->selectedCity = $this->closestCity->id;
