@@ -261,6 +261,65 @@ return [
 
     ],
 
+    'colour-everything' => [
+        'title' => 'Colour everything',
+        'text' => 'Can we guide the robots around the board in such a way that they make a drawing with their tracks? In this activity, we play with coding and pixel art, which is forming images by colouring in the boxes on a chequered board, like pixels on a screen.',
+        'material' => 'CodyRoby cards, a chequered board and a pawn. To colour in the boxes use pieces of paper to place on the boxes, or colour the boxes in with markers.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. Is it possible to draw the two hearts like in the final part of the video by guiding the robot on all the necessary boxes without ever passing twice on a box?',
+                ]
+
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => 'CodyPlotter and CodyPrinter',
+        'text' => 'What is the difference between a plotter and a printer? Find out by playing this unplugged coding activity.',
+        'material' => 'in addition to the CodyRoby kit, I used a green marker and a new modelling clay robot, but this is optional.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. Can you explain the difference between a plotter and a printer?',
+                    2 => 'Q1. What design would RobyPrinter produce by moving along the lines on the board, if it executed the sequence of commands dictated at the end of the video?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => 'Boring Pixels!/Using numbers',
+        'text' => 'By giving Roby instructions to form a picture square by square, pixel by pixel, we discover that when many squares in a row have the same colour, we can use numbers to make it more interesting. Computers do the same...',
+        'material' => 'squared notebook, or 5 × 5 chequered board drawn on a piece of paper, felt-tip pen. To represent the code of the drawing you can use a pen and paper.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. Try to make a chequered design and represent it with RLE encoding. The size of the design is equal to the number of squares, but what is the size of its RLE representation?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+        'title' => 'Turning code into pictures',
+        'text' => [
+            1 => 'We have now seen that we can create a code that allows us to draw a picture. I have thought of a drawing and used code to turn it into letters and numbers, which I have given you. Take note of the letters and numbers and use the code to reconstruct the drawing.',
+            2 => 'Here is the image that I had thought of, make it appear on your notebook and on the notebooks of all those who know the code!'],
+        'material' => 'paper (preferably squared) and a pen.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Q1. Try to decode and draw the images I mention at the end of the video.'
+                ]
+
+        ]
+
+    ],
+
 
     'texts' => [
         1 => 'Coding@Home is a collection of short videos, do-it-yourself materials, puzzles, games, and
