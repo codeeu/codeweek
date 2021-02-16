@@ -65,32 +65,34 @@
                             <p class="card-description">{{ $ambassador->bio }}</p>
                         </div>
                         <div class="card-actions">
-                                {{--Ambassador email--}}
-                                @if($ambassador->email_display)
-                                    <a href="mailto:{{ $ambassador->email_display }}"
-                                       class="codeweek-svg-button">
-                                        <img src="/images/mail.svg" alt="Twitter">
-                                    </a>
-                                @elseif($ambassador->email)
-                                    <a href="mailto:{{ $ambassador->email }}"
-                                       class="codeweek-svg-button">
-                                        <img src="/images/mail.svg" alt="Twitter">
-                                    </a>
-                                @endif
-                                {{--Ambassador twitter--}}
-                                @if($ambassador->twitter)
-                                    <a href="http://twitter.com/{{ $ambassador->twitter }}"
-                                       target="_blank" class="codeweek-svg-button">
-                                        <img src="/images/twitter.svg" alt="Twitter">
-                                    </a>
-                                @endif
-                                {{--Ambassador website--}}
-                                @if($ambassador->website)
-                                    <a href="{{ $ambassador->website }}"
-                                       target="_blank" class="codeweek-svg-button">
-                                        <img src="/images/globe.svg" alt="Twitter">
-                                    </a>
-                                @endif
+
+                            {{--Ambassador email--}}
+                            @if($ambassador->email_display)
+                                <a href="mailto:{{ $ambassador->email_display }}"
+                                   class="codeweek-svg-button">
+                                    <img src="/images/mail.svg" alt="Twitter">
+                                </a>
+                            @elseif($ambassador->email)
+                                <a href="mailto:{{ $ambassador->email }}"
+                                   class="codeweek-svg-button">
+                                    <img src="/images/mail.svg" alt="Twitter">
+                                </a>
+                            @endif
+                            {{--Ambassador twitter--}}
+                            @if($ambassador->twitter)
+                                <a href="http://twitter.com/{{ $ambassador->twitter }}"
+                                   target="_blank" class="codeweek-svg-button">
+                                    <img src="/images/twitter.svg" alt="Twitter">
+                                </a>
+                            @endif
+                            {{--Ambassador website--}}
+                            @if($ambassador->website)
+                                <a href="{{ $ambassador->website }}"
+                                   target="_blank" class="codeweek-svg-button">
+                                    <img src="/images/globe.svg" alt="Twitter">
+                                </a>
+                            @endif
+
                         </div>
                     </div>
                 @empty
@@ -98,7 +100,9 @@
                 @endforelse
             </div>
 
+
             </section>
+
     </section>
 
 @endsection
