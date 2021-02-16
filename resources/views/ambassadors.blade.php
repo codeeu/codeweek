@@ -65,6 +65,7 @@
                             <p class="card-description">{{ $ambassador->bio }}</p>
                         </div>
                         <div class="card-actions">
+
                             {{--Ambassador email--}}
                             @if($ambassador->email_display)
                                 <a href="mailto:{{ $ambassador->email_display }}"
@@ -91,6 +92,7 @@
                                     <img src="/images/globe.svg" alt="Twitter">
                                 </a>
                             @endif
+
                         </div>
                     </div>
                 @empty
@@ -98,7 +100,9 @@
                 @endforelse
             </div>
 
-        </section>
+
+            </section>
+
     </section>
 
 @endsection
