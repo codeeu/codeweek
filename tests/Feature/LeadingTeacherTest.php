@@ -48,20 +48,10 @@ class LeadingTeacherTest extends TestCase
     }
 
     /** @test */
-    public function report_page_is_restricted_to_authenticated_users()
-    {
-
-        $this->get(route('LT.signup'))->assertStatus(500);
-
-        $this->signIn(create('App\User'));
-        $this->get(route('LT.signup'))->assertStatus(200);
-
-
-    }
-
-    /** @test */
     public function should_become_leading_teacher_after_signup_()
     {
+
+        $this->get(route('LT.signup'))->assertStatus(302);
 
         $user = create('App\User');
         $this->signIn($user);
