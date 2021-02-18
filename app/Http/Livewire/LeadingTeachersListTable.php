@@ -27,17 +27,42 @@ class LeadingTeachersListTable extends LivewireDatatable
 
             Column::name('firstname')
                 ->label('firstname')
+
                 ->filterable(),
+
 
             Column::name('lastname')
                 ->label('lastname')
                 ->filterable(),
 
-            Column::name('country_iso')
+            Column::name('country.name')
                 ->label('Country')
+                ->filterable(),
+
+            BooleanColumn::name('approved')
+                ->label('Approved ?')
                 ->filterable()
+                ->defaultSort('asc')
+            ,
+
+
+            DateColumn::name('updated_at')
+                ->label('updated at'),
+
+
+            Column::callback(['id','approved'], function ($id, $approved) {
+                return view('livewire.leading-teachers-list-table-actions', ['id' => $id, 'approved' => $approved]);
+            })
 
         ];
+    }
+
+    public function delete($id){
+        User::where('id','=',$id)->first()->removeRole('leading teacher');
+    }
+
+    public function approve($id){
+        User::where('id','=',$id)->update(['approved'=>true]);
     }
 
     //Exception thrown by livewire datatable when inside the 'content' section
