@@ -111,6 +111,14 @@
                         </a>
                     </li>
                     @endrole
+                    @role('super admin|leading teacher admin')
+                    <li>
+                        <img src="/images/user_menu_activities.svg" class="icon">
+                        <a href="{{route('leading_teachers_list')}}">
+                            Leading Teachers
+                        </a>
+                    </li>
+                    @endrole
 
                     <li>
                         <img src="/images/user_menu_logout.svg" class="icon">
