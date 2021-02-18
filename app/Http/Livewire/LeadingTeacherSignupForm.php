@@ -93,7 +93,7 @@ class LeadingTeacherSignupForm extends Component
         'last_name' => 'required',
         'selectedCountry' => 'required|filled',
         'selectedCity' => 'required|filled',
-        'twitter' => 'present|regex:/^(\@)?([a-z0-9_]{5,15})$/i',
+        'twitter' => 'nullable|regex:/^(\@)?([a-z0-9_]{5,15})$/i',
         'selectedLevels' => 'required',
         'selectedSubjects' => 'required',
         'selectedExpertises' => 'required',
@@ -121,6 +121,7 @@ class LeadingTeacherSignupForm extends Component
         $user->twitter = $this->twitter;
         $user->privacy = true;
         $user->city_id = $this->selectedCity;
+        $user->country_iso = $this->selectedCountry;
 
         $user->save();
 
