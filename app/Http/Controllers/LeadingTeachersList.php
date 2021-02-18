@@ -10,8 +10,8 @@ class LeadingTeachersList extends Controller
     public function index()
     {
 
-        $leadingTeachers = User::role('leading teacher')->with('country')->get();
+        //$leadingTeachers = User::role('leading teacher')->get();
 
-        return view('leading-teachers.admin.list', compact(['leadingTeachers']));
+        return view('leading-teachers.admin.list');
     }
 }
