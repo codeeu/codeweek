@@ -10,8 +10,6 @@ class LeadingTeachersList extends Controller
     public function index()
     {
 
-        //$leadingTeachers = User::role('leading teacher')->get();
-
         return view('leading-teachers.admin.list');
     }
 }

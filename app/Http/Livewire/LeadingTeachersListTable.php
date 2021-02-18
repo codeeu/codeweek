@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Country;
 use App\User;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
@@ -32,11 +33,19 @@ class LeadingTeachersListTable extends LivewireDatatable
                 ->label('lastname')
                 ->filterable(),
 
-            Column::name('country.name')
+            Column::name('country_iso')
                 ->label('Country')
                 ->filterable()
 
         ];
     }
+
+    //Exception thrown by livewire datatable when inside the 'content' section
+//    public function getCountriesProperty()
+//    {
+//        $isos =  User::role('leading teacher')->pluck('country_iso');
+//        $countries = Country::whereIn('iso',$isos)->pluck('name')->toArray();
+//        return $isos;
+//    }
 
 }
