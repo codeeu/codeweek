@@ -216,6 +216,11 @@ Route::get('/leading-teachers/signup', 'LeadingTeachersSignup@index')->name('LT.
 Route::view('/leading-teachers/success','leading-teachers.signup-form-success')->middleware('auth');
 Route::post('/leading-teachers/signup', 'LeadingTeachersSignup@store')->name('LT.signup.store')->middleware('auth');
 
+Route::group(['middleware' => ['role:super admin|leading teacher admin']], function () {
+    Route::get('/leading-teachers/list', 'LeadingTeachersList@index')->name('leading_teachers_list')->middleware('auth');
+});
+
+
 Route::group(['middleware' => ['role:leading teacher|super admin|leading teacher admin']], function () {
     Route::get('/leading-teachers/report', 'LeadingTeachersReport@index')->name('LT.report');
 });
