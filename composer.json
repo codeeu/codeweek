@@ -32,6 +32,7 @@
         "livewire/livewire": "^2.0",
         "maatwebsite/excel": "^3.1",
         "martinlindhe/laravel-vue-i18n-generator": "dev-l8",
+        "mediconesystems/livewire-datatables": "^0.4.3",
         "predis/predis": "^1.1",
         "socialiteproviders/microsoft-azure": "^3.0",
         "spatie/laravel-activitylog": "^3.0",
