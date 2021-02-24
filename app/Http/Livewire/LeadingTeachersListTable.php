@@ -65,8 +65,6 @@ class LeadingTeachersListTable extends LivewireDatatable
             ,
 
 
-
-
             Column::name('levels.name')
                 ->filterable($this->levels->pluck('name'))
                 ->label('Levels')
@@ -80,7 +78,8 @@ class LeadingTeachersListTable extends LivewireDatatable
             Column::name('subjects.name')
                 ->filterable($this->subjects->pluck('name'))
                 ->label('subjects')
-                ,
+                ->hide()
+            ,
 
             //Hidden Fields
             Column::name('twitter')
