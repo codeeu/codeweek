@@ -8,14 +8,14 @@ return [
         1 => [
             'title' => '6 programmēšanas maratoni, 6 spēku pārbaudes',
             'content' => [
-                1 => 'Vai tu dzīvo Latvijā, Īrijā, Itālijā, Rumānijā, Slovēnijā vai Spānijā? Šī ir tava iespēja likt lietā tavu radošumu, zinātkāri, enerģiju un tehnoloģiju zināšanas. Pievienojies kādam no ES programmēšanas nedēļas programmēšanas maratoniem un radi inovatīvu risinājumu, kas palīdzēs sabiedrībai.',
-                2 => '2020. gadā ES programmēšanas nedēļa sešās Eiropas valstīs rīkos sešus aizraujošus programmēšanas hakatonus, kuros ir aicināti piedalīties vidusskolēni (16–19 gadu vecumā), lai 36 stundu laikā, izmantojot savas programmēšanas prasmes, rastu risinājumus kādam uzdevumam.'
+                1 => 'Vai jūs dzīvojat Grieķijā, Latvijā, Īrijā, Itālijā, Rumānijā vai Slovēnijā? Vai esat radošs, ambiciozs un jūs interesē tehnoloģiju nākotne? Šī ir jūsu iespēja! Pievienojieties vienam no EU Code Week Hackathon un izstrādājiet inovatīvu risinājumu, kas ļaus jums nokļūt tehnoloģiskās revolūcijas priekšgalā!',
+                2 => '2021. gadā ES programmēšanas nedēļa piedāvā sešus neparastus hakatonus un ielūdz 15–19 gadu vecus skolēnus veidot komandas un izmantot savas prasmes, lai atrisinātu kādu vietēja līmeņa problēmu. Pēc 24 programmēšanas stundām katra komanda piedāvās savas idejas ekspertu panelim, kas izvēlēsies 10 finālistu komandas. Visām komandām tiks dots vienāds laiks, resursi un piekļuve mentoriem un informācijai, lai izpildītu izaicinājumu, taču tikai 10 komandas iegūs iespēju turpināt darbu nākamajā posmā, izstrādāt savu prototipu, saņemt ekspertu konsultācijas un piedalīties fināla hakatonā rudenī. Finālā komandas par interesantu IT aprīkojumu un iespēju saņemt mentoru palīdzību un apmācības, lai attīstītu savu prototipu turpmāk.'
             ]
         ],
         2 => [
             'title' => 'Kā es varu piedalīties?',
             'content' => [
-                1 => 'Izvēlies programmēšanas maratonu tavā valstī un seko vienkāršajiem norādījumiem, lai reģistrētos. Ja vēlies piedalīties kopā ar draugiem vai klasesbiedriem, neaizmirsti norādīt jūsu komandas nosaukumu. Katra programmēšanas maratona reģistrācija sāksies atsevišķi.'
+                1 => 'Izvēlieties hakatonu savā valstī un veiciet pāris vienkāršas darbības, lai reģistrētos. Jūs varat pievienoties viens pats vai kā dalībnieks sešu cilvēku komandā. Ja pievienojaties ar draugiem vai klasesbiedriem, reģistrējoties neaizmirstiet norādīt komandas nosaukumu. Reģistrācija katram hakatonam tiks atvērta atsevišķi, tāpēc sekojiet informācijai par hakatonu savā valstī!'
             ]
         ],
         3 => [
@@ -29,8 +29,8 @@ return [
         4 => [
             'title' => 'Kas notiek programmēšanas maratonā?',
             'content' => [
-                1 => 'Katrā programmēšanas hakatonā piedalīsies 60 vidusskolēni, kuri divu dienu laikā sacentīsies komandās. Noslēgumā katra komanda prezentēs savu risinājumu žūrijai. Komandām padomus sniegs pieredzējuši mentori, un būs arī darbsemināri, kuros dalībnieki varēs apgūt jaunas prasmes un arī jautri pavadīt laiku. Programmēšanas maratoni ir arī lieliska iespēja dalībniekiem satikties un iepazīties ar cilvēkiem, kuri darbojas vietējā tehnoloģiju nozarē.',
-                2 => 'Katra programmēšanas maratona uzvarētāju komanda saņems dažādas balvas, ieskaitot iespēju doties uz Briseli un prezentēt savu risinājumu starptautiskai auditorijai 2020. gada 12. oktobrī.',
+                1 => 'EU Code Week Hackathon ir stāsts, kas aizsāksies ar 24 stundu tiešsaistes hakatonu. Pieredzējuši mentori uzraudzīs komandas, un tiks piedāvāti semināri, kas sniegs dalībniekiem iespējas apgūt jaunas prasmes un izklaidēties. Turklāt hakatons ir lieliska iespēja dalībniekiem iepazīties savā starpā un iepazīt cilvēkus no Eiropas tehnoloģiju sektora. Hakatona noslēgumā katra komanda stāstīs par savu risinājumu ekspertu žūrijai. ',
+                2 => 'Desmit labākās komandas turpinās hakatonu un saņems apmācības un mentoru atbalstu visu vasaru. Uzvarētāji piedalīsies fināla 12 stundu klātienes nacionālajā hakatonā septembrī vai oktobrī (kas notiks tiešsaistē, ja sabiedrības veselības situācija nepieļaus tikšanos klātienē).',
             ]
         ],
         5 => [
@@ -43,42 +43,51 @@ return [
         6 => [
             'title' => 'Partneri',
         ],
+        7 => [
+            'title' => 'Pievienojieties jautrībai!',
+        ],
 
     ],
 
     'cities' => [
 
         1 => [
-            'city' => "",
-            'country' => "Īrija",
-            'date' => "April 2020"
+            'city' => "TBA",
+            'country' => "Rumānija",
+            'date' => "2021. gada 17.–18. aprīlis"
         ],
         2 => [
-            'city' => "",
-            'country' => "Slovēnija",
-            'date' => "May 2020"
+            'city' => "TBA",
+            'country' => "Īrija",
+            'date' => "xx April 2021"
         ],
         3 => [
-            'city' => "",
-            'country' => "Rumānija",
-            'date' => "May 2020"
+            'city' => "TBA",
+            'country' => "Itālija",
+            'date' => "2021. gada 7.–8. maijs"
         ],
         4 => [
-            'city' => "",
-            'country' => "Spānija",
-            'date' => "June 2020"
+            'city' => "TBA",
+            'country' => "Grieķija",
+            'date' => "2021. gada 8.–9. maijs"
         ],
         5 => [
-            'city' => "",
-            'country' => "Latvija",
-            'date' => "September 2020"
+            'city' => "TBA",
+            'country' => "Slovēnija",
+            'date' => "2021. gada 15.–16. maijs"
         ],
         6 => [
-            'city' => "",
-            'country' => "Itālija",
-            'date' => "September 2020"
+            'city' => "TBA",
+            'country' => "Latvija",
+            'date' => "2021. gada 29.–30. maijs"
         ],
     ],
+    'final' => [
+        1 => 'Fināls',
+        2 => '2021. gada septembrī/oktobrī'
+    ]
+
 
 
 ];
+

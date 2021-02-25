@@ -8,14 +8,14 @@ return [
         1 => [
             'title' => 'Kuusi hackathon-tapahtumaa, kuusi haastetta',
             'content' => [
-                1 => 'Asutko Latviassa, Irlannissa, Italiassa, Romaniassa, Sloveniassa tai Espanjassa? Nyt sinulla on tilaisuus käyttää luovuuttasi, uteliaisuuttasi, energiaasi ja tietotekniikkataitojasi. Osallistu yhteen EU:n koodausviikon hackathon-tapahtumista ja kehitä yhteiskuntaa hyödyttävä innovatiivinen ratkaisu.',
-                2 => 'Vuonna 2020 EU:n koodausviikolla järjestetään kuusi suurenmoista hackathon-tapahtumaa kuudessa Euroopan maassa. Niissä keskiasteen opiskelijat (iältään 16–19 vuotta) pääsevät käyttämään koodaustaitojaan löytääkseen ratkaisun paikalliseen haasteeseen kahden päivän kuluessa.'
+                1 => 'Asutko Kreikassa, Latviassa, Irlannissa, Italiassa, Romaniassa tai Sloveniassa? Oletko luova, kunnianhimoinen ja kiinnostunut teknologian tulevaisuudesta? Tartu tilaisuuteen! Osallistu EU Code Week Hackathon –tapahtumaan ja keksi innovatiivinen ratkaisu, joka vie sinut teknologian vallankumouksen eturintamaan.',
+                2 => 'Vuonna 2021 EU:n koodausviikolla järjestetään kuusi suurenmoista hackathonia. Niihin voivat osallistua 15–19-vuotiaiden lukiolaisten muodostamat joukkueet, jotka ratkaisevat paikallisen haasteen koodaustaidoillaan. Joukkueet hakkeroivat 24 tuntia ja esittelevät sen jälkeen ideansa asiantuntijapaneelille, joka valitsee 10 loppukilpailujoukkuetta. Kaikilla joukkueilla on haasteen ratkaisemiseen yhtä paljon aikaa sekä käytössään samat resurssit ja mahdollisuudet konsultoida mentoreita ja asiantuntijoita, mutta vain 10 joukkuetta pääsee seuraavalle kierrokselle kehittämään prototyyppiään asiantuntijavalmennuksessa ja osallistumaan syksyllä järjestettävään loppuhackathoniin. Siellä joukkueet kamppailevat siitä, kuka saa palkinnoksi mahtavat IT-varusteet ja mahdollisuuden kehittää prototyyppiään edelleen mentorin ja valmentajan avulla.'
             ]
         ],
         2 => [
             'title' => 'Miten osallistun?',
             'content' => [
-                1 => 'Rekisteröityminen on yksinkertaista: valitse vain omassa maassasi pidettävä hackathon-tapahtuma ja noudata ohjeita. Jos haluat koota joukkueen ystävistä tai luokkatovereista, muista ilmoittaa joukkueesi nimi. Jokaiseen hackathon-tapahtumaan rekisteröidytään erikseen.'
+                1 => 'Valitse oman maasi hackathon ja seuraa helppoja ilmoittautumisohjeita. Voit osallistua yksin tai kuuden hengen joukkueena. Jos osallistut yhdessä ystäviesi tai luokkatoveriesi kanssa, muista ilmoittaa joukkueenne nimi ilmoittautumisen yhteydessä. Hackathonien ilmoittautumiset avautuvat eri aikoina, joten seuraa oman maasi tapahtumaa!'
             ]
         ],
         3 => [
@@ -29,8 +29,8 @@ return [
         4 => [
             'title' => 'Mikä hackathon on?',
             'content' => [
-                1 => 'Kussakin hackathon-tapahtumassa 60 keskiasteen opiskelijaa osallistuu joukkueina kaksi päivää kestävään kilpailuun. Lopuksi kukin joukkue esittelee ratkaisunsa asiantuntijaraadille. Kokeneet mentorit valmentavat joukkueita, ja työpajoissa osallistujilla on tilaisuus oppia uusia taitoja hauskanpitoa unohtamatta. Hackathon-tapahtumat ovat myös erinomainen tilaisuus verkostoitua ja tavata paikallisia tietotekniikka-alan osaajia.',
-                2 => 'Kunkin maan hackathon-tapahtuman voittajajoukkue saa erilaisia palkintoja sekä mahdollisuuden matkustaa Brysseliin esittelemään ratkaisuaan kansainväliselle yleisölle 12. lokakuuta 2020.',
+                1 => 'EU Code Week Hackathon on matka, jotka käynnistyy 24 tunnin mittaisella virtuaalihackathonilla. Kokeneet mentorit valmentavat joukkueita, ja osallistujat voivat oppia uusia taitoja ja pitää hauskaa erilaisissa työpajoissa. Hackathon on myös mainio tilaisuus verkostoitua ja seurustella Euroopan teknologiasektorilla toimivien henkilöiden kanssa. Kunkin hackathonin lopuksi joukkueet esittelevät oman ratkaisunsa asiantuntijaraadille. ',
+                2 => 'Kymmenen parasta joukkuetta jatkaa hackathonmatkaansa kesällä, jolloin heille tarjotaan koulutusta ja mentorointia. Sen jälkeen voittajat osallistuvat 12-tuntiseen kansalliseen hackathoniin, joka järjestetään syys- tai lokakuussa fyysisenä tapahtumana (tai virtuaalisena, jos terveystilanne ei salli fyysistä kokoontumista).',
             ]
         ],
         5 => [
@@ -44,41 +44,50 @@ return [
             'title' => 'Kumppanit',
         ],
 
+        7 => [
+            'title' => 'Liity iloiseen joukkoon!',
+        ],
+
     ],
 
     'cities' => [
 
         1 => [
-            'city' => "",
-            'country' => "Irlanti",
-            'date' => "April 2020"
+            'city' => "TBA",
+            'country' => "Romania",
+            'date' => "17–18.4.2021"
         ],
         2 => [
-            'city' => "",
-            'country' => "Slovenia",
-            'date' => "May 2020"
+            'city' => "TBA",
+            'country' => "Irlanti",
+            'date' => "xx April 2021"
         ],
         3 => [
-            'city' => "",
-            'country' => "Romania",
-            'date' => "May 2020"
+            'city' => "TBA",
+            'country' => "Italia",
+            'date' => "7.–8.5.2021"
         ],
         4 => [
-            'city' => "",
-            'country' => "Espanja",
-            'date' => "June 2020"
+            'city' => "TBA",
+            'country' => "Kreikka",
+            'date' => "8.–9.5.2021"
         ],
         5 => [
-            'city' => "",
-            'country' => "Latvia",
-            'date' => "September 2020"
+            'city' => "TBA",
+            'country' => "Slovenia",
+            'date' => "15.–16.5.2021"
         ],
         6 => [
-            'city' => "",
-            'country' => "Italia",
-            'date' => "September 2020"
+            'city' => "TBA",
+            'country' => "Latvia",
+            'date' => "29.–30.5.2021"
         ],
     ],
+    'final' => [
+        1 => 'Loppukilpailu',
+        2 => 'syys–lokakuussa 2021'
+    ]
+
 
 
 ];

@@ -8,15 +8,14 @@ return [
         1 => [
             'title' => 'Zes hackathons, zes uitdagingen',
             'content' => [
-                1 => 'Woon je in Letland, Ierland, Italië, Roemenië, Slovenië of Spanje? Dan is dit je kans om je creativiteit, nieuwsgierigheid, inzet en technische vaardigheden te gebruiken. Doe mee aan een van de EU-programmeerweek hackathons en ontwikkel een vernieuwende oplossing waarvan de samenleving kan profiteren.',
-                2 => 'In 2020 brengt de EU-programmeerweek zes opmerkelijke hackathons naar zes Europese landen en worden ouderejaars in het voortgezet onderwijs (16 tot 19 jaar) uitgenodigd om hun programmeervaardigheden in te zetten om binnen de twee dagen een antwoord te bieden op een lokale uitdaging.'
+                1 => 'Woon jij in Griekenland, Letland, Ierland, Italië, Roemenië of Slovenië? Ben je creatief, ambitieus en geïnteresseerd in de toekomst van technologie? Dit is jouw kans! Doe mee aan een van de hackathons van de EU-programmeerweek #CodeWeek en ontwikkel een innovatieve oplossing die mee de technologische revolutie op gang brengt!',
+                2 => 'De EU-programmeerweek 2021 omvat zes bijzondere hackathons voor leerlingen van 15-19 jaar uit het secundair onderwijs, die teams vormen en samen hun programmeervaardigheden inzetten om lokale problemen op te lossen. Na 24 uur hacken stelt elk team zijn ideeën voor aan een panel van experts, die 10 teams selecteren voor de finale. Alle teams krijgen evenveel tijd, middelen en toegang tot mentors en expertise om de uitdaging tot een goed einde te brengen, maar slechts 10 van hen krijgen de kans om in de volgende ronde hun prototype te ontwikkelen, door experts gecoacht te worden en in het najaar deel te nemen aan de hackathonfinale. Tijdens de finale strijden de teams om coole IT-uitrusting en een kans om hun prototype met de steun van mentors en coaches verder uit te werken.'
             ]
         ],
         2 => [
             'title' => 'Hoe kan ik meedoen?',
             'content' => [
-                1 => 'Selecteer de hackathon in jouw land en volg een paar eenvoudige stappen om je aan te melden. Wil je samen met vrienden of klasgenoten meedoen? Vergeet dan niet de naam van je team te vermelden. Elke hackathon heeft zijn eigen aanmeldingsprocedure.'
-            ]
+                1 => 'Selecteer de hackathon in jouw land en registreer je in enkele eenvoudige stappen. Je kunt je solo inschrijven, of met een team van 6 personen. Als je met vrienden of klasgenoten deelneemt, vergeet dan niet om je team een naam te geven. De inschrijvingen voor elke hackathon verlopen apart, dus volg de hackathon in jouw land op de voet!'           ]
         ],
         3 => [
             'title' => 'Wie zijn de organisatoren?',
@@ -29,8 +28,8 @@ return [
         4 => [
             'title' => 'Hoe ziet een hackathon eruit?',
             'content' => [
-                1 => 'Bij elke hackathon nemen 60 middelbarescholieren het in teams gedurende twee dagen tegen elkaar op. Na afloop toont elk team zijn oplossing tijdens een pitch aan een jury bestaande uit experts. Ervaren mentoren coachen de teams en er zijn workshops waar deelnemers de mogelijkheid krijgen nieuwe vaardigheden te leren en plezier te maken. De hackathons zijn bovendien een uitstekende mogelijkheid voor deelnemers om te netwerken en te socialiseren met mensen uit de plaatselijke technologiesector.',
-                2 => 'Het winnende team van elke lokale hackathon ontvangt verschillende prijzen, waaronder de kans om naar Brussel te gaan en de eigen oplossing op 12 oktober 2020 voor een internationaal publiek te presenteren.',
+                1 => 'De hackathon van de EU-programmeerweek begint met een online hackathon van 24 uur. Ervaren mentors helpen de teams op weg, en er zullen workshops zijn om de deelnemers op een leuke manier nieuwe vaardigheden bij te brengen. De hackathon is voor de deelnemers ook een perfecte kans om een netwerk uit te bouwen en kennis te maken met mensen in de Europese tech-sector. Aan het einde van de hackathon stelt elk team zijn oplossing voor aan een vakjury.',
+                2 => 'Voor de tien beste teams is de hackathon nog niet afgelopen: zij krijgen de hele zomer training en coaching. In september of oktober nemen de winnaars dan deel aan een 12 uur lange face-to-face hackathon (die online zal doorgaan als de gezondheidssituatie op dat moment geen fysiek evenement toelaat).',
             ]
         ],
         5 => [
@@ -44,41 +43,50 @@ return [
             'title' => 'Partners',
         ],
 
+        7 => [
+            'title' => 'Doe mee!',
+        ],
+
     ],
 
     'cities' => [
 
         1 => [
-            'city' => "",
-            'country' => "Ierland",
-            'date' => "April 2020"
+            'city' => "TBA",
+            'country' => "Roemenië",
+            'date' => "17-18 april 2021"
         ],
         2 => [
-            'city' => "",
-            'country' => "Slovenië",
-            'date' => "April 2020"
+            'city' => "TBA",
+            'country' => "Ierland",
+            'date' => "xx april 2021"
         ],
         3 => [
-            'city' => "",
-            'country' => "Roemenië",
-            'date' => "Mei 2020"
+            'city' => "TBA",
+            'country' => "Italië",
+            'date' => "7-8 mei 2021"
         ],
         4 => [
-            'city' => "",
-            'country' => "Spanje",
-            'date' => "Juni 2020"
+            'city' => "TBA",
+            'country' => "Griekenland",
+            'date' => "8-9 mei 2021"
         ],
         5 => [
-            'city' => "",
-            'country' => "Letland",
-            'date' => "September 2020"
+            'city' => "TBA",
+            'country' => "Slovenië",
+            'date' => "15-16 mei 2021"
         ],
         6 => [
-            'city' => "",
-            'country' => "Italië",
-            'date' => "September 2020"
+            'city' => "TBA",
+            'country' => "Letland",
+            'date' => "29-30 mei 2021"
         ],
     ],
+    'final' => [
+        1 => 'Finale in',
+        2 => 'september/oktober 2021'
+    ]
+
 
 
 ];

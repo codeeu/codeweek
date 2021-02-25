@@ -8,14 +8,14 @@ return [
         1 => [
             'title' => '6 hackatons, 6 udfordringer',
             'content' => [
-                1 => 'Bor du i Letland, Irland, Italien, Rumænien, Slovenien eller Spanien? Så får du chancen for at bruge din kreativitet, nysgerrighed, energi og tekniske evner. Vær med til at udvikle en innovativ løsning til gavn for samfundet på et af EU’s kodeuges hackatons.',
-                2 => 'I 2020 afholder EU’s kodeuge seks ekstraordinære hackatons i seks europæiske lande, hvor elever på ungdomsuddannelser (i alderen 16-19 år) inviteres til at bruge deres kodeevner til at finde på løsninger på en lokal udfordring i løbet af 2 dage '
+                1 => "Bor du i Grækenland, Letland, Irland, Italien, Rumænien eller Slovenien? Er du kreativ, ambitiøs og interesseret i fremtidens teknologier? Det er nu, du har chancen! Vær med i en af hackatonerne i EU's kodeuge, og opfind en innovativ løsning, som kan bringe dig frem i forreste linje i den teknologiske revolution!",
+                2 => "I 2021 er der ikke færre end seks fantastiske hackatons i EU's kodeuge, og det er de 15 19-årige elever på ungdomsuddannelserne, der indbydes til at danne hold og bruge deres kodefærdigheder til at løse en lokal udfordring. Når hvert hold har hacket i et døgn, præsenterer de deres idéer for et ekspertpanel, som vælger 10 finalister blandt holdene.  Alle holdene får den samme tidsfrist, de samme ressourcer og den samme adgang til mentorer og eksperter til at gennemføre udfordringen, men kun 10 får chancen for at fortsætte til næste runde, udvikle deres prototype, få coaching fra eksperterne og deltage i hackatonfinalen til efteråret. Her skal holdene kæmpe om førstepladsen, det seje IT-udstyr og chancen for at få mentoring og coaching til at videreudvikle deres prototype."
             ]
         ],
         2 => [
             'title' => 'Hvordan deltager jeg?',
             'content' => [
-                1 => 'Vælg hackatonet i dit land, og følg nogle enkle trin for at tilmelde dig. Hvis du vil deltage sammen med venner eller medstuderende, skal du huske at skrive navnet på jeres hold. Tilmelding til de enkelte hackatons åbnes særskilt.'
+                1 => 'Vælg din nationale hackaton, og gennemfør registreringen. Du kan deltage som enkeltperson eller som et hold med seks personer. Hvis du tilmelder dig sammen med dine venner eller klassekammerater, skal du huske at oplyse holdnavn, når du registrerer deltagelsen. Hvert hackaton åbner for sin egen registrering af deltagere, så hold øje med din nationale hackaton!'
             ]
         ],
         3 => [
@@ -29,8 +29,8 @@ return [
         4 => [
             'title' => 'Hvordan ser et hackaton ud?',
             'content' => [
-                1 => 'I hvert hackaton konkurrerer 60 elever fra ungdomsuddannelser i hold i af 2 dage. Når de er færdige, fremlægger hvert hold deres løsning for en jury bestående af eksperter. Erfarne mentorer coacher holdene, og der vil være workshops, hvor deltagerne kan lære nye kompetencer og have det sjovt. Disse hackatons er desuden en glimrende mulighed for deltagerne for at møde folk fra den lokale teknologisektor og udvide deres netværk.',
-                2 => 'Vinderholdet i hvert af de lokale hackatons får forskellige priser, blandt andet en tur til Bruxelles, hvor de skal fremlægge deres løsning for et internationalt publikum den 12. oktober 2020.',
+                1 => "EU's kodeuge-hackaton starter med en 24-timers onlinehackaton. Holdene får erfarne mentorer, og der bliver afholdt workshopper, hvor deltagerne får mulighed for at tilegne sig nye færdigheder og have det sjovt. Hackatonen er også en fremragende anledning til at netværke og møde andre deltagere fra den europæiske teknologisektor. Når hackatonen er slut, præsenterer de enkelte hold deres løsning for et ekspertpanel.",
+                2 => "De 10 bedste hold fortsætter hackatonforløbet og får undervisning og mentoring i løbet af sommeren. Vinderne deltager herefter i den nationale hackatonfinale, som varer 12 timer – ansigt til ansigt – i september eller oktober (dvs. online, hvis sundhedskrisen kræver, at vi stadig ikke må mødes fysisk).",
             ]
         ],
         5 => [
@@ -43,42 +43,52 @@ return [
         6 => [
             'title' => 'Partnere',
         ],
+        7 => [
+            'title' => 'Du skal da være med!',
+        ],
+
 
     ],
 
     'cities' => [
 
         1 => [
-            'city' => "",
-            'country' => "Irland",
-            'date' => "April 2020"
+            'city' => "TBA",
+            'country' => "Rumænien",
+            'date' => "17.-18. april 2021"
         ],
         2 => [
-            'city' => "",
-            'country' => "Slovenien",
-            'date' => "May 2020"
+            'city' => "TBA",
+            'country' => "Irland",
+            'date' => "April 2021"
         ],
         3 => [
-            'city' => "",
-            'country' => "Rumænien",
-            'date' => "Maj 2020"
+            'city' => "TBA",
+            'country' => "Italien",
+            'date' => "7.-8. maj 2021"
         ],
         4 => [
-            'city' => "",
-            'country' => "Spanien",
-            'date' => "Juni 2020"
+            'city' => "TBA",
+            'country' => "Grækenland",
+            'date' => "8.-9. maj 2021"
         ],
         5 => [
-            'city' => "",
-            'country' => "Letland",
-            'date' => "September 2020"
+            'city' => "TBA",
+            'country' => "Slovenien",
+            'date' => "15.-16. maj 2021"
         ],
         6 => [
-            'city' => "",
-            'country' => "Italien",
-            'date' => "September 2020"
+            'city' => "TBA",
+            'country' => "Letland",
+            'date' => "29.-30. maj 2021"
         ],
     ],
+    'final' => [
+        1 => 'Finale i',
+        2 => 'september/oktober 2021'
+    ]
+
 
 
 ];
+

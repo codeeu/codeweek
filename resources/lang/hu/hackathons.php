@@ -8,77 +8,86 @@ return [
         1 => [
             'title' => '6 hackathon, 6 kihívás',
             'content' => [
-                1 => 'Lettországban, Írországban, Olaszországban, Romániában, Szlovéniában  vagy Spanyolországban élsz? Most esélyed van arra, hogy használd a kreativitásodat, a kíváncsiságodat, valamint a vezetési és technikai képességeidet. Csatlakozz az európai programozási hét egyik hackatonjához és fejlessz egy olyan innovatív megoldást, amely segíti a társadalmat.',
-                2 => 'Az európai programozási hét 2020-ban hat rendkívüli hackathont szervez hat európai országban, amelynek keretében középiskolás (16-19 éves) diákokat hív meg, hogy programozási ismereteik felhasználásával 2 napon belül találjanak megoldást egy helyi problémára.'
+                1 => 'Görögországban, Lettországban, Írországban, Olaszországban, Romániában vagy Szlovéniában éltek? Kreatívak, céltudatosak vagytok, és érdeklődtök a technológia jövője iránt? Akkor eljött a Ti időtök! Csatlakozzatok az európai programozási hét hackathonjaihoz, és dolgozzatok ki egy olyan innovatív megoldást, amely a technológiai forradalom élvonalába repít benneteket!',
+                2 => 'A 2021-es európai programozási héten hat izgalmas hackathon várja a 15–19 éves középiskolásokat, akik csapatokba szerveződve használhatják kódolási képességeiket egy helyi probléma megoldására. 24 órányi „hackelés” után mindegyik csapat eljuttatja ötleteit egy szakemberekből álló zsűrihez, amely kiválasztja a továbbjutókat. Mindegyik csapatnak ugyanannyi idő, erőforrás, valamint mentori és szakértői támogatás (coaching) áll majd rendelkezésére a kihívás teljesítéséhez, ám csak 10 kap közülük lehetőséget arra, hogy a következő fordulóban továbbfejlessze prototípusát, szakértői támogatásban részesüljön és részt vehessen az őszi, végső megmérettetésen. Ezen a hackathonon a csapatok már menő IT-eszközökért szállnak versenybe, és az is kiderül, ki nyeri a mentorálás és a coaching lehetőségét a prototípus további fejlesztéséhez.'
             ]
         ],
         2 => [
             'title' => 'Hogyan tudok részt venni?',
             'content' => [
-                1 => 'Válaszd ki saját országod hackatonját és a regisztráláshoz végezz el néhány egyszerű lépést. Ha barátokkal vagy osztálytársakkal szeretnél csatlakozni, ne feledd megadni csapatod nevét. Minden egyes hackathon esetében a regisztrálási folyamatra külön-külön kerül majd sor.'
-            ]
-        ],
-        3 => [
-            'title' => 'Kik a szervezők?',
-            'content' => [
-                1 => 'Az európai programozási hét társszervezői az Európai Bizottság és a helyi uniós ',
-                2 => 'programozási hét nagykövetei',
-                3 => ' , akiket az Európai Parlament finanszíroz. A cél megmutatni azt, hogy milyen konkrét megoldások kelthetők életre a fiatalok kreativitása, lelkesedése, friss ötletei és programozási képességei segítségével.'
-            ]
-        ],
-        4 => [
-            'title' => 'Hogyan néz ki egy hackathon?',
-            'content' => [
-                1 => 'Minden egyes hackathon keretében 60 középiskolás diák csapatokban versenyez 2 napig. A végén pedig minden egyes csapat beszámol megoldásukról egy szakértői zsűrinek. Tapasztalt mentorok fogják coacholni a csapatokat, és lesznek műhelybeszélgetések, amelyek lehetőséget biztosítanak a résztvevőknek arra, hogy új képességeket tanuljanak és jól érezzék magukat. A hackathonok egyúttal kiváló lehetőséget nyújtanak a résztvevők számára arra is, hogy hálózatot építsenek és társas kapcsolatokat alakítsanak ki a helyi IT ágazat szereplőivel.',
-                2 => 'A győztes csapat minden egyes helyi hackathonon különböző díjakat fog kapni, egy brüsszeli utazás lehetőségét is beleértve, ahol 2020. október 12-én nemzetközi hallgatóságnak mutathatják be megoldásukat.',
-            ]
-        ],
-        5 => [
-            'title' => 'Nem tudok programozni - mit tehetek?',
-            'content' => [
-                1 => 'A hackathonnal párhuzamosan műhelybeszélgetések is lesznek a kezdő programozók számára, ahol lehet majd hardvert bütykölni, robotikával foglalkozni, stb., és amelyek célja, hogy a résztvevők megismerkedjenek a számítógépes gondolkodás és a programozás alapjaival. A regisztrációval kapcsolatos további információkért látogass el a helyi oldalra.'
-            ]
+                1 => "Válasszátok ki az országotokban meghirdetett hackathont, és regisztráljatok néhány egyszerű lépésben. A versenyben egyénileg vagy hatfős csapatokkal lehet részt venni. Ha barátokkal vagy osztálytársakkal jelentkeztek, akkor a regisztráció során ne felejtsétek el megadni a csapatotok nevét. Minden hackathonhoz külön regisztrációs felület tartozik, ezért figyeljétek az országotokban szervezett esemény híreit!"
+            ],
+            3 => [
+                'title' => 'Kik a szervezők?',
+                'content' => [
+                    1 => 'Az európai programozási hét társszervezői az Európai Bizottság és a helyi uniós ',
+                    2 => 'programozási hét nagykövetei',
+                    3 => ' , akiket az Európai Parlament finanszíroz. A cél megmutatni azt, hogy milyen konkrét megoldások kelthetők életre a fiatalok kreativitása, lelkesedése, friss ötletei és programozási képességei segítségével.'
+                ]
+            ],
+            4 => [
+                'title' => 'Hogyan néz ki egy hackathon?',
+                'content' => [
+                    1 => 'Az európai programozási hét kalandjai egy 24 órás online hackathonnal kezdődnek. Ezen tapasztalt mentorok edzik a csapatokat, és a résztvevőknek különféle workshopokon nyílik alkalmuk – szórakoztató körülmények között – új készségek elsajátítására. A hackathon kitűnő alkalmat teremt a kapcsolatépítésre is egymással és az európai technológiai ágazat képviselőivel. Az esemény végén mindegyik csapat egy szakértőkből álló zsűri elé terjeszti megoldását.',
+                    2 => 'Ezután a tíz legjobb csapat folytathatja a kalandot. Ők a nyár folyamán képzésben és mentorálásban részesülnek. A legjobbak végül a szeptemberben vagy októberben megrendezésre kerülő utolsó, 12 órás nemzeti hackathon-döntőben mérhetik össze tudásukat (amely eseményre online kerül sor, ha a népegészségügyi helyzet nem teszi lehetővé a személyes találkozást).',
+                ]
+            ],
+            5 => [
+                'title' => 'Nem tudok programozni - mit tehetek?',
+                'content' => [
+                    1 => 'A hackathonnal párhuzamosan műhelybeszélgetések is lesznek a kezdő programozók számára, ahol lehet majd hardvert bütykölni, robotikával foglalkozni, stb., és amelyek célja, hogy a résztvevők megismerkedjenek a számítógépes gondolkodás és a programozás alapjaival. A regisztrációval kapcsolatos további információkért látogass el a helyi oldalra.'
+                ]
+            ],
+
+            6 => [
+                'title' => 'Partnerek',
+            ],
+
+            7 => [
+                'title' => 'Ki ne maradjatok!',
+            ],
+
         ],
 
-        6 => [
-            'title' => 'Partnerek',
-        ],
+        'cities' => [
 
-    ],
-
-    'cities' => [
-
-        1 => [
-            'city' => "",
-            'country' => "Írország",
-            'date' => "április 2020"
+            1 => [
+                'city' => "TBA",
+                'country' => "Románia",
+                'date' => "2021. április 17–18."
+            ],
+            2 => [
+                'city' => "TBA",
+                'country' => "Írország",
+                'date' => "xx April 2021"
+            ],
+            3 => [
+                'city' => "TBA",
+                'country' => "Olaszország",
+                'date' => "2021. május 7–8."
+            ],
+            4 => [
+                'city' => "TBA",
+                'country' => "Görögország",
+                'date' => "2021. május 8–9."
+            ],
+            5 => [
+                'city' => "TBA",
+                'country' => "Szlovénia",
+                'date' => "2021. május 15–16."
+            ],
+            6 => [
+                'city' => "TBA",
+                'country' => "Lettország",
+                'date' => "2021. május 29–30."
+            ],
         ],
-        2 => [
-            'city' => "",
-            'country' => "Szlovénia",
-            'date' => "május 2020"
-        ],
-        3 => [
-            'city' => "",
-            'country' => "Románia",
-            'date' => "május 2020"
-        ],
-        4 => [
-            'city' => "",
-            'country' => "Spanyolország",
-            'date' => "június 2020"
-        ],
-        5 => [
-            'city' => "",
-            'country' => "Lettország",
-            'date' => "szeptember 2020"
-        ],
-        6 => [
-            'city' => "",
-            'country' => "Olaszország",
-            'date' => "szeptember 2020"
-        ],
-    ],
+        'final' => [
+            1 => 'Döntő',
+            2 => '2021. szeptember/október'
+        ]
+    ]
 
 
 ];
+
