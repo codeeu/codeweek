@@ -8,14 +8,14 @@ return [
         1 => [
             'title' => 'Seis hackatones, seis retos',
             'content' => [
-                1 => '¿Vives en Letonia, Irlanda, Italia, Rumanía, Eslovenia o España? Esta es tu oportunidad de utilizar tu creatividad, curiosidad, ímpetu y habilidades técnicas. Participa en uno de los hackatones de la Semana de la Programación de la Unión Europea (UE) y desarrolla una solución innovadora que contribuirá a la sociedad.',
-                2 => 'En 2020, la Semana de la Programación de la UE lleva seis hackatones extraordinarios a seis países europeos e invita a estudiantes de secundaria superior (16-19 años) a utilizar sus habilidades de programación para encontrar soluciones a un reto local en 2 días.'
+                1 => '¿Vives en Grecia, Letonia, Irlanda, Italia, Rumania o Eslovenia? ¿Eres una persona creativa, ambiciosa e interesada en el futuro de la tecnología? ¡Esta es tu oportunidad! ¡Participa en uno de los hackatones de la Semana de la Programación de la UE y desarrolla una solución innovadora que te situará a la vanguardia de la revolución tecnológica!',
+                2 => 'Este 2021, durante la Semana de la Programación de la UE se organizarán seis magníficos hackatones dirigidos a estudiantes de secundaria de entre 15 y 19 años, quienes organizados en equipos deberán resolver un problema de su entorno local utilizando sus habilidades de programación. Tras 24 horas de trabajo, los equipos presentarán sus ideas ante un grupo de expertos, el cual elegirá a los 10 equipos finalistas.  Todos los equipos tendrán la misma cantidad de tiempo, los mismos recursos y la posibilidad de recurrir a mentores y recibir su asesoramiento para resolver el problema, pero solo 10 podrán pasar a la siguiente ronda y desarrollar su prototipo, contar con la orientación de un experto y participar en el gran hackatón final que se celebrará en otoño. En él, los finalistas se batirán para decidir quién gana increíbles equipos informáticos y la oportunidad de disfrutar de la ayuda de un mentor y un coach para seguir desarrollando su prototipo.'
             ]
         ],
         2 => [
             'title' => '¿Cómo puedo participar?',
             'content' => [
-                1 => 'Selecciona el hackatón de tu país y sigue unos sencillos pasos para inscribirte. Si quieres participar con amigos o compañeros de clase, no olvides indicar el nombre de vuestro equipo. Cada hackatón iniciará el plazo de inscripción de forma independiente.'
+                1 => 'Escoge el hackatón de tu país e inscríbete en pocos pasos. Puedes apuntarte solo o con un equipo de seis personas. Si vas a participar con tus amigos o compañeros de clase no olvides indicar el nombre del equipo al inscribirte. Cada hackatón tiene su propio proceso de inscripción, así que ¡inscríbete en el hackatón de tu país!'
             ]
         ],
         3 => [
@@ -29,8 +29,8 @@ return [
         4 => [
             'title' => '¿Cómo es un hackatón?',
             'content' => [
-                1 => 'En cada hackatón habrá 60 alumnos de secundaria compitiendo en equipos durante 2 días. Al finalizar, cada equipo explicará su solución a un jurado experto. Habrá tutores expertos que asesorarán a los equipos y talleres que ofrecerán oportunidades para que los participantes aprendan nuevas habilidades y se diviertan. Los hackatones también son una excelente oportunidad para que los participantes hagan contactos y socialicen con personas del sector tecnológico local.',
-                2 => 'El equipo ganador de cada hackatón local recibirá distintos premios, como la oportunidad de ir a Bruselas y presentar su solución ante un público internacional el 12 de octubre de 2020.',
+                1 => 'El hackatón de la Semana de la Programación de la UE es un viaje que arranca con un hackatón online de 24 horas. Expertos mentores orientarán y ayudarán a los equipos. También habrá talleres en los que los participantes podrán aprender y divertirse. El hackatón es también una excelente oportunidad para que los participantes hagan contactos y socialicen con personas del sector tecnológico europeo. Al término del hackatón, los equipos presentarán su solución ante un jurado formado por expertos. ',
+                2 => 'Los diez mejores equipos seguirán adelante en el hackatón y recibirán formación y orientación durante el verano. Los finalistas participarán en el hackatón final de 12 horas, que se celebrará de forma presencial en septiembre u octubre (a menos que la situación sanitaria no lo permita, en cuyo caso se celebrará online).',
             ]
         ],
         5 => [
@@ -43,42 +43,50 @@ return [
         6 => [
             'title' => 'Socios',
         ],
+        7 => [
+            'title' => '¡Participa y diviértete!',
+        ],
 
     ],
 
     'cities' => [
 
         1 => [
-            'city' => "",
-            'country' => "Irlanda",
-            'date' => "abril 2020"
+            'city' => "TBA",
+            'country' => "Rumanía",
+            'date' => "17-18 abril 2021"
         ],
         2 => [
-            'city' => "",
-            'country' => "Eslovenia",
-            'date' => "mayo 2020"
+            'city' => "TBA",
+            'country' => "Irlanda",
+            'date' => "xx April 2021"
         ],
         3 => [
-            'city' => "",
-            'country' => "Rumanía",
-            'date' => "Mayo 2020"
+            'city' => "TBA",
+            'country' => "Italia",
+            'date' => "7-8 mayo 2021"
         ],
         4 => [
-            'city' => "",
-            'country' => "España",
-            'date' => "junio 2020"
+            'city' => "TBA",
+            'country' => "Grecia",
+            'date' => "8-9 mayo 2021"
         ],
         5 => [
-            'city' => "",
-            'country' => "Letonia",
-            'date' => "septiembre 2020"
+            'city' => "TBA",
+            'country' => "Eslovenia",
+            'date' => "15-16 mayo 2021"
         ],
         6 => [
-            'city' => "",
-            'country' => "Italia",
-            'date' => "septiembre 2020"
+            'city' => "TBA",
+            'country' => "Letonia",
+            'date' => "29-30 mayo 2021"
         ],
     ],
+    'final' => [
+        1 => 'La final se celebrará en',
+        2 => 'septiembre/octubre 2021'
+    ]
+
 
 
 ];

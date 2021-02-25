@@ -8,14 +8,14 @@ return [
         1 => [
             'title' => '6 hakatona, 6 izazova',
             'content' => [
-                1 => 'Živite li u Latviji, Irskoj, Italiji, Rumuniji, Sloveniji ili Španiji? Evo vaše prilike da upotrijebite svoju kreativnost, radoznalost, entuzijazam i tehnička znanja. Pridružite se jednom od hakatona Sedmice kodiranja EU i kreirajte inovativno rješenje koje će pomoći društvu.',
-                2 => 'Sedmica kodiranja EU 2020. godine organizira šest izvanrednih hakatona u šest evropskih zemalja i poziva učenike starijih razreda srednjih škola (od 16 do 19 godina) da svoja znanja iz kodiranja upotrijebe u cilju iznalaženja rješenja za lokalni izazov u dva dana.'
+                1 => 'Da li živite u Grčkoj, Latviji, Irskoj, Italiji, Rumuniji ili Sloveniji? Jeste li kreativni, ambiciozni i zainteresirani za budućnost u tehnologiji? Sada je Vaša šansa! Pridružite se jednoj od sedmica programiranja EU hakerskog maratona i razvijte inovativno rješenje koje će vas postaviti u prvi plan tehnološke revolucije!',
+                2 => 'U 2021, EU Code Week (sedmica programiranja EU) donosi šest izvanrednih hakerskih maratona i poziva učenike starosne dobi od 15 do 19 godina, u višim razredima srednje škole, da formiraju timove i koriste svoje vještine kodiranja da riješe lokalni izazov. Nakon 24 sata hakiranja, svaki tim će izložiti svoje ideje panelu stručnjaka koji će odabrati 10 timova finalista. Svi timovi će imati istu količinu vremena, resursa i pristup mentorima i stručnjacima kako bi dovršili izazov, ali samo će 10 dobiti priliku da nastavi u sljedećem krugu, razvije svoj prototip, dobije stručnu obuku i da učestvuje u finalnom hakerskom maratonu na jesen. Ovdje će se timovi boriti za odluku ko će dobiti super IT opremu i priliku za mentorisanje i obuku za dalji razvoj njihovog prototipa.'
             ]
         ],
         2 => [
             'title' => 'Kako mogu učestvovati?',
             'content' => [
-                1 => 'Odaberite hakaton u svojoj zemlji i slijedite par jednostavnih koraka u svrhu registracije. Ako se želite pridružiti prijateljima ili drugovima iz razreda, ne zaboravite naznačiti naziv svog tima. Svaki hakaton otvara svoju registraciju posebno.'
+                1 => 'Odaberite hakerski maraton u svojoj zemlji i slijedite par jednostavnih koraka da se registrujete. Možete se pridružiti kao pojedinac ili kao tim od šest osoba. Ako se pridružite s prijateljima ili kolegicama i kolegama iz razreda, ne zaboravite naznačiti ime svog tima kada se registrujete. Svaki hakerski maraton će otvoriti posebno svoju registraciju, pa slijedite hakerski maraton u svojoj zemlji!'
             ]
         ],
         3 => [
@@ -29,8 +29,8 @@ return [
         4 => [
             'title' => 'Kako izgleda hakaton?',
             'content' => [
-                1 => 'Na svakom hakathonu 60 srednjoškolaca će se takmičiti u timovima tokom dva dana. Na kraju će svaki tim iznijeti svoje rješenje pred stručnim žirijem. Iskusni mentori podučavat će svaki od timova i organizirati će se radionice koje će učesnicima pružiti priliku da usvoje nova znanja i da se zabave. Hakatoni su također odlična mogućnost da se učesnici umrežavaju i druže sa ljudima u lokalnom IT sektoru.',
-                2 => 'Pobjednički tim sa svakog lokalnog hakatona dobit će različite nagrade, uključujući i priliku da ide u Brisel i predstavi svoje rješenje pred međunarodnom publikom 12. oktobra 2020. godine.',
+                1 => 'EU Code Week hackathon je putovanje koje počinje s online 24-satnim hakerskim maratonom. Iskusni mentori će voditi timove i tu će biti radionice koje osiguravaju prilike učesnicima da nauče nove vještine i da se zabave. Hakerski maraton je također odlična prilika da se učesnici umrežavaju i druže s ljudima u Evropskom tehničkom sektoru. Na kraju hakerskog maratona svaki tim će izložiti svoje rješenje stručnom žiriju. ',
+                2 => 'Deset najboljih timova će nastaviti s putovanjem na hakerskom maratonu i dobit će obuku i mentorstvo tokom ljeta. Pobjednici će zatim učestvovati u finalnom 12-satnom, licem u lice, nacionalnom hakerskom maratonu u septembru ili oktobru (koji će se održati online, ako situacija s javnim zdravljem ne bude dozvoljavala fizičke susrete).',
             ]
         ],
         5 => [
@@ -43,6 +43,9 @@ return [
         6 => [
             'title' => 'Partneri',
         ],
+        7 => [
+            'title' => "Pridružite se zabavi!",
+        ],
 
     ],
 
@@ -50,35 +53,39 @@ return [
 
         1 => [
             'city' => "",
-            'country' => "Irska",
-            'date' => "april 2020"
+            'country' => "Rumunija",
+            'date' => "17-18 april 2021"
         ],
         2 => [
             'city' => "",
-            'country' => "Slovenija",
-            'date' => "maj 2020"
+            'country' => "Irska",
+            'date' => "april 2021"
         ],
         3 => [
             'city' => "",
-            'country' => "Rumunija",
-            'date' => "maj 2020"
+            'country' => "Italija",
+            'date' => "7-8 maj 2021"
         ],
         4 => [
             'city' => "",
-            'country' => "Španija",
-            'date' => "jun 2020"
+            'country' => "Grčka",
+            'date' => "8-9 maj 2021."
         ],
         5 => [
             'city' => "",
-            'country' => "Latvija",
-            'date' => "septembar 2020"
+            'country' => "Slovenija",
+            'date' => "15-16 maj 2021"
         ],
         6 => [
             'city' => "",
-            'country' => "Italija",
-            'date' => "septembar 2020"
+            'country' => "Latvija",
+            'date' => "29-30 maj 2021"
         ],
     ],
+    'final' => [
+        1 => 'Finale',
+        2 => 'Septembar/oktobar 2021.'
+    ]
 
 
 ];
