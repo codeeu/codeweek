@@ -8,14 +8,14 @@ return [
         1 => [
             'title' => '6 hackathon, 6 mücadele',
             'content' => [
-                1 => 'Letonya, İrlanda, İtalya, Romanya, Slovenya veya İspanya’da mı yaşıyorsunuz? İşte yaratıcılığınızı, merakınızı, enerjinizi ve teknoloji becerilerinizi kullanma şansı. EU Code Week hackathon’larından birine katılın ve topluma yararlı yenilikçi bir çözüm geliştirin.',
-                2 => 'EU Code Week, 2020 yılında altı Avrupa ülkesinde olağanüstü altı hackathon düzenliyor ve iki gün içerisinde yerel bir sorunu çözmek için kodlama yeteneklerini kullanmak üzere lise öğrencilerini (16-19 yaş) davet ediyor.'
+                1 => 'Yunanistan, Letonya, İrlanda, İtalya, Romanya ya da Slovenya’da mı yaşıyorsunuz? Yaratıcı, hırslı ve teknolojinin geleceğiyle ilgili misiniz? Şans kapınızda! EU Code Week hackathon’larından birine katılın ve sizi teknolojik devrimin ön saflarına katacak yenilikçi bir çözüm geliştirin!',
+                2 => 'EU Code Week (AB Kod Haftası), 2021’de altı olağanüstü yazılım maratonu düzenliyor ve 15-19 yaşlarındaki lise öğrencilerini yerel bir zorluğu çözmek üzere takım kurup kodlama yeteneklerini kullanmaya davet ediyor. 24 saatlik yazılım geliştirmeden sonra her bir takım, 10 finalist takımı seçecek uzmanlardan oluşan bir panele fikirlerini sunacaklar.  Tüm takımlar zorluğu geçmek için aynı süre, kaynaklar ve mentor ve uzmanlığa erişime sahip olacaklar ancak yalnızca 10 takımın sonraki tura geçme, prototipini geliştirme, uzman koçluğu alma ve sonbaharda düzenlenecek yazılım maratonu finalinde yer alma şansı olacak. Burada takımlar müthiş bir IT donanımı ve prototiplerini daha fazla geliştirmek için mentorluk ve koçluk alma şansını kazanmak üzere çarpışacaklar.'
             ]
         ],
         2 => [
             'title' => 'Nasıl katılabilirim?',
             'content' => [
-                1 => 'Ülkenizdeki hackathon’u seçin ve kaydolmak için birkaç basit adımı izleyin. Arkadaşlarınızla veya sınıf arkadaşlarınızla katılmak isterseniz, ekibinizin adını belirtmeyi unutmayın. Her hackathon için kayıtlar ayrı olarak açılacaktır.'
+                1 => 'Ülkenizdeki yazılım maratonunu seçin ve kayıt olmak için birkaç basit adımı izleyin. Bireysel olarak veya altı kişilik takım olarak katılabilirsiniz. Arkadaşlarınız veya sınıf arkadaşlarınızla katılıyorsanız kayıt olurken takımınızın adını belirtmeyi unutmayın. Her bir yazılım maratonu, kaydını ayrı olarak açacaktır, bu yüzden ülkenizdeki yazılım maratonunu izleyin!'
             ]
         ],
         3 => [
@@ -29,8 +29,8 @@ return [
         4 => [
             'title' => 'Hackathon neye benzer?',
             'content' => [
-                1 => 'Her hackathon’da ekipler olarak iki gün boyunca yarışan 60 lise öğrencisi bulunur. Sonuçta, her ekibin sonucu uzman bir jüri tarafından değerlendirilir. Tecrübeli danışmanlar ekiplere koçluk yaparken, katılımcılara yeni beceriler öğrenip eğlenme fırsatı sunan çalıştaylar yapılır. Hackathon’lar, yerel teknoloji sektöründeki kişilerle çevre kurup sosyalleşmek isteyen katılımcılar için de mükemmel bir fırsattır.',
-                2 => 'Her yerel hackathon’un kazanan ekibi, 12 Ekim 2020 tarihinde Brüksel’e gidip çözümlerini uluslararası bir kitleye sunma fırsatını da kapsayan farklı ödüller kazanacaktır.',
+                1 => 'EU Code Week hackathon, 24 saatlik çevrimiçi bir maratonu başlatan bir yolculuktur. Deneyimli mentorlar takımlara koçluk yapacak ve katılımcılar için yeni yetenekler edinme ve eğlenme fırsatları sunan atölye çalışmaları olacaktır. Yazılım maratonu, katılımcıların Avrupa teknoloji sektöründeki kişilerle ağ kurabilmeleri ve sosyalleşebilmeleri için de mükemmel bir fırsattır. Yazılım maratonunun sonunda her bir takım çözümünü uzman bir jüriye sunacaktır. ',
+                2 => 'En iyi on takım yazılım maratonu yolculuğuna devam edecek ve yaz boyunca eğitim ve mentorluk alacaktır. Kazananlar Eylül veya Ekim ayındaki 12 saatlik yüz yüze ulusal yazılım maratonu finalinde yer alacaktır (halk sağlığı durumu fiziksel toplanmaya izin vermezse çevrimiçi yapılacaktır).',
             ]
         ],
         5 => [
@@ -43,42 +43,50 @@ return [
         6 => [
             'title' => 'Ortaklar',
         ],
+        7 => [
+            'title' => 'Eğlenceye katılın!',
+        ],
 
     ],
 
     'cities' => [
 
         1 => [
-            'city' => "",
-            'country' => "İrlanda",
-            'date' => "Nisan 2020"
+            'city' => "TBA",
+            'country' => "Romanya",
+            'date' => "17-18 Nisan 2021"
         ],
         2 => [
-            'city' => "",
-            'country' => "Slovenya",
-            'date' => "Mayıs 2020"
+            'city' => "TBA",
+            'country' => "İrlanda",
+            'date' => "xx April 2021"
         ],
         3 => [
-            'city' => "",
-            'country' => "Romanya",
-            'date' => "Mayıs 2020"
+            'city' => "TBA",
+            'country' => "İtalya",
+            'date' => "7-8 Mayıs 2021"
         ],
         4 => [
-            'city' => "",
-            'country' => "İspanya",
-            'date' => "Haziran 2020"
+            'city' => "TBA",
+            'country' => "Yunanistan",
+            'date' => "8-9 Mayıs 2021"
         ],
         5 => [
-            'city' => "",
-            'country' => "Letonya",
-            'date' => "Eylül 2020"
+            'city' => "TBA",
+            'country' => "Slovenya",
+            'date' => "15-16 Mayıs 2021"
         ],
         6 => [
-            'city' => "",
-            'country' => "İtalya",
-            'date' => "Eylül 2020"
+            'city' => "TBA",
+            'country' => "Letonya",
+            'date' => "29-30 Mayıs 2021"
         ],
     ],
+    'final' => [
+        1 => 'Final',
+        2 => 'Eylül/Ekim 2021'
+    ]
+
 
 
 ];
