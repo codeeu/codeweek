@@ -55,7 +55,7 @@
 
             <section class="hackathons-content-grid">
                 <div class="codeweek-card-grid">
-                    <a href="#" target="_blank">
+                    <a href="{{route('hackathon-romania')}}" target="_blank">
                         <div class="city-image">
                             <img src="/images/hackathons/flags/romania.png">
                             <div class="transparent"></div>

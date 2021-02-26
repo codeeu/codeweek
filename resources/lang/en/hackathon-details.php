@@ -39,7 +39,7 @@ return [
         4 => [
             "title" => "Propose challenges to be solved at the Hackathon",
             "content" => [
-                "Do you want to make your community the centre of green and sustainable innovation in Ireland? If so, propose a challenge that will be “hacked” at the Hackathon. Something concrete that will help you, your school, city or community.",
+                "Do you want to make your community the centre of green and sustainable innovation in Romania? If so, propose a challenge that will be “hacked” at the Hackathon. Something concrete that will help you, your school, city or community.",
                 "Propose a challenge",
                 "Votes for the Romanian challenge will start on the 24 of March."
             ]
@@ -102,7 +102,7 @@ return [
         11 => [
             "title" => "Side events",
             "content" => [
-                "Do these themes interest you but you don’t know  how to code? Sign up to our side events and discover the thrill of coding, innovation, entrepreneurship and other skills vital to participating in the digital world. The Code Week hackathon side events are scheduled to run from May to October and will include several different types of workshop. They are free of charge, you just have to sign up here. Come and learn more.",
+                "Do these themes interest you but you don’t know how to code? Sign up to our side events and discover the thrill of coding, innovation, entrepreneurship and other skills vital to participating in the digital world. The Code Week hackathon side events are scheduled to run from May to October and will include several different types of workshop. They are free of charge, you just have to sign up here. Come and learn more.",
             ]
         ],
         12 => [
