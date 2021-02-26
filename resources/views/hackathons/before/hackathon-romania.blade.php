@@ -178,7 +178,7 @@
                     <div class="left">
                         <h1>@lang('hackathon-details.sections.11.title')</h1>
                         <p>@lang('hackathon-details.sections.11.content.0')</p>
-                        <a href="" class="codeweek-action-link-button">REGISTER</a>
+                        <a href="" class="codeweek-action-link-button">@lang('login.register')</a>
                     </div>
                     <img src="/images/hackathons/side_events.png">
                 </section>
