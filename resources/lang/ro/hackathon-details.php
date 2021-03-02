@@ -82,9 +82,7 @@ return [
         9 => [
             "title" => "Informații practice",
             "content" => [
-                "Hackathonul va avea loc pe",
-                "online de la",
-                "până la",
+                "Hackathonul va avea loc pe 17 Aprilie la ora 09h30 şi pe 18 Aprilie la orele 17H00",
                 "Participarea la hackathon este gratuită."
 
             ]
