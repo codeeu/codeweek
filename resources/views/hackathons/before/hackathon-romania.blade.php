@@ -68,7 +68,7 @@
                     <div class="title">@lang('hackathon-details.title')</div>
                     <div class="city">@lang('hackathons.cities.1.country')</div>
                     <div class="date">@lang('hackathons.cities.1.date')</div>
-                    <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCWHackathonIreland"
+                    <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCWHackathonRomania"
                        class="codeweek-action-link-button">@lang('login.register')</a>
                 </div>
             </div>
