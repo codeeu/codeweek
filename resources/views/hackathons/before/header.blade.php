@@ -22,13 +22,13 @@
                     <a href="#programme">Programme</a>
                 </li>
                 <li>
-                    <a href="#pratical-info">Pratical info</a>
+                    <a href="#programme">Practical info</a>
                 </li>
                 <li>
                     <a href="#jury-mentors">Jury & Mentors</a>
                 </li>
                 <li>
-                    <a href="#side-events">Side event</a>
+                    <a href="#side-events">Side events</a>
                 </li>
                 <li>
                     <a href="#about-codeweek">About CODEWEEK.EU</a>
@@ -38,7 +38,7 @@
     </div>
     <div id="right-menu">
         <div id="hackathons-register-button">
-            <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCWHackathonIreland">REGISTER</a>
+            <a target="_blank" href="{{$registration_link}}">REGISTER</a>
         </div>
     </div>
 </header>
