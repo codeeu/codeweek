@@ -81,7 +81,7 @@
                     <h1>@lang('hackathon-details.sections.4.title')</h1>
                     <p>@lang('hackathon-details.sections.4.content.0')</p>
                     <div class="button">
-                        <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCodeWeek2020_Challenges_Ireland"
+                        <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCodeWeek2020_Challenge_Romania"
                            class="codeweek-action-link-button">@lang('hackathon-details.sections.4.content.1')</a>
                     </div>
 
@@ -92,8 +92,8 @@
         <section id="programme">
             <h1>@lang('hackathon-details.sections.9.title')</h1>
 
-            @lang('hackathon-details.sections.9.content.0') XX @lang('hackathon-details.sections.9.content.1') HH:MM @lang('hackathon-details.sections.9.content.2') HH:MM<br/>
-            @lang('hackathon-details.sections.9.content.3')
+            @lang('hackathon-details.sections.9.content.0')<br/>
+            @lang('hackathon-details.sections.9.content.1')
 
 
             <br/><br/>
