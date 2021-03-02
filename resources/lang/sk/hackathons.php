@@ -8,15 +8,14 @@ return [
         1 => [
             'title' => '6 hackatonov, 6 výziev',
             'content' => [
-                1 => 'Žijete v Lotyšsku, Írsku, Taliansku, Rumunsku, Slovinsku alebo Španielsku? Teraz máte príležitosť využiť svoju tvorivosť, zvedavosť, nasadenie a technologické zručnosti. Zapojte sa do hackatonov Európskeho týždňa programovania a vytvorte inovačné riešenie, ktoré pomôže spoločnosti.',
-                2 => 'V roku 2020 prináša Európsky týždeň programovania šesť výnimočných hackatonov do šiestich európskych krajín. Výzva je určená stredoškolákom (16 – 19 rokov), ktorých úlohou bude za 2 dni vyvinúť riešenia s využitím svojich programátorských zručností.'
+                1 => 'Žijete v Grécku, Lotyšsku, Írsku, Taliansku, Rumunsku alebo Slovinsku? Ste kreatívni, ambiciózni a zaujímate sa o budúcnosť technológií? Teraz máte šancu! Zapojte sa do jedného z hackatonov Európskeho týždňa programovania a vymyslite inovačné riešenie, ktoré vás postaví do čela technologickej revolúcie!',
+                2 => 'Európsky týždeň programovania prinesie v roku 2021 šesť mimoriadnych hackathonov a pozve stredoškolských študentov vo veku 15 – 19 rokov, ktorí sa rozdelia do tímov a použijú svoje programovacie schopnosti na vyriešenie miestnej výzvy. Po 24 hodinách hackovania predstaví každý tím svoje nápady porote odborníkov, ktorá vyberie 10 postupujúcich tímov. Všetky tímy budú mať rovnaké množstvo času, zdroje a prístup k inštruktorom a odborným znalostiam na dokončenie výzvy, avšak len 10 bude mať možnosť postúpiť do ďalšieho kola, v ktorom vytvoria svoj prototyp, dostanú odborného učiteľa a na jeseň sa zúčastnia finále hackathonu. Tu budú tímy súťažiť o to, kto vyhrá skvelé IT vybavenie a možnosť zaučenia sa a vedenia k ďalšiemu rozvoju svojho prototypu.'
             ]
         ],
         2 => [
             'title' => 'Ako sa môžem zapojiť?',
             'content' => [
-                1 => 'Zvoľte si hackaton vo svojej krajine a zaregistrujte sa pomocou niekoľkých jednoduchých krokov. Ak sa chcete zapojiť spolu s priateľmi alebo spolužiakmi, nezabudnite zapísať ich mená do svojho tímu. V rámci každého hackatonu bude otvorená samostatná registrácia.'
-            ]
+                1 => 'Vyberte hackathon vo svojej krajine a zaregistrujte sa pomocou niekoľkých jednoduchých krokov. Môžete sa zapojiť ako jednotlivec alebo ako šesťčlenný tím. Ak sa spojíte so svojimi priateľmi alebo spolužiakmi, nezabudnite pri registrácii zadať aj názov svojho tímu. Každý hackathon spustí svoju registráciu samostatne, takže sledujte hackathon vo vašej krajine!'          ]
         ],
         3 => [
             'title' => 'Kto je organizátorom?',
@@ -29,8 +28,8 @@ return [
         4 => [
             'title' => 'Ako vyzerá hackaton?',
             'content' => [
-                1 => 'V každom hackatone bude počas 32 dní súťažiť v tímoch 60 stredoškolákov. Na záver každý tím predvedie svoje riešenie odbornej porote. Tímy budú viesť skúsení mentori a zorganizujú sa semináre, na ktorých sa účastníci môžu naučiť nové zručnosti a zabaviť sa. Hackatony sú tiež vynikajúcou možnosťou pre účastníkov, aby nadviazali kontakty a zoznámili sa s ľuďmi, ktorí pôsobia v miestnom technologickom odvetví.',
-                2 => 'Víťazné tímy všetkých miestnych hackatonov získajú rozličné ceny vrátane možnosti cestovať do Bruselu a predstaviť svoje riešenie medzinárodnému publiku 12. októbra 2020.',
+                1 => 'Európsky týždeň programovania je cesta, ktorá sa začína 24-hodinovým online hackathonom. Tímy budú viesť skúsení inštruktori a k dispozícii budú aj dielne, v ktorých sa účastníci budú môcť naučiť nové zručnosti a zabaviť sa. Hackathon je taktiež skvelá príležitosť na to, aby si účastníci vytvorili kontakty a spojili sa s ľuďmi v európskom technologickom odvetví. Na konci hackathonu predstaví každý tím odbornej porote svoje riešenie. ',
+                2 => 'Desať najlepších tímov bude pokračovať vo svojej hackathonovej ceste a počas leta dostane školenie a zaučenie. Víťazi sa v septembri alebo októbri stretnú tvárou v tvár na 12-hodinovom národnom finále (ktoré sa uskutoční online v prípade, že situácia v oblasti verejného zdravia neumožní osobné stretnutie).',
             ]
         ],
         5 => [
@@ -44,41 +43,50 @@ return [
             'title' => 'Partneri',
         ],
 
+        7 => [
+            'title' => 'Poďte sa zabávať!',
+        ],
+
     ],
 
     'cities' => [
 
         1 => [
-            'city' => "",
-            'country' => "Írsko",
-            'date' => "apríla 2020"
+            'city' => "TBA",
+            'country' => "Rumunsko",
+            'date' => "17. – 18. apríl 2021"
         ],
         2 => [
-            'city' => "",
-            'country' => "Slovinsko",
-            'date' => "mája 2020"
+            'city' => "TBA",
+            'country' => "Írsko",
+            'date' => "xx April 2021"
         ],
         3 => [
-            'city' => "",
-            'country' => "Rumunsko",
-            'date' => "mája 2020"
+            'city' => "TBA",
+            'country' => "Taliansko",
+            'date' => "7. – 8. máj 2021"
         ],
         4 => [
-            'city' => "",
-            'country' => "Španielsko",
-            'date' => "júna 2020"
+            'city' => "TBA",
+            'country' => "Grécko",
+            'date' => "8. – 9. máj 2021"
         ],
         5 => [
-            'city' => "",
-            'country' => "Lotyšsko",
-            'date' => "septembra 2020"
+            'city' => "TBA",
+            'country' => "Slovinsko",
+            'date' => "15. – 16. máj 2021"
         ],
         6 => [
-            'city' => "",
-            'country' => "Taliansko",
-            'date' => "septembra 2020"
+            'city' => "TBA",
+            'country' => "Lotyšsko",
+            'date' => "29. – 30. máj 2021"
         ],
     ],
+    'final' => [
+        1 => 'Finále',
+        2 => 'v septembri/októbri 2021'
+    ]
+
 
 
 ];

@@ -8,14 +8,15 @@ return [
         1 => [
             'title' => '6 hakatona, 6 sfida',
             'content' => [
-                1 => 'Jetoni në Letoni, Irlandë, Itali, Rumani, Slloveni ose Spanjë? Atëherë, keni shansin që të përdorni kreativitetin, kuriozitetin, nxitjen dhe aftësitë tuaja teknike. Bëhuni pjesë e një prej hakatonave të EU Code Week dhe zhvilloni një zgjidhje inovative që do të ndihmojë shoqërinë.',
-                2 => 'Gjatë vitit 2020, EU Code Week sjell gjashtë hakatona të jashtëzakonshme në gjashtë vende evropiane dhe fton nxënësit e ciklit të mesëm (16-19 vjeç) që të përdorin aftësitë e tyre në kodim për të gjetur zgjidhje për një sfidë lokale brenda 2 ditësh.'
+                1 => "A jeton në Greqi, Letoni, Irlandë, Itali, Rumani ose Slloveni? A je kreativ, ambicioz dhe i interesuar në të ardhmen e teknologjisë? Tani është mundësia jote! Regjistrohu në hakatonën e Javës së Kodit të BE-së dhe zhvillo një zgjidhje novatore, që do të të bëjë të jesh në ballë të revolucionit teknologjik!",
+                2 => "Në vitin 2021, EU Code Week (Java e Kodit e BE-së) sjell gjashtë hakatona të jashtëzakonshme dhe fton studentët 15-19 vjeçarë, në shkollat e mesme, që të formojnë skuadra dhe të përdorin aftësitë e tyre në kodim për të zgjidhur një sfidë lokale. Pas 24 orësh hakimi, secila skuadër do t’i paraqesë idetë e saj një paneli ekspertësh, të cilët do të zgjedhin 10 skuadrat finaliste. Të gjitha skuadrat do të kenë të njëjtën sasi kohe, të njëjtat burime dhe të njëjtën qasje te mësuesit dhe ekspertiza, por vetëm 10 do të kenë mundësinë të vazhdojnë në raundin tjetër, të zhvillojnë prototipin e tyre, të marrin stërvitje eksperte dhe të marrin pjesë në hakatonën finale në vjeshtë. Këtu skuadrat do të luftojnë për të vendosur se cilët do të fitojnë mjetet e mira IT dhe për mundësinë që të stërviten për të zhvilluar më tej prototipin e tyre."
+
             ]
         ],
         2 => [
             'title' => 'Si mund të marr pjesë?',
             'content' => [
-                1 => 'Zgjidhni hakatonën në vendin tuaj dhe ndiqni disa hapa të thjeshtë për tu regjistruar. Nëse doni që të bashkoheni me shokë që keni brenda apo jashtë shkolle, mos harroni të tregoni emrin e ekipit tuaj. Çdo hakatonë do ta hapë regjistrimin veçmas.'
+                1 => 'Zgjidh hakatonën në vendin tënd dhe ndiq disa hapa të thjeshtë për t’u regjistruar. Mund të marrësh pjesë vetëm ose si pjesë e një skuadre me gjashtë veta. Nëse merr pjesë bashkë me miqtë ose shokët a shoqet e klasës, mos harro të tregosh emrin e skuadrës kur të regjistrohesh. Secila hakatonë do ta hapë regjistrimin veçmas, ndaj ndiq hakatonën në vendin tënd!'
             ]
         ],
         3 => [
@@ -29,8 +30,8 @@ return [
         4 => [
             'title' => 'Si janë hakatonat?',
             'content' => [
-                1 => 'Çdo hakatonë do të ketë 60 nxënës të ciklit të mesëm që konkurrojnë në ekipe për 2 ditë. Në fund, secili ekip do ta prezantojë zgjidhjen e tyre para një jurie me ekspertë. Mentorë me përvojë do të trajnojnë ekipet dhe do të ketë seminare që u japin pjesëmarrësve mundësinë të mësojnë aftësi të reja dhe të argëtohen. Hakatonat janë gjithashtu një mundësi e shkëlqyer që pjesëmarrësit të krijojnë lidhje dhe të socializohen me persona në sektorin lokal të teknologjisë.',
-                2 => 'Ekipi fitues në secilën hakatonë lokale do të marrë çmime të ndryshme, duke përfshirë mundësinë për të shkuar në Bruksel për të prezantuar zgjidhjen e tyre para një audience ndërkombëtare më 12 tetor 2020.',
+                1 => 'EU Code Week hackathon është një udhëtim që nis me një hakatonë online 24 orëshe. Profesorët e stërvitur do t’i stërvitin skuadrat dhe do të ketë seminare, ku pjesëmarrësve do t’u ofrohet mundësia të mësojnë aftësi të reja dhe të argëtohen. Gjithashtu hakatona është një mundësi e shkëlqyer që pjesëmarrësit të lidhen dhe të shoqërohen me njerëz në sektorin teknologjik evropian. Në fund të hakatonës, secila skuadër do t’ia paraqesë zgjidhjen një jurie eksperte. ',
+                2 => 'Dhjetë skuadrat më të mira do të vazhdojnë udhëtimin e hakatonës dhe do të stërviten gjatë verës. Më pas fituesit do të marrin pjesë në hakatonën kombëtare 12-orëshe ballë për ballë në shtator ose tetor (e cila do të bëhet online, nëse situata e shëndetit publik nuk e lejon që të bëhet një takim fizik).',
             ]
         ],
         5 => [
@@ -44,41 +45,50 @@ return [
             'title' => 'Partnerët',
         ],
 
+        7 => [
+            'title' => "Bashkohu me argëtimin!",
+        ],
+
     ],
 
     'cities' => [
 
         1 => [
             'city' => "",
-            'country' => "Irlandë",
-            'date' => "prill 2020"
+            'country' => "Rumani",
+            'date' => "17-18 prill 2021"
         ],
         2 => [
             'city' => "",
-            'country' => "Slloveni",
-            'date' => "maj 2020"
+            'country' => "Irlandë",
+            'date' => "prill 2021"
         ],
         3 => [
             'city' => "",
-            'country' => "Rumani",
-            'date' => "maj 2020"
+            'country' => "Itali",
+            'date' => "7-8 maj 2021"
         ],
         4 => [
             'city' => "",
-            'country' => "Spanjë",
-            'date' => "qershor 2020"
+            'country' => "Greqi",
+            'date' => "8-9 maj 2021"
+
         ],
         5 => [
             'city' => "",
-            'country' => "Letoni",
-            'date' => "shtator 2020"
+            'country' => "Slloveni",
+            'date' => "15-16 maj 2021"
         ],
         6 => [
             'city' => "",
-            'country' => "Itali",
-            'date' => "shtator 2020"
+            'country' => "Letoni",
+            'date' => "29-30 maj 2021"
         ],
     ],
+    'final' => [
+        1 => 'Finalja në',
+        2 => 'shtator/tetor 2021'
+    ]
 
 
 ];
