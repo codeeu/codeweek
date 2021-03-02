@@ -65,7 +65,7 @@
         <section class="registration">
             <div class="register-wrapper">
                 <div class="register">
-                    <div class="title">@lang('hackathon-details.sections.3.content.1')</div>
+                    <div class="title">@lang('hackathon-details.title')</div>
                     <div class="city">@lang('hackathons.cities.1.country')</div>
                     <div class="date">@lang('hackathons.cities.1.date')</div>
                     <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCWHackathonIreland"
@@ -180,7 +180,7 @@
                         <p>@lang('hackathon-details.sections.11.content.0')</p>
                         <a href="" class="codeweek-action-link-button">@lang('login.register')</a>
                     </div>
-                    <img src="/images/hackathons/side_events.png">
+                    <img src="/images/hackathons/ideation.png">
                 </section>
 
         <section id="about-codeweek">
