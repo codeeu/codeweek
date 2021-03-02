@@ -8,14 +8,14 @@ return [
         1 => [
             'title' => '6 hackaton, 6 utmaningar',
             'content' => [
-                1 => 'Bor du i Lettland, Irland, Italien, Rumänien, Slovenien eller Spanien? Här får du chansen att använda din kreativitet, nyfikenhet, drivkraft och dina tekniska kunskaper. Delta i ett av EU Code Weeks hackaton och utveckla en innovativ lösning som är till hjälp i samhället.',
-                2 => 'Under 2020 kommer EU Code Week att hålla i sex särskilda hackaton i sex europeiska länder och man bjuder in gymnasieelever (16–19 år) till att använda sina kodningskunskaper för att hitta en lösning på en lokal utmaning på två dagar.'
+                1 => 'Bor du i Grekland, Lettland, Irland, Italien, Rumänien eller Slovenien? Är du kreativ, ambitiös och intresserad av framtidens teknik? Nu har du chansen! Var med på en hackaton under EU:s kodvecka och ta fram en innovativ lösning som gör dig till pionjär inom den tekniska revolutionen!',
+                2 => 'Under 2021 anordnas sex särskilda hackaton under EU:s kodvecka och gymnasieelever i åldern 15–19 år uppmanas att bilda lag och använda sina kodningstalanger för att lösa ett lokalt problem. Efter ett dygn av hackande lägger alla lag fram sina idéer inför en expertpanel som väljer ut de tio finallagen. Alla lag har lika lång tid på sig, tillgång till samma resurser och till mentorer och expertkunnande för att klara utmaningen, men bara tio får möjlighet att gå vidare till nästa omgång, utveckla sin prototyp, få expertcoachning och delta i hackatonfinalen i höst. Då gör lagen upp om vilka som ska vinna häftiga IT-prylar och få möjlighet till mentor- och coachinghjälp för att vidareutveckla sin prototyp.'
             ]
         ],
         2 => [
             'title' => 'Hur kan jag delta?',
             'content' => [
-                1 => 'Välj det hackaton som hålls i ditt land och följ några enkla steg för att registrera dig. Om du vill delta tillsammans med kompisar eller klasskompisar så glöm inte att ange namnet på ditt lag. Varje hackaton kommer att öppna sin egen registrering.'
+                1 => 'Välj hackaton i ditt land och gå igenom några enkla steg för att anmäla dig. Du kan vara med själv eller som ett sexmannalag. Glöm inte att ange lagets namn om du anmäler dig tillsammans med kompisar eller klasskamrater. Varje hackaton har en egen anmälningsprocess, så följ hackaton i ditt land!'
             ]
         ],
         3 => [
@@ -29,8 +29,8 @@ return [
         4 => [
             'title' => 'Hur fungerar ett hackaton?',
             'content' => [
-                1 => 'Vid varje hackaton kommer 60 gymnasieelever att tävla i lag under två dagar. I slutet kommer varje lag att få presentera sin lösning för en expertjury. Erfarna mentorer kommer att leda lagen och det kommer att hållas workshopar där deltagarna både får möjlighet att lära sig nya färdigheter och ha kul. Våra hackaton är också en fantastisk möjlighet för deltagarna att nätverka och umgås med folk från den lokala tekniksektorn.',
-                2 => 'Det vinnande laget vid varje lokalt hackaton kommer att få olika priser, däribland möjligheten att åka till Bryssel och presentera sin lösning för en internationell publik den 12 oktober 2020.',
+                1 => 'EU Code Week hackathon är en resa som tar sin början med en 24 timmar lång hackaton online. Erfarna mentorer coachar lagen och det blir seminarier som ger deltagare möjlighet att lära sig nya saker och ha kul. En hackaton är även en fantastisk möjlighet för deltagare att nätverka och umgås med personer från Europas tech-sektor. Efter hackaton presenterar varje lag sin lösning för en expertjury. ',
+                2 => 'De tio bästa lagen får fortsätta sin hackaton-resa och får under sommaren utbildning och mentorstöd. Vinnarna deltar sedan i den avslutande tolv timmar långa fysiska nationella hackaton i september eller oktober (som äger rum online om folkhälsoläget inte tillåter att man möts fysiskt).',
             ]
         ],
         5 => [
@@ -43,42 +43,50 @@ return [
         6 => [
             'title' => 'Partner',
         ],
+        7 => [
+            'title' => 'Häng med och ha kul!',
+        ],
 
     ],
 
     'cities' => [
 
         1 => [
-            'city' => "",
-            'country' => "Irland",
-            'date' => "April 2020"
+            'city' => "TBA",
+            'country' => "Rumänien",
+            'date' => "17–18 april 2021"
         ],
         2 => [
-            'city' => "",
-            'country' => "Slovenien",
-            'date' => "maj 2020"
+            'city' => "TBA",
+            'country' => "Irland",
+            'date' => "xx April 2021"
         ],
         3 => [
-            'city' => "",
-            'country' => "Rumänien",
-            'date' => "maj 2020"
+            'city' => "TBA",
+            'country' => "Italien",
+            'date' => "7–8 maj 2021"
         ],
         4 => [
-            'city' => "",
-            'country' => "Spanien",
-            'date' => "juni 2020"
+            'city' => "TBA",
+            'country' => "Grekland",
+            'date' => "8–9 maj 2021"
         ],
         5 => [
-            'city' => "",
-            'country' => "Lettland",
-            'date' => "September 2020"
+            'city' => "TBA",
+            'country' => "Slovenien",
+            'date' => "15–16 maj 2021"
         ],
         6 => [
-            'city' => "",
-            'country' => "Italien",
-            'date' => "September 2020"
+            'city' => "TBA",
+            'country' => "Lettland",
+            'date' => "29–30 maj 2021"
         ],
     ],
+    'final' => [
+        1 => 'Final i',
+        2 => 'september/oktober 2021'
+    ]
+
 
 
 ];

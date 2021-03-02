@@ -8,14 +8,14 @@ return [
         1 => [
             'title' => '6 hackathonů, 6 výzev',
             'content' => [
-                1 => 'Žijete v Lotyšsku, Irsku, Itálii, Rumunsku, Slovinsku nebo Španělsku? Máme pro vás šanci, jak využít svou kreativitu, zvídavost, zápal a technické dovednosti. Zapojte se do jednoho z hackathonů v rámci Evropského týdne programování a podílejte se na vývoji inovativního řešení, které pomůže společnosti.',
-                2 => 'V roce 2020 přinese Evropský týden programování šest mimořádných hackathonů do šesti evropských zemí. Zveme středoškoláky (16–19leté), aby ukázali své dovednosti v programování a aby vyřešili místní výzvy během hackathonu, který bude trvat 2 dny.'
+                1 => 'Žiješ v Řecku, Lotyšsku, Irsku, Itálii, Rumunsku nebo Slovinsku? Jsi kreativní, máš ambice a zajímáš se o budoucnost technologií? Teď máš šanci! Zúčastni se jednoho z hackathonů během Evropského týdne programování a navrhni inovativní řešení, které tě katapultuje do popředí technologické revoluce!',
+                2 => 'V roce 2021 proběhne v rámci EU Code Week (Evropského týdne programování) šest mimořádných hackathonů pro studenty středních škol ve věku 15–19 let, kteří utvoří týmy a využijí své programátorské dovednosti k řešení místní výzvy. Po 24 hodinách programování bude každý tým prezentovat své nápady odborné komisi, která vybere 10 týmů do finále. Všechny týmy budou mít k dispozici stejnou dobu, zdroje a přístup k odborným poradcům a znalostem ke splnění výzvy. Pouze 10 z nich však postoupí do dalšího kola, vyvine prototyp, získá odborné vedení a na podzim se zúčastní finálního hackathonu. Během něj si to týmy rozdají o to, kdo vyhraje parádní IT vybavení a získá možnost koučování a odborného vedení při dalším vývoji prototypu.'
             ]
         ],
         2 => [
             'title' => 'Jak se zúčastním?',
             'content' => [
-                1 => 'Vyberte si hackathon ve vaší zemi a zaregistrujte se pomocí několika jednoduchých kroků. Pokud se chcete zúčastnit společně s přáteli nebo spolužáky, nezapomeňte uvést název vašeho týmu. Registrace do každého hackathonu bude probíhat samostatně.'
+                1 => 'Vyber si hackathon ve své zemi a zaregistruj se v několika jednoduchých krocích. Můžeš se zúčastnit jako jednotlivec nebo jako tým šesti lidí. Pokud se plánuješ zúčastnit s přáteli nebo spolužáky, nezapomeň během registrace uvést jméno svého týmu. Každý hackathon má samostatnou registraci, tak sleduj hackathon ve své zemi!'
             ]
         ],
         3 => [
@@ -29,8 +29,8 @@ return [
         4 => [
             'title' => 'Jak takový hackathon vypadá?',
             'content' => [
-                1 => 'Každého hackathonu se zúčastní 60 středoškolských studentů, kteří spolu v týmech budou soutěžit po dobu 2 dnů. Na konci každý tým představí své řešení odborné porotě. Týmy povedou zkušení mentoři, probíhat budou také semináře, na kterých budou mít účastníci příležitost naučit se zábavnou formou novým dovednostem. Hackathony jsou pro účastníky rovněž vynikající příležitostí k navazování kontaktů mezi sebou a s lidmi v místním technologickém sektoru.',
-                2 => 'Vítězný tým v každém z hackathonů získá různé ceny včetně návštěvy Bruselu a příležitosti prezentovat své řešení mezinárodnímu publiku dne 12. října 2020.',
+                1 => 'EU Code Week Hackathon představuje cestu, která začíná 24hodinovým online hackathonem. Zkušení mentoři budou koučovat týmy a také budou probíhat semináře, na nichž budou mít účastníci příležitost naučit se něco nového a pobavit se. Hackathon je také skvělou příležitostí, aby se účastníci navzájem poznali a navázali kontakty s lidmi z evropského technologického sektoru. Na konci hackathonu představí každý tým své řešení odborné komisi. ',
+                2 => 'Deset nejlepších týmů bude pokračovat v cestě hackathonem a absolvuje během léta školení a odborné vedení. Vítězové se poté v září nebo říjnu zúčastní 12hodinového přímého národního hackathonu (který se odehraje online, pokud epidemiologická situace neumožní fyzickou účast).',
             ]
         ],
         5 => [
@@ -44,41 +44,50 @@ return [
             'title' => 'Partneři',
         ],
 
+        7 => [
+            'title' => "Připoj se k zábavě!",
+        ],
+
     ],
 
     'cities' => [
 
         1 => [
             'city' => "",
-            'country' => "Irsko",
-            'date' => "dubna 2020"
+            'country' => "Rumunsko",
+            'date' => "17.–18. dubna 2021"
         ],
         2 => [
             'city' => "",
-            'country' => "Slovinsko",
-            'date' => "května 2020"
+            'country' => "Irsko",
+            'date' => "dubna 2021"
         ],
         3 => [
             'city' => "",
-            'country' => "Rumunsko",
-            'date' => "května 2020"
+            'country' => "Itálie",
+            'date' => "7.–8. května 2021"
         ],
         4 => [
             'city' => "",
-            'country' => "Španělsko",
-            'date' => "června 2020"
+            'country' => "Řecko",
+            'date' => "8.–9. května 2021"
         ],
         5 => [
             'city' => "",
-            'country' => "Lotyšsko",
-            'date' => "září 2020"
+            'country' => "Slovinsko",
+            'date' => "15.–16. května 2021"
         ],
         6 => [
             'city' => "",
-            'country' => "Itálie",
-            'date' => "září 2020"
+            'country' => "Lotyšsko",
+            'date' => "29.–30. května 2021"
         ],
     ],
+    'final' => [
+        1 => 'Finále v',
+        2 => 'září/říjnu 2021'
+    ]
 
 
 ];
+

@@ -125,7 +125,7 @@ header.hackathons #right-menu #hackathons-register-button {
     color: $main-color4;
   }
 
-  &.take_part {
+  &.how_coding {
     background-color: #180053;
   }
 
@@ -424,7 +424,7 @@ header.hackathons #right-menu #hackathons-register-button {
 }
 
 /*How Coding Section*/
-#codeweek-hackathons-page .hackathons_section.how_coding {
+#codeweek-hackathons-page .hackathons_section.take_part {
   background-color: #F2F2F2;
   padding: 20px;
 
@@ -449,7 +449,7 @@ header.hackathons #right-menu #hackathons-register-button {
   }
   /* tablet, landscape iPad, lo-res laptops ands desktops */
   @media (min-width: 961px) {
-    padding: 120px 70px 30px 70px;
+    padding: 50px 70px 30px 70px;
     h1 {
       padding-right: 30px;
     }
