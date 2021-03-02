@@ -75,7 +75,7 @@
         </section>
 
         <section id="challenge">
-            <img src="/images/hackathons/challenge.png" class="desktop">
+            <img src="/images/hackathons/ideation.png" class="desktop">
             <div class="text">
                 <div class="challenge-text">
                     <h1>@lang('hackathon-details.sections.4.title')</h1>
@@ -180,7 +180,7 @@
                         <p>@lang('hackathon-details.sections.11.content.0')</p>
                         <a href="" class="codeweek-action-link-button">@lang('login.register')</a>
                     </div>
-                    <img src="/images/hackathons/ideation.png">
+                    <img src="/images/hackathons/side_events.png">
                 </section>
 
         <section id="about-codeweek">
