@@ -195,30 +195,7 @@
             <a target="_blank" href="https://codeweek.eu/about" class="codeweek-action-link-button">@lang('hackathon-details.sections.12.content.9')</a>
         </section>
 
-        <input type="hidden" name="center" id="center" value="53.26931964206903, -5.806274414062501">
-        <input type="hidden" name="geoposition" id="geoposition" value="53.2689614,-6.196873">
-        <input type="hidden" name="geoposition_marker" id="geoposition_marker" value="true">
-
     </section>
 
 @endsection
 
-@push('scripts')
-
-    <script defer src="https://europa.eu/webtools/load.js" type="text/javascript"></script>
-    <link href="{{asset('css/MarkerCluster.css')}}" media="screen" rel="stylesheet"/>
-    <link href="{{asset('css/MarkerCluster.Default.css')}}" media="screen" rel="stylesheet"/>
-    <script type="application/json">
-        {
-            "service" : "map",
-            "version" : "2.0",
-            "renderTo" : "map",
-            "custom": ["/js/hideMenuMap.js","/js/leaflet.markercluster.js"]
-        }
-
-
-
-
-
-    </script>
-@endpush
