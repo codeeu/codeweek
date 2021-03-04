@@ -60,7 +60,7 @@ return [
         2 => [
             'city' => "",
             'country' => "Irlanda",
-            'date' => "aprilie 2021"
+            'date' => "26-27 aprilie 2021"
         ],
         3 => [
             'city' => "",
