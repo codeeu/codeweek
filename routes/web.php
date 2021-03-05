@@ -230,6 +230,10 @@ Route::group(['middleware' => ['role:leading teacher|super admin|leading teacher
 Route::get('/hackathons', 'HackathonsController@index')->name('hackathons');
 Route::get('/hackathons/romania', 'HackathonsController@before')->name('hackathon-romania');
 Route::get('/hackathons/ireland', 'HackathonsController@before')->name('hackathon-ireland');
+Route::get('/hackathons/italy', 'HackathonsController@before')->name('hackathon-italy');
+Route::get('/hackathons/greece', 'HackathonsController@before')->name('hackathon-greece');
+Route::get('/hackathons/slovenia', 'HackathonsController@before')->name('hackathon-slovenia');
+Route::get('/hackathons/latvia', 'HackathonsController@before')->name('hackathon-latvia');
 
 Route::view('/chatbot', 'static.chatbot')->name('chatbot');
 
