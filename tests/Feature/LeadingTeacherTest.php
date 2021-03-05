@@ -73,6 +73,7 @@ class LeadingTeacherTest extends TestCase
             ->set('last_name', 'Bar')
             ->set('selectedCountry', 'Mars')
             ->set('twitter', null)
+            ->set('tag', 'my-tag-001')
             ->set('selectedLevels', [$level1->id, $level2->id])
             ->set('selectedSubjects', [$subject1->id, $subject2->id, $subject3->id])
             ->set('selectedExpertises', [$expertise1->id, $expertise2->id])
@@ -87,6 +88,7 @@ class LeadingTeacherTest extends TestCase
         $this->assertEquals([80,85], $user->levels()->pluck('id')->toArray());
         $this->assertEquals([511,512,400], $user->subjects()->pluck('id')->toArray());
         $this->assertEquals('Foo Bar', $user->fullName);
+        $this->assertEquals('my-tag-001', $user->tag);
         $this->assertEquals('FooBarCity', $user->city->name);
 
 
