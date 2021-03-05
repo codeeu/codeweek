@@ -59,7 +59,7 @@ return [
         2 => [
             'city' => "TBA",
             'country' => "L-Irlanda",
-            'date' => "xx April 2021"
+            'date' => "bejn is-26 u t-27 t’April 2021"
         ],
         3 => [
             'city' => "TBA",
