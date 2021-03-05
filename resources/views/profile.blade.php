@@ -6,11 +6,22 @@
 
         <section class="codeweek-content-wrapper" style="margin-top:0;">
 
+
             @role('ambassador|super admin')
-                <avatar-form :user="{{ $profileUser }}"></avatar-form>
+            <avatar-form :user="{{ $profileUser }}"></avatar-form>
             @else
                 <h1>{{ $profileUser->fullName }}</h1>
-            @endrole
+                @endrole
+
+                @role('leading teacher')
+
+
+
+                <h3><a href="{{route('LT.signup')}}">Click here to Edit your Leading Teacher Profile</a></h3>
+
+
+
+                @endrole
 
                 <form method="POST" action="{{ route('user.update') }}" class="codeweek-form">
 
@@ -44,7 +55,8 @@
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
                                 <label for="id_title">@lang('base.display_email')</label>
-                                <input id="email_display" placeholder="@lang('base.display_email')" name="email_display" type="email"
+                                <input id="email_display" placeholder="@lang('base.display_email')" name="email_display"
+                                       type="email"
                                        value="{{$profileUser->email_display}}">
                             </div>
                             <div class="errors">
@@ -55,7 +67,8 @@
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
                                 <label for="id_title">@lang('base.first_name')</label>
-                                <input id="firstname" placeholder="@lang('base.first_name')" name="firstname" type="text"
+                                <input id="firstname" placeholder="@lang('base.first_name')" name="firstname"
+                                       type="text"
                                        value="{{$profileUser->firstname}}">
                             </div>
                             <div class="errors">
@@ -74,7 +87,21 @@
                             </div>
                         </div>
 
-                        @role('ambassador|super admin')
+                        @role('ambassador|super admin|leading teacher')
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field">
+                                <label for="id_title">Leading Teacher Tag</label>
+                                <input id="tag"
+                                       placeholder="your Leading Teacher Tag or create a new one [Country Code-Last Name-Three random digits] for example: BE-Andronikidis-005"
+                                       name="tag" type="text"
+                                       value="{{$profileUser->tag}}">
+                            </div>
+                            <div class="errors">
+                                @component('components.validation-errors', ['field'=>'twitter'])@endcomponent
+                            </div>
+                        </div>
+
+
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
                                 <label for="id_title">Twitter</label>
@@ -86,6 +113,10 @@
                             </div>
                         </div>
 
+                        @endrole
+
+
+                        @role('ambassador|super admin')
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
                                 <label for="id_title">@lang('base.your_website')</label>
@@ -101,7 +132,8 @@
                             <div class="codeweek-form-field align-flex-start">
                                 <label for="id_description">@lang('base.biography')</label>
                                 <textarea cols="40" id="bio" name="bio"
-                                          placeholder="@lang('base.biography')" rows="10">{{$profileUser->bio}}</textarea>
+                                          placeholder="@lang('base.biography')"
+                                          rows="10">{{$profileUser->bio}}</textarea>
                             </div>
                             <div class="errors">
                                 @component('components.validation-errors', ['field'=>'bio'])@endcomponent
@@ -124,13 +156,13 @@
                             </div>
                         </div>
 
-                            <div class="codeweek-form-field-wrapper">
-                                <div class="codeweek-form-field">
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field">
                                 <label for="receive_emails">* @lang('base.receive emails')</label>
 
                                 <select id="receive_emails" name="receive_emails" class="codeweek-input-select">
-                                        <option value=1 {{$profileUser->receive_emails === 1 ? 'selected' : ''}}>@lang('search.last_year_events.yes')</option>
-                                        <option value=0 {{$profileUser->receive_emails !== 1 ? 'selected' : ''}}>@lang('search.last_year_events.no')</option>
+                                    <option value=1 {{$profileUser->receive_emails === 1 ? 'selected' : ''}}>@lang('search.last_year_events.yes')</option>
+                                    <option value=0 {{$profileUser->receive_emails !== 1 ? 'selected' : ''}}>@lang('search.last_year_events.no')</option>
 
                                 </select>
                             </div>
@@ -141,7 +173,8 @@
 
                         <div class="codeweek-form-field-privacy">
                             <label>
-                                <input id="checkPrivacy" name="privacy" type="checkbox" {{ $profileUser->privacy === 1 ? 'checked="checked"' : '' }}>
+                                <input id="checkPrivacy" name="privacy"
+                                       type="checkbox" {{ $profileUser->privacy === 1 ? 'checked="checked"' : '' }}>
                                 @lang('event.privacy')
                                 <a href="/privacy" target="_blank">
                                     <img src="/images/external-link.svg" width="16" class="static-image">

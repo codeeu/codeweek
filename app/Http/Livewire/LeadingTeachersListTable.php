@@ -40,6 +40,10 @@ class LeadingTeachersListTable extends LivewireDatatable
                 ->label('lastname')
                 ->filterable(),
 
+            Column::name('tag')
+                ->label('tag')
+                ->filterable(),
+
             Column::name('country.name')
                 ->label('Country')
                 ->filterable(),
