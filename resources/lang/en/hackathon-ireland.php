@@ -82,7 +82,7 @@ return [
         9 => [
             "title" => "Practical Info",
             "content" => [
-                "The hackathon will take place online from 9:30 April 26 to 17:00 April 27",
+                "The hackathon will take place online from 14:00 April 26 to 14:00 April 27",
                 "The Hackathon is free of charge."
 
             ]
