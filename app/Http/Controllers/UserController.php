@@ -18,7 +18,6 @@ class UserController extends Controller
             request()['privacy'] =  1;
         }
 
-        //dd(request()->all());
         $user->update(request()->validate([
             'firstname' => 'required',
             'lastname' => 'required',
@@ -28,7 +27,8 @@ class UserController extends Controller
             'twitter' => 'nullable',
             'website' => 'nullable',
             'bio' => 'nullable',
-            'email_display' => 'nullable|email'
+            'email_display' => 'nullable|email',
+            'tag' => 'nullable'
         ]));
 
         return back()->with('flash', 'Your profile has been modified!');
