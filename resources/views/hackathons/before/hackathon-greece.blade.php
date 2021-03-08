@@ -1,7 +1,7 @@
 @extends('layout.base')
 
 @section('hackathons.header')
-    @include('hackathons.before.header', ["registration_link"=>"https://ec.europa.eu/eusurvey/runner/EUCWHackathonGreece"])
+    @include('hackathons.before.header', ["enabled_language" => "el","registration_link"=>"https://ec.europa.eu/eusurvey/runner/EUCWHackathonGreece"])
 @endsection
 
 @section('content')
