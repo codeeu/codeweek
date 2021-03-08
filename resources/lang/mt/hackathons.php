@@ -69,7 +69,7 @@ return [
         4 => [
             'city' => "TBA",
             'country' => "Il-Greċja",
-            'date' => "bejn it-8 u d-9 ta’ Mejju 2021"
+            'date' => "bejn it-7 u d-8 ta’ Mejju 2021"
         ],
         5 => [
             'city' => "TBA",
