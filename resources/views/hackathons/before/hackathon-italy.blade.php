@@ -1,7 +1,7 @@
 @extends('layout.base')
 
 @section('hackathons.header')
-    @include('hackathons.before.header', ["registration_link"=>"https://ec.europa.eu/eusurvey/runner/EUCWHackathonItaly"])
+    @include('hackathons.before.header', ["enabled_language" => "it","registration_link"=>"https://ec.europa.eu/eusurvey/runner/EUCWHackathonItaly"])
 @endsection
 
 @section('content')
@@ -174,14 +174,14 @@
             </div>
         </section>
 
-                <section id="side-events">
-                    <div class="left">
-                        <h1>@lang('hackathon-italy.sections.11.title')</h1>
-                        <p>@lang('hackathon-italy.sections.11.content.0')</p>
-                        <a href="" class="codeweek-action-link-button">@lang('login.register')</a>
-                    </div>
-                    <img src="/images/hackathons/side_events.png">
-                </section>
+{{--                <section id="side-events">--}}
+{{--                    <div class="left">--}}
+{{--                        <h1>@lang('hackathon-italy.sections.11.title')</h1>--}}
+{{--                        <p>@lang('hackathon-italy.sections.11.content.0')</p>--}}
+{{--                        <a href="" class="codeweek-action-link-button">@lang('login.register')</a>--}}
+{{--                    </div>--}}
+{{--                    <img src="/images/hackathons/side_events.png">--}}
+{{--                </section>--}}
 
         <section id="about-codeweek">
             <div class="text">
