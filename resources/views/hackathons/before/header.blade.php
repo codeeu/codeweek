@@ -9,30 +9,32 @@
         <nav id="secondary-menu">
             <ul>
 
-                <li>
+                @if($enabled_language !== "en")
+                    <li>
 
-                    <div class="round-button menu-trigger lang-menu">
+                        <div class="round-button menu-trigger lang-menu">
 
-                        <a href="javascript:void(null);"><img src="/images/tick.svg" class="static-image"> Choose your language</a>
-                        <div class="menu-dropdown">
-                            <ul style="width: 410px;">
-                                @foreach ($locales as $key => $value)
-                                    @if($value == "en" || $value == $enabled_language)
-                                    <li>
-                                        <a class="dropdown-item"
-                                           href="/setlocale/?locale={{$value}}">@lang('base.languages_menu.' . $value)</a>
-                                    </li>
-                                    @endif
-                                @endforeach
-                            </ul>
+                            <a href="javascript:void(null);"><img src="/images/tick.svg" class="static-image"> Choose
+                                your language</a>
+                            <div class="menu-dropdown">
+                                <ul style="width: 410px;">
+                                    @foreach ($locales as $key => $value)
+                                        @if($value == "en" || $value == $enabled_language)
+                                            <li>
+                                                <a class="dropdown-item"
+                                                   href="/setlocale/?locale={{$value}}">@lang('base.languages_menu.' . $value)</a>
+                                            </li>
+                                        @endif
+                                    @endforeach
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </li>
+                    </li>
+                @endif
 
                 <li>
                     <a href="https://codeweek.eu"><img src="/images/tick.svg" class="static-image">TO CODEWEEK.EU</a>
                 </li>
-
 
 
             </ul>
@@ -60,7 +62,6 @@
             </ul>
         </nav>
     </div>
-
 
 
     <div id="right-menu">
