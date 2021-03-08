@@ -69,7 +69,7 @@ return [
         4 => [
             'city' => "",
             'country' => "Grčka",
-            'date' => "8-9 maj 2021."
+            'date' => "7-8 maj 2021."
         ],
         5 => [
             'city' => "",

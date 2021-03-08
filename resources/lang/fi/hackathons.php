@@ -70,7 +70,7 @@ return [
         4 => [
             'city' => "TBA",
             'country' => "Kreikka",
-            'date' => "8.–9.5.2021"
+            'date' => "7.–8.5.2021"
         ],
         5 => [
             'city' => "TBA",

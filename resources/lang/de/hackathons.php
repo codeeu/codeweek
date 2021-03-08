@@ -70,7 +70,7 @@ return [
         4 => [
             'city' => "TBA",
             'country' => "Griechenland",
-            'date' => "8.-9. Mai 2021"
+            'date' => "7.-8. Mai 2021"
         ],
         5 => [
             'city' => "TBA",
