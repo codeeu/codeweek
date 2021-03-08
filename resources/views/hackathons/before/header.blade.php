@@ -8,9 +8,33 @@
     <div class="hackathons-content-header">
         <nav id="secondary-menu">
             <ul>
+
+                <li>
+
+                    <div class="round-button menu-trigger lang-menu">
+
+                        <a href="javascript:void(null);"><img src="/images/tick.svg" class="static-image"> Choose your language</a>
+                        <div class="menu-dropdown">
+                            <ul style="width: 410px;">
+                                @foreach ($locales as $key => $value)
+                                    @if($value == "en" || $value == $enabled_language)
+                                    <li>
+                                        <a class="dropdown-item"
+                                           href="/setlocale/?locale={{$value}}">@lang('base.languages_menu.' . $value)</a>
+                                    </li>
+                                    @endif
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
                 <li>
                     <a href="https://codeweek.eu"><img src="/images/tick.svg" class="static-image">TO CODEWEEK.EU</a>
                 </li>
+
+
+
             </ul>
         </nav>
         <nav id="primary-menu">
@@ -36,6 +60,9 @@
             </ul>
         </nav>
     </div>
+
+
+
     <div id="right-menu">
         <div id="hackathons-register-button">
             <a target="_blank" href="{{$registration_link}}">REGISTER</a>
