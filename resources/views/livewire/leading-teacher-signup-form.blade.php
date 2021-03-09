@@ -24,6 +24,7 @@
             @component('components.report.form-field-LT',['label'=>'First Name','field_name'=>'first_name','type'=>'text','required'=>true])@endcomponent
             @component('components.report.form-field-LT',['label'=>'Last Name','field_name'=>'last_name','type'=>'text','required'=>true])@endcomponent
             @component('components.report.form-field-LT',['label'=>'Twitter Handle','field_name'=>'twitter','type'=>'text','required'=>false])@endcomponent
+            @component('components.report.form-field-LT',['label'=>'Leading Teacher Tag','field_name'=>'tag','type'=>'text','required'=>true, 'info'=>'Please add your Leading Teacher Tag or create a new one [Country Code-Last Name-Three random digits] for example: BE-Andronikidis-005'])@endcomponent
 
 
             <div class="codeweek-form-field-wrapper">
