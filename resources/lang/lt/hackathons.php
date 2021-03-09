@@ -60,7 +60,7 @@ return [
         2 => [
             'city' => "TBA",
             'country' => "Airija",
-            'date' => "xx April 2021"
+            'date' => "26-27 April 2021"
         ],
         3 => [
             'city' => "TBA",
@@ -70,7 +70,7 @@ return [
         4 => [
             'city' => "TBA",
             'country' => "Graikija",
-            'date' => "2021 m. gegužės 8–9 d."
+            'date' => "2021 m. gegužės 7-8 d."
         ],
         5 => [
             'city' => "TBA",
@@ -86,7 +86,7 @@ return [
     'final' => [
         1 => 'Finalas',
         2 => '2021 m. rugsėjis–spalis'
-    ]    
+    ]
 
 
 
