@@ -235,5 +235,7 @@ Route::get('/hackathons/greece', 'HackathonsController@before')->name('hackathon
 Route::get('/hackathons/slovenia', 'HackathonsController@before')->name('hackathon-slovenia');
 Route::get('/hackathons/latvia', 'HackathonsController@before')->name('hackathon-latvia');
 
+Route::view('/chatbot', 'static.chatbot')->name('chatbot');
+
 Auth::routes();
 
