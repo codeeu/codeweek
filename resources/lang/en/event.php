@@ -66,7 +66,6 @@ return [
         'placeholder' => 'Where will the activity be taking place?',
     ],
 
-
     'organizertype' => [
         'label' => 'Type of organisation',
         'placeholder' => 'Select the type of organiser',

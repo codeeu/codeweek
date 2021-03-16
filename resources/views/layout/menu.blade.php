@@ -11,7 +11,7 @@
                 <ul>
                     {{--                    <li><a href="{{route('codeweek2020')}}">Codeweek 2020</a></li>--}}
                     <li><a href="{{route('events_map')}}">@lang('menu.map')</a></li>
-{{--                    <li><a href="{{route('featured_activities')}}">@lang('menu.featured_activities')</a></li>--}}
+                    <li><a href="{{route('featured_activities')}}">@lang('menu.featured_activities')</a></li>
                     <li><a href="{{route('create_event')}}">@lang('menu.add_event')</a></li>
                     <li><a href="{{route('scoreboard')}}">@lang('event.scoreboard_by_country')</a></li>
                 </ul>
@@ -41,6 +41,7 @@
                 <a href="javascript:void(null);">@lang('menu.about')</a>
                 <ul>
                     <li><a href="/about">Code Week</a></li>
+                    <li><a href="/hackathons">Hackathons</a></li>
                     <li><a href="{{route('codeweek4all')}}">Code Week 4 All</a></li>
                     <li><a href="/dance">@lang('snippets.dance.menu')</a></li>
                     <li><a href="/treasure-hunt">@lang('snippets.treasure-hunt.menu')</a></li>
@@ -108,6 +109,19 @@
                         <img src="/images/user_menu_activities.svg" class="icon">
                         <a href="{{route('excellence_winners')}}">
                             Excellence Winners
+                        </a>
+                    </li>
+                    @endrole
+                    @role('super admin|leading teacher admin')
+                    <li class="p-1 text-orange-600 rounded">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M0 0h24v24H0V0z" fill="none"/>
+                            <path fill="currentColor" d="M2 6h12v2H2zm0 4h12v2H2zm0 4h8v2H2zm14.01 3L13 14l-1.5 1.5 4.51 4.5L23 13l-1.5-1.5z"/>
+                        </svg>
+
+                        <a href="{{route('leading_teachers_list')}}">
+                            Leading Teachers
                         </a>
                     </li>
                     @endrole

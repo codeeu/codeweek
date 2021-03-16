@@ -8,14 +8,15 @@ return [
         1 => [
             'title' => '6 hackatona, 6 izazova',
             'content' => [
-                1 => 'Živite li u Irskoj, Italiji, Latviji, Rumunjskoj, Sloveniji ili Španjolskoj? Evo prilike za iskorištavanje vaše kreativnosti, znatiželje, težnji i tehničkih vještina. Pridružite se jednom od hackatona Europskog tjedna programiranja i razvijte inovativno rješenje koje će pomoći društvu.',
-                2 => 'Europski tjedan programiranja u 2020. donosi šest izvanrednih hackatona u šest europskih zemalja i pozivaju se stariji srednjoškolci (od 16 do 19 godina) da primijene vještine programiranja i u dva dana i osmisle rješenja za lokalni izazov.'
+                1 => 'Živiš u Grčkoj, Latviji, Irskoj, Italiji, Rumunjskoj ili Sloveniji? Kreativan si, ambiciozan i zanima te budućnost tehnologije? Ovo je tvoja prilika! Pridruži se jednom od hackathona u okviru Europskog tjedna programiranja i stvori inovativno rješenje koje će te staviti u prvi plan tehnološke revolucije!',
+                2 => "EU Code Week (Europski tjedan programiranja) predstavlja šest izvanrednih hackathona u 2021. i poziva srednjoškolce od 15 do 19 godina da se organiziraju u timove i iskoriste svoje vještine programiranja za rješavanje lokalnih izazova. Nakon 24-satnog hakiranja svaki će tim predstaviti svoje ideje stručnom žiriju koji će odabrati 10 finalista. Svi će timovi dobiti jednaku količinu vremena i resursa te pristup mentorima i znanjima koji su potrebni za rješavanje izazova, ali samo će njih 10 imati priliku prijeći u sljedeći krug, razviti prototip, završiti stručnu obuku i sudjelovati u završnom hackathonu na jesen. Tada će se konačno odlučiti koji će tim osvojiti cool IT opremu i priliku sudjelovanja u obuci uz stručnu podršku mentora kako bi dalje razvio svoj prototip."
+
             ]
         ],
         2 => [
             'title' => 'Kako mogu sudjelovati?',
             'content' => [
-                1 => 'Odaberite hackaton u vašoj zemlji i slijedite nekoliko jednostavnih koraka za registraciju. Ako želite sudjelovati s prijateljima ili prijateljima iz razreda, ne zaboravite navesti naziv svojeg tima. Svaki će hackaton zasebno otvoriti svoju registraciju.'
+                1 => 'Odaberi svoj lokalni hackathon i registriraj se u nekoliko jednostavnih koraka. Možeš sudjelovati kao pojedinac ili kao član tima koji se sastoji od šest članova. Ako želiš sudjelovati u natjecanju s prijateljima ili školskim kolegama, ne zaboravi navesti ime svog tima prilikom registracije. Svaki hackathon imat će zasebnu registraciju, stoga prati obavijesti o hackathonu u svojoj državi!'
             ]
         ],
         3 => [
@@ -29,8 +30,8 @@ return [
         4 => [
             'title' => 'Kako hackaton izgleda?',
             'content' => [
-                1 => 'U svakom je hackatonu 60 srednjoškolaca koji se natječu u timovima dva dana. Po završetku će svaki tim svoje rješenje prezentirati stručnom žiriju. Iskusni mentori bit će treneri timovima, a kroz radionice će se pružiti prilike sudionicima da nauče nove vještine i zabave se. Hackatoni su i izvrsna prilika sudionicima za umrežavanje i druženje s ljudima u lokalnom tehničkom sektoru.',
-                2 => 'Pobjednički tim u svakom lokalnom hackatonu osvojit će različite nagrade, uključujući priliku za posjet Bruxellesu i prezentiranje svojeg rješenja međunarodnoj publici 12. listopada 2020.',
+                1 => 'EU Code Week Hackathon je putovanje koje započinje 24-satnim online natjecanjem u hakiranju. Iskusni mentori osigurat će stručnu obuku timovima i održat će se radionice na kojima će polaznici usvojiti nove vještine uz mnoštvo zabave. Hackathon je također izvrsna prilika za networking sudionika i druženje s ljudima iz europskog tehnološkog sektora. Po završetku hackathona svaki će tim predstaviti svoje rješenje stručnom žiriju. ',
+                2 => 'Deset najboljih timova nastavit će svoju hackathonsku avanturu tijekom ljeta kada će proći obuku uz stručnu podršku mentora. Pobjednici će zatim u rujnu ili listopadu sudjelovati u završnom 12-satnom nacionalnom hackathonu (koji će se održati online ako opće zdravstveno stanje ne dopusti susret uživo).',
             ]
         ],
         5 => [
@@ -43,6 +44,9 @@ return [
         6 => [
             'title' => 'Partneri',
         ],
+        7 => [
+            'title' => "Zabavi se s nama!",
+        ],
 
     ],
 
@@ -50,35 +54,39 @@ return [
 
         1 => [
             'city' => "",
-            'country' => "Irska",
-            'date' => "travnja 2020"
+            'country' => "Rumunjska",
+            'date' => "17. – 18. travnja 2021."
         ],
         2 => [
             'city' => "",
-            'country' => "Slovenija",
-            'date' => "svibnja 2020"
+            'country' => "Irska",
+            'date' => "26. - 27. travnja 2021."
         ],
         3 => [
             'city' => "",
-            'country' => "Rumunjska",
-            'date' => "svibnja 2020"
+            'country' => "Italija",
+            'date' => "7. – 8. svibnja 2021."
         ],
         4 => [
             'city' => "",
-            'country' => "Španjolska",
-            'date' => "lipnja 2020"
+            'country' => "Grčka",
+            'date' => "7. – 8. svibnja 2021."
         ],
         5 => [
             'city' => "",
-            'country' => "Latvija",
-            'date' => "rujna 2020"
+            'country' => "Slovenija",
+            'date' => "15. – 16. svibnja 2021."
         ],
         6 => [
             'city' => "",
-            'country' => "Italija",
-            'date' => "rujna 2020"
+            'country' => "Latvija",
+            'date' => "29. – 30. svibnja 2021."
         ],
     ],
+    'final' => [
+        1 => 'Završno natjecanje u',
+        2 => 'rujnu/listopadu 2021.'
+    ]
 
 
 ];

@@ -20,6 +20,7 @@ return [
     'local_facebook_page'=>'local Facebook page',
     'local_website'=>'Local Website',
     'ambassadors'=>'Ambassadors',
+    'community'=>'Community',
     'no_ambassadors'=>'No ambassadors yet',
     'countries_with_ambassadors'=>'Countries with ambassadors',
     'why_dont_you_volunteer'=>'Why don\'t you volunteer?'
