@@ -168,6 +168,38 @@
                     </a>
                 </div>
 
+                <div class="codeweek-card-grid">
+                    <a href="{{route('codingathome-colour-everything')}}">
+                        <img src="/img/codingathome/17.png">
+                        <div class="title"
+                             style="text-align:center">@lang('coding-at-home.colour-everything.title')</div>
+                    </a>
+                </div>
+
+                <div class="codeweek-card-grid">
+                    <a href="{{route('codingathome-codyplotter-and-codyprinter')}}">
+                        <img src="/img/codingathome/18.png">
+                        <div class="title"
+                             style="text-align:center">@lang('coding-at-home.codyplotter-and-codyprinter.title')</div>
+                    </a>
+                </div>
+
+                <div class="codeweek-card-grid">
+                    <a href="{{route('codingathome-boring-pixels')}}">
+                        <img src="/img/codingathome/19.png">
+                        <div class="title"
+                             style="text-align:center">@lang('coding-at-home.boring-pixels.title')</div>
+                    </a>
+                </div>
+
+                <div class="codeweek-card-grid">
+                    <a href="{{route('codingathome-turning-code-into-pictures')}}">
+                        <img src="/img/codingathome/20.png">
+                        <div class="title"
+                             style="text-align:center">@lang('coding-at-home.turning-code-into-pictures.title')</div>
+                    </a>
+                </div>
+
             </section>
 
             <section class="codeweek-content-wrapper-inside">

@@ -269,6 +269,67 @@ return [
 
     ],
 
+    'colour-everything' => [
+        'title' => 'Oboji sve',
+        'text' =>'Možemo li voditi robote na takav način da oni crtaju svojim tragovima? U ovoj aktivnosti, igramo se kodiranjem i pikselima, koji oblikuju slike bojanjem u kutijama na četvrtastoj ploči, poput piksela na ekranu. ',
+        'material' =>'CodyRoby karte, četvrtasta ploča i pijun. Za bojanje u kutijama koristite komade papira koje ćete postaviti na kutije ili ih obojite markerima. ',
+        'questions' => [
+            'content' =>
+                [
+                    1 =>'Da li je moguće nacrtati dva srca kao u završnom dijelu videa vođenjem robota na svim potrebnim kutijama, a da ne prođete dva puta preko kutije?',
+                ]
+
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => 'CodyCrtač i CodyŠtampač',
+        'text' => 'Koja je razlika između crtača i štampača? Saznajte to igrajući ovu isključenu aktivnost kodiranja.',
+        'material' => 'pored CodyRoby kompleta, koristio sam zeleni marker i novog robota za oblikovanje gline, ali ovo nije obavezno.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Da li možete objasniti razliku između crtača i štampača?',
+                    2 => 'Kakav bi dizajn RobyŠtampač stvorio krećući se duž linija na ploči, ako izvršava slijed naredbi diktiranih na kraju videozapisa?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => 'Dosadni Pikseli!/Upotreba brojeva',
+        'text' => 'Davanjem uputa Roby-ju za formiranje slike kvadrat po kvadrat, piksel po piksel, otkrivamo da mnogi kvadrati u nizu imaju istu boju, možemo koristiti brojeve kako bi bilo zanimljivije. Računari rade isto...',
+        'material' => 'kvadratna bilježnica, ili kvadratna ploča 5 x 5, flomaster. Za predstavljanje koda crteža možete koristiti olovku i papir.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Pokušajte napraviti kvadratni dizajn i predstaviti ga RLE kodiranjem. Veličina dizajna je jednaka broju kvadrata, ali koja je veličina njegove RLE reprezentacije?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+        'title' => 'Pretvaranje koda u slike',
+        'text' => [
+            1 => 'Sada smo vidjeli da možemo stvoriti kod koji nam omogućuje crtanje slike. Zamislio sam crtež i upotrijebio kod za njegovo pretvaranje slova u brojeve, koje sam Vam dao. Zabilježite slova i brojeve i upotrijebite kod za rekonstrukciju crteža.',
+            2 => 'Ovo je slika na koju sam mislio, neka se pojavi na Vašoj bilježnici i na bilježnicama svih onih koji znaju kod!'
+        ],
+        'material' => 'papir (po mogućnosti kvadratni) i olovka.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Pokušajte dekodirati i nacrtati slike koje spominjem na kraju videozapisa.'
+                ]
+
+        ]
+
+    ],
+
+
 
     'texts' => [
         1 => '"Coding@Home" su kratki video snimci sa uradi sam materijalima, slagalicama, zanimljivim igrama i izazovima kodiranja za svakodnevnu upotrebu u kući kao i u školi. Nije vam potrebno nikakvo predznanje u kodiranju niti su vam potrebni blo kakvi elektronski uređaji da bi uradili aktivnosti. Aktivnosti će podstaknuti računarsko razmišljanje i njegovati vještine učenika, roditelja i učitelja u kući ili u školi.',
