@@ -209,60 +209,118 @@ return [
         'title' => "As duas cobras",
         'text' => "Utilizando as cartas do CodyRoby, duas cobras movem-se pelo tabuleiro na tentativa de se bloquearem uma à outra. A regra principal é muito simples: não pode voltar para uma casa já visitada por uma cobra. O vencedor é a cobra que se conseguir mover livremente durante mais tempo.",
         'material' => "Cartas do CodyRoby, um tabuleiro 5 x 5, dois peões, e papelinhos para marcar as casas já visitadas.",
- 'questions' => [
- 'content' =>
-            [
- 1 => "Q1. Na parte inicial do vídeo, se não calhar aos dois jogadores cartas amarelas «virar à esquerda», que cartas devem esperar retirar?",
- ]
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Na parte inicial do vídeo, se não calhar aos dois jogadores cartas amarelas «virar à esquerda», que cartas devem esperar retirar?",
+                ]
 
-    ]
-
-],
-
-'round-trip' => [
-    'title' => "Viagem de ida e volta",
- 'text' => "Cada equipa espera pela sua vez. A primeira equipa programa a viagem de ida, enquanto a segunda deve fazer regressar o Roby ao ponto de partida. Parece fácil mas não é, em particular se programar as jogadas de cabeça sem mover o Roby no tabuleiro...",
- 'material' => "Cartas do CodyRoby, um tabuleiro 5 x 5, dois peões, e papelinhos para marcar as casas já visitadas.",
- 'questions' => [
- 'content' =>
-            [
- 1 => "Q1. É possível que o trajeto que faz regressar o Roby seja mais curto, isto é, que seja composto por menos instruções, que a viagem de ida?",
- ]
-
-    ]
-
-],
-
-'meeting-point' => [
-    'title' => "Ponto de encontro",
-    'text' => "Desta vez, podemos planear as jogadas antes de começar. As duas equipas colocam as cartas na mesa para criar a sequência de instruções que moverão os respetivos robôs, mas nenhum se move até um dos jogadores dizer «Começar!». Nesse momento, a programação termina e a ação começa. O jogador que disse «Começar!» ganha apenas se os dois robôs, cada um executando as instruções da sua equipa, terminarem na mesma casa.",
- 'material' => "Cartas do CodyRoby, um tabuleiro 5 x 5 e dois peões.",
- 'questions' => [
- 'content' =>
-            [
- 1 => "Q1. Se achar possível que os dois robôs nunca se encontrem, inventa novas regras para abranger todas as situações possíveis.",
- ]
-
-    ]
-
-],
-
-'follow-the-music' => [
- 'title' => "Seguir a música",
- 'text' => "Quando as sequências de instruções de programação se repetem de forma periódica, é como se criassem um ritmo. Se associarmos um som a cada instrução, podemos guiar o Roby com música. É precisamente o que vamos fazer desta vez. Vou criar um programa utilizando diferentes sons para representar as diferentes instruções, e vai mover o Roby pelo tabuleiro seguindo estas instruções sonoras.",
- 'material' => "Para além das cartas do CodyRoby, do tabuleiro e dos peões, precisamos de criar três sons diferentes. Eu utilizei três copos com diferentes quantidades de água. O que vai utilizar?",
- 'questions' => [
-    'content' =>
-        [
-            1 => "Q1. Tente seguir o vídeo e guiar-se com os sons produzidos pelos copos, sem olhar para as cartas. Consegue reconhecer e executar as instruções mediante os sons?",
-            2 => "Q2. Escolha três sons para associar às três instruções básicas. Elabore uma sequência de sons que podia repetir continuamente sem que o Roby nunca saísse do tabuleiro...",
         ]
 
-]
+    ],
 
-],
+    'round-trip' => [
+        'title' => "Viagem de ida e volta",
+        'text' => "Cada equipa espera pela sua vez. A primeira equipa programa a viagem de ida, enquanto a segunda deve fazer regressar o Roby ao ponto de partida. Parece fácil mas não é, em particular se programar as jogadas de cabeça sem mover o Roby no tabuleiro...",
+        'material' => "Cartas do CodyRoby, um tabuleiro 5 x 5, dois peões, e papelinhos para marcar as casas já visitadas.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. É possível que o trajeto que faz regressar o Roby seja mais curto, isto é, que seja composto por menos instruções, que a viagem de ida?",
+                ]
 
+        ]
 
+    ],
+
+    'meeting-point' => [
+        'title' => "Ponto de encontro",
+        'text' => "Desta vez, podemos planear as jogadas antes de começar. As duas equipas colocam as cartas na mesa para criar a sequência de instruções que moverão os respetivos robôs, mas nenhum se move até um dos jogadores dizer «Começar!». Nesse momento, a programação termina e a ação começa. O jogador que disse «Começar!» ganha apenas se os dois robôs, cada um executando as instruções da sua equipa, terminarem na mesma casa.",
+        'material' => "Cartas do CodyRoby, um tabuleiro 5 x 5 e dois peões.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Se achar possível que os dois robôs nunca se encontrem, inventa novas regras para abranger todas as situações possíveis.",
+                ]
+
+        ]
+
+    ],
+
+    'follow-the-music' => [
+        'title' => "Seguir a música",
+        'text' => "Quando as sequências de instruções de programação se repetem de forma periódica, é como se criassem um ritmo. Se associarmos um som a cada instrução, podemos guiar o Roby com música. É precisamente o que vamos fazer desta vez. Vou criar um programa utilizando diferentes sons para representar as diferentes instruções, e vai mover o Roby pelo tabuleiro seguindo estas instruções sonoras.",
+        'material' => "Para além das cartas do CodyRoby, do tabuleiro e dos peões, precisamos de criar três sons diferentes. Eu utilizei três copos com diferentes quantidades de água. O que vai utilizar?",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Tente seguir o vídeo e guiar-se com os sons produzidos pelos copos, sem olhar para as cartas. Consegue reconhecer e executar as instruções mediante os sons?",
+                    2 => "Q2. Escolha três sons para associar às três instruções básicas. Elabore uma sequência de sons que podia repetir continuamente sem que o Roby nunca saísse do tabuleiro...",
+                ]
+
+        ]
+
+    ],
+
+    'colour-everything' => [
+        'title' => 'Colorir tudo',
+        'text' => 'Podemos guiar os robôs no tabuleiro de forma a que o seu rasto faça um desenho? Nesta atividade, utilizamos a programação e a arte do píxel para fazer desenhos colorindo as casas de um tabuleiro quadriculado, como os pixéis num ecrã.',
+        'material' => 'As cartas CodyRoby, um tabuleiro e um peão. Para colorir as casas, coloca bocados de papel em cima das casas ou pinta-as com marcadores.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'É possível desenhar os dois corações como na parte final do vídeo guiando o robô sobre todas as casas necessárias sem nunca passar duas vezes pela mesma casa?',
+                ]
+
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => 'Cody Traçador e Cody Impressora',
+        'text' => 'Qual a diferença entre um traçador (impressora linha a linha) e uma impressora normal? Descobre fazendo esta atividade sem estares em linha.',
+        'material' => 'Além do kit CodyRoby, utilizei um marcador verde e um robô novo de barro, mas isto não é obrigatório.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Podes explicar a diferença entre um traçador e uma impressora?',
+                    2 => 'Que desenho faria o Roby Impressora deslocando-se entre as linhas do tabuleiro se executasse a série de comandos ditada no final do vídeo?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => 'Pixéis aborrecidos!/Utilização de números',
+        'text' => 'Se dermos instruções ao Roby para fazer uma imagem, píxel a píxel, veremos que, quando muitos quadrados de uma linha tiverem a mesma cor, podemos usar números para tornar isto mais interessante. É o que fazem os computadores...',
+        'material' => 'um caderno de papel quadriculado ou um tabuleiro quadriculado 5 × 5 desenhado numa folha de papel e uma caneta de feltro. Para anotar o código do desenho, podes usar papel e caneta.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Tenta desenhar um tabuleiro quadriculado e representa-o através da códificação RLE. O tamanho do desenho é igual ao número de casas, mas qual é o tamanho da sua representação RLE ?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+        'title' => 'Converter o código em imagens',
+        'text' => [
+            1 => 'Acabámos de ver que é possível criar um código que nos permite desenhar uma imagem. Pensei num desenho e usei um código para o converter em números e letras, que te comuniquei. Toma nota dos números e letras e usa o código para fazeres o desenho.',
+            2 => 'Esta é a imagem que eu imaginei. Vê se consegues que apareça no teu caderno e nos cadernos de todos que conhecem o código!'
+        ],
+        'material' => 'uma folha de papel (de preferência quadriculado) e uma caneta.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Tenta descodificar e desenhar as imagens de que falo no final do vídeo.'
+                ]
+
+        ]
+
+    ],
 
 
     'texts' => [
