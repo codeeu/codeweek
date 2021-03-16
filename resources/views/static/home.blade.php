@@ -64,9 +64,11 @@
             </a>
         </section>
         <div class="mobile-arrow"><img src="/images/arrow_down.svg"></div>
+        <doris-chatbot environment="codeweek"/>
     </section>
 @endsection
 
 @push('scripts')
+    @include('static.chatbot')
     @include('static.countdown')
 @endpush

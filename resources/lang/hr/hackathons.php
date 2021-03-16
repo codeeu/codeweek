@@ -60,7 +60,7 @@ return [
         2 => [
             'city' => "",
             'country' => "Irska",
-            'date' => "travnja 2021."
+            'date' => "26. - 27. travnja 2021."
         ],
         3 => [
             'city' => "",
@@ -70,7 +70,7 @@ return [
         4 => [
             'city' => "",
             'country' => "Grčka",
-            'date' => "8. – 9. svibnja 2021."
+            'date' => "7. – 8. svibnja 2021."
         ],
         5 => [
             'city' => "",
