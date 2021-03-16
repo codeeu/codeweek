@@ -262,6 +262,65 @@ return [
 
     ],
 
+    'colour-everything' => [
+        'title' => 'Tout colorier',
+        'text' => 'Peut-on guider les robots sur le plateau de façon à ce que leurs traces constituent un dessin? Dans le cadre de cette activité, nous jouons avec le codage et le pixel art, qui consiste à former des images en coloriant les cases d’un damier, comme des pixels sur un écran.',
+        'material' => 'Les cartes CodyRoby, un damier et un pion. Pour colorier les cases, utilise des morceaux de papier à placer sur les cases, ou colorie les cases avec des marqueurs.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Est-il possible de dessiner les deux cœurs comme dans la dernière partie de la vidéo, en guidant le robot sur toutes les cases nécessaires sans jamais passer deux fois sur la même case?',
+                ]
+
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => 'Cody Traceur et Cody Imprimante?',
+        'text' => 'Quelle est la différence entre un traceur et une imprimante? Découvre-le grâce à cette activité de codage hors ligne.',
+        'material' => 'en plus du kit CodyRoby, j’ai utilisé un marqueur vert et un nouveau robot en pâte à modeler, mais ce n’est pas obligatoire.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Peux-tu expliquer la différence entre un traceur et une imprimante?',
+                    2 => 'Quel dessin produirait Roby Imprimante en se déplaçant sur les lignes du plateau s’il exécutait la séquence d’instructions figurant à la fin de la vidéo?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => 'Boring Pixels!/Utilisation de chiffres',
+        'text' => 'En donnant à Roby des instructions pour former une image case par case, pixel par pixel, nous découvrons que lorsque de nombreuses cases d’une même ligne sont de la même couleur, nous pouvons utiliser des chiffres pour que ce soit plus intéressant. Les ordinateurs font la même chose...',
+        'material' => 'cahier quadrillé, ou damier de 5×5 cases dessiné sur une feuille de papier, et stylo-feutre. Pour représenter le code du dessin, tu peux utiliser un stylo et une feuille de papier.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Essaie de faire un dessin à damier et représente-le au moyen du codage RLE. La taille du dessin est égale au nombre de cases, mais quelle est la taille de sa représentation RLE?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+        'title' => 'Transformer du code en images',
+        'text' => [
+            1 => 'Nous avons vu que nous pouvions créer un code nous permettant de dessiner une image. J’ai imaginé un dessin et j’ai utilisé du code pour le transformer en lettres et en chiffres, que je t’ai donnés. Prends note des lettres et des chiffres et utilise le code pour reconstruire le dessin.',
+            2 => 'Voici l’image que j’avais imaginée. Fais-la apparaître sur ton cahier et sur les cahiers de tous ceux qui connaissent le code!'
+        ],
+        'material' => 'une feuille de papier (de préférence quadrillée) et un stylo.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Essaie de décoder et de dessiner les images dont je parle à la fin de la vidéo.'
+                ]
+
+        ]
+
+    ],
 
 
     'texts' => [

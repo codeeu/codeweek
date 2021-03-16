@@ -156,54 +156,54 @@ return [
     'material2' => [
         "chequered-with-labels" => "scacchiera con etichette",
         "cards" => 'carte con le istruzioni di spostamento 24 carte "vai avanti", 8 carte "gira a sinistra" e 8 carte "gira a destra"',
-"larger-cards" => "per la versione da pavimento si raccomanda l'uso di carte più grandi",
-"video" => "Il video spiega inoltre come giocare senza il mazzo di carte",
-"pieces-of-paper" => "Sono necessari anche: 24 pezzi di carta da mettere sulle caselle in cui siete già passati",
-"card-alternative" => "In alternativa al mazzo di carte CodyRoby, si possono utilizzare le carte con le frecce che trovate qui",
-"small-drawings" => "Si possono aggiungere piccoli disegni che facilitino il racconto della storia. Quelli utilizzati nel video sono disponibili qui",
-"rest-of-cards" => "Per concludere, utilizziamo le carte di CodyRoby, CodyFeet o CodyColour."
-],
+        "larger-cards" => "per la versione da pavimento si raccomanda l'uso di carte più grandi",
+        "video" => "Il video spiega inoltre come giocare senza il mazzo di carte",
+        "pieces-of-paper" => "Sono necessari anche: 24 pezzi di carta da mettere sulle caselle in cui siete già passati",
+        "card-alternative" => "In alternativa al mazzo di carte CodyRoby, si possono utilizzare le carte con le frecce che trovate qui",
+        "small-drawings" => "Si possono aggiungere piccoli disegni che facilitino il racconto della storia. Quelli utilizzati nel video sono disponibili qui",
+        "rest-of-cards" => "Per concludere, utilizziamo le carte di CodyRoby, CodyFeet o CodyColour."
+    ],
 
 
-'catch-the-robot' => [
-    'title' => "Cattura il robot",
-    'text' => '"Cattura il robot" è un gioco competitivo da tavolo o da pavimento. Vince il giocatore che cattura il robot della squadra avversaria raggiungendo la sua casella sulla scacchiera. Poiché le carte da gioco vengono estratte in modo casuale, entrambe le squadre devono continuamente adattare le proprie strategie.',
-'questions' => [
-    'content' =>
-        [
-            1 => 'D1. Se la pedina rosa (Roby) si trova sulla casella centrale C3 orientata a nord e la squadra rosa ha 2 carte "vai avanti", 2 carte "gira a sinistra" e 1 carta "gira a destra", in quali caselle può andare la pedina?',
-]
+    'catch-the-robot' => [
+        'title' => "Cattura il robot",
+        'text' => '"Cattura il robot" è un gioco competitivo da tavolo o da pavimento. Vince il giocatore che cattura il robot della squadra avversaria raggiungendo la sua casella sulla scacchiera. Poiché le carte da gioco vengono estratte in modo casuale, entrambe le squadre devono continuamente adattare le proprie strategie.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'D1. Se la pedina rosa (Roby) si trova sulla casella centrale C3 orientata a nord e la squadra rosa ha 2 carte "vai avanti", 2 carte "gira a sinistra" e 1 carta "gira a destra", in quali caselle può andare la pedina?',
+                ]
 
-]
-
-],
-
-'the-snake' => [
-    'title' => "Il serpente",
-    'text' => '"Il serpente" è un tipo di solitario giocato con le carte CodyRoby. L\'obiettivo del gioco è guidare il serpente attraverso tutte le caselle della scacchiera senza che si morda la coda."',
-'questions' => [
-    'content' =>
-        [
-            1 => "D1. Ci sono punti di partenza dai quali diventa impossibile passare su tutte le caselle senza mordere la coda del serpente?",
         ]
 
-]
+    ],
 
-],
+    'the-snake' => [
+        'title' => "Il serpente",
+        'text' => '"Il serpente" è un tipo di solitario giocato con le carte CodyRoby. L\'obiettivo del gioco è guidare il serpente attraverso tutte le caselle della scacchiera senza che si morda la coda."',
+        'questions' => [
+            'content' =>
+                [
+                    1 => "D1. Ci sono punti di partenza dai quali diventa impossibile passare su tutte le caselle senza mordere la coda del serpente?",
+                ]
 
-'storytelling' => [
-    'title' => "Raccontare una storia",
-    'text' => "L'argomento di oggi è raccontare una storia! Usate le istruzioni di CodyRoby, le impronte di CodyFeet o i colori di CodyColour per guidare le pedine attraverso la scacchiera e raccontare una storia. Distribuite le diverse parti della storia sulla scacchiera.",
-    'questions' => [
-        'content' =>
-            [
-                1 => "D1. Quale strumento è il più adatto per guidare Roby in modo da raccontare una storia?",
-                2 => "D2. Riuscite a disporre sulla scacchiera le parti della storia che vorreste raccontare in posizioni che rendano impossibile recuperarle tutte con CodyFeet?",
-            ]
+        ]
 
-    ]
+    ],
 
-],
+    'storytelling' => [
+        'title' => "Raccontare una storia",
+        'text' => "L'argomento di oggi è raccontare una storia! Usate le istruzioni di CodyRoby, le impronte di CodyFeet o i colori di CodyColour per guidare le pedine attraverso la scacchiera e raccontare una storia. Distribuite le diverse parti della storia sulla scacchiera.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "D1. Quale strumento è il più adatto per guidare Roby in modo da raccontare una storia?",
+                    2 => "D2. Riuscite a disporre sulla scacchiera le parti della storia che vorreste raccontare in posizioni che rendano impossibile recuperarle tutte con CodyFeet?",
+                ]
+
+        ]
+
+    ],
 
     'two-snakes' => [
         'title' => "I due serpenti",
@@ -236,34 +236,91 @@ return [
     'meeting-point' => [
         'title' => "Punto di incontro",
         'text' => 'Questa volta pianifichiamo le nostre mosse prima di iniziare. Le due squadre mettono sul tavolo le carte per creare la sequenza di istruzioni che sposterà i rispettivi robot, ma non spostano niente fino a che uno dei giocatori dice "Partenza!". A quel punto la programmazione finisce e inizia l\'azione. Il giocatore che ha detto "Partenza!" vince solo se i due robot, ciascuno dei quali esegue le istruzioni della propria squadra, finiscono sulla stessa casella.',
- 'material' => "Carte CodyRoby, una scacchiera 5 × 5, due pedine.",
- 'questions' => [
-    'content' =>
-        [
-            1 => "Q1. Se pensate che i due robot potrebbero non incontrarsi mai, inventate regole che coprano tutte le situazioni possibili.",
+        'material' => "Carte CodyRoby, una scacchiera 5 × 5, due pedine.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Se pensate che i due robot potrebbero non incontrarsi mai, inventate regole che coprano tutte le situazioni possibili.",
+                ]
+
         ]
 
-]
+    ],
 
-],
+    'follow-the-music' => [
+        'title' => "Segui la musica",
+        'text' => "Quando le sequenze di istruzioni di programmazione si ripetono periodicamente è come se avessero un ritmo. Se associamo un suono a ogni istruzione possiamo guidare Roby con la musica. È proprio quello che faremo questa volta. Creerò un programma usando suoni diversi che rappresentano istruzioni diverse e voi muoverete Roby sulla scacchiera seguendo queste istruzioni formate da suoni.",
+        'material' => "Oltre alle carte CodyRoby, alla scacchiera e alla pedina, ci servono tre suoni diversi. Io ho usato tre bicchieri riempiti con diverse quantità di acqua, voi che cosa userete?",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Provate a seguire il video e a farvi guidare dai suoni prodotti dai bicchieri senza guardare le carte. Sapete riconoscere ed eseguire le istruzioni espresse dai suoni?",
+                    2 => "Q2. Scegliete tre suoni da associare alle tre istruzioni di base. Inventate una sequenza di suoni che potreste ripetere all'infinito senza far mai uscire Roby dalla scacchiera...",
+                ]
 
-'follow-the-music' => [
-    'title' => "Segui la musica",
-    'text' => "Quando le sequenze di istruzioni di programmazione si ripetono periodicamente è come se avessero un ritmo. Se associamo un suono a ogni istruzione possiamo guidare Roby con la musica. È proprio quello che faremo questa volta. Creerò un programma usando suoni diversi che rappresentano istruzioni diverse e voi muoverete Roby sulla scacchiera seguendo queste istruzioni formate da suoni.",
-    'material' => "Oltre alle carte CodyRoby, alla scacchiera e alla pedina, ci servono tre suoni diversi. Io ho usato tre bicchieri riempiti con diverse quantità di acqua, voi che cosa userete?",
-    'questions' => [
-        'content' =>
-            [
-                1 => "Q1. Provate a seguire il video e a farvi guidare dai suoni prodotti dai bicchieri senza guardare le carte. Sapete riconoscere ed eseguire le istruzioni espresse dai suoni?",
-                2 => "Q2. Scegliete tre suoni da associare alle tre istruzioni di base. Inventate una sequenza di suoni che potreste ripetere all'infinito senza far mai uscire Roby dalla scacchiera...",
-            ]
+        ]
 
-    ]
+    ],
 
-],
+    'colour-everything' => [
+        'title' => 'Colorare tutto',
+        'text' => "Possiamo guidare i robot sulla lavagna in modo che il loro percorso componga un disegno? In questa attività, giochiamo con la programmazione e l'arte pixel, nel senso che formiamo immagini colorando le caselle di una scacchiera, come i pixel su uno schermo.",
+        'material' => 'Le carte CodyRoby, una scacchiera di cartone e una pedina. Per colorare le caselle, coprile con pezzetti di carta colorata o utilizza i pennarelli.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'È possibile disegnare i due cuori della parte finale del video guidando il robot su tutte le caselle necessarie senza mai passarvi su due volte?',
+                ]
 
+        ]
 
+    ],
 
+    'codyplotter-and-codyprinter' => [
+        'title' => 'CodyPlotter e CodyPrinter',
+        'text' => 'Qual è la differenza tra un plotter e una stampante? Scoprilo con questa attività di programmazione senza computer.',
+        'material' => 'oltre al kit CodyRoby, ho utilizzato un pennarello verde e un robot di plastilina, ma è facoltativo.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Puoi spiegare qual è la differenza tra un plotter e una stampante?',
+                    2 => 'Quale disegno comporrebbe RobyPrinter muovendosi lungo le linee della scacchiera, se eseguisse la sequenza di comandi dettati alla fine del video?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => 'Come sono noiosi i pixel! Meglio usare i numeri',
+        'text' => "Quando diamo a Roby le istruzioni per formare un disegno, riquadro dopo riquadro, pixel dopo pixel, scopriamo che se diversi riquadri di una stessa riga hanno lo stesso colore possiamo avvalerci dei numeri per rendere l'operazione più interessante. I computer fanno lo stesso...",
+        'material' => 'un quaderno a quadretti o una scacchiera 5 × 5 disegnata su un foglio di carta, un pennarello. Per rappresentare il codice del disegno è possibile utilizzare una penna e un foglio.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Cerca di eseguire un disegno a quadretti rappresentandolo con la codifica RLE. La dimensione del disegno è uguale al numero di quadretti, ma qual è la dimensione della sua rappresentazione RLE?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+        'title' => 'Trasformare i codici in immagini',
+        'text' => [
+            1 => "Abbiamo visto che possiamo creare un codice che ci consente di tracciare un'immagine. Ho pensato a un disegno e ho utilizzato un codice per trasformarlo in lettere e cifre, che ti ho fornito. Prendi nota delle lettere e dei numeri e utilizza il codice per ricostruire il disegno.",
+            2 => "Ecco l'immagine che avevo in mente, falla apparire sul tuo quaderno o sui quaderni di tutti coloro che conoscono la programmazione!"
+        ],
+        'material' => 'un foglio di carta (preferibilmente a quadretti) e una penna.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Cerca di decodificare e disegnare le immagini di cui parlo alla  fine del video.'
+                ]
+
+        ]
+
+    ],
 
 
     'texts' => [

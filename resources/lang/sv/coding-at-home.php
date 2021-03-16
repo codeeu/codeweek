@@ -268,6 +268,65 @@ return [
 
     ],
 
+    'colour-everything' => [
+        'title' => 'Färglägg allt',
+        'text' => 'Kan vi guida robotarna runt brädet så att de gör en teckning med sina spår? I den här aktiviteten leker vi med kodning och pixelkonst, där man gör bilder genom att färglägga rutorna på ett spelbräde, precis som pixlar på en skärm.',
+        'material' => 'CodyRoby-kort, ett spelbräde och en spelpjäs. För att färglägga rutorna använder du pappersbitar som du lägger på fälten eller så färgar du fälten med färgpennor.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Går det att rita två hjärtan som i slutet av filmen genom att guida roboten till alla fält som krävs utan att passera samma fält två gånger?',
+                ]
+
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => 'CodyPlotter och CodyPrinter',
+        'text' => 'Vad är skillnaden mellan en plotter och en skrivare? Det kan du ta reda på genom att göra den här kodningsövningen som inte kräver någon uppkoppling.',
+        'material' => 'Förutom CodyRoby-kitet har jag använt en grön penna och en ny robot i modellera, men det behöver du inte göra.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Kan du förklara skillnaden mellan en plotter och en skrivare?',
+                    2 => 'Vilken design skulle RobyPrinter ge genom att röra sig längs brädans linjer om den utför den sekvens med kommandon som beskrivs i slutet av filmen?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => 'Tråkiga pixel!/Använd siffror',
+        'text' => 'Genom att ge Roby instruktioner om att forma en bild ruta för ruta, pixel för pixel, upptäcker vi att när många fält i följd har samma färg kan vi använda siffror för att göra det intressantare. Datorer gör samma sak...',
+        'material' => 'Rutblock, eller ett rutfält med 5 × 5 rutor ritat på ett papper och en tuschpenna. För att beskriva teckningens kod kan du använda papper och penna.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Försök att göra en rutig design och beskriv den med skurlängdskodning (RLE). Storleken på designen är samma som antalet rutor, med vad är storleken på RLE-representationen?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+        'title' => 'Omvandla kod till bilder',
+        'text' => [
+            1 => 'Vi har nu sett att vi kan skapa kod som gör att vi kan rita en bild. Jag har tänkt ut en teckning och använt kod för att omvandla den till bokstäver och siffror, som jag har gett till dig. Skriv upp bokstäverna och siffrorna och använd koden för att återskapa teckningen.',
+            2 => 'Här är bilden jag tänkte på – se till att den dyker upp på ditt ritblock och i ritblocket hos alla som känner till koden!'
+        ],
+        'material' => 'Papper (helst rutigt) och en penna.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Försök att avkoda och rita bilden som jag beskrev i slutet av filmen.'
+                ]
+
+        ]
+
+    ],
 
 
     'texts' => [

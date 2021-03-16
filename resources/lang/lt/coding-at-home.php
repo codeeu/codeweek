@@ -147,7 +147,7 @@ return [
                     1 => '1 klausimas. Kokią komandų seką pirmame vaizdo įraše rodytame pavyzdyje turėtų įvykdyti turistai, kad nukeliautų iki Rafaelio paminklo?',
                     2 => '2 klausimas. Kokią komandų seką antrame vaizdo įraše rodytame pavyzdyje turėtų įvykdyti turistai, kad nukeliautų iki kunigaikščių rūmų Torricini fasado?',
                     3 => '3 klausimas. Sugalvokite, kaip būtų galima smagiai atlikti tą patį veiksmą, kai kaskart viena iš dviejų grupių pasirenka kortelę, kad ją pridėtų prie programos. Persvarstykite vaizdo įraše parodytą estafetės žaidimą ir sugalvokite naują būdą',
- ]
+                ]
 
         ]
 
@@ -263,8 +263,65 @@ return [
 
     ],
 
+    'colour-everything' => [
+        'title' => 'Nuspalvinkime viską',
+        'text' => 'Ar galime vedžioti robotus lentoje taip, kad judėdami jie kurtų piešinį? Šiame užsiėmime programuodami kursime pikselių piešinį – spalvindami langelius, kaip pikselius ekrane, nupiešime paveikslėlį.',
+        'material' => '„CodyRoby“ kortelės, langelių lenta ir figūrėlė. Langelius galite spalvinti ant jų uždėdami popieriaus gabalėlius arba naudodami žymeklius.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Ar įmanoma, vedžiojant robotą per visus reikiamus langelius, nupiešti dvi širdutes, kaip vaizdo įrašo pabaigoje, nepereinant per nė vieną langelį du kartus?',
+                ]
 
+        ]
 
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => 'Kodis braižytuvas ir Kodis spausdintuvas',
+        'text' => 'Kuo braižytuvas skiriasi nuo spausdintuvo? Sužinokite atlikdami programavimo užduotis neprisijungus.',
+        'material' => 'be „CodyRoby“ rinkinio, naudojau žalią žymeklį ir naują iš modelino pagamintą robotą, tačiau jis nėra būtinas',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Ar galite paaiškinti, kuo braižytuvas skiriasi nuo spausdintuvo?',
+                    2 => 'Kokį paveikslėlį sukurtų Robis spausdintuvas judėdamas lentoje, jei jis įvykdytų vaizdo įrašo pabaigoje duotų komandų seką?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => 'Nuobodūs pikseliai! / Naudokime skaičius',
+        'text' => 'Kai davėme Rubiui nurodymus sukurti paveikslėlį judant po langelį ar po pikselį matėme, kad kai daug langelių vienoje eilėje yra tos pačios spalvos, žaidimą galime padaryti įdomesnį naudodami skaičius. Kompiuteriai veikia taip pat...',
+        'material' => 'languotas sąsiuvinis arba ant popieriaus lapo nupiešta 5 × 5 langelių lenta, flomasteris. Piešinio kodą galite užrašyti rašikliu ant popieriaus.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Pabandykite iš langelių sukurti paveikslėlį ir užrašyti jo kodą taikydami pasikartojančių sekų kodavimo (RLE) metodą. Paveikslėlio dydis lygus langelių skaičiui, tačiau koks yra jį perteikiančio RLE kodo dydis?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+        'title' => 'Kodą paverčiame paveikslėliais',
+        'text' => [
+            1 => 'Jau matėme, kaip sukurti kodą, kuris leistų mums nupiešti paveikslėlį. Sugalvojau piešinį ir panaudojęs kodą jį paverčiau raidėmis ir skaičiais, kuriuos jums daviau. Užsirašykite raides ir skaičius ir naudodami kodą atkurkite piešinį.',
+            2 => 'Štai paveikslėlis, kurį buvau sugalvojęs – perkelkite jį į savo sąsiuvinį ir į sąsiuvinius visų tų, kurie žino kodą!'
+        ],
+        'material' => 'popierius (geriausia languotas) ir rašiklis.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Pabandykite iškoduoti ir nupiešti vaizdo įrašo pabaigoje mano minėtus paveikslėlius.'
+                ]
+
+        ]
+
+    ],
 
 
     'texts' => [

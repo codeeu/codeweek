@@ -207,54 +207,114 @@ return [
         'title' => "Kaks ussi",
         'text' => 'Kaks „ussi“ liiguvad CodyRoby kaarte kasutades mängulaual ringi ja püüavad teineteise liikumist takistada. Põhireegel on väga lihtne: väljale, kus üks „ussidest“ juba olnud on, enam uuesti astuda ei saa. Mängu võidab „uss“, kellel õnnestub kõige kauem vabalt ringi liikuda.',
         'material' => "CodyRoby kaardid, 5 × 5 ruuduga mängulaud, kaks mängunuppu ja väikesed paberitükid külastatud väljade märkimiseks.",
- 'questions' => [
- 'content' =>
+        'questions' => [
+            'content' =>
+                [
+                    1 => "K1. Kui mängijad ei saa videos näidatud mängu algseisus vasakule pööramist tähistavaid kollaseid kaarte, siis missuguste kaartide tõmbamist võiksid nad loota?",
+                ]
+
+        ]
+
+    ],
+
+    'round-trip' => [
+        'title' => "Edasi-tagasi",
+        'text' => "Mängitakse kordamööda. Esimene mängija kodeerib Roby mineku teekonna ja teine peab ta algpunkti tagasi tooma. Tundub lihtne, aga pole seda. Eriti siis, kui planeerida Roby liikumist vaid mõttes, ilma teda tegelikult liigutamata ...",
+        'material' => "CodyRoby kaardid, 5 × 5 ruuduga mängulaud, kaks mängunuppu ja väikesed paberitükid külastatud väljade märkimiseks.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "K1. Kas tagasitulekukood võib olla minekukoodist lühem (st koosneda vähematest juhiskaartidest)?",
+                ]
+
+        ]
+
+    ],
+
+    'meeting-point' => [
+        'title' => "Kohtumispaik",
+        'text' => "Selles mängus kavandatakse liikumine esialgu mõttes ette ja seejärel hakatakse nuppe liigutama. Mängijad loovad kaarte lauale asetades oma robotitele liikumisjuhised, kuid liikuma hakkavad nad alles siis, kui üks mängijatest ütleb „start“. Siis lõpeb programmeerimine ja algab liikumine. Mängija, kes ütles „start“, võidab ainult juhul, kui robotid oma juhiseid järgides lõpuks ühel ja samal väljal kokku saavad.",
+        'material' => "CodyRoby kaardid, 5 × 5 ruuduga mängulaud, kaks mängunuppu.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "K1. Kui sinu meelest on võimalik, et robotid kunagi ei kohtugi, mõtle välja kõikvõimalikke olukordi hõlmavad mängureeglid.",
+                ]
+
+        ]
+
+    ],
+
+    'follow-the-music' => [
+        'title' => "Muusika taktis",
+        'text' => "Kui koodis on teatud aja tagant korduvaid jadasid, võime seda tajuda rütmilisena. Kui igale juhisele kindel heli anda, saab Robyt muusikaga juhendada. Täpselt seda me sel korral tegema hakkamegi. Mina kirjutan ees koodi, kasutades juhiseid tähistavaid helisid, ja sinul tuleb heli järgi Robyt mängulaual liigutada.",
+        'material' => "Lisaks CodyRoby kaartidele, mängulauale ja -nuppudele on vaja kolme eristatavat heli. Mina kasutan kolme klaasi, kus on erinev kogus vett, aga sina?",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "K1. Pane video mängima ja püüa juhiseid mõista vaid klaaside tekitatud heli järgi kaarte vaatamata. Kas tunned helid ära ja suudad juhised täide viia?",
+                    2 => "K2. Anna igale juhisele kindel heli. Mõtle välja helijada, mida saaks lõputult korrata, ilma et Roby ruudustikust välja satuks ...",
+                ]
+
+        ]
+
+    ],
+
+    'colour-everything' => [
+        'title' => 'Värvi kõik ära',
+        'text' => 'Kas saame juhtida roboteid ruudustikul nii, et nende jälgedest moodustuksid pildid? Selles tegevuses mängime kodeerimis- ja pikslikunstiga, mis kujutab endast kujutiste loomist, värvides ruudustikul ruute, mis on nagu pikslid ekraanil.',
+        'material' => 'CodyRoby kaardid, ruuduline mängulaud ja mängunupp. Ruutude „värvimiseks“ kasutage ruutudele asetatavaid paberitükke või värvige ruudud markerite abil.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Kas on võimalik joonistada kaks südant, mida nägime video lõpuosas, juhtides robotit kõigile vajalikele ruutudele, ilma et ühtegi ruutu külastataks kaks korda?',
+                ]
+
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => 'CodyPlotter ja CodyPrinter',
+        'text' => 'Mis on plotteri ja printeri vaheline erinevus? Saage teada, osaledes selles kodeerimisvahendite abil korraldatavas tegevuses.',
+        'material' => 'CodyRoby komplektile lisaks kasutasin ma rohelist markerit ja uut voolimissavist robotit, kuid see on valikuline.',
+        'questions' => [
+    'content' =>
+        [
+            1 => 'Kas oskate selgitada, mis vahet on plotteril ja printeril?',
+            2 => 'Millise kavandi looks RobyPrinter ruudustikul jooni mööda liikudes, kui ta täidaks video lõpus olevate käskude jada?',
+        ]
+
+]
+
+    ],
+
+    'boring-pixels' => [
+    'title' => 'Igavad pikslid! / Numbrite kasutamine',
+    'text' => 'Kui anname Robyle ruudu ja piksli kaupa juhiseid pildi moodustamiseks, siis avastame, et kui reas on palju ühevärvilisi ruute, siis saame kasutada numbreid, et muuta tegevus huvitavamaks. Arvutid teevad sama...',
+    'material' => 'ruudukujuline märkmik või paberile joonistatud 5 × 5 ruudustik, viltpliiats. Joonistuse koodi esitamiseks võite kasutada pliiatsit ja paberit.',
+    'questions' => [
+        'content' =>
             [
- 1 => "K1. Kui mängijad ei saa videos näidatud mängu algseisus vasakule pööramist tähistavaid kollaseid kaarte, siis missuguste kaartide tõmbamist võiksid nad loota?",
- ]
+                1 => 'Proovige luua ruudukujuline kavand ja esitada see RLE-kodeeringu abil. Kavandi suurus võrdub ruutude arvuga, kuid kui suur on see RLE-vormingus?'
+            ]
 
     ]
 
 ],
 
-'round-trip' => [
- 'title' => "Edasi-tagasi",
- 'text' => "Mängitakse kordamööda. Esimene mängija kodeerib Roby mineku teekonna ja teine peab ta algpunkti tagasi tooma. Tundub lihtne, aga pole seda. Eriti siis, kui planeerida Roby liikumist vaid mõttes, ilma teda tegelikult liigutamata ...",
- 'material' => "CodyRoby kaardid, 5 × 5 ruuduga mängulaud, kaks mängunuppu ja väikesed paberitükid külastatud väljade märkimiseks.",
- 'questions' => [
- 'content' =>
+    'turning-code-into-pictures' => [
+    'title' => 'Koodi muutmine piltideks',
+    'text' => [
+        1 => 'Oleme nüüd näinud, et saame luua koodi, mis võimaldab meil joonistada pildi. Olen mõelnud joonistusele ja kasutanud koodi, et muuta see tähtedeks ja numbriteks, mille olen teile andnud. Pange tähele tähti ja numbreid ning kasutage koodi joonistuse rekonstrueerimiseks.',
+        2 => 'Siin on pilt, mis mul mõttes oli. Looge see ka oma märkmikus ja kõigi nende märkmikes, kes koodi teavad!'
+    ],
+    'material' => 'paber (soovitatavalt ruudukujuline) ja pliiats.',
+    'questions' => [
+        'content' =>
             [
- 1 => "K1. Kas tagasitulekukood võib olla minekukoodist lühem (st koosneda vähematest juhiskaartidest)?",
- ]
-
-    ]
-
-],
-
-'meeting-point' => [
- 'title' => "Kohtumispaik",
- 'text' => "Selles mängus kavandatakse liikumine esialgu mõttes ette ja seejärel hakatakse nuppe liigutama. Mängijad loovad kaarte lauale asetades oma robotitele liikumisjuhised, kuid liikuma hakkavad nad alles siis, kui üks mängijatest ütleb „start“. Siis lõpeb programmeerimine ja algab liikumine. Mängija, kes ütles „start“, võidab ainult juhul, kui robotid oma juhiseid järgides lõpuks ühel ja samal väljal kokku saavad.",
- 'material' => "CodyRoby kaardid, 5 × 5 ruuduga mängulaud, kaks mängunuppu.",
- 'questions' => [
- 'content' =>
-            [
- 1 => "K1. Kui sinu meelest on võimalik, et robotid kunagi ei kohtugi, mõtle välja kõikvõimalikke olukordi hõlmavad mängureeglid.",
- ]
-
-    ]
-
-],
-
-'follow-the-music' => [
- 'title' => "Muusika taktis",
- 'text' => "Kui koodis on teatud aja tagant korduvaid jadasid, võime seda tajuda rütmilisena. Kui igale juhisele kindel heli anda, saab Robyt muusikaga juhendada. Täpselt seda me sel korral tegema hakkamegi. Mina kirjutan ees koodi, kasutades juhiseid tähistavaid helisid, ja sinul tuleb heli järgi Robyt mängulaual liigutada.",
- 'material' => "Lisaks CodyRoby kaartidele, mängulauale ja -nuppudele on vaja kolme eristatavat heli. Mina kasutan kolme klaasi, kus on erinev kogus vett, aga sina?",
- 'questions' => [
- 'content' =>
-            [
- 1 => "K1. Pane video mängima ja püüa juhiseid mõista vaid klaaside tekitatud heli järgi kaarte vaatamata. Kas tunned helid ära ja suudad juhised täide viia?",
- 2 => "K2. Anna igale juhisele kindel heli. Mõtle välja helijada, mida saaks lõputult korrata, ilma et Roby ruudustikust välja satuks ...",
- ]
+                1 => 'Proovige dekodeerida ja joonistada need pildid, mida ma video lõpus mainin.'
+            ]
 
     ]
 

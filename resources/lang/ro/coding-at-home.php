@@ -262,6 +262,67 @@ return [
 
     ],
 
+    'colour-everything' => [
+        'title' => 'Colorează tot',
+        'text' => 'Putem ghida roboții pe tabla de joc astfel încât urmele lor să formeze un desen? În această activitate, facem codaj și artă cu pixeli  – formăm imagini colorând casetele de pe o tablă de joc cu pătrățele, ca și cum am avea pixeli pe un ecran.',
+        'material' => 'Cărți CodyRoby, o tablă de joc cu pătrățele și un pion. Pentru a colora casetele, fie pune deasupra bucățele de hârtie, fie colorează-le cu carioci',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Este posibil să desenăm cele două inimi, ca la finalul videoclipului, ghidând robotul prin toate casetele necesare, fără să trecem de două ori prin aceeași casetă?',
+                ]
+
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => 'CodyPlotter și CodyPrinter',
+        'text' => 'Care este diferența dintre un plotter și o imprimantă? Află făcând această activitate de programare.',
+        'material' => 'pe lângă setul CodyRoby, am folosit o cariocă verde și un nou roboțel din plastilină, dar el este opțional.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Știi să explici diferența dintre un plotter și o imprimantă?',
+                    2 => 'Ce model ar face RobyPrinter deplasându-se de-a lungul liniilor de pe tabla de joc, dacă ar executa seria de comenzi dictată la sfârșitul videoclipului?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => 'Pixeli plictisitori!/Folosirea numerelor',
+        'text' => 'Dacă îi dăm lui Roby instrucțiuni pentru a crea o imagine pătrățel cu pătrățel, pixel cu pixel, descoperim că atunci când multe pătrățele de pe același rând au aceeași culoare, putem folosi numere pentru a face lucrurile mai interesante. Calculatoarele fac același lucru...',
+        'material' => 'caiet cu pătrățele sau tablă de joc cu 5 pe 5 pătrate desenate pe o bucată de hârtie, cariocă subțire. Pentru a reprezenta codul desenului poți folosi un pix și o foaie.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Încearcă să creezi un model din pătrățele și reprezintă-l cu codificarea RLE. Dimensiunea modelului este egală cu numărul de pătrățele, dar care este dimensiunea reprezentării RLE?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+        'title' => 'Transformăm codul în imagini',
+        'text' => [
+            1 => 'Am văzut deci că putem crea un cod care ne permite să desenăm o imagine. M-am gândit la un desen și am utilizat un cod pentru a-l transforma în litere și numere. Ți l-am dat. Observă literele și numerele și folosește codul pentru a reconstrui desenul.',
+            2 => 'Iată imaginea la care m-am gândit. Transfer-o pe caietul tău și pe caietele tuturor celor care știu codul!'
+        ],
+        'material' => 'foaie (preferabil cu pătrățele) și un pix.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Încearcă să decodezi și să desenezi imaginile pe care le menționez la sfârșitul videoclipului.'
+                ]
+
+        ]
+
+    ],
+
+
 
 
 

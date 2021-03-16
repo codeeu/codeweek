@@ -262,6 +262,67 @@ return [
 
     ],
 
+    'colour-everything' => [
+        'title' => 'Coloréalo todo',
+        'text' => '¿Podemos guiar a los robots por el tablero de manera que hagan un dibujo con su rastro? En esta actividad, jugamos con la programación y el arte del píxel para crear imágenes coloreando las casillas de un tablero como si fueran píxeles en una pantalla.',
+        'material' => 'Tarjetas CodyRoby, tablero y peón. Para colorear las casillas, colócales trozos de papel encima o márcalas con rotulador.',
+        'questions' => [
+    'content' =>
+        [
+            1 => '¿Se pueden dibujar los dos corazones, como al final del vídeo, guiando al robot por todas las casillas necesarias sin pasar dos veces por la misma?',
+                ]
+
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+    'title' => 'Trazador Cody e Impresora Cody',
+        'text' => '¿Cuál es la diferencia entre trazador e impresora? Para saberlo, prueba esta actividad de programación «unplugged».',
+        'material' => 'Además del kit CodyRoby, utilicé un rotulador verde y un nuevo robot de plastilina, pero esto es facultativo.',
+        'questions' => [
+    'content' =>
+        [
+            1 => '¿Puedes explicar la diferencia entre trazador e impresora?',
+            2 => '¿Qué dibujo haría RobyPrinter (el robot impresora) moviéndose por las líneas del tablero si ejecutara la serie de comandos que se dictan al final del vídeo?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => '¡Píxels aburridos!/Utilizando números',
+        'text' => 'Si a Roby le damos instrucciones para que haga un dibujo casilla a casilla, píxel a píxel, veremos que, cuando muchas casillas seguidas tienen el mismo color, podemos utilizar números para que sea más interesante. Es lo que hacen los ordenadores...',
+        'material' => 'cuaderno de cuadrícula o tablero de 5 × 5 en papel, rotulador. Para representar el código del dibujo, puedes utilizar papel y bolígrafo.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Intenta hacer un dibujo cuadriculado y representarlo con codificación RLE. El tamaño del dibujo es igual al número de casillas, pero ¿qué tamaño tiene su representación RLE?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+    'title' => 'Convertir código en imágenes',
+        'text' => [
+            1 => 'Acabamos de ver que es posible crear un código que nos permita hacer un dibujo. Me he inventado un dibujo y he utilizado un código para convertirlo en las letras y números que os he dado. Apunta las letras y números y utiliza el código para reconstruir el dibujo.',
+            2 => 'Esta es la imagen que se me había ocurrido. ¡Presentadla en vuestro cuaderno, en los cuadernos de todos los que conocen el código!'
+],
+        'material' => 'papel (mejor de cuadrícula) y bolígrafo.',
+        'questions' => [
+    'content' =>
+        [
+            1 => 'Intenta descodificar y dibujar las imágenes que digo al final del vídeo.'
+        ]
+
+]
+
+    ],
+
+
 
 
     'texts' => [
