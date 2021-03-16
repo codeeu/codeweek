@@ -209,58 +209,120 @@ return [
         'title' => "Divas čūskas",
         'text' => "Izmantojot “CodyRoby” kārtis, divas čūskas jāpārvieto pa laukumu tā, lai viena čūska kavētu otras čūskas pārvietošanos. Pamatnoteikums ir ļoti vienkāršs: nevari atgriezties lauciņā, kurā čūska jau ir bijusi. Uzvar tā čūska, kas spēj brīvi pārvietoties visilgāk.",
         'material' => '“CodyRoby” kārtis, rūtiņu laukums 5 × 5, divi spēļu kauliņi un papīra gabaliņi izvietošanai jau apmeklētajos lauciņos.',
- 'questions' => [
- 'content' =>
-            [
- 1 => "1. jautājums. Ja videoklipā redzamajā sākotnējā konfigurācijā neviens no spēlētājiem neizvelk dzelteno kārti pagriezienam pa kreisi, kuru kārti viņiem būtu jācer izvilkt?",
- ]
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. jautājums. Ja videoklipā redzamajā sākotnējā konfigurācijā neviens no spēlētājiem neizvelk dzelteno kārti pagriezienam pa kreisi, kuru kārti viņiem būtu jācer izvilkt?",
+                ]
 
-    ]
+        ]
 
-],
+    ],
 
-'round-trip' => [
- 'title' => "Ceļojums turp un atpakaļ",
- 'text' => "Komandas izdara gājienus pēc kārtas. Pirmā komanda plāno turpceļu, bet otrai komandai Robijs ir jāatved atpakaļ sākumpunktā. Tas šķiet viegli, bet patiesībā nav, jo īpaši tad, ja kustības plāno tikai savā prātā, nepārvietojot Robiju...",
- 'material' => '“CodyRoby” kārtis, rūtiņu laukums 5 × 5, divi spēļu kauliņi un papīra gabaliņi izvietošanai jau apmeklētajos lauciņos.',
- 'questions' => [
+    'round-trip' => [
+        'title' => "Ceļojums turp un atpakaļ",
+        'text' => "Komandas izdara gājienus pēc kārtas. Pirmā komanda plāno turpceļu, bet otrai komandai Robijs ir jāatved atpakaļ sākumpunktā. Tas šķiet viegli, bet patiesībā nav, jo īpaši tad, ja kustības plāno tikai savā prātā, nepārvietojot Robiju...",
+        'material' => '“CodyRoby” kārtis, rūtiņu laukums 5 × 5, divi spēļu kauliņi un papīra gabaliņi izvietošanai jau apmeklētajos lauciņos.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. jautājums. Vai ir iespējams, ka programma, ar kuru Robiju aizved atpakaļ sākumpunktā, ir īsāka (t. i., tajā ir mazāk norādījumu) nekā turpceļa programma?",
+                ]
+
+        ]
+
+    ],
+
+    'meeting-point' => [
+        'title' => "Tikšanās vieta",
+        'text' => "Šoreiz gājienus izplānosim pirms spēles sākšanas. Abas komandas liek kārtis uz galda, lai secīgi izvietotu norādījumus, kas pārvietos viņu robotus, taču nekāda kustība nenotiek, līdz kāds no spēlētājiem nepasaka “Starts!”. Šajā brīdī programmēšana beidzas un sākas darbība. Spēlētājs, kurš teicis “Starts!”, uzvar tikai tad, ja abi roboti, katrs izpildot savas komandas norādījumus, nonāk vienā un tajā pašā lauciņā.",
+        'material' => '“CodyRoby” kārtis, 5 × 5 rūtiņu laukums, divi spēļu kauliņi.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. jautājums. Ja tu domā, ka abiem robotiem ir iespējams nekad nesatikties, izdomā spēles noteikumus, kas aptver visas iespējamās situācijas.",
+                ]
+
+        ]
+
+    ],
+
+    'follow-the-music' => [
+        'title' => "Seko mūzikai",
+        'text' => "Programmēšanas norādījumu secības periodiskā atkārtošanās atgādina mūzikas ritmu. Katru norādījumu saistot ar attiecīgu skaņu, mēs varam vadīt Robiju mūzikas pavadījumā. Tieši to mēs šoreiz darīsim. Es tev izveidošu programmu, izmantojot dažādas skaņas dažādu norādījumu atveidošanai, un tu pārvietosi Robiju pa laukumu, izpildot šos norādījumus, kas balstīti uz skaņu.",
+        'material' => "Papildus “CodyRoby” kārtīm, rūtiņu laukumam un spēļu kauliņam mums ir jārada trīs dažādas skaņas. Es izmantoju trīs glāzes, kas piepildītas ar atšķirīgu ūdens daudzumu. Ko tu izmantosi?",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "1. jautājums. Mēģini sekot videoklipam un vadīties pēc glāžu radītajām skaņām, neskatoties uz kārtīm. Vai vari atpazīt un izpildīt skaņu veidā sniegtos norādījumus?",
+                    2 => "2. jautājums. Izvēlies trīs skaņas, ko sasaistīt ar trim pamata norādījumiem. Izveido skaņu secību, kuru tu varētu atkārtot bezgalīgi, nenovirzot Robiju no laukuma...",
+                ]
+
+        ]
+
+    ],
+
+    'colour-everything' => [
+        'title' => 'Iekrāso visu',
+        'text' => 'Vai varam robotus pa laukumu vadīt tā, lai atstātie pēdu nospiedumi veidotu zīmējumu? Šajā spēlē spēlējamies ar kodēšanu un pikseļu mākslu — veidojam zīmējumus, laukumā iekrāsojot rūtiņas, tāpat kā ekrānā pikseļus.',
+        'material' => '“CodyRoby” kārtis, rūtiņu laukums un spēļu kauliņš. Rūtiņas iekrāso ar marķieriem vai uz tām uzliek papīra gabaliņus.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Vai ir iespējams uzzīmēt divas sirdis kā filmiņas beigu daļā, vadot robotu pa visām vajadzīgajām rūtiņām tā, lai tas nevienā rūtiņā neiekāptu divreiz?',
+                ]
+
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => '“CodyPlotter” un “CodyPrinter”',
+        'text' => 'Kāda ir atšķirība starp ploteri un printeri? To varēsi uzzināt, spēlējot šo kodēšanas spēli bez datora.',
+        'material' => 'papildus “CodyRoby” kāršu komplektam es izmantoju zaļu marķieri un jaunu plastilīna robotu, bet tas nav obligāti.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Vai vari paskaidrot, kāda ir atšķirība starp ploteri un printeri?',
+                    2 => 'Kādu figūru “RobyPrinter” izveidotu, virzoties pa laukuma līnijām, ja tas izpildītu filmiņas beigās nodiktēto komandu virkni?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => 'Apnicīgie pikseļi!/Izmanto skaitļus',
+        'text' => 'Dodot Robijam norādījumus veidot attēlu rūtiņu pēc rūtiņas, pikseli pēc pikseļa, atklājam, ka, ja cita citai blakus ir daudzas vienādas krāsas rūtiņas, varam izmantot skaitļus, lai būtu interesantāk. Dators dara to pašu...',
+        'material' => 'rūtiņu bloknots vai uz papīra uzzīmēts rūtiņu laukums 5 × 5, flomāsters. Zīmējuma koda attēlošanai var izmantot pildspalvu un papīru.',
+        'questions' => [
     'content' =>
         [
-            1 => "1. jautājums. Vai ir iespējams, ka programma, ar kuru Robiju aizved atpakaļ sākumpunktā, ir īsāka (t. i., tajā ir mazāk norādījumu) nekā turpceļa programma?",
+            1 => 'Mēģini izveidot rūtiņu figūru un to attēlot, izmantojot secīgo atkārtojumu kodēšanu (RLE). Figūras izmērs atbilst rūtiņu skaitam, bet kāds izmērs ir tad, ja izmanto RLE?'
         ]
 
 ]
 
-],
+    ],
 
-'meeting-point' => [
-    'title' => "Tikšanās vieta",
-    'text' => "Šoreiz gājienus izplānosim pirms spēles sākšanas. Abas komandas liek kārtis uz galda, lai secīgi izvietotu norādījumus, kas pārvietos viņu robotus, taču nekāda kustība nenotiek, līdz kāds no spēlētājiem nepasaka “Starts!”. Šajā brīdī programmēšana beidzas un sākas darbība. Spēlētājs, kurš teicis “Starts!”, uzvar tikai tad, ja abi roboti, katrs izpildot savas komandas norādījumus, nonāk vienā un tajā pašā lauciņā.",
-    'material' => '“CodyRoby” kārtis, 5 × 5 rūtiņu laukums, divi spēļu kauliņi.',
- 'questions' => [
- 'content' =>
+    'turning-code-into-pictures' => [
+    'title' => 'Pārvērs kodu attēlā',
+    'text' => [
+        1 => 'Tagad esam uzzinājuši, kā izveidot kodu, pēc kura var uzzīmēt attēlu. Esmu izdomājis zīmējumu, un man ir kods, pēc kura šo zīmējumu var pārvērst burtos un ciparos, ko es tev iedevu. Izmanto šos burtus un ciparus, lai zīmējumu atjaunotu.',
+        2 => 'Šeit ir manis izdomātais zīmējums. Uzzīmē to savā bloknotā un visu to bloknotā, kuri zina kodu!'
+    ],
+    'material' => 'papīrs (vislabāk rūtiņu papīrs) un pildspalva.',
+    'questions' => [
+        'content' =>
             [
- 1 => "1. jautājums. Ja tu domā, ka abiem robotiem ir iespējams nekad nesatikties, izdomā spēles noteikumus, kas aptver visas iespējamās situācijas.",
- ]
+                1 => 'Mēģini atšifrēt un uzzīmēt zīmējumus, par kuriem es runāju filmiņas beigās.'
+            ]
 
     ]
 
 ],
 
-'follow-the-music' => [
- 'title' => "Seko mūzikai",
- 'text' => "Programmēšanas norādījumu secības periodiskā atkārtošanās atgādina mūzikas ritmu. Katru norādījumu saistot ar attiecīgu skaņu, mēs varam vadīt Robiju mūzikas pavadījumā. Tieši to mēs šoreiz darīsim. Es tev izveidošu programmu, izmantojot dažādas skaņas dažādu norādījumu atveidošanai, un tu pārvietosi Robiju pa laukumu, izpildot šos norādījumus, kas balstīti uz skaņu.",
- 'material' => "Papildus “CodyRoby” kārtīm, rūtiņu laukumam un spēļu kauliņam mums ir jārada trīs dažādas skaņas. Es izmantoju trīs glāzes, kas piepildītas ar atšķirīgu ūdens daudzumu. Ko tu izmantosi?",
- 'questions' => [
- 'content' =>
-            [
- 1 => "1. jautājums. Mēģini sekot videoklipam un vadīties pēc glāžu radītajām skaņām, neskatoties uz kārtīm. Vai vari atpazīt un izpildīt skaņu veidā sniegtos norādījumus?",
- 2 => "2. jautājums. Izvēlies trīs skaņas, ko sasaistīt ar trim pamata norādījumiem. Izveido skaņu secību, kuru tu varētu atkārtot bezgalīgi, nenovirzot Robiju no laukuma...",
- ]
 
-    ]
-
-],
 
 
 
