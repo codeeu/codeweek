@@ -92,14 +92,14 @@ return [
     ],
 
     'walk-as-long-as-you-can' => [
-        'title' =>'Imxi sakemm tista',
+        'title' => 'Imxi sakemm tista',
         'text' => "F’din l-attività l-isfida hija li tibqa' kemm jista' jkun fuq il-bord bl-użu ta' kuluri minflok marki tas-sieq. L-attività ssir aktar diffiċli aktar ma tiżdied il-libertà tal-moviment",
         'coloured-cards' => "kards ikkuluriti, jew markaturi ħomor, sofor u griżi",
         'questions' => [
-    'content' =>
-        [
-            1 => 'M1. Meta ż-żewġ toroq jaħbtu u jimblukkaw lil xulxin?',
-            2 => "M2. Din il-logħba hija ppreżentata bħala logħba b'żewġ parteċipanti? Tista’ tintlagħab minn tlieta jew erba’ parteċipanti? Ikollna nibdlu r-regoli?",
+            'content' =>
+                [
+                    1 => 'M1. Meta ż-żewġ toroq jaħbtu u jimblukkaw lil xulxin?',
+                    2 => "M2. Din il-logħba hija ppreżentata bħala logħba b'żewġ parteċipanti? Tista’ tintlagħab minn tlieta jew erba’ parteċipanti? Ikollna nibdlu r-regoli?",
                 ]
 
         ]
@@ -111,9 +111,9 @@ return [
         'text' => 'L-istorja ta’ Ada Lovelace u Charles Babbage hija waħda interessanti. Dawn ħolqu u pprogrammaw kompjuters mitt sena qabel ma fil-fatt ġew ivvintati',
         'material' => 'tafal artab u lapes qasir',
         'questions' => [
-    'content' =>
-        [
-            1 => "M1. Ippruvaw immaġinaw li r-robot li bnejtu bit-tafal artab u b’lapes huwa kapaċi jiċċaqlaq fuq il-bord sabiex jasal fi kwalunkwe pożizzjoni u, jekk ikun meħtieġ, jerġa' jsib it-triq tiegħu. Xi struzzjonijiet tużaw biex tipprogrammawh?"
+            'content' =>
+                [
+                    1 => "M1. Ippruvaw immaġinaw li r-robot li bnejtu bit-tafal artab u b’lapes huwa kapaċi jiċċaqlaq fuq il-bord sabiex jasal fi kwalunkwe pożizzjoni u, jekk ikun meħtieġ, jerġa' jsib it-triq tiegħu. Xi struzzjonijiet tużaw biex tipprogrammawh?"
                 ]
 
         ]
@@ -138,13 +138,13 @@ return [
     ],
 
     'the-tourist' => [
-    'title' => 'It-turist',
-    'text' => "Bil-kards CodyRoby, żewġ timijiet jisfidaw lil xulxin biex isibu, fl-iqsar żmien possibbli, is-sekwenza ta' struzzjonijiet li se jiggwidaw lit-turist sal-monumenti li jixtieq iżur fuq il-bord",
+        'title' => 'It-turist',
+        'text' => "Bil-kards CodyRoby, żewġ timijiet jisfidaw lil xulxin biex isibu, fl-iqsar żmien possibbli, is-sekwenza ta' struzzjonijiet li se jiggwidaw lit-turist sal-monumenti li jixtieq iżur fuq il-bord",
         'material' => "B'kards akbar il-logħba tkun tista' tintlagħab mal-art",
         'questions' => [
-    'content' =>
-        [
-            1 => "M1. Liema sekwenza ta' struzzjonijiet tiggwida lit-turist sal-Istatwa ta' Raffaello fl-ewwel eżempju muri fil-vidjow?",
+            'content' =>
+                [
+                    1 => "M1. Liema sekwenza ta' struzzjonijiet tiggwida lit-turist sal-Istatwa ta' Raffaello fl-ewwel eżempju muri fil-vidjow?",
                     2 => "M2. Liema sekwenza ta' struzzjonijiet tiggwida lit-turist sat-Torricini tal-Palazz Dukali fit-tieni eżempju muri fil-vidjow?",
                     3 => "M3. Tistgħu taħsbu f'mod divertenti biex tagħmlu xi eżerċizzju kull darba li wieħed miż-żewġ timijiet jagħżel kard biex iżidha mal-programm? Ivvintaw mod billi tirrevedu t-tellieqa relay murija fil-vidjow",
                 ]
@@ -213,55 +213,114 @@ return [
             'content' =>
                 [
                     1 => "M1. Fl-istruttura inizjali murija fil-vidjow, jekk iż-żewġ ġugaturi ma jiġbrux karti sofor biex iduru fuq ix-xellug, liema karti għandhom jittamaw li jiġbru?",
-            ]
+                ]
 
-    ]
+        ]
 
+    ],
+
+    'round-trip' => [
+        'title' => "Vjaġġ bir-ritorn",
+        'text' => "It-timijiet jilagħbu meta jkun imisshom. L-ewwel wieħed jippjana l-vjaġġ ’il barra filwaqt li t-tieni wieħed irid iġib lil Roby lura għall-punt tat-tluq. Din tidher li hija xi ħaġa faċli iżda fil-fatt mhijiex, speċjalment jekk tippjana l-mossi f’moħħok biss mingħajr ma ċċaqlaq lil Roby...",
+        'material' => "Il-karti CodyRoby, bord iċċangjata ta’ 5 × 5, żewġ pedini, u biċċiet tal-karta li għandhom jintużaw biex jiġu mmarkati l-kaxxi li għadda minn fuqhom serp.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "M1. Huwa possibbli li l-programm li jġib lil Roby lura għall-punt tat-tluq ikun iqsar (jiġifieri magħmul minn inqas struzzjonijiet) minn dak tal-vjaġġ ’il barra?",
+                ]
+
+        ]
+
+    ],
+
+    "meeting-point" => [
+        "title" => "Punt ta’ kuntatt",
+        "text" => 'Din id-darba nippjanaw il-mossi tagħna qabel ma nibdew. Iż-żewġ timijiet ipoġġu l-karti fuq il-mejda biex joħolqu s-sekwenza ta’ struzzjonijiet li ser imexxu lir-robots rispettivi tagħhom, iżda xejn ma jista’ jiċċaqlaq sakemm wieħed mill-ġugaturi ma jgħidx "Ibda!”. F’dak il-punt, il-programmar jintemm u tibda l-azzjoni. Il-ġugatur li jkun qal "Ibda!” jirbaħ biss jekk iż-żewġ robots, li jkunu t-tnejn eżegwew l-istruzzjonijiet tat-tim tagħhom, jispiċċaw fuq l-istess kaxxa.',
+        "material" => "Karti CodyRoby, bord iċċangjata ta’ 5 × 5, żewġ pedini.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "M1. Jekk taħseb li huwa possibbli li ż-żewġ robots qatt ma jiltaqgħu, ivvinta regoli tal-logħob li jkopru s-sitwazzjonijiet kollha possibbli.",
+                ]
+
+        ]
+
+    ],
+
+    "follow-the-music" => [
+        "title" => "Segwi l-mużika",
+        "text" => "Meta sekwenzi ta’ struzzjonijiet ta’ programmar jirrepetu lilhom infushom perjodikament, ikun qisu daqs li kieku għandhom ritmu. Jekk aħna nassoċjaw ħoss ma’ kull struzzjoni, nistgħu niggwidaw lil Roby permezz tal-mużika. Dan huwa preċiżament dak li ser nagħmlu din id-darba. Ser noħloq programm għalik billi nuża ħsejjes differenti li jirrappreżentaw struzzjonijiet differenti, u inti ser tmexxi lil Roby madwar il-bord billi ssegwi dawn l-istruzzjonijiet ibbażati fuq il-ħsejjes.",
+        "material" => "minbarra l-karti tal-CodyRoby, il-bord iċċangjata u l-pedina, jeħtieġ li nagħmlu tliet ħsejjes differenti. Jiena użajt tliet tazzi mimlijin b’ammonti differenti ta’ ilma, inti x’ser tuża?",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "M1. Ipprova segwi l-vidjo u ħallih jiggwidak bil-ħsejjes li t-tazzi jipproduċu, mingħajr ma tħares lejn il-karti. Tista’ tagħraf u teżegwixxi l-istruzzjonijiet magħmula mill-ħsejjes?",
+                    2 => "M2. Agħżel tliet ħsejjes biex tassoċjahom mat-tliet struzzjonijiet bażiċi. Oħroġ b’sekwenza ta’ ħsejjes li tista’ tirrepetiha bla tmiem mingħajr ma qatt tmexxi lil Roby ’il barra mill-bord...",
+                ]
+
+        ]
+
+    ],
+
+    'colour-everything' => [
+        'title' => 'Imla kollox bil-kulur',
+        'text' => "Nistgħu niggwidaw lir-robots madwar il-bord b’tali mod li jagħmlu tpinġija bit-traċċi tagħhom? F’din l-attività, se nilagħbu bl-ikkowdjar u bl-arti tal-pixels, jiġifieri se niffurmaw l-istampi billi nimlew il-kaxxi bil-kulur fuq bord iċċangjata, bħal pixels fuq skrin.",
+        'material' => "Il-kards CodyRoby, bord iċċangjata u pedina. Biex timla l-kaxxi bil-kulur uża biċċiet tal-karta u poġġihom fuq il-kaxxi, jew imla l-kaxxi bil-kulur bil-markers.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Hu possibbli li tpinġi ż-żewġt iqlub bħal fil-parti finali tal-video billi tiggwida lir-robot biex jgħaddi minn fuq il-kaxxi meħtieġa mingħajr qatt ma jgħaddi darbtejn minn fuq l-istess kaxxa?",
+                ]
+
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => 'CodyPlotter u CodyPrinter',
+        'text' => 'X’inhi d-differenza bejn plotter u printer? Skopri billi tilgħab din l-attività ta’ kkowdjar.',
+        'material' => 'minbarra l-kit CodyRoby, użajt marker aħdar u robot tat-tafal tal-immudellar ġdid, iżda dan mhuwiex obbligatorju.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Tista’ tispjega d-differenza bejn plotter u printer?',
+                    2 => 'X’disinn jipproduċi RobyPrinter billi jiċċaqlaq tul il-linji fuq il-bord, kieku jeżegwixxi s-sekwenza ta’ kmandi ddettati fl-aħħar tal-video?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => 'Pixels Monotoni!/Użu tan-numri',
+        'text' => 'Billi nagħtu struzzjonijiet lil Roby biex jifforma stampa kaxxa kaxxa, pixel pixel, niskopru li meta ħafna kaxxi ħdejn xulxin ikollhom l-istess kulur, nistgħu nużaw in-numri biex issir iktar interessanti. Il-kompjuters jagħmlu l-istess...',
+        'material' => 'ktieb tan-noti bil-kwadri, jew bord iċċangjata 5 × 5 mpinġija fuq biċċa karta, pinna. Biex tirrappreżenta l-kowd tat-tpinġija tista’ tuża pinna u karta.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Ipprova għamel disinn iċċangjat u rrappreżentah b’ikkowdjar RLE. Id-daqs tad-disinn huwa ugwali għan-numru ta’ kaxxi, iżda x’inhu d-daqs tar-rappreżentazzjoni RLE tiegħu?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+        'title' => 'Nittrasformaw il-kowd fi stampi',
+        'text' => [
+            1 => 'Issa rajna li nistgħu noħolqu kowd li jippermettilna npinġu stampa. Ħsibt fi tpinġija u użajt il-kowd biex nittrasformaha f’ittri u numri, li tajtek. Ħu nota tal-ittri u n-numri u uża l-kowd biex terġa’ tibni t-tpinġija.',
+            2 => 'Din hi l-immaġni li kont ħsibt fiha, agħmilha tidher fuq il-ktieb tan-noti tiegħek u fuq ta’ dawk kollha li jafu jikkowdjaw!'
 ],
+        'material' => 'karta (prefibbilment bil-kwadri) u pinna.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Ipprova ddekowdja u pinġi l-immaġnijiet li nsemmi fl-aħħar tal-video.'
+                ]
 
-'round-trip' => [
-    'title' => "Vjaġġ bir-ritorn",
-    'text' => "It-timijiet jilagħbu meta jkun imisshom. L-ewwel wieħed jippjana l-vjaġġ ’il barra filwaqt li t-tieni wieħed irid iġib lil Roby lura għall-punt tat-tluq. Din tidher li hija xi ħaġa faċli iżda fil-fatt mhijiex, speċjalment jekk tippjana l-mossi f’moħħok biss mingħajr ma ċċaqlaq lil Roby...",
-    'material' => "Il-karti CodyRoby, bord iċċangjata ta’ 5 × 5, żewġ pedini, u biċċiet tal-karta li għandhom jintużaw biex jiġu mmarkati l-kaxxi li għadda minn fuqhom serp.",
-    'questions' => [
-    'content' =>
-        [
-            1 => "M1. Huwa possibbli li l-programm li jġib lil Roby lura għall-punt tat-tluq ikun iqsar (jiġifieri magħmul minn inqas struzzjonijiet) minn dak tal-vjaġġ ’il barra?",
-            ]
+        ]
 
-    ]
-
-],
-
-"meeting-point" => [
-    "title" => "Punt ta’ kuntatt",
-    "text" => 'Din id-darba nippjanaw il-mossi tagħna qabel ma nibdew. Iż-żewġ timijiet ipoġġu l-karti fuq il-mejda biex joħolqu s-sekwenza ta’ struzzjonijiet li ser imexxu lir-robots rispettivi tagħhom, iżda xejn ma jista’ jiċċaqlaq sakemm wieħed mill-ġugaturi ma jgħidx "Ibda!”. F’dak il-punt, il-programmar jintemm u tibda l-azzjoni. Il-ġugatur li jkun qal "Ibda!” jirbaħ biss jekk iż-żewġ robots, li jkunu t-tnejn eżegwew l-istruzzjonijiet tat-tim tagħhom, jispiċċaw fuq l-istess kaxxa.',
-    "material" => "Karti CodyRoby, bord iċċangjata ta’ 5 × 5, żewġ pedini.",
-    'questions' => [
-    'content' =>
-        [
-            1 => "M1. Jekk taħseb li huwa possibbli li ż-żewġ robots qatt ma jiltaqgħu, ivvinta regoli tal-logħob li jkopru s-sitwazzjonijiet kollha possibbli.",
-            ]
-
-    ]
-
-],
-
-"follow-the-music" => [
-    "title" => "Segwi l-mużika",
-    "text" => "Meta sekwenzi ta’ struzzjonijiet ta’ programmar jirrepetu lilhom infushom perjodikament, ikun qisu daqs li kieku għandhom ritmu. Jekk aħna nassoċjaw ħoss ma’ kull struzzjoni, nistgħu niggwidaw lil Roby permezz tal-mużika. Dan huwa preċiżament dak li ser nagħmlu din id-darba. Ser noħloq programm għalik billi nuża ħsejjes differenti li jirrappreżentaw struzzjonijiet differenti, u inti ser tmexxi lil Roby madwar il-bord billi ssegwi dawn l-istruzzjonijiet ibbażati fuq il-ħsejjes.",
-    "material" => "minbarra l-karti tal-CodyRoby, il-bord iċċangjata u l-pedina, jeħtieġ li nagħmlu tliet ħsejjes differenti. Jiena użajt tliet tazzi mimlijin b’ammonti differenti ta’ ilma, inti x’ser tuża?",
-    'questions' => [
-    'content' =>
-        [
-            1 => "M1. Ipprova segwi l-vidjo u ħallih jiggwidak bil-ħsejjes li t-tazzi jipproduċu, mingħajr ma tħares lejn il-karti. Tista’ tagħraf u teżegwixxi l-istruzzjonijiet magħmula mill-ħsejjes?",
-                2 => "M2. Agħżel tliet ħsejjes biex tassoċjahom mat-tliet struzzjonijiet bażiċi. Oħroġ b’sekwenza ta’ ħsejjes li tista’ tirrepetiha bla tmiem mingħajr ma qatt tmexxi lil Roby ’il barra mill-bord...",
-            ]
-
-    ]
-
-],
-
+    ],
 
 
 

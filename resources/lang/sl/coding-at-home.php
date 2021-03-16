@@ -237,32 +237,90 @@ return [
         'title' => "Točka srečanja",
         'text' => "Tokrat svoje poteze načrtujemo, še preden začnemo. Ekipi razporedita karte po mizi, da ustvarita niz ukazov, s katerimi bosta premikali svojega robota, vendar ga začneta premikati šele, ko eden od igralcev reče „Start!“ V tem trenutku se programiranje konča in začne se akcija. Igralec, ki je rekel „Start!“, zmaga samo, če robota, ki izvajata ukaze svojih ekip, končata na istem polju.",
         'material' => "Karte CodyRoby, igralna plošča 5 × 5, figurici.",
- 'questions' => [
- 'content' =>
-            [
- 1 => "V1. Če je po vašem mnenju mogoče, da se robota nikoli ne srečata, si izmislite pravila igre, ki bodo zajela vse mogoče položaje.",
- ]
+        'questions' => [
+            'content' =>
+                [
+                    1 => "V1. Če je po vašem mnenju mogoče, da se robota nikoli ne srečata, si izmislite pravila igre, ki bodo zajela vse mogoče položaje.",
+                ]
 
-    ]
+        ]
 
-],
+    ],
 
-'follow-the-music' => [
- 'title' => "Sledi glasbi",
- 'text' => "Kadar se zaporedja programskih ukazov od časa do časa ponovijo, se zdi, kot da imajo ritem. Če zvok povežemo s posameznim ukazom, lahko Robyja usmerjamo z glasbo. Točno to bomo storili tokrat. Za vas bom ustvaril program, pri čemer bom uporabil različne zvoke, ki bodo predstavljali različne ukaze, vi pa boste Robyja premikali po igralni plošči z upoštevanjem teh zvočnih ukazov.",
- 'material' => "Poleg tega, da potrebujemo karte CodyRoby, igralno ploščo in figurico, moramo ustvariti tri različne zvoke. Jaz sem uporabil tri kozarce, v katerih je različna količina vode. Kaj pa boste uporabili vi?",
- 'questions' => [
- 'content' =>
-            [
- 1 => "V1. Poskusite slediti videoposnetku, pri tem pa naj vas vodijo zvoki kozarcev, ne da bi gledali karte. Ali lahko prepoznate in izvedete ukaze, ki jih ustvarjajo zvoki?",
- 2 => "V2. Izberite tri zvoke in jih povežite s tremi osnovnimi ukazi. Izmislite si zaporedje zvokov, ki bi jih lahko stalno ponavljali, ne da bi Roby zašel z igralne plošče ...",
- ]
+    'follow-the-music' => [
+        'title' => "Sledi glasbi",
+        'text' => "Kadar se zaporedja programskih ukazov od časa do časa ponovijo, se zdi, kot da imajo ritem. Če zvok povežemo s posameznim ukazom, lahko Robyja usmerjamo z glasbo. Točno to bomo storili tokrat. Za vas bom ustvaril program, pri čemer bom uporabil različne zvoke, ki bodo predstavljali različne ukaze, vi pa boste Robyja premikali po igralni plošči z upoštevanjem teh zvočnih ukazov.",
+        'material' => "Poleg tega, da potrebujemo karte CodyRoby, igralno ploščo in figurico, moramo ustvariti tri različne zvoke. Jaz sem uporabil tri kozarce, v katerih je različna količina vode. Kaj pa boste uporabili vi?",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "V1. Poskusite slediti videoposnetku, pri tem pa naj vas vodijo zvoki kozarcev, ne da bi gledali karte. Ali lahko prepoznate in izvedete ukaze, ki jih ustvarjajo zvoki?",
+                    2 => "V2. Izberite tri zvoke in jih povežite s tremi osnovnimi ukazi. Izmislite si zaporedje zvokov, ki bi jih lahko stalno ponavljali, ne da bi Roby zašel z igralne plošče ...",
+                ]
 
-    ]
+        ]
 
-],
+    ],
 
+    'colour-everything' => [
+        'title' => 'Pobarvaj vse',
+        'text' => 'Lahko robote vodimo po plošči tako, da bodo s svojimi sledmi ustvarili risbo? Pri tej dejavnosti se igramo s programiranjem in umetnostjo slikovnih pik, pri čemer se ustvarjajo slike z obarvanjem polj na kvadratni mreži, kot so slikovne pike na zaslonu.',
+        'material' => 'Karte CodyRoby, kvadratna mreža in figura. Za barvanje polj uporabite koščke papirja, ki jih boste položili na polja, ali pobarvajte polja z markerji',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Ali je mogoče narisati dve srci kot v zadnjem delu videa z vodenjem robota po vseh potrebnih poljih, ne da bi isto polje prečkal dvakrat?',
+                ]
 
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => 'Risalnik Cody and tiskalnik Cody',
+        'text' => 'Kakšna je razlika med risalnikom in tiskalnikom? To boste izvedeli pri tej dejavnosti programiranja brez računalnika.',
+        'material' => 'poleg kompleta CodyRoby sem uporabil zeleni marker in novega robota iz modelirne mase, ampak to ni nujno.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Lahko pojasnite razliko med risalnikom in tiskalnikom?',
+                    2 => 'Kakšno sliko bi tiskalnik Roby ustvaril s premikanjem po črtah na plošči, če bi izvedel zaporedje ukazov, narekovano ob koncu videa?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => 'Dolgočasne slikovne pike!/Uporaba številk',
+        'text' => 'Ko dajemo Robyju navodila za oblikovanje slike kvadrat za kvadratom, slikovno piko za slikovno piko, opazimo, da lahko, kadar je več kvadratov v vrsti iste barve, uporabimo številke, da je bolj zanimivo. Računalniki počnejo isto...',
+        'material' => 'karirast zvezek ali kvadratna mreža 5 X 5, narisana na papirju, flomaster. Za prikaz kode risbe lahko uporabite pisalo in papir.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Poskusite ustvariti karirasto sliko in jo prikazati s kodiranjem s pomočjo zaporedij (RLE). Velikost slike je enakovredna številu kvadratov, kako velik pa je njen prikaz RLE?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+        'title' => 'Spreminjanje kode v slike',
+        'text' => [
+            1 => 'Videli smo, da lahko ustvarimo kodo, s katero bomo lahko narisali sliko. Pomislil sem na risbo in uporabil kodo, da bi jo pretvoril v črke in številke, ki sem vam jih dal. Oglejte si črke in številke ter uporabite kodo za rekonstrukcijo risbe.',
+            2 => 'To je slika, ki sem jo imel v mislih, naj se prikaže v vašem zvezku in zvezkih vseh, ki poznajo kodo!'
+        ],
+        'material' => 'papir (po možnosti karirast) in pisalo.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Poskusite dekodirati in narisati slike, ki sem jih omenil na začetku videa.'
+                ]
+
+        ]
+
+    ],
 
 
     'texts' => [
