@@ -9,14 +9,15 @@ return [
         1 => [
             'title' => '6 hackathons, 6 défis',
             'content' => [
-                1 => 'Vous habitez en Lettonie, en Irlande, en Italie, en Roumanie, en Slovénie ou en Espagne? C’est l’occasion de faire appel à votre créativité, votre curiosité, votre dynamisme et vos compétences techniques. Participez à l’un des hackathons de la Semaine européenne du code et développez une solution innovante qui profitera à la société.',
-                2 => 'En 2020, la Semaine européenne du code propose six hackathons extraordinaires dans six pays européens et invite les élèves des lycées (16-19 ans) à utiliser leurs compétences en codage pour proposer des solutions concernant un enjeu local, durant 2 jours.'
+                1 => 'Tu habites en Grèce, en Lettonie, en Irlande, en Italie, en Roumanie ou en Slovénie ? Tu es créatif et ambitieux et l’avenir des technologies t’intéresse ? Ce concours de codage est fait pour toi ! Participe à l’un des hackathons de la Semaine européenne du code et développe une solution innovante qui fera de toi l’un des précurseurs de la révolution technologique !',
+                2 => 'L’édition 2021 de la Semaine européenne du code propose six formidables hackathons et invite les étudiants de 15 à 19 ans de l’enseignement secondaire supérieur à constituer des équipes et à utiliser leurs talents de codeur pour relever un défi local. Après 24 heures de hacking, chaque équipe présentera et testera ses idées devant un jury d’experts qui sélectionnera les 10 équipes finalistes. Toutes les équipes disposeront d’un temps identique, des mêmes ressources et d’un même accès à l’expertise et au mentorat pour venir à bout de ce défi. Mais seulement 10 d’entre elles auront la chance de prendre part au round suivant, de développer leur prototype, de bénéficier de l’encadrement d’experts et de participer au hackathon final organisé en automne. À ce moment-là, les équipes devront être prêtes à en découdre contre les autres finalistes pour avoir une chance de remporter du matériel informatique trop cool et de bénéficier d’un mentorat et d’un accompagnement pour développer leur prototype.'
             ]
+
         ],
         2 => [
             'title' => 'Comment puis-je participer?',
             'content' => [
-                1 => 'Sélectionnez le hackathon de votre pays et suivez simplement les quelques étapes permettant de vous inscrire. Si vous souhaitez vous inscrire avec des amis ou des camarades de classe, n’oubliez pas d’indiquer le nom de votre équipe. Chaque hackathon ouvrira sa procédure d’inscription séparément.'
+                1 => 'Sélectionne le hackathon de ton pays et inscris-toi en quelques étapes. C’est très simple, tu verras ! Tu peux participer seul ou en équipe de six étudiants. Si tu fais équipe avec des amis ou des jeunes de ta classe, n’oublie pas d’indiquer le nom de ton équipe au moment de t’inscrire. Chaque pays lancera sa procédure d’inscription selon ses propres modalités ; suis donc le hackathon de ton pays !'
             ]
         ],
         3 => [
@@ -30,8 +31,8 @@ return [
         4 => [
             'title' => 'À quoi ressemble un hackathon?',
             'content' => [
-                1 => 'Chaque hackathon verra 60 lycéens s’affronter par équipes durant 2 jours. À la fin, chaque équipe présentera sa solution à un jury d’experts. Des mentors expérimentés encadreront les équipes et des ateliers seront organisés pour permettre aux participants d’acquérir de nouvelles compétences et de s’amuser. Les hackathons offrent également aux participants une excellente occasion de nouer des contacts et de discuter avec des personnes du milieu technologique local.',
-                2 => 'L’équipe gagnante de chaque hackathon local sera récompensée par différents prix, notamment la possibilité de se rendre à Bruxelles et de présenter sa solution à un public international le 12 octobre 2020.',
+                1 => 'La Semaine européenne du code, c’est tout un parcours qui démarre avec un hackathon en ligne de 24 heures. Des mentors expérimentés assisteront les équipes et des ateliers permettront aux participants d’acquérir de nouvelles compétences tout en passant un bon moment. Le hackathon est aussi pour ces jeunes une excellente occasion de nouer des contacts et socialiser avec des acteurs du secteur européen des tech. À la fin du hackathon, chaque équipe présentera et testera sa solution devant un jury d’experts.',
+                2 => 'L’aventure se poursuivra pour les 10 équipes toujours en lice qui bénéficieront d’une formation et de mentorat durant l’été. Les finalistes participeront ensuite aux 12 heures de hackathon « face-à-face » de leur pays, en septembre ou en octobre (celui-ci pourra se dérouler en ligne si la situation sanitaire n’autorise pas les réunions physiques).',
             ]
         ],
         5 => [
@@ -44,42 +45,51 @@ return [
         6 => [
             'title' => 'Partenaires',
         ],
+        7 => [
+            'title' => 'Joins-toi à la fête !',
+        ],
+
 
     ],
 
     'cities' => [
 
         1 => [
-            'city' => "",
-            'country' => "Irlande",
-            'date' => "Avril 2020"
+            'city' => "TBA",
+            'country' => "Roumanie",
+            'date' => "17-18 avril 2021"
         ],
         2 => [
-            'city' => "",
-            'country' => "Slovénie",
-            'date' => "Mai 2020"
+            'city' => "TBA",
+            'country' => "Irlande",
+            'date' => "26-27 avril 2021"
         ],
         3 => [
-            'city' => "",
-            'country' => "Roumanie",
-            'date' => "Mai 2020"
+            'city' => "TBA",
+            'country' => "Italie",
+            'date' => "7-8 mai 2021"
         ],
         4 => [
-            'city' => "",
-            'country' => "Espagne",
-            'date' => "Juin 2020"
+            'city' => "TBA",
+            'country' => "Grèce",
+            'date' => "7-8 mai 2021"
         ],
         5 => [
-            'city' => "",
-            'country' => "Lettonie",
-            'date' => "Septembre 2020"
+            'city' => "TBA",
+            'country' => "Slovénie",
+            'date' => "15-16 mai 2021"
         ],
         6 => [
-            'city' => "",
-            'country' => "Italie",
-            'date' => "Septembre 2020"
+            'city' => "TBA",
+            'country' => "Lettonie",
+            'date' => "29-30 mai 2021"
         ],
+    ],
+    'final' => [
+        1 => 'Finale en',
+        2 => 'septembre/octobre 2021'
     ]
+
 
 
 ];

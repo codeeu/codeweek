@@ -8,14 +8,14 @@ return [
         1 => [
             'title' => '6 hak-festova, 6 izazova',
             'content' => [
-                1 => 'Da li živite u Letoniji, Irskoj, Italiji, Rumuniji, Sloveniji ili Španiji? Ovo je vaša prilika da iskoristite svoju kreativnost, znatiželju, motivaciju i tehničke veštine. Pridružite se jednom od hak-festova EU Nedelje programiranja i razvijte inovativno rešenje koje će biti od koristi društvu.',
-                2 => 'U 2020., EU nedelja programiranja donosi šest izvanrednih hakatona u šest evropskih zemalja i poziva učenike zavšnih godina srednjih škola (16-19 godina) da iskoriste svoje veštine programiranja kako bi za dva dana pronašli rešenja za lokalni izazov.'
+                1 => "Da li živite u Grčkoj, Letoniji, Irskoj, Italiji, Rumuniji ili Sloveniji? Da li ste kreativni, ambiciozni i zainteresovani za budućnost tehnologije? Sada je vaša prilika! Pridružite se jednom od hakatona u Evropskoj nedelji programiranja i razvijte inovativno rešenje koje će vas staviti na čelo tehnološke revolucije!",
+                2 => "U 2021. godini, EU Code Week (Evropska nedelja programiranja) donosi šest izvanrednih hakatona i poziva učenike starosti od 15 do 19 godina u višim razredima srednje škole da formiraju timove i upotrebe svoje veštine programiranja kako bi rešili lokalni izazov. Nakon 24-časovnog hakovanja, svaki tim će predstaviti svoje ideje panelu stručnjaka koji će izabrati 10 finalista. Svi timovi će na raspolaganju imati isto vreme, resurse i pristup mentorima i stručnjacima kako bi dovršili izazov, ali samo 10 timova će imati priliku da nastavi u sledeću rundu, da razvije svoj prototip, dobije stručno vođenje i učestvuje u završnom hakatonu na jesen. Tada će se timovi boriti za osvajanje IT opreme i priliku da dobiju mentorstvo i vođenje kako bi dalje razvili svoj prototip."
             ]
         ],
         2 => [
             'title' => 'Kako učestvovati?',
             'content' => [
-                1 => 'Izaberite hak-fest u vašoj zemlji i pratite nekoliko jednostavnih koraka za registraciju. Ako želite da se pridružite sa prijateljima ili drugarima iz odeljenja, ne zaboravite da navedete naziv tima. Svaki hak-fest će zasebno otvoriti svoju registraciju.'
+                1 => "Izaberite hakaton u svojoj zemlji i pratite nekoliko jednostavnih koraka da biste se registrovali. Možete se pridružiti kao pojedinac ili kao tim od šest osoba. Ako se pridružite s prijateljima ili školskim drugovima, nemojte zaboraviti da navedete ime tima prilikom registracije. Svaki hakaton ima zasebnu registraciju pa zato pratite hakaton u svojoj zemlji!"
             ]
         ],
         3 => [
@@ -29,8 +29,8 @@ return [
         4 => [
             'title' => 'Kako izgleda hak-fest?',
             'content' => [
-                1 => 'Na svakom hakatonu 60 srednjoškolaca će se takmičiti u timovima tokom dva dana. Na kraju, svaki tim će predstaviti svoje rešenje stručnom žiriju. Iskusni mentori će obučavati timove, a postojaće radionice koje će učesnicima pružati mogućnosti da nauče nove veštine i da se zabave. Hak-festovi predstavljaju i sjajnu priliku za umrežavanje učesnika i za druženje sa ljudima iz svog lokalnog stručnog sektora.',
-                2 => 'Pobednički timovi na svakom lokalnom hak-festu će dobiti različite nagrade, uključujući mogućnost da otputuju u Brisel i predstave svoje rešenje međunarodnoj publici 12. oktobra 2020. godine.',
+                1 => "EU Code Week Hackathon je putovanje koje počinje sa 24-časovnim hakatonom na internetu. Iskusni mentori će voditi timove i održavaće se radionice na kojima će učesnici imati priliku da nauče nove veštine i da se zabave. Hakaton je takođe odlična prilika da se učesnici povežu i druže s osobama iz evropskog tehničkog sektora. Na kraju hakatona svaki tim će predstaviti svoje rešenje stručnom žiriju.",
+                2 => "Deset najboljih timova će nastaviti svoj put i proći obuku i mentorstvo tokom leta. Pobednici će zatim učestvovati u završnom 12-časovnom nacionalnom hakatonu „licem u lice” u septembru ili oktobru (hakaton će se održati na internetu ako situacija s javnim zdravljem ne dozvoljava fizičko sastajanje).",
             ]
         ],
         5 => [
@@ -43,6 +43,9 @@ return [
         6 => [
             'title' => 'Partneri',
         ],
+        7 => [
+            'title' => "Pridružite se zabavi!",
+        ],
 
     ],
 
@@ -50,35 +53,40 @@ return [
 
         1 => [
             'city' => "",
-            'country' => "Irska",
-            'date' => "April 2020"
+            'country' => "Rumunija",
+            'date' => "17–18. april 2021."
         ],
         2 => [
             'city' => "",
-            'country' => "Slovenija",
-            'date' => "Maj 2020"
+            'country' => "Irska",
+            'date' => "26-27. april 2021."
         ],
         3 => [
             'city' => "",
-            'country' => "Rumunija",
-            'date' => "maj 2020"
+            'country' => "Italija",
+            'date' => "7–8. maj 2021."
         ],
         4 => [
             'city' => "",
-            'country' => "Španija",
-            'date' => "jun 2020"
+            'country' => "Grčka",
+            'date' => "7–8. maj 2021"
         ],
         5 => [
             'city' => "",
-            'country' => "Letonija",
-            'date' => "septembar 2020"
+            'country' => "Slovenija",
+            'date' => "15–16. maj 2021."
         ],
         6 => [
             'city' => "",
-            'country' => "Italija",
-            'date' => "septembar 2020"
+            'country' => "Letonija",
+            'date' => "29–30. maj 2021."
         ],
     ],
+    'final' => [
+        1 => 'Finale',
+        2 => 'Septembar/oktobar 2021.'
+    ]
 
 
 ];
+

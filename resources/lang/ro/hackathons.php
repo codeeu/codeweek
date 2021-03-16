@@ -8,14 +8,14 @@ return [
         1 => [
             'title' => '6 evenimente hackathon, 6 provocări',
             'content' => [
-                1 => 'Locuiești în Letonia, Irlanda, Italia, România, Slovenia sau Spania? Acum ai șansa de a-ți folosi creativitatea, curiozitatea, ambiția și competențele tehnice. Participă la unul dintre evenimentele hackathon din cadrul Săptămânii UE a programării și dezvoltă o soluție inovatoare care să ajute societatea.',
-                2 => 'În 2020, Săptămâna UE a programării aduce șase evenimente hackathon în șase țări europene și invită elevii de liceu (cu vârste între 16 și 19 ani) să își folosească abilitățile de programare pentru a găsi soluții la o problemă specifică în 2 zile.'
+                1 => 'Locuiești în Grecia, Letonia, Irlanda, Italia, România sau Slovenia? Ești o persoană creativă, ambițioasă și interesată de viitorul tehnologiei? Aceasta este șansa ta! Înscrie-te la unul din hackathoanele Săptămâna UE a programării și dezvoltă o soluție inovatoare care te va propulsa în plutonul fruntaș al revoluției tehnologice!',
+                2 => 'În 2021, EU Code Week (Săptămâna UE a programării) include șase hackathoane extraordinare în care sunt invitați liceeni în vârstă de 15-19 ani, care vor forma echipe și își vor utiliza aptitudinile de programare pentru a soluționa o provocare locală. După 24 de ore de programare, fiecare echipă își va prezenta ideile în fața unui panou de experți care va alege cele 10 echipe finaliste. Toate echipele vor avea la dispoziție o perioadă egală de timp, resurse identice și acces la mentori și expertiză pentru a finaliza provocarea, dar numai 10 echipe vor primi șansa de a trece în runda următoare, unde își vor dezvolta prototipul, vor beneficia de coaching din partea experților și vor lua parte la hackathonul final din toamnă. Aici, echipele se vor confrunta pentru a stabili cine câștigă echipamente IT atractive și șansa de a primi mentorat și coaching pentru a-și dezvolta prototipul în continuare.'
             ]
         ],
         2 => [
             'title' => 'Cum pot participa?',
             'content' => [
-                1 => 'Selectează evenimentul hackathon din țara ta și urmează câțiva pași simpli pentru a te înscrie. Dacă vrei să participi împreună cu prietenii sau cu colegii, nu uita să menționezi numele echipei voastre. Înscrierea se va face separat pentru fiecare hackathon.'
+                1 => 'Selectează hackathonul din țara ta și urmează cei câțiva pași simpli pentru a te înregistra. Te poți înscrie individual sau în echipe de șase persoane. Dacă te înscrii împreună cu mai mulți prieteni sau colegi, nu uita să indici numele echipei atunci când te înscrii. Fiecare hackathon va organiza separat înscrierile, așadar urmărește hackathonul din țara ta!'
             ]
         ],
         3 => [
@@ -29,8 +29,8 @@ return [
         4 => [
             'title' => 'Cum arată un hackathon?',
             'content' => [
-                1 => 'La fiecare hackathon vor concura 60 de elevi de liceu, organizați in echipe, timp de 2 zile. La sfârșit, fiecare echipă își va prezenta soluția în fața unui juriu format din experți. Echipele vor fi îndrumate de către mentori cu experiență, iar participanții vor avea ocazia de a deprinde competențe noi și de a se distra în cadrul unor ateliere. Evenimentele hackathon reprezintă și o ocazie excelentă pentru participanți de a stabili legături și a socializa cu oameni din sectorul local al tehnologiei.',
-                2 => 'Echipa câștigătoare de la fiecare hackathon local va primi diferite premii, inclusiv posibilitatea de a merge la Bruxelles pentru a-și prezenta soluția în fața unui public internațional în 12 octombrie 2020.',
+                1 => 'EU Code Week Hackathon este o călătorie care începe cu un hackathon online de 24 de ore. Mentori experimentați vor oferi coaching pentru echipe și vor exista ateliere care vor da participanților oportunitatea de a învăța aptitudini noi și de a se distra. Hackathonul este, de asemenea, o oportunitate pentru participanți de a își crea relații și de a socializa cu persoane din sectorul european de tehnologie. La sfârșitul hackathonului, fiecare echipă își va prezenta soluția în fața unui juriu format din experți. ',
+                2 => 'Cele mai bune zece echipe își vor continua parcursul în cadrul hackathonului și vor primi instruire și mentorat în vară. Ulterior, câștigătorii vor lua parte la hackathonul național final de 12 ore față în față, organizat în septembrie sau octombrie (care va avea loc online dacă situația în materie de sănătate publică nu permite o întâlnire fizică).',
             ]
         ],
         5 => [
@@ -44,41 +44,50 @@ return [
             'title' => 'Parteneri',
         ],
 
+        7 => [
+            'title' => "Alătură-te distracției!",
+        ],
+
     ],
 
     'cities' => [
 
         1 => [
             'city' => "",
-            'country' => "Irlanda",
-            'date' => "aprilie 2020"
+            'country' => "România",
+            'date' => "17-18 aprilie 2021"
         ],
         2 => [
             'city' => "",
-            'country' => "Slovenia",
-            'date' => "mai 2020"
+            'country' => "Irlanda",
+            'date' => "26-27 aprilie 2021"
         ],
         3 => [
             'city' => "",
-            'country' => "România",
-            'date' => "mai 2020"
+            'country' => "Italia",
+            'date' => "7-8 mai 2021"
         ],
         4 => [
             'city' => "",
-            'country' => "Spania",
-            'date' => "iunie 2020"
+            'country' => "Grecia",
+            'date' => "7-8 mai 2021"
         ],
         5 => [
             'city' => "",
-            'country' => "Letonia",
-            'date' => "septembrie 2020"
+            'country' => "Slovenia",
+            'date' => "15-16 mai 2021"
         ],
         6 => [
             'city' => "",
-            'country' => "Italia",
-            'date' => "septembrie 2020"
+            'country' => "Letonia",
+            'date' => "29-30 mai 2021"
         ],
     ],
+    'final' => [
+        1 => 'Finala în',
+        2 => 'septembrie/octombrie 2021'
+    ]
 
 
 ];
+
