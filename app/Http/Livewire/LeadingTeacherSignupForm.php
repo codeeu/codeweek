@@ -25,6 +25,7 @@ class LeadingTeacherSignupForm extends Component
     public $expertises;
     public $selectedCity;
     public $twitter;
+    public $tag;
     public $message;
     public $privacy;
     public $isLeadingTeacher;
@@ -99,6 +100,7 @@ class LeadingTeacherSignupForm extends Component
         'selectedExpertises' => 'required',
         'isLeadingTeacher' => 'accepted',
         'privacy' => 'accepted',
+        'tag' => 'required',
 
     ];
 
@@ -120,6 +122,7 @@ class LeadingTeacherSignupForm extends Component
         $user->lastname = $this->last_name;
         $user->twitter = $this->twitter;
         $user->privacy = true;
+        $user->tag = $this->tag;
         $user->city_id = $this->selectedCity;
         $user->country_iso = $this->selectedCountry;
 

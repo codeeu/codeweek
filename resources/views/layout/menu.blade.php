@@ -11,7 +11,7 @@
                 <ul>
                     {{--                    <li><a href="{{route('codeweek2020')}}">Codeweek 2020</a></li>--}}
                     <li><a href="{{route('events_map')}}">@lang('menu.map')</a></li>
-                    {{--                    <li><a href="{{route('featured_activities')}}">@lang('menu.featured_activities')</a></li>--}}
+                    <li><a href="{{route('featured_activities')}}">@lang('menu.featured_activities')</a></li>
                     <li><a href="{{route('create_event')}}">@lang('menu.add_event')</a></li>
                     <li><a href="{{route('scoreboard')}}">@lang('event.scoreboard_by_country')</a></li>
                 </ul>
@@ -41,6 +41,7 @@
                 <a href="javascript:void(null);">@lang('menu.about')</a>
                 <ul>
                     <li><a href="/about">Code Week</a></li>
+                    <li><a href="/hackathons">Hackathons</a></li>
                     <li><a href="{{route('codeweek4all')}}">Code Week 4 All</a></li>
                     <li><a href="/dance">@lang('snippets.dance.menu')</a></li>
                     <li><a href="/treasure-hunt">@lang('snippets.treasure-hunt.menu')</a></li>
