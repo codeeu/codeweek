@@ -262,6 +262,67 @@ return [
 
 ],
 
+    'colour-everything' => [
+        'title' => 'Oboji sve',
+        'text' => 'Možemo li voditi robote po ploči tako da njihove putanje postanu crteži? Ovdje kroz igru programiramo i crtamo pikselima te oblikujemo slike bojanjem polja šahovske ploče, koja su nalik pikselima na zaslonu.',
+        'material' => 'Karte CodyRoby, šahovska ploča i figurica. Polja obojite polaganjem papirića ili markerima.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Je li moguće nacrtati dva srca kao u zadnjem dijelu videozapisa vodeći robota po svim odgovarajućim poljima, ali nijednom dvaput preko istog polja?',
+                ]
+
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => 'Ploter Cody i pisač Cody',
+        'text' => 'Koja je razlika između plotera i pisača? Saznajte kroz igru u kojoj programirate bez računala.',
+        'material' => 'osim pribora CodyRoby, koristio sam zeleni marker i novog robota od gline, ali to nije nužno.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Možete li objasniti razliku između plotera i pisača?',
+                    2 => 'Što bi pisač Roby nacrtao kada bi se kretao po linijama na ploči prema naredbama s kraja videozapisa?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => 'Dosadni pikseli!/Korištenje brojki',
+        'text' => 'Kada Robyju damo upute da nacrta sliku krećući se po poljima odnosno pikselima, vidimo da to može postati još zanimljivije ako se poslužimo brojkama kada imamo mnogo uzastopnih polja iste boje. To rade i računala...',
+        'material' => 'bilježnica na kvadratiće ili šahovska ploča 5 × 5 nacrtana na listu papira, flomaster. Kȏd crteža možete prikazati koristeći se olovkom i papirom.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Pokušajte izraditi šahovnicu i prikazati je s pomoću kodiranja duljine niza. Veličina šahovnice jednaka je broju kvadrata, ali koliko je velik njegov prikaz u obliku kodirane duljine niza?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+        'title' => 'Pretvaranje kȏda u slike',
+        'text' => [
+            1 => 'Sada smo vidjeli da možemo napisati kȏd za crtanje slike. Osmislio sam crtež i s pomoću kȏda ga pretvorio u slova i brojke, koje sam podijelio s vama. Zapišite slova i brojke te na temelju kȏda rekreirajte sliku.',
+            2 => 'Ovo je slika koju sam osmislio i uspio prikazati u vašim bilježnicama i bilježnicama svih onih koji znaju za kȏd!'
+],
+        'material' => 'papir (po mogućnosti na kvadratiće) i olovka.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Pokušajte dekodirati i nacrtati slike s kraja ovog videozapisa.'
+                ]
+
+        ]
+
+    ],
+
+
 
     'texts' => [
     1 => 'Coding@Home je zbirka kratkih video zapisa, materijala za samoučenje, zadataka, igara i izazova za programiranje za svakodnevnu upotrebu u obitelji i školi. Za te aktivnosti ne trebate nikakvo prethodno znanje niti elektroničke uređaje. Aktivnosti će poticati računalno razmišljanje i njegovat će vještine učenika, roditelja i učitelja kod kuće i u školi.',

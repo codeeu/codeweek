@@ -262,6 +262,67 @@ return [
 
     ],
 
+    'colour-everything' => [
+        'title' => 'Všechno vybarvit',
+        'text' => 'Co roboty nasměrovat po desce tak, aby cestou vytvořili obrazec? V rámci tohoto úkolu si budeme hrát s programováním a pixely. Budeme vytvářet obrazce vybarvováním políček, jako by to byly pixely na obrazovce.',
+        'material' => 'Karty CodyRoby, čtverečkovaná hrací deska a figurka. K vybarvování políček budeme používat čtverečky papíru, které budeme na políčka pokládat. Nebo je můžete vybarvovat fixem.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Dovedete nakreslit dvě srdce, jako v závěrečné části videa, nasměrováním robota na příslušná políčka, aniž by kterékoli vybarvil dvakrát?',
+                ]
+
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => 'CodyPlotter a CodyPrinter',
+        'text' => 'Jaký je rozdíl mezi plotterem a tiskárnou? Odpověď najdete při této aktivitě bez počítače.',
+        'material' => 'Kromě setu CodyRoby budeme používat zelený fix a nového robota z modelíny, ale nemusí být.',
+        'questions' => [
+    'content' =>
+        [
+            1 => 'Dokážete vysvětlit rozdíl mezi plotterem a tiskárnou?',
+            2 => 'Co by RobyPrinter nakreslil, kdyby se po desce pohyboval podle posloupnosti příkazů na konci videa?',
+        ]
+
+]
+
+    ],
+
+    'boring-pixels' => [
+    'title' => 'Samé pixely!/Čísla',
+    'text' => 'Dáváme Robymu příkazy, aby postupně políčko po políčku, tedy pixel po pixelu, kreslil obrazec. V případech, kdy je třeba vybarvit řadu políček za sebou, si můžeme situaci usnadnit čísly. Počítače dělají totéž...',
+    'material' => 'čtverečkovaný blok nebo hrací deska 5×5 políček nakreslená na listu papíru, fix. Ke znázornění můžete použít fix a papír.',
+    'questions' => [
+        'content' =>
+            [
+                1 => 'Zkuste vytvořit šachovnici kódováním RLE. Velikost obrazce se bude rovnat počtu políček, ale jak velká bude jeho podoba v RLE?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+    'title' => 'Programujeme obrázky',
+    'text' => [
+        1 => 'Ukázali jsme si, jak nakreslit respektive naprogramovat obrázek. Teď si představuju další obrázek. Programem jsem ho zakódoval do písmen a čísel, které máte k dispozici. Čísla a písmena si zaznamenejte a pomocí programu zjistěte, jaký obrazec jsem měl na mysli.',
+        2 => 'Tady je obrázek, který jsem po vás chtěl. Podařilo se vám ho pomocí kódu nakreslit?'
+    ],
+    'material' => 'papír (pokud možno čtverečkovaný) a fix.',
+    'questions' => [
+        'content' =>
+            [
+                1 => 'Zkuste si dekódovat a nakreslit další obrazce, které uvádím na konci videa.'
+            ]
+
+    ]
+
+],
+
+
 
     'texts' => [
         1 => 'Série Coding@Home představuje sbírku krátkých videí, návodů, hádanek, her a programovacích úkolů pro každodenní využití doma i ve škole . Veškeré aktivity můžete provádět bez předchozích znalostí či elektronických přístrojů . Aktivity stimulují výpočetní myšlení a rozvíjejí dovednosti žáků, rodičů i učitelů doma i ve škole . ',

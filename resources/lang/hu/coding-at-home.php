@@ -262,6 +262,67 @@ return [
 
     ],
 
+    'colour-everything' => [
+        'title' => 'Színezz ki mindent',
+        'text' => 'Körülvezethetjük-e a táblán a robotokat úgy, hogy pályájuk rajzot formáljon? Foglalkozásunk során kódolással és képpontgrafikával játszunk: képeket alkotunk a négyzethálós tábla mezőinek kiszínezésével, mintha képernyő képpontjai lennének.',
+        'material' => 'CodyRoby-iránykártyák, egy négyzethálós tábla és egy bábu. A színezéshez a mezőkre négyzet alakú papírdarabkákat helyezhetünk, de lehet filctollat is használni.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Megrajzolhatjuk-e a videó végén mutatott két szívet úgy, hogy a robotot a megfelelő mezőkre irányítjuk, minden egyes mezőt csak egyszer érintve?',
+                ]
+
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => 'Roby-rajzgép és Roby-nyomtató',
+        'text' => 'Mi a különbség a rajzgép és a nyomtató között? Ez a kódolási gyakorlat választ ad a kérdésre.',
+        'material' => 'a CodyRoby-készleten kívül egy zöld filctollat és robotmodellként egy új agyagbábut használtam, de ez nem feltétlenül szükséges.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Meg tudod magyarázni, mi a különbség a rajzgép és a nyomtató között?',
+                    2 => 'Mit rajzol a Roby-nyomtató a tábla sorain végighaladva, ha végrehajtja a videó végén elhangzó parancssort?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => 'Unalmas pixelek!/Számok használata',
+        'text' => 'Amikor a Roby-nyomtatónak mezőnként, azaz képpontonként utasítást adunk a kép megrajzolásához, megállapíthatjuk, hogy ha egy sorban több egyforma színű mező van, számokkal egyszerűsíthetjük és egyúttal érdekesebbé tehetjük a kódolást. A számítógépek ugyanígy járnak el...',
+        'material' => 'kockás jegyzetfüzet, vagy papírlapra rajzolt 5 × 5 mezős négyzethálós tábla, filctoll, továbbá toll és papír a rajz kódolásának leírásához.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Próbálj meg egy négyzethálós táblán készített rajzot futáshossz-kódolással ábrázolni. A rajz mérete megegyezik a négyzetháló mezőinek számával, de mekkora a futáshossz-kódolással ábrázolt rajz mérete?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+        'title' => 'Alakítsuk képpé a kódot',
+        'text' => [
+            1 => 'Láthattuk, hogyan lehet egy olyan kódot létrehozni, amellyel képet rajzolhatunk. Kigondoltam egy rajzot, azt egy kóddal betűkké és számokká alakítottam. Írd le ezeket a betűket és számokat, és a kód segítségével próbáld meg rekonstruálni a rajzot.',
+            2 => 'Íme a rajz, amelyet kigondoltam, jelenítsd meg a jegyzetfüzetedben és mindazok jegyzetfüzetében, akik ismerik a kódot!'
+        ],
+        'material' => '(lehetőleg kockás) papírlap és toll.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Próbáld megfejteni a kódot, és rajzold le a képet, amelyet a videó végén említettem.'
+                ]
+
+        ]
+
+    ],
+
+
 
 
 

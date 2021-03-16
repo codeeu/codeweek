@@ -260,8 +260,65 @@ kolorowe karty lub czerwony, żółty i szary pisak",
 
     ],
 
+    'colour-everything' => [
+        'title' => 'Pokoloruj wszystko',
+        'text' => 'Czy można sterować robotami po planszy w taki sposób, aby ich trasy tworzyły rysunek? W tym zadaniu bawimy się w kodowanie pikseli i rysowanie, kolorując pola na szachownicy podobnie jak piksele na ekranie.',
+        'material' => 'Talia kart CodyRoby, plansza w kratki i pionek. Do kolorowania pól użyj kawałków papieru, umieszczając je na odpowiednich polach, lub pokoloruj pola markerami.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Czy można narysować dwa serca, jak w końcowej części filmu, przechodząc robotem przez wszystkie niezbędne pola, ale nigdy nie przechodząc dwa razy przez to samo pole?',
+                ]
 
+        ]
 
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => 'CodyPlotter i CodyPrinter',
+        'text' => 'Czym się różni ploter od drukarki? Odpowiedź znajdziesz w tej grze, która nie wymaga komputera.',
+        'material' => 'oprócz zestawu CodyRoby korzystałem z zielonego markera i nowego robota z modeliny, ale nie są to niezbędne akcesoria.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Czy możesz wyjaśnić różnicę między ploterem a drukarką?',
+                    2 => 'Jaki rysunek powstanie, jeśli RobyPrinter wykona sekwencję poleceń podyktowaną pod koniec filmu, poruszając się wzdłuż linii na planszy?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => 'Nudne piksele!/Korzystamy z liczb',
+        'text' => 'Roby dostaje instrukcje rysowania – pole po polu, piksel po pikselu. Jeżeli kolejne kwadraty pod rząd mają ten sam kolor, możemy wykorzystać liczby, aby zadanie było ciekawsze. Komputery działają podobnie...',
+        'material' => 'zeszyt w kratkę lub plansza w kratkę 5×5 narysowana na kartce papieru, długopis. Kod rysunku możesz zapisać długopisem na kartce papieru.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Przygotuj kratkowany wzór i spróbuj zapisać go, korzystając z kodowania długości serii (RLE). Rozmiar wzoru to liczba kwadratów, a jaki będzie rozmiar kodu RLE?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+        'title' => 'Zamiana kodu na rysunek',
+        'text' => [
+            1 => 'Przekonaliśmy się, że można napisać kod, który pozwala narysować rysunek. Przygotowałem rysunek i zastosowałem kod, aby zamienić rysunek na ciąg liter i liczb, które Ci podałem. Przyjrzyj się literom i liczbom i wykorzystaj kod, aby odtworzyć rysunek.',
+            2 => 'Oto rysunek, który przygotowałem. Narysuj go w swoim zeszycie. Może to zrobić każdy, kto zna kod!'
+        ],
+        'material' => 'papier (najlepiej w kratkę) i długopis.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Spróbuj odkodować i narysować obrazki, o których mowa pod koniec filmu.'
+                ]
+
+        ]
+
+    ],
 
 
     'texts' => [
