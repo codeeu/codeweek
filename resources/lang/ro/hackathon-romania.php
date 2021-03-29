@@ -58,6 +58,11 @@ return [
                 "Ideea EU Code Week Hackathon este de a arăta cum soluțiile concrete prind viață cu ajutorul creativității, entuziasmului, ideilor noi și aptitudinilor de programare ale tinerilor. „Concret” înseamnă rezolvarea unor probleme reale – lucruri care te afectează personal sau care afectează școala, comunitatea sau orașul tău, ori provocări specifice din zona ta.",
                 "Pe baza votului publicului, provocarea pentru Hackathonul din România este:",
                 "Pe baza votului publicului, provocarea pentru Hackathonul din România a fost:"
+            ],
+            "challenges" => [
+                "Combaterea știrilor false",
+                "Pune-te în mișcare!",
+                "Aer mai curat în orașe"
             ]
         ],
         7 => [
