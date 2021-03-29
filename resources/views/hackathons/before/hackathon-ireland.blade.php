@@ -174,14 +174,15 @@
             </div>
         </section>
 
-{{--                <section id="side-events">--}}
-{{--                    <div class="left">--}}
-{{--                        <h1>@lang('hackathon-ireland.sections.11.title')</h1>--}}
-{{--                        <p>@lang('hackathon-ireland.sections.11.content.0')</p>--}}
-{{--                        <a href="" class="codeweek-action-link-button">@lang('login.register')</a>--}}
-{{--                    </div>--}}
-{{--                    <img src="/images/hackathons/side_events.png">--}}
-{{--                </section>--}}
+                <section id="side-events">
+                    <div class="left">
+                        <h1>@lang('hackathon-ireland.sections.11.title')</h1>
+                        <p>@lang('hackathon-ireland.sections.11.content.0')</p>
+                        <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCWHackathonIreland"
+                           class="codeweek-action-link-button">@lang('login.register')</a>
+                    </div>
+                    <img src="/images/hackathons/side_events.png">
+                </section>
 
         <section id="about-codeweek">
             <div class="text">
