@@ -82,7 +82,7 @@ return [
         9 => [
             "title" => "Practical Info",
             "content" => [
-                "The hackathon will take place online from 14:00 April 26 to 14:00 April 27",
+                "The hackathon will take place online from 14:00 April 26 to 16:00 April 27",
                 "The Hackathon is free of charge."
 
             ]
@@ -98,9 +98,9 @@ return [
         ],
 
         11 => [
-            "title" => "Side events",
+            "title" => "I don't know coding - what can I do?",
             "content" => [
-                "Do these themes interest you but you don’t know how to code? Sign up to our side events and discover the thrill of coding, innovation, entrepreneurship and other skills vital to participating in the digital world. The Code Week hackathon side events are scheduled to run from May to October and will include several different types of workshop. They are free of charge, you just have to sign up here. Come and learn more.",
+                "From April to September, there will be Hackathon side events for beginners in coding, tinkering with hardware and robotics and so on for participants to learn some basics of computational thinking and coding. See more information about how to register on your local page.",
             ]
         ],
         12 => [
