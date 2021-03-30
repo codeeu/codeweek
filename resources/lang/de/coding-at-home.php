@@ -262,6 +262,67 @@ return [
 
     ],
 
+    'colour-everything' => [
+        'title' => 'Alles bunt machen',
+        'text' => 'Schaffen wir es, Roboter so über das Spielfeld zu führen, dass sie mit ihren Spuren ein Bild zeichnen? Bei dieser Aktivität spielen wir Programmierer und machen Pixelkunst: Wir kolorieren Felder auf einem Spielfeld wie Pixel auf einem Bildschirm.',
+        'material' => 'CodyRoby-Karten, ein Karo-Spielfeld und eine Spielfigur. Um die Felder einzufärben, legt buntes Papier drauf oder malt sie mit Filzstiften bunt.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Ist es möglich, zwei Herzen zu zeichnen - wie am Ende des Videos - und dabei den Roboter so zu führen, dass er nicht zweimal auf das gleiche Feld kommt?',
+                ]
+
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => 'CodyPlotter und CodyPrinter',
+        'text' => 'Wodurch unterscheiden sich Plotter und Drucker? Finde es heraus – mit unserem Programmierspiel.',
+        'material' => 'Zusätzlich zum CodyRoby-Kit habe ich einen grünen Filzstift und einen neuen Knetgummi-Roboter benutzt, aber das muss nicht sein.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Kannst du erklären, wodurch sich Plotter und Drucker unterscheiden?',
+                    2 => 'Welches Bild würde RobyPrinter hinterlassen, wenn er sich so über die Linien des Spielfelds bewegt, wie ihn die Kommandos am Ende des Videos führen?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => 'Langweilige Pixels mit Zahlen aufpeppen!',
+        'text' => 'Mit unseren Kommandos bringen wir Roby dazu, Kästchen für Kästchen, Pixel für Pixel Spuren zu hinterlassen, die ein Bild ergeben. Wenn viele Kästchen in derselben Reihe dieselbe Farbe haben, können wir sie mit Zahlen aufpeppen. Computer machen das auch so ...',
+        'material' => 'kariertes Heft oder 5 × 5 Karo-Spielfeld auf Papier, Fineliner. Den Code der Zeichnung kannst du mit einem Stift auf Papier schreiben.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Versucht, ein Schachbrett-Muster zu zeichnen und es mit RLE-Kodierung darzustellen. Die Größe des Schachbrett-Musters entspricht der Anzahl der Kästchen – aber wie groß fällt die Darstellung mit RLE aus?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+        'title' => 'Code in Bilder umwandeln',
+        'text' => [
+            1 => 'Wir wissen jetzt, dass wir einen Code erstellen können, um ein Bild zu zeichnen. Ich habe mir eine Zeichnung ausgedacht und in Buchstaben und Zahlen codiert. Den Code habe ich euch gegeben. Notiert euch die Buchstaben und Zahlen und verwendet den Code, um die Zeichnung zu rekonstruieren.',
+            2 => 'Dieses Bild hatte ich im Kopf. Bildet es nach – alle, die den Code kennen, können es rekonstruieren!'
+        ],
+        'material' => 'Papier (möglichst kariert) und ein Stift.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Versucht, die Bilder am Ende des Videos zu dekodieren und zu zeichnen.'
+                ]
+
+        ]
+
+    ],
+
+
 
 
 

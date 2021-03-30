@@ -208,62 +208,121 @@ Gerekli malzeme: dama tahtası, ayak izli taşlar.',
 
     'two-snakes' => [
         'title' => "İki yılan",
-    'text' => "İki yılan, CodyRoby kartlarıyla tahtada dolaşarak birbirlerinin önünü tıkamaya çalışır. Oyunun kuralı çok basit: bir yılanın üstünden geçtiği bir kareden tekrar geçemezsiniz. En uzun sure tahtada dolaşabilen yılan oyunu kazanır.",
-    'material' => "CodyRoby kartları, 1 adet 5 × 5 dama tahtası, 2 adet piyon ve üstünden geçtiğiniz kareleri işaretlemek için kağıt parçaları.",
-    'questions' => [
-    'content' =>
-        [
-            1 => 'Soru 1. Videoda ilk gösterilen düzende, iki oyuncu sola dönmelerini sağlayacak sarı kart dışında hangi kartları seçseler işlerine yarar?',
-            ]
+        'text' => "İki yılan, CodyRoby kartlarıyla tahtada dolaşarak birbirlerinin önünü tıkamaya çalışır. Oyunun kuralı çok basit: bir yılanın üstünden geçtiği bir kareden tekrar geçemezsiniz. En uzun sure tahtada dolaşabilen yılan oyunu kazanır.",
+        'material' => "CodyRoby kartları, 1 adet 5 × 5 dama tahtası, 2 adet piyon ve üstünden geçtiğiniz kareleri işaretlemek için kağıt parçaları.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Soru 1. Videoda ilk gösterilen düzende, iki oyuncu sola dönmelerini sağlayacak sarı kart dışında hangi kartları seçseler işlerine yarar?',
+                ]
 
-    ]
+        ]
 
-],
+    ],
 
-'round-trip' => [
-    'title' => "Gidiş-dönüş",
-    'text' => "Takımlar sırayla oynar. İlk takım gidiş yolunu programlarken diğer takım Roby’yi başlangıç noktasına geri götürmelidir. Kolay gibi görünse de kolay değildir. Özellikle de Roby’yi hareket ettirmeden hamleleri yalnızca aklınızdan planlamaya çalışırsanız...",
-    'material' => "CodyRoby kartları, 1 adet 5 × 5 dama tahtası, 2 adet piyon ve üstünden geçtiğiniz kareleri işaretlemek için kağıt parçaları.",
-    'questions' => [
-        'content' =>
-            [
-                1 => "Soru 1. Roby’yi başlangıç noktasına geri götüren programın gidiş yolundan daha kısa olması -yani daha az komuttan oluşması- mümkün mü?",
-            ]
+    'round-trip' => [
+        'title' => "Gidiş-dönüş",
+        'text' => "Takımlar sırayla oynar. İlk takım gidiş yolunu programlarken diğer takım Roby’yi başlangıç noktasına geri götürmelidir. Kolay gibi görünse de kolay değildir. Özellikle de Roby’yi hareket ettirmeden hamleleri yalnızca aklınızdan planlamaya çalışırsanız...",
+        'material' => "CodyRoby kartları, 1 adet 5 × 5 dama tahtası, 2 adet piyon ve üstünden geçtiğiniz kareleri işaretlemek için kağıt parçaları.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Soru 1. Roby’yi başlangıç noktasına geri götüren programın gidiş yolundan daha kısa olması -yani daha az komuttan oluşması- mümkün mü?",
+                ]
 
-    ]
+        ]
 
-],
+    ],
 
-'meeting-point' => [
-    'title' => "Buluşma noktası",
-    'text' => "Bu sefer hamlelerimizi başlamadan önce planlıyoruz. İki takım robotlarını hareket ettirmek için masaya bir dizi komut kartı açar; ancak oyunculardan biri “Başla!” diyene kadar hiçbir şey hareket etmez. O an, programlama biter ve yarış başlar. “Başla!” diyen oyuncu ancak takımlarının komutlarını yerine getiren iki robot aynı karede buluşursa oyunu kazanır.",
-    'material' => "CodyRoby kartları, 1 adet 5 × 5 dama tahtası, 2 adet piyon.",
-    'questions' => [
-        'content' =>
-            [
-                1 => "Soru 1. İki robotun hiç karşılaşamayabileceğini düşünüyorsanız, tüm olası durumları düşünerek yeni oyun kuralları üretin.",
-            ]
+    'meeting-point' => [
+        'title' => "Buluşma noktası",
+        'text' => "Bu sefer hamlelerimizi başlamadan önce planlıyoruz. İki takım robotlarını hareket ettirmek için masaya bir dizi komut kartı açar; ancak oyunculardan biri “Başla!” diyene kadar hiçbir şey hareket etmez. O an, programlama biter ve yarış başlar. “Başla!” diyen oyuncu ancak takımlarının komutlarını yerine getiren iki robot aynı karede buluşursa oyunu kazanır.",
+        'material' => "CodyRoby kartları, 1 adet 5 × 5 dama tahtası, 2 adet piyon.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Soru 1. İki robotun hiç karşılaşamayabileceğini düşünüyorsanız, tüm olası durumları düşünerek yeni oyun kuralları üretin.",
+                ]
 
-    ]
+        ]
 
-],
+    ],
 
-'follow-the-music' => [
-    'title' => "Müziğin peşinden",
-    'text' => "Programlama komutlarından oluşan diziler belirli aralıklarla kendilerini tekrar ettiğinde, ritimleri varmış gibi görünür. Her komuta bir ses atarsak, Roby’yi müzikle yönlendirebiliriz. Şimdi aynen bunu yapacağız. Her komuta farklı bir ses atayarak sizin için bir program geliştireceğim. Siz de bu sesli komutları izleyerek Roby’yi tahtada hareket ettireceksiniz.",
-    'material' => "CodyRoby kartları, dama tahtası ve piyona ek olarak üç farklı ses çıkarmamız gerekiyor. Ben içi farklı miktarlarda su dolu üç cam bardak kullandım. Siz ne kullanacaksınız?",
-    'questions' => [
-    'content' =>
-        [
-            1 => "Soru 1. Videoyu takip edin ve kartlara bakmadan bardakların çıkardığı seslerle hareket etmeye çalışın. Seslerin verdiği komutları anlayıp uygulayabiliyor musunuz?",
-                2 => "Soru 2. Üç temel komuta üç ses atayın. Roby’yi tahtanın dışına çıkarmadan sonsuza kadar tekrar edebileceğiniz bir ses dizisi bulun....",
-            ]
+    'follow-the-music' => [
+        'title' => "Müziğin peşinden",
+        'text' => "Programlama komutlarından oluşan diziler belirli aralıklarla kendilerini tekrar ettiğinde, ritimleri varmış gibi görünür. Her komuta bir ses atarsak, Roby’yi müzikle yönlendirebiliriz. Şimdi aynen bunu yapacağız. Her komuta farklı bir ses atayarak sizin için bir program geliştireceğim. Siz de bu sesli komutları izleyerek Roby’yi tahtada hareket ettireceksiniz.",
+        'material' => "CodyRoby kartları, dama tahtası ve piyona ek olarak üç farklı ses çıkarmamız gerekiyor. Ben içi farklı miktarlarda su dolu üç cam bardak kullandım. Siz ne kullanacaksınız?",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Soru 1. Videoyu takip edin ve kartlara bakmadan bardakların çıkardığı seslerle hareket etmeye çalışın. Seslerin verdiği komutları anlayıp uygulayabiliyor musunuz?",
+                    2 => "Soru 2. Üç temel komuta üç ses atayın. Roby’yi tahtanın dışına çıkarmadan sonsuza kadar tekrar edebileceğiniz bir ses dizisi bulun....",
+                ]
 
-    ]
+        ]
 
-],
+    ],
 
+    'colour-everything' => [
+        'title' => 'Her şeyi boya',
+        'text' => 'Robotları tahtada hareket ettirerek arkalarında bıraktıkları izlerle onlara resim çizdirebilir miyiz? Bu aktivitede kodlama ve piksel sanatını kullanacağız. Dama tahtasındaki kareleri boyayarak aynen bir ekrandaki pikseller gibi resim oluşturacağız.',
+        'material' => 'CodyRoby kartları, bir adet damalı oyun tahtası ve bir adet piyon. Kareleri boyamak için karelerin üstüne kağıt koyun veya karelerin içini keçeli kalemle boyayın.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Robotu hiçbir kareden iki kez geçirmeden videonun son bölümündeki gibi iki kalp çizecek şekilde hareket ettirebilir miyiz?',
+                ]
 
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => 'CodyPlotter ile CodyPrinter',
+        'text' => 'Bir çizici ile yazıcı arasındaki fark nedir? Bu bağlantısız kodlama aktivitesini oynayarak bu farkı öğrenebilirsiniz.',
+        'material' => 'CodyRoby kitinin yanı sıra, bir adet yeşil keçeli kalem ve oyun hamurundan yeni bir robot kullandım; ama bu isteğe bağlı.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Bir çizici ile yazıcı arasındaki farkı açıklayabilir misiniz?',
+                    2 => 'RobyPrinter, videonun sonundaki komut dizisini çalıştırsa, tahtadaki çizgilerden geçerek hangi şekli çizmiş olur?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => 'Sıkıcı Pikseller!/Sayı kullanımı',
+        'text' => 'Roby’ye verdiğimiz komutlarla kare kare, piksel piksel bir resim çizdirirken, aynı sıra üstünde birkaç kare aynı renkteyse bunu sayıyla da gösterebileceğimizi öğreniyoruz. Bilgisayarlar da böyle çalışır. ',
+        'material' => 'Kareli defter veya bir kağıda çizilmiş 5 × 5’li dama tahtası, keçeli kalem.
+Resmin kodunu yazmak için tükenmez kalemle kağıt kullanabilirsiniz.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Dama şekli yapmaya çalışın ve bunu RLE (run-length kodlama) ile gösterin. Şeklin büyüklüğü, karelerin toplamına eşittir. Peki ya RLE gösteriminin büyüklüğü nedir?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+        'title' => 'Kodları resme dönüştürme',
+        'text' => [
+            1 => 'Bir kod oluşturup bunu kullanarak bir resim çizebileceğimizi artık biliyoruz. Kafamda bir resim düşündüm ve kod kullanarak resmi harf ve sayılara çevirdim; size de bu harf ve sayıları verdim. Bu harf ve sayıları not edip kodu kullanarak şekli tekrar çizin.',
+            2 => 'Aklımdaki resim işte buydu. Hem kendi hem de kodu bilen diğer arkadaşlarınızın defterlerinde bu resmi ortaya çıkarın!'
+        ],
+        'material' => 'kağıt(tercihen kareli) ve tükenmez kalem.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Kodu çözüp videonun sonunda bahsettiğim resimleri çizmeye çalışın.'
+                ]
+
+        ]
+
+    ],
 
 
     'texts' => [
