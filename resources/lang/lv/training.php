@@ -236,6 +236,21 @@ Ar Python skolēni var veidot viktorīnas par vēstures notikumiem, risināt mat
     ]
 ],
 
+        '14' => [
+            'title' => 'Mācīšanās inteliģento mašīnu laikmetā',
+            'author' => 'autori: Adils Tugjans (Adil Tugyan), Džordžija Laskaris (Georgia Lascaris) un Marko Nevess (Marco Neves)',
+            'text' => [
+                '1' => 'Pateicoties straujajam datoru jaudas pieaugumam un liela datu apjoma pieejamībai, mākslīgā intelekta (MI) progress pēdējos gados ir bijis iespaidīgs. Tādēļ ir būtiski palielinājušies ieguldījumi MI izpētē un strauji augusi MI nozare, padarot MI par mūsu laikmeta lielāko tehnoloģisko revolūciju. MI ir mums visapkārt. Tas ir kļuvis par daļu no mūsu ikdienas dzīves tik lielā mērā, ka bieži vien to pat neuztveram par MI: mēs izmantojam interneta ieteikumus, sejas atpazīšanu, drošības sistēmas un balss asistentus gandrīz ik dienas. Bet kā ir ar izglītību? ',
+                '2' => 'MI piemīt milzīgs potenciāls radīt jaunus mācīšanas un mācīšanās veidus, kā arī papildināt skolēnu apmācību. Šis mācību kurss palīdzēs jums integrēt autentiskas MI nodarbības jūsu mācību procesā un palīdzēs sagatavot skolēnus dzīvei un karjerai pasaulē, ko veido MI. Šīs nodarbības ir izstrādātas skolēniem, lai attīstītu viņu zinātkāri, problēmu risināšanas spējas un radošumu, piemēram, Adila nodarbībā skolēni mācās par algoritniem un neironu tīkliem, un tiek mudināti veidot paši savus neironu tīklus, lai vizualizētu MI smadzenes. Džordžija soli pa solim atklās, kā izveidot tērzēšanas robotu. Skolēni izveidos paši savu tērzēšanas robotu, sagatavos jautājumu un atbilžu datu kopas un apmācīs robotu, lai tas varētu atbildēt uz jautājumiem par Covid-19. Marko izstrādātajā nodarbībā skolēni pētīs inteliģento mašīnu priekšrocības un problēmas ikdienas dzīvē un darbā. Kādi ir MI radītie riski, kas mums jāņem vērā? Kā MI ietekmēs darba tirgu nākotnē? Kādi darbi tiks piedāvāti, kad skolēni ienāks nākotnes darba tirgū?'
+            ],
+            'activities' => [
+                'title' => 'Tālāk izklāstītajos mācību plānos skolēni uzzinās par inteliģentajām mašīnām interesantā un aizraujošā veidā.',
+                '1' => 'MI un tā neironu tīkli pamatkolai',
+                '2' => 'Mans Covid-19 tērzēšanas robots vidusskolas jaunākajām klasēm',
+                '3' => 'Dzīve viedo mašīnu laikmetā: izaicinājumi un iespējas, vidusskolas vecākajām klasēm',
+            ]
+        ],
+
 
 
 

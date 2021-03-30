@@ -235,6 +235,23 @@ V tem videoposnetku vam bo ekipa tedna programiranja pokazala nekaj praktičnih,
             ]
         ],
 
+        '14' => [
+            'title' => 'Učenje v času inteligentnih naprav',
+            'author' => 'Adil Tugyan, Georgia Lascaris in Marco Neves',
+            'text' => [
+                '1' => 'Napredek umetne inteligence v zadnjih letih je navdušujoč, zahvaljujoč hitremu napredku na področju zmogljivosti računalnikov in razpoložljivosti velikih količin podatkov. To je vodilo v velike naložbe v raziskave umetne inteligence in hitro širjenje panoge, zaradi česar je umetna inteligenca postala tehnološka revolucija našega časa. Umetna inteligenca je povsod okrog nas. Postala je del našega vsakdanjega življenja, tako zelo, da o njej včasih niti ne razmišljamo kot o umetni inteligenci: skoraj vsak dan uporabljamo spletna priporočila, prepoznavanje obrazov, varnostne sisteme in glasovno pomoč. Kaj pa izobraževanje? ',
+                '2' => 'Umetna inteligenca ima ogromen potencial, da bo omogočila nove načine učenja in izboljšala učenje dijakov. Ta učni drobec vam bo pomagal integrirati izvirne dejavnosti umetne inteligence v vaše učenje in vam pomagal vaše dijake pripraviti na življenje in kariero v svetu, ki ga bo oblikovala umetna inteligenca. Te dejavnosti so bile zasnovane za učence, da bi razvijale njihovo radovednost, reševanje problemov in ustvarjalnost: pri Adilovi dejavnosti se tako učijo o algoritmih in nevralnih mrežah ter ustvarjajo lastne nevralne mreže, da bi si lahko predstavljali možgane umetne inteligence. Georgia bo vaše dijake vodile po ustvarjanju klepetalnega robota korak po koraku. Dijaki bodo gradili lastnega klepetalnega robota, pripravljali podatkovne zbirke vprašanj in odgovorov ter ga usposobili tako, da bo znal odgovarjati na vprašanja o covidu-19. Pri Marcovi dejavnosti bodo dijaki raziskovali prednosti in izzive inteligentnih naprav v vsakdanjem življenju in pri delu. Katera so tveganja pri umetni inteligenci, ki jih moramo upoštevati? Kako bo umetna inteligenca vplivala na prihodnost dela? Katera delovna mesta jim bodo na voljo, ko bodo v prihodnosti vstopili na trg dela?'
+            ],
+            'activities' => [
+                'title' => 'V spodnjih učnih načrtih se bodo učenci poučili o inteligentnih napravah na zabaven in vključujoč način.',
+                '1' => 'Umetna inteligenca in nevralne mreže za osnovno šolo',
+                '2' => 'Moj klepetalni robot za covid-19, za nižje letnike srednje šole',
+                '3' => 'Življenje v času »pametnih naprav«: izzivi in priložnosti, za višje letnike srednje šole',
+            ]
+        ],
+
+
+
 
     ],
     'download_video_script' => 'Prenos besedila videoposnetka',

@@ -234,9 +234,22 @@ W proponowanym filmie zespół Tygodnia Kodowania prezentuje kilka praktycznych,
                 "1" => "Człowiek-Sztuczna inteligencja- Sztuka, dla szkoły podstawowej",
                 "2" => "Maszyny samouczące się do klasyfikowania: Wprowadzenie do Nadzorowanego uczenia się maszyn, dla uczniów szkoły ponadpodstawowej pierwszego stopnia",
                 "3" => "Maszyny samouczące się do klasyfikowania: Wprowadzenie do Nadzorowanego uczenia się maszyn, dla uczniów szkoły ponadpodstawowej drugiego stopnia",
-    ]
-],
-
+            ]
+        ],
+        '14' => [
+            'title' => 'Nauczanie w erze inteligentnych maszyn',
+            'author' => 'autorzy: Adil Tugyan, Georgia Lascaris i Marco Neves',
+            'text' => [
+                '1' => 'Rozwój sztucznej inteligencji w ostatnich latach był imponujący dzięki szybkiemu postępowi w mocy obliczeniowej i dostępności dużej ilości danych. Doprowadziło to do znacznych inwestycji w badania nad sztuczną inteligencją i szybkiego rozwoju dziedziny związanej ze sztuczną inteligencją, czyniąc z niej główną rewolucję technologiczną naszych czasów. Sztuczna inteligencja jest wszędzie wokół nas. Stała się ona częścią naszej codziennej rutyny, do tego stopnia, że czasami nie myślimy o niej jako o sztucznej inteligencji: niemal codziennie korzystamy z rekomendacji online, wykrywania twarzy, systemów bezpieczeństwa i asystentów głosowych. A co z edukacją? ',
+                '2' => 'Sztuczna inteligencja charakteryzuje się ogromnym potencjałem umożliwiającym nowe sposoby nauczania i uczenia się oraz poprawiającym uczenie się uczniów. Ten Bit dydaktyczny pomoże Ci w zintegrowaniu autentycznych działań związanych ze sztuczną inteligencją z Twoim nauczaniem i pomoże Ci w przygotowaniu Twoich uczniów do życia i kariery w świecie kształtowanym przez sztuczną inteligencję. Zajęcia te zostały zaprojektowane tak, aby uczniowie rozwijali swoją ciekawość, umiejętność rozwiązywania problemów i kreatywność: na przykład w ćwiczeniu Adila uczniowie poznają algorytmy i sieci neuronowe oraz są zachęcani do tworzenia własnych sieci neuronowych w celu wizualizacji mózgu sztucznej inteligencji. Georgia przeprowadzi Twoich uczniów krok po kroku przez stworzenie chatbota. Uczniowie zbudują własnego chatbota, przygotują zestawy pytań i odpowiedzi oraz wytrenują go tak, aby mógł odpowiadać na pytania dotyczące Covid-19. Podczas zajęć Marco uczniowie będą badać korzyści i wyzwania związane z inteligentnymi maszynami w życiu codziennym i w pracy. Jakie są zagrożenia związane ze sztuczną inteligencją, które musimy wziąć pod uwagę? Jaki wpływ będzie miała sztuczna inteligencja na przyszłość pracy? Jakie miejsca pracy będą oferowane uczniom, gdy w przyszłości wejdą na rynek pracy?'
+            ],
+            'activities' => [
+                'title' => 'W ramach lekcji prowadzonych zgodnie z poniższymi scenariuszami, uczniowie w zabawny i wciągający sposób poznają inteligentne maszyny.',
+                '1' => 'Sztuczna inteligencja i jej sieci neuronowe, dla szkoły podstawowej',
+                '2' => 'Mój Chatbot o Covid-19 , dla uczniów gimnazjum',
+                '3' =>'Życie w epoce „inteligentnych maszyn”: wyzwania i szanse, dla uczniów szkoły ponadpodstawowej',
+            ]
+        ],
 
 
     ],
@@ -244,10 +257,10 @@ W proponowanym filmie zespół Tygodnia Kodowania prezentuje kilka praktycznych,
     'ready_to_share' => 'Czujesz, że jesteś w stanie podzielić się zdobytą wiedzą z uczniami?',
     'choose_lessons' => 'Wybierz jeden z poniższych planów zajęć i zorganizuj zajęcia dla swoich uczniów.',
     'footer' => [
-    'title' => 'Nie zapomnij o zaznaczeniu swojego wydarzenia na mapie Tygodnia Kodowania.',
-    'text' => '<p>Możesz z łatwością zorganizować lekcję w klasie, dzień otwarty lub wydarzenie w swojej szkole. Wybierz tylko datę i dodaj swoje wydarzenie na <a href=" / events">mapie Tygodnia Kodowania</a>. Każdy organizator wydarzenia otrzyma certyfikat uczestnictwa za udział i włożony wysiłek.</p>
+        'title' => 'Nie zapomnij o zaznaczeniu swojego wydarzenia na mapie Tygodnia Kodowania.',
+        'text' => '<p>Możesz z łatwością zorganizować lekcję w klasie, dzień otwarty lub wydarzenie w swojej szkole. Wybierz tylko datę i dodaj swoje wydarzenie na <a href=" / events">mapie Tygodnia Kodowania</a>. Każdy organizator wydarzenia otrzyma certyfikat uczestnictwa za udział i włożony wysiłek.</p>
 
 <p>Jeśli chcesz nawiązać kontakty z międzynarodową grupą nauczycieli – entuzjastów, dołącz do <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupy dla nauczycieli poświęconej Europejskiemu Tygodniowi Kodowania na Facebooku</a>! Aby pójść o krok dalej i nawiązać współpracę z innymi szkołami w twoim kraju lub w całej Europie, podejmij <a href="/codeweek4all">wyzwanie Tygodnia Kodowania dla wszystkich „Code Week 4 All”</a>.</p>'
-]
+    ]
 
 ];

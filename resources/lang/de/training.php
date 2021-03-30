@@ -236,6 +236,21 @@ Mit Python können Ihre Schülerinnen und Schüler u. a. Ratespiele zu historisc
     ]
 ],
 
+        '14' => [
+            'title' => 'Lernen im Zeitalter der intelligenten Maschinen',
+            'author' => 'von Adil Tugyan, Georgia Lascaris und Marco Neves',
+            'text' => [
+                '1' => 'Die Fortschritte der KI in den letzten Jahren waren dank der rasanten Entwicklung bei der Rechenleistung und der Verfügbarkeit großer Datenmengen beeindruckend. Dies hat zu erheblichen Investitionen in die KI-Forschung und einer rasanten Expansion der KI-Industrie geführt und KI zu einer bedeutenden technologischen Revolution unserer Zeit gemacht. KI umgibt uns überall. Sie ist Teil unserer täglichen Lebensabläufe geworden, und zwar in einem Maße, dass wir sie manchmal gar nicht als KI wahrnehmen: Wir nutzen Online-Empfehlungen, Gesichtserkennung, Sicherheitssysteme und Sprachassistenten fast jeden Tag. Doch wie steht es um die Bildung? ',
+                '2' => 'KI hat ein enormes Potenzial, neue Wege des Lehrens und Lernens zu erschließen und das Lernen der Schüler zu verbessern. Dieses Learning Bit unterstützt Sie bei der Integration authentischer KI-Übungen in Ihrem Unterricht und trägt dazu bei, dass Sie Ihre Schüler auf das Leben und die Karriere in einer von KI geprägten Welt vorbereiten. Diese Übungen wurden so konzipiert, dass die Schüler ihre Neugier, Problemlösungs- und Kreativitätsfähigkeiten entwickeln können: In Adils Übung lernen die Schüler beispielsweise etwas über Algorithmen und neuronale Netzwerke und werden dazu angeregt, ihr eigenes neuronales Netzwerk zu erstellen, um ein KI-Gehirn zu visualisieren. Georgia wird Ihre Schüler Schritt für Schritt zur Entwicklung eines Chatbots anleiten. Die Schüler entwickeln ihren eigenen Chatbot, bereiten Datensätze mit Fragen und Antworten vor und trainieren ihn so, dass er Fragen zu Covid-19 beantworten kann. In Marcos Übung werden die Schüler die Vorteile und Herausforderungen intelligenter Maschinen im Alltag und bei der Arbeit erkunden. Was sind die Risiken von KI, die wir berücksichtigen müssen? Welche Auswirkungen wird KI auf die Zukunft der Arbeit haben? Welche Jobs werden ihnen angeboten, wenn sie in Zukunft ins Berufsleben einsteigen?'
+            ],
+            'activities' => [
+                'title' => 'In den folgenden Unterrichtseinheiten lernen die Schüler auf unterhaltsame und spannende Weise mehr über intelligente Maschinen.',
+                '1' => 'KI und ihre neuronalen Netze, für die Grundschule',
+                '2' => 'Mein Covid-19-Chatbot, für die Sekundarstufe I',
+                '3' => 'Leben im Zeitalter von „intelligenten Maschinen”: Herausforderungen und Chancen, für die Sekundarstufe II',
+            ]
+        ],
+
     ],
     'download_video_script' => 'Das Video-Script herunterladen',
     'ready_to_share' => 'Möchten Sie Ihre Erfahrungen mit Ihren Schülerinnen und Schülern teilen?',
