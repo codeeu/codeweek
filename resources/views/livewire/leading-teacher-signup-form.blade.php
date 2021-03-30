@@ -68,6 +68,9 @@
                         @endforeach
                     </select>
                 </div>
+                <div class="info">
+                    To select more than one answer, please press Ctrl and your choices
+                </div>
                 <div class="errors">
                     @component('components.validation-errors', ['field'=>'selectedLevels'])@endcomponent
                 </div>
@@ -82,6 +85,9 @@
                         @endforeach
                     </select>
                 </div>
+                <div class="info">
+                    To select more than one answer, please press Ctrl and your choices
+                </div>
                 <div class="errors">
                     @component('components.validation-errors', ['field'=>'selectedSubjects'])@endcomponent
                 </div>
@@ -95,6 +101,9 @@
                             <option value="{{$expertise['id']}}">{{$expertise['name']}}</option>
                         @endforeach
                     </select>
+                </div>
+                <div class="info">
+                    To select more than one answer, please press Ctrl and your choices
                 </div>
                 <div class="errors">
                     @component('components.validation-errors', ['field'=>'selectedExpertises'])@endcomponent

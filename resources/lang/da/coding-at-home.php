@@ -263,6 +263,68 @@ return [
 
 ],
 
+    'colour-everything' => [
+        'title' => "Farvelæg alt",
+        'text' => "Kan vi styre robotterne rundt på brættet på en sådan måde, at de laver en tegning med deres spor? I denne aktivitet leger vi med kodning og pixelkunst, som går ud på at skabe billeder ved at farvelægge felterne på et ternet bræt, som pixel på en skærm.",
+        'material' => "CodyRoby-kort, et ternet bræt og en brik. Anbring papirstykker på felterne, eller farvelæg dem med tuscher.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Er det muligt at tegne de to hjerter som i videoens sidste del ved at styre robotten gennem alle de nødvendige felter uden nogensinde at passere et felt to gange?",
+                ]
+
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => "CodyPlotter og CodyPrinter",
+        'text' => "Hvad er forskellen på en plotter og en printer? Få svaret ved at spille dette kodningspil uden brug af computer.",
+        'material' => "ud over CodyRoby-sættet brugte jeg en grøn tusch og en ny robot i modellervoks, men det er valgfrit.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Kan du forklare forskellen på en plotter og en printer?",
+                    2 => "Hvilket design ville RobyPrinter skabe ved at bevæge sig langs linjerne på brættet, hvis den udførte den sekvens af instrukser, som den modtog i slutningen af videoen?",
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => "Kedelige pixel!/Brug af tal",
+        'text' => "Ved at give Roby instrukser til at danne et billede felt for felt, pixel for pixel, opdager vi, at når mange felter i en række har samme farve, kan vi gøre det mere spændende ved at bruge tal. Det gør computere...",
+        'material' => "en notesblok med ternet papir eller et 5 x 5 ternet bræt på et stykke papir og en filtpen. Du kan bruge pen og papir til at gengive koden bag tegningen.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Prøv at lave et ternet design og gengive det med RLE-kodning. Designets størrelse er lig med antallet af felter, men hvilken størrelse har dets RLE-gengivelse?"
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+        'title' => "Sådan bruger vi kodning til at skabe billeder",
+        'text' => [
+            1 => "Vi har nu set, hvordan vi kan skrive en kode, som vi kan bruge til at skabe et billede. Jeg har tænkt på en tegning og brugt kode til at omdanne den til bogstaver og tal, som jeg har givet dig. Notér dig bogstaverne og tallene og brug koden til at genskabe tegningen.",
+            2 => "Her er det billede, som jeg tænkte på – bring det frem det på din notesblok og på notesblokkene hos alle dem, der kender koden!"
+        ],
+        'material' => "papir (helst ternet) og en pen.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Prøv at afkode og tegne de billeder, som jeg nævner i slutningen af videoen.'
+                ]
+
+        ]
+
+    ],
+
+
+
 
 
     'texts' => [

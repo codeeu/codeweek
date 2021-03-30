@@ -262,6 +262,67 @@ return [
 
     ],
 
+    'colour-everything' => [
+        'title' => 'Lekker kleuren',
+        'text' => 'Kunnen we de robots zo over het bord laten lopen dat zij een tekening maken? Bij deze activiteit programmeren we pixel art, zeg maar afbeeldingen die uit blokjes bestaan, door vakjes van het bord in te kleuren, net als pixels op een scherm.',
+        'material' => 'CodyRoby-kaarten, een geruit bord en een pion. Om de vakjes in te kleuren, leg je er een stukje gekleurd papier op, of je kleurt ze met een stift natuurlijk.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Kun je de twee hartjes aan het eind van de video tekenen door de robot langs alle nodige vakjes te sturen, zonder twee keer op hetzelfde vakje te komen?',
+                ]
+
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => 'CodyPlotter en CodyPrinter',
+        'text' => 'Wat is het verschil tussen een plotter en een printer? Dat ontdek je al spelend met dit programmeerspel, zonder dat je een computer nodig hebt!',
+        'material' => 'naast de CodyRoby-set, heb ik een groene stift gebruikt, en van klei een robot gemaakt, maar zonder gaat het ook.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Leg uit, wat is het verschil tussen een plotter en een printer?',
+                    2 => 'Wat voor tekening zou de RobyPrinter maken als hij de lijnen op het bord zou volgen volgens de commando’s aan het eind van de video?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => 'Saaie pixels!/Met nummers',
+        'text' => 'Als we Roby instructies geven om een vakje voor vakje, pixel voor pixel, een tekening te maken, ontdekken we dat we het een stuk interessanter kunnen maken door cijfers te gebruiken voor rijen waarin veel vakjes dezelfde kleur hebben. Computers doen precies hetzelfde...',
+        'material' => 'geruit papier, of een tekening van een vierkant bestaande uit 5 × 5 vierkantjes, en een viltstift. Om de tekening te programmeren, kun je pen en papier gebruiken.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Probeer een tekening van vierkantjes te maken, en programmeer dat met RLE. De tekening telt een aantal vakjes, maar in hoeveel stappen kun je dat programmeren als je RLE toepast?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+        'title' => 'Van code naar tekening',
+        'text' => [
+            1 => 'We hebben nu gezien dat we een tekening kunnen programmeren, vastleggen in code. Ik heb een tekening bedacht, en die omgezet in letters en cijfers, en die heb ik je gegeven. Bekijk nu de cijfers en letters, ontleed de code, en probeer mijn tekening na te maken.',
+            2 => 'Ik zal je de tekening laten zien, maar als je de code kunt ontleden kun je hem natuurlijk zelf op papier laten verschijnen!'
+],
+        'material' => 'papier (liefst geruit) en een pen.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Probeer de code te ontcijferen en maak zelf de tekening na die ik aan het eind van de video laat zien.'
+                ]
+
+        ]
+
+    ],
+
+
 
 
 

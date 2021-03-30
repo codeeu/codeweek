@@ -248,21 +248,80 @@ return [
     ],
 
     'follow-the-music' => [
-    'title' => "“Ndiq muzikën”",
-    'text' => "Kur sekuencat e udhëzimeve të programimit përsëriten periodikisht, është njësoj si të kishin një ritëm. Nëse e shoqërojmë një tingull me secilin udhëzim, mund ta udhëzojmë robotin Roby me muzikë. Kjo është pikërisht ajo që do të bëjmë këtë herë. Do të krijoj një program për ty duke përdorur tinguj të ndryshëm që përfaqësojnë udhëzime të ndryshme, dhe do ta lëvizësh robotin Roby nëpër fushë duke ndjekur këto udhëzime të bazuara te tingujt.",
-    'material' => "Përveç kartave të CodyRoby, fushës me kuadrate dhe ushtarëve, na duhen tre tinguj të ndryshëm. Unë përdora tri gota të mbushura me sasi të ndryshme uji, po ti çfarë do të përdorësh?",
-    'questions' => [
-        'content' =>
-            [
-                1 => "Q1. Provo të ndjekësh videon dhe orientohu nga tingujt që prodhojnë gotat, pa parë te kartat. A mund t’i dallosh dhe ekzekutosh udhëzimet e krijuara nga tingujt?",
-                2 => "Q2. Zgjidh tre tinguj për t’i shoqëruar me tre udhëzime bazë. Krijo një sekuencë tingujsh që mund ta përsërisje pafundësisht pa e nxjerrë asnjëherë robotin Roby jashtë fushës...",
+        'title' => "“Ndiq muzikën”",
+        'text' => "Kur sekuencat e udhëzimeve të programimit përsëriten periodikisht, është njësoj si të kishin një ritëm. Nëse e shoqërojmë një tingull me secilin udhëzim, mund ta udhëzojmë robotin Roby me muzikë. Kjo është pikërisht ajo që do të bëjmë këtë herë. Do të krijoj një program për ty duke përdorur tinguj të ndryshëm që përfaqësojnë udhëzime të ndryshme, dhe do ta lëvizësh robotin Roby nëpër fushë duke ndjekur këto udhëzime të bazuara te tingujt.",
+        'material' => "Përveç kartave të CodyRoby, fushës me kuadrate dhe ushtarëve, na duhen tre tinguj të ndryshëm. Unë përdora tri gota të mbushura me sasi të ndryshme uji, po ti çfarë do të përdorësh?",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Q1. Provo të ndjekësh videon dhe orientohu nga tingujt që prodhojnë gotat, pa parë te kartat. A mund t’i dallosh dhe ekzekutosh udhëzimet e krijuara nga tingujt?",
+                    2 => "Q2. Zgjidh tre tinguj për t’i shoqëruar me tre udhëzime bazë. Krijo një sekuencë tingujsh që mund ta përsërisje pafundësisht pa e nxjerrë asnjëherë robotin Roby jashtë fushës...",
+                ]
+
+        ],
+
+        'colour-everything' => [
+            'title' => 'Ngjyros gjithçka',
+            'text' => 'A mund t’i drejtojmë robotët rreth fushës në mënyrë të tillë që të bëjnë një vizatim me gjurmët e tyre? Në këtë aktivitet, ne luajmë me kodimin dhe artin me pikselë, që është formimi i imazheve në kuti në një fushë me kuadrate, si pikselët në një ekran.',
+            'material' => 'Kartat e CodyRoby, një fushë me kuadrate dhe një ushtar. Për të ngjyrosur kutitë përdorni copa letre për t’i vendosur në kuti, ose ngjyrosni kutitë me kolor.',
+            'questions' => [
+                'content' =>
+                    [
+                        1 => 'A është e mundur që të vizatohen dy zemrat si në pjesën përfundimtare të videos duke udhëzuar robotin në të gjitha kutitë e nevojshme pa kaluar dy herë në një kuti?',
+                    ]
+
             ]
 
-    ]
+        ],
 
-],
+        'codyplotter-and-codyprinter' => [
+            'title' => 'CodyPlotter dhe CodyPrinter',
+            'text' => 'Çfarë ndryshimi ka mes një “plotteri” dhe një “printeri”? Zbuloje këtë duke luajtur këtë aktivitet kodimi jashtë linje.',
+            'material' => 'përveç setit të CodyRoby, unë përdora një kolor të gjelbër dhe një robot të ri prej plasteline, por kjo është opsionale.',
+            'questions' => [
+                'content' =>
+                    [
+                        1 => 'A mund të shpjegosh ndryshimin mes një “plotter” dhe një “printer”?',
+                        2 => 'Çfarë dizajni do të prodhonte RobyPrinter duke lëvizur nëpër vijat në fushë, nëse do të ekzekutonte sekuencën e komandave të diktuara në fund të videos?',
+                    ]
+
+            ]
+
+        ],
+
+        'boring-pixels' => [
+            'title' => 'Pikselët e mërzitshëm!/Duke përdorur numrat',
+            'text' => 'Duke i dhënë Roby udhëzime të formojë një figurë kuadrat pas kuadrati, piksel pas pikseli, ne zbulojmë se kur shumë kuadrate me radhë kanë të njëjtën ngjyrë, mund t’i përdorim numrat për ta bërë atë më interesante. Kompjuterët bëjnë të njëjtën gjë...',
+            'material' => 'fletore me katrore ose fushë me kuadrate 5 × 5 e vizatuar në një fletë letre, kolor. Për të paraqitur kodin e vizatimit mund të përdorni stilolaps dhe letër.',
+            'questions' => [
+                'content' =>
+                    [
+                        1 => 'Provoni të bëni një dizajn me kuadrate dhe ta paraqisni atë me një kodim RLE. Madhësia e dizajnit është e barabartë me numrin e kuadrateve, por cila është madhësia e përfaqësimit të tij të RLE?'
+                    ]
+
+            ]
+
+        ],
+
+        'turning-code-into-pictures' => [
+            'title' => 'Kthejmë kodin në figura',
+            'text' => [
+                1 => 'Tani kemi parë se mund të krijojmë një kod që na lejon të vizatojmë një figurë. Kam menduar një vizatim dhe kam përdorur kodin për ta kthyer në shkronjat dhe numrat të cilat t’i kam dhënë. Ki parasysh shkronjat dhe numrat dhe përdor kodin për të rindërtuar vizatimin.',
+                2 => 'Ja imazhi që kisha menduar, bëje që të shfaqet në fletoren tënde dhe në fletoret e atyre që e dinë kodin!'
+            ],
+            'material' => 'letër (preferohet me katrore) dhe një stilolaps.',
+            'questions' => [
+                'content' =>
+                    [
+                        1 => 'Provo të dekodosh dhe vizatosh imazhet që përmenda në fund të videos.'
+                    ]
+
+            ]
+
+        ],
 
 
+    ],
 
 
     'texts' => [

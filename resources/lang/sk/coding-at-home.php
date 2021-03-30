@@ -262,6 +262,66 @@ return [
 
     ],
 
+    'colour-everything' => [
+        'title' => 'Všetko vyfarbite',
+        'text' => 'Možno viesť robotov okolo plochy tak, aby svojimi stopami vytvorili kresbu? Pri tejto aktivite sa hráme s umením programovania a pixelov, pri ktorom sa vytvárajú obrázky prostredníctvom vyfarbovania políčok štvorčekovej plochy tak, ako v prípade pixelov na obrazovke.',
+        'material' => 'Karty CodyRoby, štvorčeková plocha a figúrka. Na vyfarbovanie políčok použite kúsky papiera, ktoré umiestnite na políčka, alebo políčka vyfarbite fixkami.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Dajú sa nakresliť dve srdcia tak, ako je to v záverečnej časti videa, navádzaním robota na všetky potrebné políčka bez toho, aby po jednom políčku prešiel dvakrát?',
+                ]
+
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => 'CodyPlotter a CodyPrinter',
+        'text' => 'Aký je rozdiel medzi ploterom a tlačiarňou? Zistite to tak, že si zahráte túto nesoftvérovú programovaciu hru.',
+        'material' => 'okrem súpravy CodyRoby som použil zelenú fixku a nového robota z modelovacej hliny, ale to nie je povinné.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Viete vysvetliť rozdiel medzi ploterom a tlačiarňou?',
+                    2 => 'Aký dizajn by RobyPrinter vytvoril pohybom po čiarach plochy, ak by vykonal sekvenciu príkazov uvedených na konci videa?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => 'Nudné pixely!/Používanie čísel',
+        'text' => 'Keď dávame Robymu pokyny vytvoriť obrázok štvorček po štvorčeku, pixel po pixli, zistíme, že ak má veľa štvorčekov v rade rovnakú farbu, môžeme použiť čísla, aby to bolo zaujímavejšie. Počítače robia to isté…',
+        'material' => 'zápisník so štvorčekovým papierom alebo štvorčeková plocha 5 × 5 nakreslená na kúsku papiera, fixka. Na znázornenie kódu kresby môžete použiť pero a papier.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Skúste vytvoriť štvorčekový dizajn a vyjadriť ho metódou RLE kódovania. Veľkosť dizajnu sa rovná počtu štvorčekov, ale aká je veľkosť jeho zobrazenia metódou RLE?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+        'title' => 'Premena kódu na obrázky',
+        'text' => [
+            1 => 'Videli sme, že možno vytvoriť kód, ktorý nám umožní nakresliť obrázok. Predstavil som si kresbu a použil som kód, aby som ju premenil na písmená a čísla, ktoré som vám dal. Zaznamenajte si písmená a čísla a použite kód na rekonštrukciu kresby.',
+            2 => 'Tu je obrázok, ktorý som si predstavoval. Možno ho zobraziť vo vašom zápisníku a v zápisníkoch všetkých, ktorí poznajú kód!'
+        ],
+        'material' => 'papier (najlepšie štvorčekový) a pero.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Pokúste sa o dekódovanie a nakreslite obrázky, ktoré uvediem na konci videa.'
+                ]
+
+        ]
+
+    ],
+
 
     'texts' => [
         1 => 'Coding@Home je zbierka krátkych videí obsahujúcich materiály typu „urob si sám“, hlavolamy, pútavé hry a programátorské úlohy na každodenné použitie doma či v škole. Na vykonávanie aktivít nepotrebujete žiadne znalosti v oblasti programovania ani elektronické zariadenia. Tieto aktivity stimulujú výpočtové myslenie a cibria zručnosti žiakov, rodičov a učiteľov doma aj v škole.',
