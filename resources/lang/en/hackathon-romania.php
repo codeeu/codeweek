@@ -58,6 +58,11 @@ return [
                 "The idea of the EU Code Week Hackathon is to show how concrete solutions come to life with the help of young people’s creativity, enthusiasm, fresh ideas and coding skills. ‘Concrete’ means solving real problems – things that affect you, your school, community, city or specific challenges in your area.",
                 "Based on public voting, the challenge for the Romanian Hackathon is:",
                 "Based on public voting, the challenge for the Romanian Hackathon was:"
+            ],
+            "challenges" => [
+                "Fighting false news",
+                "Get moving",
+                "Cleaner air in the city"
             ]
         ],
         7 => [
