@@ -251,18 +251,76 @@ return [
         'title' => "Seuraa säveltä",
         'text' => "Kun ohjelman sisältämät ohjeet toistuvat samanlaisina tietyissä jaksoissa, niillä on eräänlainen rytmi. Jos yhdistämme ohjeisiin eri äänet, voimme ohjata Robya sävelin. Siitä tässä pelissä on kyse. Kirjoitan ohjelman käyttäen ääniä, jotka edustavat eri ohjeita, ja sinä liikutat Robya pelilaudalla näitä ohjeita kuunnellen.",
         'material' => "CodyRoby-korttien, pelilaudan ja pelinappulan lisäksi tarvitaan jokin keino tuottaa kolme erilaista ääntä. Minä käytin kolmea lasia, joissa on eri määrä vettä, mutta sinä voit keksiä jonkin muun äänenlähteen.",
- 'questions' => [
- 'content' =>
-            [
- 1 => "Kysymys 1: Yritä seurata videolla kuulemiasi ohjeita, jotka annetaan vesilasien helähdyksinä, ilman, että katsot kortteja. Tunnistatko äänten avulla annetut ohjeet ja pystytkö seuraamaan niitä?",
- 2 => "Kysymys 2: Valitse kolme eri ääntä, jotka yhdistät perusohjeisiin. Keksi sellainen ohjeyhdistelmä, jota voisit äänten avulla toistaa loputtomiin ilman, että Roby joutuisi ulos pelilaudalta.",
- ]
+        'questions' => [
+            'content' =>
+                [
+                    1 => "Kysymys 1: Yritä seurata videolla kuulemiasi ohjeita, jotka annetaan vesilasien helähdyksinä, ilman, että katsot kortteja. Tunnistatko äänten avulla annetut ohjeet ja pystytkö seuraamaan niitä?",
+                    2 => "Kysymys 2: Valitse kolme eri ääntä, jotka yhdistät perusohjeisiin. Keksi sellainen ohjeyhdistelmä, jota voisit äänten avulla toistaa loputtomiin ilman, että Roby joutuisi ulos pelilaudalta.",
+                ]
 
-    ]
+        ]
 
-],
+    ],
 
+    'colour-everything' => [
+        'title' => 'Väritä koko kuvio',
+        'text' => 'Voiko robotin ohjelmoida liikkumaan alustalla niin, että sen jäljet tekevät piirroksen? Tässä tehtävässä tehdään taidetta koodaamalla "pikseleitä". Tavoitteena on värittää alustan ruutuja niin, että ne muodostavat kuvan kuten pikselit näyttöruudulla.',
+        'material' => 'CodyRoby-kortit, ruudullinen alusta ja pelinappula. Merkitse värilliset ruudut joko paperinpaloilla tai tussivärillä.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Onko mahdollista ohjelmoida robotti liikkumaan alustalla ruudusta toiseen niin, että se piirtää videon loppuosassa näkyvät kaksi sydäntä käymättä yhdessäkään ruudussa kahta kertaa?',
+                ]
 
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => 'CodyPlotter ja CodyPrinter',
+        'text' => 'Mikä ero on plotterilla ja printterillä? Saat vastauksen, kun teet tämän koodausharjoituksen (tietokonetta ei tarvita).',
+        'material' => 'CodyRoby-tarvikkeiden lisäksi käytin vihreää tussia ja muovailuvaharobottia, mutta ne eivät ole välttämättömiä.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Osaatko selittää, mikä ero on plotterilla ja printterillä?',
+                    2 => 'Minkä kuvion RobyPrinter piirtäisi alustalle, jos se suorittaisi videon lopussa luetun komentosarjan?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => '"Tylsät pikselisarjat" – Numeroiden käyttö koodauksessa',
+        'text' => 'Kun robotti ohjelmoidaan piirtämään kuva niin, että se värittää ruutuja ("pikseleitä"), ja kun peräkkäin on useita samanvärisiä ruutuja, voidaan käyttää numeroita. Niin tietokoneetkin tekevät.',
+        'material' => 'ruutupaperilehtiö tai paperille piirretty ruudukko (5 × 5), huopakynä. Kirjoita piirrosta kuvaava koodi kynällä paperille.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Yritä tuottaa ruutukuvio ja koodaa se käyttämällä jakson pituuden koodausta (RLE). Ruutujen määrä ilmaisee kuvan koon, mutta kuinka pitkä koodijonosta tulee, kun käytetään jakson pituuden koodausta?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+        'title' => 'Koodista kuvaksi',
+        'text' => [
+            1 => 'Olemme nyt nähneet, miten kirjoitetaan koodi kuvan piirtämistä varten. Ajattelin tiettyä kuviota ja esitin sen kirjain- ja numerokoodina, jonka kerroin teille. Kirjoita kirjaimet ja numerot muistiin, ja piirrä kuvio koodin mukaisesti.',
+            2 => 'Mielessäni oli tämä kuvio. Piirrä se koodin mukaisesti lehtiöösi.'
+        ],
+        'material' => 'paperia (mielellään ruutupaperia) ja kynä.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Yritä piirtää kuvat purkamalla koodi, jonka luen videon lopussa.'
+                ]
+
+        ]
+
+    ],
 
 
 
