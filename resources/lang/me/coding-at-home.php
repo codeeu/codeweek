@@ -236,31 +236,91 @@ return [
     'meeting-point' => [
         'title' => "Tačka sastajanja",
         'text' => 'Tako planiramo svoje poteze prije nego što započnemo. Dvije ekipe stavljaju kartice na sto da bi napravile redoslijed uputstava kojima će premjestiti svoje robote, ali ništa se ne pomjera sve dok jedan od igrača ne kaže "Start!". U tom momentu završava programiranje i počinje akcija. Igrač koji bi rekao “Start!” pobjeđuje samo ako dva robota, svaki izvršavajući uputstva svog tima, završe na istom kvadratu.',
-    'material' => "CodyRoby kartice, tabla sa kvadratima 5 × 5, dva pijuna.",
-    'questions' => [
-    'content' =>
-        [
-            1 => "P1. Ako mislite da je moguće da se dva robota nikada ne sretnu, izmislite pravila igre koja pokrivaju sve moguće situacije.",
+        'material' => "CodyRoby kartice, tabla sa kvadratima 5 × 5, dva pijuna.",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Ako mislite da je moguće da se dva robota nikada ne sretnu, izmislite pravila igre koja pokrivaju sve moguće situacije.",
+                ]
+
         ]
 
-]
+    ],
 
-],
+    'follow-the-music' => [
+        'title' => "Slijedite muziku",
+        'text' => "Kada se sekvence programskih uputstava periodično ponavljaju, to je kao da imaju ritam. Ako uz svako uputstvo pridružimo zvuk, možemo Robyja voditi uz muziku. Upravo to ćemo učiniti ovaj put. Ja ću za vas napraviti program koji će koristiti različite zvukove za predstavljanje različitih uputstava, a vi ćete Robyja kretati po tabli slijedeći ova uputstva bazirana na zvuku.",
+        'material' => "pored CodyRoby kartica, table sa kvadratima i pijuna, trebamo proizvesti tri različita zvuka. Ja sam koristio tri čaše napunjene različitim količinama vode, šta ćete vi koristiti?",
+        'questions' => [
+            'content' =>
+                [
+                    1 => "P1. Pokušajte da pratite video i da se vodite zvukovima koje proizvode čaše, bez gledanja u kartice. Možete li prepoznati i izvršiti uputstva napravljena zvukom?",
+                    2 => "P2. Odaberite tri zvuka koja ćete povezati sa tri osnovna uputstva. Smislite niz zvukova koje biste mogli beskrajno ponavljati, a da Robyja nikada ne odvedete sa table...",
+                ]
 
-'follow-the-music' => [
-    'title' => "Slijedite muziku",
-    'text' => "Kada se sekvence programskih uputstava periodično ponavljaju, to je kao da imaju ritam. Ako uz svako uputstvo pridružimo zvuk, možemo Robyja voditi uz muziku. Upravo to ćemo učiniti ovaj put. Ja ću za vas napraviti program koji će koristiti različite zvukove za predstavljanje različitih uputstava, a vi ćete Robyja kretati po tabli slijedeći ova uputstva bazirana na zvuku.",
-    'material' => "pored CodyRoby kartica, table sa kvadratima i pijuna, trebamo proizvesti tri različita zvuka. Ja sam koristio tri čaše napunjene različitim količinama vode, šta ćete vi koristiti?",
-    'questions' => [
-        'content' =>
-            [
-                1 => "P1. Pokušajte da pratite video i da se vodite zvukovima koje proizvode čaše, bez gledanja u kartice. Možete li prepoznati i izvršiti uputstva napravljena zvukom?",
-                2 => "P2. Odaberite tri zvuka koja ćete povezati sa tri osnovna uputstva. Smislite niz zvukova koje biste mogli beskrajno ponavljati, a da Robyja nikada ne odvedete sa table...",
-            ]
+        ]
 
-    ]
+    ],
 
-],
+    'colour-everything' => [
+        'title' => 'Obojite sve',
+        'text' => 'Možemo li da vodimo robote oko table na takav način da pomoću njihovih tragova napravimo crtež? U ovoj aktivnosti igramo se sa kodiranjem i umjetnošću piksela, koja formira slike bojenjem okviraa na kariranoj tabli, poput piksela na ekranu.',
+        'material' => 'CodyRoby kartice, karirana tabla i pion. Za bojenje polja koristite komade papira za postavljanje na okvire ili obojite okvire markerima.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Da li je moguće nacrtati dva srca kao u završnom dijelu video snimka vođenjem robota po svim potrebnim poljima a da nikada dva puta ne prođete po okviru?',
+                ]
+
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => 'CodyPlotter i CodyPrinter',
+        'text' => 'Koja je razlika između plotera i štampača? Saznajte igrajući ovu isključenu kodiranu aktivnost.',
+        'material' => 'pored kompleta CodiRobi, koristio sam zeleni marker i novog robota za modeliranje gline, ali ovo nije obavezno.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Možete li da objasnite razliku između plotera i štampača?',
+                    2 => 'Kakav dizajn bi RobiPrinter proizveo kretanjem duž linija na tabli, ako bi izvršio redosled naredbi diktiranih na kraju video snimka?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => 'Dosadni pikseli/korišćenje brojeva',
+        'text' => 'Davanjem Roby uputstava za formiranje slike kvadrat po kvadrat, piksel po piksel, otkrivamo da kada mnogi kvadrati u nizu imaju istu boju, možemo da koristimo brojeve da bismo ih učinili zanimljivijim. Računari rade isto to...',
+        'material' => 'kvadratna bilježnica ili karirana tabla 5 × 5 nacrtana na parčetu papira, flomaster. Za predstavljanje koda crteža možete koristiti olovku i papir.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Probajte da napravite karirani dizajn i da ga predstavite pomoću RLE kodiranja. Veličina dizajna jednaka je broju kvadrata, ali koja je veličina RLE reprezentacije?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+        'title' => 'Pretvaranje koda u slike',
+        'text' => [
+            1 => 'Sada smo vidjeli da možemo da kreiramo kôd koji nam omogućava da nacrtamo sliku. Zamislio sam crtež i koristio sam kôd da bih ga pretvorio u slova i brojeve, koje sam vam dao. Zabilježite slova i brojeve i pomoću koda rekonstruišite crtež.',
+            2 => 'Evo slike na koju sam mislio, neka se pojavi u vašoj bilježnici i u bilježnicama svih onih koji znaju kôd!'
+        ],
+        'material' => 'papir (poželjno je da bude na kvadrate) i olovka.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Pokušajte da dekodirate i nacrtate slike koje pominjem na kraju video snimka.'
+                ]
+
+        ]
+
+    ],
 
 
     'texts' => [

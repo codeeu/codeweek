@@ -262,6 +262,67 @@ return [
 
     ],
 
+    'colour-everything' => [
+        'title' => 'Bojenje svega',
+        'text' => 'Možemo li da vodimo robote po tabli tako da njihovi tragovi proizvedu nekakav crtež? Tokom ove aktivnosti, poigraćemo se programiranjem i piksel artom, odnosno pravićemo slike bojenjem polja na tabli, kao da su pikseli na ekranu',
+        'material' => 'CodyRoby karte, izdeljena tabla i figura. Za bojenje polja iskoristite papiriće koje ćete postavljati na njih ili obojite polja markerima.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Da li je moguće nacrtati dva srca sa kraja videa vođenjem robota preko svakog potrebnog polja, ali tako da se ni kroz jedno polje ne prođe dvaput?',
+                ]
+
+        ]
+
+    ],
+
+    'codyplotter-and-codyprinter' => [
+        'title' => 'CodyPloter i CodyŠtampač',
+        'text' => 'U čemu je razlika između plotera i štampača? Saznajte kroz aktivnosti u ovoj analognoj igri programiranja.',
+        'material' => 'pored seta CodyRoby, koristio sam zeleni marker i novi robot od plastelina, ali to je opcionalno.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Možete li da objasnite razliku između plotera i štampača?',
+                    2 => 'Kakav oblik bi RobyŠtampač proizveo kretanjem po redovima na tabli ako bi izvršio skup komandi koje su mu izdiktirane na kraju video?',
+                ]
+
+        ]
+
+    ],
+
+    'boring-pixels' => [
+        'title' => 'Dosadni pikseli!/Korišćenje brojeva',
+        'text' => 'Kada Robyju dajemo naredbe da napravi sliku polje po polje, tj. piksel po piksel, vidimo da u slučajevima kada više polja u jednom redu ima istu boju, možemo da koristimo brojeve da bilo zanimljivije. Računari rade isto to...',
+        'material' => 'sveska na kvadratiće ili tabla sa 5×5 polja koju ste nacrtali na papiru i flomaster. Za prikaz koda ili crteža možete da koristite olovku i papir.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Pokušajte da napravite  oblik sa kvadratićima i prikažite ga u RLE kompresiji. Veličina oblika jednaka je broju polja, ali koja je veličina njegovog prikaza u RLE kompresiji?'
+                ]
+
+        ]
+
+    ],
+
+    'turning-code-into-pictures' => [
+        'title' => 'Pretvaranje koda u slike',
+        'text' => [
+            1 => 'Sada smo videli da možemo da napravimo kod koji će nam omogućiti da nacrtamo sliku. Smislio sam jedan crtež i iskoristio sam kod da ga pretvorim u slova i brojeve koje sam vam dao. Obratite pažnju na slova i brojeve i rekonstruišite crtež na osnovu koda.',
+            2 => 'Ovo je slika koju sam imao na umu; neka se ona pojavi u vašoj svesci i u sveskama svih onih koji razumeju kod!'
+        ],
+        'material' => 'papir (poželjno na kvadratiće) i olovka.',
+        'questions' => [
+            'content' =>
+                [
+                    1 => 'Pokušajte da dešifrujete kod i nacrtate slike koje pominjem na kraju videa.'
+                ]
+
+        ]
+
+    ],
+
+
 
 
 
