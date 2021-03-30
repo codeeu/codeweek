@@ -236,6 +236,21 @@ Met Python kunnen leerlingen quizzen maken over historische gebeurtenissen, wisk
             ]
         ],
 
+        '14' => [
+            'title' => 'Leren in het tijdperk van intelligente machines',
+            'author' => 'door Adil Tugyan, Georgia Lascaris en Marco Neves',
+            'text' => [
+                '1' => 'De vooruitgang van AI in de afgelopen jaren is indrukwekkend geweest dankzij de snelle vooruitgang in rekenkracht en de beschikbaarheid van grote hoeveelheden gegevens. Dit heeft geleid tot aanzienlijke investeringen in AI-onderzoek en een snelle uitbreiding van de AI-sector, waardoor AI een belangrijke technologische revolutie van onze tijd is geworden. AI is overal om ons heen. Het is een deel van onze dagelijkse routine geworden, zozeer zelfs dat we er soms niet aan denken dat het AI is: we gebruiken bijna elke dag online-aanbevelingen, gezichtsherkenning, beveiligingssystemen en spraakassistenten. Maar hoe zit het met onderwijs? ',
+                '2' => "AI heeft een enorm potentieel om nieuwe manieren van onderwijs en leren mogelijk te maken en het leren van leerlingen te verbeteren. Deze Learning Bit zal je helpen authentieke AI-activiteiten in je lessen te integreren en je helpen om je leerlingen voor te bereiden op een leven en een carrière in een wereld die wordt vormgegeven door AI. Deze activiteiten zijn zodanig opgezet, dat de leerlingen hun nieuwsgierigheid, probleemoplossend vermogen en creativiteit kunnen ontwikkelen: in de activiteit van Adil bijvoorbeeld, leren de leerlingen over algoritmen en neurale netwerken en worden ze aangemoedigd hun eigen neurale netwerk te creëren om een AI-brein te visualiseren. Georgia begeleidt je leerlingen door de stap-voor-stap-ontwikkeling van een chatbot. Leerlingen bouwen hun eigen chatbot, bereiden datasets met vragen en antwoorden voor en trainen hem, zodat hij vragen over Covid-19 kan beantwoorden. In de activiteit van Marco onderzoeken de leerlingen de voordelen en uitdagingen van intelligente machines in het leven en werk van alledag. Wat zijn de risico's van AI waarmee we rekening moeten houden? Welke gevolgen heeft AI voor de toekomst van de werkgelegenheid? Welke banen worden hen aangeboden wanneer zij in de toekomst de arbeidsmarkt betreden?"
+            ],
+            'activities' => [
+                'title' => 'In de onderstaande lesplannen leren leerlingen op een leuke en boeiende manier over intelligente machines.',
+                '1' => 'AI en zijn neurale netwerken, voor de basisschool',
+                '2' => 'Mijn Covid-19-chatbot, voor de onderbouw van het middelbare onderwijs',
+                '3' => 'Leven in het tijdperk van "slimme machines””: Uitdagingen en kansen voor de bovenbouw van het middelbaar onderwijs',
+            ]
+        ],
+
 
     ],
     'download_video_script' => 'Het videoscript downloaden',

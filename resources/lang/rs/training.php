@@ -239,6 +239,21 @@ Pomoću Pythona učenici mogu da prave kvizove o istorijskim događajima, da re�
             ]
         ],
 
+        '14' => [
+            'title' => 'Učenje u doba inteligentnih mašina',
+            'author' => 'od autora: Adil Tugijan, Džordžija Laskaris i Marko Neves',
+            'text' => [
+                '1' => 'Napredak VI poslednjih godina je impresivan zahvaljujući brzom rastu računarske moći i dostupnosti velike količine podataka. To je dovelo do značajnih ulaganja u istraživanje VI i brzog širenja industrije VI, čineći VI velikom tehnološkom revolucijom našeg doba. VI je svuda oko nas. Ona je postala deo naše svakodnevne rutine, toliko da ponekad o njoj ne razmišljamo kao o VI: gotovo svakodnevno koristimo online preporuke, otkrivanje lica, sigurnosne sisteme i glasovne asistente. Ali šta je sa obrazovanjem? ',
+                '2' => 'VI ima ogroman potencijal u omogućavanju novih načina predavanja i učenja i poboljšanju procesa učenja za đake. Ovaj nastavni program pomoći će vam da integrišete autentične aktivnosti VI u vašu nastavu i pomoći vam da pripremite vaše učenike za život i karijeru u svetu koji oblikuje VI. Ove aktivnosti su dizajnirane tako da razviju kod učenika njihovu radoznalost, veštine rešavanja problema i kreativnosti: na primer, u Adil-ovoj aktivnosti, studenti uče o algoritmima i neuronskim mrežama i podstiču se da kreiraju sopstvenu neuronsku mrežu kako bi vizualizovali mozak VI. Džordžija će vaše učenike voditi korak-po-korak kroz razvoj chatbot-a. Učenici će napraviti svoj chatbot, pripremiti skupove podataka sa pitanjima i odgovorima i obučiti ga tako da može odgovarati na pitanja o bolesti Covid19. U Markovoj aktivnosti studenti će istražiti benefite i izazove inteligentnih mašina u svakodnevnom životu i radu. Koji su rizici VI koje moramo uzeti u obzir? Kakve će uticaje imati VI na budućnost rada? Koji će im poslovi biti ponuđeni kada u budućnosti izađu na tržište rada?'
+            ],
+            'activities' => [
+                'title' => 'Kroz dole navedene nastavne planove, učenici će moći da na zabavan i zanimljiv način uče o inteligentnim mašinama.',
+                '1' => 'VI i njene neuronske mreže, za osnovnu školu',
+                '2' => 'Moj Covid-19 Chatbot, za niže razrede srednjih škola',
+                '3' => 'Život u doba „pametnih mašina“: Izazovi i mogućnosti, za više razrede srednjih škola',
+            ]
+        ],
+
 
     ],
     'download_video_script' => 'Preuzmite video skriptu',

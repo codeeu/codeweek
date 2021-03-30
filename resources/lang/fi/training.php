@@ -237,6 +237,20 @@ Tällä videolla koodausviikon tiimi esittelee muutamia helppoja ja hauskoja kä
             ]
         ],
 
+        '14' => [
+            'title' => 'Oppiminen älykkäiden koneiden aikakaudella.',
+            'author' => 'Tekijät: Adil Tugyan, Georgia Lascaris ja Marco Neves',
+            'text' => [
+                '1' => 'Tekoälyn kehitys viime vuosina on ollut vaikuttavaa laskentatehossa tapahtuneen nopean kehityksen ja suurten tietomäärien saatavuuden ansiosta. Tämä on johtanut huomattaviin investointeihin tekoälyn tutkimuksessa ja tekoäly-alan nopeassa laajentumisessa, mikä on tehnyt tekoälystä aikamme merkittävän teknologisen vallankumouksen. Tekoäly on kaikkialla ympärillämme. Siitä on tullut osa jokapäiväisiä rutiinejamme niin paljon, että emme joskus ajattele sitä tekoälynä: käytämme verkkosuosituksia, kasvojentunnistusta, turvajärjestelmiä ja digitaalisia puheavustajia melkein joka päivä. Mutta entä koulutus?',
+                '2' => 'Tekoälyllä on valtavat mahdollisuudet mahdollistaa uusia opetus- ja oppimistapoja ja parantaa oppilaiden oppimista. Tämä oppimismoduuli auttaa sinua integroimaan aitoja tekoälyn aktiviteetteja opetukseen ja valmistamaan oppilaitasi elämään ja uraan tekoälyn muokkaamassa maailmassa. Nämä tehtävät on suunniteltu oppilaille, jotta he voivat kehittää uteliaisuuttaan sekä ongelmanratkaisu- ja luovuustaitojaan: esimerkiksi Adilin tehtävässä oppilaat oppivat algoritmeista ja hermoverkoista ja heitä kannustetaan luomaan oma hermoverkko tekoälyn aivojen visualisoimiseksi. Georgia opastaa oppilaita chatbotin vaiheittaisessa kehittämisessä. Oppilaat rakentavat oman chatbotin, valmistavat tietoaineistoja kysymyksistä ja vastauksista ja kouluttavat bottia, jotta se voi vastata Covid-19:ää koskeviin kysymyksiin. Marcon aktiviteetissa oppilaat tutkivat älykkäiden koneiden etuja ja haasteita jokapäiväisessä elämässä ja työssä. Mitkä ovat tekoälyn riskit, jotka meidän on otettava huomioon? Mitä vaikutuksia tekoälyllä on työn tulevaisuuteen? Mitä työpaikkoja heille tarjotaan, kun he siirtyvät tulevaisuudessa työmarkkinoille?'
+            ],
+            'activities' => [
+                'title' => 'Alla olevien tuntisuunnitelmien avulla oppilaat oppivat älykkäistä koneista hauskalla ja mukaansatempaavalla tavalla.',
+                '1' => 'Tekoäly ja sen hermoverkot, peruskoulun ala-asteen oppilaat',
+                '2' => 'Oma Covid-19-chatbottini, peruskoulun yläasteen oppilaat',
+                '3' => 'Asuminen “älykkäiden koneiden” aikakaudella: haasteet ja mahdollisuudet, toisen asteen oppilaitoksen oppilaat',
+            ]
+        ],
 
 
     ],

@@ -92,60 +92,60 @@ return [
             ]
         ],
         '6' => [
-            'title'=>'App Inventor y desarrollo de aplicaciones',
-            'author'=>'por Rosanna Kurrer',
-            'text'=>'<p>Echa un vistazo a este vídeo, en el que Rosanna Kurrer (fundadora de CyberWayFinder) explica en qué consiste App Inventor, enumera las ventajas de utilizar el desarrollo de aplicaciones en el aula y ofrece algunos ejemplos prácticos de la forma en que los profesores pueden integrar App Inventor en el aula, transformando a estudiantes pasivos en entusiastas creadores de juegos.</p>
+            'title' => 'App Inventor y desarrollo de aplicaciones',
+            'author' => 'por Rosanna Kurrer',
+            'text' => '<p>Echa un vistazo a este vídeo, en el que Rosanna Kurrer (fundadora de CyberWayFinder) explica en qué consiste App Inventor, enumera las ventajas de utilizar el desarrollo de aplicaciones en el aula y ofrece algunos ejemplos prácticos de la forma en que los profesores pueden integrar App Inventor en el aula, transformando a estudiantes pasivos en entusiastas creadores de juegos.</p>
 <p>Todos utilizamos aplicaciones, ya que son una forma cómoda y rápida de coordinar nuestras actividades. Asimismo, son cada vez más utilizadas en la educación, puesto que propician un aprendizaje personalizado y permiten que los usuarios adquieran información. Por ello, ¿por qué no capacitar a tus alumnos para que desarrollen una aplicación educativa para los demás?</p>',
-            'activities'=>[
-                '1'=>'Actividad 1. Título, para centros de enseñanza primaria',
-                '2'=>'Actividad 2. Título, para centros de enseñanza secundaria (primer ciclo)',
-                '3'=>'Actividad 3. Título, para centros de enseñanza secundaria (segundo ciclo)'
+            'activities' => [
+                '1' => 'Actividad 1. Título, para centros de enseñanza primaria',
+                '2' => 'Actividad 2. Título, para centros de enseñanza secundaria (primer ciclo)',
+                '3' => 'Actividad 3. Título, para centros de enseñanza secundaria (segundo ciclo)'
             ]
         ],
         '7' => [
-            'title'=>'Tinkering y making',
-            'author'=>'por Diogo da Silva',
-            'text'=>'<p>El empleo y los lugares de trabajo están cambiando, y la educación sigue sus pasos. A la hora de preparar a los estudiantes para las profesiones del siglo XXI, resultan fundamentales nuevas capacidades como por ejemplo tinkering, making y hacking, ya que reducen la brecha entre la escuela y el mundo real. Al transformar el aula en un entorno colaborativo centrado en la resolución de problemas, los estudiantes participar y progresar. Estas actividades promueven el debate, permitiendo así que el aula se convierta en un núcleo de comunicación en el que todas las contribuciones son importantes.</p> 
+            'title' => 'Tinkering y making',
+            'author' => 'por Diogo da Silva',
+            'text' => '<p>El empleo y los lugares de trabajo están cambiando, y la educación sigue sus pasos. A la hora de preparar a los estudiantes para las profesiones del siglo XXI, resultan fundamentales nuevas capacidades como por ejemplo tinkering, making y hacking, ya que reducen la brecha entre la escuela y el mundo real. Al transformar el aula en un entorno colaborativo centrado en la resolución de problemas, los estudiantes participar y progresar. Estas actividades promueven el debate, permitiendo así que el aula se convierta en un núcleo de comunicación en el que todas las contribuciones son importantes.</p> 
 <p>Echa un vistazo al vídeo siguiente, en el que el profesor portugués de CTIAM y miembro de Escola Global, Diogo da Silva, explica paso a paso cómo desarrollar una clase en la que los alumnos, a través de actividades de tinkering, making y hacking, encuentran la solución.</p>',
-            'activities'=>[
-                '1'=>'Actividad 1. Título, para centros de enseñanza primaria',
-                '2'=>'Actividad 2. Título, para centros de enseñanza secundaria (primer ciclo)',
-                '3'=>'Actividad 3. Título, para centros de enseñanza secundaria (segundo ciclo)'
+            'activities' => [
+                '1' => 'Actividad 1. Título, para centros de enseñanza primaria',
+                '2' => 'Actividad 2. Título, para centros de enseñanza secundaria (primer ciclo)',
+                '3' => 'Actividad 3. Título, para centros de enseñanza secundaria (segundo ciclo)'
             ]
         ],
         '8' => [
-            'title'=>'Programación para todas las materias',
-            'author'=>'por M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
-            'text'=>'<p>Cuando uno piensa en programación en el aula, la primera imagen que nos viene a la mente es de ordenadores, tecnología, matemáticas o ciencia. Sin embargo, puesto que los estudiantes tienen diversos intereses y asignaturas, ¿por qué no utilizarla a nuestro favor e introducir la programación en todo el plan de estudios?</p> 
+            'title' => 'Programación para todas las materias',
+            'author' => 'por M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text' => '<p>Cuando uno piensa en programación en el aula, la primera imagen que nos viene a la mente es de ordenadores, tecnología, matemáticas o ciencia. Sin embargo, puesto que los estudiantes tienen diversos intereses y asignaturas, ¿por qué no utilizarla a nuestro favor e introducir la programación en todo el plan de estudios?</p> 
 <p>Integrar la programación en el aula ofrece muchos beneficios, ya que les ayuda a desarrollar el pensamiento crítico y las capacidades en materia de resolución de problemas, a convertirse en usuarios activos y a dirigir su propio proceso de aprendizaje, lo que resulta fundamental en los centros escolares. Con todo, lo más importante es que los alumnos aprenderán mientras se divierten.</p>
 <p>Idiomas, Música o CTIM son solo algunas de las asignaturas en las que los profesores pueden aplicar la programación para los futuros científicos, músicos, artistas... para todo el mundo, en realidad. Todos los profesores pueden integrar la programación y el pensamiento computacional en el aula. Utilizar una clase de AICLE para explicar un algoritmo de la vida cotidiana, crear un joystick de fieltro para aprender ciencia o utilizar robots educativos para fomentar la motivación en Matemáticas son algunos ejemplos de actividades que puedes realizar en el aula.</p> 
 <p>Echa un vistazo al siguiente vídeo para averiguar cómo los profesores de Música, Ciencias o Lenguas pueden integrar fácilmente la programación y el pensamiento computacional en el aula, incluso aunque no tengas experiencia previa.</p>',
-            'activities'=>[
-                '1'=>'Actividad 1. Robótica e inclusión de primaria en CTIM',
-                '2'=>'Actividad 2. La música es programación',
-                '3'=>'Actividad 3. Tinkering y programación con Makey Makey',
-                '4'=>'Actividad 4. Un algoritmo de la vida cotidiana para una clase de AICLE'
+            'activities' => [
+                '1' => 'Actividad 1. Robótica e inclusión de primaria en CTIM',
+                '2' => 'Actividad 2. La música es programación',
+                '3' => 'Actividad 3. Tinkering y programación con Makey Makey',
+                '4' => 'Actividad 4. Un algoritmo de la vida cotidiana para una clase de AICLE'
             ]
         ],
         '9' => [
-            'title'=>'Fabricación de un autómata con un micro:bit',
-            'author'=>'por Pauline Maas',
-            'text'=>'<p>
+            'title' => 'Fabricación de un autómata con un micro:bit',
+            'author' => 'por Pauline Maas',
+            'text' => '<p>
                    Emplear un micro:bit, el ordenador de bolsillo fácilmente programable, puede ser una forma fácil y divertida de hacer con tus alumnos creaciones interesantes, que van desde robots hasta instrumentos, mientras les enseñas programación. Resulta sencillo y fácil de utilizar incluso para los programadores más jóvenes y, al mismo tiempo, es suficientemente potente para los alumnos más avanzados. Esta actividad se puede incorporar a distintas clases, que van desde historia hasta matemáticas, o incluso ciencias. Las posibilidades son infinitas. El micro:bit es una manera interesante y barata de enseñar programación, a la vez que se inculcan habilidades fundamentales como el pensamiento computacional, la resolución de problemas y la creatividad.
                    </p>
                    <p>
                    En este vídeo, Pauline Maas, profesora de Informática en Koninklijke Visio, presentará el micro:bit y ofrecerá un par de ejemplos prácticos sobre cómo los profesores pueden integrarlo en clase y convertir a los alumnos pasivos en creadores entusiastas.
                 </p>',
-            'activities'=>[
-                '1'=>'Código morse con micro:bit, para centros de educación primaria',
-                '2'=>'Escape room con micro:bit, para centros de primer ciclo de educación secundaria',
-                '3'=>'Fabricación de un autómata, para centros de segundo ciclo de educación secundaria',
+            'activities' => [
+                '1' => 'Código morse con micro:bit, para centros de educación primaria',
+                '2' => 'Escape room con micro:bit, para centros de primer ciclo de educación secundaria',
+                '3' => 'Fabricación de un autómata, para centros de segundo ciclo de educación secundaria',
             ]
         ],
         '10' => [
-            'title'=>'Programación creativa con Python',
-            'author'=>'por Ivana Vezjak',
-            'text'=>'<p>
+            'title' => 'Programación creativa con Python',
+            'author' => 'por Ivana Vezjak',
+            'text' => '<p>
 Pasar de la programación visual a la programación basada en texto es un flujo natural en programación. Si bien la programación visual suele ser muy buena para los principiantes, al cabo de un tiempo, puede que los alumnos reclamen un nuevo desafío. La programación basada en texto es el siguiente paso para cualquiera que quiera profundizar en programación y pensamiento computacional. 
                    </p>
                    <p>                   
@@ -154,57 +154,57 @@ En este vídeo, Ivana Vezjak te presentará la sintaxis básica de Python, uno d
 <p> 
 Con Python, los alumnos pueden crear cuestionarios sobre hechos históricos, resolver problemas de matemáticas, hacer simulaciones de física, crear juegos, construir sitios web, llevar a cabo análisis de datos para proyectos científicos y mucho más. Python cuenta con una amplia y rica biblioteca, una extensa comunidad y un gran número de tutoriales y proyectos disponibles por internet, que pueden utilizarse para enseñar, aprender y practicar. Al programar en Python, analizar programas y corregir errores de programación, los alumnos desarrollan la creatividad y aprenden a ser coherentes, persistentes y pacientes, Aprenden pensamiento analítico y habilidades de resolución de problemas descomponiendo los problemas complejos en pequeños componentes. Estas competencias les ayudarán a afrontar problemas en cualquier otro ámbito de sus vidas.
                 </p>',
-            'activities'=>[
-                '1'=>'Mi primer cuestionario, para centros de educación primaria',
-                '2'=>'El ahorcado, para centros de primer ciclo de educación secundaria',
-                '3'=>'Adivina la bandera, para centros de segundo ciclo de educación secundaria',
+            'activities' => [
+                '1' => 'Mi primer cuestionario, para centros de educación primaria',
+                '2' => 'El ahorcado, para centros de primer ciclo de educación secundaria',
+                '3' => 'Adivina la bandera, para centros de segundo ciclo de educación secundaria',
             ],
-            'links'=>[
+            'links' => [
                 'title' => 'Otros recursos relacionados',
                 '1' => [
-                    "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Biblioteca estándar de Python",
-                    "description"=>"Recopilación de códigos y módulos creados previamente (como el módulo turtle, el módulo math, etc.).",
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "Biblioteca estándar de Python",
+                    "description" => "Recopilación de códigos y módulos creados previamente (como el módulo turtle, el módulo math, etc.).",
                 ],
                 '2' => [
-                    "url"=>"https://codecombat.com/",
-                    "title"=>"CodeCombat",
-                    "description"=>"Videojuego educativo para aprender conceptos de programación.",
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Videojuego educativo para aprender conceptos de programación.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/es-ES/codeclub",
-                    "title"=>"Proyectos CodeClub",
-                    "description"=>"Desde principiantes hasta alumnos avanzados, proyectos de programación paso a paso para niños.",
+                    "url" => "https://projects.raspberrypi.org/es-ES/codeclub",
+                    "title" => "Proyectos CodeClub",
+                    "description" => "Desde principiantes hasta alumnos avanzados, proyectos de programación paso a paso para niños.",
                 ],
                 '4' => [
-                    "url"=>"https://inventwithpython.com/es/",
-                    "title"=>"Inventa tus propios juegos de computadora con Python",
-                    "description"=>"Libro que te enseñará cómo programar tus propios juegos de ordenador con Python.",
+                    "url" => "https://inventwithpython.com/es/",
+                    "title" => "Inventa tus propios juegos de computadora con Python",
+                    "description" => "Libro que te enseñará cómo programar tus propios juegos de ordenador con Python.",
                 ],
                 '5' => [
-                    "url"=>"https://www.codewars.com/",
-                    "title"=>"CodeWars",
-                    "description"=>"Comunidad educativa en la que alumnos y profesores pueden formarse a través de una serie de desafíos.",
+                    "url" => "https://www.codewars.com/",
+                    "title" => "CodeWars",
+                    "description" => "Comunidad educativa en la que alumnos y profesores pueden formarse a través de una serie de desafíos.",
                 ],
                 '6' => [
-                    "url"=>"https://hourofpython.com/",
-                    "title"=>"Hour of Python",
-                    "description"=>"Recopilación de clases introductorias de Python (basadas tanto en texto como en bloques) que utilizan Trinkets interactivos.",
+                    "url" => "https://hourofpython.com/",
+                    "title" => "Hour of Python",
+                    "description" => "Recopilación de clases introductorias de Python (basadas tanto en texto como en bloques) que utilizan Trinkets interactivos.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'Programar para la inclusión',
-            'author'=>'por el equipo de la Semana de la Programación',
-            'text'=>'<p>
+            'title' => 'Programar para la inclusión',
+            'author' => 'por el equipo de la Semana de la Programación',
+            'text' => '<p>
                    Integrar la programación en el aula puede suponer un desafío, especialmente si tienes alumnos con alguna discapacidad. Sin embargo, es importante recordar que todo el mundo puede aprender a programar, independientemente de sus capacidades. Los niños con necesidades especiales pueden beneficiarse enormemente de los aspectos educativos de la programación, porque les enseña habilidades prácticas e importantes para la vida, como la resolución de problemas, la organización y la autonomía. La programación puede asimismo mejorar las habilidades interpersonales y sociales a través de la colaboración y el trabajo en equipo, habilidades con las que los niños con discapacidad tienen dificultades. Y, sobre todo, los alumnos se divierten mientras aprenden junto a sus compañeros.
                    </p><p>
                    En este vídeo, el equipo de la Semana de la Programación te mostrará algunas actividades prácticas, fáciles y divertidas especialmente adaptadas para alumnos con discapacidad visual, síndrome de Down y trastorno del espectro autista, que los profesores pueden integrar fácilmente en sus aulas.
                 </p>',
-            'activities'=>[
-                '1'=>'Huevera desenchufada',
-                '2'=>'Un ratón muy inteligente',
-                '3'=>'Una estrella que hace estrellas',
+            'activities' => [
+                '1' => 'Huevera desenchufada',
+                '2' => 'Un ratón muy inteligente',
+                '3' => 'Una estrella que hace estrellas',
             ]
         ],
 
@@ -241,6 +241,20 @@ Con Python, los alumnos pueden crear cuestionarios sobre hechos históricos, res
             ]
         ],
 
+        "14" => [
+            'title' => 'El aprendizaje en la era de las máquinas inteligentes',
+            'author' => 'por Adil Tugyan, Georgia Lascaris y Marco Neves',
+            'text' => [
+                '1' => 'El progreso de la IA en los últimos años ha sido impresionante gracias a los rápidos avances en potencia computacional y la disponibilidad de grandes cantidades de datos. Esto ha dado lugar a importantes inversiones en la investigación de la IA y a una rápida expansión de su industria, convirtiéndola en la gran revolución tecnológica de nuestro tiempo. La IA nos rodea. Se ha convertido en parte de nuestra rutina diaria, hasta el punto de que a veces no pensamos en ella como IA y la utilizamos casi a diario en recomendaciones en línea, detección de rostros, sistemas de seguridad y asistentes de voz. ¿Pero qué pasa con la educación? ',
+                '2' => 'La IA tiene un enorme potencial para permitir nuevas formas de enseñanza y aprendizaje y para mejorar el aprendizaje de los alumnos. Este minicurso te ayudará a integrar auténticas actividades de IA en la enseñanza y a preparar a tus alumnos para la vida personal y profesional en un mundo moldeado por la IA. Estas actividades han sido diseñadas para que los alumnos desarrollen su curiosidad, su capacidad para solucionar problemas y su creatividad; por ejemplo, en la actividad de Adil, los alumnos aprenden sobre algoritmos y redes neuronales y se les anima a crear su propia red neuronal para visualizar un cerebro de IA. Georgia guiará a los alumnos para desarrollar paso a paso un chatbot. Los alumnos construirán su propio chatbot, prepararán conjuntos de datos de preguntas y respuestas y lo entrenarán para que pueda responder a preguntas sobre COVID-19. En la actividad de Marco, los alumnos explorarán los beneficios y los retos de las máquinas inteligentes en la vida cotidiana y en el trabajo. ¿Qué riesgos de la IA debemos tener en cuenta? ¿Qué impacto tendrá la IA en el trabajo futuro? ¿Qué trabajos se les ofrecerán cuando entren en el mercado laboral del mañana?'
+            ],
+            'activities' => [
+                'title' => 'En las actividades que se presentan a continuación, los alumnos aprenderán sobre las máquinas inteligentes de una manera divertida y atractiva',
+                '1' => 'La IA y sus redes neuronales, para primaria',
+                '2' => 'Mi chatbot de COVID-19, para secundaria de primer ciclo',
+                '3' => 'Vivir en la era de las "máquinas inteligentes": retos y oportunidades, para secundaria de segundo ciclo',
+            ]
+        ],
 
 
     ],

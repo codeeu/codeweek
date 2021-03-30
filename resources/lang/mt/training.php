@@ -237,6 +237,22 @@ F’dan il-vidjow, it-tim tal-Ġimgħa tal-Ikkowdjar se jurik xi attivitajiet pr
             ]
         ],
 
+        '14' => [
+            'title' => 'It-Tagħlim fl-Era ta’ Magni Intelliġenti',
+            'author' => 'minn Adil Tugyan, Georgia Lascaris u Marco Neves',
+            'text' => [
+    '1' => 'F’dawn l-aħħar snin, il-progress li għamlet l-IA kien tassew impressjonanti grazzi għall-avvanzi mgħaġġla fil-qawwa komputazzjonali u d-disponibbiltà ta’ ammonti kbar ta’ dejta. Dan wassal għal investimenti sostanzjali fir-riċerka tal-IA u l-espansjoni rapida tal-industrija tal-IA li wasslu biex l-IA saret ir-revoluzzjoni teknoloġika maġġuri ta’ żminijietna. L-IA hija kull fejn inħarsu. Saret parti mir-rutina tagħna ta’ kuljum tant li ġieli, lanqas inqisuha bħala IA: kważi ta’ kuljum nużaw ir-rakkomandazzjoni online, ir-rikonoxximent tal-uċuħ, sistemi ta’ sigurtà u assistenti bil-vuċi. Imma xi ngħidu dwar l-edukazzjoni?',
+
+                '2' => 'L-IA għandha l-potenzjal enormi biex tippermetti modi ġodda kif wieħed jgħallem u jitgħallem, u biex ittejjeb it-tagħlim tal-istudenti. Din l-Għajnuna tat-Tagħlim se tgħinek tintegra attivitajiet awtentiċi tal-IA fit-tagħlim tiegħek u se tgħinek tħejji l-istudenti tiegħek għal ħajja u karriera f’dinja msawra mill-IA. Dawn l-attivitajiet tfasslu għall-istudenti sabiex jiżviluppaw il-kurżità tagħhom, u l-ħiliet tagħhom tal-kreattività u ta’ kif isolvu l-problemi: pereżempju, fl-attività ta’ Adil l-istudenti se jitgħallmu dwar l-algoritmi u n-networks newrali u se jiġu mħeġġa biex joħolqu n-network newrali tagħhom stess sabiex jivviżwalizzaw il-moħħ ta’ IA. Georgia se tiggwida l-istudenti tiegħek fl-iżvilupp pass pass ta’ chatbot. L-istudenti se jibnu ċ-chatbot tagħhom stess, jippreparaw settijiet ta’ dejta ta’ mistoqsijiet u tweġibiet u jħarrġuh sabiex ikun jista’ jwieġeb mistoqsijiet relatati mal-Covid-19. Fl-attività ta’ Marco, l-istudenti se jesploraw il-benefiċċji u l-isfidi tal-magni intelliġenti fil-ħajja u fix-xogħol ta’ kuljum. Liem huma r-riskji tal-IA li jeħtieġ nikkunsidraw? X’impatti se tħalli l-IA fuq il-futur tad-dinja tax-xogħol ? X’karrieri se jiġu offruti lilhom meta jidħlu fis-suq tax-xogħol fil-futur ?'
+            ],
+            'activities' => [
+    'title' => 'Fil-pjanijiet tal-lezzjonijiet t’hawn isfel, l-istudenti se jitgħallmu dwar il-magni intelliġenti b’mod divertenti u interattiv.',
+                '1' => 'L-IA u n-Networks Newrali tagħha, għall-Iskejjel tal-Primarja',
+                '2' => 'Iċ-Chatbot tiegħi ta’ Covid-19, għall-Iskejjel Sekondarji tal-Ewwel Livell',
+                '3' => 'Ngħixu fl-Era ta’ “Magni Intelliġenti”: L-Isfidi u Opportunitajiet, għall-Iskejjel Sekondarji tat-Tieni Livell',
+            ]
+        ],
+
 
     ],
     'download_video_script' => '',
