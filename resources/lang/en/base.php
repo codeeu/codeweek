@@ -109,6 +109,7 @@ return [
 
     'or' => 'or',
 
-    "receive emails" => "Receive our emails"
+    "receive emails" => "Receive our emails",
+    "newsletter" => "Newsletter"
 
 ];

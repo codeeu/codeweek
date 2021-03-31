@@ -67,6 +67,7 @@ return [
     'learning_bits' => 'Mësimet',
     'codeweek' => 'CodeWeek',
     'bring_codeweek_to_your_students' => 'Sillni Code Week te studentët tuaj',
-    'or' => 'ose'
+    'or' => 'ose',
+    "newsletter" => ""
 
 ];

@@ -65,6 +65,7 @@ return [
     'learning_bits' => 'Lernhäppchen',
     'codeweek' => 'CodeWeek',
     'bring_codeweek_to_your_students' => 'Bringen Sie Ihre Schülerinnen und Schüler zur Code Week',
-    'or' => 'oder'
+    'or' => 'oder',
+    "newsletter" => "Newsletter"
 
 ];
