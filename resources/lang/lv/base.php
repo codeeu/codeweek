@@ -65,6 +65,7 @@ return [
     'learning_bits' => 'Mācību moduļi',
     'codeweek' => 'Programmēšanas nedēļa',
     'bring_codeweek_to_your_students' => 'Piedāvājiet Programmēšanas nedēļu saviem skolēniem',
-    'or' => 'vai'
+    'or' => 'vai',
+    "newsletter" => "Jaunumi"
 
 ];

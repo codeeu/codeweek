@@ -24,6 +24,8 @@
             @lang('privacy.4-collect_data.items.1')
             @lang('privacy.4-collect_data.items.2')
             @lang('privacy.4-collect_data.items.3')
+            <p>@lang('privacy.4-collect_data.items.5')</p>
+
             @lang('privacy.4-collect_data.items.4')
 
             <h3><strong>@lang('privacy.5-how_long.title')</strong></h3>
