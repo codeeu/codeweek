@@ -65,6 +65,7 @@ return [
     'learning_bits' => 'Tudásmorzsák',
     'codeweek' => 'CodeWeek',
     'bring_codeweek_to_your_students' => 'Ismertesse meg a Programozási hetet a diákjaival',
-    'or' => 'vagy'
+    'or' => 'vagy',
+    "newsletter" => "Hírlevél"
 
 ];

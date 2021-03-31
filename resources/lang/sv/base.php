@@ -65,6 +65,7 @@ return [
     'learning_bits' => 'Infomoduler',
     'codeweek' => 'CodeWeek',
     'bring_codeweek_to_your_students' => 'Låt eleverna delta i Code Week',
-    'or' => 'eller'
+    'or' => 'eller',
+    "newsletter" => "Nyhetsbrev"
 
 ];

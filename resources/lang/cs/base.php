@@ -65,6 +65,7 @@ return [
     'learning_bits' => 'Školicí materiály',
     'codeweek' => 'CodeWeek',
     'bring_codeweek_to_your_students' => 'Přibližte Týden programování svým studentům',
-    'or' => 'nebo'
+    'or' => 'nebo',
+    "newsletter" => "Newsletter"
 
 ];

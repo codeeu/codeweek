@@ -65,6 +65,7 @@ return [
     'learning_bits' => 'Undervisningsbidder',
     'codeweek' => 'Kodeuge',
     'bring_codeweek_to_your_students' => 'Lad kodeugen komme til jeres elever',
-    'or' => 'eller'
+    'or' => 'eller',
+    "newsletter" => "Nyhedsbrev"
 
 ];
