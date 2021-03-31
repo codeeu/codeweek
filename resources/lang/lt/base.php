@@ -65,5 +65,6 @@ return [
     'learning_bits' => 'Mokymosi segmentai',
     'codeweek' => 'Programavimo savaitė',
     'bring_codeweek_to_your_students' => 'Įtraukite savo moksleivius į Programavimo savaitę',
-    'or' => 'arba'
+    'or' => 'arba',
+    "newsletter" => "Naujienlaiškis"
 ];

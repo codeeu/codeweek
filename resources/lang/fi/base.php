@@ -64,6 +64,7 @@ return [
     'learning_bits' => 'Oppimismoduulit',
     'codeweek' => 'Koodausviikko',
     'bring_codeweek_to_your_students' => 'Ota oppilaat mukaan koodausviikkoon',
-    'or' => 'tai'
+    'or' => 'tai',
+    "newsletter" => "Uutiskirje"
 
 ];
