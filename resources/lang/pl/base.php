@@ -66,6 +66,7 @@ return [
     'learning_bits' => 'Materiały dydaktyczne',
     'codeweek' => 'CodeWeek',
     'bring_codeweek_to_your_students' => 'Daj swoim uczniom szansę na udział w Tygodniu Kodowania',
-    'or' => 'lub'
+    'or' => 'lub',
+    "newsletter" => "Newsletter"
 
 ];

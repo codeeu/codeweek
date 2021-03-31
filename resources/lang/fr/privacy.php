@@ -30,7 +30,8 @@ return [
             '1' => '<p>Les données à caractère personnel collectées sont des informations qui facilitent votre identification en tant que point de contact et augmentent votre visibilité auprès du public, à savoir: titre, nom, prénom, fonction, adresse postale et électronique professionnelle, numéro de téléphone, photo, compte sur les réseaux sociaux, biographie.</p>',
             '2' => '<p>Vous avez fourni ces données à caractère personnel sur une base volontaire, en remplissant le formulaire de demande.</p>',
             '3' => '<p>La fourniture de certaines données à caractère personnel est obligatoire en vue de la publication d’activités et/ou d’informations de contact possibles sur le site codeweek.eu. Si vous ne fournissez pas vos données à caractère personnel, votre activité ne sera pas publiée et/ou vous ne pourrez pas participer aux réseaux susmentionnés.</p>',
-            '4' => '<p>Vous fournissez toutes les autres données à caractère personnel sur une base volontaire.</p>'
+            '4' => '<p>Vous fournissez toutes les autres données à caractère personnel sur une base volontaire.</p>',
+            '5' => 'Lorsque vous vous abonnez à notre bulletin d’information, votre adresse électronique est ajoutée à la liste de diffusion du bulletin d’information de la Semaine européenne du code, qui est gérée par Mailerlite.com. Veuillez lire la politique de confidentialité de Mailerlite: https://www.mailerlite.com/legal/privacy-policy. Vous pouvez vous retirer des bulletins d’information, à tout moment, en utilisant le lien «Se désinscrire» dans les courriels que vous recevez de notre part ou vous pouvez nous envoyer un courriel à l’adresse info@codeweek.eu avec «Unsubscribe» dans l’objet.',
         ]
     ],
     '5-how_long' => [

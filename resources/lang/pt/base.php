@@ -65,6 +65,7 @@ return [
     'learning_bits' => 'Bits de aprendizagem',
     'codeweek' => 'Semana Europeia da Programação',
     'bring_codeweek_to_your_students' => 'Faça chegar a Semana da Programação aos seus alunos',
-    'or' => 'ou'
+    'or' => 'ou',
+    "newsletter" => "Newsletter"
 
 ];

@@ -64,6 +64,7 @@ return [
     'learning_bits' => 'Öğrenim bilgileri',
     'codeweek' => 'CodeWeek',
     'bring_codeweek_to_your_students' => 'Öğrencilerinizi Code Week ile buluşturun',
-    'or' => 'veya'
+    'or' => 'veya',
+    "newsletter" => "Bülten"
 
 ];

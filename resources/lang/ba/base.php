@@ -67,6 +67,7 @@ return [
     'learning_bits' => 'Učenje korak po korak',
     'codeweek' => 'Sedmica kodiranja',
     'bring_codeweek_to_your_students' => 'Približite Sedmicu kodiranja svojim učenicima',
-    'or' => 'ili'
+    'or' => 'ili',
+    "newsletter" => "Novosti"
 
 ];
