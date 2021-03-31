@@ -65,6 +65,7 @@ return [
     'learning_bits' => 'Õppevahendid',
     'codeweek' => 'CodeWeek',
     'bring_codeweek_to_your_students' => 'Viige Code Week oma õpilasteni',
-    'or' => 'või'
+    'or' => 'või',
+    "newsletter" => "Uudiskiri"
 
 ];

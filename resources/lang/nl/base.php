@@ -65,6 +65,7 @@ return [
     'learning_bits' => 'Leerbits',
     'codeweek' => 'Programmeerweek',
     'bring_codeweek_to_your_students' => 'Trakteer je leerlingen op de programmeerweek',
-    'or' => 'of'
+    'or' => 'of',
+    "newsletter" => "Nieuwsbrief"
 
 ];

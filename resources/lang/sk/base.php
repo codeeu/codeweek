@@ -65,6 +65,7 @@ return [
     'learning_bits' => 'Hodiny programovania',
     'codeweek' => 'CodeWeek',
     'bring_codeweek_to_your_students' => 'Zapojte svojich študentov do Týždňa programovania',
-    'or' => 'alebo'
+    'or' => 'alebo',
+    "newsletter" => "Newsletter"
 
 ];

@@ -30,7 +30,8 @@ return [
             '1' => '<p>Personal data collected are information which make your identification as a contact point easier and increase your visibility for the public, namely: title, name, surname, position, professional postal & e-mail addresses, phone number, picture, social media account, biography.</p>',
             '2' => '<p>You provided these personal data on a voluntary basis, by filling out the application form.</p>',
             '3' => '<p>The provision of certain personal data is mandatory for the publication of activities and/or contact information possible on the codeweek.eu website. If you do not provide your personal data, your activity would not be published, and/or you would not be able to take part in the aforementioned networks.</p>',
-            '4' => '<p>You provide all other personal data on a voluntary basis.</p>'
+            '4' => '<p>You provide all other personal data on a voluntary basis.</p>',
+            '5' => 'When you subscribe to our newsletter, your email address is added to EU Code Week’s newsletter mailing list, which is managed by Mailerlite.com. Please read Mailerlite’s privacy policy: https://www.mailerlite.com/legal/privacy-policy. You can opt out from the newsletters, at any time, by using the “unsubscribe” link in the emails you receive from us or you can send us an email at info@codeweek.eu with “Unsubscribe” in the subject line.',
         ]
     ],
     '5-how_long' => [
