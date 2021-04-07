@@ -17,48 +17,48 @@
             <div class="codeweek-content-wrapper">
                 <ul>
 
-                    <li>EU Code Week 2020 @lang('resources.communication_toolkit') (
+                    <li>EU Code Week 2021 @lang('resources.communication_toolkit') (
 
                         @foreach($languages as $lang)
                             @if($lang === $locale)
-                                <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/communications-toolkit-{{strtoupper($lang)}}.zip">@lang('base.languages.' . $lang)</a>
+                                <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/2021/communications-toolkit-{{strtoupper($lang)}}.zip">@lang('base.languages.' . $lang)</a>
 
                             @endif
                         @endforeach
 
                         @if($locale !== 'en')
-                            - <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/communications-toolkit-EN.zip">@lang('base.languages.en')</a>
+                            - <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/2021/communications-toolkit-EN.zip">@lang('base.languages.en')</a>
                     @endif
                 )
                     </li>
 
 
-                    <li>EU Code Week 2020 @lang('resources.teachers_toolkit') (
+                    <li>EU Code Week 2021 @lang('resources.teachers_toolkit') (
 
                         @foreach($languages as $lang)
                             @if($lang === $locale)
-                                <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/teachers-toolkit-{{strtoupper($lang)}}.zip">@lang('base.languages.' . $lang)</a>
+                                <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/2021/teachers-toolkit-{{strtoupper($lang)}}.zip">@lang('base.languages.' . $lang)</a>
                             @endif
                         @endforeach
 
                         @if($locale !== 'en')
                             -
-                            <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/teachers-toolkit-EN.zip">@lang('base.languages.en')</a>
+                            <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/2021/teachers-toolkit-EN.zip">@lang('base.languages.en')</a>
                         @endif
                     )
                     </li>
 
-                    <li>EU Code Week 2020 @lang('resources.leaflet') (
+                    <li>EU Code Week 2021 @lang('resources.leaflet') (
 
                         @foreach($languages as $lang)
                             @if($lang === $locale)
-                                <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/leaflet/2020/Codeweek_2020_{{strtoupper($lang)}}.pdf">@lang('base.languages.' . $lang)</a>
+                                <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/leaflet/2021/Codeweek_2021_{{strtoupper($lang)}}.pdf">@lang('base.languages.' . $lang)</a>
                             @endif
                         @endforeach
 
                         @if($locale !== 'en')
                             -
-                            <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/leaflet/2020/Codeweek_2020_EN.pdf">@lang('base.languages.en')</a>
+                            <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/leaflet/2021/Codeweek_2021_EN.pdf">@lang('base.languages.en')</a>
                         @endif
                     )
                     </li>
