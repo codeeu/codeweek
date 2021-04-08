@@ -70,7 +70,7 @@ return [
                 "The 24-hour online hackathon. Out of all those competing, only 10 teams will be chosen to remain in the competition.",
                 "Free online training and mentoring for all 10 teams, during summer 2021.",
                 "The final round: the physical hackathon. 10 teams will have all received equal training in the second round, but only one will win.  Secondary school students aged 15-19 will compete in teams to solve a ‘local challenge’ selected from proposals submitted ahead of the first round.",
-                "In 2021, EU Code Week brings six extraordinary hackathons and invites students aged 15-19 in upper secondary school to form teams and use their coding skills to solve a local challenge. After 24 hours of hacking, each team will pitch their ideas to a panel of experts who will choose the 10 final teams.  All teams will have the same amount of time, resources, and access to mentors and expertise in order to complete the challenge, but only 10 will get the chance to continue to the next round, develop their prototype, get expert coaching and take part in the final hackathon in the autumn. In the final the teams will battle it out to decide who wins IT accessories and the chance of mentoring and coaching to further develop their prototype.",
+                "In 2021, EU Code Week brings six extraordinary hackathons and invites upper secondary school classes to form teams and use their coding skills to solve a local challenge. After 24 hours of hacking, each team will pitch their ideas to a panel of experts who will choose the 10 final teams. All teams will have the same amount of time, resources, and access to mentors and expertise in order to complete the challenge, but only 10 will get the chance to continue to the next round, develop their prototype, get expert coaching and take part in the final hackathon in the autumn. In the final, the teams will battle it out to decide who wins IT accessories and the chance of mentoring and coaching to further develop their prototype.",
                 "Your team is not guaranteed a place in the second round even if you successfully solve the challenge. Remember you are in competition with the other teams and the jury will take your method, use of time and quality of the prototype into consideration to select the successful candidates! ",
                 "If your team is one of the 10 finalists, you can work on your idea over the summer. To assist you, we will offer you free trainings for development and UX Design. Your team will also get the help of a mentor who ensures that you are on the right path.",
                 "The 10 finalist teams will meet face-to-face in a 12-hour hackathon on X (which will take place online if the public health situation does not allow for a physical meet-up). Here teams will compete to be the nation’s best young hackers and get the chance to win prizes such as cool IT equipment as well as further coaching and mentoring of their ideas.",
@@ -82,7 +82,8 @@ return [
         9 => [
             "title" => "Practical Info",
             "content" => [
-                "The hackathon will take place online from 14:00 April 26 to 16:00 April 27",
+                "The hackathon takes place between senior cycle classes signed up by their teacher. If you are a student, please contact your teacher and bring the idea to them. If you are a teacher, please sign up your class in “Registration”.",
+                "The hackathon will take place online from 14:00 April 26 to 16:00 April 27.",
                 "The Hackathon is free of charge."
 
             ]
