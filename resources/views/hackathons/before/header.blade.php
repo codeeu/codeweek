@@ -64,9 +64,11 @@
     </div>
 
 
-    <div id="right-menu">
-        <div id="hackathons-register-button">
-            <a target="_blank" href="{{$registration_link}}">REGISTER</a>
+
+        <div id="right-menu">
+            <div id="hackathons-register-button">
+                <a target="_blank" href="{{$registration_link}}">REGISTER</a>
+            </div>
         </div>
-    </div>
+
 </header>
