@@ -1,7 +1,7 @@
 @extends('layout.base')
 
 @section('hackathons.header')
-    @include('hackathons.before.header', ["enabled_language" => "en", "registration_link"=>""])
+    @include('hackathons.before.header', ["enabled_language" => "en", "registration_link"=>"https://ec.europa.eu/eusurvey/runner/c20f3e59-fc39-7248-0347-d8e736025fb2 "])
 @endsection
 
 @section('content')
@@ -93,7 +93,8 @@
             <h1>@lang('hackathon-ireland.sections.9.title')</h1>
 
             @lang('hackathon-ireland.sections.9.content.0')<br/>
-            @lang('hackathon-ireland.sections.9.content.1')
+            @lang('hackathon-ireland.sections.9.content.1')<br/>
+            @lang('hackathon-ireland.sections.9.content.2')<br/>
 
 
             <br/><br/>
