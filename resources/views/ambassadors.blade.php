@@ -62,7 +62,7 @@
                         </div>
                         <div class="card-content">
                             <h5 class="card-title">{{ $ambassador->fullName() }}</h5>
-                            <p class="card-description">{{ $ambassador->bio }}</p>
+                            <p class="card-description">{!!  nl2br(e($ambassador->bio)) !!}</p>
                         </div>
                         <div class="card-actions">
 
