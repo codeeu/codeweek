@@ -143,7 +143,7 @@ return [
             "choices" => [
                 "Digital inclusiveness for digital community groups",
                 "Flood Tracking Along The River Shannon",
-                "Fighting online fake news",
+                "Fighting cyber bullying on Social Media",
             ],
             "reveal-date" => "The challenge is revealed after the opening of the online hackathon on 26 April.",
             "thanks" => [
