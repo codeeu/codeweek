@@ -195,6 +195,11 @@ header .round-button.opened{
 header .menu-trigger.opened .button-icon path{
   fill:white !important;
 }
+
+button-icon{
+  margin-right: 20px;
+}
+
 header .round-button.opened a{
   color:$main-color4 !important;
 }
