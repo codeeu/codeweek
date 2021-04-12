@@ -141,14 +141,14 @@ return [
             "header" => "Vote for one of the three challenges:",
             "challenge" => "challenge",
             "choices" => [
-                "Digital community groups",
+                "Digital inclusiveness for digital community groups",
                 "Flood Tracking Along The River Shannon",
-                "Fake News",
+                "Fighting online fake news",
             ],
             "reveal-date" => "The challenge is revealed after the opening of the online hackathon on 26 April.",
             "thanks" => [
                 "Thanks for voting!",
-                "You can find out which challenge is selected after 12. April on the EU Code Week Hackathon website."
+                "You can find out which challenge is selected after 26. April on the EU Code Week Hackathon website."
             ]
 
         ]
