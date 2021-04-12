@@ -238,6 +238,8 @@ Route::get('/hackathons/italy', 'HackathonsController@before')->name('hackathon-
 Route::get('/hackathons/greece', 'HackathonsController@before')->name('hackathon-greece');
 Route::get('/hackathons/slovenia', 'HackathonsController@before')->name('hackathon-slovenia');
 Route::get('/hackathons/latvia', 'HackathonsController@before')->name('hackathon-latvia');
+Route::post('/hackathons/vote', 'HackathonsVotingController@save')->name('hackathon-vote');
+
 
 Route::view('/chatbot', 'static.chatbot')->name('chatbot');
 
