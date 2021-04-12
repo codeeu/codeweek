@@ -193,6 +193,8 @@ Route::group(['middleware' => ['role:super admin']], function () {
 
     Route::get('/admin/certificates','AdminController@certificates')->name('admin_certificates');
     Route::post('/admin/certificates','AdminController@generateCertificates')->name('generate_certificates');
+
+    Route::get('/hackathons/vote/results', 'HackathonsVotingController@results')->name('hackathon-vote-results');
 });
 
 Route::group(['middleware' => ['role:super admin|ambassador']], function () {
@@ -239,6 +241,8 @@ Route::get('/hackathons/greece', 'HackathonsController@before')->name('hackathon
 Route::get('/hackathons/slovenia', 'HackathonsController@before')->name('hackathon-slovenia');
 Route::get('/hackathons/latvia', 'HackathonsController@before')->name('hackathon-latvia');
 Route::post('/hackathons/vote', 'HackathonsVotingController@save')->name('hackathon-vote');
+
+
 
 
 Route::view('/chatbot', 'static.chatbot')->name('chatbot');
