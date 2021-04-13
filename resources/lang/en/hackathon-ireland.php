@@ -133,6 +133,24 @@ return [
             "Jury & Mentors",
             "EU Code Week Hackathon in Ireland brought together leading figures from the Worlds of business, IT, venture capital, education, as well as local, national and EU leaders, influencers and coaches to guide and support participants during the intense hackathon. A select number of jury members were chosen to decide the final winning team, according to relevant guidelines and competition rules.",
             "Read the guidelines"
+        ],
+        "voting" => [
+            "title" => "Vote now for your preferred challenge for EU Code Week Hackathon Ireland on 26-27 April 2021!",
+            "challenges" => "Challenges have been collected from all over the country to allow the students to solve a challenge for their local community. After careful deliberation, the top 3 challenges have been selected, and we leave it up to you to decide which challenge that may be solved through coding, developing, and design at the hackathon.",
+            "deadline" => "You can vote for your preferred challenge until 20 April 2021, where the final challenge is selected.",
+            "header" => "Vote for one of the three challenges:",
+            "challenge" => "challenge",
+            "choices" => [
+                "Digital inclusiveness for digital community groups",
+                "Flood Tracking Along The River Shannon",
+                "Fighting cyber bullying on Social Media",
+            ],
+            "reveal-date" => "The challenge is revealed after the opening of the online hackathon on 26 April.",
+            "thanks" => [
+                "Thanks for voting!",
+                "You can find out which challenge is selected after 26. April on the EU Code Week Hackathon website."
+            ]
+
         ]
 
 
