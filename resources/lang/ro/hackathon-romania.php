@@ -123,21 +123,29 @@ return [
                 "Descoperă mai multe",
             ]
         ],
+        "mentors" => [
+            "1" => ["Diana Maria Ghitun este masterand, alumni al Computer Science (MSc.) la King's College Londra. De la absolvire, ea a avut oportunitatea sa lucreze in diverse tipuri de companii, de la fin tech startups la coporatii, cat si in research.", "In prezent, Diana lucreaza ca si Senior Software Engineer la Take Off Labs in Cluj Napoca, loc unde si-a gasit o noua pasiune pentru Ruby on Rails si React Native. "],
+            "2" => ["Sunt o persoana proactiva, curioasa si ambitioasa, care isi doreste se sa autodepaseasca si sa descopere noi viziuni si experiente intr-un mediu dinamic. ", "Imi place foarte mult sa lucrez cu generatii care gandesc si actioneaza diferit fata de mine. In felul acesta pot castiga perspective si idei noi."],
+            "3" => ["George a fondat si conduce WiseUp, o agenție de prototipare. În activitatea lui, George folosește tehnici de Lean Startup, Design Thinking & Data Science pentru a ajuta antreprenori si directori ca sa ia decizii pe baza de date.", "În trecut a proiectat si condus multiple acceleratoare de startup-uri, a mentorat startupuri si corporații."],
+            "4" => ["Numele meu este Ioana Alexandru. Lucrez la Google ca software engineer și în paralel urmez un program de master în grafică pe calculator - e o adevărată provocare, dar mă motivează să fiu mereu în priză. Am avut două internship-uri peste vară în 2018 și 2019, care m-au făcut să mă îndrăgostesc de cultura Google, iar acum sunt angajată din noiembrie 2020.", "În companie lucrez pe partea de infrastructură, iar în afara ei folosesc de principiu Unity și Flutter. În timpul liber, fac călărie și mă joc jocuri video (PC, Oculus, Switch)."],
+            "5" => ["Antreprenor, Program Manager si Software Quality Advocate.", "10+ ani experienta in diferite tipuri de proiecte, imi place sa invat lucruri noi si sa gasesc solutii inovative."],
+            "6" => ["Data scientist, momentan intern la Google in Elvetia. Pasionată de antreprenoriat și inovație, activez ca Startup Manager la EPFL Entrepreneur Club și conduc o echipa de investiții formată din studenți la Wingman Campus Fund.", "Sustinatoare a diversității în technologie, conducând Girls Who Code Iași până anul trecut."],
+        ],
 
         "after" => [
-            "Ce urmează?",
-            "Echipele calificate lucrează acum la prototipul lor și se vor întâlni la hackathonul final pe data de X pentru a se confrunta și a decide câștigătorul hackathonului X. Nu uita să ne urmărești aici și pe platformele de comunicare socială pentru actualizări din partea echipelor concurente! ",
-            "EU Code Week Hackathon România oferă tinerilor inteligenți și pasionați oportunitatea de a-și pune în practică aptitudinile de programare și ideile creative pentru a rezolva o provocare locală concretă. După un hackathon virtual inițial de 24 de ore, 10 echipe au trecut în următoarea etapă. Finaliștii au lucrat la prototipurile lor peste vară, sub îndrumarea mentorilor, și sunt acum pregătiți de concurs! Parcursul în cadrul hackathonului Săptămâna programării se încheie cu o confruntare de aptitudini, cunoștințe și creativitate în cadrul hackathonului final din X septembrie/octombrie din [orașul].",
-            "Câștigătorii",
-            "Vizualizează toți câștigătorii",
-            "Galerie",
-            "Urmărește „tinerii programatori” din România în acțiune în timpul EU Code Week Hackathon",
-            "Panou de sprijin",
-            "Și mulțumim pentru postările pe Twitter, pe TikTok și pentru întregul sprijin din timpul Hackathoanelor! Vizualizează aici o selecție video!",
-            "Juriu și mentori",
-            "EU Code Week Hackathon România a reunit personalități marcante din lumea afacerilor, IT, investitorilor de capital de risc, educației, precum și lideri, influențatori și formatori locali, naționali și europeni, pentru a-i îndruma și susține pe participanți în timpul hackathonului intensiv. Membrii juriului au fost aleși special pentru a stabili echipa câștigătoare finală, în funcție de orientările relevante și de regulamentul concursului.",
-            "Citește orientările"
-        ]
+    "Ce urmează?",
+    "Echipele calificate lucrează acum la prototipul lor și se vor întâlni la hackathonul final pe data de X pentru a se confrunta și a decide câștigătorul hackathonului X. Nu uita să ne urmărești aici și pe platformele de comunicare socială pentru actualizări din partea echipelor concurente! ",
+    "EU Code Week Hackathon România oferă tinerilor inteligenți și pasionați oportunitatea de a-și pune în practică aptitudinile de programare și ideile creative pentru a rezolva o provocare locală concretă. După un hackathon virtual inițial de 24 de ore, 10 echipe au trecut în următoarea etapă. Finaliștii au lucrat la prototipurile lor peste vară, sub îndrumarea mentorilor, și sunt acum pregătiți de concurs! Parcursul în cadrul hackathonului Săptămâna programării se încheie cu o confruntare de aptitudini, cunoștințe și creativitate în cadrul hackathonului final din X septembrie/octombrie din [orașul].",
+    "Câștigătorii",
+    "Vizualizează toți câștigătorii",
+    "Galerie",
+    "Urmărește „tinerii programatori” din România în acțiune în timpul EU Code Week Hackathon",
+    "Panou de sprijin",
+    "Și mulțumim pentru postările pe Twitter, pe TikTok și pentru întregul sprijin din timpul Hackathoanelor! Vizualizează aici o selecție video!",
+    "Juriu și mentori",
+    "EU Code Week Hackathon România a reunit personalități marcante din lumea afacerilor, IT, investitorilor de capital de risc, educației, precum și lideri, influențatori și formatori locali, naționali și europeni, pentru a-i îndruma și susține pe participanți în timpul hackathonului intensiv. Membrii juriului au fost aleși special pentru a stabili echipa câștigătoare finală, în funcție de orientările relevante și de regulamentul concursului.",
+    "Citește orientările"
+]
 
 
     ],
