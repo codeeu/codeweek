@@ -123,21 +123,38 @@ return [
                 "Discover More",
             ]
         ],
+        "mentors" => [
+            "1" =>
+                [
+                    "Diana Maria Ghitun is a MSc. Computer Science graduate from King's College London. Since university she had the opportunity to work in several environments, from fin tech startups to big companies, and the research industry as well.",
+                    "At the moment, she works as a Senior Software Engineer at Take Off Labs in Cluj Napoca, where she found a new passion for Ruby on Rails and React Native."
+                ],
+
+            "2" => [
+                "I am a proactive and curious person, a self-starter, with a desire to go extra mile, gain new insights and experiences in a dynamic environment.",
+                "I really like to work with different generations that think and act differently than me. In this way I can gain new perspectives and fresh ideas."
+            ],
+
+            "3" => ["George founded and leads WiseUp, a product prototyping agency. George uses Lean Startup, Design Thinking & Data Science techniques in his work, to help entrepreneurs and executives make data driven decisions.","Previously he designed and led multiple startup accelerators, coached startups & enterprises."],
+            "4" => ["y name is Ioana Alexandru. I am currently pursuing a master’s degree in computer graphics while working at Google - it’s a real challenge, but I wouldn’t have it any other way! I had two internships (summer ‘18 and ‘19) which made me fall in love with the Google culture, and finally joined as a part-time software engineer in Nov ‘20.","Within Google, I work on search infrastructure, and outside of it I dabble with Unity and Flutter development. In my spare time, I love gaming (PC, Oculus, Switch) and riding horses."],
+            "5" => ["Entrepreneur, Program Manager and  Software Quality Advocate.","10+ years of experience for various projects types, curious learner and passionate about finding innovative solutions."],
+            "6" => ["A data scientist at core, based in Switzerland, doing a software engineering internship at Google. Very passionate about startups, being a startup manager for the EPFL Entrepreneur Club, and leading a student investment team as a Managing Partner for Wingman Campus Fund.","Activist for women in tech, leading Girls Who Code Iasi until last year."],
+        ],
 
         "after" => [
-            "What happens next?",
-            "The successful teams are now working on their prototype and will meet at the final hackathon in X to battle it out and decide the winner of X hackathon. Make sure to follow here and on social media for updates from the contestants’ teams! ",
-            "EU Code Week Hackathon Romania gave smart, passionate young people the chance to put their coding skills and creative ideas towards solving a concrete local challenge. After an initial 24-hour virtual hackathon, 10 teams advanced to the next stage. The finalists worked on their prototypes with some guidance from mentors over the summer and are now ready to compete! The Code Week hackathon journey concluded with a battle on skills, knowledge and creativity at the final hackathon on X September/October in [city].",
-            "The Winners",
-            "See all the winners",
-            "Gallery",
-            "Check out the ‘young hackers’ from Romania in action during the EU Code Week Hackathon",
-            "Support Wall",
-            "And thanks to the Tweets, shout-outs and all the support during the Hackathons! Check out some highlights!",
-            "Jury & Mentors",
-            "EU Code Week Hackathon in Romania brought together leading figures from the Worlds of business, IT, venture capital, education, as well as local, national and EU leaders, influencers and coaches to guide and support participants during the intense hackathon. A select number of jury members were chosen to decide the final winning team, according to relevant guidelines and competition rules.",
-            "Read the guidelines"
-        ]
+    "What happens next?",
+    "The successful teams are now working on their prototype and will meet at the final hackathon in X to battle it out and decide the winner of X hackathon. Make sure to follow here and on social media for updates from the contestants’ teams! ",
+    "EU Code Week Hackathon Romania gave smart, passionate young people the chance to put their coding skills and creative ideas towards solving a concrete local challenge. After an initial 24-hour virtual hackathon, 10 teams advanced to the next stage. The finalists worked on their prototypes with some guidance from mentors over the summer and are now ready to compete! The Code Week hackathon journey concluded with a battle on skills, knowledge and creativity at the final hackathon on X September/October in [city].",
+    "The Winners",
+    "See all the winners",
+    "Gallery",
+    "Check out the ‘young hackers’ from Romania in action during the EU Code Week Hackathon",
+    "Support Wall",
+    "And thanks to the Tweets, shout-outs and all the support during the Hackathons! Check out some highlights!",
+    "Jury & Mentors",
+    "EU Code Week Hackathon in Romania brought together leading figures from the Worlds of business, IT, venture capital, education, as well as local, national and EU leaders, influencers and coaches to guide and support participants during the intense hackathon. A select number of jury members were chosen to decide the final winning team, according to relevant guidelines and competition rules.",
+    "Read the guidelines"
+]
 
 
     ],
