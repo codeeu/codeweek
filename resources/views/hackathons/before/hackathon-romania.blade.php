@@ -227,6 +227,26 @@
                     </div>
                 </div>
 
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/romania/cristina_andreescu.png')}}">
+                    </div>
+                    <h2 class="text-center">Cristina Adreescu</h2>
+                    <div class="text-sm">@lang('hackathon-romania.sections.mentors.7.0')
+                        <br/><br/>@lang("hackathon-romania.sections.mentors.7.1")
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/romania/laurentiu_gabriel_ghergu.png')}}">
+                    </div>
+                    <h2 class="text-center">Laurentiu Gabriel Ghergu</h2>
+                    <div class="text-sm">@lang('hackathon-romania.sections.mentors.8.0')
+                        <br/><br/>@lang("hackathon-romania.sections.mentors.8.1")
+                    </div>
+                </div>
+
 
 
             </div>
