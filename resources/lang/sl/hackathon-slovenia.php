@@ -39,7 +39,7 @@ return [
         4 => [
             "title" => "Predlagaj izzive, ki bi jih lahko rešili na hekatonu",
             "content" => [
-                "Ali želiš, da tvoja skupnost postane središče zelenih in trajnostnih inovacij v Italiji? Če je tako, predlagaj izziv, ki ga bodo reševali računalniški navdušenci na hekatonu. To naj bo nekaj ​​konkretnega, kar bo pomagalo tebi, tvoji šoli, mestu ali skupnosti.",
+                "Ali želiš, da tvoja skupnost postane središče zelenih in trajnostnih inovacij v Sloveniji? Če je tako, predlagaj izziv, ki ga bodo reševali računalniški navdušenci na hekatonu. To naj bo nekaj ​​konkretnega, kar bo pomagalo tebi, tvoji šoli, mestu ali skupnosti.",
                 "Predlagaj izziv",
                 "Glasovanje za slovenski izziv se bo začelo 23. aprila."
             ]
