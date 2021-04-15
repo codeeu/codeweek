@@ -39,7 +39,7 @@ return [
         4 => [
             "title" => "Propose challenges to be solved at the Hackathon",
             "content" => [
-                "Do you want to make your community the centre of green and sustainable innovation in Italy? If so, propose a challenge that will be “hacked” at the Hackathon. Something concrete that will help you, your school, city or community.",
+                "Do you want to make your community the centre of green and sustainable innovation in Slovenia? If so, propose a challenge that will be “hacked” at the Hackathon. Something concrete that will help you, your school, city or community.",
                 "Propose a challenge",
                 "Votes for the Slovenian challenge will start on the 23th of April."
             ]
