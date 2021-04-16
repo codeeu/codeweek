@@ -482,6 +482,35 @@
   }
 }
 
+#codeweek-hackathons-before-page #partners::before {
+  background-color: rgba(240, 216, 171, 0.25);
+  display: block;
+  content: '';
+  position: absolute;
+  height: inherit;
+  width: inherit;
+}
+
+#codeweek-hackathons-before-page #partners {
+  background-color: rgba(254, 104, 36, 0.4);
+ // background-image: url('/images/hackathons/programme_background.svg');
+  background-position-y: 40px;
+  background-repeat: no-repeat;
+  padding: 20px 30px;
+  color: $main-color4;
+
+  h1 {
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  p {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+}
+
 @media (min-width:961px) {
   #codeweek-hackathons-before-page #programme {
     padding: 100px 150px;
@@ -499,6 +528,53 @@
 
       a {
         font-size: 22px;
+      }
+    }
+  }
+
+  #codeweek-hackathons-before-page #partners {
+    padding: 100px 150px;
+    h1 {
+      font-size: 55px;
+    }
+    p {
+      font-size: 18px;
+    }
+
+    .partners-grid {
+
+      @media (max-width: 960px) {
+        grid-template-columns: 1fr;
+      }
+
+      @media (min-width: 961px) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      display: grid;
+
+      grid-gap: 40px;
+      margin-top: 20px;
+
+
+
+
+      .item {
+        display: flex;
+        flex-direction: column;
+
+        img {
+          width: 300px;
+          height: 300px;
+          border-radius: 10%;
+          //object-fit: cover;
+          margin-bottom: 15px;
+
+        }
+
+        h3 {
+          color: $main-color;
+          font-weight: normal;
+        }
       }
     }
   }
