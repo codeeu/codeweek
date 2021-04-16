@@ -107,7 +107,7 @@
         {{--            </div>--}}
         {{--        </section>--}}
 
-        <section id="programme" id="pratical-info">
+        <section id="programme">
             <h1>@lang('hackathon-romania.sections.9.title')</h1>
 
             @lang('hackathon-romania.sections.9.content.0')<br/>
@@ -258,7 +258,6 @@
                 </div>
 
 
-
             </div>
         </section>
 
@@ -270,6 +269,36 @@
         {{--                    </div>--}}
         {{--                    <img src="/images/hackathons/side_events.png">--}}
         {{--                </section>--}}
+
+        <section id="partners">
+            <div>
+                <h1>@lang('hackathon-romania.misc.2')</h1>
+            </div>
+
+            <div class="partners-grid">
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/apdetic.png')}}">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/google.png')}}">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/redhat.png')}}">
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
 
         <section id="about-codeweek">
             <div class="text">
