@@ -492,7 +492,9 @@
 }
 
 #codeweek-hackathons-before-page #partners {
-  background-color: rgba(254, 104, 36, 0.4);
+  //background-color: rgba(254, 104, 36, 0.4);
+  background: rgb(254,104,36);
+  background: linear-gradient(0deg, rgba(254,104,36,1) 15%, rgba(255,255,255,1) 100%);
  // background-image: url('/images/hackathons/programme_background.svg');
   background-position-y: 40px;
   background-repeat: no-repeat;
