@@ -247,6 +247,16 @@
                     </div>
                 </div>
 
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/romania/mihaela_roxana_ghidersa.png')}}">
+                    </div>
+                    <h2 class="text-center">Mihaela-Roxana Ghidersa</h2>
+                    <div class="text-sm">@lang('hackathon-romania.sections.mentors.9.0')
+                        <br/><br/>@lang("hackathon-romania.sections.mentors.9.1")
+                    </div>
+                </div>
+
 
 
             </div>
