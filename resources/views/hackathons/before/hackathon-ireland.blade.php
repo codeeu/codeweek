@@ -225,6 +225,30 @@
             <img src="/images/hackathons/side_events.png">
         </section>
 
+        <section id="partners">
+            <div>
+                <h1>@lang('hackathon-ireland.misc.2')</h1>
+            </div>
+
+            <div class="partners-grid">
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/google.png')}}">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/redhat.png')}}">
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
         <section id="about-codeweek">
             <div class="text">
                 <h1>@lang('hackathon-ireland.sections.12.title')</h1>
