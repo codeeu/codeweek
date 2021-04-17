@@ -1,5 +1,7 @@
 @extends('layout.base')
 
+<x-tailwind></x-tailwind>
+
 @section('content')
 
     <section id="codeweek-about-page" class="codeweek-page">
@@ -11,8 +13,13 @@
             </div>
             <div class="image">
                 <img src="/images/banner_about.svg" class="static-image">
+                <div class="mt-48 mr-8">
+                    <img src="{{asset('images/ally.png')}}" width="100px">
+                </div>
             </div>
+
         </section>
+
 
         <section class="codeweek-content-wrapper">
 
