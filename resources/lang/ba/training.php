@@ -236,6 +236,21 @@ U ovom videu, tim Sedmice kodiranja će vam pokazati neke praktične, lake i zab
             ]
         ],
 
+        '14' => [
+            'title' => 'Učenje u doba inteligentnih mašina',
+            'author' => 'Adil Tugyan, Georgia Lascaris i Marco Neves',
+            'text' => [
+                '1' => 'Napredak umjetne inteligencije posljednjih godina je impresivan zahvaljujući brzom napretku u računarskoj snazi i dostupnosti velike količine podataka. To je dovelo do značajnih ulaganja u istraživanje umjetne inteligencije i brzog širenja industrije umjetne inteligencije, čineći je velikom tehnološkom revolucijom našeg doba. Umjetna inteligencija je svuda oko nas. Postala je dio naše svakodnevne rutine, toliko da ponekad i ne razmišljamo o njoj kao o umjetnoj inteligenciji: gotovo svakodnevno koristimo preporuke na mreži, prepoznavanje lica, sigurnosne sisteme i glasovne asistente. Ali šta je sa obrazovanjem? ',
+                '2' => 'Umjetna inteligencija ima ogroman potencijal da omogući nove načine vođenja nastave i učenja i da poboljša učenje učenika. Ovaj dio o učenju će vam pomoći da integrirate autentične aktivnosti umjetne inteligencije u svoju nastavu i pomoći će vam da pripremite svoje učenike za život i karijeru u svijetu koji je oblikovala umjetna inteligencija. Ove aktivnosti su dizajnirane za razvijanje znatiželje, vještina rješavanja problema i kreativnosti kod učenika: na primjer, kroz Adilovu aktivnost, učenici uče o algoritmima i neuronskim mrežama i potiču se da kreiraju vlastitu neuronsku mrežu kako bi vizualizirali mozak umjetne inteligencije. Georgia će vaše učenike voditi u razvoju bota za ćaskanje korak-po-korak. Učenici će napraviti svoj bot za ćaskanje, pripremiti skupove podataka sa pitanjima i odgovorima i obučiti ga da može odgovarati na pitanja o Covid-19. Uz Marcovu aktivnost, učenici će istražiti prednosti i izazove inteligentnih mašina u svakodnevnom životu i radu. Koji su rizici umjetne inteligencije koje moramo uzeti u obzir? Kakve uticaje će umjetna inteligencija imati na budućnost rada? Koji poslovi će im se ponuditi kada u budućnosti uđu na tržište rada?'
+            ],
+            'activities' => [
+                'title' => 'U planovima lekcija ispod, učenici će na zabavan i zanimljiv način naučiti o inteligentnim mašinama.',
+                '1' => 'Umjetna inteligencija i njene neuronske mreže, za osnovnu školu',
+                '2' => 'Moij Covid-19 bot za ćaskanje, za nižu srednju školu',
+                '3' => 'Život u doba inteligentnih mašina”: Izazovi i mogućnosti za srednju školu',
+            ]
+        ],
+
     ],
     'download_video_script' => 'Preuzmite video skriptu',
     'ready_to_share' => 'Spremni ste da podijelite ono što ste naučili sa svojim učenicima?',

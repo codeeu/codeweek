@@ -236,6 +236,23 @@ U ovom video zapisu, tim Nedjelje programiranja pokazaće vam nekoliko praktičn
     ]
 ],
 
+        '14' => [
+            'title' => 'Proces učenja u eri pametnih mašina',
+            'author' => 'autori Adil Tugyan, Georgia Lascaris i Marco Neves',
+            'text' => [
+                '1' => 'Zahvaljujući brzom napretku u oblasti računarske moći i dostupnosti velike količine podataka napredak AI posljednjih godina je impresivan. Ovo je dovelo do značajnih ulaganja u istraživanje kao i brzo širenje vještačke inteligencije te je tako AI postala velika tehnološka revolucija našeg doba. Vještačka inteligencija se nalazi svuda oko nas. Postala je dio svakodnevnice u tolikoj mjeri da nekad nismo ni svjesni da je koristimo: gotovo svakodnevno koristimo onlajn preporuke, prepoznavanje lica, sigurnosne sisteme i glasovnu pomoć. Ali šta je sa obrazovanjem?',
+                '2' => 'AI ima ogroman potencijal da omogući nove metode podučavanja i učenja kao i da poboljša učenje učenika. Ova Mini lekcija će vam pomoći da autentične AI aktivnosti integrišete u svoju nastavu i pomoći će vam da svoje učenike pripremite za život i poslovnu karijeru u svijetu koji oblikuje AI. Ove aktivnosti su osmišljene kako bi učenici razvili svoju radoznalost, vještine rješavanja problema i kreativnost: na primjer, u Adilovoj aktivnosti učenici uče o algoritmima i neuronskim mrežama i podstiču se da naprave sopstvenu neuronsku mrežu kao vizuelizaciju AI mozga. Vježba koju je napravila Georgia će korak po korak voditi vaše učenike kroz postupak razvoja chatbota. Učenici će napraviti svog chatbota, pripremiti skupove podataka sa pitanjima i odgovorima i obučiti ga tako da odgovara na pitanja o virusu Covid-19. Kroz vježbu koju je pripremio Marco učenici će istražiti koje su to prednosti kao i izazovi inteligentnih mašina u svakodnevnom životu i radu. Koji su to rizici AI koje moramo uzeti u obzir? Kakve uticaje će AI imati na budućnost zaposlenja? Koji će im poslovi biti ponuđeni kada u budućnosti izađu na tržište rada?'
+            ],
+            'activities' => [
+                'title' => 'U ponuđenom nastavnom planu učenici će o pametnim mašinama učiti uz zabavu i aktivno učestvovanje.',
+                '1' => 'AI sa svojim neuronskim mrežama, za osnovnu školu',
+                '2' => 'Moj Covid-19 Chatbot, za niže razrede srednje škole',
+                '3' => 'Život u eri ‘Pametnih mašina’: Izazovi i mogućnosti, za više razrede srednje škole',
+            ]
+        ],
+
+
+
 
     ],
     'download_video_script' => 'Preuzmite video zapis.',

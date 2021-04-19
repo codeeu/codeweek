@@ -235,6 +235,20 @@ V Pythonu mohou studenti vytvářet kvízy o historických událostech, řešit 
 ]
 ],
 
+        '14' => [
+            'title' => 'Učení v éře inteligentních strojů',
+            'author' => 'Autoři: Adil Tugyan, Georgia Lascaris a Marco Neves',
+            'text' => [
+                '1' => 'Umělá inteligence (AI) v posledních letech zaznamenala úctyhodný pokrok díky rychlému zvyšování výpočetní síly a dostupnosti velkého objemu dat. To vedlo k výraznému růstu investic do výzkumu AI a k rychlému rozšíření tohoto oboru, takže nyní je AI klíčovou technologickou revolucí naší doby. AI je všude kolem nás. Stala se součástí našeho běžného dne, takže už ji ani nevnímáme: internetová doporučení, rozpoznávání obličejů, bezpečnostní systémy a hlasové asistenty používáme takřka každý den. Ale co vzdělávání? ',
+                '2' => 'AI má velký potenciál umožnit nové způsoby výuky a podpořit proces učení. Tento školicí materiál vám pomůže integrovat autentické aktivity AI do výuky a připravit žáky a studenty na život a kariéru ve světě, jehož podobu utváří AI. Tyto aktivity byly navrženy tak, aby podněcovaly zvídavost, řešení problémů a kreativitu. Třeba v Adilově aktivitě se studenti seznámí s algoritmy a neuronovými sítěmi a budou si moci vytvořit vlastní neoronovou síť s cílem zobrazit mozek založený na AI. Georgia vaše žáky krok za krokem provede vývojem chatbotu. Žáci si vybudují vlastního chatbota, připraví datové sady otázek a odpovědí a vytrénují jej, aby dokázal odpovídat na otázky o covidu-19. V Marcově aktivitě se studenti podívají na přínosy a problémy inteligentních strojů v každodenním životě a práci. Která rizika AI musíme zvážit? Jaké dopady bude AI mít na budoucnost práce? Jaké pracovní pozice budou studentům k dispozici, jakmile se dostanou na trh práce?'
+            ],
+            'activities' => [
+                'title' => 'V níže uvedených učebních plánech se studenti zábavným způsobem seznámí s inteligentními stroji.',
+                '1' => 'AI a její neuronové sítě, pro 1. stupeň ZŠ',
+                '2' => 'Můj covidový chatbot, pro 2. stupeň ZŠ',
+                '3' => 'Život v éře chytrých strojů: výzva a příležitosti, pro střední školy',
+            ]
+        ],
 
     ],
     'download_video_script' => 'Stáhnout scénář videa',

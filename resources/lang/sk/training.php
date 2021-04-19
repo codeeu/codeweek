@@ -236,6 +236,21 @@ V tomto videu vám tím Týždňa programovania ukáže niekoľko praktických, 
             ]
         ],
 
+        '14' => [
+            'title' => 'Učenie vo veku inteligentných strojov',
+            'author' => 'Adil Tugyan, Georgia Lascaris a Marco Neves',
+            'text' => [
+                '1' => 'Pokrok UI v posledných rokoch bol pôsobivý vďaka rýchlemu pokroku v oblasti výpočtového výkonu a dostupnosti veľkého množstva údajov. To viedlo k značným investíciám do výskumu UI a rýchlemu rozšíreniu odvetvia UI, čo z UI urobilo významnú technologickú revolúciu našej doby. UI je všade okolo nás. Stala sa súčasťou našej každodennej rutiny, a to natoľko, že si niekedy neuvedomujeme, že to je UI: takmer každý deň používame online odporúčania, detekciu tváre, bezpečnostné systémy a hlasových asistentov. Ale čo výuka? ',
+                '2' => 'UI má obrovský potenciál umožniť nové spôsoby výučby a učenia sa a zlepšiť učenie študentov. Táto časť výučby vám pomôže integrovať autentické aktivity UI do výučby a pomôže vám pripraviť vašich študentov na život a kariéru vo svete formovanom UI. Tieto aktivity boli navrhnuté pre študentov, aby rozvíjali ich zvedavosť, riešenie problémov a tvorivé schopnosti: napríklad v Adilovej aktivite sa študenti dozvedia o algoritmoch a neurónových sieťach a sú vyzvaný k vytvoreniu vlastnej neurónovej siete na vizualizáciu mozgu UI. Georgia povedie vašich študentov pri vývoji chatbota krok za krokom. Študenti si zostavia vlastného chatbota, pripravia súbory otázok a odpovedí a vycvičia ho, aby mohol odpovedať na otázky o Covid-19. V rámci aktivity Marco budú študenti skúmať výhody a výzvy inteligentných strojov v každodennom živote a práci. Aké sú riziká UI, ktoré musíme brať do úvahy? Aké dopady bude mať AI na budúcnosť práce? Aké pracovné miesta im budú ponúknuté, keď v budúcnosti vstúpia na trh práce?'
+            ],
+            'activities' => [
+                'title' => 'V nižšie uvedených učebných plánoch sa študenti naučia zábavným a pútavým spôsobom o inteligentných strojoch.',
+                '1' => 'UI a jej neurónové siete pre základnú školu',
+                '2' => 'Môj Covid-19 Chatbot, pre nižšiu strednú školu',
+                '3' => 'Život vo veku „inteligentných strojov“: Výzvy a príležitosti pre vyššie stredné školy',
+            ]
+        ],
+
 
     ],
     'download_video_script' => 'Stiahnuť prepis videa',
