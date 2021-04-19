@@ -482,14 +482,7 @@
   }
 }
 
-#codeweek-hackathons-before-page #partners::before {
-  background-color: rgba(240, 216, 171, 0.25);
-  display: block;
-  content: '';
-  position: absolute;
-  height: inherit;
-  width: inherit;
-}
+
 
 #codeweek-hackathons-before-page #partners {
   //background-color: rgba(254, 104, 36, 0.4);
@@ -570,6 +563,8 @@
           border-radius: 10%;
           //object-fit: cover;
           margin-bottom: 15px;
+          background-color: rgba(255, 255, 255, 0.30);
+          padding: 15px;
 
         }
 
