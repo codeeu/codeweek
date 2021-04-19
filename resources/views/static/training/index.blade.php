@@ -111,6 +111,13 @@
                         <div class="author">@lang('training.lessons.13.author')</div>
                     </a>
                 </div>
+                <div class="codeweek-card-grid">
+                    <a href="/training/learning-in-the-age-of-intelligent-machines">
+                        <img src="/img/learning/learning-in-the-age-of-intelligent-machines.png">
+                        <div class="title">@lang('training.lessons.14.title')</div>
+                        <div class="author">@lang('training.lessons.14.author')</div>
+                    </a>
+                </div>
             </section>
 
             <section class="codeweek-content-wrapper-inside">

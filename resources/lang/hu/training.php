@@ -237,6 +237,21 @@ A Pythonnal a diákok kvízeket hozhatnak létre történelmi eseményekről, ma
             ]
         ],
 
+        '14' => [
+            'title' => 'Tanulás az intelligens gépek korában',
+            'author' => 'Adil Tugyan, Georgia Lascaris és Marco Neves',
+            'text' => [
+                '1' => 'A számítási teljesítmények gyors fejlődésének és a hatalmas rendelkezésre álló adatmennyiségeknek köszönhetően az elmúlt években figyelemreméltó volt az MI fejlődése. Ennek eredményeként jelentős beruházások történtek az MI kutatásokba, és az MI iparág gyors bővülésnek indult, ezzel az MI korunk egyik legnagyobb technológiai forradalmává vált. Az MI mindenhol körülvesz minket. Olyannyira mindennapjaink részévé vált, hogy néha már nem is MI-ként gondolunk rá: online javaslatokat, arcfelismerést, biztonsági rendszereket és hangsegédeket használunk nap mint nap. De mi a helyzet az oktatással? ',
+                '2' => 'Az MI hatalmas lehetőségeket kínál új oktatási és tanulási módszerek megvalósítására és a diákok tanulási hatékonyságának növelésére. A Learning Bit segítségével valódi MI tevékenységekkel bővítheti óráit, és segíthet a diákoknak felkészülni egy olyan életre és karrierre, amit meghatározó módon befolyásol majd az MI. Ezeket a tevékenységeket úgy alakítottuk ki, hogy fejlesszük a diákok kíváncsiságát, problémamegoldó készségét és a kreativitását. Például Adil tevékenységében a diákok megismerkednek az algoritmusokkal és a neurális hálózatokkal, és saját neurális hálózatot készítenek, hogy vizualizálják az MI agyát. Georgia lépésről-lépésre végigvezeti a diákokat egy csetbot fejlesztésén. A diákok saját csetbotot készíthetnek, kérdésekből és válaszokból álló adatkészleteket gyűjthetnek, és betaníthatják az MI-t, hogy Covid-19-cel kapcsolatos kérdésekre válaszoljon. Marco tevékenységénél a diákok megvizsgálják az intelligens gépek jelentette előnyöket és kihívásokat a mindennapi életben és munkában. Milyen kockázatokat hordoz az MI, amiket érdemes figyelembe venni? Milyen hatással lesz az MI a munkára a jövőben? Milyen állások közül választhatnak majd a diákok, amikor belépnek a munkaerőpiacra?'
+            ],
+            'activities' => [
+                'title' => 'Az alábbi óratervekben a diákok szórakoztató és interaktív módon tanulhatnak az intelligens gépekről.',
+                '1' => 'Az MI és neurális hálózata, általános iskolás osztályoknak',
+                '2' => 'A saját Covid-19 csetbotom, középiskolák alsóbb osztályainak',
+                '3' => 'Élet az „okos gépek” korában: Kihívások és lehetőségek, középiskolák felsőbb osztályainak',
+            ]
+        ],
+
 
     ],
     'download_video_script' => 'Videó forgatókönyvének letöltése',

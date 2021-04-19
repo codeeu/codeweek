@@ -239,6 +239,21 @@ Neste vídeo, a equipa da Semana da Programação vai mostrar-lhe algumas ativid
             ]
         ],
 
+        '14' => [
+            'title' => 'Aprender na era das máquinas inteligentes',
+            'author' => 'por Adil Tugyan, Georgia Lascaris e Marco Neves',
+            'text' => [
+                '1' => 'O progresso da IA nos últimos anos tem sido impressionante graças aos rápidos avanços na capacidade computacional e à disponibilidade de grandes quantidades de dados. Isto levou a investimentos substanciais na investigação em IA e à rápida expansão da indústria da IA, convertendo-a numa grande revolução tecnológica do nosso tempo. A IA está à nossa volta. Tornou-se parte da nossa rotina diária, de tal forma que por vezes não pensamos nela como IA: usamos recomendações online, deteção facial, sistemas de segurança e assistentes de voz quase todos os dias. Mas e a educação? ',
+                '2' => 'A IA tem um enorme potencial para permitir novas formas de ensino e aprendizagem e para melhorar a aprendizagem dos alunos. Este bit de aprendizagem ajudá-lo-á a integrar atividades de IA autênticas no seu método de ensino e ajudá-lo-á a preparar os seus alunos para uma vida pessoal e profissional num mundo moldado pela IA. Estas atividades foram concebidas para que os alunos desenvolvam a curiosidade, a capacidade de resolução de problemas e a criatividade: por exemplo, na atividade do Adil, os alunos aprendem sobre algoritmos e redes neuronais e são encorajados a criar a sua própria rede neuronal para que consigam visualizar um cérebro de IA. A Georgia guiará os alunos no desenvolvimento passo a passo de um chatbot. Os alunos irão criar o seu próprio chatbot, preparando conjuntos de dados de perguntas e respostas e treinando-o para que seja capaz de responder a perguntas sobre a Covid-19. Na atividade do Marco, os alunos exploram os benefícios e os desafios das máquinas inteligentes na vida quotidiana e no trabalho. Quais são os riscos da IA que temos de considerar? Que impactos terá a IA no futuro do trabalho? Que empregos ser-lhes-ão oferecidos quando entrarem no mercado de trabalho dentro de alguns anos?'
+            ],
+            'activities' => [
+                'title' => 'Nos planos de aula abaixo, os alunos irão aprender sobre máquinas inteligentes de uma forma divertida e cativante.',
+                '1' => 'A IA e as suas redes neuronais, para o 1.º e o 2.º ciclos do ensino básico',
+                '2' => 'O meu chatbot sobre a Covid-19, para o 3.º ciclo do ensino básico',
+                '3' => 'Viver na era das “Máquinas Inteligentes”: desafios e oportunidades, para o ensino secundário',
+            ]
+        ],
+
 
     ],
     'download_video_script' => 'Descarregue o guião do vídeo',

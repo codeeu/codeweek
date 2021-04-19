@@ -240,6 +240,21 @@ Dans cette vidéo, l’équipe de la Semaine du code vous présentera quelques a
     ]
 ],
 
+        '14' => [
+            'title' => "L'apprentissage à l'ère des machines intelligentes",
+            'author' => 'par Adil Tugyan, Georgia Lascaris et Marco Neves',
+            'text' => [
+    '1' => "Les progrès de l'IA ces dernières années ont été impressionnants grâce aux avancées rapides en matière de puissance de calcul et à la disponibilité de grandes quantités de données. Ce phénomène a conduit à des investissements substantiels dans la recherche en IA et à une expansion rapide de l'industrie connexe, pour en faire une révolution technologique majeure de notre temps. L'IA est partout autour de nous. Elle fait désormais partie de notre quotidien, à tel point que nous ne la considérons pas toujours comme une IA : nous utilisons presque tous les jours des recommandations en ligne, la détection des visages, des systèmes de sécurité et des assistants vocaux. Mais qu'en est-il de l'éducation et de l'enseignement ?",
+                '2' => "L'IA recèle un énorme potentiel qui permet de mettre en place de nouvelles méthodes d'enseignement et d'apprentissage et d'améliorer l'apprentissage des étudiants. Ce Module de formation vous aidera à intégrer des activités d'IA authentiques dans votre enseignement et à préparer vos étudiants à la vie et à la carrière dans un monde façonné par l'IA. Ces activités ont été conçues pour que les élèves développent leur curiosité, leur capacité à résoudre des problèmes et leur créativité : par exemple, dans l'activité d'Adil, les élèves apprennent des algorithmes et des réseaux de neurones et sont encouragés à créer leur propre réseau de neurones pour visualiser un cerveau d'IA. Georgia guidera vos élèves dans le développement étape par étape d'un chatbot. Les élèves vont construire leur propre chatbot, préparer des ensembles de données de questions et réponses et l'entraîner pour qu'il puisse répondre aux questions sur la Covid-19. Dans l'activité de Marco, les élèves étudieront les avantages et les défis des machines intelligentes dans la vie quotidienne et au travail. Quels sont les risques de l'IA dont nous devons tenir compte ? Quels seront les impacts de l'IA sur l'avenir de l'emploi ? Quels emplois leur seront proposés lorsqu'ils entreront sur le marché du travail à l'avenir ?"
+            ],
+            'activities' => [
+    'title' => 'Dans le cadre des cours ci-dessous, les élèves découvriront les machines intelligentes de manière ludique et intéressante.',
+    '1' => "L'IA et ses réseaux de neurones, pour l'école primaire",
+                '2' => "Mon Chatbot Covid-19, pour l'école secondaire inférieure",
+                '3' => "Vivre à l'ère des « Machines intelligentes » : Défis et opportunités, pour l'école secondaire supérieure",
+            ]
+        ],
+
 
     ],
     'download_video_script' => 'Télécharger le script vidéo',

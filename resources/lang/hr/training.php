@@ -235,6 +235,20 @@ U ovom videozapisu tim Tjedna kodiranja pokazat će vam nekoliko praktičnih, je
                 "3" => "Učenje strojeva da klasificiraju: Uvod u nadzirano strojno učenje, za više srednje škole",
             ]
         ],
+        '14' => [
+            'title' => 'Učenje u doba inteligentnih strojeva',
+            'author' => 'Napisali: Adil Tugyan, Georgia Lascaris and Marco Neves',
+            'text' => [
+                '1' => 'Napredak umjetne inteligencije u posljednjih je godina bio impresivan zahvaljujući brzom napretku u računalnoj snazi i dostupnosti velikih količina podataka. To je uzrokovalo znatna ulaganja u istraživanje umjetne inteligencije i brzo širenje industrije umjetne inteligencije, što je dovelo do toga da je umjetna inteligencija jedna od većih tehnoloških revolucija našeg vremena. Umjetna inteligencija je svuda oko nas. Postala je dio naše svakodnevne rutine do te mjere, da je ponekad ne smatramo umjetnom inteligencijom: gotovo svaki dan upotrebljavamo internetske preporuke, prepoznavanje lica, sigurnosne sustave i glasovne pomoćnike. Ali što je sa obrazovanjem? ',
+                '2' => 'Umjetna inteligencija ima ogroman potencijal za omogućavanje novih načina podučavanja i učenja te poboljšanje postupka učenja. S pomoću ovih edukacijskih aktivnosti moći ćete u svoje podučavanje integrirati autentične aktivnosti umjetne inteligencije i pripremiti učenike za život i karijeru u svijetu koji je oblikovala umjetna inteligencija. Te su aktivnosti namijenjene učenicima za razvoj njihove znatiželje, vještina rješavanje problema i kreativnih vještina: Na primjer, u Adilovoj aktivnosti, učenici uče o algoritmima i neuralnim mrežama te ih se potiče da stvore vlastitu neuralnu mrežu za vizualizaciju mozga umjetne inteligencije. Georgia će voditi vaše učenike korak po korak kroz razvoj bota za razgovor. Učenici će napraviti vlastiti bot za razgovor, pripremiti skupove podataka o pitanjima i odgovorima i obučiti bota kako bi mogao odgovoriti na pitanja o virusu Covid-19. U Marcovoj aktivnosti učenici će istražiti prednosti i izazove upotrebe pametnih strojeva u svakodnevnom životu i radu. Koje rizike umjetne inteligencije trebamo uzeti u obzir? Koje će učinke umjetna inteligencija imati na budućnost rada? Koja će im se radna mjesta ponuditi kada ubuduće uđu na tržište radnih mjesta?'
+            ],
+            'activities' => [
+                'title' => 'U nastavnim planovima u nastavku, učenici će na zabavan i zanimljiv način učiti o pametnim strojevima.',
+                '1' => 'Umjetna inteligencija i njezine neuralne mreže, za učenike osnovnih škola',
+                '2' => 'Moj Covid-19 bot za razgovor, za učenike nižih razreda srednjih škola',
+                '3' => 'Život u doba „pametnih strojeva”: Izazovi i mogućnosti, za učenike viših razreda srednjih škola',
+            ]
+        ],
 
 
     ],
