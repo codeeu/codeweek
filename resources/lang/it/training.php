@@ -88,60 +88,60 @@ return [
             ]
         ],
         '6' => [
-            'title'=>'App Inventor e sviluppo di app',
-            'author'=>'di Rosanna Kurrer',
-            'text'=>'<p>In questo video Rosanna Kurrer (fondatrice di CyberWayFinder) spiega che cos\'è App Inventor, illustra i vantaggi di portare in aula lo sviluppo di app e spiega attraverso alcuni esempi pratici come gli insegnanti possono integrare App Inventor in aula trasformando gli studenti passivi in entusiasti creatori di giochi.</p>
+            'title' => 'App Inventor e sviluppo di app',
+            'author' => 'di Rosanna Kurrer',
+            'text' => '<p>In questo video Rosanna Kurrer (fondatrice di CyberWayFinder) spiega che cos\'è App Inventor, illustra i vantaggi di portare in aula lo sviluppo di app e spiega attraverso alcuni esempi pratici come gli insegnanti possono integrare App Inventor in aula trasformando gli studenti passivi in entusiasti creatori di giochi.</p>
 <p>Tutti usiamo le applicazioni perché sono strumenti comodi e veloci che ci permettono di coordinare le nostre attività. Le applicazioni vengono inoltre utilizzate sempre più spesso nell\'istruzione perché rendono possibile un apprendimento personalizzato e permettono agli utenti di acquisire informazioni. Perché, allora, non dare la possibilità ai tuoi studenti di creare un\'app educativa per gli altri?</p>',
-            'activities'=>[
-                '1'=>'Attività 1 – Titolo, per la scuola primaria',
-                '2'=>'Attività 2 – Titolo, per la scuola secondaria di primo grado',
-                '3'=>'Attività 3 – Titolo, per la scuola secondaria di secondo grado'
+            'activities' => [
+                '1' => 'Attività 1 – Titolo, per la scuola primaria',
+                '2' => 'Attività 2 – Titolo, per la scuola secondaria di primo grado',
+                '3' => 'Attività 3 – Titolo, per la scuola secondaria di secondo grado'
             ]
         ],
         '7' => [
-            'title'=>'Il tinkering e il making',
-            'author'=>'di Diogo da Silva',
-            'text'=>'<p>I lavori e i posti di lavoro stanno cambiando e l\'istruzione va di pari passo. Per preparare gli studenti alle carriere del 21° secolo, nuove competenze quali il tinkering, il making e l\'hacking diventano fondamentali perché avvicinano la scuola al mondo esterno. Trasformare l\'aula in un ambiente collaborativo, che focalizza l\'attenzione sulla risoluzione dei problemi, coinvolge gli studenti e li fa crescere. Queste attività promuovono la discussione permettendo alla classe di diventare un polo di comunicazione dove ogni contributo è importante.</p> 
+            'title' => 'Il tinkering e il making',
+            'author' => 'di Diogo da Silva',
+            'text' => '<p>I lavori e i posti di lavoro stanno cambiando e l\'istruzione va di pari passo. Per preparare gli studenti alle carriere del 21° secolo, nuove competenze quali il tinkering, il making e l\'hacking diventano fondamentali perché avvicinano la scuola al mondo esterno. Trasformare l\'aula in un ambiente collaborativo, che focalizza l\'attenzione sulla risoluzione dei problemi, coinvolge gli studenti e li fa crescere. Queste attività promuovono la discussione permettendo alla classe di diventare un polo di comunicazione dove ogni contributo è importante.</p> 
 <p>Nel video qui sotto l\'insegnante di STEAM portoghese Diogo da Silva, membro della Escola Global, ti illustrerà passo passo come organizzare una lezione in cui i tuoi studenti dovranno cercare di trovare soluzioni attraverso il tinkering, il making e l\'hacking.</p>',
-            'activities'=>[
-                '1'=>'Attività 1 – Titolo, per la scuola primaria',
-                '2'=>'Attività 2 – Titolo, per la scuola secondaria di primo grado',
-                '3'=>'Attività 3 – Titolo, per la scuola secondaria di secondo grado'
+            'activities' => [
+                '1' => 'Attività 1 – Titolo, per la scuola primaria',
+                '2' => 'Attività 2 – Titolo, per la scuola secondaria di primo grado',
+                '3' => 'Attività 3 – Titolo, per la scuola secondaria di secondo grado'
             ]
         ],
         '8' => [
-            'title'=>'La programmazione in tutte le materie',
-            'author'=>'di M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
-            'text'=>'<p>Quando pensiamo a una lezione di programmazione in aula la prima cosa che ci viene in mente sono i computer, la tecnologia, la matematica o le scienze. Ma perché non usare a nostro vantaggio il fatto che gli studenti hanno diversi interessi e studiano diverse materie introducendo la programmazione in tutto il piano di studi?</p> 
+            'title' => 'La programmazione in tutte le materie',
+            'author' => 'di M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text' => '<p>Quando pensiamo a una lezione di programmazione in aula la prima cosa che ci viene in mente sono i computer, la tecnologia, la matematica o le scienze. Ma perché non usare a nostro vantaggio il fatto che gli studenti hanno diversi interessi e studiano diverse materie introducendo la programmazione in tutto il piano di studi?</p> 
 <p>Integrare la programmazione in aula ha molti vantaggi perché aiuta gli studenti a sviluppare le loro abilità di pensiero critico e di risoluzione dei problemi, a diventare utenti attivi e a guidare il loro processo di apprendimento, il che è di fondamentale importanza a scuola. La cosa più importante, però, è che i tuoi studenti impareranno divertendosi!</p>
 <p>Le lingue, la musica o le STEM sono solo alcune delle materie in cui gli insegnanti possono introdurre la programmazione per formare gli scienziati, i musicisti e gli artisti del futuro, o qualsiasi altra professionalità! Tutti gli insegnanti possono integrare la programmazione e il pensiero computazionale in classe. Alcuni esempi di attività che puoi svolgere in aula sono tenere una lezione CLIL per spiegare un algoritmo di vita quotidiana, creare un joystick in feltro per insegnare scienze o utilizzare robot educativi per accrescere la motivazione in matematica.</p> 
 <p>Guarda il video qui sotto per vedere come gli insegnanti di musica, di scienze o di lingue possono facilmente integrare la programmazione e il pensiero computazionale in classe, anche senza precedente esperienza. </p>',
-            'activities'=>[
-                '1'=>'Attività 1 – Robotica e inclusione per la primaria nelle STEM',
-                '2'=>'Attività 2 – La musica è programmazione',
-                '3'=>'Attività 3 – Il tinkering e la programmazione con Makey Makey',
-                '4'=>'Attività 4 – Un algoritmo di vita quotidiana per una lezione CLIL'
+            'activities' => [
+                '1' => 'Attività 1 – Robotica e inclusione per la primaria nelle STEM',
+                '2' => 'Attività 2 – La musica è programmazione',
+                '3' => 'Attività 3 – Il tinkering e la programmazione con Makey Makey',
+                '4' => 'Attività 4 – Un algoritmo di vita quotidiana per una lezione CLIL'
             ]
         ],
         '9' => [
-            'title'=>'Creare un automa con un micro:bit',
-            'author'=>'di Pauline Maas',
-            'text'=>'<p>
+            'title' => 'Creare un automa con un micro:bit',
+            'author' => 'di Pauline Maas',
+            'text' => '<p>
                    Utilizzare un micro:bit, ovvero un computer formato tascabile facilmente programmabile, può rivelarsi un modo facile e divertente per realizzare delle creazioni interessanti con i tuoi studenti, dai robot agli strumenti musicali, insegnando loro allo stesso tempo a programmare. È semplice e facile da usare perfino per i programmatori più giovani, ma allo stesso tempo tanto potente quanto basta per gli studenti più avanzati. Puoi integrarlo in svariate lezioni, dalla storia alla matematica e perfino alla scienza. Le possibilità sono infinite. Il micro:bit è un modo coinvolgente ed economico per insegnare agli studenti la programmazione e allo stesso tempo infondere delle abilità fondamentali come il pensiero computazionale, la risoluzione dei problemi e la creatività.
                    </p>
                    <p>
 In questo video, Pauline Maas, insegnante di informatica al Koninklijke Visio, introdurrà il micro:bit e fornirà alcuni esempi pratici su come gli insegnanti possono integrarlo in classe, trasformando degli studenti passivi in creatori entusiasti.                   
                 </p>',
-            'activities'=>[
-                '1'=>'Codice Morse con il micro:bit, per la scuola primaria',
-                '2'=>'Escape room con il micro:bit, per la scuola secondaria di primo grado',
-                '3'=>'Creare un automa, per la scuola secondaria di secondo grado',
+            'activities' => [
+                '1' => 'Codice Morse con il micro:bit, per la scuola primaria',
+                '2' => 'Escape room con il micro:bit, per la scuola secondaria di primo grado',
+                '3' => 'Creare un automa, per la scuola secondaria di secondo grado',
             ]
         ],
         '10' => [
-            'title'=>'Programmazione creativa con Python',
-            'author'=>'di Ivana Vezjak',
-            'text'=>'<p>
+            'title' => 'Programmazione creativa con Python',
+            'author' => 'di Ivana Vezjak',
+            'text' => '<p>
 Passare dalla programmazione visuale a quella testuale è un processo naturale nella programmazione. Nonostante la programmazione visuale sia spesso ottima per i principianti, gli studenti, dopo un po’, potrebbero desiderare una nuova sfida. La programmazione testuale è il passo successivo per chiunque voglia approfondire la programmazione e il pensiero computazionale. 
                    </p>
                    <p>                   
@@ -150,57 +150,57 @@ In questo video, Ivana Vezjak ti introdurrà la sintassi di base di Python. Pyth
 <p> 
 Con Python gli studenti possono creare quiz su eventi storici, risolvere problemi di matematica e realizzare simulazioni di fisica, creare giochi, costruire siti web, condurre analisi di dati per progetti scientifici e tanto altro ancora. Python dispone di una ricca ed estesa libreria standard, una vasta community e un gran numero di tutorial e progetti disponibili online utilizzabili per insegnare, apprendere ed esercitarsi. Programmando in Python, analizzando i programmi e aggiustando i bug, gli studenti sviluppano la creatività e imparano a diventare costanti, persistenti e pazienti. Acquisiscono abilità di pensiero analitico e di risoluzione dei problemi scomponendo dei problemi complessi in parti più piccole. Queste capacità li aiuteranno ad affrontare i problemi in ogni aspetto della loro vita.
                 </p>',
-            'activities'=>[
-                '1'=>'Il mio primo quiz, per la scuola primaria',
-                '2'=>'Il gioco dell’impiccato, per la scuola secondaria di primo grado',
-                '3'=>'Indovina la bandiera!, per la scuola secondaria di secondo grado',
+            'activities' => [
+                '1' => 'Il mio primo quiz, per la scuola primaria',
+                '2' => 'Il gioco dell’impiccato, per la scuola secondaria di primo grado',
+                '3' => 'Indovina la bandiera!, per la scuola secondaria di secondo grado',
             ],
-            'links'=>[
+            'links' => [
                 'title' => 'Altre risorse correlate',
                 '1' => [
-                    "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Libreria standard Python (in inglese)",
-                    "description"=>"Raccolta di codice pre-costruito e moduli (es. modulo tartaruga, modulo di matematica, ecc.).",
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "Libreria standard Python (in inglese)",
+                    "description" => "Raccolta di codice pre-costruito e moduli (es. modulo tartaruga, modulo di matematica, ecc.).",
                 ],
                 '2' => [
-                    "url"=>"https://codecombat.com/",
-                    "title"=>"CodeCombat",
-                    "description"=>"Videogioco educativo per apprendere i concetti di programmazione.",
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Videogioco educativo per apprendere i concetti di programmazione.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/it-IT/codeclub",
-                    "title"=>"Progetti graduali di programmazione per bambini, dai principianti agli avanzati.",
-                    "description"=>"Progetti graduali di programmazione per bambini, dai principianti agli avanzati.",
+                    "url" => "https://projects.raspberrypi.org/it-IT/codeclub",
+                    "title" => "Progetti graduali di programmazione per bambini, dai principianti agli avanzati.",
+                    "description" => "Progetti graduali di programmazione per bambini, dai principianti agli avanzati.",
                 ],
                 '4' => [
-                    "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Inventa i tuoi giochi al computer con Python (in inglese)",
-                    "description"=>"Libro che ti insegnerà a programmare i tuoi giochi al computer con Python.",
+                    "url" => "https://inventwithpython.com/invent4thed/",
+                    "title" => "Inventa i tuoi giochi al computer con Python (in inglese)",
+                    "description" => "Libro che ti insegnerà a programmare i tuoi giochi al computer con Python.",
                 ],
                 '5' => [
-                    "url"=>"https://www.codewars.com/",
-                    "title"=>"CodeWars",
-                    "description"=>"Community educativa in cui gli studenti e gli insegnanti possono esercitarsi attraverso una serie di sfide.",
+                    "url" => "https://www.codewars.com/",
+                    "title" => "CodeWars",
+                    "description" => "Community educativa in cui gli studenti e gli insegnanti possono esercitarsi attraverso una serie di sfide.",
                 ],
                 '6' => [
-                    "url"=>"https://hourofpython.com/",
-                    "title"=>"Hour of Python",
-                    "description"=>"Raccolta di lezioni introduttive su Python (sia testuali che a blocchi) utilizzando i Trinket interattivi.",
+                    "url" => "https://hourofpython.com/",
+                    "title" => "Hour of Python",
+                    "description" => "Raccolta di lezioni introduttive su Python (sia testuali che a blocchi) utilizzando i Trinket interattivi.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'Programmare per includere',
-            'author'=>'gruppo di lavoro della Settimana europea della programmazione',
-            'text'=>'<p>
+            'title' => 'Programmare per includere',
+            'author' => 'gruppo di lavoro della Settimana europea della programmazione',
+            'text' => '<p>
                    Portare la programmazione in classe può essere difficoltoso, soprattutto se ci sono studenti con determinate disabilità. Ma è importante ricordare che chiunque, indipendentemente dalle proprie capacità, può imparare a programmare. I bambini con bisogni speciali possono trarre grande beneficio dall’apprendimento di alcuni aspetti della programmazione, perché essa insegna agli studenti competenze importanti per la vita come la risoluzione di problemi, l’organizzazione e l’indipendenza. La programmazione può anche migliorare le competenze relazionali e sociali, con le quali molti bambini con disabilità hanno difficoltà, attraverso la collaborazione e il lavoro di gruppo. È importante inoltre sottolineare che gli studenti si divertano mentre imparano a fianco dei loro coetanei.
                    </p><p>
                    In questo video, il gruppo di lavoro della Settimana europea della programmazione mostrerà alcune attività pratiche, divertenti e facili da portare in classe, adattate nello specifico per studenti con disabilità visive, sindrome di Down e che rientrano nello spettro dell’autismo.
                 </p>',
-            'activities'=>[
-                '1'=>'Il portauova analogico',
-                '2'=>'Un mouse molto intelligente',
-                '3'=>'La stella che fa le stelle',
+            'activities' => [
+                '1' => 'Il portauova analogico',
+                '2' => 'Un mouse molto intelligente',
+                '3' => 'La stella che fa le stelle',
             ]
         ],
 
@@ -212,37 +212,48 @@ Con Python gli studenti possono creare quiz su eventi storici, risolvere problem
                 "2" => "Gli Obiettivi di Sviluppo Sostenibile (SDG) sono il nucleo dell'Agenda per lo Sviluppo Sostenibile del 2030, adottata da tutti gli Stati membri delle Nazioni Unite come mappa per orientarsi a raggiungere la pace e la prosperità sul pianeta, incoraggiando lo sviluppo globale. Gli insegnanti possono usare gli SDG in classe come strumento per far sviluppare il pensiero critico ai loro studenti, ma anche per aiutarli a trovare la loro identità e i loro obiettivi. La combinazione di elementi di base della codifica e del pensiero computazionale con gli SDG aumenterà la fiducia dei vostri studenti e voi li aiuterete a sviluppare la loro creatività, lo spirito imprenditoriale, la capacità di risolvere problemi o di comunicare. ",
                 "3" => "Nelle attività che seguono, gli studenti applicheranno i principi Scratch, di codifica ASCII e di codifica unplugged ad argomenti attuali di rilevanza globale e sociale. Gli insegnanti sensibilizzeranno gli studenti sugli obiettivi dello sviluppo sostenibile e li aiuteranno a sviluppare empatia, cittadinanza attiva e le competenze prosociali in modo divertente e coinvolgente. ",
                 "4" => "Ciascun piano di lezione si concentra su un SDG:",
-         "5" => "Obiettivo 3 dello sviluppo sostenibile: garantire una vita sana e promuovere il benessere per tutti a tutte le età",
-         "6" => "Obiettivo 5 dello sviluppo sostenibile: raggiungere l'uguaglianza di genere e dare potere a tutte le donne e le ragazze",
-         "7" => "Obiettivo 13 dello sviluppo sostenibile: agire con urgenza per combattere il cambiamento climatico e le sue conseguenze",
-     ],
-    "activities" => [
-    "1" => "Progetto Karateka: conoscere il karate attraverso la programmazione, per scuole elementari, medie e superiori",
-    "2" => "Obiettivi di sviluppo sostenibile e di programmazione per il cambiamento climatico, per la scuola primaria",
-    "3" => "Codifica per l'uguaglianza di genere, per la scuola secondaria superiore",
-]
-]
+                "5" => "Obiettivo 3 dello sviluppo sostenibile: garantire una vita sana e promuovere il benessere per tutti a tutte le età",
+                "6" => "Obiettivo 5 dello sviluppo sostenibile: raggiungere l'uguaglianza di genere e dare potere a tutte le donne e le ragazze",
+                "7" => "Obiettivo 13 dello sviluppo sostenibile: agire con urgenza per combattere il cambiamento climatico e le sue conseguenze",
+            ],
+            "activities" => [
+                "1" => "Progetto Karateka: conoscere il karate attraverso la programmazione, per scuole elementari, medie e superiori",
+                "2" => "Obiettivi di sviluppo sostenibile e di programmazione per il cambiamento climatico, per la scuola primaria",
+                "3" => "Codifica per l'uguaglianza di genere, per la scuola secondaria superiore",
+            ]
+        ]
 
-     ,
-
-
-"13" => [
-    "title" => "Introduzione all'intelligenza artificiale a scuola",
-    "author" => "di Artur Coelho e Marjana Prifti Skenduli",
-    "text" => [
-        "1" => "L'Intelligenza Artificiale (IA) ha un impatto su molte aree della vita quotidiana: autocorregge il testo che digiti sul tuo cellulare, sceglie i brani per la tua app musicale preferita e ti suggerisce password quando le hai dimenticate. Per IA si intende una combinazione di apprendimento automatico, robotica e algoritmi, con applicazioni in tutti i campi: dall'informatica alla produzione, dalla medicina alla moda. Perciò essa occupa uno spazio importante nelle nostre vite e nella nostra società e svolge un ruolo chiave nello sviluppo della scienza. E come da ogni altro importante fenomeno nella nostra vita, gli studenti trarranno beneficio dall'apprenderla. Ma come insegnare una cosa così complessa come l'IA? ",
-        "2" => "Questo Bit di apprendimento ti aiuterà a spiegare agli studenti cos'è l'IA e quale ruolo svolge nella loro vita. Queste attività sono pensate per i non esperti, in modo da renderne i contenuti facilmente comprensibili e analizzare efficacemente termini complessi trasformandoli in concetti semplici. Con questi modelli di lezione puoi aiutare gli studenti ad apprendere gli usi dell'IA e alcuni dei meccanismi che stanno dietro ad essa. Le attività sono progettate per consentire ai ragazzi di sviluppare le loro capacità analitiche e di pensiero critico: per esempio, in quella proposta da Marjana gli studenti sviluppano una pipeline di classificazione. Queste proposte aiuteranno anche gli studenti a comprendere le varie applicazioni dell'IA: nell'attività di Artur impareranno il legame tra l'IA e l'arte e come l'IA possa essere usata per migliorare l'espressione visiva. Grazie ad esse, gli alunni rifletteranno anche sui pericoli dell'IA e sul suo impatto. "
-    ],
-    "activities" => [
-        "1" => "Human-AI- Art, per la scuola elementare",
-        "2" => "Insegnare le macchine da classificare: introduzione al Supervised Machine Learning, per la scuola secondaria inferiore",
-        "3" => "Insegnare le macchine da classificare: introduzione al Supervised Machine Learning, per la scuola secondaria superiore",
-    ]
-],
+        ,
 
 
+        "13" => [
+            "title" => "Introduzione all'intelligenza artificiale a scuola",
+            "author" => "di Artur Coelho e Marjana Prifti Skenduli",
+            "text" => [
+                "1" => "L'Intelligenza Artificiale (IA) ha un impatto su molte aree della vita quotidiana: autocorregge il testo che digiti sul tuo cellulare, sceglie i brani per la tua app musicale preferita e ti suggerisce password quando le hai dimenticate. Per IA si intende una combinazione di apprendimento automatico, robotica e algoritmi, con applicazioni in tutti i campi: dall'informatica alla produzione, dalla medicina alla moda. Perciò essa occupa uno spazio importante nelle nostre vite e nella nostra società e svolge un ruolo chiave nello sviluppo della scienza. E come da ogni altro importante fenomeno nella nostra vita, gli studenti trarranno beneficio dall'apprenderla. Ma come insegnare una cosa così complessa come l'IA? ",
+                "2" => "Questo Bit di apprendimento ti aiuterà a spiegare agli studenti cos'è l'IA e quale ruolo svolge nella loro vita. Queste attività sono pensate per i non esperti, in modo da renderne i contenuti facilmente comprensibili e analizzare efficacemente termini complessi trasformandoli in concetti semplici. Con questi modelli di lezione puoi aiutare gli studenti ad apprendere gli usi dell'IA e alcuni dei meccanismi che stanno dietro ad essa. Le attività sono progettate per consentire ai ragazzi di sviluppare le loro capacità analitiche e di pensiero critico: per esempio, in quella proposta da Marjana gli studenti sviluppano una pipeline di classificazione. Queste proposte aiuteranno anche gli studenti a comprendere le varie applicazioni dell'IA: nell'attività di Artur impareranno il legame tra l'IA e l'arte e come l'IA possa essere usata per migliorare l'espressione visiva. Grazie ad esse, gli alunni rifletteranno anche sui pericoli dell'IA e sul suo impatto. "
+            ],
+            "activities" => [
+                "1" => "Human-AI- Art, per la scuola elementare",
+                "2" => "Insegnare le macchine da classificare: introduzione al Supervised Machine Learning, per la scuola secondaria inferiore",
+                "3" => "Insegnare le macchine da classificare: introduzione al Supervised Machine Learning, per la scuola secondaria superiore",
+            ]
+        ],
 
-
+        '14' => [
+            'title' => 'L’apprendimento nell’era delle ‘macchine intelligenti',
+            'author' => 'di Adil Tugyan, Georgia Lascaris e Marco Neves',
+            'text' => [
+                '1' => "L’avanzamento dell’IA negli ultimi anni è stato impressionante grazie ai rapidi progressi della potenza di calcolo e alla disponibilità di grandi quantità di dati. Questo ha portato a ingenti investimenti nella ricerca sull’IA e a una rapida espansione dell'industria stessa, rendendo l’IA la grande rivoluzione tecnologica del nostro tempo. L’IA ci circonda costantemente. È diventata parte della nostra vita quotidiana, tanto che a volte non ce ne accorgiamo nemmeno: usiamo suggerimenti online, assistenti vocali, sistemi di sicurezza e di rilevamento del volto quasi ogni giorno. Ma che dire dell’educazione? ",
+                '2' => 'L’IA ha un enorme potenziale e può favorire l’introduzione di nuove modalità d’insegnamento e migliorare il processo di apprendimento degli studenti. Questa pillola d’apprendimento ti aiuterà a integrare delle attività d’IA nel tuo insegnamento e a preparare i tuoi studenti a una vita e una carriera in un mondo modellato dall’IA. Queste attività sono state progettate per gli studenti per solleticare la loro curiosità, la loro capacità creative e di risoluzione dei problemi: per esempio, nell’attività di Adil, gli studenti capiscono che cosa sono gli algoritmi e le reti neurali e sono incoraggiati a creare la propria rete neurale per visualizzarne la struttura. Georgia guiderà gli studenti nella creazione, passo dopo passo, di un chatbot. Gli studenti costruiranno il proprio chatbot, prepareranno set di dati di domande e risposte e lo addestreranno in modo che possa rispondere a delle domande sul Covid-19. Nell’attività proposta da Marco, gli studenti esploreranno i benefici e le sfide delle macchine intelligenti nella vita quotidiana e nel lavoro. Quali sono i rischi derivanti dall’utilizzo d’IA? Quali impatti avrà l’IA sul futuro del lavoro? Quali lavori esisteranno ancora quando gli studenti entreranno nel mercato del lavoro?'
+            ],
+            'activities' => [
+                'title' => 'Nei programmi successivi gli studenti scopriranno le macchine intelligenti in modo divertente e coinvolgente.',
+                '1' => 'L’intelligenza artificiale (lA) e le sue reti, per la scuola elementare',
+                '2' => 'Il mio chatbot Covid-19, per la scuola media',
+                '3' => 'Vivere nell’era delle “macchine intelligenti”: sfide e opportunità, per la scuola superiore',
+            ]
+        ],
 
 
     ],

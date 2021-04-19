@@ -237,6 +237,21 @@ I denne video viser Kodeuge-teamet nogle praktiske, nemme og sjove kodeaktivitet
             ]
         ],
 
+        '14' => [
+            'title' => 'Læring i en tidsalder med intelligente maskiner',
+            'author' => 'af Adil Tugyan, Georgia Lascaris og Marco Neves',
+            'text' => [
+                '1' => 'Udviklingen af AI i de senere år har været imponerende takket være hurtige fremskridt inden for computerkraft og tilgængeligheden af store mængder data. Dette har ført til betydelige investeringer i AI-forskning og en hurtig udvidelse af AI-branchen, hvilket gør AI til en stor teknologisk revolution i vor tid. AI er overalt omkring os. Det er blevet en del af vores daglige rutine, så meget, at vi nogle gange ikke tænker på det som AI: Vi bruger online-anbefalinger, ansigtsgenkendelse, sikkerhedssystemer og stemmeassistenter næsten hver dag. Men hvad med uddannelse?',
+                '2' => 'AI har et enormt potentiale til at skabe nye måder at undervise og lære på og forbedre elevernes læring. Denne læringsdel hjælper dig med at integrere autentiske AI-aktiviteter i din undervisning og hjælper dig med at forberede dine elever til livet og karrieren i en verden formet af AI. Disse aktiviteter er designet til, at eleverne kan udvikle deres nysgerrighed, problemløsning og kreativitet: I Adils aktivitet lærer eleverne for eksempel om algoritmer og neurale netværk, og de opfordres til at oprette deres eget neurale netværk for at visualisere en AI-hjerne. Georgia vil guide dine elever i en trinvis udvikling af en chatbot. Eleverne vil bygge deres egen chatbot, forberede datasæt med spørgsmål og svar og træne den, så den kan besvare spørgsmål om Covid-19. I Marcos aktivitet vil eleverne udforske fordelene og udfordringerne ved intelligente maskiner i hverdagen og i arbejdslivet. Hvad er de risici ved AI, som vi er nødt til at overveje? Hvilken indvirkning vil AI have på fremtidens arbejde? Hvilke job vil de kunne få, når de kommer ind på arbejdsmarkedet i fremtiden?'
+            ],
+            'activities' => [
+                'title' => 'I undervisningsplanerne nedenfor lærer eleverne om intelligente maskiner på en sjov og engagerende måde.',
+                '1' => 'Kunstig intelligens (AI) og dets neurale netværk, til folkeskolen',
+                '2' => 'Min Covid-19-chatbot, til ungdomsuddannelser',
+                '3' => 'Et liv med "smart-maskiner": Udfordringer og muligheder, til ungdomsuddannelser',
+            ]
+        ],
+
 
 
     ],

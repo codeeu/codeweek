@@ -304,6 +304,20 @@ With Python, students can create quizzes about historical events, solve math pro
                 '3' => 'Teaching Machines to Classify: Intro to Supervised Machine Learning, for Upper Secondary School',
             ]
         ],
+        '14' => [
+            'title' => 'Learning in the Age of Intelligent Machines',
+            'author' => 'by Adil Tugyan, Georgia Lascaris and Marco Neves',
+            'text' => [
+                '1' => 'The progress of AI in recent years has been impressive thanks to rapid advances in computing power and the availability of large amounts of data. This has led to substantial investments in AI research and rapid expansion of the AI industry, making AI a major technological revolution of our time. AI is all around us. It has become part of our daily routine, so much so that we sometimes do not think of it as AI: we use online recommendation, face detection, security systems and voice assistants almost every day. But what about education? ',
+                '2' => 'AI has huge potential to enable new ways of teaching and learning and to enhance student learning. This Learning Bit will help you integrate authentic AI activities in your teaching and help you prepare your students for life and career in a world shaped by AI. These activities have been designed for students to develop their curiosity, problem-solving and creativity skills: for example, in Adil’s activity, students learn about algorithms and neural networks and they are encouraged to create their own neural network to visualise an AI brain. Georgia will guide your students in a step-by-step development of a chatbot. Students will build their own chatbot, prepare datasets of questions and answers and train it so it can answer questions about Covid-19. In Marco’s activity, students will explore the benefits and challenges of intelligent machines in everyday life and work. What are the risks of AI that we need to consider? What impacts will AI have on the future of work? What jobs will be offered to them when they enter the job market in the future?'
+            ],
+            'activities' => [
+                'title' => 'In the lesson plans below, students will learn about intelligent machines in a fun and engaging way.',
+                '1' => 'AI and Its Neural Networks',
+                '2' => 'My Covid-19 Chatbot',
+                '3' => 'Living in the Age of “Smart Machines”: Challenges and Opportunities',
+            ]
+        ],
     ],
     'download_video_script' => 'Download the video script',
     'ready_to_share' => 'Ready to share what you learnt with your students?',
