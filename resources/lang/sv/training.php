@@ -237,6 +237,33 @@ I den här videon kommer Code Week-teamet att visa dig några praktiska, enkla o
                 "3" => "Lär maskiner att klassificera: IIntroduktion till övervakad maskininlärning för gymnasiet",
             ]
         ],
+        '14' => [
+
+            'title' => 'Lärandet i intelligenta maskiners tidsålder',
+
+            'author' => 'av Adil Tugyan, Georgia Lascaris och Marco Neves',
+
+            'text' => [
+
+                '1' => 'De senaste årens framsteg för AI har varit imponerande tack vare dess snabba framsteg inom datorkraft och tillgången på stora mängder data. Detta har lett till betydande investeringar i AI-forskning och snabb expansion av AI-industrin, vilket gör AI till en stor teknisk revolution i vår tid. AI finns överallt omkring oss. Det har blivit en del av vår vardag, så mycket att vi ibland inte ser det som AI: vi använder online-rekommendation, ansiktsavkänning, säkerhetssystem och röstassistenter nästan varje dag. Men hur är det med utbildning? ',
+
+                '2' => 'AI har enorm potential för att möjliggöra nya sätt att undervisa och lära, och att förbättra elevernas lärande. Denna utbildningsbit hjälper dig att integrera autentiska AI-aktiviteter i din undervisning och hjälpa dig att förbereda dina elever för ett liv och en karriär i en värld formad av AI. Dessa övningar har utformats för att elever ska utveckla sin nyfikenhet, problemlösning och kreativitetsförmåga: till exempel i Adils aktivitet lär sig eleverna om algoritmer och neurala nätverk och de uppmuntras att skapa sitt eget neurala nätverk, för att visualisera en AI-hjärna. Georgia guidar dina elever i en steg-för-steg-utveckling av en chattbot. Eleverna kommer att bygga sin egen chattbot, förbereda datamängder för frågor och svar och träna den så att den kan svara på frågor om Covid-19. I Marcos övning kommer eleverna att utforska fördelarna och utmaningarna med intelligenta maskiner i vardagen och arbetet. Vilka är riskerna med AI som vi måste överväga? Vilka konsekvenser kommer AI att ha för framtidens arbete? Vilka jobb kommer att erbjudas eleverna när de i framtiden kommer ut på arbetsmarknaden?'
+
+            ],
+
+            'activities' => [
+
+                'title' => 'I lektionsplanerna nedan lär sig eleverna om intelligenta maskiner på ett både roligt och engagerande sätt.',
+
+                '1' => 'AI och dess neurala nätverk, för grundskolan',
+
+                '2' => 'Min Covid-19 Chattbot, för högstadiet',
+
+                '3' => 'Att leva i en tid av ”Smarta maskiner”: Utmaningar och möjligheter för gymnasieskolan',
+
+            ] 
+
+        ],
 
 
     ],

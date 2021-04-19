@@ -236,6 +236,21 @@ Pythoni abil saavad õpilased koostada viktoriine ajaloosündmuste kohta, lahend
             ]
         ],
 
+        '14' => [
+            'title' => 'Õppimine intelligentsete masinate ajastul',
+            'author' => 'Adil Tugyan, Georgia Lascaris ja Marco Neves',
+            'text' => [
+                '1' => 'Tänu andmetöötlusvõimsuse kiirele arengule ja suurte andmemahtude kättesaadavusele on tehisintellekti areng olnud viimastel aastatel muljetavaldav. See on viinud märkimisväärsetesse investeeringuteni tehisintellekti uurimisse ja tehisintellekti tööstuse kiiresse laienemiseni, tehes tehisintellektist meie ajastu suure tehnoloogilise revolutsiooni. Tehisintellekt on kõikjal meie ümber. Sellest on saanud osa meie igapäevarutiinist, nii palju, et me mõnikord ei mõtle sellest kui tehisintellektist: kasutame pea iga päev veebisoovitusi, näotuvastust, turvasüsteeme ja häälabilisi. Aga kuidas on haridusega?',
+                '2' => 'Tehisintellektil on tohutu potentsiaal võimaldada uusi õpetamis- ja õppimisviise ning tõhustada õpilaste õppimist. See õpimaterjal aitab teil integreerida autentsed tehisintellektitegevused oma õppetöösse ning aitab teil õpilasi ette valmistada eluks ja karjääriks tehisintellekti kujundatud maailmas. Tegevused on mõeldud õpilastele, arendamaks nende uudishimu, probleemide lahendamise ja loomevõime oskusi. Näiteks Adili tegevuses õpivad õpilased tundma algoritme ja närvivõrke ning neid ergutatakse looma oma närvivõrku tehisintellekti aju visualiseerimiseks. Georgia juhendab teie õpilasi vestlusroboti järkjärgulisel arendamisel. Õpilased koostavad oma vestlusroboti, valmistavad ette küsimuste ja vastuste andmekogumid ning treenivad seda, et see saaks vastata küsimustele Covid-19 kohta. Marco tegevuses uurivad õpilased intelligentsete masinate eeliseid ja väljakutseid igapäevaelus ja töös. Millised on tehisintellekti riskid, millega peame arvestama? Millist mõju avaldab tehisintellekt töö tulevikule? Milliseid töökohti neile tulevikus tööturule sisenemisel pakutakse?'
+            ],
+            'activities' => [
+                'title' => 'Alljärgnevates tunnikavades õpivad õpilased lõbusalt ja kaasahaaravalt tundma intelligentseid masinaid.',
+                '1' => 'Tehisintellekt ja selle närvivõrgud, algklassidele',
+                '2' => 'Minu Covid-19 vestlusrobot, põhikoolile',
+                '3' => 'Elamine nutikate masinate ajastul: väljakutsed ja võimalused, gümnaasiumile',
+            ]
+        ],
+
 
 
 

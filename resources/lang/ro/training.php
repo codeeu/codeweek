@@ -236,6 +236,21 @@ Cu Python, elevii pot să creeze jocuri cu întrebări despre evenimente istoric
             ]
         ],
 
+        '14' => [
+            'title' => 'Învățarea în era mașinilor inteligente',
+            'author' => 'de Adil Tugyan, Georgia Lascaris și Marco Neves',
+            'text' => [
+                '1' => 'Progresele din ultimii ani în domeniul IA este impresionant datorită avansului rapid al puterii de procesare computerizată și datorită disponibilității unor volume mari de date. Aceasta a dus la investiții substanțiale în domeniul cercetării IA și la expansiunea rapidă a industriei IA, făcând ca IA să genereze o revoluție tehnologică majoră a vremurilor noastre. IA se găsește peste tot în jurul nostru. A devenit parte din rutina noastră zilnică atât de mult încât, uneori, nici nu ne gândim la ea ca IA; folosim recomandări online, detecția facială, sisteme de securitate și asistenți vocali aproape în fiecare zi. Însă cum este în cazul educației? ',
+                '2' => 'IA are un potențial imens de a permite noi modalități de predare și de învățare și de îmbunătățire a procesului de învățare al elevilor. Acest modul de învățare vă învață să integrați activități de IA autentică în procesul de predare și vă ajută să vă pregătiți elevii pentru viață și carieră într-o lume modelată de IA. Aceste activități sunt concepute pentru ca elevii să își antreneze curiozitatea și să își dezvolte abilitățile de soluționare a problemelor și de creativitate; de exemplu, în activitatea lui Adil, elevii învață despre algoritmi și despre rețelele neuronale și sunt încurajați să își creeze propria rețea neuronală pentru a vizualiza un creier de IA. Georgia va călăuzi elevii pas cu pas în etapele de dezvoltare a unui chatbot. Elevii își vor construi propriul chatbot, își vor pregăti seturi de date cu întrebări și răspunsuri și vor instrui chatbot-ul să răspundă la întrebări despre COVID-19. În cadrul activității lui Marco, elevii vor explora beneficiile și provocările mașinilor inteligente în viața și munca de zi cu zi. Există riscuri în ceea ce privește IA pe care trebuie să le luăm în considerare? Ce impact va avea IA asupra viitorului muncii? Ce joburi li se vor oferi mașinilor inteligente atunci când vor pătrunde pe piața muncii în viitor?'
+            ],
+            'activities' => [
+                'title' => 'În planul de lecție de mai jos, elevii vor învăța despre mașinile inteligente într-un mod distractiv și captivant.',
+                '1' => 'IA și rețelele sale neuronale, pentru școala primară',
+                '2' => 'Chatbot-ul meu despre Covid-19, pentru învățământul secundar inferior',
+                '3' => 'Viața în era „mașinilor inteligente”: Provocări și oportunități, pentru învățământul secundar superior',
+            ]
+        ],
+
 
     ],
     'download_video_script' => 'Descărcați textul videoclipului',

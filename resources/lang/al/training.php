@@ -90,60 +90,60 @@ return [
             ]
         ],
         '6' => [
-            'title'=>'App Inventor dhe zhvillimi i aplikacioneve',
-            'author'=>'Nga Rosanna Kurrer',
-            'text'=>'<p>Hidhini një sy kësaj videoje ku Rosanna Kurrer, (Themeluese e CyberWayFinder) shpjegon se çfarë është App Inventor, shpjegon avantazhet e zhvillimit të aplikacioneve në klasë dhe jep disa shembuj se si mësuesit mund të integrojnë App Inventor në klasë, të transformojnë nxënësit pasivë në krijues entuziastë lojërash.</p>
+            'title' => 'App Inventor dhe zhvillimi i aplikacioneve',
+            'author' => 'Nga Rosanna Kurrer',
+            'text' => '<p>Hidhini një sy kësaj videoje ku Rosanna Kurrer, (Themeluese e CyberWayFinder) shpjegon se çfarë është App Inventor, shpjegon avantazhet e zhvillimit të aplikacioneve në klasë dhe jep disa shembuj se si mësuesit mund të integrojnë App Inventor në klasë, të transformojnë nxënësit pasivë në krijues entuziastë lojërash.</p>
 <p>Të gjithë ne i përdorim aplikacionet sepse ato janë një mënyrë praktike dhe e shpejtë për të koordinuar aktivitetet tona. Ato përdoren gjithnjë e më shumë në arsim sepse lejojnë mësimin e personalizuar dhe u japin mundësi përdoruesve të mësojnë informacione, prandaj pse të mos u jepni mundësinë nxënësve tuaj të ndërtojnë një aplikacion arsimor për të tjerët?</p>',
-            'activities'=>[
-                '1'=>'Aktiviteti 1 – Titulli, për ciklin e ulët fillor',
-                '2'=>'Aktiviteti 2 – Titulli, për ciklin e mesëm të ulët',
-                '3'=>'Aktiviteti 3 – Titulli, për shkollën e mesme'
+            'activities' => [
+                '1' => 'Aktiviteti 1 – Titulli, për ciklin e ulët fillor',
+                '2' => 'Aktiviteti 2 – Titulli, për ciklin e mesëm të ulët',
+                '3' => 'Aktiviteti 3 – Titulli, për shkollën e mesme'
             ]
         ],
         '7' => [
-            'title'=>'Modifikimi dhe krijimi',
-            'author'=>'Nga Diogo da Silva',
-            'text'=>'<p>Puna dhe vendet e punës po ndryshojnë dhe arsimi po ndjek hapat e tyre. Kur i përgatisim nxënësit për karrierat e shekullit të 21të, bëhen të rëndësishme aftësitë e reja si modifikim, krijimi dhe “hacking”, sepse ato ngushtojnë hendekun mes shkollës dhe realitetit. Duke e transformuar klasën në një mjedis bashkëpunues që fokusohet te zgjidhja e problemeve, nxënësit janë në gjendje të përfshihen dhe të lulëzojnë. Këto aktivitete nxisin diskutimin, duke lejuar që klasa të bëhet një qendër komunikimi, ku çdo kontribut është i rëndësishëm.</p> 
+            'title' => 'Modifikimi dhe krijimi',
+            'author' => 'Nga Diogo da Silva',
+            'text' => '<p>Puna dhe vendet e punës po ndryshojnë dhe arsimi po ndjek hapat e tyre. Kur i përgatisim nxënësit për karrierat e shekullit të 21të, bëhen të rëndësishme aftësitë e reja si modifikim, krijimi dhe “hacking”, sepse ato ngushtojnë hendekun mes shkollës dhe realitetit. Duke e transformuar klasën në një mjedis bashkëpunues që fokusohet te zgjidhja e problemeve, nxënësit janë në gjendje të përfshihen dhe të lulëzojnë. Këto aktivitete nxisin diskutimin, duke lejuar që klasa të bëhet një qendër komunikimi, ku çdo kontribut është i rëndësishëm.</p> 
 <p>Hidhini një sy videos së mëposhtme, ku mësuesi portugez i lëndëve SHTIM, Diogo da Silva, një anëtar i Escola Global, ju çon hap pas hapi përmes zhvillimit të një mësimi që i nxit nxënësit ta gjejnë zgjidhjen duke modifikuar, krijuar dhe bërë “hacking”.</p>',
-            'activities'=>[
-                '1'=>'Aktiviteti 1 – Titulli, për ciklin e ulët fillor',
-                '2'=>'Aktiviteti 2 – Titulli, për ciklin e mesëm të ulët',
-                '3'=>'Aktiviteti 3 – Titulli, për shkollën e mesme'
+            'activities' => [
+                '1' => 'Aktiviteti 1 – Titulli, për ciklin e ulët fillor',
+                '2' => 'Aktiviteti 2 – Titulli, për ciklin e mesëm të ulët',
+                '3' => 'Aktiviteti 3 – Titulli, për shkollën e mesme'
             ]
         ],
         '8' => [
-            'title'=>'Kodimi për të gjitha lëndët',
-            'author'=>'Nga M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
-            'text'=>'<p>Kur mendoni për kodimin në klasë, imazhi i parë që vjen në mendje janë kompjuterët, teknologjia, matematika ose shkenca. Por, duke qenë se nxënësit kanë një numër interesash dhe lëndësh, pse të mos e përdorim këtë në favorin tonë dhe ta implementojmë kodimin në të gjithë kurrikulën?</p>
+            'title' => 'Kodimi për të gjitha lëndët',
+            'author' => 'Nga M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text' => '<p>Kur mendoni për kodimin në klasë, imazhi i parë që vjen në mendje janë kompjuterët, teknologjia, matematika ose shkenca. Por, duke qenë se nxënësit kanë një numër interesash dhe lëndësh, pse të mos e përdorim këtë në favorin tonë dhe ta implementojmë kodimin në të gjithë kurrikulën?</p>
 <p>Integrimi i kodimit në klasë ka shumë përfitime, sepse i ndihmon nxënësit të zhvillojnë aftësitë e tyre në mendimin e tyre kritik dhe zgjidhjen e problemeve, të bëhen përdorues aktivë dhe të drejtojnë procesin e tyre të të mësuarit, që është thelbësor në shkolla. Megjithatë, gjëja më e rëndësishme është se nxënësit tuaj do të mësojnë ndërkohë që argëtohen!</p>
 <p>Gjuhësia, muzika ose SHTIM (shkenca, teknologjia, inxhinieria dhe matematika) janë vetëm disa prej lëndëve që mësuesit mund të kodojnë për shkencëtarët, muzikantët dhe artistët e  ardhshëm, praktikisht për këdo! Të gjithë mësuesit mund të integrojnë kodimin dhe mendimin kompjuterik në klasë. Përdorimi i një mësimi të metodës CLIL për të shpjeguar një algoritëm të jetës së përditshme, krijimi i një leve amatore për të mësuar rreth shkencës ose përdorimi i robotëve edukativë për të nxitur motivimin në matematikë, janë disa shembuj të aktiviteteve që mund të bëni në klasë.</p>
 <p>Shikoni videon më poshtë për të parë se si mësuesit e muzikës, shkencës ose gjuhëve mund të integrojnë me lehtësi kodimin ose mendimin kompjuterik në klasë, megjithëse mund të mos keni përvojë të mëparshme.</p>',
-            'activities'=>[
-                '1'=>'Aktiviteti 1 Robotika dhe përfshirja për shkollën fillore në lëndët e SHTIM',
-                '2'=>'Aktiviteti 2 Muzika është kodim',
-                '3'=>'Aktiviteti 3 Modifikimi dhe kodimi me Makey Makey',
-                '4'=>'Aktiviteti 4 Një algoritëm i jetës së përditshme për një mësim të metodës CLIL'
+            'activities' => [
+                '1' => 'Aktiviteti 1 Robotika dhe përfshirja për shkollën fillore në lëndët e SHTIM',
+                '2' => 'Aktiviteti 2 Muzika është kodim',
+                '3' => 'Aktiviteti 3 Modifikimi dhe kodimi me Makey Makey',
+                '4' => 'Aktiviteti 4 Një algoritëm i jetës së përditshme për një mësim të metodës CLIL'
             ]
         ],
         '9' => [
-            'title'=>'Krijimi i një pajisjeje automatike me micro:bit',
-            'author'=>'nga Pauline Maas',
-            'text'=>'<p>
+            'title' => 'Krijimi i një pajisjeje automatike me micro:bit',
+            'author' => 'nga Pauline Maas',
+            'text' => '<p>
                    Përdorimi i një micro: bit, kompjuterin e xhepit me programim të lehtë, mund të jetë mënyrë argëtuese dhe e lehtë për të bërë krijime interesante, nga robotët te veglat muzikore me nxënësit tuaj, duke i mësuar në të njëjtën kohë si të kodojnë. Është e thjeshtë dhe e lehtë për t’u përdorur edhe për programuesit më të vegjël, ndërsa në të njëjtën kohë ka fuqi të mjaftueshme edhe për nxënësit e përparuar. Atë mund ta përfshini në një shumëllojshmëri mësimesh nga historia te matematika, dhe madje edhe shkenca. Mundësitë janë të pafundme. Micro: bit është një mënyrë tërheqëse dhe ekonomike për t’u mësuar nxënësve rreth kodimit duke u ngulitur aftësi themelore si p.sh. mendimi kritik, zgjidhja e problemeve, dhe krijueshmëria.
                    </p>
                    <p>
 Në këtë video, Pauline Maas, mësuese e shkencave kompjuterike pranë Koninklijke Visio, do të prezantojë micro:bit dhe do të japë disa shembuj praktikë se si mësuesit mund ta integrojnë atë në klasë, duke i transformuar nxënësit pasivë në krijues entuziastë.                   
                 </p>',
-            'activities'=>[
-                '1'=>'Kodi mors me micro: bit, për shkollën fillore',
-                '2'=>'Sfidë arratisjeje me micro: bit, për ciklin e mesëm të ulët',
-                '3'=>'Krijimi i një pajisjeje të automatizuar, për shkollën e mesme',
+            'activities' => [
+                '1' => 'Kodi mors me micro: bit, për shkollën fillore',
+                '2' => 'Sfidë arratisjeje me micro: bit, për ciklin e mesëm të ulët',
+                '3' => 'Krijimi i një pajisjeje të automatizuar, për shkollën e mesme',
             ]
         ],
         '10' => [
-            'title'=>'Kodimi krijues me Python',
-            'author'=>'nga Ivana Vezjak',
-            'text'=>'<p>
+            'title' => 'Kodimi krijues me Python',
+            'author' => 'nga Ivana Vezjak',
+            'text' => '<p>
 Lëvizja nga programimi vizual te ai me tekst është një rrjedhë natyrale në kodim. Ndërkohë që programimi vizual është shpesh i shkëlqyer për fillestarët, pas pak, nxënësit mund të kërkojnë një sfidë të re. Programimi me tekst është hapi i radhës për këdo që dëshiron të përfshihet më tej në programim dhe mendimin kompjuterik. 
                    </p>
                    <p>                   
@@ -152,57 +152,57 @@ Në këtë video, Ivana Vezjak ju prezanton me sintaksën bazë të Python. Pyth
 <p> 
 Me Python, nxënësit mund të krijojnë kuize rreth ngjarjeve historike, të zgjidhin probleme matematikore dhe të bëjnë simulime fizike, të krijojnë lojëra, të ndërtojnë uebsajte, të kryejnë analizime të dhënash për projekte shkencore e më shumë. Python ka një bibliotekë të pasur dhe të gjerë standarde, një komunitet të madh dhe një numër të madh tutorialësh dhe projektesh të disponueshme në internet, që mund të përdoren për mësimdhënie, mësim dhe praktikim. Duke koduar në Python, duke analizuar programe dhe duke rregulluar defekte në kod, nxënësit mësojnë kreativitetin dhe mësojnë se si të jenë konsistentë, këmbëngulës dhe të duruar. Ata mësojnë mendimin analitik dhe aftësitë e tyre për zgjidhjen e problemeve duke i zbërthyer problemet komplekse në komponentë më të vegjël. Këto kompetenca do t’i ndihmojnë ata në mënyrën e trajtimit të problemeve dhe në çdo fushë tjetër të jetës së tyre.
                 </p>',
-            'activities'=>[
-                '1'=>'“Kuizi im i parë”, për ciklin e ulët fillor',
-                '2'=>'“Hangman”, për ciklin e mesëm të ulët',
-                '3'=>'“Gjeni flamurin!”, për shkollën e mesme',
+            'activities' => [
+                '1' => '“Kuizi im i parë”, për ciklin e ulët fillor',
+                '2' => '“Hangman”, për ciklin e mesëm të ulët',
+                '3' => '“Gjeni flamurin!”, për shkollën e mesme',
             ],
-            'links'=>[
+            'links' => [
                 'title' => 'Burime të tjera të lidhura',
                 '1' => [
-                    "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"•	Biblioteka standarde e Python",
-                    "description"=>"Koleksion me kode dhe module të ndërtuara paraprakisht (p.sh. moduli “turtle”, moduli “math” etj.).",
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "•	Biblioteka standarde e Python",
+                    "description" => "Koleksion me kode dhe module të ndërtuara paraprakisht (p.sh. moduli “turtle”, moduli “math” etj.).",
                 ],
                 '2' => [
-                    "url"=>"https://codecombat.com/",
-                    "title"=>"CodeCombat",
-                    "description"=>"Videolojë edukative për të mësuar konceptet e programimit.",
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Videolojë edukative për të mësuar konceptet e programimit.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
-                    "title"=>"Projektet CodeClub",
-                    "description"=>"Nga fillestarët deri te të përparuarit, projekte programimi hap pas hapi për fëmijët.",
+                    "url" => "https://projects.raspberrypi.org/en/codeclub",
+                    "title" => "Projektet CodeClub",
+                    "description" => "Nga fillestarët deri te të përparuarit, projekte programimi hap pas hapi për fëmijët.",
                 ],
                 '4' => [
-                    "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Shpikni lojërat tuaja kompjuterike me Python",
-                    "description"=>"Libër që do t’ju mësojë të programoni lojërat tuaja kompjuterike me Python.",
+                    "url" => "https://inventwithpython.com/invent4thed/",
+                    "title" => "Shpikni lojërat tuaja kompjuterike me Python",
+                    "description" => "Libër që do t’ju mësojë të programoni lojërat tuaja kompjuterike me Python.",
                 ],
                 '5' => [
-                    "url"=>"https://www.codewars.com/",
-                    "title"=>"CodeWars",
-                    "description"=>"Komunitet arsimor ku nxënësit dhe mësuesit mund të stërviten vetë përmes një serie sfidash.",
+                    "url" => "https://www.codewars.com/",
+                    "title" => "CodeWars",
+                    "description" => "Komunitet arsimor ku nxënësit dhe mësuesit mund të stërviten vetë përmes një serie sfidash.",
                 ],
                 '6' => [
-                    "url"=>"https://hourofpython.com/",
-                    "title"=>"Hour of Python",
-                    "description"=>"Koleksion me mësime prezantuese Python (si me tekst ashtu edhe me blloqet) duke përdorur Trinkets interaktive.",
+                    "url" => "https://hourofpython.com/",
+                    "title" => "Hour of Python",
+                    "description" => "Koleksion me mësime prezantuese Python (si me tekst ashtu edhe me blloqet) duke përdorur Trinkets interaktive.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'Kodimi për përfshirje',
-            'author'=>'nga ekipi i Code Week',
-            'text'=>'<p>
+            'title' => 'Kodimi për përfshirje',
+            'author' => 'nga ekipi i Code Week',
+            'text' => '<p>
                    Kodimi në klasën tuaj mund të jetë sfidë, sidomos nëse keni nxënës me aftësi të kufizuara në klasë. Por është e rëndësishme që të mos harroni se kushdo, pavarësisht aftësive të tyre, mund të mësojë të kodojë. Fëmijët me nevoja të veçanta mund të përfitojnë shumë nga aspektet e mësimdhënies të kodimit, sepse u mëson nxënësve aftësi të rëndësishme të jetës, siç është zgjidhja e problemeve, organizimi dhe pavarësia. Kodimi mund të përmirësojë gjithashtu aftësitë sociale dhe ndërpersonale përmes bashkëpunimit dhe punës në ekip, aftësi me të cilat shumë fëmijë me aftësi të kufizuara kanë vështirësi. Ç’është më e rëndësishme, nxënësit argëtohen ndërkohë që mësojnë së bashku me bashkëmoshatarët.
                    </p><p>
 Në këtë video, ekipi i Code Week do t’ju tregojë disa aktivitete praktike, të thjeshta dhe argëtuese të përshtatura në veçanti për nxënës me vështirësi në shikim, sindromën Down dhe nxënës në spektrin e autizimit, që mësuesit mund t’i sjellin me lehtësi në klasën e tyre.                   
                 </p>',
-            'activities'=>[
-                '1'=>'Forma e vezëve, jashtë linje',
-                '2'=>'Një mi shumë inteligjent',
-                '3'=>'Një yll që krijon yje',
+            'activities' => [
+                '1' => 'Forma e vezëve, jashtë linje',
+                '2' => 'Një mi shumë inteligjent',
+                '3' => 'Një yll që krijon yje',
             ]
         ],
 
@@ -239,8 +239,20 @@ Në këtë video, ekipi i Code Week do t’ju tregojë disa aktivitete praktike,
             ]
         ],
 
-
-
+        '14' => [
+            'title' => 'Mësimi në epokën e makinerive inteligjent',
+            'author' => 'nga Adil Tugyan, Georgia Lascaris dhe Marco Neves',
+            'text' => [
+                '1' => "Përparimi i AI në vitet e fundit ka qenë mahnitës falë përparimeve të shpejta në fuqinë kompjuterike dhe në disponueshmërinë e sasive të mëdha të të dhënave. Kjo ka sjellë investime të konsiderueshme në studimet për AI dhe zgjerim të shpejtë të industrisë AI, duke e bërë AI një revolucion të madh teknologjik të kohës sonë. AI gjendet kudo rreth nesh. Është bërë pjesë e rutinës sonë të përditshme, ka shumë saqë shpesh nuk e shohim fare si AI: përdorim rekomandimet online, njohjen e fytyrës, sistemet e sigurisë dhe asistentët me zë pothuajse çdo ditë. Ç'të themi për arsimin?",
+                '2' => "AI ka potencial të jashtëzakonshëm për të mundësuar mënyra të reja mësimore dhe për të ndihmuar që studentët të mësojnë. Ky bit mësimor do t'ju ndihmojë të integroni aktivitetet origjinale AI në mësimdhënien tuaj dhe do t'ju ndihmojë t'i përgatitni studentët për jetën dhe karrierën në një botë që ka marrë formë prej AI. Këto aktivitete janë krijuar që studentët të zhvillojnë kureshtjen e tyre dhe aftësitë e tyre për zgjidhjen e problemeve: për shembull, në aktivitetin e Adilit, studentët mësojnë për algoritmet dhe rrjetet neurale, dhe nxiten që të krijojnë rrjetin e tyre neural për të vizualizuar një tru AI. Georgia do t'i ndihmojë studentët për zhvillimin hap pas hapi të një chatbot-i. Studentët do të ndërtojnë chatbot-in e tyre, do të përgatitin datasete me pyetje dhe përgjigje dhe do ta stërvitin që t'u përgjigjet pyetjeve rreth Covid-19. Në aktivitetin e Marco, studentët do të eksplorojnë dobitë dhe sfidat që sjellin makineritë inteligjente në jetën e përditshme dhe në punë. Cilat janë rreziqet e AI, që duhet t'i marrim parasysh? Çfarë ndikimesh do të ketë AI në të ardhmen e punës? Cilat punë do t'u jepen atyre kur të hyjnë në tregun e punës në të ardhmen?"
+            ],
+            'activities' => [
+                'title' => 'Në planet mësimore të mëposhtme, studentët do të mësojnë për makineritë inteligjente në mënyrë argëtuese dhe përfshirëse.',
+                '1' => 'AI dhe rrjetet neurale, për shkollën fillore',
+                '2' => 'Chatbot-i im për Covid-19, për shkollën fillore të ciklit të lartë',
+                '3' => 'Jeta në epokën e "makinerive inteligjente": Sfidat dhe mundësitë, për shkollën fillore të ciklit të lartë'
+            ]
+        ],
 
 
     ],
