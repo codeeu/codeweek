@@ -11,12 +11,12 @@
                 <h2>#CodeWeek</h2>
                 <h1>@lang('menu.about')</h1>
             </div>
-            <div class="image">
-                <img src="/images/banner_about.svg" class="static-image">
-                <div class="mt-48 mr-8">
-                    <img src="{{asset('images/ally.png')}}" width="100px">
-                </div>
-            </div>
+{{--            <div class="image">--}}
+{{--                <img src="/images/banner_about.svg" class="static-image">--}}
+{{--                <div class="mt-48 mr-8">--}}
+{{--                    <img src="{{asset('images/ally.png')}}" width="100px">--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
         </section>
 
@@ -33,7 +33,7 @@
 
                 @lang('about.codeweek_in_numbers-text')
 
-                <img src="{{asset('img/participation-2019.gif')}}">
+                <img src="{{asset('img/participation-2020.gif')}}">
 
             </div>
 
