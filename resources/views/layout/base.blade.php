@@ -70,6 +70,7 @@
     @endif
 
     <main>
+
         @yield("content")
     </main>
 

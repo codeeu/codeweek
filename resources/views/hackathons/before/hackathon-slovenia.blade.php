@@ -1,5 +1,7 @@
 @extends('layout.base')
 
+<x-tailwind></x-tailwind>
+
 @section('hackathons.header')
     @include('hackathons.before.header', ["enabled_language" => "sl","registration_link"=>"https://ec.europa.eu/eusurvey/runner/EUCWHackathonSlovenia"])
 @endsection
@@ -182,6 +184,30 @@
 {{--                    </div>--}}
 {{--                    <img src="/images/hackathons/side_events.png">--}}
 {{--                </section>--}}
+
+        <section id="partners">
+            <div>
+                <h1>@lang('hackathon-romania.misc.2')</h1>
+            </div>
+
+            <div class="partners-grid">
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/google.png')}}">
+                    </div>
+                </div>
+
+{{--                <div class="item">--}}
+{{--                    <div class="flex justify-center">--}}
+{{--                        <img src="{{asset('/images/hackathons/partners/redhat.png')}}">--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+
+
+
+
+            </div>
+        </section>
 
         <section id="about-codeweek">
             <div class="text">
