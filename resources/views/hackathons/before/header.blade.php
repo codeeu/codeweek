@@ -42,22 +42,25 @@
         <nav id="primary-menu">
             <ul>
                 <li>
-                    <a href="#challenge">The challenge</a>
+                    <a style="font-size:16px" href="#challenge">The challenge</a>
                 </li>
                 <li>
-                    <a href="#programme">Programme</a>
+                    <a style="font-size:16px" href="#programme">Programme</a>
                 </li>
                 <li>
-                    <a href="#programme">Practical info</a>
+                    <a style="font-size:16px" href="#programme">Practical info</a>
                 </li>
                 <li>
-                    <a href="#jury-mentors">Jury & Mentors</a>
+                    <a style="font-size:16px" href="#jury-mentors">Jury & Mentors</a>
                 </li>
                 <li>
-                    <a href="#side-events">Side events</a>
+                    <a style="font-size:16px" href="#side-events">Side events</a>
                 </li>
                 <li>
-                    <a href="#about-codeweek">About CODEWEEK.EU</a>
+                    <a style="font-size:16px" href="#partners">Partners</a>
+                </li>
+                <li>
+                    <a style="font-size:16px" href="#about-codeweek">About CODEWEEK.EU</a>
                 </li>
             </ul>
         </nav>

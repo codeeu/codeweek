@@ -215,7 +215,7 @@
             </div>
         </section>
 
-        <section id="programme" id="pratical-info">
+        <section id="side-events">
             <h1>@lang('hackathon-ireland.sections.11.title')</h1>
             <p>@lang('hackathon-ireland.sections.11.content.0')</p>
 
