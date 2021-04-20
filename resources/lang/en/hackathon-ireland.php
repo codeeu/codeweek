@@ -101,7 +101,7 @@ return [
         11 => [
             "title" => "I don't know coding - what can I do?",
             "content" => [
-                "From April to September, there will be Hackathon side events for beginners in coding, tinkering with hardware and robotics and so on for participants to learn some basics of computational thinking and coding. See more information about how to register on your local page.",
+                "In connection with the hackathon, there will be workshops for beginners in coding, tinkering with hardware and robotics and so on for participants to learn some basics of computational thinking and coding. From April to September, we are organising side events with our amazing partners of the EU Code Week Hackathons and it’s free to take part! Check out the different activities and register to get the link.",
             ]
         ],
         12 => [
