@@ -3,7 +3,7 @@
 <x-tailwind></x-tailwind>
 
 @section('hackathons.header')
-    @include('hackathons.before.header', ["enabled_language" => "en", "registration_link"=>"https://ec.europa.eu/eusurvey/runner/c20f3e59-fc39-7248-0347-d8e736025fb2 "])
+    @include('hackathons.before.header', ["enabled_language" => "en", "registration_link"=>"https://ec.europa.eu/eusurvey/runner/EUCWHackathonIreland"])
 @endsection
 
 @section('content')
@@ -70,7 +70,7 @@
                     <div class="title">@lang('hackathon-ireland.title')</div>
                     <div class="city">@lang('hackathons.cities.2.country')</div>
                     <div class="date">@lang('hackathons.cities.2.date')</div>
-                    <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/c20f3e59-fc39-7248-0347-d8e736025fb2"
+                    <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCWHackathonIreland"
                        class="codeweek-action-link-button">@lang('login.register')</a>
                 </div>
             </div>
@@ -215,14 +215,65 @@
             </div>
         </section>
 
-        <section id="side-events">
-            <div class="left">
-                <h1>@lang('hackathon-ireland.sections.11.title')</h1>
-                <p>@lang('hackathon-ireland.sections.11.content.0')</p>
-                <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCWHackathonIreland"
-                   class="codeweek-action-link-button">@lang('login.register')</a>
+        <section id="programme" id="pratical-info">
+            <h1>@lang('hackathon-ireland.sections.11.title')</h1>
+            <p>@lang('hackathon-ireland.sections.11.content.0')</p>
+
+            <div class="p-8 leading-6 bg-yellow-200 bg-opacity-25">
+                <h2>Animate a name</h2>
+
+                <div class="mb-4">Are you between 9 to 14 and eager to know more about computer programming? This workshop is for you! You will create, have fun and quickly acquire some coding skills. With just a handful of blocks and a few clicks, you can make a "sprite" (character) dance, talk, or animate it in a variety of ways. In addition, the computer science concepts we will be using in Scratch for CS First can be applied to other advanced programming languages such as Python or Java.</div>
+
+                Register, and participate in this activity and you will be able to:<br/>
+                <ul style="list-style-type: circle;margin-left:40px; margin-top:0px;">
+                    <li>Use a block-based programming language</li>
+                    <li>Master important computer science concepts such as events, sequences and loops</li>
+                    <li>Create an animation project in Scratch for CS</li>
+                </ul>
+
+                First Date: Friday 21 May - <a href="https://docs.google.com/forms/d/e/1FAIpQLSfjRuTdiP9zMwY0HSjUiZwLYBKEodJZ03jLbA9pE15oBvK7OA/viewform?resourcekey=0-bG86S5TaE77kuXK_VmTzIQ">Click here to register</a> !
             </div>
-            <img src="/images/hackathons/side_events.png">
+
+            <div class="p-8 leading-6 bg-yellow-200 bg-opacity-25 mt-6">
+                <h2>Creative Coding Workshop</h2>
+
+                <div class="mb-4">Learn the basics of Python with imagiLabs' creative coding tools! Perfect for kids aged 9-15, this 1.5 hour workshop for beginners will take coders from lighting up one pixel at a time to making colourful animations.</div>
+                Date: Saturday 15 May, 13:00 - <a href="https://docs.google.com/forms/d/e/1FAIpQLSf123Y_kiUYfvCspHgU4z0SKzQcTD_nXbCnyRdwk4l7xCPqng/viewform">click here to register</a> !
+
+                <div class="text-sm">Download the free imagiLabs app on your iOS or Android device to get started today. No imagiCharms needed -- come to the virtual workshop as you are!</div>
+            </div>
+        </section>
+{{--        <section id="side-events">--}}
+{{--            <div class="left">--}}
+{{--                --}}
+{{--                <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCWHackathonIreland"--}}
+{{--                   class="codeweek-action-link-button">@lang('login.register')</a>--}}
+{{--            </div>--}}
+{{--            <img src="/images/hackathons/side_events.png">--}}
+{{--        </section>--}}
+
+        <section id="partners">
+            <div>
+                <h1>@lang('hackathon-ireland.misc.2')</h1>
+            </div>
+
+            <div class="partners-grid">
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/google.png')}}">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/redhat.png')}}">
+                    </div>
+                </div>
+
+
+
+
+            </div>
         </section>
 
         <section id="about-codeweek">

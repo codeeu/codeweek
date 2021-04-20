@@ -485,10 +485,8 @@
 
 
 #codeweek-hackathons-before-page #partners {
-  //background-color: rgba(254, 104, 36, 0.4);
   background: rgb(254,104,36);
   background: linear-gradient(0deg, rgba(254,104,36,1) 15%, rgba(255,255,255,1) 100%);
- // background-image: url('/images/hackathons/programme_background.svg');
   background-position-y: 40px;
   background-repeat: no-repeat;
   padding: 20px 30px;
@@ -528,6 +526,7 @@
   }
 
   #codeweek-hackathons-before-page #partners {
+
     padding: 100px 150px;
     h1 {
       font-size: 55px;
@@ -539,16 +538,19 @@
     .partners-grid {
 
       @media (max-width: 960px) {
+
         grid-template-columns: 1fr;
       }
 
       @media (min-width: 961px) {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-flow: column;
+        //grid-template-columns: 1fr 1fr 1fr;
       }
       display: grid;
-
+      justify-content: center;
       grid-gap: 40px;
       margin-top: 20px;
+
 
 
 
