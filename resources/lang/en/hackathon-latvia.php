@@ -119,6 +119,14 @@ return [
             ]
         ],
 
+        "mentors" => [
+            "1" =>["Līna Sarma ","Computer Scientist and Creative Coder, Co creator of Riga Tech Girls. "],
+            "2" =>["Jānis Mozgis","Senior Developer at","loves beautifully crafted code."],
+            "3" =>["Jānis Cimbulis","Front-end Developer, Learn IT coding school teacher."],
+            "4" =>["Angela Jafarova","Director of the Coding school Datorium. Digital skills trainer, EU CodeWeek leading teacher in Latvia."],
+            "5" =>["Elchin Jafarov","Founder of the Datorium Coding School. Digital transformation, Data automation, Business intelligence."],
+        ],
+
         "after" => [
             "What happens next?",
             "The successful teams are now working on their prototype and will meet at the final hackathon in X to battle it out and decide the winner of the Latvian Hackathon. Make sure to follow here and on social media for updates from the contestants’ teams! ",
