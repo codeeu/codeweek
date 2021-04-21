@@ -119,6 +119,20 @@ return [
             ]
         ],
 
+        "mentors" => [
+            "1" =>["Francesco Piero Paolicelli",
+                   "Francesco Piero Paolicelli, known as Piersoft in every socials network.",
+                   "Coding and Making expert, Arduino Educational Trainer, Data Scientist and Data Viz Expert",
+                   "University professor at LUM (University Luis Monnet )School of Management for OpenData and OpenGovernment",
+                   "Champion of CoderDojo club Lecce"],
+            "2" =>["Gianluca Orpello",
+                    "Hi, my name is Gianluca Orpello. I’m an Apple Certified Trainer and a freelance Mentor in Italy. I specialise in iOS, watchOS, macOS and tvOS app design and develop, web and app design, Client-Server protocol & API design.",
+                    "I also have knowledge in User Interaction & User Experience, and Project Management."],
+            "3" =>["Luca Versari",
+                    "Luca Versari works on the JPEG XL standard as a Software Engineer for Google.",
+                    "In the past, he tutored Italian Computer Science Olympiads students preparing for international competitions."],
+        ],
+
         "after" => [
             "What happens next?",
             "The successful teams are now working on their prototype and will meet at the final hackathon in X to battle it out and decide the winner of the Italian Hackathon. Make sure to follow here and on social media for updates from the contestants’ teams! ",
