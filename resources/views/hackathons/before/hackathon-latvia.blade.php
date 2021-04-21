@@ -150,29 +150,49 @@
             </p>
             <div class="jury-grid">
                 <div class="item">
-                    <img src="{{asset('/images/hackathons/profiles/_blank1.png')}}">
-                    <h2>To Be Announced</h2>
-                    {{--                    <h3>Function,</h3>--}}
-                    {{--                    <h3>INSTITUTION</h3>--}}
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/latvia/lina-sarma.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-latvia.sections.mentors.1.0')</h2>
+                    <div class="text-sm">@lang('hackathon-latvia.sections.mentors.1.1')</div>
                 </div>
+
                 <div class="item">
-                    <img src="{{asset('/images/hackathons/profiles/_blank2.png')}}">
-                    <h2>To Be Announced</h2>
-                    {{--                    <h3>Function,</h3>--}}
-                    {{--                    <h3>INSTITUTION</h3>--}}
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/latvia/janis-mozgis.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-latvia.sections.mentors.2.0')</h2>
+                    <div class="text-sm">@lang('hackathon-latvia.sections.mentors.2.1')
+                        <a href="http://inzpire.me/">Inzpire.me</a>, @lang('hackathon-latvia.sections.mentors.2.2')
+                    </div>
                 </div>
+
                 <div class="item">
-                    <img src="{{asset('/images/hackathons/profiles/_blank3.png')}}">
-                    <h2>To Be Announced</h2>
-                    {{--                    <h3>Function,</h3>--}}
-                    {{--                    <h3>INSTITUTION</h3>--}}
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/latvia/janis-cimbulis.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-latvia.sections.mentors.3.0')</h2>
+                    <div class="text-sm">@lang('hackathon-latvia.sections.mentors.3.1')</div>
                 </div>
+
                 <div class="item">
-                    <img src="{{asset('/images/hackathons/profiles/_blank4.png')}}">
-                    <h2>To Be Announced</h2>
-                    {{--                    <h3>Function,</h3>--}}
-                    {{--                    <h3>INSTITUTION</h3>--}}
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/latvia/angela.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-latvia.sections.mentors.4.0')</h2>
+                    <div class="text-sm">@lang('hackathon-latvia.sections.mentors.4.1')</div>
                 </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/latvia/elchin.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-latvia.sections.mentors.5.0')</h2>
+                    <div class="text-sm">@lang('hackathon-latvia.sections.mentors.5.1')</div>
+                </div>
+
+
+
             </div>
         </section>
 
@@ -187,13 +207,19 @@
 
         <section id="partners">
             <div>
-                <h1>@lang('hackathon-romania.misc.2')</h1>
+                <h1>@lang('hackathon-latvia.misc.2')</h1>
             </div>
 
             <div class="partners-grid">
                 <div class="item">
                     <div class="flex justify-center">
                         <img src="{{asset('/images/hackathons/partners/google.png')}}">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/microsoft.png')}}">
                     </div>
                 </div>
 
