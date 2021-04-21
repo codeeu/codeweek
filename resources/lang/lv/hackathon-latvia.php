@@ -119,6 +119,14 @@ return [
             ]
         ],
 
+        "mentors" => [
+            "1" =>["Līna Sarma ","Datorzinātniece un radošā programmētāja, Rīga Tech Girls līdzradītāja."],
+            "2" =>["Jānis Mozgis","Vecākais izstrādātājs", "aizrauj skaisti nostrādāts kods."],
+            "3" =>["Jānis Cimbulis","Front-end izstrādātājs, Learn IT programmēšanas skolas pasniedzējs. "],
+            "4" =>["Anžela Džafarova","Jauniešu programmēšanas skolas Datorium direktore. Digitālo iemaņu trenere, ES programmēšanas nedēļas vadošais pedagogs Latvijā."],
+            "5" =>["Elchin Jafarov","Jauniešu programmēšanas skolas Datorium dibinātājs.Digitālā transformācija, datu automatizācija, biznesa inteliģence."],
+        ],
+
         "after" => [
             "Un kas notiks pēc tam?",
             "Veiksmīgās komandas strādās pie saviem prototipiem un satiksies fināla hakatonā X, lai cīnītos par Latvijas hakatona uzvarētāja titulu. Sekojiet komandu jaunumiem šeit un sociālajos medijos! ",
