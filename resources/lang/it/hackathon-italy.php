@@ -119,6 +119,21 @@ return [
             ]
         ],
 
+        "mentors" => [
+            "1" =>["Francesco Piero Paolicelli",
+                "Francesco Piero Paolicelli, conosciuto in ogni social network come Piersoft.",
+                "Esperto di Coding e Making, formatore per Arduino Educational, informatico ed esperto nelle visualizzazioni dei dati.",
+                "Docente presso la School of Management della LUM (Università Luis Monnet ) per OpenData e OpenGovernment",
+                "Champion del Club CoderDojo Lecce.",
+                ],
+            "2" =>["Gianluca Orpello",
+                "Ciao, mi chiamo Gianluca Orpello. Sono un Apple Certified Trainer e un Mentor freelance in Italia. Sono specializzato in progettazione e sviluppo di app iOS, watchOS, macOS e tvOS, progettazione applicazioni web, protocollo client-server e progettazione API.",
+                "Ho anche conoscenze in User Interaction, User Experience e Project Management."],
+            "3" =>["Luca Versari",
+                "Luca Versari lavora allo standard JPEG XL come sviluppatore software presso Google.",
+                "Nel passato, è stato un tutor per studenti partecipanti alle Olimpiadi Italiane di Informatica in preparazione per competizioni internazionali."],
+        ],
+
         "after" => [
             "Cosa succede dopo?",
             "Le squadre vincitrici lavorano al prototipo per poi sfidarsi nell’hackathon finale a X per decidere chi si aggiudicherà l’evento italiano. Segui qui, e sui social media, tutti gli aggiornamenti delle squadre partecipanti! ",
