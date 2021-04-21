@@ -150,29 +150,41 @@
             </p>
             <div class="jury-grid">
                 <div class="item">
-                    <img src="{{asset('/images/hackathons/profiles/_blank1.png')}}">
-                    <h2>To Be Announced</h2>
-                    {{--                    <h3>Function,</h3>--}}
-                    {{--                    <h3>INSTITUTION</h3>--}}
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/italy/piersoft.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-italy.sections.mentors.1.0')</h2>
+                    <div class="text-sm">@lang('hackathon-italy.sections.mentors.1.1')<br/>
+                        @lang('hackathon-italy.sections.mentors.1.2')<br/>
+                        @lang('hackathon-italy.sections.mentors.1.3')<br/>
+                        @lang('hackathon-italy.sections.mentors.1.4')
+                    </div>
                 </div>
+
                 <div class="item">
-                    <img src="{{asset('/images/hackathons/profiles/_blank2.png')}}">
-                    <h2>To Be Announced</h2>
-                    {{--                    <h3>Function,</h3>--}}
-                    {{--                    <h3>INSTITUTION</h3>--}}
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/italy/gianluca-orpello.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-italy.sections.mentors.2.0')</h2>
+                    <div class="text-sm">@lang('hackathon-italy.sections.mentors.2.1')<br/>
+                        @lang('hackathon-italy.sections.mentors.2.2')
+                    </div>
                 </div>
+
                 <div class="item">
-                    <img src="{{asset('/images/hackathons/profiles/_blank3.png')}}">
-                    <h2>To Be Announced</h2>
-                    {{--                    <h3>Function,</h3>--}}
-                    {{--                    <h3>INSTITUTION</h3>--}}
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/italy/luca-versari.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-italy.sections.mentors.3.0')</h2>
+                    <div class="text-sm">@lang('hackathon-italy.sections.mentors.3.1')<br/>
+                        @lang('hackathon-italy.sections.mentors.3.2')
+                    </div>
                 </div>
-                <div class="item">
-                    <img src="{{asset('/images/hackathons/profiles/_blank4.png')}}">
-                    <h2>To Be Announced</h2>
-                    {{--                    <h3>Function,</h3>--}}
-                    {{--                    <h3>INSTITUTION</h3>--}}
-                </div>
+
+
+
+
+
             </div>
         </section>
 
@@ -196,6 +208,12 @@
                 <div class="item">
                     <div class="flex justify-center">
                         <img src="{{asset('/images/hackathons/partners/google.png')}}">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/microsoft.png')}}">
                     </div>
                 </div>
 
