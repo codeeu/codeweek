@@ -188,30 +188,69 @@
                 @lang('hackathon-ireland.sections.10.content.0')
             </p>
             <div class="jury-grid">
+
                 <div class="item">
-                    <img src="{{asset('/images/hackathons/profiles/_blank1.png')}}">
-                    <h2>To Be Announced</h2>
-                    {{--                    <h3>Function,</h3>--}}
-                    {{--                    <h3>INSTITUTION</h3>--}}
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/_blank2.png')}}">
+                    </div>
+                    <h2 class="text-center">Anluan Dunne</h2>
+                    <div class="text-sm">Anluan is a Client Success Specialist for Red Hat Ireland. He has a background in Linux engineering but started his journey in technology on a Commodore 64.<br/>
+                        With over 20 years of experience designing and supporting solutions, Anluan is a results-focussed person who seeks out the best possible result for his clients.
+
+                    </div>
                 </div>
+
                 <div class="item">
-                    <img src="{{asset('/images/hackathons/profiles/_blank2.png')}}">
-                    <h2>To Be Announced</h2>
-                    {{--                    <h3>Function,</h3>--}}
-                    {{--                    <h3>INSTITUTION</h3>--}}
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/ireland/roisin-faherty.png')}}">
+                    </div>
+                    <h2 class="text-center">Roisin Faherty</h2>
+                    <div class="text-sm">Róisín is a lecturer of computing in the Technological University Dublin, Tallaght Campus. Róisín has over twenty years teaching experience at third level in Computing across many different modules including Database, Analysis and Design and Software Development. <br/>
+                        Róisín worked as a Software Engineer and Team Lead in a Computer Based Training company for a number of years before joining the teaching team at TU Dublin. <br/>
+                        Róisín has a keen interest in Computer Science Education, delivering computing camps in primary and secondary schools around Ireland, as well as being involved in the delivery of teacher training programmes to promoting computer science to school teachers.
+                    </div>
                 </div>
+
+
                 <div class="item">
-                    <img src="{{asset('/images/hackathons/profiles/_blank3.png')}}">
-                    <h2>To Be Announced</h2>
-                    {{--                    <h3>Function,</h3>--}}
-                    {{--                    <h3>INSTITUTION</h3>--}}
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/ireland/iseult-mangan.png')}}">
+                    </div>
+                    <h2 class="text-center">Iseult Mangan</h2>
+                    <div class="text-sm">Iseult Mangan, primary school teaching principal in Co Mayo. I'm a Raspberry Pi certified educator, Youth zone Wrangler for Mozfest and mentor with Teen Turn and Coder Dojo.
+                    </div>
                 </div>
+
                 <div class="item">
-                    <img src="{{asset('/images/hackathons/profiles/_blank4.png')}}">
-                    <h2>To Be Announced</h2>
-                    {{--                    <h3>Function,</h3>--}}
-                    {{--                    <h3>INSTITUTION</h3>--}}
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/ireland/florian-moss.png')}}">
+                    </div>
+                    <h2 class="text-center">Florian Moss</h2>
+                    <div class="text-sm">Florian is a Solution Architect for Red Hat and has previously worked in Ireland, Australia and Germany. He is working with businesses in Ireland to implement solutions that will drive the next generation, all built by Open Source technology.<br/>
+                        As a recent Computer Science graduate from Letterkenny Institue of Technology. Florian also has a good understanding of what it takes to be successful in IT and what options are available in Ireland.
+                    </div>
                 </div>
+
+
+
+
+
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/_blank4.png')}}">
+                    </div>
+                    <h2 class="text-center">Murph</h2>
+                    <div class="text-sm">Murph is Chief Architect for Red Hat Ireland; A tinkerer from a young age, he has over 30 years of experience taking things apart and putting them back together in interesting ways. <br/>
+                        A full-stack enthusiast, he has interest and experience ranging from 8-bit breadboard computers to open source game engines to JavaScript-based business apps for the web - with stops at every tech along the way.
+
+
+                    </div>
+                </div>
+
+
+
+
             </div>
         </section>
 
