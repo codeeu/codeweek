@@ -91,43 +91,43 @@
         {{--            </div>--}}
         {{--        </section>--}}
 
-        <section id="challenge" name="voting">
+{{--        <section id="challenge" name="voting">--}}
 
-            <div class="text">
-                <div class="challenge-text">
-                    <h1>@lang('hackathon-ireland.sections.voting.title')</h1>
-                    <div class="mb-4">@lang('hackathon-ireland.sections.5.content.0')
-                        <br/>@lang('hackathon-ireland.sections.voting.challenges')</div>
+{{--            <div class="text">--}}
+{{--                <div class="challenge-text">--}}
+{{--                    <h1>@lang('hackathon-ireland.sections.voting.title')</h1>--}}
+{{--                    <div class="mb-4">@lang('hackathon-ireland.sections.5.content.0')--}}
+{{--                        <br/>@lang('hackathon-ireland.sections.voting.challenges')</div>--}}
 
 
-                    @if(session('success'))
-                        <div class="text-xl">
-                            @lang('hackathon-ireland.sections.voting.thanks.0')<br/>
-                            @lang('hackathon-ireland.sections.voting.thanks.1')<br/>
-                        </div>
-                    @else
-                        <div class="mb-6">@lang('hackathon-ireland.sections.voting.deadline')</div>
-                        <div class="text-xl">@lang('hackathon-ireland.sections.voting.header')</div>
-                        <form method="POST" action="{{route('hackathon-vote', ["country" => "ireland"])}}">
-                            @csrf
-                            <button class="codeweek-action-button w-1/3 m-2 p-8" name="choice"
-                                    value="1 - @lang('hackathon-ireland.sections.voting.choices.0')"
-                                    type="submit">@lang('hackathon-ireland.sections.voting.choices.0')</button>
-                            <br/>
-                            <button class="codeweek-action-button w-1/3 m-2 p-8" name="choice"
-                                    value="2 - @lang('hackathon-ireland.sections.voting.choices.1')"
-                                    type="submit">@lang('hackathon-ireland.sections.voting.choices.1')</button>
-                            <br/>
-                            <button class="codeweek-action-button w-1/3 m-2 p-8" name="choice"
-                                    value="3 - @lang('hackathon-ireland.sections.voting.choices.2')"
-                                    type="submit">@lang('hackathon-ireland.sections.voting.choices.2')</button>
-                        </form>
-                    @endif
-                    <p>@lang('hackathon-ireland.sections.5.content.2')</p>
+{{--                    @if(session('success'))--}}
+{{--                        <div class="text-xl">--}}
+{{--                            @lang('hackathon-ireland.sections.voting.thanks.0')<br/>--}}
+{{--                            @lang('hackathon-ireland.sections.voting.thanks.1')<br/>--}}
+{{--                        </div>--}}
+{{--                    @else--}}
+{{--                        <div class="mb-6">@lang('hackathon-ireland.sections.voting.deadline')</div>--}}
+{{--                        <div class="text-xl">@lang('hackathon-ireland.sections.voting.header')</div>--}}
+{{--                        <form method="POST" action="{{route('hackathon-vote', ["country" => "ireland"])}}">--}}
+{{--                            @csrf--}}
+{{--                            <button class="codeweek-action-button w-1/3 m-2 p-8" name="choice"--}}
+{{--                                    value="1 - @lang('hackathon-ireland.sections.voting.choices.0')"--}}
+{{--                                    type="submit">@lang('hackathon-ireland.sections.voting.choices.0')</button>--}}
+{{--                            <br/>--}}
+{{--                            <button class="codeweek-action-button w-1/3 m-2 p-8" name="choice"--}}
+{{--                                    value="2 - @lang('hackathon-ireland.sections.voting.choices.1')"--}}
+{{--                                    type="submit">@lang('hackathon-ireland.sections.voting.choices.1')</button>--}}
+{{--                            <br/>--}}
+{{--                            <button class="codeweek-action-button w-1/3 m-2 p-8" name="choice"--}}
+{{--                                    value="3 - @lang('hackathon-ireland.sections.voting.choices.2')"--}}
+{{--                                    type="submit">@lang('hackathon-ireland.sections.voting.choices.2')</button>--}}
+{{--                        </form>--}}
+{{--                    @endif--}}
+{{--                    <p>@lang('hackathon-ireland.sections.5.content.2')</p>--}}
 
-                </div>
-            </div>
-        </section>
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </section>--}}
 
         <section id="programme" id="pratical-info">
             <h1>@lang('hackathon-ireland.sections.9.title')</h1>
