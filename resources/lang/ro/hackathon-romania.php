@@ -105,7 +105,33 @@ return [
         11 => [
             "title" => "Evenimente conexe",
             "content" => [
-                "Te interesează aceste teme dar nu știi programare? Înregistrează-te la evenimentele noastre conexe și descoperă emoțiile programării, inovației, antreprenoriatului și altor aptitudini esențiale pentru participarea la lumea digitală. Evenimentele conexe hackathonului din Săptămâna UE a programării sunt programate din mai până în octombrie și vor include mai multe tipuri diferite de ateliere. Acestea sunt gratuite, trebuie doar să te înregistrezi aici. Vino și află mai multe.",
+                "În legătură cu hackathonul se vor organiza ateliere pentru începători pe teme legate de programare, experimente cu echipamente hardware și robotică și multe altele, pentru ca participanții să învețe câteva noțiuni de bază despre gândirea computațională și programare. Din aprilie până în septembrie vom organiza evenimente conexe împreună cu partenerii noștri extraordinari din cadrul hackathoanelor EU Code Week (Săptămâna UE a programării), evenimente la care poți participa gratuit! Află care sunt activitățile și înregistrează-te pentru a primi linkul.",
+            ],
+            "events" => [
+                "1" => [
+                    "title" => "Animarea unui nume",
+                    "content" => [
+                        "Ai între 9 și 14 ani și vrei să afli mai multe despre programare? Acest atelier e perfect pentru tine! Vei crea o animație, te vei distra și vei dobândi rapid aptitudini de programare. Cu doar câteva blocuri și clicuri, poți face un personaj („sprite”) să danseze, să vorbească sau îl poți anima în diferite moduri. În plus, conceptele informatice pe care le vom folosi în Scratch pentru CS First pot fi aplicate în alte limbaje de programare avansate, cum ar fi Python sau Java. ",
+                        "Înregistrează-te și participă la această activitate și vei putea:",
+                        "să folosești un limbaj de programare pe bază de blocuri;",
+                        "să cunoști concepte informatice importante, precum evenimente, succesiuni și bucle;",
+                        "să creezi un proiect de animație în Scratch pentru CS First.",
+                        "Data: miercuri, 12 mai, ora 14:00 -> fă clic",
+                        "aici",
+                        "pentru a te înregistra!",
+                        "Mai multe informații:"
+                    ]
+                ],
+                "2" => [
+                    "title" => "Atelierul pentru programare creativă",
+                    "content" => [
+                        "Învață noțiuni de bază Python cu instrumentele de programare creative imagiLabs! Perfect pentru copiii cu vârste între 9 și 15 ani, în cadrul acestui atelier de o oră și jumătate pentru începători, programatorii vor învăța diverse lucruri, de la activarea pixelilor unul câte unul, la crearea de animații colorate. ",
+                        "Data: sâmbătă, 5 iunie, ora 15:00 -> fă clic",
+                        "aici",
+                        "pentru a te înregistra!",
+                        "Descarcă aplicația gratuită imagiLabs pe dispozitivul tău iOS sau Android și începe chiar azi. Pentru atelierul virtual nu vei avea nevoie de imagiCharms!",
+                    ]
+                ]
             ]
         ],
         12 => [
@@ -134,6 +160,8 @@ return [
             "8" => ["Arhitect de solutii software cu peste 10 ani de experienta in dezvoltarea de aplicatii enterprise. La ora actuala proiecteaza solutii pe zona de cloud computing si robotic process automation pentru mai multe industrii.","Leader al IBM Technical Expert Council in Romania si al programului de meetups IBM Developer.  Intraprenor pasionat si organizator de hackathoane."],
             "9" => ["Pasionată de software development și tehnologie în general, întotdeauna urmăresc ca produsele și proiectele la care lucrez să se ghideze după cele mai înalte standarde de calitate. Atunci când nu scriu cod îmi place să împărtășesc cu ceilalti din experiența mea  fiind speaker  si technical trainer în cadrul conferințelor. ","Sunt motivată de provocări și dorința de experimenta cu proiecte diverse, însă nu uit nicio secundă să mă bucur de proces."],
         ],
+
+
 
         "after" => [
     "Ce urmează?",
