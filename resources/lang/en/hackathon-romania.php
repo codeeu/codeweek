@@ -102,10 +102,37 @@ return [
             ]
         ],
 
+
         11 => [
             "title" => "Side events",
             "content" => [
-                "Do these themes interest you but you don’t know how to code? Sign up to our side events and discover the thrill of coding, innovation, entrepreneurship and other skills vital to participating in the digital world. The Code Week hackathon side events are scheduled to run from May to October and will include several different types of workshop. They are free of charge, you just have to sign up here. Come and learn more.",
+                "In connection with the hackathon, there will be workshops for beginners in coding, tinkering with hardware and robotics and so on for participants to learn some basics of computational thinking and coding. From April to September, we are organising side events with our amazing partners of the EU Code Week Hackathons and it’s free to take part! Check out the different activities and register to get the link.",
+            ],
+            "events" => [
+                "1" => [
+                    "title" => "Animate a name",
+                    "content" => [
+                        "Are you between 9 to 14 and eager to know more about computer programming? This workshop is for you! You will create, have fun and quickly acquire some coding skills. With just a handful of blocks and a few clicks, you can make a 'sprite' (character) dance, talk, or animate it in a variety of ways. In addition, the computer science concepts we will be using in Scratch for CS First can be applied to other advanced programming languages such as Python or Java. ",
+                        "Register, and participate in this activity and you will be able to:",
+                        "Use a block-based programming language",
+                        "Master important computer science concepts such as events, sequences and loops",
+                        "Create an animation project in Scratch for CS First",
+                        "Date: Wednesday 12 May, 14:00 -> click",
+                        "here",
+                        "to register !",
+                        "More information:"
+                    ]
+                ],
+                "2" => [
+                    "title" => "Creative Coding Workshop",
+                    "content" => [
+                        "Learn the basics of Python with imagiLabs' creative coding tools! Perfect for kids aged 9-15, this 1.5 hour workshop for beginners will take coders from lighting up one pixel at a time to making colourful animations.",
+                        "Date: Saturday 5 June, 15:00 -> click",
+                        "here",
+                        "to register !",
+                        "Download the free imagiLabs app on your iOS or Android device to get started today. No imagiCharms needed -- come to the virtual workshop as you are!",
+                    ]
+                ]
             ]
         ],
         12 => [
@@ -123,6 +150,7 @@ return [
                 "Discover More",
             ]
         ],
+
         "mentors" => [
             "1" =>
                 [
@@ -136,14 +164,16 @@ return [
             ],
 
             "3" => ["George founded and leads WiseUp, a product prototyping agency. George uses Lean Startup, Design Thinking & Data Science techniques in his work, to help entrepreneurs and executives make data driven decisions.","Previously he designed and led multiple startup accelerators, coached startups & enterprises."],
-            "4" => ["My name is Ioana Alexandru. I am currently pursuing a master’s degree in computer graphics while working at Google - it’s a real challenge, but I wouldn’t have it any other way! I had two internships (summer ‘18 and ‘19) which made me fall in love with the Google culture, and finally joined as a part-time software engineer in Nov ‘20.","Within Google, I work on search infrastructure, and outside of it I dabble with Unity and Flutter development. In my spare time, I love gaming (PC, Oculus, Switch) and riding horses."],
-            "5" => ["Entrepreneur, Program Manager and Software Quality Advocate.","10+ years of experience for various projects types, curious learner and passionate about finding innovative solutions."],
-            "6" => ["A data scientist at core, based in Switzerland, doing a software engineering internship at Google. Very passionate about startups, being a startup manager for the EPFL Entrepreneur Club, and leading a student investment team as a Managing Partner for Wingman Campus Fund.","Activist for women in tech, leading Girls Who Code Iasi until last year."],
-            "7" => ["I am CS teacher and I love what I'm doing. Basically I am CS Engineer. I've been teaching for the last 30 years. I am teaching at High-School, Vocational and Technical Schools. I am Cisco Academy instructor and national trainer. ","I am teaching C++, Java, Oracle SQL and Robotics but I also like hardware and networking. I like challenges, I love to work in projects with my students and I always want to learn something new."],
-            "8" => ["Solution architect with over 10 years of experience developing enterprise grade mission critical software applications. Currently focusing on designing cloud computing and robotic process automation solutions for various industries.","Leader of the IBM Technical Expert Council in Romania and the IBM Developer meetups program in the CEE.  Passionate intrapreneur and hackathon organizer."],
+            "4" => ["My name is Ioana Alexandru. I am currently pursuing a master’s degree in computer graphics while working at Google - it’s a real challenge, but I wouldn’t have it any other way! I had two internships (summer ‘18 and ‘19) which made me fall in love with the Google culture, and finally joined as a part-time software engineer in Nov ‘20.","Within Google, I work on search infrastructure, and outside of it I dabble with Unity and Flutter development. In my spare time, I love gaming (PC, Oculus, Switch) and riding horses."],
+            "5" => ["Entrepreneur, Program Manager and  Software Quality Advocate.","10+ years of experience for various projects types, curious learner and passionate about finding innovative solutions."],
+            "6" => ["A data scientist at core, based in Switzerland, doing a software engineering internship at Google. Very passionate about startups, being a startup manager for the EPFL Entrepreneur Club, and leading a student investment team as a Managing Partner for Wingman Campus Fund.","Activist for women in tech, leading Girls Who Code Iasi until last year."],
+            "7" => ["I am CS teacher and I love what I'm doing. Basically I am CS Engineer. I've been teaching for the last 30 years. I am teaching at High-School, Vocational and Technical Schools. I am Cisco Academy instructor and national trainer. ","I am teaching C++, Java, Oracle SQL and Robotics but I also like hardware and networking. I like challenges, I love to work in projects with my students and I always want to learn something new."],
+            "8" => ["Solution architect with over 10 years of experience developing enterprise grade mission critical software applications. Currently focusing on designing cloud computing and robotic process automation solutions for various industries.","Leader of the IBM Technical Expert Council in Romania and the IBM Developer meetups program in the CEE.  Passionate intrapreneur and hackathon organizer."],
             "9" => ["Software developer and technology passionate- I enjoy building and delivering quality, all the while trying to have fun as much as possible. I am a perceptive and innovative individual that's not afraid to exploit its best version and go the extra mile outside the comfort zone of conventional.","This exact desire, of getting out of the comfort zone, led me in the last years to changing the context from full-stack, frontend, API design to technical leadership and architecture."],
 
         ],
+
+
 
         "after" => [
     "What happens next?",
