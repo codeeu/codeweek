@@ -47,8 +47,8 @@
                         support the continued development of a strong and diverse community of educators.</p></div>
 
                 <div class="flex items-center justify-center">
-                    <a target="_blank" href="https://codeweek-teachday.eu/registration/"
-                       class="codeweek-action-link-button">REGISTER NOW</a>
+                    <a target="_blank" href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/EU+%23CodeWeek+%23TeachDay+(22+May)+Agenda.pdf"
+                       class="codeweek-action-link-button">AGENDA</a>
                 </div>
 
             </div>
@@ -81,6 +81,7 @@
                             <li style="font-size: 15px; font-family: PT Sans;"><strong>Schools, defenders of the Earth</strong> – Anthi Arkouli, Kindergarten Teacher of 2nd Kindergarten of Peristeri &amp; ICT Trainer; Maria Tsapara, EU Code Week Leading Teacher, Kindergarten Teacher of 2nd Kindergarten of Perama, ICT Trainer &amp; Scientix Ambassador<br> This workshop will present activities inspired by the framework of the 17 sustainable development goals as a part of an eTwinning project called “Schools, defenders of the Earth”. The purpose of the project was to inform and raise awareness of the causes of climate change and to take action to eradicate them. In this project, coding has become a tool to enrich the educational practices of teachers. Through these activities pre-primary school pupils can develop and cultivate competencies such as collaboration, communication, creativity and computational thinking.</li>
                             <li style="font-size: 15px; font-family: PT Sans;"><strong>Tinkering and STEAM with micro:bit</strong> – Pauline Maas, EU Code Week ambassador for the Netherlands &amp; EU Code Week Leading Teacher<br> This workshop will demonstrate how to use micro:bit in your STEAM lessons. You will learn about the creative ideas and kind of tinkering Pauline Maas uses with her students. She will explain the use of a design canvas for micro:bit, so you can use the 21st century learning skills in your lessons. Take a look at her Instagram to get an idea: @microbit101.</li>
                             <li style="font-size: 15px; font-family: PT Sans;"><strong>Women in Science! Let’s learn Python Programming</strong> – Ellen Walker, EU Code Week ambassador for Switzerland &amp; Founder, RightsTech Women<br>This workshop will introduce a fun activity that any teacher can do with their students, using just a computer and a web browser, to help them learn computational thinking using the Python programming language. You will explore Python dictionaries and how they store and retrieve information, and at the same time, you will learn about famous women in science, technology, engineering and mathematics (STEM).</li>
+
                     </ul>
                     <div>
                         <span style="font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;"><span
