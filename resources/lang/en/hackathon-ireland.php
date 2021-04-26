@@ -2,7 +2,7 @@
 
 return [
 
-    "title" => "EU Code Week HACKATON",
+    "title" => "EU Code Week HACKATHON",
     "subtitle" => "Bring your ideas to life!",
     "misc" => [
         "Read the rules & code of conduct",
