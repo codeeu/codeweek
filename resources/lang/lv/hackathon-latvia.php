@@ -3,7 +3,7 @@
 return [
 
     "title" => "EU Code Week HACKATΗON",
-    "subtitle" => "Realizējiet savas idejas!",
+    "subtitle" => "Īsteno savas idejas!",
     "misc" => [
         "Lasīt rīcības kodeksu un noteikumus",
         "Reģistrēšanās gan ES kodēšanas nedēļas hakatonam, gan blakuspasākumiem notiks rīkā EU Survey.",
@@ -12,22 +12,24 @@ return [
     "sections" => [
         1 => [
             "content" => [
-                "Vai jūsu sapnis ir izstrādāt nākamo pieprasītāko lietotni? Vai jūs zināt, kā inovatīvi tehnoloģiju risinājumi var palīdzēt jūsu skolai, pilsētai un reģionam? Ja vēlaties kļūt par uzņēmēju vai jums ir satriecoša ideja, ar kuru iepazīstināt pasauli, tomēr nezināt, ar ko sākt, tad jums ir paveicies! ",
-                "ES kodēšanas nedēļas hakatons",
-                "sākas ar izaicinājumu izveidot kodu, kas atrisina reālu problēmu nieka 24 stundu laikā. Pēc tam 10 veiksmīgākajām komandām tiks nodrošināta apmācība un mentori-nozares eksperti, lai sagatavotos otrajai un pēdējai kārtai, kurā tiks noskaidrots uzvarētājs. Balvā ir koučings un mentorings komandas idejām un stilīgs IT aprīkojums. Uzvarētāju komanda iegūs arī tiesības piedalīties Eiropas līmeņa prezentācijā, kurā visi hakatona uzvarētāji prezentēs savas idejas Eiropas žūrijai oficiālās ES kodēšanas nedēļas laikā, kas notiks no 2021. gada 9. oktobra līdz 24. oktobrim.",
-                "ES kodēšanas nedēļas hakatons remdēs jūsu zinātkāri, iedvesmos radošo garu, iedrošinās sākt uzņēmējdarbību un ļaus realizēt idejas. "
+                "Vai tavs sapnis ir izstrādāt pieprasītu lietotni? Vai zini, kā inovatīvi tehnoloģiju risinājumi var palīdzēt tavai skolai, pilsētai un reģionam? Ja vēlies kļūt par uzņēmēju vai tev ir satriecoša ideja, kuru vēlies parādīt pasaulei, tomēr nezini, ar ko sākt, tad tev ir paveicies!",
+                "ES Programmēšanas nedēļas hakatonā ",
+                "dalībnieki 24 stundu laikā radīs tehnoloģisku risinājumu jauniešiem aktuālai problēmai. Desmit labākās komandas tiks izvirzītas finālam un saņems papildu apmācības un mentoru atbalstu. Hakatona fināls norisināsies septembrī vai oktobrī, un tā uzvarētājs balvā saņems stilīgu IT aprīkojumu un mentoru atbalstu prototipa turpmākai izveidei. Katras hakatona dalības valsts uzvarētāji iegūs iespēju prezentēt savu ideju Eiropas līmeņa žūrijai ES Programmēšanas nedēļas laikā, no 2021. gada 9. līdz 24. oktobrim.",
+                "Dalība ES Programmēšanas nedēļas hakatonā veicinās jauniešu zinātkāri, radošumu, iedrošinās sākt uzņēmējdarbību un ļaus īstenot savas idejas."
             ]
         ],
         2 => [
             "title" => "Ko sagaidīt?",
             "content" => [
-                "Ekspertu sniegtu koučingu",
-                "Prasmju darbseminārus",
+                "Ekspertu konsultācijas",
+                "Darbseminārus",
                 "Interesantas aktivitātes",
                 "Iespēju iepazīties ar līdzīgi domājošiem cilvēkiem",
-                "Iespēju laimēt mentoringu un koučingu, kā arī IT aprīkojumu",
-                "Iespēju piedalīties fināla hakatonā un iepazīties ar pašiem labākajiem!"
+                "Iespēju iegūt  apmācības un mentoru atbalstu, kā arī IT aprīkojumu",
+                "Iespēju piedalīties fināla hakatonā un iepazīties ar labāko ideju autoriem",
             ]
+
+
         ],
         3 => [
             "content" => [
@@ -37,10 +39,10 @@ return [
             ]
         ],
         4 => [
-            "title" => "Izvirziet izaicinājumus, kurus hakatonā būs jāatrisina",
+            "title" => "Iesaki hakatona izaicinājumu",
             "content" => [
-                "Vai vēlaties padarīt savu kopienu par Latvijas videi labvēlīgo un ilgtspējīgo inovāciju centru? Ja tā, tad izvirziet izaicinājumu, kas hakatonā tiks “uzlauzts”. Kaut ko konkrētu, kas palīdzēs jums, jūsu skolai, pilsētai vai kopienai.",
-                "Izvirzīt izaicinājumu",
+                "Vai vēlies, lai Latvija būtu draudzīga un ilgtspējīga inovāciju vieta tās iedzīvotājiem? Ierosini izaicinājumu, kuram hakatona laikā komandas varētu radīt risinājumu. Piedāvā konkrētu izaicinājumu, kas ir nozīmīgs tev, tavai skolai, pilsētai vai kopienai.",
+                "IETEIKT IZAICINĀJUMU",
                 "Balsošana par izvirzītajiem izaicinājumiem Latvijā sāksies 30. aprīlī."
             ]
         ],
@@ -66,31 +68,33 @@ return [
         8 => [
             "title" => "Programma",
             "content" => [
-                "ES kodēšanas nedēļas hakatons norisināsies trīs kārtās.",
-                "24 stundu hakatons tiešsaistē. No visām komandām tiks atlasītas 10, kuras turpinās sacensības.",
-                "Bezmaksas apmācība un mentorings tiešsaistē visām 10 komandām 2021. gada vasarā.",
-                "Pēdējā kārta – hakatons klātienē. Visas 10 komandas otrajā kārtā būs saņēmušas vienādu apmācību, taču uzvarēs tikai viena no tām. Vidusskolēni vecumā no 15 līdz 19 gadiem sacentīsies komandās, lai atrisinātu “vietēja mēroga izaicinājumu”, kura tika izvēlēta no iesniegtajām problēmām pirms pirmās kārtas.",
-                "2021. gadā ES kodēšanas nedēļas laikā notiks seši neparasti hakatoni, un vidusskolēni vecumā no 15 līdz 19 gadiem tiek aicināti sadalīties komandās un likt lietā savas kodēšanas prakses, lai atrisinātu vietēja mēroga izaicinājumu. Pēc 24 stundu ilga hakatona katra komanda prezentēs savas idejas ekspertu panelim, kas izvēlēsies 10 komandas, kuras dosies uz finālu. Visām komandām tiks dots vienāds laiks, resursi un piekļuve mentoriem un ekspertiem, lai atrisinātu problēmu, taču tikai 10 no tām dosies uz nākamo kārtu, izstrādās prototipu, saņems ekspertu ieteikumus un piedalīsies fināla hakatonā šī gada rudenī. Finālā komandas cīnīsies par galveno balvu – IT piederumiem un iespēju saņemt mentoringu un koučingu, lai turpinātu darbu pie prototipa.",
-                "Jūsu komandai vieta otrajā kārtā nav garantēta pat tad, ja esat veiksmīgi atrisinājuši izaicinājumu. Paturiet prātā, ka jūs sacenšaties ar pārējām komandām un žūrija ņems vērā jūsu izmantoto metodi, izlietoto laiku un prototipa kvalitāti, atlasot finālistus! ",
-                "Ja jūsu komanda ir viena no 10 finālistēm, jūs varēsiet strādāt pie savas idejas vasarā. Lai jums palīdzētu, mēs piedāvāsim bezmaksas apmācības par izstrādi un lietotāja pieredzes dizainu (UX Design). Jūsu komandai palīdzīgu roku sniegs arī mentors, kurš parūpēsies par to, lai jūs būtu uz pareizā ceļa.",
-                "Desmit finālistu komandas tiksies 12 stundu hakatonā X (kas notiks tiešsaistē, ja sabiedrības veselības situācija neļaus tikties klātienē). Šeit komandas sacentīsies par valstī labāko jauno hakeru titulu un tādām balvām kā stilīgs IT aprīkojums, kā arī ideju koučings un mentorings.",
-                "Visu valstu uzvarētāji tiksies Eiropas “titānu cīņā”, kur katra no komandām prezentēs savu risinājumu Eiropas žūrijai oficiālās ES kodēšanas nedēļas ietvaros laikā no 2021. gada 9. oktobra līdz 24. oktobrim. Eiropas čempions baudīs ne tikai slavu, bet arī saņems balvā papildu IT aprīkojumu.",
+                "ES Programmēšanas nedēļas hakatons norisināsies trīs kārtās.",
+
+                "Pirmā kārta notiks tiešsaistē 24 stundu garumā. Šajā kārtā vidusskolēni vecumā no 15 līdz 19 gadiem sacentīsies komandās, lai atrisinātu vietēja mēroga izaicinājumu.",
+                "Izaicinājums tiks izvēlēts no jauniešu iesniegtajām problēmām pirms pirmās kārtas, un tiks paziņots hakatona pirmajā dienā.",
+                "Hakatonā komandām tiks dots vienāds laiks, zinošu mentoru atbalsts un piekļuve informācijai, lai atrisinātu izaicinājumu.",
+                "Pēc 24 stundu ilga darba katra komanda prezentēs savu risinājumu ekspertu žūrijai, kura izvēlēsies 10 labākās finālistu komandas. Atceries, komandas savā starpā sacenšas un komandai vieta finālā nav garantēta pat tad, ja tā ir veiksmīgi atrisinājusi izaicinājumu. Izvēloties uzvarētājus, žūrija ņems vērā risinājuma novitāti, ieguldīto darbu un prototipa kvalitāti.",
+                "Desmit labākās komandas vasarā varēs turpināt izstrādāt savu prototipu, piedalīties bezmaksas apmācībās par izstrādi un lietotāja pieredzes dizainu (UX Design), kā arī saņemt mentoru konsultācijas tiešsaistē.",
+
+                "Ja sabiedrības veselības situācija to ļaus, hakatona otrā kārta norisināsies klātienē (citādi pasākums norisināsies tiešsaistē).",
+                "Šajā kārtā desmit labākās komandas rudenī tiksies 12 stundu hakatonā un sacentīsies par valstī labāko jauno hakeru titulu, stilīgu IT aprīkojumu un iespēju saņemt papildu mentoru konsultācijas.",
+                 "Visbeidzot, katras valsts uzvarētāji tiksies trešajā kārtā, kur katras valsts labākā komanda prezentēs savu risinājumu Eiropas žūrijai ES Programmēšanas nedēļas ietvaros laikā 2021. gada 9.  līdz 24. oktobrim. Eiropas čempions baudīs ne tikai slavu, bet arī saņems balvā papildu IT aprīkojumu.",
                 "1. diena",
                 "2. diena",
             ]
         ],
         9 => [
-            "title" => "Praktiskā informācija",
+            "title" => "Praktiska informācija",
             "content" => [
-                "Hakatons notiks tiešsaistē no 2021. gada 29. maija līdz 30. maijam",
-                "Dalība ir bezmaksas."
+                "Hakatons notiks tiešsaistē no 2021. gada 29.  - 30. maijam.",
+                "Dalība hakatonā ir bezmaksas."
 
             ]
         ],
         10 => [
             "title" => "Žūrija un mentori",
             "content" => [
-                "Iedomājieties sevi vienā telpā kopā ar dažnedažādiem dizaineriem, izstrādātājiem, autoriem, kodētājiem un uzņēmējdarbības mentoriem, kur jūs visus vieno kopīgas intereses un degsme. ES kodēšanas nedēļas hakatonā Latvijā kopā pulcēsies uzņēmējdarbības, IT, riska kapitāla, izglītības pasauļu vadošie pārstāvji, kā arī vietējā, valsts un ES mēroga līderi, influenceri un kouči, lai sniegtu jums padomu, atbalstītu jūs un jūsu komandu šī intensīvā maratona gaitā.",
+                "Iedomājies sevi vienā telpā kopā ar dizaineriem, autoriem, programmētājiem un uzņēmējdarbības mentoriem, kur jūs visus vieno kopīgas intereses un degsme. ES Programmēšanas nedēļas hakatonā Latvijā kopā pulcēsies uzņēmējdarbības, tehnoloģiju, riska kapitāla un izglītības pasaules vadošie pārstāvji, kā arī vietējā, valsts un ES mēroga līderi, influenceri un kouči, lai sniegtu tev padomu, atbalstītu tevi un tavu komandu šī intensīvā hakatona gaitā.",
                 "Reģistrējieties jau tagad",
                 "ES kodēšanas nedēļas hakatonam",
                 "un dariet visu, kas ir jūsu spēkos!",

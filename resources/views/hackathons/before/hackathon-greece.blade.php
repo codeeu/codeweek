@@ -198,6 +198,8 @@
                     </div>
                 </div>
 
+
+
                 <div class="item">
                     <div class="flex justify-center">
                         <img src="{{asset('/images/hackathons/partners/microsoft.png')}}">
