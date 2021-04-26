@@ -243,8 +243,43 @@
                     <h2 class="text-center">Murph</h2>
                     <div class="text-sm">Murph is Chief Architect for Red Hat Ireland; A tinkerer from a young age, he has over 30 years of experience taking things apart and putting them back together in interesting ways. <br/>
                         A full-stack enthusiast, he has interest and experience ranging from 8-bit breadboard computers to open source game engines to JavaScript-based business apps for the web - with stops at every tech along the way.
+                    </div>
+                </div>
 
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/ireland/amanda-jolliffe.png')}}">
+                    </div>
+                    <h2 class="text-center">Amanda Jolliffe</h2>
+                    <div class="text-sm">Amanda Jolliffe leads Microsoft Ireland DreamSpace, a STEM Education venue for school communities across Ireland. Amanda is a post-primary teacher by background and is encouraged and inspired by her work with young people throughout her career.<br/>
+                        She is excited about how this EU Code Week Hackathon will continue to showcase the incredible potential of our young people to make a real difference.
+                    </div>
+                </div>
 
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/ireland/kevin-o-flannagain.png')}}">
+                    </div>
+                    <h2 class="text-center">Kevin O'Flannagain</h2>
+                    <div class="text-sm">Kevin O'Flannagain graduated from UCD engineering in 2017 and has over three years experience working with cutting edge hardware and software solutions in optical engineering and robotics.
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/ireland/matt-hanlon.png')}}">
+                    </div>
+                    <h2 class="text-center">Matt Hanlon</h2>
+                    <div class="text-sm">I'm Matt Hanlon, a longtime software developer, coach, author, and dad. I was a software engineer at Apple on various products and software you probably have in your home or in your pocket.
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/ireland/kieran-collins.png')}}">
+                    </div>
+                    <h2 class="text-center">Kieran Collins</h2>
+                    <div class="text-sm">Dr Kieran Collins is an educator, researcher and applied performance scientist. Kieran's education philosophy is based on the development of critical thinking, problem solving and the application of logic with the aim of producing STEM leaders.
                     </div>
                 </div>
 
