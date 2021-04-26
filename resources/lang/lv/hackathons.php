@@ -6,37 +6,38 @@ return [
     'subtitle' => 'īstenojiet savas idejas!',
     'sections' => [
         1 => [
-            'title' => '6 programmēšanas maratoni, 6 spēku pārbaudes',
+            'title' => '6 programmēšanas hakatoni, 6 izaicinājumi',
             'content' => [
-                1 => 'Vai jūs dzīvojat Grieķijā, Latvijā, Īrijā, Itālijā, Rumānijā vai Slovēnijā? Vai esat radošs, ambiciozs un jūs interesē tehnoloģiju nākotne? Šī ir jūsu iespēja! Pievienojieties vienam no EU Code Week Hackathon un izstrādājiet inovatīvu risinājumu, kas ļaus jums nokļūt tehnoloģiskās revolūcijas priekšgalā!',
-                2 => '2021. gadā ES programmēšanas nedēļa piedāvā sešus neparastus hakatonus un ielūdz 15–19 gadu vecus skolēnus veidot komandas un izmantot savas prasmes, lai atrisinātu kādu vietēja līmeņa problēmu. Pēc 24 programmēšanas stundām katra komanda piedāvās savas idejas ekspertu panelim, kas izvēlēsies 10 finālistu komandas. Visām komandām tiks dots vienāds laiks, resursi un piekļuve mentoriem un informācijai, lai izpildītu izaicinājumu, taču tikai 10 komandas iegūs iespēju turpināt darbu nākamajā posmā, izstrādāt savu prototipu, saņemt ekspertu konsultācijas un piedalīties fināla hakatonā rudenī. Finālā komandas par interesantu IT aprīkojumu un iespēju saņemt mentoru palīdzību un apmācības, lai attīstītu savu prototipu turpmāk.'
+                1 => 'Vai tu dzīvo Grieķijā, Latvijā, Īrijā, Itālijā, Rumānijā vai Slovēnijā? Vai esi radošs, ambiciozs, un tevi interesē tehnoloģiju nākotne? Šī ir tava iespēja! Pievienojes vienam no ES Programmēšanas nedēļas hakatoniem un izstrādā inovatīvu risinājumu, kas ļaus tev nokļūt tehnoloģiskās revolūcijas priekšgalā!',
+                2 => '2021. gadā ES Programmēšanas nedēļa organizē sešus unikālus hakatonus un aicina 15–19 gadu vecus skolēnus pielietot savas prasmes, lai atrisinātu vietēja līmeņa izaicinājumu. Hakatona laikā 15 komandām tiks dots vienāds laiks, zinošu mentoru atbalsts un piekļuve informācijai, lai atrisinātu izaicinājumu. Pēc 24 stundām komandas prezentēs savu risinājumu ekspertu žūrijai, kas izvēlēsies tās 10 komandas, kuras iegūs iespēju turpināt darbu, izstrādāt prototipu, saņemt ekspertu konsultācijas un rudenī piedalīties hakatona finālā klātienē. Finālā komandas sacentīsies par IT aprīkojumu un iespēju saņemt mentoru palīdzību un apmācības, lai attīstītu savu prototipu turpmāk.'
             ]
         ],
         2 => [
             'title' => 'Kā es varu piedalīties?',
             'content' => [
-                1 => 'Izvēlieties hakatonu savā valstī un veiciet pāris vienkāršas darbības, lai reģistrētos. Jūs varat pievienoties viens pats vai kā dalībnieks sešu cilvēku komandā. Ja pievienojaties ar draugiem vai klasesbiedriem, reģistrējoties neaizmirstiet norādīt komandas nosaukumu. Reģistrācija katram hakatonam tiks atvērta atsevišķi, tāpēc sekojiet informācijai par hakatonu savā valstī!'
+                1 => 'Izvēlies savas valsts hakatonu, iepazīsties ar informāciju un reģistrējies. Reģistrēties vari vai nu viens pats, vai kā dalībnieks sešu cilvēku komandā. Ja pievienojies ar draugiem vai klasesbiedriem, reģistrējoties neaizmirsti norādīt komandas nosaukumu. Reģistrācija katras valsts hakatonam tiks organizēta atsevišķi, tāpēc seko līdzi aktuālajai informācijai par hakatonu savā valstī!'
             ]
         ],
+
         3 => [
             'title' => 'Kas ir organizatori?',
             'content' => [
-                1 => 'ES programmēšanas nedēļas programmēšanas maratonus kopīgi organizē Eiropas Komisija un vietējie ES ',
-                2 => 'programmēšanas nedēļas vēstnieki',
-                3 => ', un tos finansē Eiropas Parlaments. Mērķis ir parādīt, kā iespējams dzīvē īstenot konkrētus risinājumus, ļaujot vaļu jauniešu radošumam, entuziasmam, svaigām idejām un programmēšanas prasmēm.'
+                1 => 'ES Programmēšanas nedēļas hakatonus organizē Eiropas Komisija kopā ar vietējiem ',
+                2 => 'ES Programmēšanas nedēļas vēstniekiem',
+                3 => ', un tos finansē Eiropas Parlaments. Hakatona mērķis ir parādīt, kā īstenot konkrētus tehnoloģiju risinājumus, ļaujot vaļu jauniešu radošumam, entuziasmam, idejām un programmēšanas prasmēm.'
             ]
         ],
         4 => [
-            'title' => 'Kas notiek programmēšanas maratonā?',
+            'title' => 'Kas notiks programmēšanas hakatonā?',
             'content' => [
-                1 => 'EU Code Week Hackathon ir stāsts, kas aizsāksies ar 24 stundu tiešsaistes hakatonu. Pieredzējuši mentori uzraudzīs komandas, un tiks piedāvāti semināri, kas sniegs dalībniekiem iespējas apgūt jaunas prasmes un izklaidēties. Turklāt hakatons ir lieliska iespēja dalībniekiem iepazīties savā starpā un iepazīt cilvēkus no Eiropas tehnoloģiju sektora. Hakatona noslēgumā katra komanda stāstīs par savu risinājumu ekspertu žūrijai. ',
-                2 => 'Desmit labākās komandas turpinās hakatonu un saņems apmācības un mentoru atbalstu visu vasaru. Uzvarētāji piedalīsies fināla 12 stundu klātienes nacionālajā hakatonā septembrī vai oktobrī (kas notiks tiešsaistē, ja sabiedrības veselības situācija nepieļaus tikšanos klātienē).',
+                1 => 'ES Programmēšanas nedēļas hakatons sāksies ar 24 stundu tiešsaistes hakatonu, kura laikā dalībniekiem būs iespēja saņemt atbalstu no pieredzējušiem mentoriem un piedalīties dažādos semināros, lai apgūtu jaunas zināšanas un prasmes. Hakatonā dalībniekiem būs iespēja savstarpēji iepazīties, satikt cilvēkus no Eiropas tehnoloģiju jomas un noslēgumā prezentēt savu risinājumu ekspertu žūrijai.',
+                2 => 'Desmit labākās komandas turpinās dalību hakatonā un saņems apmācības un mentoru atbalstu visas vasaras garumā. Uzvarētāji piedalīsies fināla 12 stundu klātienes nacionālajā hakatonā septembrī vai oktobrī. Ja sabiedrības veselības situācija nepieļaus tikšanos klātienē, fināls notiks tiešsaistē.',
             ]
         ],
         5 => [
             'title' => 'ES neprotu programmēt — ko es varu darīt?',
             'content' => [
-                1 => 'Paralēli programmēšanas maratonam notiks darbsemināri iesācējiem, kuri būs veltīti tādām tēmām kā programmēšanas pamati, ķibināšanās ar aparatūru, robotika u. tml., lai dalībnieki varētu iepazīties ar skaitļošanas tipa domāšanu un apgūt programmēšanas pamatus. Papildu informācija par to, kā reģistrēties, ir sniegta tavas valsts vietējā lapā.'
+                1 => 'Paralēli hakatonam notiks semināri iesācējiem, kuri būs veltīti tādām tēmām kā programmēšanas pamati, robotika u. tml., lai dalībnieki varētu iepazīt algoritmisko domāšanu un apgūt programmēšanas pamatus. Papildu informācija par to, kā reģistrēties, ir sniegta tavas valsts vietējā lapā.'
             ]
         ],
 
