@@ -283,6 +283,15 @@
                     </div>
                 </div>
 
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/ireland/nathan.png')}}">
+                    </div>
+                    <h2 class="text-center">Nathan Cahill</h2>
+                    <div class="text-sm">Nathan is a software developer with a background in visual art, design and photography. He holds a BA and MA from the National College of Art and Design and a Higher Diploma in Computing from TU Dublin.
+                    </div>
+                </div>
+
 
 
 
