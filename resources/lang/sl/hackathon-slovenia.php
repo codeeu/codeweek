@@ -70,7 +70,7 @@ return [
                 "24-urni spletni hekaton. Od vseh tekmovalnih ekip jih bodo izbrali največ 10, ki bodo s tekmovanjem nadaljevale.",
                 "Brezplačno spletno usposabljanje in mentorstvo za vseh 10 ekip poleti 2021.",
                 "Zadnji krog: fizični hekaton. Vseh 10 ekip bo v drugem krogu deležnih enakega usposabljanja, zmagala pa bo le ena. Srednješolci, stari od 15 do 19 let bodo tekmovali v ekipah, da bi rešili ‘lokalni izziv’, ki bo izbran med predlogi, posredovanimi v prvem krogu.",
-                "'Evropski teden programiranja leta 2021 prinaša šest izjemnih hekatonov, ki vabijo srednješolce, stare od 15 do 19 let, da oblikujejo ekipe in svoje veščine programiranja uporabijo pri reševanju lokalnih izzivov. Po 24-urnem hekanju bo vsaka ekipa svoje ideje predstavila strokovnjakom, ki bodo izbrali 10 ekip, ki bodo sodelovale v finalu. Vse ekipe bodo pri obravnavi izziva imele na voljo enako časa in sredstev ter dostop do mentorjev in strokovnega znanja, vendar jih bo le 10 dobilo priložnost za nadaljevanje v naslednjem krogu, v katerem bodo razvijale svoj prototip in bile pri tem deležne usmerjanja strokovnjakov. Jeseni pa se bodo udeležile zaključnega hekatona. V finalu  se bodo ekipe borile za zmago, ki prinaša nagrado v obliki računalniške opreme in možnost mentorstva in usposabljanja v zvezi z nadaljnjim razvojem svojega prototipa.",
+                "'Evropski teden programiranja leta2021 prinaša šest izjemnih hekatonov, ki vabijo srednješolce, stare od 15 do 19 let, da oblikujejo ekipe in svoje veščine programiranja uporabijo pri reševanju lokalnih izzivov. Po 24-urnem hekanju bo vsaka ekipa svoje ideje predstavila strokovnjakom, ki bodo izbrali 10 ekip, ki bodo sodelovale v finalu. Vse ekipe bodo pri obravnavi izziva imele na voljo enako časa in sredstev ter dostop do mentorjev in strokovnega znanja, vendar jih bo le 10 dobilo priložnost za nadaljevanje v naslednjem krogu, v katerem bodo razvijale svoj prototip in bile pri tem deležne usmerjanja strokovnjakov. Jeseni pa se bodo udeležile zaključnega hekatona. V finalu  se bodo ekipe borile za zmago, ki prinaša nagrado v obliki računalniške opreme in možnost mentorstva in usposabljanja v zvezi z nadaljnjim razvojem svojega prototipa.",
                 " Tudi če boste uspešno rešili izziv, vaši ekipi še ni zagotovljena uvrstitev v drugi krog. Ne pozabi, da tekmujete z drugimi ekipami. Žirija bo pri izbiri uspešnih kandidatov upoštevala vašo metodo, izkoriščenost časa in kakovost prototipa!",
                 "Če bo tvoja ekipa ena od desetih finalistov, boste lahko svojo idejo čez poletje še izpopolnili. Kot pomoč vam bomo ponudili brezplačna izobraževanja glede razvoja in oblikovanja UX. Tvoji ekipi bo zagotovljena tudi pomoč mentorja, ki bo poskrbel, da boste na pravi poti.",
                 "Deset ekip se bo v finalu srečalo iz oči v oči v 12-urnem hekatonu dne 18. septembra (ki bo potekal na spletu, če javnozdravstvene razmere ne bodo dopuščale fizičnega srečanja). Tu se bodo ekipe pomerile za naslov najboljših mladih hekerjev v državi in ​​dobile priložnost, da osvojijo nagrade, kot je kul računalniška oprema, pa tudi nadaljnje usposabljanje in mentorstvo glede svoje ideje.",
@@ -82,7 +82,7 @@ return [
         9 => [
             "title" => "Praktične informacije",
             "content" => [
-                "Hekaton bo potekal na spletu od 15. maja do 16. Maja 2021",
+                "Hekaton bo potekal na spletu od 15.maja do 16.Maja2021",
                 "Hekaton je brezplačen."
 
             ]
@@ -117,6 +117,14 @@ return [
                 "Evropski parlament",
                 "Še več informacij",
             ]
+        ],
+
+        "mentors" => [
+            "1" =>["Janko Harej","Janko Harej je višješolski predavatelj in učitelj strokovnih predmetov na ŠC Nova Gorica. Zanimajo ga vsi vidiki vključevanja novih tehnologij v izobraževanje. Sodeluje v različnih nacionalnih in mednarodnih projektih, kjer razvija izobraževanja za učitelje, razvija storitve in e-vsebine. Sodeloval je pri prenovi več učnih načrtov.","V prostem času se aktivno udejstvuje na področju zborovske glasbe."],
+            "2" =>["Katja K. Ošljak","Raziskovalka komuniciranja in digitalnih medijev, ustanoviteljica zavoda za digitalno vzgojo Vsak in slovenska ambasadorka projekta EU Code Week. Prizadeva si za dostop do digitalnega izobraževanja in medijsko opismenjevanje državljanov informacijske družbe."],
+            "3" =>["Uroš Polanc","Uroš, se že od malegaukvarja zinoviranjem, prototipiranjem,mreženjem in pa šez marsi čim. Zaključil ještudij mehatronike. Sedaj je vodja Učno izdelovalnega laboratorija na ŠCNG, to je laboratorij, ki je nemenjemmreženju, prototipiranju in učenju.","Sodeluje pri različnih lokalnih in evropskih projekti, sprehaja se tudi v poslovnih vodah. Ima veliko izkušenj z mentoriranjem, razvojem prototipov, delom z mladimi, CNC obdelave, 3D modeliranja, .."],
+            "4" =>["Luka Manojlovic","Luka Manojlovic je tehnični entuziast - računalničar, ki se že več kot 20 let ukvarja z strežniško in omrežno infrastrukturo.","Znanje rad deli z udeleženci interaktivnih delavnic z najrazličnejših področji informacijskih tehnologij."],
+            "5" =>["Vesna Krebs","Vesna Krebs je medijska umetnica in mentorica, ki deluje tako doma kot v tujini. Vesna združuje svojo ljubezen do tehnologije in umetnosti preko različnih delavnic in predstav za otroke.","V njenem pedagoškem delu je poudarek na ustvarjalni avdio-vizualni produkciji z računalniškimi tehnologijami, s katerimi mlajšo populacijo spodbuja h kreativnemu razmišljanju in ustvarjanju s pomočjo sodobnih tehnologij."],
         ],
 
         "after" => [

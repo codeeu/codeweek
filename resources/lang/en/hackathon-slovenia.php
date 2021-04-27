@@ -119,6 +119,14 @@ return [
             ]
         ],
 
+        "mentors" => [
+            "1" =>["Janko Harej","Janko Harej is a higher education lecturer and teacher of professional subjects at the Nova Gorica Secondary School. He is interested in all aspects of integrating new technologies into education. He participates in various national and international projects, where he develops teacher education, develops services and e-content. He was involved in the revision of several curricula.","In his free time, he is actively involved in the field of choral music."],
+            "2" =>["Katja K. Ošljak","Researcher of communication and digital media, founder of the Institute for Digital Education Vsak and Slovenian ambassador of the EU Code Week project. It strives for access to digital education and media literacy for citizens of the information society"],
+            "3" =>["Uroš Polanc","Uroš has been involved in innovation, prototyping, networking and many other things since he was a child. He completed his studies in mechatronics. He is now the head of the Learning Production Laboratory at ŠCNG, which is a laboratory dedicated to networking, prototyping and learning.","He participates in various local and European projects, and also walks in business environment. He has extensive experience in mentoring, prototyping, working with young people, CNC machining, 3D modeling,"],
+            "4" =>["Luka Manojlovic","Luka Manojlovic is a technical enthusiast - a computer scientist who has been dealing with server and network infrastructure for more than 20 years."," He likes to share his knowledge with the participants of interactive workshops from various fields of information technologies."],
+            "5" =>["Vesna Krebs","Vesna Krebs is a media artist and mentor who works both at home and abroad. Vesna combines her love of technology and art through various workshops and performances for children.","In her pedagogical work, the emphasis is on creative audio-visual production with computer technologies, with which she encourages the younger population to think creatively and create with the help of modern technologies."],
+        ],
+
         "after" => [
             "What happens next?",
             "The successful teams are now working on their prototype and will meet at the final hackathon in X to battle it out and decide the winner of X Hackathon. Make sure to follow here and on social media for updates from the contestants’ teams! ",
