@@ -187,7 +187,7 @@
 
         <section id="partners">
             <div>
-                <h1>@lang('hackathon-romania.misc.2')</h1>
+                <h1>@lang('hackathon-greece.misc.2')</h1>
             </div>
 
             <div class="partners-grid">
