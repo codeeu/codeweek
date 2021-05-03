@@ -80,34 +80,34 @@ return [
             ]
         ],
         9 => [
-    "title" => "Informazioni pratiche",
-    "content" => [
-        "L’hackathon avrà luogo online dal 7 maggio all’8 maggio 2021",
-        "L’Hackathon è completamente gratuito."
+            "title" => "Informazioni pratiche",
+            "content" => [
+                "L’hackathon avrà luogo online dal 7 maggio all’8 maggio 2021",
+                "L’Hackathon è completamente gratuito."
 
-    ]
-],
+            ]
+        ],
         10 => [
-    "title" => "Giuria e tutor",
-    "content" => [
-        "Immagina di trovarti in una sala virtuale piena di designer, sviluppatori, creativi, programmatori e mentori imprenditoriali, tutti con la tua stessa curiosità e i tuoi stessi stimoli. L’Hackathon italiano della Settimana europea della programmazione riunisce esponenti di spicco dell’economia, delle IT, del venture capital, dell’istruzione, nonché leader, influencer e tutor locali, nazionali ed europei che guideranno e sosterranno la tua squadra durante questa intensiva maratona.",
-        "Iscriviti ora",
-        "all’Hackathon della Settimana europea della programmazione",
-        "e trasforma in realtà i tuoi sogni!",
-    ]
-],
+            "title" => "Giuria e tutor",
+            "content" => [
+                "Immagina di trovarti in una sala virtuale piena di designer, sviluppatori, creativi, programmatori e mentori imprenditoriali, tutti con la tua stessa curiosità e i tuoi stessi stimoli. L’Hackathon italiano della Settimana europea della programmazione riunisce esponenti di spicco dell’economia, delle IT, del venture capital, dell’istruzione, nonché leader, influencer e tutor locali, nazionali ed europei che guideranno e sosterranno la tua squadra durante questa intensiva maratona.",
+                "Iscriviti ora",
+                "all’Hackathon della Settimana europea della programmazione",
+                "e trasforma in realtà i tuoi sogni!",
+            ]
+        ],
 
         11 => [
-    "title" => "Eventi collaterali",
-    "content" => [
-        "Queste tematiche ti interessano ma non hai le competenze di programmazione? Iscriviti ai nostri eventi collaterali e scopri l’emozione della programmazione, dell’innovazione, dell’imprenditorialità e di altre competenze vitali per essere protagonisti nel mondo digitale. Gli eventi collaterali dell’hackathon della Settimana della programmazione si svolgeranno da maggio a ottobre, e prevedono numerose e diverse tipologie di workshop. Sono completamente gratuiti: devi solamente iscriverti qui. Partecipa e impara.",
-    ]
-],
+            "title" => "Eventi collaterali",
+            "content" => [
+                "Queste tematiche ti interessano ma non hai le competenze di programmazione? Iscriviti ai nostri eventi collaterali e scopri l’emozione della programmazione, dell’innovazione, dell’imprenditorialità e di altre competenze vitali per essere protagonisti nel mondo digitale. Gli eventi collaterali dell’hackathon della Settimana della programmazione si svolgeranno da maggio a ottobre, e prevedono numerose e diverse tipologie di workshop. Sono completamente gratuiti: devi solamente iscriverti qui. Partecipa e impara.",
+            ]
+        ],
         12 => [
-    "title" => "Info su CODEWEEK.EU",
-    "content" => [
-        "La Settimana europea della programmazione (#CodeWeek) è un’iniziativa che nasce dal basso, gestita da volontari per promuovere l’alfabetizzazione digitale attraverso attività collegate alla programmazione e alla scienza informatica. Ispira e stimola le persone a esplorare nuove idee e a innovare per il futuro. Le attività per la ",
-        "Settimana europea della programmazione",
+            "title" => "Info su CODEWEEK.EU",
+            "content" => [
+                "La Settimana europea della programmazione (#CodeWeek) è un’iniziativa che nasce dal basso, gestita da volontari per promuovere l’alfabetizzazione digitale attraverso attività collegate alla programmazione e alla scienza informatica. Ispira e stimola le persone a esplorare nuove idee e a innovare per il futuro. Le attività per la ",
+                "Settimana europea della programmazione",
                 "avranno luogo in tutto il mondo fra il 9 e il 24 ottobre. ",
                 "L’idea dell’Hackathon della Settimana europea della programmazione è di mostrare in che modo prendono vita soluzioni concrete grazie all’aiuto della creatività, dell’entusiasmo, delle idee innovative e delle competenze di programmazione dei giovani. Gli hackathon sono ideati e co-organizzati dalla",
                 "Commissione europea",
@@ -120,18 +120,27 @@ return [
         ],
 
         "mentors" => [
-            "1" =>["Francesco Piero Paolicelli",
+            "1" => ["Francesco Piero Paolicelli",
                 "Francesco Piero Paolicelli, conosciuto in ogni social network come Piersoft.",
                 "Esperto di Coding e Making, formatore per Arduino Educational, informatico ed esperto nelle visualizzazioni dei dati.",
                 "Docente presso la School of Management della LUM (Università Luis Monnet ) per OpenData e OpenGovernment",
                 "Champion del Club CoderDojo Lecce.",
-                ],
-            "2" =>["Gianluca Orpello",
+            ],
+            "2" => ["Gianluca Orpello",
                 "Ciao, mi chiamo Gianluca Orpello. Sono un Apple Certified Trainer e un Mentor freelance in Italia. Sono specializzato in progettazione e sviluppo di app iOS, watchOS, macOS e tvOS, progettazione applicazioni web, protocollo client-server e progettazione API.",
                 "Ho anche conoscenze in User Interaction, User Experience e Project Management."],
-            "3" =>["Luca Versari",
+            "3" => ["Luca Versari",
                 "Luca Versari lavora allo standard JPEG XL come sviluppatore software presso Google.",
                 "Nel passato, è stato un tutor per studenti partecipanti alle Olimpiadi Italiane di Informatica in preparazione per competizioni internazionali."],
+            "4" => ["Alessandra Valenti",
+                "Alessandra Valenti è Customer Success Manager per Microsoft Education. Esperta di nuove tecnologie per la didattica, si occupa in particolare di progettazione e sviluppo dei linguaggi multimediali indispensabili a formare i professionisti del futuro tramite la conoscenza di strumenti digitali per la scuola innovativa.",
+                "Attraverso attività di training per gli studenti e i docenti italiani promuove soluzioni interattive ed esperienze di apprendimento legate al mondo dell’educazione e della cultura, dal videogioco di Minecraft Education Edition allo sviluppo di una didattica più sostenibile ed inclusiva.
+In passato formatrice di programmazione infantile e robotica, piattaforme e-learning, realtà virtuale e STEM nei contesti scolastici."],
+            "5" => ["Maura Sandri","Tecnologa dell’Istituto Nazionale di Astrofisica (INAF), coordinatrice del working group per lo sviluppo di risorse di coding e robotica educativa per la scuola, amministratrice della piattaforma play.inaf.it, Italian leading teacher, mentor del CoderDojo Ozzano dell'Emilia (BO)."],
+            "6" => ["Paolo Ganci",
+                "Un tempo solo un programmatore informatico, oggi un appassionato sostenitore del coding come Co-Champion del CoderDojo Etneo in Catania."
+                ],
+
         ],
 
         "after" => [

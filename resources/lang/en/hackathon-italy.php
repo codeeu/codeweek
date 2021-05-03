@@ -131,6 +131,15 @@ return [
             "3" =>["Luca Versari",
                     "Luca Versari works on the JPEG XL standard as a Software Engineer for Google.",
                     "In the past, he tutored Italian Computer Science Olympiads students preparing for international competitions."],
+            "4" => ["Alessandra Valenti",
+                "Alessandra Valenti is Customer Success Manager for Microsoft Education. Expert in new technologies for teaching, she deals in particular with the design and development of multimedia languages necessary to train the professionals of the future through the knowledge of digital tools for the innovative school.",
+                "Through training activities for Italian students and teachers it promotes interactive solutions and learning experiences related to the world of education and culture, from the video game of Minecraft Education Edition to the development of a more sustainable and inclusive teaching. In the past she trained programming and robotics, e-learning platforms, virtual reality and STEM in schools."],
+            "5" => ["Maura Sandri",
+                "Research technologist of the National Institute of Astrophysics (INAF), coordinator of the working group for the development of coding and educational robotic resources for the school, web admin for play.inaf.it, Italian leading teacher, mentor of the CoderDojo Ozzano dell'Emilia (BO)."
+            ],
+            "6" => ["Paolo Ganci",
+                "Once only a computer programmer, today a passionate supporter of coding as Co-Champion of CoderDojo Etneo in Catania.",
+                ],
         ],
 
         "after" => [
