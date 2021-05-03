@@ -181,6 +181,34 @@
                     </div>
                 </div>
 
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/italy/alessandra-valenti.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-italy.sections.mentors.4.0')</h2>
+                    <div class="text-sm">@lang('hackathon-italy.sections.mentors.4.1')<br/>
+                        @lang('hackathon-italy.sections.mentors.4.2')
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/italy/maura_sandri.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-italy.sections.mentors.5.0')</h2>
+                    <div class="text-sm">@lang('hackathon-italy.sections.mentors.5.1')<br/>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/italy/paolo-ganci.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-italy.sections.mentors.6.0')</h2>
+                    <div class="text-sm">@lang('hackathon-italy.sections.mentors.6.1')<br/>
+                    </div>
+                </div>
+
 
 
 

@@ -249,5 +249,11 @@ Route::post('/hackathons/vote', 'HackathonsVotingController@save')->name('hackat
 Route::view('/chatbot', 'static.chatbot')->name('chatbot');
 Route::view('/teach-day', 'teach-day')->name('teach-day');
 
+Route::get('headers', function(Request $request){
+    $headers = \Request::header();
+
+    dd($headers);
+});
+
 Auth::routes();
 
