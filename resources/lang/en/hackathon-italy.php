@@ -140,6 +140,9 @@ return [
             "6" => ["Paolo Ganci",
                 "Once only a computer programmer, today a passionate supporter of coding as Co-Champion of CoderDojo Etneo in Catania.",
                 ],
+            "7" => ["Christel Sirocchi",
+                "Christel Sirocchi is a biotechnologist and genetic engineer turned computer scientist. She gained experience as a researcher and educator in the UK, Belgium and Turkey, where she managed the science department in one of the most prominent international high schools and served as advisor for the Cambridge International Science Competition. She is an avid learner and passionate about STEM education, data science and data visualization."
+            ],
         ],
 
         "after" => [
