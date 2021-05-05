@@ -209,6 +209,15 @@
                     </div>
                 </div>
 
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/italy/christel-sirocchi.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-italy.sections.mentors.7.0')</h2>
+                    <div class="text-sm">@lang('hackathon-italy.sections.mentors.7.1')<br/>
+                    </div>
+                </div>
+
 
 
 
