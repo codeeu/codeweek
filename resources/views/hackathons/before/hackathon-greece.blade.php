@@ -41,13 +41,13 @@
         <section class="questions">
             <div class="left-wrapper">
                 <div class="expect">
-{{--                    <h1>@lang('hackathon-greece.sections.2.title')</h1>--}}
-{{--                    <ul>--}}
-{{--                        <li>@lang('hackathon-greece.sections.2.content.0')</li>--}}
-{{--                        <li>@lang('hackathon-greece.sections.2.content.1')</li>--}}
-{{--                        <li>@lang('hackathon-greece.sections.2.content.2')</li>--}}
+                    {{--                    <h1>@lang('hackathon-greece.sections.2.title')</h1>--}}
+                    {{--                    <ul>--}}
+                    {{--                        <li>@lang('hackathon-greece.sections.2.content.0')</li>--}}
+                    {{--                        <li>@lang('hackathon-greece.sections.2.content.1')</li>--}}
+                    {{--                        <li>@lang('hackathon-greece.sections.2.content.2')</li>--}}
 
-{{--                    </ul>--}}
+                    {{--                    </ul>--}}
                 </div>
                 <div class="bring">
                     <h1>@lang('hackathon-greece.sections.2.title')</h1>
@@ -76,20 +76,20 @@
             </div>
         </section>
 
-{{--        <section id="challenge">--}}
-{{--            <img src="/images/hackathons/ideation.png" class="desktop">--}}
-{{--            <div class="text">--}}
-{{--                <div class="challenge-text">--}}
-{{--                    <h1>@lang('hackathon-greece.sections.4.title')</h1>--}}
-{{--                    <p>@lang('hackathon-greece.sections.4.content.0')</p>--}}
-{{--                    <div class="button">--}}
-{{--                        <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/CodeWeekHacks_EL_voting"--}}
-{{--                           class="codeweek-action-link-button">@lang('hackathon-greece.sections.4.content.1')</a>--}}
-{{--                    </div>--}}
+        {{--        <section id="challenge">--}}
+        {{--            <img src="/images/hackathons/ideation.png" class="desktop">--}}
+        {{--            <div class="text">--}}
+        {{--                <div class="challenge-text">--}}
+        {{--                    <h1>@lang('hackathon-greece.sections.4.title')</h1>--}}
+        {{--                    <p>@lang('hackathon-greece.sections.4.content.0')</p>--}}
+        {{--                    <div class="button">--}}
+        {{--                        <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/CodeWeekHacks_EL_voting"--}}
+        {{--                           class="codeweek-action-link-button">@lang('hackathon-greece.sections.4.content.1')</a>--}}
+        {{--                    </div>--}}
 
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </section>--}}
+        {{--                </div>--}}
+        {{--            </div>--}}
+        {{--        </section>--}}
 
         <section id="programme" id="pratical-info">
             <h1>@lang('hackathon-greece.sections.9.title')</h1>
@@ -106,41 +106,41 @@
                 <li>@lang('hackathon-greece.sections.8.content.2')</li>
                 <li>@lang('hackathon-greece.sections.8.content.3')</li>
             </ol>
-        <div>
-            @lang('hackathon-greece.sections.8.content.4')<br/><br/>
+            <div>
+                @lang('hackathon-greece.sections.8.content.4')<br/><br/>
 
-            @lang('hackathon-greece.sections.8.content.5')<br/><br/>
-            @lang('hackathon-greece.sections.8.content.6')<br/><br/>
-            @lang('hackathon-greece.sections.8.content.7')<br/><br/>
-            @lang('hackathon-greece.sections.8.content.8')<br/><br/>
-        </div>
+                @lang('hackathon-greece.sections.8.content.5')<br/><br/>
+                @lang('hackathon-greece.sections.8.content.6')<br/><br/>
+                @lang('hackathon-greece.sections.8.content.7')<br/><br/>
+                @lang('hackathon-greece.sections.8.content.8')<br/><br/>
+            </div>
         </section>
 
 
-{{--            <div class="conditions-participation">--}}
-{{--                <img src="/images/tick.svg" class="static-image">--}}
-{{--                <a target="_blank"--}}
-{{--                   href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/hackathons/CONDITIONS_PARTICIPATION_CWHACKATHON_IE.pdf">Conditions--}}
-{{--                    of Participation</a>--}}
-{{--            </div>--}}
+        {{--            <div class="conditions-participation">--}}
+        {{--                <img src="/images/tick.svg" class="static-image">--}}
+        {{--                <a target="_blank"--}}
+        {{--                   href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/hackathons/CONDITIONS_PARTICIPATION_CWHACKATHON_IE.pdf">Conditions--}}
+        {{--                    of Participation</a>--}}
+        {{--            </div>--}}
 
 
-{{--        </section>--}}
+        {{--        </section>--}}
 
-{{--                <section id="pratical-info">--}}
-{{--                    <div class="info">--}}
-{{--                        <h1>Practical Info</h1>--}}
-{{--                        <div class="info-details">--}}
-{{--                            <h3>Date</h3>--}}
-{{--                            <p>April 17-18, 2020</p>--}}
-{{--                        </div>--}}
-{{--                        <div class="info-details">--}}
-{{--                            <h3>Address</h3>--}}
-{{--                            <p>Dream Space, Microsoft Greece</p>--}}
-{{--                            <p>South Country Business Park, Leopardstown, Dublin 18, D18 P521</p>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </section>--}}
+        {{--                <section id="pratical-info">--}}
+        {{--                    <div class="info">--}}
+        {{--                        <h1>Practical Info</h1>--}}
+        {{--                        <div class="info-details">--}}
+        {{--                            <h3>Date</h3>--}}
+        {{--                            <p>April 17-18, 2020</p>--}}
+        {{--                        </div>--}}
+        {{--                        <div class="info-details">--}}
+        {{--                            <h3>Address</h3>--}}
+        {{--                            <p>Dream Space, Microsoft Greece</p>--}}
+        {{--                            <p>South Country Business Park, Leopardstown, Dublin 18, D18 P521</p>--}}
+        {{--                        </div>--}}
+        {{--                    </div>--}}
+        {{--                </section>--}}
 
         <section id="jury-mentors">
 
@@ -159,7 +159,7 @@
                         @lang('hackathon-greece.sections.mentors.1.2')
                     </div>
                 </div>
-           <div class="item">
+                <div class="item">
                     <div class="flex justify-center">
                         <img src="{{asset('/images/hackathons/profiles/greece/ioannis-papikas.png')}}">
                     </div>
@@ -168,7 +168,7 @@
                         @lang('hackathon-greece.sections.mentors.2.2')
                     </div>
                 </div>
-           <div class="item">
+                <div class="item">
                     <div class="flex justify-center">
                         <img src="{{asset('/images/hackathons/profiles/greece/john-fanidis.png')}}">
                     </div>
@@ -177,7 +177,7 @@
                         @lang('hackathon-greece.sections.mentors.3.2')
                     </div>
                 </div>
-           <div class="item">
+                <div class="item">
                     <div class="flex justify-center">
                         <img src="{{asset('/images/hackathons/profiles/greece/lida-paptzika.png')}}">
                     </div>
@@ -186,7 +186,7 @@
 
                     </div>
                 </div>
-           <div class="item">
+                <div class="item">
                     <div class="flex justify-center">
                         <img src="{{asset('/images/hackathons/profiles/greece/nikolas-goulias.jpg')}}">
                     </div>
@@ -198,14 +198,14 @@
             </div>
         </section>
 
-{{--                <section id="side-events">--}}
-{{--                    <div class="left">--}}
-{{--                        <h1>@lang('hackathon-greece.sections.11.title')</h1>--}}
-{{--                        <p>@lang('hackathon-greece.sections.11.content.0')</p>--}}
-{{--                        <a href="" class="codeweek-action-link-button">@lang('login.register')</a>--}}
-{{--                    </div>--}}
-{{--                    <img src="/images/hackathons/side_events.png">--}}
-{{--                </section>--}}
+        {{--                <section id="side-events">--}}
+        {{--                    <div class="left">--}}
+        {{--                        <h1>@lang('hackathon-greece.sections.11.title')</h1>--}}
+        {{--                        <p>@lang('hackathon-greece.sections.11.content.0')</p>--}}
+        {{--                        <a href="" class="codeweek-action-link-button">@lang('login.register')</a>--}}
+        {{--                    </div>--}}
+        {{--                    <img src="/images/hackathons/side_events.png">--}}
+        {{--                </section>--}}
 
         <section id="partners">
             <div>
@@ -229,13 +229,39 @@
 
                 <div class="item">
                     <div class="flex justify-center">
-                        <img src="{{asset('/images/hackathons/partners/imagilabs.png')}}">
+                        <img src="{{asset('/images/hackathons/partners/greece/greek-computer-society.png')}}">
                     </div>
                 </div>
 
 
+            </div>
+
+
+            <div class="partners-grid">
+
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/greece/greek-digital-skills.png')}}">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/imagilabs.png')}}">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/greece/lancom.png')}}">
+                    </div>
+                </div>
+
 
             </div>
+
+
             <div class="partners-grid">
 
                 <div class="item">
@@ -246,11 +272,27 @@
 
                 <div class="item">
                     <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/greece/noris.png')}}">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
                         <img src="{{asset('/images/hackathons/partners/redhat.png')}}">
                     </div>
                 </div>
 
 
+            </div>
+
+
+            <div class="partners-grid">
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/greece/social-innov.png')}}">
+                    </div>
+                </div>
 
 
             </div>
@@ -259,13 +301,18 @@
         <section id="about-codeweek">
             <div class="text">
                 <h1>@lang('hackathon-greece.sections.12.title')</h1>
-                <p>@lang('hackathon-greece.sections.12.content.0') @lang('hackathon-greece.sections.12.content.1') @lang('hackathon-greece.sections.12.content.2')</p><br/><br/>
-                <p>@lang('hackathon-greece.sections.12.content.3') <b>@lang('hackathon-greece.sections.12.content.4')</b> @lang('hackathon-greece.sections.12.content.5') <b>@lang('hackathon-greece.sections.12.content.6')</b>
-                    @lang('hackathon-greece.sections.12.content.7') <b>@lang('hackathon-greece.sections.12.content.8')</b>
+                <p>@lang('hackathon-greece.sections.12.content.0') @lang('hackathon-greece.sections.12.content.1') @lang('hackathon-greece.sections.12.content.2')</p>
+                <br/><br/>
+                <p>@lang('hackathon-greece.sections.12.content.3')
+                    <b>@lang('hackathon-greece.sections.12.content.4')</b> @lang('hackathon-greece.sections.12.content.5')
+                    <b>@lang('hackathon-greece.sections.12.content.6')</b>
+                    @lang('hackathon-greece.sections.12.content.7')
+                    <b>@lang('hackathon-greece.sections.12.content.8')</b>
                 </p><br/><br/>
             </div>
             <img src="/images/hackathons/about_codeweek.svg" class="static-image">
-            <a target="_blank" href="https://codeweek.eu/about" class="codeweek-action-link-button">@lang('hackathon-greece.sections.12.content.9')</a>
+            <a target="_blank" href="https://codeweek.eu/about"
+               class="codeweek-action-link-button">@lang('hackathon-greece.sections.12.content.9')</a>
         </section>
 
     </section>
