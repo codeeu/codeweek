@@ -192,13 +192,13 @@
                     </a>
                 </div>
 
-                <div class="codeweek-card-grid">
-                    <a href="{{route('codingathome-turning-code-into-pictures')}}">
-                        <img src="/img/codingathome/20.png">
-                        <div class="title"
-                             style="text-align:center">@lang('coding-at-home.turning-code-into-pictures.title')</div>
-                    </a>
-                </div>
+{{--                <div class="codeweek-card-grid">--}}
+{{--                    <a href="{{route('codingathome-turning-code-into-pictures')}}">--}}
+{{--                        <img src="/img/codingathome/20.png">--}}
+{{--                        <div class="title"--}}
+{{--                             style="text-align:center">@lang('coding-at-home.turning-code-into-pictures.title')</div>--}}
+{{--                    </a>--}}
+{{--                </div>--}}
 
             </section>
 
