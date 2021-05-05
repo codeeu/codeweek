@@ -140,6 +140,9 @@ In passato formatrice di programmazione infantile e robotica, piattaforme e-lear
             "6" => ["Paolo Ganci",
                 "Un tempo solo un programmatore informatico, oggi un appassionato sostenitore del coding come Co-Champion del CoderDojo Etneo in Catania."
                 ],
+            "7" => ["Christel Sirocchi",
+                "Christel Sirocchi ha completato i suoi studi in biotecnologie e ingegneria genetica ma si è presto avvicinata al mondo dell'informatica. Dopo esperienze di ricerca in Scozia, Belgio e Turchia, è entrata a far parte del corpo docente del liceo internazionale di Istanbul. Oltre all'educazione e la divulgazione scientifica, è appassionata di analisi e visualizzazione di dati."
+                ],
 
         ],
 
