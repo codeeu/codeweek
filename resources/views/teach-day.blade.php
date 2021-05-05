@@ -58,6 +58,35 @@
             <div style="background-color:#DBEFF3" class="p-10">
                 <div><h2><strong>What to expect from Teach Day?</strong></h2>
                     <ul class="leading-7 ml-2 mt-0 checklist">
+                        <li style="font-size: 15px; font-family: PT Sans;">Opening speech by <strong>Thierry Breton,
+                                European Commissioner for Internal Market</strong></li>
+                        <li style="font-size: 15px; font-family: PT Sans;"><strong>Keynotes</strong> and different point
+                            of views on coding, digital creativity, and other topics from inspiring speakers such as
+                            <strong>Massimo Banzi</strong>, Co-founder of Arduino and <strong>Alessandro
+                                Bogliolo</strong>, EU Code Week ambassador coordinator, Professor, School of
+                            Information, Science and Technology at the University of Urbino
+                        </li>
+                        <li style="font-size: 15px; font-family: PT Sans;"><strong>Panel debates</strong> with education
+                            experts and researchers
+                        </li>
+                        <li style="font-size: 15px; font-family: PT Sans;"><strong>Workshops</strong> hosted by
+                            international education experts addressing various topics and sharing fresh ideas from the
+                            coding world
+                        </li>
+                        <li style="font-size: 15px; font-family: PT Sans;"><strong>Exhibitions</strong> organized by top
+                            IT companies and major NGOs active in the education field and supporting coding in schools.
+                            Among them: Code Club, Code.org, Google, Meet&amp;Code, Public Libraries 2030
+                        </li>
+                        <li style="font-size: 15px; font-family: PT Sans;">Enjoying an online experience similar to a
+                            <strong>real-life</strong> event
+                        </li>
+                        <li style="font-size: 15px; font-family: PT Sans;"><strong>Interactions</strong> with
+                            participants and speakers, exchange ideas, knowledge, success stories and have fun
+                        </li>
+                    </ul>
+                    <p>&nbsp;</p>
+                    <h2><strong>Our workshops</strong></h2>
+                    <ul class="leading-7 ml-2 mt-0 checklist">
                             <li style="font-size: 15px; font-family: PT Sans;"><strong>AI and machine learning: real life use cases </strong>– Marco Neves, Informatics Teacher, AE Batalha<br>An ecosystem of various digital technologies is revolutionizing our way of life. Artificial intelligence is probably the most powerful and impactful, especially through Machine Learning. During the workshop, you will explore some of the most striking examples of AI in our lives and understand how they shape our daily activities.</li>
                             <li style="font-size: 15px; font-family: PT Sans;"><strong> Computational thinking and 3D modelling/printing in mobile devices </strong>– Artur Coelho, EU Code Week Leading Teacher <br>This workshop will demonstrate how to use 3D design and printing on mobile devices to foster computational thinking skills, within interdisciplinary approaches in arts and ICT: developing activities which use CT skills to foster creativity, artistic skills and understanding additive manufacturing.</li>
                             <li style="font-size: 15px; font-family: PT Sans;"><strong> Create challenges for learning to code in the classroom at home </strong>– Laurent Touché, EU Code Week Leading Teacher <br>This workshop will explore how a robotics platform can help you to teach code in the classroom and at home. Students will be able to learn programming by following mini challenges of your choice, without having to create an account.</li>
@@ -76,6 +105,7 @@
                             <li style="font-size: 15px; font-family: PT Sans;"><strong>Tinkering and STEAM with micro:bit</strong> – Pauline Maas, EU Code Week ambassador for the Netherlands &amp; EU Code Week Leading Teacher<br>This workshop will demonstrate how to use micro:bit in your STEAM lessons. You will learn about the creative ideas and kind of tinkering Pauline Maas uses with her students. She will explain the use of a design canvas for micro:bit, so you can use the 21st century learning skills in your lessons. Take a look at her Instagram to get an idea: @microbit101.</li>
                             <li style="font-size: 15px; font-family: PT Sans;"><strong>Women in Science! Let’s learn Python programming</strong> – Ellen Walker, Ellen Walker, EU Code Week ambassador for Switzerland &amp; Founder, RightsTech Women; Brice Copy, Fellow Swiss Code Week ambassador &amp; RightsTech Women Board Member<br>This workshop will introduce a fun activity that any teacher can do with their students, using just a computer and a web browser, to help them learn computational thinking using the Python programming language. You will explore Python dictionaries and how they store and retrieve information, and at the same time, you will learn about famous women in science, technology, engineering and mathematics (STEM).</li>
                         </ul>
+                    </ul>
                     <div>
                         <span style="font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;"><span
                                     style="font-size: 14px;">&nbsp;</span></span></div>
