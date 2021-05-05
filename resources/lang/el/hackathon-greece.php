@@ -119,6 +119,25 @@ return [
             ]
         ],
 
+        "mentors" => [
+            "1" => ["Dimitrios Tzimas",
+                "Dimitrios Tzimas received the B.Sc degree in Informatics, Aristotle University of Thessaloniki, Greece, and the M.Sc degree in “Digital Signal Processing for Communications and Multimedia” University of Athens, Greece.",
+                "He is currently a PhD student at the Aristotle University of Thessaloniki. His research interests include Learning Analytics and MOOCs. He has published many scientific articles in journals and conference proceedings. He teaches Computer Science in secondary and higher education for the last 21 years. He is a co-author of 4 Greek books about computer programming.",
+            ],
+            "2" => ["Ioannis Papikas",
+                "Ο Γιάννης μπήκε στον κόσμο της επιχειρηματικότητας περίπου 8 χρόνια πριν και βοήθησε στο χτίσιμο web εφαρμογών με την ομάδα του σε διάφορα industries.",
+                "Επίσης συμμετείχε στον \"Entrepreneur First\" accelerator στο Λονδίνο, χτίζοντας την δική του startup. Ο Γιάννης αυτή τη στιγμή είναι Senior Product Manager στην Orfium.",
+            ], "3" => ["Γιάννης Φανίδης",
+                "Ονομάζομαι Γιάννης Φανίδης, είμαι 27 χρονών και ζω στη Θεσσαλονίκη.  Ξεκίνησα να ασχολούμαι με τον προγραμματισμό στα χρόνια του Λυκείου δημιουργώντας απλές εφαρμογές για κινητά και ιστοσελίδες.",
+                "Τα τελευταία 7 χρόνια έχω συνεργαστεί με πολλές εξαιρετικές και πολύ ταλαντούχες ομάδες ανθρώπων σε περισσότερα από 20 web και mobile έργα. Αυτή την περίοδο εργάζομαι σαν Lead Frontend Engineer στην Exandia, στην πόλη της Θεσσαλονίκης, και παράλληλα αναπτύσσω mobile εφαρμογές σαν freelancer.",
+            ], "4" => ["Λήδα Παπατζήκα",
+                "Η Λήδα Παπατζήκα είναι Στέλεχος Επικοινωνίας στην Αλεξάνδρεια Ζώνη Καινοτομίας. Διαθέτει εκτεταμένη εμπειρία στο χώρο του marketing και της προώθησης έργων του οικοσυστήματος καινοτομίας της περιοχής."
+            ], "5" => ["Νικόλας Γούλιας",
+                "Ο Νικόλας είναι ο επικεφαλής της συνεργασίας IBM - Red Hat για το Ηνωμένο Βασίλειο και την Ιρλανδία με στόχο την αξιοποίηση της καινοτομίας ανοιχτού κώδικα και την επιτυχία πελατών στον καθορισμό στρατηγικής και επίλυσης προβλημάτων με βάση την τεχνολογία.",
+            ],
+
+        ],
+
         "after" => [
             "Επόμενα βήματα",
             "Οι ομάδες που επιλέχθηκαν επεξεργάζονται τώρα το πρωτότυπό τους και θα συναντηθούν στον τελικό μαραθώνιο χάκινγκ στις Χ για να διαγωνιστούν και να αποφασιστεί ο νικητής του ελληνικού μαραθωνίου χάκινγκ. Παρακολούθησε εδώ και στα μέσα κοινωνικής δικτύωσης τις ενημερώσεις από τις ομάδες των διαγωνιζόμενων! ",
