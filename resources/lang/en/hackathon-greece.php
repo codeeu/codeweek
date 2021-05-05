@@ -119,6 +119,25 @@ return [
             ]
         ],
 
+        "mentors" => [
+            "1" => ["Dimitrios Tzimas",
+                "Dimitrios Tzimas received the B.Sc degree in Informatics, Aristotle University of Thessaloniki, Greece, and the M.Sc degree in “Digital Signal Processing for Communications and Multimedia” University of Athens, Greece.",
+                "He is currently a PhD student at the Aristotle University of Thessaloniki. His research interests include Learning Analytics and MOOCs. He has published many scientific articles in journals and conference proceedings. He teaches Computer Science in secondary and higher education for the last 21 years. He is a co-author of 4 Greek books about computer programming.",
+            ],
+            "2" => ["Ioannis Papikas",
+                "Ioannis has entered the world of entrepreneurship around 8 years ago and helped build web applications with his team in various industries.",
+                "Also participated in the \"Entrepreneur First\" accelerator in London, building his own startup. Ioannis is currently a Senior Product Manager at Orfium.",
+            ], "3" => ["John Fanidis",
+                "My name is John Fanidis, I am 27 years old and I live in Thessaloniki, Greece. I have been passionate about development since my days in high school when I first started learning how to design and write simple web and mobile applications.",
+                "For the last 7 years I have been part of many amazing and incredibly talented teams in more than 20 web and mobile projects. I currently work both as Lead Frontend Engineer in Exandia, based in Thessaloniki and as a freelancer mobile developer.",
+            ], "4" => ["Lida Papatzika",
+                "Lida Papatzika works at Alexander Innovation Zone S.A. as communications manager. She holds extensive experience in the fields of marketing and promotion of projects relevant to the regional innovation ecosystem.",
+            ], "5" => ["Nikolas Goulias",
+                "Nikolas is the IBM - Red Hat Synergy Lead Architect in the UK&I empowering IBM with Red Hat's open source innovation and helping customers define strategies, architect and solve problems with technology.  ",
+            ],
+
+        ],
+
         "after" => [
             "What happens next?",
             "The successful teams are now working on their prototype and will meet at the final hackathon in X to battle it out and decide the winner of the Greek Hackathon. Make sure to follow here and on social media for updates from the contestants’ teams! ",
