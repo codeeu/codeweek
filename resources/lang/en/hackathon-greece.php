@@ -135,6 +135,83 @@ return [
             ], "5" => ["Nikolas Goulias",
                 "Nikolas is the IBM - Red Hat Synergy Lead Architect in the UK&I empowering IBM with Red Hat's open source innovation and helping customers define strategies, architect and solve problems with technology.  ",
             ],
+            "6" => [
+                "Achilleas Yfantis",
+                "Achilleas Yfantis have created various startups and worked in various companies such as Citrix.",
+                "I'm and automation security testing engineer, my field of knowledge includes: kybernetes, microservices, shell, containers, azure, ci/cd, github, Python, golang.",
+            ],
+            "7" => [
+                "Alex Papadakis",
+                "Alex Papadakis is a Tech Consultant with experience of business development, sales and client account management in multiple international markets (UKI,Spain,Greece,Cyprus) across various business verticals.",
+                "He joined Amazon Web Services in 2019 as a Business Development Representative. Before joining Amazon he has worked for Google, Coca-Cola, Public Retail World S.A holding various roles in Sales and Marketing. He holds a BSc in International Business from University of Kent and an MSc in Management from CASS Business School.",
+            ],
+            "8" => [
+                "Andriana Vera",
+                "My name is Andriana Vera, currently I am studying at the National & Kapodistrian University of Athens - Department of Informatics and Telecommunications.",
+                "At the moment, I work as a part-time modern workplace developer at Team CANDI/InfoQuest Technologies. Motivated and excited about the tech field, I enjoy spending time learning and sharing my knowledge.",
+            ],
+            "9" => [
+                "Antigoni Kakouri",
+                "5th-year Electrical and Computer Engineering student at Aristotle University of Thessaloniki. Microsoft Learn Student Ambassador since January 2021.",
+
+            ],
+            "10" => [
+                "Athanasios Dimou",
+                "Geomentor. Employee of the Ministry of Culture. Geoinformatic and Surveyor engineer with 2 Master deggrees. First place with his 4member team on NASA Space Apps 2017 in Greece.",
+                "Mentor, judge and supporter in many Hackathons, Datathlons (Nasa Space Apps, MIT Covid-19 Challenge, Healthahtlon, Tap2open, Copernicus 2019-2020, Ίδρυμα Ευγενίδου - Hack the Lab, Global Hack, Antivirus Hackathon, HackCoronaGreece and many more). President of Panhellenic Association of Graduates of GeoInformatics and Surveying Engineering",
+            ],
+            "11" => [
+                "Despoina Ioannidou",
+                "Despoina Ioannidou, graduated with a PhD in Applied Mathematics from Cnam. After a few years of working as data-scientist and computer vision engineer, she co-founded an AI startup, Trayvisor where she’s leading the tech as CTO.",
+                "",
+            ],
+            "12" => [
+                "Evangelia Iakovaki",
+                "My name is Evangelia Iakovaki, i am Physicist and I work as a Physicist in a public high school.I also work as a guidance counselor for students"
+            ],
+            "13" => [
+                "Giannis Prapas",
+                "My name is Giannis Prapas and I am an Account Executive focusing on Digital Native Businesses in Amazon Web Services (AWS).",
+                "My job is to enable organizations to innovate and easily build sophisticated and scalable applications by using AWS services.",
+            ],
+            "14" => [
+                "Ilias Karabasis",
+                "I am currently working as a Full Stack Software Engineer, while exploring the field of Data Science and AI. I also joined recently the MS Learn Student Ambassadors Program.",
+                "My expertise is in .NET Technologies, C# and Angular. I am familiar with Python as well several Machine Learning and Data Science Frameworks.",
+            ],
+            "15" => [
+                "Dr. Konstantinos Fouskas",
+                "Dr. Konstantinos Fouskas, is Associate Profesor  of “Digital Entrepreneurship and Technological Innovation” in the Department of Applied informatics at the University of Macedonia. He is teaching in the area of digital innovation and entrepreneurship, e-business and e-commerce, technology management  and Digital transformation.",
+                "He is also teaching  and collaborating with a number of other Academic Institutes in the areas of innovation and entrepreneurship in Greece and worldwide. His has over 50 research articles published in international peer-reviewed journals and conferences and he has participated in more than 30 funded International and National research projects related to entrepreneurship, innovation, and ICT.",
+            ],
+            "16" => [
+                "Marina Stavrakantonaki",
+                "Greetings from AWS! I am a Public Policy Manager for Amazon Web Services, covering Greece and Cyprus. My educational and work experience background is in Public Policy, Business Strategy and my PhD on Epidemiology. I am happy to assist the students where they need me.",
+            ],
+            "17" => [
+                "Nikos Zachariadis",
+                "Nikos is basically a chemist. He studied chemistry, but he soon discovered that chemical compounds are less interesting than human relationships. However, chemistry explains analytically the processes of life, so its reduction to “human compounds” leads to a wonderful way of thinking. In his professional career so far, for about 22 years, Nikos promotes and strengthens formal sales people to people who produce profitable work, with respect and commitment to their collaborators and customers. Nikos does not like numbers. Numbers are just a result that is easy to come, if people can overcome the concept of “opposite” and move on to the concept of “together”.",
+                "In the last 6 years he is living the dream of his life, applying his whole experience, devoting all his energy and enjoying every minute of the day at Lancom as Chief Commercial Officer. His experience is at your disposal, along with his passion for discussions and sharing ideas. You can find Nikos at Lancom’s HQ or send him an email at:nzachariadis@lancom.gr",
+            ],
+            "18" => [
+                "Rodanthi Alexiou",
+                "My name is Rodanthi Alexiou and I currently study Computer Science in the University of Athens. I am a Microsoft Learn Student Ambassador, a General Organizer in Google’s Developer Student Club, a member of the Operations team of Mindspace NPO and my passions are Artificial Intelligence and Data Science. You can find my tech blogs here: http://www.rodanthi-alexiou.com/",
+            ],
+            "19" => [
+                "Triantafyllos Paschaleris",
+                "A Business Intelligence Developer with passion about technology. A curious learner with love for volunteering in IT. Currently pursuing a master’s degree in Big Data Analytics.",
+
+            ],
+            "20" => [
+                "",
+                "",
+                "",
+            ],
+            "21" => [
+                "",
+                "",
+                "",
+            ],
 
         ],
 
