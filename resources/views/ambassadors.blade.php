@@ -1,5 +1,7 @@
 @extends('layout.base')
 
+<x-tailwind></x-tailwind>
+
 @section('content')
 
     <section id="codeweek-ambassadors-page" class="codeweek-page">
@@ -8,19 +10,29 @@
             <div class="text">
                 <h2>#CodeWeek</h2>
                 <h1>@lang('menu.ambassadors')</h1>
+
             </div>
             <div class="image">
+
                 <img src="images/banner_ambassadors.svg" class="static-image">
+                <div class="mt-16 mr-8 absolute">
+                    <img src="{{asset('images/ally.png')}}" width="100px">
+                </div>
             </div>
+
+
         </section>
 
         <section class="codeweek-searchbox">
+
             <form method="get" action="/ambassadors" enctype="multipart/form-data">
                 <select id="id_country" name="country_iso" onchange="this.form.submit()" class="codeweek-input-select">
                     @foreach ($countries as $country)
                         <option value="{{$country->iso}}" {{app('request')->input('country_iso') == $country->iso ? 'selected' : ''}}>{{$country->translation}}</option>
                     @endforeach
                 </select>
+
+
             </form>
         </section>
 
