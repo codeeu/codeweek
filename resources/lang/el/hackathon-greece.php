@@ -120,9 +120,9 @@ return [
         ],
 
         "mentors" => [
-            "1" => ["Dimitrios Tzimas",
-                "Dimitrios Tzimas received the B.Sc degree in Informatics, Aristotle University of Thessaloniki, Greece, and the M.Sc degree in “Digital Signal Processing for Communications and Multimedia” University of Athens, Greece.",
-                "He is currently a PhD student at the Aristotle University of Thessaloniki. His research interests include Learning Analytics and MOOCs. He has published many scientific articles in journals and conference proceedings. He teaches Computer Science in secondary and higher education for the last 21 years. He is a co-author of 4 Greek books about computer programming.",
+            "1" => ["Δημήτριος Τζίμας",
+                "Ο Δημήτριος Τζίμας έλαβε το πτυχίο B.Sc στην Πληροφορική, το Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης και το πτυχίο M.Sc στο «Digital Signal Processing for Communications and Multimedia» Πανεπιστήμιο Αθηνών.",
+                "Σήμερα είναι διδακτορικός φοιτητής στο Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης. Τα ερευνητικά του ενδιαφέροντα περιλαμβάνουν το Learning Analytics και MOOCs. Έχει δημοσιεύσει πολλά επιστημονικά άρθρα σε περιοδικά και πρακτικά συνεδρίων. Διδάσκει Πληροφορική στη δευτεροβάθμια και τριτοβάθμια εκπαίδευση τα τελευταία 21 χρόνια. Είναι συν-συγγραφέας 4 ελληνικών βιβλίων σχετικά με τον προγραμματισμό υπολογιστών.",
             ],
             "2" => ["Ioannis Papikas",
                 "Ο Γιάννης μπήκε στον κόσμο της επιχειρηματικότητας περίπου 8 χρόνια πριν και βοήθησε στο χτίσιμο web εφαρμογών με την ομάδα του σε διάφορα industries.",
