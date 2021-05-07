@@ -203,15 +203,73 @@ return [
 
             ],
             "20" => [
-                "",
-                "",
-                "",
+                "Katerina Katmada",
+                "Katerina is a designer with coding background, skilled in visual identity, UI/UX and data visualization design. She has studied Computer Science (BSc, MSc) and Product Design (MSc), and currently works as a visual designer at Geekbot.",
+                "She is interested in creating accessible and enjoyable designs for various platforms, starting by defining user needs and translating them into tangible concepts, while reinforcing the brand’s voice through consistent visual touchpoints.",
             ],
             "21" => [
-                "",
-                "",
+                "Alexandra Hatsiou",
+                "Alexandra is from Athens and works as a Business Development Representative at Amazon Web Services (AWS) in Madrid, supporting AWS customers based in Central Eastern Europe. She has an background in Economics and Management and before AWS she worked in Marketing.",
+            ],
+            "22" => [
+                "Demetris Bakas",
+                "Demetris Bakas is a Gold Microsoft Learn Student Ambassador and a Computer Engineering student from the University of Patras, passionate with software engineering and Artificial Intelligence.",
+
+            ],
+            "23" => [
+                "Dimitra Iordanidou",
+                "Dimitra Iordanidou has a financial background and works for Thessaloniki Innovation Zone as Head of Financial Services. She has a working experience in budgeting and financial monitoring. In addition, she was involved several years in running championships  as a marathon runner and she has founded and organizes for a 4th year a project for runners and kids Koufalia Hill Run. She holds a master's degree in Business Administration (Bath University, UK) and a degree in Economics from the Aristotle University of Thessaloniki.",
+
+            ],
+            "24" => [
+                "Dimitris Dimosiaris",
+                "Dimitris Dimosiaris is co-founder at Founderhood, which aims to impact every human life by giving to each tech startup founder, anywhere, access to the best resources. In the past he has been part of two startup projects. He is founding member in the first student-run entrepreneurship club in Greece, ThinkBiz. Founding member & ex-chairman of the Non-profit organization Mindspace which is based on National Technical University of Athens and its activities spread across Greece. Dimitris has extensive experience in designing and building innovative web products.",
+
+            ],
+            "25" => [
+                "Georgia Margia",
+                "Professional in software engineering for over 6 years. Has built software, related to demand forecasting, which is used by large retail companies in U.S., England and Russia. Currently, working as a Database Reporting Analyst, dealing with storing, management and manipulation of data in order to create reports, analyze patterns and trends and provide findings to be taken into account for strategic and operational decisions and actions.",
+
+            ],
+
+            "26" => [
+                "Konstantinos Chaliasos",
+                "My name is Konstantinos Chaliasos and I am based in Thessaloniki, Greece. I am passionate about all aspects of software development with a strong focus on web and mobile applications. For the past 10 years I have worked with teams all over the world on exciting projects with the goal of increasing our quality of life using tech.Currently working both as a Lead Software Engineer in Exandia and as a freelancer Software Engineer.",
+            ],
+            "27" => [
+                "Kostas Kalogirou",
+                "CEO Exandia. Business executive with tech orientation, seasoned executive in visual communication and experienced design educator. Assistant curator at Thessaloniki Design Museum, has co-organised exhibitions in Europe and USA. Design educator and guest lecturer in design events around Greece and jury member in national and international graphic design competitions. Will assist Hackathon teams in business aspects of software product development and pitching .",
                 "",
             ],
+
+            "28" => [
+                "Maria-Anastasia Moustaka",
+                "Maria-Anastasia Moustaka is an undergraduate student in the Department of Computer Engineering at the University of Patras and Gold Microsoft Learn Student Ambassador. She has also been teaching robotics and programming for the last four years and has excelled in global robotics competitions with the Robotics Club of the University of Patras.",
+
+            ],
+            "29" => [
+                "Mixalis Nikolaidis",
+                "I’m a Senior Software Engineer, Consultant and Trainer. I’m mainly interested in the development of innovative cloud solutions that take full advantage of the Microsoft technology stack. I have worked on multiple projects providing quality services both in team environments and independently.",
+
+            ],
+            "30" => [
+                "Nikiforos Botis",
+                "Nikiforos works as a Solutions Architect (SA) at Amazon Web Services, looking after Public Sector customers in Greece and Cyprus. In his role as an SA, he is responsible for helping customers in their digital transformation journey by sharing best practices for architecting successful solutions at the AWS Cloud. Prior to joining AWS (2.5 years ago), Nikiforos pursued a MSc in Computer Science at Imperial College London and a BSc in Management Science and Technology at Athens University of Economics and Business.",
+            ],
+
+            "31" => [
+                "Panayiotis Antoniou",
+                "Hi, my name is Panayiotis Antoniou, I am currently living in London where I work as a Solutions Architect in AWS. I was born and raised in Cyprus and I came to the UK to study my Bachelors in Computer Science. I have an interest in Analytics, Networking and Sustainability. Outside work I like playing racket sports, guitar and watching films.",
+                "",
+            ],   "32" => [
+                "Anastasia Papadou",
+                "Anastasia is a Senior Business Development Representative at Amazon Web Services, supporting AWS growth across EMEA. She has 5 years of experience in implementing/selling cloud technologies and she has an academic background in Management Science and Technology.",
+
+            ],
+            "33" => [
+                "Konstantina Tagkopoulou",
+                "Konstantina Tagkopoulou is passionate about entrepreneurship, and has experience working with startups and scaleups across Europe. Since she joined Amazon Web Services in 2019, she has supported startups on their cloud journey and go-to-market strategy. Prior to AWS, she worked for a B2B SaaS startup in London, focusing on commercial growth and strategic business development. She holds a BSc in Sociology from the University of Bath and an MSc in Sociology from the University of Oxford.",
+            ]
 
         ],
 

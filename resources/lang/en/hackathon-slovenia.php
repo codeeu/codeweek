@@ -125,6 +125,9 @@ return [
             "3" =>["Uroš Polanc","Uroš has been involved in innovation, prototyping, networking and many other things since he was a child. He completed his studies in mechatronics. He is now the head of the Learning Production Laboratory at ŠCNG, which is a laboratory dedicated to networking, prototyping and learning.","He participates in various local and European projects, and also walks in business environment. He has extensive experience in mentoring, prototyping, working with young people, CNC machining, 3D modeling,"],
             "4" =>["Luka Manojlovic","Luka Manojlovic is a technical enthusiast - a computer scientist who has been dealing with server and network infrastructure for more than 20 years."," He likes to share his knowledge with the participants of interactive workshops from various fields of information technologies."],
             "5" =>["Vesna Krebs","Vesna Krebs is a media artist and mentor who works both at home and abroad. Vesna combines her love of technology and art through various workshops and performances for children.","In her pedagogical work, the emphasis is on creative audio-visual production with computer technologies, with which she encourages the younger population to think creatively and create with the help of modern technologies."],
+            "6" =>["Alojz Černe","Alojz has an excellent working knowledge of IT, is a highly experienced developer and system designer. His field of work is also on microservice platforms - development and deployment of services on these platforms. 30+ years of experience in international enterprise projects with larger systems, in finance, telco and retail sector.",
+                    "In addition to this he is outstanding Official Red Hat Instructor and Architect. He is a curious learner and eager to implement and share his newly obtain knowledge in practice."],
+
         ],
 
         "after" => [
