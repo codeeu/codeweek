@@ -268,7 +268,7 @@
                     </div>
                     <h2 class="text-center">@lang('hackathon-greece.sections.mentors.13.0')</h2>
                     <div class="text-sm">@lang('hackathon-greece.sections.mentors.13.1')<br/>
-                        @lang('hackathon-greece.sections.mentors.6.2')
+                        @lang('hackathon-greece.sections.mentors.13.2')
                     </div>
                 </div>
 
@@ -328,6 +328,127 @@
                     <div class="text-sm">@lang('hackathon-greece.sections.mentors.19.1')
                     </div>
                 </div>
+
+
+
+
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/greece/3/aikaterini-katmada.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-greece.sections.mentors.20.0')</h2>
+                    <div class="text-sm">@lang('hackathon-greece.sections.mentors.20.1')<br/>
+                        @lang('hackathon-greece.sections.mentors.20.2')
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/greece/3/alexandra-hatsiou.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-greece.sections.mentors.21.0')</h2>
+                    <div class="text-sm">@lang('hackathon-greece.sections.mentors.21.1')
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/greece/3/demetris-bakas.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-greece.sections.mentors.22.0')</h2>
+                    <div class="text-sm">@lang('hackathon-greece.sections.mentors.22.1')
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/greece/3/dimitra-iordanidou.png')}}">
+                    </div>       <h2 class="text-center">@lang('hackathon-greece.sections.mentors.23.0')</h2>
+                    <div class="text-sm">@lang('hackathon-greece.sections.mentors.23.1')
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/greece/3/Dimosiaris.png')}}">
+                    </div>       <h2 class="text-center">@lang('hackathon-greece.sections.mentors.24.0')</h2>
+                    <div class="text-sm">@lang('hackathon-greece.sections.mentors.24.1')
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/greece/3/georgia-maria.png')}}">
+                    </div>       <h2 class="text-center">@lang('hackathon-greece.sections.mentors.25.0')</h2>
+                    <div class="text-sm">@lang('hackathon-greece.sections.mentors.25.1')
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/greece/3/konstantinos-chalisaos.png')}}">
+                    </div>       <h2 class="text-center">@lang('hackathon-greece.sections.mentors.26.0')</h2>
+                    <div class="text-sm">@lang('hackathon-greece.sections.mentors.26.1')
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/greece/3/kostas-kalogirou.png')}}">
+                    </div>       <h2 class="text-center">@lang('hackathon-greece.sections.mentors.27.0')</h2>
+                    <div class="text-sm">@lang('hackathon-greece.sections.mentors.27.1')
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/greece/3/maria-anastasia-moustaka.png')}}">
+                    </div>       <h2 class="text-center">@lang('hackathon-greece.sections.mentors.28.0')</h2>
+                    <div class="text-sm">@lang('hackathon-greece.sections.mentors.28.1')
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/greece/3/mixalis-nikolaidis.png')}}">
+                    </div>       <h2 class="text-center">@lang('hackathon-greece.sections.mentors.29.0')</h2>
+                    <div class="text-sm">@lang('hackathon-greece.sections.mentors.29.1')
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/greece/3/nikiforos-botis.png')}}">
+                    </div>       <h2 class="text-center">@lang('hackathon-greece.sections.mentors.30.0')</h2>
+                    <div class="text-sm">@lang('hackathon-greece.sections.mentors.30.1')
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/greece/3/panayiotis-antoniou.png')}}">
+                    </div>       <h2 class="text-center">@lang('hackathon-greece.sections.mentors.31.0')</h2>
+                    <div class="text-sm">@lang('hackathon-greece.sections.mentors.31.1')
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/greece/3/papadopoulou-anastasia.png')}}">
+                    </div>       <h2 class="text-center">@lang('hackathon-greece.sections.mentors.32.0')</h2>
+                    <div class="text-sm">@lang('hackathon-greece.sections.mentors.32.1')
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/greece/3/konstantina-tagkopoulou.png')}}">
+                    </div>       <h2 class="text-center">@lang('hackathon-greece.sections.mentors.33.0')</h2>
+                    <div class="text-sm">@lang('hackathon-greece.sections.mentors.33.1')
+                    </div>
+                </div>
+
 
             </div>
         </section>
@@ -425,6 +546,41 @@
                 <div class="item">
                     <div class="flex justify-center">
                         <img src="{{asset('/images/hackathons/partners/greece/social-innov.png')}}">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/greece/2/alexander-innovation-zone.png')}}">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/greece/2/exandia.png')}}">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="partners-grid">
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/greece/2/greek-girls-code.png')}}">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/greece/2/kaktus-design.png')}}">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/makeblock-makex.png')}}">
                     </div>
                 </div>
 
