@@ -214,6 +214,16 @@
                     </div>
                 </div>
 
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/slovenia/alojz.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-slovenia.sections.mentors.6.0')</h2>
+                    <div class="text-sm">@lang('hackathon-slovenia.sections.mentors.6.1')<br/>
+                        @lang('hackathon-slovenia.sections.mentors.6.2')
+                    </div>
+                </div>
+
 
 
 
@@ -250,9 +260,11 @@
 
                 <div class="item">
                     <div class="flex justify-center">
-                        <img src="{{asset('/images/hackathons/partners/microsoft.png')}}">
+                        <img src="{{asset('/images/hackathons/partners/makeblock-makex.png')}}">
                     </div>
                 </div>
+
+
 
 {{--                <div class="item">--}}
 {{--                    <div class="flex justify-center">--}}
@@ -262,6 +274,15 @@
 
 
 
+
+            </div>
+
+            <div class="partners-grid">
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/microsoft.png')}}">
+                    </div>
+                </div>
 
             </div>
         </section>
