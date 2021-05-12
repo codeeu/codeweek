@@ -116,19 +116,16 @@
 
             <br/><br/>
             <h1>@lang('hackathon-slovenia.sections.8.title')</h1>
-            @lang('hackathon-slovenia.sections.8.content.0')
-            <ol>
-                <li>@lang('hackathon-slovenia.sections.8.content.1')</li>
-                <li>@lang('hackathon-slovenia.sections.8.content.2')</li>
-                <li>@lang('hackathon-slovenia.sections.8.content.3')</li>
-            </ol>
-        <div>
-            @lang('hackathon-slovenia.sections.8.content.4')<br/><br/>
 
-            @lang('hackathon-slovenia.sections.8.content.5')<br/><br/>
-            @lang('hackathon-slovenia.sections.8.content.6')<br/><br/>
-            @lang('hackathon-slovenia.sections.8.content.7')<br/><br/>
-            @lang('hackathon-slovenia.sections.8.content.8')<br/><br/>
+
+        <div>
+            @lang('hackathon-slovenia.sections.8.content.0')<br/><br/>
+            @lang('hackathon-slovenia.sections.8.content.1')<br/><br/>
+            @lang('hackathon-slovenia.sections.8.content.2')<br/><br/>
+            @lang('hackathon-slovenia.sections.8.content.3')<br/><br/>
+
+
+
         </div>
         </section>
 
