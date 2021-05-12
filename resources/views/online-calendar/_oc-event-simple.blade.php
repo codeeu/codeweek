@@ -16,7 +16,7 @@
         </div>
 
 
-        <div class="card-description">{{ str_limit($event->description,400) }}</div>
+        <div class="card-description">{!! $event->description !!}</div>
 
     </div>
     <div class="card-actions">
