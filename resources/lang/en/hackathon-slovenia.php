@@ -14,7 +14,7 @@ return [
             "content" => [
                 "Do you dream of creating the next big app? Do you know how innovative tech solutions can help your school, town, and region? If you want to be an entrepreneur or have a killer idea to pitch to the world but you don’t know where to start, then your waiting is at an end! ",
                 "The EU Code Week Hackathon",
-                "begins with a challenge to develop a code that solves a real-life challenge in just 24-hours. The 10 most successful teams will then receive training and mentoring from experts in this field, in order to prepare them for the second and final round, from which the ultimate winner will be selected.  The lucky team will win further coaching and mentoring of their ideas and cool IT equipment. The winning team will also secure a spot at the European pitch where all the hackathon winners will present their ideas to a European jury during the official EU Code Week 9-24 October 2021.",
+                "begins with a challenge to develop a code that solves a real-life challenge. The winning team will also secure a spot at the European pitch where all the national hackathon winners from Romania, Ireland, Greece, Italy, Slovenia and Latvia will present their ideas to a European jury during the official EU Code Week 9-24 October 2021.",
                 "The EU Code Week hackathon is sure to fuel your curiosity, inspire your creativity, encourage your entrepreneurial spirit, and bring your ideas to life. "
             ]
         ],
@@ -66,15 +66,15 @@ return [
         8 => [
             "title" => "Programme",
             "content" => [
-                "The EU Code Week hackathon has three distinct rounds.",
-                "The 24-hour online hackathon. Out of all those competing, up to 10 teams will be chosen to remain in the competition.",
-                "Free online training and mentoring for all 10 teams, during summer 2021.",
-                "The final round: the physical hackathon. 10 teams will have all received equal training in the second round, but only one will win.  Secondary school students aged 15-19 will compete in teams to solve a ‘local challenge’ selected from proposals submitted ahead of the first round.",
-                "In 2021, EU Code Week brings six extraordinary hackathons and invites students aged 15-19 in upper secondary school to form teams and use their coding skills to solve a local challenge. After 24 hours of hacking, each team will pitch their ideas to a panel of experts who will choose the 10 final teams.  All teams will have the same amount of time, resources, and access to mentors and expertise in order to complete the challenge, but only 10 will get the chance to continue to the next round, develop their prototype, get expert coaching and take part in the final hackathon in the autumn. In the final the teams will battle it out to decide who wins IT accessories and the chance of mentoring and coaching to further develop their prototype.",
-                "Your team is not guaranteed a place in the second round even if you successfully solve the challenge. Remember you are in competition with the other teams and the jury will take your method, use of time and quality of the prototype into consideration to select the successful candidates! ",
-                "If your team is one of the 10 finalists, you can work on your idea over the summer. To assist you, we will offer you free trainings for development and UX Design. Your team will also get the help of a mentor who ensures that you are on the right path.",
-                "The 10 finalist teams will meet face-to-face in a 12-hour hackathon on X (which will take place online if the public health situation does not allow for a physical meet-up). Here teams will compete to be the nation’s best young hackers and get the chance to win prizes such as cool IT equipment as well as further coaching and mentoring of their ideas.",
-                "Each national winner will face-off in a European clash of titans where each winning team will pitch their solution to a European jury during the official EU Code Week 9-24 October 2021. The European champion will, besides the glory, win additional IT equipment.",
+                "The EU Code Week Hackathon is a two-day competition gathering secondary school students aged 15-19. They will compete in teams to solve a ‘local challenge’ selected from proposals submitted ahead.",
+                "During the Hackathon, teams will get support from experienced mentors, be able to participate in workshops, do mini-challenges, quizzes, win prizes and a 2.000€ prize for the winning team! The jury will take the team’s method, use of time and quality of the prototype into consideration to select the successful candidates!",
+                "Each national winner will meet in a European clash of titans where each winning team will pitch their solution to a European jury during the official EU Code Week 9-24 October 2021. The European champion will, besides the glory, win additional IT equipment.",
+                "Free online and/or physical side events will also be organised during summer 2021 for beginners in coding.",
+                "",
+                "",
+                "",
+                "",
+                "",
                 "Day 1",
                 "Day 2",
             ]
@@ -82,7 +82,7 @@ return [
         9 => [
             "title" => "Practical Info",
             "content" => [
-                "The hackathon will take place online from 15 May to 16 May 2021",
+                "The Hackathon will be held from 18 September to 19 September 2021. We hope the competition to take place physically. If the public health situation does not allow it, we will meet online.",
                 "The Hackathon is free of charge."
 
             ]
