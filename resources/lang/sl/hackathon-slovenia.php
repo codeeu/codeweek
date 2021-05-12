@@ -98,11 +98,39 @@ return [
         ],
 
         11 => [
-            "title" => "Spremljajoči dogodki",
+            "title" => "Ne znam programirati – kaj lahko naredim?",
             "content" => [
-                "Ali te take teme zanimajo, vendar ne veš, kako bi se lotil programiranja? Prijavi se na naše spremljajoče dogodke in odkrij vznemirjenje programiranja, inovacij, podjetništva in drugih veščin, ki so bistvene za sodelovanje v digitalnem svetu. Spremljajoči dogodki hekatona v okviru tedna programiranja bodo predvidoma potekali od maja do oktobra in bodo vključevali več različnih vrst delavnic. So brezplačni, le prijaviti se moraš tukaj. Pridi, pa boš izvedel še več.",
+                "V zvezi s hekatonom bodo organizirane delavnice za začetnike na področju programiranja, izboljšanja strojne opreme in robotike itd. Udeleženci se bodo naučili nekaj osnov računalniškega razmišljanja in programiranja. Od aprila do septembra bomo z našimi neverjetnimi partnerji hekatonov evropskega tedna programiranja organizirali spremljevalne dogodke, ki se jih lahko brezplačno udeležiš! Oglej si različne dejavnosti in se prijavi, da dobiš povezavo.",
+            ],
+            "events" => [
+                "1" => [
+                    "title" => "Zanimiraj ime ",
+                    "content" => [
+                        "Si star(-a) med 9 in 14 let in si želiš izvedeti več o računalniškem programiranju? Ta delavnica je prava zate! Na njej boš lahko ustvarjal(-a), se zabaval(-a) in hitro pridobil(-a) veščine programiranja. S samo peščico blokov in nekaj kliki lahko narediš figuro (sprite), ki pleše, govori ali ki jo animiraš na različne načine. Poleg tega lahko koncepte računalništva, ki jih bomo uporabljali v programu Scratch for CS First, uporabimo tudi pri drugih naprednih programskih jezikih, kot sta Python ali Java.",
+                        "Prijavi se in sodeluj pri tej dejavnosti in lahko boš:",
+                        "uporabljal(-a) programski jezik, ki temelji na blokih, ",
+                        "obvladal(-a) pomembne koncepte računalništva, kot so dogodki, zaporedja in zanke, ",
+                        "ustvaril(-a) projekt animacije na platformi Scratch for CS First.",
+                        "Datum: 8. oktober, 11.00 -> za prijavo",
+                        "klikni",
+                        "tukaj!",
+                        "Več informacij o tem:"
+                    ]
+                ],
+                "2" => [
+                    "title" => "Delavnica ustvarjalnega programiranja",
+                    "content" => [
+                        "Spoznaj osnove programskega jezika Python z orodji za kreativno programiranje družbe imagiLabs! Ta delavnica, ki bo trajala uro in pol, je idealna za začetnike, stare od 9 do 15 let. Te programerje bomo popeljali od prižiganja ene slikovne pike naenkrat do ustvarjanja barvitih animacij. ",
+                        "Datum: xxx -> za",
+                        "prijavo",
+                        "klikni tukaj!",
+                        "Za začetek si brezplačno prenesi aplikacijo imagiLabs na svojo napravo iOS ali Android in začni že danes. Ne potrebuješ nobenega dodatka za prenosljive naprave imagiCharms – kar tako se pridruži virtualni delavnici!",
+                    ]
+                ]
             ]
         ],
+
+
         12 => [
             "title" => "O CODEWEEK.EU",
             "content" => [
