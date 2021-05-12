@@ -240,6 +240,36 @@
 {{--                    <img src="/images/hackathons/side_events.png">--}}
 {{--                </section>--}}
 
+        <section id="side-events">
+            <h1>@lang('hackathon-slovenia.sections.11.title')</h1>
+            <p>@lang('hackathon-slovenia.sections.11.content.0')</p>
+
+            <div class="p-8 leading-6 bg-yellow-200 bg-opacity-25">
+                <h2>@lang('hackathon-slovenia.sections.11.events.1.title')</h2>
+
+                <div class="mb-4">@lang('hackathon-slovenia.sections.11.events.1.content.0')</div>
+                @lang('hackathon-slovenia.sections.11.events.1.content.1')
+                <br/>
+                <ul style="list-style-type: circle;margin-left:40px; margin-top:0px;">
+                    <li>@lang('hackathon-slovenia.sections.11.events.1.content.2')</li>
+                    <li>@lang('hackathon-slovenia.sections.11.events.1.content.3')</li>
+                    <li>@lang('hackathon-slovenia.sections.11.events.1.content.4')</li>
+                </ul>
+                @lang('hackathon-slovenia.sections.11.events.1.content.5') <a href="https://codeweek.eu/view/362945/animate-a-name-coding-activity-in-slovenian">@lang('hackathon-slovenia.sections.11.events.1.content.6')</a> @lang('hackathon-slovenia.sections.11.events.1.content.7')<br/>
+                @lang('hackathon-slovenia.sections.11.events.1.content.8') <a href="https://www.youtube.com/watch?v=8c8JCZRy9do&list=PLnqp3yQre_1hFCDhLMSsecHDemuuOB2a4">https://www.youtube.com/watch?v=8c8JCZRy9do&list=PLnqp3yQre_1hFCDhLMSsecHDemuuOB2a4</a>
+
+            </div>
+
+            <div class="p-8 leading-6 bg-yellow-200 bg-opacity-25 mt-6">
+                <h2>@lang('hackathon-slovenia.sections.11.events.2.title')</h2>
+
+                <div class="mb-4">@lang('hackathon-slovenia.sections.11.events.2.content.0')</div>
+
+{{--                @lang('hackathon-slovenia.sections.11.events.2.content.1') <a href="https://codeweek.eu/view/361883/creative-coding-workshop">@lang('hackathon-slovenia.sections.11.events.2.content.2')</a> @lang('hackathon-slovenia.sections.11.events.2.content.3')<br/>--}}
+                <div class="text-sm"> @lang('hackathon-slovenia.sections.11.events.2.content.4')</div>
+            </div>
+        </section>
+
         <section id="partners">
             <div>
                 <h1>@lang('hackathon-slovenia.misc.2')</h1>
