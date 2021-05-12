@@ -12,9 +12,9 @@ return [
     "sections" => [
         1 => [
             "content" => [
-                " Ali sanjaš o tem, da bi ustvaril naslednjo veliko aplikacijo? Ali veš, kako lahko inovativne tehnološke rešitve pomagajo tvoji šoli, mestu in regiji? Če želiš postati podjetnik ali imaš hudo idejo, s katero bi rad prodrl v svet, pa ne veš, kako se tega lotiti, je tvojega čakanja zdaj konec!",
-                "Hekaton evropskega tedna programiranja",
-                "se začne s programiranjem, ki reši resničen izziv v zgolj 24 urah. Nato se bo 10 najuspešnejših ekip usposabljalo in bodo deležni mentorstva strokovnjakov s tega področja, da se bodo pripravile na drugi in zadnji krog, v katerem bo izbran končni zmagovalec. Srečna ekipa bo za nagrado prejela nadaljnje usmerjanje in mentorstvo pri svojih idejah ter kul računalniško opremo. Zmagovalna ekipa si bo prav tako priborila mesto na evropskem prizorišču, kjer bodo vsi zmagovalci hekatonov svoje ideje predstavili evropski žiriji med uradnim evropskim tednom programiranja od 9. do 24. oktobra 2021.",
+                "Ali sanjaš o tem, da bi ustvaril naslednjo veliko aplikacijo? Ali veš, kako lahko inovativne tehnološke rešitve pomagajo tvoji šoli, mestu in regiji? Če želiš postati podjetnik ali imaš hudo idejo, s katero bi rad prodrl v svet, pa ne veš, kako se tega lotiti, je tvojega čakanja zdaj konec!",
+                "The EU Code Week Hackathon",
+                "begins with a challenge to develop a code that solves a real-life challenge. The winning team will also secure a spot at the European pitch where all the national hackathon winners from Romania, Ireland, Greece, Italy, Slovenia and Latvia will present their ideas to a European jury during the official EU Code Week 9-24 October 2021.",
                 "Hekaton evropskega tedna programiranja bo zagotovo še podžgal tvojo radovednost, spodbudil ustvarjalnost in podjetniškega duha ter oživil ideje."
             ]
         ],
@@ -66,15 +66,15 @@ return [
         8 => [
             "title" => "Program",
             "content" => [
-                "Hekaton evropskega tedna programiranja ima tri različne kroge.",
-                "24-urni spletni hekaton. Od vseh tekmovalnih ekip jih bodo izbrali največ 10, ki bodo s tekmovanjem nadaljevale.",
-                "Brezplačno spletno usposabljanje in mentorstvo za vseh 10 ekip poleti 2021.",
-                "Zadnji krog: fizični hekaton. Vseh 10 ekip bo v drugem krogu deležnih enakega usposabljanja, zmagala pa bo le ena. Srednješolci, stari od 15 do 19 let bodo tekmovali v ekipah, da bi rešili ‘lokalni izziv’, ki bo izbran med predlogi, posredovanimi v prvem krogu.",
-                "'Evropski teden programiranja leta2021 prinaša šest izjemnih hekatonov, ki vabijo srednješolce, stare od 15 do 19 let, da oblikujejo ekipe in svoje veščine programiranja uporabijo pri reševanju lokalnih izzivov. Po 24-urnem hekanju bo vsaka ekipa svoje ideje predstavila strokovnjakom, ki bodo izbrali 10 ekip, ki bodo sodelovale v finalu. Vse ekipe bodo pri obravnavi izziva imele na voljo enako časa in sredstev ter dostop do mentorjev in strokovnega znanja, vendar jih bo le 10 dobilo priložnost za nadaljevanje v naslednjem krogu, v katerem bodo razvijale svoj prototip in bile pri tem deležne usmerjanja strokovnjakov. Jeseni pa se bodo udeležile zaključnega hekatona. V finalu  se bodo ekipe borile za zmago, ki prinaša nagrado v obliki računalniške opreme in možnost mentorstva in usposabljanja v zvezi z nadaljnjim razvojem svojega prototipa.",
-                " Tudi če boste uspešno rešili izziv, vaši ekipi še ni zagotovljena uvrstitev v drugi krog. Ne pozabi, da tekmujete z drugimi ekipami. Žirija bo pri izbiri uspešnih kandidatov upoštevala vašo metodo, izkoriščenost časa in kakovost prototipa!",
-                "Če bo tvoja ekipa ena od desetih finalistov, boste lahko svojo idejo čez poletje še izpopolnili. Kot pomoč vam bomo ponudili brezplačna izobraževanja glede razvoja in oblikovanja UX. Tvoji ekipi bo zagotovljena tudi pomoč mentorja, ki bo poskrbel, da boste na pravi poti.",
-                "Deset ekip se bo v finalu srečalo iz oči v oči v 12-urnem hekatonu dne 18. septembra (ki bo potekal na spletu, če javnozdravstvene razmere ne bodo dopuščale fizičnega srečanja). Tu se bodo ekipe pomerile za naslov najboljših mladih hekerjev v državi in ​​dobile priložnost, da osvojijo nagrade, kot je kul računalniška oprema, pa tudi nadaljnje usposabljanje in mentorstvo glede svoje ideje.",
-                "Vsi zmagovalci iz posameznih držav se bodo pomerili v evropskem spopadu titanov, kjer bodo vse ekipe, zmagovalke na nacionalni ravni, svojo rešitev predstavile evropski žiriji med uradnim evropskim tednom programiranja od 9. do 24. oktobra 2021. Evropski prvak bo poleg slave osvojil še dodatno računalniško opremo.",
+                "The EU Code Week Hackathon is a two-day competition gathering secondary school students aged 15-19. They will compete in teams to solve a ‘local challenge’ selected from proposals submitted ahead.",
+                "During the Hackathon, teams will get support from experienced mentors, be able to participate in workshops, do mini-challenges, quizzes, win prizes and a 2.000€ prize for the winning team! The jury will take the team’s method, use of time and quality of the prototype into consideration to select the successful candidates!",
+                "Each national winner will meet in a European clash of titans where each winning team will pitch their solution to a European jury during the official EU Code Week 9-24 October 2021. The European champion will, besides the glory, win additional IT equipment.",
+                "Free online and/or physical side events will also be organised during summer 2021 for beginners in coding.",
+                "",
+                "",
+                "",
+                "",
+                "",
                 "1. dan",
                 "2. dan",
             ]
@@ -82,8 +82,9 @@ return [
         9 => [
             "title" => "Praktične informacije",
             "content" => [
-                "Hekaton bo potekal na spletu od 15.maja do 16.Maja2021",
-                "Hekaton je brezplačen."
+                "The Hackathon will be held from 18 September to 19 September 2021. We hope the competition to take place physically. If the public health situation does not allow it, we will meet online.",
+                "The Hackathon is free of charge."
+
 
             ]
         ],
