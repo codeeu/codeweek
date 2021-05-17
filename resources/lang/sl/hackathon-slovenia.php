@@ -13,8 +13,8 @@ return [
         1 => [
             "content" => [
                 "Ali sanjaš o tem, da bi ustvaril naslednjo veliko aplikacijo? Ali veš, kako lahko inovativne tehnološke rešitve pomagajo tvoji šoli, mestu in regiji? Če želiš postati podjetnik ali imaš hudo idejo, s katero bi rad prodrl v svet, pa ne veš, kako se tega lotiti, je tvojega čakanja zdaj konec!",
-                "The EU Code Week Hackathon",
-                "begins with a challenge to develop a code that solves a real-life challenge. The winning team will also secure a spot at the European pitch where all the national hackathon winners from Romania, Ireland, Greece, Italy, Slovenia and Latvia will present their ideas to a European jury during the official EU Code Week 9-24 October 2021.",
+                "Hekaton evropskega tedna programiranja",
+                "se začne z izzivom razviti program za rešitev izziva iz resničnega življenja. Zmagovalna ekipa si bo zagotovila mesto v evropskem vrhuncu, ko bodo vsi nacionalni zmagovalci hekatona iz Romunije, Irske, Grčije, Italije, Slovenije in Latvije predstavili svoje ideje evropski žiriji v okviru uradnega evropskega tedna programiranja, ki bo potekal od 9. do 24. oktobra 2021.",
                 "Hekaton evropskega tedna programiranja bo zagotovo še podžgal tvojo radovednost, spodbudil ustvarjalnost in podjetniškega duha ter oživil ideje."
             ]
         ],
@@ -66,10 +66,10 @@ return [
         8 => [
             "title" => "Program",
             "content" => [
-                "The EU Code Week Hackathon is a two-day competition gathering secondary school students aged 15-19. They will compete in teams to solve a ‘local challenge’ selected from proposals submitted ahead.",
-                "During the Hackathon, teams will get support from experienced mentors, be able to participate in workshops, do mini-challenges, quizzes, win prizes and a 2.000€ prize for the winning team! The jury will take the team’s method, use of time and quality of the prototype into consideration to select the successful candidates!",
-                "Each national winner will meet in a European clash of titans where each winning team will pitch their solution to a European jury during the official EU Code Week 9-24 October 2021. The European champion will, besides the glory, win additional IT equipment.",
-                "Free online and/or physical side events will also be organised during summer 2021 for beginners in coding.",
+                "Hekaton evropskega tedna programiranja je dvodnevno tekmovanje, na katerem se zberejo srednješolci, stari od 15 do 19 let. Ekipe bodo tekmovale pri reševanju „lokalnega izziva“, ki bo izbran med predhodno predloženimi predlogi.",
+                "Med hekatonom bodo ekipe deležne podpore izkušenih mentorjev. Ekipe se bodo lahko udeležile delavnic, sodelovale pri mini izzivih in kvizih ter osvojile nagrade. Zmagovalna ekipa bo prejela nagrado v višini 2.000 EUR! Žirija bo pri izbiri uspešnih kandidatov upoštevala metodo ekipe, porabljeni čas in kakovost prototipa!",
+                "Vsi državni zmagovalci se bodo pomerili v evropskem spopadu titanov, kjer bo vsaka zmagovalna ekipa svojo rešitev predstavila evropski žiriji v okviru uradnega evropskega tedna programiranja, ki bo potekal od 9. do 24. oktobra 2021. Evropski prvak bo – poleg slave – dobil tudi dodatno opremo IT.",
+                "Poleti 2021 bodo organizirani tudi brezplačni spletni in/ali fizični spremljevalni dogodki za začetnike na področju programiranja.",
                 "",
                 "",
                 "",
@@ -82,8 +82,8 @@ return [
         9 => [
             "title" => "Praktične informacije",
             "content" => [
-                "The Hackathon will be held from 18 September to 19 September 2021. We hope the competition to take place physically. If the public health situation does not allow it, we will meet online.",
-                "The Hackathon is free of charge."
+                "Hekaton bo potekal 18. in 19. septembra 2021. Upamo, da bo tekmovanje potekalo fizično. Če stanje javnega zdravja tega ne bo dopuščalo, se bomo srečali spletno.",
+                "Hekaton je brezplačen."
 
 
             ]
