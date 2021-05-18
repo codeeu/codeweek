@@ -6,9 +6,9 @@
 
         <section class="codeweek-banner">
 
-            <a href="https://codeweek-teachday.eu/registration/">
-                <img src="{{asset('images/teach-day/quiz-banner-1.jpeg')}}" class="static-image">
-            </a>
+
+                <img src="{{asset('images/teach-day/banner-2.jpeg')}}" class="static-image">
+
 
 
         </section>
@@ -112,8 +112,9 @@
                 </div>
 
                 <div class="flex items-center justify-center">
-                    <a target="_blank" href="https://codeweek-teachday.eu/registration/"
-                       class="codeweek-action-link-button">REGISTER FOR WORKSHOPS</a>
+                    <a target="_blank" type="button"
+                       class="codeweek-action-link-button" style="   pointer-events: none;
+    cursor: default; opacity: 75% ">FULL</a>
                 </div>
             </div>
 
