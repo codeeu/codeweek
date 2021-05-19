@@ -91,6 +91,22 @@
 {{--            </div>--}}
 {{--        </section>--}}
 
+        <section id="challenge">
+            <img src="/images/hackathons/ideation.png" class="desktop">
+            <div class="text">
+                <div class="challenge-text">
+                    <h1>@lang('hackathon-latvia.sections.5.title')</h1>
+                    <p>@lang('hackathon-latvia.sections.5.content.0')</p>
+
+                    <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/CodeWeekHacks_LV_voting"
+                       class="codeweek-action-link-button">@lang('hackathon-latvia.sections.5.content.1')</a>
+
+                    <p>@lang('hackathon-latvia.sections.5.content.2')</p>
+
+                </div>
+            </div>
+        </section>
+
         <section id="programme" id="pratical-info">
             <h1>@lang('hackathon-latvia.sections.9.title')</h1>
 
@@ -213,7 +229,7 @@
             <div class="partners-grid">
                 <div class="item">
                     <div class="flex justify-center">
-                        <img src="{{asset('/images/hackathons/partners/datorium.png')}}">
+                        <img src="{{asset('/images/hackathons/partners/latvia/datorium_logo_black.png')}}">
                     </div>
                 </div>
 
