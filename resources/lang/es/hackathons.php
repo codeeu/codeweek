@@ -74,7 +74,7 @@ return [
         5 => [
             'city' => "TBA",
             'country' => "Eslovenia",
-            'date' => "15-16 mayo 2021"
+            'date' => "del 18 al 19 de septiembre de 2021"
         ],
         6 => [
             'city' => "TBA",
