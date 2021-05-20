@@ -75,7 +75,7 @@ return [
         5 => [
             'city' => "TBA",
             'country' => "Slovēnija",
-            'date' => "2021. gada 15.–16. maijs"
+            'date' => "2021. gada 18.-19. septembris "
         ],
         6 => [
             'city' => "TBA",

@@ -75,7 +75,7 @@ return [
         5 => [
             'city' => "TBA",
             'country' => "Sloveenia",
-            'date' => "15.–16. mai 2021"
+            'date' => "18.-19. september 2021"
         ],
         6 => [
             'city' => "TBA",
