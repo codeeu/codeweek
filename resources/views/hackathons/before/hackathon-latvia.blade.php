@@ -209,6 +209,68 @@
                     <div class="text-sm">@lang('hackathon-latvia.sections.mentors.5.1')</div>
                 </div>
 
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/latvia/2/janis-knets.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-latvia.sections.mentors.6.0')</h2>
+                    <div class="text-sm">@lang('hackathon-latvia.sections.mentors.6.1')</div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/latvia/2/ance_kancere.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-latvia.sections.mentors.7.0')</h2>
+                    <div class="text-sm">@lang('hackathon-latvia.sections.mentors.7.1')</div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/latvia/2/kaspars-eglitis.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-latvia.sections.mentors.8.0')</h2>
+                    <div class="text-sm">@lang('hackathon-latvia.sections.mentors.8.1')</div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/latvia/2/paula-elksne.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-latvia.sections.mentors.9.0')</h2>
+                    <div class="text-sm">@lang('hackathon-latvia.sections.mentors.9.1')</div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/latvia/2/linda-sinka.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-latvia.sections.mentors.10.0')</h2>
+                    <div class="text-sm">@lang('hackathon-latvia.sections.mentors.10.1')</div>
+                </div>
+
+
+            </div>
+
+            <h1 class="mt-12">@lang('hackathon-latvia.sections.leaders.title')</h1>
+            <div class="jury-grid">
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/latvia/2/viesturs_sosars.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-latvia.sections.leaders.1.0')</h2>
+                    <div class="text-sm">@lang('hackathon-latvia.sections.leaders.1.1')</div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/latvia/2/karlis-jonass.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-latvia.sections.leaders.2.0')</h2>
+                    <div class="text-sm">@lang('hackathon-latvia.sections.leaders.2.1')</div>
+                </div>
+
 
             </div>
         </section>
@@ -285,6 +347,20 @@
                         <img src="{{asset('/images/hackathons/partners/microsoft.png')}}">
                     </div>
                 </div>
+                @if (app()->getLocale() == "lv")
+                    <div class="item">
+                        <div class="flex justify-center">
+                            <img src="{{asset('/images/hackathons/partners/latvia/rbs_lv.png')}}">
+                        </div>
+                    </div>
+                @else
+                    <div class="item">
+                        <div class="flex justify-center">
+                            <img src="{{asset('/images/hackathons/partners/latvia/rbs_en.png')}}">
+                        </div>
+                    </div>
+                @endif
+
             </div>
         </section>
 
