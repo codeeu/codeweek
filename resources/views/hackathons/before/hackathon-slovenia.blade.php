@@ -313,6 +313,12 @@
 
                 <div class="item">
                     <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/partners/slovenia/redhat-logo.png')}}">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
                         <img src="{{asset('/images/hackathons/partners/slovenia/softergee.png')}}">
                     </div>
                 </div>
