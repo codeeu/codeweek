@@ -73,7 +73,8 @@ return [
                 "Pirmā kārta notiks tiešsaistē 24 stundu garumā. Šajā kārtā vidusskolēni vecumā no 15 līdz 19 gadiem sacentīsies komandās, lai atrisinātu vietēja mēroga izaicinājumu.",
                 "Izaicinājums tiks izvēlēts no jauniešu iesniegtajām problēmām pirms pirmās kārtas, un tiks paziņots hakatona pirmajā dienā.",
                 "Hakatonā komandām tiks dots vienāds laiks, zinošu mentoru atbalsts un piekļuve informācijai, lai atrisinātu izaicinājumu.",
-                "Pēc 24 stundu ilga darba katra komanda prezentēs savu risinājumu ekspertu žūrijai, kura izvēlēsies 10 labākās finālistu komandas. Atceries, komandas savā starpā sacenšas un komandai vieta finālā nav garantēta pat tad, ja tā ir veiksmīgi atrisinājusi izaicinājumu. Izvēloties uzvarētājus, žūrija ņems vērā risinājuma novitāti, ieguldīto darbu un prototipa kvalitāti.",
+                "Pēc 24 stundu ilga darba katra komanda prezentēs savu risinājumu ekspertu žūrijai, kura izvēlēsies 10 komandas, kuras tiksies finālā. Trīs labākās komandas papildu saņems vērtīgas balvas no hakatona atbalstītajiem. Pirmās vietas ieguvēji iegūs Raspberry Pi 4 Model B Starter Kit komplektus no IT Izglītības fonda, otrās vietas ieguvēji iegūs Arduino Starter KIT no IT Izglītības fonda, savukārt trešās vietas ieguvēji iegūs DRONIE dronus no IT uzņēmuma “Cognizant Latvia”.",
+                "Atceries, komandas savā starpā sacenšas un komandai vieta finālā nav garantēta pat tad, ja tā ir veiksmīgi atrisinājusi izaicinājumu. Izvēloties uzvarētājus, žūrija ņems vērā risinājuma novitāti, ieguldīto darbu un prototipa kvalitāti.",
                 "Desmit labākās komandas vasarā varēs turpināt izstrādāt savu prototipu, piedalīties bezmaksas apmācībās par izstrādi un lietotāja pieredzes dizainu (UX Design), kā arī saņemt mentoru konsultācijas tiešsaistē.",
 
                 "Ja sabiedrības veselības situācija to ļaus, hakatona otrā kārta norisināsies klātienē (citādi pasākums norisināsies tiešsaistē).",
@@ -129,6 +130,19 @@ return [
             "3" =>["Jānis Cimbulis","Front-end izstrādātājs, Learn IT programmēšanas skolas pasniedzējs. "],
             "4" =>["Anžela Džafarova","Jauniešu programmēšanas skolas Datorium direktore. Digitālo iemaņu trenere, ES programmēšanas nedēļas vadošais pedagogs Latvijā."],
             "5" =>["Elchin Jafarov","Jauniešu programmēšanas skolas Datorium dibinātājs.Digitālā transformācija, datu automatizācija, biznesa inteliģence."],
+            "6" => ["Jānis Knets","Tehniskais arhitekts Accenture Latvia, vairāk nekā 10 gadu pieredze IT vidē strādājot ar pasaules līmeņa uzņēmumiem"],
+            "7" => ["Ance Kancere","Projektu vadītāja IT Izglītības fondā, programmēšanas un dizaina un tehnoloģiju skolotāja"],
+            "8" => ["Kaspars Eglītis","Latvijas Universitātes Datorikas fakultātes projektu studijas DF LAB Administrators & Accenture Jr Inovāciju projektu vadītājs"],
+            "9" => ["Paula Elksne","RTU RBS Bakalaura programmu direktora vietniece"],
+            "10" => ["Linda Sinka","Learn IT bērnu programmēšanas skolas dibinātāja, ES Programmēšanas nedēļās vēstniece Latvijā"],
+            "11" => ["",""],
+            "12" => ["",""],
+        ],
+        "leaders" => [
+            "title" => "Darbnīcu vadītāji",
+            "1" => ["Viesturs Sosārs","pieredzējis uzņēmējs un inovāciju konsultants, TechHub Riga līdzdibinātājs"],
+            "2" => ["Kārlis Jonāss","Dizaina domātājs un treneris, pasniedz interaktīvus seminārus un darbnīcas par dizaina domāšanu un inovācijām."],
+            "3" => ["",""],
         ],
 
         "after" => [

@@ -106,18 +106,6 @@
                     </a>
                 </div>
                 <div class="codeweek-card-grid">
-                    <a href="{{route('hackathon-slovenia')}}" target="_blank">
-                        <div class="city-image">
-                            <img src="/images/hackathons/flags/slovenia.png">
-                            <div class="transparent"></div>
-                            <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.5.country')</div>
-                            </div>
-                        </div>
-{{--                        <div class="date">{{ucfirst(__('hackathons.cities.5.date'))}}</div>--}}
-                    </a>
-                </div>
-                <div class="codeweek-card-grid">
                     <a href="{{route('hackathon-latvia')}}" target="_blank">
                         <div class="city-image">
                             <img src="/images/hackathons/flags/latvia.png">
@@ -130,6 +118,19 @@
                         <div class="date">{{ucfirst(__('hackathons.cities.6.date'))}}</div>
                     </a>
                 </div>
+                <div class="codeweek-card-grid">
+                    <a href="{{route('hackathon-slovenia')}}" target="_blank">
+                        <div class="city-image">
+                            <img src="/images/hackathons/flags/slovenia.png">
+                            <div class="transparent"></div>
+                            <div class="text">
+                                <div class="title hackaton">@lang('hackathons.cities.5.country')</div>
+                            </div>
+                        </div>
+                        <div class="date">{{ucfirst(__('hackathons.cities.5.date'))}}</div>
+                    </a>
+                </div>
+
 
             </section>
 
