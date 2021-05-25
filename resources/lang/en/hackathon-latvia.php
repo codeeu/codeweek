@@ -122,11 +122,24 @@ return [
         ],
 
         "mentors" => [
-            "1" =>["Līna Sarma ","Computer Scientist and Creative Coder, Co creator of Riga Tech Girls. "],
-            "2" =>["Jānis Mozgis","Senior Developer at","loves beautifully crafted code."],
-            "3" =>["Jānis Cimbulis","Front-end Developer, Learn IT coding school teacher."],
-            "4" =>["Angela Jafarova","Director of the Coding school Datorium. Digital skills trainer, EU CodeWeek leading teacher in Latvia."],
-            "5" =>["Elchin Jafarov","Founder of the Datorium Coding School. Digital transformation, Data automation, Business intelligence."],
+            "1" => ["Līna Sarma ", "Computer Scientist and Creative Coder, Co creator of Riga Tech Girls. "],
+            "2" => ["Jānis Mozgis", "Senior Developer at", "loves beautifully crafted code."],
+            "3" => ["Jānis Cimbulis", "Front-end Developer, Learn IT coding school teacher."],
+            "4" => ["Angela Jafarova", "Director of the Coding school Datorium. Digital skills trainer, EU CodeWeek leading teacher in Latvia."],
+            "5" => ["Elchin Jafarov", "Founder of the Datorium Coding School. Digital transformation, Data automation, Business intelligence."],
+            "6" => ["Janis Knets", "Technical architect at Accenture Latvia, more than 10 years of experience in IT field working with world-class companies"],
+            "7" => ["Ance Kancere", "Project Manager at IT Education Foundation, Teacher of programming and design&technology"],
+            "8" => ["Kaspars Eglītis", "Admin at University of Latvia Med Tech makerspace DF LAB & Jr Innovation Project Manager at Accenture"],
+            "9" => ["Paula Elksne","Assistant Director Bachelor Programs, RTU Riga Business School"],
+            "10" => ["Linda Sinka","Founder of Learn IT coding school for children, EU CodeWeek ambassador in Latvia"],
+            "11" => ["",""],
+            "12" => ["",""],
+        ],
+        "leaders" => [
+            "title"=>"Workshop leaders",
+            "1" => ["Viesturs Sosārs", "Seasoned entrepreneur and innovation educator, co-founder of TechHub Riga"],
+            "2" => ["Kārlis Jonāss","Design thinker and facilitator. Karlis helps teams, companies and individuals bring change through design."],
+            "3" => ["",""],
         ],
 
         "after" => [

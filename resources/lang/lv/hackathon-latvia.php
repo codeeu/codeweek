@@ -130,6 +130,19 @@ return [
             "3" =>["Jānis Cimbulis","Front-end izstrādātājs, Learn IT programmēšanas skolas pasniedzējs. "],
             "4" =>["Anžela Džafarova","Jauniešu programmēšanas skolas Datorium direktore. Digitālo iemaņu trenere, ES programmēšanas nedēļas vadošais pedagogs Latvijā."],
             "5" =>["Elchin Jafarov","Jauniešu programmēšanas skolas Datorium dibinātājs.Digitālā transformācija, datu automatizācija, biznesa inteliģence."],
+            "6" => ["Jānis Knets","Tehniskais arhitekts Accenture Latvia, vairāk nekā 10 gadu pieredze IT vidē strādājot ar pasaules līmeņa uzņēmumiem"],
+            "7" => ["Ance Kancere","Projektu vadītāja IT Izglītības fondā, programmēšanas un dizaina un tehnoloģiju skolotāja"],
+            "8" => ["Kaspars Eglītis","Latvijas Universitātes Datorikas fakultātes projektu studijas DF LAB Administrators & Accenture Jr Inovāciju projektu vadītājs"],
+            "9" => ["Paula Elksne","RTU RBS Bakalaura programmu direktora vietniece"],
+            "10" => ["Linda Sinka","Learn IT bērnu programmēšanas skolas dibinātāja, ES Programmēšanas nedēļās vēstniece Latvijā"],
+            "11" => ["",""],
+            "12" => ["",""],
+        ],
+        "leaders" => [
+            "title" => "Darbnīcu vadītāji",
+            "1" => ["Viesturs Sosārs","pieredzējis uzņēmējs un inovāciju konsultants, TechHub Riga līdzdibinātājs"],
+            "2" => ["Kārlis Jonāss","Dizaina domātājs un treneris, pasniedz interaktīvus seminārus un darbnīcas par dizaina domāšanu un inovācijām."],
+            "3" => ["",""],
         ],
 
         "after" => [
