@@ -325,7 +325,32 @@
 
                 <div class="text-sm">Download the free imagiLabs app on your iOS or Android device to get started today. No imagiCharms needed -- come to the virtual workshop as you are!</div>
             </div>
+
+            <div class="p-8 leading-6 bg-yellow-200 bg-opacity-25 mt-6">
+                <h2>@lang('hackathon-ireland.sections.11.events.makex.title.0')</h2>
+
+                <div class="mb-4">@lang('hackathon-ireland.sections.11.events.makex.content.0')</div>
+                <div class="mb-4">@lang('hackathon-ireland.sections.11.events.makex.content.1')</div>
+
+                <div class="text-lg text-orange-300">@lang('hackathon-ireland.sections.11.events.makex.title.1')</div>
+                @lang('hackathon-ireland.sections.11.events.makex.dates.0') <a href="https://forms.gle/h4VRLUc9uSpLYCVHA">@lang('hackathon-ireland.sections.11.events.makex.content.2')</a> @lang('hackathon-ireland.sections.11.events.makex.content.3')<br/>
+
+                <div class="text-lg text-orange-300 mt-6">@lang('hackathon-ireland.sections.11.events.makex.title.2')</div>
+                @lang('hackathon-ireland.sections.11.events.makex.dates.1') <a href="https://forms.gle/h4VRLUc9uSpLYCVHA">@lang('hackathon-ireland.sections.11.events.makex.content.2')</a> @lang('hackathon-ireland.sections.11.events.makex.content.3')<br/>
+
+                <div class="text-lg text-orange-300 mt-6">@lang('hackathon-ireland.sections.11.events.makex.title.3')</div>
+                @lang('hackathon-ireland.sections.11.events.makex.dates.2') <a href="https://forms.gle/h4VRLUc9uSpLYCVHA">@lang('hackathon-ireland.sections.11.events.makex.content.2')</a> @lang('hackathon-ireland.sections.11.events.makex.content.3')<br/>
+
+                <div class="mt-6">
+                    @lang('hackathon-ireland.sections.11.events.makex.content.4') <a href="@lang('hackathon-ireland.sections.11.events.makex.content.5')">@lang('hackathon-ireland.sections.11.events.makex.content.5')</a>
+                </div>
+
+
+
+            </div>
         </section>
+
+
 {{--        <section id="side-events">--}}
 {{--            <div class="left">--}}
 {{--                --}}
