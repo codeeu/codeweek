@@ -15,7 +15,7 @@
             <div class="image">
 
                 <img src="images/banner_ambassadors.svg" class="static-image">
-                @if(request()->get("country_iso") == "IT" || request()->get("country_iso") == "GR")
+                @if(request()->get("country_iso") == "IT" || request()->get("country_iso") == "GR" || request()->get("country_iso") == "LV")
                 <div class="mt-16 mr-8 absolute">
                     <img src="{{asset('images/ally.png')}}" width="100px">
                 </div>

@@ -126,6 +126,28 @@ return [
                         "to register !",
                         "Download the free imagiLabs app on your iOS or Android device to get started today. No imagiCharms needed -- come to the virtual workshop as you are!",
                     ]
+                ],
+                "makex" => [
+
+                    "title" => [
+                        "Robotics Training Series by MakeX/MakeBlock",
+                        "Robotics Training Series 1 - Introduction to Robotics and Robotics Competitions by MakeX/MakeBlock",
+                        "Robotics Training Series 2 - Programming and Hardware Construction by MakeX/MakeBlock",
+                        "Robotics Training Series 3 – Award-winning Mentor Sharing by MakeX/MakeBlock",
+                    ],
+                    "content" => [
+                        "MakeX, a global robotics competition platform presents a comprehensive series of educational robotics training to teachers and mentors who are interested in practical learning, STEAM education, programming and robotics competitions for students of all ages using cutting-edge software and hardware like mBot2, laserbox and mBlock5.",
+                        "From introduction to robotics, programming and hardware construction to award-winning mentor sharing, you will dive into the process of project-based learning and how to organize students to use completions platforms to solve real world problems. Teachers organizing robotics curriculums at school are welcome and will benefit from a deeper understanding of programming, computational thinking, pedagogical concepts, robot hardware, and troubleshooting techniques.",
+                        "here",
+                        "to register !",
+                        "More information:",
+                        "https://www.makex.cc/en",
+                    ],
+                    "dates" => [
+                        "Date: 1st June, 11:00 CEST -> click",
+                        "Date: 3rd June, 11:00 CEST -> click",
+                        "Date: 8th June, 11:00 CEST -> click",
+                    ]
                 ]
             ]
         ],
