@@ -91,21 +91,21 @@
         {{--            </div>--}}
         {{--        </section>--}}
 
-        <section id="challenge">
-            <img src="/images/hackathons/ideation.png" class="desktop">
-            <div class="text">
-                <div class="challenge-text">
-                    <h1>@lang('hackathon-latvia.sections.5.title')</h1>
-                    <p>@lang('hackathon-latvia.sections.5.content.0')</p>
+{{--        <section id="challenge">--}}
+{{--            <img src="/images/hackathons/ideation.png" class="desktop">--}}
+{{--            <div class="text">--}}
+{{--                <div class="challenge-text">--}}
+{{--                    <h1>@lang('hackathon-latvia.sections.5.title')</h1>--}}
+{{--                    <p>@lang('hackathon-latvia.sections.5.content.0')</p>--}}
 
-                    <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/CodeWeekHacks_LV_voting"
-                       class="codeweek-action-link-button">@lang('hackathon-latvia.sections.5.content.1')</a>
+{{--                    <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/CodeWeekHacks_LV_voting"--}}
+{{--                       class="codeweek-action-link-button">@lang('hackathon-latvia.sections.5.content.1')</a>--}}
 
-                    <p>@lang('hackathon-latvia.sections.5.content.2')</p>
+{{--                    <p>@lang('hackathon-latvia.sections.5.content.2')</p>--}}
 
-                </div>
-            </div>
-        </section>
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </section>--}}
 
         <section id="programme" id="pratical-info">
             <h1>@lang('hackathon-latvia.sections.9.title')</h1>
@@ -275,14 +275,46 @@
             </div>
         </section>
 
-        {{--                <section id="side-events">--}}
-        {{--                    <div class="left">--}}
-        {{--                        <h1>@lang('hackathon-latvia.sections.11.title')</h1>--}}
-        {{--                        <p>@lang('hackathon-latvia.sections.11.content.0')</p>--}}
-        {{--                        <a href="" class="codeweek-action-link-button">@lang('login.register')</a>--}}
-        {{--                    </div>--}}
-        {{--                    <img src="/images/hackathons/side_events.png">--}}
-        {{--                </section>--}}
+{{--                        <section id="side-events">--}}
+{{--                            <div class="left">--}}
+{{--                                <h1>@lang('hackathon-latvia.sections.11.title')</h1>--}}
+{{--                                <p>@lang('hackathon-latvia.sections.11.content.0')</p>--}}
+{{--                                <a href="" class="codeweek-action-link-button">@lang('login.register')</a>--}}
+{{--                            </div>--}}
+{{--                            <img src="/images/hackathons/side_events.png">--}}
+{{--                        </section>--}}
+
+        <section id="side-events">
+            <h1>@lang('hackathon-latvia.sections.11.title')</h1>
+            <p>@lang('hackathon-latvia.sections.11.content.0')</p>
+
+            <div class="p-8 leading-6 bg-yellow-200 bg-opacity-25">
+                <h2>@lang('hackathon-latvia.sections.11.events.makex.title.0')</h2>
+
+                <div class="mb-4">@lang('hackathon-latvia.sections.11.events.makex.content.0')</div>
+                <div class="mb-4">@lang('hackathon-latvia.sections.11.events.makex.content.1')</div>
+
+                <div class="text-lg text-orange-300">@lang('hackathon-latvia.sections.11.events.makex.title.1')</div>
+                @lang('hackathon-latvia.sections.11.events.makex.dates.0') <a href="https://forms.gle/h4VRLUc9uSpLYCVHA">@lang('hackathon-latvia.sections.11.events.makex.content.2')</a> @lang('hackathon-latvia.sections.11.events.makex.content.3')<br/>
+
+                <div class="text-lg text-orange-300 mt-6">@lang('hackathon-latvia.sections.11.events.makex.title.2')</div>
+                @lang('hackathon-latvia.sections.11.events.makex.dates.1') <a href="https://forms.gle/h4VRLUc9uSpLYCVHA">@lang('hackathon-latvia.sections.11.events.makex.content.2')</a> @lang('hackathon-latvia.sections.11.events.makex.content.3')<br/>
+
+                <div class="text-lg text-orange-300 mt-6">@lang('hackathon-latvia.sections.11.events.makex.title.3')</div>
+                @lang('hackathon-latvia.sections.11.events.makex.dates.2') <a href="https://forms.gle/h4VRLUc9uSpLYCVHA">@lang('hackathon-latvia.sections.11.events.makex.content.2')</a> @lang('hackathon-latvia.sections.11.events.makex.content.3')<br/>
+
+                <div class="mt-6">
+                    @lang('hackathon-latvia.sections.11.events.makex.content.4') <a href="@lang('hackathon-latvia.sections.11.events.makex.content.5')">@lang('hackathon-latvia.sections.11.events.makex.content.5')</a>
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </section>
 
         <section id="partners">
             <div>

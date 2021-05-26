@@ -131,6 +131,29 @@ return [
                         "pentru a te înregistra!",
                         "Descarcă aplicația gratuită imagiLabs pe dispozitivul tău iOS sau Android și începe chiar azi. Pentru atelierul virtual nu vei avea nevoie de imagiCharms!",
                     ]
+                ],
+                "makex" => [
+
+                    "title" => [
+                        "Instruire în robotică de MakeX/MakeBlock",
+                        "Instruire în robotică seria 1 – Introducere în robotică și concurs de robotică, eveniment organizat de MakeX/MakeBlock",
+                        "Instruire în robotică seria 2 – Programare și construcție de hardware, eveniment organizat de MakeX/MakeBlock",
+                        "Instruire în robotică seria 3 – Cunoștințe împărtășite de mentori și câștigare de premii, eveniment organizat de MakeX/MakeBlock",
+                    ],
+                    "content" => [
+                        "MakeX, o platformă globală de concursuri de robotică, prezintă o serie cuprinzătoare de cursuri de instruire în domeniul roboticii educative pentru profesori și mentori interesați de învățarea practică, educația în domeniile STIAM (știință, tehnologie, inginerie, artă și matematică), concursuri de programare și robotică pentru elevi de toate vârstele, utilizând software și hardware de ultimă generație cum ar fi mBot2, laserbox și mBlock5.",
+                        "De la introducerea în robotică, programare și construcție de hardware, la cunoștințele împărtășite de mentori și câștigarea de premii, veți cunoaște procesul de învățare pe bază de proiect și veți afla cum să organizați elevii care pot utiliza platforme de concursuri pentru a rezolva probleme din viața reală. Profesorii care organizează programe de învățământ în domeniul roboticii la școală sunt bineveniți și vor avea posibilitatea de a înțelege mai bine programarea, gândirea computațională, conceptele pedagogice, elementele hardware în domeniul roboticii și tehnicile de depanare.",
+                        "aici",
+                        "pentru a vă înregistra!",
+                        "Mai multe informații:",
+                        "https://www.makex.cc/en",
+                    ],
+                    "dates" => [
+                        "Data: 1 iunie, ora 11:00 CEST -> faceți clic",
+                        "Data: 3 iunie, ora 11:00 CEST -> faceți clic",
+                        "Data: 8 iunie, ora 11:00 CEST -> faceți clic",
+
+                    ]
                 ]
             ]
         ],

@@ -101,6 +101,30 @@ return [
             "title" => "Eventi collaterali",
             "content" => [
                 "Queste tematiche ti interessano ma non hai le competenze di programmazione? Iscriviti ai nostri eventi collaterali e scopri l’emozione della programmazione, dell’innovazione, dell’imprenditorialità e di altre competenze vitali per essere protagonisti nel mondo digitale. Gli eventi collaterali dell’hackathon della Settimana della programmazione si svolgeranno da maggio a ottobre, e prevedono numerose e diverse tipologie di workshop. Sono completamente gratuiti: devi solamente iscriverti qui. Partecipa e impara.",
+            ],
+            "events" => [
+                "makex" => [
+
+                    "title" => [
+                        "Formazione alla robotica Serie",
+                        "Formazione alla robotica Serie 1 - Introduzione alla robotica e alle competizioni di robotica di MakeX/MakeBlock",
+                        "Formazione alla robotica Serie 2 - Programmazione e struttura hardware di MakeX/MakeBlock",
+                        "Formazione alla robotica Serie 3 – Condivisione con illustri tutor di MakeX/MakeBlock",
+                    ],
+                    "content" => [
+                        "MakeX, una piattaforma globale di competizioni di robotica, presenta una serie completa di formazioni alla robotica educativa per docenti e tutor interessati all’apprendimento pratico, alle materie STEAM, alla programmazione e alle competizioni di robotica per studenti di tutte le fasce di età attraverso software e hardware all'avanguardia, come mBot2, laserbox e mBlock5.",
+                        "Dall’introduzione alla robotica, la programmazione e la struttura hardware alla condivisione con illustri tutor, ti immergerai nel processo di apprendimento basato su progetti e nelle modalità organizzative necessarie agli studenti per risolvere problemi pratici attraverso le apposite piattaforme. Sono benvenuti i docenti che organizzano programmi di robotica nelle scuole e che potranno così approfondire le conoscenze di programmazione, il pensiero computazionale, i concetti pedagogici, i robot e le tecniche di risoluzione problemi.",
+                        "qui",
+                        "per registrarti!",
+                        "Maggiori informazioni:",
+                        "https://www.makex.cc/en",
+                    ],
+                    "dates" => [
+                        "Data: 1 giugno, h. 11:00 -> fai clic",
+                        "Data: 3 giugno, h. 11:00 -> fai clic",
+                        "Data: 8 giugno, h. 11:00 -> fai clic",
+                    ]
+                ]
             ]
         ],
         12 => [
