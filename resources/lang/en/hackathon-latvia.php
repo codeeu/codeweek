@@ -159,6 +159,7 @@ return [
             "11" => ["Gundega Dekena","DevOps Specialist at Accenture Latvia helping world class companies live in the cloud. Programming teacher and the only official GitHub Campus Advisor in Baltics."],
             "12" => ["Emil Syundyukov","Computer Scientist, Chief Technical Officer at biomedical startup Longenesis"],
             "13" => ["Pāvils Jurjāns","IT entrepreneur, software engineer, business mentor, open data advocate and general geek."],
+            "14" => ["Krišjānis Nesenbergs","Researcher and head of Cyber-physical systems lab @ EDI. Low level/embedded HW/SW, sensors, signal processing and machine learning for practical applications from wearables to self driving cars."]
         ],
         "leaders" => [
             "title"=>"Workshop leaders",
