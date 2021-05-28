@@ -249,6 +249,32 @@
                     <div class="text-sm">@lang('hackathon-latvia.sections.mentors.10.1')</div>
                 </div>
 
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/latvia/3/Gundega_Dekena.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-latvia.sections.mentors.11.0')</h2>
+                    <div class="text-sm">@lang('hackathon-latvia.sections.mentors.11.1')</div>
+                </div>
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/latvia/3/Emīls_Sjundjukovs.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-latvia.sections.mentors.12.0')</h2>
+                    <div class="text-sm">@lang('hackathon-latvia.sections.mentors.12.1')</div>
+                </div>
+
+
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/latvia/3/Pavils_Jurjans.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-latvia.sections.mentors.13.0')</h2>
+                    <div class="text-sm">@lang('hackathon-latvia.sections.mentors.13.1')</div>
+                </div>
+
+
 
             </div>
 

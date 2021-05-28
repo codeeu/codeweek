@@ -132,8 +132,9 @@ return [
             "8" => ["Kaspars Eglītis", "Admin at University of Latvia Med Tech makerspace DF LAB & Jr Innovation Project Manager at Accenture"],
             "9" => ["Paula Elksne","Assistant Director Bachelor Programs, RTU Riga Business School"],
             "10" => ["Linda Sinka","Founder of Learn IT coding school for children, EU CodeWeek ambassador in Latvia"],
-            "11" => ["",""],
-            "12" => ["",""],
+            "11" => ["Gundega Dekena","DevOps Specialist at Accenture Latvia helping world class companies live in the cloud. Programming teacher and the only official GitHub Campus Advisor in Baltics."],
+            "12" => ["Emil Syundyukov","Computer Scientist, Chief Technical Officer at biomedical startup Longenesis"],
+            "13" => ["Pāvils Jurjāns","IT entrepreneur, software engineer, business mentor, open data advocate and general geek."],
         ],
         "leaders" => [
             "title"=>"Workshop leaders",
