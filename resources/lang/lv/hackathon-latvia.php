@@ -161,6 +161,7 @@ return [
             "11" => ["Gundega Dekena","DevOps speciāliste Accenture Latvia palīdz pasaules klases uzņēmumiem ieviest mākoņpakalpojumus. Programmēšanas skolotāja un vienīgā oficiālā GitHub Campus padomniece Baltijā."],
             "12" => ["Emīls Sjundjukovs","Datorzinātnieks, pētniecības un izstrādes daļas vadītājs biomedicīnas startup uzņēmumā Longenesis"],
             "13" => ["Pāvils Jurjāns","IT uzņēmējs, programmēšanas inženieris, biznesa mentors, atvērto datu aizstāvis un tehnoloģiju entuziasts"],
+            "14" => ["Krišjānis Nesenbergs","Pētnieks EDI kiberfizikālo sistēmu laboratorijā un tās vadītājs. Zema līmeņa/iegultās iekārtas un programmatūra, sensori, signālapstrāde un mašīnmācīšanās praktiskiem pielietojumiem no valkājamām ierīcēm līdz pašbraucošajiem auto."]
         ],
         "leaders" => [
             "title" => "Darbnīcu vadītāji",
