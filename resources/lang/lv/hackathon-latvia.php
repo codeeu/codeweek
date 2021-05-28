@@ -158,8 +158,9 @@ return [
             "8" => ["Kaspars Eglītis","Latvijas Universitātes Datorikas fakultātes projektu studijas DF LAB Administrators & Accenture Jr Inovāciju projektu vadītājs"],
             "9" => ["Paula Elksne","RTU RBS Bakalaura programmu direktora vietniece"],
             "10" => ["Linda Sinka","Learn IT bērnu programmēšanas skolas dibinātāja, ES Programmēšanas nedēļās vēstniece Latvijā"],
-            "11" => ["",""],
-            "12" => ["",""],
+            "11" => ["Gundega Dekena","DevOps speciāliste Accenture Latvia palīdz pasaules klases uzņēmumiem ieviest mākoņpakalpojumus. Programmēšanas skolotāja un vienīgā oficiālā GitHub Campus padomniece Baltijā."],
+            "12" => ["Emīls Sjundjukovs","Datorzinātnieks, pētniecības un izstrādes daļas vadītājs biomedicīnas startup uzņēmumā Longenesis"],
+            "13" => ["Pāvils Jurjāns","IT uzņēmējs, programmēšanas inženieris, biznesa mentors, atvērto datu aizstāvis un tehnoloģiju entuziasts"],
         ],
         "leaders" => [
             "title" => "Darbnīcu vadītāji",
