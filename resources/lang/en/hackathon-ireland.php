@@ -102,6 +102,30 @@ return [
             "title" => "I don't know coding - what can I do?",
             "content" => [
                 "In connection with the hackathon, there will be workshops for beginners in coding, tinkering with hardware and robotics and so on for participants to learn some basics of computational thinking and coding. From April to September, we are organising side events with our amazing partners of the EU Code Week Hackathons and it’s free to take part! Check out the different activities and register to get the link.",
+            ],
+            "events" => [
+                "makex" => [
+
+                    "title" => [
+                        "Robotics Training Series by MakeX/MakeBlock",
+                        "Robotics Training Series 1 - Introduction to Robotics and Robotics Competitions by MakeX/MakeBlock",
+                        "Robotics Training Series 2 - Programming and Hardware Construction by MakeX/MakeBlock",
+                        "Robotics Training Series 3 – Award-winning Mentor Sharing by MakeX/MakeBlock",
+                    ],
+                    "content" => [
+                        "MakeX, a global robotics competition platform presents a comprehensive series of educational robotics training to teachers and mentors who are interested in practical learning, STEAM education, programming and robotics competitions for students of all ages using cutting-edge software and hardware like mBot2, laserbox and mBlock5.",
+                        "From introduction to robotics, programming and hardware construction to award-winning mentor sharing, you will dive into the process of project-based learning and how to organize students to use completions platforms to solve real world problems. Teachers organizing robotics curriculums at school are welcome and will benefit from a deeper understanding of programming, computational thinking, pedagogical concepts, robot hardware, and troubleshooting techniques.",
+                        "here",
+                        "to register !",
+                        "More information:",
+                        "https://www.makex.cc/en",
+                    ],
+                    "dates" => [
+                        "Date: 1st June, 11:00 CEST -> click",
+                        "Date: 3rd June, 11:00 CEST -> click",
+                        "Date: 8th June, 11:00 CEST -> click",
+                    ]
+                ]
             ]
         ],
         12 => [
