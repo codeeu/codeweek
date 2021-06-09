@@ -249,6 +249,13 @@ Route::post('/hackathons/vote', 'HackathonsVotingController@save')->name('hackat
 Route::view('/chatbot', 'static.chatbot')->name('chatbot');
 Route::view('/teach-day', 'teach-day')->name('teach-day');
 
+Route::get('/community', 'CommunityController@index')->name('community');
+
+Route::view('/leaflet', 'map.leaflet')->name('leaflet');
+
+
+Route::get('leading-teachers-document', 'LeadingTeacherController@getCurrentToolkit')->name('leading-teachers-document');
+
 Route::get('headers', function(Request $request){
     $headers = \Request::header();
 

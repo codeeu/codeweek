@@ -127,7 +127,31 @@ return [
                         "klikni tukaj!",
                         "Za začetek si brezplačno prenesi aplikacijo imagiLabs na svojo napravo iOS ali Android in začni že danes. Ne potrebuješ nobenega dodatka za prenosljive naprave imagiCharms – kar tako se pridruži virtualni delavnici!",
                     ]
+                ],
+                "makex" => [
+
+                    "title" => [
+                        "Niz usposabljanj na področju robotike v organizaciji MakeX/MakeBlock",
+                        "Niz usposabljanj na področju robotike 1 – Uvod v robotiko in tekmovanja iz robotike v organizaciji MakeX/MakeBlock",
+                        "Niz usposabljanj na področju robotike 2 – Programiranje in konstruiranje strojne opreme v organizaciji MakeX/MakeBlock",
+                        "Niz usposabljanj na področju robotike 3 – Izmenjava nagrajenih mentorjev v organizaciji MakeX/MakeBlock",
+                    ],
+                    "content" => [
+                        "MakeX, svetovna platforma za tekmovanja iz robotike, predstavlja obsežen niz izobraževalnih usposabljanj na področju robotike za učitelje in mentorje, ki jih zanimajo praktično učenje, izobraževanje na področju naravoslovja, tehnologije, inženirstva, umetnosti in matematike (STEAM), tekmovanja iz programiranja in robotike za dijake in študente vseh starosti, pri čemer se uporabljata najnovejša programska in strojna oprema, kot so mBot2, laserbox in mBlock5.",
+                        "Med usposabljanjem, ki bo med drugim vključevalo uvod v robotiko, programiranje in konstruiranje strojne opreme ter izmenjavo nagrajenih mentorjev, se boste poglobili v proces projektnega učenja in se naučili, kako organizirati dijake in študente za uporabo izvedbenih platform pri reševanju težav iz resničnega sveta. Vabljeni učitelji, ki na šolah pripravljajo učne načrte za robotiko. Pridobili boste globlje razumevanje programiranja, računalniškega razmišljanja, pedagoških konceptov, robotske strojne opreme in tehnik za odpravljanje težav.",
+                        "tukaj",
+                        " !",
+                        "Dodatne informacije:",
+                        "https://www.makex.cc/en",
+                    ],
+                    "dates" => [
+                        "Datum: 1. junij ob 11:00 CEST -> za prijavo klikni ",
+                        "Datum: 3. junij ob 11:00 CEST -> za prijavo klikni ",
+                        "Datum: 8. junij ob 11:00 CEST -> za prijavo klikni ",
+
+                    ]
                 ]
+
             ]
         ],
 

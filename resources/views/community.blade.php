@@ -1,13 +1,16 @@
-@extends('layout.base')
+@extends('layout.tall')
 
 @section('content')
 
+
+
     <section id="codeweek-ambassadors-page" class="codeweek-page">
+
 
         <section class="codeweek-banner ambassadors">
             <div class="text">
                 <h2>#CodeWeek</h2>
-                <h1>@lang('ambassador.community')</h1>
+                <h1>@lang('community.titles.0')</h1>
             </div>
             <div class="image">
                 <img src="images/banner_ambassadors.svg" class="static-image">
@@ -15,12 +18,13 @@
         </section>
 
         <section class="codeweek-content-wrapper">
-            <p style="line-height: 30px;">EU Code Week thrives thanks to a vast, international community of volunteers. In this page you can meet the members that are active in your country.
-                EU Code Week’s backbone is the Ambassadors, the Leading teachers and representatives of ministries of education in the EU and Western Balkans countries – the “Edu coordinators”.
-            <h3>Find out more about your local community by selecting your country:</h3>
+
+
+
+            <p style="line-height: 30px;">@lang('community.intro.0').<br/>@lang('community.intro.1')</p><h3>@lang('community.intro.2')</h3>
 
             <section class="codeweek-searchbox">
-                <form method="get" action="/ambassadors" enctype="multipart/form-data">
+                <form method="get" action="/community" enctype="multipart/form-data">
                     <select id="id_country" name="country_iso" onchange="this.form.submit()" class="codeweek-input-select">
                         @foreach ($countries as $country)
                             <option value="{{$country->iso}}" {{app('request')->input('country_iso') == $country->iso ? 'selected' : ''}}>{{$country->translation}}</option>
@@ -35,42 +39,36 @@
                             @lang('countries.'.$country->name)
                         </h1>--}}
 
-                        <div class="codeweek-tools">
+{{--                        <div class="codeweek-tools">--}}
 
-                            @if($country->facebook)
-                                <a href="{{$country->facebook}}" class="codeweek-blank-button" target="_blank">
-                                    @lang('ambassador.visit_the') <span>@lang('ambassador.local_facebook_page')</span>
-                                </a>
-                            @endif
+{{--                            @if($country->facebook)--}}
+{{--                                <a href="{{$country->facebook}}" class="codeweek-blank-button" target="_blank">--}}
+{{--                                    @lang('ambassador.visit_the') <span>@lang('ambassador.local_facebook_page')</span>--}}
+{{--                                </a>--}}
+{{--                            @endif--}}
 
-                            @if($country->website)
-                                <a href="{{$country->website}}" class="codeweek-blank-button" target="_blank">
-                                    @lang('ambassador.visit_the') <span>@lang('ambassador.local_website')</span>
-                                </a>
-                            @endif
+{{--                            @if($country->website)--}}
+{{--                                <a href="{{$country->website}}" class="codeweek-blank-button" target="_blank">--}}
+{{--                                    @lang('ambassador.visit_the') <span>@lang('ambassador.local_website')</span>--}}
+{{--                                </a>--}}
+{{--                            @endif--}}
 
-                        </div>
+{{--                        </div>--}}
                     @endif
                 @endforeach
             @endif
 
             <section class="codeweek-blue-box" >
                 <section class="community_type_section">
-                    <h2 class="subtitle">Ambassadors</h2>
+                    <h2 class="subtitle">@lang('community.titles.1')</h2>
                     <div class="community_type">
                         <div class="text">
                             <p>
-                                EU Code Week Ambassadors are the main point of contact for Code Week in each
-                                country and help spread the vision of Code Week locally. The Ambassadors connect
-                                people, companies and communities interested in supporting EU Code Week. They
-                                encourage organisers to register coding activities on the Code Week map, and
-                                promote the overall participation in EU Code Week. Ambassadors also review and
-                                approve activities in their country. Ambassadors also work with their peers in other
-                                countries and meet regularly to discuss how to further develop the initiative.
+                                @lang('community.ambassadors')
                             </p>
                         </div>
                         <div class="image">
-                            <img src="/images/ambassadors.png">
+                            <img src="{{asset('/images/ambassadors.png')}}">
                         </div>
                     </div>
                 </section>
@@ -120,70 +118,71 @@
                 </div>
 
                 <section class="community_type_section">
-                    <h2 class="subtitle">Leading teachers</h2>
+                    <h2 class="subtitle">@lang('community.titles.2')</h2>
+                    <div class="community_type">
+                        <div class="text">
+<p>
+    @lang('community.leading-teachers')</p>
+                                <h3>@lang('community.cta')</h3>
+
+                        </div>
+
+                        <div class="image">
+                            <img src="{{asset('/images/leading_teachers.png')}}">
+                        </div>
+                    </div>
+
+
+
+                </section>
+
+                <div id="mapid" style="width: 100%; height: 400px;"></div>
+
+                <section class="community_type_section">
+                    <h2 class="subtitle">@lang('community.titles.3')</h2>
                     <div class="community_type">
                         <div class="text">
                             <p>
-                                Leading teachers is an active community of more than 450 educators from across
-                                Europe. They help connect schools, teachers and students interested in
-                                participating to Code Week and encourage them to organise activities and register
-                                them on the Code Week map. The Leading teachers hold professional development
-                                webinars in their language and are a reference point for other teachers in the
-                                country but also in Europe. They also promote the initiative locally.
+                                @lang('community.edu')
                             </p>
                         </div>
                         <div class="image">
-                            <img src="/images/leading_teachers.png">
+                            <img src="{{asset('/images/edu_coordinators.png')}}">
                         </div>
                     </div>
                 </section>
                 <section class="community_type_section">
-                    <h2 class="subtitle">Edu coordinators</h2>
+                    <h2 class="subtitle">@lang('community.titles.4')</h2>
                     <div class="community_type">
                         <div class="text">
                             <p>
-                                EU Code Week Edu coordinators are correspondents in Ministries of Education or
-                                other educational authorities and organisations participating in EU Code Week. Edu
-                                coordinators strengthen the foundations of the initiative by supporting teachers
-                                and schools nation-wide. This includes communication with schools who already
-                                participate in EU Code Week to learn about their best practices and share
-                                experience. Edu coordinators also support schools that want to participate in the
-                                initiative, by providing available resources, learning material and opportunities
-                                within the community.
+                                @lang('community.volunteer.0')
                             </p>
+                            <p>
+                                @lang('community.volunteer.1')
+                            </p>
+                            <p>
+                                @lang('community.volunteer.2')
+                            </p>
+
+{{--                            <p>--}}
+{{--                                @lang('community.volunteer.0') <a href="{{route('events_map')}}">@lang('community.volunteer.1')</a> @lang('community.volunteer.2') <a href="{{route('about')}}">@lang('community.volunteer.3')</a>--}}
+{{--                                @lang('community.volunteer.4') <a href="{{route('our-values')}}">@lang('community.volunteer.5')</a> @lang('community.volunteer.6').--}}
+{{--                            </p>--}}
+
+
+{{--                            <p>--}}
+{{--                                @lang('community.volunteer.7') <a href="{{route('leading-teachers-document')}}">@lang('community.volunteer.8')</a>.--}}
+{{--                                @lang('community.volunteer.9') <a href="https://ec.europa.eu/eusurvey/runner/CallforLeadingTeachers">@lang('community.volunteer.10')</a> @lang('community.volunteer.11')--}}
+{{--                            </p>--}}
+
+{{--                            <p>--}}
+{{--                                @lang('community.volunteer.12') <a href="{{route('beambassador')}}">@lang('community.volunteer.13')</a> @lang('community.volunteer.14') @lang('community.volunteer.15')--}}
+
+{{--                            </p>--}}
                         </div>
                         <div class="image">
-                            <img src="/images/edu_coordinators.png">
-                        </div>
-                    </div>
-                </section>
-                <section class="community_type_section">
-                    <h2 class="subtitle">Volunteer for EU Code Week</h2>
-                    <div class="community_type">
-                        <div class="text">
-                            <p>
-                                You do not need to take on an official role in the EU Code Week community to be
-                                part of the movement. Everyone can organise activities to teach and inspire people
-                                to code, do robotics, tinker with hardware, 3D-print etc. and pin their activity
-                                on the map. However, if you want to volunteer your time to promote coding and believe in
-                                the vision and values of EU Code Week, you could potentially become a leading
-                                teacher or an ambassador.
-                            <p>
-                                If you are an educator passionate about teaching and learning how to code as much
-                                as we are, you can ﬁnd out more about the role and benefits of Leading teachers here.
-                                Then you can apply to become a Leading Teacher by filling this online application form.
-                                Please note that the number of Leading Teachers per country is fixed which means that applications are open only for some specific countries at a time.
-                            </p>
-                            <p>
-                                If you want to promote coding in your country, check out the
-                                responsibilities of Ambassadors and take a quick look at the list of EU Code Week Ambassadors.
-                                If there are Ambassadors in your country, please get in touch directly with them and
-                                see how you can best support the initiative. If there is no one in your country, you
-                                can reach out at <a target="_blank" href="mailto:info@codeweek.eu">info@codeweek.eu</a>.
-                            </p>
-                        </div>
-                        <div class="image">
-                            <img src="/images/volunteers.png">
+                            <img src="{{asset('/images/volunteers.png')}}">
                         </div>
                     </div>
                 </section>
@@ -197,4 +196,71 @@
 
     </section>
 
+@endsection
+
+@push('scripts')
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+
+    {{--    <link href="{{asset('css/MarkerCluster.css')}}" media="screen" rel="stylesheet"/>--}}
+    {{--    <link href="{{asset('css/MarkerCluster.Default.css')}}" media="screen" rel="stylesheet"/>--}}
+
+    {{--    <script src="{{asset('js/leaflet.markercluster.js')}}" type="text/javascript"/>--}}
+
+
+@endpush
+
+
+@section('extra-js')
+    <script src="{{asset('js/countriesGeoCentroids.js')}}" type="text/javascript"></script>
+    <script>
+
+        var mymap = L.map('mapid');
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYWxhaW52ZCIsImEiOiJja2c4NGJvd28wZG15MnBxb3pqdGJpMnFmIn0.4PZI2skT6BVtl9f5jRTnBQ', {
+            maxZoom: 18,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+                'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1
+        }).addTo(mymap);
+
+
+        @foreach($teachers as $teacher)
+        L.marker([{{$teacher->city->latitude}}, {{$teacher->city->longitude}}]).addTo(mymap)
+            .bindPopup("<b>{{$teacher->firstname}} {{$teacher->lastname}}</b><br />{{$teacher->city->city}}").openPopup();
+        @endforeach
+
+        var popup = L.popup();
+
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent("You clicked the map at " + e.latlng.toString())
+                .openOn(mymap);
+        }
+
+        mymap.on('click', onMapClick);
+
+        let centerInfo = {
+            latitude: 51,
+            longitude: 4,
+            zoom: 4
+        };
+
+
+            const countryInfo = centroids.find(ctrds => ctrds.iso === '{{$country_iso}}');
+            if (countryInfo){
+                centerInfo = countryInfo;
+            }
+
+        const latlng = new L.LatLng(centerInfo.latitude, centerInfo.longitude);
+        mymap.setView(latlng, centerInfo.zoom, {animation: true});
+
+
+
+    </script>
 @endsection
