@@ -103,6 +103,30 @@ return [
             "title" => "Side events",
             "content" => [
                 "Do these themes interest you but you don’t know how to code? Sign up to our side events and discover the thrill of coding, innovation, entrepreneurship and other skills vital to participating in the digital world. The Code Week hackathon side events are scheduled to run from May to October and will include several different types of workshop. They are free of charge, you just have to sign up here. Come and learn more.",
+            ],
+            "events" => [
+                "makex" => [
+
+                    "title" => [
+                        "Robotics Training Series by MakeX/MakeBlock",
+                        "Robotics Training Series 1 - Introduction to Robotics and Robotics Competitions by MakeX/MakeBlock",
+                        "Robotics Training Series 2 - Programming and Hardware Construction by MakeX/MakeBlock",
+                        "Robotics Training Series 3 – Award-winning Mentor Sharing by MakeX/MakeBlock",
+                    ],
+                    "content" => [
+                        "MakeX, a global robotics competition platform presents a comprehensive series of educational robotics training to teachers and mentors who are interested in practical learning, STEAM education, programming and robotics competitions for students of all ages using cutting-edge software and hardware like mBot2, laserbox and mBlock5.",
+                        "From introduction to robotics, programming and hardware construction to award-winning mentor sharing, you will dive into the process of project-based learning and how to organize students to use completions platforms to solve real world problems. Teachers organizing robotics curriculums at school are welcome and will benefit from a deeper understanding of programming, computational thinking, pedagogical concepts, robot hardware, and troubleshooting techniques.",
+                        "here",
+                        "to register !",
+                        "More information:",
+                        "https://www.makex.cc/en",
+                    ],
+                    "dates" => [
+                        "Date: 1st June, 11:00 CEST -> click",
+                        "Date: 3rd June, 11:00 CEST -> click",
+                        "Date: 8th June, 11:00 CEST -> click",
+                    ]
+                ]
             ]
         ],
         12 => [
@@ -132,8 +156,10 @@ return [
             "8" => ["Kaspars Eglītis", "Admin at University of Latvia Med Tech makerspace DF LAB & Jr Innovation Project Manager at Accenture"],
             "9" => ["Paula Elksne","Assistant Director Bachelor Programs, RTU Riga Business School"],
             "10" => ["Linda Sinka","Founder of Learn IT coding school for children, EU CodeWeek ambassador in Latvia"],
-            "11" => ["",""],
-            "12" => ["",""],
+            "11" => ["Gundega Dekena","DevOps Specialist at Accenture Latvia helping world class companies live in the cloud. Programming teacher and the only official GitHub Campus Advisor in Baltics."],
+            "12" => ["Emil Syundyukov","Computer Scientist, Chief Technical Officer at biomedical startup Longenesis"],
+            "13" => ["Pāvils Jurjāns","IT entrepreneur, software engineer, business mentor, open data advocate and general geek."],
+            "14" => ["Krišjānis Nesenbergs","Researcher and head of Cyber-physical systems lab @ EDI. Low level/embedded HW/SW, sensors, signal processing and machine learning for practical applications from wearables to self driving cars."]
         ],
         "leaders" => [
             "title"=>"Workshop leaders",

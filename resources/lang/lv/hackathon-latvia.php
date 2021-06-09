@@ -106,6 +106,29 @@ return [
             "title" => "Blakuspasākumi",
             "content" => [
                 "Šīs tēmas jūs interesē, bet jūs nemākat kodēt? Reģistrējieties mūsu blakuspasākumiem un sajūtiet kodēšanas, inovāciju, uzņēmējdarbības gara un citu dalībai digitālajā pasaulē būtisko iemaņu sniegto prieku. Kodēšanas nedēļas hakatona blakuspasākumi, tostarp dažādu veidu darbsemināri, notiks no maija līdz oktobrim. Dalība ir bezmaksas, reģistrējoties šeit. Nāciet un uzziniet vairāk.",
+            ],
+            "events" => [
+                "makex" => [
+                    "title" => [
+                        "Apmācību kurss robotikā, MakeX/MakeBlock",
+                        "1. apmācību kurss robotikā — Ievads robotikā un robotikas sacensībās, MakeX/MakeBlock",
+                        "2. apmācību kurss robotikā — Programmēšana un aparatūras uzbūve, MakeX/MakeBlock",
+                        "3. apmācību kurss robotikā — Panākumus nesoša mentorēšana, MakeX/MakeBlock",
+                    ],
+                    "content" => [
+                        "MakeX, globāla robotikas sacensību platforma, piedāvā visaptverošu apmācību kursu robotikā skolotājiem un mentoriem, kurus interesē praktiskā mācīšanās, STEAM izglītība (integrēta dabaszinātņu, tehnoloģiju, inženierzinātņu, mākslas un matemātikas mācīšana), programmēšana un robotikas sacensības visu vecumu skolēniem, izmantojot vismodernāko programmatūru un aparatūru kā mBot2, laserbox un mBlock5.",
+                        "No ievada robotikā, programmēšanā un aparatūras uzbūvē līdz panākumus nesošai mentorēšanai: jūs aizraus projektos balstītās mācīšanās pieeja un jūs uzzināsiet, kā palīdzēt skolēniem izmantot modernās platformas, lai atrisinātu reālās dzīves problēmas. Aicinām piedalīties skolotājus, kuri ir atbildīgi par robotikas kursu skolā! Jūs gūsiet padziļinātu izpratni par programmēšanu, datoristisko domāšanu, pedagoģijas konceptiem, robotu aparatūru un traucējummeklēšanas tehnikām.",
+                        "šeit",
+                        "lai reģistrētos!",
+                        "Vairāk informācijas:",
+                        "https://www.makex.cc/en",
+                    ],
+                    "dates" => [
+                        "Datums: 1. jūnijs, plkst. 11.00 (CEST) -> noklikšķiniet",
+                        "Datums: 3. jūnijs, plkst. 11.00 (CEST) -> noklikšķiniet",
+                        "Datums: 8. jūnijs, plkst. 11.00 (CEST) -> noklikšķiniet",
+                    ]
+                ]
             ]
         ],
         12 => [
@@ -135,8 +158,10 @@ return [
             "8" => ["Kaspars Eglītis","Latvijas Universitātes Datorikas fakultātes projektu studijas DF LAB Administrators & Accenture Jr Inovāciju projektu vadītājs"],
             "9" => ["Paula Elksne","RTU RBS Bakalaura programmu direktora vietniece"],
             "10" => ["Linda Sinka","Learn IT bērnu programmēšanas skolas dibinātāja, ES Programmēšanas nedēļās vēstniece Latvijā"],
-            "11" => ["",""],
-            "12" => ["",""],
+            "11" => ["Gundega Dekena","DevOps speciāliste Accenture Latvia palīdz pasaules klases uzņēmumiem ieviest mākoņpakalpojumus. Programmēšanas skolotāja un vienīgā oficiālā GitHub Campus padomniece Baltijā."],
+            "12" => ["Emīls Sjundjukovs","Datorzinātnieks, pētniecības un izstrādes daļas vadītājs biomedicīnas startup uzņēmumā Longenesis"],
+            "13" => ["Pāvils Jurjāns","IT uzņēmējs, programmēšanas inženieris, biznesa mentors, atvērto datu aizstāvis un tehnoloģiju entuziasts"],
+            "14" => ["Krišjānis Nesenbergs","Pētnieks EDI kiberfizikālo sistēmu laboratorijā un tās vadītājs. Zema līmeņa/iegultās iekārtas un programmatūra, sensori, signālapstrāde un mašīnmācīšanās praktiskiem pielietojumiem no valkājamām ierīcēm līdz pašbraucošajiem auto."]
         ],
         "leaders" => [
             "title" => "Darbnīcu vadītāji",

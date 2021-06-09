@@ -48,7 +48,7 @@
 
                 <div class="flex items-center justify-center">
                     <a target="_blank"
-                       href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/EU+CodeWeek+TeachDay+(22+May)+Agenda.pdf"
+                       href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/%23CodeWeek+%23TeachDay+(22+May)+Agenda.pdf"
                        class="codeweek-action-link-button">AGENDA</a>
                 </div>
 
@@ -114,7 +114,7 @@
                 <div class="flex items-center justify-center">
                     <a target="_blank" type="button"
                        class="codeweek-action-link-button" style="   pointer-events: none;
-    cursor: default; opacity: 75% ">FULL</a>
+    cursor: default; opacity: 75% ">Registration is full</a>
                 </div>
             </div>
 
