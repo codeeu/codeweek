@@ -1,8 +1,11 @@
-@extends('layout.base')
+@extends('layout.tall')
 
 @section('content')
 
+
+
     <section id="codeweek-ambassadors-page" class="codeweek-page">
+
 
         <section class="codeweek-banner ambassadors">
             <div class="text">
@@ -15,6 +18,9 @@
         </section>
 
         <section class="codeweek-content-wrapper">
+
+
+
             <p style="line-height: 30px;">@lang('community.intro.0').<br/>@lang('community.intro.1')</p><h3>@lang('community.intro.2')</h3>
 
             <section class="codeweek-searchbox">
@@ -115,16 +121,23 @@
                     <h2 class="subtitle">@lang('community.titles.2')</h2>
                     <div class="community_type">
                         <div class="text">
-                            <p>
-                                @lang('community.leading-teachers')
+<p>
+    @lang('community.leading-teachers')</p>
                                 <h3>@lang('community.cta')</h3>
-                            </p>
+
                         </div>
+
                         <div class="image">
                             <img src="{{asset('/images/leading_teachers.png')}}">
                         </div>
                     </div>
+
+
+
                 </section>
+
+                <div id="mapid" style="width: 100%; height: 400px;"></div>
+
                 <section class="community_type_section">
                     <h2 class="subtitle">@lang('community.titles.3')</h2>
                     <div class="community_type">
@@ -183,4 +196,71 @@
 
     </section>
 
+@endsection
+
+@push('scripts')
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+
+    {{--    <link href="{{asset('css/MarkerCluster.css')}}" media="screen" rel="stylesheet"/>--}}
+    {{--    <link href="{{asset('css/MarkerCluster.Default.css')}}" media="screen" rel="stylesheet"/>--}}
+
+    {{--    <script src="{{asset('js/leaflet.markercluster.js')}}" type="text/javascript"/>--}}
+
+
+@endpush
+
+
+@section('extra-js')
+    <script src="{{asset('js/countriesGeoCentroids.js')}}" type="text/javascript"></script>
+    <script>
+
+        var mymap = L.map('mapid');
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYWxhaW52ZCIsImEiOiJja2c4NGJvd28wZG15MnBxb3pqdGJpMnFmIn0.4PZI2skT6BVtl9f5jRTnBQ', {
+            maxZoom: 18,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+                'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1
+        }).addTo(mymap);
+
+
+        @foreach($teachers as $teacher)
+        L.marker([{{$teacher->city->latitude}}, {{$teacher->city->longitude}}]).addTo(mymap)
+            .bindPopup("<b>{{$teacher->firstname}} {{$teacher->lastname}}</b><br />{{$teacher->city->city}}").openPopup();
+        @endforeach
+
+        var popup = L.popup();
+
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent("You clicked the map at " + e.latlng.toString())
+                .openOn(mymap);
+        }
+
+        mymap.on('click', onMapClick);
+
+        let centerInfo = {
+            latitude: 51,
+            longitude: 4,
+            zoom: 4
+        };
+
+
+            const countryInfo = centroids.find(ctrds => ctrds.iso === '{{$country_iso}}');
+            if (countryInfo){
+                centerInfo = countryInfo;
+            }
+
+        const latlng = new L.LatLng(centerInfo.latitude, centerInfo.longitude);
+        mymap.setView(latlng, centerInfo.zoom, {animation: true});
+
+
+
+    </script>
 @endsection
