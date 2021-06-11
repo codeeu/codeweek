@@ -19,9 +19,21 @@ return [
     "cta" => "Če ste učitelj/-ica, lahko na zemljevidu poiščete vodilne učitelje v svoji bližini in se povežete z njimi.",
     "edu" => "Koordinatorji izobraževanja evropskega tedna programiranja so dopisniki pri ministrstvih za izobraževanje ali drugih izobraževalnih organih in organizacijah, ki sodelujejo v evropskem tednu programiranja. Koordinatorji izobraževanja krepijo temelje pobude s podporo učiteljem in šolam po vsej državi. To vključuje komunikacijo s šolami, ki že sodelujejo v evropskem tednu programiranja, za seznanitev z njihovimi najboljšimi praksami in izmenjavo izkušenj. Poleg tega koordinatorji izobraževanja podpirajo šole, ki želijo sodelovati v pobudi, tako da zagotavljajo razpoložljive vire, učno gradivo in priložnosti v skupnosti.",
     "volunteer" => [
-        "Ni vam treba prevzeti uradne vloge v skupnosti evropskega tedna programiranja, da bi bili del tega gibanja. Vsakdo lahko organizira dejavnosti za poučevanje in navdihovanje ljudi za programiranje, robotiko, ukvarjanje s strojno opremo, 3D-tiskanje itd., poleg tega lahko vsakdo doda dejavnost na zemljevid. Če pa želite kot prostovoljec svoj čas nameniti spodbujanju programiranja ter verjamete v vizijo in vrednote evropskega tedna programiranja, lahko postanete vodilni učitelj ali ambasador.",
-        "Če ste pedagog in ste tako strastni pri zavzemanju za poučevanje in učenje o programiranju kot mi, lahko tukaj izveste več o vlogi in koristih vodilnih učiteljev. Nato se lahko prijavite, da bi postali vodilni/-a učitelj/-ica, tako da izpolnite ta spletni obrazec za prijavo. Upoštevajte, da je število vodilnih učiteljev na državo fiksno, kar pomeni, da so prijave hkrati odprte samo za nekatere določene države.",
-        "Če želite v svoji državi spodbujati programiranje, preberite odgovornosti ambasadorjev in si na hitro oglejte seznam ambasadorjev evropskega tedna programiranja. Če so v vaši državi ambasadorji, se obrnite neposredno nanje in ugotovite, kako lahko najbolje podprete pobudo. Če v vaši državi ni ambasadorja, nam lahko pišete na info@codeweek.eu.",
+        "Ni vam treba prevzeti uradne vloge v skupnosti evropskega tedna programiranja, da bi bili del tega gibanja. Vsakdo lahko organizira dejavnosti za poučevanje in navdihovanje ljudi za programiranje, robotiko, ukvarjanje s strojno opremo, 3D-tiskanje itd., poleg tega lahko vsakdo doda dejavnost",
+        "na zemljevid.",
+        "Če pa želite kot prostovoljec svoj čas nameniti spodbujanju programiranja ter verjamete v",
+        "vizijo",
+        "in",
+        "vrednote",
+        "evropskega tedna programiranja, lahko postanete vodilni učitelj ali ambasador",
+        "Če ste pedagog in ste tako strastni pri zavzemanju za poučevanje in učenje o programiranju kot mi, lahko izveste več o vlogi in koristih vodilnih učiteljev.",
+        "tukaj",
+        "Nato se lahko prijavite, da bi postali vodilni/-a učitelj/-ica, tako da izpolnite ta",
+        "spletni obrazec za prijavo.",
+        "Upoštevajte, da je število vodilnih učiteljev na državo fiksno, kar pomeni, da so prijave hkrati odprte samo za nekatere določene države.",
+        "Če želite v svoji državi spodbujati programiranje, preberite",
+        "odgovornosti ambasadorjev",
+        "in si na hitro oglejte seznam ambasadorjev evropskega tedna programiranja.",
+        "Če so v vaši državi ambasadorji, se obrnite neposredno nanje in ugotovite, kako lahko najbolje podprete pobudo. Če v vaši državi ni ambasadorja, nam lahko pišete na info@codeweek.eu.",
     ]
-
 ];

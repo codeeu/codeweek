@@ -19,11 +19,23 @@ return [
     "cta" => "Jei esate mokytojas, šiame žemėlapyje galite rasti netoliese esančius veiklą koordinuojančius mokytojus ir su jais susisiekti.",
     "edu" => "ES programavimo savaitės švietimo koordinatoriai yra ES programavimo savaitėje dalyvaujančių švietimo ministerijų ir kitų švietimo institucijų ar organizacijų korespondentai. Švietimo koordinatoriai stiprina iniciatyvos pagrindą, padėdami mokytojams ir mokykloms visoje šalyje. Be kita ko, jie bendrauja su ES programavimo savaitėje jau dalyvaujančiomis mokyklomis, mokydamiesi iš jų geriausios patirties ir dalydamiesi savąja. Švietimo koordinatoriai taip pat padeda mokykloms, norinčioms dalyvauti iniciatyvoje, dalydamiesi turimais ištekliais, mokymosi medžiaga ir suteikdami galimybę prisijungti prie bendruomenės.",
     "volunteer" => [
-        "Tam, kad galėtumėte prisidėti prie šios iniciatyvos, neprivalote būti oficialus ES programavimo savaitės bendruomenės narys. Bet kas gali organizuoti mokymo veiklą ir įkvėpti žmones programuoti, užsiimti robotika, dirbti su aparatine įranga, spausdinti 3D spausdintuvu ir pan., ir pažymėti savo veiklą žemėlapyje. Vis dėlto, jei norite skirti laiko savanorystei, kad paskatintumėte programuoti, ir tikite ES programavimo savaitės vizija ir vertybėmis, galite tapti veiklą koordinuojančiu mokytoju arba ambasadoriumi.",
-        "Jei esate švietimo srities atstovas, kuriam patinka mokyti ir mokytis programuoti taip, kaip ir mums, čia galite sužinoti daugiau apie veiklą koordinuojančių mokytojų vaidmenį ir naudą. Galite pateikti prašymą tapti veiklą koordinuojančiu mokytoju, užpildę šią internetinę paraiškos formą. Prašome atkreipti dėmesį, kad veiklą koordinuojančių mokytojų skaičius vienoje šalyje yra ribotas, todėl vienu metu priimami prašymai tik iš tam tikrų valstybių.",
-        "Jei norite skatinti programavimą savo šalyje, susipažinkite su ambasadorių pareigomis ir peržvelkite ES programavimo savaitės ambasadorių sąrašą. Jei jūsų šalyje yra ambasadorių, susisiekite su jais tiesiogiai ir pasiteiraukite, kaip geriausiai galite prisidėti prie šios iniciatyvos. Jei tokių ambasadorių jūsų šalyje nėra, galite parašyti el. pašto adresu info@codeweek.eu.",
+        "Tam, kad galėtumėte prisidėti prie šios iniciatyvos, neprivalote būti oficialus ES programavimo savaitės bendruomenės narys. Bet kas gali organizuoti mokymo veiklą ir įkvėpti žmones programuoti, užsiimti robotika, dirbti su aparatine įranga, spausdinti 3D spausdintuvu ir pan., ir pažymėti savo veiklą",
+        "žemėlapyje.",
+        "Vis dėlto, jei norite skirti laiko savanorystei, kad paskatintumėte programuoti, ir tikite ES programavimo savaitės",
+        "vizija",
+        "ir",
+        "vertybėmis",
+        "galite tapti veiklą koordinuojančiu mokytoju arba ambasadoriumi",
+        "Jei esate švietimo srities atstovas, kuriam patinka mokyti ir mokytis programuoti taip, kaip ir mums, galite sužinoti daugiau apie veiklą koordinuojančių mokytojų vaidmenį ir naudą",
+        "čia",
+        "Galite pateikti prašymą tapti veiklą koordinuojančiu mokytoju, užpildę šią",
+        "internetinę paraiškos formą.",
+        "Prašome atkreipti dėmesį, kad veiklą koordinuojančių mokytojų skaičius vienoje šalyje yra ribotas, todėl vienu metu priimami prašymai tik iš tam tikrų valstybių.",
+        "Jei norite skatinti programavimą savo šalyje, susipažinkite su",
+        "ambasadorių pareigomis",
+        "ir peržvelkite ES programavimo savaitės ambasadorių sąrašą.",
+        "Jei jūsų šalyje yra ambasadorių, susisiekite su jais tiesiogiai ir pasiteiraukite, kaip geriausiai galite prisidėti prie šios iniciatyvos. Jei tokių ambasadorių jūsų šalyje nėra, galite parašyti el. pašto adresu info@codeweek.eu.",
     ]
-
 ];
 
 

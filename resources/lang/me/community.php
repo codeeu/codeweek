@@ -19,11 +19,23 @@ return [
     "cta" => " Ako ste nastavnik, možete pronaći vodeće nastavnike u svojoj blizini da biste ih povezali na mapi.",
     "edu" => " Edu koordinatori Evropske nedjelje kodiranja su korespondenti u ministarstvima obrazovanja ili drugim obrazovnim organima i organizacijama koje učestvuju u Evropskoj nedjelji kodiranja. Edu koordinatori jačaju temelje inicijative podržavajući nastavnike i škole širom zemlje. To uključuje komunikaciju sa školama koje već učestvuju u Evropskoj nedjelji kodiranja radi upoznavanja sa njihovim najboljim praksama i razmene iskustva. Edu koordinatori takođe podržavaju škole koje žele da učestvuju u inicijativi, pružajući raspoložive resurse, materijal za učenje i mogućnosti u zajednici.",
     "volunteer" => [
-        "Ne morate da preuzimate zvaničnu ulogu u zajednici Evropske nedjelje kodiranja da biste bili dio pokreta. Svako može da organizuje aktivnosti kako bi podučio i inspirisao ljude da kodiraju, rade robotiku, izigravaju hardver, 3D štampu itd. i stave svoju aktivnost na mapu. Međutim, ako želite da volontirate za promociju kodiranja i vjerujete u viziju i vrijednosti EU Code Week-a, potencijalno biste mogli postati vodeći nastavnik ili ambasador.",
-        "Ako ste nastavnik koji je strastven u poučavanju i učenju kodiranja koliko i mi, možete saznati više o ulozi i prednostima vodećih nastavnika ovdje. Tada se možete prijaviti za vodećeg nastavnika popunjavanjem ovog onlajn obrasca prijave. Imajte na umu da je broj vodećih nastavnika po zemlji određen, što znači da su prijave otvorene samo za neke određene zemlje istovremeno.",
-        "Ako želite da promovišete kodiranje u svojoj zemlji, pogledajte odgovornosti ambasadora i na brzinu pogledajte spisak ambasadora EU Code Week - a. Ako u vašoj zemlji postoje ambasadori, kontaktirajte ih direktno i pogledajte kako možete najbolje podržati inicijativu. Ako u vašoj zemlji nema nikoga, možete se obratiti na adresu info@codeweek.eu.",
-]
-
+        "Ne morate da preuzimate zvaničnu ulogu u zajednici Evropske nedjelje kodiranja da biste bili dio pokreta. Svako može da organizuje aktivnosti kako bi podučio i inspirisao ljude da kodiraju, rade robotiku, izigravaju hardver, 3D štampu itd. i stave svoju aktivnost",
+        "na mapu.",
+        "Međutim, ako želite da volontirate za promociju kodiranja i vjerujete u",
+        "viziju",
+        "i",
+        "vrijednosti",
+        "EU Code Week-a, potencijalno biste mogli postati vodeći nastavnik ili ambasador.",
+        "Ako ste nastavnik koji je strastven u poučavanju i učenju kodiranja koliko i mi, možete saznati više o ulozi i prednostima vodećih nastavnika",
+        "ovdje.",
+        "Tada se možete prijaviti za vodećeg nastavnika popunjavanjem ovog",
+        "onlajn obrasca prijave.",
+        "Imajte na umu da je broj vodećih nastavnika po zemlji određen, što znači da su prijave otvorene samo za neke određene zemlje istovremeno.",
+        "Ako želite da promovišete kodiranje u svojoj zemlji, pogledajte",
+        "odgovornosti ambasadora",
+        "i na brzinu pogledajte spisak ambasadora EU Code Week - a",
+        "Ako u vašoj zemlji postoje ambasadori, kontaktirajte ih direktno i pogledajte kako možete najbolje podržati inicijativu. Ako u vašoj zemlji nema nikoga, možete se obratiti na adresu info@codeweek.eu.",
+    ]
 ];
 
 
