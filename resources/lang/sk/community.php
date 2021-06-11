@@ -19,11 +19,23 @@ return [
     "cta" => "Ak ste učiteľ, na mape môžete nájsť vedúcich učiteľov vo svojom okolí, s ktorými sa môžete spojiť.",
     "edu" => "Koordinátori pre vzdelávanie v rámci Európskeho týždňa programovania sú korešpondenti na ministerstvách školstva alebo v iných orgánoch školstva a v organizáciách, ktoré sa podieľajú na Európskom týždni programovania. Koordinátori pre vzdelávanie posilňujú základy tejto iniciatívy tým, že podporujú učiteľov a školy na celoštátnej úrovni. Sem patrí aj komunikácia so školami, ktoré sa už zúčastňujú na Európskom týždni programovania, s cieľom dozvedieť sa o ich najlepších postupoch a vymieňať si skúsenosti. Koordinátori pre vzdelávanie takisto podporujú školy, ktoré sa chcú na iniciatíve zúčastniť, tým, že im poskytujú dostupné zdroje, učebné materiály a príležitosti v rámci komunity.",
     "volunteer" => [
-        "Na to, aby ste sa stali súčasťou diania, nemusíte zastávať oficiálnu funkciu v rámci komunity Európskeho týždňa programovania. Aktivity, ktorých cieľom je poskytovať ľuďom výučbu a inšpiráciu v oblasti programovania, robotiky, narábania s hardvérom či 3D tlačiarňou, môže zorganizovať každý a svoju aktivitu môže pridať na mapu. Ak však chcete dobrovoľne venovať svoj čas podpore programovania a veríte vo víziu a v hodnoty Európskeho týždňa programovania, môžete sa prípadne stať vedúcim učiteľom alebo veľvyslancom.",
-        "Ak ste pedagógom, ktorý vyučuje a učí sa, ako programovať, s rovnakým zanietením ako my, podrobnosti o úlohe a prínosoch vedúcich učiteľov sa dozviete tu. Potom môžete požiadať o pozíciu vedúceho učiteľa vyplnením tohto online formulára. Chceli by sme vás upozorniť, že počet vedúcich učiteľov pre jednotlivé krajiny je pevne stanovený, čo znamená, že žiadosti sú v konkrétnych obdobiach otvorené len pre určité krajiny.",
-        "Ak chcete podporiť programovanie vo svojej krajine, oboznámte sa s úlohami veľvyslancov a pozrite si zoznam veľvyslancov Európskeho týždňa programovania. Ak už vo vašej krajine ambasádori sú, spojte sa priamo s nimi, aby ste sa dozvedeli, ako môžete iniciatívu najlepšie podporiť. Ak vaša krajina ambasádorov nemá, môžete nás kontaktovať na info@codeweek.eu.",
+        "Na to, aby ste sa stali súčasťou diania, nemusíte zastávať oficiálnu funkciu v rámci komunity Európskeho týždňa programovania. Aktivity, ktorých cieľom je poskytovať ľuďom výučbu a inšpiráciu v oblasti programovania, robotiky, narábania s hardvérom či 3D tlačiarňou, môže zorganizovať každý a svoju aktivitu môže pridať",
+        "na mapu.",
+        "Ak však chcete dobrovoľne venovať svoj čas podpore programovania a veríte",
+        "vo víziu",
+        "a",
+        "v hodnoty",
+        "Európskeho týždňa programovania, môžete sa prípadne stať vedúcim učiteľom alebo veľvyslancom",
+        "Ak ste pedagógom, ktorý vyučuje a učí sa, ako programovať, s rovnakým zanietením ako my, podrobnosti o úlohe a prínosoch vedúcich učiteľov sa dozviete",
+        "tu.",
+        "Potom môžete požiadať o pozíciu vedúceho učiteľa vyplnením tohto",
+        "online formulára.",
+        "Chceli by sme vás upozorniť, že počet vedúcich učiteľov pre jednotlivé krajiny je pevne stanovený, čo znamená, že žiadosti sú v konkrétnych obdobiach otvorené len pre určité krajiny.",
+        "Ak chcete podporiť programovanie vo svojej krajine, oboznámte sa s",
+        "úlohami veľvyslancov",
+        "a pozrite si zoznam veľvyslancov Európskeho týždňa programovania.",
+        "Ak už vo vašej krajine ambasádori sú, spojte sa priamo s nimi, aby ste sa dozvedeli, ako môžete iniciatívu najlepšie podporiť. Ak vaša krajina ambasádorov nemá, môžete nás kontaktovať na info@codeweek.eu.",
     ]
-
 ];
 
 

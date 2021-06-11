@@ -19,9 +19,21 @@ return [
     "cta" => "Als Lehrkraft finden Sie auf der Karte „Leading Teachers“ in Ihrer Nähe, mit denen Sie in Kontakt treten können.",
     "edu" => "Die Edu-Koordinatoren der EU Code Week sind Korrespondent/innen in den Bildungsministerien oder anderen Bildungsbehörden und Organisationen, die an der EU Code Week teilnehmen. Die Edu-Koordinatoren stärken das Fundament der Initiative, indem sie Lehrkräfte und Schulen landesweit unterstützen. Außerdem stehen sie in Kontakt mit Schulen, die bereits an der EU Code Week teilnehmen, um bewährte Verfahren zu ermitteln und Erfahrungen auszutauschen. Darüber hinaus unterstützen die Edu-Koordinatoren Schulen, die sich an der Initiative beteiligen möchten, indem sie innerhalb der Community verfügbare Ressourcen, Lernmaterialien und -angebote bereitstellen.",
     "volunteer" => [
-        "Sie müssen keine offizielle Rolle in der Community der EU Code Week übernehmen, um Teil der Bewegung zu sein. Jede/r kann Aktivitäten planen, die Menschen dazu inspirieren, sich mit Programmieren, Robotik, Hardware, 3-D-Druck usw. zu beschäftigen und Kenntnisse in diesen Bereichen zu erwerben. Und jede/r kann diese Aktivitäten auf der Karte vermerken. Wenn Sie sich ehrenamtlich für die Verbreitung von Programmierkenntnissen engagieren möchten und an die Vision und die Werte der EU Code Week glauben, könnten auch Sie „Leading Teacher“ oder Botschafter/in werden.",
-        "Wenn Sie sich als Lehrkraft genauso leidenschaftlich mit der Vermittlung und dem Erwerb von Programmierkenntnissen befassen wie wir, finden Sie hier weitere Informationen zur Rolle und den Vorteilen der „Leading Teachers“. Anschließend können Sie sich über dieses Online-Bewerbungsformular als „Leading Teacher“ bewerben. Bitte beachten Sie, dass die Anzahl der „Leading Teachers“ pro Land festgelegt ist. Bewerbungen sind zu einem gegebenen Zeitpunkt also nur für bestimmte Länder möglich.",
-        "Wenn Sie sich in Ihrem Land für Programmierkenntnisse einsetzen möchten, sollten Sie sich die Zuständigkeiten der Botschafter/innen und die Liste der Botschafter/innen der EU Code Week ansehen. Wenn es in Ihrem Land Botschafter/innen gibt, wenden Sie sich bitte direkt an diese, um zu erfahren, wie Sie die Initiative am besten unterstützen können. Gibt es in Ihrem Land niemanden, können Sie sich an info@codeweek.eu wenden.",
+        "Sie müssen keine offizielle Rolle in der Community der EU Code Week übernehmen, um Teil der Bewegung zu sein. Jede/r kann Aktivitäten planen, die Menschen dazu inspirieren, sich mit Programmieren, Robotik, Hardware, 3-D-Druck usw. zu beschäftigen und Kenntnisse in diesen Bereichen zu erwerben. Und jede/r kann diese Aktivitäten vermerken",
+        "auf der Karte.",
+        "Wenn Sie sich ehrenamtlich für die Verbreitung von Programmierkenntnissen engagieren möchten und an die",
+        "Vision",
+        "und",
+        "die Werte",
+        "der EU Code Week glauben, könnten auch Sie „Leading Teacher“ oder Botschafter/in werden.",
+        "Wenn Sie sich als Lehrkraft genauso leidenschaftlich mit der Vermittlung und dem Erwerb von Programmierkenntnissen befassen wie wir, finden Sie weitere Informationen zur Rolle als Leading Teacher",
+        "hier",
+        "und den Vorteilen der „Leading Teachers“. Anschließend können Sie sich über dieses",
+        "Online-Bewerbungsformular bewerben.",
+        "Bitte beachten Sie, dass die Anzahl der „Leading Teachers“ pro Land festgelegt ist. Bewerbungen sind zu einem gegebenen Zeitpunkt also nur für bestimmte Länder möglich.",
+        "Wenn Sie sich in Ihrem Land für Programmierkenntnisse einsetzen möchten, sollten Sie sich",
+        "die Zuständigkeiten der Botschafter/innen",
+        "und die Liste der Botschafter/innen der EU Code Week ansehen",
+        "Wenn es in Ihrem Land Botschafter/innen gibt, wenden Sie sich bitte direkt an diese, um zu erfahren, wie Sie die Initiative am besten unterstützen können. Gibt es in Ihrem Land niemanden, können Sie sich an info@codeweek.eu wenden.",
     ]
-
 ];

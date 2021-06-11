@@ -19,9 +19,22 @@ return [
     "cta" => "Jekk int għalliem, tista’ ssib l-Għalliema ewlenin qrib tiegħek biex tagħmel konnessjoni magħhom fuq il-mappa.",
     "edu" => "Il-Koordinaturi Edu tal-Ġimgħa Ewropea tal-Ikkowdjar huma korrispondenti fil-Ministeri tal-Edukazzjoni jew awtoritajiet u organizzazzjonijiet edukattivi oħrajn li jipparteċipaw fil-Ġimgħa Ewropea tal-Ikkowdjar. Il-Koordinaturi Edu jsaħħu l-pedamenti tal-inizjattiva billi jappoġġjaw lill-għalliema u lill-iskejjel mal-pajjiż kollu. Dan jinkludi l-komunikazzjoni mal-iskejjel li diġà jipparteċipaw fil-Ġimgħa Ewropea tal-Ikkowdjar biex jitgħallmu dwar l-aħjar prattiki tagħhom u jaqsmu l-esperjenza tagħhom. Il-Koordinaturi Edu jappoġġjaw ukoll l-iskejjel li jixtiequ jipparteċipaw fl-inizjattiva, billi jipprovdu riżorsi disponibbli, materjal ta’ tagħlim u opportunitajiet fi ħdan il-komunità.",
     "volunteer" => [
-        "M’hemmx għalfejn tieħu rwol uffiċjali fil-komunità tal-Ġimgħa Ewropea tal-Ikkowdjar biex tkun parti mill-moviment. Kulħadd jista’ jorganizza attivitajiet biex jgħallem u jispira lin-nies biex jikkowdjaw, jagħmlu r-robotika, jesploraw il-hardware, jipprintjaw 3D eċċ. u jirreġistraw l-attività tagħhom fuq il-mappa. Madankollu, jekk tixtieq tivvolontarja l-ħin tiegħek biex tippromwovi l-ikkowdjar u temmen fil-viżjoni u l-valuri tal-Ġimgħa Ewropea tal-Ikkowdjar, tista’ potenzjalment issir għalliem ewlieni jew ambaxxatur.",
-        "Jekk int edukatur b’passjoni lejn it-tagħlim u l-apprendiment dwar kif tikkodifika bħalna, tista’ ssir taf aktar dwar ir-rwol u l-benefiċċji tal-Għalliema ewlenin hawnhekk. Imbagħad tista’ tapplika biex issir Għalliem Ewlieni billi timla din il-formola ta’ applikazzjoni online. Jekk jogħġbok innota li n-numru ta’ Għalliema Ewlenin għal kull pajjiż huwa fiss li jfisser li l-applikazzjonijiet huma miftuħin biss għal xi pajjiżi speċifiċi kull darba.",
-        "Jekk tixtieq tippromwovi l-ikkowdjar f’pajjiżek, iċċekkja r-responsabbiltajiet tal-Ambaxxaturi u agħti ħarsa ħafifa lejn il-lista tal-Ambaxxaturi tal-Ġimgħa tal-Ikkowdjar tal-UE. Jekk hemm Ambaxxaturi f’pajjiżek, jekk jogħġbok ikkuntattjahom direttament u ara kif l-aħjar li tappoġġja l-inizjattiva. Jekk m’hemm ħadd f’pajjiżek, tista’ tikkuntattja lil info@codeweek.eu.",
+        "M’hemmx għalfejn tieħu rwol uffiċjali fil-komunità tal-Ġimgħa Ewropea tal-Ikkowdjar biex tkun parti mill-moviment. Kulħadd jista’ jorganizza attivitajiet biex jgħallem u jispira lin-nies biex jikkowdjaw, jagħmlu r-robotika, jesploraw il-hardware, jipprintjaw 3D eċċ. u jirreġistraw l-attività tagħhom ",
+        " fuq il-mappa.",
+        "Madankollu, jekk tixtieq tivvolontarja l-ħin tiegħek biex tippromwovi l-ikkowdjar u temmen fil-",
+        "viżjoni",
+        "u",
+        "l-valuri",
+        "tal-Ġimgħa Ewropea tal-Ikkowdjar, tista’ potenzjalment issir għalliem ewlieni jew ambaxxatur.",
+        "Jekk int edukatur b’passjoni lejn it-tagħlim u l-apprendiment dwar kif tikkodifika bħalna, tista’ ssir taf aktar dwar ir-rwol u l-benefiċċji tal-Għalliema ewlenin",
+        "hawnhekk.",
+        "Imbagħad tista’ tapplika biex issir Għalliem Ewlieni billi timla din il-",
+        "formola ta’ applikazzjoni online.",
+        "Jekk jogħġbok innota li n-numru ta’ Għalliema Ewlenin għal kull pajjiż huwa fiss li jfisser li l-applikazzjonijiet huma miftuħin biss għal xi pajjiżi speċifiċi kull darba.",
+        "Jekk tixtieq tippromwovi l-ikkowdjar f’pajjiżek, iċċekkja r-",
+        "responsabbiltajiet tal-Ambaxxaturi",
+        "u agħti ħarsa ħafifa lejn il-lista tal-Ambaxxaturi tal-Ġimgħa tal-Ikkowdjar tal-UE.",
+        "Jekk hemm Ambaxxaturi f’pajjiżek, jekk jogħġbok ikkuntattjahom direttament u ara kif l-aħjar li tappoġġja l-inizjattiva. Jekk m’hemm ħadd f’pajjiżek, tista’ tikkuntattja lil info@codeweek.eu.",
     ]
 
 ];
