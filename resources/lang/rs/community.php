@@ -19,9 +19,21 @@ return [
     "cta" => "Ako ste nastavnik, osobu koja je vama najbliži glavni nastavnik možete da pronađete na mapi i da se povežete sa njom.",
     "edu" => "Koordinatori za obrazovanje tokom EU nedelje programiranje su pojedinci iz ministarstava obrazovanja ili drugih obrazovnih tela i organizacija učesnika EU nedelje programiranja. Koordinatori za obrazovanje jačaju temelje ove inicijative pružajući podršku nastavnicima i školama širom zemlje. To obuhvata komunikaciju sa školama koje već učestvuju u EU nedelji programiranja radi upoznavanja sa njihovim najboljim praksama i razmene iskustava. Koordinatori za obrazovanje takođe pomažu školama koje žele da učestvuju u ovoj inicijativi, pružajući im dostupne resurse, nastavne materijale i prilike za uključivanje u zajednicu.",
     "volunteer" => [
-        "Ne morate da imate neku zvaničnu ulogu u zajednici EU nedelje programiranja da biste postali deo pokreta. Svako može da organizuje aktivnosti u kojima će učiti i inspirisati ljude da programiraju, prave robote, popravljaju hardver ili se bave 3D štampom i slično i zakači njihove aktivnosti na mapu. Međutim, ako želite da posvetite svoje vreme promovisanju programiranja i ako verujete u viziju i vrednosti EU nedelje programiranja, možda biste mogli da postanete glavni nastavnik ili ambasador.",
-        "Ako ste prosvetni radnik koji pasionirano predaje i uči o programiranju kao što mi to radimo, ovde možete da saznate više o ulozi i pogodnostima glavnih nastavnika. Zatim možete da se prijavite za mesto glavnog nastavnika tako što ćete popuniti ovaj obrazac za prijavu na mreži. Imajte u vidu da je broj glavnih nastavnika u svakoj zemlji ograničen, što znači da su prijave otvorene samo za pojedine zemlje u isto vreme.",
-        "Ako želite da promovišete programiranje u svojoj zemlji, pročitajte zaduženja ambasadora i pogledajte spisak ambasadora EU nedelje programiranja. Ako postoje ambasadori u vašoj zemlji, javite im se direktno i vidite kako najbolje možete da podržite inicijativu. Ako u vašoj zemlji nema nikoga, možete da nam pišete na info@codeweek.eu.",
+        "Ne morate da imate neku zvaničnu ulogu u zajednici EU nedelje programiranja da biste postali deo pokreta. Svako može da organizuje aktivnosti u kojima će učiti i inspirisati ljude da programiraju, prave robote, popravljaju hardver ili se bave 3D štampom i slično i zakači njihove aktivnosti",
+        "na mapu.",
+        "Međutim, ako želite da posvetite svoje vreme promovisanju programiranja i ako verujete u",
+        "viziju",
+        "i",
+        "vrednosti",
+        "EU nedelje programiranja, možda biste mogli da postanete glavni nastavnik ili ambasador.",
+        "Ako ste prosvetni radnik koji pasionirano predaje i uči o programiranju kao što mi to radimo, možete da saznate više o ulozi i pogodnostima glavnih nastavnika.",
+        "ovde",
+        "Zatim možete da se prijavite za mesto glavnog nastavnika tako što ćete popuniti ovaj",
+        "obrazac za prijavu na mreži.",
+        "Imajte u vidu da je broj glavnih nastavnika u svakoj zemlji ograničen, što znači da su prijave otvorene samo za pojedine zemlje u isto vreme",
+        "Ako želite da promovišete programiranje u svojoj zemlji, pročitajte",
+        "zaduženja ambasadora",
+        "i pogledajte spisak ambasadora EU nedelje programiranja.",
+        "Ako postoje ambasadori u vašoj zemlji, javite im se direktno i vidite kako najbolje možete da podržite inicijativu. Ako u vašoj zemlji nema nikoga, možete da nam pišete na info@codeweek.eu.",
     ]
-
 ];
