@@ -35,7 +35,8 @@ class AmbassadorController extends Controller
         return view('ambassadors')->with([
             "ambassadors" => $ambassadors,
             "countries" => Country::withEvents(),
-            "countries_with_ambassadors" => AmbassadorHelper::getByActiveCountries()
+            "countries_with_ambassadors" => AmbassadorHelper::getByActiveCountries(),
+
         ]);
     }
 
