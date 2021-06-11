@@ -19,9 +19,21 @@ return [
     "cta" => "Om du är lärare och vill hitta ledande lärare nära dig kan du ta dig en titt på kartan.",
     "edu" => "Utbildningssamordnarna för EU:s sskodvecka är kontaktpersoner vid utbildningsministerier eller andra utbildningsmyndigheter och deltagande organisationer. De stärker initiativet genom att stödja lärare och skolor i hela landet. Bland annat kommunicerar de med skolor som redan deltar i kodveckan för att lära sig om deras bästa praxis och dela med sig av erfarenheter. De hjälper också skolor som vill delta i initiativet genom att informera om tillgängliga resurser, undervisningsmaterial och möjligheter inom nätverket.",
     "volunteer" => [
-        "Du behöver inte ta på dig en officiell roll i EU:s kodvecka för att delta. Alla som vill kan anordna aktiviteter för att undervisa och inspirera människor att koda, lära sig robotteknik, testa olika sorters datorutrustning, använda 3D-skrivare osv. och lägga till sin aktivitet på kartan. Men om du vill ge av din tid för att sprida kunskaper om kodning och tror på visionen och värderingarna för EU: kodvecka kan du om du vill gå längre och bli en ledande lärare eller ambassadör.",
-        "För dig som är lärare och älskar att lära dig själv och andra att koda lika mycket som vi, har vi tagit fram ett informationsblad om rollen som ledande lärare. Du kan ansöka om att bli en ledande lärare genom att fylla i vårt webbformulär. Observera att antalet ledande lärare per land är begränsat, vilket innebär att det inte alltid är möjligt att ansöka.",
-        "Om du vill hjälpa till att sprida kunskaper om kodning i ditt land kan du läsa mer om ambassadörernas uppgifter. Ta gärna en titt på vår lista över kodveckans ambassadörer. Om det finns ambassadörer i ditt land kan du kontakta dem direkt för mer information om hur du på bästa sätt kan stödja initiativet. Om det inte finns någon ambassadör i ditt land kan du i stället kontakta info@codeweek.eu.",
+        "Du behöver inte ta på dig en officiell roll i EU:s kodvecka för att delta. Alla som vill kan anordna aktiviteter för att undervisa och inspirera människor att koda, lära sig robotteknik, testa olika sorters datorutrustning, använda 3D-skrivare osv. och lägga till sin aktivitet",
+        "på kartan.",
+        "Men om du vill ge av din tid för att sprida kunskaper om kodning och tror på",
+        "visionen",
+        "och",
+        "värderingarna",
+        "för EU: kodvecka kan du om du vill gå längre och bli en ledande lärare eller ambassadör.",
+        "För dig som är lärare och älskar att lära dig själv och andra att koda lika mycket som vi, har vi tagit fram ett informationsblad om rollen som ledande lärare.",
+        "här",
+        "Du kan ansöka om att bli en ledande lärare genom att fylla i vårt",
+        "webbformulär.",
+        "Observera att antalet ledande lärare per land är begränsat, vilket innebär att det inte alltid är möjligt att ansöka",
+        "Om du vill hjälpa till att sprida kunskaper om kodning i ditt land kan du läsa mer om",
+        "ambassadörernas uppgifter.",
+        "Ta gärna en titt på vår lista över kodveckans ambassadörer",
+        "Om det finns ambassadörer i ditt land kan du kontakta dem direkt för mer information om hur du på bästa sätt kan stödja initiativet. Om det inte finns någon ambassadör i ditt land kan du i stället kontakta info@codeweek.eu.",
     ]
-
 ];

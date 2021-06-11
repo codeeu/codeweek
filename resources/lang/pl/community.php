@@ -19,10 +19,22 @@ return [
     "cta" => "Jesteś nauczycielem? Skontaktuj się z jednym z nauczycieli prowadzących w Twojej okolicy – znajdziesz ich na mapie.",
     "edu" => "Koordynatorzy edukacyjni Europejskiego Tygodnia Kodowania to korespondenci z krajowych ministerstw edukacji lub innych władz i organizacji oświatowych uczestniczących w Europejskim Tygodniu Kodowania. Zadaniem koordynatorów jest umacnianie podstaw inicjatywy poprzez wspieranie nauczycieli i szkół w całym kraju. Obejmuje to prowadzenie komunikacji ze szkołami, które już uczestniczą w Europejskim Tygodniu Kodowania, aby poznać ich najlepsze praktyki i umożliwić wymianę doświadczeń. Koordynatorzy edukacyjni wspierają również szkoły, które chcą dołączyć do inicjatywy, udostępniając im zasoby i materiały edukacyjne oraz przedstawiając im możliwości dostępne w ich społeczności.",
     "volunteer" => [
-        "Nie musisz pełnić oficjalnej roli w społeczności Europejskiego Tygodnia Kodowania, aby być wziąć w nim aktywnie udział. Każdy może zorganizować aktywności mające na celu naukę i promowanie kodowania, robotyki, majsterkowania przy sprzęcie, drukowania 3D itp. i umieścić je na mapie wydarzeń. Jeśli jednak chcesz zrobić coś więcej i poświęcić swój czas, aby zarażać innych pasją do kodowania, a także podzielasz wizję i wartości Europejskiego Tygodnia Kodowania, możesz zostać nauczycielem prowadzącym lub ambasadorem.",
-        "Jesteś pedagogiem i podzielasz nasze zamiłowanie do nauczania i uczenia się programowania? Dowiedz się więcej na temat roli nauczycieli prowadzących i korzyści, jakie się z tym wiążą, klikając tutaj. Jeśli oferta Cię zainteresuje, zgłoś swoją kandydaturę na nauczyciela prowadzącego, wypełniając ten formularz online. Pamiętaj, że liczba nauczycieli prowadzących w każdym kraju jest z góry określona. Nabór prowadzony jest w poszczególnych krajach w zależności od liczby wolnych miejsc w danym momencie.",
-        "Jeśli chcesz szerzyć pasję do kodowania w swoim kraju, zapoznaj się z zadaniami ambasadorów i zajrzyj na listę Ambasadorów Europejskiego Tygodnia Kodowania. Jeśli w Twoim kraju działają już nasi ambasadorzy, skontaktuj się z nimi bezpośrednio i dowiedz się, co możesz zrobić, aby wesprzeć inicjatywę. Jeżeli w Twoim kraju nie ma jeszcze ambasadorów, skontaktuj się z nami, pisząc na adres info@codeweek.eu.",
+        "Nie musisz pełnić oficjalnej roli w społeczności Europejskiego Tygodnia Kodowania, aby być wziąć w nim aktywnie udział. Każdy może zorganizować aktywności mające na celu naukę i promowanie kodowania, robotyki, majsterkowania przy sprzęcie, drukowania 3D itp. i umieścić je",
+        "na mapie wydarzeń.",
+        "Jeśli jednak chcesz zrobić coś więcej i poświęcić swój czas, aby zarażać innych pasją do kodowania, a także podzielasz",
+        "wizję",
+        "i",
+        "wartości",
+        "Europejskiego Tygodnia Kodowania, możesz zostać nauczycielem prowadzącym lub ambasadorem",
+        "Jesteś pedagogiem i podzielasz nasze zamiłowanie do nauczania i uczenia się programowania? Dowiedz się więcej na temat roli nauczycieli prowadzących i korzyści, jakie się z tym wiążą, klikając",
+        "tutaj",
+        "Jeśli oferta Cię zainteresuje, zgłoś swoją kandydaturę na nauczyciela prowadzącego, wypełniając",
+        "ten formularz online.",
+        "Pamiętaj, że liczba nauczycieli prowadzących w każdym kraju jest z góry określona. Nabór prowadzony jest w poszczególnych krajach w zależności od liczby wolnych miejsc w danym momencie.",
+        "Jeśli chcesz szerzyć pasję do kodowania w swoim kraju, zapoznaj się z",
+        "zadaniami ambasadorów",
+        "i zajrzyj na listę Ambasadorów Europejskiego Tygodnia Kodowania",
+        "Jeśli w Twoim kraju działają już nasi ambasadorzy, skontaktuj się z nimi bezpośrednio i dowiedz się, co możesz zrobić, aby wesprzeć inicjatywę. Jeżeli w Twoim kraju nie ma jeszcze ambasadorów, skontaktuj się z nami, pisząc na adres info@codeweek.eu.",
     ]
-
 ];
 

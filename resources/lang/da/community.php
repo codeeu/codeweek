@@ -19,10 +19,21 @@ return [
     "cta" => "Hvis du er lærer, kan du på kortet finde Leading teachers i nærheden af dig, som du kan oprette forbindelse til.",
     "edu" => "EU's kodeuges Edu-koordinatorer er kontaktpersoner i undervisningsministerierne eller andre undervisningsmyndigheder og organisationer, der deltager i EU's kodeuge. Edu-koordinatorer styrker initiativets grundlag ved at støtte lærere og skoler i hele landet. Dette omfatter kommunikation med skoler, der allerede deltager i EU's kodeuge, med henblik på at få viden om deres bedste praksis og udveksle erfaringer. Edu-koordinatorer støtter også skoler, der ønsker at deltage i initiativet, ved at stille ressourcer, undervisningsmateriale og muligheder til rådighed for dem.",
     "volunteer" => [
-        "Du behøver ikke at påtage dig en officiel rolle i EU's kodeuge-community for at være en del af bevægelsen. Alle kan arrangere aktiviteter for at undervise og inspirere folk til at kode, lave robotteknologi, rode med hardware, 3D-printe osv. og sætte deres aktivitet på kortet. Men hvis du ønsker at være frivillig og fremme kodning og tror på EU's kodeuges vision og værdier, kan du måske blive en Leading teacher eller ambassadør.",
-        "Hvis du er underviser og lige så passioneret omkring undervisning og læring om kodning, som vi er, kan du læse mere om rollen og fordelene ved Leading teachers her. Derefter kan du ansøge om at blive Leading teacher ved at udfylde dette onlineansøgningsskema. Bemærk venligst, at antallet af Leading teachers pr. land ligger fast, hvilket betyder, at ansøgningen kun er åben for enkelte lande ad gangen.",
-        "Hvis du vil fremme kodning i dit land, kan du læse om ambassadørernes ansvarsområder og kaste et hurtigt blik på listen over ambassadører for EU's kodeuge. Hvis der er ambassadører i dit land, kan du kontakte dem direkte og høre, hvordan du bedst kan støtte initiativet. Hvis der ikke er nogen i dit land, kan du kontakte info@codeweek.eu.",
-
+        "Du behøver ikke at påtage dig en officiel rolle i EU's kodeuge-community for at være en del af bevægelsen. Alle kan arrangere aktiviteter for at undervise og inspirere folk til at kode, lave robotteknologi, rode med hardware, 3D-printe osv. og sætte deres aktivitet",
+        "på kortet.",
+        "Men hvis du ønsker at være frivillig og fremme kodning og tror på EU's kodeuges",
+        "vision",
+        "og",
+        "værdier",
+        "kan du måske blive en Leading teacher eller ambassadør.",
+        "Hvis du er underviser og lige så passioneret omkring undervisning og læring om kodning, som vi er, kan du læse mere om rollen og fordelene ved Leading teachers",
+        "her",
+        "Derefter kan du ansøge om at blive Leading teacher ved at udfylde dette",
+        "onlineansøgningsskema.",
+        "Bemærk venligst, at antallet af Leading teachers pr. land ligger fast, hvilket betyder, at ansøgningen kun er åben for enkelte lande ad gangen.",
+        "Hvis du vil fremme kodning i dit land, kan du læse om",
+        "ambassadørernes ansvarsområder",
+        "og kaste et hurtigt blik på listen over ambassadører for EU's kodeuge",
+        "Hvis der er ambassadører i dit land, kan du kontakte dem direkte og høre, hvordan du bedst kan støtte initiativet. Hvis der ikke er nogen i dit land, kan du kontakte info@codeweek.eu.",
     ]
-
 ];

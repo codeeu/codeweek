@@ -19,12 +19,25 @@ return [
     "cta" => "Bent u leerkracht, dan kunt u op de kaart leidende leerkrachten in uw buurt zoeken.",
     "edu" => "De Edu-coördinatoren van de EU-programmeerweek zijn correspondenten in ministeries van onderwijs en andere onderwijsautoriteiten en -organisaties die deelnemen aan de EU-programmeerweek. De Edu-coördinatoren versterken het initiatief door steun te bieden aan leerkrachten en scholen in het hele land. Ze staan onder meer in contact met scholen die al deelnemen aan de EU-programmeerweek om te leren over hun beste praktijken en ervaringen uit te wisselen. Scholen die aan het initiatief willen deelnemen, worden ook ondersteund door de Edu-coördinatoren die middelen en lesmateriaal ter beschikking stellen en hen op andere mogelijkheden binnen de gemeenschap attenderen.",
     "volunteer" => [
-        "U hoeft geen officiële rol te spelen in de gemeenschap van de EU-programmeerweek om deel te nemen. Iedereen kan activiteiten organiseren, anderen lesgeven en enthousiast maken over bijvoorbeeld programmeren, robotica, hardware of 3D-printen, en hun activiteit op de kaart zetten. Maar als u als vrijwilliger programmeren wilt promoten en als u gelooft in de visie en waarden van de EU-programmeerweek, kunt u een leidende leerkracht of ambassadeur worden.",
-        "Bent u een leerkracht met een grote passie voor programmeren, kijk dan hier voor meer informatie over de rol en de voordelen van leidende leerkrachten. U kunt zich kandidaat stellen om leidende leerkracht te worden door dit onlineformulier in te vullen. Het aantal leidende leerkrachten per land is beperkt. Dat betekent dat aanvragen slechts voor bepaalde specifieke landen tegelijk kunnen worden ingediend.",
-        "Wilt u in uw land programmeren promoten, kijk dan eens naar de verantwoordelijkheden van de ambassadeurs en bekijk de lijst van ambassadeurs van de EU-programmeerweek. Als er in uw land ambassadeurs zijn, neem dan rechtstreeks contact op met hen en ontdek hoe u het initiatief het best kunt steunen. Als er in uw land geen ambassadeur is, kunt u contact opnemen met info@codeweek.eu.",
+        "U hoeft geen officiële rol te spelen in de gemeenschap van de EU-programmeerweek om deel te nemen. Iedereen kan activiteiten organiseren, anderen lesgeven en enthousiast maken over bijvoorbeeld programmeren, robotica, hardware of 3D-printen, en hun activiteit zetten.",
+        "op de kaart.",
+        "Maar als u als vrijwilliger programmeren wilt promoten en als u gelooft in de",
+        "visie",
+        "en",
+        "waarden",
+        "van de EU-programmeerweek, kunt u een leidende leerkracht of ambassadeur worden",
+        "Bent u een leerkracht met een grote passie voor programmeren, kijk dan  voor meer informatie over de rol en de voordelen van leidende leerkrachten",
+        "hier",
+        "U kunt zich kandidaat stellen om leidende leerkracht te worden door  in te vullen. Het aantal leidende leerkrachten per land is beperkt.",
+        "dit onlineformulier",
+        "Dat betekent dat aanvragen slechts voor bepaalde specifieke landen tegelijk kunnen worden ingediend.",
+        "Wilt u in uw land programmeren promoten, kijk dan eens naar de",
+        "verantwoordelijkheden van de ambassadeurs",
+        "en bekijk de lijst van ambassadeurs van de EU-programmeerweek",
+        "Als er in uw land ambassadeurs zijn, neem dan rechtstreeks contact op met hen en ontdek hoe u het initiatief het best kunt steunen. Als er in uw land geen ambassadeur is, kunt u contact opnemen met info@codeweek.eu.",
     ]
-
 ];
+
 
 
 

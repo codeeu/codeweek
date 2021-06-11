@@ -155,31 +155,31 @@
                     <h2 class="subtitle">@lang('community.titles.4')</h2>
                     <div class="community_type">
                         <div class="text">
-                            <p>
-                                @lang('community.volunteer.0')
-                            </p>
-                            <p>
-                                @lang('community.volunteer.1')
-                            </p>
-                            <p>
-                                @lang('community.volunteer.2')
-                            </p>
-
 {{--                            <p>--}}
-{{--                                @lang('community.volunteer.0') <a href="{{route('events_map')}}">@lang('community.volunteer.1')</a> @lang('community.volunteer.2') <a href="{{route('about')}}">@lang('community.volunteer.3')</a>--}}
-{{--                                @lang('community.volunteer.4') <a href="{{route('our-values')}}">@lang('community.volunteer.5')</a> @lang('community.volunteer.6').--}}
+{{--                                @lang('community.volunteer.0')--}}
+{{--                            </p>--}}
+{{--                            <p>--}}
+{{--                                @lang('community.volunteer.1')--}}
+{{--                            </p>--}}
+{{--                            <p>--}}
+{{--                                @lang('community.volunteer.2')--}}
 {{--                            </p>--}}
 
+                            <p>
+                                @lang('community.volunteer.0') <a href="{{route('events_map')}}">@lang('community.volunteer.1')</a> @lang('community.volunteer.2') <a href="{{route('about')}}">@lang('community.volunteer.3')</a>
+                                @lang('community.volunteer.4') <a href="{{route('our-values')}}">@lang('community.volunteer.5')</a> @lang('community.volunteer.6').
+                            </p>
 
-{{--                            <p>--}}
-{{--                                @lang('community.volunteer.7') <a href="{{route('leading-teachers-document')}}">@lang('community.volunteer.8')</a>.--}}
-{{--                                @lang('community.volunteer.9') <a href="https://ec.europa.eu/eusurvey/runner/CallforLeadingTeachers">@lang('community.volunteer.10')</a> @lang('community.volunteer.11')--}}
-{{--                            </p>--}}
 
-{{--                            <p>--}}
-{{--                                @lang('community.volunteer.12') <a href="{{route('beambassador')}}">@lang('community.volunteer.13')</a> @lang('community.volunteer.14') @lang('community.volunteer.15')--}}
+                            <p>
+                                @lang('community.volunteer.7') <a href="{{route('leading-teachers-document')}}">@lang('community.volunteer.8')</a>.
+                                @lang('community.volunteer.9') <a href="https://ec.europa.eu/eusurvey/runner/CallforLeadingTeachers">@lang('community.volunteer.10')</a> @lang('community.volunteer.11')
+                            </p>
 
-{{--                            </p>--}}
+                            <p>
+                                @lang('community.volunteer.12') <a href="{{route('beambassador')}}">@lang('community.volunteer.13')</a> @lang('community.volunteer.14') @lang('community.volunteer.15')
+
+                            </p>
                         </div>
                         <div class="image">
                             <img src="{{asset('/images/volunteers.png')}}">

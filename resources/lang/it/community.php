@@ -19,11 +19,23 @@ return [
     "cta" => "Se sei un insegnante, sulla mappa puoi trovare insegnanti guida da contattare.",
     "edu" => "I coordinatori Edu della settimana europea della programmazione sono corrispondenti presso i ministeri dell'Istruzione o altre autorità e organizzazioni del settore dell'istruzione che partecipano all'iniziativa. I coordinatori Edu consolidano le basi dell'iniziativa sostenendo gli insegnanti e le scuole a livello nazionale. Ciò include la comunicazione con le scuole che partecipano già alla settimana europea della programmazione per conoscere le migliori pratiche e condividere esperienze. I coordinatori Edu offrono inoltre sostegno alle scuole che desiderano partecipare all'iniziativa mettendo a disposizione risorse disponibili, materiale didattico e opportunità all'interno della community.",
     "volunteer" => [
-        "Non sei obbligato a ricoprire un ruolo ufficiale nella community della settimana europea della programmazione per partecipare al movimento. Chiunque può organizzare attività per insegnare e ispirare le persone a programmare, fare robotica, sperimentare con hardware, stampa 3D ecc. e pubblicare la propria attività sulla mappa. Tuttavia, se hai voglia e tempo da dedicare alla promozione della programmazione e credi nella visione e nei valori della settimana europea della programmazione, potresti diventare insegnante guida o ambasciatore.",
-        "Se ti appassiona insegnare e imparare a programmare tanto quanto noi, leggi qui per saperne di più sul ruolo e sui vantaggi degli insegnanti guida. Poi puoi fare domanda per diventarlo anche tu compilando questo modulo di candidatura online. Il numero di insegnanti guida per paese è fisso, il che significa che le candidature sono aperte solo per alcuni paesi specifici alla volta.",
-        "Se vuoi promuovere la programmazione nel tuo paese, scopri quali sono le responsabilità degli ambasciatori e dai un'occhiata all'elenco degli ambasciatori della settimana europea della programmazione. Se nel tuo paese vi sono già ambasciatori, ti invitiamo a metterti direttamente in contatto con loro per scoprire come sostenere al meglio l'iniziativa. Se non c'è nessun ambasciatore nel tuo paese, puoi rivolgerti all'indirizzo info@codeweek.eu.",
+        "Non sei obbligato a ricoprire un ruolo ufficiale nella community della settimana europea della programmazione per partecipare al movimento. Chiunque può organizzare attività per insegnare e ispirare le persone a programmare, fare robotica, sperimentare con hardware, stampa 3D ecc. e pubblicare la propria attività",
+        "sulla mappa.",
+        "Tuttavia, se hai voglia e tempo da dedicare alla promozione della programmazione e credi nella",
+        "visione",
+        "e",
+        "nei valori",
+        "della settimana europea della programmazione, potresti diventare insegnante guida o ambasciatore.",
+        "Se ti appassiona insegnare e imparare a programmare tanto quanto noi, leggi  per saperne di più sul ruolo e sui vantaggi degli insegnanti guida",
+        "qui",
+        "Poi puoi fare domanda per diventarlo anche tu compilando questo",
+        "modulo di candidatura online.",
+        "Il numero di insegnanti guida per paese è fisso, il che significa che le candidature sono aperte solo per alcuni paesi specifici alla volta",
+        "Se vuoi promuovere la programmazione nel tuo paese, scopri quali sono",
+        "le responsabilità degli ambasciatori",
+        "e dai un'occhiata all'elenco degli ambasciatori della settimana europea della programmazione",
+        "Se nel tuo paese vi sono già ambasciatori, ti invitiamo a metterti direttamente in contatto con loro per scoprire come sostenere al meglio l'iniziativa. Se non c'è nessun ambasciatore nel tuo paese, puoi rivolgerti all'indirizzo info@codeweek.eu",
     ]
-
 ];
 
 
