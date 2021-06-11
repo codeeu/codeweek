@@ -28,7 +28,8 @@
                 </ul>
             </li>
 
-            <li><a href="{{route('ambassadors')}}">@lang('menu.ambassadors')</a></li>
+{{--            <li><a href="{{route('ambassadors')}}">@lang('menu.ambassadors')</a></li>--}}
+            <li><a href="{{route('community')}}">@lang('community.titles.0')</a></li>
 
             <li>
                 <a href="javascript:void(null);">@lang('menu.schools')</a>

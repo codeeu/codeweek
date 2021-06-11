@@ -20,6 +20,9 @@ class AmbassadorController extends Controller
 
     public function index(UserFilters $filters)
     {
+
+
+
         if (empty($filters->getFilters())) {
 
             $country_iso = optional(auth()->user())->country ? auth()->user()->country->iso : User::getGeoIPData()->iso_code;
