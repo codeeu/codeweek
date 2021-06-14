@@ -26,9 +26,21 @@ class CommunityController extends Controller
 
         $teachers = User::role('leading teacher')->where('approved',1)->with('city')->get();
 
-       /* foreach ($teachers as $teacher){
-            Log::info($teacher);
-        }*/
+        //dd($teachers->groupBy('city.id'));
+
+
+
+//        foreach ($teachers->groupBy('city_id') as $cityId => $teachersInCity){
+//            Log::info($cityId);
+//
+//            foreach($teachersInCity as $teacherInCity){
+//                Log::info('--- ' . $teacherInCity->fullName);
+//            }
+//        }
+//
+//        dd('ok');
+
+
 
 
 
