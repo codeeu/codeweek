@@ -20,12 +20,13 @@
         <section class="codeweek-content-wrapper">
 
 
-
-            <p style="line-height: 30px;">@lang('community.intro.0').<br/>@lang('community.intro.1')</p><h3>@lang('community.intro.2')</h3>
+            <p style="line-height: 30px;">@lang('community.intro.0').<br/>@lang('community.intro.1')</p>
+            <h3>@lang('community.intro.2')</h3>
 
             <section class="codeweek-searchbox">
                 <form method="get" action="/community" enctype="multipart/form-data">
-                    <select id="id_country" name="country_iso" onchange="this.form.submit()" class="codeweek-input-select">
+                    <select id="id_country" name="country_iso" onchange="this.form.submit()"
+                            class="codeweek-input-select">
                         @foreach ($countries as $country)
                             <option value="{{$country->iso}}" {{app('request')->input('country_iso') == $country->iso ? 'selected' : ''}}>{{$country->translation}}</option>
                         @endforeach
@@ -39,26 +40,26 @@
                             @lang('countries.'.$country->name)
                         </h1>--}}
 
-{{--                        <div class="codeweek-tools">--}}
+                        {{--                        <div class="codeweek-tools">--}}
 
-{{--                            @if($country->facebook)--}}
-{{--                                <a href="{{$country->facebook}}" class="codeweek-blank-button" target="_blank">--}}
-{{--                                    @lang('ambassador.visit_the') <span>@lang('ambassador.local_facebook_page')</span>--}}
-{{--                                </a>--}}
-{{--                            @endif--}}
+                        {{--                            @if($country->facebook)--}}
+                        {{--                                <a href="{{$country->facebook}}" class="codeweek-blank-button" target="_blank">--}}
+                        {{--                                    @lang('ambassador.visit_the') <span>@lang('ambassador.local_facebook_page')</span>--}}
+                        {{--                                </a>--}}
+                        {{--                            @endif--}}
 
-{{--                            @if($country->website)--}}
-{{--                                <a href="{{$country->website}}" class="codeweek-blank-button" target="_blank">--}}
-{{--                                    @lang('ambassador.visit_the') <span>@lang('ambassador.local_website')</span>--}}
-{{--                                </a>--}}
-{{--                            @endif--}}
+                        {{--                            @if($country->website)--}}
+                        {{--                                <a href="{{$country->website}}" class="codeweek-blank-button" target="_blank">--}}
+                        {{--                                    @lang('ambassador.visit_the') <span>@lang('ambassador.local_website')</span>--}}
+                        {{--                                </a>--}}
+                        {{--                            @endif--}}
 
-{{--                        </div>--}}
+                        {{--                        </div>--}}
                     @endif
                 @endforeach
             @endif
 
-            <section class="codeweek-blue-box" >
+            <section class="codeweek-blue-box">
                 <section class="community_type_section">
                     <h2 class="subtitle">@lang('community.titles.1')</h2>
                     <div class="community_type">
@@ -121,9 +122,9 @@
                     <h2 class="subtitle">@lang('community.titles.2')</h2>
                     <div class="community_type">
                         <div class="text">
-<p>
-    @lang('community.leading-teachers')</p>
-                                <h3>@lang('community.cta')</h3>
+                            <p>
+                                @lang('community.leading-teachers')</p>
+                            <h3>@lang('community.cta')</h3>
 
                         </div>
 
@@ -131,7 +132,6 @@
                             <img src="{{asset('/images/leading_teachers.png')}}">
                         </div>
                     </div>
-
 
 
                 </section>
@@ -155,29 +155,36 @@
                     <h2 class="subtitle">@lang('community.titles.4')</h2>
                     <div class="community_type">
                         <div class="text">
-{{--                            <p>--}}
-{{--                                @lang('community.volunteer.0')--}}
-{{--                            </p>--}}
-{{--                            <p>--}}
-{{--                                @lang('community.volunteer.1')--}}
-{{--                            </p>--}}
-{{--                            <p>--}}
-{{--                                @lang('community.volunteer.2')--}}
-{{--                            </p>--}}
+                            {{--                            <p>--}}
+                            {{--                                @lang('community.volunteer.0')--}}
+                            {{--                            </p>--}}
+                            {{--                            <p>--}}
+                            {{--                                @lang('community.volunteer.1')--}}
+                            {{--                            </p>--}}
+                            {{--                            <p>--}}
+                            {{--                                @lang('community.volunteer.2')--}}
+                            {{--                            </p>--}}
 
                             <p>
-                                @lang('community.volunteer.0') <a href="{{route('events_map')}}">@lang('community.volunteer.1')</a> @lang('community.volunteer.2') <a href="{{route('about')}}">@lang('community.volunteer.3')</a>
-                                @lang('community.volunteer.4') <a href="{{route('our-values')}}">@lang('community.volunteer.5')</a> @lang('community.volunteer.6').
+                                @lang('community.volunteer.0') <a
+                                        href="{{route('events_map')}}">@lang('community.volunteer.1')</a> @lang('community.volunteer.2')
+                                <a href="{{route('about')}}">@lang('community.volunteer.3')</a>
+                                @lang('community.volunteer.4') <a
+                                        href="{{route('our-values')}}">@lang('community.volunteer.5')</a> @lang('community.volunteer.6')
+                                .
                             </p>
 
 
                             <p>
-                                @lang('community.volunteer.7') <a href="{{route('leading-teachers-document')}}">@lang('community.volunteer.8')</a>.
-                                @lang('community.volunteer.9') <a href="https://ec.europa.eu/eusurvey/runner/CallforLeadingTeachers">@lang('community.volunteer.10')</a> @lang('community.volunteer.11')
+                                @lang('community.volunteer.7') <a
+                                        href="{{route('leading-teachers-document')}}">@lang('community.volunteer.8')</a>.
+                                @lang('community.volunteer.9') <a
+                                        href="https://ec.europa.eu/eusurvey/runner/CallforLeadingTeachers">@lang('community.volunteer.10')</a> @lang('community.volunteer.11')
                             </p>
 
                             <p>
-                                @lang('community.volunteer.12') <a href="{{route('beambassador')}}">@lang('community.volunteer.13')</a> @lang('community.volunteer.14') @lang('community.volunteer.15')
+                                @lang('community.volunteer.12') <a
+                                        href="{{route('beambassador')}}">@lang('community.volunteer.13')</a> @lang('community.volunteer.14') @lang('community.volunteer.15')
 
                             </p>
                         </div>
@@ -190,18 +197,18 @@
         </section>
 
 
-
-
-
-
     </section>
 
 @endsection
 
 @push('scripts')
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
 
 
     {{--    <link href="{{asset('css/MarkerCluster.css')}}" media="screen" rel="stylesheet"/>--}}
@@ -229,9 +236,19 @@
         }).addTo(mymap);
 
 
-        @foreach($teachers as $teacher)
-        L.marker([{{$teacher->city->latitude}}, {{$teacher->city->longitude}}]).addTo(mymap)
-            .bindPopup("<b>{{$teacher->firstname}} {{$teacher->lastname}}</b><br />{{$teacher->city->city}}").openPopup();
+        @foreach($teachers->groupBy('city_id') as $cityId => $teachersInCity)
+
+            $marker = L.marker([{{$teachersInCity[0]->city->latitude}}, {{$teachersInCity[0]->city->longitude}}]).addTo(mymap)
+
+        $teachersList = "{{$teachersInCity[0]->city->city}}<br/><br/>";
+        @foreach($teachersInCity as $teacherInCity)
+            $teachersList = $teachersList + "&#9679;&nbsp;<b>{{$teacherInCity->firstname}} {{$teacherInCity->lastname}}</b><br/>"
+        @endforeach
+
+
+        $marker.bindPopup($teachersList).openPopup();
+
+
         @endforeach
 
         var popup = L.popup();
@@ -252,14 +269,13 @@
         };
 
 
-            const countryInfo = centroids.find(ctrds => ctrds.iso === '{{$country_iso}}');
-            if (countryInfo){
-                centerInfo = countryInfo;
-            }
+        const countryInfo = centroids.find(ctrds => ctrds.iso === '{{$country_iso}}');
+        if (countryInfo) {
+            centerInfo = countryInfo;
+        }
 
         const latlng = new L.LatLng(centerInfo.latitude, centerInfo.longitude);
         mymap.setView(latlng, centerInfo.zoom, {animation: true});
-
 
 
     </script>
