@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Achievements\Achievement;
 use DB;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Notifications\Notifiable;
@@ -86,13 +87,14 @@ class User extends Authenticatable
     use Notifiable;
     use HasRoles;
     use SoftDeletes;
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'firstname', 'lastname', 'username', 'avatar_path', 'email', 'password', 'bio', 'twitter', 'website', 'country_iso', 'privacy','email_display','receive_emails'
+        'firstname', 'lastname', 'username', 'avatar_path', 'email', 'password', 'bio', 'twitter', 'website', 'country_iso', 'privacy', 'email_display', 'receive_emails'
     ];
 
     /**
@@ -110,19 +112,21 @@ class User extends Authenticatable
 
     public function getName()
     {
-        if(!empty($this->username)) return $this->username;
-        if(!empty($this->firstname) && !empty($this->lastname)) return $this->firstname . " " . $this->lastname;
-        if(!empty($this->firstname) && empty($this->lastname)) return $this->firstname;
+        if (!empty($this->username)) return $this->username;
+        if (!empty($this->firstname) && !empty($this->lastname)) return $this->firstname . " " . $this->lastname;
+        if (!empty($this->firstname) && empty($this->lastname)) return $this->firstname;
         return $this->email;
     }
 
-    public function getAmbassadorAttribute(){
+    public function getAmbassadorAttribute()
+    {
         return $this->isAmbassador();
     }
 
-    public function setAmbassadorAttribute($value){
+    public function setAmbassadorAttribute($value)
+    {
 //        Log::info($value);
-        if ($value){
+        if ($value) {
             $this->assignRole('ambassador');
         } else {
             $this->removeRole('ambassador');
@@ -131,13 +135,20 @@ class User extends Authenticatable
 
     }
 
-    public function getLeadingTeacherAttribute(){
+    public function achievements()
+    {
+        return $this->belongsToMany(Achievement::class, 'user_achievements')->withTimestamps();
+    }
+
+    public function getLeadingTeacherAttribute()
+    {
         return $this->isLeadingTeacher();
     }
 
-    public function setLeadingTeacherAttribute($value){
+    public function setLeadingTeacherAttribute($value)
+    {
 
-        if ($value){
+        if ($value) {
             $this->assignRole('leading teacher');
         } else {
             $this->removeRole('leading teacher');
@@ -179,12 +190,12 @@ class User extends Authenticatable
 
     public function excellences()
     {
-        return $this->hasMany('App\Excellence')->where('type',"Excellence");
+        return $this->hasMany('App\Excellence')->where('type', "Excellence");
     }
 
     public function superOrganisers()
     {
-        return $this->hasMany('App\Excellence')->where('type',"SuperOrganiser");
+        return $this->hasMany('App\Excellence')->where('type', "SuperOrganiser");
     }
 
     public function participations()
@@ -194,7 +205,7 @@ class User extends Authenticatable
 
     public function expertises()
     {
-        return $this->belongsToMany(LeadingTeacherExpertise::class,'leading_teacher_expertise_user','user_id','lte_id');
+        return $this->belongsToMany(LeadingTeacherExpertise::class, 'leading_teacher_expertise_user', 'user_id', 'lte_id');
     }
 
     public function levels()
@@ -217,7 +228,40 @@ class User extends Authenticatable
         return $filters->apply($query);
     }
 
-    public function getClosestCity(){
+    public function experience()
+    {
+        return $this->hasOne(Experience::class, 'user_id', 'id');
+    }
+
+    public function getPointsAttribute()
+    {
+        $experience = Experience::firstOrCreate(
+            ['user_id' => $this->id],
+            ['points' => 0]
+        );
+
+        return $experience->points;
+    }
+
+    public function getExperience()
+    {
+        return Experience::firstOrCreate(
+            ['user_id' => $this->id],
+            ['points' => 0]
+        );
+    }
+
+    public function awardExperience($points)
+    {
+
+        $this->getExperience()->awardExperience($points);
+
+    }
+
+    public function stripExperience($points)
+    {
+
+        $this->getExperience()->stripExperience($points);
 
     }
 
@@ -225,7 +269,7 @@ class User extends Authenticatable
     /**
      * Get the path to the user's avatar.
      *
-     * @param  string $avatar
+     * @param string $avatar
      * @return string
      */
     public function getAvatarPathAttribute($avatar)
@@ -237,7 +281,7 @@ class User extends Authenticatable
     /**
      * Get the path to the user's avatar.
      *
-     * @param  string $avatar
+     * @param string $avatar
      * @return string
      */
     public function getAvatarAttribute()
@@ -276,10 +320,11 @@ class User extends Authenticatable
         return geoip(geoip()->getClientIP());
     }
 
-    public function activities($edition){
+    public function activities($edition)
+    {
 
-        return  DB::table('events')
-            ->where('creator_id','=',$this->id)
+        return DB::table('events')
+            ->where('creator_id', '=', $this->id)
             ->where('status', "=", "APPROVED")
             ->whereNull('deleted_at')
             ->whereYear('end_date', '=', $edition)
