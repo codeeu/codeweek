@@ -5,11 +5,11 @@ namespace App\Achievements\Types;
 class StartYourEngines extends AchievementType
 {
 
-    public $icon = 'test.svg';
+    public $icon = 'star-green.svg';
 
     public function description()
     {
-        return 'nice description';
+        return 'Start Your Engines';
     }
 
     public function qualifier($user)

@@ -26,6 +26,7 @@ class AmbassadorTest extends TestCase
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
+        $this->seed('LeadingTeacherRoleSeeder');
         $this->france = create('App\Country',['iso'=>'FR']);
         $this->belgium = create('App\Country',['iso'=>'BE','facebook'=>'facebook_url']);
 
@@ -54,15 +55,15 @@ class AmbassadorTest extends TestCase
         $ambassador_without_bio = create('App\User', ['bio' => NULL, 'avatar_path' => NULL, 'country_iso' => $this->france->iso])->assignRole('ambassador');
 
         create('App\Event', ['country_iso' => $this->france->iso]);
-        $this->get('/ambassadors?country_iso=FR')->assertDontSee($ambassador_without_bio->lastname);
+        $this->get('/community?country_iso=FR')->assertDontSee($ambassador_without_bio->lastname);
 
         $ambassador_without_bio->bio = "updated bio";
         $ambassador_without_bio->save();
-        $this->get('/ambassadors?country_iso=FR')->assertDontSee($ambassador_without_bio->lastname);
+        $this->get('/community?country_iso=FR')->assertDontSee($ambassador_without_bio->lastname);
 
         $ambassador_without_bio->avatar_path="avatar.jpg";
         $ambassador_without_bio->save();
-        $this->get('/ambassadors?country_iso=FR')->assertSee($ambassador_without_bio->lastname);
+        $this->get('/community?country_iso=FR')->assertSee($ambassador_without_bio->lastname);
 
     }
 
@@ -74,7 +75,7 @@ class AmbassadorTest extends TestCase
 //dd($ambassador_without_bio);
         $italy = create('App\Country', ['iso' => 'foobar']);
         create('App\Event', ['country_iso' => $italy->iso]);
-        $this->get('/ambassadors?country_iso=' . $this->france->iso)->assertDontSee($ambassador_without_bio->lastname);
+        $this->get('/community?country_iso=' . $this->france->iso)->assertDontSee($ambassador_without_bio->lastname);
 
     }
 
@@ -83,7 +84,7 @@ class AmbassadorTest extends TestCase
     {
 
         $ambassador_without_bio = create('App\User', ['avatar_path' => 'something.jpg', 'country_iso' => $this->france->iso])->assignRole('ambassador');
-        $this->get('/ambassadors?country_iso=' . $this->france->iso)->assertSee($ambassador_without_bio->lastname);
+        $this->get('/community?country_iso=' . $this->france->iso)->assertSee($ambassador_without_bio->lastname);
 
     }
 
@@ -93,9 +94,9 @@ class AmbassadorTest extends TestCase
 
         $this->withExceptionHandling();
 
-        $this->get('/ambassadors?country_iso=BE')->assertSee($this->ambassador_be->lastname);
-        $this->get('/ambassadors?country_iso=BE')->assertDontSee($this->ambassador_fr->lastname);
-        $this->get('/ambassadors?country_iso=BE')->assertDontSee($this->admin_be->lastname);
+        $this->get('/community?country_iso=BE')->assertSee($this->ambassador_be->lastname);
+        $this->get('/community?country_iso=BE')->assertDontSee($this->ambassador_fr->lastname);
+        $this->get('/community?country_iso=BE')->assertDontSee($this->admin_be->lastname);
 
 
     }
@@ -108,15 +109,15 @@ class AmbassadorTest extends TestCase
 
         $this->withExceptionHandling();
 
-        $this->get('/ambassadors?country_iso=BE')->assertSee($ambassador->email_display);
+        $this->get('/community?country_iso=BE')->assertSee($ambassador->email_display);
 
-        $this->get('/ambassadors?country_iso=BE')->assertDontSee($ambassador->email);
+        $this->get('/community?country_iso=BE')->assertDontSee($ambassador->email);
 
 
     }
 
     /** @test */
-    public function signedin_users_should_see_their_country_ambassadors()
+    public function signedin_users_should_see_their_community_page()
     {
 
         $this->signIn($this->ambassador_be);
@@ -125,7 +126,7 @@ class AmbassadorTest extends TestCase
             ->never();
 
 
-        $this->get('/ambassadors')->assertRedirect('/ambassadors?country_iso=' . $this->ambassador_be->country->iso);
+        $this->get('/community')->assertRedirect('/community?country_iso=' . $this->ambassador_be->country->iso);
 
     }
 
@@ -135,7 +136,7 @@ class AmbassadorTest extends TestCase
         GeoIP::shouldReceive('getClientIP')
             ->once()
             ->andReturn('text');
-        $this->get('/ambassadors');
+        $this->get('/community');
     }
 
 
@@ -146,7 +147,7 @@ class AmbassadorTest extends TestCase
         create('App\Event', ['country_iso'=>'BE','status'=>'APPROVED']);
 
 
-        $this->get('/ambassadors?country_iso=BE')->assertSee($this->belgium->facebook);
+        $this->get('/community?country_iso=BE')->assertSee($this->belgium->facebook);
 
 
     }
@@ -155,7 +156,7 @@ class AmbassadorTest extends TestCase
     public function info_email_should_be_displayed_in_footer_only_on_ambassadors_page()
     {
 
-        $this->get('/ambassadors?country_iso=BE')->assertSee('mailto:info@codeweek.eu');
+        $this->get('/community?country_iso=BE')->assertSee('mailto:info@codeweek.eu');
 
 
     }
