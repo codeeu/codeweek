@@ -5,10 +5,10 @@
                 @lang('base.still_have_question') @lang('base.drop_us_a_line')
             </div>
             <div class="get-in-touch">
-                @if(Route::current() && Route::current()->getName() == 'ambassadors')
+                @if(Route::current() && Route::current()->getName() == 'community')
                     <a href="mailto:info@codeweek.eu"><div class="button">@lang('base.get_in_touch')</div></a>
                 @else
-                    <a href="/ambassadors"><div class="button">@lang('base.get_in_touch')</div></a>
+                    <a href="/community"><div class="button">@lang('base.get_in_touch')</div></a>
                 @endif
 
                 <div>

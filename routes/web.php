@@ -262,7 +262,7 @@ Route::get('headers', function(Request $request){
     dd($headers);
 });
 
-Route::get('user-profile', 'UserProfileController@index')->name('user-profile');
+Route::get('/user-profile/{user}', 'UserProfileController@index')->name('user-profile');
 
 Auth::routes();
 

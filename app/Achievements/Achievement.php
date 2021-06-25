@@ -29,9 +29,9 @@ class Achievement extends Model
         ][$this->level];
     }
 
-    public function newCollection(array $models = [])
-    {
-        return new Achievements($models);
-    }
+//    public function newCollection(array $models = [])
+//    {
+//        return new Achievements($models);
+//    }
 
 }

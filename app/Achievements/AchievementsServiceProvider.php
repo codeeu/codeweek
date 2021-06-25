@@ -16,7 +16,8 @@ class AchievementsServiceProvider extends ServiceProvider
 {
 
     protected $achievements = [
-        Types\StartYourEngines::class
+        Types\StartYourEngines::class,
+        Types\SuperExpert::class,
     ];
 
     public function boot()
