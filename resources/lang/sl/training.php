@@ -5,7 +5,7 @@ return [
     'learning_bits' => 'Učni drobci za teden programiranja',
     'title' => 'Brezplačna gradiva za vajo in spletni tečaji',
     'text' => '<p>Tu boste našli brezplačno gradivo za usposabljanje in vire, ki vam bodo v pomoč, da boste lažje začeli in načrtovali naslednjo inovativno učno uro.</p>
-<h2 class="subtitle">1. 1.	Učni drobci</h2>
+<h2 class="subtitle">1.	Učni drobci</h2>
                     <p>Predhodno znanje o programiranju ni potrebno, vsak modul pa traja le približno 15 minut. V modulih boste spoznali ključne pojme, povezane s programiranjem in računalniškim razmišljanjem. Poleg tega boste v našli tudi praktične nasvete, kako te pojme vključiti v svoj razred.</p>',
     'text_2' => '<p>Zdaj ko ste zaključili enega ali več učnih drobcev za teden programiranja, upamo, da ste dovolj samozavestni, da nekaj digitalne ustvarjalnosti prenesete v razred in dodate svojo dejavnost na <a href="/events">zemljevid tedna programiranja</a>!</p>
 
@@ -250,7 +250,20 @@ V tem videoposnetku vam bo ekipa tedna programiranja pokazala nekaj praktičnih,
             ]
         ],
 
-
+        "15" => [
+            "title" => "Mining Media Literacy",
+            "author" => "by Marijana Smolčec, Tea Horvatić in Sanja Božinović",
+            "text" => [
+                "Izobraževanje učencev na področju medijev še nikoli ni bilo tako pomembno, kot je danes. Učenci vseh starosti morajo razviti ustrezne sposobnosti, znanje in odnos, s katerimi se bodo znašli v današnjem svetu, ki je prežet z mediji.  Izobraženost o medijih in sposobnost soočanja z njimi jim bo pomagala uporabljati zanesljive spletne vsebine, ter prepoznavati varljive vire informacij.  Razumeli bodo, kako preverjati informacije, ki jih najdejo na spletu, ter jih kritično interpretirati. Postali bodo bolj samozavestni glede pravilne uporabe ustvarjalnih del, ter pri uporabi svojega znanja, kadar ustvarjajo lastne vsebine.",
+                "To Učno poglavje vam bo pomagalo pri uvajanju različnih strategij in tehnik za usposabljanje učencev na področju izobraženosti o medijih. V Marijanini dejavnosti se učenci naučijo, kako varno in odgovorno uporabiti spletne vsebine. Uvedemo jih v različne vrste licenc, kjer razvijejo preproste aplikacije za prikaz, kako ustrezno deliti svoje ustvarjalno delo.  Pri Tejini dejavnosti se učenci poučujejo o klikvabah. Z udeleževanjem pri nalogah učenci raziščejo strategije za prepoznavanje in odkrivanje klikvab, ter se naučijo, kako se jih izogniti. Sanja učencem dovoljuje raziskovanje, kritično analizo in oceno spletnih vsebin, relevantnost, točnost, izvor in namen. Poučili se bodo, kako poiskati zanesljive vire na spletu in, kako prepoznati lažne spletne informacije.",
+                "V spodaj navedenih učnih načrtih boste našli spodbudne in zanimive dejavnosti za izboljšanje sposobnosti učencev za interpretacijo medijev:",
+            ],
+            "activities" => [
+                "1" => "Ali so vsebine na spletu prosto dostopne in brezplačne?",
+                "2" => "Klikniti ali ne klikniti",
+                "3" => "Preverjanje dejstev",
+            ]
+        ],
 
 
     ],

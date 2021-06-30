@@ -253,6 +253,20 @@ Në këtë video, ekipi i Code Week do t’ju tregojë disa aktivitete praktike,
                 '3' => 'Jeta në epokën e "makinerive inteligjente": Sfidat dhe mundësitë, për shkollën fillore të ciklit të lartë'
             ]
         ],
+        "15" => [
+            "title" => "Analizimi i njohurive për mediat",
+            "author" => "nga Marijana Smolčec, Tea Horvatić dhe Sanja Božinović",
+            "text" => [
+                "Edukimi për njohuritë për mediat nuk ka qenë kurrë kaq i rëndësishëm për studentët e ditëve të sotme. Studentët e të gjitha moshave duhet të fitojnë aftësi, njohuri dhe qëndrime përkatëse që të jenë në gjendje të lundrojnë në botën e pasur me media. Aftësitë në njohuritë për mediat do t'i ndihmojnë të përdorin materiale të besueshme online dhe të dallojnë burimet e informacioneve të rreme. Ata do të kuptojnë si të kontrollojnë faktet e informacioneve që gjejnë online dhe si ta interpretojnë në mënyrë kritike. Ata do të rritin ndërgjegjësimin për përdorimin e duhur të punës kreative dhe do të aplikojnë çka kanë mësuar kur krijojnë materialet e tyre kreative.",
+                "Ky bit mësimor do t'ju japë mundësi të implementoni strategji dhe teknika të ndryshme për t'u dhënë mundësi studentëve të bëhen të aftë në njohjen e medias. Në aktivitetin e Marjanës, studentët mësojnë si të përdorin materialet në internet në mënyrë të sigurt dhe të përgjegjshme. Atyre u tregohen lloje të ndryshme të licencave, dhe më pas zhvillojnë një aplikacion të ngjashëm për ta demonstruar si ta ndajnë si duhet punën e tyre kreative. Në aktivitetin e Teas, studentët nisin kërkimin për të mësuar rreth karremave të klikimit. Me anë të detyrave angazhuese, studentët eksplorojnë strategji për të identifikuar dhe zbuluar karremat e klikimit dhe për të mësuar si t'i shmangin ato. Sanja u jep mundësi studentëve të eksplorojnë dhe të analizojnë në mënyrë kritike, të vlerësojnë materialet në internet, si dhe të kontrollojnë përkatësinë, saktësinë, origjinën dhe qëllimin e tyre. Ata mësojnë si të gjejnë burime të besueshme online dhe si të dallojnë informacionet e rreme online.",
+                "Në planet mësimore të mëposhtme, do të gjeni aktivitete frymëzuese dhe angazhuese për të rritur aftësitë e studentëve në njohjen e medias:",
+            ],
+            "activities" => [
+                "1" => "A është falas nëse gjendet në internet?",
+                "2" => "Të klikosh apo të mos klikosh",
+                "3" => "Kontrollimi i fakteve",
+            ]
+        ],
 
 
     ],
