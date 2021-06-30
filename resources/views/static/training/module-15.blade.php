@@ -19,7 +19,7 @@
 
             </section>
 
-            @include('static.youtube', ['video_id' => 'jOFSzguUoJU'])
+            @include('static.youtube', ['video_id' => 'sZkXQ6-Nemk'])
 
             <section class="codeweek-content-wrapper-inside">
 

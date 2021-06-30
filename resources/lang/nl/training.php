@@ -247,9 +247,23 @@ Met Python kunnen leerlingen quizzen maken over historische gebeurtenissen, wisk
                 'title' => 'In de onderstaande lesplannen leren leerlingen op een leuke en boeiende manier over intelligente machines.',
                 '1' => 'AI en zijn neurale netwerken, voor de basisschool',
                 '2' => 'Mijn Covid-19-chatbot, voor de onderbouw van het middelbare onderwijs',
-                '3' => 'Leven in het tijdperk van "slimme machines””: Uitdagingen en kansen voor de bovenbouw van het middelbaar onderwijs',
+                '3' => 'Leven in het tijdperk van "slimme machines": Uitdagingen en kansen voor de bovenbouw van het middelbaar onderwijs',
             ]
         ],
+        "15" => [
+            "title" => "Mediageletterdheid ontwikkelen",
+            "author" => "door Marijana Smolčec, Tea Horvatić en Sanja Božinović",
+            "text" => [
+                "Onderwijs in mediageletterdheid is nog nooit zo belangrijk geweest als nu voor studenten. Studenten en leerlingen van alle leeftijden moeten relevante vaardigheden, kennis en houdingen leren om te kunnen navigeren in deze mediarijke wereld. Mediavaardigheden helpen hen betrouwbare online informatie te gebruiken en misleidende informatiebronnen te herkennen. Ze leren te begrijpen hoe informatie die zij online vinden te controleren en kritisch te interpreteren. Het verhoogt hun bewustzijn van het juist gebruik van creatief werk en zij kunnen het geleerde toepassen bij het maken van hun eigen creatieve inhoud.",
+                "Deze leerstof stelt u in staat verschillende strategieën en technieken te implementeren om uw studenten mediageletterd te maken. In de activiteit van Marijana leren studenten hoe zij informatie van het internet veilig en verantwoord kunnen gebruiken. Verschillende soorten licenties worden aan hen geïntroduceerd en ze ontwikkelen een eenvoudige app om te laten zien hoe creatief werk op de juiste manier gedeeld wordt. In de activiteit van Tea gaan de studenten op missie om over clickbaits te leren. Door middel van leuke en interessante taken verkennen studenten strategieën om clickbaits te identificeren en bloot te leggen en leren hoe ze te vermijden. Sanja stelt haar studenten in staat internetinformatie, en de relevantie, nauwkeurigheid, oorsprong en het doel ervan, te verkennen en kritisch te analyseren en te beoordelen. Ze leren hoe ze betrouwbare online bronnen kunnen vinden en hoe ze nepinformatie online kunnen herkennen.",
+                "In de onderstaande lesplannen vindt u inspirerende en boeiende activiteiten om de mediageletterdheid van studenten te verbeteren."
+            ],
+            "activities" => [
+                "1" => "Is het gratis als het op internet staat?",
+                "2" => "Klikken of niet klikken",
+                "3" => "Feiten controleren"
+    ]
+],
 
 
     ],
@@ -257,10 +271,10 @@ Met Python kunnen leerlingen quizzen maken over historische gebeurtenissen, wisk
     'ready_to_share' => 'Ben je er klaar voor om wat je hebt geleerd te delen met je leerlingen?',
     'choose_lessons' => 'Kies een van de onderstaande lesplannen en organiseer een activiteit met je leerlingen.',
     'footer' => [
-        'title' => 'Vergeet niet je activiteit toe te voegen aan de kaart van de programmeerweek!',
-        'text' => '<p>Je kunt gemakkelijk een les in je klas, een opendeurdag of een evenement op je school organiseren. Zoek gewoon een datum en registreer je activiteit op de <a href="/events">kaart van de EU-programmeerweek</a>. Iedereen die een activiteit organiseert, krijgt een deelnamecertificaat voor zijn of haar inzet.</p>
+    'title' => 'Vergeet niet je activiteit toe te voegen aan de kaart van de programmeerweek!',
+    'text' => '<p>Je kunt gemakkelijk een les in je klas, een opendeurdag of een evenement op je school organiseren. Zoek gewoon een datum en registreer je activiteit op de <a href="/events">kaart van de EU-programmeerweek</a>. Iedereen die een activiteit organiseert, krijgt een deelnamecertificaat voor zijn of haar inzet.</p>
 
 <p>Wil je in contact komen met een internationale groep enthousiaste leraren? Word dan lid van de <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Facebook-groep van de EU-programmeerweek voor leraren</a>! Als je nog een stap verder wilt gaan en wilt samenwerken met andere scholen in je land of andere landen, doe dan mee met de <a href="/codeweek4all">Code Week 4 All-uitdaging</a>.</p>'
-    ]
+]
 
 ];

@@ -88,60 +88,60 @@ return [
             ]
         ],
         '6' => [
-            'title'=>'App Inventor i razvoj aplikacija',
-            'author'=>'autorica: Rosanna Kurrer',
-            'text'=>'<p>Pogledajte ovaj videozapis u kojemu Rosanna Kurrer (osnivačica organizacije CyberWayFinder) objašnjava što je App Inventor, iznosi prednosti uporabe razvoja aplikacija u nastavi i daje neke praktične primjere toga kako učitelji mogu integrirati App Inventor u nastavu, mijenjajući tako pasivne učenike u entuzijastične tvorce igara.</p>
+            'title' => 'App Inventor i razvoj aplikacija',
+            'author' => 'autorica: Rosanna Kurrer',
+            'text' => '<p>Pogledajte ovaj videozapis u kojemu Rosanna Kurrer (osnivačica organizacije CyberWayFinder) objašnjava što je App Inventor, iznosi prednosti uporabe razvoja aplikacija u nastavi i daje neke praktične primjere toga kako učitelji mogu integrirati App Inventor u nastavu, mijenjajući tako pasivne učenike u entuzijastične tvorce igara.</p>
 <p>Svi mi upotrebljavamo aplikacije jer nam omogućuju jednostavan i brz način usklađivanja aktivnosti. One se isto tako sve više upotrebljavaju u obrazovanju jer korisnicima omogućuju personalizirano učenje i stjecanje informacija. Zašto stoga ne biste osposobili svoje učenike da izrade obrazovnu aplikaciju za druge?</p>',
-            'activities'=>[
-                '1'=>'Aktivnost 1. – naslov, za osnovnu školu',
-                '2'=>'Aktivnost 2. – naslov, za niže razrede srednje škole',
-                '3'=>'Aktivnost 3. – naslov, za više razrede srednje škole'
+            'activities' => [
+                '1' => 'Aktivnost 1. – naslov, za osnovnu školu',
+                '2' => 'Aktivnost 2. – naslov, za niže razrede srednje škole',
+                '3' => 'Aktivnost 3. – naslov, za više razrede srednje škole'
             ]
         ],
         '7' => [
-            'title'=>'Učenje kroz igru i stvaranje',
-            'author'=>'autor: Diogo da Silva',
-            'text'=>'<p>Poslove i radna mjesta zahvatile su promjene, a obrazovanje prati taj trend. U pripremi učenika za karijeru u 21. stoljeću nove vještine kao što su učenje kroz igru, stvaranje i hakiranje postaju ključne jer smanjuju jaz između škole i stvarnosti. Stvaranjem suradničkog okruženja u učionici u kojemu je rad usmjeren na rješavanje problema učenicima se omogućuje da sudjeluju i napreduju. Tim se aktivnostima promiče rasprava, čime se omogućuje da učionica postane komunikacijsko čvorište u kojemu je važan svaki doprinos.</p> 
+            'title' => 'Učenje kroz igru i stvaranje',
+            'author' => 'autor: Diogo da Silva',
+            'text' => '<p>Poslove i radna mjesta zahvatile su promjene, a obrazovanje prati taj trend. U pripremi učenika za karijeru u 21. stoljeću nove vještine kao što su učenje kroz igru, stvaranje i hakiranje postaju ključne jer smanjuju jaz između škole i stvarnosti. Stvaranjem suradničkog okruženja u učionici u kojemu je rad usmjeren na rješavanje problema učenicima se omogućuje da sudjeluju i napreduju. Tim se aktivnostima promiče rasprava, čime se omogućuje da učionica postane komunikacijsko čvorište u kojemu je važan svaki doprinos.</p> 
 <p>Pogledajte videozapis u nastavku u kojemu vas portugalski učitelj predmeta u STEAM području Diogo da Silva, pripadnik škole Escola Global, postupno vodi kroz razvoj nastavnog plana kojim ćete svojim učenicima omogućiti da učenjem kroz igru, stvaranjem i hakiranjem pronađu put prema rješenju.</p>',
-            'activities'=>[
-                '1'=>'Aktivnost 1. – naslov, za osnovnu školu',
-                '2'=>'Aktivnost 2. – naslov, za niže razrede srednje škole',
-                '3'=>'Aktivnost 3. – naslov, za više razrede srednje škole'
+            'activities' => [
+                '1' => 'Aktivnost 1. – naslov, za osnovnu školu',
+                '2' => 'Aktivnost 2. – naslov, za niže razrede srednje škole',
+                '3' => 'Aktivnost 3. – naslov, za više razrede srednje škole'
             ]
         ],
         '8' => [
-            'title'=>'Programiranje za sve predmete',
-            'author'=>'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
-            'text'=>'<p>Kada pomislite na programiranje u nastavi, prva će vam asocijacija biti računala, tehnologija, matematika ili znanost. Međutim, s obzirom na to da učenici imaju mnogo interesa i predmeta, zašto to ne biste iskoristili i uveli programiranje u cijeli nastavni plan i program?</p> 
+            'title' => 'Programiranje za sve predmete',
+            'author' => 'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text' => '<p>Kada pomislite na programiranje u nastavi, prva će vam asocijacija biti računala, tehnologija, matematika ili znanost. Međutim, s obzirom na to da učenici imaju mnogo interesa i predmeta, zašto to ne biste iskoristili i uveli programiranje u cijeli nastavni plan i program?</p> 
 <p>Uvođenje programiranja u nastavu višestruko je korisno jer učenicima pomaže da razviju kritičko razmišljanje i vještine rješavanja problema te da postanu aktivni korisnici i upravljaju vlastitim procesom učenja, što je u školama ključno. Međutim, najvažnije je to što će vaši učenici istodobno učiti i zabavljati se!</p>
 <p>Jezici, glazba ili STEM samo su neki od predmeta u koje učitelji mogu uvesti programiranje za buduće znanstvenike, glazbenike, umjetnike i sve ostale! Svaki učitelj može uvesti u nastavu programiranje i računalno razmišljanje. Uporaba integriranog učenja sadržaja i jezika (engl. Content and Language Integrated Learning – CLIL) za objašnjavanje algoritama iz svakodnevnog života, izrada upravljačke palice (joystick) od filca kao načina učenja o znanosti ili uporaba obrazovnih robota za poticanje motiviranosti na satu matematike neki su od primjera aktivnosti koje možete primijeniti u učionici.</p> 
 <p>Pogledajte videozapis u nastavku kao primjer kako učitelji glazbe, znanosti ili jezika mogu na jednostavan način uvesti u nastavu programiranje i računalno razmišljanje, i to bez prethodnog iskustva.</p>',
-            'activities'=>[
-                '1'=>'Aktivnost 1. Robotika i uključivanje osnovnoškolskih učenika u STEM',
-                '2'=>'Aktivnost 2. Glazba je programiranje',
-                '3'=>'Aktivnost 3. Učenje kroz igru i programiranje s pomoću alata Makey Makey',
-                '4'=>'Aktivnost 4. Algoritam iz svakodnevnog života za uporabu CLIL-a u nastavi'
+            'activities' => [
+                '1' => 'Aktivnost 1. Robotika i uključivanje osnovnoškolskih učenika u STEM',
+                '2' => 'Aktivnost 2. Glazba je programiranje',
+                '3' => 'Aktivnost 3. Učenje kroz igru i programiranje s pomoću alata Makey Makey',
+                '4' => 'Aktivnost 4. Algoritam iz svakodnevnog života za uporabu CLIL-a u nastavi'
             ]
         ],
         '9' => [
-            'title'=>'Izrada automata s micro:bitom',
-            'author'=>'napisala Pauline Maas',
-            'text'=>'<p>
+            'title' => 'Izrada automata s micro:bitom',
+            'author' => 'napisala Pauline Maas',
+            'text' => '<p>
                    Izrada jednostavnih kreacija s vašim učenicima, od robota do glazbenih instrumenata s pomoću micro:bita, džepnog računala koje se lako programira, može biti zabavna i jednostavna , a istodobno ih i učite kodiranju. Jednostavan je i lak za upotrebu, čak i za najmlađe programere, dok je istovremeno dovoljno moćan i za naprednije učenike. Možete ga uključiti u različita predavanja, od povijesti do matematike, pa čak i znanosti. Mogućnosti su neograničene. Micro:bit je uključiv i jednostavan način da učenike poučite kodiranju, dok istodobno usvajaju vještine poput računalnog razmišljanja, rješavanja problema i kreativnosti.
                    </p>
                    <p>
 U ovom videozapisu Pauline Mass, profesorica računalnih znanosti na Koninklijke Visio, predstavit će micro:bit i dati nekoliko praktičnih primjera kako ga učitelji mogu integrirati u učionicu, transformirajući pasivne učenike u entuzijastične kreatore.                   
                 </p>',
-            'activities'=>[
-                '1'=>'Morseov kôd s micro:bitom za osnovnu školu',
-                '2'=>'Soba za bijeg s micro:bitom za niže razrede srednje škole',
-                '3'=>'Izrada automata za više razrede srednje škole',
+            'activities' => [
+                '1' => 'Morseov kôd s micro:bitom za osnovnu školu',
+                '2' => 'Soba za bijeg s micro:bitom za niže razrede srednje škole',
+                '3' => 'Izrada automata za više razrede srednje škole',
             ]
         ],
         '10' => [
-            'title'=>'Kreativno kodiranje s pomoću programskog jezika Python',
-            'author'=>'napisala Ivana Vezjak',
-            'text'=>'<p>
+            'title' => 'Kreativno kodiranje s pomoću programskog jezika Python',
+            'author' => 'napisala Ivana Vezjak',
+            'text' => '<p>
 Prebacivanje s vizualnog programiranja na programiranje koje se temelji na tekstu prirodan je tijek u kodiranju. Vizualno programiranje često je odličan izbor za početnike, ali nakon nekog vremena učenici mogu težiti novim izazovima. Programiranje koje se temelji na tekstu sljedeći je korak za sve koji žele zaći dublje u programiranje i računalno razmišljanje. 
                    </p>
                    <p>                   
@@ -150,57 +150,57 @@ U ovom videozapisu Ivana Vezjak uvodi u osnovnu sintaksu programskog jezika Pyth
 <p> 
 S pomoću programskog jezika Python učenici mogu stvarati kvizove o povijesnim događanjima, rješavati matematičke probleme i raditi fizičke simulacije, stvarati igre, internetske stranice, analizirati podatke za znanstvene projekte i još mnogo toga. Python ima bogatu i opširnu standardnu knjižnicu, veliku zajednicu i velik broj tutorijala i projekata dostupnih na internetu koji se mogu upotrebljavati za potrebe poučavanja, učenja i vježbanja. Kodiranjem u programskom jeziku Python, analiziranjem programa i rješavanjem problema učenici razvijaju svoju kreativnost i uče kako biti dosljedni, uporni i strpljivi. Uče o analitičkom razmišljanju i vještinama rješavanja problema raščlanjivanjem složenih problema u manje komponente. Te kompetencije pomoći će im da se nose s problemima u svim drugim domenama njihovih života.
                 </p>',
-            'activities'=>[
-                '1'=>'Moj prvi kviz za osnovnu školu',
-                '2'=>'Igra vješala za niže razrede srednje škole',
-                '3'=>'Pogodi zastavu! za više razrede srednje škole',
+            'activities' => [
+                '1' => 'Moj prvi kviz za osnovnu školu',
+                '2' => 'Igra vješala za niže razrede srednje škole',
+                '3' => 'Pogodi zastavu! za više razrede srednje škole',
             ],
-            'links'=>[
+            'links' => [
                 'title' => 'Drugi povezani izvori',
                 '1' => [
-                    "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Standardna knjižnica programskog jezika Python",
-                    "description"=>"Kolekcija prethodno izrađenih kodova i modula (npr. modul turtle, matematički modul itd.)",
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "Standardna knjižnica programskog jezika Python",
+                    "description" => "Kolekcija prethodno izrađenih kodova i modula (npr. modul turtle, matematički modul itd.)",
                 ],
                 '2' => [
-                    "url"=>"https://codecombat.com/",
-                    "title"=>"CodeCombat",
-                    "description"=>"Edukativna videoigra za učenje koncepata programiranja.",
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Edukativna videoigra za učenje koncepata programiranja.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/hr-HR/codeclub",
-                    "title"=>"Projekti CodeClub",
-                    "description"=>"Detaljni projekti u području programiranja za djecu, od početnika do naprednih korisnika.",
+                    "url" => "https://projects.raspberrypi.org/hr-HR/codeclub",
+                    "title" => "Projekti CodeClub",
+                    "description" => "Detaljni projekti u području programiranja za djecu, od početnika do naprednih korisnika.",
                 ],
                 '4' => [
-                    "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Osmislite vlastite računalne igre s pomoću programskog jezika Python",
-                    "description"=>"Knjiga u kojoj možete naučiti kako programirati vlastitu računalnu igru s pomoću programskog jezika Python.",
+                    "url" => "https://inventwithpython.com/invent4thed/",
+                    "title" => "Osmislite vlastite računalne igre s pomoću programskog jezika Python",
+                    "description" => "Knjiga u kojoj možete naučiti kako programirati vlastitu računalnu igru s pomoću programskog jezika Python.",
                 ],
                 '5' => [
-                    "url"=>"https://www.codewars.com/",
-                    "title"=>"CodeWars",
-                    "description"=>"Edukativna zajednica u kojoj učenici i učitelji mogu prolaziti obuke kroz niz izazova.",
+                    "url" => "https://www.codewars.com/",
+                    "title" => "CodeWars",
+                    "description" => "Edukativna zajednica u kojoj učenici i učitelji mogu prolaziti obuke kroz niz izazova.",
                 ],
                 '6' => [
-                    "url"=>"https://hourofpython.com/",
-                    "title"=>"Hour of Python",
-                    "description"=>"Kolekcija uvodnih predavanja o programskom jeziku Python (i oni koji se temelje na tekstu i blokovi) s pomoću interaktivne stranice Trinkets.",
+                    "url" => "https://hourofpython.com/",
+                    "title" => "Hour of Python",
+                    "description" => "Kolekcija uvodnih predavanja o programskom jeziku Python (i oni koji se temelje na tekstu i blokovi) s pomoću interaktivne stranice Trinkets.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'Kodiranje za uključivanje',
-            'author'=>'napisao: tim Tjedna programiranja',
-            'text'=>'<p>
+            'title' => 'Kodiranje za uključivanje',
+            'author' => 'napisao: tim Tjedna programiranja',
+            'text' => '<p>
                    Uvođenje kodiranja u učionicu može biti izazovno, posebice ako u svojem razredu imate i učenike s određenim teškoćama. No važno je zapamtiti da svatko, neovisno o svojim sposobnostima, može naučiti kodirati. Djeca s posebnim potrebama mogu imati velike koristi od učenja aspekata kodiranja jer kodiranje učenike uči važnim životnim vještinama kao što su rješavanje problema, organizacija i samostalnost. Također, kroz suradnju i timski rad kodiranjem se unaprjeđuju interpersonalne i socijalne vještine, odnosno vještine s kojima se bore mnogobrojna djeca s teškoćama. Najvažnije od svega, učenici se zabavljaju dok uče u društvu svojih kolega.
                    </p><p>
 U ovom videozapisu tim Tjedna kodiranja pokazat će vam nekoliko praktičnih, jednostavnih i zabavnih aktivnosti kodiranja koje nastavnici mogu lako organizirati u učionici, a koje su posebno prilagođene učenicima s oštećenjima vida, Downovim sindromom te učenicima s poremećajima iz spektra autizma.                   
                 </p>',
-            'activities'=>[
-                '1'=>'Kodiranje jajima',
-                '2'=>'Jedan jako pametan miš ',
-                '3'=>'Zvijezda koja rađa zvijezde ',
+            'activities' => [
+                '1' => 'Kodiranje jajima',
+                '2' => 'Jedan jako pametan miš ',
+                '3' => 'Zvijezda koja rađa zvijezde ',
             ]
         ],
 
@@ -247,6 +247,21 @@ U ovom videozapisu tim Tjedna kodiranja pokazat će vam nekoliko praktičnih, je
                 '1' => 'Umjetna inteligencija i njezine neuralne mreže, za učenike osnovnih škola',
                 '2' => 'Moj Covid-19 bot za razgovor, za učenike nižih razreda srednjih škola',
                 '3' => 'Život u doba „pametnih strojeva”: Izazovi i mogućnosti, za učenike viših razreda srednjih škola',
+            ]
+        ],
+
+        "15" => [
+            "title" => "Rudarska medijska pismenost",
+            "author" => "autorice Marijana Smolčec, Tea Horvatić i Sanja Božinović",
+            "text" => [
+                "Obrazovanje za medijsku pismenost nikada nije bilo važnije za današnje učenike. Učenici svih dobnih grupa trebaju steći relevantne vještine, znanja i stavove kako bi se mogli snalaziti u našem svijetu bogatom medijima. Vještine medijske pismenosti pomoći će im da koriste vjerodostojne mrežne sadržaje i prepoznaju zavaravajuće izvore informacija. Razumjet će kako provjeriti činjenice informacije koje pronađu na mreži i kako ih kritički protumačiti. Oni će podići svoju svijest o pravilnom korištenju kreativnog rada i primijenit će svoje učenje prilikom kreiranja vlastitih kreativnih sadržaja",
+                "Ovaj dio programa za učenje omogućit će vam primjenu različitih strategija i tehnika kako biste osnažili svoje učenike da postanu medijski pismeni. U Marijaninoj aktivnosti učenici uče kako sigurno i odgovorno koristiti web sadržaje. Upoznali su se s različitim vrstama licenci i razvili su jednostavnu aplikaciju koja pokazuje kako pravilno dijeliti kreativne radove. U Teinoj aktivnosti učenici započinju zadatak za učenje o mamcima za klik. Putem zanimljivih zadataka učenici istražuju strategije za prepoznavanje i otkrivanje mamaca za klik i uče kako ih izbjeći. Sanja omogućuje učenicima da istražuju i kritički analiziraju i procjenjuju web sadržaj, njegovu relevantnost, točnost, podrijetlo i svrhu. Uče kako pronaći pouzdane izvore na internetu i kako prepoznati lažne podatke na internetu.",
+                "U planovima lekcija ispod pronaći ćete nadahnjujuće i zanimljive aktivnosti za poboljšanje vještina medijske pismenosti učenika:",
+            ],
+            "activities" => [
+                "1" => "Je li besplatno ako je na internetu?",
+                "2" => "Kliknuti ili ne kliknuti",
+                "3" => "Provjera činjenica",
             ]
         ],
 

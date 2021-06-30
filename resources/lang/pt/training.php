@@ -254,6 +254,21 @@ Neste vídeo, a equipa da Semana da Programação vai mostrar-lhe algumas ativid
             ]
         ],
 
+        "15" => [
+            "title" => "Mineração de Literacia dos Meios de Comunicação Social",
+            "author" => "por Marijana Smolčec, Tea Horvatić e Sanja Božinović",
+            "text" => [
+                "A educação em literacia multimédia nunca foi tão importante para os alunos da atualidade Os alunos de todas as faixas etárias precisam de adquirir competências, conhecimentos e atitudes relevantes para poderem navegar no nosso mundo rico em meios de comunicação social. As competências em literacia dos meios de comunicação social ajudar-los-ão a utilizar conteúdos online credíveis e a reconhecer fontes de informação enganosas. Compreenderão como verificar a informação que encontram online e interpretá-la de forma crítica. Eles aumentarão a sua consciencialização sobre o uso adequado do trabalho criativo e aplicarão a sua aprendizagem na criação dos seus próprios conteúdos criativos",
+                "Este Learning Bit permitir-lhe-á implementar várias estratégias e técnicas para capacitar os seus alunos a tornarem-se alfabetizados sobre os meios de comunicação social. Na atividade da Marijana, os alunos aprendem como usar o conteúdo Web de forma segura e responsável. São introduzidos a diferentes tipos de licenças e desenvolvem uma aplicação simples para demonstrar como partilhar adequadamente o trabalho criativo. Na atividade da Tea, os alunos embarcam numa aventura para aprender os os clickbaits. Através de tarefas interessantes, os alunos exploram estratégias para identificar e descobrir clickbaits e aprender como evitá-los. Sanja permite aos alunos explorar, analisar e avaliar criticamente o conteúdo da Web, a sua relevância, exatidão, origem e finalidade. Aprendem a encontrar fontes fiáveis online e a reconhecer informações falsas online.",
+                "Nos planos de aula abaixo, encontrará atividades inspiradoras e interessantes para melhorar as capacidades de alfabetização dos estudantes no domínio dos meios de comunicação social:",
+            ],
+            "activities" => [
+                "1" => "É gratuito se estiver na Internet?",
+                "2" => "Clicar ou não clicar",
+                "3" => "Verificação de factos",
+            ]
+        ],
+
 
     ],
     'download_video_script' => 'Descarregue o guião do vídeo',

@@ -88,60 +88,60 @@ return [
             ]
         ],
         '6' => [
-            'title'=>'App Inventor ja sovellusten kehittäminen',
-            'author'=>'Tekijä: Rosanna Kurrer',
-            'text'=>'<p>Tutustu Rosanna Kurrerin (CyberWayFinder-ohjelman perustaja) videoon, jolla hän kertoo, mikä on App Inventor, ja selittää, mitä hyötyä on sovellusten kehittämisestä koulussa. Lisäksi hän antaa joitakin käytännön esimerkkejä siitä, miten opettajat voivat hyödyntää App Inventor  sovellusta opetuksessa ja miten passiivisista oppilaista saadaan innokkaita pelintekijöitä.</p>
+            'title' => 'App Inventor ja sovellusten kehittäminen',
+            'author' => 'Tekijä: Rosanna Kurrer',
+            'text' => '<p>Tutustu Rosanna Kurrerin (CyberWayFinder-ohjelman perustaja) videoon, jolla hän kertoo, mikä on App Inventor, ja selittää, mitä hyötyä on sovellusten kehittämisestä koulussa. Lisäksi hän antaa joitakin käytännön esimerkkejä siitä, miten opettajat voivat hyödyntää App Inventor  sovellusta opetuksessa ja miten passiivisista oppilaista saadaan innokkaita pelintekijöitä.</p>
 <p>Me kaikki käytämme sovelluksia: ne ovat kätevä ja helppo tapa koordinoida toimintaamme. Sovelluksia käytetään myös jatkuvasti enemmän koulutuksessa, koska ne mahdollistavat yksilöllisen oppimisen ja koska käyttäjät voivat hankkia tietoja niiden avulla. Mikset siis antaisi oppilaille mahdollisuutta kehittää koulutussovellus muille?</p>',
-            'activities'=>[
-                '1'=>'Tapahtuma 1 – Otsikko, alakoulu',
-                '2'=>'Tapahtuma 2 – Otsikko, yläkoulu',
-                '3'=>'Tapahtuma 3 – Otsikko, lukio'
+            'activities' => [
+                '1' => 'Tapahtuma 1 – Otsikko, alakoulu',
+                '2' => 'Tapahtuma 2 – Otsikko, yläkoulu',
+                '3' => 'Tapahtuma 3 – Otsikko, lukio'
             ]
         ],
         '7' => [
-            'title'=>'Rakentelu ja valmistaminen',
-            'author'=>'Tekijä: Diogo da Silva',
-            'text'=>'<p>Työt ja työpaikat ovat muuttumassa, ja niiden myötä myös koulutus. Uudet taidot, kuten rakentelu, valmistaminen ja hakkerointi, kaventavat koulun ja todellisuuden välistä kuilua. Siksi niillä on tärkeä rooli, kun oppilaita autetaan valmistautumaan 2000-luvun työuriin. Kun luokkahuoneesta luodaan yhteistyöhön perustuva ympäristö, jossa painotetaan ongelmanratkaisua, oppilaat saavat eväät osallistumiseen ja menestymiseen. Nämä harjoitukset edistävät keskustelua, minkä ansiosta luokkahuoneesta tulee viestinnän keskus, jossa jokaisen panos on tärkeä.</p> 
+            'title' => 'Rakentelu ja valmistaminen',
+            'author' => 'Tekijä: Diogo da Silva',
+            'text' => '<p>Työt ja työpaikat ovat muuttumassa, ja niiden myötä myös koulutus. Uudet taidot, kuten rakentelu, valmistaminen ja hakkerointi, kaventavat koulun ja todellisuuden välistä kuilua. Siksi niillä on tärkeä rooli, kun oppilaita autetaan valmistautumaan 2000-luvun työuriin. Kun luokkahuoneesta luodaan yhteistyöhön perustuva ympäristö, jossa painotetaan ongelmanratkaisua, oppilaat saavat eväät osallistumiseen ja menestymiseen. Nämä harjoitukset edistävät keskustelua, minkä ansiosta luokkahuoneesta tulee viestinnän keskus, jossa jokaisen panos on tärkeä.</p> 
 <p>Tutustu alla olevaan Diogo da Silvan videoon, jossa hän neuvoo vaihe vaiheelta, miten laaditaan oppitunti, jolla oppilaat rakentelevat, valmistavat ja hakkeroivat tiensä ratkaisuun. Diogo da Silva on portugalilainen STEAM-aineiden  opettaja ja Escola Global  koulun jäsen.</p>',
-            'activities'=>[
-                '1'=>'Tapahtuma 1 – Otsikko, alakoulu',
-                '2'=>'Tapahtuma 2 – Otsikko, yläkoulu',
-                '3'=>'Tapahtuma 3 – Otsikko, lukio'
+            'activities' => [
+                '1' => 'Tapahtuma 1 – Otsikko, alakoulu',
+                '2' => 'Tapahtuma 2 – Otsikko, yläkoulu',
+                '3' => 'Tapahtuma 3 – Otsikko, lukio'
             ]
         ],
         '8' => [
-            'title'=>'Koodausta kaikkiin oppiaineisiin',
-            'author'=>'Tekijä: M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
-            'text'=>'<p>Koodauksesta opetuksessa tulevat ensin mieleen tietokoneet, tekniikka, matematiikka tai luonnontieteet. Oppilailla on kuitenkin monia kiinnostuksenkohteita ja aineita, joten eikö se kannattaisi hyödyntää ja sisällyttää koodaus koko opetussuunnitelmaan?</p> 
+            'title' => 'Koodausta kaikkiin oppiaineisiin',
+            'author' => 'Tekijä: M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text' => '<p>Koodauksesta opetuksessa tulevat ensin mieleen tietokoneet, tekniikka, matematiikka tai luonnontieteet. Oppilailla on kuitenkin monia kiinnostuksenkohteita ja aineita, joten eikö se kannattaisi hyödyntää ja sisällyttää koodaus koko opetussuunnitelmaan?</p> 
 <p>Koodauksen yhdistämisestä opetukseen on monia etuja: sen avulla oppilaat kehittävät kriittiseen ajatteluun ja ongelmanratkaisuun liittyviä taitoja, oppivat toimimaan aktiivisina käyttäjinä ja ohjaamaan omaa oppimistaan, mikä on koulussa erittäin tärkeää. Kaikkein tärkeintä kuitenkin on, että oppiminen on oppilaista hauskaa!</p>
 <p>Opettajat voivat yhdistää koodauksen esimerkiksi kieliin, musiikkiin ja STEM-aineisiin ja opettaa koodausta vaikkapa tuleville tieteilijöille, muusikoille tai artisteille. Kaikki opettajat voivat yhdistää koodausta ja laskennallista ajattelua opetukseensa. Opetuksessa voidaan käyttää esimerkiksi seuraavia harjoituksia: arkipäivän algoritmin selittäminen CLIL-tunnilla, ohjainsauvan tekeminen huovasta tiedetunneilla tai koulutuksellisten robottien käyttö motivaation lisäämiseksi matematiikassa.</p> 
 <p>Kurkista alla olevaan videoon ja havainnoi, miten musiikin, luonnontieteiden tai kielten opettajat voivat yhdistää helposti koodausta ja laskennallista ajattelua opetukseen. Aiempaa kokemusta ei tarvita.</p>',
-            'activities'=>[
-                '1'=>'Tapahtuma 1 Robotiikkaa ja osallistamista alakoulun STEM-aineissa',
-                '2'=>'Tapahtuma 2 Musisoidaan koodaamalla',
-                '3'=>'Tapahtuma 3 Rakentelua ja koodausta Makey Makey  rakennussarjalla',
-                '4'=>'Tapahtuma 4 Tosielämän algoritmi CLIL-tunnille'
+            'activities' => [
+                '1' => 'Tapahtuma 1 Robotiikkaa ja osallistamista alakoulun STEM-aineissa',
+                '2' => 'Tapahtuma 2 Musisoidaan koodaamalla',
+                '3' => 'Tapahtuma 3 Rakentelua ja koodausta Makey Makey  rakennussarjalla',
+                '4' => 'Tapahtuma 4 Tosielämän algoritmi CLIL-tunnille'
             ]
         ],
         '9' => [
-            'title'=>'Rakenna automaatti micro:bitin avulla',
-            'author'=>'tekijä: Pauline Maas',
-            'text'=>'<p>
+            'title' => 'Rakenna automaatti micro:bitin avulla',
+            'author' => 'tekijä: Pauline Maas',
+            'text' => '<p>
                    Helposti ohjelmoitavan taskukokoisen micro:bit-tietokoneen avulla voit hauskalla ja helpolla tavalla rakentaa oppilaidesi kanssa kiinnostavia laitteita aina roboteista erilaisiin soittimiin ja samalla opettaa heille koodausta. Yksinkertainen ja helppokäyttöinen micro:bit sopii kaikkein nuorimmillekin ohjelmoijille, mutta on samalla riittävän tehokas opinnoissaan pidemmälle ehtineille. Micro:bitin voi yhdistää eri oppiaineisiin historiasta matematiikkaan ja jopa luonnontieteisiin. Mahdollisuudet ovat rajattomat. Micro:bit on kiehtova ja edullinen tapa opettaa oppilaille koodausta ja samalla perehdyttää heitä laskennallisen ajattelun, ongelmanratkaisun ja luovuuden kaltaisiin keskeisiin taitoihin.
                    </p>
                    <p>
 Tällä videolla Koninklijke Visio -keskuksen tietotekniikan opettaja Pauline Maas esittelee micro:bit-tietokonetta ja antaa muutamia käytännön esimerkkejä siitä, miten opettajat voivat hyödyntää sitä opetuksessa ja muuttaa oppilaiden passiivisuuden luovaksi innostukseksi.                   
                 </p>',
-            'activities'=>[
-                '1'=>'Morseaakkoset micro:bitin avulla: peruskoulun ala-aste',
-                '2'=>'Pakohuone micro:bitin avulla: peruskoulun yläaste',
-                '3'=>'Automaatin rakentaminen: toisen asteen oppilaitokset',
+            'activities' => [
+                '1' => 'Morseaakkoset micro:bitin avulla: peruskoulun ala-aste',
+                '2' => 'Pakohuone micro:bitin avulla: peruskoulun yläaste',
+                '3' => 'Automaatin rakentaminen: toisen asteen oppilaitokset',
             ]
         ],
         '10' => [
-            'title'=>'Luovaa ohjelmointia Pythonilla',
-            'author'=>'Tekijä: Ivana Vezjak',
-            'text'=>'<p>
+            'title' => 'Luovaa ohjelmointia Pythonilla',
+            'author' => 'Tekijä: Ivana Vezjak',
+            'text' => '<p>
 Koodauksessa siirtyminen visuaalisesta ohjelmoinnista tekstipohjaiseen käy usein luonnostaan. Visuaalinen ohjelmointi sopii hienosti vasta-alkajille, mutta jonkin ajan kuluttua oppilaat saattavat janota uusia haasteita. Tekstipohjainen ohjelmointi on seuraava askel niille, jotka haluavat perehtyä ohjelmointiin ja laskennalliseen ajatteluun pintaa syvemmältä. 
                    </p>
                    <p>                   
@@ -150,57 +150,57 @@ Tällä videolla Ivana Vezjak esittelee Python-ohjelmointikielen perussyntaksin.
 <p> 
 Pythonin avulla oppilaat voivat suunnitella historiallisiin tapahtumiin liittyviä tietokilpailuja, ratkaista matemaattisia ongelmia ja tehdä fysikaalisia mallinnuksia, luoda pelejä, toteuttaa verkkosivustoja, suorittaa tutkimuksen data-analyysin ja paljon muuta. Pythonilla on monipuolinen ja kattava vakiokirjasto sekä laaja käyttäjäyhteisö, ja lisäksi verkossa on saatavana runsaasti oppaita ja projekteja, joita voidaan hyödyntää opetuksessa, opiskelussa ja harjoittelussa. Koodaamalla Python-ohjelmointikielellä, analysoimalla ohjelmia ja korjaamalla bugeja oppilaat kehittävät luovuuttaan ja oppivat johdonmukaisuutta, pitkäjänteisyyttä ja kärsivällisyyttä. He oppivat analyyttista ajattelua ja ongelmanratkaisutaitoja pilkkomalla monimutkaisia ongelmia pienempiin osiin. Nämä taidot auttavat heitä ratkomaan ongelmia myös kaikilla muilla elämänalueilla.
                 </p>',
-            'activities'=>[
-                '1'=>'Ensimmäinen tietokilpailuni, peruskoulun ala-aste',
-                '2'=>'Hirsipuupeli, peruskoulun yläaste',
-                '3'=>'Arvaa lippu! -peli, toisen asteen oppilaitokset',
+            'activities' => [
+                '1' => 'Ensimmäinen tietokilpailuni, peruskoulun ala-aste',
+                '2' => 'Hirsipuupeli, peruskoulun yläaste',
+                '3' => 'Arvaa lippu! -peli, toisen asteen oppilaitokset',
             ],
-            'links'=>[
+            'links' => [
                 'title' => 'Muita aiheeseen liittyviä aineistoja',
                 '1' => [
-                    "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Python-vakiokirjasto",
-                    "description"=>"Kokoelma valmiiksi kirjoitettuja koodeja ja moduuleja (esim. turtle-moduuli, matematiikkamoduuli jne.).",
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "Python-vakiokirjasto",
+                    "description" => "Kokoelma valmiiksi kirjoitettuja koodeja ja moduuleja (esim. turtle-moduuli, matematiikkamoduuli jne.).",
                 ],
                 '2' => [
-                    "url"=>"https://codecombat.com/",
-                    "title"=>"CodeCombat",
-                    "description"=>"Pedagoginen videopeli ohjelmointikäsitteiden opetteluun.",
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Pedagoginen videopeli ohjelmointikäsitteiden opetteluun.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
-                    "title"=>"CodeClub projects",
-                    "description"=>"Vaihe vaiheelta eteneviä ohjelmointiharjoitteita lapsille, aloittelijoista edistyneisiin.",
+                    "url" => "https://projects.raspberrypi.org/en/codeclub",
+                    "title" => "CodeClub projects",
+                    "description" => "Vaihe vaiheelta eteneviä ohjelmointiharjoitteita lapsille, aloittelijoista edistyneisiin.",
                 ],
                 '4' => [
-                    "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Invent your own computer games with Python",
-                    "description"=>"Verkkokirja, jonka avulla opit ohjelmoimaan omia tietokonepelejä Pythonilla.",
+                    "url" => "https://inventwithpython.com/invent4thed/",
+                    "title" => "Invent your own computer games with Python",
+                    "description" => "Verkkokirja, jonka avulla opit ohjelmoimaan omia tietokonepelejä Pythonilla.",
                 ],
                 '5' => [
-                    "url"=>"https://www.codewars.com/",
-                    "title"=>"CodeWars",
-                    "description"=>"Koulutusyhteisö, jossa opiskelijat ja opettajat voivat harjoitusten avulla läpäistä erilaisia haasteita.",
+                    "url" => "https://www.codewars.com/",
+                    "title" => "CodeWars",
+                    "description" => "Koulutusyhteisö, jossa opiskelijat ja opettajat voivat harjoitusten avulla läpäistä erilaisia haasteita.",
                 ],
                 '6' => [
-                    "url"=>"https://hourofpython.com/",
-                    "title"=>"Hour of Python",
-                    "description"=>"Kokoelma Python-ohjelmointikieleen perehdyttäviä johdantokursseja (sekä tekstipohjaisia että lohkoperusteisia), joissa käytetään interaktiivisia Trinket-ohjelmointiympäristöjä.",
+                    "url" => "https://hourofpython.com/",
+                    "title" => "Hour of Python",
+                    "description" => "Kokoelma Python-ohjelmointikieleen perehdyttäviä johdantokursseja (sekä tekstipohjaisia että lohkoperusteisia), joissa käytetään interaktiivisia Trinket-ohjelmointiympäristöjä.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'Koodaus osallistamisen edistäjänä',
-            'author'=>'EU:n koodausviikon tiimi',
-            'text'=>'<p>
+            'title' => 'Koodaus osallistamisen edistäjänä',
+            'author' => 'EU:n koodausviikon tiimi',
+            'text' => '<p>
                    Koodauksen hyödyntäminen opetuksessa voi olla haastavaa, etenkin jos luokassa on erityistä tukea tarvitsevia oppilaita. On kuitenkin tärkeää muistaa, että kuka tahansa voi oppia koodaamaan kyvyistään riippumatta. Koodaukseen liittyvien asioiden oppimisesta voi olla erityislapselle suurta hyötyä, koska hän saa elämässä tärkeitä ongelmanratkaisu- ja organisointitaitoja sekä eväitä itsenäiseen toimintaan. Koodaus voi myös parantaa ihmissuhde- ja vuorovaikutustaitoja yhdessä toimimisen ja ryhmätöiden kautta. Juuri nämä taidot tuottavat monelle erityislapselle vaikeuksia. Mikä tärkeintä, oppiminen yhdessä muiden oppilaiden kanssa on hauskaa.
                    </p><p>
 Tällä videolla koodausviikon tiimi esittelee muutamia helppoja ja hauskoja käytännön koodaustehtäviä, jotka opettaja voi vaivatta toteuttaa luokassa ja jotka soveltuvat erityisesti sekä näkövammaisille että niille oppilaille, joilla on Downin oireyhtymä tai autismikirjon häiriö.                   
                 </p>',
-            'activities'=>[
-                '1'=>'Munakennopeli',
-                '2'=>'Erittäin älykäs hiiri',
-                '3'=>'Tähdentekijä',
+            'activities' => [
+                '1' => 'Munakennopeli',
+                '2' => 'Erittäin älykäs hiiri',
+                '3' => 'Tähdentekijä',
             ]
         ],
 
@@ -249,6 +249,21 @@ Tällä videolla koodausviikon tiimi esittelee muutamia helppoja ja hauskoja kä
                 '1' => 'Tekoäly ja sen hermoverkot, peruskoulun ala-asteen oppilaat',
                 '2' => 'Oma Covid-19-chatbottini, peruskoulun yläasteen oppilaat',
                 '3' => 'Asuminen “älykkäiden koneiden” aikakaudella: haasteet ja mahdollisuudet, toisen asteen oppilaitoksen oppilaat',
+            ]
+        ],
+
+        "15" => [
+            "title" => "Medialukutaito",
+            "author" => "Kirjoittajat, Marijana Smolčec, Tea Horvatić ja Sanja Božinović",
+            "text" => [
+                " Medialukutaito ei ole koskaan ollut tärkeämpää nykypäivän opiskelijoille. Kaiken ikäisten opiskelijoiden on hankittava tarvittavat taidot, tiedot ja asenteet voidakseen liikkua mediarikkaassa maailmassa. Medialukutaidot auttavat heitä käyttämään uskottavaa verkkosisältöä ja tunnistamaan harhaanjohtavat tietolähteet. He ymmärtävät kuinka tarkistaa verkossa löytämänsä tiedot ja tulkita niitä kriittisesti. He lisäävät tietoisuuttaan luovan työn oikeasta käytöstä ja soveltavat oppimistaan luodessaan omaa luovaa sisältöään.",
+                " Tämän oppimisbitin avulla voit toteuttaa erilaisia strategioita ja tekniikoita, joiden avulla opiskelijat voivat tulla medialukutaitoisiksi. Marijanan toiminnassa opiskelijat oppivat käyttämään verkkosisältöä turvallisesti ja vastuullisesti. Heidät tutustutetaan erityyppisiin lisensseihin ja he kehittävät yksinkertaisen keinon osoittamaan, kuinka luovaa työtä voidaan jakaa oikein. Tea-toiminnassa oppilaat aloittavat tehtävän oppia klikkaus houkuttimista. Kiinnostavien tehtävien kautta opiskelijat tutkivat strategioita klikki houkuttimien tunnistamiseksi ja paljastamiseksi ja oppivat välttämään niitä. Sanja antaa opiskelijoille mahdollisuuden tutkia, analysoida ja arvioida kriittisesti verkkosisältöä, sen merkitystä, tarkkuutta, alkuperää ja tarkoitusta. He oppivat löytämään luotettavia lähteitä verkosta ja tunnistamaan vääriä internet-tietoja. ",
+                " Alla olevista oppituntisuunnitelmista löydät inspiroivia ja kiinnostavia aktiviteetteja opiskelijoiden medialukutaidon parantamiseksi: ",
+            ],
+            "activities" => [
+                "1" => " Onko se ilmaista, jos se on Internetissä?",
+                "2" => "Klikata, vai eikö klikata?",
+                "3" => "Faktojen tarkastus",
             ]
         ],
 
