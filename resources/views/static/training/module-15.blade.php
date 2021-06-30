@@ -39,17 +39,17 @@
 
                 <ol style="list-style-type: decimal;margin-left:40px; margin-top:-4px;">
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-015-ACTIVITY-01-{{strtoupper(App::getLocale())}}.DOCX">
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-015-ACTIVITY-01.docx">
                             @lang('training.lessons.15.activities.1')
                         </a>
                     </li>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-015-ACTIVITY-02-{{strtoupper(App::getLocale())}}.DOCX">
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-015-ACTIVITY-02.docx">
                             @lang('training.lessons.15.activities.2')
                         </a>
                     </li>
                     <li>
-                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-015-ACTIVITY-03-{{strtoupper(App::getLocale())}}.DOCX">
+                        <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/training/{{strtoupper(App::getLocale())}}/CODEWEEK-TRAINING-015-ACTIVITY-03.docx">
                             @lang('training.lessons.15.activities.3')
                         </a>
                     </li>
