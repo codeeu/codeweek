@@ -26,6 +26,9 @@ class CommunityController extends Controller
 
         $teachers = User::role('leading teacher')->where('approved',1)->with('city')->get();
 
+        /*foreach ($teachers as $teacher){
+            dd($teacher->expertises);
+        }*/
         //dd($teachers->groupBy('city.id'));
 
 
