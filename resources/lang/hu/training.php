@@ -88,60 +88,60 @@ return [
             ]
         ],
         '6' => [
-            'title'=>'App Inventor és alkalmazásfejlesztés',
-            'author'=>'Rosanna Kurrer',
-            'text'=>'<p>Nézze meg az alábbi videót, amelyben Rosanna Kurrer (a CyberWayFinder alapítója) elmagyarázza, hogy mi az az App Inventor, felsorolja az alkalmazásfejlesztés előnyeit az oktatásban, és bemutat néhány gyakorlati példát arra, hogy a tanárok hogyan tudják beépíteni az App Inventort a tanórák menetébe, lelkes játékkészítőkké varázsolva a passzív diákokat.</p>
+            'title' => 'App Inventor és alkalmazásfejlesztés',
+            'author' => 'Rosanna Kurrer',
+            'text' => '<p>Nézze meg az alábbi videót, amelyben Rosanna Kurrer (a CyberWayFinder alapítója) elmagyarázza, hogy mi az az App Inventor, felsorolja az alkalmazásfejlesztés előnyeit az oktatásban, és bemutat néhány gyakorlati példát arra, hogy a tanárok hogyan tudják beépíteni az App Inventort a tanórák menetébe, lelkes játékkészítőkké varázsolva a passzív diákokat.</p>
 <p>Mindannyian használunk alkalmazásokat, mivel azok révén kényelmesen és gyorsan koordinálhatjuk tevékenységeinket. Egyre gyakrabban használják az alkalmazásokat az oktatásban is, mert lehetővé teszik a személyre szabott tanulást, valamint az információszerzést a felhasználók számára. Miért ne tehetné képessé diákjait is arra, hogy egy oktatást támogató alkalmazást hozzanak létre mások számára?</p>',
-            'activities'=>[
-                '1'=>'1. foglalkozás – Cím, általános iskolák számára',
-                '2'=>'2. foglalkozás – Cím, középiskola alsó osztályai számára',
-                '3'=>'3. foglalkozás – Cím, középiskola felső osztályai számára'
+            'activities' => [
+                '1' => '1. foglalkozás – Cím, általános iskolák számára',
+                '2' => '2. foglalkozás – Cím, középiskola alsó osztályai számára',
+                '3' => '3. foglalkozás – Cím, középiskola felső osztályai számára'
             ]
         ],
         '7' => [
-            'title'=>'Bütykölés és alkotás',
-            'author'=>'Diogo da Silva',
-            'text'=>'<p>A foglalkozások és munkahelyek változnak, az oktatás pedig a nyomukban jár. A 21. századi szakmai pályafutásokra való felkészítés során olyan új készségek – mint például a bütykölés, az alkotás és a hekkelés képessége – válnak elengedhetetlenné, amelyek csökkentik a szakadékot az iskola és a valóság között. A diákok elköteleződésének és megfelelő fejlődésének elősegítése érdekében a tantermeket a problémamegoldásra összpontosító, együttműködő környezetté kell alakítani. E tevékenységek előmozdítják az eszmecserét, lehetővé téve ily módon az osztály számára, hogy minden hozzájárulást megbecsülő kommunikációs központtá váljon.</p> 
+            'title' => 'Bütykölés és alkotás',
+            'author' => 'Diogo da Silva',
+            'text' => '<p>A foglalkozások és munkahelyek változnak, az oktatás pedig a nyomukban jár. A 21. századi szakmai pályafutásokra való felkészítés során olyan új készségek – mint például a bütykölés, az alkotás és a hekkelés képessége – válnak elengedhetetlenné, amelyek csökkentik a szakadékot az iskola és a valóság között. A diákok elköteleződésének és megfelelő fejlődésének elősegítése érdekében a tantermeket a problémamegoldásra összpontosító, együttműködő környezetté kell alakítani. E tevékenységek előmozdítják az eszmecserét, lehetővé téve ily módon az osztály számára, hogy minden hozzájárulást megbecsülő kommunikációs központtá váljon.</p> 
 <p>Nézze meg az alábbi videót, amelyben a portugál TTMM-tanár és egyúttal az Escola Global tagja, Diogo da Silva, lépésről lépésre végigvezeti egy olyan tanóra felépítésén, amelyen diákjai bütykölés, alkotás és hekkelés útján jutnak el a végső megoldáshoz.</p>',
-            'activities'=>[
-                '1'=>'1. foglalkozás – Cím, általános iskolák számára',
-                '2'=>'2. foglalkozás – Cím, középiskola alsó osztályai számára',
-                '3'=>'3. foglalkozás – Cím, középiskola felső osztályai számára'
+            'activities' => [
+                '1' => '1. foglalkozás – Cím, általános iskolák számára',
+                '2' => '2. foglalkozás – Cím, középiskola alsó osztályai számára',
+                '3' => '3. foglalkozás – Cím, középiskola felső osztályai számára'
             ]
         ],
         '8' => [
-            'title'=>'Programozás minden tantárgyban',
-            'author'=>'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
-            'text'=>'<p>Amikor iskolai programozásra gondolunk, legelőször a számítástechnika, a technológia, a matematika vagy a természettudományok területe jut az eszünkbe. Mivel azonban a diákokat számtalan más dolog is érdekli és többféle tantárgyat tanulnak, miért ne fordítsuk ezt a magunk javára és vezessük be a programozást minden tantárgyban?</p> 
+            'title' => 'Programozás minden tantárgyban',
+            'author' => 'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text' => '<p>Amikor iskolai programozásra gondolunk, legelőször a számítástechnika, a technológia, a matematika vagy a természettudományok területe jut az eszünkbe. Mivel azonban a diákokat számtalan más dolog is érdekli és többféle tantárgyat tanulnak, miért ne fordítsuk ezt a magunk javára és vezessük be a programozást minden tantárgyban?</p> 
 <p>Rengeteg előnye van annak, ha a programozást beépítjük a tanmenetbe: segít a diákoknak fejleszteni kritikai gondolkodásukat és problémamegoldó készségüket, támogatja, hogy aktív felhasználóvá váljanak és saját maguk irányítsák a tanulás folyamatát, ami elengedhetetlen az iskolában. De ami ezeknél is fontosabb, összeköthetik a kellemeset a hasznossal!</p>
 <p>Idegen nyelvek, ének-zene, természettudományok, technológia, műszaki tudományok, matematika... és még folytathatnánk a sort. Tanárként minden tárgynál ott a lehetőség, hogy programozáson keresztül adjuk át az ismeretanyagot a jövő tudósai, zenészei, művészei, sőt bármely szakma képviselői számára! Minden tanár be tudja építeni a programozást és az algoritmikus gondolkodást saját tantervébe. Miért ne modellezhetnénk algoritmussal a napi rutint akár egy tartalomalapú nyelvórán? Természettudományos ismeretek átadásához készítsünk filcből játékvezérlőt! Egy oktatórobot a matematikához is meghozza a diákok kedvét. Megannyi lehetőség minden tanórán!</p> 
 <p>Az alábbi kisfilmből megtudhatja, hogyan lehet könnyedén – akár minden előképzettség nélkül – beépíteni a programozást és az algoritmikus gondolkodást az ének-zene, a természettudományok vagy az idegen nyelvek oktatásába. </p>',
-            'activities'=>[
-                '1'=>'1. foglalkozás: Robotika és egyéni sikerélmény az általános iskolai TTMM-órákon',
-                '2'=>'2. foglalkozás: A zene nem más mint programozás',
-                '3'=>'3. foglalkozás: Bütykölés és programozás Makey Makey-vel',
-                '4'=>'4. foglalkozás: Napi rutin algoritmusa tartalomalapú nyelvórán'
+            'activities' => [
+                '1' => '1. foglalkozás: Robotika és egyéni sikerélmény az általános iskolai TTMM-órákon',
+                '2' => '2. foglalkozás: A zene nem más mint programozás',
+                '3' => '3. foglalkozás: Bütykölés és programozás Makey Makey-vel',
+                '4' => '4. foglalkozás: Napi rutin algoritmusa tartalomalapú nyelvórán'
             ]
         ],
         '9' => [
-            'title'=>'Robot készítése micro:bittel',
-            'author'=>'Szerző: Pauline Maas',
-            'text'=>'<p>
+            'title' => 'Robot készítése micro:bittel',
+            'author' => 'Szerző: Pauline Maas',
+            'text' => '<p>
                    Egy micro:bit, a könnyen programozható, zsebnyi méretű számítógép használatával szórakoztató módon és könnyen hozhat létre érdekes alkotásokat tanulóival a robotoktól kezdve a zenei eszközökig, egyúttal pedig a programozás módját is megtaníthatja számukra. Ennek használata könnyű és egyszerű akár a legfiatalabb programozók számára is, de ugyanakkor eléggé erős még a legelőrehaladottabb tanulóknak is. A történelemtől a matematikán át akár a tudományig terjedően számos különböző tanóra keretében felhasználhatja. A lehetőségek végtelenek. A micro:bit egy érdekes és olcsó módja annak, hogy megtanítsuk a tanulóknak a kódolást úgy, hogy közben az olyan alapvető készségeket is beléjük csepegtessük, mint például a számítógépes gondolkodás, a problémamegoldás és kreativitás.
                    </p>
                    <p>
 Ebben a videóban, Pauline Maas, a Koninklijke Visio informatikatanára mutatja be a micro:bitet és mond néhány gyakorlati példát arra, hogy miként integrálhatják a tanárok ezt az eszközt az osztályterembe oly módon, hogy a passzív tanulókból lelkes alkotók válhassanak.                    
                 </p>',
-            'activities'=>[
-                '1'=>'Morzekód a micro: bittel, általános iskolák számára',
-                '2'=>'Szabadulószoba micro:bittel, középiskolák alsóbb évfolyamai számára',
-                '3'=>'Robot készítése, középiskolák felsőbb évfolyamai számára',
+            'activities' => [
+                '1' => 'Morzekód a micro: bittel, általános iskolák számára',
+                '2' => 'Szabadulószoba micro:bittel, középiskolák alsóbb évfolyamai számára',
+                '3' => 'Robot készítése, középiskolák felsőbb évfolyamai számára',
             ]
         ],
         '10' => [
-            'title'=>'Kreatív kódolás Pythonnal',
-            'author'=>'Szerző: Ivana Vezjak',
-            'text'=>'<p>
+            'title' => 'Kreatív kódolás Pythonnal',
+            'author' => 'Szerző: Ivana Vezjak',
+            'text' => '<p>
 A kódolásban a vizuálistól a szöveg-alapú programozáshoz való továbblépés a természetes irány. Bár a vizuális programozás gyakran remek dolog kezdők számára, a diákok egy idő után új kihívásra vágynak. A szöveg-alapú programozás jelenti a következő lépést bárki számára, aki mélyebben el szeretne merülni a programozásban és a számítógépes gondolkodásban. 
                    </p>
                    <p>                   
@@ -150,57 +150,57 @@ Ebben a videóban Ivana Vezjak vezeti be Önt a Python szintaxisának alapjaiba.
 <p> 
 A Pythonnal a diákok kvízeket hozhatnak létre történelmi eseményekről, matematikai problémákat oldhatnak meg és fizikai szimulációkat végezhetnek, játékokat készíthetnek, honlapokat építhetnek, adatelemzést végezhetnek tudományos projektekhez, sok minden más mellett. A Pythonnak gazdag és kiterjedt standard könyvtára és nagy közössége van, továbbá nagyszámú oktatóanyag és projekt érhető el online, amelyeket tanítási, tanulási és gyakorlási célokra lehet felhasználni. A Pythonnal kódolva, programokat elemezve és hibákat javítva (bug fixing) a tanulók kreativitást fejleszthetnek ki és megtanulják, hogyan legyenek következetesek, kitartók és türelmesek. A komplex problémák kisebb összetevőkre bontásával megtanulják az analitikus gondolkodási és problémamegoldási készségeket. Ezek a kompetenciák segítik őket abban, hogy miként közelítsék meg a problémákat életük minden egyéb területén.
                 </p>',
-            'activities'=>[
-                '1'=>'Első kvízem, általános iskolák számára',
-                '2'=>'Akasztófa, a középiskola alsóbb évfolyamai számára',
-                '3'=>'Találd ki a zászlót!, a középiskola felsőbb évfolyamai számára',
+            'activities' => [
+                '1' => 'Első kvízem, általános iskolák számára',
+                '2' => 'Akasztófa, a középiskola alsóbb évfolyamai számára',
+                '3' => 'Találd ki a zászlót!, a középiskola felsőbb évfolyamai számára',
             ],
-            'links'=>[
+            'links' => [
                 'title' => 'Egyéb kapcsolódó erőforrások',
                 '1' => [
-                    "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Python standard könyvtár",
-                    "description"=>"Előre kidolgozott kódok és modulok gyűjteménye (pl. teknős modul, matematikai modul stb.).",
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "Python standard könyvtár",
+                    "description" => "Előre kidolgozott kódok és modulok gyűjteménye (pl. teknős modul, matematikai modul stb.).",
                 ],
                 '2' => [
-                    "url"=>"https://codecombat.com/",
-                    "title"=>"CodeCombat",
-                    "description"=>"Oktató videójátékok a programozási koncepciók tanulásához.",
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Oktató videójátékok a programozási koncepciók tanulásához.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
-                    "title"=>"KódKlub projektek",
-                    "description"=>"Lépésenkénti programozási projektek gyerekek számára kezdőtől haladó szintig.",
+                    "url" => "https://projects.raspberrypi.org/en/codeclub",
+                    "title" => "KódKlub projektek",
+                    "description" => "Lépésenkénti programozási projektek gyerekek számára kezdőtől haladó szintig.",
                 ],
                 '4' => [
-                    "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Találd fel saját számítógépes játékaidat Pythonnal",
-                    "description"=>"Könyv, amely arra tanítja meg, hogy miként programozzon saját számítógépes játékokat Pythonnal.",
+                    "url" => "https://inventwithpython.com/invent4thed/",
+                    "title" => "Találd fel saját számítógépes játékaidat Pythonnal",
+                    "description" => "Könyv, amely arra tanítja meg, hogy miként programozzon saját számítógépes játékokat Pythonnal.",
                 ],
                 '5' => [
-                    "url"=>"https://www.codewars.com/",
-                    "title"=>"Kódháborúk",
-                    "description"=>"Oktatási közösség, ahol a tanulók és a tanárok kihívások sorozatán keresztül képezhetik egymást.",
+                    "url" => "https://www.codewars.com/",
+                    "title" => "Kódháborúk",
+                    "description" => "Oktatási közösség, ahol a tanulók és a tanárok kihívások sorozatán keresztül képezhetik egymást.",
                 ],
                 '6' => [
-                    "url"=>"https://hourofpython.com/",
-                    "title"=>"A Python órája",
-                    "description"=>"Interaktív Trinketeket használó Python bevezető (szöveg-alapú és blokkos) leckék gyűjteménye.",
+                    "url" => "https://hourofpython.com/",
+                    "title" => "A Python órája",
+                    "description" => "Interaktív Trinketeket használó Python bevezető (szöveg-alapú és blokkos) leckék gyűjteménye.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'Programozás a befogadásért',
-            'author'=>'a programozási hét csapatával',
-            'text'=>'<p>
+            'title' => 'Programozás a befogadásért',
+            'author' => 'a programozási hét csapatával',
+            'text' => '<p>
                    A programozás osztálytermi tevékenységeibe történő beillesztése kihívásokkal teli lehet, főleg akkor, ha osztályához fogyatékossággal élő tanulók is tartoznak. Nem szabad megfeledkezni azonban arról, hogy fogyatékosságtól függetlenül, mindenki megtanulhat programozni. A sajátos igényű gyermekek nagy mértékben hasznosíthatják a programozás tanulási szempontjait, hiszen a kódolás olyan rendkívül fontos életviteli készségeket tanít a gyermekeknek, mint a problémamegoldás, a szervezés és a függetlenség. A programozás ezen túlmenően az együttműködés és a csapatmunka által javíthatja az interperszonális és szociális készségeket, amelyekkel a fogyatékossággal élő gyermekek közül sokan küzdenek. Ami pedig a legfontosabb, hogy a tanulók a közös tanulás közben jól érzik magukat.
                    </p><p>
                    Videónkban a programozási hét csapata bemutat Önnek néhány olyan – főként látássérült, illetve autizmus spektrumzavarral élő tanulók igényeihez igazított – praktikus, egyszerű és szórakoztató programozási tevékenységet, amelyeket könnyedén meg lehet valósítani osztálytermen belül is.
                 </p>',
-            'activities'=>[
-                '1'=>'Tojástartó (offline)',
-                '2'=>'Egy irtó okos egér',
-                '3'=>'A csillagkészítő sztár',
+            'activities' => [
+                '1' => 'Tojástartó (offline)',
+                '2' => 'Egy irtó okos egér',
+                '3' => 'A csillagkészítő sztár',
             ]
         ],
 
@@ -252,16 +252,33 @@ A Pythonnal a diákok kvízeket hozhatnak létre történelmi eseményekről, ma
             ]
         ],
 
+        '15' => [
+            "title" => "A médiaműveltség elmélyítése",
+            "author" => "Marijana Smolčec, Tea Horvatić és Sanja Božinović",
+            "text" => [
+                "A médiaműveltség oktatása sohasem volt még ilyen fontos a mai diákok számára. Az összes korosztályhoz tartozó diáknak meg kell szereznie a releváns készségeket, tudást és kialakítani a megfelelő hozzáállást annak érdekében, hogy elboldoguljanak a médiagazdag világunkban. A médiaműveltségi készségek segítenek nekik abban, hogy hiteles online tartalmakat használjanak és felismerjék a félrevezető információt. Meg fogják érteni, hogyan tényellenőrizzék az információt, amit találtak és hogy kritikusan értelmezzék azt. Kialakul bennük a kreatív munka helyes használatával szembeni tudatosság, és alkalmazni fogják, amit tanultak a saját kreatív tartalmaik létrehozásában.",
+                "Ez a tanegység lehetővé teszi az Ön számára, hogy számos végrehajtandó stratégiával és technikával vértezhesse fel a diákjait, hogy médiaműveltté váljanak. Marijana tevékenységében a diákok megtanulják, hogyan használják a webes tartalmakat biztonságosan és felelősen. Különböző típusú licenszekkel ismerkednek meg, és kifejlesztenek egy alkalmazást, amiben megmutathatják, hogyan kell a kreatív munkát megfelelően megosztani. Tea tevékenységében a diákok küldetésre indulnak, hogy tanuljanak a kattintásvadász tartalmakról. A feladatok teljesítése közben a diákok stratégiákat fedeznek fel arra nézve, hogyan azonosítsák és fedjék fel a kattintásvadász tartalmakat és megtanulják, hogyan kerüljék el őket. Sanja lehetővé teszi a diákok számára, hogy felfedezzék, kritikusan elemezzék és értékeljék a webes tartalmakat relevancia, pontosság, eredet és cél szerint. Megtanulják, hogyan találnak megbízható forrásokat online és hogyan ismerjék fel a hamis online információt.",
+                "Az alábbi óravázlatokban inspiráló és vonzó tevékenységeket talál a diákok médiaműveltségi készségeinek fejlesztésére:",
+            ],
+            "activities" => [
+                "1" => "Ingyenes, ha az interneten van?",
+                "2" => "Klikkelni vagy nem klikkelni",
+                "3" => "Tényellenőrzés",
+            ]
+        ]
 
-    ],
+
+
+
+],
     'download_video_script' => 'Videó forgatókönyvének letöltése',
     'ready_to_share' => 'Készen áll arra, hogy megossza a tanultakat a diákjaival?',
     'choose_lessons' => 'Válasszon ki egyet az alábbi óravázlatok közül, és szervezzen tevékenységet a diákjaival.',
     'footer' => [
-        'title' => 'Ne felejtse el tevékenységét feltenni a programozási hét térképére!',
-        'text' => '<p>Könnyen szervezhet tematikus tanórát saját tantermében, vagy pedig egy nyílt napot vagy rendezvényt iskolájában. Mindössze találnia kell egy időpontot hozzá, majd regisztrálnia kell tevékenységét a <a href="/events">programozási hét térképén</a>. Minden tevékenységszervező részvételi oklevelet kap munkája elismeréseként.</p>
+    'title' => 'Ne felejtse el tevékenységét feltenni a programozási hét térképére!',
+    'text' => '<p>Könnyen szervezhet tematikus tanórát saját tantermében, vagy pedig egy nyílt napot vagy rendezvényt iskolájában. Mindössze találnia kell egy időpontot hozzá, majd regisztrálnia kell tevékenységét a <a href="/events">programozási hét térképén</a>. Minden tevékenységszervező részvételi oklevelet kap munkája elismeréseként.</p>
 
 <p>Ha szeretne kapcsolatba lépni lelkes tanárok nemzetközi csoportjával, csatlakozzon az <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Európai programozási hét tanároknak szánt Facebook-csoportjához</a>! Ha az országon belül vagy határokon átívelő együttműködést szeretne kialakítani más iskolákkal, csatlakozzon a <a href="/codeweek4all">Code Week 4 All kihíváshoz</a>.</p>'
-    ]
+]
 
 ];

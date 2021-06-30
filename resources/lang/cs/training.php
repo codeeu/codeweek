@@ -88,60 +88,60 @@ return [
             ]
         ],
         '6' => [
-            'title'=>'Prostředí App Inventor a vývoj aplikací',
-            'author'=>'Autorka: Rosanna Kurrer',
-            'text'=>'<p>Podívejte se na následující video, kde Rosanna Kurrer (zakladatelka společnosti CyberWayFinder) vysvětluje, co je to prostředí App Inventor, objasňuje přínosy vývoje aplikací při výuce a uvádí několik praktických příkladů, jak mohou učitelé prostředí App Inventor využít ve výuce a proměnit pasivní studenty v nadšené vývojáře her.</p>
+            'title' => 'Prostředí App Inventor a vývoj aplikací',
+            'author' => 'Autorka: Rosanna Kurrer',
+            'text' => '<p>Podívejte se na následující video, kde Rosanna Kurrer (zakladatelka společnosti CyberWayFinder) vysvětluje, co je to prostředí App Inventor, objasňuje přínosy vývoje aplikací při výuce a uvádí několik praktických příkladů, jak mohou učitelé prostředí App Inventor využít ve výuce a proměnit pasivní studenty v nadšené vývojáře her.</p>
 <p>Aplikace dnes používáme všichni, protože nám umožňují pohodlnou a rychlou koordinaci činností. Stále častěji nacházejí uplatnění také ve vzdělávacím procesu, neboť umožňují přizpůsobit učení každému uživateli přesně na míru a usnadňují také získávání informací. Co kdybychom tedy studenty naučili vytvořit vzdělávací aplikaci pro ostatní?</p>',
-            'activities'=>[
-                '1'=>'Aktivita 1 – název, pro první stupeň základních škol',
-                '2'=>'Aktivita 2 – název, pro druhý stupeň základních škol',
-                '3'=>'Aktivita 3 – název, pro střední školy'
+            'activities' => [
+                '1' => 'Aktivita 1 – název, pro první stupeň základních škol',
+                '2' => 'Aktivita 2 – název, pro druhý stupeň základních škol',
+                '3' => 'Aktivita 3 – název, pro střední školy'
             ]
         ],
         '7' => [
-            'title'=>'Pokusy a vyrábění předmětů',
-            'author'=>'Autor: Diogo da Silva',
-            'text'=>'<p>Náplň práce a pracoviště se mění a podle toho se mění i vzdělávání. Při přípravě studentů na kariéru v 21. století se dnes už neobejdeme bez nových dovedností, jako je například pokusy, vyrábění a tvořivé programování, protože stírají rozdíl mezi školou a praxí. Když ve třídě vytvoříme prostředí spolupráce zaměřené na řešení problémů, umožníme tím studentům aktivně se zapojit a úspěšně se rozvíjet. Vítanou součástí těchto aktivit je diskuse – třída se tak stává centrem komunikace, kde každý může něčím přispět ke zdaru společné věci.</p> 
+            'title' => 'Pokusy a vyrábění předmětů',
+            'author' => 'Autor: Diogo da Silva',
+            'text' => '<p>Náplň práce a pracoviště se mění a podle toho se mění i vzdělávání. Při přípravě studentů na kariéru v 21. století se dnes už neobejdeme bez nových dovedností, jako je například pokusy, vyrábění a tvořivé programování, protože stírají rozdíl mezi školou a praxí. Když ve třídě vytvoříme prostředí spolupráce zaměřené na řešení problémů, umožníme tím studentům aktivně se zapojit a úspěšně se rozvíjet. Vítanou součástí těchto aktivit je diskuse – třída se tak stává centrem komunikace, kde každý může něčím přispět ke zdaru společné věci.</p> 
 <p>Podívejte se na video, kde vás Diogo da Silva, portugalský učitel předmětů STEAM (propojení přírodovědy, technologických a technických oborů, matematiky a výtvarné výchovy) a člen Escola Global krok za krokem provede přípravou na hodinu, na které se vaši studenti naučí řešit problémy pomocí pokusů, výroby předmětů a tvořivého programování.</p>',
-            'activities'=>[
-                '1'=>'Aktivita 1 – název, pro první stupeň základních škol',
-                '2'=>'Aktivita 2 – název, pro druhý stupeň základních škol',
-                '3'=>'Aktivita 3 – název, pro střední školy'
+            'activities' => [
+                '1' => 'Aktivita 1 – název, pro první stupeň základních škol',
+                '2' => 'Aktivita 2 – název, pro druhý stupeň základních škol',
+                '3' => 'Aktivita 3 – název, pro střední školy'
             ]
         ],
         '8' => [
-            'title'=>'Programování ve všech vyučovacích předmětech',
-            'author'=>'Autor: M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
-            'text'=>'<p>Když se řekne „programování ve škole“, ze všeho nejdřív se nám vybaví hodina informatiky, technologie, matematiky nebo přírodovědy. Jenže žáci a studenti mají přece i celou řadu dalších zájmů a ve škole jsou taky jiné předměty. Co kdybychom toho zkusili využít a zavedli programování napříč celou učební osnovou?</p> 
+            'title' => 'Programování ve všech vyučovacích předmětech',
+            'author' => 'Autor: M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text' => '<p>Když se řekne „programování ve škole“, ze všeho nejdřív se nám vybaví hodina informatiky, technologie, matematiky nebo přírodovědy. Jenže žáci a studenti mají přece i celou řadu dalších zájmů a ve škole jsou taky jiné předměty. Co kdybychom toho zkusili využít a zavedli programování napříč celou učební osnovou?</p> 
 <p>Zařazení programování do výuky má celou řadu výhod, protože pomáhá studentům rozvíjet kritické myšlení a schopnost řešit problémy. Stávají se tak aktivními uživateli, kteří si proces vlastního učení řídí sami, což má při školním vzdělávání zcela zásadní význam. Ze všeho nejdůležitější ale je, že studenty začně učení více bavit!</p>
 <p>Učitelé mohou využít programování například v hodinách jazyků, hudební výchovy nebo předmětů STEM (přírodověda, technologické a technické obory a matematika) při přípravě budoucích vědců, hudebníků nebo umělců – zkrátka úplně každého! Programování a informatické myšlení může do výuky začlenit každý učitel. Hodina CLIL (integrovaná výuka předmětu a cizího jazyka) se například dá využít k tomu, abyste žákům objasnili algoritmus některé z každodenních činností; nebo si žáci mohou vyrobit joystick a přitom se dovědět něco o přírodních vědách; pomocí výukových robotů lze dosáhnout větší motivace žáků v matematice. A to je jen příklad toho, co všechno můžete při svých hodinách podniknout.</p> 
 <p>V následujícím videu si ukážeme, jak snadno může učitel hudební výchovy, přírodovědy nebo jazyků ve svých hodinách využít programování a informatické myšlení, a to i v případě, že s tím nemá žádné předchozí zkušenosti.</p>',
-            'activities'=>[
-                '1'=>'Aktivita 1 Robotika a inkluze pro nižší stupeň základních škol v hodinách STEM',
-                '2'=>'Aktivita 2 Programování v hudbě',
-                '3'=>'Aktivita 3 Pokusy a programování se sadou Makey Makey',
-                '4'=>'Aktivita 4 Algoritmus každodenní činnosti v hodině CLIL'
+            'activities' => [
+                '1' => 'Aktivita 1 Robotika a inkluze pro nižší stupeň základních škol v hodinách STEM',
+                '2' => 'Aktivita 2 Programování v hudbě',
+                '3' => 'Aktivita 3 Pokusy a programování se sadou Makey Makey',
+                '4' => 'Aktivita 4 Algoritmus každodenní činnosti v hodině CLIL'
             ]
         ],
         '9' => [
-            'title'=>'Stavba automatu s micro:bitem',
-            'author'=>'Autorka: Pauline Maas',
-            'text'=>'<p>
+            'title' => 'Stavba automatu s micro:bitem',
+            'author' => 'Autorka: Pauline Maas',
+            'text' => '<p>
                  Použití micro:bitu, programovatelného kapesního počítače, může být zábavným a snadným způsobem, jak se studenty vytvořit zajímavé výtvory, od robotů po hudební nástroje, a zároveň je naučit programovat. Je to snadné i pro ty nejmladší programátory, a zároveň dostatečně mocné pro pokročilejší studenty. Micro:bit je možné začlenit do řady předmětů, od dějepisu po matematiku, a dokonce do přírodních věd. Možnosti jsou nekonečné. Micro:bit je motivující a nenákladný způsob, jak studenty naučit programovat a podpořit rozvoj zásadních dovedností, jako je matematické myšlení, řešení problémů a kreativita.  
                    </p>
                    <p>
                  V tomto videu vám Pauline Maas, učitelka informatiky v Koninklijke Visio, představí micro:bit a poskytne několik praktických příkladů, jak jej mohou učitelé využít ve třídě a přeměnit pasivní studenty na zapálené tvůrce.  
                 </p>',
-            'activities'=>[
-                '1'=>'Morseův kód s micro:bitem, pro základní školy',
-                '2'=>'Úniková hra s micro:bitem, pro nižší ročníky středních škol',
-                '3'=>'Stavba automatu, pro vyšší ročníky středních škol',
+            'activities' => [
+                '1' => 'Morseův kód s micro:bitem, pro základní školy',
+                '2' => 'Úniková hra s micro:bitem, pro nižší ročníky středních škol',
+                '3' => 'Stavba automatu, pro vyšší ročníky středních škol',
             ]
         ],
         '10' => [
-            'title'=>'Kreativní programování s Pythonem',
-            'author'=>'Autorka: Ivana Vezjak',
-            'text'=>'<p>
+            'title' => 'Kreativní programování s Pythonem',
+            'author' => 'Autorka: Ivana Vezjak',
+            'text' => '<p>
 Posun od vizuálního k textovému programování je v programování přirozený vývoj. Zatímco vizuální programování je často skvělé pro začátečníky, studenti mohou toužit po nové výzvě. Textové programování je dalším krokem pro kohokoli, kdo se chce do programování a matematického myšlení ponořit ještě hlouběji. 
                    </p>
                    <p>                   
@@ -150,57 +150,57 @@ V tomto videu vám Ivana Vezjak představí základní syntax Pythonu. Python je
 <p> 
 V Pythonu mohou studenti vytvářet kvízy o historických událostech, řešit matematické problémy, vytvářet fyzikální simulace, tvořit hry, stavět webové stránky, provádět datové analýzy ve vědeckých projektech a mnoho dalšího. Python má bohatou a rozsáhlou standardní knihovnu, velkou komunitu a řadu návodů a projektů dostupných online, které lze využít při učení a procvičování. Programováním v Pythonu, analyzováním programů a opravováním chyb studenti rozvíjejí svou kreativitu a učí se důslednosti, vytrvalosti a trpělivosti. Rozložením složitých problémů na menší součásti se naučí kritickému myšlení a řešení problémů. Tyto kompetence jim pomohou zaujímat správný přístup k řešení problémů v každé oblasti jejich života.
                 </p>',
-            'activities'=>[
-                '1'=>'Můj první kvíz, pro základní školy',
-                '2'=>'Šibenice, pro nižší ročníky středních škol',
-                '3'=>'Uhodni vlajku!, pro vyšší ročníky středních škol',
+            'activities' => [
+                '1' => 'Můj první kvíz, pro základní školy',
+                '2' => 'Šibenice, pro nižší ročníky středních škol',
+                '3' => 'Uhodni vlajku!, pro vyšší ročníky středních škol',
             ],
-            'links'=>[
+            'links' => [
                 'title' => 'Další související zdroje',
                 '1' => [
-                    "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"•	Standardní knihovna Pythonu",
-                    "description"=>"Sbírka předem sestavených kódů a modulů (např. želví modul, matematický modul atd.).",
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "•	Standardní knihovna Pythonu",
+                    "description" => "Sbírka předem sestavených kódů a modulů (např. želví modul, matematický modul atd.).",
                 ],
                 '2' => [
-                    "url"=>"https://codecombat.com/",
-                    "title"=>"CodeCombat",
-                    "description"=>"Vzdělávací videohra, která učí koncepty programování.",
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Vzdělávací videohra, která učí koncepty programování.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/cs-CZ/codeclub",
-                    "title"=>"Projekty CodeClub",
-                    "description"=>"Programovací projekty pro děti krok za krokem, od začátečníků po pokročilé.",
+                    "url" => "https://projects.raspberrypi.org/cs-CZ/codeclub",
+                    "title" => "Projekty CodeClub",
+                    "description" => "Programovací projekty pro děti krok za krokem, od začátečníků po pokročilé.",
                 ],
                 '4' => [
-                    "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Invent your own computer games with Python",
-                    "description"=>"Kniha, která vás naučí, jak v Pythonu naprogramovat své vlastní počítačové hry.",
+                    "url" => "https://inventwithpython.com/invent4thed/",
+                    "title" => "Invent your own computer games with Python",
+                    "description" => "Kniha, která vás naučí, jak v Pythonu naprogramovat své vlastní počítačové hry.",
                 ],
                 '5' => [
-                    "url"=>"https://www.codewars.com/",
-                    "title"=>"CodeWars",
-                    "description"=>"Vzdělávací komunita, ve které se studenti a učitelé mohou zdokonalovat prostřednictvím řady výzev.",
+                    "url" => "https://www.codewars.com/",
+                    "title" => "CodeWars",
+                    "description" => "Vzdělávací komunita, ve které se studenti a učitelé mohou zdokonalovat prostřednictvím řady výzev.",
                 ],
                 '6' => [
-                    "url"=>"https://hourofpython.com/",
-                    "title"=>"Hour of Python",
-                    "description"=>"Sbírka lekcí úvodu do Pythonu (textové a blokové), používajících interaktivní rozhraní Trinket.",
+                    "url" => "https://hourofpython.com/",
+                    "title" => "Hour of Python",
+                    "description" => "Sbírka lekcí úvodu do Pythonu (textové a blokové), používajících interaktivní rozhraní Trinket.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'Programování pomáhá se začleněním do kolektivu',
-            'author'=>'od týmu Týdne programování',
-            'text'=>'<p>
+            'title' => 'Programování pomáhá se začleněním do kolektivu',
+            'author' => 'od týmu Týdne programování',
+            'text' => '<p>
                    Zavést ve vaší třídě programování nemusí být snadné, zvlášť když v ní máte studenty s určitým postižením. Je ale důležité nezapomínat, že naučit se programovat může každý, bez ohledu na jeho schopnosti, Dětem se zvláštními potřebami může programování hodně dát, protože je učí důležitým životním dovednostem, jako je řešení problémů, organizace a nezávislost. Programování může také prostřednictvím spolupráce a týmové práce zlepšit mezilidské a sociální dovednosti, se kterými mnoho dětí se zdravotním postižením bojuje. A co je nejdůležitější, když se studenti učí společně se svými vrstevníky, užijí si při tom spoustu legrace.
                    </p><p>
                    V tomto videu vám tým Týdne programování představí několik praktických, snadných a zábavných programovacích aktivit speciálně přizpůsobených pro studenty se zrakovým postižením, Downovým syndromem a studenty s poruchou autistického spektra, které mohou učitelé snadno začlenit do výuky.
                 </p>',
-            'activities'=>[
-                '1'=>'Karton od vajec unplugged',
-                '2'=>'Velmi chytrá myš',
-                '3'=>'Hvězda vyrábí hvězdy',
+            'activities' => [
+                '1' => 'Karton od vajec unplugged',
+                '2' => 'Velmi chytrá myš',
+                '3' => 'Hvězda vyrábí hvězdy',
             ]
         ],
         "12" => [
@@ -216,24 +216,24 @@ V Pythonu mohou studenti vytvářet kvízy o historických událostech, řešit 
                 "7" => "Cíl udržitelného rozvoje 13: Přijmout bezodkladná opatření na boj se změnou klimatu a zvládání jejích dopadů",
             ],
             "activities" => [
-        "1" => "Projekt Karateka: Seznámení se s karate prostřednictvím programování pro základní a střední školy",
-        "2" => "Cíle udržitelného rozvoje a programování pro změnu klimatu, pro první stupeň základních škol",
-        "3" => "Programování pro genderovou rovnost, pro střední školy",
-    ]
-],
-"13" => [
-    "title" => "Úvod do umělé inteligence ve třídě",
-    "author" => "Artur Coelho a Marjana Prifti Skenduli",
-    "text" => [
-        "1" => "Umělá inteligence (AI) má dopad na řadu oblastí každodenního života: opravuje texty, které píšete na telefonu, vybírá hudbu, kterou přehrává váš oblíbený program, a pamatuje si hesla, která jste zapomněli. AI představuje kombinaci strojového učení, robotiky a algoritmů s aplikacemi ve všech oblastech od kybernetiky po výrobu a od medicíny pro módu. Má tedy nezaměnitelné místo v našich životech a společnostech a hraje klíčovou roli v rozvoji vědy. Studentům rozhodně prospěje, pokud se s ní seznámí blíže. Jak jim ale zprostředkovat něco tak složitého jako AI?",
-        "2" => "Tato část vám pomůže vysvětlit studentům, co je AI a jakou roli hraje v jejich životech. Tyto aktivity jsou koncipovány tak, aby je snadno pochopili laici a aby dokázali složité koncepty efektivně přeměnit ve snadno srozumitelné myšlenky. Pomocí těchto učebních plánů můžete studenty seznámit s využitím AI a některými mechanismy, o které se opírá. Tyto aktivity mají za cíl, aby si studenti rozvinuli analytické dovednosti a kritické myšlení. Kupříkladu v Marjanině aktivitě budou mít za úkol vybudovat klasifikační model. Aktivity rovněž studentům pomohou pochopit různé aplikace AI: v Arturově aktivitě se jim ozřejmí vazba mezi AI a uměním a uvidí, jak lze pomocí AI vylepšit vizuální vyjadřování. Při práci na aktivitách se studenti zamyslí i nad nebezpečími a dopady AI."
-    ],
-    "activities" => [
-    "1" => "Umění v souhře lidí aAI, pro první stupeň základních škol",
-    "2" => "Jak naučit stroje klasifikaci: Úvod do řízeného strojového učení, pro druhý stupeň základních škol",
-    "3" => "Jak naučit stroje klasifikaci: Úvod do řízeného strojového učení, pro střední školy",
-]
-],
+                "1" => "Projekt Karateka: Seznámení se s karate prostřednictvím programování pro základní a střední školy",
+                "2" => "Cíle udržitelného rozvoje a programování pro změnu klimatu, pro první stupeň základních škol",
+                "3" => "Programování pro genderovou rovnost, pro střední školy",
+            ]
+        ],
+        "13" => [
+            "title" => "Úvod do umělé inteligence ve třídě",
+            "author" => "Artur Coelho a Marjana Prifti Skenduli",
+            "text" => [
+                "1" => "Umělá inteligence (AI) má dopad na řadu oblastí každodenního života: opravuje texty, které píšete na telefonu, vybírá hudbu, kterou přehrává váš oblíbený program, a pamatuje si hesla, která jste zapomněli. AI představuje kombinaci strojového učení, robotiky a algoritmů s aplikacemi ve všech oblastech od kybernetiky po výrobu a od medicíny pro módu. Má tedy nezaměnitelné místo v našich životech a společnostech a hraje klíčovou roli v rozvoji vědy. Studentům rozhodně prospěje, pokud se s ní seznámí blíže. Jak jim ale zprostředkovat něco tak složitého jako AI?",
+                "2" => "Tato část vám pomůže vysvětlit studentům, co je AI a jakou roli hraje v jejich životech. Tyto aktivity jsou koncipovány tak, aby je snadno pochopili laici a aby dokázali složité koncepty efektivně přeměnit ve snadno srozumitelné myšlenky. Pomocí těchto učebních plánů můžete studenty seznámit s využitím AI a některými mechanismy, o které se opírá. Tyto aktivity mají za cíl, aby si studenti rozvinuli analytické dovednosti a kritické myšlení. Kupříkladu v Marjanině aktivitě budou mít za úkol vybudovat klasifikační model. Aktivity rovněž studentům pomohou pochopit různé aplikace AI: v Arturově aktivitě se jim ozřejmí vazba mezi AI a uměním a uvidí, jak lze pomocí AI vylepšit vizuální vyjadřování. Při práci na aktivitách se studenti zamyslí i nad nebezpečími a dopady AI."
+            ],
+            "activities" => [
+                "1" => "Umění v souhře lidí aAI, pro první stupeň základních škol",
+                "2" => "Jak naučit stroje klasifikaci: Úvod do řízeného strojového učení, pro druhý stupeň základních škol",
+                "3" => "Jak naučit stroje klasifikaci: Úvod do řízeného strojového učení, pro střední školy",
+            ]
+        ],
 
         '14' => [
             'title' => 'Učení v éře inteligentních strojů',
@@ -247,6 +247,21 @@ V Pythonu mohou studenti vytvářet kvízy o historických událostech, řešit 
                 '1' => 'AI a její neuronové sítě, pro 1. stupeň ZŠ',
                 '2' => 'Můj covidový chatbot, pro 2. stupeň ZŠ',
                 '3' => 'Život v éře chytrých strojů: výzva a příležitosti, pro střední školy',
+            ]
+        ],
+
+        "15" => [
+            "title" => "Získávání mediální gramotnosti",
+            "author" => "od Marijana Smolčec, Tea Horvatić a Sanja Božinović",
+            "text" => [
+                "Výuka mediální gramotnosti nikdy předtím nebyla pro dnešní studenty tak důležitá. Studenti všech věkových skupin potřebují získat odpovídající dovednosti, vědomosti a postoje, aby byli schopni se orientovat v našem světě bohatém na média. Dovednosti v oblasti mediální gramotnosti jim pomohou používat důvěryhodný online obsah a rozpoznat zavádějící zdroje informací. Pochopí, jak ověřit fakta u informací, které najdou online, a jak je kriticky interpretovat. Zvýší své povědomí o správném využívání tvůrčí práce a uplatní své učení při vytváření vlastního tvůrčího obsahu.",
+                "Tento výukový bit vám umožní implementovat různé strategie a techniky, které vaše studenty podpoří na cestě stát se mediálně gramotnými. Při aktivitě od Marijany se studenti naučí, jak používat bezpečně a zodpovědně webový obsah. Jsou jim představeny různé druhy licencí a vyvíjejí jednoduchou aplikaci, aby předvedli, jak správně sdílet tvůrčí práci. Při aktivitě od Tey se studenti chopí úkolu dozvědět se o clickbaitech. Prostřednictvím poutavých úkolů studenti zkoumají strategie, jak identifikovat a odhalit clickbaity a učí se jim vyhnout. Sanja umožňuje studentům prozkoumat a kriticky analyzovat a vyhodnotit webový obsah, jeho relevanci, přesnost, původ a účel. Studenti se učí, jak nalézt spolehlivé zdroje online a jak rozeznat špatné informace online.",
+                "V níže uvedených plánech lekcí najdete inspirativní a poutavé aktivity ke zlepšení dovedností studentů v oblasti mediální gramotnosti:",
+            ],
+            "activities" => [
+                "1" => "Je to zdarma, pokud je to na Internetu?",
+                "2" => "Kliknout nebo nekliknout",
+                "3" => "Ověřování faktů",
             ]
         ],
 

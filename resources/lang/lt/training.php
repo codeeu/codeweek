@@ -252,6 +252,21 @@ Naudodami „Python“, mokiniai gali kurti viktorinas apie istorinius įvykius,
             ]
         ],
 
+        "15" => [
+            "title" => "Žiniasklaidos priemonių raštingumo ugdymas",
+            "author" => "autorės Marijana Smolčec, Tea Horvatić ir Sanja Božinović",
+            "text" => [
+                "Žiniasklaidos priemonių raštingumo ugdymas šiandienos mokiniams yra svarbesnis nei bet kada anksčiau. Visų amžiaus grupių mokiniai turi įgyti atitinkamų įgūdžių, žinių ir požiūrį, kad galėtų naršyti žiniasklaidos pasaulyje. Žiniasklaidos priemonių raštingumo įgūdžiai padės jiems naudoti patikimą internetinį turinį ir atpažinti klaidinančius informacijos šaltinius. Mokiniai supras, kaip patikrinti internete rastą informaciją ir kritiškai ją interpretuoti. Jie išplės savo supratimą apie tinkamą kūrybinio darbo naudojimą ir pritaikys išmoktus dalykus kurdami savo kūrybinį turinį.",
+                "Šis pamokėlių serija leis jums įgyvendinti įvairias strategijas ir metodus, kurie leis ugdyti mokinių žiniasklaidos priemonių raštingumą. Marijanos užduotyje mokiniai mokosi saugiai ir atsakingai naudotis žiniatinklio turiniu. Jie supažindinami su skirtingomis licencijomis ir sukuria paprastą programėlę, kurioje parodo, kaip tinkamai bendrinti kūrybinį darbą. Tėjos užduotyje mokiniai mokosi atpažinti antraštinį masalą. Atlikdami įtraukias užduotis, mokiniai tyrinėja antraštinio masalo atpažinimo ir atskleidimo strategijas, mokosi jų išvengti. Sanja leidžia mokiniams tyrinėti, kritiškai analizuoti ir vertinti internete randamą turinį, jo aktualumą, tikslumą, kilmę ir tikslą. Mokiniai sužino, kaip rasti patikimus šaltinius internete ir kaip atpažinti klaidingą informaciją.",
+                "Toliau pateiktuose pamokų planuose rasite įkvepiančių ir įtraukiančių veiklų, skirtų mokinių žiniasklaidos priemonių raštingumo įgūdžiams tobulinti:",
+            ],
+            "activities" => [
+                "1" => "Ar viskas, ką randame internete, yra nemokama?",
+                "2" => "Spustelėti ar nespustelėti?",
+                "3" => "Faktų tikrinimas",
+            ]
+        ],
+
 
 
     ],
