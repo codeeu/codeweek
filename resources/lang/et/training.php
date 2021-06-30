@@ -88,60 +88,60 @@ return [
             ]
         ],
         '6' => [
-            'title'=>'App Inventor ja rakenduste arendamine',
-            'author'=>'Autor: Rosanna Kurrer',
-            'text'=>'<p>Selles videos seletab Rosanna Kurrer (CyberWayFinderi asutaja), mis on App Inventor, millised eelised annab koolitunnis rakenduste arendamine ja toob praktilisi näiteid selle kohta, kuidas õpetajad saavad App Inventorit tunnis kasutada, muutes passiivsed õpilased innustunud mänguloojateks.</p>
+            'title' => 'App Inventor ja rakenduste arendamine',
+            'author' => 'Autor: Rosanna Kurrer',
+            'text' => '<p>Selles videos seletab Rosanna Kurrer (CyberWayFinderi asutaja), mis on App Inventor, millised eelised annab koolitunnis rakenduste arendamine ja toob praktilisi näiteid selle kohta, kuidas õpetajad saavad App Inventorit tunnis kasutada, muutes passiivsed õpilased innustunud mänguloojateks.</p>
 <p>Me kõik kasutame rakendusi, sest see on mugav ja kiire viis tegevusi koordineerida. Samuti kasutatakse rakendusi üha enam hariduses, sest need võimaldavad isikustatud õpet ja annavad kasutajatele võimaluse teadmisi omandada. Nii et miks mitte anda oma õpilastele võimalus luua teistele kasutajatele mõeldud haridusalane rakendus?</p>',
-            'activities'=>[
-                '1'=>'Tegevus 1 – pealkiri, 1.–6. klassile',
-                '2'=>'Tegevus 2 – pealkiri, 7.–9. klassile',
-                '3'=>'Tegevus 3 – pealkiri, 10.–12. klassile'
+            'activities' => [
+                '1' => 'Tegevus 1 – pealkiri, 1.–6. klassile',
+                '2' => 'Tegevus 2 – pealkiri, 7.–9. klassile',
+                '3' => 'Tegevus 3 – pealkiri, 10.–12. klassile'
             ]
         ],
         '7' => [
-            'title'=>'Nokitsemine ja loomine',
-            'author'=>'Autor: Diogo da Silva',
-            'text'=>'<p>Ametid ja töökohad muutuvad ning haridus sammub nende jälgedes. Valmistades õpilasi ette 21. sajandi tööeluks, on oluline arendada selliseid uusi oskusi nagu nokitsemine, loomine ja häkkimine, sest need vähendavad kooli ja tegeliku elu vahelist lõhet. Kui klassiruumist saab koostööd soosiv keskkond, kus keskendutakse probleemide lahendamisele, saavad õpilased aktiivselt kaasa lüüa ja suudavad kõigega edukalt toime tulla. Need tegevused soodustavad arutelusid, tehes klassiruumist nii teabevahetuskeskuse, kus iga osalise panus on oluline.</p> 
+            'title' => 'Nokitsemine ja loomine',
+            'author' => 'Autor: Diogo da Silva',
+            'text' => '<p>Ametid ja töökohad muutuvad ning haridus sammub nende jälgedes. Valmistades õpilasi ette 21. sajandi tööeluks, on oluline arendada selliseid uusi oskusi nagu nokitsemine, loomine ja häkkimine, sest need vähendavad kooli ja tegeliku elu vahelist lõhet. Kui klassiruumist saab koostööd soosiv keskkond, kus keskendutakse probleemide lahendamisele, saavad õpilased aktiivselt kaasa lüüa ja suudavad kõigega edukalt toime tulla. Need tegevused soodustavad arutelusid, tehes klassiruumist nii teabevahetuskeskuse, kus iga osalise panus on oluline.</p> 
 <p>Allolevas videos selgitab STEAM-meetodeid kasutav õpetaja Diogo da Silva Portugalist (Escola Global) samm-sammult, kuidas korraldada õppetundi, kus õpilased peavad lahenduse leidmiseks ise nokitsema, katsetama ja häkkima.</p>',
-            'activities'=>[
-                '1'=>'Tegevus 1 – pealkiri, 1.–6. klassile',
-                '2'=>'Tegevus 2 – pealkiri, 7.–9. klassile',
-                '3'=>'Tegevus 3 – pealkiri, 10.–12. klassile'
+            'activities' => [
+                '1' => 'Tegevus 1 – pealkiri, 1.–6. klassile',
+                '2' => 'Tegevus 2 – pealkiri, 7.–9. klassile',
+                '3' => 'Tegevus 3 – pealkiri, 10.–12. klassile'
             ]
         ],
         '8' => [
-            'title'=>'Programmeerimine kõigis õppeainetes',
-            'author'=>'Autor: M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
-            'text'=>'<p>Kui mõelda programmeerimisele koolitundides, seostub see eelkõige arvutite, tehnoloogia, matemaatika või teadusega. Aga kuna õpilasi köidavad eri tegevused ja teemad, siis miks ei võiks programmeerimist laiemalt kasutada ning rakendada seda kogu õppekava ulatuses?</p> 
+            'title' => 'Programmeerimine kõigis õppeainetes',
+            'author' => 'Autor: M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text' => '<p>Kui mõelda programmeerimisele koolitundides, seostub see eelkõige arvutite, tehnoloogia, matemaatika või teadusega. Aga kuna õpilasi köidavad eri tegevused ja teemad, siis miks ei võiks programmeerimist laiemalt kasutada ning rakendada seda kogu õppekava ulatuses?</p> 
 <p>Programmeerimise õpetamisel koolitunnis on mitu eelist – see aitab õpilastel arendada kriitilise mõtlemise ja probleemilahendusoskust, saada aktiivseteks kasutajateks ja juhtida oma õppeprotsessi, mis on koolis käimise puhul oluline. Ent kõige tähtsam on see, et õpilased omandavad teadmisi, veetes samal ajal lõbusalt aega.</p>
 <p>Keeled, muusika, aga ka loodus- ja täppisteadused ning tehnoloogia (LTT) on vaid mõned õppeained, kus õpetajad võivad tulevastele teadlastele, muusikutele, kunstnikele või mis tahes ameti pidajatele programmeerimist tutvustada. Kõik õpetajad võivad programmeerimise ja arvutusliku mõtlemise õpetamise oma tunnitegevusega ühendada. Lõimitud aine- ja keeleõppe rakendamine igapäevaelus kasutatava algoritmi selgitamiseks, vildist juhtkangi valmistamine teaduste tundma õppimiseks või õpperobotite kasutamine motivatsiooni suurendamiseks matemaatikas on vaid mõned näited tegevustest, mida saate tunnis korraldada.</p> 
 <p>Alltoodud videost võite näha, kuidas teadusainete, muusika- ja keeleõpetajad võivad programmeerimise ja arvutusliku mõtlemise õpetamise hõlpsasti tunnitegevusse kaasata, isegi kui neil ei ole varasemat kogemust. </p>',
-            'activities'=>[
-                '1'=>'Tegevus 1. Robootika ja selle kaasamine LTT õpetamisse algkoolis',
-                '2'=>'Tegevus 2. Muusika on programmeerimine!',
-                '3'=>'Tegevus 3. Nokitsemine ja programmeerimine Makey Makeyga.',
-                '4'=>'Tegevus 4. Igapäevaelus kasutatav algoritm lõimitud aine- ja keeleõppe tunni jaoks.'
+            'activities' => [
+                '1' => 'Tegevus 1. Robootika ja selle kaasamine LTT õpetamisse algkoolis',
+                '2' => 'Tegevus 2. Muusika on programmeerimine!',
+                '3' => 'Tegevus 3. Nokitsemine ja programmeerimine Makey Makeyga.',
+                '4' => 'Tegevus 4. Igapäevaelus kasutatav algoritm lõimitud aine- ja keeleõppe tunni jaoks.'
             ]
         ],
         '9' => [
-            'title'=>'Automaadi tegemine micro:biti abil',
-            'author'=>'Pauline Maas',
-            'text'=>'<p>
+            'title' => 'Automaadi tegemine micro:biti abil',
+            'author' => 'Pauline Maas',
+            'text' => '<p>
                    Kergesti programmeeritava pihusuuruse arvuti micro:bit abil saab õpilastega teha lõbusalt ja hõlpsalt huvitavaid asju robotitest muusikainstrumentideni ning samal ajal õpetada neile programmeerimist. Seda on lihtne kasutada ka kõige noorematel programmeerijatel, kuid samas on see piisavalt võimas ka asjatundlikumatele õpilastele. Seda saab kasutada erinevates ainetundides, alustades ajaloost ning lõpetades matemaatika ja füüsikaga. Selle võimalused on lõputud. Micro:bit on haarav ja soodne viis õpetada õpilastele programmeerimist ja samal ajal ka muid tähtsaid oskusi, nagu algoritmilist mõtlemist, probleemide lahendamist ja loovust.
                    </p>
                    <p>
                    Selles videos tutvustab Koninklijke Visio informaatikaõpetaja Pauline Maas micro:bitti ja toob mõned praktilised näited, kuidas õpetajad saavad seda tundides kasutada, et muuta passiivsed õpilased innukateks loojateks.
                 </p>',
-            'activities'=>[
-                '1'=>'morsekood micro:biti abil algkoolile',
-                '2'=>'põgenemistuba micro:biti abil põhikooli esimesele astmele',
-                '3'=>'automaadi tegemine põhikooli teisele astmele',
+            'activities' => [
+                '1' => 'morsekood micro:biti abil algkoolile',
+                '2' => 'põgenemistuba micro:biti abil põhikooli esimesele astmele',
+                '3' => 'automaadi tegemine põhikooli teisele astmele',
             ]
         ],
         '10' => [
-            'title'=>'Loominguline programmeerimine Pythoniga',
-            'author'=>'Ivana Vezjak',
-            'text'=>'<p>
+            'title' => 'Loominguline programmeerimine Pythoniga',
+            'author' => 'Ivana Vezjak',
+            'text' => '<p>
 Visuaalselt tekstipõhisele üleminek on programmeerimises loomulik areng. Kuigi visuaalne programmeerimine on enamasti algajaile sobiv, võivad õpilased mõne aja pärast soovida uut väljakutset. Tekstipõhine progammeerimine on järgmine samm, kui on huvi programmeerimise ja algoritmilise mõtlemisega põhjalikumalt tegeleda.
                    </p>
                    <p>                   
@@ -150,57 +150,57 @@ Selles videos tutvustab Ivana Vezjak Pythoni põhisüntaksit. Python on tänapä
 <p> 
 Pythoni abil saavad õpilased koostada viktoriine ajaloosündmuste kohta, lahendada matemaatikaülesandeid, teha füüsikalisi simulatsioone, luua mänge, koostada veebisaite, teha teadusprojektide jaoks andmeanalüüse ja palju muud. Pythonil on suur ja mitmekülgne standardteek, suur kogukond ning suur hulk veebis saadaolevaid juhendeid ja projekte, mida saab kasutada õpetades, õppides ja harjutades. Õpilased saavad Pythoniga programmeerides, programme analüüsides ja vigu parandades arendada oma loovust ning õppida järjekindlust, püsivust ja kannatlikkust. Nad õpivad analüütilist mõtlemist ja probleemide lahendamist, jagades keerulised probleemid väiksemateks osadeks. Sellised pädevused aitavad neil leida probleemidele sobiva lähenemisviisi kõigil elualadel.
                 </p>',
-            'activities'=>[
-                '1'=>'minu esimene viktoriin algkoolile',
-                '2'=>'poomismäng Hangman põhikooli esimesele astmele',
-                '3'=>'lippude tundmine põhikooli teisele astmele!',
+            'activities' => [
+                '1' => 'minu esimene viktoriin algkoolile',
+                '2' => 'poomismäng Hangman põhikooli esimesele astmele',
+                '3' => 'lippude tundmine põhikooli teisele astmele!',
             ],
-            'links'=>[
+            'links' => [
                 'title' => 'Lisamaterjalid',
                 '1' => [
-                    "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Pythoni standardteek",
-                    "description"=>"Valmiskoodi ja moodulite kogu (nt kilpkonna ja matemaatika moodul jne)",
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "Pythoni standardteek",
+                    "description" => "Valmiskoodi ja moodulite kogu (nt kilpkonna ja matemaatika moodul jne)",
                 ],
                 '2' => [
-                    "url"=>"https://codecombat.com/",
-                    "title"=>"CodeCombat",
-                    "description"=>"Õppevideomäng programmeerimise põhimõtete õppimiseks",
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Õppevideomäng programmeerimise põhimõtete õppimiseks",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/en/codeclub",
-                    "title"=>"CodeClubi projektid",
-                    "description"=>"Sammsammulised programmeerimisprojektid lastele algajatest edasijõudnuteni",
+                    "url" => "https://projects.raspberrypi.org/en/codeclub",
+                    "title" => "CodeClubi projektid",
+                    "description" => "Sammsammulised programmeerimisprojektid lastele algajatest edasijõudnuteni",
                 ],
                 '4' => [
-                    "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Invent your own computer games with Python",
-                    "description"=>"Raamat, mis õpetab Pythoni abil ise arvutimänge programmeerima",
+                    "url" => "https://inventwithpython.com/invent4thed/",
+                    "title" => "Invent your own computer games with Python",
+                    "description" => "Raamat, mis õpetab Pythoni abil ise arvutimänge programmeerima",
                 ],
                 '5' => [
-                    "url"=>"https://www.codewars.com/",
-                    "title"=>"CodeWars",
-                    "description"=>"Õppekogukond, kus õpilased ja õpetajad saavad mitmesuguste ülesannete abil õppida",
+                    "url" => "https://www.codewars.com/",
+                    "title" => "CodeWars",
+                    "description" => "Õppekogukond, kus õpilased ja õpetajad saavad mitmesuguste ülesannete abil õppida",
                 ],
                 '6' => [
-                    "url"=>"https://hourofpython.com/",
-                    "title"=>"Hour of Python",
-                    "description"=>"Pythoni sissejuhatavate õppetundide kogu (nii tekstipõhine kui ka plokkidega), kus kasutatakse interaktiivseid Trinketeid",
+                    "url" => "https://hourofpython.com/",
+                    "title" => "Hour of Python",
+                    "description" => "Pythoni sissejuhatavate õppetundide kogu (nii tekstipõhine kui ka plokkidega), kus kasutatakse interaktiivseid Trinketeid",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'Programmeerimine kaasamiseks',
-            'author'=>'programmeerimisnädala Code Week töörühm',
-            'text'=>'<p>
+            'title' => 'Programmeerimine kaasamiseks',
+            'author' => 'programmeerimisnädala Code Week töörühm',
+            'text' => '<p>
                    Programmeerimist võib olla keeruline tundides kasutada, eriti kui teie klassis on teatavate puuetega õpilasi. Tähtis on siiski meeles pidada, et olenemata võimetest suudavad kõik programmeerima õppida. Erivajadustega lastele võib programmeerimise õppimine olla väga kasulik, sest see õpetab olulisi eluks vajalikke oskusi, nagu probleemide lahendamist, oma elu korraldamist ja iseseisvust. Programmeerides saab koostöö ja rühmatöö kaudu arendada ka käitumis- ja suhtlemisoskusi, millega on paljudel puuetega lastel raskusi. Kõige tähtsam on aga see, et eakaaslastega õppimise kõrval on see ka huvitav.
                    </p><p>
             Selles videos näitab Code Weeki töörühm mõnda praktilist, lihtsat ja lõbusat programmeerimistegevust, mis on kohandatud spetsiaalselt nägemispuuete, Downi sündroomi ja autismispektri häiretega õpilastele ning mida õpetajad saavad hõlpsalt oma tundides rakendada.       
                 </p>',
-            'activities'=>[
-                '1'=>'juhtmeta munakarp',
-                '2'=>'väga nutikas hiir',
-                '3'=>'tähti loov täht',
+            'activities' => [
+                '1' => 'juhtmeta munakarp',
+                '2' => 'väga nutikas hiir',
+                '3' => 'tähti loov täht',
             ]
         ],
         "12" => [
@@ -251,7 +251,20 @@ Pythoni abil saavad õpilased koostada viktoriine ajaloosündmuste kohta, lahend
             ]
         ],
 
-
+        '15' => [
+            "title" => "Meedia kirjaoskuse tundmaõppimine",
+            "author" => "Marijana Smolčec, Tea Horvatić ja Sanja Božinović",
+            "text" => [
+                "Meedia kirjaoskus ei ole tänapäeva õpilaste jaoks olnud kunagi tähtsam kui praegu. Igas vanuses õpilased igas vanusest  omandama vajalikud oskused, teadmised ja hoiakud, et meie meediarikkas maailmas ringi liikuda. Meedia kirjaoskus aitab neil kasutada usaldusväärset veebisisu ja ära tunda eksitavad teabeallikad. Nad mõistavad, kuidas internetis leiduvat teavet faktiliselt kontrollida ja seda kriitiliselt tõlgendada. Nad suurendavad teadlikkust loometöö nõuetekohase kasutamise kohta ja rakendavad oma teadmisi enda loomingulise infosisu loomisel.",
+                "See õppematerjal võimaldab teil rakendada erinevaid strateegiaid ja meetodeid, et anda oma õpilastele võimalus saada meedias kirjaoskajaks. Marijana tegevusega õpivad õpilased kasutama veebisisu ohutult ja vastutustundlikult. Neile tutvustatakse eri liiki litsentside ja nad töötavad välja lihtsa rakenduse, mis näitab, kuidas loomingulist tööd õigesti jagada. Tea tegevuses alustavad õpilased tööd klõpsusöötade tundmaõppimise kohta. Õpilased uurivad tööülesannete kaudu strateegiaid, mille abil teha kindlaks ja paljastada klõpsusöödad, ning õpivad neid vältima. Sanja võimaldab õpilaste uurida ja analüüsida veebisisu, selle asjakohasust, täpsust, päritolu ja eesmärki. Nad õpivad, kuidas leida võrgus usaldusväärseid allikaid ja kuidas ära tunda valet võrguteavet." .
+                "Allpool toodud õppekavade raames leiate inspireerivaid ja kaasavaid tegevusi õpilaste meediapädevuse parandamiseks:",
+            ],
+            "activities" => [
+                "1" => "Kas see on tasuta, kui see on internetis?",
+                "2" => "Klõpsata või mitte",
+                "3" => " Faktide kontrollimine",
+            ]
+        ]
 
 
     ],
