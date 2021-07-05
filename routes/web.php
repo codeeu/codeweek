@@ -53,6 +53,7 @@ Route::get('/code-hunting-game', 'StaticPageController@static')->name('code-hunt
 Route::get('/codeweek2020', 'StaticPageController@static')->name('codeweek2020');
 Route::get('/treasure-hunt', 'StaticPageController@static')->name('treasure-hunt');
 Route::get('/dance', 'StaticPageController@static')->name('dance');
+Route::get('/why-coding', 'StaticPageController@static')->name('why-coding');
 
 
 //Static training pages
@@ -71,6 +72,7 @@ Route::get('/training/coding-for-inclusion', 'StaticPageController@static')->nam
 Route::get('/training/introduction-to-artificial-intelligence-in-the-classroom', 'StaticPageController@static')->name('training.module-13');
 Route::get('/training/coding-for-sustainable-development-goals', 'StaticPageController@static')->name('training.module-12');
 Route::get('/training/learning-in-the-age-of-intelligent-machines', 'StaticPageController@static')->name('training.module-14');
+Route::get('/training/mining-media-literacy', 'StaticPageController@static')->name('training.module-15');
 
 Route::get('/resources/CodingAtHome', 'CodingAtHomeController@show')->name('coding@home');
 Route::view('/resources/CodingAtHome/introduction', 'codingathome.introduction')->name('codingathome-introduction');

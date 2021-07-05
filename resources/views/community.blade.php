@@ -20,12 +20,13 @@
         <section class="codeweek-content-wrapper">
 
 
-
-            <p style="line-height: 30px;">@lang('community.intro.0').<br/>@lang('community.intro.1')</p><h3>@lang('community.intro.2')</h3>
+            <p style="line-height: 30px;">@lang('community.intro.0').<br/>@lang('community.intro.1')</p>
+            <h3>@lang('community.intro.2')</h3>
 
             <section class="codeweek-searchbox">
                 <form method="get" action="/community" enctype="multipart/form-data">
-                    <select id="id_country" name="country_iso" onchange="this.form.submit()" class="codeweek-input-select">
+                    <select id="id_country" name="country_iso" onchange="this.form.submit()"
+                            class="codeweek-input-select">
                         @foreach ($countries as $country)
                             <option value="{{$country->iso}}" {{app('request')->input('country_iso') == $country->iso ? 'selected' : ''}}>{{$country->translation}}</option>
                         @endforeach
@@ -39,19 +40,19 @@
                             @lang('countries.'.$country->name)
                         </h1>--}}
 
-{{--                        <div class="codeweek-tools">--}}
+                        {{--                        <div class="codeweek-tools">--}}
 
-{{--                            @if($country->facebook)--}}
-{{--                                <a href="{{$country->facebook}}" class="codeweek-blank-button" target="_blank">--}}
-{{--                                    @lang('ambassador.visit_the') <span>@lang('ambassador.local_facebook_page')</span>--}}
-{{--                                </a>--}}
-{{--                            @endif--}}
+                        {{--                            @if($country->facebook)--}}
+                        {{--                                <a href="{{$country->facebook}}" class="codeweek-blank-button" target="_blank">--}}
+                        {{--                                    @lang('ambassador.visit_the') <span>@lang('ambassador.local_facebook_page')</span>--}}
+                        {{--                                </a>--}}
+                        {{--                            @endif--}}
 
-{{--                            @if($country->website)--}}
-{{--                                <a href="{{$country->website}}" class="codeweek-blank-button" target="_blank">--}}
-{{--                                    @lang('ambassador.visit_the') <span>@lang('ambassador.local_website')</span>--}}
-{{--                                </a>--}}
-{{--                            @endif--}}
+                        {{--                            @if($country->website)--}}
+                        {{--                                <a href="{{$country->website}}" class="codeweek-blank-button" target="_blank">--}}
+                        {{--                                    @lang('ambassador.visit_the') <span>@lang('ambassador.local_website')</span>--}}
+                        {{--                                </a>--}}
+                        {{--                            @endif--}}
 
 {{--                        </div>--}}
                     @endif
@@ -72,6 +73,32 @@
                         </div>
                     </div>
                 </section>
+
+                <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 16px">
+
+                    @if(app('request')->input('country_iso'))
+                        @foreach ($countries as $country)
+                            @if($country->iso === app('request')->input('country_iso'))
+
+                                @if($country->facebook)
+                                    <a href="{{$country->facebook}}" class="codeweek-orange-button" target="_blank">
+                                        @lang('ambassador.visit_the')
+                                        <span>@lang('ambassador.local_facebook_page')</span>
+                                    </a>
+                                @endif
+
+                                @if($country->website)
+                                    <a href="{{$country->website}}" class="codeweek-orange-button" target="_blank">
+                                        @lang('ambassador.visit_the') <span>@lang('ambassador.local_website')</span>
+                                    </a>
+                                @endif
+
+                            @endif
+                        @endforeach
+                    @endif
+
+
+                </div>
 
                 <div class="codeweek-grid-layout">
                     @forelse ($ambassadors as $ambassador)
@@ -219,7 +246,7 @@
 
         var mymap = L.map('mapid');
 
-        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYWxhaW52ZCIsImEiOiJja2c4NGJvd28wZG15MnBxb3pqdGJpMnFmIn0.4PZI2skT6BVtl9f5jRTnBQ', {
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={{env('MAPS_MAPBOX_ACCESS_TOKEN')}}', {
             maxZoom: 18,
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
                 'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -229,21 +256,24 @@
         }).addTo(mymap);
 
 
-        @foreach($teachers as $teacher)
-        L.marker([{{$teacher->city->latitude}}, {{$teacher->city->longitude}}]).addTo(mymap)
-            .bindPopup("<b>{{$teacher->firstname}} {{$teacher->lastname}}</b><br />{{$teacher->city->city}}").openPopup();
+        @foreach($teachers->groupBy('city_id') as $cityId => $teachersInCity)
+
+            $marker = L.marker([{{$teachersInCity[0]->city->latitude}}, {{$teachersInCity[0]->city->longitude}}]).addTo(mymap)
+
+        $teachersList = "";
+        @foreach($teachersInCity as $teacher)
+            $teachersList = $teachersList + "&#9679;&nbsp;<b><a href=\"mailto:{{$teacher->email}}\">{{$teacher->firstname}} {{$teacher->lastname}}</a></b> ({{$teacher->city->city}}) <br/>{{implode(", ",$teacher->expertises->pluck('name')->toArray())}}<br/><br/>"
+        @endforeach
+
+
+        $marker.bindPopup($teachersList).openPopup();
+
+
         @endforeach
 
         var popup = L.popup();
 
-        function onMapClick(e) {
-            popup
-                .setLatLng(e.latlng)
-                .setContent("You clicked the map at " + e.latlng.toString())
-                .openOn(mymap);
-        }
 
-        mymap.on('click', onMapClick);
 
         let centerInfo = {
             latitude: 51,
@@ -252,10 +282,10 @@
         };
 
 
-            const countryInfo = centroids.find(ctrds => ctrds.iso === '{{$country_iso}}');
-            if (countryInfo){
-                centerInfo = countryInfo;
-            }
+        const countryInfo = centroids.find(ctrds => ctrds.iso === '{{$country_iso}}');
+        if (countryInfo) {
+            centerInfo = countryInfo;
+        }
 
         const latlng = new L.LatLng(centerInfo.latitude, centerInfo.longitude);
         mymap.setView(latlng, centerInfo.zoom, {animation: true});

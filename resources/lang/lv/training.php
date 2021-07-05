@@ -251,6 +251,21 @@ Ar Python skolēni var veidot viktorīnas par vēstures notikumiem, risināt mat
             ]
         ],
 
+        "15" => [
+            "title" => "Medijpratības veidošana",
+            "author" => "Marijana Smolčec, Tea Horvatić un Sanja Božinović",
+            "text" => [
+                "Mācīt medijpratību skolēniem vēl nekad nav bijis tik svarīgi. Visa vecuma skolēniem ir jāapgūst nepieciešamās iemaņas, zināšanas un attieksme, lai spētu orientēties mūsu medijiem pārpilnajā pasaulē. Medijpratība palīdzēs viņiem izmantot ticamu tiešsaistes saturu un atpazīt maldinošus informācijas avotus. Viņi sapratīs, kā pārbaudīt tiešsaistē atrodamās informācijas pamatā esošos faktus un kritiski to interpretēt. Viņi veidos izpratni par to, kā pareizi izmantot radošu darbu, un pielietos apgūto, veidojot savu radošo saturu.",
+                "Šis mācību modulis ļaus jums īstenot dažādas stratēģijas un paņēmienus, lai dotu skolēniem iespēju apgūt medijpratību. Marijanas aktivitātes ietvaros skolēni mācās, kā droši un atbildīgi izmantot tiešsaistes saturu. Viņi iepazīstas ar dažāda veida licencēm un izveido vienkāršu lietotni, lai demonstrētu, kā pareizi kopīgot radošu darbu. Teas aktivitātē skolēni dodas zināšanu meklējumos par klikšķēsmām. Pildot aizraujošus uzdevumus, skolēni pēta stratēģijas, kā konstatēt un atklāt klikšķēsmas, un mācās no tām izvairīties. Sanja ļauj skolēniem pētīt, kritiski analizēt un novērtēt tiešsaistes saturu, tā atbilstību, pareizību, izcelsmi un nolūku. Viņi iemācās, kā atrast tiešsaistē uzticamus avotus un kā atpazīt nepatiesu tiešsaistes informāciju.",
+                "Zemāk redzamajos nodarbību plānos ir iedvesmojošas un aizraujošas aktivitātes, lai uzlabotu skolēnu medijpratību:",
+            ],
+            "activities" => [
+                "1" => "Ja tas ir internetā, vai tas ir bezmaksas?",
+                "2" => "Klikšķināt vai neklikšķināt",
+                "3" => "Faktu pārbaude",
+            ]
+        ],
+
 
 
 

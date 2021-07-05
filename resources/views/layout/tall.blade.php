@@ -42,7 +42,7 @@
 
     <!-- Title, keywords, description -->
     <meta name="description"
-          content="October 10 - 25, 2020: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding."/>
+          content="October 9 - 24, 2021: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding."/>
 
 
     <title>Europe Code Week</title>

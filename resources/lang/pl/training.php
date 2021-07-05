@@ -247,7 +247,21 @@ W proponowanym filmie zespół Tygodnia Kodowania prezentuje kilka praktycznych,
                 'title' => 'W ramach lekcji prowadzonych zgodnie z poniższymi scenariuszami, uczniowie w zabawny i wciągający sposób poznają inteligentne maszyny.',
                 '1' => 'Sztuczna inteligencja i jej sieci neuronowe, dla szkoły podstawowej',
                 '2' => 'Mój Chatbot o Covid-19 , dla uczniów gimnazjum',
-                '3' =>'Życie w epoce „inteligentnych maszyn”: wyzwania i szanse, dla uczniów szkoły ponadpodstawowej',
+                '3' => 'Życie w epoce „inteligentnych maszyn”: wyzwania i szanse, dla uczniów szkoły ponadpodstawowej',
+            ]
+        ],
+        "15" => [
+            "title" => "Umiejętność korzystania z mediów",
+            "author" => "Marijana Smolčec, Tea Horvatić and Sanja Božinović",
+            "text" => [
+                "Nabywanie umiejętności korzystania z mediów nigdy nie była ważniejsza dla uczniów niż dzisiaj. Uczniowie w każdym wieku muszą zdobyć odpowiednie umiejętności, wiedzę i postawy, aby móc poruszać się w naszym bogatym w media świecie. Umiejętności korzystania z mediów pomogą im korzystać z wiarygodnych treści online i rozpoznawać wprowadzające w błąd źródła informacji. Zrozumieją, jak weryfikować informacje znalezione w Internecie i krytycznie je zinterpretować. Podniosą świadomość prawidłowego wykorzystania pracy twórczej i wykorzystają zdobytą wiedzę przy tworzeniu własnych treści twórczych",
+                "Ten bit szkoleniowy pozwoli Ci wdrożyć różne strategie i techniki, aby umożliwić uczniom nabycie umiejętności korzystania z mediów. W działalności Marijany uczniowie uczą się, jak bezpiecznie i odpowiedzialnie korzystać z treści internetowych. Poznają różne rodzaje licencji i opracowują prostą aplikację, aby zademonstrować, jak prawidłowo udostępniać prace twórcze. W ramach aktywności Tea uczniowie wyruszają na poszukiwanie wiedzy o klikbejtach. Poprzez angażujące zadania uczniowie odkrywają strategie identyfikowania i odkrywania klikbejtów oraz uczą się, jak ich unikać. Sanja pozwala uczniom odkrywać i krytycznie analizować i oceniać treści internetowe, ich trafność, dokładność, pochodzenie i cel. Uczą się, jak znajdować wiarygodne źródła w Internecie i jak rozpoznawać fałszywe informacje w Internecie.",
+                "W poniższych scenariuszach lekcji znajdziesz inspirujące i angażujące zajęcia, które poprawią umiejętności uczniów w zakresie umiejętności korzystania z mediów:",
+            ],
+            "activities" => [
+                "1" => "Czy jeśli jest coś dostępne Internecie, to jest bezpłatne?",
+                "2" => "Kliknąć czy nie kliknąć",
+                "3" => "Sprawdzanie faktów",
             ]
         ],
 
