@@ -261,8 +261,23 @@ I den här videon kommer Code Week-teamet att visa dig några praktiska, enkla o
 
                 '3' => 'Att leva i en tid av ”Smarta maskiner”: Utmaningar och möjligheter för gymnasieskolan',
 
-            ] 
+            ]
 
+        ],
+
+        "15" => [
+            "title" => "Utvinning av Mediakunskap",
+            "author" => "av Marijana Smolčec, Tea Horvatić och Sanja Božinović",
+            "text" => [
+                "Mediakunskap utbildning har aldrig varit viktigare för dagens studenter. Studenter i alla åldrar behöver skaffa sig relevanta förmågor, kunskap och attityder för att kunna navigera vår media-rika värld. Mediakunskap förmågor kommer att hjälpa dem att använda trovärdigt online innehåll och känna igen vilseledande källor för information. De kommer att förstå hur man fakta-kontrollerar information de hittar online och kritiskt granska den. De kommer att öka sin uppmärksamhet på korrekt användning av kreativa arbeten och applicera samma inlärning som när de skapar sitt egna kreativa material.",
+                "Denna Inlärnings Bit kommer att möjliggöra för dig att implementera olika strategier och tekniker för att göra så att dina studenter blir mer mediakunniga. I Marijana’s aktivitet, lär sig studenterna hur man använder Webb innehåll säkert och ansvarsfullt. De introduceras för olika typer av licenser och de utvecklar en enkel app för att demonstrera hur man skapar kreativt arbete korrekt. I Tea´s aktivitet, ger sig studenterna ut på ett uppdrag för att lära sig om clickbaits. Genom engagerande uppgifter utforskar studenterna strategier för att identifiera och avslöja clickbait och lära sig hur man undviker dem. Sanja låter studenterna utforska och kritiskt analysera och utvärdera Webb-innehåll, dess relevans, tillförlitlighet, ursprung och syfte. De lär sig hur man hitta pålitliga källor online och hur man känner igen falsk information online.",
+                "I lektionsplanerna nedanför, kommer du att hitta inspiration och engagerande aktiviteter för att stärka studentens förmågor i mediakunskap",
+            ],
+            "activities" => [
+                "1" => "Är det gratis när det är på Internet?",
+                "2" => "Att klicka eller inte klicka",
+                "3" => "Fakta-kontroll",
+            ]
         ],
 
 

@@ -318,6 +318,20 @@ With Python, students can create quizzes about historical events, solve math pro
                 '3' => 'Living in the Age of “Smart Machines”: Challenges and Opportunities',
             ]
         ],
+        "15" => [
+            "title" => "Mining Media Literacy",
+            "author" => "by Marijana Smolčec, Tea Horvatić and Sanja Božinović",
+            "text" => [
+                "Media literacy education has never been more important for today’s students. Students of all ages need to gain relevant skills, knowledge and attitudes to be able to navigate our media-rich world. Media literacy skills will help them use credible online content and recognise misleading sources of information. They will understand how to fact-check information they find online and critically interpret it. They will raise their awareness of proper use of creative work and apply their learning when creating their own creative content.",
+                "This Learning Bit will enable you to implement various strategies and techniques to empower your students to become media literate. In Marijana’s activity, students learn how to use Web content safely and responsibly. They are introduced to different types of licenses and they develop a simple app to demonstrate how to share creative work properly. In Tea’s activity, students embark on a quest to learn about clickbaits. Through engaging tasks students explore strategies to identify and uncover clickbaits and learn how to avoid them. Sanja allows students to explore and critically analyse and evaluate Web content, its relevance, accuracy, origin and purpose. They learn how to find reliable sources online and how to recognise false online information.",
+                "In the lesson plans below, you will find inspiring and engaging activities to enhance student media literacy skills:",
+            ],
+            "activities" => [
+                "1" => "Is it free if it is on the Internet?",
+                "2" => "To click or not to click",
+                "3" => "Fact-checking",
+            ]
+        ],
     ],
     'download_video_script' => 'Download the video script',
     'ready_to_share' => 'Ready to share what you learnt with your students?',

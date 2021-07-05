@@ -255,6 +255,21 @@ Con Python gli studenti possono creare quiz su eventi storici, risolvere problem
             ]
         ],
 
+        "15" => [
+            "title" => "Sfruttamento dell’alfabetizzazione mediatica",
+            "author" => "di Marijana Smolčec, Tea Horvatić e Sanja Božinović",
+            "text" => [
+                "L’educazione all'alfabetizzazione mediatica non è mai stata così importante come per gli studenti del giorno d’oggi. Gli studenti di tutte le età hanno bisogno di ottenere abilità, conoscenze e attitudini rilevanti per essere in grado di navigare nel nostro mondo ricco di media. Le abilità di alfabetizzazione mediatica li aiuteranno a usare contenuti online credibili e riconoscere fonti di informazione fuorvianti. Capiranno come verificare le informazioni che trovano online e come interpretarle in modo critico. Miglioreranno la loro consapevolezza dell’uso coretto di lavori creativi e applicheranno le nozioni apprese durante la creazione dei loro contenuti creativi.",
+                "Questo Bit di Apprendimento ti permetterà di implementare varie strategie e tecniche per dare la capacità ai tuoi studenti di comprendere i media. Nell'attività di Marijana, gli studenti imparano come usare i contenuti Web in modo sicuro e responsabile. Gli vengono presentati diversi tipi di licenze e sviluppano una semplice app per dimostrare come condividere lavori creativi in modo appropriato. Nell'attività di Tea, gli studenti si imbarcano in una missione per imparare di più sui clickbait. Attraverso attività coinvolgenti, gli studenti esplorano le strategie per identificare e scoprire i clickbait e imparano come evitarli. Sanja permette agli studenti di esplorare e analizzare in modo critico e valutare contenuti Web, la loro pertinenza, precisione, origine e scopo. Imparano come trovare fonti affidabili online e come riconoscere informazioni false online.",
+                "Nei seguenti piani di lezione, troverai attività stimolanti e coinvolgenti per migliorare le abilità di alfabetizzazione mediatica dello studente:",
+            ],
+            "activities" => [
+                "1" => "È gratuito o è su Internet?",
+                "2" => "Cliccare o non cliccare",
+                "3" => "Verifica dei dati",
+            ]
+        ],
+
 
     ],
     'download_video_script' => 'Scarica lo script video',

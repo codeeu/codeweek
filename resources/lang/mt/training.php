@@ -253,6 +253,21 @@ F’dan il-vidjow, it-tim tal-Ġimgħa tal-Ikkowdjar se jurik xi attivitajiet pr
             ]
         ],
 
+        "15" => [
+            "title" => "Estrazzjoni tal-Litteriżmu Medjatiku",
+            "author" => "minn Marijana Smolčec, Tea Horvatić u Sanja Božinović",
+            "text" => [
+                "L-edukazzjoni tal-litteriżmu medjatiku qatt ma kienet aktar importanti għall-istudenti tal-lum. Studenti ta’ kull età għandhom bżonn jiksbu ħiliet, għarfien u attitudnijiet rilevanti biex ikunu jistgħu jinnavigaw fid-dinja tagħna mimlija midja. Il-ħiliet tal-litteriżmu medjatiku jgħinuhom jużaw kontenut online kredibbli u jirrikonoxxu sorsi ta’ informazzjoni qarrieqa. Huma se jifhmu kif jivverifikaw l-informazzjoni li jsibu online u jinterpretawha b’mod kritiku. Huma jqajmu l-għarfien tagħhom dwar l-użu xieraq tax-xogħol kreattiv u japplikaw it-tagħlim tagħhom meta joħolqu l-kontenut kreattiv tagħhom stess.",
+                "Dan il-Learning Bit jippermettilek timplimenta diversi strateġiji u tekniki biex tagħti s-setgħa lill-istudenti tiegħek biex isiru litterati fil-midja. Fl-attività ta’ Marijana, l-istudenti jitgħallmu kif jużaw il-kontenut tal-web b’mod sikur u responsabbli. Huma jiġu introdotti għal tipi differenti ta’ liċenzji u jiżviluppaw app sempliċi biex juru kif jaqsmu sew ix-xogħol kreattiv. Fl-attività ta’ Tea, l-istudenti jibdew quest biex jitgħallmu dwar clickbaits. Permezz ta’ kompiti ta’ involviment l-istudenti jesploraw strateġiji biex jidentifikaw u jiskopru clickbaits u jitgħallmu kif jevitawhom. Sanja tippermetti lill-istudenti jesploraw u janalizzaw u jevalwaw b’mod kritiku l-kontenut tal-web, ir-rilevanza, il-preċiżjoni, l-oriġini u l-iskop tiegħu. Huma jitgħallmu kif isibu sorsi online affidabbli u kif jagħrfu informazzjoni online falza.",
+                "Fil-pjanijiet tal-lezzjoni t’hawn taħt, ser issib attivitajiet ta’ ispirazzjoni u involviment biex ittejjeb il-ħiliet tal-litteriżmu medjatiku tal-istudenti:",
+            ],
+            "activities" => [
+                "1" => "Huwa b’xejn jekk ikun fuq l-Internet?",
+                "2" => "Tikklikkja jew ma tikklikkjax",
+                "3" => "Verifika tal-fatti",
+            ]
+        ],
+
 
     ],
     'download_video_script' => '',
