@@ -48,6 +48,7 @@
                     <li><a href="/dance">@lang('snippets.dance.menu')</a></li>
                     <li><a href="/treasure-hunt">@lang('snippets.treasure-hunt.menu')</a></li>
                     <li><a href="/why-coding">@lang('why-coding.titles.0')</a></li>
+                    <li><a href="/remote-teaching">@lang('remote-teaching.remote-teaching')</a></li>
                     <li><a href="/our-values">@lang('menu.values')</a></li>
                     <li><a href="/partners">@lang('about.partners_and_sponsors')</a></li>
                 </ul>
