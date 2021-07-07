@@ -26,8 +26,7 @@ return [
                             Dixhital</a>. Në <a
                                 href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Planin
                             e masave të Edukimit Dixhital</a> Komisioni veçanërisht inkurajon shkollat
-                        që të bëhen pjesë e nismës. Objektivi është të arrihet
-                        50% e të gjitha shkollave në Evropë deri në vitin 2021.</p>',
+                        që të bëhen pjesë e nismës.</p>',
     'schools-title'=>'Shkollat',
     'schools-text'=>'<p>Shkollat në çdo nivel dhe mësuesit e të gjitha lëndëve janë
                         veçanërisht të ftuar të marrin pjesë në EU Code Week, për t’u
