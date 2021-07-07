@@ -56,10 +56,7 @@
 
             <h2>@lang('guide.material.title')</h2>
             @lang('guide.material.text')
-            <ul>
-                <li>@lang('guide.material.items.1')</li>
-                <li>@lang('guide.material.items.2')</li>
-            </ul>
+            <p>@lang('snippets.guide.tutorials.1') <a href="{{route('training.index')}}">@lang('snippets.guide.tutorials.2')</a> @lang('snippets.guide.tutorials.3')</p>
 
             <h2>@lang('guide.toolkits.title')</h2>
             <ul>
