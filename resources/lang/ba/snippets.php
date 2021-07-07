@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+    "featured-activities" => "Evo predstojećih aktivnosti koje su predstavljene na Evropskoj sedmici kodiranja, a koje pozdravljaju online učesnike. Možete filtrirati prema jeziku i mjesecu, a klikom na \"prikaz\" pristupićete svim detaljima o aktivnostima i kontaktima organizatora.. Uživajte!",
+    "learn" => "Kodiranje i programiranje su ključne kompetencije koje se sve više traže u svakom polju, a Evropska sedmica kodiranja vas želi podržati u učenju! Pregledajte naše skladište i pronađite savršen resurs za početak ili nastavak vašeg kodiranja. Svi ovi resursi su besplatni. Nemojte zaboraviti da svoju pretragu možete filtrirati prema vrsti resursa, nivou vještina, programskom jeziku, kategoriji i jeziku.",
+    "teach" => "Kodiranje i programiranje su ključne kompetencije koje će otvoriti nove mogućnosti vašim studentima i djeci. Da li želite podučavati kodiranje kod kuće, u učionici ili klubu za kodiranje? Pregledajte naše skladište kako biste pronašli najprikladniji resurs za uvođenje kodiranja i programiranja u vašu nastavnu praksu. Svi ovi resursi su besplatni. Ne zaboravite da svoju pretragu možete filtrirati prema vrsti resursa, nivou vještina, programskom jeziku, temi, kategoriji i jeziku.",
+    "toolkits" => [
+        "U ovom odjeljku ćete pronaći materijal koji će vam pomoći da organizujete svoje aktivnosti u Evropskoj sedmici kodiranja i promovišete inicijativu u svojoj zajednici.",
+        "Komunikacijski alati",
+        "ovdje možete pronaći službene logotipe Evropske sedmice kodiranja, značku, letak, plakat, PowerPoint i Word predloške, primjere objava na društvenim mrežama i ilustracije.",
+        "Alati za nastavnike",
+        "ovdje možete pronaći službene logotipe Evropske sedmice kodiranja, značku, obrazac potvrde o učestvovanju za vaše učenike, uvodnu prezentaciju o Evropskoj sedmici kodiranja i materijal za društvene mreže.",
+        "Službeni letak Evropske sedmice kodiranja",
+    ],
     "about" => [
         "goal" => "Cilj je pomoći većem broju mladih ljudi da savladaju osnove kodiranja i računarskog razmišljanja."
     ],

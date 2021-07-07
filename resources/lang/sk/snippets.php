@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+    "featured-activities" => "Tu nájdete aktivity, ktoré sa uskutočnia v rámci Európskeho týždňa programovania a na ktorých je možné zúčastniť sa online. Môžete ich filtrovať podľa jazyka a mesiaca a keď kliknete na „zobraziť“, získate prístup ku všetkým podrobnostiam o aktivite a kontaktom na jej organizátorov. Príjemnú zábavu!",
+    "learn" => "Kódovanie a programovanie predstavujú kľúčové kompetencie, po ktorých je stále väčší dopyt vo všetkých oblastiach, a Európsky týždeň programovania vás chce pri učení podporiť! Pozrite si náš archív a nájdite ten najlepší zdroj pre začiatok svojej cesty k programovaniu alebo pokračovanie v nej. Všetky tieto zdroje sú bezplatné. Nezabudnite, že vyhľadávanie môžete filtrovať podľa druhu zdrojov, úrovne zručností, programovacieho jazyka, kategórie a jazyka.",
+    "teach" => "Kódovanie a programovanie predstavujú kľúčové kompetencie, ktoré vašim študentom a deťom otvoria nové možnosti. Chcete vyučovať programovanie doma, v triede alebo v programátorskom klube? Pozrite si náš archív a nájdite najvhodnejší zdroj na zaradenie kódovania a programovania do vyučovania. Všetky tieto zdroje sú bezplatné. Nezabudnite, že vyhľadávanie môžete filtrovať podľa druhu zdrojov, úrovne zručností, programovacieho jazyka, predmetu, kategórie a jazyka.",
+    "toolkits" => [
+        "V tejto časti nájdete materiály, ktoré vám pomôžu zorganizovať aktivitu v rámci Európskeho týždňa programovania a propagovať túto iniciatívu v rámci vašej komunity.",
+        "Komunikačné nástroje",
+        "Nájdete tu oficiálne logá, znak, leták, plagát, vzory v PowerPointe a vo Worde, príklady príspevkov na sociálnych sieťach a ilustrácie týkajúce sa Európskeho týždňa programovania.",
+        "Nástroje pre učiteľov",
+        "Nájdete tu oficiálne logá, znak, vzor potvrdení o účasti pre vašich študentov, úvodnú prezentáciu a materiály pre sociálne médiá týkajúce sa Európskeho týždňa programovania.",
+        "Oficiálny leták Európskeho týždňa programovania.",
+    ],
     "about" => [
         "goal" => "Cieľom je pomôcť väčšiemu počtu mladých ľudí osvojiť si základy programovania a počítačového myslenia."
     ],

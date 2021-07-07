@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+    "featured-activities" => "Tässä osiossa on tulevia EU:n koodausviikon tapahtumia, joihin voi osallistua myös verkossa. Voit suodattaa tapahtumia kielen ja kuukauden mukaan. Tarkemmat tiedot ja järjestäjien yhteystiedot saat esiin Näytä-painikkeesta. Kannattaa tutustua!",
+    "learn" => "Koodaus ja ohjelmointi ovat avaintaitoja, joita tarvitaan yhä enemmän joka alalla. EU:n koodausviikko haluaa tukea sinua niiden oppimisessa. Selaa tarjontaa ja etsi sopiva aineisto, jonka avulla voit tutustua koodauksen saloihin tai syventää tietämystäsi. Kaikki aineistot ovat ilmaisia. Voit suodattaa hakua aineiston tyypin, taitotason, ohjelmointikielen, luokan ja kielen mukaan.",
+    "teach" => "Koodaus ja ohjelmointi ovat avaintaitoja, jotka avaavat oppilaillesi uusia mahdollisuuksia. Haluatko opettaa koodausta kotona, luokkahuoneessa vai koodauskerhossa? Selaa tarjontaa ja etsi sopivin aineisto, jonka avulla voit ottaa koodauksen ja ohjelmoinnin osaksi opetustasi. Kaikki aineistot ovat ilmaisia. Voit suodattaa hakua aineiston tyypin, taitotason, ohjelmointikielen, aiheen, luokan ja kielen mukaan.",
+    "toolkits" => [
+        "Tässä osiossa on aineistoja, joiden avulla voit järjestää EU:n koodausviikolla oman tapahtumasi ja mainostaa teemaviikkoa yhteisössäsi.",
+        "Viestintäaineistot",
+        "EU:n koodausviikon viralliset logot, pinssi, esite, juliste, PowerPoint- ja Word-pohjatiedostot, esimerkkejä sosiaalisen median julkaisuista sekä kuvitusaineistoa",
+        "Opettajien työkalut",
+        "EU:n koodausviikon viralliset logot, pinssi, oppilaan osallistumistodistuksen malli, koodausviikon yleisesitys sekä aineistoa sosiaalista mediaa varten",
+        "EU:n koodausviikon virallinen esittelylehtinen",
+    ],
     "about" => [
         "goal" => "Tavoite on saada yhä useammat nuoret oppimaan koodauksen ja laskennallisen ajattelun perusteet."
     ],
