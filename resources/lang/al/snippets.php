@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+    "featured-activities" => "Këtu janë aktivitetet e ardhshme të veçuara të EU Code Week që mirëpresin pjesëmarrësit në internet. Ju mund të filtroni sipas gjuhës dhe muajit dhe, duke klikuar te “pamja” do të keni akses në të gjitha detajet mbi aktivitetin dhe kontaktet e organizatorëve. Shijoje!",
+    "learn" => "Kodimi dhe programimi janë kompetenca kyçe që gjithnjë e më shumë kërkohen në çdo fushë dhe EU Code Week dëshiron t'ju mbështesë në mësimin tuaj! Shfletoni depon tonë dhe gjeni burimin perfekt për të filluar ose për të vazhduar udhëtimin tuaj të kodimit. Të gjitha këto burime janë falas. Mos harroni se mund ta filtroni kërkimin tuaj sipas llojit të burimit, nivelit të aftësive, gjuhës së programimit, kategorisë dhe gjuhës.",
+    "teach" => "Kodimi dhe programimi janë kompetenca kryesore të cilat do të hapin mundësi të reja për nxënësit dhe fëmijët tuaj. A doni të mësoni kodim në shtëpi, në klasë ose në klubin e kodimit? Shfletoni depon tonë për të gjetur burimin më të përshtatshëm për të sjellë kodimin dhe programimin në praktikën tuaj të mësimdhënies. Të gjitha këto burime janë falas. Mos harroni se mund ta filtroni kërkimin tuaj sipas llojit të burimit, nivelit të aftësive, gjuhës së programimit, subjektit, kategorisë dhe gjuhës.",
+    "toolkits" => [
+        "Në këtë pjesë do të gjeni materiale të cilat do t'ju ndihmojnë të organizoni aktivitetin tuaj të EU Code Week dhe të promovoni iniciativën me komunitetin tuaj.",
+        "Seti i mjeteve të komunikimit",
+        "gjeni këtu logot zyrtare të EU Code Week, distinktivin, fletushkën, posterin, shabllonet në PowerPoint dhe Word, shembuj të postimeve në media sociale dhe ilustrime.",
+        "Seti i mjeteve të mësuesve",
+        "gjeni këtu logot zyrtare të EU Code Week, distinktivin, shabllonin e certifikatës së pjesëmarrjes për nxënësit tuaj, një prezantim hyrës rreth EU Code Week dhe materialin e medias sociale.",
+        "Fletëpalosja zyrtare e EU Code Week",
+    ],
     "about" => [
         "goal" => "Objektivi është të ndihmohen më shumë të rinj për të përvetësuar bazat e kodimit dhe mendimit kompjuterik."
     ],

@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+    "featured-activities" => "Dawn huma l-attivitajiet li jmiss tal-Ġimgħa Ewropea tal-Ikkowdjar li jilqgħu lill-parteċipanti online. Tista’ tiffiltra skont il-lingwa u x-xahar u, billi tikklikkja fuq “ara” se taċċessa d-dettalji kollha dwar l-attività u l-kuntatti tal-organizzaturi. Ħu gost!",
+    "learn" => "L-ikkowdjar u l-ipprogrammar huma kompetenzi ewlenin li qed jintalbu dejjem aktar f’kull qasam, u l-Ġimgħa Ewropea tal-Ikkowdjar trid tappoġġjak fit-tagħlim tiegħek! Ibbrawżja r-repożitorju tagħna u sib ir-riżorsa perfetta biex tibda jew tkompli l-vjaġġ tiegħek fl-ikkowdjar. Ir-riżorsi ta’ tagħlim kollha huma bla ħlas. Tinsiex li tista’ tiffiltra t-tfittxija tiegħek skont it-tip ta’ riżorsa, il-livell tal-ħiliet, il-lingwa tal-ipprogrammar, il-kategorija u l-lingwa.",
+    "teach" => "L-ikkowdjar u l-ipprogrammar huma kompetenzi ewlenin li se jiftħu possibbiltajiet ġodda għall-istudenti u t-tfal tiegħek. Trid tgħallem l-ikkowdjar id-dar, fil-klassi jew fil-klabb tal-ikkowdjar? Ibbrawżja r-repożitorju tagħna biex issib l-aktar riżorsa xierqa biex iddaħħal l-ikkowdjar u l-ipprogrammar fil-prattika tat-tagħlim tiegħek. Dawn ir-riżorsi kollha huma bla ħlas. Tinsiex li tista’ tiffiltra t-tfittxija tiegħek skont it-tip ta’ riżorsa, il-livell tal-ħiliet, il-lingwa tal-ipprogrammar, is-suġġett, il-kategorija u l-lingwa.",
+    "toolkits" => [
+        "F’din it-taqsima se ssib materjal li jgħinek torganizza l-attività tiegħek tal-Ġimgħa Ewropea tal-Ikkowdjar, u tippromwovi l-inizjattiva mal-komunità tiegħek.",
+        "Sett ta’ għodod ta’ komunikazzjoni",
+        "sib hawnhekk il-logos uffiċjali tal-Ġimgħa Ewropea tal-Ikkowdjar, il-badge, il-fuljett, il-kartelluni, it-templates PowerPoint u Word, eżempji ta’ posts tal-media soċjali, u illustrazzjonijiet.",
+        "Sett ta’ għodod għall-għalliema",
+        "sib hawnhekk il-logos uffiċjali tal-Ġimgħa Ewropea tal-Ikkowdjar, il-badge, it-template taċ-ċertifikat tal-parteċipazzjoni għall-istudenti tiegħek, preżentazzjoni introduttorja dwar il-Ġimgħa Ewropea tal-Ikkowdjar, u l-materjal tal-media soċjali.",
+        "Fuljett uffiċjali tal-Ġimgħa Ewropea tal-Ikkowdjar.",
+    ],
     "about" => [
         "goal" => "L-għan huwa li tingħata għajnuna lil aktar żgħażagħ biex isiru esperti fl-affarijiet bażiċi tal-kodifikazzjoni u tal-ħsieb komputazzjonali."
     ],

@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+    "featured-activities" => "Šeit ir aprakstītas gaidāmās rekomendētās ES programmēšanas nedēļas aktivitātes, kurās var piedalīties tiešsaistē. Varat filtrēt pēc valodas un mēneša un, noklikšķinot uz “Skatīt”, jūs piekļūsiet visai informācijai par attiecīgo pasākumu un organizatoru kontaktinformācijai. Veiksmi!",
+    "learn" => "Spēja programmēt un izstrādāt kodu ir svarīgas prasmes, kas kļūst arvien pieprasītākas it visās jomās, un ES programmēšanas nedēļa vēlas jūs atbalstīt mācību procesā! Pārlūkojiet mūsu resursu sadaļu un atrodiet vispiemērotākos resursus, lai sāktu vai turpinātu apgūt programmēšanu. Visi šie resursi ir bezmaksas. Neaizmirstiet, ka meklēšanu var filtrēt pēc resursa veida, prasmju līmeņa, programmēšanas valodas, kategorijas un valodas.",
+    "teach" => "Spēja programmēt un izstrādāt kodu ir svarīgas prasmes, kas pavērs jaunas iespējas jūsu mācību dalībniekiem un bērniem. Vai vēlaties pasniegt programmēšanu mājās, klasē vai programmēšanas klubā? Pārlūkojiet mūsu resursu sadaļu, lai atrastu vispiemērotākos resursus, lai koda izstrādi un programmēšanu iekļautu jūsu mācību programmā. Visi šie resursi ir bezmaksas. Neaizmirstiet, ka meklēšanu var filtrēt pēc resursa veida, prasmju līmeņa, programmēšanas valodas, tēmas, kategorijas un valodas.",
+    "toolkits" => [
+        "Šajā sadaļā atradīsiet materiālus, kas jums palīdzēs noorganizēt jūsu ES programmēšanas nedēļas aktivitāti un popularizēt šo iniciatīvu jūsu kopienā.",
+        "Saziņas rīkkopa",
+        "šeit ir atrodami oficiālie ES programmēšanas nedēļas logotipi, žetons, informatīvā lapiņa, plakāts, PowerPoint un Word veidnes, sociālo plašsaziņas līdzekļu ierakstu piemēri un ilustrācijas.",
+        "Rīkkopa skolotājiem",
+        "šeit ir atrodami oficiālie ES programmēšanas nedēļas logotipi, žetons, dalības sertifikāta veidne jūsu skolēniem, ievadprezentācija par ES programmēšanas nedēļu un sociālo plašsaziņas līdzekļu materiāli.",
+        "ES programmēšanas nedēļas oficiālā brošūra.",
+    ],
     "about" => [
         "goal" => "Mērķis ir palīdzēt lielākam skaitam jauniešu apgūt programmēšanas un skaitļošanas domāšanas pamatus."
     ],

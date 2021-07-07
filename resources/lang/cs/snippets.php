@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+    "featured-activities" => "Představujeme vám hlavní aktivity nadcházejícího Evropského týdne programování, který proběhne on-line. Můžete je filtrovat podle jazyka a měsíce konání. Kliknutím na „Zobrazit“ si zobrazíte všechny podrobnosti o dané aktivitě a kontakt na organizátory. Příjemnou zábavu!",
+    "learn" => "Programování je klíčovou kompetencí, která je v každé oblasti stále víc žádána. A právě Evropský týden programování vás chce při studiu podpořit! Projděte si naše úložiště a najděte si optimální zdroj pro začátek nebo pro pokračování v cestě programováním. Všechny tyto zdroje jsou zdarma. Filtr vyhledávání si můžete nastavit podle typu zdroje, úrovně dovedností, programovacího jazyka, kategorie a jazyka.",
+    "teach" => "Programování je klíčová kompetence, která vašim studentům a dětem otevře nové možnosti. Chcete učit programování doma, ve škole nebo v programátorském klubu? Projděte si naši nabídku a najděte si zdroj, který vás zaujme. Všechny tyto zdroje jsou zdarma. Filtr vyhledávání si můžete nastavit podle typu zdroje, úrovně dovedností, programovacího jazyka, tématu, kategorie a jazyka.",
+    "toolkits" => [
+        "V tomto oddíle najdete materiál, který vám pomůže zorganizovat aktivitu v rámci Evropského týdne programování a propagovat tuto iniciativu ve vašem okolí.",
+        "Komunikační materiály",
+        "zde najdete oficiální loga Evropského týdne programování, odznak, leták, plakát, šablony pro PowerPoint a Word, příklady příspěvků na sociálních médiích a ilustrace.",
+        "Materiály pro učitele",
+        "zde najdete oficiální loga Evropského týdne programování, odznak, šablonu osvědčení o účasti pro vaše studenty, úvodní prezentaci o Evropském týdnu programování a materiál pro sociální média.",
+        "Oficiální leták Evropského týdne programování",
+    ],
     "about" => [
         "goal" => "Naším cílem je více pomoci mladým lidem zvládnout základy programování a informatického myšlení."
     ],
