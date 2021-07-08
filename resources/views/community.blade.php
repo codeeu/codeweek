@@ -33,10 +33,12 @@
                     </select>
                 </form>
             </section>
-
-            {{--<h1>
-                @lang('countries.'.$country->name)
-            </h1>--}}
+            @if(app('request')->input('country_iso'))
+                @foreach ($countries as $country)
+                    @if($country->iso === app('request')->input('country_iso'))
+                        {{--<h1>
+                            @lang('countries.'.$country->name)
+                        </h1>--}}
 
             {{--                        <div class="codeweek-tools">--}}
 
@@ -52,8 +54,10 @@
             {{--                                </a>--}}
             {{--                            @endif--}}
 
-            {{--                        </div>--}}
-
+{{--                        </div>--}}
+                    @endif
+                @endforeach
+            @endif
 
             <section class="codeweek-blue-box">
 
@@ -73,35 +77,7 @@
                     </div>
                 </section>
 
-
-                <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 16px">
-
-                    @if(app('request')->input('country_iso'))
-                        @foreach ($countries as $country)
-                            @if($country->iso === app('request')->input('country_iso'))
-
-                                @if($country->facebook)
-                                    <a href="{{$country->facebook}}" class="codeweek-orange-button" target="_blank">
-                                        @lang('ambassador.visit_the')
-                                        <span>@lang('ambassador.local_facebook_page')</span>
-                                    </a>
-                                @endif
-
-                                @if($country->website)
-                                    <a href="{{$country->website}}" class="codeweek-orange-button" target="_blank">
-                                        @lang('ambassador.visit_the') <span>@lang('ambassador.local_website')</span>
-                                    </a>
-                                @endif
-
-                            @endif
-                        @endforeach
-                    @endif
-
-
-                </div>
-
                 <div class="codeweek-grid-layout">
-
                     @forelse ($ambassadors as $ambassador)
                         <div class="codeweek-card">
                             <div class="card-avatar">
@@ -149,9 +125,9 @@
                     <h2 class="subtitle">@lang('community.titles.2')</h2>
                     <div class="community_type">
                         <div class="text">
-                            <p>
-                                @lang('community.leading-teachers')</p>
-                            <h3>@lang('community.cta')</h3>
+<p>
+    @lang('community.leading-teachers')</p>
+                                <h3>@lang('community.cta')</h3>
 
                         </div>
 
@@ -159,6 +135,7 @@
                             <img src="{{asset('/images/leading_teachers.png')}}">
                         </div>
                     </div>
+
 
 
                 </section>
@@ -224,6 +201,10 @@
         </section>
 
 
+
+
+
+
     </section>
 
 @endsection
@@ -253,7 +234,7 @@
 
         var mymap = L.map('mapid');
 
-        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYWxhaW52ZCIsImEiOiJja2c4NGJvd28wZG15MnBxb3pqdGJpMnFmIn0.4PZI2skT6BVtl9f5jRTnBQ', {
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={{env('MAPS_MAPBOX_ACCESS_TOKEN')}}', {
             maxZoom: 18,
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
                 'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -263,21 +244,24 @@
         }).addTo(mymap);
 
 
-        @foreach($teachers as $teacher)
-        L.marker([{{$teacher->city->latitude}}, {{$teacher->city->longitude}}]).addTo(mymap)
-            .bindPopup("<b>{{$teacher->firstname}} {{$teacher->lastname}}</b><br />{{$teacher->city->city}}").openPopup();
+        @foreach($teachers->groupBy('city_id') as $cityId => $teachersInCity)
+
+            $marker = L.marker([{{$teachersInCity[0]->city->latitude}}, {{$teachersInCity[0]->city->longitude}}]).addTo(mymap)
+
+        $teachersList = "";
+        @foreach($teachersInCity as $teacher)
+            $teachersList = $teachersList + "&#9679;&nbsp;<b><a href=\"mailto:{{$teacher->email}}\">{{$teacher->firstname}} {{$teacher->lastname}}</a></b> ({{$teacher->city->city}}) <br/>{{implode(", ",$teacher->expertises->pluck('name')->toArray())}}<br/><br/>"
+        @endforeach
+
+
+        $marker.bindPopup($teachersList).openPopup();
+
+
         @endforeach
 
         var popup = L.popup();
 
-        function onMapClick(e) {
-            popup
-                .setLatLng(e.latlng)
-                .setContent("You clicked the map at " + e.latlng.toString())
-                .openOn(mymap);
-        }
 
-        mymap.on('click', onMapClick);
 
         let centerInfo = {
             latitude: 51,
@@ -293,6 +277,7 @@
 
         const latlng = new L.LatLng(centerInfo.latitude, centerInfo.longitude);
         mymap.setView(latlng, centerInfo.zoom, {animation: true});
+
 
 
     </script>

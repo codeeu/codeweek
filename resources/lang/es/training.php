@@ -255,7 +255,21 @@ Con Python, los alumnos pueden crear cuestionarios sobre hechos históricos, res
                 '3' => 'Vivir en la era de las "máquinas inteligentes": retos y oportunidades, para secundaria de segundo ciclo',
             ]
         ],
+        "15" => [
+            "title" => "Educación en medios de comunicación sobre minería",
 
+            "author" => "por Marijana Smolčec, Tea Horvatić y Sanja Božinović",
+            "text" => [
+                "La educación en materia de medios de comunicación nunca ha sido tan importante para los alumnos de hoy. Los alumnos de todas las edades necesitan adquirir las habilidades, los conocimientos y las actitudes pertinentes para poder navegar por nuestro mundo rico en medios de comunicación. Las competencias en materia de medios de comunicación les ayudarán a utilizar contenidos en línea creíbles y a reconocer las fuentes de información engañosas. Entenderán cómo comprobar la información que encuentran en Internet e interpretarla de forma crítica. Se concienciarán sobre el uso adecuado del trabajo creativo y aplicarán lo aprendido al crear sus propios contenidos creativos.",
+                "Este texto sobre aprendizaje le permitirá poner en práctica diversas estrategias y técnicas para capacitar a sus alumnos en la alfabetización mediática. En la actividad de Marijana, los alumnos aprenden a utilizar los contenidos de la web de forma segura y responsable. Se les presentan los diferentes tipos de licencias y desarrollan una sencilla aplicación para demostrar cómo compartir el trabajo creativo de manera adecuada. En la actividad de Tea, los alumnos se embarcan en una búsqueda para aprender sobre los clickbaits. A través de atractivas tareas, los alumnos exploran estrategias para identificar y descubrir los clickbaits y aprender a evitarlos. Sanja permite a los alumnos explorar y analizar críticamente y evaluar el contenido de la web, su relevancia, exactitud, origen y propósito. Aprenden a encontrar fuentes fiables en Internet y a reconocer la información falsa en la red.",
+                "En los siguientes planes de clase, encontrará actividades inspiradoras y atractivas para mejorar las habilidades de los alumnos en materia de medios de comunicación:",
+            ],
+            "activities" => [
+                "1" => "¿Es gratis si está en Internet?",
+                "2" => "Hacer o no hacer clic",
+                "3" => "Comprobación de hechos",
+            ]
+        ],
 
     ],
     'download_video_script' => 'Descargar el guion del vídeo',

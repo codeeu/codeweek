@@ -118,6 +118,13 @@
                         <div class="author">@lang('training.lessons.14.author')</div>
                     </a>
                 </div>
+                <div class="codeweek-card-grid">
+                    <a href="/training/mining-media-literacy">
+                        <img src="/img/learning/mining-media-literacy.png">
+                        <div class="title">@lang('training.lessons.15.title')</div>
+                        <div class="author">@lang('training.lessons.15.author')</div>
+                    </a>
+                </div>
             </section>
 
             <section class="codeweek-content-wrapper-inside">

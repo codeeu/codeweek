@@ -88,60 +88,60 @@ return [
             ]
         ],
         '6' => [
-            'title'=>'App Inventor og appudvikling',
-            'author'=>'Af Rosanna Kurrer',
-            'text'=>'<p>Se denne video, hvor Rosanna Kurrer (stifter af CyberWayFinder) forklarer, hvad App Inventor er, gennemgår fordelene ved at anvende appudvikling i undervisningen og kommer med nogle praktiske eksempler på, hvordan lærere kan integrere App Inventor i undervisningen og gøre passive elever til entusiastiske spilproducenter.</p>
+            'title' => 'App Inventor og appudvikling',
+            'author' => 'Af Rosanna Kurrer',
+            'text' => '<p>Se denne video, hvor Rosanna Kurrer (stifter af CyberWayFinder) forklarer, hvad App Inventor er, gennemgår fordelene ved at anvende appudvikling i undervisningen og kommer med nogle praktiske eksempler på, hvordan lærere kan integrere App Inventor i undervisningen og gøre passive elever til entusiastiske spilproducenter.</p>
 <p>Vi bruger alle applikationer, da de er en bekvem og hurtig måde at koordinere vores aktiviteter på. De bruges også i stigende grad på uddannelsesområdet, da de giver mulighed for personaliseret læring og giver brugerne mulighed for at få oplysninger, så hvorfor ikke lære dine elever at bygge en uddannelsesapp til andre?</p>',
-            'activities'=>[
-                '1'=>'Aktivitet 1 – Titel, for primærskolen',
-                '2'=>'Aktivitet 2 – Titel, for det nedre trin i sekundærskolen',
-                '3'=>'Aktivitet 3 – Titel, for det øvre trin i sekundærskolen'
+            'activities' => [
+                '1' => 'Aktivitet 1 – Titel, for primærskolen',
+                '2' => 'Aktivitet 2 – Titel, for det nedre trin i sekundærskolen',
+                '3' => 'Aktivitet 3 – Titel, for det øvre trin i sekundærskolen'
             ]
         ],
         '7' => [
-            'title'=>'Tinkering og making',
-            'author'=>'Af Diogo da Silva',
-            'text'=>'<p>Vores job og arbejdspladser er under forandring, og det samme gælder på uddannelsesområdet. Som led i forberedelsen af eleverne til en karriere i det 21. århundrede er nye færdigheder såsom tinkering, making og hacking blevet af afgørende betydning, da de mindsker afstanden mellem skolen og virkeligheden. Ved at omdanne klasseværelset til et samarbejdsmiljø med fokus på problemløsning, får man engagerede elever, der trives. Disse aktiviteter fremmer diskussion, og klasseværelset bliver således et kommunikationsknudepunkt, hvor alle bidrag er vigtige.</p> 
+            'title' => 'Tinkering og making',
+            'author' => 'Af Diogo da Silva',
+            'text' => '<p>Vores job og arbejdspladser er under forandring, og det samme gælder på uddannelsesområdet. Som led i forberedelsen af eleverne til en karriere i det 21. århundrede er nye færdigheder såsom tinkering, making og hacking blevet af afgørende betydning, da de mindsker afstanden mellem skolen og virkeligheden. Ved at omdanne klasseværelset til et samarbejdsmiljø med fokus på problemløsning, får man engagerede elever, der trives. Disse aktiviteter fremmer diskussion, og klasseværelset bliver således et kommunikationsknudepunkt, hvor alle bidrag er vigtige.</p> 
 <p>Se nedenstående videoklip, hvor den portugisiske STEAM-lærer Diogo da Silva, der er medlem af Escola Global, trin for trin viser, hvordan man udvikler en lektion, hvor eleverne finder frem til en løsning gennem tinkering, making og hacking.</p>',
-            'activities'=>[
-                '1'=>'Aktivitet 1 – Titel, for primærskolen',
-                '2'=>'Aktivitet 2 – Titel, for det nedre trin i sekundærskolen',
-                '3'=>'Aktivitet 3 – Titel, for det øvre trin i sekundærskolen'
+            'activities' => [
+                '1' => 'Aktivitet 1 – Titel, for primærskolen',
+                '2' => 'Aktivitet 2 – Titel, for det nedre trin i sekundærskolen',
+                '3' => 'Aktivitet 3 – Titel, for det øvre trin i sekundærskolen'
             ]
         ],
         '8' => [
-            'title'=>'Programmering på alle fagområder',
-            'author'=>'Af M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
-            'text'=>'<p>Det første, der falder en ind, når man tænker på programmering i klasseværelset, er computere, teknologi, matematik eller naturvidenskab. Da elever har forskellige interesser og fag, hvorfor så ikke bruge dette til vores fordel og foretage programmering på tværs af alle læseplanerne?</p> 
+            'title' => 'Programmering på alle fagområder',
+            'author' => 'Af M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text' => '<p>Det første, der falder en ind, når man tænker på programmering i klasseværelset, er computere, teknologi, matematik eller naturvidenskab. Da elever har forskellige interesser og fag, hvorfor så ikke bruge dette til vores fordel og foretage programmering på tværs af alle læseplanerne?</p> 
 <p>Integrering af programmering i undervisningen har mange fordele, da det hjælper eleverne med at udvikle færdigheder såsom kritisk tænkning og problemløsning, blive aktive brugere og styre deres egen læringsproces, hvilket er afgørende i skolen. Det vigtigste er imidlertid, at eleverne lærer, mens de har det sjovt!</p>
 <p>Sprog, musik eller STEM er blot nogle af de fag, hvor lærerne kan anvende programmering for fremtidige forskere, musikere, kunstnere og ja, alle andre! Alle lærere kan integrere programmering og computertænkning i undervisningen. Brug af en CLIL-lektion til at forklare en algoritme til dagligdags ting, fremstilling af et joystick i filt for at lære om naturfag eller brug af undervisningsrobotter for at øge motivationen inden for matematik er eksempler på mulige aktiviteter i klasseværelset.</p> 
 <p>Se videoen nedenfor for at lære, hvordan undervisere i musik, naturvidenskab og sprog let kan integrere programmering og computertænkning i undervisningen, selv om de ikke har tidligere erfaringer.</p>',
-            'activities'=>[
-                '1'=>'Aktivitet 1 – Robotteknik og inklusion for elever i primærskolen i STEM',
-                '2'=>'Aktivitet 2 – Musik er programmering',
-                '3'=>'Aktivitet 3 – Tinkering og programmering med Makey Makey',
-                '4'=>'Aktivitet 4 – En algoritme til dagligdags ting til en CLIL-lektion'
+            'activities' => [
+                '1' => 'Aktivitet 1 – Robotteknik og inklusion for elever i primærskolen i STEM',
+                '2' => 'Aktivitet 2 – Musik er programmering',
+                '3' => 'Aktivitet 3 – Tinkering og programmering med Makey Makey',
+                '4' => 'Aktivitet 4 – En algoritme til dagligdags ting til en CLIL-lektion'
             ]
         ],
         '9' => [
-            'title'=>'Byg en automat med en micro:bit',
-            'author'=>'af Pauline Maas',
-            'text'=>'<p>
+            'title' => 'Byg en automat med en micro:bit',
+            'author' => 'af Pauline Maas',
+            'text' => '<p>
                    Med en Micro:bit, som er en computer i lommestørrelse, der er nem at programmere, kan du og dine elever lave spændende kreationer på en sjov og let måde, lige fra robotter til musikinstrumenter, mens du lærer eleverne at kode. Den er enkel og let at bruge for selv de yngste programmører, mens den på samme tid er kraftig nok til elever på mere avancerede trin. Du kan indarbejde den i mange forskellige fag, lige fra historie til matematik og endda fysik. Mulighederne er uendelige. Micro:bit er en spændende og billig måde at lære eleverne om at kode og samtidig give dem vigtige færdigheder som for eksempel datalogisk tænkning, problemløsning og kreativitet.
                    </p>
                    <p>
                    Pauline Maas, som er lærer i datalogi ved Koninklijke Visio, præsenterer micro:bit i denne video og giver et par praktiske eksempler på, hvordan lærere kan indarbejde den i klasselokalet og gøre passive elever til entusiastiske skabere.
                 </p>',
-            'activities'=>[
-                '1'=>'Morsekode med micro:bit, for indskolingen/mellemtrinnet',
-                '2'=>'Escape room med micro:bit, for udskolingen',
-                '3'=>'Byg en automat, for ungdomsuddannelser',
+            'activities' => [
+                '1' => 'Morsekode med micro:bit, for indskolingen/mellemtrinnet',
+                '2' => 'Escape room med micro:bit, for udskolingen',
+                '3' => 'Byg en automat, for ungdomsuddannelser',
             ]
         ],
         '10' => [
-            'title'=>'Kreativ kodning med Python',
-            'author'=>'af Ivana Vezjak',
-            'text'=>'<p>
+            'title' => 'Kreativ kodning med Python',
+            'author' => 'af Ivana Vezjak',
+            'text' => '<p>
 At gå fra visuel til tekstbaseret programmering er en naturlig udvikling i kodning. Visuel programmering kan være glimrende til begyndere, men efter et stykke tid har eleverne ofte brug for en ny udfordring. Tekstbaseret programmering er næste skridt for alle, der vil dykke længere ned i programmering og datalogisk tænkning. 
                    </p>
                    <p>                   
@@ -150,57 +150,57 @@ I denne video præsenterer Ivana Vezjak den grundlæggende syntaks i Python. Pyt
 <p> 
 Med Python kan eleverne lave quizzer om historiske begivenheder, løse matematikproblemer og lave fysiksimuleringer, lave spil, bygge websteder, analysere data til videnskabelige projekter og meget mere. Python har et fyldigt og omfattende standardbibliotek, et bredt fællesskab og et væld af vejledninger og projekter, som alle er tilgængelige på internettet, og de kan bruges til at undervise, lære og øve sig. Ved at kode i Python, analysere programmer og rette fejl udvikler eleverne deres kreativitet og lærer, hvordan man er konsekvent, vedholdende og tålmodig. De lærer analytisk tankegang og problemløsning ved at nedbryde komplekse problemer i mindre komponenter. Disse kompetencer vil hjælpe dem med deres tilgang til problemer på alle andre områder i livet.
                 </p>',
-            'activities'=>[
-                '1'=>'Min første quiz, for indskolingen/mellemtrinnet',
-                '2'=>'Galgespil, for udskolingen',
-                '3'=>'Gæt flaget!, for ungdomsuddannelser',
+            'activities' => [
+                '1' => 'Min første quiz, for indskolingen/mellemtrinnet',
+                '2' => 'Galgespil, for udskolingen',
+                '3' => 'Gæt flaget!, for ungdomsuddannelser',
             ],
-            'links'=>[
+            'links' => [
                 'title' => 'Andre relaterede ressourcer',
                 '1' => [
-                    "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Python Standard Library",
-                    "description"=>"En samling færdige kodestumper og moduler (f.eks. turtle-modul, matematikmodul osv.).",
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "Python Standard Library",
+                    "description" => "En samling færdige kodestumper og moduler (f.eks. turtle-modul, matematikmodul osv.).",
                 ],
                 '2' => [
-                    "url"=>"https://codecombat.com/",
-                    "title"=>"CodeCombat",
-                    "description"=>"Pædagogisk videospil til at lære programmeringskoncepter med.",
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Pædagogisk videospil til at lære programmeringskoncepter med.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/da-DK/codeclub",
-                    "title"=>"CodeClub projects",
-                    "description"=>"Trinvise programmeringsprojekter til børn, fra begyndere til avancerede brugere.",
+                    "url" => "https://projects.raspberrypi.org/da-DK/codeclub",
+                    "title" => "CodeClub projects",
+                    "description" => "Trinvise programmeringsprojekter til børn, fra begyndere til avancerede brugere.",
                 ],
                 '4' => [
-                    "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Invent your own computer games with Python",
-                    "description"=>"En bog, hvor du kan lære at programmere dine egne computerspil med Python.",
+                    "url" => "https://inventwithpython.com/invent4thed/",
+                    "title" => "Invent your own computer games with Python",
+                    "description" => "En bog, hvor du kan lære at programmere dine egne computerspil med Python.",
                 ],
                 '5' => [
-                    "url"=>"https://www.codewars.com/",
-                    "title"=>"CodeWars",
-                    "description"=>"Et pædagogisk fællesskab, hvor elever og lærere kan øve sig via en række udfordringer.",
+                    "url" => "https://www.codewars.com/",
+                    "title" => "CodeWars",
+                    "description" => "Et pædagogisk fællesskab, hvor elever og lærere kan øve sig via en række udfordringer.",
                 ],
                 '6' => [
-                    "url"=>"https://hourofpython.com/",
-                    "title"=>"Hour of Python",
-                    "description"=>"En samling begynderlektioner i Python (både tekstbaseret og med blokke) vha. det interaktive Trinket.",
+                    "url" => "https://hourofpython.com/",
+                    "title" => "Hour of Python",
+                    "description" => "En samling begynderlektioner i Python (både tekstbaseret og med blokke) vha. det interaktive Trinket.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'Kodning med inklusion',
-            'author'=>'af Kodeuge-teamet',
-            'text'=>'<p>
+            'title' => 'Kodning med inklusion',
+            'author' => 'af Kodeuge-teamet',
+            'text' => '<p>
                    Det kan være en udfordring at bringe kodning ind i klasseværelset, især hvis du har elever med visse funktionsnedsættelser. Det er dog vigtigt at huske, at alle uanset evner kan lære at kode. Børn med særlige behov kan få stor gavn af at lære at kode, da det giver eleverne vigtige kompetencer som for eksempel problemløsning, organisering og uafhængighed. Kodning kan også forbedre sociale kompetencer gennem samarbejde og gruppearbejde – kompetencer, som er en udfordring for mange børn med funktionsnedsættelser. Det vigtigste er, at eleverne har det sjovt, mens de lærer sammen med deres kammerater.
                    </p><p>
 I denne video viser Kodeuge-teamet nogle praktiske, nemme og sjove kodeaktiviteter, der er tilpasset specielt til elever med Downs syndrom eller diagnoser på autismespektret eller synshæmmede elever, som lærerne let kan bringe ind i klasseværelset.                   
                 </p>',
-            'activities'=>[
-                '1'=>'Æggebakkelabyrint',
-                '2'=>'En meget klog mus',
-                '3'=>'Stjerner fra stjernen',
+            'activities' => [
+                '1' => 'Æggebakkelabyrint',
+                '2' => 'En meget klog mus',
+                '3' => 'Stjerner fra stjernen',
             ]
         ],
 
@@ -252,6 +252,20 @@ I denne video viser Kodeuge-teamet nogle praktiske, nemme og sjove kodeaktivitet
             ]
         ],
 
+        "15" => [
+            "title" => "Mining Mediekendskab",
+            "author" => "af Marijana Smolčec, Tea Horvatić og SanjaBožinović",
+            "text" => [
+                "Undervisning i mediekendskab har aldrig været vigtigere for nutidens elever. Elever i alle aldre har brug for at få relevante færdigheder, viden og holdninger for at kunne navigere i vores mediarige verden. Mediekendskab vil hjælpe dem med at bruge troværdigt onlineindhold og genkende vildledende informationskilder. De vil forstå, hvordan de tjekker oplysninger, de finder online, og fortolker dem kritisk. De vil øge deres bevidsthed om korrekt brug af kreativt værk og anvende deres læring, når de skaber deres eget kreative indhold.",
+                "Denne indlærings-bit giver dig mulighed for at implementere forskellige strategier og teknikker for at give dine elever mulighed for at blive mere mediekyndige. I Marijanas aktivitet lærer eleverne, hvordan man bruger webindhold sikkert og ansvarligt. De introduceres til forskellige typer licenser, og de udvikler en simpel app til at demonstrere, hvordan man deler kreative værker korrekt. I Teas aktivitet tager eleverne på en rejse for at lære om clickbaits. Gennem engagerende opgaver undersøger eleverne strategier til at identificere og afdække clickbaits og lære at undgå dem. Sanja giver eleverne mulighed for at udforske og kritisk analysere og evaluere webindhold, dets relevans, nøjagtighed, oprindelse og formål. De lærer, hvordan man finder pålidelige kilder online, og hvordan man genkender falske onlineoplysninger.",
+                "I lektionsplanerne nedenfor finder du inspirerende og engagerende aktiviteter til forbedring af elevernes mediekendskab:",
+            ],
+            "activities" => [
+                "1" => "Er det gratis, hvis det er på Internettet?",
+                "2" => "At klikke eller ikke klikke",
+                "3" => "Kontrol af fakta",
+            ]
+        ],
 
 
     ],

@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+    "featured-activities" => "Här hittar du kommande aktiviteter som är öppna för deltagare på nätet. Du kan filtrera efter språk och månad. Klicka sedan på ”Visa” så får du tillgång till alla uppgifter om aktiviteten och arrangörernas kontaktuppgifter. Mycket nöje!",
+    "learn" => "Kodning och programmering är viktiga kompetenser som är allt mer efterfrågade på många områden. Med EU:s kodvecka kan du lära dig mer om dessa viktiga kompetenser. Sök bland våra resurser. Här hittar du allt du behöver för att börja eller fortsätta din kodningsresa. Alla resurser är gratis. Glöm inte att du kan filtrera din sökning efter typ av resurs, kompetensnivå, programmeringsspråk, kategori och språk.",
+    "teach" => "Kodning och programmering är viktiga kompetenser som ger dina elever och barn nya möjligheter. Vill du undervisa i kodning hemma, i klassrummet eller i en kodningsklubb? Bland våra resurser hittar du material för dig som vill lära ut kodning och programmering. Alla resurser är gratis. Glöm inte att du kan filtrera din sökning efter typ av resurs, kompetensnivå, programmeringsspråk, ämne, kategori och språk.",
+    "toolkits" => [
+        "Här hittar du material som hjälper dig att anordna och informera om aktiviteter inom EU:s kodvecka.",
+        "Verktygslåda för kommunikation",
+        "Här hittar du logotyperna för EU:s kodvecka, det officiella märket, flygblad, vår poster, Powerpoint- och Word-mallar, exempel på inlägg på sociala medier och illustrationer.",
+        "Verktygslåda för lärare",
+        "Här hittar du logotyperna för EU:s kodvecka, det officiella märket, deltagarcertifikat för dina elever, en inledande presentation om kodveckan och material för sociala medier.",
+        "Officiell broschyr för EU:s kodvecka.",
+    ],
     "about" => [
         "goal" => "Målet är att hjälpa fler unga att lära sig grunderna i programmering och datalogiskt tänkande."
     ],

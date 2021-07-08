@@ -255,6 +255,21 @@ Dans cette vidéo, l’équipe de la Semaine du code vous présentera quelques a
             ]
         ],
 
+        "15" => [
+            "title" => "Éducation aux médias",
+            "author" => "par Marijana Smolčec, Tea Horvatić et Sanja Božinović",
+            "text" => [
+                "L’éducation aux médias n’a jamais été aussi importante pour les élèves d’aujourd’hui. Les élèves de tous âges doivent acquérir des compétences, des connaissances et des attitudes pertinentes pour être en mesure de naviguer dans notre monde riche en médias. Les compétences en éducation aux médias les aideront à utiliser des contenus en ligne crédibles et à reconnaître les sources d’information trompeuses. Ils comprendront comment vérifier les informations qu’ils trouvent en ligne et les interpréter de manière critique. Ils seront sensibilisés à l’utilisation correcte du travail créatif et appliqueront leur apprentissage lors de la création de leur propre contenu créatif.",
+                " Ce bit d’apprentissage vous permettra de mettre en œuvre diverses stratégies et techniques pour donner à vos élèves les moyens d’acquérir une éducation aux médias. Dans l’activité de Marijana, les élèves apprennent à utiliser le contenu internet de manière sûre et responsable. Ils découvrent les différents types de licences et développent une application simple pour montrer comment partager correctement un travail créatif. Dans l’activité de Tea, les élèves se lancent dans une quête pour en savoir plus sur les clickbaits. Grâce à des tâches stimulantes, ils explorent des stratégies pour identifier et découvrir les clickbaits et apprennent à les éviter. Sanja permet aux élèves d’explorer et d’analyser de manière critique et d’évaluer le contenu internet, sa pertinence, son exactitude, son origine et son objectif. Ils apprennent à trouver des sources fiables en ligne et à reconnaître les fausses informations en ligne. ",
+                "Dans les plans de cours ci-dessous, vous trouverez des activités inspirantes et engageantes pour améliorer les compétences des élèves en matière d’éducation aux médias:",
+            ],
+            "activities" => [
+                "1" => "Est-ce gratuit si c’est sur Internet ? ",
+                "2" => "Cliquer ou ne pas cliquer",
+                "3" => "Vérification des faits",
+            ]
+        ],
+
 
     ],
     'download_video_script' => 'Télécharger le script vidéo',

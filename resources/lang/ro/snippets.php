@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+    "featured-activities" => "Iată viitoarele activități prezentate în cadrul Săptămânii UE a programării care sunt deschise participării online. Le puteți filtra în funcție de limbă și de lună și, făcând clic pe „vizualizare”, veți accesa toate detaliile despre activitate și datele de contact ale organizatorilor. Distracție plăcută!",
+    "learn" => "Codarea și programarea sunt competențe-cheie care sunt din ce în ce mai solicitate în toate domeniile, iar Săptămâna UE a programării dorește să vă sprijine în procesul de învățare! Consultați depozitul nostru și găsiți resursa perfectă pentru a vă începe sau a vă continua călătoria în domeniul programării. Toate aceste resurse sunt gratuite. Nu uitați că puteți filtra căutarea în funcție de tipul de resursă, de nivelul de competență, de limbajul de programare, de categorie și de limbă.",
+    "teach" => "Codarea și programarea sunt competențe-cheie care vor deschide noi posibilități elevilor și copiilor dumneavoastră. Doriți să predați codarea acasă, în clasă sau într-un club de programare? Consultați depozitul nostru pentru a găsi cea mai adecvată resursă prin care să introduceți codarea și programarea în practica dumneavoastră de predare. Toate aceste resurse sunt gratuite. Nu uitați că puteți filtra căutarea în funcție de tipul de resursă, de nivelul de competență, de limbajul de programare, de subiect, de categorie și de limbă.",
+    "toolkits" => [
+        "În această secțiune veți găsi materiale care vă vor ajuta să vă organizați activitatea din cadrul Săptămânii UE a programării și să promovați inițiativa împreună cu comunitatea dumneavoastră.",
+        "Set de instrumente de comunicare",
+        "găsiți aici logourile oficiale, ecusonul, broșura, afișul, modele PowerPoint și Word ale Săptămânii UE a programării, precum și exemple de postări pe platformele de comunicare socială și ilustrații.",
+        "Set de instrumente pentru profesori",
+        "găsiți aici logourile oficiale și ecusonul Săptămânii UE a programării, model de certificat de participare pentru elevii dumneavoastră, o prezentare introductivă despre Săptămâna UE a programării și materiale de pe platformele de comunicare socială.",
+        "Broșura oficială a Săptămânii UE a programării.",
+    ],
     "about" => [
         "goal" => "Scopul este să ajută mai mulți tineri să stăpânească elementele de bază ale programării și ale gândirii computaționale."
     ],

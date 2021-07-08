@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+    "featured-activities" => "Aquí están las próximas actividades destacadas de la Semana de la Programación de la UE abiertas a participantes en línea. Puedes filtrar por idioma y mes y si haces clic en «ver», accederás a todos los detalles de la actividad y a los contactos de los organizadores. ¡Que lo disfrutes!",
+    "learn" => "La codificación y la programación son competencias clave que se exigen cada vez más en todos los ámbitos, y la Semana de la Programación de la UE quiere apoyarte en tu aprendizaje. Navega por nuestro repositorio y encuentra el recurso perfecto para comenzar o continuar tu proceso de programación. Todos los recursos son gratuitos. No olvides que puedes filtrar tu búsqueda por tipo de recurso, nivel de conocimientos, lenguaje de programación, categoría e idioma.",
+    "teach" => "La codificación y la programación son competencias clave que abrirán nuevas posibilidades a tus alumnos y niños. ¿Quieres enseñar a programar en casa, en el aula o en un club de programación? Navega por nuestro repositorio para encontrar el recurso más adecuado para llevar la codificación y la programación a tu práctica docente. Todos los recursos son gratuitos. No olvides que puedes filtrar tu búsqueda por tipo de recurso, nivel de conocimientos, lenguaje de programación, tema, categoría e idioma.",
+    "toolkits" => [
+        "En esta sección encontrarás material que te ayudará a organizar tu actividad de la Semana de la Programación de la UE y a promover la iniciativa en tu comunidad. ",
+        "Paquete de herramientas de comunicación",
+        "aquí encontrarás los logotipos oficiales de la Semana de la Programación de la UE, la insignia, el folleto, el póster, las plantillas de PowerPoint y Word, ejemplos de publicaciones en las redes sociales e ilustraciones.",
+        "Paquete de herramientas para profesores",
+        "aquí encontrarás los logotipos oficiales de la Semana de la Programación de la UE, la insignia, la plantilla del certificado de participación para tus alumnos, una presentación introductoria sobre la Semana de la Programación de la UE y material para las redes sociales.",
+        "Panfleto oficial de la Semana de la Programación de la UE.",
+    ],
 "about" => [
     "goal" => "El objetivo es ayudar a más jóvenes a dominar las bases de la programación y el pensamiento computacional."
 ],
