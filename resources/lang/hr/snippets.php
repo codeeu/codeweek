@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+    "featured-activities" => "Izdvajamo nadolazeće aktivnosti Europskog tjedna programiranja u kojima možete sudjelovati putem interneta. Možete ih filtrirati po jeziku i mjesecu, a klikom na „Pogledajte” prikazat će se sve pojedinosti o određenoj aktivnosti i podaci za kontakt organizatora. Uživajte!",
+    "learn" => "Kodiranje i programiranje važne su kompetencije koje su sve traženije u svim područjima, a svrha je Europskog tjedna programiranja podržati vas u njihovu stjecanju! Pregledajte naš repozitorij i pronađite najbolji resurs s pomoću kojeg ćete započeti ili nastaviti svoj programerski put. Svi su resursi besplatni. Ne zaboravite da pretraživanje možete filtrirati po vrsti resursa, stupnju vještine, programskom jeziku, kategoriji i jeziku.",
+    "teach" => "Kodiranje i programiranje važne su kompetencije koje će otvoriti nove mogućnosti vašim učenicima i djeci. Želite li poučavati programiranje kod kuće, u učionici ili klubu za programiranje? Pregledajte naš repozitorij i pronađite najprikladniji resurs s pomoću kojeg ćete uvesti kodiranje i programiranje u nastavu. Svi su resursi besplatni. Ne zaboravite da pretraživanje možete filtrirati po vrsti resursa, stupnju vještine, programskom jeziku, temi, kategoriji i jeziku.",
+    "toolkits" => [
+        "U ovom odjeljku pronaći ćete materijale koji će vam pomoći u organizaciji aktivnosti za Europski tjedan programiranja i u promicanju te inicijative u zajednici.",
+        "Komunikacijski alati",
+        "ovdje možete pronaći službene materijale Europskog tjedna programiranja: logotipe, značke, letke, postere, predloške za PowerPoint i Word, primjere objava na društvenim mrežama i ilustracije.",
+        "Alati za učitelje",
+        "ovdje možete pronaći službene materijale Europskog tjedna programiranja: logotipe i značke, predložak potvrde o sudjelovanju za učenike, uvodnu prezentaciju o Europskom tjednu programiranja i materijale za društvene mreže.",
+        "Službeni letak Europskog tjedna programiranja.",
+    ],
     "about" => [
         "goal" => "Cilj je pomoći mladim ljudima da svladaju osnove kodiranja i računalnog razmišljanja."
     ],

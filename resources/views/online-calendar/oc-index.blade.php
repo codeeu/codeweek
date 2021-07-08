@@ -23,6 +23,12 @@
 
 @section('content')
 
+
+<x-intro-banner>@lang('snippets.featured-activities')</x-intro-banner>
+
+
+
+
     @livewire('online-calendar')
 
 @endsection

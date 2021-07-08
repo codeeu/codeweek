@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+    "featured-activities" => "Čia pateikiama planuojama ES programavimo savaitės veikla, į kurią priimami nuotoliniu būdu dalyvauti norintys asmenys. Galite sugrupuoti šią veiklą pagal kalbą ir mėnesį, o paspaudę „peržiūrėti“ matysite visą su veikla susijusią informaciją ir organizatorių kontaktus. Sėkmės!",
+    "learn" => "Programavimas yra vienas pagrindinių įgūdžių, kurių vis dažniau reikia visose srityse, o ES programavimo savaite siekiama padėti jums jų išmokti! Apsilankykite mūsų saugykloje, kurioje rasite tinkamus išteklius, kad pradėtumėte mokytis programuoti arba sustiprintumėte savo įgūdžius. Visi šie ištekliai yra nemokami. Nepamirškite, kad galite naudotis tokiais paieškos kriterijais, kaip išteklių rūšis, įgūdžių lygis, programavimo kalba, kategorija ir kalba.",
+    "teach" => "Programavimas yra vienas pagrindinių įgūdžių, galinčių atverti naujų galimybių jūsų mokiniams ir vaikams. Norite mokyti programavimo namuose, klasėje ar programavimo klube? Apsilankykite mūsų saugykloje, kurioje rasite tinkamiausius išteklius, kad įtrauktumėte programavimą į savo mokymą. Visi šie ištekliai yra nemokami. Nepamirškite, kad galite naudotis tokiais paieškos kriterijais, kaip išteklių rūšis, įgūdžių lygis, programavimo kalba, tema, kategorija ir kalba.",
+    "toolkits" => [
+        "Šioje skiltyje rasite medžiagos, kuri jums pravers organizuojant ES programavimo savaitės veiklą ir skatinant iniciatyvą savo bendruomenėje.",
+        "Komunikacijos priemonių rinkinys",
+        "jame rasite ES programavimo savaitės logotipus, ženklelį, skrajutę, plakatą „PowerPoint“ ir „Word“ šablonus, socialinių tinklų įrašų pavyzdžius ir iliustracijas.",
+        "Priemonių rinkinys mokytojams",
+        "jame rasite ES programavimo savaitės logotipus, ženklelį, dalyvavimo pažymėjimo šabloną savo mokiniams, įvadinį pristatymą apie ES programavimo savaitę ir socialinių tinklų medžiagą.",
+        "ES programavimo savaitės oficialus leidinys.",
+    ],
     "about" => [
         "goal" => "Tikslas – padėti kuo daugiau jaunuolių išmokti programavimo ir kompiuterinio mąstymo pagrindų."
     ],
