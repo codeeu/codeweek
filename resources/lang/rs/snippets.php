@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+    "featured-activities" => "Ovo su predstojeće istaknute aktivnosti tokom EU nedelje programiranja na koje se primaju učesnici na mreži. Možete da ih filtrirate po jeziku i mesecu, a klikom na dugme za prikaz pristupate svim aktivnostima i kontakt podacima organizatora. Uživajte!",
+    "learn" => "Pisanje koda i programiranje su znanja koja su sve traženija u svim oblastima, a EU nedelja programiranja je tu sa namerom da vas podrži u učenju! Pregledajte našu zbirku i pronađite savršen resurs za početak ili nastavak svog puta. Svi ti resursi su besplatni. Ne zaboravite da svoju pretragu možete da filtrirate po vrsti resursa, nivou veština, programskom jeziku, kategoriji i jeziku.",
+    "teach" => "Pisanje koda i programiranje su ključna znanja koja će doneti nove mogućnosti vašim učenicima i deci. Želite li da predajete programiranje od kuće, u učionici ili na informatičkoj sekciji? Pregledajte našu zbirku i pronađite najpogodniji resurs kojim ćete uvesti programiranje u svoju nastavnu praksu. Svi ti resursi su besplatni. Ne zaboravite da svoju pretragu možete da filtrirate po vrsti resursa, nivou veština, programskom jeziku, temi, kategoriji i jeziku.",
+    "toolkits" => [
+        "U ovom odeljku ćete pronaći materijal sa kojim ćete lakše organizovati svoje aktivnosti tokom EU nedelje programiranja i promovisati inicijativu u svojoj zajednici. ",
+        "Komplet alatki za promociju",
+        "ovde ćete pronaći zvanične logotipe EU nedelje programiranja, predloške za bedževe, letke, postere, PowerPoint i Word, primere objava na društvenim mrežama, kao i ilustracije.",
+        "Komplet alatki za nastavnike",
+        "ovde ćete pronaći zvanične logotipe EU nedelje programiranja, bedž, predloške sertifikata za učenike koji su bili učesnici, uvodne prezentacije o EU nedelji programiranja i materijal za društvene mreže.",
+        "Zvanični letak EU nedelje programiranja.",
+    ],
     "about" => [
         "goal" => "Cilj je pomoći mladima da ovladaju osnovama programiranja i programerskim načinom razmišljanja."
     ],

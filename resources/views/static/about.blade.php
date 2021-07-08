@@ -48,6 +48,9 @@
                         <h1>@lang('about.supported_by_commission-title')</h1>
 
                         @lang('about.supported_by_commission-text')
+                        <p>
+                            @lang('snippets.about.goal')
+                        </p>
 
                     </div>
 

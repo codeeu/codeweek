@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+    "featured-activities" => "Een overzicht van de onlineactiviteiten van de EU-programmeerweek. U kunt filteren op taal en maand. Als u op “view” klikt, krijgt u informatie over de activiteit en de contactpersonen. Veel plezier!",
+    "learn" => "Programmeren is een belangrijke vaardigheid waarnaar in elke sector steeds meer vraag is. De EU-programmeerweek helpt iedereen die wil leren programmeren. Blader door het overzicht en zoek het perfecte middel om je programmeeravontuur te starten of voort te zetten. Alle hulpmiddelen worden gratis ter beschikking gesteld. Denk eraan: je kunt filteren op soort hulpmiddel, vaardigheidsniveau, programmeertaal, categorie en taal.",
+    "teach" => "Programmeren is een belangrijke vaardigheid die uw leerlingen en kinderen nieuwe mogelijkheden biedt. Wilt u thuis, in de klas of bij een club lesgeven in programmeren? Blader door het overzicht om het hulpmiddel te vinden dat het beste bij uw onderwijspraktijk past. Alle hulpmiddelen worden gratis ter beschikking gesteld. Denk eraan: u kunt filteren op soort hulpmiddel, vaardigheidsniveau, programmeertaal, onderwerp, categorie en taal.",
+    "toolkits" => [
+        "In deze rubriek vindt u materiaal dat u helpt om uw activiteit in het kader van de EU-programmeerweek te organiseren en het initiatief in uw gemeenschap te promoten.",
+        "Communicatiepakket",
+        "officiële logo’s, badge, flyer en poster van de EU-programmeerweek, PowerPoint- en Word-templates, voorbeelden van posts op sociale media en illustraties.",
+        "Pakket voor leerkrachten",
+        "officiële logo’s en badge van de EU-programmeerweek, het model van het deelnamecertificaat voor uw leerlingen, een inleidende presentatie over de EU-programmeerweek en materiaal voor sociale media.",
+        "Officiële brochure van de EU-programmeerweek.",
+    ],
     "about" => [
         "goal" => "Het doel is jonge mensen te helpen om de basis van coderen en computationeel denken onder de knie te krijgen."
     ],

@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+    "featured-activities" => "Evo predstojećih aktivnosti EU Code Week-a koje čekaju onlajn učesnike.  Možete filtrirati po jeziku i mjesecu a klikom na „pregled“ pristupićete svim detaljima o aktivnostima i kontaktima organizatora.  Uživajte!",
+    "learn" => "Kodiranje i programiranje su ključne kompetencije koje se sve više traže u svim oblastima, a EU Code Week želi da vam pruži podršku u vašem učenju!  Pregledajte naše spremište i pronađite savršeni resurs za početak ili nastavak vašeg kodiranja.  Svi ovi resursi su besplatni. Ne zaboravite da pretragu možete da filtrirate prema vrsti resursa, nivou vještine, programskom jeziku, kategoriji i jeziku.",
+    "teach" => "Kodiranje i programiranje su ključne kompetencije koje će otvoriti nove mogućnosti vašim učenicima i deci.  Da li želite da predajete kodiranje doma, u učionici ili klubu za kodiranje? Pregledajte naše repozitorijum da biste pronašli najpogodniji resurs za uvođenje kodiranja i programiranja u vašu nastavnu praksu.  Svi ovi resursi su besplatni. Ne zaboravite da pretragu možete filtrirati prema vrsti resursa, nivou vještine, programskom jeziku, kategoriji i jeziku.",
+    "toolkits" => [
+        "U ovom odjeljku ćete pronaći materijal koji će vam pomoći da organizujete svoju aktivnost za EU Code Week i da promovišete inicijativu sa svojom zajednicom.",
+        "Komunikacioni priručnik",
+        "ovdje možete pronaći zvanične logotipe EU Code Week-a, značke, flajere, plakate, PowerPoint i Word modele, primjere objava na društvenim mrežama i ilustracije.",
+        "Priručnik za nastavnike",
+        "ovdje ćete pronaći zvanične logotipe EU Code Week-a, značku, obrazac potvrde o učešću vaših učenika, uvodnu prezentaciju o EU Code Week-u i materijal na društvenim mrežama.",
+        "Zvanični letak EU Code Week-a.",
+    ],
     "about" => [
         "goal" => "Cilj je pomoći većem broju mladih ljudi da savladaju osnove kodiranja i računarskog razmišljanja."
     ],
