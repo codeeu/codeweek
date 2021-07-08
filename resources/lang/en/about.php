@@ -9,6 +9,7 @@ return [
     'schools-title' => 'Schools',
     'why_coding-title' => 'Why coding?',
     'join_codeweek-title' => 'Join EU Code Week',
+    'guide' => 'Check out our tutorials and trainings available in 29 languages to get ready to organise activities where young people learn coding and computational thinking.',
 
     'when-text' => '
                 <p>
@@ -27,7 +28,7 @@ return [
 
     'supported_by_commission-text' => '
                 <p>
-                    EU Code Week was launched in 2013 by the Young Advisors for the Digital Agenda Europe. The European Commission supports EU Code Week as part of its strategy for a <a href="http://ec.europa.eu/priorities/digital-single-market/">Digital Single Market</a>. In the <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Digital Education Action Plan</a> the Commission especially encourages schools to join the initiative. The goal is to reach 50% of all schools in Europe by 2020.
+                    EU Code Week was launched in 2013 by the Young Advisors for the Digital Agenda Europe. The European Commission supports EU Code Week as part of its strategy for a <a href="http://ec.europa.eu/priorities/digital-single-market/">Digital Single Market</a>. In the <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Digital Education Action Plan</a> the Commission especially encourages schools to join the initiative.
                 </p>',
 
     'schools-text' => '

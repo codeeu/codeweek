@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+    "featured-activities" => "Her finder du kommende aktiviteter i EU's kodeuge, der byder onlinedeltagere velkommen. Du kan filtrere efter sprog og måned, og ved at klikke på \"vis\" får du adgang til alle oplysninger om aktiviteten og arrangørernes kontaktoplysninger. God fornøjelse!",
+    "learn" => "Kodning og programmering er nøglekompetencer, som i stigende grad efterspørges på alle områder, og EU's kodeuge vil støtte dig i din læring! Gennemse vores register, og find den perfekte ressource til at starte eller fortsætte din rejse med kodning. Alle ressourcerne er gratis. Husk, at du kan filtrere din søgning efter ressourcetype, færdighedsniveau, programmeringssprog, kategori og sprog.",
+    "teach" => "Kodning og programmering er nøglekompetencer, som giver dine elever og børn nye muligheder. Vil du undervise i kodning derhjemme, i klasseværelset eller i kodeklubben? Søg efter den mest velegnede ressource i vores register til at gøre kodning og programmering til en del af din undervisning. Alle ressourcerne er gratis. Husk, at du kan filtrere din søgning efter ressourcetype, færdighedsniveau, programmeringssprog, emne, kategori og sprog.",
+    "toolkits" => [
+        "I dette afsnit finder du materiale, der vil hjælpe dig med at tilrettelægge din EU-kodeugeaktivitet og promovere initiativet i dit community.",
+        "Værktøjssæt til kommunikation",
+        "Her finder du EU's kodeuges officielle logoer, badge, folder, plakater, PowerPoint- og Word-skabeloner, eksempler på opslag på sociale medier og illustrationer.",
+        "Værktøjssæt til lærere",
+        "Her finder du EU's kodeuges officielle logoer, badge, skabelon til deltagelsesbevis til dine elever, en introduktion om EU's kodeuge og materiale til de sociale medier.",
+        "Officiel brochure om EU's kodeuge.",
+    ],
     "about" => [
         "goal" => "Målet er at hjælpe flere unge med at beherske de grundlæggende principper for kodning og datamatisk tænkning."
     ],

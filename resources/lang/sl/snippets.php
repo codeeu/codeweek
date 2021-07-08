@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+    "featured-activities" => "Tu so predstavljene prihajajoče dejavnosti v okviru evropskega tedna programiranja, v katerih lahko sodelujejo spletni udeleženci. Lahko jih filtrirate po jeziku in mesecu, s klikom na „prikaži“ pa se vam bodo prikazale vse podrobnosti o dejavnosti in kontaktnih podatkih organizatorjev. Uživajte!",
+    "learn" => "Programiranje je ključna kompetenca, ki se vse pogosteje zahteva na vseh področjih, z evropskim tednom programiranja pa vas želimo podpreti pri učenju! Pobrskajte po naši shrambi in poiščite popoln vir za začetek ali nadaljevanje svojega programerskega potovanja. Vsi ti viri so brezplačni. Ne pozabite, da lahko rezultate iskanja filtrirate po vrsti vira, stopnjah veščin, programskem jeziku, kategoriji in jeziku.",
+    "teach" => "Programiranje je ključna kompetenca, ki bo vašim učencem in otrokom odprla nove možnosti. Ali želite programiranje poučevati doma, v učilnici ali v programerskem klubu? Pobrskajte po naši shrambi in poiščite najprimernejši vir za vključitev programiranja v svojo prakso poučevanja. Vsi ti viri so brezplačni. Ne pozabite, da lahko rezultate iskanja filtrirate po vrsti vira, stopnjah veščin, programskem jeziku, temi, kategoriji in jeziku.",
+    "toolkits" => [
+        "V tem razdelku boste našli gradivo, ki vam bo pomagalo pri organizaciji dejavnosti v okviru evropskega tedna programiranja in spodbujanju pobude s svojo skupnostjo.",
+        "Komunikacijsko orodje",
+        "tukaj najdete uradne logotipe evropskega tedna programiranja, priponko, letak, poster, predloge v PowerPointu in Wordu, primere objav v družbenih medijih in ilustracije.",
+        "Orodje za učitelje",
+        "tukaj najdete uradne logotipe evropskega tedna programiranja, priponko, predlogo potrdila o udeležbi za učence, uvodno predstavitev o evropskem tednu programiranja in gradiva za družbene medije.",
+        "Uradni letak evropskega tedna programiranja.",
+    ],
     "about" => [
         "goal" => "Cilj je več mladim pomagati, da se naučijo osnov programiranja in računalniškega razmišljanja."
     ],

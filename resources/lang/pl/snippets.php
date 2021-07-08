@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+    "featured-activities" => "Oto lista nadchodzących wydarzeń Europejskiego Tygodnia Kodowania, w których możesz wziąć udział zdalnie. Możesz przefiltrować je według języka lub daty. Aby dowiedzieć się więcej na temat danego wydarzenia i uzyskać dane kontaktowe do jego organizatorów, kliknij „wyświetl”. Miłej zabawy!",
+    "learn" => "Kodowanie i programowanie to jedne z najważniejszych kompetencji, coraz częściej wymaganych w każdej dziedzinie. Dzięki Europejskiemu Tygodniowi Kodowania ich nauka będzie o wiele łatwiejsza! W naszej bazie na pewno znajdziesz zasoby, które pomogą Ci rozpocząć przygodę z kodowaniem lub rozwijać już zdobyte umiejętności. Wszystkie zasoby są bezpłatne. Nasza baza pozwala wyszukiwać zasoby według rodzaju, poziomu, języka programowania, kategorii i języka.",
+    "teach" => "Kodowanie i programowanie to jedne z najważniejszych kompetencji, które otwierają przed dziećmi i uczniami nowe możliwości. Chcesz nauczać kodowania w domu, w sali lekcyjnej lub w klubie kodowania? W naszej bazie znajdziesz najlepsze zasoby, dzięki którym wprowadzisz elementy kodowania i programowania do swoich planów lekcji. Wszystkie zasoby są bezpłatne. Nasza baza pozwala wyszukiwać zasoby według rodzaju, poziomu, języka programowania, tematu, kategorii i języka.",
+    "toolkits" => [
+        "W tej sekcji znajdziesz materiały, które pomogą Ci zorganizować własne wydarzenie w ramach Tygodnia Kodowania i wypromować tę inicjatywę wśród członków Twojej społeczności.",
+        "Zestaw narzędzi komunikacyjnych",
+        "znajdziesz tu oficjalne wzory logo, odznaki, broszury, plakatu Europejskiego Tygodnia Kodowania w formacie PowerPoint i Word, a także przykładowe posty do umieszczenia w mediach społecznościowych i ilustracje.",
+        "Zestaw narzędzi dla nauczycieli",
+        "znajdziesz tu oficjalne logo i odznakę Europejskiego Tygodnia Kodowania, wzór certyfikatu uczestnictwa dla uczniów, prezentację na temat Europejskiego Tygodnia Kodowania oraz materiały do wykorzystania w mediach społecznościowych.",
+        "Oficjalna ulotka Europejskiego Tygodnia Kodowania",
+    ],
     "about" => [
         "goal" => "Chcemy, żeby więcej młodzieży opanowało podstawy kodowania i myślenia obliczeniowego."
     ],
