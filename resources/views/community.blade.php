@@ -33,31 +33,7 @@
                     </select>
                 </form>
             </section>
-            @if(app('request')->input('country_iso'))
-                @foreach ($countries as $country)
-                    @if($country->iso === app('request')->input('country_iso'))
-                        {{--<h1>
-                            @lang('countries.'.$country->name)
-                        </h1>--}}
 
-            {{--                        <div class="codeweek-tools">--}}
-
-            {{--                            @if($country->facebook)--}}
-            {{--                                <a href="{{$country->facebook}}" class="codeweek-blank-button" target="_blank">--}}
-            {{--                                    @lang('ambassador.visit_the') <span>@lang('ambassador.local_facebook_page')</span>--}}
-            {{--                                </a>--}}
-            {{--                            @endif--}}
-
-            {{--                            @if($country->website)--}}
-            {{--                                <a href="{{$country->website}}" class="codeweek-blank-button" target="_blank">--}}
-            {{--                                    @lang('ambassador.visit_the') <span>@lang('ambassador.local_website')</span>--}}
-            {{--                                </a>--}}
-            {{--                            @endif--}}
-
-{{--                        </div>--}}
-                    @endif
-                @endforeach
-            @endif
 
             <section class="codeweek-blue-box">
 
@@ -76,6 +52,32 @@
                         </div>
                     </div>
                 </section>
+
+                <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 16px">
+
+                    @if(app('request')->input('country_iso'))
+                        @foreach ($countries as $country)
+                            @if($country->iso === app('request')->input('country_iso'))
+
+                                @if($country->facebook)
+                                    <a href="{{$country->facebook}}" class="codeweek-orange-button" target="_blank">
+                                        @lang('ambassador.visit_the')
+                                        <span>@lang('ambassador.local_facebook_page')</span>
+                                    </a>
+                                @endif
+
+                                @if($country->website)
+                                    <a href="{{$country->website}}" class="codeweek-orange-button" target="_blank">
+                                        @lang('ambassador.visit_the') <span>@lang('ambassador.local_website')</span>
+                                    </a>
+                                @endif
+
+                            @endif
+                        @endforeach
+                    @endif
+
+
+                </div>
 
                 <div class="codeweek-grid-layout">
                     @forelse ($ambassadors as $ambassador)
