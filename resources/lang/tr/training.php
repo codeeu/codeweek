@@ -251,6 +251,20 @@ Bu videoda, Kod Haftası ekibi size özellikle görme bozukluğu, Down sendromu 
                 '3' => 'Akıllı Makineler Çağında Yaşamak: Ortaokul için Zorluklar ve Fırsatlar',
             ]
         ],
+        "15" => [
+            "title" => "Medya Okuryazarlığını İnceleme",
+            "author" => "Marijana Smolčec, Tea Horvatić ve Sanja Božinović tarafından hazırlanmıştır",
+            "text" => [
+                "Medya okuryazarlığı eğitimi, günümüz öğrencileri için hiç bu kadar önemli olmamıştı. Her yaştan öğrencilerin, medya açısından zengin dünyamızda yönlerini bulabilmek için ilgili becerileri, bilgileri ve tutumları kazanması gereklidir. Medya okuryazarlığı becerileri, internet üzerindeki güvenilir içerikleri kullanmalarına ve yanıltıcı bilgi kaynaklarını tanımalarına yardımcı olacaktır. İnternette buldukları bilgilerin gerçek olup olmadığını kontrol etmeyi ve bu bilgileri eleştirel bir şekilde yorumlamayı anlayacaklar. Yaratıcı çalışmaların doğru kullanımı konusundaki farkındalıkları artacak; kendi yaratıcı içeriklerini oluştururken öğrendiklerini uygulayacaklar.",
+                "Bu Öğrenme Dilimi, öğrencilerinizin medya okuryazarlarına dönüşmesini sağlamak için çeşitli stratejiler ve teknikler uygulamanızı sağlayacaktır. Marijana’nın etkinliğinde, öğrenciler web içeriklerini güvenli ve sorumlu bir şekilde kullanmayı öğrenir. Farklı lisans türlerini öğrenirler ve yaratıcı çalışmaların nasıl doğru şekilde paylaşılacağını göstermek için basit bir uygulama geliştirirler. Tea’nın etkinliğinde, öğrenciler tıklama tuzakları hakkında bilgi edinecekleri bir maceraya çıkar. Öğrenciler ilgi çekici görevler aracılığıyla tıklama tuzaklarını tespit etme ve ortaya çıkarmaya yönelik stratejiler keşfeder ve bu tuzaklardan nasıl kaçınacaklarını öğrenir. Sanja, öğrencilerin web içeriklerini, içeriklerin ilgi düzeyini, doğruluğunu, kaynağını ve amacını keşfetmelerini ve eleştirel bir şekilde analiz etmelerini ve değerlendirmelerini sağlar. İnternet üzerinde güvenilir kaynakları nasıl bulacaklarını ve internet üzerindeki yanlış bilgileri nasıl tanıyacaklarını öğrenirler.",
+                "Aşağıdaki ders planlarında, öğrencilerin medya okuryazarlığı becerilerini geliştirmeye yönelik ilham verici ve ilgi çekici etkinlikler bulacaksınız:",
+            ],
+            "activities" => [
+                "1" => "İnternette ise telifsiz midir?",
+                "2" => "Tıklamak veya tıklamamak",
+                "3" => "Gerçek bilgi kontrolü",
+            ]
+        ],
 
 
     ],

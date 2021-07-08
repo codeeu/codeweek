@@ -251,6 +251,21 @@ Mit Python können Ihre Schülerinnen und Schüler u. a. Ratespiele zu historisc
             ]
         ],
 
+        "15" => [
+            "title" => " Bergbau-Medienkompetenz ",
+            "author" => " von Marijana Smolčec, Tea Horvatić und Sanja Božinović ",
+            "text" => [
+                "Für die Schüler von heute war die Vermittlung von Medienkompetenz noch nie so wichtig wie heute. Um sich in unserer medienreichen Umgebung zurechtzufinden, müssen Schüler aller Altersgruppen grundlegende Fähigkeiten, Kenntnisse und Einstellungen erwerben. Sie werden in der Lage sein, seriöse Webmaterialien zu nutzen und falsche Informationsquellen zu erkennen, wenn sie über Medienkompetenz verfügen. Sie werden in der Lage sein, Fakten zu überprüfen und Material, das sie online finden, kritisch zu bewerten. Sie werden sich des richtigen Umgangs mit kreativen Arbeiten bewusst und setzen das Gelernte in die Praxis um, indem sie ihr eigenes kreatives Material erstellen.",
+                "Dieses Lernbit zeigt Ihnen, wie Sie eine Vielzahl von Ideen und Taktiken einsetzen können, um Ihren Schülern zu mehr Medienkompetenz zu verhelfen. In Marijanas Aktivität lernen die Schüler, wie sie Webinhalte sicher und ethisch korrekt nutzen können. Sie erfahren etwas über verschiedene Arten von Lizenzen und erstellen eine kleine App, um zu zeigen, wie man kreative Arbeit angemessen teilt. In der Aktivität von Tea lernen die Schüler etwas über Clickbaits. Anhand von unterhaltsamen Aufgaben lernen die Schüler Taktiken zur Identifizierung und Aufdeckung von Clickbaits und wie man sie vermeiden kann. Sanja befähigt die Schüler, Webmaterial zu untersuchen, kritisch zu bewerten und zu beurteilen, einschließlich seiner Relevanz, Genauigkeit, Quelle und seines Zwecks. Sie lernen, wie man vertrauenswürdige Webquellen entdeckt und wie man gefälschte Informationen erkennt.",
+                "In den folgenden Unterrichtsideen finden Sie kreative und interessante Übungen, die den Schülern helfen, ihre Medienkompetenz zu verbessern:",
+            ],
+            "activities" => [
+                "1" => "Wenn es im Internet ist, ist es dann kostenlos?",
+                "2" => "Anklicken oder nicht klicken",
+                "3" => "Faktenüberprüfung",
+            ]
+        ],
+
     ],
     'download_video_script' => 'Das Video-Script herunterladen',
     'ready_to_share' => 'Möchten Sie Ihre Erfahrungen mit Ihren Schülerinnen und Schülern teilen?',

@@ -251,6 +251,21 @@ V tomto videu vám tím Týždňa programovania ukáže niekoľko praktických, 
             ]
         ],
 
+        "15" => [
+            "title" => "Ťaženie mediálnej gramotnosti",
+            "author" => "Marijana Smolčec, Tea Horvatić a Sanja Božinović",
+            "text" => [
+                "Vzdelávanie o mediálnej gramotnosti pre dnešných študentov nikdy nebolo dôležitejšie. Študenti všetkých vekových skupín musia získať príslušné zručnosti, vedomosti a postoje, aby sa dokázali orientovať v našom mediálne bohatom svete. Zručnosti v oblasti mediálnej gramotnosti im pomôžu využívať dôveryhodný online obsah a rozpoznať zavádzajúce zdroje informácií. Pochopia, ako overovať faktické informácie, ktoré nájdu online, a kriticky ich interpretovať. Zvýšia svoje povedomie o správnom využívaní tvorivej práce a svoje učenie uplatnia pri vytváraní vlastného tvorivého obsahu.",
+                "Táto vzdelávacia časť vám umožní implementovať rôzne stratégie a techniky, ktoré vašim študentom umožnia stať sa mediálne gramotnými. V Marijaninej aktivite sa študenti naučia, ako bezpečne a zodpovedne používať webový obsah. Budú im predstavené rôzne typy licencií a vyvinú jednoduchú aplikáciu na demonštráciu spôsobu správneho zdieľania kreatívnej práce. V Teinej aktivite sa študenti vyberú na výpravu po poznatkoch o clickbaitoch. Prostredníctvom pútavých úloh študenti preskúmajú stratégie na identifikáciu a odhalenie clickbaitov a naučia sa im vyhnúť. Sanja umožní študentom skúmať a kriticky analyzovať a hodnotiť webový obsah, jeho relevantnosť, presnosť, pôvod a účel. Naučia sa, ako nájsť spoľahlivé zdroje online a ako rozpoznať nepravdivé online informácie.",
+                "V nižšie uvedených učebných plánoch nájdete inšpiratívne a pútavé aktivity na zlepšenie zručností študentov v oblasti mediálnej gramotnosti:",
+            ],
+            "activities" => [
+                "1" => "Je to voľné, ak je to na internete?",
+                "2" => "Kliknúť alebo nekliknúť",
+                "3" => "Overovanie faktov",
+            ]
+        ],
+
 
     ],
     'download_video_script' => 'Stiahnuť prepis videa',

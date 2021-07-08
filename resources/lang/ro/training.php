@@ -88,60 +88,60 @@ return [
             ]
         ],
         '6' => [
-            'title'=>'App Inventor și App Development',
-            'author'=>'de Rosanna Kurrer',
-            'text'=>'<p>Urmăriți acest videoclip în care Rosanna Kurrer (fondatoarea CyberWayFinder) explică ce este App Inventor, trece în revistă avantajele utilizării App development în sala de clasă și oferă câteva exemple practice privind modul în care profesorii pot integra App Inventor în sala de clasă, transformând elevii pasivi în creatori de jocuri entuziaști.</p>
+            'title' => 'App Inventor și App Development',
+            'author' => 'de Rosanna Kurrer',
+            'text' => '<p>Urmăriți acest videoclip în care Rosanna Kurrer (fondatoarea CyberWayFinder) explică ce este App Inventor, trece în revistă avantajele utilizării App development în sala de clasă și oferă câteva exemple practice privind modul în care profesorii pot integra App Inventor în sala de clasă, transformând elevii pasivi în creatori de jocuri entuziaști.</p>
 <p>Cu toții utilizăm aplicații, deoarece acestea reprezintă o modalitate convenabilă și rapidă de a ne coordona activitățile. De asemenea, aplicațiile sunt tot mai utilizate în educație, deoarece fac posibilă învățarea personalizată și le permit utilizatorilor să dobândească informații. Așadar, de ce să nu le dați elevilor dumneavoastră posibilitatea de a crea o aplicație educațională pentru alții?</p>',
-            'activities'=>[
-                '1'=>'Activitatea 1 – Titlu, pentru învățământul primar',
-                '2'=>'Activitatea 2 – Titlu, pentru învățământul secundar inferior',
-                '3'=>'Activitatea 3 – Titlu, pentru învățământul secundar superior'
+            'activities' => [
+                '1' => 'Activitatea 1 – Titlu, pentru învățământul primar',
+                '2' => 'Activitatea 2 – Titlu, pentru învățământul secundar inferior',
+                '3' => 'Activitatea 3 – Titlu, pentru învățământul secundar superior'
             ]
         ],
         '7' => [
-            'title'=>'Bricolajul și crearea',
-            'author'=>'de Diogo da Silva',
-            'text'=>'<p>Posturile și locurile de muncă sunt în schimbare și educația le calcă pe urme. Pentru pregătirea elevilor pentru carierele din secolul 21, devin esențiale noi aptitudini, precum bricolajul, crearea și găsirea de soluții ingenioase, deoarece acestea diminuează decalajul dintre școală și realitate. Transformând sala de clasă într-un mediu de colaborare axat pe soluționarea problemelor, elevii se pot implica și pot progresa. Aceste activități promovează discuțiile, permițând astfel ca sala de clasă să devină un centru de comunicare, unde fiecare contribuție este importantă.</p> 
+            'title' => 'Bricolajul și crearea',
+            'author' => 'de Diogo da Silva',
+            'text' => '<p>Posturile și locurile de muncă sunt în schimbare și educația le calcă pe urme. Pentru pregătirea elevilor pentru carierele din secolul 21, devin esențiale noi aptitudini, precum bricolajul, crearea și găsirea de soluții ingenioase, deoarece acestea diminuează decalajul dintre școală și realitate. Transformând sala de clasă într-un mediu de colaborare axat pe soluționarea problemelor, elevii se pot implica și pot progresa. Aceste activități promovează discuțiile, permițând astfel ca sala de clasă să devină un centru de comunicare, unde fiecare contribuție este importantă.</p> 
 <p>Urmăriți videoclipul de mai jos, în care profesorul portughez de STIM, Diogo da Silva, membru al Escola Global, vă explică pas cu pas cum să elaborați o lecție care să îi stimuleze pe elevi să bricoleze,, să creeze și să învețe să găsească soluții.</p>',
-            'activities'=>[
-                '1'=>'Activitatea 1 – Titlu, pentru învățământul primar',
-                '2'=>'Activitatea 2 – Titlu, pentru învățământul secundar inferior',
-                '3'=>'Activitatea 3 – Titlu, pentru învățământul secundar superior'
+            'activities' => [
+                '1' => 'Activitatea 1 – Titlu, pentru învățământul primar',
+                '2' => 'Activitatea 2 – Titlu, pentru învățământul secundar inferior',
+                '3' => 'Activitatea 3 – Titlu, pentru învățământul secundar superior'
             ]
         ],
         '8' => [
-            'title'=>'Utilizarea programării la toate materiile',
-            'author'=>'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
-            'text'=>'<p>Când te gândești la programare în sala de clasă, te gândești imediat la calculatoare, technologie, matematică sau științe. Totuși, având în vedere că elevii au o serie de interese și de materii, de ce să nu folosim acest lucru în favoarea noastră și să nu punem în aplicare programarea la nivelul întregii programe școlare?</p> 
+            'title' => 'Utilizarea programării la toate materiile',
+            'author' => 'M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text' => '<p>Când te gândești la programare în sala de clasă, te gândești imediat la calculatoare, technologie, matematică sau științe. Totuși, având în vedere că elevii au o serie de interese și de materii, de ce să nu folosim acest lucru în favoarea noastră și să nu punem în aplicare programarea la nivelul întregii programe școlare?</p> 
 <p>Integrarea codificării în sala de clasă are numeroase beneficii, deoarece ajută elevii să își dezvolte gândirea critică și capacitatea de a rezolva probleme, să devină utilizatori activi și să își coordoneze propriul proces de învățare, care este esențial în școli. Cu toate acestea, cel mai important lucru este că elevii dumneavoastră vor învăța și se vor distra în același timp!</p>
 <p>Limbile străine, muzica sau STIM sunt doar câteva dintre materiile pe care profesorii le pot codifica pentru viitorii oameni de știință, muzicieni, artiști, de fapt pentru oricine! Toți profesorii pot integra programarea și gândirea computațională în sala de clasă. Utilizarea unei lecții CLIL pentru a explica un algoritm din viața cotidiană, crearea unui joystick din pâslă pentru a învăța despre știință sau utilizarea unor roboți didactici pentru a stimula motivația în matematică reprezintă câteva exemple de activități pe care le puteți desfășura în sala de clasă.</p> 
 <p>Urmăriți videoclipul de mai jos pentru a vedea modul în care profesorii de muzică, științe sau limbi străine pot integra cu ușurință programarea și gândirea computațională în sala de clasă, fără a avea vreo experiență anterioară.</p>',
-            'activities'=>[
-                '1'=>'Activitatea 1 Robotica și includerea pentru învățământul primar în STIM',
-                '2'=>'Activitatea 2 Muzica înseamnă programare',
-                '3'=>'Activitatea 3 Bricolajul și programarea cu Makey Makey',
-                '4'=>'Activitatea 4 Un algoritm din viața cotidiană pentru o lecție CLIL'
+            'activities' => [
+                '1' => 'Activitatea 1 Robotica și includerea pentru învățământul primar în STIM',
+                '2' => 'Activitatea 2 Muzica înseamnă programare',
+                '3' => 'Activitatea 3 Bricolajul și programarea cu Makey Makey',
+                '4' => 'Activitatea 4 Un algoritm din viața cotidiană pentru o lecție CLIL'
             ]
         ],
         '9' => [
-            'title'=>'Crearea unui automat folosind un micro:bit',
-            'author'=>'de Pauline Maas',
-            'text'=>'<p>
+            'title' => 'Crearea unui automat folosind un micro:bit',
+            'author' => 'de Pauline Maas',
+            'text' => '<p>
                    Utilizarea unui micro:bit, computerul de buzunar ușor de programat, poate fi un mod distractiv și simplu de a realiza cu elevii dvs. creații interesante, de la roboți la instrumente muzicale, învățându-i în același timp să scrie cod. Este simplu și ușor de utilizat chiar și pentru cei mai tineri dintre programatori, fiind însă totodată suficient de puternic pentru elevii mai avansați. Îl puteți încorpora într-o varietate de lecții, de la istorie la matematică și chiar științe. Posibilitățile sunt nelimitate. Micro:bit este un mod interesant și necostisitor de a-i învăța pe elevi să scrie cod, dezvoltându-le în același timp abilități esențiale, precum gândirea computațională, rezolvarea problemelor și creativitatea.
                    </p>
                    <p>
 În acest clip, Pauline Maas, profesoară de informatică la Koninklijke Visio, prezintă micro: bit și oferă câteva exemple practice de modalități în care profesorii îl pot integra la clasă, transformând elevii pasivi în creatori entuziaști.                   
                 </p>',
-            'activities'=>[
-                '1'=>'Codul Morse cu micro:bit, pentru învățământul primar',
-                '2'=>'Escape room cu micro:bit, pentru învățământul gimnazial',
-                '3'=>'Construirea unui automat, pentru învățământul liceal',
+            'activities' => [
+                '1' => 'Codul Morse cu micro:bit, pentru învățământul primar',
+                '2' => 'Escape room cu micro:bit, pentru învățământul gimnazial',
+                '3' => 'Construirea unui automat, pentru învățământul liceal',
             ]
         ],
         '10' => [
-            'title'=>'Creativitate la scrierea de cod cu Python',
-            'author'=>'de Ivana Vezjak',
-            'text'=>'<p>
+            'title' => 'Creativitate la scrierea de cod cu Python',
+            'author' => 'de Ivana Vezjak',
+            'text' => '<p>
 Trecerea de la programarea vizuală la cea sub formă de text reprezintă o continuare naturală în domeniul programării. Deși programarea vizuală este adesea excelentă pentru începători, după un timp este posibil ca elevii să își dorească o provocare nouă. Programarea sub formă de text este pasul următor pentru oricine dorește să își aprofundeze cunoștințele de programare și gândirea computațională. 
                    </p>
                    <p>                   
@@ -150,57 +150,57 @@ Trecerea de la programarea vizuală la cea sub formă de text reprezintă o cont
 <p> 
 Cu Python, elevii pot să creeze jocuri cu întrebări despre evenimente istorice, să rezolve probleme de matematică și să realizeze simulări de fizică, să creeze jocuri, să construiască site-uri web, să efectueze analize de date pentru proiecte științifice și multe altele. Python are o bibliotecă standard bogată și cuprinzătoare, o comunitate numeroasă și un număr mare de tutoriale și proiecte disponibile online, care se pot folosi pentru predare, învățare și exersare. Scriind cod în Python, analizând programe și remediind erori, elevii își dezvoltă creativitatea și învață să fie consecvenți, perseverenți și răbdători. Aceștia deprind abilități de gândire analitică și de rezolvare a problemelor, defalcând problemele complexe în componente mai mici. Aceste competențe îi vor ajuta la abordarea problemelor din orice alt domeniu al vieții lor.
                 </p>',
-            'activities'=>[
-                '1'=>'Primul meu joc cu întrebări, pentru învățământul primar',
-                '2'=>'Spânzurătoarea, pentru învățământul gimnazial',
-                '3'=>'Ghicește steagul!, pentru învățământul liceal',
+            'activities' => [
+                '1' => 'Primul meu joc cu întrebări, pentru învățământul primar',
+                '2' => 'Spânzurătoarea, pentru învățământul gimnazial',
+                '3' => 'Ghicește steagul!, pentru învățământul liceal',
             ],
-            'links'=>[
+            'links' => [
                 'title' => 'Alte resurse conexe',
                 '1' => [
-                    "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Biblioteca Python standard",
-                    "description"=>"Colecție de cod gata scris și de module (de exemplu, modulul turtle, modulul math etc.).",
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "Biblioteca Python standard",
+                    "description" => "Colecție de cod gata scris și de module (de exemplu, modulul turtle, modulul math etc.).",
                 ],
                 '2' => [
-                    "url"=>"https://codecombat.com/",
-                    "title"=>"CodeCombat",
-                    "description"=>"Un joc video educativ pentru învățarea conceptelor de programare prin joc.",
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Un joc video educativ pentru învățarea conceptelor de programare prin joc.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/ro-RO/codeclub",
-                    "title"=>"CodeClub projects",
-                    "description"=>"De la începători la avansați, proiecte de programare pas cu pas pentru copii.",
+                    "url" => "https://projects.raspberrypi.org/ro-RO/codeclub",
+                    "title" => "CodeClub projects",
+                    "description" => "De la începători la avansați, proiecte de programare pas cu pas pentru copii.",
                 ],
                 '4' => [
-                    "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Inventați-vă propriile jocuri pe computer cu Python",
-                    "description"=>"O carte care vă va învăța să vă programați propriile jocuri pe computer folosind Python.",
+                    "url" => "https://inventwithpython.com/invent4thed/",
+                    "title" => "Inventați-vă propriile jocuri pe computer cu Python",
+                    "description" => "O carte care vă va învăța să vă programați propriile jocuri pe computer folosind Python.",
                 ],
                 '5' => [
-                    "url"=>"https://www.codewars.com/",
-                    "title"=>"CodeWars",
-                    "description"=>"O comunitate educațională în care elevii și profesorii se pot pregăti parcurgând o serie de provocări.",
+                    "url" => "https://www.codewars.com/",
+                    "title" => "CodeWars",
+                    "description" => "O comunitate educațională în care elevii și profesorii se pot pregăti parcurgând o serie de provocări.",
                 ],
                 '6' => [
-                    "url"=>"https://hourofpython.com/",
-                    "title"=>"Hour of Python",
-                    "description"=>"O colecție de lecții introductive privind Python (atât pe bază de text, cât și blocuri) folosind interfețe Trinket interactive.",
+                    "url" => "https://hourofpython.com/",
+                    "title" => "Hour of Python",
+                    "description" => "O colecție de lecții introductive privind Python (atât pe bază de text, cât și blocuri) folosind interfețe Trinket interactive.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'Programarea pentru incluziune',
-            'author'=>'autor: echipa Săptămâna programării',
-            'text'=>'<p>
+            'title' => 'Programarea pentru incluziune',
+            'author' => 'autor: echipa Săptămâna programării',
+            'text' => '<p>
                 Poate fi dificil să introduceți programarea în lecții, mai ales dacă aveți în clasă elevi cu anumite dizabilități. E important să rețineți însă că oricine, indiferent de abilitățile sale, poate învăța să programeze. Învățarea aspectelor programării le poate aduce mari beneficii copiilor cu nevoi speciale, deoarece aceasta ajută elevii să își dezvolte competențe importante pentru viață, precum rezolvarea problemelor, organizarea și independența. De asemenea, prin cooperare și muncă de echipă, programarea poate îmbunătăți abilitățile interpersonale și sociale, care reprezintă o dificultate pentru numeroși copii cu dizabilități. Iar cel mai important este că elevii se amuză învățând împreună cu colegii lor.   
                    </p><p>
 În acest clip, echipa Săptămâna programării vă va arăta activități de programare practice, ușoare și distractive adaptate mai ales pentru elevii cu deficiențe de vedere, cu sindromul Down și cu tulburări din spectrul Autismului, activități pe care cadrele didactice pot să le aplice cu ușurință la clasă.                   
                 </p>',
-            'activities'=>[
-                '1'=>'Cofrajul de ouă',
-                '2'=>'Un șoricel foarte isteț',
-                '3'=>'O stea creează stele',
+            'activities' => [
+                '1' => 'Cofrajul de ouă',
+                '2' => 'Un șoricel foarte isteț',
+                '3' => 'O stea creează stele',
             ]
         ],
 
@@ -248,6 +248,21 @@ Cu Python, elevii pot să creeze jocuri cu întrebări despre evenimente istoric
                 '1' => 'IA și rețelele sale neuronale, pentru școala primară',
                 '2' => 'Chatbot-ul meu despre Covid-19, pentru învățământul secundar inferior',
                 '3' => 'Viața în era „mașinilor inteligente”: Provocări și oportunități, pentru învățământul secundar superior',
+            ]
+        ],
+
+        "15" => [
+            "title" => " Alfabetizarea media prin extracție de date",
+            "author" => "de Marijana Smolčec, Tea Horvatić și Sanja Božinović",
+            "text" => [
+                "Educația în materie de alfabetizare media nu a fost niciodată mai importantă pentru elevii de astăzi. Elevii de toate vârstele trebuie să dobândească deprinderi, cunoștințe și atitudini relevante pentru a putea naviga prin lumea noastră bogată în media. Abilitățile de alfabetizare media îi vor ajuta să folosească conținut online credibil și să recunoască sursele de informații înșelătoare. Vor înțelege cum să verifice informațiile pe care le găsesc în mediul online și cum să le să le interpreteze critic. Își vor crește gradul de conștientizare a utilizării corecte a muncii creative și vor aplica cunoștințele acumulate atunci când își creează propriul conținut creativ.",
+                "Acest Modul de învățare vă va permite să implementați diverse strategii și tehnici pentru a-i abilita pe elevii dumneavoastră în a deveni literați în media. Prin activitățile lui Marijana, elevii învață cum să utilizeze conținutul web în siguranță și în mod responsabil. Acestora le sunt prezentate diferite tipuri de licențe și dezvoltă o aplicație simplă pentru a demonstra partajarea corectă a lucrărilor creative. Prin activitățile lui Tea, elevii pornesc într-o aventură pentru a descoperi momelile pentru clicuri. Parcurgând sarcini antrenante, elevii explorează strategii pentru identificarea și descoperirea momelilor pentru clicuri și învață cum să le evite. Sanja le dă elevilor ocazia să exploreze, respectiv să analizeze critic și să evalueze conținutul web, relevanța, acuratețea, originea și scopul acestuia. Ei învață cum să găsească surse online de încredere și cum să recunoască informațiile online false.",
+                "În planurile de lecție de mai jos, veți găsi activități inspiratoare și antrenante pentru a perfecționa deprinderile de educație media ale elevilor:",
+            ],
+            "activities" => [
+                "1" => "Este gratuit dacă se găsește pe Internet?",
+                "2" => "A da sau a nu da clic",
+                "3" => "Verificarea informațiilor",
             ]
         ],
 
