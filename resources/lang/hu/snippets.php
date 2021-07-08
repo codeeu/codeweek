@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+    "featured-activities" => "Tekintse meg a közelgő európai programozási hét online résztvevőket fogadó kiemelt tevékenységeit! Szűrhet nyelv és hónap szerint, és a „Megtekint” gombra kattintva megismerheti a tevékenység minden részletét és a szervezők elérhetőségeit. Jó szórakozást!",
+    "learn" => "A kódolás és a programozás alapvető kompetenciák, amelyekre egyre nagyobb szükség van minden területen, és az európai programozási hét ennek a tanulásában szeretne támogatást nyújtani! Böngésszen a lehetőségek tárházában, és találja meg azt a forrást, amely tökéletes segítségül szolgál majd programozási utazásának megkezdéséhez vagy folytatásához. Minden forrás ingyenesen hozzáférhető. Ne feledje, hogy keresését szűrheti forrástípus, készségszint, programozási nyelv, kategória és nyelvek szerint is.",
+    "teach" => "A kódolás és a programozás alapvető kompetenciák, amelyek új lehetőségeket nyitnak meg a diákjai és a gyermekei előtt. Hol szeretne programozást tanítani: otthon, az iskolában vagy egy programozó klubban? Böngésszen a lehetőségek tárházában, és találja meg az Önnek leginkább megfelelő forrást, hogy beépíthesse a programozást tanítási gyakorlatába. Minden forrás ingyenesen hozzáférhető. Ne feledje, hogy keresését szűrheti forrástípus, készségszint, programozási nyelv, téma, kategória és nyelvek szerint is.",
+    "toolkits" => [
+        "Ebben a részben olyan anyagokat talál, amelyek segítenek az európai programozási héten belüli tevékenysége megszervezésében, és a kezdeményezés előmozdításában saját közösségén belül.",
+        "Kommunikációs eszköztár",
+        "itt találja az európai programozási hét hivatalos logóit, kitűzőjét, szórólapját, poszterét, PowerPoint- és Word-sablonjait, illusztrációit és példákat közösségimédia-bejegyzésekhez.",
+        "Tanári eszköztár",
+        "itt találja az európai programozási hét hivatalos logóit, kitűzőjét, a diákok részvételét igazoló tanúsítvány sablonját, az európai programozási hétről szóló bemutatkozó prezentációt, valamint közösségimédia-anyagokat.",
+        "Az európai programozási hét hivatalos szórólapja.",
+    ],
     "about" => [
         "goal" => "Az a célunk, hogy minél több fiatalnak segítsünk elsajátítani a programozás és a számítástechnikai gondolkodás alapjait."
     ],

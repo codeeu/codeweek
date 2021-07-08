@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+    "featured-activities" => "Çevrim içi katılabileceğiniz, önümüzdeki dönemin öne çıkan AB Kod Haftası faaliyetlerini burada bulabilirsiniz. Dil ve aya göre arama yapabileceğiniz gibi, “görüntüle”ye tıklayarak faaliyetin tüm detaylarına ve organizatörlerin iletişim bilgilerine erişebilirsiniz. İyi eğlenceler!",
+    "learn" => "Kodlama ve programlama, her alanda daha da fazla talep gören kilit yetkinliklerdir; AB Kod Haftası bunları öğrenmenize yardımcı olmaya hazır! Kaynak havuzumuzu tarayarak kodlama yolculuğunuza başlamak veya devam etmek için en uygun kaynağı bulun. Tüm bu kaynaklar ücretsizdir. Aramanızı kaynak türü, beceri seviyesi, programlama dili, kategori ve dile göre filtreleyebileceğinizi unutmayın.",
+    "teach" => "Kodlama ve programlama, öğrencilerinize ve çocuklarınıza yeni imkanlar sunacak kilit yetkinliklerdir. Evde, sınıfta veya kodlama kulübünde kodlama öğretmek mi istiyorsunuz? Kodlama ve programlamayı eğitim materyallerinize eklemek istiyorsanız, kaynak havuzumuzu tarayarak size en uygun kaynağı bulun. Tüm bu kaynaklar ücretsizdir. Aramanızı kaynak türü, beceri seviyesi, programlama dili, konu, kategori ve dile göre filtreleyebileceğinizi unutmayın.",
+    "toolkits" => [
+        "Bu bölümde, AB Kod Haftası etkinliğinizi düzenleyip girişimi bulunduğunuz toplulukta tanıtmanıza yardımcı olacak materyaller bulunmaktadır.",
+        "İletişim kiti",
+        "AB Kod Haftası’nın resmî logoları, rozeti, el ilanları, afişleri, PowerPoint ve Word şablonları, sosyal medya paylaşım örnekleri ve çizimlerini burada bulabilirsiniz.",
+        "Öğretmen kiti",
+        "AB Kod Haftası’nın resmî logoları, rozeti, öğrencileriniz için katılım belgesi şablonu, AB Kod Haftası hakkında bilgilendirici bir sunum ve sosyal medya materyallerini burada bulabilirsiniz. ",
+        "AB Kod Haftası resmî broşürü.",
+    ],
     "about" => [
         "goal" => "Daha fazla gencin kodlama ve bilişimsel düşünmenin temellerini öğrenmesi amaçlanmaktadır."
     ],

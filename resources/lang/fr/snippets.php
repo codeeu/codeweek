@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+    "featured-activities" => "Vous trouverez ici les prochaines activités organisées dans le cadre de la Semaine européenne du code auxquelles il est possible de participer en ligne. Vous pouvez filtrer les activités par langue et par mois, et cliquer sur «Détails» pour obtenir plus d’informations sur une activité et les coordonnées des organisateurs. Bon amusement!",
+    "learn" => "Le codage et la programmation sont des compétences clés qui sont de plus en plus recherchées dans tous les domaines, et la Semaine européenne du code est là pour vous aider à apprendre! Parcourez notre catalogue et trouvez la ressource parfaite pour commencer ou poursuivre votre apprentissage du codage. Toutes ces ressources sont gratuites. N’oubliez pas que vous pouvez filtrer vos résultats de recherche par type de ressource, par niveau de compétence, par langage de programmation, par catégorie et par langue.",
+    "teach" => "Le codage et la programmation sont des compétences clés qui ouvriront de nouvelles possibilités à vos étudiants et vos enfants. Vous souhaitez enseigner le codage depuis chez vous, à l’école ou dans un club de codage? Parcourez notre catalogue et trouvez la ressource la plus adaptée pour intégrer le codage et la programmation à vos pratiques d’enseignement. Toutes ces ressources sont gratuites. N’oubliez pas que vous pouvez filtrer vos résultats de recherche par type de ressource, par niveau de compétence, par langage de programmation, par sujet, par catégorie et par langue.",
+    "toolkits" => [
+        "Dans cette section, vous trouverez des outils qui vous aideront à organiser votre activité dans le cadre de la Semaine européenne du code, et à promouvoir l’initiative auprès de votre communauté. ",
+        "Boîte à outils de communication",
+        "vous trouverez ici tous les matériels officiels de la Semaine européenne du code: logos, badge, prospectus, affiche, modèles de documents PowerPoint et Word, exemples de publications sur les réseaux sociaux et illustrations.",
+        "Boîte à outils pour les enseignants",
+        "vous trouverez ici tous les matériels officiels de la Semaine européenne du code: logos, badge, modèles de certificats de participation pour vos étudiants, présentation introductive de la Semaine européenne du code et matériel destiné aux réseaux sociaux.",
+        "Brochure officielle de la Semaine européenne du code.",
+    ],
     "about" => [
         "goal" => "L’objectif est d’aider davantage de jeunes à maîtriser les bases du codage et de la pensée computationnelle."
     ],
