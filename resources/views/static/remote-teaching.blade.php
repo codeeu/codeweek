@@ -22,7 +22,7 @@
                 <ul class="checklist">
 
                     <li><a href="{{route('coding@home')}}">@lang('menu.coding@home')</a>: @lang('remote-teaching.intro.points.1')</li>
-                    <li><a href="">@lang('remote-teaching.intro.points.2.0')</a>: @lang('remote-teaching.intro.points.2.1')</li>
+                    <li><a href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/docs/EU+Code+Week_Deep+Dive+MOOC+2020_Module+1_+Actitivities+at+home+.pdf">@lang('remote-teaching.intro.points.2.0')</a>: @lang('remote-teaching.intro.points.2.1')</li>
                     <li>
                         <a href="{{route('training.index')}}">@lang('remote-teaching.intro.points.3.0')</a>: @lang('remote-teaching.intro.points.3.1')
 
