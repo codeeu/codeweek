@@ -167,6 +167,7 @@ Route::post('api/event/report/{event}', 'ReportController@store')->middleware('a
 Route::group(['middleware' => ['role:super admin']], function () {
     Route::post('api/resource/level/', 'Api\Resource\LevelController@store')->name('resource_level');
     Route::post('api/resource/item/', 'Api\Resource\ItemController@store')->name('resource_item');
+
 });
 
 
@@ -198,6 +199,8 @@ Route::group(['middleware' => ['role:super admin']], function () {
     Route::post('/admin/certificates','AdminController@generateCertificates')->name('generate_certificates');
 
     Route::get('/hackathons/vote/results', 'HackathonsVotingController@results')->name('hackathon-vote-results');
+
+    Route::get('/user-profile/{user}', 'UserProfileController@index')->name('user-profile');
 });
 
 Route::group(['middleware' => ['role:super admin|ambassador']], function () {
@@ -224,6 +227,7 @@ Route::get('/profile', function () {
 Route::get('/leading-teachers/signup', 'LeadingTeachersSignup@index')->name('LT.signup')->middleware('auth');
 Route::view('/leading-teachers/success','leading-teachers.signup-form-success')->middleware('auth');
 Route::post('/leading-teachers/signup', 'LeadingTeachersSignup@store')->name('LT.signup.store')->middleware('auth');
+
 
 Route::group(['middleware' => ['role:super admin|leading teacher admin']], function () {
     Route::get('/leading-teachers/list', 'LeadingTeachersList@index')->name('leading_teachers_list')->middleware('auth');
@@ -264,7 +268,7 @@ Route::get('headers', function(Request $request){
     dd($headers);
 });
 
-Route::get('/user-profile/{user}', 'UserProfileController@index')->name('user-profile');
+
 
 Auth::routes();
 
