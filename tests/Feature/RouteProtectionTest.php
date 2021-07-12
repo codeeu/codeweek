@@ -17,11 +17,13 @@ class RouteProtectionTest extends TestCase
     private $ambassador;
     private $school_manager;
     private $event_owner;
+    private $leading_teacher;
 
     public function setup():void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
+        $this->seed('LeadingTeacherRoleSeeder');
 
         $this->admin = create('App\User');
         $this->admin->assignRole('super admin');
@@ -34,6 +36,9 @@ class RouteProtectionTest extends TestCase
 
         $this->event_owner = create('App\User');
         $this->event_owner->assignRole('event owner');
+
+        $this->leading_teacher = create('App\User');
+        $this->leading_teacher->assignRole('leading teacher');
 
 
 
@@ -78,6 +83,19 @@ class RouteProtectionTest extends TestCase
         $allowed = [$this->admin];
 
         $this->check_route('/pending/' . $country->iso, $allowed, $rejected);
+
+    }
+
+    /** @test */
+    public function only_leading_teacher_can_access_report_form()
+    {
+
+        $this->withExceptionHandling();
+
+        $rejected = [$this->event_owner, $this->school_manager,  $this->ambassador];
+        $allowed = [$this->leading_teacher];
+
+        $this->check_route('/leading-teachers/report', $allowed, $rejected);
 
     }
 
