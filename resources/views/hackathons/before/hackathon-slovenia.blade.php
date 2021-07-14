@@ -56,7 +56,9 @@
                 <strong>@lang('hackathon-slovenia.sections.1.content.13')</strong>
                 @lang('hackathon-slovenia.sections.1.content.14')
                 <strong>@lang('hackathon-slovenia.sections.1.content.15')</strong>
-
+                @if(App::getLocale() != 'sl')
+                @lang('hackathon-slovenia.sections.1.content.16')
+                @endif
             </p>
 
         </section>
