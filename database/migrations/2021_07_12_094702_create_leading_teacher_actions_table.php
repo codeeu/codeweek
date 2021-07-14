@@ -17,6 +17,8 @@ class CreateLeadingTeacherActionsTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('type');
+            $table->text('comment')->nullable();
+            $table->date('completion_date');
             $table->integer('user_id')->unsigned();
             $table->string('status')->default('PENDING');
             $table->timestamps();

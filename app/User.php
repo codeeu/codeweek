@@ -233,6 +233,10 @@ class User extends Authenticatable
         return $this->hasOne(Experience::class, 'user_id', 'id');
     }
 
+    public function actions(){
+        return $this->hasMany(LeadingTeacherAction::class);
+    }
+
     public function getPointsAttribute()
     {
         $experience = Experience::firstOrCreate(
