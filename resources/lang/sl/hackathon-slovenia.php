@@ -3,7 +3,7 @@
 return [
 
     "title" => "EU Code Week HEKATON",
-    "title2" => "Nova Gorica, 18-19 September",
+    "title2" => "Nova Gorica, 18. -19. september",
 
     "subtitle" => "Naj tvoje ideje zaživijo!",
     "misc" => [
