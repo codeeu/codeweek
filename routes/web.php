@@ -14,6 +14,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
+
 Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
 
     Route::get('/', function ($subdomain) {
@@ -236,6 +237,7 @@ Route::group(['middleware' => ['role:super admin|leading teacher admin']], funct
 
 Route::group(['middleware' => ['role:leading teacher|super admin|leading teacher admin']], function () {
     Route::get('/leading-teachers/report', 'LeadingTeachersReport@index')->name('LT.report');
+    Route::get('/leading-teachers/actions', 'LeadingTeachersActions@index')->name('LT.actions');
 });
 
 

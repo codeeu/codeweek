@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use App\Http\Livewire\LeadingTeacherReportForm;
 use App\LeadingTeacherAction;
+use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Livewire;
@@ -52,7 +53,10 @@ class LeadingTeachersReportFormTest extends TestCase
         Livewire::test(LeadingTeacherReportForm::class)
             ->set('action_title', 'foo')
             ->set('action_type', 'bar')
-            ->call('submit');
+            ->set('action_comment', 'doz')
+            ->set('action_date', Carbon::now())
+            ->call('submit')
+            ->assertRedirect('/leading-teachers/actions');
 
         $this->assertTrue(LeadingTeacherAction::whereTitle('foo')->exists());
 
