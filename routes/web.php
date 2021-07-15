@@ -240,7 +240,7 @@ Route::group(['middleware' => ['role:super admin|leading teacher admin']], funct
 
 Route::group(['middleware' => ['role:leading teacher|super admin|leading teacher admin']], function () {
     Route::get('/leading-teachers/report', 'LeadingTeachersReport@index')->name('LT.report');
-    Route::get('/leading-teachers/actions', 'LeadingTeachersActions@index')->name('LT.actions');
+    Route::get('/leading-teachers/dashboard', 'LeadingTeachersDashboard@index')->name('LT.dashboard');
 });
 
 

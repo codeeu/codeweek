@@ -46,7 +46,7 @@ class LeadingTeacherReportForm extends Component
             "user_id" => auth()->user()->id
         ]);
 
-        return redirect()->to('/leading-teachers/actions');
+        return redirect()->to('/leading-teachers/dashboard');
 
     }
 }

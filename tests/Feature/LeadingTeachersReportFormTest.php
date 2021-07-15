@@ -56,7 +56,7 @@ class LeadingTeachersReportFormTest extends TestCase
             ->set('action_comment', 'doz')
             ->set('action_date', Carbon::now())
             ->call('submit')
-            ->assertRedirect('/leading-teachers/actions');
+            ->assertRedirect('/leading-teachers/dashboard');
 
         $this->assertTrue(LeadingTeacherAction::whereTitle('foo')->exists());
 

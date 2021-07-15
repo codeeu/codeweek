@@ -38,7 +38,7 @@
                     </label>
                     <input type="date" wire:model="action_date" class="codeweek-input-select" style="flex:1;width:200px !important; background-image: none; background-position: right 10em top 50%, 0 0;">
                 </div>
-                @if($errors->has('action_type'))
+                @if($errors->has('action_date'))
                     <div class="errors">
                         @component('components.validation-errors', ['field'=>'action_type'])@endcomponent
                     </div>
@@ -52,7 +52,7 @@
                         </label>
                         <textarea wire:model="action_comment" class="codeweek-input-select" style="flex:1;width:200px; height:200px; !important; background-image: none; background-position: right 10em top 50%, 0 0;" rows="4" cols="50"></textarea>
                     </div>
-                    @if($errors->has('action_type'))
+                    @if($errors->has('action_comment'))
                         <div class="errors">
                             @component('components.validation-errors', ['field'=>'action_type'])@endcomponent
                         </div>

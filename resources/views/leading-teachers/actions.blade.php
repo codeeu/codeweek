@@ -19,7 +19,7 @@
         </section>
 
 <div class="px-20">
-    <livewire:leading-teacher-actions/>
+    <livewire:leading-teacher-dashboard/>
 </div>
 
 
