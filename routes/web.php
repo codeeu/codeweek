@@ -57,6 +57,9 @@ Route::get('/dance', 'StaticPageController@static')->name('dance');
 Route::get('/why-coding', 'StaticPageController@static')->name('why-coding');
 
 
+Route::get('/remote-teaching', 'RemoteTeachingController@index')->name('remote-teaching');
+
+
 //Static training pages
 Route::get('/training', 'StaticPageController@static')->name('training.index');
 Route::get('/training/coding-without-computers', 'StaticPageController@static')->name('training.module-1');
@@ -70,8 +73,8 @@ Route::get('/training/coding-for-all-subjects', 'StaticPageController@static')->
 Route::get('/training/making-an-automaton-with-microbit', 'StaticPageController@static')->name('training.module-9');
 Route::get('/training/creative-coding-with-python', 'StaticPageController@static')->name('training.module-10');
 Route::get('/training/coding-for-inclusion', 'StaticPageController@static')->name('training.module-11');
-Route::get('/training/introduction-to-artificial-intelligence-in-the-classroom', 'StaticPageController@static')->name('training.module-13');
 Route::get('/training/coding-for-sustainable-development-goals', 'StaticPageController@static')->name('training.module-12');
+Route::get('/training/introduction-to-artificial-intelligence-in-the-classroom', 'StaticPageController@static')->name('training.module-13');
 Route::get('/training/learning-in-the-age-of-intelligent-machines', 'StaticPageController@static')->name('training.module-14');
 Route::get('/training/mining-media-literacy', 'StaticPageController@static')->name('training.module-15');
 

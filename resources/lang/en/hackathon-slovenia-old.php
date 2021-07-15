@@ -2,9 +2,7 @@
 
 return [
 
-    "title" => "EU Code Week HACKATHON",
-    "title2" => "Nova Gorica, 18-19 September",
-
+    "title" => "EU Code Week HACKATON",
     "subtitle" => "Bring your ideas to life!",
     "misc" => [
         "Read the rules & code of conduct",
@@ -12,63 +10,42 @@ return [
         "Our Partners"
     ],
     "sections" => [
-
-        0 => [
-            "content" => [
-                "Are you between 15 and 19 years old and love technology? Do you like to create and want to learn about similar trends in the field of digital products? If so, don’t hesitate: you can sign up to the hackathon as a single competitor or, even better, with your team, where each one of you will contribute their know-how in solving a challenge. The best team will receive a EUR 2,000 prize."
-            ]
-        ],
         1 => [
             "content" => [
-                "Hackathon Slovenia for students of any gender is one of six European acclaimed competitions for young people who are interested in new technologies. The competition starts on 18 September in Nova Gorica, and for the winning team a month later at the European level.",
-                "You can sign up to the hackathon",
-                "or, even better, with your team of 6 participants, where each one of you will contribute their know-how in solving a challenge.",
-                "So, we are not only looking for coders,",
-                "but also designers, writers and other specialists who will help your team win. Last but not least, it also pays off because the Slovenian",
-                "winning team might receive a EUR 2,000",
-                "prize.",
-                "The hackathon will take place live in Nova Gorica (unless our plans are changed by the epidemiological situation, which would move the competition online).",
-                "The hackathon begins with the creation of a prototype that needs to be coded and designed accordingly. The prototype is designed to solve a real challenge and will need to be completed within these two-days competition. All teams will have equal working conditions and access to mentors who will help you with expert advice. Workshops will help you improve your solutions and prepare for your presentations. At the end, you will present your prototypes to the jury that will select the final winner for Slovenia.",
-                "Presentation to the European jury",
-                "The winning team from the Slovenian finals will receive",
-                " a cash prize of EUR 2,000",
-                " and the opportunity to",
-                " present themselves at European level",
-                ", where the winners of hackathons from six countries will present their prototypes to the European jury during the official Europe Code Week the 14 October, 2021.",
-                " The champions of Europe",
-                " will be additionally rewarded with the latest computer equipment."
+                "Do you dream of creating the next big app? Do you know how innovative tech solutions can help your school, town, and region? If you want to be an entrepreneur or have a killer idea to pitch to the world but you don’t know where to start, then your waiting is at an end! ",
+                "The EU Code Week Hackathon",
+                "begins with a challenge to develop a code that solves a real-life challenge. The winning team will also secure a spot at the European pitch where all the national hackathon winners from Romania, Ireland, Greece, Italy, Slovenia and Latvia will present their ideas to a European jury during the official EU Code Week 9-24 October 2021.",
+                "The EU Code Week hackathon is sure to fuel your curiosity, inspire your creativity, encourage your entrepreneurial spirit, and bring your ideas to life. "
             ]
         ],
         2 => [
             "title" => "What to expect?",
             "content" => [
-                "Interesting challenges",
-                "Professional guidance and assistance in creating a solution",
-                "Find out about trends in the field of digital technology",
-                "Knowledge acquisition workshops",
+                "Expert coaching",
+                "Skills workshops",
                 "Fun activities",
-                "Hanging out with young people with shared interests",
-                "An opportunity to e-meet the best teams from all over Europe",
-                "Prizes (financial and practical)"
+                "The chance to meet likeminded individuals",
+                "The chance to win mentoring and coaching, as well as IT equipment ",
+                "The chance to join the final hackathon and meet the best of the best, in person!"
             ]
         ],
         3 => [
             "content" => [
                 "Sign up now to",
                 "EU Code Week Hackathon Slovenia",
-                " and bring your ideas to life!"
+                "and bring your ideas to life!"
             ]
         ],
         4 => [
             "title" => "Propose challenges to be solved at the Hackathon",
             "content" => [
-                "do you want to make your community the centre of green and sustainable innovation in Slovenia ? if so, propose a challenge that will be \"hacked\" at the Hackathon. Something concrete that will help you, your school, city or community.",
+                "Do you want to make your community the centre of green and sustainable innovation in Slovenia? If so, propose a challenge that will be “hacked” at the Hackathon. Something concrete that will help you, your school, city or community.",
                 "Propose a challenge",
                 "Votes for the Slovenian challenge will start on the 23th of April."
             ]
         ],
         5 => [
-            "title" => "Vote on the challenges to be \"hacked\"",
+            "title" => "Vote on the challenges to be “hacked”",
             "content" => [
                 "The idea of the EU Code Week Hackathon is to show how concrete solutions come to life with the help of young people’s creativity, enthusiasm, innovation and coding skills. ‘Concrete’ means solving real problems – things that affect you, your school, community, city or specific challenges in your area.",
                 "Vote on what matters most to you!",
@@ -105,31 +82,15 @@ return [
         9 => [
             "title" => "Practical Info",
             "content" => [
-                "The hackathon is free of charge for all participants.",
-                "The Slovenian hackathon will take place in",
-                "Nova Gorica",
-                "the 18-19 September 2021.",
-                "Stable broadband internet access and computer equipment that will come in handy at work will be available in the modernly equipped premises of EKSCENTER.",
-                "The on-duty weathergirl for the Code Week events for this weekend in Nova Gorica predicts warm late summer weather.",
-                "Food, drinks, accommodation will be provided as well as a minimum of 75 euro to cover transportation expenses.",
-                "It is advisable to bring your own computers/laptops, as well as some clothes, a toilet bag and a sleeping bag.",
-                "We will be waiting for you in an upbeat mood, and all you need to do is bring a package of curiosity.",
-                "You will receive more detailed information about the event, venue and everything else after registration.",
-                "The Slovenian hackathon will take place in Nova Gorica and is one of six competitions for young people in Europe that will be organised by Code Week in Greece, Latvia, Ireland, Italy and Romania. It is intended for creative students who are interested in the future of technology. If this is you, please join us in learning about and developing innovative solutions.",
-                "Registration > ",
-                "Instructions for participants",
-                "This 2-days EU Code Week hackathon will take place in Nova Gorica from Saturday 18 September to Sunday 19 September 2021.",
-                "The jury will take your method, use of your time and prototype quality into account when selecting the successful team!",
-                "To help you prepare for the pitch of your solution, we will offer you free workshops during the hackathon. Your team will also be assisted by mentors who will make sure you are on the right track.",
-                "The top best teams will be rewarded for their achievements with practical prizes.",
-                "The winning team will receive a cash prize of EUR 2,000 and an invitation to present their solution to the European jury on the 14 October 2021.",
-                "The winners of hackathons from six countries will present their prototypes to the European jury during the official Europe Code Week the 14 October, 2021. The European champions will be rewarded with even more computer equipment that will (hopefully) encourage them to further develop their digital skills."
+                "The Hackathon will be held from 18 September to 19 September 2021. We hope the competition to take place physically. If the public health situation does not allow it, we will meet online.",
+                "The Hackathon is free of charge."
+
             ]
         ],
         10 => [
             "title" => "Jury & Mentors",
             "content" => [
-                "EU Code Week Hackathon Slovenia brings together leading figures from the Worlds of business, IT, venture capital, education, as well as local, national and EU leaders, influencers and coaches to guide and support you and your team during this intensive marathon.",
+                "Imagine being in a virtual room full of designers, developers, creators, coders and business mentors, all with the same curiosity and drive as you. EU Code Week Hackathon Slovenia brings together leading figures from the Worlds of business, IT, venture capital, education, as well as local, national and EU leaders, influencers and coaches to guide and support you and your team during this intensive marathon.",
                 "Sign up now to",
                 "EU Code Week Hackathon",
                 "and make it happen!",
@@ -207,12 +168,12 @@ return [
         ],
 
         "mentors" => [
-            "1" => ["Janko Harej", "Janko Harej is a higher education lecturer and teacher of professional subjects at the Nova Gorica Secondary School. He is interested in all aspects of integrating new technologies into education. He participates in various national and international projects, where he develops teacher education, develops services and e-content. He was involved in the revision of several curricula.", "In his free time, he is actively involved in the field of choral music."],
-            "2" => ["Katja K. Ošljak", "Researcher of communication and digital media, founder of the Institute for Digital Education Vsak and Slovenian ambassador of the EU Code Week project. It strives for access to digital education and media literacy for citizens of the information society"],
-            "3" => ["Uroš Polanc", "Uroš has been involved in innovation, prototyping, networking and many other things since he was a child. He completed his studies in mechatronics. He is now the head of the Learning Production Laboratory at ŠCNG, which is a laboratory dedicated to networking, prototyping and learning.", "He participates in various local and European projects, and also walks in business environment. He has extensive experience in mentoring, prototyping, working with young people, CNC machining, 3D modeling,"],
-            "4" => ["Luka Manojlovic", "Luka Manojlovic is a technical enthusiast - a computer scientist who has been dealing with server and network infrastructure for more than 20 years.", " He likes to share his knowledge with the participants of interactive workshops from various fields of information technologies."],
-            "5" => ["Vesna Krebs", "Vesna Krebs is a media artist and mentor who works both at home and abroad. Vesna combines her love of technology and art through various workshops and performances for children.", "In her pedagogical work, the emphasis is on creative audio-visual production with computer technologies, with which she encourages the younger population to think creatively and create with the help of modern technologies."],
-            "6" => ["Alojz Černe", "Alojz has an excellent working knowledge of IT, is a highly experienced developer and system designer. His field of work is also on microservice platforms - development and deployment of services on these platforms. 30+ years of experience in international enterprise projects with larger systems, in finance, telco and retail sector.", "In addition to this he is an outstanding Official Red Hat Instructor and Architect. He is a curious learner and eager to implement and share his newly obtained knowledge in practice."],
+            "1" =>["Janko Harej","Janko Harej is a higher education lecturer and teacher of professional subjects at the Nova Gorica Secondary School. He is interested in all aspects of integrating new technologies into education. He participates in various national and international projects, where he develops teacher education, develops services and e-content. He was involved in the revision of several curricula.","In his free time, he is actively involved in the field of choral music."],
+            "2" =>["Katja K. Ošljak","Researcher of communication and digital media, founder of the Institute for Digital Education Vsak and Slovenian ambassador of the EU Code Week project. It strives for access to digital education and media literacy for citizens of the information society"],
+            "3" =>["Uroš Polanc","Uroš has been involved in innovation, prototyping, networking and many other things since he was a child. He completed his studies in mechatronics. He is now the head of the Learning Production Laboratory at ŠCNG, which is a laboratory dedicated to networking, prototyping and learning.","He participates in various local and European projects, and also walks in business environment. He has extensive experience in mentoring, prototyping, working with young people, CNC machining, 3D modeling,"],
+            "4" =>["Luka Manojlovic","Luka Manojlovic is a technical enthusiast - a computer scientist who has been dealing with server and network infrastructure for more than 20 years."," He likes to share his knowledge with the participants of interactive workshops from various fields of information technologies."],
+            "5" =>["Vesna Krebs","Vesna Krebs is a media artist and mentor who works both at home and abroad. Vesna combines her love of technology and art through various workshops and performances for children.","In her pedagogical work, the emphasis is on creative audio-visual production with computer technologies, with which she encourages the younger population to think creatively and create with the help of modern technologies."],
+            "6" =>["Alojz Černe","Alojz has an excellent working knowledge of IT, is a highly experienced developer and system designer. His field of work is also on microservice platforms - development and deployment of services on these platforms. 30+ years of experience in international enterprise projects with larger systems, in finance, telco and retail sector.", "In addition to this he is an outstanding Official Red Hat Instructor and Architect. He is a curious learner and eager to implement and share his newly obtained knowledge in practice."],
 
         ],
 
