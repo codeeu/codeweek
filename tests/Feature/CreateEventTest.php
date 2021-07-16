@@ -3,10 +3,8 @@
 namespace Tests\Feature;
 
 use App\Event;
-use App\Mail\LeadingTeachingActionAdded;
 use Mail;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class CreateEventTest extends TestCase
@@ -125,7 +123,7 @@ class CreateEventTest extends TestCase
 
         $this->post('/events', $event->toArray());
 
-        Mail::assertQueued(\App\Mail\LeadingTeachingActionAdded::class, 1);
+        Mail::assertQueued(\App\Mail\EventCreated::class, 1);
 
 
     }
