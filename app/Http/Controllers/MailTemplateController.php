@@ -13,7 +13,7 @@ class MailTemplateController extends Controller
     {
         $event = \App\Event::first();
         $ambassadors = \App\User::role('ambassador')->where('country_iso', $event->country_iso)->get();
-        return new \App\Mail\EventCreated($event, $ambassadors[0]);
+        return new \App\Mail\LeadingTeachingActionAdded($event, $ambassadors[0]);
 
     }
 

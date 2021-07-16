@@ -4,9 +4,12 @@ namespace Tests\Feature;
 
 use App\Http\Livewire\LeadingTeacherReportForm;
 use App\LeadingTeacherAction;
+use App\Mail\EventApproved;
+use App\Mail\LeadingTeachingActionAdded;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Support\Facades\Mail;
 use Livewire;
 use Tests\TestCase;
 
@@ -34,12 +37,6 @@ class LeadingTeachersReportFormTest extends TestCase
 
     }
 
-    /** @test */
-
-    public function submitted_form_should_notify_admin_via_email()
-    {
-        //TODO
-    }
 
     /** @test */
     public function leading_teacher_action_should_be_created()
@@ -59,6 +56,11 @@ class LeadingTeachersReportFormTest extends TestCase
             ->assertRedirect('/leading-teachers/dashboard');
 
         $this->assertTrue(LeadingTeacherAction::whereTitle('foo')->exists());
+
+        //Email should have been fired
+        Mail::assertQueued(LeadingTeachingActionAdded::class, function ($mail)  {
+            return $mail->hasTo($this->leading_teacher_admin->email);
+        });
 
     }
 }

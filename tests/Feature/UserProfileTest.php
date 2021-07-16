@@ -42,7 +42,7 @@ class UserProfileTest extends TestCase
     {
 
         $response = $this->get('/user-profile/222');
-        $response->assertSeeText('Badge 1');
+        $response->assertSeeText('Start Your Engines');
 
     }
 }

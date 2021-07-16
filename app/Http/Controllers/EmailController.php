@@ -18,7 +18,7 @@ class EmailController extends Controller
 
         //send emails
         foreach ($ambassadors as $ambassador) {
-            Mail::to($ambassador->email)->queue(new \App\Mail\EventCreated($event, $ambassador));
+            Mail::to($ambassador->email)->queue(new \App\Mail\LeadingTeachingActionAdded($event, $ambassador));
         }
 
 
