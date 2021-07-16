@@ -10,7 +10,7 @@
 
         <section class="codeweek-content-header">
 
-            <h1>Leading Teacher Actions</h1>
+            <h1>Leading Teacher Dashboard</h1>
             <h3 class="mt-10">
                 <a href="{{route('LT.report')}}" class="codeweek-action-link-button">New Action</a>
             </h3>
