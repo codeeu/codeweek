@@ -305,7 +305,7 @@ class Event extends Model
         } else {
             //send emails
             foreach ($ambassadors as $ambassador) {
-                Mail::to($ambassador->email)->queue(new \App\Mail\LeadingTeachingActionAdded($this, $ambassador));
+                Mail::to($ambassador->email)->queue(new \App\Mail\EventCreated($this, $ambassador));
             }
         }
 
