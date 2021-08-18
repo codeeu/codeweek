@@ -15,6 +15,7 @@ _ide_helper.php
 bios.sql
 public/js/app.js
 public/css/app.css
+public/mix-manifest.json
 public/vendor/nova/*
 resources/lang/vendor/*
 !app/Nova
