@@ -39,7 +39,7 @@
                     {{ $events->links() }}
                 </div>
             @else
-                @lang('event.no_pending_events') @lang('countries.' . $country_name)
+                No pending event found.
             @endif
         </section>
 
