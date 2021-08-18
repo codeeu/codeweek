@@ -29,6 +29,7 @@
     "sass-loader": "^7.3.1",
     "tailwindcss": "^0.6.6",
     "tar": "^4.4.15",
+    "tinymce": "^5.8.2",
     "v-autocomplete": "^1.8.2",
     "vue": "^2.6.11",
     "vue-clipboard2": "^0.3.1",

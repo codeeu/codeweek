@@ -104,7 +104,7 @@
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field align-flex-start">
                                 <label for="id_description">*@lang('event.description.label')</label>
-                                <textarea cols="40" id="id_description" name="description"
+                                <textarea cols="60" id="id_description" name="description"
                                           placeholder="@lang('event.description.placeholder')" rows="10"> {{old('description',$event->description)}}</textarea>
                             </div>
                             <div class="errors">
@@ -321,9 +321,18 @@
 
     </script>
 
+<script src="{{asset('js/tinymce/tinymce.min.js')}}"></script>
+
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
 
     <script>
+
+        tinymce.init({
+            selector: '#id_description',
+            height: 400,
+            width:500
+        });
+
         function addActivity(activityType) {
             return {
                 selectedActivityType: activityType,
