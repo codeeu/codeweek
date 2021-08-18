@@ -2,8 +2,9 @@
 
 return [
 
-    "title" => "EU Code Week HACKATON",
-    "title2" => "Nova Gorica, 18. -19. september",
+    "title" => "EU Code Week HACKATHON",
+    "title2" => "Nova Gorica, 18-19 September",
+
     "subtitle" => "Bring your ideas to life!",
     "misc" => [
         "Read the rules & code of conduct",
