@@ -143,7 +143,8 @@
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field align-flex-start">
                                 <label for="id_location"><span
-                                            x-show="!isOnlineActivitySelected()">*</span>@lang('event.address.label')</label>
+                                            x-show="!isOnlineActivitySelected()">*</span>@lang('event.address.label')
+                                </label>
                                 <div>
                                     <autocomplete-geo name="location"
                                                       placeholder="@lang('event.address.placeholder')"></autocomplete-geo>
@@ -317,13 +318,24 @@
             "custom": ["/js/hideMenuMap.js"]
         }
 
+
+
     </script>
 
-{{--    <script src="{{asset('js/map-add-event.js')}}"></script>--}}
+    <script src="{{asset('js/tinymce/tinymce.min.js')}}"></script>
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
+
     <script>
+
+        tinymce.init({
+            selector: '#id_description',
+            height: 400,
+            width: 460
+        });
+
+
         function addActivity() {
             return {
                 selectedActivityType: 'open-in-person',
