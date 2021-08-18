@@ -49,14 +49,18 @@
 
                 @lang('hackathon-slovenia.sections.1.content.7')
                 @lang('hackathon-slovenia.sections.1.content.8')
-                @lang('hackathon-slovenia.sections.1.content.9')
+            </p>
+                <h2>@lang('hackathon-slovenia.sections.1.content.9')</h2>
+            <p style="line-height: 1.5">
                 @lang('hackathon-slovenia.sections.1.content.10')
                 <strong>@lang('hackathon-slovenia.sections.1.content.11')</strong>
                 @lang('hackathon-slovenia.sections.1.content.12')
                 <strong>@lang('hackathon-slovenia.sections.1.content.13')</strong>
                 @lang('hackathon-slovenia.sections.1.content.14')
                 <strong>@lang('hackathon-slovenia.sections.1.content.15')</strong>
-
+                @if(App::getLocale() != 'sl')
+                @lang('hackathon-slovenia.sections.1.content.16')
+                @endif
             </p>
 
         </section>
@@ -110,13 +114,16 @@
                         @lang('hackathon-slovenia.sections.9.content.1') <strong>@lang('hackathon-slovenia.sections.9.content.2')</strong> @lang('hackathon-slovenia.sections.9.content.3')
                         @lang('hackathon-slovenia.sections.9.content.4')
                     </div>
-<div>
+<p>
     @lang('hackathon-slovenia.sections.9.content.5')<br/><br/>
     @lang('hackathon-slovenia.sections.9.content.6')<br/><br/>
     @lang('hackathon-slovenia.sections.9.content.7')<br/><br/>
     @lang('hackathon-slovenia.sections.9.content.8')<br/><br/>
     @lang('hackathon-slovenia.sections.9.content.9')<br/><br/>
-</div>
+</p>
+
+
+
 
                     <div style="background-color: #dd6b203b;padding:12px; opacity: 90%; border-radius: 10px">
                     <strong>
@@ -132,21 +139,21 @@
             </div>
         </section>
 
-{{--        <section id="challenge">--}}
-{{--            <img src="/images/hackathons/ideation.png" class="desktop">--}}
-{{--            <div class="text">--}}
-{{--                <div class="challenge-text">--}}
-{{--                    <h1>@lang('hackathon-slovenia.sections.4.title')</h1>--}}
-{{--                    <p>@lang('hackathon-slovenia.sections.4.content.0')</p>--}}
-{{--                    <div class="button">--}}
-{{--                        <a target="_blank"--}}
-{{--                           href="https://ec.europa.eu/eusurvey/runner/EUCodeWeek2020_Challenges_Slovenia"--}}
-{{--                           class="codeweek-action-link-button">@lang('hackathon-slovenia.sections.4.content.1')</a>--}}
-{{--                    </div>--}}
+        <section id="challenge">
+            <img src="/images/hackathons/ideation.png" class="desktop">
+            <div class="text">
+                <div class="challenge-text">
+                    <h1>@lang('hackathon-slovenia.sections.4.title')</h1>
+                    <p>@lang('hackathon-slovenia.sections.4.content.0')</p>
+                    <div class="button">
+                        <a target="_blank"
+                           href="https://ec.europa.eu/eusurvey/runner/EUCodeWeek2020_Challenges_Slovenia"
+                           class="codeweek-action-link-button">@lang('hackathon-slovenia.sections.4.content.1')</a>
+                    </div>
 
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </section>--}}
+                </div>
+            </div>
+        </section>
 
         {{--                <section id="challenge">--}}
         {{--                    <img src="/images/hackathons/ideation.png" class="desktop">--}}

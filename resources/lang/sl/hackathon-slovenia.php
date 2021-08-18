@@ -3,7 +3,7 @@
 return [
 
     "title" => "EU Code Week HEKATON",
-    "title2" => "Nova Gorica, 18-19 September",
+    "title2" => "Nova Gorica, 18. -19. september",
 
     "subtitle" => "Naj tvoje ideje zaživijo!",
     "misc" => [
@@ -15,12 +15,12 @@ return [
         0 => [
             "content" => [
                 "Si star_a od 15 do 19 let in te zanima tehnologija?",
-                "Rad_a ustevajaš in si želiš spoznati sodobne trende s",
+                "Rad_a ustvarjaš in si želiš spoznati sodobne trende s",
                 "področja digitanih izdelkov? Potem kar brez oklevanja:",
-                "na hekaton se lahko prijaviš samostojno ališ e bolje z",
+                "na hekaton se lahko prijaviš samostojno ali še bolje z",
                 "lastno ekipo, v kateri bo vsak_a od vas prispeval_a",
                 "svoje znanje pri reševanju izbranega izziva. Najboljša",
-                "Ekipa prejme 2000 EUR nagrade."
+                "ekipa prejme 2000 EUR nagrade."
             ]
         ],
         1 => [
@@ -34,8 +34,8 @@ return [
                 "nagrade.",
 
 
-                "Hackathon se bo v živo odvil v Novi Gorici ( v primeru neugodnih epidemioloških razmer, bo dogodek potekal online).",
-                "Hackathon se bo začel s kreiranjem prototipa, katerega bo potrebno pravilno zasnovati in zapisati pravilno kodo. Prototip, ki predstavlja rešitev relanega problema, bodo udeleženci reševali dva dni. Vsi udeleženci bodo imeli enake delovne pogoje, dostop do vrhunskih mentorjev, na delavnicah pa bodo lahko izboljšali svoje rešitve in se pripravili za prezentacijo. Svojo rešitev bodo vse ekipe predstavile pred žirijo, ki bo izbrala najboljšo ekipo, zmagovalno ekipo Slovenije.",
+                "Hackathon se bo v živo odvil v Novi Gorici (v primeru neugodnih epidemioloških razmer, bo dogodek potekal online).",
+                "Hackathon se bo začel s kreiranjem prototipa, katerega bo potrebno pravilno zasnovati in zapisati pravilno kodo. Prototip, ki predstavlja rešitev realnega problema, bodo udeleženci reševali dva dni. Vsi udeleženci bodo imeli enake delovne pogoje, dostop do vrhunskih mentorjev, na delavnicah pa bodo lahko izboljšali svoje rešitve in se pripravili za prezentacijo. Svojo rešitev bodo vse ekipe predstavile pred žirijo, ki bo izbrala najboljšo ekipo, zmagovalno ekipo Slovenije.",
                 "Predstavitev Evropski žiriji",
                 "Zmagovalna ekipa Slovenskega hackathona bo prejela denarno nagrado",
                 "2000€",
@@ -112,9 +112,9 @@ return [
             "title" => "Praktične informacije",
             "content" => [
                 "Hekaton je za vse udeleženke in udeležence brezplačen.",
-                "Slovenski hackathon se bo odvil",
+                "Slovenski hekaton se bo odvil",
                 "v Novi Gorici",
-                "18. –19. Septembra 2021",
+                "18. –19. Septembra 2021.",
                 "V sodobno opremljenih prostorih EKSCENTRA bo na voljo stabilen širokopasovni dostop do interneta in računalniška oprema, ki vam bo prišla prav pri delu.",
                 "Dežurna meteorologinja za Code Week dogodke za ta vikend v Novi Gorici napoveduje toplo poznopoletno vreme.",
                 " Hrana, pijača in prenočišče je zagotovljeno. Za kritje potnih stroškov je predvideno 75€ na udeleženca.",
@@ -124,9 +124,9 @@ return [
                 "Slovenski hekaton bo potekal v Novi Gorici in je eno izmed šestih tekmovanj za mlade v Evropi, kijih Code Week organizira še v Grčiji, Latviji, na Irskem, v Italiji in Romuniji. Namenjen je ustvarjalnim dijakinjam in dijakom, ki jih zanima prihodnost tehnologije. Če si tak_a tudi ti, se nam pridruži pri spoznavanju in razvijanju inovativnih rešitev.",
                 "Registracija >",
                 "Navodila za udeleženke in udeležence",
-                "Dvodnevni Eu Code Week hackathon se bo odvil v Novi Gorici, v soboto 18. septembra in nedeljo 19. septembra 2021.",
+                "Dvodnevni EU Code Week hackathon se bo odvil v Novi Gorici, v soboto 18. septembra in nedeljo 19. septembra 2021.",
                 "Žirija bo ocenjevala način dela, časovno ekonomičnost in kvaliteto prototipa in glede na to ocenila uspešnost ekipe.",
-                "Pomoč pri pripravi na predstavitev vaše rešitve , vam bomo zagotovili preko delavnic in vrhunskih mentorjev, ki bodo s svojo strokovnostjo potrdili, da ste na pravi poti.",
+                "Pomoč pri pripravi na predstavitev vaše rešitve vam bomo zagotovili preko delavnic in vrhunskih mentorjev, ki bodo s svojo strokovnostjo potrdili, da ste na pravi poti.",
                 "Najboljše ekipe bodo za svoje dosežke nagrajene s praktičnimi nagradami.",
                 "Zmagovalna ekipa bo prejela denarno nagrado 2000€ in povabilo na predstavitev njihovega prototipa Evropski žiriji dne 14. oktobra 2021.",
                 "Zmagovalci hackathonov iz vseh šestih držav bodo predstavili svoje prototipe Evropski žiriji tekom uradnega Evropskega tedna programiranja, dne 14. Oktober 2021. Evropski prvaki bodo prejeli najnovejšo računalniško opremo, s katero bodo lahko še več ustvarjali in razvijali svoje digitalne spretnosti."
