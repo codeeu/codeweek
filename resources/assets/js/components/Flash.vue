@@ -33,7 +33,7 @@
             flash(data) {
                 if (data) {
                     this.body = data.message;
-                    this.level = data.level;
+                    this.level = data.level.charAt(0).toUpperCase() + data.level.slice(1);
                 }
 
                 this.show = true;
