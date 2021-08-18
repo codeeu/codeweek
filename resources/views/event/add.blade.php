@@ -319,6 +319,7 @@
         }
 
 
+
     </script>
 
     <script src="{{asset('js/tinymce/tinymce.min.js')}}"></script>
@@ -331,7 +332,7 @@
         tinymce.init({
             selector: '#id_description',
             height: 400,
-            width:500
+            width: 460
         });
 
 
