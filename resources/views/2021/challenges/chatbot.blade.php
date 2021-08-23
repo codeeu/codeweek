@@ -9,7 +9,7 @@
         <section class="codeweek-banner about">
             <div class="text">
                 <div class="text-5xl text-white">EU CODE WEEK CHALLENGES</div>
-                <h2>9-24 October 2021</h2>
+                <h2>Make a chatbot</h2>
             </div>
             <div class="image">
                 <img src="/images/banner_about.svg" class="static-image">
@@ -21,13 +21,15 @@
         <section class="codeweek-content-wrapper">
             <div class="m-6">
 
-                <section class="grid grid-cols-1 gap-6 md:grid-cols-4 mx-6 my-4">
+                <section class="grid grid-cols-1 gap-6 md:grid-cols-5 mx-6 my-4">
 
 
                     <div>
                         <div class="text-xl text-left text-blue-600">Target audience</div>
-                        <div>Teachers</div>
-                        <div>Students (12-18)</div>
+                        <ol class="list-disc ml-5">
+                        <li>Teachers</li>
+                        <li>Students (12-18)</li>
+                        </ol>
                     </div>
 
                     <div>
@@ -42,35 +44,43 @@
 
                     <div>
                         <div class="text-xl text-left text-blue-600">Recommended materials</div>
-                        <div><a href="https://pencilcode.net/" target="_blank">Pencil code</a></div>
-                        <div><a href="https://machinelearningforkids.co.uk/" target="_blank">Machine learning for
-                                kids</a></div>
+                        <ol class="list-disc ml-5">
+                        <li><a href="https://pencilcode.net/" target="_blank">Pencil code</a></li>
+                        <li><a href="https://machinelearningforkids.co.uk/" target="_blank">Machine learning for
+                                kids</a></li>
+                    </div>
+
+                    <div>
+                        <div class="text-xl text-left text-blue-600">Purpose</div>
+                        <ol class="list-disc ml-5">
+                            <li>Code interactive riddles</li>
+                            <li>Use code to create dialogues between a chatbot and a user</li>
+                        </ol>
+
                     </div>
 
 
                 </section>
 
 
-                <div class="orange text-3xl mt-2">
-                    Make a chatbot
+                <div class="leading-6 text-base text-left">
+
+                    <section class="bg-blue-100 p-2 mt-6">
+                    <div class="orange text-3xl mt-2">
+                    Description
                 </div>
 
-                <div class="leading-6 text-base text-left">
+
                     <div class="mt-2">
                         Code a conversation between a chatbot and a user who is trying to solve a riddle. Try to make a
                         chatbot that can chat like a person. Instead of a riddle you can create a dialogue between a
                         chatbot and a user.
                     </div>
-
-                    <section class="bg-blue-200 p-2 mt-6">
-                        <div class="orange text-3xl">Purpose of the challenge</div>
-                        <div class="mt-2">To code interactive riddles. To use code to create dialogues between a chatbot and a
-                            user.
-                        </div>
                     </section>
 
 
-                    <section>
+
+                    <section class="p-2">
                         <div class="leading-8">
                             <div class="mt-6 orange text-3xl">Instructions</div>
                             <ul class="leading-7 ml-2 mt-0 checklist mt-2">
@@ -90,7 +100,7 @@
                         </div>
                     </section>
 
-                    <section>
+                    <section class="p-2">
                         <div class="mt-6 orange text-3xl">Example</div>
                         <div class="mt-2">Check out this  example of a riddle. <iframe src="//abfromz.pencilcode.net/home/Riddle" width="640" height="640" frameborder="0" allowfullScreen></iframe>
                         </div>

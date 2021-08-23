@@ -51,6 +51,22 @@
 
 
                     <section class="grid grid-cols-1 gap-6 md:grid-cols-3">
+
+                        <div class="shadow-xl">
+                            <a href="{{route('challenges.chatbot')}}">
+                                <img src="/img/learning/tinkering-and-making.png">
+                                <div class="orange p-2 bg-gray-100 text-xl">Make a chatbot</div>
+                            </a>
+                        </div>
+                        <div class="shadow-xl">
+                            <a href="{{route('challenges.paper-circuit')}}">
+                                <img src="/img/learning/coding-without-computers.png">
+                                <div class="orange p-2 bg-gray-100 text-xl">Unplug and code: Create a paper circuit
+                                </div>
+                            </a>
+                        </div>
+
+
                         <div class="shadow-xl">
                             <a href="{{route('challenges.dance')}}">
                                 <img src="/img/learning/coding-for-inclusion.png">
@@ -69,19 +85,7 @@
                                 <div class="orange p-2 bg-gray-100 text-xl">Make a video sensing animation or game</div>
                             </a>
                         </div>
-                        <div class="shadow-xl">
-                            <a href="{{route('challenges.chatbot')}}">
-                                <img src="/img/learning/tinkering-and-making.png">
-                                <div class="orange p-2 bg-gray-100 text-xl">Make a chatbot</div>
-                            </a>
-                        </div>
-                        <div class="shadow-xl">
-                            <a href="{{route('challenges.paper-circuit')}}">
-                                <img src="/img/learning/coding-without-computers.png">
-                                <div class="orange p-2 bg-gray-100 text-xl">Unplug and code: Create a paper circuit
-                                </div>
-                            </a>
-                        </div>
+
 
                     </section>
 
