@@ -88,7 +88,7 @@
                 </div>
 
                 <section>
-                    <div class="mt-6 orange text-3xl">
+                    <div class="mt-8 orange text-3xl">
                         Who can join?
                     </div>
                     <div class="leading-6 text-base text-left mt-2">
@@ -101,8 +101,8 @@
                     <div class="mt-6 orange text-3xl">
                         How to participate in the EU Code Week 2021 Challenge?
                     </div>
-                    <span class="leading-6 text-base text-left">
-                        <ul class="list-decimal ml-4 mt-2">
+                    <div class="leading-6 text-base text-left">
+                        <ul class="list-decimal ml-6 mt-2">
                             <li>
                                 Select a challenge you would like to complete.
                             </li>
@@ -112,7 +112,44 @@
                         </ul>
 
 
-                    </span>
+                    </div>
+
+                    <div class="mt-6 orange text-3xl">
+                        Share your challenge
+                    </div>
+                    <div class="leading-6 text-base text-left">
+
+                        <div class="leading-6 text-base text-left mt-2">
+                            Would you like to win some Code Week goodies? If yes, then let your work go viral. After you
+                            have completed the challenge, share it on Instagram. Follow @CodeWeekEU on Instagram and
+                            mention @CodeWeekEU. Make sure to use the hashtag #CodeWeekChallenge.
+                        </div>
+
+                        <div class="leading-6 text-base text-left mt-2">
+                            Winners will be selected every day during Code Week between 9 – 24 October, and announced on
+                            our Instagram channel, so don't forget to check your notifications regularly.
+                        </div>
+
+                    </div>
+
+                    <div class="mt-6 orange text-3xl">
+                        Why take part in an EU Code Week challenge?
+                    </div>
+                    <div class="leading-6 text-base text-left">
+                        <ul class="list-disc ml-6 mt-2">
+                            <li>
+                                To engage in problem solving and coding activities.
+                            </li>
+                            <li>
+                                To work together with peers.
+                            </li>
+                            <li>
+                                To spread the message on the importance of coding.
+                            </li>
+                        </ul>
+
+
+                    </div>
                 </section>
 
             </div>
