@@ -8,7 +8,7 @@
 
         <section class="codeweek-banner about">
             <div class="text">
-                <div class="text-5xl text-white">EU CODE WEEK CHALLENGES</div>
+                <div class="text-5xl text-white"><a class="text-white underline" href="{{route('challenges')}}">EU CODE WEEK CHALLENGES</a></div>
                 <h2>Make a chatbot</h2>
             </div>
             <div class="image">
@@ -34,12 +34,16 @@
 
                     <div>
                         <div class="text-xl text-left text-blue-600">Experience</div>
-                        <div>Advanced</div>
+                        <ol class="list-disc ml-5">
+                            <li>Advanced</li>
+                        </ol>
                     </div>
 
                     <div>
                         <div class="text-xl text-left text-blue-600">Duration</div>
-                        <div>1 hour</div>
+                        <ol class="list-disc ml-5">
+                            <li>1 hour</li>
+                        </ol>
                     </div>
 
                     <div>

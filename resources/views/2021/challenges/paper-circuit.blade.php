@@ -8,7 +8,7 @@
 
         <section class="codeweek-banner about">
             <div class="text">
-                <div class="text-5xl text-white">EU CODE WEEK CHALLENGES</div>
+                <div class="text-5xl text-white"><a class="text-white underline" href="{{route('challenges')}}">EU CODE WEEK CHALLENGES</a></div>
                 <h2>Unplug and code: Create a paper circuit</h2>
             </div>
             <div class="image">
@@ -34,12 +34,16 @@
 
                     <div>
                         <div class="text-xl text-left text-blue-600">Experience</div>
-                        <div>Beginner</div>
+                        <ol class="list-disc ml-5">
+                            <li>Beginner</li>
+                        </ol>
                     </div>
 
                     <div>
                         <div class="text-xl text-left text-blue-600">Duration</div>
-                        <div>45 minutes</div>
+                        <ol class="list-disc ml-5">
+                            <li>45 minutes</li>
+                        </ol>
                     </div>
 
                     <div>
@@ -117,7 +121,7 @@
                     </section>
 
                     <section class="p-2">
-                        <div class="mt-6 orange text-3xl">Example</div>
+                        <div class="orange text-3xl">Example</div>
                         <div class="mt-2">See some examples of paper circuits:
 
                         </div>
