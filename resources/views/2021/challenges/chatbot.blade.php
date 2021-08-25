@@ -94,9 +94,13 @@
                                     not allowed on Pencil Code due to privacy reasons.)
                                 </li>
                                 <li>Click Imagine and Make your own.</li>
-                                <li>Use blocks or text-based mode to write your riddle.</li>
+                                <li>Use blocks or text-based mode to write your riddle.
+                                    <img class="m-4" width="550" src="{{asset('img/2021/challenges/chatbot-1.png')}}"/>
+                                    <img class="m-4" width="550" src="{{asset('img/2021/challenges/chatbot-2.png')}}"/>
+
+                                </li>
                                 <li>Alternatively, you can use <a href="https://abfromz.pencilcode.net/edit/Riddle"
-                                                                  target="_blank">this code</a> and adapt it to your
+                                                                  target="_blank">this code</a> <a href="#pencil-code"><sup>1</sup></a> and adapt it to your
                                     riddle or you can select Answering a riddle from the menu and edit it.
                                 </li>
                             </ul>
@@ -109,6 +113,10 @@
                         <div class="mt-2">Check out this  example of a riddle. <iframe src="//abfromz.pencilcode.net/home/Riddle" width="640" height="640" frameborder="0" allowfullScreen></iframe>
                         </div>
                     </section>
+
+                    <div id="pencil-code" class="text-sm">
+                        1. This code has been Adapted from Pencil Code activity <a href="https://gym.pencilcode.net/imagine/#/imagine/troll.html" target="_blank">Answering the Riddle
+                    </div>
 
 
                 </div>
