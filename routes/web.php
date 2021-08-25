@@ -532,9 +532,10 @@ Route::prefix('2021')->group(function () {
     Route::view('/challenges/song', '2021.challenges.song')->name(
         'challenges.song'
     );
-    Route::view('/challenges/game', '2021.challenges.game')->name(
-        'challenges.game'
-    );
+    Route::view(
+        '/challenges/sensing-game',
+        '2021.challenges.sensing-game'
+    )->name('challenges.sensing-game');
     Route::view('/challenges/chatbot', '2021.challenges.chatbot')->name(
         'challenges.chatbot'
     );

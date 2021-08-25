@@ -80,7 +80,7 @@
                             </a>
                         </div>
                         <div class="shadow-xl">
-                            <a href="{{route('challenges.game')}}">
+                            <a href="{{route('challenges.sensing-game')}}">
                                 <img src="/img/learning/mining-media-literacy.png">
                                 <div class="orange p-2 bg-gray-100 text-xl">Make a video sensing animation or game</div>
                             </a>
