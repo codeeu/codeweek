@@ -84,16 +84,16 @@
                         <div class="leading-8">
                             <div class="mt-6 orange text-3xl">Instructions</div>
                             <ul class="leading-7 ml-2 mt-0 checklist mt-2">
-                                <li>Log in to Tynker as a teacher. Create student accounts and share them with your students. Alternatively share a class code and have your students register with their school email address. If you are a student, you can join as a student, but you will be asked to provide your parent’s email address so that they can approve your account.</li>
-                                <li>Click Create a project – Blank Block Coding Project and give it a title. </li>
-                                <li>Go to Stage to add a background by clicking on the gear icon. Choose a background from the Media Library, upload your own image or you can even take a picture and upload it. Choose an audio clip and add it to the stage:
+                                <li>Log in to <a href="https://www.tynker.com/">Tynker</a> as a teacher. Create student accounts and share them with your students. Alternatively share a class code and have your students register with their school email address. If you are a student, you can join as a student, but you will be asked to provide your parent’s email address so that they can approve your account.</li>
+                                <li>Click <strong>Create a project – Blank Block Coding Project</strong> and give it a title. </li>
+                                <li>Go to <strong>Stage</strong> to add a background by clicking on the gear icon. Choose a background from the Media Library, upload your own image or you can even take a picture and upload it. Choose an audio clip and add it to the stage:
                                     <img class="m-4" width="400" src="{{asset('img/2021/challenges/dance-1.png')}}"/>
                                 </li>
-                                <li>Click the Add Actor button to add characters or objects that you will animate so that they can move, talk and interact with each other. Add two or three characters of your choice. You can draw your own actors or modify the existing ones. Add different costumes to your character by clicking the pencil icon.</li>
+                                <li>Click the <strong>Add Actor</strong> button to add characters or objects that you will animate so that they can move, talk and interact with each other. Add two or three characters of your choice. You can draw your own actors or modify the existing ones. Add different costumes to your character by clicking the pencil icon.</li>
                                 <li>Click on each actor and animate it by adding the following blocks:
                                     <img class="m-4" width="250" src="{{asset('img/2021/challenges/dance-2.png')}}"/>
                                 </li>
-                                <li>Add a say block and have your actors talk to each other. Change the shape of the speech bubbles and the font and the size of your text.
+                                <li>Add a <strong>say block</strong> and have your actors talk to each other. Change the shape of the speech bubbles and the font and the size of your text.
                                     <img class="m-4" width="600" src="{{asset('img/2021/challenges/dance-3.png')}}"/>
                                 </li>
 
