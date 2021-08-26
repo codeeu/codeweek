@@ -88,23 +88,30 @@ class EventsController extends Controller {
     }
 
     public function geobox(Request $request) {
-        $lat1 = $request->input('lat1');
-        $long1 = $request->input('long1');
-        $lat2 = $request->input('lat2');
-        $long2 = $request->input('long2');
+        $validated = $request->validate([
+            'lat1' => 'required|numeric',
+            'long1' => 'required|numeric',
+            'lat2' => 'required|numeric',
+            'long2' => 'required|numeric',
+            'year' => 'nullable|sometimes|numeric'
+        ]);
 
-        if (is_null($request->input('year'))) {
-            $year = Carbon::now()->year;
+        $lat1 = $validated['lat1'];
+        $long1 = $validated['long1'];
+        $lat2 = $validated['lat2'];
+        $long2 = $validated['long2'];
+
+        if (abs($lat1 - $lat2) > 10 || abs($long1 - $long2) > 10) {
+            return response()->json(['error' => 'Area is too wide'], 500);
+        }
+
+        if (isset($validated['year'])) {
+            $year = (int) $validated['year'];
         } else {
-            $year = $request->input('year');
+            $year = Carbon::now()->year;
         }
 
         $box = [];
-
-        // ['latitude', '>=', $lat1],
-        // ['latitude', '<=', $lat2],
-        // ['longitude', '>=', $long1],
-        // ['longitude', '<=', $long2]
 
         if ($lat1 < $lat2) {
             $box[] = ['latitude', '>=', $lat1];
@@ -123,7 +130,8 @@ class EventsController extends Controller {
         }
 
         $collection = \App\Http\Resources\EventResource::collection(
-            Event::where($box)
+            Event::where('status', 'like', 'APPROVED')
+                ->where($box)
                 ->whereYear('end_date', '=', $year)
                 ->get()
         );
