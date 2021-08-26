@@ -191,7 +191,12 @@ class EventsAPITest extends TestCase {
 
         $response = $this->json(
             'GET',
-            '/api/events/geobox?lat1=40&long1=9&lat2=54&long2=10'
+            '/api/events/geobox?lat1=40&long1=9&lat2=51&long2=10'
         );
+
+        $errorMessage = $response->decodeResponseJson()['error'];
+
+        $response->assertStatus(500);
+        $this->assertEquals('Area is too wide', $errorMessage);
     }
 }

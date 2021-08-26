@@ -101,6 +101,10 @@ class EventsController extends Controller {
         $lat2 = $validated['lat2'];
         $long2 = $validated['long2'];
 
+        if (abs($lat1 - $lat2) > 10 || abs($long1 - $long2) > 10) {
+            return response()->json(['error' => 'Area is too wide'], 500);
+        }
+
         if (isset($validated['year'])) {
             $year = (int) $validated['year'];
         } else {
