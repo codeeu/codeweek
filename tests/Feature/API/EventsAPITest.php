@@ -3,9 +3,11 @@
 namespace Tests\Feature;
 
 use Carbon\Carbon;
+use Exception;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Validation\ValidationException;
 use Tests\TestCase;
 
 class EventsAPITest extends TestCase {
@@ -17,25 +19,29 @@ class EventsAPITest extends TestCase {
             'App\Event',
             [
                 'longitude' => 46.60675,
-                'latitude' => 13.84246
+                'latitude' => 13.84246,
+                'status' => 'APPROVED'
             ],
             3
         );
 
         $badLatitudeEvent = create('App\Event', [
             'longitude' => 9.87985,
-            'latitude' => 55.5311
+            'latitude' => 55.5311,
+            'status' => 'APPROVED'
         ]);
 
         $badLongitudeEvent = create('App\Event', [
             'longitude' => 19.87985,
-            'latitude' => 53.5311
+            'latitude' => 53.5311,
+            'status' => 'APPROVED'
         ]);
 
         $hamburgEvent = create('App\Event', [
             'title' => 'Good Event',
             'longitude' => 9.87985,
-            'latitude' => 53.5311
+            'latitude' => 53.5311,
+            'status' => 'APPROVED'
         ]);
 
         $response = $this->json(
@@ -69,18 +75,21 @@ class EventsAPITest extends TestCase {
 
         $badLatitudeEvent = create('App\Event', [
             'longitude' => 9.87985,
-            'latitude' => 55.5311
+            'latitude' => 55.5311,
+            'status' => 'APPROVED'
         ]);
 
         $badLongitudeEvent = create('App\Event', [
             'longitude' => 19.87985,
-            'latitude' => 53.5311
+            'latitude' => 53.5311,
+            'status' => 'APPROVED'
         ]);
 
         $pastEvent = create('App\Event', [
             'title' => '2020 Event',
             'longitude' => 9.87985,
             'latitude' => 53.5311,
+            'status' => 'APPROVED',
             'end_date' => Carbon::now()->setYear(2020)
         ]);
 
@@ -88,6 +97,7 @@ class EventsAPITest extends TestCase {
             'title' => '2021 Event',
             'longitude' => 9.87985,
             'latitude' => 53.5311,
+            'status' => 'APPROVED',
             'end_date' => Carbon::now()->setYear(2021)
         ]);
 
@@ -108,6 +118,7 @@ class EventsAPITest extends TestCase {
             'title' => '2020 Event',
             'longitude' => 9.87985,
             'latitude' => 53.5311,
+            'status' => 'APPROVED',
             'end_date' => Carbon::now()->setYear(2020)
         ]);
 
@@ -115,6 +126,7 @@ class EventsAPITest extends TestCase {
             'title' => 'Current Year Event',
             'longitude' => 9.87985,
             'latitude' => 53.5311,
+            'status' => 'APPROVED',
             'end_date' => Carbon::now()
         ]);
 
@@ -127,5 +139,59 @@ class EventsAPITest extends TestCase {
 
         $this->assertCount(1, $data);
         $this->assertEquals('Current Year Event', $data[0]['title']);
+    }
+
+    /** @test */
+    public function it_should_not_return_events_with_bad_year() {
+        $this->withoutExceptionHandling();
+        try {
+            $response = $this->json(
+                'GET',
+                '/api/events/geobox?lat1=53&long1=9&lat2=54&long2=10&year=aaa'
+            );
+        } catch (ValidationException $e) {
+            $this->assertEquals(
+                'The given data was invalid.',
+                $e->getMessage()
+            );
+        }
+    }
+
+    /** @test */
+    public function it_should_not_return_non_approved_events() {
+        $pendingEvent = create('App\Event', [
+            'title' => 'Pending Event',
+            'longitude' => 9.87985,
+            'latitude' => 53.5311,
+            'status' => 'PENDING'
+        ]);
+
+        $approvedEvent = create('App\Event', [
+            'title' => 'Approved Event',
+            'longitude' => 9.87985,
+            'latitude' => 53.5311,
+            'status' => 'APPROVED',
+            'end_date' => Carbon::now()
+        ]);
+
+        $response = $this->json(
+            'GET',
+            '/api/events/geobox?lat1=53&long1=9&lat2=54&long2=10'
+        );
+
+        $data = $response->decodeResponseJson()['data'];
+
+        $this->assertCount(1, $data);
+        $this->assertEquals('Approved Event', $data[0]['title']);
+    }
+
+    /** @test */
+    public function it_should_not_return_events_with_space_too_wide() {
+        $this->withoutExceptionHandling();
+
+        $response = $this->json(
+            'GET',
+            '/api/events/geobox?lat1=40&long1=9&lat2=54&long2=10'
+        );
     }
 }
