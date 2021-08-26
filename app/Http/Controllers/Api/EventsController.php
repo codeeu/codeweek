@@ -93,13 +93,39 @@ class EventsController extends Controller {
         $lat2 = $request->input('lat2');
         $long2 = $request->input('long2');
 
+        if (is_null($request->input('year'))) {
+            $year = Carbon::now()->year;
+        } else {
+            $year = $request->input('year');
+        }
+
+        $box = [];
+
+        // ['latitude', '>=', $lat1],
+        // ['latitude', '<=', $lat2],
+        // ['longitude', '>=', $long1],
+        // ['longitude', '<=', $long2]
+
+        if ($lat1 < $lat2) {
+            $box[] = ['latitude', '>=', $lat1];
+            $box[] = ['latitude', '<=', $lat2];
+        } else {
+            $box[] = ['latitude', '<=', $lat1];
+            $box[] = ['latitude', '>=', $lat2];
+        }
+
+        if ($long1 < $long2) {
+            $box[] = ['longitude', '>=', $long1];
+            $box[] = ['longitude', '<=', $long2];
+        } else {
+            $box[] = ['longitude', '<=', $long1];
+            $box[] = ['longitude', '>=', $long2];
+        }
+
         $collection = \App\Http\Resources\EventResource::collection(
-            Event::where([
-                ['latitude', '>=', $lat1],
-                ['latitude', '<=', $lat2],
-                ['longitude', '>=', $long1],
-                ['longitude', '<=', $long2]
-            ])->get()
+            Event::where($box)
+                ->whereYear('end_date', '=', $year)
+                ->get()
         );
 
         return $collection;
