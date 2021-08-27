@@ -187,22 +187,22 @@ class ExcellenceTest extends TestCase {
             ->assertDontSee('Claim your certificate of excellence for 2020');
     }
 
-    //    /** @test */
-    //    public function super_organiser_certificates_should_be_visible_on_certificates_page_only_when_reported()
-    //    {
-    //
-    //        $user = create('App\User');
-    //
-    //        $this->signIn($user);
-    //        $name = NULL;
-    //
-    //        create('App\Excellence', ['edition' => 2020, 'user_id' => $user->id,'name_for_certificate'=>$name, 'type' => "SuperOrganiser"]);
-    //
-    //
-    //        $this->get('/certificates')
-    //            ->assertSee("Claim your super organiser certificate for 2020");
-    //
-    //
-    //
-    //    }
+    /** @test */
+    public function super_organiser_certificates_should_be_visible_on_certificates_page_only_when_reported() {
+        $user = create('App\User');
+
+        $this->signIn($user);
+        $name = null;
+
+        create('App\Excellence', [
+            'edition' => 2020,
+            'user_id' => $user->id,
+            'name_for_certificate' => $name,
+            'type' => 'SuperOrganiser'
+        ]);
+
+        $this->get('/certificates')->assertSee(
+            'Claim your super organiser certificate for 2020'
+        );
+    }
 }
