@@ -21,7 +21,7 @@ jobs:
     - name: Copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
     - name: Copy composer.json
-      run: php -r "file_exists('composer.json') || copy('composer-test.json', 'composer.json');"      
+      run: php -r "copy('composer-test.json', 'composer.json');"      
     - name: Install Dependencies
       run: composer install
     - name: Generate key
