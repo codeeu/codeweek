@@ -23,7 +23,10 @@ jobs:
     - name: Copy composer.json
       run: php -r "copy('composer-test.json', 'composer.json');"      
     - name: Install Dependencies
-      run: composer install
+      run: |
+          php --version
+          composer config "http-basic.nova.laravel.com" "${{ secrets.NOVA_USERNAME }}" "${{ secrets.NOVA_PASSWORD }}"
+          composer install -n --prefer-dist
     - name: Generate key
       run: php artisan key:generate
     - name: Directory Permissions
