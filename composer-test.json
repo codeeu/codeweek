@@ -93,6 +93,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/codeeu/laravel-vue-i18n-generator"
+        },
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
         }
     ],
     "minimum-stability": "dev",
