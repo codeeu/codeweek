@@ -12,7 +12,7 @@
         "ext-json": "*",
         "ext-zip": "*",
         "aws/aws-sdk-php": "^3.67",
-        "caouecs/laravel-lang": "~3.0",
+        "laravel-lang/lang": "^10.1",
         "consoletvs/charts": "^6.0",
         "ctessier/nova-advanced-image-field": "^1.0",
         "doctrine/dbal": "^2.8",
