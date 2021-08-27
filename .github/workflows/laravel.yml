@@ -35,6 +35,18 @@ jobs:
       run: |
         mkdir -p database
         touch database/database.sqlite
+        
+    - name: Cache yarn dependencies
+      uses: actions/cache@v1
+      with:
+        path: node_modules
+        key: yarn-${{ hashFiles('yarn.lock') }}
+
+    - name: Run yarn
+      run: |
+        yarn --version
+        yarn && yarn dev
+        
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       env:
         DB_CONNECTION: sqlite
