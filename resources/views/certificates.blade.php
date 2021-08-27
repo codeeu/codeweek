@@ -95,8 +95,7 @@
                             <tr>
                                 <td colspan="5">
                                     <a href="{{route('certificate_super_organiser_report', ['edition'=>$super_organiser_certificate->edition])}}">
-                                        Claim your Super Organiser certificate
-                                        for {{$certificate_of_excellence->edition}}
+                                        Claim your Super Organiser certificate for {{$super_organiser_certificate->edition}}
                                     </a>
                                 </td>
                             </tr>

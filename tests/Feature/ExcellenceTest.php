@@ -201,8 +201,8 @@ class ExcellenceTest extends TestCase {
             'type' => 'SuperOrganiser'
         ]);
 
-        $this->get('/certificates')->assertSee(
-            'Claim your super organiser certificate for 2020'
-        );
+        $response = $this->get('/certificates');
+
+        $response->assertSee('Claim your Super Organiser certificate for 2020');
     }
 }
