@@ -20,6 +20,8 @@ jobs:
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
     - name: Copy composer.json
       run: php -r "file_exists('composer.json') || copy('composer-test.json', 'composer.json');"      
+    - name: Remove composer lock file
+      run: php -r "file_exists('composer.lock') || unlink('composer.lock');"      
     - name: Install Dependencies
       run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
     - name: Generate key
