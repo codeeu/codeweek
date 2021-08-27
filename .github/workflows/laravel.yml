@@ -23,7 +23,7 @@ jobs:
     - name: Copy composer.json
       run: php -r "file_exists('composer.json') || copy('composer-test.json', 'composer.json');"      
     - name: Install Dependencies
-      run: composer install -q --prefer-dist
+      run: composer install
     - name: Generate key
       run: php artisan key:generate
     - name: Directory Permissions
