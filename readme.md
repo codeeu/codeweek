@@ -1,4 +1,4 @@
-# Codeweek [![Build Status](https://travis-ci.org/codeeu/codeweek.svg?branch=master)](https://travis-ci.org/codeeu/codeweek)
+# Codeweek [![Laravel](https://github.com/codeeu/codeweek/actions/workflows/laravel.yml/badge.svg?branch=master)](https://github.com/codeeu/codeweek/actions/workflows/laravel.yml)
 
 A grassroots initiative run by volunteers and supported by the European Commission.
 
