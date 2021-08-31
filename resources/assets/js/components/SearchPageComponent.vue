@@ -93,7 +93,7 @@
                     <div class="card-content">
                         <div class="card-title">{{ event.title }}</div>
                         <div class="card-subtitle">{{ event.start_date }}</div>
-                        <div class="card-description">{{limit(event.description)}}</div>
+                        <div class="card-description" v-html="limit(event.description)"></div>
                     </div>
                     <div class="card-actions">
                         <a class="codeweek-action-link-button"
@@ -226,8 +226,8 @@
             },
             limit(text) {
 
-                if (text.length > 200) {
-                    return text.substring(0, 200) + "...";
+                if (text.length > 400) {
+                    return text.substring(0, 400) + "...";
                 }
                 return text;
             }
