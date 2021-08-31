@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-
 use App\ActivityType;
 use App\Country;
 use App\Event;
@@ -23,56 +22,50 @@ use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
-class EventController extends Controller
-{
-
-
+class EventController extends Controller {
     /**
      * EventController constructor.
      */
-    public function __construct()
-    {
+    public function __construct() {
         $this->middleware('auth')->except(['index', 'show', 'my']);
     }
 
-
-    public function my()
-    {
-
-        $events = Event::where('creator_id', '=', Auth::user()->id)->orderBy('created_at', 'desc')->paginate(6);
+    public function my() {
+        $events = Event::where('creator_id', '=', Auth::user()->id)
+            ->orderBy('created_at', 'desc')
+            ->paginate(6);
 
         return view('event.my', compact('events'));
-
     }
 
-
-    public function myreportable()
-    {
-
-        $events = Event::where('creator_id', '=', Auth::user()->id)
-            ->whereNull('reported_at')
-            ->orderBy('created_at', 'desc')->paginate(6);
-
-        return view('event.myreportable', compact('events'));
-
-    }
-
+    //    public function myreportable()
+    //    {
+    //
+    //        $events = Event::where('creator_id', '=', Auth::user()->id)
+    //            ->whereNull('reported_at')
+    //            ->orderBy('created_at', 'desc')->paginate(6);
+    //
+    //        return view('event.myreportable', compact('events'));
+    //
+    //    }
 
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
-    {
-
+    public function index(Request $request) {
         $years = range(Carbon::now()->year, 2014, -1);
 
-        $selectedYear = $request->input("year") ? $request->input("year") : Carbon::now()->year;
+        $selectedYear = $request->input('year')
+            ? $request->input('year')
+            : Carbon::now()->year;
 
         $iso_country_of_user = User::getGeoIPData()->iso_code;
 
-        $ambassadors = User::role('ambassador')->where("country_iso", "=", $iso_country_of_user)->get();
+        $ambassadors = User::role('ambassador')
+            ->where('country_iso', '=', $iso_country_of_user)
+            ->get();
 
         return view('events')->with([
             'events' => $this->eventsNearMe(),
@@ -84,12 +77,9 @@ class EventController extends Controller
         ]);
     }
 
-    private function eventsNearMe()
-    {
+    private function eventsNearMe() {
         $geoip = User::getGeoIPData();
         return EventHelper::getCloseEvents($geoip->lon, $geoip->lat);
-
-
     }
 
     /**
@@ -97,22 +87,17 @@ class EventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(Request $request)
-    {
-
+    public function create(Request $request) {
         $countries = \App\Country::all()->sortBy('name');
-
 
         $themes = \App\Theme::orderBy('order', 'asc')->get();
 
-
         $languages = Arr::sort(Lang::get('base.languages'));
 
-        return view('event.add', compact(['countries', 'themes','languages']));
+        return view('event.add', compact(['countries', 'themes', 'languages']));
     }
 
-    public function search()
-    {
+    public function search() {
         $events = Event::all();
         return view('event.search', compact('events'));
     }
@@ -123,10 +108,7 @@ class EventController extends Controller
      * @param EventRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function store(EventRequest $request)
-    {
-
-
+    public function store(EventRequest $request) {
         $user = auth()->user();
 
         $user->privacy = true;
@@ -137,7 +119,9 @@ class EventController extends Controller
 
         $event->notifyAmbassadors();
 
-        Mail::to(auth()->user()->email)->queue(new \App\Mail\EventRegistered($event, auth()->user()));
+        Mail::to(auth()->user()->email)->queue(
+            new \App\Mail\EventRegistered($event, auth()->user())
+        );
 
         return view('event.thankyou', compact('event'));
     }
@@ -148,17 +132,14 @@ class EventController extends Controller
      * @param \App\Event $event
      * @return \Illuminate\Http\Response
      */
-    public function show(Event $event)
-    {
-
+    public function show(Event $event) {
         /*$start_date = Carbon::parse($event->start_date);
-        dd($start_date->isoFormat('MMMM Do YYYY, h:mm:ss a'));*/
+         dd($start_date->isoFormat('MMMM Do YYYY, h:mm:ss a'));*/
         //dd(\Carbon\Carbon::now()->firstOfMonth(1)->isoFormat('ddd'));
 
-        if ($event->status != "APPROVED") {
+        if ($event->status != 'APPROVED') {
             $this->authorize('view', $event);
         }
-
 
         return view('event.show', compact('event'));
     }
@@ -169,27 +150,48 @@ class EventController extends Controller
      * @param \App\Event $event
      * @return \Illuminate\Http\Response
      */
-    public function edit(Event $event)
-    {
-
+    public function edit(Event $event) {
         $this->authorize('edit', $event);
 
-        $t = $event->tags()->pluck('name')->toArray();
+        $t = $event
+            ->tags()
+            ->pluck('name')
+            ->toArray();
 
         $countries = \App\Country::all()->sortBy('name');
 
-        $tags = implode(",", $t);
-        $selected_themes = $event->themes()->pluck('id')->toArray();
+        $tags = implode(',', $t);
+        $selected_themes = $event
+            ->themes()
+            ->pluck('id')
+            ->toArray();
         $selected_themes = implode(',', $selected_themes);
-        $selected_audiences = $event->audiences()->pluck('id')->toArray();
+        $selected_audiences = $event
+            ->audiences()
+            ->pluck('id')
+            ->toArray();
         $selected_audiences = implode(',', $selected_audiences);
         $selected_country = $event->country()->first()->iso;
-        $selected_language = is_null($event->language)?'en':$event->language;
+        $selected_language = is_null($event->language)
+            ? 'en'
+            : $event->language;
 
         $languages = Arr::sort(Lang::get('base.languages'));
         //dd($event);
 
-        return view('event.edit', compact(['event', 'tags', 'selected_themes', 'selected_audiences', 'countries', 'selected_country','languages','selected_language']));
+        return view(
+            'event.edit',
+            compact([
+                'event',
+                'tags',
+                'selected_themes',
+                'selected_audiences',
+                'countries',
+                'selected_country',
+                'languages',
+                'selected_language'
+            ])
+        );
     }
 
     /**
@@ -199,16 +201,12 @@ class EventController extends Controller
      * @param \App\Event $event
      * @return \Illuminate\Http\Response
      */
-    public function update(EventRequest $request, Event $event)
-    {
-
+    public function update(EventRequest $request, Event $event) {
         $this->authorize('edit', $event);
 
         EventsQuery::update($request, $event);
 
         return view('event.show', compact('event'));
-
-
     }
 
     /**
@@ -217,24 +215,18 @@ class EventController extends Controller
      * @param \App\Event $event
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Event $event)
-    {
+    public function destroy(Event $event) {
         //
     }
 
-    public function approve(Event $event)
-    {
-
+    public function approve(Event $event) {
         $this->authorize('approve', $event);
 
         $event->approve();
-
     }
 
-    public function approveAll($country)
-    {
-
-        $object = (object)['iso' => $country];
+    public function approveAll($country) {
+        $object = (object) ['iso' => $country];
 
         $events = PendingEventsQuery::trigger($object);
 
@@ -245,12 +237,9 @@ class EventController extends Controller
         }
 
         return redirect('pending/' . $country);
-
     }
 
-    public function reject(Request $request, Event $event)
-    {
-
+    public function reject(Request $request, Event $event) {
         $rejectionText = $request->get('rejectionText', null);
 
         try {
@@ -259,30 +248,29 @@ class EventController extends Controller
         }
 
         $event->reject($rejectionText);
-
-
     }
 
-    public function delete(Request $request, Event $event)
-    {
-
+    public function delete(Request $request, Event $event) {
         $this->authorize('delete', $event);
 
         $event->delete();
 
-        if($request->ajax()){
-            $redirectUrl = "/my";
+        if ($request->ajax()) {
+            $redirectUrl = '/my';
 
-            if(auth()->user()->can('approve', $event)){
-                $redirectUrl = "/pending";
+            if (
+                auth()
+                    ->user()
+                    ->can('approve', $event)
+            ) {
+                $redirectUrl = '/pending';
             }
 
-            return ["redirectUrl"=> $redirectUrl];
+            return ['redirectUrl' => $redirectUrl];
         }
 
-        return redirect()->route('my_events')->with('flash', 'Your event has been deleted!');
-
-
-
+        return redirect()
+            ->route('my_events')
+            ->with('flash', 'Your event has been deleted!');
     }
 }
