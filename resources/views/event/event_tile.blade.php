@@ -2,8 +2,8 @@
     <img src="{{$event->picture_path()}}" class="card-image">
     <div class="card-content">
         <h5 class="card-title">{{ $event->title }}</h5>
-        <p class="card-subtitle" style="text-transform: capitalize;">{{Carbon\Carbon::parse($event->start_date)->isoFormat('llll')}}</p>
-        <p class="card-description">{{ $event->description }}</p>
+        <div class="card-subtitle" style="text-transform: capitalize;">{{Carbon\Carbon::parse($event->start_date)->isoFormat('llll')}}</div>
+        <div class="card-description">{!!   $event->description !!}</div>
     </div>
     @can('approve', $event)
         @isset($moderation)
