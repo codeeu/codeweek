@@ -18,7 +18,7 @@
                     <a href="/view/{{$closeEvent->id}}/{{$closeEvent->slug}}">{{$closeEvent->title}}</a>
                 </div>
                 <div>
-                    {{$closeEvent->description}}</div>
+                    {!! $closeEvent->description !!}</div>
 
             </div>
 

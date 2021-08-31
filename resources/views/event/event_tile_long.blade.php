@@ -9,7 +9,7 @@
     <h4>{{ $event->title }}</h4>
 
     <div class="caption">
-        <p>{{str_limit($event->description,100)}}</p>
+        <p>{!!str_limit($event->description,100)!!}</p>
 
         <span class="countdown pull-right">
             @component('event.time_to_event', ['event'=>$event])
