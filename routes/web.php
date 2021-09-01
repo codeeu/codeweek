@@ -524,6 +524,27 @@ Route::view('/teach-day', 'teach-day')->name('teach-day');
 
 Route::get('/community', 'CommunityController@index')->name('community');
 
+Route::prefix('2021')->group(function () {
+    Route::view('/challenges', '2021.challenges')->name('challenges');
+    Route::view('/challenges/dance', '2021.challenges.dance')->name(
+        'challenges.dance'
+    );
+    Route::view('/challenges/song', '2021.challenges.song')->name(
+        'challenges.song'
+    );
+    Route::view(
+        '/challenges/sensing-game',
+        '2021.challenges.sensing-game'
+    )->name('challenges.sensing-game');
+    Route::view('/challenges/chatbot', '2021.challenges.chatbot')->name(
+        'challenges.chatbot'
+    );
+    Route::view(
+        '/challenges/paper-circuit',
+        '2021.challenges.paper-circuit'
+    )->name('challenges.paper-circuit');
+});
+
 Route::view('/leaflet', 'map.leaflet')->name('leaflet');
 
 Route::get(
