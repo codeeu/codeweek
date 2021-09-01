@@ -6,15 +6,34 @@
 
     <section id="codeweek-schools-page" class="codeweek-page">
 
-        <section class="codeweek-banner about">
-            <div class="text">
-                <div class="text-5xl text-white">EU CODE WEEK CHALLENGES</div>
-                <h2>9-24 October 2021</h2>
+{{--        <section class="codeweek-banner about">--}}
+{{--            <div class="text">--}}
+{{--                <div class="text-5xl text-white">EU CODE WEEK CHALLENGES</div>--}}
+{{--                <h2>9-24 October 2021</h2>--}}
+{{--            </div>--}}
+{{--            <div class="image">--}}
+{{--                <img src="/images/banner_about.svg" class="static-image">--}}
+
+{{--            </div>--}}
+
+{{--        </section>--}}
+
+        <section class="flex flex-row justify-between" style="background-color: #908CA5">
+            <div class="flex justify-center items-center w-full">
+                <div class="text-center m-12">
+                    <div class="text-xl text-white w-full">
+
+                                    <div class="text-5xl text-white">EU CODE WEEK CHALLENGES</div>
+                                    <div class="text-3xl text-yellow-200">9-24 October 2021</div>
+                    </div>
+                </div>
             </div>
-            <div class="image">
-                <img src="/images/banner_about.svg" class="static-image">
+
+            <div class="md:w-full md:flex hidden">
+                <img src="{{asset('img/2021/challenges/main-banner.png')}}">
 
             </div>
+
 
         </section>
 
@@ -54,13 +73,13 @@
 
                         <div class="shadow-xl">
                             <a href="{{route('challenges.chatbot')}}">
-                                <img src="/img/learning/tinkering-and-making.png">
+                                <img src="{{asset('img/2021/challenges/thumbnails/chatbot.png')}}">
                                 <div class="orange p-2 bg-gray-100 text-xl">Make a chatbot</div>
                             </a>
                         </div>
                         <div class="shadow-xl">
                             <a href="{{route('challenges.paper-circuit')}}">
-                                <img src="/img/learning/coding-without-computers.png">
+                                <img src="{{asset('img/2021/challenges/thumbnails/paper-circuit.png')}}">
                                 <div class="orange p-2 bg-gray-100 text-xl">Unplug and code: Create a paper circuit
                                 </div>
                             </a>
@@ -69,19 +88,19 @@
 
                         <div class="shadow-xl">
                             <a href="{{route('challenges.dance')}}">
-                                <img src="/img/learning/coding-for-inclusion.png">
+                                <img src="{{asset('img/2021/challenges/thumbnails/dance.png')}}">
                                 <div class="orange p-2 bg-gray-100 text-xl">Create a dance</div>
                             </a>
                         </div>
                         <div class="shadow-xl">
                             <a href="{{route('challenges.song')}}">
-                                <img src="/img/learning/creating-educational-games-with-scratch.png">
+                                <img src="{{asset('img/2021/challenges/thumbnails/compose-song.png')}}">
                                 <div class="orange p-2 bg-gray-100 text-xl">Compose a song</div>
                             </a>
                         </div>
                         <div class="shadow-xl">
                             <a href="{{route('challenges.sensing-game')}}">
-                                <img src="/img/learning/mining-media-literacy.png">
+                                <img src="{{asset('img/2021/challenges/thumbnails/sensing-game.png')}}">
                                 <div class="orange p-2 bg-gray-100 text-xl">Make a video sensing animation or game</div>
                             </a>
                         </div>
