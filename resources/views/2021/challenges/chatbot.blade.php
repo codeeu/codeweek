@@ -21,13 +21,15 @@
 
         </section>
 
-        <section>
-            Discover more challenges <a href="{{route('challenges')}}">HERE</a>
-        </section>
+
 
         <section class="codeweek-content-wrapper">
+
+
+
             <div class="m-6">
 
+                @include('2021.challenges._author', ['author' => 'Central EU Code Week Team'])
                 <section class="grid grid-cols-1 gap-6 md:grid-cols-5 mx-6 my-4">
 
 
@@ -122,10 +124,14 @@
                     </section>
 
                     <div id="pencil-code" class="text-sm">
-                        1. This code has been Adapted from Pencil Code activity <a href="https://gym.pencilcode.net/imagine/#/imagine/troll.html" target="_blank">Answering the Riddle
+                        1. This code has been Adapted from Pencil Code activity <a href="https://gym.pencilcode.net/imagine/#/imagine/troll.html" target="_blank">Answering the Riddle</a>
                     </div>
 
 
+                </div>
+
+                <div class="justify-center bg-blue-200 p-2 mt-6">
+                    Click <a href="{{route('challenges')}}" class="text-blue-800 underline">here</a> to download this challenge.
                 </div>
 
             </div>
