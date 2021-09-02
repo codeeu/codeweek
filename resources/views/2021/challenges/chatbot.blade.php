@@ -130,9 +130,7 @@
 
                 </div>
 
-                <div class="justify-center bg-blue-200 p-2 mt-6">
-                    Click <a href="{{route('challenges')}}" class="text-blue-800 underline">here</a> to download this challenge.
-                </div>
+                @include('2021.challenges._download',['url'=>'https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2021/EUCW+Challenge+Make+a+chatbot.docx'])
 
             </div>
         </section>
