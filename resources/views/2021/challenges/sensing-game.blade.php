@@ -35,7 +35,7 @@
         <section class="codeweek-content-wrapper">
             <div class="m-6">
 
-                @include('2021.challenges._author', ['author' => 'Central EU Code Week Team'])
+                @include('2021.challenges._author', ['author' => 'EU Code Week Team'])
 
                 <section class="grid grid-cols-1 gap-6 md:grid-cols-5 mx-6 my-4">
 
