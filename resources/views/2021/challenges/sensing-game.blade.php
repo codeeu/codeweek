@@ -123,7 +123,10 @@
                             Play a video sensing game Collect all EU Code Week Bubbles. Feel free to remix <a href="https://scratch.mit.edu/projects/563163565" target="_blank">this project</a>.
                         </div>
                         <div class="mt-4">
-                            <iframe src="https://scratch.mit.edu/projects/563163565/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                            <a href="https://scratch.mit.edu/projects/563163565" target="_blank">
+                                <img class="m-4" width="600" src="{{asset('img/2021/challenges/sensing-game-3.png')}}"/>
+                            </a>
+
                         </div>
                     </section>
 
