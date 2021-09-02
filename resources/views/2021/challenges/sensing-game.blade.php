@@ -135,6 +135,7 @@
 
                 </div>
 
+                @include('2021.challenges._download',['url'=>'https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2021/EUCW+Challenge+Make+a+video+sensing+game.docx'])
             </div>
         </section>
     </section>
