@@ -71,39 +71,44 @@
 
                     <section class="grid grid-cols-1 gap-6 md:grid-cols-3">
 
-                        <div class="shadow-xl">
-                            <a href="{{route('challenges.chatbot')}}">
-                                <img src="{{asset('img/2021/challenges/thumbnails/chatbot.png')}}">
-                                <div class="orange p-2 bg-gray-100 text-xl">Make a chatbot</div>
-                            </a>
-                        </div>
-                        <div class="shadow-xl">
-                            <a href="{{route('challenges.paper-circuit')}}">
-                                <img src="{{asset('img/2021/challenges/thumbnails/paper-circuit.png')}}">
-                                <div class="orange p-2 bg-gray-100 text-xl">Unplug and code: Create a paper circuit
-                                </div>
-                            </a>
-                        </div>
+
+                        @include('2021._thumbnail', [
+    'route'=>'challenges.chatbot',
+    'image'=>'chatbot',
+    'title'=>'Make a chatbot',
+    'author'=>'EU Code Week Team',
+])
+
+                        @include('2021._thumbnail', [
+'route'=>'challenges.paper-circuit',
+'image'=>'paper-circuit',
+'title'=>'Unplug and code: Create a paper circuit',
+'author'=>'EU Code Week Team',
+])
 
 
-                        <div class="shadow-xl">
-                            <a href="{{route('challenges.dance')}}">
-                                <img src="{{asset('img/2021/challenges/thumbnails/dance.png')}}">
-                                <div class="orange p-2 bg-gray-100 text-xl">Create a dance</div>
-                            </a>
-                        </div>
-                        <div class="shadow-xl">
-                            <a href="{{route('challenges.song')}}">
-                                <img src="{{asset('img/2021/challenges/thumbnails/compose-song.png')}}">
-                                <div class="orange p-2 bg-gray-100 text-xl">Compose a song</div>
-                            </a>
-                        </div>
-                        <div class="shadow-xl">
-                            <a href="{{route('challenges.sensing-game')}}">
-                                <img src="{{asset('img/2021/challenges/thumbnails/sensing-game.png')}}">
-                                <div class="orange p-2 bg-gray-100 text-xl">Make a video sensing animation or game</div>
-                            </a>
-                        </div>
+                           @include('2021._thumbnail', [
+'route'=>'challenges.dance',
+'image'=>'dance',
+'title'=>'Create a dance',
+'author'=>'EU Code Week Team',
+])
+
+                        @include('2021._thumbnail', [
+'route'=>'challenges.song',
+'image'=>'compose-song',
+'title'=>'Compose a song',
+'author'=>'EU Code Week Team',
+])
+
+                        @include('2021._thumbnail', [
+'route'=>'challenges.sensing-game',
+'image'=>'sensing-game',
+'title'=>'Make a video sensing animation or game',
+'author'=>'EU Code Week Team',
+])
+
+
 
 
                     </section>
