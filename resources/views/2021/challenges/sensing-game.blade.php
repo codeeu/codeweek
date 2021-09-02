@@ -35,6 +35,8 @@
         <section class="codeweek-content-wrapper">
             <div class="m-6">
 
+                @include('2021.challenges._author', ['author' => 'Central EU Code Week Team'])
+
                 <section class="grid grid-cols-1 gap-6 md:grid-cols-5 mx-6 my-4">
 
 
@@ -133,6 +135,7 @@
 
                 </div>
 
+                @include('2021.challenges._download',['url'=>'https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2021/EUCW+Challenge+Make+a+video+sensing+game.docx'])
             </div>
         </section>
     </section>
