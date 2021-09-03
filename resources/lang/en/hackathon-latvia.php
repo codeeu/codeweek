@@ -1,13 +1,12 @@
 <?php
 
 return [
-
-    "title" => "EU Code Week HACKATON",
+    "title" => "EU Code Week HACKATHON",
     "subtitle" => "Bring your ideas to life!",
     "misc" => [
         "Read the rules & code of conduct",
         "Registrations for both the EU Code Week Hackathon and Side Events will be handled by EU Survey.",
-        "Our Partners"
+        "Our Partners",
     ],
     "sections" => [
         1 => [
@@ -15,8 +14,8 @@ return [
                 "Do you dream of creating the next big app? Do you know how innovative tech solutions can help your school, town, and region? If you want to be an entrepreneur or have a killer idea to pitch to the world but you don’t know where to start, then your waiting is at an end! ",
                 "The EU Code Week Hackathon",
                 "begins with a challenge to develop a code that solves a real-life challenge in just 24-hours. The 10 most successful teams will then receive training and mentoring from experts in this field, in order to prepare them for the second and final round, from which the ultimate winner will be selected.  The lucky team will win further coaching and mentoring of their ideas and cool IT equipment. The winning team will also secure a spot at the European pitch where all the hackathon winners will present their ideas to a European jury during the official EU Code Week 9-24 October 2021.",
-                "The EU Code Week hackathon is sure to fuel your curiosity, inspire your creativity, encourage your entrepreneurial spirit, and bring your ideas to life. "
-            ]
+                "The EU Code Week hackathon is sure to fuel your curiosity, inspire your creativity, encourage your entrepreneurial spirit, and bring your ideas to life. ",
+            ],
         ],
         2 => [
             "title" => "What to expect?",
@@ -26,39 +25,39 @@ return [
                 "Fun activities",
                 "The chance to meet likeminded individuals",
                 "The chance to win mentoring and coaching, as well as IT equipment ",
-                "The chance to join the final hackathon and meet the best of the best, in person!"
-            ]
+                "The chance to join the final hackathon and meet the best of the best, in person!",
+            ],
         ],
         3 => [
             "content" => [
                 "Sign up now to",
                 "EU Code Week Hackathon Latvia",
-                "and bring your ideas to life!"
-            ]
+                "and bring your ideas to life!",
+            ],
         ],
         4 => [
             "title" => "Propose challenges to be solved at the Hackathon",
             "content" => [
                 "Do you want to make your community the centre of green and sustainable innovation in Latvia? If so, propose a challenge that will be “hacked” at the Hackathon. Something concrete that will help you, your school, city or community.",
                 "Propose a challenge",
-                "Votes for the Latvian challenge will start on the 30th of April."
-            ]
+                "Votes for the Latvian challenge will start on the 30th of April.",
+            ],
         ],
         5 => [
             "title" => "Vote on the challenges to be “hacked”",
             "content" => [
                 "The idea of the EU Code Week Hackathon is to show how concrete solutions come to life with the help of young people’s creativity, enthusiasm, innovation and coding skills. ‘Concrete’ means solving real problems – things that affect you, your school, community, city or specific challenges in your area.",
                 "Vote on what matters most to you!",
-                "The final challenge selected will be announced at the beginning of the Hackathon."
-            ]
+                "The final challenge selected will be announced at the beginning of the Hackathon.",
+            ],
         ],
         6 => [
             "title" => "The Challenge",
             "content" => [
                 "The idea of the EU Code Week Hackathon is to show how concrete solutions come to life with the help of young people’s creativity, enthusiasm, fresh ideas and coding skills. ‘Concrete’ means solving real problems – things that affect you, your school, community, city or specific challenges in your area.",
                 "Based on public voting, the challenge for the Latvian Hackathon is:",
-                "Based on public voting, the challenge for the Latvian Hackathon was:"
-            ]
+                "Based on public voting, the challenge for the Latvian Hackathon was:",
+            ],
         ],
         7 => [
             "title" => "Resource Centre",
@@ -79,15 +78,14 @@ return [
                 "Each national winner will face-off in a European clash of titans where each winning team will pitch their solution to a European jury during the official EU Code Week 9-24 October 2021. The European champion will, besides the glory, win additional IT equipment.",
                 "Day 1",
                 "Day 2",
-            ]
+            ],
         ],
         9 => [
             "title" => "Practical Info",
             "content" => [
                 "The hackathon will take place online from 29 May to 30 May 2021",
-                "The Hackathon is free of charge."
-
-            ]
+                "The Hackathon is free of charge.",
+            ],
         ],
         10 => [
             "title" => "Jury & Mentors",
@@ -96,7 +94,7 @@ return [
                 "Sign up now to",
                 "EU Code Week Hackathon",
                 "and make it happen!",
-            ]
+            ],
         ],
 
         11 => [
@@ -106,7 +104,6 @@ return [
             ],
             "events" => [
                 "makex" => [
-
                     "title" => [
                         "Robotics Training Series by MakeX/MakeBlock",
                         "Robotics Training Series 1 - Introduction to Robotics and Robotics Competitions by MakeX/MakeBlock",
@@ -125,9 +122,9 @@ return [
                         "Date: 1st June, 11:00 CEST -> click",
                         "Date: 3rd June, 11:00 CEST -> click",
                         "Date: 8th June, 11:00 CEST -> click",
-                    ]
-                ]
-            ]
+                    ],
+                ],
+            ],
         ],
         12 => [
             "title" => "About CODEWEEK.EU",
@@ -142,30 +139,79 @@ return [
                 "The initiative is financed by",
                 "the European Parliament",
                 "Discover More",
-            ]
+            ],
         ],
 
         "mentors" => [
-            "1" => ["Līna Sarma ", "Computer Scientist and Creative Coder, Co creator of Riga Tech Girls. "],
-            "2" => ["Jānis Mozgis", "Senior Developer at", "loves beautifully crafted code."],
-            "3" => ["Jānis Cimbulis", "Front-end Developer, Learn IT coding school teacher."],
-            "4" => ["Angela Jafarova", "Director of the Coding school Datorium. Digital skills trainer, EU CodeWeek leading teacher in Latvia."],
-            "5" => ["Elchin Jafarov", "Founder of the Datorium Coding School. Digital transformation, Data automation, Business intelligence."],
-            "6" => ["Janis Knets", "Technical architect at Accenture Latvia, more than 10 years of experience in IT field working with world-class companies"],
-            "7" => ["Ance Kancere", "Project Manager at IT Education Foundation, Teacher of programming and design&technology"],
-            "8" => ["Kaspars Eglītis", "Admin at University of Latvia Med Tech makerspace DF LAB & Jr Innovation Project Manager at Accenture"],
-            "9" => ["Paula Elksne","Assistant Director Bachelor Programs, RTU Riga Business School"],
-            "10" => ["Linda Sinka","Founder of Learn IT coding school for children, EU CodeWeek ambassador in Latvia"],
-            "11" => ["Gundega Dekena","DevOps Specialist at Accenture Latvia helping world class companies live in the cloud. Programming teacher and the only official GitHub Campus Advisor in Baltics."],
-            "12" => ["Emil Syundyukov","Computer Scientist, Chief Technical Officer at biomedical startup Longenesis"],
-            "13" => ["Pāvils Jurjāns","IT entrepreneur, software engineer, business mentor, open data advocate and general geek."],
-            "14" => ["Krišjānis Nesenbergs","Researcher and head of Cyber-physical systems lab @ EDI. Low level/embedded HW/SW, sensors, signal processing and machine learning for practical applications from wearables to self driving cars."]
+            "1" => [
+                "Līna Sarma ",
+                "Computer Scientist and Creative Coder, Co creator of Riga Tech Girls. ",
+            ],
+            "2" => [
+                "Jānis Mozgis",
+                "Senior Developer at",
+                "loves beautifully crafted code.",
+            ],
+            "3" => [
+                "Jānis Cimbulis",
+                "Front-end Developer, Learn IT coding school teacher.",
+            ],
+            "4" => [
+                "Angela Jafarova",
+                "Director of the Coding school Datorium. Digital skills trainer, EU CodeWeek leading teacher in Latvia.",
+            ],
+            "5" => [
+                "Elchin Jafarov",
+                "Founder of the Datorium Coding School. Digital transformation, Data automation, Business intelligence.",
+            ],
+            "6" => [
+                "Janis Knets",
+                "Technical architect at Accenture Latvia, more than 10 years of experience in IT field working with world-class companies",
+            ],
+            "7" => [
+                "Ance Kancere",
+                "Project Manager at IT Education Foundation, Teacher of programming and design&technology",
+            ],
+            "8" => [
+                "Kaspars Eglītis",
+                "Admin at University of Latvia Med Tech makerspace DF LAB & Jr Innovation Project Manager at Accenture",
+            ],
+            "9" => [
+                "Paula Elksne",
+                "Assistant Director Bachelor Programs, RTU Riga Business School",
+            ],
+            "10" => [
+                "Linda Sinka",
+                "Founder of Learn IT coding school for children, EU CodeWeek ambassador in Latvia",
+            ],
+            "11" => [
+                "Gundega Dekena",
+                "DevOps Specialist at Accenture Latvia helping world class companies live in the cloud. Programming teacher and the only official GitHub Campus Advisor in Baltics.",
+            ],
+            "12" => [
+                "Emil Syundyukov",
+                "Computer Scientist, Chief Technical Officer at biomedical startup Longenesis",
+            ],
+            "13" => [
+                "Pāvils Jurjāns",
+                "IT entrepreneur, software engineer, business mentor, open data advocate and general geek.",
+            ],
+            "14" => [
+                "Krišjānis Nesenbergs",
+                "Researcher and head of Cyber-physical systems lab @ EDI. Low level/embedded HW/SW, sensors, signal processing and machine learning for practical applications from wearables to self driving cars.",
+            ],
         ],
         "leaders" => [
-            "title"=>"Workshop leaders",
-            "1" => ["Viesturs Sosārs", "Seasoned entrepreneur and innovation educator, co-founder of TechHub Riga"],
-            "2" => ["Kārlis Jonāss","Design thinker and facilitator. Karlis helps teams, companies and individuals bring change through design."],
-            "3" => ["",""],
+            "title" => "Workshop leaders",
+            "1" => [
+                "Viesturs Sosārs",
+                "Seasoned entrepreneur and innovation educator, co-founder of TechHub Riga",
+            ],
+            "2" => [
+                "Kārlis Jonāss",
+                "Design thinker and facilitator. Karlis helps teams, companies and individuals bring change through design.",
+            ],
+            "3" => ["", ""],
         ],
 
         "after" => [
@@ -180,11 +226,7 @@ return [
             "And thanks to the Tweets, shout-outs and all the support during the Hackathons! Check out some highlights!",
             "Jury & Mentors",
             "EU Code Week Hackathon in Latvia brought together leading figures from the Worlds of business, IT, venture capital, education, as well as local, national and EU leaders, influencers and coaches to guide and support participants during the intense hackathon. A select number of jury members were chosen to decide the final winning team, according to relevant guidelines and competition rules.",
-            "Read the guidelines"
-        ]
-
-
+            "Read the guidelines",
+        ],
     ],
-
-
 ];
