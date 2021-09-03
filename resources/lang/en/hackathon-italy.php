@@ -1,13 +1,12 @@
 <?php
 
 return [
-
-    "title" => "EU Code Week HACKATON",
+    "title" => "EU Code Week HACKATHON",
     "subtitle" => "Bring your ideas to life!",
     "misc" => [
         "Read the rules & code of conduct",
         "Registrations for both the EU Code Week Hackathon and Side Events will be handled by EU Survey.",
-        "Our Partners"
+        "Our Partners",
     ],
     "sections" => [
         1 => [
@@ -15,8 +14,8 @@ return [
                 "Do you dream of creating the next big app? Do you know how innovative tech solutions can help your school, town, and region? If you want to be an entrepreneur or have a killer idea to pitch to the world but you don’t know where to start, then your waiting is at an end! ",
                 "The EU Code Week Hackathon",
                 "begins with a challenge to develop a code that solves a real-life challenge in just 24-hours. The 10 most successful teams will then receive training and mentoring from experts in this field, in order to prepare them for the second and final round, from which the ultimate winner will be selected.  The lucky team will win further coaching and mentoring of their ideas and cool IT equipment. The winning team will also secure a spot at the European pitch where all the hackathon winners will present their ideas to a European jury during the official EU Code Week 9-24 October 2021.",
-                "The EU Code Week hackathon is sure to fuel your curiosity, inspire your creativity, encourage your entrepreneurial spirit, and bring your ideas to life. "
-            ]
+                "The EU Code Week hackathon is sure to fuel your curiosity, inspire your creativity, encourage your entrepreneurial spirit, and bring your ideas to life. ",
+            ],
         ],
         2 => [
             "title" => "What to expect?",
@@ -26,39 +25,39 @@ return [
                 "Fun activities",
                 "The chance to meet likeminded individuals",
                 "The chance to win mentoring and coaching, as well as IT equipment ",
-                "The chance to join the final hackathon and meet the best of the best, in person!"
-            ]
+                "The chance to join the final hackathon and meet the best of the best, in person!",
+            ],
         ],
         3 => [
             "content" => [
                 "Sign up now to",
                 "EU Code Week Hackathon Italy",
-                "and bring your ideas to life!"
-            ]
+                "and bring your ideas to life!",
+            ],
         ],
         4 => [
             "title" => "Propose challenges to be solved at the Hackathon",
             "content" => [
                 "Do you want to make your community the centre of green and sustainable innovation in Italy? If so, propose a challenge that will be “hacked” at the Hackathon. Something concrete that will help you, your school, city or community.",
                 "Propose a challenge",
-                "Votes for the Italian challenge will start on the 9th of April."
-            ]
+                "Votes for the Italian challenge will start on the 9th of April.",
+            ],
         ],
         5 => [
             "title" => "Vote on the challenges to be “hacked”",
             "content" => [
                 "The idea of the EU Code Week Hackathon is to show how concrete solutions come to life with the help of young people’s creativity, enthusiasm, innovation and coding skills. ‘Concrete’ means solving real problems – things that affect you, your school, community, city or specific challenges in your area.",
                 "Vote on what matters most to you!",
-                "The final challenge selected will be announced at the beginning of the Hackathon."
-            ]
+                "The final challenge selected will be announced at the beginning of the Hackathon.",
+            ],
         ],
         6 => [
             "title" => "The Challenge",
             "content" => [
                 "The idea of the EU Code Week Hackathon is to show how concrete solutions come to life with the help of young people’s creativity, enthusiasm, fresh ideas and coding skills. ‘Concrete’ means solving real problems – things that affect you, your school, community, city or specific challenges in your area.",
                 "Based on public voting, the challenge for the Italian Hackathon is:",
-                "Based on public voting, the challenge for the Italian Hackathon was:"
-            ]
+                "Based on public voting, the challenge for the Italian Hackathon was:",
+            ],
         ],
         7 => [
             "title" => "Resource Centre",
@@ -77,15 +76,14 @@ return [
                 "Each national winner will face-off in a European clash of titans where each winning team will pitch their solution to a European jury during the official EU Code Week 9-24 October 2021. The European champion will, besides the glory, win additional IT equipment.",
                 "Day 1",
                 "Day 2",
-            ]
+            ],
         ],
         9 => [
             "title" => "Practical Info",
             "content" => [
                 "The hackathon will take place online from 7 May to 8 May 2021",
-                "The Hackathon is free of charge."
-
-            ]
+                "The Hackathon is free of charge.",
+            ],
         ],
         10 => [
             "title" => "Jury & Mentors",
@@ -94,7 +92,7 @@ return [
                 "Sign up now to",
                 "EU Code Week Hackathon",
                 "and make it happen!",
-            ]
+            ],
         ],
 
         11 => [
@@ -104,7 +102,6 @@ return [
             ],
             "events" => [
                 "makex" => [
-
                     "title" => [
                         "Robotics Training Series by MakeX/MakeBlock",
                         "Robotics Training Series 1 - Introduction to Robotics and Robotics Competitions by MakeX/MakeBlock",
@@ -123,9 +120,9 @@ return [
                         "Date: 1st June, 11:00 CEST -> click",
                         "Date: 3rd June, 11:00 CEST -> click",
                         "Date: 8th June, 11:00 CEST -> click",
-                    ]
-                ]
-            ]
+                    ],
+                ],
+            ],
         ],
         12 => [
             "title" => "About CODEWEEK.EU",
@@ -140,32 +137,43 @@ return [
                 "The initiative is financed by",
                 "the European Parliament",
                 "Discover More",
-            ]
+            ],
         ],
 
         "mentors" => [
-            "1" =>["Francesco Piero Paolicelli",
-                   "Francesco Piero Paolicelli, known as Piersoft in every socials network.",
-                   "Coding and Making expert, Arduino Educational Trainer, Data Scientist and Data Viz Expert",
-                   "University professor at LUM (University Luis Monnet )School of Management for OpenData and OpenGovernment",
-                   "Champion of CoderDojo club Lecce"],
-            "2" =>["Gianluca Orpello",
-                    "Hi, my name is Gianluca Orpello. I’m an Apple Certified Trainer and a freelance Mentor in Italy. I specialise in iOS, watchOS, macOS and tvOS app design and develop, web and app design, Client-Server protocol & API design.",
-                    "I also have knowledge in User Interaction & User Experience, and Project Management."],
-            "3" =>["Luca Versari",
-                    "Luca Versari works on the JPEG XL standard as a Software Engineer for Google.",
-                    "In the past, he tutored Italian Computer Science Olympiads students preparing for international competitions."],
-            "4" => ["Alessandra Valenti",
-                "Alessandra Valenti is Customer Success Manager for Microsoft Education. Expert in new technologies for teaching, she deals in particular with the design and development of multimedia languages necessary to train the professionals of the future through the knowledge of digital tools for the innovative school.",
-                "Through training activities for Italian students and teachers it promotes interactive solutions and learning experiences related to the world of education and culture, from the video game of Minecraft Education Edition to the development of a more sustainable and inclusive teaching. In the past she trained programming and robotics, e-learning platforms, virtual reality and STEM in schools."],
-            "5" => ["Maura Sandri",
-                "Research technologist of the National Institute of Astrophysics (INAF), coordinator of the working group for the development of coding and educational robotic resources for the school, web admin for play.inaf.it, Italian leading teacher, mentor of the CoderDojo Ozzano dell'Emilia (BO)."
+            "1" => [
+                "Francesco Piero Paolicelli",
+                "Francesco Piero Paolicelli, known as Piersoft in every socials network.",
+                "Coding and Making expert, Arduino Educational Trainer, Data Scientist and Data Viz Expert",
+                "University professor at LUM (University Luis Monnet )School of Management for OpenData and OpenGovernment",
+                "Champion of CoderDojo club Lecce",
             ],
-            "6" => ["Paolo Ganci",
+            "2" => [
+                "Gianluca Orpello",
+                "Hi, my name is Gianluca Orpello. I’m an Apple Certified Trainer and a freelance Mentor in Italy. I specialise in iOS, watchOS, macOS and tvOS app design and develop, web and app design, Client-Server protocol & API design.",
+                "I also have knowledge in User Interaction & User Experience, and Project Management.",
+            ],
+            "3" => [
+                "Luca Versari",
+                "Luca Versari works on the JPEG XL standard as a Software Engineer for Google.",
+                "In the past, he tutored Italian Computer Science Olympiads students preparing for international competitions.",
+            ],
+            "4" => [
+                "Alessandra Valenti",
+                "Alessandra Valenti is Customer Success Manager for Microsoft Education. Expert in new technologies for teaching, she deals in particular with the design and development of multimedia languages necessary to train the professionals of the future through the knowledge of digital tools for the innovative school.",
+                "Through training activities for Italian students and teachers it promotes interactive solutions and learning experiences related to the world of education and culture, from the video game of Minecraft Education Edition to the development of a more sustainable and inclusive teaching. In the past she trained programming and robotics, e-learning platforms, virtual reality and STEM in schools.",
+            ],
+            "5" => [
+                "Maura Sandri",
+                "Research technologist of the National Institute of Astrophysics (INAF), coordinator of the working group for the development of coding and educational robotic resources for the school, web admin for play.inaf.it, Italian leading teacher, mentor of the CoderDojo Ozzano dell'Emilia (BO).",
+            ],
+            "6" => [
+                "Paolo Ganci",
                 "Once only a computer programmer, today a passionate supporter of coding as Co-Champion of CoderDojo Etneo in Catania.",
-                ],
-            "7" => ["Christel Sirocchi",
-                "Christel Sirocchi is a biotechnologist and genetic engineer turned computer scientist. She gained experience as a researcher and educator in the UK, Belgium and Turkey, where she managed the science department in one of the most prominent international high schools and served as advisor for the Cambridge International Science Competition. She is an avid learner and passionate about STEM education, data science and data visualization."
+            ],
+            "7" => [
+                "Christel Sirocchi",
+                "Christel Sirocchi is a biotechnologist and genetic engineer turned computer scientist. She gained experience as a researcher and educator in the UK, Belgium and Turkey, where she managed the science department in one of the most prominent international high schools and served as advisor for the Cambridge International Science Competition. She is an avid learner and passionate about STEM education, data science and data visualization.",
             ],
         ],
 
@@ -181,11 +189,7 @@ return [
             "And thanks to the Tweets, shout-outs and all the support during the Hackathons! Check out some highlights!",
             "Jury & Mentors",
             "EU Code Week Hackathon in Italy brought together leading figures from the Worlds of business, IT, venture capital, education, as well as local, national and EU leaders, influencers and coaches to guide and support participants during the intense hackathon. A select number of jury members were chosen to decide the final winning team, according to relevant guidelines and competition rules.",
-            "Read the guidelines"
-        ]
-
-
+            "Read the guidelines",
+        ],
     ],
-
-
 ];
