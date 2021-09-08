@@ -1,13 +1,12 @@
 <?php
 
 return [
-
-    "title" => "EU Code Week HACKATON",
+    "title" => "EU Code Week HACKATHON",
     "subtitle" => "Bring your ideas to life!",
     "misc" => [
         "Read the rules & code of conduct",
         "Registrations for both the EU Code Week Hackathon and Side Events will be handled by EU Survey.",
-        "Our Partners"
+        "Our Partners",
     ],
     "sections" => [
         1 => [
@@ -15,8 +14,8 @@ return [
                 "Do you dream of creating the next big app? Do you know how innovative tech solutions can help your school, town, and region? If you want to be an entrepreneur or have a killer idea to pitch to the world but you don’t know where to start, then your waiting is at an end! ",
                 "The EU Code Week Hackathon",
                 "begins with a challenge to develop a code that solves a real-life challenge in just 24-hours. The 10 most successful teams will then receive training and mentoring from experts in this field, in order to prepare them for the second and final round, from which the ultimate winner will be selected.  The lucky team will win further coaching and mentoring of their ideas and cool IT equipment. The winning team will also secure a spot at the European pitch where all the hackathon winners will present their ideas to a European jury during the official EU Code Week 9-24 October 2021.",
-                "The EU Code Week hackathon is sure to fuel your curiosity, inspire your creativity, encourage your entrepreneurial spirit, and bring your ideas to life. "
-            ]
+                "The EU Code Week hackathon is sure to fuel your curiosity, inspire your creativity, encourage your entrepreneurial spirit, and bring your ideas to life. ",
+            ],
         ],
         2 => [
             "title" => "What to expect?",
@@ -26,39 +25,39 @@ return [
                 "Fun activities",
                 "The chance to meet likeminded individuals",
                 "The chance to win mentoring and coaching, as well as IT equipment ",
-                "The chance to join the final hackathon and meet the best of the best, in person!"
-            ]
+                "The chance to join the final hackathon and meet the best of the best, in person!",
+            ],
         ],
         3 => [
             "content" => [
                 "Sign up now to",
                 "EU Code Week Hackathon Greece",
-                "and bring your ideas to life!"
-            ]
+                "and bring your ideas to life!",
+            ],
         ],
         4 => [
             "title" => "Propose challenges to be solved at the Hackathon",
             "content" => [
                 "Do you want to make your community the centre of green and sustainable innovation in Greece? If so, propose a challenge that will be “hacked” at the Hackathon. Something concrete that will help you, your school, city or community.",
                 "Propose a challenge",
-                "Votes for the Greek challenge will start on the 9th of April."
-            ]
+                "Votes for the Greek challenge will start on the 9th of April.",
+            ],
         ],
         5 => [
             "title" => "Vote on the challenges to be “hacked”",
             "content" => [
                 "The idea of the EU Code Week Hackathon is to show how concrete solutions come to life with the help of young people’s creativity, enthusiasm, innovation and coding skills. ‘Concrete’ means solving real problems – things that affect you, your school, community, city or specific challenges in your area.",
                 "Vote on what matters most to you!",
-                "The final challenge selected will be announced at the beginning of the Hackathon."
-            ]
+                "The final challenge selected will be announced at the beginning of the Hackathon.",
+            ],
         ],
         6 => [
             "title" => "The Challenge",
             "content" => [
                 "The idea of the EU Code Week Hackathon is to show how concrete solutions come to life with the help of young people’s creativity, enthusiasm, fresh ideas and coding skills. ‘Concrete’ means solving real problems – things that affect you, your school, community, city or specific challenges in your area.",
                 "Based on public voting, the challenge for the Greek Hackathon is:",
-                "Based on public voting, the challenge for the Greek Hackathon was:"
-            ]
+                "Based on public voting, the challenge for the Greek Hackathon was:",
+            ],
         ],
         7 => [
             "title" => "Resource Centre",
@@ -77,15 +76,14 @@ return [
                 "Each national winner will face-off in a European clash of titans where each winning team will pitch their solution to a European jury during the official EU Code Week 9-24 October 2021. The European champion will, besides the glory, win additional IT equipment.",
                 "Day 1",
                 "Day 2",
-            ]
+            ],
         ],
         9 => [
             "title" => "Practical Info",
             "content" => [
                 "The hackathon will take place online from 7 May to 8 May 2021 from 9am to 9pm on both days.",
-                "The Hackathon is free of charge."
-
-            ]
+                "The Hackathon is free of charge.",
+            ],
         ],
         10 => [
             "title" => "Jury & Mentors",
@@ -94,7 +92,7 @@ return [
                 "Sign up now to",
                 "EU Code Week Hackathon",
                 "and make it happen!",
-            ]
+            ],
         ],
 
         11 => [
@@ -104,7 +102,6 @@ return [
             ],
             "events" => [
                 "makex" => [
-
                     "title" => [
                         "Robotics Training Series by MakeX/MakeBlock",
                         "Robotics Training Series 1 - Introduction to Robotics and Robotics Competitions by MakeX/MakeBlock",
@@ -123,9 +120,9 @@ return [
                         "Date: 1st June, 11:00 CEST -> click",
                         "Date: 3rd June, 11:00 CEST -> click",
                         "Date: 8th June, 11:00 CEST -> click",
-                    ]
-                ]
-            ]
+                    ],
+                ],
+            ],
         ],
         12 => [
             "title" => "About CODEWEEK.EU",
@@ -140,23 +137,31 @@ return [
                 "The initiative is financed by",
                 "the European Parliament",
                 "Discover More",
-            ]
+            ],
         ],
 
         "mentors" => [
-            "1" => ["Dimitrios Tzimas",
+            "1" => [
+                "Dimitrios Tzimas",
                 "Dimitrios Tzimas received the B.Sc degree in Informatics, Aristotle University of Thessaloniki, Greece, and the M.Sc degree in “Digital Signal Processing for Communications and Multimedia” University of Athens, Greece.",
                 "He is currently a PhD student at the Aristotle University of Thessaloniki. His research interests include Learning Analytics and MOOCs. He has published many scientific articles in journals and conference proceedings. He teaches Computer Science in secondary and higher education for the last 21 years. He is a co-author of 4 Greek books about computer programming.",
             ],
-            "2" => ["Ioannis Papikas",
+            "2" => [
+                "Ioannis Papikas",
                 "Ioannis has entered the world of entrepreneurship around 8 years ago and helped build web applications with his team in various industries.",
                 "Also participated in the \"Entrepreneur First\" accelerator in London, building his own startup. Ioannis is currently a Senior Product Manager at Orfium.",
-            ], "3" => ["John Fanidis",
+            ],
+            "3" => [
+                "John Fanidis",
                 "My name is John Fanidis, I am 27 years old and I live in Thessaloniki, Greece. I have been passionate about development since my days in high school when I first started learning how to design and write simple web and mobile applications.",
                 "For the last 7 years I have been part of many amazing and incredibly talented teams in more than 20 web and mobile projects. I currently work both as Lead Frontend Engineer in Exandia, based in Thessaloniki and as a freelancer mobile developer.",
-            ], "4" => ["Lida Papatzika",
+            ],
+            "4" => [
+                "Lida Papatzika",
                 "Lida Papatzika works at Alexander Innovation Zone S.A. as communications manager. She holds extensive experience in the fields of marketing and promotion of projects relevant to the regional innovation ecosystem.",
-            ], "5" => ["Nikolas Goulias",
+            ],
+            "5" => [
+                "Nikolas Goulias",
                 "Nikolas is the IBM - Red Hat Synergy Lead Architect in the UK&I empowering IBM with Red Hat's open source innovation and helping customers define strategies, architect and solve problems with technology.  ",
             ],
             "6" => [
@@ -177,7 +182,6 @@ return [
             "9" => [
                 "Antigoni Kakouri",
                 "5th-year Electrical and Computer Engineering student at Aristotle University of Thessaloniki. Microsoft Learn Student Ambassador since January 2021.",
-
             ],
             "10" => [
                 "Athanasios Dimou",
@@ -191,7 +195,7 @@ return [
             ],
             "12" => [
                 "Evangelia Iakovaki",
-                "My name is Evangelia Iakovaki, i am Physicist and I work as a Physicist in a public high school.I also work as a guidance counselor for students"
+                "My name is Evangelia Iakovaki, i am Physicist and I work as a Physicist in a public high school.I also work as a guidance counselor for students",
             ],
             "13" => [
                 "Giannis Prapas",
@@ -224,7 +228,6 @@ return [
             "19" => [
                 "Triantafyllos Paschaleris",
                 "A Business Intelligence Developer with passion about technology. A curious learner with love for volunteering in IT. Currently pursuing a master’s degree in Big Data Analytics.",
-
             ],
             "20" => [
                 "Katerina Katmada",
@@ -238,22 +241,18 @@ return [
             "22" => [
                 "Demetris Bakas",
                 "Demetris Bakas is a Gold Microsoft Learn Student Ambassador and a Computer Engineering student from the University of Patras, passionate with software engineering and Artificial Intelligence.",
-
             ],
             "23" => [
                 "Dimitra Iordanidou",
                 "Dimitra Iordanidou has a financial background and works for Thessaloniki Innovation Zone as Head of Financial Services. She has a working experience in budgeting and financial monitoring. In addition, she was involved several years in running championships  as a marathon runner and she has founded and organizes for a 4th year a project for runners and kids Koufalia Hill Run. She holds a master's degree in Business Administration (Bath University, UK) and a degree in Economics from the Aristotle University of Thessaloniki.",
-
             ],
             "24" => [
                 "Dimitris Dimosiaris",
                 "Dimitris Dimosiaris is co-founder at Founderhood, which aims to impact every human life by giving to each tech startup founder, anywhere, access to the best resources. In the past he has been part of two startup projects. He is founding member in the first student-run entrepreneurship club in Greece, ThinkBiz. Founding member & ex-chairman of the Non-profit organization Mindspace which is based on National Technical University of Athens and its activities spread across Greece. Dimitris has extensive experience in designing and building innovative web products.",
-
             ],
             "25" => [
                 "Georgia Margia",
                 "Professional in software engineering for over 6 years. Has built software, related to demand forecasting, which is used by large retail companies in U.S., England and Russia. Currently, working as a Database Reporting Analyst, dealing with storing, management and manipulation of data in order to create reports, analyze patterns and trends and provide findings to be taken into account for strategic and operational decisions and actions.",
-
             ],
 
             "26" => [
@@ -269,12 +268,10 @@ return [
             "28" => [
                 "Maria-Anastasia Moustaka",
                 "Maria-Anastasia Moustaka is an undergraduate student in the Department of Computer Engineering at the University of Patras and Gold Microsoft Learn Student Ambassador. She has also been teaching robotics and programming for the last four years and has excelled in global robotics competitions with the Robotics Club of the University of Patras.",
-
             ],
             "29" => [
                 "Mixalis Nikolaidis",
                 "I’m a Senior Software Engineer, Consultant and Trainer. I’m mainly interested in the development of innovative cloud solutions that take full advantage of the Microsoft technology stack. I have worked on multiple projects providing quality services both in team environments and independently.",
-
             ],
             "30" => [
                 "Nikiforos Botis",
@@ -285,16 +282,15 @@ return [
                 "Panayiotis Antoniou",
                 "Hi, my name is Panayiotis Antoniou, I am currently living in London where I work as a Solutions Architect in AWS. I was born and raised in Cyprus and I came to the UK to study my Bachelors in Computer Science. I have an interest in Analytics, Networking and Sustainability. Outside work I like playing racket sports, guitar and watching films.",
                 "",
-            ],   "32" => [
+            ],
+            "32" => [
                 "Anastasia Papadou",
                 "Anastasia is a Senior Business Development Representative at Amazon Web Services, supporting AWS growth across EMEA. She has 5 years of experience in implementing/selling cloud technologies and she has an academic background in Management Science and Technology.",
-
             ],
             "33" => [
                 "Konstantina Tagkopoulou",
                 "Konstantina Tagkopoulou is passionate about entrepreneurship, and has experience working with startups and scaleups across Europe. Since she joined Amazon Web Services in 2019, she has supported startups on their cloud journey and go-to-market strategy. Prior to AWS, she worked for a B2B SaaS startup in London, focusing on commercial growth and strategic business development. She holds a BSc in Sociology from the University of Bath and an MSc in Sociology from the University of Oxford.",
-            ]
-
+            ],
         ],
 
         "after" => [
@@ -309,11 +305,7 @@ return [
             "And thanks to the Tweets, shout-outs and all the support during the Hackathons! Check out some highlights!",
             "Jury & Mentors",
             "EU Code Week Hackathon in Greece brought together leading figures from the Worlds of business, IT, venture capital, education, as well as local, national and EU leaders, influencers and coaches to guide and support participants during the intense hackathon. A select number of jury members were chosen to decide the final winning team, according to relevant guidelines and competition rules.",
-            "Read the guidelines"
-        ]
-
-
+            "Read the guidelines",
+        ],
     ],
-
-
 ];
