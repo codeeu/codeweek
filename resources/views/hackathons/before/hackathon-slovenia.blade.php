@@ -93,32 +93,33 @@
 
         </section>
 
-        <section class="registration">
-            <div class="register-wrapper">
-                <div class="register">
-                    <div class="title">@lang('hackathon-slovenia.title')</div>
-                    <div class="city">@lang('hackathons.cities.5.country')</div>
-                    <div class="date">@lang('hackathons.cities.5.date')</div>
-                    <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCWHackathonSlovenia"
-                       class="codeweek-action-link-button">@lang('login.register')</a>
-                </div>
-            </div>
-        </section>
+{{--        <section class="registration">--}}
+{{--            <div class="register-wrapper">--}}
+{{--                <div class="register">--}}
+{{--                    <div class="title">@lang('hackathon-slovenia.title')</div>--}}
+{{--                    <div class="city">@lang('hackathons.cities.5.country')</div>--}}
+{{--                    <div class="date">@lang('hackathons.cities.5.date')</div>--}}
+{{--                    <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCWHackathonSlovenia"--}}
+{{--                       class="codeweek-action-link-button">@lang('login.register')</a>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </section>--}}
 
-        <section id="challenge">
+
+            <section id="programme">
             <div class="text">
                 <div class="challenge-text">
                     <h1>@lang('hackathon-slovenia.sections.9.title')</h1>
                     <p>@lang('hackathon-slovenia.sections.9.content.0')</p>
                     <div>
                         @lang('hackathon-slovenia.sections.9.content.1') <strong>@lang('hackathon-slovenia.sections.9.content.2')</strong> @lang('hackathon-slovenia.sections.9.content.3')
-                        @lang('hackathon-slovenia.sections.9.content.4')
+
                     </div>
 <p>
-    @lang('hackathon-slovenia.sections.9.content.5')<br/><br/>
-    @lang('hackathon-slovenia.sections.9.content.6')<br/><br/>
-    @lang('hackathon-slovenia.sections.9.content.7')<br/><br/>
-    @lang('hackathon-slovenia.sections.9.content.8')<br/><br/>
+{{--    @lang('hackathon-slovenia.sections.9.content.5')<br/><br/>--}}
+{{--    @lang('hackathon-slovenia.sections.9.content.6')<br/><br/>--}}
+{{--    @lang('hackathon-slovenia.sections.9.content.7')<br/><br/>--}}
+{{--    @lang('hackathon-slovenia.sections.9.content.8')<br/><br/>--}}
     @lang('hackathon-slovenia.sections.9.content.9')<br/><br/>
 </p>
 
@@ -128,9 +129,9 @@
                     <div style="background-color: #dd6b203b;padding:12px; opacity: 90%; border-radius: 10px">
                     <strong>
                         @lang('hackathon-slovenia.sections.9.content.10')
-                        <a
-                                target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCWHackathonSlovenia"
-                                >@lang('hackathon-slovenia.sections.9.content.11')</a>
+{{--                        <a--}}
+{{--                                target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCWHackathonSlovenia"--}}
+{{--                                >@lang('hackathon-slovenia.sections.9.content.11')</a>--}}
                     </strong>
                     </div>
 
@@ -139,37 +140,37 @@
             </div>
         </section>
 
-        <section id="challenge">
-            <img src="/images/hackathons/ideation.png" class="desktop">
-            <div class="text">
-                <div class="challenge-text">
-                    <h1>@lang('hackathon-slovenia.sections.4.title')</h1>
-                    <p>@lang('hackathon-slovenia.sections.4.content.0')</p>
-                    <div class="button">
-                        <a target="_blank"
-                           href="https://ec.europa.eu/eusurvey/runner/EUCodeWeek2020_Challenges_Slovenia"
-                           class="codeweek-action-link-button">@lang('hackathon-slovenia.sections.4.content.1')</a>
-                    </div>
+{{--        <section id="challenge">--}}
+{{--            <img src="/images/hackathons/ideation.png" class="desktop">--}}
+{{--            <div class="text">--}}
+{{--                <div class="challenge-text">--}}
+{{--                    <h1>@lang('hackathon-slovenia.sections.4.title')</h1>--}}
+{{--                    <p>@lang('hackathon-slovenia.sections.4.content.0')</p>--}}
+{{--                    <div class="button">--}}
+{{--                        <a target="_blank"--}}
+{{--                           href="https://ec.europa.eu/eusurvey/runner/EUCodeWeek2020_Challenges_Slovenia"--}}
+{{--                           class="codeweek-action-link-button">@lang('hackathon-slovenia.sections.4.content.1')</a>--}}
+{{--                    </div>--}}
 
-                </div>
-            </div>
-        </section>
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </section>--}}
 
-        {{--                <section id="challenge">--}}
-        {{--                    <img src="/images/hackathons/ideation.png" class="desktop">--}}
-        {{--                    <div class="text">--}}
-        {{--                        <div class="challenge-text">--}}
-        {{--                            <h1>@lang('hackathon-slovenia.sections.5.title')</h1>--}}
-        {{--                            <p>@lang('hackathon-slovenia.sections.5.content.0')</p>--}}
+                        <section id="challenge">
+                            <img src="/images/hackathons/ideation.png" class="desktop">
+                            <div class="text">
+                                <div class="challenge-text">
+                                    <h1>@lang('hackathon-slovenia.sections.5.title')</h1>
+                                    <p>@lang('hackathon-slovenia.sections.5.content.0')</p>
 
-        {{--                            <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/CodeWeekHacks_SV_voting"--}}
-        {{--                               class="codeweek-action-link-button">@lang('hackathon-slovenia.sections.5.content.1')</a>--}}
+                                    <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/CodeWeekHacks_SV_voting"
+                                       class="codeweek-action-link-button">@lang('hackathon-slovenia.sections.5.content.1')</a>
 
-        {{--                            <p>@lang('hackathon-slovenia.sections.5.content.2')</p>--}}
+                                    <p>@lang('hackathon-slovenia.sections.5.content.2')</p>
 
-        {{--                        </div>--}}
-        {{--                    </div>--}}
-        {{--                </section>--}}
+                                </div>
+                            </div>
+                        </section>
 
         <section id="programme" id="pratical-info">
 
