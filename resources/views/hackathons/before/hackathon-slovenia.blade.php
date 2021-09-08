@@ -93,19 +93,20 @@
 
         </section>
 
-        <section class="registration">
-            <div class="register-wrapper">
-                <div class="register">
-                    <div class="title">@lang('hackathon-slovenia.title')</div>
-                    <div class="city">@lang('hackathons.cities.5.country')</div>
-                    <div class="date">@lang('hackathons.cities.5.date')</div>
-                    <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCWHackathonSlovenia"
-                       class="codeweek-action-link-button">@lang('login.register')</a>
-                </div>
-            </div>
-        </section>
+{{--        <section class="registration">--}}
+{{--            <div class="register-wrapper">--}}
+{{--                <div class="register">--}}
+{{--                    <div class="title">@lang('hackathon-slovenia.title')</div>--}}
+{{--                    <div class="city">@lang('hackathons.cities.5.country')</div>--}}
+{{--                    <div class="date">@lang('hackathons.cities.5.date')</div>--}}
+{{--                    <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCWHackathonSlovenia"--}}
+{{--                       class="codeweek-action-link-button">@lang('login.register')</a>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </section>--}}
 
-        <section id="challenge">
+
+            <section id="programme">
             <div class="text">
                 <div class="challenge-text">
                     <h1>@lang('hackathon-slovenia.sections.9.title')</h1>
@@ -128,9 +129,9 @@
                     <div style="background-color: #dd6b203b;padding:12px; opacity: 90%; border-radius: 10px">
                     <strong>
                         @lang('hackathon-slovenia.sections.9.content.10')
-                        <a
-                                target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCWHackathonSlovenia"
-                                >@lang('hackathon-slovenia.sections.9.content.11')</a>
+{{--                        <a--}}
+{{--                                target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCWHackathonSlovenia"--}}
+{{--                                >@lang('hackathon-slovenia.sections.9.content.11')</a>--}}
                     </strong>
                     </div>
 
