@@ -3,7 +3,7 @@
 <x-tailwind></x-tailwind>
 
 @section('hackathons.header')
-    @include('hackathons.after.header', ["enabled_language" => "ro","registration_link"=>"https://ec.europa.eu/eusurvey/runner/EUCWHackathonRomania"])
+    @include('hackathons.before.header', ["enabled_language" => "ro","registration_link"=>"https://ec.europa.eu/eusurvey/runner/EUCWHackathonRomania"])
 @endsection
 
 @section('content')
@@ -26,20 +26,88 @@
             </div>
         </section>
 
+        <section class="codeweek-content-wrapper">
 
-
-
-
-
-
-
-        <section id="programme" style="line-height: 1.7em;" class="mt-20">
             <p>
                 @lang('hackathon-romania.sections.1.content.1')
                 @lang('hackathon-romania.sections.1.content.2')<br/><br/>
                 @lang('hackathon-romania.sections.1.content.3')
+
+
             </p>
 
+        </section>
+
+        <section class="questions">
+            <div class="left-wrapper">
+                <div class="expect">
+                    {{--                    <h1>@lang('hackathon-romania.sections.2.title')</h1>--}}
+                    {{--                    <ul>--}}
+                    {{--                        <li>@lang('hackathon-romania.sections.2.content.0')</li>--}}
+                    {{--                        <li>@lang('hackathon-romania.sections.2.content.1')</li>--}}
+                    {{--                        <li>@lang('hackathon-romania.sections.2.content.2')</li>--}}
+
+                    {{--                    </ul>--}}
+                </div>
+                <div class="bring">
+                    <h1>@lang('hackathon-romania.sections.2.title')</h1>
+                    <ul>
+                        <li>@lang('hackathon-romania.sections.2.content.0')</li>
+                        <li>@lang('hackathon-romania.sections.2.content.1')</li>
+                        <li>@lang('hackathon-romania.sections.2.content.2')</li>
+                        <li>@lang('hackathon-romania.sections.2.content.3')</li>
+                        <li>@lang('hackathon-romania.sections.2.content.4')</li>
+                        <li>@lang('hackathon-romania.sections.2.content.5')</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="registration">
+            <div class="register-wrapper">
+                <div class="register">
+                    <div class="title">@lang('hackathon-romania.title')</div>
+                    <div class="city">@lang('hackathons.cities.1.country')</div>
+                    <div class="date">@lang('hackathons.cities.1.date')</div>
+                    <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCWHackathonRomania"
+                       class="codeweek-action-link-button">@lang('login.register')</a>
+                </div>
+            </div>
+        </section>
+
+        {{--        <section id="challenge">--}}
+        {{--            <img src="/images/hackathons/ideation.png" class="desktop">--}}
+        {{--            <div class="text">--}}
+        {{--                <div class="challenge-text">--}}
+        {{--                    <h1>@lang('hackathon-romania.sections.4.title')</h1>--}}
+        {{--                    <p>@lang('hackathon-romania.sections.4.content.0')</p>--}}
+        {{--                    <div class="button">--}}
+        {{--                        <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/EUCodeWeek2020_Challenge_Romania"--}}
+        {{--                           class="codeweek-action-link-button">@lang('hackathon-romania.sections.4.content.1')</a>--}}
+        {{--                    </div>--}}
+
+        {{--                </div>--}}
+        {{--            </div>--}}
+        {{--        </section>--}}
+
+        {{--        <section id="challenge">--}}
+        {{--            <img src="/images/hackathons/ideation.png" class="desktop">--}}
+        {{--            <div class="text">--}}
+        {{--                <div class="challenge-text">--}}
+        {{--                    <h1>@lang('hackathon-romania.sections.5.title')</h1>--}}
+        {{--                    <p>@lang('hackathon-romania.sections.5.content.0')</p>--}}
+
+        {{--                    <a target="_blank" href="https://ec.europa.eu/eusurvey/runner/CodeWeekHacks_RO_voting"--}}
+        {{--                       class="codeweek-action-link-button">@lang('hackathon-romania.sections.5.content.1')</a>--}}
+
+        {{--                    <p>@lang('hackathon-romania.sections.5.content.2')</p>--}}
+
+        {{--                </div>--}}
+        {{--            </div>--}}
+        {{--        </section>--}}
+
+        <section id="programme">
             <h1>@lang('hackathon-romania.sections.9.title')</h1>
 
             @lang('hackathon-romania.sections.9.content.0')<br/>
@@ -48,9 +116,8 @@
 
             <br/><br/>
             <h1>@lang('hackathon-romania.sections.8.title')</h1>
-            @lang('hackathon-romania.sections.8.content.0.0')
-            <strong>@lang('hackathon-romania.sections.8.content.0.1')</strong>
-            <ol style="list-style-type: decimal;margin-left:40px; margin-bottom:10px">
+            @lang('hackathon-romania.sections.8.content.0')
+            <ol>
                 <li>@lang('hackathon-romania.sections.8.content.1')</li>
                 <li>@lang('hackathon-romania.sections.8.content.2')</li>
                 <li>@lang('hackathon-romania.sections.8.content.3')</li>
@@ -61,51 +128,35 @@
                 @lang('hackathon-romania.sections.8.content.5')<br/><br/>
                 @lang('hackathon-romania.sections.8.content.6')<br/><br/>
                 @lang('hackathon-romania.sections.8.content.7')<br/><br/>
+                @lang('hackathon-romania.sections.8.content.8')<br/><br/>
             </div>
-
-            <div class="p-8 leading-6 bg-yellow-200 bg-opacity-25 mt-6">
-
-                @lang('hackathon-romania.sections.winners.0')<br/><br/>
-                @lang('hackathon-romania.sections.winners.1')
-
-                <ul style="list-style-type: circle;margin-left:40px; margin-bottom:10px; font-weight: bolder;">
-                    <li>Alpha-Canis-Majoris</li>
-                    <li>Big Brain</li>
-                    <li>Cybermoon</li>
-                    <li>KillingStalking</li>
-                    <li>Purple Brains</li>
-                </ul>
-
-                @lang('hackathon-romania.sections.winners.2')<br/><br/>
-                @lang('hackathon-romania.sections.winners.3')<br/><br/>
-
-
-            </div>
-<div class="mt-6">
-    <h1>Focus</h1>
-    <div>@lang('hackathon-romania.sections.focus.0')</div>
-
-    <ul style="list-style-type: square; margin-left:40px; margin-bottom:10px">
-
-        <li>
-            <a href="https://www.youtube.com/watch?v=Pdtk4LloA08&t=242s">@lang('hackathon-romania.sections.focus.1')</a>
-        </li>
-        <li>
-            <a href="https://www.youtube.com/watch?v=AOnkIYGenE8">@lang('hackathon-romania.sections.focus.2')</a>
-        </li>
-        <li>
-            <a href="https://www.youtube.com/watch?v=7oEbRYgRBn8&t=2267s">@lang('hackathon-romania.sections.focus.3')</a>
-        </li>
-        <li>
-            <a href="https://www.youtube.com/watch?v=hjeKs1SKze8&t=91s">@lang('hackathon-romania.sections.focus.4')</a>
-        </li>
-    </ul>
-</div>
-
         </section>
 
 
+        {{--            <div class="conditions-participation">--}}
+        {{--                <img src="/images/tick.svg" class="static-image">--}}
+        {{--                <a target="_blank"--}}
+        {{--                   href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/hackathons/CONDITIONS_PARTICIPATION_CWHACKATHON_IE.pdf">Conditions--}}
+        {{--                    of Participation</a>--}}
+        {{--            </div>--}}
 
+
+        {{--        </section>--}}
+
+        {{--                <section id="pratical-info">--}}
+        {{--                    <div class="info">--}}
+        {{--                        <h1>Practical Info</h1>--}}
+        {{--                        <div class="info-details">--}}
+        {{--                            <h3>Date</h3>--}}
+        {{--                            <p>April 17-18, 2020</p>--}}
+        {{--                        </div>--}}
+        {{--                        <div class="info-details">--}}
+        {{--                            <h3>Address</h3>--}}
+        {{--                            <p>Dream Space, Microsoft romania</p>--}}
+        {{--                            <p>South Country Business Park, Leopardstown, Dublin 18, D18 P521</p>--}}
+        {{--                        </div>--}}
+        {{--                    </div>--}}
+        {{--                </section>--}}
 
         <section id="jury-mentors">
 
@@ -219,8 +270,58 @@
         {{--                    <img src="/images/hackathons/side_events.png">--}}
         {{--                </section>--}}
 
+        <section id="side-events">
+            <h1>@lang('hackathon-romania.sections.11.title')</h1>
+            <p>@lang('hackathon-romania.sections.11.content.0')</p>
+
+            <div class="p-8 leading-6 bg-yellow-200 bg-opacity-25">
+                <h2>@lang('hackathon-romania.sections.11.events.1.title')</h2>
+
+                <div class="mb-4">@lang('hackathon-romania.sections.11.events.1.content.0')</div>
+                @lang('hackathon-romania.sections.11.events.1.content.1')
+                <br/>
+                <ul style="list-style-type: circle;margin-left:40px; margin-top:0px;">
+                    <li>@lang('hackathon-romania.sections.11.events.1.content.2')</li>
+                    <li>@lang('hackathon-romania.sections.11.events.1.content.3')</li>
+                    <li>@lang('hackathon-romania.sections.11.events.1.content.4')</li>
+                </ul>
+                @lang('hackathon-romania.sections.11.events.1.content.5') <a href="https://docs.google.com/forms/d/e/1FAIpQLSesBUqGBj8EFvdJbIuS_Slx2m2HAF_CCAgEPGJAsqGCLdaF_w/viewform?resourcekey=0-WQlQyHo6twflWIsuSzEh4A">@lang('hackathon-romania.sections.11.events.1.content.6')</a> @lang('hackathon-romania.sections.11.events.1.content.7')<br/>
+                @lang('hackathon-romania.sections.11.events.1.content.8') <a href="https://www.youtube.com/watch?v=zhyBFH3m92U&list=PLnqp3yQre_1ju5NJ18E4LLFTQg_EdyKLV">https://www.youtube.com/watch?v=zhyBFH3m92U&list=PLnqp3yQre_1ju5NJ18E4LLFTQg_EdyKLV</a>
+
+            </div>
+
+            <div class="p-8 leading-6 bg-yellow-200 bg-opacity-25 mt-6">
+                <h2>@lang('hackathon-romania.sections.11.events.2.title')</h2>
+
+                <div class="mb-4">@lang('hackathon-romania.sections.11.events.2.content.0')</div>
+
+                @lang('hackathon-romania.sections.11.events.2.content.1') <a href="https://codeweek.eu/view/361883/creative-coding-workshop">@lang('hackathon-romania.sections.11.events.2.content.2')</a> @lang('hackathon-romania.sections.11.events.2.content.3')<br/>
+                <div class="text-sm"> @lang('hackathon-romania.sections.11.events.2.content.4')</div>
+            </div>
+
+            <div class="p-8 leading-6 bg-yellow-200 bg-opacity-25 mt-6">
+                <h2>@lang('hackathon-romania.sections.11.events.makex.title.0')</h2>
+
+                <div class="mb-4">@lang('hackathon-romania.sections.11.events.makex.content.0')</div>
+                <div class="mb-4">@lang('hackathon-romania.sections.11.events.makex.content.1')</div>
+
+                <div class="text-lg text-orange-300">@lang('hackathon-romania.sections.11.events.makex.title.1')</div>
+                @lang('hackathon-romania.sections.11.events.makex.dates.0') <a href="https://forms.gle/h4VRLUc9uSpLYCVHA">@lang('hackathon-romania.sections.11.events.makex.content.2')</a> @lang('hackathon-romania.sections.11.events.makex.content.3')<br/>
+
+                <div class="text-lg text-orange-300 mt-6">@lang('hackathon-romania.sections.11.events.makex.title.2')</div>
+                @lang('hackathon-romania.sections.11.events.makex.dates.1') <a href="https://forms.gle/h4VRLUc9uSpLYCVHA">@lang('hackathon-romania.sections.11.events.makex.content.2')</a> @lang('hackathon-romania.sections.11.events.makex.content.3')<br/>
+
+                <div class="text-lg text-orange-300 mt-6">@lang('hackathon-romania.sections.11.events.makex.title.3')</div>
+                @lang('hackathon-romania.sections.11.events.makex.dates.2') <a href="https://forms.gle/h4VRLUc9uSpLYCVHA">@lang('hackathon-romania.sections.11.events.makex.content.2')</a> @lang('hackathon-romania.sections.11.events.makex.content.3')<br/>
+
+                <div class="mt-6">
+                    @lang('hackathon-romania.sections.11.events.makex.content.4') <a href="@lang('hackathon-romania.sections.11.events.makex.content.5')">@lang('hackathon-romania.sections.11.events.makex.content.5')</a>
+                </div>
 
 
+
+            </div>
+        </section>
 
         <section id="partners">
             <div>
@@ -260,6 +361,8 @@
                         <img src="{{asset('/images/hackathons/partners/redhat.png')}}">
                     </div>
                 </div>
+
+
 
 
             </div>
