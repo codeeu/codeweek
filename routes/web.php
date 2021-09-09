@@ -504,12 +504,14 @@ Route::view('/hackathons/romania', 'hackathons.after.hackathon-romania')->name(
 Route::view('/hackathons/latvia', 'hackathons.after.hackathon-latvia')->name(
     'hackathon-latvia'
 );
+
+Route::view('/hackathons/italy', 'hackathons.after.hackathon-italy')->name(
+    'hackathon-italy'
+);
 Route::get('/hackathons/ireland', 'HackathonsController@before')->name(
     'hackathon-ireland'
 );
-Route::get('/hackathons/italy', 'HackathonsController@before')->name(
-    'hackathon-italy'
-);
+
 Route::get('/hackathons/greece', 'HackathonsController@before')->name(
     'hackathon-greece'
 );
