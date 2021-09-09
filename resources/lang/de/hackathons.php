@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'title' => 'EU Code Week HACKATONS',
     'subtitle' => 'Ideen zum Leben erwecken!',
     'sections' => [
@@ -30,65 +29,60 @@ return [
             'title' => 'Wie sieht ein Hackathon aus?',
             'content' => [
                 1 => 'Der Hackathon der EU Code Week beginnt als Reise mit einem 24-Stunden-Online-Hackathon. Die Teams werden von erfahrenen Mentoren gecoacht und es gibt Workshops, die Teilnehmenden die Möglichkeit bieten, mit Fun neue Fähigkeiten zu erlernen. Die Hackathons sind zudem eine ausgezeichnete Möglichkeit für Teilnehmende zum Netzwerken und um Kontakte mit Menschen im europäischen Technologiesektor zu knüpfen. Zum Abschluss des Hackathons stellt jedes Team seine Lösung einer Expertenjury vor.',
-                2 => 'Die 10 besten Teams werden ihre Hackathon-Reise fortsetzen und während des Sommers Training und Mentoring erhalten. Die Gewinner werden dann am abschließenden 12-stündigen nationalen Face-to-Face-Hackathon im September oder Oktober teilnehmen (der online stattfindet, falls die sanitäre Lage kein physisches Treffen zulässt).',
+                2 => 'Die 10 besten Teams werden ihre Hackathon-Reise fortsetzen und während des Sommers Training und Mentoring erhalten. Die Gewinner werden dann am abschließenden 12-stündigen nationalen Face-to-Face-Hackathon im September oder Oktober teilnehmen (der online stattfindet, falls die sanitäre Lage kein physisches Treffen zulässt).'
             ]
         ],
         5 => [
-            'title' => 'Ich kenne mich mit dem Programmieren nicht aus – was kann ich tun?',
+            'title' =>
+                'Ich kenne mich mit dem Programmieren nicht aus – was kann ich tun?',
             'content' => [
                 1 => 'Parallel zu dem Hackathon gibt es Workshops für Programmierneulinge, bei denen die Teilnehmenden an Hardware, Robotern usw. tüfteln, um die Grundlagen des rechnergestützten Denkens und Programmierens zu lernen. Weitere Informationen über die Anmeldung auf Ihrer lokalen Seite.'
             ]
         ],
 
         6 => [
-            'title' => 'Partner',
+            'title' => 'Partner'
         ],
 
         7 => [
-            'title' => 'Mitmachen und Spaß haben!',
-        ],
-
+            'title' => 'Mitmachen und Spaß haben!'
+        ]
     ],
 
     'cities' => [
-
         1 => [
-            'city' => "TBA",
-            'country' => "Rumänien",
-            'date' => "17.-18. April 2021"
+            'city' => 'TBA',
+            'country' => 'Rumänien',
+            'date' => '25.-26. September 2021'
         ],
         2 => [
-            'city' => "TBA",
-            'country' => "Irland",
-            'date' => "26.-27. April 2021"
+            'city' => 'TBA',
+            'country' => 'Irland',
+            'date' => '23.-24. September 2021'
         ],
         3 => [
-            'city' => "TBA",
-            'country' => "Italien",
-            'date' => "7.-8. Mai 2021"
+            'city' => 'TBA',
+            'country' => 'Italien',
+            'date' => '24.-25. September 2021'
         ],
         4 => [
-            'city' => "TBA",
-            'country' => "Griechenland",
-            'date' => "7.-8. Mai 2021"
+            'city' => 'TBA',
+            'country' => 'Griechenland',
+            'date' => '9. Oktober 2021'
         ],
         5 => [
-            'city' => "TBA",
-            'country' => "Slowenien",
-            'date' => "18.-19. September 2021"
+            'city' => 'TBA',
+            'country' => 'Slowenien',
+            'date' => '18.-19. September 2021'
         ],
         6 => [
-            'city' => "TBA",
-            'country' => "Lettland",
-            'date' => "29.-30. Mai 2021"
-        ],
+            'city' => 'TBA',
+            'country' => 'Lettland',
+            'date' => '1. Oktober 2021'
+        ]
     ],
     'final' => [
         1 => 'Finale im',
         2 => 'September/Oktober 2021'
     ]
-
-
-
 ];
-
