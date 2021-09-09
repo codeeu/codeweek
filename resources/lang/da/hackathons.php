@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'title' => 'EU’s kodeuges hackatons',
     'subtitle' => 'Før dine idéer ud i livet!',
     'sections' => [
@@ -30,7 +29,7 @@ return [
             'title' => 'Hvordan ser et hackaton ud?',
             'content' => [
                 1 => "EU's kodeuge-hackaton starter med en 24-timers onlinehackaton. Holdene får erfarne mentorer, og der bliver afholdt workshopper, hvor deltagerne får mulighed for at tilegne sig nye færdigheder og have det sjovt. Hackatonen er også en fremragende anledning til at netværke og møde andre deltagere fra den europæiske teknologisektor. Når hackatonen er slut, præsenterer de enkelte hold deres løsning for et ekspertpanel.",
-                2 => "De 10 bedste hold fortsætter hackatonforløbet og får undervisning og mentoring i løbet af sommeren. Vinderne deltager herefter i den nationale hackatonfinale, som varer 12 timer – ansigt til ansigt – i september eller oktober (dvs. online, hvis sundhedskrisen kræver, at vi stadig ikke må mødes fysisk).",
+                2 => 'De 10 bedste hold fortsætter hackatonforløbet og får undervisning og mentoring i løbet af sommeren. Vinderne deltager herefter i den nationale hackatonfinale, som varer 12 timer – ansigt til ansigt – i september eller oktober (dvs. online, hvis sundhedskrisen kræver, at vi stadig ikke må mødes fysisk).'
             ]
         ],
         5 => [
@@ -41,54 +40,47 @@ return [
         ],
 
         6 => [
-            'title' => 'Partnere',
+            'title' => 'Partnere'
         ],
         7 => [
-            'title' => 'Du skal da være med!',
-        ],
-
-
+            'title' => 'Du skal da være med!'
+        ]
     ],
 
     'cities' => [
-
         1 => [
-            'city' => "TBA",
-            'country' => "Rumænien",
-            'date' => "17.-18. april 2021"
+            'city' => 'TBA',
+            'country' => 'Rumænien',
+            'date' => '25.-26. september 2021'
         ],
         2 => [
-            'city' => "TBA",
-            'country' => "Irland",
-            'date' => "26.-27. April 2021"
+            'city' => 'TBA',
+            'country' => 'Irland',
+            'date' => '23.-24. september 2021'
         ],
         3 => [
-            'city' => "TBA",
-            'country' => "Italien",
-            'date' => "7.-8. maj 2021"
+            'city' => 'TBA',
+            'country' => 'Italien',
+            'date' => '24.-25. september 2021'
         ],
         4 => [
-            'city' => "TBA",
-            'country' => "Grækenland",
-            'date' => "7.-8. maj 2021"
+            'city' => 'TBA',
+            'country' => 'Grækenland',
+            'date' => '9. oktober 2021'
         ],
         5 => [
-            'city' => "TBA",
-            'country' => "Slovenien",
-            'date' => "18.-19. september 2021"
+            'city' => 'TBA',
+            'country' => 'Slovenien',
+            'date' => '18.-19. september 2021'
         ],
         6 => [
-            'city' => "TBA",
-            'country' => "Letland",
-            'date' => "29.-30. maj 2021"
-        ],
+            'city' => 'TBA',
+            'country' => 'Letland',
+            'date' => '1. oktober 2021'
+        ]
     ],
     'final' => [
         1 => 'Finale i',
         2 => 'september/oktober 2021'
     ]
-
-
-
 ];
-
