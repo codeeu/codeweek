@@ -64,7 +64,7 @@ return [
         ],
 
         8 => [
-            'title' => 'Programme',
+            'title' => 'Programma',
             'content' => [
                 [
                     'ES Programmēšanas nedēļas hakatons',
