@@ -508,13 +508,15 @@ Route::view('/hackathons/latvia', 'hackathons.after.hackathon-latvia')->name(
 Route::view('/hackathons/italy', 'hackathons.after.hackathon-italy')->name(
     'hackathon-italy'
 );
-Route::get('/hackathons/ireland', 'HackathonsController@before')->name(
+
+Route::view('/hackathons/greece', 'hackathons.after.hackathon-greece')->name(
+    'hackathon-greece'
+);
+
+Route::view('/hackathons/ireland', 'hackathons.after.hackathon-ireland')->name(
     'hackathon-ireland'
 );
 
-Route::get('/hackathons/greece', 'HackathonsController@before')->name(
-    'hackathon-greece'
-);
 Route::get('/hackathons/slovenia', 'HackathonsController@before')->name(
     'hackathon-slovenia'
 );

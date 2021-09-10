@@ -65,18 +65,6 @@ return [
         8 => [
             'title' => 'Programma',
             'content' => [
-                ' ',
-                "L’hackathon online della durata di 24 ore. Fra tutti i concorrenti verranno scelte al massimo 10 squadre che potranno restare in gara. Formazione e tutorato online gratuiti per tutte e 10 le squadre, durante l'estate 2021.",
-                'La fase finale: l’hackathon in presenza. 10 squadre hanno ricevuto un’identica formazione durante la seconda fase, ma solo una sarà la vincitrice.  Gli studenti della scuola secondaria di età compresa tra 15 e 19 anni gareggeranno in squadre per risolvere una “problematica locale” (la “sfida”) selezionata fra le proposte presentate antecedentemente alla prima fase.',
-
-                'Giornata 1',
-                'Giornata 2'
-            ]
-        ],
-
-        8 => [
-            'title' => 'Programme',
-            'content' => [
                 [
                     'L’hackathon della Settimana europea della programmazione comporta',
                     'tre distinte fasi.'
