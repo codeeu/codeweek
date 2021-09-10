@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'title' => 'EU Code Week HACKATONS',
     'subtitle' => 'Herätä ideasi eloon!',
     'sections' => [
@@ -30,7 +29,7 @@ return [
             'title' => 'Mikä hackathon on?',
             'content' => [
                 1 => 'EU Code Week Hackathon on matka, jotka käynnistyy 24 tunnin mittaisella virtuaalihackathonilla. Kokeneet mentorit valmentavat joukkueita, ja osallistujat voivat oppia uusia taitoja ja pitää hauskaa erilaisissa työpajoissa. Hackathon on myös mainio tilaisuus verkostoitua ja seurustella Euroopan teknologiasektorilla toimivien henkilöiden kanssa. Kunkin hackathonin lopuksi joukkueet esittelevät oman ratkaisunsa asiantuntijaraadille. ',
-                2 => 'Kymmenen parasta joukkuetta jatkaa hackathonmatkaansa kesällä, jolloin heille tarjotaan koulutusta ja mentorointia. Sen jälkeen voittajat osallistuvat 12-tuntiseen kansalliseen hackathoniin, joka järjestetään syys- tai lokakuussa fyysisenä tapahtumana (tai virtuaalisena, jos terveystilanne ei salli fyysistä kokoontumista).',
+                2 => 'Kymmenen parasta joukkuetta jatkaa hackathonmatkaansa kesällä, jolloin heille tarjotaan koulutusta ja mentorointia. Sen jälkeen voittajat osallistuvat 12-tuntiseen kansalliseen hackathoniin, joka järjestetään syys- tai lokakuussa fyysisenä tapahtumana (tai virtuaalisena, jos terveystilanne ei salli fyysistä kokoontumista).'
             ]
         ],
         5 => [
@@ -41,53 +40,48 @@ return [
         ],
 
         6 => [
-            'title' => 'Kumppanit',
+            'title' => 'Kumppanit'
         ],
 
         7 => [
-            'title' => 'Liity iloiseen joukkoon!',
-        ],
-
+            'title' => 'Liity iloiseen joukkoon!'
+        ]
     ],
 
     'cities' => [
-
         1 => [
-            'city' => "TBA",
-            'country' => "Romania",
-            'date' => "17–18.4.2021"
+            'city' => 'TBA',
+            'country' => 'Romania',
+            'date' => '25.–26. syyskyyta 2021'
         ],
         2 => [
-            'city' => "TBA",
-            'country' => "Irlanti",
-            'date' => "26-27 April 2021"
+            'city' => 'TBA',
+            'country' => 'Irlanti',
+            'date' => '23.–24. syyskyyta 2021'
         ],
         3 => [
-            'city' => "TBA",
-            'country' => "Italia",
-            'date' => "7.–8.5.2021"
+            'city' => 'TBA',
+            'country' => 'Italia',
+            'date' => '24.–25. syyskyyta 2021'
         ],
         4 => [
-            'city' => "TBA",
-            'country' => "Kreikka",
-            'date' => "7.–8.5.2021"
+            'city' => 'TBA',
+            'country' => 'Kreikka',
+            'date' => '9. lokakuussa 2021'
         ],
         5 => [
-            'city' => "TBA",
-            'country' => "Slovenia",
-            'date' => "18.–19. syyskyyta 2021"
+            'city' => 'TBA',
+            'country' => 'Slovenia',
+            'date' => '18.–19. syyskyyta 2021'
         ],
         6 => [
-            'city' => "TBA",
-            'country' => "Latvia",
-            'date' => "29.–30.5.2021"
-        ],
+            'city' => 'TBA',
+            'country' => 'Latvia',
+            'date' => '1. lokakuussa 2021'
+        ]
     ],
     'final' => [
         1 => 'Loppukilpailu',
         2 => 'syys–lokakuussa 2021'
     ]
-
-
-
 ];

@@ -53,19 +53,25 @@
 
             <h1 class="align-center">@lang('hackathons.sections.7.title')</h1>
 
+
             <section class="hackathons-content-grid">
+
+
                 <div class="codeweek-card-grid">
-                    <a href="{{route('hackathon-romania')}}" target="_blank">
+                    <a href="{{route('hackathon-slovenia')}}" target="_blank">
                         <div class="city-image">
-                            <img src="/images/hackathons/flags/romania.png">
+                            <img src="/images/hackathons/flags/slovenia.png">
                             <div class="transparent"></div>
                             <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.1.country')</div>
+                                <div class="title hackaton">@lang('hackathons.cities.5.country')</div>
                             </div>
                         </div>
-                        <div class="date">@lang('hackathons.cities.1.date')</div>
+                        <div class="date">{{ucfirst(__('hackathons.cities.5.date'))}}</div>
                     </a>
                 </div>
+
+
+
                 <div class="codeweek-card-grid">
                     <a href="{{route('hackathon-ireland')}}" target="_blank">
                         <div class="city-image">
@@ -93,18 +99,21 @@
                         <div class="date">@lang('hackathons.cities.3.date')</div>
                     </a>
                 </div>
+
                 <div class="codeweek-card-grid">
-                    <a href="{{route('hackathon-greece')}}" target="_blank">
+                    <a href="{{route('hackathon-romania')}}" target="_blank">
                         <div class="city-image">
-                            <img src="/images/hackathons/flags/greece.png">
+                            <img src="/images/hackathons/flags/romania.png">
                             <div class="transparent"></div>
                             <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.4.country')</div>
+                                <div class="title hackaton">@lang('hackathons.cities.1.country')</div>
                             </div>
                         </div>
-                        <div class="date">@lang('hackathons.cities.4.date')</div>
+                        <div class="date">@lang('hackathons.cities.1.date')</div>
                     </a>
                 </div>
+
+
                 <div class="codeweek-card-grid">
                     <a href="{{route('hackathon-latvia')}}" target="_blank">
                         <div class="city-image">
@@ -118,18 +127,20 @@
                         <div class="date">{{ucfirst(__('hackathons.cities.6.date'))}}</div>
                     </a>
                 </div>
+
                 <div class="codeweek-card-grid">
-                    <a href="{{route('hackathon-slovenia')}}" target="_blank">
+                    <a href="{{route('hackathon-greece')}}" target="_blank">
                         <div class="city-image">
-                            <img src="/images/hackathons/flags/slovenia.png">
+                            <img src="/images/hackathons/flags/greece.png">
                             <div class="transparent"></div>
                             <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.5.country')</div>
+                                <div class="title hackaton">@lang('hackathons.cities.4.country')</div>
                             </div>
                         </div>
-                        <div class="date">{{ucfirst(__('hackathons.cities.5.date'))}}</div>
+                        <div class="date">@lang('hackathons.cities.4.date')</div>
                     </a>
                 </div>
+
 
 
             </section>
