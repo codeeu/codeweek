@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'title' => 'EU Code Week HACKATONS',
     'subtitle' => 'vdýchnite nápadom život!',
     'sections' => [
@@ -15,7 +14,8 @@ return [
         2 => [
             'title' => 'Ako sa môžem zapojiť?',
             'content' => [
-                1 => 'Vyberte hackathon vo svojej krajine a zaregistrujte sa pomocou niekoľkých jednoduchých krokov. Môžete sa zapojiť ako jednotlivec alebo ako šesťčlenný tím. Ak sa spojíte so svojimi priateľmi alebo spolužiakmi, nezabudnite pri registrácii zadať aj názov svojho tímu. Každý hackathon spustí svoju registráciu samostatne, takže sledujte hackathon vo vašej krajine!'          ]
+                1 => 'Vyberte hackathon vo svojej krajine a zaregistrujte sa pomocou niekoľkých jednoduchých krokov. Môžete sa zapojiť ako jednotlivec alebo ako šesťčlenný tím. Ak sa spojíte so svojimi priateľmi alebo spolužiakmi, nezabudnite pri registrácii zadať aj názov svojho tímu. Každý hackathon spustí svoju registráciu samostatne, takže sledujte hackathon vo vašej krajine!'
+            ]
         ],
         3 => [
             'title' => 'Kto je organizátorom?',
@@ -29,7 +29,7 @@ return [
             'title' => 'Ako vyzerá hackaton?',
             'content' => [
                 1 => 'Európsky týždeň programovania je cesta, ktorá sa začína 24-hodinovým online hackathonom. Tímy budú viesť skúsení inštruktori a k dispozícii budú aj dielne, v ktorých sa účastníci budú môcť naučiť nové zručnosti a zabaviť sa. Hackathon je taktiež skvelá príležitosť na to, aby si účastníci vytvorili kontakty a spojili sa s ľuďmi v európskom technologickom odvetví. Na konci hackathonu predstaví každý tím odbornej porote svoje riešenie. ',
-                2 => 'Desať najlepších tímov bude pokračovať vo svojej hackathonovej ceste a počas leta dostane školenie a zaučenie. Víťazi sa v septembri alebo októbri stretnú tvárou v tvár na 12-hodinovom národnom finále (ktoré sa uskutoční online v prípade, že situácia v oblasti verejného zdravia neumožní osobné stretnutie).',
+                2 => 'Desať najlepších tímov bude pokračovať vo svojej hackathonovej ceste a počas leta dostane školenie a zaučenie. Víťazi sa v septembri alebo októbri stretnú tvárou v tvár na 12-hodinovom národnom finále (ktoré sa uskutoční online v prípade, že situácia v oblasti verejného zdravia neumožní osobné stretnutie).'
             ]
         ],
         5 => [
@@ -40,53 +40,48 @@ return [
         ],
 
         6 => [
-            'title' => 'Partneri',
+            'title' => 'Partneri'
         ],
 
         7 => [
-            'title' => 'Poďte sa zabávať!',
-        ],
-
+            'title' => 'Poďte sa zabávať!'
+        ]
     ],
 
     'cities' => [
-
         1 => [
-            'city' => "TBA",
-            'country' => "Rumunsko",
-            'date' => "17. – 18. apríl 2021"
+            'city' => 'TBA',
+            'country' => 'Rumunsko',
+            'date' => '25. - 26. septembra 2021'
         ],
         2 => [
-            'city' => "TBA",
-            'country' => "Írsko",
-            'date' => "26. - 27. april 2021"
+            'city' => 'TBA',
+            'country' => 'Írsko',
+            'date' => '23. - 24. septembra 2021'
         ],
         3 => [
-            'city' => "TBA",
-            'country' => "Taliansko",
-            'date' => "7. – 8. máj 2021"
+            'city' => 'TBA',
+            'country' => 'Taliansko',
+            'date' => '24. - 25. septembra 2021'
         ],
         4 => [
-            'city' => "TBA",
-            'country' => "Grécko",
-            'date' => "7. – 8. máj 2021"
+            'city' => 'TBA',
+            'country' => 'Grécko',
+            'date' => '9. októbri 2021'
         ],
         5 => [
-            'city' => "TBA",
-            'country' => "Slovinsko",
-            'date' => "18. - 19. septembra 2021"
+            'city' => 'TBA',
+            'country' => 'Slovinsko',
+            'date' => '18. - 19. septembra 2021'
         ],
         6 => [
-            'city' => "TBA",
-            'country' => "Lotyšsko",
-            'date' => "29. – 30. máj 2021"
-        ],
+            'city' => 'TBA',
+            'country' => 'Lotyšsko',
+            'date' => '1. októbri 2021'
+        ]
     ],
     'final' => [
         1 => 'Finále',
         2 => 'v septembri/októbri 2021'
     ]
-
-
-
 ];

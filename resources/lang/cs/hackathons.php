@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'title' => 'EU Code Week HACKATONS',
     'subtitle' => 'Přiveďte své nápady k životu!',
     'sections' => [
@@ -30,7 +29,7 @@ return [
             'title' => 'Jak takový hackathon vypadá?',
             'content' => [
                 1 => 'EU Code Week Hackathon představuje cestu, která začíná 24hodinovým online hackathonem. Zkušení mentoři budou koučovat týmy a také budou probíhat semináře, na nichž budou mít účastníci příležitost naučit se něco nového a pobavit se. Hackathon je také skvělou příležitostí, aby se účastníci navzájem poznali a navázali kontakty s lidmi z evropského technologického sektoru. Na konci hackathonu představí každý tým své řešení odborné komisi. ',
-                2 => 'Deset nejlepších týmů bude pokračovat v cestě hackathonem a absolvuje během léta školení a odborné vedení. Vítězové se poté v září nebo říjnu zúčastní 12hodinového přímého národního hackathonu (který se odehraje online, pokud epidemiologická situace neumožní fyzickou účast).',
+                2 => 'Deset nejlepších týmů bude pokračovat v cestě hackathonem a absolvuje během léta školení a odborné vedení. Vítězové se poté v září nebo říjnu zúčastní 12hodinového přímého národního hackathonu (který se odehraje online, pokud epidemiologická situace neumožní fyzickou účast).'
             ]
         ],
         5 => [
@@ -41,53 +40,48 @@ return [
         ],
 
         6 => [
-            'title' => 'Partneři',
+            'title' => 'Partneři'
         ],
 
         7 => [
-            'title' => "Připoj se k zábavě!",
-        ],
-
+            'title' => 'Připoj se k zábavě!'
+        ]
     ],
 
     'cities' => [
-
         1 => [
-            'city' => "",
-            'country' => "Rumunsko",
-            'date' => "17.–18. dubna 2021"
+            'city' => '',
+            'country' => 'Rumunsko',
+            'date' => '25.-26. září 2021'
         ],
         2 => [
-            'city' => "",
-            'country' => "Irsko",
-            'date' => "26.-27. dubna 2021"
+            'city' => '',
+            'country' => 'Irsko',
+            'date' => '23.-24. září 2021'
         ],
         3 => [
-            'city' => "",
-            'country' => "Itálie",
-            'date' => "7.–8. května 2021"
+            'city' => '',
+            'country' => 'Itálie',
+            'date' => '24.-25. září 2021'
         ],
         4 => [
-            'city' => "",
-            'country' => "Řecko",
-            'date' => "7.–8. května 2021"
+            'city' => '',
+            'country' => 'Řecko',
+            'date' => '9. říjnu 2021'
         ],
         5 => [
-            'city' => "",
-            'country' => "Slovinsko",
-            'date' => "18.-19. září 2021"
+            'city' => '',
+            'country' => 'Slovinsko',
+            'date' => '18.-19. září 2021'
         ],
         6 => [
-            'city' => "",
-            'country' => "Lotyšsko",
-            'date' => "29.–30. května 2021"
-        ],
+            'city' => '',
+            'country' => 'Lotyšsko',
+            'date' => '1. říjnu 2021'
+        ]
     ],
     'final' => [
         1 => 'Finále v',
         2 => 'září/říjnu 2021'
     ]
-
-
 ];
-

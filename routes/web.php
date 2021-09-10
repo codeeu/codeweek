@@ -497,24 +497,30 @@ Route::group(
 );
 
 Route::get('/hackathons', 'HackathonsController@index')->name('hackathons');
-Route::get('/hackathons/romania', 'HackathonsController@before')->name(
+Route::view('/hackathons/romania', 'hackathons.after.hackathon-romania')->name(
     'hackathon-romania'
 );
-Route::get('/hackathons/ireland', 'HackathonsController@before')->name(
-    'hackathon-ireland'
+
+Route::view('/hackathons/latvia', 'hackathons.after.hackathon-latvia')->name(
+    'hackathon-latvia'
 );
-Route::get('/hackathons/italy', 'HackathonsController@before')->name(
+
+Route::view('/hackathons/italy', 'hackathons.after.hackathon-italy')->name(
     'hackathon-italy'
 );
-Route::get('/hackathons/greece', 'HackathonsController@before')->name(
+
+Route::view('/hackathons/greece', 'hackathons.after.hackathon-greece')->name(
     'hackathon-greece'
 );
+
+Route::view('/hackathons/ireland', 'hackathons.after.hackathon-ireland')->name(
+    'hackathon-ireland'
+);
+
 Route::get('/hackathons/slovenia', 'HackathonsController@before')->name(
     'hackathon-slovenia'
 );
-Route::get('/hackathons/latvia', 'HackathonsController@before')->name(
-    'hackathon-latvia'
-);
+
 Route::post('/hackathons/vote', 'HackathonsVotingController@save')->name(
     'hackathon-vote'
 );
