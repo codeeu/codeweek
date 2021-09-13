@@ -543,6 +543,10 @@ Route::prefix('2021')->group(function () {
         '/challenges/paper-circuit',
         '2021.challenges.paper-circuit'
     )->name('challenges.paper-circuit');
+    Route::view(
+        '/challenges/ai-hour-of-code',
+        '2021.challenges.ai-hour-of-code'
+    )->name('challenges.ai-hour-of-code');
 });
 
 Route::view('/leaflet', 'map.leaflet')->name('leaflet');
