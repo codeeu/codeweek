@@ -1,4 +1,4 @@
-<section class="p-2 my-6" style="background-color: #f5cebc">
+<section class="p-2 mb-6" style="background-color: #f5cebc">
 
     <div class="leading-6 p-4">
         Share the link to your work in your <span class="font-bold">Instagram Bio</span>: tap the <span class="italic font-bold">Edit Profile</span> button on your Instagram and add the link to your work in the “Website” field. After that, create a new post, add a screenshot of your work, write “<span class="font-bold">Link in Bio</span>”, add the hashtag #CodeWeekChallenge and mention @CodeWeekEU.<br/>
