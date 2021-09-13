@@ -108,6 +108,13 @@
 'author'=>'EU Code Week Team',
 ])
 
+                        @include('2021._thumbnail', [
+'route'=>'challenges.ai-hour-of-code',
+'image'=>'ai-hour-of-code',
+'title'=>'AI hour of Code',
+'author'=>'Minecraft Education Edition',
+])
+
 
                     </section>
 

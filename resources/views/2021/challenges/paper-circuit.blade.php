@@ -137,6 +137,8 @@
 
                     </section>
 
+                    @include('2021.challenges._share')
+
                     <section class="p-2">
                         <div class="orange text-3xl">Example</div>
                         <div class="mt-2">See some examples of paper circuits:
