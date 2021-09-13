@@ -115,6 +115,13 @@
 'author'=>'Minecraft Education Edition',
 ])
 
+                        @include('2021._thumbnail', [
+'route'=>'challenges.calming-leds',
+'image'=>'calming-leds',
+'title'=>'Calming LEDs: create a simple device with micro:bit',
+'author'=>'Micro:bit Educational Foundation',
+])
+
 
                     </section>
 
