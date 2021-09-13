@@ -122,6 +122,20 @@
 'author'=>'Micro:bit Educational Foundation',
 ])
 
+                        @include('2021._thumbnail', [
+'route'=>'challenges.computational-thinking-and-computational-fluency',
+'image'=>'computational-thinking-and-computational-fluency',
+'title'=>'Computational Thinking and Computational Fluency with ScratchJr.',
+'author'=>'Stamatis Papadakis – EU Code Week Ambassador Greece',
+])
+
+                        @include('2021._thumbnail', [
+'route'=>'challenges.create-a-dance',
+'image'=>'create-a-dance',
+'title'=>'Create a dance with the Ode to Code!',
+'author'=>'Code.org',
+])
+
 
                     </section>
 

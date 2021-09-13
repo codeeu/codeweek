@@ -552,6 +552,16 @@ Route::prefix('2021')->group(function () {
         '/challenges/calming-leds',
         '2021.challenges.calming-leds'
     )->name('challenges.calming-leds');
+
+    Route::view(
+        '/challenges/computational-thinking-and-computational-fluency',
+        '2021.challenges.computational-thinking-and-computational-fluency'
+    )->name('challenges.computational-thinking-and-computational-fluency');
+
+    Route::view(
+        '/challenges/create-a-dance',
+        '2021.challenges.create-a-dance'
+    )->name('challenges.create-a-dance');
 });
 
 Route::view('/leaflet', 'map.leaflet')->name('leaflet');
