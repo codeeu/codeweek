@@ -120,6 +120,9 @@
                         </div>
                     </section>
 
+                    @include('2021.challenges._share')
+
+
                     <section class="p-2">
                         <div class="mt-6 orange text-3xl">Example</div>
                         <div class="mt-2">Check out <a target="_blank" href="https://www.tynker.com/play/dancing-robots/612249dd2d3eb65f2b0c6b1f-728057XjzbT,f5GeQFBM,dlKC2n,wk">this example</a> of dancing robots. Feel free to use it and remix it. <iframe width="660" height="408" src="//www.tynker.com/ide/embedded?p=612249dd2d3eb65f2b0c6b1f&controls=false&autostart=false" frameborder="0" allowfullscreen></iframe>

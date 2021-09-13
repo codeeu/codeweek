@@ -117,6 +117,8 @@
                         </div>
                     </section>
 
+                    @include('2021.challenges._share')
+
                     <section class="p-2">
                         <div class="mt-6 orange text-3xl">Example</div>
                         <div class="mt-2">Check out this  example of a riddle. <iframe src="//abfromz.pencilcode.net/home/Riddle" width="640" height="640" frameborder="0" allowfullScreen></iframe>

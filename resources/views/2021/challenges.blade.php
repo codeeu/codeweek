@@ -6,25 +6,25 @@
 
     <section id="codeweek-schools-page" class="codeweek-page">
 
-{{--        <section class="codeweek-banner about">--}}
-{{--            <div class="text">--}}
-{{--                <div class="text-5xl text-white">EU CODE WEEK CHALLENGES</div>--}}
-{{--                <h2>9-24 October 2021</h2>--}}
-{{--            </div>--}}
-{{--            <div class="image">--}}
-{{--                <img src="/images/banner_about.svg" class="static-image">--}}
+        {{--        <section class="codeweek-banner about">--}}
+        {{--            <div class="text">--}}
+        {{--                <div class="text-5xl text-white">EU CODE WEEK CHALLENGES</div>--}}
+        {{--                <h2>9-24 October 2021</h2>--}}
+        {{--            </div>--}}
+        {{--            <div class="image">--}}
+        {{--                <img src="/images/banner_about.svg" class="static-image">--}}
 
-{{--            </div>--}}
+        {{--            </div>--}}
 
-{{--        </section>--}}
+        {{--        </section>--}}
 
         <section class="flex flex-row justify-between" style="background-color: #908CA5">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
                     <div class="text-xl text-white w-full">
 
-                                    <div class="text-5xl text-white">EU CODE WEEK CHALLENGES</div>
-                                    <div class="text-3xl text-yellow-200">9-24 October 2021</div>
+                        <div class="text-5xl text-white">EU CODE WEEK CHALLENGES</div>
+                        <div class="text-3xl text-yellow-200">9-24 October 2021</div>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@
 ])
 
 
-                           @include('2021._thumbnail', [
+                        @include('2021._thumbnail', [
 'route'=>'challenges.dance',
 'image'=>'dance',
 'title'=>'Create a dance',
@@ -108,7 +108,33 @@
 'author'=>'EU Code Week Team',
 ])
 
+                        @include('2021._thumbnail', [
+'route'=>'challenges.ai-hour-of-code',
+'image'=>'ai-hour-of-code',
+'title'=>'AI hour of Code',
+'author'=>'Minecraft Education Edition',
+])
 
+                        @include('2021._thumbnail', [
+'route'=>'challenges.calming-leds',
+'image'=>'calming-leds',
+'title'=>'Calming LEDs: create a simple device with micro:bit',
+'author'=>'Micro:bit Educational Foundation',
+])
+
+                        @include('2021._thumbnail', [
+'route'=>'challenges.computational-thinking-and-computational-fluency',
+'image'=>'computational-thinking-and-computational-fluency',
+'title'=>'Computational Thinking and Computational Fluency with ScratchJr.',
+'author'=>'Stamatis Papadakis – EU Code Week Ambassador Greece',
+])
+
+                        @include('2021._thumbnail', [
+'route'=>'challenges.create-a-dance',
+'image'=>'create-a-dance',
+'title'=>'Create a dance with the Ode to Code!',
+'author'=>'Code.org',
+])
 
 
                     </section>
@@ -135,7 +161,9 @@
                                 Select a challenge you would like to complete.
                             </li>
                             <li>
-                                Team up your participants in pairs or groups. Teamwork and collaboration are key for the successful completion of a challenge whether you organise your activity in-person or online as a national or international collaborative activity.
+                                Team up your participants in pairs or groups. Teamwork and collaboration are key for the
+                                successful completion of a challenge whether you organise your activity in-person or
+                                online as a national or international collaborative activity.
                             </li>
                         </ul>
 
@@ -148,14 +176,68 @@
                     <div class="leading-6 text-base text-left">
 
                         <div class="leading-6 text-base text-left mt-2">
-                            Would you like to win some Code Week goodies? If yes, then let your work go viral. After you
-                            have completed the challenge, share it on Instagram. Follow @CodeWeekEU on Instagram and
-                            mention @CodeWeekEU. Make sure to use the hashtag #CodeWeekChallenge.
+                            Would you like to win some Code Week goodies? If yes, then let your work go viral!<br>
+
+                            After you have completed the challenge, share it on Instagram.<br/>
+
+                            Winners will be selected every day during Code Week between 9 – 24 October and announced on
+                            our Instagram channel, so don't forget to check your notifications regularly.<br/>
+
                         </div>
 
                         <div class="leading-6 text-base text-left mt-2">
-                            Winners will be selected every day during Code Week between 9 – 24 October, and announced on
-                            our Instagram channel, so don't forget to check your notifications regularly.
+                            <strong>How to share your challenge(s) on Instagram?</strong>
+
+                            <ul class="leading-7 ml-2 mt-0 checklist mt-2">
+                                <li>Tap the Edit profile button</li>
+                                <li>Add the link of your work in the Website field and save</li>
+                                <li>Create a new post</li>
+                                <ul class="leading-7 ml-6 mt-0 sub-checklist">
+                                    <ol>
+                                        <li>Add a screenshot of your work</li>
+                                        <li>Write an engaging description</li>
+                                        <li>Make sure to specify ‘Link in Bio’</li>
+                                        <li>Add the #CodeWeekChallenge</li>
+                                        <li>Mention and tag @CodeWeekEU</li>
+                                    </ol>
+                                    </li>
+                                </ul>
+                        </div>
+
+                        <div class="leading-6 text-base text-left mt-2">
+
+                            <strong>You prefer to share your challenge(s) on Facebook?</strong><br/>
+                            <div class="mt-2">
+                                EU Code Week will pin a new Challenge post on their Facebook page (link to FB page)
+                                every day and will select the winner for the prize from the comments under the
+                                post.<br/>
+
+                                    How does it work?
+                                <ul class="leading-7 ml-2 mt-0 checklist">
+                                    <li>
+                                        Simply comment on the post with the link to your work.
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="leading-6 text-base text-left mt-2">
+
+                        </div>
+
+                        <div class="leading-6 text-base text-left mt-2">
+
+                        </div>
+
+                        <div class="leading-6 text-base text-left mt-2">
+
+                        </div>
+
+                        <div class="leading-6 text-base text-left mt-2">
+
                         </div>
 
                     </div>
@@ -164,7 +246,7 @@
                         Why take part in an EU Code Week challenge?
                     </div>
                     <div class="leading-6 text-base text-left">
-                        <ul class="list-disc ml-6 mt-2">
+                        <ul class="leading-7 ml-2 mt-0 checklist mt-2">
                             <li>
                                 To engage in problem solving and coding activities.
                             </li>
@@ -186,4 +268,20 @@
 
     </section>
 
+@endsection
+
+@section('extra-css')
+    <style>
+        ul.checklist li:before {
+            content: '• ';
+            color: #ee6a2c;
+            font-weight: bold;
+        }
+
+        ul.sub-checklist li:before {
+            content: '- ';
+            color: #9d5025;
+            font-weight: bold;
+        }
+    </style>
 @endsection
