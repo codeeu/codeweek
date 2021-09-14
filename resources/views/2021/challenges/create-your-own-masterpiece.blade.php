@@ -66,7 +66,7 @@
 
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Recommended materials</div>
+                        <div class="text-xl text-left text-blue-600">Purpose</div>
                         <ol class="list-disc ml-5">
                             <li>To introduce computer science concepts in a visual way and inspire creativity.</li>
                         </ol>
