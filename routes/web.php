@@ -568,6 +568,25 @@ Route::prefix('2021')->group(function () {
         '/challenges/create-a-dance',
         '2021.challenges.create-a-dance'
     )->name('challenges.create-a-dance');
+
+    Route::view(
+        '/challenges/create-a-simulation',
+        '2021.challenges.create-a-simulation'
+    )->name('challenges.create-a-simulation');
+
+    Route::view(
+        '/challenges/create-your-own-masterpiece',
+        '2021.challenges.create-your-own-masterpiece'
+    )->name('challenges.create-your-own-masterpiece');
+
+    Route::view(
+        '/challenges/cs-first-unplugged-activities',
+        '2021.challenges.cs-first-unplugged-activities'
+    )->name('challenges.cs-first-unplugged-activities');
+
+    Route::view('/challenges/family-care', '2021.challenges.family-care')->name(
+        'challenges.family-care'
+    );
 });
 
 Route::view('/leaflet', 'map.leaflet')->name('leaflet');
