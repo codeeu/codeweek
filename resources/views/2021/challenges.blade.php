@@ -136,6 +136,20 @@
 'author'=>'Code.org',
 ])
 
+                        @include('2021._thumbnail', [
+'route'=>'challenges.create-a-simulation',
+'image'=>'create-a-simulation',
+'title'=>'Create a simulation!',
+'author'=>'Code.org',
+])
+
+                        @include('2021._thumbnail', [
+'route'=>'challenges.create-your-own-masterpiece',
+'image'=>'create-your-own-masterpiece',
+'title'=>'Create your own masterpiece!',
+'author'=>'Code.org',
+])
+
 
                     </section>
 
