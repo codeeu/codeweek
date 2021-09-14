@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'title' => 'EU Code Week HACKATONS',
     'subtitle' => 'uresničite svoje zamisli!',
     'sections' => [
@@ -15,7 +14,8 @@ return [
         2 => [
             'title' => 'Kako lahko sodelujem?',
             'content' => [
-                1 => 'Izberi hekaton v svoji državi in sledi nekaj preprostim korakom do prijave. Pridružiš se lahko kot posameznik ali kot ekipa šestih članov. Če se pridružiš s prijatelji ali sošolci, pri prijavi ne pozabi navesti imena svoje ekipe. Vsak hekaton bo prijave odprl ločeno, zato sledi tistemu v svoji državi!'           ]
+                1 => 'Izberi hekaton v svoji državi in sledi nekaj preprostim korakom do prijave. Pridružiš se lahko kot posameznik ali kot ekipa šestih članov. Če se pridružiš s prijatelji ali sošolci, pri prijavi ne pozabi navesti imena svoje ekipe. Vsak hekaton bo prijave odprl ločeno, zato sledi tistemu v svoji državi!'
+            ]
         ],
         3 => [
             'title' => 'Kdo so organizatorji?',
@@ -29,7 +29,7 @@ return [
             'title' => 'Kako je videti hekaton?',
             'content' => [
                 1 => '„Evropski teden programiranja je popotovanje, ki se začne s 24-urnim spletnim hekatonom. Izkušeni mentorji bodo vodili ekipe, delavnice pa bodo udeležencem omogočile, da se naučijo novih veščin in se zabavajo. Hekaton je tudi odlična priložnost, da udeleženci navežejo stike in se družijo s predstavniki evropskega tehnološkega sektorja. Ob koncu bo vsaka ekipa rešitev predstavila strokovni žiriji. ',
-                2 => '"Deset najboljših ekip bo hekatonsko popotovanje nadaljevalo. Poleti se bodo usposabljali in bili deležni mentorstva. Zmagovalci se bodo nato udeležili zadnjega 12-urnega državnega hekatona, ki bo septembra ali oktobra potekal kot srečanje v živo (če javnozdravstvene razmere tega ne bodo omogočale, se bo dogodek prestavil na splet).',
+                2 => '"Deset najboljših ekip bo hekatonsko popotovanje nadaljevalo. Poleti se bodo usposabljali in bili deležni mentorstva. Zmagovalci se bodo nato udeležili zadnjega 12-urnega državnega hekatona, ki bo septembra ali oktobra potekal kot srečanje v živo (če javnozdravstvene razmere tega ne bodo omogočale, se bo dogodek prestavil na splet).'
             ]
         ],
         5 => [
@@ -40,53 +40,48 @@ return [
         ],
 
         6 => [
-            'title' => 'Partnerji',
+            'title' => 'Partnerji'
         ],
 
         7 => [
-            'title' => 'Pridruži se zabavni izkušnji!',
-        ],
-
+            'title' => 'Pridruži se zabavni izkušnji!'
+        ]
     ],
 
     'cities' => [
-
         1 => [
-            'city' => "TBA",
-            'country' => "Romunija",
-            'date' => "17.– 18. april 2021"
+            'city' => 'TBA',
+            'country' => 'Romunija',
+            'date' => '25. -26. september 2021'
         ],
         2 => [
-            'city' => "TBA",
-            'country' => "Irska",
-            'date' => "26.-27. april 2021"
+            'city' => 'TBA',
+            'country' => 'Irska',
+            'date' => '23. -24. september 2021'
         ],
         3 => [
-            'city' => "TBA",
-            'country' => "Italija",
-            'date' => "7.– 8. maj 2021"
+            'city' => 'TBA',
+            'country' => 'Italija',
+            'date' => '24. -25. september 2021'
         ],
         4 => [
-            'city' => "TBA",
-            'country' => "Grčija",
-            'date' => "7.– 8. maj 2021"
+            'city' => 'TBA',
+            'country' => 'Grčija',
+            'date' => '9. oktober 2021'
         ],
         5 => [
-            'city' => "TBA",
-            'country' => "Slovenija",
-            'date' => "18. -19. september 2021"
+            'city' => 'TBA',
+            'country' => 'Slovenija',
+            'date' => '18. -19. september 2021'
         ],
         6 => [
-            'city' => "TBA",
-            'country' => "Latvija",
-            'date' => "29.–30. maj 2021"
-        ],
+            'city' => 'TBA',
+            'country' => 'Latvija',
+            'date' => '1. oktober 2021'
+        ]
     ],
     'final' => [
         1 => 'Zaključek',
         2 => 'September/oktober 2021'
     ]
-
-
-
 ];

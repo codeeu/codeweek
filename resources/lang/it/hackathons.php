@@ -1,14 +1,13 @@
 <?php
 
 return [
-
     'title' => 'EU Code Week HACKATONS',
     'subtitle' => 'Dai vita alle tue idee!',
     'sections' => [
         1 => [
             'title' => '6 hackathon, 6 sfide',
             'content' => [
-                1 => "Vivi in Grecia, Lettonia, Irlanda, Italia, Romania o Slovenia? Sei una persona creativa, ambiziosa e ti interessa il futuro della tecnologia? Questa è la tua occasione! Partecipa a uno degli hackathon della settimana europea della programmazione e sviluppa una soluzione innovativa che ti porterà alla ribalta della rivoluzione tecnologica!",
+                1 => 'Vivi in Grecia, Lettonia, Irlanda, Italia, Romania o Slovenia? Sei una persona creativa, ambiziosa e ti interessa il futuro della tecnologia? Questa è la tua occasione! Partecipa a uno degli hackathon della settimana europea della programmazione e sviluppa una soluzione innovativa che ti porterà alla ribalta della rivoluzione tecnologica!',
                 2 => "Nel 2021, la settimana europea della programmazione prevede sei straordinari hackathon e invita gli studenti della scuola secondaria superiore di età compresa tra 15 e 19 anni, a formare squadre e a utilizzare le competenze di programmazione per risolvere una problematica locale. Dopo una maratona informatica lunga 24 ore, ogni squadra presenterà le proprie idee a una giuria di esperti che sceglierà le 10 squadre finaliste. Il tempo a disposizione, le risorse e l’accesso ai tutor e alle competenze per completare la sfida saranno identici per tutte le squadre, ma solo 10 di queste avranno la possibilità di passare alla fase successiva, per sviluppare il prototipo, ottenere l'affiancamento e l’aiuto di un esperto e prendere parte all’hackathon finale in autunno. In questa fase finale, le squadre si sfideranno per aggiudicarsi fantastiche attrezzature IT e ulteriori servizi di tutorato e coaching per continuare lo sviluppo del prototipo."
             ]
         ],
@@ -29,9 +28,8 @@ return [
         4 => [
             'title' => 'Come si svolge un hackathon?',
             'content' => [
-                1 => "L’hackathon della settimana della programmazione europea è un viaggio che inizia con una maratona informatica online di 24 ore. Le squadre saranno seguite da tutor esperti e potranno partecipare a workshop per apprendere nuove competenze, ma anche per svolgere attività divertenti. L’hackathon offre inoltre ai partecipanti un’eccellente occasione per allacciare relazioni e socializzare con persone del settore tecnologico europeo. Al termine dell’hackathon, ogni squadra presenterà la propria soluzione a una giuria di esperti.",
-                2 => "Le dieci squadre migliori proseguiranno il viaggio dell’hackathon, ricevendo formazione e tutorato durante l'estate. I vincitori prenderanno quindi parte alla finale nazionale faccia a faccia: un hackathon di 12 ore che si terrà in settembre o in ottobre (eventualmente online, qualora la situazione sanitaria pubblica non consentisse gli incontri in persona).",
-
+                1 => 'L’hackathon della settimana della programmazione europea è un viaggio che inizia con una maratona informatica online di 24 ore. Le squadre saranno seguite da tutor esperti e potranno partecipare a workshop per apprendere nuove competenze, ma anche per svolgere attività divertenti. L’hackathon offre inoltre ai partecipanti un’eccellente occasione per allacciare relazioni e socializzare con persone del settore tecnologico europeo. Al termine dell’hackathon, ogni squadra presenterà la propria soluzione a una giuria di esperti.',
+                2 => "Le dieci squadre migliori proseguiranno il viaggio dell’hackathon, ricevendo formazione e tutorato durante l'estate. I vincitori prenderanno quindi parte alla finale nazionale faccia a faccia: un hackathon di 12 ore che si terrà in settembre o in ottobre (eventualmente online, qualora la situazione sanitaria pubblica non consentisse gli incontri in persona)."
             ]
         ],
         5 => [
@@ -42,53 +40,48 @@ return [
         ],
 
         6 => [
-            'title' => 'Partner',
+            'title' => 'Partner'
         ],
 
         7 => [
-            'title' => 'Unisciti al divertimento!',
-        ],
-
+            'title' => 'Unisciti al divertimento!'
+        ]
     ],
 
     'cities' => [
-
         1 => [
-            'city' => "TBA",
-            'country' => "Romania",
-            'date' => "17-18 aprile 2021"
+            'city' => 'TBA',
+            'country' => 'Romania',
+            'date' => '25-26 settembre 2021'
         ],
         2 => [
-            'city' => "TBA",
-            'country' => "Irlanda",
-            'date' => "26-27 April 2021"
+            'city' => 'TBA',
+            'country' => 'Irlanda',
+            'date' => '23-24 settembre 2021'
         ],
         3 => [
-            'city' => "TBA",
-            'country' => "Italia",
-            'date' => "7-8 maggio 2021"
+            'city' => 'TBA',
+            'country' => 'Italia',
+            'date' => '24-25 settembre 2021'
         ],
         4 => [
-            'city' => "TBA",
-            'country' => "Grecia",
-            'date' => "7-8 maggio 2021"
+            'city' => 'TBA',
+            'country' => 'Grecia',
+            'date' => '9 ottobre 2021'
         ],
         5 => [
-            'city' => "TBA",
-            'country' => "Slovenia",
-            'date' => "18-19 settembre 2021"
+            'city' => 'TBA',
+            'country' => 'Slovenia',
+            'date' => '18-19 settembre 2021'
         ],
         6 => [
-            'city' => "TBA",
-            'country' => "Lettonia",
-            'date' => "29-30 maggio 2021"
-        ],
+            'city' => 'TBA',
+            'country' => 'Lettonia',
+            'date' => '1 ottobre 2021'
+        ]
     ],
     'final' => [
         1 => 'Finali a',
         2 => 'settembre/ottobre 2021'
     ]
-
-
-
 ];

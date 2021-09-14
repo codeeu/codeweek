@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'title' => 'EU Code Week HACKATONS',
     'subtitle' => 'Fikirlerinizi hayata geçirin!',
     'sections' => [
@@ -30,7 +29,7 @@ return [
             'title' => 'Hackathon neye benzer?',
             'content' => [
                 1 => 'EU Code Week hackathon, 24 saatlik çevrimiçi bir maratonu başlatan bir yolculuktur. Deneyimli mentorlar takımlara koçluk yapacak ve katılımcılar için yeni yetenekler edinme ve eğlenme fırsatları sunan atölye çalışmaları olacaktır. Yazılım maratonu, katılımcıların Avrupa teknoloji sektöründeki kişilerle ağ kurabilmeleri ve sosyalleşebilmeleri için de mükemmel bir fırsattır. Yazılım maratonunun sonunda her bir takım çözümünü uzman bir jüriye sunacaktır. ',
-                2 => 'En iyi on takım yazılım maratonu yolculuğuna devam edecek ve yaz boyunca eğitim ve mentorluk alacaktır. Kazananlar Eylül veya Ekim ayındaki 12 saatlik yüz yüze ulusal yazılım maratonu finalinde yer alacaktır (halk sağlığı durumu fiziksel toplanmaya izin vermezse çevrimiçi yapılacaktır).',
+                2 => 'En iyi on takım yazılım maratonu yolculuğuna devam edecek ve yaz boyunca eğitim ve mentorluk alacaktır. Kazananlar Eylül veya Ekim ayındaki 12 saatlik yüz yüze ulusal yazılım maratonu finalinde yer alacaktır (halk sağlığı durumu fiziksel toplanmaya izin vermezse çevrimiçi yapılacaktır).'
             ]
         ],
         5 => [
@@ -41,52 +40,47 @@ return [
         ],
 
         6 => [
-            'title' => 'Ortaklar',
+            'title' => 'Ortaklar'
         ],
         7 => [
-            'title' => 'Eğlenceye katılın!',
-        ],
-
+            'title' => 'Eğlenceye katılın!'
+        ]
     ],
 
     'cities' => [
-
         1 => [
-            'city' => "TBA",
-            'country' => "Romanya",
-            'date' => "17-18 Nisan 2021"
+            'city' => 'TBA',
+            'country' => 'Romanya',
+            'date' => '25 - 26 Eylül 2021'
         ],
         2 => [
-            'city' => "TBA",
-            'country' => "İrlanda",
-            'date' => "26-27 Nisan 2021"
+            'city' => 'TBA',
+            'country' => 'İrlanda',
+            'date' => '23 - 24 Eylül 2021'
         ],
         3 => [
-            'city' => "TBA",
-            'country' => "İtalya",
-            'date' => "7-8 Mayıs 2021"
+            'city' => 'TBA',
+            'country' => 'İtalya',
+            'date' => '24 - 25 Eylül 2021'
         ],
         4 => [
-            'city' => "TBA",
-            'country' => "Yunanistan",
-            'date' => "7-8 Mayıs 2021"
+            'city' => 'TBA',
+            'country' => 'Yunanistan',
+            'date' => '9 Ekim 2021'
         ],
         5 => [
-            'city' => "TBA",
-            'country' => "Slovenya",
-            'date' => "18 - 19 Eylül 2021"
+            'city' => 'TBA',
+            'country' => 'Slovenya',
+            'date' => '18 - 19 Eylül 2021'
         ],
         6 => [
-            'city' => "TBA",
-            'country' => "Letonya",
-            'date' => "29-30 Mayıs 2021"
-        ],
+            'city' => 'TBA',
+            'country' => 'Letonya',
+            'date' => '1 Ekim 2021'
+        ]
     ],
     'final' => [
         1 => 'Final',
         2 => 'Eylül/Ekim 2021'
     ]
-
-
-
 ];

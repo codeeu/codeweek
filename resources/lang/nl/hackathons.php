@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'title' => 'EU Code Week HACKATONS',
     'subtitle' => 'Breng je ideeën tot leven!',
     'sections' => [
@@ -15,7 +14,8 @@ return [
         2 => [
             'title' => 'Hoe kan ik meedoen?',
             'content' => [
-                1 => 'Selecteer de hackathon in jouw land en registreer je in enkele eenvoudige stappen. Je kunt je solo inschrijven, of met een team van 6 personen. Als je met vrienden of klasgenoten deelneemt, vergeet dan niet om je team een naam te geven. De inschrijvingen voor elke hackathon verlopen apart, dus volg de hackathon in jouw land op de voet!'           ]
+                1 => 'Selecteer de hackathon in jouw land en registreer je in enkele eenvoudige stappen. Je kunt je solo inschrijven, of met een team van 6 personen. Als je met vrienden of klasgenoten deelneemt, vergeet dan niet om je team een naam te geven. De inschrijvingen voor elke hackathon verlopen apart, dus volg de hackathon in jouw land op de voet!'
+            ]
         ],
         3 => [
             'title' => 'Wie zijn de organisatoren?',
@@ -29,7 +29,7 @@ return [
             'title' => 'Hoe ziet een hackathon eruit?',
             'content' => [
                 1 => 'De hackathon van de EU-programmeerweek begint met een online hackathon van 24 uur. Ervaren mentors helpen de teams op weg, en er zullen workshops zijn om de deelnemers op een leuke manier nieuwe vaardigheden bij te brengen. De hackathon is voor de deelnemers ook een perfecte kans om een netwerk uit te bouwen en kennis te maken met mensen in de Europese tech-sector. Aan het einde van de hackathon stelt elk team zijn oplossing voor aan een vakjury.',
-                2 => 'Voor de tien beste teams is de hackathon nog niet afgelopen: zij krijgen de hele zomer training en coaching. In september of oktober nemen de winnaars dan deel aan een 12 uur lange face-to-face hackathon (die online zal doorgaan als de gezondheidssituatie op dat moment geen fysiek evenement toelaat).',
+                2 => 'Voor de tien beste teams is de hackathon nog niet afgelopen: zij krijgen de hele zomer training en coaching. In september of oktober nemen de winnaars dan deel aan een 12 uur lange face-to-face hackathon (die online zal doorgaan als de gezondheidssituatie op dat moment geen fysiek evenement toelaat).'
             ]
         ],
         5 => [
@@ -40,53 +40,48 @@ return [
         ],
 
         6 => [
-            'title' => 'Partners',
+            'title' => 'Partners'
         ],
 
         7 => [
-            'title' => 'Doe mee!',
-        ],
-
+            'title' => 'Doe mee!'
+        ]
     ],
 
     'cities' => [
-
         1 => [
-            'city' => "TBA",
-            'country' => "Roemenië",
-            'date' => "17-18 april 2021"
+            'city' => 'TBA',
+            'country' => 'Roemenië',
+            'date' => '25-26 september 2021'
         ],
         2 => [
-            'city' => "TBA",
-            'country' => "Ierland",
-            'date' => "26-27 april 2021"
+            'city' => 'TBA',
+            'country' => 'Ierland',
+            'date' => '23-24 september 2021'
         ],
         3 => [
-            'city' => "TBA",
-            'country' => "Italië",
-            'date' => "7-8 mei 2021"
+            'city' => 'TBA',
+            'country' => 'Italië',
+            'date' => '24-25 september 2021'
         ],
         4 => [
-            'city' => "TBA",
-            'country' => "Griekenland",
-            'date' => "7-8 mei 2021"
+            'city' => 'TBA',
+            'country' => 'Griekenland',
+            'date' => '9 oktober 2021'
         ],
         5 => [
-            'city' => "TBA",
-            'country' => "Slovenië",
-            'date' => "18-19 september 2021"
+            'city' => 'TBA',
+            'country' => 'Slovenië',
+            'date' => '18-19 september 2021'
         ],
         6 => [
-            'city' => "TBA",
-            'country' => "Letland",
-            'date' => "29-30 mei 2021"
-        ],
+            'city' => 'TBA',
+            'country' => 'Letland',
+            'date' => '1 oktober 2021'
+        ]
     ],
     'final' => [
         1 => 'Finale in',
         2 => 'september/oktober 2021'
     ]
-
-
-
 ];

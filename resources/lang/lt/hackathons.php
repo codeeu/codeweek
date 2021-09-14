@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'title' => 'EU Code Week HACKATONS',
     'subtitle' => 'įgyvendinkite savo idėjas!',
     'sections' => [
@@ -30,7 +29,7 @@ return [
             'title' => 'Kaip vyksta hakatonas?',
             'content' => [
                 1 => 'ES programavimo savaitė – tai programuotojų maratonas, pradedantis 24 valandas internete truksiančią kelionę. Patyrę mentoriai instruktuos komandas, vyks praktiniai seminarai, kurie dalyviams suteiks galimybių įgyti naujų įgūdžių ir maloniai praleisti laiką. Be to, programuotojų maratonas – puiki proga dalyviams susijungti tinkle ir bendrauti su Europos technologijų sektoriaus bendraminčiais. Baigiantis programuotojų maratonui kiekviena komanda savo sprendimą pateiks ekspertų vertinimo komisijai. ',
-                2 => 'Dešimt geriausių komandų tęs programuotojų maratono kelionę – per vasarą jie mokysis ir bus kuruojami mentorių. Tada nugalėtojai rugsėjį arba spalį dalyvaus finaliniame tiesioginiame 12 valandų trukmės nacionaliniame programuotojų maratone (kuris vyks internetu, jei dėl visuomenės sveikatos padėties bus ribojami fiziniai susitikimai).',
+                2 => 'Dešimt geriausių komandų tęs programuotojų maratono kelionę – per vasarą jie mokysis ir bus kuruojami mentorių. Tada nugalėtojai rugsėjį arba spalį dalyvaus finaliniame tiesioginiame 12 valandų trukmės nacionaliniame programuotojų maratone (kuris vyks internetu, jei dėl visuomenės sveikatos padėties bus ribojami fiziniai susitikimai).'
             ]
         ],
         5 => [
@@ -41,54 +40,48 @@ return [
         ],
 
         6 => [
-            'title' => 'Partneriai',
+            'title' => 'Partneriai'
         ],
 
         7 => [
-            'title' => 'Prisijunkite – bus įdomu!',
-        ],
-
+            'title' => 'Prisijunkite – bus įdomu!'
+        ]
     ],
 
     'cities' => [
-
         1 => [
-            'city' => "TBA",
-            'country' => "Rumunija",
-            'date' => "2021 m. balandžio 17–18 d."
+            'city' => 'TBA',
+            'country' => 'Rumunija',
+            'date' => '2021 m. rugsėjo 25-26 d.'
         ],
         2 => [
-            'city' => "TBA",
-            'country' => "Airija",
-            'date' => "26-27 April 2021"
+            'city' => 'TBA',
+            'country' => 'Airija',
+            'date' => '2021 m. rugsėjo 23-24 d.'
         ],
         3 => [
-            'city' => "TBA",
-            'country' => "Italija",
-            'date' => "2021 m. gegužės 7–8 d."
+            'city' => 'TBA',
+            'country' => 'Italija',
+            'date' => '2021 m. rugsėjo 24-25 d.'
         ],
         4 => [
-            'city' => "TBA",
-            'country' => "Graikija",
-            'date' => "2021 m. gegužės 7-8 d."
+            'city' => 'TBA',
+            'country' => 'Graikija',
+            'date' => '2021 m. spalis 9 d.'
         ],
         5 => [
-            'city' => "TBA",
-            'country' => "Slovėnija",
-            'date' => "2021 m. rugsėjo 18–19 d."
+            'city' => 'TBA',
+            'country' => 'Slovėnija',
+            'date' => '2021 m. rugsėjo 18–19 d.'
         ],
         6 => [
-            'city' => "TBA",
-            'country' => "Latvija",
-            'date' => "2021 m. gegužės 29–30 d."
-        ],
+            'city' => 'TBA',
+            'country' => 'Latvija',
+            'date' => '2021 m. spalis 1 d.'
+        ]
     ],
     'final' => [
         1 => 'Finalas',
         2 => '2021 m. rugsėjis–spalis'
     ]
-
-
-
 ];
-
