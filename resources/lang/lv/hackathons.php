@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'title' => 'EU Code Week HACKATONS',
     'subtitle' => 'īstenojiet savas idejas!',
     'sections' => [
@@ -31,7 +30,7 @@ return [
             'title' => 'Kas notiks programmēšanas hakatonā?',
             'content' => [
                 1 => 'ES Programmēšanas nedēļas hakatons sāksies ar 24 stundu tiešsaistes hakatonu, kura laikā dalībniekiem būs iespēja saņemt atbalstu no pieredzējušiem mentoriem un piedalīties dažādos semināros, lai apgūtu jaunas zināšanas un prasmes. Hakatonā dalībniekiem būs iespēja savstarpēji iepazīties, satikt cilvēkus no Eiropas tehnoloģiju jomas un noslēgumā prezentēt savu risinājumu ekspertu žūrijai.',
-                2 => 'Desmit labākās komandas turpinās dalību hakatonā un saņems apmācības un mentoru atbalstu visas vasaras garumā. Uzvarētāji piedalīsies fināla 12 stundu klātienes nacionālajā hakatonā septembrī vai oktobrī. Ja sabiedrības veselības situācija nepieļaus tikšanos klātienē, fināls notiks tiešsaistē.',
+                2 => 'Desmit labākās komandas turpinās dalību hakatonā un saņems apmācības un mentoru atbalstu visas vasaras garumā. Uzvarētāji piedalīsies fināla 12 stundu klātienes nacionālajā hakatonā septembrī vai oktobrī. Ja sabiedrības veselības situācija nepieļaus tikšanos klātienē, fināls notiks tiešsaistē.'
             ]
         ],
         5 => [
@@ -42,53 +41,47 @@ return [
         ],
 
         6 => [
-            'title' => 'Partneri',
+            'title' => 'Partneri'
         ],
         7 => [
-            'title' => 'Pievienojieties jautrībai!',
-        ],
-
+            'title' => 'Pievienojieties jautrībai!'
+        ]
     ],
 
     'cities' => [
-
         1 => [
-            'city' => "TBA",
-            'country' => "Rumānija",
-            'date' => "2021. gada 17.–18. aprīlis"
+            'city' => 'TBA',
+            'country' => 'Rumānija',
+            'date' => '2021. gada 25.-26. septembris'
         ],
         2 => [
-            'city' => "TBA",
-            'country' => "Īrija",
-            'date' => "26-27 April 2021"
+            'city' => 'TBA',
+            'country' => 'Īrija',
+            'date' => '2021. gada 23.-24. septembris'
         ],
         3 => [
-            'city' => "TBA",
-            'country' => "Itālija",
-            'date' => "2021. gada 7.–8. maijs"
+            'city' => 'TBA',
+            'country' => 'Itālija',
+            'date' => '2021. gada 24.-25. septembris'
         ],
         4 => [
-            'city' => "TBA",
-            'country' => "Grieķija",
-            'date' => "2021. gada 7.–8. maijs"
+            'city' => 'TBA',
+            'country' => 'Grieķija',
+            'date' => '2021. gada 9. oktobrī'
         ],
         5 => [
-            'city' => "TBA",
-            'country' => "Slovēnija",
-            'date' => "2021. gada 18.-19. septembris "
+            'city' => 'TBA',
+            'country' => 'Slovēnija',
+            'date' => '2021. gada 18.-19. septembris'
         ],
         6 => [
-            'city' => "TBA",
-            'country' => "Latvija",
-            'date' => "2021. gada 29.–30. maijs"
-        ],
+            'city' => 'TBA',
+            'country' => 'Latvija',
+            'date' => '2021. gada 1. oktobrī'
+        ]
     ],
     'final' => [
         1 => 'Fināls',
         2 => '2021. gada septembrī/oktobrī'
     ]
-
-
-
 ];
-

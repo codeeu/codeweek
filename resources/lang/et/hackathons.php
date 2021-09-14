@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'title' => 'EU Code Week HACKATONS',
     'subtitle' => 'ideest teostuseni!',
     'sections' => [
@@ -30,7 +29,7 @@ return [
             'title' => 'Mida häkaton endast kujutab?',
             'content' => [
                 1 => 'EU Code Week Hackathoni teekond algab 24-tunnise veebis toimuva häkatoniga. Meeskondi juhendavad kogemustega mentorid ning töötubades osaledes saavad õpilased uusi kogemusi ja veidike ka lõbutseda. Lisaks kõigele muule pakub häkaton suurepärast võimalust suhelda teiste Euroopa tehnoloogiasektoris tegutsevate inimestega. Iga häkatoni lõpus tutvustavad meeskonnad oma ideid ekspertidest koosnevale žüriile.',
-                2 => 'Kümme parimat meeskonda jätkavad oma häkatoni suvel, kui neid koolitatakse ja juhendatakse. Kümme finalisti osalevad ka 12-tunnises riiklikus häkatonis, mis toimub septembris või oktoobris (kui tervise ohutuse olukord füüsilist kohtumist ei luba, toimub ka see veebis).',
+                2 => 'Kümme parimat meeskonda jätkavad oma häkatoni suvel, kui neid koolitatakse ja juhendatakse. Kümme finalisti osalevad ka 12-tunnises riiklikus häkatonis, mis toimub septembris või oktoobris (kui tervise ohutuse olukord füüsilist kohtumist ei luba, toimub ka see veebis).'
             ]
         ],
         5 => [
@@ -41,54 +40,48 @@ return [
         ],
 
         6 => [
-            'title' => 'Partnerid',
+            'title' => 'Partnerid'
         ],
 
         7 => [
-            'title' => 'Liituge meiega!',
-        ],
-
+            'title' => 'Liituge meiega!'
+        ]
     ],
 
     'cities' => [
-
         1 => [
-            'city' => "TBA",
-            'country' => "Rumeenia",
-            'date' => "17.–18. aprill 2021"
+            'city' => 'TBA',
+            'country' => 'Rumeenia',
+            'date' => '25.-26. september 2021'
         ],
         2 => [
-            'city' => "TBA",
-            'country' => "Iirimaa",
-            'date' => "26-27 April 2021"
+            'city' => 'TBA',
+            'country' => 'Iirimaa',
+            'date' => '23.-24. september 2021'
         ],
         3 => [
-            'city' => "TBA",
-            'country' => "Itaalia",
-            'date' => "7.–8. mai 2021"
+            'city' => 'TBA',
+            'country' => 'Itaalia',
+            'date' => '24.-25. september 2021'
         ],
         4 => [
-            'city' => "TBA",
-            'country' => "Kreeka",
-            'date' => "7.–8. mai 2021"
+            'city' => 'TBA',
+            'country' => 'Kreeka',
+            'date' => '9 oktoober 2021'
         ],
         5 => [
-            'city' => "TBA",
-            'country' => "Sloveenia",
-            'date' => "18.-19. september 2021"
+            'city' => 'TBA',
+            'country' => 'Sloveenia',
+            'date' => '18.-19. september 2021'
         ],
         6 => [
-            'city' => "TBA",
-            'country' => "Läti",
-            'date' => "29.–30. mai 2021"
-        ],
+            'city' => 'TBA',
+            'country' => 'Läti',
+            'date' => '1 oktoober 2021'
+        ]
     ],
     'final' => [
         1 => 'Finaal',
         2 => 'September/oktoober 2021'
     ]
-
-
-
 ];
-
