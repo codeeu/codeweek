@@ -572,6 +572,11 @@ Route::prefix('2021')->group(function () {
         '/challenges/create-your-own-masterpiece',
         '2021.challenges.create-your-own-masterpiece'
     )->name('challenges.create-your-own-masterpiece');
+
+    Route::view(
+        '/challenges/cs-first-unplugged-activities',
+        '2021.challenges.cs-first-unplugged-activities'
+    )->name('challenges.cs-first-unplugged-activities');
 });
 
 Route::view('/leaflet', 'map.leaflet')->name('leaflet');
