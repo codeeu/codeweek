@@ -7,17 +7,17 @@
     <section id="codeweek-schools-page" class="codeweek-page">
 
 
-        <section class="flex flex-row justify-between" style="background-color: #E759FD">
+        <section class="flex flex-row justify-between" style="background-color: #DED7BC">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
-                    <div class="text-xl text-white w-full"><a class="text-white" href="{{route('challenges')}}">EU CODE
+                    <div class="text-xl text-white w-full"><a class="text-black" href="{{route('challenges')}}">EU CODE
                             WEEK CHALLENGES</a></div>
-                    <div class="text-5xl mt-2" style="color: #fdeefd">Create a dance with the Ode to Code!</div>
+                    <div class="text-5xl mt-2" style="color: #d84d96">CS First Unplugged activities</div>
                 </div>
             </div>
 
             <div class="md:w-10/12 md:flex hidden">
-                <img src="{{asset('img/2021/challenges/thumbnails/create-a-dance.png')}}">
+                <img src="{{asset('img/2021/challenges/thumbnails/cs-first-unplugged-activities.png')}}">
 
 
             </div>
@@ -27,9 +27,9 @@
         <section class="codeweek-content-wrapper">
             <div class="m-6">
 
-                @include('2021.challenges._author', ['author' => 'Code.org'])
+                @include('2021.challenges._author', ['author' => 'Google'])
 
-                <section class="grid grid-cols-1 gap-6 md:grid-cols-5 mx-6 my-4">
+                <section class="grid grid-cols-1 gap-6 md:grid-cols-4 mx-6 my-4">
 
 
                     <div>
@@ -54,25 +54,34 @@
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Recommended materials</div>
-                        <ol class="list-disc ml-5">
-                            <li><a href="https://code.org/dance">The Code.org tutorial</a></li>
-                        </ol>
 
-
-                    </div>
-
-                    <div>
                         <div class="text-xl text-left text-blue-600">Purpose</div>
                         <ol class="list-disc ml-5">
-                            <li>To practice coding in a fun way and feel connected with the EU Code Week community.</li>
+                            <li>To support students who are learning from home.</li>
+                            <li>To give everyone a break from their screens.</li>
+
                         </ol>
 
-
                     </div>
+
+
 
 
                 </section>
+
+                <div class="mx-6 my-4">
+
+
+                    <div class="text-xl text-left text-blue-600">Recommended materials</div>
+                    <ol class="list-disc ml-5">
+                        <li>In addition to the activity booklet, some activities require or optionally benefit from additional materials.</li>
+                        <li>Small counters (like dried beans) to use on the Network a Neighborhood map.</li>
+                        <li>Scissors to cut out the Send a Secret Message cipher wheel.</li>
+                        <li>Cardboard and glue to provide additional stiffness to the Send a Secret Message cipher wheel.</li>
+                        <li>A thumbtack, toothpick, or straightened paper clip to connect the Send a Secret Message cipher wheel.</li>
+                    </ol>
+
+                </div>
 
 
                 <div class="leading-6 text-base text-left">
@@ -81,14 +90,10 @@
                         <div class="orange text-3xl mt-2">
                             Description
                         </div>
-                        <div class="mt-2 w-1/2">
-                            <img src="{{asset('img/2021/challenges/create-a-dance-2.jpg')}}"/>
-                        </div>
+
 
                         <div class="mt-2">
-                            Create a dance with the Ode to Code! Use the <a href="https://code.org/dance">Dance Party tutorial</a> to code a
-                            dance to the Ode to Code. The official EU Code Week anthem is listed as a selection in Dance
-                            Party.
+                            CS First Unplugged is a set of activities that introduce students to CS concepts without a computer. We’ve designed this lesson to demonstrate that Computer Science is a lot more than just code.
                         </div>
                     </section>
 
@@ -97,9 +102,9 @@
                         <div class="leading-6">
                             <div class="mt-6 orange text-3xl">Instructions</div>
                             <ul class="leading-7 ml-2 checklist mt-2">
-                                <li>Instructions are shown as videos within <a href="https://code.org/dance">the
-                                        tutorial</a> and also written at the top of each level.
-                                </li>
+                                <li>You will find the booklet to all activities in English at this <a href="https://drive.google.com/file/d/1F2k68YD4q899KFSs1RX3zNp9jvJ0AC7i/view?usp=sharing">link</a>, as well as Lesson Plan in English at this <a href="https://drive.google.com/file/d/1U8xf25xtWQJk8T-qpfkDMqcMUka_osat/view?usp=sharing">link</a>.</li>
+                                <li>The activities in this lesson can be completed individually and in any order.</li>
+                                <li>Teacher can take a picture of the learning process and share it on Instagram using #CodeWeekChallengeGoogle</li>
                             </ul>
                         </div>
                     </section>
@@ -108,22 +113,21 @@
 
                     <section class="p-2">
                         <div class="orange text-3xl">Example</div>
-                        <div class="mt-2">Featured student creations can be found on the following page: <a
-                                    href="https://code.org/dance">https://code.org/dance</a>
+
                             <div class="mt-2">
-                                <a href="https://code.org/dance">
-                                    <img src="{{asset('img/2021/challenges/create-a-dance-1.gif')}}"/>
-                                </a>
+
+                                    <img src="{{asset('img/2021/challenges/cs-first-unplugged-activities.png')}}"/>
 
 
                             </div>
-                        </div>
+
+
                     </section>
 
 
                 </div>
 
-                @include('2021.challenges._download',['url'=>'https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2021/Create+a+dance+with+the+Ode+to+Code!.docx'])
+                @include('2021.challenges._download',['url'=>'https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2021/CS+First+Unplugged+activities.docx'])
             </div>
         </section>
     </section>
