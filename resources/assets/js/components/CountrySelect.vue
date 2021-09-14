@@ -5,7 +5,7 @@
             @change="newCountry()">
       <option value=""> All countries</option>
       <option value="">---------------</option>
-      <option v-for="country in countries" v-bind:value="country.iso">{{ country.name }} ({{ country.iso }})</option>
+      <option v-for="country in countries" v-bind:value="country.iso">{{ $t('countries.'+country.name) }} ({{ country.iso }})</option>
     </select>
   </div>
 </template>
