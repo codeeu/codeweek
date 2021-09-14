@@ -577,6 +577,10 @@ Route::prefix('2021')->group(function () {
         '/challenges/cs-first-unplugged-activities',
         '2021.challenges.cs-first-unplugged-activities'
     )->name('challenges.cs-first-unplugged-activities');
+
+    Route::view('/challenges/family-care', '2021.challenges.family-care')->name(
+        'challenges.family-care'
+    );
 });
 
 Route::view('/leaflet', 'map.leaflet')->name('leaflet');

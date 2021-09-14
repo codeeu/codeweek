@@ -157,6 +157,13 @@
 'author'=>'Google',
 ])
 
+                        @include('2021._thumbnail', [
+'route'=>'challenges.family-care',
+'image'=>'family-care',
+'title'=>'Family Care',
+'author'=>'Allen Yan / MakeX',
+])
+
 
                     </section>
 
