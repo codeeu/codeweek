@@ -150,6 +150,13 @@
 'author'=>'Code.org',
 ])
 
+                        @include('2021._thumbnail', [
+'route'=>'challenges.cs-first-unplugged-activities',
+'image'=>'cs-first-unplugged-activities',
+'title'=>'CS First Unplugged activities',
+'author'=>'Google',
+])
+
 
                     </section>
 
