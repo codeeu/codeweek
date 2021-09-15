@@ -191,6 +191,13 @@
 'author'=>'Raspberry Pi Foundation',
 ])
 
+                        @include('2021._thumbnail', [
+'route'=>'challenges.train-ai-bot',
+'image'=>'train-ai-bot',
+'title'=>'Train an AI bot!',
+'author'=>'Code.org',
+])
+
 
                     </section>
 
