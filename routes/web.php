@@ -596,6 +596,10 @@ Route::prefix('2021')->group(function () {
         '/challenges/inclusive-app-design',
         '2021.challenges.inclusive-app-design'
     )->name('challenges.inclusive-app-design');
+
+    Route::view('/challenges/silly-eyes', '2021.challenges.silly-eyes')->name(
+        'challenges.silly-eyes'
+    );
 });
 
 Route::view('/leaflet', 'map.leaflet')->name('leaflet');

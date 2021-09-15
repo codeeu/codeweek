@@ -184,6 +184,13 @@
 'author'=>'Apple Education',
 ])
 
+                        @include('2021._thumbnail', [
+'route'=>'challenges.silly-eyes',
+'image'=>'silly-eyes',
+'title'=>'Silly Eyes',
+'author'=>'Raspberry Pi Foundation',
+])
+
 
                     </section>
 

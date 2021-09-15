@@ -12,7 +12,7 @@
                 <div class="text-center m-12">
                     <div class="text-xl text-white w-full"><a class="text-black" href="{{route('challenges')}}">EU CODE
                             WEEK CHALLENGES</a></div>
-                    <div class="text-5xl mt-2" style="color: #f9f6f5">Apple Education</div>
+                    <div class="text-5xl mt-2" style="color: #f9f6f5">Inclusive App Design</div>
                 </div>
             </div>
 
@@ -27,7 +27,7 @@
         <section class="codeweek-content-wrapper">
             <div class="m-6">
 
-                @include('2021.challenges._author', ['author' => 'Felienne Hermans, Leiden University - Ramon Moorlag, I&I - CodeWeek NL'])
+                @include('2021.challenges._author', ['author' => 'Apple Education'])
 
                 <section class="grid grid-cols-1 gap-6 md:grid-cols-3 mx-6 my-4">
 
