@@ -591,6 +591,11 @@ Route::prefix('2021')->group(function () {
         '/challenges/haunted-house',
         '2021.challenges.haunted-house'
     )->name('challenges.haunted-house');
+
+    Route::view(
+        '/challenges/inclusive-app-design',
+        '2021.challenges.inclusive-app-design'
+    )->name('challenges.inclusive-app-design');
 });
 
 Route::view('/leaflet', 'map.leaflet')->name('leaflet');
