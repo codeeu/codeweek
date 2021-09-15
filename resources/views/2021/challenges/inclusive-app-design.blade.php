@@ -12,7 +12,7 @@
                 <div class="text-center m-12">
                     <div class="text-xl text-white w-full"><a class="text-black" href="{{route('challenges')}}">EU CODE
                             WEEK CHALLENGES</a></div>
-                    <div class="text-5xl mt-2" style="color: #f9f6f5">Inclusive App Design</div>
+                    <div class="text-5xl mt-2" style="color: #f9f6f5">Apple Education</div>
                 </div>
             </div>
 
