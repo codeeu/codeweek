@@ -177,6 +177,13 @@
 'author'=>'Felienne Hermans, Leiden University - Ramon Moorlag, I&I - CodeWeek NL',
 ])
 
+                        @include('2021._thumbnail', [
+'route'=>'challenges.inclusive-app-design',
+'image'=>'inclusive-app-design',
+'title'=>'Inclusive App Design',
+'author'=>'Apple Education',
+])
+
 
                     </section>
 
