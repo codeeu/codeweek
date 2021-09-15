@@ -586,6 +586,11 @@ Route::prefix('2021')->group(function () {
         '/challenges/virtual-flower-field',
         '2021.challenges.virtual-flower-field'
     )->name('challenges.virtual-flower-field');
+
+    Route::view(
+        '/challenges/haunted-house',
+        '2021.challenges.haunted-house'
+    )->name('challenges.haunted-house');
 });
 
 Route::view('/leaflet', 'map.leaflet')->name('leaflet');
