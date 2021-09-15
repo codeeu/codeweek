@@ -581,6 +581,11 @@ Route::prefix('2021')->group(function () {
     Route::view('/challenges/family-care', '2021.challenges.family-care')->name(
         'challenges.family-care'
     );
+
+    Route::view(
+        '/challenges/virtual-flower-field',
+        '2021.challenges.virtual-flower-field'
+    )->name('challenges.virtual-flower-field');
 });
 
 Route::view('/leaflet', 'map.leaflet')->name('leaflet');
