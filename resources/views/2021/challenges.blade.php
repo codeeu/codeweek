@@ -170,6 +170,13 @@
 'author'=>'Jadga Huegle - Meet and Code coach and part of the SAP Snap! team',
 ])
 
+                        @include('2021._thumbnail', [
+'route'=>'challenges.haunted-house',
+'image'=>'haunted-house',
+'title'=>'Haunted House in Hedy',
+'author'=>'Felienne Hermans, Leiden University - Ramon Moorlag, I&I - CodeWeek NL',
+])
+
 
                     </section>
 
