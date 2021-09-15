@@ -600,6 +600,11 @@ Route::prefix('2021')->group(function () {
     Route::view('/challenges/silly-eyes', '2021.challenges.silly-eyes')->name(
         'challenges.silly-eyes'
     );
+
+    Route::view(
+        '/challenges/train-ai-bot',
+        '2021.challenges.train-ai-bot'
+    )->name('challenges.train-ai-bot');
 });
 
 Route::view('/leaflet', 'map.leaflet')->name('leaflet');

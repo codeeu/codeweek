@@ -126,7 +126,7 @@
 
                 </div>
 
-                @include('2021.challenges._download',['url'=>'https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2021/Haunted+House+in+Hedy.docx'])
+                @include('2021.challenges._download',['url'=>'https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2021/Silly+eyes.docx'])
             </div>
         </section>
     </section>
