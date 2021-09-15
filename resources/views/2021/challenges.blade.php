@@ -163,6 +163,33 @@
 'title'=>'Family Care',
 'author'=>'Allen Yan / MakeX',
 ])
+                        @include('2021._thumbnail', [
+'route'=>'challenges.virtual-flower-field',
+'image'=>'virtual-flower-field',
+'title'=>'Grow your virtual flower field',
+'author'=>'Jadga Huegle - Meet and Code coach and part of the SAP Snap! team',
+])
+
+                        @include('2021._thumbnail', [
+'route'=>'challenges.haunted-house',
+'image'=>'haunted-house',
+'title'=>'Haunted House in Hedy',
+'author'=>'Felienne Hermans, Leiden University - Ramon Moorlag, I&I - CodeWeek NL',
+])
+
+                        @include('2021._thumbnail', [
+'route'=>'challenges.inclusive-app-design',
+'image'=>'inclusive-app-design',
+'title'=>'Inclusive App Design',
+'author'=>'Apple Education',
+])
+
+                        @include('2021._thumbnail', [
+'route'=>'challenges.silly-eyes',
+'image'=>'silly-eyes',
+'title'=>'Silly Eyes',
+'author'=>'Raspberry Pi Foundation',
+])
 
 
                     </section>
