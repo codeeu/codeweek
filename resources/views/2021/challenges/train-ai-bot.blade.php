@@ -7,17 +7,17 @@
     <section id="codeweek-schools-page" class="codeweek-page">
 
 
-        <section class="flex flex-row justify-between" style="background-color: #0CA8E2">
+        <section class="flex flex-row justify-between" style="background-color: #1BA8E2">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
                     <div class="text-xl text-white w-full"><a class="text-white" href="{{route('challenges')}}">EU CODE
                             WEEK CHALLENGES</a></div>
-                    <div class="text-5xl mt-2" style="color: #eee91f">Silly eyes</div>
+                    <div class="text-5xl mt-2" style="color: #eee91f">Train an AI bot!</div>
                 </div>
             </div>
 
             <div class="md:w-10/12 md:flex hidden">
-                <img src="{{asset('img/2021/challenges/thumbnails/silly-eyes.png')}}">
+                <img src="{{asset('img/2021/challenges/thumbnails/train-ai-bot.png')}}">
             </div>
 
         </section>
@@ -25,7 +25,7 @@
         <section class="codeweek-content-wrapper">
             <div class="m-6">
 
-                @include('2021.challenges._author', ['author' => 'Raspberry Pi Foundation'])
+                @include('2021.challenges._author', ['author' => 'Code.org'])
 
                 <section class="grid grid-cols-1 gap-6 md:grid-cols-4 mx-6 my-4">
 
@@ -47,7 +47,7 @@
                     <div>
                         <div class="text-xl text-left text-blue-600">Duration</div>
                         <ol class="list-disc ml-5">
-                            <li>25 minutes</li>
+                            <li>1 hour</li>
                         </ol>
                     </div>
 
@@ -55,7 +55,9 @@
                         <div class="text-xl text-left text-blue-600">Recommended materials</div>
                         <ol class="list-disc ml-5">
                             <li>
-                                You will need <a href="https://scratch.mit.edu/">Scratch</a>.
+                                Tutorial can be found: <a
+                                        href="https://code.org/oceans">https://code.org/oceans</a><br/>
+                                (This tutorial is available in over 25 languages)
                             </li>
                         </ol>
 
@@ -69,9 +71,9 @@
 
                     <div class="text-xl text-left text-blue-600">Purpose</div>
                     <ol class="list-disc ml-5">
-                        <li>To make a project with user interaction.</li>
-                        <li>To personalise a project with colour and graphic effects.</li>
-                        <li>To learn about design in digital making.</li>
+                        <li>To learn about artificial intelligence (AI), machine learning, training data, and bias,
+                            while exploring ethical issues and how AI can be used to address world problems.
+                        </li>
 
                     </ol>
 
@@ -86,9 +88,14 @@
                             Description
                         </div>
 
+                        <div class="mt-2 w-1/2">
+                            <img src="{{asset('img/2021/challenges/train-ai-bot-1.png')}}"/>
+                        </div>
+
 
                         <div class="mt-2">
-                            In this project, you will design and create a silly eye character. The character’s large, silly eyes will follow the mouse pointer to bring your character to life.
+                            Train an AI bot with AI for Oceans. In this activity, you will program or train AI
+                            (artificial intelligence) to identify fish or trash. Let's clean up the ocean!
                         </div>
                     </section>
 
@@ -96,9 +103,10 @@
                     <section class="p-2">
                         <div class="leading-6">
                             <div class="mt-6 mb-2 orange text-3xl">Instructions</div>
-                                <div class="mb-2">
-                                    Please access the full project description <a href="https://projects.raspberrypi.org/en/projects/silly-eyes">here</a>
-                                </div>
+                            <div class="mb-2">
+                                Instructions are shown as videos within the tutorial (<a href="https://code.org/oceans">https://code.org/oceans</a>)
+                                and also written at the top of each level.
+                            </div>
                         </div>
                     </section>
 
@@ -106,16 +114,12 @@
 
                     <section class="p-2">
                         <div class="orange text-3xl">Example</div>
-                        <div class="mt-2">
-                            Check out Gobo, Under the sea and Don't eat donut
-                        </div>
 
 
-                        <div class="mt-2 w-10/12">
-
-                            <img src="{{asset('img/2021/challenges/silly-eyes-1.png')}}"/>
-                            <img src="{{asset('img/2021/challenges/silly-eyes-2.png')}}"/>
-                            <img src="{{asset('img/2021/challenges/silly-eyes-3.png')}}"/>
+                        <div class="mt-2 w-1/2">
+                            <a href="https://code.org/oceans">
+                                <img src="{{asset('img/2021/challenges/train-ai-bot-2.png')}}"/>
+                            </a>
 
 
                         </div>
@@ -126,7 +130,7 @@
 
                 </div>
 
-                @include('2021.challenges._download',['url'=>'https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2021/Silly+eyes.docx'])
+                @include('2021.challenges._download',['url'=>'https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2021/Train+an+AI+bot!.docx'])
             </div>
         </section>
     </section>
