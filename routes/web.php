@@ -587,6 +587,25 @@ Route::prefix('2021')->group(function () {
     Route::view('/challenges/family-care', '2021.challenges.family-care')->name(
         'challenges.family-care'
     );
+
+    Route::view(
+        '/challenges/virtual-flower-field',
+        '2021.challenges.virtual-flower-field'
+    )->name('challenges.virtual-flower-field');
+
+    Route::view(
+        '/challenges/haunted-house',
+        '2021.challenges.haunted-house'
+    )->name('challenges.haunted-house');
+
+    Route::view(
+        '/challenges/inclusive-app-design',
+        '2021.challenges.inclusive-app-design'
+    )->name('challenges.inclusive-app-design');
+
+    Route::view('/challenges/silly-eyes', '2021.challenges.silly-eyes')->name(
+        'challenges.silly-eyes'
+    );
 });
 
 Route::view('/leaflet', 'map.leaflet')->name('leaflet');
