@@ -163,6 +163,12 @@
 'title'=>'Family Care',
 'author'=>'Allen Yan / MakeX',
 ])
+                        @include('2021._thumbnail', [
+'route'=>'challenges.virtual-flower-field',
+'image'=>'virtual-flower-field',
+'title'=>'Grow your virtual flower field',
+'author'=>'Jadga Huegle - Meet and Code coach and part of the SAP Snap! team',
+])
 
 
                     </section>
