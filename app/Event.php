@@ -199,6 +199,14 @@ class Event extends Model {
         return '/view/' . $this->id . '/' . $this->slug;
     }
 
+    public function imported() {
+        return Str::contains($this->codeweek_for_all_participation_code, [
+            '-hamburg',
+            '-bonn',
+            '-baden'
+        ]);
+    }
+
     public function picture_path() {
         if ($this->picture) {
             if (Str::startsWith($this->picture, 'http')) {
