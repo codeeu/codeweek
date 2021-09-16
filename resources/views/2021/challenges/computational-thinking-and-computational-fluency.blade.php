@@ -31,7 +31,7 @@
 
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Target audience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
                             <li>Teachers</li>
                             <li>Pre-primary students (3 to 6 years)</li>
@@ -39,21 +39,21 @@
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Experience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
                         <ol class="list-disc ml-5">
                             <li>Beginner</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Duration</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
                             <li>90 minutes</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Recommended materials</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
                             <li>The free app <a href="www.scratchjr.org/">ScratchJr</a> works on various operating systems and types of smart devices.</li>
                             <li>Also, the <a href="www.scratchjr.org/">ScratchJr</a> website offers plenty of free educational material.</li>
@@ -67,7 +67,7 @@
                 </section>
 
                 <div class="mx-6 my-4">
-                    <div class="text-xl text-left text-blue-600">Purpose</div>
+                    <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                     <ol class="list-disc ml-5">
                         <li>To get familiar with new commands and interface.</li>
                         <li>To create simple programs with simple cause-and-effect commands.</li>
@@ -81,7 +81,7 @@
 
                     <section class="bg-blue-100 p-2 mt-6">
                         <div class="orange text-3xl mt-2">
-                            Description
+                            @lang('challenges.common.description')
                         </div>
 
 
@@ -94,7 +94,7 @@
 
                     <section class="p-2">
                         <div class="leading-6">
-                            <div class="mt-6 orange text-3xl">Instructions</div>
+                            <div class="mt-6 orange text-3xl">@lang('challenges.common.instructions')</div>
                             <ul class="leading-7 ml-2 checklist mt-2">
                                 <li>ScratchJr does not require children to be literate. All instructions and menu options are identifiable through symbols and colours. The challenge can be completed within the classroom, the lab or even in an open space as no internet is required.</li>
                                 <li>Children use city as background and use coding blocks to make a car drive across the city.</li>
@@ -105,7 +105,7 @@
 @include('2021.challenges._share')
 
                     <section class="p-2">
-                        <div class="orange text-3xl">Example</div>
+                        <div class="orange text-3xl">@lang('challenges.common.example')</div>
                         <div class="mt-2">Children can use sound and motion blocks and start again blocks to make characters dance.<br/>
                             Children pick a background and a character and use a motion block to make a car drive across the city Children can use the speed block to speed up or slow down a character.</div>
                         <div class="mt-2">

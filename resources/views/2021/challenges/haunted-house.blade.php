@@ -33,28 +33,28 @@
 
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Target audience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
                             <li>Teachers and educators</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Experience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
                         <ol class="list-disc ml-5">
                             <li>Beginner</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Duration</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
                             <li>1 hour or 2 hours depending on prior knowledge</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Recommended materials</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
                             <li>
                                 Hedy on <a href="https://www.hedycode.com">hedycode.com</a>,level 1 to 4
@@ -69,7 +69,7 @@
 
                 <div class="mx-6 my-4">
 
-                    <div class="text-xl text-left text-blue-600">Purpose</div>
+                    <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                     <ol class="list-disc ml-5">
 
                         <li>To make an interactive Haunted House story.</li>
@@ -84,7 +84,7 @@
 
                     <section class="bg-blue-100 p-2 mt-6">
                         <div class="orange text-3xl mt-2">
-                            Description
+                            @lang('challenges.common.description')
                         </div>
 
 
@@ -98,7 +98,7 @@
 
                     <section class="p-2">
                         <div class="leading-6">
-                            <div class="mt-6 orange text-3xl">Instructions</div>
+                            <div class="mt-6 orange text-3xl">@lang('challenges.common.instructions')</div>
                             <ul class="leading-7 ml-2 checklist mt-2">
                             <li>Start with opening a browser and go to hedycode.com.</li>
                             <li>Follow the instructions for levels 1-4. Use the tabs ‘Level’ and ‘Haunted house.’</li>
@@ -117,7 +117,7 @@
                     @include('2021.challenges._share')
 
                     <section class="p-2">
-                        <div class="orange text-3xl">Example</div>
+                        <div class="orange text-3xl">@lang('challenges.common.example')</div>
                         <ul class="leading-7 ml-2 checklist mt-2">
                             <li><a href="https://www.hedycode.com/hedy/94ee69a567c34071af4189c827af4041/view">Haunted house example at level 2</a></li>
                             <li><a href="https://www.hedycode.com/hedy/df5ae8a1303041cd84c60efe73de0485/view">Haunted house example at level 4</a></li>

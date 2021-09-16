@@ -33,28 +33,28 @@
 
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Target audience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
                             <li>Primary School students (6 to 12 years)</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Experience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
                         <ol class="list-disc ml-5">
                             <li>Beginner</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Duration</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
                             <li>1 hour</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Recommended materials</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
                             <li><a href="https://code.org/dance">The Code.org tutorial</a></li>
                         </ol>
@@ -63,7 +63,7 @@
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Purpose</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                         <ol class="list-disc ml-5">
                             <li>To practice coding in a fun way and feel connected with the EU Code Week community.</li>
                         </ol>
@@ -79,7 +79,7 @@
 
                     <section class="bg-blue-100 p-2 mt-6">
                         <div class="orange text-3xl mt-2">
-                            Description
+                            @lang('challenges.common.description')
                         </div>
                         <div class="mt-2 w-1/2">
                             <img src="{{asset('img/2021/challenges/create-a-dance-2.jpg')}}"/>
@@ -95,7 +95,7 @@
 
                     <section class="p-2">
                         <div class="leading-6">
-                            <div class="mt-6 orange text-3xl">Instructions</div>
+                            <div class="mt-6 orange text-3xl">@lang('challenges.common.instructions')</div>
                             <ul class="leading-7 ml-2 checklist mt-2">
                                 <li>Instructions are shown as videos within <a href="https://code.org/dance">the
                                         tutorial</a> and also written at the top of each level.
@@ -107,7 +107,7 @@
                     @include('2021.challenges._share')
 
                     <section class="p-2">
-                        <div class="orange text-3xl">Example</div>
+                        <div class="orange text-3xl">@lang('challenges.common.example')</div>
                         <div class="mt-2">Featured student creations can be found on the following page: <a
                                     href="https://code.org/dance">https://code.org/dance</a>
                             <div class="mt-2">

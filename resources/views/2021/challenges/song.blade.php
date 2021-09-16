@@ -30,7 +30,7 @@
 
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Target audience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
                             <li>Teachers</li>
                             <li>Students (12-18)</li>
@@ -38,21 +38,21 @@
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Experience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
                         <ol class="list-disc ml-5">
                             <li>Intermediate</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Duration</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
                             <li>1 hour</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Recommended materials</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
                             <li><a href="https://earsketch.gatech.edu/landing/#/" target="_blank">Earsketch</a></li>
                         </ol>
@@ -65,7 +65,7 @@
                 </section>
 
                 <div class="mx-6 my-4">
-                    <div class="text-xl text-left text-blue-600">Purpose</div>
+                    <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                     <ol class="list-disc ml-5">
                         <li>To learn coding through music</li>
                         <li>To distinguish music genres and instruments</li>
@@ -79,7 +79,7 @@
 
                     <section class="bg-blue-100 p-2 mt-6">
                         <div class="orange text-3xl mt-2">
-                            Description
+                            @lang('challenges.common.description')
                         </div>
 
 
@@ -92,7 +92,7 @@
 
                     <section class="p-2">
                         <div class="leading-8">
-                            <div class="mt-6 orange text-3xl">Instructions</div>
+                            <div class="mt-6 orange text-3xl">@lang('challenges.common.instructions')</div>
                             <ul class="leading-7 ml-2 mt-0 checklist mt-2">
                                 <li>Log in to <a href="https://earsketch.gatech.edu/landing/#/">Earsketch</a>.</li>
                                 <li>Click <strong>Click here to make a script</strong>. Name your script and choose <strong>Python</strong> as a programming language.</li>
@@ -127,7 +127,7 @@
                     @include('2021.challenges._share')
 
                     <section class="p-2">
-                        <div class="mt-6 orange text-3xl">Example</div>
+                        <div class="mt-6 orange text-3xl">@lang('challenges.common.example')</div>
                         <div class="mt-2">
                             Listen to <a href="https://earsketch.gatech.edu/earsketch2/?sharing=eQgzojvIKsMLrum8CBYj1g" target="_blank">an example of a song coded with Earsketch</a>. You can import the code and edit it.
                         </div>

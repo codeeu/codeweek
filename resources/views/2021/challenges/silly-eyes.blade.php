@@ -31,28 +31,28 @@
 
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Target audience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
                             <li>Primary School students (6 to 12 years)</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Experience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
                         <ol class="list-disc ml-5">
                             <li>Beginner</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Duration</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
                             <li>25 minutes</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Recommended materials</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
                             <li>
                                 You will need <a href="https://scratch.mit.edu/">Scratch</a>.
@@ -67,7 +67,7 @@
 
                 <div class="mx-6 my-4">
 
-                    <div class="text-xl text-left text-blue-600">Purpose</div>
+                    <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                     <ol class="list-disc ml-5">
                         <li>To make a project with user interaction.</li>
                         <li>To personalise a project with colour and graphic effects.</li>
@@ -83,7 +83,7 @@
 
                     <section class="bg-blue-100 p-2 mt-6">
                         <div class="orange text-3xl mt-2">
-                            Description
+                            @lang('challenges.common.description')
                         </div>
 
 
@@ -95,7 +95,7 @@
 
                     <section class="p-2">
                         <div class="leading-6">
-                            <div class="mt-6 mb-2 orange text-3xl">Instructions</div>
+                            <div class="mt-6 mb-2 orange text-3xl">@lang('challenges.common.instructions')</div>
                                 <div class="mb-2">
                                     Please access the full project description <a href="https://projects.raspberrypi.org/en/projects/silly-eyes">here</a>
                                 </div>
@@ -105,7 +105,7 @@
                     @include('2021.challenges._share')
 
                     <section class="p-2">
-                        <div class="orange text-3xl">Example</div>
+                        <div class="orange text-3xl">@lang('challenges.common.example')</div>
                         <div class="mt-2">
                             Check out Gobo, Under the sea and Don't eat donut
                         </div>

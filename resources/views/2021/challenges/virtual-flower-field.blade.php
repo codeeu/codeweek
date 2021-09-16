@@ -33,28 +33,28 @@
 
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Target audience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
                             <li>Primary School students (6 to 12 years)</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Experience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
                         <ol class="list-disc ml-5">
                             <li>Beginner</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Duration</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
                             <li>30-60 minutes</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Recommended materials</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
                             <li>
                                 We recommend using <a href="https://snap.berkeley.edu">Snap!</a>, however, the project also works in <a href="https://scratch.mit.edu">Scratch</a>.
@@ -72,7 +72,7 @@
 
                 <div class="mx-6 my-4">
 
-                    <div class="text-xl text-left text-blue-600">Purpose</div>
+                    <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                     <ol class="list-disc ml-5">
 
                         <li>To get to know programming with a simple yet expressive project.</li>
@@ -91,7 +91,7 @@
 
                     <section class="bg-blue-100 p-2 mt-6">
                         <div class="orange text-3xl mt-2">
-                            Description
+                            @lang('challenges.common.description')
                         </div>
 
 
@@ -103,7 +103,7 @@
 
                     <section class="p-2">
                         <div class="leading-6">
-                            <div class="mt-6 orange text-3xl">Instructions</div>
+                            <div class="mt-6 orange text-3xl">@lang('challenges.common.instructions')</div>
                             <ul class="leading-7 ml-2 checklist mt-2">
                                 <li>If you need inspiration on how to get started with the challenge, check out this <a href="https://youtu.be/VcPc4VVDp2c">video</a> or use this <a href="https://tinyurl.com/virtualflowerfield">document</a> to follow along.</li>
                                 <li>The challenge can be completed by programming a virtual flower field in Snap! (or Scratch) and posting a screenshot or photo of the result online.</li>
@@ -117,7 +117,7 @@
                     @include('2021.challenges._share')
 
                     <section class="p-2">
-                        <div class="orange text-3xl">Example</div>
+                        <div class="orange text-3xl">@lang('challenges.common.example')</div>
 
                             <div class="mt-2 w-1/2">
 

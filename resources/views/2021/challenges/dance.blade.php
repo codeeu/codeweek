@@ -43,7 +43,7 @@
 
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Target audience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
                             <li>Teachers</li>
                             <li>Students (8-12)</li>
@@ -51,14 +51,14 @@
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Experience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
                         <ol class="list-disc ml-5">
                             <li>Beginner</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Duration</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
                             <li>1 hour</li>
                         </ol>
@@ -71,7 +71,7 @@
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Purpose</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                         <ol class="list-disc ml-5">
                             <li>To learn basic coding concepts</li>
                             <li>To learn how to animate characters</li>
@@ -87,7 +87,7 @@
 
                     <section class="bg-blue-100 p-2 mt-6">
                         <div class="orange text-3xl mt-2">
-                            Description
+                            @lang('challenges.common.description')
                         </div>
 
 
@@ -100,7 +100,7 @@
 
                     <section class="p-2">
                         <div class="leading-8">
-                            <div class="mt-6 orange text-3xl">Instructions</div>
+                            <div class="mt-6 orange text-3xl">@lang('challenges.common.instructions')</div>
                             <ul class="leading-7 ml-2 mt-0 checklist mt-2">
                                 <li>Log in to <a href="https://www.tynker.com/">Tynker</a> as a teacher. Create student accounts and share them with your students. Alternatively share a class code and have your students register with their school email address. If you are a student, you can join as a student, but you will be asked to provide your parent’s email address so that they can approve your account.</li>
                                 <li>Click <strong>Create a project – Blank Block Coding Project</strong> and give it a title. </li>
@@ -124,7 +124,7 @@
 
 
                     <section class="p-2">
-                        <div class="mt-6 orange text-3xl">Example</div>
+                        <div class="mt-6 orange text-3xl">@lang('challenges.common.example')</div>
                         <div class="mt-2">Check out <a target="_blank" href="https://www.tynker.com/play/dancing-robots/612249dd2d3eb65f2b0c6b1f-728057XjzbT,f5GeQFBM,dlKC2n,wk">this example</a> of dancing robots. Feel free to use it and remix it. <iframe width="660" height="408" src="//www.tynker.com/ide/embedded?p=612249dd2d3eb65f2b0c6b1f&controls=false&autostart=false" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </section>

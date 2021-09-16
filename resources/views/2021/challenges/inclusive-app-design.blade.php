@@ -33,7 +33,7 @@
 
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Target audience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
                             <li>Primary School students (6 to 12 years)</li>
                             <li>Lower Secondary School students (12 to 16 years)</li>
@@ -42,14 +42,14 @@
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Experience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
                         <ol class="list-disc ml-5">
                             <li>Beginner</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Duration</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
                             <li>60 minutes + optional extension activities</li>
                         </ol>
@@ -63,7 +63,7 @@
                 <section class="grid grid-cols-1 gap-6 md:grid-cols-2 mx-6 my-4">
                     <div>
 
-                        <div class="text-xl text-left text-blue-600">Purpose</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                         <ol class="list-disc ml-5">
 
                             <li>To brainstorm, plan, prototype, and share an app idea that everyone could access and understand.</li>
@@ -74,7 +74,7 @@
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Recommended materials</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
                             <li>
                                 Explore the Inclusive App Design Activity at the Apple Teacher Learning Center: <a href="apple.co/eucodeweek">apple.co/eucodeweek</a> Keynote on iPad or Mac is recommended, but not required.
@@ -91,7 +91,7 @@
 
                     <section class="bg-blue-100 p-2 mt-6">
                         <div class="orange text-3xl mt-2">
-                            Description
+                            @lang('challenges.common.description')
                         </div>
 
 
@@ -103,7 +103,7 @@
 
                     <section class="p-2">
                         <div class="leading-6">
-                            <div class="mt-6 mb-2 orange text-3xl">Instructions</div>
+                            <div class="mt-6 mb-2 orange text-3xl">@lang('challenges.common.instructions')</div>
                             You will find all instructions at this link: <a href="apple.co/eucodeweek">apple.co/eucodeweek</a><br/>
                             With this one-hour lesson plan, educators can guide students to:
                             <ul class="leading-7 ml-2 checklist mt-2">
