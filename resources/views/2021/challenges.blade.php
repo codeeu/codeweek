@@ -23,8 +23,8 @@
                 <div class="text-center m-12">
                     <div class="text-xl text-white w-full">
 
-                        <div class="text-5xl text-white">EU CODE WEEK CHALLENGES</div>
-                        <div class="text-3xl text-yellow-200">9-24 October 2021</div>
+                        <div class="text-5xl text-white">@lang('challenges.title')</div>
+                        <div class="text-3xl text-yellow-200">@lang('challenges.date')</div>
                     </div>
                 </div>
             </div>
@@ -41,12 +41,11 @@
             <div class="m-6">
 
                 <div class="leading-6">
-                    <p class="text-xl text-left text-blue-600">During EU Code Week, 9 - 24 October 2021, we invite
-                        you to do one or more of the EU Code Week challenges.</p>
+                    <p class="text-xl text-left text-blue-600">@lang('challenges.main.0')</p>
                 </div>
 
                 <div class="orange text-3xl">
-                    What are the EU Code Week 2021 Challenges?
+                    @lang('challenges.main.1')
                 </div>
 
                 <div class="leading-6 text-base text-left">
