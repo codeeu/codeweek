@@ -208,6 +208,10 @@ return [
             '14' => [
                 'Krišjānis Nesenbergs',
                 'Researcher and head of Cyber-physical systems lab @ EDI. Low level/embedded HW/SW, sensors, signal processing and machine learning for practical applications from wearables to self driving cars.'
+            ],
+            '15' => [
+                'Elina Razena',
+                'Founder of Learn IT coding school for children, EU CodeWeek ambassador in Latvia'
             ]
         ],
         'leaders' => [

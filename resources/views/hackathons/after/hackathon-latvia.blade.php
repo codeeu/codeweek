@@ -240,6 +240,14 @@
                 <div class="text-sm">@lang('hackathon-latvia.sections.mentors.14.1')</div>
             </div>
 
+            <div class="item">
+                <div class="flex justify-center">
+                    <img src="{{asset('/images/hackathons/profiles/latvia/4/elina-razena.png')}}">
+                </div>
+                <h2 class="text-center">@lang('hackathon-latvia.sections.mentors.15.0')</h2>
+                <div class="text-sm">@lang('hackathon-latvia.sections.mentors.15.1')</div>
+            </div>
+
 
 
         </div>
@@ -262,6 +270,8 @@
                 <h2 class="text-center">@lang('hackathon-latvia.sections.leaders.2.0')</h2>
                 <div class="text-sm">@lang('hackathon-latvia.sections.leaders.2.1')</div>
             </div>
+
+
 
 
         </div>

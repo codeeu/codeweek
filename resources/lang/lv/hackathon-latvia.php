@@ -212,6 +212,10 @@ return [
             '14' => [
                 'Krišjānis Nesenbergs',
                 'Pētnieks EDI kiberfizikālo sistēmu laboratorijā un tās vadītājs. Zema līmeņa/iegultās iekārtas un programmatūra, sensori, signālapstrāde un mašīnmācīšanās praktiskiem pielietojumiem no valkājamām ierīcēm līdz pašbraucošajiem auto.'
+            ],
+            '15' => [
+                'Elina Ražena',
+                'Learn IT bērnu programmēšanas skolas dibinātāja, ES Programmēšanas nedēļās vēstniece Latvijā'
             ]
         ],
         'leaders' => [
