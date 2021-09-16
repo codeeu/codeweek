@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Authentication Language Lines
@@ -16,13 +15,17 @@ return [
     'learn' => 'Learn',
     'teach' => 'Teach',
     'training' => 'Training',
-    'toolkits' => 'Presentations and Toolkits', 'why' => 'Why', 'home' => 'Home',
+    'challenges' => 'Challenges',
+    'toolkits' => 'Presentations and Toolkits',
+    'why' => 'Why',
+    'home' => 'Home',
     'events' => 'Activities',
     'ambassadors' => 'Ambassadors',
     'resources' => 'Resources',
     'schools' => 'Schools',
     'about' => 'About',
-    'blog' => 'Blog', 'news' => 'News',
+    'blog' => 'Blog',
+    'news' => 'News',
     'search' => 'Type & hit Enter...',
     'map' => 'Map',
     'add_event' => 'Add Activity',
@@ -43,5 +46,5 @@ return [
     'values' => 'Our values',
     'online_events' => 'Online Activities',
     'featured_activities' => 'Featured Activities',
-    'codeweek2020' => '2020 Edition',
+    'codeweek2020' => '2020 Edition'
 ];
