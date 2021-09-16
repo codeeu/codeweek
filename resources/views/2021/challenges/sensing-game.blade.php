@@ -41,7 +41,7 @@
 
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Target audience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
                             <li>Teachers</li>
                             <li>Students (10-14)</li>
@@ -49,21 +49,21 @@
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Experience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
                         <ol class="list-disc ml-5">
                             <li>Intermediate</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Duration</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
                             <li>1 hour</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Recommended materials</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
                             <li><a href="https://scratch.mit.edu/" target="_blank">Scratch</a></li>
                         </ol>
@@ -76,7 +76,7 @@
                 </section>
 
                 <div class="mx-6 my-4">
-                    <div class="text-xl text-left text-blue-600">Purpose</div>
+                    <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                     <ol class="list-disc ml-5">
                         <li>To code animated objects</li>
                         <li>To develop understanding of how to control digital animation with physical movement</li>
@@ -90,7 +90,7 @@
 
                     <section class="bg-blue-100 p-2 mt-6">
                         <div class="orange text-3xl mt-2">
-                            Description
+                            @lang('challenges.common.description')
                         </div>
 
 
@@ -103,7 +103,7 @@
 
                     <section class="p-2">
                         <div class="leading-8">
-                            <div class="mt-6 orange text-3xl">Instructions</div>
+                            <div class="mt-6 orange text-3xl">@lang('challenges.common.instructions')</div>
                             <ul class="leading-7 ml-2 mt-0 checklist mt-2">
                                 <li>Log in to <a href="https://scratch.mit.edu/">Scratch</a>.</li>
                                 <li>Click <strong>Add an extension</strong> and choose <strong>Video Sensing</strong>. It will detect how fast an object is moving. If the number is lower, it will be more sensitive to movement.
@@ -122,7 +122,7 @@
                     @include('2021.challenges._share')
 
                     <section class="p-2">
-                        <div class="mt-6 orange text-3xl">Example</div>
+                        <div class="mt-6 orange text-3xl">@lang('challenges.common.example')</div>
                         <div class="mt-2">
                             Play a video sensing game Collect all EU Code Week Bubbles. Feel free to remix <a href="https://scratch.mit.edu/projects/563163565" target="_blank">this project</a>.
                         </div>

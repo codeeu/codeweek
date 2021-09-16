@@ -33,21 +33,21 @@
 
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Target audience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
                             <li>Primary School students (6 to 12 years)</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Experience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
                         <ol class="list-disc ml-5">
                             <li>Beginner</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Duration</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
                             <li>1 hour</li>
                         </ol>
@@ -55,7 +55,7 @@
 
                     <div>
 
-                        <div class="text-xl text-left text-blue-600">Purpose</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                         <ol class="list-disc ml-5">
                             <li>To support students who are learning from home.</li>
                             <li>To give everyone a break from their screens.</li>
@@ -72,7 +72,7 @@
                 <div class="mx-6 my-4">
 
 
-                    <div class="text-xl text-left text-blue-600">Recommended materials</div>
+                    <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                     <ol class="list-disc ml-5">
                         <li>In addition to the activity booklet, some activities require or optionally benefit from additional materials.</li>
                         <li>Small counters (like dried beans) to use on the Network a Neighborhood map.</li>
@@ -88,7 +88,7 @@
 
                     <section class="bg-blue-100 p-2 mt-6">
                         <div class="orange text-3xl mt-2">
-                            Description
+                            @lang('challenges.common.description')
                         </div>
 
 
@@ -100,7 +100,7 @@
 
                     <section class="p-2">
                         <div class="leading-6">
-                            <div class="mt-6 orange text-3xl">Instructions</div>
+                            <div class="mt-6 orange text-3xl">@lang('challenges.common.instructions')</div>
                             <ul class="leading-7 ml-2 checklist mt-2">
                                 <li>You will find the booklet to all activities in English at this <a href="https://drive.google.com/file/d/1F2k68YD4q899KFSs1RX3zNp9jvJ0AC7i/view?usp=sharing">link</a>, as well as Lesson Plan in English at this <a href="https://drive.google.com/file/d/1U8xf25xtWQJk8T-qpfkDMqcMUka_osat/view?usp=sharing">link</a>.</li>
                                 <li>The activities in this lesson can be completed individually and in any order.</li>
@@ -112,7 +112,7 @@
                     @include('2021.challenges._share')
 
                     <section class="p-2">
-                        <div class="orange text-3xl">Example</div>
+                        <div class="orange text-3xl">@lang('challenges.common.example')</div>
 
                             <div class="mt-2">
 

@@ -33,21 +33,21 @@
 
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Target audience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
                             <li>For students aged from 6 to 13</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Experience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
                         <ol class="list-disc ml-5">
                             <li>Open for all</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Duration</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
                             <li>5 to 10 hours</li>
                         </ol>
@@ -62,7 +62,7 @@
 
                 <section class="grid grid-cols-1 gap-6 md:grid-cols-2 mx-6 my-4">
                     <div>
-                        <div class="text-xl text-left text-blue-600">Recommended materials</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
                             <li>Coding tool: <a href="https://ide.mblock.cc/">mBlock 5</a> or download the <a href="https://mblock.makeblock.com/en-us/download/">PC version</a>. mBlock is a programming language based off of Scratch</li>
 
@@ -77,7 +77,7 @@
 
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Purpose</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                         <ol class="list-disc ml-5">
                             <li>To research on issue ‘family care’ that we face on a daily basis;</li>
                             <li>To see problems as opportunities and generate creative solutions;</li>
@@ -98,7 +98,7 @@
 
                     <section class="bg-blue-100 p-2 mt-6">
                         <div class="orange text-3xl mt-2">
-                            Description
+                            @lang('challenges.common.description')
                         </div>
 
 
@@ -113,7 +113,7 @@
 
                     <section class="p-2">
                         <div class="leading-6">
-                            <div class="mt-6 orange text-3xl">Instructions</div>
+                            <div class="mt-6 orange text-3xl">@lang('challenges.common.instructions')</div>
                             <ul class="leading-7 ml-2 checklist mt-2">
                                 <li>Brainstorm and Research on the theme of family care</li>
                                 <li>List of any problems</li>
@@ -129,7 +129,7 @@
                     @include('2021.challenges._share')
 
                     <section class="p-2">
-                        <div class="orange text-3xl">Example</div>
+                        <div class="orange text-3xl">@lang('challenges.common.example')</div>
                         <div class="mt-2">
                             Please find some examples from here: <a href="https://www.makex.cc/en/blog/238431">https://www.makex.cc/en/blog/238431</a> and <a href="https://www.makex.cc/en/blog/235153">https://www.makex.cc/en/blog/235153</a>
 
