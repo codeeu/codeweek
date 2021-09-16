@@ -20,6 +20,7 @@ class EventResource extends JsonResource {
             'geoposition' => $this->geoposition,
             'location' => $this->location,
             'activity_type' => $this->activity_type,
+            'organizer' => $this->organizer,
             'organizer_type' => $this->organizer_type,
             'event_url' => $this->event_url,
             'contact_person' => $this->contact_person,
