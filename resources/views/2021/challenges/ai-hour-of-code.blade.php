@@ -25,7 +25,7 @@
                                                               href="{{route('challenges')}}">@lang('challenges.title')</a>
                     </div>
                     <div class="text-5xl mt-2"
-                         style="color: #1756a0">@lang('challenges.content.ai-hour-of-code.title')</div>
+                         style="color: #1756a0">@lang('challenges-content.ai-hour-of-code.title')</div>
                 </div>
             </div>
 
@@ -39,7 +39,7 @@
         <section class="codeweek-content-wrapper">
             <div class="m-6">
 
-                @include('2021.challenges._author', ['author' => __('challenges.content.ai-hour-of-code.author')])
+                @include('2021.challenges._author', ['author' => __('challenges-content.ai-hour-of-code.author')])
 
                 <section class="grid grid-cols-1 gap-6 md:grid-cols-4 mx-6 my-4">
 
@@ -68,9 +68,9 @@
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
-                            <li>@lang('challenges.content.ai-hour-of-code.materials.0')</li>
-                            <li>@lang('challenges.content.ai-hour-of-code.materials.1') <a
-                                        href="https://education.minecraft.net/en-us/lessons/minecraft-hour-of-code">@lang('challenges.content.ai-hour-of-code.materials.2')</a>
+                            <li>@lang('challenges-content.ai-hour-of-code.materials.0')</li>
+                            <li>@lang('challenges-content.ai-hour-of-code.materials.1') <a
+                                        href="https://education.minecraft.net/en-us/lessons/minecraft-hour-of-code">@lang('challenges-content.ai-hour-of-code.materials.2')</a>
                             </li>
                         </ol>
 
@@ -84,9 +84,9 @@
                     <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                     <ol class="list-disc ml-5">
 
-                        <li>@lang('challenges.content.ai-hour-of-code.purposes.0').</li>
-                        <li>@lang('challenges.content.ai-hour-of-code.purposes.1').</li>
-                        <li>@lang('challenges.content.ai-hour-of-code.purposes.2').</li>
+                        <li>@lang('challenges-content.ai-hour-of-code.purposes.0').</li>
+                        <li>@lang('challenges-content.ai-hour-of-code.purposes.1').</li>
+                        <li>@lang('challenges-content.ai-hour-of-code.purposes.2').</li>
                     </ol>
 
                 </div>
@@ -101,7 +101,7 @@
 
 
                         <div class="mt-2">
-                            @lang('challenges.content.ai-hour-of-code.description')<br/>
+                            @lang('challenges-content.ai-hour-of-code.description')<br/>
                         </div>
                     </section>
 
@@ -113,7 +113,7 @@
 
 
                              <a
-                                    href="https://meedownloads.blob.core.windows.net/learning-experience/HOC%202019/EducatorGuide_en_US.pdf">@lang('challenges.content.ai-hour-of-code.instructions')</a>
+                                    href="https://meedownloads.blob.core.windows.net/learning-experience/HOC%202019/EducatorGuide_en_US.pdf">@lang('challenges-content.ai-hour-of-code.instructions')</a>
 
 
                         </div>

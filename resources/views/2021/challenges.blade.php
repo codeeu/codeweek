@@ -148,8 +148,8 @@
                                         <li>@lang('challenges.share.7')</li>
                                         <li>@lang('challenges.share.8')</li>
                                     </ol>
-                                    </li>
                                 </ul>
+                            </ul>
                         </div>
 
                         <div class="leading-6 text-base text-left mt-2">
