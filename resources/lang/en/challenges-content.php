@@ -406,14 +406,27 @@ return [
         'more' => ['']
     ],
     'inclusive-app-design' => [
-        'title' => '',
-        'author' => '',
-        'purposes' => [''],
-        'description' => '',
-        'instructions' => [''],
-        'example' => '',
-        'materials' => [''],
-        'more' => ['']
+        'title' => 'Inclusive App Design',
+        'author' => 'Apple Education',
+        'duration' => '60 minutes + optional extension activities',
+        'purposes' => [
+            'To brainstorm, plan, prototype, and share an app idea that everyone could access and understand.'
+        ],
+        'description' =>
+            'Great apps start with great ideas. In this activity, students will come up with an app idea on a topic they care about, then discover how to design apps with inclusion and accessibility in mind.',
+        'instructions' => [
+            'You will find all instructions at this link',
+            'With this one-hour lesson plan, educators can guide students to',
+            'Learn about inclusive app design',
+            'Brainstorm topics they care about to find an app idea',
+            'Outline their app ideas and plan user activities',
+            'Prototype one part of their app in Keynote',
+            'Share demos of their prototypes and describe how they support users with diverse backgrounds and abilities'
+        ],
+        'materials' => [
+            'Explore the Inclusive App Design Activity at the Apple Teacher Learning Center',
+            'Keynote on iPad or Mac is recommended, but not required.'
+        ]
     ],
     'silly-eyes' => [
         'title' => '',
