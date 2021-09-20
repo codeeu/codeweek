@@ -9,7 +9,7 @@
         <section class="flex flex-row justify-between" style="background-color: #6DB4B4">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
-                    <div class="text-xl text-white w-full"><a class="text-white" href="{{route('challenges')}}">EU CODE WEEK CHALLENGES</a></div>
+                    <div class="text-xl text-white w-full"><a class="text-white" href="{{route('challenges')}}">@lang('challenges.title')</a></div>
                     <div class="text-5xl mt-2" style="color: #fecc54">Make a musical composition</div>
                 </div>
             </div>

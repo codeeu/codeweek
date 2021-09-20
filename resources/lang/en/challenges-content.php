@@ -57,14 +57,33 @@ return [
     ],
 
     'dance' => [
-        'title' => '',
-        'author' => '',
-        'purposes' => [''],
-        'description' => '',
-        'instructions' => [''],
-        'example' => '',
-        'materials' => [''],
-        'more' => ['']
+        'title' => 'Create a dance',
+        'author' => 'EU Code Week Team',
+        'purposes' => [
+            'To learn basic coding concepts',
+            'To learn how to animate characters'
+        ],
+        'description' =>
+            'In this challenge you will create a set of characters who will dance together. You will use a built-in media library to select characters and music clips, or you can create your own. You will animate the characters to dance and talk to each other.',
+        'instructions' => [
+            'Log in to',
+            'as a teacher. Create student accounts and share them with your students. Alternatively share a class code and have your students register with their school email address. If you are a student, you can join as a student, but you will be asked to provide your parent’s email address so that they can approve your account.',
+            'Click',
+            'and give it a title',
+            'Go to',
+            'to add a background by clicking on the gear icon. Choose a background from the Media Library, upload your own image or you can even take a picture and upload it. Choose an audio clip and add it to the stage:',
+            'Click the',
+            'button to add characters or objects that you will animate so that they can move, talk and interact with each other. Add two or three characters of your choice. You can draw your own actors or modify the existing ones. Add different costumes to your character by clicking the pencil icon.',
+            'Click on each actor and animate it by adding the following blocks',
+            'Add a',
+            'say block',
+            'and have your actors talk to each other. Change the shape of the speech bubbles and the font and the size of your text'
+        ],
+        'example' => [
+            'Check out',
+            'this example',
+            'of dancing robots. Feel free to use it and remix it.'
+        ]
     ],
 
     'compose-song' => [
