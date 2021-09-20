@@ -193,18 +193,34 @@ return [
             'To explore sequences and animations and how they work',
             'To test and debug simple code',
             'To iterate a design by making the animations faster or slower'
-        ],
-        'more' => ['']
+        ]
     ],
     'computational-thinking-and-computational-fluency' => [
-        'title' => '',
-        'author' => '',
-        'purposes' => [''],
-        'description' => '',
-        'instructions' => [''],
-        'example' => '',
-        'materials' => [''],
-        'more' => ['']
+        'title' =>
+            'Computational Thinking and Computational Fluency with ScratchJr',
+        'author' => 'Stamatis Papadakis – EU Code Week Ambassador Greece',
+        'purposes' => [
+            'To get familiar with new commands and interface.',
+            'To create simple programs with simple cause-and-effect commands.',
+            'To perform simple debugging through trial and error.'
+        ],
+        'description' =>
+            'In this challenge children will integrate CT concepts into their projects by using the ScratchJr app to make their stories more engaging, exciting, and emotional.',
+        'instructions' => [
+            'ScratchJr does not require children to be literate. All instructions and menu options are identifiable through symbols and colours. The challenge can be completed within the classroom, the lab or even in an open space as no internet is required.',
+            'Children use city as background and use coding blocks to make a car drive across the city.'
+        ],
+        'example' => [
+            'Children can use sound and motion blocks and start again blocks to make characters dance.',
+            'Children pick a background and a character and use a motion block to make a car drive across the city Children can use the speed block to speed up or slow down a character.'
+        ],
+        'materials' => [
+            'The free app',
+            'works on various operating systems and types of smart devices',
+            'Also, the',
+            'website offers plenty of free educational material'
+        ],
+        'duration' => '90 minutes'
     ],
     'ai-hour-of-code' => [
         'title' => 'AI hour of Code',
