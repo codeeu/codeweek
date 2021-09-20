@@ -381,13 +381,28 @@ return [
         ]
     ],
     'haunted-house' => [
-        'title' => '',
-        'author' => '',
-        'purposes' => [''],
-        'description' => '',
-        'instructions' => [''],
-        'example' => '',
-        'materials' => [''],
+        'title' => 'Haunted House in Hedy',
+        'author' =>
+            'Felienne Hermans, Leiden University - Ramon Moorlag, I&I - CodeWeek NL',
+        'audience' => 'Teachers and educators',
+        'duration' => '1 hour or 2 hours depending on prior knowledge',
+        'purposes' => [
+            'To make an interactive Haunted House story.',
+            'To learn programming with Hedy.'
+        ],
+        'description' =>
+            'With Hedy, you will create a Haunted House story with interactive elements. Every time the code is run a new story will be created. The story can also be read aloud by your computer and shared online.',
+        'instructions' => [
+            'Start with opening a browser and go to hedycode.com.',
+            'Follow the instructions for levels 1-4. Use the tabs ‘Level’ and ‘Haunted house.’',
+            'With the help of these levels, we will write an interactive haunted house story.',
+            'Teachers, a lesson plan Hedy can be found',
+            'here',
+            'You can find a recording of Felienne Hermans presenting Hedy at',
+            'this link'
+        ],
+        'example' => 'Haunted house example at level',
+        'materials' => ['Hedy on', 'level 1 to 4'],
         'more' => ['']
     ],
     'inclusive-app-design' => [
