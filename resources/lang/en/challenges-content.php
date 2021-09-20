@@ -352,13 +352,41 @@ return [
         'more' => ['']
     ],
     'virtual-flower-field' => [
-        'title' => '',
-        'author' => '',
-        'purposes' => [''],
-        'description' => '',
-        'instructions' => [''],
+        'title' => 'Grow your virtual flower field',
+        'author' =>
+            'Jadga Huegle - Meet and Code coach and part of the SAP Snap! team',
+        'duration' => '30-60 minutes',
+        'purposes' => [
+            'To get to know programming with a simple yet expressive project.',
+            'To learn that coding can be artistic and lead to beautiful results.',
+            'To make fall brighter with colorful flowers and the EU Code Week.',
+            'To show the diversity of flowers on Earth.',
+            'To contribute to Sustainable Development Goals (SDGs), especially SDG13 -Climate Change by creating coding events that improve climate change education through raising awareness on this topic.'
+        ],
+        'description' =>
+            'CS First Unplugged is a set of activities that introduce students to CS concepts without a computer. We’ve designed this lesson to demonstrate that Computer Science is a lot more than just code.',
+        'instructions' => [
+            'If you need inspiration on how to get started with the challenge, check out',
+            'this video',
+            'or use',
+            'this document',
+            'to follow along',
+            'The challenge can be completed by programming a virtual flower field in Snap! (or Scratch) and posting a screenshot or photo of the result online.',
+            'The flower field should contain different types of flowers with different numbers of petals. Ideally, the flowers are programmed, which means that they are constructed by stamping and turning (or drawing and turning) petals repeatedly.',
+            'Post an image of your virtual flower garden with #MeetandCode.',
+            '',
+            '',
+            '',
+            '',
+            '',
+            '',
+            ''
+        ],
         'example' => '',
-        'materials' => [''],
+        'materials' => [
+            'We recommend using',
+            'however, the project also works in'
+        ],
         'more' => ['']
     ],
     'haunted-house' => [

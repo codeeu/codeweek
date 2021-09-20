@@ -4,14 +4,19 @@
 
 @section('content')
 
+    @php
+        $slug = 'virtual-flower-field'
+    @endphp
+
     <section id="codeweek-schools-page" class="codeweek-page">
 
 
         <section class="flex flex-row justify-between" style="background-color: #EDD62F">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
-                    <div class="text-xl text-white w-full"><a class="text-black" href="{{route('challenges')}}">@lang('challenges.title')</a></div>
-                    <div class="text-5xl mt-2" style="color: #4a990d">Grow your virtual flower field</div>
+                    <div class="text-xl text-white w-full"><a class="text-black"                           href="{{route('challenges')}}">@lang('challenges.title')</a>
+                    </div>
+                    <div class="text-5xl mt-2" style="color: #4a990d">@lang("challenges-content.$slug.title")</div>
                 </div>
             </div>
 
@@ -26,7 +31,7 @@
         <section class="codeweek-content-wrapper">
             <div class="m-6">
 
-                @include('2021.challenges._author', ['author' => 'Jadga Huegle - Meet and Code coach and part of the SAP Snap! team'])
+                @include('2021.challenges._author', ['author' => __("challenges-content.$slug.author")])
 
                 <section class="grid grid-cols-1 gap-6 md:grid-cols-4 mx-6 my-4">
 
@@ -34,21 +39,21 @@
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
-                            <li>Primary School students (6 to 12 years)</li>
+                            <li>@lang('challenges.common.students') (6-12)</li>
                         </ol>
                     </div>
 
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
                         <ol class="list-disc ml-5">
-                            <li>Beginner</li>
+                            <li>@lang('challenges.common.beginner')</li>
                         </ol>
                     </div>
 
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
-                            <li>30-60 minutes</li>
+                            <li>@lang("challenges-content.$slug.duration")</li>
                         </ol>
                     </div>
 
@@ -56,15 +61,12 @@
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
                             <li>
-                                We recommend using <a href="https://snap.berkeley.edu">Snap!</a>, however, the project also works in <a href="https://scratch.mit.edu">Scratch</a>.
+                                @lang("challenges-content.$slug.materials.0") <a     href="https://snap.berkeley.edu">Snap!</a>, @lang("challenges-content.$slug.materials.1") <a href="https://scratch.mit.edu">Scratch</a>.
                             </li>
                         </ol>
 
 
-
                     </div>
-
-
 
 
                 </section>
@@ -74,11 +76,11 @@
                     <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                     <ol class="list-disc ml-5">
 
-                        <li>To get to know programming with a simple yet expressive project.</li>
-                        <li>To learn that coding can be artistic and lead to beautiful results.</li>
-                        <li>To make fall brighter with colorful flowers and the EU Code Week.</li>
-                        <li>To show the diversity of flowers on Earth.</li>
-                        <li>To contribute to Sustainable Development Goals (SDGs), especially SDG13 -Climate Change by creating coding events that improve climate change education through raising awareness on this topic.</li>
+                        <li>@lang("challenges-content.$slug.purposes.0")</li>
+                        <li>@lang("challenges-content.$slug.purposes.1")</li>
+                        <li>@lang("challenges-content.$slug.purposes.2")</li>
+                        <li>@lang("challenges-content.$slug.purposes.3")</li>
+                        <li>@lang("challenges-content.$slug.purposes.4")</li>
 
                     </ol>
 
@@ -95,7 +97,7 @@
 
 
                         <div class="mt-2">
-                            CS First Unplugged is a set of activities that introduce students to CS concepts without a computer. We’ve designed this lesson to demonstrate that Computer Science is a lot more than just code.
+                            @lang("challenges-content.$slug.description")
                         </div>
                     </section>
 
@@ -104,10 +106,13 @@
                         <div class="leading-6">
                             <div class="mt-6 orange text-3xl">@lang('challenges.common.instructions')</div>
                             <ul class="leading-7 ml-2 checklist mt-2">
-                                <li>If you need inspiration on how to get started with the challenge, check out this <a href="https://youtu.be/VcPc4VVDp2c">video</a> or use this <a href="https://tinyurl.com/virtualflowerfield">document</a> to follow along.</li>
-                                <li>The challenge can be completed by programming a virtual flower field in Snap! (or Scratch) and posting a screenshot or photo of the result online.</li>
-                                <li>The flower field should contain different types of flowers with different numbers of petals. Ideally, the flowers are programmed, which means that they are constructed by stamping and turning (or drawing and turning) petals repeatedly.</li>
-                                <li>Post an image of your virtual flower garden with #MeetandCode.</li>
+                                <li> @lang("challenges-content.$slug.instructions.0") <a href="https://youtu.be/VcPc4VVDp2c">@lang("challenges-content.$slug.instructions.1")</a> @lang("challenges-content.$slug.instructions.2") <a href="https://tinyurl.com/virtualflowerfield">@lang("challenges-content.$slug.instructions.3")</a> @lang("challenges-content.$slug.instructions.4").
+                                </li>
+                                <li>@lang("challenges-content.$slug.instructions.5")
+                                </li>
+                                <li>@lang("challenges-content.$slug.instructions.6")
+                                </li>
+                                <li>@lang("challenges-content.$slug.instructions.7")</li>
 
                             </ul>
                         </div>
@@ -118,12 +123,12 @@
                     <section class="p-2">
                         <div class="orange text-3xl">@lang('challenges.common.example')</div>
 
-                            <div class="mt-2 w-1/2">
+                        <div class="mt-2 w-1/2">
 
-                                    <img src="{{asset('img/2021/challenges/virtual-flower-field.png')}}"/>
+                            <img src="{{asset('img/2021/challenges/virtual-flower-field.png')}}"/>
 
 
-                            </div>
+                        </div>
 
 
                     </section>
