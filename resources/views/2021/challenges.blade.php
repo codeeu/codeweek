@@ -65,7 +65,7 @@
                         @include('2021._thumbnail', ['slug' => 'create-a-simulation', 'author' => 'Code.org'])
                         @include('2021._thumbnail', ['slug' => 'create-your-own-masterpiece', 'author' => 'Code.org'])
                         @include('2021._thumbnail', ['slug' => 'cs-first-unplugged-activities', 'author' => 'Google'])
-                        @include('2021._thumbnail', ['slug' => 'family-care'])
+                        @include('2021._thumbnail', ['slug' => 'family-care', 'author'=>'Allen Yan / MakeX'])
                         @include('2021._thumbnail', ['slug' => 'virtual-flower-field'])
                         @include('2021._thumbnail', ['slug' => 'haunted-house'])
                         @include('2021._thumbnail', ['slug' => 'inclusive-app-design'])

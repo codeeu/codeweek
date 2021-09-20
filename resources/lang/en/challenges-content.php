@@ -288,7 +288,6 @@ return [
     ],
     'cs-first-unplugged-activities' => [
         'title' => 'CS First Unplugged activities',
-        'author' => '',
         'purposes' => [
             'To support students who are learning from home',
             'To give everyone a break from their screens'
@@ -302,24 +301,54 @@ return [
             'The activities in this lesson can be completed individually and in any order',
             'Teacher can take a picture of the learning process and share it on Instagram using #CodeWeekChallengeGoogle'
         ],
-        'example' => '',
         'materials' => [
             'In addition to the activity booklet, some activities require or optionally benefit from additional materials.',
             'Small counters (like dried beans) to use on the Network a Neighborhood map.',
             'Scissors to cut out the Send a Secret Message cipher wheel.',
             'Cardboard and glue to provide additional stiffness to the Send a Secret Message cipher wheel.',
             'A thumbtack, toothpick, or straightened paper clip to connect the Send a Secret Message cipher wheel.'
-        ],
-        'more' => ['']
+        ]
     ],
     'family-care' => [
-        'title' => '',
+        'title' => 'Family Care',
+        'experience' => 'Open for all',
+        'duration' => '5 to 10 hours',
         'author' => '',
-        'purposes' => [''],
-        'description' => '',
-        'instructions' => [''],
-        'example' => '',
-        'materials' => [''],
+        'purposes' => [
+            'To research on issue ‘family care’ that we face on a daily basis;',
+            'To see problems as opportunities and generate creative solutions;',
+            'To use code to innovatively realize your solutions;',
+            'To design posters and present your solutions to others;',
+            'To use social media to create impacts of your projects.'
+        ],
+        'description' => [
+            'What comes to you when we talk about home? A nice house? A big dinner prepared by parents? A secret space for yourself? A warm home refuels our bodies and spirit like a gas station. Amid the hustle and bustle of modern life, parents are always busy for work. When you hang out with friends, you cannot leave your kitties behind. But how to look after your company when you are apart? The theme of the challenge is',
+            'Family Care',
+            'Based on this theme, students are encouraged to develop an idea to pass love and care through coding and hardware. Here are some questions for you to think about',
+            'How many family members are there in your home? Who are they? Have you met any problems when staying with them? What kinds of care do they need?',
+            'Do you know anyone who lacks family care more than others in your community? How can you help them?'
+        ],
+        'instructions' => [
+            'Brainstorm and Research on the theme of family care',
+            'List of any problems',
+            'Generate possible solutions',
+            'Select a solution',
+            'Program and build up the structure',
+            'Design a poster to layout your project',
+            'Present it to your teachers and family members'
+        ],
+        'example' => ['Please find some examples from here', 'and'],
+        'materials' => [
+            'Coding tool:',
+            'or download the',
+            'PC version',
+            'mBlock is a programming language based off of Scratch',
+            'This challenge is also adapted from MakeX Global Spark Competition, a project-based creative design program for young people aged 6 to 13.',
+            'The participating team will need to focus on the specific theme and devise a solution through software programming and hardware construction.',
+            'Students are encouraged to complete the challenge in Codeweek and take it to the international level to communicate with other students and win prices.',
+            'For more information, please check:',
+            'or contact us at'
+        ],
         'more' => ['']
     ],
     'virtual-flower-field' => [
