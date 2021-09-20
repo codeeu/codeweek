@@ -133,14 +133,39 @@ return [
         'more' => ['']
     ],
     'sensing-game' => [
-        'title' => '',
-        'author' => '',
-        'purposes' => [''],
-        'description' => '',
-        'instructions' => [''],
-        'example' => '',
-        'materials' => [''],
-        'more' => ['']
+        'title' => 'Make a video sensing game',
+        'author' => 'EU Code Week Team',
+        'purposes' => [
+            'To code animated objects',
+            'To develop understanding of how to control digital animation with physical movement',
+            'To compose a song by mixing sound clips'
+        ],
+        'description' =>
+            'In this challenge you will create a simple game that uses a video camera as a sensor to detect motion, which means that you will be able to control your animation with physical movement. In this game, the task is to collect as many EU Code Week bubbles as possible in 30 seconds. Instead of collecting bubbles, you can create a game in which you chase a character or pop balloons with your hands.',
+        'instructions' => [
+            'Log in to',
+            'Click',
+            'Add an extension',
+            'and choose',
+            'Video Sensing',
+            'It will detect how fast an object is moving. If the number is lower, it will be more sensitive to movement.',
+            'Add a sprite. Choose a sound and add it to your sprite. If you want, you can add',
+            'Create a clone',
+            'to duplicate your sprite.',
+            'Create two variables: one for',
+            'Score',
+            'and the other for',
+            'Timer',
+            'and add them to the sprite. Set the Timer to 30 and add',
+            'Change Timer by -1',
+            'Create a new sprite',
+            'Game Over',
+            'to finish the game. You can also create a sprite with the title of your game, e.g., Collect all E U Code Week bubbles.'
+        ],
+        'example' => [
+            'Play a video sensing game Collect all EU Code Week Bubbles. Feel free to remix',
+            'this project'
+        ]
     ],
 
     'calming-leds' => [
