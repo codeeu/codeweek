@@ -255,17 +255,24 @@ return [
         ],
         'example' =>
             'Featured student creations can be found on the following page',
-        'materials' => 'The Code.org tutorial',
-        'more' => ['']
+        'materials' => 'The Code.org tutorial'
     ],
     'create-a-simulation' => [
-        'title' => '',
-        'author' => '',
-        'purposes' => [''],
-        'description' => '',
-        'instructions' => [''],
-        'example' => '',
-        'materials' => [''],
+        'title' => 'Create a simulation!',
+        'purposes' => [
+            'To learn about simulations while introducing the following variables: creating a crowd, recovery rates, wearing masks, and vaccines.',
+            'To activate prior knowledge about virus outbreaks in the real world that will apply to a fictitious scenario.'
+        ],
+        'description' =>
+            'Write code to create and run your own simulation of the virus outbreak at Monster Town. Learn to code and make predictions about what will happen to the neighbors of Monster Town.',
+        'instructions' => [
+            'Instructions are shown as videos within',
+            'the tutorial',
+            'and also written at the top of each level'
+        ],
+        'example' =>
+            'When you are finished, you can share your simulation with others. Share your message about what you think we can do to help keep others healthy when a virus comes to town.',
+        'materials' => 'The Code.org tutorial',
         'more' => ['']
     ],
     'create-your-own-masterpiece' => [

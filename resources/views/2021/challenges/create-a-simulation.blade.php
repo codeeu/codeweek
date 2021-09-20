@@ -6,13 +6,15 @@
 
     <section id="codeweek-schools-page" class="codeweek-page">
 
+        @php
+            $slug = 'create-a-simulation'
+        @endphp
 
         <section class="flex flex-row justify-between" style="background-color: #C8E54B">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
-                    <div class="text-xl text-white w-full"><a class="text-white" href="{{route('challenges')}}">EU CODE
-                            WEEK CHALLENGES</a></div>
-                    <div class="text-5xl mt-2" style="color: #1a202c">Create a simulation!</div>
+                    <div class="text-xl text-white w-full"><a class="text-white" href="{{route('challenges')}}">@lang('challenges.title')</a></div>
+                    <div class="text-5xl mt-2" style="color: #1a202c">@lang("challenges-content.$slug.title")</div>
                 </div>
             </div>
 
@@ -35,28 +37,28 @@
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
-                            <li>Primary School students (6 to 12 years)</li>
+                            <li>@lang('challenges.common.students') (6-12)</li>
                         </ol>
                     </div>
 
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
                         <ol class="list-disc ml-5">
-                            <li>Beginner</li>
+                            <li>@lang('challenges.common.beginner')</li>
                         </ol>
                     </div>
 
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
-                            <li>1 hour</li>
+                            <li>@lang('challenges.common.1-hour')</li>
                         </ol>
                     </div>
 
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
-                            <li><a href="https://code.org/outbreak">The Code.org tutorial</a></li>
+                            <li><a href="https://code.org/dance">@lang("challenges-content.$slug.materials")</a></li>
                         </ol>
 
 
@@ -70,8 +72,10 @@
                 <div class="mx-6 my-4">
                     <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                     <ol class="list-disc ml-5">
-                        <li>To learn about simulations while introducing the following variables: creating a crowd, recovery rates, wearing masks, and vaccines.</li>
-                        <li>To activate prior knowledge about virus outbreaks in the real world that will apply to a fictitious scenario.</li>
+                        <li>@lang("challenges-content.$slug.purposes.0")</li>
+                        <li>@lang("challenges-content.$slug.purposes.1")</li>
+
+
                     </ol>
 
                 </div>
@@ -86,7 +90,7 @@
 
 
                         <div class="mt-2">
-                            Write code to create and run your own simulation of the virus outbreak at Monster Town. Learn to code and make predictions about what will happen to the neighbors of Monster Town.
+                            @lang("challenges-content.$slug.description")
                         </div>
                     </section>
 
@@ -95,8 +99,8 @@
                         <div class="leading-6">
                             <div class="mt-6 orange text-3xl">@lang('challenges.common.instructions')</div>
                             <ul class="leading-7 ml-2 checklist mt-2">
-                                <li>Instructions are shown as videos within <a href="https://code.org/outbreak">the
-                                        tutorial</a> and also written at the top of each level.
+
+                                <li>@lang("challenges-content.$slug.instructions.0") <a href="https://code.org/outbreak">@lang("challenges-content.$slug.instructions.1")</a> @lang("challenges-content.$slug.instructions.2").
                                 </li>
                             </ul>
                         </div>
@@ -106,7 +110,7 @@
 
                     <section class="p-2">
                         <div class="orange text-3xl">@lang('challenges.common.example')</div>
-                        <div class="mt-2">When you're finished, you can share your simulation with others. Share your message about what you think we can do to help keep others healthy when a virus comes to town.
+                        <div class="mt-2">@lang("challenges-content.$slug.example")
                             <div class="mt-2">
                                 <a href="https://code.org/outbreak">
                                     <img src="{{asset('img/2021/challenges/create-a-simulation-1.gif')}}"/>
