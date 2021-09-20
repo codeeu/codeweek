@@ -276,23 +276,40 @@ return [
         'more' => ['']
     ],
     'create-your-own-masterpiece' => [
-        'title' => '',
-        'author' => '',
-        'purposes' => [''],
-        'description' => '',
-        'instructions' => [''],
-        'example' => '',
-        'materials' => [''],
-        'more' => ['']
+        'title' => 'Create your own masterpiece!',
+        'audience' => 'Acceptable for all ages',
+        'purpose' =>
+            'To introduce computer science concepts in a visual way and inspire creativity',
+        'description' =>
+            'Create your own masterpiece with artist! Use code blocks to make your artist create a unique work of art.',
+        'instructions' => 'Instructions are listed at the top of each level',
+        'example' => 'Artist examples can be found on this page under drawing',
+        'materials' => ['The first level of the tutorial can be found', 'HERE']
     ],
     'cs-first-unplugged-activities' => [
-        'title' => '',
+        'title' => 'CS First Unplugged activities',
         'author' => '',
-        'purposes' => [''],
-        'description' => '',
-        'instructions' => [''],
+        'purposes' => [
+            'To support students who are learning from home',
+            'To give everyone a break from their screens'
+        ],
+        'description' =>
+            'CS First Unplugged is a set of activities that introduce students to CS concepts without a computer. We’ve designed this lesson to demonstrate that Computer Science is a lot more than just code.',
+        'instructions' => [
+            'You will find the booklet to all activities in English at this',
+            'link',
+            'as well as Lesson Plan in English at this',
+            'The activities in this lesson can be completed individually and in any order',
+            'Teacher can take a picture of the learning process and share it on Instagram using #CodeWeekChallengeGoogle'
+        ],
         'example' => '',
-        'materials' => [''],
+        'materials' => [
+            'In addition to the activity booklet, some activities require or optionally benefit from additional materials.',
+            'Small counters (like dried beans) to use on the Network a Neighborhood map.',
+            'Scissors to cut out the Send a Secret Message cipher wheel.',
+            'Cardboard and glue to provide additional stiffness to the Send a Secret Message cipher wheel.',
+            'A thumbtack, toothpick, or straightened paper clip to connect the Send a Secret Message cipher wheel.'
+        ],
         'more' => ['']
     ],
     'family-care' => [
