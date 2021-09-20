@@ -8,7 +8,7 @@
 
         {{--        <section class="codeweek-banner about">--}}
         {{--            <div class="text">--}}
-        {{--                <div class="text-5xl text-white"><a class="text-white underline" href="{{route('challenges')}}">EU CODE WEEK CHALLENGES</a></div>--}}
+        {{--                <div class="text-5xl text-white"><a class="text-white underline" href="{{route('challenges')}}">@lang('challenges.title')</a></div>--}}
         {{--                <h2>Unplug and code: Create a paper circuit</h2>--}}
         {{--            </div>--}}
         {{--            <div class="image">--}}

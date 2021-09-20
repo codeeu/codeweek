@@ -8,7 +8,7 @@
 
 {{--        <section class="codeweek-banner about">--}}
 {{--            <div class="text">--}}
-{{--                <div class="text-5xl text-white"><a class="text-white underline" href="{{route('challenges')}}">EU CODE WEEK CHALLENGES</a></div>--}}
+{{--                <div class="text-5xl text-white"><a class="text-white underline" href="{{route('challenges')}}">@lang('challenges.title')</a></div>--}}
 {{--                <h2>Make a video sensing game</h2>--}}
 {{--            </div>--}}
 {{--            <div class="image">--}}
@@ -21,7 +21,7 @@
         <section class="flex flex-row justify-between" style="background-color: #8E90B5">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
-                    <div class="text-xl text-white w-full"><a class="text-white" href="{{route('challenges')}}">EU CODE WEEK CHALLENGES</a></div>
+                    <div class="text-xl text-white w-full"><a class="text-white" href="{{route('challenges')}}">@lang('challenges.title')</a></div>
                     <div class="text-5xl mt-2" style="color: #FFCC54">Make a video sensing game</div>
                 </div>
             </div>

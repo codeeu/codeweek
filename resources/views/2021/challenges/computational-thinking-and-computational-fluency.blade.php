@@ -10,7 +10,7 @@
         <section class="flex flex-row justify-between" style="background-color: #E3E3E3">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
-                    <div class="text-xl text-white w-full"><a href="{{route('challenges')}}">EU CODE WEEK CHALLENGES</a></div>
+                    <div class="text-xl text-white w-full"><a href="{{route('challenges')}}">@lang('challenges.title')</a></div>
                     <div class="text-5xl mt-2" style="color: #6970a9">Computational Thinking and Computational Fluency with ScratchJr.</div>
                 </div>
             </div>
