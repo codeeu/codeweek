@@ -240,13 +240,22 @@ return [
         ]
     ],
     'create-a-dance' => [
-        'title' => '',
-        'author' => '',
-        'purposes' => [''],
-        'description' => '',
-        'instructions' => [''],
-        'example' => '',
-        'materials' => [''],
+        'title' => 'Create a dance with the Ode to Code!',
+        'purposes' =>
+            'To practice coding in a fun way and feel connected with the EU Code Week community.',
+        'description' => [
+            'Create a dance with the Ode to Code! Use the',
+            'Dance Party tutorial',
+            'to code a dance to the Ode to Code. The official EU Code Week anthem is listed as a selection in Dance Party.'
+        ],
+        'instructions' => [
+            'Instructions are shown as videos within',
+            'the tutorial',
+            'and also written at the top of each level'
+        ],
+        'example' =>
+            'Featured student creations can be found on the following page',
+        'materials' => 'The Code.org tutorial',
         'more' => ['']
     ],
     'create-a-simulation' => [
