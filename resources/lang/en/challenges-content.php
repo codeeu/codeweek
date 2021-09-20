@@ -87,12 +87,48 @@ return [
     ],
 
     'compose-song' => [
-        'title' => '',
-        'author' => '',
-        'purposes' => [''],
-        'description' => '',
-        'instructions' => [''],
-        'example' => '',
+        'title' => 'Make a musical composition',
+        'author' => 'EU Code Week Team',
+        'purposes' => [
+            'To learn coding through music',
+            'To distinguish music genres and instruments',
+            'To compose a song by mixing sound clips'
+        ],
+        'description' =>
+            'In this challenge you will create a musical composition by using a programming language. You can use built-in sound clips or record your own and mix them to create a musical composition. Run your code in the Digital Audio Workstation and listen to the music you have coded. Play with different sounds and effects to modify your piece of music.',
+        'instructions' => [
+            'Log in to',
+            'Click here to make a script',
+            'Name your script and choose',
+            'as a programming language',
+            'Start writing your code between the',
+            'and',
+            'lines',
+            'Browse the music clips in the',
+            'Sound Library',
+            'and select the music genres, artists and instruments you like',
+            'To add a sound clip to your song, type',
+            'Between the parenthesis there should be the following 4 parameters, separated by commas',
+            'Sound clip',
+            'Place your cursor between the parenthesis, go to the Sound Library, select a clip, and paste it by clicking on the blue paste icon',
+            'Track number',
+            'tracks help you organize your sounds by instrument-type (vocals, bass, drums, keyboards, etc.). Add as many tracks (instruments) as you want. Tracks are displayed as rows that run across the Digital Audio Workstation',
+            'Start measure',
+            'indicates when your sound will start playing. Measures are musical time units. One measure is 4 beats',
+            'End measure',
+            'indicates when your sound will stop playing',
+            'Such a line of code will look like this',
+            'You can add different effects, such as volume to enhance the sound of your composition. Volume ranges from -60.0 decibels to 12.0 decibels with 0.0 being the original volume.',
+            'Write',
+            'In the parenthesis, write the number of track, VOLUME, GAIN, level of the volume, the measure when it starts, the level and measure when it ends',
+            'This is an example of a fade-in effect',
+            'and a fade-out effect'
+        ],
+        'example' => [
+            'Listen to',
+            'an example of a song coded with Earsketch',
+            'You can import the code and edit it'
+        ],
         'materials' => [''],
         'more' => ['']
     ],

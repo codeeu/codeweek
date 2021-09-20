@@ -20,6 +20,7 @@ return [
         'teachers' => 'Teachers',
         'students' => 'Students',
         'beginner' => 'Beginner',
+        'intermediate' => 'Intermediate',
         'advanced' => 'Advanced',
         '1-hour' => '1 hour'
     ],

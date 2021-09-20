@@ -4,13 +4,17 @@
 
 @section('content')
 
+    @php
+        $slug = 'compose-song'
+    @endphp
+
     <section id="codeweek-schools-page" class="codeweek-page">
 
         <section class="flex flex-row justify-between" style="background-color: #6DB4B4">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
                     <div class="text-xl text-white w-full"><a class="text-white" href="{{route('challenges')}}">@lang('challenges.title')</a></div>
-                    <div class="text-5xl mt-2" style="color: #fecc54">Make a musical composition</div>
+                    <div class="text-5xl mt-2" style="color: #fecc54">@lang("challenges-content.$slug.title")</div>
                 </div>
             </div>
 
@@ -24,7 +28,7 @@
         <section class="codeweek-content-wrapper">
             <div class="m-6">
 
-                @include('2021.challenges._author', ['author' => 'EU Code Week Team'])
+                @include('2021.challenges._author', ['author' => __("challenges-content.$slug.author")])
 
                 <section class="grid grid-cols-1 gap-6 md:grid-cols-5 mx-6 my-4">
 
@@ -32,22 +36,22 @@
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
-                            <li>Teachers</li>
-                            <li>Students (12-18)</li>
+                            <li>@lang('challenges.common.teachers')</li>
+                            <li>@lang('challenges.common.students') (12-18)</li>
                         </ol>
                     </div>
 
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
                         <ol class="list-disc ml-5">
-                            <li>Intermediate</li>
+                            <li>@lang('challenges.common.intermediate')</li>
                         </ol>
                     </div>
 
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
-                            <li>1 hour</li>
+                            <li>@lang('challenges.common.1-hour')</li>
                         </ol>
                     </div>
 
@@ -67,9 +71,9 @@
                 <div class="mx-6 my-4">
                     <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                     <ol class="list-disc ml-5">
-                        <li>To learn coding through music</li>
-                        <li>To distinguish music genres and instruments</li>
-                        <li>To compose a song by mixing sound clips</li>
+                        <li>@lang("challenges-content.$slug.purposes.0")</li>
+                        <li>@lang("challenges-content.$slug.purposes.1")</li>
+                        <li>@lang("challenges-content.$slug.purposes.2")</li>
                     </ol>
 
                 </div>
@@ -84,7 +88,7 @@
 
 
                         <div class="mt-2">
-                            In this challenge you will create a musical composition by using a programming language. You can use built-in sound clips or record your own and mix them to create a musical composition. Run your code in the Digital Audio Workstation and listen to the music you have coded. Play with different sounds and effects to modify your piece of music.
+                            @lang("challenges-content.$slug.description")
                         </div>
                     </section>
 
@@ -94,27 +98,27 @@
                         <div class="leading-8">
                             <div class="mt-6 orange text-3xl">@lang('challenges.common.instructions')</div>
                             <ul class="leading-7 ml-2 mt-0 checklist mt-2">
-                                <li>Log in to <a href="https://earsketch.gatech.edu/landing/#/">Earsketch</a>.</li>
-                                <li>Click <strong>Click here to make a script</strong>. Name your script and choose <strong>Python</strong> as a programming language.</li>
-                                <li>Start writing your code between the <span class="text-blue-500 font-mono">setTempo(120)</span> and <span class="text-blue-500 font-mono">finish()</span> lines.</li>
-                                <li>Browse the music clips in the <strong>Sound Library</strong> and select the music genres, artists and instruments you like.</li>
-                                <li>To add a sound clip to your song, type <span class="text-blue-500 font-mono">fitMedia()</span>. Between the parenthesis there should be the following 4 parameters, separated by commas:
+                                <li>@lang("challenges-content.$slug.instructions.0") <a href="https://earsketch.gatech.edu/landing/#/">Earsketch</a>.</li>
+                                <li><strong>@lang("challenges-content.$slug.instructions.1")</strong>. @lang("challenges-content.$slug.instructions.2") <strong>Python</strong> @lang("challenges-content.$slug.instructions.3").</li>
+                                <li>@lang("challenges-content.$slug.instructions.4") <span class="text-blue-500 font-mono">setTempo(120)</span> @lang("challenges-content.$slug.instructions.5") <span class="text-blue-500 font-mono">finish()</span> @lang("challenges-content.$slug.instructions.6").</li>
+                                <li>@lang("challenges-content.$slug.instructions.7") <strong>@lang("challenges-content.$slug.instructions.8")</strong> @lang("challenges-content.$slug.instructions.9").</li>
+                                <li>@lang("challenges-content.$slug.instructions.10") <span class="text-blue-500 font-mono">fitMedia()</span>. @lang("challenges-content.$slug.instructions.11"):
                                 <ol class="ml-8 list-decimal">
-                                    <li><strong>Sound clip:</strong> Place your cursor between the parenthesis, go to the Sound Library, select a clip, and paste it by clicking on the blue paste icon.</li>
-                                    <li><strong>Track number:</strong> tracks help you organize your sounds by instrument-type (vocals, bass, drums, keyboards, etc.). Add as many tracks (instruments) as you want. Tracks are displayed as rows that run across the Digital Audio Workstation. </li>
-                                    <li><strong>Start measure:</strong> indicates when your sound will start playing. Measures are musical time units. One measure is 4 beats.</li>
-                                    <li><strong>End measure:</strong> indicates when your sound will stop playing.</li>
+                                    <li><strong>@lang("challenges-content.$slug.instructions.12"):</strong> @lang("challenges-content.$slug.instructions.13").</li>
+                                    <li><strong>@lang("challenges-content.$slug.instructions.14"):</strong> @lang("challenges-content.$slug.instructions.15"). </li>
+                                    <li><strong>@lang("challenges-content.$slug.instructions.16"):</strong> @lang("challenges-content.$slug.instructions.17").</li>
+                                    <li><strong>@lang("challenges-content.$slug.instructions.18"):</strong> @lang("challenges-content.$slug.instructions.19").</li>
                                 </ol>
                                 </li>
-                                <li>Such a line of code will look like this:
+                                <li>@lang("challenges-content.$slug.instructions.20"):
                                     <span class="text-blue-500 font-mono">fitMedia (HOUSE_DEEP_AIRYCHORD_002, 2, 2, 8)</span>
                                     <img class="m-4" width="550" src="{{asset('img/2021/challenges/compose-song-1.png')}}"/>
                                 </li>
-                                <li>You can add different effects, such as volume to enhance the sound of your composition. Volume ranges from -60.0 decibels to 12.0 decibels with 0.0 being the original volume. </li>
-                                <li>Write <span class="text-blue-500 font-mono">setEffect()</span>. In the parenthesis, write the number of track, VOLUME, GAIN, level of the volume, the measure when it starts, the level and measure when it ends.</li>
-                                <li>This is an example of a fade-in effect:
+                                <li>@lang("challenges-content.$slug.instructions.21") </li>
+                                <li>@lang("challenges-content.$slug.instructions.22") <span class="text-blue-500 font-mono">setEffect()</span>. @lang("challenges-content.$slug.instructions.23").</li>
+                                <li>@lang("challenges-content.$slug.instructions.24"):
                                     <div class="text-blue-500 font-mono">setEffect (1, VOLUME, GAIN, -40, 1, 0, 4)</div>
-                                    and a fade-out effect:
+                                    @lang("challenges-content.$slug.instructions.25"):
                                     <div class="text-blue-500 font-mono">setEffect (5, VOLUME, GAIN, 0, 8, -15, 10)</div>
                                 </li>
 
@@ -129,7 +133,7 @@
                     <section class="p-2">
                         <div class="mt-6 orange text-3xl">@lang('challenges.common.example')</div>
                         <div class="mt-2">
-                            Listen to <a href="https://earsketch.gatech.edu/earsketch2/?sharing=eQgzojvIKsMLrum8CBYj1g" target="_blank">an example of a song coded with Earsketch</a>. You can import the code and edit it.
+                            @lang("challenges-content.$slug.example.0") <a href="https://earsketch.gatech.edu/earsketch2/?sharing=eQgzojvIKsMLrum8CBYj1g" target="_blank">@lang("challenges-content.$slug.example.1")</a>. @lang("challenges-content.$slug.example.2").
                         </div>
                         <div class="mt-4">
                             <iframe width="600" height="400" src="https://earsketch.gatech.edu/earsketch2/?sharing=eQgzojvIKsMLrum8CBYj1g&embedded=true"></iframe>
