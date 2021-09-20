@@ -14,7 +14,7 @@
         <section class="flex flex-row justify-between" style="background-color: #EDD62F">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
-                    <div class="text-xl text-white w-full"><a class="text-black"                           href="{{route('challenges')}}">@lang('challenges.title')</a>
+                    <div class="text-xl text-white w-full"><a class="text-black" href="{{route('challenges')}}">@lang('challenges.title')</a>
                     </div>
                     <div class="text-5xl mt-2" style="color: #4a990d">@lang("challenges-content.$slug.title")</div>
                 </div>
@@ -61,7 +61,9 @@
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
                             <li>
-                                @lang("challenges-content.$slug.materials.0") <a     href="https://snap.berkeley.edu">Snap!</a>, @lang("challenges-content.$slug.materials.1") <a href="https://scratch.mit.edu">Scratch</a>.
+                                @lang("challenges-content.$slug.materials.0") <a
+                                        href="https://snap.berkeley.edu">Snap!</a>, @lang("challenges-content.$slug.materials.1")
+                                <a href="https://scratch.mit.edu">Scratch</a>.
                             </li>
                         </ol>
 
@@ -106,7 +108,10 @@
                         <div class="leading-6">
                             <div class="mt-6 orange text-3xl">@lang('challenges.common.instructions')</div>
                             <ul class="leading-7 ml-2 checklist mt-2">
-                                <li> @lang("challenges-content.$slug.instructions.0") <a href="https://youtu.be/VcPc4VVDp2c">@lang("challenges-content.$slug.instructions.1")</a> @lang("challenges-content.$slug.instructions.2") <a href="https://tinyurl.com/virtualflowerfield">@lang("challenges-content.$slug.instructions.3")</a> @lang("challenges-content.$slug.instructions.4").
+                                <li> @lang("challenges-content.$slug.instructions.0") <a
+                                            href="https://youtu.be/VcPc4VVDp2c">@lang("challenges-content.$slug.instructions.1")</a> @lang("challenges-content.$slug.instructions.2")
+                                    <a href="https://tinyurl.com/virtualflowerfield">@lang("challenges-content.$slug.instructions.3")</a> @lang("challenges-content.$slug.instructions.4")
+                                    .
                                 </li>
                                 <li>@lang("challenges-content.$slug.instructions.5")
                                 </li>
