@@ -169,13 +169,31 @@ return [
     ],
 
     'calming-leds' => [
-        'title' => '',
-        'author' => '',
-        'purposes' => [''],
-        'description' => '',
-        'instructions' => [''],
-        'example' => '',
-        'materials' => [''],
+        'title' => 'Calming LEDs: create a simple device with micro:bit',
+        'author' => 'Micro:bit Educational Foundation',
+        'duration' => '20 minutes',
+        'materials' => [
+            'a micro:bit device and battery pack (if available)',
+            'a laptop or tablet with which you can visit Microsoft MakeCode and Youtube',
+            'microbit.org for the activity resources'
+        ],
+        'description' =>
+            'Students create a digital device using LEDs that can help them to regulate their breathing and feel calmer. They will be asked to write some simple code, exploring animations and sequences.',
+        'instructions' => [
+            'The goal is to create a working Calming LED device that you can use to regulate your breathing. This device can be created on a physical micro:bit board, or on the simulator in the MakeCode editor.',
+            'The challenge can be completed by using the MakeCode editor and writing a simple sequence of code as shown in the video/screenshot.',
+            'To develop the challenge, students can explore different animations and get creative with the animation they would like to see to help them feel calm or happy.',
+            'More information and video instructions at',
+            'this link'
+        ],
+        'example' =>
+            'Visit this page for instructions and videos of the completed challenge plus how to code',
+        'purposes' => [
+            'To design a simple digital artefact with a helpful purpose',
+            'To explore sequences and animations and how they work',
+            'To test and debug simple code',
+            'To iterate a design by making the animations faster or slower'
+        ],
         'more' => ['']
     ],
     'computational-thinking-and-computational-fluency' => [
