@@ -6,18 +6,6 @@
 
     <section id="codeweek-schools-page" class="codeweek-page">
 
-        {{--        <section class="codeweek-banner about">--}}
-        {{--            <div class="text">--}}
-        {{--                <div class="text-5xl text-white">EU CODE WEEK CHALLENGES</div>--}}
-        {{--                <h2>9-24 October 2021</h2>--}}
-        {{--            </div>--}}
-        {{--            <div class="image">--}}
-        {{--                <img src="/images/banner_about.svg" class="static-image">--}}
-
-        {{--            </div>--}}
-
-        {{--        </section>--}}
-
         <section class="flex flex-row justify-between" style="background-color: #908CA5">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
