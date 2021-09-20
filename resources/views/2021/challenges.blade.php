@@ -70,7 +70,7 @@
                         @include('2021._thumbnail', ['slug' => 'haunted-house'])
                         @include('2021._thumbnail', ['slug' => 'inclusive-app-design'])
                         @include('2021._thumbnail', ['slug' => 'silly-eyes'])
-                        @include('2021._thumbnail', ['slug' => 'train-ai-bot'])
+                        @include('2021._thumbnail', ['slug' => 'train-ai-bot', 'author'=>'Code.org'])
 
 
                     </section>

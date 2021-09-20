@@ -4,6 +4,11 @@
 
 @section('content')
 
+
+    @php
+        $slug = 'silly-eyes'
+    @endphp
+
     <section id="codeweek-schools-page" class="codeweek-page">
 
 
@@ -11,7 +16,7 @@
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
                     <div class="text-xl text-white w-full"><a class="text-white" href="{{route('challenges')}}">@lang('challenges.title')</a></div>
-                    <div class="text-5xl mt-2" style="color: #eee91f">Silly eyes</div>
+                    <div class="text-5xl mt-2" style="color: #eee91f">@lang("challenges-content.$slug.title")</div>
                 </div>
             </div>
 
@@ -24,7 +29,7 @@
         <section class="codeweek-content-wrapper">
             <div class="m-6">
 
-                @include('2021.challenges._author', ['author' => 'Raspberry Pi Foundation'])
+                @include('2021.challenges._author', ['author' => __("challenges-content.$slug.author")])
 
                 <section class="grid grid-cols-1 gap-6 md:grid-cols-4 mx-6 my-4">
 
@@ -32,21 +37,21 @@
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
-                            <li>Primary School students (6 to 12 years)</li>
+                            <li>@lang("resources.resources.levels.Primary school (5-12)")</li>
                         </ol>
                     </div>
 
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
                         <ol class="list-disc ml-5">
-                            <li>Beginner</li>
+                            <li>@lang('challenges.common.beginner')</li>
                         </ol>
                     </div>
 
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
-                            <li>25 minutes</li>
+                            <li>@lang("challenges-content.$slug.duration")</li>
                         </ol>
                     </div>
 
@@ -54,7 +59,7 @@
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
                             <li>
-                                You will need <a href="https://scratch.mit.edu/">Scratch</a>.
+                                <a href="https://scratch.mit.edu/">Scratch</a>.
                             </li>
                         </ol>
 
@@ -68,9 +73,9 @@
 
                     <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                     <ol class="list-disc ml-5">
-                        <li>To make a project with user interaction.</li>
-                        <li>To personalise a project with colour and graphic effects.</li>
-                        <li>To learn about design in digital making.</li>
+                        <li>@lang("challenges-content.$slug.purposes.0")</li>
+                        <li>@lang("challenges-content.$slug.purposes.1")</li>
+                        <li>@lang("challenges-content.$slug.purposes.2")</li>
 
                     </ol>
 
@@ -87,7 +92,7 @@
 
 
                         <div class="mt-2">
-                            In this project, you will design and create a silly eye character. The character’s large, silly eyes will follow the mouse pointer to bring your character to life.
+                            @lang("challenges-content.$slug.description")
                         </div>
                     </section>
 
@@ -96,7 +101,7 @@
                         <div class="leading-6">
                             <div class="mt-6 mb-2 orange text-3xl">@lang('challenges.common.instructions')</div>
                                 <div class="mb-2">
-                                    Please access the full project description <a href="https://projects.raspberrypi.org/en/projects/silly-eyes">here</a>
+                                     <a href="https://projects.raspberrypi.org/en/projects/silly-eyes">@lang("challenges-content.$slug.instructions")</a>
                                 </div>
                         </div>
                     </section>
@@ -106,7 +111,7 @@
                     <section class="p-2">
                         <div class="orange text-3xl">@lang('challenges.common.example')</div>
                         <div class="mt-2">
-                            Check out Gobo, Under the sea and Don't eat donut
+                            @lang("challenges-content.$slug.example")
                         </div>
 
 
