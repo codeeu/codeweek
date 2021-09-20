@@ -429,23 +429,35 @@ return [
         ]
     ],
     'silly-eyes' => [
-        'title' => '',
-        'author' => '',
-        'purposes' => [''],
-        'description' => '',
-        'instructions' => [''],
-        'example' => '',
-        'materials' => [''],
-        'more' => ['']
+        'title' => 'Silly eyes',
+        'author' => 'Raspberry Pi Foundation',
+        'duration' => '25 minutes',
+        'purposes' => [
+            'To make a project with user interaction.',
+            'To personalise a project with colour and graphic effects.',
+            'To learn about design in digital making.'
+        ],
+        'description' =>
+            'In this project, you will design and create a silly eye character. The character’s large, silly eyes will follow the mouse pointer to bring your character to life.',
+        'instructions' => 'Please access the full project description here',
+        'example' => 'Check out Gobo, Under the sea and Don\'t eat donut'
     ],
     'train-ai-bot' => [
-        'title' => '',
+        'title' => 'Train an AI bot!',
         'author' => '',
-        'purposes' => [''],
-        'description' => '',
-        'instructions' => [''],
+        'purposes' =>
+            'To learn about artificial intelligence (AI), machine learning, training data, and bias, while exploring ethical issues and how AI can be used to address world problems.',
+        'description' =>
+            'Train an AI bot with AI for Oceans. In this activity, you will program or train AI (artificial intelligence) to identify fish or trash. Let\'s clean up the ocean!',
+        'instructions' => [
+            'Instructions are shown as videos within the tutorial',
+            'and also written at the top of each level'
+        ],
         'example' => '',
-        'materials' => [''],
+        'materials' => [
+            'Tutorial can be found here',
+            'This tutorial is available in over 25 languages'
+        ],
         'more' => ['']
     ]
 ];
