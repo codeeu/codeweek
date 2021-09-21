@@ -4,14 +4,20 @@
 
 @section('content')
 
+    @php
+        $slug = 'chatbot'
+    @endphp
+
     <section id="codeweek-schools-page" class="codeweek-page">
 
         <section class="flex flex-row justify-between" style="background-color: #EEA44E">
             <div class="flex justify-center items-center w-full">
-                            <div class="text-center m-12">
-                                <div class="text-xl text-white w-full"><a class="text-white" href="{{route('challenges')}}">EU CODE WEEK CHALLENGES</a></div>
-                                <div class="text-5xl mt-2" style="color: #1756a0">Make a chatbot</div>
-                            </div>
+                <div class="text-center m-12">
+                    <div class="text-xl text-white w-full"><a class="text-white"
+                                                              href="{{route('challenges')}}">@lang('challenges.title')</a>
+                    </div>
+                    <div class="text-5xl mt-2" style="color: #1756a0">@lang("challenges-content.$slug.title")</div>
+                </div>
             </div>
 
             <div class="md:w-10/12 md:mb-2 md:flex hidden">
@@ -22,52 +28,50 @@
         </section>
 
 
-
         <section class="codeweek-content-wrapper">
-
 
 
             <div class="m-6">
 
-                @include('2021.challenges._author', ['author' => 'EU Code Week Team'])
+                @include('2021.challenges._author', ['author' => __("challenges-content.$slug.author")])
                 <section class="grid grid-cols-1 gap-6 md:grid-cols-5 mx-6 my-4">
 
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Target audience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
-                        <li>Teachers</li>
-                        <li>Students (12-18)</li>
+                            <li>@lang('challenges.common.teachers')</li>
+                            <li>@lang('challenges.common.students') (12-18)</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Experience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
                         <ol class="list-disc ml-5">
-                            <li>Advanced</li>
+                            <li>@lang('challenges.common.advanced')</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Duration</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
-                            <li>1 hour</li>
+                            <li>@lang('challenges.common.1-hour')</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Recommended materials</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
-                        <li><a href="https://pencilcode.net/" target="_blank">Pencil code</a></li>
-                        <li><a href="https://machinelearningforkids.co.uk/" target="_blank">Machine learning for
-                                kids</a></li>
+                            <li><a href="https://pencilcode.net/" target="_blank">Pencil code</a></li>
+                            <li><a href="https://machinelearningforkids.co.uk/" target="_blank">Machine learning for
+                                    kids</a></li>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Purpose</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                         <ol class="list-disc ml-5">
-                            <li>Code interactive riddles</li>
-                            <li>Use code to create dialogues between a chatbot and a user</li>
+                            <li>@lang("challenges-content.$slug.purposes.0")</li>
+                            <li>@lang("challenges-content.$slug.purposes.1")</li>
                         </ol>
 
                     </div>
@@ -79,38 +83,38 @@
                 <div class="leading-6 text-base text-left">
 
                     <section class="bg-blue-100 p-2 mt-6">
-                    <div class="orange text-3xl mt-2">
-                    Description
-                </div>
+                        <div class="orange text-3xl mt-2">
+                            @lang('challenges.common.description')
+                        </div>
 
 
-                    <div class="mt-2">
-                        Code a conversation between a chatbot and a user who is trying to solve a riddle. Try to make a
-                        chatbot that can chat like a person. Instead of a riddle you can create a dialogue between a
-                        chatbot and a user.
-                    </div>
+                        <div class="mt-2">
+                            @lang("challenges-content.$slug.description")
+                        </div>
                     </section>
-
 
 
                     <section class="p-2">
                         <div class="leading-8">
-                            <div class="mt-6 orange text-3xl">Instructions</div>
+                            <div class="mt-6 orange text-3xl">@lang('challenges.common.instructions')</div>
                             <ul class="leading-7 ml-2 mt-0 checklist mt-2">
-                                <li>Think of a riddle.</li>
-                                <li>Log in to <a href="https://pencilcode.net/" target="_blank">Pencil Code</a> or
-                                    create a new account. (When creating a new account keep in mind that real names are
-                                    not allowed on Pencil Code due to privacy reasons.)
+                                <li>@lang("challenges-content.$slug.instructions.0").</li>
+                                <li>@lang("challenges-content.$slug.instructions.1") <a href="https://pencilcode.net/"
+                                                                                        target="_blank">Pencil
+                                        Code</a> @lang("challenges-content.$slug.instructions.2")
                                 </li>
-                                <li>Click Imagine and Make your own.</li>
-                                <li>Use blocks or text-based mode to write your riddle.
+                                <li>@lang("challenges-content.$slug.instructions.3").</li>
+                                <li>@lang("challenges-content.$slug.instructions.4").
                                     <img class="m-4" width="550" src="{{asset('img/2021/challenges/chatbot-1.png')}}"/>
                                     <img class="m-4" width="550" src="{{asset('img/2021/challenges/chatbot-2.png')}}"/>
 
                                 </li>
-                                <li>Alternatively, you can use <a href="https://abfromz.pencilcode.net/edit/Riddle"
-                                                                  target="_blank">this code</a> <a href="#pencil-code"><sup>1</sup></a> and adapt it to your
-                                    riddle or you can select Answering a riddle from the menu and edit it.
+                                <li>
+                                    @lang("challenges-content.$slug.instructions.5")
+                                    <a href="https://abfromz.pencilcode.net/edit/Riddle"
+                                       target="_blank">@lang("challenges-content.$slug.instructions.6")</a> <a
+                                            href="#pencil-code"><sup>1</sup></a> @lang("challenges-content.$slug.instructions.7")
+                                    .
                                 </li>
                             </ul>
 
@@ -120,13 +124,17 @@
                     @include('2021.challenges._share')
 
                     <section class="p-2">
-                        <div class="mt-6 orange text-3xl">Example</div>
-                        <div class="mt-2">Check out this  example of a riddle. <iframe src="//abfromz.pencilcode.net/home/Riddle" width="640" height="640" frameborder="0" allowfullScreen></iframe>
+                        <div class="mt-6 orange text-3xl">@lang('challenges.common.example')</div>
+                        <div class="mt-2">@lang("challenges-content.$slug.example")
+                            <iframe src="//abfromz.pencilcode.net/home/Riddle" width="640" height="640" frameborder="0"
+                                    allowfullScreen></iframe>
                         </div>
                     </section>
 
                     <div id="pencil-code" class="text-sm">
-                        1. This code has been Adapted from Pencil Code activity <a href="https://gym.pencilcode.net/imagine/#/imagine/troll.html" target="_blank">Answering the Riddle</a>
+                        1. @lang("challenges-content.$slug.more.0") <a
+                                href="https://gym.pencilcode.net/imagine/#/imagine/troll.html"
+                                target="_blank">@lang("challenges-content.$slug.more.1")</a>
                     </div>
 
 
