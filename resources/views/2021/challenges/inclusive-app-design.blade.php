@@ -4,7 +4,28 @@
 
 @section('content')
     @php
-        $slug = 'inclusive-app-design'
+        $slug = 'inclusive-app-design';
+    $url = 'https://apple.co/eucodeweek';
+    switch(strtolower(app()->getLocale())){
+        case 'da':
+        case 'nl':
+        case 'fi':
+        case 'fr':
+        case 'de':
+        case 'it':
+        case 'pl':
+        case 'pt':
+        case 'es':
+        case 'sv':
+            $url = 'https://apple.co/eucodeweek_' . strtoupper(app()->getLocale());
+            break;
+        case 'en':
+            $url = 'https://apple.co/eucodeweek_UK';
+            break;
+
+        default:
+            $url = 'https://apple.co/eucodeweek';
+    }
     @endphp
     <section id="codeweek-schools-page" class="codeweek-page">
 
@@ -12,7 +33,9 @@
         <section class="flex flex-row justify-between" style="background-color: #FA7C22">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
-                    <div class="text-xl text-white w-full"><a class="text-black" href="{{route('challenges')}}">@lang('challenges.title')</a></div>
+                    <div class="text-xl text-white w-full"><a class="text-black"
+                                                              href="{{route('challenges')}}">@lang('challenges.title')</a>
+                    </div>
                     <div class="text-5xl mt-2" style="color: #f9f6f5">@lang("challenges-content.$slug.title")</div>
                 </div>
             </div>
@@ -57,8 +80,6 @@
                     </div>
 
 
-
-
                 </section>
 
                 <section class="grid grid-cols-1 gap-6 md:grid-cols-2 mx-6 my-4">
@@ -78,14 +99,14 @@
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
                             <li>
-                                @lang("challenges-content.$slug.materials.0") : <a href="apple.co/eucodeweek">apple.co/eucodeweek</a>. @lang("challenges-content.$slug.materials.1")
+                                @lang("challenges-content.$slug.materials.0") : <a
+                                        href="{{$url}}">{{$url}}</a>. @lang("challenges-content.$slug.materials.1")
                             </li>
                         </ol>
 
 
                     </div>
                 </section>
-
 
 
                 <div class="leading-6 text-base text-left">
@@ -105,7 +126,7 @@
                     <section class="p-2">
                         <div class="leading-6">
                             <div class="mt-6 mb-2 orange text-3xl">@lang('challenges.common.instructions')</div>
-                            @lang("challenges-content.$slug.instructions.0"): <a href="apple.co/eucodeweek">apple.co/eucodeweek</a><br/>
+                            @lang("challenges-content.$slug.instructions.0"): <a href="{{$url}}">{{$url}}</a><br/>
                             @lang("challenges-content.$slug.instructions.1"):
                             <ul class="leading-7 ml-2 checklist mt-2">
 
@@ -120,8 +141,6 @@
                     </section>
 
                     @include('2021.challenges._share')
-
-
 
 
                 </div>
