@@ -7,12 +7,15 @@
     <section id="codeweek-schools-page" class="codeweek-page">
 
 
+        @php
+            $slug = 'train-ai-bot'
+        @endphp
+
         <section class="flex flex-row justify-between" style="background-color: #1BA8E2">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
-                    <div class="text-xl text-white w-full"><a class="text-white" href="{{route('challenges')}}">EU CODE
-                            WEEK CHALLENGES</a></div>
-                    <div class="text-5xl mt-2" style="color: #eee91f">Train an AI bot!</div>
+                    <div class="text-xl text-white w-full"><a class="text-white" href="{{route('challenges')}}">@lang('challenges.title')</a></div>
+                    <div class="text-5xl mt-2" style="color: #eee91f">@lang("challenges-content.$slug.title")</div>
                 </div>
             </div>
 
@@ -31,33 +34,33 @@
 
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Target audience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
-                            <li>Primary School students (6 to 12 years)</li>
+                            <li>@lang("resources.resources.levels.Primary school (5-12)")</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Experience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
                         <ol class="list-disc ml-5">
-                            <li>Beginner</li>
+                            <li>@lang('challenges.common.beginner')</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Duration</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
-                            <li>1 hour</li>
+                            <li>@lang('challenges.common.1-hour')</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Recommended materials</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
                             <li>
-                                Tutorial can be found: <a
+                                @lang("challenges-content.$slug.materials.0"): <a
                                         href="https://code.org/oceans">https://code.org/oceans</a><br/>
-                                (This tutorial is available in over 25 languages)
+                                (@lang("challenges-content.$slug.materials.1"))
                             </li>
                         </ol>
 
@@ -69,10 +72,9 @@
 
                 <div class="mx-6 my-4">
 
-                    <div class="text-xl text-left text-blue-600">Purpose</div>
+                    <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                     <ol class="list-disc ml-5">
-                        <li>To learn about artificial intelligence (AI), machine learning, training data, and bias,
-                            while exploring ethical issues and how AI can be used to address world problems.
+                        <li>@lang("challenges-content.$slug.purposes")
                         </li>
 
                     </ol>
@@ -85,7 +87,7 @@
 
                     <section class="bg-blue-100 p-2 mt-6">
                         <div class="orange text-3xl mt-2">
-                            Description
+                            @lang('challenges.common.description')
                         </div>
 
                         <div class="mt-2 w-1/2">
@@ -94,18 +96,16 @@
 
 
                         <div class="mt-2">
-                            Train an AI bot with AI for Oceans. In this activity, you will program or train AI
-                            (artificial intelligence) to identify fish or trash. Let's clean up the ocean!
+                            @lang("challenges-content.$slug.description")
                         </div>
                     </section>
 
 
                     <section class="p-2">
                         <div class="leading-6">
-                            <div class="mt-6 mb-2 orange text-3xl">Instructions</div>
+                            <div class="mt-6 mb-2 orange text-3xl">@lang('challenges.common.instructions')</div>
                             <div class="mb-2">
-                                Instructions are shown as videos within the tutorial (<a href="https://code.org/oceans">https://code.org/oceans</a>)
-                                and also written at the top of each level.
+                                @lang("challenges-content.$slug.instructions.0") (<a href="https://code.org/oceans">https://code.org/oceans</a>) @lang("challenges-content.$slug.instructions.1").
                             </div>
                         </div>
                     </section>
@@ -113,7 +113,7 @@
                     @include('2021.challenges._share')
 
                     <section class="p-2">
-                        <div class="orange text-3xl">Example</div>
+                        <div class="orange text-3xl">@lang('challenges.common.example')</div>
 
 
                         <div class="mt-2 w-1/2">

@@ -4,15 +4,18 @@
 
 @section('content')
 
+    @php
+        $slug = 'cs-first-unplugged-activities'
+    @endphp
+
     <section id="codeweek-schools-page" class="codeweek-page">
 
 
         <section class="flex flex-row justify-between" style="background-color: #DED7BC">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
-                    <div class="text-xl text-white w-full"><a class="text-black" href="{{route('challenges')}}">EU CODE
-                            WEEK CHALLENGES</a></div>
-                    <div class="text-5xl mt-2" style="color: #d84d96">CS First Unplugged activities</div>
+                    <div class="text-xl text-white w-full"><a class="text-black" href="{{route('challenges')}}">@lang('challenges.title')</a></div>
+                    <div class="text-5xl mt-2" style="color: #d84d96">@lang("challenges-content.$slug.title")</div>
                 </div>
             </div>
 
@@ -33,32 +36,32 @@
 
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Target audience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
-                            <li>Primary School students (6 to 12 years)</li>
+                            <li>@lang('challenges.common.students') (6-12)</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Experience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
                         <ol class="list-disc ml-5">
-                            <li>Beginner</li>
+                            <li>@lang('challenges.common.beginner')</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Duration</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
-                            <li>1 hour</li>
+                            <li>@lang('challenges.common.1-hour')</li>
                         </ol>
                     </div>
 
                     <div>
 
-                        <div class="text-xl text-left text-blue-600">Purpose</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                         <ol class="list-disc ml-5">
-                            <li>To support students who are learning from home.</li>
-                            <li>To give everyone a break from their screens.</li>
+                            <li>@lang("challenges-content.$slug.purposes.0")</li>
+                            <li>@lang("challenges-content.$slug.purposes.1")</li>
 
                         </ol>
 
@@ -72,13 +75,14 @@
                 <div class="mx-6 my-4">
 
 
-                    <div class="text-xl text-left text-blue-600">Recommended materials</div>
+                    <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                     <ol class="list-disc ml-5">
-                        <li>In addition to the activity booklet, some activities require or optionally benefit from additional materials.</li>
-                        <li>Small counters (like dried beans) to use on the Network a Neighborhood map.</li>
-                        <li>Scissors to cut out the Send a Secret Message cipher wheel.</li>
-                        <li>Cardboard and glue to provide additional stiffness to the Send a Secret Message cipher wheel.</li>
-                        <li>A thumbtack, toothpick, or straightened paper clip to connect the Send a Secret Message cipher wheel.</li>
+                        <li>@lang("challenges-content.$slug.materials.0")</li>
+                        <li>@lang("challenges-content.$slug.materials.1")</li>
+                        <li>@lang("challenges-content.$slug.materials.2")</li>
+                        <li>@lang("challenges-content.$slug.materials.3")</li>
+                        <li>@lang("challenges-content.$slug.materials.4")</li>
+
                     </ol>
 
                 </div>
@@ -88,23 +92,23 @@
 
                     <section class="bg-blue-100 p-2 mt-6">
                         <div class="orange text-3xl mt-2">
-                            Description
+                            @lang('challenges.common.description')
                         </div>
 
 
                         <div class="mt-2">
-                            CS First Unplugged is a set of activities that introduce students to CS concepts without a computer. We’ve designed this lesson to demonstrate that Computer Science is a lot more than just code.
+                            @lang("challenges-content.$slug.description")
                         </div>
                     </section>
 
 
                     <section class="p-2">
                         <div class="leading-6">
-                            <div class="mt-6 orange text-3xl">Instructions</div>
+                            <div class="mt-6 orange text-3xl">@lang('challenges.common.instructions')</div>
                             <ul class="leading-7 ml-2 checklist mt-2">
-                                <li>You will find the booklet to all activities in English at this <a href="https://drive.google.com/file/d/1F2k68YD4q899KFSs1RX3zNp9jvJ0AC7i/view?usp=sharing">link</a>, as well as Lesson Plan in English at this <a href="https://drive.google.com/file/d/1U8xf25xtWQJk8T-qpfkDMqcMUka_osat/view?usp=sharing">link</a>.</li>
-                                <li>The activities in this lesson can be completed individually and in any order.</li>
-                                <li>Teacher can take a picture of the learning process and share it on Instagram using #CodeWeekChallengeGoogle</li>
+                                <li>@lang("challenges-content.$slug.instructions.0") <a href="https://drive.google.com/file/d/1F2k68YD4q899KFSs1RX3zNp9jvJ0AC7i/view?usp=sharing">@lang("challenges-content.$slug.instructions.1")</a>, @lang("challenges-content.$slug.instructions.2") <a href="https://drive.google.com/file/d/1U8xf25xtWQJk8T-qpfkDMqcMUka_osat/view?usp=sharing">@lang("challenges-content.$slug.instructions.1")</a>.</li>
+                                <li>@lang("challenges-content.$slug.instructions.3").</li>
+                                <li>@lang("challenges-content.$slug.instructions.4").</li>
                             </ul>
                         </div>
                     </section>
@@ -112,7 +116,7 @@
                     @include('2021.challenges._share')
 
                     <section class="p-2">
-                        <div class="orange text-3xl">Example</div>
+                        <div class="orange text-3xl">@lang('challenges.common.example')</div>
 
                             <div class="mt-2">
 

@@ -6,13 +6,15 @@
 
     <section id="codeweek-schools-page" class="codeweek-page">
 
+        @php
+            $slug = 'create-your-own-masterpiece'
+        @endphp
 
         <section class="flex flex-row justify-between" style="background-color: #CCC6C6">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
-                    <div class="text-xl text-white w-full"><a class="text-white" href="{{route('challenges')}}">EU CODE
-                            WEEK CHALLENGES</a></div>
-                    <div class="text-5xl mt-2" style="color: #e55327">Create your own masterpiece!</div>
+                    <div class="text-xl text-white w-full"><a class="text-white" href="{{route('challenges')}}">@lang('challenges.title')</a></div>
+                    <div class="text-5xl mt-2" style="color: #e55327">@lang("challenges-content.$slug.title")</div>
                 </div>
             </div>
 
@@ -33,31 +35,31 @@
 
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Target audience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
-                            <li>Acceptable for all ages.</li>
+                            <li>@lang("challenges-content.$slug.audience").</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Experience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
                         <ol class="list-disc ml-5">
-                            <li>Beginner</li>
+                            <li>@lang('challenges.common.beginner')</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Duration</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
-                            <li>1 hour</li>
+                            <li>@lang('challenges.common.1-hour')</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Recommended materials</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
                             <li>
-                                The first level of the tutorial can be found <a href="https://studio.code.org/s/artist/lessons/1/levels/1">HERE</a>
+                                @lang("challenges-content.$slug.materials.0") <a href="https://studio.code.org/s/artist/lessons/1/levels/1">@lang("challenges-content.$slug.materials.1")</a>
                                 </li>
                         </ol>
 
@@ -66,9 +68,9 @@
 
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Purpose</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                         <ol class="list-disc ml-5">
-                            <li>To introduce computer science concepts in a visual way and inspire creativity.</li>
+                            <li>@lang("challenges-content.$slug.purpose").</li>
                         </ol>
 
 
@@ -86,23 +88,23 @@
 
                     <section class="bg-blue-100 p-2 mt-6">
                         <div class="orange text-3xl mt-2">
-                            Description
+                            @lang('challenges.common.description')
                         </div>
                         <div class="mt-2 w-1/2">
                             <img src="{{asset('img/2021/challenges/create-your-own-masterpiece-1.png')}}"/>
                         </div>
 
                         <div class="mt-2">
-                            Create your own masterpiece with artist! Use code blocks to make your artist create a unique work of art.
+                            @lang("challenges-content.$slug.description")
                         </div>
                     </section>
 
 
                     <section class="p-2">
                         <div class="leading-6">
-                            <div class="mt-6 orange text-3xl">Instructions</div>
+                            <div class="mt-6 orange text-3xl">@lang('challenges.common.instructions')</div>
                             <ul class="leading-7 ml-2 checklist mt-2">
-                                <li>Instructions are listed at the top of each level (<a href="https://studio.code.org/s/artist/">https://studio.code.org/s/artist/</a>).
+                                <li>@lang("challenges-content.$slug.instructions") (<a href="https://studio.code.org/s/artist/">https://studio.code.org/s/artist/</a>).
                                 </li>
                             </ul>
                         </div>
@@ -111,8 +113,8 @@
                     @include('2021.challenges._share')
 
                     <section class="p-2">
-                        <div class="orange text-3xl">Example</div>
-                        <div class="mt-2">Artist examples can be found on this page under drawing: <a href="https://studio.code.org/projects/public">https://studio.code.org/projects/public</a>
+                        <div class="orange text-3xl">@lang('challenges.common.example')</div>
+                        <div class="mt-2">@lang("challenges-content.$slug.example"): <a href="https://studio.code.org/projects/public">https://studio.code.org/projects/public</a>
                             <div class="mt-2 flex flex-column">
 
                                 <img src="{{asset('img/2021/challenges/create-your-own-masterpiece-3.png')}}"/>
