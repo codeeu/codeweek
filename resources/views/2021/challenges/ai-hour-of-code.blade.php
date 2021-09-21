@@ -6,23 +6,26 @@
 
     <section id="codeweek-schools-page" class="codeweek-page">
 
-{{--        <section class="codeweek-banner about">--}}
-{{--            <div class="text">--}}
-{{--                <div class="text-5xl text-white"><a class="text-white underline" href="{{route('challenges')}}">EU CODE WEEK CHALLENGES</a></div>--}}
-{{--                <h2>Unplug and code: Create a paper circuit</h2>--}}
-{{--            </div>--}}
-{{--            <div class="image">--}}
-{{--                <img src="/images/banner_about.svg" class="static-image">--}}
+        {{--        <section class="codeweek-banner about">--}}
+        {{--            <div class="text">--}}
+        {{--                <div class="text-5xl text-white"><a class="text-white underline" href="{{route('challenges')}}">@lang('challenges.title')</a></div>--}}
+        {{--                <h2>Unplug and code: Create a paper circuit</h2>--}}
+        {{--            </div>--}}
+        {{--            <div class="image">--}}
+        {{--                <img src="/images/banner_about.svg" class="static-image">--}}
 
-{{--            </div>--}}
+        {{--            </div>--}}
 
-{{--        </section>--}}
+        {{--        </section>--}}
 
         <section class="flex flex-row justify-between" style="background-color: #78C2C5">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
-                    <div class="text-xl text-white w-full"><a class="text-white" href="{{route('challenges')}}">EU CODE WEEK CHALLENGES</a></div>
-                    <div class="text-5xl mt-2" style="color: #373737">AI hour of Code</div>
+                    <div class="text-xl text-white w-full"><a class="text-white"
+                                                              href="{{route('challenges')}}">@lang('challenges.title')</a>
+                    </div>
+                    <div class="text-5xl mt-2"
+                         style="color: #1756a0">@lang('challenges-content.ai-hour-of-code.title')</div>
                 </div>
             </div>
 
@@ -36,52 +39,54 @@
         <section class="codeweek-content-wrapper">
             <div class="m-6">
 
-                @include('2021.challenges._author', ['author' => 'Minecraft Education Edition'])
+                @include('2021.challenges._author', ['author' => __('challenges-content.ai-hour-of-code.author')])
 
                 <section class="grid grid-cols-1 gap-6 md:grid-cols-4 mx-6 my-4">
 
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Target audience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
-                            <li>Pre-primary students (3 to 6 years)</li>
+                            <li>@lang('challenges.common.pre-primary') (3-6)</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Experience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
                         <ol class="list-disc ml-5">
-                            <li>Beginner</li>
+                            <li>@lang('challenges.common.beginner')</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Duration</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
-                            <li>1 h</li>
+                            <li>@lang('challenges.common.1-hour')</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Recommended materials</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
-                            <li>Install Minecraft: Education Edition</li>
-                            <li>After installing Minecraft Education Edition, the challenge is on <a href="https://education.minecraft.net/en-us/lessons/minecraft-hour-of-code">this website</a></li>
+                            <li>@lang('challenges-content.ai-hour-of-code.materials.0')</li>
+                            <li>@lang('challenges-content.ai-hour-of-code.materials.1') <a
+                                        href="https://education.minecraft.net/en-us/lessons/minecraft-hour-of-code">@lang('challenges-content.ai-hour-of-code.materials.2')</a>
+                            </li>
                         </ol>
 
 
                     </div>
-
 
 
                 </section>
 
                 <div class="mx-6 my-4">
-                    <div class="text-xl text-left text-blue-600">Purpose</div>
+                    <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                     <ol class="list-disc ml-5">
-                        <li>To create coding solutions that include sequences, events, loops, and conditionals.</li>
-                        <li>To decompose the steps needed to solve a problem into a precise sequence of instructions.</li>
-                        <li>To explore coding concepts.</li>
+
+                        <li>@lang('challenges-content.ai-hour-of-code.purposes.0').</li>
+                        <li>@lang('challenges-content.ai-hour-of-code.purposes.1').</li>
+                        <li>@lang('challenges-content.ai-hour-of-code.purposes.2').</li>
                     </ol>
 
                 </div>
@@ -91,23 +96,24 @@
 
                     <section class="bg-blue-100 p-2 mt-6">
                         <div class="orange text-3xl mt-2">
-                            Description
+                            @lang('challenges.common.description')
                         </div>
 
 
                         <div class="mt-2">
-                            A village is threatened by fire and needs you to code a solution! Meet your coding helper, the Minecraft Agent, then program the Agent to navigate the forest and collect data. This data will help the Agent predict where fires will occur. Then code the Agent to help prevent the spread of fire, save the village, and bring life back into the forest. Learn the basics of coding and explore a real-world example of artificial intelligence (AI).<br/>
+                            @lang('challenges-content.ai-hour-of-code.description')<br/>
                         </div>
                     </section>
-
 
 
                     <section class="p-2">
                         <div class="leading-8">
-                            <div class="mt-6 orange text-3xl">Instructions</div>
+                            <div class="mt-6 orange text-3xl">@lang('challenges.common.instructions')</div>
 
-                            Download the lesson plan <a href="https://meedownloads.blob.core.windows.net/learning-experience/HOC%202019/EducatorGuide_en_US.pdf">HERE</a>
 
+
+                             <a
+                                    href="https://meedownloads.blob.core.windows.net/learning-experience/HOC%202019/EducatorGuide_en_US.pdf">@lang('challenges-content.ai-hour-of-code.instructions')</a>
 
 
                         </div>
@@ -115,11 +121,11 @@
 
                     </section>
 
-@include('2021.challenges._share')
+                    @include('2021.challenges._share')
 
                     <section class="p-2">
-                        <div class="orange text-3xl">Example</div>
-                        <div class="mt-2">   <img src="{{asset('img/2021/challenges/ai-hour-of-code-1.png')}}"/>
+                        <div class="orange text-3xl">@lang('challenges.common.example')</div>
+                        <div class="mt-2"><img src="{{asset('img/2021/challenges/ai-hour-of-code-1.png')}}"/>
 
                         </div>
 

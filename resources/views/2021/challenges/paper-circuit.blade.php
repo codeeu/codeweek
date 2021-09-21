@@ -4,25 +4,16 @@
 
 @section('content')
 
+    @php
+    $slug = 'paper-circuit'
+    @endphp
     <section id="codeweek-schools-page" class="codeweek-page">
-
-{{--        <section class="codeweek-banner about">--}}
-{{--            <div class="text">--}}
-{{--                <div class="text-5xl text-white"><a class="text-white underline" href="{{route('challenges')}}">EU CODE WEEK CHALLENGES</a></div>--}}
-{{--                <h2>Unplug and code: Create a paper circuit</h2>--}}
-{{--            </div>--}}
-{{--            <div class="image">--}}
-{{--                <img src="/images/banner_about.svg" class="static-image">--}}
-
-{{--            </div>--}}
-
-{{--        </section>--}}
 
         <section class="flex flex-row justify-between" style="background-color: #3B0049">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
-                    <div class="text-xl text-white w-full"><a class="text-white" href="{{route('challenges')}}">EU CODE WEEK CHALLENGES</a></div>
-                    <div class="text-5xl mt-2" style="color: #3beac5">Unplug and code: Create a paper circuit</div>
+                    <div class="text-xl text-white w-full"><a class="text-white" href="{{route('challenges')}}">@lang('challenges.title')</a></div>
+                    <div class="text-5xl mt-2" style="color: #3beac5">@lang("challenges-content.$slug.title")</div>
                 </div>
             </div>
 
@@ -36,52 +27,54 @@
         <section class="codeweek-content-wrapper">
             <div class="m-6">
 
-                @include('2021.challenges._author', ['author' => 'EU Code Week Team'])
+                @include('2021.challenges._author', ['author' => __("challenges-content.$slug.author")])
+
 
                 <section class="grid grid-cols-1 gap-6 md:grid-cols-5 mx-6 my-4">
 
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Target audience</div>
+
                         <ol class="list-disc ml-5">
-                            <li>Teachers</li>
-                            <li>Students (7-14)</li>
+                            <li>@lang('challenges.common.teachers')</li>
+                            <li>@lang('challenges.common.students') (7-14)</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Experience</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
                         <ol class="list-disc ml-5">
-                            <li>Beginner</li>
+                            <li>@lang('challenges.common.beginner')</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Duration</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
-                            <li>45 minutes</li>
+                            <li>@lang('challenges.common.1-hour')</li>
                         </ol>
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Recommended materials</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
-                            <li>paper or cardboard</li>
-                            <li>crayons or marker</li>
-                            <li>coin-cell battery</li>
-                            <li>copper tape</li>
-                            <li>LED circuit stickers</li>
-                            <li>paper clip</li>
+                            <li>@lang("challenges-content.$slug.materials.0")</li>
+                            <li>@lang("challenges-content.$slug.materials.1")</li>
+                            <li>@lang("challenges-content.$slug.materials.2")</li>
+                            <li>@lang("challenges-content.$slug.materials.3")</li>
+                            <li>@lang("challenges-content.$slug.materials.4")</li>
+                            <li>@lang("challenges-content.$slug.materials.5")</li>
+
                         </ol>
 
 
                     </div>
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">Purpose</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                         <ol class="list-disc ml-5">
-                            <li>Enhance creativity</li>
-                            <li>Develop problem-solving skills</li>
+                            <li>@lang("challenges-content.$slug.purposes.0")</li>
+                            <li>@lang("challenges-content.$slug.purposes.1")</li>
                         </ol>
 
                     </div>
@@ -94,17 +87,12 @@
 
                     <section class="bg-blue-100 p-2 mt-6">
                         <div class="orange text-3xl mt-2">
-                            Description
+                            @lang('challenges.common.description')
                         </div>
 
 
                         <div class="mt-2">
-                            Draw and object of your choice. It can be a night sky, a ladybird, a robot, a Christmas tree
-                            or anything you can think of. Feel free to personalize your project with EU Code Week
-                            visuals: you can explore the <a href="{{route('toolkits')}}">EU Code Week teacher toolkit</a> and download any logo or visual
-                            you wish. You can even create a paper circuit invitation to EU Code Week. Add a motivating
-                            message to your circuit to encourage other teachers to join Code Week and/or to check the
-                            website dedicated to schools.
+                            @lang("challenges-content.$slug.description.0") <a href="{{route('toolkits')}}">@lang("challenges-content.$slug.description.1")</a> @lang("challenges-content.$slug.description.2")
                         </div>
                     </section>
 
@@ -112,24 +100,16 @@
 
                     <section class="p-2">
                         <div class="leading-8">
-                            <div class="mt-6 orange text-3xl">Instructions</div>
+                            <div class="mt-6 orange text-3xl">@lang('challenges.common.instructions')</div>
                             <ul class="leading-7 ml-2 mt-0 checklist mt-2">
-                                <li>Draw an object and decide which parts will be illuminated (e.g. stars).</li>
-                                <li>Make a hole through the paper with a pencil and insert a LED sticker in each
-                                    illuminated part.
-                                </li>
-                                <li>Draw a circle where you will place the coin-cell battery.</li>
-                                <li>Draw a + and a - track on the other side of the paper. Make sure that the longer leg
-                                    of the LED circuit sticker is connected to the “+” side of the battery and the
-                                    shorter to the “-” side of the battery.
-                                </li>
-                                <li>Lay the copper tape on the tracks.</li>
-                                <li>Create a fold so that when the paper covers the battery the LED is illuminated. You
-                                    can use a paper clip to ensure good contact with the copper tape.
-                                </li>
-                                <li>Take a picture of your paper circuit and share it on Instagram, explaining why you
-                                    think it is worth it to take part in this initiative.
-                                </li>
+                                <li>@lang("challenges-content.$slug.instructions.0").</li>
+                                <li>@lang("challenges-content.$slug.instructions.1").</li>
+                                <li>@lang("challenges-content.$slug.instructions.2").</li>
+                                <li>@lang("challenges-content.$slug.instructions.3").</li>
+                                <li>@lang("challenges-content.$slug.instructions.4").</li>
+                                <li>@lang("challenges-content.$slug.instructions.5").</li>
+                                <li>@lang("challenges-content.$slug.instructions.6").</li>
+
                             </ul>
 
                         </div>
@@ -140,8 +120,8 @@
                     @include('2021.challenges._share')
 
                     <section class="p-2">
-                        <div class="orange text-3xl">Example</div>
-                        <div class="mt-2">See some examples of paper circuits:
+                        <div class="orange text-3xl">@lang('challenges.common.example')</div>
+                        <div class="mt-2">@lang("challenges-content.$slug.example"):
 
                         </div>
                         <div>
