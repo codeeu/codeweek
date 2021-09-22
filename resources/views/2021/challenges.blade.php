@@ -158,6 +158,27 @@
                         </div>
 
 
+                        <div class="leading-6 text-base text-left mt-2">
+
+                            <strong>@lang('challenges.bingo.0')</strong><br/>
+                            <div class="mt-2">
+                                @lang('challenges.bingo.1') <a
+                                        href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2021/Bingo+card.pdf">@lang('challenges.bingo.2')</a> @lang('challenges.bingo.3')
+                                <br/>
+                            </div>
+                        </div>
+
+                        <div class="leading-6 text-base text-left mt-6">
+
+                            <strong>@lang('challenges.bingo.4')</strong><br/>
+                            <div class="mt-2">
+                                @lang('challenges.bingo.5') <strong>@lang('challenges.bingo.6')</strong><br/>
+                                @lang('challenges.bingo.7') <strong>#CodeWeekChallengesBingo</strong><br/>
+                            </div>
+
+                        </div>
+
+
                     </div>
 
                     <div class="mt-6 orange text-3xl">

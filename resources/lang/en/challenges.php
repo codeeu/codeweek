@@ -80,5 +80,18 @@ return [
         'Click',
         'here',
         'to download this challenge as a word document'
+    ],
+    'bingo' =>[
+        'Complete all the Challenges',
+        'Challenge completed? Print',
+        'the bingo card',
+        'and mark the little white bubble on the top left',
+        'Share your Challenge on social media and win some cool Code Week prizes',
+        'Just upload a picture with the completed row(s), column(s) or even better - the whole bingo - to',
+        'Facebook, Instagram or Twitter',
+        'Make sure to use the',
+        '',
+        '',
+        '',
     ]
 ];
