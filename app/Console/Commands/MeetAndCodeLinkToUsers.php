@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use App\Event;
 use App\Helpers\MeetAndCodeHelper;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Log;
 
 class MeetAndCodeLinkToUsers extends Command
 {
@@ -39,12 +40,16 @@ class MeetAndCodeLinkToUsers extends Command
      */
     public function handle()
     {
+
+        $this->info('The command was successful!');
         $events = Event::where("event_url","like","https://meet-and-code.org/%")->get();
 
+        $total = 0;
         foreach ($events as $event) {
-            MeetAndCodeHelper::linkToUsers($event);
+            MeetAndCodeHelper::linkToUsers($event, $total);
         }
+        Log::info("{$total} Activites have been linked with the users");
 
-        $this->info('Users have been linked');
+        $this->info("{$total} Activites have been linked with the users");
     }
 }
