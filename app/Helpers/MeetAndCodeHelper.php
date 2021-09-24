@@ -62,7 +62,7 @@ class MeetAndCodeHelper
 
     }
 
-    public static function linkToUsers($event)
+    public static function linkToUsers($event, &$total)
     {
         //Check if user is known
         $foundUser = User::firstWhere('email','=',$event->user_email);
@@ -71,6 +71,8 @@ class MeetAndCodeHelper
             //Update the event
             $event->creator_id = $foundUser->id;
             $event->save();
+            $total++;
+            Log::info("User {$foundUser->email} has been linked to the imported activity {$event->id}");
         }
 
     }
