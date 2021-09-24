@@ -51,10 +51,11 @@ class MeetAndCodeLinkToUsers extends Command
 
         $total = 0;
         foreach ($events as $event) {
-            MeetAndCodeHelper::linkToUsers($event, $total);
+            $added = MeetAndCodeHelper::linkToUsers($event);
+            $total += $added;
         }
-        Log::info("{$total} Activites have been linked with the users");
+        Log::info("{$total} Activities have been linked with the users");
 
-        $this->info("{$total} Activites have been linked with the users");
+
     }
 }
