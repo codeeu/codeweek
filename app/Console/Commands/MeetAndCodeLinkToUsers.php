@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Event;
+use App\Helpers\ImporterHelper;
 use App\Helpers\MeetAndCodeHelper;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
@@ -42,7 +43,11 @@ class MeetAndCodeLinkToUsers extends Command
     {
 
         $this->info('The command was successful!');
-        $events = Event::where("event_url","like","https://meet-and-code.org/%")->get();
+        $technicalUser = ImporterHelper::getTechnicalUser("meetandcode-technical");
+        $events = Event::where([
+            ["event_url","like","https://meet-and-code.org/%"],
+            ["creator_id",$technicalUser->id]
+        ])->get();
 
         $total = 0;
         foreach ($events as $event) {
