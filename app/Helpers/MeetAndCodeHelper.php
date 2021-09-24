@@ -50,13 +50,27 @@ class MeetAndCodeHelper
         }
     }
 
-    public static function updateThemeAndAudience($event){
-        if (!$event->audiences()->exists()){
+    public static function updateThemeAndAudience($event)
+    {
+        if (!$event->audiences()->exists()) {
             $event->audiences()->attach(8);
         }
 
-        if (!$event->themes()->exists()){
+        if (!$event->themes()->exists()) {
             $event->themes()->attach(8);
+        }
+
+    }
+
+    public static function linkToUsers($event)
+    {
+        //Check if user is known
+        $foundUser = User::firstWhere('email','=',$event->user_email);
+
+        if($foundUser){
+            //Update the event
+            $event->creator_id = $foundUser->id;
+            $event->save();
         }
 
     }
