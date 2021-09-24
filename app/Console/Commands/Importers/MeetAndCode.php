@@ -56,11 +56,12 @@ class MeetAndCode extends Command
 
 
         foreach ($items as $item){
-            $item->createEvent($techicalUser);
+            $event = $item->createEvent($techicalUser);
             $item->imported_at = Carbon::now();
             //TODO: check for updating the event if it already exists
             $item->save();
-            MeetAndCodeHelper::linkToUsers($item, 0);
+            MeetAndCodeHelper::linkToUsers($event);
+
         }
 
         Log::info("Activities created from RSS Feed: " . count($items));
