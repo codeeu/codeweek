@@ -54,6 +54,7 @@ class Germany extends Command
         $this->call("api:hamburg");
         $this->call("api:berlin");
         $this->call("api:leipzig");
+        $this->call("api:thueringen");
 
         dump("Done Loading German events");
 

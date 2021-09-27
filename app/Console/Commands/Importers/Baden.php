@@ -3,10 +3,11 @@
 namespace App\Console\Commands\Importers;
 
 
-use App\BadenRSSItem;
+
 use App\Helpers\ImporterHelper;
 
 
+use App\RSSItems\BadenRSSItem;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Artisan;

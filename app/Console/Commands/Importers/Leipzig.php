@@ -3,11 +3,10 @@
 namespace App\Console\Commands\Importers;
 
 
-use App\BerlinRSSItem;
 use App\Helpers\ImporterHelper;
 
 
-use App\LeipzigRSSItem;
+use App\RSSItems\LeipzigRSSItem;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Artisan;
