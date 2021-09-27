@@ -6,28 +6,28 @@ namespace App\Console\Commands\Importers;
 use App\Helpers\ImporterHelper;
 
 
-use App\RSSItems\LeipzigRSSItem;
+use App\RSSItems\ThueringenRSSItem;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Log;
 
 
-class Leipzig extends Command
+class Thueringen extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'import:leipzig';
+    protected $signature = 'import:thueringen';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Import the data from Leipzig API';
+    protected $description = 'Import the data from Thueringen API';
 
     /**
      * Create a new command instance.
@@ -48,11 +48,11 @@ class Leipzig extends Command
      */
     public function handle()
     {
-        Log::info("Loading Leipzig API Items in Database");
+        Log::info("Loading Thueringen API Items in Database");
 
         $techicalUser = ImporterHelper::getTechnicalUser("germany-technical");
 
-        $items = LeipzigRSSItem::whereNull('imported_at')->get();
+        $items = ThueringenRSSItem::whereNull('imported_at')->get();
 
 
 
@@ -63,7 +63,7 @@ class Leipzig extends Command
             $item->save();
         }
 
-        Log::info("Activities created from RSS Feed: " . count($items));
+        Log::info("Activities created from Thueringen RSS Feed: " . count($items));
 
 
     }
