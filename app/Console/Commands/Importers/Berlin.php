@@ -7,28 +7,28 @@ namespace App\Console\Commands\Importers;
 use App\Helpers\ImporterHelper;
 
 
-use App\RSSItems\BadenRSSItem;
+use App\RSSItems\BerlinRSSItem;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Log;
 
 
-class Baden extends Command
+class Berlin extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'import:baden';
+    protected $signature = 'import:berlin';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Import the data from Baden API';
+    protected $description = 'Import the data from Berlin API';
 
     /**
      * Create a new command instance.
@@ -49,11 +49,11 @@ class Baden extends Command
      */
     public function handle()
     {
-        Log::info("Loading Baden API Items in Database");
+        Log::info("Loading Berlin API Items in Database");
 
-        $techicalUser = ImporterHelper::getTechnicalUser("baden-technical");
+        $techicalUser = ImporterHelper::getTechnicalUser("berlin-technical");
 
-        $items = BadenRSSItem::whereNull('imported_at')->get();
+        $items = BerlinRSSItem::whereNull('imported_at')->get();
 
 
 

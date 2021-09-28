@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 
 
-class Baden extends Command
+class Bremen extends Command
 {
 
     use GermanTraits;
@@ -21,14 +21,14 @@ class Baden extends Command
      *
      * @var string
      */
-    protected $signature = 'api:baden';
+    protected $signature = 'api:bremen';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Import Baden Events';
+    protected $description = 'Import Bremen Events';
 
     /**
      * Create a new command instance.
@@ -53,9 +53,9 @@ class Baden extends Command
     public function handle()
     {
 
-        $city = 'Baden';
+        $city = 'Bremen';
 
-        $url = "https://bw.codeweek.de/?tx_codeweekevents_api[action]=listForEu&tx_codeweekevents_api[controller]=Api&tx_codeweekevents_api[format]=.json&tx_typoscriptrendering[context]={%22record%22%3A%22pages_1%22%2C%22path%22%3A%22tt_content.list.20.codeweekevents_api%22}&cHash=74bb9d71d62e381ebe95b33c1e197943";
+        $url = "https://bremen.codeweek.de/?tx_codeweekevents_api[action]=listForEu&tx_codeweekevents_api[controller]=Api&tx_codeweekevents_api[format]=.json&tx_typoscriptrendering[context]={%22record%22%3A%22pages_1%22%2C%22path%22%3A%22tt_content.list.20.codeweekevents_api%22}&cHash=74bb9d71d62e381ebe95b33c1e197943";
         dump("Loading $city events");
 
         $response = Http::get($url);
@@ -71,7 +71,7 @@ class Baden extends Command
 
 
 
-        return Artisan::call("import:baden");
+        return Artisan::call("import:bremen");
 
 
 
