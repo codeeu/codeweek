@@ -50,7 +50,7 @@ class Thueringen extends Command
     {
         Log::info("Loading Thueringen API Items in Database");
 
-        $techicalUser = ImporterHelper::getTechnicalUser("germany-technical");
+        $techicalUser = ImporterHelper::getTechnicalUser("thueringen-technical");
 
         $items = ThueringenRSSItem::whereNull('imported_at')->get();
 

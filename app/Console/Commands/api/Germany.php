@@ -49,12 +49,14 @@ class Germany extends Command
         dump("Loading German events");
 
 
+        $this->call("api:hamburg");
         $this->call("api:baden");
         $this->call("api:bonn");
-        $this->call("api:hamburg");
         $this->call("api:berlin");
         $this->call("api:leipzig");
+        $this->call("api:dresden");
         $this->call("api:thueringen");
+        $this->call("api:bremen");
 
         dump("Done Loading German events");
 
