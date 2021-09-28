@@ -50,7 +50,7 @@ class Leipzig extends Command
     {
         Log::info("Loading Leipzig API Items in Database");
 
-        $techicalUser = ImporterHelper::getTechnicalUser("germany-technical");
+        $techicalUser = ImporterHelper::getTechnicalUser("leipzig-technical");
 
         $items = LeipzigRSSItem::whereNull('imported_at')->get();
 

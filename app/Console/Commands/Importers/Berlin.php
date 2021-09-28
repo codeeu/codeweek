@@ -51,7 +51,7 @@ class Berlin extends Command
     {
         Log::info("Loading Berlin API Items in Database");
 
-        $techicalUser = ImporterHelper::getTechnicalUser("germany-technical");
+        $techicalUser = ImporterHelper::getTechnicalUser("berlin-technical");
 
         $items = BerlinRSSItem::whereNull('imported_at')->get();
 
