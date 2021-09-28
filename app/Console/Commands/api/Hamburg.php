@@ -15,6 +15,9 @@ use Illuminate\Support\Facades\Log;
 
 class Hamburg extends Command
 {
+
+    use GermanTraits;
+
     /**
      * The name and signature of the console command.
      *
@@ -52,62 +55,24 @@ class Hamburg extends Command
     public function handle()
     {
 
+        $city = 'Hamburg';
+
         $url = "https://hamburg.codeweek.de/?tx_codeweekevents_api%5Baction%5D=listForEu&tx_codeweekevents_api%5Bcontroller%5D=Api&tx_codeweekevents_api%5Bformat%5D=.json&tx_typoscriptrendering%5Bcontext%5D=%7B%22record%22:%22pages_42%22,%22path%22:%22tt_content.list.20.codeweekevents_api%22%7D&cHash=c5952d04181fb05e7d86ef43efcd7f26";
-        dump("Loading Hamburg events");
+        dump("Loading $city events");
         $force = $this->option('force');
 
         $response = Http::get($url);
 
         $json = $response->json();
 
-
-
-        $new = 0;
-        $updated = 0;
-
-        foreach ($json as $item) {
-
-            $RSSitem = new HamburgRSSItem();
-
-            $RSSitem->uid = $item['uid'];
-            $RSSitem->title = $item['title'];
-            $RSSitem->description = $item['description'];
-            $RSSitem->organizer = $item['organizer'];
-            $RSSitem->photo = $item['photo'];
-            $RSSitem->eventEndDate = $item['eventEndDate'];
-            $RSSitem->eventStartDate = $item['eventStartDate'];
-            $RSSitem->latitude = $item['latitude'];
-            $RSSitem->longitude = $item['longitude'];
-            $RSSitem->location = $item['location'];
-            $RSSitem->user_company = $item['user']['company'];
-            $RSSitem->user_email = $item['user']['email'];
-            $RSSitem->user_publicEmail = $item['user']['publicEmail'];
-            $RSSitem->user_type = $item['user']['type']['identifier'];
-            $RSSitem->user_website = $item['user']['www'];
-            $RSSitem->activity_type = $item['type']['identifier'];
-            $RSSitem->tags = trim(implode(";",Arr::pluck($item['tags'],'title')));
-            $RSSitem->themes = trim(implode(",",Arr::pluck($item['themes'],'identifier')));
-            $RSSitem->audience = trim(implode(",",Arr::pluck($item['audience'],'identifier')));
-
-
-            try {
-
-//                Log::info($RSSitem);
-                $RSSitem->save();
-
-
-                $new++;
-
-            } catch (\PDOException $exception) {
-
-                if ($exception->getCode() !== '23000') {
-                    Log::error($exception->errorInfo);
-                }
-
-            }
-
+        if (is_null($json)){
+            Log::info("!!! No data in feed from $city API:");
+            return 0;
         }
-        Log::info("New items imported from Hamburg API: " . $new);
+
+        $this->createRSSItem($json, $city);
+
+
 
         Artisan::call("import:hamburg");
 

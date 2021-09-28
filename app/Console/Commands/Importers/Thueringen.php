@@ -3,32 +3,31 @@
 namespace App\Console\Commands\Importers;
 
 
-
 use App\Helpers\ImporterHelper;
 
 
-use App\RSSItems\BadenRSSItem;
+use App\RSSItems\ThueringenRSSItem;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Log;
 
 
-class Baden extends Command
+class Thueringen extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'import:baden';
+    protected $signature = 'import:thueringen';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Import the data from Baden API';
+    protected $description = 'Import the data from Thueringen API';
 
     /**
      * Create a new command instance.
@@ -49,11 +48,11 @@ class Baden extends Command
      */
     public function handle()
     {
-        Log::info("Loading Baden API Items in Database");
+        Log::info("Loading Thueringen API Items in Database");
 
-        $techicalUser = ImporterHelper::getTechnicalUser("baden-technical");
+        $techicalUser = ImporterHelper::getTechnicalUser("thueringen-technical");
 
-        $items = BadenRSSItem::whereNull('imported_at')->get();
+        $items = ThueringenRSSItem::whereNull('imported_at')->get();
 
 
 
@@ -64,7 +63,7 @@ class Baden extends Command
             $item->save();
         }
 
-        Log::info("Activities created from RSS Feed: " . count($items));
+        Log::info("Activities created from Thueringen RSS Feed: " . count($items));
 
 
     }
