@@ -15,6 +15,10 @@ class EventResource extends JsonResource {
         return [
             'title' => $this->title,
             'description' => $this->description,
+            'start_date'=> $this->start_date,
+            'end_date'=> $this->end_date,
+            'created_at'=> $this->created_at,
+            'updated_at'=> $this->updated_at,
             'picture' => $this->picture_path(),
             'path' => $this->path(),
             'geoposition' => $this->geoposition,
