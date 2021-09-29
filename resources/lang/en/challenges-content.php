@@ -240,7 +240,7 @@ return [
         ]
     ],
     'create-a-dance' => [
-        'title' => 'Create a dance with the Ode to Code!',
+        'title' => 'Create a dance with the Ode to Code on Dance Party',
         'purposes' =>
             'To practice coding in a fun way and feel connected with the EU Code Week community.',
         'description' => [
