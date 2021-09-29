@@ -109,6 +109,7 @@
                                 <li>@lang("challenges-content.$slug.instructions.0") <a href="https://drive.google.com/file/d/1F2k68YD4q899KFSs1RX3zNp9jvJ0AC7i/view?usp=sharing">@lang("challenges-content.$slug.instructions.1")</a>, @lang("challenges-content.$slug.instructions.2") <a href="https://drive.google.com/file/d/1U8xf25xtWQJk8T-qpfkDMqcMUka_osat/view?usp=sharing">@lang("challenges-content.$slug.instructions.1")</a>.</li>
                                 <li>@lang("challenges-content.$slug.instructions.3").</li>
                                 <li>@lang("challenges-content.$slug.instructions.4").</li>
+                                <li>@lang("challenges-extra.$slug.0") <a href="https://drive.google.com/drive/folders/1sSEBskDeDrKyVNUJ_F8s9Wss7YFwCD8B?usp=sharing">@lang("challenges-extra.$slug.1")</a>.</li>
                             </ul>
                         </div>
                     </section>
