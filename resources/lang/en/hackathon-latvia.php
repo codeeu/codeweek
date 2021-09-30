@@ -212,6 +212,10 @@ return [
             '15' => [
                 'Elina Razena',
                 'Founder of Learn IT coding school for children, EU CodeWeek ambassador in Latvia'
+            ],
+            '16' => [
+                'Kristine Subrovska',
+                'Graphic designer, accessibility, UX / UI enthusiast. I appreciate good design and well-considered, simple illustrations  '
             ]
         ],
         'leaders' => [

@@ -216,6 +216,10 @@ return [
             '15' => [
                 'Elina Ražena',
                 'Learn IT bērnu programmēšanas skolas dibinātāja, ES Programmēšanas nedēļās vēstniece Latvijā'
+            ],
+            '16' => [
+                'Kristīne Šubrovska',
+                'Grafiskā dizainere, piekļūstamības, UX/UI entuziaste. Novērtēju labu dizainu un pārdomātas, vienkāršas ilustrācijas'
             ]
         ],
         'leaders' => [
