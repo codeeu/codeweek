@@ -211,6 +211,15 @@
                 </div>
             </div>
 
+            <div class="item">
+                <div class="flex justify-center">
+                    <img src="{{asset('/images/hackathons/profiles/romania/claudiu.png')}}">
+                </div>
+                <h2 class="text-center">Claudiu Gonciulea</h2>
+                <div class="text-sm">@lang('hackathon-romania.sections.mentors.10.0')
+                </div>
+            </div>
+
 
         </div>
     </section>

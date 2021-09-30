@@ -217,6 +217,10 @@ return [
             '9' => [
                 "Software developer and technology passionate- I enjoy building and delivering quality, all the while trying to have fun as much as possible. I am a perceptive and innovative individual that's not afraid to exploit its best version and go the extra mile outside the comfort zone of conventional.",
                 'This exact desire, of getting out of the comfort zone, led me in the last years to changing the context from full-stack, frontend, API design to technical leadership and architecture.'
+            ],
+            '10' => [
+                "I am a graduate student of University of Bucharest. I am an IT Specialist focusing on Cloud technologies, microservice architecture and DevOps. While I consider myself a programming language polyglot, JAVA is my core development language and Spring Framework is my de-facto choice whenever I design and build a new application. My professional activities consist in combination of BA, DEV and Operation, with focus on development."
+
             ]
         ],
 
