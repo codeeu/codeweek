@@ -248,6 +248,14 @@
                 <div class="text-sm">@lang('hackathon-latvia.sections.mentors.15.1')</div>
             </div>
 
+            <div class="item">
+                <div class="flex justify-center">
+                    <img src="{{asset('/images/hackathons/profiles/latvia/5/kristine-subrovska.png')}}">
+                </div>
+                <h2 class="text-center">@lang('hackathon-latvia.sections.mentors.16.0')</h2>
+                <div class="text-sm">@lang('hackathon-latvia.sections.mentors.16.1')</div>
+            </div>
+
 
 
         </div>
