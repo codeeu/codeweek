@@ -218,6 +218,9 @@ return [
             '9' => [
                 'Pasionată de software development și tehnologie în general, întotdeauna urmăresc ca produsele și proiectele la care lucrez să se ghideze după cele mai înalte standarde de calitate. Atunci când nu scriu cod îmi place să împărtășesc cu ceilalti din experiența mea  fiind speaker  si technical trainer în cadrul conferințelor. ',
                 'Sunt motivată de provocări și dorința de experimenta cu proiecte diverse, însă nu uit nicio secundă să mă bucur de proces.'
+            ],
+            '10' => [
+                'Sunt absolvent al Universității din București. Sunt specialist IT concentrându-mă pe tehnologii Cloud, arhitectura microservice și DevOps. În timp ce mă consider un poliglot al limbajelor de programare, JAVA este limbajul meu de bază, iar Spring Framework este prima mea alegere ori de câte ori proiectez și construiesc o nouă aplicație. Activitățile mele profesionale constă într-o combinație de BA, DEV și IT Operation, cu accent pe dezvoltare.'
             ]
         ],
 

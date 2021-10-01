@@ -216,6 +216,10 @@ return [
             '15' => [
                 'Elina Ražena',
                 'Learn IT bērnu programmēšanas skolas dibinātāja, ES Programmēšanas nedēļās vēstniece Latvijā'
+            ],
+            '16' => [
+                'Kristīne Šubrovska',
+                'Grafiskā dizainere, piekļūstamības, UX/UI entuziaste. Novērtēju labu dizainu un pārdomātas, vienkāršas ilustrācijas'
             ]
         ],
         'leaders' => [
@@ -228,7 +232,7 @@ return [
                 'Kārlis Jonāss',
                 'Dizaina domātājs un treneris, pasniedz interaktīvus seminārus un darbnīcas par dizaina domāšanu un inovācijām.'
             ],
-            '3' => ['', '']
+            '3' => ['Pēteris Jurčenko', 'UX dizainers, pieejamības entuziasts. Palīdzu iestādēm uzlabot un ieviest digitālos risinājumus, lai tie kļūtu efektīvāki.']
         ],
 
         'after' => [
