@@ -232,7 +232,7 @@ return [
                 'Kārlis Jonāss',
                 'Dizaina domātājs un treneris, pasniedz interaktīvus seminārus un darbnīcas par dizaina domāšanu un inovācijām.'
             ],
-            '3' => ['', '']
+            '3' => ['Pēteris Jurčenko', 'UX dizainers, pieejamības entuziasts. Palīdzu iestādēm uzlabot un ieviest digitālos risinājumus, lai tie kļūtu efektīvāki.']
         ],
 
         'after' => [
