@@ -47,7 +47,12 @@
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
-                            <li>@lang('challenges.common.pre-primary') (3-6)</li>
+                            <li>@lang("resources.resources.levels.Pre-primary education") (3-5)</li>
+                            <li>@lang("resources.resources.levels.Primary school (5-12)")</li>
+                            <li>@lang("resources.resources.levels.Lower secondary school (12-16)")</li>
+                            <li>@lang("resources.resources.levels.Upper secondary school (16-18)")</li>
+                            <li>@lang("resources.resources.levels.Higher Education") (18-20)</li>
+
                         </ol>
                     </div>
 
