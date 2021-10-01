@@ -228,7 +228,7 @@ return [
                 'Kārlis Jonāss',
                 'Design thinker and facilitator. Karlis helps teams, companies and individuals bring change through design.'
             ],
-            '3' => ['', '']
+            '3' => ['Peteris Jurcenko', 'UX designer, accessibility enthusiast. I help institutions to redesign themselves and implement digital solutions to become more effective.']
         ],
 
         'after' => [
