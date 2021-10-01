@@ -87,6 +87,21 @@ class EventsController extends Controller {
             ->get();
     }
 
+    public function germany(Request $request){
+        $validated = $request->validate([
+            'year' => 'required|numeric',
+        ]);
+
+        $collection = \App\Http\Resources\EventResource::collection(
+            Event::where('status', 'like', 'APPROVED')
+                ->where('country_iso', 'DE')
+                ->whereYear('end_date', '=', $validated['year'])
+                ->get()
+        );
+
+        return $collection;
+    }
+
     public function geobox(Request $request) {
         $validated = $request->validate([
             'lat1' => 'required|numeric',
