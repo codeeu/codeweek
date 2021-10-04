@@ -1,6 +1,6 @@
 <?php
 
-   /*
+/*
    |--------------------------------------------------------------------------
    | Base Language Lines
    |--------------------------------------------------------------------------
@@ -10,7 +10,6 @@
    */
 
 return [
-
     'languages' => [
         'en' => 'Anglais',
         'fr' => 'Français',
@@ -34,6 +33,7 @@ return [
         'es' => 'Espagnol',
         'fi' => 'Finnois',
         'lt' => 'Lituanien',
+        'se' => 'Suédois',
         'sv' => 'Suédois',
         'al' => 'Albanais',
         'ba' => 'Bosnien',
@@ -44,15 +44,16 @@ return [
         'tr' => 'Turc'
     ],
 
-    'resources_local_title'=>'Ressources pour le codage en',
-    'days'=>'Jours',
-    'hours'=>'Heures',
-    'minutes'=>'Minutes',
-    'seconds'=>'Secondes',
+    'resources_local_title' => 'Ressources pour le codage en',
+    'days' => 'Jours',
+    'hours' => 'Heures',
+    'minutes' => 'Minutes',
+    'seconds' => 'Secondes',
     'still_have_question' => 'Vous avez d’autres questions?',
     'drop_us_a_line' => 'Écrivez-nous!',
     'get_in_touch' => 'CONTACTEZ-NOUS',
-    'footer_msg' => 'Une initiative citoyenne dirigée par des volontaires et soutenue par la Commission européenne.',
+    'footer_msg' =>
+        'Une initiative citoyenne dirigée par des volontaires et soutenue par la Commission européenne.',
     'email' => 'Adresse e-mail',
     'display_email' => 'Afficher adresse e-mail',
     'first_name' => 'Prénom',
@@ -64,8 +65,8 @@ return [
     'choose a file' => 'Choisir un fichier',
     'learning_bits' => 'Apprentissage',
     'codeweek' => 'CodeWeek',
-    'bring_codeweek_to_your_students' => 'Faites découvrir la Semaine du code à vos élèves',
+    'bring_codeweek_to_your_students' =>
+        'Faites découvrir la Semaine du code à vos élèves',
     'or' => 'ou',
-    "newsletter" => "Newsletter"
-
+    'newsletter' => 'Newsletter'
 ];
