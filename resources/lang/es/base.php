@@ -1,6 +1,6 @@
 <?php
 
-   /*
+/*
    |--------------------------------------------------------------------------
    | Base Language Lines
    |--------------------------------------------------------------------------
@@ -10,7 +10,6 @@
    */
 
 return [
-
     'languages' => [
         'en' => 'Inglés',
         'fr' => 'Francés',
@@ -34,6 +33,7 @@ return [
         'es' => 'Español',
         'fi' => 'Finlandés',
         'lt' => 'Lituano',
+        'se' => 'Sueco',
         'sv' => 'Sueco',
         'al' => 'Albanés',
         'ba' => 'Bosnio',
@@ -44,15 +44,16 @@ return [
         'tr' => 'Turco'
     ],
 
-    'resources_local_title'=>'Recursos de programación de',
-    'days'=>'Días',
-    'hours'=>'Horas',
-    'minutes'=>'Minutos',
-    'seconds'=>'Segundos',
+    'resources_local_title' => 'Recursos de programación de',
+    'days' => 'Días',
+    'hours' => 'Horas',
+    'minutes' => 'Minutos',
+    'seconds' => 'Segundos',
     'still_have_question' => '¿Tienes más preguntas?',
     'drop_us_a_line' => 'Tan solo tienes que escribirnos.',
     'get_in_touch' => 'CONTACTA CON NOSOTROS',
-    'footer_msg' => 'Una iniciativa de base organizada por voluntarios y respaldada por la Comisión Europea.',
+    'footer_msg' =>
+        'Una iniciativa de base organizada por voluntarios y respaldada por la Comisión Europea.',
     'email' => 'Correo electrónico',
     'display_email' => 'Mostrar correo electrónico',
     'first_name' => 'Nombre',
@@ -64,8 +65,8 @@ return [
     'choose a file' => 'Elegir un archivo',
     'learning_bits' => 'Minicursos',
     'codeweek' => 'CodeWeek',
-    'bring_codeweek_to_your_students' => 'Lleva la Semana de la Programación a tus estudiantes',
+    'bring_codeweek_to_your_students' =>
+        'Lleva la Semana de la Programación a tus estudiantes',
     'or' => 'o',
-    "newsletter" => "Boletín"
-
+    'newsletter' => 'Boletín'
 ];

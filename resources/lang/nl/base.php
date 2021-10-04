@@ -1,6 +1,6 @@
 <?php
 
-   /*
+/*
    |--------------------------------------------------------------------------
    | Base Language Lines
    |--------------------------------------------------------------------------
@@ -10,7 +10,6 @@
    */
 
 return [
-
     'languages' => [
         'en' => 'Engels',
         'fr' => 'Frans',
@@ -35,24 +34,26 @@ return [
         'es' => 'Spaans',
         'fi' => 'Fins',
         'lt' => 'Litouws',
+        'se' => 'Zweeds',
         'sv' => 'Zweeds',
         'al' => 'Albanees',
         'ba' => 'Bosnisch',
         'mk' => 'Macedonisch',
-        'me'=> 'Montenegrijns',
+        'me' => 'Montenegrijns',
         'rs' => 'Servisch',
         'tr' => 'Turks '
     ],
 
-    'resources_local_title'=>'Hulpmiddelen voor programmeren van',
-    'days'=>'Dagen',
-    'hours'=>'Uur',
-    'minutes'=>'Minuten',
-    'seconds'=>'Seconden',
+    'resources_local_title' => 'Hulpmiddelen voor programmeren van',
+    'days' => 'Dagen',
+    'hours' => 'Uur',
+    'minutes' => 'Minuten',
+    'seconds' => 'Seconden',
     'still_have_question' => 'Heb je nog vragen?',
     'drop_us_a_line' => 'Stuur ons dan even een berichtje!',
     'get_in_touch' => 'CONTACT OPNEMEN',
-    'footer_msg' => 'Een burgerinitiatief dat door vrijwilligers wordt georganiseerd met steun van de Europese Commissie.',
+    'footer_msg' =>
+        'Een burgerinitiatief dat door vrijwilligers wordt georganiseerd met steun van de Europese Commissie.',
     'email' => 'E-mail',
     'display_email' => 'E-mail weergeven',
     'first_name' => 'Voornaam',
@@ -64,8 +65,8 @@ return [
     'choose a file' => 'Een bestand kiezen',
     'learning_bits' => 'Leerbits',
     'codeweek' => 'Programmeerweek',
-    'bring_codeweek_to_your_students' => 'Trakteer je leerlingen op de programmeerweek',
+    'bring_codeweek_to_your_students' =>
+        'Trakteer je leerlingen op de programmeerweek',
     'or' => 'of',
-    "newsletter" => "Nieuwsbrief"
-
+    'newsletter' => 'Nieuwsbrief'
 ];

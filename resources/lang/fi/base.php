@@ -1,6 +1,6 @@
 <?php
 
-   /*
+/*
    |--------------------------------------------------------------------------
    | Base Language Lines
    |--------------------------------------------------------------------------
@@ -10,7 +10,6 @@
    */
 
 return [
-
     'languages' => [
         'en' => 'englanti',
         'fr' => 'ranska',
@@ -34,25 +33,27 @@ return [
         'es' => 'espanja',
         'fi' => 'suomi',
         'lt' => 'liettua',
+        'se' => 'ruotsi',
         'sv' => 'ruotsi',
         'al' => 'albania',
         'ba' => 'bosnia',
         'mk' => 'makedonia',
-        'cnr'=> 'montenegro',
+        'cnr' => 'montenegro',
         'sr' => 'serbia',
         'mt' => 'malta ',
         'tr' => 'turkki'
     ],
 
-    'resources_local_title'=>'Koodausaineistoja maasta',
-    'days'=>'päivää',
-    'hours'=>'tuntia',
-    'minutes'=>'minuuttia',
-    'seconds'=>'sekuntia',
+    'resources_local_title' => 'Koodausaineistoja maasta',
+    'days' => 'päivää',
+    'hours' => 'tuntia',
+    'minutes' => 'minuuttia',
+    'seconds' => 'sekuntia',
     'still_have_question' => 'Onko sinulla kysyttävää?',
     'drop_us_a_line' => 'Kirjoita meille!',
     'get_in_touch' => 'OTA YHTEYTTÄ',
-    'footer_msg' => 'Vapaaehtoisvoimin ja Euroopan komission tuella järjestettävä ruohonjuuritason aloite.',
+    'footer_msg' =>
+        'Vapaaehtoisvoimin ja Euroopan komission tuella järjestettävä ruohonjuuritason aloite.',
     'display_email' => 'Näytä sähköposti',
     'first_name' => 'Etunimi',
     'last_name' => 'Sukunimi',
@@ -65,6 +66,5 @@ return [
     'codeweek' => 'Koodausviikko',
     'bring_codeweek_to_your_students' => 'Ota oppilaat mukaan koodausviikkoon',
     'or' => 'tai',
-    "newsletter" => "Uutiskirje"
-
+    'newsletter' => 'Uutiskirje'
 ];
