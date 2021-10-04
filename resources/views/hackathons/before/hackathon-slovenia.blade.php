@@ -277,6 +277,16 @@
                     </div>
                 </div>
 
+                <div class="item">
+                    <div class="flex justify-center">
+                        <img src="{{asset('/images/hackathons/profiles/slovenia/gasper_koren.png')}}">
+                    </div>
+                    <h2 class="text-center">@lang('hackathon-slovenia.sections.mentors.7.0')</h2>
+                    <div class="text-sm">@lang('hackathon-slovenia.sections.mentors.7.1')
+
+                    </div>
+                </div>
+
 
             </div>
         </section>

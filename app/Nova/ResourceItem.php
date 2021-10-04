@@ -9,6 +9,7 @@ use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
@@ -72,6 +73,7 @@ class ResourceItem extends Resource
             Text::make('name')->sortable(),
             Text::make('Description')->sortable()->hideFromIndex(),
             Text::make('Source')->sortable()->hideFromIndex(),
+            Number::make('weight')->sortable(),
             Boolean::make('Teach'),
             Boolean::make('Learn'),
 

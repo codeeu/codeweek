@@ -90,7 +90,7 @@
 
 
                         <div class="mt-2">
-                            @lang("challenges-content.$slug.description")
+                            @lang("challenges-content.$slug.title") @lang("challenges-content.$slug.description")
                         </div>
                     </section>
 

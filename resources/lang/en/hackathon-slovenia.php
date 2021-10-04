@@ -233,6 +233,10 @@ return [
                 "Alojz has an excellent working knowledge of IT, is a highly experienced developer and system designer. His field of work is also on microservice platforms - development and deployment of services on these platforms. 30+ years of experience in international enterprise projects with larger systems, in finance, telco and retail sector.",
                 "In addition to this he is an outstanding Official Red Hat Instructor and Architect. He is a curious learner and eager to implement and share his newly obtained knowledge in practice.",
             ],
+            "7" => [
+                "Gasper Koren",
+                "Gasper started his career as a researcher at University of Ljubljana where he focused on Survey Data Collection and Statistical analysis. Later he switched to Tech Startup World, where he spent the past 14 years. First he worked as Chief Operations Officer at one of the first VC founded Slovenian startups, <a href='https://www.zemanta.com'>Zemanta</a> which got acquired by Outbrain (Nasdaq: OB). Currently working as VP of Finance and Compliance at <a href='https://www.flaviar.com'>Flaviar</a>, largest US Online Marketplace for Spirits. His experience go from (tech) product development and data analytics to international operations and finance.",
+            ],
         ],
 
         "after" => [
