@@ -1,6 +1,6 @@
 <?php
 
-   /*
+/*
    |--------------------------------------------------------------------------
    | Base Language Lines
    |--------------------------------------------------------------------------
@@ -10,7 +10,6 @@
    */
 
 return [
-
     'languages' => [
         'en' => 'Engleski',
         'fr' => 'Francuski',
@@ -34,26 +33,27 @@ return [
         'es' => 'Španski',
         'fi' => 'Finski',
         'lt' => 'Litvanski',
+        'se' => 'Švedski',
         'sv' => 'Švedski',
         'al' => 'albanski',
         'ba' => 'bosanski',
         'mk' => 'makedonski',
-        'me'=> 'crnogorski',
+        'me' => 'crnogorski',
         'rs' => 'srpski',
         'mt' => 'Malteški',
         'tr' => 'Turski'
-
     ],
 
-    'resources_local_title'=>'Resursi za kodiranje od',
-    'days'=>'Dani',
-    'hours'=>'Sati',
-    'minutes'=>'Minute',
-    'seconds'=>'Sekunde',
+    'resources_local_title' => 'Resursi za kodiranje od',
+    'days' => 'Dani',
+    'hours' => 'Sati',
+    'minutes' => 'Minute',
+    'seconds' => 'Sekunde',
     'still_have_question' => 'Još uvijek imate pitanja?',
     'drop_us_a_line' => 'Samo nam se javite!',
     'get_in_touch' => 'STUPITE U KONTAKT',
-    'footer_msg' => 'Inicijativa na nivou širokih masa koju vode volonteri i koju podržava Evropska komisija.',
+    'footer_msg' =>
+        'Inicijativa na nivou širokih masa koju vode volonteri i koju podržava Evropska komisija.',
     'email' => 'E-pošta',
     'display_email' => 'Prikazati e-poštu',
     'first_name' => 'Lično ime',
@@ -66,8 +66,8 @@ return [
 
     'learning_bits' => 'Učenje korak po korak',
     'codeweek' => 'Sedmica kodiranja',
-    'bring_codeweek_to_your_students' => 'Približite Sedmicu kodiranja svojim učenicima',
+    'bring_codeweek_to_your_students' =>
+        'Približite Sedmicu kodiranja svojim učenicima',
     'or' => 'ili',
-    "newsletter" => "Novosti"
-
+    'newsletter' => 'Novosti'
 ];

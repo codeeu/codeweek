@@ -9,53 +9,53 @@ use App\Queries\OnlineEventsQuery;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
-class OnlineEventsController extends Controller
-{
-    public function list(Country $country = null)
-    {
+class OnlineEventsController extends Controller {
+    public function list(Country $country = null) {
         return $this->build($country);
     }
 
-    public function promoted(Country $country = null)
-    {
+    public function promoted(Country $country = null) {
         return $this->build($country, 'promoted');
     }
 
-    public function featured(Country $country = null)
-    {
+    public function featured(Country $country = null) {
         return $this->build($country, 'featured');
     }
 
-    public function calendar(Request $request)
-    {
-
+    public function calendar(Request $request) {
         $events = EventHelper::getOnlineEvents();
 
-        $events->map(function($event){
+        $events->map(function ($event) {
             $event->title = str_limit($event->title, 50);
-            $event->start_date = Carbon::parse($event->start_date)->toDateString();
+            $event->start_date = Carbon::parse(
+                $event->start_date
+            )->toDateString();
         });
 
         $countries = CountriesQuery::withOnlineEvents('FEATURED');
 
         $countryNames = $this->getCountryNamesFromEvents($events);
 
-        $languages = $events->groupBy('language')->keys()->all();
+        $languages = $events
+            ->groupBy('language')
+            ->keys()
+            ->all();
 
         return view('online-calendar.oc-index', [
-            'events'=> $events,
+            'events' => $events,
             'countries' => $countries,
             'countryNames' => $countryNames,
             'languages' => $languages
         ]);
-
     }
 
-    private function build(?Country $country, $highlightedStatus = null)
-    {
+    private function build(?Country $country, $highlightedStatus = null) {
         //List of online events per country
-        if (!is_null($highlightedStatus)){
-            $events = OnlineEventsQuery::trigger($country, strtoupper($highlightedStatus));
+        if (!is_null($highlightedStatus)) {
+            $events = OnlineEventsQuery::trigger(
+                $country,
+                strtoupper($highlightedStatus)
+            );
             $countries = CountriesQuery::withOnlineEvents($highlightedStatus);
         } else {
             $events = OnlineEventsQuery::trigger($country);
@@ -64,32 +64,37 @@ class OnlineEventsController extends Controller
 
         $countryNames = $this->getCountryNamesFromEvents($events);
 
-        if (is_null($highlightedStatus)) $highlightedStatus = "list";
+        if (is_null($highlightedStatus)) {
+            $highlightedStatus = 'list';
+        }
 
-        return view('online-calendar.admin.list', with([
-            'country_iso' => is_null($country) ? '' : $country->iso,
-            'country_name' => is_null($country) ? '' : $country->name,
-            'events' => $events,
-            'countries' => $countries,
-            'countryNames' => $countryNames,
-            'target' => 'online/' . $highlightedStatus
-        ]));
+        return view(
+            'online-calendar.admin.list',
+            with([
+                'country_iso' => is_null($country) ? '' : $country->iso,
+                'country_name' => is_null($country) ? '' : $country->name,
+                'events' => $events,
+                'countries' => $countries,
+                'countryNames' => $countryNames,
+                'target' => 'online/' . $highlightedStatus
+            ])
+        );
     }
 
     /**
      * @param $events
      * @return mixed
      */
-    private function getCountryNamesFromEvents($events)
-    {
-        $country_codes = $events->groupBy('country_iso')->keys()->all();
+    private function getCountryNamesFromEvents($events) {
+        $country_codes = $events
+            ->groupBy('country_iso')
+            ->keys()
+            ->all();
 
-        $countriesObjects = Country::whereIn("iso", $country_codes)->get();
+        $countriesObjects = Country::whereIn('iso', $country_codes)->get();
         $countryNames = $countriesObjects->mapWithKeys(function ($item) {
-            return [$item['iso'] => __("countries." . $item['name'])];
+            return [$item['iso'] => __('countries.' . $item['name'])];
         });
         return $countryNames;
     }
-
-
 }
