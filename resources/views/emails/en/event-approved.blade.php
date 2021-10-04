@@ -9,9 +9,9 @@
 you get started:</p>
 
 <ul>
-<li><a target="_blank" href="{{env('APP_URL')}}/guide">EU Code Week Activity Toolkit</a></li>
-<li><a target="_blank" href="{{env('APP_URL')}}/resources">EU Code Week Resources Page</a></li>
-<li><a target="_blank" href="{{env('APP_URL')}}/ambassadors">Ambassador’s Page</a></li>
+<li><a target="_blank" href="{{env('APP_URL')}}/toolkits">EU Code Week Activity Toolkit</a></li>
+<li><a target="_blank" href="{{env('APP_URL')}}/resources/teach">EU Code Week Resources Page</a></li>
+<li><a target="_blank" href="{{env('APP_URL')}}/community">Community</a></li>
 </ul>
 
 <p>If you are interested in linking your activity with those organised by friends, colleagues or other contacts,
@@ -44,11 +44,6 @@ Use this badge to post on your organisation or school’s website, and share it 
 know about your involvement in EU Code Week!
 </p>
 </div>
-
-<div>
-Join our virtual kick-off event on 8 October 17:00 CET and learn about new free courses, challenges and activities. Our exciting line-up includes EU Commissioners Thierry Breton and Mariya Gabriel, Mitch Resnick MIT Professor, Alessandro Bogliolo Professor at Urbino University, Linda Liukas author of Hello Ruby and Dipty Chander president of E-MMA. The event will be live-streamed on <a href="https://www.youtube.com/user/CodeWeekEU">YouTube</a> and <a href="https://www.facebook.com/events/2623761004602631/">Facebook</a>. Learn more on our <a href="https://codeweek.eu/codeweek2020">website</a>.
-</div>
-
 
 <br>
 
