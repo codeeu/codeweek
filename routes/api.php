@@ -18,3 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('events/geobox', 'Api\EventsController@geobox');
+Route::get('events/germany', 'Api\EventsController@germany');

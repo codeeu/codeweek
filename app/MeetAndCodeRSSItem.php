@@ -137,6 +137,8 @@ class MeetAndCodeRSSItem extends Model
         $event->audiences()->attach(8);
         $event->themes()->attach(8);
 
+        return $event;
+
 
 
     }

@@ -212,6 +212,10 @@ return [
             '15' => [
                 'Elina Razena',
                 'Founder of Learn IT coding school for children, EU CodeWeek ambassador in Latvia'
+            ],
+            '16' => [
+                'Kristine Subrovska',
+                'Graphic designer, accessibility, UX / UI enthusiast. I appreciate good design and well-considered, simple illustrations  '
             ]
         ],
         'leaders' => [
@@ -224,7 +228,7 @@ return [
                 'Kārlis Jonāss',
                 'Design thinker and facilitator. Karlis helps teams, companies and individuals bring change through design.'
             ],
-            '3' => ['', '']
+            '3' => ['Peteris Jurcenko', 'UX designer, accessibility enthusiast. I help institutions to redesign themselves and implement digital solutions to become more effective.']
         ],
 
         'after' => [

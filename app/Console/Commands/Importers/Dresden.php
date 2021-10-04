@@ -2,33 +2,32 @@
 
 namespace App\Console\Commands\Importers;
 
-
-
 use App\Helpers\ImporterHelper;
 
 
-use App\RSSItems\BadenRSSItem;
+use App\RSSItems\BonnRSSItem;
+use App\RSSItems\DresdenRSSItem;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Log;
 
 
-class Baden extends Command
+class Dresden extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'import:baden';
+    protected $signature = 'import:dresden';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Import the data from Baden API';
+    protected $description = 'Import the data from Dresden API';
 
     /**
      * Create a new command instance.
@@ -49,16 +48,14 @@ class Baden extends Command
      */
     public function handle()
     {
-        Log::info("Loading Baden API Items in Database");
+        Log::info("Loading Dresden API Items in Database");
 
-        $techicalUser = ImporterHelper::getTechnicalUser("baden-technical");
-
-        $items = BadenRSSItem::whereNull('imported_at')->get();
+        $techicalUser = ImporterHelper::getTechnicalUser("dresden-technical");
+        $items = DresdenRSSItem::whereNull('imported_at')->get();
 
 
 
         foreach ($items as $item){
-
             $item->createEvent($techicalUser);
             $item->imported_at = Carbon::now();
             $item->save();
