@@ -110,8 +110,7 @@
                             <ul class="leading-7 ml-2 checklist mt-2">
                                 <li> @lang("challenges-content.$slug.instructions.0") <a
                                             href="https://youtu.be/VcPc4VVDp2c">@lang("challenges-content.$slug.instructions.1")</a> @lang("challenges-content.$slug.instructions.2")
-                                    <a href="https://tinyurl.com/virtualflowerfield">@lang("challenges-content.$slug.instructions.3")</a> @lang("challenges-content.$slug.instructions.4")
-                                    .
+                                    <a href="https://tinyurl.com/virtualflowerfield">@lang("challenges-content.$slug.instructions.3")</a> @lang("challenges-content.$slug.instructions.4").
                                 </li>
                                 <li>@lang("challenges-content.$slug.instructions.5")
                                 </li>

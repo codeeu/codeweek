@@ -15,7 +15,7 @@ return [
         'example' => 'Exemple',
         'written-by' => [
             'Ce défi a été écrit par',
-            'et fait partie de'
+            'et fait partie des'
         ],
         'teachers' => 'Enseignants',
         'students' => 'Élèves',

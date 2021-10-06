@@ -117,7 +117,7 @@
 
                     <section class="p-2">
                         <div class="orange text-3xl">@lang('challenges.common.example')</div>
-                        <div class="mt-2"> <a href="https://microbit.org/news/2020-05-01/microbit-at-home-calming-leds/">@lang("challenges-content.$slug.example")</a> </div>
+                        <div class="mt-2">@lang("challenges-content.$slug.example"): <a href="https://microbit.org/news/2020-05-01/microbit-at-home-calming-leds/">https://microbit.org/news/2020-05-01/microbit-at-home-calming-leds/</a> </div>
                         <div class="mt-2">
                             <a href="https://microbit.org/news/2020-05-01/microbit-at-home-calming-leds/">
                             <img src="{{asset('img/2021/challenges/calming-leds-1.png')}}"/>
