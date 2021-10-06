@@ -58,7 +58,7 @@
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
-                            <li><a href="https://code.org/dance">@lang("challenges-content.$slug.materials")</a></li>
+                            <li><a href="https://code.org/outbreak">@lang("challenges-content.$slug.materials")</a></li>
                         </ol>
 
 

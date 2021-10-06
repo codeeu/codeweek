@@ -160,7 +160,7 @@ return [
             'Change Timer by -1',
             'Create a new sprite',
             'Game Over',
-            'to finish the game. You can also create a sprite with the title of your game, e.g., Collect all E U Code Week bubbles.'
+            'to finish the game. You can also create a sprite with the title of your game, e.g., Collect all EU Code Week bubbles.'
         ],
         'example' => [
             'Play a video sensing game Collect all EU Code Week Bubbles. Feel free to remix',
