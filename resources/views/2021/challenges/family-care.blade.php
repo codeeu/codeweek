@@ -66,7 +66,7 @@
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
-                            <li>@lang("challenges-content.$slug.materials.0"): <a href="https://ide.mblock.cc/">mBlock 5</a> @lang("challenges-content.$slug.materials.1") <a
+                            <li>@lang("challenges-content.$slug.materials.0") <a href="https://ide.mblock.cc/">mBlock 5</a> @lang("challenges-content.$slug.materials.1") <a
                                         href="https://mblock.makeblock.com/en-us/download/">@lang("challenges-content.$slug.materials.2")</a>. @lang("challenges-content.$slug.materials.3")
                             </li>
 
@@ -76,7 +76,7 @@
                             </li>
                             <li>@lang("challenges-content.$slug.materials.6")
                             </li>
-                            <li>@lang("challenges-content.$slug.materials.7"): <a
+                            <li>@lang("challenges-content.$slug.materials.7") <a
                                         href="https://spark.makex.io/2021-makex-spark-code-for-health/">https://spark.makex.io/2021-makex-spark-code-for-health/</a>
                                 @lang("challenges-content.$slug.materials.8") <a href="mailto:allen.yan@makeblock.com">allen.yan@makeblock.com</a>
                             </li>
