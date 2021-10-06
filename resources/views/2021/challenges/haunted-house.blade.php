@@ -62,7 +62,7 @@
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
-                            <li>     @lang("challenges-content.$slug.materials.0") <a href="https://www.hedycode.com">hedycode.com</a>,@lang("challenges-content.$slug.materials.1")
+                            <li>     @lang("challenges-content.$slug.materials.0") <a href="https://www.hedycode.com">hedycode.com</a>, @lang("challenges-content.$slug.materials.1")
                             </li>
                         </ol>
 
