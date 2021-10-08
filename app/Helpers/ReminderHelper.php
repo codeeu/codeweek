@@ -7,54 +7,83 @@ use App\User;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 
-class ReminderHelper
-{
+class ReminderHelper {
+    public static function getInactiveCreators($edition) {
+        // $active = Event::where('status','APPROVED')->where
+        //$result = Event::whereNotIn('creator_id', [100,200])->get(['field_name1','field_name2']);
+        $activeIds = DB::table('events')
+            ->join('users', 'users.id', '=', 'events.creator_id')
+            //->where('creator_id','=',$this->id)
+            ->where('status', '=', 'APPROVED')
+            ->whereNull('events.deleted_at')
+            ->whereYear('events.end_date', '=', $edition)
+            ->groupBy('users.email')
+            ->select('users.id')
+            ->get()
+            ->pluck('id')
+            ->toArray();
 
-    public static function getCreatorsWithReportableEvents()
-    {
-
-        $result = Event::whereNull("reported_at")
-            ->join("users", "creator_id", "=", "users.id")
-            ->whereStatus("APPROVED")
-            ->where("report_notifications_count", "<", 3)
-            ->whereYear('end_date', '=', Carbon::now('Europe/Brussels')->year)
-            ->where("users.email", "<>", "")
-            ->where(function ($query) {
-                $query->whereNull("last_report_notification_sent_at")
-                    ->orWhere('last_report_notification_sent_at', '<', Carbon::now()->subDays(7));
+        return DB::table('events')
+            ->join('users', 'users.id', '=', 'events.creator_id')
+            //->where('creator_id','=',$this->id)
+            ->where('status', '=', 'APPROVED')
+            ->whereNull('events.deleted_at')
+            ->where(function ($query) use ($edition) {
+                return $query->whereYear('events.end_date', '=', $edition - 1);
+                //->orWhereYear('events.end_date', '=', $edition - 2);
             })
-            ->where("end_date", '<=', Carbon::now())
-            ->groupBy("users.email")
+
+            ->whereIntegerNotInRaw('events.creator_id', $activeIds)
+            ->groupBy('users.email')
+            ->select('users.email')
+            ->get()
+            ->pluck('email');
+    }
+
+    public static function getCreatorsWithReportableEvents() {
+        $result = Event::whereNull('reported_at')
+            ->join('users', 'creator_id', '=', 'users.id')
+            ->whereStatus('APPROVED')
+            ->where('report_notifications_count', '<', 3)
+            ->whereYear('end_date', '=', Carbon::now('Europe/Brussels')->year)
+            ->where('users.email', '<>', '')
+            ->where(function ($query) {
+                $query
+                    ->whereNull('last_report_notification_sent_at')
+                    ->orWhere(
+                        'last_report_notification_sent_at',
+                        '<',
+                        Carbon::now()->subDays(7)
+                    );
+            })
+            ->where('end_date', '<=', Carbon::now())
+            ->groupBy('users.email')
             ->distinct('users.email')
-            ->orderBy("users.id")
+            ->orderBy('users.id')
             ->get();
 
         return $result;
-
-
     }
 
     /**
      * @return mixed
      */
-    public static function getReportableEvents()
-    {
-        $result = Event::whereNull("reported_at")
-            ->whereStatus("APPROVED")
-            ->where("report_notifications_count", "<", 3)
+    public static function getReportableEvents() {
+        $result = Event::whereNull('reported_at')
+            ->whereStatus('APPROVED')
+            ->where('report_notifications_count', '<', 3)
             ->whereYear('end_date', '=', Carbon::now('Europe/Brussels')->year)
             ->where(function ($query) {
-                $query->whereNull("last_report_notification_sent_at")
-                    ->orWhere('last_report_notification_sent_at', '<', Carbon::now()->subDays(7));
+                $query
+                    ->whereNull('last_report_notification_sent_at')
+                    ->orWhere(
+                        'last_report_notification_sent_at',
+                        '<',
+                        Carbon::now()->subDays(7)
+                    );
             })
-            ->where("end_date", '<=', Carbon::now());
-
+            ->where('end_date', '<=', Carbon::now());
 
         return $result;
-
-
-
     }
-
-
 }
