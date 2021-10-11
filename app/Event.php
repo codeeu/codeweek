@@ -407,4 +407,19 @@ class Event extends Model {
             $this->country->latitude . ',' . $this->country->longitude;
         $this->save();
     }
+
+    public function relocateWithCoordinates($coords) {
+        if (!is_null($coords)) {
+            $this->latitude = $coords['location']['y'];
+            $this->longitude = $coords['location']['x'];
+            $this->geoposition =
+                $coords['location']['y'] . ',' . $coords['location']['x'];
+            $this->relocation_status = 'SUCCESS';
+        } else {
+            $this->relocation_status = 'EMPTY COORDS';
+        }
+
+        $this->relocated = true;
+        $this->save();
+    }
 }
