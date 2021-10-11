@@ -74,7 +74,11 @@ class EventHelper {
 
     public static function getCenteredNotRelocatedEvents($iso) {
         //Get all activities in the center of the map for the specified country that have not yet been relocated
-        $country = Country::firstOrFail('iso', '=', $iso);
+        $country = Country::where('iso', '=', $iso)->first();
+
+        if (is_null($country)) {
+            return [];
+        }
 
         $events = Event::where([
             'country_iso' => $iso,
