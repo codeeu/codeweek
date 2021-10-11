@@ -38,7 +38,7 @@ class Kernel extends ConsoleKernel {
 
         $schedule->command('relocate')->hourlyAt(30);
 
-        $schedule->command('relocate:country')->everyMinute();
+        $schedule->command('relocate:country')->everyTwoMinutes();
     }
 
     /**
