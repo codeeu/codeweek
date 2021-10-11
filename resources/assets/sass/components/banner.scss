@@ -127,10 +127,9 @@
     margin:0;
 
     img {
-      width:540px;
+      //width:540px;
       height: 366px;
-      object-fit: cover;
-      border-bottom: 20px solid $main-color;
+      object-fit: contain;
     }
   }
   .text {

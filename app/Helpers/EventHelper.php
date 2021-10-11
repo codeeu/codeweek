@@ -2,21 +2,20 @@
 
 namespace App\Helpers;
 
+use App\Country;
 use App\Event;
 use Carbon\Carbon;
 use App\User;
 
-class EventHelper
-{
-
-    public static function getCloseEvents($longitude, $latitude, $id = 0)
-    {
+class EventHelper {
+    public static function getCloseEvents($longitude, $latitude, $id = 0) {
         //acos is not known with sqlite that is used for testing.
         if (env('DB_CONNECTION') == 'sqlite') {
             return Event::take(4)->get();
-        };
+        }
 
-        $events = Event::selectRaw('id, title, slug, start_date, description, picture,
+        $events = Event::selectRaw(
+            'id, title, slug, start_date, description, picture,
         ( 6371 *
          acos( cos( radians(?) ) *
          cos( radians( latitude ) ) *
@@ -24,7 +23,9 @@ class EventHelper
          radians(?) ) +
          sin( radians(?) ) *
          sin( radians( latitude ) ) ) )
-         AS distance', [$latitude, $longitude, $latitude])
+         AS distance',
+            [$latitude, $longitude, $latitude]
+        )
             ->where('status', '=', 'APPROVED')
             ->where('id', '<>', $id)
             ->where('end_date', '>', Carbon::now())
@@ -33,16 +34,13 @@ class EventHelper
             ->get();
 
         return $events;
-
     }
 
-    public static function getPendindEvents()
-    {
-
+    public static function getPendindEvents() {
         $country_isos_ambassadors = User::role('ambassador')
             ->distinct()
             ->select('country_iso')
-            ->where("country_iso", "<>", "")
+            ->where('country_iso', '<>', '')
             ->get();
 
         $countries = [];
@@ -58,13 +56,10 @@ class EventHelper
             ->whereIn('country_iso', $countries)
             ->get();
 
-
         return $events;
-
     }
 
-    public static function getOnlineEvents()
-    {
+    public static function getOnlineEvents() {
         $events = Event::where([
             'activity_type' => 'open-online',
             'status' => 'APPROVED',
@@ -75,9 +70,23 @@ class EventHelper
             ->get();
 
         return $events;
-
     }
 
+    public static function getCenteredNotRelocatedEvents($iso) {
+        //Get all activities in the center of the map for the specified country that have not yet been relocated
+        $country = Country::firstOrFail('iso', '=', $iso);
 
+        $events = Event::where([
+            'country_iso' => $iso,
+            'longitude' => number_format($country->longitude, 6),
+            'latitude' => number_format($country->latitude, 6),
+            'relocated' => false,
+            ['location', '<>', 'online']
+        ])
+            ->orderBy('created_at', 'desc')
+            ->limit(30)
+            ->get();
 
+        return $events;
+    }
 }
