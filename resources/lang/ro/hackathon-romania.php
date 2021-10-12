@@ -221,6 +221,9 @@ return [
             ],
             '10' => [
                 'Sunt absolvent al Universității din București. Sunt specialist IT concentrându-mă pe tehnologii Cloud, arhitectura microservice și DevOps. În timp ce mă consider un poliglot al limbajelor de programare, JAVA este limbajul meu de bază, iar Spring Framework este prima mea alegere ori de câte ori proiectez și construiesc o nouă aplicație. Activitățile mele profesionale constă într-o combinație de BA, DEV și IT Operation, cu accent pe dezvoltare.'
+            ],
+            '11' => [
+                'Când nu proiectează cursuri și traininguri pentru profesori și ONG-uri în cadrul Asociației Techsoup, își dedică timpul sporturilor în aer liber, călătoriilor și protecției liliecilor. Este Forbes 30 under 30, ChangemakerXchange Fellow și a fost Ambasador EU Code Week timp de 5 ani până în 2020. Conectând oameni și resurse, Ana consideră că tehnologia este esențială pentru a încuraja dezvoltarea societății în care trăim prin colaborare.'
             ]
         ],
 
