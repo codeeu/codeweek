@@ -425,6 +425,14 @@
                 </div>
             </div>
 
+            <div class="item">
+                <div class="flex justify-center">
+                    <img src="{{asset('/images/hackathons/profiles/greece/4/dimitrios-kourtesis.jpeg')}}">
+                </div>       <h2 class="text-center">@lang('hackathon-greece.sections.mentors.34.0')</h2>
+                <div class="text-sm">@lang('hackathon-greece.sections.mentors.34.1')
+                </div>
+            </div>
+
 
         </div>
     </section>
@@ -553,6 +561,18 @@
                     <img src="{{asset('/images/hackathons/partners/makeblock-makex.png')}}">
                 </div>
             </div>
+
+
+        </div>
+
+        <div class="partners-grid">
+
+            <div class="item">
+                <div class="flex justify-center">
+                    <img src="{{asset('/images/hackathons/partners/greece/3/logo-ideasforward.png')}}">
+                </div>
+            </div>
+
 
 
         </div>

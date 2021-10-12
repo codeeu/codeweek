@@ -300,6 +300,10 @@ return [
             '33' => [
                 'Konstantina Tagkopoulou',
                 'Konstantina Tagkopoulou is passionate about entrepreneurship, and has experience working with startups and scaleups across Europe. Since she joined Amazon Web Services in 2019, she has supported startups on their cloud journey and go-to-market strategy. Prior to AWS, she worked for a B2B SaaS startup in London, focusing on commercial growth and strategic business development. She holds a BSc in Sociology from the University of Bath and an MSc in Sociology from the University of Oxford.'
+            ],
+            '34' => [
+                'Dimitrios Kourtesis',
+                'Dimitrios Kourtesis is a technology entrepreneur and partner at Ideas Forward, a technology venture studio based in Thessaloniki, Greece. He enjoys exploring applications of new software technologies to interesting problems and exploring applications of new business models to interesting markets. Working in tech since 2005, he has collected experiences as R&D software engineer, PhD researcher, product development consultant, startup founder, advisor to growing businesses and angel investor.'
             ]
         ],
 

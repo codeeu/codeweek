@@ -220,6 +220,15 @@
                 </div>
             </div>
 
+            <div class="item">
+                <div class="flex justify-center">
+                    <img src="{{asset('/images/hackathons/profiles/romania/ana_stamatescu.png')}}">
+                </div>
+                <h2 class="text-center">Ana Stamatescu</h2>
+                <div class="text-sm">@lang('hackathon-romania.sections.mentors.11.0')
+                </div>
+            </div>
+
 
         </div>
     </section>
