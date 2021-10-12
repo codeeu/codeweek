@@ -221,6 +221,10 @@ return [
             '10' => [
                 "I am a graduate student of University of Bucharest. I am an IT Specialist focusing on Cloud technologies, microservice architecture and DevOps. While I consider myself a programming language polyglot, JAVA is my core development language and Spring Framework is my de-facto choice whenever I design and build a new application. My professional activities consist in combination of BA, DEV and Operation, with focus on development."
 
+            ],
+            '11' => [
+                "When she is not busy designing e-learning courses and trainings for K12 teachers and NGOs at Asociația Techsoup, she fosters her passions for outdoor sports, traveling and bats. Forbes 30 under 30 Honoree, ChangemakerXchange Fellow and EU Code Week Ambassador for 5 years until 2020. Connecting people and resources, Ana believes technology is key to kindle development through collaboration."
+
             ]
         ],
 
