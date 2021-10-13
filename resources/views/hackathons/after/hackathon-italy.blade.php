@@ -232,31 +232,6 @@
 
         </div>
 
-{{--        <div class="p-8 leading-6 bg-yellow-200 bg-opacity-25">--}}
-{{--            <h2>@lang('hackathon-italy.sections.11.events.makex.title.0')</h2>--}}
-
-{{--            <div class="mb-4">@lang('hackathon-italy.sections.11.events.makex.content.0')</div>--}}
-{{--            <div class="mb-4">@lang('hackathon-italy.sections.11.events.makex.content.1')</div>--}}
-
-{{--            <div class="text-lg text-orange-300">@lang('hackathon-italy.sections.11.events.makex.title.1')</div>--}}
-{{--            @lang('hackathon-italy.sections.11.events.makex.dates.0') <a href="https://forms.gle/h4VRLUc9uSpLYCVHA">@lang('hackathon-italy.sections.11.events.makex.content.2')</a> @lang('hackathon-italy.sections.11.events.makex.content.3')<br/>--}}
-
-{{--            <div class="text-lg text-orange-300 mt-6">@lang('hackathon-italy.sections.11.events.makex.title.2')</div>--}}
-{{--            @lang('hackathon-italy.sections.11.events.makex.dates.1') <a href="https://forms.gle/h4VRLUc9uSpLYCVHA">@lang('hackathon-italy.sections.11.events.makex.content.2')</a> @lang('hackathon-italy.sections.11.events.makex.content.3')<br/>--}}
-
-{{--            <div class="text-lg text-orange-300 mt-6">@lang('hackathon-italy.sections.11.events.makex.title.3')</div>--}}
-{{--            @lang('hackathon-italy.sections.11.events.makex.dates.2') <a href="https://forms.gle/h4VRLUc9uSpLYCVHA">@lang('hackathon-italy.sections.11.events.makex.content.2')</a> @lang('hackathon-italy.sections.11.events.makex.content.3')<br/>--}}
-
-{{--            <div class="mt-6">--}}
-{{--                @lang('hackathon-italy.sections.11.events.makex.content.4') <a href="@lang('hackathon-italy.sections.11.events.makex.content.5')">@lang('hackathon-italy.sections.11.events.makex.content.5')</a>--}}
-{{--            </div>--}}
-
-
-
-{{--        </div>--}}
-
-
-
 
     </section>
 
