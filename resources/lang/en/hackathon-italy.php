@@ -127,6 +127,25 @@ return [
                 'Do these themes interest you but you don’t know  how to code? Sign up to our side events and discover the thrill of coding, innovation, entrepreneurship and other skills vital to participating in the digital world. The Code Week hackathon side events are scheduled to run from May to October and will include several different types of workshop. They are free of charge, you just have to sign up here. Come and learn more.'
             ],
             'events' => [
+                'minecraft' => [
+                    'title' => 'Minecraft Education Edition Teacher Academy: Design Your Own Multimedia Learning Environment!',
+                    'abstract' => 'The Minecraft: Education Edition Teacher Academy course will focus on using Minecraft: Education Edition as a teaching and learning tool designed to support important pedagogical practices in the learning environment. At the end of this learning path, you will become a Minecraft certified teacher and receive the badge.',
+                    'content' => [
+                        'Path participants will learn:',
+                        'Basic mechanics of downloading, setting up and logging into Minecraft: Education Edition',
+                        'In-game play by exploring movement within the game as well as learning the process for placing and breaking blocks',
+                        'Key features of world management and classroom settings',
+                        'Tips on classroom management and readiness',
+                        'An understanding of basic in-game coding',
+                        'Skills that allow for learner collaboration, creativity, and communication',
+                        'How to incorporate engineering practices',
+                        'Chemistry and Science in-game functionality',
+                        'How the game supports learner inquiry and curiosity',
+                    ],
+                    'date' => 'Friday 22 October from 17.00-18.30.',
+                    'participate' => 'To participate:'
+                ],
+
                 'makex' => [
                     'title' => [
                         'Robotics Training Series by MakeX/MakeBlock',
