@@ -200,6 +200,40 @@
         </div>
     </section>
 
+    <section id="side-events">
+        <h1>@lang('hackathon-italy.sections.11.title')</h1>
+        <p>@lang('hackathon-italy.sections.11.content.0')</p>
+
+        <div class="p-8 leading-6 bg-yellow-200 bg-opacity-25">
+            <h2>@lang('hackathon-italy.sections.11.events.minecraft.title')</h2>
+
+            <div class="mb-4">@lang('hackathon-italy.sections.11.events.minecraft.abstract')</div>
+            <div class="mb-4 font-bold">@lang('hackathon-italy.sections.11.events.minecraft.content.0')</div>
+            <ul style="list-style-type: circle;margin-left:40px; margin-top:0px;">
+                <li>@lang('hackathon-italy.sections.11.events.minecraft.content.1')</li>
+                <li>@lang('hackathon-italy.sections.11.events.minecraft.content.2')</li>
+                <li>@lang('hackathon-italy.sections.11.events.minecraft.content.3')</li>
+                <li>@lang('hackathon-italy.sections.11.events.minecraft.content.4')</li>
+                <li>@lang('hackathon-italy.sections.11.events.minecraft.content.5')</li>
+                <li>@lang('hackathon-italy.sections.11.events.minecraft.content.6')</li>
+                <li>@lang('hackathon-italy.sections.11.events.minecraft.content.7')</li>
+                <li>@lang('hackathon-italy.sections.11.events.minecraft.content.8')</li>
+                <li>@lang('hackathon-italy.sections.11.events.minecraft.content.9')</li>
+            </ul>
+
+            <div class="text-lg text-orange-300">Date: @lang('hackathon-italy.sections.11.events.minecraft.date')</div>
+
+
+            <div class="mt-6">
+                @lang('hackathon-italy.sections.11.events.minecraft.participate') <a href="https://bit.ly/PartecipaOraMEE">https://bit.ly/PartecipaOraMEE</a>
+            </div>
+
+
+
+        </div>
+
+
+    </section>
 
 
 
