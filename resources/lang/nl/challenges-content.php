@@ -30,7 +30,10 @@ return [
     'paper-circuit' => [
         'title' => 'Unplug en programmeer: creëer een papieren circuit',
         'author' => 'EU-programmeerweek-team',
-        'purposes' => ['Bevorderen van creativiteit', 'Ontwikkelen van probleemoplossende vaardigheden'],
+        'purposes' => [
+            'Bevorderen van creativiteit',
+            'Ontwikkelen van probleemoplossende vaardigheden'
+        ],
         'description' => [
             'Teken een object naar keuze. Dat kan een sterrenhemel zijn, een lieveheersbeestje, een robot, een kerstboom of wat je maar kunt bedenken. Maak je project persoonlijk met de EU-programmeerweek-visuals: doorzoek de',
             'EU-programmeerweek-toolkit voor leraren',
@@ -128,7 +131,7 @@ return [
             'Luister naar',
             'een voorbeeld van een liedje dat is geprogrammeerd met Earsketch',
             'Je kunt de code importeren en bewerken'
-        ],
+        ]
     ],
     'sensing-game' => [
         'title' => 'Maak een videosensing-game',
@@ -167,7 +170,8 @@ return [
     ],
 
     'calming-leds' => [
-        'title' => 'Rustgevende leds: creëer een eenvoudig apparaat met micro:bit',
+        'title' =>
+            'Rustgevende leds: creëer een eenvoudig apparaat met micro:bit',
         'author' => 'Micro:bit Educational Foundation',
         'duration' => '20 minuten',
         'materials' => [
@@ -196,7 +200,8 @@ return [
     'computational-thinking-and-computational-fluency' => [
         'title' =>
             'Computational Thinking en Computational Fluency met ScratchJr',
-        'author' => 'Stamatis Papadakis – EU-programmeerweek-ambassadeur voor Griekenland',
+        'author' =>
+            'Stamatis Papadakis – EU-programmeerweek-ambassadeur voor Griekenland',
         'purposes' => [
             'Kennismaken met nieuwe opdrachten en interface.',
             'Creëren van eenvoudige programma’s met eenvoudige oorzaak-en-gevolg-opdrachten.',
@@ -270,7 +275,7 @@ return [
         ],
         'example' =>
             'Wanneer je klaar bent, kun je je simulatie met anderen delen. Deel je ideeën over wat we volgens jou kunnen doen om anderen gezond te houden wanneer we getroffen worden door een virus.',
-        'materials' => 'De Code.org-tutorial',
+        'materials' => 'De Code.org-tutorial'
     ],
     'create-your-own-masterpiece' => [
         'title' => 'Creëer je eigen meesterwerk!',
@@ -316,12 +321,12 @@ return [
             'Problemen zien als kansen en tot creatieve oplossingen komen;',
             'Programmeren gebruiken om op een innovatieve manier tot oplossingen te komen;',
             'Posters ontwerpen en je oplossingen aan anderen presenteren;',
-            'Sociale media inzetten om je projecten impact te geven . '
+            'Sociale media inzetten om je projecten impact te geven. '
         ],
         'description' => [
-            'Wat komt in je op als we praten over thuis ? Een fijn huis ? Lekker eten dat door je ouders is klaargemaakt ? Een(geheim) plekje voor jezelf ? Een warm thuis zorgt ervoor dat lichaam en geest kunnen bijtanken . Tegenwoordig zijn ouders vaak druk met gezin en werk . Wanneer je bij vrienden bent, kun je je katjes niet alleen laten . Maar hoe zorg je voor je dierbaren als je niet samen bent ? Het thema van deze uitdaging is',
+            'Wat komt in je op als we praten over thuis ? Een fijn huis ? Lekker eten dat door je ouders is klaargemaakt ? Een(geheim) plekje voor jezelf ? Een warm thuis zorgt ervoor dat lichaam en geest kunnen bijtanken. Tegenwoordig zijn ouders vaak druk met gezin en werk. Wanneer je bij vrienden bent, kun je je katjes niet alleen laten. Maar hoe zorg je voor je dierbaren als je niet samen bent ? Het thema van deze uitdaging is',
             'Gezinszorg',
-            'Op basis van dit thema worden leerlingen gestimuleerd om ideeën te ontwikkelen over hoe je liefde en zorg kunt geven met behulp van programmeren en hardware . Dit zijn enkele vragen waar je over kunt nadenken',
+            'Op basis van dit thema worden leerlingen gestimuleerd om ideeën te ontwikkelen over hoe je liefde en zorg kunt geven met behulp van programmeren en hardware. Dit zijn enkele vragen waar je over kunt nadenken',
             'Met hoeveel gezinsleden woon je thuis ? Wie zijn zij ? Loop je tegen problemen aan als jullie samen zijn ? Wat voor type zorg hebben zij nodig ? ',
             'Ken je iemand bij wie het, meer dan bij anderen in je gemeenschap, aan gezinszorg ontbreekt ? Hoe kun je hem of haar helpen ? '
         ],
@@ -340,12 +345,12 @@ return [
             'of download de',
             'pc - versie',
             'mBlock is een programmeertaal die is gebaseerd op Scratch',
-            'Deze uitdaging is ook gebaseerd op MakeX global Spark Competition, een creatief ontwerpprogramma voor kinderen van 6 tot 13 jaar . ',
-            'Het deelnemende team zal over dit thema moeten nadenken en een oplossing uitdenken door software te programmeren en hardware te bouwen . ',
-            'Leerlingen worden gestimuleerd om de uitdaging tijdens de Codeweek uit te voeren en het naar internationaal niveau te tillen om met andere leerlingen te communiceren en prijzen te winnen . ',
+            'Deze uitdaging is ook gebaseerd op MakeX global Spark Competition, een creatief ontwerpprogramma voor kinderen van 6 tot 13 jaar. ',
+            'Het deelnemende team zal over dit thema moeten nadenken en een oplossing uitdenken door software te programmeren en hardware te bouwen. ',
+            'Leerlingen worden gestimuleerd om de uitdaging tijdens de Codeweek uit te voeren en het naar internationaal niveau te tillen om met andere leerlingen te communiceren en prijzen te winnen. ',
             'Ga voor meer informatie naar:',
             'of neem contact met ons op via'
-        ],
+        ]
     ],
     'virtual - flower - field' => [
         'title' => 'Creëer je virtuele bloemenweide',
@@ -353,22 +358,22 @@ return [
             'Jadga Huegle – Meet and Code - coach en lid van het SAP Snap!-team',
         'duration' => '30 - 60 minuten',
         'purposes' => [
-            'Kennismaken met programmeren met een eenvoudig maar aansprekend project . ',
-            'Leren dat programmeren kunstzinnig kan zijn en tot prachtige resultaten kan leiden . ',
-            'De herfst vrolijker maken met kleurige bloemen en de EU - programmeerweek . ',
-            'De diversiteit laten zien van de bloemen in de wereld . ',
-            'Bijdragen aan de doelstellingen voor duurzame ontwikkeling, met name doelstelling 13 – Klimaatverandering, door events te programmeren die leiden tot beter onderwijs over klimaatverandering door bewustwording te creëren . '
+            'Kennismaken met programmeren met een eenvoudig maar aansprekend project. ',
+            'Leren dat programmeren kunstzinnig kan zijn en tot prachtige resultaten kan leiden. ',
+            'De herfst vrolijker maken met kleurige bloemen en de EU - programmeerweek. ',
+            'De diversiteit laten zien van de bloemen in de wereld. ',
+            'Bijdragen aan de doelstellingen voor duurzame ontwikkeling, met name doelstelling 13 – Klimaatverandering, door events te programmeren die leiden tot beter onderwijs over klimaatverandering door bewustwording te creëren. '
         ],
         'description' =>
-            'Ontwikkel een programma in Snap!waarmee je een virtuele bloemenweide kunt creëren met verschillende soorten bloemen, met verschillende aantallen bloemblaadjes . ',
+            'Ontwikkel een programma in Snap!waarmee je een virtuele bloemenweide kunt creëren met verschillende soorten bloemen, met verschillende aantallen bloemblaadjes. ',
         'instructions' => [
             'Heb je inspiratie nodig om met deze uitdaging aan de slag te gaan ? Bekijk',
             'deze video',
             'of gebruik',
             'dit document',
             'om mee te doen',
-            'De uitdaging kan worden uitgevoerd door een virtuele bloemenweide te programmeren in Snap!(of Scratch) en een screenshot of foto van het resultaat online te zetten . ',
-            'De bloemenweide moet verschillende soorten bloemen bevatten, met verschillende aantallen bloemblaadjes . Het is het best als de bloemen worden geprogrammeerd . Dit betekent dat ze worden gemaakt door de bloemblaadjes steeds te stempelen en te draaien(of te tekenen en te draaien).',
+            'De uitdaging kan worden uitgevoerd door een virtuele bloemenweide te programmeren in Snap!(of Scratch) en een screenshot of foto van het resultaat online te zetten. ',
+            'De bloemenweide moet verschillende soorten bloemen bevatten, met verschillende aantallen bloemblaadjes. Het is het best als de bloemen worden geprogrammeerd. Dit betekent dat ze worden gemaakt door de bloemblaadjes steeds te stempelen en te draaien(of te tekenen en te draaien).',
             'Post een afbeelding van je virtuele bloemenweide met #MeetandCode.'
         ],
         'materials' => [
@@ -398,7 +403,7 @@ return [
             'deze link'
         ],
         'example' => 'Spookhuis – voorbeeld level',
-        'materials' => ['Hedy op', 'level 1 tot 4'],
+        'materials' => ['Hedy op', 'level 1 tot 4']
     ],
     'inclusive-app-design' => [
         'title' => 'Ontwerp van een inclusieve app',
@@ -450,7 +455,6 @@ return [
         'materials' => [
             'De tutorial vind je hier',
             'Deze tutorial is beschikbaar in meer dan 25 talen'
-        ],
+        ]
     ]
 ];
-

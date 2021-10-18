@@ -28,9 +28,13 @@ return [
     ],
 
     'paper-circuit' => [
-        'title' => 'Isključi struju i programiraj: Napravi strujno kolo od papira',
+        'title' =>
+            'Isključi struju i programiraj: Napravi strujno kolo od papira',
         'author' => 'Tim Evropske nedjelje programiranja',
-        'purposes' => ['Pospiješiti kreativnost', 'Razvijati vještine rješavanja problema'],
+        'purposes' => [
+            'Pospiješiti kreativnost',
+            'Razvijati vještine rješavanja problema'
+        ],
         'description' => [
             'Nacrtajte bilo koji predmet koji želite. Može to biti noćno nebo, bubamara, robot, novogodišnja jelka ili bilo šta čega se sjetite. Slobodno personalizujte svoj projekat upotrebom vizuelnih sredstava Evropske nedjelje programiranja; možete istražiti',
             'Priručnik za nastavnike Evropske nedjelje programiranja',
@@ -128,7 +132,7 @@ return [
             'Poslušajte',
             'primjer pjesme koja je programirana u Earsketch programu',
             'Možete unijeti program i izmijeniti ga'
-        ],
+        ]
     ],
     'sensing-game' => [
         'title' => 'Napravite igricu video-detekcije',
@@ -167,8 +171,10 @@ return [
     ],
 
     'calming-leds' => [
-        'title' => 'Umirujuća LED svijetla: kreirajte jednostavan uređaj uz pomoć micro:bit-a',
-        'author' => 'Micro:bit Educational Foundation  (Micro:bit Osnovi obrazovanja)',
+        'title' =>
+            'Umirujuća LED svijetla: kreirajte jednostavan uređaj uz pomoć micro:bit-a',
+        'author' =>
+            'Micro:bit Educational Foundation  (Micro:bit Osnovi obrazovanja)',
         'duration' => '20 minuta',
         'materials' => [
             'micro:bit uređaj i eksterna baterija (ukoliko je dostupna)',
@@ -196,7 +202,8 @@ return [
     'computational-thinking-and-computational-fluency' => [
         'title' =>
             ' Računarsko razmišljanje i računarska pismenost sa ScratchJr',
-        'author' => 'Stamatis Papadakis –ambasador Evropske nedjelje programiranja u Grčkoj',
+        'author' =>
+            'Stamatis Papadakis –ambasador Evropske nedjelje programiranja u Grčkoj',
         'purposes' => [
             'Upoznati se s novim komandama i interfesjom.',
             'Kreirati jednostavne programe s jednostavnim komandama uzrok-i-posljedica (org. cause-and-effect)',
@@ -222,7 +229,8 @@ return [
     ],
     'ai-hour-of-code' => [
         'title' => 'Sat programiranja s vještačkom inteligencijom',
-        'author' => 'Minecraft Education Edition (Minecraft – Obrazovno izdanje)',
+        'author' =>
+            'Minecraft Education Edition (Minecraft – Obrazovno izdanje)',
         'purposes' => [
             'Osmisliti programska rješenja koja uključuju sekvence, događaje, petlje i uslovljavanje',
             'Razložiti korake neophodne za rješavanje problema u precizne sekvence uputstava',
@@ -251,8 +259,7 @@ return [
             'tutorijalu',
             'a ispisana su i na početku svakog nivoa'
         ],
-        'example' =>
-            'Odabrani radovi učenika nalaze se na sljedećoj stranici',
+        'example' => 'Odabrani radovi učenika nalaze se na sljedećoj stranici',
         'materials' => 'Tutorijal Code.org'
     ],
     'create-a-simulation' => [
@@ -270,7 +277,7 @@ return [
         ],
         'example' =>
             'Kada završite, možete s drugima podijeliti svoju simulaciju. Podijelite vašu poruku o tome šta mislite da bi moglo pomoći drugima da sačuvaju zdravlje kada virus dođe u grad.',
-        'materials' => 'Tutorijal Code.org',
+        'materials' => 'Tutorijal Code.org'
     ],
     'create-your-own-masterpiece' => [
         'title' => 'Napravite vaše remek-djelo!',
@@ -280,11 +287,13 @@ return [
         'description' =>
             'Napravite svoje remek-djelo zajedno s umjetnikom! Koristite programske blokove kako bi vaš umjetnik stvorio jedinstveno umjetničko djelo.',
         'instructions' => 'Uputstva su data na početku svakog nivoa',
-        'example' => 'Primjeri umjetnika nalaze se na ovoj stranici pod „Drawing“ (crtež)',
+        'example' =>
+            'Primjeri umjetnika nalaze se na ovoj stranici pod „Drawing“ (crtež)',
         'materials' => ['Prvi nivo tutorijala možete pronaći', 'OVDJE']
     ],
     'cs-first-unplugged-activities' => [
-        'title' => 'CS First Unplugged: Prve informatičke aktivnosti bez internet konekcije',
+        'title' =>
+            'CS First Unplugged: Prve informatičke aktivnosti bez internet konekcije',
         'purposes' => [
             'Pružiti podršku učenicima koji uče od kuće',
             'Pružiti svima priliku da odmore od ekrana'
@@ -345,12 +354,11 @@ return [
             'Učenici se podstiču da ispune izazov unutar Nedjelje programiranja i da ga prenesu na međunarodni nivo, da komuniciraju s drugim učenicima i osvoje nagrade.',
             'Za više informacija, molimo pogledajte:',
             'ili nas kontaktirajte na'
-        ],
+        ]
     ],
     'virtual-flower-field' => [
         'title' => 'Odnjegujte svoj virtuelni cvijećnjak',
-        'author' =>
-            'Jadga Huegle - trener Meet & Code i dio tima SAP Snap!',
+        'author' => 'Jadga Huegle - trener Meet & Code i dio tima SAP Snap!',
         'duration' => '30-60 minuta',
         'purposes' => [
             'Upoznati programiranje kroz jednostavan, ali skup projekat.',
@@ -387,7 +395,7 @@ return [
             'Naučiti programiranje s programom Hedy.'
         ],
         'description' =>
-            'Uz pomoć programa Hedy, osmislićete priču „Ukleta kuća“ sa interaktivnim elementima. Svaki put kada se pokrene program, kreira se nova priča. Takođe, vaš računar može priču čitati naglas,a ona se može i podijeliti na internetu .',
+            'Uz pomoć programa Hedy, osmislićete priču „Ukleta kuća“ sa interaktivnim elementima. Svaki put kada se pokrene program, kreira se nova priča. Takođe, vaš računar može priču čitati naglas,a ona se može i podijeliti na internetu.',
         'instructions' => [
             'Počnite tako što ćete pokrenuti pretraživač i poći na stranicu hedycode.com.',
             'Pratite uputstva za nivoe 1-4. Koristite tabove „Level“ (nivo) i „Haunted house“ (Ukleta kuća).’',
@@ -398,7 +406,7 @@ return [
             'ovom linku'
         ],
         'example' => 'Primjer Uklete kuće na nivou',
-        'materials' => ['Hedy na', 'nivou 1 do 4'],
+        'materials' => ['Hedy na', 'nivou 1 do 4']
     ],
     'inclusive-app-design' => [
         'title' => 'Dizajn inkluzivne aplikacije',
@@ -435,7 +443,8 @@ return [
         'description' =>
             'U okviru ovog projekta, dizajniraćete i kreirati lik s blesavim očima. Krupne, blesave oči lika prate pokazivač miša kako bi ga oživjeli',
         'instructions' => 'Pristupite kompletnom opisu projekta ovdje',
-        'example' => 'Pogledajte Gobo, Under the sea (Pod morem) i  Don\'t eat donut (Ne jedi krofnu)'
+        'example' =>
+            'Pogledajte Gobo, Under the sea (Pod morem) i  Don\'t eat donut (Ne jedi krofnu)'
     ],
     'train-ai-bot' => [
         'title' => 'Obučite bota vještačke inteligencije!',
@@ -450,7 +459,6 @@ return [
         'materials' => [
             'Tutorijal je dostupan ovdje',
             'Ovaj tutorijal je dostupan na više od 25 jezika'
-        ],
+        ]
     ]
 ];
-

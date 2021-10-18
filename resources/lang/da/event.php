@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Validation Language Lines
@@ -15,7 +14,8 @@ return [
     'main_title' => 'Tilføj dit #CodeWeek-arrangement',
     'button' => 'Tilføj arrangement',
     'howto' => 'Sådan afholder man sit eget arrangement',
-    'required' => 'Obligatoriske felter er markeret med en stjerne *. Du må gerne tilføje arrangementet på dit lokale sprog.',
+    'required' =>
+        'Obligatoriske felter er markeret med en stjerne *. Du må gerne tilføje arrangementet på dit lokale sprog.',
     'audience_title' => 'Målgruppe',
     'theme_title' => 'Tema',
     'scoreboard_by_country' => 'Resultattavle',
@@ -29,43 +29,43 @@ return [
     'image' => 'Billede',
     'start' => [
         'label' => 'Startdato',
-        'placeholder' => 'Hvornår starter aktiviteten?',
+        'placeholder' => 'Hvornår starter aktiviteten?'
     ],
     'end' => [
         'label' => 'Slutdato',
-        'placeholder' => 'Hvornår slutter aktiviteten?',
+        'placeholder' => 'Hvornår slutter aktiviteten?'
     ],
     'organizer' => [
         'label' => 'Organisationens navn',
-        'placeholder' => 'Den organisation, du arbejder eller er frivillig for',
+        'placeholder' => 'Den organisation, du arbejder eller er frivillig for'
     ],
     'website' => [
         'label' => 'Arrangørens websted',
-        'placeholder' => 'Har du et websted med flere oplysninger?',
+        'placeholder' => 'Har du et websted med flere oplysninger?'
     ],
     'description' => [
         'label' => 'Beskrivelse',
-        'placeholder' => 'Beskriv den planlagte aktivitet kort.',
+        'placeholder' => 'Beskriv den planlagte aktivitet kort.'
     ],
     'contact' => [
         'label' => 'Kontakt-e-mailadresse',
-        'placeholder' => 'Denne e-mailadresse vil blive brugt til vigtig korrespondance i forbindelse med EU’s kodeuge',
-        'explanation' => 'Din kontakt-e-mailadresse kan kun ses af ambassadørerne for EU’s kodeuge, som gennemgår dit arrangement, inden det vises på kortet, og de tager kontakt til dig, hvis der er noget, du skal redigere, eller i forbindelse med spørgeskemaer til statistik efter arrangementer.',
+        'placeholder' =>
+            'Denne e-mailadresse vil blive brugt til vigtig korrespondance i forbindelse med EU’s kodeuge',
+        'explanation' =>
+            'Din kontakt-e-mailadresse kan kun ses af ambassadørerne for EU’s kodeuge, som gennemgår dit arrangement, inden det vises på kortet, og de tager kontakt til dig, hvis der er noget, du skal redigere, eller i forbindelse med spørgeskemaer til statistik efter arrangementer.'
     ],
     'public' => [
         'label' => 'Offentlig e-mailadresse',
         'placeholder' => 'Skal din kontakt-e-mailadresse vises?'
-
     ],
     'title' => [
         'label' => 'Aktivitetens titel',
-        'placeholder' => 'Hvad er navnet på aktiviteten?',
+        'placeholder' => 'Hvad er navnet på aktiviteten?'
     ],
     'address' => [
         'label' => 'Adresse',
-        'placeholder' => 'Hvor finder aktiviteten sted?',
+        'placeholder' => 'Hvor finder aktiviteten sted?'
     ],
-
 
     'organizertype' => [
         'label' => 'Type af organisation',
@@ -74,7 +74,7 @@ return [
         'library' => 'Bibliotek',
         'non profit' => 'Nonprofitorganisation',
         'private business' => 'Privat virksomhed',
-        'other' => 'Andet',
+        'other' => 'Andet'
     ],
     'audience' => [
         'Pre-school children' => 'Børnehavebørn',
@@ -85,23 +85,26 @@ return [
         'Employed adults' => 'Voksne i arbejde',
         'Unemployed adults' => 'Voksne arbejdssøgende',
         'Other (see description)' => 'Andre (se beskrivelse)',
-        'Teachers' => 'Lærere',
+        'Teachers' => 'Lærere'
     ],
     'theme' => [
         'Basic programming concepts' => 'Grundlæggende programmeringskoncepter',
         'Web development' => 'Udvikling til web',
         'Mobile app development' => 'Udvikling af mobilapps',
         'Software development' => 'Udvikling af software',
-        'Data manipulation and visualisation' => 'Manipulation og visualisering af data',
+        'Data manipulation and visualisation' =>
+            'Manipulation og visualisering af data',
         'Robotics' => 'Robotteknik',
         'Hardware' => 'Hardware',
         'Other' => 'Andet',
         'Unplugged activities' => 'Aktiviteter uden brug af computer',
         'Playful coding activities' => 'Kodeaktiviteter med leg',
         'Art and creativity' => 'Kunst og kreativitet',
-        'Visual/Block programming' => 'Visuel programmering/programmering med blokke',
+        'Visual/Block programming' =>
+            'Visuel programmering/programmering med blokke',
         'Game design' => 'Spildesign',
-        'Internet of things and wearable computing' => 'Tingenes internet og wearables',
+        'Internet of things and wearable computing' =>
+            'Tingenes internet og wearables',
         '3D printing' => '3D-print',
         'Augmented reality' => 'Udvidet virkelighed',
         'Artificial intelligence' => 'Kunstig intelligens',
@@ -110,12 +113,14 @@ return [
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'CODE WEEK 4 ALL-KODE',
-        'explanation' => 'Hvis du har fået en Code Week 4 all-kode fra en kollega eller ven, kan du indtaste den her. Ellers skal feltet være tomt. Der er flere oplysninger om Code Week 4 All',
-        'link' => 'her',
+        'explanation' =>
+            'Hvis du har fået en Code Week 4 all-kode fra en kollega eller ven, kan du indtaste den her. Ellers skal feltet være tomt. Der er flere oplysninger om Code Week 4 All',
+        'link' => 'her'
     ],
     'thanks_page' => [
         'title' => 'Tak, fordi du tilføjede dit arrangement!',
-        'phrase1' => 'En af vores lokale ambassadører vil nu tjekke dit arrangement',
+        'phrase1' =>
+            'En af vores lokale ambassadører vil nu tjekke dit arrangement',
         'phrase2' => 'og sikre, at alt er, som det skal være.',
         'phrase3' => 'Hvis du har spørgsmål, kan du kontakte en af vores',
         'phrase4' => 'nationale ambassadører',
@@ -130,12 +135,12 @@ return [
         'invite-online' => 'Online aktivitet for inviterede',
         'open-in-person' => 'Åben personlig aktivitet',
         'invite-in-person' => 'Personlig aktivitet for inviterede'
-
     ],
 
-    'privacy' => 'Jeg har læst og accepteret de retningslinjer for beskyttelse af personlige oplysninger, der er beskrevet i dette dokument.',
+    'privacy' =>
+        'Jeg har læst og accepteret de retningslinjer for beskyttelse af personlige oplysninger, der er beskrevet i dette dokument.',
     'country' => 'Land',
-    'loading' => 'Indlæser ...',
+    'loading' => 'Indlæser...',
     'add_activity' => 'Tilføj aktivitet',
     'edit_activity' => 'Rediger aktivitet',
     'update_activity' => 'Opdater aktivitet',
@@ -145,10 +150,10 @@ return [
     'all_countries' => 'Alle lande',
     'current_status' => 'Aktuel status',
     'actions' => 'Handlinger',
-    'certificate_ready' => 'Dit kodeuge-certifikatet er klar. Download det, eller del det direkte.',
+    'certificate_ready' =>
+        'Dit kodeuge-certifikatet er klar. Download det, eller del det direkte.',
     'view_your_certificate' => 'Se dit certifikat her',
-    'submit_event_and_report' => 'Indsend en rapport for dette arrangement, og få dit kodeuge-certifikat.',
-    'report_and_claim' => 'Rapporter et arrangement, og få dit certifikat',
-
-
+    'submit_event_and_report' =>
+        'Indsend en rapport for dette arrangement, og få dit kodeuge-certifikat.',
+    'report_and_claim' => 'Rapporter et arrangement, og få dit certifikat'
 ];
