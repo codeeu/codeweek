@@ -1,6 +1,5 @@
 <?php
 
-
 return [
     'title' => 'EU:N KOODAUSVIIKON HAASTEET',
     'date' => '9 . –24 . lokakuuta 2021',
@@ -39,7 +38,7 @@ return [
         'Jaa oma haasteesi',
         'Haluaisitko voittaa koodausviikon palkintoja? Jos vastasit kyllä, jaa työsi tulokset myös muille!',
         'Kun olet saanut haasteen valmiiksi, jaa se Instagramissa.',
-        "Palkintoja jaetaan osallistuneiden kesken joka päivä koodausviikolla 9.–24. lokakuuta, ja voittajat julkistetaan Instagram-kanavallamme. Muista siis tarkistaa ilmoituksesi säännöllisesti."
+        'Palkintoja jaetaan osallistuneiden kesken joka päivä koodausviikolla 9.–24. lokakuuta, ja voittajat julkistetaan Instagram-kanavallamme. Muista siis tarkistaa ilmoituksesi säännöllisesti.'
     ],
     'share' => [
         'Näin jaat haasteesi Instagramissa',
@@ -52,7 +51,9 @@ return [
         'Lisää aihetunniste #CodeWeekChallenge',
         'Mainitse @CodeWeekEU',
         'Haluatko jakaa haasteesi mieluummin Facebookissa?',
-        'EU:n koodausviikon Facebook-sivulle (linkki Facebook-sivulle) lisätään joka päivä uusi haastejulkaisu. Palkinnon voittaja valitaan julkaisua kommentoiden joukosta.',
+        'EU:n koodausviikon',
+        'Facebook-sivulle',
+        'lisätään joka päivä uusi haastejulkaisu. Palkinnon voittaja valitaan julkaisua kommentoiden joukosta.',
         'Miten se toimii?',
         'Kommentoi julkaisua ja lisää linkki omaan haasteeseesi.'
     ],
@@ -92,5 +93,4 @@ return [
         'Facebookiin, Instagramiin tai Twitteriin.',
         'Muista käyttää aihetunnistetta'
     ]
-
 ];

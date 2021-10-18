@@ -13,10 +13,7 @@ return [
         'description' => 'Beschreibung',
         'instructions' => 'Anweisungen',
         'example' => 'Beispiel',
-        'written-by' => [
-            'Diese Challenge stammt von',
-            'und ist Teil der'
-        ],
+        'written-by' => ['Diese Challenge stammt von', 'und ist Teil der'],
         'teachers' => 'Lehrkräfte',
         'students' => 'Schüler*innen',
         'beginner' => 'Neulinge',
@@ -51,7 +48,9 @@ return [
         '#CodeWeekChallenge hinzufügen',
         '@CodeWeekEU erwähnen und taggen',
         'Ihr wollt eure Challenge(s) lieber auf Facebook teilen?',
-        'Die EU Code Week veröffentlicht jeden Tag eine neue Challenge auf ihrer Facebook-Seite (Link zur FB-Seite) und wählt den Gewinnerbeitrag aus den Kommentaren unter dem Post aus.',
+        'Die EU Code Week veröffentlicht jeden Tag eine neue Challenge auf ihrer',
+        'Facebook-Seite',
+        'und wählt den Gewinnerbeitrag aus den Kommentaren unter dem Post aus.',
         'Wie funktioniert es?',
         'Den Link zu eurer Arbeit als Kommentar unter den Post schreiben.'
     ],
@@ -81,6 +80,14 @@ return [
         'hier,',
         'um diese Challenge als Word-Dokument herunterzuladen'
     ],
-    'bingo' => ['Bei allen Challenges mitmachen', 'Habt ihr eine Challenge abgeschlossen? Druckt', 'die Bingokarte aus', 'und setzt ein Häkchen in den kleinen weißen Kreis oben links', 'Teilt eure Challenge in den sozialen Medien und gewinnt coole Code Week-Preise', 'Postet einfach ein Bild mit allen ausgefüllten Zeilen und Spalten – oder am besten gleich die ganze Bingokarte – auf', 'Facebook, Instagram oder Twitter', 'Und vergesst nicht den Hashtag']
-
+    'bingo' => [
+        'Bei allen Challenges mitmachen',
+        'Habt ihr eine Challenge abgeschlossen? Druckt',
+        'die Bingokarte aus',
+        'und setzt ein Häkchen in den kleinen weißen Kreis oben links',
+        'Teilt eure Challenge in den sozialen Medien und gewinnt coole Code Week-Preise',
+        'Postet einfach ein Bild mit allen ausgefüllten Zeilen und Spalten – oder am besten gleich die ganze Bingokarte – auf',
+        'Facebook, Instagram oder Twitter',
+        'Und vergesst nicht den Hashtag'
+    ]
 ];

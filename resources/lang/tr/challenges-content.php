@@ -28,9 +28,13 @@ return [
     ],
 
     'paper-circuit' => [
-        'title' => 'Fişi çekin ve kodlamaya başlayın: Bir kâğıt devre oluşturun',
+        'title' =>
+            'Fişi çekin ve kodlamaya başlayın: Bir kâğıt devre oluşturun',
         'author' => 'AB Kod Haftası Ekibi',
-        'purposes' => ['Yaratıcılığı artırmak', 'Problem çözme becerilerini geliştirmek'],
+        'purposes' => [
+            'Yaratıcılığı artırmak',
+            'Problem çözme becerilerini geliştirmek'
+        ],
         'description' => [
             'İstediğiniz bir nesneyi çizin. Bu, yıldızlı bir gökyüzü, uğur böceği, robot, yılbaşı ağacı veya aklınıza gelen herhangi bir şey olabilir. Projenizi AB Kod Haftası görselleriyle dilediğiniz gibi kişiselleştirebilirsiniz: ',
             'AB Kod Haftası öğretmenler araç kitini keşfedebilir',
@@ -40,7 +44,7 @@ return [
             'Bir nesne çizin ve hangi parçaların aydınlatılacağına karar verin (ör. yıldızlar).',
             'Bir kalem yardımıyla kâğıtta bir delik açın ve aydınlatılacak her bir parçaya bir LED çıkartma yerleştirin.',
             'Yuvarlak pili yerleştireceğiniz daireyi çizin.',
-            'Kâğıdın diğer tarafına + ve - işaretlerini çizin. LED devre çıkartmasının uzun tarafının pilin “+” kısmına, kısa tarafının ise pilin “-” kısmına bağlandığından emin olun.',
+            'Kâğıdın diğer tarafına + ve-işaretlerini çizin. LED devre çıkartmasının uzun tarafının pilin “+” kısmına, kısa tarafının ise pilin “-” kısmına bağlandığından emin olun.',
             'Bakır bandı işaretlerin üzerine yerleştirin.',
             'Kâğıt, pilin üzerine geldiğinde LED yanacak şekilde bir kat oluşturun. Bakır bant ile iyi temas etmesi için ataş kullanabilirsiniz.',
             'Kâğıt devrenizin fotoğrafını çekin ve bu girişimde yer almanın önemini açıklayarak Instagram\'da paylaşın.'
@@ -128,7 +132,7 @@ return [
             'Earsketch',
             'ile kodlanan bir şarkı örneğini dinleyin',
             'Kodu içe aktarıp düzenleyebilirsiniz.'
-        ],
+        ]
     ],
     'sensing-game' => [
         'title' => 'Bir video algılama oyunu yapın',
@@ -167,7 +171,8 @@ return [
     ],
 
     'calming-leds' => [
-        'title' => 'Sakinleştirici LED\'ler: micro:bit ile basit bir aygıt yapın',
+        'title' =>
+            'Sakinleştirici LED\'ler: micro:bit ile basit bir aygıt yapın',
         'author' => 'Micro:bit Educational Foundation (Micro:bit Eğitim Vakfı)',
         'duration' => '20 dakika',
         'materials' => [
@@ -194,8 +199,7 @@ return [
         ]
     ],
     'computational-thinking-and-computational-fluency' => [
-        'title' =>
-            'ScratchJr ile Sayısal Düşünme ve Sayısal Akıcılık',
+        'title' => 'ScratchJr ile Sayısal Düşünme ve Sayısal Akıcılık',
         'author' => 'Stamatis Papadakis – AB Kod Haftası Elçisi Yunanistan',
         'purposes' => [
             'Yeni komutları ve arayüzleri kullanmaya alışmak.',
@@ -270,7 +274,7 @@ return [
         ],
         'example' =>
             'Çalışmayı bitirdiğinizde, simülasyonunuzu başkalarıyla paylaşabilirsiniz. Şehre bir virüs geldiğinde başkalarının sağlığını korumak için ne yapabileceğimiz hakkındaki düşüncelerinizi paylaşın.',
-        'materials' => 'Code.org eğitimi',
+        'materials' => 'Code.org eğitimi'
     ],
     'create-your-own-masterpiece' => [
         'title' => 'Kendi şaheserinizi yaratın!',
@@ -279,8 +283,10 @@ return [
             'Bilgisayar bilimi kavramlarını görsel yollarla tanıtmak ve yaratıcılığı körüklemek',
         'description' =>
             'Sanatçı ile birlikte kendi şaheserinizi yaratın! Sanatçınızın benzersiz bir sanat eseri yaratması için kod bloklarını kullanın.',
-        'instructions' => 'Talimatlar her seviyenin en üst kısmında gösterilmektedir',
-        'example' => 'Sanatçıya ait örneklere bu sayfadaki çizimin altından ulaşabilirsiniz',
+        'instructions' =>
+            'Talimatlar her seviyenin en üst kısmında gösterilmektedir',
+        'example' =>
+            'Sanatçıya ait örneklere bu sayfadaki çizimin altından ulaşabilirsiniz',
         'materials' => ['Eğitimin ilk seviyesi için', 'BURAYA TIKLAYIN']
     ],
     'cs-first-unplugged-activities' => [
@@ -306,10 +312,10 @@ return [
             'Send a Secret Message(Gizli mesaj gönderme) şifreleme tekerini bağlamak için raptiye, kürdan veya düz hale getirilmiş ataş . '
         ]
     ],
-    'family - care' => [
+    'family-care' => [
         'title' => 'Aileyle İlgilenmek',
         'experience' => 'Herkese açık',
-        'duration' => '5 - 10 saat',
+        'duration' => '5-10 saat',
         'author' => '',
         'purposes' => [
             'Günlük olarak karşılaştığımız ‘aileyle ilgilenme’ konusu hakkında araştırma yapmak;',
@@ -345,19 +351,19 @@ return [
             'Öğrenciler bu görevi Codeweek üzerinde tamamlamaya ve diğer öğrencilerle iletişime geçip ödüller kazanmak üzere bunu uluslararası seviyeye taşımaya teşvik edilir . ',
             'Daha fazla bilgi için burayı inceleyebilir:',
             'veya bizimle iletişime geçebilirsiniz'
-        ],
+        ]
     ],
-    'virtual - flower - field' => [
+    'virtual-flower-field' => [
         'title' => 'Sanal çiçek bahçenizi oluşturun',
         'author' =>
-            'Jadga Huegle - Meet and Code koçu ve SAP Snap!ekibinin bir parçası',
-        'duration' => '30 - 60 dakika',
+            'Jadga Huegle-Meet and Code koçu ve SAP Snap!ekibinin bir parçası',
+        'duration' => '30-60 dakika',
         'purposes' => [
             'Basit ama etkili bir proje ile programlamayı tanımak . ',
             'Kodlamanın sanatsal bir yönünün olduğunu ve güzel sonuçlar doğurabileceğini öğrenmek . ',
             'Renkli çiçekler ve AB Kod Haftası ile sonbaharı daha ışıltılı bir hale getirmek . ',
             'Dünya üzerinde bulunan çiçeklerin çeşitliliğini göstermek . ',
-            'İklim değişikliği eğitimi konusu hakkında farkındalık yaratıp bu eğitim sürecini iyileştiren kodlama etkinlikleri oluşturarak, Sürdürülebilir Kalkınma Hedeflerine(SKH\'ler) ve özellikle SKA13 - İklim Değişikliğine katkıda bulunmak.'
+            'İklim değişikliği eğitimi konusu hakkında farkındalık yaratıp bu eğitim sürecini iyileştiren kodlama etkinlikleri oluşturarak, Sürdürülebilir Kalkınma Hedeflerine(SKH\'ler) ve özellikle SKA13-İklim Değişikliğine katkıda bulunmak.'
         ],
         'description' =>
             'Snap!içerisinde farklı türde çiçekler ve farklı sayıda çiçek yaprakları ile sanal bir çiçek bahçesi oluşturabileceğiniz bir program geliştirin . ',
@@ -379,7 +385,7 @@ return [
     'haunted-house' => [
         'title' => 'Hedy\'deki Perili Ev',
         'author' =>
-            'Felienne Hermans, Leiden Üniversitesi - Ramon Moorlag, I & I - Kod Haftası Hollanda',
+            'Felienne Hermans, Leiden Üniversitesi-Ramon Moorlag, I & I-Kod Haftası Hollanda',
         'audience' => 'Öğretmenler ve eğitmenler',
         'duration' => 'Ön bilgiye bağlı olarak 1 veya 2 saat',
         'purposes' => [
@@ -390,7 +396,7 @@ return [
             'Hedy ile interaktif öğeler kullanarak bir Perili Ev hikâyesi oluşturacaksınız . Kod her çalıştığında yeni bir hikâye oluşturulacak . Hikâye aynı zamanda bilgisayar tarafından sesli olarak okunabilir ve çevrimiçi olarak paylaşılabilir . ',
         'instructions' => [
             'Bir tarayıcıyı açıp hedycode . com adresine giderek göreve başlayabilirsiniz . ',
-            'Seviye 1 - 4 için talimatları izleyin . ‘Level’(Seviye) ve ‘Haunted house(Perili ev) sekmelerini kullanın . ’',
+            'Seviye 1-4 için talimatları izleyin . ‘Level’(Seviye) ve ‘Haunted house(Perili ev) sekmelerini kullanın . ’',
             'Bu seviyelerin yardımıyla, interaktif bir perili ev hikâyesi yazacağız . ',
             'Öğretmenler, Hedy ders planı için',
             'buraya tıklayın',
@@ -398,9 +404,9 @@ return [
             'bu bağlantıdan ulaşabilirsiniz'
         ],
         'example' => 'Perili ev örneği seviye',
-        'materials' => ['Hedy internet adresi', 'seviye 1 - 4'],
+        'materials' => ['Hedy internet adresi', 'seviye 1-4']
     ],
-    'inclusive - app - design' => [
+    'inclusive-app-design' => [
         'title' => 'Kapsamlı Uygulama Tasarımı',
         'author' => 'Apple Eğitim',
         'duration' => '60 dakika + isteğe bağlı ilave aktiviteler',
@@ -434,8 +440,10 @@ return [
         ],
         'description' =>
             'Bu projede, komik gözlü bir karakter tasarlayıp oluşturacaksınız. Karakterin büyük ve komik gözleri, fare imlecini takip ederek karakterinize hayat verecek.',
-        'instructions' => 'Proje açıklamasının tamamına buradan ulaşabilirsiniz',
-        'example' => 'Gobo, Under the sea (Denizler altında) ve Don\'t eat donut (Donut yemeyin) örneklerini inceleyin'
+        'instructions' =>
+            'Proje açıklamasının tamamına buradan ulaşabilirsiniz',
+        'example' =>
+            'Gobo, Under the sea (Denizler altında) ve Don\'t eat donut (Donut yemeyin) örneklerini inceleyin'
     ],
     'train-ai-bot' => [
         'title' => 'Bir Yapay Zekâ (AI) botunu eğitin!',
@@ -454,4 +462,3 @@ return [
         'more' => ['']
     ]
 ];
-

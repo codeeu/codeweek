@@ -38,7 +38,7 @@ return [
         'Podijelite svoj izazov',
         'Da li biste htjeli osvojiti nekih stvarčica u okviru Sedmice kodiranja? Ako želite, onda neka vaš posao krene viralno!',
         'Nakon što obavite izazov, podijelite ga na Instagramu.',
-        "Pobjednici će se birati svakog dana tokom Sedmice kodiranja u periodu 9-24. oktobra i bit će objavljivani na našem Instagram kanalu, tako da ne zaboravite redovno provjeravati svoje obavijesti."
+        'Pobjednici će se birati svakog dana tokom Sedmice kodiranja u periodu 9-24. oktobra i bit će objavljivani na našem Instagram kanalu, tako da ne zaboravite redovno provjeravati svoje obavijesti.'
     ],
     'share' => [
         'Kako da podijelite svoj(e) izazov(e) na Instagramu?',
@@ -51,7 +51,9 @@ return [
         'Dodajte #CodeWeekChallenge',
         'Spomenite i označite @CodeWeekEU',
         'Više volite da dijelite svoj(e) izazov(e) na Facebooku?',
-        'Sedmica kodiranja EU će svaki dan zakačiti novu objavu sa Izazovom na svojoj Facebook stranici (link to FB page) i odabirat će pobjednika za nagradu iz komentara ispod objave.',
+        'Sedmica kodiranja EU će svaki dan zakačiti novu objavu sa Izazovom na svojoj',
+        'Facebook stranici',
+        'i odabirat će pobjednika za nagradu iz komentara ispod objave.',
         'Kako to funkcionira?',
         'Samo stavite komentar na objavu sa linkom prema svom radu.'
     ],
@@ -68,7 +70,7 @@ return [
         'novi Izazov na svoju',
         'Facebook stranicu',
         'Potom trebate samo komentirati na objavu s linkom prema svom radu',
-        "Pobjednici će se birati i nudit će im se nagradne stvarčice u okviru Sedmice kodiranja svakog dana tokom Sedmice kodiranja u periodu 9-24. oktobra i bit će objavljivani na našem Instagram i Facebook kanalu, tako da ne zaboravite redovno provjeravati svoje obavijesti"
+        'Pobjednici će se birati i nudit će im se nagradne stvarčice u okviru Sedmice kodiranja svakog dana tokom Sedmice kodiranja u periodu 9-24. oktobra i bit će objavljivani na našem Instagram i Facebook kanalu, tako da ne zaboravite redovno provjeravati svoje obavijesti'
     ],
     'take-part' => [
         'Zašto učestvovati u izazovu Sedmice kodiranja EU?',
@@ -81,6 +83,14 @@ return [
         'ovdje',
         'za preuzimanje ovog izazova kao dokumenta u Wordu'
     ],
-    'bingo' => ['Obavite sve Izazove', 'Izazov obavljen? Odštampajte', 'bingo karticu', 'i označite mali bijeli balončić gore lijevo', 'Podijelite svoj Izazov na društvenim medijima i osvojite neke krasne nagrade Sedmice kodiranja', 'Samo učitajte sliku sa popunjenim retkom/recima, stupcem/stupcima, ili još bolje - cijeli bingo - na', 'Facebook, Instagram ili Twitter', 'Pobrinite se da koristite']
-
+    'bingo' => [
+        'Obavite sve Izazove',
+        'Izazov obavljen? Odštampajte',
+        'bingo karticu',
+        'i označite mali bijeli balončić gore lijevo',
+        'Podijelite svoj Izazov na društvenim medijima i osvojite neke krasne nagrade Sedmice kodiranja',
+        'Samo učitajte sliku sa popunjenim retkom/recima, stupcem/stupcima, ili još bolje - cijeli bingo - na',
+        'Facebook, Instagram ili Twitter',
+        'Pobrinite se da koristite'
+    ]
 ];
