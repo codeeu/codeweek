@@ -38,7 +38,7 @@ return [
         'Dela din utmaning',
         'Vill du vinna några Code Week-priser? Om svaret är ja, så gör ditt jobb viralt!',
         'Efter att du har slutfört utmaningen, så dela den på Instagram.',
-        "Vinnare kommer att väljas ut varje dag under Code Week, 9–24 oktober, och tillkännages på vår Instagram-kanal, så glöm inte att kolla dina notiser regelbundet."
+        'Vinnare kommer att väljas ut varje dag under Code Week, 9–24 oktober, och tillkännages på vår Instagram-kanal, så glöm inte att kolla dina notiser regelbundet.'
     ],
     'share' => [
         'Hur delar du din eller dina utmaningar på Instagram?',
@@ -51,7 +51,9 @@ return [
         'Lägg till hashtaggen #CodeWeekChallenge',
         'Nämn och tagga @CodeWeekEU',
         'Vill du hellre dela utmaningar på Facebook?',
-        'EU Code Week kommer att lägga upp ett nytt utmaningsinlägg på sin Facebook-sida (länk till Facebook-sidan) varje dag och kommer att välja ut vinnaren av priset bland kommentarerna under inlägget.',
+        'EU Code Week kommer att lägga upp ett nytt utmaningsinlägg på sin',
+        'Facebook-sida',
+        'varje dag och kommer att välja ut vinnaren av priset bland kommentarerna under inlägget.',
         'Hur fungerar det?',
         'Skriv bara en kommentar under inlägget med en länk till ditt arbete.'
     ],
@@ -68,7 +70,7 @@ return [
         'ett nytt utmaningsinlägg på sin',
         'Facebook-sida',
         'Sedan behöver du bara skriva en kommentar under inlägget med en länk till ditt arbete',
-        "Vinnare kommer att väljas ut och erbjudas Code Week-priser varje dag under Code Week, 9–24 oktober, och tillkännages på våra Instagram- och Facebook-kanaler, så glöm inte att kolla dina notiser regelbundet"
+        'Vinnare kommer att väljas ut och erbjudas Code Week-priser varje dag under Code Week, 9–24 oktober, och tillkännages på våra Instagram- och Facebook-kanaler, så glöm inte att kolla dina notiser regelbundet'
     ],
     'take-part' => [
         'Varför delta i en EU Code Week-utmaning?',
@@ -91,5 +93,4 @@ return [
         'Facebook, Instagram eller Twitter',
         'Se till att du använder'
     ]
-
 ];

@@ -13,10 +13,7 @@ return [
         'description' => 'Opis',
         'instructions' => 'Pokyny',
         'example' => 'Príklad',
-        'written-by' => [
-            'Táto výzva je dielom',
-            'a patrí medzi'
-        ],
+        'written-by' => ['Táto výzva je dielom', 'a patrí medzi'],
         'teachers' => 'Učitelia',
         'students' => 'Študenti',
         'beginner' => 'Začiatočník',
@@ -38,7 +35,7 @@ return [
         'Zverejnite svoju výzvu',
         'Chceli by ste vyhrať fajnové vecičky od týždňa programovania? Ak áno, spravte poriadne haló o tom, čo vytvoríte!',
         'Keď zdoláte výzvu, zverejnite to na Instagrame.',
-        "Víťazi sa budú vyberať každý deň počas týždňa programovania od 9. do 24. októbra a vyhlásime ich na našom Instagrame, takže si nezabudnite pravidelne pozerať notifikácie."
+        'Víťazi sa budú vyberať každý deň počas týždňa programovania od 9. do 24. októbra a vyhlásime ich na našom Instagrame, takže si nezabudnite pravidelne pozerať notifikácie.'
     ],
     'share' => [
         'Ako zverejniť svoju výzvu či výzvy na Instagrame?',
@@ -51,7 +48,9 @@ return [
         'Vložte #CodeWeekChallenge',
         'Spomeňte a označte @CodeWeekEU',
         'Radšej by ste výzvu či výzvy zverejnili na Facebooku?',
-        'Európsky týždeň programovania každý deň na svojej facebookovej stránke (odkaz na FB stránku) pripne príspevok s novou výzvou a vyberie víťaza, ktorý získa cenu na základe komentárov pod príspevkom.',
+        'Európsky týždeň programovania každý deň na svojej',
+        'facebookovej stránke',
+        'pripne príspevok s novou výzvou a vyberie víťaza, ktorý získa cenu na základe komentárov pod príspevkom.',
         'Ako to funguje?',
         'Stačí, ak v komentári pod príspevkom uvediete odkaz na svoj výtvor.'
     ],
@@ -68,7 +67,7 @@ return [
         'príspevok s novou výzvou na svojej',
         'facebookovej stránke',
         'Potom stačí, ak v komentári pod príspevkom uvediete odkaz na svoj výtvor.',
-        "Víťazi sa budú vyberať a získajú fajnové vecičky od týždňa programovania každý deň počas týždňa programovania od 9. do 24. októbra a vyhlásime ich na našom Instagrame a Facebooku, takže si nezabudnite pravidelne pozerať notifikácie."
+        'Víťazi sa budú vyberať a získajú fajnové vecičky od týždňa programovania každý deň počas týždňa programovania od 9. do 24. októbra a vyhlásime ich na našom Instagrame a Facebooku, takže si nezabudnite pravidelne pozerať notifikácie.'
     ],
     'take-part' => [
         'Prečo sa zúčastniť na výzve Európskeho týždňa programovania?',
@@ -91,5 +90,4 @@ return [
         'Facebook, Instagram alebo Twitter',
         'Nezabudnite uviesť'
     ]
-
 ];

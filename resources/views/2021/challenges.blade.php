@@ -144,12 +144,12 @@
 
                             <strong>@lang('challenges.share.9')</strong><br/>
                             <div class="mt-2">
-                                @lang('challenges.share.10')<br/>
+                                @lang('challenges.share.10') <a href="https://www.facebook.com/codeEU">@lang('challenges.share.11')</a> @lang('challenges.share.12')  <br/>
 
-                                @lang('challenges.share.11')
+                                @lang('challenges.share.13')
                                 <ul class="leading-7 ml-2 mt-0 checklist">
                                     <li>
-                                        @lang('challenges.share.12')
+                                        @lang('challenges.share.14')
                                     </li>
                                 </ul>
 

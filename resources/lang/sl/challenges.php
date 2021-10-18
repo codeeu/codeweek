@@ -13,10 +13,7 @@ return [
         'description' => 'Opis',
         'instructions' => 'Navodila',
         'example' => 'Primer',
-        'written-by' => [
-            'Ta izziv je ustvaril/-a',
-            'in je del'
-        ],
+        'written-by' => ['Ta izziv je ustvaril/-a', 'in je del'],
         'teachers' => 'Učitelji',
         'students' => 'Učenci',
         'beginner' => 'Osnovna stopnja',
@@ -38,7 +35,7 @@ return [
         'Delite svoj izziv',
         'Ali bi radi osvojili nekaj darilc tedna programiranja? Če je odgovor pritrdilen, razširite svoj izdelek po spletu!',
         'Ko dokončate izziv, ga delite na Instagramu.',
-        "Zmagovalci bodo izbrani vsak dan med tednom programiranja med 9. in 24. oktobrom in objavljeni na našem Instagram kanalu, zato ne pozabite redno preverjati obvestil."
+        'Zmagovalci bodo izbrani vsak dan med tednom programiranja med 9. in 24. oktobrom in objavljeni na našem Instagram kanalu, zato ne pozabite redno preverjati obvestil.'
     ],
     'share' => [
         'Kako svoje izzive deliti na Instagramu?',
@@ -51,7 +48,9 @@ return [
         'Dodajte #CodeWeekChallenge',
         'Omenite in označite @CodeWeekEU',
         'Ali bi svoje izzive raje delili na Facebooku?',
-        'Na strani evropskega tedna programiranja na Facebooku (link to FB page) bo vsak dan objavljena nova objava z izzivom, med komentarji pod objavo pa bo izbran zmagovalec nagrade.',
+        'Na strani evropskega tedna programiranja na',
+        'Facebooku',
+        'bo vsak dan objavljena nova objava z izzivom, med komentarji pod objavo pa bo izbran zmagovalec nagrade.',
         'Kako to deluje?',
         'Preprosto komentirajte objavo s povezavo do svojega izdelka.'
     ],
@@ -68,7 +67,7 @@ return [
         'na Facebooku bo vsak dan',
         'objavljena nova objava z izzivom',
         'Nato preprosto komentirajte objavo s povezavo do svojega izdelka',
-        "Vsak dan med tednom programiranja med 9. in 24. oktobrom bodo izbrani zmagovalci, katerim bodo ponujena darilca, objavljeni pa bodo tudi na naših kanalih na Instagramu in Facebooku, zato ne pozabite redno preverjati obvestil."
+        'Vsak dan med tednom programiranja med 9. in 24. oktobrom bodo izbrani zmagovalci, katerim bodo ponujena darilca, objavljeni pa bodo tudi na naših kanalih na Instagramu in Facebooku, zato ne pozabite redno preverjati obvestil.'
     ],
     'take-part' => [
         'Zakaj sodelovati v izzivu evropskega tedna programiranja?',
@@ -81,7 +80,7 @@ return [
         'tukaj',
         'da prenesete ta izziv kot Wordov dokument'
     ],
-    'bingo' =>[
+    'bingo' => [
         'Dokončaj vse izzive',
         'Izziv dokončan? Natisnite',
         'kartico bingo (tombola)',
@@ -91,5 +90,4 @@ return [
         'Facebook, Instagram ali Twitter',
         'Ne pozabite uporabiti'
     ]
-
 ];

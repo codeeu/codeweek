@@ -13,10 +13,7 @@ return [
         'description' => 'Opis',
         'instructions' => 'Uputstva',
         'example' => 'Primjer',
-        'written-by' => [
-            'Ovaj izazov pripremio je',
-            'i dio je'
-        ],
+        'written-by' => ['Ovaj izazov pripremio je', 'i dio je'],
         'teachers' => 'Nastavnici',
         'students' => 'Učenici',
         'beginner' => 'Početni nivo',
@@ -38,7 +35,7 @@ return [
         'Podijelite vaš izazov',
         'Želite li da osvojite poklone Nedjelje programiranja? Ukoliko želite, neka vaš rad bude viralan!',
         'Nakon što ispunite izazov, podijelite ga na Instagramu.',
-        "Pobjednici će se birati svakog dana tokom Nedjelje programiranja, između 9. i 24. oktobra, i biće objavljeni na našem Instagram nalogu pa ne zaboravite da redovno provjeravate obavještenja. "
+        'Pobjednici će se birati svakog dana tokom Nedjelje programiranja, između 9. i 24. oktobra, i biće objavljeni na našem Instagram nalogu pa ne zaboravite da redovno provjeravate obavještenja. '
     ],
     'share' => [
         'Kako da podijelite svoj(e) izazov(e) na Instagramu?',
@@ -51,7 +48,9 @@ return [
         'Dodajte #CodeWeekChallenge',
         'menšn i tag @CodeWeekEU',
         'Da li radije dijelite svoj(e) izazov(e) na Fejsbuku?',
-        'Evropska nedjelja programiranja dodaće novi post o Izazovu na njihovoj Fejsbuk stranici (link ka FB stranici) svakoga dana i odabraće dobitnika nagrade među komentarima ispod posta.',
+        'Evropska nedjelja programiranja dodaće novi post o Izazovu na njihovoj',
+        'Fejsbuk stranici',
+        'svakoga dana i odabraće dobitnika nagrade među komentarima ispod posta.',
         'Kako to funkcioniše?',
         'Jednostavno ostavite komentar na post koji uključuje i link do vašeg rada.'
     ],
@@ -68,7 +67,7 @@ return [
         'novi post o izazovu na njenoj',
         'Fejsbuk stranici',
         'Tada je potrebno samo da ostavite komentar na post sa linkom ka vašem radu',
-        "Dobitnici će biti izabrani i ponudiće im se pokloni Nedjelje programiranja svakog dana Nedjelje programiranja od 9. do 24. oktobra, i biće obavljeni na našim Instagram i Fejsbuk stranicama, pa ne zaboravite da redovno provjeravate obavještenja"
+        'Dobitnici će biti izabrani i ponudiće im se pokloni Nedjelje programiranja svakog dana Nedjelje programiranja od 9. do 24. oktobra, i biće obavljeni na našim Instagram i Fejsbuk stranicama, pa ne zaboravite da redovno provjeravate obavještenja'
     ],
     'take-part' => [
         'Zašto učestvovati u izazovu Evropske nedjelje programiranja?',
@@ -81,7 +80,7 @@ return [
         'ovdje',
         'da biste preuzeli ovaj izazov u formatu Word dokumenta'
     ],
-    'bingo' =>[
+    'bingo' => [
         'Ispunite sve izazove',
         'Izazov ispunjen? Odštampajte',
         'bingo listić',
@@ -91,6 +90,4 @@ return [
         'Fejsbuk, Instagram ili Tviter',
         'Obavezno koristite'
     ]
-
 ];
-

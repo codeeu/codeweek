@@ -13,10 +13,7 @@ return [
         'description' => 'Përshkrimi',
         'instructions' => 'Udhëzime',
         'example' => 'Shembull',
-        'written-by' => [
-            'Kjo sfidë është shkruar nga',
-            'dhe është pjesë e'
-        ],
+        'written-by' => ['Kjo sfidë është shkruar nga', 'dhe është pjesë e'],
         'teachers' => 'Mësuesit',
         'students' => 'Nxënësit',
         'beginner' => 'Fillestar',
@@ -38,7 +35,7 @@ return [
         'Shpërndajeni sfidën tuaj',
         'Dëshironi të fitoni disa shpërblime me Code Week? Nëse po, atëherë lëreni punën tuaj të bëhet virale!',
         'Pasi të keni përfunduar sfidën, shpërndajeni atë në Instagram.',
-        "Fituesit do të zgjidhen çdo ditë gjatë Code Week midis 9 - 24 tetor dhe do të shpallen në kanalin tonë në Instagram, kështu që mos harroni të kontrolloni njoftimet tuaja rregullisht."
+        'Fituesit do të zgjidhen çdo ditë gjatë Code Week midis 9 - 24 tetor dhe do të shpallen në kanalin tonë në Instagram, kështu që mos harroni të kontrolloni njoftimet tuaja rregullisht.'
     ],
     'share' => [
         'Si t\'i shpërndani sfidat tuaja në Instagram?',
@@ -51,7 +48,9 @@ return [
         'Shtoni #CodeWeekChallenge',
         'Përmendni dhe etiketoni @CodeWeekEU',
         'Preferoni t’i ndani sfidat tuaja në Facebook?',
-        'EU Code Week do të vendosin një postim të ri të Sfidës në faqen e tyre në Facebook (link to FB page) çdo ditë dhe do të zgjedhin fituesin për çmimin nga komentet nën postim.',
+        'EU Code Week do të vendosin një postim të ri të Sfidës në faqen e tyre në',
+        'Facebook',
+        'çdo ditë dhe do të zgjedhin fituesin për çmimin nga komentet nën postim.',
         'Si funksionon?',
         'Thjesht komentoni postimin me lidhjen e punës suaj.'
     ],
@@ -68,7 +67,7 @@ return [
         'një postim Sfide të re në',
         'faqen në Facebook',
         'Atëherë ju duhet thjesht të komentoni postimin me lidhjen e punës suaj',
-        "Fituesit do të zgjidhen dhe do t’u ofrohen shpërblime të Code Week çdo ditë gjatë Code Week midis 9 - 24 tetor dhe do të shpallen në kanalet tona në Instagram dhe Facebook, kështu që mos harroni të kontrolloni njoftimet tuaja rregullisht."
+        'Fituesit do të zgjidhen dhe do t’u ofrohen shpërblime të Code Week çdo ditë gjatë Code Week midis 9 - 24 tetor dhe do të shpallen në kanalet tona në Instagram dhe Facebook, kështu që mos harroni të kontrolloni njoftimet tuaja rregullisht.'
     ],
     'take-part' => [
         'Pse të merrni pjesë në një sfidë të EU Code Week?',
@@ -81,6 +80,14 @@ return [
         'këtu',
         'për ta shkarkuar këtë sfidë si një dokument Word'
     ],
-    'bingo' => ['Plotësoni të gjitha Sfidat', 'Sfida përfundoi? Shtypni', 'kartën bingo', 'dhe shënoni flluskën e vogël të bardhë në të majtë lart', 'Ndani Sfidën tuaj në mediat sociale dhe fitoni disa çmime fantastike të Code Week', 'Thjesht ngarkoni një fotografi me radhën(t) e përfunduar(a), kolona ose edhe më mirë - të gjithë bingon - në', 'Facebook, Instagram ose Twitter', 'Sigurohuni që të përdorni']
-
+    'bingo' => [
+        'Plotësoni të gjitha Sfidat',
+        'Sfida përfundoi? Shtypni',
+        'kartën bingo',
+        'dhe shënoni flluskën e vogël të bardhë në të majtë lart',
+        'Ndani Sfidën tuaj në mediat sociale dhe fitoni disa çmime fantastike të Code Week',
+        'Thjesht ngarkoni një fotografi me radhën(t) e përfunduar(a), kolona ose edhe më mirë - të gjithë bingon - në',
+        'Facebook, Instagram ose Twitter',
+        'Sigurohuni që të përdorni'
+    ]
 ];
