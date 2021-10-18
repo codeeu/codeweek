@@ -115,6 +115,24 @@ return [
                 'Queste tematiche ti interessano ma non hai le competenze di programmazione? Iscriviti ai nostri eventi collaterali e scopri l’emozione della programmazione, dell’innovazione, dell’imprenditorialità e di altre competenze vitali per essere protagonisti nel mondo digitale. Gli eventi collaterali dell’hackathon della Settimana della programmazione si svolgeranno da maggio a ottobre, e prevedono numerose e diverse tipologie di workshop. Sono completamente gratuiti: devi solamente iscriverti qui. Partecipa e impara.'
             ],
             'events' => [
+                'minecraft' => [
+                    'title' => 'Minecraft Education Edition Teacher Academy: progetta il tuo ambiente di apprendimento multimediale!',
+                    'abstract' => "Il corso Minecraft: Education Edition Teacher Academy si concentrerà sull'uso di Minecraft: Education Edition come strumento di insegnamento e apprendimento progettato per supportare importanti pratiche pedagogiche nell'ambiente di apprendimento. Alla fine di questo percorso di apprendimento, diventerai un insegnante certificato Minecraft e riceverai il badge.",
+                    'content' => [
+                        'Meccanica di base per scaricare, configurare e accedere a Minecraft: Education Edition',
+                        "Gioco in-game esplorando il movimento all'interno del gioco e imparando il processo per posizionare e rompere i blocchi",
+                        "Funzionalità di gioco da utilizzare come strumenti per la valutazione e il feedback",
+                        "Il processo di creazione di sfide di costruzione utilizzando strategie basate sul gioco",
+                        "Caratteristiche principali della gestione del mondo e delle impostazioni della classe",
+                        "Suggerimenti sulla gestione e la preparazione della classe",
+                        "Una comprensione della codifica di base in-game",
+                        "Competenze che consentono la collaborazione, la creatività e la comunicazione degli allievi",
+                        "Come incorporare le pratiche di ingegneria Chimica e scienza",
+                        "In che modo il gioco supporta la ricerca e la curiosità degli allievi"
+                    ],
+                    'date' => 'Venerdì 22 ottobre dalle 17.00-18.30',
+                    'participate' => 'Per partecipare:'
+                ],
                 'makex' => [
                     'title' => [
                         'Formazione alla robotica Serie',
