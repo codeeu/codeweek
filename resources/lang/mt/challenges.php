@@ -13,10 +13,7 @@ return [
         'description' => 'Deskrizzjoni',
         'instructions' => 'Struzzjonijiet',
         'example' => 'Eżempju',
-        'written-by' => [
-            'Din l-isfida nkitbet minn',
-            'u hija parti minn'
-        ],
+        'written-by' => ['Din l-isfida nkitbet minn', 'u hija parti minn'],
         'teachers' => 'Għalliema',
         'students' => 'Studenti',
         'beginner' => 'Student ġdid',
@@ -51,7 +48,9 @@ return [
         'Żid il-#CodeWeekChallenge',
         'Semmi u tteggja @CodeWeekEU',
         'Tippreferi taqsam l-isfida/l-isfidi tiegħek fuq Facebook?',
-        "Il-Ġimgħa tal-UE tal-Ikkowdjar se tehmeż post ġdid ta’ Sfida fuq il-paġna tal-Facebook tagħha (link għall-paġna ta' FB) kuljum u se tagħżel ir-rebbieħ għall-premju mill-kummenti taħt il-post.",
+        'Il-Ġimgħa tal-UE tal-Ikkowdjar se tehmeż post ġdid ta’ Sfida fuq il-paġna',
+        'tal-Facebook tagħha',
+        'kuljum u se tagħżel ir-rebbieħ għall-premju mill-kummenti taħt il-post.',
         'Kif taħdem?',
         'Sempliċement ikkummenta fuq il-post bil-link għax-xogħol tiegħek.'
     ],
@@ -91,5 +90,4 @@ return [
         'Facebook, Instagram jew Twitter',
         'Kun ċert li tuża'
     ]
-
 ];

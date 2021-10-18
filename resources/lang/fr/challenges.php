@@ -13,10 +13,7 @@ return [
         'description' => 'Description',
         'instructions' => 'Instructions',
         'example' => 'Exemple',
-        'written-by' => [
-            'Ce défi a été écrit par',
-            'et fait partie des'
-        ],
+        'written-by' => ['Ce défi a été écrit par', 'et fait partie des'],
         'teachers' => 'Enseignants',
         'students' => 'Élèves',
         'beginner' => 'Débutant',
@@ -51,7 +48,9 @@ return [
         'Ajoutez #CodeWeekChallenge',
         'Mentionnez et taguez @CodeWeekEU',
         'Vous préférez partager votre ou vos défi(s) sur Facebook?',
-        'La Semaine européenne du code épinglera une nouvelle publication Défi sur sa page Facebook (lien vers la page FB) tous les jours et sélectionnera le lauréat du prix en fonction des commentaires de chaque publication.',
+        'La Semaine européenne du code épinglera une nouvelle publication Défi sur sa ',
+        'page Facebook',
+        'tous les jours et sélectionnera le lauréat du prix en fonction des commentaires de chaque publication.',
         'Comment ça marche?',
         'Il vous suffit de commenter la publication en mettant un lien vers votre travail.'
     ],
@@ -61,7 +60,7 @@ return [
         'appuyez sur le bouton',
         'Modifier le profil',
         "de votre compte Instagram et ajoutez un lien vers votre travail dans le champ site web. Puis, créez une nouvelle publication, ajoutez une capture d'écran de votre travail, écrivez ",
-        "Lien dans la bio",
+        'Lien dans la bio',
         'ajoutez #CodeWeekChallenge et mentionnez @CodeWeekEU',
         'Vous préférez partager votre ou vos défi(s) sur',
         'La Semaine européenne du code épinglera',
@@ -91,5 +90,4 @@ return [
         'Facebook, Instagram ou Twitter',
         "Assurez-vous d'ajouter"
     ]
-
 ];

@@ -13,10 +13,7 @@ return [
         'description' => 'Leírás',
         'instructions' => 'Utasítások',
         'example' => 'Példa',
-        'written-by' => [
-            'E kihívás írója:',
-            'és a következő részét képezi:'
-        ],
+        'written-by' => ['E kihívás írója:', 'és a következő részét képezi:'],
         'teachers' => 'Tanárok',
         'students' => 'Diákok',
         'beginner' => 'Kezdő',
@@ -38,7 +35,7 @@ return [
         'Oszd meg a kihívásodat',
         'Szeretnél nyerni a programozási hét ajándékaiból? Ha igen, akkor terjeszd munkádat a neten!',
         'Miután teljesítetted a kihívást, oszd meg az Instagramon!',
-        "Az európai programozási hét minden napján – október 9. és 24. között – kiválasztanak nyerteseket, akiket az Instagram csatornánkon is bejelentenek. Ne felejtsd el rendszeresen ellenőrizni értesítéseidet!"
+        'Az európai programozási hét minden napján – október 9. és 24. között – kiválasztanak nyerteseket, akiket az Instagram csatornánkon is bejelentenek. Ne felejtsd el rendszeresen ellenőrizni értesítéseidet!'
     ],
     'share' => [
         'Hogyan tudod megosztani a kihívásaidat az Instagramon?',
@@ -51,7 +48,9 @@ return [
         'Add hozzá a #CodeWeekChallenge hashtaget',
         'Említsd meg és taggeld a @CodeWeekEU címkét',
         'Inkább a Facebookon szeretnéd megosztani a kihívásaid?',
-        'Az európai programozási hét minden héten rögzít egy Új kihívás bejegyzést a facebook oldalán (link a FB oldalhoz), a díj nyerteseit pedig a bejegyzés alatti hozzászólásokból választja ki.',
+        'Az európai programozási hét minden héten rögzít egy Új kihívás bejegyzést a',
+        'facebook oldalán',
+        'a díj nyerteseit pedig a bejegyzés alatti hozzászólásokból választja ki.',
         'Hogyan működik?',
         'Írj egy egyszerű megjegyzést a bejegyzéshez, amelyben szerepel a tevékenységedre mutató link.'
     ],
@@ -68,7 +67,7 @@ return [
         'új kihívást rögzít majd a',
         'Facebook oldalán',
         'Ezt követően pedig csak hozzászólást kell írnod a bejegyzéshez, amelyben szerepel a tevékenységedre mutató link',
-        "Az európai programozási hét minden napján – október 9. és 24. között – kiválasztanak nyerteseket, és meglepik őket a programozási hét számos ajándékával, majd pedig bejelentik az Instagramon. Ne felejtsd el rendszeresen ellenőrizni értesítéseidet"
+        'Az európai programozási hét minden napján – október 9. és 24. között – kiválasztanak nyerteseket, és meglepik őket a programozási hét számos ajándékával, majd pedig bejelentik az Instagramon. Ne felejtsd el rendszeresen ellenőrizni értesítéseidet'
     ],
     'take-part' => [
         'Miért érdemes részt venni az európai programozási hét kihívásaiban?',
@@ -91,5 +90,4 @@ return [
         'Facebookra, Instagramra vagy Twitterre',
         'Mindenképpen használd a'
     ]
-
 ];

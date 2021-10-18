@@ -13,10 +13,7 @@ return [
         'description' => 'Descrizione',
         'instructions' => 'Istruzioni',
         'example' => 'Esempio',
-        'written-by' => [
-            'Questa sfida è stata scritta da',
-            'e fa parte delle'
-        ],
+        'written-by' => ['Questa sfida è stata scritta da', 'e fa parte delle'],
         'teachers' => 'Insegnanti',
         'students' => 'Studenti',
         'beginner' => 'Principiante',
@@ -38,7 +35,7 @@ return [
         'Condividi la tua sfida',
         'Ti piacerebbe vincere un premio della settimana della programmazione? Se la risposta è sì, allora fai diventare virale il tuo lavoro!',
         'Dopo aver completato la sfida, condividila su Instagram.',
-        "I vincitori saranno selezionati ogni giorno durante la settimana delle programmazione tra il 9 e il 24 ottobre e verranno annunciati sul nostro canale Instagram, quindi ricordati di controllare regolarmente le notifiche."
+        'I vincitori saranno selezionati ogni giorno durante la settimana delle programmazione tra il 9 e il 24 ottobre e verranno annunciati sul nostro canale Instagram, quindi ricordati di controllare regolarmente le notifiche.'
     ],
     'share' => [
         'Come condividere le tue sfide su Instagram?',
@@ -51,7 +48,9 @@ return [
         'Aggiungi l’hashtag #CodeWeekChallenge',
         'Menziona e tagga @CodeWeekEU',
         'Preferisci condividere le tue sfide su Facebook?',
-        'La settimana europea della programmazione pubblicherà ogni giorno un nuovo post sulle sfide sulla sua pagina Facebook (link alla pagina FB) e selezionerà il vincitore del premio dai commenti sotto il post.',
+        'La settimana europea della programmazione pubblicherà ogni giorno un nuovo post sulle sfide sulla sua pagina',
+        'Facebook',
+        'e selezionerà il vincitore del premio dai commenti sotto il post.',
         'Come funziona?',
         'Basta commentare il post con il link al tuo lavoro.'
     ],
@@ -68,7 +67,7 @@ return [
         'un nuovo post sulle sfide sulla sua',
         'pagina Facebook',
         'Ti basterà commentare il post con il link al tuo lavoro',
-        "I vincitori verranno selezionati e premiati ogni giorno durante la settimana della programmazione tra il 9 e il 24 ottobre. I loro nomi saranno annunciati sui nostri canali Instagram e Facebook, quindi ricordati di controllare regolarmente le notifiche"
+        'I vincitori verranno selezionati e premiati ogni giorno durante la settimana della programmazione tra il 9 e il 24 ottobre. I loro nomi saranno annunciati sui nostri canali Instagram e Facebook, quindi ricordati di controllare regolarmente le notifiche'
     ],
     'take-part' => [
         'Perché partecipare a una sfida della settimana europea della programmazione?',
@@ -81,7 +80,7 @@ return [
         'qui',
         'per scaricare questa sfida come documento word'
     ],
-    'bingo' =>[
+    'bingo' => [
         'Completa tutte le sfide',
         'Sfida completata? Stampa',
         'la scheda bingo',
@@ -91,5 +90,4 @@ return [
         'Facebook, Instagram o Twitter',
         'Assicurati di usare'
     ]
-
 ];
