@@ -28,9 +28,13 @@ return [
     ],
 
     'paper-circuit' => [
-        'title' => 'Izklopite računalnik in programirajte: ustvarite papirno vezje',
+        'title' =>
+            'Izklopite računalnik in programirajte: ustvarite papirno vezje',
         'author' => 'Ekipa evropskega tedna programiranja',
-        'purposes' => ['Krepitev ustvarjalnosti', 'Razvoj sposobnosti reševanja težav'],
+        'purposes' => [
+            'Krepitev ustvarjalnosti',
+            'Razvoj sposobnosti reševanja težav'
+        ],
         'description' => [
             'Narišite kateri koli predmet po vaši izbiri. To je lahko nočno nebo, pikapolonica, robot, božično drevo ali kar koli vam pade na pamet. Projekt po želji prilagodite z vizualnimi elementi evropskega tedna programiranja: raziščite',
             'orodja za učitelje za evropski teden programiranja',
@@ -128,7 +132,7 @@ return [
             'Poslušajte',
             'primer pesmi, katere koda je napisana z orodjem Earsketch',
             'Kodo lahko uvozite in jo uredite'
-        ],
+        ]
     ],
     'sensing-game' => [
         'title' => 'Ustvarite igro z video zaznavanjem',
@@ -168,7 +172,8 @@ return [
 
     'calming-leds' => [
         'title' => 'Pomirjujoče LED-diode: ustvarite napravo z micro:bitom',
-        'author' => 'Micro:bit Educational Foundation (Izobraževalna ustanova za micro:bit)',
+        'author' =>
+            'Micro:bit Educational Foundation (Izobraževalna ustanova za micro:bit)',
         'duration' => '20 minut',
         'materials' => [
             'naprava micro:bit in baterija (če je na voljo)',
@@ -196,7 +201,8 @@ return [
     'computational-thinking-and-computational-fluency' => [
         'title' =>
             'Računalniško razmišljanje in računalniška spretnost s ScratchJr',
-        'author' => 'Stamatis Papadakis – Ambasador evropskega tedna programiranja za Grčijo',
+        'author' =>
+            'Stamatis Papadakis – Ambasador evropskega tedna programiranja za Grčijo',
         'purposes' => [
             'Spoznavanje novih ukazov in vmesnika.',
             'Ustvarjanje preprostih programov s preprostimi ukazi vzroka in posledice.',
@@ -270,7 +276,7 @@ return [
         ],
         'example' =>
             'Ko končaš, lahko svojo simulacijo deliš z drugimi. Deli sporočilo o svojem razmišljanju o tem, kaj lahko naredimo, da bi ohranili zdravje drugih, ko v mesto pride virus.',
-        'materials' => 'Vadnica Code.org',
+        'materials' => 'Vadnica Code.org'
     ],
     'create-your-own-masterpiece' => [
         'title' => 'Ustvarite svojo mojstrovino!',
@@ -280,7 +286,8 @@ return [
         'description' =>
             'Ustvarite svojo mojstrovino z umetnikom! Uporabite bloke kode, da bo vaš umetnik ustvaril edinstveno umetniško delo.',
         'instructions' => 'Navodila so navedena na vrhu vsake stopnje',
-        'example' => 'Primeri umetnikov so na voljo na tej strani pod risbo (Drawing)',
+        'example' =>
+            'Primeri umetnikov so na voljo na tej strani pod risbo (Drawing)',
         'materials' => ['Prva stopnja vadnice je na voljo', 'TUKAJ']
     ],
     'cs-first-unplugged-activities' => [
@@ -345,7 +352,7 @@ return [
             'Učence spodbujamo, da dokončajo izziv v okviru tedna programiranja ter ga prenesejo na mednarodno raven, da vzpostavijo stik z drugimi učenci in osvojijo nagrade.',
             'Za več informacij glejte:',
             'ali se na nas obrnite na'
-        ],
+        ]
     ],
     'virtual-flower-field' => [
         'title' => 'Ustvari svoj virtualni cvetlični vrt',
@@ -354,7 +361,7 @@ return [
         'duration' => '30–60 minut',
         'purposes' => [
             'Spoznati programiranje s preprostim, a izraznim projektom.',
-            'Spoznati, da je programiranje lahko umetniško in vodi do čudovitih rezultatov .',
+            'Spoznati, da je programiranje lahko umetniško in vodi do čudovitih rezultatov.',
             'S pisanimi rožami in evropskim tednom programiranja narediti jesen svetlejšo.',
             'Prikazati raznolikost cvetja na Zemlji.',
             'Prispevati k ciljem trajnostnega razvoja, zlasti ciljem trajnostnega razvoja 13 – Podnebne spremembe, z organizacijo programerskih dogodkov, s katerimi se izboljšuje izobraževanje o podnebnih spremembah z ozaveščanjem o tej temi.'
@@ -398,7 +405,7 @@ return [
             'tej povezavi'
         ],
         'example' => 'Primer hiše strahov na stopnji',
-        'materials' => ['Hedy na', 'stopnji od 1 do 4'],
+        'materials' => ['Hedy na', 'stopnji od 1 do 4']
     ],
     'inclusive-app-design' => [
         'title' => 'Inclusive App Design (Oblikovanje vključujočih aplikacij)',
@@ -435,14 +442,15 @@ return [
         'description' =>
             'V tem projektu boš oblikoval in izdelal lik s trapastimi očmi. Velike trapaste oči lika bodo sledile kazalcu miške in oživile tvoj lik.',
         'instructions' => 'Celoten opis projekta je na voljo tukaj',
-        'example' => 'Oglejte si izdelke Gobo, Under the sea (Pod morjem) in Don\’t eat donut (Ne jej krofa)'
+        'example' =>
+            'Oglejte si izdelke Gobo, Under the sea (Pod morjem) in Don\’t eat donut (Ne jej krofa)'
     ],
     'train-ai-bot' => [
         'title' => 'Treniraj z botom umetne inteligence!',
         'purposes' =>
             'Spoznati umetno inteligenco, strojno učenje, podatke o usposabljanju in predsodke, hkrati pa raziskati etična vprašanja in načine, kako lahko umetno inteligenco uporabimo za reševanje svetovnih problemov',
         'description' =>
-            'AI for Oceans: Treniraj z botom umetne inteligence za Oceani . V tej dejavnosti boš programiral ali treniral AI(umetno inteligenco) za prepoznavanje rib ali smeti . Očistimo ocean!',
+            'AI for Oceans: Treniraj z botom umetne inteligence za Oceani. V tej dejavnosti boš programiral ali treniral AI(umetno inteligenco) za prepoznavanje rib ali smeti. Očistimo ocean!',
         'instructions' => [
             'Navodila so prikazana v obliki videoposnetkov v sklopu vadnice',
             'navedena pa so tudi na vrhu vsake stopnje'
@@ -450,7 +458,6 @@ return [
         'materials' => [
             'Vadnica je na voljo tukaj',
             'Ta vadnica je na voljo v več kot 25 jezikih'
-        ],
+        ]
     ]
 ];
-

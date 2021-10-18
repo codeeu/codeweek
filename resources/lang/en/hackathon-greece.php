@@ -215,7 +215,7 @@ return [
             '14' => [
                 'Ilias Karabasis',
                 'I am currently working as a Full Stack Software Engineer, while exploring the field of Data Science and AI. I also joined recently the MS Learn Student Ambassadors Program.',
-                'My expertise is in .NET Technologies, C# and Angular. I am familiar with Python as well several Machine Learning and Data Science Frameworks.'
+                'My expertise is in.NET Technologies, C# and Angular. I am familiar with Python as well several Machine Learning and Data Science Frameworks.'
             ],
             '15' => [
                 'Dr. Konstantinos Fouskas',
@@ -271,7 +271,7 @@ return [
             ],
             '27' => [
                 'Kostas Kalogirou',
-                'CEO Exandia. Business executive with tech orientation, seasoned executive in visual communication and experienced design educator. Assistant curator at Thessaloniki Design Museum, has co-organised exhibitions in Europe and USA. Design educator and guest lecturer in design events around Greece and jury member in national and international graphic design competitions. Will assist Hackathon teams in business aspects of software product development and pitching .',
+                'CEO Exandia. Business executive with tech orientation, seasoned executive in visual communication and experienced design educator. Assistant curator at Thessaloniki Design Museum, has co-organised exhibitions in Europe and USA. Design educator and guest lecturer in design events around Greece and jury member in national and international graphic design competitions. Will assist Hackathon teams in business aspects of software product development and pitching.',
                 ''
             ],
 
