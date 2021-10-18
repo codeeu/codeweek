@@ -7,7 +7,7 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Facades\Excel;
 
-class Magenta extends Command {
+class DutchDance extends Command {
     /**
      * The name and signature of the console command.
      *
