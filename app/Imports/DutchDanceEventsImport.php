@@ -66,9 +66,9 @@ class DutchDanceEventsImport extends DefaultValueBinder implements
             'codeweek_for_all_participation_code' => 'cw21-CodeWeekNL',
             'start_date' => $this->parseDate($row['start_date']),
             'end_date' => $this->parseDate($row['end_date']),
-            'geoposition' => $row['latitude'] . ',' . $row['longitude'],
-            'longitude' => $row['longitude'],
-            'latitude' => $row['latitude'],
+            'geoposition' => $row['longitude'] . ',' . $row['latitude'],
+            'longitude' => $row['latitude'],
+            'latitude' => $row['longitude'],
             'language' => strtolower($row['language'])
         ]);
 
