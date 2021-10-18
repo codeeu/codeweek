@@ -38,7 +38,7 @@ return [
         'Pokaż innym swoją pracę',
         'Chcesz wygrać nagrody Europejskiego Tygodnia Kodowania? W takim razie niech Twoją pracę zobaczy cały świat!',
         'Po wykonaniu zadania podziel się tym doświadczeniem na Instagramie.',
-        "Zwycięzców będziemy wybierać codziennie podczas Tygodnia Kodowania, czyli od 9 do 24 października, i ogłaszać na naszym profilu na Instagramie, dlatego warto sprawdzać powiadomienia regularnie."
+        'Zwycięzców będziemy wybierać codziennie podczas Tygodnia Kodowania, czyli od 9 do 24 października, i ogłaszać na naszym profilu na Instagramie, dlatego warto sprawdzać powiadomienia regularnie.'
     ],
     'share' => [
         'Jak dzielić się zrealizowanymi wyzwaniami na Instagramie?',
@@ -51,7 +51,9 @@ return [
         'Dodaj hasztag #CodeWeekChallenge',
         'Oznacz profil @CodeWeekEU i wspomnij o nim w opisie',
         'Wolisz podzielić się swoją pracą na Facebooku?',
-        'Na stronie Europejskiego Tygodnia Kodowania na portalu Facebook (łącze do strony FB) codziennie będzie pojawiać się przypięty post z nowym wyzwaniem. Każdego dnia będziemy wybierać komentarz pod postem, którego autor otrzyma od nas nagrodę',
+        'Na stronie Europejskiego Tygodnia Kodowania na portalu',
+        'Facebook',
+        'codziennie będzie pojawiać się przypięty post z nowym wyzwaniem. Każdego dnia będziemy wybierać komentarz pod postem, którego autor otrzyma od nas nagrodę',
         'Jak to działa?',
         'Po prostu zostaw pod postem komentarz z łączem do swojej pracy.'
     ],
@@ -68,7 +70,7 @@ return [
         'będzie przypinać post z nowym wyzwaniem',
         'na swoim profilu na Facebooku',
         'Musisz tylko dodać pod tym postem komentarz z łączem do swojej pracy',
-        "Zwycięzców będziemy wybierać codziennie podczas Tygodnia Kodowania, czyli od 9 do 24 października, i ogłaszać na naszych profilach na Instagramie i Facebooku, dlatego warto sprawdzać powiadomienia regularnie."
+        'Zwycięzców będziemy wybierać codziennie podczas Tygodnia Kodowania, czyli od 9 do 24 października, i ogłaszać na naszych profilach na Instagramie i Facebooku, dlatego warto sprawdzać powiadomienia regularnie.'
     ],
     'take-part' => [
         'Powody, dla których warto wziąć udział w wyzwaniu Europejskiego Tygodnia Kodowania',
@@ -91,5 +93,4 @@ return [
         'Facebook, Instagram lub Twitter',
         'Nie zapomnij o hasztagu'
     ]
-
 ];

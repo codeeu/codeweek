@@ -51,7 +51,9 @@ return [
         'Add the #CodeWeekChallenge',
         'Mention and tag @CodeWeekEU',
         'You prefer to share your challenge(s) on Facebook?',
-        'EU Code Week will pin a new Challenge post on their Facebook page (link to FB page)  every day and will select the winner for the prize from the comments under the  post.',
+        'EU Code Week will pin a new Challenge post on their',
+        'Facebook page',
+        'every day and will select the winner for the prize from the comments under the  post.',
         'How does it work?',
         'Simply comment on the post with the link to your work.'
     ],
@@ -81,7 +83,7 @@ return [
         'here',
         'to download this challenge as a word document'
     ],
-    'bingo' =>[
+    'bingo' => [
         'Complete all the Challenges',
         'Challenge completed? Print',
         'the bingo card',
@@ -92,6 +94,6 @@ return [
         'Make sure to use the',
         '',
         '',
-        '',
+        ''
     ]
 ];

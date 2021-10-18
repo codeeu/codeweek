@@ -13,10 +13,7 @@ return [
         'description' => 'Kirjeldus',
         'instructions' => 'Juhised',
         'example' => 'Näide',
-        'written-by' => [
-            'Selle väljakutse kirjutas',
-            'ja see on osa'
-        ],
+        'written-by' => ['Selle väljakutse kirjutas', 'ja see on osa'],
         'teachers' => 'Õpetajad',
         'students' => 'Õpilased',
         'beginner' => 'Algajad',
@@ -38,7 +35,7 @@ return [
         'Jagage oma väljakutset',
         'Kas tahaksite võita programmeerimisnädala Code Week auhindu? Kui jah, siis pange oma töö kulutulena levima!',
         'Pärast väljakutse lahendamist jagage seda Instagramis.',
-        "Võitjaid valitakse iga päev programmeerimisnädala Code Week jooksul 9.–24. oktoobrini ja kuulutatakse välja meie Instagrami kanalis, seepärast ärge unustage tihti oma teateid lugeda."
+        'Võitjaid valitakse iga päev programmeerimisnädala Code Week jooksul 9.–24. oktoobrini ja kuulutatakse välja meie Instagrami kanalis, seepärast ärge unustage tihti oma teateid lugeda.'
     ],
     'share' => [
         'Kuidas saab oma väljakutset või väljakutseid Instagramis jagada?',
@@ -51,7 +48,9 @@ return [
         'Lisage teemaviide #CodeWeekChallenge',
         'Mainige programmeerimisnädalat ja lisage silt @CodeWeekEU',
         'Kas eelistate jagada oma väljakutset Facebookis?',
-        'ELi programmeerimisnädal Code Week lisab iga päev oma Facebooki (link FB lehele) lehele uue väljakutse ja valib auhinna võitja postituse all olevatest kommentaaridest.',
+        'ELi programmeerimisnädal Code Week lisab iga päev oma',
+        'Facebooki',
+        'lehele uue väljakutse ja valib auhinna võitja postituse all olevatest kommentaaridest.',
         'Kuidas see käib?',
         'Kommenteerige lihtsalt postitust koos oma töö lingiga.'
     ],
@@ -68,7 +67,7 @@ return [
         'uue väljakutse postituse oma',
         'Facebooki lehele',
         'Seejärel tuleb teil vaid kommenteerida postitust koos oma töö lingiga',
-        "Võitjad valitakse Code Weeki jooksul 9.–24. oktoobrini iga päev ja nad saavad Code Weeki auhindu. Võitjad kuulutatakse välja meie Instagrami ja Facebooki kanalis, seepärast ärge unustage tihti oma teateid lugeda."
+        'Võitjad valitakse Code Weeki jooksul 9.–24. oktoobrini iga päev ja nad saavad Code Weeki auhindu. Võitjad kuulutatakse välja meie Instagrami ja Facebooki kanalis, seepärast ärge unustage tihti oma teateid lugeda.'
     ],
     'take-part' => [
         'Milleks osaleda ELi programmeerimisnädala Code Week väljakutses?',
@@ -91,5 +90,4 @@ return [
         'Facebooki, Instagrami või Twitterisse',
         'Kasutage kindlasti'
     ]
-
 ];
