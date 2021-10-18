@@ -266,7 +266,7 @@ return [
             'Hayali bir senaryoya uygulamak üzere, gerçek dünyadaki virüs salgınları hakkında ön bilgi edinmek.'
         ],
         'description' =>
-            'Canavar Şehri\'nde(Monster Town) kendi virüs salgını simülasyonunuzu oluşturup çalıştırmak üzere kod yazın . Kodlamayı öğrenin ve Canavar Şehri\'nin komşularına ne olacağı hakkında tahminlerde bulunun.',
+            'Canavar Şehri\'nde(Monster Town) kendi virüs salgını simülasyonunuzu oluşturup çalıştırmak üzere kod yazın. Kodlamayı öğrenin ve Canavar Şehri\'nin komşularına ne olacağı hakkında tahminlerde bulunun.',
         'instructions' => [
             'Talimatlar video olarak eğitim içerisinde',
             'yer almakta',
@@ -305,11 +305,11 @@ return [
             'Öğretmen, öğrenim sürecini fotoğraflayıp #CodeWeekChallengeGoogle etiketiyle Instagram\'da paylaşabilir.'
         ],
         'materials' => [
-            'Aktivite kitapçığına ek olarak, bazı aktivitelerde ek materyal kullanımı gerekebilir veya faydalı olabilir . ',
+            'Aktivite kitapçığına ek olarak, bazı aktivitelerde ek materyal kullanımı gerekebilir veya faydalı olabilir. ',
             'Network a Neighborhood(Mahalle ağı oluşturma) haritasında kullanmak üzere küçük sayaçlar(kuru fasulye gibi).',
-            'Send a Secret Message(Gizli mesaj gönderme) şifreleme tekerini kesmek için makas . ',
-            'Send a Secret Message(Gizli mesaj gönderme) şifreleme tekerini güçlendirmek için karton ve yapıştırıcı . ',
-            'Send a Secret Message(Gizli mesaj gönderme) şifreleme tekerini bağlamak için raptiye, kürdan veya düz hale getirilmiş ataş . '
+            'Send a Secret Message(Gizli mesaj gönderme) şifreleme tekerini kesmek için makas. ',
+            'Send a Secret Message(Gizli mesaj gönderme) şifreleme tekerini güçlendirmek için karton ve yapıştırıcı. ',
+            'Send a Secret Message(Gizli mesaj gönderme) şifreleme tekerini bağlamak için raptiye, kürdan veya düz hale getirilmiş ataş. '
         ]
     ],
     'family-care' => [
@@ -322,12 +322,12 @@ return [
             'Sorunları fırsat olarak görmek ve yaratıcı çözümler üretmek;',
             'Çözümleri yenilikçi bir şekilde hayata geçirmek için kodlardan faydalanmak;',
             'Afişler tasarlamak ve bulduğunuz çözümleri başkalarına sunmak;',
-            'Projelerinizin etki yaratması için sosyal medyayı kullanmak . '
+            'Projelerinizin etki yaratması için sosyal medyayı kullanmak. '
         ],
         'description' => [
-            'Evimizden bahsederken aklınıza ne geliyor ? Güzel bir daire ? Anne babanızın hazırladığı büyük bir akşam yemeği ? Sadece sizin bildiğiniz gizli bir alan ? Sıcak bir ev, bedenimizi ve ruhumuzu bir benzin istasyonu gibi yeniden yakıtla doldurur . Modern hayatın koşuşturmacası içerisinde, ebeveynler çalıştıkları için her zaman meşgul durumda . Arkadaşlarınızla vakit geçirirken, kedilerinizi arkanızda bırakamazsınız . Peki siz uzaktayken arkadaşınızla nasıl ilgileneceksiniz ? Bu görevin teması',
+            'Evimizden bahsederken aklınıza ne geliyor ? Güzel bir daire ? Anne babanızın hazırladığı büyük bir akşam yemeği ? Sadece sizin bildiğiniz gizli bir alan ? Sıcak bir ev, bedenimizi ve ruhumuzu bir benzin istasyonu gibi yeniden yakıtla doldurur. Modern hayatın koşuşturmacası içerisinde, ebeveynler çalıştıkları için her zaman meşgul durumda. Arkadaşlarınızla vakit geçirirken, kedilerinizi arkanızda bırakamazsınız. Peki siz uzaktayken arkadaşınızla nasıl ilgileneceksiniz ? Bu görevin teması',
             'Aileyle İlgilenmek',
-            'Bu temaya göre, öğrenciler kodlama ve donanım yoluyla sevgi ve ilgi gösterebilecekleri bir fikir geliştirmeye teşvik ediliyor . Size üzerinde düşünmeniz için birkaç soru:',
+            'Bu temaya göre, öğrenciler kodlama ve donanım yoluyla sevgi ve ilgi gösterebilecekleri bir fikir geliştirmeye teşvik ediliyor. Size üzerinde düşünmeniz için birkaç soru:',
             'Evinizde kaç kişi yaşıyor ? Bunlar kim ? Onlarla yaşarken herhangi bir sorunla karşılaştınız mı ? Ne tür bir ilgiye muhtaçlar ? ',
             'Çevrenizde başkalarına kıyasla daha fazla aile ilgisinden yoksun kişiler var mı ? Bu kişilere nasıl yardımcı olabilirsiniz ? '
         ],
@@ -346,9 +346,9 @@ return [
             'veya bilgisayar sürümünü',
             'indirin',
             'mBlock, Scratch tabanlı bir programlama dilidir',
-            'Bu görev, yaşları 6 ila 13 arasında değişen genç kişiler için proje bazlı yaratıcı tasarım programı olan MakeX global Spark Competition\'dan uyarlanmıştır . ',
-            'Katılımcı ekibin özel bir tema üzerine odaklanması, yazılım programlama ve donanım oluşturma yoluyla bir çözüm bulması gerekecektir . ',
-            'Öğrenciler bu görevi Codeweek üzerinde tamamlamaya ve diğer öğrencilerle iletişime geçip ödüller kazanmak üzere bunu uluslararası seviyeye taşımaya teşvik edilir . ',
+            'Bu görev, yaşları 6 ila 13 arasında değişen genç kişiler için proje bazlı yaratıcı tasarım programı olan MakeX global Spark Competition\'dan uyarlanmıştır. ',
+            'Katılımcı ekibin özel bir tema üzerine odaklanması, yazılım programlama ve donanım oluşturma yoluyla bir çözüm bulması gerekecektir. ',
+            'Öğrenciler bu görevi Codeweek üzerinde tamamlamaya ve diğer öğrencilerle iletişime geçip ödüller kazanmak üzere bunu uluslararası seviyeye taşımaya teşvik edilir. ',
             'Daha fazla bilgi için burayı inceleyebilir:',
             'veya bizimle iletişime geçebilirsiniz'
         ]
@@ -359,22 +359,22 @@ return [
             'Jadga Huegle-Meet and Code koçu ve SAP Snap!ekibinin bir parçası',
         'duration' => '30-60 dakika',
         'purposes' => [
-            'Basit ama etkili bir proje ile programlamayı tanımak . ',
-            'Kodlamanın sanatsal bir yönünün olduğunu ve güzel sonuçlar doğurabileceğini öğrenmek . ',
-            'Renkli çiçekler ve AB Kod Haftası ile sonbaharı daha ışıltılı bir hale getirmek . ',
-            'Dünya üzerinde bulunan çiçeklerin çeşitliliğini göstermek . ',
+            'Basit ama etkili bir proje ile programlamayı tanımak. ',
+            'Kodlamanın sanatsal bir yönünün olduğunu ve güzel sonuçlar doğurabileceğini öğrenmek. ',
+            'Renkli çiçekler ve AB Kod Haftası ile sonbaharı daha ışıltılı bir hale getirmek. ',
+            'Dünya üzerinde bulunan çiçeklerin çeşitliliğini göstermek. ',
             'İklim değişikliği eğitimi konusu hakkında farkındalık yaratıp bu eğitim sürecini iyileştiren kodlama etkinlikleri oluşturarak, Sürdürülebilir Kalkınma Hedeflerine(SKH\'ler) ve özellikle SKA13-İklim Değişikliğine katkıda bulunmak.'
         ],
         'description' =>
-            'Snap!içerisinde farklı türde çiçekler ve farklı sayıda çiçek yaprakları ile sanal bir çiçek bahçesi oluşturabileceğiniz bir program geliştirin . ',
+            'Snap!içerisinde farklı türde çiçekler ve farklı sayıda çiçek yaprakları ile sanal bir çiçek bahçesi oluşturabileceğiniz bir program geliştirin. ',
         'instructions' => [
             'Göreve başlamak için ilhama ihtiyacınız varsa, bu videoyu',
             'izleyin',
             'veya bu',
             'belgeyi kullanarak',
-            'süreci adım adım takip edin . ',
-            'Görev, Snap!(veya Scratch) içerisinde sanal bir çiçek bahçesi programlayarak ve ekran görüntüsünü veya çalışma sonucunun fotoğrafını çevrimiçi olarak göndererek tamamlanabilir . ',
-            'Çiçek bahçesinde farklı türde çiçekler ve farklı sayıda çiçek yaprakları bulunmalıdır . Tercihen çiçekler programlanır, yani çiçek yaprakları tekrar tekrar yerleştirilip döndürülerek(veya çizilip döndürülerek) oluşturulur . ',
+            'süreci adım adım takip edin. ',
+            'Görev, Snap!(veya Scratch) içerisinde sanal bir çiçek bahçesi programlayarak ve ekran görüntüsünü veya çalışma sonucunun fotoğrafını çevrimiçi olarak göndererek tamamlanabilir. ',
+            'Çiçek bahçesinde farklı türde çiçekler ve farklı sayıda çiçek yaprakları bulunmalıdır. Tercihen çiçekler programlanır, yani çiçek yaprakları tekrar tekrar yerleştirilip döndürülerek(veya çizilip döndürülerek) oluşturulur. ',
             'Sanal çiçek bahçenizin resmini #MeetandCode etiketiyle paylaşın.'
         ],
         'materials' => [
@@ -389,15 +389,15 @@ return [
         'audience' => 'Öğretmenler ve eğitmenler',
         'duration' => 'Ön bilgiye bağlı olarak 1 veya 2 saat',
         'purposes' => [
-            'İnteraktif bir Perili Ev hikâyesi oluşturmak . ',
-            'Hedy ile programlamayı öğrenmek . '
+            'İnteraktif bir Perili Ev hikâyesi oluşturmak. ',
+            'Hedy ile programlamayı öğrenmek. '
         ],
         'description' =>
-            'Hedy ile interaktif öğeler kullanarak bir Perili Ev hikâyesi oluşturacaksınız . Kod her çalıştığında yeni bir hikâye oluşturulacak . Hikâye aynı zamanda bilgisayar tarafından sesli olarak okunabilir ve çevrimiçi olarak paylaşılabilir . ',
+            'Hedy ile interaktif öğeler kullanarak bir Perili Ev hikâyesi oluşturacaksınız. Kod her çalıştığında yeni bir hikâye oluşturulacak. Hikâye aynı zamanda bilgisayar tarafından sesli olarak okunabilir ve çevrimiçi olarak paylaşılabilir. ',
         'instructions' => [
-            'Bir tarayıcıyı açıp hedycode . com adresine giderek göreve başlayabilirsiniz . ',
-            'Seviye 1-4 için talimatları izleyin . ‘Level’(Seviye) ve ‘Haunted house(Perili ev) sekmelerini kullanın . ’',
-            'Bu seviyelerin yardımıyla, interaktif bir perili ev hikâyesi yazacağız . ',
+            'Bir tarayıcıyı açıp hedycode. com adresine giderek göreve başlayabilirsiniz. ',
+            'Seviye 1-4 için talimatları izleyin. ‘Level’(Seviye) ve ‘Haunted house(Perili ev) sekmelerini kullanın. ’',
+            'Bu seviyelerin yardımıyla, interaktif bir perili ev hikâyesi yazacağız. ',
             'Öğretmenler, Hedy ders planı için',
             'buraya tıklayın',
             'Felienne Hermans\'ın Hedy sunumuna',
@@ -411,10 +411,10 @@ return [
         'author' => 'Apple Eğitim',
         'duration' => '60 dakika + isteğe bağlı ilave aktiviteler',
         'purposes' => [
-            'Herkesin erişim sağlayıp anlayabileceği bir uygulama fikri üzerinde beyin fırtınası yapmak, bu fikri planlamak, prototipini belirlemek ve paylaşmak . '
+            'Herkesin erişim sağlayıp anlayabileceği bir uygulama fikri üzerinde beyin fırtınası yapmak, bu fikri planlamak, prototipini belirlemek ve paylaşmak. '
         ],
         'description' =>
-            'Harika uygulamalar harika fikirlerle başlar . Bu aktivitede, öğrenciler ilgilendikleri bir konu hakkında uygulama fikirleri sunacaklar, ardından ise kapsam ve erişilebilirliği göz önünde bulundurarak uygulamaların nasıl tasarlandığını keşfedecekler . ',
+            'Harika uygulamalar harika fikirlerle başlar. Bu aktivitede, öğrenciler ilgilendikleri bir konu hakkında uygulama fikirleri sunacaklar, ardından ise kapsam ve erişilebilirliği göz önünde bulundurarak uygulamaların nasıl tasarlandığını keşfedecekler. ',
         'instructions' => [
             'Tüm talimatlara bu bağlantıdan ulaşabilirsiniz:',
             'Bu bir saatlik ders planıyla, eğitmenler aşağıdaki konular hakkında öğrencilere yol gösterebilir',

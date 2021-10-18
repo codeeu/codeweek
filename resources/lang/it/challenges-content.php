@@ -30,7 +30,10 @@ return [
     'paper-circuit' => [
         'title' => 'Scollegati e programma: Crea un circuito cartaceo',
         'author' => 'Team della settimana europea della programmazione',
-        'purposes' => ['Potenziare la creatività', 'Sviluppare capacità di risoluzione dei problemi'],
+        'purposes' => [
+            'Potenziare la creatività',
+            'Sviluppare capacità di risoluzione dei problemi'
+        ],
         'description' => [
             'Disegna un oggetto a tua scelta. Può essere un cielo notturno, una coccinella, un robot, un albero di Natale o qualsiasi altra cosa. Non esitare a personalizzare il tuo progetto con le immagini della settimana europea della programmazione: puoi usare il',
             'toolkit per gli insegnanti della Code Week',
@@ -112,13 +115,13 @@ return [
             'Sound clip(Clip audio)',
             'Posiziona il cursore tra le parentesi, vai alla Libreria audio, seleziona una clip e incollala cliccando sull’icona blu di incolla',
             'Track number(Numero della traccia)',
-            'le tracce ti aiutano a organizzare i suoni per tipo di strumento(voce, basso, batteria, tastiere, ecc .) . Aggiungi tutte le tracce(strumenti) che desideri . Le tracce sono visualizzate come righe che scorrono sulla Digital Audio Workstation',
+            'le tracce ti aiutano a organizzare i suoni per tipo di strumento(voce, basso, batteria, tastiere, ecc.). Aggiungi tutte le tracce(strumenti) che desideri. Le tracce sono visualizzate come righe che scorrono sulla Digital Audio Workstation',
             'Start measure(Misura iniziale)',
-            'indica l’inizio della riproduzione audio . Le misure sono unità di tempo musicali . Una misura è formata da 4 tempi',
+            'indica l’inizio della riproduzione audio. Le misure sono unità di tempo musicali. Una misura è formata da 4 tempi',
             'End measure(Misura finale)',
             'indica la fine della riproduzione audio',
             'Questa riga di programmazione si presenterà così',
-            'Puoi aggiungere diversi effetti, come il volume per migliorare l’audio della tua composizione . Il volume varia da - 60.0 decibel a 12.0 decibel, considerando che 0.0 è il volume originale . ',
+            'Puoi aggiungere diversi effetti, come il volume per migliorare l’audio della tua composizione. Il volume varia da - 60.0 decibel a 12.0 decibel, considerando che 0.0 è il volume originale. ',
             'Scrivi',
             'Tra parentesi, scrivi il numero della traccia, VOLUME, GAIN, livello del volume, la misura in cui inizia, il livello e la misura in cui termina',
             'Questo è un esempio di un effetto di dissolvenza in entrata',
@@ -128,7 +131,7 @@ return [
             'Ascolta',
             'un esempio di una canzone programmata con Earsketch',
             'Puoi importare il codice e modificarlo'
-        ],
+        ]
     ],
     'sensing-game' => [
         'title' => 'Crea un videogioco sensoriale',
@@ -139,7 +142,7 @@ return [
             'Comporre una canzone mixando clip audio'
         ],
         'description' =>
-            'In questa sfida creerai un semplice gioco che utilizza una videocamera come sensore per rilevare il movimento, il che significa che sarai in grado di controllare la tua animazione con il movimento fisico . Lo scopo del gioco è raccogliere il maggior numero possibile di bolle della settimana europea della programmazione in 30 secondi . Invece di raccogliere bolle, puoi creare un gioco in cui insegui un personaggio o fai scoppiare dei palloncini con le mani . ',
+            'In questa sfida creerai un semplice gioco che utilizza una videocamera come sensore per rilevare il movimento, il che significa che sarai in grado di controllare la tua animazione con il movimento fisico. Lo scopo del gioco è raccogliere il maggior numero possibile di bolle della settimana europea della programmazione in 30 secondi. Invece di raccogliere bolle, puoi creare un gioco in cui insegui un personaggio o fai scoppiare dei palloncini con le mani. ',
         'instructions' => [
             'Accedi a',
             'Clicca',
@@ -196,7 +199,8 @@ return [
     'computational-thinking-and-computational-fluency' => [
         'title' =>
             'Pensiero computazionale e fluidità computazionale con ScratchJr',
-        'author' => 'Stamatis Papadakis – ambasciatore della settimana europea della programmazione Grecia',
+        'author' =>
+            'Stamatis Papadakis – ambasciatore della settimana europea della programmazione Grecia',
         'purposes' => [
             'Familiarizzare con nuovi comandi e interfacce.',
             'Creare semplici programmi con semplici comandi causa-effetto.',
@@ -229,7 +233,7 @@ return [
             'Esplorare i concetti di programmazione'
         ],
         'description' =>
-            'Un villaggio è minacciato da un incendio e ha bisogno di te per programmare una soluzione!Incontra il tuo assistente per la programmazione, l’agente Minecraft, e quindi programmalo per muoverti nella foresta e raccogliere dati . Questi dati aiuteranno l’agente a prevedere dove si verificheranno gli incendi . Poi programma l’agente per evitare la diffusione del fuoco, salvare il villaggio e riportare la vita nella foresta . Impara le basi della programmazione e scopri un esempio reale di intelligenza artificiale(IA) . ',
+            'Un villaggio è minacciato da un incendio e ha bisogno di te per programmare una soluzione!Incontra il tuo assistente per la programmazione, l’agente Minecraft, e quindi programmalo per muoverti nella foresta e raccogliere dati. Questi dati aiuteranno l’agente a prevedere dove si verificheranno gli incendi. Poi programma l’agente per evitare la diffusione del fuoco, salvare il villaggio e riportare la vita nella foresta. Impara le basi della programmazione e scopri un esempio reale di intelligenza artificiale(IA). ',
         'instructions' => 'Scarica il piano della lezione qui',
         'materials' => [
             'Installa Minecraft: Education Edition',
@@ -240,11 +244,11 @@ return [
     'create-a-dance' => [
         'title' => 'Crea un ballo con l’inno alla programmazione!',
         'purposes' =>
-            'Praticare la programmazione in modo divertente e sentirsi connessi con la community della settimana europea della programmazione . ',
+            'Praticare la programmazione in modo divertente e sentirsi connessi con la community della settimana europea della programmazione. ',
         'description' => [
             'Crea un ballo con l’inno alla programmazione!Usa il',
             'tutorial Dance Party',
-            'per scrivere un ballo sull’inno alla programmazione . L’inno ufficiale della settimana europea della programmazione è elencato come una voce in Dance Party . '
+            'per scrivere un ballo sull’inno alla programmazione. L’inno ufficiale della settimana europea della programmazione è elencato come una voce in Dance Party. '
         ],
         'instructions' => [
             'Le istruzioni sono visualizzate all’interno del',
@@ -253,24 +257,24 @@ return [
         ],
         'example' =>
             'Le creazioni degli studenti si possono trovare su questa pagina',
-        'materials' => 'Il tutorial di Code . org'
+        'materials' => 'Il tutorial di Code. org'
     ],
     'create-a-simulation' => [
         'title' => 'Crea una simulazione!',
         'purposes' => [
-            'Imparare le simulazioni introducendo le seguenti variabili: creare una folla, tassi di guarigione, indossare mascherine e vaccini . ',
-            'Attivare conoscenze pregresse sulle epidemie di virus nel mondo reale che si applicheranno a uno scenario fittizio . '
+            'Imparare le simulazioni introducendo le seguenti variabili: creare una folla, tassi di guarigione, indossare mascherine e vaccini. ',
+            'Attivare conoscenze pregresse sulle epidemie di virus nel mondo reale che si applicheranno a uno scenario fittizio. '
         ],
         'description' =>
-            'Scrivi del codice per creare ed eseguire la tua simulazione dello scoppio del virus a Monster Town . Impara a programmare e fare previsioni su ciò che accadrà ai residenti di Monster Town . ',
+            'Scrivi del codice per creare ed eseguire la tua simulazione dello scoppio del virus a Monster Town. Impara a programmare e fare previsioni su ciò che accadrà ai residenti di Monster Town. ',
         'instructions' => [
             'Le istruzioni sono visualizzate all’interno del',
             'tutorial',
             'e sono scritte anche all’inizio di ogni livello'
         ],
         'example' =>
-            'Quando hai finito, puoi condividere la tua simulazione con gli altri . Diffondi il tuo messaggio su ciò che pensi che possiamo fare per contribuire a tutelare la salute degli altri quando un virus arriva in città . ',
-        'materials' => 'Il tutorial di Code . org',
+            'Quando hai finito, puoi condividere la tua simulazione con gli altri. Diffondi il tuo messaggio su ciò che pensi che possiamo fare per contribuire a tutelare la salute degli altri quando un virus arriva in città. ',
+        'materials' => 'Il tutorial di Code. org'
     ],
     'create-your-own-masterpiece' => [
         'title' => 'Crea il tuo capolavoro!',
@@ -278,9 +282,11 @@ return [
         'purpose' =>
             'Presentare i concetti dell’informatica in modo visivo e ispirare la creatività',
         'description' =>
-            'Crea il tuo capolavoro con un artista!Usa i blocchi di programmazione per fare in modo che il tuo artista crei un’opera d’arte unica . ',
-        'instructions' => 'Le istruzioni sono elencate all’inizio di ogni livello',
-        'example' => 'Esempi di artisti sono disponibili in questa pagina nella sezione Drawing(Disegno)',
+            'Crea il tuo capolavoro con un artista!Usa i blocchi di programmazione per fare in modo che il tuo artista crei un’opera d’arte unica. ',
+        'instructions' =>
+            'Le istruzioni sono elencate all’inizio di ogni livello',
+        'example' =>
+            'Esempi di artisti sono disponibili in questa pagina nella sezione Drawing(Disegno)',
         'materials' => ['Il primo livello del tutorial si trova', 'QUI']
     ],
     'cs-first-unplugged-activities' => [
@@ -290,7 +296,7 @@ return [
             'Per concedere a tutti una pausa dallo schermo'
         ],
         'description' =>
-            'CS First Unplugged è un pacchetto di attività che introduce gli studenti ai concetti di informatica senza un computer . Abbiamo ideato questa lezione per dimostrare che l’informatica è molto più della sola programmazione . ',
+            'CS First Unplugged è un pacchetto di attività che introduce gli studenti ai concetti di informatica senza un computer. Abbiamo ideato questa lezione per dimostrare che l’informatica è molto più della sola programmazione. ',
         'instructions' => [
             'Troverai il manuale di tutte le attività in inglese su questo',
             'link',
@@ -345,7 +351,7 @@ return [
             'Gli studenti sono incoraggiati a completare la sfida in Codeweek e portarla a un livello internazionale per interagire con altri studenti e vincere premi.',
             'Per ulteriori informazioni consulta il sito:',
             'o contattaci all’indirizzo'
-        ],
+        ]
     ],
     'virtual-flower-field' => [
         'title' => 'Coltiva il tuo campo di fiori virtuale',
@@ -398,17 +404,17 @@ return [
             'questo link'
         ],
         'example' => 'Esempio Casa stregata al livello',
-        'materials' => ['Hedy su', 'Livelli da 1 a 4'],
+        'materials' => ['Hedy su', 'Livelli da 1 a 4']
     ],
     'inclusive-app-design' => [
         'title' => 'Progettazione di app inclusive',
         'author' => 'Apple Education',
         'duration' => '60 minuti + attività di espansione opzionali',
         'purposes' => [
-            'Raccogliere idee, progettare, prototipare e condividere un\'idea di app accessibile e comprensibile per tutti . '
+            'Raccogliere idee, progettare, prototipare e condividere un\'idea di app accessibile e comprensibile per tutti. '
         ],
         'description' =>
-            'App eccezionali partono da idee eccezionali . In questa attività gli studenti proporranno un’idea di app su un argomento a cui tengono, per poi scoprire come progettare le app tenendo presenti i concetti di inclusione e accessibilità . ',
+            'App eccezionali partono da idee eccezionali. In questa attività gli studenti proporranno un’idea di app su un argomento a cui tengono, per poi scoprire come progettare le app tenendo presenti i concetti di inclusione e accessibilità. ',
         'instructions' => [
             'Troverai tutte le istruzioni su questo link',
             'Con questo piano di lezione di un’ora, gli educatori possono aiutare gli studenti a',
@@ -420,7 +426,7 @@ return [
         ],
         'materials' => [
             'Esplora l’attività Inclusive App Design Activity(Progettazioni di app inclusive) nell’Apple Teacher Learning Center',
-            'Keynote su iPad o Mac è consigliato, ma non necessario . '
+            'Keynote su iPad o Mac è consigliato, ma non necessario. '
         ]
     ],
     'silly-eyes' => [
@@ -428,12 +434,12 @@ return [
         'author' => 'Raspberry Pi Foundation',
         'duration' => '25 minuti',
         'purposes' => [
-            'Realizzare un progetto con interazione dell’utente . ',
-            'Personalizzare un progetto con colori ed effetti grafici . ',
-            'Conoscere il design nella produzione digitale . '
+            'Realizzare un progetto con interazione dell’utente. ',
+            'Personalizzare un progetto con colori ed effetti grafici. ',
+            'Conoscere il design nella produzione digitale. '
         ],
         'description' =>
-            'In questo progetto, ideerai e creerai un personaggio con gli occhi buffi . I grandi occhi buffi del personaggio seguiranno il puntatore del mouse per dare vita al tuo personaggio . ',
+            'In questo progetto, ideerai e creerai un personaggio con gli occhi buffi. I grandi occhi buffi del personaggio seguiranno il puntatore del mouse per dare vita al tuo personaggio. ',
         'instructions' => 'Accedi alla descrizione completa del progetto qui',
         'example' => 'Guarda Gobo, Under the sea and Don\'t eat donut'
     ],
@@ -450,7 +456,6 @@ return [
         'materials' => [
             'Il tutorial si trova qui',
             'Il tutorial è disponibile in oltre 25 lingue'
-        ],
+        ]
     ]
 ];
-

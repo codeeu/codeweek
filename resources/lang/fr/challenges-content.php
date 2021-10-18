@@ -30,20 +30,23 @@ return [
     'paper-circuit' => [
         'title' => 'Codage hors ligne: créer un circuit papier',
         'author' => 'L\'équipe de la Semaine européenne du code',
-        'purposes' => ['accroître la créativité', 'développer des compétences en résolution de problèmes'],
+        'purposes' => [
+            'accroître la créativité',
+            'développer des compétences en résolution de problèmes'
+        ],
         'description' => [
             'Dessinez un objet de votre choix. Ce peut être un ciel étoilé, une coccinelle, un robot, un sapin de Noël ou tout ce que vous voulez. Sentez-vous libre de personnaliser votre projet avec des images de la Semaine européenne du code: vous pouvez explorer',
             'la boîte à outils de l\'enseignant proposée par la Semaine européenne du code',
-            "et télécharger les logos ou les images que vous souhaitez . Vous pouvez même créer une invitation à la Semaine européenne du code avec un circuit papier . Ajoutez un message motivant à votre circuit pour encourager d'autres enseignants à rejoindre la Semaine du code et/ou à consulter le site web destiné aux écoles."
+            "et télécharger les logos ou les images que vous souhaitez. Vous pouvez même créer une invitation à la Semaine européenne du code avec un circuit papier. Ajoutez un message motivant à votre circuit pour encourager d'autres enseignants à rejoindre la Semaine du code et/ou à consulter le site web destiné aux écoles."
         ],
         'instructions' => [
             'Dessinez un objet et décidez quelles parties seront illuminées (ex: des étoiles).',
             'Faites un trou dans la feuille avec un crayon et insérez une LED autocollante à chaque endroit à illuminer.  ',
-            "Dessinez un cercle à l'endroit où vous placerez la pile bouton . ",
-            'Dessinez un chemin + et un chemin-au dos de la feuille . Veillez à ce que la plus longue patte du circuit LED autocollant soit connectée au côté « + » de la pile et la plus courte au côté «-» de la pile . ',
+            "Dessinez un cercle à l'endroit où vous placerez la pile bouton. ",
+            'Dessinez un chemin + et un chemin-au dos de la feuille. Veillez à ce que la plus longue patte du circuit LED autocollant soit connectée au côté « + » de la pile et la plus courte au côté «-» de la pile. ',
             'Collez la bande de cuivre adhésive sur les deux chemins',
             "Faites un pli de façon à ce que la LED s'illumine lorsque le papier couvre la pile. Vous pouvez utiliser un trombone pour assurer un bon contact avec le cuivre adhésif.",
-            "Prenez une photo de votre circuit papier et partagez-la sur Instagram, en expliquant en quoi participer à cette initiative est utile selon vous ."
+            'Prenez une photo de votre circuit papier et partagez-la sur Instagram, en expliquant en quoi participer à cette initiative est utile selon vous.'
         ],
         'example' => 'Voici quelques exemples de circuits papier',
         'materials' => [
@@ -64,25 +67,25 @@ return [
             'apprendre à animer des personnages'
         ],
         'description' =>
-            'Dans ce défi, vous créerez plusieurs personnages qui danseront ensemble . Vous utiliserez une bibliothèque multimédia intégrée pour sélectionner des personnages et des clips musicaux, ou les créer vous-même . Vous animerez les personnages pour qu\'ils dansent et discutent . ',
+            'Dans ce défi, vous créerez plusieurs personnages qui danseront ensemble. Vous utiliserez une bibliothèque multimédia intégrée pour sélectionner des personnages et des clips musicaux, ou les créer vous-même. Vous animerez les personnages pour qu\'ils dansent et discutent. ',
         'instructions' => [
             'Connectez-vous',
-            "en tant qu'enseignant . Créez des comptes élèves et partagez-les avec vos élèves, ou partagez un code classe et invitez vos élèves à s'inscrire en utilisant leur adresse e-mail de l'école . Si tu es un élève, tu peux participer comme élève, mais il te faudra renseigner l'adresse e-mail d'un de tes parents pour qu'ils puissent approuver ton compte . ",
+            "en tant qu'enseignant. Créez des comptes élèves et partagez-les avec vos élèves, ou partagez un code classe et invitez vos élèves à s'inscrire en utilisant leur adresse e-mail de l'école. Si tu es un élève, tu peux participer comme élève, mais il te faudra renseigner l'adresse e-mail d'un de tes parents pour qu'ils puissent approuver ton compte. ",
             'Cliquez',
             'et donnez un titre',
             'Placez-vous sur',
-            "pour ajouter un arrière-plan en cliquant sur l'icône d'engrenage . Choisissez un arrière-plan à partir de la bibliothèque multimédia, téléchargez votre propre image ou bien prenez une photo et téléchargez-la . Choisissez un clip audio et ajoutez-le à la scène:",
+            "pour ajouter un arrière-plan en cliquant sur l'icône d'engrenage. Choisissez un arrière-plan à partir de la bibliothèque multimédia, téléchargez votre propre image ou bien prenez une photo et téléchargez-la. Choisissez un clip audio et ajoutez-le à la scène:",
             'Cliquez sur le bouton',
-            "pour ajouter des personnages ou des objets que vous animerez pour qu'ils puissent bouger, parler et interagir entre eux . Ajoutez deux ou trois personnages de votre choix . Vous pouvez dessiner vos propres acteurs ou modifier ceux qui existent déjà . Ajoutez différents costumes à vos personnages en cliquant sur l'icône crayon . ",
+            "pour ajouter des personnages ou des objets que vous animerez pour qu'ils puissent bouger, parler et interagir entre eux. Ajoutez deux ou trois personnages de votre choix. Vous pouvez dessiner vos propres acteurs ou modifier ceux qui existent déjà. Ajoutez différents costumes à vos personnages en cliquant sur l'icône crayon. ",
             'Cliquez sur chaque acteur et animez-le en ajoutant les blocs suivants',
             'Ajoutez un',
             'say bloc(bloc de parole)',
-            'pour permettre à vos acteurs de se parler . Changez la forme des bulles de texte, ainsi que la police et la taille du texte'
+            'pour permettre à vos acteurs de se parler. Changez la forme des bulles de texte, ainsi que la police et la taille du texte'
         ],
         'example' => [
             'Voici',
             'un exemple',
-            "de robots danseurs . N'hésitez pas à l'utiliser et la modifier . "
+            "de robots danseurs. N'hésitez pas à l'utiliser et la modifier. "
         ]
     ],
 
@@ -95,7 +98,7 @@ return [
             'composer une chanson en mixant des clips audio'
         ],
         'description' =>
-            'Pour ce défi, vous créerez une composition musicale en utilisant un langage de programmation . Vous pouvez utiliser des clips audio intégrés, ou enregistrer vos propres sons et les mixer pour créer votre composition musicale . Exécutez votre code dans la station audionumérique et écoutez la musique que vous avez codée . Jouez avec différents sons et effets pour modifier votre œuvre musicale . ',
+            'Pour ce défi, vous créerez une composition musicale en utilisant un langage de programmation. Vous pouvez utiliser des clips audio intégrés, ou enregistrer vos propres sons et les mixer pour créer votre composition musicale. Exécutez votre code dans la station audionumérique et écoutez la musique que vous avez codée. Jouez avec différents sons et effets pour modifier votre œuvre musicale. ',
         'instructions' => [
             'Connectez-vous à',
             'Click here to make a script(Cliquer ici pour écrire un script)',
@@ -112,13 +115,13 @@ return [
             'Sound clip(Clip audio)',
             "Placez votre curseur entre les parenthèses, allez à la Bibliothèque des sons, sélectionnez un clip et collez-le en cliquant sur l'icône bleue",
             'Track number(Numéro de piste)',
-            "les pistes vous permettent d'organiser les sons par type d'instrument(voix, basse, percussions, clavier, etc .) . Ajoutez autant de pistes(instruments) que vous voulez . Les pistes sont affichées sous forme de lignes dans la station audionumérique",
+            "les pistes vous permettent d'organiser les sons par type d'instrument(voix, basse, percussions, clavier, etc.). Ajoutez autant de pistes(instruments) que vous voulez. Les pistes sont affichées sous forme de lignes dans la station audionumérique",
             'Start measure(Première mesure)',
-            'indique quand le son commencera à être joué . Les mesures sont des unités de temps en musique . Une mesure équivaut à 4 temps',
+            'indique quand le son commencera à être joué. Les mesures sont des unités de temps en musique. Une mesure équivaut à 4 temps',
             'End measure(Dernière mesure)',
             "indique quand le son arrêtera d'être joué",
             'Une ligne de code de ce type ressemblera à ça',
-            'Vous pouvez ajouter différents effets, tels que le volume pour améliorer le son de votre composition . Le volume oscille entre-60 décibels et 12 décibels, avec 0 comme volume de base . ',
+            'Vous pouvez ajouter différents effets, tels que le volume pour améliorer le son de votre composition. Le volume oscille entre-60 décibels et 12 décibels, avec 0 comme volume de base. ',
             'Écrivez',
             'Dans les parenthèses, écrivez le nombre de pistes, VOLUME, GAIN, le niveau de volume, la première mesure, le niveau et la dernière mesure',
             'Voici un exemple de code où le volume augmente',
@@ -128,7 +131,7 @@ return [
             'Écoutez',
             'un exemple de chanson codée avec Earsketch',
             'Vous pouvez importer le code et le modifier'
-        ],
+        ]
     ],
     'sensing-game' => [
         'title' => 'Réaliser un jeu vidéo basé sur la détection',
@@ -139,29 +142,29 @@ return [
             'composer une chanson en mixant des clips audio'
         ],
         'description' =>
-            "Dans ce challenge, vous créerez un jeu simple qui utilisera une caméra comme détecteur de mouvement, ce qui signifie que vous serez capable de contrôler votre animation par les mouvements de votre corps . Dans ce jeu, l'objectif est de récupérer autant de bulles Code Week que possible en 30 secondes . Au lieu d'attraper des bulles, vous pouvez aussi créer un jeu dans lequel vous suivrez un personnage ou exploserez des ballons avec vos mains . ",
+            "Dans ce challenge, vous créerez un jeu simple qui utilisera une caméra comme détecteur de mouvement, ce qui signifie que vous serez capable de contrôler votre animation par les mouvements de votre corps. Dans ce jeu, l'objectif est de récupérer autant de bulles Code Week que possible en 30 secondes. Au lieu d'attraper des bulles, vous pouvez aussi créer un jeu dans lequel vous suivrez un personnage ou exploserez des ballons avec vos mains. ",
         'instructions' => [
             'Connectez-vous à',
             'Cliquez sur',
             'Add an extension(Ajouter une extension)',
             'et choisissez',
             'Video Sensing(Détection vidéo)',
-            'Cela permettra de détecter la vitesse à laquelle bouge un objet . Plus le chiffre est bas, plus la sensibilité au mouvement est grande . ',
-            'Add a sprite(Ajouter un sprite). Choisissez un son et associez-le à votre sprite . Si vous le souhaitez, vous pouvez ajouter',
+            'Cela permettra de détecter la vitesse à laquelle bouge un objet. Plus le chiffre est bas, plus la sensibilité au mouvement est grande. ',
+            'Add a sprite(Ajouter un sprite). Choisissez un son et associez-le à votre sprite. Si vous le souhaitez, vous pouvez ajouter',
             'Create a clone(Créer un clone)',
-            'pour dupliquer votre sprite . ',
+            'pour dupliquer votre sprite. ',
             'Créez deux variables: une pour',
             'Score(le score)',
             "et l'autre pour",
             'Timer(le chronomètre)',
-            'et ajoutez-les au sprite . Paramétrez le chronomètre sur 30 et ajoutez',
+            'et ajoutez-les au sprite. Paramétrez le chronomètre sur 30 et ajoutez',
             'Change Timer by-1 (Modifier le chronomètre de-1)',
             'Créez un nouveau sprite',
             'Game Over(Fin de partie)',
-            'pour terminer le jeu . Vous pouvez aussi créer un sprite avec le titre de votre jeu, tel que «Attrape toutes les bulles Code Week» . '
+            'pour terminer le jeu. Vous pouvez aussi créer un sprite avec le titre de votre jeu, tel que «Attrape toutes les bulles Code Week». '
         ],
         'example' => [
-            "Jouez à un jeu vidéo basé sur la détection «Attrape toutes les bulles Code Week» . N'hésitez pas à adapter",
+            "Jouez à un jeu vidéo basé sur la détection «Attrape toutes les bulles Code Week». N'hésitez pas à adapter",
             'ce projet'
         ]
     ],
@@ -173,14 +176,14 @@ return [
         'materials' => [
             'un micro:bit et un bloc-piles(si disponible)',
             'un ordinateur portable ou une tablette pour consulter Microsoft MakeCode et Youtube',
-            'microbit . org pour les ressources nécessaires aux activités'
+            'microbit. org pour les ressources nécessaires aux activités'
         ],
         'description' =>
-            "Les élèves créeront un appareil numérique doté de LED, qui les aidera à réguler leur respiration et à se sentir plus apaisés . Il leur sera demandé d'écrire un code simple, et d'essayer différentes animations et séquences . ",
+            "Les élèves créeront un appareil numérique doté de LED, qui les aidera à réguler leur respiration et à se sentir plus apaisés. Il leur sera demandé d'écrire un code simple, et d'essayer différentes animations et séquences. ",
         'instructions' => [
-            "L'objectif est de créer un appareil LED apaisant permettant de réguler sa respiration . On peut créer cet appareil sur un micro:bit, ou sur le simulateur de l'éditeur MakeCode . ",
-            "Le défi peut être relevé en utilisant l'éditeur MakeCode et en écrivant une séquence de code simple telle que présentée dans la vidéo / capture d'écran . ",
-            "Pour pousser le défi plus loin, les élèves peuvent essayer différentes animations et imaginer une animation qu'ils aimeraient voir pour se sentir apaisés ou heureux . ",
+            "L'objectif est de créer un appareil LED apaisant permettant de réguler sa respiration. On peut créer cet appareil sur un micro:bit, ou sur le simulateur de l'éditeur MakeCode. ",
+            "Le défi peut être relevé en utilisant l'éditeur MakeCode et en écrivant une séquence de code simple telle que présentée dans la vidéo / capture d'écran. ",
+            "Pour pousser le défi plus loin, les élèves peuvent essayer différentes animations et imaginer une animation qu'ils aimeraient voir pour se sentir apaisés ou heureux. ",
             "Plus d'informations et d'instructions en vidéo dans",
             'ce lien'
         ],
@@ -196,27 +199,28 @@ return [
     'computational-thinking-and-computational-fluency' => [
         'title' =>
             "Raisonnement informatique et maîtrise de l'informatique avec ScratchJr",
-        'author' => 'Stamatis Papadakis – Ambassadeur grec de la Semaine européenne du code',
+        'author' =>
+            'Stamatis Papadakis – Ambassadeur grec de la Semaine européenne du code',
         'purposes' => [
-            'se familiariser avec de nouvelles commandes et interfaces . ',
-            'créer des programmes simples avec de commandes simples de cause à effet . ',
-            'résoudre des erreurs simples de codage par tâtonnement . '
+            'se familiariser avec de nouvelles commandes et interfaces. ',
+            'créer des programmes simples avec de commandes simples de cause à effet. ',
+            'résoudre des erreurs simples de codage par tâtonnement. '
         ],
         'description' =>
-            "Dans ce défi, les enfants intègreront des concepts de raisonnement informatique dans leurs projets par le biais de l'application ScratchJr, afin de rendre leurs histoires plus captivantes, palpitantes et émouvantes . ",
+            "Dans ce défi, les enfants intègreront des concepts de raisonnement informatique dans leurs projets par le biais de l'application ScratchJr, afin de rendre leurs histoires plus captivantes, palpitantes et émouvantes. ",
         'instructions' => [
-            "ScratchJr ne nécessite pas que les enfants sachent lire . Toutes les instructions et les options du menu sont identifiables grâce à des symboles et des couleurs . Le défi peut être relevé en classe, dans le laboratoire voire en extérieur, puisque l'activité ne nécessite pas de connexion Internet . ",
-            "Les enfants utilisent une ville en arrière-plan et se servent de blocs de code pour déplacer une voiture dans la ville . "
+            "ScratchJr ne nécessite pas que les enfants sachent lire. Toutes les instructions et les options du menu sont identifiables grâce à des symboles et des couleurs. Le défi peut être relevé en classe, dans le laboratoire voire en extérieur, puisque l'activité ne nécessite pas de connexion Internet. ",
+            'Les enfants utilisent une ville en arrière-plan et se servent de blocs de code pour déplacer une voiture dans la ville. '
         ],
         'example' => [
-            'Les enfants peuvent utiliser des blocs de sons et de mouvements pour faire danser les personnages . ',
-            "Les enfants choisissent un arrière-plan et un personnage, et ils déplacent une voiture dans la ville à l'aide d'un bloc de mouvement . Puis, avec un bloc de vitesse, ils font accélérer ou ralentir un personnage . "
+            'Les enfants peuvent utiliser des blocs de sons et de mouvements pour faire danser les personnages. ',
+            "Les enfants choisissent un arrière-plan et un personnage, et ils déplacent une voiture dans la ville à l'aide d'un bloc de mouvement. Puis, avec un bloc de vitesse, ils font accélérer ou ralentir un personnage. "
         ],
         'materials' => [
             "l'application gratuite",
             "est compatible avec différents systèmes d'exploitation et types de smartphones",
-            "de plus, le site web",
-            "propose un large panel de supports pédagogiques gratuits"
+            'de plus, le site web',
+            'propose un large panel de supports pédagogiques gratuits'
         ],
         'duration' => '90 minutes'
     ],
@@ -229,7 +233,7 @@ return [
             'découvrir les concepts du codage'
         ],
         'description' =>
-            "Un village est menacé par le feu et a besoin que tu codes une solution!Découvre ton assistant codage, l'Agent Minecraft, puis programme-le pour se déplacer dans la forêt et recueillir des données . Ces données aideront l'Agent à prédire où le feu va se déclarer . Ensuite, programme l'Agent pour qu'il empêche la propagation du feu, sauve le village et redonne vie à la forêt . Apprends les bases du codage et découvre un exemple concret d'intelligence artificielle(IA) . ",
+            "Un village est menacé par le feu et a besoin que tu codes une solution!Découvre ton assistant codage, l'Agent Minecraft, puis programme-le pour se déplacer dans la forêt et recueillir des données. Ces données aideront l'Agent à prédire où le feu va se déclarer. Ensuite, programme l'Agent pour qu'il empêche la propagation du feu, sauve le village et redonne vie à la forêt. Apprends les bases du codage et découvre un exemple concret d'intelligence artificielle(IA). ",
         'instructions' => 'Téléchargez le plan de cours ici',
         'materials' => [
             'installation de Minecraft: Education Edition',
@@ -240,11 +244,11 @@ return [
     'create-a-dance' => [
         'title' => "Créer une danse sur l'Ode du Code!",
         'purposes' =>
-            "s'entraîner au codage de manière amusante et se sentir connectés à la communauté de la Semaine européenne du code . ",
+            "s'entraîner au codage de manière amusante et se sentir connectés à la communauté de la Semaine européenne du code. ",
         'description' => [
             "Créez une danse sur l'Ode du Code!Utilisez le",
             'tutoriel Dance Party',
-            "pour coder une danse sur l'Ode du Code . L'hymne officiel de la Semaine européenne du code est disponible dans la liste des musiques de Dance Party . "
+            "pour coder une danse sur l'Ode du Code. L'hymne officiel de la Semaine européenne du code est disponible dans la liste des musiques de Dance Party. "
         ],
         'instructions' => [
             'Les instructions apparaissent sous forme de vidéos dans',
@@ -253,24 +257,24 @@ return [
         ],
         'example' =>
             'Les créations des élèves sont présentées sur la page suivante',
-        'materials' => 'tutoriel de Code . org'
+        'materials' => 'tutoriel de Code. org'
     ],
     'create-a-simulation' => [
         'title' => 'Créer une simulation!',
         'purposes' => [
-            'découvrir les simulations tout en présentant les variables suivantes: créer une foule, des taux de rétablissement, port de masques et vaccins . ',
-            'utiliser des connaissances préalables sur la propagation des virus dans le monde réel pour les appliquer à un scénario fictif . '
+            'découvrir les simulations tout en présentant les variables suivantes: créer une foule, des taux de rétablissement, port de masques et vaccins. ',
+            'utiliser des connaissances préalables sur la propagation des virus dans le monde réel pour les appliquer à un scénario fictif. '
         ],
         'description' =>
-            "Écris du code pour créer et exécuter ta propre simulation d'une épidémie à Monster Town . Apprends à coder et prédis ce qu'il va se passer pour les villes voisines de Monster Town . ",
+            "Écris du code pour créer et exécuter ta propre simulation d'une épidémie à Monster Town. Apprends à coder et prédis ce qu'il va se passer pour les villes voisines de Monster Town. ",
         'instructions' => [
             'Les instructions apparaissent sous forme de vidéos dans',
             'le tutoriel',
             'et sont aussi écrites en haut de chaque niveau'
         ],
         'example' =>
-            "Quand vous avez terminé, partagez votre simulation avec d'autres . Partagez votre message sur ce que l'on peut faire pour protéger les autres quand un virus se propage en ville .",
-        'materials' => 'tutoriel de Code . org',
+            "Quand vous avez terminé, partagez votre simulation avec d'autres. Partagez votre message sur ce que l'on peut faire pour protéger les autres quand un virus se propage en ville.",
+        'materials' => 'tutoriel de Code. org'
     ],
     'create-your-own-masterpiece' => [
         'title' => "Créer sa propre œuvre d'art!",
@@ -278,9 +282,11 @@ return [
         'purpose' =>
             'présenter des concepts de science informatique de façon visuelle et inciter à la créativité',
         'description' =>
-            "Crée ta propre œuvre avec Artist!Utilise des blocs de code pour que ton artiste crée une œuvre d'art unique . ",
-        'instructions' => 'Les instructions apparaissent en haut de chaque niveau',
-        'example' => "Vous trouverez des exemples d'Artist sur cette page sous le dessin",
+            "Crée ta propre œuvre avec Artist!Utilise des blocs de code pour que ton artiste crée une œuvre d'art unique. ",
+        'instructions' =>
+            'Les instructions apparaissent en haut de chaque niveau',
+        'example' =>
+            "Vous trouverez des exemples d'Artist sur cette page sous le dessin",
         'materials' => ['Le tutoriel de niveau 1 est accessible', 'ICI']
     ],
     'cs-first-unplugged-activities' => [
@@ -290,7 +296,7 @@ return [
             "faire une pause en s'éloignant des écrans"
         ],
         'description' =>
-            "Les premières activités non connectées sont un ensemble d'activités qui présentent aux élèves des concepts de science informatique sans utiliser d'ordinateur . Nous avons conçu ce cours pour prouver que la science informatique est bien plus que du code .",
+            "Les premières activités non connectées sont un ensemble d'activités qui présentent aux élèves des concepts de science informatique sans utiliser d'ordinateur. Nous avons conçu ce cours pour prouver que la science informatique est bien plus que du code.",
         'instructions' => [
             'Vous trouverez la brochure de toutes les activités en anglais en suivant ce',
             'lien',
@@ -299,11 +305,11 @@ return [
             "L'enseignant peut prendre une photo du processus d'apprentissage et le partager sur Instagram en ajoutant #CodeWeekChallengeGoogle"
         ],
         'materials' => [
-            "en plus de la brochure des activités, certaines activités nécessitent du matériel supplémentaire ou proposent d'en ajouter en option . ",
-            'de petits pions(comme des haricots secs) à utiliser sur la carte réseau du quartier . ',
-            'une paire de ciseaux pour découper la roue de décodage servant à envoyer des messages secrets . ',
-            'du carton et de la colle permettent de durcir la roue de décodage . ',
-            'une punaise, un cure-dent ou un trombone déplié pour assembler la roue de décodage . '
+            "en plus de la brochure des activités, certaines activités nécessitent du matériel supplémentaire ou proposent d'en ajouter en option. ",
+            'de petits pions(comme des haricots secs) à utiliser sur la carte réseau du quartier. ',
+            'une paire de ciseaux pour découper la roue de décodage servant à envoyer des messages secrets. ',
+            'du carton et de la colle permettent de durcir la roue de décodage. ',
+            'une punaise, un cure-dent ou un trombone déplié pour assembler la roue de décodage. '
         ]
     ],
     'family-care' => [
@@ -316,12 +322,12 @@ return [
             'voir les problèmes comme des opportunités et proposer des solutions créatives;',
             'se servir du code pour mettre en œuvre vos solutions de façon innovante;',
             "concevoir des affiches et présenter vos solutions à d'autres;",
-            'utiliser les réseaux sociaux pour créer un impact autour de vos projets . '
+            'utiliser les réseaux sociaux pour créer un impact autour de vos projets. '
         ],
         'description' => [
-            "À quoi pensez-vous quand on parle de «maison» ? Une belle maison ? Un dîner fastueux préparé par vos parents ? Un espace secret rien qu'à vous ? Une maison accueillante recharge nos corps et nos esprits comme une batterie . Au milieu de l'agitation de la vie moderne, les parents sont toujours occupés par le travail . Quand vous voyez des amis, vous ne pouvez pas laisser vos chatons seuls . Mais comment entretenir nos relations quand nous sommes loin ? Le thème de ce défi est",
+            "À quoi pensez-vous quand on parle de «maison» ? Une belle maison ? Un dîner fastueux préparé par vos parents ? Un espace secret rien qu'à vous ? Une maison accueillante recharge nos corps et nos esprits comme une batterie. Au milieu de l'agitation de la vie moderne, les parents sont toujours occupés par le travail. Quand vous voyez des amis, vous ne pouvez pas laisser vos chatons seuls. Mais comment entretenir nos relations quand nous sommes loin ? Le thème de ce défi est",
             'le soin de la famille',
-            "En se basant sur ce thème, les élèves sont encouragés à développer une idée pour transmettre de l'amour et de l'attention par le biais du codage et du matériel informatique . Voici quelques questions pour réflexion",
+            "En se basant sur ce thème, les élèves sont encouragés à développer une idée pour transmettre de l'amour et de l'attention par le biais du codage et du matériel informatique. Voici quelques questions pour réflexion",
             'Combien de membres comptent ta famille ? Qui sont-ils ? Y a-il eu des problèmes pendant que tu vivais avec eux ? De quels types de soins ont-ils besoin ? ',
             "Connais-tu quelqu'un qui manque de soins prodigués par sa famille plus que d'autres dans ta communauté ? Comment peux-tu les aider ? "
         ],
@@ -340,12 +346,12 @@ return [
             'ou télécharger la',
             'version PC',
             'mBlock est un langage de programmation basé sur Scratch',
-            "Ce défi est aussi une adaptation du concours MakeX global Spark, un programme de conception créative axé sur les projets ciblant les jeunes de 6 à 13 ans . ",
-            "L'équipe participante devra se concentrer sur ce thème spécifique et imaginer une solution utilisant la programmation logicielle et la construction de matériel informatique . ",
-            "Les élèves sont invités à relever ce défi dans le cadre de la Semaine du code et à le porter au niveau international pour échanger avec d'autres élèves et gagner des prix . ",
+            'Ce défi est aussi une adaptation du concours MakeX global Spark, un programme de conception créative axé sur les projets ciblant les jeunes de 6 à 13 ans. ',
+            "L'équipe participante devra se concentrer sur ce thème spécifique et imaginer une solution utilisant la programmation logicielle et la construction de matériel informatique. ",
+            "Les élèves sont invités à relever ce défi dans le cadre de la Semaine du code et à le porter au niveau international pour échanger avec d'autres élèves et gagner des prix. ",
             "Pour plus d'informations, consultez:",
             'ou contactez-nous à'
-        ],
+        ]
     ],
     'virtual-flower-field' => [
         'title' => 'Faire pousser un champ de fleurs virtuel',
@@ -354,21 +360,21 @@ return [
         'duration' => '30 minutes',
         'purposes' => [
             "découvrir la programmation par le biais d'un projet simple, mais créatif.",
-            'savoir que le codage peut être artistique et permet de réaliser de belles productions . ',
-            "égayer l'automne grâce à de belles fleurs colorées et à la Semaine européenne du code . ",
-            'montrer la diversité florale de la Terre . ',
-            "contribuer à l'objectif de développement durable(ODD), en particulier l'objectif 13-Changement climatique, en créant des événements de codage qui améliorent l'éducation au changement climatique par une sensibilisation accrue sur le sujet . "
+            'savoir que le codage peut être artistique et permet de réaliser de belles productions. ',
+            "égayer l'automne grâce à de belles fleurs colorées et à la Semaine européenne du code. ",
+            'montrer la diversité florale de la Terre. ',
+            "contribuer à l'objectif de développement durable(ODD), en particulier l'objectif 13-Changement climatique, en créant des événements de codage qui améliorent l'éducation au changement climatique par une sensibilisation accrue sur le sujet. "
         ],
         'description' =>
-            'développer un programme dans Snap!qui permet de faire pousser un champ de fleurs virtuel, avec différents types de fleurs et un nombre de pétales différent . ',
+            'développer un programme dans Snap!qui permet de faire pousser un champ de fleurs virtuel, avec différents types de fleurs et un nombre de pétales différent. ',
         'instructions' => [
             "Si vous avez besoin d'inspiration pour vous lancer dans ce défi, consultez",
             'cette vidéo',
             'ou',
             'ce document',
             'et suivez les instructions',
-            "Le défi consiste à programmer un champ de fleurs virtuel dans Snap!(ou Scratch) et à poster une capture d'écran ou une photo du résultat en ligne . ",
-            "Le champ de fleurs doit contenir différents types de fleurs ayant elles-mêmes un nombre de pétales différents . Idéalement, les fleurs sont programmées, ce qui signifie qu'elles sont fabriquées en façonnant et en tournant(ou dessinant et tournant) les pétales plusieurs fois . ",
+            "Le défi consiste à programmer un champ de fleurs virtuel dans Snap!(ou Scratch) et à poster une capture d'écran ou une photo du résultat en ligne. ",
+            "Le champ de fleurs doit contenir différents types de fleurs ayant elles-mêmes un nombre de pétales différents. Idéalement, les fleurs sont programmées, ce qui signifie qu'elles sont fabriquées en façonnant et en tournant(ou dessinant et tournant) les pétales plusieurs fois. ",
             'Postez une image de votre jardin virtuel en ajoutant #MeetandCode.'
         ],
         'materials' => [
@@ -383,32 +389,32 @@ return [
         'audience' => 'Enseignants et éducateurs',
         'duration' => '1 heure ou 2 heures selon les connaissances préalables',
         'purposes' => [
-            'créer une histoire interactive avec une maison hantée . ',
-            'apprendre à programmer avec Hedy . '
+            'créer une histoire interactive avec une maison hantée. ',
+            'apprendre à programmer avec Hedy. '
         ],
         'description' =>
-            "Avec Hedy, vous créerez une histoire de maison hantée avec des éléments interactifs . À chaque fois que le code est exécuté, une nouvelle histoire sera créée . L'histoire peut aussi être lue à voix haute par votre ordinateur et partagée en ligne . ",
+            "Avec Hedy, vous créerez une histoire de maison hantée avec des éléments interactifs. À chaque fois que le code est exécuté, une nouvelle histoire sera créée. L'histoire peut aussi être lue à voix haute par votre ordinateur et partagée en ligne. ",
         'instructions' => [
-            'Commencez par ouvrir votre navigateur et rendez-vous sur hedycode . com . ',
+            'Commencez par ouvrir votre navigateur et rendez-vous sur hedycode. com. ',
             'Suivez les instructions pour les niveaux 1-4. Utilisez les onglets «Niveau» et «Haunted house»(maison hantée)',
-            'Grâce à ces niveaux, vous écrirez une histoire interactive avec une maison hantée . ',
+            'Grâce à ces niveaux, vous écrirez une histoire interactive avec une maison hantée. ',
             'Enseignants, vous trouverez un plan de cours sur Hedy',
             'ici',
             'Une présentation de Hedy par Felienne Hermans est disponible dans',
             'ce lien'
         ],
         'example' => 'Exemple de Maison hantée au niveau',
-        'materials' => ['Hedy sur', 'niveaux 1 à 4'],
+        'materials' => ['Hedy sur', 'niveaux 1 à 4']
     ],
     'inclusive-app-design' => [
         'title' => 'Concevoir une appli inclusive',
         'author' => 'Apple Education',
         'duration' => '60 minutes + activités supplémentaires en option',
         'purposes' => [
-            "échanger des idées, planifier, développer un prototype et partager une idée d'application accessible et compréhensible par tous ."
+            "échanger des idées, planifier, développer un prototype et partager une idée d'application accessible et compréhensible par tous."
         ],
         'description' =>
-            "Les meilleures applications commencent par les meilleures idées . Dans cette activité, les élèves imagineront une idée d'application sur un sujet qui leur tient à cœur, puis découvriront comment concevoir des applications axées sur l'inclusion et l'accessibilité . ",
+            "Les meilleures applications commencent par les meilleures idées. Dans cette activité, les élèves imagineront une idée d'application sur un sujet qui leur tient à cœur, puis découvriront comment concevoir des applications axées sur l'inclusion et l'accessibilité. ",
         'instructions' => [
             'Vous trouverez toutes les instructions dans ce lien',
             "Avec ce plan de cours d'une heure, les éducateurs peuvent guider les élèves pour",
@@ -416,11 +422,11 @@ return [
             "qu'ils échangent des idées sur des sujets qui leur tiennent à cœur et trouvent une idée d'application",
             "qu'ils définissent leur concept d'application et prévoient des activités pour les utilisateurs",
             "qu'ils développent un prototype d'une partie de leur application dans Keynote",
-            "qu'ils partagent des démos de leurs prototypes et décrivent de quelle façon ceux-ci soutiennent les utilisateurs de différentes origines et capacités",
+            "qu'ils partagent des démos de leurs prototypes et décrivent de quelle façon ceux-ci soutiennent les utilisateurs de différentes origines et capacités"
         ],
         'materials' => [
             "découvrir une activité visant à concevoir une application inclusive sur l'Apple Teacher Learning Center",
-            'Keynote sur iPad ou Mac est recommandé, mais pas requis . '
+            'Keynote sur iPad ou Mac est recommandé, mais pas requis. '
         ]
     ],
     'silly-eyes' => [
@@ -428,21 +434,21 @@ return [
         'author' => 'Fondation Raspberry Pi',
         'duration' => '25 minutes',
         'purposes' => [
-            'créer un projet comprenant une interaction utilisateur . ',
-            'personnaliser un projet avec des couleurs et des effets graphiques . ',
-            'en savoir plus sur la conception dans le domaine de la création numérique . '
+            'créer un projet comprenant une interaction utilisateur. ',
+            'personnaliser un projet avec des couleurs et des effets graphiques. ',
+            'en savoir plus sur la conception dans le domaine de la création numérique. '
         ],
         'description' =>
-            "Dans ce projet, vous concevrez et créerez un personnage avec de drôles d'yeux . Les yeux énormes et drôles du personnage suivront le curseur de la souris, lui donnant vie . ",
+            "Dans ce projet, vous concevrez et créerez un personnage avec de drôles d'yeux. Les yeux énormes et drôles du personnage suivront le curseur de la souris, lui donnant vie. ",
         'instructions' => 'Accédez à une description complète du projet ici',
         'example' => "Regardez Gobo, Sous l'océan et Mange pas de donut"
     ],
     'train-ai-bot' => [
         'title' => "Entraîner un bot géré par l'IA!",
         'purposes' =>
-            "pour appréhender les concepts d'intelligence artificielle(IA), d'apprentissage machine, de données d'entraînement et de biais, tout en abordant les questions éthiques et comment l'IA peut être utilisée pour résoudre des problèmes mondiaux . ",
+            "pour appréhender les concepts d'intelligence artificielle(IA), d'apprentissage machine, de données d'entraînement et de biais, tout en abordant les questions éthiques et comment l'IA peut être utilisée pour résoudre des problèmes mondiaux. ",
         'description' =>
-            "Entraînez un bot géré par une IA avec AI for Oceans . Dans cette activité, vous programmerez ou entraînerez une IA(intelligence artificielle) pour qu'elle différentie les poissons des déchets . Nettoyons les océans!",
+            "Entraînez un bot géré par une IA avec AI for Oceans. Dans cette activité, vous programmerez ou entraînerez une IA(intelligence artificielle) pour qu'elle différentie les poissons des déchets. Nettoyons les océans!",
         'instructions' => [
             'Les instructions apparaissent sous forme de vidéos dans le tutoriel',
             'et sont aussi écrites en haut de chaque niveau'
@@ -450,7 +456,6 @@ return [
         'materials' => [
             'Un tutoriel est accessible ici',
             'Il est disponible dans plus de 25 langues'
-        ],
+        ]
     ]
 ];
-
