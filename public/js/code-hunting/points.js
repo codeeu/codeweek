@@ -534,7 +534,7 @@ const codeHuntingPoints = [
     },
     {
         "title": "Caze’s Mechanical Calculator",
-        "image": "640px-Musée_des_arts_et_métiers_-_machine_arithmétique_-_Caze.jpeg",
+        "image": "arts_et_metiers.jpeg",
         "coordinates": "52.3676, 4.9041",
         "link_wikipedia": "https://history-computer.com/inventions/caze/",
         "hunt_code": "cw2020-72-mnbv",
@@ -559,7 +559,7 @@ const codeHuntingPoints = [
     {
         "title": "Magnetic Drum",
         "image": "407px-Pamiec_bebnowa_1.jpeg",
-        "coordinates": "48.2082, 16.3738",
+        "coordinates": "48.2082, 16.3538",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Drum_memory",
         "hunt_code": "cw2020-75-zhju",
         "description": "The magnetic drum is a magnetic data storage device and an early form of computer memory, being widely used in the 1950s and into the 1960s – such as in the ABC computer. It was invented by the Austrian engineer Gustav Tauschek in 1932 in Austria. Tauschek was a self-taught Viennese engineer, who also invented devices and systems for the punch-card machinery, as well as the first OCR (Optical Character Recognition) machine in 1928. "
@@ -567,7 +567,7 @@ const codeHuntingPoints = [
     {
         "title": "HelloFresh",
         "image": "HelloFresh_Logo_2020.png",
-        "coordinates": "52.5200, 13.4050",
+        "coordinates": "52.5200, 13.4150",
         "link_wikipedia": "https://en.wikipedia.org/wiki/HelloFresh",
         "hunt_code": "cw2020-76-qwgb",
         "description": "HelloFresh is a German company based in Berlin, Germany, providing meal-kits which can be ordered online. It is the largest meal-kit provider in the United States, being also active in Australia, Canada, Denmark, New Zealand, Sweden, and most of Western Europe. The company was founded in November 2011 by Dominik Richter, Thomas Griesel, and Jessica Nilsson in Berlin, Germany. The first 10 HelloFresh orders were packed and hand-delivered by two of its founders: Richter and Griesel."
@@ -599,7 +599,7 @@ const codeHuntingPoints = [
     {
         "title": "Frequency hopping as wifi precursor",
         "image": "388px-Hedy_Lamarr_in_The_Heavenly_Body_1944.jpeg",
-        "coordinates": "48.2082, 16.3738",
+        "coordinates": "48.2082, 16.3638",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Hedy_Lamarr",
         "hunt_code": "cw2020-80-kjht",
         "description": "In the early 1940s, Hedy Lamarr and George Antheil discovered a remarkable technique called “frequency hopping.” Their invention would allow allied torpedoes to strike their targets without being thwarted by radio jamming, which obviously attracted a great deal of interest from the US Navy. Frequency hopping played a significant role in WWII and was eventually used to develop Wi-Fi, Bluetooth, and GPS."
@@ -607,7 +607,7 @@ const codeHuntingPoints = [
     {
         "title": "Paris Computer Conference of 1951",
         "image": "Gonzalo_showing_El_Ajedrecista_to_Norbert_Wiener.jpeg",
-        "coordinates": "48.8566, 2.3522",
+        "coordinates": "48.8566, 2.3622",
         "link_wikipedia": "https://hal.inria.fr/IFIP-AICT-491/hal-01620145",
         "link_more": "https://link.springer.com/chapter/10.1007/978-3-319-49463-0_12",
         "hunt_code": "cw2020-81-iuzt",
@@ -616,7 +616,7 @@ const codeHuntingPoints = [
     {
         "title": "The Curta hand-held calculator",
         "image": "375px-Curta01.jpeg",
-        "coordinates": "48.2082, 16.3738",
+        "coordinates": "48.2082, 16.3838",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Curt_Herzstark",
         "hunt_code": "cw2020-82-lckz",
         "description": "The Curta Calculator was conceived by Curt Herzstark in the 1930s in Vienna, Austria. By 1938, he had filed a key patent, covering his complemented stepped drum, Deutsches Reichspatent (German National Patent) No. 747073. This single drum replaced the multiple drums, typically around 10 or so, of contemporary calculators, and it enabled not only addition, but subtraction through nines complement math, essentially subtracting by adding. The nines' complement math breakthrough eliminated the significant mechanical complexity created when \"borrowing\" during subtraction. This drum was the key to miniaturizing the Curta."
@@ -624,7 +624,7 @@ const codeHuntingPoints = [
     {
         "title": "\"Baby\" computer – the first program to run on a digital computer",
         "image": "640px-SSEM_Manchester_museum.jpeg",
-        "coordinates": "53.4808, -2.2426",
+        "coordinates": "53.4808, -2.2526",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Manchester_Baby",
         "hunt_code": "cw2020-83-rola",
         "description": "University of Manchester researchers Frederic Williams, Tom Kilburn, and Geoff Toothill developed the Small-Scale Experimental Machine (SSEM), better known as the Manchester \"Baby”, in 1948. The Baby was built to test a new memory technology developed by Williams and Kilburn -- soon known as the Williams Tube – which was the first high-speed electronic random access memory for computers. Their first program, consisting of seventeen instructions and written by Kilburn, ran on June 21st, 1948. This was the first program in history to run on a digital, electronic, stored-program computer."
@@ -682,7 +682,7 @@ const codeHuntingPoints = [
     {
         "title": "Trivago",
         "image": "Trivago.png",
-        "coordinates": "52.3676, 4.9041",
+        "coordinates": "52.3676, 4.9141",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Trivago",
         "hunt_code": "cw2020-90-tgbn",
         "description": "Trivago is one of the biggest hotel search engines in the world. It was founded in Amsterdam, in the Netherlands in January 2005. Seeing an opportunity in the hotel search space, the founding team developed Germany's first hotel search engine."
@@ -698,7 +698,7 @@ const codeHuntingPoints = [
     {
         "title": "Christiane Floyd - The first woman to teach computer science",
         "image": "330px-Christiane-Floyd.jpeg",
-        "coordinates": "48.2082, 16.3738",
+        "coordinates": "48.2082, 16.3938",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Christiane_Floyd",
         "hunt_code": "cw2020-92-mnfz",
         "description": "Christiane Floyd is an Austrian computer scientist. In 1978, she became the first female professor of computer science in Germany. Christiane is also a pioneer of evolutionary participatory software design—a precursor to open-source software development."
@@ -706,14 +706,14 @@ const codeHuntingPoints = [
     {
         "title": "The Ferranti Mark 1 – the first commercial computer",
         "image": "Ferranti_Mark_1.jpeg",
-        "coordinates": "53.4808, -2.2426",
+        "coordinates": "53.4808, -2.2626",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Ferranti_Mark_1",
         "hunt_code": "cw2020-93-lklk",
         "description": "The Ferranti Mark 1, also known as the Manchester Electronic Computer in its sales literature was first produced in 1951 by British electrical engineering firm Ferranti Ltd. It was the world's first commercially available general-purpose digital computer.The Mark 1 used a 20-bit word stored as a single line of dots of electric charges settled on the surface of a Williams tube display, each cathodic tube storing 64 lines of dots. Instructions were stored in a single word, while numbers were stored in two words."
     },
     {
         "title": "Mailüfterl – first European transistorized computer",
-        "image": "640px-Mailüfterl_Steuerung.jpeg",
+        "image": "steuerung.jpeg",
         "coordinates": "48.2082, 16.3738",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Mail%C3%BCfterl",
         "hunt_code": "cw2020-94-aalk",
