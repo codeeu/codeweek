@@ -689,7 +689,7 @@ const codeHuntingPoints = [
     },
     {
         "title": "Vera Molnár – algorithmic arts",
-        "image": "Vera_Molnár_(1996).png",
+        "image": "vera.png",
         "coordinates": "48.8566, 2.3522",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Vera_Moln%C3%A1r#Work",
         "hunt_code": "cw2020-91-rtzp",
@@ -730,7 +730,7 @@ const codeHuntingPoints = [
     },
     {
         "title": "Angela Ruiz Robles – predecessor of e-books",
-        "image": "322px-Ángela_Ruiz_Robles_(MUNCYT,_Eulogia_Merle).jpeg",
+        "image": "angela_ruiz.jpeg",
         "coordinates": "43.4896, -8.2193",
         "link_wikipedia": "https://en.wikipedia.org/wiki/%C3%81ngela_Ruiz_Robles",
         "link_more": "https://history-computer.com/people/angela-ruiz-robles-complete-biography/",
