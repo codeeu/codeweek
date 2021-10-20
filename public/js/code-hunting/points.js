@@ -4,7 +4,6 @@ const codeHuntingPoints = [
         "image": "Conny_Palm__6979247547_.jpg",
         "coordinates": "59.339926, 18.054796 ",
         "link_wikipedia": "https://en.wikipedia.org/wiki/BARK_(computer)",
-        "link_more": "",
         "hunt_code": "cw2020-01-2bpg",
         "description": "The first Swedish computer was inaugurated in 1950. It was called BARK (Binary Automatic Relay Calculator) and it was constructed by Dr Conny Palm. BARK was a 32-bit computer and it could add two numbers in 0.15 seconds, and multiply two numbers in 0.25 seconds. BARK was made up of standard telephone relays. It was in operation until July 1955."
     },
@@ -13,7 +12,6 @@ const codeHuntingPoints = [
         "image": "NAMA_Machine_d_Anticyth_re_1.jpg",
         "coordinates": "35.862090, 23.304956",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Antikythera_mechanism",
-        "link_more": "",
         "hunt_code": "cw2020-02-XIgS",
         "description": "The Antikythera mechanism is an ancient hand-powered analogue computer used to predict astronomical positions and eclipses for calendar decades in advance. It was also used to track the four-year cycle of athletic games  of the ancient Olympic Games"
     },
@@ -46,16 +44,13 @@ const codeHuntingPoints = [
     },
     {
         "title": "The Jacquard loom",
-        "image": "",
         "coordinates": "45.764000, 4.835700",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Jacquard_machine#:~:text=The%20Jacquard%20machine%20(French%3A%20%5B,then%20called%20a%20Jacquard%20loom.",
-        "link_more": "",
         "hunt_code": "cw2020-06-3E41",
         "description": "The Jacquard machine from 1804 was a device fitted with a loom to simplify the production of textiles. The loom is considered the ancestor of computers because it was the first tool to use a punched cards to control a sequence of operations. The portrait of the inventor, Mr Jacquard was woven on silk on a Jacquard loom and required 24,000 punched cards in 1839."
     },
     {
         "title": "Line Rider",
-        "image": "",
         "coordinates": "46.0320829, 14.5277774",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Line_Rider",
         "link_more": "https://linerider.fandom.com/wiki/Main_Page",
@@ -64,7 +59,6 @@ const codeHuntingPoints = [
     },
     {
         "title": "Pioneer of the net.art movement",
-        "image": "",
         "coordinates": "44.8149028, 20.1424149",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Vuk_Ćosić",
         "link_more": "https://en.wikipedia.org/wiki/Net.art",
@@ -76,7 +70,6 @@ const codeHuntingPoints = [
         "image": "doodle.001.jpeg",
         "coordinates": "47.372684, 8.530828",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Doodle_(website)",
-        "link_more": "",
         "hunt_code": "cw2020-10-vs1q",
         "description": "Doodle was invented by two Swiss computer scientists and electric engineers. This Swiss online calendar is now used every months by more than 20 millions users. The inventors came up with the concept Doodle to avoid having a long chain of emails to organise a get-together. "
     },
@@ -112,7 +105,6 @@ const codeHuntingPoints = [
         "image": "Unit__di_elaborazione_della_CEP_-_Calcolatrice_Elettronica_Pisana.jpg",
         "coordinates": "43.715128, 10.391345",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Galileo_Galilei",
-        "link_more": "",
         "hunt_code": "cw2020-16-FCgK",
         "description": "This important museum marks Pisa as one of the uppermost centres for the history of calculating machines and information technology. The museum is also home to the first Italian computer machine - Calcolatrice Elettronica Pisana. The collection spans five hundred years of history,past abacuses and adding machines, proportional compasses and slide rules up to the earliest calculators and personal computers, through the main stages in the evolution of calculating machines."
     },
@@ -135,7 +127,7 @@ const codeHuntingPoints = [
         "description": "El Ajedrecista (The Chess Player) is an automaton built in 1912 by Leonardo Torres y Quevedo, the first autonomous machine capable of playing chess without human guidance. It played an endgame with three chess pieces, automatically moving a white king and a rook to checkmate the black king moved by a human opponent.The device -which is considered the first computer game in history- delivered checkmate every time and signaled if an ilegal move was made by the opposite player."
     },
     {
-        "title": "K-202 first Polish minicomputer",
+        "title": "K-2020 first Polish minicomputer",
         "image": "1024px-K-202_minicomputer.jpg",
         "coordinates": "52.200000, 21.033333",
         "link_wikipedia": "https://en.wikipedia.org/wiki/K-202",
@@ -145,10 +137,8 @@ const codeHuntingPoints = [
     },
     {
         "title": "The First Computer Programmer",
-        "image": "",
         "coordinates": "51.507350, -0.127759",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Ada_Lovelace",
-        "link_more": "",
         "hunt_code": "cw2020-20-Kek9",
         "description": "Lady Lovelace (1815-1852) was a mathematician and writer, known for her work on Charles Babbage's computer, the Analytical Engine. She is believed to have published the first algorithm intended to be carried out by such a machine. As a result, she is often regarded the first computer programmer. "
     },
@@ -175,7 +165,6 @@ const codeHuntingPoints = [
         "image": "368px-JohnvonNeumann-LosAlamos.gif",
         "coordinates": "47.508653, 19.073984",
         "link_wikipedia": "https://en.wikipedia.org/wiki/John_von_Neumann",
-        "link_more": "",
         "hunt_code": "cw2020-23-qwlq",
         "description": "Von Neumann was generally regarded as the foremost mathematician of his time. His document describes a design architecture for electronic digital computer with these components: a Processing unit that contains an arithmetic logic unit and processor registers, a Control unit that contains an instruction register and program counter, Memory that stores data and instructions, External mass storage, Input and output mechanisms"
     },
@@ -184,7 +173,6 @@ const codeHuntingPoints = [
         "image": "791px-Racknitz_-_The_Turk_3.jpg",
         "coordinates": "48.148600, 17.107700",
         "link_wikipedia": "https://en.wikipedia.org/wiki/The_Turk",
-        "link_more": "",
         "hunt_code": "cw2020-24-nOIL",
         "description": "People have long had the will to edit a machine with human qualities. Kempelen's famous invention is the chess machine, which he made in 1769. Although a man was hidden in the machine that became famous as the Turk, this detracts little from the novelty of the invention, as the man was not visible to the public, but was informed from the inside by means of refined mirrors and gaps."
     },
@@ -217,8 +205,7 @@ const codeHuntingPoints = [
     },
     {
         "title": "HP-35 scienitfic pocket calculator",
-        "image": "",
-        "coordinates": " 46.1859889, 14.5955694",
+        "coordinates": "46.1859889, 14.5955694",
         "link_wikipedia": "https://en.wikipedia.org/wiki/France_Rode",
         "link_more": "https://ethw.org/Milestones:Development_of_the_HP-35,_the_First_Handheld_Scientific_Calculator,_1972",
         "hunt_code": "cw2020-28-dHJT",
@@ -226,7 +213,6 @@ const codeHuntingPoints = [
     },
     {
         "title": "Talking Tom and Friends",
-        "image": "",
         "coordinates": "46.066912,14.5391733",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Talking_Tom_and_Friends",
         "link_more": "https://www.theguardian.com/technology/appsblog/2013/jun/14/apps-smartphones",
@@ -235,7 +221,6 @@ const codeHuntingPoints = [
     },
     {
         "title": "Global Navigation Satellite Systems Agency",
-        "image": "",
         "coordinates": "50.098058,14.4327413",
         "link_wikipedia": "https://en.wikipedia.org/wiki/European_GNSS_Agency",
         "link_more": "https://www.gsa.europa.eu/",
@@ -244,7 +229,6 @@ const codeHuntingPoints = [
     },
     {
         "title": "Leonardo's robot",
-        "image": "",
         "coordinates": "43.798049, 10.934165",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Leonardo%27s_robot",
         "link_more": " ",
@@ -253,7 +237,6 @@ const codeHuntingPoints = [
     },
     {
         "title": "Bluetooth developer",
-        "image": "",
         "coordinates": "52.774816, 6.898835",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Bluetooth",
         "link_more": " ",
@@ -262,7 +245,6 @@ const codeHuntingPoints = [
     },
     {
         "title": "Algol 60",
-        "image": "",
         "coordinates": "55.680540, 12.544384",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Peter_Naur",
         "link_more": "https://www.dr.dk/nyheder/viden/teknologi/go-home-bill-gates-de-her-danskere-har-haft-kaempe-betydning-din-computer",
@@ -271,7 +253,6 @@ const codeHuntingPoints = [
     },
     {
         "title": "The Rubik’s Cube",
-        "image": "",
         "coordinates": "47.517194, 18.989800",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Rubik%27s_Cube",
         "link_more": " ",
@@ -280,7 +261,6 @@ const codeHuntingPoints = [
     },
     {
         "title": "Casper the playful robot",
-        "image": "",
         "coordinates": "38.737003, -9.138834",
         "link_wikipedia": "https://www.euronews.com/2016/03/28/meet-little-casper-a-robot-designed-to-help-children-suffering-from-cancer",
         "link_more": "https://www.euronews.com/2016/03/28/meet-little-casper-a-robot-designed-to-help-children-suffering-from-cancer",
@@ -289,7 +269,6 @@ const codeHuntingPoints = [
     },
     {
         "title": "The Snake game",
-        "image": "",
         "coordinates": "60.221382, 24.757087",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Snake_(video_game_genre)",
         "link_more": " ",
@@ -298,7 +277,6 @@ const codeHuntingPoints = [
     },
     {
         "title": "Angry birds",
-        "image": "",
         "coordinates": "60.176533, 24.834275",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Angry_Birds_(video_game)",
         "link_more": "https://www.rovio.com/   https://en.wikipedia.org/wiki/Angry_Birds",
@@ -307,7 +285,6 @@ const codeHuntingPoints = [
     },
     {
         "title": "MP3 format",
-        "image": "",
         "coordinates": "49.547535, 11.020021",
         "link_wikipedia": "https://en.wikipedia.org/wiki/MP3",
         "link_more": "https://www.mp3-history.com/",
@@ -316,7 +293,6 @@ const codeHuntingPoints = [
     },
     {
         "title": "SAPO - world's first fault-tolerant computer",
-        "image": "",
         "coordinates": "50.10173, 14.341493",
         "link_wikipedia": "https://en.wikipedia.org/wiki/SAPO_(computer)",
         "link_more": "https://conservancy.umn.edu/bitstream/handle/11299/107664/oh035as.pdf?sequence=1&isAllowed=y",
@@ -325,7 +301,6 @@ const codeHuntingPoints = [
     },
     {
         "title": "Python",
-        "image": "",
         "coordinates": "52.369947, 4.893741",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Python_(programming_language)",
         "link_more": " ",
@@ -334,7 +309,6 @@ const codeHuntingPoints = [
     },
     {
         "title": "Charles Simonyi - the father of MS Office",
-        "image": "",
         "coordinates": "47.473366, 19.053017",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Charles_Simonyi",
         "link_more": "https://www.forbes.com/profile/charles-simonyi/#577c6afd6639",
@@ -343,7 +317,6 @@ const codeHuntingPoints = [
     },
     {
         "title": "Linux",
-        "image": "",
         "coordinates": "60.172651, 24.951020",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Linux  https://en.wikipedia.org/wiki/Linux_kernel",
         "link_more": "https://en.wikipedia.org/wiki/Linus_Torvalds",
@@ -352,7 +325,6 @@ const codeHuntingPoints = [
     },
     {
         "title": "Bluetooth",
-        "image": "",
         "coordinates": "55.704742, 13.191000",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Bluetooth#History",
         "link_more": " ",
@@ -361,7 +333,6 @@ const codeHuntingPoints = [
     },
     {
         "title": "The World Wide Web",
-        "image": "",
         "coordinates": "46.233811, 6.055683",
         "link_wikipedia": "https://en.wikipedia.org/wiki/World_Wide_Web",
         "link_more": "https://webfoundation.org/about/vision/history-of-the-web/",
@@ -370,7 +341,6 @@ const codeHuntingPoints = [
     },
     {
         "title": "Dennis Gabor - Inventor of hologram",
-        "image": "",
         "coordinates": "47.479789, 19.073619",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Dennis_Gabor",
         "link_more": " ",
@@ -379,163 +349,131 @@ const codeHuntingPoints = [
     },
     {
         "title": "SMS Nation",
-        "image": "",
         "coordinates": "60.187110, 24.937637",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Text_messaging#History",
-        "link_more": "",
         "hunt_code": "cw2020-46-VpgU",
         "description": "Modern SMS text messaging is usually messaging from one mobile phone to another. Finnish Radiolinja became the first network to offer a commercial person-to-person SMS text messaging service in 1994. When Radiolinja's domestic competitor, Telecom Finland (now part of TeliaSonera) also launched SMS text messaging in 1995 and the two networks offered cross-network SMS functionality, Finland became the first nation where SMS text messaging was offered on a competitive as well as on a commercial basis."
     },
     {
         "title": "Polar: the world's first wearable wire-free heart rate monitor",
-        "image": "",
         "coordinates": "64.942642, 25.444606",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Polar_Electro",
-        "link_more": "",
         "hunt_code": "cw2020-47-YXCv",
         "description": "The world's first wearable wire-free heart rate monitor was invented by the Finnish Seppo Säynäjäkangas. The Sport Tester PE 2000 was launched in 1982. "
     },
     {
         "title": "Daniel Ek - founder of Spotify",
-        "image": "",
         "coordinates": "59.335523, 18.061012",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Daniel_Ek",
-        "link_more": "",
         "hunt_code": "cw2020-48-EW0a",
         "description": "Ek first had the idea for Spotify in 2002 when peer-to-peer music service Napster shut down and another illegal site Kazaa took over. Spotify was launched in October 2008. It offers DRM-restricted recorded music and podcasts, including more than 60 million songs. It has nearly 300 million monthly users."
     },
     {
         "title": "Frédéric Mazzella - founder of BlaBlaCar",
-        "image": "",
         "coordinates": "47.216518, -1.555595",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Mazzella",
-        "link_more": "",
         "hunt_code": "cw2020-49-wdGf",
         "description": "BlaBlaCar is a French online marketplace for carpooling. Its website and mobile apps connect drivers and passengers willing to travel together between cities and share the cost of the journey."
     },
     {
         "title": "Charles Babbage",
-        "image": "",
         "coordinates": "51.503855, -0.088305",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Charles_Babbage",
-        "link_more": "",
         "hunt_code": "cw2020-50-fiS3",
         "description": "Considered by some to be \"father of the computer\", Babbage is credited with inventing the first mechanical computer that eventually led to more complex electronic designs, though all the essential ideas of modern computers are to be found in Babbage's Analytical Engine. His varied work in other fields has led him to be described as \"pre-eminent\" among the many polymaths of his century."
     },
     {
         "title": "The Turing machine",
-        "image": "https://en.wikipedia.org/wiki/Alan_Turing#/media/File:Alan_Turing_Aged_16.jpg",
+        "image": "Alan_Turing_Aged_16.jpg",
         "coordinates": "51.507400, -0.127800",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Turing_machine",
-        "link_more": "",
         "hunt_code": "cw2020-51-GIWE",
         "description": "The Turing machine is a mathematical model of computation that defines an abstract machine, which manipulates symbols on a strip of tape according to a table of rules. It was invented by Alan Turing in 1936. He is widely considered to be the father of theoretical computer science and artificial intelligence."
     },
     {
         "title": "Roman Stanisław Ingarden",
-        "image": "https://en.wikipedia.org/wiki/Roman_Stanis%C5%82aw_Ingarden#/media/File:Roman_Stanis%C5%82aw_Ingarden_Polish_physicist_1969.jpg",
+        "image": "Roman_Stanisław_Ingarden_Polish_physicist_1969.jpg",
         "coordinates": "50.064700, 19.945000",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Roman_Stanis%C5%82aw_Ingarden",
-        "link_more": "",
         "hunt_code": "cw2020-52-91Vh",
         "description": "Due to his seminal paper \"Quantum Information Theory\" and later books on this subject he is considered as one of the founding fathers of the modern theory of quantum information."
     },
     {
         "title": "Piz Daint - Europe's most powerful supercomputer",
-        "image": "",
         "coordinates": "46.024596, 8.960073",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Piz_Daint_(supercomputer)",
-        "link_more": "",
         "hunt_code": "cw2020-53-o0TL",
         "description": "Europe’s most powerful system ranks sixth on the list. Piz Daint is a supercomputer named after an alpine mountain—whose image is displayed on its housing—located at the Swiss National Supercomputing Centre in Lugano. Its Intel and NVIDIA processors give it a speed of 21.2 petaflops. Piz Daint is involved in extensive research in materials science, physics, geophysics, life sciences, climatology and data science."
     },
     {
         "title": "Hövding - the Chief",
-        "image": "",
         "coordinates": "55.605000, 13.003800",
         "link_wikipedia": "https://en.wikipedia.org/wiki/H%C3%B6vding",
-        "link_more": "",
         "hunt_code": "cw2020-54-on1J",
         "description": "Hövding is an airbag bicycle helmet invted by Anna Haupt and Terse Alstin in Malmö, Sweden in 2005. The Hövding contains accelerometers that detect unusual movements which then deploys the airbag if the movement patterns match the profile of a crash. Each Hövding airbag also contains a \"Black Box\" that records the accelerometer data 10 seconds before a deployment. This data can be used by the developers to improve the product."
     },
     {
         "title": "Micro IP",
-        "image": "http://dunkels.com/adam/",
         "coordinates": "65.584800, 22.156700",
         "link_wikipedia": "https://en.wikipedia.org/wiki/UIP_(micro_IP)",
-        "link_more": "",
         "hunt_code": "cw2020-55-xg2X",
         "description": "Adam Dunkles is an entrepreneur and progammer who invented the micro IP which allows tiny gadgets such as car keys and credit cars to communicate using internet protocols. He is born in Luleå."
     },
     {
         "title": "Online voting",
-        "image": "https://en.wikipedia.org/wiki/Estonia#/media/File:Flag_of_Estonia.svg",
+        "image": "640px-Flag_of_Estonia.svg.png",
         "coordinates": "58.595300, 25.013600",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Electronic_voting_in_Estonia",
-        "link_more": "",
         "hunt_code": "cw2020-56-Hnor",
         "description": "Estonia was the first country in the world to hold legally binding general elections over the internet in 2005. The Estonian parliamentary election in 2007 also used online voting, another world first."
     },
     {
         "title": ".eu",
-        "image": "https://en.wikipedia.org/wiki/.eu#/media/File:Logo_.eu.svg",
+        "image": "640px-Logo_.eu.png",
         "coordinates": "50.850300, 4.351700",
         "link_wikipedia": "https://en.wikipedia.org/wiki/.eu",
-        "link_more": "",
         "hunt_code": "cw2020-57-CdaQ",
         "description": "The domain .eu was launched in 2005 and is available to any person, company or organisation based in the European Union. It was extended to the European Economic Area in 2014. It is administrated by EURid, which is a non-profit organisation appointed by the European Commission. EURid is established in Belgium."
     },
     {
         "title": "Bletchley Park",
-        "image": "",
         "coordinates": "51.996606, -0.743149",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Bletchley_Park",
-        "link_more": "",
         "hunt_code": "cw2020-58-Ds5W",
         "description": "Bletchley Park is an English country house that was the principal centre of Allied code-breaking during the Second World War. It hosted a team of codebreakers, among which Alan Turing, that worked day and night to penetrate the secrets hidden by the Enigma ciphers used by the Nazi German military."
     },
     {
         "title": "Alan Turing",
-        "image": "",
         "coordinates": "53.328468,-2.2073789",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Alan_Turing ",
-        "link_more": "",
         "hunt_code": "cw2020-59-gQmd",
         "description": "Alan Mathison Turing was an English mathematician, computer scientist, logician, cryptanalyst, philosopher, and theoretical biologist.Turing was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer.Turing is widely considered to be the father of theoretical computer science and artificial intelligence. Turing played a crucial role in cracking intercepted coded messages that enabled the Allies to defeat the Nazis and to win the 2nd World War. Despite these accomplishments, he was never fully recognised in his home country during his lifetime due to the prevalence of homophobia at the time."
     },
     {
         "title": "George Boole",
-        "image": "",
         "coordinates": "53.2182753,-0.6255359",
         "link_wikipedia": "https://en.wikipedia.org/wiki/George_Boole",
-        "link_more": "",
         "hunt_code": "cw2020-61-agiq",
         "description": "George Boole was a largely self-taught English mathematician, philosopher and logician, most of whose short career was spent as the first professor of mathematics at Queen's College, Cork in Ireland. He worked in the fields of differential equations and algebraic logic, and is best known as the author of The Laws of Thought (1854) which contains Boolean algebra. Boolean logic is credited with laying the foundations for the information age."
     },
     {
         "title": "Harry Nyquist",
-        "image": "",
         "coordinates": "59.503467,13.319601",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Harry_Nyquist",
-        "link_more": "",
         "hunt_code": "cw2020-62-V9Xs",
         "description": "Nyquist was born in the village Nilsby of the parish Stora Kil, Värmland, Sweden. He emigrated to the USA in 1907 Where he completed his Ph.D in physics at Yale University in 1917. He worked at AT&T's Department of Development and Research from 1917 to 1934, and continued when it became Bell Telephone Laboratories that year, until his retirement in 1954. He was the father of: the Nyquist rate, the Nyquist frequency, the Nyquist filter, the Nyquist stability criterion, and many more."
     },
     {
         "title": "ELEA 9003",
-        "image": "",
         "coordinates": "45.4543334,7.8549798",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Olivetti_Elea ",
-        "link_more": "",
         "hunt_code": "cw2020-63-0X8o",
         "description": "The Elea 9003 is one of a series of mainframe computers Olivetti developed starting in the late 1950s. The system was entirely made with transistors for high performance. It was the first solid-state computer designed and manufactured in Italy. The acronym ELEA stood for Elaboratore Elettronico Aritmetico (Arithmetical Electronic Computer, then changed to Elaboratore Elettronico Automatico for marketing reasons) and was chosen with reference to the ancient Greek colony of Elea, home of the Eleatic school of philosophy."
     },
     {
         "title": "Joyce Aylard",
-        "image": "",
         "coordinates": "51.578541, -0.389534",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Joyce_Aylard",
-        "link_more": "",
         "hunt_code": "cw2020-64-xcv4",
         "description": "Joyce Ethel Aylard was a codebreaker at Eastcote, an outstation of Bletchley Park, during World War II. She was one of the operators of the bombe machines used in the Cryptanalysis of the ENIGMA code."
     },
@@ -544,7 +482,6 @@ const codeHuntingPoints = [
         "image": "Nadia_Magnenat_Thalmann.jpg",
         "coordinates": "46.199936, 6.144828",
         "link_wikipedia": "https://en.wikipedia.org/wiki/Nadia_Magnenat_Thalmann",
-        "link_more": "",
         "hunt_code": "cw2020-65-poi7",
         "description": "This research lab of the University of Geneve is headed by professor Nadia Magnenat Thalmann and conducts machine-human interface, robotics, and computer graphics research."
     },
@@ -553,7 +490,6 @@ const codeHuntingPoints = [
         "image": "Arpanet_logical_map_march_1977.png",
         "coordinates": "59.975078, 11.044971",
         "link_wikipedia": "https://en.wikipedia.org/wiki/NORSAR",
-        "link_more": "",
         "hunt_code": "cw2020-66-beva",
         "description": "NORSAR or Norwegian Seismic Array was established in 1968 for the detection of earthquakes and nuclear explosions. It was the first non-US site included in ARPANET in June 1973."
     },
