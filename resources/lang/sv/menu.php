@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Authentication Language Lines
@@ -15,14 +14,18 @@ return [
 
     'learn' => 'Lära sig',
     'teach' => 'Undervisa',
-    'training' => 'Fortbildning', 'toolkits' => 'Presentationer och verktyg', 'why' => 'VARFÖR', 'home'  => 'Hem',
+    'training' => 'Fortbildning',
+    'toolkits' => 'Presentationer och verktyg',
+    'why' => 'VARFÖR',
+    'home' => 'Hem',
     'events' => 'Aktiviteter',
     'ambassadors' => 'Ambassadörer',
     'resources' => 'Resurser',
     'schools' => 'Skolor',
     'about' => 'Om',
-    'blog' => 'Blog','news' => 'Nyheter',
-    'search' => 'Skriv och tryck på Enter ...',
+    'blog' => 'Blog',
+    'news' => 'Nyheter',
+    'search' => 'Skriv och tryck på Enter...',
     'map' => 'Karta',
     'add_event' => 'Lägg till evenemang',
     'search_event' => 'Sök evenemang',
@@ -36,7 +39,8 @@ return [
     'logout' => 'Utloggning',
     'signin' => 'Logga in',
     'privacy' => 'Sekretess',
-    'participation'=> 'Intyg om deltagande',
+    'participation' => 'Intyg om deltagande',
     'values' => 'Våra värderingar',
     'featured_activities' => 'Utvalda aktiviteter',
-    'codeweek2020' => '2020-upplagan'];
+    'codeweek2020' => '2020-upplagan'
+];

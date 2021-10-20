@@ -30,7 +30,10 @@ return [
     'paper-circuit' => [
         'title' => 'Træk stikket ud og kod: Lav et papirkredsløb',
         'author' => 'Holdet bag EU\'s kodeuge',
-        'purposes' => ['At styrke kreativiteten', 'At blive bedre til problemløsning'],
+        'purposes' => [
+            'At styrke kreativiteten',
+            'At blive bedre til problemløsning'
+        ],
         'description' => [
             'Tegn en ting, du selv bestemmer. Det kan være en nattehimmel, en mariehøne, en robot, et juletræ eller noget helt andet. Du er velkommen til at skræddersy dit projekt med visuelle elementer fra EU\'s kodeuge: Du kan udforske',
             'EU\'s kodeuges pakke til lærere',
@@ -128,7 +131,7 @@ return [
             'Lyt til',
             'et eksempel på en sang, der er kodet med Earsketch',
             'Du kan importere koden og redigere den'
-        ],
+        ]
     ],
     'sensing-game' => [
         'title' => 'Lav et videosansespil',
@@ -196,7 +199,8 @@ return [
     'computational-thinking-and-computational-fluency' => [
         'title' =>
             'Datalogisk tænkning og datalogiske færdigheder med ScratchJr',
-        'author' => 'Stamatis Papadakis – Ambassadør for EU\'s kodeuge i Grækenland',
+        'author' =>
+            'Stamatis Papadakis – Ambassadør for EU\'s kodeuge i Grækenland',
         'purposes' => [
             'At lære nye kommandoer og grænseflader godt at kende.',
             'At skabe simple programmer med simple årsag-og-virkning-kommandoer.',
@@ -251,8 +255,7 @@ return [
             'vejledningen',
             'og desuden skrevet øverst på hvert niveau'
         ],
-        'example' =>
-            'Du kan finde udvalgte elevkreationer her:',
+        'example' => 'Du kan finde udvalgte elevkreationer her:',
         'materials' => 'Code.org-vejledningen'
     ],
     'create-a-simulation' => [
@@ -270,7 +273,7 @@ return [
         ],
         'example' =>
             'Når du er færdig, kan du dele din simulering med andre. Del dit budskab om, hvad du mener, vi kan gøre for at hjælpe andre med ikke at blive syge, når virus kommer til byen.',
-        'materials' => 'Code.org-vejledningen',
+        'materials' => 'Code.org-vejledningen'
     ],
     'create-your-own-masterpiece' => [
         'title' => 'Lav dit eget mesterværk!',
@@ -280,7 +283,8 @@ return [
         'description' =>
             'Lav dit eget mesterværk med artist! Brug kodeblokke til at få artist til at lave et enestående kunstværk.',
         'instructions' => 'Der er instruktioner øverst på hvert niveau',
-        'example' => 'Der er eksempler fra artist på denne side under Drawing (tegning)',
+        'example' =>
+            'Der er eksempler fra artist på denne side under Drawing (tegning)',
         'materials' => ['Du kan finde vejledningens første niveau', 'HER']
     ],
     'cs-first-unplugged-activities' => [
@@ -345,7 +349,7 @@ return [
             'Eleverne opfordres til at gennemføre udfordringen i kodeugen og gå videre til det internationale niveau for at kommunikere med andre elever og vinde priser.',
             'Du kan finde flere oplysninger på:',
             'eller ved at kontakte os på'
-        ],
+        ]
     ],
     'virtual-flower-field' => [
         'title' => 'Lad dit virtuelle blomsterbed vokse',
@@ -357,18 +361,18 @@ return [
             'At lære, at det at kode kan være kunstnerisk og føre til smukke resultater.',
             'At gøre efteråret lysere med farverige blomster og EU\'s kodeuge.',
             'At vise jordens mangfoldighed af blomster.',
-            'At bidrage til verdensmålene for bæredygtig udvikling (SDG\'erne), især SDG13 – klimaindsats – ved at lave kodearrangementer, der forbedrer undervisningen i klimaforandringer ved at øge opmærksomheden på emnet . '
+            'At bidrage til verdensmålene for bæredygtig udvikling (SDG\'erne), især SDG13 – klimaindsats – ved at lave kodearrangementer, der forbedrer undervisningen i klimaforandringer ved at øge opmærksomheden på emnet.'
         ],
         'description' =>
-            'Udvikl et program i Snap!, som dyrker et virtuelt blomsterbed med forskellige typer blomster og forskellige antal blomsterblade . ',
+            'Udvikl et program i Snap!, som dyrker et virtuelt blomsterbed med forskellige typer blomster og forskellige antal blomsterblade.',
         'instructions' => [
             'Hvis du har brug for inspiration til, hvordan du kommer i gang med udfordringen, så tjek',
             'denne video',
             'eller brug',
             'dette dokument',
             'til at følge med',
-            'Udfordringen kan gennemføres ved at programmere et virtuelt blomsterbed i Snap!(eller Scratch) og poste et skærmbillede eller et billede af resultatet online . ',
-            'Blomsterbedet bør omfatte forskellige typer blomster med forskellige antal blomsterblade . Blomsterne skal helst være programmerede, dvs . at de er lavet ved gentagende gange at stemple og dreje(eller tegne og dreje) blomsterbladene . ',
+            'Udfordringen kan gennemføres ved at programmere et virtuelt blomsterbed i Snap!(eller Scratch) og poste et skærmbillede eller et billede af resultatet online. ',
+            'Blomsterbedet bør omfatte forskellige typer blomster med forskellige antal blomsterblade. Blomsterne skal helst være programmerede, dvs. at de er lavet ved gentagende gange at stemple og dreje(eller tegne og dreje) blomsterbladene. ',
             'Post et billede af din virtuelle blomsterhave med #MeetandCode.'
         ],
         'materials' => [
@@ -391,24 +395,24 @@ return [
         'instructions' => [
             'Begynd med at åbne en browser, og gå ind på hedycode.com.',
             'Følg instruktionerne for niveau 1-4. Brug fanebladene \'Level\' (Niveau) og \'Haunted house\' (Spøgelseshus).',
-            'Vi bruger disse niveauer til at skrive en interaktiv historie om spøgelseshuset . ',
+            'Vi bruger disse niveauer til at skrive en interaktiv historie om spøgelseshuset. ',
             'Lærerne kan finde en læreplan for Hedy',
             'her',
             'Du kan finde en optagelse af Felienne Hermans, der præsenterer Hedy, på',
             'dette link'
         ],
         'example' => 'Eksempel på spøgelseshus på niveau',
-        'materials' => ['Hedy på', 'niveau 1 til 4'],
+        'materials' => ['Hedy på', 'niveau 1 til 4']
     ],
     'inclusive - app - design' => [
         'title' => 'Inklusivt appdesign',
         'author' => 'Apple Education',
         'duration' => '60 minutter + valgfrie ekstraaktiviteter',
         'purposes' => [
-            'At brainstorme, planlægge, udvikle en prototype og dele en idé til en app, som alle kan tilgå og forstå . '
+            'At brainstorme, planlægge, udvikle en prototype og dele en idé til en app, som alle kan tilgå og forstå. '
         ],
         'description' =>
-            'Gode apps begynder med gode idéer . I denne aktivitet skal eleverne komme på en idé til en app om et emne, de er optaget af, og dernæst finde ud af, hvordan de designer apps med øje for inklusion og tilgængelighed . ',
+            'Gode apps begynder med gode idéer. I denne aktivitet skal eleverne komme på en idé til en app om et emne, de er optaget af, og dernæst finde ud af, hvordan de designer apps med øje for inklusion og tilgængelighed. ',
         'instructions' => [
             'Du kan finde alle instruktioner på dette link',
             'Med denne læreplan til en time kan underviserne vejlede eleverne i at',
@@ -420,7 +424,7 @@ return [
         ],
         'materials' => [
             'udforske Inclusive App Design Activity i Apple Teacher Learning Center',
-            'Keynote på iPad eller Mac is anbefales, men er ikke et krav . '
+            'Keynote på iPad eller Mac is anbefales, men er ikke et krav. '
         ]
     ],
     'silly - eyes' => [
@@ -428,14 +432,15 @@ return [
         'author' => 'Raspberry Pi Foundation',
         'duration' => '25 minutter',
         'purposes' => [
-            'At lave et projekt med brugerinddragelse . ',
-            'At gøre et projekt personligt med farver og grafiske effekter . ',
-            'At lære om design i digital fremstilling . '
+            'At lave et projekt med brugerinddragelse. ',
+            'At gøre et projekt personligt med farver og grafiske effekter. ',
+            'At lære om design i digital fremstilling. '
         ],
         'description' =>
-            'I dette projekt lærer du at designe og lave en figur med fjollede øjne . Figurens store, fjollede øjne følger musemarkøren, så figuren kommer til live . ',
+            'I dette projekt lærer du at designe og lave en figur med fjollede øjne. Figurens store, fjollede øjne følger musemarkøren, så figuren kommer til live. ',
         'instructions' => 'Der er adgang til hele projektbeskrivelsen her',
-        'example' => 'Tjek Gobo, Under the sea(Under vandet) og Don\'t eat donut (Spis ikke donut)'
+        'example' =>
+            'Tjek Gobo, Under the sea(Under vandet) og Don\'t eat donut (Spis ikke donut)'
     ],
     'train-ai-bot' => [
         'title' => 'Træn en AI-bot!',
@@ -450,6 +455,6 @@ return [
         'materials' => [
             'Vejledningen findes her',
             'Denne vejledning findes på over 25 sprog'
-        ],
+        ]
     ]
 ];

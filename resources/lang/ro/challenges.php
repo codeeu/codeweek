@@ -38,7 +38,7 @@ return [
         'Distribuiți-vă provocarea',
         'Doriți să câștigați niște premii în cadrul Săptămânii programării? Dacă da, faceți așa încât lucrarea pe care ați realizat-o să ajungă virală!',
         'După ce ați finalizat provocarea, distribuiți-o pe Instagram.',
-        "Câștigătorii vor fi selectați zilnic pe parcursul Săptămânii programării, în perioada 9-24 octombrie, și anunțați pe canalul nostru de Instagram, așa că nu uitați să vă verificați periodic notificările."
+        'Câștigătorii vor fi selectați zilnic pe parcursul Săptămânii programării, în perioada 9-24 octombrie, și anunțați pe canalul nostru de Instagram, așa că nu uitați să vă verificați periodic notificările.'
     ],
     'share' => [
         'Cum vă puteți distribui provocarea (provocările) pe Instagram?',
@@ -51,7 +51,9 @@ return [
         'Adăugați #CodeWeekChallenge',
         'Menționați și etichetați @CodeWeekEU',
         'Preferați să vă distribuiți provocarea (provocările) pe Facebook?',
-        'Săptămâna UE a programării va fixa zilnic pe pagina sa de Facebook (link la pagina de FB) o postare nouă cu o provocare și va selecta câștigătorul premiului din comentariile de sub postare.',
+        'Săptămâna UE a programării va fixa zilnic pe pagina sa de',
+        'Facebook',
+        'o postare nouă cu o provocare și va selecta câștigătorul premiului din comentariile de sub postare.',
         'Cum funcționează?',
         'Adăugați pur și simplu un comentariu la postare, cu un link la lucrarea pe care ați realizat-o.'
     ],
@@ -68,7 +70,7 @@ return [
         'o nouă postare cu o provocare pe',
         'pagina sa de Facebook',
         'Apoi trebuie doar să adăugați un comentariu la postare, cu linkul la lucrarea pe care ați realizat-o',
-        "Câștigătorii vor fi selectați și vor primi premii ale Săptămânii programării în fiecare zi pe parcursul Săptămânii programării, în perioada 9-24 octombrie, și vor fi anunțați pe canalele noastre de Instagram și Facebook, așa că nu uitați să vă verificați periodic notificările"
+        'Câștigătorii vor fi selectați și vor primi premii ale Săptămânii programării în fiecare zi pe parcursul Săptămânii programării, în perioada 9-24 octombrie, și vor fi anunțați pe canalele noastre de Instagram și Facebook, așa că nu uitați să vă verificați periodic notificările'
     ],
     'take-part' => [
         'De ce să participați la o provocare a Săptămânii UE a programării?',
@@ -81,7 +83,7 @@ return [
         'aici',
         'pentru a descărca această provocare ca document Word'
     ],
-    'bingo' =>[
+    'bingo' => [
         'Finalizați toate provocările',
         'Ați finalizat provocarea? Printați',
         'cardul bingo',
@@ -91,5 +93,4 @@ return [
         'Facebook, Instagram sau Twitter',
         'Nu uitați să folosiți'
     ]
-
 ];

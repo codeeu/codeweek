@@ -30,7 +30,10 @@ return [
     'paper-circuit' => [
         'title' => 'Atsijunkite ir programuokite. Popierinės grandinės kūrimas',
         'author' => 'ES programavimo savaitės komanda',
-        'purposes' => ['Skatinti kūrybiškumą', 'Ugdyti problemų sprendimo įgūdžius'],
+        'purposes' => [
+            'Skatinti kūrybiškumą',
+            'Ugdyti problemų sprendimo įgūdžius'
+        ],
         'description' => [
             'Nupieškite pasirinktą objektą. Tai gali būti naktinis dangus, boružėlė, robotas, Kalėdų eglė ar bet kas, ką tik sugalvojate. Savo projektą galite suasmeninti ES programavimo savaitės vaizdo priemonėmis. Peržiūrėkite',
             'ES programavimo savaitės priemonių rinkinį mokytojams',
@@ -128,7 +131,7 @@ return [
             'Pasiklausykite',
             'dainos, kuri buvo suprogramuota naudojant „Earsketch“',
             'Kodą galima importuoti ir redaguoti'
-        ],
+        ]
     ],
     'sensing-game' => [
         'title' => 'Vaizdo jutimo žaidimo sukūrimas',
@@ -167,7 +170,8 @@ return [
     ],
 
     'calming-leds' => [
-        'title' => 'Raminantys šviesos diodai. Paprasto įrenginio sukūrimas su „micro:bit“',
+        'title' =>
+            'Raminantys šviesos diodai. Paprasto įrenginio sukūrimas su „micro:bit“',
         'author' => '„Micro:bit Educational Foundation“',
         'duration' => '20 minučių',
         'materials' => [
@@ -196,7 +200,8 @@ return [
     'computational-thinking-and-computational-fluency' => [
         'title' =>
             'Skaitmeninis mąstymas ir skaitmeninis raštingumas su „ScratchJr“',
-        'author' => 'Stamatis Papadakis – ES programavimo savaitės ambasadorius Graikijoje',
+        'author' =>
+            'Stamatis Papadakis – ES programavimo savaitės ambasadorius Graikijoje',
         'purposes' => [
             'Susipažinti su naujomis komandomis ir sąsaja.',
             'Sukurti paprastas programas su paprastomis priežasties ir pasekmės komandomis.',
@@ -270,7 +275,7 @@ return [
         ],
         'example' =>
             'Baigę, savo simuliacija galite pasidalyti su kitais. Pasidalykite savo nuomone, kaip padėti kitiems būti sveikiems į miestą atkeliavus virusui.',
-        'materials' => '„Code.org“ vadovas',
+        'materials' => '„Code.org“ vadovas'
     ],
     'create-your-own-masterpiece' => [
         'title' => 'Šedevro kūrimas',
@@ -279,8 +284,10 @@ return [
             'Vizualiai pristatyti informatikos sąvokas ir įkvėpti kūrybiškumą',
         'description' =>
             'Kurkite šedevrą su menininku! Naudodami kodo blokus padėkite savo menininkui sukurti unikalų meno kūrinį.',
-        'instructions' => 'Instrukcijos yra pateikiamos kiekvieno lygio viršuje',
-        'example' => 'Su darbų pavyzdžiais galima susipažinti šio puslapio skiltyje „Drawing“ (piešimas)',
+        'instructions' =>
+            'Instrukcijos yra pateikiamos kiekvieno lygio viršuje',
+        'example' =>
+            'Su darbų pavyzdžiais galima susipažinti šio puslapio skiltyje „Drawing“ (piešimas)',
         'materials' => ['Pirmas vadovo lygis pateikiamas', 'ČIA']
     ],
     'cs-first-unplugged-activities' => [
@@ -319,9 +326,9 @@ return [
             'Pasitelkti socialinę žiniasklaidą kuriant savo projektų poveikį'
         ],
         'description' => [
-            'Kas jums yra namai ? Gražus namas ? Skani tėvų paruošta vakarienė ? Slapta vieta, kurioje esate tik jūs ? Šilti namai maitina mūsų kūną ir sielą . Šiuolaikiniame pasaulyje, kuriame gausu šurmulio, tėvai nuolat dirba . Leisdami laiką su draugais, negalite palikti savo kačiukų . Bet kaip juos prižiūrėti, kai nesate kartu ? Šio iššūkio tema yra',
+            'Kas jums yra namai ? Gražus namas ? Skani tėvų paruošta vakarienė ? Slapta vieta, kurioje esate tik jūs ? Šilti namai maitina mūsų kūną ir sielą. Šiuolaikiniame pasaulyje, kuriame gausu šurmulio, tėvai nuolat dirba. Leisdami laiką su draugais, negalite palikti savo kačiukų. Bet kaip juos prižiūrėti, kai nesate kartu ? Šio iššūkio tema yra',
             'rūpinimasis šeima',
-            'Remiantis šia tema, mokiniai raginami pasitelkiant programavimą ir aparatinę įrangą sukurti idėją, kuri skleistų meilę ir rūpestį . Štai keletas klausimų, kuriuos turėtumėte apmąstyti',
+            'Remiantis šia tema, mokiniai raginami pasitelkiant programavimą ir aparatinę įrangą sukurti idėją, kuri skleistų meilę ir rūpestį. Štai keletas klausimų, kuriuos turėtumėte apmąstyti',
             'Kiek šeimos narių gyvena su jumis ? Kas jie ? Ar kilo kokių nors problemų gyvenant su jais ? Kokios pagalbos jiems reikia ? ',
             'Ar pažįstate ką nors, kam trūksta šeimos pagalbos labiau nei kitiems jūsų bendruomenės nariams ? Kaip galite jiems padėti ? '
         ],
@@ -340,12 +347,12 @@ return [
             'arba atsisiųskite',
             'staliniam kompiuteriui skirtą versiją',
             '„mBlock“ yra programavimo kalba, paremta „Scratch“',
-            'Šis iššūkis taip pat pritaikytas pagal „MakeX global Spark“ – projektinę kūrybinio projektavimo programą, skirtą 6–13 metų jaunuoliams . ',
-            'Dalyvaujanti komanda turės sutelkti dėmesį į konkrečią temą ir sukurti sprendimą programuodama programinę įrangą ir konstruodama aparatinę įrangą . ',
-            'Mokiniai raginami užbaigti iššūkį per Programavimo savaitę ir perkelti jį į tarptautinį lygį, kad galėtų bendrauti su kitais mokiniais ir laimėti prizų . ',
+            'Šis iššūkis taip pat pritaikytas pagal „MakeX global Spark“ – projektinę kūrybinio projektavimo programą, skirtą 6–13 metų jaunuoliams. ',
+            'Dalyvaujanti komanda turės sutelkti dėmesį į konkrečią temą ir sukurti sprendimą programuodama programinę įrangą ir konstruodama aparatinę įrangą. ',
+            'Mokiniai raginami užbaigti iššūkį per Programavimo savaitę ir perkelti jį į tarptautinį lygį, kad galėtų bendrauti su kitais mokiniais ir laimėti prizų. ',
             'Daugiau informacijos rasite svetainėje:',
-            'arba rašykite mums el . pašto adresu'
-        ],
+            'arba rašykite mums el. pašto adresu'
+        ]
     ],
     'virtual-flower-field' => [
         'title' => 'Virtualaus gėlių lauko auginimas',
@@ -353,104 +360,101 @@ return [
             'Jadga Huegle, „Meet and Code“ ugdančioji vadovė ir „SAP Snap!“ komandos narė',
         'duration' => '30–60 minučių',
         'purposes' => [
-            'Susipažinti su programavimu atliekant paprastą, tačiau išraiškingą projektą . ',
-            'Sužinoti, kad programavimas gali būti meniškas ir padėti kuriant gražius dalykus . ',
-            'Praskaidrinti rudenį spalvingomis gėlėmis ir ES programavimo savaite . ',
-            'Parodyti Žemėje augančių gėlių įvairovę . ',
-            'Prisidėti prie darnaus vystymosi tikslų(DVT), visų pirma DVT13, susijusio su klimato kaita, organizuojant programavimo renginius, kurie didina infomuotumą apie klimato kaitą ir taip šviečia žmones šia tema . '
+            'Susipažinti su programavimu atliekant paprastą, tačiau išraiškingą projektą. ',
+            'Sužinoti, kad programavimas gali būti meniškas ir padėti kuriant gražius dalykus. ',
+            'Praskaidrinti rudenį spalvingomis gėlėmis ir ES programavimo savaite. ',
+            'Parodyti Žemėje augančių gėlių įvairovę. ',
+            'Prisidėti prie darnaus vystymosi tikslų(DVT), visų pirma DVT13, susijusio su klimato kaita, organizuojant programavimo renginius, kurie didina infomuotumą apie klimato kaitą ir taip šviečia žmones šia tema. '
         ],
         'description' =>
-            'Pasitelkdami „Snap!“ programavimo kalbą sukurkite programą, skirtą auginti virtualų gėlių lauką, kuriame auga įvairių rūšių gėlės, besiskiriančios savo žiedlapių skaičiumi . ',
+            'Pasitelkdami „Snap!“ programavimo kalbą sukurkite programą, skirtą auginti virtualų gėlių lauką, kuriame auga įvairių rūšių gėlės, besiskiriančios savo žiedlapių skaičiumi. ',
         'instructions' => [
             'Jei reikia įkvėpimo, nuo ko pradėti šią užduoti, pasižiūrėkite šį',
             'vaizdo įrašą',
             'arba vadovaukitės',
             'šiuo dokumentu',
             'ir vykdykite jame pateiktus nurodymus',
-            'Atliekant šią užduotį reikia „Snap!“(arba „Scratch“) programavimo kalba sukurti virtualų gėlių lauką ir internete paskelbti gauto rezultato momentinę ekrano kopiją ar nuotrauką . ',
-            'Gėlių lauke turėtų augti skirtingų rūšių gėlės, besiskiriančios žiedlapių skaičiumi . Geriausiu atveju gėlės turi būti suprogramuotos . Tai reiškia, kad jos turi būti sukurtos nuolat štampuojant ir sukant(arba piešiant ir sukant) žiedlapius . ',
+            'Atliekant šią užduotį reikia „Snap!“(arba „Scratch“) programavimo kalba sukurti virtualų gėlių lauką ir internete paskelbti gauto rezultato momentinę ekrano kopiją ar nuotrauką. ',
+            'Gėlių lauke turėtų augti skirtingų rūšių gėlės, besiskiriančios žiedlapių skaičiumi. Geriausiu atveju gėlės turi būti suprogramuotos. Tai reiškia, kad jos turi būti sukurtos nuolat štampuojant ir sukant(arba piešiant ir sukant) žiedlapius. ',
             'Paskelbkite savo virtualaus gėlių lauko nuotrauką su grotažyme #MeetandCode.'
         ],
-        'materials' => [
-    'Rekomenduojame naudoti',
-    'tačiau galima pasitelkti ir'
-]
+        'materials' => ['Rekomenduojame naudoti', 'tačiau galima pasitelkti ir']
     ],
     'haunted-house' => [
-    'title' => 'Vaiduoklių namas su „Hedy“',
-    'author' =>
-        'Felienne Hermans, Leideno universitetas, ir Ramon Moorlag, „I&I“ – Programavimo savaitė NL',
-    'audience' => 'Mokytojai ir kiti pedagogai',
-    'duration' => '1–2 valandos, priklausomai nuo turėtų žinių',
-    'purposes' => [
-        'Sukurti interaktyvią istoriją apie vaiduoklių namą.',
-        'Išmokti programuoti „Hedy“ programavimo kalba.'
+        'title' => 'Vaiduoklių namas su „Hedy“',
+        'author' =>
+            'Felienne Hermans, Leideno universitetas, ir Ramon Moorlag, „I&I“ – Programavimo savaitė NL',
+        'audience' => 'Mokytojai ir kiti pedagogai',
+        'duration' => '1–2 valandos, priklausomai nuo turėtų žinių',
+        'purposes' => [
+            'Sukurti interaktyvią istoriją apie vaiduoklių namą.',
+            'Išmokti programuoti „Hedy“ programavimo kalba.'
+        ],
+        'description' =>
+            '„Hedy“ programavimo kalba sukursite istoriją apie vaiduoklių namą su interaktyviais elementais. Kiekvieną kartą paleidus kodą bus sukuriama nauja istorija. Istorija taip pat gali būti garsiai skaitoma kompiuterio arba bendrinama internete.',
+        'instructions' => [
+            'Pirmiausiai atidarykite naršyklę ir eikite į hedycode.com.',
+            'Vadovaukitės 1–4 lygiams skirtais nurodymais. Naudokite korteles „Level“ (lygis) ir „Haunted house“ (vaiduoklių namas).',
+            'Jos padės sukurti interaktyvią istoriją apie vaiduoklių namą.',
+            'Mokytojai, pamokos planą „Hedy“ rasite',
+            'čia',
+            'Įrašą, kuriame Felienne Hermans pristato „Hedy“ programavimo kalbą, rasite spustelėję',
+            'šią nuorodą'
+        ],
+        'example' => 'Vaiduoklių namo pavyzdys, lygis Nr. ',
+        'materials' => ['„Hedy“ rasite ', ' 1–4 lygiai']
     ],
-    'description' =>
-        '„Hedy“ programavimo kalba sukursite istoriją apie vaiduoklių namą su interaktyviais elementais. Kiekvieną kartą paleidus kodą bus sukuriama nauja istorija. Istorija taip pat gali būti garsiai skaitoma kompiuterio arba bendrinama internete.',
-    'instructions' => [
-        'Pirmiausiai atidarykite naršyklę ir eikite į hedycode.com.',
-        'Vadovaukitės 1–4 lygiams skirtais nurodymais. Naudokite korteles „Level“ (lygis) ir „Haunted house“ (vaiduoklių namas).',
-        'Jos padės sukurti interaktyvią istoriją apie vaiduoklių namą.',
-        'Mokytojai, pamokos planą „Hedy“ rasite',
-        'čia',
-        'Įrašą, kuriame Felienne Hermans pristato „Hedy“ programavimo kalbą, rasite spustelėję',
-        'šią nuorodą'
-    ],
-    'example' => 'Vaiduoklių namo pavyzdys, lygis Nr. ',
-    'materials' => ['„Hedy“ rasite ', ' 1–4 lygiai'],
-],
     'inclusive-app-design' => [
-    'title' => 'Įtraukusis programėlių projektavimas',
-    'author' => '„Apple Education“',
-    'duration' => '60 minučių + pasirinktina pratęsimo veikla',
-    'purposes' => [
-        'Apsvarstyti naujas idėjas, suplanuoti programėlę, sukurti jos prototipą ir juo pasidalyti, kad visi galėtų susipažinti ir suprasti.'
+        'title' => 'Įtraukusis programėlių projektavimas',
+        'author' => '„Apple Education“',
+        'duration' => '60 minučių + pasirinktina pratęsimo veikla',
+        'purposes' => [
+            'Apsvarstyti naujas idėjas, suplanuoti programėlę, sukurti jos prototipą ir juo pasidalyti, kad visi galėtų susipažinti ir suprasti.'
+        ],
+        'description' =>
+            'Puikios programėlės prasideda nuo puikių idėjų. Atlikdami šią užduotį mokiniai turės sugalvoti programėlės idėją jiems rūpima tema ir išmokti projektuoti programėles, atsižvelgiant į įtraukties ir prieinamumo aspektus.',
+        'instructions' => [
+            'Instrukcijas rasite spustelėję šią nuorodą',
+            'Pagal šį vienos valandos pamokos planą mokytojai gali padėti mokiniams',
+            'susipažinti su įtraukiuoju programėlių projektavimu',
+            'aptarti jiems rūpimas temas ir rasti idėją programėlei',
+            'išdėstyti idėjas programėlei ir suplanuoti naudotojo veiklą',
+            'sukurti savo programėlės dalies prototipą su „Keynote“',
+            'pasidalyti savo prototipų demonstracinėmis versijomis ir aprašyti, kaip jie palaiko įvairaus išsilavinimo ir gebėjimų naudotojus'
+        ],
+        'materials' => [
+            'Įtraukiojo programėlių projektavimo veikla „Apple“ mokytojų mokymosi centre („Apple Teacher Learning Center“)',
+            'Rekomenduojama, tačiau neprivaloma planšetėje „iPad“ ar kompiuteryje „Mac“ turėti programą „Keynote“.'
+        ]
     ],
-    'description' =>
-        'Puikios programėlės prasideda nuo puikių idėjų. Atlikdami šią užduotį mokiniai turės sugalvoti programėlės idėją jiems rūpima tema ir išmokti projektuoti programėles, atsižvelgiant į įtraukties ir prieinamumo aspektus.',
-    'instructions' => [
-        'Instrukcijas rasite spustelėję šią nuorodą',
-        'Pagal šį vienos valandos pamokos planą mokytojai gali padėti mokiniams',
-        'susipažinti su įtraukiuoju programėlių projektavimu',
-        'aptarti jiems rūpimas temas ir rasti idėją programėlei',
-        'išdėstyti idėjas programėlei ir suplanuoti naudotojo veiklą',
-        'sukurti savo programėlės dalies prototipą su „Keynote“',
-        'pasidalyti savo prototipų demonstracinėmis versijomis ir aprašyti, kaip jie palaiko įvairaus išsilavinimo ir gebėjimų naudotojus'
-    ],
-    'materials' => [
-        'Įtraukiojo programėlių projektavimo veikla „Apple“ mokytojų mokymosi centre („Apple Teacher Learning Center“)',
-        'Rekomenduojama, tačiau neprivaloma planšetėje „iPad“ ar kompiuteryje „Mac“ turėti programą „Keynote“.'
-    ]
-],
     'silly-eyes' => [
-    'title' => 'Juokingos akys',
-    'author' => '„Raspberry Pi Foundation“',
-    'duration' => '25 minutės',
-    'purposes' => [
-        'Sukurti projektą su naudotojo sąveika.',
-        'Suasmeninti projektą naudojant spalvų ir grafikos efektus.',
-        'Susipažinti su dizainu skaitmeniniame pasaulyje.'
+        'title' => 'Juokingos akys',
+        'author' => '„Raspberry Pi Foundation“',
+        'duration' => '25 minutės',
+        'purposes' => [
+            'Sukurti projektą su naudotojo sąveika.',
+            'Suasmeninti projektą naudojant spalvų ir grafikos efektus.',
+            'Susipažinti su dizainu skaitmeniniame pasaulyje.'
+        ],
+        'description' =>
+            'Šio projekto metu suprojektuosite ir sukursite personažą juokingomis akimis. Didelės, juokingos personažo akys seks pelės žymeklį, taip suteikdamos jam gyvybės.',
+        'instructions' => 'Su visu projekto aprašu susipažinti galima čia',
+        'example' =>
+            'Įkvėpimo galite semtis iš Gobo, „Under the sea“ ir „Don\'t eat donut“ (povandeninio pasaulio būtybių ir spurgos)'
     ],
-    'description' =>
-        'Šio projekto metu suprojektuosite ir sukursite personažą juokingomis akimis. Didelės, juokingos personažo akys seks pelės žymeklį, taip suteikdamos jam gyvybės.',
-    'instructions' => 'Su visu projekto aprašu susipažinti galima čia',
-    'example' => 'Įkvėpimo galite semtis iš Gobo, „Under the sea“ ir „Don\'t eat donut“ (povandeninio pasaulio būtybių ir spurgos)'
-],
     'train-ai-bot' => [
-    'title' => 'DI boto mokymas',
-    'purposes' =>
-        'Susipažinti su dirbtiniu intelektu (DI), mašinų mokymusi, mokymusi iš duomenų ir šališkumu, kartu nagrinėjant etines problemas ir kaip DI galima panaudoti sprendžiant pasaulio problemas.',
-    'description' =>
-        'Išmokyk DI botą padėti vandenynams („AI for Oceans“). Atlikdami šią užduotį programuosite arba mokysite dirbtinį intelektą (DI) atpažinti žuvis ir šiukšles. Išvalykite vandenyną!',
-    'instructions' => [
-        'Instrukcijas vaizdo įrašų formatu rasite',
-        'ir kiekvieno lygio viršuje'
-    ],
-    'materials' => [
-        'Vadovą rasite čia',
-        'Jis pateikiamas daugiau nei 25 kalbomis'
-    ],
-]
+        'title' => 'DI boto mokymas',
+        'purposes' =>
+            'Susipažinti su dirbtiniu intelektu (DI), mašinų mokymusi, mokymusi iš duomenų ir šališkumu, kartu nagrinėjant etines problemas ir kaip DI galima panaudoti sprendžiant pasaulio problemas.',
+        'description' =>
+            'Išmokyk DI botą padėti vandenynams („AI for Oceans“). Atlikdami šią užduotį programuosite arba mokysite dirbtinį intelektą (DI) atpažinti žuvis ir šiukšles. Išvalykite vandenyną!',
+        'instructions' => [
+            'Instrukcijas vaizdo įrašų formatu rasite',
+            'ir kiekvieno lygio viršuje'
+        ],
+        'materials' => [
+            'Vadovą rasite čia',
+            'Jis pateikiamas daugiau nei 25 kalbomis'
+        ]
+    ]
 ];
-

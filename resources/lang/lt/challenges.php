@@ -13,10 +13,7 @@ return [
         'description' => 'Aprašas',
         'instructions' => 'Instrukcijos',
         'example' => 'Pavyzdys',
-        'written-by' => [
-            'Šį iššūkį parengė',
-            'ir jis yra įtrauktas į'
-        ],
+        'written-by' => ['Šį iššūkį parengė', 'ir jis yra įtrauktas į'],
         'teachers' => 'Mokytojai',
         'students' => 'Mokiniai',
         'beginner' => 'Pradedančiųjų lygis',
@@ -38,7 +35,7 @@ return [
         'Bendrinkite savo iššūkį',
         'Ar norėtumėte laimėti Programavimo savaitės prizų? Jei taip, jūsų darbas turi užkariauti internetą!',
         'Atlikę iššūkio užduotį, bendrinkite ją „Instagram“.',
-        "Spalio 9–24 d. vyksiančios Programavimo savaitės metu laimėtojai bus kasdien renkami ir skelbiami mūsų „Instagram“ kanale, todėl nepamirškite reguliariai tikrinti savo pranešimų."
+        'Spalio 9–24 d. vyksiančios Programavimo savaitės metu laimėtojai bus kasdien renkami ir skelbiami mūsų „Instagram“ kanale, todėl nepamirškite reguliariai tikrinti savo pranešimų.'
     ],
     'share' => [
         'Kaip bendrinti savo iššūkį (-ius) platformoje „Instagram“?',
@@ -51,7 +48,9 @@ return [
         'pridėkite grotažymę #CodeWeekChallenge;',
         'paminėkite ir pažymėkite @CodeWeekEU.',
         'Norite bendrinti savo iššūkį (-ius) „Facebook“?',
-        'ES programavimo savaitės „Facebook“ puslapyje (link to FB page) bus kasdien skelbiamas įrašas su nauju iššūkiu, o prizo laimėtojas bus renkamas iš po šiuo įrašu pateiktų komentarų.',
+        'ES programavimo savaitės',
+        '„Facebook“ puslapyje',
+        'bus kasdien skelbiamas įrašas su nauju iššūkiu, o prizo laimėtojas bus renkamas iš po šiuo įrašu pateiktų komentarų.',
         'Kaip tai veikia?',
         'Tiesiog pakomentuokite įrašą su nuoroda į savo darbą.'
     ],
@@ -68,7 +67,7 @@ return [
         'įrašą apie naują iššūkį savo',
         '„Facebook“ puslapyje',
         'Tiesiog pakomentuokite įrašą su nuoroda į savo darbą',
-        "Spalio 9–24 d. vyksiančios Programavimo savaitės metu Programavimo savaitės prizų laimėtojai bus kasdien renkami ir skelbiami mūsų „Facebook“ kanaluose, todėl nepamirškite reguliariai tikrinti savo pranešimų"
+        'Spalio 9–24 d. vyksiančios Programavimo savaitės metu Programavimo savaitės prizų laimėtojai bus kasdien renkami ir skelbiami mūsų „Facebook“ kanaluose, todėl nepamirškite reguliariai tikrinti savo pranešimų'
     ],
     'take-part' => [
         'Kodėl verta dalyvauti ES programavimo savaitės iššūkyje?',
@@ -91,5 +90,4 @@ return [
         '„Facebook“, „Instagram“ or „Twitter“',
         'Nepamirškite grotažymės'
     ]
-
 ];

@@ -30,7 +30,10 @@ return [
     'paper-circuit' => [
         'title' => 'Ħu pawża u kkowdja: Oħloq ċirkwit stampat',
         'author' => 'Tim tal-Ġimgħa tal-UE tal-Ikkowdjar',
-        'purposes' => ['Tejjeb il-kreattività', 'Żviluppa ħiliet ta\' solvien tal-problemi'],
+        'purposes' => [
+            'Tejjeb il-kreattività',
+            'Żviluppa ħiliet ta\' solvien tal-problemi'
+        ],
         'description' => [
             "Pinġi kwalunkwe oġġett tal-għażla tiegħek. Dan jista' jkun is-sema ta' billejl, nannakola, robot, siġra tal-Milied jew kwalunkwe ħaġa li tista' taħseb fiha. Ħossok liberu li tippersonalizza l-proġett tiegħek bil-viżwalizzazzjonijiet tal-Ġimgħa tal-UE tal-Ikkowdjar: tista’ tesplora",
             'is-sett ta\' għodod tal-għalliema tal-Ġimgħa tal-UE tal-Ikkowdjar',
@@ -41,7 +44,7 @@ return [
             'Agħmel toqba mill-karta b’lapes u daħħal stiker LED f’kull parti mixgħula.  ',
             "Pinġi ċirku fejn se tpoġġi l-batterija f'forma ta' buttuna.",
             'Pinġi trekk a + u a-fuq in-naħa l-oħra tal-karta. Kun ċert li l-parti t-twila tal-istiker taċ-ċirkwit LED hija mqabbda man-naħa “+” tal-batterija u dik iqsar man-naħa “-” tal-batterija.',
-            "Poġġi t-tejp tar-ram fuq it-trekks.",
+            'Poġġi t-tejp tar-ram fuq it-trekks.',
             'Oħloq liwja biex meta l-karta tkopri l-batterija, l-LED jinxtegħel. Tista’ tuża klipp tal-karti biex tiżgura kuntatt tajjeb mat-tejp tar-ram.',
             "Ħu ritratt taċ-ċirkwit stampat u aqsmu mal-oħrajn fuq Instagram, filwaqt li spjega għaliex taħseb li huwa siewi li tieħu sehem f'din l-inizjattiva."
         ],
@@ -71,13 +74,13 @@ return [
             'Ikklikkja',
             'u agħtih titlu',
             'Mur',
-            "biex iżżid sfond billi tikklikkja fuq l-ikona tal-gerijiet. Agħżel sfond mil-Librerija tal-Midja (Media Library), tella’ l-immaġni tiegħek stess jew tista’ saħansitra tieħu ritratt u ttellgħu. Agħżel klipp tal-awdjo u żidu mal-palk:",
-            "Ikklikkja fuq",
+            'biex iżżid sfond billi tikklikkja fuq l-ikona tal-gerijiet. Agħżel sfond mil-Librerija tal-Midja (Media Library), tella’ l-immaġni tiegħek stess jew tista’ saħansitra tieħu ritratt u ttellgħu. Agħżel klipp tal-awdjo u żidu mal-palk:',
+            'Ikklikkja fuq',
             'il-buttuna biex iżżid karattri jew oġġetti li inti se tanima sabiex ikunu jistgħu jiċċaqilqu, jitkellmu u jinteraġixxu ma’ xulxin. Żid żewġ karattri jew tliet karattri tal-għażla tiegħek. Tista’ tpinġi l-atturi tiegħek stess jew timmodifika dawk eżistenti. Żid kostumi differenti mal-karattru tiegħek billi tikklikkja l-ikona tal-lapes.',
             'Ikklikkja fuq kull attur u animah billi żżid il-blokok li ġejjin',
             'Żid',
             'say block (blokka tat-taħdit)',
-            'u ara l-atturi tiegħek jitkellmu ma\' xulxin . Biddel il-forma tal-bżieżaq tad-diskors u t-tipa u d-daqs tat-test tiegħek'
+            'u ara l-atturi tiegħek jitkellmu ma\' xulxin. Biddel il-forma tal-bżieżaq tad-diskors u t-tipa u d-daqs tat-test tiegħek'
         ],
         'example' => [
             'Iċċekkja',
@@ -95,7 +98,7 @@ return [
             'Biex wieħed jikkomponi kanzunetta billi jħallat klipps tal-ħsejjes'
         ],
         'description' =>
-            'F’din l-isfida, inti se toħloq kompożizzjoni mużikali billi tuża lingwa ta’ programmazzjoni . Tista’ tuża klipps tal-ħsejjes integrati jew tirrekordja dawk tiegħek stess u tħallathom biex toħloq kompożizzjoni mużikali . Ħaddem il-kodiċi tiegħek fl-Istazzjon tax-Xogħol tal-Awdjo Diġitali u isma’ l-mużika li kkowdjajt . Uża ħsejjes u effetti differenti biex timmodifika l-biċċa tal-mużika tiegħek . ',
+            'F’din l-isfida, inti se toħloq kompożizzjoni mużikali billi tuża lingwa ta’ programmazzjoni. Tista’ tuża klipps tal-ħsejjes integrati jew tirrekordja dawk tiegħek stess u tħallathom biex toħloq kompożizzjoni mużikali. Ħaddem il-kodiċi tiegħek fl-Istazzjon tax-Xogħol tal-Awdjo Diġitali u isma’ l-mużika li kkowdjajt. Uża ħsejjes u effetti differenti biex timmodifika l-biċċa tal-mużika tiegħek. ',
         'instructions' => [
             'Illoggja fi',
             'Ikklikkja hawn biex tagħmel skript',
@@ -128,7 +131,7 @@ return [
             'Isma',
             'eżempju ta’ kanzunetta kkowdjata b\'Earsketch',
             'Tista\' timporta l-kodiċi u teditjah'
-        ],
+        ]
     ],
     'sensing-game' => [
         'title' => 'Agħmel logħba ta’ detezzjoni bil-vidjo',
@@ -149,12 +152,12 @@ return [
             'Dan se jidentifika kemm oġġett qed jimxi malajr. Jekk in-numru jkun aktar baxx, dan ikun aktar sensittiv għall-moviment.',
             'Żid fatatina. Agħżel ħoss u żidu mal-fatatinatiegħek. Jekk trid, tista’ żżid',
             'Oħloq klonu',
-            'idduplika l-fatatina tiegħek . ',
+            'idduplika l-fatatina tiegħek. ',
             'Oħloq żewġ varjabbli: wieħed għal',
             'Punteġġ',
             'u l-ieħor għal',
             'Kronometru',
-            'u żidhom mal-fatatina . Issettja l-Kronometru għal 30 u żid',
+            'u żidhom mal-fatatina. Issettja l-Kronometru għal 30 u żid',
             'Ibdel il-Kronometru b\' -1',
             'Oħloq fatatina ġdida',
             'Spiċċat il-logħba',
@@ -167,13 +170,14 @@ return [
     ],
 
     'calming-leds' => [
-        'title' => 'LEDs li jagħtu trankwilità: oħloq apparat sempliċi b’mikro:bit',
+        'title' =>
+            'LEDs li jagħtu trankwilità: oħloq apparat sempliċi b’mikro:bit',
         'author' => 'Fondazzjoni edukattiva mikro:bit',
         'duration' => '20 minuta',
         'materials' => [
             'apparat mikro:bit u pakkett tal-batteriji (jekk disponibbli)',
-            "laptop jew tablet li bih tista’ żżur il-Microsoft MakeCode u YouTube",
-            'microbit . org għar-riżorsi tal-attività'
+            'laptop jew tablet li bih tista’ żżur il-Microsoft MakeCode u YouTube',
+            'microbit. org għar-riżorsi tal-attività'
         ],
         'description' =>
             'L-istudenti joħolqu apparat diġitali permezz ta\' LEDs li jista’ jgħinhom jirregolaw in-nifs u jħossuhom aktar kalmi. Dawn se jintalbu jiktbu xi kodiċi sempliċi, jesploraw l-animazzjonijiet u s-sekwenzi.',
@@ -190,13 +194,14 @@ return [
             'Biex jitfassal artefatt diġitali sempliċi bi skop utli',
             'Biex jiġu esplorati sekwenzi u animazzjonijiet u kif jaħdmu',
             'Biex jiġi ttestjat u rranġat kodiċi sempliċi',
-            "Biex jiġi rripetut disinn billi l-animazzjonijiet isiru aktar veloċi jew bil-mod"
+            'Biex jiġi rripetut disinn billi l-animazzjonijiet isiru aktar veloċi jew bil-mod'
         ]
     ],
     'computational-thinking-and-computational-fluency' => [
         'title' =>
             'Ħsieb komputazzjonali u Kompetenza Komputazzjonali bi ScratchJr',
-        'author' => 'Stamatis Papadakis – Ambaxxatur tal-Ġimgħa tal-UE tal-Ikkowdjar il-Greċja',
+        'author' =>
+            'Stamatis Papadakis – Ambaxxatur tal-Ġimgħa tal-UE tal-Ikkowdjar il-Greċja',
         'purposes' => [
             'Biex wieħed isir familjari ma’ kmandi u interfaċċja ġodda.',
             'Biex wieħed joħloq programmi sempliċi bi kmandi sempliċi ta’ kawża u effett.',
@@ -226,10 +231,10 @@ return [
         'purposes' => [
             'Biex toħloq soluzzjonijiet ta’ kkowdjar li jinkludu sekwenzi, avvenimenti, ħoloq u kondizzjonalitajiet',
             'Biex tqassam il-passi meħtieġa biex tissolva problema f’sekwenza preċiża ta’ struzzjonijiet',
-            'Biex tesplora kunċetti ta\’ kkowdjar',
+            'Biex tesplora kunċetti ta\’ kkowdjar'
         ],
         'description' =>
-            "Villaġġ huwa mhedded min-nar u jeħtieġek tikkowdja soluzzjoni! Iltaqa' ma' dak li se jgħinek fl-ikkowdjar, l-Aġent ta' Minecraft, imbagħad ipprogramma l-Aġent biex tinnaviga fil-foresta u tiġbor id-data . Din id-data se tgħin lill-Aġent ibassar fejn se jseħħu n-nirien . Imbagħad ikkodifika l-Aġent biex jgħin jipprevjeni t-tixrid tan-nar, isalva l-villaġġ, u jerġa’ jġib il-ħajja fil-foresta . Tgħallem l-elementi bażiċi tal-ikkowdjar u esplora eżempju tad-dinja reali tal-intelliġenza artifiċjali(IA) . ",
+            "Villaġġ huwa mhedded min-nar u jeħtieġek tikkowdja soluzzjoni! Iltaqa' ma' dak li se jgħinek fl-ikkowdjar, l-Aġent ta' Minecraft, imbagħad ipprogramma l-Aġent biex tinnaviga fil-foresta u tiġbor id-data. Din id-data se tgħin lill-Aġent ibassar fejn se jseħħu n-nirien. Imbagħad ikkodifika l-Aġent biex jgħin jipprevjeni t-tixrid tan-nar, isalva l-villaġġ, u jerġa’ jġib il-ħajja fil-foresta. Tgħallem l-elementi bażiċi tal-ikkowdjar u esplora eżempju tad-dinja reali tal-intelliġenza artifiċjali(IA). ",
         'instructions' => 'Niżżel il-pjan tal-lezzjoni hawnhekk',
         'materials' => [
             'Installa Minecraft: Edizzjoni tal-Edukazzjoni',
@@ -240,11 +245,11 @@ return [
     'create-a-dance' => [
         'title' => 'Oħloq żifna bl-Odi għall-Ikkowdjar!',
         'purposes' =>
-            'Biex wieħed jipprattika l-ikkowdjar b’mod divertenti u biex iħossu parti mill-komunità tal-Ġimgħa tal-UE tal-Ikkowdjar . ',
+            'Biex wieħed jipprattika l-ikkowdjar b’mod divertenti u biex iħossu parti mill-komunità tal-Ġimgħa tal-UE tal-Ikkowdjar. ',
         'description' => [
             'Oħloq żifna bl-Odi għall-Ikkowdjar!Uża t-',
             'tutorial tal-Festin taż-Żfin',
-            'biex tikkowdja żifna għall-Odi għall-Ikkowdjar . L-innu uffiċjali tal-Ġimgħa tal-UE tal-Ikkowdjar huwa elenkat bħala għażla fil-Festin taż-Żfin . '
+            'biex tikkowdja żifna għall-Odi għall-Ikkowdjar. L-innu uffiċjali tal-Ġimgħa tal-UE tal-Ikkowdjar huwa elenkat bħala għażla fil-Festin taż-Żfin. '
         ],
         'instructions' => [
             'L-istruzzjonijiet jidhru bħala vidjos',
@@ -253,24 +258,24 @@ return [
         ],
         'example' =>
             'Il-kreazzjonijiet tal-istudenti li ġew ippreżentati jistgħu jinstabu fil-paġna li ġejja',
-        'materials' => 'The Code . org tutorial'
+        'materials' => 'The Code. org tutorial'
     ],
     'create-a-simulation' => [
         'title' => 'Oħloq simulazzjoni!',
         'purposes' => [
-            "iex wieħed jitgħallem dwar is-simulazzjonijiet bl-introduzzjoni tal-varjabbli li ġejjin: il-ħolqien ta’ folla, rati ta’ rkupru, l-ilbies tal-maskri, u vaċċini.",
+            'iex wieħed jitgħallem dwar is-simulazzjonijiet bl-introduzzjoni tal-varjabbli li ġejjin: il-ħolqien ta’ folla, rati ta’ rkupru, l-ilbies tal-maskri, u vaċċini.',
             'Biex jiġi attivat għarfien minn qabel dwar it-tifqigħat tal-virus fid-dinja reali li se japplika għal xenarju fittizju.'
         ],
         'description' =>
-            'Ikteb kodiċi biex toħloq u tħaddem is-simulazzjoni tiegħek stess tat-tifqigħa tal-virus fil-Villaġġ Monster. Tgħallem ikkowdja u agħmel tbassir dwar x\'se jiġri lill-ġirien tal-Belt Monster . ',
+            'Ikteb kodiċi biex toħloq u tħaddem is-simulazzjoni tiegħek stess tat-tifqigħa tal-virus fil-Villaġġ Monster. Tgħallem ikkowdja u agħmel tbassir dwar x\'se jiġri lill-ġirien tal-Belt Monster. ',
         'instructions' => [
             'L-istruzzjonijiet jidhru bħala vidjos',
             'fit-tutorial',
             "u huma miktuba wkoll fuq in-naħa ta' fuq ta' kull livell"
         ],
         'example' =>
-            "Meta tkun lest, tista’ taqsam is-simulazzjoni tiegħek ma’ oħrajn . Aqsam il-messaġġ tiegħek dwar x'taħseb li nistgħu nagħmlu biex ngħinu lil oħrajn jibqgħu b’saħħithom meta virus jitfaċċa fil-belt.",
-        'materials' => 'The Code . org tutorial',
+            "Meta tkun lest, tista’ taqsam is-simulazzjoni tiegħek ma’ oħrajn. Aqsam il-messaġġ tiegħek dwar x'taħseb li nistgħu nagħmlu biex ngħinu lil oħrajn jibqgħu b’saħħithom meta virus jitfaċċa fil-belt.",
+        'materials' => 'The Code. org tutorial'
     ],
     'create-your-own-masterpiece' => [
         'title' => 'Oħloq il-kapolavur tiegħek stess!',
@@ -278,10 +283,15 @@ return [
         'purpose' =>
             'Biex jiġu introdotti kunċetti tax-xjenza tal-kompjuters b’mod viżwali u tiġi ispirata l-kreattività',
         'description' =>
-            "Oħloq il-kapolavur tiegħek stess b'artist!Uża blokok ta’ kodiċi biex l-artisti tiegħek joħolqu biċċa xogħol unika tal-arti . ",
-        'instructions' => "L-istruzzjonijiet huma elenkati fuq in-naħa ta' fuq ta’ kull livell",
-        'example' => "Eżempji ta' artisti jistgħu jinstabu fuq din il-paġna taħt t-tpinġija",
-        'materials' => ['L-ewwel livell tat-tutorial jista\' jinsab', 'HAWNHEKK']
+            "Oħloq il-kapolavur tiegħek stess b'artist!Uża blokok ta’ kodiċi biex l-artisti tiegħek joħolqu biċċa xogħol unika tal-arti. ",
+        'instructions' =>
+            "L-istruzzjonijiet huma elenkati fuq in-naħa ta' fuq ta’ kull livell",
+        'example' =>
+            "Eżempji ta' artisti jistgħu jinstabu fuq din il-paġna taħt t-tpinġija",
+        'materials' => [
+            'L-ewwel livell tat-tutorial jista\' jinsab',
+            'HAWNHEKK'
+        ]
     ],
     'cs-first-unplugged-activities' => [
         'title' => 'l-attivitajiet CS First Unplugged',
@@ -290,7 +300,7 @@ return [
             'Biex kulħadd jieħu pawża mill-iskrins tiegħu'
         ],
         'description' =>
-            'CS First Unplugged huwa sett ta\' attivitajiet li jintroduċi lill-istudenti għal kunċetti tas-CS mingħajr kompjuter . Aħna fassalna din il-lezzjoni biex nuru li x-Xjenza tal-Kompjuters tinvolvi ħafna aktar affarijiet minn sempliċement kodiċi . ',
+            'CS First Unplugged huwa sett ta\' attivitajiet li jintroduċi lill-istudenti għal kunċetti tas-CS mingħajr kompjuter. Aħna fassalna din il-lezzjoni biex nuru li x-Xjenza tal-Kompjuters tinvolvi ħafna aktar affarijiet minn sempliċement kodiċi. ',
         'instructions' => [
             'Se ssib il-ktejjeb għall-attivitajiet kollha bl-Ingliż fuq din',
             'il-link',
@@ -301,9 +311,9 @@ return [
         'materials' => [
             'Minbarra l-ktejjeb tal-attività, xi attivitajiet jeħtieġu jew inkella jibbenefikaw b’mod fakultattiv minn materjali addizzjonali.',
             'Oġġetti żgħar (bħal fażola mnixxfa) biex jintużaw fuq in-Network mappa tal-Viċinat.',
-            'Imqassijiet biex tinqata\' r-rota taċ-ċifra Ibgħat Messaġġ Sigriet . ',
-            'Kartun u kolla biex tiġi pprovduta ebusija addizzjonali għar-rota taċ-ċifra Ibgħat Messaġġ Sigriet . ',
-            'Pinn, toothpick, jew klipp tal-karti drittata biex tgħaqqad ir-rota taċ-ċifra Ibgħat Messaġġ Sigriet . '
+            'Imqassijiet biex tinqata\' r-rota taċ-ċifra Ibgħat Messaġġ Sigriet. ',
+            'Kartun u kolla biex tiġi pprovduta ebusija addizzjonali għar-rota taċ-ċifra Ibgħat Messaġġ Sigriet. ',
+            'Pinn, toothpick, jew klipp tal-karti drittata biex tgħaqqad ir-rota taċ-ċifra Ibgħat Messaġġ Sigriet. '
         ]
     ],
     'family-care' => [
@@ -316,12 +326,12 @@ return [
             'Biex il-problemi jintwerew bħala opportunitajiet u jiġu ġġenerati soluzzjonijiet kreattivi;',
             'Biex jintuża kodiċi biex is-soluzzjonijiet tiegħek jiġu implimentati b’mod innovattiv;',
             'Biex jitfasslu posters u jiġu ppreżentati s-soluzzjonijiet tiegħek lil oħrajn;',
-            'Biex tintuża l-midja soċjali biex jinħolqu impatti tal-proġetti tiegħek . '
+            'Biex tintuża l-midja soċjali biex jinħolqu impatti tal-proġetti tiegħek. '
         ],
         'description' => [
-            'X’jiġi f\'moħħok meta nitkellmu dwar id-dar? Dar sabiħa? Pranzu kbir imħejji mill-ġenituri? Spazju sigriet għalik innifsek? Dar akkoljenti ssaħħaħ ġisimna u l-ispirtu tagħna bħal stazzjon tal-gass. Fost il-konfużjoni tal-ħajja moderna, il-ġenituri dejjem ikunu impenjati bix-xogħol. Meta toħroġ ma\' sħabek, ma tistax tħalli l-qtates tiegħek warajk . Iżda kif se tieħu ħsieb il-kumpanija tiegħek meta ma tkunx preżenti ? It-tema tal-isfida hija',
+            'X’jiġi f\'moħħok meta nitkellmu dwar id-dar? Dar sabiħa? Pranzu kbir imħejji mill-ġenituri? Spazju sigriet għalik innifsek? Dar akkoljenti ssaħħaħ ġisimna u l-ispirtu tagħna bħal stazzjon tal-gass. Fost il-konfużjoni tal-ħajja moderna, il-ġenituri dejjem ikunu impenjati bix-xogħol. Meta toħroġ ma\' sħabek, ma tistax tħalli l-qtates tiegħek warajk. Iżda kif se tieħu ħsieb il-kumpanija tiegħek meta ma tkunx preżenti ? It-tema tal-isfida hija',
             'Kura tal-Familja',
-            'Abbażi ta’ din it-tema, l-istudenti huma mħeġġa jiżviluppaw idea biex jgħaddu l-imħabba u l-kura permezz tal-ikkowdjar u l-hardware . Hawnhekk hawn xi mistoqsijiet għalik biex taħseb dwarhom',
+            'Abbażi ta’ din it-tema, l-istudenti huma mħeġġa jiżviluppaw idea biex jgħaddu l-imħabba u l-kura permezz tal-ikkowdjar u l-hardware. Hawnhekk hawn xi mistoqsijiet għalik biex taħseb dwarhom',
             'Kemm hemm membri tal-familja jgħixu fid-dar tiegħek ? Min huma ? Iltqajt ma’ xi problemi meta kont qed toqgħod magħhom ? X’tipi ta’ kura jeħtieġu ? ',
             'Taf lil xi ħadd li ma għandux kura tal-familja aktar minn oħrajn fil-komunità tiegħek ? Kif tista’ tgħinhom ? '
         ],
@@ -345,7 +355,7 @@ return [
             'L-istudenti huma mħeġġa jlestu l-isfida fil-ġimgħa tal-Ikkowdjar u jesponuha fuq livell internazzjonali biex jikkomunikaw ma’ studenti oħra u jirbħu premjijiet.',
             'Għal aktar informazzjoni, jekk jogħġbok iċċekkja:',
             'jew ikkuntattjana fuq'
-        ],
+        ]
     ],
     'virtual-flower-field' => [
         'title' => 'Kabbar l-għalqa tal-fjuri virtwali tiegħek',
@@ -354,22 +364,22 @@ return [
         'duration' => '30-60 minuta',
         'purposes' => [
             'Biex wieħed isir jaf il-programmazzjoni bi proġett sempliċi iżda espressiv.',
-            'Biex wieħed jitgħallem li l-ikkowdjar jista\' jkun artistiku u jwassal għal riżultati sbieħ . ',
-            'Biex wieħed jagħmel il-ħarifa aktar ikkulurita bi fjuri kkuluriti u l-Ġimgħa tal-UE tal-Ikkowdjar . ',
-            'Biex tintwera d-diversità tal-fjuri fid-Dinja . ',
-            'Biex jingħata kontribut għall-Għanijiet ta’ Żvilupp Sostenibbli(SDGs), speċjalment l-SDG13-It-Tibdil fil-Klima billi jinħolqu avvenimenti ta’ kkowdjar li jtejbu l-edukazzjoni dwar it-tibdil fil-klima permezz tas-sensibilizzazzjoni dwar dan is-suġġett . '
+            'Biex wieħed jitgħallem li l-ikkowdjar jista\' jkun artistiku u jwassal għal riżultati sbieħ. ',
+            'Biex wieħed jagħmel il-ħarifa aktar ikkulurita bi fjuri kkuluriti u l-Ġimgħa tal-UE tal-Ikkowdjar. ',
+            'Biex tintwera d-diversità tal-fjuri fid-Dinja. ',
+            'Biex jingħata kontribut għall-Għanijiet ta’ Żvilupp Sostenibbli(SDGs), speċjalment l-SDG13-It-Tibdil fil-Klima billi jinħolqu avvenimenti ta’ kkowdjar li jtejbu l-edukazzjoni dwar it-tibdil fil-klima permezz tas-sensibilizzazzjoni dwar dan is-suġġett. '
         ],
         'description' =>
-            "Żviluppa programm fi Snap!li jkabbar għalqa ta' fjuri virtwali b'tipi differenti ta' fjuri u numri differenti ta' petali . ",
+            "Żviluppa programm fi Snap!li jkabbar għalqa ta' fjuri virtwali b'tipi differenti ta' fjuri u numri differenti ta' petali. ",
         'instructions' => [
             'Jekk teħtieġ ispirazzjoni dwar kif tibda l-isfida, iċċekkja',
             'dan il-vidjo',
             'jew uża',
             'dan id-dokument',
             'biex tkun tista\' tkompli',
-            'L-isfida tista’ titlesta billi tiġi pprogrammata għalqa ta\' fjuri virtwali fi Snap!(jew Scratch) u jiġi ppostjat ritratt tal-iskrin jew ritratt tar-riżultat online . ',
-            "L-għalqa tal-fjuri għandu jkun fiha tipi differenti ta' fjuri b'numri differenti ta' petali . Idealment, il-fjuri jiġu pprogrammati, li jfisser li jitfasslu bl-ittimbrar u t-tidwir(jew bit-tpinġija u t-tidwir) tal-petali b'mod ripetut . ",
-            'Ipposta immaġni tal-ġnien tal-fjuri virtwali tiegħek b'#MeetandCode.'
+            'L-isfida tista’ titlesta billi tiġi pprogrammata għalqa ta\' fjuri virtwali fi Snap!(jew Scratch) u jiġi ppostjat ritratt tal-iskrin jew ritratt tar-riżultat online. ',
+            "L-għalqa tal-fjuri għandu jkun fiha tipi differenti ta' fjuri b'numri differenti ta' petali. Idealment, il-fjuri jiġu pprogrammati, li jfisser li jitfasslu bl-ittimbrar u t-tidwir(jew bit-tpinġija u t-tidwir) tal-petali b'mod ripetut. ",
+            'Ipposta immaġni tal-ġnien tal-fjuri virtwali tiegħek b' #MeetandCode.'
         ],
         'materials' => [
             'Nirrakkomandaw l-użu ta\'',
@@ -383,32 +393,32 @@ return [
         'audience' => 'Għalliema u edukaturi',
         'duration' => 'Siegħa jew sagħtejn skont l-għarfien minn qabel',
         'purposes' => [
-            'Biex wieħed jagħmel storja interattiva ta\' Dar li fiha jidher il-Ħares . ',
-            'Biex wieħed jitgħallem jipprogramma b\'Hedy . '
+            'Biex wieħed jagħmel storja interattiva ta\' Dar li fiha jidher il-Ħares. ',
+            'Biex wieħed jitgħallem jipprogramma b\'Hedy. '
         ],
         'description' =>
-            'B’Hedy, inti se toħloq storja ta’ dar li fiha jidher il-Ħares b’elementi interattivi . Kull darba li jkun qed jitħaddem il-kodiċi, tinħoloq storja ġdida . L-istorja tista’ tinqara wkoll mill-kompjuter tiegħek u tiġi maqsuma mal-oħrajn online . ',
+            'B’Hedy, inti se toħloq storja ta’ dar li fiha jidher il-Ħares b’elementi interattivi. Kull darba li jkun qed jitħaddem il-kodiċi, tinħoloq storja ġdida. L-istorja tista’ tinqara wkoll mill-kompjuter tiegħek u tiġi maqsuma mal-oħrajn online. ',
         'instructions' => [
-            'Ibda billi tiftaħ brawżer u mur fuq hedycode . com . ',
+            'Ibda billi tiftaħ brawżer u mur fuq hedycode. com. ',
             'Segwi l-istruzzjonijiet għal-livelli 1-4. Uża t-tabs \'Livell\' u \'Dar li fiha jidher il-Ħares',
-            'Bl-għajnuna ta’ dawn il-livelli, aħna se niktbu storja interattiva ta’ dar li fiha jidher il-ħares . ',
+            'Bl-għajnuna ta’ dawn il-livelli, aħna se niktbu storja interattiva ta’ dar li fiha jidher il-ħares. ',
             'Għalliema, pjan tal-lezzjoni Hedy tista\' tinstab',
             'hawnhekk',
             'Tista’ ssib rekording ta’ Felienne Hermans li tippreżenta Hedy fuq',
             'din il-link'
         ],
         'example' => 'Eżempju ta’ dar li fiha jidher il-ħares fil-livell',
-        'materials' => ['Hedy fuq', 'livell 1 sa 4'],
+        'materials' => ['Hedy fuq', 'livell 1 sa 4']
     ],
     'inclusive-app-design' => [
         'title' => 'Disinn tal-Applikazzjoni Inklużiv(Inclusive App Design)',
         'author' => 'Edukazzjoni ta\' Apple',
         'duration' => '60 minuta + attivitajiet ta’ estensjoni fakultattivi',
         'purposes' => [
-            'Biex wieħed jaqsam l-ideat, jippjana, iwettaq prototipi, u jaqsam idea ta\' applikazzjoni mal-oħrajn li kulħadd jista\' jaċċessa u jifhem . '
+            'Biex wieħed jaqsam l-ideat, jippjana, iwettaq prototipi, u jaqsam idea ta\' applikazzjoni mal-oħrajn li kulħadd jista\' jaċċessa u jifhem. '
         ],
         'description' =>
-            'Applikazzjonijiet kbar jibdew b\'ideat kbar . F’din l-attività, l-istudenti se joħorġu b’idea ta\' applikazzjoni dwar suġġett li jinteressahom, u mbagħad jiskopru kif għandhom ifasslu l-applikazzjonijiet billi jqisu l-inklużjoni u l-aċċessibbiltà . ',
+            'Applikazzjonijiet kbar jibdew b\'ideat kbar. F’din l-attività, l-istudenti se joħorġu b’idea ta\' applikazzjoni dwar suġġett li jinteressahom, u mbagħad jiskopru kif għandhom ifasslu l-applikazzjonijiet billi jqisu l-inklużjoni u l-aċċessibbiltà. ',
         'instructions' => [
             'Se ssib l-istruzzjonijiet kollha fuq din il-link',
             'B’dan il-pjan ta’ lezzjoni ta’ siegħa, l-edukaturi jistgħu jiggwidaw lill-istudenti biex',
@@ -420,7 +430,7 @@ return [
         ],
         'materials' => [
             'Esplora l-Attività ta\' Disinn ta\' Applikazzjoni Inklużiv(Inclusive App Design) fiċ-Ċentru tat-Tagħlim tal-Għalliema ta\' Apple(Apple Teacher Learning Center)',
-            'Note ewlenija fuq iPAd jew Mac hija rrakkomandata, iżda mhux meħtieġa . '
+            'Note ewlenija fuq iPAd jew Mac hija rrakkomandata, iżda mhux meħtieġa. '
         ]
     ],
     'silly-eyes' => [
@@ -428,19 +438,20 @@ return [
         'author' => 'Fondazzjoni Raspberry Pi',
         'duration' => '25 minuta',
         'purposes' => [
-            'Biex isir proġett b’interazzjoni mal-utenti . ',
-            'Biex proġett jiġi personalizzat b’effetti tal-kulur u grafiċi . ',
-            'Biex wieħed jitgħallem dwar id-disinn fil-produzzjoni diġitali . '
+            'Biex isir proġett b’interazzjoni mal-utenti. ',
+            'Biex proġett jiġi personalizzat b’effetti tal-kulur u grafiċi. ',
+            'Biex wieħed jitgħallem dwar id-disinn fil-produzzjoni diġitali. '
         ],
         'description' =>
-            'F\'dan il-proġett, inti se tfassal u toħloq karattru b\'għajn mhux tas-soltu . L-għajnejn il-kbar u mhux tas-soltu tal-karattru se jsegwu l-indikatur tal-maws biex jagħtu ħajja lill-karattru tiegħek',
-        'instructions' => 'Jekk jogħġbok aċċessa d-deskrizzjoni sħiħa tal-proġett hawnhekk',
+            'F\'dan il-proġett, inti se tfassal u toħloq karattru b\'għajn mhux tas-soltu. L-għajnejn il-kbar u mhux tas-soltu tal-karattru se jsegwu l-indikatur tal-maws biex jagħtu ħajja lill-karattru tiegħek',
+        'instructions' =>
+            'Jekk jogħġbok aċċessa d-deskrizzjoni sħiħa tal-proġett hawnhekk',
         'example' => 'Iċċekkja Gobo, Under the sea u Don\'t eat donut'
     ],
     'train-ai-bot' => [
         'title' => 'Ħarreġ bot tal-IA!',
         'purposes' =>
-            'Biex wieħed jitgħallem dwar l-intelliġenza artifiċjali (IA), it-tagħlim awtomatiku, id-data dwar it-taħriġ, u l-preġudizzju, filwaqt li jiġu esplorati kwistjonijiet etiċi u kif l-IA tista\' tintuża biex jiġu indirizzati l-problemi dinjija . ',
+            'Biex wieħed jitgħallem dwar l-intelliġenza artifiċjali (IA), it-tagħlim awtomatiku, id-data dwar it-taħriġ, u l-preġudizzju, filwaqt li jiġu esplorati kwistjonijiet etiċi u kif l-IA tista\' tintuża biex jiġu indirizzati l-problemi dinjija. ',
         'description' =>
             'Ħarreġ bot tal-IA b\'IA għall-Oċeani. F’din l-attività, inti se tipprogramma jew tħarreġ l-IA (intelliġenza artifiċjali) biex tidentifika l-ħut jew l-iskart. Ejja nnaddfu l-oċean!',
         'instructions' => [
@@ -450,7 +461,6 @@ return [
         'materials' => [
             'It-tutorial jista’ jinstab hawnhekk',
             'Dan it-tutorial huwa disponibbli b’aktar minn 25 lingwa'
-        ],
+        ]
     ]
 ];
-
