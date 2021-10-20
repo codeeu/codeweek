@@ -30,7 +30,10 @@ return [
     'paper-circuit' => [
         'title' => 'Dra ur sladden och koda: skapa en papperskrets',
         'author' => 'EU Code Week Team',
-        'purposes' => ['Att öka kreativiteten', 'Att utveckla problemlösningsförmågan'],
+        'purposes' => [
+            'Att öka kreativiteten',
+            'Att utveckla problemlösningsförmågan'
+        ],
         'description' => [
             'Rita något motiv som du väljer själv. Det kan vara en natthimmel, en nyckelpiga, en robot, en julgran eller vad som helst som du kan komma på. Du får gärna göra ditt projekt mer personligt med bilderna från EU Code Week: du kan utforska',
             'EU Code Weeks verktygslåda för lärare',
@@ -67,22 +70,22 @@ return [
             'I den här utmaningen ska du skapa en uppsättning karaktärer som ska dansa tillsammans. Du kommer att använda ett inbyggt mediebibliotek (Media Library) för att välja ut karaktärer och musikklipp, eller så kan du skapa dina egna. Du kommer att animera karaktärerna så att de dansar och pratar med varandra',
         'instructions' => [
             'Logga in på',
-            'som lärare . Skapa elevkonton och dela dem med dina elever . Eller så delar du en klasskod och låter eleverna registrera sig med sin skolmejladress . Om du är elev så kan du registrera dig som elev, men du blir ombedd att ange din förälders e-postadress så att de kan godkänna ditt konto . ',
+            'som lärare. Skapa elevkonton och dela dem med dina elever. Eller så delar du en klasskod och låter eleverna registrera sig med sin skolmejladress. Om du är elev så kan du registrera dig som elev, men du blir ombedd att ange din förälders e-postadress så att de kan godkänna ditt konto. ',
             'Klicka på',
             'och ge det en rubrik',
             'Gå till',
-            'för att lägga till en bakgrund genom att klicka på utrustningsikonen . Välj en bakgrund från mediebiblioteket, ladda upp din egen bild eller du kan till och med ta en bild och ladda upp den . Välj ett ljudklipp och lägg till det till scenen(stage):',
+            'för att lägga till en bakgrund genom att klicka på utrustningsikonen. Välj en bakgrund från mediebiblioteket, ladda upp din egen bild eller du kan till och med ta en bild och ladda upp den. Välj ett ljudklipp och lägg till det till scenen(stage):',
             'Klicka på',
-            'för att lägga till karaktärer eller föremål som du kommer att animera så att de kan röra sig, prata och interagera med varandra . Lägg till två eller tre karaktärer som du väljer själv . Du kan rita dina egna karaktärer eller modifiera de befintliga . Lägg till andra kläder till din karaktär genom att klicka på pennikonen . ',
+            'för att lägga till karaktärer eller föremål som du kommer att animera så att de kan röra sig, prata och interagera med varandra. Lägg till två eller tre karaktärer som du väljer själv. Du kan rita dina egna karaktärer eller modifiera de befintliga. Lägg till andra kläder till din karaktär genom att klicka på pennikonen. ',
             'Klicka på var och en av karaktärerna och animera dem genom att lägga till följande block',
             'Lägg till ett',
             'say-block',
-            'och få dina skådespelare att prata med varandra . Ändra formen på pratbubblorna och typsnittet och storleken på din text'
+            'och få dina skådespelare att prata med varandra. Ändra formen på pratbubblorna och typsnittet och storleken på din text'
         ],
         'example' => [
             'Titta på',
             'det här exemplet',
-            'på dansade robotar . Du får gärna använda dem och göra en remix . '
+            'på dansade robotar. Du får gärna använda dem och göra en remix. '
         ]
     ],
 
@@ -95,7 +98,7 @@ return [
             'Att komponera en låt genom att mixa ljudklipp'
         ],
         'description' =>
-            'I den här utmaningen ska du skapa en musikkomposition med hjälp av programmeringsspråk . Du kan använda inbyggda ljudklipp eller spela in dina egna och mixa dem för att skapa en musikkomposition . Kör din kod i Digital Audio Workstation och lyssna på den musik du har kodat . Lek med olika ljud och effekter för att göra ändringar i ditt musikstycke . ',
+            'I den här utmaningen ska du skapa en musikkomposition med hjälp av programmeringsspråk. Du kan använda inbyggda ljudklipp eller spela in dina egna och mixa dem för att skapa en musikkomposition. Kör din kod i Digital Audio Workstation och lyssna på den musik du har kodat. Lek med olika ljud och effekter för att göra ändringar i ditt musikstycke. ',
         'instructions' => [
             'Logga in på',
             'Klicka här för att göra ett skript',
@@ -112,13 +115,13 @@ return [
             'Ljudklipp',
             'Placera markören mellan parentestecknen, gå till Sound Library, välj ett klipp och klistra in det genom att klicka på den blå klistra-in-ikonen',
             'Spårnummer',
-            'med hjälp av spår kan du organisera dina ljud utifrån instrumenttyp(sång, bas, trummor, keyboard, osv .) . Lägg till så många spår(instrument) som du vill . Spåren visas som rader som går tvärs över din Digital Audio Workstation',
+            'med hjälp av spår kan du organisera dina ljud utifrån instrumenttyp(sång, bas, trummor, keyboard, osv.). Lägg till så många spår(instrument) som du vill. Spåren visas som rader som går tvärs över din Digital Audio Workstation',
             'Start measure [starta takt]',
-            'visar när ditt ljud kommer att börja spela . Takter är musikaliska tidsenheter . En takt är fyra slag',
+            'visar när ditt ljud kommer att börja spela. Takter är musikaliska tidsenheter. En takt är fyra slag',
             'End measure [Slut på takt]',
             'visar när ditt ljud kommer att sluta spela',
             'En sådan kodrad kommer se ut så här',
-            'Du kan lägga till olika effekter, t . ex . volym för att höja ljudet på din komposition . Volymen går från-60,0 decibel till 12,0 decibel där 0,0 är grundvolymen . ',
+            'Du kan lägga till olika effekter, t. ex. volym för att höja ljudet på din komposition. Volymen går från-60,0 decibel till 12,0 decibel där 0,0 är grundvolymen. ',
             'Skriv',
             'I parentesen skriver du spårnumret, VOLUME, GAIN, volymnivån, takten när den startar, nivån och takten när den slutar',
             'Det här är ett exempel på en intoningseffekt',
@@ -128,7 +131,7 @@ return [
             'Lyssna på',
             'ett exempel på en låt kodad med Earsketch',
             'Du kan importera koden och redigera den'
-        ],
+        ]
     ],
     'sensing-game' => [
         'title' => 'Skapa ett videosensorspel',
@@ -139,29 +142,29 @@ return [
             'Att komponera en låt genom att mixa musikklipp'
         ],
         'description' =>
-            'I den här utmaningen kommer du att skapa ett enkelt spel där en videokamera används som en sensor för att upptäcka rörelse, vilket betyder att du kommer att kunna kontrollera dina animation med fysiska rörelser . I det här spelet är uppgiften att samla så många EU Code Week-bubblor som möjligt på 30 sekunder . Istället för att samla bubblor kan du skapa ett spel där du jagar en karaktär eller smäller ballonger med händerna . ',
+            'I den här utmaningen kommer du att skapa ett enkelt spel där en videokamera används som en sensor för att upptäcka rörelse, vilket betyder att du kommer att kunna kontrollera dina animation med fysiska rörelser. I det här spelet är uppgiften att samla så många EU Code Week-bubblor som möjligt på 30 sekunder. Istället för att samla bubblor kan du skapa ett spel där du jagar en karaktär eller smäller ballonger med händerna. ',
         'instructions' => [
             'Logga in på',
             'Klicka på',
             'Lägg till ett tillägg',
             'och välj',
             'Video – Känna av',
-            'Den kommer att registrera hur fort ett föremål rör sig . Om siffran är lägre, kommer den att vara känsligare för rörelse .',
-            'Lägg till en sprajt . Välj ett sound [ljud] och lägg till det till din sprajt . Om du vill kan du lägga till',
+            'Den kommer att registrera hur fort ett föremål rör sig. Om siffran är lägre, kommer den att vara känsligare för rörelse.',
+            'Lägg till en sprajt. Välj ett sound [ljud] och lägg till det till din sprajt. Om du vill kan du lägga till',
             'Skapa klon av',
-            'för att dubblera din sprite . ',
+            'för att dubblera din sprite. ',
             'Skapa två variabler: en för',
             'Poäng',
             'och den andra för',
             'Timer',
-            'och lägg till dem till din sprite . Ställ in timern på 30 och lägg till',
+            'och lägg till dem till din sprite. Ställ in timern på 30 och lägg till',
             'Ändra Timer med-1',
             'Skapa en ny sprajt',
             'Spelet slut',
-            'för att avsluta spelet . Du kan också skapa en sprite med titeln på ditt spel, t . ex . Samla in alla EU Code Week-bubblor . '
+            'för att avsluta spelet. Du kan också skapa en sprite med titeln på ditt spel, t. ex. Samla in alla EU Code Week-bubblor. '
         ],
         'example' => [
-            'Spela ett videosensorspel Samla in alla EU Code Week-bubblor . Gör gärna en remix av',
+            'Spela ett videosensorspel Samla in alla EU Code Week-bubblor. Gör gärna en remix av',
             'det här projektet'
         ]
     ],
@@ -173,13 +176,13 @@ return [
         'materials' => [
             'en micro:bit-enhet och ett batteripaket(om det finns tillgängligt)',
             'en laptop eller surfplatta där du kan besöka Microsoft MakeCode och Youtube',
-            'microbit . org för aktivitetsresurserna'
+            'microbit. org för aktivitetsresurserna'
         ],
         'description' =>
-            'Eleverna skapar en digital enhet med hjälp av LED-ljus som kan hjälpa dem att styra sin andning och känna sig lugnare . De blir ombedda att skriva lite enkel kod, utforska animeringar och sekvenser . ',
+            'Eleverna skapar en digital enhet med hjälp av LED-ljus som kan hjälpa dem att styra sin andning och känna sig lugnare. De blir ombedda att skriva lite enkel kod, utforska animeringar och sekvenser. ',
         'instructions' => [
-            'Målet är att skapa en fungerande LED-enhet som man kan använda för att styra sin andning . Enheten kan skapas på en fysisk micro:bit-bräda eller i simulatorn i MakeCode-redigeraren . ',
-            'Utmaningen kan genomföras med hjälp av MakeCode-redigeraren och genom att man skriver en enkel kodsekvens så som visas i videon / skärmdumpen . ',
+            'Målet är att skapa en fungerande LED-enhet som man kan använda för att styra sin andning. Enheten kan skapas på en fysisk micro:bit-bräda eller i simulatorn i MakeCode-redigeraren. ',
+            'Utmaningen kan genomföras med hjälp av MakeCode-redigeraren och genom att man skriver en enkel kodsekvens så som visas i videon / skärmdumpen. ',
             'För att utveckla utmaningen kan eleverna utforska olika animationer och vara kreativa med vilken animation de skulle vilja se för att kunna känna sig lugna eller glada',
             'Mer information och videoinstruktioner via',
             'den här länken'
@@ -194,23 +197,22 @@ return [
         ]
     ],
     'computational-thinking -and-computational-fluency' => [
-        'title' =>
-            'Datalogiskt tänkande och datalogiskt flyt med ScratchJr',
+        'title' => 'Datalogiskt tänkande och datalogiskt flyt med ScratchJr',
         'author' => 'Stamatis Papadakis – Ambassadör för EU Code Week Grekland',
         'purposes' => [
-            'Att bekanta sig med nya kommandon och gränssnitt . ',
-            'Att skapa enkla program med enkla orsak-verkan-kommandon . ',
-            'Att utföra enkel felsökning genom att testa sig fram . '
+            'Att bekanta sig med nya kommandon och gränssnitt. ',
+            'Att skapa enkla program med enkla orsak-verkan-kommandon. ',
+            'Att utföra enkel felsökning genom att testa sig fram. '
         ],
         'description' =>
-            'I den här utmaningen kommer barn att införliva koncept från datalogiskt tänkande i sina projekt genom att använda appen ScratchJr för att göra sina berättelser mer engagerande, spännande och känslosamma . ',
+            'I den här utmaningen kommer barn att införliva koncept från datalogiskt tänkande i sina projekt genom att använda appen ScratchJr för att göra sina berättelser mer engagerande, spännande och känslosamma. ',
         'instructions' => [
-            'ScratchJr kräver inte att barnen kan läsa och skriva . Alla instruktioner och menyval kan identifieras med hjälp av symboler och färger . Utmaningen kan genomföras i klassrummet, i labbet eller till och med utomhus eftersom den inte kräver internet . ',
-            'Barnen använder staden som bakgrund och kodningsblock för att få en bil att köra genom staden . '
+            'ScratchJr kräver inte att barnen kan läsa och skriva. Alla instruktioner och menyval kan identifieras med hjälp av symboler och färger. Utmaningen kan genomföras i klassrummet, i labbet eller till och med utomhus eftersom den inte kräver internet. ',
+            'Barnen använder staden som bakgrund och kodningsblock för att få en bil att köra genom staden. '
         ],
         'example' => [
-            'Barnen kan använda ljud-och rörelseblock och starta om-block för att få karaktärerna att dansa . ',
-            'Barnen väljer en bakgrund och en karaktär och använder rörelseblock för att få bilen att köra genom staden Barnen kan använda hastighetsblocket för att få karaktären att röra sig snabbare eller långsammare . '
+            'Barnen kan använda ljud-och rörelseblock och starta om-block för att få karaktärerna att dansa. ',
+            'Barnen väljer en bakgrund och en karaktär och använder rörelseblock för att få bilen att köra genom staden Barnen kan använda hastighetsblocket för att få karaktären att röra sig snabbare eller långsammare. '
         ],
         'materials' => [
             'Gratisappen',
@@ -229,7 +231,7 @@ return [
             'Att utforska kodningskoncept'
         ],
         'description' =>
-            'En by hotas av en brand och behöver din hjälp med att koda en lösning!Möt din kodningsassistent, Minecraft-agenten, och programmera sedan agenten till att ta sig runt i skogen och samla in data . Dessa data kommer att hjälpa agenten att förutsäga var det kommer att uppstå bränder . Koda sedan agenten till att hjälpa till att förhindra att branden sprider sig, rädda byn och få livet att återvända till skogen . Lär dig grunderna i kodning och utforska ett exempel på artificiell intelligens från verkligheten . ',
+            'En by hotas av en brand och behöver din hjälp med att koda en lösning!Möt din kodningsassistent, Minecraft-agenten, och programmera sedan agenten till att ta sig runt i skogen och samla in data. Dessa data kommer att hjälpa agenten att förutsäga var det kommer att uppstå bränder. Koda sedan agenten till att hjälpa till att förhindra att branden sprider sig, rädda byn och få livet att återvända till skogen. Lär dig grunderna i kodning och utforska ett exempel på artificiell intelligens från verkligheten. ',
         'instructions' => 'Ladda ner lektionsplaneringen här',
         'materials' => [
             'Installera Minecraft: Education Edition',
@@ -240,11 +242,11 @@ return [
     'create-a-dance' => [
         'title' => 'Skapa en dans med Ode to Code!',
         'purposes' =>
-            'Att öva på kodning på ett kul sätt och känna gemenskap med dem som deltar i EU Code Week . ',
+            'Att öva på kodning på ett kul sätt och känna gemenskap med dem som deltar i EU Code Week. ',
         'description' => [
             'Skapa en dans med Ode to Code!Använd',
             'Handledningen för Dansparty',
-            'för att koda en dans till Ode to Code . EU Code Weeks officiella låt finns med bland de låtar man kan välja i Dansparty . '
+            'för att koda en dans till Ode to Code. EU Code Weeks officiella låt finns med bland de låtar man kan välja i Dansparty. '
         ],
         'instructions' => [
             'Instruktionerna visas som videor i',
@@ -253,24 +255,24 @@ return [
         ],
         'example' =>
             'Särskilt uppmärksammade verk av elever finns också på följande sida',
-        'materials' => 'Handledningen för The Code . org'
+        'materials' => 'Handledningen för The Code. org'
     ],
     'create-a-simulation' => [
         'title' => 'Skapa en simulering!',
         'purposes' => [
-            'Att lära sig om simuleringar och samtidigt introducera följande variabler: skapa en folksamling, återhämtningsnivåer, bära munskydd och vacciner . ',
-            'Att aktivera förkunskap om virusutbrott i verkliga världen som kan tillämpas på ett fiktivt scenario . '
+            'Att lära sig om simuleringar och samtidigt introducera följande variabler: skapa en folksamling, återhämtningsnivåer, bära munskydd och vacciner. ',
+            'Att aktivera förkunskap om virusutbrott i verkliga världen som kan tillämpas på ett fiktivt scenario. '
         ],
         'description' =>
-            'Skriv kod för att skapa och köra dina egna simuleringar av virusutbrottet i Monster Town . Lär dig att koda och skapa prognoser för vad som kommer att hända med invånarna i Monster Town . ',
+            'Skriv kod för att skapa och köra dina egna simuleringar av virusutbrottet i Monster Town. Lär dig att koda och skapa prognoser för vad som kommer att hända med invånarna i Monster Town. ',
         'instructions' => [
             'Instruktionerna visas som videor i',
             'handledningen',
             'och de står också högst upp på varje nivå'
         ],
         'example' =>
-            'När du är färdig kan du dela din simulering med andra . Dela ditt budskap om vad du tror vi kan göra för att hjälpa andra att hålla sig friska när ett virus kommer till stan . ',
-        'materials' => 'Handledningen för The Code . org',
+            'När du är färdig kan du dela din simulering med andra. Dela ditt budskap om vad du tror vi kan göra för att hjälpa andra att hålla sig friska när ett virus kommer till stan. ',
+        'materials' => 'Handledningen för The Code. org'
     ],
     'create-your-own-masterpiece' => [
         'title' => 'Skapa ditt eget mästerverk!',
@@ -278,9 +280,10 @@ return [
         'purpose' =>
             'Att introducera datavetenskapliga koncept på ett visuellt sätt och inspirera till kreativitet',
         'description' =>
-            'Skapa ditt eget mästerverk med konstnären!Använd kodblock för att få din konstnär att skapa ett unikt konstverk . ',
+            'Skapa ditt eget mästerverk med konstnären!Använd kodblock för att få din konstnär att skapa ett unikt konstverk. ',
         'instructions' => 'Instruktionerna står högst upp på varje nivå',
-        'example' => 'Exempel på konstnärer finns på den här sidan under Drawing [rita]',
+        'example' =>
+            'Exempel på konstnärer finns på den här sidan under Drawing [rita]',
         'materials' => ['Den första nivån av handledningen finns', 'HÄR']
     ],
     'cs-first-unplugged-activities' => [
@@ -290,7 +293,7 @@ return [
             'Att ge alla en paus från skärmarna'
         ],
         'description' =>
-            'CS First Unplugged är en serie aktiviteter som introducerar datavetenskapliga koncept för eleverna utan att man använder en dator . Vi har utformat den här lektionen för att visa att datavetenskap är mycket mer än bara kod . ',
+            'CS First Unplugged är en serie aktiviteter som introducerar datavetenskapliga koncept för eleverna utan att man använder en dator. Vi har utformat den här lektionen för att visa att datavetenskap är mycket mer än bara kod. ',
         'instructions' => [
             'Du kan hitta en broschyr om alla aktiviteterna på engelska via den här',
             'länken',
@@ -345,7 +348,7 @@ return [
             'Eleverna uppmanas att genomföra utmaningen under Code Week och ta den vidare till internationell nivå för att kommunicera med andra elever och vinna priser.',
             'Mer information finns här:',
             'eller kontakta oss på'
-        ],
+        ]
     ],
     'virtual-flower-field' => [
         'title' => 'Odla din virtuella blomsteräng',
@@ -353,22 +356,22 @@ return [
             'Jadga Huegle-Meet and Code-coach och en del av SAP Snap!-teamet',
         'duration' => '30–60 minuter',
         'purposes' => [
-            'Att bekanta sig med programmering med hjälp av ett enkelt men ändå uttrycksfullt projekt . ',
-            'Att lära sig att kodning kan vara konstnärligt och leda till vackra resultat . ',
-            'Att lysa upp hösten med färgglada blommor och EU Code Week . ',
-            'Att visa upp mångfalden av blommor på jorden . ',
-            'Att bidra till de globala målen för hållbar utveckling, särskilt nummer 13 – bekämpa klimatförändringarna, genom att skapa kodningsevent som förbättrar utbildningen om klimatförändringarna genom att öka medvetenheten om ämnet . '
+            'Att bekanta sig med programmering med hjälp av ett enkelt men ändå uttrycksfullt projekt. ',
+            'Att lära sig att kodning kan vara konstnärligt och leda till vackra resultat. ',
+            'Att lysa upp hösten med färgglada blommor och EU Code Week. ',
+            'Att visa upp mångfalden av blommor på jorden. ',
+            'Att bidra till de globala målen för hållbar utveckling, särskilt nummer 13 – bekämpa klimatförändringarna, genom att skapa kodningsevent som förbättrar utbildningen om klimatförändringarna genom att öka medvetenheten om ämnet. '
         ],
         'description' =>
-            'Utveckla ett program i Snap!där du odlar en virtuell blomsteräng med olika typer av blommor och olika antal blomblad . ',
+            'Utveckla ett program i Snap!där du odlar en virtuell blomsteräng med olika typer av blommor och olika antal blomblad. ',
         'instructions' => [
             'Om du behöver inspiration för hur du ska komma igång med den här utmaningen, kan du titta på',
             'den här videon',
             'eller använda',
             'det här dokumentet',
             'för att följa med',
-            'Den här utmaningen kan genomföras genom att man programmerar en virtuell blomsteräng i Snap!(eller Scratch) och lägger upp en skärmdump eller ett foto av resultatet på nätet . ',
-            'Blomsterängen ska innehålla olika typer av blommor med olika antal blomblad . Helst ska blommorna vara programmerade, vilket betyder att de skapas genom att man stämplar och vänder(eller ritar och vänder) blombladen om och om igen . ',
+            'Den här utmaningen kan genomföras genom att man programmerar en virtuell blomsteräng i Snap!(eller Scratch) och lägger upp en skärmdump eller ett foto av resultatet på nätet. ',
+            'Blomsterängen ska innehålla olika typer av blommor med olika antal blomblad. Helst ska blommorna vara programmerade, vilket betyder att de skapas genom att man stämplar och vänder(eller ritar och vänder) blombladen om och om igen. ',
             'Lägg upp en bild på din virtuella blomsterträdgård med hashtaggen #MeetandCode.'
         ],
         'materials' => [
@@ -398,17 +401,17 @@ return [
             'den här länken'
         ],
         'example' => 'Exempel på hemsökt hus på nivå',
-        'materials' => ['Hedy på', 'nivå 1 till 4'],
+        'materials' => ['Hedy på', 'nivå 1 till 4']
     ],
     'inclusive-app-design' => [
         'title' => 'Inkluderande App-design',
         'author' => 'Apple Education',
         'duration' => '60 minuter + frivilliga extraaktiviteter',
         'purposes' => [
-            'Att bolla idéer, planera, skapa en prototyp, och dela en appidé som alla kan få tillgång till och förstå . '
+            'Att bolla idéer, planera, skapa en prototyp, och dela en appidé som alla kan få tillgång till och förstå. '
         ],
         'description' =>
-            'Fantastiska appar startar med fantastiska idéer . I den här aktiviteten ska eleverna komma på en appidé för en fråga som de tycker är viktig och sedan utforska hur man utformar appar med inkludering och tillgänglighet i åtanke . ',
+            'Fantastiska appar startar med fantastiska idéer. I den här aktiviteten ska eleverna komma på en appidé för en fråga som de tycker är viktig och sedan utforska hur man utformar appar med inkludering och tillgänglighet i åtanke. ',
         'instructions' => [
             'Du hittar alla instruktioner via den här länken',
             'Med den här en timme långa lektionsplanen kan lärare vägleda eleverna i att',
@@ -420,7 +423,7 @@ return [
         ],
         'materials' => [
             'Utforska aktiviteten om inkluderande App-design(Inclusive App Design Activity) i Apple Teacher Learning Center',
-            'Keynote på iPad eller Mac rekommenderas men krävs inte . '
+            'Keynote på iPad eller Mac rekommenderas men krävs inte. '
         ]
     ],
     'silly-eyes' => [
@@ -428,12 +431,12 @@ return [
         'author' => 'Raspberry Pi Foundation',
         'duration' => '25 minuter',
         'purposes' => [
-            'Att skapa en projekt med användardeltagande . ',
-            'Att göra ett projekt personligt med färg och grafiska effekter . ',
-            'Att lära sig om design inom digitalt skapande . '
+            'Att skapa en projekt med användardeltagande. ',
+            'Att göra ett projekt personligt med färg och grafiska effekter. ',
+            'Att lära sig om design inom digitalt skapande. '
         ],
         'description' =>
-            'I det här projektet kommer du att skapa en karaktär med tokiga ögon . Karaktärens stora tokiga ögon kommer att följa muspekaren så att din karaktär får liv . ',
+            'I det här projektet kommer du att skapa en karaktär med tokiga ögon. Karaktärens stora tokiga ögon kommer att följa muspekaren så att din karaktär får liv. ',
         'instructions' => 'Läs den fullständiga projektbeskrivningen här',
         'example' => 'Titta på Gobo, Under the sea och Don\'t eat donut'
     ],
@@ -450,7 +453,6 @@ return [
         'materials' => [
             'Handledningen finns här',
             'Handledningen finns tillgänglig på över 25 språk'
-        ],
+        ]
     ]
 ];
-

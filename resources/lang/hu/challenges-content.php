@@ -30,7 +30,10 @@ return [
     'paper-circuit' => [
         'title' => 'Programozz offline: Hozz létre egy papíráramkört',
         'author' => 'Az európai programozási hét csapata',
-        'purposes' => ['Kreativitás ösztönzése', 'Problémamegoldó készségek fejlesztése'],
+        'purposes' => [
+            'Kreativitás ösztönzése',
+            'Problémamegoldó készségek fejlesztése'
+        ],
         'description' => [
             'Rajzolj le egy általad választott bármilyen tárgyat. Ez lehet a csillagos ég, egy katicabogár, egy robot, egy karácsonyfa vagy bármi, ami eszedbe jut. Bátran szabd testre projekted az európai programozási hét vizuális elemeivel: fedezd fel az',
             'európai programozási hét tanári eszköztárát',
@@ -128,7 +131,7 @@ return [
             'Hallgasd meg',
             'az Earsketch segítségével készült következő számot.',
             'A kódot importálhatod és szerkesztheted'
-        ],
+        ]
     ],
     'sensing-game' => [
         'title' => 'Készíts videoszenzoros játékot',
@@ -167,7 +170,8 @@ return [
     ],
 
     'calming-leds' => [
-        'title' => 'Megnyugtató LED-ek: hozz létre egy egyszerű eszközt a micro:bittel',
+        'title' =>
+            'Megnyugtató LED-ek: hozz létre egy egyszerű eszközt a micro:bittel',
         'author' => 'Micro:bit Educational Foundation',
         'duration' => '20 perc',
         'materials' => [
@@ -196,7 +200,8 @@ return [
     'computational-thinking-and-computational-fluency' => [
         'title' =>
             'Számítógépes gondolkodás és számítógépes folyékonyság a ScratchJr-ral',
-        'author' => 'Stamatis Papadakis – az európai programozási hét nagykövete, Görögország',
+        'author' =>
+            'Stamatis Papadakis – az európai programozási hét nagykövete, Görögország',
         'purposes' => [
             'Ismerkedés új parancsokkal és az interfésszel.',
             'Egyszerű programok létrehozása egyszerű ok-okozati parancsokkal.',
@@ -251,8 +256,7 @@ return [
             'tartalmazzák',
             'illetve az egyes szintek tetején is olvashatók'
         ],
-        'example' =>
-            'Diákok kiváló alkotásai a következő oldalon találhatók',
+        'example' => 'Diákok kiváló alkotásai a következő oldalon találhatók',
         'materials' => 'The Code.org tutorial'
     ],
     'create-a-simulation' => [
@@ -270,7 +274,7 @@ return [
         ],
         'example' =>
             'Ha elkészültél, másokkal is oszd meg szimulációid. Ossz meg egy üzenetet arról, hogy szerinted mit tehetünk mi azért, hogy megvédjük mások egészségét, ha egy vírus érkezik a városba.',
-        'materials' => 'The Code.org tutorial',
+        'materials' => 'The Code.org tutorial'
     ],
     'create-your-own-masterpiece' => [
         'title' => 'Készítsd el saját műalkotásod!',
@@ -280,7 +284,8 @@ return [
         'description' =>
             'Készítsd el saját műalkotásod a Művész segítségével! Használj kódblokkokat, hogy a te Művészed egyedi műalkotást készíthessen.',
         'instructions' => 'Az utasítások az egyes szintek tetején olvashatók',
-        'example' => 'Példák egy-egy alkotásra ezen az oldalon, a Rajz címszó alatt találhatók',
+        'example' =>
+            'Példák egy-egy alkotásra ezen az oldalon, a Rajz címszó alatt találhatók',
         'materials' => ['Az útmutató első szintje', 'ITT található']
     ],
     'cs-first-unplugged-activities' => [
@@ -290,7 +295,7 @@ return [
             'Hogy mindenki elszakadhasson a képernyőtől'
         ],
         'description' =>
-            'CS First Unplugged(Az Első offline) számítástechnikai projekt olyan tevékenységek sorozatát tartalmazza, amelyek számítógép nélkül tanítják meg a tanulóknak az alapvető számítástechnikai fogalmakat . Ezt a leckét azért találtuk ki, hogy bemutassuk: a Számítástechnika jóval több mint maga a programozás . ',
+            'CS First Unplugged(Az Első offline) számítástechnikai projekt olyan tevékenységek sorozatát tartalmazza, amelyek számítógép nélkül tanítják meg a tanulóknak az alapvető számítástechnikai fogalmakat. Ezt a leckét azért találtuk ki, hogy bemutassuk: a Számítástechnika jóval több mint maga a programozás. ',
         'instructions' => [
             'A tevékenységek angol leírását tartalmazó tájékoztató füzet a következő',
             'linken',
@@ -340,12 +345,12 @@ return [
             'vagy töltsd le a',
             'PC-verziót',
             'az mBlock a Scratch alapján készült programozási nyelv',
-            'Ez a kihívás részben a MakeX global Spark Competition alapján készült, amely egy projektalapú kreatív tervezőprogram 6–13 év közötti fiatalok számára . ',
-            'A részt vevő csapatnak a megadott témára kell összpontosítania és szoftverprogramozás, illetve hardverépítés segítségével kell megoldást kidolgoznia . ',
-            'Arra ösztönözzük a tanulókat, hogy teljesítsék ezt a kihívást a programozási héten, sőt más tanulókkal való kommunikáció révén emeljék nemzetközi szintre, és nyerjenek díjakat . ',
+            'Ez a kihívás részben a MakeX global Spark Competition alapján készült, amely egy projektalapú kreatív tervezőprogram 6–13 év közötti fiatalok számára. ',
+            'A részt vevő csapatnak a megadott témára kell összpontosítania és szoftverprogramozás, illetve hardverépítés segítségével kell megoldást kidolgoznia. ',
+            'Arra ösztönözzük a tanulókat, hogy teljesítsék ezt a kihívást a programozási héten, sőt más tanulókkal való kommunikáció révén emeljék nemzetközi szintre, és nyerjenek díjakat. ',
             'További információk itt találhatók:',
             'vagy vegyék fel velünk a kapcsolatot itt:'
-        ],
+        ]
     ],
     'virtual-flower-field' => [
         'title' => 'Nevelj saját virtuális virágos rétet!',
@@ -353,22 +358,22 @@ return [
             'Jadga Huegle-Meet and Code coach és a SAP Snap!csapatának tagja',
         'duration' => '30–60 perc',
         'purposes' => [
-            'A programozás megismerése egy egyszerű, de szemléltető projekttel . ',
-            'A programozás művészi oldalának és csodás eredményeinek megismerése . ',
-            'Az ősz megszépítése színes virágokkal és az európai programozási héttel . ',
-            'A Földön élő virágok sokszínűségének bemutatása . ',
-            'A Fenntartható Fejlődési Célokhoz, különösen az éghajlatváltozásra vonatkozó 13. célhoz való hozzájárulás olyan programozási események létrehozásával, amelyek a témára összpontosító figyelemfelkeltéssel javítják az éghajlatváltozással kapcsolatos oktatást . '
+            'A programozás megismerése egy egyszerű, de szemléltető projekttel. ',
+            'A programozás művészi oldalának és csodás eredményeinek megismerése. ',
+            'Az ősz megszépítése színes virágokkal és az európai programozási héttel. ',
+            'A Földön élő virágok sokszínűségének bemutatása. ',
+            'A Fenntartható Fejlődési Célokhoz, különösen az éghajlatváltozásra vonatkozó 13. célhoz való hozzájárulás olyan programozási események létrehozásával, amelyek a témára összpontosító figyelemfelkeltéssel javítják az éghajlatváltozással kapcsolatos oktatást. '
         ],
         'description' =>
-            'Fejlessz egy olyan programot a Snap!-ben, amelyben különféle fajtájú és különböző számú szirmú virágokkal virtuális virágmezőt hozhatsz létre . ',
+            'Fejlessz egy olyan programot a Snap!-ben, amelyben különféle fajtájú és különböző számú szirmú virágokkal virtuális virágmezőt hozhatsz létre. ',
         'instructions' => [
             'Inspirációért a kihíváshoz, tekintsd meg',
             'ezt a videót',
             'vagy használd',
             'ezt a dokumentumot',
             'és kövesd az abban szereplő utasításokat',
-            'Ez a kihívás két lépésből teljesíthető: a Snap!(vagy Scratch) programban programozz egy virtuális virágos rétet, majd posztolj egy képernyőfotót vagy fotót az eredményről . ',
-            'A virágos réten különféle fajtájú, és különböző számú szirmú virágokat kell nevelni . A virágok ideális esetben úgy vannak programozva, hogy szirmaik folyamatosan ismétlődő újranyomásával és ezt követő elforgatásával(vagy rajzolásával és elforgatásával) jön létre maga a virág . ',
+            'Ez a kihívás két lépésből teljesíthető: a Snap!(vagy Scratch) programban programozz egy virtuális virágos rétet, majd posztolj egy képernyőfotót vagy fotót az eredményről. ',
+            'A virágos réten különféle fajtájú, és különböző számú szirmú virágokat kell nevelni. A virágok ideális esetben úgy vannak programozva, hogy szirmaik folyamatosan ismétlődő újranyomásával és ezt követő elforgatásával(vagy rajzolásával és elforgatásával) jön létre maga a virág. ',
             'Posztolj egy képet virtuális virágoskertedről a #MeetandCode hashtaggel.'
         ],
         'materials' => [
@@ -398,7 +403,7 @@ return [
             'ezen linken található'
         ],
         'example' => 'Kísértetház példa a következő szinthez:',
-        'materials' => ['A Hedy itt', '1–4-es szint'],
+        'materials' => ['A Hedy itt', '1–4-es szint']
     ],
     'inclusive-app-design' => [
         'title' => 'Inkluzív alkalmazás-tervezés',
@@ -435,7 +440,8 @@ return [
         'description' =>
             'Ebben a projektben bolondos szemű szereplőt tervezhetsz és hozhatsz létre. A szereplőd nagy és bolondos szemei az egér kurzorját követik, életre keltve figurád.',
         'instructions' => 'A projekt teljes leírását itt találod',
-        'example' => 'Nézd meg a következőket: Gobo, Under the sea (A víz alatti élet) és Don\'t eat donut (Ne egyél fánkot)'
+        'example' =>
+            'Nézd meg a következőket: Gobo, Under the sea (A víz alatti élet) és Don\'t eat donut (Ne egyél fánkot)'
     ],
     'train-ai-bot' => [
         'title' => 'Képezz ki egy MI botot!',
@@ -450,7 +456,6 @@ return [
         'materials' => [
             'Az útmutatók itt találhatók:',
             'Ez az útmutató több mint 25 nyelven érhető el'
-        ],
+        ]
     ]
 ];
-

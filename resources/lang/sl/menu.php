@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Authentication Language Lines
@@ -15,14 +14,18 @@ return [
 
     'learn' => 'Učiti se',
     'teach' => 'Poučevati',
-    'training' => 'Usposabljanje', 'toolkits' => 'Predstavitve in orodja', 'why' => 'ZAKAJ', 'home'  => 'Domov',
+    'training' => 'Usposabljanje',
+    'toolkits' => 'Predstavitve in orodja',
+    'why' => 'ZAKAJ',
+    'home' => 'Domov',
     'events' => 'Dejavnosti',
     'ambassadors' => 'Ambasadorji',
     'resources' => 'Viri',
     'schools' => 'Šole',
     'about' => 'O projektu',
-    'blog' => 'Blog','news' => 'Novice',
-    'search' => 'Vpišite in kliknite Enter ...',
+    'blog' => 'Blog',
+    'news' => 'Novice',
+    'search' => 'Vpišite in kliknite Enter...',
     'map' => 'Zemljevid',
     'add_event' => 'Dodajte dogodek',
     'search_event' => 'Iskanje dogodkov',
@@ -36,7 +39,8 @@ return [
     'logout' => 'Odjava',
     'signin' => 'Prijava',
     'privacy' => 'Zasebnost',
-    'participation'=> 'Certifikat o udeležbi',
+    'participation' => 'Certifikat o udeležbi',
     'values' => 'Naše vrednote',
     'featured_activities' => 'Izbrane dejavnosti',
-    'codeweek2020' => 'Izdaja 2020'];
+    'codeweek2020' => 'Izdaja 2020'
+];

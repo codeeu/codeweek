@@ -13,10 +13,7 @@ return [
         'description' => 'Açıklama',
         'instructions' => 'Talimatlar',
         'example' => 'Örnek',
-        'written-by' => [
-            'Bu görevi yazan:',
-            'Bu görev şunun bir parçasıdır:'
-        ],
+        'written-by' => ['Bu görevi yazan:', 'Bu görev şunun bir parçasıdır:'],
         'teachers' => 'Öğretmenler',
         'students' => 'Öğrenciler',
         'beginner' => 'Başlangıç',
@@ -38,7 +35,7 @@ return [
         'Görevinizi paylaşın',
         'Kod Haftası ödülleri kazanmak ister misiniz? Cevabınız evet ise çalışmanızın internette yayılmasını sağlayın!',
         'Görevi tamamladıktan sonra Instagram\'da paylaşın.',
-        "Kazananlar 9-24 Ekim tarihleri arasında, Kod Haftası boyunca her gün seçilecek ve Instagram sayfamızdan duyurulacaktır. Bu yüzden bildirimlerinizi düzenli olarak kontrol etmeyi unutmayın."
+        'Kazananlar 9-24 Ekim tarihleri arasında, Kod Haftası boyunca her gün seçilecek ve Instagram sayfamızdan duyurulacaktır. Bu yüzden bildirimlerinizi düzenli olarak kontrol etmeyi unutmayın.'
     ],
     'share' => [
         'Görev(ler)inizi Instagram\'da nasıl paylaşabilirsiniz?',
@@ -51,7 +48,9 @@ return [
         '#CodeWeekChallenge etiketini ekleyin',
         '@CodeWeekEU hesabından bahsedin ve etiketleyin',
         'Görevlerinizi Facebook\'ta mı paylaşmak istiyorsunuz?',
-        'AB Kod Haftası Facebook sayfasına (link to FB page) her gün yeni bir Görev gönderisi tutturulacak ve gönderinin altındaki yorumlardan kazananlar seçilecektir.',
+        'AB Kod Haftası',
+        'Facebook sayfasına',
+        'her gün yeni bir Görev gönderisi tutturulacak ve gönderinin altındaki yorumlardan kazananlar seçilecektir.',
         'Bu nasıl olacak?',
         'Çalışmanızın bağlantısıyla birlikte gönderiye yorum yapmanız yeterlidir.'
     ],
@@ -68,7 +67,7 @@ return [
         'Facebook sayfasına yeni bir Görev gönderisi',
         'tutturulacaktır',
         'Ardından, çalışmanızın bağlantısıyla birlikte gönderiye yorum yapmanız yeterlidir',
-        "Kazananlar 9-24 Ekim tarihleri arasında, Kod Haftası boyunca her gün seçilecek olup, kendilerine Kod Haftası ödülleri verilecek ve Instagram ve Facebook sayfalarımızdan duyurulacaktır. Bu yüzden bildirimlerinizi düzenli olarak kontrol etmeyi unutmayın"
+        'Kazananlar 9-24 Ekim tarihleri arasında, Kod Haftası boyunca her gün seçilecek olup, kendilerine Kod Haftası ödülleri verilecek ve Instagram ve Facebook sayfalarımızdan duyurulacaktır. Bu yüzden bildirimlerinizi düzenli olarak kontrol etmeyi unutmayın'
     ],
     'take-part' => [
         'Neden AB Kod Haftası görevinde yer almalısınız?',
@@ -91,5 +90,4 @@ return [
         'Facebook, Instagram veya Twitter\'a yükleyin',
         'Şu etiketi kullanmayı unutmayın:'
     ]
-
 ];

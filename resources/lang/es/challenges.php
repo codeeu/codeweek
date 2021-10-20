@@ -51,7 +51,9 @@ return [
         'Añade la etiqueta #CodeWeekChallenge',
         'Menciona y etiqueta a @CodeWeekEU',
         '¿Prefieres compartir tu(s) reto(s) en Facebook?',
-        'Cada día, la Semana de la Programación de la UE fijará una nueva publicación de reto en su página de Facebook (enlace a la página de FB) y seleccionará el ganador del premio a partir de los comentarios de debajo de la publicación.',
+        'Cada día, la Semana de la Programación de la UE fijará una nueva publicación de reto en su página de',
+        'Facebook',
+        'y seleccionará el ganador del premio a partir de los comentarios de debajo de la publicación.',
         '¿Cómo funciona?',
         'Solo tienes que comentar la publicación con el enlace a tu trabajo.'
     ],
@@ -68,28 +70,27 @@ return [
         'una publicación sobre un nuevo reto en su',
         'página de Facebook',
         'Entonces tan solo tienes que comentar la publicación con el enlace a tu trabajo.',
-        'Cada día durante la Semana de la Programación del 9 al 24 de octubre, se seleccionarán los ganadores de los regalos y se anunciarán en nuestros canales de Instagram y Facebook. Así que no olvides comprobar tus notificaciones regularmente',
+        'Cada día durante la Semana de la Programación del 9 al 24 de octubre, se seleccionarán los ganadores de los regalos y se anunciarán en nuestros canales de Instagram y Facebook. Así que no olvides comprobar tus notificaciones regularmente'
     ],
     'take-part' => [
-    '¿Por qué participar en un reto de la Semana de la Programación de la UE?',
-    'Para participar en actividades de resolución de problemas y programación.',
-    'Para trabajar con compañeros.',
-    'Para difundir el mensaje sobre la importancia de la programación.'
-],
+        '¿Por qué participar en un reto de la Semana de la Programación de la UE?',
+        'Para participar en actividades de resolución de problemas y programación.',
+        'Para trabajar con compañeros.',
+        'Para difundir el mensaje sobre la importancia de la programación.'
+    ],
     'download' => [
-    'Haz clic',
-    'aquí',
-    'para descargar este reto como documento de Word'
-],
-'bingo' =>[
-    'Haz todos los Retos',
-    '¿Reto completado? Imprime',
-    'el cartón de bingo',
-    'y marca la pequeña burbuja blanca en la parte superior izquierda',
-    'Comparte tu reto en las redes sociales y gana unos magníficos premios de la Semana de la Programación',
-    'Tan solo tienes que subir una foto con la(s) fila(s), la(s) columna(s) o, incluso mejor, todo el bingo completado, a',
-    'Facebook, Instagram o Twitter',
-    'Asegúrate de que utilizas'
-]
-
+        'Haz clic',
+        'aquí',
+        'para descargar este reto como documento de Word'
+    ],
+    'bingo' => [
+        'Haz todos los Retos',
+        '¿Reto completado? Imprime',
+        'el cartón de bingo',
+        'y marca la pequeña burbuja blanca en la parte superior izquierda',
+        'Comparte tu reto en las redes sociales y gana unos magníficos premios de la Semana de la Programación',
+        'Tan solo tienes que subir una foto con la(s) fila(s), la(s) columna(s) o, incluso mejor, todo el bingo completado, a',
+        'Facebook, Instagram o Twitter',
+        'Asegúrate de que utilizas'
+    ]
 ];

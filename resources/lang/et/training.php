@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'learning_bits' => 'Programmeerimisnädala Code Week õpivahendid',
     'title' => 'Tasuta õppematerjalid ja veebikursused',
     'text' => '<p>Siit leiate tasuta õppematerjale ja -vahendeid, mis aitavad teil plaanida oma esimest innovaatilist tunniplaani.</p>
@@ -36,13 +35,16 @@ return [
 
                     <p>Selles videos tutvustab Miles Berry, Gulidfordis (Ühendkuningriigis) asuva Roehamptoni ülikooli õppejõud, algoritmilise mõtlemise kontseptsiooni ja erinevaid viise, kuidas õpetaja seda erinevate mängude abil klassiruumi tuua saab.</p>',
             'activities' => [
-                '1' => '1. tegevus – matemaatilise analüüsi õpetamine algkoolile',
-                '2' => '2. tegevus – algoritmide tutvustamine põhikooli esimesele astmele',
+                '1' =>
+                    '1. tegevus – matemaatilise analüüsi õpetamine algkoolile',
+                '2' =>
+                    '2. tegevus – algoritmide tutvustamine põhikooli esimesele astmele',
                 '3' => '3. tegevus – algoritmid põhikooli teisele astmele'
             ]
         ],
         '3' => [
-            'title' => 'Visuaalne programmeerimine – sissejuhatus Scratchi kasutamisse',
+            'title' =>
+                'Visuaalne programmeerimine – sissejuhatus Scratchi kasutamisse',
             'author' => 'Autor: Margo Tinawi',
             'text' => '<p>Visuaalne programmeerimine võimaldab inimestel kirjeldada illustratsioonide ja graafika abil erinevaid protsesse. Tavaliselt tuuakse visuaalse programmeerimise vastandina välja tekstipõhine programmeerimine. Visuaalse programmeerimise keeli on kohandatud, et algoritmilist mõtlemist saaks tutvustada ka lastele (või siis täiskasvanutele). See tähendab vähem lugemist ja keerulise süntaksi puudumist.</p>
 
@@ -53,8 +55,10 @@ return [
                     <p>Scratch on tasuta kättesaadav, väga intuitiivne ja motiveeriv. Vaadake Margo videot ja õppige Scratchi kasutamist.</p>',
             'activities' => [
                 '1' => '1. tegevus – Scratchi põhitõed algkoolile',
-                '2' => '2. tegevus – Scratchi põhitõed põhikooli esimesele astmele',
-                '3' => '3. tegevus – Scratchi põhitõed põhikooli teisele astmele'
+                '2' =>
+                    '2. tegevus – Scratchi põhitõed põhikooli esimesele astmele',
+                '3' =>
+                    '3. tegevus – Scratchi põhitõed põhikooli teisele astmele'
             ]
         ],
         '4' => [
@@ -68,9 +72,12 @@ return [
 
                     <p>Vaadake videot ja alustage õppimisega.</p>',
             'activities' => [
-                '1' => '1. tegevus – Scratchi küsimuste ja vastuste mäng algkoolile',
-                '2' => '2. tegevus – Scratchi küsimuste ja vastuste mäng põhikooli esimesele astmele',
-                '3' => '3. tegevus – Scratchi küsimuste ja vastuste mäng põhikooli teisele astmele'
+                '1' =>
+                    '1. tegevus – Scratchi küsimuste ja vastuste mäng algkoolile',
+                '2' =>
+                    '2. tegevus – Scratchi küsimuste ja vastuste mäng põhikooli esimesele astmele',
+                '3' =>
+                    '3. tegevus – Scratchi küsimuste ja vastuste mäng põhikooli teisele astmele'
             ]
         ],
         '5' => [
@@ -82,9 +89,12 @@ return [
 
                     <p>Vaadake videot, kus Tullia Urschitz, Itaalia Scientixi esindaja ja Sant’Ambrogio Di Valpolicella STEM-õpetaja, annab praktilist nõu, kuidas saaksid õpetajad integreerida meisterdamist ja robootikat klassiruumis ning muuta seeläbi oma õpilased entusiastlikeks loojateks.</p>',
             'activities' => [
-                '1' => '1. tegevus – Kuidas luua papist mehaanilist kätt, algkool',
-                '2' => '2. tegevus – Kuidas luua mehaanilist kätt, põhikooli esimene aste',
-                '3' => '3. tegevus – Kuidas luua mehaanilist kätt, põhikooli teine aste'
+                '1' =>
+                    '1. tegevus – Kuidas luua papist mehaanilist kätt, algkool',
+                '2' =>
+                    '2. tegevus – Kuidas luua mehaanilist kätt, põhikooli esimene aste',
+                '3' =>
+                    '3. tegevus – Kuidas luua mehaanilist kätt, põhikooli teine aste'
             ]
         ],
         '6' => [
@@ -111,16 +121,20 @@ return [
         ],
         '8' => [
             'title' => 'Programmeerimine kõigis õppeainetes',
-            'author' => 'Autor: M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'author' =>
+                'Autor: M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
             'text' => '<p>Kui mõelda programmeerimisele koolitundides, seostub see eelkõige arvutite, tehnoloogia, matemaatika või teadusega. Aga kuna õpilasi köidavad eri tegevused ja teemad, siis miks ei võiks programmeerimist laiemalt kasutada ning rakendada seda kogu õppekava ulatuses?</p> 
 <p>Programmeerimise õpetamisel koolitunnis on mitu eelist – see aitab õpilastel arendada kriitilise mõtlemise ja probleemilahendusoskust, saada aktiivseteks kasutajateks ja juhtida oma õppeprotsessi, mis on koolis käimise puhul oluline. Ent kõige tähtsam on see, et õpilased omandavad teadmisi, veetes samal ajal lõbusalt aega.</p>
 <p>Keeled, muusika, aga ka loodus- ja täppisteadused ning tehnoloogia (LTT) on vaid mõned õppeained, kus õpetajad võivad tulevastele teadlastele, muusikutele, kunstnikele või mis tahes ameti pidajatele programmeerimist tutvustada. Kõik õpetajad võivad programmeerimise ja arvutusliku mõtlemise õpetamise oma tunnitegevusega ühendada. Lõimitud aine- ja keeleõppe rakendamine igapäevaelus kasutatava algoritmi selgitamiseks, vildist juhtkangi valmistamine teaduste tundma õppimiseks või õpperobotite kasutamine motivatsiooni suurendamiseks matemaatikas on vaid mõned näited tegevustest, mida saate tunnis korraldada.</p> 
 <p>Alltoodud videost võite näha, kuidas teadusainete, muusika- ja keeleõpetajad võivad programmeerimise ja arvutusliku mõtlemise õpetamise hõlpsasti tunnitegevusse kaasata, isegi kui neil ei ole varasemat kogemust. </p>',
             'activities' => [
-                '1' => 'Tegevus 1. Robootika ja selle kaasamine LTT õpetamisse algkoolis',
+                '1' =>
+                    'Tegevus 1. Robootika ja selle kaasamine LTT õpetamisse algkoolis',
                 '2' => 'Tegevus 2. Muusika on programmeerimine!',
-                '3' => 'Tegevus 3. Nokitsemine ja programmeerimine Makey Makeyga.',
-                '4' => 'Tegevus 4. Igapäevaelus kasutatav algoritm lõimitud aine- ja keeleõppe tunni jaoks.'
+                '3' =>
+                    'Tegevus 3. Nokitsemine ja programmeerimine Makey Makeyga.',
+                '4' =>
+                    'Tegevus 4. Igapäevaelus kasutatav algoritm lõimitud aine- ja keeleõppe tunni jaoks.'
             ]
         ],
         '9' => [
@@ -134,8 +148,9 @@ return [
                 </p>',
             'activities' => [
                 '1' => 'morsekood micro:biti abil algkoolile',
-                '2' => 'põgenemistuba micro:biti abil põhikooli esimesele astmele',
-                '3' => 'automaadi tegemine põhikooli teisele astmele',
+                '2' =>
+                    'põgenemistuba micro:biti abil põhikooli esimesele astmele',
+                '3' => 'automaadi tegemine põhikooli teisele astmele'
             ]
         ],
         '10' => [
@@ -153,40 +168,46 @@ Pythoni abil saavad õpilased koostada viktoriine ajaloosündmuste kohta, lahend
             'activities' => [
                 '1' => 'minu esimene viktoriin algkoolile',
                 '2' => 'poomismäng Hangman põhikooli esimesele astmele',
-                '3' => 'lippude tundmine põhikooli teisele astmele!',
+                '3' => 'lippude tundmine põhikooli teisele astmele!'
             ],
             'links' => [
                 'title' => 'Lisamaterjalid',
                 '1' => [
-                    "url" => "https://docs.python.org/3/library/",
-                    "title" => "Pythoni standardteek",
-                    "description" => "Valmiskoodi ja moodulite kogu (nt kilpkonna ja matemaatika moodul jne)",
+                    'url' => 'https://docs.python.org/3/library/',
+                    'title' => 'Pythoni standardteek',
+                    'description' =>
+                        'Valmiskoodi ja moodulite kogu (nt kilpkonna ja matemaatika moodul jne)'
                 ],
                 '2' => [
-                    "url" => "https://codecombat.com/",
-                    "title" => "CodeCombat",
-                    "description" => "Õppevideomäng programmeerimise põhimõtete õppimiseks",
+                    'url' => 'https://codecombat.com/',
+                    'title' => 'CodeCombat',
+                    'description' =>
+                        'Õppevideomäng programmeerimise põhimõtete õppimiseks'
                 ],
                 '3' => [
-                    "url" => "https://projects.raspberrypi.org/en/codeclub",
-                    "title" => "CodeClubi projektid",
-                    "description" => "Sammsammulised programmeerimisprojektid lastele algajatest edasijõudnuteni",
+                    'url' => 'https://projects.raspberrypi.org/en/codeclub',
+                    'title' => 'CodeClubi projektid',
+                    'description' =>
+                        'Sammsammulised programmeerimisprojektid lastele algajatest edasijõudnuteni'
                 ],
                 '4' => [
-                    "url" => "https://inventwithpython.com/invent4thed/",
-                    "title" => "Invent your own computer games with Python",
-                    "description" => "Raamat, mis õpetab Pythoni abil ise arvutimänge programmeerima",
+                    'url' => 'https://inventwithpython.com/invent4thed/',
+                    'title' => 'Invent your own computer games with Python',
+                    'description' =>
+                        'Raamat, mis õpetab Pythoni abil ise arvutimänge programmeerima'
                 ],
                 '5' => [
-                    "url" => "https://www.codewars.com/",
-                    "title" => "CodeWars",
-                    "description" => "Õppekogukond, kus õpilased ja õpetajad saavad mitmesuguste ülesannete abil õppida",
+                    'url' => 'https://www.codewars.com/',
+                    'title' => 'CodeWars',
+                    'description' =>
+                        'Õppekogukond, kus õpilased ja õpetajad saavad mitmesuguste ülesannete abil õppida'
                 ],
                 '6' => [
-                    "url" => "https://hourofpython.com/",
-                    "title" => "Hour of Python",
-                    "description" => "Pythoni sissejuhatavate õppetundide kogu (nii tekstipõhine kui ka plokkidega), kus kasutatakse interaktiivseid Trinketeid",
-                ],
+                    'url' => 'https://hourofpython.com/',
+                    'title' => 'Hour of Python',
+                    'description' =>
+                        'Pythoni sissejuhatavate õppetundide kogu (nii tekstipõhine kui ka plokkidega), kus kasutatakse interaktiivseid Trinketeid'
+                ]
             ]
         ],
         '11' => [
@@ -200,39 +221,52 @@ Pythoni abil saavad õpilased koostada viktoriine ajaloosündmuste kohta, lahend
             'activities' => [
                 '1' => 'juhtmeta munakarp',
                 '2' => 'väga nutikas hiir',
-                '3' => 'tähti loov täht',
+                '3' => 'tähti loov täht'
             ]
         ],
-        "12" => [
-            "title" => "Jätkusuutliku arengu eesmärkide kodeerimine",
-            "author" => ", autorid Francisco Javier Masero, Cristina Nicolaita ja Erviola Konomi",
-            "text" => [
-                "1" => "Traditsiooniline haridus annab õpilastele vähe võimalusi mõista ja lahendada tegelikke probleeme, nagu globaalne kliimamuutus, sooline võrdõiguslikkus, nälg, vaesus või hea tervis ja heaolu.",
-                "2" => "Jätkusuutliku arengu eesmärgid (SDG) on 2030. aasta säästva arengu tegevuskava tuum, mille kõik Ühinenud Rahvaste Organisatsiooni liikmesriigid on vastu võtnud, et planeerida planeedil rahu ja jõukuse saavutamise juhiseid, toetades globaalset arengut. Õpetajad saavad kasutada klassiruumis säästva arengu eesmärke õpilaste kriitilise mõtlemise arendamise vahendina, aga ka oma identiteedi ja eesmärgi leidmisel. Kodeerimise ja arvutusliku mõtlemise põhielementide kombineerimine säästva arengu eesmärkidega suurendab teie õpilaste enesekindlust aidates neil arendada loovust, ettevõtlikkust, probleemide lahendamist või suhtlemisoskust.",
-                "3" => "Allolevates tegevustes rakendavad õpilased täna ülemaailmse ja sotsiaalse tähtsusega teemadele põhimõtteid Scratch, ASCII kodeerimine ja lahtiühendatud kodeerimine. Õpetajad suurendavad teadlikkust säästva arengu eesmärkidest, aidates neil samal ajal lõbusalt ja kaasahaaravalt arendada empaatiavõimet, kodanikuaktiivsust ja prosotsiaalseid oskusi.",
-                "4" => "Need tunniplaanid keskenduvad igaüks ühele SDG-le:",
-                "5" => "Säästva arengu eesmärk 3: Tagada kõikidele vanuserühmadele hea tervis ja heaolu",
-                "6" => "Säästva arengu eesmärk 5: Saavutada sooline võrdõiguslikkus ning julgustada naisi ja neidusid",
-                "7" => "Säästva arengu eesmärk 13: Võtta viivitamata vastu meetmeid kliimamuutuste ja nende mõjude vastu võitlemiseks",
+        '12' => [
+            'title' => 'Jätkusuutliku arengu eesmärkide kodeerimine',
+            'author' =>
+                ', autorid Francisco Javier Masero, Cristina Nicolaita ja Erviola Konomi',
+            'text' => [
+                '1' =>
+                    'Traditsiooniline haridus annab õpilastele vähe võimalusi mõista ja lahendada tegelikke probleeme, nagu globaalne kliimamuutus, sooline võrdõiguslikkus, nälg, vaesus või hea tervis ja heaolu.',
+                '2' =>
+                    'Jätkusuutliku arengu eesmärgid (SDG) on 2030. aasta säästva arengu tegevuskava tuum, mille kõik Ühinenud Rahvaste Organisatsiooni liikmesriigid on vastu võtnud, et planeerida planeedil rahu ja jõukuse saavutamise juhiseid, toetades globaalset arengut. Õpetajad saavad kasutada klassiruumis säästva arengu eesmärke õpilaste kriitilise mõtlemise arendamise vahendina, aga ka oma identiteedi ja eesmärgi leidmisel. Kodeerimise ja arvutusliku mõtlemise põhielementide kombineerimine säästva arengu eesmärkidega suurendab teie õpilaste enesekindlust aidates neil arendada loovust, ettevõtlikkust, probleemide lahendamist või suhtlemisoskust.',
+                '3' =>
+                    'Allolevates tegevustes rakendavad õpilased täna ülemaailmse ja sotsiaalse tähtsusega teemadele põhimõtteid Scratch, ASCII kodeerimine ja lahtiühendatud kodeerimine. Õpetajad suurendavad teadlikkust säästva arengu eesmärkidest, aidates neil samal ajal lõbusalt ja kaasahaaravalt arendada empaatiavõimet, kodanikuaktiivsust ja prosotsiaalseid oskusi.',
+                '4' => 'Need tunniplaanid keskenduvad igaüks ühele SDG-le:',
+                '5' =>
+                    'Säästva arengu eesmärk 3: Tagada kõikidele vanuserühmadele hea tervis ja heaolu',
+                '6' =>
+                    'Säästva arengu eesmärk 5: Saavutada sooline võrdõiguslikkus ning julgustada naisi ja neidusid',
+                '7' =>
+                    'Säästva arengu eesmärk 13: Võtta viivitamata vastu meetmeid kliimamuutuste ja nende mõjude vastu võitlemiseks'
             ],
-            "activities" => [
-                "1" => "Karateka projekt: Karate tundmine programmeerimise kaudu alg-, põhi- ja gümnaasiumi jaoks",
-                "2" => "Algkooli säästva arengu eesmärgid ja kliimamuutuste kodeerimine",
-                "3" => "Soolise võrdõiguslikkuse kodeerimine, gümnaasiumi jaoks",
+            'activities' => [
+                '1' =>
+                    'Karateka projekt: Karate tundmine programmeerimise kaudu alg-, põhi- ja gümnaasiumi jaoks',
+                '2' =>
+                    'Algkooli säästva arengu eesmärgid ja kliimamuutuste kodeerimine',
+                '3' => 'Soolise võrdõiguslikkuse kodeerimine, gümnaasiumi jaoks'
             ]
         ],
 
-        "13" => [
-            "title" => "Tehisintellekt klassiruumis, sissejuhatus",
-            "author" => "autorid Artur Coelho ja Marjana Prifti Skenduli",
-            "text" => [
-                "1" => "Tehisintellekt (AI) mõjutab paljusid igapäevaelu valdkondi: see parandab automaatselt teie telefoni sisestatud teksti, valib muusika, mida teie lemmikmuusikarakendus esitab, ja mäletab teie paroole, kui olete need unustanud. Tehisintellekt viitab masinõppe, robootika ja algoritmide kombinatsioonile koos rakendustega kõigis valdkondades: arvutiteadusest tootmiseni ja meditsiinist moeni. Seetõttu on sellel vaieldamatu koht meie elus ja ühiskondades ning sellel on teaduse arendamisel võtmeroll. Nagu kõigil teistel meie elus olulistel nähtustel, on ka õpilastel selle tundmaõppimine kasulik. Aga kuidas õpetada midagi nii keerulist nagu tehisintellekt?",
-                "2" => "See õppebitt aitab teil õpilastele selgitada, mis on tehisintellekt ja millist rolli mängib see õpilaste elus. Need tegevused on mõeldud mitteekspertidele sisu hõlpsaks mõistmiseks ja keerukate terminite tõhusaks kujundamiseks paremini mõistetavateks ideedeks. Nende tunniplaanide abil saate aidata õpilastel õppida selgeks tehisintellekti kasutamise ja mõned selle taga olevad mehhanismid. Need tegevused on mõeldud õpilastele oma analüütilise ja kriitilise mõtlemisoskuste arendamiseks: näiteks Marjana tegevuses töötavad õpilased välja klassifikatsioonijuhtme. Need tegevused aitavad õpilastel mõista ka tehisintellekti erinevaid rakendusi: Arturi tegevuses saavad nad teada tehisintellekti ja kunsti seosest ning sellest, kuidas tehisintellekti saab kasutada visuaalse väljenduse parandamiseks. Nende tegevuste käigus mõtlevad õpilased ka tehisintellekti ohtudele ja nende mõjudele."
+        '13' => [
+            'title' => 'Tehisintellekt klassiruumis, sissejuhatus',
+            'author' => 'autorid Artur Coelho ja Marjana Prifti Skenduli',
+            'text' => [
+                '1' =>
+                    'Tehisintellekt (AI) mõjutab paljusid igapäevaelu valdkondi: see parandab automaatselt teie telefoni sisestatud teksti, valib muusika, mida teie lemmikmuusikarakendus esitab, ja mäletab teie paroole, kui olete need unustanud. Tehisintellekt viitab masinõppe, robootika ja algoritmide kombinatsioonile koos rakendustega kõigis valdkondades: arvutiteadusest tootmiseni ja meditsiinist moeni. Seetõttu on sellel vaieldamatu koht meie elus ja ühiskondades ning sellel on teaduse arendamisel võtmeroll. Nagu kõigil teistel meie elus olulistel nähtustel, on ka õpilastel selle tundmaõppimine kasulik. Aga kuidas õpetada midagi nii keerulist nagu tehisintellekt?',
+                '2' =>
+                    'See õppebitt aitab teil õpilastele selgitada, mis on tehisintellekt ja millist rolli mängib see õpilaste elus. Need tegevused on mõeldud mitteekspertidele sisu hõlpsaks mõistmiseks ja keerukate terminite tõhusaks kujundamiseks paremini mõistetavateks ideedeks. Nende tunniplaanide abil saate aidata õpilastel õppida selgeks tehisintellekti kasutamise ja mõned selle taga olevad mehhanismid. Need tegevused on mõeldud õpilastele oma analüütilise ja kriitilise mõtlemisoskuste arendamiseks: näiteks Marjana tegevuses töötavad õpilased välja klassifikatsioonijuhtme. Need tegevused aitavad õpilastel mõista ka tehisintellekti erinevaid rakendusi: Arturi tegevuses saavad nad teada tehisintellekti ja kunsti seosest ning sellest, kuidas tehisintellekti saab kasutada visuaalse väljenduse parandamiseks. Nende tegevuste käigus mõtlevad õpilased ka tehisintellekti ohtudele ja nende mõjudele.'
             ],
-            "activities" => [
-                "1" => "Inimese-AI-kunst, algkoolile",
-                "2" => "Klassifitseerimise masinate õpetamine: Juhend masinõppe tutvustamiseks põhikoolile",
-                "3" => "Klassifitseerimise masinate õpetamine: Juhend masinõppe tutvustamiseks gümnaasiumile",
+            'activities' => [
+                '1' => 'Inimese-AI-kunst, algkoolile',
+                '2' =>
+                    'Klassifitseerimise masinate õpetamine: Juhend masinõppe tutvustamiseks põhikoolile',
+                '3' =>
+                    'Klassifitseerimise masinate õpetamine: Juhend masinõppe tutvustamiseks gümnaasiumile'
             ]
         ],
 
@@ -240,42 +274,44 @@ Pythoni abil saavad õpilased koostada viktoriine ajaloosündmuste kohta, lahend
             'title' => 'Õppimine intelligentsete masinate ajastul',
             'author' => 'Adil Tugyan, Georgia Lascaris ja Marco Neves',
             'text' => [
-                '1' => 'Tänu andmetöötlusvõimsuse kiirele arengule ja suurte andmemahtude kättesaadavusele on tehisintellekti areng olnud viimastel aastatel muljetavaldav. See on viinud märkimisväärsetesse investeeringuteni tehisintellekti uurimisse ja tehisintellekti tööstuse kiiresse laienemiseni, tehes tehisintellektist meie ajastu suure tehnoloogilise revolutsiooni. Tehisintellekt on kõikjal meie ümber. Sellest on saanud osa meie igapäevarutiinist, nii palju, et me mõnikord ei mõtle sellest kui tehisintellektist: kasutame pea iga päev veebisoovitusi, näotuvastust, turvasüsteeme ja häälabilisi. Aga kuidas on haridusega?',
-                '2' => 'Tehisintellektil on tohutu potentsiaal võimaldada uusi õpetamis- ja õppimisviise ning tõhustada õpilaste õppimist. See õpimaterjal aitab teil integreerida autentsed tehisintellektitegevused oma õppetöösse ning aitab teil õpilasi ette valmistada eluks ja karjääriks tehisintellekti kujundatud maailmas. Tegevused on mõeldud õpilastele, arendamaks nende uudishimu, probleemide lahendamise ja loomevõime oskusi. Näiteks Adili tegevuses õpivad õpilased tundma algoritme ja närvivõrke ning neid ergutatakse looma oma närvivõrku tehisintellekti aju visualiseerimiseks. Georgia juhendab teie õpilasi vestlusroboti järkjärgulisel arendamisel. Õpilased koostavad oma vestlusroboti, valmistavad ette küsimuste ja vastuste andmekogumid ning treenivad seda, et see saaks vastata küsimustele Covid-19 kohta. Marco tegevuses uurivad õpilased intelligentsete masinate eeliseid ja väljakutseid igapäevaelus ja töös. Millised on tehisintellekti riskid, millega peame arvestama? Millist mõju avaldab tehisintellekt töö tulevikule? Milliseid töökohti neile tulevikus tööturule sisenemisel pakutakse?'
+                '1' =>
+                    'Tänu andmetöötlusvõimsuse kiirele arengule ja suurte andmemahtude kättesaadavusele on tehisintellekti areng olnud viimastel aastatel muljetavaldav. See on viinud märkimisväärsetesse investeeringuteni tehisintellekti uurimisse ja tehisintellekti tööstuse kiiresse laienemiseni, tehes tehisintellektist meie ajastu suure tehnoloogilise revolutsiooni. Tehisintellekt on kõikjal meie ümber. Sellest on saanud osa meie igapäevarutiinist, nii palju, et me mõnikord ei mõtle sellest kui tehisintellektist: kasutame pea iga päev veebisoovitusi, näotuvastust, turvasüsteeme ja häälabilisi. Aga kuidas on haridusega?',
+                '2' =>
+                    'Tehisintellektil on tohutu potentsiaal võimaldada uusi õpetamis- ja õppimisviise ning tõhustada õpilaste õppimist. See õpimaterjal aitab teil integreerida autentsed tehisintellektitegevused oma õppetöösse ning aitab teil õpilasi ette valmistada eluks ja karjääriks tehisintellekti kujundatud maailmas. Tegevused on mõeldud õpilastele, arendamaks nende uudishimu, probleemide lahendamise ja loomevõime oskusi. Näiteks Adili tegevuses õpivad õpilased tundma algoritme ja närvivõrke ning neid ergutatakse looma oma närvivõrku tehisintellekti aju visualiseerimiseks. Georgia juhendab teie õpilasi vestlusroboti järkjärgulisel arendamisel. Õpilased koostavad oma vestlusroboti, valmistavad ette küsimuste ja vastuste andmekogumid ning treenivad seda, et see saaks vastata küsimustele Covid-19 kohta. Marco tegevuses uurivad õpilased intelligentsete masinate eeliseid ja väljakutseid igapäevaelus ja töös. Millised on tehisintellekti riskid, millega peame arvestama? Millist mõju avaldab tehisintellekt töö tulevikule? Milliseid töökohti neile tulevikus tööturule sisenemisel pakutakse?'
             ],
             'activities' => [
-                'title' => 'Alljärgnevates tunnikavades õpivad õpilased lõbusalt ja kaasahaaravalt tundma intelligentseid masinaid.',
+                'title' =>
+                    'Alljärgnevates tunnikavades õpivad õpilased lõbusalt ja kaasahaaravalt tundma intelligentseid masinaid.',
                 '1' => 'Tehisintellekt ja selle närvivõrgud, algklassidele',
                 '2' => 'Minu Covid-19 vestlusrobot, põhikoolile',
-                '3' => 'Elamine nutikate masinate ajastul: väljakutsed ja võimalused, gümnaasiumile',
+                '3' =>
+                    'Elamine nutikate masinate ajastul: väljakutsed ja võimalused, gümnaasiumile'
             ]
         ],
 
         '15' => [
-            "title" => "Meedia kirjaoskuse tundmaõppimine",
-            "author" => "Marijana Smolčec, Tea Horvatić ja Sanja Božinović",
-            "text" => [
-                "Meedia kirjaoskus ei ole tänapäeva õpilaste jaoks olnud kunagi tähtsam kui praegu. Igas vanuses õpilased igas vanusest  omandama vajalikud oskused, teadmised ja hoiakud, et meie meediarikkas maailmas ringi liikuda. Meedia kirjaoskus aitab neil kasutada usaldusväärset veebisisu ja ära tunda eksitavad teabeallikad. Nad mõistavad, kuidas internetis leiduvat teavet faktiliselt kontrollida ja seda kriitiliselt tõlgendada. Nad suurendavad teadlikkust loometöö nõuetekohase kasutamise kohta ja rakendavad oma teadmisi enda loomingulise infosisu loomisel.",
-                "See õppematerjal võimaldab teil rakendada erinevaid strateegiaid ja meetodeid, et anda oma õpilastele võimalus saada meedias kirjaoskajaks. Marijana tegevusega õpivad õpilased kasutama veebisisu ohutult ja vastutustundlikult. Neile tutvustatakse eri liiki litsentside ja nad töötavad välja lihtsa rakenduse, mis näitab, kuidas loomingulist tööd õigesti jagada. Tea tegevuses alustavad õpilased tööd klõpsusöötade tundmaõppimise kohta. Õpilased uurivad tööülesannete kaudu strateegiaid, mille abil teha kindlaks ja paljastada klõpsusöödad, ning õpivad neid vältima. Sanja võimaldab õpilaste uurida ja analüüsida veebisisu, selle asjakohasust, täpsust, päritolu ja eesmärki. Nad õpivad, kuidas leida võrgus usaldusväärseid allikaid ja kuidas ära tunda valet võrguteavet." .
-                "Allpool toodud õppekavade raames leiate inspireerivaid ja kaasavaid tegevusi õpilaste meediapädevuse parandamiseks:",
+            'title' => 'Meedia kirjaoskuse tundmaõppimine',
+            'author' => 'Marijana Smolčec, Tea Horvatić ja Sanja Božinović',
+            'text' => [
+                'Meedia kirjaoskus ei ole tänapäeva õpilaste jaoks olnud kunagi tähtsam kui praegu. Igas vanuses õpilased igas vanusest  omandama vajalikud oskused, teadmised ja hoiakud, et meie meediarikkas maailmas ringi liikuda. Meedia kirjaoskus aitab neil kasutada usaldusväärset veebisisu ja ära tunda eksitavad teabeallikad. Nad mõistavad, kuidas internetis leiduvat teavet faktiliselt kontrollida ja seda kriitiliselt tõlgendada. Nad suurendavad teadlikkust loometöö nõuetekohase kasutamise kohta ja rakendavad oma teadmisi enda loomingulise infosisu loomisel.',
+                'See õppematerjal võimaldab teil rakendada erinevaid strateegiaid ja meetodeid, et anda oma õpilastele võimalus saada meedias kirjaoskajaks. Marijana tegevusega õpivad õpilased kasutama veebisisu ohutult ja vastutustundlikult. Neile tutvustatakse eri liiki litsentside ja nad töötavad välja lihtsa rakenduse, mis näitab, kuidas loomingulist tööd õigesti jagada. Tea tegevuses alustavad õpilased tööd klõpsusöötade tundmaõppimise kohta. Õpilased uurivad tööülesannete kaudu strateegiaid, mille abil teha kindlaks ja paljastada klõpsusöödad, ning õpivad neid vältima. Sanja võimaldab õpilaste uurida ja analüüsida veebisisu, selle asjakohasust, täpsust, päritolu ja eesmärki. Nad õpivad, kuidas leida võrgus usaldusväärseid allikaid ja kuidas ära tunda valet võrguteavet.' .
+                'Allpool toodud õppekavade raames leiate inspireerivaid ja kaasavaid tegevusi õpilaste meediapädevuse parandamiseks:'
             ],
-            "activities" => [
-                "1" => "Kas see on tasuta, kui see on internetis?",
-                "2" => "Klõpsata või mitte",
-                "3" => " Faktide kontrollimine",
+            'activities' => [
+                '1' => 'Kas see on tasuta, kui see on internetis?',
+                '2' => 'Klõpsata või mitte',
+                '3' => ' Faktide kontrollimine'
             ]
         ]
-
-
     ],
     'download_video_script' => 'Laadi alla video skript',
     'ready_to_share' => 'Kas olete valmis õpitut oma õpilastega jagama?',
     'choose_lessons' => 'Valige altpoolt mõni tunnikava ja alustage õppimist.',
     'footer' => [
-        'title' => 'Ärge unustage lisada oma tegevust programmeerimisnädala Code Week kaardile!',
+        'title' =>
+            'Ärge unustage lisada oma tegevust programmeerimisnädala Code Week kaardile!',
         'text' => '<p>Võite näiteks organiseerida ühe tunni, avatud päeva või kooliürituse. Lihtsalt valige kuupäev ja kandke oma üritus programmeerimisnädala <a href="/events">Code Week kaardile</a>. Iga tegevuse ja/või ürituse organiseerija saab oma pingutuse eest osaleja tunnistuse.</p>
 
 <p>Kui soovite võtta ühendust teiste entusiastlike õpetajatega, siis liituge <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">ELi programmeerimisnädala Code Week Facebooki õpetajate grupiga</a>! Kui soovite astuda sammu veelgi kaugemale ja teha koostööd teist koolidega kas enda riigis või üle piiri, siis liituge <a href="/codeweek4all">programmeerimisnädala väljakutsega Code Week 4 All</a>.</p>'
     ]
-
 ];

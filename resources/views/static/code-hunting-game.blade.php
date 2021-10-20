@@ -91,8 +91,12 @@
                     "<div class='left'>" +
                         "<img src='" + image + "'>" +
                         "<div class='links'>" +
-                            "<div class='link'><a class='codeweek-button' href='" + point.link_wikipedia + "' target='_blank'>WIKIPEDIA</a></div>" +
-                            "<div class='link'><a class='codeweek-button' href='" + point.link_more + "' target='_blank'>READ MORE</a></div>" +
+                            "<div class='link'><a class='codeweek-button' href='" + point.link_wikipedia + "' target='_blank'>WIKIPEDIA</a></div>";
+
+            if (point.link_more) {
+                card = card + "<div class='link'><a class='codeweek-button' href='" + point.link_more + "' target='_blank'>READ MORE</a></div>";
+            }
+                            card = card +
                         "</div>" +
                     "</div>" +
                     "<div class='center'>" +

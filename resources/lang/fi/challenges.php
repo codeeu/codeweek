@@ -1,9 +1,8 @@
 <?php
 
-
 return [
     'title' => 'EU:N KOODAUSVIIKON HAASTEET',
-    'date' => '9 . –24 . lokakuuta 2021',
+    'date' => '9. –24. lokakuuta 2021',
     'common' => [
         'target-audience' => 'Kohderyhmä',
         'pre-primary' => 'Varhaiskasvatuksen oppilaat',
@@ -26,10 +25,10 @@ return [
         '1-hour' => '1 tunti'
     ],
     'main' => [
-        'Kutsumme sinut osallistumaan yhteen tai useampaan EU:n koodausviikon haasteeseen EU:n koodausviikolla 9.–24 . lokakuuta 2021.',
+        'Kutsumme sinut osallistumaan yhteen tai useampaan EU:n koodausviikon haasteeseen EU:n koodausviikolla 9.–24. lokakuuta 2021.',
         'Mitä EU:n koodausviikon 2021 haasteet ovat ? ',
-        'EU:n koodausviikon haasteet ovat tehtäviä, joita voit tehdä itseksesi tai luokassa, kollegoiden tai kavereiden kanssa . Haluaisitko osallistua koodausviikkoon, mutta et tiedä miten ? Vastaus löytyy täältä!Olemme laatineet koodausviikon kumppanien kanssa joukon helppoja haasteita konkreettisine esimerkkeineen siitä, miten niitä voi käyttää luokassa tai ryhmässä . Kunkin haasteen yhteydessä on annettu ohjeita, joita voi tarvittaessa muokata osallistujien tarpeiden, mielenkiinnon kohteiden ja iän mukaan . Voit käyttää haluamiasi työkaluja ja tekniikoita, mutta suosittelemme käyttämään avoimen lähdekoodin aineistoja . ',
-        'Valitse yksi tai useampi haaste, mukauta sitä ryhmäsi tai luokkasi tarpeisiin ja jaa tulokset Instagramissa . Näin kannustat myös kollegoitasi ja kavereitasi osallistumaan koodausviikon hauskanpitoon!',
+        'EU:n koodausviikon haasteet ovat tehtäviä, joita voit tehdä itseksesi tai luokassa, kollegoiden tai kavereiden kanssa. Haluaisitko osallistua koodausviikkoon, mutta et tiedä miten ? Vastaus löytyy täältä!Olemme laatineet koodausviikon kumppanien kanssa joukon helppoja haasteita konkreettisine esimerkkeineen siitä, miten niitä voi käyttää luokassa tai ryhmässä. Kunkin haasteen yhteydessä on annettu ohjeita, joita voi tarvittaessa muokata osallistujien tarpeiden, mielenkiinnon kohteiden ja iän mukaan. Voit käyttää haluamiasi työkaluja ja tekniikoita, mutta suosittelemme käyttämään avoimen lähdekoodin aineistoja. ',
+        'Valitse yksi tai useampi haaste, mukauta sitä ryhmäsi tai luokkasi tarpeisiin ja jaa tulokset Instagramissa. Näin kannustat myös kollegoitasi ja kavereitasi osallistumaan koodausviikon hauskanpitoon!',
         'Lue lisää haasteesta napsauttamalla sitä:',
         'Kuka voi osallistua ? ',
         'Kuka tahansa(koulut, opettajat, kirjastot, koodauskerhot, yritykset, viranomaiset) voi osallistua EU:n koodausviikkoon 2021 suorittamalla #CodeWeekChallenge-haasteen.',
@@ -39,7 +38,7 @@ return [
         'Jaa oma haasteesi',
         'Haluaisitko voittaa koodausviikon palkintoja? Jos vastasit kyllä, jaa työsi tulokset myös muille!',
         'Kun olet saanut haasteen valmiiksi, jaa se Instagramissa.',
-        "Palkintoja jaetaan osallistuneiden kesken joka päivä koodausviikolla 9.–24. lokakuuta, ja voittajat julkistetaan Instagram-kanavallamme. Muista siis tarkistaa ilmoituksesi säännöllisesti."
+        'Palkintoja jaetaan osallistuneiden kesken joka päivä koodausviikolla 9.–24. lokakuuta, ja voittajat julkistetaan Instagram-kanavallamme. Muista siis tarkistaa ilmoituksesi säännöllisesti.'
     ],
     'share' => [
         'Näin jaat haasteesi Instagramissa',
@@ -52,7 +51,9 @@ return [
         'Lisää aihetunniste #CodeWeekChallenge',
         'Mainitse @CodeWeekEU',
         'Haluatko jakaa haasteesi mieluummin Facebookissa?',
-        'EU:n koodausviikon Facebook-sivulle (linkki Facebook-sivulle) lisätään joka päivä uusi haastejulkaisu. Palkinnon voittaja valitaan julkaisua kommentoiden joukosta.',
+        'EU:n koodausviikon',
+        'Facebook-sivulle',
+        'lisätään joka päivä uusi haastejulkaisu. Palkinnon voittaja valitaan julkaisua kommentoiden joukosta.',
         'Miten se toimii?',
         'Kommentoi julkaisua ja lisää linkki omaan haasteeseesi.'
     ],
@@ -92,5 +93,4 @@ return [
         'Facebookiin, Instagramiin tai Twitteriin.',
         'Muista käyttää aihetunnistetta'
     ]
-
 ];

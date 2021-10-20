@@ -28,9 +28,13 @@ return [
     ],
 
     'paper-circuit' => [
-        'title' => 'Isključite se i programirajte: Izradite strujni krug na papiru',
+        'title' =>
+            'Isključite se i programirajte: Izradite strujni krug na papiru',
         'author' => 'Tim Europskog tjedna programiranja',
-        'purposes' => ['Poboljšajte kreativnost', 'Razvijte vještine rješavanja problema'],
+        'purposes' => [
+            'Poboljšajte kreativnost',
+            'Razvijte vještine rješavanja problema'
+        ],
         'description' => [
             'Nacrtajte bilo koji predmet po želji. To može biti noćno nebo, bubamara, robot, božićno drvce ili bilo što čega se sjetite. Svoj projekt slobodno personalizirajte vizualima Europskog tjedna programiranja: možete istražiti ',
             'Komplet alata Europskog tjedna programiranja za nastavnike',
@@ -87,8 +91,8 @@ return [
     ],
 
     'compose-song' => [
-        'title' =>'Komponiraj glazbu',
-        'author' =>'Tim Europskog tjedna programiranja',
+        'title' => 'Komponiraj glazbu',
+        'author' => 'Tim Europskog tjedna programiranja',
         'purposes' => [
             'Naučiti programirati kroz glazbu',
             'Razlikovati glazbene žanrove i instrumente',
@@ -128,7 +132,7 @@ return [
             'Listen to (Poslušaj)',
             'primjer pjesme koja je programirana u okruženju Earsketch',
             'Možete uvesti kôd i urediti ga'
-        ],
+        ]
     ],
     'sensing-game' => [
         'title' => 'Izradite senzornu videoigricu',
@@ -167,7 +171,8 @@ return [
     ],
 
     'calming-leds' => [
-        'title' => 'LED lampice za smirivanje: izradite jednostavan uređaj uz micro:bit',
+        'title' =>
+            'LED lampice za smirivanje: izradite jednostavan uređaj uz micro:bit',
         'author' => 'Obrazovna zaklada Micro:bit',
         'duration' => '20 minuta',
         'materials' => [
@@ -194,9 +199,9 @@ return [
         ]
     ],
     'computational-thinking-and-computational-fluency' => [
-        'title' =>
-            'Računalno razmišljanje i računalna fluentnost uz ScratchJr',
-        'author' => 'Stamatis Papadakis – grčki ambasador Europskog tjedna programiranja',
+        'title' => 'Računalno razmišljanje i računalna fluentnost uz ScratchJr',
+        'author' =>
+            'Stamatis Papadakis – grčki ambasador Europskog tjedna programiranja',
         'purposes' => [
             'Upoznati se s novim naredbama i sučeljem.',
             'Izraditi jednostavne programe s jednostavnim uzročno-posljedičnim naredbama.',
@@ -251,8 +256,7 @@ return [
             'tutorijalu',
             'a napisane su i na početku svake razine'
         ],
-        'example' =>
-            'Učenički uradci objavljuju se na sljedećoj stranici ',
+        'example' => 'Učenički uradci objavljuju se na sljedećoj stranici ',
         'materials' => 'Tutorijal Code.org tutorial'
     ],
     'create-a-simulation' => [
@@ -270,7 +274,7 @@ return [
         ],
         'example' =>
             'Kad završite, svoju simulaciju možete podijeliti s drugima. Podijelite svoju poruku o tome što mislite da možemo učiniti kako bismo drugima pomogli da ostanu zdravi kad virus zahvati grad.',
-        'materials' => 'Tutorijal Code.org tutorial',
+        'materials' => 'Tutorijal Code.org tutorial'
     ],
     'create-your-own-masterpiece' => [
         'title' => 'Izradite vlastito umjetničko djelo!',
@@ -280,7 +284,8 @@ return [
         'description' =>
             'Izradite vlastito umjetničko djelo uz umjetnika! Uz blokove koda pomogni svojem umjetniku da izradi jedinstveno umjetničko djelo.',
         'instructions' => 'Upute su napisane na početku svake razine',
-        'example' => 'Primjeri umjetnika mogu se vidjeti ispod crteža na ovoj stranici',
+        'example' =>
+            'Primjeri umjetnika mogu se vidjeti ispod crteža na ovoj stranici',
         'materials' => ['Prvu razinu tutorijala možete pronaći', 'OVDJE']
     ],
     'cs-first-unplugged-activities' => [
@@ -345,7 +350,7 @@ return [
             'Učenike se potiče da izazov dovrše tijekom Tjedna programiranja, da ga predstave na međunarodnoj razini kako bi komunicirali s drugim učenicima i osvojili nagrade.',
             'Više informacija potražite na stranici:',
             'ili nam se javite'
-        ],
+        ]
     ],
     'virtual-flower-field' => [
         'title' => 'Zasadite svoje virtualno polje cvijeća',
@@ -356,19 +361,19 @@ return [
             'Upoznati se s programiranjem na primjeru jednostavnog, ali poticajnog projekta.',
             'Naučiti da programiranje može biti i umjetničko te da programiranjem mogu nastati prekrasni rezultati.',
             'Učiniti jesen ljepšom uz šareno cvijeće i Europski tjedan programiranja',
-            'Upoznati se s raznolikošću cvijeća koje postoji . ',
-            'Pridonijeti ciljevima održivog razvoja(COR-ovima), posebno s ciljem održivog razvoja 13 – Očuvanje klime, osmišljavanjem događanja programiranja kojima se unapređuje znanje o očuvanju klime podizanjem svijesti o toj temi . '
+            'Upoznati se s raznolikošću cvijeća koje postoji. ',
+            'Pridonijeti ciljevima održivog razvoja(COR-ovima), posebno s ciljem održivog razvoja 13 – Očuvanje klime, osmišljavanjem događanja programiranja kojima se unapređuje znanje o očuvanju klime podizanjem svijesti o toj temi. '
         ],
         'description' =>
-            'Razviti program u Snapu!kojim se na polju virtualnog cvijeća sade različite vrste cvijeća različitog broja latica . ',
+            'Razviti program u Snapu!kojim se na polju virtualnog cvijeća sade različite vrste cvijeća različitog broja latica. ',
         'instructions' => [
             'Inspiraciju za ovaj izazov možete pronaći u',
             'ovom videozapisu',
             'ili samo slijedite',
             'ovaj dokument',
             '',
-            'Izazov se može provesti programiranjem virtualnog polja cvijeća u Snapu!(ili Scratchu) i objavom snimke zaslona ili fotografije s rezultatom na mreži . ',
-            'Polje cvijeća treba sadržavati različite vrste cvijeća različitog broja latica . U idealnom slučaju, cvijeće je programirano, što znači da je izrađeno opetovanim utiskivanjem i okretanjem(ili crtanjem i okretanjem) latica . ',
+            'Izazov se može provesti programiranjem virtualnog polja cvijeća u Snapu!(ili Scratchu) i objavom snimke zaslona ili fotografije s rezultatom na mreži. ',
+            'Polje cvijeća treba sadržavati različite vrste cvijeća različitog broja latica. U idealnom slučaju, cvijeće je programirano, što znači da je izrađeno opetovanim utiskivanjem i okretanjem(ili crtanjem i okretanjem) latica. ',
             'Objavite fotografiju svojeg virtualnog cvjetnog vrta uz oznaku #MeetandCode.'
         ],
         'materials' => [
@@ -398,17 +403,17 @@ return [
             'ovoj poveznici'
         ],
         'example' => 'Primjer Uklete kuće na razini ',
-        'materials' => ['Hedy na poveznici', ' razine od 1. do 4.'],
+        'materials' => ['Hedy na poveznici', ' razine od 1. do 4.']
     ],
     'inclusive-app-design' => [
         'title' => 'Dizajn inkluzivne aplikacije',
         'author' => 'Apple Education',
         'duration' => '60 minuta + opcionalne aktivnosti za produljenje',
         'purposes' => [
-            'Raspraviti i iznijeti što više ideja, planirati, izraditi prototip i podijeliti ideju o aplikaciji kojoj svi mogu pristupiti i koju svi mogu razumjeti . '
+            'Raspraviti i iznijeti što više ideja, planirati, izraditi prototip i podijeliti ideju o aplikaciji kojoj svi mogu pristupiti i koju svi mogu razumjeti. '
         ],
         'description' =>
-            'Sjajne ideje prvi su korak na putu do sjajnih aplikacija . U ovoj aktivnosti učenici će osmisliti ideju aplikacije na temu koja im je važna, potom će otkriti kako dizajnirati aplikacije imajući pritom na umu inkluziju i dostupnost . ',
+            'Sjajne ideje prvi su korak na putu do sjajnih aplikacija. U ovoj aktivnosti učenici će osmisliti ideju aplikacije na temu koja im je važna, potom će otkriti kako dizajnirati aplikacije imajući pritom na umu inkluziju i dostupnost. ',
         'instructions' => [
             'Sve upute nalaze se na ovoj poveznici ',
             'Ovaj jednosatni nastavni plan omogućuje podučavateljima da vode učenike kako bi',
@@ -416,11 +421,11 @@ return [
             'raspravili i iznijeli što više tema koje su im važne te došli do ideje za aplikaciju',
             'Naznačili ideje za aplikaciju i planirali korisničke aktivnosti',
             'Izradili prototip jednog dijela aplikacije u Keynoteu',
-            'Podijelili demoverzije svojih prototipova i opisali kako pružaju podršku korisnicima iz različitih krugova i različitih mogućnosti . '
+            'Podijelili demoverzije svojih prototipova i opisali kako pružaju podršku korisnicima iz različitih krugova i različitih mogućnosti. '
         ],
         'materials' => [
             'Istražite aktivnost Inclusive App Design Activity(Osmišljavanje inkluzivne aplikacije) u Appleovu nastavničkom centru za učenje(Apple Teacher Learning Center)',
-            'Preporučuje se Keynote na iPadu ili Macu, ali nije obavezan . '
+            'Preporučuje se Keynote na iPadu ili Macu, ali nije obavezan. '
         ]
     ],
     'silly-eyes' => [
@@ -428,14 +433,15 @@ return [
         'author' => 'Raspberry Pi Foundation',
         'duration' => '25 minuta',
         'purposes' => [
-            'Osmisliti projekt u interakciji s korisnicima . ',
-            'Prilagoditi projekt korisnicima s pomoću boja i grafičkih efekata . ',
-            'Učiti o dizajnu u digitalnom okruženju . '
+            'Osmisliti projekt u interakciji s korisnicima. ',
+            'Prilagoditi projekt korisnicima s pomoću boja i grafičkih efekata. ',
+            'Učiti o dizajnu u digitalnom okruženju. '
         ],
         'description' =>
-            'U ovom projektu osmislit ćete i izraditi lik sa smiješnim očima . Velike i smiješne oči lika pratit će pokazivač miša te tako oživjeti vaš lik . ',
+            'U ovom projektu osmislit ćete i izraditi lik sa smiješnim očima. Velike i smiješne oči lika pratit će pokazivač miša te tako oživjeti vaš lik. ',
         'instructions' => 'Detaljan opis projekta nalazi se ovdje',
-        'example' => 'Pogledajte primjere u nastavku: Gobo, Under the sea i Don\'t eat donut'
+        'example' =>
+            'Pogledajte primjere u nastavku: Gobo, Under the sea i Don\'t eat donut'
     ],
     'train-ai-bot' => [
         'title' => 'Istrenirajte UI bota!',
@@ -450,7 +456,6 @@ return [
         'materials' => [
             'Tutorijal se nalazi ovdje',
             'Ovaj tutorijal dostupan je na više od 25 jezika'
-        ],
+        ]
     ]
 ];
-

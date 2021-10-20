@@ -30,7 +30,10 @@ return [
     'paper-circuit' => [
         'title' => 'Desconecta y programa: Crea un circuito en papel',
         'author' => 'Equipo de la Semana de la Programación de la UE',
-        'purposes' => ['Potenciar la creatividad', 'Desarrollar habilidades para resolver problemas'],
+        'purposes' => [
+            'Potenciar la creatividad',
+            'Desarrollar habilidades para resolver problemas'
+        ],
         'description' => [
             'Dibuja lo que quieras. Puede ser un cielo nocturno, una mariquita, un robot, un árbol de Navidad o cualquier cosa que se te ocurra. No dudes en personalizar tu proyecto con elementos gráficos de la Semana de la Programación de la UE: puedes consultar el ',
             'Paquete de herramientas para profesores',
@@ -128,7 +131,7 @@ return [
             'Escucha',
             'un ejemplo de canción programada con Earsketch',
             'Puedes importar el código y editarlo'
-        ],
+        ]
     ],
     'sensing-game' => [
         'title' => 'Crea un juego de detección de vídeo',
@@ -167,7 +170,8 @@ return [
     ],
 
     'calming-leds' => [
-        'title' => 'Ledes relajantes: crea un dispositivo sencillo con micro:bit',
+        'title' =>
+            'Ledes relajantes: crea un dispositivo sencillo con micro:bit',
         'author' => 'Micro:bit Educational Foundation',
         'duration' => '20 minutos',
         'materials' => [
@@ -196,7 +200,8 @@ return [
     'computational-thinking-and-computational-fluency' => [
         'title' =>
             'Pensamiento computacional y fluidez computacional con ScratchJr',
-        'author' => 'Stamatis Papadakis, embajador de la Semana de la Programación de la UE en Grecia',
+        'author' =>
+            'Stamatis Papadakis, embajador de la Semana de la Programación de la UE en Grecia',
         'purposes' => [
             'Familiarizarse con nuevas órdenes e interfaces.',
             'Crear programas sencillos con órdenes causa-efecto simples.',
@@ -244,7 +249,7 @@ return [
         'description' => [
             'Crea un baile con Ode to Code! Utiliza el',
             'tutorial de Dance Party',
-            'para programar un baile para Ode to Code . El himno oficial de la Semana de la Programación de la UE figura en la lista de canciones de Dance Party . '
+            'para programar un baile para Ode to Code. El himno oficial de la Semana de la Programación de la UE figura en la lista de canciones de Dance Party. '
         ],
         'instructions' => [
             'Las instrucciones se muestran en forma de vídeo en',
@@ -253,24 +258,24 @@ return [
         ],
         'example' =>
             'Las creaciones de estudiantes que se han presentado pueden encontrarse en la siguiente página',
-        'materials' => 'tutorial de The Code . org'
+        'materials' => 'tutorial de The Code. org'
     ],
     'create-a-simulation' => [
         'title' => '¡Crea una simulación!',
         'purposes' => [
-            'Aprender simulaciones, a la vez que se presentan las variables siguientes: crear un grupo de personas, tasas de recuperación, llevar mascarillas y vacunas . ',
-            'Poner en práctica anteriores conocimientos sobre brotes de virus en el mundo real, que se aplicarán a un escenario ficticio . '
+            'Aprender simulaciones, a la vez que se presentan las variables siguientes: crear un grupo de personas, tasas de recuperación, llevar mascarillas y vacunas. ',
+            'Poner en práctica anteriores conocimientos sobre brotes de virus en el mundo real, que se aplicarán a un escenario ficticio. '
         ],
         'description' =>
-            'Escribe un código para crear y ejecutar tu propia simulación sobre el brote del virus en la Ciudad de los Monstruos . Aprende a programar y a hacer predicciones sobre qué les pasará a los vecinos de Ciudad de los Monstruos . ',
+            'Escribe un código para crear y ejecutar tu propia simulación sobre el brote del virus en la Ciudad de los Monstruos. Aprende a programar y a hacer predicciones sobre qué les pasará a los vecinos de Ciudad de los Monstruos. ',
         'instructions' => [
             'Las instrucciones se muestran en forma de vídeo en',
             'el tutorial',
             'y también por escrito al principio de cada nivel'
         ],
         'example' =>
-            'Cuando acabes, puedes compartir tu simulación con otras personas . Comparte tu mensaje sobre lo que crees que podemos hacer para proteger la salud de los demás cuando llega un virus a la ciudad . ',
-        'materials' => 'Tutorial de The Code . org',
+            'Cuando acabes, puedes compartir tu simulación con otras personas. Comparte tu mensaje sobre lo que crees que podemos hacer para proteger la salud de los demás cuando llega un virus a la ciudad. ',
+        'materials' => 'Tutorial de The Code. org'
     ],
     'create-your-own-masterpiece' => [
         'title' => '¡Crea tu propia obra de arte!',
@@ -278,10 +283,15 @@ return [
         'purpose' =>
             'Presentar conceptos informáticos de forma visual e inspirar la creatividad',
         'description' =>
-            '¡Crea tu propia obra de arte con el Artista!Utiliza bloques de códigos para que tu Artista cree una obra de arte única . ',
-        'instructions' => 'Las instrucciones figuran al principio de cada nivel',
-        'example' => 'Se pueden encontrar ejemplos de Artista en esta página, debajo del dibujo',
-        'materials' => ['El primer nivel del tutorial puede encontrarse', 'AQUÍ']
+            '¡Crea tu propia obra de arte con el Artista!Utiliza bloques de códigos para que tu Artista cree una obra de arte única. ',
+        'instructions' =>
+            'Las instrucciones figuran al principio de cada nivel',
+        'example' =>
+            'Se pueden encontrar ejemplos de Artista en esta página, debajo del dibujo',
+        'materials' => [
+            'El primer nivel del tutorial puede encontrarse',
+            'AQUÍ'
+        ]
     ],
     'cs-first-unplugged-activities' => [
         'title' => 'Actividades con CS First Unplugged',
@@ -290,7 +300,7 @@ return [
             'Dar a todo el mundo un descanso de las pantallas'
         ],
         'description' =>
-            'CS First Unplugged consta de una serie de actividades que presentan conceptos informáticos a los estudiantes sin ordenador . Hemos diseñado esta lección para mostrar que la informática es mucho más que codificar . ',
+            'CS First Unplugged consta de una serie de actividades que presentan conceptos informáticos a los estudiantes sin ordenador. Hemos diseñado esta lección para mostrar que la informática es mucho más que codificar. ',
         'instructions' => [
             'Encontrarás el cuaderno con todas las actividades en inglés en este',
             'enlace',
@@ -345,7 +355,7 @@ return [
             'Se anima a los estudiantes a completar el reto durante la Semana de la Programación y a llevarlo al ámbito internacional para comunicarse con otros estudiantes y ganar premios.',
             'Para obtener más información, consulta:',
             'o ponte en contacto con nosotros a través de'
-        ],
+        ]
     ],
     'virtual-flower-field' => [
         'title' => 'Cultiva tu campo de flores virtual',
@@ -398,7 +408,7 @@ return [
             'este enlace'
         ],
         'example' => 'Ejemplo de casa encantada del nivel',
-        'materials' => ['Hedy en', 'del nivel 1 al 4'],
+        'materials' => ['Hedy en', 'del nivel 1 al 4']
     ],
     'inclusive-app-design' => [
         'title' => 'Diseño de una aplicación inclusiva',
@@ -420,7 +430,7 @@ return [
         ],
         'materials' => [
             'Examina la Inclusive App Design Activity(Actividad de diseño de aplicaciones inclusivas) en Apple Teacher Learning Center',
-            'Se recomienda Keynote en iPad o Mac, pero no es obligatorio . '
+            'Se recomienda Keynote en iPad o Mac, pero no es obligatorio. '
         ]
     ],
     'silly-eyes' => [
@@ -428,12 +438,12 @@ return [
         'author' => 'Raspberry Pi Foundation',
         'duration' => '25 minutos',
         'purposes' => [
-            'Hacer un proyecto con la interacción de los usuarios . ',
-            'Personalizar un proyecto con color y efectos gráficos . ',
-            'Aprender sobre el diseño en la producción digital . '
+            'Hacer un proyecto con la interacción de los usuarios. ',
+            'Personalizar un proyecto con color y efectos gráficos. ',
+            'Aprender sobre el diseño en la producción digital. '
         ],
         'description' =>
-            'En este proyecto, diseñarás y crearás un personaje con ojos atontados . Los grandes ojos atontados del personaje seguirán el puntero del ratón para dar vida al personaje . ',
+            'En este proyecto, diseñarás y crearás un personaje con ojos atontados. Los grandes ojos atontados del personaje seguirán el puntero del ratón para dar vida al personaje. ',
         'instructions' => 'Accede a la descripción completa del proyecto aquí',
         'example' => 'Consulta Gobo, Under the sea y Don\'t eat donut'
     ],
@@ -450,7 +460,6 @@ return [
         'materials' => [
             'El tutorial puede encontrarse aquí',
             'Este tutorial está disponible en más de veinticinco lenguas'
-        ],
+        ]
     ]
 ];
-

@@ -38,7 +38,7 @@ return [
         'Deel je uitdaging',
         'Zou je programmeerweek-goodies willen winnen? Ja? Laat je werk viraal gaan!',
         'Deel je uitdaging op Instagram nadat je deze hebt uitgevoerd.',
-        "Tijdens de programmeerweek van 9 tot 24 oktober worden elke dag winnaars geselecteerd en op ons Instagram-kanaal bekendgemaakt. Vergeet dus niet om regelmatig je meldingen te checken."
+        'Tijdens de programmeerweek van 9 tot 24 oktober worden elke dag winnaars geselecteerd en op ons Instagram-kanaal bekendgemaakt. Vergeet dus niet om regelmatig je meldingen te checken.'
     ],
     'share' => [
         'Hoe deel je je uitdaging(en) op Instagram?',
@@ -51,7 +51,9 @@ return [
         'Voeg #CodeWeekChallenge toe',
         'Vermeld en tag @CodeWeekEU',
         'Deel je je uitdaging(en) liever op Facebook?',
-        'EU-programmeerweek post iedere dag een nieuw bericht over de uitdagingen op zijn Facebook-pagina (link naar FB-pagina). De prijswinnaar wordt gekozen uit de reacties onder het bericht.',
+        'EU-programmeerweek post iedere dag een nieuw bericht over de uitdagingen op zijn',
+        'Facebook-pagina.',
+        'De prijswinnaar wordt gekozen uit de reacties onder het bericht.',
         'Hoe werkt het?',
         'Je hoeft alleen maar op het bericht te reageren met de link naar je werk.'
     ],
@@ -68,7 +70,7 @@ return [
         'een nieuw bericht over de uitdagingen op zijn',
         'Facebook-pagina',
         'Je hoeft vervolgens alleen maar op het bericht te reageren met de link naar je werk.',
-        "Tijdens de programmeerweek van 9 tot 24 oktober worden elke dag winnaars van programmeerweek-goodies geselecteerd. Zij worden op onze Instagram- en Facebook-kanalen bekendgemaakt, dus vergeet niet om regelmatig je meldingen te checken."
+        'Tijdens de programmeerweek van 9 tot 24 oktober worden elke dag winnaars van programmeerweek-goodies geselecteerd. Zij worden op onze Instagram- en Facebook-kanalen bekendgemaakt, dus vergeet niet om regelmatig je meldingen te checken.'
     ],
     'take-part' => [
         'Waarom zou je deelnemen aan een uitdaging van de EU-programmeerweek?',
@@ -91,5 +93,4 @@ return [
         'Facebook, Instagram of Twitter',
         'Gebruik de'
     ]
-
 ];

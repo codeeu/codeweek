@@ -13,10 +13,7 @@ return [
         'description' => 'Apraksts',
         'instructions' => 'Norādījumi',
         'example' => 'Piemērs',
-        'written-by' => [
-            'Šī uzdevuma autors ir',
-            'un tas ir daļa no'
-        ],
+        'written-by' => ['Šī uzdevuma autors ir', 'un tas ir daļa no'],
         'teachers' => 'Skolotāji',
         'students' => 'Audzēkņi',
         'beginner' => 'Iesācēja līmenis',
@@ -38,7 +35,7 @@ return [
         'Dalieties ar savu uzdevumu',
         'Vai vēlaties iegūt programmēšanas nedēļas balvas? Ja atbilde ir apstiprinoša, tad ļaujiet savam darbam izplatīties internetā!',
         'Pēc tam, kad uzdevums ir izpildīts, dalieties ar to Instagram.',
-        "Programmēšanas nedēļas laikā no 9. oktobra līdz 24. oktobrim katru dienu tiks izvēlēti uzvarētāji, kas tiks paziņoti mūsu Instagram kanālā, tādēļ atcerieties regulāri pārbaudīt saņemtos paziņojumus."
+        'Programmēšanas nedēļas laikā no 9. oktobra līdz 24. oktobrim katru dienu tiks izvēlēti uzvarētāji, kas tiks paziņoti mūsu Instagram kanālā, tādēļ atcerieties regulāri pārbaudīt saņemtos paziņojumus.'
     ],
     'share' => [
         'Kā dalīties ar uzdevumu(-iem) Instagram?',
@@ -51,7 +48,9 @@ return [
         'Pievienojiet #CodeWeekChallenge',
         'Pieminiet un atzīmējiet @CodeWeekEU',
         'Vai jūs labprāt dalītos ar savu(-iem) uzdevumu(-iem) Facebook?',
-        'ES programmēšanas nedēļas Facebook lapā (saite uz FB lapu) katru dienu tiks piesprausta jauna publikācija ar uzdevumu, un balvas ieguvējs tiks izvēlēts no tiem, kuri komentējuši šo publikāciju.',
+        'ES programmēšanas nedēļas',
+        'Facebook lapā',
+        'katru dienu tiks piesprausta jauna publikācija ar uzdevumu, un balvas ieguvējs tiks izvēlēts no tiem, kuri komentējuši šo publikāciju.',
         'Kā tā darbojas?',
         'Vienkārši atstājiet zem publikācijas komentāru ar saiti uz savu darbu.'
     ],
@@ -68,7 +67,7 @@ return [
         'jaunu uzdevumu savām publikācijām',
         'Facebook lapā',
         'Tad jums jāatstāj zem publikācijas komentārs ar saiti uz savu darbu',
-        "Programmēšanas nedēļā laikā no 9. oktobra līdz 24. oktobrim katru dienu tiks izvēlēti uzvarētāji, kas saņems balvas un tiks paziņoti mūsu Instagram un Facebook kanālos, tādēļ atcerieties regulāri pārbaudīt saņemtos paziņojumus."
+        'Programmēšanas nedēļā laikā no 9. oktobra līdz 24. oktobrim katru dienu tiks izvēlēti uzvarētāji, kas saņems balvas un tiks paziņoti mūsu Instagram un Facebook kanālos, tādēļ atcerieties regulāri pārbaudīt saņemtos paziņojumus.'
     ],
     'take-part' => [
         'Kādēļ piedalīties ES programmēšanas nedēļas spēku pārbaudē?',
@@ -91,5 +90,4 @@ return [
         'Facebook, Instagram vai Twitter',
         'Izmantojiet'
     ]
-
 ];
