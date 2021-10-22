@@ -15,6 +15,7 @@ class CreatePodcastsTable extends Migration {
             $table->id();
             $table->string('title');
             $table->string('filename');
+            $table->string('image');
             $table->dateTime('release_date');
             $table->text('description');
             $table->boolean('active')->default(true);

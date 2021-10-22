@@ -6,9 +6,12 @@ use App\Podcast;
 use App\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
-class PodcastPolicy
-{
+class PodcastPolicy {
     use HandlesAuthorization;
+
+    public function before(User $user, $ability) {
+        return $user->isAdmin();
+    }
 
     /**
      * Determine whether the user can view any models.
@@ -16,8 +19,7 @@ class PodcastPolicy
      * @param  \App\User  $user
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function viewAny(User $user)
-    {
+    public function viewAny(User $user) {
         //
     }
 
@@ -28,8 +30,7 @@ class PodcastPolicy
      * @param  \App\Podcast  $podcast
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, Podcast $podcast)
-    {
+    public function view(User $user, Podcast $podcast) {
         //
     }
 
@@ -39,8 +40,7 @@ class PodcastPolicy
      * @param  \App\User  $user
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function create(User $user)
-    {
+    public function create(User $user) {
         //
     }
 
@@ -51,8 +51,7 @@ class PodcastPolicy
      * @param  \App\Podcast  $podcast
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, Podcast $podcast)
-    {
+    public function update(User $user, Podcast $podcast) {
         //
     }
 
@@ -63,8 +62,7 @@ class PodcastPolicy
      * @param  \App\Podcast  $podcast
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, Podcast $podcast)
-    {
+    public function delete(User $user, Podcast $podcast) {
         //
     }
 
@@ -75,8 +73,7 @@ class PodcastPolicy
      * @param  \App\Podcast  $podcast
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, Podcast $podcast)
-    {
+    public function restore(User $user, Podcast $podcast) {
         //
     }
 
@@ -87,8 +84,7 @@ class PodcastPolicy
      * @param  \App\Podcast  $podcast
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, Podcast $podcast)
-    {
+    public function forceDelete(User $user, Podcast $podcast) {
         //
     }
 }
