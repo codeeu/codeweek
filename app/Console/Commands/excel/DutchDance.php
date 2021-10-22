@@ -41,7 +41,7 @@ class DutchDance extends Command {
 
         Excel::import(
             new DutchDanceEventsImport(),
-            'dutch-dance.xlsx',
+            'dutch-dance-2.xlsx',
             'excel'
         );
     }
