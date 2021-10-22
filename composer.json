@@ -12,7 +12,6 @@
         "ext-json": "*",
         "ext-zip": "*",
         "aws/aws-sdk-php": "^3.67",
-        "laravel-lang/lang": "^10.1",
         "consoletvs/charts": "^6.0",
         "ctessier/nova-advanced-image-field": "^1.0",
         "doctrine/dbal": "^2.8",
@@ -21,6 +20,7 @@
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "intervention/image": "^2.4",
+        "laravel-lang/lang": "^10.1",
         "laravel/framework": "^8.0",
         "laravel/helpers": "^1.2",
         "laravel/legacy-factories": "^1.1",
@@ -36,6 +36,7 @@
         "socialiteproviders/microsoft-azure": "^4.2",
         "spatie/laravel-activitylog": "^3.0",
         "spatie/laravel-cookie-consent": "^2.9",
+        "spatie/laravel-feed": "^4.0",
         "spatie/laravel-permission": "^3.0",
         "torann/geoip": "^1.0",
         "willvincent/feeds": "^2.0"
