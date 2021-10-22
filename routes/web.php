@@ -630,3 +630,4 @@ Route::get('headers', function (Request $request) {
 });
 
 Auth::routes();
+Route::feeds();
