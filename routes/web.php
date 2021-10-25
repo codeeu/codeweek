@@ -621,6 +621,8 @@ Route::get(
     'LeadingTeacherController@getCurrentToolkit'
 )->name('leading-teachers-document');
 
+Route::get('podcasts', 'PodcastsController@index')->name('podcasts');
+
 Route::get('headers', function (Request $request) {
     $headers = \Request::header();
 
@@ -628,3 +630,4 @@ Route::get('headers', function (Request $request) {
 });
 
 Auth::routes();
+Route::feeds();
