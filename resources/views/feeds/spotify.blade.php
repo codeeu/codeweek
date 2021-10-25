@@ -22,7 +22,7 @@
         <description><![CDATA[{{ $meta['description'] }}]]></description>
         <language>{{ $meta['language'] }}</language>
         <pubDate>{{ $meta['updated'] }}</pubDate>
-
+        <itunes:author>m.bailey@mcgroup.com</itunes:author>
         <itunes:owner>
             <itunes:author>Max Bailey</itunes:author>
             <itunes:email>m.bailey@mcgroup.com</itunes:email>
