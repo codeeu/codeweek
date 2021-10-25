@@ -27,7 +27,8 @@
             <itunes:author>Max Bailey</itunes:author>
             <itunes:email>m.bailey@mcgroup.com</itunes:email>
         </itunes:owner>
-        <author></author>
+        <author>Max Bailey</author>
+        <email>m.bailey@mcgroup.com</email>
         <itunes:category text="Coding"/>
         <itunes:type>episodic</itunes:type>
         <itunes:image
