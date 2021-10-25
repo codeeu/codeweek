@@ -37,9 +37,7 @@ class Podcast extends Model implements Feedable {
             ->title($this->title)
             ->summary($this->description)
             ->updated($this->updated_at)
-            ->enclosure(
-                'https://dts.podtrac.com/redirect.mp3/files.serialpodcast.org/sites/default/files/podcast/1422481890/serials01-e09.mp3'
-            )
+            ->enclosure($this->filename)
             ->enclosureType('audio/mpeg')
             ->enclosureLength(21830720)
             ->authorName('Max Bailey')
