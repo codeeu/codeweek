@@ -5,7 +5,7 @@
     <channel>
         <title><![CDATA[{{ $meta['title'] }}]]></title>
         <description><![CDATA[{{ $meta['description'] }}]]></description>
-        <link>https://dev.codeweek.eu/feed/podcasts</link>
+        <link>https://codeweek.eu/feed/podcasts</link>
         <image>
             <url>{{ $meta['image']}}</url>
             <title>{{$meta['title']}}</title>
@@ -13,7 +13,7 @@
         </image>
         <generator>Codeweek Podcasts</generator>
         <lastBuildDate>{{ $meta['updated'] }}</lastBuildDate>
-        <atom:link href="https://dev.codeweek.eu/feed/podcasts" rel="self" type="application/rss+xml"/>
+        <atom:link href="https://codeweek.eu/feed/podcasts" rel="self" type="application/rss+xml"/>
         <author><![CDATA[Max Bailey]]></author>
         <copyright><![CDATA[Max BaileyT]]></copyright>
         <language><![CDATA[en]]></language>
