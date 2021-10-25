@@ -42,7 +42,7 @@ class Podcast extends Model implements Feedable {
             ->enclosureLength(21830720)
             ->authorName('Max Bailey')
             ->authorEmail('m.bailey@mcgroup.com')
-            ->image('http://codeweek.test/images/podcasts/' . $this->image);
+            ->image('https://codeweek.eu/images/podcasts/' . $this->image);
     }
 
     public static function getFeedItems() {
