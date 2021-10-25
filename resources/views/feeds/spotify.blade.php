@@ -1,51 +1,57 @@
 <?=
-/* Using an echo tag here so the `<? ... ?>` won't get parsed as short tags */
-    '<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL ?>
-<rss xmlns:media="https://search.yahoo.com/mrss/"
-     xmlns:itunes="https://www.itunes.com/dtds/podcast-1.0.dtd"
-     xmlns:dcterms="https://purl.org/dc/terms/"
-     xmlns:spotify="https://www.spotify.com/ns/rss"
-     xmlns:psc="https://podlove.org/simple-chapters/"
-     version="2.0">
+'<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL ?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
     <channel>
         <title><![CDATA[{{ $meta['title'] }}]]></title>
-        <link>
-        <![CDATA[{{ url($meta['link']) }}]]></link>
-        @if(!empty($meta['image']))
-            <image>
-                <url>{{ $meta['image'] }}</url>
-                <title><![CDATA[{{ $meta['title'] }}]]></title>
-                <link>
-                <![CDATA[{{ url($meta['link']) }}]]></link>
-            </image>
-        @endif
         <description><![CDATA[{{ $meta['description'] }}]]></description>
-        <language>{{ $meta['language'] }}</language>
-        <pubDate>{{ $meta['updated'] }}</pubDate>
-        <itunes:author>m.bailey@mcgroup.com</itunes:author>
+        <link>
+        https://dev.codeweek.eu/feed/podcasts</link>
+        <image>
+            <url>
+                {{ $meta['image']}}
+            </url>
+            <title>$meta['title']</title>
+            <link>
+            https://dev.codeweek.eu/feed/podcasts
+            </link>
+        </image>
+        <generator>Codeweek Podcasts</generator>
+        <lastBuildDate>{{ $meta['updated'] }}</lastBuildDate>
+        <atom:link href="https://dev.codeweek.eu/feed/podcasts" rel="self" type="application/rss+xml"/>
+        <author><![CDATA[Max Bailey]]></author>
+        <copyright><![CDATA[Max BaileyT]]></copyright>
+        <language><![CDATA[en]]></language>
+        <itunes:author>Max Bailey</itunes:author>
+        <itunes:summary>{{$meta['description']}}</itunes:summary>
+        <itunes:type>episodic</itunes:type>
         <itunes:owner>
-            <itunes:author>Max Bailey</itunes:author>
+            <itunes:name>Max Bailey</itunes:name>
             <itunes:email>m.bailey@mcgroup.com</itunes:email>
         </itunes:owner>
-        <author>Max Bailey</author>
-        <email>m.bailey@mcgroup.com</email>
-        <itunes:category text="Coding"/>
-        <itunes:type>episodic</itunes:type>
+        <itunes:explicit>No</itunes:explicit>
+        <itunes:category text="Business">
+            <itunes:category text="Management"/>
+        </itunes:category>
         <itunes:image
                 href="{{$meta['image']}}"/>
-
         @foreach($items as $item)
             <item>
-                <guid isPermaLink="false">{{ $item->id }}</guid>
                 <title><![CDATA[{{ $item->title }}]]></title>
-                <media:title><![CDATA[{{ $item->title }}]]></media:title>
-                <description><![CDATA[{!! $item->summary !!}]]></description>
-                <media:description><![CDATA[{!! $item->summary !!}]]></media:description>
-                <media:content type="audio/mpeg" url="{{$item->enclosure}}"/>
+                <description><![CDATA[{!! $item->summary !!}]]>
+                </description>
+                <link>
+                https://dev.codeweek.eu/feed/podcasts</link>
+                <guid isPermaLink="false">{{ $item->id }}</guid>
+                <dc:creator><![CDATA[Max Bailey]]></dc:creator>
                 <pubDate>{{ $item->timestamp() }}</pubDate>
-                <itunes:duration>2700</itunes:duration>
                 <enclosure
-                        url="{{$item->enclosure}}" type="audio/mpeg" length="21830720"/>
+                        url="{{$item->enclosure}}"
+                        length="638812" type="audio/x-m4a"/>
+                <itunes:summary>{!! $item->summary !!}
+                </itunes:summary>
+                <itunes:explicit>No</itunes:explicit>
+                <itunes:duration>39</itunes:duration>
                 <itunes:image
                         href="{{$item->image}}"/>
             </item>
