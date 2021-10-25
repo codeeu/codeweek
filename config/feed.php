@@ -28,7 +28,7 @@ return [
              * a banner/logo; for RSS and JSON feeds, it's displayed as an icon.
              * An empty value omits the image attribute from the feed.
              */
-            'image' => 'https://codeweek.eu/images/podcasts/Banner_Podcast.png',
+            'image' => 'https://codeweek.eu/images/podcasts/cover.png',
 
             /*
              * The format of the feed.  Acceptable values are 'rss', 'atom', or 'json'.
