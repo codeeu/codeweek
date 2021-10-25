@@ -23,8 +23,11 @@
         <language>{{ $meta['language'] }}</language>
         <pubDate>{{ $meta['updated'] }}</pubDate>
 
-        <author>Max Bailey</author>
-        <itunes:author>Max Bailey</itunes:author>
+        <itunes:owner>
+            <itunes:author>Max Bailey</itunes:author>
+            <itunes:email>m.bailey@mcgroup.com</itunes:email>
+        </itunes:owner>
+        <author></author>
         <itunes:category text="Coding"/>
         <itunes:type>episodic</itunes:type>
         <itunes:image
