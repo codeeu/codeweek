@@ -23,6 +23,7 @@
         <language>{{ $meta['language'] }}</language>
         <pubDate>{{ $meta['updated'] }}</pubDate>
 
+        <author>Max Bailey</author>
         <itunes:author>Max Bailey</itunes:author>
         <itunes:category text="Coding"/>
         <itunes:type>episodic</itunes:type>
@@ -34,6 +35,7 @@
                 <guid isPermaLink="false">{{ $item->id }}</guid>
                 <title><![CDATA[{{ $item->title }}]]></title>
                 <media:title><![CDATA[{{ $item->title }}]]></media:title>
+                <description><![CDATA[{!! $item->summary !!}]]></description>
                 <media:description><![CDATA[{!! $item->summary !!}]]></media:description>
                 <media:content type="audio/mpeg" url="{{$item->enclosure}}"/>
                 <pubDate>{{ $item->timestamp() }}</pubDate>
