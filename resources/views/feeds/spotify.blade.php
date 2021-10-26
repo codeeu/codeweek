@@ -16,14 +16,14 @@
         <generator>Codeweek Podcasts</generator>
         <lastBuildDate>{{ $meta['updated'] }}</lastBuildDate>
         <atom:link href="https://codeweek.eu/feed/podcasts" rel="self" type="application/rss+xml"/>
-        <author><![CDATA[Max Bailey]]></author>
-        <copyright><![CDATA[Max BaileyT]]></copyright>
+        <author><![CDATA[EU Code Week]]></author>
+        <copyright><![CDATA[EU Code Week]]></copyright>
         <language><![CDATA[en]]></language>
-        <itunes:author>Max Bailey</itunes:author>
+        <itunes:author>EU Code Week</itunes:author>
         <itunes:summary>{{$meta['description']}}</itunes:summary>
         <itunes:type>episodic</itunes:type>
         <itunes:owner>
-            <itunes:name>Max Bailey</itunes:name>
+            <itunes:name>EU Code Week</itunes:name>
             <itunes:email>m.bailey@mcgroup.com</itunes:email>
         </itunes:owner>
         <itunes:explicit>No</itunes:explicit>
@@ -40,7 +40,7 @@
                 <link>
                 https://codeweek.eu/feed/podcasts</link>
                 <guid isPermaLink="false">{{ $item->id }}</guid>
-                <dc:creator><![CDATA[Max Bailey]]></dc:creator>
+                <dc:creator><![CDATA[EU Code Week]]></dc:creator>
                 <pubDate>{{ $item->timestamp() }}</pubDate>
                 <enclosure
                         url="{{$item->enclosure}}"
