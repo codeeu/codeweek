@@ -72,9 +72,9 @@ class IrelandEventsImport extends DefaultValueBinder implements
                 $row['start_time']
             ),
             'end_date' => $this->parseDate($row['end_date'], $row['end_time']),
-            'geoposition' => $row['longitude'] . ',' . $row['latitude'],
-            'longitude' => $row['latitude'],
-            'latitude' => $row['longitude'],
+            'geoposition' => $row['latitude'] . ',' . $row['longitude'],
+            'longitude' => $row['longitude'],
+            'latitude' => $row['latitude'],
             'language' => 'en'
         ]);
 
