@@ -45,7 +45,7 @@ class Podcast extends Model implements Feedable {
             ->enclosure($this->filename)
             ->enclosureType('audio/mpeg')
             ->enclosureLength($this->filesize)
-            ->authorName('Max Bailey')
+            ->authorName('EU Code Week')
             ->authorEmail('m.bailey@mcgroup.com')
             ->image('https://codeweek.eu/images/podcasts/' . $this->image);
     }
