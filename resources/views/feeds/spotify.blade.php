@@ -5,11 +5,13 @@
     <channel>
         <title><![CDATA[{{ $meta['title'] }}]]></title>
         <description><![CDATA[{{ $meta['description'] }}]]></description>
-        <link>https://codeweek.eu/feed/podcasts</link>
+        <link>
+        https://codeweek.eu/feed/podcasts</link>
         <image>
             <url>{{ $meta['image']}}</url>
             <title>{{$meta['title']}}</title>
-            <link>https://codeweek.eu/feed/podcasts</link>
+            <link>
+            https://codeweek.eu/feed/podcasts</link>
         </image>
         <generator>Codeweek Podcasts</generator>
         <lastBuildDate>{{ $meta['updated'] }}</lastBuildDate>
@@ -25,8 +27,8 @@
             <itunes:email>m.bailey@mcgroup.com</itunes:email>
         </itunes:owner>
         <itunes:explicit>No</itunes:explicit>
-        <itunes:category text="Business">
-            <itunes:category text="Management"/>
+        <itunes:category text="Education">
+            <itunes:category text="Technology"/>
         </itunes:category>
         <itunes:image
                 href="{{$meta['image']}}"/>
@@ -35,17 +37,18 @@
                 <title><![CDATA[{{ $item->title }}]]></title>
                 <description><![CDATA[{!! $item->summary !!}]]>
                 </description>
-                <link>https://codeweek.eu/feed/podcasts</link>
+                <link>
+                https://codeweek.eu/feed/podcasts</link>
                 <guid isPermaLink="false">{{ $item->id }}</guid>
                 <dc:creator><![CDATA[Max Bailey]]></dc:creator>
                 <pubDate>{{ $item->timestamp() }}</pubDate>
                 <enclosure
                         url="{{$item->enclosure}}"
-                        length="638812" type="audio/x-m4a"/>
+                        length="{{$item->enclosureLength}}" type="{{$item->enclosureType}}"/>
                 <itunes:summary>{!! $item->summary !!}
                 </itunes:summary>
                 <itunes:explicit>No</itunes:explicit>
-                <itunes:duration>39</itunes:duration>
+                <itunes:duration>{{$item->link}}</itunes:duration>
                 <itunes:image
                         href="{{$item->image}}"/>
             </item>
