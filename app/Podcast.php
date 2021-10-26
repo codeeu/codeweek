@@ -28,7 +28,7 @@ class Podcast extends Model implements Feedable {
             'summary' => $this->description,
             'updated' => $this->updated_at,
             'link' => $this->filename,
-            'authorName' => 'Max Bailey',
+            'authorName' => 'EU Code Week',
             'authorEmail' => 'm.bailey@mcgroup.com'
         ]);
     }*/
