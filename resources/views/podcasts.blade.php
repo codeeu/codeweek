@@ -27,13 +27,23 @@
             <div class="m-6">
 
                 <div class="leading-6">
-                    <p class="text-xl text-left text-blue-600">Something</p>
+                    <p class="text-xl text-left text-blue-600">EU Code Week Podcast Series</p>
                 </div>
 
+                <div class="mb-4">
+                    Welcome to the EU Code Week Podcast Series. We bring coding, computational thinking, robotics and
+                    innovation closer to you, your community and your school. Join Eugenia Casariego and Arjana Blazic
+                    as they explore a range of topics, from media literacy to robotics, with the help of expert guests –
+                    to empower you to equip your students with the skills to confront the challenges and opportunities
+                    posed by a digital future.
+                </div>
 
-                @foreach($podcasts as $podcast)
-                    {{$podcast->title}} - {{$podcast->description}}
-                @endforeach
+                <section class="grid grid-cols-1 gap-6 md:grid-cols-1">
+                    @foreach($podcasts as $key => $podcast)
+                        @include('2021._podcast', ['podcast' => $podcast, 'bg' => $key%2 ?'bg-gray-300':'bg-gray-200'])
+
+                    @endforeach
+                </section>
 
                 {{--                <div class="orange text-3xl">--}}
                 {{--                    @lang('challenges.main.1')--}}
