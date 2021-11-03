@@ -343,7 +343,7 @@ return [
         'materials' => [
             'Programmeertool:',
             'of download de',
-            'pc - versie',
+            'pc-versie',
             'mBlock is een programmeertaal die is gebaseerd op Scratch',
             'Deze uitdaging is ook gebaseerd op MakeX global Spark Competition, een creatief ontwerpprogramma voor kinderen van 6 tot 13 jaar. ',
             'Het deelnemende team zal over dit thema moeten nadenken en een oplossing uitdenken door software te programmeren en hardware te bouwen. ',
@@ -352,15 +352,15 @@ return [
             'of neem contact met ons op via'
         ]
     ],
-    'virtual - flower - field' => [
+    'virtual-flower-field' => [
         'title' => 'Creëer je virtuele bloemenweide',
         'author' =>
-            'Jadga Huegle – Meet and Code - coach en lid van het SAP Snap!-team',
-        'duration' => '30 - 60 minuten',
+            'Jadga Huegle – Meet and Code-coach en lid van het SAP Snap!-team',
+        'duration' => '30-60 minuten',
         'purposes' => [
             'Kennismaken met programmeren met een eenvoudig maar aansprekend project. ',
             'Leren dat programmeren kunstzinnig kan zijn en tot prachtige resultaten kan leiden. ',
-            'De herfst vrolijker maken met kleurige bloemen en de EU - programmeerweek. ',
+            'De herfst vrolijker maken met kleurige bloemen en de EU-programmeerweek. ',
             'De diversiteit laten zien van de bloemen in de wereld. ',
             'Bijdragen aan de doelstellingen voor duurzame ontwikkeling, met name doelstelling 13 – Klimaatverandering, door events te programmeren die leiden tot beter onderwijs over klimaatverandering door bewustwording te creëren. '
         ],
@@ -384,7 +384,7 @@ return [
     'haunted-house' => [
         'title' => 'Spookhuis in Hedy',
         'author' =>
-            'Felienne Hermans, Universiteit Leiden – Ramon Moorlag, I&I - CodeWeek NL',
+            'Felienne Hermans, Universiteit Leiden – Ramon Moorlag, I&I-CodeWeek NL',
         'audience' => 'Leraren en opvoedkundigen',
         'duration' => '1 of 2 uur, afhankelijk van aanwezige kennis',
         'purposes' => [
