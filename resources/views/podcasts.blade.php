@@ -10,7 +10,7 @@
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
                     <div class="text-xl text-white w-full">
-                        <div class="text-5xl text-white">EU Code Week Podcast Series</div>
+                        <div class="text-5xl text-white">EU Code Week Podcasts</div>
                     </div>
                 </div>
             </div>
@@ -27,7 +27,7 @@
             <div class="m-6">
 
                 <div class="leading-6">
-                    <p class="text-xl text-left text-blue-600">EU Code Week Podcast Series</p>
+                    <p class="text-xl text-left text-blue-600">EU Code Week Podcasts</p>
                 </div>
 
                 <div class="mb-4">
@@ -36,6 +36,9 @@
                     as they explore a range of topics, from media literacy to robotics, with the help of expert guests –
                     to empower you to equip your students with the skills to confront the challenges and opportunities
                     posed by a digital future.
+                </div>
+                <div class="mb-4">
+                    You can listen to the podcasts here or on <a href="https://open.spotify.com/show/5AHSuZvjLSdbaO381lv3Qk" target="_blank">Spotify</a>, <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9jb2Rld2Vlay5ldS9mZWVkL3BvZGNhc3Rz" target="_blank">Google podcasts</a> or <a href="https://podcasts.apple.com/us/podcast/eu-code-week-podcast-series/id1592076780" target="_blank">Apple podcasts</a>.
                 </div>
 
                 <section class="grid grid-cols-1 gap-6 md:grid-cols-1">
