@@ -27,10 +27,11 @@
             <div class="m-6">
 
                 <div class="leading-6">
-                    <p class="text-xl text-left text-blue-600">EU Code Week Podcasts</p>
+                    <h2 class="subtitle">EU Code Week Podcasts</h2>
+
                 </div>
 
-                <div class="mb-4">
+                <div class="mb-4 leading-7">
                     Welcome to the EU Code Week Podcast Series. We bring coding, computational thinking, robotics and
                     innovation closer to you, your community and your school. Join Eugenia Casariego and Arjana Blazic
                     as they explore a range of topics, from media literacy to robotics, with the help of expert guests –
