@@ -6,11 +6,20 @@
 
     <section id="codeweek-schools-page" class="codeweek-page">
 
-        <section class="flex flex-row justify-between" style="background-color: #FDAF31">
+{{--        <section class="codeweek-banner training" style="background-color: #FDAF31">--}}
+{{--            <div class="text">--}}
+{{--                <h1>EU Code Week Podcasts</h1>--}}
+{{--            </div>--}}
+{{--            <div class="image">--}}
+{{--                <img src="{{asset('images/banner_podcast.png')}}" class="static-image">--}}
+{{--            </div>--}}
+{{--        </section>--}}
+
+        <section class="flex flex-row justify-between codeweek-banner training" style="background-color: #FDAF31">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
-                    <div class="text-xl text-white w-full">
-                        <div class="text-5xl text-white uppercase">EU Code Week Podcasts</div>
+                    <div class="text-xl text-white w-full uppercase">
+                        <h1>EU Code Week Podcasts</h1>
                     </div>
                 </div>
             </div>
