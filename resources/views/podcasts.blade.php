@@ -10,7 +10,7 @@
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
                     <div class="text-xl text-white w-full">
-                        <div class="text-5xl text-white">EU Code Week Podcasts</div>
+                        <div class="text-5xl text-white uppercase">EU Code Week Podcasts</div>
                     </div>
                 </div>
             </div>
