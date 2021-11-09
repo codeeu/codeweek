@@ -12,8 +12,8 @@
     </div>
 
     <div class="flex-1 align-items-stretch h-full align-content-stretch {{$bg}} pl-4">
-        <div class="orange pt-2 pl-2 pr-4 text-xl mb-2">{{$podcast->title}}</div>
-        <div class="text-black pl-2 pb-2 pr-4 text-base italic">{{$podcast->description}}</div>
+        <h2 class="subtitle">{{$podcast->title}}</h2>
+        <div class="text-black pb-2 pr-4 text-base leading-5">{{$podcast->description}}</div>
         <audio controls>
             <source src="{{$podcast->filename}}" type="audio/mpeg">
             Your browser does not support the audio element.
