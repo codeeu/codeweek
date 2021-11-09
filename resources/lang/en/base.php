@@ -40,7 +40,8 @@ return [
         'sl' => 'Slovenian',
         'se' => 'Swedish',
         'sv' => 'Swedish',
-        'tr' => 'Turkish'
+        'tr' => 'Turkish',
+        'lu' => 'Luxembourgish'
     ],
 
     'languages_menu' => [
