@@ -13,4 +13,10 @@ class PodcastsController extends Controller {
 
         return view('podcasts', compact('podcasts'));
     }
+
+    public function upcoming(Request $request) {
+        $podcasts = Podcast::orderBy('release_date', 'DESC')->get();
+
+        return view('podcasts-upcoming', compact('podcasts'));
+    }
 }

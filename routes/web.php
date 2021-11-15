@@ -344,6 +344,10 @@ Route::group(['middleware' => ['role:super admin']], function () {
         'api/resource/item/',
         'Api\Resource\ItemController@store'
     )->name('resource_item');
+
+    Route::get('podcasts/upcoming', 'PodcastsController@upcoming')->name(
+        'podcasts_upcoming'
+    );
 });
 
 Route::group(['middleware' => ['role:super admin']], function () {
