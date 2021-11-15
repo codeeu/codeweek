@@ -21,6 +21,7 @@
                 <a href="javascript:void(null);">@lang('menu.resources')</a>
                 <ul>
                     <li><a href="{{route('coding@home')}}">@lang('menu.coding@home')</a></li>
+                    <li><a href="/podcasts">Podcasts</a></li>
                     <li><a href="{{route('challenges')}}">@lang('menu.challenges')</a></li>
                     <li><a href="{{route('resources_learn')}}">@lang('menu.learn')</a></li>
                     <li><a href="{{route('resources_teach')}}">@lang('menu.teach')</a></li>
@@ -44,7 +45,7 @@
                 <a href="javascript:void(null);">@lang('menu.about')</a>
                 <ul>
                     <li><a href="/about">Code Week</a></li>
-                    <li><a href="/podcasts">Podcasts</a></li>
+
                     <li><a href="/hackathons">Hackathons</a></li>
                     <li><a href="{{route('codeweek4all')}}">Code Week 4 All</a></li>
                     <li><a href="/dance">@lang('snippets.dance.menu')</a></li>
