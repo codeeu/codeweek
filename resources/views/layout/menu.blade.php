@@ -44,8 +44,8 @@
                 <a href="javascript:void(null);">@lang('menu.about')</a>
                 <ul>
                     <li><a href="/about">Code Week</a></li>
+                    <li><a href="/podcasts">Podcasts</a></li>
                     <li><a href="/hackathons">Hackathons</a></li>
-                    <li><a href="/teach-day">Teach Day</a></li>
                     <li><a href="{{route('codeweek4all')}}">Code Week 4 All</a></li>
                     <li><a href="/dance">@lang('snippets.dance.menu')</a></li>
                     <li><a href="/treasure-hunt">@lang('snippets.treasure-hunt.menu')</a></li>
