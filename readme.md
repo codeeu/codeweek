@@ -16,7 +16,7 @@ Begin by cloning this repository to your machine, and installing all Composer & 
 
 ```bash
 git clone https://github.com/codeeu/codeweek.git
-cd codeweek && composer install && npm install
+cd codeweek && composer install 
 ```
 
 ### Step 2
@@ -33,8 +33,17 @@ Create the database with the default values
 php artisan key:generate
 chmod -R 777 storage
 php artisan migrate:fresh --seed
+php artisan vue-i18n:generate
+npm install
 npm run dev
 ```
+
+### Step 5
+
+
+Edit the php config file and increase the 
+* PHP Max Memory Limit to 2048M instead of the default 512M
+* Max post size to 2048M
 
 ### Step 4
 
