@@ -6,13 +6,12 @@
 
     <section id="codeweek-schools-page" class="codeweek-page">
 
-        <section class="flex flex-row justify-between" style="background-color: #908CA5">
+
+        <section class="flex flex-row justify-between codeweek-banner training" style="background-color: #908CA5">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
-                    <div class="text-xl text-white w-full">
-
-                        <div class="text-5xl text-white">@lang('challenges.title')</div>
-                        <div class="text-3xl text-yellow-200">@lang('challenges.date')</div>
+                    <div class="text-xl text-white w-full uppercase">
+                        <h1>@lang('challenges.title')</h1>
                     </div>
                 </div>
             </div>
@@ -28,9 +27,7 @@
         <section class="codeweek-content-wrapper">
             <div class="m-6">
 
-                <div class="leading-6">
-                    <p class="text-xl text-left text-blue-600">@lang('challenges.main.0')</p>
-                </div>
+
 
                 <div class="orange text-3xl">
                     @lang('challenges.main.1')

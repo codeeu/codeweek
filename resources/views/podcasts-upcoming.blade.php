@@ -53,7 +53,7 @@
 
                 <section class="grid grid-cols-1 gap-6 md:grid-cols-1">
                     @foreach($podcasts as $key => $podcast)
-                        @include('2021._podcast', ['podcast' => $podcast, 'bg' => $key%2 ?'bg-gray-300':'bg-gray-200'])
+                        @include('2021._podcast-upcoming', ['podcast' => $podcast, 'bg' => $key%2 ?'bg-gray-300':'bg-gray-200'])
 
                     @endforeach
                 </section>

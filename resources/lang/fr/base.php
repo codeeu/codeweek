@@ -41,7 +41,8 @@ return [
         'me' => 'Monténégrin',
         'rs' => 'Serbe',
         'mt' => 'Maltais',
-        'tr' => 'Turc'
+        'tr' => 'Turc',
+        'lu' => 'Luxembourgeois'
     ],
 
     'resources_local_title' => 'Ressources pour le codage en',
