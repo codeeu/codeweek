@@ -1,6 +1,6 @@
 <?php
 
-   /*
+/*
    |--------------------------------------------------------------------------
    | Base Language Lines
    |--------------------------------------------------------------------------
@@ -10,7 +10,6 @@
    */
 
 return [
-
     'languages' => [
         'en' => 'Engleski',
         'fr' => 'Francuski',
@@ -35,24 +34,26 @@ return [
         'es' => 'Španjolski',
         'fi' => 'Finski',
         'lt' => 'Litavski',
+        'se' => 'Švedski',
         'sv' => 'Švedski',
         'al' => 'Albanski',
         'ba' => 'Bosanski',
         'mk' => 'Makedonski',
-        'me'=> 'Crnogorski',
+        'me' => 'Crnogorski',
         'rs' => 'Srpski',
         'tr' => 'turski'
     ],
 
-    'resources_local_title'=>'Resursi za programiranje iz',
-    'days'=>'Dani',
-    'hours'=>'Sati',
-    'minutes'=>'Minute',
-    'seconds'=>'Sekunde',
+    'resources_local_title' => 'Resursi za programiranje iz',
+    'days' => 'Dani',
+    'hours' => 'Sati',
+    'minutes' => 'Minute',
+    'seconds' => 'Sekunde',
     'still_have_question' => 'I dalje imate pitanje?',
     'drop_us_a_line' => 'Pišite nam!',
     'get_in_touch' => 'STUPITE U KONTAKT',
-    'footer_msg' => 'Društvena inicijativa koju vode volonteri, a podržava Europska komisija.',
+    'footer_msg' =>
+        'Društvena inicijativa koju vode volonteri, a podržava Europska komisija.',
     'email' => 'E-pošta',
     'display_email' => 'Prikaži e-poštu',
     'first_name' => 'Ime',
@@ -64,8 +65,8 @@ return [
     'choose a file' => 'Izaberite datoteku',
     'learning_bits' => 'Dijelovi za učenje',
     'codeweek' => 'CodeWeek',
-    'bring_codeweek_to_your_students' => 'Upoznajte svoje učenike s Tjednom programiranja',
+    'bring_codeweek_to_your_students' =>
+        'Upoznajte svoje učenike s Tjednom programiranja',
     'or' => 'ili',
-    "newsletter" => "Novosti"
-
+    'newsletter' => 'Novosti'
 ];

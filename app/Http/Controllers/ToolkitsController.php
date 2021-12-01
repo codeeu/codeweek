@@ -10,21 +10,11 @@ class ToolkitsController extends Controller
     public function get(){
 
 
-        $languages = explode(",",env("LOCALES"));
+        //$languages = explode(",",env("LOCALES"));
 
         $locale = App::getLocale();
 
 
-        $leaflets = [
-            "en"=>[
-                "url"=>"https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/leaflet/2019/Codeweek_2019_EN.pdf"
-            ],
-            "fr"=>[
-                "url"=>"https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/leaflet/2019/Codeweek_2019_FR.pdf"
-            ]
-
-        ];
-
-        return view('toolkits', compact(['languages','locale']));
+        return view('toolkits', compact(['locale']));
     }
 }

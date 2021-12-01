@@ -5,6 +5,7 @@ namespace App\Console\Commands\Importers;
 use App\Helpers\ImporterHelper;
 
 use App\HamburgRSSItem;
+use App\Helpers\MeetAndCodeHelper;
 use App\MeetAndCodeRSSItem;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
@@ -55,10 +56,12 @@ class MeetAndCode extends Command
 
 
         foreach ($items as $item){
-            $item->createEvent($techicalUser);
+            $event = $item->createEvent($techicalUser);
             $item->imported_at = Carbon::now();
             //TODO: check for updating the event if it already exists
             $item->save();
+            MeetAndCodeHelper::linkToUsers($event);
+
         }
 
         Log::info("Activities created from RSS Feed: " . count($items));

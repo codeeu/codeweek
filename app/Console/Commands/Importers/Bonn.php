@@ -2,10 +2,10 @@
 
 namespace App\Console\Commands\Importers;
 
-use App\BonnRSSItem;
 use App\Helpers\ImporterHelper;
 
 
+use App\RSSItems\BonnRSSItem;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Artisan;

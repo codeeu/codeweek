@@ -16,17 +16,12 @@ use Illuminate\Support\Facades\Mail;
 
 
 Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
-
     Route::get('/', function ($subdomain) {
-
         return redirect(Config::get('app.url') . '/' . $subdomain);
     });
 });
 
-
 Route::get('setlocale', function (Request $request) {
-
-
     $locale = $request->input('locale');
 
     if (in_array($locale, config('app.locales'))) {
@@ -34,9 +29,7 @@ Route::get('setlocale', function (Request $request) {
         session(['force_lang' => true]);
     }
     return back();
-
-})->name("setlocale");
-
+})->name('setlocale');
 
 //Static pages
 Route::get('/', 'HomeController@index')->name('home');
@@ -45,62 +38,178 @@ Route::get('/guide', 'StaticPageController@static')->name('guide');
 Route::get('/privacy', 'StaticPageController@static')->name('privacy');
 Route::get('/cookie', 'StaticPageController@static')->name('cookie');
 Route::get('/petition', 'StaticPageController@static')->name('petition');
-Route::get('/beambassador', 'StaticPageController@static')->name('beambassador');
+Route::get('/beambassador', 'StaticPageController@static')->name(
+    'beambassador'
+);
 Route::get('/about', 'StaticPageController@static')->name('about');
 Route::get('/our-values', 'StaticPageController@static')->name('our-values');
 Route::get('/partners', 'StaticPageController@static')->name('sponsors');
-Route::get('/codeweek4all', 'StaticPageController@static')->name('codeweek4all');
-Route::get('/code-hunting-game', 'StaticPageController@static')->name('code-hunting-game');
-Route::get('/codeweek2020', 'StaticPageController@static')->name('codeweek2020');
-Route::get('/treasure-hunt', 'StaticPageController@static')->name('treasure-hunt');
+Route::get('/codeweek4all', 'StaticPageController@static')->name(
+    'codeweek4all'
+);
+Route::get('/code-hunting-game', 'StaticPageController@static')->name(
+    'code-hunting-game'
+);
+Route::get('/codeweek2020', 'StaticPageController@static')->name(
+    'codeweek2020'
+);
+Route::get('/treasure-hunt', 'StaticPageController@static')->name(
+    'treasure-hunt'
+);
 Route::get('/dance', 'StaticPageController@static')->name('dance');
 Route::get('/why-coding', 'StaticPageController@static')->name('why-coding');
 
-
-Route::get('/remote-teaching', 'RemoteTeachingController@index')->name('remote-teaching');
-
+Route::get('/remote-teaching', 'RemoteTeachingController@index')->name(
+    'remote-teaching'
+);
 
 //Static training pages
 Route::get('/training', 'StaticPageController@static')->name('training.index');
-Route::get('/training/coding-without-computers', 'StaticPageController@static')->name('training.module-1');
-Route::get('/training/computational-thinking-and-problem-solving', 'StaticPageController@static')->name('training.module-2');
-Route::get('/training/visual-programming-introduction-to-scratch', 'StaticPageController@static')->name('training.module-3');
-Route::get('/training/creating-educational-games-with-scratch', 'StaticPageController@static')->name('training.module-4');
-Route::get('/training/making-robotics-and-tinkering-in-the-classroom', 'StaticPageController@static')->name('training.module-5');
-Route::get('/training/developing-creative-thinking-through-mobile-app-development', 'StaticPageController@static')->name('training.module-6');
-Route::get('/training/tinkering-and-making', 'StaticPageController@static')->name('training.module-7');
-Route::get('/training/coding-for-all-subjects', 'StaticPageController@static')->name('training.module-8');
-Route::get('/training/making-an-automaton-with-microbit', 'StaticPageController@static')->name('training.module-9');
-Route::get('/training/creative-coding-with-python', 'StaticPageController@static')->name('training.module-10');
-Route::get('/training/coding-for-inclusion', 'StaticPageController@static')->name('training.module-11');
-Route::get('/training/coding-for-sustainable-development-goals', 'StaticPageController@static')->name('training.module-12');
-Route::get('/training/introduction-to-artificial-intelligence-in-the-classroom', 'StaticPageController@static')->name('training.module-13');
-Route::get('/training/learning-in-the-age-of-intelligent-machines', 'StaticPageController@static')->name('training.module-14');
-Route::get('/training/mining-media-literacy', 'StaticPageController@static')->name('training.module-15');
+Route::get(
+    '/training/coding-without-computers',
+    'StaticPageController@static'
+)->name('training.module-1');
+Route::get(
+    '/training/computational-thinking-and-problem-solving',
+    'StaticPageController@static'
+)->name('training.module-2');
+Route::get(
+    '/training/visual-programming-introduction-to-scratch',
+    'StaticPageController@static'
+)->name('training.module-3');
+Route::get(
+    '/training/creating-educational-games-with-scratch',
+    'StaticPageController@static'
+)->name('training.module-4');
+Route::get(
+    '/training/making-robotics-and-tinkering-in-the-classroom',
+    'StaticPageController@static'
+)->name('training.module-5');
+Route::get(
+    '/training/developing-creative-thinking-through-mobile-app-development',
+    'StaticPageController@static'
+)->name('training.module-6');
+Route::get(
+    '/training/tinkering-and-making',
+    'StaticPageController@static'
+)->name('training.module-7');
+Route::get(
+    '/training/coding-for-all-subjects',
+    'StaticPageController@static'
+)->name('training.module-8');
+Route::get(
+    '/training/making-an-automaton-with-microbit',
+    'StaticPageController@static'
+)->name('training.module-9');
+Route::get(
+    '/training/creative-coding-with-python',
+    'StaticPageController@static'
+)->name('training.module-10');
+Route::get(
+    '/training/coding-for-inclusion',
+    'StaticPageController@static'
+)->name('training.module-11');
+Route::get(
+    '/training/coding-for-sustainable-development-goals',
+    'StaticPageController@static'
+)->name('training.module-12');
+Route::get(
+    '/training/introduction-to-artificial-intelligence-in-the-classroom',
+    'StaticPageController@static'
+)->name('training.module-13');
+Route::get(
+    '/training/learning-in-the-age-of-intelligent-machines',
+    'StaticPageController@static'
+)->name('training.module-14');
+Route::get(
+    '/training/mining-media-literacy',
+    'StaticPageController@static'
+)->name('training.module-15');
 
-Route::get('/resources/CodingAtHome', 'CodingAtHomeController@show')->name('coding@home');
-Route::view('/resources/CodingAtHome/introduction', 'codingathome.introduction')->name('codingathome-introduction');
-Route::view('/resources/CodingAtHome/the-explorer', 'codingathome.the-explorer')->name('codingathome-the-explorer');
-Route::view('/resources/CodingAtHome/right-and-left', 'codingathome.right-and-left')->name('codingathome-right-and-left');
-Route::view('/resources/CodingAtHome/keep-off-my-path', 'codingathome.keep-off-my-path')->name('codingathome-keep-off-my-path');
-Route::view('/resources/CodingAtHome/tug-of-war', 'codingathome.tug-of-war')->name('codingathome-tug-of-war');
-Route::view('/resources/CodingAtHome/explorer-without-footprints', 'codingathome.explorer-without-footprints')->name('codingathome-explorer-without-footprints');
-Route::view('/resources/CodingAtHome/walk-as-long-as-you-can', 'codingathome.walk-as-long-as-you-can')->name('codingathome-walk-as-long-as-you-can');
+Route::get('/resources/CodingAtHome', 'CodingAtHomeController@show')->name(
+    'coding@home'
+);
+Route::view(
+    '/resources/CodingAtHome/introduction',
+    'codingathome.introduction'
+)->name('codingathome-introduction');
+Route::view(
+    '/resources/CodingAtHome/the-explorer',
+    'codingathome.the-explorer'
+)->name('codingathome-the-explorer');
+Route::view(
+    '/resources/CodingAtHome/right-and-left',
+    'codingathome.right-and-left'
+)->name('codingathome-right-and-left');
+Route::view(
+    '/resources/CodingAtHome/keep-off-my-path',
+    'codingathome.keep-off-my-path'
+)->name('codingathome-keep-off-my-path');
+Route::view(
+    '/resources/CodingAtHome/tug-of-war',
+    'codingathome.tug-of-war'
+)->name('codingathome-tug-of-war');
+Route::view(
+    '/resources/CodingAtHome/explorer-without-footprints',
+    'codingathome.explorer-without-footprints'
+)->name('codingathome-explorer-without-footprints');
+Route::view(
+    '/resources/CodingAtHome/walk-as-long-as-you-can',
+    'codingathome.walk-as-long-as-you-can'
+)->name('codingathome-walk-as-long-as-you-can');
 //Route::view('/resources/CodingAtHome/ada-charles-roby', 'codingathome.ada-charles-roby')->name('codingathome-ada-charles-roby');
-Route::view('/resources/CodingAtHome/cody-and-roby', 'codingathome.cody-and-roby')->name('codingathome-cody-and-roby');
-Route::view('/resources/CodingAtHome/the-tourist', 'codingathome.the-tourist')->name('codingathome-the-tourist');
-Route::view('/resources/CodingAtHome/catch-the-robot', 'codingathome.catch-the-robot')->name('codingathome-catch-the-robot');
-Route::view('/resources/CodingAtHome/the-snake', 'codingathome.the-snake')->name('codingathome-the-snake');
-Route::view('/resources/CodingAtHome/storytelling', 'codingathome.storytelling')->name('codingathome-storytelling');
-Route::view('/resources/CodingAtHome/two-snakes', 'codingathome.two-snakes')->name('codingathome-two-snakes');
-Route::view('/resources/CodingAtHome/round-trip', 'codingathome.round-trip')->name('codingathome-round-trip');
-Route::view('/resources/CodingAtHome/meeting-point', 'codingathome.meeting-point')->name('codingathome-meeting-point');
-Route::view('/resources/CodingAtHome/follow-the-music', 'codingathome.follow-the-music')->name('codingathome-follow-the-music');
-Route::view('/resources/CodingAtHome/colour-everything', 'codingathome.colour-everything')->name('codingathome-colour-everything');
-Route::view('/resources/CodingAtHome/codyplotter-and-codyprinter', 'codingathome.codyplotter-and-codyprinter')->name('codingathome-codyplotter-and-codyprinter');
-Route::view('/resources/CodingAtHome/boring-pixels', 'codingathome.boring-pixels')->name('codingathome-boring-pixels');
-Route::view('/resources/CodingAtHome/turning-code-into-pictures', 'codingathome.turning-code-into-pictures')->name('codingathome-turning-code-into-pictures');
-
+Route::view(
+    '/resources/CodingAtHome/cody-and-roby',
+    'codingathome.cody-and-roby'
+)->name('codingathome-cody-and-roby');
+Route::view(
+    '/resources/CodingAtHome/the-tourist',
+    'codingathome.the-tourist'
+)->name('codingathome-the-tourist');
+Route::view(
+    '/resources/CodingAtHome/catch-the-robot',
+    'codingathome.catch-the-robot'
+)->name('codingathome-catch-the-robot');
+Route::view(
+    '/resources/CodingAtHome/the-snake',
+    'codingathome.the-snake'
+)->name('codingathome-the-snake');
+Route::view(
+    '/resources/CodingAtHome/storytelling',
+    'codingathome.storytelling'
+)->name('codingathome-storytelling');
+Route::view(
+    '/resources/CodingAtHome/two-snakes',
+    'codingathome.two-snakes'
+)->name('codingathome-two-snakes');
+Route::view(
+    '/resources/CodingAtHome/round-trip',
+    'codingathome.round-trip'
+)->name('codingathome-round-trip');
+Route::view(
+    '/resources/CodingAtHome/meeting-point',
+    'codingathome.meeting-point'
+)->name('codingathome-meeting-point');
+Route::view(
+    '/resources/CodingAtHome/follow-the-music',
+    'codingathome.follow-the-music'
+)->name('codingathome-follow-the-music');
+Route::view(
+    '/resources/CodingAtHome/colour-everything',
+    'codingathome.colour-everything'
+)->name('codingathome-colour-everything');
+Route::view(
+    '/resources/CodingAtHome/codyplotter-and-codyprinter',
+    'codingathome.codyplotter-and-codyprinter'
+)->name('codingathome-codyplotter-and-codyprinter');
+Route::view(
+    '/resources/CodingAtHome/boring-pixels',
+    'codingathome.boring-pixels'
+)->name('codingathome-boring-pixels');
+Route::view(
+    '/resources/CodingAtHome/turning-code-into-pictures',
+    'codingathome.turning-code-into-pictures'
+)->name('codingathome-turning-code-into-pictures');
 
 Route::get('/events', 'SearchController@search')->name('events_map');
 Route::get('/add', 'EventController@create')->name('create_event');
@@ -171,7 +280,6 @@ Route::post('api/event/report/{event}', 'ReportController@store')->middleware('a
 Route::group(['middleware' => ['role:super admin']], function () {
     Route::post('api/resource/level/', 'Api\Resource\LevelController@store')->name('resource_level');
     Route::post('api/resource/item/', 'Api\Resource\ItemController@store')->name('resource_item');
-
 });
 
 
@@ -231,7 +339,6 @@ Route::get('/profile', function () {
 Route::get('/leading-teachers/signup', 'LeadingTeachersSignup@index')->name('LT.signup')->middleware('auth');
 Route::view('/leading-teachers/success','leading-teachers.signup-form-success')->middleware('auth');
 Route::post('/leading-teachers/signup', 'LeadingTeachersSignup@store')->name('LT.signup.store')->middleware('auth');
-
 
 Route::group(['middleware' => ['role:super admin|leading teacher admin']], function () {
     Route::get('/leading-teachers/list', 'LeadingTeachersList@index')->name('leading_teachers_list')->middleware('auth');

@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'title' => 'EU Code Week HACKATONS',
     'subtitle' => 'oživotvorite svoje ideje!',
     'sections' => [
@@ -30,7 +29,7 @@ return [
             'title' => 'Kako izgleda hakaton?',
             'content' => [
                 1 => 'EU Code Week hackathon je putovanje koje počinje s online 24-satnim hakerskim maratonom. Iskusni mentori će voditi timove i tu će biti radionice koje osiguravaju prilike učesnicima da nauče nove vještine i da se zabave. Hakerski maraton je također odlična prilika da se učesnici umrežavaju i druže s ljudima u Evropskom tehničkom sektoru. Na kraju hakerskog maratona svaki tim će izložiti svoje rješenje stručnom žiriju. ',
-                2 => 'Deset najboljih timova će nastaviti s putovanjem na hakerskom maratonu i dobit će obuku i mentorstvo tokom ljeta. Pobjednici će zatim učestvovati u finalnom 12-satnom, licem u lice, nacionalnom hakerskom maratonu u septembru ili oktobru (koji će se održati online, ako situacija s javnim zdravljem ne bude dozvoljavala fizičke susrete).',
+                2 => 'Deset najboljih timova će nastaviti s putovanjem na hakerskom maratonu i dobit će obuku i mentorstvo tokom ljeta. Pobjednici će zatim učestvovati u finalnom 12-satnom, licem u lice, nacionalnom hakerskom maratonu u septembru ili oktobru (koji će se održati online, ako situacija s javnim zdravljem ne bude dozvoljavala fizičke susrete).'
             ]
         ],
         5 => [
@@ -41,51 +40,47 @@ return [
         ],
 
         6 => [
-            'title' => 'Partneri',
+            'title' => 'Partneri'
         ],
         7 => [
-            'title' => "Pridružite se zabavi!",
-        ],
-
+            'title' => 'Pridružite se zabavi!'
+        ]
     ],
 
     'cities' => [
-
         1 => [
-            'city' => "",
-            'country' => "Rumunija",
-            'date' => "17-18 april 2021"
+            'city' => '',
+            'country' => 'Rumunija',
+            'date' => 'od 25. do 26. septembar 2021'
         ],
         2 => [
-            'city' => "",
-            'country' => "Irska",
-            'date' => "26-27 april 2021"
+            'city' => '',
+            'country' => 'Irska',
+            'date' => 'od 23. do 24. septembar 2021'
         ],
         3 => [
-            'city' => "",
-            'country' => "Italija",
-            'date' => "7-8 maj 2021"
+            'city' => '',
+            'country' => 'Italija',
+            'date' => 'od 24. do 25. septembar 2021'
         ],
         4 => [
-            'city' => "",
-            'country' => "Grčka",
-            'date' => "7-8 maj 2021."
+            'city' => '',
+            'country' => 'Grčka',
+            'date' => '9 oktobar 2021'
         ],
         5 => [
-            'city' => "",
-            'country' => "Slovenija",
-            'date' => "od 18. do 19. septembra 2021"
+            'city' => '',
+            'country' => 'Slovenija',
+            'date' => 'od 18. do 19. septembar 2021'
         ],
         6 => [
-            'city' => "",
-            'country' => "Latvija",
-            'date' => "29-30 maj 2021"
-        ],
+            'city' => '',
+            'country' => 'Latvija',
+            'date' => '1 oktobar 2021'
+        ]
     ],
     'final' => [
         1 => 'Finale',
         2 => 'Septembar/oktobar 2021.'
     ]
-
-
 ];

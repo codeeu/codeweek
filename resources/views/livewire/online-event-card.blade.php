@@ -16,7 +16,7 @@
                 </div>
 
                 <div class="text-xs leading-5 text-gray-500 w-auto text-truncate">
-                    {{str_limit($event->description,200)}}
+                    {!!str_limit($event->description,200)!!}
                 </div>
             </div>
         </div>

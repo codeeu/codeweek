@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'title' => 'EU Code Week HACKATONS',
     'subtitle' => '¡haz realidad tus ideas!',
     'sections' => [
@@ -30,7 +29,7 @@ return [
             'title' => '¿Cómo es un hackatón?',
             'content' => [
                 1 => 'El hackatón de la Semana de la Programación de la UE es un viaje que arranca con un hackatón online de 24 horas. Expertos mentores orientarán y ayudarán a los equipos. También habrá talleres en los que los participantes podrán aprender y divertirse. El hackatón es también una excelente oportunidad para que los participantes hagan contactos y socialicen con personas del sector tecnológico europeo. Al término del hackatón, los equipos presentarán su solución ante un jurado formado por expertos. ',
-                2 => 'Los diez mejores equipos seguirán adelante en el hackatón y recibirán formación y orientación durante el verano. Los finalistas participarán en el hackatón final de 12 horas, que se celebrará de forma presencial en septiembre u octubre (a menos que la situación sanitaria no lo permita, en cuyo caso se celebrará online).',
+                2 => 'Los diez mejores equipos seguirán adelante en el hackatón y recibirán formación y orientación durante el verano. Los finalistas participarán en el hackatón final de 12 horas, que se celebrará de forma presencial en septiembre u octubre (a menos que la situación sanitaria no lo permita, en cuyo caso se celebrará online).'
             ]
         ],
         5 => [
@@ -41,52 +40,47 @@ return [
         ],
 
         6 => [
-            'title' => 'Socios',
+            'title' => 'Socios'
         ],
         7 => [
-            'title' => '¡Participa y diviértete!',
-        ],
-
+            'title' => '¡Participa y diviértete!'
+        ]
     ],
 
     'cities' => [
-
         1 => [
-            'city' => "TBA",
-            'country' => "Rumanía",
-            'date' => "17-18 abril 2021"
+            'city' => 'TBA',
+            'country' => 'Rumanía',
+            'date' => '25-26 septiembre 2021'
         ],
         2 => [
-            'city' => "TBA",
-            'country' => "Irlanda",
-            'date' => "26-27 April 2021"
+            'city' => 'TBA',
+            'country' => 'Irlanda',
+            'date' => '23-24 septiembre 2021'
         ],
         3 => [
-            'city' => "TBA",
-            'country' => "Italia",
-            'date' => "7-8 mayo 2021"
+            'city' => 'TBA',
+            'country' => 'Italia',
+            'date' => '24-25 septiembre 2021'
         ],
         4 => [
-            'city' => "TBA",
-            'country' => "Grecia",
-            'date' => "7-8 mayo 2021"
+            'city' => 'TBA',
+            'country' => 'Grecia',
+            'date' => '9 octubre 2021'
         ],
         5 => [
-            'city' => "TBA",
-            'country' => "Eslovenia",
-            'date' => "del 18 al 19 de septiembre de 2021"
+            'city' => 'TBA',
+            'country' => 'Eslovenia',
+            'date' => '18-19 septiembre 2021'
         ],
         6 => [
-            'city' => "TBA",
-            'country' => "Letonia",
-            'date' => "29-30 mayo 2021"
-        ],
+            'city' => 'TBA',
+            'country' => 'Letonia',
+            'date' => '1 octubre 2021'
+        ]
     ],
     'final' => [
         1 => 'La final se celebrará en',
         2 => 'septiembre/octubre 2021'
     ]
-
-
-
 ];
