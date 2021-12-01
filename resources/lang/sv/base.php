@@ -1,6 +1,6 @@
 <?php
 
-   /*
+/*
    |--------------------------------------------------------------------------
    | Base Language Lines
    |--------------------------------------------------------------------------
@@ -10,7 +10,6 @@
    */
 
 return [
-
     'languages' => [
         'en' => 'engelska',
         'fr' => 'franska',
@@ -35,24 +34,26 @@ return [
         'es' => 'spanska',
         'fi' => 'finska',
         'lt' => 'litauiska',
+        'se' => 'svenska',
         'sv' => 'svenska',
         'al' => 'albanska',
         'ba' => 'bosniska',
         'mk' => 'makedonska',
-        'cnr'=> 'montenegrinska',
+        'cnr' => 'montenegrinska',
         'sr' => 'serbiska',
         'tr' => 'Turkiska'
     ],
 
-    'resources_local_title'=>'Kodningsresurser från',
-    'days'=>'Dagar',
-    'hours'=>'Timmar',
-    'minutes'=>'Minuter',
-    'seconds'=>'Sekunder',
+    'resources_local_title' => 'Kodningsresurser från',
+    'days' => 'Dagar',
+    'hours' => 'Timmar',
+    'minutes' => 'Minuter',
+    'seconds' => 'Sekunder',
     'still_have_question' => 'Har du fortfarande frågor?',
     'drop_us_a_line' => 'Skicka ett e-postmeddelande!',
     'get_in_touch' => 'KONTAKTA OSS',
-    'footer_msg' => 'Ett gräsrotsinitiativ som drivs av frivilliga och stöttas av Europeiska kommissionen.',
+    'footer_msg' =>
+        'Ett gräsrotsinitiativ som drivs av frivilliga och stöttas av Europeiska kommissionen.',
     'email' => 'E-post',
     'display_email' => 'Visa e-post',
     'first_name' => 'Förnamn',
@@ -66,6 +67,5 @@ return [
     'codeweek' => 'CodeWeek',
     'bring_codeweek_to_your_students' => 'Låt eleverna delta i Code Week',
     'or' => 'eller',
-    "newsletter" => "Nyhetsbrev"
-
+    'newsletter' => 'Nyhetsbrev'
 ];

@@ -3,10 +3,11 @@
 namespace App\Console\Commands\Importers;
 
 
-use App\BadenRSSItem;
+
 use App\Helpers\ImporterHelper;
 
 
+use App\RSSItems\BadenRSSItem;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Artisan;
@@ -50,7 +51,7 @@ class Baden extends Command
     {
         Log::info("Loading Baden API Items in Database");
 
-        $techicalUser = ImporterHelper::getTechnicalUser("germany-technical");
+        $techicalUser = ImporterHelper::getTechnicalUser("baden-technical");
 
         $items = BadenRSSItem::whereNull('imported_at')->get();
 

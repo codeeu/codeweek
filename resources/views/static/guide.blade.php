@@ -59,18 +59,18 @@
             <p>@lang('snippets.guide.tutorials.1') <a href="{{route('training.index')}}">@lang('snippets.guide.tutorials.2')</a> @lang('snippets.guide.tutorials.3')</p>
 
             <h2>@lang('guide.toolkits.title')</h2>
-            <ul>
-                <li>
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/EU%2BCode%2BWeek%2B2019%2BCommunications%2BToolkit.zip">
-                        @lang('guide.toolkits.communication_toolkit')
-                    </a>
-                </li>
-                <li>
-                    <a href="https://s3-eu-west-1.amazonaws.com/codeweek-s3/docs/EU%2BCode%2BWeek%2B2019%2BTeachers%2BToolkit.zip">
-                        @lang('guide.toolkits.teachers_toolkit')
-                    </a>
-                </li>
-            </ul>
+
+
+
+                <ul>
+                    <li>
+
+                    @include('_tookits')
+
+                </ul>
+
+
+
 
             <h2>@lang('guide.questions.title')</h2>
             @lang('guide.questions.content')

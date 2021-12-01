@@ -14,9 +14,8 @@ use Illuminate\Http\Request;
 */
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
-
     return $request->user();
 });
 
-Route::get('hamburg', 'Api\HamburgController@index');
-
+Route::get('events/geobox', 'Api\EventsController@geobox');
+Route::get('events/germany', 'Api\EventsController@germany');

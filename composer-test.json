@@ -8,11 +8,11 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": "^7.3",
+        "php": "^7.4|^8.0",
         "ext-json": "*",
         "ext-zip": "*",
         "aws/aws-sdk-php": "^3.67",
-        "caouecs/laravel-lang": "~3.0",
+        "laravel-lang/lang": "^10.1",
         "consoletvs/charts": "^6.0",
         "ctessier/nova-advanced-image-field": "^1.0",
         "doctrine/dbal": "^2.8",
@@ -24,14 +24,16 @@
         "laravel/framework": "^8.0",
         "laravel/helpers": "^1.2",
         "laravel/legacy-factories": "^1.1",
+        "laravel/nova": "~3.0",
         "laravel/socialite": "^5.0",
         "laravel/tinker": "^2.0",
         "league/flysystem-aws-s3-v3": "^1.0",
         "livewire/livewire": "^2.0",
         "maatwebsite/excel": "^3.1",
         "martinlindhe/laravel-vue-i18n-generator": "dev-l8",
+        "mediconesystems/livewire-datatables": "^0.6.3",
         "predis/predis": "^1.1",
-        "socialiteproviders/microsoft-azure": "^3.0",
+        "socialiteproviders/microsoft-azure": "^4.2",
         "spatie/laravel-activitylog": "^3.0",
         "spatie/laravel-cookie-consent": "^2.9",
         "spatie/laravel-permission": "^3.0",
@@ -41,7 +43,7 @@
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.2",
         "barryvdh/laravel-ide-helper": "^2.4",
-        "fzaninotto/faker": "^1.4",
+        "fakerphp/faker": "^1.9.1",
         "laracasts/generators": "^1.1",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^5.0",
@@ -91,6 +93,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/codeeu/laravel-vue-i18n-generator"
+        },
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
         }
     ],
     "minimum-stability": "dev",

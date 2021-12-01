@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Log;
 
 class Baden extends Command
 {
+
+    use GermanTraits;
     /**
      * The name and signature of the console command.
      *
@@ -51,61 +53,23 @@ class Baden extends Command
     public function handle()
     {
 
+        $city = 'Baden';
+
         $url = "https://bw.codeweek.de/?tx_codeweekevents_api[action]=listForEu&tx_codeweekevents_api[controller]=Api&tx_codeweekevents_api[format]=.json&tx_typoscriptrendering[context]={%22record%22%3A%22pages_1%22%2C%22path%22%3A%22tt_content.list.20.codeweekevents_api%22}&cHash=74bb9d71d62e381ebe95b33c1e197943";
-        dump("Loading Baden events");
+        dump("Loading $city events");
 
         $response = Http::get($url);
 
         $json = $response->json();
 
-
-
-        $new = 0;
-        $updated = 0;
-
-        foreach ($json as $item) {
-
-            $RSSitem = new BadenRSSItem();
-
-            $RSSitem->uid = $item['uid'];
-            $RSSitem->title = $item['title'];
-            $RSSitem->description = $item['description'];
-            $RSSitem->organizer = $item['organizer'];
-            $RSSitem->photo = $item['photo'];
-            $RSSitem->eventEndDate = $item['eventEndDate'];
-            $RSSitem->eventStartDate = $item['eventStartDate'];
-            $RSSitem->latitude = $item['latitude'];
-            $RSSitem->longitude = $item['longitude'];
-            $RSSitem->location = $item['location'];
-            $RSSitem->user_company = $item['user']['company'];
-            $RSSitem->user_email = $item['user']['email'];
-            $RSSitem->user_publicEmail = $item['user']['publicEmail'];
-            $RSSitem->user_type = $item['user']['type']['identifier'];
-            $RSSitem->user_website = $item['user']['www'];
-            $RSSitem->activity_type = $item['type']['identifier'];
-            $RSSitem->tags = trim(implode(";",Arr::pluck($item['tags'],'title')));
-            $RSSitem->themes = trim(implode(",",Arr::pluck($item['themes'],'identifier')));
-            $RSSitem->audience = trim(implode(",",Arr::pluck($item['audience'],'identifier')));
-
-
-            try {
-
-//                Log::info($RSSitem);
-                $RSSitem->save();
-
-
-                $new++;
-
-            } catch (\PDOException $exception) {
-
-                if ($exception->getCode() !== '23000') {
-                    Log::error($exception->errorInfo);
-                }
-
-            }
-
+        if (is_null($json)){
+            Log::info("!!! No data in feed from $city API:");
+            return 0;
         }
-        Log::info("New items imported from Baden API: " . $new);
+
+        $this->createRSSItem($json, $city);
+
+
 
         return Artisan::call("import:baden");
 

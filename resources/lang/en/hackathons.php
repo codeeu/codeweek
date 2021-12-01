@@ -1,8 +1,7 @@
 <?php
 
 return [
-
-    'title' => 'EU Code Week HACKATONS',
+    'title' => 'EU Code Week HACKATHONS',
     'subtitle' => 'Bring your ideas to life!',
     'sections' => [
         1 => [
@@ -30,7 +29,7 @@ return [
             'title' => 'What does a hackathon look like?',
             'content' => [
                 1 => 'The EU Code Week hackathon is a journey that kicks-off with an online 24-hour hackathon. Experienced mentors will coach the teams and there will be workshops providing opportunities for participants to learn new skills and have fun. The hackathon is also an excellent opportunity for participants to network and socialise with people in the European tech sector. At the end of the hackathon each team will pitch their solution to an expert jury. ',
-                2 => 'The ten best teams will continue their hackathon journey and receive training and mentoring over the summer. The winners will then take part in the final 12-hour face-to-face national hackathon in September or October (which will take place online, if the public health situation does not allow for a physical meet-up).',
+                2 => 'The ten best teams will continue their hackathon journey and receive training and mentoring over the summer. The winners will then take part in the final 12-hour face-to-face national hackathon in September or October (which will take place online, if the public health situation does not allow for a physical meet-up).'
             ]
         ],
         5 => [
@@ -41,52 +40,47 @@ return [
         ],
 
         6 => [
-            'title' => 'Partners',
+            'title' => 'Partners'
         ],
         7 => [
-            'title' => 'Join in the fun!',
-        ],
-
+            'title' => 'Join in the fun!'
+        ]
     ],
 
     'cities' => [
-
         1 => [
-            'city' => "TBA",
-            'country' => "Romania",
-            'date' => "17-18 April 2021"
+            'city' => 'TBA',
+            'country' => 'Romania',
+            'date' => '25-26 September 2021'
         ],
         2 => [
-            'city' => "TBA",
-            'country' => "Ireland",
-            'date' => "26-27 April 2021"
+            'city' => 'TBA',
+            'country' => 'Ireland',
+            'date' => '23-24 September 2021'
         ],
         3 => [
-            'city' => "TBA",
-            'country' => "Italy",
-            'date' => "7-8 May 2021"
+            'city' => 'TBA',
+            'country' => 'Italy',
+            'date' => '24-25 September 2021'
         ],
         4 => [
-            'city' => "TBA",
-            'country' => "Greece",
-            'date' => "7-8 May 2021"
+            'city' => 'TBA',
+            'country' => 'Greece',
+            'date' => '9 October 2021'
         ],
         5 => [
-            'city' => "TBA",
-            'country' => "Slovenia",
-            'date' => "18-19 September 2021"
+            'city' => 'TBA',
+            'country' => 'Slovenia',
+            'date' => '18-19 September 2021'
         ],
         6 => [
-            'city' => "TBA",
-            'country' => "Latvia",
-            'date' => "29-30 May 2021"
-        ],
+            'city' => 'TBA',
+            'country' => 'Latvia',
+            'date' => '1 October 2021'
+        ]
     ],
     'final' => [
         1 => 'Final in',
         2 => 'September/October 2021'
     ]
-
-
-
 ];

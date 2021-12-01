@@ -13,8 +13,7 @@ use Illuminate\Support\Facades\Log;
 use Livewire\Component;
 use Livewire\WithPagination;
 
-class OnlineCalendar extends Component
-{
+class OnlineCalendar extends Component {
     use WithPagination;
 
     public $events;
@@ -32,16 +31,14 @@ class OnlineCalendar extends Component
         'highlighted_status' => 'FEATURED'
     ];
 
-
-    public function mount()
-    {
-
+    public function mount() {
         $this->selectedLanguage = strtolower(App::getLocale());
         $this->selectedYear = Carbon::now()->year;
         $this->selectedMonth = Carbon::now()->month;
 
-
-        $byMonths = Event::selectRaw('year(start_date) year, month(start_date) month, monthname(start_date) monthname, count(*) data')
+        $byMonths = Event::selectRaw(
+            'year(start_date) year, month(start_date) month, monthname(start_date) monthname, count(*) data'
+        )
             ->where($this->whereClause)
             ->where('start_date', '>=', Carbon::now())
             ->groupBy('year', 'month')
@@ -51,23 +48,22 @@ class OnlineCalendar extends Component
         $this->months = [];
 
         foreach ($byMonths as $result) {
-            $this->months[$result->month . "/" . $result->year] = $result->monthname . " " . $result->year;
+            $this->months[$result->month . '/' . $result->year] =
+                $result->monthname . ' ' . $result->year;
         }
 
         //Go back to start of array to get the first item
         reset($this->months);
-        $parts = explode("/", key($this->months));
-        if ($parts[0] !== $this->selectedMonth){
+        $parts = explode('/', key($this->months));
+        if ($parts[0] !== $this->selectedMonth) {
             $this->selectedMonth = $parts[0];
         }
 
-        $this->selectedDate = $this->selectedMonth . "/" . $this->selectedYear;
-
+        $this->selectedDate = $this->selectedMonth . '/' . $this->selectedYear;
     }
 
-    public function render()
-    {
-        $parts = explode("/",$this->selectedDate);
+    public function render() {
+        $parts = explode('/', $this->selectedDate);
         $this->selectedMonth = $parts[0];
         $this->selectedYear = $parts[1];
 
@@ -78,13 +74,12 @@ class OnlineCalendar extends Component
             ->orderBy('start_date')
             ->get();
 
-
         $this->events->map(function ($event) {
             $event->title = str_limit($event->title, 50);
             $event->start_date = Carbon::parse($event->start_date);
         });
 
-        if ($this->selectedLanguage !== "") {
+        if ($this->selectedLanguage !== '') {
             $this->filteredEvents = $this->events->filter(function ($event) {
                 return $event->language == $this->selectedLanguage;
             });
@@ -98,13 +93,14 @@ class OnlineCalendar extends Component
 
         //Log::info($this->selectedDate);
 
-
         $countries = CountriesQuery::withOnlineEvents('FEATURED');
 
         $countryNames = $this->getCountryNamesFromEvents($this->events);
 
-        $languages = $this->events->groupBy('language')->keys()->all();
-
+        $languages = $this->events
+            ->groupBy('language')
+            ->keys()
+            ->all();
 
         return view('livewire.online-calendar', [
             'countries' => $countries,
@@ -112,22 +108,22 @@ class OnlineCalendar extends Component
             'languages' => $languages,
             'filteredEvents' => $this->filteredEvents->paginate(50)
         ]);
-
     }
 
     /**
      * @param $events
      * @return mixed
      */
-    private function getCountryNamesFromEvents($events)
-    {
-        $country_codes = $events->groupBy('country_iso')->keys()->all();
+    private function getCountryNamesFromEvents($events) {
+        $country_codes = $events
+            ->groupBy('country_iso')
+            ->keys()
+            ->all();
 
-        $countriesObjects = Country::whereIn("iso", $country_codes)->get();
+        $countriesObjects = Country::whereIn('iso', $country_codes)->get();
         $countryNames = $countriesObjects->mapWithKeys(function ($item) {
-            return [$item['iso'] => __("countries." . $item['name'])];
+            return [$item['iso'] => __('countries.' . $item['name'])];
         });
         return $countryNames;
     }
-
 }

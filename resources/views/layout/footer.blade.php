@@ -5,10 +5,14 @@
                 @lang('base.still_have_question') @lang('base.drop_us_a_line')
             </div>
             <div class="get-in-touch">
-                @if(Route::current() && Route::current()->getName() == 'community')
-                    <a href="mailto:info@codeweek.eu"><div class="button">@lang('base.get_in_touch')</div></a>
+                @if(Route::current() && Route::current()->getName() == 'ambassadors')
+                    <a href="mailto:info@codeweek.eu">
+                        <div class="button">@lang('base.get_in_touch')</div>
+                    </a>
                 @else
-                    <a href="/community"><div class="button">@lang('base.get_in_touch')</div></a>
+                    <a href="/ambassadors">
+                        <div class="button">@lang('base.get_in_touch')</div>
+                    </a>
                 @endif
 
                 <div>
@@ -58,6 +62,14 @@
                 <a href="https://www.youtube.com/channel/UCw30ZaWtCvGb4yudW6tCXAA" target="_blank">
                     <div style="margin-right: 4px"><img src="/images/youtube.svg" alt="Youtube" class="button-icon"></div>
                     Youtube
+                </a>
+            </div>
+
+            <div class="social-network">
+                <a href="https://github.com/codeeu/codeweek" target="_blank">
+                    <div style="margin-right: 4px"><img src="/images/github.svg" alt="Github" class="button-icon">
+                    </div>
+                    Github
                 </a>
             </div>
 

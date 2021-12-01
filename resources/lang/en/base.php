@@ -1,6 +1,6 @@
 <?php
 
-   /*
+/*
    |--------------------------------------------------------------------------
    | Base Language Lines
    |--------------------------------------------------------------------------
@@ -10,7 +10,6 @@
    */
 
 return [
-
     'languages' => [
         'al' => 'Albanian',
         'ba' => 'Bosnian',
@@ -39,8 +38,10 @@ return [
         'rs' => 'Serbian',
         'sk' => 'Slovak',
         'sl' => 'Slovenian',
+        'se' => 'Swedish',
         'sv' => 'Swedish',
-        'tr' => 'Turkish'
+        'tr' => 'Turkish',
+        'lu' => 'Luxembourgish'
     ],
 
     'languages_menu' => [
@@ -75,23 +76,22 @@ return [
         'tr' => 'Türkçe'
     ],
 
-    'resources_local_title'=>'Coding resources from',
-    'days'=>'Days',
-    'hours'=>'Hours',
-    'minutes'=>'Minutes',
-    'seconds'=>'Seconds',
+    'resources_local_title' => 'Coding resources from',
+    'days' => 'Days',
+    'hours' => 'Hours',
+    'minutes' => 'Minutes',
+    'seconds' => 'Seconds',
 
-
-
-    'day'=>'Day',
-    'hour'=>'Hour',
-    'minute'=>'Minute',
-    'second'=>'Second',
+    'day' => 'Day',
+    'hour' => 'Hour',
+    'minute' => 'Minute',
+    'second' => 'Second',
 
     'still_have_question' => 'Still have a question?',
     'drop_us_a_line' => 'Just drop us a line!',
     'get_in_touch' => 'GET IN TOUCH',
-    'footer_msg' => 'A grassroots initiative run by volunteers and supported by the European Commission.',
+    'footer_msg' =>
+        'A grassroots initiative run by volunteers and supported by the European Commission.',
 
     'email' => 'Email',
     'display_email' => 'Display Email',
@@ -109,7 +109,6 @@ return [
 
     'or' => 'or',
 
-    "receive emails" => "Receive our emails",
-    "newsletter" => "Newsletter"
-
+    'receive emails' => 'Receive our emails',
+    'newsletter' => 'Newsletter'
 ];
