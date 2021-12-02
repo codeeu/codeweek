@@ -1,19 +1,22 @@
 <?php
 
-
 return [
-    'when-title' => 'EU Code Week 2021 anordnas mellan den 9 och 24 oktober.',
-    'when-text' => '<p>EU Code Week är ett gräsrotsinitiativ som hyllar kreativitet, problemlösning och samarbete via programmering och andra tekniska aktiviteter. Tanken är att göra programmering mer synligt, att visa unga, vuxna och äldre hur man kan förverkliga idéer med kod, att avmystifiera dessa färdigheter och få motiverade människor att lära sig tillsammans.</p>',
+    'when-title' => 'EU Code Week 2022 anordnas mellan den 8 och 23 oktober.',
+    'when-text' =>
+        '<p>EU Code Week är ett gräsrotsinitiativ som hyllar kreativitet, problemlösning och samarbete via programmering och andra tekniska aktiviteter. Tanken är att göra programmering mer synligt, att visa unga, vuxna och äldre hur man kan förverkliga idéer med kod, att avmystifiera dessa färdigheter och få motiverade människor att lära sig tillsammans.</p>',
     'codeweek_in_numbers-title' => 'Code Week i siffror',
     'codeweek_in_numbers-text' => '<p>År 2019 deltog 4,2 miljoner personer i över 80 länder världen runt i EU Code Week.</p>
                     <p>Genomsnittsdeltagaren var 11 år och 49 % av deltagarna 2019 var kvinnor eller flickor. 92 % av EU Code Week-evenemangen ägde rum i skolor, vilket visar att insatserna för att stärka lärarna under 2019 års kampanj har varit lyckade.</p>
                     <p>Vem som helst är välkommen att organisera eller delta i en aktivitet. Välj ett ämne och en målgrupp och <a href="/add">lägg till din aktivitet</a> på <a href="/events">kartan</a></p>',
     'run_by_volunteers-title' => 'Leds av volontärer',
-    'run_by_volunteers-text' => '<p>EU Code Week organiseras av frivilliga. En eller flera <a href="/ambassadors">ambassadörer för Code Week</a> samordnar initiativet i de olika länderna, men vem som helst kan organisera en aktivitet och lägga till den på kartan på <a href="/">codeweek.eu</a>.</p>',
+    'run_by_volunteers-text' =>
+        '<p>EU Code Week organiseras av frivilliga. En eller flera <a href="/ambassadors">ambassadörer för Code Week</a> samordnar initiativet i de olika länderna, men vem som helst kan organisera en aktivitet och lägga till den på kartan på <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'Stöds av Europeiska kommissionen',
-    'supported_by_commission-text' => '<p>EU Code Week lanserades 2013 av Young Advisors for the Digital Agenda Europe. Europeiska kommissionen stöder EU Code Week som en del av strategin för en <a href="http://ec.europa.eu/priorities/digital-single-market/">digital inre marknad</a> och uppmuntrar i synnerhet skolor att delta i initiativet i den <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">digitala utbildningsplanen</a>.</p>',
+    'supported_by_commission-text' =>
+        '<p>EU Code Week lanserades 2013 av Young Advisors for the Digital Agenda Europe. Europeiska kommissionen stöder EU Code Week som en del av strategin för en <a href="http://ec.europa.eu/priorities/digital-single-market/">digital inre marknad</a> och uppmuntrar i synnerhet skolor att delta i initiativet i den <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">digitala utbildningsplanen</a>.</p>',
     'schools-title' => 'Skolor',
-    'schools-text' => '<p>Skolor på alla nivåer och lärare i alla ämnen är särskilt inbjudna att delta i EU Code Week så att eleverna får en möjlighet att utforska digital kreativitet och kodning. Läs mer om initiativet och om hur du kan organisera en aktivitet på webbsidan för lärare: <a href="/schools">CodeWeek.eu/Schools</a></p>',
+    'schools-text' =>
+        '<p>Skolor på alla nivåer och lärare i alla ämnen är särskilt inbjudna att delta i EU Code Week så att eleverna får en möjlighet att utforska digital kreativitet och kodning. Läs mer om initiativet och om hur du kan organisera en aktivitet på webbsidan för lärare: <a href="/schools">CodeWeek.eu/Schools</a></p>',
     'why_coding-title' => 'Varför kodning?',
     'why_coding-text' => '<p>Det handlar om Pia, som kände att hon var tvungen att studera juridik, trots att hon alltid gillat matte och datorer. Det handlar om Mark, som har en idé om ett bättre socialt nätverk, men som inte kan bygga det själv. Det handlar om Alice, som drömmer om att tillverka robotar eftersom hon inte får ha en katt för sina föräldrar.</p>
 
@@ -29,6 +32,7 @@ return [
                         </blockquote>
                     </p>',
     'join_codeweek-title' => 'Delta i EU Code Week',
-    'join_codeweek-text' => '<p>Delta i EU Code Week genom att <a href="/guide">organisera en kodningsaktivitet</a> på din ort, delta i <a href="/codeweek4all">Code Week 4 All Challenge</a> och andra aktiviteter som förenar närsamhällen och går över gränserna. Eller hjälp oss att sprida information om Code Week som <a href="/ambassadors">ambassadör för EU Code Week</a> i ditt land!</p>',
+    'join_codeweek-text' =>
+        '<p>Delta i EU Code Week genom att <a href="/guide">organisera en kodningsaktivitet</a> på din ort, delta i <a href="/codeweek4all">Code Week 4 All Challenge</a> och andra aktiviteter som förenar närsamhällen och går över gränserna. Eller hjälp oss att sprida information om Code Week som <a href="/ambassadors">ambassadör för EU Code Week</a> i ditt land!</p>',
     'partners_and_sponsors' => 'Partners och sponsorer'
 ];
