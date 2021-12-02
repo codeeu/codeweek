@@ -1,19 +1,23 @@
 <?php
 
-
 return [
-    'when-title' => 'U 2021. Europski tjedan programiranja održavat će se između 9. i 24. listopada.',
-    'when-text' => '<p>Europski tjedan programiranja društvena je inicijativa kojom se slavi kreativnost, rješavanje problema i suradnja kroz programiranje i ostale tehnološke aktivnosti. Ideja je učiniti programiranje vidljivijim, pokazati mladima, odraslima i starijima kako programiranjem realizirati ideje, demistificirati te vještine i okupiti motivirane osobe kako bi učile.</p>',
+    'when-title' =>
+        'U 2022. Europski tjedan programiranja održavat će se između 8. i 23. listopada.',
+    'when-text' =>
+        '<p>Europski tjedan programiranja društvena je inicijativa kojom se slavi kreativnost, rješavanje problema i suradnja kroz programiranje i ostale tehnološke aktivnosti. Ideja je učiniti programiranje vidljivijim, pokazati mladima, odraslima i starijima kako programiranjem realizirati ideje, demistificirati te vještine i okupiti motivirane osobe kako bi učile.</p>',
     'codeweek_in_numbers-title' => 'Tjedan programiranja u brojkama',
     'codeweek_in_numbers-text' => '<p>Godine 2019. Europski tjedan programiranja okupio je 4,2 milijuna ljudi u više od 80 zemalja diljem svijeta.</p>
                     <p>Prosječni sudionik imao je 11 godina, a 49 % sudionika u 2019. bile su žene ili djevojke. Čak 92 % događaja tijekom Europskog tjedna programiranja odvijalo se u školama čime se ukazuje da su nastojanja koja su tijekom kampanje u 2019. uložena u osnaživanje nastavnika bila uspješna.</p>
                     <p>Svi su dobrodošli organizirati događanje ili mu se pridružiti. Odaberite temu i ciljanu publiku te <a href="/add">dodajte svoju aktivnost</a> na <a href="/events">kartu</a>.</p>',
     'run_by_volunteers-title' => 'Organizatori su volonteri',
-    'run_by_volunteers-text' => '<p>Europski tjedan programiranja organiziraju volonteri. Jedan <a href="/ambassadors">ambasador Tjedna programiranja</a> ili njih nekoliko koordiniraju inicijativu u svojim zemljama, no bilo tko može organizirati svoju aktivnost i unijeti je na kartu na stranici <a href="/">codeweek.eu</a>.</p>',
+    'run_by_volunteers-text' =>
+        '<p>Europski tjedan programiranja organiziraju volonteri. Jedan <a href="/ambassadors">ambasador Tjedna programiranja</a> ili njih nekoliko koordiniraju inicijativu u svojim zemljama, no bilo tko može organizirati svoju aktivnost i unijeti je na kartu na stranici <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'Podrška Europske komisije',
-    'supported_by_commission-text' => '<p>Europski tjedan programiranja pokrenuli su 2013. Mladi savjetnici za Digitalnu agendu Europe (engl. Young Advisors for the Digital Agenda Europe). Europska komisija podupire Europski tjedan programiranja u okviru svoje strategije za <a href="http://ec.europa.eu/priorities/digital-single-market/">jedinstveno digitalno tržište</a>, a u <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Akcijskom planu za digitalno obrazovanje</a> Komisija posebice potiče škole da se pridruže inicijativi.</p>',
+    'supported_by_commission-text' =>
+        '<p>Europski tjedan programiranja pokrenuli su 2013. Mladi savjetnici za Digitalnu agendu Europe (engl. Young Advisors for the Digital Agenda Europe). Europska komisija podupire Europski tjedan programiranja u okviru svoje strategije za <a href="http://ec.europa.eu/priorities/digital-single-market/">jedinstveno digitalno tržište</a>, a u <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Akcijskom planu za digitalno obrazovanje</a> Komisija posebice potiče škole da se pridruže inicijativi.</p>',
     'schools-title' => 'Škole',
-    'schools-text' => '<p>Škole bilo koje razine i nastavnici bilo kojeg predmeta posebice su pozvani sudjelovati u Europskom tjednu programiranja, ponuditi svojim učenicima mogućnost da istraže digitalnu kreativnost i programiranje. Saznajte više o inicijativi i o tome kako organizirati svoju aktivnost putem internetske stranice namijenjene nastavnicima: <a href="/schools">CodeWeek.eu/Škole</a></p>',
+    'schools-text' =>
+        '<p>Škole bilo koje razine i nastavnici bilo kojeg predmeta posebice su pozvani sudjelovati u Europskom tjednu programiranja, ponuditi svojim učenicima mogućnost da istraže digitalnu kreativnost i programiranje. Saznajte više o inicijativi i o tome kako organizirati svoju aktivnost putem internetske stranice namijenjene nastavnicima: <a href="/schools">CodeWeek.eu/Škole</a></p>',
     'why_coding-title' => 'Zašto programiranje?',
     'why_coding-text' => '<p>Zbog Pije, koja je mislila da ima obavezu studirati pravo, iako je oduvijek uživala u matematici i igranju s računalima. Zbog Marka, koji ima ideju za bolju društvenu mrežu, ali je ne može sam izraditi. Zbog Alice, koja sanja o izradi robota jer joj roditelji ne dopuštaju da ima mačku.</p>
 
@@ -29,6 +33,7 @@ return [
                         </blockquote>
                     </p>',
     'join_codeweek-title' => 'Priključite se Europskom tjednu programiranja',
-    'join_codeweek-text' => '<p>Priključite se Europskom tjednu programiranja <a href="/guide">organiziranjem aktivnosti u vezi s programiranjem</a> u svojem gradu, uključivanjem u izazov <a href="/codeweek4all">Code Week 4 All Challenge</a> i povezivanjem aktivnosti među zajednicama i preko granica ili nam pomognite u dijeljenju vizije Tjedna programiranja kao <a href="/ambassadors">ambasador Europskog tjedna programiranja</a> za svoju zemlju!</p>',
+    'join_codeweek-text' =>
+        '<p>Priključite se Europskom tjednu programiranja <a href="/guide">organiziranjem aktivnosti u vezi s programiranjem</a> u svojem gradu, uključivanjem u izazov <a href="/codeweek4all">Code Week 4 All Challenge</a> i povezivanjem aktivnosti među zajednicama i preko granica ili nam pomognite u dijeljenju vizije Tjedna programiranja kao <a href="/ambassadors">ambasador Europskog tjedna programiranja</a> za svoju zemlju!</p>',
     'partners_and_sponsors' => 'Partneri i sponzori'
 ];

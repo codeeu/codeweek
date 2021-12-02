@@ -462,12 +462,6 @@ Route::get(
 
 Route::get('podcasts', 'PodcastsController@index')->name('podcasts');
 
-Route::get('headers', function (Request $request) {
-    $headers = \Request::header();
-
-    dd($headers);
-});
-
 Auth::routes();
 Route::feeds();
 
