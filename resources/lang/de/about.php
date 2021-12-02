@@ -1,19 +1,24 @@
 <?php
 
-
 return [
-    'when-title' => 'Die EU Code Week 2021 findet im Zeitraum vom 9. bis 24. Oktober statt.',
-    'when-text' => '<p>Die EU Code Week ist eine Breiteninitiative zur Feier von Kreativität, Problemlösung und Zusammenarbeit durch Programmierung und andere technische Aktivitäten. Dahinter steckt die Idee, das Programmieren bekannter zu machen, jungen Menschen, Erwachsenen und Älteren zu zeigen, wie sie mit dem Programmieren Ideen Wirklichkeit werden lassen, diese Kompetenzen begreifbar zu machen und motivierte Menschen beim Lernen zusammenzubringen.</p>',
+    'when-title' =>
+        'Die EU Code Week 2022 findet im Zeitraum vom 8. bis 23. Oktober statt.',
+    'when-text' =>
+        '<p>Die EU Code Week ist eine Breiteninitiative zur Feier von Kreativität, Problemlösung und Zusammenarbeit durch Programmierung und andere technische Aktivitäten. Dahinter steckt die Idee, das Programmieren bekannter zu machen, jungen Menschen, Erwachsenen und Älteren zu zeigen, wie sie mit dem Programmieren Ideen Wirklichkeit werden lassen, diese Kompetenzen begreifbar zu machen und motivierte Menschen beim Lernen zusammenzubringen.</p>',
     'codeweek_in_numbers-title' => 'Code Week in Zahlen',
     'codeweek_in_numbers-text' => '<p>Im Jahr 2019 nahmen 4,2 Millionen Menschen in über 80 Ländern weltweit an der EU Code Week teil.</p>
                     <p>Die Teilnehmenden waren im Durchschnitt 11 Jahre alt und 49 % der Teilnehmenden 2019 waren Frauen oder Mädchen. 92 % der Veranstaltungen im Rahmen der EU Code Week fanden in Schulen statt. Dies zeigt, dass die Maßnahmen zur Befähigung von Lehrkräften während der Kampagne 2019 erfolgreich gewesen sind.</p>
                     <p>Alle sind willkommen, eine Aktivität zu organisieren oder als Teilnehmende dabei zu sein. Wählen Sie einfach ein Thema und ein Zielpublikum und <a href="/add">fügen Sie Ihre Aktivität</a> auf <a href="/events">der Karte hinzu</a></p>',
     'run_by_volunteers-title' => 'Von Freiwilligen veranstaltet',
-    'run_by_volunteers-text' => '<p>Die EU Code Week wird von Freiwilligen veranstaltet. Ein*e <a href="/ambassadors">Code-Week-Botschafter*in</a> oder mehrere koordinieren die Initiative in ihrem Land. Man kann jedoch eigene Aktivitäten ausrichten und diese in der Karte auf <a href="/">codeweek.eu</a> hinzufügen.</p>',
-    'supported_by_commission-title' => 'Unterstützt durch die Europäische Kommission',
-    'supported_by_commission-text' => '<p>Die EU Code Week wurde im Jahr 2013 von einer aus jungen Berater*innen bestehenden Expertengruppe, den Young Advisors for the Digital Agenda Europe, ins Leben gerufen. Die Europäische Kommission unterstützt die EU Code Week im Zuge Ihrer Strategie für einen <a href="http://ec.europa.eu/priorities/digital-single-market/">digitalen Binnenmarkt</a>, in dem <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Aktionsplan für digitale Bildung</a> ermutigt die Kommission insbesondere Schulen zur Beteiligung an der Initiative.</p>',
+    'run_by_volunteers-text' =>
+        '<p>Die EU Code Week wird von Freiwilligen veranstaltet. Ein*e <a href="/ambassadors">Code-Week-Botschafter*in</a> oder mehrere koordinieren die Initiative in ihrem Land. Man kann jedoch eigene Aktivitäten ausrichten und diese in der Karte auf <a href="/">codeweek.eu</a> hinzufügen.</p>',
+    'supported_by_commission-title' =>
+        'Unterstützt durch die Europäische Kommission',
+    'supported_by_commission-text' =>
+        '<p>Die EU Code Week wurde im Jahr 2013 von einer aus jungen Berater*innen bestehenden Expertengruppe, den Young Advisors for the Digital Agenda Europe, ins Leben gerufen. Die Europäische Kommission unterstützt die EU Code Week im Zuge Ihrer Strategie für einen <a href="http://ec.europa.eu/priorities/digital-single-market/">digitalen Binnenmarkt</a>, in dem <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Aktionsplan für digitale Bildung</a> ermutigt die Kommission insbesondere Schulen zur Beteiligung an der Initiative.</p>',
     'schools-title' => 'Schulen',
-    'schools-text' => '<p>Vor allem Schülerinnen und Schüler aller Stufen und Lehrkräfte aller Fächer sind zur Teilnahme an der EU Code Week aufgerufen, damit Schüler die Möglichkeit zur Erforschung ihrer Fähigkeiten im Bereich der digitalen Kreativität und Programmierung haben. Auf der Webseite für Lehrkräfte erfahren Sie mehr über die Initiative und über die Ausrichtung Ihrer Aktivität: <a href="/schools">CodeWeek.eu/Schools</a></p>',
+    'schools-text' =>
+        '<p>Vor allem Schülerinnen und Schüler aller Stufen und Lehrkräfte aller Fächer sind zur Teilnahme an der EU Code Week aufgerufen, damit Schüler die Möglichkeit zur Erforschung ihrer Fähigkeiten im Bereich der digitalen Kreativität und Programmierung haben. Auf der Webseite für Lehrkräfte erfahren Sie mehr über die Initiative und über die Ausrichtung Ihrer Aktivität: <a href="/schools">CodeWeek.eu/Schools</a></p>',
     'why_coding-title' => 'Wozu Programmieren?',
     'why_coding-text' => '<p>Wir denken an Pia, die immer meinte, sie müsse Jura studieren, obwohl sie stets die Mathematik liebte und gern am Computer spielte. Wir denken an Mark, der Ideen für ein besseres soziales Netzwerk hat, es aber nicht selbst programmieren kann. Wir denken an Alice, die davon träumt, Roboter zu entwickeln, weil ihre Eltern ihr nicht erlauben, eine Katze als Haustier zu halten.</p>
 
@@ -29,6 +34,7 @@ return [
                         </blockquote>
                     </p>',
     'join_codeweek-title' => 'EU Code Week',
-    'join_codeweek-text' => '<p>Beteiligen Sie sich an der EU Code Week, indem Sie in Ihrer Stadt <a href="/guide">eine Programmiertätigkeit ausrichten</a>, an der <a href="/codeweek4all">Code Week 4 All Challenge</a> teilnehmen und Aktivitäten gemeinde- und grenzübergreifend vernetzen oder indem Sie uns dabei helfen, die Vision der Code Week als <a href="/ambassadors">EU Code Week-Botschafter*in</a> für Ihr Land zu verbreiten!</p>',
+    'join_codeweek-text' =>
+        '<p>Beteiligen Sie sich an der EU Code Week, indem Sie in Ihrer Stadt <a href="/guide">eine Programmiertätigkeit ausrichten</a>, an der <a href="/codeweek4all">Code Week 4 All Challenge</a> teilnehmen und Aktivitäten gemeinde- und grenzübergreifend vernetzen oder indem Sie uns dabei helfen, die Vision der Code Week als <a href="/ambassadors">EU Code Week-Botschafter*in</a> für Ihr Land zu verbreiten!</p>',
     'partners_and_sponsors' => 'Partner und Sponsoren'
 ];
