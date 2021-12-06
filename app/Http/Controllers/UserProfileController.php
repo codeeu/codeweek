@@ -23,7 +23,7 @@ class UserProfileController extends Controller
 //            }
 //        }
 
-        return view('user-profile', [
+        return view('badges.user', [
             'user' => $user,
             'achievements' => $achievements,
             'userAchievements' => $userAchievements

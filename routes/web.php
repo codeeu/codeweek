@@ -432,7 +432,7 @@ Route::group(['middleware' => ['role:super admin']], function () {
         'HackathonsVotingController@results'
     )->name('hackathon-vote-results');
 
-    Route::get('/user-profile/{user}', 'UserProfileController@index')->name('user-profile');
+
 });
 
 Route::group(['middleware' => ['role:super admin|ambassador']], function () {
@@ -450,6 +450,11 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
     Route::post('/api/event/reject/{event}', 'EventController@reject')->name(
         'event.reject'
     );
+});
+
+Route::group(['middleware' => ['role:super admin']], function () {
+    Route::get('/badges/user/{user}', 'BadgesController@user')->name('badges-user');
+    Route::get('/badges/scoreboard', 'BadgesController@scoreboard')->name('badges-scoreboard');
 });
 
 Route::get(
