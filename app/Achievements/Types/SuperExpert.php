@@ -17,5 +17,4 @@ class SuperExpert extends AchievementType
         return $user->getExperience()->points >= 10000;
     }
 
-
 }

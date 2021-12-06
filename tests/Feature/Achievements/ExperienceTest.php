@@ -68,20 +68,53 @@ class ExperienceTest extends TestCase
 
     }
 
+//    /** @test */
+//    public function a_user_earns_experience_when_an_activity_has_been_approved()
+//    {
+//
+//
+//        $user = create('App\User');
+//
+//        $event = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id]);
+//
+//        $event->update([
+//            'status' => "APPROVED"
+//        ]);
+//
+//        $this->assertEquals(100, $user->points);
+//
+//    }
+
     /** @test */
-    public function a_user_earns_experience_when_an_activity_has_been_approved()
+    public function a_user_earns_experience_when_an_activity_has_been_reported()
     {
 
 
         $user = create('App\User');
 
-        $event = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id]);
+        $event = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null]);
 
         $event->update([
-            'status' => "APPROVED"
+            'reported_at' => Carbon::now()
         ]);
 
-        $this->assertEquals(100, $user->points);
+        $this->assertEquals(2, $user->getPoints());
+
+    }
+
+    /** @test */
+    public function it_should_reset_points()
+    {
+
+        $user = create('App\User');
+
+        $user->awardExperience(1000);
+
+        $this->assertEquals(1000, $user->points);
+
+        $user->resetExperience();
+
+        $this->assertEquals(0, $user->points);
 
     }
 }

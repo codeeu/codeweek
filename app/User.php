@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Achievements\Achievement;
+use Carbon\Carbon;
 use DB;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Notifications\Notifiable;
@@ -233,26 +234,46 @@ class User extends Authenticatable
         return $this->hasOne(Experience::class, 'user_id', 'id');
     }
 
-    public function actions(){
+    public function actions()
+    {
         return $this->hasMany(LeadingTeacherAction::class);
     }
 
     public function getPointsAttribute()
     {
-        $experience = Experience::firstOrCreate(
-            ['user_id' => $this->id],
-            ['points' => 0]
+        return $this->getPoints();
+    }
+
+    public function resetExperience()
+    {
+
+        $this->getExperience()->update(
+            ["points" => 0]
         );
 
-        return $experience->points;
+
+    }
+
+    public function getPoints()
+    {
+
+        return $this->getExperience()->points;
+
+
     }
 
     public function getExperience()
     {
-        return Experience::firstOrCreate(
-            ['user_id' => $this->id],
-            ['points' => 0]
+        $experience = Experience::firstOrCreate(
+            [
+                'user_id' => $this->id
+            ],
+            [
+                'points' => 0
+            ]
         );
+
+        return $experience;
     }
 
     public function awardExperience($points)
@@ -333,6 +354,23 @@ class User extends Authenticatable
             ->whereNull('deleted_at')
             ->whereYear('end_date', '=', $edition)
             ->count();
+    }
+
+    public function reported($edition = null)
+    {
+
+        $query = DB::table('events')
+            ->where('creator_id', '=', $this->id)
+            ->where('status', "=", "APPROVED")
+            ->whereNotNull('reported_at')
+            ->whereNull('deleted_at');
+
+        if (!is_null($edition)) {
+            $query->whereYear('created_at', '=', $edition);
+        }
+
+
+        return $query->count();
     }
 
 

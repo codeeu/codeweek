@@ -5,10 +5,12 @@ namespace App\Achievements;
 
 
 use App\Achievements\Console\GenerateAchievementCommand;
+use App\Achievements\Console\SyncExperience;
 use App\Achievements\Console\SyncUsersAchievements;
 use App\Achievements\Events\UserEarnedExperience;
 
 
+use App\Achievements\Types\StartYourEngines;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
 
@@ -16,8 +18,12 @@ class AchievementsServiceProvider extends ServiceProvider
 {
 
     protected $achievements = [
-        Types\StartYourEngines::class,
-        Types\SuperExpert::class,
+        Types\OrganiserActive2021::class,
+        Types\OrganiserExpert2021::class,
+        Types\OrganiserChampion2021::class,
+        Types\OrganiserLegendary2021::class,
+        Types\OrganiserMaster2021::class
+
     ];
 
     public function boot()
@@ -35,7 +41,7 @@ class AchievementsServiceProvider extends ServiceProvider
             });
         });
 
-        $this->commands([GenerateAchievementCommand::class,SyncUsersAchievements::class]);
+        $this->commands([GenerateAchievementCommand::class,SyncUsersAchievements::class, SyncExperience::class]);
     }
 
 

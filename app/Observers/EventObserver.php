@@ -3,6 +3,7 @@
 namespace App\Observers;
 
 use App\Event;
+use App\ExperienceType;
 
 class EventObserver
 {
@@ -26,10 +27,13 @@ class EventObserver
     public function updated(Event $event)
     {
 
-        if ($event->status == 'APPROVED' && $event->getOriginal('status') !== 'APPROVED')
-        {
-            $event->owner->awardExperience(100);
+        if (!is_null($event->reported_at) && is_null($event->getOriginal('reported_at'))) {
+            $event->owner->awardExperience(2);
         }
+
+//        if ($event->status == 'APPROVED' && $event->getOriginal('status') !== 'APPROVED') {
+//            $event->owner->awardExperience(100);
+//        }
 
     }
 
