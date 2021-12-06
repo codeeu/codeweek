@@ -5,21 +5,21 @@ namespace App\Achievements\Console;
 use App\User;
 use Illuminate\Console\Command;
 
-class SyncUsersAchievements extends Command
+class SyncExperience extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'badges:sync-users-achievements';
+    protected $signature = 'badges:sync-xp';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Sync users achievements';
+    protected $description = 'Sync users XP';
 
     /**
      * Execute the console command.
@@ -28,12 +28,12 @@ class SyncUsersAchievements extends Command
      */
     public function handle()
     {
+
         User::role("leading teacher")->chunk(100, function($users, $index){
             $this->reportProgress($index);
             $users->each(function($user){
-                $user->achievements()->sync(
-                    app('achievements')->filter->qualifier($user)->map->modelKey()
-                );
+                $user->resetExperience();
+                $user->awardExperience($user->reported() * 2);
             });
         });
     }
@@ -45,6 +45,6 @@ class SyncUsersAchievements extends Command
     {
         $from = ($index - 1) * 100;
         $to = ($index - 1) * 100 + 100;
-        $this->info("Seeding users {$from} - {$to}");
+        $this->info("Syncing points for users {$from} - {$to}");
     }
 }

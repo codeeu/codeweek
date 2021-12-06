@@ -22,29 +22,33 @@
 
                         <!-- Content goes here -->
                         <div class="text-xl mt-4">Name: {{$user->fullName}}</div>
+                        <div class="text-xl mt-4">Points: {{$user->points}}</div>
+                        <div class="text-xl mt-4">Reported events Globally: {{$user->reported()}}</div>
+                        <div class="text-xl mt-4">Reported events in 2021: {{$user->reported(2021)}}</div>
                         <div class="text-xl mt-4">Achievements:<br/>
-                            @foreach($achievements as $achievement)
+                            <div class="flex flex-row">
+                                @foreach($achievements as $achievement)
 
-                                @if (in_array($achievement->modelKey(), $userAchievements->pluck('id')->all()))
-                                <div class="flex items-center px-4 py-2 rounded-md text-sm font-medium">
+                                    @if (in_array($achievement->modelKey(), $userAchievements->pluck('id')->all()))
+                                        <div class="flex flex-col items-center px-4 py-2 rounded-md text-sm font-medium">
 
-                                    <img src="{{asset('badges/'.$achievement->icon)}}">
-                                    <span class="ml-2">{{$achievement->description()}}<br/>Success !</span>
-
-
-
-                                </div>
-                                @else
-                                    <div class="flex items-center px-4 py-2 rounded-md text-sm font-medium">
-
-                                        <img src="{{asset('badges/'.$achievement->icon)}}">
-                                        <span class="ml-2">{{$achievement->description()}}<br/>To Unlock !</span>
+                                            <img src="{{asset('badges/'.$achievement->icon)}}">
+                                            <span class="ml-2">{{$achievement->description()}}<br/>Success !</span>
 
 
+                                        </div>
+                                    @else
+                                        <div class="flex flex-col items-center px-4 py-2 rounded-md text-sm font-medium">
 
-                                    </div>
-                                @endif
-                            @endforeach
+                                            <img class="filter grayscale blur"
+                                                 src="{{asset('badges/'.$achievement->icon)}}">
+                                            <span class="ml-2">{{$achievement->description()}}<br/>To Unlock !</span>
+
+
+                                        </div>
+                                    @endif
+                                @endforeach
+                            </div>
 
                         </div>
 
@@ -53,8 +57,6 @@
                 </div>
             </div>
         </div>
-
-
 
 
     </section>
