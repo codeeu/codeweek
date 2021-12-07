@@ -9,7 +9,7 @@ class OrganiserExpert2021 extends AchievementType
 
     public function description()
     {
-        return 'Expert Organiser 2021';
+        return 'Report 10 activities to unlock';
     }
 
     public function qualifier($user)
