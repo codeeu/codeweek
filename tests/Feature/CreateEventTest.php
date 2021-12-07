@@ -3,10 +3,8 @@
 namespace Tests\Feature;
 
 use App\Event;
-use App\Mail\EventCreated;
 use Mail;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class CreateEventTest extends TestCase

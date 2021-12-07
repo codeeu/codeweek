@@ -3,7 +3,6 @@
 namespace Tests\Feature;
 
 use App\Event;
-use App\Mail\EventCreated;
 use Illuminate\Support\Facades\Mail;
 
 use Tests\TestCase;

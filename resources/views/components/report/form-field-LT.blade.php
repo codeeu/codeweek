@@ -16,6 +16,7 @@
         </div>
     @endif
 
+
     @if($errors->has($field_name))
         <div class="errors">
             @component('components.validation-errors', ['field'=>$field_name])@endcomponent
