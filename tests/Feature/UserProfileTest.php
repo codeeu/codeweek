@@ -31,7 +31,7 @@ class UserProfileTest extends TestCase
     public function it_should_display_user_name()
     {
 
-        $response = $this->get('/user-profile/222');
+        $response = $this->get('/badges/user/222');
 
         $response->assertSeeText($this->user->firstname);
         $response->assertSeeText($this->user->lastname);
@@ -41,7 +41,7 @@ class UserProfileTest extends TestCase
     public function it_should_display_achievements()
     {
 
-        $response = $this->get('/user-profile/222');
+        $response = $this->get('/badges/user/222');
         $response->assertSeeText('Active Organiser 2021');
 
     }

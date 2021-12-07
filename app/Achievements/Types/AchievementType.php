@@ -34,5 +34,6 @@ abstract class AchievementType
     }
 
 
+
     abstract public function qualifier($user);
 }

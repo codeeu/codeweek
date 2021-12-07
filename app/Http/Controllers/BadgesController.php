@@ -43,6 +43,8 @@ class BadgesController extends Controller
 //            }
 //        }
 
+
+
         return view('badges.user', [
             'user' => $user,
             'achievements' => $achievements,

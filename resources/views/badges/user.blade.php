@@ -33,7 +33,7 @@
                                         <div class="flex flex-col items-center px-4 py-2 rounded-md text-sm font-medium">
 
                                             <img src="{{asset('badges/'.$achievement->icon)}}">
-                                            <span class="ml-2">{{$achievement->description()}}<br/>Success !</span>
+                                            <span class="ml-2">{{$achievement->name}}<br/>Success !</span>
 
 
                                         </div>
@@ -42,7 +42,7 @@
 
                                             <img class="filter grayscale blur"
                                                  src="{{asset('badges/'.$achievement->icon)}}">
-                                            <span class="ml-2">{{$achievement->description()}}<br/>To Unlock !</span>
+                                            <span class="ml-2">{{$achievement->name}}<br/>{{$achievement->description()}}</span>
 
 
                                         </div>

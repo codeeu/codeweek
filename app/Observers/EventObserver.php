@@ -4,6 +4,7 @@ namespace App\Observers;
 
 use App\Event;
 use App\ExperienceType;
+use Illuminate\Support\Facades\Log;
 
 class EventObserver
 {
@@ -31,9 +32,7 @@ class EventObserver
             $event->owner->awardExperience(2);
         }
 
-//        if ($event->status == 'APPROVED' && $event->getOriginal('status') !== 'APPROVED') {
-//            $event->owner->awardExperience(100);
-//        }
+
 
     }
 

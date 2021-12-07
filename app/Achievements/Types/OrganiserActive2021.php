@@ -11,7 +11,7 @@ class OrganiserActive2021 extends AchievementType
 
     public function description()
     {
-        return 'Active Organiser 2021';
+        return 'Report 5 activities to unlock';
     }
 
     public function qualifier($user)
