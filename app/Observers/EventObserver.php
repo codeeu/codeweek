@@ -4,6 +4,7 @@ namespace App\Observers;
 
 use App\Event;
 use App\ExperienceType;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Log;
 
 class EventObserver
@@ -29,7 +30,8 @@ class EventObserver
     {
 
         if (!is_null($event->reported_at) && is_null($event->getOriginal('reported_at'))) {
-            $event->owner->awardExperience(2);
+            $date = new Carbon($event->created_at);
+            $event->owner->awardExperience(2, $date->year);
         }
 
 
