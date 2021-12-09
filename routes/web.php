@@ -454,7 +454,7 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
 
 Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/badges/user/{user}', 'BadgesController@user')->name('badges-user');
-    Route::get('/badges/scoreboard', 'BadgesController@scoreboard')->name('badges-scoreboard');
+    Route::get('/badges/scoreboard/{year?}', 'BadgesController@scoreboard')->name('badges-scoreboard-year');
 });
 
 Route::get(

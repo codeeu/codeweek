@@ -16,13 +16,13 @@
 
                         <div class="header">
 
-                            <h1>Scoreboard</h1>
+                            <h1>Scoreboard {{$year}}</h1>
 
                             <ul>
                                 @foreach($users as $user)
 
                                     <li>{{ $rank++}}: <a href="/badges/user/{{$user->id}}">{{$user->fullName}}</a>
-                                        - {{$user->points}}</li>
+                                        - {{$user->getPoints($year)}}</li>
                                 @endforeach
                             </ul>
 
