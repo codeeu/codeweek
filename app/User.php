@@ -111,6 +111,7 @@ class User extends Authenticatable
 
     protected $dates = ['deleted_at'];
 
+
     public function getName()
     {
         if (!empty($this->username)) return $this->username;
@@ -239,34 +240,33 @@ class User extends Authenticatable
         return $this->hasMany(LeadingTeacherAction::class);
     }
 
-    public function getPointsAttribute()
-    {
-        return $this->getPoints();
-    }
 
-    public function resetExperience()
+    public function resetExperience($year = null)
     {
-
-        $this->getExperience()->update(
+        if (is_null($year)) $year = Carbon::now()->year;
+        $this->getExperience($year)->update(
             ["points" => 0]
         );
 
 
     }
 
-    public function getPoints()
+    public function getPoints($year = null)
     {
-
-        return $this->getExperience()->points;
+        if (is_null($year)) $year = Carbon::now()->year;
+        return $this->getExperience($year)->points;
 
 
     }
 
-    public function getExperience()
+    public function getExperience($year = null)
     {
+        if (is_null($year)) $year = Carbon::now()->year;
+
         $experience = Experience::firstOrCreate(
             [
-                'user_id' => $this->id
+                'user_id' => $this->id,
+                'year' => $year
             ],
             [
                 'points' => 0
@@ -276,17 +276,17 @@ class User extends Authenticatable
         return $experience;
     }
 
-    public function awardExperience($points)
+    public function awardExperience($points, $year = null)
     {
-
-        $this->getExperience()->awardExperience($points);
+        if (is_null($year)) $year = Carbon::now()->year;
+        $this->getExperience($year)->awardExperience($points);
 
     }
 
-    public function stripExperience($points)
+    public function stripExperience($points, $year = null)
     {
-
-        $this->getExperience()->stripExperience($points);
+        if (is_null($year)) $year = Carbon::now()->year;
+        $this->getExperience($year)->stripExperience($points);
 
     }
 

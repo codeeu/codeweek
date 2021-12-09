@@ -36,15 +36,34 @@ class ExperienceTest extends TestCase
 
         $user = create('App\User');
 
-        $this->assertEquals(0, $user->points);
+        $this->assertEquals(0, $user->getPoints());
 
         $user->awardExperience(100);
 
-        $this->assertEquals(100, $user->points);
+        $this->assertEquals(100, $user->getPoints());
 
         $user->awardExperience(100);
 
-        $this->assertEquals(200, $user->points);
+        $this->assertEquals(200, $user->getPoints());
+
+    }
+
+    /** @test */
+    public function a_user_is_awarded_experience_for_specifi_years()
+    {
+
+        $user = create('App\User');
+
+        $this->assertEquals(0, $user->getPoints(2020));
+
+        $user->awardExperience(100, 2020);
+
+        $this->assertEquals(100, $user->getPoints(2020));
+
+        $user->awardExperience(100, 2020);
+
+        $this->assertEquals(200, $user->getPoints(2020));
+        $this->assertEquals(0, $user->getPoints(2021));
 
     }
 
@@ -56,15 +75,15 @@ class ExperienceTest extends TestCase
 
         $user->awardExperience(1000);
 
-        $this->assertEquals(1000, $user->points);
+        $this->assertEquals(1000, $user->getPoints());
 
         $user->stripExperience(100);
 
-        $this->assertEquals(900, $user->points);
+        $this->assertEquals(900, $user->getPoints());
 
         $user->stripExperience(10000);
 
-        $this->assertEquals(0, $user->points);
+        $this->assertEquals(0, $user->getPoints());
 
     }
 
@@ -81,7 +100,7 @@ class ExperienceTest extends TestCase
 //            'status' => "APPROVED"
 //        ]);
 //
-//        $this->assertEquals(100, $user->points);
+//        $this->assertEquals(100, $user->getPoints());
 //
 //    }
 
@@ -110,11 +129,11 @@ class ExperienceTest extends TestCase
 
         $user->awardExperience(1000);
 
-        $this->assertEquals(1000, $user->points);
+        $this->assertEquals(1000, $user->getPoints());
 
         $user->resetExperience();
 
-        $this->assertEquals(0, $user->points);
+        $this->assertEquals(0, $user->getPoints());
 
     }
 }

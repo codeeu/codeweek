@@ -3,6 +3,7 @@
 namespace App\Achievements\Console;
 
 use App\User;
+use Carbon\Carbon;
 use Illuminate\Console\Command;
 
 class SyncExperience extends Command
@@ -32,8 +33,11 @@ class SyncExperience extends Command
         User::role("leading teacher")->chunk(100, function($users, $index){
             $this->reportProgress($index);
             $users->each(function($user){
-                $user->resetExperience();
-                $user->awardExperience($user->reported() * 2);
+                for ($year = 2018; $year <= Carbon::now()->year; $year++ ){
+                    $user->resetExperience($year);
+                    $user->awardExperience($user->reported($year) * 2, $year);
+                }
+
             });
         });
     }
