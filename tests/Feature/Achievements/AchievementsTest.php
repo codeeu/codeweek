@@ -64,7 +64,7 @@ class AchievementsTest extends TestCase
 
         $this->assertEquals("Active Organiser 2021", $user->fresh()->achievements[0]->name);
 
-        $more_events = create('App\Event', ["creator_id" => $user->id, "reported_at" => null,"status" => "APPROVED", "start_date" => Carbon::now()], 5);
+        $more_events = create('App\Event', ["creator_id" => $user->id, "reported_at" => null,"status" => "APPROVED", "start_date" => Carbon::now(), "end_date" => Carbon::now()], 5);
 
         foreach ($more_events as $event){
             $this->reportEvent($event);
