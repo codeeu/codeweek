@@ -15,7 +15,7 @@ class ExperienceTest extends TestCase
     use RefreshDatabase;
 
     /** @test */
-    public function an_announcment_is_made_when_experience_is_earned()
+    public function an_announcement_is_made_when_experience_is_earned()
     {
         Event::fake();
 
@@ -118,6 +118,25 @@ class ExperienceTest extends TestCase
         ]);
 
         $this->assertEquals(2, $user->getPoints());
+
+    }
+
+    /** @test */
+    public function a_leading_teacher_earns_experience_when_an_activity_has_been_approved_with_his_tag()
+    {
+
+
+        $user = create('App\User');
+
+        $LT1 = create('App\User', ['tag' => 'tag_LT1']);
+
+        $event = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null, 'codeweek_for_all_participation_code' => 'tag_LT1']);
+
+        $event->update([
+            'status' => 'APPROVED'
+        ]);
+
+        $this->assertEquals(2, $LT1->getPoints());
 
     }
 
