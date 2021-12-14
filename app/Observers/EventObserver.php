@@ -4,6 +4,7 @@ namespace App\Observers;
 
 use App\Event;
 use App\ExperienceType;
+use App\User;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Log;
 
@@ -34,6 +35,17 @@ class EventObserver
             $event->owner->awardExperience(2, $date->year);
         }
 
+        if (($event->status == "APPROVED") && ($event->getOriginal('status') == "PENDING")) {
+            //Get LT based on Tag
+            $LT = User::firstWhere("tag", $event->codeweek_for_all_participation_code);
+
+            if ($LT) {
+                $date = new Carbon($event->created_at);
+                $LT->awardExperience(2, $date->year);
+            }
+
+
+        }
 
 
     }
