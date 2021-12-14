@@ -373,5 +373,24 @@ class User extends Authenticatable
         return $query->count();
     }
 
+    public function influence($edition = null)
+    {
+
+        if (is_null($this->tag)) return 0;
+
+        $query = DB::table('events')
+            ->where('codeweek_for_all_participation_code', '=', $this->tag)
+            ->where('status', "=", "APPROVED")
+            ->where('creator_id', '<>', $this->id)
+            ->whereNull('deleted_at');
+
+        if (!is_null($edition)) {
+            $query->whereYear('created_at', '=', $edition);
+        }
+
+
+        return $query->count();
+    }
+
 
 }

@@ -36,6 +36,7 @@ class SyncExperience extends Command
                 for ($year = 2018; $year <= Carbon::now()->year; $year++ ){
                     $user->resetExperience($year);
                     $user->awardExperience($user->reported($year) * 2, $year);
+                    $user->awardExperience($user->influence($year) * 2, $year);
                 }
 
             });

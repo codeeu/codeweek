@@ -27,24 +27,26 @@
                         @endfor
                         <div class="text-xl mt-4">Reported events Globally: {{$user->reported()}}</div>
                         <div class="text-xl mt-4">Reported events in 2021: {{$user->reported(2021)}}</div>
+                        <div class="text-xl mt-4">Tag used by someone else in 2021: {{$user->influence(2021)}}</div>
                         <div class="text-xl mt-4">Achievements:<br/>
-                            <div class="flex flex-row">
+
+                                <div class="grid grid-cols-5 gap-2">
                                 @foreach($achievements as $achievement)
 
                                     @if (in_array($achievement->modelKey(), $userAchievements->pluck('id')->all()))
-                                        <div class="flex flex-col items-center px-4 py-2 rounded-md text-sm font-medium">
+                                        <div class="flex flex-col items-center px-4 py-2 rounded-md text-sm font-medium text-center">
 
                                             <img src="{{asset('badges/'.$achievement->icon)}}">
-                                            <span class="ml-2">{{$achievement->name}}<br/>Success !</span>
+                                            <span class="ml-2"><span class="text-lg font-bold">{{$achievement->name}}</span><br/>Success !</span>
 
 
                                         </div>
                                     @else
-                                        <div class="flex flex-col items-center px-4 py-2 rounded-md text-sm font-medium">
+                                        <div class="flex flex-col items-center px-4 py-2 rounded-md text-sm font-medium text-center">
 
                                             <img class="filter grayscale blur"
                                                  src="{{asset('badges/'.$achievement->icon)}}">
-                                            <span class="ml-2">{{$achievement->name}}<br/>{{$achievement->description()}}</span>
+                                            <span class="ml-2"><span class="text-lg">{{$achievement->name}}</span><br/>{{$achievement->description()}}</span>
 
 
                                         </div>

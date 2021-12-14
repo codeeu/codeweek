@@ -81,27 +81,7 @@ class AchievementsTest extends TestCase
 
 
 
-//    /** @test */
-//    public function achievements_can_be_seeded_for_all_users_as_a_console_command()
-//    {
-//
-//        $this->seed('LeadingTeacherRoleSeeder');
-//
-//        $users = factory(User::class, 2)->create()->map(function($user){
-//            return $user->assignRole('leading teacher');
-//        });
-//
-//        $users[0]->getExperience()->update(["points" => 1001]);
-//        $users[1]->getExperience()->update(["points" => 1001]);
-//
-//        $this->assertCount(0, $users[0]->achievements);
-//        $this->assertCount(0, $users[1]->achievements);
-//
-//        $this->artisan('badges:sync-users-achievements');
-//
-//        $this->assertCount(1, $users[0]->fresh()->achievements);
-//        $this->assertCount(1, $users[1]->fresh()->achievements);
-//    }
+
     /**
      * @param $event
      */

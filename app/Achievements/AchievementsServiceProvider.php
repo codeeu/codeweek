@@ -22,7 +22,12 @@ class AchievementsServiceProvider extends ServiceProvider
         Types\OrganiserExpert2021::class,
         Types\OrganiserChampion2021::class,
         Types\OrganiserLegendary2021::class,
-        Types\OrganiserMaster2021::class
+        Types\OrganiserMaster2021::class,
+        Types\Influencer2021::class,
+        Types\InfluencerActive2021::class,
+        Types\InfluencerExpert2021::class,
+        Types\InfluencerChampion2021::class,
+        Types\InfluencerLegendary2021::class
 
     ];
 
