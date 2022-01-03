@@ -70,7 +70,7 @@ class MailingInactiveOrganizersTest extends TestCase {
             8
         );
 
-        $inactive = ReminderHelper::getInactiveCreators(2021);
+        $inactive = ReminderHelper::getInactiveCreators(Carbon::now()->year);
 
         $this->assertEqualsCanonicalizing(
             ['inactive@gmail.com'],
