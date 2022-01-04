@@ -29,7 +29,7 @@
             </div>
 
             @if($podcast->transcript)
-                <div class="self-center text-sm ml-4"><a href="https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/transcript/{{$podcast->transcript}}">Download Transcript</a></div>
+                <div class="self-center text-sm ml-4"><a href="https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/transcripts/{{$podcast->transcript}}">Download Transcript</a></div>
             @endif
         </div>
     </div>
