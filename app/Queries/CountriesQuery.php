@@ -34,6 +34,20 @@ class CountriesQuery
         return $countries;
     }
 
+    public static function withPendingEvents(){
+        $isos = DB::table('events')
+            ->select(['country_iso'])
+            ->where('status',"=","PENDING")
+            ->whereNull('deleted_at')
+            ->groupBy('country_iso')
+            ->get()
+            ->pluck('country_iso')
+        ;
+
+        $countries = Country::findMany($isos)->sortBy('name');
+        return $countries;
+    }
+
     public static function withOnlineEvents($highlighted_status){
         $isos = DB::table('events')
             ->select(['country_iso'])
