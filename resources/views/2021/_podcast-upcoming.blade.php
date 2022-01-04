@@ -9,6 +9,7 @@
     </div>
 
     <div class="flex-1 align-items-stretch h-full align-content-stretch {{$bg}} pl-4">
+
         <div class="flex justify-between">
             <div><h2 class="subtitle">{{$podcast->title}}</h2></div>
             <div class="self-center mr-4 mt-4 italic">
