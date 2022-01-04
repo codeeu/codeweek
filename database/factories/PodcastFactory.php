@@ -10,6 +10,7 @@ $factory->define(Podcast::class, function (Faker $faker) {
         'title' => $faker->sentence(5),
         'filename' => $faker->word,
         'image' => $faker->word,
+        'transcript' => $faker->word,
         'release_date' => $faker->dateTime,
         'description' => $faker->text(300)
     ];
