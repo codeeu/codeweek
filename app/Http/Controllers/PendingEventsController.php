@@ -11,7 +11,7 @@ use App\Queries\CountriesQuery;
 
 class PendingEventsController extends Controller {
     public function index(Request $request, Country $country = null) {
-        $countries = CountriesQuery::withPendingEventsCurrentYear();
+        $countries = CountriesQuery::withPendingEvents();
 
         $events = PendingEventsQuery::trigger($country);
 
