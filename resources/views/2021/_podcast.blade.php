@@ -14,13 +14,22 @@
     <div class="flex-1 align-items-stretch h-full align-content-stretch {{$bg}} pl-4">
         <h2 class="subtitle">{{$podcast->title}}</h2>
         <div class="text-black pb-2 pr-4 text-base leading-5">{{$podcast->description}}</div>
-        <audio controls>
-            <source src="{{$podcast->filename}}" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+        <div class="flex flex-row">
+            <div>
+                <audio controls>
+                    <source src="{{$podcast->filename}}"
+                            type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            @if($podcast->transcript)
+                <div class="self-center text-sm ml-4"><a href="https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/transcripts/{{$podcast->transcript}}">Download Transcript</a></div>
+            @endif
+        </div>
+
+
     </div>
-
-
 </div>
 
 

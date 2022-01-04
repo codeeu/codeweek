@@ -45,7 +45,7 @@ class Podcast extends Resource {
         return [
             ID::make(__('ID'), 'id')->sortable(),
             Text::make('Title')->sortable(),
-            Number::make('Duration'),
+            Number::make('Duration')->hideFromIndex(),
             Number::make('File Size', 'filesize')->hideFromIndex(),
             Text::make('Filename')
                 ->sortable()
@@ -53,9 +53,13 @@ class Podcast extends Resource {
             Text::make('Image')
                 ->sortable()
                 ->hideFromIndex(),
-            DateTime::make('Release Date'),
+            Text::make('Transcript')
+                ->sortable()
+                ->hideFromIndex(),
+            DateTime::make('Release Date')->sortable()->format('DD/MM/Y'),
+
             Textarea::make('Description')->hideFromIndex(),
-            Boolean::make('Active')->hideWhenCreating()
+            Boolean::make('Active')->sortable()
         ];
     }
 
