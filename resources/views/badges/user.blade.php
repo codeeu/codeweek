@@ -27,7 +27,7 @@
                         @endfor
                         <div class="text-xl mt-4">Reported events Globally: {{$user->reported()}}</div>
                         <div class="text-xl mt-4">Reported events in 2021: {{$user->reported(2021)}}</div>
-                        <div class="text-xl mt-4">Tag used by someone else in 2021: {{$user->influence(2021)}}</div>
+                        <div class="text-xl mt-4">Influencer Bits in 2021: {{$user->influence(2021)}}</div>
                         <div class="text-xl mt-4">Achievements:<br/>
 
                                 <div class="grid grid-cols-5 gap-2">
