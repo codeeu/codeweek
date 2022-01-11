@@ -11,12 +11,12 @@ class Influencer2021 extends AchievementType
 
     public function description()
     {
-        return 'Spread your influence more to get 100 bits';
+        return 'Spread your influence more to get 10 bits';
     }
 
     public function qualifier($user)
     {
-        return $user->influence(2021) >= 5;
+        return $user->influence(2021) >= 10;
     }
 
 

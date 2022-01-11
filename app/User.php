@@ -389,7 +389,7 @@ class User extends Authenticatable
         }
 
 
-        return $query->count();
+        return $query->count() * 2;
     }
 
 
