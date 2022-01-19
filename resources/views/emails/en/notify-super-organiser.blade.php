@@ -3,7 +3,7 @@ Dear Code Week activity organiser,
 
 We are delighted to let you know that you successfully completed the 2021 Code Week Super Organiser Challenge. <br/>
 
-That is organising 10 or more Code Week activities in 2020. Congratulations and thank you for playing a major part in making last year’s Code Week, <a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-organisers-register-over-72000-activities-second-year-row">the most successful edition yet.</a><br/>
+That is organising 10 or more Code Week activities in 2021. Congratulations and thank you for playing a major part in making last year’s Code Week, <a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-organisers-register-over-72000-activities-second-year-row">the most successful edition yet.</a><br/>
 
 We believe it is vital to bring coding, computing and computational thinking to as many people as possible – and you have helped up us reach this goal!<br/>
 

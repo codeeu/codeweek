@@ -1,7 +1,7 @@
 @component('mail::message')
 Dear Code Week 4 All challenge participant,
 
-We are delighted to share with you today that you have successfully completed the 2020 Code Week 4 All challenge.<br/>
+We are delighted to share with you today that you have successfully completed the {{$edition}} Code Week 4 All challenge.<br/>
 
 We would like to extend our warmest congratulations and thank you for playing a major part in making last year’s Code Week, <a href="https://ec.europa.eu/digital-single-market/en/news/eu-code-week-organisers-register-over-72000-activities-second-year-row">the most successful edition yet.</a><br/>
 

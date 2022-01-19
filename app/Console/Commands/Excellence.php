@@ -15,7 +15,7 @@ class Excellence extends Command
      *
      * @var string
      */
-    protected $signature = 'excellence:2020';
+    protected $signature = 'excellence {edition}';
 
     /**
      * The console command description.
@@ -42,12 +42,14 @@ class Excellence extends Command
     public function handle()
     {
 
-        $codeweek4all_codes = ExcellenceWinnersHelper::query(Carbon::now()->year(2020), true)->pluck("codeweek_for_all_participation_code");
+        $edition = $this->argument('edition');
+
+        $codeweek4all_codes = ExcellenceWinnersHelper::query(Carbon::now()->year($edition), true)->pluck("codeweek_for_all_participation_code");
 
         //Select the winners from the Database
         $winners = [];
         foreach ($codeweek4all_codes as $codeweek4all_code){
-            $creators = Event::whereYear("end_date","=",2020)->where("status","=","APPROVED")->where("codeweek_for_all_participation_code", "=", $codeweek4all_code)->pluck("creator_id");
+            $creators = Event::whereYear("end_date","=",$edition)->where("status","=","APPROVED")->where("codeweek_for_all_participation_code", "=", $codeweek4all_code)->pluck("creator_id");
             foreach ($creators as $creator){
                 if(!in_array($creator, $winners)){
                     $winners[] = $creator;
@@ -58,7 +60,7 @@ class Excellence extends Command
         //Create an excellence record for each winner
         foreach ($winners as $user_id) {
             try {
-                create('App\Excellence', ['edition' => 2020, "user_id" => $user_id]);
+                create('App\Excellence', ['edition' => $edition, "user_id" => $user_id]);
             } catch (\Exception $ex) {
                 Log::info($ex->getMessage());
             }
