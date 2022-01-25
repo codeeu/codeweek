@@ -10,9 +10,8 @@ use Illuminate\Support\Facades\Log;
 
 class Codeweek4AllController extends Controller
 {
-    public function detail($code, $edition= 2020)
+    public function detail($code, $edition= 2021)
     {
-        $edition = $edition ?: 2020;
 
         $result = Codeweek4AllHelper::getDetailsByCodeweek4All([$code],$edition)->first();
         $countries = Codeweek4AllHelper::getCountriesByCodeweek4All($code, $edition);
