@@ -37,8 +37,7 @@
                 <title><![CDATA[{{ $item->title }}]]></title>
                 <description><![CDATA[{!! $item->summary !!}]]>
                 </description>
-                <link>
-                https://codeweek.eu/feed/podcasts</link>
+                <link>https://codeweek.eu/podcasts</link>
                 <guid isPermaLink="false">{{ $item->id }}</guid>
                 <dc:creator><![CDATA[EU Code Week]]></dc:creator>
                 <pubDate>{{ $item->timestamp() }}</pubDate>
