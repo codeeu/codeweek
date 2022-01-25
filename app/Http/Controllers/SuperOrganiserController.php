@@ -28,7 +28,6 @@ class SuperOrganiserController extends Controller
     public function generate($edition, Request $request)
     {
 
-
         if (Gate::denies('report-super-organiser', $edition)) {
             // The current user can't report for excellence...
             abort(403, 'You are not eligible to receive a Codeweek4All Super Organiser Certificate.');
