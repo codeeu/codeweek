@@ -44,7 +44,7 @@
                 <enclosure
                         url="{{$item->enclosure}}"
                         length="{{$item->enclosureLength}}" type="{{$item->enclosureType}}"/>
-                <itunes:summary>{!! $item->summary !!}
+                <itunes:summary><![CDATA[{!! $item->summary !!}]]>
                 </itunes:summary>
                 <itunes:explicit>No</itunes:explicit>
                 <itunes:duration>{{$item->link}}</itunes:duration>
