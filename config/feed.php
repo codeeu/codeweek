@@ -18,7 +18,7 @@ return [
              */
             'url' => '/feed/podcasts',
 
-            'title' => 'EU Code Week Podcast Series',
+            'title' => 'Code Week Podcast',
             'description' =>
                 'Welcome to the EU Code Week Podcast Series. We bring coding, computational thinking, robotics and innovation closer to you, your community and your school. Join Eugenia Casariego and Arjana Blazic as they explore a range of topics, from media literacy to robotics, with the help of expert guests – to empower you to equip your students with the skills to confront the challenges and opportunities posed by a digital future.',
             'language' => 'en',
