@@ -29,6 +29,7 @@ class ScoreboardController extends Controller
             Log::info("Setting cache for scoreboard total in " . $edition);
             return DB::table('events')
                 ->where('status', "=", "APPROVED")
+                ->whereNull('deleted_at')
                 ->whereYear('end_date', '=', $edition)
                 ->count();
         });
@@ -44,6 +45,7 @@ class ScoreboardController extends Controller
                 ->select('countries.iso as country_iso', 'countries.name as country_name', 'countries.population as country_population', DB::raw('count(*) as total'))
                 ->where('status', "=", "APPROVED")
                 ->whereYear('end_date', '=', $edition)
+                ->whereNull('deleted_at')
                 ->where('countries.parent', "=", "")
                 ->groupBy('countries.iso')
                 ->get();
@@ -55,6 +57,7 @@ class ScoreboardController extends Controller
                 ->join('countries', 'events.country_iso', '=', 'countries.iso')
                 ->select('countries.population as population', 'countries.parent as iso', DB::raw('count(*) as total'))
                 ->where('status', "=", "APPROVED")
+                ->whereNull('deleted_at')
                 ->whereYear('end_date', '=', $edition)
                 ->whereNotNull('countries.parent')
                 ->groupBy('countries.iso')

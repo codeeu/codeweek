@@ -19,7 +19,7 @@ use Maatwebsite\Excel\Facades\Excel;
 class ExcellenceWinnersController extends Controller
 {
 
-    public function list($edition = 2020, Request $request)
+    public function list($edition = 2021, Request $request)
     {
 
 //        $ttl = 1;
