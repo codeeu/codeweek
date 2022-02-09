@@ -36,10 +36,8 @@ class Podcast extends Model implements Feedable {
     public function toFeedItem(): FeedItem {
         return FeedItem::create()
             ->id($this->id)
-            ->link('https://codeweek.eu/feed/podcasts')
             ->title($this->title)
             ->link($this->duration)
-
             ->summary($this->description)
             ->updated($this->release_date)
             ->enclosure($this->filename)
@@ -47,7 +45,7 @@ class Podcast extends Model implements Feedable {
             ->enclosureLength($this->filesize)
             ->authorName('EU Code Week')
             ->authorEmail('m.bailey@mcgroup.com')
-            ->image('https://codeweek.eu/images/podcasts/' . $this->image);
+            ->image('https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/art/' . $this->image);
     }
 
     public static function getFeedItems() {

@@ -19,12 +19,26 @@ class CountriesQuery
         return Country::all();
     }
 
-    public static function withPendingEventsCurrentYear(){
+//    public static function withPendingEventsCurrentYear(){
+//        $isos = DB::table('events')
+//            ->select(['country_iso'])
+//            ->where('status',"=","PENDING")
+//            ->whereNull('deleted_at')
+//            ->whereYear('end_date', '>=', Carbon::now('Europe/Brussels')->year)
+//            ->groupBy('country_iso')
+//            ->get()
+//            ->pluck('country_iso')
+//        ;
+//
+//        $countries = Country::findMany($isos)->sortBy('name');
+//        return $countries;
+//    }
+
+    public static function withPendingEvents(){
         $isos = DB::table('events')
             ->select(['country_iso'])
             ->where('status',"=","PENDING")
             ->whereNull('deleted_at')
-            ->whereYear('end_date', '>=', Carbon::now('Europe/Brussels')->year)
             ->groupBy('country_iso')
             ->get()
             ->pluck('country_iso')
