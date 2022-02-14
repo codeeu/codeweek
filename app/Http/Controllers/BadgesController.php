@@ -8,6 +8,19 @@ use Illuminate\Http\Request;
 
 class BadgesController extends Controller
 {
+
+    public function my(Request $request){
+        $achievements = app('achievements');
+        $userAchievements = auth()->user()->achievements;
+
+        return view('badges.user', [
+            'user' => auth()->user(),
+            'achievements' => $achievements,
+            'userAchievements' => $userAchievements,
+            'year' => Carbon::now()->year
+        ]);
+    }
+
     public function scoreboard(Request $request)
     {
 
@@ -40,18 +53,13 @@ class BadgesController extends Controller
 
     public function user(User $user)
     {
+        if (!($user->id == auth()->id() || auth()->user()->isAdmin() || auth()->user()->isLeadingTeacherAdmin())){
+            abort(403, 'You are not allowed');
+        }
+
+
         $achievements = app('achievements');
         $userAchievements = $user->achievements;
-
-
-
-//        foreach ($achievements as $achievement) {
-//            if (in_array($achievement->modelKey(), $userAchievements->pluck('id')->all())) {
-//                dump('found one');
-//            }
-//        }
-
-
 
         return view('badges.user', [
             'user' => $user,
