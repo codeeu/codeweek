@@ -2,11 +2,11 @@
 
 namespace App\Achievements\Types;
 
-class OrganiserExpert2021 extends AchievementType
+class OrganiserExpert2022 extends AchievementType
 {
     public $icon = 'organiser/organiser_expert_small.png';
-    public $edition = 2021;
-    public $name = 'Expert Organiser 2021';
+    public $edition = 2022;
+    public $name = 'Expert Organiser 2022';
 
     public function description()
     {

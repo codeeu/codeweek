@@ -39,9 +39,9 @@ class TagImpactTest extends TestCase
 
         $this->assertEquals(100, $LT1->getExperience()->points);
 
-        $this->assertCount(1, $LT1->fresh()->achievements);
+        $this->assertCount(5, $LT1->fresh()->achievements);
 
-        $this->assertEquals("Influencer 2021", $LT1->fresh()->achievements[0]->name);
+        $this->assertEquals("Influencer " . Carbon::now()->year, $LT1->fresh()->achievements[0]->name);
 //
 //        $more_events = create('App\Event', ["creator_id" => $user->id, "reported_at" => null,"status" => "APPROVED", "start_date" => Carbon::now(), "end_date" => Carbon::now()], 5);
 //

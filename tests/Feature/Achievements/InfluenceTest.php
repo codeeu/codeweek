@@ -30,8 +30,8 @@ class InfluenceTest extends TestCase
         $InfluenceCount2021 = $LT1->influence(2021);
 
 
-        $this->assertEquals(10, $InfluenceCount2020);
-        $this->assertEquals(20, $InfluenceCount2021);
+        $this->assertEquals(20, $InfluenceCount2020);
+        $this->assertEquals(40, $InfluenceCount2021);
 
 
     }

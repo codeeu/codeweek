@@ -2,11 +2,11 @@
 
 namespace App\Achievements\Types;
 
-class OrganiserMaster2021 extends AchievementType
+class OrganiserMaster2022 extends AchievementType
 {
     public $icon = 'organiser/organiser_master_small.png';
-    public $edition = 2021;
-    public $name = 'Master Organiser 2021';
+    public $edition = 2022;
+    public $name = 'Master Organiser 2022';
 
     public function description()
     {

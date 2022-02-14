@@ -50,6 +50,8 @@ class AchievementsTest extends TestCase
 
         $events = create('App\Event', ["creator_id" => $user->id, "reported_at" => null,"status" => "APPROVED", "start_date" => Carbon::now()], 5);
 
+        $year = Carbon::now()->year;
+
         $this->assertCount(0, $user->achievements);
 
         $this->assertEquals(0, auth()->user()->getExperience()->points);
@@ -62,7 +64,7 @@ class AchievementsTest extends TestCase
 
         $this->assertCount(1, $user->fresh()->achievements);
 
-        $this->assertEquals("Active Organiser 2021", $user->fresh()->achievements[0]->name);
+        $this->assertEquals("Active Organiser {$year}", $user->fresh()->achievements[0]->name);
 
         $more_events = create('App\Event', ["creator_id" => $user->id, "reported_at" => null,"status" => "APPROVED", "start_date" => Carbon::now(), "end_date" => Carbon::now()], 5);
 
@@ -74,7 +76,7 @@ class AchievementsTest extends TestCase
 
         $this->assertCount(2, $user->fresh()->achievements);
 
-        $this->assertEquals("Expert Organiser 2021", $user->fresh()->achievements[1]->name);
+        $this->assertEquals("Expert Organiser {$year}", $user->fresh()->achievements[1]->name);
 
 
     }
