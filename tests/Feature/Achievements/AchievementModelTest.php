@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature\Achievements;
+namespace Tests\Feature\Achievements\Achievements;
 
 use App\Achievements\Achievement;
 use Illuminate\Foundation\Testing\RefreshDatabase;

@@ -55,5 +55,6 @@ class AuthServiceProvider extends ServiceProvider
 
             return $collection->count() > 0;
         });
+
     }
 }
