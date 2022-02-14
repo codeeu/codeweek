@@ -22,12 +22,10 @@
 
                         <!-- Content goes here -->
                         <div class="text-xl mt-4">Name: {{$user->fullName}}</div>
-                        @for($y = 2018;$y <= $year; $y++)
-                        <div class="text-xl mt-4">{{$y}} Points: {{$user->getPoints($y)}}</div>
-                        @endfor
-                        <div class="text-xl mt-4">Reported events Globally: {{$user->reported()}}</div>
-                        <div class="text-xl mt-4">Reported events in 2021: {{$user->reported(2021)}}</div>
-                        <div class="text-xl mt-4">Influencer Bits in 2021: {{$user->influence(2021)}}</div>
+
+                        <div class="text-xl mt-4">Your points for {{$year}}: {{$user->getPoints($year)}}</div>
+                        <div class="text-xl mt-4">Reported events for {{$year}}: {{$user->reported($year)}}</div>
+                        <div class="text-xl mt-4">Influencer Bits for {{$year}}: {{$user->influence($year)}}</div>
                         <div class="text-xl mt-4">Achievements:<br/>
 
                                 <div class="grid grid-cols-5 gap-2">

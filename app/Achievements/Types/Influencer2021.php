@@ -7,7 +7,9 @@ use Illuminate\Support\Facades\Log;
 class Influencer2021 extends AchievementType
 {
     public $icon = 'influencer/Influencer_normal_small.png';
+    public $edition = 2021;
     public $name = 'Influencer 2021';
+
 
     public function description()
     {
@@ -16,7 +18,7 @@ class Influencer2021 extends AchievementType
 
     public function qualifier($user)
     {
-        return $user->influence(2021) >= 10;
+        return $user->influence($this->edition) >= 10;
     }
 
 

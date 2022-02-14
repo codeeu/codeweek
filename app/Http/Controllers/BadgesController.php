@@ -51,21 +51,27 @@ class BadgesController extends Controller
 
 
 
-    public function user(User $user)
+    public function user(User $user, $year = null)
     {
+
         if (!($user->id == auth()->id() || auth()->user()->isAdmin() || auth()->user()->isLeadingTeacherAdmin())){
             abort(403, 'You are not allowed');
         }
 
+        if (is_null($year)) $year = Carbon::now()->year;
 
-        $achievements = app('achievements');
+        $achievements = app('achievements')->filter(function ($achievement) use ($year) {
+            return $achievement->edition == $year;
+        });
+
         $userAchievements = $user->achievements;
+
 
         return view('badges.user', [
             'user' => $user,
             'achievements' => $achievements,
             'userAchievements' => $userAchievements,
-            'year' => Carbon::now()->year
+            'year' => $year
         ]);
     }
 }

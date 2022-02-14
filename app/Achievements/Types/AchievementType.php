@@ -15,7 +15,8 @@ abstract class AchievementType
         $this->model = Achievement::firstOrCreate([
             'name' => $this->name(),
             'description' => $this->description(),
-            'icon' => $this->icon
+            'icon' => $this->icon,
+            'edition' => $this->edition
         ]);
     }
 
