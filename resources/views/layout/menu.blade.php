@@ -139,8 +139,8 @@
                                   />
                         </svg>
 
-                        <a href="{{route('badges-scoreboard-year')}}">
-                            Badges Scoreboard
+                        <a href="{{route('badges-leaderboard-year')}}">
+                            Badges Leaderboard
                         </a>
                     </li>
 

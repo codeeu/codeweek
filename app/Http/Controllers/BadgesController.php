@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class BadgesController extends Controller
 {
 
-    public function my(Request $request){
+    public function my(Request $request)
+    {
         $achievements = app('achievements');
         $userAchievements = auth()->user()->achievements;
 
@@ -21,7 +23,7 @@ class BadgesController extends Controller
         ]);
     }
 
-    public function scoreboard(Request $request)
+    public function leaderboard(Request $request)
     {
 
         //  $users = User::with('experience')->role('leading teacher')->orderByDesc('experience.points')->paginate(15);
@@ -33,16 +35,18 @@ class BadgesController extends Controller
 //    ::where('user_id','=',$this->id)
 //    ->where('quantity','>',0)
             ->join('experiences', 'users.id', '=', 'experiences.user_id')
-            ->where('experiences.year','=',$year)
+            ->where('experiences.year', '=', $year)
             ->orderByDesc('experiences.points')
             ->select('users.*')
-            ->paginate(15);
+            ->paginate(50);
 
         //dd($users);
 
         $rank = $users->firstItem();
 
-        return view('badges.scoreboard', [
+
+        return view('badges.leaderboard', [
+            'years' => range(\Carbon\Carbon::now()->year, 2018, -1),
             'users' => $users,
             'rank' => $rank,
             'year' => $year
@@ -50,19 +54,27 @@ class BadgesController extends Controller
     }
 
 
-
-    public function user(User $user, $year = null)
+    public function user(Request $request, User $user)
     {
 
-        if (!($user->id == auth()->id() || auth()->user()->isAdmin() || auth()->user()->isLeadingTeacherAdmin())){
+        if (!($user->id == auth()->id() || auth()->user()->isAdmin() || auth()->user()->isLeadingTeacherAdmin())) {
             abort(403, 'You are not allowed');
         }
 
-        if (is_null($year)) $year = Carbon::now()->year;
+        $year = $request['year'] ?? Carbon::now()->year;
 
         $achievements = app('achievements')->filter(function ($achievement) use ($year) {
             return $achievement->edition == $year;
         });
+
+        $organiserBadges = $achievements->filter(function ($achievement) {
+            return Str::contains(Str::lower($achievement->name), 'organiser');
+        });
+
+        $influencerBadges = $achievements->filter(function ($achievement) {
+            return Str::contains(Str::lower($achievement->name), 'influencer');
+        });
+
 
         $userAchievements = $user->achievements;
 
@@ -71,7 +83,9 @@ class BadgesController extends Controller
             'user' => $user,
             'achievements' => $achievements,
             'userAchievements' => $userAchievements,
-            'year' => $year
+            'year' => $year,
+            'organiserBadges' => $organiserBadges,
+            'influencerBadges' => $influencerBadges,
         ]);
     }
 }
