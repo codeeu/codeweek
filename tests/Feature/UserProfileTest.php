@@ -43,7 +43,7 @@ class UserProfileTest extends TestCase
     {
 
         $response = $this->get('/badges/user/222');
-        $response->assertSeeText('Active Organiser ' . Carbon::now()->year);
+        $response->assertSee('Active Organiser ' . Carbon::now()->year);
 
     }
 }

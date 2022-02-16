@@ -12,15 +12,22 @@ class BadgesController extends Controller
 
     public function my(Request $request)
     {
-        $achievements = app('achievements');
-        $userAchievements = auth()->user()->achievements;
 
-        return view('badges.user', [
-            'user' => auth()->user(),
-            'achievements' => $achievements,
-            'userAchievements' => $userAchievements,
-            'year' => Carbon::now()->year
-        ]);
+        $year = $request['year'] ?? Carbon::now()->year;
+
+        return $this->buildPage($year, auth()->user());
+    }
+
+    public function user(Request $request, User $user)
+    {
+
+        if (!($user->id == auth()->id() || auth()->user()->isAdmin() || auth()->user()->isLeadingTeacherAdmin())) {
+            abort(403, 'You are not allowed');
+        }
+
+        $year = $request['year'] ?? Carbon::now()->year;
+
+        return $this->buildPage($year, $user);
     }
 
     public function leaderboard(Request $request)
@@ -53,16 +60,13 @@ class BadgesController extends Controller
         ]);
     }
 
-
-    public function user(Request $request, User $user)
+    /**
+     * @param $year
+     * @param User $user
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function buildPage($year, User $user)
     {
-
-        if (!($user->id == auth()->id() || auth()->user()->isAdmin() || auth()->user()->isLeadingTeacherAdmin())) {
-            abort(403, 'You are not allowed');
-        }
-
-        $year = $request['year'] ?? Carbon::now()->year;
-
         $achievements = app('achievements')->filter(function ($achievement) use ($year) {
             return $achievement->edition == $year;
         });
@@ -88,4 +92,6 @@ class BadgesController extends Controller
             'influencerBadges' => $influencerBadges,
         ]);
     }
+
+
 }

@@ -67,7 +67,7 @@
                                                                     <!-- Heroicon name: solid/check -->
                                                                     <img src="{{asset('badges/'.$achievement->icon)}}">
 
-                                                                    <span class="sr-only">Step 1</span>
+                                                                    <span class="sr-only">{{$achievement->name}}</span>
                                                                 </a>
 
 
@@ -82,6 +82,7 @@
                                                                    class="group relative w-24 h-24 flex items-center justify-center bg-white border-2 border-gray-300 rounded-full hover:border-blue-400">
                                                                     <img class="filter grayscale blur-sm"
                                                                          src="{{asset('badges/'.$achievement->icon)}}">
+                                                                    <span class="sr-only">{{$achievement->name}}</span>
                                                                 </a>
 
                                                             @endif
@@ -139,7 +140,7 @@
                                                                     <!-- Heroicon name: solid/check -->
                                                                     <img src="{{asset('badges/'.$achievement->icon)}}">
 
-                                                                    <span class="sr-only">Step 1</span>
+                                                                    <span class="sr-only">{{$achievement->name}}</span>
                                                                 </a>
 
 
@@ -154,6 +155,7 @@
                                                                    class="group relative w-24 h-24 flex items-center justify-center bg-white border-2 border-gray-300 rounded-full hover:border-blue-400">
                                                                     <img class="filter grayscale blur-sm"
                                                                          src="{{asset('badges/'.$achievement->icon)}}">
+                                                                    <span class="sr-only">{{$achievement->name}}</span>
                                                                 </a>
 
                                                             @endif
