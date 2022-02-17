@@ -6,8 +6,8 @@ return [
     'when-text' =>
         '<p>La Settimana europea della programmazione è un evento che nasce dal basso e celebra la creatività, la risoluzione dei problemi e la collaborazione attraverso la programmazione e altre attività tecnologiche. L’idea è di rendere la programmazione più visibile, mostrare ai giovani, agli adulti e agli anziani come dare vita alle proprie idee con la programmazione, spiegare queste capacità e mettere insieme persone motivate per imparare.</p>',
     'codeweek_in_numbers-title' => 'Settimana della programmazione in numeri',
-    'codeweek_in_numbers-text' => '<p>Nel 2019, 4,2 milioni di persone provenienti da più di 80 paesi in tutto il mondo hanno partecipato alla Settimana europea della programmazione.</p>
-                    <p>L’età media dei partecipanti era di 11 anni e il 49 % di loro nel 2019 erano donne o ragazze. Il 92 % degli eventi della settimana europea della programmazione si è svolto nelle scuole, mostrando che gli sforzi per rafforzare gli insegnanti durante la campagna 2019 hanno avuto successo.</p>
+    'codeweek_in_numbers-text' => '<p>Nel 2021, <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 milioni di persone</a> provenienti da più di 80 paesi in tutto il mondo hanno partecipato alla Settimana europea della programmazione.</p>
+                    <p>L’età media dei partecipanti era di 11 anni e il 49 % di loro nel 2021 erano donne o ragazze. Il 88 % degli eventi della settimana europea della programmazione si è svolto nelle scuole, mostrando che gli sforzi per rafforzare gli insegnanti durante la campagna 2021 hanno avuto successo.</p>
                     <p>Tutti sono ben accetti ad organizzare un’attività o ad unirvisi. Non dovrai far altro che scegliere un argomento e un pubblico di destinazione e <a href="/add">aggiungere la tua attività</a> alla <a href="/events">mappa</a>.</p>',
     'run_by_volunteers-title' => 'Gestita da volontari',
     'run_by_volunteers-text' =>
