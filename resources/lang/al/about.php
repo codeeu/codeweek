@@ -11,8 +11,8 @@ return [
                         të zbuluar misterin e këtyre aftësive dhe për të bërë bashkë
                         njerëzit e motivuar që të mësojnë.</p>',
     'codeweek_in_numbers-title' => 'Code Week në shifra',
-    'codeweek_in_numbers-text' => '<p>Në vitin 2019, 4,2 milionë persona në më shumë se 80 vende në mbarë botën morën pjesë në EU Code Week.</p>
-                    <p>Pjesëmarrësi mesatar ishte 11 vjeç dhe 49% e pjesëmarrësve në vitin 2019 ishin gra ose vajza. 92% e evenimenteve të EU Code Week u zhvilluan në shkolla, që tregon se përpjekjet për të përfshirë mësuesit gjatë fushatës së vitit 2019 kishin qenë të suksesshme.</p>
+    'codeweek_in_numbers-text' => '<p>Në vitin 2021, <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 milionë persona</a> në më shumë se 80 vende në mbarë botën morën pjesë në EU Code Week.</p>
+                    <p>Pjesëmarrësi mesatar ishte 11 vjeç dhe 49% e pjesëmarrësve në vitin 2021 ishin gra ose vajza. 88% e evenimenteve të EU Code Week u zhvilluan në shkolla, që tregon se përpjekjet për të përfshirë mësuesit gjatë fushatës së vitit 2021 kishin qenë të suksesshme.</p>
                     <p>Të gjithë janë të mirëpritur të organizojnë ose të marrin pjesë në një aktivitet. Thjesht zgjidhni një temë dhe audiencën e synuar dhe <a href="/add">shtoni aktivitetin</a> tuaj në <a href="/events">harta</a></p>',
     'run_by_volunteers-title' => 'Drejtuar nga vullnetarë',
     'run_by_volunteers-text' => ' <p>EU Code Week drejtohet nga vullnetarë. Një ose disa <a href="/ambassadors">ambasadorë

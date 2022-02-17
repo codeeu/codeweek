@@ -6,8 +6,8 @@ return [
     'when-text' =>
         '<p>ELi programmeerimisnädal Code Week on rohujuuretasandil toimuv liikumine, millega tähistatakse loomingulisust, probleemide lahendamist ja koostööd nii programmeerimises kui ka teistes tehnoloogilistes tegevustes. Selle eesmärk on muuta programmeerimine nähtavamaks ning tutvustada noortele ja vanadele, kuidas koodikirjutamisega oma ideid ellu viia, hajutada programmeerimisega seotud saladusi ning motiveerida inimesi õppima.</p>',
     'codeweek_in_numbers-title' => 'Programmeerimisnädal Code Week numbrites',
-    'codeweek_in_numbers-text' => '<p>2019. aastal võttis ELi programmeerimisnädalast Code Week osa 4,2 miljonit inimest ja rohkem kui 80 riiki.</p>
-                    <p>2019. aastal oli keskmine osaleja 11-aastane ja 49% osalejatest olid naised või tüdrukud. ELi programmeerimisnädala Code Week üritustest toimus 92% koolides, mis näitab, et 2019. aasta õpetajate toetamise kampaania on olnud edukas.</p>
+    'codeweek_in_numbers-text' => '<p>2021. aastal võttis ELi programmeerimisnädalast Code Week osa <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 miljonit inimest</a> ja rohkem kui 80 riiki.</p>
+                    <p>2021. aastal oli keskmine osaleja 11-aastane ja 49% osalejatest olid naised või tüdrukud. ELi programmeerimisnädala Code Week üritustest toimus 88% koolides, mis näitab, et 2021. aasta õpetajate toetamise kampaania on olnud edukas.</p>
                     <p>Kõik on oodatud tegevusi korraldama või neis osalema. Valige teema ja sihtrühm ning <a href="/add">lisage oma tegevus</a> <a href="/events">kaardile</a>.</p>',
     'run_by_volunteers-title' => 'Vabatahtlikest koosnev korraldustiim',
     'run_by_volunteers-text' =>
