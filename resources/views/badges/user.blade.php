@@ -1,6 +1,7 @@
 @extends('layout.base')
 
 <x-tailwind></x-tailwind>
+<x-alpine></x-alpine>
 
 @section('content')
 
@@ -24,13 +25,15 @@
                         <div class="text-base mt-4"><strong>Name:</strong> {{$user->fullName}}</div>
 
                         <div class="text-base mt-4"><strong>Bits earned
-                                in {{$year}}</strong>: {{$user->getPoints($year)}} - <a href="{{route('badges-leaderboard-year', $year)}}">View scoreboard</a></div>
+                                in {{$year}}</strong>: {{$user->getPoints($year)}}</div>
                         <div class="text-base mt-4"><strong>Reported events
                                 for {{$year}}</strong>: {{$user->reported($year)}}</div>
                         <div class="text-base mt-4"><strong>Influencer Bits
                                 for {{$year}}</strong>: {{$user->influence($year)}}</div>
 
                         <h2 class="mt-4">Organiser Badges</h2>
+
+
 
                         <div>
                             <div class="flex">
@@ -54,36 +57,15 @@
                                                         <li class="relative pr-8 sm:pr-20">
                                                     @else
                                                         <li class="relative">
-                                                        @endif
-                                                        @if (in_array($achievement->modelKey(), $userAchievements->pluck('id')->all()))
+                                                            @endif
+                                                            @if (in_array($achievement->modelKey(), $userAchievements->pluck('id')->all()))
 
-                                                            <!-- Completed Step -->
-                                                                <div class="absolute inset-0 flex items-center"
-                                                                     aria-hidden="true">
-                                                                    <div class="h-0.5 w-full bg-yellow-600"></div>
-                                                                </div>
-                                                                <a href="#"
-                                                                   class="relative w-24 h-24 flex items-center justify-center bg-yellow-600 rounded-full hover:bg-red-900">
-                                                                    <!-- Heroicon name: solid/check -->
-                                                                    <img src="{{asset('badges/'.$achievement->icon)}}">
-
-                                                                    <span class="sr-only">{{$achievement->name}}</span>
-                                                                </a>
+                                                                <x-badges.completed :achievement="$achievement"></x-badges.completed>
 
 
-                                                        @else
+                                                            @else
 
-                                                            <!-- Upcoming Step -->
-                                                                <div class="absolute inset-0 flex items-center"
-                                                                     aria-hidden="true">
-                                                                    <div class="h-0.5 w-full bg-gray-400"></div>
-                                                                </div>
-                                                                <a href="#"
-                                                                   class="group relative w-24 h-24 flex items-center justify-center bg-white border-2 border-gray-300 rounded-full hover:border-blue-400">
-                                                                    <img class="filter grayscale blur-sm"
-                                                                         src="{{asset('badges/'.$achievement->icon)}}">
-                                                                    <span class="sr-only">{{$achievement->name}}</span>
-                                                                </a>
+                                                                <x-badges.locked :achievement="$achievement"></x-badges.locked>
 
                                                             @endif
                                                         </li>
@@ -121,42 +103,14 @@
                                                     @else
                                                         <li class="relative">
                                                         @endif
-                                                        @if (in_array($achievement->modelKey(), $userAchievements->pluck('id')->all()))
-                                                            {{--                                            <div class="flex flex-col items-center px-4 py-2 rounded-md text-sm font-medium text-center">--}}
+                                                            @if (in_array($achievement->modelKey(), $userAchievements->pluck('id')->all()))
 
-                                                            {{--                                                <img src="{{asset('badges/'.$achievement->icon)}}">--}}
-                                                            {{--                                                <span class="ml-2"><span class="text-lg font-bold">{{$achievement->name}}</span><br/>Success !</span>--}}
+                                                                <x-badges.completed :achievement="$achievement"></x-badges.completed>
 
 
-                                                            {{--                                            </div>--}}
+                                                            @else
 
-                                                            <!-- Completed Step -->
-                                                                <div class="absolute inset-0 flex items-center"
-                                                                     aria-hidden="true">
-                                                                    <div class="h-0.5 w-full bg-red-600"></div>
-                                                                </div>
-                                                                <a href="#"
-                                                                   class="relative w-24 h-24 flex items-center justify-center bg-blue-600 rounded-full hover:bg-blue-900">
-                                                                    <!-- Heroicon name: solid/check -->
-                                                                    <img src="{{asset('badges/'.$achievement->icon)}}">
-
-                                                                    <span class="sr-only">{{$achievement->name}}</span>
-                                                                </a>
-
-
-                                                        @else
-
-                                                            <!-- Upcoming Step -->
-                                                                <div class="absolute inset-0 flex items-center"
-                                                                     aria-hidden="true">
-                                                                    <div class="h-0.5 w-full bg-gray-400"></div>
-                                                                </div>
-                                                                <a href="#"
-                                                                   class="group relative w-24 h-24 flex items-center justify-center bg-white border-2 border-gray-300 rounded-full hover:border-blue-400">
-                                                                    <img class="filter grayscale blur-sm"
-                                                                         src="{{asset('badges/'.$achievement->icon)}}">
-                                                                    <span class="sr-only">{{$achievement->name}}</span>
-                                                                </a>
+                                                                <x-badges.locked :achievement="$achievement"></x-badges.locked>
 
                                                             @endif
                                                         </li>
