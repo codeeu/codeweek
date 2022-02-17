@@ -6,8 +6,8 @@ return [
     'when-text' =>
         '<p>EU:n koodausviikko on ruohonjuuritason hanke, jolla edistetään luovuutta, ongelmanratkaisukykyä ja yhteistyötä ohjelmoinnin ja muiden tekniikan alan tapahtumien kautta. Ajatuksena on tehdä ohjelmointia tunnetuksi ja näyttää nuorille, aikuisille ja senioreille, miten ideat voidaan herättää henkiin koodin avulla. Tavoitteena on myös hälventää koodaukseen kohdistuvaa mystiikkaa ja tuoda motivoituneet ihmiset oppimaan yhdessä.</p>',
     'codeweek_in_numbers-title' => 'Koodausviikko lukuina',
-    'codeweek_in_numbers-text' => '<p>Vuonna 2019 EU:n koodausviikkoon osallistui 4,2 ihmistä yli 80 maassa ympäri maailmaa.</p>
-                    <p>Osallistujien keskimääräinen ikä oli 11, ja 49 % osanottajista vuonna 2019 oli naisia tai tyttöjä. EU:n koodausviikon tapahtumista 92 % järjestettiin kouluissa, mikä osoittaa, että pyrkimykset opettajien valmiuksien tukemiseksi vuoden 2019 kampanjoissa ovat onnistuneet.</p>
+    'codeweek_in_numbers-text' => '<p>Vuonna 2021 EU:n koodausviikkoon osallistui <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 ihmistä</a> yli 80 maassa ympäri maailmaa.</p>
+                    <p>Osallistujien keskimääräinen ikä oli 11, ja 49 % osanottajista vuonna 2021 oli naisia tai tyttöjä. EU:n koodausviikon tapahtumista 88 % järjestettiin kouluissa, mikä osoittaa, että pyrkimykset opettajien valmiuksien tukemiseksi vuoden 2021 kampanjoissa ovat onnistuneet.</p>
                     <p>Kuka tahansa voi järjestää tapahtuman tai liittyä sellaiseen. Valitse aihe ja kohdeyleisö ja <a href="/add">lisää tapahtumasi</a> <a href="/events">kartalle</a>.</p>',
     'run_by_volunteers-title' => 'Vapaaehtoisten vetämä aloite',
     'run_by_volunteers-text' =>

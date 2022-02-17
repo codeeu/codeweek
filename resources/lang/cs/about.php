@@ -6,8 +6,8 @@ return [
     'when-text' =>
         '<p>Evropský týden programování je projekt, který propaguje kreativitu, řešení problémů a spolupráci pomocí programování a jiných technických aktivit. Cílem je programování zviditelnit – ukázat mladým lidem, dospělým i seniorům, jak je díky programování možné realizovat myšlenky. Chceme tyto dovednosti zbavit roušky tajemství a spojit motivované lidi, aby se učili.</p>',
     'codeweek_in_numbers-title' => 'Týden programování v číslech',
-    'codeweek_in_numbers-text' => '<p>V roce 2019 se Evropského týdne programování zúčastnilo 4,2 milionu lidí ve více než 80 zemích celého světa.</p>
-                    <p>Průměrnému účastníkovi bylo 11 let, 49 % účastníků ročníku 2019 byly ženy nebo dívky. 92 % akcí Evropského týdne programování se konalo ve školách, což ukazuje, že snahy o větší zapojení učitelů do ročníku 2019 byly úspěšné.</p>
+    'codeweek_in_numbers-text' => '<p>V roce 2021 se Evropského týdne programování zúčastnilo <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 milionu lidí</a> ve více než 80 zemích celého světa.</p>
+                    <p>Průměrnému účastníkovi bylo 11 let, 49 % účastníků ročníku 2021 byly ženy nebo dívky. 88 % akcí Evropského týdne programování se konalo ve školách, což ukazuje, že snahy o větší zapojení učitelů do ročníku 2021 byly úspěšné.</p>
                     <p>Zveme každého, aby zorganizoval akci nebo se k ní připojil. Stačí si vybrat námět a cílovou skupinu <a href="/add">a přidat svou akci</a> do <a href="/events">mapy</a>.</p>',
     'run_by_volunteers-title' => 'Organizováno dobrovolníky',
     'run_by_volunteers-text' =>

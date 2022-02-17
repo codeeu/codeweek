@@ -6,8 +6,8 @@ return [
     'when-text' =>
         '<p>EU’s kodeuge er en græsrodsbevægelse, der fejrer kreativitet, problemløsning og samarbejde gennem programmering og andre tekniske aktiviteter. Idéen er at gøre programmering mere synligt for at vise unge, voksne og ældre, hvordan man fører sine idéer ud i livet med kode, at afmystificere disse færdigheder og at samle motiverede mennesker i et læringsmiljø.</p>',
     'codeweek_in_numbers-title' => 'Kodeugen i tal',
-    'codeweek_in_numbers-text' => '<p>I 2019 deltog 4,2 millioner mennesker i over 80 lande på tværs af kloden i EU’s kodeuge.</p>
-                    <p>Gennemsnitsdeltageren var 11 år, og 49 % af deltagerne i 2019 var kvinder eller piger. 92 % af arrangementerne i EU’s kodeuge foregik på skoler, og det viser, at indsatsen med at styrke lærerne i 2019-kampagnen har virket.</p>
+    'codeweek_in_numbers-text' => '<p>I 2021 deltog <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 millioner mennesker</a> i over 80 lande på tværs af kloden i EU’s kodeuge.</p>
+                    <p>Gennemsnitsdeltageren var 11 år, og 49 % af deltagerne i 2021 var kvinder eller piger. 88 % af arrangementerne i EU’s kodeuge foregik på skoler, og det viser, at indsatsen med at styrke lærerne i 2021-kampagnen har virket.</p>
                     <p>Alle er velkomne til at afholde eller deltage i en aktivitet. Du skal bare vælge et emne og en målgruppe og <a href="/add">tilføje din aktivitet</a> på <a href="/events">kortet</a>.</p>',
     'run_by_volunteers-title' => 'Drevet af frivillige',
     'run_by_volunteers-text' =>

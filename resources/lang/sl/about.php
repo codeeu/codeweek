@@ -6,8 +6,8 @@ return [
     'when-text' =>
         '<p>Evropski teden programiranja je množično gibanje, ki slavi ustvarjalnost, reševanje težav in sodelovanje prek programiranja in drugih tehnoloških dejavnosti. Njegov namen je povečati prepoznavnost programiranja ter mladim, odraslim in starejšim pokazati, kako uresničiti zamisli s programiranjem, pojasniti ta znanja in spretnosti ter združiti motivirane ljudi v učenju.</p>',
     'codeweek_in_numbers-title' => 'Teden programiranja v številkah',
-    'codeweek_in_numbers-text' => '<p>Evropski teden programiranja je leta 2019 privabil k sodelovanju 4,2 milijona ljudi iz več kot 80 držav po vsem svetu.</p>
-                    <p>Povprečna starost udeleženca je bila 11 let in 49 % udeležencev v letu 2019 je bilo žensk ali deklet. 92 % dogodkov evropskega tedna programiranja je potekalo v šolah, kar kaže, da so bila prizadevanja za okrepitev vloge učiteljev v kampanji leta 2019 uspešna.</p>',
+    'codeweek_in_numbers-text' => '<p>Evropski teden programiranja je leta 2021 privabil k sodelovanju <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 milijona ljudi</a> iz več kot 80 držav po vsem svetu.</p>
+                    <p>Povprečna starost udeleženca je bila 11 let in 49 % udeležencev v letu 2021 je bilo žensk ali deklet. 88 % dogodkov evropskega tedna programiranja je potekalo v šolah, kar kaže, da so bila prizadevanja za okrepitev vloge učiteljev v kampanji leta 2021 uspešna.</p>',
     'run_by_volunteers-title' => 'Vodijo ga prostovoljci',
     'run_by_volunteers-text' =>
         '<p>Evropski teden programiranja vodijo prostovoljci. Eden ali več <a href="/ambassadors">ambasadorjev tedna programiranja</a> usklajuje pobude v svoji državi, vsakdo pa lahko organizira svojo dejavnost in jo doda na zemljevid na spletnem mestu <a href="/">codeweek.eu</a>.</p>',

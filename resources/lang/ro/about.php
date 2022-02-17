@@ -6,8 +6,8 @@ return [
     'when-text' =>
         '<p>Săptămâna UE a programării este o mișcare de bază care celebrează creativitatea, rezolvarea de probleme și colaborarea prin programare și alte activități tehnologice. Ideea este de a face programarea mai vizibilă, de a le arăta tinerilor, adulților și vârstnicilor cum își pot aduce ideile la viață prin programare, de a demistifica aceste aptitudini și de a aduce oamenii motivați împreună, pentru a învăța.</p>',
     'codeweek_in_numbers-title' => 'Săptămâna programării în cifre',
-    'codeweek_in_numbers-text' => '<p>În 2019, 4,2 milioane de oameni din peste 80 de țări din întreaga lume au luat parte la UE Code Week.</p>
-                    <p>Vârsta medie a participanților a fost de 11 ani, iar 49 % dintre participanți în 2019 au fost femei sau fete. 92 % din evenimentele din Săptămâna UE a programării au avut loc în școli, ceea ce arată că eforturile de abilitare a cadrelor didactice în timpul campaniei din 2019 au avut succes.</p>
+    'codeweek_in_numbers-text' => '<p>În 2021, <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 milioane de oameni</a> din peste 80 de țări din întreaga lume au luat parte la UE Code Week.</p>
+                    <p>Vârsta medie a participanților a fost de 11 ani, iar 49 % dintre participanți în 2021 au fost femei sau fete. 88 % din evenimentele din Săptămâna UE a programării au avut loc în școli, ceea ce arată că eforturile de abilitare a cadrelor didactice în timpul campaniei din 2021 au avut succes.</p>
                     <p>Oricine este binevenit să organizeze sau să participe la o activitate. Alege un subiect și un public țintă și <a href="/add">adaugă activitatea</a> ta pe <a href="/events">hartă</a></p>',
     'run_by_volunteers-title' => 'Organizată de voluntari',
     'run_by_volunteers-text' =>

@@ -6,8 +6,8 @@ return [
     'when-text' =>
         '<p>La Semaine européenne du code est un mouvement citoyen qui met à l’honneur la créativité, la résolution de problèmes et la collaboration par le biais de la programmation et d’autres activités technologiques. L’idée consiste à rendre la programmation plus visible, à montrer aux jeunes, aux adultes et aux personnes âgées comment concrétiser des idées grâce au code, à démystifier ces compétences et à rassembler un public désireux d’apprendre.</p>',
     'codeweek_in_numbers-title' => 'La Semaine du code en chiffres',
-    'codeweek_in_numbers-text' => '<p>En 2019, 4,2 millions de personnes dans plus de 80 pays du monde ont participé à la Semaine européenne du code.</p>
-                    <p>La moyenne d’âge des participants était de 11 ans, et 49 % des participants en 2019 étaient des femmes ou des filles. 92 % des évènements de la Semaine européenne du code ont eu lieu dans des écoles, ce qui montre que les efforts déployés pour responsabiliser les enseignants pendant la campagne de 2019 ont porté leurs fruits.</p>
+    'codeweek_in_numbers-text' => '<p>En 2021, <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 millions de personnes</a> dans plus de 80 pays du monde ont participé à la Semaine européenne du code.</p>
+                    <p>La moyenne d’âge des participants était de 11 ans, et 49 % des participants en 2021 étaient des femmes ou des filles. 88 % des évènements de la Semaine européenne du code ont eu lieu dans des écoles, ce qui montre que les efforts déployés pour responsabiliser les enseignants pendant la campagne de 2021 ont porté leurs fruits.</p>
                     <p>Tout le monde est invité à organiser ou à rejoindre une activité. Choisissez simplement un thème et un public cible et <a href="/add">ajoutez votre activité</a> à la <a href="/events">carte.</a></p>',
     'run_by_volunteers-title' => 'Organisée par des bénévoles',
     'run_by_volunteers-text' =>

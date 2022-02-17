@@ -6,8 +6,8 @@ return [
     'when-text' =>
         '<p>De EU-programmeerweek is een burgerinitiatief waarin creativiteit, probleemoplossing en samenwerking worden gestimuleerd door middel van programmeren en andere technische activiteiten. Het idee erachter is om programmeren zichtbaarder te maken, om jongeren, volwassenen en ouderen te laten zien hoe je ideeën met programmeercode tot leven kunt brengen, om deze vaardigheden te ontsluieren en om gemotiveerde mensen bij elkaar te brengen om te leren.</p>',
     'codeweek_in_numbers-title' => 'De programmeerweek in cijfers',
-    'codeweek_in_numbers-text' => '<p>In 2019 deden 4,2 miljoen mensen in meer dan 80 landen over de hele wereld mee aan de EU-programmeerweek.</p>
-                    <p>De gemiddelde deelnemer was 11 jaar oud en 49% van de deelnemers in 2019 waren vrouwen of meisjes. 92% van de evenementen in het kader van de EU-programmeerweek vond plaats op scholen, waaruit blijkt dat de inspanningen om leerkrachten tijdens de campagne van 2019 mondiger te maken, succesvol zijn geweest.</p>
+    'codeweek_in_numbers-text' => '<p>In 2021 deden <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 miljoen mensen</a> in meer dan 80 landen over de hele wereld mee aan de EU-programmeerweek.</p>
+                    <p>De gemiddelde deelnemer was 11 jaar oud en 49% van de deelnemers in 2021 waren vrouwen of meisjes. 88% van de evenementen in het kader van de EU-programmeerweek vond plaats op scholen, waaruit blijkt dat de inspanningen om leerkrachten tijdens de campagne van 2021 mondiger te maken, succesvol zijn geweest.</p>
                     <p>Iedereen mag een activiteit organiseren of met een activiteit meedoen. Kies gewoon een onderwerp en doelgroep en <a href="/add">zet je activiteit</a> op de <a href="/events">kaart</a>.</p>',
     'run_by_volunteers-title' => 'Georganiseerd door vrijwilligers',
     'run_by_volunteers-text' =>
