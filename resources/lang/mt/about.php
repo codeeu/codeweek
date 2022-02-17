@@ -6,8 +6,8 @@ return [
     'when-text' =>
         '<p>Il-Ġimgħa Ewropea tal-Ikkowdjar hija moviment bażiku li jiċċelebra l-kreattività, is-soluzzjoni tal-problemi u kollaborazzjoni permezz ta’ programmazzjoni u attivitajiet tekniċi oħra. L-idea hija li l-programmazzjoni ssir aktar viżibbli, biex iż-żgħażagħ, l-adulti u l-anzjani jintwerew kif tista’ tingħata l-ħajja lill-ideat bil-kodiċi, biex dawn il-ħiliet isiru aktar ċari u biex jingħaqdu persuni motivati biex jitgħallmu.</p>',
     'codeweek_in_numbers-title' => 'Il-Ġimgħa tal-Ikkowdjar f’numri',
-    'codeweek_in_numbers-text' => '<p>Fl-2019, 4.2 miljun ruħ f’aktar minn 80 pajjiż madwar id-dinja ħadu sehem fil-Ġimgħa tal-UE tal-Ikkowdjar.</p>
-                    <p>Il-parteċipant medju kellu 11-il sena u 49 % tal-parteċipanti fl-2019 kienu nisa jew bniet. 92 % tal-avvenimenti tal-Ġimgħa Ewropea tal-Ikkowdjar seħħew fl-iskejjel, li juru li l-isforzi biex tingħata s-setgħa lill-għalliema matul il-kampanja tal-2019 kienu ta’ suċċess.</p>
+    'codeweek_in_numbers-text' => '<p>Fl-2021, <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 miljun</a> ruħ f’aktar minn 80 pajjiż madwar id-dinja ħadu sehem fil-Ġimgħa tal-UE tal-Ikkowdjar.</p>
+                    <p>Il-parteċipant medju kellu 11-il sena u 49 % tal-parteċipanti fl-2021 kienu nisa jew bniet. 88 % tal-avvenimenti tal-Ġimgħa Ewropea tal-Ikkowdjar seħħew fl-iskejjel, li juru li l-isforzi biex tingħata s-setgħa lill-għalliema matul il-kampanja tal-2021 kienu ta’ suċċess.</p>
                     <p>Kulħadd huwa mistieden biex jorganizza jew jingħaqad ma’ attività. Agħżel suġġett u udjenza fil-mira <a href="/add">użid l-attività tiegħek</a> <a href="/events">mal-mappa</a>.</p>',
     'run_by_volunteers-title' => 'Immexxija mill-voluntiera',
     'run_by_volunteers-text' =>

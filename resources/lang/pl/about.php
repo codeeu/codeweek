@@ -6,8 +6,8 @@ return [
     'when-text' =>
         '<p>Europejski Tydzień Kodowania to oddolna inicjatywa, w ramach której świętujemy kreatywność, rozwiązywanie problemów i współpracę poprzez programowanie i inne działania związane z technologią. Główną ideą stojącą za wydarzeniem jest promowanie programowania poprzez pokazywanie młodzieży i dorosłym sposobów na realizację pomysłów przy pomocy kodu, rozwiewanie wątpliwości i mitów otaczających te umiejętności oraz gromadzenie zmotywowanych jednostek w celu wspólnej nauki.</p>',
     'codeweek_in_numbers-title' => 'Tydzień Kodowania w liczbach',
-    'codeweek_in_numbers-text' => '<p>W 2019 roku w wydarzeniach Tygodnia Kodowania wzięło udział 4,2 miliona uczestników mieszkających w ponad 80 krajach na całym świecie.</p>
-                    <p>Przeciętny uczestnik miał 11 lat, a kobiety i dziewczynki stanowiły w 2019 r. 49% wszystkich osób, które wzięły udział w projekcie. 92% wydarzeń organizowanych w ramach Europejskiego Tygodnia Kodowania odbyło się w szkołach, co wskazuje na sukces działań wspierających nauczycieli podczas edycji realizowanej w 2019 r.</p>
+    'codeweek_in_numbers-text' => '<p>W 2021 roku w wydarzeniach Tygodnia Kodowania wzięło udział <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 miliona uczestników</a> mieszkających w ponad 80 krajach na całym świecie.</p>
+                    <p>Przeciętny uczestnik miał 11 lat, a kobiety i dziewczynki stanowiły w 2021 r. 49% wszystkich osób, które wzięły udział w projekcie. 88% wydarzeń organizowanych w ramach Europejskiego Tygodnia Kodowania odbyło się w szkołach, co wskazuje na sukces działań wspierających nauczycieli podczas edycji realizowanej w 2021 r.</p>
                     <p>Każdy może zorganizować własne wydarzenie lub wziąć udział w różnych aktywnościach. Wybierz temat i grupę odbiorców, a następnie <a href="/add">dodaj aktywność</a> do <a href="/events">mapy</a>.</p>',
     'run_by_volunteers-title' => 'Wszystko dzięki wolontariuszom',
     'run_by_volunteers-text' =>
