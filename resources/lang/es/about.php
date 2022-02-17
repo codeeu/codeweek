@@ -6,8 +6,8 @@ return [
     'when-text' =>
         '<p>La Semana de la Programación de la UE es un movimiento de base que promueve la creatividad, la resolución de problemas y la colaboración a través de la programación y otras actividades tecnológicas. La idea es impulsar la visibilidad de la programación y enseñar a jóvenes, adultos y personas mayores a hacer realidad sus ideas mediante la programación, acercar estas capacidades al gran público y reunir a personas motivadas para que aprendan juntas.</p>',
     'codeweek_in_numbers-title' => 'La Semana de la Programación en cifras',
-    'codeweek_in_numbers-text' => '<p>En 2019, 4,2 millones de personas de más de 80 países de todo el mundo participaron en la Semana de la Programación de la UE.</p>
-                    <p>El participante medio tenía 11 años y el 49 % de los participantes de 2019 fueron mujeres o niñas. El 92 % de los eventos de la Semana de la Programación de la UE tuvo lugar en colegios, lo que demuestra que los esfuerzos para capacitar a los profesores durante la campaña de 2019 han sido fructíferos.</p>
+    'codeweek_in_numbers-text' => '<p>En 2021, <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 millones de personas</a> de más de 80 países de todo el mundo participaron en la Semana de la Programación de la UE.</p>
+                    <p>El participante medio tenía 11 años y el 49 % de los participantes de 2021 fueron mujeres o niñas. El 88 % de los eventos de la Semana de la Programación de la UE tuvo lugar en colegios, lo que demuestra que los esfuerzos para capacitar a los profesores durante la campaña de 2021 han sido fructíferos.</p>
                     <p>Todo aquel que lo desee puede organizar o participar en una actividad. Simplemente elige un tema y un público destinatario, y <a href="/add">añade tu actividad</a> en el <a href="/events">mapa</a>.</p>',
     'run_by_volunteers-title' => 'Organizada por voluntarios',
     'run_by_volunteers-text' =>

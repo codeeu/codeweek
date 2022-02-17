@@ -28,14 +28,15 @@ class PodcastsTest extends TestCase {
 
         $response = $this->get('/feed/podcasts');
 
-        $response->assertSeeText('active description');
-        $response->assertDontSeeText('cannot be displayed');
-        $response->assertDontSeeText('pending podcast');
+
+        $response->assertSee('active description');
+        $response->assertDontSee('cannot be displayed');
+        $response->assertDontSee('pending podcast');
 
         $response = $this->get('/podcasts');
 
-        $response->assertSeeText('active description');
-        $response->assertDontSeeText('cannot be displayed');
-        $response->assertDontSeeText('pending podcast');
+        $response->assertSee('active description');
+        $response->assertDontSee('cannot be displayed');
+        $response->assertDontSee('pending podcast');
     }
 }

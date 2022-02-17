@@ -6,8 +6,8 @@ return [
     'when-text' =>
         '<p>Az európai programozási hét alulról szerveződő kezdeményezés, amely a kreativitást, a problémamegoldást és az együttműködést ünnepli a programozáson és egyéb technológiai tevékenységeken keresztül. Az alapgondolat a programozás láthatóbbá tétele, valamint hogy megmutassa a fiataloknak, a felnőtteknek és az időseknek, hogyan valósíthatók meg az ötletek a programozás révén, továbbá a készségek demisztifikálása, valamint a tanulni vágyó emberek egymással való összekapcsolása.</p>',
     'codeweek_in_numbers-title' => 'A programozási hét számokban',
-    'codeweek_in_numbers-text' => '<p>2019-ban világszerte több mint 80 országban 4,2 millió ember vett részt az európai programozási héten.</p>
-                    <p>A résztvevők átlagéletkora 11 év volt és 49%-uk nő vagy leány volt. Az európai programozási hét eseményeinek 92%-ára iskolákban került sor, ami azt mutatja, hogy a tanárok felhatalmazására irányuló erőfeszítések a 2019-es kampány során sikeresnek bizonyultak.</p>
+    'codeweek_in_numbers-text' => '<p>2021-ban világszerte több mint 80 országban <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 millió ember</a> vett részt az európai programozási héten.</p>
+                    <p>A résztvevők átlagéletkora 11 év volt és 49%-uk nő vagy leány volt. Az európai programozási hét eseményeinek 88%-ára iskolákban került sor, ami azt mutatja, hogy a tanárok felhatalmazására irányuló erőfeszítések a 2021-es kampány során sikeresnek bizonyultak.</p>
                     <p>Bárki szervezhet tevékenységet, vagy csatlakozhat egy már meglévőhöz. Válasszon témát és célközönséget, ezt követően pedig <a href="/add">adja hozzá tevékenységét</a> a <a href="/events">térképhez</a></p>',
     'run_by_volunteers-title' => 'Önkéntesek működtetik',
     'run_by_volunteers-text' =>

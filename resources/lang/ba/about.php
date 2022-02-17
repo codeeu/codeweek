@@ -6,8 +6,8 @@ return [
     'when-text' =>
         '<p>Sedmica kodirnja EU je pokret širokih masa u kom se slavi kreativnost, rješavanje problema i saradnja putem programiranja i drugih tehnoloških aktivnosti. Zamisao je da se programiranje načini vidljivijim, da se mladima, odraslima i starijima pokaže kako kodiranjem mogu svoje ideje sprovesti u realnost, da se te vještine demistificiraju i da se okupe oni koji su motivirani za učenje.</p>',
     'codeweek_in_numbers-title' => 'Sedmica kodiranja u ciframa',
-    'codeweek_in_numbers-text' => '<p>U Sedmici kodiranja EU 2019. učestvovalo je 4,2 miliona ljudi iz preko 80 zemalja širom svijeta.</p>
-                    <p>Prosječni učesnik imao je 11 godina, a 49% učesnika u 2019. bili su žene ili djevojčice. 92% događaja vezanih za Sedmicu kodiranja EU dešavalo se u školama, što pokazuje da su napori na jačanju nastavnika tokom kampanje 2019. bili uspješni.</p>
+    'codeweek_in_numbers-text' => '<p>U Sedmici kodiranja EU 2021. učestvovalo je <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 miliona ljudi</a> iz preko 80 zemalja širom svijeta.</p>
+                    <p>Prosječni učesnik imao je 11 godina, a 49% učesnika u 2021. bili su žene ili djevojčice. 88% događaja vezanih za Sedmicu kodiranja EU dešavalo se u školama, što pokazuje da su napori na jačanju nastavnika tokom kampanje 2021. bili uspješni.</p>
                     <p>Të gjithë janë të mirëpritur të organizojnë ose të marrin pjesë në një aktivitet. Thjesht zgjidhni një temë dhe audiencën e synuar dhe <a href="/add">shtoni aktivitetin</a> tuaj në <a href="/events">harta</a>.</p>',
     'run_by_volunteers-title' => 'Vode je volonteri',
     'run_by_volunteers-text' =>

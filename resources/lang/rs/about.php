@@ -6,8 +6,8 @@ return [
     'when-text' =>
         '<p>EU nedelja programiranja je samonikli pokret koji slavi kreativnost, rešavanje problema i saradnju kroz programiranje i druge aktivnosti u vezi sa tehnologijom. Ideja je da se programiranje učini vidljivijim i dostupnijim, da se pokaže mladima, odraslima i starijim osobama kako se ideje realizuju pomoću kodova, da se demistifikuje programiranje i okupe motivisani ljudi da uče zajedno.</p>',
     'codeweek_in_numbers-title' => 'Nedelja programiranja u brojevima',
-    'codeweek_in_numbers-text' => '<p>U 2019. godini, 4,2 miliona ljudi u više od 80 zemalja širom sveta učestvovalo je u EU nedelji programiranja.</p>
-                    <p>Starost prosečnog učesnika u 2019. godini je bila 11 godina, a 49% učesnika su bile žene ili devojke. 92% događaja u okviru EU Nedelje programiranja je održano u školama što pokazuje da su napori da se osnaže nastavnici tokom kampanje 2019. godine bili uspešni.</p>
+    'codeweek_in_numbers-text' => '<p>U 2021. godini, <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 miliona ljudi</a> u više od 80 zemalja širom sveta učestvovalo je u EU nedelji programiranja.</p>
+                    <p>Starost prosečnog učesnika u 2021. godini je bila 11 godina, a 49% učesnika su bile žene ili devojke. 88% događaja u okviru EU Nedelje programiranja je održano u školama što pokazuje da su napori da se osnaže nastavnici tokom kampanje 2021. godine bili uspešni.</p>
                     <p>Svako je dobrodošao da organizuje događaj ili da mu se priključi. Samo izaberite temu i ciljnu grupu i <a href="/add">dodajte aktivnost</a> na na <a href="/events">mapu</a>.</p>',
     'run_by_volunteers-title' => 'Volonteri u glavnoj ulozi',
     'run_by_volunteers-text' =>
