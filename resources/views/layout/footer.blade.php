@@ -34,7 +34,7 @@
         </div>
         <div class="social-media-buttons">
             <div class="social-network">
-                <a href="https://landing.mailerlite.com/webforms/landing/v1a6t6" target="_blank">
+                <a href="https://landing.mailerlite.com/webforms/landing/v1a6t6" target="_blank" rel="noreferer noopener">
                     <div style="margin-right: 2px">
                         <svg style="margin-right: 5px;" xmlns="http://www.w3.org/2000/svg" height="24"
                              viewBox="0 0 24 24" width="24">
@@ -47,21 +47,21 @@
                 </a>
             </div>
             <div class="social-network">
-                <a href="https://www.facebook.com/codeEU/" target="_blank">
+                <a href="https://www.facebook.com/codeEU/" target="_blank" rel="noreferer noopener">
                     <div style="margin-right: 2px"><img src="/images/facebook.svg" alt="Facebook" class="button-icon">
                     </div>
                     Facebook
                 </a>
             </div>
             <div class="social-network">
-                <a href="https://twitter.com/CodeWeekEU" target="_blank">
+                <a href="https://twitter.com/CodeWeekEU" target="_blank" rel="noreferer noopener">
                     <div style="margin-right: 4px"><img src="/images/twitter.svg" alt="Twitter" class="button-icon">
                     </div>
                     Twitter
                 </a>
             </div>
             <div class="social-network">
-                <a href="https://www.instagram.com/codeweekeu/" target="_blank">
+                <a href="https://www.instagram.com/codeweekeu/" target="_blank" rel="noreferer noopener">
                     <div style="margin-right: 4px"><img src="/images/instagram.svg" alt="Instagram" class="button-icon">
                     </div>
                     Instagram
@@ -69,7 +69,7 @@
             </div>
 
             <div class="social-network">
-                <a href="https://www.youtube.com/channel/UCw30ZaWtCvGb4yudW6tCXAA" target="_blank">
+                <a href="https://www.youtube.com/channel/UCw30ZaWtCvGb4yudW6tCXAA" target="_blank" rel="noreferer noopener">
                     <div style="margin-right: 4px"><img src="/images/youtube.svg" alt="Youtube" class="button-icon">
                     </div>
                     Youtube
@@ -77,7 +77,7 @@
             </div>
 
             <div class="social-network">
-                <a href="https://github.com/codeeu/codeweek" target="_blank">
+                <a href="https://github.com/codeeu/codeweek" target="_blank" rel="noreferer noopener">
                     <div style="margin-right: 4px"><img src="/images/github.svg" alt="Github" class="button-icon">
                     </div>
                     Github
@@ -85,7 +85,7 @@
             </div>
 
             <div class="social-network">
-                <a href="https://www.linkedin.com/company/codeweek/" target="_blank">
+                <a href="https://www.linkedin.com/company/codeweek/" target="_blank" rel="noreferer noopener">
                     <div style="margin-right: 4px"><img src="/images/linkedin.svg" alt="LinkedIn" class="button-icon">
                     </div>
                     LinkedIn
