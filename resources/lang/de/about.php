@@ -6,8 +6,8 @@ return [
     'when-text' =>
         '<p>Die EU Code Week ist eine Breiteninitiative zur Feier von Kreativität, Problemlösung und Zusammenarbeit durch Programmierung und andere technische Aktivitäten. Dahinter steckt die Idee, das Programmieren bekannter zu machen, jungen Menschen, Erwachsenen und Älteren zu zeigen, wie sie mit dem Programmieren Ideen Wirklichkeit werden lassen, diese Kompetenzen begreifbar zu machen und motivierte Menschen beim Lernen zusammenzubringen.</p>',
     'codeweek_in_numbers-title' => 'Code Week in Zahlen',
-    'codeweek_in_numbers-text' => '<p>Im Jahr 2019 nahmen 4,2 Millionen Menschen in über 80 Ländern weltweit an der EU Code Week teil.</p>
-                    <p>Die Teilnehmenden waren im Durchschnitt 11 Jahre alt und 49 % der Teilnehmenden 2019 waren Frauen oder Mädchen. 92 % der Veranstaltungen im Rahmen der EU Code Week fanden in Schulen statt. Dies zeigt, dass die Maßnahmen zur Befähigung von Lehrkräften während der Kampagne 2019 erfolgreich gewesen sind.</p>
+    'codeweek_in_numbers-text' => '<p>Im Jahr 2021 nahmen <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 Millionen Menschen</a> in über 80 Ländern weltweit an der EU Code Week teil.</p>
+                    <p>Die Teilnehmenden waren im Durchschnitt 11 Jahre alt und 49 % der Teilnehmenden 2021 waren Frauen oder Mädchen. 88 % der Veranstaltungen im Rahmen der EU Code Week fanden in Schulen statt. Dies zeigt, dass die Maßnahmen zur Befähigung von Lehrkräften während der Kampagne 2021 erfolgreich gewesen sind.</p>
                     <p>Alle sind willkommen, eine Aktivität zu organisieren oder als Teilnehmende dabei zu sein. Wählen Sie einfach ein Thema und ein Zielpublikum und <a href="/add">fügen Sie Ihre Aktivität</a> auf <a href="/events">der Karte hinzu</a></p>',
     'run_by_volunteers-title' => 'Von Freiwilligen veranstaltet',
     'run_by_volunteers-text' =>

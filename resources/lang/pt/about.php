@@ -14,8 +14,8 @@ return [
             A Semana Europeia da Programação é uma iniciativa de base que celebra a criatividade, a resolução de problemas e a colaboração através da programação e de outras atividades tecnológicas. A ideia é tornar a programação mais visível, mostrar aos jovens, adultos e idosos a forma de dar vida às ideias através da programação, desmistificar estas competências e reunir pessoas motivadas para aprender.
         </p>',
 
-    'codeweek_in_numbers-text' => '<p>Em 2019, 4,2 milhões de pessoas em mais de 80 países à volta do mundo participaram na Semana Europeia da Programação.</p>
-                    <p>A idade média dos participantes rondou os 11 anos e 49 % dos participantes em 2019 eram mulheres ou raparigas. 92 % dos eventos da Semana Europeia da Programação decorreram em escolas, o que demonstra que os esforços para capacitar os professores na campanha de 2019 tiveram êxito.</p>
+    'codeweek_in_numbers-text' => '<p>Em 2021, <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 milhões de pessoas</a> em mais de 80 países à volta do mundo participaram na Semana Europeia da Programação.</p>
+                    <p>A idade média dos participantes rondou os 11 anos e 49 % dos participantes em 2021 eram mulheres ou raparigas. 88 % dos eventos da Semana Europeia da Programação decorreram em escolas, o que demonstra que os esforços para capacitar os professores na campanha de 2021 tiveram êxito.</p>
                     <p>Qualquer pessoa pode organizar ou juntar-se a uma atividade. Basta escolher um tema e um público-alvo e <a href="/add">adicionar a sua atividade</a> ao <a href="/events">mapa</a>.</p>',
 
     'run_by_volunteers-text' => '

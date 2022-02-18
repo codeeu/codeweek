@@ -6,8 +6,8 @@ return [
     'when-text' =>
         '<p>ES programmēšanas nedēļa ir iedzīvotāju kustība, kas veltīta radošumam, problēmu risināšanai un sadarbībai, izmantojot programmēšanu un citas tehnoloģiskas aktivitātes. Pamatideja ir padarīt programmēšanu populārāku, parādīt jauniešiem, pieaugušajiem un vecāka gadagājuma cilvēkiem, kā ar programmēšanas palīdzību īstenot idejas, kliedēt maldīgus priekšstatus par programmēšanas prasmēm un sapulcināt kopā motivētus cilvēkus, kuri vēlas tās apgūt.</p>',
     'codeweek_in_numbers-title' => 'Programmēšanas nedēļa skaitļos',
-    'codeweek_in_numbers-text' => '<p>2019. gadā ES programmēšanas nedēļā piedalījās 4,2 miljoni cilvēku vairāk nekā 80 pasaules valstīs.</p>
-                    <p>Vidējais dalībnieks bija 11 gadus vecs, un 49 % dalībnieku 2019. gadā bija sievietes un meitenes. 92 % ES Programmēšanas nedēļas pasākumu notika skolās, kas pierāda, ka centieni apmācīt skolotājus 2019. gada kampaņā ir bijuši sekmīgi.</p>
+    'codeweek_in_numbers-text' => '<p>2021. gadā ES programmēšanas nedēļā piedalījās <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 miljoni cilvēku</a> vairāk nekā 80 pasaules valstīs.</p>
+                    <p>Vidējais dalībnieks bija 11 gadus vecs, un 49 % dalībnieku 2021. gadā bija sievietes un meitenes. 88 % ES Programmēšanas nedēļas pasākumu notika skolās, kas pierāda, ka centieni apmācīt skolotājus 2021. gada kampaņā ir bijuši sekmīgi.</p>
                     <p>Ikviens ir aicināts organizēt vai pievienoties pasākumiem. Vienkārši izvēlieties tematu un mērķa auditoriju un <a href="/add">pievienojiet savu pasākumu</a> <a href="/events">kartei</a></p>',
     'run_by_volunteers-title' => 'To vada brīvprātīgie',
     'run_by_volunteers-text' =>
