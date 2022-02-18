@@ -5,8 +5,8 @@ return [
     'when-text' =>
         '<p>ES programavimo savaitė yra visuomeninė iniciatyva, kuria skatinamas kūrybiškumas, problemų sprendimas ir bendradarbiavimas pasitelkiant programavimą ir kitą technologinę veiklą. Šios iniciatyvos tikslas yra populiarinti programavimą, parodyti, kaip žmonės gali įgyvendinti idėjas programuodami, susipažinti su programavimo įgūdžiais ir suburti motyvuotus žmones mokytis.</p>',
     'codeweek_in_numbers-title' => 'Programavimo savaitė skaičiais',
-    'codeweek_in_numbers-text' => '<p>2019 m. ES programavimo savaitėje dalyvavo beveik 4,2 milijono žmonių iš daugiau nei 80 pasaulio šalių.</p>
-                    <p>Vidutinis dalyvio amžius buvo 11 metų, o 49 proc. dalyvių sudarė moterys ir mergaitės. 92 proc. ES programavimo savaitės renginių vyko mokyklose, o tai reiškia, kad 2019 m. kampanijos dėl mokytojų įgalinimo pastangos buvo vaisingos.</p>
+    'codeweek_in_numbers-text' => '<p>2021 m. ES programavimo savaitėje dalyvavo beveik <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 milijono žmonių</a> iš daugiau nei 80 pasaulio šalių.</p>
+                    <p>Vidutinis dalyvio amžius buvo 11 metų, o 49 proc. dalyvių sudarė moterys ir mergaitės. 88 proc. ES programavimo savaitės renginių vyko mokyklose, o tai reiškia, kad 2021 m. kampanijos dėl mokytojų įgalinimo pastangos buvo vaisingos.</p>
                     <p>Visi kviečiami organizuoti renginius ar prie jų prisijungti. Tiesiog pasirinkite temą bei tikslinę auditoriją <a href="/add">ir pažymėkite savo renginį</a> <a href="/events">žemėlapyje</a>.</p>',
     'run_by_volunteers-title' => 'Vykdo savanoriai',
     'run_by_volunteers-text' =>

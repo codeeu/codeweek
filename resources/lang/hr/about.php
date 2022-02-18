@@ -6,8 +6,8 @@ return [
     'when-text' =>
         '<p>Europski tjedan programiranja društvena je inicijativa kojom se slavi kreativnost, rješavanje problema i suradnja kroz programiranje i ostale tehnološke aktivnosti. Ideja je učiniti programiranje vidljivijim, pokazati mladima, odraslima i starijima kako programiranjem realizirati ideje, demistificirati te vještine i okupiti motivirane osobe kako bi učile.</p>',
     'codeweek_in_numbers-title' => 'Tjedan programiranja u brojkama',
-    'codeweek_in_numbers-text' => '<p>Godine 2019. Europski tjedan programiranja okupio je 4,2 milijuna ljudi u više od 80 zemalja diljem svijeta.</p>
-                    <p>Prosječni sudionik imao je 11 godina, a 49 % sudionika u 2019. bile su žene ili djevojke. Čak 92 % događaja tijekom Europskog tjedna programiranja odvijalo se u školama čime se ukazuje da su nastojanja koja su tijekom kampanje u 2019. uložena u osnaživanje nastavnika bila uspješna.</p>
+    'codeweek_in_numbers-text' => '<p>Godine 2021. Europski tjedan programiranja okupio je <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 milijuna ljudi</a> u više od 80 zemalja diljem svijeta.</p>
+                    <p>Prosječni sudionik imao je 11 godina, a 49 % sudionika u 2021. bile su žene ili djevojke. Čak 88 % događaja tijekom Europskog tjedna programiranja odvijalo se u školama čime se ukazuje da su nastojanja koja su tijekom kampanje u 2021. uložena u osnaživanje nastavnika bila uspješna.</p>
                     <p>Svi su dobrodošli organizirati događanje ili mu se pridružiti. Odaberite temu i ciljanu publiku te <a href="/add">dodajte svoju aktivnost</a> na <a href="/events">kartu</a>.</p>',
     'run_by_volunteers-title' => 'Organizatori su volonteri',
     'run_by_volunteers-text' =>
