@@ -59,7 +59,7 @@
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
-                            <li><a href="https://www.tynker.com/" target="_blank">Tynker</a></li>
+                            <li><a href="https://www.tynker.com/" target="_blank" rel="noreferer noopener">Tynker</a></li>
                     </div>
 
                     <div>
@@ -118,7 +118,7 @@
 
                     <section class="p-2">
                         <div class="mt-6 orange text-3xl">@lang('challenges.common.example')</div>
-                        <div class="mt-2">@lang("challenges-content.$slug.example.0") <a target="_blank" href="https://www.tynker.com/play/dancing-robots/612249dd2d3eb65f2b0c6b1f-728057XjzbT,f5GeQFBM,dlKC2n,wk">@lang("challenges-content.$slug.example.1")</a> @lang("challenges-content.$slug.example.2") <iframe width="660" height="408" src="//www.tynker.com/ide/embedded?p=612249dd2d3eb65f2b0c6b1f&controls=false&autostart=false" frameborder="0" allowfullscreen></iframe>
+                        <div class="mt-2">@lang("challenges-content.$slug.example.0") <a target="_blank" rel="noreferer noopener" href="https://www.tynker.com/play/dancing-robots/612249dd2d3eb65f2b0c6b1f-728057XjzbT,f5GeQFBM,dlKC2n,wk">@lang("challenges-content.$slug.example.1")</a> @lang("challenges-content.$slug.example.2") <iframe width="660" height="408" src="//www.tynker.com/ide/embedded?p=612249dd2d3eb65f2b0c6b1f&controls=false&autostart=false" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </section>
 

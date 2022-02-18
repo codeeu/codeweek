@@ -31,7 +31,7 @@
             </p>
 
             <p style="margin-bottom: 20px;">
-                <a href="https://www.youtube.com/watch?v=ENHjEgcrSZI&list=PLnqp3yQre_1hexUEMtOdNI9J5TtAVMGaq" target="_blank" class="codeweek-action-link-button">@lang('snippets.videos.1')</a>
+                <a href="https://www.youtube.com/watch?v=ENHjEgcrSZI&list=PLnqp3yQre_1hexUEMtOdNI9J5TtAVMGaq" target="_blank" rel="noreferer noopener" class="codeweek-action-link-button">@lang('snippets.videos.1')</a>
 
             </p>
 
@@ -49,7 +49,7 @@
                         </div>
 
                         <div style="position: relative; margin-right: 10px;" class="relative_box">
-                            <a href="https://www.youtube.com/watch?v=ENHjEgcrSZI" class="youtube_link" target="_blank">
+                            <a href="https://www.youtube.com/watch?v=ENHjEgcrSZI" class="youtube_link" target="_blank" rel="noreferer noopener">
                                 <img src="{{asset('img/values/value-1.png')}}" class="static-image" width="160vh">
                                 <h3><span>@lang('snippets.videos.2')</span></h3></a>
                         </div>
@@ -67,7 +67,7 @@
                     <div style="display: flex;flex-wrap: wrap;width: 100%;">
 
                         <div style="position: relative; margin-right: 10px;" class="relative_box">
-                            <a href="https://www.youtube.com/watch?v=cbg7LgbzlD8" class="youtube_link" target="_blank">
+                            <a href="https://www.youtube.com/watch?v=cbg7LgbzlD8" class="youtube_link" target="_blank" rel="noreferer noopener">
                                 <img src="{{asset('img/values/value-2.png')}}" class="static-image" width="160vh">
                                 <h3><span>@lang('snippets.videos.3')</span></h3>
                             </a>
@@ -96,7 +96,7 @@
 
                     <div style="position: relative; margin-left: 10px;">
                         <div style="position: relative; margin-right: 10px;" class="relative_box">
-                            <a href="https://www.youtube.com/watch?v=LGLmjrx22ZE" class="youtube_link" target="_blank">
+                            <a href="https://www.youtube.com/watch?v=LGLmjrx22ZE" class="youtube_link" target="_blank" rel="noreferer noopener">
                                 <img src="{{asset('img/values/value-3.png')}}" class="static-image" width="160vh">
                                 <h3><span>@lang('snippets.videos.4')</span></h3></a>
                         </div>

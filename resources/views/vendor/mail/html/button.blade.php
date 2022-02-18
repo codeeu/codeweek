@@ -8,7 +8,7 @@
                             <tr>
                                 <td>
                                     <a href="{{ $url }}" class="button button-{{ $color ?? 'primary' }}" target="_blank"
-                                       rel="noopener">{{ $slot }}</a>
+                                       rel="noreferer noopener">{{ $slot }}</a>
                                 </td>
                             </tr>
                         </table>
