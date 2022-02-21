@@ -102,26 +102,22 @@ class EventController extends Controller {
         return view('event.search', compact('events'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param EventRequest $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(EventRequest $request) {
-        $user = auth()->user();
 
-        $user->privacy = true;
+    public function store(Request $request) {
 
-        $user->save();
-
-        $event = EventsQuery::store($request);
-
-        $event->notifyAmbassadors();
-
-        Mail::to(auth()->user()->email)->queue(
-            new \App\Mail\EventRegistered($event, auth()->user())
-        );
+//        $user = auth()->user();
+//
+//        $user->privacy = true;
+//
+//        $user->save();
+//
+//        $event = EventsQuery::store($request);
+//
+//        $event->notifyAmbassadors();
+//
+//        Mail::to(auth()->user()->email)->queue(
+//            new \App\Mail\EventRegistered($event, auth()->user())
+//        );
 
         return view('event.thankyou', compact('event'));
     }

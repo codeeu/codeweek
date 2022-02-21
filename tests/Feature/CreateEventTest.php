@@ -29,7 +29,7 @@ class CreateEventTest extends TestCase
     /** @test */
     public function an_authenticated_user_can_create_events()
     {
-        //$this->withoutExceptionHandling();
+        $this->withoutExceptionHandling();
         $this->signIn();
 
         $event = make('App\Event');
@@ -42,8 +42,6 @@ class CreateEventTest extends TestCase
         $event->privacy = true;
 
         $event->language = "nl";
-
-
 
         $this->post('/events', $event->toArray());
 

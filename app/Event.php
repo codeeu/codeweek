@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Str;
 use Log;
+use Spatie\Activitylog\LogOptions;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Laravel\Nova\Actions\Actionable;
 
@@ -127,7 +128,8 @@ use Laravel\Nova\Actions\Actionable;
  * @method static \Illuminate\Database\Query\Builder|Event withoutTrashed()
  * @mixin \Eloquent
  */
-class Event extends Model {
+class Event extends Model
+{
     use LogsActivity, Actionable, SoftDeletes;
 
     protected $table = 'events';
@@ -177,17 +179,16 @@ class Event extends Model {
 
     protected $appends = ['LatestModeration'];
 
-    public function getJavascriptData() {
+    public function getJavascriptData()
+    {
         return $this->only(['geoposition', 'title', 'description']);
     }
 
-    public function getDescriptionForEvent(string $eventName): string {
-        return 'Event ' . $this->id . " has been {$eventName}";
-    }
 
     protected static $logFillable = true;
 
-    public function getEventUrlAttribute($url) {
+    public function getEventUrlAttribute($url)
+    {
         if ($url && strpos($url, 'http') !== 0) {
             return 'http://' . $url;
         }
@@ -195,11 +196,13 @@ class Event extends Model {
         return $url;
     }
 
-    public function path() {
+    public function path()
+    {
         return '/view/' . $this->id . '/' . $this->slug;
     }
 
-    public function imported() {
+    public function imported()
+    {
         return Str::contains($this->codeweek_for_all_participation_code, [
             '-hamburg',
             '-bonn',
@@ -207,7 +210,8 @@ class Event extends Model {
         ]);
     }
 
-    public function picture_path() {
+    public function picture_path()
+    {
         if ($this->picture) {
             if (Str::startsWith($this->picture, 'http')) {
                 return $this->picture;
@@ -218,7 +222,8 @@ class Event extends Model {
         }
     }
 
-    public function picture_detail_path() {
+    public function picture_detail_path()
+    {
         if ($this->picture_detail) {
             return env('AWS_URL') . $this->picture_detail;
         }
@@ -226,44 +231,53 @@ class Event extends Model {
         return $this->picture_path();
     }
 
-    public function country() {
+    public function country()
+    {
         return $this->belongsTo('App\Country', 'country_iso', 'iso');
     }
 
-    public function owner() {
+    public function owner()
+    {
         return $this->belongsTo('App\User', 'creator_id');
     }
 
-    public function audiences() {
+    public function audiences()
+    {
         return $this->belongsToMany('App\Audience');
     }
 
-    public function themes() {
+    public function themes()
+    {
         return $this->belongsToMany('App\Theme');
     }
 
-    public function tags() {
+    public function tags()
+    {
         return $this->belongsToMany('App\Tag')->where('name', '<>', '');
     }
 
-    public function get_start_date() {
+    public function get_start_date()
+    {
         $dt = Carbon::parse($this->start_date);
 
         return $dt->toDayDateTimeString();
     }
 
-    public function get_start_date_simple() {
+    public function get_start_date_simple()
+    {
         $dt = Carbon::parse($this->start_date);
 
         return $dt->format('d/m/Y \\- H:i');
     }
 
-    public function scopeFilter($query, EventFilters $filters) {
+    public function scopeFilter($query, EventFilters $filters)
+    {
         //Log::info($filters->apply($query));
         return $filters->apply($query);
     }
 
-    public static function getByYear($year) {
+    public static function getByYear($year)
+    {
         $events = Event::where('status', 'like', 'APPROVED')->where(
             'start_date',
             '>',
@@ -287,7 +301,8 @@ class Event extends Model {
         return $events->get();
     }
 
-    public function getClosest() {
+    public function getClosest()
+    {
         return EventHelper::getCloseEvents(
             $this->longitude,
             $this->latitude,
@@ -295,7 +310,8 @@ class Event extends Model {
         );
     }
 
-    public function notifyAmbassadors() {
+    public function notifyAmbassadors()
+    {
         //Get the ambassador list based on the event country
         $ambassadors = User::role('ambassador')
             ->where('country_iso', $this->country_iso)
@@ -314,7 +330,8 @@ class Event extends Model {
         }
     }
 
-    public function approve() {
+    public function approve()
+    {
         $data = ['status' => 'APPROVED', 'approved_by' => auth()->user()->id];
 
         $this->update($data);
@@ -332,7 +349,8 @@ class Event extends Model {
         return true;
     }
 
-    public function reject($rejectionText = null) {
+    public function reject($rejectionText = null)
+    {
         $this->moderations()->create([
             'status' => 'REJECTED',
             'message' => $rejectionText,
@@ -354,15 +372,18 @@ class Event extends Model {
         return $this->update($data);
     }
 
-    public function moderations() {
+    public function moderations()
+    {
         return $this->hasMany('App\Moderation');
     }
 
-    public function getLatestModerationAttribute() {
+    public function getLatestModerationAttribute()
+    {
         return optional($this->moderations()->latest('created_at'))->first();
     }
 
-    public function promote() {
+    public function promote()
+    {
         if (
             auth()
                 ->user()
@@ -383,7 +404,8 @@ class Event extends Model {
         }
     }
 
-    public function feature() {
+    public function feature()
+    {
         if (
             auth()
                 ->user()
@@ -396,11 +418,13 @@ class Event extends Model {
         }
     }
 
-    public function notification() {
+    public function notification()
+    {
         return $this->hasOne('App\Notification', 'event_id', 'id');
     }
 
-    public function relocate() {
+    public function relocate()
+    {
         $this->longitude = $this->country->longitude;
         $this->latitude = $this->country->latitude;
         $this->geoposition =
@@ -408,7 +432,8 @@ class Event extends Model {
         $this->save();
     }
 
-    public function relocateWithCoordinates($coords) {
+    public function relocateWithCoordinates($coords)
+    {
         if (!is_null($coords)) {
             $this->latitude = $coords['location']['y'];
             $this->longitude = $coords['location']['x'];
@@ -421,5 +446,11 @@ class Event extends Model {
 
         $this->relocated = true;
         $this->save();
+    }
+
+    public function getActivitylogOptions(): LogOptions
+    {
+        return LogOptions::defaults()
+            ->setDescriptionForEvent(fn(string $eventName) => "Event {$this->id} has been {$eventName}");
     }
 }
