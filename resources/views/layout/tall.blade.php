@@ -56,7 +56,7 @@
 
 <!-- Document Wrapper -->
 <div id="app">
-    @include('cookieConsent::index')
+
 
     @include('layout.menu')
 
