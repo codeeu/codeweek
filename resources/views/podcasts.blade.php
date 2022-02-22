@@ -48,11 +48,11 @@
                 </div>
                 <div class="mb-4">
                     You can listen to the podcasts here or on <a
-                            href="https://open.spotify.com/show/5AHSuZvjLSdbaO381lv3Qk" target="_blank">Spotify</a>, <a
+                            href="https://open.spotify.com/show/5AHSuZvjLSdbaO381lv3Qk" target="_blank" rel="noreferer noopener">Spotify</a>, <a
                             href="https://podcasts.google.com/feed/aHR0cHM6Ly9jb2Rld2Vlay5ldS9mZWVkL3BvZGNhc3Rz"
-                            target="_blank">Google podcasts</a> or <a
+                            target="_blank" rel="noreferer noopener">Google podcasts</a> or <a
                             href="https://podcasts.apple.com/us/podcast/eu-code-week-podcast-series/id1592076780"
-                            target="_blank">Apple podcasts</a>.
+                            target="_blank" rel="noreferer noopener">Apple podcasts</a>.
                 </div>
 
                 <section class="grid grid-cols-1 gap-6 md:grid-cols-1">

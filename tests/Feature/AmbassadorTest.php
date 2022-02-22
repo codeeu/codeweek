@@ -71,8 +71,7 @@ class AmbassadorTest extends TestCase
     public function ambassadors_without_picture_should_not_be_displayed()
     {
 
-        $ambassador_without_bio = create('App\User', ['avatar_path' => NULL, 'country_iso' => $this->france->iso])->assignRole('ambassador');
-//dd($ambassador_without_bio);
+        $ambassador_without_bio = create('App\User', ['avatar_path' => NULL, 'country_iso' => $this->france->iso, 'lastname' => 'Lastname that will never appear'])->assignRole('ambassador');
         $italy = create('App\Country', ['iso' => 'foobar']);
         create('App\Event', ['country_iso' => $italy->iso]);
         $this->get('/community?country_iso=' . $this->france->iso)->assertDontSee($ambassador_without_bio->lastname);
