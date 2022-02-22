@@ -452,9 +452,15 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
     );
 });
 
-Route::group(['middleware' => ['role:super admin']], function () {
-    Route::get('/badges/user/{user}', 'BadgesController@user')->name('badges-user');
-    Route::get('/badges/scoreboard/{year?}', 'BadgesController@scoreboard')->name('badges-scoreboard-year');
+
+
+
+Route::group(['middleware' => [
+    'auth',
+    'role:super admin|leading teacher|leading teacher admin']], function () {
+    Route::get('/my/badges', 'BadgesController@my')->name('my-badges')->middleware('auth');
+    Route::get('/badges/user/{user}/{year?}', 'BadgesController@user')->name('badges-user');
+    Route::get('/badges/leaderboard/{year?}', 'BadgesController@leaderboard')->name('badges-leaderboard-year');
 });
 
 Route::get(

@@ -4,12 +4,11 @@ namespace App\Achievements\Types;
 
 use Illuminate\Support\Facades\Log;
 
-class Influencer2021 extends AchievementType
+class Influencer2022 extends AchievementType
 {
     public $icon = 'influencer/Influencer_normal_small.png';
-    public $edition = 2021;
-    public $name = 'Influencer 2021';
-
+    public $edition = 2022;
+    public $name = 'Influencer 2022';
 
     public function description()
     {

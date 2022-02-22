@@ -1,6 +1,7 @@
 @extends('layout.base')
 
 <x-tailwind></x-tailwind>
+<x-alpine></x-alpine>
 
 @section('content')
 
@@ -16,51 +17,114 @@
 
                         <div class="header">
 
-                            <h1>User Profile</h1>
+                            <h1>Badges</h1>
 
                         </div>
 
                         <!-- Content goes here -->
-                        <div class="text-xl mt-4">Name: {{$user->fullName}}</div>
-                        @for($y = 2018;$y <= $year; $y++)
-                        <div class="text-xl mt-4">{{$y}} Points: {{$user->getPoints($y)}}</div>
-                        @endfor
-                        <div class="text-xl mt-4">Reported events Globally: {{$user->reported()}}</div>
-                        <div class="text-xl mt-4">Reported events in 2021: {{$user->reported(2021)}}</div>
-                        <div class="text-xl mt-4">Influencer Bits in 2021: {{$user->influence(2021)}}</div>
-                        <div class="text-xl mt-4">Achievements:<br/>
+                        <div class="text-base mt-4"><strong>Name:</strong> {{$user->fullName}}</div>
 
-                                <div class="grid grid-cols-5 gap-2">
-                                @foreach($achievements as $achievement)
+                        <div class="text-base mt-4"><strong>Bits earned
+                                in {{$year}}</strong>: {{$user->getPoints($year)}}</div>
+                        <div class="text-base mt-4"><strong>Reported events
+                                for {{$year}}</strong>: {{$user->reported($year)}}</div>
+                        <div class="text-base mt-4"><strong>Influencer Bits
+                                for {{$year}}</strong>: {{$user->influence($year)}}</div>
 
-                                    @if (in_array($achievement->modelKey(), $userAchievements->pluck('id')->all()))
-                                        <div class="flex flex-col items-center px-4 py-2 rounded-md text-sm font-medium text-center">
-
-                                            <img src="{{asset('badges/'.$achievement->icon)}}">
-                                            <span class="ml-2"><span class="text-lg font-bold">{{$achievement->name}}</span><br/>Success !</span>
+                        <h2 class="mt-4">Organiser Badges</h2>
 
 
-                                        </div>
-                                    @else
-                                        <div class="flex flex-col items-center px-4 py-2 rounded-md text-sm font-medium text-center">
 
-                                            <img class="filter grayscale blur"
-                                                 src="{{asset('badges/'.$achievement->icon)}}">
-                                            <span class="ml-2"><span class="text-lg">{{$achievement->name}}</span><br/>{{$achievement->description()}}</span>
+                        <div>
+                            <div class="flex">
+                                <div class="flex-none">
+                                    <img class="w-5/6 shadow-lg rounded-lg pt-2"
+                                         src="{{asset('images/placeholder.png')}}">
+                                </div>
+
+                                <div class="flex-1">
+                                    <div class="text-base italic">
+                                        Earn your title, from active to legendary organiser, by organising more and more
+                                        Code
+                                        Week activities and contributing to the map.
+                                    </div>
+                                    <div class="pt-6">
+                                        <nav aria-label="Progress">
+                                            <ol role="list" class="flex items-center">
+
+                                                @foreach($organiserBadges as $achievement)
+                                                    @if(!$loop->last)
+                                                        <li class="relative pr-8 sm:pr-20">
+                                                    @else
+                                                        <li class="relative">
+                                                            @endif
+                                                            @if (in_array($achievement->modelKey(), $userAchievements->pluck('id')->all()))
+
+                                                                <x-badges.completed :achievement="$achievement"></x-badges.completed>
 
 
-                                        </div>
-                                    @endif
-                                @endforeach
+                                                            @else
+
+                                                                <x-badges.locked :achievement="$achievement"></x-badges.locked>
+
+                                                            @endif
+                                                        </li>
+                                                        @endforeach
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
+
                             </div>
-
                         </div>
 
+                        <h2 class="mt-4">Influencer Badges</h2>
+                        <div>
+                            <div class="flex">
+                                <div class="flex-none">
+                                    <img class="w-5/6 shadow-lg rounded-lg pt-2"
+                                         src="{{asset('images/placeholder.png')}}">
+                                </div>
 
+                                <div class="flex-1">
+                                    <div class="text-base italic">
+                                        Become a Code Week Influencer, starting from a simple influencer to a legendary
+                                        influencer, who will simply stay in the record books of Code Week legends. To
+                                        earn points, simply rise and abuse of the Code Week Tag when organising and
+                                        sharing it with others!.
+                                    </div>
+                                    <div class="pt-6">
+                                        <nav aria-label="Progress">
+                                            <ol role="list" class="flex items-center">
+
+                                                @foreach($influencerBadges as $achievement)
+                                                    @if(!$loop->last)
+                                                        <li class="relative pr-8 sm:pr-20">
+                                                    @else
+                                                        <li class="relative">
+                                                        @endif
+                                                            @if (in_array($achievement->modelKey(), $userAchievements->pluck('id')->all()))
+
+                                                                <x-badges.completed :achievement="$achievement"></x-badges.completed>
+
+
+                                                            @else
+
+                                                                <x-badges.locked :achievement="$achievement"></x-badges.locked>
+
+                                                            @endif
+                                                        </li>
+                                                        @endforeach
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
     </section>

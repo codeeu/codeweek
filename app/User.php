@@ -175,6 +175,11 @@ class User extends Authenticatable
         return $this->hasRole("leading teacher");
     }
 
+    public function isLeadingTeacherAdmin()
+    {
+        return $this->hasRole("leading teacher admin");
+    }
+
     public function events()
     {
         return $this->hasMany('App\Event', 'creator_id');

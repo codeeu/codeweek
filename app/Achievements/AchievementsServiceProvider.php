@@ -27,7 +27,17 @@ class AchievementsServiceProvider extends ServiceProvider
         Types\InfluencerActive2021::class,
         Types\InfluencerExpert2021::class,
         Types\InfluencerChampion2021::class,
-        Types\InfluencerLegendary2021::class
+        Types\InfluencerLegendary2021::class,
+        Types\OrganiserActive2022::class,
+        Types\OrganiserExpert2022::class,
+        Types\OrganiserChampion2022::class,
+        Types\OrganiserLegendary2022::class,
+        Types\OrganiserMaster2022::class,
+        Types\Influencer2022::class,
+        Types\InfluencerActive2022::class,
+        Types\InfluencerExpert2022::class,
+        Types\InfluencerChampion2022::class,
+        Types\InfluencerLegendary2022::class
 
     ];
 
