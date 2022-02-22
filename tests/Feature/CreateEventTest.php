@@ -26,6 +26,13 @@ class CreateEventTest extends TestCase
 
     }
 
+    public function test_post()
+    {
+        //$this->withoutExceptionHandling();
+        $city = make('App\City');
+        $this->post('/test', $city->toArray())->assertStatus(200);
+    }
+
     /** @test */
     public function an_authenticated_user_can_create_events()
     {
