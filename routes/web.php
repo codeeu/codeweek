@@ -350,6 +350,7 @@ Route::group(['middleware' => ['role:super admin']], function () {
     );
 });
 
+
 Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/activities', 'AdminController@activities')->name('activities');
     Route::get('/pending/{country}', 'PendingEventsController@index')->name(
@@ -430,6 +431,8 @@ Route::group(['middleware' => ['role:super admin']], function () {
         '/hackathons/vote/results',
         'HackathonsVotingController@results'
     )->name('hackathon-vote-results');
+
+
 });
 
 Route::group(['middleware' => ['role:super admin|ambassador']], function () {
@@ -447,6 +450,11 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
     Route::post('/api/event/reject/{event}', 'EventController@reject')->name(
         'event.reject'
     );
+});
+
+Route::group(['middleware' => ['role:super admin']], function () {
+    Route::get('/badges/user/{user}', 'BadgesController@user')->name('badges-user');
+    Route::get('/badges/scoreboard/{year?}', 'BadgesController@scoreboard')->name('badges-scoreboard-year');
 });
 
 Route::get(
@@ -633,3 +641,4 @@ Route::post('test', function(Request $request){
 
 Auth::routes();
 Route::feeds();
+

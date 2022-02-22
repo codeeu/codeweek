@@ -33,7 +33,7 @@ $factory->define(App\User::class, function (Faker $faker) {
         'avatar_path'=>'avatars/default.png',
         'provider'=>$faker->randomElement(['facebook','google','github']),
         'privacy'=>true,
-        'receive_emails'=>true
+        'receive_emails'=>true,
 
     ];
 });

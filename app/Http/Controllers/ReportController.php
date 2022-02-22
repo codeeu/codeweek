@@ -48,6 +48,7 @@ class ReportController extends Controller
 
 
         $event->update(['certificate_url' => (new Certificate($event))->generate()]);
+//        $event->update(['certificate_url' => "pompom"]);
 
 
         return view('report.thankyou', compact('event'));
