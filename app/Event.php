@@ -18,119 +18,9 @@ use Spatie\Activitylog\LogOptions;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Laravel\Nova\Actions\Actionable;
 
-/**
- * App\Event
- *
- * @property int $id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property string $status
- * @property string $title
- * @property string|null $slug
- * @property string $organizer
- * @property string $description
- * @property string $geoposition
- * @property float $latitude
- * @property float $longitude
- * @property string $location
- * @property string $country_iso
- * @property string $start_date
- * @property string $end_date
- * @property string|null $event_url
- * @property string|null $contact_person
- * @property string $user_email
- * @property string|null $picture
- * @property string $pub_date
- * @property string $created
- * @property string $updated
- * @property int $creator_id
- * @property string|null $last_report_notification_sent_at
- * @property int $report_notifications_count
- * @property string|null $name_for_certificate
- * @property int|null $participants_count
- * @property float|null $average_participant_age
- * @property float|null $percentage_of_females
- * @property string|null $codeweek_for_all_participation_code
- * @property string|null $certificate_url
- * @property string|null $reported_at
- * @property string|null $certificate_generated_at
- * @property string|null $organizer_type
- * @property int|null $approved_by
- * @property string|null $activity_type
- * @property string|null $picture_detail
- * @property \Illuminate\Support\Carbon|null $deleted_at
- * @property string|null $playback_url
- * @property string $highlighted_status
- * @property string|null $language
- * @property-read \Illuminate\Database\Eloquent\Collection|\Laravel\Nova\Actions\ActionEvent[] $actions
- * @property-read int|null $actions_count
- * @property-read \Illuminate\Database\Eloquent\Collection|\Spatie\Activitylog\Models\Activity[] $activities
- * @property-read int|null $activities_count
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\Audience[] $audiences
- * @property-read int|null $audiences_count
- * @property-read \App\Country $country
- * @property-read mixed $latest_moderation
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\Moderation[] $moderations
- * @property-read int|null $moderations_count
- * @property-read \App\Notification|null $notification
- * @property-read \App\User $owner
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\Tag[] $tags
- * @property-read int|null $tags_count
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\Theme[] $themes
- * @property-read int|null $themes_count
- * @method static \Illuminate\Database\Eloquent\Builder|Event filter(\App\Filters\EventFilters $filters)
- * @method static \Illuminate\Database\Eloquent\Builder|Event newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Event newQuery()
- * @method static \Illuminate\Database\Query\Builder|Event onlyTrashed()
- * @method static \Illuminate\Database\Eloquent\Builder|Event query()
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereActivityType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereApprovedBy($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereAverageParticipantAge($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereCertificateGeneratedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereCertificateUrl($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereCodeweekForAllParticipationCode($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereContactPerson($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereCountryIso($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereCreated($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereCreatorId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereDeletedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereDescription($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereEndDate($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereEventUrl($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereGeoposition($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereHighlightedStatus($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereLanguage($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereLastReportNotificationSentAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereLatitude($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereLocation($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereLongitude($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereNameForCertificate($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereOrganizer($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereOrganizerType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereParticipantsCount($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event wherePercentageOfFemales($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event wherePicture($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event wherePictureDetail($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event wherePlaybackUrl($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event wherePubDate($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereReportNotificationsCount($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereReportedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereSlug($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereStartDate($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereStatus($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereTitle($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereUpdated($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereUpdatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event whereUserEmail($value)
- * @method static \Illuminate\Database\Query\Builder|Event withTrashed()
- * @method static \Illuminate\Database\Query\Builder|Event withoutTrashed()
- * @mixin \Eloquent
- */
 class Event extends Model
 {
-    use LogsActivity, Actionable, SoftDeletes;
+    use Actionable, SoftDeletes;
 
     protected $table = 'events';
     protected $fillable = [
@@ -172,12 +62,12 @@ class Event extends Model
         'language'
     ];
 
-    protected $policies = [
-        'App\Event' => 'App\Policies\EventPolicy',
-        Event::class => EventPolicy::class
-    ];
+//    protected $policies = [
+//        'App\Event' => 'App\Policies\EventPolicy',
+//        Event::class => EventPolicy::class
+//    ];
 
-    protected $appends = ['LatestModeration'];
+    //protected $appends = ['LatestModeration'];
 
     public function getJavascriptData()
     {
