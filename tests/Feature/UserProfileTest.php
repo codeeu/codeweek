@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
@@ -42,7 +43,7 @@ class UserProfileTest extends TestCase
     {
 
         $response = $this->get('/badges/user/222');
-        $response->assertSeeText('Active Organiser 2021');
+        $response->assertSee('Active Organiser ' . Carbon::now()->year);
 
     }
 }
