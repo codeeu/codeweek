@@ -61,7 +61,6 @@
 
 <!-- Document Wrapper -->
 <div id="app">
-    @include('cookieConsent::index')
 
     @if((Request::is('hackathons/*')))
         @yield('hackathons.header')

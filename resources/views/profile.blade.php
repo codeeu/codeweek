@@ -176,7 +176,7 @@
                                 <input id="checkPrivacy" name="privacy"
                                        type="checkbox" {{ $profileUser->privacy === 1 ? 'checked="checked"' : '' }}>
                                 @lang('event.privacy')
-                                <a href="/privacy" target="_blank">
+                                <a href="/privacy" target="_blank" rel="noreferer noopener">
                                     <img src="/images/external-link.svg" width="16" class="static-image">
                                 </a>
                             </label>

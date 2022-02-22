@@ -591,7 +591,7 @@
             </p><br/><br/>
         </div>
         <img src="/images/hackathons/about_codeweek.svg" class="static-image">
-        <a target="_blank" href="https://codeweek.eu/about"
+        <a target="_blank" href="https://codeweek.eu/about" rel="noreferer noopener"
            class="codeweek-action-link-button">@lang('hackathon-greece.sections.12.content.9')</a>
     </section>
 

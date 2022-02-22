@@ -635,6 +635,10 @@ Route::get(
 
 Route::get('podcasts', 'PodcastsController@index')->name('podcasts');
 
+Route::post('test', function(Request $request){
+    return 'OK';
+});
+
 Auth::routes();
 Route::feeds();
 
