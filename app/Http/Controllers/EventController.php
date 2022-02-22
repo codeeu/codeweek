@@ -102,8 +102,13 @@ class EventController extends Controller {
         return view('event.search', compact('events'));
     }
 
-
-    public function store(Request $request) {
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param EventRequest $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(EventRequest $request) {
 
         $user = auth()->user();
 

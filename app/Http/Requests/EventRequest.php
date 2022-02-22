@@ -34,7 +34,6 @@ class EventRequest extends FormRequest
             'start_date' => 'required',
             'end_date' => 'required|after:start_date',
             'audience' => 'required',
-
             'theme' => 'required',
             'country_iso' => 'required',
             'user_email' => 'required',

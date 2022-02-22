@@ -3,10 +3,10 @@
 namespace Tests\Feature;
 
 use App\Event;
-use App\Mail\EventCreated;
-use Mail;
+use Illuminate\Support\Facades\Mail;
+
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class CreateEventTest extends TestCase
@@ -26,16 +26,10 @@ class CreateEventTest extends TestCase
 
     }
 
-    public function test_post()
-    {
-        //$this->withoutExceptionHandling();
-        $city = make('App\City');
-        $this->post('/test', $city->toArray())->assertStatus(200);
-    }
-
     /** @test */
     public function an_authenticated_user_can_create_events()
     {
+        $this->seed('RolesAndPermissionsSeeder');
         $this->withoutExceptionHandling();
         $this->signIn();
 
