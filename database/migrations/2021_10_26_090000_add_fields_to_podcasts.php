@@ -23,6 +23,13 @@ class AddFieldsToPodcasts extends Migration {
      * @return void
      */
     public function down() {
-        //
+        Schema::table('podcasts', function (Blueprint $table)
+        {
+            $table->dropColumn('duration');
+        });
+        Schema::table('podcasts', function (Blueprint $table)
+        {
+            $table->dropColumn('filesize');
+        });
     }
 }

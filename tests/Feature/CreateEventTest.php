@@ -44,6 +44,8 @@ class CreateEventTest extends TestCase
 
         $event->language = "nl";
 
+
+
         $this->post('/events', $event->toArray());
 
         $event = Event::where('title', $event->title)->first();
