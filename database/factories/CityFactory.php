@@ -11,8 +11,7 @@ $factory->define(App\City::class, function (Faker $faker) {
         'country' => $faker->country,
         'country_iso' => $faker->countryCode,
         'longitude' => $faker->longitude,
-        'latitude' => $faker->latitude,
-        'dt' => $faker->dateTime,
+        'latitude' => $faker->latitude
     ];
 });
 
