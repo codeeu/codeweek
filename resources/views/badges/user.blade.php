@@ -37,12 +37,12 @@
 
                         <div>
                             <div class="flex">
-                                <div class="flex-none">
-                                    <img class="w-5/6 shadow-lg rounded-lg pt-2"
-                                         src="{{asset('images/placeholder.png')}}">
+                                <div class="flex-none pt-2">
+                                    <img class="w-5/6 shadow-lg rounded-lg"
+                                         src="{{asset('badges/organiser/organiser_logo.png')}}">
                                 </div>
 
-                                <div class="flex-1">
+                                <div class="flex-1 pt-4">
                                     <div class="text-base italic">
                                         Earn your title, from active to legendary organiser, by organising more and more
                                         Code
@@ -81,12 +81,12 @@
                         <h2 class="mt-4">Influencer Badges</h2>
                         <div>
                             <div class="flex">
-                                <div class="flex-none">
-                                    <img class="w-5/6 shadow-lg rounded-lg pt-2"
-                                         src="{{asset('images/placeholder.png')}}">
+                                <div class="flex-none pt-2">
+                                    <img class="w-5/6 shadow-lg rounded-lg"
+                                         src="{{asset('badges/influencer/influencer_logo.png')}}">
                                 </div>
 
-                                <div class="flex-1">
+                                <div class="flex-1 pt-4">
                                     <div class="text-base italic">
                                         Become a Code Week Influencer, starting from a simple influencer to a legendary
                                         influencer, who will simply stay in the record books of Code Week legends. To
