@@ -2,6 +2,8 @@
 
 namespace App;
 
+use App\Achievements\Achievement;
+use Carbon\Carbon;
 use DB;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Notifications\Notifiable;
@@ -86,13 +88,14 @@ class User extends Authenticatable
     use Notifiable;
     use HasRoles;
     use SoftDeletes;
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'firstname', 'lastname', 'username', 'avatar_path', 'email', 'password', 'bio', 'twitter', 'website', 'country_iso', 'privacy','email_display','receive_emails'
+        'firstname', 'lastname', 'username', 'avatar_path', 'email', 'password', 'bio', 'twitter', 'website', 'country_iso', 'privacy', 'email_display', 'receive_emails'
     ];
 
     /**
@@ -108,21 +111,24 @@ class User extends Authenticatable
 
     protected $dates = ['deleted_at'];
 
+
     public function getName()
     {
-        if(!empty($this->username)) return $this->username;
-        if(!empty($this->firstname) && !empty($this->lastname)) return $this->firstname . " " . $this->lastname;
-        if(!empty($this->firstname) && empty($this->lastname)) return $this->firstname;
+        if (!empty($this->username)) return $this->username;
+        if (!empty($this->firstname) && !empty($this->lastname)) return $this->firstname . " " . $this->lastname;
+        if (!empty($this->firstname) && empty($this->lastname)) return $this->firstname;
         return $this->email;
     }
 
-    public function getAmbassadorAttribute(){
+    public function getAmbassadorAttribute()
+    {
         return $this->isAmbassador();
     }
 
-    public function setAmbassadorAttribute($value){
+    public function setAmbassadorAttribute($value)
+    {
 //        Log::info($value);
-        if ($value){
+        if ($value) {
             $this->assignRole('ambassador');
         } else {
             $this->removeRole('ambassador');
@@ -131,13 +137,20 @@ class User extends Authenticatable
 
     }
 
-    public function getLeadingTeacherAttribute(){
+    public function achievements()
+    {
+        return $this->belongsToMany(Achievement::class, 'user_achievements')->withTimestamps();
+    }
+
+    public function getLeadingTeacherAttribute()
+    {
         return $this->isLeadingTeacher();
     }
 
-    public function setLeadingTeacherAttribute($value){
+    public function setLeadingTeacherAttribute($value)
+    {
 
-        if ($value){
+        if ($value) {
             $this->assignRole('leading teacher');
         } else {
             $this->removeRole('leading teacher');
@@ -162,6 +175,11 @@ class User extends Authenticatable
         return $this->hasRole("leading teacher");
     }
 
+    public function isLeadingTeacherAdmin()
+    {
+        return $this->hasRole("leading teacher admin");
+    }
+
     public function events()
     {
         return $this->hasMany('App\Event', 'creator_id');
@@ -179,12 +197,12 @@ class User extends Authenticatable
 
     public function excellences()
     {
-        return $this->hasMany('App\Excellence')->where('type',"Excellence");
+        return $this->hasMany('App\Excellence')->where('type', "Excellence");
     }
 
     public function superOrganisers()
     {
-        return $this->hasMany('App\Excellence')->where('type',"SuperOrganiser");
+        return $this->hasMany('App\Excellence')->where('type', "SuperOrganiser");
     }
 
     public function participations()
@@ -194,7 +212,7 @@ class User extends Authenticatable
 
     public function expertises()
     {
-        return $this->belongsToMany(LeadingTeacherExpertise::class,'leading_teacher_expertise_user','user_id','lte_id');
+        return $this->belongsToMany(LeadingTeacherExpertise::class, 'leading_teacher_expertise_user', 'user_id', 'lte_id');
     }
 
     public function levels()
@@ -217,7 +235,63 @@ class User extends Authenticatable
         return $filters->apply($query);
     }
 
-    public function getClosestCity(){
+    public function experience()
+    {
+        return $this->hasOne(Experience::class, 'user_id', 'id');
+    }
+
+    public function actions()
+    {
+        return $this->hasMany(LeadingTeacherAction::class);
+    }
+
+
+    public function resetExperience($year = null)
+    {
+        if (is_null($year)) $year = Carbon::now()->year;
+        $this->getExperience($year)->update(
+            ["points" => 0]
+        );
+
+
+    }
+
+    public function getPoints($year = null)
+    {
+        if (is_null($year)) $year = Carbon::now()->year;
+        return $this->getExperience($year)->points;
+
+
+    }
+
+    public function getExperience($year = null)
+    {
+        if (is_null($year)) $year = Carbon::now()->year;
+
+        $experience = Experience::firstOrCreate(
+            [
+                'user_id' => $this->id,
+                'year' => $year
+            ],
+            [
+                'points' => 0
+            ]
+        );
+
+        return $experience;
+    }
+
+    public function awardExperience($points, $year = null)
+    {
+        if (is_null($year)) $year = Carbon::now()->year;
+        $this->getExperience($year)->awardExperience($points);
+
+    }
+
+    public function stripExperience($points, $year = null)
+    {
+        if (is_null($year)) $year = Carbon::now()->year;
+        $this->getExperience($year)->stripExperience($points);
 
     }
 
@@ -225,7 +299,7 @@ class User extends Authenticatable
     /**
      * Get the path to the user's avatar.
      *
-     * @param  string $avatar
+     * @param string $avatar
      * @return string
      */
     public function getAvatarPathAttribute($avatar)
@@ -237,7 +311,7 @@ class User extends Authenticatable
     /**
      * Get the path to the user's avatar.
      *
-     * @param  string $avatar
+     * @param string $avatar
      * @return string
      */
     public function getAvatarAttribute()
@@ -276,14 +350,51 @@ class User extends Authenticatable
         return geoip(geoip()->getClientIP());
     }
 
-    public function activities($edition){
+    public function activities($edition)
+    {
 
-        return  DB::table('events')
-            ->where('creator_id','=',$this->id)
+        return DB::table('events')
+            ->where('creator_id', '=', $this->id)
             ->where('status', "=", "APPROVED")
             ->whereNull('deleted_at')
             ->whereYear('end_date', '=', $edition)
             ->count();
+    }
+
+    public function reported($edition = null)
+    {
+
+        $query = DB::table('events')
+            ->where('creator_id', '=', $this->id)
+            ->where('status', "=", "APPROVED")
+            ->whereNotNull('reported_at')
+            ->whereNull('deleted_at');
+
+        if (!is_null($edition)) {
+            $query->whereYear('created_at', '=', $edition);
+        }
+
+
+        return $query->count();
+    }
+
+    public function influence($edition = null)
+    {
+
+        if (is_null($this->tag)) return 0;
+
+        $query = DB::table('events')
+            ->where('codeweek_for_all_participation_code', '=', $this->tag)
+            ->where('status', "=", "APPROVED")
+            ->where('creator_id', '<>', $this->id)
+            ->whereNull('deleted_at');
+
+        if (!is_null($edition)) {
+            $query->whereYear('created_at', '=', $edition);
+        }
+
+
+        return $query->count() * 2;
     }
 
 

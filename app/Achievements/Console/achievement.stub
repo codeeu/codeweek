@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Achievements\Types;
+
+class {{CLASS}} extends AchievementType
+{
+    public function description()
+    {
+        //
+    }
+
+    public function qualifier($user)
+    {
+        //
+    }
+
+
+}

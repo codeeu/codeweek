@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature\Resources;
+namespace Tests\Feature\Achievements\Resources;
 
 use Database\Seeders\Resource\CategorySeeder;
 use Database\Seeders\Resource\LanguageSeeder;

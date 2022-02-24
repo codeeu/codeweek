@@ -27,7 +27,6 @@ class AmbassadorTest extends TestCase
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
         $this->seed('LeadingTeacherRoleSeeder');
-
         $this->france = create('App\Country',['iso'=>'FR']);
         $this->belgium = create('App\Country',['iso'=>'BE','facebook'=>'facebook_url']);
 
@@ -72,8 +71,7 @@ class AmbassadorTest extends TestCase
     public function ambassadors_without_picture_should_not_be_displayed()
     {
 
-        $ambassador_without_bio = create('App\User', ['avatar_path' => NULL, 'country_iso' => $this->france->iso])->assignRole('ambassador');
-//dd($ambassador_without_bio);
+        $ambassador_without_bio = create('App\User', ['avatar_path' => NULL, 'country_iso' => $this->france->iso, 'lastname' => 'Lastname that will never appear'])->assignRole('ambassador');
         $italy = create('App\Country', ['iso' => 'foobar']);
         create('App\Event', ['country_iso' => $italy->iso]);
         $this->get('/community?country_iso=' . $this->france->iso)->assertDontSee($ambassador_without_bio->lastname);
@@ -118,7 +116,7 @@ class AmbassadorTest extends TestCase
     }
 
     /** @test */
-    public function signedin_users_should_see_their_country_ambassadors()
+    public function signedin_users_should_see_their_community_page()
     {
 
         $this->signIn($this->ambassador_be);
@@ -157,14 +155,10 @@ class AmbassadorTest extends TestCase
     public function info_email_should_be_displayed_in_footer_only_on_community_page()
     {
 
+        $this->get('/community?country_iso=BE')->assertSee('mailto:info@codeweek.eu');
         $this->get('/ambassadors?country_iso=BE')->assertSee('mailto:info@codeweek.eu');
 
-
     }
-
-
-
-
 
 }
 

@@ -3,7 +3,7 @@
 namespace Tests\Feature;
 
 use App\Event;
-use App\Mail\EventCreated;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
 use Tests\TestCase;
@@ -73,6 +73,8 @@ class CreateOnlineEventTest extends TestCase
         $this->assertEquals("online",$event->fresh()->location);
         $this->assertEquals("http://lesoir.be",$event->fresh()->event_url);
         $this->assertEquals("fi",$event->fresh()->language);
+        Log::info($event->fresh()->latitude);
+        Log::info($event->fresh()->longitude);
         $this->assertNotEquals(0,$event->fresh()->latitude);
         $this->assertNotEquals(0,$event->fresh()->longitude);
     }

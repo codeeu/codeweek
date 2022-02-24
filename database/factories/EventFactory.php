@@ -1,14 +1,15 @@
 <?php
 
 use App\Country;
-use Carbon\Carbon;
+
 use Faker\Generator as Faker;
+use Illuminate\Support\Carbon;
 
 $factory->define(App\Event::class, function (Faker $faker) {
 
 
-    $start_date = $faker->dateTimeBetween($start = '-1week', $end = 'now');
-    $end_date = $faker->dateTimeBetween($start = 'now', $end = '+1week');
+    $start_date = Carbon::createFromDate($faker->dateTimeBetween($start = '-1week', $end = 'now'));
+    $end_date = Carbon::createFromDate($faker->dateTimeBetween($start = 'now', $end = '+1week'));
 
 
     $countries = Country::all()->pluck('iso')->toArray();
@@ -16,7 +17,7 @@ $factory->define(App\Event::class, function (Faker $faker) {
     if (empty($countries)) $countries[0] = factory('App\Country')->create()->iso;
 
 $latitude = $faker->latitude(42,59);
-$longitude = $faker->longitude(1,20);
+$longitude = $faker->longitude(10,20);
 
     return [
         'status' => $faker->randomElement(['APPROVED','PENDING','REJECTED']),
@@ -34,9 +35,9 @@ $longitude = $faker->longitude(1,20);
         'event_url' => $faker->url,
         'contact_person' => $faker->email,
         'user_email' => $faker->email,
-        'pub_date' => $faker->dateTime,
-        'created' => $faker->dateTime,
-        'updated' => $faker->dateTime,
+        'pub_date' => Carbon::createFromDate($faker->dateTime),
+        'created' => Carbon::createFromDate($faker->dateTime),
+        'updated' => Carbon::createFromDate($faker->dateTime),
         'creator_id' => function () {
             return factory('App\User')->create()->id;
         },

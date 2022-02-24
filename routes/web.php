@@ -350,6 +350,7 @@ Route::group(['middleware' => ['role:super admin']], function () {
     );
 });
 
+
 Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/activities', 'AdminController@activities')->name('activities');
     Route::get('/pending/{country}', 'PendingEventsController@index')->name(
@@ -430,6 +431,8 @@ Route::group(['middleware' => ['role:super admin']], function () {
         '/hackathons/vote/results',
         'HackathonsVotingController@results'
     )->name('hackathon-vote-results');
+
+
 });
 
 Route::group(['middleware' => ['role:super admin|ambassador']], function () {
@@ -447,6 +450,17 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
     Route::post('/api/event/reject/{event}', 'EventController@reject')->name(
         'event.reject'
     );
+});
+
+
+
+
+Route::group(['middleware' => [
+    'auth',
+    'role:super admin|leading teacher|leading teacher admin']], function () {
+    Route::get('/my/badges', 'BadgesController@my')->name('my-badges')->middleware('auth');
+    Route::get('/badges/user/{user}/{year?}', 'BadgesController@user')->name('badges-user');
+    Route::get('/badges/leaderboard/{year?}', 'BadgesController@leaderboard')->name('badges-leaderboard-year');
 });
 
 Route::get(
@@ -627,5 +641,7 @@ Route::get(
 
 Route::get('podcasts', 'PodcastsController@index')->name('podcasts');
 
+
 Auth::routes();
 Route::feeds();
+

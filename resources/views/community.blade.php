@@ -33,33 +33,12 @@
                     </select>
                 </form>
             </section>
-            @if(app('request')->input('country_iso'))
-                @foreach ($countries as $country)
-                    @if($country->iso === app('request')->input('country_iso'))
-                        {{--<h1>
-                            @lang('countries.'.$country->name)
-                        </h1>--}}
 
-                        {{--                        <div class="codeweek-tools">--}}
 
-                        {{--                            @if($country->facebook)--}}
-                        {{--                                <a href="{{$country->facebook}}" class="codeweek-blank-button" target="_blank">--}}
-                        {{--                                    @lang('ambassador.visit_the') <span>@lang('ambassador.local_facebook_page')</span>--}}
-                        {{--                                </a>--}}
-                        {{--                            @endif--}}
+            <section class="codeweek-blue-box">
 
-                        {{--                            @if($country->website)--}}
-                        {{--                                <a href="{{$country->website}}" class="codeweek-blank-button" target="_blank">--}}
-                        {{--                                    @lang('ambassador.visit_the') <span>@lang('ambassador.local_website')</span>--}}
-                        {{--                                </a>--}}
-                        {{--                            @endif--}}
 
-{{--                        </div>--}}
-                    @endif
-                @endforeach
-            @endif
 
-            <section class="codeweek-blue-box" >
                 <section class="community_type_section">
                     <h2 class="subtitle">@lang('community.titles.1')</h2>
                     <div class="community_type">
@@ -182,29 +161,36 @@
                     <h2 class="subtitle">@lang('community.titles.4')</h2>
                     <div class="community_type">
                         <div class="text">
-{{--                            <p>--}}
-{{--                                @lang('community.volunteer.0')--}}
-{{--                            </p>--}}
-{{--                            <p>--}}
-{{--                                @lang('community.volunteer.1')--}}
-{{--                            </p>--}}
-{{--                            <p>--}}
-{{--                                @lang('community.volunteer.2')--}}
-{{--                            </p>--}}
+                            {{--                            <p>--}}
+                            {{--                                @lang('community.volunteer.0')--}}
+                            {{--                            </p>--}}
+                            {{--                            <p>--}}
+                            {{--                                @lang('community.volunteer.1')--}}
+                            {{--                            </p>--}}
+                            {{--                            <p>--}}
+                            {{--                                @lang('community.volunteer.2')--}}
+                            {{--                            </p>--}}
 
                             <p>
-                                @lang('community.volunteer.0') <a href="{{route('events_map')}}">@lang('community.volunteer.1')</a> @lang('community.volunteer.2') <a href="{{route('about')}}">@lang('community.volunteer.3')</a>
-                                @lang('community.volunteer.4') <a href="{{route('our-values')}}">@lang('community.volunteer.5')</a> @lang('community.volunteer.6').
+                                @lang('community.volunteer.0') <a
+                                        href="{{route('events_map')}}">@lang('community.volunteer.1')</a> @lang('community.volunteer.2')
+                                <a href="{{route('about')}}">@lang('community.volunteer.3')</a>
+                                @lang('community.volunteer.4') <a
+                                        href="{{route('our-values')}}">@lang('community.volunteer.5')</a> @lang('community.volunteer.6')
+                                .
                             </p>
 
 
                             <p>
-                                @lang('community.volunteer.7') <a href="{{route('leading-teachers-document')}}">@lang('community.volunteer.8')</a>.
-                                @lang('community.volunteer.9') <a href="https://ec.europa.eu/eusurvey/runner/CallforLeadingTeachers">@lang('community.volunteer.10')</a> @lang('community.volunteer.11')
+                                @lang('community.volunteer.7') <a
+                                        href="{{route('leading-teachers-document')}}">@lang('community.volunteer.8')</a>.
+                                @lang('community.volunteer.9') <a
+                                        href="https://ec.europa.eu/eusurvey/runner/CallforLeadingTeachers">@lang('community.volunteer.10')</a> @lang('community.volunteer.11')
                             </p>
 
                             <p>
-                                @lang('community.volunteer.12') <a href="{{route('beambassador')}}">@lang('community.volunteer.13')</a> @lang('community.volunteer.14') @lang('community.volunteer.15')
+                                @lang('community.volunteer.12') <a
+                                        href="{{route('beambassador')}}">@lang('community.volunteer.13')</a> @lang('community.volunteer.14') @lang('community.volunteer.15')
 
                             </p>
                         </div>
@@ -227,8 +213,12 @@
 
 @push('scripts')
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
 
 
     {{--    <link href="{{asset('css/MarkerCluster.css')}}" media="screen" rel="stylesheet"/>--}}
