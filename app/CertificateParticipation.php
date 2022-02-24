@@ -105,8 +105,8 @@ class CertificateParticipation
     protected function copy_to_s3(): string
     {
         $inputStream = Storage::disk('latex')->getDriver()->readStream($this->personalized_template_name . '.pdf');
-        $destination = Storage::disk('s3')->getDriver()->getAdapter()->getPathPrefix() . '/certificates/' . $this->id . '.pdf';
-        Storage::disk('s3')->getDriver()->putStream($destination, $inputStream);
+        $destination = Storage::disk('s3')->path('/certificates/' . $this->id . '.pdf');
+        Storage::disk('s3')->put($destination, $inputStream);
 
         return Storage::disk('s3')->url('certificates/' . $this->id . '.pdf');
     }
