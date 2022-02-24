@@ -52,8 +52,8 @@ class ParticipationController extends Controller
 
         //Upload to S3
         $inputStream = Storage::disk('latex')->getDriver()->readStream($zipname);
-        $destination = Storage::disk('s3')->getDriver()->getAdapter()->getPathPrefix() . '/participation/' . $zipname;
-        Storage::disk('s3')->getDriver()->putStream($destination, $inputStream);
+        $destination = Storage::disk('s3')->path('/participation/' . $zipname);
+        Storage::disk('s3')->put($destination, $inputStream);
 
 
         foreach ($filenames as $file) {
