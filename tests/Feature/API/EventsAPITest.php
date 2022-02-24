@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature;
+namespace Tests\Feature\API;
 
 use Carbon\Carbon;
 use Exception;
@@ -151,7 +151,7 @@ class EventsAPITest extends TestCase {
             );
         } catch (ValidationException $e) {
             $this->assertEquals(
-                'The given data was invalid.',
+                'The year must be a number.',
                 $e->getMessage()
             );
         }

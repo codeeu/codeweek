@@ -2,9 +2,10 @@
 
 namespace App\Providers;
 
+use App\Observers\EventObserver;
+use App\Event;
 use App\Listeners\LogSentMessage;
 use Illuminate\Mail\Events\MessageSending;
-use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider {
@@ -28,9 +29,10 @@ class EventServiceProvider extends ServiceProvider {
      *
      * @return void
      */
-    public function boot() {
+    public function boot()
+    {
         parent::boot();
 
-        //
+        Event::observe(EventObserver::class);
     }
 }
