@@ -41,6 +41,19 @@ class UserTest extends TestCase
     }
 
     /** @test */
+    public function a_user_with_null_avatar_should_have_default_avatar()
+    {
+
+
+        $user = create('App\User', ["avatar_path" => null]);
+
+
+        $this->assertEquals(config("codeweek.aws_url") . "avatars/default_avatar.png", $user->avatar);
+
+
+    }
+
+    /** @test */
     public function a_user_should_readable_name()
     {
 

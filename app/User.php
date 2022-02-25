@@ -304,6 +304,7 @@ class User extends Authenticatable
      */
     public function getAvatarPathAttribute($avatar)
     {
+        if (is_null($avatar)) $avatar = 'avatars/default_avatar.png' ;
         return Storage::disk('s3')->url($avatar);
 
     }
