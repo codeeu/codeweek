@@ -43,7 +43,7 @@ class EventsController extends Controller {
                 Cache::add(
                     'events' . $year,
                     $events,
-                    (env('CACHE_MINUTES_CURRENT_YEAR') * 60) | 5
+                    300
                 );
             } else {
                 Cache::forever('events' . $year, $events);

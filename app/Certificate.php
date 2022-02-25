@@ -29,7 +29,7 @@ class Certificate
         $this->name_of_certificate_holder = $event->name_for_certificate;
         $this->personalized_template_name = $event->id . ".tex";
         $this->resource_path = resource_path() . "/latex";
-        $this->pdflatex = env("PDFLATEX_PATH");
+        $this->pdflatex = config('codeweek.pdflatex_path');
         $this->event = $event;
         $this->id = $event->id . '-' . str_random(10);
     }

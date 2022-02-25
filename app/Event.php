@@ -106,7 +106,7 @@ class Event extends Model
             if (Str::startsWith($this->picture, 'http')) {
                 return $this->picture;
             }
-            return env('AWS_URL') . $this->picture;
+            return config('codeweek.aws_url') . $this->picture;
         } else {
             return 'https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png';
         }
@@ -115,7 +115,7 @@ class Event extends Model
     public function picture_detail_path()
     {
         if ($this->picture_detail) {
-            return env('AWS_URL') . $this->picture_detail;
+            return config('codeweek.aws_url') . $this->picture_detail;
         }
 
         return $this->picture_path();

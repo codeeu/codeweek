@@ -40,7 +40,7 @@ class CertificateParticipation
 
         $this->personalized_template_name = $random . "-" . auth()->id();
         $this->resource_path = resource_path() . "/latex";
-        $this->pdflatex = env("PDFLATEX_PATH");
+        $this->pdflatex = config('codeweek.pdflatex_path');
         $this->id = auth()->id() . '-' . $random;
         Log::info("User ID " . auth()->id() . " generating participation certificate with name: " . $name_for_certificate);
     }

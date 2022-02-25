@@ -72,7 +72,7 @@ class ResourceItem extends Model
 
 
         if (!strncmp($value, "http", 4) === 0) {
-            return env('RESOURCES_URL') + $value;
+            return config('codeweek.resources_url') + $value;
         }
 
         return $value;
