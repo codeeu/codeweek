@@ -76,7 +76,7 @@ class Handler extends ExceptionHandler
 
             Mail::send('emails.en.exception', compact('css','content'), function ($message) {
                 $message
-                    ->to(env('ADMIN_EMAIL'))
+                    ->to(config('codeweek.administrator'))
                     ->subject('Exception on Codeweek')
                 ;
             });

@@ -207,18 +207,18 @@
                            for="inline-full-name">@lang('eventdetails.share')</label>
                     <div class="share-event-wrapper">
                         <div class="fb-like"
-                             data-href="{{env('APP_URL')}}{{$event->path()}}" data-layout="button_count"
+                             data-href="{{config('codeweek.app_url')}}{{$event->path()}}" data-layout="button_count"
                              data-action="recommend"
                              data-show-faces="false" data-share="true"></div>
 
                         <a href="https://twitter.com/share" class="twitter-share-button"
-                           data-url="{{env('APP_URL')}}{{$event->path()}}"
+                           data-url="{{config('codeweek.app_url')}}{{$event->path()}}"
                            data-text="Check out {{ $event->title }} at" data-via="CodeWeekEU"
                            data-hashtags="codeEU">Tweet</a>
 
-                        <div class="g-plusone" data-size="medium" data-href="{{env('APP_URL')}}"></div>
+                        <div class="g-plusone" data-size="medium" data-href="{{config('codeweek.app_url')}}"></div>
                         <a class="fa fa-envelope" title='@lang('eventdetails.email.tooltip')'
-                           href="mailto:?subject=@lang('eventdetails.email.subject')&amp;body=@lang('eventdetails.email.body_1'){{ $event->title }}@lang('eventdetails.email.body_2'){{env('APP_URL')}}{{$event->path()}}"></a>
+                           href="mailto:?subject=@lang('eventdetails.email.subject')&amp;body=@lang('eventdetails.email.body_1'){{ $event->title }}@lang('eventdetails.email.body_2'){{config('codeweek.app_url')}}{{$event->path()}}"></a>
                     </div>
                 </div>
 

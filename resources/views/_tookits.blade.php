@@ -1,5 +1,5 @@
 @php
-    $languages = explode(",",env("LOCALES"));
+    $languages = explode(",",config("codeweek.LOCALES"));
       $locale = app()->getLocale();
 @endphp
 

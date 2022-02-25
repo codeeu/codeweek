@@ -236,7 +236,7 @@
 
         var mymap = L.map('mapid');
 
-        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={{env('MAPS_MAPBOX_ACCESS_TOKEN')}}', {
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={{config('codeweek.MAPS_MAPBOX_ACCESS_TOKEN')}}', {
             maxZoom: 18,
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
                 'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',

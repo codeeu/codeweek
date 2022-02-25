@@ -2,7 +2,7 @@
 
 # Registration Received
 
-## Thank you for registering [your activity]({{env('APP_URL')}}{{$event->path()}}) for EU Code Week!
+## Thank you for registering [your activity]({{config('codeweek.app_url')}}{{$event->path()}}) for EU Code Week!
 
 
 <p>The EU Code Week ambassadors in your country are currently reviewing your submission. You will receive an email
@@ -13,7 +13,7 @@ your #CodeWeek activity?</p>
 <li>
 <p>
 Visit the resources page of the EU Code Week website:
-<a target="_blank" rel="noreferer noopener" href="{{env('APP_URL')}}/resources/">{{env('APP_URL')}}/resources/</a>
+<a target="_blank" rel="noreferer noopener" href="{{config('codeweek.app_url')}}/resources/">{{config('codeweek.app_url')}}/resources/</a>
 </p>
 </li>
 </ul>
@@ -28,7 +28,7 @@ please find your unique Code Week 4 All code below:</p>
 <ul>
 <li>
 <p>
-<strong><a target="_blank" rel="noreferer noopener" href="{{env('APP_URL')}}/codeweek4all/">Click here</a></strong>
+<strong><a target="_blank" rel="noreferer noopener" href="{{config('codeweek.app_url')}}/codeweek4all/">Click here</a></strong>
 to find out more about how to connect with other activities in your community and internationally. You
 can together earn a Code Week Certificate of Excellence!
 </p>
@@ -56,9 +56,9 @@ bringing Code Week to your students!</p>
 
 <footer style="text-align: center;">
 <a target="_blank" rel="noreferer noopener" href="mailto:info@codeweek.eu">Contact us</a> |
-<a target="_blank" rel="noreferer noopener" href="{{env('APP_URL')}}/login">My Account</a> |
-<a target="_blank" rel="noreferer noopener" href="{{env('APP_URL')}}/privacy">Privacy Policy</a> |
-<a target="_blank" rel="noreferer noopener" href="{{env('APP_URL')}}/about">About EU Code Week</a>
+<a target="_blank" rel="noreferer noopener" href="{{config('codeweek.app_url')}}/login">My Account</a> |
+<a target="_blank" rel="noreferer noopener" href="{{config('codeweek.app_url')}}/privacy">Privacy Policy</a> |
+<a target="_blank" rel="noreferer noopener" href="{{config('codeweek.app_url')}}/about">About EU Code Week</a>
 </footer>
 
 
