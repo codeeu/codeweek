@@ -72,7 +72,8 @@ class RemindCreators extends Command
             ]);
         Log::info($updated . " events have been updated with success.");
 
-        Mail::to(env('ADMIN_EMAIL'))->queue(new \App\Mail\RemindersSummary(count($creators), $eventsCount, $updated, $mailsQueued));
+        $admin = config('codeweek.administrator');
+        Mail::to($admin)->queue(new \App\Mail\RemindersSummary(count($creators), $eventsCount, $updated, $mailsQueued));
 
 
     }

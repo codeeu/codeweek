@@ -2,16 +2,16 @@
 <h1>Registration Approved</h1>
 
 <h2>Congratulations!</h2>
-<h3><a target="_blank" href="{{env('APP_URL')}}{{$event->path()}}">Your EU Code Week activity</a> has been approved.
+<h3><a target="_blank" href="{{config('codeweek.app_url')}}{{$event->path()}}">Your EU Code Week activity</a> has been approved.
 </h3>
 
 <p>Looking for how to prepare your activity, and how to promote it? Take a look at the following resources to help
 you get started:</p>
 
 <ul>
-<li><a target="_blank" href="{{env('APP_URL')}}/toolkits">EU Code Week Activity Toolkit</a></li>
-<li><a target="_blank" href="{{env('APP_URL')}}/resources/teach">EU Code Week Resources Page</a></li>
-<li><a target="_blank" href="{{env('APP_URL')}}/community">Community</a></li>
+<li><a target="_blank" href="{{config('codeweek.app_url')}}/toolkits">EU Code Week Activity Toolkit</a></li>
+<li><a target="_blank" href="{{config('codeweek.app_url')}}/resources/teach">EU Code Week Resources Page</a></li>
+<li><a target="_blank" href="{{config('codeweek.app_url')}}/community">Community</a></li>
 </ul>
 
 <p>If you are interested in linking your activity with those organised by friends, colleagues or other contacts,
@@ -24,7 +24,7 @@ please find your unique Code Week 4 All code below:</p>
 
 <p>
 Participating in the Code Week 4 All challenge will allow you to expand your network in your community and
-across borders. Visit the <a target="_blank" href="{{env('APP_URL')}}/codeweek4all">Code Week 4 All</a>
+across borders. Visit the <a target="_blank" href="{{config('codeweek.app_url')}}/codeweek4all">Code Week 4 All</a>
 challenge page to learn more about how you can start sharing your code and receive a Certificate of Excellence
 for your work.
 </p>
@@ -66,9 +66,9 @@ bringing Code Week to your students!</p>
 
 <footer style="text-align: center;">
 <a target="_blank" href="mailto:info@codeweek.eu">Contact us</a> |
-<a target="_blank" href="{{env('APP_URL')}}/login">My Account</a> |
-<a target="_blank" href="{{env('APP_URL')}}/privacy">Privacy Policy</a> |
-<a target="_blank" href="{{env('APP_URL')}}/about">About EU Code Week</a>
+<a target="_blank" href="{{config('codeweek.app_url')}}/login">My Account</a> |
+<a target="_blank" href="{{config('codeweek.app_url')}}/privacy">Privacy Policy</a> |
+<a target="_blank" href="{{config('codeweek.app_url')}}/about">About EU Code Week</a>
 </footer>
 
 </div>

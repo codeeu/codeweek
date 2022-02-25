@@ -27,7 +27,7 @@ class City extends Model
     public static function getClosestCity($longitude, $latitude)
     {
         //acos is not known with sqlite that is used for testing.
-        if (env('DB_CONNECTION') == 'sqlite') {
+        if (config('codeweek.db_connection') == 'sqlite') {
             return City::first();
         };
 

@@ -16,7 +16,7 @@
     function leaflet() {
         console.log("leaflet function init")
         mymap = L.map('testMap').setView([51.505, -0.09], 5);
-        L.tileLayer('{{env('MAP_TILES')}}', {
+        L.tileLayer('{{config('codeweek.MAP_TILES')}}', {
             attribution: 'Map data',
             maxZoom: 18,
             id: 'mapbox/streets-v11',

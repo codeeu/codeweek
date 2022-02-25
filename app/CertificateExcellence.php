@@ -29,7 +29,7 @@ class CertificateExcellence
         $this->name_of_certificate_holder = $name_for_certificate;
         $this->personalized_template_name = $edition . "-" . auth()->id();
         $this->resource_path = resource_path() . "/latex";
-        $this->pdflatex = env("PDFLATEX_PATH");
+        $this->pdflatex = config('codeweek.pdflatex_path');
         $this->id = auth()->id() . '-' . str_random(10);
         $this->type = $type;
         $this->number_of_activities = $number_of_activities;
