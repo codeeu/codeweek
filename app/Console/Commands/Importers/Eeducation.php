@@ -52,13 +52,13 @@ class Eeducation extends Command
         // Create or Load Eeducation Technical User
         //$techicalUserID = ImporterHelper::getTechnicalUser("eeducation-technical");
 
-        if (is_null(env("EEDUCATION_CLIENTID"))) {
+        if (is_null(config("codeweek.EEDUCATION_CLIENTID"))) {
             throw new Exception('Please Specify the EEducation Endpoint in the .env file');
         };
 
 
         // Read the API
-        $endpoint = "https://eeducation.at/rest-api/codeweek-activities/?clientid=" . env("EEDUCATION_CLIENTID");
+        $endpoint = "https://eeducation.at/rest-api/codeweek-activities/?clientid=" . config("codeweek.EEDUCATION_CLIENTID");
 
         $client = new Client();
 

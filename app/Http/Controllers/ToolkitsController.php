@@ -10,8 +10,6 @@ class ToolkitsController extends Controller
     public function get(){
 
 
-        //$languages = explode(",",env("LOCALES"));
-
         $locale = App::getLocale();
 
 

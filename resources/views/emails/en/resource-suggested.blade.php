@@ -12,7 +12,7 @@ A new resource has been suggested on the Codeweek Website. <br/>
 
 Please log into the administrative area to complete this entry<br/>
 
-@component('mail::button', ['url' => env('APP_URL') . "/nova/resources/resource-items/{$resourceItem->id}"])
+@component('mail::button', ['url' => config('codeweek.app_url') . "/nova/resources/resource-items/{$resourceItem->id}"])
     Admin Area
 @endcomponent
 

@@ -10,7 +10,7 @@ use App\User;
 class EventHelper {
     public static function getCloseEvents($longitude, $latitude, $id = 0) {
         //acos is not known with sqlite that is used for testing.
-        if (env('DB_CONNECTION') == 'sqlite') {
+        if (config('codeweek.db_connection') == 'sqlite') {
             return Event::take(4)->get();
         }
 

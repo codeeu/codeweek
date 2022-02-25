@@ -36,7 +36,7 @@ class RelocateCountry extends Command {
      * @return int
      */
     public function handle() {
-        $country = env('RELOCATION_COUNTRY', 'IT');
+        $country = config('codeweek.relocation_country');
 
         //Get all activities in the center of the map for the specified country that have not yet been relocated
         $events = EventHelper::getCenteredNotRelocatedEvents($country);
