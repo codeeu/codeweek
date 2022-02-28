@@ -12,8 +12,10 @@ class AddGuestsToPodcasts extends Migration {
      */
     public function up() {
         Schema::table('podcasts', function (Blueprint $table) {
-            $table->string('guest_name')->nullable();
-            $table->string('guest_description')->nullable();
+            $table->string('guest_title')->nullable();
+            $table->text('guest_description')->nullable();
+            $table->text('resources')->nullable();
+
         });
     }
 
@@ -25,7 +27,13 @@ class AddGuestsToPodcasts extends Migration {
     public function down() {
         Schema::table('podcasts', function (Blueprint $table) {
             $table->dropColumn('guest_name');
+        });
+        Schema::table('podcasts', function (Blueprint $table) {
             $table->dropColumn('guest_description');
         });
+        Schema::table('podcasts', function (Blueprint $table) {
+            $table->dropColumn('resources');
+        });
+
     }
 }
