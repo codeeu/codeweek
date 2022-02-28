@@ -39,4 +39,22 @@ class PodcastsTest extends TestCase {
         $response->assertDontSee('cannot be displayed');
         $response->assertDontSee('pending podcast');
     }
+
+    /** @test */
+    public function podcast_can_have_guest_images() {
+        $this->withoutExceptionHandling();
+
+        $podcast = create('App\Podcast');
+        $guestImages  = create('App\PodcastGuestImage', [
+            'podcast_id' => $podcast->id
+        ],3);
+
+        $otherGuestImages  = create('App\PodcastGuestImage',[],10);
+
+        $this->assertCount(3, $podcast->guestImages()->get());
+
+
+    }
+
+
 }
