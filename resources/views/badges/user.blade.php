@@ -44,9 +44,7 @@
 
                                 <div class="flex-1 pt-4">
                                     <div class="text-base italic">
-                                        Earn your title, from active to legendary organiser, by organising more and more
-                                        Code
-                                        Week activities and contributing to the map.
+                                        Go from active to legendary organiser, by organising more Code Week activities and contributing to the map.
                                     </div>
                                     <div class="pt-6">
                                         <nav aria-label="Progress">
@@ -88,10 +86,7 @@
 
                                 <div class="flex-1 pt-4">
                                     <div class="text-base italic">
-                                        Become a Code Week Influencer, starting from a simple influencer to a legendary
-                                        influencer, who will simply stay in the record books of Code Week legends. To
-                                        earn points, simply rise and abuse of the Code Week Tag when organising and
-                                        sharing it with others!.
+                                        Go from influencer to legendary influencer, and earn your place in the record books of Code Week legends. Increase your points by using the Code Week Tag when organising and sharing an activity.
                                     </div>
                                     <div class="pt-6">
                                         <nav aria-label="Progress">
