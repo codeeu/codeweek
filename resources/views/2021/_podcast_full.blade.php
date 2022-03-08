@@ -1,8 +1,5 @@
-@php
-    //$author = $author ?? __('challenges-content.'.$slug.'.author')
-@endphp
 <div class="shadow-xl flex flex-col">
-    <divp-8>
+    <div>
         <div class="flex-none max-h-fit float-left w-auto max-w-xs pr-4">
 
             <a href="{{$podcast->filename}}">
@@ -29,21 +26,21 @@
 
 
             <div class="text-black pb-2 pr-4 text-base leading-5">{{$podcast->description}}</div>
-{{--            <div class="flex flex-row">--}}
-{{--                <div>--}}
-{{--                    <audio controls>--}}
-{{--                        <source src="{{$podcast->filename}}"--}}
-{{--                                type="audio/mpeg">--}}
-{{--                        Your browser does not support the audio element.--}}
-{{--                    </audio>--}}
-{{--                </div>--}}
+            <div class="flex flex-row">
+                <div>
+                    <audio controls="controls" autoplay=true muted>
+                        <source src="{{$podcast->filename}}"
+                                type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
 
 
-{{--            </div>--}}
+            </div>
 
 
         </div>
-    </divp-8>
+    </div>
     <div>
 
             <div class="text-black pb-2 pr-4 text-base leading-5 font-bold">{{$podcast->guest_title}}</div>
@@ -53,6 +50,16 @@
 
 </div>
 
+@section('extra-css')
+    <style>
+        audio {
+            width: 600px;
+            box-shadow: 5px 5px 20px rgba(0,0, 0, 0.4);
+            border-radius: 90px;
+            transform: scale(1.05);
+        }
+    </style>
+@endsection
 
 
 
