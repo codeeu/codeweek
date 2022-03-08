@@ -40,7 +40,7 @@ class CertificateParticipation
 
         $this->personalized_template_name = $random . "-" . auth()->id();
         $this->resource_path = resource_path() . "/latex";
-        $this->pdflatex = env("PDFLATEX_PATH");
+        $this->pdflatex = config('codeweek.pdflatex_path');
         $this->id = auth()->id() . '-' . $random;
         Log::info("User ID " . auth()->id() . " generating participation certificate with name: " . $name_for_certificate);
     }
@@ -105,8 +105,8 @@ class CertificateParticipation
     protected function copy_to_s3(): string
     {
         $inputStream = Storage::disk('latex')->getDriver()->readStream($this->personalized_template_name . '.pdf');
-        $destination = Storage::disk('s3')->getDriver()->getAdapter()->getPathPrefix() . '/certificates/' . $this->id . '.pdf';
-        Storage::disk('s3')->getDriver()->putStream($destination, $inputStream);
+        $destination = Storage::disk('s3')->path('/certificates/' . $this->id . '.pdf');
+        Storage::disk('s3')->put($destination, $inputStream);
 
         return Storage::disk('s3')->url('certificates/' . $this->id . '.pdf');
     }

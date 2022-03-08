@@ -5,7 +5,7 @@ We’d like to thank you for taking part in Europe Code Week and helping us to r
 As a small token of appreciation for your role in Code Week, as an event organizer, we’re awarding you a certificate of recognition.<br/><br/>
 To see your activities that can be reported, please click on the link below
 
-@component('mail::button', ['url' => env('APP_URL') . "/my/reportable"])
+@component('mail::button', ['url' => config('codeweek.app_url') . "/my/reportable"])
     Report Activities
 @endcomponent
 

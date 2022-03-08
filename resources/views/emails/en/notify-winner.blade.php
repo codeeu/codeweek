@@ -12,7 +12,7 @@ You can personalise and download your Code Week 4 all certificate by clicking on
 <br/>
 
 
-@component('mail::button', ['url' => env('APP_URL') . "/certificates/excellence/" . $edition])
+@component('mail::button', ['url' => config('codeweek.app_url') . "/certificates/excellence/" . $edition])
     Get your Certificate
 @endcomponent
 
