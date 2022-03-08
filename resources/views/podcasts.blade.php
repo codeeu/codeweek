@@ -1,6 +1,7 @@
 @extends('layout.base')
 
 <x-tailwind></x-tailwind>
+<x-alpine></x-alpine>
 
 @section('content')
 
@@ -59,7 +60,7 @@
 
 
 
-                <section class="grid grid-cols-4 gap-6 md:grid-cols-3">
+                <section class="grid grid-cols-4 gap-6 md:grid-cols-3" x-data="{}">
                     @foreach($podcasts as $key => $podcast)
                         @include('2021._podcast_tile', ['podcast' => $podcast, 'bg' => $key%2 ?'bg-gray-300':'bg-gray-200'])
 
