@@ -1,7 +1,7 @@
 @component('mail::message')
 # Registration Deferred
 
-## Thank you for submitting [your activity]({{env('APP_URL')}}{{$event->path()}}) for EU Code Week!
+## Thank you for submitting [your activity]({{config('codeweek.app_url')}}{{$event->path()}}) for EU Code Week!
 
 Unfortunately, the EU Code Week ambassadors in your country were not able to approve your submission.
 
@@ -40,8 +40,8 @@ bringing Code Week to your students!
 
 <footer style="text-align: center;">
 <a target="_blank" href="mailto:info@codeweek.eu">Contact Us</a> |
-<a target="_blank" href="{{env('APP_URL')}}/profile">My Account</a> |
-<a target="_blank" href="{{env('APP_URL')}}/privacy">Privacy Policy</a> |
-<a target="_blank" href="{{env('APP_URL')}}/about">About EU Code Week</a>
+<a target="_blank" href="{{config('codeweek.app_url')}}/profile">My Account</a> |
+<a target="_blank" href="{{config('codeweek.app_url')}}/privacy">Privacy Policy</a> |
+<a target="_blank" href="{{config('codeweek.app_url')}}/about">About EU Code Week</a>
 </footer>
 @endcomponent

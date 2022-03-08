@@ -29,7 +29,7 @@ class Certificate
         $this->name_of_certificate_holder = $event->name_for_certificate;
         $this->personalized_template_name = $event->id . ".tex";
         $this->resource_path = resource_path() . "/latex";
-        $this->pdflatex = env("PDFLATEX_PATH");
+        $this->pdflatex = config('codeweek.pdflatex_path');
         $this->event = $event;
         $this->id = $event->id . '-' . str_random(10);
     }
@@ -105,8 +105,8 @@ class Certificate
     protected function copy_to_s3(): string
     {
         $inputStream = Storage::disk('latex')->getDriver()->readStream($this->event->id . '.pdf');
-        $destination = Storage::disk('s3')->getDriver()->getAdapter()->getPathPrefix() . '/certificates/' . $this->id . '.pdf';
-        Storage::disk('s3')->getDriver()->putStream($destination, $inputStream);
+        $destination = Storage::disk('s3')->path('/certificates/' . $this->id . '.pdf') ;
+        Storage::disk('s3')->put($destination, $inputStream);
 
         return Storage::disk('s3')->url('certificates/' . $this->id . '.pdf');
     }

@@ -55,7 +55,7 @@ class Event extends Resource
             Text::make('Web Link', function () {
                 $slug = $this->slug;
                 $id = $this->id;
-                $url = env("APP_URL");
+                $url = config('codeweek.app_url');
                 return "<a target='_blank' href='{$url}/view/{$id}/{$slug}'>View Activity's Page</a>";
             })->asHtml()->onlyOnDetail(),
             Text::make('Description')->onlyOnDetail(),
