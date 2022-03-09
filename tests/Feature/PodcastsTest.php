@@ -41,17 +41,17 @@ class PodcastsTest extends TestCase {
     }
 
     /** @test */
-    public function podcast_can_have_guest_images() {
+    public function podcast_can_have_guests() {
         $this->withoutExceptionHandling();
 
         $podcast = create('App\Podcast');
-        $guestImages  = create('App\PodcastGuestImage', [
+        $guests  = create('App\PodcastGuest', [
             'podcast_id' => $podcast->id
         ],3);
 
-        $otherGuestImages  = create('App\PodcastGuestImage',[],10);
+        $otherGuests  = create('App\PodcastGuest',[],10);
 
-        $this->assertCount(3, $podcast->guestImages()->get());
+        $this->assertCount(3, $podcast->guests()->get());
 
 
     }

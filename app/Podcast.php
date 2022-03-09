@@ -15,9 +15,9 @@ class Podcast extends Model implements Feedable {
         'release_date' => 'datetime'
     ];
 
-    public function guestImages()
+    public function guests()
     {
-        return $this->hasMany('App\PodcastGuestImage');
+        return $this->hasMany('App\PodcastGuest')->orderBy('position');
     }
 
     public function scopeActive($query) {

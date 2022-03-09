@@ -13,10 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('podcast_guest_images', function (Blueprint $table) {
+        Schema::create('podcast_guests', function (Blueprint $table) {
             $table->id();
             $table->unsignedInteger('podcast_id');
-            $table->string('path');
+            $table->smallInteger('position');
+            $table->string('image_path')->nullable();
+            $table->string('name');
+            $table->string('description');
             $table->timestamps();
         });
     }
@@ -28,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('podcast_guest_images');
+        Schema::dropIfExists('podcast_guests');
     }
 };
