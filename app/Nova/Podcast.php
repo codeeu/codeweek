@@ -5,6 +5,7 @@ namespace App\Nova;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\DateTime;
+use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Markdown;
 use Laravel\Nova\Fields\Number;
@@ -60,11 +61,8 @@ class Podcast extends Resource {
                 ->sortable()
                 ->hideFromIndex(),
             DateTime::make('Release Date')->sortable()->format('DD/MM/Y'),
-            Text::make('Guest Title','guest_title')
-                ->sortable()
-                ->hideFromIndex(),
-            Markdown::make('Guest Description','guest_description')->hideFromIndex(),
             Markdown::make('Resources', 'resources')->hideFromIndex(),
+            HasMany::make('PodcastGuests','guests'),
 
         ];
     }
