@@ -55,6 +55,30 @@ class PodcastGuestSeeder extends Seeder
             'description' => 'Artur Coelho is a Portuguese ICT teacher, with an interest and vast knowledge in AI, robotics and the Arts. You can follow him on [Mastodon](https://masto.pt/web/@arturcoelho), [Instagram](https://www.instagram.com/artur.coelho/) or on [his blog](http://3dalpha.blogspot.com/).'
         ]);
 
+        DB::table('podcast_guests')->insert([
+            'podcast_id' => 6,
+            'position' => 1,
+            'image_path' => 'https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/speakers/5.JakaZeleznikar.png',
+            'name' => 'Jaka Železnikar (Slovenia)',
+            'description' => 'Jaka is author of works in the fields of poetry, visual arts and web programming. You can learn more about him and his through his [website](https://jaka.org/). You can follow him on Twitter ([@jakaorg](https://twitter.com/jakaorg))'
+        ]);
+
+        DB::table('podcast_guests')->insert([
+            'podcast_id' => 7,
+            'position' => 2,
+            'image_path' => 'https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/speakers/6.TeaHorvatic.jpg',
+            'name' => 'Tea Horvatic (Croatia)',
+            'description' => 'Tea Horvatic is an English teacher, MIEExpert 2021/22, eTwinning & Minecraft enthusiast and Erasmus+ KA1 coordinator. You can get in touch with Tea on Twitter ([@teahorvatic](https://twitter.com/teahorvatic)) and [Facebook](https://www.facebook.com/tea.t.teic).'
+        ]);
+
+        DB::table('podcast_guests')->insert([
+            'podcast_id' => 7,
+            'position' => 1,
+            'image_path' => 'https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/speakers/6.MarjanaSmolcec.jpg',
+            'name' => 'Marijana Smolcec (Croatia)',
+            'description' => 'Marijana Smolcec is an English Teacher and a Teacher Trainer. She is the moderator of the eTwinning featured group "Inclusive Education". You can learn more about her on her [website](https://about.me/msmolcec) and follow her on Twitter ([@mscro1](https://about.me/msmolcec))'
+        ]);
+
 
 
     }

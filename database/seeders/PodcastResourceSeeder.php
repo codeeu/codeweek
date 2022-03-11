@@ -177,6 +177,53 @@ class PodcastResourceSeeder extends Seeder
             'url' => 'https://www.artbreeder.com/'
         ]);
 
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 6,
+            'position' => 1,
+            'name' => 'Electronic Literature Organization',
+            'url' => 'https://eliterature.org/'
+        ]);
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 6,
+            'position' => 2,
+            'name' => 'Net Art Anthology',
+            'url' => 'https://anthology.rhizome.org/'
+        ]);
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 6,
+            'position' => 3,
+            'name' => 'Learning Bit on Media Literacy',
+            'url' => 'https://codeweek.eu/training/mining-media-literacy'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 7,
+            'position' => 1,
+            'name' => 'Learning Bit on Media Literacy, designed by Marijana and Tea',
+            'url' => 'https://codeweek.eu/training/mining-media-literacy '
+        ]);
+
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 7,
+            'position' => 2,
+            'name' => 'Safer Internet Day',
+            'url' => 'https://www.saferinternetday.org'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 7,
+            'position' => 3,
+            'name' => 'Be Internet Awesome – game about Internet safety and digital citizenship',
+            'url' => 'https://beinternetawesome.withgoogle.com/en_us/interland'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 7,
+            'position' => 4,
+            'name' => 'Minecraft Education',
+            'url' => 'https://education.minecraft.net/'
+        ]);
 
 
     }
