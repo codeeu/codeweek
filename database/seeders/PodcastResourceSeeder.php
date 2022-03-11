@@ -226,5 +226,31 @@ class PodcastResourceSeeder extends Seeder
         ]);
 
 
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 9,
+            'position' => 1,
+            'name' => 'Blogpost about Code Week anniversary',
+            'url' => 'https://blog.codeweek.eu/code-week-10th-anniversary-cake-challenge/'
+        ]);
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 9,
+            'position' => 2,
+            'name' => 'Ode to Code',
+            'url' => 'http://www.codeweek.it/odetocode/'
+        ]);
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 9,
+            'position' => 3,
+            'name' => 'Results of the 2021 edition of Code Week',
+            'url' => 'https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/'
+        ]);
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 9,
+            'position' => 4,
+            'name' => 'Blogpost about the Code Week values',
+            'url' => 'https://blog.codeweek.eu/do-you-know-and-share-our-values-then-join-us/'
+        ]);
+
+
     }
 }

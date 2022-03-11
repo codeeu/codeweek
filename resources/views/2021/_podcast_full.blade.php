@@ -42,7 +42,11 @@
         </div>
     </div>
     <div class="pl-4" style="background-color: #e5f1f6">
-        <h2>About the guest</h2>
+        @if($podcast->guests->count() == 1)
+            <h2 class="subtitle">About our guest</h2>
+        @else
+            <h2 class="subtitle">About our guests</h2>
+        @endif
         @foreach($podcast->guests as $guest)
             <div class="leading-normal">
                 <ul class="m-0">
@@ -50,10 +54,12 @@
                         <div class="-mb-8 font-bold text-xl">{{$guest->name}}</div>
                         <div class="flex items-center space-x-4 lg:space-x-6">
                             @if($guest->image_path)
-                            <img class="w-16 h-16 rounded-full lg:w-20 lg:h-20" src="{{$guest->image_path}}" alt="">
+                                <img class="w-16 h-16 rounded-full lg:w-20 lg:h-20" src="{{$guest->image_path}}" alt="">
                             @endif
                             <div class="font-medium text-l leading-6 space-y-1">
-                                <p class="text-indigo-600"><x-markdown>{{$guest->description}}</x-markdown></p>
+                                <p class="text-indigo-600">
+                                    <x-markdown>{{$guest->description}}</x-markdown>
+                                </p>
                             </div>
                         </div>
                     </li>
@@ -62,10 +68,9 @@
                 </ul>
             </div>
         @endforeach
-        <h2>Useful Resources</h2>
+        <h2 class="subtitle">Useful Resources</h2>
         <div class="leading-normal">
-            <strong>Do you want to explore more about the topic?</strong>
-            <div class="text-primary">Check out these links:</div>
+            <strong>Do you want to explore more about the topic? Check out these links:</strong>
             <ul class="checklist mt-1">
                 @foreach($podcast->resources as $resource)
                     <li class="text-black pb-2 pr-4 text-base leading-5">
@@ -74,9 +79,6 @@
                 @endforeach
             </ul>
         </div>
-
-
-
 
 
     </div>
@@ -93,12 +95,11 @@
         }
 
 
-         ul.checklist li:before {
-             content: '• ';
-             color: #ee6a2c;
-             font-weight: bold;
-         }
-
+        ul.checklist li:before {
+            content: '• ';
+            color: #ee6a2c;
+            font-weight: bold;
+        }
 
 
     </style>
