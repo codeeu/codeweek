@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedInteger('podcast_id');
             $table->smallInteger('position');
-            $table->string('name');
+            $table->text('name');
             $table->string('url');
             $table->timestamps();
         });
