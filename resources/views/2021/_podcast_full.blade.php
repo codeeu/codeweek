@@ -41,7 +41,7 @@
 
         </div>
     </div>
-    <div class="bg-gray-200 pl-4">
+    <div class="pl-4" style="background-color: #e5f1f6">
         <h2>About the guest</h2>
         @foreach($podcast->guests as $guest)
             <div class="leading-normal">
@@ -49,7 +49,9 @@
                     <li>
                         <div class="-mb-8 font-bold text-xl">{{$guest->name}}</div>
                         <div class="flex items-center space-x-4 lg:space-x-6">
+                            @if($guest->image_path)
                             <img class="w-16 h-16 rounded-full lg:w-20 lg:h-20" src="{{$guest->image_path}}" alt="">
+                            @endif
                             <div class="font-medium text-l leading-6 space-y-1">
                                 <p class="text-indigo-600"><x-markdown>{{$guest->description}}</x-markdown></p>
                             </div>
