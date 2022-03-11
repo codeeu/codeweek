@@ -95,6 +95,31 @@ class PodcastGuestSeeder extends Seeder
             'description' => 'Tommaso works for European Schoolnet as Development and Advocacy Manager. He is part of the Code Week team and has also been involved for several of its editions. You can get in touch with him on Twitter: [@tommaso_eun](https://twitter.com/tommaso_eun).'
         ]);
 
+        DB::table('podcast_guests')->insert([
+            'podcast_id' => 10,
+            'position' => 1,
+            'image_path' => 'https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/speakers/8.MariaTsapara.png',
+            'name' => 'Maria Tsapara (Greece)',
+            'description' => 'Maria is a Leading Teacher from Greece, who specialises in robotics, coding and other STEM fields. You can join her [STEM in Kindergarten Facebook Group](https://www.facebook.com/groups/STEAMinKindergarten), follow her on Twitter ([@Maria_Tsapara](https://twitter.com/Maria_Tsapara)) or on [LinkedIn](https://www.linkedin.com/in/maria-tsapara-60b710121/).'
+        ]);
+
+        DB::table('podcast_guests')->insert([
+            'podcast_id' => 10,
+            'position' => 2,
+            'image_path' => 'https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/speakers/8.James_Callus.jpg',
+            'name' => 'James Callus (Malta)',
+            'description' => 'James is the Head of Department for [Digital Literacy at the Ministry of Education in Malta](https://digitalliteracy.skola.edu.mt/) and as well, a Code Week Leading Teacher. You can get in touch on Twitter ([@JamesCallus5](https://twitter.com/JamesCallus5). Both have been involved in Code Week for several of its editions.'
+        ]);
+
+        DB::table('podcast_guests')->insert([
+            'podcast_id' => 11,
+            'position' => 1,
+            'image_path' => 'https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/speakers/9.KyriakosKoursaris.jpg',
+            'name' => 'Kyriakos Koursaris (Cyprus)',
+            'description' => 'Kyriakos is a Music teacher, AI expert and Minecraft educator from Cyprus based in Portugal. You can learn more about his profile and get in touch through his [website](https://about.me/koursaris). As well, you can connect with him on Twitter [@k_koursaris](https://twitter.com/k_koursaris).'
+        ]);
+
+
 
 
     }
