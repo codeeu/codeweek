@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\PodcastResource>
  */
-class PodcastGuestFactory extends Factory
+class PodcastResourceFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -20,10 +20,9 @@ class PodcastGuestFactory extends Factory
             'podcast_id' => function () {
                 return factory('App\Podcast')->create()->id;
             },
-            'image_path' => $this->faker->url(),
             'position' => $this->faker->numberBetween(1,1000),
             'name' => $this->faker->name,
-            'description' => $this->faker->text,
+            'url' => $this->faker->text,
         ];
     }
 }

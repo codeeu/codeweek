@@ -71,18 +71,3 @@
 
 @endsection
 
-@section('extra-css')
-    <style>
-        ul.checklist li:before {
-            content: '• ';
-            color: #ee6a2c;
-            font-weight: bold;
-        }
-
-        ul.sub-checklist li:before {
-            content: '- ';
-            color: #9d5025;
-            font-weight: bold;
-        }
-    </style>
-@endsection

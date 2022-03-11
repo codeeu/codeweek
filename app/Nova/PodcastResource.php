@@ -3,9 +3,9 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\DateTime;
-use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Markdown;
 use Laravel\Nova\Fields\Number;
@@ -13,7 +13,7 @@ use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class Podcast extends Resource {
+class PodcastResource extends Resource {
     public static $displayInNavigation = true;
 
     /**
@@ -21,7 +21,7 @@ class Podcast extends Resource {
      *
      * @var string
      */
-    public static $model = \App\Podcast::class;
+    public static $model = \App\PodcastResource::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -45,24 +45,11 @@ class Podcast extends Resource {
      */
     public function fields(Request $request) {
         return [
-            Boolean::make('Active')->sortable(),
-            ID::make(__('ID'), 'id')->sortable(),
-            Text::make('Title')->sortable(),
-            Textarea::make('Description')->hideFromIndex(),
-            Number::make('Duration')->hideFromIndex(),
-            Number::make('File Size', 'filesize')->hideFromIndex(),
-            Text::make('Filename')
-                ->sortable()
-                ->hideFromIndex(),
-            Text::make('Image')
-                ->sortable()
-                ->hideFromIndex(),
-            Text::make('Transcript')
-                ->sortable()
-                ->hideFromIndex(),
-            DateTime::make('Release Date')->sortable()->format('DD/MM/Y'),
-            HasMany::make('PodcastGuests','guests'),
-            HasMany::make('PodcastResources','resources'),
+            Text::make('Resource Name','name')
+                ->sortable(),
+            Text::make('URL','url')->hideFromIndex(),
+            Number::make('position', 'position')->hideFromIndex(),
+            BelongsTo::make('Podcast')
 
         ];
     }
