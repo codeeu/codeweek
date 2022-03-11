@@ -4,7 +4,7 @@
 
             <a href="{{$podcast->filename}}">
                 <img
-                     src="https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/art/{{$podcast->image}}">
+                        src="https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/art/{{$podcast->image}}">
 
             </a>
         </div>
@@ -41,14 +41,41 @@
 
         </div>
     </div>
-    <div class="bg-gray-200 p-4">
+    <div class="bg-gray-200 pl-4">
         <h2>About the guest</h2>
         @foreach($podcast->guests as $guest)
-            <div class="text-black pb-2 pr-4 text-base leading-5 font-bold">{{$guest->name}}</div>
-            <div class="text-black pb-2 pr-4 text-base leading-5"><x-markdown>{{$guest->description}}</x-markdown></div>
+            <div class="leading-normal">
+                <ul class="m-0">
+                    <li>
+                        <div class="-mb-8 font-bold text-xl">{{$guest->name}}</div>
+                        <div class="flex items-center space-x-4 lg:space-x-6">
+                            <img class="w-16 h-16 rounded-full lg:w-20 lg:h-20" src="{{$guest->image_path}}" alt="">
+                            <div class="font-medium text-l leading-6 space-y-1">
+                                <p class="text-indigo-600"><x-markdown>{{$guest->description}}</x-markdown></p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- More people... -->
+                </ul>
+            </div>
         @endforeach
-        <h2>Resources</h2>
-            <div class="text-black pb-2 pr-4 text-base leading-5"><x-markdown>{{$podcast->resources}}</x-markdown></div>
+        <h2>Useful Resources</h2>
+        <div class="leading-normal">
+            <strong>Do you want to explore more about the topic?</strong>
+            <div class="text-primary">Check out these links:</div>
+            <ul class="checklist mt-1">
+                @foreach($podcast->resources as $resource)
+                    <li class="text-black pb-2 pr-4 text-base leading-5">
+                        <a class="font-bold" href="{{$resource->url}}">{{$resource->name}}</a>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
+
+
+
+
 
     </div>
 
@@ -58,10 +85,20 @@
     <style>
         audio {
             width: 600px;
-            box-shadow: 5px 5px 20px rgba(0,0, 0, 0.4);
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
             border-radius: 90px;
             transform: scale(1.05);
         }
+
+
+         ul.checklist li:before {
+             content: '• ';
+             color: #ee6a2c;
+             font-weight: bold;
+         }
+
+
+
     </style>
 @endsection
 

@@ -1,18 +1,29 @@
 <?php
 
-namespace Database\Factories; /* @var $factory \Illuminate\Database\Eloquent\Factory */
+namespace Database\Factories;
 
-use App\PodcastGuest;
-use Faker\Generator as Faker;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
-$factory->define(PodcastGuest::class, function (Faker $faker) {
-    return [
-        'podcast_id' => function () {
-            return factory('App\Podcast')->create()->id;
-        },
-        'image_path' => $faker->url(),
-        'position' => $faker->numberBetween(1,1000),
-        'name' => $faker->name,
-        'description' => $faker->text,
-    ];
-});
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\PodcastResource>
+ */
+class PodcastGuestFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition()
+    {
+        return [
+            'podcast_id' => function () {
+                return factory('App\Podcast')->create()->id;
+            },
+            'image_path' => $this->faker->url(),
+            'position' => $this->faker->numberBetween(1,1000),
+            'name' => $this->faker->name,
+            'description' => $this->faker->text,
+        ];
+    }
+}

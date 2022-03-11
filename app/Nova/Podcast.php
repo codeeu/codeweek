@@ -61,8 +61,8 @@ class Podcast extends Resource {
                 ->sortable()
                 ->hideFromIndex(),
             DateTime::make('Release Date')->sortable()->format('DD/MM/Y'),
-            Markdown::make('Resources', 'resources')->hideFromIndex(),
             HasMany::make('PodcastGuests','guests'),
+            HasMany::make('PodcastResources','resources'),
 
         ];
     }
