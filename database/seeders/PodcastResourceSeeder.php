@@ -251,6 +251,56 @@ class PodcastResourceSeeder extends Seeder
             'url' => 'https://blog.codeweek.eu/do-you-know-and-share-our-values-then-join-us/'
         ]);
 
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 10,
+            'position' => 1,
+            'name' => 'Computer science Fundamentals Course',
+            'url' => 'https://code.org/educate/csf'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 10,
+            'position' => 2,
+            'name' => 'More about local Code Week training courses by Mari and her colleagues on our blog',
+            'url' => 'https://blog.codeweek.eu/eu-code-week-code-it-local-in-perama/'
+        ]);
+
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 11,
+            'position' => 1,
+            'name' => 'Code Week Challenge on Music composition',
+            'url' => 'https://codeweek.eu/2021/challenges/compose-song'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 11,
+            'position' => 2,
+            'name' => 'Minecraft education',
+            'url' => 'https://education.minecraft.net/es-es/homepage'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 11,
+            'position' => 3,
+            'name' => 'Sonic Pi',
+            'url' => 'https://sonic-pi.net/'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 11,
+            'position' => 4,
+            'name' => 'Micro:bit',
+            'url' => 'https://microbit.org/'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 11,
+            'position' => 5,
+            'name' => 'Sphero robot',
+            'url' => 'https://sphero.com/'
+        ]);
+
 
     }
 }
