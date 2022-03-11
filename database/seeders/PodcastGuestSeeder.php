@@ -79,6 +79,22 @@ class PodcastGuestSeeder extends Seeder
             'description' => 'Marijana Smolcec is an English Teacher and a Teacher Trainer. She is the moderator of the eTwinning featured group "Inclusive Education". You can learn more about her on her [website](https://about.me/msmolcec) and follow her on Twitter ([@mscro1](https://about.me/msmolcec))'
         ]);
 
+        DB::table('podcast_guests')->insert([
+            'podcast_id' => 9,
+            'position' => 1,
+            'image_path' => 'https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/speakers/annika.jpeg',
+            'name' => 'Annika Ostergren Pofantis (Sweden)',
+            'description' => 'Annika works for the European Commission and specialises in Digital Economy and Skills. She is the coordinator of Code Week and has been involved in the initiative for many years. You can get in touch with her on Twitter: [@AnnikaOP](https://twitter.com/AnnikaOP).'
+        ]);
+
+        DB::table('podcast_guests')->insert([
+            'podcast_id' => 9,
+            'position' => 2,
+            'image_path' => 'https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/speakers/tommaso.png',
+            'name' => ' Tommaso Dalla Vecchia (Italy)',
+            'description' => 'Tommaso works for European Schoolnet as Development and Advocacy Manager. He is part of the Code Week team and has also been involved for several of its editions. You can get in touch with him on Twitter: [@tommaso_eun](https://twitter.com/tommaso_eun).'
+        ]);
+
 
 
     }
