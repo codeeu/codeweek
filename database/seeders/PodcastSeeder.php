@@ -13,6 +13,9 @@ class PodcastSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $this->call([
+            PodcastGuestSeeder::class,
+            PodcastResourceSeeder::class
+        ]);
     }
 }
