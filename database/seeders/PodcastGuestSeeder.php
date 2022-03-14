@@ -173,6 +173,40 @@ class PodcastGuestSeeder extends Seeder
             'description' => 'Ken Akiha works as Curriculum Development Manager for Code.org, an US-based organisation which promotes the teaching of coding at a young age. You can follow him on [Twitter](https://twitter.com/AkihaKen) and learn more about Code.org on their [website](https://code.org/ ) and Twitter ([@codeorg](https://twitter.com/codeorg)).'
         ]);
 
+        DB::table('podcast_guests')->insert([
+            'podcast_id' => 15,
+            'position' => 1,
+            'image_path' => 'https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/speakers/17.Niamh+Brady.jpg',
+            'name' => 'Niamh Brady (Ireland)',
+            'description' => 'Niamh Brady is a special class teacher in a primary school in Ireland. You can follow her on [Instagram](https://www.instagram.com/msniamhbrady/) and you can reach out to her on [LinkedIn](https://www.linkedin.com/in/niamh-morrin-brady)'
+        ]);
+
+        DB::table('podcast_guests')->insert([
+            'podcast_id' => 21,
+            'position' => 1,
+            'image_path' => 'https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/speakers/18.MarcoNeves.png',
+            'name' => 'Marco Neves (Portugal)',
+            'description' => 'Marco Neves is an advisor on AI, a computer science teacher and CEO of the Internet Ideas Company. You can get in touch on [Twitter](https://twitter.com/mbrasneves).'
+        ]);
+
+        DB::table('podcast_guests')->insert([
+            'podcast_id' => 13,
+            'position' => 1,
+            'image_path' => 'https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/speakers/19.MarjanaPrifti+Ske%CC%88nduli.JPG',
+            'name' => 'Marjana Prifti Skenduli (Albania)',
+            'description' => 'Marjana Prifti Skenduli is an assistant professor in Computer Science at the University of New York, Tirana and a Code Week Ambassador. You can follow her on [Twitter](https://twitter.com/mptirana) and find more information about her on [LinkedIn](https://www.linkedin.com/in/marjanapriftiskenduli) and [Google Scholar](https://scholar.google.com/citations?user=Keear6gAAAAJ&hl=en&oi=ao)'
+        ]);
+
+        DB::table('podcast_guests')->insert([
+            'podcast_id' => 14,
+            'position' => 1,
+            'image_path' => 'https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/speakers/20.Balatsou.jpg',
+            'name' => 'Evangelia Balatsou (Greece)',
+            'description' => 'Evangelia Balatsou is a Greek scientist and founder of Greek Girls Code. You can get in touch on [Twitter](https://twitter.com/e_balatsou), [LinkedIn](https://uk.linkedin.com/in/evangeliabalatsou) (Evangelia Balatsou, PhD) or her [website](https://ebalatsou.com). You can learn more about Greek Girls Code on [Twitter](https://twitter.com/GreekGirlsCode), [Instagram](https://www.instagram.com/greekgirlscode/), [LinkedIn](https://www.linkedin.com/company/greekgirlscode) or their [website](https://greekgirlscode.com/). '
+        ]);
+
+
+
 
 
 
