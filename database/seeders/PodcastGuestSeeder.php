@@ -119,6 +119,22 @@ class PodcastGuestSeeder extends Seeder
             'description' => 'Kyriakos is a Music teacher, AI expert and Minecraft educator from Cyprus based in Portugal. You can learn more about his profile and get in touch through his [website](https://about.me/koursaris). As well, you can connect with him on Twitter [@k_koursaris](https://twitter.com/k_koursaris).'
         ]);
 
+        DB::table('podcast_guests')->insert([
+            'podcast_id' => 12,
+            'position' => 1,
+            'image_path' => 'https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/speakers/10.IsabelBlanco.jpg',
+            'name' => 'Isabel Blanco (Spain)',
+            'description' => 'Isabel is teacher and school principal, as well as an active Code Week Leading Teacher specialised in robotics. You can get in touch with her on [twitter](https://twitter.com/isabelbp), [Facebook](https://www.facebook.com/isabel.blancopumar/) or [LinkedIn](https://www.linkedin.com/in/isabel-blanco-pumar-4989b96a/).'
+        ]);
+
+        DB::table('podcast_guests')->insert([
+            'podcast_id' => 8,
+            'position' => 1,
+            'name' => 'Horst Jens (Austria)',
+            'description' => 'Horst Jens is an Austrian programming teacher, you visit [his website](https://spielend-programmieren.at) and get in touch on [Twitter](https://twitter.com/horstjens).'
+        ]);
+
+
 
 
 
