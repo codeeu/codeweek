@@ -134,6 +134,51 @@ class PodcastGuestSeeder extends Seeder
             'description' => 'Horst Jens is an Austrian programming teacher, you visit [his website](https://spielend-programmieren.at) and get in touch on [Twitter](https://twitter.com/horstjens).'
         ]);
 
+        DB::table('podcast_guests')->insert([
+            'podcast_id' => 17,
+            'position' => 1,
+            'name' => 'Janne Elvelid and Alja Isaković (Sweden and Slovenia)',
+            'description' => 'Janne Elvelid is the Head of Public Policy for Sweden and Finland at Meta, and Alja Isaković is the co-founder of Artesia.si. You can get in touch with them on Twitter: [@janneelvelid](https://twitter.com/janneelvelid) and [@iAlja](https://twitter.com/iAlja).'
+        ]);
+
+        DB::table('podcast_guests')->insert([
+            'podcast_id' => 18,
+            'position' => 1,
+            'image_path' => 'https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/speakers/13.MilesBerry.jpeg',
+            'name' => 'Miles Berry (UK)',
+            'description' => 'Miles Berry is a professor at the University of Roehampton in England, you can read some of his previous posts in [his blog](http://milesberry.net) and follow him on [Twitter](https://twitter.com/mberry)'
+        ]);
+
+        DB::table('podcast_guests')->insert([
+            'podcast_id' => 19,
+            'position' => 1,
+            'image_path' => 'https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/speakers/14.JacyEdelman.jpg',
+            'name' => 'Jacy Edelman (US)',
+            'description' => 'Jacy is a passionate coder who works for the Scratch Foundation as Experience and Engagement Manager. You can follow her on [Twitter](https://twitter.com/pixelmoth), and get in touch with the Scratch Team at [@Scratch](https://twitter.com/Scratch).'
+        ]);
+
+        DB::table('podcast_guests')->insert([
+            'podcast_id' => 20,
+            'position' => 1,
+            'image_path' => 'https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/speakers/15.AvantiSharma.png',
+            'name' => 'Avanti Sharma (Luxembourg)',
+            'description' => 'Avanti is a pre-teen You can find more about her on her [website](https://workshop4me.org/avanti) and you can reach out to her via [Instagram](https://www.instagram.com/avanti_workshop4me/?hl=en) and [LinkedIn](https://www.linkedin.com/company/workshop4me/). Follow her on [Twitter](https://twitter.com/workshop4me).'
+        ]);
+
+        DB::table('podcast_guests')->insert([
+            'podcast_id' => 16,
+            'position' => 1,
+            'image_path' => 'https://codeweek-podcasts.s3.eu-west-1.amazonaws.com/speakers/16.Ken+Akiha.jpeg',
+            'name' => 'Ken Akiha (US)',
+            'description' => 'Ken Akiha works as Curriculum Development Manager for Code.org, an US-based organisation which promotes the teaching of coding at a young age. You can follow him on [Twitter](https://twitter.com/AkihaKen) and learn more about Code.org on their [website](https://code.org/ ) and Twitter ([@codeorg](https://twitter.com/codeorg)).'
+        ]);
+
+
+
+
+
+
+
 
 
 
