@@ -301,6 +301,221 @@ class PodcastResourceSeeder extends Seeder
             'url' => 'https://sphero.com/'
         ]);
 
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 12,
+            'position' => 1,
+            'name' => 'Learning Bit on Coding for All Subjects, which includes a lesson plan on Tinkering and Making by Isabel Blanco',
+            'url' => 'https://codeweek.eu/training/coding-for-all-subjects'
+        ]);
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 12,
+            'position' => 2,
+            'name' => 'MBots by Makeblock',
+            'url' => 'https://www.makeblock.com/steam-kits/mbot'
+        ]);
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 12,
+            'position' => 3,
+            'name' => 'Escornabots',
+            'url' => 'http://escornabot.com/en/'
+        ]);
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 12,
+            'position' => 4,
+            'name' => 'Ozobots',
+            'url' => 'https://ozobot.com/'
+        ]);
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 12,
+            'position' => 5,
+            'name' => 'MTiny by Makeblock',
+            'url' => 'https://www.makeblock.com/mtiny'
+        ]);
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 12,
+            'position' => 6,
+            'name' => 'Makerspaces around Europe',
+            'url' => 'https://fcl.eun.org/fcl-network-members '
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 8,
+            'position' => 1,
+            'name' => 'Pocket Code App - Android',
+            'url' => 'https://play.google.com/store/apps/details?id=org.catrobat.catroid&hl=en&gl=US'
+        ]);
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 8,
+            'position' => 2,
+            'name' => 'Pocket Code App - iOS',
+            'url' => 'https://apps.apple.com/us/app/pocket-code/id1117935892'
+        ]);
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 8,
+            'position' => 3,
+            'name' => 'Python',
+            'url' => 'https://www.python.org/'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 8,
+            'position' => 3,
+            'name' => 'GitHub',
+            'url' => 'https://github.com/'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 17,
+            'position' => 1,
+            'name' => 'About Code Week',
+            'url' => 'https://codeweek.eu/about'
+        ]);
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 17,
+            'position' => 2,
+            'name' => 'Applied Digital Skills by Google',
+            'url' => 'https://applieddigitalskills.withgoogle.com/s/en/home'
+        ]);
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 17,
+            'position' => 3,
+            'name' => 'AI Basics for Schools Code Week MOOC',
+            'url' => 'https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+AI+2021/about'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 18,
+            'position' => 1,
+            'name' => 'Learning Bit on Computational Thinking by Miles Berry',
+            'url' => 'https://codeweek.eu/training/computational-thinking-and-problem-solving'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 18,
+            'position' => 2,
+            'name' => 'CS Unplugged',
+            'url' => 'https://www.csunplugged.org/en/'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 18,
+            'position' => 3,
+            'name' => 'More information on turtle graphic',
+            'url' => 'https://docs.python.org/3/library/turtle.html'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 18,
+            'position' => 4,
+            'name' => 'Scratch',
+            'url' => 'https://scratch.mit.edu/'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 18,
+            'position' => 5,
+            'name' => 'GitHub',
+            'url' => 'https://github.com/'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 19,
+            'position' => 1,
+            'name' => 'Scratch website',
+            'url' => 'https://scratch.mit.edu/'
+        ]);
+
+     DB::table('podcast_resources')->insert([
+            'podcast_id' => 19,
+            'position' => 2,
+            'name' => 'Learning Bit on Scratch by Margo Tinawi',
+            'url' => 'https://codeweek.eu/training/visual-programming-introduction-to-scratch'
+        ]);
+
+     DB::table('podcast_resources')->insert([
+            'podcast_id' => 19,
+            'position' => 3,
+            'name' => 'Learning Bit on Scratch by Jesus Moreno Leon',
+            'url' => 'https://codeweek.eu/training/creating-educational-games-with-scratch'
+        ]);
+
+     DB::table('podcast_resources')->insert([
+            'podcast_id' => 19,
+            'position' => 4,
+            'name' => 'Code Week Challenge on Scratch Jr by Stamatis Papadakis',
+            'url' => 'https://codeweek.eu/2021/challenges/computational-thinking-and-computational-fluency'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 20,
+            'position' => 1,
+            'name' => 'Learning Bit on the Sustainable Development Goals',
+            'url' => 'https://codeweek.eu/training/coding-for-sustainable-development-goals'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 20,
+            'position' => 2,
+            'name' => 'Scratch',
+            'url' => 'https://scratch.mit.edu/'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 20,
+            'position' => 3,
+            'name' => 'MIT App Inventor',
+            'url' => 'https://appinventor.mit.edu/'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 20,
+            'position' => 4,
+            'name' => 'Sustainable Development Goals',
+            'url' => 'https://sdgs.un.org/goals'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 20,
+            'position' => 5,
+            'name' => 'Code Week community',
+            'url' => 'https://codeweek.eu/community'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 16,
+            'position' => 1,
+            'name' => 'Code.org',
+            'url' => 'https://code.org/'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 16,
+            'position' => 2,
+            'name' => 'CS Fundamentals Curriculum',
+            'url' => 'https://code.org/educate/curriculum/cs-fundamentals-international'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 16,
+            'position' => 3,
+            'name' => 'CS Discoveries Curriculum',
+            'url' => 'https://code.org/educate/csd'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 16,
+            'position' => 4,
+            'name' => 'Code Week Challenges, which include three challenges by Code.org',
+            'url' => 'https://codeweek.eu/2021/challenges'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 16,
+            'position' => 5,
+            'name' => 'Code.org YouTube channel',
+            'url' => 'https://www.youtube.com/user/CodeOrg'
+        ]);
+
 
     }
 }
