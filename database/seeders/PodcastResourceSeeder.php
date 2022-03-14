@@ -301,6 +301,69 @@ class PodcastResourceSeeder extends Seeder
             'url' => 'https://sphero.com/'
         ]);
 
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 12,
+            'position' => 1,
+            'name' => 'Learning Bit on Coding for All Subjects, which includes a lesson plan on Tinkering and Making by Isabel Blanco',
+            'url' => 'https://codeweek.eu/training/coding-for-all-subjects'
+        ]);
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 12,
+            'position' => 2,
+            'name' => 'MBots by Makeblock',
+            'url' => 'https://www.makeblock.com/steam-kits/mbot'
+        ]);
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 12,
+            'position' => 3,
+            'name' => 'Escornabots',
+            'url' => 'http://escornabot.com/en/'
+        ]);
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 12,
+            'position' => 4,
+            'name' => 'Ozobots',
+            'url' => 'https://ozobot.com/'
+        ]);
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 12,
+            'position' => 5,
+            'name' => 'MTiny by Makeblock',
+            'url' => 'https://www.makeblock.com/mtiny'
+        ]);
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 12,
+            'position' => 6,
+            'name' => 'Makerspaces around Europe',
+            'url' => 'https://fcl.eun.org/fcl-network-members '
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 8,
+            'position' => 1,
+            'name' => 'Pocket Code App - Android',
+            'url' => 'https://play.google.com/store/apps/details?id=org.catrobat.catroid&hl=en&gl=US'
+        ]);
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 8,
+            'position' => 2,
+            'name' => 'Pocket Code App - iOS',
+            'url' => 'https://apps.apple.com/us/app/pocket-code/id1117935892'
+        ]);
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 8,
+            'position' => 3,
+            'name' => 'Python',
+            'url' => 'https://www.python.org/'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 8,
+            'position' => 3,
+            'name' => 'GitHub',
+            'url' => 'https://github.com/'
+        ]);
+
 
     }
 }
