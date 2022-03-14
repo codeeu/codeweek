@@ -516,6 +516,125 @@ class PodcastResourceSeeder extends Seeder
             'url' => 'https://www.youtube.com/user/CodeOrg'
         ]);
 
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 15,
+            'position' => 1,
+            'name' => 'Learning Bit on Coding for Inclusion',
+            'url' => 'https://codeweek.eu/training/coding-for-inclusion'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 15,
+            'position' => 2,
+            'name' => 'Bridge21 Model',
+            'url' => 'https://bridge21.ie/about-us/our-model/'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 15,
+            'position' => 3,
+            'name' => 'CS Unplugged',
+            'url' => 'https://www.csunplugged.org/en/ '
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 15,
+            'position' => 4,
+            'name' => 'Blockly',
+            'url' => 'https://blockly.games/'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 15,
+            'position' => 5,
+            'name' => 'Micro:Bit',
+            'url' => 'https://microbit.org/'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 15,
+            'position' => 6,
+            'name' => 'Microsoft DreamSpace',
+            'url' => 'https://www.microsoft.com/dreamspace/Home'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 15,
+            'position' => 7,
+            'name' => 'Hour of Code',
+            'url' => 'https://hourofcode.com/us'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 21,
+            'position' => 1,
+            'name' => 'Learning Bit on Artificial Intelligence by Marco Neves',
+            'url' => 'https://codeweek.eu/training/learning-in-the-age-of-intelligent-machines'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 21,
+            'position' => 2,
+            'name' => 'MIT Ethics and AI Curriculum',
+            'url' => 'https://www.media.mit.edu/projects/ai-ethics-for-middle-school/overview/'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 21,
+            'position' => 3,
+            'name' => 'Machine Learning for Kids',
+            'url' => 'https://machinelearningforkids.co.uk/'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 21,
+            'position' => 4,
+            'name' => 'MIT App Inventor',
+            'url' => 'https://appinventor.mit.edu/'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 21,
+            'position' => 5,
+            'name' => 'Verse by Verse',
+            'url' => 'https://sites.research.google/versebyverse/'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 21,
+            'position' => 6,
+            'name' => 'Learning Bit on Media Literacy',
+            'url' => 'https://codeweek.eu/training/mining-media-literacy'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 13,
+            'position' => 1,
+            'name' => 'Learning Bit on Artificial Intelligence by Marjana',
+            'url' => 'https://codeweek.eu/training/introduction-to-artificial-intelligence-in-the-classroom'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 13,
+            'position' => 2,
+            'name' => 'Gender shades, video by MIT Media Lab on algorithmic bias',
+            'url' => 'https://www.youtube.com/watch?v=TWWsW1w-BVo'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 13,
+            'position' => 3,
+            'name' => 'Elements of AI training course online',
+            'url' => 'https://www.elementsofai.com/'
+        ]);
+
+        DB::table('podcast_resources')->insert([
+            'podcast_id' => 14,
+            'position' => 1,
+            'name' => 'Code Week Challenges',
+            'url' => 'https://codeweek.eu/2021/challenges'
+        ]);
+
 
     }
 }
