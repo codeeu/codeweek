@@ -640,6 +640,7 @@ Route::get(
 )->name('leading-teachers-document');
 
 Route::get('podcasts', 'PodcastsController@index')->name('podcasts');
+Route::get('podcast/{podcast}', 'PodcastsController@show')->name('podcast');
 
 
 Auth::routes();

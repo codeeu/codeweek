@@ -15,6 +15,15 @@ class Podcast extends Model implements Feedable {
         'release_date' => 'datetime'
     ];
 
+    public function guests()
+    {
+        return $this->hasMany('App\PodcastGuest')->orderBy('position');
+    }
+    public function resources()
+    {
+        return $this->hasMany('App\PodcastResource')->orderBy('position');
+    }
+
     public function scopeActive($query) {
         return $query
             ->where('active', true)
