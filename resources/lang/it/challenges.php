@@ -23,7 +23,7 @@ return [
     ],
     'main' => [
         'Durante la settimana europea della programmazione, dal 9 al 24 ottobre 2021, ti invitiamo a partecipare a una o più sfide appositamente concepite.',
-        'Cosa sono le sfide della settimana europea della programmazione 2021?',
+        'Cosa sono le sfide della settimana europea della programmazione ?',
         'Le sfide della settimana europea della programmazione sono attività che si possono svolgere da soli, in classe, con colleghi o amici. Vorresti partecipare alla settimana della programmazione, ma non hai idea di cosa organizzare? Sei nel posto giusto! Insieme ai partner della settimana della programmazione abbiamo progettato una serie di sfide facili da organizzare, con esempi concreti di come utilizzarle in una classe o in un gruppo. Ci sono anche delle linee guida su come completare le sfide, personalizzabili in modo che si adattino alle esigenze, agli interessi e all’età dei tuoi partecipanti. Puoi usare gli strumenti e le tecnologie che preferisci, ma noi raccomandiamo le risorse open-source.',
         'Scegli una o più sfide, adattale al tuo gruppo o alla tua classe e condividi i risultati su Instagram per incoraggiare altri colleghi e amici a divertirsi insieme durante la settimana della programmazione!',
         'Clicca sulla sfida per maggiori informazioni:',

@@ -26,7 +26,7 @@ return [
     ],
     'main' => [
         'Tijdens de EU-programmeerweek, van 9 tot 24 oktober 2021, nodigen we je uit om een of meer van de EU-programmeerweek-uitdagingen uit te voeren.',
-        'Wat zijn uitdagingen van de EU-programmeerweek 2021?',
+        'Wat zijn uitdagingen van de EU-programmeerweek ?',
         'EU-programmeerweek-uitdagingen zijn activiteiten die je alleen kunt doen, in de klas, met collega’s of vrienden. Wil je graag deelnemen aan de programmeerweek, maar weet je niet wat je zou kunnen organiseren? Zoek niet verder! Samen met partners van de programmeerweek hebben we een aantal eenvoudig te maken uitdagingen bedacht, met concrete voorbeelden van de manier waarop deze in de klas of in een groep kunnen worden gebruikt. Er wordt ook uitgelegd hoe de uitdagingen kunnen worden uitgevoerd, maar deze uitleg kun je aanpassen aan de behoefte, interesse en leeftijd van je deelnemers. Je kunt zelf kiezen welke tools en technologieën je gebruikt, maar we adviseren opensourcemateriaal.',
         'Kies één of meerdere uitdagingen, pas deze aan voor je groep of klas en deel de resultaten op Instagram om nog meer collega’s en vrienden te stimuleren aan de programmeerweek deel te nemen!',
         'Klik op de uitdaging voor meer informatie:',

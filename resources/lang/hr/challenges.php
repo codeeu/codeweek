@@ -23,7 +23,7 @@ return [
     ],
     'main' => [
         'Pozivamo vas da tijekom Europskog tjedna programiranja, od 9. do 24. listopada 2021., sudjelujete u barem jednom izazovu Europskog tjedna programiranja.',
-        'Što su to izazovi Europskog tjedna programiranja 2021.?',
+        'Što su to izazovi Europskog tjedna programiranja .?',
         'Izazovi Europskog tjedna programiranja aktivnosti su koje možete provoditi sami, u razredu, s kolegama ili prijateljima. Željeli biste sudjelovati u Tjednu programiranja, ali ne znate što biste mogli organizirati? Ne tražite dalje! Uz partnere Tjedna programiranja osmislili smo izazove koji se jednostavno izvode, uključuju konkretne primjere upotrebe u razredu ili skupini. Na vama je samo da odaberete izazov! Donosimo i upute o tome kako dovršiti izazove, no možete ih prilagoditi kako bi odgovarali potrebama, interesima i godinama vaših sudionika. Možete upotrijebiti sve alate i tehnologije koje želite, no preporučujemo resurse otvorenog izvora.',
         'Odaberite jedan izazov ili nekoliko njih. Prilagodite ih svojoj skupini ili razredu, a rezultate podijelite na Instagramu da biste potaknuli još kolega i prijatelja da sudjeluju u zabavi koju nudi Tjedan programiranja!',
         'Kliknite na izazov i saznajte više o njemu:',

@@ -23,7 +23,7 @@ return [
     ],
     'main' => [
         'Matul il-Ġimgħa tal-UE tal-Ikkowdjar, mid-9 sal-24 ta’ Ottubru 2021, nistidnuk tagħmel sfida waħda jew aktar tal-Ġimgħa tal-UE tal-Ikkowdjar.',
-        'X’inhuma l-Isfidi tal-Ġimgħa tal-UE tal-Ikkowdjar għall-2021?',
+        'X’inhuma l-Isfidi tal-Ġimgħa tal-UE tal-Ikkowdjar ?',
         "L-Isfidi tal-Ġimgħa tal-UE tal-Ikkowdjar huma attivitajiet li tista’ tagħmel waħdek, fil-klassi, ma’ kollegi jew ma’ ħbieb. Tixtieq tipparteċipa fil-Ġimgħa tal-Ikkowdjar iżda m'għandekx l-iċken idea ta’ x’tista' torganizza? Tfittex imkien ieħor! Flimkien mas-sħab tal-Ġimgħa tal-Ikkowdjar fassalna għażla ta’ sfidi faċli biex jitwettqu, li jinkludu eżempji konkreti ta’ kif jistgħu jintużaw fi klassi jew fi grupp. Hemm ukoll linji gwida dwar kif għandhom jitlestew l-isfidi, iżda tista’ tadattahom sabiex ikunu adattati għall-ħtiġijiet, l-interessi u l-età tal-parteċipanti tiegħek. Tista’ tuża kwalunkwe għodda u teknoloġija li tixtieq, iżda nirrakkomandaw riżorsi b’sors miftuħ.",
         'Agħżel sfida waħda jew diversi sfidi, adattaha għall-grupp tiegħek jew għall-klassi tiegħek, u aqsam ir-riżultati mal-oħrajn fuq Instagram biex tħeġġeġ saħansitra aktar kollegi u ħbieb biex jinvolvu ruħhom fid-divertiment li ġġib magħha l-Ġimgħa tal-Ikkowdjar!',
         'Agħfas fuq l-isfida biex issir taf aktar dwarha:',

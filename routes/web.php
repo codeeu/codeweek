@@ -548,8 +548,10 @@ Route::view('/teach-day', 'teach-day')->name('teach-day');
 
 Route::get('/community', 'CommunityController@index')->name('community');
 
+Route::view('/challenges', '2021.challenges')->name('challenges');
+
 Route::prefix('2021')->group(function () {
-    Route::view('/challenges', '2021.challenges')->name('challenges');
+    Route::view('/challenges', '2021.challenges');
     Route::view('/challenges/dance', '2021.challenges.dance')->name(
         'challenges.dance'
     );

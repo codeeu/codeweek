@@ -74,132 +74,132 @@
 
                 </div>
 
-                <section>
-                    <div class="mt-8 orange text-3xl">
-                        @lang('challenges.main.5')
-                    </div>
-                    <div class="leading-6 text-base text-left mt-2">
-                        @lang('challenges.main.6')
-                    </div>
-                </section>
+{{--                <section>--}}
+{{--                    <div class="mt-8 orange text-3xl">--}}
+{{--                        @lang('challenges.main.5')--}}
+{{--                    </div>--}}
+{{--                    <div class="leading-6 text-base text-left mt-2">--}}
+{{--                        @lang('challenges.main.6')--}}
+{{--                    </div>--}}
+{{--                </section>--}}
 
-                <section>
-                    <div class="mt-6 orange text-3xl">
-                        @lang('challenges.main.7')
-                    </div>
-                    <div class="leading-6 text-base text-left">
-                        <ul class="list-decimal ml-6 mt-2">
-                            <li>
-                                @lang('challenges.main.8')
+{{--                <section>--}}
+{{--                    <div class="mt-6 orange text-3xl">--}}
+{{--                        @lang('challenges.main.7')--}}
+{{--                    </div>--}}
+{{--                    <div class="leading-6 text-base text-left">--}}
+{{--                        <ul class="list-decimal ml-6 mt-2">--}}
+{{--                            <li>--}}
+{{--                                @lang('challenges.main.8')--}}
 
-                            </li>
-                            <li>
-                                @lang('challenges.main.9')
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                @lang('challenges.main.9')--}}
 
-                            </li>
-                        </ul>
-
-
-                    </div>
-
-                    <div class="mt-6 orange text-3xl">
-                        @lang('challenges.main.10')
-
-                    </div>
-                    <div class="leading-6 text-base text-left">
-
-                        <div class="leading-6 text-base text-left mt-2">
-                            @lang('challenges.main.11')
-                            <br>
-                            @lang('challenges.main.12')
-                            <br/>
-                            @lang('challenges.main.13')
-                            <br/>
-
-                        </div>
-
-                        <div class="leading-6 text-base text-left mt-2">
-                            <strong> @lang('challenges.share.0')</strong>
-
-                            <ul class="leading-7 ml-2 mt-0 checklist mt-2">
-                                <li>@lang('challenges.share.1')</li>
-                                <li>@lang('challenges.share.2')</li>
-                                <li>@lang('challenges.share.3')</li>
-                                <ul class="leading-7 ml-6 mt-0 sub-checklist">
-                                    <ol>
-                                        <li>@lang('challenges.share.4')</li>
-                                        <li>@lang('challenges.share.5')</li>
-                                        <li>@lang('challenges.share.6')</li>
-                                        <li>@lang('challenges.share.7')</li>
-                                        <li>@lang('challenges.share.8')</li>
-                                    </ol>
-                                </ul>
-                            </ul>
-                        </div>
-
-                        <div class="leading-6 text-base text-left mt-2">
-
-                            <strong>@lang('challenges.share.9')</strong><br/>
-                            <div class="mt-2">
-                                @lang('challenges.share.10') <a href="https://www.facebook.com/codeEU">@lang('challenges.share.11')</a> @lang('challenges.share.12')  <br/>
-
-                                @lang('challenges.share.13')
-                                <ul class="leading-7 ml-2 mt-0 checklist">
-                                    <li>
-                                        @lang('challenges.share.14')
-                                    </li>
-                                </ul>
+{{--                            </li>--}}
+{{--                        </ul>--}}
 
 
-                            </div>
-                        </div>
+{{--                    </div>--}}
+
+{{--                    <div class="mt-6 orange text-3xl">--}}
+{{--                        @lang('challenges.main.10')--}}
+
+{{--                    </div>--}}
+{{--                    <div class="leading-6 text-base text-left">--}}
+
+{{--                        <div class="leading-6 text-base text-left mt-2">--}}
+{{--                            @lang('challenges.main.11')--}}
+{{--                            <br>--}}
+{{--                            @lang('challenges.main.12')--}}
+{{--                            <br/>--}}
+{{--                            @lang('challenges.main.13')--}}
+{{--                            <br/>--}}
+
+{{--                        </div>--}}
+
+{{--                        <div class="leading-6 text-base text-left mt-2">--}}
+{{--                            <strong> @lang('challenges.share.0')</strong>--}}
+
+{{--                            <ul class="leading-7 ml-2 mt-0 checklist mt-2">--}}
+{{--                                <li>@lang('challenges.share.1')</li>--}}
+{{--                                <li>@lang('challenges.share.2')</li>--}}
+{{--                                <li>@lang('challenges.share.3')</li>--}}
+{{--                                <ul class="leading-7 ml-6 mt-0 sub-checklist">--}}
+{{--                                    <ol>--}}
+{{--                                        <li>@lang('challenges.share.4')</li>--}}
+{{--                                        <li>@lang('challenges.share.5')</li>--}}
+{{--                                        <li>@lang('challenges.share.6')</li>--}}
+{{--                                        <li>@lang('challenges.share.7')</li>--}}
+{{--                                        <li>@lang('challenges.share.8')</li>--}}
+{{--                                    </ol>--}}
+{{--                                </ul>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+
+{{--                        <div class="leading-6 text-base text-left mt-2">--}}
+
+{{--                            <strong>@lang('challenges.share.9')</strong><br/>--}}
+{{--                            <div class="mt-2">--}}
+{{--                                @lang('challenges.share.10') <a href="https://www.facebook.com/codeEU">@lang('challenges.share.11')</a> @lang('challenges.share.12')  <br/>--}}
+
+{{--                                @lang('challenges.share.13')--}}
+{{--                                <ul class="leading-7 ml-2 mt-0 checklist">--}}
+{{--                                    <li>--}}
+{{--                                        @lang('challenges.share.14')--}}
+{{--                                    </li>--}}
+{{--                                </ul>--}}
 
 
-                        <div class="leading-6 text-base text-left mt-2">
-
-                            <strong>@lang('challenges.bingo.0')</strong><br/>
-                            <div class="mt-2">
-                                @lang('challenges.bingo.1') <a
-                                        href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2021/Bingo+card.pdf">@lang('challenges.bingo.2')</a> @lang('challenges.bingo.3')
-                                <br/>
-                            </div>
-                        </div>
-
-                        <div class="leading-6 text-base text-left mt-6">
-
-                            <strong>@lang('challenges.bingo.4')</strong><br/>
-                            <div class="mt-2">
-                                @lang('challenges.bingo.5') <strong>@lang('challenges.bingo.6')</strong><br/>
-                                @lang('challenges.bingo.7') <strong>#CodeWeekChallengesBingo</strong><br/>
-                            </div>
-
-                        </div>
+{{--                            </div>--}}
+{{--                        </div>--}}
 
 
-                    </div>
+{{--                        <div class="leading-6 text-base text-left mt-2">--}}
 
-                    <div class="mt-6 orange text-3xl">
-                        @lang('challenges.take-part.0')
-                    </div>
-                    <div class="leading-6 text-base text-left">
-                        <ul class="leading-7 ml-2 mt-0 checklist mt-2">
-                            <li>
-                                @lang('challenges.take-part.1')
+{{--                            <strong>@lang('challenges.bingo.0')</strong><br/>--}}
+{{--                            <div class="mt-2">--}}
+{{--                                @lang('challenges.bingo.1') <a--}}
+{{--                                        href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2021/Bingo+card.pdf">@lang('challenges.bingo.2')</a> @lang('challenges.bingo.3')--}}
+{{--                                <br/>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
 
-                            </li>
-                            <li>
-                                @lang('challenges.take-part.2')
+{{--                        <div class="leading-6 text-base text-left mt-6">--}}
 
-                            </li>
-                            <li>
-                                @lang('challenges.take-part.3')
+{{--                            <strong>@lang('challenges.bingo.4')</strong><br/>--}}
+{{--                            <div class="mt-2">--}}
+{{--                                @lang('challenges.bingo.5') <strong>@lang('challenges.bingo.6')</strong><br/>--}}
+{{--                                @lang('challenges.bingo.7') <strong>#CodeWeekChallengesBingo</strong><br/>--}}
+{{--                            </div>--}}
 
-                            </li>
-                        </ul>
+{{--                        </div>--}}
 
 
-                    </div>
-                </section>
+{{--                    </div>--}}
+
+{{--                    <div class="mt-6 orange text-3xl">--}}
+{{--                        @lang('challenges.take-part.0')--}}
+{{--                    </div>--}}
+{{--                    <div class="leading-6 text-base text-left">--}}
+{{--                        <ul class="leading-7 ml-2 mt-0 checklist mt-2">--}}
+{{--                            <li>--}}
+{{--                                @lang('challenges.take-part.1')--}}
+
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                @lang('challenges.take-part.2')--}}
+
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                @lang('challenges.take-part.3')--}}
+
+{{--                            </li>--}}
+{{--                        </ul>--}}
+
+
+{{--                    </div>--}}
+{{--                </section>--}}
 
             </div>
         </section>

@@ -23,7 +23,7 @@ return [
     ],
     'main' => [
         'Tokom EU nedelje programiranja, od 9. do 24. oktobra 2021. godine, pozivamo vas da obavite jedan ili više izazova EU nedelje programiranja.',
-        'Šta su izazovi EU nedelje programiranja 2021?',
+        'Šta su izazovi EU nedelje programiranja ?',
         'Izazovi EU nedelje programiranja su aktivnosti koje možete da obavite sami, u učionici, sa kolegama ili prijateljima. Želite da učestvujete u Nedelji programiranja, ali zapravo nemate ideju šta da organizujete? Ne tražite dalje! Zajedno sa partnerima Nedelje programiranja dizajnirali smo nekoliko izazova koje je lako napraviti, koji obuhvataju konkretne primere kako da ga koristite izazov u učionici ili grupi. Postoje i smernice kako da dovršite izazove, ali možete da ih prilagodite tako da odgovaraju vašim potrebama, interesovanjima i uzrastu učesnika. Možete koristiti bilo koju tehnologiju i alate, ali preporučujemo resurse otvorenog koda.',
         'Odaberite jedan ili nekoliko izazova, prilagodite ih svojoj grupi ili razredu, pa podelite rezultate na Instagramu kako biste ohrabrili još više kolega da se angažuju u zabavi za Nedelju programiranja!',
         'Kliknite na izazov da biste saznali više o tome:',

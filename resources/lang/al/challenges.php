@@ -23,7 +23,7 @@ return [
     ],
     'main' => [
         'Gjatë EU Code Week, 9-24 tetor 2021, ju ftojmë të zhvilloni një ose më shumë sfida të EU Code Week.',
-        'Cilat janë sfidat e EU Code Week 2021?',
+        'Cilat janë sfidat e EU Code Week?',
         'Sfidat e EU Code Week janë aktivitete që mund t’i bëni vetë, në klasë, me kolegë ose miq. Do të donit të merrnit pjesë në Code Week, por nuk keni vërtet një ide se çfarë të organizoni? Mos shikoni më tej! Ne kemi hartuar së bashku me partnerët e EU Code Week një përzgjedhje sfidash të lehta për t’u realizuar, që përfshijnë shembuj konkretë se si ta përdorni në një klasë ose grup. Ekzistojnë gjithashtu udhëzime se si të kryeni sfidat, por ju mund t’i përshtatni ato në mënyrë që t’u përshtaten nevojave, interesave dhe moshës së pjesëmarrësve tuaj. Ju mund të përdorni çdo mjet dhe teknologji që ju pëlqen, por ne rekomandojmë materiale me burim të hapur.',
         'Zgjidhni një ose disa sfida, përshtateni me grupin tuaj ose klasën tuaj dhe ndajini rezultatet në Instagram për të inkurajuar edhe më shumë kolegë dhe miq për t’u angazhuar në argëtimin e Code Week!',
         'Klikoni mbi sfidën për të mësuar më shumë rreth saj:',

@@ -26,7 +26,7 @@ return [
     ],
     'main' => [
         'Tokom Sedmice kodiranja EU, 9-24. oktobra 2021, mi vas pozivamo da uradite jedan ili više izazova Sedmice kodiranja EU.',
-        'Šta su Izazovi Sedmice kodiranja EU 2021?',
+        'Šta su Izazovi Sedmice kodiranja EU?',
         'Izazovi Sedmice kodiranja EU su aktivnosti koje možete raditi sami, u razredu, sa kolegama ili prijateljima. Da li biste htjeli učestvovati u Sedmici kodiranja, ali nemate stvarnu ideju o tome šta organizirati? Ne tražite dalje! Mi smo zajedno s partnerima Sedmice kodiranja osmislili izbor izazova lakih za uraditi, koji uključuju konkretne primjere kako to koristiti u razredu ili grupi. Postoje i smjernice o tome kako obavljati izazove, ali vi njih možete prilagoditi tako da odgovaraju potrebama, interesima i starosnoj dobi vaših učesnika. Možete koristiti koje god alate i tehnologije želite, ali mi preporučujemo resurse iz otvorenih izvora.',
         'Odaberite jedan od nekoliko izazova, prilagodite ga svojoj grupi ili svom razredu i podijelite rezultate na Instagramu kako biste ohrabrili još kolega i prijatelja da se angažuju u zabavi za Sedmicu kodiranja!',
         'Kliknite na izazov da biste otkrili više o njemu:',
