@@ -23,7 +23,7 @@ return [
     ],
     'main' => [
         'Pendant la Semaine européenne du code, du 9 au 24 octobre 2021, nous vous invitons à relever un ou plusieurs de nos défis.',
-        'En quoi consistent les défis de la Semaine européenne du code 2021?',
+        'En quoi consistent les défis de la Semaine européenne du code ?',
         "Les défis de la Semaine européenne du code sont des activités que vous organisez vous-même, dans votre classe, avec des collègues ou des amis. Vous aimeriez participer à la Semaine du code, mais vous ne savez pas vraiment comment procéder? Plus besoin de chercher! Avec des partenaires de la Semaine du code, nous avons conçu une sélection de défis faciles à réaliser, qui incluent des exemples concrets sur la façon de les mettre en œuvre en classe ou en groupe. Il y a également des lignes directrices sur la façon de résoudre les défis, mais vous pouvez les adapter pour qu'elles répondent aux besoins, aux centres d'intérêt et à l'âge de vos participants. Vous pouvez utiliser tous les outils et toutes les technologies que vous souhaitez, mais nous recommandons l'utilisation de ressources open source.",
         "Choisissez un ou plusieurs défis, adaptez-les à votre groupe ou à votre classe, et partagez les résultats sur Instagram pour encourager encore plus de collègues et d'amis à participer aux activités ludiques de la Semaine du code!",
         'Cliquez sur un défi pour en savoir plus à son sujet:',

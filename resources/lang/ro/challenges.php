@@ -26,7 +26,7 @@ return [
     ],
     'main' => [
         'Pe parcursul Săptămânii UE a programării, în perioada 9-24 octombrie 2021, vă invităm să parcurgeți una sau mai multe dintre provocările Săptămânii UE a programării.',
-        'Ce sunt provocările Săptămânii UE a programării 2021?',
+        'Ce sunt provocările Săptămânii UE a programării ?',
         'Provocările Săptămânii UE a programării sunt activități pe care le puteți face individual, în clasă, cu colegii sau cu prietenii. Ați dori să participați la Săptămâna UE a programării, dar nu aveți o idee clară despre ce să organizați? Nu trebuie să mai căutați! Am conceput, împreună cu partenerii Săptămânii UE a programării, o selecție de provocări ușor de parcurs, cu exemple concrete pentru utilizarea la clasă sau într-un grup. Există și orientări privind modul de finalizare a provocărilor, dar le puteți și adapta în funcție de nevoile, interesele și vârsta participanților dvs. Puteți folosi orice instrumente și tehnologii doriți, dar vă recomandăm resursele open-source.',
         'Alegeți una sau mai multe provocări, adaptați-o la grupul sau clasa dvs. și distribuiți rezultatele pe Instagram pentru a încuraja și mai mulți colegi și prieteni să participe la activitățile distractive din Săptămâna programării!',
         'Faceți clic pe provocare pentru a afla mai multe despre aceasta:',
