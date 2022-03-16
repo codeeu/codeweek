@@ -23,7 +23,7 @@ return [
     ],
     'main' => [
         'Kutsume teid üles korraldama ELi programmeerimisnädalal Code Week 9.–24. oktoobril 2021 ühe või mitu ELi programmeerimisnädala Code Week väljakutset.',
-        'Mis on ELi programmeerimisnädala Code Week 2021 väljakutsed?',
+        'Mis on ELi programmeerimisnädala Code Week väljakutsed?',
         'ELi programmeerimisnädala Code Week väljakutsed on tegevused, mida saab teha iseseisvalt, klassis, töökaaslaste või sõpradega. Kas tahaksite osaleda Code Weekil, kuid ei tea, mida korraldada? Ärge muretsege! Koostasime koos Code Weeki partneritega valiku lihtsaid väljakutseid koos konkreetsete näidetega, kuidas neid klassis või rühmaga kasutada. Neile on lisatud ka suuniseid, kuidas väljakutseid lahendada, aga võite neid kohandada oma osalejate vajadustele, huvidele ja vanusele. Võite kasutada mis tahes vahendeid ja tehnoloogiaid, kuid meie soovitame vabavara.',
         'Valige üks või mitu väljakutset, kohandage need oma rühmale ja jagage tulemusi Instagramis, et julgustada veel rohkem töökaaslasi ja sõpru Code Weeki toredates ettevõtmistes kaasa lööma!',
         'Klõpsake väljakutsel, et selle kohta rohkem teada saada:',
