@@ -22,6 +22,7 @@
                 <ul>
                     <li><a href="{{route('coding@home')}}">@lang('menu.coding@home')</a></li>
                     <li><a href="/podcasts">Podcasts</a></li>
+                    <li><a href="{{route('training.index')}}">@lang('menu.training')</a></li>
                     <li><a href="{{route('challenges')}}">@lang('menu.challenges')</a></li>
                     <li><a href="{{route('resources_learn')}}">@lang('menu.learn')</a></li>
                     <li><a href="{{route('resources_teach')}}">@lang('menu.teach')</a></li>
@@ -37,7 +38,6 @@
                 <a href="javascript:void(null);">@lang('menu.schools')</a>
                 <ul class="dropdown-menu">
                     <li><a href="{{route('schools')}}">@lang('menu.why')?</a></li>
-                    <li><a href="{{route('training.index')}}">@lang('menu.training')</a></li>
                     <li><a href="/remote-teaching">@lang('remote-teaching.remote-teaching')</a></li>
                 </ul>
             </li>
