@@ -26,7 +26,7 @@ return [
     ],
     'main' => [
         'During EU Code Week, 9 - 24 October 2021, we invite you to do one or more of the EU Code Week challenges.',
-        'What are the EU Code Week 2021 Challenges?',
+        'What are the EU Code Week Challenges?',
         'EU Code Week Challenges are activities that you can do on your own, in the classroom, with colleagues or friends. You would like to participate in Code Week but do not really have an idea of what to organize? Look no further! We have designed along with Code Week partners a selection of easy to make challenges, that include concrete examples of how to use it in a classroom or group. There are also guidelines on how to complete the challenges, but you can adapt them so that they suit the needs, interests and age of your participants. You can use whatever tools and technologies you like, but we recommend open-source resources.',
         'Choose one or several challenges, adapt it to your group or your classroom, and share the results on Instagram to encourage even more colleagues and friends to engage in the Code Week fun!',
         'Click on the challenge to find out more about it:',

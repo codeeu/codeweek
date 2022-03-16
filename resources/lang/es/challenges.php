@@ -26,7 +26,7 @@ return [
     ],
     'main' => [
         'Durante la Semana de la Programación de la UE del 9 al 24 de octubre de 2021, te invitamos a hacer uno o varios de los retos que se proponen.',
-        '¿Qué son los Retos de la Semana de la Programación de la UE 2021?',
+        '¿Qué son los Retos de la Semana de la Programación de la UE?',
         'Son actividades que puedes hacer por tu cuenta, en clase, con compañeros o con amigos. ¿Te gustaría participar en la Semana de la Programación, pero no tienes ninguna idea sobre qué organizar? ¡No busques más! Hemos diseñado conjuntamente con socios de la Semana de la Programación una selección de retos fáciles de hacer, que contienen ejemplos concretos sobre cómo utilizarlos en una clase o un grupo. Además, se ofrecen orientaciones sobre cómo completar los retos, pero puedes adaptarlos según tus necesidades, intereses y la edad de tus participantes. Puedes usar todas las herramientas y tecnologías que quieras, pero recomendamos fuentes de código abierto.',
         'Elige uno o varios retos, adáptalos a tu grupo o clase y comparte los resultados en Instagram para animar a más compañeros y amigos a participar en la diversión de la Semana de la Programación.',
         'Haz clic en el reto para obtener más información:',

@@ -23,7 +23,7 @@ return [
     ],
     'main' => [
         'Wir laden euch ein, während der EU Code Week vom 9. bis zum 24. Oktober 2021 an einer oder mehreren EU Code Week Challenges teilzunehmen.',
-        'Was sind die EU Code Week Challenges 2021?',
+        'Was sind die EU Code Week Challenges ?',
         'Die EU Code Week Challenges sind Aktivitäten, die ihr alleine, im Klassenzimmer, mit Mitschüler*innen oder dem Freundeskreis durchführen könnt. Ihr möchtet an der Code Week teilnehmen, wisst aber noch nicht genau, was dafür organisiert werden muss? Keine Sorge! Wir haben gemeinsam mit den Partnern der Code Week eine Reihe von einfach umsetzbaren Challenges gestaltet und mit Beispielen ergänzt, um zu zeigen, wie das Ganze im Klassenzimmer oder in Gruppen funktioniert. Es gibt außerdem einen Leitfaden, der erklärt, wie die Aufgaben durchgeführt werden. Er kann aber natürlich auch an die Anforderungen, Interessen und Altersgruppen der Teilnehmenden angepasst werden. Ihr könnt die Hilfsmittel und Technologien frei wählen. Wir empfehlen allerdings quelloffene Ressourcen.',
         'Einfach eine oder mehrere Aufgaben auswählen, an eure Gruppe oder Klasse anpassen und die Ergebnisse auf Instagram teilen, um noch mehr Kolleg*innen, Schüler*innen und den Freundeskreis zum Mitmachen bei der Code Week zu animieren!',
         'Klickt auf die Aufgabe, um mehr darüber zu erfahren:',

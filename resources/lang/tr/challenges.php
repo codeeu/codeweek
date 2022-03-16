@@ -23,7 +23,7 @@ return [
     ],
     'main' => [
         '9-24 Ekim 2021 tarihleri arasında, AB Kod Haftası boyunca sizi bir veya daha fazla AB Kod Haftası görevini yapmaya davet ediyoruz.',
-        'AB Kod Haftası 2021 Görevleri nelerdir?',
+        'AB Kod Haftası Görevleri nelerdir?',
         'AB Kod Haftası Görevleri, kendi başınıza, sınıfta, meslektaşlarınızla veya arkadaşlarınızla yapabileceğiniz aktivitelerdir. Kod Haftasına katılmak istiyorsunuz ancak ne organize edebileceğiniz konusunda hiçbir fikriniz yok mu? Cevabı uzaklarda aramayın! Kod Haftası partnerleri ile birlikte, sınıfta veya grupta nasıl kullanılacağına dair somut örnekler içeren, yapması kolay bazı görevler tasarladık. Ayrıca görevlerin nasıl tamamlanacağına dair bazı yönergeler mevcut olsa da, bunları katılımcılarınızın ihtiyaçlarına, ilgi alanlarına ve yaşlarına uygun olacak şekilde uyarlayabilirsiniz. İstediğiniz herhangi bir aracı ve teknolojiyi kullanabilirsiniz ancak biz açık kaynaklı olanları öneriyoruz.',
         'Bir veya daha fazla görev seçin, bunları grubunuza veya sınıfınıza göre uyarlayın ve sonuçlarınızı Instagram\'da paylaşarak daha fazla meslektaşınızı ve arkadaşınızı Kod Haftası eğlencesine katılmaya teşvik edin!',
         'Daha fazla bilgi edinmek için görevin üzerine tıklayın:',

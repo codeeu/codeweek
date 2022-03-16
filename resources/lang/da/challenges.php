@@ -23,7 +23,7 @@ return [
     ],
     'main' => [
         'I løbet af EU\'s kodeuge, den 9.-24. oktober 2021, opfordrer vi dig til at gennemføre en eller flere af udfordringerne i EU\'s kodeuge.',
-        'Hvilke udfordringer er der i EU\'s kodeuge 2021?',
+        'Hvilke udfordringer er der i EU\'s kodeuge?',
         'Udfordringerne i EU\'s kodeuge er aktiviteter, som du kan lave selv, i klassen, med kolleger eller med venner. Du vil gerne deltage i EU\'s kodeuge, men ved ikke rigtig, hvad du skal arrangere? Den klarer vi! Sammen med kodeugens partnere har vi lavet et udvalg af udfordringer, der er nemme at lave, og som indeholder konkrete eksempler på, hvordan de kan bruges i en klasse eller en gruppe. Der er også vejledninger i at gennemføre udfordringerne, som kan tilpasses, så de passer til dine deltageres behov, interesser og alder. Du kan bruge de værktøjer og teknologier, du bedst kan lide. Vi anbefaler dog open-source-ressourcer.',
         'Vælg en eller flere udfordringer, tilpas den eller dem til gruppen eller klassen, og del resultaterne på Instagram for at opfordre endnu flere kolleger og venner til at deltage i kodeugens sjov!',
         'Klik på udfordringen for at få mere at vide om den:',

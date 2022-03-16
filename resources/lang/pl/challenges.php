@@ -26,7 +26,7 @@ return [
     ],
     'main' => [
         'Zachęcamy do wzięcia udziału w co najmniej jednym wyzwaniu Europejskiego Tygodnia Kodowania, który odbędzie się między 9 a 24 października 2021 r.',
-        'Czym są Wyzwaniu Europejskiego Tygodnia Kodowania 2021?',
+        'Czym są Wyzwaniu Europejskiego Tygodnia Kodowania ?',
         'Wyzwaniu Europejskiego Tygodnia Kodowania 2021 to zadania, które można wykonać samodzielnie, w ramach lekcji, wspólnie z koleżankami i kolegami z klasy lub ze znajomymi. Chcesz wziąć udział w Tygodniu Kodowania, ale nie wiesz, jak go zorganizować? To nic trudnego! Wspólnie z partnerami Tygodnia Kodowania przygotowaliśmy łatwe do realizacji wyzwania wraz z konkretnymi przykładami pokazującymi, jak wykorzystać te zadania podczas pracy w klasie lub grupie. Znajdziesz tu także wskazówki, jak wykonać poszczególne zadania, które możesz też dostosować do potrzeb, zainteresowań i wieku uczestników. Możesz wykorzystać w tym celu dowolne narzędzia i technologie, ale polecamy pracę z zasobami open source.',
         'Wybierz co najmniej jedno wyzwanie i dostosuj je do potrzeb swojej grupy lub klasy. Podziel się efektami Waszej pracy na Instagramie, by zachęcić jeszcze więcej znajomych do wspólnej zabawy podczas Tygodnia Kodowania!',
         'Kliknij wyzwanie, by dowiedzieć się o nim więcej:',
