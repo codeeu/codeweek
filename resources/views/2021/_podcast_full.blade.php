@@ -15,9 +15,9 @@
     @endif
 </div>
 
-<div class="shadow-xl flex flex-col">
-    <div>
-        <div class="flex-none max-h-fit float-left w-auto max-w-xs">
+<div class="shadow-xl flex flex-col ">
+    <div class="flex md:flex-row flex-col">
+        <div class="flex-none max-w-fit float-left w-auto max-w-xs">
 
             <a href="{{$podcast->filename}}">
                 <img
@@ -84,7 +84,7 @@
             </ul>
         </div>
 
-
+<div class="flex justify-end p-2 text-xs">This podcast has been released on {{$podcast->release_date->format('jS \o\f F Y')}}</div>
     </div>
 
 </div>
