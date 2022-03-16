@@ -23,7 +23,7 @@ return [
     ],
     'main' => [
         '2021. október 9–24. között, az európai programozási hét során arra invitálunk, hogy vegyél Te is részt az európai programozási hét egy vagy több kihívásában.',
-        'Mik a 2021. évi európai programozási hét kihívásai?',
+        'Mik a évi európai programozási hét kihívásai?',
         'Az európai programozási hét kihívásai olyan tevékenységek, amelyeket egyedül, az osztályoddal vagy akár kollégákkal és barátokkal is elvégezhetsz. Szeretnél részt venni a programozási héten, de nincs ötleted, hogy mit is szervezhetnél? Ne keresgélj tovább! A programozási hét partnereivel együtt számos könnyen megoldható kihívást terveztünk, amelyek konkrét példákat tartalmaznak az osztálytermi vagy csoportos használatra is. A kihívások elvégzésével kapcsolatos útmutatókat is megtalálod, de ezeket saját igényeid, érdeklődésed és a résztvevők életkora szerint át is alakíthatod. Bármilyen eszközt vagy technológiát felhasználhatsz, mi azonban leginkább a nyílt forráskódú anyagokat ajánljuk.',
         'Válassz egy vagy akár több kihívást, igazítsd a csoportodhoz vagy az osztályodhoz, majd oszd meg az eredményeket az Instagramon, ösztönözve ezzel még több kollégát és barátot a programozási hétben való szórakoztató részvételre!',
         'Kattints a kihívásra, hogy többet megtudj róla:',
