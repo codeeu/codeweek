@@ -23,7 +23,7 @@ return [
     ],
     'main' => [
         'Během Evropského týdne programování, který bude probíhat od 9. do 24. října 2021, vás zveme ke splnění jedné nebo více výzev Evropského týdne programování.',
-        'Co jsou to výzvy Evropského týdne programování 2021?',
+        'Co jsou to výzvy Evropského týdne programování ?',
         'Výzvy Evropského týdne programování jsou aktivity, kterým se můžete věnovat sami, ve třídě, s kolegy nebo s přáteli. Chcete se zúčastnit Evropského týdne programování, ale nemáte žádný nápad, co uspořádat? Tím se vůbec netrapte! Společně s partnery Evropského týdne programování jsme připravili výběr snadno organizovatelných výzev, které zahrnují konkrétní příklady, jak je využít ve třídě nebo ve skupině. K dispozici jsou také vodítka, jak výzvy splnit, ale výzvy si můžete libovolně přizpůsobit tak, aby vyhovovaly potřebám, zájmům a věku účastníků. Můžete využít jakékoli nástroje a technologie, doporučujeme nicméně využít otevřené zdroje.',
         'Vyberte si jednu nebo několik výzev, přizpůsobte ji nebo je pro svou skupinu nebo třídu, a podělte se o výsledky na Instagramu a povzbuďte tak další kolegy a přátele k účasti na zábavném Evropském týdnu programování!',
         'Klikněte na výzvu a zjistěte o ní více:',

@@ -26,7 +26,7 @@ return [
     ],
     'main' => [
         'Kutsumme sinut osallistumaan yhteen tai useampaan EU:n koodausviikon haasteeseen EU:n koodausviikolla 9.–24. lokakuuta 2021.',
-        'Mitä EU:n koodausviikon 2021 haasteet ovat ? ',
+        'Mitä EU:n koodausviikon haasteet ovat ?',
         'EU:n koodausviikon haasteet ovat tehtäviä, joita voit tehdä itseksesi tai luokassa, kollegoiden tai kavereiden kanssa. Haluaisitko osallistua koodausviikkoon, mutta et tiedä miten ? Vastaus löytyy täältä!Olemme laatineet koodausviikon kumppanien kanssa joukon helppoja haasteita konkreettisine esimerkkeineen siitä, miten niitä voi käyttää luokassa tai ryhmässä. Kunkin haasteen yhteydessä on annettu ohjeita, joita voi tarvittaessa muokata osallistujien tarpeiden, mielenkiinnon kohteiden ja iän mukaan. Voit käyttää haluamiasi työkaluja ja tekniikoita, mutta suosittelemme käyttämään avoimen lähdekoodin aineistoja. ',
         'Valitse yksi tai useampi haaste, mukauta sitä ryhmäsi tai luokkasi tarpeisiin ja jaa tulokset Instagramissa. Näin kannustat myös kollegoitasi ja kavereitasi osallistumaan koodausviikon hauskanpitoon!',
         'Lue lisää haasteesta napsauttamalla sitä:',

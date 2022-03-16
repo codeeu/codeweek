@@ -23,7 +23,7 @@ return [
     ],
     'main' => [
         'Durante a Semana Europeia da Programação, de 9 a 24 de outubro de 2021, convidamo-lo a realizar um ou mais dos desafios da Semana Europeia da Programação.',
-        'O que são os desafios da Semana Europeia da Programação 2021?',
+        'O que são os desafios da Semana Europeia da Programação ?',
         'Os desafios da Semana Europeia da Programação são atividades que pode fazer sozinho, na sala de aula, com colegas ou com amigos. Gostaria de participar na Semana da Programação, mas não tem nenhuma ideia do que pode organizar? Não procure mais! Juntamente com os parceiros da Semana da Programação, concebemos uma seleção de desafios fáceis, que incluem exemplos concretos de utilização em sala de aula ou em grupo. Fornecemos também orientações sobre como completar os desafios, que poderá adaptar em função das necessidades, interesses e idades dos participantes. Pode utilizar as ferramentas e tecnologias da sua preferência, mas recomendamos os recursos de fonte aberta.',
         'Escolha um ou vários desafios, adapte-os ao seu grupo ou sala de aula e partilhe os resultados no Instagram para incentivar ainda mais colegas e amigos a divertirem-se na Semana da Programação!',
         'Clique nos desafios para obter mais informações:',

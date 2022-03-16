@@ -26,7 +26,7 @@ return [
     ],
     'main' => [
         'Under EU Code Week, 9–24 oktober 2021, bjuder vi in dig till att göra en eller flera av EU Code Week-utmaningarna.',
-        'Vad är EU Code Week-utmaningarna 2021?',
+        'Vad är EU Code Week-utmaningarna ?',
         'EU Code Week-utmaningarna är aktiviteter som du kan göra på egen hand, i klassrummet, med kollegor eller vänner. Skulle du vilja delta i EU Code Week men vet inte riktigt vad du kan anordna? Då har du hittat rätt! Vi har tillsammans med våra Code Week-partner satt ihop ett urval av utmaningar som är lätta att skapa och som innehåller konkreta exempel på hur du kan använda dem i ett klassrum eller en grupp. Det finns också riktlinjer för hur man ska genomföra utmaningarna, men du kan anpassa dem så att de passar dina deltagares behov, intressen och ålder. Du kan använda vilka verktyg och tekniker du vill, men vi rekommenderar open-source-resurser.',
         'Välj en eller flera utmaningar, anpassa dem efter din grupp eller ditt klassrum, och dela resultaten på Instagram så du kan uppmuntra ännu fler kollegor och vänner att ta del av allt det roliga med Code Week!',
         'Klicka på utmaningen för att läsa mer om den:',
