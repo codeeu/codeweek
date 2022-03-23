@@ -24,6 +24,7 @@
                     <li><a href="/podcasts">Podcasts</a></li>
                     <li><a href="{{route('training.index')}}">@lang('menu.training')</a></li>
                     <li><a href="{{route('challenges')}}">@lang('menu.challenges')</a></li>
+                    <li><a href="{{route('dance')}}">@lang('snippets.dance.menu')</a></li>
                     <li><a href="{{route('resources_learn')}}">@lang('menu.learn')</a></li>
                     <li><a href="{{route('resources_teach')}}">@lang('menu.teach')</a></li>
                     <li><a href="{{route('toolkits')}}">@lang('menu.toolkits')</a></li>
@@ -48,7 +49,6 @@
 
                     <li><a href="/hackathons">Hackathons</a></li>
                     <li><a href="{{route('codeweek4all')}}">Code Week 4 All</a></li>
-                    <li><a href="/dance">@lang('snippets.dance.menu')</a></li>
                     <li><a href="/treasure-hunt">@lang('snippets.treasure-hunt.menu')</a></li>
                     <li><a href="/why-coding">@lang('why-coding.titles.0')</a></li>
                     <li><a href="/our-values">@lang('menu.values')</a></li>
