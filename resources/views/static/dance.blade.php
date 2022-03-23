@@ -98,26 +98,27 @@
 {{--                        <li>@lang('cw2020.dance.activity4.resources.0')</li>--}}
                     </ul>
 
-                    <h4>5. @lang('cw2020.dance.activity5.title') </h4>
+{{--                    <h4>5. @lang('cw2020.dance.activity5.title') </h4>--}}
+
+{{--                    <div>--}}
+{{--                        @lang('cw2020.dance.activity5.subtitle')--}}
+{{--                    </div>--}}
+
+{{--                    <ul style="list-style-type: circle;margin-left:40px; margin-top:-4px;">--}}
+{{--                        <li>@lang('cw2020.dance.activity5.resources.0')</li>--}}
+{{--                        <li>@lang('cw2020.dance.activity5.resources.1') <a--}}
+{{--                                    href="https://www.instagram.com/codeweekeu/">@lang('cw2020.dance.activity5.resources.2')</a>--}}
+{{--                        </li>--}}
+{{--                        <li>@lang('cw2020.dance.activity5.resources.3')--}}
+{{--                        </li>--}}
+{{--                    </ul>--}}
 
                     <div>
-                        @lang('cw2020.dance.activity5.subtitle')
-                    </div>
-
-                    <ul style="list-style-type: circle;margin-left:40px; margin-top:-4px;">
-                        <li>@lang('cw2020.dance.activity5.resources.0')</li>
-                        <li>@lang('cw2020.dance.activity5.resources.1') <a
-                                    href="https://www.instagram.com/codeweekeu/">@lang('cw2020.dance.activity5.resources.2')</a>
-                        </li>
-                        <li>@lang('cw2020.dance.activity5.resources.3')
-                        </li>
-                    </ul>
-
-                    <div>@lang('cw2020.dance.outro.0').
-                        <h4> @lang('cw2020.common.resources'):</h4>
-                        <ul style="list-style-type: circle;margin-left:40px; margin-top:-4px;">
-                            @include("static._cw2020-common")
-                        </ul>
+{{--                        @lang('cw2020.dance.outro.0').--}}
+{{--                        <h4> @lang('cw2020.common.resources'):</h4>--}}
+{{--                        <ul style="list-style-type: circle;margin-left:40px; margin-top:-4px;">--}}
+{{--                            @include("static._cw2020-common")--}}
+{{--                        </ul>--}}
                         <div style="margin-top: 30px">
 
                         @lang('cw2020.dance.outro.1') <a
