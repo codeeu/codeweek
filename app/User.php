@@ -230,6 +230,11 @@ class User extends Authenticatable
         return $this->belongsTo(City::class);
     }
 
+    public function locations()
+    {
+        return $this->hasMany(Location::class);
+    }
+
     public function scopeFilter($query, UserFilters $filters)
     {
         return $filters->apply($query);

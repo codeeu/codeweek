@@ -59,7 +59,8 @@ class Event extends Model
         'last_report_notification_sent_at',
         'activity_type',
         'picture_detail',
-        'language'
+        'language',
+        'location_id'
     ];
 
 //    protected $policies = [
@@ -129,6 +130,10 @@ class Event extends Model
     public function owner()
     {
         return $this->belongsTo('App\User', 'creator_id');
+    }
+
+    public function extractedLocation(){
+        return $this->belongsTo('App\Location', 'location_id');
     }
 
     public function audiences()
@@ -343,4 +348,6 @@ class Event extends Model
         return LogOptions::defaults()
             ->setDescriptionForEvent(fn(string $eventName) => "Event {$this->id} has been {$eventName}");
     }
+
+
 }
