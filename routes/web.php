@@ -212,6 +212,8 @@ Route::view(
 
 Route::get('/events', 'SearchController@search')->name('events_map');
 Route::get('/add', 'EventController@create')->name('create_event');
+
+
 Route::get('/map', 'MapController@index')->name('map');
 Route::get('/resources', 'ResourcesController@learn')->name('resources_learn');
 Route::get('/resources/learn', 'ResourcesController@learn');
@@ -644,6 +646,15 @@ Route::get(
 Route::get('podcasts', 'PodcastsController@index')->name('podcasts');
 Route::get('podcast/{podcast}', 'PodcastsController@show')->name('podcast');
 
+
+
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('locations', 'LocationController@index')->name('locations');
+    Route::get('location/add', 'LocationController@create')->name('location.add');
+});
+
+Route::view('/registration', 'registration.add');
 
 Auth::routes();
 Route::feeds();
