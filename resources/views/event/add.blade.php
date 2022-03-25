@@ -61,7 +61,7 @@
                                 <label for="id_organizer">* @lang('event.organizer.label')</label>
                                 <input id="id_organizer" maxlength="255"
                                        name="organizer" placeholder="@lang('event.organizer.placeholder')" type="text"
-                                       value="{{old('organizer')}}">
+                                       value="{{old('organizer')?:$organizer??''}}">
                             </div>
                             <div class="errors">
                                 @component('components.validation-errors', ['field'=>'organizer'])@endcomponent

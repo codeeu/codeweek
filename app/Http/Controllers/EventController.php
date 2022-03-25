@@ -8,6 +8,7 @@ use App\Event;
 use App\Filters\UserFilters;
 use App\Helpers\EventHelper;
 use App\Http\Requests\EventRequest;
+use App\Location;
 use App\Queries\EventsQuery;
 use App\Queries\PendingEventsQuery;
 use App\ResourceLanguage;
@@ -93,6 +94,13 @@ class EventController extends Controller {
         $themes = \App\Theme::orderBy('order', 'asc')->get();
 
         $languages = Arr::sort(Lang::get('base.languages'));
+
+        if($request->get('location')){
+           $location = auth()->user()->locations()->where('id', $request->get('location'))->firstOrFail();
+           $organizer = $location->name;
+           return view('event.add', compact(['countries', 'themes', 'languages', 'organizer']));
+        }
+
 
         return view('event.add', compact(['countries', 'themes', 'languages']));
     }

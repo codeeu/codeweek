@@ -19,7 +19,7 @@
 <ul>
     <li>
     @foreach($locations as $location)
-        {{$location->name}}<br/>
+        <a href="{{route('create_event', ['location'=> $location->id])}}">{{$location->name}}<br/>
     @endforeach
     </li>
 </ul>
