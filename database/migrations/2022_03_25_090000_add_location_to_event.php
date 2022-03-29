@@ -27,7 +27,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('achievements', function (Blueprint $table)
+        Schema::table('events', function (Blueprint $table)
         {
             $table->dropColumn('location_id');
         });

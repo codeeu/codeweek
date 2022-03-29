@@ -61,7 +61,7 @@
                                 <label for="id_organizer">* @lang('event.organizer.label')</label>
                                 <input id="id_organizer" maxlength="255"
                                        name="organizer" placeholder="@lang('event.organizer.placeholder')" type="text"
-                                       value="{{old('organizer')?:$organizer??''}}">
+                                       value="{{old('organizer')?:$location->name??''}}">
                             </div>
                             <div class="errors">
                                 @component('components.validation-errors', ['field'=>'organizer'])@endcomponent
@@ -146,8 +146,9 @@
                                             x-show="!isOnlineActivitySelected()">*</span>@lang('event.address.label')
                                 </label>
                                 <div>
-                                    <autocomplete-geo name="location"
-                                                      placeholder="@lang('event.address.placeholder')"></autocomplete-geo>
+                                    <autocomplete-geo name="location" placeholder="@lang('event.address.placeholder')"
+                                                      value="{{old('location')?:$location->location??''}}"
+                                                      geoposition="{{old('geoposition')?:$location->geoposition??''}}"></autocomplete-geo>
                                     <div class="errors" style="margin-bottom: 10px; margin-left:0;">
                                         @component('components.validation-errors', ['field'=>'location'])@endcomponent
                                     </div>
@@ -161,9 +162,16 @@
                                 <label for="id_country">* @lang('event.country')</label>
                                 <select id="id_country" name="country_iso" class="codeweek-input-select">
                                     <option value=""></option>
-                                    @foreach ($countries as $country)
-                                        <option value="{{$country->iso}}">@lang('countries.'. $country->name)</option>
-                                    @endforeach
+                                    @isset($location)
+
+                                        @foreach ($countries as $country)
+                                            <option value="{{$country->iso}}" {{$location->country_iso == $country->iso ? 'selected' : ''}}>@lang('countries.'. $country->name)</option>
+                                        @endforeach
+                                    @else
+                                        @foreach ($countries as $country)
+                                            <option value="{{$country->iso}}">@lang('countries.'. $country->name)</option>
+                                        @endforeach
+                                    @endisset
                                 </select>
                             </div>
                             <div class="errors">
@@ -317,6 +325,7 @@
             "width": "422",
             "custom": ["/js/hideMenuMap.js"]
         }
+
 
 
 
