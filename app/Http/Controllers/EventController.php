@@ -86,7 +86,6 @@ class EventController extends Controller {
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
      */
     public function create(Request $request) {
         $countries = \App\Country::all()->sortBy('name');
@@ -97,8 +96,7 @@ class EventController extends Controller {
 
         if($request->get('location')){
            $location = auth()->user()->locations()->where('id', $request->get('location'))->firstOrFail();
-           $organizer = $location->name;
-           return view('event.add', compact(['countries', 'themes', 'languages', 'organizer']));
+           return view('event.add', compact(['countries', 'themes', 'languages', 'location']));
         }
 
 

@@ -34,7 +34,7 @@ class LocationExtraction extends Command
     {
 
 
-        Event::whereNull('location_id')->chunk(1000, function ($events, $index) {
+        Event::where('creator_id',19588)->whereNull('location_id')->chunk(1000, function ($events, $index) {
             $this->reportProgress($index);
 
             $events->each(function ($event) {
@@ -47,8 +47,10 @@ class LocationExtraction extends Command
                     [
                         'name' => $event->organizer,
                         'location' => $event->location,
-                        'country_iso' => $event->country_iso
-
+                        'country_iso' => $event->country_iso,
+                        'event_id' => $event->id,
+                        'activity_type' => $event->activity_type,
+                        'organizer_type' => $event->organizer_type
                     ]);
 
                 $event->update([

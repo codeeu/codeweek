@@ -24,7 +24,10 @@ return new class extends Migration
             $table->string('country_iso', 2);
             $table->boolean('is_default')->default(false);
             $table->boolean('is_favorite')->default(false);
+            $table->string('organizer_type', 50)->nullable();
+            $table->string('activity_type', 50)->nullable();
             $table->integer('user_id');
+            $table->integer('event_id');
 
             $table->timestamps();
 

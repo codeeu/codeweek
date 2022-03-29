@@ -13,4 +13,13 @@ class Location extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function event()
+    {
+        return $this->belongsTo(Event::class);
+    }
+
+    public function getGeopositionAttribute(){
+        return $this->latitude . ',' . $this->longitude;
+    }
 }
