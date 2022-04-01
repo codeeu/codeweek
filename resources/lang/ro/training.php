@@ -265,6 +265,24 @@ Cu Python, elevii pot să creeze jocuri cu întrebări despre evenimente istoric
                 "3" => "Verificarea informațiilor",
             ]
         ],
+        "16" => [
+            "title" => "TEHNICA POVESTIRII CU HEDY",
+            "author" => "de Felienne Hermans",
+            "text" => [
+                "Elevii dumneavoastră stăpânesc deja un limbaj de programare vizual, dar nu se simt pregătiți să aprofundeze un limbaj de programare bazat pe text? Atunci modulul acesta de învățare este cât se poate de potrivit pentru dumneavoastră și pentru elevii dumneavoastră, deoarece îi va ajuta să facă legătura între un limbaj de programare vizual și unul bazat pe text. Modulul de învățare <strong>Tehnica povestirii cu Hedy</strong> cuprinde trei planuri de lecție care utilizează Hedy – un limbaj de programare gradual pentru a-i învăța pe copii programare.",
+
+                "Hedy se adresează copiilor care doresc să se inițieze în limbajele de programare sub formă de text, dar pentru care Python ar putea fi prea complex deocamdată. Limbajele progresive utilizează diferite niveluri lingvistice, fiecare nivel adăugând concepte noi și complexitate sporită a sintaxei. La sfârșitul unui nivel Hedy, elevii stăpânesc un subset de limbaj Python valid din punct de vedere sintactic.",
+
+                "În acest modul de învățare veți găsi activități atractive care pot servi drept inspirație, pentru a-i ajuta pe elevii dumneavoastră să utilizeze eficient limbajele de programare bazate pe text. Creându-și propriile povești interactive, aceștia vor învăța treptat programarea, fără a fi nevoiți să învețe totul dintr-o dată. În planul de lecție pentru învățământul primar, elevii fac cunoștință cu conceptele de bază ale programării. Planul de lecții pentru învățământul secundar inferior introduce concepte de programare suplimentare, iar planul de lecții pentru învățământul secundar superior le permite elevilor să programeze povești și activități mai complexe.",
+
+                "Consultați povestea interactivă de mai jos pentru a vedea cum pot participa cititorii la poveste și cum îi încurajează aceasta să se implice activ."
+            ],
+            "activities" => [
+                "1" => "Creați-vă propria poveste interactivă cu Hedy pentru elevii din ciclul primar",
+                "2" => "Creați-vă propria poveste interactivă cu Hedy pentru elevii din învățământul secundar inferior",
+                "3" => "Creați-vă propria poveste interactivă cu Hedy pentru elevii din învățământul secundar inferior",
+            ]
+        ],
 
 
     ],

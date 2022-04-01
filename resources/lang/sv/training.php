@@ -279,6 +279,24 @@ I den här videon kommer Code Week-teamet att visa dig några praktiska, enkla o
                 "3" => "Fakta-kontroll",
             ]
         ],
+        "16" => [
+            "title" => "BERÄTTA MED HEDY",
+            "author" => "av Felienne Hermans",
+            "text" => [
+                "Har dina elever redan lärt sig bemästra ett visuellt programmeringsspråk, men känner sig inte redo att fördjupa sig mer i ett programmeringsspråk som är textbaserat? Då är den här infomodulen något för dig och dina elever, för här får de hjälp att ta det stora steget från ett visuellt till ett textbaserat programmeringsspråk. Infomodulen <strong>Berätta med Hedy</strong> består av tre lektionsplaner där du använder Hedy – ett gradvis programmeringsspråk som lär barnen programmera.",
+
+                "Hedy är riktat till barn som vill komma igång med textprogrammeringsspråk, men som kanske tycker att Python är för komplicerat att starta med. I gradvisa språk används olika språknivåer, med fler begrepp och syntaktisk komplexitet för varje nivå. När eleverna nått slutet av raden med Hedy-nivåer bemästrar de en underuppsättning syntaktiskt giltig Python.",
+
+                "I den här infomodulen hittar du inspirerande och engagerande aktiviteter så att dina elever effektivt kan använda textbaserade programmeringsspråk. Genom att skapa sina egna interaktiva berättelser lär de sig gradvis programmering, utan att behöva ta allt på en gång. I lektionsplanen för låg- och mellanstadiet får eleverna en introduktion till programmeringens grundläggande begrepp. Lektionsplanen för högstadiet tillför fler programmeringsbegrepp, medan eleverna i lektionsplanen för gymnasiet kan programmera mer komplicerade berättelser och aktiviteter.",
+
+                "Kolla upp den interaktiva berättelsen nedan för att se hur läsarna kan vara med i berättelsen och hur det gör dem mer aktivt engagerade."
+            ],
+            "activities" => [
+                "1" => "Gör din egen interaktiva berättelse med Hedy för låg- och mellanstadieelever",
+                "2" => "Gör din egen interaktiva berättelse med Hedy för högstadieelever",
+                "3" => "Gör din egen interaktiva berättelse med Hedy för gymnasieelever",
+            ]
+        ],
 
 
     ],

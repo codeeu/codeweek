@@ -302,7 +302,25 @@ Pythoni abil saavad õpilased koostada viktoriine ajaloosündmuste kohta, lahend
                 '2' => 'Klõpsata või mitte',
                 '3' => ' Faktide kontrollimine'
             ]
-        ]
+        ],
+        "16" => [
+            "title" => "LUGUDE JUTUSTAMINE HEDYGA",
+            "author" => "Felienne Hermans",
+            "text" => [
+                "Kas sinu õpilased on juba õppinud visuaalset programmeerimiskeelt, kuid tunnevad, et ei ole valmis tekstipõhisesse programmeerimiskeelde süvenema? Sellisel juhul on see õppevahend just sulle ja sinu õpilastele, sest aitab neil täita lünga visuaalse ja tekstipõhise programmeerimiskeele vahel.  Õppevahend <strong>Lugude jutustamine Hedyga</strong> sisaldab kolme õppetunni kava, mis kasutavad Hedyt – astmelist programmeerimiskeelt lastele programmeerimise õpetamiseks.",
+
+                "Hedy on mõeldud lastele, kes soovivad algust teha tekstipõhiste programmeerimiskeeltega, kuid kelle jaoks võib Pythoniga alustamine olla liiga keeruline. Astmelised keeled kasutavad erinevaid keeletasemeid, kus igal tasemel lisandub uusi mõisteid ja süntaktilist keerukust. Hedy tasemete läbimisel omandavad õpilased teatud hulga süntaksi, mida saab Pythoniga kasutada.",
+
+                "Sellest õppevahendist leiad inspireerivaid ja põnevaid tegevusi, et aidata õpilastel tekstipõhiseid programmeerimiskeeli tõhusalt kasutada. Oma interaktiivseid lugusid koostades õpivad nad programmeerimist aste-astmelt, ilma et peaksid kõike korraga selgeks saama. Põhikooli II astme õppetunni kavas tutvustatakse õpilastele programmeerimise põhimõisteid. Põhikooli III astme õppetunni kavas tutvustakse täiendavaid programmeerimismõisteid ning gümnaasiumiõpilaste õppetunni kava võimaldab õpilastel programmeerida keerukamaid lugusid ja tegevusi.",
+
+                "Vaata allpool toodud interaktiivset lugu, et näha, kuidas lugejad saavad loos osaleda ja kuidas see soodustab nende aktiivset kaasatust."
+            ],
+            "activities" => [
+                "1" => "Koosta põhikooli II astme õpilastele mõeldud Hedyga oma interaktiivne lugu",
+                "2" => "Koosta põhikooli III astme õpilastele mõeldud Hedyga oma interaktiivne lugu",
+                "3" => "Koosta gümnaasiumiõpilastele mõeldud Hedyga oma interaktiivne lugu",
+            ]
+        ],
     ],
     'download_video_script' => 'Laadi alla video skript',
     'ready_to_share' => 'Kas olete valmis õpitut oma õpilastega jagama?',

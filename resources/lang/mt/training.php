@@ -267,6 +267,24 @@ F’dan il-vidjow, it-tim tal-Ġimgħa tal-Ikkowdjar se jurik xi attivitajiet pr
                 "3" => "Verifika tal-fatti",
             ]
         ],
+        "16" => [
+            "title" => "IR-RAKKONTAR TAL-ISTEJJER PERMEZZ TA’ HEDY",
+            "author" => "ta’ Felienne Hermans",
+            "text" => [
+                "L-istudenti tiegħek diġà ħakmu l-lingwaġġ ta’ pprogrammar viżiv, iżda għadhom ma jħossuhomx lesti li japprofondixxu l-għarfien tagħhom dwar lingwaġġ ta’ pprogrammar ibbażat fuq it-test? Mela dan il-komponent ta’ tagħlim huwa perfett għalik u għall-istudenti tiegħek għaliex se jgħinhom jimlew il-vojt bejn lingwaġġ ta’ pprogrammar viżiv u lingwaġġ ta’ pprogrammar ibbażat fuq it-test. Il-komponent ta’ tagħlim <strong>Ir-rakkontar tal-istejjer permezz ta’ Hedy</strong> fih tliet pjanijiet ta’ lezzjonijiet li jużaw Hedy – lingwagg ta’ pprogrammar gradwali biex it-tfal jiġu mgħallma jipprogrammaw.",
+
+                "Hedy hija mmirata għal tfal li jridu jibdew b’lingwi ta’ pprogrammar testwali, iżda li kieku kellhom jibdew jaħdmu b’Python jistgħu jsibuh kumpless wisq. Il-lingwi gradwali jużaw livelli ta’ lingwa differenti, fejn kull livell iżid kunċetti ġodda u kumplessità sintattika. Fi tmiem is-sekwenza tal-livelli ta’ Hedy, l-istudenti jkunu ħakmu sottogrupp ta’ Python sintattikament validu.",
+
+                "F’dan il-Komponent ta’ Tagħlim se ssib attivitajiet ta’ ispirazzjoni u ta’ involviment biex tgħin lill-istudenti tiegħek jużaw b’mod effiċjenti l-lingwi ta’ pprogrammar ibbażati fuq it-test. Billi joħolqu l-istejjer interattivi tagħhom, gradwalment se jitgħallmu l-ipprogrammar, mingħajr ma jkollhom jitgħallmu kollox f’daqqa. Fil-pjan tal-lezzjonijiet għall-iskola primarja, l-istudenti jiġu introdotti għall-kunċetti bażiċi tal-ipprogrammar. Il-pjan tal-lezzjonijiet għall-edukazzjoni sekondarja tal-ewwel livell jintroduċi kunċetti ta’ pprogrammar ulterjuri, filwaqt li l-pjan tal-lezzjonijiet għall-edukazzjoni sekondarja tat-tieni livell jippermetti lill-istudenti jipprogrammaw stejjer u attivitajiet aktar kumplessi.",
+
+                "Agħti titwila lill-istorja interattiva ta’ hawn taħt biex tara kif il-qarrejja jistgħu jipparteċipaw fl-istorja u kif trawwem l-involviment attiv tagħhom."
+            ],
+            "activities" => [
+                "1" => "Oħloq l-istorja interattiva tiegħek permezz ta’ Hedy għall-istudenti tal-iskola primarja",
+                "2" => "Oħloq l-istorja interattiva tiegħek permezz ta’ Hedy għall-istudenti tal-iskola sekondarja tal-ewwel livell",
+                "3" => "Oħloq l-istorja interattiva tiegħek permezz ta’ Hedy għall-istudenti tal-iskola sekondarja tat-tieni livell",
+            ]
+        ],
 
 
     ],
