@@ -266,6 +266,25 @@ Bu videoda, Kod Haftası ekibi size özellikle görme bozukluğu, Down sendromu 
             ]
         ],
 
+        "16" => [
+            "title" => "HEDY İLE HİKÂYE ANLATICILIĞI",
+            "author" => "Felienne Hermans",
+            "text" => [
+                "Öğrencileriniz görsel bir programlama dilinde ustalaştı ancak metin tabanlı bir programlama diline derinlemesine girme konusunda kendilerini hazır hissetmiyor mu? Öyleyse bu öğrenim bilgisi tam size ve öğrencilerinize göre, çünkü bu bilgiler görsel ve metin tabanlı programlama dilleri arasındaki boşluğu doldurmanıza yardımcı olacak. <strong>Hedy ile Hikâye Anlatıcılığı</strong> öğrenim bilgisi, çocuklara programlamayı öğreten Hedy adlı kademeli bir programlama dilinin kullanıldığı üç ders planından oluşuyor.",
+
+                "Hedy, metinsel programlama dillerini öğrenmek isteyen ancak Python dilinin çok karmaşık gelebileceği çocuklara uygundur. Kademeli dillerde, her seviyede yeni konseptlerin ve sözdizimsel zorlukların ilave edildiği farklı dil seviyeleri kullanılır. Her Hedy seviyesinin sonunda, öğrenciler Python açısından sözdizimsel olarak geçerli bir alt kümede ustalaşırlar.",
+
+                "Bu Öğrenim Bilgisi'nde, öğrencilerinizin metin tabanlı programlama dillerini etkin bir şekilde kullanmalarına yardımcı olacak ilham verici ve ilgi çekici aktiviteler bulacaksınız. Öğrenciler kendi interaktif hikâyelerini oluşturarak, her şeyi tek seferde öğrenmek zorunda kalmadan, programlamayı kademeli olarak öğrenecekler. İlkokul ders planında, öğrencilere programlamanın temel konseptleri tanıtılır. Ortaokul ders planında daha ileri programlama konseptlerine girilirken, lise ders planında öğrencilerin daha karmaşık hikâyeler ve aktiviteler programlamaları sağlanır.",
+
+                "Okuyucuların hikâyeye nasıl katılabileceklerini ve bu durumun okuyucuları aktif katılıma nasıl teşvik ettiğini öğrenmek için aşağıdaki interaktif hikâyeye göz atın."
+            ],
+            "activities" => [
+                "1" => "İlkokul öğrencileri için Hedy ile kendi interaktif hikâyenizi oluşturun",
+                "2" => "Ortaokul öğrencileri için Hedy ile kendi interaktif hikâyenizi oluşturun",
+                "3" => "Lise öğrencileri için Hedy ile kendi interaktif hikâyenizi oluşturun",
+            ]
+        ],
+
 
     ],
     'download_video_script' => 'Video metnini indirin',

@@ -266,6 +266,24 @@ I denne video viser Kodeuge-teamet nogle praktiske, nemme og sjove kodeaktivitet
                 "3" => "Kontrol af fakta",
             ]
         ],
+        "16" => [
+            "title" => "HISTORIEFORTÆLLING MED HEDY",
+            "author" => "af Felienne Hermans",
+            "text" => [
+                "Har dine elever allerede styr på et visuelt programmeringssprog, men føler sig endnu ikke klar til at dykke dybere ned i et tekstbaseret programmeringssprog? Så er denne undervisningsbid lige noget for dig og dine elever, da det vil hjælpe dem med at bygge bro mellem et visuelt og et tekstbaseret programmeringssprog. Undervisningsbidden <strong>Historiefortælling med Hedy</strong> består af tre læreplaner, som bruger Hedy – et gradueret programmeringssprog, der kan lære børn at programmere.",
+
+                "Hedy er målrettet børn, som gerne vil komme i gang med tekstbaserede programmeringssprog, men for hvem det måske stadig er for komplekst at gå i gang med Python. Graduerede sprog bruger forskellige sprogniveauer, hvor hvert niveau tilføjer nye koncepter og syntaktisk kompleksitet. Når hver niveausekvens i Hedy er gennemført, har eleven lært en delmængde af syntaktisk gyldigt Python.",
+
+                "I denne undervisningsbid finder du inspirerende og engagerende aktiviteter, som kan hjælpe dine elever med at bruge tekstbaserede programmeringssprog effektivt. Ved at skabe deres egne interaktive historier vil de gradvist lære at programmere, uden at skulle lære det hele på én gang. I læreplanen for mellemtrinnet introduceres eleverne for de grundlæggende koncepter ved programmering. Læreplanen for udskolingen introducerer flere programmeringskoncepter, og læreplanen for ungdomsuddannelser sætter eleverne i stand til at programmere mere komplekse historier og aktiviteter.",
+
+                "Den interaktive historie nedenfor viser, hvordan læserne kan deltage i historien, og hvordan det fremmer deres aktive engagement."
+            ],
+            "activities" => [
+                "1" => "Lav din egen interaktive historie med Hedy til elever på mellemtrinnet",
+                "2" => "Lav din egen interaktive historie med Hedy til elever i udskolingen",
+                "3" => "Lav din egen interaktive historie med Hedy til elever på ungdomsuddannelser",
+            ]
+        ],
 
 
     ],

@@ -264,6 +264,24 @@ V tem videoposnetku vam bo ekipa tedna programiranja pokazala nekaj praktičnih,
                 "3" => "Preverjanje dejstev",
             ]
         ],
+        "16" => [
+            "title" => "PRIPOVEDOVANJE ZGODB S HEDY",
+            "author" => "avtorica Felienne Hermans",
+            "text" => [
+                "Ali vaši učenci že obvladajo vizualni programski jezik, vendar se ne počutijo pripravljene, da bi se poglobili v tekstovni programski jezik? Potem je ta učni drobec kot nalašč za vas in vaše učence, saj jim bo pomagal premostiti vrzel med vizualnim in tekstovnim programskim jezikom. Učni drobec <strong>Pripovedovanje zgodb s Hedy</strong> je sestavljen iz treh učnih načrtov, ki uporabljajo Hedy – postopni programski jezik, namenjen za poučevanje programiranja otrokom.",
+
+                "Hedy je namenjen otrokom, ki želijo začeti s tekstovnimi programskimi jeziki, a je zanje programski jezik Python morda še vedno preveč zapleten. Postopni jeziki uporabljajo različne stopnje jezika, kjer vsaka stopnja dodaja nove koncepte in skladenjsko kompleksnost. Na koncu sekvence stopnje Hedy učenci obvladajo podmnožico skladenjsko veljavnega jezika Python.",
+
+                "V tem učnem drobcu boste našli navdihujoče in privlačne dejavnosti, ki bodo vašim učencem pomagale pri učinkoviti uporabi tekstovnih programskih jezikov. Z ustvarjanjem lastnih interaktivnih zgodb se bodo postopoma učili programiranja, ne da bi se morali naučiti vsega naenkrat. V učnem načrtu za osnovno šolo se učenci seznanijo z osnovnimi pojmi programiranja. Učni načrt za nižjo srednjo šolo uvaja nadaljnje programske koncepte, učni načrt za višjo srednjo šolo pa omogoča učencem programiranje kompleksnejših zgodb in dejavnosti.",
+
+                "Oglejte si spodnjo interaktivno zgodbo, da vidite, kako lahko bralci sodelujejo v zgodbi in kako spodbuja njihovo aktivno sodelovanje."
+            ],
+            "activities" => [
+                "1" => "Ustvarite lastno interaktivno zgodbo s Hedy za osnovnošolce",
+                "2" => "Ustvarite lastno interaktivno zgodbo s Hedy za učence nižje srednje šole",
+                "3" => "Ustvarite lastno interaktivno zgodbo s Hedy za dijake višjih letnikov srednje šole",
+            ]
+        ],
 
 
     ],

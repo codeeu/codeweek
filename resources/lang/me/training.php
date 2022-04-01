@@ -265,6 +265,24 @@ U ovom video zapisu, tim Nedjelje programiranja pokazaće vam nekoliko praktičn
                 "3" => "Provjera činjenica",
             ]
         ],
+        "16" => [
+            "title" => "PRIČANJE PRIČE S HEDY-JEM",
+            "author" => "autor Felienne Hermans",
+            "text" => [
+                "Vaši učenici su već savladali vizuelni programski jezik, ali se ne osjećaju spremnim da detaljnije istraže tekstualni programski jezik? Onda su ove smjernice za nastavu upravo za vas i vaše učenike jer će im pomoći da premoste razlike između vizuelnog i tekstualnog programskog jezika. Smjernice za nastavu <strong>Pričanje priče s Hedy-jem</strong> sadrže tri plana časa u kojima se Hedy, programski jezik koji se postepeno usvaja, koristi kako bi djeca učila o programiranju.",
+
+                "Hedy je osmišljen za djecu koja žele da započnu rad s tekstualnim programskim jezicima, ali za koju bi početak sa Python-om možda bio isuviše zahtjevan. Jezici koji se postepeno usvajaju koriste različite nivoe jezika, gdje svaki nivo dodaje nove koncepte i sintaksičku kompleksnost. Na kraju niza nivoa programskog jezika Hedy, učenici savladavaju podskup koji odgovara sintaksički valjanom Python-u.",
+
+                "U ovim smjernicama za nastavu, pronaći ćete interesantne i zanimljive aktivnosti kako biste svojim učenicima pomogli da efikasno koriste tekstualne programske jezike. Stvarajući svoje interaktivne priče, oni će postepeno savladati programiranje, a neće morati da nauče sve odjednom. U okviru plana časa za osnovnu školu, učenici se upoznavaju s osnovnim konceptima programiranja. Planom časa za niže razrede srednje škole uvode se dalji koncepti programiranja, dok se u okviru plana časa za više razrede srednje škole učenici osposobljavaju za programiranje složenijih priča i aktivnosti.",
+
+                "Pogledajte interaktivnu priču u nastavku da vidite kako čitaoci mogu učestvovati u priči i kako to pospješuje njihovo aktivno učešće."
+            ],
+            "activities" => [
+                "1" => "Kreirajte svoju interaktivnu priču s Hedy-jem za učenike osnovne škole",
+                "2" => "Kreirajte svoju interaktivnu priču s Hedy-jem za učenike nižih razreda srednje škole",
+                "3" => "Kreirajte svoju interaktivnu priču s Hedy-jem za učenike viših razreda srednje škole",
+            ]
+        ],
 
 
     ],
