@@ -264,6 +264,24 @@ W proponowanym filmie zespół Tygodnia Kodowania prezentuje kilka praktycznych,
                 "3" => "Sprawdzanie faktów",
             ]
         ],
+        "16" => [
+            "title" => "OPOWIADANIE HISTORII Z HEDY",
+            "author" => "Felienne Hermans",
+            "text" => [
+                "Czy twoi uczniowie opanowali już wizualny język programowania, ale nie czują się jeszcze gotowi na programowanie w języku opartym na tekście? W takim razie te zajęcia są właśnie dla ciebie i dla twoich uczniów – dzięki nim będą w stanie w prosty sposób przejść od wizualnych do tekstowych języków programowania. Zajęcia <strong>Opowiadanie historii z Hedy</strong> składają się z trzech planów zajęć opartych na stopniowanym języku programowania Hedy, opracowanym w celu uczenia dzieci programowania.",
+
+                "Język Hedy jest przeznaczony dla dzieci, które chcą rozpocząć przygodę z tekstowymi językami programowania, a dla których Python może być jeszcze zbyt skomplikowany i przytłaczający. Języki stopniowane pozwalają na naukę opartą na kolejnych poziomach – każdy poziom dodaje nowe pojęcia i zwiększa złożoność składni. Po przejściu przez wszystkie poziomy języka Hedy, uczniowie opanowują określony zbiór poleceń języka Python.",
+
+                "Materiały dydaktyczne zawierają inspirujące i ciekawe zadania, które pomogą uczniom efektywnie wykorzystywać tekstowe języki programowania. Tworząc własne interaktywne opowieści uczniowie stopniowo uczą się programowania, przy czym nie muszą poznawać wszystkich zagadnień jednocześnie. W scenariuszu zajęć dla uczniów szkół podstawowych uczniowie zapoznają się z podstawowymi pojęciami dotyczącymi programowania. Scenariusz zajęć dla uczniów starszych klas szkoły podstawowej wprowadza kolejne koncepcje, natomiast scenariusz dla uczniów szkół średnich uczy programowania bardziej złożonych opowieści i zadań.",
+
+                "Zobacz interaktywne opowieści poniżej, aby dowiedzieć się, jak czytelnicy mogą w nich uczestniczyć i jak doskonale wpływają na zaangażowanie."
+            ],
+            "activities" => [
+                "1" => "Stwórz własną interaktywną opowieść z Hedy dla uczniów szkół podstawowych",
+                "2" => "Stwórz własną interaktywną opowieść z Hedy dla uczniów starszych klas szkół podstawowych",
+                "3" => "Stwórz własną interaktywną opowieść z Hedy dla uczniów szkół średnich",
+            ]
+        ],
 
 
     ],

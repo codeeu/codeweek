@@ -268,6 +268,21 @@ Neste vídeo, a equipa da Semana da Programação vai mostrar-lhe algumas ativid
                 "3" => "Verificação de factos",
             ]
         ],
+        "16" => [
+            "title" => "CONTAR HISTÓRIAS COM HEDY",
+            "author" => "por Felienne Hermans",
+            "text" => [
+                "Os seus alunos já dominam uma linguagem de programação visual, mas não se sentem prontos para mergulhar mais fundo numa linguagem de programação baseada em texto? Então este bit de aprendizagem é perfeito para si e para os seus alunos, porque irá ajudá-los a preencher o fosso entre a linguagem de programação visual e a baseada em texto. O bit de aprendizagem <strong>Contar histórias com Hedy</strong> inclui três planos de aula que utilizam Hedy — uma linguagem de programação gradual para ensinar programação a crianças",
+                "A Hedy destina-se a crianças que querem começar com linguagens de programação textual, mas para as quais começar com Python poderia ser demasiado complexo. As linguagens gradativas utilizam diferentes níveis de linguagem, em que cada nível adiciona novos conceitos e complexidade sintática. No final da sequência de níveis da Hedy, os alunos dominam um subconjunto de Python sintaticamente válido.",
+                "Neste bit de aprendizagem encontrará atividades inspiradoras e envolventes, para ajudar os seus alunos a utilizarem eficientemente linguagens de programação baseadas em texto. Ao criarem as suas próprias histórias interativas, aprenderão gradualmente a programar, sem terem de aprender tudo de uma só vez. No plano de aula para o primeiro ciclo do ensino básico, são apresentados os conceitos básicos de programação. O plano de aula para o segundo e terceiro ciclos do ensino básico introduz outros conceitos de programação, enquanto o plano de aula para o ensino secundário permite que os alunos programem histórias e atividades mais complexas.",
+                "Consulte a história interativa abaixo para ver como os leitores podem participar na história e como ela promove o seu envolvimento ativo."
+            ],
+            "activities" => [
+                "1" => "Criar uma história interativa com Hedy para alunos do primeiro ciclo do ensino básico",
+                "2" => "Criar uma história interativa com Hedy para alunos do segundo e terceiro ciclos do ensino básico",
+                "3" => "Criar uma história interativa com Hedy para alunos do ensino secundário",
+            ]
+        ],
 
 
     ],
