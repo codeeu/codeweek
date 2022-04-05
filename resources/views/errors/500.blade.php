@@ -10,7 +10,7 @@
                 <h1>Error!</h1>
             </div>
             <div class="image">
-                <img src="images/robot_error.svg" class="static-image">
+                <img src="{{asset('images/robot_error.svg')}}" class="static-image">
             </div>
         </section>
 
