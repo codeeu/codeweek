@@ -2,8 +2,8 @@
 @props([
 'type' => 'label',
 'colors' => [
-'label' => 'bg-orange-200 text-gray-700',
-'tag' => 'bg-orange-400 text-white'
+'label' => 'bg-blue-200 text-gray-700',
+'tag' => 'bg-blue-400 text-white'
 ]
 ])
 <span {{$attributes->merge(['class' => "inline-block rounded-full px-3 py-1 text-sm font-semibold mx-1 my-1 {$colors[$type]}"])}}>
