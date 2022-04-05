@@ -2,17 +2,13 @@
 
 namespace App\Http\Livewire;
 
-use App\Country;
+
 use App\LeadingTeacherExpertise;
 use App\ResourceLevel;
 use App\ResourceSubject;
 use App\User;
-use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\DB;
 use Mediconesystems\LivewireDatatables\Column;
 use Mediconesystems\LivewireDatatables\DateColumn;
-use Mediconesystems\LivewireDatatables\TimeColumn;
-use Mediconesystems\LivewireDatatables\NumberColumn;
 use Mediconesystems\LivewireDatatables\BooleanColumn;
 use Mediconesystems\LivewireDatatables\Http\Livewire\LivewireDatatable;
 
@@ -30,7 +26,8 @@ class LeadingTeachersListTable extends LivewireDatatable
 
             Column::callback(['id', 'approved'], function ($id, $approved) {
                 return view('livewire.leading-teachers-list-table-actions', ['id' => $id, 'approved' => $approved]);
-            }),
+            })->excludeFromExport(),
+
             Column::name('firstname')
                 ->label('firstname')
                 ->filterable(),
@@ -44,13 +41,14 @@ class LeadingTeachersListTable extends LivewireDatatable
                 ->label('tag')
                 ->filterable(),
 
-            Column::name('country.name')
-                ->label('Country')
-                ->filterable(),
+            Column::name('country_iso')
+                ->label('Country Name')
+                ->filterable()
+                ,
 
-            Column::name('city.city')
-                ->label('City')
-                ->hide(),
+//            Column::name('city.city')
+//                ->label('City')
+//                ->hide(),
 
             Column::name('email')
                 ->label('email')
@@ -118,12 +116,5 @@ class LeadingTeachersListTable extends LivewireDatatable
         return ResourceSubject::all();
     }
 
-    //Exception thrown by livewire datatable when inside the 'content' section
-//    public function getCountriesProperty()
-//    {
-//        $isos =  User::role('leading teacher')->pluck('country_iso');
-//        $countries = Country::whereIn('iso',$isos)->pluck('name')->toArray();
-//        return $isos;
-//    }
 
 }
