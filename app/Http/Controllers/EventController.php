@@ -140,9 +140,6 @@ class EventController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function show(Event $event) {
-        /*$start_date = Carbon::parse($event->start_date);
-         dd($start_date->isoFormat('MMMM Do YYYY, h:mm:ss a'));*/
-        //dd(\Carbon\Carbon::now()->firstOfMonth(1)->isoFormat('ddd'));
         if ($event->status == 'PENDING' && !Auth::check()) {
             return redirect(route('login'));
         } elseif ($event->status != 'APPROVED') {
