@@ -9,7 +9,7 @@
     <div v-if="refresh"><strong>Moderation:</strong></div>
     <div class="actions">
       <button @click="approve" class="codeweek-action-button green">Approve</button>
-      <button @click="toggleModal" class="codeweek-action-button orange">Reject</button>
+      <button @click="toggleModal" class="codeweek-action-button">Reject</button>
       <button @click="toggleDeleteModal" class="codeweek-action-button red">Delete</button>
     </div>
 
@@ -37,7 +37,7 @@
             <p class="text-gray-800 text-lg leading-relaxed">
               This will help the activity organizer to improve his/her submission.
               <textarea id="rejectionText" name="rejectionText" rows="4" cols="40" v-model="rejectionText"
-                        class="px-1 py-1 placeholder-gray-400 text-gray-700 relative bg-orange-200 rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pr-3">
+                        class="px-1 py-1 placeholder-gray-400 text-gray-700 relative bg-blue-200 rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pr-3">
 
                             </textarea>
               <!--                            <input type="text" placeholder="Placeholder" />-->
@@ -53,7 +53,7 @@
             </button>
 
             <button @click="reject"
-                    class="bg-orange-500 text-white active:bg-green-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                    class="bg-red-500 text-white active:bg-green-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
                     type="button" style="transition: all 0.15s ease 0s;">Reject
             </button>
 
@@ -95,7 +95,7 @@
             </button>
 
             <button @click="deleteEvent"
-                    class="bg-orange-500 text-white active:bg-green-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                    class="bg-red-500 text-white active:bg-green-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
                     type="button" style="transition: all 0.15s ease 0s;">Delete
             </button>
 
