@@ -93,4 +93,10 @@ class EventHelper {
 
         return $events;
     }
+
+    public static function trimGeoposition($latitude, $longitude, $precision = 2){
+
+        $result = round($latitude,$precision, PHP_ROUND_HALF_DOWN) . "," . round($longitude, $precision, PHP_ROUND_HALF_DOWN);
+        return $result;
+    }
 }

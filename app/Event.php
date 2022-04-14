@@ -349,5 +349,9 @@ class Event extends Model
             ->setDescriptionForEvent(fn(string $eventName) => "Event {$this->id} has been {$eventName}");
     }
 
+    public function getTrimmedGeopositionAttribute(){
+        return EventHelper::trimGeoposition($this->latitude, $this->longitude);
+    }
+
 
 }

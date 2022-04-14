@@ -19,17 +19,17 @@
 <ul>
     <li>
     @foreach($locations as $location)
-        <a href="{{route('create_event', ['location'=> $location->id])}}">{{$location->name}}<br/>
+            <a href="{{route('create_event', ['location'=> $location->id])}}">{{ucfirst($location->location)}}</a> [{{$location->name}}]<br/>
     @endforeach
     </li>
 </ul>
 
 
-            <div class="flex">
-                <a rel="noreferer noopener"
-                   href="{{route('location.add')}}"
-                   class="codeweek-action-link-button">Add new Address</a>
-            </div>
+{{--            <div class="flex">--}}
+{{--                <a rel="noreferer noopener"--}}
+{{--                   href="{{route('location.add')}}"--}}
+{{--                   class="codeweek-action-link-button">Add new Address</a>--}}
+{{--            </div>--}}
 
 
 
