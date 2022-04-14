@@ -16,7 +16,7 @@ class LocationController extends Controller
      */
     public function index()
     {
-        $locations = auth()->user()->locations()->orderBy('name')->get();
+        $locations = auth()->user()->locations()->orderBy('location')->get();
 
         return view('locations.index', compact('locations'));
     }

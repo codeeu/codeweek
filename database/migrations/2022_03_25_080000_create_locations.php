@@ -16,9 +16,10 @@ return new class extends Migration
 
         Schema::create('locations', function (Blueprint $table) {
             $table->id();
-
             $table->float('latitude', 12,6);
             $table->float('longitude', 12, 6);
+            $table->string('trimmed_geoposition', 20);
+            $table->string('geoposition', 42);
             $table->string('location', 1000);
             $table->string('name', 255)->nullable();
             $table->string('country_iso', 2);
@@ -30,6 +31,8 @@ return new class extends Migration
             $table->integer('event_id');
 
             $table->timestamps();
+
+            $table->unique(['user_id', 'geoposition']);
 
         });
     }

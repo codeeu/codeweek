@@ -10,8 +10,10 @@ $factory->define(Location::class, function (Faker $faker) {
 
 
     return [
-        'latitude' => $faker->latitude(42,59),
-        'longitude' => $faker->longitude(1,20),
+        'geoposition' => $faker->randomFloat() . ',' . $faker->randomFloat(),
+        'trimmed_geoposition' => $faker->text(10),
+        'latitude' => $faker->randomFloat(),
+        'longitude' => $faker->randomFloat(),
         'location' => $faker->address,
         'country_iso' => $faker->randomElement(['BE','FR','DE','NL']),
         'is_default' => $faker->boolean,
