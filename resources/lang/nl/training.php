@@ -262,8 +262,27 @@ Met Python kunnen leerlingen quizzen maken over historische gebeurtenissen, wisk
                 "1" => "Is het gratis als het op internet staat?",
                 "2" => "Klikken of niet klikken",
                 "3" => "Feiten controleren"
-    ]
-],
+            ]
+        ],
+
+        "16" => [
+            "title" => "EEN VERHAAL MAKEN MET HEDY",
+            "author" => "door Felienne Hermans",
+            "text" => [
+                "Hebben je leerlingen al een visuele programmeertaal onder de knie, maar zijn ze er nog niet helemaal klaar voor om dieper in te gaan op een op tekst gebaseerde programmeertaal? Dan is deze leerbit speciaal voor jou en je leerlingen, omdat het hen zal helpen de kloof tussen een visuele en een op tekst gebaseerde programmeertaal te overbruggen. De leerbit <strong>Een verhaal maken met Hedy</strong> bestaat uit drie lesplannen met Hedy - een graduele programmeertaal om kinderen te leren programmeren.",
+
+                "Hedy is bedoeld voor kinderen die aan de slag willen met tekstuele programmeertalen, maar voor wie het starten met Python misschien nog te complex is. Graduele talen gebruiken verschillende taalniveaus, waarbij elk niveau nieuwe concepten en syntactische complexiteit toevoegt. Aan het einde van de Hedy-niveaureeks beheersen leerlingen een gedeelte van syntactisch geldige Python.",
+
+                "In deze leerbit vind je inspirerende en boeiende activiteiten om je leerlingen te helpen efficiënt gebruik te maken van op tekst gebaseerde programmeertalen. Door hun eigen interactieve verhalen te maken, leren ze geleidelijk aan programmeren, zonder dat ze alles één keer hoeven te leren. In het lesplan voor de basisschool maken leerlingen kennis met de basisbegrippen van programmeren. Het lesplan voor de onderbouw van de middelbare school introduceert verdere programmeerconcepten, en met het lesplan voor de bovenbouw van de middelbare school leren leerlingen complexere verhalen en activiteiten programmeren.",
+
+                "Bekijk het interactieve verhaal hieronder om te zien hoe lezers kunnen deelnemen aan het verhaal en hoe het hun actieve betrokkenheid bevordert."
+            ],
+            "activities" => [
+                "1" => "Maak je eigen interactieve verhaal met Hedy voor basisschoolleerlingen",
+                "2" => "Maak je eigen interactieve verhaal met Hedy voor leerlingen van de onderbouw van de middelbare school",
+                "3" => "Maak je eigen interactieve verhaal met Hedy voor leerlingen van de bovenbouw van de middelbare school",
+            ]
+        ],
 
 
     ],
@@ -271,10 +290,10 @@ Met Python kunnen leerlingen quizzen maken over historische gebeurtenissen, wisk
     'ready_to_share' => 'Ben je er klaar voor om wat je hebt geleerd te delen met je leerlingen?',
     'choose_lessons' => 'Kies een van de onderstaande lesplannen en organiseer een activiteit met je leerlingen.',
     'footer' => [
-    'title' => 'Vergeet niet je activiteit toe te voegen aan de kaart van de programmeerweek!',
-    'text' => '<p>Je kunt gemakkelijk een les in je klas, een opendeurdag of een evenement op je school organiseren. Zoek gewoon een datum en registreer je activiteit op de <a href="/events">kaart van de EU-programmeerweek</a>. Iedereen die een activiteit organiseert, krijgt een deelnamecertificaat voor zijn of haar inzet.</p>
+        'title' => 'Vergeet niet je activiteit toe te voegen aan de kaart van de programmeerweek!',
+        'text' => '<p>Je kunt gemakkelijk een les in je klas, een opendeurdag of een evenement op je school organiseren. Zoek gewoon een datum en registreer je activiteit op de <a href="/events">kaart van de EU-programmeerweek</a>. Iedereen die een activiteit organiseert, krijgt een deelnamecertificaat voor zijn of haar inzet.</p>
 
 <p>Wil je in contact komen met een internationale groep enthousiaste leraren? Word dan lid van de <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Facebook-groep van de EU-programmeerweek voor leraren</a>! Als je nog een stap verder wilt gaan en wilt samenwerken met andere scholen in je land of andere landen, doe dan mee met de <a href="/codeweek4all">Code Week 4 All-uitdaging</a>.</p>'
-]
+    ]
 
 ];

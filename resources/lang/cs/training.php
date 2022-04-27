@@ -254,7 +254,7 @@ V Pythonu mohou studenti vytvářet kvízy o historických událostech, řešit 
             "title" => "Získávání mediální gramotnosti",
             "author" => "od Marijana Smolčec, Tea Horvatić a Sanja Božinović",
             "text" => [
-                "Výuka mediální gramotnosti nikdy předtím nebyla pro dnešní studenty tak důležitá. Studenti všech věkových skupin potřebují získat odpovídající dovednosti, vědomosti a postoje, aby byli schopni se orientovat v našem světě bohatém na média. Dovednosti v oblasti mediální gramotnosti jim pomohou používat důvěryhodný online obsah a rozpoznat zavádějící zdroje informací. Pochopí, jak ověřit fakta u informací, které najdou online, a jak je kriticky interpretovat. Zvýší své povědomí o správném využívání tvůrčí práce a uplatní své učení při vytváření vlastního tvůrčího obsahu.",
+                "Výuka mediální gramotnosti nikdy předtím nebyla pro dnešní studenty tak důležitá. Studenti všech věkových skupin potřebují získat odpovídající dovednosti, vědomosti a postoje, aby byli schopni se orientovat v našem světě bohatém na média. Dovednosti v oblasti mediální gramotnosti jim pomohou používat důvěryhodný online obsah a rozpoznat zavádějící zdroje informací. Pochopí, jak ověřit fakta u informací, které najdou online, a jak je kriticky interpretovat. Zvýší své povědomí o správném využívání tvůrčí práce a uplatní své učení při vytváření vlastního tvůrčího obsahu.",
                 "Tento výukový bit vám umožní implementovat různé strategie a techniky, které vaše studenty podpoří na cestě stát se mediálně gramotnými. Při aktivitě od Marijany se studenti naučí, jak používat bezpečně a zodpovědně webový obsah. Jsou jim představeny různé druhy licencí a vyvíjejí jednoduchou aplikaci, aby předvedli, jak správně sdílet tvůrčí práci. Při aktivitě od Tey se studenti chopí úkolu dozvědět se o clickbaitech. Prostřednictvím poutavých úkolů studenti zkoumají strategie, jak identifikovat a odhalit clickbaity a učí se jim vyhnout. Sanja umožňuje studentům prozkoumat a kriticky analyzovat a vyhodnotit webový obsah, jeho relevanci, přesnost, původ a účel. Studenti se učí, jak nalézt spolehlivé zdroje online a jak rozeznat špatné informace online.",
                 "V níže uvedených plánech lekcí najdete inspirativní a poutavé aktivity ke zlepšení dovedností studentů v oblasti mediální gramotnosti:",
             ],
@@ -262,6 +262,24 @@ V Pythonu mohou studenti vytvářet kvízy o historických událostech, řešit 
                 "1" => "Je to zdarma, pokud je to na Internetu?",
                 "2" => "Kliknout nebo nekliknout",
                 "3" => "Ověřování faktů",
+            ]
+        ],
+        "16" => [
+            "title" => "VYPRÁVĚNÍ PŘÍBĚHŮ S HEDY",
+            "author" => "od Felienne Hermans",
+            "text" => [
+                "Zvládli již vaši žáci vizuální programovací jazyk, ale necítí se být připraveni proniknout hlouběji do textového programovacího jazyka? Pak je tento školicí materiál určen právě vám a vašim žákům, protože jim pomůže překlenout mezeru mezi vizuálním a textovým programovacím jazykem. Školicí materiál <strong>Vyprávění příběhů s Hedy</strong> sestává ze tří učebních plánů, které využívají jazyk Hedy – stupňovitý programovací jazyk, který si klade za cíl naučit děti programovat.",
+
+                "Jazyk Hedy je určen dětem, které chtějí začít s textovými programovacími jazyky, ale pro něž by bylo začínat s jazykem Python pravděpodobně stále ještě příliš složité. Stupňovité jazyky používají různé jazykové úrovně, přičemž každá úroveň přidává nové koncepty a syntaktickou složitost. Na konci sekvence úrovní jazyka Hedy žáci ovládají podmnožinu syntakticky platného jazyka Python.",
+
+                "V tomto školicím materiálu najdete inspirativní a zajímavé aktivity, které vašim studentům pomohou efektivně využívat textové programovací jazyky. Vytvářením vlastních interaktivních příběhů se postupně naučí programovat, aniž by se museli učit vše najednou. V učebním plánu pro základní školu jsou žákům představeny základní koncepty programování. Učební plán pro žáky druhého stupně základních škol představuje další programovací koncepty a učební plán pro žáky středních škol umožňuje žákům programovat komplexnější příběhy a aktivity.",
+
+                "Podívejte se na interaktivní příběh níže a zjistěte, jak se mohou čtenáři na příběhu podílet a jak podporuje jejich aktivní zapojení."
+            ],
+            "activities" => [
+                "1" => "Vytvořte svůj vlastní interaktivní příběh s Hedy pro žáky základních škol",
+                "2" => "Vytvořte svůj vlastní interaktivní příběh s Hedy pro žáky druhého stupně základních škol",
+                "3" => "Vytvořte svůj vlastní interaktivní příběh s Hedy pro žáky středních škol",
             ]
         ],
 
