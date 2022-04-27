@@ -265,7 +265,25 @@ A Pythonnal a diákok kvízeket hozhatnak létre történelmi eseményekről, ma
                 "2" => "Klikkelni vagy nem klikkelni",
                 "3" => "Tényellenőrzés",
             ]
-        ]
+        ],
+        "16" => [
+            "title" => "TÖRTÉNETMESÉLÉS HEDYVEL",
+            "author" => "készítette: Felienne Hermans",
+            "text" => [
+                "Diákjaid már elsajátítottak egy vizuális programozási nyelvet, de még nem érzik felkészültnek magukat arra, hogy fejest ugorjanak egy szövegalapú programozási nyelvbe? Akkor ez a tudásmorzsa pont neked és diákjaidnak szól, mert segít áthidalni a vizuális és a szövegalapú programozási nyelvek közötti távolságot. A <strong>Történetmesélés Hedyvel</strong> tudásmorzsa három óravázlatot tartalmaz, amelyek a Hedy elnevezésű fokozatos programozási nyelv alkalmazásával tanítják a gyerekeket a programozásra.",
+
+                "A Hedy azoknak a gyerekeknek készült, akik szeretnének belevágni a szövegalapú programozási nyelvek használatába, de a Python még túl bonyolult nekik. A fokozatos nyelvek különböző szintekből épülnek fel, ahol minden szint új fogalmakat vezet be és egy magasabb szintaktikai bonyolultsági fokra lép. Miután a diákok teljesítették a Hedy összes szintjét, jó néhány Python kódot le tudnak majd helyesen írni.",
+
+                "Ez a tudásmorzsa inspiráló és érdekes tevékenységeket kínál, amelyek segítségével diákjaid hatékonyan ismerkedhetnek meg a szövegalapú programozási nyelvekkel. Saját interaktív történeteik létrehozása során fokozatosan sajátítják el a programozást, így nem kell mindent egyszerre megtanulniuk. Az általános iskolásoknak készült óravázlat révén a diákok megismerik a programozás alapelveit. Az alsó középfokú óravázlat bővíti a programozási fogalmak körét, míg a felső középfokú óravázlat lehetővé teszi bonyolultabb történetek és tevékenységek programozását.",
+
+                "Nézd meg az alábbi interaktív történetet, amelyből kiderül, hogyan alakíthatják az olvasók a történetet, és hogyan ösztönzi maga a történet aktív részvételüket."
+            ],
+            "activities" => [
+                "1" => "Készítsd el saját interaktív történetedet Hedyvel általános iskolások számára",
+                "2" => "Készítsd el saját interaktív történetedet Hedyvel alsó középfokú oktatásban részt vevő diákok számára",
+                "3" => "Készítsd el saját interaktív történetedet Hedyvel felső középfokú oktatásban részt vevő diákok számára",
+            ]
+        ],
 
 
 

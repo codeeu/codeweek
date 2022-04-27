@@ -270,6 +270,25 @@ Con Python gli studenti possono creare quiz su eventi storici, risolvere problem
             ]
         ],
 
+        "16" => [
+            "title" => "NARRARE STORIE CON HEDY",
+            "author" => "a cura di Felienne Hermans",
+            "text" => [
+                "Alunni e alunne delle tue classi sanno già padroneggiare un linguaggio di programmazione visuale, ma non si sentono ancora pronti a immergersi più in profondità nel linguaggio di programmazione testuale? Questa pillola di apprendimento fa al caso tuo e delle tue classi poiché le aiuterà a colmare il divario tra il linguaggio di programmazione visuale e quello testuale. La pillola di apprendimento <strong>Narrare storie con Hedy</strong> comprende tre piani di lezione che utilizzano Hedy, un linguaggio di programmazione graduale che insegna a bambini e bambine come programmare.",
+
+                "Hedy si rivolge a bambini e bambine che vogliono cimentarsi con linguaggi di programmazione testuali, ma che pensano che iniziare con Python sia troppo difficile. I linguaggi graduali si avvalgono di diversi livelli di programmazione, per cui ogni livello aggiunge nuovi concetti e complessità sintattica. Al termine della sequenza di livelli di Hedy, alunni e alunne saranno in grado di padroneggiare un sottoinsieme di Python valido dal punto di vista sintattico.",
+
+                "Nel corso di questa pillola di apprendimento avrai modo di trovare attività stimolanti e coinvolgenti per aiutare studenti e studentesse a impiegare efficientemente i linguaggi di programmazione testuali. Tramite la creazione delle proprie storie interattive, impareranno gradualmente a programmare senza dovere imparare tutto subito. Nel piano di lezione per la scuola primaria, ad alunni e alunne vengono presentati i concetti base della programmazione. Il piano di lezione per le scuole secondarie di primo grado introduce ulteriori concetti di programmazione, mentre il piano di lezione per le scuole secondarie di secondo grado permette a studenti e studentesse di programmare storie e attività di complessità superiore.",
+
+                "Dai uno sguardo alla storia interattiva di seguito per vedere in che modo lettori e lettrici possono partecipare alla storia, promuovendone il coinvolgimento attivo."
+            ],
+            "activities" => [
+                "1" => "Dai vita alla tua storia interattiva con Hedy per alunni e alunne della scuola primaria",
+                "2" => "Dai vita alla tua storia interattiva con Hedy per studenti e studentesse della scuola secondaria di primo grado",
+                "3" => "Dai vita alla tua storia interattiva con Hedy per studenti e studentesse della scuola secondaria di secondo grado",
+            ]
+        ],
+
 
     ],
     'download_video_script' => 'Scarica lo script video',

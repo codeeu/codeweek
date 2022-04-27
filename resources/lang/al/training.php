@@ -267,6 +267,24 @@ Në këtë video, ekipi i Code Week do t’ju tregojë disa aktivitete praktike,
                 "3" => "Kontrollimi i fakteve",
             ]
         ],
+        "16" => [
+            "title" => "TREGIMI I HISTORIVE ME HEDY",
+            "author" => "nga Felienne Hermans",
+            "text" => [
+                "A kanë mësuar nxënësit tuaj tashmë një gjuhë vizuale programimi, por nuk ndihen ende gati të shkojnë më thellë në një gjuhë programimi me bazë teksti? Atëherë kjo pjesë mësimore është pikërisht për ju dhe nxënësit tuaj sepse do t’i ndihmojë ata të kapërcejnë hendekun midis një gjuhe vizuale programimi dhe një të bazuar në tekst. Mësimi <strong>Tregimi i historive me Hedy</strong> përbëhet nga tre plane mësimore që përdorin Hedy – një gjuhë graduale programimi për t’u mësuar fëmijëve programimin.",
+
+        "Hedy është krijuar për fëmijët që duan të fillojnë me gjuhët tekstuale të programimit, por për të cilët fillimi me Python mund të jetë ende shumë kompleks. Gjuhët graduale përdorin nivele të ndryshme gjuhësore, ku çdo nivel shton koncepte të reja dhe kompleksitet sintaksor. Në fund të sekuencës së nivelit të Hedy, nxënësit zotërojnë një nëngrup të Python të vlefshëm nga ana sintaksore.",
+
+        "Në këtë mësim do të gjeni aktivitete frymëzuese dhe tërheqëse për t’i ndihmuar nxënësit tuaj të përdorin në mënyrë efikase gjuhët e programimit të bazuara në tekst. Duke krijuar historitë e veta interaktive, ata gradualisht do të mësojnë programimin, pa pasur nevojë ta mësojnë gjithçka menjëherë. Në planin mësimor për shkollën fillore, nxënësit njihen me konceptet bazë të programimit. Plani mësimor për ciklin e mesëm të ulët prezanton koncepte të mëtejshme programimi, ndërsa plani mësimor për ciklin e mesëm të lartë u mundëson nxënësve të programojnë histori dhe aktivitete më komplekse.",
+
+        "Shikoni historinë interaktive më poshtë për të parë se si lexuesit mund të marrin pjesë në histori dhe se si ajo nxit angazhimin e tyre aktiv."
+    ],
+    "activities" => [
+        "1" => "Krijoni historinë tuaj interaktive me Hedy për nxënësit e shkollës fillore",
+        "2" => "Krijoni historinë tuaj interaktive me Hedy për nxënësit e ciklit të mesëm të ulët",
+        "3" => "Krijoni historinë tuaj interaktive me Hedy për nxënësit e ciklit të mesëm",
+    ]
+],
 
 
     ],

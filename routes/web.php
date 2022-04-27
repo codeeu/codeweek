@@ -1,6 +1,5 @@
 <?php
 
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -126,6 +125,11 @@ Route::get(
     '/training/mining-media-literacy',
     'StaticPageController@static'
 )->name('training.module-15');
+
+Route::get(
+    '/training/story-telling-with-hedy',
+    'StaticPageController@static'
+)->name('training.module-16');
 
 Route::get('/resources/CodingAtHome', 'CodingAtHomeController@show')->name(
     'coding@home'

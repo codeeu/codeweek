@@ -266,6 +266,24 @@ Naudodami „Python“, mokiniai gali kurti viktorinas apie istorinius įvykius,
                 "3" => "Faktų tikrinimas",
             ]
         ],
+        "16" => [
+            "title" => "ISTORIJOS PASAKOJIMAS SU HEDY",
+            "author" => "Felienne Hermans",
+            "text" => [
+                "Jūsų mokiniai jau išmoko vizualią programavimo kalbą, bet nesijaučia pasiruošę gilintis į tekstinę? Tada šis mokymosi segmentas yra skirtas kaip tik jums ir jūsų mokiniams. Jis padės įveikti atotrūkį tarp vizualios ir tekstinės programavimo kalbų. Mokymosi segmentą <strong>„Istorijos pasakojimas su Hedy“</strong> sudaro trys pamokos planai, skirti Hedy – laipsniškai programavimo kalbai, kuri padeda vaikams išmokti programuoti.",
+
+                "Hedy yra skirta vaikams, kurie nori mokytis tekstinių programavimo kalbų, bet kuriems Python gali būti dar per sudėtinga. Laipsniškose kalbose yra skirtingi kalbos lygiai, kurių kiekvienas pasižymi naujomis sąvokomis ir vis sudėtingesne sintakse. Pabaigę visus Hedy lygius mokiniai išmoksta dalį taisyklingos Python sintaksės.",
+
+                "Šiame mokymosi segmente rasite įkvepiančių ir įtraukiančių užduočių, kurios padės mokiniams efektyviai naudoti tekstines programavimo kalbas. Kurdami interaktyvias istorijas, jie palaipsniui mokysis programuoti, todėl nereikės visko žinoti iš karto. Pradinių klasių mokiniams skirtame pamokos plane mokiniai supažindinami su pagrindinėmis programavimo sąvokomis. Vidurinės mokyklos jaunesnių klasių mokiniams skirtame pamokos plane pristatomos tolesnės programavimo sąvokos, o vyresnių klasių mokiniams skirtame pamokos plane paaiškinama, kaip padėti mokiniams programuoti sudėtingesnes istorijas.",
+
+                "Susipažinkite su toliau pateikta interaktyvia istorija ir sužinokite, kaip skaitytojai gali dalyvauti istorijoje ir kaip tai skatina jų aktyvų įsitraukimą."
+            ],
+            "activities" => [
+                "1" => "Sukurkite interaktyvią istoriją su Hedy – pradinių klasių mokiniams",
+                "2" => "Sukurkite interaktyvią istoriją su Hedy – vidurinės mokyklos jaunesnių klasių mokiniams",
+                "3" => "Sukurkite interaktyvią istoriją su Hedy – vidurinės mokyklos vyresnių klasių mokiniams",
+            ]
+        ],
 
 
 

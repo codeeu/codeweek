@@ -265,6 +265,24 @@ Mit Python können Ihre Schülerinnen und Schüler u. a. Ratespiele zu historisc
                 "3" => "Faktenüberprüfung",
             ]
         ],
+        "16" => [
+            "title" => "GESCHICHTENERZÄHLEN MIT HEDY",
+            "author" => "von Felienne Hermans",
+            "text" => [
+                "Ihre Schülerinnen und Schüler beherrschen bereits eine visuelle Programmiersprache, fühlen sich aber noch nicht bereit dazu, tiefer in eine textbasierte Programmiersprache einzusteigen? Dann ist dieses Lernhäppchen genau das Richtige für Sie und Ihre Schüler*innen, denn es wird allen dabei helfen, die Lücke zwischen einer visuellen und einer textbasierten Programmiersprache zu schließen. Das Lernhäppchen <strong>Geschichtenerzählen mit Hedy</strong> besteht aus drei Unterrichtsplänen auf der Basis von Hedy, einer „mitwachsenden“ Programmiersprache, mit der Kinder das Programmieren lernen können.",
+
+                "Hedy richtet sich an Kinder, die mit textuellen Programmiersprachen loslegen möchten, denen jedoch der Einstieg in die Programmiersprache Python vielleicht noch zu kompliziert ist. Bei mitwachsenden Sprachen gibt es verschiedene Sprachlevel, wobei in jedem Level neue Konzepte und syntaktische Komplexität hinzukommen. Haben die Schüler*innen alle Hedy-Level durchlaufen, beherrschen sie eine Teilmenge von syntaktisch gültigem Python.",
+
+                "In diesem Lernhäppchen finden Sie anregende und begeisternde Aktivitäten, durch die Ihre Schüler*innen lernen, textbasierte Programmiersprachen effizient anzuwenden. Über das Erstellen ihrer eigenen interaktiven Geschichten lernen sie stufenweise das Programmieren, ohne sich alles auf einmal aneignen zu müssen. Im Unterrichtsplan für die Grundschule werden die Schüler*innen an die Grundbegriffe des Programmierens herangeführt. Im Unterrichtsplan für die Unterstufe einer weiterführenden Schule werden weitere Programmierkonzepte eingeführt, während im Unterrichtsplan für die Oberstufe einer weiterführenden Schule das Programmieren komplexerer Geschichten und Aktivitäten enthalten ist.",
+
+                "Schauen Sie sich die interaktive Geschichte unten an. Dort sehen Sie, wie die Lesenden in die Geschichte einsteigen können und wie sie ihre aktive Beteiligung fördert."
+            ],
+            "activities" => [
+                "1" => "Mit Hedy eine eigene interaktive Geschichte gestalten – für Grundschulkinder",
+                "2" => "Mit Hedy eine eigene interaktive Geschichte gestalten – für Schüler*innen der Unterstufe einer weiterführenden Schule",
+                "3" => "Mit Hedy eine eigene interaktive Geschichte gestalten – für Schüler*innen der Oberstufe einer weiterführenden Schule",
+            ]
+        ],
 
     ],
     'download_video_script' => 'Das Video-Script herunterladen',

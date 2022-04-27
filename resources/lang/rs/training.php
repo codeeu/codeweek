@@ -268,6 +268,24 @@ Pomoću Pythona učenici mogu da prave kvizove o istorijskim događajima, da re�
                 "3" => "Provera činjenica",
             ]
         ],
+        "16" => [
+            "title" => "PRIČANJE PRIČE UZ HEDY",
+            "author" => "autorke Felienne Hermans",
+            "text" => [
+                "Da li su vaši učenici već savladali vizuelni programski jezik, ali ne osećaju se spremni da dublje zarone u programski jezik zasnovan na tekstu? Onda je ovo učenje upravo za vas i vaše učenike jer će im pomoći da premoste jaz između vizuelnog i programskog jezika zasnovanog na tekstu. Deo za učenje <strong>Pričanje priče sa Hedy</strong> sastoji se od tri plana lekcija koji koriste Hedy – postepeni programski jezik za učenje dece da programiraju.",
+
+                "Hedy je namenjen decu koja žele da započnu sa programskim jezicima zasnovanim na tekstu, ali za koje je započinjanje sa Python-om možda i dalje previše složeno. Postepeni jezici koriste različite nivoe jezika, pri čemu svaki nivo dodaje nove koncepte i sintaksičku složenost. Na kraju niza nivoa u Hedy, učenici savladavaju podskup sintaksički važećeg Python-a.",
+
+                "U ovom delu za učenje, pronaći ćete aktivnosti koje inspirišu i angažuju da biste pomogli učenicima da efikasno koriste programske jezike zasnovane na tekstu. Kreiranjem sopstvenih interaktivnih priča, postepeno će naučiti programiranje, bez potrebe da sve nauče odjednom. U planu lekcije za osnovnu školu, učenici se upoznaju sa osnovnim konceptima programiranja. Plan lekcija za niže razrede srednjih škola uvodi dalje koncepte programiranja, dok plan lekcija za više razrede srednjih škola omogućava učenicima da programiraju složenije priče i aktivnosti.",
+
+                "Proverite interaktivnu priču ispod da biste videli kako čitaoci mogu da učestvuju u priči i kako ona neguje njihovo aktivno angažovanje."
+            ],
+            "activities" => [
+                "1" => "Sastavite sopstvenu interaktivnu priču sa Hedy za učenike osnovne škole",
+                "2" => "Sastavite sopstvenu interaktivnu priču sa Hedy za učenike nižih razreda srednje škole",
+                "3" => "Sastavite sopstvenu interaktivnu priču sa Hedy za učenike viših razreda srednje škole",
+            ]
+        ],
 
 
     ],

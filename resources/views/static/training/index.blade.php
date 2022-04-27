@@ -125,6 +125,13 @@
                         <div class="author">@lang('training.lessons.15.author')</div>
                     </a>
                 </div>
+                <div class="codeweek-card-grid">
+                    <a href="/training/story-telling-with-hedy">
+                        <img src="/img/learning/story-telling-with-hedy.png">
+                        <div class="title">@lang('training.lessons.16.title')</div>
+                        <div class="author">@lang('training.lessons.16.author')</div>
+                    </a>
+                </div>
             </section>
 
             <section class="codeweek-content-wrapper-inside">
