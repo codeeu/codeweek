@@ -126,6 +126,8 @@ class EventController extends Controller {
 
         $event->notifyAmbassadors();
 
+        $event->createLocation();
+
         Mail::to(auth()->user()->email)->queue(
             new \App\Mail\EventRegistered($event, auth()->user())
         );

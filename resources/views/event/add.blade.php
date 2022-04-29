@@ -144,6 +144,11 @@
                             <div class="codeweek-form-field align-flex-start">
                                 <label for="id_location"><span
                                             x-show="!isOnlineActivitySelected()">*</span>@lang('event.address.label')
+                                    <br/>
+                                    <a href="{{route('activities-locations')}}">
+                                        <img src="{{asset('svg/address-book.svg')}}" class="static-image">
+                                    </a>
+
                                 </label>
                                 <div>
                                     <autocomplete-geo name="location" placeholder="@lang('event.address.placeholder')"
@@ -325,6 +330,8 @@
             "width": "422",
             "custom": ["/js/hideMenuMap.js"]
         }
+
+
 
 
 
