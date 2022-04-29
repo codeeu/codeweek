@@ -19,7 +19,7 @@
             <h3>@lang('snippets.toolkits.0')</h3>
             <ul>
                 <li>
-                    <h2>EU Code Week 2021</h2>
+                    <h2>EU Code Week 2022</h2>
                 @include('_tookits')
 
                 <li><br/>
