@@ -16,7 +16,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 
-//Auth::loginUsingId(6680);
+//Auth::loginUsingId(203638);
 
 Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
     Route::get('/', function ($subdomain) {
@@ -654,8 +654,7 @@ Route::get('podcast/{podcast}', 'PodcastsController@show')->name('podcast');
 
 
 Route::group(['middleware' => ['auth']], function () {
-    Route::get('locations', 'LocationController@index')->name('locations');
-    Route::get('location/add', 'LocationController@create')->name('location.add');
+    Route::get('activities-locations', 'LocationController@index')->name('activities-locations');
 });
 
 Route::view('/registration', 'registration.add');

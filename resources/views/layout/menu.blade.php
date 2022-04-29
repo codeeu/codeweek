@@ -71,6 +71,12 @@
                             @lang('menu.profile')
                         </a>
                     </li>
+                    <li>
+                        <img src="{{asset('svg/address-book.svg')}}" class="static-image">
+                        <a href="{{route('activities-locations')}}">
+                            Activities Locations
+                        </a>
+                    </li>
                     @role('super admin|leading teacher')
                     <li class="p-1 text-orange-600 rounded">
 

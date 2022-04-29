@@ -85,7 +85,7 @@ class LocationsTest extends TestCase
         $user = create('App\User');
 
 
-        create('App\Event', ['creator_id'=> $user->id, 'geoposition' => '11.11,22.22'], 30);
+        create('App\Event', ['creator_id'=> $user->id, 'latitude' => '11.11', 'longitude' => '22.22', 'status' => 'APPROVED'], 30);
 
         $this->artisan('location:extraction');
 
@@ -93,6 +93,21 @@ class LocationsTest extends TestCase
 
         $this->assertCount(1, $user->fresh()->locations);
 
+    }
+
+
+    /** @test */
+    public function adding_activity_should_create_location()
+    {
+        $this->withoutExceptionHandling();
+
+        $user = create('App\User');
+
+        create('App\Location', ['user_id' => $user->id], 3);
+
+        $this->assertCount(3, $user->locations);
 
     }
+
+
 }
