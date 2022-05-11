@@ -109,5 +109,37 @@ class LocationsTest extends TestCase
 
     }
 
+    /** @test */
+    public function it_should_redirect_user_to_add_page_when_user_has_no_locations()
+    {
+        $this->withoutExceptionHandling();
+
+        $this->signIn();
+
+        $this->get('/add')
+            ->assertSeeText('Add your #CodeWeek activity');
+
+
+    }
+
+    /** @test */
+    public function it_should_redirect_user_to_locations_page_when_user_has_stored_locations()
+    {
+        $this->withoutExceptionHandling();
+
+        $user = create('App\User');
+
+        create('App\Location', ['user_id' => $user->id], 3);
+
+        $this->signIn($user);
+
+        $this->get('/add')
+            ->assertLocation(route('activities-locations'))
+            ->assertDontSeeText('Add your #CodeWeek activity');
+
+
+
+    }
+
 
 }

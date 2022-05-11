@@ -17,7 +17,7 @@ $factory->define(Location::class, function (Faker $faker) {
         'location' => $faker->address,
         'country_iso' => $faker->randomElement(['BE','FR','DE','NL']),
         'is_default' => $faker->boolean,
-        'is_favorite' => $faker->boolean,
+        'is_primary' => $faker->boolean,
         'user_id' => function () {
             return factory('App\User')->create()->id;
         },
