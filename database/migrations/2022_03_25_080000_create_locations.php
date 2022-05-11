@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('name', 255)->nullable();
             $table->string('country_iso', 2);
             $table->boolean('is_default')->default(false);
-            $table->boolean('is_favorite')->default(false);
+            $table->boolean('is_primary')->default(false);
             $table->string('organizer_type', 50)->nullable();
             $table->string('activity_type', 50)->nullable();
             $table->integer('user_id');

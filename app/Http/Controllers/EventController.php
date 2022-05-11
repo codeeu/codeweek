@@ -88,6 +88,8 @@ class EventController extends Controller {
      *
      */
     public function create(Request $request) {
+
+        //Redirect if we have locations
         $countries = \App\Country::all()->sortBy('name');
 
         $themes = \App\Theme::orderBy('order', 'asc')->get();
@@ -98,6 +100,11 @@ class EventController extends Controller {
            $location = auth()->user()->locations()->where('id', $request->get('location'))->firstOrFail();
            return view('event.add', compact(['countries', 'themes', 'languages', 'location']));
         }
+
+        if (!auth()->user()->locations->isEmpty()){
+            return redirect(route('activities-locations'));
+        }
+
 
 
         return view('event.add', compact(['countries', 'themes', 'languages']));
