@@ -102,7 +102,10 @@ class EventController extends Controller {
         }
 
         if (!auth()->user()->locations->isEmpty()){
-            return redirect(route('activities-locations'));
+            if (!$request->get('skip')){
+                return redirect(route('activities-locations'));
+            }
+
         }
 
 
