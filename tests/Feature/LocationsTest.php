@@ -141,5 +141,24 @@ class LocationsTest extends TestCase
 
     }
 
+    /** @test */
+    public function it_should_not_redirect_user_to_locations_page_when_user_has_stored_locations_but_clicked_on_skip()
+    {
+        $this->withoutExceptionHandling();
+
+        $user = create('App\User');
+
+        create('App\Location', ['user_id' => $user->id], 3);
+
+        $this->signIn($user);
+
+
+        $this->get('/add?skip=1')
+            ->assertSeeText('Add your #CodeWeek activity');
+
+
+
+    }
+
 
 }
