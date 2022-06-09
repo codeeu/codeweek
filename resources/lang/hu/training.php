@@ -284,6 +284,21 @@ A Pythonnal a diákok kvízeket hozhatnak létre történelmi eseményekről, ma
                 "3" => "Készítsd el saját interaktív történetedet Hedyvel felső középfokú oktatásban részt vevő diákok számára",
             ]
         ],
+        "17" => [
+            "title" => "Érezd a programozást",
+            "author" => "Alenka Miljević tollából",
+            "text" => [
+                "Szociális és érzelmi jóllétünk függ attól, hogy képesek vagyunk-e ellenállni a stressznek, kezelni saját érzelmeinket, reagálni mások érzelmeire, mély kapcsolatokat kialakítani, olyan érzelmeket generálni, amelyek jó érzéssel töltenek el bennünket, és létrehozni saját érzelmi támogató hálózatunkat. Azok a szociális és érzelmi készségek, amelyeket a fiatalok az iskolában elsajátítanak, segítenek kiépíteni stressztűrő képességüket, és mintát nyújtanak ahhoz, hogyan gondoskodjanak életük során testi és szellemi egészségükről. (Európa Tanács)",
+                "Az Érezd a programozást tudásmorzsával hozzájárulhat diákjai szociális és érzelmi jóllétéhez azáltal, hogy megtanítja őket felismerni, megmagyarázni és megérteni a pozitív és negatív érzelmeket, valamint reagálni rájuk, ezáltal fejlesztve empatikus és stressztűrő képességüket. Ez a tudásmorzsa inspiráló és érdekes gyakorlatokat kínál, amelyek segítségével diákjai a programozáson keresztül fejleszthetik a különböző érzelmek kezelésére irányuló készségeiket. Diákjai a Bee-Bot robot használatával megtanulják, hogyan fejezzék ki érzelmeiket és hogyan reagáljanak társaik érzelmeire.",
+                "Az Érezd a programozást tudásmorzsa három óravázlatot tartalmaz, amelyek a Bee-Bot készségfejlesztő robotra támaszkodva hoznak létre a diákokat érzelmeik kifejezésére és empatikus képességük fejlesztésére ösztönző feladatokat. Az általános iskolások számára kidolgozott óravázlat segíti a diákokat, hogy a Bee-Bot programozása közben beszéljenek az érzelmeikről, például szomorúságról, boldogságról, félelemről és dühről, és felfedezzék, hogy miért élik át ők maguk és társaik ezeket az érzelmeket. Az alsóbb évfolyamos középiskolásoknak szóló óravázlat arra ösztönzi a diákokat, hogy programozzák a Bee-Botot, felismerjék saját és társaik érzelmeit, megértsék, hogy mi váltotta ki azokat, és reagáljanak rájuk. A felsőbb évfolyamos középiskolásoknak készült óravázlat lehetővé teszi a diákok számára, hogy irányítsák a Bee-Botot, és történeteket alkossanak érzelmeikről, stressztűrő képességükről és empátiájukról.",
+                "Ha nincs készségfejlesztő robot a tanteremben, ez a tudásmorzsa arra is szolgáltat ötletet, hogyan tud a robot nélkül olyan feladatokat végrehajtani, amelyek elősegítik a szociális és érzelmi készségek fejlődését. Az alábbiakban rövid áttekintést nyújtunk a tanteremben kivitelezhető feladatokról:"
+            ],
+            "activities" => [
+                "1" => "Programozz - Érezz - Tanulj általános iskolai diákoknak",
+                "2" => "Nincs kőből a szívem alsóbb évfolyamos középiskolás diákoknak",
+                "3" => "Programozz a megfelelő hangulatra felsőbb évfolyamos középiskolás diákoknak",
+            ]
+        ],
 
 
 

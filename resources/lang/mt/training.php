@@ -285,6 +285,21 @@ F’dan il-vidjow, it-tim tal-Ġimgħa tal-Ikkowdjar se jurik xi attivitajiet pr
                 "3" => "Oħloq l-istorja interattiva tiegħek permezz ta’ Hedy għall-istudenti tal-iskola sekondarja tat-tieni livell",
             ]
         ],
+        "17" => [
+            "title" => "Ħoss il-Kodiċi",
+            "author" => "minn Alenka Miljević",
+            "text" => [
+                "Il-benesseri soċjali u emozzjonali hi l-kapaċità li tkun reżiljenti, tkun taf kif tiġġestjona l-emozzjonijiet tiegħek u tirrispondi għall-emozzjonijiet ta’ nies oħra, tiżviluppa relazzjonijiet utli ma’ oħrajn, tiġġenera emozzjonijiet li jwasslu għal sentimenti tajba u toħloq network ta’ appoġġ emozzjonali tiegħek stess. Il-ħiliet soċjali u emozzjonali li ż-żgħażagħ jitgħallmu fl-iskola jgħinuhom jibnu reżiljenza u jissettjaw mudell dwar kif ser jiġġestjonaw is-saħħa fiżika u mentali tagħhom matul il-ħajja kollha tagħhom. (Il-Kunsill tal-Ewropa)",
+                "Il-Komponent ta’ Tagħlim Ħoss il-Kodiċi ser jippermettilek trawwem il-benesseri soċjali u emozzjonali tal-istudenti tiegħek billi tagħraf, tispjega, tifhem u tirrispondi għal sentimenti pożittivi u negattivi u emozzjonijiet ħalli tibni empatija u reżiljenza.  F’dan il-Komponent ta’ Tagħlim ser issib attivitajiet ta’ ispirazzjoni u ta’ involviment biex tgħin lill-istudenti tiegħek jiżviluppaw ħiliet biex ileħħqu ma’ emozzjonijiet differenti permezz tal-ikkowdjar. L-istudenti tiegħek ser jitgħallmu jesprimu s-sentimenti tagħhom u kif jirreaġixxu għas-sentimenti tal-pari tagħhom bl-għajnuna ta’ robot Bee bot.",
+                "Il-komponent ta’ tagħlim Ħoss il-Kodiċi jikkonsisti fi tliet pjanijiet ta’ lezzjonijiet li jużaw ir-robot edukattiv Bee-bot biex joħloqu attivitajiet li jħeġġu lill-istudenti jitkellmu dwar l-emozzjonijiet u jiżviluppaw empatija. Fil-pjan ta’ lezzjoni għall-iskola primarja, l-istudenti jipprogrammaw Bee-bot biex jitkellmu dwar emozzjonijiet bħal dwejjaq, ferħ, biża’ u rabja u jiskopru raġunijiet li jispjegaw għaliex huma u l-pari tagħhom iħossu dawn l-emozzjonijiet. Il-pjan ta’ lezzjoni għall-iskola sekondarja baxxa jħeġġeġ lill-istudenti biex jipprogrammaw Bee-bot, jagħrfu s-sentimenti tagħhom stess u tal-pari tagħhom, jifhmu x’ikkawżawhom u kif jirrispondu għalihom. Il-pjan ta’ lezzjoni għall-iskola sekondarja għolja jgħin lill-istudenti jinnavigaw Bee-bot u jivvintaw stejjer dwar is-sentimenti, ir-reżiljenza u l-empatija.",
+                "Jekk m’għandekx robot fil-klassi tiegħek, dan il-Komponent ta’ Tagħlim se jipprovdilek ideat għal attivitajiet mhux ipplaggjati li jrawwem l-iżvilupp ta’ ħiliet soċjali u emozzjonali. L-interattiv t’hawn taħt jagħti ħarsa ġenerali qasira tal-attivitajiet li tista’ tagħmel ġol-klassi tiegħek."
+            ],
+            "activities" => [
+                "1" => "Kodiċi - Ħoss - Tgħallem għall-istudenti tal-iskola primarja",
+                "2" => "Qalbi mhix iebsa għal studenti tal-iskola sekondarja baxxa",
+                "3" => "Ikkowdjali għall-burdata għal studenti tal-iskola sekonardja għolja",
+            ]
+        ],
 
 
     ],
