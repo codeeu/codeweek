@@ -282,6 +282,21 @@ U ovom videu, tim Sedmice kodiranja će vam pokazati neke praktične, lake i zab
         "3" => "Napravite svoju vlastitu interaktivnu priču s Hedy za učenike viših škola",
     ]
 ],
+        "17" => [
+            "title" => "Osjetite kod",
+            "author" => "Autorica: Alenka Miljević ",
+            "text" => [
+                "Socijalna i emocionalna dobrobit je sposobnost da se bude otporan, da se zna kako upravljati emocijama i reagovati na emocije drugih ljudi, razvijati smislene odnose s drugima, stvarati emocije koje vode do dobrih osjećanja i kreirati svoju vlastitu mrežu emocionalne podrške. Socijalne i emocionalne vještine koje mladi nauče u školi pomažu im u izgradnji otpornosti i uspostavljaju obrazac za način na koji će oni upravljati svojim fizičkim i mentalnim zdravljem cijelog života. (Vijeće Evrope)",
+                "Segment učenja Osjetite kod omogućit će vam da potičete socijalnu i emocionalnu dobrobit svojih učenika spoznavanjem, pojašnjavanjem, razumijevanjem i reagovanjem na pozitivne i negativne osjećaje i emocije u cilju izgradnje suosjećanja i otpornosti.  U ovom segmentu učenja naći ćete inspirativne i zanimljive aktivnosti koje će vašim učenicima pomoći u izlaženju na kraj s različitim emocijama putem kodiranja. Vaši učenici će naučiti kako da izraze svoje osjećaje i kako da reaguju na emocije svojih vršnjaka uz pomoć robota Bee bot.",
+                "Segment učenja Osjetite kod sastoji se od tri nastavna plana kod kojih se koristi edukativni robot Bee-bot u cilju kreiranja aktivnosti kojima se učenici ohrabruju da govore o emocijama i razvijaju suosjećajnost. U nastavnom planu za osnovnu školu, učenici programiraju Bee bota da govori o emocijama poput tuge, sreće, straha i ljutnje, te otkrivaju razloge zašto oni i njihovi vršnjaci osjećaju te emocije. U nastavnom planu za nižu srednju školu učenici se ohrabruju da programiraju Bee bota, prepoznaju svoja vlastita i osjećanja svojih vršnjaka, shvate šta ih je izazvalo i kako da reaguju na njih. Nastavnim planom za višu srednju školu učenicima se omogućava da vrše navigaciju sa Bee botom i izmišljaju priče o osjećajima, otpornosti i suosjećajnosti.",
+                "Ako nemate edukativnog robota u učionici, ovaj segment učenja će vam pružiti ideje za aktivnosti van interneta kojima se potiče razvoj socijalnih i emocionalnih vještina. U donjem interaktivnom segmentu daje se kraći pregled aktivnosti koje možete raditi u učionici:"
+            ],
+            "activities" => [
+                "1" => "Kodirajte - osjetite - učite za učenike osnovnih škola",
+                "2" => "Moje srce nije od kamena za učenike nižih srednjih škola",
+                "3" => "Oraspoložite me kodiranjem za učenike viših srednjih škola",
+            ]
+        ],
 
     ],
     'download_video_script' => 'Preuzmite video skriptu',

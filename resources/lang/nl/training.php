@@ -283,6 +283,21 @@ Met Python kunnen leerlingen quizzen maken over historische gebeurtenissen, wisk
                 "3" => "Maak je eigen interactieve verhaal met Hedy voor leerlingen van de bovenbouw van de middelbare school",
             ]
         ],
+        "17" => [
+            "title" => "Programmeren met gevoel",
+            "author" => "door Alenka Miljević",
+            "text" => [
+                "Sociaal en emotioneel welzijn is het vermogen om veerkrachtig te zijn, te weten hoe je je emoties onder controle kunt houden en hoe je kunt reageren op de emoties van andere mensen, het ontwikkelen van diepgaande relaties met anderen, het voelen van emoties die leiden tot een goed humeur en het creëren van je eigen emotionele ondersteuningsnetwerk. De sociale en emotionele vaardigheden die jonge mensen leren op school, helpen hen om veerkrachtig te zijn en het patroon in werking te stellen dat zij zullen gebruiken om hun fysieke en mentale gezondheid te behouden gedurende de rest van hun leven. (Raad van Europa)",
+                "Met de leerbit Programmeren met gevoel kun je het sociale en emotionele welzijn van je leerlingen begeleiden door positieve en negatieve gevoelens en emoties te erkennen, uit te leggen en erop te reageren om empathie en veerkracht te leren.  In deze leerbit vind je inspirerende en boeiende activiteiten om je leerlingen te helpen vaardigheden voor het omgaan met verschillende emoties te ontwikkelen door middel van programmeren. De leerlingen leren hoe ze hun gevoelens moeten uiten en hoe ze kunnen reageren op de emoties van hun klasgenoten met behulp van een Bee-Bot-robot.",
+                "De leerbit Programmeren met gevoel bestaat uit drie lesplannen die een educatieve robot, de Bee-Bot, gebruiken om activiteiten te creëren die leerlingen aanmoedigen om te praten over emoties en om empathie te ontwikkelen. Bij het lesplan voor het basisonderwijs programmeren leerlingen een Bee-Bot om te praten over emoties zoals verdriet, blijdschap, angst en boosheid en ontdekken ze waarom zij en hun klasgenoten deze emoties voelen. Het lesplan voor de onderbouw in het voortgezet onderwijs moedigt leerlingen aan om de Bee-Bot te programmeren, hun eigen gevoelens en die van hun klasgenoten te herkennen en te begrijpen waarom ze zich zo voelen en hoe ze erop moeten reageren. Met het leerplan voor de bovenbouw in het voortgezet onderwijs kunnen leerlingen de Bee-Bot besturen en verhalen bedenken over gevoelens, veerkrachtigheid en empathie.",
+                "Als je geen educatieve robot hebt in je klaslokaal, zal deze leerbit je inspiratie geven voor unplugged activiteiten die de ontwikkeling van sociale en emotionele vaardigheden ondersteunen. Het interactieve gedeelte hieronder geeft een kort overzicht van de activiteiten die je kunt doen in de klas:"
+            ],
+            "activities" => [
+                "1" => "Programmeer - Voel - Leer voor het basisonderwijs",
+                "2" => "Mijn hart is niet van steen voor de onderbouw voortgezet onderwijs",
+                "3" => "Programmeer mijn gevoelens voor de bovenbouw voortgezet onderwijs",
+            ]
+        ],
 
 
     ],
