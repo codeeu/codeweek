@@ -110,7 +110,7 @@ return [
     "title"=>"La caccia al tesoro della Settimana della programmazione",
     "subtitle"=>[
         "Questo gioco è su Telegram, semplice quanto basta per i principianti, ma anche sufficientemente impegnativo da mettere alla prova i partecipanti più esperti",
-        "title"=>"La caccia al tesoro della Settimana della programmazione",
+        "La caccia al tesoro della Settimana della programmazione",
         "è un gioco da svolgere su PC con un cellulare in mano. Ti sarà chiesto di risolvere delle sfide di coding mentre percorrerai la storia della programmazione, dell'informatica e della tecnologia in Europa"
     ],
     "section" => [
