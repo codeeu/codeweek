@@ -486,6 +486,10 @@ Route::get('/profile', function () {
     ->name('profile')
     ->middleware('auth');
 
+Route::get('user/delete', 'UserController@delete')
+    ->name('delete_user')
+    ->middleware('auth');
+
 Route::get('/leading-teachers/signup', 'LeadingTeachersSignup@index')
     ->name('LT.signup')
     ->middleware('auth');
