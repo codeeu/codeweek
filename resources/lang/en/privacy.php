@@ -2,6 +2,7 @@
 
 return [
     'title' => 'PROTECTION OF YOUR PERSONAL DATA',
+    'subtitle' => 'This privacy statement provides information about the processing and the protection of your personal data.',
     '1-intro' => [
         'title' => '1. Introduction',
         'items' => [

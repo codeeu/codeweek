@@ -13,7 +13,19 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
+
+//Auth::loginUsingId(241748);
+
+Log::info('hello world of Codeweek');
+
+//$monolog = Log::getMonolog();
+//$syslog = new \Monolog\Handler\SyslogHandler('papertrail');
+//$formatter = new \Monolog\Formatter\LineFormatter('%channel%.%level_name%: %message% %extra%');
+//$syslog->setFormatter($formatter);
+//
+//$monolog->pushHandler($syslog);
 
 Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
     Route::get('/', function ($subdomain) {
