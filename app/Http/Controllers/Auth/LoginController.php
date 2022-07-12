@@ -53,15 +53,17 @@ class LoginController extends Controller
 
     /**
      * Obtain the user information from GitHub.
-
-     * @return Response
+ * @return \Illuminate\Http\RedirectResponse
      */
     public function handleProviderCallback($provider)
     {
-        $socialUser = Socialite::driver($provider)->stateless()->user();
+        if ('twitter' == $provider){
+            $socialUser = Socialite::driver($provider)->user();
+        } else{
+            $socialUser = Socialite::driver($provider)->stateless()->user();
+        }
 
         $this->loginUser($provider, $socialUser);
-
 
         return redirect()->intended('/');
 
