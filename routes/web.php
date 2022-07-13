@@ -48,6 +48,7 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/guide', 'StaticPageController@static')->name('guide');
 Route::get('/privacy', 'StaticPageController@static')->name('privacy');
+Route::get('/privacy/contact-points', 'StaticPageController@static')->name('privacy-contact-points');
 Route::get('/cookie', 'StaticPageController@static')->name('cookie');
 Route::get('/petition', 'StaticPageController@static')->name('petition');
 Route::get('/beambassador', 'StaticPageController@static')->name(
