@@ -128,7 +128,7 @@
                 <label>
                     <input id="checkPrivacy" name="privacy" wire:model="privacy"
                            type="checkbox">
-                    By ticking this box, I confirm that I have read and consent with the <a href="/privacy" target="_blank">treatment of the personal information</a>. <br/>
+                    By ticking this box, I confirm that I have read and consent with the <a href="{{route('privacy-contact-points')}}" target="_blank">treatment of the personal information</a>. <br/>
                     I have shared in this form and namely with the publication of that on the codeweek.eu. I understand that this information is shared in order to give better visibility to the Leading Teachers and allow interested teachers and individuals to contact me for specific questions or queries regarding the EU Code Week initiative.
                     <div style="color: red; margin-top:-20px;">
                 @component('components.validation-errors', ['field'=>'privacy'])

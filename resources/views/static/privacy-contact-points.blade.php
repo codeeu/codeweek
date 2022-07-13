@@ -127,11 +127,7 @@
 
 
             <h3 id="header-5"><strong>5. How long do we keep your personal data?</strong></h3>
-            <p>Unit F.4 only keeps your personal data for the time necessary to fulfil the purpose of collection or
-                further processing, namely for the duration of the browsing session. In addition, IP addresses might be
-                saved for one year in the log files of the services for security reasons. As to the analytics tool, the
-                IP address and the device ID (e.g. IMEI number and WIFI MAC address) are deleted immediately at
-                disconnection.</p>
+            <p>All personal data will be deleted from databases if you withdraw from the initiative or 5 years after the end of the initiative.</p>
 
             <h3 id="header-6"><strong>6. How do we protect and safeguard your personal data?</strong></h3>
             <p>All personal data in electronic format (e-mails, documents, databases, uploaded batches of data, etc.)
@@ -147,40 +143,15 @@
                 measures include restricting access to the personal data solely to authorised persons with a legitimate
                 need to know for the purposes of this processing operation.</p>
             <h3 id="header-7"><strong>7. Who has access to your personal data and to whom is it disclosed?</strong></h3>
-            <p>
-                Access to your personal data is provided to the Commission staff responsible for carrying out this
-                processing operation and to authorised staff according to the “need to know” principle. Such staff abide
-                by statutory, and when required, additional confidentiality agreements.
-            </p>
-            <p>
-                The information we collect will not be given to any third party, except to the extent and for the
-                purpose we may be required to do so by law.
-            </p>
+            <p>All personal data provided by you can be accessed by Commission staff on a “need to know” basis.</p>
+            <p>For the purpose of increasing the Code Week Ambassador, Leading Teacher’s or the registered activities’ visibility, all your personal data are published on the following <a href="https://codeweek.eu/">website</a>.</p>
+            <p>In addition, Unit F.4 might share your share your contact details with any member of the public or stakeholder that would need to contact you with regard to Code Week. For activity organisers, please note that the relevant Ambassador for your country or Unit F.4 can use the personal data you provided to register an activity to contact you with regard to said activity.</p>
 
             <h3 id="header-8"><strong>8. What are your rights and how can you exercise them? </strong></h3>
-            <p>
-                You have specific rights as a ‘data subject’ under Chapter III (Articles 14-25) of Regulation (EU)
-                2018/1725, in particular the right to access, rectify or erase your personal data and the right to
-                restrict the processing of your personal data. Where applicable, you also have the right to object to
-                the processing or the right to data portability.
-            </p>
-            <p>
-                You have the right to object to the processing of your personal data, which is lawfully carried out
-                pursuant to Article 5(1)(a).
-            </p>
-            <p>
-                You have consented to provide your personal data for the present processing operation. You can withdraw
-                your consent at any time by notifying Unit F.4. The withdrawal will not affect the lawfulness of the
-                processing carried out before you withdrew your consent.
-            </p>
-            <p>
-                You can exercise your rights by contacting the Data Controller, or in case of conflict the Data
-                Protection Officer. If necessary, you can also address the European Data Protection Supervisor. Their
-                contact information is given under Heading 9 below.
-            </p>
-            <p>Where you wish to exercise your rights in the context of one or several specific processing operations,
-                please provide their description (i.e. their Record reference(s) as specified under Heading 10 below) in
-                your request.</p>
+            <p>You have specific rights as a ‘data subject’ under Chapter III (Articles 14-25) of Regulation (EU) 2018/1725, in particular the right to access, rectify or erase your personal data and the right to restrict the processing of your personal data. Where applicable, you also have the right to object to the processing or the right to data portability.</p>
+            <p>You have consented to providing your personal data to Unit F.4 for the present processing operation. You can withdraw your consent at any time by notifying Unit F.4 at <a href="mailto:CNECT-F4@ec.europa.eu">CNECT-F4@ec.europa.eu</a>. The withdrawal will not affect the lawfulness of the processing carried out before you have withdrawn the consent.</p>
+            <p>You can exercise your rights by contacting the Data Controller, or in case of conflict the Data Protection Officer. If necessary, you can also address the European Data Protection Supervisor. Their contact information is given under Heading 9 below.</p>
+            <p>Where you wish to exercise your rights in the context of one or several specific processing operations, please provide their description (i.e. their Record reference(s) as specified under Heading 10 below) in your request.</p>
 
             <h3 id="header-9" style="margin-bottom: 10px;"><strong>9. Contact information</strong></h3>
 
@@ -196,7 +167,7 @@
                 The Commission Data Protection Officer (DPO) publishes the register of all processing operations on personal data by the Commission, which have been documented and notified to him. You may access the register via the following link: <a href="https://ec.europa.eu/dpo-register">https://ec.europa.eu/dpo-register</a>.
             </p>
             <p>
-                This specific processing operation has been included in the DPO’s public register with the following Record reference: <strong>DPR-EC-09706.1</strong>.
+                This specific processing operation has been included in the DPO’s public register with the following legacy notification reference: <strong>DPR-EC-02631</strong> Management of contact points for DG CONNECT policies, programmes and projects..
             </p>
 
         </section>
