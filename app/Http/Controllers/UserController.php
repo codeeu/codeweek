@@ -34,6 +34,16 @@ class UserController extends Controller
         return back()->with('flash', 'Your profile has been modified!');
     }
 
+
+    public function delete()
+    {
+        $user = auth()->user();
+        $user->delete();
+        return redirect()
+            ->route('login')
+            ->with('flash', 'Your event has been deleted!');
+    }
+
     public static function getMainAccount($email)
     {
         $users_with_same_email = User::where('email', $email)->get();

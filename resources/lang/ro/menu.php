@@ -15,7 +15,11 @@ return [
 
     'learn' => 'A învăța',
     'teach' => 'A preda',
-    'training' => 'Curs', 'toolkits' => 'Prezentări și instrumente', 'why' => 'DE CE', 'home'  => 'Pagina de pornire',
+    'training' => 'Curs',
+    'challenges' => 'Provocările',
+    'toolkits' => 'Prezentări și instrumente',
+    'why' => 'DE CE',
+    'home'  => 'Pagina de pornire',
     'events' => 'Activităţi',
     'ambassadors' => 'Ambasadori',
     'resources' => 'Resurse',
