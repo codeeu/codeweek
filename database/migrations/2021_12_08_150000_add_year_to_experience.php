@@ -12,7 +12,7 @@ class AddYearToExperience extends Migration {
      */
     public function up() {
         Schema::table('experiences', function (Blueprint $table) {
-            $table->unsignedInteger('year')->nullable();
+            $table->unsignedInteger('year');
         });
     }
 
