@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 
 class UserHelper {
 
-    public static function getInactiveUsers($nonActivityYears) {
+    public static function deleteInactiveUsers($nonActivityYears) {
         $deletedUsers = User::whereDate( 'updated_at', '<=', 
                                 now()->subYear($nonActivityYears))
                              ->delete();

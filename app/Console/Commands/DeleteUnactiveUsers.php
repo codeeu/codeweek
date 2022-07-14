@@ -30,7 +30,7 @@ class DeleteUnactiveUsers extends Command
      */
     public function handle()
     {
-        $deletedUsers = UserHelper::getInactiveUsers(5);
+        $deletedUsers = UserHelper::deleteInactiveUsers(5);
         $admin = config('codeweek.administrator');
         Mail::to($admin)->queue(new \App\Mail\DeletedUsers($deletedUsers));
     }
