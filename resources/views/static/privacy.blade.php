@@ -8,16 +8,15 @@
         <section class="codeweek-content-wrapper" style="margin-top: 0;">
 
             <h1 style="margin-bottom:10px;">PROTECTION OF YOUR PERSONAL DATA</h1>
-            <h3 style="margin-bottom:10px;">This privacy statement provides information about the processing and the protection of your personal data.</h3>
 
-            <div style="margin-bottom: 6px"><span style="font-weight: bold;">Processing operation:</span> management of
-                Code Week Ambassadors, Leading Teachers and registration of activities on the website
+            <div style="margin-bottom: 6px"><span style="font-weight: bold;">Processing operation:</span> Processing of
+                personal data on codeweek.eu, including IP addresses, by visitors of the publicly available websites.
             </div>
             <div style="margin-bottom: 6px"><span style="font-weight: bold;">Data Controller:</span> European
-                Commission, Directorate‑General for Communications Networks, Content and Technology (DG CONNECT), Unit
-                F.4
+                Commission, Directorate‑General for Communications Networks, Content and Technology, Unit F.4.
             </div>
-            <div style="margin-bottom: 6px"><span style="font-weight: bold;">Record reference:</span> DPR-EC-02631</div>
+            <div style="margin-bottom: 6px"><span style="font-weight: bold;">Record reference:</span> DPR-EC-09706.1
+            </div>
 
             <h3 style="margin-top:10px">Table of Contents</h3>
             <ol style="margin-bottom:20px">
@@ -52,82 +51,46 @@
                 you have in relation to your personal data. It also specifies the contact details of the responsible
                 Data Controller with whom you may exercise your rights, the Data Protection Officer and the European
                 Data Protection Supervisor.</p>
-            <p>The information in relation to processing of personal data for the management of Code Week Ambassadors,
-                Leading Teachers and registration of activities on the website.</p>
+            <p>The information in relation to processing operation <span style="font-style: italic">“Data processing on codeweek.eu”</span>
+                undertaken by the Commission is presented below.</p>
 
             <h3 id="header-2"><strong>2. Why and how do we process your personal data?</strong></h3>
-            <p><span style="text-decoration: underline">Purpose of the processing operation</span>: Unit F.4 collects
-                your personal information to allow the public to contact you regarding EU Code Week. Unit F.4 publishes
-                your personal information to facilitate the identification of contact points by the public or
-                stakeholders. Offering contacts with individuals rather than functional mailboxes is often the best and
-                most efficient way to ensure that interested people can get in contact with Commission services or with
-                the relevant contact points (national authorities, stakeholders, etc.).</p>
+            <p><span style="text-decoration: underline">Purpose of the processing operation</span>: The Commission’s
+                Directorate-General for Communications Networks, Content and Technology offer a number of external
+                websites. The technical setup collects and uses your personal information to be able to provide the
+                websites which are physically located outside the Commission controlled hosting infrastructure.</p>
+            <p>Your personal data will not be used for an automated decision-making including profiling.</p>
 
             <h3 id="header-3"><strong>3. On what legal ground(s) do we process your personal data?</strong></h3>
-            <p><span style="text-decoration: underline">Lawfulness of the processing operation:</span> Unit F.4
-                collects, stores and publishes your personal data, because you gave your explicit consent by ticking a
-                box when you signed up to become a Code Week Ambassador, a Leading Teacher or when you applied to
-                register an event on <a href="https://codeweek.eu/register">Europe Code Week.</a></p>
+            <p>We process your personal data on several grounds:</p>
+            <ul style="list-style-type: circle;margin-left:40px; margin-top:4px;">
+                <li><strong>Article 5(1)(a) of Regulation (EU) 2018/1725</strong>: this processing is <span style="text-decoration: underline">necessary for the performance of a task</span> carried out in the public interest or in the exercise of official authority vested in the Union institution or body.<br/>
+                    Indeed, informing the broad public is a task resulting from the European Commission's own prerogatives at institutional level, as provided for in Article 58(2) (d) of Council Regulation (EC, Euratom) No 2018/1046 of 18 July 2018 on the Financial Regulation applicable to the general budget of the European Communities (OJ L 193, 30.7.2018, p. 1). We ensure that adequate and specific safeguards are implemented for the processing of personal data, in line with the applicable data protection legislation. </li>
+                <li><strong>Article 5(1)(d) of Regulation (EU) 2018/1725:</strong> for the processing activities consisting in cookies and authentication, your <span style="text-decoration: underline">consent</span> is necessary. In compliance with Article 3(15) and Article 7 of Regulation (EU) 2018/1725, the consent must be freely given, specific, informed and unambiguous.</li>
+            </ul>
+            <p>We have obtained your consent directly from you. You may have expressed it by an email, submitted via e-registration form, or in any other written form.</p>
 
             <h3 id="header-4"><strong>4. Which personal data do we collect and further process?</strong></h3>
 
 
-            <div style="margin-top: 10px;">The <strong>mandatory</strong> personal data collected for <strong>Ambassadors
-                    and Leading Teachers</strong> are:
+            <div style="margin-top: 10px;">
+                In order to <strong>carry out this processing operation</strong>, Unit F.4 collects the following categories of personal data:
             </div>
             <ul style="list-style-type: circle;margin-left:40px; margin-top:4px;">
-                <li>Name;</li>
-                <li>Email address;</li>
-                <li>Password;</li>
-                <li>Picture; and</li>
-                <li>Biography;</li>
-                <li>Title;</li>
-                <li>Field of expertise for Leading Teachers.</li>
+                <li>Internet Protocol address (IP address) or the device ID of the device used to access the website.</li>
             </ul>
-
-            <div>When you <strong>register an activity, the mandatory</strong> personal data collected are:</div>
+            <div>Without this processing you will not be able to establish a technical connection between your devices and the server infrastructure and therefore will not be able to access our website.</div>
+            <div>In order for you to <strong>authenticate on this website</strong>, Unit F.4 collects the following categories of personal data: </div>
             <ul style="list-style-type: circle;margin-left:40px; margin-top:4px;">
-                <li>Name of the organisation;</li>
-                <li>Type of organisation;</li>
-                <li>Contact e-mail address.</li>
-            </ul>
-            The provision of this data is mandatory to be a Code Week Ambassador, Leading Teacher or to register an
-            activity on the Code Week website.
-
-            <div>In addition, <strong>Ambassadors and Leading Teachers</strong> can <strong>voluntarily</strong> provide
-                the following personal data: Social media accounts.
-            </div>
-            <ul style="list-style-type: circle;margin-left:40px; margin-top:4px;">
-                <li>Social media accounts.</li>
+                <li>E-mail address;</li>
+                <li>Password; or</li>
+                <li>Social media authentication.</li>
             </ul>
 
-            <div>
-                <strong>Activity organisers</strong> can <strong>voluntarily</strong> provide the following data:
-                <ul style="list-style-type: circle;margin-left:40px; margin-top:4px;">
-                    <li>Public contact e-mail address;</li>
-                    <li>Organiser’s website;</li>
-                    <li>Code Week for All Code.</li>
-                </ul>
-
-
-            </div>
-
-            <div style="margin-bottom: 10px">
-                For activity organisers, please note that the relevant Ambassador for your country or Unit F.4 can use
-                the personal data you provided to register an activity to contact you with regard to said activity.
-            </div>
-
-
-            <div>You provided your personal data by filling-in the relevant forms:
-                <ul style="list-style-type: circle;margin-left:40px; margin-top:4px;">
-                    <li><a href="https://codeweek.eu/register">User Registration;</a></li>
-                    <li><a href="https://codeweek.eu/add">Activity Registration;</a></li>
-                </ul>
-            </div>
 
 
             <h3 id="header-5"><strong>5. How long do we keep your personal data?</strong></h3>
-            <p>Unit F.4 only keeps your personal data for the time necessary to fulfil the purpose of collection or
+            <p>Unit F.4 only keeps your personal data for the time necessary to fulfill the purpose of collection or
                 further processing, namely for the duration of the browsing session. In addition, IP addresses might be
                 saved for one year in the log files of the services for security reasons. As to the analytics tool, the
                 IP address and the device ID (e.g. IMEI number and WIFI MAC address) are deleted immediately at
@@ -185,18 +148,30 @@
             <h3 id="header-9" style="margin-bottom: 10px;"><strong>9. Contact information</strong></h3>
 
             <h4>The Data Controller</h4>
-            <p>If you would like to exercise your rights under Regulation (EU) 2018/1725, or if you have comments, questions or concerns, or if you would like to submit a complaint regarding the collection and use of your personal data, please feel free to contact the Data Controller, Unit F.4, at <a href="mailto:CNECT-F4@ec.europa.eu">CNECT-F4@ec.europa.eu</a>.</p>
+            <p>If you would like to exercise your rights under Regulation (EU) 2018/1725, or if you have comments,
+                questions or concerns, or if you would like to submit a complaint regarding the collection and use of
+                your personal data, please feel free to contact the Data Controller, Unit F.4, at <a
+                        href="mailto:CNECT-F4@ec.europa.eu">CNECT-F4@ec.europa.eu</a>.</p>
             <h4>The Data Protection Officer (DPO) of the Commission</h4>
-            <p>You may contact the Data Protection Officer (<a href="mailto:DATA-PROTECTION-OFFICER@ec.europa.eu">DATA-PROTECTION-OFFICER@ec.europa.eu</a>) with regard to issues related to the processing of your personal data under Regulation (EU) 2018/1725.</p>
+            <p>You may contact the Data Protection Officer (<a href="mailto:DATA-PROTECTION-OFFICER@ec.europa.eu">DATA-PROTECTION-OFFICER@ec.europa.eu</a>)
+                with regard to issues related to the processing of your personal data under Regulation (EU) 2018/1725.
+            </p>
             <h4>The European Data Protection Supervisor (EDPS)</h4>
-            <p>You have the right to have recourse (i.e. you can lodge a complaint) to the European Data Protection Supervisor (<a href="mailto:edps@edps.europa.eu">edps@edps.europa.eu</a>) if you consider that your rights under Regulation (EU) 2018/1725 have been infringed as a result of the processing of your personal data by the Data Controller.</p>
+            <p>You have the right to have recourse (i.e. you can lodge a complaint) to the European Data Protection
+                Supervisor (<a href="mailto:edps@edps.europa.eu">edps@edps.europa.eu</a>) if you consider that your
+                rights under Regulation (EU) 2018/1725 have been infringed as a result of the processing of your
+                personal data by the Data Controller.</p>
 
-            <h3 id="header-10" style="margin-bottom: 10px;"><strong>10. Where to find more detailed information?</strong></h3>
+            <h3 id="header-10" style="margin-bottom: 10px;"><strong>10. Where to find more detailed
+                    information?</strong></h3>
             <p>
-                The Commission Data Protection Officer (DPO) publishes the register of all processing operations on personal data by the Commission, which have been documented and notified to him. You may access the register via the following link: <a href="https://ec.europa.eu/dpo-register">https://ec.europa.eu/dpo-register</a>.
+                The Commission Data Protection Officer (DPO) publishes the register of all processing operations on
+                personal data by the Commission, which have been documented and notified to him. You may access the
+                register via the following link: <a href="https://ec.europa.eu/dpo-register">https://ec.europa.eu/dpo-register</a>.
             </p>
             <p>
-                This specific processing operation has been included in the DPO’s public register with the following Record reference: <strong>DPR-EC-09706.1</strong>.
+                This specific processing operation has been included in the DPO’s public register with the following
+                Record reference: <strong>DPR-EC-09706.1</strong>.
             </p>
 
         </section>
