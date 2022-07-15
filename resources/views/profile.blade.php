@@ -18,10 +18,10 @@
                       <h3><a href="{{route('LT.signup')}}">Click here to Edit your Leading Teacher Profile</a></h3>
                       @endrole
                     </div>
-                    <div class="codeweek-form-button-container right" style="justify-content: right;">
+                    <div class="codeweek-form-button-container right" style="justify-content: right;  align-items: center;">
                     <a class="codeweek-action-link-button red"
                            onclick="return confirm('Are you actually intending to delete your account?')"
-                           href="{{route('delete_user')}}" style="font-size: 12px;  padding: 7px 10px">DELETE USER</a>       
+                           href="{{route('delete_user')}}" style="font-size: 12px;  padding: 7px 10px;">DELETE USER</a>       
             
                     </div>
                     
