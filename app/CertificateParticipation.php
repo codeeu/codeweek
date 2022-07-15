@@ -122,7 +122,19 @@ class CertificateParticipation
     {
 
         if ($this->is_greek_text($this->event_name) || $this->is_greek_text($this->event_date) || $this->is_greek_text($this->name_of_certificate_holder)) $this->templateName = "participation_greek.tex";
-//        Log::info($this->templateName);
+
+        if ($this->is_greek_text($this->event_name)) {
+            $this->event_name_lang = "greek";
+        }
+
+        if ($this->is_greek_text($this->event_date)) {
+            $this->event_date_lang = "greek";
+        }
+
+        if ($this->is_greek_text($this->name_of_certificate_holder)) {
+            $this->certificate_holder_name_lang = "greek";
+        }
+            //        Log::info($this->templateName);
         //open the latex template
         $base_template = Storage::disk('latex')->get($this->templateName);
 
@@ -130,6 +142,11 @@ class CertificateParticipation
         $template = str_replace('<CERTIFICATE_HOLDER_NAME>', $this->tex_escape($this->name_of_certificate_holder), $base_template);
         $template = str_replace('<EVENT_NAME>', $this->tex_escape($this->event_name), $template);
         $template = str_replace('<EVENT_DATE>', $this->tex_escape($this->event_date), $template);
+
+        $template = str_replace('<CERTIFICATE_HOLDER_NAME_LANG>', $this->tex_escape($this->certificate_holder_name_lang), $template);
+        $template = str_replace('<EVENT_NAME_LANG>', $this->tex_escape($this->event_name_lang), $template);
+        $template = str_replace('<EVENT_DATE_LANG>', $this->tex_escape($this->event_date_lang), $template);
+
 
         //save it locally
         Storage::disk('latex')->put($this->personalized_template_name . ".tex", $template);
