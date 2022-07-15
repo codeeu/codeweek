@@ -23,6 +23,9 @@ class Kernel extends ConsoleKernel {
      * @return void
      */
     protected function schedule(Schedule $schedule) {
+
+        $schedule->command('delete:unactiveusers')->weeklyOn(4, '8:00');
+        
         $schedule->command('remind:ambassadors')->dailyAt('9:00');
 
         $schedule->command('remind:creators')->dailyAt('10:00');
