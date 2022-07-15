@@ -25,6 +25,9 @@ class CertificateParticipation
     private $id;
     private $event_name;
     private $event_date;
+    private $certificate_holder_name_lang = "russian";
+    private $event_name_lang = "russian";
+    private $event_date_lang = "russian";
 
     public function __construct($name_for_certificate, $event_name, $event_date)
     {
