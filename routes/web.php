@@ -18,15 +18,6 @@ use Illuminate\Support\Facades\Mail;
 
 //Auth::loginUsingId(241748);
 
-Log::info('hello world of Codeweek');
-
-//$monolog = Log::getMonolog();
-//$syslog = new \Monolog\Handler\SyslogHandler('papertrail');
-//$formatter = new \Monolog\Formatter\LineFormatter('%channel%.%level_name%: %message% %extra%');
-//$syslog->setFormatter($formatter);
-//
-//$monolog->pushHandler($syslog);
-
 Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
     Route::get('/', function ($subdomain) {
         return redirect(Config::get('app.url') . '/' . $subdomain);
@@ -45,6 +36,8 @@ Route::get('setlocale', function (Request $request) {
 
 //Static pages
 Route::get('/', 'HomeController@index')->name('home');
+
+
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/guide', 'StaticPageController@static')->name('guide');
 Route::get('/privacy', 'StaticPageController@static')->name('privacy');
