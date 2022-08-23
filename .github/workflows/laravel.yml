@@ -25,8 +25,8 @@ jobs:
     - name: Install Dependencies
       run: |
           php --version
-          composer config "http-basic.nova.laravel.com" "${{ secrets.NOVA_USERNAME }}" "${{ secrets.NOVA_PASSWORD }}"
-          composer install -n --prefer-dist
+          composer config http-basic.nova.laravel.com ${{ secrets.NOVA_USERNAME }} ${{ secrets.NOVA_PASSWORD }}
+          composer install -n --prefer-dist         
     - name: Generate key
       run: php artisan key:generate
     - name: generate vue-i18n

@@ -12,7 +12,7 @@ class AddEditionFieldToAchievements extends Migration {
      */
     public function up() {
         Schema::table('achievements', function (Blueprint $table) {
-            $table->integer('edition');
+            $table->integer('edition')->nullable();
         });
 
     }

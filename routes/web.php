@@ -13,7 +13,10 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
+
+//Auth::loginUsingId(241748);
 
 Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
     Route::get('/', function ($subdomain) {
@@ -33,9 +36,12 @@ Route::get('setlocale', function (Request $request) {
 
 //Static pages
 Route::get('/', 'HomeController@index')->name('home');
+
+
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/guide', 'StaticPageController@static')->name('guide');
 Route::get('/privacy', 'StaticPageController@static')->name('privacy');
+Route::get('/privacy/contact-points', 'StaticPageController@static')->name('privacy-contact-points');
 Route::get('/cookie', 'StaticPageController@static')->name('cookie');
 Route::get('/petition', 'StaticPageController@static')->name('petition');
 Route::get('/beambassador', 'StaticPageController@static')->name(
@@ -484,6 +490,10 @@ Route::get('/profile', function () {
     return view('profile', $data);
 })
     ->name('profile')
+    ->middleware('auth');
+
+Route::get('user/delete', 'UserController@delete')
+    ->name('delete_user')
     ->middleware('auth');
 
 Route::get('/leading-teachers/signup', 'LeadingTeachersSignup@index')
