@@ -73,7 +73,9 @@ return [
         'sk' => 'Slovenčina',
         'sl' => 'Slovenščina',
         'sv' => 'svenska',
-        'tr' => 'Türkçe'
+        'tr' => 'Türkçe',
+        'ua'=> 'Український'
+
     ],
 
     'resources_local_title' => 'Coding resources from',
