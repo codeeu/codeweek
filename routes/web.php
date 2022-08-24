@@ -137,6 +137,11 @@ Route::get(
     'StaticPageController@static'
 )->name('training.module-16');
 
+Route::get(
+    '/training/feel-the-code',
+    'StaticPageController@static'
+)->name('training.module-17');
+
 Route::get('/resources/CodingAtHome', 'CodingAtHomeController@show')->name(
     'coding@home'
 );
