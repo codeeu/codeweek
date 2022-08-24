@@ -321,6 +321,21 @@ Ar Python skolēni var veidot viktorīnas par vēstures notikumiem, risināt mat
                 "3" => "Izveidojiet savu interaktīvo stāstu ar Hedy vecāko klašu skolēniem",
             ]
         ],
+        "17" => [
+            "title" => "Izjūti programmēšanu",
+            "author" => "Alenka Miljević",
+            "text" => [
+                "Sociālā un emocionālā labklājība ir spēja būt noturīgam, zināt, kā pārvaldīt savas emocijas un reaģēt uz citu cilvēku emocijām, veidot jēgpilnas attiecības ar citiem, izraisīt emocijas, kas rada labas izjūtas, un veidot savu emocionālā atbalsta tīklu. Sociālās un emocionālās prasmes, ko jaunieši apgūst skolā, viņiem palīdz veidot noturību un nosaka to, kā viņi pārvaldīs savu fizisko un garīgo veselību visa mūža garumā. (Eiropas Padome)",
+                "Mācību epizode Izjūti programmēšanu ļaus jums uzlabot skolēnu sociālo un emocionālo labklājību, atpazīstot, izskaidrojot, izprotot un reaģējot uz pozitīvām un negatīvām jūtām un emocijām, lai attīstītu empātiju un noturību. Šajā mācību epizodē atradīsit iedvesmojošas un saistošas aktivitātes, lai palīdzētu skolēniem attīstīt prasmes tikt galā ar dažādām emocijām, izmantojot programmēšanu. Ar Bee-Bot robota palīdzību skolēni iemācīsies paust savas sajūtas un reaģēt uz vienaudžu emocijām.",
+                "Mācību epizodē Izjūti programmēšanu ir ietverti trīs mācību stundu plāni, kuros izmantots izglītojošais Bee-Bot robots, lai organizētu aktivitātes, kas rosina skolēnus runāt par emocijām un attīstīt empātiju. Sākumskolai paredzētajā mācību stundas plānā skolēni ieprogrammē Bee-Bot robotu, lai runātu par tādām emocijām kā skumjas, laime, bailes un dusmas un atklātu iemeslus, kāpēc viņi un viņu vienaudži izjūt šīs emocijas. Mācību stundas plāns pamatskolai rosina skolēnus ieprogrammēt Bee-Bot robotu, atpazīt savas un vienaudžu sajūtas, saprast, kas tās ir izraisījis un kā uz tām reaģēt. Mācību stundas plāns vidusskolēniem ļauj skolēniem navigēt, izmantojot Bee-Bot robotu, un izdomāt stāstus par sajūtām, noturību un empātiju.",
+                "Ja jūsu klasē nav izglītojoša robota, šajā mācību epizodē atradīsit idejas par aktivitātēm bez tīkla pieslēguma, kas veicina sociālo un emocionālo prasmju attīstību. Tālāk norādītajā interaktīvajā vietnē sniegts īss pārskats par aktivitātēm, ko varat organizēt savā klasē."
+            ],
+            "activities" => [
+                "1" => "Programmē — Sajūti — Mācies sākumskolas skolēniem",
+                "2" => "Mana sirds nav no akmens pamatskolas skolēniem",
+                "3" => "Ieprogrammē manu garastāvokli vidusskolas skolēniem",
+            ]
+        ],
     ],
     'download_video_script' => 'Lejupielādēt video skriptu',
     'ready_to_share' =>

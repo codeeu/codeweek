@@ -282,6 +282,21 @@ V Pythonu mohou studenti vytvářet kvízy o historických událostech, řešit 
                 "3" => "Vytvořte svůj vlastní interaktivní příběh s Hedy pro žáky středních škol",
             ]
         ],
+        "17" => [
+            "title" => "Programováním k emocím",
+            "author" => "od Alenky Miljević",
+            "text" => [
+                "Sociální a emoční pohoda představuje schopnost být odolní, umět zvládat své emoce a reagovat na emoce druhých lidí, rozvíjet smysluplné vztahy s ostatními, schopnost vyvolávat emoce, které vedou k dobrým pocitům, a vytvářet vlastní síť emoční podpory. Sociální a emocionální dovednosti, které si mladí lidé osvojují již ve škole, jim pomáhají budovat odolnost a vytvářejí vzor, podle kterého se budou po celý život starat o své fyzické i duševní zdraví. (Rada Evropy)",
+                "Školicí materiál Programováním k emocím vám umožní podpořit sociální a emoční pohodu vašich žáků, neboť se naučí rozpoznávat, vysvětlovat a pochopit pozitivní i negativní pocity a emoce a reagovat na ně, a rozvíjejí tak svou empatii i odolnost.  V tomto školicím materiálu najdete inspirativní a zajímavé aktivity, které vašim studentům pomohou prostřednictvím kódování zlepšit jejich dovednosti týkající se zvládání různých emocí. Vaši žáci se naučí vyjadřovat své pocity a reagovat na emoce svých vrstevníků za pomoci robotické hračky Bee-Bot.",
+                "Školicí materiál Programováním k emocím sestává ze tří učebních plánů, které využívají vzdělávacího robota Bee-Bot k vytváření aktivit, jejichž cílem je podpořit žáky, aby mluvili o emocích a rozvíjeli empatii. V učebním plánu pro první stupeň základní školy žáci programují robota Bee-Bot a mluví o emocích, jako je smutek, štěstí, strach a hněv. Dále také objevují důvody, proč tyto emoce oni i jejich vrstevníci pociťují. Učební plán pro nižší ročníky středních škol vede žáky k tomu, aby naprogramovali robota Bee-Bot, byli schopni rozpoznat pocity své i svých vrstevníků, pochopili, co je způsobilo, a jak na ně reagovat. Učební plán pro vyšší ročníky středních škol umožňuje žákům navigovat robota Bee-Bot a vymýšlet příběhy o pocitech, odolnosti a empatii.",
+                "Pokud ve své třídě nemáte k dispozici vzdělávacího robota, poskytne vám tento školící materiál nápady i na aktivity podporující rozvoj sociálních a emočních dovedností, které tuto pomůcku nevyužívají (tzv. „unplugged“). Interaktivní tabulka níže poskytuje stručný přehled aktivit, které můžete ve své třídě uskutečnit:"
+            ],
+            "activities" => [
+                "1" => "Kódovat – Vnímat své pocity – Učit se pro žáky prvního stupně základní školy",
+                "2" => "Moje srdce není z kamene pro nižší ročníky střední školy",
+                "3" => "Zakódujte mě do nálady pro vyšší ročníky střední školy",
+            ]
+        ],
 
     ],
     'download_video_script' => 'Stáhnout scénář videa',

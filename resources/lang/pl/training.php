@@ -282,6 +282,21 @@ W proponowanym filmie zespół Tygodnia Kodowania prezentuje kilka praktycznych,
                 "3" => "Stwórz własną interaktywną opowieść z Hedy dla uczniów szkół średnich",
             ]
         ],
+        "17" => [
+            "title" => "Poczuj kod",
+            "author" => "Autorka: Alenka Miljević",
+            "text" => [
+                "Dobrostan społeczny i emocjonalny oznacza odporność, umiejętność radzenia sobie z własnymi emocjami i reagowania na emocje innych ludzi, nawiązywanie i pielęgnowanie relacji z innymi, odczuwanie emocji prowadzących do pozytywnych uczuć i budowanie własnej sieci wsparcia emocjonalnego. Umiejętności społeczne i emocjonalne zdobywane przez młodzież w szkołach pomagają im w budowaniu odporności i stanowią wzorzec postępowania, przy pomocy którego będą przez całe życie dbać o swoje zdrowie psychiczne i fizyczne. (Rada Europy)",
+                "Lekcja Poczuj kod pozwala zadbać o dobrostan społeczny i emocjonalny dzięki rozpoznaniu, wyjaśnianiu, rozumieniu i reagowaniu na pozytywne i negatywne uczucia i emocje w celu budowania empatii i odporności.  Materiały dydaktyczne zawierają inspirujące i ciekawe zadania, które pomogą uczniom efektywnie rozwijać umiejętności radzenia sobie z różnymi emocjami dzięki programowaniu. W czasie lekcji uczniowie dowiedzą się, w jaki sposób mogą wyrażać swoje uczucia i reagować na emocje rówieśników z pomocą robota Bee-Bot.",
+                "Materiały dydaktyczne do lekcji Poczuj kod obejmują trzy plany zajęć oparte na wykorzystaniu edukacyjnego robota Bee-Bot w celu prowadzenia zabaw zachęcających uczniów do rozmawiania o emocjach i rozwijania empatii. W czasie lekcji dla uczniów młodszych klas szkół podstawowych uczestnicy zaprogramują robota Bee-Bot, by mówić o emocjach takich jak smutek, radość, strach i złość oraz odkrywać powody, dla których oni i ich rówieśnicy odczuwają te emocje. Plan zajęć dla uczniów starszych klas szkół podstawowych zachęca uczestników do programowania robota Bee-Bot, rozpoznawania uczuć – zarówno swoich, jak i rówieśników, a także rozumienia ich przyczyn oraz reagowania na nie. Plan zajęć dla uczniów szkół średnich pozwala uczestnikom na przejęcie kontroli nad robotem Bee-Bot w celu tworzenia własnych historii o uczuciach, odporności i empatii.",
+                "Jeśli szkoła nie dysponuje robotem edukacyjnym, w materiałach dydaktycznych można znaleźć także pomysły na zajęcia bez prądu, które pozwolą na rozwój umiejętności społecznych i emocjonalnych uczniów. Poniżej znajduje się krótkie omówienie ćwiczeń i aktywności, które można przeprowadzić w klasie:"
+            ],
+            "activities" => [
+                "1" => "Koduj – Czuj – Ucz się dla uczniów młodszych klas szkół podstawowych",
+                "2" => "Moje serce nie jest z kamienia dla uczniów starszych klas szkół podstawowych",
+                "3" => "Zaprogramuj uczucia dla uczniów szkół średnich",
+            ]
+        ],
 
 
     ],

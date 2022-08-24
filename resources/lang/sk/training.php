@@ -283,6 +283,21 @@ V tomto videu vám tím Týždňa programovania ukáže niekoľko praktických, 
                 "3" => "Vytvor si interaktívny príbeh pomocou Hedy pre strednú školu",
             ]
         ],
+        "17" => [
+            "title" => "Programovanie s citom",
+            "author" => "Alenka Miljević",
+            "text" => [
+                "Sociálna a emocionálna pohoda je schopnosť zachovať si odolnosť, ovládať svoje emócie a reagovať na emócie druhých, nadväzovať zmysluplné vzťahy s ostatnými, produkovať emócie, ktoré vedú k dobrým pocitom a vytvárať si vlastnú sieť emocionálnej podpory. Sociálne a emocionálne zručnosti, ktoré sa mladí ľudia naučia v škole, im pomáhajú budovať si odolnosť a nastaviť vzorce, podľa ktorých budú ovládať svoje fyzické a duševné zdravie počas celého života. (Rada Európy)",
+                "Učebný plán Programovanie s citom vám umožní posilniť sociálnu a emocionálnu pohodu žiakov a žiačok. Naučia sa rozpoznávať, vysvetľovať, chápať a reagovať na pozitívne a negatívne pocity a emócie a rozvinú si tak empatiu a odolnosť.  V tomto učebnom pláne nájdete podnetné a pútavé aktivity, ktoré žiačkam a žiakom pomôžu rozvinúť si zručnosti na zvládanie rôznych emócií prostredníctvom programovania. Pomocou robota Bee-bot sa naučia sa, ako vyjadriť svoje pocity a reagovať na emócie spolužiakov a spolužiačok.",
+                "Učebný plán Programovanie s citom pozostáva z plánov na tri vyučovacie hodiny s aktivitami, ktoré pomocou vzdelávacieho robota Bee-bot povzbudzujú deti v triede, aby hovorili o svojich emóciách a rozvinuli si empatiu. Na základe plánu vyučovacej hodiny pre prvý stupeň základnej školy deti naprogramujú Bee-bota a porozprávajú sa o smútku, šťastí, strachu a hneve, aby zistili, prečo ony alebo ich spolužiaci pociťujú tieto emócie. Podľa plánu vyučovacej hodiny pre druhý stupeň základnej školy dostanú deti za úlohu naprogramovať Bee-bota, rozpoznať svoje pocity alebo pocity druhých, pochopiť, čo ich spôsobilo a ako na ne reagovať. Na základe plánu vyučovacej hodiny pre strednú školu sa študenti naučia ovládať Bee-bota a vymýšľať príbehy o pocitoch, odolnosti a empatii.",
+                "Ak v triede nemáte vzdelávacieho robota, tento učebný plán vám poskytne nápady na aktivity bez počítača, ktorými sa posilňuje rozvoj sociálnych a emocionálnych zručností. Uvedený interaktívny diagram vám poskytuje stručný prehľad aktivít, ktoré môžete uplatniť počas vyučovania:"
+            ],
+            "activities" => [
+                "1" => "Programujem, cítim, učím sa pre žiakov prvého stupňa základnej školy",
+                "2" => "Nemám srdce z kameňapre žiakov druhého stupňa základnej školy",
+                "3" => "Naprogramuj mi náladu pre študentov strednej školy",
+            ]
+        ],
 
 
     ],
