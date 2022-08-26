@@ -283,6 +283,21 @@ U ovom video zapisu, tim Nedjelje programiranja pokazaće vam nekoliko praktičn
                 "3" => "Kreirajte svoju interaktivnu priču s Hedy-jem za učenike viših razreda srednje škole",
             ]
         ],
+        "17" => [
+            "title" => "Osjetite kôd",
+            "author" => "od autorke Alenke Miljević",
+            "text" => [
+                "Društveno i emocionalno blagostanje je sposobnost da budete otporni, znate kako da upravljate svojim emocijama i da odgovorite na emocije drugih ljudi, da razvijate smislene odnose s drugima, da stvarate emocije koje dovode do dobrih osjećanja i da stvarate vlastitu mrežu emocionalne podrške. Društvene i emocionalne vještine koje mladi ljudi uče u školi pomažu im da izgrade otpornost i postave obrazac kako će da upravljaju svojim fizičkim i mentalnim zdravljem tokom života. (Savjet Evrope)",
+                "Dio za učenje Osjeti kôd omogućiće vam da njegujete društveno i emocionalno blagostanje svojih učenika prepoznavanjem, objašnjavanjem, razumijevanjem i odgovaranjem na pozitivna i negativna osjećanja i emocije kako biste izgradili empatiju i otpornost.  U ovom dijelu učenja naći ćete inspirativne i zanimljive aktivnosti koje će pomoći vašim učenicima da razviju vještine za suočavanje s različitim emocijama kroz programiranje. Vaši učenici će naučiti kako da izraze svoja osjećanja i kako da reaguju na emocije svojih vršnjaka uz pomoć robota Bee-Bot.",
+                "Dio učenja Osjeti kôd sastoji se od tri plana lekcija koji koriste Bee-Bot edukativnog robota za kreiranje aktivnosti koje podstiču učenike da govore o emocijama i razvijaju empatiju. U planu lekcije za osnovnu školu, učenici programiraju Bee-Bot da pričaju o emocijama, kao što su tuga, sreća, strah i ljutnja i otkrivaju razloge zašto oni i njihovi vršnjaci osjećaju te emocije. Plan lekcije za niže razrede srednje škole podstiče učenike da programiraju Bee-Bot, prepoznaju svoja i osjećanja svojih vršnjaka, razumiju šta ih je izazvalo i kako da na njih reaguju. Plan lekcije za više razrede srednje škole omogućava učenicima da pomjeraju Bee-Bota i stvaraju priče o osjećanjima, otpornosti i empatiji.",
+                "Ako nemate edukativnog robota u svojoj učionici, ovaj dio za učenje pružiće vam ideje za aktivnosti bez računara koje njeguju razvoj društvenih i emocionalnih vještina. Interakcija u nastavku daje kratak pregled aktivnosti koje možete primijeniti u svojoj učionici:"
+            ],
+            "activities" => [
+                "1" => "Programiraj - Osjeti - Nauči za učenike osnovne škole",
+                "2" => "Moje srce nije napravljeno od kamena za učenike viših razreda srednje škole",
+                "3" => "Programiraj me prema raspoloženju za učenike viših razreda srednje škole",
+            ]
+        ],
 
 
     ],

@@ -284,6 +284,21 @@ Naudodami „Python“, mokiniai gali kurti viktorinas apie istorinius įvykius,
                 "3" => "Sukurkite interaktyvią istoriją su Hedy – vidurinės mokyklos vyresnių klasių mokiniams",
             ]
         ],
+        "17" => [
+            "title" => "Pajauskite programavimą",
+            "author" => "Alenka Miljević",
+            "text" => [
+                "Socialinė ir emocinė gerovė – tai gebėjimas būti atspariems, mokėti valdyti savo emocijas ir reaguoti į kitų žmonių emocijas, kurti prasmingus santykius su kitais žmonėmis, patirti gerus jausmus sukeliančias emocijas ir sukurti savo emocinės paramos tinklą. Mokykloje įgyti socialiniai ir emociniai įgūdžiai padeda jaunuoliams ugdyti atsparumą ir lemia tai, kaip jie visą gyvenimą rūpinsis savo fizine ir psichine sveikata. (Europos Taryba)",
+                "Mokymosi segmentas „Pajauskite programavimą“ padės ugdyti mokinių socialinę ir emocinę gerovę atpažįstant, paaiškinant, suprantant ir reaguojant į teigiamus ir neigiamus jausmus bei emocijas, siekiant ugdyti empatiją ir atsparumą. Šiame mokymosi segmente rasite įkvepiančių ir įtraukiančių užduočių, kurios padės mokiniams įgyti įgūdžių, kaip susitvarkyti su įvairiomis emocijomis, pasitelkiant programavimą. Padedami roboto „Bee-Bot“ mokiniai išmoks reikšti savo jausmus ir reaguoti į bendraamžių emocijas.",
+                "Mokymosi segmentą „Pajauskite programavimą“ sudaro trys pamokų planai, kuriuose naudojant mokomąjį robotą „Bee-Bot“ kuriami užsiėmimai, skatinantys mokinius kalbėti apie emocijas ir ugdyti empatiją. Pagal pradinių klasių mokiniams skirtą pamokos planą mokiniai programuoja „Bee-Bot“ ir kalba apie tokias emocijas kaip liūdesys, laimė, baimė ir pyktis bei aiškinasi, kodėl jie ir jų bendraamžiai jaučia šias emocijas. Pagrindinės mokyklos mokiniams skirtas pamokos planas padeda skatinti mokinius programuoti „Bee-Bot“, atpažinti savo ir bendraamžių jausmus, suprasti, kas juos sukėlė ir kaip į juos reaguoti. Vidurinės mokyklos mokiniams skirtoje pamokoje mokiniai gali naudoti „Bee-Bot“ ir kurti istorijas apie jausmus, atsparumą ir empatiją.",
+                "Jei savo klasėje neturite mokomojo roboto, šiame mokymosi segmente rasite idėjų, kaip skatinti socialinių ir emocinių įgūdžių ugdymą nenaudojant technologijų. Toliau pateiktoje interaktyvioje medžiagoje trumpai apžvelgiama veikla, kurią galite atlikti savo klasėje:"
+            ],
+            "activities" => [
+                "1" => "„Programuok. Jausk. Mokykis“ pradinės mokyklos mokiniams",
+                "2" => "„Mano širdis nėra akmeninė“ pagrindinės mokyklos mokiniams",
+                "3" => "„Nuotaikos programavimas“ vidurinės mokyklos mokiniams",
+            ]
+        ],
 
 
 

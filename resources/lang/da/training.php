@@ -284,6 +284,21 @@ I denne video viser Kodeuge-teamet nogle praktiske, nemme og sjove kodeaktivitet
                 "3" => "Lav din egen interaktive historie med Hedy til elever på ungdomsuddannelser",
             ]
         ],
+        "17" => [
+            "title" => "Føl koden",
+            "author" => "af Alenka Miljević",
+            "text" => [
+                "Socialt og følelsesmæssigt velvære handler om at kunne stå imod, at vide, hvordan man skal håndtere sine følelser og reagere på andre menneskers følelser, at udvikle meningsfulde relationer til andre, at generere følelser der giver velbehag og at skabe sit eget følelsesmæssige støttenetværk. De sociale og følelsesmæssige kompetencer, som unge lærer i skolen, hjælper dem med at opbygge modstandsdygtighed og skabe et mønster for, hvordan de vil håndtere deres fysiske og mentale velvære igennem hele livet. (Europarådet)",
+                "Undervisningsbidden Føl koden vil sætte dig i stand til at styrke elevernes sociale og følelsesmæssige velvære ved at anerkende, forklare, forstå og reagere på positive og negative følelser for at kunne opbygge empati og modstandskraft. I denne undervisningsbid finder du inspirerende og engagerende aktiviteter, som kan hjælpe dine elever med at udvikle kompetencer til at håndtere forskellige følelser gennem kodning. Eleverne lærer at udtrykke deres følelser og hvordan de kan reagere på deres klassekammeraters følelser ved hjælp af Bee-Bot-robotten.",
+                "Undervisningsbidden Føl koden består af tre læreplaner, der bruger en Bee-Bot-undervisningsrobot til at lave aktiviteter, som tilskynder eleverne til at tale om følelser og udvikle empati. I læreplanen til indskolingen og mellemtrinnet programmerer eleverne en Bee-Bot for at tale om følelser såsom at være ked af det, glad, bange og vred og for at finde ud af, hvorfor de og deres klassekammerater har disse følelser. Læreplanen for udskolingen tilskynder eleverne til at programmere en Bee-Bot, anerkende deres egne og deres klassekammeraters følelser og forstå årsagen til dem og hvordan man kan reagere på dem. Læreplanen til elever på ungdomsuddannelser sætter eleverne i stand til at navigere en Bee-Bot og lave historier om følelser, modstandskraft og empati.",
+                "Hvis du ikke har en undervisningsrobot i klasseværelset, giver denne undervisningsbid dig idéer til aktiviteter uden brug af computer, der vil styrke udviklingen af sociale og følelsesmæssige kompetencer. Den interaktive historie herunder giver en kort oversigt over de aktiviteter, I kan lave i klasseværelset:"
+            ],
+            "activities" => [
+                "1" => "Kod – Føl – Lær til elever i indskolingen og på mellemtrinnet",
+                "2" => "Mit hjerte er ikke lavet af sten til elever i udskolingen",
+                "3" => "Kod mig i stemning til elever på ungdomsuddannelser",
+            ]
+        ],
 
 
     ],

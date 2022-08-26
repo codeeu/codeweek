@@ -284,6 +284,21 @@ Bu videoda, Kod Haftası ekibi size özellikle görme bozukluğu, Down sendromu 
                 "3" => "Lise öğrencileri için Hedy ile kendi interaktif hikâyenizi oluşturun",
             ]
         ],
+        "17" => [
+            "title" => "Feel The Code (Kodu Hisset)",
+            "author" => "Alenka Miljević ",
+            "text" => [
+                "Sosyal ve duygusal refah; dayanıklı olma, kişinin duygularını yönetme ve diğer kişilerin duygularına karşılık verme, diğer kişilerle anlamlı ilişkiler kurma, iyi hislere kapı açan duygular oluşturma ve kişinin kendi duygusal destek ağını oluşturma yeteneğidir. Gençlerin okulda öğrendikleri sosyal ve duygusal beceriler, dayanıklılık kazanmalarına ve hayatları boyunca fiziksel ve zihinsel sağlıklarını yönetme biçimlerine yönelik bir model yaratmalarına yardımcı olur. (Avrupa Konseyi)",
+                "Feel the Code (Kodu Hisset) Öğrenim Bilgisi, empati ve dayanıklılık kazanmak amacıyla olumlu ve olumsuz hislerin yanı sıra duyguları tanıyarak, açıklayarak, anlayarak ve bunlara tepki vererek, öğrencilerinizin sosyal ve duygusal refahını geliştirmenize olanak tanıyacaktır.  Bu Öğrenim Bilgisi'nde, öğrencilerinizin kodlama yoluyla farklı duygularla başa çıkmak üzere beceriler geliştirmelerine yardımcı olacak ilham verici ve ilgi çekici aktiviteler bulacaksınız. Öğrencileriniz, bir Bee-Bot robotu yardımıyla hislerini ifade etmeyi ve akranlarının duygularına tepki vermeyi öğreneceklerdir.",
+                "Feel the Code (Kodu Hisset) öğrenim bilgisi, öğrencileri duyguları hakkında konuşmaya ve empati geliştirmelerine teşvik edecek aktiviteler oluşturmak amacıyla bir Bee-Bot eğitim robotunun kullanıldığı üç dersten oluşur. İlkokullar için olan ders planında; öğrenciler üzüntü, mutluluk, korku ve öfke gibi duygular hakkında konuşmak ve kendilerinin ve akranlarının bu duyguları hissetme nedenlerini keşfetmek amacıyla bir Bee-Bot programlar. Ortaokullar için olan ders planı; öğrencileri bir Bee-Bot programlamaları, kendilerinin ve akranlarının hislerini tanımaları, bunların nedenlerini ve bunlara karşı nasıl tepki vermeleri gerektiğini anlamaları hususunda cesaretlendirir. Liseler için olan ders planı; öğrencilerin bir Bee-Bot'u yönlendirmelerini ve hisler, dayanıklılık ve empati hakkında hikâyeler oluşturmalarını sağlar.",
+                "Bu Öğrenim Bilgisi, sınıfınızda bir eğitim robotu yoksa sosyal ve duygusal becerilerin gelişimini sağlayan bilgisayarsız aktivitelere yönelik fikirler sunacaktır. Aşağıdaki interaktif hikâye, sınıfınızda gerçekleştirebileceğiniz aktiviteler hakkında kısa bir genel bilgi sağlamaktadır:"
+            ],
+            "activities" => [
+                "1" => "Kodla - Hisset - Öğren: İlkokul öğrencileri için",
+                "2" => "Taş kalpli değilim: Ortaokul öğrencileri için",
+                "3" => "Beni ruh halime göre kodla: Lise öğrencileri için",
+            ]
+        ],
 
 
     ],

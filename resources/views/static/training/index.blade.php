@@ -132,6 +132,14 @@
                         <div class="author">@lang('training.lessons.16.author')</div>
                     </a>
                 </div>
+
+                <div class="codeweek-card-grid">
+                    <a href="/training/feel-the-code">
+                        <img src="/img/learning/feel-the-code.jpg">
+                        <div class="title">@lang('training.lessons.17.title')</div>
+                        <div class="author">@lang('training.lessons.17.author')</div>
+                    </a>
+                </div>
             </section>
 
             <section class="codeweek-content-wrapper-inside">
