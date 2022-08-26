@@ -282,6 +282,21 @@ V tem videoposnetku vam bo ekipa tedna programiranja pokazala nekaj praktičnih,
                 "3" => "Ustvarite lastno interaktivno zgodbo s Hedy za dijake višjih letnikov srednje šole",
             ]
         ],
+        "17" => [
+            "title" => "Začutite kodo",
+            "author" => "Alenka Miljević",
+            "text" => [
+                "Socialno in čustveno dobro počutje je sposobnost biti prilagodljiv, znati upravljati svoja čustva in se odzivati na čustva drugih ljudi, razvijati pristne odnose z drugimi, ustvarjati čustva, ki vodijo do dobrih občutij, in ustvarjati lastno mrežo čustvene podpore. Socialne in čustvene veščine, ki se jih mladi učijo v šoli, jim pomagajo graditi čustveno odpornost in določajo vzorec, kako bodo skozi življenje upravljali svoje fizično in duševno zdravje. (Svet Evrope)",
+                "Učni drobec Začutite kodo vam bo omogočil spodbujanje socialnega in čustvenega dobrega počutja vaših učencev s prepoznavanjem, razlago, razumevanjem in odzivom na pozitivna in negativna občutja in čustva, da bi zgradili empatijo in odpornost.  V tem učnem drobcu boste našli navdihujoče in privlačne dejavnosti, ki bodo vašim učencem s pomočjo programiranja pomagale razviti veščine za spopadanje z različnimi čustvi. Vaši učenci se bodo s pomočjo robota Bee-Bot naučili, kako izraziti svoja čustva in kako se odzvati na čustva vrstnikov.",
+                "Učni drobec Začutite kodo zajema tri učne načrte, ki uporabljajo izobraževalnega robota Bee-Bot za ustvarjanje dejavnosti, ki spodbujajo učence k pogovoru o čustvih in razvijanju empatije. V učnem načrtu za osnovno šolo učenci programirajo robota Bee-Bot, da se pogovarjajo o čustvih, kot so žalost, sreča, strah in jeza, ter odkrijejo razloge, zakaj oni in njihovi vrstniki občutijo ta čustva. Učni načrt za nižje letnike srednje šole spodbuja dijake, da programirajo Bee-Bota, prepoznajo svoja čustva in čustva vrstnikov, razumejo, kaj jih je povzročilo in kako se nanje odzvati. Učni načrt za višje letnike srednje šole dijakom omogoča upravljanje Bee-Bota in izmišljanje zgodb o občutkih, odpornosti in empatiji.",
+                "Če v svoji učilnici nimate izobraževalnega robota, vam bo ta učni pripomoček predstavil zamisli za dejavnosti brez povezave, ki spodbujajo razvoj socialnih in čustvenih veščin. Spodnja interaktivna vsebina navaja kratek pregled dejavnosti, ki jih lahko izvajate v svoji učilnici:"
+            ],
+            "activities" => [
+                "1" => "Programiranje - Občutki -  Učenje za osnovnošolce",
+                "2" => "Nimam kamna namesto srca za dijake nižjih letnikov srednje šole",
+                "3" => "Programiraj vse do zvezd za dijake višjih letnikov srednje šole",
+            ]
+        ],
 
 
     ],

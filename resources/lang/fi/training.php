@@ -285,6 +285,21 @@ Tällä videolla koodausviikon tiimi esittelee muutamia helppoja ja hauskoja kä
                 "3" => "Luo oma interaktiivinen tarinasi Hedyllä toisen asteen opiskelijoiden kanssa",
             ]
         ],
+        "17" => [
+            "title" => "Tunne koodi",
+            "author" => "Alenka Miljević ",
+            "text" => [
+                "Sosiaalisen ja emotionaalisen hyvinvoinnin edellytyksenä on kyky sopeutua, taito hallita omia tunteita ja vastata toisten tunteisiin sekä kyky luoda mielekkäitä ihmissuhteita, edistää myönteisiä tunteita ja rakentaa oma emotionaalinen tukiverkosto. Koulussa opittavat sosiaaliset ja emotionaaliset taidot auttavat oppilaita kehittämään omaa sopeutumiskykyään ja luovat perustan fyysisen ja henkisen terveyden hallintaan loppuelämän ajaksi (Euroopan neuvosto).",
+                "Tunne koodi -oppimismoduuli auttaa edistämään sosiaalista ja emotionaalista hyvinvointia. Oppilaat tunnistavat, selittävät ja ymmärtävät myönteisiä ja kielteisiä tunteita ja tunnetiloja ja reagoivat niihin, mikä kasvattaa myötätuntoa ja sopeutumiskykyä.  Moduuli sisältää innostavia ja mielenkiintoisia tehtäviä, joiden avulla oppilaat kehittävät taitoja erilaisten tunteiden käsittelemiseen koodausta käyttämällä. Oppilaat oppivat ilmaisemaan tunteitaan ja muiden tunteisiin reagoimista Bee-Bot-robotin avulla.",
+                "Tunne koodi -oppimismoduuli sisältää kolme tuntisuunnitelmaa, joissa käytetään Bee-Bot-oppimisrobottia. Tehtävät kannustavat oppilaita puhumaan tunteista ja kehittämään myötätuntoa. Alaluokkien tuntisuunnitelmassa oppilaat ohjelmoivat Bee-Botia ja puhuvat tunteista, kuten surusta, ilosta, pelosta ja vihasta, ja löytävät syitä, miksi he ja muut oppilaat kokevat näitä tunteita. Yläluokkien tuntisuunnitelmassa oppilaita kannustetaan ohjelmoimaan Bee-Botia, tunnistamaan omia ja muiden oppilaiden tunteita sekä ymmärtämään, mikä ne aiheutti ja miten niihin voi reagoida. Toisen asteen tuntisuunnitelmassa opiskelijat ohjaavat Bee-Botia ja keksivät tarinoita tunteista, sopeutumiskyvystä ja myötätunnosta.",
+                "Jos käytössä ei ole oppimisrobottia, oppimismoduuli sisältää myös ideoita ilman laitteita tehtäviin harjoituksiin, jotka kehittävät sosiaalisia ja emotionaalisia taitoja. Alla oleva interaktiivinen tarina sisältää lyhyen esittelyn luokassa tehtävistä harjoituksista:"
+            ],
+            "activities" => [
+                "1" => "Koodaa – tunne – opi alaluokkien oppilaille",
+                "2" => "Sydämeni ei ole kiveä yläluokkien oppilaille",
+                "3" => "Koodaa minut tunteeseen toisen asteen opiskelijoille",
+            ]
+        ],
 
 
     ],
