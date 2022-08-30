@@ -36,13 +36,15 @@ class SearchController extends Controller
 
         $country_iso = $request->input('country_iso', null);
 
-        $selected_country = null;
+        $selected_country = array();
 
         if (!is_null($country_iso)) {
-            $selected_country = Country::where('iso', $country_iso)->first();
-            if($selected_country){
-                $selected_country->translation=  __('countries.'.$selected_country->name);
+            $country = Country::where('iso', $country_iso)->first();
+            if ($country) {
+                $country->translation = __('countries.' . $country->name);
+                $selected_country[] = $country;
             }
+
         }
 
         $current_year = Carbon::now()->year;
