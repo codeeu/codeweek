@@ -29,13 +29,12 @@ class BirthdayMailing extends Command
      */
     public function handle()
     {
-        //$recipients = ReminderHelper::getActiveCreators();
-        $recipients = ['alainvd@gmail.com'];
+        $recipients = ReminderHelper::getActiveCreators();
 
         $this->info(sizeof($recipients));
 
-        foreach ($recipients as $email) {
-            Mail::to($email)->queue(new \App\Mail\MailingInactive());
+        foreach ($recipients as $user) {
+            Mail::to($user->email)->queue(new \App\Mail\BirthdayMailing($user->email, $user->magic_key));
         }
     }
 }
