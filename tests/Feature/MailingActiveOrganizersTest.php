@@ -17,8 +17,8 @@ class MailingActiveOrganizersTest extends TestCase
     /** @test */
     public function it_should_select_only_active_organizers()
     {
-        $active = create('App\User', ['email' => 'active@gmail.com']);
-        $active2 = create('App\User', ['email' => 'active2@gmail.com']);
+        $active = create('App\User', ['email' => 'active@gmail.com', "magic_key"=> 131313]);
+        $active2 = create('App\User', ['email' => 'active2@gmail.com', "magic_key"=> 252525]);
         $inactive = create('App\User', ['email' => 'inactive@gmail.com']);
         $inactive2 = create('App\User', ['email' => 'inactive2@gmail.com', 'receive_emails' => false]);
         $deleted = create('App\User', ['email' => 'deleted@gmail.com', 'deleted_at' => now()]);
@@ -83,7 +83,10 @@ class MailingActiveOrganizersTest extends TestCase
         $active = ReminderHelper::getActiveCreators();
 
         $this->assertEqualsCanonicalizing(
-            ['active@gmail.com', 'active2@gmail.com'],
+            [
+                (object)["email"=> "active2@gmail.com","magic_key"=> 252525],
+                (object)["email"=> "active@gmail.com","magic_key"=> 131313]
+            ],
             $active->toArray()
         );
     }

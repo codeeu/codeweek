@@ -95,7 +95,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'firstname', 'lastname', 'username', 'avatar_path', 'email', 'password', 'bio', 'twitter', 'website', 'country_iso', 'privacy', 'email_display', 'receive_emails'
+        'firstname', 'lastname', 'username', 'avatar_path', 'email', 'password', 'bio', 'twitter', 'website', 'country_iso', 'privacy', 'email_display', 'receive_emails','magic_key'
     ];
 
     /**
@@ -104,7 +104,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token','magic_key'
     ];
 
     protected $appends = ['fullName'];
@@ -398,5 +398,18 @@ class User extends Authenticatable
         return $query->count() * 2;
     }
 
+    public function generateMagicKey()
+    {
+        $this->update([
+            'magic_key' =>random_int(1000000,2000000) * random_int(1000,2000)
+        ]);
+    }
+
+    public function unsubscribe()
+    {
+        $this->update([
+            'receive_emails' => false
+        ]);
+    }
 
 }
