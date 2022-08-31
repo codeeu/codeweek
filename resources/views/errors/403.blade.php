@@ -17,7 +17,7 @@
         <section class="codeweek-content-wrapper" style="align-items: center;">
 
             @if($exception->getMessage())
-                <h1>{{$exception->getMessage()}}</h1>
+                <h1>{!! $exception->getMessage() !!}</h1>
             @else
                 <h1>You are not authorized to perform this action!</h1>
             @endif

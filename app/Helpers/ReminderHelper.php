@@ -46,7 +46,8 @@ class ReminderHelper {
 
         $activeIds = DB::table('events')
             ->join('users', 'users.id', '=', 'events.creator_id')
-            //->where('creator_id','=',$this->id)
+
+
             ->where('status', '=', 'APPROVED')
             ->where('users.receive_emails',true)
             ->whereNull('users.deleted_at')
@@ -57,16 +58,17 @@ class ReminderHelper {
             ->pluck('id')
             ->toArray();
 
+
         return DB::table('events')
             ->join('users', 'users.id', '=', 'events.creator_id')
-            //->where('creator_id','=',$this->id)
+
             ->where('status', '=', 'APPROVED')
             ->whereNull('events.deleted_at')
             ->whereIntegerInRaw('events.creator_id', $activeIds)
             ->groupBy('users.email')
-            ->select('users.email')
-            ->get()
-            ->pluck('email');
+            ->select(['users.email','users.magic_key'])
+            ->get();
+
     }
 
     public static function getCreatorsWithReportableEvents() {
