@@ -29,7 +29,7 @@ class BirthdayMailing extends Mailable {
      * @return $this
      */
     public function build() {
-        return $this->subject('10 years of Code Week')->markdown(
+        return $this->subject('Celebrate Code Week’s 10th anniversary with us')->markdown(
             'emails.en.birthday-mailing'
         );
     }
