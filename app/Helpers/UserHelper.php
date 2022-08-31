@@ -14,4 +14,9 @@ class UserHelper {
                              ->delete();
         return $deletedUsers;
     }
+
+    public static function hocusPocus()
+    {
+        return random_int(1000000,2000000) * random_int(1000,10000);
+    }
 }
