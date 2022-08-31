@@ -665,6 +665,9 @@ Route::get(
 Route::get('podcasts', 'PodcastsController@index')->name('podcasts');
 Route::get('podcast/{podcast}', 'PodcastsController@show')->name('podcast');
 
+Route::get('birthday', function(){
+    return (new \App\Mail\BirthdayMailing())->render();
+});
 
 Auth::routes();
 Route::feeds();
