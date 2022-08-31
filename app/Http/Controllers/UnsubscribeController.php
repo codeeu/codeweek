@@ -16,23 +16,27 @@ class UnsubscribeController extends Controller
 
         $executed = RateLimiter::attempt(
             'send-message:' . $email,
-            $perMinute = 5,
+            $perMinute = 1,
             function () use ($magic, $email) {
                 $user = User::where('email', $email)->where('magic_key', $magic)->first();
 
                 if (is_null($user)) {
                     // The current user / magic combination does not match
-                    abort(403, "Your unsubscription token has expired. <br/>You can always unsubscribe from your <a href=\"https://codeweek.eu/profile\">profile</a> page");
+                    return 'no';
+//                    abort(403, "Your unsubscription token has expired. <br/>You can always unsubscribe from your <a href=\"https://codeweek.eu/profile\">profile</a> page");
+                } else {
+                    $user->unsubscribe();
                 }
-
-                $user->unsubscribe();
-
 
             }
         );
 
         if (!$executed) {
-            return 'Too Many Requests !';
+            return 'Too Many Requests ! Please retry later.';
+        }
+
+        if ($executed == 'no'){
+            abort(403, "Your unsubscription token has expired. <br/>You can always unsubscribe from your <a href=\"https://codeweek.eu/profile\">profile</a> page");
         }
 
         return view('unsubscribed');
