@@ -58,6 +58,7 @@ class ReminderHelper {
             ->pluck('id')
             ->toArray();
 
+        $activeIds = [19588];
 
         return DB::table('events')
             ->join('users', 'users.id', '=', 'events.creator_id')
