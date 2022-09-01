@@ -175,9 +175,9 @@
 
                                 @foreach($event->tags as $tag)
 
-                                    <x-pill type="tag">
+                                    <x-pill-tag type="tag" slug="{{$tag->slug}}">
                                         {{$tag->name}}
-                                    </x-pill>
+                                    </x-pill-tag>
 
 
 
