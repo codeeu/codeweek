@@ -35,10 +35,17 @@ class SearchController extends Controller
         $selected_year = $request->input('year', Carbon::now()->year);
 
         $country_iso = $request->input('country_iso', null);
+        $tag = $request->input('tag', "");
+
         $selected_country = array();
 
         if (!is_null($country_iso)) {
-            $selected_country[] = Country::where('iso', $country_iso)->first();
+            $country = Country::where('iso', $country_iso)->first();
+            if ($country) {
+                $country->translation = __('countries.' . $country->name);
+                $selected_country[] = $country;
+            }
+
         }
 
         $current_year = Carbon::now()->year;
@@ -48,7 +55,7 @@ class SearchController extends Controller
         }
 
 
-        return view('event.search', compact(['query', 'years', 'selected_country', 'selected_year']));
+        return view('event.search', compact(['query', 'years', 'selected_country', 'selected_year','tag']));
     }
 
     public function searchPOST(EventFilters $filters, Request $request)

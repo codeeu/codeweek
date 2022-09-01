@@ -11,6 +11,8 @@
 |
 */
 
+use App\Http\Controllers\UnsubscribeController;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
@@ -470,8 +472,6 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
 });
 
 
-
-
 Route::group(['middleware' => [
     'auth',
     'role:super admin|leading teacher|leading teacher admin']], function () {
@@ -664,6 +664,14 @@ Route::get(
 
 Route::get('podcasts', 'PodcastsController@index')->name('podcasts');
 Route::get('podcast/{podcast}', 'PodcastsController@show')->name('podcast');
+
+Route::get('birthday', function () {
+    $user = User::where('email','alainvd@gmail.com')->first();
+    return (new \App\Mail\BirthdayMailing($user->email, $user->magic_key))->render();
+});
+
+
+Route::get('/unsubscribe/{email}/{magic}', 'UnsubscribeController@index')->name('unsubscribe');
 
 
 Auth::routes();
