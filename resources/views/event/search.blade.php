@@ -18,7 +18,7 @@
 
 @section('content')
 
-    {{--    {{dd($countries)}}--}}
+{{--        {{dd($tag)}}--}}
     {{--    {{dd($active_countries)}}--}}
 
     <search-page-component
@@ -30,6 +30,7 @@
             :audienceslist="{{$audiences}}"
             :themeslist="{{$themes}}"
             :typeslist="{{$activity_types}}"
+            :prp-tag="'{{$tag}}'"
 
     >
     </search-page-component>
