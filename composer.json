@@ -31,6 +31,7 @@
         "martinlindhe/laravel-vue-i18n-generator": "dev-l9",
         "mediconesystems/livewire-datatables": "^0.9",
         "predis/predis": "^1.1",
+        "rappasoft/laravel-livewire-tables": "^2.8",
         "socialiteproviders/microsoft-azure": "^4.2",
         "spatie/laravel-activitylog": "^4.0",
         "spatie/laravel-cookie-consent": "^3.2",
