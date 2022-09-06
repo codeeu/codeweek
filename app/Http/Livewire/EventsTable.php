@@ -18,8 +18,10 @@ class EventsTable extends DataTableComponent
     public string $country;
 
 // Optional, but if you need to initialize anything
-    public function mount(string $country): void {
-            Log::info($country);
+    public function mount(string $country): void
+    {
+        Log::info($country);
+        $this->country = $country;
     }
 
     public function configure(): void
@@ -29,12 +31,17 @@ class EventsTable extends DataTableComponent
 
     public function builder(): Builder
     {
-        return Event::where('status','PENDING')
-        ->where('country_iso',$this->country)
-        ->select('*');
-//            ->with() // Eager load anything
-//            ->join() // Join some tables
-//            ->select(); // Select some things
+
+        if (empty($this->country)) {
+            return Event::where('status', 'PENDING')
+                ->select('*');
+        } else {
+            return Event::where('status', 'PENDING')
+                ->where('country_iso', $this->country)
+                ->select('*');
+        }
+
+
     }
 
     public array $bulkActions = [
@@ -43,8 +50,7 @@ class EventsTable extends DataTableComponent
 
     public function approveSelected()
     {
-        foreach($this->getSelected() as $item)
-        {
+        foreach ($this->getSelected() as $item) {
             Log::info($item);
         }
     }
@@ -58,20 +64,21 @@ class EventsTable extends DataTableComponent
 //                ->sortable(),
 //            Column::make("Title", "title")
 //                ->sortable(),
-            Column::make("Country iso", "country_iso")
-                ->sortable(),
+//            Column::make("Country iso", "country_iso")
+//                ->sortable(),
             LinkColumn::make('Title')
                 ->title(fn($row) => $row->title)
-                ->location(fn($row) => route('view_event', [$row,$row->slug])),
+                ->location(fn($row) => route('view_event', [$row, $row->slug])),
 //            Column::make("Slug", "slug")
 //                ->sortable(),
-            Column::make("Organizer", "organizer")
-                ->sortable(),
             Column::make('Description')
                 ->format(
                     fn($value, $row, Column $column) => $row->description
                 )
                 ->html(),
+            Column::make("Organizer", "organizer")
+                ->sortable(),
+
 //            Column::make("Geoposition", "geoposition")
 //                ->sortable(),
 //            Column::make("Latitude", "latitude")
