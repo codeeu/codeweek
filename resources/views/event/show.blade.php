@@ -9,12 +9,15 @@
     <section id="codeweek-show-event-page" class="codeweek-page">
 
         @can('approve', $event)
+            <x-review-navigation></x-review-navigation>
             @if($event->certificate_url)
                 <reported-event :event="{{$event}}"></reported-event>
             @else
                 <moderate-event :event="{{$event}}"></moderate-event>
             @endif
         @endcan
+
+
 
         @can('report', $event)
             <report-event :event="{{$event}}"></report-event>
@@ -179,12 +182,6 @@
                                         {{$tag->name}}
                                     </x-pill-tag>
 
-
-
-
-
-
-
                                 @endforeach
                             </ul>
                         </div>
@@ -264,6 +261,7 @@
             "renderTo" : "events-show-map",
             "custom": ["/js/hideMenuMap.js","/js/leaflet.markercluster.js"]
         }
+
 
 
 
