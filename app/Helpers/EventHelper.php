@@ -111,8 +111,20 @@ class EventHelper {
 
     }
 
-    public static function getNextPendingEvent(Event $event){
-        return self::getEventsQuery()->where('id','>',$event->id)->limit(1)->first();
+    public static function getNextPendingEvent(Event $event, ?String $country = null){
+        if (is_null($country)){
+            //Get pending events count for all countries
+            return self::getEventsQuery()->where('id','>',$event->id)->limit(1)->first();
+        } else {
+            //Get pending events count for specific country
+            return Event::where('status', '=', 'PENDING')
+                ->where('country_iso', $country)
+                ->where('start_date', '>', Carbon::createFromDate(2018, 1, 1))
+                ->where('id','>',$event->id)->limit(1)->first();
+
+
+        }
+
     }
 
 

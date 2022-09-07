@@ -426,4 +426,17 @@ class User extends Authenticatable
         return null;
     }
 
+    public function getNextPendingEvent(Event $event)
+    {
+        if (auth()->user()->isAmbassador()){
+            return EventHelper::getNextPendingEvent($event, $this->country_iso);
+        }
+
+        if (auth()->user()->isAdmin()){
+            return EventHelper::getNextPendingEvent($event);
+        }
+
+        return null;
+    }
+
 }

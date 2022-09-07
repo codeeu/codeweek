@@ -8,18 +8,21 @@ use Illuminate\View\Component;
 
 class ReviewNavigation extends Component
 {
+    public $event;
     public $events;
     public $pendingEventsCount;
+    public $nextPendingEvent;
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($event)
     {
+        $this->event = $event;
         $this->pendingEventsCount = auth()->user()->getEventsToReviewCount();
-        $this->nextPendingEvent =
+        $this->nextPendingEvent = auth()->user()->getNextPendingEvent($event);
     }
 
     /**
