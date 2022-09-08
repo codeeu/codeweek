@@ -18,11 +18,14 @@
 
         </section>
 
+
         <div class="bg-gray-50 overflow-hidden rounded-lg">
+            @role('super admin')
             <div class="mx-20 my-4">
             <country-select :target="'{{$target}}'" :code="'{{$country_iso}}'"
                             :countries="{{$countries}}"></country-select>
             </div>
+            @endrole
 
             <div class="px-4 py-5 sm:p-6">
                 <livewire:events-table :country="strtoupper($country_iso)"/>

@@ -43,12 +43,23 @@
   margin-bottom: 40px;
   text-align: center;
 }
-.moderate-event,
 .reported-event,
 .event-already-reported,
 .report-event{
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
+  background-color: #f8f8f8;
+  .actions{
+    margin-left: 10px;
+  }
+}
+
+.moderate-event,
+{
+  display: flex;
+  //justify-content: flex-end;
   align-items: center;
   padding: 5px;
   background-color: #f8f8f8;

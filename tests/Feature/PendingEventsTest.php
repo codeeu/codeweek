@@ -181,6 +181,25 @@ class PendingEventsTest extends TestCase
 
     }
 
+    /** @test */
+    function it_should_get_next_pending_event_as_not_null_for_last_event_if_there_are_more_events()
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+
+        $ambassador = create('App\User');
+        $ambassador->assignRole('ambassador');
+
+        $this->signIn($ambassador);
+
+        $event1 = create('App\Event', ['country_iso' => $ambassador->country->iso, 'status' => 'PENDING', 'id'=> 100]);
+        $event2 = create('App\Event', ['country_iso' => 'foobar', 'status' => 'PENDING', 'id'=>200]);
+        $event3 = create('App\Event', ['country_iso' => $ambassador->country->iso, 'status' => 'PENDING', 'id'=> 300]);
+
+        $this->assertEquals(100, auth()->user()->getNextPendingEvent($event3)->id);
+
+
+    }
+
 
 }
 

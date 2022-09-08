@@ -18,7 +18,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
-//Auth::loginUsingId(241748);
+Auth::loginUsingId(187778);
+
+
 
 Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
     Route::get('/', function ($subdomain) {
@@ -458,7 +460,8 @@ Route::group(['middleware' => ['role:super admin']], function () {
 });
 
 Route::group(['middleware' => ['role:super admin|ambassador']], function () {
-    Route::get('/pending', 'PendingEventsController@index')->name('pending');
+//    Route::get('/pending', 'PendingEventsController@index')->name('pending');
+    Route::get('/pending', 'ReviewController@index')->name('pending');
     Route::get('/review', 'ReviewController@index')->name('review');
 
     Route::get('/online/list', 'OnlineEventsController@list')->name(
