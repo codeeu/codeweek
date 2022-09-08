@@ -20,7 +20,6 @@ class EventsTable extends DataTableComponent
 // Optional, but if you need to initialize anything
     public function mount(string $country): void
     {
-        Log::info($country);
         $this->country = $country;
     }
 
@@ -50,9 +49,11 @@ class EventsTable extends DataTableComponent
 
     public function approveSelected()
     {
-        foreach ($this->getSelected() as $item) {
-            Log::info($item);
+        foreach ($this->getSelected() as $selectedId) {
+            Event::firstWhere('id', $selectedId)->approve();
         }
+
+        $this->clearSelected();
     }
 
     public function columns(): array
@@ -66,16 +67,17 @@ class EventsTable extends DataTableComponent
 //                ->sortable(),
 //            Column::make("Country iso", "country_iso")
 //                ->sortable(),
+//            Column::make('Description')
+//                ->format(
+//                    fn($value, $row, Column $column) => Str::$row->description
+//                )
+//                ->html(),
             LinkColumn::make('Title')
                 ->title(fn($row) => $row->title)
                 ->location(fn($row) => route('view_event', [$row, $row->slug])),
 //            Column::make("Slug", "slug")
 //                ->sortable(),
-            Column::make('Description')
-                ->format(
-                    fn($value, $row, Column $column) => $row->description
-                )
-                ->html(),
+
             Column::make("Organizer", "organizer")
                 ->sortable(),
 
@@ -85,8 +87,8 @@ class EventsTable extends DataTableComponent
 //                ->sortable(),
 //            Column::make("Longitude", "longitude")
 //                ->sortable(),
-            Column::make("Location", "location")
-                ->sortable(),
+//            Column::make("Location", "location")
+//                ->sortable(),
 
             Column::make("Start date", "start_date")
                 ->sortable(),

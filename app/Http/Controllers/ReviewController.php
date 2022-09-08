@@ -13,6 +13,10 @@ class ReviewController extends Controller
 
         $countries = CountriesQuery::withPendingEvents();
 
+        if(auth()->user()->isAmbassador()){
+            $country = auth()->user()->country;
+        }
+
         return view(
             'review',
             with([

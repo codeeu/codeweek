@@ -120,7 +120,7 @@ class EventHelper {
             return Event::where('status', '=', 'PENDING')
                 ->where('country_iso', $country)
                 ->where('start_date', '>', Carbon::createFromDate(2018, 1, 1))
-                ->where('id','>',$event->id)->limit(1)->first();
+                ->where('id','<>',$event->id)->limit(1)->first();
 
 
         }

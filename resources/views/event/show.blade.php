@@ -9,11 +9,10 @@
     <section id="codeweek-show-event-page" class="codeweek-page">
 
         @can('approve', $event)
-            <x-review-navigation :event="$event"></x-review-navigation>
             @if($event->certificate_url)
                 <reported-event :event="{{$event}}"></reported-event>
             @else
-                <moderate-event :event="{{$event}}"></moderate-event>
+                <moderate-event :event="{{$event}}" :pending-counter="{{auth()->user()->getEventsToReviewCount()}}" :next-pending="'{{optional(auth()->user()->getNextPendingEvent($event))->path()}}'"></moderate-event>
             @endif
         @endcan
 
