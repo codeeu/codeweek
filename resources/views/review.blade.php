@@ -11,7 +11,7 @@
 
             <div class="header">
                 <div>
-                    <h1>Review Page</h1>
+                    <h1>Pending Activities to review</h1>
                 </div>
             </div>
 
