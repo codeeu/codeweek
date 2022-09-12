@@ -6,8 +6,8 @@
 @section('content')
 
     <section class="mx-6">
-        <h1>Activities Locations</h1>
-        <span class="text-xl">Choose an existing location for your next activity OR <a href="{{route('create_event', ['skip' => 1])}}">skip and go to activity creation</a></span>
+        <h1>{{__('locations.title')}}</h1>
+        <span class="text-xl">{{__('locations.description.0')}} <a href="{{route('create_event', ['skip' => 1])}}">{{__('locations.description.1')}}</a></span>
 
         <table class="codeweek-table mt-2">
             <thead>
