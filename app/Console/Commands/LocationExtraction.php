@@ -39,7 +39,7 @@ class LocationExtraction extends Command
         Event::
             whereNull('deleted_at')->
 //            where('id','=',163373)->
-//        where('creator_id',153701)->
+        where('creator_id',153701)->
         where('status', "=", "APPROVED")->
         whereNull('location_id')->chunk($this->step, function ($events, $index) {
 
