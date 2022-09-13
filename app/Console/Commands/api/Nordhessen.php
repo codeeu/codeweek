@@ -3,7 +3,9 @@
 namespace App\Console\Commands\api;
 
 
-use App\BadenRSSItem;
+use App\BerlinRSSItem;
+use App\Event;
+use App\HamburgRSSItem;
 use Illuminate\Console\Command;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Carbon;
@@ -12,23 +14,24 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 
 
-class Muensterland extends Command
+class Nordhessen extends Command
 {
 
     use GermanTraits;
+
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'api:muensterland';
+    protected $signature = 'api:nordhessen {--force}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Import Muensterland Events';
+    protected $description = 'Import Nordhessen Events';
 
     /**
      * Create a new command instance.
@@ -53,10 +56,11 @@ class Muensterland extends Command
     public function handle()
     {
 
-        $city = 'Muensterland';
+        $city = 'Nordhessen';
 
-        $url = "https://muensterland.codeweek.de/?tx_codeweekevents_api[action]=listForEu&tx_codeweekevents_api[controller]=Api&tx_codeweekevents_api[format]=.json&tx_typoscriptrendering[context]={%22record%22%3A%22pages_1%22%2C%22path%22%3A%22tt_content.list.20.codeweekevents_api%22}&cHash=74bb9d71d62e381ebe95b33c1e197943";
+        $url = "https://nordhessen.codeweek.de/?tx_codeweekevents_api%5Baction%5D=listForEu&tx_codeweekevents_api%5Bcontroller%5D=Api&tx_codeweekevents_api%5Bformat%5D=.json&tx_typoscriptrendering%5Bcontext%5D=%7B%22record%22:%22pages_42%22,%22path%22:%22tt_content.list.20.codeweekevents_api%22%7D&cHash=c5952d04181fb05e7d86ef43efcd7f26";
         dump("Loading $city events");
+        $force = $this->option('force');
 
         $response = Http::get($url);
 
@@ -69,11 +73,7 @@ class Muensterland extends Command
 
         $this->createRSSItem($json, $city);
 
-
-
-        return Artisan::call("import:muensterland");
-
-
+        Artisan::call("import:nordhessen");
 
 
     }
@@ -83,5 +83,6 @@ class Muensterland extends Command
         return $item->get_item_tags("", $tag)[0]['data'];
 
     }
+
 
 }
