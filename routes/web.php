@@ -446,10 +446,7 @@ Route::group(['middleware' => ['role:super admin']], function () {
         'AdminController@generateCertificates'
     )->name('generate_certificates');
 
-    Route::get(
-        '/hackathons/vote/results',
-        'HackathonsVotingController@results'
-    )->name('hackathon-vote-results');
+
 
 
 });
@@ -535,34 +532,7 @@ Route::group(
     }
 );
 
-Route::get('/hackathons', 'HackathonsController@index')->name('hackathons');
-Route::view('/hackathons/romania', 'hackathons.after.hackathon-romania')->name(
-    'hackathon-romania'
-);
 
-Route::view('/hackathons/latvia', 'hackathons.after.hackathon-latvia')->name(
-    'hackathon-latvia'
-);
-
-Route::view('/hackathons/italy', 'hackathons.after.hackathon-italy')->name(
-    'hackathon-italy'
-);
-
-Route::view('/hackathons/greece', 'hackathons.after.hackathon-greece')->name(
-    'hackathon-greece'
-);
-
-Route::view('/hackathons/ireland', 'hackathons.after.hackathon-ireland')->name(
-    'hackathon-ireland'
-);
-
-Route::get('/hackathons/slovenia', 'HackathonsController@before')->name(
-    'hackathon-slovenia'
-);
-
-Route::post('/hackathons/vote', 'HackathonsVotingController@save')->name(
-    'hackathon-vote'
-);
 
 Route::view('/chatbot', 'static.chatbot')->name('chatbot');
 Route::view('/teach-day', 'teach-day')->name('teach-day');
