@@ -7,6 +7,7 @@
         <section class="codeweek-banner scoreboard">
             <div class="text">
                 <h1>@lang('remote-teaching.remote-teaching')</h1>
+
             </div>
             <div class="image">
                 <img src="images/banner_scoreboard.svg" class="static-image">
@@ -18,7 +19,7 @@
             <div class="codeweek-about-blue-box" style="line-height: 22px;">
 
                 <h3>@lang('remote-teaching.intro.title')</h3>
-
+                <h4>@lang('remote-teaching.intro.text')</h4>
                 <ul class="checklist">
 
                     <li><a href="{{route('coding@home')}}">@lang('menu.coding@home')</a>: @lang('remote-teaching.intro.points.1')</li>
