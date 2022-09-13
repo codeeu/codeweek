@@ -2,26 +2,24 @@
 
 @section('content')
 
-
     <section id="codeweek-privacy-page" class="codeweek-page">
 
         <section class="codeweek-content-wrapper" style="margin-top: 0;">
 
-            <h1 style="margin-bottom:10px;">PROTECTION OF YOUR PERSONAL DATA</h1>
+            <h1 style="margin-bottom:10px;">@lang('privacy-statement.title')</h1>
 
-            <div style="margin-bottom: 6px"><span style="font-weight: bold;">Processing operation:</span> Processing of
-                personal data on codeweek.eu, including IP addresses, by visitors of the publicly available websites.
+            <div style="margin-bottom: 6px"><span style="font-weight: bold;">@lang('privacy-statement.processing-operation.0'):</span>@lang('privacy-statement.processing-operation.1')
             </div>
-            <div style="margin-bottom: 6px"><span style="font-weight: bold;">Data Controller:</span> European
-                Commission, Directorate‑General for Communications Networks, Content and Technology, Unit F.4.
+            <div style="margin-bottom: 6px"><span style="font-weight: bold;">@lang('privacy-statement.data-controller.0'):</span>@lang('privacy-statement.data-controller.1')
             </div>
-            <div style="margin-bottom: 6px"><span style="font-weight: bold;">Record reference:</span> DPR-EC-09706.1
+            <div style="margin-bottom: 6px"><span style="font-weight: bold;">@lang('privacy-statement.record-reference'):</span>
+                DPR-EC-09706.1
             </div>
 
-            <h3 style="margin-top:10px">Table of Contents</h3>
+            <h3 style="margin-top:10px">@lang('privacy-statement.table-of-contents')</h3>
             <ol style="margin-bottom:20px">
-                <li><a href="#header-1">Introduction</a></li>
-                <li style="margin-top:4px"><a href="#header-2">Why and how do we process your personal data?</a></li>
+                <li><a href="#header-1">@lang('privacy-statement.1-intro.title')</a></li>
+                <li style="margin-top:4px"><a href="#header-2">@lang('privacy-statement.2-why.title')</a></li>
                 <li style="margin-top:4px"><a href="#header-3">On what legal ground(s) do we process your personal
                         data?</a></li>
                 <li style="margin-top:4px"><a href="#header-4">Which personal data do we collect and further
@@ -38,55 +36,62 @@
             </ol>
 
 
-            <h3 id="header-1"><strong>1. Introduction</strong></h3>
-            <p>The European Commission (hereafter ‘the Commission’) is committed to protecting your personal data and to
-                respecting your privacy. The Commission collects and further processes personal data pursuant to <a
-                        href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2018.295.01.0039.01.ENG&toc=OJ:L:2018:295:TOC">Regulation
-                    (EU) 2018/1725</a> of the European Parliament and of the Council of 23 October 2018 on the
-                protection of natural persons with regard to the processing of personal data by the Union institutions,
-                bodies, offices and agencies and on the free movement of such data (repealing Regulation (EC) No
-                45/2001).</p>
-            <p>This privacy statement explains the reason for the processing of your personal data, the way we collect,
-                handle and ensure protection of all personal data provided, how that information is used and what rights
-                you have in relation to your personal data. It also specifies the contact details of the responsible
-                Data Controller with whom you may exercise your rights, the Data Protection Officer and the European
-                Data Protection Supervisor.</p>
-            <p>The information in relation to processing operation <span style="font-style: italic">“Data processing on codeweek.eu”</span>
-                undertaken by the Commission is presented below.</p>
+            <h3 id="header-1"><strong>1. @lang('privacy-statement.1-intro.title')</strong></h3>
+            <p>@lang('privacy-statement.1-intro.items.1')</p>
+            <p>@lang('privacy-statement.1-intro.items.2')</p>
+            <p>@lang('privacy-statement.1-intro.items.3.0') <span style="font-style: italic">“@lang('privacy-statement.1-intro.items.3.1')”</span> @lang('privacy-statement.1-intro.items.3.2')</p>
 
-            <h3 id="header-2"><strong>2. Why and how do we process your personal data?</strong></h3>
-            <p><span style="text-decoration: underline">Purpose of the processing operation</span>: The Commission’s
-                Directorate-General for Communications Networks, Content and Technology offer a number of external
-                websites. The technical setup collects and uses your personal information to be able to provide the
-                websites which are physically located outside the Commission controlled hosting infrastructure.</p>
-            <p>Your personal data will not be used for an automated decision-making including profiling.</p>
+
+            <h3 id="header-2"><strong>2. @lang('privacy-statement.2-why.title')</strong></h3>
+            <p><span style="text-decoration: underline">@lang('privacy-statement.2-why.items.0')</span>: @lang('privacy-statement.2-why.items.1')</p>
+            <p>@lang('privacy-statement.2-why.items.2')</p>
 
             <h3 id="header-3"><strong>3. On what legal ground(s) do we process your personal data?</strong></h3>
             <p>We process your personal data on several grounds:</p>
             <ul style="list-style-type: circle;margin-left:40px; margin-top:4px;">
-                <li><strong>Article 5(1)(a) of Regulation (EU) 2018/1725</strong>: this processing is <span style="text-decoration: underline">necessary for the performance of a task</span> carried out in the public interest or in the exercise of official authority vested in the Union institution or body.<br/>
-                    Indeed, informing the broad public is a task resulting from the European Commission's own prerogatives at institutional level, as provided for in Article 58(2) (d) of Council Regulation (EC, Euratom) No 2018/1046 of 18 July 2018 on the Financial Regulation applicable to the general budget of the European Communities (OJ L 193, 30.7.2018, p. 1). We ensure that adequate and specific safeguards are implemented for the processing of personal data, in line with the applicable data protection legislation. </li>
-                <li><strong>Article 5(1)(d) of Regulation (EU) 2018/1725:</strong> for the processing activities consisting in cookies and authentication, your <span style="text-decoration: underline">consent</span> is necessary. In compliance with Article 3(15) and Article 7 of Regulation (EU) 2018/1725, the consent must be freely given, specific, informed and unambiguous.</li>
+                <li><strong>Article 5(1)(a) of Regulation (EU) 2018/1725</strong>: this processing is <span
+                            style="text-decoration: underline">necessary for the performance of a task</span> carried
+                    out in the public interest or in the exercise of official authority vested in the Union institution
+                    or body.<br/>
+                    Indeed, informing the broad public is a task resulting from the European Commission's own
+                    prerogatives at institutional level, as provided for in Article 58(2) (d) of Council Regulation (EC,
+                    Euratom) No 2018/1046 of 18 July 2018 on the Financial Regulation applicable to the general budget
+                    of the European Communities (OJ L 193, 30.7.2018, p. 1). We ensure that adequate and specific
+                    safeguards are implemented for the processing of personal data, in line with the applicable data
+                    protection legislation.
+                </li>
+                <li><strong>Article 5(1)(d) of Regulation (EU) 2018/1725:</strong> for the processing activities
+                    consisting in cookies and authentication, your <span
+                            style="text-decoration: underline">consent</span> is necessary. In compliance with Article
+                    3(15) and Article 7 of Regulation (EU) 2018/1725, the consent must be freely given, specific,
+                    informed and unambiguous.
+                </li>
             </ul>
-            <p>We have obtained your consent directly from you. You may have expressed it by an email, submitted via e-registration form, or in any other written form.</p>
+            <p>We have obtained your consent directly from you. You may have expressed it by an email, submitted via
+                e-registration form, or in any other written form.</p>
 
             <h3 id="header-4"><strong>4. Which personal data do we collect and further process?</strong></h3>
 
 
             <div style="margin-top: 10px;">
-                In order to <strong>carry out this processing operation</strong>, Unit F.4 collects the following categories of personal data:
+                In order to <strong>carry out this processing operation</strong>, Unit F.4 collects the following
+                categories of personal data:
             </div>
             <ul style="list-style-type: circle;margin-left:40px; margin-top:4px;">
-                <li>Internet Protocol address (IP address) or the device ID of the device used to access the website.</li>
+                <li>Internet Protocol address (IP address) or the device ID of the device used to access the website.
+                </li>
             </ul>
-            <div>Without this processing you will not be able to establish a technical connection between your devices and the server infrastructure and therefore will not be able to access our website.</div>
-            <div>In order for you to <strong>authenticate on this website</strong>, Unit F.4 collects the following categories of personal data: </div>
+            <div>Without this processing you will not be able to establish a technical connection between your devices
+                and the server infrastructure and therefore will not be able to access our website.
+            </div>
+            <div>In order for you to <strong>authenticate on this website</strong>, Unit F.4 collects the following
+                categories of personal data:
+            </div>
             <ul style="list-style-type: circle;margin-left:40px; margin-top:4px;">
                 <li>E-mail address;</li>
                 <li>Password; or</li>
                 <li>Social media authentication.</li>
             </ul>
-
 
 
             <h3 id="header-5"><strong>5. How long do we keep your personal data?</strong></h3>
