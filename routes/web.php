@@ -570,90 +570,33 @@ Route::view('/teach-day', 'teach-day')->name('teach-day');
 Route::get('/community', 'CommunityController@index')->name('community');
 
 Route::view('/challenges', '2021.challenges')->name('challenges');
+Route::view('/challenges/dance', '2021.challenges.dance')->name('challenges.dance');;
 
-Route::prefix('2021')->group(function () {
-    Route::view('/challenges', '2021.challenges');
-    Route::view('/challenges/dance', '2021.challenges.dance')->name(
-        'challenges.dance'
-    );
-    Route::view(
-        '/challenges/compose-song',
-        '2021.challenges.compose-song'
-    )->name('challenges.compose-song');
-    Route::view(
-        '/challenges/sensing-game',
-        '2021.challenges.sensing-game'
-    )->name('challenges.sensing-game');
-    Route::view('/challenges/chatbot', '2021.challenges.chatbot')->name(
-        'challenges.chatbot'
-    );
-    Route::view(
-        '/challenges/paper-circuit',
-        '2021.challenges.paper-circuit'
-    )->name('challenges.paper-circuit');
-    Route::view(
-        '/challenges/ai-hour-of-code',
-        '2021.challenges.ai-hour-of-code'
-    )->name('challenges.ai-hour-of-code');
 
-    Route::view(
-        '/challenges/calming-leds',
-        '2021.challenges.calming-leds'
-    )->name('challenges.calming-leds');
 
-    Route::view(
-        '/challenges/computational-thinking-and-computational-fluency',
-        '2021.challenges.computational-thinking-and-computational-fluency'
-    )->name('challenges.computational-thinking-and-computational-fluency');
+$challenges =  function () {
+    Route::view('compose-song','2021.challenges.compose-song')->name('challenges.compose-song');
+    Route::view('sensing-game','2021.challenges.sensing-game')->name('challenges.sensing-game');
+    Route::view('chatbot', '2021.challenges.chatbot')->name('challenges.chatbot');
+    Route::view('paper-circuit','2021.challenges.paper-circuit')->name('challenges.paper-circuit');
+    Route::view('ai-hour-of-code','2021.challenges.ai-hour-of-code')->name('challenges.ai-hour-of-code');
+    Route::view('calming-leds','2021.challenges.calming-leds')->name('challenges.calming-leds');
+    Route::view('computational-thinking-and-computational-fluency','2021.challenges.computational-thinking-and-computational-fluency')->name('challenges.computational-thinking-and-computational-fluency');
+    Route::view('create-a-dance','2021.challenges.create-a-dance')->name('challenges.create-a-dance');
+    Route::view('create-a-simulation','2021.challenges.create-a-simulation')->name('challenges.create-a-simulation');
+    Route::view('create-your-own-masterpiece','2021.challenges.create-your-own-masterpiece')->name('challenges.create-your-own-masterpiece');
+    Route::view('cs-first-unplugged-activities','2021.challenges.cs-first-unplugged-activities')->name('challenges.cs-first-unplugged-activities');
+    Route::view('family-care', '2021.challenges.family-care')->name('challenges.family-care');
+    Route::view('virtual-flower-field','2021.challenges.virtual-flower-field')->name('challenges.virtual-flower-field');
+    Route::view('haunted-house','2021.challenges.haunted-house')->name('challenges.haunted-house');
+    Route::view('inclusive-app-design','2021.challenges.inclusive-app-design')->name('challenges.inclusive-app-design');
+    Route::view('silly-eyes', '2021.challenges.silly-eyes')->name('challenges.silly-eyes');
+    Route::view('train-ai-bot','2021.challenges.train-ai-bot')->name('challenges.train-ai-bot');
+};
 
-    Route::view(
-        '/challenges/create-a-dance',
-        '2021.challenges.create-a-dance'
-    )->name('challenges.create-a-dance');
+Route::group(['prefix' => '2021/challenges'], $challenges);
+Route::group(['prefix' => 'challenges'], $challenges);
 
-    Route::view(
-        '/challenges/create-a-simulation',
-        '2021.challenges.create-a-simulation'
-    )->name('challenges.create-a-simulation');
-
-    Route::view(
-        '/challenges/create-your-own-masterpiece',
-        '2021.challenges.create-your-own-masterpiece'
-    )->name('challenges.create-your-own-masterpiece');
-
-    Route::view(
-        '/challenges/cs-first-unplugged-activities',
-        '2021.challenges.cs-first-unplugged-activities'
-    )->name('challenges.cs-first-unplugged-activities');
-
-    Route::view('/challenges/family-care', '2021.challenges.family-care')->name(
-        'challenges.family-care'
-    );
-
-    Route::view(
-        '/challenges/virtual-flower-field',
-        '2021.challenges.virtual-flower-field'
-    )->name('challenges.virtual-flower-field');
-
-    Route::view(
-        '/challenges/haunted-house',
-        '2021.challenges.haunted-house'
-    )->name('challenges.haunted-house');
-
-    Route::view(
-        '/challenges/inclusive-app-design',
-        '2021.challenges.inclusive-app-design'
-    )->name('challenges.inclusive-app-design');
-
-    Route::view('/challenges/silly-eyes', '2021.challenges.silly-eyes')->name(
-        'challenges.silly-eyes'
-    );
-
-    Route::view(
-        '/challenges/train-ai-bot',
-        '2021.challenges.train-ai-bot'
-    )->name('challenges.train-ai-bot');
-});
 
 Route::view('/leaflet', 'map.leaflet')->name('leaflet');
 
@@ -666,7 +609,7 @@ Route::get('podcasts', 'PodcastsController@index')->name('podcasts');
 Route::get('podcast/{podcast}', 'PodcastsController@show')->name('podcast');
 
 Route::get('birthday', function () {
-    $user = User::where('email','alainvd@gmail.com')->first();
+    $user = User::where('email', 'alainvd@gmail.com')->first();
     return (new \App\Mail\BirthdayMailing($user->email, $user->magic_key))->render();
 });
 
