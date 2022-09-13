@@ -59,7 +59,7 @@
                 @lang('training.footer.text')
 
             </section>
-
+            @include('include.licence')
         </section>
 
     </section>
