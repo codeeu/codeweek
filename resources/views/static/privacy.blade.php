@@ -96,6 +96,9 @@
             <p>
                 @lang('privacy-statement.7-access_data.items.1')
             </p>
+            <p>
+                @lang('privacy-statement.7-access_data.items.2')
+            </p>
 
             <h3 id="header-8"><strong>8. @lang('privacy-statement.8-rights.title')</strong></h3>
             <p>
