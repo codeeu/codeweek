@@ -18,7 +18,7 @@ return [
         'title' => 'Introduction',
         'items' => [
             '1' =>
-                'The European Commission (hereafter ‘the Commission’) is committed to protecting your personal data and to respecting your privacy. The Commission collects and further processes personal data pursuant to <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2018.295.01.0039.01.ENG&toc=OJ:L:2018:295:TOC">Regulation (EU) 2018/1725</a> of the European Parliament and of the Council of 23 October 2018 on the protection of natural persons with regard to the processing of personal data by the Union institutions, bodies, offices and agencies and on the free movement of such data (repealing Regulation (EC) No 45/2001).',
+                'The European Commission (hereafter ‘the Commission’) is committed to protecting your personal data and to respecting your privacy. The Commission collects and further processes personal data pursuant to <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2018.295.01.0039.01.ENG&toc=OJ:L:2018:295:TOC">Regulation (EU) 2018/1725</a> of the European Parliament and of the Council, of 23 October 2018, on the protection of natural persons with regard to the processing of personal data by the Union institutions, bodies, offices and agencies and on the free movement of such data (repealing Regulation (EC) n° 45/2001).',
             '2' =>
                 'This privacy statement explains the reason for the processing of your personal data, the way we collect, handle and ensure protection of all personal data provided, how that information is used and what rights you have in relation to your personal data. It also specifies the contact details of the responsible Data Controller with whom you may exercise your rights, the Data Protection Officer and the European Data Protection Supervisor.',
             '3' => [
@@ -61,7 +61,7 @@ return [
     '5-how_long' => [
         'title' => 'How long do we keep your personal data?',
         'items' => [
-            'Unit F.4 only keeps your personal data for the time necessary to fulfill the purpose of collection or further processing, namely for the duration of the browsing session. In addition, IP addresses might be saved for one year in the log files of the services for security reasons. As to the analytics tool, the IP address and the device ID (e.g. IMEI number and WIFI MAC address) are deleted immediately at disconnection.',
+            'Unit F.4 only keeps your personal data for the time necessary to fulfil the purpose of collection or further processing, namely for the duration of the browsing session. In addition, IP addresses might be saved for one year in the log files of the services for security reasons. As to the analytics tool, the IP address and the device ID (e.g. IMEI number and WIFI MAC address) are deleted immediately at disconnection.',
 
 
         ]
@@ -69,10 +69,10 @@ return [
     '6-protect_data' => [
         'title' => 'How do we protect and safeguard your personal data?',
         'items' => [
-            'All personal data in electronic format (e-mails, documents, databases, uploaded batches of data, etc.) are stored either on the servers of the European Commission. All processing operations are carried out pursuant to the',
+            'All personal data in electronic format (e-mails, documents, databases, uploaded batches of data, etc.) are stored on the servers of the European Commission. All processing operations are carried out pursuant to the',
             'Commission Decision (EU, Euratom) 2017/46',
             ', of 10 January 2017, on the security of communication and information systems in the European Commission.',
-            'In order to protect your personal data, the Commission has put in place a number of technical and organisational measures in place. Technical measures include appropriate actions to address online security, risk of data loss, alteration of data or unauthorised access, taking into consideration the risk presented by the processing and the nature of the personal data being processed. Organisational measures include restricting access to the personal data solely to authorised persons with a legitimate need to know for the purposes of this processing operation.',
+            'In order to protect your personal data, the Commission has put in place a number of technical and organisational measures. Technical measures include appropriate actions to address online security, risk of data loss, alteration of data or unauthorised access, taking into consideration the risk presented by the processing and the nature of the personal data being processed. Organisational measures include restricting access to the personal data solely to authorised persons with a legitimate need to know for the purposes of this processing operation.',
 
         ]
     ],
@@ -81,6 +81,7 @@ return [
             'Who has access to your personal data and to whom is it disclosed?',
         'items' => [
             'Access to your personal data is provided to the Commission staff responsible for carrying out this processing operation and to authorised staff according to the “need to know” principle. Such staff abide by statutory, and when required, additional confidentiality agreements.',
+            'Furthermore, access to your personal data can be provided to external contractors working on behalf of and under contractual agreement with the Commission service owning the websites and engaged in creation, maintenance, management, and archiving of websites according to the “need to know” principle.',
             'The information we collect will not be given to any third party, except to the extent and for the purpose we may be required to do so by law.'
         ]
     ],
