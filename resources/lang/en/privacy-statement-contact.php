@@ -1,7 +1,6 @@
 <?php
 
 return [
-    'title' => 'PROTECTION OF YOUR PERSONAL DATA',
     'subtitle' => 'This privacy statement provides information about the processing and the protection of your personal data.',
     'processing-operation' => [
         'Processing operation',
@@ -54,7 +53,7 @@ return [
     '6-protect_data' => [
         'items' => [
             'All personal data in electronic format (e-mails, documents, databases, uploaded batches of data, etc.) are stored either on the servers of the European Commission or of its contractors. All processing operations are carried out pursuant to the <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1548093747090&uri=CELEX:32017D0046">Commission Decision (EU, Euratom) 2017/46</a>, of 10 January 2017, on the security of communication and information systems in the European Commission.',
-            'The Commission’s contractors are bound by a specific contractual clause for any processing operations of your data on behalf of the Commission, and by the confidentiality obligations deriving from the transposition of the General Data Protection Regulation in the EU Member States (‘GDPR’ <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%253A32016R0679">Regulation (EU) 2016/679</a>).',
+            'The Commission’s contractors are bound by a specific contractual clause for any processing operations of your data on behalf of the Commission, and by the confidentiality obligations deriving from the transposition of the General Data Protection Regulation in the EU Member States (‘GDPR’ <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">Regulation (EU) 2016/679</a>).',
             'In order to protect your personal data, the Commission has put in place a number of technical and organisational measures in place. Technical measures include appropriate actions to address online security, risk of data loss, alteration of data or unauthorised access, taking into consideration the risk presented by the processing and the nature of the personal data being processed. Organisational measures include restricting access to the personal data solely to authorised persons with a legitimate need to know for the purposes of this processing operation.',
 
         ]
