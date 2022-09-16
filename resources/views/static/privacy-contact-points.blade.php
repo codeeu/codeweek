@@ -101,24 +101,24 @@
 
             <h3 id="header-6"><strong>6. @lang('privacy-statement.6-protect_data.title')</strong></h3>
             <p>
-                @lang('privacy-statement-contact.6-protect_data.items.0')
+                @lang('privacy-statement-contact.6-protect_data.0')
             </p>
 
             <p>
-                @lang('privacy-statement-contact.6-protect_data.items.1')
+                @lang('privacy-statement-contact.6-protect_data.1')
             </p>
 
             <p>
-                @lang('privacy-statement-contact.6-protect_data.items.2')
+                @lang('privacy-statement-contact.6-protect_data.2')
             </p>
 
 
             <h3 id="header-7"><strong>7. @lang('privacy-statement.7-access_data.title')</strong></h3>
             <p>
-                @lang('privacy-statement-contact.7-access_data.items.0')
+                @lang('privacy-statement-contact.7-access_data.0')
             </p>
-            <p>@lang('privacy-statement-contact.7-access_data.items.1')</p>
-            <p>@lang('privacy-statement-contact.7-access_data.items.2')</p>
+            <p>@lang('privacy-statement-contact.7-access_data.1')</p>
+            <p>@lang('privacy-statement-contact.7-access_data.2')</p>
 
             <h3 id="header-8"><strong>8. @lang('privacy-statement.8-rights.title')</strong></h3>
             <p>
