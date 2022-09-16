@@ -42,7 +42,7 @@
             <h3 id="header-4"><strong>4. @lang('privacy-statement.4-collect_data.title')</strong></h3>
 
 
-            <div style="margin-top: 10px;">@lang('privacy-statement.4-collect_data.0')
+            <div style="margin-top: 10px;">@lang('privacy-statement-contact.4-collect_data.0')
             </div>
             <ul style="list-style-type: circle;margin-left:40px; margin-top:4px;">
                 <li>@lang('privacy-statement-contact.4-collect_data.1');</li>
