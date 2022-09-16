@@ -99,7 +99,7 @@ return [
         'title' => 'Contact information',
         'data-controller' => [
             'title' => 'The Data Controller',
-            'text' =>  'If you would like to exercise your rights under Regulation (EU) 2018/1725, or if you have comments, questions or concerns, or if you would like to submit a complaint regarding the collection and use of your personal data, please feel free to contact the Data Controller, Unit F.4, at'
+            'text' =>  'If you would like to exercise your rights under Regulation (EU) 2018/1725, or if you have comments, questions or concerns, or if you would like to submit a complaint regarding the collection and use of your personal data, please feel free to contact the Data Controller, Unit F.4, European Commission,at'
 
         ],
         'data-protection-officer' => [
