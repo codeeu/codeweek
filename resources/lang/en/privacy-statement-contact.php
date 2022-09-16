@@ -12,11 +12,11 @@ return [
         'GOPA Com. S.A. and EUN Partnership AISBL (European Schoolnet), info@codeweek.eu'
     ],
     '1-intro' => [
-            'The information in relation to processing of personal data for the management of Code Week Ambassadors, Leading Teachers and registration of activities on the website.'
+        'The information in relation to processing of personal data for the management of Code Week Ambassadors, Leading Teachers and registration of activities on the website.'
     ],
 
     '3-legal_process' => [
-       'Lawfulness of the processing operation: Unit F.4 collects, stores and publishes your personal data, because you gave your explicit consent by ticking a box when you signed up to become a Code Week Ambassador, a Leading Teacher or when you applied to register an event on <a href="https://codeweek.eu/register">Europe Code Week.</a>',
+        'Lawfulness of the processing operation: Unit F.4 collects, stores and publishes your personal data, because you gave your explicit consent by ticking a box when you signed up to become a Code Week Ambassador, a Leading Teacher or when you applied to register an event on <a href="https://codeweek.eu/register">Europe Code Week.</a>',
 
     ],
     '4-collect_data' => [
@@ -48,47 +48,33 @@ return [
 
     ],
     '5-how_long' => [
-        'title' => 'How long do we keep your personal data?',
-        'items' => [
-            'Unit F.4 only keeps your personal data for the time necessary to fulfil the purpose of collection or further processing, namely for the duration of the browsing session. In addition, IP addresses might be saved for one year in the log files of the services for security reasons. As to the analytics tool, the IP address and the device ID (e.g. IMEI number and WIFI MAC address) are deleted immediately at disconnection.',
-
-
-        ]
+        'All personal data will be deleted from databases if you withdraw from the initiative or 5 years after the end of the initiative.',
     ],
+
     '6-protect_data' => [
-        'title' => 'How do we protect and safeguard your personal data?',
         'items' => [
-            'All personal data in electronic format (e-mails, documents, databases, uploaded batches of data, etc.) are stored on the servers of the European Commission. All processing operations are carried out pursuant to the',
-            'Commission Decision (EU, Euratom) 2017/46',
-            ', of 10 January 2017, on the security of communication and information systems in the European Commission.',
-            'In order to protect your personal data, the Commission has put in place a number of technical and organisational measures. Technical measures include appropriate actions to address online security, risk of data loss, alteration of data or unauthorised access, taking into consideration the risk presented by the processing and the nature of the personal data being processed. Organisational measures include restricting access to the personal data solely to authorised persons with a legitimate need to know for the purposes of this processing operation.',
+            'All personal data in electronic format (e-mails, documents, databases, uploaded batches of data, etc.) are stored either on the servers of the European Commission or of its contractors. All processing operations are carried out pursuant to the <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1548093747090&uri=CELEX:32017D0046">Commission Decision (EU, Euratom) 2017/46</a>, of 10 January 2017, on the security of communication and information systems in the European Commission.',
+            'The Commission’s contractors are bound by a specific contractual clause for any processing operations of your data on behalf of the Commission, and by the confidentiality obligations deriving from the transposition of the General Data Protection Regulation in the EU Member States (‘GDPR’ <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%253A32016R0679">Regulation (EU) 2016/679</a>).',
+            'In order to protect your personal data, the Commission has put in place a number of technical and organisational measures in place. Technical measures include appropriate actions to address online security, risk of data loss, alteration of data or unauthorised access, taking into consideration the risk presented by the processing and the nature of the personal data being processed. Organisational measures include restricting access to the personal data solely to authorised persons with a legitimate need to know for the purposes of this processing operation.',
 
         ]
     ],
     '7-access_data' => [
-        'title' =>
-            'Who has access to your personal data and to whom is it disclosed?',
         'items' => [
-            'Access to your personal data is provided to the Commission staff responsible for carrying out this processing operation and to authorised staff according to the “need to know” principle. Such staff abide by statutory, and when required, additional confidentiality agreements.',
-            'Furthermore, access to your personal data can be provided to external contractors working on behalf of and under contractual agreement with the Commission service owning the websites and engaged in creation, maintenance, management, and archiving of websites according to the “need to know” principle.',
-            'The information we collect will not be given to any third party, except to the extent and for the purpose we may be required to do so by law.'
+            'All personal data provided by you can be accessed by Commission staff on a “need to know” basis. In addition, access to your personal data is provided to our contractor on a “need to know” basis.',
+            'For the purpose of increasing the Code Week Ambassador, Leading Teacher’s or the registered activities’ visibility, all your personal data are published on the following <a href="https://codeweek.eu/">website</a>.',
+            'In addition, Unit F.4 might share your share your contact details with any member of the public or stakeholder that would need to contact you with regard to Code Week. For activity organisers, please note that the relevant Ambassador for your country or Unit F.4 can use the personal data you provided to register an activity to contact you with regard to said activity.',
         ]
     ],
     '8-rights' => [
-        'title' => 'What are your rights and how can you exercise them?',
-        'items' => [
-            'You have specific rights as a ‘data subject’ under Chapter III (Articles 14-25) of Regulation (EU) 2018/1725, in particular the right to access, rectify or erase your personal data and the right to restrict the processing of your personal data. Where applicable, you also have the right to object to the processing or the right to data portability.',
-            'You have the right to object to the processing of your personal data, which is lawfully carried out pursuant to Article 5(1)(a).',
-            'You have consented to provide your personal data for the present processing operation. You can withdraw your consent at any time by notifying Unit F.4. The withdrawal will not affect the lawfulness of the processing carried out before you withdrew your consent.',
-            'You can exercise your rights by contacting the Data Controller, or in case of conflict the Data Protection Officer. If necessary, you can also address the European Data Protection Supervisor. Their contact information is given under Heading 9 below.',
-            'Where you wish to exercise your rights in the context of one or several specific processing operations, please provide their description (i.e. their Record reference(s) as specified under Heading 10 below) in your request.'
-        ]
+        'You have consented to providing your personal data to Unit F.4 for the present processing operation. You can withdraw your consent at any time by notifying Unit F.4 at CNECT-F4@ec.europa.eu. The withdrawal will not affect the lawfulness of the processing carried out before you have withdrawn the consent.'
+
     ],
     '9-contact' => [
         'title' => 'Contact information',
         'data-controller' => [
             'title' => 'The Data Controller',
-            'text' =>  'If you would like to exercise your rights under Regulation (EU) 2018/1725, or if you have comments, questions or concerns, or if you would like to submit a complaint regarding the collection and use of your personal data, please feel free to contact the Data Controller, Unit F.4, at'
+            'text' => 'If you would like to exercise your rights under Regulation (EU) 2018/1725, or if you have comments, questions or concerns, or if you would like to submit a complaint regarding the collection and use of your personal data, please feel free to contact the Data Controller, Unit F.4, at'
 
         ],
         'data-protection-officer' => [
@@ -101,10 +87,6 @@ return [
         ]
     ],
     '10-detailed-info' => [
-        'title' => 'Where to find more detailed information?',
-        'items' => [
-            'The Commission Data Protection Officer (DPO) publishes the register of all processing operations on personal data by the Commission, which have been documented and notified to him. You may access the register via the following link: <a href="https://ec.europa.eu/dpo-register">https://ec.europa.eu/dpo-register</a>',
-            'This specific processing operation has been included in the DPO’s public register with the following Record reference: <strong>DPR-EC-09706.1</strong>.'
-        ]
+        'This specific processing operation has been included in the DPO’s public register with the following legacy notification reference: DPR-EC-02631 Management of contact points for DG CONNECT policies, programmes and projects.'
     ]
 ];
