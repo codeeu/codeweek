@@ -6,7 +6,7 @@
 
         <section class="codeweek-content-wrapper" style="margin-top: 0;">
 
-            <h1 style="margin-bottom:10px;">@lang('privacy-statement-contact.title')</h1>
+            <h1 style="margin-bottom:10px;">@lang('privacy-statement.title')</h1>
             <h3 style="margin-bottom:10px;">@lang('privacy-statement-contact.subtitle')</h3>
 
             <div style="margin-bottom: 6px"><span style="font-weight: bold;">@lang('privacy-statement-contact.processing-operation.0'):</span> @lang('privacy-statement-contact.processing-operation.1')
