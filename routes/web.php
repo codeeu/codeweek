@@ -15,7 +15,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-Auth::loginUsingId(153701);
+//Auth::loginUsingId(153701);
 
 Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
     Route::get('/', function ($subdomain) {
