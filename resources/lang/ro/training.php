@@ -265,6 +265,39 @@ Cu Python, elevii pot să creeze jocuri cu întrebări despre evenimente istoric
                 "3" => "Verificarea informațiilor",
             ]
         ],
+        "16" => [
+            "title" => "TEHNICA POVESTIRII CU HEDY",
+            "author" => "de Felienne Hermans",
+            "text" => [
+                "Elevii dumneavoastră stăpânesc deja un limbaj de programare vizual, dar nu se simt pregătiți să aprofundeze un limbaj de programare bazat pe text? Atunci modulul acesta de învățare este cât se poate de potrivit pentru dumneavoastră și pentru elevii dumneavoastră, deoarece îi va ajuta să facă legătura între un limbaj de programare vizual și unul bazat pe text. Modulul de învățare <strong>Tehnica povestirii cu Hedy</strong> cuprinde trei planuri de lecție care utilizează Hedy – un limbaj de programare gradual pentru a-i învăța pe copii programare.",
+
+                "Hedy se adresează copiilor care doresc să se inițieze în limbajele de programare sub formă de text, dar pentru care Python ar putea fi prea complex deocamdată. Limbajele progresive utilizează diferite niveluri lingvistice, fiecare nivel adăugând concepte noi și complexitate sporită a sintaxei. La sfârșitul unui nivel Hedy, elevii stăpânesc un subset de limbaj Python valid din punct de vedere sintactic.",
+
+                "În acest modul de învățare veți găsi activități atractive care pot servi drept inspirație, pentru a-i ajuta pe elevii dumneavoastră să utilizeze eficient limbajele de programare bazate pe text. Creându-și propriile povești interactive, aceștia vor învăța treptat programarea, fără a fi nevoiți să învețe totul dintr-o dată. În planul de lecție pentru învățământul primar, elevii fac cunoștință cu conceptele de bază ale programării. Planul de lecții pentru învățământul secundar inferior introduce concepte de programare suplimentare, iar planul de lecții pentru învățământul secundar superior le permite elevilor să programeze povești și activități mai complexe.",
+
+                "Consultați povestea interactivă de mai jos pentru a vedea cum pot participa cititorii la poveste și cum îi încurajează aceasta să se implice activ."
+            ],
+            "activities" => [
+                "1" => "Creați-vă propria poveste interactivă cu Hedy pentru elevii din ciclul primar",
+                "2" => "Creați-vă propria poveste interactivă cu Hedy pentru elevii din învățământul secundar inferior",
+                "3" => "Creați-vă propria poveste interactivă cu Hedy pentru elevii din învățământul secundar inferior",
+            ]
+        ],
+        "17" => [
+            "title" => "Sentimente și programare",
+            "author" => "de Alenka Miljević",
+            "text" => [
+                "Starea de bine din punct de vedere social și emoțional reprezintă capacitatea de rezistență, de a ști cum să îți gestionezi propriile emoții și cum să reacționezi la emoțiile altora, de a dezvolta relații profunde cu ceilalți, de a genera emoții care duc la sentimente bune și de a-ți crea propria rețea de sprijin emoțional. Competențele sociale și emoționale pe care le învață copiii la școală îi ajută să își dezvolte rezistența și stabilesc un model pentru modul în care își vor gestiona sănătatea fizică și mintală pe tot parcursul vieții. (Consiliul Europei)",
+                "Modulul de învățare Sentimente și programare vă va ajuta să promovați starea de bine socială și emoțională a elevilor dvs. prin recunoașterea, explicarea, înțelegerea și reacția la sentimente și emoții pozitive și negative, pentru a dezvolta empatia și rezistența elevilor.  În acest modul de învățare veți găsi activități atractive care pot servi drept inspirație, pentru a-i ajuta pe elevii dvs. să facă față diferitor emoții prin programare. Elevii vor învăța cum să își exprime sentimentele și cum să reacționeze la emoțiile colegilor lor cu ajutorul unui robot Bee-Bot.",
+                "Modulul de învățare Sentimente și programare cuprinde trei planuri de lecție care utilizează un robot educațional Bee-Bot pentru a crea activități care încurajează elevii să vorbească despre emoții și să își dezvolte empatia. În planul de lecție pentru ciclul primar, elevii programează un robot Bee-Bot pentru a vorbi despre emoții precum tristețea, fericirea, frica și furia și pentru a descoperi din ce motive simt ei și colegii lor aceste emoții. Planul de lecție pentru gimnaziu încurajează elevii să programeze un robot Bee-Bot, să își recunoască propriile sentimente și pe cele ale colegilor, să înțeleagă ce le provoacă și cum să reacționeze la ele. Planul de lecție pentru liceu le permite elevilor să dirijeze un robot Bee și să compună narațiuni despre sentimente, rezistență și empatie.",
+                "Dacă nu aveți un robot educațional în sala de clasă, acest modul de învățare vă va oferi idei de activități unplugged care să stimuleze dezvoltarea abilităților sociale și emoționale. Planul interactiv de mai jos oferă o scurtă prezentare a activităților pe care le puteți desfășura în clasă:"
+            ],
+            "activities" => [
+                "1" => "Programează – simte – învață pentru elevii din ciclul primar",
+                "2" => "Nu am o inimă de piatră pentru elevii de gimnaziu",
+                "3" => "Programează-mi dispoziția pentru elevii de liceu",
+            ]
+        ],
 
 
     ],

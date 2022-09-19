@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Helpers\UserHelper;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Carbon;
@@ -53,15 +54,17 @@ class LoginController extends Controller
 
     /**
      * Obtain the user information from GitHub.
-
-     * @return Response
+ * @return \Illuminate\Http\RedirectResponse
      */
     public function handleProviderCallback($provider)
     {
-        $socialUser = Socialite::driver($provider)->stateless()->user();
+        if ('twitter' == $provider){
+            $socialUser = Socialite::driver($provider)->user();
+        } else{
+            $socialUser = Socialite::driver($provider)->stateless()->user();
+        }
 
         $this->loginUser($provider, $socialUser);
-
 
         return redirect()->intended('/');
 
@@ -85,6 +88,7 @@ class LoginController extends Controller
                     'firstname' => ($socialUser->getName()) ? $socialUser->getName() : $socialUser->getNickName(),
                     'lastname' => '',
                     'provider' => $provider,
+                    'magic_key' =>random_int(1000000,2000000) * random_int(1000,2000)
                 ]);
 
         } else {

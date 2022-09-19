@@ -36,6 +36,16 @@
           <div class="relative p-6 flex-auto">
             <p class="text-gray-800 text-lg leading-relaxed">
               This will help the activity organizer to improve his/her submission.
+              <div class="rejectionOptions" style="padding: 10px;">
+                        <multiselect v-model="rejectionOption" :options="rejectionOptions" track-by="title" label="title"
+                                      :close-on-select="true"
+                                      :preserve-search="false" placeholder="Select a rejection reason" :searchable="false"
+                                      :allowEmpty="false"  @input="prefillRejectionText" >
+                            <template slot="singleLabel" slot-scope="{ option }">{{ option.title }}</template>
+                            <pre class="language-json"><code>{{ rejectionOption.title  }}</code></pre>
+                        </multiselect>
+                        
+              </div>
               <textarea id="rejectionText" name="rejectionText" rows="4" cols="40" v-model="rejectionText"
                         class="px-1 py-1 placeholder-gray-400 text-gray-700 relative bg-blue-200 rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pr-3">
 
@@ -109,10 +119,10 @@
 </template>
 
 <script>
-
+import Multiselect from 'vue-multiselect'
 
 export default {
-
+  components: {Multiselect},
   props: ['event', 'refresh', 'ambassador'],
   name: "reject-activity",
   data() {
@@ -120,7 +130,17 @@ export default {
       status: this.$t('myevents.status.' + this.event.status),
       showModal: false,
       showDeleteModal: false,
-      rejectionText: ''
+      rejectionText: '',
+      rejectionOption:'',
+      rejectionOptions: [{'title': "Missing proper descriptions",
+                           'text': "Please improve the description and describe in more detail what you will do and how your activity relates to coding and computational thinking. Thanks!"},
+                         {'title': "Missing important details",
+                           'text': "Provide more details on the activity objectives and goals and how it makes use of technology, coding and critical thinking. Thanks!"},
+                         {'title': "Duplicate",
+                           'text': "This seems to be a duplication of another activity taking place at the same time. If it is not please change the description and change the title so that it is clear that the activities are separate. Thanks!"},
+                         {'title': "Not programming related",
+                           'text': "Provide more information on the activity objectives and goals and how it makes use of technology, coding and critical thinking. Thanks!"}
+                        ]
     }
   },
   methods: {
@@ -173,6 +193,10 @@ export default {
           });
 
     },
+    prefillRejectionText(){
+      this.rejectionText = this.rejectionOption.text;
+    }
   }
 }
 </script>
+<style src="vue-multiselect/dist/vue-multiselect.min.css"></style>

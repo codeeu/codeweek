@@ -270,6 +270,39 @@ Con Python, los alumnos pueden crear cuestionarios sobre hechos históricos, res
                 "3" => "Comprobación de hechos",
             ]
         ],
+        "16" => [
+            "title" => "CONTAR HISTORIAS CON HEDY",
+            "author" => "por Felienne Hermans",
+            "text" => [
+                "¿Tus alumnos ya dominan un lenguaje de programación visual, pero no se sienten preparados para entrar más de lleno en un lenguaje de programación basado en texto? Este minicurso es perfecto para ti y tus alumnos, porque les ayudará a cerrar la brecha entre el lenguaje de programación visual y el basado en texto. El minicurso <strong>Contar historias con Hedy</strong> consta de tres planes formativos que utilizan Hedy, un lenguaje de programación gradual para enseñar programación a los niños.",
+
+                "Hedy está pensado para niños que quieren iniciarse con los lenguajes de programación textual, pero para los que empezar con Python podría ser demasiado complicado. Los lenguajes graduales utilizan distintos niveles de lenguaje, en los que cada nivel incorpora nuevos conceptos y complejidad sintáctica. Al final de la secuencia de niveles de Hedy, los alumnos dominan un subconjunto con valor sintáctico en Python.",
+
+                "En este minicurso encontrarás actividades estimuladoras y atractivas para ayudar a tus alumnos a utilizar eficazmente los lenguajes de programación basados en texto. Al crear sus propias historias interactivas, aprenderán programación de forma progresiva, sin tener que aprenderlo todo de una vez. En el plan formativo para alumnos de educación primaria, se presentan los conceptos básicos de la programación. En el correspondiente a alumnos de primer ciclo de educación secundaria, se presentan nuevos conceptos de programación, mientras que el plan formativo para alumnos de segundo ciclo de educación secundaria, les permite programar historias y actividades más complejas.",
+
+                "Consulta la historia interactiva siguiente para ver cómo pueden participar los lectores en la historia y cómo fomenta su participación activa."
+            ],
+            "activities" => [
+                "1" => "Crea tu propia historia interactiva con Hedy para alumnos de educación primaria",
+                "2" => "Crea tu propia historia interactiva con Hedy para alumnos de primer ciclo de educación secundaria",
+                "3" => "Crea tu propia historia interactiva con Hedy para alumnos de segundo ciclo de educación secundaria",
+            ]
+        ],
+        "17" => [
+            "title" => "Siente el código",
+            "author" => "por Alenka Miljević ",
+            "text" => [
+                "El bienestar social y emocional es la capacidad de ser resiliente, de saber cómo gestionar las propias emociones y responder a las de los demás, de establecer relaciones significativas con los demás, de generar emociones que susciten buenos sentimientos y de crear la propia red de apoyo emocional. Las habilidades sociales y emocionales que los jóvenes aprenden en el centro escolar les ayudan a aumentar la resiliencia y a establecer el patrón sobre cómo gestionarán su salud física y mental a lo largo de su vida. (Consejo de Europa)",
+                "El minicurso Siente el código te permitirá fomentar el bienestar social y emocional de tus alumnos al reconocer, explicar, comprender y responder a sentimientos positivos y negativos a fin de generar empatía y resiliencia.  En este minicurso encontrarás actividades estimuladoras y atractivas que ayudarán a tus alumnos a desarrollar habilidades para abordar distintas emociones a través de la programación. Tus alumnos aprenderán a expresar sus sentimientos y a reaccionar ante las emociones de sus compañeros con la ayuda de un robot Bee-Bot.",
+                "El minicurso Siente el código consta de tres planes formativos que utilizan un Bee-Bot, un robot educativo con forma de abeja, para crear actividades que animan a los alumnos a hablar de las emociones y que generan empatía. En el plan formativo para centros de educación primaria, los alumnos programan un Bee-Bot para hablar sobre emociones como la tristeza, la felicidad, el miedo y la ira, y descubrir los motivos por los que ellos y sus compañeros las sienten. El plan formativo para centros de primer ciclo de educación secundaria anima a los alumnos a programar un Bee-Bot, a reconocer sus propios sentimientos y los de sus compañeros, a comprender qué los provocaron y cómo responder a ellos. El plan formativo para centros de segundo ciclo de educación secundaria facilita que los alumnos programen un Bee-Bot e inventen historias sobre sentimientos, resiliencia y empatía.",
+                "Si no tienes un robot educativo en tu clase, este minicurso te proporcionará ideas para actividades sin conexión que fomentan el desarrollo de habilidades sociales y emocionales. El material interactivo siguiente te ofrece un breve resumen de las actividades que puedes llevar a cabo en tu clase:"
+            ],
+            "activities" => [
+                "1" => "Programa — Siente — Aprende para alumnos de primaria",
+                "2" => "Mi corazón no es de piedra para alumnos de primer ciclo de educación secundaria",
+                "3" => "Programa mi estado de ánimo para alumnos de segundo ciclo de secundaria",
+            ]
+        ],
 
     ],
     'download_video_script' => 'Descargar el guion del vídeo',

@@ -266,6 +266,40 @@ Bu videoda, Kod Haftası ekibi size özellikle görme bozukluğu, Down sendromu 
             ]
         ],
 
+        "16" => [
+            "title" => "HEDY İLE HİKÂYE ANLATICILIĞI",
+            "author" => "Felienne Hermans",
+            "text" => [
+                "Öğrencileriniz görsel bir programlama dilinde ustalaştı ancak metin tabanlı bir programlama diline derinlemesine girme konusunda kendilerini hazır hissetmiyor mu? Öyleyse bu öğrenim bilgisi tam size ve öğrencilerinize göre, çünkü bu bilgiler görsel ve metin tabanlı programlama dilleri arasındaki boşluğu doldurmanıza yardımcı olacak. <strong>Hedy ile Hikâye Anlatıcılığı</strong> öğrenim bilgisi, çocuklara programlamayı öğreten Hedy adlı kademeli bir programlama dilinin kullanıldığı üç ders planından oluşuyor.",
+
+                "Hedy, metinsel programlama dillerini öğrenmek isteyen ancak Python dilinin çok karmaşık gelebileceği çocuklara uygundur. Kademeli dillerde, her seviyede yeni konseptlerin ve sözdizimsel zorlukların ilave edildiği farklı dil seviyeleri kullanılır. Her Hedy seviyesinin sonunda, öğrenciler Python açısından sözdizimsel olarak geçerli bir alt kümede ustalaşırlar.",
+
+                "Bu Öğrenim Bilgisi'nde, öğrencilerinizin metin tabanlı programlama dillerini etkin bir şekilde kullanmalarına yardımcı olacak ilham verici ve ilgi çekici aktiviteler bulacaksınız. Öğrenciler kendi interaktif hikâyelerini oluşturarak, her şeyi tek seferde öğrenmek zorunda kalmadan, programlamayı kademeli olarak öğrenecekler. İlkokul ders planında, öğrencilere programlamanın temel konseptleri tanıtılır. Ortaokul ders planında daha ileri programlama konseptlerine girilirken, lise ders planında öğrencilerin daha karmaşık hikâyeler ve aktiviteler programlamaları sağlanır.",
+
+                "Okuyucuların hikâyeye nasıl katılabileceklerini ve bu durumun okuyucuları aktif katılıma nasıl teşvik ettiğini öğrenmek için aşağıdaki interaktif hikâyeye göz atın."
+            ],
+            "activities" => [
+                "1" => "İlkokul öğrencileri için Hedy ile kendi interaktif hikâyenizi oluşturun",
+                "2" => "Ortaokul öğrencileri için Hedy ile kendi interaktif hikâyenizi oluşturun",
+                "3" => "Lise öğrencileri için Hedy ile kendi interaktif hikâyenizi oluşturun",
+            ]
+        ],
+        "17" => [
+            "title" => "Feel The Code (Kodu Hisset)",
+            "author" => "Alenka Miljević ",
+            "text" => [
+                "Sosyal ve duygusal refah; dayanıklı olma, kişinin duygularını yönetme ve diğer kişilerin duygularına karşılık verme, diğer kişilerle anlamlı ilişkiler kurma, iyi hislere kapı açan duygular oluşturma ve kişinin kendi duygusal destek ağını oluşturma yeteneğidir. Gençlerin okulda öğrendikleri sosyal ve duygusal beceriler, dayanıklılık kazanmalarına ve hayatları boyunca fiziksel ve zihinsel sağlıklarını yönetme biçimlerine yönelik bir model yaratmalarına yardımcı olur. (Avrupa Konseyi)",
+                "Feel the Code (Kodu Hisset) Öğrenim Bilgisi, empati ve dayanıklılık kazanmak amacıyla olumlu ve olumsuz hislerin yanı sıra duyguları tanıyarak, açıklayarak, anlayarak ve bunlara tepki vererek, öğrencilerinizin sosyal ve duygusal refahını geliştirmenize olanak tanıyacaktır.  Bu Öğrenim Bilgisi'nde, öğrencilerinizin kodlama yoluyla farklı duygularla başa çıkmak üzere beceriler geliştirmelerine yardımcı olacak ilham verici ve ilgi çekici aktiviteler bulacaksınız. Öğrencileriniz, bir Bee-Bot robotu yardımıyla hislerini ifade etmeyi ve akranlarının duygularına tepki vermeyi öğreneceklerdir.",
+                "Feel the Code (Kodu Hisset) öğrenim bilgisi, öğrencileri duyguları hakkında konuşmaya ve empati geliştirmelerine teşvik edecek aktiviteler oluşturmak amacıyla bir Bee-Bot eğitim robotunun kullanıldığı üç dersten oluşur. İlkokullar için olan ders planında; öğrenciler üzüntü, mutluluk, korku ve öfke gibi duygular hakkında konuşmak ve kendilerinin ve akranlarının bu duyguları hissetme nedenlerini keşfetmek amacıyla bir Bee-Bot programlar. Ortaokullar için olan ders planı; öğrencileri bir Bee-Bot programlamaları, kendilerinin ve akranlarının hislerini tanımaları, bunların nedenlerini ve bunlara karşı nasıl tepki vermeleri gerektiğini anlamaları hususunda cesaretlendirir. Liseler için olan ders planı; öğrencilerin bir Bee-Bot'u yönlendirmelerini ve hisler, dayanıklılık ve empati hakkında hikâyeler oluşturmalarını sağlar.",
+                "Bu Öğrenim Bilgisi, sınıfınızda bir eğitim robotu yoksa sosyal ve duygusal becerilerin gelişimini sağlayan bilgisayarsız aktivitelere yönelik fikirler sunacaktır. Aşağıdaki interaktif hikâye, sınıfınızda gerçekleştirebileceğiniz aktiviteler hakkında kısa bir genel bilgi sağlamaktadır:"
+            ],
+            "activities" => [
+                "1" => "Kodla - Hisset - Öğren: İlkokul öğrencileri için",
+                "2" => "Taş kalpli değilim: Ortaokul öğrencileri için",
+                "3" => "Beni ruh halime göre kodla: Lise öğrencileri için",
+            ]
+        ],
+
 
     ],
     'download_video_script' => 'Video metnini indirin',

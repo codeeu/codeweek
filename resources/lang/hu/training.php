@@ -265,7 +265,40 @@ A Pythonnal a diákok kvízeket hozhatnak létre történelmi eseményekről, ma
                 "2" => "Klikkelni vagy nem klikkelni",
                 "3" => "Tényellenőrzés",
             ]
-        ]
+        ],
+        "16" => [
+            "title" => "TÖRTÉNETMESÉLÉS HEDYVEL",
+            "author" => "készítette: Felienne Hermans",
+            "text" => [
+                "Diákjaid már elsajátítottak egy vizuális programozási nyelvet, de még nem érzik felkészültnek magukat arra, hogy fejest ugorjanak egy szövegalapú programozási nyelvbe? Akkor ez a tudásmorzsa pont neked és diákjaidnak szól, mert segít áthidalni a vizuális és a szövegalapú programozási nyelvek közötti távolságot. A <strong>Történetmesélés Hedyvel</strong> tudásmorzsa három óravázlatot tartalmaz, amelyek a Hedy elnevezésű fokozatos programozási nyelv alkalmazásával tanítják a gyerekeket a programozásra.",
+
+                "A Hedy azoknak a gyerekeknek készült, akik szeretnének belevágni a szövegalapú programozási nyelvek használatába, de a Python még túl bonyolult nekik. A fokozatos nyelvek különböző szintekből épülnek fel, ahol minden szint új fogalmakat vezet be és egy magasabb szintaktikai bonyolultsági fokra lép. Miután a diákok teljesítették a Hedy összes szintjét, jó néhány Python kódot le tudnak majd helyesen írni.",
+
+                "Ez a tudásmorzsa inspiráló és érdekes tevékenységeket kínál, amelyek segítségével diákjaid hatékonyan ismerkedhetnek meg a szövegalapú programozási nyelvekkel. Saját interaktív történeteik létrehozása során fokozatosan sajátítják el a programozást, így nem kell mindent egyszerre megtanulniuk. Az általános iskolásoknak készült óravázlat révén a diákok megismerik a programozás alapelveit. Az alsó középfokú óravázlat bővíti a programozási fogalmak körét, míg a felső középfokú óravázlat lehetővé teszi bonyolultabb történetek és tevékenységek programozását.",
+
+                "Nézd meg az alábbi interaktív történetet, amelyből kiderül, hogyan alakíthatják az olvasók a történetet, és hogyan ösztönzi maga a történet aktív részvételüket."
+            ],
+            "activities" => [
+                "1" => "Készítsd el saját interaktív történetedet Hedyvel általános iskolások számára",
+                "2" => "Készítsd el saját interaktív történetedet Hedyvel alsó középfokú oktatásban részt vevő diákok számára",
+                "3" => "Készítsd el saját interaktív történetedet Hedyvel felső középfokú oktatásban részt vevő diákok számára",
+            ]
+        ],
+        "17" => [
+            "title" => "Érezd a programozást",
+            "author" => "Alenka Miljević tollából",
+            "text" => [
+                "Szociális és érzelmi jóllétünk függ attól, hogy képesek vagyunk-e ellenállni a stressznek, kezelni saját érzelmeinket, reagálni mások érzelmeire, mély kapcsolatokat kialakítani, olyan érzelmeket generálni, amelyek jó érzéssel töltenek el bennünket, és létrehozni saját érzelmi támogató hálózatunkat. Azok a szociális és érzelmi készségek, amelyeket a fiatalok az iskolában elsajátítanak, segítenek kiépíteni stressztűrő képességüket, és mintát nyújtanak ahhoz, hogyan gondoskodjanak életük során testi és szellemi egészségükről. (Európa Tanács)",
+                "Az Érezd a programozást tudásmorzsával hozzájárulhat diákjai szociális és érzelmi jóllétéhez azáltal, hogy megtanítja őket felismerni, megmagyarázni és megérteni a pozitív és negatív érzelmeket, valamint reagálni rájuk, ezáltal fejlesztve empatikus és stressztűrő képességüket. Ez a tudásmorzsa inspiráló és érdekes gyakorlatokat kínál, amelyek segítségével diákjai a programozáson keresztül fejleszthetik a különböző érzelmek kezelésére irányuló készségeiket. Diákjai a Bee-Bot robot használatával megtanulják, hogyan fejezzék ki érzelmeiket és hogyan reagáljanak társaik érzelmeire.",
+                "Az Érezd a programozást tudásmorzsa három óravázlatot tartalmaz, amelyek a Bee-Bot készségfejlesztő robotra támaszkodva hoznak létre a diákokat érzelmeik kifejezésére és empatikus képességük fejlesztésére ösztönző feladatokat. Az általános iskolások számára kidolgozott óravázlat segíti a diákokat, hogy a Bee-Bot programozása közben beszéljenek az érzelmeikről, például szomorúságról, boldogságról, félelemről és dühről, és felfedezzék, hogy miért élik át ők maguk és társaik ezeket az érzelmeket. Az alsóbb évfolyamos középiskolásoknak szóló óravázlat arra ösztönzi a diákokat, hogy programozzák a Bee-Botot, felismerjék saját és társaik érzelmeit, megértsék, hogy mi váltotta ki azokat, és reagáljanak rájuk. A felsőbb évfolyamos középiskolásoknak készült óravázlat lehetővé teszi a diákok számára, hogy irányítsák a Bee-Botot, és történeteket alkossanak érzelmeikről, stressztűrő képességükről és empátiájukról.",
+                "Ha nincs készségfejlesztő robot a tanteremben, ez a tudásmorzsa arra is szolgáltat ötletet, hogyan tud a robot nélkül olyan feladatokat végrehajtani, amelyek elősegítik a szociális és érzelmi készségek fejlődését. Az alábbiakban rövid áttekintést nyújtunk a tanteremben kivitelezhető feladatokról:"
+            ],
+            "activities" => [
+                "1" => "Programozz - Érezz - Tanulj általános iskolai diákoknak",
+                "2" => "Nincs kőből a szívem alsóbb évfolyamos középiskolás diákoknak",
+                "3" => "Programozz a megfelelő hangulatra felsőbb évfolyamos középiskolás diákoknak",
+            ]
+        ],
 
 
 

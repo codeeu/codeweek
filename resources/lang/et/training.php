@@ -302,7 +302,40 @@ Pythoni abil saavad õpilased koostada viktoriine ajaloosündmuste kohta, lahend
                 '2' => 'Klõpsata või mitte',
                 '3' => ' Faktide kontrollimine'
             ]
-        ]
+        ],
+        "16" => [
+            "title" => "LUGUDE JUTUSTAMINE HEDYGA",
+            "author" => "Felienne Hermans",
+            "text" => [
+                "Kas sinu õpilased on juba õppinud visuaalset programmeerimiskeelt, kuid tunnevad, et ei ole valmis tekstipõhisesse programmeerimiskeelde süvenema? Sellisel juhul on see õppevahend just sulle ja sinu õpilastele, sest aitab neil täita lünga visuaalse ja tekstipõhise programmeerimiskeele vahel.  Õppevahend <strong>Lugude jutustamine Hedyga</strong> sisaldab kolme õppetunni kava, mis kasutavad Hedyt – astmelist programmeerimiskeelt lastele programmeerimise õpetamiseks.",
+
+                "Hedy on mõeldud lastele, kes soovivad algust teha tekstipõhiste programmeerimiskeeltega, kuid kelle jaoks võib Pythoniga alustamine olla liiga keeruline. Astmelised keeled kasutavad erinevaid keeletasemeid, kus igal tasemel lisandub uusi mõisteid ja süntaktilist keerukust. Hedy tasemete läbimisel omandavad õpilased teatud hulga süntaksi, mida saab Pythoniga kasutada.",
+
+                "Sellest õppevahendist leiad inspireerivaid ja põnevaid tegevusi, et aidata õpilastel tekstipõhiseid programmeerimiskeeli tõhusalt kasutada. Oma interaktiivseid lugusid koostades õpivad nad programmeerimist aste-astmelt, ilma et peaksid kõike korraga selgeks saama. Põhikooli II astme õppetunni kavas tutvustatakse õpilastele programmeerimise põhimõisteid. Põhikooli III astme õppetunni kavas tutvustakse täiendavaid programmeerimismõisteid ning gümnaasiumiõpilaste õppetunni kava võimaldab õpilastel programmeerida keerukamaid lugusid ja tegevusi.",
+
+                "Vaata allpool toodud interaktiivset lugu, et näha, kuidas lugejad saavad loos osaleda ja kuidas see soodustab nende aktiivset kaasatust."
+            ],
+            "activities" => [
+                "1" => "Koosta põhikooli II astme õpilastele mõeldud Hedyga oma interaktiivne lugu",
+                "2" => "Koosta põhikooli III astme õpilastele mõeldud Hedyga oma interaktiivne lugu",
+                "3" => "Koosta gümnaasiumiõpilastele mõeldud Hedyga oma interaktiivne lugu",
+            ]
+        ],
+        "17" => [
+            "title" => "Tunneta programmi",
+            "author" => "Alenka Miljević",
+            "text" => [
+                "Sotsiaalne ja emotsionaalne heaolu on võime olla vastupidav, teada, kuidas oma tundeid valitseda ja teiste tunnetele vastata, luua teistega sisukaid suhteid, tekitada hea tunde loovaid emotsioone ja luua omaenda emotsionaalne tugivõrgustik. Sotsiaalsed ja emotsionaalsed oskused, mida noored koolis omandavad, aitavad neil saada vastupanuvõimelisemaks ning need määravad ära selle, kuidas nad tulevad oma edasises elus toime enda füüsilise ja vaimse tervise arendamisega. (Euroopa Nõukogu)",
+                "Õppevahend „Feel the Code“ („Tunneta programmi“) võimaldab teil toetada õpilaste sotsiaalset ja emotsionaalset heaolu positiivsete ja negatiivsete tunnete äratundmise, selgitamise, mõistmise ja neile vastamise teel, et arendada empaatiat ja vastupanuvõimet.  Selles õppevahendis leiate innustavaid ja kaasavaid tegevusi, et aidata programmeerimise kaudu õpilastel arendada erinevate tunnetega toimetulemise oskusi. Teie õpilased õpivad roboti Bee-Bot abil oma tundeid väljendama ja kaaslaste tunnetele reageerima.",
+                "Õppevahend „Feel the Code“ („Tunneta programmi“) koosneb kolmest tunnikavast, milles kasutatakse õpperobotit Bee-Bot, et luua tegevusi, mis julgustavad õpilasti tunnetest rääkima ja empaatiat arendama. Algklasside tunnikavas programmeerivad õpilased Bee-Boti, et rääkida sellistest tunnetest, nagu kurbus, rõõm, hirm ja viha, ning selgitada välja põhjused, miks nemad ja nende kaaslased neid tundeid tunnevad. Põhikooli esimese astme tunnikavas julgustatakse õpilasi programmeerima robotit Bee-Bot, tundma ära enda ja oma kaaslaste tundeid, mõistma nende põhjuseid ja viise neile vastata. Põhikooli teise astme tunnikava võimaldab õpilastel Bee-Boti juhtida ning mõelda välja lugusid tunnete, vastupidavuse ja empaatiavõime kohta.",
+                "Kui teil ei ole klassis õpperobotit, pakutakse selles õppevahendis mõtteid, kuidas viia läbi veebiühenduseta tegevusi, mis soodustavad sotsiaalsete ja emotsionaalsete oskuste arendamist. Allpool leiate lühiülevaate tegevustest, mida saab klassis läbi viia."
+            ],
+            "activities" => [
+                "1" => "„Programmeerige – tundke – õppige“ algkooli õpilastele",
+                "2" => "„Mu süda ei ole kivist“ põhikooli esimese astme õpilastele",
+                "3" => "„Programmeerige mulle meeleolu“ põhikooli teise astme õpilastele",
+            ]
+        ],
     ],
     'download_video_script' => 'Laadi alla video skript',
     'ready_to_share' => 'Kas olete valmis õpitut oma õpilastega jagama?',

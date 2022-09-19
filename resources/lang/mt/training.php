@@ -267,6 +267,39 @@ F’dan il-vidjow, it-tim tal-Ġimgħa tal-Ikkowdjar se jurik xi attivitajiet pr
                 "3" => "Verifika tal-fatti",
             ]
         ],
+        "16" => [
+            "title" => "IR-RAKKONTAR TAL-ISTEJJER PERMEZZ TA’ HEDY",
+            "author" => "ta’ Felienne Hermans",
+            "text" => [
+                "L-istudenti tiegħek diġà ħakmu l-lingwaġġ ta’ pprogrammar viżiv, iżda għadhom ma jħossuhomx lesti li japprofondixxu l-għarfien tagħhom dwar lingwaġġ ta’ pprogrammar ibbażat fuq it-test? Mela dan il-komponent ta’ tagħlim huwa perfett għalik u għall-istudenti tiegħek għaliex se jgħinhom jimlew il-vojt bejn lingwaġġ ta’ pprogrammar viżiv u lingwaġġ ta’ pprogrammar ibbażat fuq it-test. Il-komponent ta’ tagħlim <strong>Ir-rakkontar tal-istejjer permezz ta’ Hedy</strong> fih tliet pjanijiet ta’ lezzjonijiet li jużaw Hedy – lingwagg ta’ pprogrammar gradwali biex it-tfal jiġu mgħallma jipprogrammaw.",
+
+                "Hedy hija mmirata għal tfal li jridu jibdew b’lingwi ta’ pprogrammar testwali, iżda li kieku kellhom jibdew jaħdmu b’Python jistgħu jsibuh kumpless wisq. Il-lingwi gradwali jużaw livelli ta’ lingwa differenti, fejn kull livell iżid kunċetti ġodda u kumplessità sintattika. Fi tmiem is-sekwenza tal-livelli ta’ Hedy, l-istudenti jkunu ħakmu sottogrupp ta’ Python sintattikament validu.",
+
+                "F’dan il-Komponent ta’ Tagħlim se ssib attivitajiet ta’ ispirazzjoni u ta’ involviment biex tgħin lill-istudenti tiegħek jużaw b’mod effiċjenti l-lingwi ta’ pprogrammar ibbażati fuq it-test. Billi joħolqu l-istejjer interattivi tagħhom, gradwalment se jitgħallmu l-ipprogrammar, mingħajr ma jkollhom jitgħallmu kollox f’daqqa. Fil-pjan tal-lezzjonijiet għall-iskola primarja, l-istudenti jiġu introdotti għall-kunċetti bażiċi tal-ipprogrammar. Il-pjan tal-lezzjonijiet għall-edukazzjoni sekondarja tal-ewwel livell jintroduċi kunċetti ta’ pprogrammar ulterjuri, filwaqt li l-pjan tal-lezzjonijiet għall-edukazzjoni sekondarja tat-tieni livell jippermetti lill-istudenti jipprogrammaw stejjer u attivitajiet aktar kumplessi.",
+
+                "Agħti titwila lill-istorja interattiva ta’ hawn taħt biex tara kif il-qarrejja jistgħu jipparteċipaw fl-istorja u kif trawwem l-involviment attiv tagħhom."
+            ],
+            "activities" => [
+                "1" => "Oħloq l-istorja interattiva tiegħek permezz ta’ Hedy għall-istudenti tal-iskola primarja",
+                "2" => "Oħloq l-istorja interattiva tiegħek permezz ta’ Hedy għall-istudenti tal-iskola sekondarja tal-ewwel livell",
+                "3" => "Oħloq l-istorja interattiva tiegħek permezz ta’ Hedy għall-istudenti tal-iskola sekondarja tat-tieni livell",
+            ]
+        ],
+        "17" => [
+            "title" => "Ħoss il-Kodiċi",
+            "author" => "minn Alenka Miljević",
+            "text" => [
+                "Il-benesseri soċjali u emozzjonali hi l-kapaċità li tkun reżiljenti, tkun taf kif tiġġestjona l-emozzjonijiet tiegħek u tirrispondi għall-emozzjonijiet ta’ nies oħra, tiżviluppa relazzjonijiet utli ma’ oħrajn, tiġġenera emozzjonijiet li jwasslu għal sentimenti tajba u toħloq network ta’ appoġġ emozzjonali tiegħek stess. Il-ħiliet soċjali u emozzjonali li ż-żgħażagħ jitgħallmu fl-iskola jgħinuhom jibnu reżiljenza u jissettjaw mudell dwar kif ser jiġġestjonaw is-saħħa fiżika u mentali tagħhom matul il-ħajja kollha tagħhom. (Il-Kunsill tal-Ewropa)",
+                "Il-Komponent ta’ Tagħlim Ħoss il-Kodiċi ser jippermettilek trawwem il-benesseri soċjali u emozzjonali tal-istudenti tiegħek billi tagħraf, tispjega, tifhem u tirrispondi għal sentimenti pożittivi u negattivi u emozzjonijiet ħalli tibni empatija u reżiljenza.  F’dan il-Komponent ta’ Tagħlim ser issib attivitajiet ta’ ispirazzjoni u ta’ involviment biex tgħin lill-istudenti tiegħek jiżviluppaw ħiliet biex ileħħqu ma’ emozzjonijiet differenti permezz tal-ikkowdjar. L-istudenti tiegħek ser jitgħallmu jesprimu s-sentimenti tagħhom u kif jirreaġixxu għas-sentimenti tal-pari tagħhom bl-għajnuna ta’ robot Bee bot.",
+                "Il-komponent ta’ tagħlim Ħoss il-Kodiċi jikkonsisti fi tliet pjanijiet ta’ lezzjonijiet li jużaw ir-robot edukattiv Bee-bot biex joħloqu attivitajiet li jħeġġu lill-istudenti jitkellmu dwar l-emozzjonijiet u jiżviluppaw empatija. Fil-pjan ta’ lezzjoni għall-iskola primarja, l-istudenti jipprogrammaw Bee-bot biex jitkellmu dwar emozzjonijiet bħal dwejjaq, ferħ, biża’ u rabja u jiskopru raġunijiet li jispjegaw għaliex huma u l-pari tagħhom iħossu dawn l-emozzjonijiet. Il-pjan ta’ lezzjoni għall-iskola sekondarja baxxa jħeġġeġ lill-istudenti biex jipprogrammaw Bee-bot, jagħrfu s-sentimenti tagħhom stess u tal-pari tagħhom, jifhmu x’ikkawżawhom u kif jirrispondu għalihom. Il-pjan ta’ lezzjoni għall-iskola sekondarja għolja jgħin lill-istudenti jinnavigaw Bee-bot u jivvintaw stejjer dwar is-sentimenti, ir-reżiljenza u l-empatija.",
+                "Jekk m’għandekx robot fil-klassi tiegħek, dan il-Komponent ta’ Tagħlim se jipprovdilek ideat għal attivitajiet mhux ipplaggjati li jrawwem l-iżvilupp ta’ ħiliet soċjali u emozzjonali. L-interattiv t’hawn taħt jagħti ħarsa ġenerali qasira tal-attivitajiet li tista’ tagħmel ġol-klassi tiegħek."
+            ],
+            "activities" => [
+                "1" => "Kodiċi - Ħoss - Tgħallem għall-istudenti tal-iskola primarja",
+                "2" => "Qalbi mhix iebsa għal studenti tal-iskola sekondarja baxxa",
+                "3" => "Ikkowdjali għall-burdata għal studenti tal-iskola sekonardja għolja",
+            ]
+        ],
 
 
     ],

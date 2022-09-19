@@ -292,7 +292,7 @@
                         <input id="checkPrivacy" name="privacy"
                                type="checkbox" {{ auth()->user()->privacy === 1 ? 'checked="checked"' : '' }}>
                         @lang('event.privacy')
-                        <a href="/privacy" target="_blank">
+                        <a href="{{route('privacy-contact-points')}}" target="_blank">
                             <img src="/images/external-link.svg" width="16" class="static-image">
                         </a>
                     </label>

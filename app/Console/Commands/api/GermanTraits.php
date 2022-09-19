@@ -109,7 +109,7 @@ trait GermanTraits
             "pub_date" => now(),
             "created" => now(),
             "updated" => now(),
-            "codeweek_for_all_participation_code" => "cw21-$city",
+            "codeweek_for_all_participation_code" => "cw22-$city",
             "start_date" => $this->eventStartDate,
             "end_date" => $this->eventEndDate,
             "longitude" => $this->longitude,
