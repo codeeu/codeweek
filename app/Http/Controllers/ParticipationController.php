@@ -21,10 +21,10 @@ class ParticipationController extends Controller
 
     public function test()
     {
-        $name = "Alain Van Driessche";
+        $name = "Μαρία";
         //$event_name = "Learn something with Laravel & PHP & Scratch";
-        $event_name = "Λιανού Κυριακή - Lianou Kiriaki 10ο Δημοτικό Σχολείο Αιγάλεω";
-        $event_date = "18th of January 2022";
+        $event_name = "(L.I.F.E.) OWL ALERT!! Can you help?";
+        $event_date = "Οκτώβριος 2021";
 
         return (new CertificateParticipation($name, $event_name, $event_date))->generate();
     }

@@ -332,6 +332,36 @@ With Python, students can create quizzes about historical events, solve math pro
                 "3" => "Fact-checking",
             ]
         ],
+        "16" => [
+            "title" => "STORY-TELLING WITH HEDY",
+            "author" => "by Felienne Hermans",
+            "text" => [
+                "Have your pupils already mastered a visual programming language, but don’t feel ready to delve deeper into a text-based programming language? Then this learning bit is just for you and your pupils because it will help them bridge the gap between a visual and a text-based programming language. The learning bit <strong>Story-telling with Hedy</strong> comprises three lesson plans that use Hedy – a gradual programming language to teach children programming.",
+                "Hedy is aimed at children who want to get started with textual programming languages, but for whom starting with Python might still be too complex. Gradual languages use different language levels, where each level adds new concepts and syntactic complexity. At the end of the Hedy level sequence, pupils master a subset of syntactically valid Python.",
+                "In this Learning Bit you will find inspiring and engaging activities to help your students to efficiently use text-based programming languages. By creating their own interactive stories, they will gradually learn programming, without having to learn everything at once. In the lesson plan for primary school, pupils are introduced to the basic concepts of programming. The lesson plan for lower secondary school introduces further programming concepts, whereas the lesson plan for upper secondary enables pupils to program more complex stories and activities.",
+                "Check out the interactive story below to see how readers can participate in the story and how it fosters their active engagement."
+            ],
+            "activities" => [
+                "1" => "Make your own interactive story with Hedy for primary school pupils",
+                "2" => "Make your own interactive story with Hedy for lower secondary pupils",
+                "3" => "Make your own interactive story with Hedy for upper school pupils",
+            ]
+        ],
+        "17" => [
+            "title" => "Feel The Code",
+            "author" => "by Alenka Miljević",
+            "text" => [
+                "Social and emotional well-being is the ability to be resilient, know how to manage one’s emotions and respond to other people's emotions, develop meaningful relationships with others, generate emotions that lead to good feelings and create one own’s emotional support network. The social and emotional skills that young people learn in school help them build resilience and set the pattern for how they will manage their physical and mental health throughout their lives. (Council of Europe).",
+                "The Learning Bit Feel the Code will enable you to foster your pupils’ social and emotional well-being by recognizing, explaining, understanding and responding to positive and negative feelings and emotions in order to build empathy and resilience.  In this Learning Bit you will find inspiring and engaging activities to help your students develop skills to cope with different emotions through coding. Your pupils will learn how to express their feelings and how to react to their peers’ emotions with the help of a Bee bot robot.",
+                "The learning bit Feel the Code comprises three lesson plans that use a Bee-bot educational robot to create activities that encourage students to talk about emotions and develop empathy. In the lesson plan for primary school, pupils program a Bee bot to talk about emotions such as sadness, happiness, fear and anger and discover reasons why they and their peers feel these emotions. The lesson plan for lower secondary school encourages pupils to program a Bee bot, recognize their own and their peers’ feelings, understand what caused them and how to respond to them. The lesson plan for upper secondary school enables pupils to navigate a Bee bot and invent stories about feelings, resilience and empathy.",
+                "If you don’t have an educational robot in your classroom, this Learning Bit will provide you with ideas for unplugged activities that foster the development of social and emotional skills. The interactive below gives a brief overview of the activities that you can do in your classroom:"
+            ],
+            "activities" => [
+                "1" => "Code - Feel - Learn for primary school pupils",
+                "2" => "My heart isn’t made of stone for lower secondary pupils",
+                "3" => "Code me to the mood for upper school pupils",
+            ]
+        ],
     ],
     'download_video_script' => 'Download the video script',
     'ready_to_share' => 'Ready to share what you learnt with your students?',

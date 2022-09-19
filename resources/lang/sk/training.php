@@ -4,41 +4,41 @@ return [
 
     'learning_bits' => 'Hodiny Týždňa programovania',
     'title' => 'Bezplatné školiace materiály a online kurzy',
-    'text' => '<p>Tu nájdete bezplatné školiace materiály a zdroje, ktoré vám pomôžu zoznámiť sa s problematikou a naplánovať si najbližšiu inovačnú hodinu.</p>
+    'text' => '<p>Tu nájdete bezplatné školiace materiály a zdroje, ktoré vám pomôžu zoznámiť sa s problematikou a naplánovať si najbližšiu inovačnú hodinu.</p>
 <h2 class="subtitle">1. Hodiny Týždňa programovania</h2>
-                    <p>Nepotrebujete žiadne predchádzajúce skúsenosti s programovaním a každý modul vám zaberie len okolo 15 minút. V moduloch spoznáte kľúčové koncepcie súvisiace s programovaním a aktivity na rozvoj výpočtového myslenia. Okrem toho sa v moduloch dozviete praktické tipy a rady, ako začleniť tieto koncepcie do vyučovania.</p>',
+                    <p>Nepotrebujete žiadne predchádzajúce skúsenosti s programovaním a každý modul vám zaberie len okolo 15 minút. V moduloch spoznáte kľúčové koncepcie súvisiace s programovaním a aktivity na rozvoj výpočtového myslenia. Okrem toho sa v moduloch dozviete praktické tipy a rady, ako začleniť tieto koncepcie do vyučovania.</p>',
     'text_2' => '<p>Dúfame, že po jednej alebo viacerých hodinách Týždňa programovania ste odhodlaní vniesť trocha digitálnej tvorivosti do vyučovania. Nezabudnite zaregistrovať svoju aktivitu na <a href="/events">mapu Týždňa programovania</a>!</p>
 
-                    <p>Môžete jednoducho usporiadať hodinu v triede, deň otvorených dverí alebo podujatie vo vašej škole. Stačí nájsť dátum a zaregistrovať aktivitu na <a href="/events">mape Týždňa programovania</a>. Každý organizátor aktivity získa za svoje úsilie certifikát za účasť.</p>
+                    <p>Môžete jednoducho usporiadať hodinu v triede, deň otvorených dverí alebo podujatie vo vašej škole. Stačí nájsť dátum a zaregistrovať aktivitu na <a href="/events">mape Týždňa programovania</a>. Každý organizátor aktivity získa za svoje úsilie certifikát za účasť.</p>
 
-                    <p>Ak sa chcete spojiť s medzinárodnou skupinou nadšencov, pripojte sa k <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">skupine učiteľov Európskeho týždňa programovania na Facebooku</a>. Ak by ste chceli zájsť o krok ďalej a spolupracovať s inými školami vo vašej krajine alebo v zahraničí, zapojte sa do <a href="/codeweek4all">výzvy Code Week 4 All</a> (Týždeň programovania pre všetkých).</p>',
+                    <p>Ak sa chcete spojiť s medzinárodnou skupinou nadšencov, pripojte sa k <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">skupine učiteľov Európskeho týždňa programovania na Facebooku</a>. Ak by ste chceli zájsť o krok ďalej a spolupracovať s inými školami vo vašej krajine alebo v zahraničí, zapojte sa do <a href="/codeweek4all">výzvy Code Week 4 All</a> (Týždeň programovania pre všetkých).</p>',
     'lessons' => [
         '1' => [
             'title' => 'Programovanie bez digitálnej technológie (bez počítača)',
             'author' => 'Alessandro Bogliolo',
-            'text' => '<p>Programovanie je jazyk vecí, ktorý nám umožňuje vytvárať programy a prideľovať nové funkcie desiatkam miliárd programovateľných objektov okolo nás. Programovanie je najrýchlejší spôsob na realizáciu našich nápadov a najúčinnejší spôsob na rozvíjanie schopností súvisiacich s výpočtovým myslením. Pri rozvíjaní výpočtového zmýšľania však nie je úplne nevyhnutné používať technológiu. Práve naopak, na ovládanie technológie potrebujeme zručnosti súvisiace s výpočtovým myslením.</p>
+            'text' => '<p>Programovanie je jazyk vecí, ktorý nám umožňuje vytvárať programy a prideľovať nové funkcie desiatkam miliárd programovateľných objektov okolo nás. Programovanie je najrýchlejší spôsob na realizáciu našich nápadov a najúčinnejší spôsob na rozvíjanie schopností súvisiacich s výpočtovým myslením. Pri rozvíjaní výpočtového zmýšľania však nie je úplne nevyhnutné používať technológiu. Práve naopak, na ovládanie technológie potrebujeme zručnosti súvisiace s výpočtovým myslením.</p>
 
-                    <p>Profesor výpočtových systémov z Talianska a koordinátor Európskeho týždňa programovania Alessandro Bogliolo v tomto videu predstavuje programátorské aktivity bez počítača, ktoré možno vykonávať bez akéhokoľvek elektronického zariadenia. Hlavným cieľom aktivít bez počítača je znížiť prístupové prekážky a zaviesť programovanie do všetkých škôl, bez ohľadu na ich finančné prostriedky a vybavenie.</p>
+                    <p>Profesor výpočtových systémov z Talianska a koordinátor Európskeho týždňa programovania Alessandro Bogliolo v tomto videu predstavuje programátorské aktivity bez počítača, ktoré možno vykonávať bez akéhokoľvek elektronického zariadenia. Hlavným cieľom aktivít bez počítača je znížiť prístupové prekážky a zaviesť programovanie do všetkých škôl, bez ohľadu na ich finančné prostriedky a vybavenie.</p>
 
                     <p>Pomocou programátorských aktivít bez počítača môžeme spoznať výpočtové stránky fyzického sveta okolo nás.</p>',
             'activities' => [
-                '1' => 'Aktivita 1 – CodyRoby pre 1. stupeň základných škôl',
-                '2' => 'Aktivita 2 – CodyRoby pre 2. stupeň základných škôl',
-                '3' => 'Aktivita 3 – CodyRoby pre stredné školy'
+                '1' => 'Aktivita 1 – CodyRoby pre 1. stupeň základných škôl',
+                '2' => 'Aktivita 2 – CodyRoby pre 2. stupeň základných škôl',
+                '3' => 'Aktivita 3 – CodyRoby pre stredné školy'
             ]
         ],
         '2' => [
             'title' => 'Výpočtové myslenie a riešenie problémov',
             'author' => 'Miles Berry',
-            'text' => '<p>Výpočtové myslenie je spôsob pristupovania k problémom a systémom, v rámci ktorého možno využiť počítač na ich vyriešenie alebo pochopenie. Výpočtové myslenie nie je dôležité len pri vývoji počítačových programov, ale možno ho tiež využiť pri riešení problémov vo všetkých disciplínach.</p>
+            'text' => '<p>Výpočtové myslenie je spôsob pristupovania k problémom a systémom, v rámci ktorého možno využiť počítač na ich vyriešenie alebo pochopenie. Výpočtové myslenie nie je dôležité len pri vývoji počítačových programov, ale možno ho tiež využiť pri riešení problémov vo všetkých disciplínach.</p>
 
-                    <p>Svojich študentov môžete naučiť výpočtovému mysleniu rozkladaním zložitých problémov na drobnejšie (rozklad), rozoznávaním vzorcov (rozoznávanie vzorcov), identifikovaním relevantných údajov pri riešení problému (abstrakcia) alebo tak, že im stanovíte pravidlá či pokyny, podľa ktorých dosiahnu želaný výsledok (tvorba algoritmov). Výpočtové myslenie možno vyučovať v rôznych disciplínach, napríklad v matematike (zistiť pravidlá rozkladu mnohočlenov druhého stupňa na súčin), literatúre (rozdeliť rozklad básne na rozklad tempa, rýmu a stavby), jazykoch (nájsť vzorce v koncovkách slovesa, ktoré ovplyvňujú to, ako sa píše pri zmene času) a mnohých ďalších.</p>
+                    <p>Svojich študentov môžete naučiť výpočtovému mysleniu rozkladaním zložitých problémov na drobnejšie (rozklad), rozoznávaním vzorcov (rozoznávanie vzorcov), identifikovaním relevantných údajov pri riešení problému (abstrakcia) alebo tak, že im stanovíte pravidlá či pokyny, podľa ktorých dosiahnu želaný výsledok (tvorba algoritmov). Výpočtové myslenie možno vyučovať v rôznych disciplínach, napríklad v matematike (zistiť pravidlá rozkladu mnohočlenov druhého stupňa na súčin), literatúre (rozdeliť rozklad básne na rozklad tempa, rýmu a stavby), jazykoch (nájsť vzorce v koncovkách slovesa, ktoré ovplyvňujú to, ako sa píše pri zmene času) a mnohých ďalších.</p>
 
-                    <p>Hlavný lektor na Pedagogickej fakulte Univerzity v Roehamptone (Spojené kráľovstvo), Miles Berry, predstavuje koncepciu výpočtového myslenia a rôzne spôsoby, ktorými ho učitelia môžu začleniť do vyučovania prostredníctvom jednoduchých hier.</p>',
+                    <p>Hlavný lektor na Pedagogickej fakulte Univerzity v Roehamptone (Spojené kráľovstvo), Miles Berry, predstavuje koncepciu výpočtového myslenia a rôzne spôsoby, ktorými ho učitelia môžu začleniť do vyučovania prostredníctvom jednoduchých hier.</p>',
             'activities' => [
-                '1' => 'Aktivita 1 – Rozvoj matematického uvažovania pre 1. stupeň základných škôl',
-                '2' => 'Aktivita 2 – Úvod do algoritmov pre 2. stupeň základných škôl',
-                '3' => 'Aktivita 3 – Algoritmy pre stredné školy'
+                '1' => 'Aktivita 1 – Rozvoj matematického uvažovania pre 1. stupeň základných škôl',
+                '2' => 'Aktivita 2 – Úvod do algoritmov pre 2. stupeň základných škôl',
+                '3' => 'Aktivita 3 – Algoritmy pre stredné školy'
             ]
         ],
         '3' => [
@@ -46,45 +46,45 @@ return [
             'author' => 'Margo Tinawi',
             'text' => '<p>Vizuálne programovanie umožňuje človeku opisovať procesy pomocou ilustrácií alebo grafiky. Vizuálne programovanie sa zvykne označovať za opak textového programovania. Vizuálne programovacie jazyky sú mimoriadne vhodné na predstavenie algoritmického myslenia deťom (alebo aj dospelým). Pri vizuálnych programovacích jazykoch je potrebné menej čítať a netreba používať syntax.</p>
 
-                    <p>Učiteľka tvorby webu v rámci iniciatívy Le Wagon a spoluzakladateľka Techies Lab asbl (Belgicko) Margo Tinawi vám pomôže zoznámiť sa s jazykom Scratch, jedným z najobľúbenejších virtuálnych programovacích jazykov na celom svete. Jazyk Scratch vznikol na MIT v roku 2002 a medzičasom sa okolo neho vytvorila veľká komunita. Nájdete v nej milióny projektov, ktoré môžete zadať svojim študentom, a nespočetne veľa návodov vo viacerých jazykoch.</p>
+                    <p>Učiteľka tvorby webu v rámci iniciatívy Le Wagon a spoluzakladateľka Techies Lab asbl (Belgicko) Margo Tinawi vám pomôže zoznámiť sa s jazykom Scratch, jedným z najobľúbenejších virtuálnych programovacích jazykov na celom svete. Jazyk Scratch vznikol na MIT v roku 2002 a medzičasom sa okolo neho vytvorila veľká komunita. Nájdete v nej milióny projektov, ktoré môžete zadať svojim študentom, a nespočetne veľa návodov vo viacerých jazykoch.</p>
 
-                    <p>Na používanie jazyka Scratch nepotrebujete žiadne skúsenosti s programovaním a môžete ho využiť na všetkých možných predmetoch! Scratch napríklad môžete využiť ako nástroj na vyrozprávanie príbehu, pomocou ktorého môžu študenti vytvárať príbehy, ilustrovať matematický problém alebo zahrať sa umeleckú súťaž s cieľom naučiť sa o kultúrnom dedičstve, pričom sa zároveň naučia programovaniu a výpočtovému mysleniu, ale predovšetkým sa zabavia.</p>
+                    <p>Na používanie jazyka Scratch nepotrebujete žiadne skúsenosti s programovaním a môžete ho využiť na všetkých možných predmetoch! Scratch napríklad môžete využiť ako nástroj na vyrozprávanie príbehu, pomocou ktorého môžu študenti vytvárať príbehy, ilustrovať matematický problém alebo zahrať sa umeleckú súťaž s cieľom naučiť sa o kultúrnom dedičstve, pričom sa zároveň naučia programovaniu a výpočtovému mysleniu, ale predovšetkým sa zabavia.</p>
 
                     <p>Scratch je bezplatný nástroj, ktorý je pre študentov veľmi intuitívny a motivačný. Pozrite si Margine video a zistite, ako na to.</p>',
             'activities' => [
-                '1' => 'Aktivita 1 – Základy jazyka Scratch pre 1. stupeň základných škôl',
-                '2' => 'Aktivita 2 – Základy jazyka Scratch pre 2. stupeň základných škôl',
-                '3' => 'Aktivita 3 – Základy jazyka Scratch pre stredné školy'
+                '1' => 'Aktivita 1 – Základy jazyka Scratch pre 1. stupeň základných škôl',
+                '2' => 'Aktivita 2 – Základy jazyka Scratch pre 2. stupeň základných škôl',
+                '3' => 'Aktivita 3 – Základy jazyka Scratch pre stredné školy'
             ]
         ],
         '4' => [
-            'title' => 'Tvorba vzdelávacích hier v jazyku Scratch',
+            'title' => 'Tvorba vzdelávacích hier v jazyku Scratch',
             'author' => 'Jesús Moreno León',
-            'text' => '<p>Kritické myslenie, vytrvalosť, riešenie problémov, výpočtové myslenie a tvorivosť sú len niektoré z kľúčových zručností, ktoré vaši študenti potrebujú, aby uspeli v 21. storočí. Programovanie môže byť zábavný a motivačný spôsob, ako ich nadobudnúť.</p>
+            'text' => '<p>Kritické myslenie, vytrvalosť, riešenie problémov, výpočtové myslenie a tvorivosť sú len niektoré z kľúčových zručností, ktoré vaši študenti potrebujú, aby uspeli v 21. storočí. Programovanie môže byť zábavný a motivačný spôsob, ako ich nadobudnúť.</p>
 
-                    <p>Algoritmické zásady na kontrolu toku prostredníctvom sekvencie pokynov a slučiek, reprezentácia údajov prostredníctvom premenných a zoznamov či synchronizácia procesov môžu znieť komplikovane, no v tomto videu zistíte, že sa dajú naučiť ľahšie, ako by ste si mysleli.</p>
+                    <p>Algoritmické zásady na kontrolu toku prostredníctvom sekvencie pokynov a slučiek, reprezentácia údajov prostredníctvom premenných a zoznamov či synchronizácia procesov môžu znieť komplikovane, no v tomto videu zistíte, že sa dajú naučiť ľahšie, ako by ste si mysleli.</p>
 
-                    <p>Učiteľ informatiky a výskumník zo Španielska Jesús Moreno León v tomto videu vysvetľuje, ako môžete so študentmi rozvinúť tieto a ďalšie zručnosti a zároveň sa pri tom zabaviť. Ako na to? Vytvorí sa hra s otázkami a odpoveďami v jazyku Scratch, ktorý je najobľúbenejším programovacím jazykom na školách na celom svete. Scratch posilňuje výpočtové myslenie, no umožňuje tiež zahrnúť prvky hry do vyučovania. Študenti vďaka tomu nestrácajú motiváciu a učia sa zábavnou formou.</p>
+                    <p>Učiteľ informatiky a výskumník zo Španielska Jesús Moreno León v tomto videu vysvetľuje, ako môžete so študentmi rozvinúť tieto a ďalšie zručnosti a zároveň sa pri tom zabaviť. Ako na to? Vytvorí sa hra s otázkami a odpoveďami v jazyku Scratch, ktorý je najobľúbenejším programovacím jazykom na školách na celom svete. Scratch posilňuje výpočtové myslenie, no umožňuje tiež zahrnúť prvky hry do vyučovania. Študenti vďaka tomu nestrácajú motiváciu a učia sa zábavnou formou.</p>
 
                     <p>Pozrite si video a zistite, ako na to:</p>',
             'activities' => [
-                '1' => 'Aktivita 1 – Hra s otázkami a odpoveďami v jazyku Scratch pre 1. stupeň základných škôl',
-                '2' => 'Aktivita 2 – Hra s otázkami a odpoveďami v jazyku Scratch pre 2. stupeň základných škôl',
-                '3' => 'Aktivita 3 – Hra s otázkami a odpoveďami v jazyku Scratch pre stredné školy'
+                '1' => 'Aktivita 1 – Hra s otázkami a odpoveďami v jazyku Scratch pre 1. stupeň základných škôl',
+                '2' => 'Aktivita 2 – Hra s otázkami a odpoveďami v jazyku Scratch pre 2. stupeň základných škôl',
+                '3' => 'Aktivita 3 – Hra s otázkami a odpoveďami v jazyku Scratch pre stredné školy'
             ]
         ],
         '5' => [
-            'title' => 'Tvorba, robotika a majstrovanie v triede',
+            'title' => 'Tvorba, robotika a majstrovanie v triede',
             'author' => 'Tullia Urschitz',
-            'text' => '<p>Zahrnutie programovania, majstrovania, robotiky a mikroelektroniky ako vyučovacích a učebných nástrojov do školských osnov má vo vzdelávaní 21. storočia zásadný význam.</p>
+            'text' => '<p>Zahrnutie programovania, majstrovania, robotiky a mikroelektroniky ako vyučovacích a učebných nástrojov do školských osnov má vo vzdelávaní 21. storočia zásadný význam.</p>
 
-                    <p>Majstrovanie a robotika na školách majú pre študentov množstvo prínosov, pretože im pomáhajú rozvíjať kľúčové kompetencie, ako sú riešenie problémov, tímová práca a spolupráca. U študentov tiež posilňujú tvorivosť a sebadôveru a môžu im pomôcť v rozvoji vytrvalosti a odhodlania, keď sú postavení pred výzvy. Robotika je zároveň oblasť, ktorá podporuje začleňovanie, pretože je ľahko dostupná širokému záberu študentov s rôznym nadaním a zručnosťami (chlapcom aj dievčatám) a pozitívne ovplyvňuje študentov s autistickými sklonmi.</p>
+                    <p>Majstrovanie a robotika na školách majú pre študentov množstvo prínosov, pretože im pomáhajú rozvíjať kľúčové kompetencie, ako sú riešenie problémov, tímová práca a spolupráca. U študentov tiež posilňujú tvorivosť a sebadôveru a môžu im pomôcť v rozvoji vytrvalosti a odhodlania, keď sú postavení pred výzvy. Robotika je zároveň oblasť, ktorá podporuje začleňovanie, pretože je ľahko dostupná širokému záberu študentov s rôznym nadaním a zručnosťami (chlapcom aj dievčatám) a pozitívne ovplyvňuje študentov s autistickými sklonmi.</p>
 
-                    <p>Pozrite si video, v ktorom Tullia Urschitz, veľvyslankyňa z talianskej komunity Scientix a učiteľka predmetov STEM (veda, technológia, inžinierstvo a matematika) zo Sant’Ambrogio Di Valpolicella v Taliansku, ponúka niekoľko praktických príkladov, ako môžu učitelia zahrnúť majstrovanie a robotiku do vyučovania a premeniť tak pasívnych študentov na nadšených tvorcov.</p>',
+                    <p>Pozrite si video, v ktorom Tullia Urschitz, veľvyslankyňa z talianskej komunity Scientix a učiteľka predmetov STEM (veda, technológia, inžinierstvo a matematika) zo Sant’Ambrogio Di Valpolicella v Taliansku, ponúka niekoľko praktických príkladov, ako môžu učitelia zahrnúť majstrovanie a robotiku do vyučovania a premeniť tak pasívnych študentov na nadšených tvorcov.</p>',
             'activities' => [
-                '1' => 'Aktivita 1 – Ako vyrobiť mechanickú ruku z HDF dosky pre 1. stupeň základných škôl',
-                '2' => 'Aktivita 2 – Ako vyrobiť mechanickú alebo robotickú ruku pre 2. stupeň základných škôl',
-                '3' => 'Aktivita 3 – Ako vyrobiť mechanickú alebo robotickú ruku pre stredné školy'
+                '1' => 'Aktivita 1 – Ako vyrobiť mechanickú ruku z HDF dosky pre 1. stupeň základných škôl',
+                '2' => 'Aktivita 2 – Ako vyrobiť mechanickú alebo robotickú ruku pre 2. stupeň základných škôl',
+                '3' => 'Aktivita 3 – Ako vyrobiť mechanickú alebo robotickú ruku pre stredné školy'
             ]
         ],
         '6' => [
@@ -265,17 +265,50 @@ V tomto videu vám tím Týždňa programovania ukáže niekoľko praktických, 
                 "3" => "Overovanie faktov",
             ]
         ],
+        "16" => [
+            "title" => "AKO VYROZPRÁVAŤ PRÍBEH POMOCOU HEDY",
+            "author" => "Felienne Hermans",
+            "text" => [
+                "Žiaci a žiačky už ovládajú vizuálny programovací jazyk, ale ešte nie sú pripravení zahryznúť sa do textového programovacieho jazyka? V tom prípade vám príde vhod tento učebný plán, ktorý žiačkam a žiakom pomôže prejsť z vizuálneho na textový programovací jazyk. Učebný plán <strong>Ako vyrozprávať príbeh pomocou Hedy</strong> pozostáva z troch vyučovacích hodín, počas ktorých sa používa Hedy – postupný programovací jazyk, ktorým sa deti naučia programovať.",
+
+                "Jazyk Hedy je určený deťom, ktoré sa chcú pustiť do textových programovacích jazykov, ale jazyk Python môže byť pre ne zatiaľ príliš zložitý. V postupných jazykoch sa uplatňujú rôzne jazykové úrovne, pričom v každej úrovni sa pridávajú nové koncepcie a zložitejšia syntax. Po dokončení úrovňovej sekvencie Hedy žiaci a žiačky ovládajú podsúbor platnej syntaxe jazyka Python.",
+
+                "V tomto učebnom pláne nájdete podnetné a pútavé aktivity, ktoré žiačkam a žiakom pomôžu účinne používať textové programovacie jazyky. V rámci vytvárania vlastných interaktívnych príbehov sa postupne sa naučia programovať a nebudú sa musieť všetko naučiť naraz. Počas vyučovacej hodiny pre prvý stupeň základnej školy sa žiakom a žiačkam predstavia základné koncepcie programovania. Vyučovacia hodina pre druhý stupeň základnej školy poskytuje úvod do ďalších programovacích koncepcií a vyučovacia hodina pre strednú školu umožňuje žiačkam a žiakom programovať zložitejšie príbehy a aktivity.",
+
+                "Pozrite si príklad interaktívneho príbehu a zistite, ako doňho čitatelia môžu vstupovať, a ako podporuje ich aktívne zapojenie."
+            ],
+            "activities" => [
+                "1" => "Vytvor si interaktívny príbeh pomocou Hedy pre prvý stupeň základnej školy",
+                "2" => "Vytvor si interaktívny príbeh pomocou Hedy pre druhý stupeň základnej školy",
+                "3" => "Vytvor si interaktívny príbeh pomocou Hedy pre strednú školu",
+            ]
+        ],
+        "17" => [
+            "title" => "Programovanie s citom",
+            "author" => "Alenka Miljević",
+            "text" => [
+                "Sociálna a emocionálna pohoda je schopnosť zachovať si odolnosť, ovládať svoje emócie a reagovať na emócie druhých, nadväzovať zmysluplné vzťahy s ostatnými, produkovať emócie, ktoré vedú k dobrým pocitom a vytvárať si vlastnú sieť emocionálnej podpory. Sociálne a emocionálne zručnosti, ktoré sa mladí ľudia naučia v škole, im pomáhajú budovať si odolnosť a nastaviť vzorce, podľa ktorých budú ovládať svoje fyzické a duševné zdravie počas celého života. (Rada Európy)",
+                "Učebný plán Programovanie s citom vám umožní posilniť sociálnu a emocionálnu pohodu žiakov a žiačok. Naučia sa rozpoznávať, vysvetľovať, chápať a reagovať na pozitívne a negatívne pocity a emócie a rozvinú si tak empatiu a odolnosť.  V tomto učebnom pláne nájdete podnetné a pútavé aktivity, ktoré žiačkam a žiakom pomôžu rozvinúť si zručnosti na zvládanie rôznych emócií prostredníctvom programovania. Pomocou robota Bee-bot sa naučia sa, ako vyjadriť svoje pocity a reagovať na emócie spolužiakov a spolužiačok.",
+                "Učebný plán Programovanie s citom pozostáva z plánov na tri vyučovacie hodiny s aktivitami, ktoré pomocou vzdelávacieho robota Bee-bot povzbudzujú deti v triede, aby hovorili o svojich emóciách a rozvinuli si empatiu. Na základe plánu vyučovacej hodiny pre prvý stupeň základnej školy deti naprogramujú Bee-bota a porozprávajú sa o smútku, šťastí, strachu a hneve, aby zistili, prečo ony alebo ich spolužiaci pociťujú tieto emócie. Podľa plánu vyučovacej hodiny pre druhý stupeň základnej školy dostanú deti za úlohu naprogramovať Bee-bota, rozpoznať svoje pocity alebo pocity druhých, pochopiť, čo ich spôsobilo a ako na ne reagovať. Na základe plánu vyučovacej hodiny pre strednú školu sa študenti naučia ovládať Bee-bota a vymýšľať príbehy o pocitoch, odolnosti a empatii.",
+                "Ak v triede nemáte vzdelávacieho robota, tento učebný plán vám poskytne nápady na aktivity bez počítača, ktorými sa posilňuje rozvoj sociálnych a emocionálnych zručností. Uvedený interaktívny diagram vám poskytuje stručný prehľad aktivít, ktoré môžete uplatniť počas vyučovania:"
+            ],
+            "activities" => [
+                "1" => "Programujem, cítim, učím sa pre žiakov prvého stupňa základnej školy",
+                "2" => "Nemám srdce z kameňapre žiakov druhého stupňa základnej školy",
+                "3" => "Naprogramuj mi náladu pre študentov strednej školy",
+            ]
+        ],
 
 
     ],
     'download_video_script' => 'Stiahnuť prepis videa',
     'ready_to_share' => 'Ste pripravení odovzdať nadobudnuté vedomosti študentom?',
-    'choose_lessons' => 'Vyberte si z navrhovaných učebných plánov a usporiadajte aktivitu pre študentov.',
+    'choose_lessons' => 'Vyberte si z navrhovaných učebných plánov a usporiadajte aktivitu pre študentov.',
     'footer' => [
         'title' => 'Nezabudnite pridať aktivitu na mapu Týždňa programovania!',
-        'text' => '<p>Môžete jednoducho usporiadať hodinu v triede, deň otvorených dverí alebo podujatie vo vašej škole. Stačí nájsť dátum a zaregistrovať aktivitu na <a href="/events">mape Týždňa programovania</a>. Každý organizátor aktivity získa za svoje úsilie certifikát za účasť.</p>
+        'text' => '<p>Môžete jednoducho usporiadať hodinu v triede, deň otvorených dverí alebo podujatie vo vašej škole. Stačí nájsť dátum a zaregistrovať aktivitu na <a href="/events">mape Týždňa programovania</a>. Každý organizátor aktivity získa za svoje úsilie certifikát za účasť.</p>
 
-<p>Ak sa chcete spojiť s medzinárodnou skupinou nadšencov, pripojte sa k <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">skupine učiteľov Európskeho týždňa programovania na Facebooku</a>. Ak by ste chceli zájsť o krok ďalej a spolupracovať s inými školami vo vašej krajine alebo v zahraničí, zapojte sa do <a href="/codeweek4all">výzvy Code Week 4 All</a> (Týždeň programovania pre všetkých).</p>'
+<p>Ak sa chcete spojiť s medzinárodnou skupinou nadšencov, pripojte sa k <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">skupine učiteľov Európskeho týždňa programovania na Facebooku</a>. Ak by ste chceli zájsť o krok ďalej a spolupracovať s inými školami vo vašej krajine alebo v zahraničí, zapojte sa do <a href="/codeweek4all">výzvy Code Week 4 All</a> (Týždeň programovania pre všetkých).</p>'
     ]
 
 ];

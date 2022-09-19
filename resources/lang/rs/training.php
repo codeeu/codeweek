@@ -268,6 +268,39 @@ Pomoću Pythona učenici mogu da prave kvizove o istorijskim događajima, da re�
                 "3" => "Provera činjenica",
             ]
         ],
+        "16" => [
+            "title" => "PRIČANJE PRIČE UZ HEDY",
+            "author" => "autorke Felienne Hermans",
+            "text" => [
+                "Da li su vaši učenici već savladali vizuelni programski jezik, ali ne osećaju se spremni da dublje zarone u programski jezik zasnovan na tekstu? Onda je ovo učenje upravo za vas i vaše učenike jer će im pomoći da premoste jaz između vizuelnog i programskog jezika zasnovanog na tekstu. Deo za učenje <strong>Pričanje priče sa Hedy</strong> sastoji se od tri plana lekcija koji koriste Hedy – postepeni programski jezik za učenje dece da programiraju.",
+
+                "Hedy je namenjen decu koja žele da započnu sa programskim jezicima zasnovanim na tekstu, ali za koje je započinjanje sa Python-om možda i dalje previše složeno. Postepeni jezici koriste različite nivoe jezika, pri čemu svaki nivo dodaje nove koncepte i sintaksičku složenost. Na kraju niza nivoa u Hedy, učenici savladavaju podskup sintaksički važećeg Python-a.",
+
+                "U ovom delu za učenje, pronaći ćete aktivnosti koje inspirišu i angažuju da biste pomogli učenicima da efikasno koriste programske jezike zasnovane na tekstu. Kreiranjem sopstvenih interaktivnih priča, postepeno će naučiti programiranje, bez potrebe da sve nauče odjednom. U planu lekcije za osnovnu školu, učenici se upoznaju sa osnovnim konceptima programiranja. Plan lekcija za niže razrede srednjih škola uvodi dalje koncepte programiranja, dok plan lekcija za više razrede srednjih škola omogućava učenicima da programiraju složenije priče i aktivnosti.",
+
+                "Proverite interaktivnu priču ispod da biste videli kako čitaoci mogu da učestvuju u priči i kako ona neguje njihovo aktivno angažovanje."
+            ],
+            "activities" => [
+                "1" => "Sastavite sopstvenu interaktivnu priču sa Hedy za učenike osnovne škole",
+                "2" => "Sastavite sopstvenu interaktivnu priču sa Hedy za učenike nižih razreda srednje škole",
+                "3" => "Sastavite sopstvenu interaktivnu priču sa Hedy za učenike viših razreda srednje škole",
+            ]
+        ],
+        "17" => [
+            "title" => "Osetite kôd",
+            "author" => "autor Alenka Miljević",
+            "text" => [
+                "Društveno i emotivno blagostanje je sposobnost da budete otporni, da znate kako da upravljate svojim emocijama i reagujete na emocije drugih ljudi, razvijate smislene odnose sa drugima, generišete emocije koje dovode do dobrih osećanja i stvarate sopstvenu mrežu emotivne podrške. Društvene i emotivne veštine koje mladi uče u školi pomažu im da izgrade otpornost i postave obrazac kako će upravljati svojim fizičkim i mentalnim zdravljem tokom svog života. (Savet Evrope)",
+                "Deo za učenje Osetite kôd omogućiće vam da negujete društvenu i emotivnu dobrobit vaših učenika prepoznavanjem, objašnjavanjem, razumevanjem i reagovanjem na pozitivna i negativna osećanja i emocije da biste izgradili empatiju i otpornost. U ovom delu za učenje, pronaći ćete inspirativne i zanimljive aktivnosti da biste pomogli učenicima da razviju veštine kojima će savladavati različite emocije putem programiranja. Učenici će naučiti kako da iskazuju svoja osećanja i kako da reaguju na emocije svojih vršnjaka, i to uz pomoć Bee-Bot robota.",
+                "Deo za učenje Osetite kôd sastoji se od tri plana lekcija koji koriste Bee-Bot obrazovnog robota za stvaranje aktivnosti koje podstiču učenike da razgovaraju o emocijama i razvijaju empatiju. U planu lekcije za osnovnu školu, učenici programiraju Bee-Bota da priča o emocijama, poput tuge, sreće, straha i ljutnje, i da otkrivaju razloge zbog čega oni i njihovi vršnjaci osećaju te emocije. Plan lekcije za niže razrede srednje škole podstiče učenike da programiraju Bee-Bota, da prepoznaju sopstvena osećanja i osećanja vršnjaka, da razumeju šta je dovelo do njih i kako da reaguju na njih. Plan lekcije za više razrede srednje škole omogućava učenicima da pomeraju Bee-Bota i da izmišljaju priče o osećanjima, otpornosti i empatiji.",
+                "Ako nemate obrazovnog robota u učionici, ovaj deo za učenje će vam dati ideje za aktivnosti bez računara koje neguju razvoj društvenih i emotivnih veština. Interaktivni deo u nastavku daje kratak pregled aktivnosti koje možete da primenite u učionici:"
+            ],
+            "activities" => [
+                "1" => "Programiraj - Osećaj - Uči za učenike osnovne škole",
+                "2" => "Moje srce nije od kamena za učenike nižih razreda srednje škole",
+                "3" => "Programiraj me prema raspoloženju za učenike viših razreda srednje škole",
+            ]
+        ],
 
 
     ],

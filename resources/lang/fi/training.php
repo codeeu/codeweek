@@ -267,6 +267,40 @@ Tällä videolla koodausviikon tiimi esittelee muutamia helppoja ja hauskoja kä
             ]
         ],
 
+        "16" => [
+            "title" => "TARINAN LUOMINEN HEDYLLÄ",
+            "author" => "Felienne Hermans",
+            "text" => [
+                "Onko visuaalinen ohjelmointikieli oppilaillesi ja opiskelijoillesi jo tuttu juttu, mutta he eivät ole vielä syventyneet tekstipohjaiseen ohjelmointikieleen? Tämän kurssin avulla he voivat siirtyä visuaalisesta ohjelmointikielestä tekstipohjaiseen ohjelmointikieleen. <strong>Tarinan luominen Hedyllä</strong> -kurssi koostuu kolmesta tuntisuunnitelmasta, joissa opetellaan käyttämään Hedyä – vaiheittain etenevää ohjelmointikieltä, jolla voidaan opettaa lapsille ohjelmointia.",
+
+                "Hedy on tarkoitettu lapsille ja nuorille, jotka haluavat tutustua tekstipohjaisiin ohjelmointikieliin mutta joille Python voi olla vielä liian monimutkainen. Vaiheittaisessa ohjelmointikielessä käytetään eri kielitasoja niin, että jokaisella tasolla mukaan tulee uusia käsitteitä ja monimutkaisempia syntaktisia elementtejä. Korkeimmalle Hedy-tasolle päästyään oppilaat ja opiskelijat osaavat koodata Python-ohjelmointikielellä hyvin toimivan syntaktisen osajoukon.",
+
+                "Kurssi sisältää innostavia ja mielenkiintoisia tehtäviä, joiden avulla oppilaat ja opiskelijat oppivat käyttämään tekstipohjaisia ohjelmointikieliä. Luomalla omia interaktiivisia tarinoitaan he oppivat ohjelmointia vaiheittain, eikä kaikkea tarvitse opetella kerralla. Alaluokkien tuntisuunnitelmassa oppilaille esitellään ohjelmoinnin peruskäsitteet. Yläluokkien tuntisuunnitelmassa opitaan lisää käsitteitä, ja toisen asteen tuntisuunnitelmassa opiskelijat ohjelmoivat jo monimutkaisempia tarinoita ja tehtäviä.",
+
+                "Katso alla olevasta interaktiivisesta tarinasta, miten lukijat voivat osallistua tarinaan ja miten se tukee aktiivista osallistumista."
+            ],
+            "activities" => [
+                "1" => "Luo oma interaktiivinen tarinasi Hedyllä alaluokkien oppilaiden kanssa",
+                "2" => "Luo oma interaktiivinen tarinasi Hedyllä yläluokkien oppilaiden kanssa",
+                "3" => "Luo oma interaktiivinen tarinasi Hedyllä toisen asteen opiskelijoiden kanssa",
+            ]
+        ],
+        "17" => [
+            "title" => "Tunne koodi",
+            "author" => "Alenka Miljević ",
+            "text" => [
+                "Sosiaalisen ja emotionaalisen hyvinvoinnin edellytyksenä on kyky sopeutua, taito hallita omia tunteita ja vastata toisten tunteisiin sekä kyky luoda mielekkäitä ihmissuhteita, edistää myönteisiä tunteita ja rakentaa oma emotionaalinen tukiverkosto. Koulussa opittavat sosiaaliset ja emotionaaliset taidot auttavat oppilaita kehittämään omaa sopeutumiskykyään ja luovat perustan fyysisen ja henkisen terveyden hallintaan loppuelämän ajaksi (Euroopan neuvosto).",
+                "Tunne koodi -oppimismoduuli auttaa edistämään sosiaalista ja emotionaalista hyvinvointia. Oppilaat tunnistavat, selittävät ja ymmärtävät myönteisiä ja kielteisiä tunteita ja tunnetiloja ja reagoivat niihin, mikä kasvattaa myötätuntoa ja sopeutumiskykyä.  Moduuli sisältää innostavia ja mielenkiintoisia tehtäviä, joiden avulla oppilaat kehittävät taitoja erilaisten tunteiden käsittelemiseen koodausta käyttämällä. Oppilaat oppivat ilmaisemaan tunteitaan ja muiden tunteisiin reagoimista Bee-Bot-robotin avulla.",
+                "Tunne koodi -oppimismoduuli sisältää kolme tuntisuunnitelmaa, joissa käytetään Bee-Bot-oppimisrobottia. Tehtävät kannustavat oppilaita puhumaan tunteista ja kehittämään myötätuntoa. Alaluokkien tuntisuunnitelmassa oppilaat ohjelmoivat Bee-Botia ja puhuvat tunteista, kuten surusta, ilosta, pelosta ja vihasta, ja löytävät syitä, miksi he ja muut oppilaat kokevat näitä tunteita. Yläluokkien tuntisuunnitelmassa oppilaita kannustetaan ohjelmoimaan Bee-Botia, tunnistamaan omia ja muiden oppilaiden tunteita sekä ymmärtämään, mikä ne aiheutti ja miten niihin voi reagoida. Toisen asteen tuntisuunnitelmassa opiskelijat ohjaavat Bee-Botia ja keksivät tarinoita tunteista, sopeutumiskyvystä ja myötätunnosta.",
+                "Jos käytössä ei ole oppimisrobottia, oppimismoduuli sisältää myös ideoita ilman laitteita tehtäviin harjoituksiin, jotka kehittävät sosiaalisia ja emotionaalisia taitoja. Alla oleva interaktiivinen tarina sisältää lyhyen esittelyn luokassa tehtävistä harjoituksista:"
+            ],
+            "activities" => [
+                "1" => "Koodaa – tunne – opi alaluokkien oppilaille",
+                "2" => "Sydämeni ei ole kiveä yläluokkien oppilaille",
+                "3" => "Koodaa minut tunteeseen toisen asteen opiskelijoille",
+            ]
+        ],
+
 
     ],
     'download_video_script' => 'Lataa videon käsikirjoitus',

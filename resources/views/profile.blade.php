@@ -5,24 +5,27 @@
     <section id="codeweek-profile-page" class="codeweek-page">
 
         <section class="codeweek-content-wrapper" style="margin-top:0;">
+                <div style="display: flex">
+                
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                      @role('ambassador|super admin')
+                      <avatar-form :user="{{ $profileUser }}"></avatar-form>
+                      @else
+                      <h1>{{ $profileUser->fullName }}</h1>
+                      @endrole
 
-
-            @role('ambassador|super admin')
-            <avatar-form :user="{{ $profileUser }}"></avatar-form>
-            @else
-                <h1>{{ $profileUser->fullName }}</h1>
-                @endrole
-
-                @role('leading teacher')
-
-
-
-                <h3><a href="{{route('LT.signup')}}">Click here to Edit your Leading Teacher Profile</a></h3>
-
-
-
-                @endrole
-
+                      @role('leading teacher')
+                      <h3><a href="{{route('LT.signup')}}">Click here to Edit your Leading Teacher Profile</a></h3>
+                      @endrole
+                    </div>
+                    <div class="codeweek-form-button-container right" style="justify-content: right;  align-items: center;">
+                    <a class="codeweek-action-link-button red"
+                           onclick="return confirm('Are you actually intending to delete your account?')"
+                           href="{{route('delete_user')}}" style="font-size: 12px;  padding: 7px 10px;">DELETE USER</a>       
+            
+                    </div>
+                    
+                </div>   
                 <form method="POST" action="{{ route('user.update') }}" class="codeweek-form">
 
                     <div class="codeweek-form-inner-container">
@@ -176,7 +179,7 @@
                                 <input id="checkPrivacy" name="privacy"
                                        type="checkbox" {{ $profileUser->privacy === 1 ? 'checked="checked"' : '' }}>
                                 @lang('event.privacy')
-                                <a href="/privacy" target="_blank" rel="noreferer noopener">
+                                <a href="{{route('privacy-contact-points')}}" target="_blank" rel="noreferer noopener">
                                     <img src="/images/external-link.svg" width="16" class="static-image">
                                 </a>
                             </label>
@@ -184,15 +187,19 @@
                             @endcomponent
                         </div>
 
+
                         <div class="codeweek-form-button-container">
                             <div class="codeweek-button">
                                 <input type="submit" value="@lang('base.update')">
                             </div>
+                            
                         </div>
 
                     </div>
 
                 </form>
+
+                
 
         </section>
 

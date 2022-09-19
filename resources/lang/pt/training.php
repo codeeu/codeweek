@@ -268,6 +268,36 @@ Neste vídeo, a equipa da Semana da Programação vai mostrar-lhe algumas ativid
                 "3" => "Verificação de factos",
             ]
         ],
+        "16" => [
+            "title" => "CONTAR HISTÓRIAS COM HEDY",
+            "author" => "por Felienne Hermans",
+            "text" => [
+                "Os seus alunos já dominam uma linguagem de programação visual, mas não se sentem prontos para mergulhar mais fundo numa linguagem de programação baseada em texto? Então este bit de aprendizagem é perfeito para si e para os seus alunos, porque irá ajudá-los a preencher o fosso entre a linguagem de programação visual e a baseada em texto. O bit de aprendizagem <strong>Contar histórias com Hedy</strong> inclui três planos de aula que utilizam Hedy — uma linguagem de programação gradual para ensinar programação a crianças",
+                "A Hedy destina-se a crianças que querem começar com linguagens de programação textual, mas para as quais começar com Python poderia ser demasiado complexo. As linguagens gradativas utilizam diferentes níveis de linguagem, em que cada nível adiciona novos conceitos e complexidade sintática. No final da sequência de níveis da Hedy, os alunos dominam um subconjunto de Python sintaticamente válido.",
+                "Neste bit de aprendizagem encontrará atividades inspiradoras e envolventes, para ajudar os seus alunos a utilizarem eficientemente linguagens de programação baseadas em texto. Ao criarem as suas próprias histórias interativas, aprenderão gradualmente a programar, sem terem de aprender tudo de uma só vez. No plano de aula para o primeiro ciclo do ensino básico, são apresentados os conceitos básicos de programação. O plano de aula para o segundo e terceiro ciclos do ensino básico introduz outros conceitos de programação, enquanto o plano de aula para o ensino secundário permite que os alunos programem histórias e atividades mais complexas.",
+                "Consulte a história interativa abaixo para ver como os leitores podem participar na história e como ela promove o seu envolvimento ativo."
+            ],
+            "activities" => [
+                "1" => "Criar uma história interativa com Hedy para alunos do primeiro ciclo do ensino básico",
+                "2" => "Criar uma história interativa com Hedy para alunos do segundo e terceiro ciclos do ensino básico",
+                "3" => "Criar uma história interativa com Hedy para alunos do ensino secundário",
+            ]
+        ],
+        "17" => [
+            "title" => "Sentir a programação",
+            "author" => "por Alenka Miljević",
+            "text" => [
+                "O bem-estar social e emocional é a capacidade de ser resiliente, saber gerir as próprias emoções e responder às emoções de outras pessoas, desenvolver relacionamentos significativos com outros, gerar emoções que levam a bons sentimentos e criar a própria rede de apoio emocional. As competências sociais e emocionais que os jovens aprendem na escola ajudam a aumentar a sua resiliência e a traçar o rumo de como irão gerir a sua saúde física e mental ao longo das suas vidas (Conselho da Europa).",
+                "O bit de aprendizagem Sentir a programação permitir-lhe-á promover o bem-estar social e emocional dos seus alunos, reconhecendo, explicando, entendendo e respondendo a sentimentos e emoções positivos e negativos, a fim de criar empatia e aumentar a resiliência.  Neste bit de aprendizagem encontrará atividades inspiradoras e envolventes, para ajudar os seus alunos a desenvolverem competências para lidarem com as diferentes emoções através da programação. Os seus alunos aprenderão a expressar os seus sentimentos e a reagir às emoções dos seus colegas com a ajuda de um robô Bee-Bot.",
+                "O bit de aprendizagem Sentir a programação inclui três planos de aula que utilizam um robô educativo Bee-Bot para criar atividades que incentivam os alunos a falarem sobre emoções e a desenvolverem empatia. No plano de aula para o primeiro ciclo do ensino básico, os alunos programam um Bee-Bot para falarem sobre emoções como a tristeza, a felicidade, o medo e a raiva, e descobrirem as razões pelas quais eles e os seus colegas sentem essas emoções. O plano de aula para o segundo e terceiro ciclos do ensino básico incentiva os alunos a programarem um Bee-Bot, a reconhecerem os seus próprios sentimentos e os dos seus colegas, a entenderem o que os causou e como reagir aos mesmos. O plano de aula para o ensino secundário permite que os alunos naveguem um Bee-Bot e inventem histórias sobre sentimentos, resiliência e empatia.",
+                "Se não tiver um robô educativo na sua sala de aula, este bit de aprendizagem fornece-lhe ideias para atividades sem recurso a computadores que promovem o desenvolvimento de competências sociais e emocionais. A história interativa abaixo apresenta uma breve visão geral das atividades que pode realizar na sua sala de aula:"
+            ],
+            "activities" => [
+                "1" => "Programar - Sentir - Aprender para alunos do primeiro ciclo do ensino básico",
+                "2" => "O meu coração não é de pedra para alunos do segundo e terceiro ciclos do ensino básico",
+                "3" => "Programar-me para o estado de espírito para alunos do ensino secundário",
+            ]
+        ],
 
 
     ],
