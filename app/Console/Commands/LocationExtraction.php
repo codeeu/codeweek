@@ -41,7 +41,7 @@ class LocationExtraction extends Command
 //            where('id','=',163373)->
 //        where('creator_id',153701)->
         where('status', "=", "APPROVED")->
-        whereNull('location_id')->chunk($this->step, function ($events, $index) {
+        whereNull('location_id')->chunkById($this->step, function ($events, $index) {
 
             $this->reportProgress($index);
 
@@ -50,7 +50,6 @@ class LocationExtraction extends Command
             });
 
         });
-
 
     }
 

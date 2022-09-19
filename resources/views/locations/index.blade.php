@@ -7,7 +7,7 @@
 
     <section class="mx-6">
         <h1>{{__('locations.title')}}</h1>
-        <span class="text-xl">{{__('locations.description.0')}} <a href="{{route('create_event', ['skip' => 1])}}">{{__('locations.description.1')}}</a></span>
+        <span class="text-xl">{{__('locations.description.0')}} <a href="{{route('create_event', ['skip' => 1])}}">{{__('locations.description.1')}}</a> {{__('locations.description.2')}}</span>
 
         <table class="codeweek-table mt-2">
             <thead>
