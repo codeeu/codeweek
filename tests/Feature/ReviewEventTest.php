@@ -24,10 +24,10 @@ class ReviewEventTest extends TestCase
         $ambassador = create('App\User', ['country_iso' => 'FR'])->assignRole('ambassador');
         $this->signIn($ambassador);
 
-        $event = create('App\Event', ['country_iso' => 'FR', 'status' => 'PENDING'],17);
+        $event = create('App\Event', ['country_iso' => 'FR', 'status' => 'PENDING'],33);
 
-        $this->get('/view/' . $event[0]->id . '/random')
-            ->assertSeeText('Pending events: 17');
+        $this->get('/view/' . $event[30]->id . '/random')
+            ->assertSee('moderate-event');
 
     }
 
@@ -40,7 +40,7 @@ class ReviewEventTest extends TestCase
         $event = create('App\Event', ['country_iso' => 'FR', 'status' => 'PENDING']);
 
         $this->get('/view/' . $event->id . '/random')
-            ->assertDontSeeText('Pending events:');
+            ->assertDontSee('moderate-event');
 
     }
 
