@@ -101,13 +101,11 @@ class EventController extends Controller {
            return view('event.add', compact(['countries', 'themes', 'languages', 'location']));
         }
 
-//        if (!auth()->user()->locations->isEmpty()){
-//            if (!$request->get('skip')){
-//                return redirect(route('activities-locations'));
-//            }
-//        }
-
-
+        if (!auth()->user()->locations->isEmpty()){
+            if (!$request->get('skip')){
+                return redirect(route('activities-locations'));
+            }
+        }
 
         return view('event.add', compact(['countries', 'themes', 'languages']));
     }
