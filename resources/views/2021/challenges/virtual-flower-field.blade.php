@@ -144,7 +144,7 @@
             </div>
         </section>
     </section>
-
+    <div style="text-align: center">@include('include.licence')</div>
 @endsection
 
 @section('extra-css')
