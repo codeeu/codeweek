@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,14 +12,10 @@
 |
 */
 
-use App\Http\Controllers\UnsubscribeController;
-use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Mail;
 
-//Auth::loginUsingId(241748);
+//Auth::loginUsingId(153701);
 
 Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
     Route::get('/', function ($subdomain) {
@@ -469,6 +466,8 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
 });
 
 
+
+
 Route::group(['middleware' => [
     'auth',
     'role:super admin|leading teacher|leading teacher admin']], function () {
@@ -578,14 +577,19 @@ Route::get(
 Route::get('podcasts', 'PodcastsController@index')->name('podcasts');
 Route::get('podcast/{podcast}', 'PodcastsController@show')->name('podcast');
 
-Route::get('birthday', function () {
-    $user = User::where('email', 'alainvd@gmail.com')->first();
-    return (new \App\Mail\BirthdayMailing($user->email, $user->magic_key))->render();
-});
+
 
 
 Route::get('/unsubscribe/{email}/{magic}', 'UnsubscribeController@index')->name('unsubscribe');
 
+
+
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('activities-locations', 'LocationController@index')->name('activities-locations');
+});
+
+Route::view('/registration', 'registration.add');
 
 Auth::routes();
 Route::feeds();
