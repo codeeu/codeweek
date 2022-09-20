@@ -1,6 +1,8 @@
 <template>
     <div class="reported-event">
-        <div>Current Status: <strong>Reported </strong></div>
+
+      <div>
+        Current Status: <strong>Reported </strong></div>
         &nbsp;-&nbsp;Participants Count:&nbsp;<strong>{{participants_count}}</strong>
     </div>
 </template>
