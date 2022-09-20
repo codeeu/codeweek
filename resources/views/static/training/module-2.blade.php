@@ -56,7 +56,7 @@
 
             </section>
 
-
+            @include('include.licence')
         </section>
 
     </section>
