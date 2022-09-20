@@ -15,7 +15,6 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-//Auth::loginUsingId(153701);
 
 Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
     Route::get('/', function ($subdomain) {
@@ -372,6 +371,9 @@ Route::group(['middleware' => ['role:super admin']], function () {
     Route::get('/pending/{country}', 'PendingEventsController@index')->name(
         'pending_by_country'
     );
+    Route::get('/review/{country}', 'ReviewController@index')->name('review_by_country');
+
+
     Route::get('/online/list/{country}', 'OnlineEventsController@list')->name(
         'online_events_by_country'
     );
@@ -449,7 +451,10 @@ Route::group(['middleware' => ['role:super admin']], function () {
 });
 
 Route::group(['middleware' => ['role:super admin|ambassador']], function () {
-    Route::get('/pending', 'PendingEventsController@index')->name('pending');
+//    Route::get('/pending', 'PendingEventsController@index')->name('pending');
+    Route::get('/pending', 'ReviewController@index')->name('pending');
+    Route::get('/review', 'ReviewController@index')->name('review');
+
     Route::get('/online/list', 'OnlineEventsController@list')->name(
         'admin.online-events'
     );

@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Achievements\Achievement;
+use App\Helpers\EventHelper;
 use Carbon\Carbon;
 use DB;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -415,6 +416,32 @@ class User extends Authenticatable
         $this->update([
             'receive_emails' => false
         ]);
+    }
+
+    public function getEventsToReviewCount()
+    {
+        if (auth()->user()->isAmbassador()){
+            return EventHelper::getPendingEventsCount($this->country_iso);
+        }
+
+        if (auth()->user()->isAdmin()){
+            return EventHelper::getPendingEventsCount();
+        }
+
+        return null;
+    }
+
+    public function getNextPendingEvent(Event $event)
+    {
+        if (auth()->user()->isAmbassador()){
+            return EventHelper::getNextPendingEvent($event, $this->country_iso);
+        }
+
+        if (auth()->user()->isAdmin()){
+            return EventHelper::getNextPendingEvent($event);
+        }
+
+        return null;
     }
 
 }
