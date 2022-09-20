@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,15 +12,8 @@
 |
 */
 
-use App\Http\Controllers\UnsubscribeController;
-use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Mail;
-
-Auth::loginUsingId(187778);
-
 
 
 Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
@@ -451,10 +445,7 @@ Route::group(['middleware' => ['role:super admin']], function () {
         'AdminController@generateCertificates'
     )->name('generate_certificates');
 
-    Route::get(
-        '/hackathons/vote/results',
-        'HackathonsVotingController@results'
-    )->name('hackathon-vote-results');
+
 
 
 });
@@ -478,6 +469,8 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
         'event.reject'
     );
 });
+
+
 
 
 Route::group(['middleware' => [
@@ -543,34 +536,7 @@ Route::group(
     }
 );
 
-Route::get('/hackathons', 'HackathonsController@index')->name('hackathons');
-Route::view('/hackathons/romania', 'hackathons.after.hackathon-romania')->name(
-    'hackathon-romania'
-);
 
-Route::view('/hackathons/latvia', 'hackathons.after.hackathon-latvia')->name(
-    'hackathon-latvia'
-);
-
-Route::view('/hackathons/italy', 'hackathons.after.hackathon-italy')->name(
-    'hackathon-italy'
-);
-
-Route::view('/hackathons/greece', 'hackathons.after.hackathon-greece')->name(
-    'hackathon-greece'
-);
-
-Route::view('/hackathons/ireland', 'hackathons.after.hackathon-ireland')->name(
-    'hackathon-ireland'
-);
-
-Route::get('/hackathons/slovenia', 'HackathonsController@before')->name(
-    'hackathon-slovenia'
-);
-
-Route::post('/hackathons/vote', 'HackathonsVotingController@save')->name(
-    'hackathon-vote'
-);
 
 Route::view('/chatbot', 'static.chatbot')->name('chatbot');
 Route::view('/teach-day', 'teach-day')->name('teach-day');
@@ -616,14 +582,19 @@ Route::get(
 Route::get('podcasts', 'PodcastsController@index')->name('podcasts');
 Route::get('podcast/{podcast}', 'PodcastsController@show')->name('podcast');
 
-Route::get('birthday', function () {
-    $user = User::where('email', 'alainvd@gmail.com')->first();
-    return (new \App\Mail\BirthdayMailing($user->email, $user->magic_key))->render();
-});
+
 
 
 Route::get('/unsubscribe/{email}/{magic}', 'UnsubscribeController@index')->name('unsubscribe');
 
+
+
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('activities-locations', 'LocationController@index')->name('activities-locations');
+});
+
+Route::view('/registration', 'registration.add');
 
 Auth::routes();
 Route::feeds();

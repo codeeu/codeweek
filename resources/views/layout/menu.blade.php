@@ -47,7 +47,6 @@
                 <ul>
                     <li><a href="/about">Code Week</a></li>
 
-                    <li><a href="/hackathons">Hackathons</a></li>
                     <li><a href="{{route('codeweek4all')}}">Code Week 4 All</a></li>
                     <li><a href="/treasure-hunt">@lang('snippets.treasure-hunt.menu')</a></li>
                     <li><a href="/why-coding">@lang('why-coding.titles.0')</a></li>
@@ -69,6 +68,12 @@
                         <img src="/images/user_menu_profile.svg" class="icon">
                         <a href="{{route('profile')}}">
                             @lang('menu.profile')
+                        </a>
+                    </li>
+                    <li>
+                        <img src="{{asset('svg/address-book.svg')}}" class="static-image">
+                        <a href="{{route('activities-locations')}}">
+                            Activities Locations
                         </a>
                     </li>
                     @role('super admin|leading teacher')

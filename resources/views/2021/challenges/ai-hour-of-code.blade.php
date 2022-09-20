@@ -141,6 +141,7 @@
 
                 @include('2021.challenges._download',['url'=>'https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2021/AI+Hour+of+Code.docx'])
             </div>
+            <div style="text-align: center">@include('include.licence')</div>
         </section>
     </section>
 
