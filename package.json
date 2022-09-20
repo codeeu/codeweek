@@ -9,7 +9,6 @@
     "prod": "npm run production",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
-  "devDependencies": {},
   "dependencies": {
     "@prettier/plugin-php": "^0.17.3",
     "axios": "^0.25",
@@ -27,7 +26,6 @@
     "resolve-url-loader": "2.3.2",
     "sass": "^1.26.10",
     "sass-loader": "^7.3.1",
-    "tailwindcss": "^0.6.6",
     "tar": "^4.4.15",
     "v-autocomplete": "^1.8.2",
     "vue": "^2.6.11",
