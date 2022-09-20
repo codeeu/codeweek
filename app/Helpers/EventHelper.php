@@ -6,6 +6,7 @@ use App\Country;
 use App\Event;
 use Carbon\Carbon;
 use App\User;
+use Illuminate\Support\Facades\Log;
 
 class EventHelper {
     public static function getCloseEvents($longitude, $latitude, $id = 0) {
@@ -162,5 +163,12 @@ class EventHelper {
             ->get();
 
         return $events;
+    }
+
+    public static function trimGeoposition($latitude, $longitude, $precision = 2){
+
+        $result = round($latitude,$precision, PHP_ROUND_HALF_DOWN) . "," . round($longitude, $precision, PHP_ROUND_HALF_DOWN);
+        Log::info($result);
+        return $result;
     }
 }

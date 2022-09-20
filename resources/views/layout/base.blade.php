@@ -103,7 +103,7 @@
 <script type="text/javascript" src="{{ asset('js/ext/functions.js') }}"></script>
 
 <script src="https://unpkg.com/vue-select@latest"></script>
-
+{{--<script src="https://t003c459d.emailsys2a.net/form/26/4245/574a0c9b7e/popup.js?_g=1663162661" async></script>--}}
 
 @stack('scripts')
 
