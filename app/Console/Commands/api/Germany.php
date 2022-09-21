@@ -4,6 +4,7 @@ namespace App\Console\Commands\api;
 
 
 use App\BadenRSSItem;
+use App\Helpers\ImporterHelper;
 use Illuminate\Console\Command;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Carbon;
@@ -48,18 +49,13 @@ class Germany extends Command
 
         dump("Loading German events");
 
+        $germanCities = ImporterHelper::getGermanCities();
 
-        $this->call("api:hamburg");
-        $this->call("api:baden");
-        $this->call("api:bonn");
-        $this->call("api:berlin");
-        $this->call("api:leipzig");
-        $this->call("api:dresden");
-        $this->call("api:thueringen");
-        $this->call("api:bremen");
-        $this->call("api:muensterland");
-        $this->call("api:nordhessen");
-        $this->call("api:bayern");
+        foreach ($germanCities as $city){
+            $this->call("api:{$city}");
+        }
+
+
 
         dump("Done Loading German events");
 
