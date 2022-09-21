@@ -15,6 +15,9 @@ class ImporterHelper
 {
 
 
+    public static function getGermanCities(){
+        return ['hamburg','baden','bonn','berlin','leipzig','dresden','thueringen','bremen','muensterland','nordhessen','bayern'];
+    }
     //Create or load Technical user based on username
     public static function getTechnicalUser($username)
     {
