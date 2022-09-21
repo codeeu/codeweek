@@ -205,7 +205,22 @@ class SearchEventTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_search_by_tag()
+    public function a_user_can_search_by_codeweek_4_all_tag()
+    {
+
+        $good = create('App\Event', ["codeweek_for_all_participation_code" => "cw22-foobar", "status" => "APPROVED"]);
+        $bad = create('App\Event', ["codeweek_for_all_participation_code" => "cw22-bad", "status" => "APPROVED"]);
+
+
+
+        $this->post('search', ['query' => 'cw22-foobar'])
+            ->assertSee($good->title)
+            ->assertDontSee($bad->title);
+
+    }
+
+    /** @test */
+    public function a_user_can_search_by_codeweek_4_all_tag_in_the_tag_field()
     {
 
         $good = create('App\Event', ["codeweek_for_all_participation_code" => "cw22-foobar", "status" => "APPROVED"]);
