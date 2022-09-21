@@ -23,6 +23,9 @@
                     <a href="https://www.apple.com/uk/everyone-can-code/" target="_blank"><img src="img/partners/apple.png" alt="Apple"></a>
                 </li>
                 <li>
+                    <a href="https://www.amazonfutureengineer.com/" target="_blank"><img src="img/partners/afe.png" alt="Amazon Future Engineer"></a>
+                </li>
+                <li>
                     <a href="http://coderdojo.org" target="_blank"><img src="img/partners/colabora_coderdojo.png" alt="CoderDojo"></a>
                 </li>
                 <li>
