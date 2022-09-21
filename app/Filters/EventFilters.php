@@ -91,7 +91,7 @@ class EventFilters extends Filters
 
         $selectedTag = Tag::where('slug',Str::slug($tag))->first();
 
-        if (empty($selectedTag)) return;
+        if (empty($selectedTag)) return $this->query($tag);
 
         return $this->builder
             ->leftJoin('event_tag', 'events.id', "=", "event_tag.event_id")
