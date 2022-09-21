@@ -4,6 +4,7 @@ namespace App;
 
 use App\Filters\EventFilters;
 use App\Helpers\EventHelper;
+use App\Helpers\ImporterHelper;
 use App\Policies\EventPolicy;
 use Carbon\Carbon;
 use DB;
@@ -94,11 +95,8 @@ class Event extends Model
 
     public function imported()
     {
-        return Str::contains($this->codeweek_for_all_participation_code, [
-            '-hamburg',
-            '-bonn',
-            '-baden'
-        ]);
+        $germanCities = ImporterHelper::getGermanCities();
+        return Str::contains($this->codeweek_for_all_participation_code, $germanCities);
     }
 
     public function picture_path()
