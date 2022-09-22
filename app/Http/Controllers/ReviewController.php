@@ -37,9 +37,9 @@ class ReviewController extends Controller
         if (auth()->user()->isAdmin()) {
 
             if (!is_null($country)) {
-                if ($country == '00') {
-                    return null;
-                }
+//                if ($country == '00') {
+//                    return '00';
+//                }
                 return $country->iso;
             }
 
