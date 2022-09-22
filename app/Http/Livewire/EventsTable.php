@@ -34,7 +34,7 @@ class EventsTable extends DataTableComponent
 
 
         if (empty($this->country) || $this->country == '00') {
-            auth()->user()->setCurrentCountry(null);
+            auth()->user()->setCurrentCountry('00');
             return Event::where('status', 'PENDING')
                 ->select('*');
         } else {
