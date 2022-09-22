@@ -68,13 +68,15 @@ class EventsTable extends DataTableComponent
 //                ->sortable(),
 //            Column::make("Country iso", "country_iso")
 //                ->sortable(),
+
+            LinkColumn::make('Title')
+                ->title(fn($row) => $row->title)
+                ->location(fn($row) => route('view_event', [$row, $row->slug])),
             Column::make('Description')
                 ->format(
                     fn($value, $row, Column $column) => Str::of($row->description)->toHtmlString()
                 ),
-            LinkColumn::make('Title')
-                ->title(fn($row) => $row->title)
-                ->location(fn($row) => route('view_event', [$row, $row->slug])),
+
 //            Column::make("Slug", "slug")
 //                ->sortable(),
 
