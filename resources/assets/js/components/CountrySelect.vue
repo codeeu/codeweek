@@ -3,9 +3,9 @@
 
     <select v-model="selected_country" class="codeweek-input-select" id="id_country" name="country_iso"
             @change="newCountry()">
-      <option value=""> All countries</option>
-      <option value="">---------------</option>
-      <option v-for="country in countries" v-bind:value="country.iso">{{ $t('countries.'+country.name) }} ({{ country.iso }})</option>
+      <option value="00"> All countries</option>
+      <option disabled value="">---------------</option>
+      <option v-for="country in countries" v-bind:value="country.iso">{{ $t('countries.'+country.name) }} ({{ country.total }})</option>
     </select>
   </div>
 </template>
@@ -23,7 +23,6 @@ export default {
   },
   methods: {
     newCountry() {
-      console.log(this.target);
       window.location.href = '/' + this.target + '/' + this.selected_country;
     }
   }
