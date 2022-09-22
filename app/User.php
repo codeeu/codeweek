@@ -422,8 +422,6 @@ class User extends Authenticatable
     public function getEventsToReviewCount()
     {
 
-        Log::info($this->current_country);
-
         if (auth()->user()->isAmbassador()) {
             return EventHelper::getPendingEventsCount($this->country_iso);
         }
@@ -440,8 +438,6 @@ class User extends Authenticatable
 
     public function getNextPendingEvent(Event $event)
     {
-
-        Log::info($this->current_country);
 
         if (auth()->user()->isAmbassador()) {
             return EventHelper::getNextPendingEvent($event, $this->country_iso);
