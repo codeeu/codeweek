@@ -10,6 +10,7 @@ use Rappasoft\LaravelLivewireTables\Views\Column;
 use App\Event;
 use Rappasoft\LaravelLivewireTables\Views\Columns\LinkColumn;
 use Rappasoft\LaravelLivewireTables\Views\Filters\DateFilter;
+use Str;
 
 class EventsTable extends DataTableComponent
 {
@@ -67,14 +68,15 @@ class EventsTable extends DataTableComponent
 //                ->sortable(),
 //            Column::make("Country iso", "country_iso")
 //                ->sortable(),
-//            Column::make('Description')
-//                ->format(
-//                    fn($value, $row, Column $column) => Str::$row->description
-//                )
-//                ->html(),
+
             LinkColumn::make('Title')
                 ->title(fn($row) => $row->title)
                 ->location(fn($row) => route('view_event', [$row, $row->slug])),
+            Column::make('Description')
+                ->format(
+                    fn($value, $row, Column $column) => Str::of($row->description)->toHtmlString()
+                ),
+
 //            Column::make("Slug", "slug")
 //                ->sortable(),
 
