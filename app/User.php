@@ -4,6 +4,7 @@ namespace App;
 
 use App\Achievements\Achievement;
 use App\Helpers\EventHelper;
+use Attribute;
 use Carbon\Carbon;
 use DB;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -96,7 +97,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'firstname', 'lastname', 'username', 'avatar_path', 'email', 'password', 'bio', 'twitter', 'website', 'country_iso', 'privacy', 'email_display', 'receive_emails','magic_key'
+        'firstname', 'lastname', 'username', 'avatar_path', 'email', 'password', 'bio', 'twitter', 'website', 'country_iso', 'privacy', 'email_display', 'receive_emails', 'magic_key','current_country'
     ];
 
     /**
@@ -105,7 +106,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token','magic_key'
+        'password', 'remember_token', 'magic_key'
     ];
 
     protected $appends = ['fullName'];
@@ -310,7 +311,7 @@ class User extends Authenticatable
      */
     public function getAvatarPathAttribute($avatar)
     {
-        if (is_null($avatar)) $avatar = 'avatars/default_avatar.png' ;
+        if (is_null($avatar)) $avatar = 'avatars/default_avatar.png';
         return Storage::disk('s3')->url($avatar);
 
     }
@@ -407,7 +408,7 @@ class User extends Authenticatable
     public function generateMagicKey()
     {
         $this->update([
-            'magic_key' =>random_int(1000000,2000000) * random_int(1000,2000)
+            'magic_key' => random_int(1000000, 2000000) * random_int(1000, 2000)
         ]);
     }
 
@@ -420,11 +421,17 @@ class User extends Authenticatable
 
     public function getEventsToReviewCount()
     {
-        if (auth()->user()->isAmbassador()){
+
+        Log::info($this->current_country);
+
+        if (auth()->user()->isAmbassador()) {
             return EventHelper::getPendingEventsCount($this->country_iso);
         }
 
-        if (auth()->user()->isAdmin()){
+        if (auth()->user()->isAdmin()) {
+            if (!is_null($this->current_country)) {
+                return EventHelper::getPendingEventsCount($this->current_country);
+            }
             return EventHelper::getPendingEventsCount();
         }
 
@@ -433,15 +440,27 @@ class User extends Authenticatable
 
     public function getNextPendingEvent(Event $event)
     {
-        if (auth()->user()->isAmbassador()){
+
+        Log::info($this->current_country);
+
+        if (auth()->user()->isAmbassador()) {
             return EventHelper::getNextPendingEvent($event, $this->country_iso);
         }
 
-        if (auth()->user()->isAdmin()){
+        if (auth()->user()->isAdmin()) {
+            if (!is_null($this->current_country)) {
+                return EventHelper::getNextPendingEvent($event, $this->current_country);
+            }
             return EventHelper::getNextPendingEvent($event);
         }
 
         return null;
     }
+
+    public function setCurrentCountry($country)
+    {
+        $this->update(['current_country' => $country]);
+    }
+
 
 }
