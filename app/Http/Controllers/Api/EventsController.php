@@ -14,18 +14,28 @@ use App\Http\Resources\Event as EventResource;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Log;
 
-class EventsController extends Controller {
+class EventsController extends Controller
+{
     protected $eventTransformer;
 
     /**
      * EventController constructor.
      * @param $eventTransformer
      */
-    public function __construct(EventTransformer $eventTransformer) {
+    public function __construct(EventTransformer $eventTransformer)
+    {
         $this->eventTransformer = $eventTransformer;
     }
 
-    public function list(Request $request) {
+    public function event(Event $event)
+    {
+
+        return new \App\Http\Resources\EventResource($event);
+
+    }
+
+    public function list(Request $request)
+    {
         $year = $request->input('year')
             ? $request->input('year')
             : Carbon::now()->year;
@@ -57,7 +67,8 @@ class EventsController extends Controller {
         return $events;
     }
 
-    public function detail(Request $request) {
+    public function detail(Request $request)
+    {
         $event_id = $request->input('id');
 
         $event = Event::where('id', $event_id)->first();
@@ -70,7 +81,8 @@ class EventsController extends Controller {
         return new EventResource($event);
     }
 
-    public function closest(Request $request) {
+    public function closest(Request $request)
+    {
         $event_id = $request->input('id');
 
         $event = Event::where('id', $event_id)->first();
@@ -80,14 +92,16 @@ class EventsController extends Controller {
         //return new EventResource($event);
     }
 
-    public function eeducation() {
+    public function eeducation()
+    {
         return Importer::where('website', '=', 'eeducation')
             ->with('event')
             ->with('event.owner')
             ->get();
     }
 
-    public function germany(Request $request){
+    public function germany(Request $request)
+    {
         $validated = $request->validate([
             'year' => 'required|numeric',
         ]);
@@ -102,7 +116,8 @@ class EventsController extends Controller {
         return $collection;
     }
 
-    public function geobox(Request $request) {
+    public function geobox(Request $request)
+    {
         $validated = $request->validate([
             'lat1' => 'required|numeric',
             'long1' => 'required|numeric',
@@ -121,7 +136,7 @@ class EventsController extends Controller {
         }
 
         if (isset($validated['year'])) {
-            $year = (int) $validated['year'];
+            $year = (int)$validated['year'];
         } else {
             $year = Carbon::now()->year;
         }
