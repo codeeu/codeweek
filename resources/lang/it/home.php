@@ -15,7 +15,7 @@ return [
 
     'get_started_title' => 'Inizia',
     'get_started_text' =>
-        'Non sai come iniziare? Dai uno sguardo alla <a href="/guide">pagina Informazioni</a> e scarica i nostri<a href="/toolkits">toolkit per gli organizzatori</a>, per prepararti e spargere la voce.',
+        'Non sai come iniziare? Dai uno sguardo alla <a href="/guide">pagina Informazioni</a> e scarica i nostri <a href="/toolkits">toolkit per gli organizzatori</a>, per prepararti e spargere la voce.',
     'access_resources_title' => 'Accedi alle risorse e alla formazione',
     'access_resources_text' =>
         'Se non sai come organizzare un’attività, visita la nostra <a href="/resources/teach">pagina delle risorse didattiche</a> e i materiali di <a href="/training"> formazione con pillole d’apprendimento</a> per orientarti e seguire programmi di lezioni personalizzati.'
