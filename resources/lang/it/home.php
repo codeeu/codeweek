@@ -10,7 +10,7 @@ return [
     'school_banner_text' => 'Insegni?',
     'school_banner_text2' => 'Clicca qui per scoprire come partecipare!',
     'organize_activity_title' => 'Partecipa a un’attività oppure organizzala',
-    'organize_activity_text' => 'Invitiamo tutti e tutte a organizzare  un’attività o a parteciparvi. Non dovrai far altro che scegliere un argomento e un pubblico di destinazione e <a href="/add">aggiungere la tua attività</a> alla <a href="/events">mappa</a> o cercare gli eventi nella tua zona.',
+    'organize_activity_text' => 'Invitiamo tutti e tutte a organizzare un’attività o a parteciparvi. Non dovrai far altro che scegliere un argomento e un pubblico di destinazione e <a href="/add">aggiungere la tua attività</a> alla <a href="/events">mappa</a> o cercare gli eventi nella tua zona.',
 
 
     'get_started_title' => 'Inizia',
