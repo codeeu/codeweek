@@ -263,4 +263,23 @@ class EventsAPITest extends TestCase
         $this->assertFalse($data[0]['imported_from_german_feeds']);
         $this->assertTrue($data[1]['imported_from_german_feeds']);
     }
+
+    /** @test */
+    public function it_should_get_one_event_details()
+    {
+
+        $event = create('App\Event', [
+            'id' => 1456,
+            'status' => 'APPROVED',
+            'title' => 'foobar'
+        ]);
+
+        $response = $this->getJson('/api/event-detail/1456');
+
+        $this->assertEquals($response['data']['title'], $event->title);
+
+    }
+
+
+
 }
