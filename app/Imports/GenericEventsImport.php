@@ -67,8 +67,8 @@ class GenericEventsImport extends DefaultValueBinder implements
             'start_date' => $this->parseDate($row['start_date']),
             'end_date' => $this->parseDate($row['end_date']),
             'geoposition' => $row['longitude'] . ',' . $row['latitude'],
-            'longitude' => $row['latitude'],
-            'latitude' => $row['longitude'],
+            'longitude' => $row['longitude'],
+            'latitude' => $row['latitude'],
             'language' => strtolower($row['language'])
         ]);
 
