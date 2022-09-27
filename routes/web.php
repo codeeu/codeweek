@@ -454,8 +454,7 @@ Route::group(['middleware' => ['role:super admin']], function () {
 });
 
 Route::group(['middleware' => ['role:super admin|ambassador']], function () {
-//    Route::get('/pending', 'PendingEventsController@index')->name('pending');
-    Route::get('/pending', 'ReviewController@index')->name('pending');
+    Route::get('/pending', 'PendingEventsController@index')->name('pending');
     Route::get('/review', 'ReviewController@index')->name('review');
 
     Route::get('/online/list', 'OnlineEventsController@list')->name(
