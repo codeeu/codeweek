@@ -132,6 +132,14 @@
                         <div class="author">@lang('training.lessons.16.author')</div>
                     </a>
                 </div>
+
+                <div class="codeweek-card-grid">
+                    <a href="/training/feel-the-code">
+                        <img src="/img/learning/feel-the-code.jpg">
+                        <div class="title">@lang('training.lessons.17.title')</div>
+                        <div class="author">@lang('training.lessons.17.author')</div>
+                    </a>
+                </div>
             </section>
 
             <section class="codeweek-content-wrapper-inside">
@@ -142,29 +150,29 @@
                     @lang('mooc.intro')
                 </p>
 
-                <h4>@lang('mooc.icebreaker.title')</h4>
-                <p>
-                    @lang('mooc.icebreaker.text.0')
-                    <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Icebreaker+2020/about">@lang('mooc.icebreaker.text.1')</a>
-                    @lang('mooc.icebreaker.text.2')
-                </p>
+{{--                <h4>@lang('mooc.icebreaker.title')</h4>--}}
+{{--                <p>--}}
+{{--                    @lang('mooc.icebreaker.text.0')--}}
+{{--                    <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Icebreaker+2020/about">@lang('mooc.icebreaker.text.1')</a>--}}
+{{--                    @lang('mooc.icebreaker.text.2')--}}
+{{--                </p>--}}
 
-                <p> @lang('mooc.icebreaker.text.3')
-                    <br/><br/>
-                    <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Icebreaker+2020/about">{{Illuminate\Support\Str::replaceFirst('2019','2020',__('mooc.icebreaker.check-out'))}}</a><br/><br/>
-
-
-                </p>
-
-                <h4>@lang('mooc.deep-dive.title')</h4>
-                <p>@lang('mooc.deep-dive.text.0') <a
-                            href="https://codeweek.eu/resources/teach">@lang('mooc.deep-dive.text.1')</a> @lang('mooc.deep-dive.text.2')
-                </p>
+{{--                <p> @lang('mooc.icebreaker.text.3')--}}
+{{--                    <br/><br/>--}}
+{{--                    <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Icebreaker+2020/about">{{Illuminate\Support\Str::replaceFirst('2019','2020',__('mooc.icebreaker.check-out'))}}</a><br/><br/>--}}
 
 
-                <p>
-                    <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+CWDive+2020/about">{{Illuminate\Support\Str::replaceFirst('2019','2020',__('mooc.deep-dive.course-link'))}}</a>
-                </p>
+{{--                </p>--}}
+
+{{--                <h4>@lang('mooc.deep-dive.title')</h4>--}}
+{{--                <p>@lang('mooc.deep-dive.text.0') <a--}}
+{{--                            href="https://codeweek.eu/resources/teach">@lang('mooc.deep-dive.text.1')</a> @lang('mooc.deep-dive.text.2')--}}
+{{--                </p>--}}
+
+
+{{--                <p>--}}
+{{--                    <a href="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+CWDive+2020/about">{{Illuminate\Support\Str::replaceFirst('2019','2020',__('mooc.deep-dive.course-link'))}}</a>--}}
+{{--                </p>--}}
 
                 <p>@lang('mooc.social-media.0') <a
                             href="https://twitter.com/CodeWeekEU">@lang('mooc.social-media.1')</a> @lang('mooc.social-media.2')

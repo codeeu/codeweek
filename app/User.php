@@ -3,6 +3,8 @@
 namespace App;
 
 use App\Achievements\Achievement;
+use App\Helpers\EventHelper;
+use Attribute;
 use Carbon\Carbon;
 use DB;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -95,7 +97,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'firstname', 'lastname', 'username', 'avatar_path', 'email', 'password', 'bio', 'twitter', 'website', 'country_iso', 'privacy', 'email_display', 'receive_emails'
+        'firstname', 'lastname', 'username', 'avatar_path', 'email', 'password', 'bio', 'twitter', 'website', 'country_iso', 'privacy', 'email_display', 'receive_emails', 'magic_key','current_country'
     ];
 
     /**
@@ -104,7 +106,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token', 'magic_key'
     ];
 
     protected $appends = ['fullName'];
@@ -230,6 +232,11 @@ class User extends Authenticatable
         return $this->belongsTo(City::class);
     }
 
+    public function locations()
+    {
+        return $this->hasMany(Location::class);
+    }
+
     public function scopeFilter($query, UserFilters $filters)
     {
         return $filters->apply($query);
@@ -304,7 +311,7 @@ class User extends Authenticatable
      */
     public function getAvatarPathAttribute($avatar)
     {
-        if (is_null($avatar)) $avatar = 'avatars/default_avatar.png' ;
+        if (is_null($avatar)) $avatar = 'avatars/default_avatar.png';
         return Storage::disk('s3')->url($avatar);
 
     }
@@ -396,6 +403,59 @@ class User extends Authenticatable
 
 
         return $query->count() * 2;
+    }
+
+    public function generateMagicKey()
+    {
+        $this->update([
+            'magic_key' => random_int(1000000, 2000000) * random_int(1000, 2000)
+        ]);
+    }
+
+    public function unsubscribe()
+    {
+        $this->update([
+            'receive_emails' => false
+        ]);
+    }
+
+    public function getEventsToReviewCount()
+    {
+
+        if (auth()->user()->isAmbassador()) {
+            return EventHelper::getPendingEventsCount($this->country_iso);
+        }
+
+        if (auth()->user()->isAdmin()) {
+            if (!is_null($this->current_country)) {
+                return EventHelper::getPendingEventsCount($this->current_country);
+            }
+            return EventHelper::getPendingEventsCount();
+        }
+
+        return null;
+    }
+
+    public function getNextPendingEvent(Event $event)
+    {
+
+        if (auth()->user()->isAmbassador()) {
+            return EventHelper::getNextPendingEvent($event, $this->country_iso);
+        }
+
+        if (auth()->user()->isAdmin()) {
+            if (!is_null($this->current_country)) {
+                return EventHelper::getNextPendingEvent($event, $this->current_country);
+            }
+            return EventHelper::getNextPendingEvent($event);
+        }
+
+        return null;
+    }
+
+    public function setCurrentCountry($country)
+    {
+        $this->update(['current_country' => $country]);
     }
 
 

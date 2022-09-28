@@ -35,16 +35,16 @@ class CountriesQuery
 //    }
 
     public static function withPendingEvents(){
-        $isos = DB::table('events')
-            ->select(['country_iso'])
+        $countries = DB::table('events')
+            ->select('events.country_iso as iso','countries.name', DB::raw('count(id) as total'))
+            ->join('countries','events.country_iso','=','countries.iso')
             ->where('status',"=","PENDING")
             ->whereNull('deleted_at')
             ->groupBy('country_iso')
-            ->get()
-            ->pluck('country_iso')
-        ;
+            ->orderBy('countries.name')
+            ->get();
 
-        $countries = Country::findMany($isos)->sortBy('name');
+
         return $countries;
     }
 

@@ -4,16 +4,17 @@ namespace App;
 
 use App\Filters\EventFilters;
 use App\Helpers\EventHelper;
+use App\Helpers\ImporterHelper;
 use App\Policies\EventPolicy;
 use Carbon\Carbon;
 use DB;
 use Illuminate\Database\Eloquent\Model;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Str;
-use Log;
 use Spatie\Activitylog\LogOptions;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Laravel\Nova\Actions\Actionable;
@@ -59,7 +60,8 @@ class Event extends Model
         'last_report_notification_sent_at',
         'activity_type',
         'picture_detail',
-        'language'
+        'language',
+        'location_id'
     ];
 
 //    protected $policies = [
@@ -93,11 +95,8 @@ class Event extends Model
 
     public function imported()
     {
-        return Str::contains($this->codeweek_for_all_participation_code, [
-            '-hamburg',
-            '-bonn',
-            '-baden'
-        ]);
+        $germanCities = ImporterHelper::getGermanCities();
+        return Str::contains($this->codeweek_for_all_participation_code, $germanCities);
     }
 
     public function picture_path()
@@ -129,6 +128,11 @@ class Event extends Model
     public function owner()
     {
         return $this->belongsTo('App\User', 'creator_id');
+    }
+
+    public function extractedLocation()
+    {
+        return $this->belongsTo('App\Location', 'location_id');
     }
 
     public function audiences()
@@ -343,4 +347,55 @@ class Event extends Model
         return LogOptions::defaults()
             ->setDescriptionForEvent(fn(string $eventName) => "Event {$this->id} has been {$eventName}");
     }
+
+    public function getTrimmedGeopositionAttribute()
+    {
+        return EventHelper::trimGeoposition($this->latitude, $this->longitude);
+    }
+
+    public function createLocation()
+    {
+
+        Log::info($this->trimmedGeoposition);
+        Log::info($this->creator_id);
+
+        try {
+
+//            $location = Location::where([
+//                'trimmed_geoposition' => $this->trimmedGeoposition,
+//                'user_id' => $this->creator_id,
+//            ])->first();
+//
+////            dd($location);
+
+            $location = Location::firstOrCreate(
+                [
+                    'trimmed_geoposition' => $this->trimmedGeoposition,
+                    'user_id' => $this->creator_id,
+                ],
+                [
+                    'geoposition' => $this->geoposition,
+                    'latitude' => $this->latitude,
+                    'longitude' => $this->longitude,
+                    'name' => $this->organizer,
+                    'location' => $this->location,
+                    'country_iso' => $this->country_iso,
+                    'event_id' => $this->id,
+                    'activity_type' => $this->activity_type,
+                    'organizer_type' => $this->organizer_type
+                ]);
+
+//            dd($location->id);
+
+//            Log::info($location->id);
+            $this->update([
+                'location_id' => $location->id
+            ]);
+        } catch (\Exception $exception) {
+            //Log::info($location);
+            \Illuminate\Support\Facades\Log::info('unique constraint triggered');
+        }
+    }
+
+
 }

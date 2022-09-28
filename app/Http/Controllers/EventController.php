@@ -8,6 +8,7 @@ use App\Event;
 use App\Filters\UserFilters;
 use App\Helpers\EventHelper;
 use App\Http\Requests\EventRequest;
+use App\Location;
 use App\Queries\EventsQuery;
 use App\Queries\PendingEventsQuery;
 use App\ResourceLanguage;
@@ -85,14 +86,26 @@ class EventController extends Controller {
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
      */
     public function create(Request $request) {
+
+        //Redirect if we have locations
         $countries = \App\Country::all()->sortBy('name');
 
         $themes = \App\Theme::orderBy('order', 'asc')->get();
 
         $languages = Arr::sort(Lang::get('base.languages'));
+
+        if($request->get('location')){
+           $location = auth()->user()->locations()->where('id', $request->get('location'))->firstOrFail();
+           return view('event.add', compact(['countries', 'themes', 'languages', 'location']));
+        }
+
+        if (!auth()->user()->locations->isEmpty()){
+            if (!$request->get('skip')){
+                return redirect(route('activities-locations'));
+            }
+        }
 
         return view('event.add', compact(['countries', 'themes', 'languages']));
     }
@@ -119,6 +132,8 @@ class EventController extends Controller {
         $event = EventsQuery::store($request);
 
         $event->notifyAmbassadors();
+
+        $event->createLocation();
 
         Mail::to(auth()->user()->email)->queue(
             new \App\Mail\EventRegistered($event, auth()->user())

@@ -2,9 +2,11 @@
 
 namespace App\Filters;
 
+use App\Tag;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class EventFilters extends Filters
 {
@@ -13,7 +15,7 @@ class EventFilters extends Filters
      *
      * @var array
      */
-    protected $filters = ['countries', 'query', 'themes', 'audiences', 'types', 'year', 'creator_id'];
+    protected $filters = ['countries', 'query', 'themes', 'audiences', 'types', 'year', 'creator_id', 'tag'];
 
     public function __construct(Request $request)
     {
@@ -78,6 +80,22 @@ class EventFilters extends Filters
         return $this->builder
             ->leftJoin('event_theme', 'events.id', "=", "event_theme.event_id")
             ->whereIn('event_theme.theme_id', $themesIds);
+
+
+    }
+
+    protected function tag($tag)
+    {
+
+        if (empty($tag)) return;
+
+        $selectedTag = Tag::where('slug',Str::slug($tag))->first();
+
+        if (empty($selectedTag)) return $this->query($tag);
+
+        return $this->builder
+            ->leftJoin('event_tag', 'events.id', "=", "event_tag.event_id")
+            ->where('event_tag.tag_id', $selectedTag->id);
 
 
     }

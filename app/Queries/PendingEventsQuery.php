@@ -31,7 +31,7 @@ class PendingEventsQuery
 
             $query->Where('status', 'like', 'PENDING');
 
-        })->orderBy('created_at', 'desc')->paginate(6);
+        })->orderBy('created_at', 'desc')->paginate(30);
 
     }
 }

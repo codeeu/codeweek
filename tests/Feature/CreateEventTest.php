@@ -58,6 +58,30 @@ class CreateEventTest extends TestCase
     }
 
     /** @test */
+    public function address_should_be_stored_in_user_address_book()
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+        $this->withoutExceptionHandling();
+        $this->signIn();
+
+        $event = make('App\Event');
+        create('App\Audience',[] ,3);
+        create('App\Theme', [],3);
+
+        $event->theme = "1";
+        $event->tags = "tag:foo,tag:bar";
+        $event->audience = "2, 3";
+        $event->privacy = true;
+
+        $event->language = "nl";
+        $this->assertCount(0, auth()->user()->locations);
+
+        $this->post('/events', $event->toArray());
+
+        $this->assertCount(1, auth()->user()->fresh()->locations);
+    }
+
+    /** @test */
     public function an_authenticated_user_can_create_events_with_existing_codeweek4all_code()
     {
         $this->signIn();
@@ -130,6 +154,8 @@ class CreateEventTest extends TestCase
 
 
     }
+
+
 
     /** @test */
     public function an_authenticated_user_can_create_events_without_geoposition()

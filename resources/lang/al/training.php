@@ -273,18 +273,33 @@ Në këtë video, ekipi i Code Week do t’ju tregojë disa aktivitete praktike,
             "text" => [
                 "A kanë mësuar nxënësit tuaj tashmë një gjuhë vizuale programimi, por nuk ndihen ende gati të shkojnë më thellë në një gjuhë programimi me bazë teksti? Atëherë kjo pjesë mësimore është pikërisht për ju dhe nxënësit tuaj sepse do t’i ndihmojë ata të kapërcejnë hendekun midis një gjuhe vizuale programimi dhe një të bazuar në tekst. Mësimi <strong>Tregimi i historive me Hedy</strong> përbëhet nga tre plane mësimore që përdorin Hedy – një gjuhë graduale programimi për t’u mësuar fëmijëve programimin.",
 
-        "Hedy është krijuar për fëmijët që duan të fillojnë me gjuhët tekstuale të programimit, por për të cilët fillimi me Python mund të jetë ende shumë kompleks. Gjuhët graduale përdorin nivele të ndryshme gjuhësore, ku çdo nivel shton koncepte të reja dhe kompleksitet sintaksor. Në fund të sekuencës së nivelit të Hedy, nxënësit zotërojnë një nëngrup të Python të vlefshëm nga ana sintaksore.",
+                "Hedy është krijuar për fëmijët që duan të fillojnë me gjuhët tekstuale të programimit, por për të cilët fillimi me Python mund të jetë ende shumë kompleks. Gjuhët graduale përdorin nivele të ndryshme gjuhësore, ku çdo nivel shton koncepte të reja dhe kompleksitet sintaksor. Në fund të sekuencës së nivelit të Hedy, nxënësit zotërojnë një nëngrup të Python të vlefshëm nga ana sintaksore.",
 
-        "Në këtë mësim do të gjeni aktivitete frymëzuese dhe tërheqëse për t’i ndihmuar nxënësit tuaj të përdorin në mënyrë efikase gjuhët e programimit të bazuara në tekst. Duke krijuar historitë e veta interaktive, ata gradualisht do të mësojnë programimin, pa pasur nevojë ta mësojnë gjithçka menjëherë. Në planin mësimor për shkollën fillore, nxënësit njihen me konceptet bazë të programimit. Plani mësimor për ciklin e mesëm të ulët prezanton koncepte të mëtejshme programimi, ndërsa plani mësimor për ciklin e mesëm të lartë u mundëson nxënësve të programojnë histori dhe aktivitete më komplekse.",
+                "Në këtë mësim do të gjeni aktivitete frymëzuese dhe tërheqëse për t’i ndihmuar nxënësit tuaj të përdorin në mënyrë efikase gjuhët e programimit të bazuara në tekst. Duke krijuar historitë e veta interaktive, ata gradualisht do të mësojnë programimin, pa pasur nevojë ta mësojnë gjithçka menjëherë. Në planin mësimor për shkollën fillore, nxënësit njihen me konceptet bazë të programimit. Plani mësimor për ciklin e mesëm të ulët prezanton koncepte të mëtejshme programimi, ndërsa plani mësimor për ciklin e mesëm të lartë u mundëson nxënësve të programojnë histori dhe aktivitete më komplekse.",
 
-        "Shikoni historinë interaktive më poshtë për të parë se si lexuesit mund të marrin pjesë në histori dhe se si ajo nxit angazhimin e tyre aktiv."
-    ],
-    "activities" => [
-        "1" => "Krijoni historinë tuaj interaktive me Hedy për nxënësit e shkollës fillore",
-        "2" => "Krijoni historinë tuaj interaktive me Hedy për nxënësit e ciklit të mesëm të ulët",
-        "3" => "Krijoni historinë tuaj interaktive me Hedy për nxënësit e ciklit të mesëm",
-    ]
-],
+                "Shikoni historinë interaktive më poshtë për të parë se si lexuesit mund të marrin pjesë në histori dhe se si ajo nxit angazhimin e tyre aktiv."
+            ],
+            "activities" => [
+                "1" => "Krijoni historinë tuaj interaktive me Hedy për nxënësit e shkollës fillore",
+                "2" => "Krijoni historinë tuaj interaktive me Hedy për nxënësit e ciklit të mesëm të ulët",
+                "3" => "Krijoni historinë tuaj interaktive me Hedy për nxënësit e ciklit të mesëm",
+            ]
+        ],
+        "17" => [
+            "title" => "Ndieni kodin",
+            "author" => "nga Alenka Miljević ",
+            "text" => [
+                "Mirëqenia sociale dhe emocionale është aftësia për të qenë rezistent, për të ditur si të menaxhoni emocionet tuaja dhe si t’u përgjigjeni emocioneve të të tjerëve, të zhvilloni marrëdhënie domethënëse me të tjerët, të gjeneroni emocione që çojnë në ndjesi të mira dhe dhe të krijoni rrjetin tuaj të mbështetjes emocionale. Aftësitë sociale dhe emocionale që të rinjtë mësojnë në shkollë i ndihmojnë ata të krijojnë rezistencë dhe të krijojnë mënyrën se si ata do të menaxhojnë shëndetin e tyre fizik dhe mendor gjatë gjithë jetës së tyre. (Këshilli i Evropës)",
+                "Mësimi Ndieni kodin do t’ju japë mundësinë të nxisni mirëqenien sociale dhe emocionale të nxënësve tuaj duke njohur, shpjeguar, kuptuar dhe duke iu përgjigjur ndjenjave dhe emocioneve pozitive dhe negative për të ndërtuar empati dhe rezistencë.  Në këtë mësim do të gjeni aktivitete frymëzuese dhe tërheqëse për t’i ndihmuar nxënësit tuaj të zhvillojnë aftësi për t’u përballur me emocionet e ndryshme përmes kodimit. Nxënësit tuaj do të mësojnë se si të shprehin ndjenjat e tyre dhe se si të reagojnë ndaj emocioneve të bashkëmoshatarëve të tyre me ndihmën e një roboti Bee-bot.",
+                "Mësimi Ndieni kodin përbëhet nga tri plane mësimore që përdorin një robot edukativ për të krijuar aktivitete që i inkurajojnë nxënësit të bisedojnë rreth emocioneve dhe të zhvillojnë empati. Në planin mësimor për shkollën fillore, nxënësit e programojnë Bee-botin që të bisedojë rreth emocioneve të tilla si trishtimi, lumturia, frika dhe zemërimi dhe zbulojnë arsyet pse ata dhe bashkëmoshatarët e tyre i ndiejnë këto emocione. Plani mësimor për ciklin e mesëm të ulët i inkurajon nxënësit që të programojnë një Bee-bot, të njohin ndjenjat e tyre dhe të bashkëmoshatarëve të tyre, të kuptojnë se çfarë i ka shkaktuar ata dhe se si të reagojnë ndaj tyre. Plani mësimor për ciklin e mesëm të lartë u jep mundësinë nxënësve të nagivojnë një Bee-bot dhe të krijojnë histori rreth ndjenjave, rezistencës dhe empatisë.",
+                "Nëse nuk keni në klasën tuaj një robot edukativ, ky Mësim do t’ju japë ide për aktivitete jashtë linje që nxisin zhvillimin e aftësive sociale dhe emocionale. Përmbajtja interaktive më poshtë jep një përmbledhje të aktiviteteve që mund të bëni në klasën tuaj:"
+            ],
+            "activities" => [
+                "1" => "Kodoni - Ndieni - Mësoni për nxënësit e shkollës fillore",
+                "2" => "Zemra ime nuk është prej guri për nxënësit e ciklit të mesëm të ulët",
+                "3" => "Më kodoni sipas emocioneve për nxënësit e ciklit të mesëm të lartë",
+            ]
+        ],
 
 
     ],

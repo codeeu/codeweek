@@ -28,6 +28,11 @@
                            v-on:keyup.13="onSubmit()" :placeholder="$t('search.search_placeholder')">
                 </div>
 
+              <div class="codeweek-search-text">
+                    <input type="text" v-model="tag"
+                           v-on:keyup.13="onSubmit()" :placeholder="$t('event.tags')">
+                </div>
+
                 <div class="right-fields">
                     <div class="year-selection">
                         <multiselect v-model="year" :options="years" :multiple="false" :close-on-select="true"
@@ -126,6 +131,7 @@
             prpSelectedCountry: Array,
             prpSelectedYear: Number,
             name: String,
+            prpTag: String,
             countrieslist: Array,
             audienceslist: Array,
             themeslist: Array,
@@ -146,7 +152,8 @@
                 pagination: {
                     'current_page': 1
                 },
-                sortedCountries: []
+                sortedCountries: [],
+                tag: this.prpTag
             }
         },
         methods: {

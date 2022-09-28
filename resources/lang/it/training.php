@@ -288,6 +288,21 @@ Con Python gli studenti possono creare quiz su eventi storici, risolvere problem
                 "3" => "Dai vita alla tua storia interattiva con Hedy per studenti e studentesse della scuola secondaria di secondo grado",
             ]
         ],
+        "17" => [
+            "title" => "Percepire la programmazione",
+            "author" => "a cura di Alenka Miljević",
+            "text" => [
+                "Il benessere sociale ed emotivo consiste nella capacità di dimostrare resilienza, sapere come gestire le proprie emozioni, rispondere alle emozioni delle altre persone, intrecciare relazioni importanti con altre persone, generare emozioni che fanno provare sensazioni positive e mettere in piedi la propria rete di sostegno emotivo. Le competenze sociali ed emotive che i giovani apprendono a scuola aiuta loro a sviluppare la resilienza e a stabilire il modo in cui gestiranno la propria salute fisica e mentale nel corso della propria vita. (Consiglio d’Europa)",
+                "La pillola di apprendimento «Percepire la programmazione» ti permetterà di promuovere il benessere sociale ed emotivo della classe tramite il riconoscimento, la spiegazione, la comprensione e la risposta a sensazioni ed emozioni positive e negative al fine di sviluppare l’empatia e la resilienza.  Nel corso di questa pillola di apprendimento avrai modo di trovare attività stimolanti e coinvolgenti per aiutare studenti e studentesse a sviluppare le competenze per gestire emozioni diverse attraverso la programmazione. La tua classe apprenderà come esprimere i propri sentimenti e reagire alle emozioni di compagni e compagne di classe con l’aiuto del robot Bee-Bot.",
+                "La pillola di apprendimento «Percepire la programmazione» è costituita da tre piani di lezione che si avvalgono del robot didattico Bee-Bot per creare attività che incoraggiano studenti e studentesse a parlare delle emozioni e a potenziare l’empatia. Nel piano di lezione per la scuola primaria, alunni e alunne programmano un Bee-Bot per parlare di emozioni, quali tristezza, felicità, paura e rabbia e scoprire i motivi che provocano in loro queste emozioni. Il piano di lezione per la scuola secondaria di primo grado incoraggia studenti e studentesse a programmare un Bee-Bot, a riconoscere le proprie emozioni e quelle di compagni e compagne di classe e a comprendere cosa le ha provocate o come rispondervi. Il piano di lezione per la scuola secondaria di secondo grado permette a studenti e studentesse di pilotare un Bee-Bot e di inventare storie che trattano di sentimenti, resilienza ed empatia.",
+                "Se non disponi di un robot didattico, questa pillola di apprendimento ti fornirà alcune idee per svolgere attività unplugged a favore dello sviluppo delle competenze sociali ed emotive. La storia interattiva di seguito offre una breve panoramica delle attività che è possibile svolgere in aula:"
+            ],
+            "activities" => [
+                "1" => "programma, senti, impara per classi della scuola primaria;",
+                "2" => "il mio cuore non è fatto di pietra per classi della scuola secondaria di primo grado;",
+                "3" => "programmami in base al tuo umore per classi della scuola secondaria di secondo grado.",
+            ]
+        ],
 
 
     ],

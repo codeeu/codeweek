@@ -18,7 +18,6 @@ class SearchEventTest extends TestCase
         parent::setUp();
         create('App\Country', [], 20);
 
-
     }
 
 
@@ -175,6 +174,8 @@ class SearchEventTest extends TestCase
 
     }
 
+
+
     /** @test */
     public function a_user_can_search_by_audience()
     {
@@ -200,6 +201,36 @@ class SearchEventTest extends TestCase
             ->assertSee($eventWithAudience2->title)
             ->assertDontSee($eventWithAudience3->title)
             ->assertDontSee($eventWithoutAudience->title);
+
+    }
+
+    /** @test */
+    public function a_user_can_search_by_codeweek_4_all_tag()
+    {
+
+        $good = create('App\Event', ["codeweek_for_all_participation_code" => "cw22-foobar", "status" => "APPROVED"]);
+        $bad = create('App\Event', ["codeweek_for_all_participation_code" => "cw22-bad", "status" => "APPROVED"]);
+
+
+
+        $this->post('search', ['query' => 'cw22-foobar'])
+            ->assertSee($good->title)
+            ->assertDontSee($bad->title);
+
+    }
+
+    /** @test */
+    public function a_user_can_search_by_codeweek_4_all_tag_in_the_tag_field()
+    {
+
+        $good = create('App\Event', ["codeweek_for_all_participation_code" => "cw22-foobar", "status" => "APPROVED"]);
+        $bad = create('App\Event', ["codeweek_for_all_participation_code" => "cw22-bad", "status" => "APPROVED"]);
+
+
+
+        $this->post('search', ['tag' => 'cw22-foobar'])
+            ->assertSee($good->title)
+            ->assertDontSee($bad->title);
 
     }
 
