@@ -4,14 +4,34 @@
     <!--                type="button" style="transition: all .15s ease" v-on:click="toggleModal()">-->
     <!--            Open regular modal-->
     <!--        </button>-->
-    <div v-if="!refresh">{{ $t('event.current_status') }}: <strong>{{ status }}</strong> <span
-        v-if="event.LatestModeration">({{ event.LatestModeration.message }})</span></div>
-    <div v-if="refresh"><strong>Moderation:</strong></div>
-    <div class="actions">
+
+
+    <div class="actions" v-if="refresh">
+      <strong>Moderation:</strong>
       <button @click="approve" class="codeweek-action-button green">Approve</button>
       <button @click="toggleModal" class="codeweek-action-button">Reject</button>
       <button @click="toggleDeleteModal" class="codeweek-action-button red">Delete</button>
     </div>
+
+
+    <div class="h-8 w-full grid grid-cols-3 gap-4 items-center" v-if="!refresh">
+      <div class="flex-none">Pending Activities: <a href="/review">{{pendingCounter}}</a></div>
+      <div class="flex justify-center">
+        <div>{{ $t('event.current_status') }}: <strong>{{ status }}</strong> <span
+            v-if="event.LatestModeration">({{ event.LatestModeration.message }})</span></div>
+      </div>
+      <div class="actions flex justify-items-end justify-end gap-2">
+        <button @click="approve" class="codeweek-action-button green">Approve</button>
+        <button @click="toggleModal" class="codeweek-action-button">Reject</button>
+        <button @click="toggleDeleteModal" class="codeweek-action-button red">Delete</button>
+      </div>
+    </div>
+
+
+
+
+
+
 
     <div v-if="showModal"
          class="overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex">
@@ -44,7 +64,7 @@
                             <template slot="singleLabel" slot-scope="{ option }">{{ option.title }}</template>
                             <pre class="language-json"><code>{{ rejectionOption.title  }}</code></pre>
                         </multiselect>
-                        
+
               </div>
               <textarea id="rejectionText" name="rejectionText" rows="4" cols="40" v-model="rejectionText"
                         class="px-1 py-1 placeholder-gray-400 text-gray-700 relative bg-blue-200 rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pr-3">
@@ -114,6 +134,7 @@
         </div>
       </div>
     </div>
+
     <div v-if="showModal || showDeleteModal" class="opacity-25 fixed inset-0 z-40 bg-black"></div>
   </div>
 </template>
@@ -123,7 +144,7 @@ import Multiselect from 'vue-multiselect'
 
 export default {
   components: {Multiselect},
-  props: ['event', 'refresh', 'ambassador'],
+  props: ['event', 'refresh', 'ambassador','pendingCounter','nextPending'],
   name: "reject-activity",
   data() {
     return {
@@ -147,16 +168,18 @@ export default {
     reRender() {
       if (this.refresh) {
         window.location.reload(false);
+      } else {
+        window.location.assign(this.nextPending);
       }
     },
     approve() {
+
+
       axios.post('/api/event/approve/' + this.event.id)
           .then(() => {
             this.status = "APPROVED";
             flash('Event Approved!')
             this.reRender();
-
-
           });
 
     },

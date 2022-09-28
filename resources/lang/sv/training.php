@@ -297,6 +297,21 @@ I den här videon kommer Code Week-teamet att visa dig några praktiska, enkla o
                 "3" => "Gör din egen interaktiva berättelse med Hedy för gymnasieelever",
             ]
         ],
+        "17" => [
+            "title" => "Känn koden",
+            "author" => "av Alenka Miljević",
+            "text" => [
+                "Socialt och känslomässigt välmående handlar om förmågan att vara motståndskraftig, att veta hur man ska hantera sina känslor och svara på andras känslor, att utveckla meningsfulla relationer med andra, att skapa känslor som leder till att man mår bra och att bygga upp ett eget känslomässigt stödnätverk.  De sociala och känslomässiga förmågor som unga lär sig i skolan hjälper dem att bygga upp sin motståndskraft och skapar ett mönster för hur de kommer att hantera sin fysiska och mentala hälsa under hela livet. (Europarådet)",
+                "I infomodulen Känn koden får du hjälp att gynna dina elevers sociala och känslomässiga välmående genom att de får känna igen, förklara, förstå och svara på positiva och negativa känslor och stämningar så de bygger upp empati och motståndskraft.  I den här infomodulen hittar du inspirerande och engagerande aktiviteter som hjälper dina elever att utveckla förmågan att hantera olika känslor med hjälp av kodning. Eleverna får lära sig att uttrycka sina känslor och hur de ska reagera på sin omgivnings känslor med hjälp av en Bee-Bot-robot.",
+                "Infomodulen Känn koden består av tre lektionsplaneringar där man använder sig av utbildningsroboten Bee-Bot för att skapa aktiviteter som uppmuntrar eleverna att prata om känslor och utveckla empati. I lektionsplaneringen för grundskolan programmerar eleverna en Bee-Bot för att prata om känslor så som sorg, glädje, rädsla, ilska och upptäcker anledningar till att de och deras omgivning upplever de här känslorna. I lektionsplaneringen för högstadiet uppmuntras eleverna till att programmera en Bee-Bot, känna igen sina egna och omgivningens känslor, förstå vad som orsakade dem och hur de ska svara på dem. I lektionsplaneringen för gymnasiet kan eleverna styra en Bee-Bot och komma på berättelser om känslor, motståndskraft och empati.",
+                "Om du inte har en utbildningsrobot i ditt klassrum så innehåller den här infomodulen även idéer om aktiviteter utan uppkoppling som främjar utvecklingen av sociala och känslomässiga förmågor. Den interaktiva berättelsen nedan ger dig en kort översikt över aktiviteter som du kan göra i klassrummet:"
+            ],
+            "activities" => [
+                "1" => "Koda – Känn – Lär dig för grundskoleelever",
+                "2" => "Jag har inte ett hjärta av sten för högstadieelever",
+                "3" => "Koda mig efter humör för gymnasieelever",
+            ]
+        ],
 
 
     ],

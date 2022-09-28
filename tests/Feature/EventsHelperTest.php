@@ -9,7 +9,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
-class OnlineCalendarTest extends TestCase
+class EventsHelperTest extends TestCase
 {
     /*
      * This tests have to use MySQL because of date functions.
@@ -34,6 +34,19 @@ class OnlineCalendarTest extends TestCase
 
         $events = EventHelper::getOnlineEvents();
         $this->assertCount(2, $events);
+    }
+
+    /** @test */
+    public function it_should_trim_geoposition()
+    {
+
+        //Bad ones
+        $event = create('App\Event', ['latitude' => (float)7.123456798, "longitude"=>(float)8.987654321]);
+
+
+        $trimmed = EventHelper::trimGeoposition($event->latitude, $event->longitude);
+        $expected = "7.12,8.99";
+        $this->assertEquals($expected, $trimmed);
     }
 
 }

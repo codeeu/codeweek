@@ -47,7 +47,6 @@
                 <ul>
                     <li><a href="/about">Code Week</a></li>
 
-                    <li><a href="/hackathons">Hackathons</a></li>
                     <li><a href="{{route('codeweek4all')}}">Code Week 4 All</a></li>
                     <li><a href="/treasure-hunt">@lang('snippets.treasure-hunt.menu')</a></li>
                     <li><a href="/why-coding">@lang('why-coding.titles.0')</a></li>
@@ -71,6 +70,12 @@
                             @lang('menu.profile')
                         </a>
                     </li>
+                    <li>
+                        <img src="{{asset('svg/address-book.svg')}}" class="static-image">
+                        <a href="{{route('activities-locations')}}">
+                            Activities Locations
+                        </a>
+                    </li>
                     @role('super admin|leading teacher')
                     <li class="p-1 text-orange-600 rounded">
 
@@ -89,13 +94,27 @@
                         </a>
                     </li>
 
+                    @endrole
+
+                    @role('super admin')
                     <li>
                         <img src="/images/user_menu_pending_events.svg" class="icon">
                         <a href="{{route('pending')}}">
+                            @lang('menu.pending') v1
+                        </a>
+                    </li>
+                    @endrole
+
+                    @role('ambassador|super admin')
+                    <li>
+                        <img src="/images/user_menu_pending_events.svg" class="icon">
+                        <a href="{{route('review')}}">
                             @lang('menu.pending')
                         </a>
                     </li>
                     @endrole
+
+
                     <li>
                         <img src="/images/user_menu_your_events.svg" class="icon">
                         <a href="{{route('my_events')}}">

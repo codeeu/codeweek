@@ -40,7 +40,8 @@ return [
         'ba' => 'Boşnakça',
         'mk' => 'Makedonca',
         'me' => 'Karadağlıca',
-        'rs' => 'Sırpça'
+        'rs' => 'Sırpça',
+        'tr' => 'Türkçe'
     ],
 
     'resources_local_title' => 'Kodlama kaynakları',

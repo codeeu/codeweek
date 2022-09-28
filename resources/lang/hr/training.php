@@ -282,6 +282,21 @@ U ovom videozapisu tim Tjedna kodiranja pokazat će vam nekoliko praktičnih, je
                 "3" => "Izradite vlastitu interaktivnu priču s Hedy za učenike viših razreda srednje škole",
             ]
         ],
+        "17" => [
+            "title" => "Programiranje i osjećaji",
+            "author" => "autorice Alenke Miljević",
+            "text" => [
+                "Društvena i emocionalna dobrobit sposobnost je da budete otporni, znate kako upravljati svojim emocijama i reagirati na emocije drugih ljudi, razvijate smislene odnose s drugima, stvarate emocije koje dovode do dobrih osjećaja i stvorite vlastitu mrežu emocionalne podrške. Društvene i emocionalne vještine koje mladi uče u školi pomažu im u razvijanju otpornosti i utvrđuju obrazac kako će upravljati svojim fizičkim i mentalnim zdravljem tijekom života. (Vijeće Europe)",
+                "Odjeljkom za učenje Programiranje i osjećaji (engl. Feel the Code) omogućit će vam se da potaknete društvenu i emocionalnu dobrobit svojih učenika prepoznavanjem, objašnjavanjem, razumijevanjem i reagiranjem na pozitivne i negativne osjećaje i emocije kako bi razvili empatiju i otpornost.  U tom odjeljku za učenje pronaći ćete nadahnjujuće i zanimljive aktivnosti koje će poslužiti kao pomoć vašim učenicima da putem programiranja razviju vještine za nošenje s različitim emocijama. Vaši će učenici naučiti kako izraziti svoje osjećaje i kako reagirati na emocije svojih vršnjaka uz pomoć robota Bee-Bot.",
+                "Odjeljak za učenje Programiranje i osjećaji sadržava tri nastavna plana u kojima se upotrebljava obrazovni robot Bee-Bot za izradu aktivnosti kojima se učenike potiče na razgovor o emocijama i razvijanje empatije. U nastavnom planu za osnovnu školu učenici programiraju Bee-Bota kako bi se pričalo o emocijama kao što su tuga, sreća, strah i ljutnja te kako bi otkrili razloge zašto oni i njihovi vršnjaci osjećaju te emocije. U okviru nastavnog plana za niže razrede srednje škole učenike se potiče da programiraju Bee-Bota, prepoznaju svoje osjećaje i osjećaje svojih vršnjaka, razumiju što ih je uzrokovalo i kako na njih reagirati. U okviru nastavnog plana za više razrede srednje škole učenicima se omogućuje da upravljanju Bee-Botom i izmišljaju priče o osjećajima, otpornosti i empatiji.",
+                "Ako u svojoj učionici nemate obrazovnog robota, u ovom odjeljku za učenje pronaći ćete ideje za izvanmrežne aktivnosti kojima se potiče razvoj društvenih i emocionalnih vještina. U interaktivnom dijelu u nastavku navodi se kratak pregled aktivnosti koje možete raditi u svojoj učionici:"
+            ],
+            "activities" => [
+                "1" => "Programiraj – Osjećaj – Nauči za osnovnoškolce",
+                "2" => "Moje srce nije od kamena za učenike nižih razreda srednje škole",
+                "3" => "Programiraj me do raspoloženja za učenike viših razreda srednje škole",
+            ]
+        ],
 
 
     ],

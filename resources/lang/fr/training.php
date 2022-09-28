@@ -88,60 +88,60 @@ return [
             ]
         ],
         '6' => [
-            'title'=>'App Inventor et développement d’applications',
-            'author'=>'Par Rosanna Kurrer',
-            'text'=>'<p>La vidéo de Rosanna Kurrer, fondatrice de CyberWayFinder, explique en quoi consiste l’App Inventor, cite les avantages du développement d’applications en classe et donne des exemples pratiques de la manière dont les enseignants peuvent avoir recours à l’App Inventor dans leur classe, transformant les élèves passifs en créateurs de jeux enthousiastes.</p>
+            'title' => 'App Inventor et développement d’applications',
+            'author' => 'Par Rosanna Kurrer',
+            'text' => '<p>La vidéo de Rosanna Kurrer, fondatrice de CyberWayFinder, explique en quoi consiste l’App Inventor, cite les avantages du développement d’applications en classe et donne des exemples pratiques de la manière dont les enseignants peuvent avoir recours à l’App Inventor dans leur classe, transformant les élèves passifs en créateurs de jeux enthousiastes.</p>
 <p>Nous utilisons tous des applications; elles sont pratiques et nous permettent de coordonner rapidement nos activités. Elles sont de plus en plus utilisées dans l’enseignement, car elles donnent la possibilité de personnaliser l’apprentissage et permettent aux utilisateurs d’acquérir des informations. Alors, pourquoi ne pas donner aux élèves les moyens de créer une application éducative destinée à d’autres personnes?</p>',
-            'activities'=>[
-                '1'=>'Activité 1 – Titre, pour le primaire',
-                '2'=>'Activité 2 – Titre, pour le premier cycle du secondaire',
-                '3'=>'Activité 3 – Titre, pour le deuxième cycle du secondaire'
+            'activities' => [
+                '1' => 'Activité 1 – Titre, pour le primaire',
+                '2' => 'Activité 2 – Titre, pour le premier cycle du secondaire',
+                '3' => 'Activité 3 – Titre, pour le deuxième cycle du secondaire'
             ]
         ],
         '7' => [
-            'title'=>'Bricolage et création',
-            'author'=>'Par Diogo da Silva',
-            'text'=>'<p>L’emploi et les lieux de travail évoluent, tout comme l’enseignement. Dans le cadre de la préparation des élèves à la vie professionnelle du 21e siècle, de nouvelles compétences telles que le bricolage, la création et le détournement d’objets deviennent essentielles, car elles réduisent l’écart entre l’école et la réalité. En transformant la salle de la classe en un environnement collaboratif axé sur la résolution de problèmes, les élèves peuvent dialoguer et s’épanouir. Ces activités favorisent la discussion, ce qui permet de transformer la salle de classe en un centre de communication, dans lequel chaque contribution compte.</p>
+            'title' => 'Bricolage et création',
+            'author' => 'Par Diogo da Silva',
+            'text' => '<p>L’emploi et les lieux de travail évoluent, tout comme l’enseignement. Dans le cadre de la préparation des élèves à la vie professionnelle du 21e siècle, de nouvelles compétences telles que le bricolage, la création et le détournement d’objets deviennent essentielles, car elles réduisent l’écart entre l’école et la réalité. En transformant la salle de la classe en un environnement collaboratif axé sur la résolution de problèmes, les élèves peuvent dialoguer et s’épanouir. Ces activités favorisent la discussion, ce qui permet de transformer la salle de classe en un centre de communication, dans lequel chaque contribution compte.</p>
 <p>Dans la vidéo ci-dessous, Diogo da Silva, professeur portugais de sciences, de technologies, d’ingénierie, d’arts et de mathématiques (STEAM) et membre d’Escola Global, montre, étape par étape, comment mettre au point un cours dans lequel les élèves doivent bricoler, créer et détourner des objets pour résoudre un problème.</p>',
-            'activities'=>[
-                '1'=>'Activité 1 – Titre, pour le primaire',
-                '2'=>'Activité 2 – Titre, pour le premier cycle du secondaire',
-                '3'=>'Activité 3 – Titre, pour le deuxième cycle du secondaire'
+            'activities' => [
+                '1' => 'Activité 1 – Titre, pour le primaire',
+                '2' => 'Activité 2 – Titre, pour le premier cycle du secondaire',
+                '3' => 'Activité 3 – Titre, pour le deuxième cycle du secondaire'
             ]
         ],
         '8' => [
-            'title'=>'Coder dans toutes les matières',
-            'author'=>'Par M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
-            'text'=>'<p>Lorsqu’on pense au codage en classe, on pense spontanément aux ordinateurs, à la technologie, aux mathématiques ou aux sciences. Toutefois, étant donné que les élèves ont de nombreux centres d’intérêt et apprennent différentes matières, pourquoi ne pas tirer parti du codage et mettre en œuvre cette discipline dans l’ensemble du programme?</p> 
+            'title' => 'Coder dans toutes les matières',
+            'author' => 'Par M. Isabel Blanco, M. Concepción Fernández, Elisabetta Nanni, Debora Carmela Niutta, Stefania Altieri',
+            'text' => '<p>Lorsqu’on pense au codage en classe, on pense spontanément aux ordinateurs, à la technologie, aux mathématiques ou aux sciences. Toutefois, étant donné que les élèves ont de nombreux centres d’intérêt et apprennent différentes matières, pourquoi ne pas tirer parti du codage et mettre en œuvre cette discipline dans l’ensemble du programme?</p> 
 <p>Faire entrer le codage dans les activités de classe comporte de nombreux avantages, car cette discipline aide les élèves à développer une pensée critique et leur capacité à résoudre des problèmes; elle aide les élèves à devenir des utilisateurs actifs et à développer leur propre processus d’apprentissage, ce qui est essentiel à l\'école. Plus important encore: vos élèves apprendront en s’amusant!</p>
 <p>Les langues, la musique, les sciences, la technologie, l’ingénierie ou les mathématiques ne sont que quelques-unes des matières que les enseignants peuvent coder, à l\'intention des futurs scientifiques, musiciens, artistes, et des autres élèves! Tous les enseignants peuvent avoir recours au codage et au raisonnement informatique en classe. Expliquer un algorithme de la vie quotidienne dans le cadre de l’enseignement d’une matière intégré à une langue étrangère (EMILE), créer une manette de jeu en feutre pour apprendre les sciences ou utiliser des robots éducatifs pour stimuler la motivation en cours de mathématiques constituent quelques exemples d’activités qu’il est possible d’organiser en classe.</p>
 <p>Jetez un coup d’œil à la vidéo ci-dessous pour voir comment les enseignants de musique, de sciences ou de langues peuvent facilement intégrer le codage et le raisonnement informatique en classe, même s’ils n’ont pas d’expérience dans le domaine.</p>',
-            'activities'=>[
-                '1'=>'Activité 1 La robotique et l’inclusion dans les cours de sciences, de technologie, d’ingénierie et de mathématiques pour les élèves du primaire',
-                '2'=>'Activité 2 La musique, c’est du codage',
-                '3'=>'Activité 3 Bricolage et codage avec Makey Makey',
-                '4'=>'Activité 4 Un algorithme de la vie quotidienne pour un cours en EMILE'
+            'activities' => [
+                '1' => 'Activité 1 La robotique et l’inclusion dans les cours de sciences, de technologie, d’ingénierie et de mathématiques pour les élèves du primaire',
+                '2' => 'Activité 2 La musique, c’est du codage',
+                '3' => 'Activité 3 Bricolage et codage avec Makey Makey',
+                '4' => 'Activité 4 Un algorithme de la vie quotidienne pour un cours en EMILE'
             ]
         ],
         '9' => [
-            'title'=>'Créer un automate à l’aide d’un micro:bit',
-            'author'=>'par Pauline Maas',
-            'text'=>'<p>
+            'title' => 'Créer un automate à l’aide d’un micro:bit',
+            'author' => 'par Pauline Maas',
+            'text' => '<p>
                    L’utilisation d’un micro:bit, cet ordinateur de poche programmable avec facilité, peut représenter une façon ludique et simple de créer des objets intéressants avec vos élèves, allant des robots aux instruments de musique, tout en leur enseignant la programmation. Il est simple et facile à utiliser, même pour les programmeurs les plus jeunes, mais également suffisamment puissant pour des élèves plus avancés. Vous pouvez l’intégrer à une multitude de cours, de l’histoire aux mathématiques, en passant par la science. Les possibilités sont illimitées. Le micro:bit est un dispositif stimulant et peu coûteux, qui vous permettra d’enseigner le codage à vos élèves, tout en leur inculquant des compétences essentielles, telles que la pensée informatique, la résolution de problèmes et la créativité.
                    </p>
                    <p>
 Dans cette vidéo, Pauline Maas, enseignante en informatique chez Visio (Pays-Bas), présentera le micro:bit et donnera quelques exemples pratiques sur la manière dont les enseignants peuvent l’intégrer au sein de leur classe, afin de transformer des élèves passifs en créateurs enthousiastes.                   
                 </p>',
-            'activities'=>[
-                '1'=>'Le code Morse avec le micro:bit, pour école primaire',
-                '2'=>'Le jeu d’évasion avec le micro:bit, pour premier cycle du secondaire',
-                '3'=>'Créer un automate, pour deuxième cycle du secondaire',
+            'activities' => [
+                '1' => 'Le code Morse avec le micro:bit, pour école primaire',
+                '2' => 'Le jeu d’évasion avec le micro:bit, pour premier cycle du secondaire',
+                '3' => 'Créer un automate, pour deuxième cycle du secondaire',
             ]
         ],
         '10' => [
-            'title'=>'La programmation créative avec Python',
-            'author'=>'par Ivana Vezjak',
-            'text'=>'<p>
+            'title' => 'La programmation créative avec Python',
+            'author' => 'par Ivana Vezjak',
+            'text' => '<p>
 Passer d’une programmation visuelle à une programmation basée sur le texte résulte d’un cheminement naturel dans le domaine du codage. Bien que la programmation visuelle soit souvent bien adaptée aux débutants, après un certain temps, les élèves peuvent avoir envie de relever de nouveaux défis. La programmation basée sur le texte constitue l’étape suivante pour toute personne souhaitant aller plus loin dans la programmation et dans la pensée informatique. 
                    </p>
                    <p>                   
@@ -150,106 +150,106 @@ Dans cette vidéo, Ivana Vezjak vous présente la syntaxe de base du langage Pyt
 <p> 
 Avec Python, les élèves peuvent créer des questionnaires au sujet d’événements historiques, résoudre des problèmes mathématiques et réaliser des simulations de physique, créer des jeux, des sites web, effectuer des analyses de données pour des projets scientifiques, et bien plus encore. Python possède une bibliothèque standard diversifiée et complète, une vaste communauté et un grand nombre de tutoriels et de projets disponibles en ligne, pouvant s’appliquer à l’enseignement, à l’apprentissage et à la pratique. En codant en Python, en analysant des programmes et en corrigeant des bogues, les élèves développent leur créativité et apprennent à être cohérents, persévérants et patients. Ils apprennent à tenir un raisonnement analytique et intègrent des compétences en matière de résolution de problèmes par la décomposition de problèmes complexes en éléments plus petits. Ces compétences leur seront utiles dans leur manière d’aborder les problèmes dans tous les domaines de la vie.
                 </p>',
-            'activities'=>[
-                '1'=>'Mon premier questionnaire, pour école primaire',
-                '2'=>'Le jeu du pendu, pour premier cycle du secondaire',
-                '3'=>'Devinez le pays! pour deuxième cycle du secondaire',
+            'activities' => [
+                '1' => 'Mon premier questionnaire, pour école primaire',
+                '2' => 'Le jeu du pendu, pour premier cycle du secondaire',
+                '3' => 'Devinez le pays! pour deuxième cycle du secondaire',
             ],
-            'links'=>[
+            'links' => [
                 'title' => 'Autres ressources associées',
                 '1' => [
-                    "url"=>"https://docs.python.org/3/library/",
-                    "title"=>"Bibliothèque standard de Python",
-                    "description"=>"Collection de code préconstruit et de modules (par exemple, module turtle, module math, etc.).",
+                    "url" => "https://docs.python.org/3/library/",
+                    "title" => "Bibliothèque standard de Python",
+                    "description" => "Collection de code préconstruit et de modules (par exemple, module turtle, module math, etc.).",
                 ],
                 '2' => [
-                    "url"=>"https://codecombat.com/",
-                    "title"=>"CodeCombat",
-                    "description"=>"Jeu vidéo éducatif pour l’apprentissage des concepts de la programmation.",
+                    "url" => "https://codecombat.com/",
+                    "title" => "CodeCombat",
+                    "description" => "Jeu vidéo éducatif pour l’apprentissage des concepts de la programmation.",
                 ],
                 '3' => [
-                    "url"=>"https://projects.raspberrypi.org/fr-FR/codeclub",
-                    "title"=>"Projets Code Club",
-                    "description"=>"Projets de programmation pas-à-pas pour les enfants, du niveau débutant à avancé.",
+                    "url" => "https://projects.raspberrypi.org/fr-FR/codeclub",
+                    "title" => "Projets Code Club",
+                    "description" => "Projets de programmation pas-à-pas pour les enfants, du niveau débutant à avancé.",
                 ],
                 '4' => [
-                    "url"=>"https://inventwithpython.com/invent4thed/",
-                    "title"=>"Inventez vos propres jeux vidéo avec Python (en anglais)",
-                    "description"=>"Un livre qui vous apprendra à programmer vos propres jeux vidéo avec Python.",
+                    "url" => "https://inventwithpython.com/invent4thed/",
+                    "title" => "Inventez vos propres jeux vidéo avec Python (en anglais)",
+                    "description" => "Un livre qui vous apprendra à programmer vos propres jeux vidéo avec Python.",
                 ],
                 '5' => [
-                    "url"=>"https://www.codewars.com/",
-                    "title"=>"Codewars (en anglais)",
-                    "description"=>"Communauté éducative au sein de laquelle élèves et enseignants peuvent se former à travers une série de défis.",
+                    "url" => "https://www.codewars.com/",
+                    "title" => "Codewars (en anglais)",
+                    "description" => "Communauté éducative au sein de laquelle élèves et enseignants peuvent se former à travers une série de défis.",
                 ],
                 '6' => [
-                    "url"=>"https://hourofpython.com/",
-                    "title"=>"Hour of Python (en anglais)",
-                    "description"=>"Collection de cours introductifs à Python (à la fois une programmation basée sur le texte et de blocs) utilisant des Trinkets interactifs.",
+                    "url" => "https://hourofpython.com/",
+                    "title" => "Hour of Python (en anglais)",
+                    "description" => "Collection de cours introductifs à Python (à la fois une programmation basée sur le texte et de blocs) utilisant des Trinkets interactifs.",
                 ],
             ]
         ],
         '11' => [
-            'title'=>'Le codage pour l’inclusion',
-            'author'=>'par l’équipe de la Semaine du code',
-            'text'=>'<p>
+            'title' => 'Le codage pour l’inclusion',
+            'author' => 'par l’équipe de la Semaine du code',
+            'text' => '<p>
                    Promouvoir le codage dans votre classe peut être un défi, en particulier si certains de vos élèves présentent un handicap. Mais il est important de se souvenir que chacun, quelles que soient ses capacités, peut apprendre à coder. Apprendre certains aspects du codage peut être très bénéfique pour les enfants qui ont des besoins particuliers, car cela leur apprend des compétences essentielles de la vie quotidienne, comme la résolution de problèmes, l’organisation ou l’indépendance. Le codage contribue également à améliorer les compétences interpersonnelles et sociales par la collaboration et le travail d’équipe; compétences souvent difficiles à acquérir pour beaucoup d’enfants souffrant d’un handicap. Plus important encore, les élèves s’amusent tout en apprenant aux côtés de leurs camarades.
                    </p><p>
 Dans cette vidéo, l’équipe de la Semaine du code vous présentera quelques activités de codage pratiques, faciles et ludiques, particulièrement adaptées aux élèves malvoyants, atteints de trisomie 21 ou de troubles du spectre autistique, que les enseignants peuvent facilement mettre en place dans leur classe.                   
                 </p>',
-            'activities'=>[
-                '1'=>'Boîte d’œufs (activité non connectée)',
-                '2'=>'Une souris très intelligente ',
-                '3'=>'Fabriquer des étoiles',
+            'activities' => [
+                '1' => 'Boîte d’œufs (activité non connectée)',
+                '2' => 'Une souris très intelligente ',
+                '3' => 'Fabriquer des étoiles',
             ]
         ],
 
 
         "12" => [
             "title" => "Le codage pour les Objectifs de développement durable",
-    "author" => " par Francisco Javier Masero, Cristina Nicolaita et Erviola Konomi ",
-    "text" => [
-    "1" => "L'enseignement traditionnel offre aux élèves peu de possibilités de comprendre et de résoudre les problèmes du monde réel tels que le changement climatique mondial, l'égalité des sexes, la faim, la pauvreté ou encore la bonne santé et le bien-être.",
-        "2" => "Les Objectifs de développement durable (ODD) figurent au cœur de l'Agenda 2030 pour le Développement durable, adopté par tous les États Membres des Nations Unies et considéré comme une feuille de route pour instaurer la paix et la prospérité sur la planète, en encourageant le développement mondial. Les enseignants peuvent recourir aux ODD en classe comme un outil permettant aux élèves de développer leur esprit critique, mais aussi les aider à trouver leur identité et leur but. La combinaison des éléments de base du codage et de la pensée informatique avec les SDG renforcera la confiance de vos élèves, et vous les aiderez à développer leur créativité, leur esprit d'entreprise, leur capacité à résoudre des problèmes ou à communiquer ",
-        "3" => "Dans les activités suivantes, les élèves appliqueront les principes du Scratch, du codage ASCII et du codage débranché à des sujets d'actualité mondiale et sociale. Les enseignants sensibiliseront les élèves aux objectifs du développement durable tout en les aidant à renforcer leur empathie, leur citoyenneté active et leurs compétences prosociales de manière ludique et stimulante",
-        "4" => "Ces plans de cours sont tous axés sur un des ODD :",
-        "5" => "Objectif de développement durable 3 : Permettre à tous de vivre en bonne santé et promouvoir le bien-être de tous à tout âge ",
-        "6" => "Objectif de développement durable 5 : Parvenir à l’égalité des sexes et autonomiser toutes les femmes et les filles",
-        "7" => "Objectif de développement durable 13 : Prendre d’urgence des mesures pour lutter contre les changements climatiques et leurs répercussions ",
-    ],
-    "activities" => [
-        "1" => " Projet Karatéka : Apprendre le karaté par la programmation, à l'école primaire, au lycée et au collège ",
-        "2" => " Les Objectifs de développement durable et codage pour le changement climatique, pour l'école primaire ",
-        "3" => " Le codage pour l'égalité des sexes, pour l'école secondaire supérieure ",
-    ]
-]
+            "author" => " par Francisco Javier Masero, Cristina Nicolaita et Erviola Konomi ",
+            "text" => [
+                "1" => "L'enseignement traditionnel offre aux élèves peu de possibilités de comprendre et de résoudre les problèmes du monde réel tels que le changement climatique mondial, l'égalité des sexes, la faim, la pauvreté ou encore la bonne santé et le bien-être.",
+                "2" => "Les Objectifs de développement durable (ODD) figurent au cœur de l'Agenda 2030 pour le Développement durable, adopté par tous les États Membres des Nations Unies et considéré comme une feuille de route pour instaurer la paix et la prospérité sur la planète, en encourageant le développement mondial. Les enseignants peuvent recourir aux ODD en classe comme un outil permettant aux élèves de développer leur esprit critique, mais aussi les aider à trouver leur identité et leur but. La combinaison des éléments de base du codage et de la pensée informatique avec les SDG renforcera la confiance de vos élèves, et vous les aiderez à développer leur créativité, leur esprit d'entreprise, leur capacité à résoudre des problèmes ou à communiquer ",
+                "3" => "Dans les activités suivantes, les élèves appliqueront les principes du Scratch, du codage ASCII et du codage débranché à des sujets d'actualité mondiale et sociale. Les enseignants sensibiliseront les élèves aux objectifs du développement durable tout en les aidant à renforcer leur empathie, leur citoyenneté active et leurs compétences prosociales de manière ludique et stimulante",
+                "4" => "Ces plans de cours sont tous axés sur un des ODD :",
+                "5" => "Objectif de développement durable 3 : Permettre à tous de vivre en bonne santé et promouvoir le bien-être de tous à tout âge ",
+                "6" => "Objectif de développement durable 5 : Parvenir à l’égalité des sexes et autonomiser toutes les femmes et les filles",
+                "7" => "Objectif de développement durable 13 : Prendre d’urgence des mesures pour lutter contre les changements climatiques et leurs répercussions ",
+            ],
+            "activities" => [
+                "1" => " Projet Karatéka : Apprendre le karaté par la programmation, à l'école primaire, au lycée et au collège ",
+                "2" => " Les Objectifs de développement durable et codage pour le changement climatique, pour l'école primaire ",
+                "3" => " Le codage pour l'égalité des sexes, pour l'école secondaire supérieure ",
+            ]
+        ]
 
-,
+        ,
 
-"13" => [
-    "title" => "Introduction à l’intelligence artificielle en classe",
-    "author" => " par Artur Coelho et Marjana Prifti Skenduli ",
-    "text" => [
-        "1" => " L’intelligence artificielle (IA) intervient dans de nombreux domaines de la vie quotidienne : elle corrige automatiquement le texte que vous tapez sur votre téléphone, choisit la musique que joue votre application musicale préférée et se souvient de vos mots de passe lorsque vous les avez oubliés. L’IA désigne une combinaison d’apprentissage machine, de robotique et d’algorithmes, avec des applications dans tous les domaines : de l’informatique à la fabrication, et de la médecine à la mode. Elle occupe donc une place indéniable dans nos vies et dans nos sociétés et joue un rôle clé dans le développement de la science. Et comme tout autre phénomène important dans nos vies, les étudiants tireront profit de son apprentissage. Mais comment enseigner une matière aussi complexe que l’IA ? ",
-        "2" => "Cette formation vous aidera à expliquer aux élèves ce qu’est l’IA et quel rôle elle joue dans leur quotidien. Ces activités sont conçues pour que des néophytes comprennent facilement le contenu et soient capables de décomposer efficacement des termes complexes en idées facilement compréhensibles. Grâce à ces plans de formation, vous aiderez les élèves à assimiler l’utilisation de l’IA dans différents domaines, ainsi que certains des mécanismes qui la sous-tendent. Ces cours sont conçus pour que les étudiants développent leurs capacités d’analyse et de réflexion critique : par exemple, dans l’activité de Marjana, les élèves développent un pipeline de classification. Les élèves pourront également comprendre les diverses applications de l’IA : dans l’activité d’Artur, ils verront le lien entre l’IA et l’art, et comment l’IA peut être utilisée au service de l’expression visuelle. Par ailleurs, les élèves réfléchiront également aux dangers de l’IA et à leur impact."
-    ],
-    "activities" => [
-        "1" => "L’interaction humain-AI- dans l’Art, pour l’école primaire",
-        "2" => " Des machines pour apprendre à classer : Introduction à l’apprentissage machine supervisé, pour l’école secondaire de cycle inférieur ",
-        "3" => "Des machines pour apprendre à classer : Introduction à l’apprentissage machine supervisé, pour l’école secondaire de cycle supérieur",
-    ]
-],
+        "13" => [
+            "title" => "Introduction à l’intelligence artificielle en classe",
+            "author" => " par Artur Coelho et Marjana Prifti Skenduli ",
+            "text" => [
+                "1" => " L’intelligence artificielle (IA) intervient dans de nombreux domaines de la vie quotidienne : elle corrige automatiquement le texte que vous tapez sur votre téléphone, choisit la musique que joue votre application musicale préférée et se souvient de vos mots de passe lorsque vous les avez oubliés. L’IA désigne une combinaison d’apprentissage machine, de robotique et d’algorithmes, avec des applications dans tous les domaines : de l’informatique à la fabrication, et de la médecine à la mode. Elle occupe donc une place indéniable dans nos vies et dans nos sociétés et joue un rôle clé dans le développement de la science. Et comme tout autre phénomène important dans nos vies, les étudiants tireront profit de son apprentissage. Mais comment enseigner une matière aussi complexe que l’IA ? ",
+                "2" => "Cette formation vous aidera à expliquer aux élèves ce qu’est l’IA et quel rôle elle joue dans leur quotidien. Ces activités sont conçues pour que des néophytes comprennent facilement le contenu et soient capables de décomposer efficacement des termes complexes en idées facilement compréhensibles. Grâce à ces plans de formation, vous aiderez les élèves à assimiler l’utilisation de l’IA dans différents domaines, ainsi que certains des mécanismes qui la sous-tendent. Ces cours sont conçus pour que les étudiants développent leurs capacités d’analyse et de réflexion critique : par exemple, dans l’activité de Marjana, les élèves développent un pipeline de classification. Les élèves pourront également comprendre les diverses applications de l’IA : dans l’activité d’Artur, ils verront le lien entre l’IA et l’art, et comment l’IA peut être utilisée au service de l’expression visuelle. Par ailleurs, les élèves réfléchiront également aux dangers de l’IA et à leur impact."
+            ],
+            "activities" => [
+                "1" => "L’interaction humain-AI- dans l’Art, pour l’école primaire",
+                "2" => " Des machines pour apprendre à classer : Introduction à l’apprentissage machine supervisé, pour l’école secondaire de cycle inférieur ",
+                "3" => "Des machines pour apprendre à classer : Introduction à l’apprentissage machine supervisé, pour l’école secondaire de cycle supérieur",
+            ]
+        ],
 
         '14' => [
             'title' => "L'apprentissage à l'ère des machines intelligentes",
             'author' => 'par Adil Tugyan, Georgia Lascaris et Marco Neves',
             'text' => [
-    '1' => "Les progrès de l'IA ces dernières années ont été impressionnants grâce aux avancées rapides en matière de puissance de calcul et à la disponibilité de grandes quantités de données. Ce phénomène a conduit à des investissements substantiels dans la recherche en IA et à une expansion rapide de l'industrie connexe, pour en faire une révolution technologique majeure de notre temps. L'IA est partout autour de nous. Elle fait désormais partie de notre quotidien, à tel point que nous ne la considérons pas toujours comme une IA : nous utilisons presque tous les jours des recommandations en ligne, la détection des visages, des systèmes de sécurité et des assistants vocaux. Mais qu'en est-il de l'éducation et de l'enseignement ?",
+                '1' => "Les progrès de l'IA ces dernières années ont été impressionnants grâce aux avancées rapides en matière de puissance de calcul et à la disponibilité de grandes quantités de données. Ce phénomène a conduit à des investissements substantiels dans la recherche en IA et à une expansion rapide de l'industrie connexe, pour en faire une révolution technologique majeure de notre temps. L'IA est partout autour de nous. Elle fait désormais partie de notre quotidien, à tel point que nous ne la considérons pas toujours comme une IA : nous utilisons presque tous les jours des recommandations en ligne, la détection des visages, des systèmes de sécurité et des assistants vocaux. Mais qu'en est-il de l'éducation et de l'enseignement ?",
                 '2' => "L'IA recèle un énorme potentiel qui permet de mettre en place de nouvelles méthodes d'enseignement et d'apprentissage et d'améliorer l'apprentissage des étudiants. Ce Module de formation vous aidera à intégrer des activités d'IA authentiques dans votre enseignement et à préparer vos étudiants à la vie et à la carrière dans un monde façonné par l'IA. Ces activités ont été conçues pour que les élèves développent leur curiosité, leur capacité à résoudre des problèmes et leur créativité : par exemple, dans l'activité d'Adil, les élèves apprennent des algorithmes et des réseaux de neurones et sont encouragés à créer leur propre réseau de neurones pour visualiser un cerveau d'IA. Georgia guidera vos élèves dans le développement étape par étape d'un chatbot. Les élèves vont construire leur propre chatbot, préparer des ensembles de données de questions et réponses et l'entraîner pour qu'il puisse répondre aux questions sur la Covid-19. Dans l'activité de Marco, les élèves étudieront les avantages et les défis des machines intelligentes dans la vie quotidienne et au travail. Quels sont les risques de l'IA dont nous devons tenir compte ? Quels seront les impacts de l'IA sur l'avenir de l'emploi ? Quels emplois leur seront proposés lorsqu'ils entreront sur le marché du travail à l'avenir ?"
             ],
             'activities' => [
-    'title' => 'Dans le cadre des cours ci-dessous, les élèves découvriront les machines intelligentes de manière ludique et intéressante.',
-    '1' => "L'IA et ses réseaux de neurones, pour l'école primaire",
+                'title' => 'Dans le cadre des cours ci-dessous, les élèves découvriront les machines intelligentes de manière ludique et intéressante.',
+                '1' => "L'IA et ses réseaux de neurones, pour l'école primaire",
                 '2' => "Mon Chatbot Covid-19, pour l'école secondaire inférieure",
                 '3' => "Vivre à l'ère des « Machines intelligentes » : Défis et opportunités, pour l'école secondaire supérieure",
             ]
@@ -274,19 +274,34 @@ Dans cette vidéo, l’équipe de la Semaine du code vous présentera quelques a
             "author" => "par Felienne Hermans",
             "text" => [
                 "Vos élèves maîtrisent déjà un langage de programmation visuel, mais ne se sentent pas encore prêts à se plonger dans un langage de programmation textuel? Dans ce cas, ce module d’apprentissage est fait pour vous et vos élèves, car il les aidera à combler le fossé entre un langage de programmation visuel et un langage de programmation textuel. Le module d’apprentissage <strong>Raconter une histoire avec Hedy</strong> comprend trois plans de cours qui utilisent Hedy, un langage de programmation graduel destiné à initier les enfants à la programmation.",
-                
-        "Hedy s’adresse aux enfants qui veulent s’initier aux langages de programmation textuels, mais pour qui commencer avec Python pourrait être trop complexe. Les langages graduels utilisent différents niveaux de langage, où chaque niveau ajoute de nouveaux concepts et une complexité syntaxique. À la fin de la séquence de niveaux de Hedy, les élèves maîtrisent un sous-ensemble de Python syntaxiquement conforme. ",
 
-        "Ce module d’apprentissage propose des activités inspirantes et attrayantes pour aider vos élèves à utiliser de manière efficace les langages de programmation en mode texte. En créant leurs propres histoires interactives, ils apprendront progressivement la programmation, sans devoir tout apprendre en une fois. Dans le plan de cours pour l’école primaire, les élèves sont initiés aux concepts de base de la programmation. Le plan de cours pour le secondaire inférieur présente d’autres concepts de programmation, tandis que le plan de cours pour le secondaire supérieur permet aux élèves de programmer des histoires et des activités plus complexes. ",
+                "Hedy s’adresse aux enfants qui veulent s’initier aux langages de programmation textuels, mais pour qui commencer avec Python pourrait être trop complexe. Les langages graduels utilisent différents niveaux de langage, où chaque niveau ajoute de nouveaux concepts et une complexité syntaxique. À la fin de la séquence de niveaux de Hedy, les élèves maîtrisent un sous-ensemble de Python syntaxiquement conforme. ",
 
-        "Découvrez l’histoire interactive ci-dessous pour voir comment les lecteurs peuvent participer à l’histoire et la manière dont elle encourage leur engagement actif."
-    ],
-    "activities" => [
-        "1" => "Créez votre propre histoire interactive avec Hedy pour les élèves de l’école primaire",
-        "2" => "Créez votre propre histoire interactive avec Hedy pour les élèves du secondaire inférieur",
-        "3" => "Créez votre propre histoire interactive avec Hedy pour les élèves du secondaire supérieur",
-    ]
-],
+                "Ce module d’apprentissage propose des activités inspirantes et attrayantes pour aider vos élèves à utiliser de manière efficace les langages de programmation en mode texte. En créant leurs propres histoires interactives, ils apprendront progressivement la programmation, sans devoir tout apprendre en une fois. Dans le plan de cours pour l’école primaire, les élèves sont initiés aux concepts de base de la programmation. Le plan de cours pour le secondaire inférieur présente d’autres concepts de programmation, tandis que le plan de cours pour le secondaire supérieur permet aux élèves de programmer des histoires et des activités plus complexes. ",
+
+                "Découvrez l’histoire interactive ci-dessous pour voir comment les lecteurs peuvent participer à l’histoire et la manière dont elle encourage leur engagement actif."
+            ],
+            "activities" => [
+                "1" => "Créez votre propre histoire interactive avec Hedy pour les élèves de l’école primaire",
+                "2" => "Créez votre propre histoire interactive avec Hedy pour les élèves du secondaire inférieur",
+                "3" => "Créez votre propre histoire interactive avec Hedy pour les élèves du secondaire supérieur",
+            ]
+        ],
+        "17" => [
+            "title" => "Ressentez le code",
+            "author" => "par Alenka Miljević",
+            "text" => [
+                "Le bien-être social et émotionnel est la capacité d’être résilient, de savoir gérer ses émotions et de répondre aux émotions des autres, de développer des relations constructives avec les autres, de générer des émotions qui débouchent sur de bons sentiments et de créer son propre réseau de soutien émotionnel. Les compétences sociales et émotionnelles que les jeunes acquièrent à l’école les aident à développer leur résilience et à définir la manière dont ils géreront leur santé physique et mentale tout au long de leur vie. (Conseil de l’Europe)",
+                "Le module d’apprentissage Ressentez le code vous permettra de renforcer le bien-être social et émotionnel de vos élèves en reconnaissant, expliquant, comprenant et répondant aux sentiments et émotions positifs et négatifs dans le but de développer leur empathie et leur résilience.  Ce module d’apprentissage propose des activités inspirantes et attrayantes destinées à aider vos élèves à développer les aptitudes requises pour gérer différentes émotions par le biais du codage. Vos élèves apprendront à exprimer leurs sentiments et à réagir aux émotions de leurs camarades à l’aide d’une Bee-Bot.",
+                "Le module d’apprentissage Ressentez le code comprend trois plans de cours qui font appel à une Bee-Bot éducative pour créer des activités encourageant les élèves à aborder le sujet des émotions et à développer leur empathie. Dans le plan de cours destiné à l’école primaire, les élèves programment la Bee-Bot pour parler d’émotions telles que la tristesse, la joie, la peur et la colère et découvrir les raisons pour lesquelles eux-mêmes et leurs camarades ressentent ces émotions. Le plan de cours destiné au 1er cycle du secondaire encourage les élèves à programmer la Bee-Bot, à reconnaître leurs propres sentiments et ceux de leurs camarades, à en comprendre les causes et à y répondre. Le plan de cours destiné au 2e cycle du secondaire permet aux élèves de piloter la Bee-Bot et d’inventer des histoires sur les sentiments, la résilience et l’empathie.",
+                "Si vous ne disposez pas d’une Bee-Bot éducative dans votre classe, ce module d’apprentissage vous donnera des idées d’activités non connectées qui stimulent le développement des compétences sociales et émotionnelles. Le tableau interactif ci-dessous présente brièvement les activités que vous pouvez réaliser dans votre classe:"
+            ],
+            "activities" => [
+                "1" => "Coder – Ressentir – Apprendre pour les élèves du primaire",
+                "2" => "Mon cœur n’est pas fait de pierre pour les élèves du 1er cycle du secondaire",
+                "3" => "Codez-moi selon l’humeur pour les élèves du 2e cycle du secondaire",
+            ]
+        ],
 
 
     ],

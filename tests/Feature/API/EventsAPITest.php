@@ -10,11 +10,13 @@ use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Validation\ValidationException;
 use Tests\TestCase;
 
-class EventsAPITest extends TestCase {
+class EventsAPITest extends TestCase
+{
     use DatabaseMigrations;
 
     /** @test */
-    public function it_should_return_events_in_hamburg() {
+    public function it_should_return_events_in_hamburg()
+    {
         create(
             'App\Event',
             [
@@ -63,7 +65,8 @@ class EventsAPITest extends TestCase {
     }
 
     /** @test */
-    public function it_should_return_events_geolocalized_for_specific_year() {
+    public function it_should_return_events_geolocalized_for_specific_year()
+    {
         create(
             'App\Event',
             [
@@ -113,7 +116,8 @@ class EventsAPITest extends TestCase {
     }
 
     /** @test */
-    public function it_should_return_events_geolocalized_for_current_year_by_default() {
+    public function it_should_return_events_geolocalized_for_current_year_by_default()
+    {
         $pastEvent = create('App\Event', [
             'title' => '2020 Event',
             'longitude' => 9.87985,
@@ -142,7 +146,8 @@ class EventsAPITest extends TestCase {
     }
 
     /** @test */
-    public function it_should_not_return_events_with_bad_year() {
+    public function it_should_not_return_events_with_bad_year()
+    {
         $this->withoutExceptionHandling();
         try {
             $response = $this->json(
@@ -158,7 +163,8 @@ class EventsAPITest extends TestCase {
     }
 
     /** @test */
-    public function it_should_not_return_non_approved_events() {
+    public function it_should_not_return_non_approved_events()
+    {
         $pendingEvent = create('App\Event', [
             'title' => 'Pending Event',
             'longitude' => 9.87985,
@@ -186,7 +192,8 @@ class EventsAPITest extends TestCase {
     }
 
     /** @test */
-    public function it_should_not_return_events_with_latitude_too_wide() {
+    public function it_should_not_return_events_with_latitude_too_wide()
+    {
         $this->withoutExceptionHandling();
 
         $response = $this->json(
@@ -201,7 +208,8 @@ class EventsAPITest extends TestCase {
     }
 
     /** @test */
-    public function it_should_not_return_events_with_longitude_too_wide() {
+    public function it_should_not_return_events_with_longitude_too_wide()
+    {
         $this->withoutExceptionHandling();
 
         $response = $this->json(
@@ -214,4 +222,64 @@ class EventsAPITest extends TestCase {
         $response->assertStatus(500);
         $this->assertEquals('Area is too wide', $errorMessage);
     }
+
+    /** @test */
+    public function it_should_return_german_events()
+    {
+
+        $frenchEvent = create('App\Event', [
+            'country_iso' => 'FR',
+            'status' => 'APPROVED',
+            'end_date' => Carbon::now()->setYear(2022)
+        ]);
+
+        $germanEvent = create('App\Event', [
+            'title' => 'Good Event',
+            'status' => 'APPROVED',
+            'country_iso' => 'DE',
+            'end_date' => Carbon::now()->setYear(2022)
+        ]);
+
+        $importedGermanEvent = create('App\Event', [
+            'title' => 'Imported Event',
+            'status' => 'APPROVED',
+            'country_iso' => 'DE',
+            'codeweek_for_all_participation_code' => 'cw22-bonn',
+            'end_date' => Carbon::now()->setYear(2022)
+        ]);
+
+        $response = $this->json(
+            'GET',
+            '/api/events/germany?year=2022',
+        );
+
+        $data = $response->decodeResponseJson()['data'];
+
+        $this->assertCount(2, $data);
+
+        $this->assertEquals('Good Event', $data[0]['title']);
+        $this->assertEquals('Imported Event', $data[1]['title']);
+
+        $this->assertFalse($data[0]['imported_from_german_feeds']);
+        $this->assertTrue($data[1]['imported_from_german_feeds']);
+    }
+
+    /** @test */
+    public function it_should_get_one_event_details()
+    {
+
+        $event = create('App\Event', [
+            'id' => 1456,
+            'status' => 'APPROVED',
+            'title' => 'foobar'
+        ]);
+
+        $response = $this->getJson('/api/event-detail/1456');
+
+        $this->assertEquals($response['data']['title'], $event->title);
+
+    }
+
+
+
 }

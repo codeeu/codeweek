@@ -6,6 +6,7 @@ use App\Country;
 use App\Event;
 use Carbon\Carbon;
 use App\User;
+use Illuminate\Support\Facades\Log;
 
 class EventHelper {
     public static function getCloseEvents($longitude, $latitude, $id = 0) {
@@ -59,6 +60,76 @@ class EventHelper {
         return $events;
     }
 
+
+
+    private static function getPendingEventsForCountry($country) {
+
+        $events = Event::where('status', '=', 'PENDING')
+            ->where('start_date', '>', Carbon::createFromDate(2018, 1, 1))
+            ->where('country_iso', $country)
+            ->get();
+
+        return $events;
+    }
+
+    private static function getPendingEventsCountForCountry($country) {
+
+        $count = Event::where('status', '=', 'PENDING')
+            ->select('country_iso')
+            ->where('start_date', '>', Carbon::createFromDate(2018, 1, 1))
+            ->where('country_iso', $country)
+            ->count();
+
+        return $count;
+    }
+
+    private static function getEventsQuery(){
+        return Event::where('status', '=', 'PENDING')
+            ->where('start_date', '>', Carbon::createFromDate(2018, 1, 1));
+    }
+    public static function getPendingEvents(?String $country = null) {
+
+        if (is_null($country)){
+            //Get pending events for all countries
+            return self::getEventsQuery()->get();
+        } else {
+            //Get pending events for specific country
+            return self::getPendingEventsForCountry($country);
+        }
+
+    }
+
+    public static function getPendingEventsCount(?String $country = null) {
+
+        if (is_null($country)){
+            //Get pending events count for all countries
+            return self::getEventsQuery()->count();
+        } else {
+            //Get pending events count for specific country
+            return self::getPendingEventsCountForCountry($country);
+        }
+
+
+    }
+
+    public static function getNextPendingEvent(Event $event, ?String $country = null){
+        if (is_null($country)){
+            //Get pending events count for all countries
+            return self::getEventsQuery()->where('id','>',$event->id)->limit(1)->first();
+        } else {
+            //Get pending events count for specific country
+            return Event::where('status', '=', 'PENDING')
+                ->where('country_iso', $country)
+                ->where('start_date', '>', Carbon::createFromDate(2018, 1, 1))
+                ->where('id','<>',$event->id)->limit(1)->first();
+
+
+        }
+
+    }
+
+
+
     public static function getOnlineEvents() {
         $events = Event::where([
             'activity_type' => 'open-online',
@@ -92,5 +163,12 @@ class EventHelper {
             ->get();
 
         return $events;
+    }
+
+    public static function trimGeoposition($latitude, $longitude, $precision = 2){
+
+        $result = round($latitude,$precision, PHP_ROUND_HALF_DOWN) . "," . round($longitude, $precision, PHP_ROUND_HALF_DOWN);
+        Log::info($result);
+        return $result;
     }
 }

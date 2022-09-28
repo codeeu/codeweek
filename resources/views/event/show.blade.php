@@ -12,9 +12,11 @@
             @if($event->certificate_url)
                 <reported-event :event="{{$event}}"></reported-event>
             @else
-                <moderate-event :event="{{$event}}"></moderate-event>
+                <moderate-event :event="{{$event}}" :pending-counter="{{auth()->user()->getEventsToReviewCount()}}" :next-pending="'{{optional(auth()->user()->getNextPendingEvent($event))->path()}}'"></moderate-event>
             @endif
         @endcan
+
+
 
         @can('report', $event)
             <report-event :event="{{$event}}"></report-event>
@@ -175,15 +177,9 @@
 
                                 @foreach($event->tags as $tag)
 
-                                    <x-pill type="tag">
+                                    <x-pill-tag type="tag" slug="{{$tag->slug}}">
                                         {{$tag->name}}
-                                    </x-pill>
-
-
-
-
-
-
+                                    </x-pill-tag>
 
                                 @endforeach
                             </ul>
@@ -264,6 +260,7 @@
             "renderTo" : "events-show-map",
             "custom": ["/js/hideMenuMap.js","/js/leaflet.markercluster.js"]
         }
+
 
 
 
