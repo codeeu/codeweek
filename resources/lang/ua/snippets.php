@@ -1,48 +1,65 @@
 <?php
 
 return [
-    "featured-activities" => "Vous trouverez ici les prochaines activités organisées dans le cadre de la Semaine européenne du code auxquelles il est possible de participer en ligne. Vous pouvez filtrer les activités par langue et par mois, et cliquer sur «Détails» pour obtenir plus d’informations sur une activité et les coordonnées des organisateurs. Bon amusement!",
-    "learn" => "UA Le codage et la programmation sont des compétences clés qui sont de plus en plus recherchées dans tous les domaines, et la Semaine européenne du code est là pour vous aider à apprendre! Parcourez notre catalogue et trouvez la ressource parfaite pour commencer ou poursuivre votre apprentissage du codage. Toutes ces ressources sont gratuites. N’oubliez pas que vous pouvez filtrer vos résultats de recherche par type de ressource, par niveau de compétence, par langage de programmation, par catégorie et par langue.",
-    "teach" => "Le codage et la programmation sont des compétences clés qui ouvriront de nouvelles possibilités à vos étudiants et vos enfants. Vous souhaitez enseigner le codage depuis chez vous, à l’école ou dans un club de codage? Parcourez notre catalogue et trouvez la ressource la plus adaptée pour intégrer le codage et la programmation à vos pratiques d’enseignement. Toutes ces ressources sont gratuites. N’oubliez pas que vous pouvez filtrer vos résultats de recherche par type de ressource, par niveau de compétence, par langage de programmation, par sujet, par catégorie et par langue.",
+
+    "featured-activities" => "Тут представлено майбутні основні заходи Тижня кодування ЄС, які раді прийняти учасників у режимі онлайн. Ви можете відфільтрувати їх за мовою та місяцем і, натиснувши «Переглянути», побачити всю інформацію про захід і контакти організатора. Приємного перегляду!",
+    "learn" => "Кодування і програмування — ключові навички, попит на які зростає в усіх галузях, а Тиждень кодування ЄС прагне підтримати Вас у навчанні! Перегляньте наше сховище та виберіть ідеальний ресурс, щоб розпочати або продовжити свою мандрівку в кодування. Усі ці ресурси безоплатні. Не забувайте про можливість налаштувати фільтр пошуку за типом ресурсу, рівнем знань, мовою програмування, категорією та мовою.",
+    "teach" => "Кодування і програмування — ключові навички, які відкриють нові можливості для Ваших учнів та дітей. Бажаєте навчати кодуванню вдома, у школі або в клубі кодування? Перегляньте наше сховище та виберіть найвідповідніший ресурс для того, щоб впровадити кодування та програмування у свою викладацьку практику. Усі ці ресурси безоплатні. Не забувайте про можливість налаштувати фільтр пошуку за типом ресурсу, рівнем знань, мовою програмування, предметом, категорією та мовою.",
     "toolkits" => [
-        "Dans cette section, vous trouverez des outils qui vous aideront à organiser votre activité dans le cadre de la Semaine européenne du code, et à promouvoir l’initiative auprès de votre communauté. ",
-        "Boîte à outils de communication",
-        "vous trouverez ici tous les matériels officiels de la Semaine européenne du code: logos, badge, prospectus, affiche, modèles de documents PowerPoint et Word, exemples de publications sur les réseaux sociaux et illustrations.",
-        "Boîte à outils pour les enseignants",
-        "vous trouverez ici tous les matériels officiels de la Semaine européenne du code: logos, badge, modèles de certificats de participation pour vos étudiants, présentation introductive de la Semaine européenne du code et matériel destiné aux réseaux sociaux.",
-        "Brochure officielle de la Semaine européenne du code.",
-    ],
-    "about" => [
-        "goal" => "L’objectif est d’aider davantage de jeunes à maîtriser les bases du codage et de la pensée computationnelle."
-    ],
-    "guide" => [
-        "tutorials" => [
-            "1" => "Consultez nos",
-            "2" => "tutoriels et formations",
-            "3" => "disponibles en 29 langues, pour organiser des activités de découverte du codage et de la pensée computationnelle pour les jeunes.",
-        ]
-    ],
-    "dance" => [
-        "menu" => "Le Dance Challenge",
-        "subtitle" => "Qui a dit que les programmeurs ne savaient pas danser? Nous allons prouver le contraire avec le défi #CodeWeekDance.",
-        "content" => "Toutes les écoles, les enseignants, les bibliothèques, les clubs de codage, les entreprises et les pouvoirs publics sont invités à célébrer la semaine européenne du code en organisant une activité #CodeWeekDance et en l’ajoutant à la carte de la semaine du code."
-    ],
-    "treasure-hunt" => [
-        "menu" => "Chasse au trésor",
-        "subtitle" => "Ce jeu se joue sur Telegram",
+        "У цьому розділі Ви знайдете матеріали, які допоможуть Вам організувати захід Тижня кодування ЄС та підтримати ініціативу зі своєю спільнотою.",
+        "Набір комунікаційних інструментів",
+        "тут ви знайдете офіційні логотипи, знаки, флаєри, постери, шаблони PowerPoint і Word, приклади дописів у соціальних мережах та ілюстрації Тижня кодування ЄС.",
+        "Набір учительських інструментів",
+        "тут Ви знайдете офіційні логотипи, знаки Тижня кодування ЄС, шаблон сертифіката про участь для своїх учнів, вступну презентацію про Тиждень кодування ЄС та матеріали для соціальних мереж.",
+        "Офіційна брошура Тижня кодування ЄС.",
     ],
 
+    "about" => [
+
+        "goal" => "Ціль — допомогти більшій кількості молодих людей опанувати основи кодування та обчислювального мислення."
+
+    ],
+
+    "guide" => [
+
+        "tutorials" => [
+
+            "1" => "Перегляньте наші",
+
+            "2" => "посібники і тренінги,",
+
+            "3" => "доступні 29 мовами, щоб підготуватися до організації заходів, у межах яких молодь вивчає кодування та обчислювальне мислення.",
+
+        ]
+
+    ],
+
+    "dance" => [
+
+        "menu" => "Танцювальний виклик",
+
+        "subtitle" => "Хто сказав, що програмісти не вміють танцювати? Ми доведемо зворотне через виклик #CodeWeekDance.",
+
+        "content" => "Запрошуємо усі школи, усіх вчителів, усі бібліотеки, клуби кодування, компанії та державні органи  відзначити Тиждень кодування ЄС, організувавши захід #CodeWeekDance та додавши його на карту Тижня кодування."
+
+    ],
+
+    "treasure-hunt" => [
+
+        "menu" => "Полювання на скарби",
+
+        "subtitle" => "Це гра в Telegram",
+
+    ],
 
     "videos" => [
-        1 => "Voir les ambassadeurs de la semaine européenne du code s’exprimer sur nos valeurs",
-        2 => "Voir Katja Osljak, ambassadrice de Slovénie, expliquer pourquoi la semaine du code est indépendante",
-        3 => "Voir Laurent Touché, ambassadeur de France, expliquer pourquoi la semaine du code est conçue pour tout le monde",
-        4 => "Voir Fatma Bouaziz, ambassadrice de Tunisie, expliquer pourquoi la semaine du code est mondiale",
-        5 => "Voir Linda Sinka, ambassadrice de Lettonie, expliquer pourquoi la semaine du code repose sur la coopération",
-        6 => "Voir Alessandro Bogliolo, ambassadeur d’Italie, expliquer pourquoi la semaine du code n’est pas à but lucratif",
-        7 => "Voir Marjana Prifti, ambassadrice d’Albanie, expliquer pourquoi la semaine du code favorise l’innovation et la créativité",
-        8 => "Voir Cristiana Lucaci, ambassadrice de Roumanie, expliquer pourquoi la semaine du code est reconnaissante envers sa communauté",
+        1 => "Дивитися відео про наші цінності від послів Тижня кодування ЄС",
+        2 => "Дивитися відео від посла Словенії Каті Ошляк про те, чому Тиждень кодування незалежний",
+        3 => "Дивитися відео від посла Франції Лорана Туше про те, чому Тиждень кодування для кожного",
+        4 => "Дивитися відео від посла Тунісу Фатьми Буазіз про те, чому Тиждень кодування глокальний",
+        5 => "Дивитися відео від посла Латвії Лінди Сінки про те, чому Тиждень кодування — це співпраця",
+        6 => "Дивитися відео від посла Італії Алессандро Больйоло про те, чому Тиждень кодування неприбутковий",
+        7 => "Дивитися відео від посла Албанії Мар’яни Пріфті про те, чому Тиждень кодування заохочує до інновацій та творчості",
+        8 => "Дивитися відео від посла Румунії Крістіани Лукачі про те, чому Тиждень кодування вдячний своїй спільноті"
     ]
-
-
 ];

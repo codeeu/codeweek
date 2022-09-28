@@ -2,43 +2,45 @@
 
 return [
 
-    'title' => 'Défi Code Week 4 All UA',
-    'text' => 'Le défi Code Week 4 All vous encourage à lier vos activités à celles organisées par des amis, des collègues et des connaissances pour obtenir ensemble le certificat d’excellence Code Week.',
+    'title' => 'Задача «Code Week 4 All»',
+    'text' => 'Задача «Code Week 4 All» («Тиждень кодування для всіх») заохочує вас об’єднувати свої заходи із заходами, що їх організували друзі, колеги та знайомі, і  здобути разом сертифікат про досконалість.',
     'what' => [
-        'title' => 'De quoi s’agit-il?',
-        'content' => '<p>En plus de soumettre votre activité à la carte de la Semaine européenne du code, vous pouvez inciter des personnes de votre réseau à en faire autant. Si vous et votre alliance atteignez l’un des seuils suivants, chacun obtiendra le certificat d’excellence Code Week!</p>
-                            <p>Critères pour décrocher le Certificat d’excellence:</p>',
-        'criteria1' => '500 étudiants participants',
-        'criteria2' => '10 activités liées (par 10 organisateurs différents)',
-        'criteria3' => '3 pays impliqués',
-        'andor' => 'et/ou',
+        'title' => 'Що це?',
+        'content' => '<p>
+ Окрім додання свого заходу на карту Тижня кодування ЄС, Ви також можете залучити інших до своєї мережі, аби вони зробили так само. Якщо ви зі своїм об’єднанням досягнете одного із зазначених нижче порогів, то всі учасники об’єднання отримають сертифікат про досконалість від Тижня кодування !
+                    </p>
+                    <p>
+Критерії для отримання сертифіката про досконалість:
+                    </p>',
+        'criteria2' => 'об’єднано 10 заходів (від 10 різних організаторів)',
+        'criteria3' => 'залучено 3 країни',
+ 'or' => 'або',
     ],
     'howto' => [
-        'title' => 'Comment participer?',
-        'content' => 'Rendez-vous sur la page <a href="/add">Ajouter une activité</a> et renseignez les détails requis de votre activité de codage.',
+        'title' => 'Як взяти участь?',
+ 'content' => 'Перейдіть на сторінку <a href="/add">Додати захід</a> та внесіть необхідні дані про свій захід із кодування.',
         'first_alliance' => [
-            'title' => 'Si vous être le premier représentant de votre alliance:',
-            '1' => 'Cliquez sur Soumettre.',
-            '2' => 'Une fois votre activité acceptée, vous recevrez un email de confirmation avec votre code unique Code Week 4 All.',
-            '3' => 'Copiez le code et partagez-le avec vos collègues et les autres membres de votre réseau qui organisent également une activité de codage. Faites passer le mot pour encourager les autres à participer!',
-            '4' => 'À la fin de la campagne, tous les organisateurs d’activités seront invités à indiquer le nombre de participants qu’ils ont réussi à fédérer. Si vous réussissez à atteindre le seuil, vous et les collègues de votre réseau obtiendrez le Certificat d’excellence!'
+            'title' => 'Якщо Ви перший учасник об’єднання:',
+            '1' => 'Натисніть «Надіслати».',
+            '2' => 'Щойно Ваш захід буде схвалено, Ви отримаєте електронний лист-підтвердження з унікальним кодом від «Code Week 4 All».',
+            '3' => 'Скопіюйте код та поділіться ним зі своїми колегами та іншими людьми з Вашої мережі, які також організовують захід із кодування. Поширюйте інформацію, щоб заохотити інших до участі!',
+            '4' => 'Після завершення кампанії всі організатори заходів повинні відзвітувати про кількість залучених ними учасників. Якщо Вам вдалося досягти порогу, то Ви з колегами, які є частиною Вашої мережі, отримаєте Сертифікат про досконалість!'
         ],
         'existing_alliance' => [
-            'title' => 'Si vous rejoignez une alliance existante:',
-            '1' => 'Collez le code que vous avez reçu de l’initiateur, le premier à avoir créé l’alliance, dans la cellule de champ CODE CODE WEEK 4 ALL.',
-            '2' => 'Cliquez sur Soumettre.',
-            '3' => 'Faites passer le mot (et le code!) pour que davantage d’organisateurs rejoignent votre alliance.',
-            '4' => 'À la fin de la campagne, tous les organisateurs d’activités seront invités à indiquer le nombre de participants qu’ils ont réussi à fédérer. Si vous réussissez à atteindre le seuil, vous et les collègues de votre réseau obtiendrez le Certificat d’excellence!'
+            'title' => 'Якщо Ви долучаєтеся до вже створеного об’єднання:',
+            '1' => 'Вставте код, який Ви отримали від ініціатора — особи, яка створила об’єднання — у поле «КОД ДЛЯ „CODE WEEK 4 ALL“».',
+            '2' => 'Натисніть «Надіслати».',
+            '3' => 'Поширюйте інформацію (і код!),  аби більше організаторів долучилося до вашого об’єднання.',
+            '4' => 'Після завершення кампанії всі організатори заходів повинні відзвітувати про кількість залучених ними учасників. Якщо Вам вдалося досягти порогу, то Ви з колегами, які є частиною Вашої мережі, отримаєте сертифікат про досконалість!'
         ]
     ],
     'why' => [
-        'title' => 'Pourquoi rejoindre le défi?',
-        '1' => 'Pour diffuser le message sur l’importance du codage.',
-        '2' => 'Pour qu’un grand nombre d’étudiants s’implique.',
-        '3' => 'Pour créer des connections avec des organisations et/ou écoles dans votre communauté ou au niveau international',
-        '4' => 'Pour trouver un soutien auprès d’autres organisateurs et enseignants.',
-        '5' => 'Pour obtenir un <strong>Certificat d’excellence.</strong>'
-    ]
-
+        'title' => 'Навіщо долучатися до задачі?',
+        '1' => 'Щоб розповісти про важливість  кодування.',
+        '2' => 'Щоб залучити велику кількість учнів.',
+        '3' => 'Щоб налагодити зв’язки з організаціями та/або школами у своїй громаді і на міжнародному рівні.',
+        '4' => 'Щоб отримати допомогу від інших організаторів та вчителів.',
+        '5' => 'Щоб отримати <strong>сертифікат про досконалість.</strong>'
+    ],
 
 ];

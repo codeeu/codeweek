@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'previous' => 'Précédent UA',
-    'next' => 'Suivant',
+
+    'previous' => 'Попередня',
+    'next' => 'Наступна',
+
 
 ];

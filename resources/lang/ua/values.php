@@ -2,64 +2,65 @@
 
 
 return [
-    'title' => 'Déclaration de valeur de la Code Week de l’UE UA',
+    'title' => 'Заява про цінності Тижня кодування ЄС',
     'description' => [
         1 =>
             [
-                1 => 'La Code Week de l’UE est un mouvement animé par des bénévoles,',
-                2 => 'des ambassadeurs',
-                3 => 'des enseignants de renom passionnés de codage, à travers le monde entier. Ce mouvement est soutenu par la',
-                4 => 'Commission européenne',
-                5 => 'et les ministères de l’Éducation de l’Union européenne et des pays des Balkans occidentaux.',
+                1 => 'Тиждень кодування ЄС — це рух, втілений волонтерами –',
+                2 => 'послами',
+                3 => ', провідними вчителями і фанатами кодування з усього світу. Його підтримують',
+                4 => 'Європейська комісія',
+                5 => 'та міністерства освіти в країнах Європейського Союзу і Західних Балкан.',
             ],
 
-        2 => 'Au cœur de la Code Week de l’UE se trouve la communauté des organisateurs d’activités bénévoles qui sont des enseignants, des mentors, des clubs de codage, des bibliothèques, des entreprises privées, des parents et des organisations non gouvernementales. Nous consacrons notre temps, notre énergie et nos compétences à répandre le raisonnement informatique, le codage, la robotique, le bidouillage de matériel, l’informatique et les compétences numériques en général auprès du plus grand nombre possible d’utilisateurs en Europe et dans le monde.',
-        3 => 'La Code Week de l’UE, c’est aussi des millions de participants, qui sont des personnes de tous sexes, âges, origines, cultures et compétences, venues des quatre coins du globe.',
-        4 => 'Nous sommes fiers de représenter la Code Week de l’UE. Voici nos valeurs. Elles guident notre travail et nos décisions à tout moment.',
+        2 => 'Серцем Тижня кодування ЄС є спільнота організаторів-волонтерів заходів, а саме, вчителі, наставники, клуби кодування, бібліотеки, приватні компанії, батьки та неурядові організації. Вони присвячують свій час, енергію та вміння, щоб познайомити з обчислювальним мисленням, кодуванням, робототехнікою, ремонтом апаратного забезпечення, комп’ютерними науками та цифровими навичками загалом якомога більше людей у Європі та в світі.',
+        3 => 'Тиждень кодування ЄС — це також мільйони його учасників, а саме, люди будь-якої статі, будь-якого віку та походження, будь-якої культури та з будь-якими навичками з усього світу.',
+        4 => 'Ми пишаємося, що ми — Тиждень кодування ЄС. Це наші цінності. І вони завжди керують нашою роботою та нашими рішеннями.'
     ],
     '1' => [
-        'title' => 'La Code Week de l’UE est indépendante.',
-        'content' => 'La Code Week de l’UE est une communauté de bénévoles. Nous n’agissons pas par intérêt économique. Nous respectons et apprécions les idées, les croyances et les cultures des autres. Nous participons à la Code Week de l’UE, car nous croyons en l’importance de nos actions. C’est ce qui fait notre force. Nous voulons rendre le raisonnement informatique, le codage, la programmation, l’informatique, la robotique, le bricolage de matériel et les compétences numériques en général accessibles à tous.',
+        'title' => 'Тиждень кодування ЄС незалежний',
+        'content' => 'Тиждень кодування ЄС — це спільнота, рушійною силою якої є волонтери. Ми не працюємо в економічних інтересах. Ми поважаємо та цінуємо ідеї, переконання і культури інших людей. Ми беремо участь у Тижні кодування ЄС, тому що віримо у важливість того, що робимо. Це наша сила. Ми хочемо, щоб обчислювальне мислення, кодування, робототехніка, ремонт апаратного забезпечення, комп’ютерні науки та цифрові навички загалом стали доступними для кожного. '
     ],
     '2' => [
-        'title' => 'La Code Week de l’UE s’adresse à tout le monde.',
-        'content' => 'Tout le monde peut organiser des activités dans le cadre de la Code Week de l’UE. Nous comprenons l’importance d’organiser les événements de la Code Week européenne en faveur de tout un chacun, quels que soient l’âge, la couleur, le sexe, le contexte culturel ou les capacités intellectuelles. Les activités peuvent être un point d’entrée pour susciter l’intérêt et la curiosité, ou renforcer le développement des compétences. L’égalité, le respect, la liberté et l’intégration sont nos principes. Nous voulons que tous les participants puissent expérimenter et créer en ayant recours à la technologie d’une manière ludique.',
+        'title' => 'Тиждень кодування ЄС для кожного',
+        'content' => 'Кожен може організувати заходи в рамках Тижня кодування ЄС. Ми розуміємо, наскільки важливо, аби події Тижня кодування ЄС було організовано для кожного незалежно від віку, кольору шкіри, статті, культурного виховання та інтелектуальних здібностей. Заходи можуть слугувати відправною точкою для пробудження інтересу та зацікавленості або допомогти розвинути навички ще далі.  Наші принципи — рівність, повага, свобода та інклюзивність. Ми хочемо, аби всі учасники пізнавали технології і творили з ними весело.'
     ],
     '3' => [
-        'title' => 'La Code Week de l’UE est glocale',
+        'title' => 'Тиждень кодування ЄС глокальний',
         'content' =>
             [
-                1 => 'La Code Week de l’UE a pour ambition de vous toucher, que vous viviez dans une grande ville, une capitale/ville principale régionale ou un village isolé. Nous accordons une attention particulière au soutien des organisateurs locaux en leur fournissant du ',
-                2 => 'matériel',
-                3 => 'dans leur langue et adapté à leurs besoins.',
-                4 => 'La carte de la Code Week de l’UE',
-                5 => 'constitue un outil clé permettant d’enregistrer chaque activité et de la localiser avec précision. En même temps, la Code Week de l’UE est mondiale, elle touche des personnes du monde entier dans sa communauté. Nous sommes « glocaux ».',
+                1 => 'Тиждень кодування ЄС прагне потрапити до Вас незалежно від того, чи Ви живете у великому місті, в адміністративному центрі чи у віддаленому селі. Ми приділяємо особливу увагу підтримці місцевих організаторів',
+                2 => 'матеріалами,',
+                3 => 'укладеними їхньою рідною мовою та пристосованими до їхніх потреб. Карта',
+                4 => 'Тижня кодування ЄС —',
+                5 => 'ключовий інструмент, де реєструють усі заходи та зазначають їхню точну локацію. Разом із тим, Тиждень кодування ЄС є глобальним і радо приймає до своєї спільноти людей з усього світу. Ми «глокальні».',
             ]
     ],
     '4' => [
-        'title' => 'La Code Week de l’UE est placée sous le signe de la coopération.',
+        'title' => 'Тиждень кодування ЄС — це співпраця',
         'content' => [
-            1 => 'Les membres de la communauté de la Code Week européenne interagissent, échangent des informations, apprennent les uns des autres et bâtissent ensemble des connaissances. Nous sommes connectés et nous nous soutenons mutuellement. Nous partageons les ressources, les idées et les bonnes pratiques. Nous encourageons les partenariats et le partage des connaissances.',
-            2 => 'Le EU Code Week 4 All challenge',
-            3 => 'vise à établir des liens par-delà les frontières et les communautés. Il contribue à diffuser l’énergie positive et à mettre en relation des personnes qui peuvent apprendre les unes des autres.'
+            1 => 'Члени спільноти Тижня кодування ЄС взаємодіють, обмінюються інформацією, навчаються один в одного та здобувають знання разом. Ми взаємопов’язані та підтримуємо один одного. Ми обмінюємося ресурсами, ідеями та успішними практиками. Ми заохочуємо партнерство та обмін знаннями.',
+            2 => 'Виклик «EU Code Week 4 All»',
+            3 => 'має на меті прокласти мости між країнами та спільнотами. Він допомагає поширювати позитивну енергетику та об’єднує людей, які можуть вчитися один в одного.'
+
         ]
     ],
     '5' => [
-        'title' => 'La Code Week de l’UE est sans but lucratif.',
+        'title' => 'Тиждень кодування ЄС неприбутковий',
         'content' =>
             [
-                1 => 'Toutes les activités de la Code Week européenne sont à but non lucratif. Toutes les ',
-                2 => 'ressources',
-                3 => 'du site web de la Code Week de l’UE sont gratuites. Chaque formation, et tous les cours en ligne de la Code Week européenne sont gratuits.'
+                1 => 'Усі заходи Тижня кодування ЄС неприбуткові. Усі ',
+                2 => 'ресурси',
+                3 => 'на вебсайті Тижня кодування ЄС безоплатні. Усі тренінги та онлайн-курси Тижня кодування ЄС безоплатні.',
             ]
     ],
     '6' => [
-        'title' => 'La Code Week de l’UE encourage la créativité et l’innovation',
-        'content' => 'La Code Week de l’UE encourage la créativité, l’innovation et la réflexion prospective. Nous sommes ouverts et reconnaissants des commentaires et des critiques reçus, lesquels nous permettent de prendre des décisions éclairées et de mettre en œuvre la Code Week européenne. Même les échecs nous feront grandir, en tant qu’individus et en tant que communauté.'
+        'title' => 'Тиждень кодування ЄС заохочує до інновацій',
+        'content' => 'Новим ідеям завжди раді. Тиждень кодування ЄС заохочує до інновацій, творчості і далекоглядного мислення. Ми відкриті до зворотного зв’язку та критики і вдячні за них, тому ми зможемо ухвалювати зважені рішення і розвивати Тиждень кодування ЄС. Навіть невдачі допоможуть нам зростати як особистостям та як спільноті.'
     ],
     '7' => [
-        'title' => 'La Code Week de l’UE est reconnaissante envers sa communauté.',
-        'content' => 'Nous remercions les enseignants, les formateurs et autres organisateurs d’activités, les élèves, les parents, les clubs de codage et tous les partenaires avec lesquels nous travaillons et qui nous aident. Nous partageons tous le même objectif. Nous voulons mettre le raisonnement informatique, le codage, l’informatique et les compétences numériques au sens large à la portée du plus grand nombre de personnes possible.'
+        'title' => 'Тиждень кодування ЄС вдячний своїй спільноті',
+        'content' => 'Ми вдячні за підтримку вчителям, наставникам та іншим організаторам заходів, учням, батькам, клубам кодування та всім партнерам, з якими ми працюємо. У нас усіх одна мета. Ми хочемо познайомити якомога більше людей з обчислювальним мисленням, кодуванням, комп’ютерними науками та цифровими навичками загалом.'
     ],
 
 ];

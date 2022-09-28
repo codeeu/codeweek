@@ -45,29 +45,40 @@ return [
         'lu' => 'Luxembourgeois'
     ],
 
-    'resources_local_title' => 'Ressources pour le codage en',
-    'days' => 'Jourss',
-    'hours' => 'Heures',
-    'minutes' => 'Minutes',
-    'seconds' => 'Secondes',
-    'still_have_question' => 'Vous avez d’autres questions?',
-    'drop_us_a_line' => 'Écrivez-nous!',
-    'get_in_touch' => 'CONTACTEZ-NOUS',
+    'resources_local_title' => 'Ресурси щодо кодування від',
+    'days' => 'Дні',
+    'hours' => 'Години',
+    'minutes' => 'Хвилини',
+    'seconds' => 'Секунди',
+
+    'day' => 'День',
+    'hour' => 'Година',
+    'minute' => 'Хвилина',
+    'second' => 'Секунда',
+
+    'still_have_question' => 'Є інше запитання?',
+    'drop_us_a_line' => 'Напишіть нам!',
+    'get_in_touch' => 'ЗВ’ЯЗАТИСЯ',
     'footer_msg' =>
-        'Une initiative citoyenne dirigée par des volontaires et soutenue par la Commission européenne.',
-    'email' => 'Adresse e-mail',
-    'display_email' => 'Afficher adresse e-mail',
-    'first_name' => 'Prénom',
-    'last_name' => 'Nom',
-    'your_website' => 'Votre site web',
-    'biography' => 'Biographie',
-    'update' => 'Mettre à jour',
-    'delete' => 'Supprimer',
-    'choose a file' => 'Choisir un fichier',
-    'learning_bits' => 'Apprentissage',
-    'codeweek' => 'CodeWeek',
-    'bring_codeweek_to_your_students' =>
-        'Faites découvrir la Semaine du code à vos élèves',
-    'or' => 'ou',
-    'newsletter' => 'Newsletter'
+        'Масові ініціативи, втілені волонтерами за підтримки Європейської комісії.',
+
+    'email' => 'Електронна адреса',
+    'display_email' => 'Показати елекстронну адресу',
+    'first_name' => 'Ім’я',
+    'last_name' => 'Прізвище',
+    'your_website' => 'Ваш вебсайт',
+    'biography' => 'Біографія',
+    'update' => 'Оновити',
+    'delete' => 'Видалити',
+    'choose a file' => 'Вибрати файл',
+
+    'learning_bits' => 'Навчальні біти',
+    'codeweek' => 'Тиждень кодування',
+    'bring_codeweek_to_your_students' => 'Розповісти про Тиждень кодування своїм учням',
+
+    'or' => 'або',
+
+    'receive emails' => 'Отримувати електронні листи від нас',
+    'newsletter' => 'Бюлетень'
+
 ];

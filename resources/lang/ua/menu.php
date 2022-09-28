@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Authentication Language Lines
@@ -13,32 +12,39 @@ return [
     |
     */
 
-    'learn' => 'Apprendre',
-    'teach' => 'Enseigner',
-    'training' => 'Formation', 'toolkits' => 'Présentations et outils', 'why' => 'Pourquoi', 'home'  => 'Accueil',
-    'events' => 'zogoo',
-    'ambassadors' => 'Ambassadeurs',
-    'resources' => 'Ressources',
-    'schools' => 'Écoles',
-    'about' => 'À propos',
-    'blog' => 'Blog','news' => 'Actualités',
-    'search' => 'Saisissez votre recherche et appuyez sur «Entrée»',
-    'map' => 'Carte',
-    'add_event' => 'Ajouter un événement',
-    'search_event' => 'Rechercher un événement',
-    'hello' => 'Bonjour',
-    'profile' => 'Profil',
-    'pending' => 'Événements prévus',
-    'your_events' => 'Mes activités',
-    'your_certificates' => 'Mes certificats',
-    'report' => 'Renseigner mes activités',
-    'volunteers' => 'Volontaires',
-    'logout' => 'Déconnexion',
-    'signin' => 'Connexion',
-    'privacy' => 'Confidentialité',
-    'participation'=> 'Certificat de participation',
-    'values' => 'Nos valeurs',
-    'featured_activities' => 'Activités en vedette',
-    'codeweek2020' => 'Edition 2020'];
-
-        
+    'learn' => 'Навчайтеся',
+    'teach' => 'Навчайте',
+    'training' => 'Тренінги',
+    'challenges' => 'Виклики',
+    'toolkits' => 'Презентації і набори інструментів',
+    'why' => 'Чому',
+    'home' => 'Головна сторінка',
+    'events' => 'Заходи',
+    'ambassadors' => 'Посли',
+    'resources' => 'Ресурси',
+    'schools' => 'Школи',
+    'about' => 'Про нас',
+    'blog' => 'Блог',
+    'news' => 'Новини',
+    'search' => 'Пошук...',
+    'map' => 'Карта',
+    'add_event' => 'Додати захід',
+    'search_event' => 'Шукати заходи',
+    'hello' => 'Привіт',
+    'profile' => 'Профіль',
+    'pending' => 'Заходи, що тривають',
+    'your_events' => 'Мої заходи',
+    'your_certificates' => 'Мої сертифікати',
+    'report' => 'Відзвітувати про мої заходи',
+    'volunteers' => 'Волонтери',
+    'logout' => 'Вийти',
+    'signin' => 'Увійти',
+    'privacy' => 'Конфіденційність',
+    'stats' => 'Статистика',
+    'participation' => 'Сертифікат про участь',
+    'coding@home' => 'Coding@Home',
+    'values' => 'Наші цінності',
+    'online_events' => 'Онлайн-заходи',
+    'featured_activities' => 'Основні заходи',
+    'codeweek2020' => 'Версія 2020'
+];

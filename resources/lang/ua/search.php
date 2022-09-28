@@ -12,20 +12,23 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'audience_title' => 'PublicUA',
-    'theme_title' => 'Thème',
+    'audience_title'=>'Аудиторія',
+    'theme_title'=>'Тема',
 
-    'placeholder' => 'Rechercher le nom ou l’étiquette de l’événement',
-    'submit' => 'Rechercher',
-    'label_country' => 'Choisir un pays',
+    'placeholder' => 'Шукати назву заходу або теґ',
+    'submit' => 'Шукати',
+    'label_country' => 'Вибрати країну',
     'last_year_events' => [
-        'label' => 'Inclure les événements de l’année dernière',
-        'yes' => 'Oui',
-        'no' => 'Non'
+        'label' => 'Включити заходи за останні роки',
+        'yes' => 'Так',
+        'no' => 'Ні'
     ],
-    'search_counter' => 'correspond à vos critères de recherche',
-    'event' => 'événement',
-    'events' => 'événements',
-    'year' => 'année',
-    'audiences' => 'Public', 'themes' => 'Thèmes', 'countries' => 'Pays', 'search_placeholder' => 'Chercher par titre ou description ',
+    'search_counter' => 'відповідають Вашим критеріям пошуку',
+    'event'=>'захід',
+    'events'=>'заходи',
+    'year' => 'рік',
+    'audiences'=>'Аудиторії',
+    'themes'=>'Теми',
+    'countries'=>'Країни',
+    'search_placeholder' => 'Шукати за назвою або описом'
 ];
