@@ -11,21 +11,24 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-    'login' => 'Connexion UA',
-    'register' => 'S’enregistrer',
-    'github' => 'Se connecter avec Github',
-    'twitter' => 'Se connecter avec Twitter',
-    'facebook' => 'Se connecter avec Facebook',
-    'google' => 'Se connecter avec Google',
-    'azure' => 'Se connecter avec Azure',
-    'email' => 'Adresse e-mail',
-    'password' => 'Mot de passe',
-    'remember' => 'Se souvenir de moi',
-    'forgotten_password' => 'Mot de passe oublié?',
-    'no_account' => 'Vous n’avez pas de compte?',
-    'signup' => 'S’inscrire',
-    'reset' => 'Réinitialiser votre mot de passe',
-    'send_password' => 'Envoyer le lien permettant de réinitialiser votre mot de passe',
-    'confirm_password' => 'Confirmer le mot de passe',
-    'name' => 'prénom'
+    'login' => 'Увійти',
+    'register' => 'Зареєструватися',
+    'github' => 'Увійти через Github',
+    'twitter' => 'Увійти через Twitter',
+    'facebook' => 'Увійти через Facebook',
+    'google' => 'Увійти через Google',
+    'azure' => 'Увійти через Azure',
+
+    'email' => 'Електронна адреса',
+    'password' => 'Пароль',
+    'remember' => 'Запам’ятати мене',
+    'forgotten_password' => 'Забули пароль ?',
+    'no_account' => 'Не маєте облікового запису ?',
+    'signup' => 'Зареєструватися',
+    'reset' => 'Скинути пароль',
+    'send_password' => 'Надіслати посилання для скидання пароля',
+    'confirm_password' => 'Підтвердити пароль',
+    'name' => 'ім’я'
+
+
 ];

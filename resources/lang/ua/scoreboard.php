@@ -14,9 +14,9 @@ return [
     |
     */
 
-    'title' => 'Dans quels pays les activités de codage font le buzz ? UA',
-    'paragraph'=>'Le tableau de bord reflète le nombre d’événements de codage répertoriés par nombre d’habitants. Ne vous étonnez donc pas si certains petits pays figurent en haut de la liste!',
-    'parcipating_with'=>'participe avec',
-    'events'=>'événements'
+    'title' => 'У яких країнах кипить робота з кодування?',
+    'paragraph'=>'Результати впорядковано за кількістю зазначених заходів із кодування відносно чисельності населення, тому не дивуйтеся, якщо побачите менші країни вище в списку!',
+    'parcipating_with'=>'бере участь із',
+    'events'=>'заходами'
 
 ];
