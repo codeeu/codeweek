@@ -15,7 +15,7 @@
 
 
     <div class="h-8 w-full grid grid-cols-3 gap-4 items-center" v-if="!refresh">
-      <div class="flex-none">Pending Activities: <a href="/review">{{pendingCounter}}</a></div>
+      <div class="flex-none">Pending Activities: <a href="/review">{{ pendingCounter }}</a></div>
       <div class="flex justify-center">
         <div>{{ $t('event.current_status') }}: <strong>{{ status }}</strong> <span
             v-if="event.LatestModeration">({{ event.LatestModeration.message }})</span></div>
@@ -26,11 +26,6 @@
         <button @click="toggleDeleteModal" class="codeweek-action-button red">Delete</button>
       </div>
     </div>
-
-
-
-
-
 
 
     <div v-if="showModal"
@@ -56,21 +51,21 @@
           <div class="relative p-6 flex-auto">
             <p class="text-gray-800 text-lg leading-relaxed">
               This will help the activity organizer to improve his/her submission.
-              <div class="rejectionOptions" style="padding: 10px;">
-                        <multiselect v-model="rejectionOption" :options="rejectionOptions" track-by="title" label="title"
-                                      :close-on-select="true"
-                                      :preserve-search="false" placeholder="Select a rejection reason" :searchable="false"
-                                      :allowEmpty="false"  @input="prefillRejectionText" >
-                            <template slot="singleLabel" slot-scope="{ option }">{{ option.title }}</template>
-                            <pre class="language-json"><code>{{ rejectionOption.title  }}</code></pre>
-                        </multiselect>
+            <div class="rejectionOptions" style="padding: 10px;">
+              <multiselect v-model="rejectionOption" :options="rejectionOptions" track-by="title" label="title"
+                           :close-on-select="true"
+                           :preserve-search="false" placeholder="Select a rejection reason" :searchable="false"
+                           :allowEmpty="false" @input="prefillRejectionText">
+                <template slot="singleLabel" slot-scope="{ option }">{{ option.title }}</template>
+                <pre class="language-json"><code>{{ rejectionOption.title }}</code></pre>
+              </multiselect>
 
-              </div>
-              <textarea id="rejectionText" name="rejectionText" rows="4" cols="40" v-model="rejectionText"
-                        class="px-1 py-1 placeholder-gray-400 text-gray-700 relative bg-blue-200 rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pr-3">
+            </div>
+            <textarea id="rejectionText" name="rejectionText" rows="4" cols="40" v-model="rejectionText"
+                      class="px-1 py-1 placeholder-gray-400 text-gray-700 relative bg-blue-200 rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pr-3">
 
                             </textarea>
-              <!--                            <input type="text" placeholder="Placeholder" />-->
+            <!--                            <input type="text" placeholder="Placeholder" />-->
 
             </p>
           </div>
@@ -144,7 +139,7 @@ import Multiselect from 'vue-multiselect'
 
 export default {
   components: {Multiselect},
-  props: ['event', 'refresh', 'ambassador','pendingCounter','nextPending'],
+  props: ['event', 'refresh', 'ambassador', 'pendingCounter', 'nextPending'],
   name: "reject-activity",
   data() {
     return {
@@ -152,16 +147,31 @@ export default {
       showModal: false,
       showDeleteModal: false,
       rejectionText: '',
-      rejectionOption:'',
-      rejectionOptions: [{'title': "Missing proper descriptions",
-                           'text': "Please improve the description and describe in more detail what you will do and how your activity relates to coding and computational thinking. Thanks!"},
-                         {'title': "Missing important details",
-                           'text': "Provide more details on the activity objectives and goals and how it makes use of technology, coding and critical thinking. Thanks!"},
-                         {'title': "Duplicate",
-                           'text': "This seems to be a duplication of another activity taking place at the same time. If it is not please change the description and change the title so that it is clear that the activities are separate. Thanks!"},
-                         {'title': "Not programming related",
-                           'text': "Provide more information on the activity objectives and goals and how it makes use of technology, coding and critical thinking. Thanks!"}
-                        ]
+      rejectionOption: '',
+      // rejectionOptions: [{'title': "Missing proper descriptions",
+      //                      'text': "Please improve the description and describe in more detail what you will do and how your activity relates to coding and computational thinking. Thanks!"},
+      //                    {'title': "Missing important details",
+      //                      'text': "Provide more details on the activity objectives and goals and how it makes use of technology, coding and critical thinking. Thanks!"},
+      //                    {'title': "Duplicate",
+      //                      'text': "This seems to be a duplication of another activity taking place at the same time. If it is not please change the description and change the title so that it is clear that the activities are separate. Thanks!"},
+      //                    {'title': "Not programming related",
+      //                      'text': "Provide more information on the activity objectives and goals and how it makes use of technology, coding and critical thinking. Thanks!"}
+      //                   ],
+      rejectionOptions: [{
+        'title': this.$t('moderation.description.title'),
+        'text': this.$t('moderation.description.text')
+      },
+        {
+          'title': this.$t('moderation.missing-details.title'),
+          'text': this.$t('moderation.missing-details.text')
+        }, {
+          'title': this.$t('moderation.duplicate.title'),
+          'text': this.$t('moderation.duplicate.text')
+        }, {
+          'title': this.$t('moderation.not-related.title'),
+          'text': this.$t('moderation.not-related.text')
+        }
+      ]
     }
   },
   methods: {
@@ -216,7 +226,7 @@ export default {
           });
 
     },
-    prefillRejectionText(){
+    prefillRejectionText() {
       this.rejectionText = this.rejectionOption.text;
     }
   }
