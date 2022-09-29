@@ -13,30 +13,20 @@ return [
     */
 
     'description' => [
-        'title' => 'Missing proper descriptions',
-        'text' => 'Buna ziua, pentru a putea aproba activitatea avem nevoie de cateva detalii in descriere si sa fie pe tema programarii. Multumim!'
+        'title' => 'Lipsește o descriere adecvată',
+        'text' => 'Vă rugăm să îmbunătățiți descrierea și să menționați în detaliu ce veți face și cum această activitate are legătură cu programarea și gândirea critică. Mulțumim!'
     ],
     'missing-details' => [
-        'title' => 'Missing important details',
-        'text' => 'Bună ziua,
-
-Apreciem implicarea dvoastră, dar puteți adăuga vă rugăm mai multe informații? Ce activități plănuiți să organizați?
-
-Vă mulțumim, suntem aici dacă aveți orice întrebări.'
+        'title' => 'Lipsesc detalii importante',
+        'text' => 'Vă rugăm să adăugați mai multe detalii cu privire la obiectivele activității și cum veți folosi tehnologia, programarea și gândirea critică. Mulțumim!'
     ],
     'duplicate' => [
-        'title' => 'Duplicate',
-        'text' => 'Buna. Am aprobat unul din evenimentele cu acelasi Nume, imagine si timeline. Vad ca sunt cateva duplicate (printre care si acesta)
-
-Va multumim pentru implicare!'
+        'title' => 'Duplicat',
+        'text' => 'Această activitate pare a fi un duplicat după o altă activitate care are loc în același timp. Dacă nu este duplicat, vă rugăm să schimbați descrierea și titlul astfel încât să reflecte că sunt activități diferite.'
     ],
     'not-related' => [
-        'title' => 'Not programming related',
-        'text' => 'Bună ziua,
-
-Apreciem implicarea dvoastră, dar nu înțelegem care este legătura dintre eveniment și programarea sau competențele digitale. Ne puteți lămuri adăugând mai multe informații?
-
-Vă mulțumim, suntem aici dacă aveți orice întrebări.'
+        'title' => 'Nu este despre programare',
+        'text' => 'Vă rugăm să adăugați mai multe informații la obiectivele activității și cum veți folosi tehnologia, programarea și gândirea critică. Mulțumim!'
     ],
 
 ];
