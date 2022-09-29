@@ -34,7 +34,7 @@
     "vue-input-tag": "^1.0.7",
     "vue-multiselect": "^2.1.3",
     "vue-select": "^2.6.4",
-    "vue-tables-2": "^1.6.25",
+    "vue-tables-2": "^2.3.5",
     "vue-template-compiler": "^2.6.11"
   }
 }
