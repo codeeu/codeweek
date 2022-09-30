@@ -300,7 +300,7 @@ return [
             'lingil',
             'ja tunnikava (inglise keeles) leiate sellelt lingilt',
             'Selle õppetunni tegevusi saab teha üksi ja mis tahes järjekorras.',
-            'Õpetaja saab õppimist pildistada ja jagada pilti Instagramis teemaviitega #CodeWeekChallengeGoogle'
+            'Õpetaja saab õppimist pildistada ja jagada pilti Instagramis teemaviitega #CodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Lisaks tegevuste brošüürile on ka lisamaterjale, mida on mõne tegevuse juures vaja või mis neid täiendavad.',

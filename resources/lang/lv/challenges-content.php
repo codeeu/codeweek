@@ -296,7 +296,7 @@ return [
             'saitē',
             'savukārt nodarbību plānu angļu valodā — šajā',
             'Šīs nodarbības aktivitātes var pildīt individuāli un jebkurā secībā',
-            'Skolotājs var uzņemt fotoattēlus no mācību procesa un dalīties ar tām Instagram, izmantojot #CodeWeekChallengeGoogle'
+            'Skolotājs var uzņemt fotoattēlus no mācību procesa un dalīties ar tām Instagram, izmantojot #CodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Papildus aktivitāšu bukletam dažām aktivitātēm ir nepieciešami papildu materiāli vai tās pēc izvēles var uzlabot ar papildu materiāliem.',

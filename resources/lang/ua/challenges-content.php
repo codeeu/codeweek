@@ -302,7 +302,7 @@ return [
             'lien',
             "ainsi qu'un plan de cours en anglais dans ce",
             "Les activités de ce cours peuvent être réalisées individuellement et dans n'importe quel ordre",
-            "L'enseignant peut prendre une photo du processus d'apprentissage et le partager sur Instagram en ajoutant #CodeWeekChallengeGoogle"
+            "L'enseignant peut prendre une photo du processus d'apprentissage et le partager sur Instagram en ajoutant #CodeWeekChallengeGoogle #GrowWithGoogle"
         ],
         'materials' => [
             "en plus de la brochure des activités, certaines activités nécessitent du matériel supplémentaire ou proposent d'en ajouter en option. ",

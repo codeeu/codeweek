@@ -299,7 +299,7 @@ return [
             'länken',
             'samt en lektionsplanering på engelska på den här',
             'Aktiviteterna i den här lektionen kan genomföras individuellt och i vilken ordning som helst',
-            'Läraren kan ta en bild av inlärningsprocessen och dela den på Instagram med hashtaggen #CodeWeekChallengeGoogle'
+            'Läraren kan ta en bild av inlärningsprocessen och dela den på Instagram med hashtaggen #CodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Förutom aktivitetsbroschyren så kan vissa av aktiviteterna kräva, eller bli bättre med, ytterligare material.',

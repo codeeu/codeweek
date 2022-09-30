@@ -303,7 +303,7 @@ return [
             'povezavi',
             'Učni načrt pa lahko najdete na tej',
             'Dejavnosti te lekcije se lahko zaključijo posamično in v poljubnem vrstnem redu',
-            'Učitelj lahko posname sliko učnega procesa in ga deli z drugimi na Instagramu z uporabo ključnika #CodeWeekChallengeGoogle'
+            'Učitelj lahko posname sliko učnega procesa in ga deli z drugimi na Instagramu z uporabo ključnika #CodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Za izvedbo nekaterih dejavnosti je potrebno uporabiti dodatne materiale, ali pa imajo te od njih dodatno korist.',
