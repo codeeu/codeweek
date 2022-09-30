@@ -296,7 +296,7 @@ return [
             'vezi',
             'kao i plan lekcija na engleskom na ovoj',
             'Aktivnosti u ovoj lekciji mogu biti dovršene pojedinačno i u bilo kom redosledu',
-            'Nastavnik može da slika proces učenja i da ga podeli na Instagramu koristeći #CodeWeekChallengeGoogle'
+            'Nastavnik može da slika proces učenja i da ga podeli na Instagramu koristeći #CodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Pored brošure o aktivnostima, neke aktivnosti zahtevaju ili opciono imaju koristi od dodatnih materijala.',

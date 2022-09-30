@@ -296,7 +296,7 @@ return [
             'lidhje',
             'si dhe Planin mësimor në anglisht në këtë',
             'Aktivitetet në këtë mësim mund të kryhen individualisht dhe në çdo rend',
-            'Mësuesi mund të marrë një fotografi të procesit mësimor dhe ta ndajë atë në Instagram duke përdorur #CodeWeekChallengeGoogle'
+            'Mësuesi mund të marrë një fotografi të procesit mësimor dhe ta ndajë atë në Instagram duke përdorur #CodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Përveç broshurës së aktiviteteve, disa aktivitete kërkojnë ose përfitojnë opsionalisht nga materiale shtesë.',

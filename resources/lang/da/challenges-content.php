@@ -300,7 +300,7 @@ return [
             'link',
             'og en læreplan på engelsk på dette',
             'Aktiviteterne i denne lektion kan gennemføres individuelt og i vilkårlig rækkefølge',
-            'Læreren kan tage billeder af læringsprocessen og dele dem på Instagram med #CodeWeekChallengeGoogle'
+            'Læreren kan tage billeder af læringsprocessen og dele dem på Instagram med #CodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Udover brochuren med aktiviteter er der ved nogle aktiviteter behov for, eller det kan være en fordel med, supplerende materialer.',
