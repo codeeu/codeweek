@@ -122,7 +122,7 @@ class MeetAndCodeRSSItem extends Model
             "pub_date" => now(),
             "created" => now(),
             "updated" => now(),
-            "codeweek_for_all_participation_code" => 'cw19-meetcode',
+            "codeweek_for_all_participation_code" => 'cw-meetcode',
             "start_date" => $this->start_date,
             "end_date" => $this->end_date,
             "longitude" => $this->lon,

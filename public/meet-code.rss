@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>MAC Events</title>
+    <description>All Events for Meet and Code</description>
+    <link>https://meet-and-code.org/</link>
+    <lastBuildDate>Thu, 29 Sep 2022 16:51:32 +0200</lastBuildDate>
+    <item>
+      <title><![CDATA[Zukunftstag Technik 2022]]></title>
+      <description><![CDATA[Für alle technikinteressierten Jugendlichen von 12-18 Jahren bieten wir gemeinsam mit ansässigen Firmen im Raum Friedrichshafen ein vielfältiges Angebot an Workshops an.
+Workshop-Themen (Auszug):
+
+- Python: Einführung in die Programmierung
+
+- Arbeiten mit Cobots: Einführung in die Welt der modernen Produktionstechnik, in der Mensch und Roboter Hand in Hand arbeiten
+
+- Energiewerkstätten 1-3: Strom aus Grätzel-Zellen - Solar-Gurkenglaslampe - Brennstoffzellentechnik
+
+- 3D-Druck: Vom Entwurf zum plastischen Modell
+
+- Schweißwerkstat: Einsatz moderner Schweißtechnik in der Industrie
+
+Das Besondere: Die einzelnen Workshops finden in Kooperation mit den Firmen, meist auch in deren Räumen statt. Die Unternehmen präsentieren zunächst den jeweiligen Stand der Technik und geben einen Einblick in ihre Arbeitsweise. Danach dürfen die Teilnehmer*innen das Gelernte selbst an auf die Workshops abgestimmte Werkstücken bzw. Programmierungen umsetzen und diese auch mit  nach Hause nehmen.]]></description>
+    </item>
+
+
+
+
+  </channel>
+</rss>
