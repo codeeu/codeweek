@@ -302,7 +302,7 @@ return [
             'link',
             'e il piano delle lezioni in inglese su questo',
             'Le attività di questa lezione possono essere completate individualmente e in qualsiasi ordine',
-            'L’insegnante può scattare una foto del processo di apprendimento e condividerla su Instagram usando l’hashtag #CodeWeekChallengeGoogle'
+            'L’insegnante può scattare una foto del processo di apprendimento e condividerla su Instagram usando l’hashtag #CodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Oltre al manuale delle attività, alcune attività richiedono o si possono avvalere di materiali aggiuntivi.',
