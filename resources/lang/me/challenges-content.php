@@ -305,7 +305,7 @@ return [
             'linku',
             'a nastavni plan na engleskom jeziku na ovom',
             'Aktivnosti vezane za ovaj čas mogu se realizovati samostalno, bilo kojim redosljedom',
-            'Nastavnik može fotografisati proces učenja i podijeliti ga na Instagramu korišćenjem haštaga  #CodeWeekChallengeGoogle'
+            'Nastavnik može fotografisati proces učenja i podijeliti ga na Instagramu korišćenjem haštaga  #CodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Pored brošure sa aktivnostima, neke aktivnosti zahtijevaju ili mogu imati koristi od upotrebe dodatnih materijala.',

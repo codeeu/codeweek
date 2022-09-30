@@ -301,7 +301,7 @@ return [
             'poveznici',
             'a nastavni plan na engleskom jeziku nalazi se na ovoj poveznici',
             'Aktivnosti u ovoj lekciji mogu se izvršavati pojedinačno i bilo kojim redoslijedom',
-            'Nastavnik može fotografirati proces učenja i fotografiju podijeliti na Instagramu uz oznaku #CodeWeekChallengeGoogle'
+            'Nastavnik može fotografirati proces učenja i fotografiju podijeliti na Instagramu uz oznaku #CodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Uz knjižicu s aktivnostima za neke aktivnosti bit će potrebni dodatni materijali.',

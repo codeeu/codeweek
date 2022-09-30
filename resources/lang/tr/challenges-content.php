@@ -302,7 +302,7 @@ return [
             'bağlantıya tıklayın',
             'İngilizce Ders Planı için ise bu bağlantıya tıklayın',
             'Bu dersteki etkinlikler ayrı ayrı olarak ve istenilen sırayla tamamlanabilir.',
-            'Öğretmen, öğrenim sürecini fotoğraflayıp #CodeWeekChallengeGoogle etiketiyle Instagram\'da paylaşabilir.'
+            'Öğretmen, öğrenim sürecini fotoğraflayıp #CodeWeekChallengeGoogle #GrowWithGoogle etiketiyle Instagram\'da paylaşabilir.'
         ],
         'materials' => [
             'Aktivite kitapçığına ek olarak, bazı aktivitelerde ek materyal kullanımı gerekebilir veya faydalı olabilir. ',
