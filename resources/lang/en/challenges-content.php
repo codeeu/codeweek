@@ -459,5 +459,74 @@ return [
             'This tutorial is available in over 25 languages'
         ],
         'more' => ['']
+    ],
+
+    'build-calliope' => [
+        'title' => 'Build your own Calliope mini fitness trainer',
+        'author' => 'Amazon Future Engineer | Meet and Code feat. Calliope gGmbH',
+        'purposes' => [
+            'To playfully get to know sequences, animations, repetitions and variables.',
+            'To design a structure chart.',
+            'To test and debug code .',
+            'To optimize a program by trial and error, checking and adjusting usability.'
+        ],
+        'duration' => '20-30 minutes',
+        'description' =>
+            'Participants will develop a digitally controlled prototype that uses a colorful glowing LED to reproduce a preconceived 10-unit fitness exercise.',
+        'materials' => [
+            'Calliope mini StarterBox (if available)',
+            'Laptop or tablet with which you can visit <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> or <a href="https://calliope.cc">https://calliope.cc</a> and YouTube to access to resources for the activity.'
+        ],
+        'instructions' => [
+            'To get started, create a plan and determine the order of the exercise units. Using the schedule, program the RGB LED of the Calliope mini to display one of the 5 colors at the predefined pace. Then create a variable for the pace and program repetitions using loops.',
+            "Remember, if you've implemented the program in a way that you like, you can also share it with us at info@calliope.cc - we're excited to see what you make of it! By the way, we're giving away 30 Calliope minis among the submissions!",
+            "Share the QR code of your project on Instagram, add the hashtag #CodeWeekChallenge and mention @CodeWeekEU.",
+        ],
+        'example' => [
+            'While you’re sitting at your computer: you can get sporty too.',
+            'Create a fitness prototype with the Calliope mini which can also be tested in the simulator. The challenge is done in the MakeCode editor by programming a simple code sequence (see screenshot).',
+            'Choose 5 different colors and assign a fitness exercise to each of them, e.g. squat or jumping jacks.  Then the colors can be lined up in any order and trained.'
+        ],
+
+    ],
+    'animate-a-name' => [
+        'title' => 'Animate a name',
+        'author' => 'Google',
+        'purposes' =>
+            'To use code to bring a name to life!'
+        ,
+        'duration' => '15-60 minutes',
+        'description' =>
+            'Animate a Name is a one-hour lesson designed to be completed within 15-60 minutes. Students will watch a series of videos and create one coding project.',
+        'materials' => 'This lesson can be completed online or offline, but both options require access to a computer.',
+        'instructions' => [
+            'Pick a video in one of 21 languages from <a href="https://www.youtube.com/c/CodeweekEu/playlists?view=50&sort=dd&shelf_id=6">this page</a>',
+            "Find a lesson plan in the description. Follow instructions in the video. ",
+        ]
+    ],
+    'european-astro-pi' => [
+        'title' => 'European Astro Pi Challenge - Mission Zero',
+        'author' => 'Google',
+        'purposes' =>
+            'To run your python code on board the International Space Station'
+        ,
+
+        'description' =>[
+            'You will make a short python program that shows a pixel-art image on board the International Space Station.',
+            'Your image will be displayed using the Astro Pi computer in the European Columbus module.'
+        ]
+            ,
+        'materials' => 'Web browser only',
+        'instructions' => [
+            'Teacher/mentor go to <a href="https://astro-pi.org/mission-zero/">https://astro-pi.org/mission-zero/</a>',
+            'Check eligibility/guidelines and sign up for a login',
+            'This will create a classroom code, two random words e.g. fast-dog',
+            'Display this code in the computer lab',
+            'Students browse to <a href="https://rpf.io/mzproject">https://rpf.io/mzproject</a> and follow the steps to complete the activity',
+            'When students finish they type in the classroom code to link their submission to your login',
+            'Valid entries will be run on the International Space Station in May 2023',
+
+        ],
+
     ]
 ];
