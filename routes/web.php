@@ -14,6 +14,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 
 //Auth::loginUsingId(255361);
@@ -597,6 +598,15 @@ Route::group(['middleware' => ['auth']], function () {
 });
 
 Route::view('/registration', 'registration.add');
+
+Route::get('mailing/test', function(){
+
+    //$email = ['alainvd@gmail.com'];
+
+    return new App\Mail\GermanMailing();
+});
+
+
 
 Auth::routes();
 Route::feeds();
