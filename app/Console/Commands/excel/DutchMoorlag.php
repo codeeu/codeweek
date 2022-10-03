@@ -42,7 +42,7 @@ class DutchMoorlag extends Command {
 
         Excel::import(
             new DutchMoorlagEventsImport(),
-            'Pierson_CW22_aug_dec.xlsx',
+            'Pierson_Import_CW22_prt2.xlsx',
             'excel'
         );
     }
