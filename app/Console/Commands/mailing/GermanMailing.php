@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands\mailing;
 
+use App\Helpers\MailingHelper;
 use App\Helpers\ReminderHelper;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
@@ -38,13 +39,17 @@ class GermanMailing extends Command {
      * @return int
      */
     public function handle() {
-        //$recipients = ReminderHelper::getInactiveCreators(2021);
-        $recipients = ['alainvd@gmail.com'];
+        $recipients = MailingHelper::getActiveCreators('DE');
+
+
+        //$recipients = ['alainvd@gmail.com'];
 
         $this->info(sizeof($recipients));
 
-        foreach ($recipients as $email) {
-            Mail::to($email)->queue(new \App\Mail\GermanMailing());
+        foreach ($recipients as $user) {
+            Mail::to($user->email)->queue(new \App\Mail\GermanMailing());
         }
+
+        $this->info('Mailing Sent');
     }
 }
