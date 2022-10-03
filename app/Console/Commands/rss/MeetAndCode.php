@@ -54,11 +54,26 @@ class MeetAndCode extends Command
         dump("Loading MeetAndCode");
         $force = $this->option('force');
 
-        $feed = Feeds::make('https://meet-and-code.org/de/de/events/rss');
+        // TODO: revert to real endpoint
+//        $feed = Feeds::make('https://meet-and-code.org/de/de/events/rss/',0,true);
+
+
+//        $feed = Feeds::make('http://codeweek.test/meet-code.rss');
+        $feed = Feeds::make('http://codeweek.test/meet-code-original.rss', 0, true);
         $new = 0;
         $updated = 0;
 
+        dd(count($feed->get_items()));
+
         foreach ($feed->get_items() as $item) {
+            Log::info($item->get_title());
+        }
+
+        dd('ok');
+
+        foreach ($feed->get_items() as $item) {
+
+
             $RSSitem = new MeetAndCodeRSSItem();
 
             $RSSitem->title = $item->get_title();
