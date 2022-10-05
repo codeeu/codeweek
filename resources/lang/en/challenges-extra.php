@@ -2,7 +2,7 @@
 
 return [
     'cs-first-unplugged-activities' => [
-        "You will find all lesson plans and booklets for this challenge at",
+        "You will find the lesson plan and booklet for this challenge at",
         "this link"
     ],
     'cs-first-link' => "https://drive.google.com/drive/folders/1knebrtFD2FRwDFdK25P3FLmQ5tXswWKo",
