@@ -15,9 +15,11 @@ class ImporterHelper
 {
 
 
-    public static function getGermanCities(){
-        return ['hamburg','baden','bonn','berlin','leipzig','dresden','thueringen','bremen','muensterland','nordhessen','bayern'];
+    public static function getGermanCities()
+    {
+        return ['hamburg', 'baden', 'bonn', 'berlin', 'leipzig', 'dresden', 'thueringen', 'bremen', 'muensterland', 'nordhessen', 'bayern'];
     }
+
     //Create or load Technical user based on username
     public static function getTechnicalUser($username)
     {
@@ -38,7 +40,8 @@ class ImporterHelper
 
     }
 
-    public static function clean(){
+    public static function clean()
+    {
         $ids = self::getDeletedEventsIDs();
 
         $deletedFromEvents = Event::whereIn('id', $ids)->delete();
@@ -63,9 +66,19 @@ class ImporterHelper
 
     }
 
+    public static function loadOrCreateUser($email)
+    {
+        return User::firstOrCreate([
+            "email" => $email
+        ], [
+            "firstname" => "",
+            "lastname" => "",
+            "username" => "",
+            "password" => bcrypt(Str::random())
+        ]);
 
 
-
+    }
 
 
 }

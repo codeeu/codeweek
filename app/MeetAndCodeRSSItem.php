@@ -60,7 +60,7 @@ use Illuminate\Support\Str;
 class MeetAndCodeRSSItem extends Model
 {
 
-    public function getCounryIso()
+    public function getCountryIso()
     {
 
         switch ($this->country) {
@@ -102,7 +102,7 @@ class MeetAndCodeRSSItem extends Model
 
     }
 
-    public function createEvent($technicalUser)
+    public function createEvent($user)
     {
 
         $event = new Event([
@@ -116,8 +116,8 @@ class MeetAndCodeRSSItem extends Model
             'location' => $this->address,
             'event_url' => $this->link,
             'user_email' => $this->organiser_email,
-            'creator_id' => $technicalUser->id,
-            'country_iso' => $this->getCounryIso(),
+            'creator_id' => $user->id,
+            'country_iso' => $this->getCountryIso(),
             'picture' => $this->image_link,
             "pub_date" => now(),
             "created" => now(),
