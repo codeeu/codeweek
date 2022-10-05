@@ -59,12 +59,11 @@ class MeetAndCode extends Command
         $contents = Http::get('https://meet-and-code.org/de/de/events/rss/');
         $clean =  str_replace('','',$contents);
         Storage::disk('public')->put('rss/meet-and-code-clean.xml',$clean);
-        $feed = Feeds::make('http://codeweek.test/rss/meet-and-code-clean.xml');
+        $url = Storage::disk('public')->url('rss/meet-and-code-clean.xml');
+        $feed = Feeds::make($url);
 
         $new = 0;
         $updated = 0;
-
-
 
         foreach ($feed->get_items() as $item) {
 
