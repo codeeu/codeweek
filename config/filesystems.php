@@ -49,7 +49,8 @@ return [
         ],
         'meet-and-code' => [
             'driver' => 'local',
-            'root' => resource_path('meet-and-code')
+            'root' => public_path('rss'),
+            'url' => config('codeweek.app_url').'/rss',
         ],
         'excel' => [
             'driver' => 'local',
