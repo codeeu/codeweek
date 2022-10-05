@@ -51,12 +51,18 @@ class MeetAndCode extends Command
         Log::info("Loading Meet and Code RSS Items in Database");
 
         $techicalUser = ImporterHelper::getTechnicalUser("meetandcode-technical");
+
+
+
+
+
         $items = MeetAndCodeRSSItem::whereNull('imported_at')->get();
 
 
 
         foreach ($items as $item){
-            $event = $item->createEvent($techicalUser);
+            $user = ImporterHelper::loadOrCreateUser($item->organiser_email);
+            $event = $item->createEvent($user);
             $item->imported_at = Carbon::now();
             //TODO: check for updating the event if it already exists
             $item->save();
