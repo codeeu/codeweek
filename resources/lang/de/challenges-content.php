@@ -296,7 +296,7 @@ return [
             'Link',
             'und den Lehrplan in englischer Sprache unter diesem',
             'Die Aktivitäten in diesem Kurs können einzeln und in beliebiger Reihenfolge durchgeführt werden',
-            'Die Lehrkraft kann vom Lernprozess ein Foto machen und unter dem Hashtag #CodeWeekChallengeGoogle auf Instagram teilen'
+            'Die Lehrkraft kann vom Lernprozess ein Foto machen und unter dem Hashtag #CodeWeekChallengeGoogle #GrowWithGoogle auf Instagram teilen'
         ],
         'materials' => [
             'Neben der Aktivitäten-Broschüre können bei manchen Aktivitäten weitere Materialien erforderlich oder nützlich sein.',

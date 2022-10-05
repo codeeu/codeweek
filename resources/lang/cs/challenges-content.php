@@ -296,7 +296,7 @@ return [
             'odkazem',
             'a učební plán v angličtině pod tímto',
             'Aktivity v této lekci lze provádět jednotlivě a v jakémkoli pořadí',
-            'Učitel může během výuky pořídit fotky a sdílet je na Instagramu s hashtagem #CodeWeekChallengeGoogle'
+            'Učitel může během výuky pořídit fotky a sdílet je na Instagramu s hashtagem #CodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Kromě brožury s aktivitami jsou pro některé aktivity vyžadovány nebo doporučovány další materiály.',

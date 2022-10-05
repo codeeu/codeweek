@@ -296,7 +296,7 @@ return [
             'link',
             'precum și planul de lecție în limba engleză la acest',
             'Activitățile din această lecție pot fi realizate individual și în orice ordine',
-            'Profesorul poate fotografia procesul de învățare și poate distribui fotografiile pe Instagram folosind #CodeWeekChallengeGoogle'
+            'Profesorul poate fotografia procesul de învățare și poate distribui fotografiile pe Instagram folosind #CodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
     'Pe lângă broșura activității, pentru unele activități sunt necesare sau pot fi bine-venite materiale suplimentare.',
