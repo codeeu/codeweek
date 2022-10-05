@@ -306,7 +306,7 @@ return [
             'il-link',
             'kif ukoll Pjan tal-Lezzjoni bl-Ingliż fuq din',
             'L-attivitajiet f\'din il-lezzjoni jistgħu jitlestew individwalment u fi kwalunkwe ordni',
-            'L-għalliem jista\' jieħu ritratt tal-proċess ta\' tagħlim u jaqsmu mal-oħrajn fuq Instagram billi juża #CodeWeekChallengeGoogle'
+            'L-għalliem jista\' jieħu ritratt tal-proċess ta\' tagħlim u jaqsmu mal-oħrajn fuq Instagram billi juża #CodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Minbarra l-ktejjeb tal-attività, xi attivitajiet jeħtieġu jew inkella jibbenefikaw b’mod fakultattiv minn materjali addizzjonali.',

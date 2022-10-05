@@ -4,6 +4,9 @@ namespace App\Providers;
 
 use App\Nova\Metrics\EventCount;
 use App\Nova\Metrics\EventsPerDay;
+use App\Nova\Metrics\ImporterTrend;
+use App\Nova\Metrics\MeetCodeTrend;
+use App\Nova\Metrics\NewMeetCode;
 use App\Nova\Metrics\UsersPerDay;
 use Laravel\Nova\Nova;
 use Laravel\Nova\Cards\Help;
@@ -58,9 +61,12 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     protected function cards()
     {
         return [
+            new MeetCodeTrend,
+            new ImporterTrend,
             new EventCount,
             new EventsPerDay,
             new UsersPerDay,
+
         ];
     }
 

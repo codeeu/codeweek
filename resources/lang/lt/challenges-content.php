@@ -303,7 +303,7 @@ return [
             'nuorodą',
             '– o pamokos planą anglų kalba – spustelėję šią',
             'Šios pamokos užduotis galima atlikti individualiai ir bet kokia tvarka',
-            'Mokytojas (-a) gali nufotografuoti mokymosi procesą ir bendrinti nuotrauką „Instagram“ su grotažyme #CodeWeekChallengeGoogle'
+            'Mokytojas (-a) gali nufotografuoti mokymosi procesą ir bendrinti nuotrauką „Instagram“ su grotažyme #CodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Be užduočių knygutės, tam tikroms užduotims atlikti reikia papildomos medžiagos. Papildomą medžiagą galima naudoti ir savanoriškai.',

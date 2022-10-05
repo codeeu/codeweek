@@ -296,7 +296,7 @@ return [
             'hiperligação',
             'bem como o plano de aula em inglês nesta',
             'As atividades desta aula podem ser concluídas individualmente e em qualquer ordem',
-            'O professor pode tirar uma fotografia do processo de aprendizagem e partilhá-la no Instagram utilizando o hashtag #CodeWeekChallengeGoogle'
+            'O professor pode tirar uma fotografia do processo de aprendizagem e partilhá-la no Instagram utilizando o hashtag #CodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
     'Para além da brochura da atividade, algumas atividades requerem ou beneficiam opcionalmente de materiais adicionais.',

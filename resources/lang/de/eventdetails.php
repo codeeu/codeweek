@@ -14,7 +14,7 @@ return [
     */
     'organised_by'=>'Ausgerichtet von: ',
     'contact_email' => 'Kontakt-E-Mail-Adresse: ',
-    'happening_at' => 'findet statt am: ',
+    'happening_at' => 'findet statt bei: ',
     'from' => 'Von ',
     'to' => ' bis ',
     'description' => 'Beschreibung: ',
