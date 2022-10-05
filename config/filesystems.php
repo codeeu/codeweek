@@ -47,6 +47,10 @@ return [
             'driver' => 'local',
             'root' => resource_path('latex')
         ],
+        'meet-and-code' => [
+            'driver' => 'local',
+            'root' => resource_path('meet-and-code')
+        ],
         'excel' => [
             'driver' => 'local',
             'root' => resource_path('excel')
