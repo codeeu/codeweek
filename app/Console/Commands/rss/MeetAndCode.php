@@ -71,7 +71,7 @@ class MeetAndCode extends Command
         $new = 0;
         $updated = 0;
 
-        dd(count($feed->get_items()));
+     //   dd(count($feed->get_items()));
 
         foreach ($feed->get_items() as $item) {
 
