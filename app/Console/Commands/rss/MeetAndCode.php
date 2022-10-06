@@ -21,7 +21,7 @@ class MeetAndCode extends Command
      *
      * @var string
      */
-    protected $signature = 'rss:meetandcode {--force} {--generate}';
+    protected $signature = 'rss:meetandcode {--force}';
 
     /**
      * The console command description.
@@ -54,24 +54,25 @@ class MeetAndCode extends Command
     {
 
         dump("Loading MeetAndCode");
-        $generate = $this->option('generate');
+//        $generate = $this->option('generate');
         $force = $this->option('force');
 
-        if ($generate){
-            dump("Generating MeetAndCode File");
-            $contents = Http::get('https://meet-and-code.org/de/de/events/rss/');
-            $clean =  str_replace('','',$contents);
-            Storage::disk('meet-and-code')->put('meet-and-code-clean.xml',$clean);
-        }
+//        if ($generate){
+//            dump("Generating MeetAndCode File");
+//            $contents = Http::get('https://meet-and-code.org/de/de/events/rss/');
+//            $clean =  str_replace('','',$contents);
+//            Storage::disk('meet-and-code')->put('meet-and-code-clean.xml',$clean);
+//        }
+//
+//        $url = Storage::disk('meet-and-code')->url('meet-and-code-clean.xml');
 
-        $url = Storage::disk('meet-and-code')->url('meet-and-code-clean.xml');
-
+        $url = 'https://meet-and-code.org/de/de/events/rss/';
         $feed = Feeds::make(asset($url));
 
         $new = 0;
         $updated = 0;
 
-     //   dd(count($feed->get_items()));
+        Log::info('Items found in Meet&Code RSS: ' . count($feed->get_items()));
 
         foreach ($feed->get_items() as $item) {
 
