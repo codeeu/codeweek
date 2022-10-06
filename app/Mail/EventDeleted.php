@@ -7,7 +7,8 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class GermanMailing extends Mailable {
+class EventDeleted extends Mailable
+{
     use Queueable, SerializesModels;
 
     /**
@@ -15,7 +16,8 @@ class GermanMailing extends Mailable {
      *
      * @return void
      */
-    public function __construct() {
+    public function __construct()
+    {
         //
     }
 
@@ -25,7 +27,7 @@ class GermanMailing extends Mailable {
      * @return $this
      */
     public function build() {
-        return $this->subject('Event Deleted')->markdown(
+        return $this->subject('EU Code Week: Registration Deleted')->markdown(
             'emails.en.event-deleted'
         );
     }
