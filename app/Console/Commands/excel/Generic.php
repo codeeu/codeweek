@@ -38,11 +38,11 @@ class Generic extends Command {
      * @return int
      */
     public function handle() {
-        Log::info('Loading Dutch Dance File');
+        Log::info('Loading Generic Excel');
 
         Excel::import(
             new GenericEventsImport(),
-            'bulk-pauline.xlsx',
+            'nl-cym-1.xlsx',
             'excel'
         );
     }

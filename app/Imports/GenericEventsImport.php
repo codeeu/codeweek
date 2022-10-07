@@ -44,7 +44,7 @@ class GenericEventsImport extends DefaultValueBinder implements
      * @return \Illuminate\Database\Eloquent\Model|null
      */
     public function model(array $row) {
-        //dd($row);
+
         $event = new Event([
             'status' => 'APPROVED',
             'title' => $row['activity_title'],
@@ -69,7 +69,7 @@ class GenericEventsImport extends DefaultValueBinder implements
             'geoposition' => $row['latitude'] . ',' . $row['longitude'],
             'longitude' => $row['longitude'],
             'latitude' => $row['latitude'],
-            'language' => strtolower($row['language'])
+            'language' => strtolower($row['language']),
         ]);
 
         $event->save();
