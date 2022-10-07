@@ -38,6 +38,8 @@ return [
         '3' => 'Um Kontakte zu Organisationen und / oder Schulen in Ihrer Gemeinde oder in internationalem Rahmen zu knüpfen.',
         '4' => 'Um Unterstützung durch andere Organisator*innen und Lehrkräfte zu finden.',
         '5' => 'Um sich ein <strong>Exzellenzzertifikat</strong> zu verdienen.'
-    ]
+    ],
+    'superorganiser-title' => 'Zertifikat als ‚Super Organiser‘',
+    'superorganiser' => 'Sie können sich auch das Zertifikat als ‚Super Organiser‘ verdienen. Organisieren und <a href="https://codeweek.eu/add">registrieren</a> Sie dafür mindestens 10 einzelne Aktivitäten an Ihrer Schule, in Ihrer Organisation oder online.'
 
 ];
