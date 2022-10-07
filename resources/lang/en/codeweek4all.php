@@ -43,5 +43,8 @@ return [
         '4' => 'To find support from other organisers and teachers.',
         '5' => 'To gain a <strong>Certificate of Excellence.</strong>'
     ],
+    'superorganiser-title' => 'Super Organiser Certificate',
+    'superorganiser' => 'You can also earn a Super Organiser Certificate. To do so you need to organise and <a href="https://codeweek.eu/add">register</a> at least 10 separate activities at your school, organisation, or online.'
+
 
 ];
