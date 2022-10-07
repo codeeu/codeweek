@@ -38,6 +38,8 @@ return [
         '3' => 'Biex tibni konnessjonijiet ma’ organizzazzjonijiet u/jew skejjel fil-komunità tiegħek jew fuq livell internazzjonali.',
         '4' => 'Biex issib appoġġ minn organizzaturi u għalliema oħrajn.',
         '5' => 'Biex tingħata <strong>Ċertifikat ta’ Eċċellenza.</strong>'
-    ]
+    ],
+    'superorganiser-title' => 'Ċertifikat ta’ Organizzatur Super',
+    'superorganiser' => 'Tista’ wkoll tikseb Ċertifikat ta’ Organizzatur Super. Biex tagħmel dan għandek bżonn torganizza u <a href="https://codeweek.eu/add">tirreġistra</a> mill-inqas 10 attivitajiet separati fl-iskola jew l-organizzazzjoni tiegħek, jew online.'
 
 ];

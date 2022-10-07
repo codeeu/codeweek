@@ -54,6 +54,8 @@ return [
                                     rahvusvaheliselt.',
         '4' => 'Et saada teistelt korraldajatelt ja õpetajatelt tuge.',
         '5' => 'Et saada <strong>tunnistus eeskujuliku töö eest.</strong>'
-    ]
+    ],
+    'superorganiser-title' => 'Superkorraldaja tunnistuse',
+    'superorganiser' => 'Samuti võite saada superkorraldaja tunnistuse. Selleks tuleb oma koolis, organisatsioonis või veebipõhiselt korraldada ja <a href="https://codeweek.eu/add">registreerida</a> vähemalt kümme eraldi tegevust.'
 
 ];

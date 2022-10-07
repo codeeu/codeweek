@@ -38,6 +38,9 @@ return [
         '3' => 'Azért, hogy kapcsolatokat építsen ki szervezetekkel és/vagy iskolákkal saját közösségében vagy nemzetközi szinten.',
         '4' => 'Azért, hogy támogatásra találjon más szervezők és tanárok részéről.',
         '5' => 'Azért, hogy megszerezze a <strong>Kiválósági tanúsítványt.</strong>'
-    ]
+    ],
+    'superorganiser-title' => 'Szuperszervezői tanúsítványt',
+    'superorganiser' => 'Emellett szuperszervezői tanúsítványt is szerezhet. Ehhez szervezzen és <a href="https://codeweek.eu/add">regisztráljon</a> legalább 10 egymástól független tevékenységet iskolájában, szervezetében vagy az online térben.'
+
 
 ];
