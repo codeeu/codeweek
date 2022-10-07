@@ -42,7 +42,7 @@ class Generic extends Command {
 
         Excel::import(
             new GenericEventsImport(),
-            'bg-2022.xlsx',
+            'nl-cym-1.xlsx',
             'excel'
         );
     }
