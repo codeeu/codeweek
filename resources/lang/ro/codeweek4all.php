@@ -38,6 +38,9 @@ return [
         '3' => 'Pentru a crea legături cu organizatori și/sau școli din comunitatea dumneavoastră sau la nivel internațional.',
         '4' => 'Pentru a găsi sprijin din partea altor organizatori și profesori.',
         '5' => 'Pentru a câștiga un <strong>certificat de excelență.</strong>'
-    ]
+    ],
+    'superorganiser-title' => 'Certificat de Super Organizator',
+    'superorganiser' => 'De asemenea, poți obține un certificat de Super Organizator. Pentru aceasta este necesar să organizezi și să <a href="https://codeweek.eu/add">înscrii</a> cel puțin 10 activități separate la școala sau organizația ta, sau online.'
+
 
 ];

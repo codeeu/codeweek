@@ -38,6 +38,8 @@ return [
         '3' => 'Ulusal veya uluslararası organizasyonlarla ve/veya okullarla bağlantılar kurmak için.',
         '4' => 'Diğer organizatörlerin ve öğretmenlerin desteğini almak için.',
         '5' => '<strong>Mükemmeliyet Sertifikası</strong> almak için.'
-    ]
+    ],
+    'superorganiser-title' => 'Süper Organizatör Sertifikası',
+    'superorganiser' => 'Aynı zamanda Süper Organizatör Sertifikası da kazanabilirsiniz. Bunun için okulunuzda, kurumunuzda veya çevrim içi olarak en az 10 farklı aktivite düzenleyip bunları <a href="https://codeweek.eu/add">kaydettirmeniz</a> gerekmektedir.'
 
 ];
