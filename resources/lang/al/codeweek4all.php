@@ -38,6 +38,10 @@ return [
         '3' => 'Për të krijuar lidhje me organizatat dhe/ose shkollat në komunitetin tuaj ose në nivel ndërkombëtar.',
         '4' => 'Për të gjetur mbështetje nga organizatorë dhe mësues të tjerë.',
         '5' => 'Për të fituar një <strong>Certifikatë Përsosmërie.</strong>'
-    ]
+    ],
+
+    'superorganiser-title' => 'Certifikatë si Super-Organizator',
+    'superorganiser' => 'Ju mund të fitoni gjithashtu një Certifikatë si Super-Organizator. Për ta bërë këtë, duhet të organizoni dhe të <a href="https://codeweek.eu/add">regjistroni</a> të paktën 10 aktivitete të veçanta në shkollën ose organizatën tuaj, ose në internet.'
+
 
 ];

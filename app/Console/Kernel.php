@@ -36,7 +36,7 @@ class Kernel extends ConsoleKernel {
 
         $schedule->command('notify:administrators')->hourlyAt(30);
 
-        //$schedule->command('rss:meetandcode')->hourlyAt(5);
+        $schedule->command('rss:meetandcode')->hourlyAt(5);
 
         $schedule->command('api:germany')->hourlyAt(10);
 

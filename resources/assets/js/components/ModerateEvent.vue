@@ -197,7 +197,7 @@ export default {
       axios.post('/api/event/delete/' + this.event.id)
           .then((res) => {
             this.status = "DELETED";
-            flash('Event Deleted!');
+            flash('Event Deleted and email sent!');
             if (this.refresh) {
               this.reRender();
             } else {

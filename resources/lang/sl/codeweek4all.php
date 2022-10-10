@@ -38,6 +38,9 @@ return [
         '3' => 'Da se povežete z organizacijami in/ali šolami v svoji skupnosti ali mednarodno.',
         '4' => 'Da vas podprejo drugi organizatorji in učitelji.',
         '5' => 'Da pridobite <strong>certifikat odličnosti.</strong>'
-    ]
+    ],
+    'superorganiser-title' => 'Certifikat super organizatorja',
+    'superorganiser' => 'Lahko si prislužite tudi certifikat super organizatorja. Zanj je treba organizirati in <a href="https://codeweek.eu/add">prijaviti</a> vsaj 10 ločenih dejavnosti v vaši šoli, organizaciji ali na spletu.'
+
 
 ];

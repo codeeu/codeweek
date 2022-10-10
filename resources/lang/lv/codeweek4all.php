@@ -38,6 +38,8 @@ return [
         '3' => 'Lai veidotu sakarus ar organizācijām un/vai skolām jūsu kopienā vai starptautiskā mērogā.',
         '4' => 'Lai saņemtu citu organizatoru un skolotāju atbalstu.',
         '5' => 'Lai iegūtu <strong>izcilības apliecinājuma sertifikātu.</strong>'
-    ]
+    ],
+    'superorganiser-title' => 'Lieliskā organizatora sertifikātu',
+    'superorganiser' => 'Jūs varat arī iegūt lieliskā organizatora sertifikātu. Lai to izdarītu, jums ir jānoorganizē un <a href="https://codeweek.eu/add">jāreģistrē </a> vismaz 10 atsevišķas aktivitātes savā skolā, organizācijā vai tiešsaistē.'
 
 ];
