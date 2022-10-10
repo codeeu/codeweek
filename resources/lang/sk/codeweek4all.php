@@ -60,6 +60,8 @@ return [
                                     komunity alebo na medzinárodnej úrovni.',
         '4' => 'Získanie podpory od iných organizátorov a učiteľov.',
         '5' => 'Získanie <strong>certifikátu excelentnosti.</strong>'
-    ]
+    ],
+    'superorganiser-title' => 'Certifikát superorganizátora',
+    'superorganiser' => 'Takisto môžete získať certifikát superorganizátora. Na jeho získanie musíte zorganizovať a <a href="https://codeweek.eu/add">zaregistrovať</a> najmenej 10 samostatných aktivít vo vašej škole, organizácii alebo online.'
 
 ];

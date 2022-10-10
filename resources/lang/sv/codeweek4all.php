@@ -38,6 +38,8 @@ return [
         '3' => 'För att skapa förbindelser mellan organisationer och/eller skolor i ditt samhälle eller internationellt.',
         '4' => 'För att få stöd från andra arrangörer och lärare.',
         '5' => 'För att få ett <strong>Certificate of Excellence</strong>.'
-    ]
+    ],
+    'superorganiser-title' => 'Diplom för superarrangörer',
+    'superorganiser' => 'Du kan också tilldelas ett Super Organiser Certificate (Diplom för superarrangörer). För att få det måste du anordna och <a href="https://codeweek.eu/add">registrera</a> minst tio separata aktiviteter på din skola, i din organisation, eller på nätet.'
 
 ];

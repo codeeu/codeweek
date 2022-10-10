@@ -38,6 +38,8 @@ return [
         '3' => 'Aby se vybudovaly vazby mezi organizátory a/nebo školami ve vaší obci nebo na mezinárodní úrovni.',
         '4' => 'Abyste získali podporu dalších organizátorů a učitelů.',
         '5' => 'Abyste získali <strong>Certifikát o špičkové úrovni.</strong>'
-    ]
+    ],
+    'superorganiser-title' => 'Certifikát superorganizátora',
+    'superorganiser' => 'Můžete také získat certifikát superorganizátora. Pokud ho chcete získat, zorganizujte a <a href="https://codeweek.eu/add">zaregistrujte</a> alespoň 10 samostatných aktivit, ať už ve škole, v organizaci nebo online.'
 
 ];

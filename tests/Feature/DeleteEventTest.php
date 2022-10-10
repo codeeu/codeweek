@@ -2,16 +2,11 @@
 
 namespace Tests\Feature;
 
-use App\Event;
-use App\Mail\EventApproved;
-use App\Mail\EventRejected;
-use App\Queries\EventsQuery;
-use App\School;
+use App\Mail\EventDeleted;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+
 
 class DeleteEventTest extends TestCase
 {
@@ -31,6 +26,8 @@ class DeleteEventTest extends TestCase
     public function event_can_be_deleted_by_admin()
     {
 
+        Mail::fake();
+
         $this->withExceptionHandling();
 
         $superadmin = create('App\User');
@@ -41,6 +38,9 @@ class DeleteEventTest extends TestCase
         $event = create('App\Event', ['title' => 'foobar']);
 
         $this->post(route('event.delete', $event));
+
+        // Assert a message was sent to the given users...
+        Mail::assertQueued(EventDeleted::class, 1);
 
         $this->assertTrue($event->fresh()->trashed());
 

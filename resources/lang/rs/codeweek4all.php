@@ -56,6 +56,8 @@ return [
                                     međunarodno.',
         '4' => 'Pronalaženje podrške drugih organizatora i nastavnika.',
         '5' => 'Osvajanje <strong>Sertifikata izvrsnosti.</strong>'
-    ]
+    ],
+    'superorganiser-title' => 'Certifikat super organizatora',
+    'superorganiser' => 'Također možete dobiti certifikat super organizatora. Da biste to učinili, trebate organizirati i <a href="https://codeweek.eu/add">registrirati</a> najmanje 10 zasebnih aktivnosti u vašoj školi, organizaciji ili na mreži.'
 
 ];

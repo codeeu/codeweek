@@ -264,9 +264,21 @@ class EventController extends Controller {
         $event->reject($rejectionText);
     }
 
+    private function sendDeletionEmail($event){
+        if (!empty($event->user_email)) {
+            Mail::to($event->user_email)->queue(
+                new \App\Mail\EventDeleted()
+            );
+        } elseif (!is_null($event->owner) && !is_null($event->owner->email)) {
+            Mail::to($event->owner->email)->queue(
+                new \App\Mail\EventDeleted()
+            );
+        }
+
+    }
     public function delete(Request $request, Event $event) {
         $this->authorize('delete', $event);
-
+        $this->sendDeletionEmail($event);
         $event->delete();
 
         if ($request->ajax()) {

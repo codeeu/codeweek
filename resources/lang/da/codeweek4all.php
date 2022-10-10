@@ -38,6 +38,8 @@ return [
         '3' => 'For at opbygge forbindelser til organisationer og/eller skoler i lokalsamfundet eller internationalt.',
         '4' => 'For at få støtte fra andre arrangører og undervisere.',
         '5' => 'For at få et <strong>kvalitetscertifikat.</strong>'
-    ]
+    ],
+    'superorganiser-title' => 'Superarrangør-certifikat',
+    'superorganiser' => 'Du kan også gøre dig fortjent til et superarrangør-certifikat. For at gøre det skal du arrangere og <a href="https://codeweek.eu/add">tilføje</a> mindst 10 særskilte aktiviteter på din skole, i din organisation eller online.'
 
 ];

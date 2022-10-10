@@ -38,6 +38,8 @@ return [
         '3' => 'Kad užmegztumėte ryšį su organizacijomis ir (arba) mokyklomis iš savo bendruomenės ir tarptautiniu mastu.',
         '4' => 'Kad gautumėte kitų organizatorių ir mokytojų pagalbos.',
         '5' => 'Kad gautumėte <strong>meistriškumo pažymėjimą</strong>.'
-    ]
+    ],
+    'superorganiser-title' => 'Nusipelniusio organizatoriaus pažymėjimą',
+    'superorganiser' => 'Taip pat galima gauti nusipelniusio organizatoriaus pažymėjimą. Tam reikia surengti ir <a href="https://codeweek.eu/add">užregistruoti</a> ne mažiau kaip dešimt atskirų užsiėmimų savo mokykloje, organizacijoje ar internetu.'
 
 ];

@@ -38,6 +38,8 @@ return [
         '3' => 'Om contacten te leggen met organisaties en/of scholen in je gemeenschap of het buitenland.',
         '4' => 'Om ondersteuning te vinden bij andere organisatoren en docenten.',
         '5' => 'Om het <strong>Certificaat van uitmuntendheid</strong> te behalen.'
-    ]
+    ],
+    'superorganiser-title' => 'Certificaat Superorganiser',
+    'superorganiser' => 'Je kunt ook een Certificaat Superorganiser krijgen. Daarvoor moet je ten minste 10 verschillende activiteiten op je school, binnen je organisatie of online organiseren en <a href="https://codeweek.eu/add">registreren</a>.'
 
 ];
