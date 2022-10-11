@@ -42,7 +42,7 @@ class Generic extends Command {
 
         Excel::import(
             new GenericEventsImport(),
-            'bulk-pauline-2.xlsx',
+            'coderdojo-be.xlsx',
             'excel'
         );
     }
