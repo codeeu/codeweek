@@ -40,7 +40,7 @@ class AppleEventsImport extends DefaultValueBinder implements WithCustomValueBin
             'location' => $row["address"],
             'event_url' => $row["organiser_website"],
             'user_email' => "",
-            'creator_id' => $row["creator_id"],
+            'creator_id' => 132942,
             'country_iso' => strtoupper($row["country"]),
             'picture' => $row["image_path"],
             "pub_date" => now(),

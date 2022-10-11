@@ -42,7 +42,7 @@ class AppleEvents extends Command {
 
         Excel::import(
             new AppleEventsImport(),
-            'apple_2022.xlsx',
+            'apple_2022-2.xlsx',
             'excel'
         );
     }
