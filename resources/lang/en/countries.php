@@ -241,7 +241,7 @@ return [
     'Turkmenistan'=>'Turkmenistan',
     'Tunisia'=>'Tunisia',
     'Tonga'=>'Tonga',
-    'Turkey'=>'Turkey',
+    'Turkey'=>'Türkiye',
     'Trinidad and Tobago'=>'Trinidad and Tobago',
     'Tuvalu'=>'Tuvalu',
     'Taiwan'=>'Taiwan',
