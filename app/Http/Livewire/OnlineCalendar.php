@@ -41,8 +41,8 @@ class OnlineCalendar extends Component {
         )
             ->where($this->whereClause)
             ->where('start_date', '>=', Carbon::now())
-            ->whereYear('start_date', '=', Carbon::now()->year)
             ->groupBy('year', 'month')
+            ->orderBy('year', 'asc')
             ->orderBy('month', 'asc')
             ->get();
 
