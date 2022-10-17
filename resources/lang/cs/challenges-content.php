@@ -451,5 +451,33 @@ return [
             'Návod najdete tady',
             'Tento návod je dostupný ve více než 25 jazycích'
         ],
+    ],
+    'build-calliope' => [
+        'title' => 'Sestavte si vlastní mini fitness trenažér Calliope',
+        'author' => 'Amazon Future Engineer | Meet and Code feat. Calliope gGmbH',
+        'purposes' => [
+            'Hravé poznávání sekvencí, animací, opakování a proměnných.',
+            'Návrh strukturního diagramu.',
+            'Testování a ladění kódu.',
+            'Optimalizace programu metodou pokusů a omylů, kontrola a úprava použitelnosti.'
+        ],
+        'duration' => '20-30 minut',
+        'description' =>
+            'Účastníci vyvinou digitálně řízený prototyp, který pomocí barevné svítící LED diody reprodukuje předem vymyšlené cvičení o 10 jednotkách.',
+        'materials' => [
+            'Calliope mini StarterBox (je-li k dispozici)',
+            'Notebook nebo tablet, se kterým můžete navštívit <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> nebo <a href="https://calliope.cc">https://calliope.cc</a> a YouTube pro přístup ke zdrojům pro tyto aktivity.'
+        ],
+        'instructions' => [
+            'Chcete-li začít, vytvořte si plán a určete pořadí cvičebních jednotek. Pomocí plánu naprogramujte LED diodu RGB zařízení Calliope mini tak, aby v předem stanoveném tempu zobrazovala jednu z 5 barev. Poté vytvořte proměnnou pro tempo a naprogramujte opakování pomocí smyček.',
+            "Nezapomeňte, že pokud jste program zavedli způsobem, který se vám líbí, můžete se o něj podělit i s námi na info@calliope.cc - jsme zvědaví, jak ho využijete! Mimochodem, mezi přihlášenými rozdáváme 30 miniatur Calliope!",
+            "Sdílejte QR kód svého projektu na Instagramu, přidejte hashtag #CodeWeekChallenge a uveďte @CodeWeekEU.",
+        ],
+        'example' => [
+            'Zatímco sedíte u počítače: můžete si také zasportovat.',
+            'Vytvoření fitness prototypu pomocí Calliope mini, který lze také otestovat v simulátoru. Úkol se provádí v editoru MakeCode naprogramováním jednoduché sekvence kódu (viz obrázek obrazovky).',
+            'Vyberte si 5 různých barev a ke každé z nich přiřaďte fitness cvičení, např. dřepy nebo poskoky. Pak lze barvy seřadit v libovolném pořadí a trénovat je.'
+        ],
+
     ]
 ];

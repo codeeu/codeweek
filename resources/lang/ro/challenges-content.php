@@ -143,7 +143,7 @@ return [
         'instructions' => [
             'Conectați-vă la',
             'Faceți clic pe',
-            'Adăugă o extensie', 
+            'Adăugă o extensie',
             'și alegeți',
             'Detectare video',
             'Va detecta cât de rapid se mișcă un obiect. Dacă numărul este mai mic, sensibilitatea la mișcare va crește.',
@@ -299,158 +299,187 @@ return [
             'Profesorul poate fotografia procesul de învățare și poate distribui fotografiile pe Instagram folosind #CodeWeekChallengeGoogle'
         ],
         'materials' => [
-    'Pe lângă broșura activității, pentru unele activități sunt necesare sau pot fi bine-venite materiale suplimentare.',
-    'Mici contoare (de exemplu, boabe de fasole) de utilizat pe harta din Network a Neighbourhood (Creați o rețea de cartier).',
-    'Foarfecă pentru a decupa discul de încifrare Send a Secret Message (Trimiteți un mesaj secret).',
-    'Carton și lipici pentru rigidizarea discului de încifrare de la Trimiteți un mesaj secret.',
-    'O piuneză, o scobitoare sau o agrafă de hârtie desfăcută pentru a conecta discul de încifrare de la Trimiteți un mesaj secret.'
-]
+            'Pe lângă broșura activității, pentru unele activități sunt necesare sau pot fi bine-venite materiale suplimentare.',
+            'Mici contoare (de exemplu, boabe de fasole) de utilizat pe harta din Network a Neighbourhood (Creați o rețea de cartier).',
+            'Foarfecă pentru a decupa discul de încifrare Send a Secret Message (Trimiteți un mesaj secret).',
+            'Carton și lipici pentru rigidizarea discului de încifrare de la Trimiteți un mesaj secret.',
+            'O piuneză, o scobitoare sau o agrafă de hârtie desfăcută pentru a conecta discul de încifrare de la Trimiteți un mesaj secret.'
+        ]
     ],
     'family-care' => [
-    'title' => 'Îngrijirea familiei',
-    'experience' => 'Deschis tuturor',
-    'duration' => '5-10 ore',
-    'author' => '',
-    'purposes' => [
-        'Analizarea aspectelor de „îngrijire a familiei” cu care ne confruntăm zilnic;',
-        'Vederea problemelor ca oportunități și generarea unor soluții creative;',
-        'Utilizarea programării pentru realizarea inovatoare a unor soluții;',
-        'Conceperea unor afișe și prezentarea soluțiilor în fața altora;',
-        'Utilizarea rețelelor sociale pentru a genera impacturi prin proiectele voastre.'
+        'title' => 'Îngrijirea familiei',
+        'experience' => 'Deschis tuturor',
+        'duration' => '5-10 ore',
+        'author' => '',
+        'purposes' => [
+            'Analizarea aspectelor de „îngrijire a familiei” cu care ne confruntăm zilnic;',
+            'Vederea problemelor ca oportunități și generarea unor soluții creative;',
+            'Utilizarea programării pentru realizarea inovatoare a unor soluții;',
+            'Conceperea unor afișe și prezentarea soluțiilor în fața altora;',
+            'Utilizarea rețelelor sociale pentru a genera impacturi prin proiectele voastre.'
+        ],
+        'description' => [
+            'Ce vă vine în minte când vorbim despre locuință? O casă frumoasă? O cină copioasă gătită de către părinți? Un loc secret numai al vostru? Căldura de acasă ne umple de energie corpul și spiritul ca o stație de benzină. În mijlocul agitației vieții moderne, părinții sunt mereu ocupați cu munca. Când petreceți timp cu prietenii, nu vă puteți lăsa pisicile în urmă. Dar cum puteți avea grijă de cei apropiați când nu sunteți împreună? Tema provocării este',
+            'Îngrijirea familiei',
+            'Pe baza acestei teme, elevii sunt încurajați să dezvolte o idee pentru a transmite dragoste și îngrijire prin programare și prin hardware. Iată câteva întrebări la care să vă gândiți',
+            'Câți membri ai familiei aveți acasă? Cine sunt aceștia? Ați întâmpinat vreodată probleme când ați stat cu ei? De ce fel de îngrijire au nevoie aceștia?',
+            'Cunoașteți pe cineva căruia îi lipsește îngrijirea familiei mai mult decât altora din comunitatea voastră? Cum îi puteți ajuta pe acești oameni?'
+        ],
+        'instructions' => [
+            'Faceți brainstorming și cercetare pe tema îngrijirii familiei',
+            'Enumerați eventualele probleme',
+            'Generați posibile soluții',
+            'Selectați o soluție',
+            'Programați și construiți structura',
+            'Concepeți un afiș pentru organizarea proiectului vostru',
+            'Prezentați-l profesorilor și membrilor familiei'
+        ],
+        'example' => ['Puteți folosi ca inspirație exemplele de aici', 'și'],
+        'materials' => [
+            'Instrumentul de programare:',
+            'sau descărcați',
+            'versiunea pentru PC',
+            'mBlock este un limbaj de programare bazat pe Scratch',
+            'Această provocare este și ea adaptată pornind de la competiția MakeX Global Spark, un program de proiectare creativă la nivel de proiect pentru copiii cu vârsta între 6 și 13 ani.',
+            'Echipa participantă va trebui să se concentreze pe tema specifică și să conceapă o soluție prin programare de software și construcția de hardware.',
+            'Elevii sunt încurajați să finalizeze provocarea din Săptămâna programării și să o ducă la nivelul internațional ca să comunice cu alți elevi și să câștige premii.',
+            'Pentru mai multe informații, consultați:',
+            'sau contactați-ne la'
+        ],
     ],
-    'description' => [
-        'Ce vă vine în minte când vorbim despre locuință? O casă frumoasă? O cină copioasă gătită de către părinți? Un loc secret numai al vostru? Căldura de acasă ne umple de energie corpul și spiritul ca o stație de benzină. În mijlocul agitației vieții moderne, părinții sunt mereu ocupați cu munca. Când petreceți timp cu prietenii, nu vă puteți lăsa pisicile în urmă. Dar cum puteți avea grijă de cei apropiați când nu sunteți împreună? Tema provocării este',
-        'Îngrijirea familiei',
-        'Pe baza acestei teme, elevii sunt încurajați să dezvolte o idee pentru a transmite dragoste și îngrijire prin programare și prin hardware. Iată câteva întrebări la care să vă gândiți',
-        'Câți membri ai familiei aveți acasă? Cine sunt aceștia? Ați întâmpinat vreodată probleme când ați stat cu ei? De ce fel de îngrijire au nevoie aceștia?',
-        'Cunoașteți pe cineva căruia îi lipsește îngrijirea familiei mai mult decât altora din comunitatea voastră? Cum îi puteți ajuta pe acești oameni?'
-    ],
-    'instructions' => [
-        'Faceți brainstorming și cercetare pe tema îngrijirii familiei',
-        'Enumerați eventualele probleme',
-        'Generați posibile soluții',
-        'Selectați o soluție',
-        'Programați și construiți structura',
-        'Concepeți un afiș pentru organizarea proiectului vostru',
-        'Prezentați-l profesorilor și membrilor familiei'
-    ],
-    'example' => ['Puteți folosi ca inspirație exemplele de aici', 'și'],
-    'materials' => [
-        'Instrumentul de programare:',
-        'sau descărcați',
-        'versiunea pentru PC',
-        'mBlock este un limbaj de programare bazat pe Scratch',
-        'Această provocare este și ea adaptată pornind de la competiția MakeX Global Spark, un program de proiectare creativă la nivel de proiect pentru copiii cu vârsta între 6 și 13 ani.',
-        'Echipa participantă va trebui să se concentreze pe tema specifică și să conceapă o soluție prin programare de software și construcția de hardware.',
-        'Elevii sunt încurajați să finalizeze provocarea din Săptămâna programării și să o ducă la nivelul internațional ca să comunice cu alți elevi și să câștige premii.',
-        'Pentru mai multe informații, consultați:',
-        'sau contactați-ne la'
-    ],
-],
     'virtual-flower-field' => [
-    'title' => 'Cultivați-vă propriul câmp cu flori',
-    'author' =>
-        'Jadga Huegle – formator Meet and Code și membră a echipei SAP Snap!',
-    'duration' => '30-60 de minute',
-    'purposes' => [
-        'Familiarizarea cu programarea printr-un proiect simplu, dar grăitor.',
-        'Înțelegerea faptului că programarea poate fi artistică și poate da rezultate frumoase.',
-        'Înveselirea toamnei cu flori multicolore și cu Săptămâna UE a programării.',
-        'Prezentarea diversității florilor de pe Pământ.',
-        'Contribuția la obiectivele de dezvoltare durabilă (ODD), în special la ODD13 privind schimbările climatice, prin crearea unor evenimente de programare care ajută la educația în domeniul schimbărilor climatice cu ajutorul unor activități de conștientizare pe această temă.'
+        'title' => 'Cultivați-vă propriul câmp cu flori',
+        'author' =>
+            'Jadga Huegle – formator Meet and Code și membră a echipei SAP Snap!',
+        'duration' => '30-60 de minute',
+        'purposes' => [
+            'Familiarizarea cu programarea printr-un proiect simplu, dar grăitor.',
+            'Înțelegerea faptului că programarea poate fi artistică și poate da rezultate frumoase.',
+            'Înveselirea toamnei cu flori multicolore și cu Săptămâna UE a programării.',
+            'Prezentarea diversității florilor de pe Pământ.',
+            'Contribuția la obiectivele de dezvoltare durabilă (ODD), în special la ODD13 privind schimbările climatice, prin crearea unor evenimente de programare care ajută la educația în domeniul schimbărilor climatice cu ajutorul unor activități de conștientizare pe această temă.'
+        ],
+        'description' =>
+            'Elaborarea în Snap! a unui program care cultivă un câmp virtual cu flori diverse ca tip și ca număr de petale.',
+        'instructions' => [
+            'Dacă aveți nevoie de inspirație pentru a începe această provocare, consultați',
+            'acest videoclip',
+            'sau folosiți',
+            'acest document',
+            'pentru a face ceva asemănător',
+            'Această provocare se poate finaliza programând un câmp virtual cu flori în Snap! (sau Scratch) și postând online o captură de ecran sau o fotografie cu rezultatul.',
+            'Câmpul cu flori ar trebui să conțină flori diverse ca tip și ca număr de petale. În mod ideal, florile trebuie să fie programate, adică să fie realizate prin ștampilarea și răsucirea (sau prin desenarea și răsucirea) repetată a petalelor.',
+            'Postați o imagine cu grădina voastră virtuală cu flori folosind hashtagul #MeetandCode.'
+        ],
+        'materials' => [
+            'Vă recomandăm să folosiți',
+            'dar proiectul funcționează și în'
+        ]
     ],
-    'description' =>
-        'Elaborarea în Snap! a unui program care cultivă un câmp virtual cu flori diverse ca tip și ca număr de petale.',
-    'instructions' => [
-        'Dacă aveți nevoie de inspirație pentru a începe această provocare, consultați',
-        'acest videoclip',
-        'sau folosiți',
-        'acest document',
-        'pentru a face ceva asemănător',
-        'Această provocare se poate finaliza programând un câmp virtual cu flori în Snap! (sau Scratch) și postând online o captură de ecran sau o fotografie cu rezultatul.',
-        'Câmpul cu flori ar trebui să conțină flori diverse ca tip și ca număr de petale. În mod ideal, florile trebuie să fie programate, adică să fie realizate prin ștampilarea și răsucirea (sau prin desenarea și răsucirea) repetată a petalelor.',
-        'Postați o imagine cu grădina voastră virtuală cu flori folosind hashtagul #MeetandCode.'
-    ],
-    'materials' => [
-        'Vă recomandăm să folosiți',
-        'dar proiectul funcționează și în'
-    ]
-],
     'haunted-house' => [
-    'title' => 'Haunted House in Hedy (Casa bântuită în Hedy)',
-    'author' =>
-        'Felienne Hermans, Universitatea din Leiden – Ramon Moorlag, I&I – CodeWeek NL',
-    'audience' => 'Profesori și cadre didactice',
-    'duration' => '1 oră sau 2 ore, în funcție de cunoștințele anterioare',
-    'purposes' => [
-        'Crearea unei povești interactive despre o casă bântuită.',
-        'Învățarea programării cu Hedy.'
+        'title' => 'Haunted House in Hedy (Casa bântuită în Hedy)',
+        'author' =>
+            'Felienne Hermans, Universitatea din Leiden – Ramon Moorlag, I&I – CodeWeek NL',
+        'audience' => 'Profesori și cadre didactice',
+        'duration' => '1 oră sau 2 ore, în funcție de cunoștințele anterioare',
+        'purposes' => [
+            'Crearea unei povești interactive despre o casă bântuită.',
+            'Învățarea programării cu Hedy.'
+        ],
+        'description' =>
+            'Cu Hedy veți crea o poveste cu o casă bântuită folosind elemente interactive. La fiecare execuție a codului se va crea o poveste nouă. Povestea poate fi și citită cu voce tare de către computer și poate fi distribuită online.',
+        'instructions' => [
+            'Pentru început, deschideți un browser și accesați hedycode.com.',
+            'Urmați instrucțiunile pentru nivelurile 1-4. Folosiți filele ‘Level’(Nivel) and ‘Haunted house (Casa bântuită).’',
+            'Cu ajutorul acestor niveluri vom scrie o poveste interactivă despre o casă bântuită.',
+            'Profesorii pot găsi un plan de lecție Hedy',
+            'aici',
+            'Puteți găsi o înregistrare în care Felienne Hermans prezintă Hedy la',
+            'acest link'
+        ],
+        'example' => 'Exemplu de casă bântuită la nivelul',
+        'materials' => ['Hedy la', 'nivelurile 1-4'],
     ],
-    'description' =>
-        'Cu Hedy veți crea o poveste cu o casă bântuită folosind elemente interactive. La fiecare execuție a codului se va crea o poveste nouă. Povestea poate fi și citită cu voce tare de către computer și poate fi distribuită online.',
-    'instructions' => [
-        'Pentru început, deschideți un browser și accesați hedycode.com.',
-        'Urmați instrucțiunile pentru nivelurile 1-4. Folosiți filele ‘Level’(Nivel) and ‘Haunted house (Casa bântuită).’',
-        'Cu ajutorul acestor niveluri vom scrie o poveste interactivă despre o casă bântuită.',
-        'Profesorii pot găsi un plan de lecție Hedy',
-        'aici',
-        'Puteți găsi o înregistrare în care Felienne Hermans prezintă Hedy la',
-        'acest link'
-    ],
-    'example' => 'Exemplu de casă bântuită la nivelul',
-    'materials' => ['Hedy la', 'nivelurile 1-4'],
-],
     'inclusive-app-design' => [
-    'title' => 'Inclusive App Design (Conceperea de aplicații favorabile incluziunii)',
-    'author' => 'Apple Education',
-    'duration' => '60 de minute + activități suplimentare opționale',
-    'purposes' => [
-        'Brainstorming, planificare, conceperea unui prototip și distribuirea unei idei de aplicație pe care să o poată accesa și înțelege toată lumea.'
+        'title' => 'Inclusive App Design (Conceperea de aplicații favorabile incluziunii)',
+        'author' => 'Apple Education',
+        'duration' => '60 de minute + activități suplimentare opționale',
+        'purposes' => [
+            'Brainstorming, planificare, conceperea unui prototip și distribuirea unei idei de aplicație pe care să o poată accesa și înțelege toată lumea.'
+        ],
+        'description' =>
+            'Aplicațiile excelente pornesc de la idei excelente. În această activitate, elevii vor veni cu o idee de aplicație pe o temă care contează pentru ei, iar apoi vor descoperi cum să proiecteze aplicații ținând cont de incluziune și de accesibilitate.',
+        'instructions' => [
+            'Veți găsi toate instrucțiunile la acest link',
+            'Cu acest plan de lecție de o oră, cadrele didactice îi pot îndruma pe elevi pentru',
+            'Învățarea despre conceperea de aplicații favorabile incluziunii',
+            'Brainstorming pe teme care contează pentru ei pentru a găsi o idee de aplicație',
+            'Prezentarea ideilor lor de aplicație și planificarea activităților',
+            'Realizarea prototipului pentru o parte a aplicației lor în Keynote',
+            'Distribuirea de versiuni demonstrative ale prototipurilor lor și descrierea modului în care vin în sprijinul utilizatorilor din diverse contexte și cu diverse abilități'
+        ],
+        'materials' => [
+            'Explorarea conceperii de aplicații favorabile incluziunii la Apple Teacher Learning Center',
+            'Se recomandă Keynote pe iPad sau Mac, dar nu este necesar.'
+        ]
     ],
-    'description' =>
-        'Aplicațiile excelente pornesc de la idei excelente. În această activitate, elevii vor veni cu o idee de aplicație pe o temă care contează pentru ei, iar apoi vor descoperi cum să proiecteze aplicații ținând cont de incluziune și de accesibilitate.',
-    'instructions' => [
-        'Veți găsi toate instrucțiunile la acest link',
-        'Cu acest plan de lecție de o oră, cadrele didactice îi pot îndruma pe elevi pentru',
-        'Învățarea despre conceperea de aplicații favorabile incluziunii',
-        'Brainstorming pe teme care contează pentru ei pentru a găsi o idee de aplicație',
-        'Prezentarea ideilor lor de aplicație și planificarea activităților',
-        'Realizarea prototipului pentru o parte a aplicației lor în Keynote',
-        'Distribuirea de versiuni demonstrative ale prototipurilor lor și descrierea modului în care vin în sprijinul utilizatorilor din diverse contexte și cu diverse abilități'
-    ],
-    'materials' => [
-        'Explorarea conceperii de aplicații favorabile incluziunii la Apple Teacher Learning Center',
-        'Se recomandă Keynote pe iPad sau Mac, dar nu este necesar.'
-    ]
-],
     'silly-eyes' => [
-    'title' => 'Silly eyes (Ochi caraghioși)',
-    'author' => 'Raspberry Pi Foundation',
-    'duration' => '25 de minute',
-    'purposes' => [
-        'Crearea unui proiect cu interacțiune cu utilizatorul.',
-        'Personalizarea unui proiect cu efecte cromatice și grafice.',
-        'Învățarea despre design în creațiile digitale.'
+        'title' => 'Silly eyes (Ochi caraghioși)',
+        'author' => 'Raspberry Pi Foundation',
+        'duration' => '25 de minute',
+        'purposes' => [
+            'Crearea unui proiect cu interacțiune cu utilizatorul.',
+            'Personalizarea unui proiect cu efecte cromatice și grafice.',
+            'Învățarea despre design în creațiile digitale.'
+        ],
+        'description' =>
+            'În acest proiect veți concepe și veți crea un personaj cu ochi caraghioși. Ochii mari și caraghioși ai personajului vor urma săgeata mouse-ului pentru a trezi la viață personajul vostru.',
+        'instructions' => 'Accesați descrierea completă a proiectului aici',
+        'example' => 'Aflați despre Gobo, Under the sea (Adâncul mării) și Don\'t eat donut (Nu mânca gogoașa)'
     ],
-    'description' =>
-        'În acest proiect veți concepe și veți crea un personaj cu ochi caraghioși. Ochii mari și caraghioși ai personajului vor urma săgeata mouse-ului pentru a trezi la viață personajul vostru.',
-    'instructions' => 'Accesați descrierea completă a proiectului aici',
-    'example' => 'Aflați despre Gobo, Under the sea (Adâncul mării) și Don\'t eat donut (Nu mânca gogoașa)'
-],
     'train-ai-bot' => [
-    'title' => 'Antrenați un robot IA!',
-    'purposes' =>
-        'Deprinderea unor noțiuni privind inteligența artificială (IA), învățarea automatizată, datele de formare și predispoziție, explorând aspecte etice și modul în care se poate folosi IA pentru a aborda probleme ale lumii.',
-    'description' =>
-        'Antrenarea unui robot cu IA pentru Oceane. În această activitate, veți programa sau veți antrena IA (inteligența artificială) pentru a deosebi peștii de deșeuri. Să curățăm oceanul!',
-    'instructions' => [
-        'Instrucțiunile sunt prezentate ca înregistrări video în tutorial',
-        'și sunt și scrise la fiecare nivel, în partea de sus'
+        'title' => 'Antrenați un robot IA!',
+        'purposes' =>
+            'Deprinderea unor noțiuni privind inteligența artificială (IA), învățarea automatizată, datele de formare și predispoziție, explorând aspecte etice și modul în care se poate folosi IA pentru a aborda probleme ale lumii.',
+        'description' =>
+            'Antrenarea unui robot cu IA pentru Oceane. În această activitate, veți programa sau veți antrena IA (inteligența artificială) pentru a deosebi peștii de deșeuri. Să curățăm oceanul!',
+        'instructions' => [
+            'Instrucțiunile sunt prezentate ca înregistrări video în tutorial',
+            'și sunt și scrise la fiecare nivel, în partea de sus'
+        ],
+        'materials' => [
+            'Tutorialul se găsește aici',
+            'Acest tutorial este disponibil în peste 25 de limbi'
+        ],
     ],
-    'materials' => [
-        'Tutorialul se găsește aici',
-        'Acest tutorial este disponibil în peste 25 de limbi'
-    ],
-]
+    'build-calliope' => [
+        'title' => 'Construiește-ți propriul mini antrenor de fitness Calliope',
+        'author' => 'Amazon Future Engineer | Meet and Code vs. Calliope gGmbH',
+        'purposes' => [
+            'Să descoperi prin joacă secvențe, animații, repetări și variabile.',
+            'Să proiectezi o diagramă.',
+            'Să testezi și să verifici cod.',
+            'Să optimizezi un program prin încercare și eroare, verificând și ajustând uzabilitatea.',
+        ],
+        'duration' => '20-30 minute',
+        'description' =>
+            "Participanții vor dezvolta un prototip controlat digital care folosește un LED strălucitor colorat pentru a reproduce un exercițiu de fitness predefinit cu 10 unități.",
+        'materials' => [
+            'Calliope mini StarterBox (dacă este disponibilă)',
+            'Laptop sau tabletă de pe care poți vizita<a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a>sau<a href="https://calliope.cc">https://calliope.cc</a> și YouTube pentru a avea acces la resursele pentru activitate.'
+        ],
+        'instructions' => [
+            'Pentru a începe, creează un plan și stabilește ordinea unităților din exercițiu. Folosind programul, programează LED-ul RGB de pe Calliope mini pentu a afișa una dintre cele 5 culori într-un ritm predefinit. Apoi creează o variabilă pentru ritm și repetițiile programului folosind bucle.',
+            "Nu uita, dacă îți place cum ai implementat programul, îl poți împărtăși cu noi la info@calliope.cc – suntem curioși să vedem cum a ieșit! Apropo, oferim cadou 30 de Clliope mini printre cei care ne trimit!",
+            "Distribuie codul QR al proiectului tău pe Instagram, adaugă hashtag-ul #CodeWeekChallenge și menționează @CodeWeekEU.",
+        ],
+        'example' => [
+            'În timp ce stai la computer: te poți antrena și tu.',
+            'Creează un prototip de fitness cu Calliope mini care poate fi testat și ca simulator. Provocarea este făcută în editorul MakeCode prin programarea unei simple secvențe de cod (vezi captura de ecran).',
+            'Alege 5 culori diferite și atribuie un exercițiu de fitness fiecăreia dintre ele, ex: genuflexiuni sau sărituri pe loc. Apoi culorile pot fi aliniate în orice ordine și antrenate.'
+        ],
+
+    ]
+
 ];
 

@@ -451,6 +451,34 @@ return [
         'Návod je k dispozícii tu',
         'Tento návod je dostupný vo vyše 25 jazykoch'
     ],
-]
+],
+    'build-calliope' => [
+        'title' => 'Vytvor si svojho vlastného mini fitness trénera Calliope',
+        'author' => 'Amazon Future Engineer | Meet and Code feat. Calliope gGmbH',
+        'purposes' => [
+    'Hravou formou spoznávať sekvencie, animácie, opakovania a premenné.',
+    'Navrhnúť štruktúrny diagram.',
+    'Testovať a odladiť kód.',
+    'Optimalizovať program metódou pokus-omyl, kontrolou a úpravou použiteľnosti.'
+        ],
+        'duration' => '20-30 minút',
+        'description' =>
+            'Účastníci vyvinú digitálne riadený prototyp, ktorý využíva farebnú žiariacu LED diódu na reprodukciu vopred vytvoreného 10-krokového fitness cvičenia.',
+        'materials' => [
+    'Calliope mini StarterBox (ak je k dispozícii)',
+    'Laptop alebo tablet, s ktorým môžeš navštíviť stránku <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> alebo <a href="https://calliope.cc">https://calliope.cc</a> a kanál YouTube, skade vieš získať prístup k zdrojom pre túto aktivitu.'
+        ],
+        'instructions' => [
+            'Na začiatok si vytvor plán a urči poradie cvičebných jednotiek. Pomocou plánu naprogramuj RGB LED na Calliope mini tak, aby zobrazovala jednu z 5 farieb preddefinovaným tempom. Potom vytvor premennú pre tempo a opakovanie programu pomocou slučiek.',
+            "Nezabudni, že ak si program implementoval/ implementovala spôsobom, ktorý sa ti páči, môžeš ho zdieľať aj s nami na adrese info@calliope.cc – Už teraz sa tešíme, čo z toho urobíte! Mimochodom, medzi prihlásených účastníkov rozdávame 30 Calliope mini!",
+            "Zdieľaj QR kód tvojho projektu na Instagrame, pridaj hashtag #CodeWeekChallenge a poznámku @CodeWeekEU.",
+        ],
+        'example' => [
+            'Keď sedíš pri počítači: aj vtedy môžeš športovať.',
+            'Vytvor si fitness prototyp s Calliope mini, ktorý môžeš otestovať aj v simulátore. Simulácia sa vykonáva v editore MakeCode naprogramovaním jednoduchej kódovej sekvencie (pozri snímku obrazovky).',
+            'Vyber si 5 rôznych farieb a ku každej z nich priraď kondičné cvičenie, napr. drepy alebo skákanie. Farby potom môžu byť počas tréningu zoradené v ľubovoľnom poradí.'
+        ],
+
+    ]
 ];
 
