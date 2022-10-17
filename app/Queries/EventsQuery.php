@@ -12,14 +12,31 @@ use Illuminate\Http\Request;
 
 class EventsQuery
 {
+
+    private static function getRandomString($n)
+    {
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $randomString = '';
+
+        for ($i = 0; $i < $n; $i++) {
+            $index = rand(0, strlen($characters) - 1);
+            $randomString .= $characters[$index];
+        }
+
+        return $randomString;
+    }
+
     public static function store(Request $request)
     {
-
 
 
         $request['status'] = 'PENDING';
 
         $request['slug'] = str_slug($request['title'], '-');
+
+        if (strlen($request['slug']) == 0) {
+            abort(503,'Title error');
+        }
 
         $request['pub_date'] = Carbon::now();
         $request['created'] = Carbon::now();
@@ -29,19 +46,19 @@ class EventsQuery
         $request['theme'] = explode(',', $request['theme']);
         $request['audience'] = explode(',', $request['audience']);
 
-        if(is_null($request['location']) && ($request['activity_type'] == "open-online" || $request['activity_type'] == "invite-online")) {
+        if (is_null($request['location']) && ($request['activity_type'] == "open-online" || $request['activity_type'] == "invite-online")) {
             $request['location'] = "online";
             $request['geoposition'] = "0,0";
         }
 
-        if (is_null($request['geoposition'])){
+        if (is_null($request['geoposition'])) {
             $request['geoposition'] = "0,0";
         }
 
         $request['latitude'] = explode(",", $request['geoposition'])[0];
         $request['longitude'] = explode(",", $request['geoposition'])[1];
 
-        if (empty($request['codeweek_for_all_participation_code'])){
+        if (empty($request['codeweek_for_all_participation_code'])) {
             $codeweek_4_all_generated_code = 'cw' . Carbon::now()->format('y') . '-' . str_random(5);
             $request['codeweek_for_all_participation_code'] = $codeweek_4_all_generated_code;
         }
@@ -72,7 +89,7 @@ class EventsQuery
             $event->audiences()->save($audience);
         }
 
-        if ($event->geoposition == "0,0"){
+        if ($event->geoposition == "0,0") {
             $event->relocate();
         }
 
