@@ -149,6 +149,7 @@ class EventController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function show(Event $event) {
+
         if ($event->status == 'PENDING' && !Auth::check()) {
             return redirect(route('login'));
         } elseif ($event->status != 'APPROVED') {
