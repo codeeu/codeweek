@@ -459,5 +459,33 @@ return [
             'Vadnica je na voljo tukaj',
             'Ta vadnica je na voljo v več kot 25 jezikih'
         ]
+    ],
+    'build-calliope' => [
+        'title' => 'Izdelajte svoj  prototip Calliope mini fitnes trenerja',
+        'author' => 'Amazon Future Engineer | Meet and Code feat. Calliope gGmbH',
+        'purposes' => [
+            'Za igrivo spoznavanje sekvenc, animacij, ponovitev in spremenljivk.',
+            'Za oblikovanje strukturnega diagrama.',
+            'Za testiranje in odpravljanje napak v kodi.',
+            'Za optimizacijo programa s poskusi in napakami ter preverjanjem in prilagajanjem uporabnosti.'
+        ],
+        'duration' => '20-30 minut',
+        'description' =>
+            'Udeleženci bodo razvili digitalno nadzorovan prototip, ki uporablja barvno svetlečo LED za reprodukcijo že pripravljene vadbe z 10 enotami.',
+        'materials' => [
+            'Calliope mini StarterBox (če je na voljo)',
+            'Prenosni ali tablični računalnik, s katerim lahko obiščete <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> ali <a href="https://calliope.cc">https://calliope.cc</a> in YouTube za dostop do virov za izvajanje aktivnosti.'
+        ],
+        'instructions' => [
+            'Za začetek ustvarite načrt in določite vrstni red vadbenih enot. S pomočjo urnika programirajte po vnaprej določenem tempu RGB LED Calliope mini za prikaz ene od 5 barv. Nato ustvarite spremenljivko koraka in ponovitve programa z uporabo zank.',
+            'Ne pozabite, da lahko vaš program, v primeru, da ste z njim zadovoljni, delite tudi z nami na info@calliope.cc – in z veseljem si bomo ogledali vaše delo! Mimogrede, prijavljenim prispevkom podarjamo še 30 Calliope mini izdelkov!',
+            'Delite QR kodo vašega projekta na Instagramu, dodajte hashtag #CodeWeekChallenge in omenite @CodeWeekEU.'
+        ],
+        'example' => [
+            'Medtem, ko sedite za računalnikom, ste lahko tudi vi športno aktivni.',
+            'Ustvarite fitnes prototip s Calliope mini, ki ga je mogžno preizkusiti tudi v simulatorju. Izziv selahko izvede v urejevalniku MakeCode s programiranjem preprostega kodnega zaporedja (glejte posnetek zaslona).',
+            'Izberite 5 različnih barv in vsaki dodelite fitnes vadbo, npr. počep ali jumping jacks. Potem lahko barve v poljubnem vrstnem redu postavite in jih usposobite.'
+        ],
+
     ]
 ];

@@ -457,5 +457,33 @@ return [
             'Az útmutatók itt találhatók:',
             'Ez az útmutató több mint 25 nyelven érhető el'
         ]
+    ],
+    'build-calliope' => [
+        'title' => 'Építsd meg a saját Calliope mini fitness tréneredet',
+        'author' => 'Amazon Future Engineer | Meet and Code feat. Calliope gGmbH',
+        'purposes' => [
+            'A szekvenciák, animációk, ismétlések és változók játékos megismerése.',
+            'Szerkezeti diagram tervezése.',
+            'Kódok tesztelése és hibakeresés.',
+            'Egy program optimalizálása próba és hiba útján, a használhatóság ellenőrzése és beállítása.'
+        ],
+        'duration' => '20-30 perc',
+        'description' =>
+            'A résztvevők egy digitálisan vezérelt prototípust fejlesztenek, amely egy színes, világító LED-et használ egy előre meghatározott 10 egységből álló fitneszgyakorlat reprodukálására.',
+        'materials' => [
+            'Calliope mini StarterBox (amennyiben rendelkezésre áll)',
+            'Laptop vagy tablet, amellyel felkeresheted a <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> vagy a <a href="https://calliope.cc">https://calliope.cc</a> oldalakat, és a YouTube a tevékenységhez szükséges forrásokhoz való hozzáféréshez.'
+        ],
+        'instructions' => [
+            'A kezdéshez készíts tervet, és határozd meg a gyakorlategységek sorrendjét. A terv segítségével programozd be a Calliope mini RGB LED-jét úgy, hogy az előre meghatározott ütemben az 5 szín valamelyikét jelenítse meg. Ezután hozz létre egy változót a tempóhoz, és programozd be az ismétléseket ciklusok segítségével.',
+            "Ne feledd, ha a programot neked tetsző, egyéni módon valósítottad meg, oszd meg velünk a info@calliope.cc címen - kíváncsian várjuk, hogy te mit hozol ki belőle! Apropó, a beküldött pályaművek között 30 Calliope minit sorsolunk ki!",
+            "Oszd meg a projekted QR-kódját az Instagramon, add hozzá a #CodeWeekChallenge hashtaget, és említsd meg a @CodeWeekEU-t.",
+        ],
+        'example' => [
+            'Amíg a számítógép előtt ülsz: sportolhatsz is.',
+            'Készíts fitnesz prototípust a Calliope mini segítségével, amely a szimulátorban is tesztelhető. A kihívás a MakeCode szerkesztőprogramban történik egy egyszerű kódsorozat programozásával (lásd a képernyőképet).',
+            'Válassz ki 5 különböző színt, és rendelj mindegyikhez egy-egy fitneszgyakorlatot, például guggolást vagy ugrókötelet.  Ezután a színeket tetszőleges sorrendben felsorakoztathatod és a gyakorlatokat lejátszhatod.'
+        ],
+
     ]
 ];
