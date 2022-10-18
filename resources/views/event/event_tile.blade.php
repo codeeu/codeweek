@@ -1,7 +1,9 @@
 <div class="codeweek-card">
     <img src="{{$event->picture_path()}}" class="card-image">
     <div class="card-content">
+        @can('approve', $event)
         <div style="font-size: 11px; margin-bottom: 5px; ">Organizer: <span style="background-color: #fe85351a; padding: 4px">{{$event->owner->email}}</span></div>
+        @endcan
         <h5 class="card-title">{{ $event->title }}</h5>
         <div class="card-subtitle" style="text-transform: capitalize;">{{Carbon\Carbon::parse($event->start_date)->isoFormat('llll')}}</div>
         <div class="card-description">{!!   $event->description !!}</div>
