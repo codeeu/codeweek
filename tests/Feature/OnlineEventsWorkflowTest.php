@@ -45,7 +45,7 @@ class OnlineEventsWorkflowTest extends TestCase
         $this->signIn($ambassador);
 
         $onlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
-        $pastOnlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->subDay(), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+        $pastOnlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->subMonth(), 'end_date' => Carbon::now()->subDay(), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
         $onlineEventInAnotherCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => 'foobar', 'status' => 'APPROVED', 'activity_type' => 'open-online']);
         $offlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'offline']);
 
@@ -54,6 +54,35 @@ class OnlineEventsWorkflowTest extends TestCase
             ->assertDontSee($onlineEventInAnotherCountry->title)
             ->assertDontSee($pastOnlineEventInCountry->title)
             ->assertDontSee($offlineEventInCountry->title)
+            ->assertSee('Promote')
+            ->assertDontSee('Add to Calendar');
+
+        $response->assertStatus(200);
+    }
+
+    /*
+ * online events only
+ * ambassadors only see online events from their own countries
+ */
+    /** @test */
+    public function it_should_list_online_events_when_month_is_between_start_and_end_and_started_recently()
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+
+
+        $ambassador = create('App\User');
+        $ambassador->assignRole('ambassador');
+
+        $this->signIn($ambassador);
+
+        $onlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->subDays(15), 'end_date' => Carbon::now()->addMonths(2), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+        $tooOldOnlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->subDays(45), 'end_date' => Carbon::now()->addMonths(2), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+        $pastEventInCountry = create('App\Event', ['start_date' => Carbon::now()->subDays(10), 'end_date' => Carbon::now()->subDays(10), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+
+        $response = $this->get('/online/list')
+            ->assertSee($onlineEventInCountry->title)
+            ->assertDontSee($tooOldOnlineEventInCountry->title)
+            ->assertDontSee($pastEventInCountry->title)
             ->assertSee('Promote')
             ->assertDontSee('Add to Calendar');
 

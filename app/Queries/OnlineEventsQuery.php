@@ -35,7 +35,13 @@ class OnlineEventsQuery
 
             $query->where('status', 'APPROVED');
             $query->where('activity_type', 'open-online');
-            $query->where('start_date', '>=', Carbon::now());
+            $query->where(
+                function ($query) {
+                    $query->where('start_date', '>=', Carbon::now()->subDays(15))->where('end_date', '>=', Carbon::now());
+                });
+
+
+//             dd($query->toSql());
 
 
         })->orderBy('start_date', 'asc')->paginate(20);

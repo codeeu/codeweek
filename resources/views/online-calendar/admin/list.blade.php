@@ -90,7 +90,6 @@
 
                                 @endforeach
 
-                                <!-- More rows... -->
                                 </tbody>
 
 
