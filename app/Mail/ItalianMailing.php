@@ -7,16 +7,21 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class GermanMailing extends Mailable {
+class ItalianMailing extends Mailable
+{
     use Queueable, SerializesModels;
+
+    public $email;
+    public $magic;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct() {
-        //
+    public function __construct($email, $magic) {
+        $this->email = $email;
+        $this->magic = $magic;
     }
 
     /**
@@ -25,8 +30,8 @@ class GermanMailing extends Mailable {
      * @return $this
      */
     public function build() {
-        return $this->subject('German Mailing')->markdown(
-            'emails.de.birthday'
+        return $this->subject('EU CodeWeek - Invito personale alla festa online del 9 novembre')->markdown(
+            'emails.it.italian-mailing'
         );
     }
 }
