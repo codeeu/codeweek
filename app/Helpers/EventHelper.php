@@ -136,7 +136,8 @@ class EventHelper {
             'status' => 'APPROVED',
             'highlighted_status' => 'FEATURED'
         ])
-            ->where('start_date', '>=', Carbon::now())
+            ->where('start_date', '>=', \Carbon\Carbon::now()->subDays(15))->where('end_date', '>=', \Illuminate\Support\Carbon::now())
+//            ->where('start_date', '>=', Carbon::now()->subDays(30))
             ->orderBy('start_date')
             ->get();
 
