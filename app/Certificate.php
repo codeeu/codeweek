@@ -63,10 +63,6 @@ class Certificate
         $deletedTex = Storage::disk('latex')->delete($this->event->id . ".tex");
         $deletedPdf = Storage::disk('latex')->delete($this->event->id . ".pdf");
         $deletedLog = Storage::disk('latex')->delete($this->event->id . ".log");
-        Log::info("Deleted Aux: " . $deletedAux);
-        Log::info("Deleted Tex: " . $deletedTex);
-        Log::info("Deleted PDF: " . $deletedPdf);
-        Log::info("Deleted Log: " . $deletedLog);
     }
 
 
