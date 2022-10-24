@@ -4,7 +4,7 @@ Dear EU Code Week enthusiast,<br/>
 We noticed that you tried to generate a certificate on the Code Week website.
 Due to a technical issue, our servers were not able to generate your certificate.
 
-The bug has vanished and your certificate is now available. You can download it by clicking on the button below.<br/>
+The bug has now been squashed and your certificate is available. You can download it by clicking on the button below.<br/>
 
 @component('mail::button', ['url' => $event->certificate_url])
     Download my Certificate
