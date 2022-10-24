@@ -11,6 +11,7 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Mail;
+use Log;
 
 class MissingCertificate implements ShouldQueue
 {
@@ -35,6 +36,7 @@ class MissingCertificate implements ShouldQueue
     public function handle()
     {
         (new Certificate($this->event))->generate();
-        Mail::to($this->event->owner->email)->send(new \App\Mail\MissingCertificate($this->event));
+        Log::info("sending email to " . $this->event->owner->email);
+        Mail::to($this->event->owner->email)->queue(new \App\Mail\MissingCertificate($this->event));
     }
 }
