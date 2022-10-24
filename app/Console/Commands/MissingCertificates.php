@@ -36,7 +36,7 @@ class MissingCertificates extends Command
         //TODO: uncomment
         //$faultyCertificatesEvents = EventHelper::getReportedEventsWithoutCertificates();
 
-        $faultyCertificatesEvents = Event::where('id',394021)->get();
+        $faultyCertificatesEvents = Event::where('id',171675)->get();
 
         $this->info("Faulty Certificated Found: " . $faultyCertificatesEvents->count());
 
