@@ -60,6 +60,18 @@ class EventHelper {
         return $events;
     }
 
+    public static function getReportedEventsWithoutCertificates(){
+        $events = Event::where('status', '=', 'APPROVED')
+            ->whereNotNull('reported_at')
+            ->whereNull('certificate_url')
+            ->whereNotNull('approved_by')
+            ->whereDate('reported_at', '>', Carbon::now()->subDays(10))
+            ->orderBy('id','desc')
+            ->get();
+
+        return $events;
+    }
+
 
 
     private static function getPendingEventsForCountry($country) {
