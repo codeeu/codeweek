@@ -33,12 +33,12 @@ class MissingCertificates extends Command
     {
 
         // get all the events with faulty certificate status
-        //TODO: uncomment
-        //$faultyCertificatesEvents = EventHelper::getReportedEventsWithoutCertificates();
 
-        $faultyCertificatesEvents = Event::where('id',171675)->get();
+        $faultyCertificatesEvents = EventHelper::getReportedEventsWithoutCertificates();
 
-        $this->info("Faulty Certificated Found: " . $faultyCertificatesEvents->count());
+        //$faultyCertificatesEvents = Event::where('id',171675)->get();
+
+        $this->info("Faulty Certificates Found: " . $faultyCertificatesEvents->count());
 
         // Create the Job to
         // - generate certificate
