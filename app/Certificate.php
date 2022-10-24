@@ -67,7 +67,6 @@ class Certificate
         Log::info("Deleted Tex: " . $deletedTex);
         Log::info("Deleted PDF: " . $deletedPdf);
         Log::info("Deleted Log: " . $deletedLog);
-        dd('ok');
     }
 
 
