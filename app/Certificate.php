@@ -59,10 +59,10 @@ class Certificate
 
     private function clean_temp_files()
     {
-        Storage::disk('latex')->delete($this->event->id . ".aux");
-        Storage::disk('latex')->delete($this->event->id . ".tex");
-        Storage::disk('latex')->delete($this->event->id . ".pdf");
-        Storage::disk('latex')->delete($this->event->id . ".log");
+        $deletedAux = Storage::disk('latex')->delete($this->event->id . ".aux");
+        $deletedTex = Storage::disk('latex')->delete($this->event->id . ".tex");
+        $deletedPdf = Storage::disk('latex')->delete($this->event->id . ".pdf");
+        $deletedLog = Storage::disk('latex')->delete($this->event->id . ".log");
     }
 
 

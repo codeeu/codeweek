@@ -25,8 +25,8 @@ class GermanMailing extends Mailable {
      * @return $this
      */
     public function build() {
-        return $this->subject('Event Deleted')->markdown(
-            'emails.en.event-deleted'
+        return $this->subject('German Mailing')->markdown(
+            'emails.de.birthday'
         );
     }
 }

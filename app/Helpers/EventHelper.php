@@ -16,7 +16,7 @@ class EventHelper {
         }
 
         $events = Event::selectRaw(
-            'id, title, slug, start_date, description, picture,
+            'id, title, slug, start_date, description, picture, creator_id, 
         ( 6371 *
          acos( cos( radians(?) ) *
          cos( radians( latitude ) ) *
@@ -55,6 +55,18 @@ class EventHelper {
             ->select('country_iso')
             ->where('start_date', '>', Carbon::createFromDate(2018, 1, 1))
             ->whereIn('country_iso', $countries)
+            ->get();
+
+        return $events;
+    }
+
+    public static function getReportedEventsWithoutCertificates(){
+        $events = Event::where('status', '=', 'APPROVED')
+            ->whereNotNull('reported_at')
+            ->whereNull('certificate_url')
+            ->whereNotNull('approved_by')
+            ->whereDate('reported_at', '>', Carbon::now()->subDays(10))
+            ->orderBy('id','desc')
             ->get();
 
         return $events;
@@ -136,7 +148,8 @@ class EventHelper {
             'status' => 'APPROVED',
             'highlighted_status' => 'FEATURED'
         ])
-            ->where('start_date', '>=', Carbon::now())
+            ->where('start_date', '>=', \Carbon\Carbon::now()->subDays(15))->where('end_date', '>=', \Illuminate\Support\Carbon::now())
+//            ->where('start_date', '>=', Carbon::now()->subDays(30))
             ->orderBy('start_date')
             ->get();
 

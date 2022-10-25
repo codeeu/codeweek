@@ -25,8 +25,8 @@ class EventRequest extends FormRequest
     {
         return [
             'activity_type' => 'required',
-            'title' => 'required',
-            'description' => 'required',
+            'title' => 'required|min:5',
+            'description' => 'required|min:5',
             'organizer' => 'required',
             'location' => 'required_unless:activity_type,open-online,invite-online',
             "event_url" => 'required_if:activity_type,open-online,invite-online',

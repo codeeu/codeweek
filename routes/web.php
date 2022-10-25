@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 
 
-//Auth::loginUsingId(255361);
+//Auth::loginUsingId(10873);
 
 Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
     Route::get('/', function ($subdomain) {
@@ -251,8 +251,8 @@ Route::get('/volunteer', 'VolunteerController@create')
 Route::post('/volunteer', 'VolunteerController@store')
     ->middleware('auth')
     ->name('volunteer_store');
-Route::post('/events', 'EventController@store');
-Route::patch('/events/{event}', 'EventController@update');
+Route::post('/events', 'EventController@store')->middleware('auth');
+Route::patch('/events/{event}', 'EventController@update')->middleware('auth');
 Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get(
     'login/{provider}/callback',
