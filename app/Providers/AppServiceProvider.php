@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Carbon\Carbon;
 use Illuminate\Cache\RateLimiting\Limit;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\RateLimiter;
@@ -18,6 +19,9 @@ class AppServiceProvider extends ServiceProvider {
      * @return void
      */
     public function boot() {
+
+//        Model::shouldBeStrict(!$this->app->isProduction());
+
         View::share('locales', config('app.locales'));
 
         Carbon::setLocale('app.locale');
