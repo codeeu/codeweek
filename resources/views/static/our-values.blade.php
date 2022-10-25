@@ -224,7 +224,7 @@
             opacity: 100%;
             /*width:100%;*/
             margin: 0;
-            font-family: "PT Sans", sans-serif;
+            font-family: "PT Sans, Roboto", sans-serif;
             font-weight: lighter;
             font-size: 12px;
             text-align: center;
