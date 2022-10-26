@@ -8,7 +8,7 @@ return [
     'levels' => 'Levels',
     'programming_languages' => 'Programming Languages',
     'categories' => 'Categories',
-    'Languages' => 'Languages',
+    'Languages' => 'Language',
     'Subjects' => 'Subjects',
     'share' => 'Share',
     'communication_toolkit' => 'Communications Toolkit',
