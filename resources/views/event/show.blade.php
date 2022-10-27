@@ -12,7 +12,8 @@
             @if($event->certificate_url)
                 <reported-event :event="{{$event}}"></reported-event>
             @else
-                <moderate-event :event="{{$event}}" :pending-counter="{{auth()->user()->getEventsToReviewCount()}}" :next-pending="'{{optional(auth()->user()->getNextPendingEvent($event))->path()}}'"></moderate-event>
+                <moderate-event :event="{{$event}}" :pending-counter="{{auth()->user()->getEventsToReviewCount()}}"
+                                :next-pending="'{{optional(auth()->user()->getNextPendingEvent($event))->path()}}'"></moderate-event>
             @endif
         @endcan
 
@@ -44,8 +45,11 @@
                     @endcan
 
                     @can('delete', $event)
-                        <a class="codeweek-action-link-button red"
-                           href="{{route('delete_event',$event->id)}}">@lang('base.delete')</a>
+                        @if(Auth::check() &&
+    $event->creator_id === auth()->user()->id)
+                            <a class="codeweek-action-link-button red"
+                               href="{{route('delete_event',$event->id)}}">@lang('base.delete')</a>
+                        @endif
                     @endcan
                 </div>
                 <div class="title">
@@ -260,6 +264,7 @@
             "renderTo" : "events-show-map",
             "custom": ["/js/hideMenuMap.js","/js/leaflet.markercluster.js"]
         }
+
 
 
 
