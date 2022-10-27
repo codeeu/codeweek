@@ -61,6 +61,9 @@ class DeleteEventTest extends TestCase
 
         $this->post(route('event.delete', $event));
 
+        // No message should be sent when a user delete its own event
+        Mail::assertNotQueued(EventDeleted::class);
+
         $this->assertTrue($event->fresh()->trashed());
 
 
