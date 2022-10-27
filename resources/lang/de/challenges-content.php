@@ -451,5 +451,33 @@ return [
             'Das Tutorial ist hier zu finden',
             'Dieses Tutorial steht in über 25 Sprachen zur Verfügung'
         ],
+    ],
+    'build-calliope' => [
+        'title' => 'Bau Dir Deinen Calliope mini Fitnesstrainer',
+        'author' => 'Amazon Future Engineer | Meet and Code feat. Calliope gGmbH',
+        'purposes' => [
+            'Spielerisches Kennenlernen von Sequenzen, Animationen, Wiederholungen und Variablen.',
+            'Gestaltung eines Struktogramms.',
+            'Testen und Debuggen von Code.',
+            'Optimierung eines Programmes durch Ausprobieren, Usability überprüfen und anpassen.'
+        ],
+        'duration' => '20-30 Minuten',
+        'description' =>
+            'Die Teilnehmer entwickeln einen digital gesteuerten Prototypen, der mit Hilfe einer bunt leuchtenden LED eine vorab ausgedachte Fitnessübung mit 10 Einheiten wiedergibt.',
+        'materials' => [
+            'Calliope mini StarterBox (falls verfügbar)',
+            'Laptop oder Tablet, mit dem du <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> oder <a href="https://calliope.cc">https://calliope.cc</a> und YouTube besuchen kannst zum Zugang zu den Ressourcen für die Aktivität.'
+        ],
+        'instructions' => [
+            'Zuerst erstellst du einen Plan und legst die Reihenfolge der Übungseinheiten fest. Anhand des Programmablaufplans programmierst du die RGB-LED des Calliope mini so, dass sie im vorab definierten Tempo eine der 5 Farben anzeigt. Für das Tempo erstellst du eine Variable, und Wiederholungen programmierst du mit Hilfe von Schleifen.',
+            "Denke daran, falls du das Programm so umgesetzt hast, dass es dir gefällt, kannst du es auch mit uns unter info@calliope.cc teilen - wir sind gespannt, was du daraus machst! Übrigens verlosen wir unter allen Einsendungen 30 Calliope minis!",
+            "Teile den QR-Code deines Projekts auf Instagram, füge den Hashtag #CodeWeekChallenge hinzu und erwähne @CodeWeekEU..",
+        ],
+        'example' => [
+            'Nicht nur den ganzen Tag am Rechner sitzen: jetzt wird es sportlich.',
+            'Du wählst 5 verschiedene Farben und ordnest diesen jeweils eine Fitnessübung, z.B. Kniebeuge oder Hampelmann, zu.  Anschließend werden die Farben in einer beliebigen Reihenfolge hintereinander gereiht und trainiert.',
+            'Der Fitness-Prototyp kann mit dem Calliope mini erstellt, aber auch im Simulator ausprobiert werden. Die Challenge wird im MakeCode-Editor durch Programmierung einer einfachen Code Sequenz durchgeführt (siehe Screenshot).',
+        ],
+
     ]
 ];

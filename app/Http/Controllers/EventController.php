@@ -266,6 +266,9 @@ class EventController extends Controller {
     }
 
     private function sendDeletionEmail($event){
+
+        if ($event->creator_id == auth()->id()) return;
+
         if (!empty($event->user_email)) {
             Mail::to($event->user_email)->queue(
                 new \App\Mail\EventDeleted()

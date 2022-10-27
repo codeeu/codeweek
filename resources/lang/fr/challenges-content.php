@@ -457,5 +457,33 @@ return [
             'Un tutoriel est accessible ici',
             'Il est disponible dans plus de 25 langues'
         ]
+    ],
+    'build-calliope' => [
+        'title' => "Programmez votre propre coach de fitness avec Calliope mini.",
+        'author' => "Les partenaires Amazon Future Engineer, Meet and Code et Calliope gGmbH",
+        'purposes' => [
+            "Pour découvrir de façon ludique les séquences, les animations, les répétitions et les variables.",
+            "Pour concevoir un diagramme de structure.",
+            "Pour tester et déboguer le code.",
+            "Pour optimiser un programme par essais et erreurs, en testant et en ajustant son utilisabilité."
+        ],
+        'duration' => '20-30 minutes',
+        'description' =>
+            "Les participants développeront un prototype à commande numérique qui utilise une lampe LED colorée pour reproduire un programme de fitness préconçu et composé de 10 exercices.",
+        'materials' => [
+            'Le kit de démarrage Calliope mini (si disponible).',
+            "Un ordinateur portable ou une tablette avec lesquels vous pouvez vous rendre sur : <a href='https://makecode.calliope.cc'>https://makecode.calliope.cc</a> ou bien <a href='https://calliope.cc'>https://calliope.cc</a> et sur YouTube pour accéder aux ressources de l'activité.",
+        ],
+        'instructions' => [
+            "Pour commencer, créez un plan et déterminez l'ordre des exercices du programme. En utilisant le plan, programmez la LED RVB du Calliope mini pour qu'elle affiche l'une des 5 couleurs au rythme prédéfini. Créez ensuite une variable pour le rythme et programmez les répétitions à l'aide de boucles.",
+            "N'oubliez pas que si vous êtes satisfaits de ce que vous avez programmé, vous pouvez également nous partager votre projet à l'adresse info@calliope.cc. Nous sommes impatients de voir ce que vous avez créé avec le matériel reçu ! Nous offrons par ailleurs 30 Calliope minis en cadeau aux participants sélectionnés.",
+            "Partagez le QR code de votre projet sur Instagram, ajoutez le hashtag #CodeWeekChallenge et mentionnez @CodeWeekEU."
+        ],
+        'example' => [
+            "Vous pouvez vous entraîner tout en restant assis devant votre ordinateur.",
+            "Créez un programme de fitness avec le Calliope mini qui peut également être testé dans le simulateur. Le défi se réalise à l'aide de l'éditeur MakeCode en programmant une séquence de code simple (voir la capture d'écran).",
+            "Choisissez 5 couleurs différentes et attribuez un exercice de fitness à chacune d'elles, par exemple des squats ou des jumping jacks.  Les couleurs peuvent ensuite s'enchaîner dans n'importe quel ordre."
+        ],
+
     ]
 ];
