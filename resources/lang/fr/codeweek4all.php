@@ -38,7 +38,9 @@ return [
         '3' => 'Pour créer des connections avec des organisations et/ou écoles dans votre communauté ou au niveau international',
         '4' => 'Pour trouver un soutien auprès d’autres organisateurs et enseignants.',
         '5' => 'Pour obtenir un <strong>Certificat d’excellence.</strong>'
-    ]
+    ],
+    'superorganiser-title' => 'Certificat de super organisateur',
+    'superorganiser' => 'Vous pouvez également obtenir un certificat de super organisateur. Pour ce faire, vous devez organiser et <a href="https://codeweek.eu/add">enregistrer</a> au moins dix activités distinctes dans votre école, votre organisation ou en ligne.'
 
 
 ];

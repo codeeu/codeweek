@@ -302,7 +302,7 @@ return [
             'tutaj',
             'a scenariusz lekcji(w języku angielskim) –',
             'Ćwiczenia zawarte w tej lekcji można wykonywać niezależnie i w dowolnej kolejności',
-            'Nauczyciel może sfotografować pracę uczniów udostępnić zdjęcia na Instagramie z hasztagiem #CodeWeekChallengeGoogle'
+            'Nauczyciel może sfotografować pracę uczniów udostępnić zdjęcia na Instagramie z hasztagiem #CodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Oprócz broszury z ćwiczeniami do wykonania niektórych zadań potrzebne są także dodatkowe materiały.',

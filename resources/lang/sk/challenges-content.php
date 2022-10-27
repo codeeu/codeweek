@@ -296,7 +296,7 @@ return [
         'odkaze',
         'a plán vyučovacej hodiny v angličtine na tomto',
         'Aktivity z tejto vyučovacej hodiny možno uskutočniť oddelene v ľubovoľnom poradí',
-        'Učiteľka alebo učiteľ môže fotografovať vyučovací proces a zverejniť ho na Instagrame s hashtagom #CodeWeekChallengeGoogle'
+        'Učiteľka alebo učiteľ môže fotografovať vyučovací proces a zverejniť ho na Instagrame s hashtagom #CodeWeekChallengeGoogle #GrowWithGoogle'
     ],
     'materials' => [
         'Okrem brožúry s aktivitami si niektoré aktivity vyžadujú alebo môžu byť voliteľne doplnené dodatočnými materiálmi.',

@@ -38,6 +38,8 @@ return [
         '3' => 'By nawiązać znajomości z organizatorami i/lub szkołami z twojej społeczności lub z innych państw.',
         '4' => 'By wesprzeć innych organizatorów i nauczycieli.',
         '5' => 'By zdobyć <strong>Certyfikat Doskonałości.</strong>'
-    ]
+    ],
+    'superorganiser-title' => 'Dyplom Super Organizatora',
+    'superorganiser' => 'Możesz także zdobyć dyplom Super Organizatora – wystarczy, że zorganizujesz i <a href="https://codeweek.eu/add">zgłosisz</a> co najmniej 10 różnych wydarzeń i działań w swojej szkole, organizacji lub online.'
 
 ];

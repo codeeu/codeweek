@@ -3,7 +3,9 @@
 namespace Tests\Feature;
 
 use App\Event;
+use Illuminate\Auth\AuthenticationException;
 use Illuminate\Support\Facades\Mail;
+
 
 use Tests\TestCase;
 
@@ -27,6 +29,29 @@ class CreateEventTest extends TestCase
     }
 
     /** @test */
+    public function a_guest_user_cannot_create_events_with_post()
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+        $this->withoutExceptionHandling();
+
+        $this->expectException(AuthenticationException::class);
+
+        $event = make('App\Event');
+        create('App\Audience',[] ,3);
+        create('App\Theme', [],3);
+
+        $event->theme = "1";
+        $event->tags = "tag:foo,tag:bar";
+        $event->audience = "2, 3";
+        $event->privacy = true;
+
+        $event->language = "nl";
+
+        $this->post('/events', $event->toArray());
+
+    }
+
+    /** @test */
     public function an_authenticated_user_can_create_events()
     {
         $this->seed('RolesAndPermissionsSeeder');
@@ -43,8 +68,6 @@ class CreateEventTest extends TestCase
         $event->privacy = true;
 
         $event->language = "nl";
-
-
 
         $this->post('/events', $event->toArray());
 
@@ -124,6 +147,27 @@ class CreateEventTest extends TestCase
     {
         $this->publishEvent(['description' => null])->assertSessionHasErrors('description');
 
+    }
+
+    /** @test */
+    public function event_should_get_valid_slug()
+    {
+        $this->withExceptionHandling();
+        $this->signIn();
+
+        $event = make('App\Event', ['title' => '-----']);
+        create('App\Audience',[] ,3);
+        create('App\Theme', [],3);
+
+        $event->theme = "1";
+
+        $event->audience = "2, 3";
+
+        $event->privacy = true;
+
+        $response = $this->post('/events', $event->toArray());
+
+        $response->assertStatus(503);
     }
 
     /** @test */

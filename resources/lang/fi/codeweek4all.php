@@ -38,6 +38,8 @@ return [
         '3' => 'Pääset luomaan yhteyksiä organisaatioiden ja/tai oppilaitosten kanssa joko omalla alueellasi tai ympäri maailman.',
         '4' => 'Pääset hyödyntämään muiden järjestäjien ja opettajien tukea.',
         '5' => 'Pääset tavoittelemaan <strong>osaamissertifikaattia.</strong>'
-    ]
+    ],
+    'superorganiser-title' => 'Superjärjestäjäsertifikaatin',
+    'superorganiser' => 'Voit myös ansaita superjärjestäjäsertifikaatin. Sitä varten sinun on järjestettävä ja <a href="https://codeweek.eu/add">rekisteröitävä</a> vähintään 10 yksittäistä tapahtumaa koulussasi, organisaatiossasi tai verkossa.'
 
 ];

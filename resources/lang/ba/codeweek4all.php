@@ -2,7 +2,7 @@
 
 return [
 
-    'title' => 'Izazov Sedmice kodiranja za sve (Code Week 4 All Challenge)',
+    'title' => 'Izazov Sedmice kodiranja za sve',
     'text' => 'Izazov Sedmice kodiranja za sve podstiče vas da povezujete svoje aktivnosti s drugima koje organiziraju vaši prijatelji, kolege i poznanici, te da zajednički osvojite Certifikat odličnosti Sedmice kodiranja.',
     'what' => [
         'title' => 'Šta je to?',
@@ -38,6 +38,8 @@ return [
         '3' => 'Da bi se gradile veze s organizacijama i/ili školama u vašoj zajednici ili na međunarodnom nivou.',
         '4' => 'Da bi se pronašla podrška od drugih organizatora i nastavnika.',
         '5' => 'Da bi se osvojio <strong>Certifikat odličnosti.</strong>'
-    ]
+    ],
+    'superorganiser-title' => 'Sertifikat super organizatora',
+    'superorganiser' => 'Takođe možete da dobijete Sertifikat super organizatora. Da biste ga dobili, potrebno je da organizujete i <a href="https://codeweek.eu/add">registrujete</a> najmanje 10 zasebnih aktivnosti u vašoj školi, organizaciji ili na mreži.'
 
 ];

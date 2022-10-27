@@ -204,6 +204,7 @@ class ReminderCreatorsTest extends TestCase
         //no mails should have been sent
         $this->artisan('remind:creators');
 
+        Mail::assertNotQueued(RemindCreator::class);
 
 
     }

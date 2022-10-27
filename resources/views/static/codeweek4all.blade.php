@@ -61,6 +61,11 @@
                     <li>@lang('codeweek4all.why.5')</li>
                 </ul>
 
+                <h2>@lang('codeweek4all.superorganiser-title')</h2>
+                <ul style=" line-height: 1.7; list-style-type: disc">
+                    <li>@lang('codeweek4all.superorganiser')</li>
+                </ul>
+
 
             </section>
 

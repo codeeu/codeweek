@@ -40,9 +40,11 @@ class OnlineCalendar extends Component {
             'year(start_date) year, month(start_date) month, monthname(start_date) monthname, count(*) data'
         )
             ->where($this->whereClause)
-            ->where('start_date', '>=', Carbon::now())
+//            ->where('start_date', '>=', Carbon::now())
+            ->where('start_date', '>=', \Carbon\Carbon::now()->firstOfMonth())
             ->groupBy('year', 'month')
-            ->orderBy('year', 'desc')
+            ->orderBy('year', 'asc')
+            ->orderBy('month', 'asc')
             ->get();
 
         $this->months = [];
@@ -70,7 +72,8 @@ class OnlineCalendar extends Component {
         $this->events = Event::where($this->whereClause)
             ->whereMonth('start_date', $this->selectedMonth)
             ->whereYear('start_date', $this->selectedYear)
-            ->where('start_date', '>=', Carbon::now())
+            ->where('start_date', '>=', \Carbon\Carbon::now()->firstOfMonth())
+//            ->where('start_date', '>=', Carbon::now())
             ->orderBy('start_date')
             ->get();
 
