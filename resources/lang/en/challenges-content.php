@@ -299,7 +299,7 @@ return [
             'link',
             'as well as Lesson Plan in English at this',
             'The activities in this lesson can be completed individually and in any order',
-            'Teacher can take a picture of the learning process and share it on Instagram using #CodeWeekChallengeGoogle'
+            'Teacher can take a picture of the learning process and share it on Instagram using #CodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'In addition to the activity booklet, some activities require or optionally benefit from additional materials.',

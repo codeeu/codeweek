@@ -306,7 +306,7 @@ return [
             'enlace',
             'así como un plan de lecciones en inglés en este',
             'Las actividades de esta lección pueden realizarse de forma individual y siguiendo cualquier orden',
-            'El profesor puede hacer una foto del proceso de aprendizaje y compartirla en Instagram con la etiqueta #CodeWeekChallengeGoogle'
+            'El profesor puede hacer una foto del proceso de aprendizaje y compartirla en Instagram con la etiqueta #CodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Además del cuaderno de actividades, algunas actividades necesitan materiales adicionales o se hacen mejor con ellos.',

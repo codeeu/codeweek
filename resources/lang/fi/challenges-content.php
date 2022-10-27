@@ -296,7 +296,7 @@ return [
             'täältä',
             'ja englanninkielisen tuntisuunnitelman',
             'Oppitunnin tehtävät voidaan suorittaa yksittäin missä järjestyksessä tahansa',
-            'Opettaja voi ottaa kuvan oppimisprosessista ja jakaa sen Instagramissa aihetunnisteella #CodeWeekChallengeGoogle'
+            'Opettaja voi ottaa kuvan oppimisprosessista ja jakaa sen Instagramissa aihetunnisteella #CodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Tehtäväkirjasen lisäksi joissakin tehtävissä on tarpeen tai suositeltavaa käyttää lisäaineistoja.',

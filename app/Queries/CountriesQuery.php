@@ -49,19 +49,37 @@ class CountriesQuery
     }
 
     public static function withOnlineEvents($highlighted_status){
-        $isos = DB::table('events')
-            ->select(['country_iso'])
-            ->where('activity_type',"=","open-online")
-            ->where('status',"<>","REJECTED")
+
+        $countries = DB::table('events')
+            ->select('events.country_iso as iso','countries.name', DB::raw('count(id) as total'))
+            ->join('countries','events.country_iso','=','countries.iso')
+            ->where('status',"=","APPROVED")
             ->where('highlighted_status',"=",$highlighted_status)
             ->whereNull('deleted_at')
-            ->whereDate('start_date', '>=', Carbon::now('Europe/Brussels'))
+            ->where('activity_type', 'open-online')
+            ->where('start_date', '>=', \Carbon\Carbon::now()->subDays(15))->where('end_date', '>=', Carbon::now())
             ->groupBy('country_iso')
-            ->get()
-            ->pluck('country_iso')
-        ;
+            ->orderBy('countries.name')
+            ->get();
 
-        $countries = Country::findMany($isos)->sortBy('name');
+
+//        return $countries;
+//
+//
+//        $isos = DB::table('events')
+////            ->select(['country_iso'])
+//            ->select('events.country_iso as country_iso', DB::raw('count(id) as total'))
+//            ->where('activity_type',"=","open-online")
+//            ->where('status',"<>","REJECTED")
+//            ->where('highlighted_status',"=",$highlighted_status)
+//            ->whereNull('deleted_at')
+//            ->whereDate('start_date', '>=', Carbon::now('Europe/Brussels'))
+//            ->groupBy('country_iso')
+//            ->get()
+//            ->pluck('country_iso')
+//        ;
+//
+//        $countries = Country::findMany($isos)->sortBy('name');
         return $countries;
     }
 

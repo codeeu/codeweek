@@ -16,7 +16,9 @@ use PhpOffice\PhpSpreadsheet\Cell\DataType;
 use PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder;
 use PhpOffice\PhpSpreadsheet\Shared\Date;
 
-class DutchDanceEventsImport extends DefaultValueBinder implements
+class
+
+DutchDanceEventsImport extends DefaultValueBinder implements
     WithCustomValueBinder,
     ToModel,
     WithHeadingRow {

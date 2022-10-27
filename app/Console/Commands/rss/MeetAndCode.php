@@ -9,7 +9,9 @@ use Illuminate\Console\Command;
 use Feeds;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Storage;
 
 
 class MeetAndCode extends Command
@@ -52,13 +54,29 @@ class MeetAndCode extends Command
     {
 
         dump("Loading MeetAndCode");
+//        $generate = $this->option('generate');
         $force = $this->option('force');
 
-        $feed = Feeds::make('https://meet-and-code.org/de/de/events/rss');
+//        if ($generate){
+//            dump("Generating MeetAndCode File");
+//            $contents = Http::get('https://meet-and-code.org/de/de/events/rss/');
+//            $clean =  str_replace('','',$contents);
+//            Storage::disk('meet-and-code')->put('meet-and-code-clean.xml',$clean);
+//        }
+//
+//        $url = Storage::disk('meet-and-code')->url('meet-and-code-clean.xml');
+
+        $url = 'https://meet-and-code.org/de/de/events/rss/';
+        $feed = Feeds::make(asset($url));
+
         $new = 0;
         $updated = 0;
 
+        Log::info('Items found in Meet&Code RSS: ' . count($feed->get_items()));
+
         foreach ($feed->get_items() as $item) {
+
+
             $RSSitem = new MeetAndCodeRSSItem();
 
             $RSSitem->title = $item->get_title();

@@ -301,7 +301,7 @@ return [
             'link',
             'en een Engelstalig lesplan vind je via deze',
             'De activiteiten in deze les kunnen individueel worden uitgevoerd en in willekeurige volgorde',
-            'De leraar kan een foto van het leerproces maken en deze delen op Instagram met #CodeWeekChallengeGoogle'
+            'De leraar kan een foto van het leerproces maken en deze delen op Instagram met #CodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Naast het boekje met activiteiten zijn voor een aantal activiteiten extra materialen nodig of handig.',

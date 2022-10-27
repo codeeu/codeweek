@@ -14,7 +14,9 @@
         <section class="flex flex-row justify-between" style="background-color: #DED7BC">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
-                    <div class="text-xl text-white w-full"><a class="text-black" href="{{route('challenges')}}">@lang('challenges.title')</a></div>
+                    <div class="text-xl text-white w-full"><a class="text-black"
+                                                              href="{{route('challenges')}}">@lang('challenges.title')</a>
+                    </div>
                     <div class="text-5xl mt-2" style="color: #d84d96">@lang("challenges-content.$slug.title")</div>
                 </div>
             </div>
@@ -68,8 +70,6 @@
                     </div>
 
 
-
-
                 </section>
 
                 <div class="mx-6 my-4">
@@ -106,10 +106,15 @@
                         <div class="leading-6">
                             <div class="mt-6 orange text-3xl">@lang('challenges.common.instructions')</div>
                             <ul class="leading-7 ml-2 checklist mt-2">
-                                <li>@lang("challenges-content.$slug.instructions.0") <a href="https://drive.google.com/file/d/1F2k68YD4q899KFSs1RX3zNp9jvJ0AC7i/view?usp=sharing">@lang("challenges-content.$slug.instructions.1")</a>, @lang("challenges-content.$slug.instructions.2") <a href="https://drive.google.com/file/d/1U8xf25xtWQJk8T-qpfkDMqcMUka_osat/view?usp=sharing">@lang("challenges-content.$slug.instructions.1")</a>.</li>
+                                <li>@lang("challenges-content.$slug.instructions.0") <a
+                                            href="https://csfirst.withgoogle.com/c/cs-first/en/cs-first-unplugged/overview.html">@lang("challenges-content.$slug.instructions.1")</a>, @lang("challenges-content.$slug.instructions.2")
+                                    <a href="https://docs.google.com/document/d/1OV0Ooodf2ge4_5xqxoKsIsp7xKNqhMFO4VrRY89Pdm0/edit">@lang("challenges-content.$slug.instructions.1")</a>.
+                                </li>
                                 <li>@lang("challenges-content.$slug.instructions.3").</li>
                                 <li>@lang("challenges-content.$slug.instructions.4").</li>
-                                <li>@lang("challenges-extra.$slug.0") <a href="https://drive.google.com/drive/folders/1sSEBskDeDrKyVNUJ_F8s9Wss7YFwCD8B?usp=sharing">@lang("challenges-extra.$slug.1")</a>.</li>
+                                <li>@lang("challenges-extra.$slug.0")
+                                    <a href="@lang("challenges-extra.cs-first-link")">@lang("challenges-extra.$slug.1")</a>.
+                                </li>
                             </ul>
                         </div>
                     </section>
@@ -119,12 +124,12 @@
                     <section class="p-2">
                         <div class="orange text-3xl">@lang('challenges.common.example')</div>
 
-                            <div class="mt-2">
+                        <div class="mt-2">
 
-                                    <img src="{{asset('img/2021/challenges/cs-first-unplugged-activities.png')}}"/>
+                            <img src="{{asset('img/2021/challenges/cs-first-unplugged-activities.png')}}"/>
 
 
-                            </div>
+                        </div>
 
 
                     </section>

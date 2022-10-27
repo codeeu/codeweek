@@ -296,7 +296,7 @@ return [
             'linku',
             'kao i Nastavni plan na engleskom na ovom',
             'Aktivnosti u ovoj lekciji mogu se obavljati pojedinačno i bilo kojim redoslijedom',
-            'Nastavnik može snimiti sliku procesa učenja i podijeliti je na Instagramu uz pomoć #CodeWeekChallengeGoogle'
+            'Nastavnik može snimiti sliku procesa učenja i podijeliti je na Instagramu uz pomoć #CodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Pored knjižice sa aktivnostima, za neke aktivnosti su potrebni dodatni materijali, ili oni mogu biti za njih korisni.',

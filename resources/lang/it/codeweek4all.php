@@ -38,6 +38,8 @@ return [
         '3' => 'Per costruire relazioni con altre organizzazioni e/o scuole nella tua comunità o a livello internazionale.',
         '4' => 'Per ricevere sostegno da altri organizzatori e insegnanti.',
         '5' => 'Per ottenere il <strong>Certificato di eccellenza</strong>.'
-    ]
+    ],
+    'superorganiser-title' => 'Certificato di Fuoriclasse dell’organizzazione',
+    'superorganiser' => 'Puoi inoltre aggiudicarti il certificato di Fuoriclasse dell’organizzazione. Per farlo, devi organizzare e <a href="https://codeweek.eu/add">registrare</a> almeno 10 attività diverse presso la tua scuola, la tua organizzazione oppure online.'
 
 ];

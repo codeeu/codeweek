@@ -149,6 +149,7 @@ class EventController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function show(Event $event) {
+
         if ($event->status == 'PENDING' && !Auth::check()) {
             return redirect(route('login'));
         } elseif ($event->status != 'APPROVED') {
@@ -264,9 +265,24 @@ class EventController extends Controller {
         $event->reject($rejectionText);
     }
 
+    private function sendDeletionEmail($event){
+
+        if ($event->creator_id == auth()->id()) return;
+
+        if (!empty($event->user_email)) {
+            Mail::to($event->user_email)->queue(
+                new \App\Mail\EventDeleted()
+            );
+        } elseif (!is_null($event->owner) && !is_null($event->owner->email)) {
+            Mail::to($event->owner->email)->queue(
+                new \App\Mail\EventDeleted()
+            );
+        }
+
+    }
     public function delete(Request $request, Event $event) {
         $this->authorize('delete', $event);
-
+        $this->sendDeletionEmail($event);
         $event->delete();
 
         if ($request->ajax()) {

@@ -301,7 +301,7 @@ return [
             'linken',
             'angol nyelvű óravázlatok pedig itt:',
             'E lecke tevékenységei önállóan és bármilyen sorrendben elvégezhetők',
-            'A tanárok képet készíthetnek a tanulási folyamatról, és megoszthatják az Instagramon a #CodeWeekChallengeGoogle hashtag segítségével'
+            'A tanárok képet készíthetnek a tanulási folyamatról, és megoszthatják az Instagramon a #CodeWeekChallengeGoogle #GrowWithGoogle hashtag segítségével'
         ],
         'materials' => [
             'A tevékenységekről szóló tájékoztató füzet mellett egyes tevékenységekhez további segédanyagokra lesz vagy lehet szükség.',
