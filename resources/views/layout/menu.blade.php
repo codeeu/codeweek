@@ -96,19 +96,19 @@
 
                     @endrole
 
-                    @role('super admin')
-                    <li>
-                        <img src="/images/user_menu_pending_events.svg" class="icon">
-                        <a href="{{route('pending')}}">
-                            @lang('menu.pending') v1
-                        </a>
-                    </li>
-                    @endrole
+{{--                    @role('super admin')--}}
+{{--                    <li>--}}
+{{--                        <img src="/images/user_menu_pending_events.svg" class="icon">--}}
+{{--                        <a href="{{route('pending')}}">--}}
+{{--                            @lang('menu.pending') v1--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                    @endrole--}}
 
                     @role('ambassador|super admin')
                     <li>
                         <img src="/images/user_menu_pending_events.svg" class="icon">
-                        <a href="{{route('review')}}">
+                        <a href="{{route('pending')}}">
                             @lang('menu.pending')
                         </a>
                     </li>
