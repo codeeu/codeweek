@@ -451,5 +451,33 @@ return [
             'Tutoriali mund të gjendet këtu',
             'Ky tutorial është i disponueshëm në mbi 25 gjuhë'
         ],
+    ],
+    'build-calliope' => [
+        'title' => 'Ndërtoni mininstruktorin tuaj të palestrës "Calliope"',
+        'author' => 'Amazon Future Engineer | Tako dhe Kodo në bashkëpunim me. Calliope gGmbH',
+        'purposes' => [
+            'Për të njohur përmes lojës sekuencat, animacionet, përsëritjet dhe variablat.',
+            'Për të hartuar një tabelë strukturore.',
+            'Për të testuar dhe korrigjuar kodin.',
+            'Për të optimizuar një program me provë dhe gabim, duke kontrolluar dhe rregulluar përdorshmërinë.'
+        ],
+        'duration' => '20-30 minuta',
+        'description' =>
+            'Pjesëmarrësit do të zhvillojnë një prototip të kontrolluar në mënyrë digjitale që përdor një LED shumëngjyrësh të ndezur për të riprodhuar një ushtrim palestre të paramenduar me 10 njësi.',
+        'materials' => [
+            'Calliope mini StarterBox (nëse disponohet)',
+            'Laptop ose tablet me të cilin mund të vizitoni <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> ose <a href="https://calliope.cc">https://calliope.cc</a> dhe YouTube për të aksesuar burimet për aktivitetin.'
+        ],
+        'instructions' => [
+            'Për të filluar, krijoni një plan dhe përcaktoni rendin e njësive të ushtrimeve. Duke përdorur planin, programoni LED RGB të Calliope mini për të shfaqur një nga 5 ngjyrat me ritmin e paracaktuar. Më pas krijoni një variabël për ritmin dhe përsëritjet e programit, duke përdorur konture.',
+            "Mbani mend, nëse e keni zbatuar programin në një mënyrë që ju pëlqen, mund ta ndani edhe me ne në info@calliope.cc - ne jemi të ngazëllyer të shohim se çfarë mendoni për të! Meqë ra fjala, ne po dhurojmë 30 mini Calliope nga paraqitjet!",
+            "Ndani kodin QR të projektit tuaj në Instagram, shtoni hashtagun #CodeWeekChallenge dhe përmendni @CodeWeekEU.",
+        ],
+        'example' => [
+            'Ndërsa jeni ulur në kompjuterin tuaj: mund të bëheni edhe sportiv.',
+            'Krijoni një prototip palestre me Calliope mini, i cili gjithashtu mund të testohet në simulator. Sfida kryhet në redaktorin MakeCode, duke programuar një sekuencë të thjeshtë kodi (shih pamjen e ekranit).',
+            'Zgjidhni 5 ngjyra të ndryshme dhe caktoni një ushtrim palestre për secilën prej tyre, p.sh. squat ose jumping jacks. Më pas ngjyrat mund të rreshtohen në çdo mënyrë dhe të trajnohen.'
+        ],
+
     ]
 ];

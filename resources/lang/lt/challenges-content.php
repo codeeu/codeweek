@@ -456,5 +456,33 @@ return [
             'Vadovą rasite čia',
             'Jis pateikiamas daugiau nei 25 kalbomis'
         ]
+    ],
+    'build-calliope' => [
+        'title' => 'Sukurkite savo „Calliope mini“ sporto trenerį',
+        'author' => '„Amazon Future Engineer“ | „Meet and Code“ su „Calliope gGmbH“',
+        'purposes' => [
+            'Žaismingai susipažinti su sekomis, animacija, pasikartojimais ir kintamaisiais.',
+            'Sukurti struktūrinę diagramą.',
+            'Išbandyti ir suderinti kodą.',
+            'Optimizuoti programą bandymų ir klaidų metodu, tikrinant ir koreguojant tinkamumą.'
+        ],
+        'duration' => '20–30 minučių',
+        'description' =>
+            'Dalyviai sukurs skaitmeniniu būdu valdomą prototipą, kuriame naudojamas įvairiomis spalvomis šviečiantis šviesos diodas, atkartojantis iš anksto suplanuotą dešimties pratimų treniruotę.',
+        'materials' => [
+            '„Calliope mini StarterBox“ (jeigu yra)',
+            'Nešiojamasis kompiuteris arba planšetė, kad būtų galima apsilankyti <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> arba <a href="https://calliope.cc">https://calliope.cc</a> ir pasiekti „YouTube“ esančius veiklos išteklius.'
+        ],
+        'instructions' => [
+            'Pirmiausia sukurkite planą ir nustatykite pratimų eiliškumą. Naudodami tvarkaraštį, užprogramuokite „Calliope mini“ RGB šviesos diodą, kad jis nustatytu greičiu rodytų vieną iš penkių spalvų. Tada sukurkite greičio kintamąjį ir naudodami ciklus suprogramuokite pasikartojimus.',
+            "Nepamirškite, kad jei sukūrėte jums patinkančią programą, galite ja pasidalyti su mumis adresu info@calliope.cc. Mes nekantraujame pamatyti jūsų darbus! Beje, pasidalijusiems savo projektais padovanosime 30 valdiklių „Calliope mini“!",
+            "Pasidalykite savo projekto QR kodu „Instagram“, pridėkite grotažymę #CodeWeekChallenge ir paminėkite @CodeWeekEU.",
+        ],
+        'example' => [
+            'Sėdėdami prie kompiuterio galite ir pasportuoti.',
+            'Sukurkite kūno rengybos prototipą su „Calliope mini“ ir išbandykite jį modeliavimo programoje. Ši užduotis atliekama redaktoriuje „MakeCode“ suprogramuojant paprastą kodų seką (žr. ekrano kopiją).',
+            'Pasirinkite penkias skirtingas spalvas ir kiekvienai iš jų priskirkite pratimą, pavyzdžiui, pritūpimus ar šuoliukus. Tada spalvas galima išdėstyti bet kokia tvarka ir apmokyti.'
+        ],
+
     ]
 ];

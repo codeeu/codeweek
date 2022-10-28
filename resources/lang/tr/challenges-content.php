@@ -460,5 +460,42 @@ return [
             'Bu eğitim 25\'i aşkın dilde mevcuttur'
         ],
         'more' => ['']
+    ],
+    'build-calliope' => [
+        'title' =>    'Kendi Calliope mini fitness eğitmeninizi oluşturun',
+        'author' => 'Amazon Future Engineer |  Calliope gGmbH ile tanışın ve kodlamaya başlayın',
+        'purposes' => [
+            'Dizi, animasyon, tekrar ve değişkenleri eğlenceli şekilde öğrenmek için.',
+            'Bir yapı şeması tasarlamak için.',
+            'Kodu test etmek ve hataları bulmak için.',
+            'Kullanılabilirliği kontrol edip düzenleyerek, deneme-yanılma yolu ile bir program optimize etmek için.',
+        ],
+        'duration' => '20-30 dakika',
+        'description' =>
+            'Katılımcılar, önceden tasarlanan 10 üniteli bir fitness egzersizini yeniden oluşturmak üzere dijital olarak kontrol edilen ve renkli LED ışığı kullanılan bir prototip geliştirecekler.',
+        'materials' => [
+            'Calliope mini StarterBox (mevcut ise)',
+            'Aktivite kaynaklarına erişmek için diz üstü bilgisayar ya da tabletinizden Youtube hesabını ve <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> veya <a href="https://calliope.cc">https://calliope.cc</a> sayfalarını ziyaret edebilirsiniz.',
+        ],
+        'instructions' => [
+            "Başlamak için bir plan oluşturun ve egzersiz ünitelerinin sırasını belirleyin. Bu planı kullanarak, Calliope mini'nin RGB LED'ini önceden tanımlanmış düzende 5 renkten birini gösterecek şekilde programlayın. Daha sonra bu düzen için bir değişken oluşturun ve döngüleri kullanarak tekrarları programlayın.",
+            'Unutmayın: Programı istediğiniz gibi uygulamayı başardıysanız, info@calliope.cc adresine e-posta göndererek bizimle paylaşabilirsiniz. Neler üreteceğinizi çok merak ediyoruz! Bu arada, başvurular arasından seçilecek 30 kişiye Calliope mini veriyoruz!',
+            'Projenizin kare kodunu Instagram’da paylaşın, #CodeWeekChallenge hashtag’ini ekleyin ve @CodeWeekEU hesabını etiketlemeyi unutmayın.',
+        ],
+        'example' => [
+            'Bilgisayarınızın başında otururken de sportif olabilirsiniz.',
+            'Calliope mini ile simülatörde de test edilebilecek bir fitness prototipi oluşturun. Bu görev, MakeCode düzenleme yazılımı üzerinde basit bir kod dizisi programlayarak yapılır (bkz. ekran görüntüsü).',
+            '5 farklı renk seçin ve her renge bir fitness egzersizi atayın, ör. squat ya da jumping jacks. Daha sonra renkler istenilen sırada dizilerek egzersiz yapılabilir.',
+        ],
+
     ]
+
+
+
+
+
+
+
+
+
 ];

@@ -451,6 +451,37 @@ return [
             'Pamācību var atrast šeit',
             'Šī pamācība ir pieejama vairāk nekā 25 valodās'
         ],
+    ],
+    'build-calliope' => [
+        'title' => 'Izveidojiet savu Calliope mini fitnesa trenažieri',
+        'author' => 'Amazon nākotnes inženieris | Iepazīsties un programmē. Calliope gGmbH',
+        'purposes' => [
+            'Lai rotaļas veidā iepazītos ar secībām, animācijām, atkārtojumiem un mainīgajiem lielumiem.',
+            'Lai izstrādātu struktūras diagrammu.',
+            'Lai testētu un atkļūdotu vienkāršu kodu.',
+            'Lai optimizētu programmu, izmantojot izmēģinājumu un kļūdu metodi, pārbaudot un pielāgojot lietojamību.',
+        ],
+        'duration' => '20–30 minūtes',
+        'description' =>
+            'Dalībnieki izstrādās digitāli kontrolētu prototipu, kas izmanto krāsainu kvēlojošu LED, lai reproducētu iepriekš izdomātu 10 posmu fitnesa vingrojumu.',
+        'materials' => [
+            'Calliope mini sākuma komplekts (ja pieejams)',
+            'Portatīvais dators vai planšete, kurā jūs varat apmeklēt <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> vai <a href="https://calliope.cc">https://calliope.cc</a> un YouTube, lai piekļūtu šīs aktivitātes resursiem.',
+        ],
+        'instructions' => [
+            'Lai sāktu, izveidojiet plānu un nosakiet vingrojumu posmu secību. Izmantojot grafiku, ieprogrammējiet Calliope mini RGB LED, lai parādītu vienu no 5 krāsām iepriekš noteiktajā tempā. Tad izveidojiet mainīgo lielumu tempam un programmas atkārtojumiem, izmantojot cilpas.',
+            'Atcerieties, ka, ja esat izveidojis programmu tā, kā jums patīk, varat arī to kopīgot ar mums, izmantojot adresi info@calliope.cc – mēs ļoti vēlamies uzzināt, kā jūs to izmantojat! Starp citu, 30 iesūtīto darbu autori saņems Calliope mini!',
+            'Kopīgojiet Instagram sava projekta QR kodu, pievienojiet tēmturi #CodeWeekChallenge un pieminiet @CodeWeekEU.',
+        ],
+        'example' => [
+            'Kamēr sēžat pie datora, varat arī pasportot.',
+            'Izmantojot Calliope mini, izveidojiet tādu fitnesa prototipu, ko var arī testēt simulatorā. Uzdevums tiek veikts MakeCode redaktorā, ieprogrammējot vienkāršu koda secību (skatīt ekrānattēlu).',
+            'Izvēlieties 5 dažādas krāsas un katrai no tām piešķiriet fitnesa vingrinājumu, piemēram, pietupienu vai lēkšanu ar lecamauklu. Tad krāsas var izkārtot jebkurā secībā un apmācīt.',
+        ],
     ]
+
+
+
+
 ];
 
