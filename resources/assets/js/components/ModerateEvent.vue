@@ -15,7 +15,7 @@
 
 
     <div class="h-8 w-full grid grid-cols-3 gap-4 items-center" v-if="!refresh">
-      <div class="flex-none">Pending Activities: <a href="/review">{{ pendingCounter }}</a></div>
+      <div class="flex-none">Pending Activities: <a href="/pending">{{ pendingCounter }}</a></div>
       <div class="flex justify-center">
         <div>{{ $t('event.current_status') }}: <strong>{{ status }}</strong> <span
             v-if="event.LatestModeration">({{ event.LatestModeration.message }})</span></div>
