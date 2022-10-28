@@ -458,5 +458,33 @@ return [
             'Samouczek można znaleźć tutaj',
             'Jest on dostępny w ponad 25 językach'
         ]
+    ],
+    'build-calliope' => [
+        'title' => 'Zbuduj swojego własnego mini trenera fitness Calliope',
+        'author' => 'Amazon Future Engineer | Meet and Code feat. Calliope gGmbH',
+        'purposes' => [
+            'W zabawny sposób poznaj sekwencje, animacje, powtórzenia i zmienne.',
+            'Stwórz structure schematu.',
+            'Przetestuj I debuguj kod.',
+            'Optymalizacja programu metodą prób i błędów, sprawdzanie i dostosowywanie użyteczności.'
+        ],
+        'duration' => '20-30 minut',
+        'description' =>
+            ' Uczestnicy opracują sterowany cyfrowo prototyp, który wykorzystuje kolorową świecącą diodę LED do odtworzenia zaplanowanego z góry 10-punktowego ćwiczenia fitness.',
+        'materials' => [
+            'Calliope mini StarterBox (jeśli dostępny)',
+            'Laptop albo tablet z którym możesz odwiedzić<a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> albo<a href="https://calliope.cc">https://calliope.cc</a> i YouTube żeby mieć dostęp do zasobów potrzebnych do działania.'
+        ],
+        'instructions' => [
+            'Na początek stwórz plan i ustal kolejność ćwiczeń. Korzystając z harmonogramu, zaprogramuj diodę LED RGB Calliope mini, aby wyświetlała jeden z 5 kolorów we wstępnie zdefiniowanym tempie. Następnie utwórz zmienną dla tempa i zaprogramuj powtórzenia za pomocą pętli.',
+            "Pamiętaj, że jeśli zaimplementowałeś program w sposób, który Ci odpowiada, możesz również podzielić się nim z nami pod adresem info@calliope.cc - jesteśmy podekscytowani, widząc, co z tego zrobisz! Przy okazji, wśród zgłoszeń rozdamy 30 figurek Calliope!",
+            "Udostępnij kod QR swojego projektu na Instagramie, dodaj hashtag #CodeWeekChallenge i wspomnij @CodeWeekEU.",
+        ],
+        'example' => [
+            'Siedząc przy komputerze: Ty też możesz uprawiać sport.',
+            'Stwórz prototyp fitness za pomocą mini Calliope, który można również przetestować w symulatorze. Wyzwanie wykonuje się w edytorze MakeCode poprzez zaprogramowanie prostej sekwencji kodu (patrz zrzut ekranu).',
+            'Wybierz 5 różnych kolorów i każdemu z nich przypisz ćwiczenie fitness, np. przysiady lub pajacyki. Następnie kolory można ustawiać w dowolnej kolejności i trenować.'
+        ],
+
     ]
 ];
