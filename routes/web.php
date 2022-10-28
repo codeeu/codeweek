@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 
 
-//Auth::loginUsingId(200);
+//Auth::loginUsingId(372);
 
 Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
     Route::get('/', function ($subdomain) {
@@ -569,6 +569,9 @@ $challenges =  function () {
     Route::view('inclusive-app-design','2021.challenges.inclusive-app-design')->name('challenges.inclusive-app-design');
     Route::view('silly-eyes', '2021.challenges.silly-eyes')->name('challenges.silly-eyes');
     Route::view('train-ai-bot','2021.challenges.train-ai-bot')->name('challenges.train-ai-bot');
+    Route::view('build-calliope','2021.challenges.build-calliope')->name('challenges.build-calliope');
+    Route::view('animate-a-name','2021.challenges.animate-a-name')->name('challenges.animate-a-name');
+    Route::view('european-astro-pi','2021.challenges.european-astro-pi')->name('challenges.european-astro-pi');
 };
 
 Route::group(['prefix' => '2021/challenges'], $challenges);

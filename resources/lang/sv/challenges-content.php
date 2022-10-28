@@ -454,5 +454,37 @@ return [
             'Handledningen finns här',
             'Handledningen finns tillgänglig på över 25 språk'
         ]
-    ]
+    ],
+    'build-calliope' => [
+        'title' => 'Bygg din egen fitnesstränare med Calliope mini',
+        'author' => 'Amazon Future Engineer | Meet and Code feat. Calliope gGmbH',
+        'purposes' => [
+            'Att på ett lekfullt sätt lära känna sekvenser, animationer, repetitioner och variabler.',
+            'Att designa ett strukturdiagram.',
+            'Att testa och felsöka kod.',
+            'Att optimera ett program genom trial and error, kontrollera och justera användbarheten.'
+        ],
+        'duration' => '20–30 minuter',
+        'description' =>
+            'Deltagarna får utveckla en digitalt kontrollerad prototyp där en färgglad lysande diod används för att återge en förhandsbestämd 10 enheters fitnessövning.',
+        'materials' => [
+            'Calliope mini StarterBox (i mån av tillgång)',
+            'Laptop eller surfplatta där du kan besöka <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> eller <a href="https://calliope.cc">https://calliope.cc</a> samt YouTube för att få tillgång till resurser för aktiviteten.'
+        ],
+        'instructions' => [
+            'Kom igång genom att skapa en plan och bestämma ordningen på övningsenheterna.  Använd schemat och programmera RGB-dioderna på Calliope mini så att de visar de 5 färgerna i det fördefinierade tempot. Skapa sedan en variabel för tempot och programmera repetitioner med hjälp av loopar.',
+            "Kom ihåg att om du genomfört programmet på ett sätt som du gillar, kan du också dela det med oss på info@calliope.cc – vi vill väldigt gärna se vad du åstadkommer med det! Förresten skänker vi bort Calliope mini-exemplar till 30 av dem som lämnat bidrag!",
+            "Dela QR-koden för ditt projekt på Instagram, lägg till hashtaggen #CodeWeekChallenge och nämn @CodeWeekEU.",
+        ],
+        'example' => [
+            'Även om du sitter vid datorn kan du bli sportig också.',
+            'Skapa en fitnessprototyp med Calliope mini, som också kan testas i simulatorn. Utmaningen görs i MakeCode-redigeraren genom att du programmerar en enkel kodsekvens (se skärmdump).',
+            'Välj 5 olika färger och tilldela en fitnessövning till var och en av dem, t.ex. knäböj eller stjärnhopp. Sedan kan färgerna radas upp i valfri ordning och tränas.'
+        ],
+
+    ],
+
 ];
+
+
+

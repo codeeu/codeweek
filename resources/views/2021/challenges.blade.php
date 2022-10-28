@@ -49,7 +49,7 @@
 
                     <section class="grid grid-cols-1 gap-6 md:grid-cols-3">
 
-
+                        @include('2021._thumbnail', ['slug' => 'build-calliope', 'author'=>'Amazon Future Engineer | Meet and Code feat. Calliope gGmbH'])
                         @include('2021._thumbnail', ['slug' => 'chatbot'])
                         @include('2021._thumbnail', ['slug' => 'paper-circuit'])
                         @include('2021._thumbnail', ['slug' => 'dance'])
@@ -68,6 +68,9 @@
                         @include('2021._thumbnail', ['slug' => 'inclusive-app-design'])
                         @include('2021._thumbnail', ['slug' => 'silly-eyes'])
                         @include('2021._thumbnail', ['slug' => 'train-ai-bot', 'author'=>'Code.org'])
+
+{{--                        @include('2021._thumbnail', ['slug' => 'animate-a-name', 'author'=>'Google'])--}}
+{{--                        @include('2021._thumbnail', ['slug' => 'european-astro-pi', 'author'=>'ESA Education'])--}}
 
 
                     </section>

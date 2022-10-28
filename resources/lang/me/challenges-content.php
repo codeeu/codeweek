@@ -460,5 +460,33 @@ return [
             'Tutorijal je dostupan ovdje',
             'Ovaj tutorijal je dostupan na više od 25 jezika'
         ]
+    ],
+    'build-calliope' => [
+        'title' => 'Ugradite svoj fitnes trener Calliope mini',
+        'author' => 'Amazon Future Engineer | Meet and Code feat. Calliope gGmbH',
+        'purposes' => [
+            'Za razigrano upoznavanje sekvenci, animacija, ponavljanja i varijabli.',
+            'Za dizajniranje strukturne šeme.',
+            'Za testiranje i otklanjanje programske greške na kodu.',
+            'Za optimizovanje programa metodom pokušaja i grešaka, provjeravajući i podešavajući upotrebljivost.'
+        ],
+        'duration' => '20-30 minuta',
+        'description' =>
+            'Učesnici će razviti digitalno kontrolisani prototip koji koristi šareno LED svijetlo za reprodukovanje unaprijed zamišljene fitnes-vježbe od 10 jedinica. ',
+        'materials' => [
+            'Calliope mini StarterBox paket (ako je dostupan)',
+            'Laptop ili tablet računar pomoću kojih možete posjetiti <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> ili <a href="https://calliope.cc">https://calliope.cc</a> i YouTube kako biste pristupili resursima za aktivnost.'
+        ],
+        'instructions' => [
+            'Da biste započeli, napravite plan i odredite redosljed jedinica vježbe. Pomoću plana programirajte RGB LED za Calliope mini kako bi se prikazala jedna od pet boja po unaprijed određenom tempu. Zatim kreirajte varijabilnu vrijednost za tempo i programska ponavljanja pomoću petlji.',
+            "Zapamtite, ako ste implementirali program na način koji vam se dopada, možete ga dijeliti i s nama na info@calliope.cc - radujemo se da vidimo šta ste učinili! Uzgred, poklanjamo 30 Calliope minija među podnosiocima!",
+            "Dijelite QR kôd vašeg projekta na Instagramu, dodajte heštag #CodeWeekChallenge i navedite @CodeWeekEU.",
+        ],
+        'example' => [
+            'Dok sjedite za računarom, možete se baviti sportom.',
+            'Kreirajte prototip fitnesa pomoću Calliope minija koji se takođe može testirati na simulatoru. Izazov se obavlja u uređivaču MakeCode programiranjem jednostavne sekvence koda (pogledajte snimak ekrana).',
+            'Odaberite pet različitih boja i svakoj dodijelite fitnes-vježbu, npr. čučnjeve ili „jumping jack“ skokove. Boje se zatim mogu rasporediti bilo kojim redosljedom i možete trenirati.'
+        ],
+
     ]
 ];

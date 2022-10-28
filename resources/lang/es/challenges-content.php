@@ -461,5 +461,33 @@ return [
             'El tutorial puede encontrarse aquí',
             'Este tutorial está disponible en más de veinticinco lenguas'
         ]
+    ],
+    'build-calliope' => [
+        'title' => 'Construye tu propio preparador físico: Calliope Mini',
+        'author' => 'Amazon Future Engineer | Meet and Code con Calliope gGmbH',
+        'purposes' => [
+            'Conocer de forma divertida secuencias, animaciones, repeticiones y variables.',
+            'Diseñar un gráfico de estructura.',
+            'Para probar y depurar código.',
+            'Optimizar un programa por ensayo y error, comprobando y ajustando la usabilidad.'
+        ],
+        'duration' => '20-30 minutos',
+        'description' =>
+            'Los participantes desarrollarán un prototipo controlado digitalmente que utiliza un led brillante de colores para reproducir un ejercicio de acondicionamiento físico preconcebido de 10 unidades. ',
+        'materials' => [
+            'Calliope Mini StarterBox (si está disponible)',
+            'Portátil o tablet con el que se puede visitar <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> o <a href="https://calliope.cc">https://calliope.cc</a> y YouTube para acceder a los recursos de la actividad".'
+        ],
+        'instructions' => [
+            'Para comenzar, crea un plan y determina el orden de las unidades de ejercicio. Usando el horario, programe el LED RGB del Calliope Mini para mostrar uno de los 5 colores al ritmo predefinido. A continuación, crea una variable para el ritmo y programa repeticiones utilizando bucles.',
+            'Recuerda, si has implementado el programa de una manera que te guste, también puedes compartirlo con nosotros en info@calliope.cc, ¡estamos emocionados de ver lo que haces con él! Por cierto, ¡estamos regalando 30 minis de Calliope entre las presentaciones!',
+            'Comparte el código QR de tu proyecto en Instagram, añade el hashtag #CodeWeekChallenge y menciona @CodeWeekEU.'
+        ],
+        'example' => [
+            'Mientras estás sentado frente a tu ordenador: también puedes hacer deporte.',
+            'Crea un prototipo de fitness con el Calliope Mini que también se puede probar en el simulador. El desafío se realiza en el editor MakeCode programando una secuencia de código simple (ver captura de pantalla).',
+            'Elige 5 colores diferentes y asigna un ejercicio de acondicionamiento físico a cada uno de ellos, por ejemplo, sentadillas o saltos.  Entonces los colores se pueden alinear en cualquier orden y entrenar'
+        ],
+
     ]
 ];

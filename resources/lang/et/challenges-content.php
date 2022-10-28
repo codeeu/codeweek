@@ -452,5 +452,38 @@ return [
             'Juhendi leiate siit',
             'See juhend on saadaval enam kui 25 keeles. '
         ]
+    ],
+
+    'build-calliope' => [
+        'title' => 'Looge oma Calliope mini treeningseade',
+        'author' => 'Amazon Future Engineer | Meet and Code feat Calliope gGmbH',
+        'purposes' => [
+            'Järjestuste, animatsioonide, korduste ja muutujate mänguliselt tundmaõppimiseks.',
+            'Struktuuriskeemide kujundamiseks',
+            'Koodi testimiseks ja vigade eemaldamiseks',
+            'Katse ja eksituse meetodil programmi optimeerimine, kasutatavuse kontrollimine ja muutmine'
+        ],
+        'duration' => '20–30 minutit',
+        'description' =>
+            'Osalejad loovad digitaalselt kontrollitava prototüübi, mis kasutab värvilisi põlevaid LED-tulesid, et taasluua eelnevalt koostatud 10 üksusest koosneva treeningharjutuse.',
+        'materials' => [
+            'Calliope mini StarterBox (kui on saadaval)',
+            'Sülearvuti või tahvelarvuti, millega on võimalik külastada veebisaiti <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> või <a href="https://calliope.cc">https://calliope.cc</a> ja YouTube’i, et pääseda juurde tegevuse ressurssidele.'
+        ],
+        'instructions' => [
+            'Alustuseks koostage kava ja tehke kindlaks harjutuste järjestus. Programmeerige Calliope mini RGB LED-i kuvama ühe viiest värvist ettemääratud tempos. Seejärel looge ahelaid kasutades tempo ja programmi korduste muutuja.',
+            "Pidage meeles, et kui olete programmi soovitud viisil rakendanud, saate seda jagada ka meiega aadressil info@calliope.cc – oleme põnevil, mida te selle abil loote! Muuseas, me jagame esitatud tööde vahel 30 Calliope mini!",
+            "Jagage oma projekti QR-koodi Instagramis, lisage teemaviide #CodeWeekChallenge ja mainige @CodeWeekEU-d.",
+        ],
+        'example' => [
+            'Võite olla sportlik ka oma arvuti taga istudes.',
+            'Looge Calliope mini abil treeningu prototüüp, mida on võimalik ka simulaatoris katsetada. Selle väljakutse saab teha MakeCode editoris, programmeerides lihtsa koodijärjestuse (vt kuvatõmmis).',
+            'Valige viis eri värvi ja määrake igale neist treeningharjutus, nt kükitamine või harkhüpped. Seejärel saab värve mis tahes järjestuses ritta seada ja selle järgi treenida.',
+        ],
+
     ]
+
+
+
+
 ];
