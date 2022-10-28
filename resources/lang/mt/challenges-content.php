@@ -462,5 +462,33 @@ return [
             'It-tutorial jista’ jinstab hawnhekk',
             'Dan it-tutorial huwa disponibbli b’aktar minn 25 lingwa'
         ]
+    ],
+    'build-calliope' => [
+        'title' => 'Ibni l-Calliope mini fitness trainer tiegħek stess',
+        'author' => 'Amazon Future Engineer | Sfida Meet and Code. Calliope gGmbH',
+        'purposes' => [
+            'Sabiex issir taf sekwenzi, animazzjonijiet, repetizzjonijiet u varjabbli permezz tal-logħob.',
+            'Sabiex tfassal ċart bi struttura.',
+            'Sabiex tittestja u tneħħi l-bugs mill-kodiċi.',
+            'Sabiex tottimizza programm billi tesperimenta, iċċekkja u aġġusta l-użabilità.'
+        ],
+        'duration' => '20-30 minuta',
+        'description' =>
+            "Il-parteċipanti ser jiżviluppaw prototip ikkontrollat diġitalment li juża LED ikkulurit li jixgħel sabiex jirriproduċi eżerċizzju fiżiku maħsub minn qabel b'10 unitajiet.",
+        'materials' => [
+            'Calliope mini StarterBox (jekk disponibbli)',
+            'Laptop jew tablet biex inti tista\' żżur <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> jew <a href="https://calliope.cc">https://calliope.cc</a> u YouTube sabiex taċċessa riżorsi għall-attività.'
+        ],
+        'instructions' => [
+            'Biex tibda, oħloq pjan u iddetermina l-ordni tal-unitajiet tal-eżerċzzji. Ipprogramma l-RGB LED tal-Calliope mini billi tuża l-iskeda, sabiex turi wieħed mill-5 kuluri b\'pass definit minn qabel. Imbagħad oħloq varjabbli għall-pass u għar-repetizzjonijiet tal-programm billi tuża ħoloq.',
+            "Ftakar, jekk inti implimentajt il-programm b'tali mod li jogħġbok, inti tista' wkoll tikkondividih magħna għand info@calliope.cc - aħna eċċitati li naraw x'ser tagħmel bih! U bilħaq, aħna qed nagħtu 30 Calliope minis minn fost is-sottomissjonijiet!",
+            "Ikkondividi l-kodiċi tal-QR tal-proġett tiegħek fuq Instagram, żid il-hashtag #CodeWeekChallenge u semmi @CodeWeekEU.",
+        ],
+        'example' => [
+            'Waqt li tkun bilqiegħda quddiem il-computer tiegħek: inti tista\' ssir sportiv ukoll.',
+            'Oħloq prototip ta\' fitness bil-Calliope mini li jista\' wkoll jiġi ttestjat fis-simulatur. L-isfida ssir fl-editur MakeCode billi tipprogramma sekwenza sempliċi ta\' kodiċi (ara l-iscreenshot).',
+            'Agħżel 5 kuluri differenti u assenja eżerċizzju fiżiku għal kull wieħed minnhom, p.e. squat jew jumping jacks. Imbagħad il-kuluri jistgħu jitpoġġew fi kwalunkwe sekwenza u ittrenjati.'
+        ],
+
     ]
 ];
