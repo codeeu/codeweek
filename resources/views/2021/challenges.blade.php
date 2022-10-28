@@ -69,8 +69,8 @@
                         @include('2021._thumbnail', ['slug' => 'silly-eyes'])
                         @include('2021._thumbnail', ['slug' => 'train-ai-bot', 'author'=>'Code.org'])
                         @include('2021._thumbnail', ['slug' => 'build-calliope', 'author'=>'Amazon Future Engineer | Meet and Code feat. Calliope gGmbH'])
-                        @include('2021._thumbnail', ['slug' => 'animate-a-name', 'author'=>'Google'])
-                        @include('2021._thumbnail', ['slug' => 'european-astro-pi', 'author'=>'ESA Education'])
+{{--                        @include('2021._thumbnail', ['slug' => 'animate-a-name', 'author'=>'Google'])--}}
+{{--                        @include('2021._thumbnail', ['slug' => 'european-astro-pi', 'author'=>'ESA Education'])--}}
 
 
                     </section>

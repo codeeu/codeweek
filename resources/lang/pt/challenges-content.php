@@ -451,6 +451,39 @@ return [
             'O tutorial pode ser encontrado aqui',
             'Este tutorial está disponível em mais de 25 idiomas'
         ],
-     ]
+     ],
+    'build-calliope' => [
+        'title' => 'Criar o seu próprio treinador de fitness Calliope mini',
+        'author' => 'Amazon Future Engineer | Iniciativa Meet and Code. Calliope gGmbH',
+        'purposes' => [
+            'Conhecer de forma lúdica sequências, animações, repetições e variáveis.',
+            'Conceber um gráfico de estrutura.',
+            'Testar e depurar o código.',
+            'Otimizar um programa por tentativa e erro, verificando e ajustando a usabilidade.',
+        ],
+        'duration' => '20-30 minutos',
+        'description' =>
+            'Os participantes desenvolverão um protótipo controlado digitalmente que utiliza um LED incandescente colorido para reproduzir um exercício de fitness preconcebido com 10 unidades.',
+        'materials' => [
+            'StarterBox (caixa para iniciantes) Calliope mini (se disponível)',
+            'Computador portátil ou táblete para aceder a <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> ou <a href="https://calliope.cc">https://calliope.cc</a> e ao YouTube, para obter os recursos desta atividade.',
+        ],
+        'instructions' => [
+            'Para começar, crie um plano e determine a ordem das unidades de exercício. Utilizando o plano, programe o LED RGB do Calliope mini para exibir uma das cinco cores ao ritmo predefinido. Em seguida, crie uma variável para o ritmo e programe repetições utilizando ciclos.',
+            'Não se esqueça: se ficou satisfeito com a sua programação, pode também partilhá-la connosco em info@calliope.cc — estamos ansiosos por ver o seu trabalho! A propósito, vamos oferecer 30 Calliope minis entre as submissões!',
+            'Partilhe o código QR do seu projeto no Instagram, adicione a hashtag #CodeWeekChallenge e mencione @CodeWeekEU.',
+        ],
+        'example' => [
+            'Enquanto está sentado à frente do computador: também pode ser desportivo.',
+            'Crie um protótipo de fitness com o Calliope mini que também pode ser testado no simulador. O desafio é realizado no editor MakeCode através da programação de uma sequência de código simples (veja a captura de ecrã).',
+            'Escolha cinco cores diferentes e atribua um exercício de fitness a cada uma delas, por exemplo agachamentos ou polichinelos. Em seguida, as cores podem ser alinhadas em qualquer ordem e treinadas.',
+        ],
+
+    ]
 ];
+
+
+
+
+
 
