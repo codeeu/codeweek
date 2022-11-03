@@ -3,6 +3,7 @@
 namespace App;
 
 
+use App\Traits\LatexCleaner;
 use Carbon\Carbon;
 use Log;
 use Illuminate\Support\Facades\Storage;
@@ -13,7 +14,7 @@ use App\Traits\LanguageDetection;
 class Certificate
 {
 
-    use LanguageDetection;
+    use LanguageDetection, LatexCleaner;
 
     private $templateName = "template.tex";
 
@@ -66,29 +67,6 @@ class Certificate
     }
 
 
-
-    private function tex_escape($string)
-    {
-        $map = array(
-            "#" => "\\#",
-            "$" => "\\$",
-            "%" => "\\%",
-            "&" => "\\&",
-            "~" => "\\~{}",
-            "_" => "\\_",
-            "^" => "\\^{}",
-            "\\" => "\\textbackslash",
-            "{" => "\\{",
-            "}" => "\\}",
-        );
-        return preg_replace_callback("/([\^\%~\\\\#\$%&_\{\}])/",
-            function ($matches) use ($map) {
-                foreach ($matches as $match) {
-                    return ($map[$match]);
-                }
-            }
-            , $string);
-    }
 
     protected function update_event($s3path)
     {
