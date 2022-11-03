@@ -11,18 +11,18 @@
     <section id="codeweek-schools-page" class="codeweek-page">
 
 
-        <section class="flex flex-row justify-between" style="background-color: #DED7BC">
+        <section class="flex flex-row justify-between" style="background-color: #00A79D">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
                     <div class="text-xl text-white w-full"><a class="text-black"
                                                               href="{{route('challenges')}}">@lang('challenges.title')</a>
                     </div>
-                    <div class="text-5xl mt-2" style="color: #d84d96">@lang("challenges-content.$slug.title")</div>
+                    <div class="text-5xl mt-2" style="color: #f5f3e9">@lang("challenges-content.$slug.title")</div>
                 </div>
             </div>
 
             <div class="md:w-10/12 md:flex hidden">
-                <img src="{{asset('img/2021/challenges/thumbnails/cs-first-unplugged-activities.png')}}">
+                <img src="{{asset('img/2021/challenges/thumbnails/build-calliope.png')}}">
 
 
             </div>
