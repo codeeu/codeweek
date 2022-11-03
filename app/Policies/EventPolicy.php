@@ -55,15 +55,17 @@ class EventPolicy
     public function view(User $user, Event $event)
     {
 
+        if(!is_null($event->owner)){
+            Log::info("Trying to view event {$event->id} from {$event->owner->email} as user {$user->id} with email {$user->email}");
+        }
 
-        Log::info("Trying to view event {$event->id} from {$event->owner->email} as user {$user->id} with email {$user->email}");
 
 
         if ($event->status == "APPROVED") {
             return true;
         }
 
-        if ($user->email === $event->owner->email) {
+        if ($event->owner && $user->email === $event->owner->email) {
             return true;
         }
 

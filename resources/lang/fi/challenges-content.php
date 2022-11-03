@@ -451,6 +451,34 @@ return [
             'Katso oppimateriaali täältä',
             'Oppimateriaali on saatavana yli 25 kielellä'
         ],
+    ],
+    'build-calliope' => [
+        'title' => 'Rakenna oma Calliope mini -kuntovalmentaja',
+        'author' => 'Amazon Future Engineer | Meet and Code feat. Calliope gGmbH',
+        'purposes' => [
+            'Tutustu leikkimielisesti koodisarjoihin, animaatioihin, toistoihin ja muuttujiin',
+            'Suunnittele rakennekaavio',
+            'Testaa koodia ja korjaa virheet',
+            'Optimoi ohjelma yrityksen ja erehdyksen kautta sekä tarkistamalla ja säätämällä käytettävyyttä'
+        ],
+        'duration' => '20–30 minuuttia',
+        'description' =>
+            'Osallistujat kehittävät digitaalisesti ohjattavan prototyypin, joka käyttää värikästä LED-valoa toistamaan kymmenestä harjoituksesta koostuvan kunto-ohjelman.',
+        'materials' => [
+            'Calliope mini StarterBox (jos saatavilla)',
+            'Kannettava tietokone tai tabletti, jolla pääsee käyttämään tehtävän resursseja osoitteessa <a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> tai <a href="https://calliope.cc">https://calliope.cc</a> ja YouTubessa.'
+        ],
+        'instructions' => [
+            'Tee ensin suunnitelma ja päätä, missä järjestyksessä kunto-ohjelman eri harjoitukset toistetaan. Ohjelmoi Calliope minin RGB LED -valo suunnitelman avulla niin, että se näyttää jonkin viidestä väristä määritetyllä nopeudella. Luo sitten nopeudelle muuttuja ja ohjelmoi toistot käyttäen silmukoita.',
+            "Olemme kiinnostuneita näkemään, millaisen prototyypin sait aikaan. Jos olet tyytyväinen lopputulokseen, voit jakaa sen meille lähettämällä sähköpostia osoitteeseen info@calliope.cc. Palkitsemme 30 osallistujaa Calliope mini -laitteilla!",
+            "Jaa projektisi QR-koodi Instagramissa, lisää aihetunniste #CodeWeekChallenge ja mainitse @CodeWeekEU.",
+        ],
+        'example' => [
+            'Voit pitää huolta kunnostasi myös istuessasi tietokoneen äärellä.',
+            'Rakenna Calliope minin avulla kuntoiluprototyyppi, jota voi testata myös simulaattorissa. Tämä haaste tehdään MakeCode-editorissa ohjelmoimalla yksinkertainen koodisarja (katso kuvakaappaus).',
+            'Valitse viisi väriä ja määritä jokaiselle niistä jokin kuntoharjoitus, esimerkiksi jalkakyykky tai haarahyppy. Värit voidaan sitten asettaa haluttuun järjestykseen ja ohjelmoida.'
+        ],
+
     ]
 ];
 
