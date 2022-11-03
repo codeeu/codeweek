@@ -3,6 +3,7 @@
 namespace App;
 
 
+use App\Traits\LatexCleaner;
 use Carbon\Carbon;
 use Illuminate\Support\Str;
 use Log;
@@ -14,7 +15,7 @@ use App\Traits\LanguageDetection;
 class CertificateParticipation
 {
 
-    use LanguageDetection;
+    use LanguageDetection, LatexCleaner;
     private $templateName = "participation.tex";
 
     private $name_of_certificate_holder;
@@ -70,28 +71,7 @@ class CertificateParticipation
     }
 
 
-    private function tex_escape($string)
-    {
-        $map = array(
-            "#" => "\\#",
-            "$" => "\\$",
-            "%" => "\\%",
-            "&" => "\\&",
-            "~" => "\\~{}",
-            "_" => "\\_",
-            "^" => "\\^{}",
-            "\\" => "\\textbackslash",
-            "{" => "\\{",
-            "}" => "\\}",
-        );
-        return preg_replace_callback("/([\^\%~\\\\#\$%&_\{\}])/",
-            function ($matches) use ($map) {
-                foreach ($matches as $match) {
-                    return ($map[$match]);
-                }
-            }
-            , $string);
-    }
+
 
     protected function update_event($s3path)
     {
@@ -138,6 +118,7 @@ class CertificateParticipation
         //open the latex template
         $base_template = Storage::disk('latex')->get($this->templateName);
 
+
         //replace the text in template
         $template = str_replace('<CERTIFICATE_HOLDER_NAME>', $this->tex_escape($this->name_of_certificate_holder), $base_template);
         $template = str_replace('<EVENT_NAME>', $this->tex_escape($this->event_name), $template);
@@ -147,6 +128,7 @@ class CertificateParticipation
         $template = str_replace('<EVENT_NAME_LANG>', $this->tex_escape($this->event_name_lang), $template);
         $template = str_replace('<EVENT_DATE_LANG>', $this->tex_escape($this->event_date_lang), $template);
 
+//        dd($template);
 
         //save it locally
         Storage::disk('latex')->put($this->personalized_template_name . ".tex", $template);
