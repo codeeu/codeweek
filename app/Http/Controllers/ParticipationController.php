@@ -87,12 +87,15 @@ class ParticipationController extends Controller
             ]
         );
 
+        $participation->save();
+
 
         $names = array_map('trim', explode(',', $request["names"]));
 
         $zipUrl = $this->doGenerate($names, $request["event_name"], $request["event_date"]);
 
         $participation["participation_url"] = $zipUrl;
+        $participation["status"] = "DONE";
 
         $participation->save();
 
