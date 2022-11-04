@@ -23,7 +23,7 @@ class CertificatesIssuesTest extends TestCase
     {
         Mail::fake();
 
-        $participation = create('App\Participation', ['participation_url'=>null, 'created_at'=>Carbon::now()->subDay()]);
+        create('App\Participation', ['participation_url'=>null, 'created_at'=>Carbon::now()->subDay()]);
 
         $this->artisan('certificate:issues');
 
@@ -36,7 +36,20 @@ class CertificatesIssuesTest extends TestCase
     {
         Mail::fake();
 
-        $participation = create('App\Participation', ['participation_url'=>'url//', 'created_at'=>Carbon::now()->subDay()]);
+        create('App\Participation', ['participation_url'=>'url//', 'created_at'=>Carbon::now()->subDay()]);
+
+        $this->artisan('certificate:issues');
+
+        Mail::assertNotQueued(WarningEmail::class);
+
+    }
+
+    /** @test */
+    public function no_warning_email_should_be_sent_as_there_is_pending_creation()
+    {
+        Mail::fake();
+
+        create('App\Participation', ['participation_url'=>'url//', 'created_at'=>Carbon::now()]);
 
         $this->artisan('certificate:issues');
 
