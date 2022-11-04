@@ -35,10 +35,14 @@
                                 <td>{{$certificate_of_participation->event_date}}</td>
                                 <td>{{$certificate_of_participation->event_name}}</td>
                                 <td class="actions">
+                                    @if(!empty($certificate_of_participation->participation_url))
                                     <a title="Download your certificate" class="codeweek-svg-button"
                                        href="{{$certificate_of_participation->participation_url}}">
                                         <img src="/images/download.svg">
                                     </a>
+                                    @else
+                                    Processing ...
+                                    @endif
                                 </td>
                             </tr>
                         @endif
