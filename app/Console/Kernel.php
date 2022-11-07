@@ -40,6 +40,8 @@ class Kernel extends ConsoleKernel {
 
         $schedule->command('api:germany')->hourlyAt(10);
 
+        $schedule->command('magic:key')->hourlyAt(13);
+
         $schedule->command('relocate')->hourlyAt(30);
 
         $schedule->command('relocate:country')->everyTwoMinutes();
