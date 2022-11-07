@@ -35,7 +35,8 @@ class CertificatesIssues extends Command
 
         if(count($issues) > 0){
             //Send warning Email
-            Mail::to(config('codeweek.administrator'))->queue(new \App\Mail\WarningEmail("We have ". count($issues). " certificates of participation that have not been generated"));
+            $admin = config('codeweek.administrator');
+            Mail::to($admin)->queue(new \App\Mail\WarningEmail("We have ". count($issues). " certificates of participation that have not been generated"));
         }
 
         return Command::SUCCESS;
