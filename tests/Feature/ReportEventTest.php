@@ -17,12 +17,12 @@ class ReportEventTest extends TestCase
 
     protected $event;
 
-    public function setup():void
+    public function setup(): void
     {
         parent::setUp();
 
         $this->seed('RolesAndPermissionsSeeder');
-        $this->event = create('App\Event', ["status"=>"APPROVED","start_date"=>Carbon::now()->subMonth(1)]);
+        $this->event = create('App\Event', ["status" => "APPROVED", "start_date" => Carbon::now()->subMonth(1)]);
 
 
     }
@@ -62,7 +62,7 @@ class ReportEventTest extends TestCase
         $this->withExceptionHandling();
 
 
-        $future_event = create('App\Event', ["start_date"=>Carbon::now()->addMonth(1)]);
+        $future_event = create('App\Event', ["start_date" => Carbon::now()->addMonth(1)]);
         $this->signIn($future_event->owner);
 
         $this->get('/view/' . $future_event->id . '/random')
@@ -123,7 +123,6 @@ class ReportEventTest extends TestCase
         //$this->withExceptionHandling();
 
 
-
         $request = [
             "participants_count" => 10,
             "average_participant_age" => 20,
@@ -135,34 +134,33 @@ class ReportEventTest extends TestCase
             ->assertStatus(Response::HTTP_FORBIDDEN);
 
 
-
-
-
-
     }
 
     /** @test */
-    public function user_should_see_list_of_his_reportable_events(){
+    public function user_should_see_list_of_his_reportable_events()
+    {
         $this->signIn(create('App\User'));
 
-        $myReportableEvent = create('App\Event', ['creator_id' => auth()->id(),'status'=>'APPROVED', 'start_date' => Carbon::now()->subDay()]);
-        $futureEvent = create('App\Event', ['creator_id' => auth()->id(),'status'=>'APPROVED', 'start_date' => Carbon::now()->addDay(1)]);
-        $alreadyReportedEvent = create('App\Event', ['creator_id' => auth()->id(),'status'=>'APPROVED', 'reported_at'=>Carbon::now()]);
-        $myNonReportableEvent = create('App\Event', ['creator_id' => auth()->id(), 'status'=>'PENDING']);
-        $notMyEvent = create('App\Event', ['status'=>'APPROVED']);
+        $myReportableEvent = create('App\Event', ['creator_id' => auth()->id(), 'status' => 'APPROVED', 'start_date' => Carbon::now()->subDay()]);
+        $futureEvent = create('App\Event', ['creator_id' => auth()->id(), 'status' => 'APPROVED', 'start_date' => Carbon::now()->addDay(1)]);
+        $alreadyReportedEvent = create('App\Event', ['creator_id' => auth()->id(), 'status' => 'APPROVED', 'reported_at' => Carbon::now(), 'certificate_url' => 'foobar.xyz']);
+        $faultyReportedEvent = create('App\Event', ['creator_id' => auth()->id(), 'status' => 'APPROVED', 'reported_at' => Carbon::now(), 'certificate_url' => null]);
+        $myNonReportableEvent = create('App\Event', ['creator_id' => auth()->id(), 'status' => 'PENDING']);
+        $notMyEvent = create('App\Event', ['status' => 'APPROVED']);
 
 
         $this->get('/events_to_report')
             ->assertSee($myReportableEvent->title)
+            ->assertSee($faultyReportedEvent->title)
             ->assertDontSee($myNonReportableEvent->title)
             ->assertDontSee($notMyEvent->title)
             ->assertDontSee($alreadyReportedEvent->title)
-            ->assertDontSee($futureEvent->title)
-        ;
+            ->assertDontSee($futureEvent->title);
     }
 
     /** @test */
-    public function text_should_not_be_detected_as_greek(){
+    public function text_should_not_be_detected_as_greek()
+    {
 
         $certificate = new Certificate($this->event);
         $this->assertFalse($certificate->is_greek());
@@ -170,7 +168,8 @@ class ReportEventTest extends TestCase
     }
 
     /** @test */
-    public function text_should_be_detected_as_greek(){
+    public function text_should_be_detected_as_greek()
+    {
 
         $this->event->name_for_certificate = "Λιανού Κυριακή - Lianou Kiriaki 10ο Δημοτικό Σχολείο Αιγάλεω";
         $certificate = new Certificate($this->event);
@@ -180,7 +179,8 @@ class ReportEventTest extends TestCase
     }
 
     /** @test */
-    public function text_should_be_detected_as_greek_with_all_uppercase(){
+    public function text_should_be_detected_as_greek_with_all_uppercase()
+    {
 
         $this->event->name_for_certificate = "ΖΑΧΑΡΩΦ ΣΟΝΙΑ";
         $certificate = new Certificate($this->event);
@@ -190,7 +190,8 @@ class ReportEventTest extends TestCase
     }
 
     /** @test */
-    public function text_should_be_detected_as_greek_with_one_greek_char(){
+    public function text_should_be_detected_as_greek_with_one_greek_char()
+    {
 
         $this->event->name_for_certificate = "This is a Σ";
         $certificate = new Certificate($this->event);
@@ -200,7 +201,8 @@ class ReportEventTest extends TestCase
     }
 
     /** @test */
-    public function text_should_not_be_detected_as_greek_with_one_special_char(){
+    public function text_should_not_be_detected_as_greek_with_one_special_char()
+    {
 
         $this->event->name_for_certificate = "Teacher Di Lella Lucia and the 1D con l’evento  “Di Pixel in Pixel.. cosa apparirà?:stuck_out_tongue_winking_eye:";
         $certificate = new Certificate($this->event);
@@ -210,7 +212,8 @@ class ReportEventTest extends TestCase
     }
 
     /** @test */
-    public function text_should_not_be_detected_as_greek_with_several_special_chars(){
+    public function text_should_not_be_detected_as_greek_with_several_special_chars()
+    {
 
         $this->event->name_for_certificate = 'Nemyriv Educational Establishment "Comprehensive Shool of I-III grades №2-lyceum" - of Nemyriv town Concil Vinnytsia Region';
         $certificate = new Certificate($this->event);
