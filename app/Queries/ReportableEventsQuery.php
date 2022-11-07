@@ -21,7 +21,10 @@ class ReportableEventsQuery
 
         return Event::where('status','APPROVED')
             ->where('creator_id', '=', Auth::user()->id)
-            ->where('reported_at', '=', null)
+            ->where(function($query) {
+                $query->whereNull('reported_at')
+                    ->orWhereNull('certificate_url');
+            })
             ->where('start_date', '<=', Carbon::now())
             ->orderBy('end_date', 'desc')->paginate(20);
 
