@@ -6,14 +6,14 @@ use App\Jobs\GenerateCertificatesOfParticipation;
 use App\Participation;
 use Illuminate\Console\Command;
 
-class CertificatesOfParticipation extends Command
+class CertificatesOfParticipationGeneration extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'certificate:participation {id}';
+    protected $signature = 'certificates:fix';
 
     /**
      * The console command description.
@@ -29,13 +29,19 @@ class CertificatesOfParticipation extends Command
      */
     public function handle()
     {
-        $id = $this->argument('id');
-        $participation = Participation::firstWhere('id',$id);
+
+        $participations = Participation::whereNull('participation_url')->get();
+
+        $this->info(count($participations) . ' certificates of participation to generate');
 
         //Dispatch Job
-        GenerateCertificatesOfParticipation::dispatchSync($participation);
+        foreach ($participations as $participation){
+            GenerateCertificatesOfParticipation::dispatchSync($participation);
+        }
 
-        $this->info('Job dispatched');
+
+
+        $this->info('Fixed');
 
         return Command::SUCCESS;
     }
