@@ -33,7 +33,7 @@ class CertificatesOfParticipation extends Command
         $participation = Participation::firstWhere('id',$id);
 
         //Dispatch Job
-        GenerateCertificatesOfParticipation::dispatch($participation);
+        GenerateCertificatesOfParticipation::dispatchSync($participation);
 
         $this->info('Job dispatched');
 
