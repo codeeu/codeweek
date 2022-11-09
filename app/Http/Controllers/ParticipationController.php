@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use App\CertificateParticipation;
 
 
+use App\Jobs\GenerateCertificatesOfParticipation;
 use App\Participation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -29,45 +30,7 @@ class ParticipationController extends Controller
         return (new CertificateParticipation($name, $event_name, $event_date))->generate();
     }
 
-    private function doGenerate($names, $event_name, $event_date)
-    {
 
-        $filenames = [];
-        foreach ($names as $name) {
-            $filenames[] = (new CertificateParticipation($name, $event_name, $event_date))->generate();
-        }
-
-        //Zip based on the filenames
-        $zipname = "participation-certificates-" . Str::random(10) . ".zip";
-        $zipfull = resource_path() . "/latex/" . $zipname;
-
-        $zip = new ZipArchive;
-        $zip->open($zipfull, ZipArchive::CREATE);
-        foreach ($filenames as $file) {
-            $zip->addFile(resource_path() . "/latex/" . $file . ".pdf", $file . ".pdf");
-        }
-        $zip->close();
-        //Clean them All
-
-
-        //Upload to S3
-        $inputStream = Storage::disk('latex')->getDriver()->readStream($zipname);
-        $destination = Storage::disk('s3')->path('/participation/' . $zipname);
-        Storage::disk('s3')->put($destination, $inputStream);
-
-
-        foreach ($filenames as $file) {
-            Storage::disk('latex')->delete($file . ".pdf");
-        }
-
-        Storage::disk('latex')->delete($zipname);
-
-
-
-        return Storage::disk('s3')->url('participation/' . $zipname);
-
-
-    }
 
     public function generate(Request $request)
     {
@@ -89,26 +52,10 @@ class ParticipationController extends Controller
 
         $participation->save();
 
-
-        $names = array_map('trim', explode(',', $request["names"]));
-
-        $zipUrl = $this->doGenerate($names, $request["event_name"], $request["event_date"]);
-
-        $participation["participation_url"] = $zipUrl;
-        $participation["status"] = "DONE";
-
-        $participation->save();
+        //Dispatch Job
+        GenerateCertificatesOfParticipation::dispatch($participation);
 
         return redirect()->route('certificates');
-        /*$certificate_url = (new CertificateExcellence($edition, $name))->generate();
 
-        ExcellenceQuery::byYear($edition)
-            ->update([
-                'name_for_certificate' => $name,
-                'certificate_url' => $certificate_url
-            ]);
-
-*/
-        //return view('participation.success');
     }
 }

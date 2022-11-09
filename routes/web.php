@@ -12,6 +12,7 @@
 |
 */
 
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
@@ -311,7 +312,7 @@ Route::post('participation', 'ParticipationController@generate')
     ->name('participation_submit')
     ->middleware('auth');
 
-Route::get('participation/test', 'ParticipationController@test');
+//Route::get('participation/test', 'ParticipationController@test');
 
 Route::get('event/edit/{event}', 'EventController@edit')
     ->name('edit_event')
@@ -605,8 +606,9 @@ Route::view('/registration', 'registration.add');
 Route::get('mailing/test', function(){
 
     //$email = ['alainvd@gmail.com'];
+    $user = User::where("id","19588")->first();
 
-    return new App\Mail\GermanMailing();
+    return new App\Mail\PolishMailing($user->email, $user->magic_key);
 });
 
 

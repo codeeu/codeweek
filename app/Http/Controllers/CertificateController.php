@@ -15,7 +15,7 @@ class CertificateController extends Controller
         $reported_events = ReportableEventsQuery::reported();
         $excellence = ExcellenceQuery::mine()->get();
         $superOrganiser = SuperOrganiserQuery::mine()->get();
-        $participation = Auth::user()->participations()->whereActive(true)->get();
+        $participation = Auth::user()->participations()->whereActive(true)->orderByDesc('created_at')->get();
 
 
         return view ('certificates', compact(['reported_events','excellence','participation','superOrganiser']));
