@@ -4,7 +4,6 @@ namespace App\Console\Commands;
 
 use App\Jobs\GenerateCertificatesOfParticipation;
 use App\Participation;
-use Carbon\Carbon;
 use Illuminate\Console\Command;
 
 class CertificatesOfParticipationGeneration extends Command
@@ -31,9 +30,7 @@ class CertificatesOfParticipationGeneration extends Command
     public function handle()
     {
 
-        $participations = Participation::whereNull('participation_url')
-            ->where('created_at','<', Carbon::now()->subMinutes(3))
-            ->where('status','<>','ERROR')->get();
+        $participations = Participation::whereNull('participation_url')->where('status','<>','ERROR')->get();
 
         $this->info(count($participations) . ' certificates of participation to generate');
 
