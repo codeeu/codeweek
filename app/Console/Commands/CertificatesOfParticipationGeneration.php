@@ -39,8 +39,6 @@ class CertificatesOfParticipationGeneration extends Command
             GenerateCertificatesOfParticipation::dispatchSync($participation);
         }
 
-
-
         $this->info('Fixed');
 
         return Command::SUCCESS;
