@@ -15,6 +15,7 @@ return [
     ],
     'howto' => [
         'title' => 'Como posso participar?',
+        'time' => 'O desafio Code Week 4 All decorre até ao final do ano civil. Os certificados serão emitidos no início do próximo ano (em janeiro ou fevereiro).',
         'content' => 'Visite a página <a href="/add">Adicionar Evento</a> e preencha os dados necessários relativos à sua atividade de programação.',
         'first_alliance' => [
             'title' => 'Se for o primeiro da sua aliança:',

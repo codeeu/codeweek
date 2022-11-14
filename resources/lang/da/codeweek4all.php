@@ -15,6 +15,7 @@ return [
     ],
     'howto' => [
         'title' => 'Hvordan deltager jeg?',
+        'time' => 'Code Week 4 All-udfordringen varer indtil udgangen af kalenderåret. Certifikater udstedes i begyndelsen af det følgende år i januar eller februar.',
         'content' => 'Gå ind på siden <a href="/add">Tilføj en aktivitet</a>, og udfyld oplysningerne om din kodeaktivitet.',
         'first_alliance' => [
             'title' => 'Hvis du er den første i din alliance:',

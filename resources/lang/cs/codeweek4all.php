@@ -15,6 +15,7 @@ return [
     ],
     'howto' => [
         'title' => 'Jak se zapojit?',
+        'time' => 'Soutěž Code Week 4 All trvá do konce kalendářního roku. Certifikáty budou vystaveny na začátku příštího roku v lednu nebo únoru.',
         'content' => 'Navštivte stránku <a href="/add">Přidat akci</a> a vyplňte nezbytné podrobnosti o vaší programovací aktivitě.',
         'first_alliance' => [
             'title' => 'Pokud jste v alianci první:',

@@ -19,6 +19,7 @@ return [
     ],
     'howto' => [
         'title' => 'How to participate?',
+        'time' => 'Code Week 4 All challenge lasts until the end of the calendar year. Certificates will be issued in the beginning of the next year in January or February.',
         'content' => 'Visit the <a href="/add">Add Activity</a> page and fill in the necessary details of your coding activity.',
         'first_alliance' => [
             'title' => 'If you are the first one in your alliance:',
@@ -32,8 +33,8 @@ return [
             '1' => 'Paste the passcode you received from the initiator, the first to build the alliance, into the CODE WEEK 4 ALL CODE field cell.',
             '2' => 'Click on Submit.',
             '3' => 'Spread the word (and the code!)  to get more organisers to join your alliance.',
-            '4' => 'After the end of the campaign, all activity organisers will be asked to report on how many participants they have involved. If you were successful in achieving the threshold, you and your colleagues who were part of your network will receive the Certificate of Excellence!'
-        ]
+            '4' => 'After the end of the campaign, all activity organisers will be asked to report on how many participants they have involved. If you were successful in achieving the threshold, you and your colleagues who were part of your network will receive the Certificate of Excellence!',
+            ]
     ],
     'why' => [
         'title' => 'Why join the challenge?',

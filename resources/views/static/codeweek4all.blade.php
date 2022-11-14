@@ -41,6 +41,7 @@
                     <li>@lang('codeweek4all.howto.first_alliance.2')</li>
                     <li>@lang('codeweek4all.howto.first_alliance.3')</li>
                     <li>@lang('codeweek4all.howto.first_alliance.4')</li>
+                    <li>@lang('codeweek4all.howto.time')</li>
                 </ol>
 
                 <i>@lang('codeweek4all.howto.existing_alliance.title')</i>
@@ -49,6 +50,7 @@
                     <li>@lang('codeweek4all.howto.existing_alliance.2')</li>
                     <li>@lang('codeweek4all.howto.existing_alliance.3')</li>
                     <li>@lang('codeweek4all.howto.existing_alliance.4')</li>
+                    <li>@lang('codeweek4all.howto.time')</li>
                 </ol>
 
                 <h2>@lang('codeweek4all.why.title')</h2>
