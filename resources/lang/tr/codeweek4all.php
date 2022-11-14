@@ -15,6 +15,7 @@ return [
     ],
     'howto' => [
         'title' => 'Nasıl katılabilirim?',
+        'time' => 'Code Week 4 All (Herkes İçin Kod Haftası) mücadelesi yıl sonuna kadar devam ediyor. Sertifikalar gelecek yılın başlarında Ocak veya Şubat ayında verilecektir.',
         'content' => '<a href="/add">Aktivite Ekle</a> sayfasını ziyaret edin ve kodlama aktivitenize ilişkin gerekli bilgileri doldurun.',
         'first_alliance' => [
             'title' => 'Yeni bir ekip kuruyorsanız:',

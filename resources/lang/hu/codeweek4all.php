@@ -15,6 +15,7 @@ return [
     ],
     'howto' => [
         'title' => 'Hogyan lehet részt venni?',
+        'time' => 'A Code Week 4 All kihívás az év végéig tart. A tanúsítványokat jövő év januárjában vagy februárjában állítjuk ki.',
         'content' => 'Látogasson el a <a href="/add">Tevékenység hozzáadása</a> oldalra és adja meg a programozási tevékenységével kapcsolatos szükséges részleteket.',
         'first_alliance' => [
             'title' => 'Ha szövetségében Ön az első:',

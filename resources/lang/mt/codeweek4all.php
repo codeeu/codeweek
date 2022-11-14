@@ -15,6 +15,7 @@ return [
     ],
     'howto' => [
         'title' => 'Kif tista’ tipparteċipa?',
+        'time' => "L-isfidi tal-Ġimgħa tal-Ikkowdjar għal Kulħadd kollha jdumu sal-aħħar tas-sena kalendarja. Iċ-ċertifikati ser jinħarġu fil-bidu tas-sena d-dieħla, f'Jannar jew fi Frar.",
         'content' => 'Żur il-paġna <a href="/add">Żid Attività</a> u imla d-dettalji meħtieġa tal-attività tal-ikkowdjar tiegħek.',
         'first_alliance' => [
             'title' => 'Jekk inti l-ewwel wieħed fl-alleanza tiegħek:',

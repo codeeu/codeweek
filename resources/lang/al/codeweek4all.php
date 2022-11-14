@@ -15,6 +15,7 @@ return [
     ],
     'howto' => [
         'title' => 'Si të merrni pjesë?',
+        'time' => 'Sfida Code Week 4 All do të zgjasë deri në fund të vitit kalendarik. Certifikatat do të jepen në fillim të vitit të ardhshëm, në janar ose shkurt.',
         'content' => 'Vizitoni faqen <a href="/add">Shto aktivitet</a> dhe plotësoni të dhënat e nevojshme të aktivitetit tuaj të kodimit.',
         'first_alliance' => [
             'title' => 'Nëse jeni i pari ndër partnerët tuaj:',

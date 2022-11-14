@@ -15,6 +15,7 @@ return [
     ],
     'howto' => [
         'title' => 'Miten osallistutaan?',
+        'time' => 'Kaikkien koodausviikko -haaste jatkuu kuluvan vuoden loppuun. Osaamissertifikaatit jaetaan ensi vuoden tammi- tai helmikuussa.',
         'content' => 'Käy <a href="/add">Lisää tapahtuma</a> -sivulla ja täytä tarvittavat tiedot koodaustapahtumastasi.',
         'first_alliance' => [
             'title' => 'Jos olet verkostosi ensimmäinen:',

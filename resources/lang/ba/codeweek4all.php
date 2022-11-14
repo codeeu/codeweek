@@ -15,6 +15,7 @@ return [
     ],
     'howto' => [
         'title' => 'Kako učestvovati?',
+        'time' => 'Izazov Sedmica kodiranja za sve (Code Week 4 All) traje do kraja kalendarske godine. Certifikati će biti izdati početkom naredne godine u januaru ili februaru.',
         'content' => 'Posjetite stranicu <a href="/add">Dodajte aktivnost</a> i popunite neophodne detalje o svojoj aktivnosti kodiranja.',
         'first_alliance' => [
             'title' => 'Ako ste vi prvi u svom savezu:',

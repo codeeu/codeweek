@@ -15,6 +15,7 @@ return [
     ],
     'howto' => [
         'title' => 'Kako sodelovati?',
+        'time' => 'Izziv tedna programiranja za vse traja do konca koledarskega leta. Certifikati se bodo podelili na začetku naslednjega leta, v januarju ali februarju.',
         'content' => 'Obiščite stran <a href="/add">Dodajte dejavnost</a> in vnesite potrebne podatke o svoji programerski dejavnosti.',
         'first_alliance' => [
             'title' => 'Če ste prvi v svojem zavezništvu:',

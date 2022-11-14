@@ -15,6 +15,7 @@ return [
     ],
     'howto' => [
         'title' => 'Jak wziąć udział w wyzwaniu?',
+        'time' => 'Wyzwanie „Code Week 4 All” potrwa do końca bieżącego roku kalendarzowego. Dyplomy dla uczestników zostaną wydane z początkiem kolejnego roku – w styczniu lub lutym.',
         'content' => 'Wejdź na <a href="/add">Dodaj wydarzenie</a> i wypełnij wymagane dane dotyczące twojego wydarzenia.',
         'first_alliance' => [
             'title' => 'Jeśli rejestrujesz się jako pierwszy w swoim sojuszu:',
