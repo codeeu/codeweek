@@ -20,6 +20,7 @@ return [
     ],
     'howto' => [
         'title' => 'Kako učestvovati?',
+        'time' => 'Izazov Code Week 4 All traje do kraja kalendarske godine. Sertifikati će biti izdati početkom sledeće godine tokom januara ili februara.',
         'content' => 'Posetite stranicu <a href="/add">Dodavanje događaja</a> i popunite potrebne detalje
                                     o vašoj aktivnosti o programiranju.',
         'first_alliance' => [

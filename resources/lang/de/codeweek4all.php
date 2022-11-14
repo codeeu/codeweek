@@ -15,6 +15,7 @@ return [
     ],
     'howto' => [
         'title' => 'Wie nimmt man teil?',
+        'time' => 'Die Code Week 4 All Challenge läuft bis Ende des Kalenderjahres. Die Zertifikate werden zu Beginn des nächsten Jahres im Januar oder Februar ausgestellt.',
         'content' => 'Besuchen Sie die Seite <a href="/add">Aktivität hinzufügen</a> und machen Sie die erforderlichen Angaben für Ihre Programmieraktivität.',
         'first_alliance' => [
             'title' => 'Wenn Sie eine Allianz neu gründen:',
