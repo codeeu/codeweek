@@ -21,6 +21,7 @@ return [
     ],
     'howto' => [
         'title' => 'Ako sa zapojiť?',
+        'time' => 'Výzva Code Week 4 All trvá do konca kalendárneho roka. Certifikáty sa budú vydávať začiatkom budúceho roka v januári alebo vo februári.',
         'content' => 'Otvorte si stránku <a href="/add">Pridať podujatie</a> a vyplňte potrebné
                                     údaje o svojej programovacej aktivite.',
         'first_alliance' => [

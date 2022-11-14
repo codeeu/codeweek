@@ -15,6 +15,7 @@ return [
     ],
     'howto' => [
         'title' => 'Kā piedalīties?',
+        'time' => '"Programmēšanas nedēļa visiem" spēku pārbaude ilgst līdz kalendārā gada beigām. Sertifikāti tiks izsniegti nākamā gada sākumā - janvārī vai februārī.',
         'content' => 'Apmeklējiet lapu <a href="/add">Pievienot notikumu</a> un norādiet nepieciešamo informāciju par jūsu programmēšanas pasākumu.',
         'first_alliance' => [
             'title' => 'Ja esat pirmais jūsu savienībā:',
