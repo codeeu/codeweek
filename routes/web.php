@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 
 
-//Auth::loginUsingId(200576);
+//Auth::loginUsingId(283178);
 
 Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
     Route::get('/', function ($subdomain) {
@@ -608,7 +608,7 @@ Route::get('mailing/test', function(){
     //$email = ['alainvd@gmail.com'];
     $user = User::where("id","19588")->first();
 
-    return new App\Mail\PolishMailing($user->email, $user->magic_key);
+    return new App\Mail\UserCreated($user);
 });
 
 
