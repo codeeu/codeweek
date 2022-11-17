@@ -30,11 +30,10 @@ class CertificatesOfParticipationGeneration extends Command
     public function handle()
     {
 
-        $participations = Participation::whereNull('participation_url')->where('status','<>','ERROR')->get();
+        $participations = Participation::whereNull('participation_url')->where('status','<>','ERROR')->orderByDesc('created_at')->get();
 
         $this->info(count($participations) . ' certificates of participation to generate');
 
-//        dd(count($participations));
         //Dispatch Job
         foreach ($participations as $participation){
             GenerateCertificatesOfParticipation::dispatchSync($participation);
