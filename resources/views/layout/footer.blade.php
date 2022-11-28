@@ -26,7 +26,7 @@
             <div class="phrase">
                 <div class="text">@lang('base.footer_msg')</div>
                 <div class="text"><a
-                            href="{{route('privacy')}}">{{ucfirst(mb_strtolower(__('privacy.title'),'UTF-8'))}}</a> - <a
+                            href="{{route('privacy')}}">{{ucfirst(mb_strtolower(__('privacy-statement.title'),'UTF-8'))}}</a> - <a
                             href="{{route('cookie')}}">@lang('cookie_policy.title')</a></div>
             </div>
             <img src="/images/logo.svg" class="logo_footer">
