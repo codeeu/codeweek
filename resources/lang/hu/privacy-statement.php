@@ -62,7 +62,7 @@ return [
     '5-how_long' => [
         'title' => 'Mennyi ideig őrizzük meg a személyes adatokat?',
         'items' => [
-           ’A G.2. egység csak az adatgyűjtés vagy a további adatfeldolgozás céljának eléréséhez szükséges ideig, azaz a böngészési munkamenet időtartamáig őrzi meg az Ön személyes adatait. Ezenkívül az IP-címek biztonsági okokból egy évig tárolhatók a szolgáltatások naplófájljaiban. Az analitikai eszköz tekintetében az IP-cím és az eszközazonosító (pl. IMEI-szám és WIFI MAC-cím) a kapcsolat megszakításakor azonnal törlődik.',
+           'A G.2. egység csak az adatgyűjtés vagy a további adatfeldolgozás céljának eléréséhez szükséges ideig, azaz a böngészési munkamenet időtartamáig őrzi meg az Ön személyes adatait. Ezenkívül az IP-címek biztonsági okokból egy évig tárolhatók a szolgáltatások naplófájljaiban. Az analitikai eszköz tekintetében az IP-cím és az eszközazonosító (pl. IMEI-szám és WIFI MAC-cím) a kapcsolat megszakításakor azonnal törlődik.',
         ]
     ],
     '6-protect_data' => [
@@ -80,7 +80,7 @@ return [
         'items' => [
             'A felhasználó személyes adataihoz a Bizottság adatkezelési műveletek végrehajtásával megbízott munkatársai és a feljogosított munkatársak férhetnek hozzá, a „szükséges ismeret elvének” megfelelően. Ezeket a munkatársakat jogszabályban előírt kötelezettségek, illetve szükség esetén külön titoktartási megállapodások kötik.',
             'Ezenkívül az Ön személyes adataihoz olyan külső vállalkozók is hozzáférhetnek, akik a honlapokat birtokló és a honlapok létrehozását, karbantartását, kezelését és archiválását végző bizottsági szolgálat nevében és szerződéses megállapodása alapján dolgoznak a „szükséges ismeret elvének” megfelelően.',
-            'Az általunk összegyűjtött információkat nem adjuk át semmilyen harmadik félnek, kivéve olyan mértékben és abból a célból, amelyre jogszabály kötelez minket.’
+            'Az általunk összegyűjtött információkat nem adjuk át semmilyen harmadik félnek, kivéve olyan mértékben és abból a célból, amelyre jogszabály kötelez minket.'
         ]
     ],
     '8-rights' => [
@@ -90,7 +90,7 @@ return [
             'Emellett joga van ahhoz is, hogy kifogást emeljen személyes adatainak az 5. cikk (1) bekezdésének a) pontja alapján jogszerűen végzett kezelése ellen.',
             'Ön hozzájárult ahhoz, hogy személyes adatait ezen adatkezelési művelet céljaira biztosítsa. Hozzájárulását bármikor visszavonhatja úgy, hogy erről értesíti a G.2. egységet. Hozzájárulásának visszavonása nem érinti a visszavonást megelőzően végrehajtott adatkezelés jogszerűségét.',
             'Jogainak érvényre juttatásáért felveheti a kapcsolatot az adatkezelővel, illetve nézeteltérés esetén az adatvédelmi tisztviselővel. Szükség esetén az európai adatvédelmi biztoshoz is fordulhat. Az elérhetőségi adatokat a lenti 9. pont tartalmazza.',
-            'Amennyiben egy vagy több konkrét adatkezelési művelettel kapcsolatban érvényre kívánja juttatni jogait, kérjük, hogy erre irányuló kérelmében adja meg a kérdéses művelet(ek) hivatkozási számát (lásd a lenti 10. pontot).’
+            'Amennyiben egy vagy több konkrét adatkezelési művelettel kapcsolatban érvényre kívánja juttatni jogait, kérjük, hogy erre irányuló kérelmében adja meg a kérdéses művelet(ek) hivatkozási számát (lásd a lenti 10. pontot).'
     ]
     ],
     '9-contact' => [
