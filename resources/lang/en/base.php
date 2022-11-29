@@ -41,7 +41,8 @@ return [
         'se' => 'Swedish',
         'sv' => 'Swedish',
         'tr' => 'Turkish',
-        'lu' => 'Luxembourgish'
+        'lu' => 'Luxembourgish',
+        'ua'=> 'Ukrainian'
     ],
 
     'languages_menu' => [
