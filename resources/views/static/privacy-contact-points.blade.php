@@ -139,7 +139,7 @@
 
             <h4>@lang('privacy-statement.9-contact.data-controller.title')</h4>
             <p>@lang('privacy-statement.9-contact.data-controller.text') <a
-                        href="mailto:CNECT-F4@ec.europa.eu">CNECT-F4@ec.europa.eu</a>.</p>
+                        href="mailto:CNECT-G2@ec.europa.eu">CNECT-G2@ec.europa.eu</a>.</p>
 
             <h4>@lang('privacy-statement.9-contact.data-protection-officer.title')</h4>
             <p>
