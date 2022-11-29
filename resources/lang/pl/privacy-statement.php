@@ -53,7 +53,7 @@ return [
  'W celu <strong>przeprowadzenia tej operacji przetwarzania danych </strong>dział G.2 gromadzi następujące kategorie danych osobowych:',
  'Adres IP lub identyfikator urządzenia używanego do uzyskania dostępu do strony internetowej.',
             'Bez tej operacji przetwarzania nie będziesz w stanie nawiązać połączenia technicznego między Twoimi urządzeniami a infrastrukturą serwera, a zatem nie będziesz mógł uzyskać dostępu do naszej strony internetowej.',
-            'W celu <strong>uwierzytelnienia na tej stronie<strong> dział G.2 gromadzi następujące kategorie danych osobowych:',
+            'W celu <strong>uwierzytelnienia na tej stronie</strong> dział G.2 gromadzi następujące kategorie danych osobowych:',
             'Adres e-mail',
             'Hasło; lub',
             'Uwierzytelnienie mediów społecznościowych'
