@@ -39,6 +39,6 @@ class Luxembourg extends Command {
     public function handle() {
         Log::info('Loading Luxembourg Excel File');
 
-        Excel::import(new LuxembourgEventsImport(), 'lux1.xlsx', 'excel');
+        Excel::import(new LuxembourgEventsImport(), 'lux22-1.xlsx', 'excel');
     }
 }
