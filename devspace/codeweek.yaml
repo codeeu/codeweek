@@ -1,0 +1,40 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: security
+  namespace: codeweek
+spec:
+  headers:
+    frameDeny: true
+    sslRedirect: true
+    browserXssFilter: true
+    contentTypeNosniff: true
+    stsIncludeSubdomains: true
+    stsPreload: true
+    addVaryHeader: true
+    stsSeconds: 31536000
+    contentSecurityPolicy: upgrade-insecure-requests
+    customRequestHeaders:
+      X-Forwarded-Proto: https
+
+---
+
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: codeweek-ing-route
+  namespace: codeweek
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - match: Host(`codeweek.local.europa.eu`)
+      kind: Rule
+      services:
+        - name: laravel-app
+          port: 80
+      middlewares:
+        - name: security
+  tls:
+    secretName: certificates-secret
+
