@@ -10,7 +10,7 @@ return [
         'data-controller' => [
             'title'=>'Vastutav töötleja',
             'text' => '<p>Kui soovite kasutada oma määruse (EL) 2018/1725 kohaseid õigusi või esitada märkusi, tõstatada küsimusi või probleeme või esitada kaebuse seoses teie isikuandmete kogumise ja kasutamisega, võtke palun ühendust vastutava töötlejaga aadressil</p>',
-            'address' => 'Directorate-General for Communications Networks, Content and Technology Unit F4<br> Building BU25<br> B-1049 Brussels<br> (sidevõrkude, sisu ja tehnoloogia peadirektoraat, üksus F4, hoone BU25, B-1049 Brüssel),<br>',
+            'address' => 'Directorate-General for Communications Networks, Content and Technology Unit G2<br> Building BU25<br> B-1049 Brussels<br> (sidevõrkude, sisu ja tehnoloogia peadirektoraat, üksus G2, hoone BU25, B-1049 Brüssel),<br>',
             'email' => 'e-post: '
         ],
         'data-protection-officer' => [

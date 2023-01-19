@@ -102,7 +102,7 @@ return [
             'text' =>
                 '<p>Se pretender exercer os direitos que lhe assistem ao abrigo do Regulamento (UE) 2018/1725, tiver observações, perguntas ou dúvidas ou quiser apresentar uma reclamação relativa à recolha e utilização dos seus dados pessoais, contacte o responsável pelo tratamento:</p>',
             'address' =>
-                'Direção-Geral das Redes de Comunicação, Conteúdos e Tecnologias, Unidade F4<br> Edifício BU25<br> B-1049 Bruxelas<br> ',
+                'Direção-Geral das Redes de Comunicação, Conteúdos e Tecnologias, Unidade G2<br> Edifício BU25<br> B-1049 Bruxelas<br> ',
             'email' => 'Endereço eletrónico: '
         ],
         'data-protection-officer' => [

@@ -15,7 +15,7 @@ return [
     ],
 
     '3-legal_process' => [
-        'Lawfulness of the processing operation: Unit F.4 collects, stores and publishes your personal data, because you gave your explicit consent by ticking a box when you signed up to become a Code Week Ambassador, a Leading Teacher or when you applied to register an event on <a href="https://codeweek.eu/register">Europe Code Week.</a>',
+        'Lawfulness of the processing operation: Unit G.2 collects, stores and publishes your personal data, because you gave your explicit consent by ticking a box when you signed up to become a Code Week Ambassador, a Leading Teacher or when you applied to register an event on <a href="https://codeweek.eu/register">Europe Code Week.</a>',
 
     ],
     '4-collect_data' => [
@@ -38,7 +38,7 @@ return [
         'Public contact e-mail address',
         'Organiser’s website',
         'Code Week for All Code',
-        'For activity organisers, please note that the relevant Ambassador for your country or Unit F.4 can use the personal data you provided to register an activity to contact you with regard to said activity.',
+        'For activity organisers, please note that the relevant Ambassador for your country or Unit G.2 can use the personal data you provided to register an activity to contact you with regard to said activity.',
         'You provided your personal data on the',
         'Code Week Website login page',
         'and on the',
@@ -56,10 +56,10 @@ return [
     '7-access_data' => [
         'All personal data provided by you can be accessed by Commission staff on a “need to know” basis. In addition, access to your personal data is provided to our contractor on a “need to know” basis.',
         'For the purpose of increasing the Code Week Ambassador, Leading Teacher’s or the registered activities’ visibility, all your personal data are published on the following <a href="https://codeweek.eu/">website</a>.',
-        'In addition, Unit F.4 might share your share your contact details with any member of the public or stakeholder that would need to contact you with regard to Code Week. For activity organisers, please note that the relevant Ambassador for your country or Unit F.4 can use the personal data you provided to register an activity to contact you with regard to said activity.',
+        'In addition, Unit G.2 might share your share your contact details with any member of the public or stakeholder that would need to contact you with regard to Code Week. For activity organisers, please note that the relevant Ambassador for your country or Unit G.2 can use the personal data you provided to register an activity to contact you with regard to said activity.',
     ],
     '8-rights' => [
-        'You have consented to providing your personal data to Unit F.4 for the present processing operation. You can withdraw your consent at any time by notifying Unit F.4 at CNECT-F4@ec.europa.eu. The withdrawal will not affect the lawfulness of the processing carried out before you have withdrawn the consent.'
+        'You have consented to providing your personal data to Unit G.2 for the present processing operation. You can withdraw your consent at any time by notifying Unit G.2 at CNECT-G2@ec.europa.eu. The withdrawal will not affect the lawfulness of the processing carried out before you have withdrawn the consent.'
     ],
 
     '10-detailed-info' => [

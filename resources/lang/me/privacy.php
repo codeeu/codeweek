@@ -98,7 +98,7 @@ return [
             'text' =>
                 '<p>Ukoliko biste željeli ostvariti svoja prava po osnovu Uredbe (EU) br. 2018/1725 ili imate komentar, pitanje ili nedoumicu, ili ukoliko želite da uložite žalbu po pitanju prikupljanja i korišćenja vaših ličnih podataka, slobodno se obratite Rukovaocu podacima,</p>',
             'address' =>
-                'Generalni direktorat za komunikacione mreže, sadržaj i tehnologiju Jedinica F4 <br> Zgrada BU25<br> B-1049 Brisel<br> ',
+                'Generalni direktorat za komunikacione mreže, sadržaj i tehnologiju Jedinica G2 <br> Zgrada BU25<br> B-1049 Brisel<br> ',
             'email' => 'e-mail adresa:'
         ],
         'data-protection-officer' => [
