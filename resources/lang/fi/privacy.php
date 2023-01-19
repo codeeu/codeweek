@@ -97,7 +97,7 @@ return [
             'text' =>
                 '<p>Jos haluat käyttää asetuksen (EU) 2018/1725 mukaisia oikeuksiasi, tai jos sinulla on kommentteja, kysymyksiä tai huolenaiheita, tai jos haluat jättää valituksen henkilötietojesi keräämisestä ja käyttämisestä, voit ottaa yhteyttä rekisterinpitäjään,</p>',
             'address' =>
-                'Viestintäverkkojen, sisältöjen ja teknologian pääosasto, Yksikkö F4<br> Rakennus BU25<br> B-1049 Bryssel<br> ',
+                'Viestintäverkkojen, sisältöjen ja teknologian pääosasto, Yksikkö G2<br> Rakennus BU25<br> B-1049 Bryssel<br> ',
             'email' => 'Sähköposti: '
         ],
         'data-protection-officer' => [

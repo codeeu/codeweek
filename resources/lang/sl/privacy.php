@@ -96,7 +96,7 @@ return [
             'text' =>
                 '<p>Če želite uveljavljati svoje pravice iz Uredbe (EU) 2018/1725, če imate pripombe, vprašanja ali pomisleke ali če želite vložiti pritožbo glede zbiranja in uporabe vaših osebnih podatkov, vas prosimo, da se obrnete na upravljavca podatkov,</p>',
             'address' =>
-                'Generalni direktorat za komunikacijska omrežja, vsebine in tehnologijo, enota F4,<br> stavba BU25,<br> B-1049 Bruselj<br> ',
+                'Generalni direktorat za komunikacijska omrežja, vsebine in tehnologijo, enota G2,<br> stavba BU25,<br> B-1049 Bruselj<br> ',
             'email' => 'Elektronski naslov: '
         ],
         'data-protection-officer' => [

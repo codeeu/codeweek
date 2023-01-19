@@ -101,7 +101,7 @@ return [
             'text' =>
                 '<p>Jekk tixtieq teżerċita d-drittijiet tiegħek skont ir-Regolament (UE) 2018/1725, jew jekk għandek kummenti, mistoqsijiet jew tħassib, jew jekk tixtieq tibgħat ilment rigward il-ġbir u l-użu tad-data personali tiegħek, jekk jogħġbok ikkuntattja lill-Kontrollur tad-Data,</p>',
             'address' =>
-                'Id-Direttorat Ġenerali għan-Netwerks tal-Komunikazzjonijiet, Unità tal-Kontenut u t-Teknoloġija Unità F4<br> Bini BU25<br> B-1049 Brussell<br> ',
+                'Id-Direttorat Ġenerali għan-Netwerks tal-Komunikazzjonijiet, Unità tal-Kontenut u t-Teknoloġija Unità G2<br> Bini BU25<br> B-1049 Brussell<br> ',
             'email' => 'Email: '
         ],
         'data-protection-officer' => [

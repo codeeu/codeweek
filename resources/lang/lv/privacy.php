@@ -96,7 +96,7 @@ return [
             'text' =>
                 '<p>Ja vēlaties izmantot jūsu tiesības saskaņā ar Regulu (ES) 2018/1725 vai ja jums ir komentāri, jautājumi vai bažas, vai ja jūs vēlaties iesniegt sūdzību par jūsu personas datu vākšanu un izmantošanu, lūdzu, sazinieties ar datu pārzini:</p>',
             'address' =>
-                'Komunikācijas tīklu, satura un tehnoloģiju ģenerāldirektorāts, <i>Unit F4<br> Building BU25<br> B-1049 Brussels</i><br> ',
+                'Komunikācijas tīklu, satura un tehnoloģiju ģenerāldirektorāts, <i>Unit G2<br> Building BU25<br> B-1049 Brussels</i><br> ',
             'email' => 'E-pasts: '
         ],
         'data-protection-officer' => [

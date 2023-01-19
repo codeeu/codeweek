@@ -102,7 +102,7 @@ return [
             'text' =>
                 '<p>Falls Sie Ihre Rechte gemäß der Verordnung (EU) 2018/1725 ausüben möchten Anmerkungen, Fragen oder Bedenken haben oder eine Beschwerde bezüglich der Erhebung und Nutzung Ihrer personenbezogenen Daten einreichen möchten, können Sie den Verantwortlichen kontaktieren:</p>',
             'address' =>
-                'Generaldirektion Kommunikationsnetze, Inhalte und Technologien Einheit F4<br> Gebäude BU25<br> B-1049 Brüssel<br> ',
+                'Generaldirektion Kommunikationsnetze, Inhalte und Technologien Einheit G2<br> Gebäude BU25<br> B-1049 Brüssel<br> ',
             'email' => 'E-Mail: '
         ],
         'data-protection-officer' => [
