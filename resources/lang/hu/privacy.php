@@ -99,7 +99,7 @@ return [
             'text' =>
                 '<p>Amennyiben az (EU) 2018/1725 rendelet szerinti jogait gyakorolni kívánja, vagy megosztaná észrevételeit, kérdéseit, illetve aggályait, vagy személyes adatai gyűjtésével és felhasználásával kapcsolatos panaszt szeretne benyújtani, vegye fel a kapcsolatot az adatkezelővel,</p>',
             'address' =>
-                'Tartalmak, Technológiák és Kommunikációs Hálózatok Főigazgatóságának F4 osztálya<br> BU25 épület<br> B-1049 Brüsszel<br> ',
+                'Tartalmak, Technológiák és Kommunikációs Hálózatok Főigazgatóságának G2 osztálya<br> BU25 épület<br> B-1049 Brüsszel<br> ',
             'email' => 'Email: '
         ],
         'data-protection-officer' => [

@@ -101,7 +101,7 @@ return [
             'text' =>
                 '<p>Haklarınızı (EU) 2018/1725 Tüzüğü altında kullanmak isterseniz veya yorumlarınız, sorularınız veya endişeleriniz varsa ya da kişisel verilerinizin toplanması ve kullanımına ilişkin bir şikâyette bulunmak istiyorsanız, lütfen Veri Denetçisi ile irtibata geçmekten çekinmeyin,</p>',
             'address' =>
-                'Directorate-General for Communications Networks, Content and Technology Unit F4<br> Building BU25<br> B-1049 Brussels<br> ',
+                'Directorate-General for Communications Networks, Content and Technology Unit G2<br> Building BU25<br> B-1049 Brussels<br> ',
             'email' => 'E-posta: '
         ],
         'data-protection-officer' => [

@@ -96,7 +96,7 @@ return [
             'text' =>
                 '<p>Ako želite da se pozovete na svoja prava u okviru Uredbe (EU) 2018/1725 ili ako imate komentare, pitanja ili ste zabrinuti ili ako biste želeli da pošaljete pritužbu u vezi sa prikupljanjem i korišćenjem vaših ličnih podataka, slobodno se obratite kontroleru podataka,</p>',
             'address' =>
-                'Directorate-General for Communications Networks, Content and Technology Unit F4<br> Building BU25<br> B-1049 Brussels<br> ',
+                'Directorate-General for Communications Networks, Content and Technology Unit G2<br> Building BU25<br> B-1049 Brussels<br> ',
             'email' => 'imejl: '
         ],
         'data-protection-officer' => [
