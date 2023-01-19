@@ -98,7 +98,7 @@ return [
             'text' =>
                 '<p>Ако сакате да ги искористите своите права според Регулативата (EУ) 2018/1725, или ако имате коментари, прашања или сте засегнати на кој било начин, или ако би сакале да поднесете жалба во врска со собирањето и користењето на личните податоци, слободно контактирајте со Контролорот на податоци,</p>',
             'address' =>
-                'Directorate-General for Communications Networks, Content and Technology Unit F4<br> Building BU25<br> B-1049 Brussels<br> ',
+                'Directorate-General for Communications Networks, Content and Technology Unit G2<br> Building BU25<br> B-1049 Brussels<br> ',
             'email' => 'Е-пошта: '
         ],
         'data-protection-officer' => [
