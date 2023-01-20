@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'Për vitin 2022, EU Code Week do të zhvillohet mes datave 8 dhe 23 tetor.',
+        'Për vitin 2023, EU Code Week do të zhvillohet mes datave 7 dhe 22 tetor.',
     'when-text' => '<p>EU Code Week është një lëvizje në terren që feston aftësinë
                         krijuese, zgjidhjen e problemeve dhe bashkëpunimin përmes programimit dhe aktiviteteve
                         të tjera teknologjike. Ideja është që programimi të bëhet më

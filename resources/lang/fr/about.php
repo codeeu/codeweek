@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'En 2022, la Semaine européenne du code aura lieu du 8 au 23 octobre.',
+        'En 2023, la Semaine européenne du code aura lieu du 7 au 22 octobre.',
     'when-text' =>
         '<p>La Semaine européenne du code est un mouvement citoyen qui met à l’honneur la créativité, la résolution de problèmes et la collaboration par le biais de la programmation et d’autres activités technologiques. L’idée consiste à rendre la programmation plus visible, à montrer aux jeunes, aux adultes et aux personnes âgées comment concrétiser des idées grâce au code, à démystifier ces compétences et à rassembler un public désireux d’apprendre.</p>',
     'codeweek_in_numbers-title' => 'La Semaine du code en chiffres',

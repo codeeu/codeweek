@@ -3,7 +3,7 @@
 return [
     'about' =>
         'De EU-programmeerweek is een burgerinitiatief dat erop is gericht om programmeren en digitale vaardigheden op een leuke, aantrekkelijke manier voor iedereen bereikbaar te maken.',
-    'when' => '8 - 23 oktober 2022',
+    'when' => '7 - 22 oktober 2023',
     'when_text' =>
         'Leren programmeren helpt ons de snel veranderende wereld om ons heen te begrijpen, ons begrip van de werking van technologie te vergroten en vaardigheden en mogelijkheden te ontwikkelen om nieuwe idee&euml;n te ontdekken en te innoveren.',
     'school_banner_title' => 'Doe mee!',

@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'W 2022 roku Europejski Tydzień Kodowania odbędzie się w dniach od 8 do 23 października.',
+        'W 2023 roku Europejski Tydzień Kodowania odbędzie się w dniach od 7 do 22 października.',
     'when-text' =>
         '<p>Europejski Tydzień Kodowania to oddolna inicjatywa, w ramach której świętujemy kreatywność, rozwiązywanie problemów i współpracę poprzez programowanie i inne działania związane z technologią. Główną ideą stojącą za wydarzeniem jest promowanie programowania poprzez pokazywanie młodzieży i dorosłym sposobów na realizację pomysłów przy pomocy kodu, rozwiewanie wątpliwości i mitów otaczających te umiejętności oraz gromadzenie zmotywowanych jednostek w celu wspólnej nauki.</p>',
     'codeweek_in_numbers-title' => 'Tydzień Kodowania w liczbach',

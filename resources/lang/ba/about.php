@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'Tokom 2022, Sedmica kodiranja EU će se odvijati od 8. do 23. oktobra.',
+        'Tokom 2023, Sedmica kodiranja EU će se odvijati od 7. do 22. oktobra.',
     'when-text' =>
         '<p>Sedmica kodirnja EU je pokret širokih masa u kom se slavi kreativnost, rješavanje problema i saradnja putem programiranja i drugih tehnoloških aktivnosti. Zamisao je da se programiranje načini vidljivijim, da se mladima, odraslima i starijima pokaže kako kodiranjem mogu svoje ideje sprovesti u realnost, da se te vještine demistificiraju i da se okupe oni koji su motivirani za učenje.</p>',
     'codeweek_in_numbers-title' => 'Sedmica kodiranja u ciframa',

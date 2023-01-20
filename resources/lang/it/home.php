@@ -3,7 +3,7 @@
 return [
     'about' =>
         'L’EU Code Week è un’iniziativa che nasce dal basso e mira a portare la programmazione e l’alfabetizzazione digitale a tutti in modo divertente e coinvolgente.',
-    'when' => 'Dal 8 al 23 ottobre 2022',
+    'when' => 'Dal 7 al 22 ottobre 2023',
     'when_text' =>
         'Imparare a programmare ci aiuta a dare un senso al mondo che cambia rapidamente intorno a noi, ad ampliare la nostra comprensione di come funziona la tecnologia e a sviluppare abilità e capacità al fine di esplorare nuove idee e innovare.',
     'school_banner_title' => 'Mettiti in gioco!',
