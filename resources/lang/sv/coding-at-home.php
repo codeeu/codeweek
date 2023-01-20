@@ -32,7 +32,7 @@ return [
                 1 => 'F1. När start och mål är arrangerade som i videons första match, är det möjligt för något av lagen att vinna?',
                 2 => 'F2. När start och mål är arrangerade som i matchen som Anna vann, var det möjligt att få oavgjort?',
                 3 => 'F3. Finns det någon variant av start och mål som är en fördel för något av lagen?',
-                4 => 'F4. Utifrån placeringen av start och mål, är det möjligt att uttala sig som den slutliga skillnaden mellan det vinnande laget och det förlorande?'
+                4 => 'G2. Utifrån placeringen av start och mål, är det möjligt att uttala sig som den slutliga skillnaden mellan det vinnande laget och det förlorande?'
             ]
         ]
     ],
@@ -46,7 +46,7 @@ return [
                 1 => 'F1. Finns det någon startpunkt som är till fördel för något av lagen?',
                 2 => 'F2. Kan det bli oavgjort?',
                 3 => 'F3. Har den spelare som börjar en fördel?',
-                4 => 'F4. Finns det en vattentät strategi som den spelare som gör det första draget kan använda för att aldrig förlora?'
+                4 => 'G2. Finns det en vattentät strategi som den spelare som gör det första draget kan använda för att aldrig förlora?'
             ]
         ]
     ],
@@ -74,7 +74,7 @@ return [
                 1 => 'F1. Vad är skillnaden mellan en spelplan full av färgade fotavtryck och en med färger men inga fotavtryck?',
                 2 => 'F2. Vilken spelplan ger mest rörelsefrihet, med samma regler för att svänga som anges med färg?',
                 3 => 'F3. Finns det möjliga vägar på spelplanen med bara färger som inte är möjliga på en spelplan med färgade fotavtryck?',
-                4 => 'F4. Finns det möjliga vägar på spelplanen med färgade fotavtryck som inte är möjliga på en spelplan med bara färger?'
+                4 => 'G2. Finns det möjliga vägar på spelplanen med färgade fotavtryck som inte är möjliga på en spelplan med bara färger?'
             ]
         ]
     ],

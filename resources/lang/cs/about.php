@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'V roce 2022 proběhne Evropský týden programování od 8. do 23. října.',
+        'V roce 2023 proběhne Evropský týden programování od 7. do 22. října.',
     'when-text' =>
         '<p>Evropský týden programování je projekt, který propaguje kreativitu, řešení problémů a spolupráci pomocí programování a jiných technických aktivit. Cílem je programování zviditelnit – ukázat mladým lidem, dospělým i seniorům, jak je díky programování možné realizovat myšlenky. Chceme tyto dovednosti zbavit roušky tajemství a spojit motivované lidi, aby se učili.</p>',
     'codeweek_in_numbers-title' => 'Týden programování v číslech',

@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'La edición de 2022 de la Semana de la Programación de la Unión Europea (UE) se celebrará entre el 8 y el 23 de octubre.',
+        'La edición de 2023 de la Semana de la Programación de la Unión Europea (UE) se celebrará entre el 7 y el 22 de octubre.',
     'when-text' =>
         '<p>La Semana de la Programación de la UE es un movimiento de base que promueve la creatividad, la resolución de problemas y la colaboración a través de la programación y otras actividades tecnológicas. La idea es impulsar la visibilidad de la programación y enseñar a jóvenes, adultos y personas mayores a hacer realidad sus ideas mediante la programación, acercar estas capacidades al gran público y reunir a personas motivadas para que aprendan juntas.</p>',
     'codeweek_in_numbers-title' => 'La Semana de la Programación en cifras',
