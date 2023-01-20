@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'when-title' => 'EU Code Week 2022 anordnas mellan den 8 och 23 oktober.',
+    'when-title' => 'EU Code Week 2023 anordnas mellan den 7 och 22 oktober.',
     'when-text' =>
         '<p>EU Code Week är ett gräsrotsinitiativ som hyllar kreativitet, problemlösning och samarbete via programmering och andra tekniska aktiviteter. Tanken är att göra programmering mer synligt, att visa unga, vuxna och äldre hur man kan förverkliga idéer med kod, att avmystifiera dessa färdigheter och få motiverade människor att lära sig tillsammans.</p>',
     'codeweek_in_numbers-title' => 'Code Week i siffror',

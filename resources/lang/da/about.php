@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'EU’s kodeuge 2022 finder sted mellem den 8. og 23. oktober.',
+        'EU’s kodeuge 2023 finder sted mellem den 7. og 22. oktober.',
     'when-text' =>
         '<p>EU’s kodeuge er en græsrodsbevægelse, der fejrer kreativitet, problemløsning og samarbejde gennem programmering og andre tekniske aktiviteter. Idéen er at gøre programmering mere synligt for at vise unge, voksne og ældre, hvordan man fører sine idéer ud i livet med kode, at afmystificere disse færdigheder og at samle motiverede mennesker i et læringsmiljø.</p>',
     'codeweek_in_numbers-title' => 'Kodeugen i tal',

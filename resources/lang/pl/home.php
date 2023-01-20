@@ -3,7 +3,7 @@
 return [
     'about' =>
         'EU Code Week, czyli Europejski Tydzień Kodowania, to oddolna inicjatywa promująca programowanie i umiejętności cyfrowe wśród uczestników w ciekawy i interesujący sposób.',
-    'when' => '8-23 października 2022 roku',
+    'when' => '7-22 października 2023 roku',
     'when_text' =>
         'Nauka kodowania pomaga wszystkim zrozumieć otaczający nas świat, który ulega ciągłym zmianom. Dołącz do miliona organizatorów i uczestników. Inspiruj rozwój kodowania, myślenia obliczeniowego by rozwijać nowe pomysły i wprowadzać innowacje na przyszłość.',
     'school_banner_title' => 'Weź udział!',

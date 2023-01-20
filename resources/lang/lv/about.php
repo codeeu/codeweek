@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        '2022. gadā ES programmēšanas nedēļa notiks no 8. līdz 23. oktobrim.',
+        '2023. gadā ES programmēšanas nedēļa notiks no 7. līdz 22. oktobrim.',
     'when-text' =>
         '<p>ES programmēšanas nedēļa ir iedzīvotāju kustība, kas veltīta radošumam, problēmu risināšanai un sadarbībai, izmantojot programmēšanu un citas tehnoloģiskas aktivitātes. Pamatideja ir padarīt programmēšanu populārāku, parādīt jauniešiem, pieaugušajiem un vecāka gadagājuma cilvēkiem, kā ar programmēšanas palīdzību īstenot idejas, kliedēt maldīgus priekšstatus par programmēšanas prasmēm un sapulcināt kopā motivētus cilvēkus, kuri vēlas tās apgūt.</p>',
     'codeweek_in_numbers-title' => 'Programmēšanas nedēļa skaitļos',
