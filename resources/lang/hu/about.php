@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        '2022-ban az európai programozási hétre október 8. és 23. között kerül sor.',
+        '2023-ban az európai programozási hétre október 7. és 22. között kerül sor.',
     'when-text' =>
         '<p>Az európai programozási hét alulról szerveződő kezdeményezés, amely a kreativitást, a problémamegoldást és az együttműködést ünnepli a programozáson és egyéb technológiai tevékenységeken keresztül. Az alapgondolat a programozás láthatóbbá tétele, valamint hogy megmutassa a fiataloknak, a felnőtteknek és az időseknek, hogyan valósíthatók meg az ötletek a programozás révén, továbbá a készségek demisztifikálása, valamint a tanulni vágyó emberek egymással való összekapcsolása.</p>',
     'codeweek_in_numbers-title' => 'A programozási hét számokban',

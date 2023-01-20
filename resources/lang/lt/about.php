@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'when-title' => '2022 m. ES programavimo savaitė vyks spalio 8-23 d.',
+    'when-title' => '2023 m. ES programavimo savaitė vyks spalio 7-22 d.',
     'when-text' =>
         '<p>ES programavimo savaitė yra visuomeninė iniciatyva, kuria skatinamas kūrybiškumas, problemų sprendimas ir bendradarbiavimas pasitelkiant programavimą ir kitą technologinę veiklą. Šios iniciatyvos tikslas yra populiarinti programavimą, parodyti, kaip žmonės gali įgyvendinti idėjas programuodami, susipažinti su programavimo įgūdžiais ir suburti motyvuotus žmones mokytis.</p>',
     'codeweek_in_numbers-title' => 'Programavimo savaitė skaičiais',

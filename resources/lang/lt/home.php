@@ -3,7 +3,7 @@
 return [
     'about' =>
         'ES programavimo savaitė yra visuomeninė iniciatyva, kurios tikslas yra visus sudominti programavimu ir skaitmeniniu raštingumu.',
-    'when' => '2022 m. spalio 8–23 d.',
+    'when' => '2023 m. spalio 7–22 d.',
     'when_text' =>
         'Mokydamiesi programuoti suvokiame sparčiai besikeičiantį pasaulį, geriau suprantame, kaip veikia technologijos, ir tobuliname savo įgūdžius bei gebėjimus, kad galėtume rasti naujų idėjų ir kurti inovacijas.',
     'school_banner_title' => 'Dalyvaukite!',

@@ -98,7 +98,7 @@ return [
             'title' => '-The Data Controller',
             'text' =>
                 '<p>If you would like to exercise your rights under Regulation (EU) 2018/1725, or if you have comments, questions or concerns, or if you would like to submit a complaint regarding the collection and use of your personal data, please feel free to contact the Data Controller,</p>',
-            'address' => 'Directorate-General for Communications Networks, Content and Technology Unit F4<br>
+            'address' => 'Directorate-General for Communications Networks, Content and Technology Unit G2<br>
                 Building BU25<br>
                 B-1049 Brussels<br>',
             'email' => 'Email: '
