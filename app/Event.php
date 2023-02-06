@@ -18,6 +18,7 @@ use Illuminate\Support\Str;
 use Spatie\Activitylog\LogOptions;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Laravel\Nova\Actions\Actionable;
+use Stevebauman\Purify\Casts\PurifyHtmlOnGet;
 
 class Event extends Model
 {
@@ -62,6 +63,12 @@ class Event extends Model
         'picture_detail',
         'language',
         'location_id'
+    ];
+
+    protected $casts = [
+        'description' => PurifyHtmlOnGet::class,
+        'title' => PurifyHtmlOnGet::class,
+        'location' => PurifyHtmlOnGet::class,
     ];
 
 //    protected $policies = [
