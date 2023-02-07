@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use App\Country;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Support\Facades\Log;
 use Tests\TestCase;
 
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -33,6 +34,7 @@ class CountriesTest extends TestCase
 
         $country_without_event = create('App\Country');
         $country_with_event = create('App\Country');
+        Log::info($country_with_event->iso);
         create('App\Event', ["country_iso" => $country_with_event->iso,"status" => "APPROVED"]);
 
         $this->assertCount(1,Country::withEvents());
