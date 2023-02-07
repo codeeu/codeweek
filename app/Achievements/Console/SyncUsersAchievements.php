@@ -45,6 +45,6 @@ class SyncUsersAchievements extends Command
     {
         $from = ($index - 1) * 100;
         $to = ($index - 1) * 100 + 100;
-        $this->info("Seeding users {$from} - {$to}");
+        $this->info("Progress for users {$from} - {$to}");
     }
 }
