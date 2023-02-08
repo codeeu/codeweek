@@ -34,7 +34,7 @@
         </div>
         <div class="social-media-buttons">
             <div class="social-network">
-                <a href="https://t003c459d.emailsys2a.net/26/4369/b41355c7db/subscribe/form.html?_g=1663162661"
+                <a href="https://newsletter.gopacom.eu/26/4369/03b9cb464b/subscribe/form.html?_g=1675787239"
                    target="_blank" rel="noreferer, noopener">
                     <div style="margin-right: 2px">
                         <svg style="margin-right: 5px;" xmlns="http://www.w3.org/2000/svg" height="24"
