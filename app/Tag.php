@@ -33,4 +33,9 @@ class Tag extends Model
     {
         return $this->belongsToMany('App\Event');
     }
+
+    public function users()
+    {
+        return $this->belongsToMany('App\User');
+    }
 }
