@@ -22,7 +22,7 @@
             </section>
 
             <div style="height:700px;">
-                <iframe src="https://www.hedycode.com/hedy/ce2e74b3f67d4ccfaaca61fedc563d3c/view" height="700" width="1000" title="Hedy Story"></iframe>
+                <iframe src="https://hedy.org/hedy#haunted" height="700" width="1000" title="Hedy Story"></iframe>
             </div>
 
 
