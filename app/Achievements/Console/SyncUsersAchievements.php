@@ -28,7 +28,7 @@ class SyncUsersAchievements extends Command
      */
     public function handle()
     {
-        User::role("leading teacher")->where('id',134297)->chunk(100, function($users, $index){
+        User::role("leading teacher")->chunk(100, function($users, $index){
             $this->reportProgress($index);
             $users->each(function($user){
                 $user->achievements()->sync(
