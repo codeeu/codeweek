@@ -28,7 +28,7 @@ return [
 
     'supported_by_commission-text' => '
                 <p>
-                    EU Code Week was launched in 2013 by the Young Advisors for the Digital Agenda Europe. The European Commission supports EU Code Week as part of its strategy for a <a href="http://ec.europa.eu/priorities/digital-single-market/">Digital Single Market</a>. In the <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Digital Education Action Plan</a> the Commission especially encourages schools to join the initiative.
+                    EU Code Week was launched in 2013 by the Young Advisors for the Digital Agenda Europe. The European Commission supports EU Code Week as part of its strategy for a <a href="http://ec.europa.eu/priorities/digital-single-market/">Digital Single Market</a>. In the <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">Digital Education Action Plan</a> the Commission especially encourages schools to join the initiative.
                 </p>',
 
     'schools-text' => '

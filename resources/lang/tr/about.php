@@ -15,7 +15,7 @@ return [
     'supported_by_commission-title' =>
         'Avrupa Komisyonu tarafından desteklenmektedir',
     'supported_by_commission-text' =>
-        '<p>AB Kod Haftası, 2013 yılında Avrupa Dijital Gündemi Genç Danışmanlar tarafından başlatılmıştır. Avrupa Komisyonu, <a href="http://ec.europa.eu/priorities/digital-single-market/">Dijital Tek Pazar</a> stratejisinin bir parçası olarak AB Kod Haftasını desteklemektedir; bu Komisyon, <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Dijital Eğitim Eylem Planında</a> özellikle okulları girişime katılmaya teşvik etmektedir.</p>',
+        '<p>AB Kod Haftası, 2013 yılında Avrupa Dijital Gündemi Genç Danışmanlar tarafından başlatılmıştır. Avrupa Komisyonu, <a href="http://ec.europa.eu/priorities/digital-single-market/">Dijital Tek Pazar</a> stratejisinin bir parçası olarak AB Kod Haftasını desteklemektedir; bu Komisyon, <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">Dijital Eğitim Eylem Planında</a> özellikle okulları girişime katılmaya teşvik etmektedir.</p>',
     'schools-title' => 'Okullar',
     'schools-text' =>
         '<p>Her seviyedeki okullar ve tüm branşlardaki öğretmenler, özellikle öğrencilerine dijital yaratıcılığı ve kodlamayı keşfetme fırsatı verebilmeleri için AB Kod Haftasına katılmaya davet edilmektedir. Girişim hakkında daha fazla bilgi edinin ve aktivitelerinizi öğretmenlere ayrılmış web sayfası aracılığıyla nasıl düzenleyebileceğinizi öğrenin: <a href="/schools">CodeWeek.eu/Schools</a></p>',
