@@ -20,12 +20,12 @@ return [
 
     'run_by_volunteers-text' => '
         <p>
-            A Semana Europeia da Programação foi lançada em 2013 pelo grupo Young Advisors for the Digital Agenda Europe. A Comissão Europeia apoia a Semana Europeia da Programação no âmbito da sua estratégia para o <a href="http://ec.europa.eu/priorities/digital-single-market/">Mercado Único Digital</a>. No <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Plano de Ação para a Educação Digital</a>, a Comissão incentiva especialmente as escolas a aderirem à iniciativa. O objetivo é alcançar 50 % do conjunto das escolas da Europa até 2020.
+            A Semana Europeia da Programação foi lançada em 2013 pelo grupo Young Advisors for the Digital Agenda Europe. A Comissão Europeia apoia a Semana Europeia da Programação no âmbito da sua estratégia para o <a href="http://ec.europa.eu/priorities/digital-single-market/">Mercado Único Digital</a>. No <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">Plano de Ação para a Educação Digital</a>, a Comissão incentiva especialmente as escolas a aderirem à iniciativa. O objetivo é alcançar 50 % do conjunto das escolas da Europa até 2020.
         </p>',
 
     'supported_by_commission-text' => '
         <p>
-            A Semana Europeia da Programação foi lançada em 2013 pelo grupo Young Advisors for the Digital Agenda Europe. A Comissão Europeia apoia a Semana Europeia da Programação no âmbito da sua estratégia para o <a href="http://ec.europa.eu/priorities/digital-single-market/">Mercado Único Digital</a>. No <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Plano de Ação para a Educação Digital</a>, a Comissão incentiva especialmente as escolas a aderirem à iniciativa.
+            A Semana Europeia da Programação foi lançada em 2013 pelo grupo Young Advisors for the Digital Agenda Europe. A Comissão Europeia apoia a Semana Europeia da Programação no âmbito da sua estratégia para o <a href="http://ec.europa.eu/priorities/digital-single-market/">Mercado Único Digital</a>. No <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">Plano de Ação para a Educação Digital</a>, a Comissão incentiva especialmente as escolas a aderirem à iniciativa.
         </p>',
 
     'schools-text' => '

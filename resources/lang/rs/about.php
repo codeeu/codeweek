@@ -15,7 +15,7 @@ return [
     'supported_by_commission-title' =>
         'EU nedelju programiranja podržava Evropska komisija',
     'supported_by_commission-text' =>
-        '<p>EU nedelju programiranja su pokrenuli 2013. godine Mladi savetnici Evropske Digitalne Agende. Evropska komisija podržava EU nedelju programiranja kao deo strategije za <a href="http://ec.europa.eu/priorities/digital-single-market/">Jedinstveno digitalno tržište</a>, i u okviru <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Akcionog plana za digitalno obrazovanje</a> Evropska komisija posebno podstiče škole da se pridruže inicijativi.</p>',
+        '<p>EU nedelju programiranja su pokrenuli 2013. godine Mladi savetnici Evropske Digitalne Agende. Evropska komisija podržava EU nedelju programiranja kao deo strategije za <a href="http://ec.europa.eu/priorities/digital-single-market/">Jedinstveno digitalno tržište</a>, i u okviru <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">Akcionog plana za digitalno obrazovanje</a> Evropska komisija posebno podstiče škole da se pridruže inicijativi.</p>',
     'schools-title' => 'Škole',
     'schools-text' =>
         '<p>Posebno su pozvane sve škole iz celokupnog obrazovnog sistema i svi predmetni nastavnici da učestvuju u EU nedelji programiranja kako bi pružili mogućnost svojim učenicima da istraže digitalnu kreativnost i programiranje. Saznajte više o inicijativi i kako da organizujete aktivnost putem veb stranice posvećene nastavnicima: <a href="/schools">CodeWeek.eu/Schools</a></p>',
