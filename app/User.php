@@ -96,9 +96,11 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $fillable = [
-        'firstname', 'lastname', 'username', 'avatar_path', 'email', 'password', 'bio', 'twitter', 'website', 'country_iso', 'privacy', 'email_display', 'receive_emails', 'magic_key','current_country','provider'
-    ];
+//    protected $fillable = [
+//        'firstname', 'lastname', 'username', 'avatar_path', 'email', 'password', 'bio', 'twitter', 'website', 'country_iso', 'privacy', 'email_display', 'receive_emails', 'magic_key','current_country','provider'
+//    ];
+
+    protected $guarded = [];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -456,6 +458,11 @@ class User extends Authenticatable
     public function setCurrentCountry($country)
     {
         $this->update(['current_country' => $country]);
+    }
+
+    public function tags()
+    {
+        return $this->belongsToMany('App\Tag');
     }
 
 

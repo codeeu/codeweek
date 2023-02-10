@@ -97,6 +97,27 @@ class LeadingTeacherTest extends TestCase
     }
 
 
+    /** @test */
+    public function a_leading_teacher_can_be_linked_to_tags()
+    {
+
+        $this->assertCount(0,$this->leading_teacher->tags);
+
+        $tag = create('App\Tag', ["name" => "foo"]);
+        $tag2 = create('App\Tag', ["name" => "bar"]);
+        $tag3 = create('App\Tag', ["name" => "diz"]);
+
+        $this->leading_teacher->tags()->save($tag);
+        $this->leading_teacher->tags()->save($tag2);
+        $this->leading_teacher->tags()->save($tag3);
+
+        $this->assertCount(3,$this->leading_teacher->fresh()->tags);
+
+
+
+    }
+
+
 }
 
 
