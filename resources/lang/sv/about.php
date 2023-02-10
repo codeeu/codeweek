@@ -13,7 +13,7 @@ return [
         '<p>EU Code Week organiseras av frivilliga. En eller flera <a href="/ambassadors">ambassadörer för Code Week</a> samordnar initiativet i de olika länderna, men vem som helst kan organisera en aktivitet och lägga till den på kartan på <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'Stöds av Europeiska kommissionen',
     'supported_by_commission-text' =>
-        '<p>EU Code Week lanserades 2013 av Young Advisors for the Digital Agenda Europe. Europeiska kommissionen stöder EU Code Week som en del av strategin för en <a href="http://ec.europa.eu/priorities/digital-single-market/">digital inre marknad</a> och uppmuntrar i synnerhet skolor att delta i initiativet i den <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">digitala utbildningsplanen</a>.</p>',
+        '<p>EU Code Week lanserades 2013 av Young Advisors for the Digital Agenda Europe. Europeiska kommissionen stöder EU Code Week som en del av strategin för en <a href="http://ec.europa.eu/priorities/digital-single-market/">digital inre marknad</a> och uppmuntrar i synnerhet skolor att delta i initiativet i den <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">digitala utbildningsplanen</a>.</p>',
     'schools-title' => 'Skolor',
     'schools-text' =>
         '<p>Skolor på alla nivåer och lärare i alla ämnen är särskilt inbjudna att delta i EU Code Week så att eleverna får en möjlighet att utforska digital kreativitet och kodning. Läs mer om initiativet och om hur du kan organisera en aktivitet på webbsidan för lärare: <a href="/schools">CodeWeek.eu/Schools</a></p>',

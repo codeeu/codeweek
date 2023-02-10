@@ -67,7 +67,7 @@
                         <a href="">@lang('remote-teaching.tips.points.4.2')</a>
                         @lang('remote-teaching.tips.points.4.3')
                         <a href="https://scratch.mit.edu/">Scratch</a>,
-                        <a href="appinventor.mit.edu/">App Inventor</a>,
+                        <a href="https://appinventor.mit.edu/">App Inventor</a>,
                         <a href="https://code.org/">Code.org</a>,
                         <a href="https://earsketch.gatech.edu/landing/#/">EarSketch</a>,
                         <a href="https://sonic-pi.net/">Sonic Pi</a>,

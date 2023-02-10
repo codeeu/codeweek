@@ -24,7 +24,7 @@ return [
                         Komisioni Evropian mbështet EU Code Week, si pjesë e strategjisë së tij për
                         një <a href="http://ec.europa.eu/priorities/digital-single-market/">Treg të Përbashkët
                             Dixhital</a>. Në <a
-                                href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Planin
+                                href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">Planin
                             e masave të Edukimit Dixhital</a> Komisioni veçanërisht inkurajon shkollat
                         që të bëhen pjesë e nismës.</p>',
     'schools-title' => 'Shkollat',
