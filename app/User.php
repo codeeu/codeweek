@@ -189,6 +189,11 @@ class User extends Authenticatable
         return $this->hasMany('App\Event', 'creator_id');
     }
 
+    public function leadingTeacherEvents()
+    {
+        return $this->hasMany('App\Event', 'leading_teacher_id');
+    }
+
     public function schools()
     {
         return $this->belongsToMany('App\School');

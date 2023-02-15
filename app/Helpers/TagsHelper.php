@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Log;
 class TagsHelper
 {
 
+    public static function linkTagToLeadingTeacher(User $user, $tag): void
+    {
+        $tags = Tag::select("id")
+            ->where(DB::raw('lower(name)'), strtolower($tag))
+            ->get();
+
+        $user->tags()->sync($tags);
+
+    }
+
     public static function cleanTags()
     {
 
