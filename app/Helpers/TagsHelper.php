@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Log;
 class TagsHelper
 {
 
-    public static function linkTagToLeadingTeacher(User $user, $tag): void
+    public static function linkTagToLeadingTeacher(User $user): void
     {
         $tags = Tag::select("id")
-            ->where(DB::raw('lower(name)'), strtolower($tag))
+            ->where(DB::raw('lower(name)'), strtolower($user->tag))
             ->get();
 
         $user->tags()->sync($tags);
