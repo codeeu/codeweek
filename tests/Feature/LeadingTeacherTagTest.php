@@ -85,5 +85,33 @@ class LeadingTeacherTagTest extends TestCase
 
     }
 
+    /**
+     * @test
+     * @dataProvider provideTags
+     */
+    public function leading_teacher_tag_detection_is_using_the_name(string $tag)
+    {
+        $isabel = create('App\User', ['tag' => 'IT-ISABEL-123']);
+
+        //We have tags
+        create('App\Tag', ['name' => $tag]);
+
+        //We run a command
+        TagsHelper::linkTagToLeadingTeacher($isabel);
+
+        //Ensure LT owns the tag
+        $this->assertCount(1,$isabel->fresh()->tags);
+
+    }
+
+
+
+    public function provideTags() : array{
+        return [
+            ["it-isaBel-123"],
+            ["it-isaBel-231"],
+        ];
+    }
+
     // When we create an event with a LT tag, the experience is taken into account
 }
