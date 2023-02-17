@@ -75,7 +75,7 @@ return [
         'sl' => 'Slovenščina',
         'sv' => 'svenska',
         'tr' => 'Türkçe',
-        'ua'=> 'Український'
+        'ua'=> 'УКРАЇНСЬКА'
 
     ],
 
