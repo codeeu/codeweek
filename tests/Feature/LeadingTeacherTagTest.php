@@ -102,6 +102,18 @@ class LeadingTeacherTagTest extends TestCase
         //Ensure LT owns the tag
         $this->assertCount(1,$isabel->fresh()->tags);
 
+    }/**
+     * @test
+     * @dataProvider provideTags
+     */
+    public function tag_name_should_be_returned_from_exotic_tags(string $tag)
+    {
+        //We run a command
+        $found = TagsHelper::getNameInTag($tag);
+
+        //Ensure LT owns the tag
+        $this->assertEquals('ISABEL',strtoupper($found));
+
     }
 
 
@@ -110,6 +122,11 @@ class LeadingTeacherTagTest extends TestCase
         return [
             ["it-isaBel-123"],
             ["it-isaBel-231"],
+            ["it-231-isaBel"],
+            ["#coding@schools. #it-ISABEL-123"],
+            ["#Isabel-it-123"]
+
+
         ];
     }
 

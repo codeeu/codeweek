@@ -19,15 +19,14 @@ class TagsHelper
     /**
      * @return string
      */
-    private static function getNameInTag($tag): string{
+    public static function getNameInTag($tag): string{
         //Check for tag in the right order
+        print_r($tag);
         preg_match('/(.*)-(.*)-(\d+)\b/', $tag, $output_array);
-//        dd($output_array);
         if(!empty($output_array)){
             $sorted = array_values(Arr::sortDesc($output_array, function ($value) {
                 return strlen($value);
             }));
-            print_r($sorted);
             return $sorted[1];
         }
 
@@ -43,9 +42,6 @@ class TagsHelper
     {
 
         $name = self::getNameInTag($user->tag);
-
-//        dd($name);
-//        dd(strtolower($name));
 
         $tags = Tag::select("id")
             ->where('name', 'LIKE', '%'.$name.'%')
