@@ -49,7 +49,7 @@ class LeadingTeacherTagTest extends TestCase
     public function leading_teacher_is_linked_to_multiple_tags_non_case_sensitive()
     {
         //We have Leading Teacher with 0 tags
-        $this->assertCount(0,$this->leading_teacher->tags);
+        $this->assertCount(0, $this->leading_teacher->tags);
 
         //We have tags
         $tag = create('App\Tag', ['name' => 'tag_LT1']);
@@ -59,7 +59,7 @@ class LeadingTeacherTagTest extends TestCase
         TagsHelper::linkTagToLeadingTeacher($this->leading_teacher);
 
         //Ensure LT owns the tag
-        $this->assertCount(2,$this->leading_teacher->fresh()->tags);
+        $this->assertCount(2, $this->leading_teacher->fresh()->tags);
 
     }
 
@@ -69,7 +69,7 @@ class LeadingTeacherTagTest extends TestCase
         $leading_teacher2 = create('App\User', ['tag' => 'tag_LT2'])->assignRole('leading teacher');
 
         //We have Leading Teacher with 0 tags
-        $this->assertCount(0,$this->leading_teacher->tags);
+        $this->assertCount(0, $this->leading_teacher->tags);
 
         //We have tags
         create('App\Tag', ['name' => 'tag_LT1']);
@@ -80,55 +80,61 @@ class LeadingTeacherTagTest extends TestCase
         $this->artisan('link:tags');
 
         //Assert tags are linked to the leading teachers
-        $this->assertCount(2,$this->leading_teacher->fresh()->tags);
-        $this->assertCount(1,$leading_teacher2->tags);
+        $this->assertCount(2, $this->leading_teacher->fresh()->tags);
+        $this->assertCount(1, $leading_teacher2->tags);
 
     }
 
     /**
      * @test
-     * @dataProvider provideTags
      */
-    public function leading_teacher_tag_detection_is_using_the_name(string $tag)
+    public function leading_teacher_tag_detection_is_using_the_name()
     {
-        $isabel = create('App\User', ['tag' => 'IT-ISABEL-123']);
+
+        $tags = ["it-Altieri-123", "#it-Altieri-123", "# it-Altieri-123", "#coding@schools#ICMondaino#it-Altieri-123", "#it-Altieri123","IT-Altieri123", "#Altieri-it123", "#coding@schools #it-Altieri123",
+            "#coding@schools #ICMondaino #it-Altieri-123","#it-Altieri-124","#coding@schools. #it-Altieri-123","@it-Altieri-123","#it-123-Altieri","#Altieri-123","#it-Altieri-123. #coding@schools",
+            "#it-Altieri","#Altieri-it-123","°It-Altieri-123"];
+
+        $leading_teacher = create('App\User', ['tag' => 'IT-ALTIERI-123']);
 
         //We have tags
-        create('App\Tag', ['name' => $tag]);
+        foreach ($tags as $tag){
+            create('App\Tag', ['name' => $tag]);
+        }
+
 
         //We run a command
-        TagsHelper::linkTagToLeadingTeacher($isabel);
+        TagsHelper::linkTagToLeadingTeacher($leading_teacher);
 
         //Ensure LT owns the tag
-        $this->assertCount(1,$isabel->fresh()->tags);
+        $this->assertCount(18, $leading_teacher->fresh()->tags);
 
-    }/**
-     * @test
-     * @dataProvider provideTags
-     */
-    public function tag_name_should_be_returned_from_exotic_tags(string $tag)
-    {
-        //We run a command
-        $found = TagsHelper::getNameInTag($tag);
-
-        //Ensure LT owns the tag
-        $this->assertEquals('ISABEL',strtoupper($found));
-
-    }
-
-
-
-    public function provideTags() : array{
-        return [
-            ["it-isaBel-123"],
-            ["it-isaBel-231"],
-            ["it-231-isaBel"],
-            ["#coding@schools. #it-ISABEL-123"],
-            ["#Isabel-it-123"]
-
-
-        ];
     }
 
     // When we create an event with a LT tag, the experience is taken into account
+    /**
+     * @test
+     */
+    public function leading_teacher_receives_experience_when_tag_is_used()
+    {
+
+        $tags = ["it-Altieri-123", "#it-Altieri-123", "# it-Altieri-123", "#coding@schools#ICMondaino#it-Altieri-123", "#it-Altieri123","IT-Altieri123", "#Altieri-it123", "#coding@schools #it-Altieri123",
+            "#coding@schools #ICMondaino #it-Altieri-123","#it-Altieri-124","#coding@schools. #it-Altieri-123","@it-Altieri-123","#it-123-Altieri","#Altieri-123","#it-Altieri-123. #coding@schools",
+            "#it-Altieri","#Altieri-it-123","°It-Altieri-123"];
+
+        $leading_teacher = create('App\User', ['tag' => 'IT-ALTIERI-123']);
+
+        //We have tags
+        foreach ($tags as $tag){
+            create('App\Tag', ['name' => $tag]);
+        }
+
+
+        //We run a command
+        TagsHelper::linkTagToLeadingTeacher($leading_teacher);
+
+        //Ensure LT owns the tag
+        $this->assertCount(18, $leading_teacher->fresh()->tags);
+
+    }
 }

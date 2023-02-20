@@ -14,37 +14,34 @@ use Illuminate\Support\Facades\Log;
 class TagsHelper
 {
 
-
-
     /**
      * @return string
      */
-    public static function getNameInTag($tag): string{
+    public static function getNameInTag($tag): string
+    {
+
         //Check for tag in the right order
-        print_r($tag);
-        preg_match('/(.*)-(.*)-(\d+)\b/', $tag, $output_array);
-        if(!empty($output_array)){
+        preg_match('/(.*)-(.*)-(.*)\b/', $tag, $output_array);
+        if (!empty($output_array)) {
             $sorted = array_values(Arr::sortDesc($output_array, function ($value) {
                 return strlen($value);
             }));
             return $sorted[1];
         }
 
+
         // Return default tag if no match found
         return $tag;
-
-
-
 
     }
 
     public static function linkTagToLeadingTeacher(User $user): void
     {
-
+        print_r($user);
         $name = self::getNameInTag($user->tag);
 
         $tags = Tag::select("id")
-            ->where('name', 'LIKE', '%'.$name.'%')
+            ->where('name', 'LIKE', '%' . $name . '%')
             ->get();
 
 //        dd($tags);
@@ -68,12 +65,6 @@ class TagsHelper
             ->having('count(id)', '>', 1)
             ->groupBy('name')
             ->get();
-
-
-
-
-
-
 
 
         // For each tag, get the ids.
