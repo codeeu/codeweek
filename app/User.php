@@ -4,6 +4,7 @@ namespace App;
 
 use App\Achievements\Achievement;
 use App\Helpers\EventHelper;
+use App\Helpers\TagsHelper;
 use Attribute;
 use Carbon\Carbon;
 use DB;
@@ -398,8 +399,13 @@ class User extends Authenticatable
 
         if (is_null($this->tag)) return 0;
 
-        $query = DB::table('events')
-            ->where('codeweek_for_all_participation_code', '=', $this->tag)
+        $nameInTag = TagsHelper::getNameInTag($this->tag);
+
+//        dd(Tag::where('name',$this->tag)->count());
+
+        $query = Event::whereHas('tags', function ($q) {
+            $q->where('name', 'LIKE', $this->tag);
+        })
             ->where('status', "=", "APPROVED")
             ->where('creator_id', '<>', $this->id)
             ->whereNull('deleted_at');
@@ -407,7 +413,6 @@ class User extends Authenticatable
         if (!is_null($edition)) {
             $query->whereYear('created_at', '=', $edition);
         }
-
 
         return $query->count() * 2;
     }

@@ -33,7 +33,7 @@ class LinkTagsToLeadingTeachers extends Command
     public function handle()
     {
         //Get all the leading teachers
-        User::role("leading teacher")->chunk(100, function($users, $index){
+        User::role("leading teacher")->whereNotNull('tag')->chunk(100, function($users, $index){
 
             $this->reportProgress($index);
             $users->each(function($user){
