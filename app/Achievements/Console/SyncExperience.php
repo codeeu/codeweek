@@ -30,7 +30,7 @@ class SyncExperience extends Command
     public function handle()
     {
 
-        User::role("leading teacher")->chunk(100, function($users, $index){
+        User::role("leading teacher")->chunk(10, function($users, $index){
             $this->reportProgress($index);
             $users->each(function($user){
                 for ($year = 2018; $year <= Carbon::now()->year; $year++ ){
@@ -48,8 +48,8 @@ class SyncExperience extends Command
      */
     protected function reportProgress($index): void
     {
-        $from = ($index - 1) * 100;
-        $to = ($index - 1) * 100 + 100;
+        $from = ($index - 1) * 10;
+        $to = ($index - 1) * 10 + 10;
         $this->info("Syncing points for users {$from} - {$to}");
     }
 }

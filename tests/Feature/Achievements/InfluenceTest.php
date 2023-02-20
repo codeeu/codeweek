@@ -43,6 +43,35 @@ class InfluenceTest extends TestCase
 
     }
 
+    // When we create an event with a LT tag, the experience is taken into account
+    /**
+     * @test
+     */
+    public function leading_teacher_receives_experience_when_event_is_approved()
+    {
+
+        $tag = create('App\Tag', ['name' => 'testme']);
+
+        $leading_teacher = create('App\User', ['tag' => 'IT-TESTME-123']);
+
+        $event = create('App\Event', [
+            'status' => 'PENDING',
+            'created_at' => Carbon::now()->setYear(2022)
+        ]);
+
+        $event->tags()->attach($tag);
+
+
+
+        $this->assertEquals(0, $leading_teacher->influence(2022));
+
+        $event->update(['status' => 'APPROVED']);
+
+        $this->assertEquals(2, $leading_teacher->fresh()->influence(2022));
+
+
+    }
+
 
 
 

@@ -37,11 +37,12 @@ class LinkTagsToLeadingTeachers extends Command
 
             $this->reportProgress($index);
             $users->each(function($user){
+                //For each LT, link the tags
                 TagsHelper::linkTagToLeadingTeacher($user);
 
             });
         });
-        //For each LT, link the tags
+
 
 
     }
@@ -53,6 +54,6 @@ class LinkTagsToLeadingTeachers extends Command
     {
         $from = ($index - 1) * $this->step;
         $to = ($index - 1) * $this->step + $this->step;
-        $this->info("Extracting Locations from events {$from} - {$to}");
+        $this->info("Linking Leading Teachers with Tags {$from} - {$to}");
     }
 }

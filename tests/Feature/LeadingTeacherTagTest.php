@@ -111,7 +111,7 @@ class LeadingTeacherTagTest extends TestCase
 
     }
 
-    // When we create an event with a LT tag, the experience is taken into account
+
     /**
      * @test
      */
@@ -137,4 +137,6 @@ class LeadingTeacherTagTest extends TestCase
         $this->assertCount(18, $leading_teacher->fresh()->tags);
 
     }
+
+
 }
