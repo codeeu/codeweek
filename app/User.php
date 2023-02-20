@@ -401,10 +401,8 @@ class User extends Authenticatable
 
         $nameInTag = TagsHelper::getNameInTag($this->tag);
 
-//        dd(Tag::where('name',$this->tag)->count());
-
-        $query = Event::whereHas('tags', function ($q) {
-            $q->where('name', 'LIKE', $this->tag);
+        $query = Event::whereHas('tags', function ($q) use ($nameInTag) {
+            $q->where('name', 'LIKE', "%$nameInTag%");
         })
             ->where('status', "=", "APPROVED")
             ->where('creator_id', '<>', $this->id)

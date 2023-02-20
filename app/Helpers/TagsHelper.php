@@ -37,14 +37,11 @@ class TagsHelper
 
     public static function linkTagToLeadingTeacher(User $user): void
     {
-        print_r($user);
         $name = self::getNameInTag($user->tag);
 
         $tags = Tag::select("id")
             ->where('name', 'LIKE', '%' . $name . '%')
             ->get();
-
-//        dd($tags);
 
         $user->tags()->sync($tags);
 
