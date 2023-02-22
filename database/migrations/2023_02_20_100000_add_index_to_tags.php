@@ -14,9 +14,9 @@ return new class extends Migration
     public function up()
     {
 
-        Schema::table('events', function(Blueprint $table)
+        Schema::table('tags', function(Blueprint $table)
         {
-            $table->integer('leading_teacher_id')->nullable();
+            $table->index('name');
         });
     }
 
@@ -27,9 +27,9 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('events', function (Blueprint $table)
+        Schema::table('tags', function (Blueprint $table)
         {
-            $table->dropColumn('leading_teacher_id');
+            $table->dropIndex(['name']);
         });
     }
 };
