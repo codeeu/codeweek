@@ -38,11 +38,9 @@ class EventObserver
 
         if (($event->status == "APPROVED") && ($event->getOriginal('status') == "PENDING")) {
             //Get LT based on Tag
-
-
             foreach ($event->tags as $tag) {
                 $name = TagsHelper::getNameInTag($tag->name);
-                $LT = User::firstWhere("tag", "LIKE", "%$name%");
+                $LT = User::firstWhere("tag", "LIKE", "%-$name-%");
                 if ($LT) {
                     $date = new Carbon($event->created_at);
                     $LT->awardExperience(2, $date->year);

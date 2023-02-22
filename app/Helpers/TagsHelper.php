@@ -19,7 +19,6 @@ class TagsHelper
      */
     public static function getNameInTag($tag): string
     {
-
         //Check for tag in the right order
         preg_match('/(.*)-(.*)-(.*)\b/', $tag, $output_array);
         if (!empty($output_array)) {
@@ -29,7 +28,6 @@ class TagsHelper
             return $sorted[1];
         }
 
-
         // Return default tag if no match found
         return $tag;
 
@@ -37,7 +35,9 @@ class TagsHelper
 
     public static function linkTagToLeadingTeacher(User $user): void
     {
+
         $name = self::getNameInTag($user->tag);
+
 
         $tags = Tag::select("id")
             ->where('name', 'LIKE', '%' . $name . '%')

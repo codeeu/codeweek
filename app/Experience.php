@@ -9,16 +9,18 @@ class Experience extends Model
 {
     protected $guarded = [];
 
-    public function user(){
-        return $this->belongsTo('App\User','user_id','id');
+    public function user()
+    {
+        return $this->belongsTo('App\User', 'user_id', 'id');
     }
 
     public function awardExperience($points)
     {
         $this->increment('points', $points);
 
-        UserEarnedExperience::dispatch($this->user, $points, $this->points);
+        if (app()->runningInConsole() && !app()->runningUnitTests()) return $this;
 
+        UserEarnedExperience::dispatch($this->user, $points, $this->points);
         return $this;
     }
 

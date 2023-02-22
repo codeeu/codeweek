@@ -50,7 +50,7 @@ class InfluenceTest extends TestCase
     public function leading_teacher_receives_experience_when_event_is_approved()
     {
 
-        $tag = create('App\Tag', ['name' => 'testme']);
+        $tag = create('App\Tag', ['name' => 'TI-testme-234']);
 
         $leading_teacher = create('App\User', ['tag' => 'IT-TESTME-123']);
 
@@ -60,7 +60,6 @@ class InfluenceTest extends TestCase
         ]);
 
         $event->tags()->attach($tag);
-
 
 
         $this->assertEquals(0, $leading_teacher->influence(2022));
