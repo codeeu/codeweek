@@ -15,6 +15,7 @@ return [
     ],
     'howto' => [
         'title' => 'Kako sudjelovati?',
+        'time' => 'Izazov Code Week 4 All challenge traje do kraja kalendarske godine. Potvrde će se izdati početkom sljedeće godine, u siječnju ili veljači.',
         'content' => 'Posjetite stranicu <a href="/add">Dodaj događanje</a> i unesite potrebne pojedinosti o vašoj aktivnosti programiranja.',
         'first_alliance' => [
             'title' => 'Ako ste prvi u svojem savezu:',

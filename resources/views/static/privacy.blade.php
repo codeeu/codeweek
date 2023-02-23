@@ -73,7 +73,7 @@
 
             <h3 id="header-6"><strong>6. @lang('privacy-statement.6-protect_data.title')</strong></h3>
             <p>@lang('privacy-statement.6-protect_data.items.0') <a
-                        href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1548093747090&uri=CELEX:32017D0046">@lang('privacy-statement.6-protect_data.items.1')</a>@lang('privacy-statement.6-protect_data.items.2')</p>
+                        href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1548093747090&uri=CELEX:32017D0046">@lang('privacy-statement.6-protect_data.items.1')</a> @lang('privacy-statement.6-protect_data.items.2')</p>
             <p>@lang('privacy-statement.6-protect_data.items.3')</p>
 
             <h3 id="header-7"><strong>7. @lang('privacy-statement.7-access_data.title')</strong></h3>
@@ -108,7 +108,7 @@
 
             <h4>@lang('privacy-statement.9-contact.data-controller.title')</h4>
             <p>@lang('privacy-statement.9-contact.data-controller.text') <a
-                        href="mailto:CNECT-F4@ec.europa.eu">CNECT-F4@ec.europa.eu</a>.</p>
+                        href="mailto:CNECT-G2@ec.europa.eu">CNECT-G2@ec.europa.eu</a>.</p>
 
             <h4>@lang('privacy-statement.9-contact.data-protection-officer.title')</h4>
             <p>

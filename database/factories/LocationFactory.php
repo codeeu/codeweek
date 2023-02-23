@@ -11,7 +11,7 @@ $factory->define(Location::class, function (Faker $faker) {
 
     return [
         'geoposition' => $faker->randomFloat() . ',' . $faker->randomFloat(),
-        'trimmed_geoposition' => $faker->text(10),
+        'trimmed_geoposition' => $faker->randomFloat() . ',' . $faker->randomFloat(),
         'latitude' => $faker->randomFloat(),
         'longitude' => $faker->randomFloat(),
         'location' => $faker->address,

@@ -15,6 +15,7 @@ return [
     ],
     'howto' => [
         'title' => 'Kaip dalyvauti?',
+        'time' => 'Iššūkis „Code Week 4 All“ vyksta iki kalendorinių metų pabaigos. Pažymėjimai bus išduodami kitų metų sausio arba vasario mėn.',
         'content' => 'Apsilankykite puslapyje <a href="/add">„Pridėti renginį“</a> ir užpildykite reikiamą informaciją apie savo programavimo renginį.',
         'first_alliance' => [
             'title' => 'Jeigu esate pirmasis savo aljanse:',

@@ -1,112 +1,119 @@
 <?php
+
 return [
     "common" => [
-        "resources" => "Ressources dont vous aurez besoin",
-        "soundtrack" => "La bande-son de la semaine du code",
-        "moves"=> "Les mouvements",
-        "dance-example" => "Un exemple de la danse de la semaine du code",
-        "organizer-guide" => "Guide de l'organisateur"
+        "resources" => "Ресурси, що знадобляться вам",
+        "soundtrack" => "Саундтрек Тижня кодування",
+        "moves" => "Рухи",
+        "dance-example" => "Приклад танцю Тижня кодування",
+        "organizer-guide" => "інструкція організатора",
+        "scratch-tutorial" => "Посібник #CodeWeekDance Scratch"
     ],
 
+
     "dance" => [
-        "title" => "La danse de la semaine du code",
-        "subtitle" => "Qui a dit que les programmeurs ne savaient pas danser? Pour célébrer l’édition 2020 de la semaine du code, nous lançons une nouvelle activité: le challenge #CodeWeekDance",
+        "title" => "Танець Тижня кодування",
+        "subtitle" => "Хто сказав, що програмісти не вміють танцювати? ",
         "section1" => [
-            "title" => "Qui peut participer?",
+            "title" => "Хто може долучитися?",
             "content" => [
-                "Toutes les écoles, les enseignants, les bibliothèques, les clubs de codage, les entreprises et les pouvoirs publics sont invités à célébrer la semaine européenne du code 2020 en organisant une activité #CodeWeekDance et en l’ajoutant à la",
-                "carte de la semaine du code",
+                "Усі школи, усіх вчителів, усі бібліотеки, клуби кодування, бізнес та публічні органи запрошують відзначити Тиждень кодування ЄС 2020, організувавши захід #CodeWeekDance та додавши його на",
+                "карту Тижня кодування",
             ]
         ],
         "section2" => [
-            "title" => "Comment participer?",
-            "content" => "Choisissez parmi cinq types d’activités ou proposez votre propre activité. Quelle que soit l’activité choisie, n’oubliez pas de l’ajouter à notre carte"
+            "title" => "Як взяти участь?",
+            "content" => "Виберіть щось із п'яти видів заходів або приходьте зі своїм. Який захід ви б не вибрали, не забудьте додати його на нашу карту"
         ],
         "activity1" => [
-            "title" => "Programmez un ami ou un parent — pas besoin d’ordinateur",
-            "subtitle" => "Le codage vous permet de commander un appareil électronique. Mais en théorie, vous n’avez pas besoin d’un ordinateur pour coder. En lieu et place, prenez un partenaire (il peut s’agir d’un copain de classe, d’un ami, d’un parent ou même d’un professeur) et expliquez-lui quoi faire pour la #CodeWeekDance: il devra suivre vos instructions à la lettre",
+            "title" => "Запрограмуйте друга або батьків без комп’ютера",
+            "subtitle" => "Кодування дозволяє вам віддавати команди електронному пристрою. Та технічно вам не потрібен комп’ютер для кодування. Долучайте близьку людину — однокласника, друга, батьків або навіть вчителя — та ознайомте її з інструкціями з виконання #CodeWeekDance, яких необхідно суворо дотримуватися",
             "resources" => [
-                "Un guide réalisé par Code.org pour organiser votre challenge",
-                "Un tutoriel de programmation de votre robot humain",
+                "Посібник від Code.org для організування своєї танцювальної вечірки без ґаджетів",
+                "Навчальний біт про програмування власного робота-людини",
 
             ]
         ],
 
         "activity2" => [
-            "title" => "Programmation visuelle",
-            "subtitle" => "Codez votre danse de la semaine du code avec Scratch. Utilisez les personnages de la semaine du code ou créez vos propres personnages dans Scratch et programmez-les pour la #CodeWeekDance.",
+            "title" => "Візуальне програмування",
+            "subtitle" => "Закодуй власний танець Тижня кодування в Scratch. Використовуйте персонажів Тижня кодування або створіть власних персонажів в Scratch та запрограмуйте на виконання #CodeWeekDance",
             "resources" => [
-                "Exemple de projet Scratch #CodeWeekDance",
-                "Les personnages de la semaine du code",
-                "Guide de Code.org sur la manière d’animer un personnage",
-                "Guide réalisé par Code.org pour organiser votre challenge",
-                "Partagez votre projet avec nous dans ce studio Scratch."
+                "Приклад проекту #CodeWeekDance в Scratch",
+                "Персонажі Тижня кодування",
+                "Посібник від Code.org про анімування персонажа",
+                "Посібник від  Code.org для організування своєї танцювальної вечірки",
+                "Поділіться своїм проектом з нами в Scratch Studio.",
             ]
         ], "activity3" => [
-            "title" => "Programmation textuelle",
-            "subtitle" => "Produire le thème de la #CodeWeekDance avec Python ou JavaScript, en utilisant des plateformes de création musicale basées sur des codes comme EarSketch ou Sonic Pi",
+            "title" => "Текстове програмування",
+            "subtitle" => "Створіть тему #CodeWeekDance на Python або JavaScript, використовуючи платформи для створення музики на основі коду, наприклад, EarSketch або Sonic Pi",
             "resources" => [
-                "Tutoriel sur la manière de produire de la musique avec EarSketch",
-                "Tutoriel sur la manière de créer de la musique avec Sonic Pi",
+                "Посібник про створення музики з EarSketch",
+                "Посібник про створення музики з Sonic Pi",
 
             ]
         ],
         "activity4" => [
-            "title" => "Robotique",
-            "subtitle" => "Programmez votre robot pour qu’il effectue la danse de la semaine du code en suivant vos instructions",
+            "title" => "Робототехніка",
+            "subtitle" => "Запрограмуйте свого робота на дотримання ваших інструкцій та виконання танцю Тижня кодування",
             "resources" => [
-                "Tutoriel sur la programmation des robots",
+                "Посібник про програмування роботів",
             ]
         ], "activity5" => [
-            "title" => "Live Dance Challenge",
-            "subtitle" => "Enregistrez une vidéo de vous-même, de votre équipe ou de votre robot en train de danser la #CodeWeekDance, partagez-la sur Instagram et tentez de devenir viral et de remporter des cadeaux! Intéressé(e)? Suivez ces étapes:",
+            "title" => "Виклик «Танцюй на живо»",
+            "subtitle" => "Запишіть відео, як ви, ваша команда або ваш робот виконують #CodeWeekDance, поділіться ним в Instagram і спробуйте виграти призи від Тижня кодування! Цікаво? Дотримуйтеся таких інструкцій:",
             "resources" => [
-                "Enregistrez la vidéo en utilisant Instagram Stories",
-                "Suivez",
-                "@CodeWeekEU sur Instagram",
-                "Mentionnez @CodeWeekEU dans votre story avec la danse et utilisez le hashtag #CodeWeekDance",
+                "Запишіть відео в Instagram Stories",
+                "Стежте за",
+                "@CodeWeekEU в Instagram",
+                "Згадайте @CodeWeekEU у своїй історії з танцем та не забудьте поставити гештеґ #CodeWeekDance",
             ]
         ],
         "outro" => [
-            "Les gagnants seront sélectionnés tous les jours et annoncés sur notre chaîne Instagram via Stories. Alors, n’oubliez pas de vérifier régulièrement vos notifications: aujourd’hui est peut-être votre jour de chance",
-            "La #CodeWeekDance s’inspire de",
-            "Ode to Code",
-            "composé par Brendan Paolini et de la danse développée par Bianca Maria Berardi en 2015, sur une idée d’Alessandro Bogliolo, professeur de systèmes informatiques à l’université d’Urbino"
+            "Переможців обиратимуть щодня та оголошуватимуть на нашому каналі Instagram через Stories. Тож не забувайте регулярно перевіряти свої повідомлення, можливо, сьогодні вам пощастить",
+            "Подію #CodeWeekDance створено на основі",
+            "«Оди коду»",
+            ", яку написав Брендан Паоліні, і танцю, який придумала Б’янка Марія Берарді в 2015 році, за ідеєю професора в галузі комп’ютерних систем Урбінського університету Алессандро Больйоло"
         ],
 
     ],
-    "treasure-hunt"=>[
-        "title"=>"Chasse aux trésors de la semaine du code",
-        "subtitle"=>[
-            "Ce jeu se joue sur Telegram accessible aux débutants, mais suffisamment difficile pour passionner les participants expérimentés",
-            "La chasse aux trésors de la semaine du code",
-            "est un jeu à jouer de préférence sur votre ordinateur avec un téléphone portable à la main. Le jeu vous demandera de résoudre des problèmes de codage et vous guidera dans l’histoire du codage, de l’informatique et des technologies en Europe"
+    "treasure-hunt" => [
+        "title" => "Полювання на скарби Тижня кодування",
+        "subtitle" => [
+            "Ця гра в Telegram є достатньо простою для початківців, але разом із тим не дає розслабитися досвідченим учасникам",
+            "Полювання на скарби Тижня кодування",
+            "— гра, яку найкраще грати на комп’ютері і з мобільним телефоном в руках. Завдання гри — здолати виклики кодування та дізнатися історію кодування, комп’ютерних наук і технологій у Європі"
         ],
         "section" => [
-            "title" => "Pour commencer à jouer, vous devez",
+            "title" => "Щоб розпочати гру, вам необхідно",
             "content" => [
-                "télécharger l’app Telegram. Elle est disponible pour",
-                "desktop",
-                "Vous pouvez jouer soit sur votre PC ou votre ordinateur portable, soit sur votre smartphone. Nous vous recommandons de jouer sur votre ordinateur afin que vous puissiez obtenir les instructions et résoudre les problèmes de codage dans l’app Telegram sur votre téléphone",
-                "Pour jouer",
-                "ouvrez le jeu",
-                "et scannez le code QR qui vous conduira à l’app Telegram et vous donnera la première série d’instructions",
-                "Pour gagner, vous devez résoudre 10 défis de codage et trouver 10 endroits sur la carte de l’Europe qui sont liés à l’essor du codage et des technologies",
-                "Après avoir terminé le jeu, partagez votre score avec vos amis en utilisant #CodeWeek et mettez-les au défi de jouer et d’apprendre l’histoire du codage. Voyons qui obtient les meilleurs résultats",
-                "La chasse aux trésors de la semaine du code est la version virtuelle de la chasse aux trésors mise au point pour la première fois par Alessandro Bogliolo, professeur de systèmes informatiques à l’université d’Urbino. Pour en savoir plus sur sa première version du jeu, visitez notre",
-                "blog"
+                "Звантажити застосунок Telegram. Він доступний для",
+                "настільних комп’ютерів",
+                "Гру можна грати на комп’ютері, ноутбуку або в смартфоні. Ми рекомендуємо грати гру на комп’ютері, а в застосунку Telegram у телефоні отримувати інструкції та долати виклики кодування",
+                "Щоб грати,",
+                "відкрийте гру",
+                "і відскануйте QR-код, за допомогою якого ви потрапите в Telegram і отримаєте перші інструкції",
+                "Щоб отримати перемогу, вам необхідно здолати 10 викликів кодування та знайти 10 місць на карті Європи, пов’язаних із виникненням кодування і технологій",
+                "Після завершення гри поділіться своїм результатом із друзями, використовуючи #CodeWeek, та запросіть їх зіграти і дізнатися історію кодування. Цікаво, хто отримає кращий результат",
+                "«Полювання на скарби Тижня кодування» — це віртуальна версія гри «Полювання на скарби Тижня кодування ЄС», що її розробив професор у галузі комп’ютерних систем Урбінського університету Алессандро Больйоло. Щоб дізнатися більше про гру-першоджерело, перейдіть у наш",
+                "блог"
 
             ]
         ],
     ],
 
-    "get-involved"=>[
-        "title"=>"Comment participer",
-        "subtitle"=>"Impatient de commencer à coder? Si vous souhaitez rejoindre la communauté de la semaine européenne du code mais que vous ne savez pas par où commencer, jetez un œil à ces ressources qui vous aideront à vous lancer juste à temps pour notre grande fête annuelle d’octobre",
-        "content"=>[
-            "L’ABC de la semaine du code",
-            "Comment ajouter une activité",
-            "Modules d’apprentissage",
-            "Cours en ligne ouvert Deep Dive",
- "Coding@Home series"
-        ]] ];
+    "get-involved" => [
+        "title" => "Як долучитися",
+        "subtitle" => "Не можете дочекатися, щоб приступити до кодування? Якщо у вас є бажання долучитися до спільноти Тижня кодування ЄС, але ви не знаєте, із чого почати, то прогляньте ці ресурси. Вони допоможуть вам розпочати — саме вчасно, аби встигнути взяти участь у щорічному святкуванні в жовтні",
+        "content" => [
+            "Знайомство з Тижнем кодування",
+            "Як додати захід Тижня кодування",
+            "Навчальні біти",
+            "Масовий відкритий онлайн-курс Deep Dive",
+            "Серія Coding@Home"
+        ]
+    ]
+
+
+];

@@ -99,7 +99,7 @@ return [
             'text' =>
                 '<p>Indien je je rechten op grond van Verordening (EU) 2018/1725 wilt uitoefenen, of indien je opmerkingen, vragen of bedenkingen hebt, of indien je een klacht wilt indienen betreffende de verzameling en het gebruik van je persoonsgegevens, neem dan contact op met de verwerkingsverantwoordelijke,</p>',
             'address' =>
-                'Directoraat-generaal Communicatienetwerken, Inhoud en Technologie Eenheid F4<br> Gebouw BU25<br> B-1049 Brussel<br>',
+                'Directoraat-generaal Communicatienetwerken, Inhoud en Technologie Eenheid G2<br> Gebouw BU25<br> B-1049 Brussel<br>',
             'email' => 'E-mail: '
         ],
         'data-protection-officer' => [

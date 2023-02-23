@@ -128,9 +128,13 @@ class ExperienceTest extends TestCase
 
         $user = create('App\User');
 
-        $LT1 = create('App\User', ['tag' => 'tag_LT1']);
+        $tag = create('App\Tag', ['name' => 'foo-test123-bar']);
 
-        $event = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null, 'codeweek_for_all_participation_code' => 'tag_LT1']);
+        $LT1 = create('App\User', ['tag' => 'FOO-TEST123-BAR']);
+
+        $event = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null]);
+
+        $event->tags()->attach($tag);
 
         $event->update([
             'status' => 'APPROVED'

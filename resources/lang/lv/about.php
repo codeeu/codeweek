@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        '2022. gadā ES programmēšanas nedēļa notiks no 8. līdz 23. oktobrim.',
+        '2023. gadā ES programmēšanas nedēļa notiks no 7. līdz 22. oktobrim.',
     'when-text' =>
         '<p>ES programmēšanas nedēļa ir iedzīvotāju kustība, kas veltīta radošumam, problēmu risināšanai un sadarbībai, izmantojot programmēšanu un citas tehnoloģiskas aktivitātes. Pamatideja ir padarīt programmēšanu populārāku, parādīt jauniešiem, pieaugušajiem un vecāka gadagājuma cilvēkiem, kā ar programmēšanas palīdzību īstenot idejas, kliedēt maldīgus priekšstatus par programmēšanas prasmēm un sapulcināt kopā motivētus cilvēkus, kuri vēlas tās apgūt.</p>',
     'codeweek_in_numbers-title' => 'Programmēšanas nedēļa skaitļos',
@@ -14,7 +14,7 @@ return [
         '<p>ES programmēšanas nedēļu vada brīvprātīgie. Viens vai vairāki <a href="/ambassadors">programmēšanas nedēļas vēstnieki</a> koordinē šo iniciatīvu savā valstī, bet ikviens var noorganizēt savu pasākumu un pievienot to <a href="/">codeweek.eu</a> kartē.</p>',
     'supported_by_commission-title' => 'Eiropas Komisijas atbalsts',
     'supported_by_commission-text' =>
-        '<p>ES programmēšanas nedēļas iniciatīvu 2013. gadā aizsāka Eiropas digitālās programmas jaunie padomdevēji. Eiropas Komisija atbalsta ES programmēšanas nedēļu <a href="http://ec.europa.eu/priorities/digital-single-market/">Digitālā vienotā tirgus</a> stratēģijas ietvaros. <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Digitālās izglītības rīcības plānā</a> Komisija īpaši mudina skolas pievienoties šai iniciatīvai.</p>',
+        '<p>ES programmēšanas nedēļas iniciatīvu 2013. gadā aizsāka Eiropas digitālās programmas jaunie padomdevēji. Eiropas Komisija atbalsta ES programmēšanas nedēļu <a href="http://ec.europa.eu/priorities/digital-single-market/">Digitālā vienotā tirgus</a> stratēģijas ietvaros. <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">Digitālās izglītības rīcības plānā</a> Komisija īpaši mudina skolas pievienoties šai iniciatīvai.</p>',
     'schools-title' => 'Skolas',
     'schools-text' =>
         '<p>Visu līmeņu skolas un visu mācību priekšmetu skolotāji ir jo īpaši aicināti piedalīties ES programmēšanas nedēļā, lai saviem skolēniem sniegtu iespēju iepazīt digitālo radošumu un programmēšanu. Uzziniet vairāk par šo iniciatīvu un to, kā noorganizēt savu pasākumu, apmeklējot skolotājiem veltīto tīmekļa vietni: <a href="/schools">CodeWeek.eu/Schools</a></p>',

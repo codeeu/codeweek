@@ -9,7 +9,7 @@ return [
 
     'data-controller' => [
         'Data Controller',
-        'European Commission, Directorate‑General for Communications Networks, Content and Technology, Unit F.4.'
+        'European Commission, Directorate‑General for Communications Networks, Content and Technology, Unit G.2.'
     ],
     'record-reference' => 'Record reference',
     'table-of-contents' => 'Table of Contents',
@@ -49,10 +49,10 @@ return [
     '4-collect_data' => [
         'title' => 'Which personal data do we collect and further process?',
         'items' => [
-            'In order to <strong>carry out this processing operation</strong>, Unit F.4 collects the following categories of personal data:',
+            'In order to <strong>carry out this processing operation</strong>, Unit G.2 collects the following categories of personal data:',
             'Internet Protocol address (IP address) or the device ID of the device used to access the website.',
             'Without this processing you will not be able to establish a technical connection between your devices and the server infrastructure and therefore will not be able to access our website.',
-            'In order for you to <strong>authenticate on this website</strong>, Unit F.4 collects the following categories of personal data:',
+            'In order for you to <strong>authenticate on this website</strong>, Unit G.2 collects the following categories of personal data:',
             'E-mail address',
             'Password; or',
             'Social media authentication.'
@@ -61,7 +61,7 @@ return [
     '5-how_long' => [
         'title' => 'How long do we keep your personal data?',
         'items' => [
-            'Unit F.4 only keeps your personal data for the time necessary to fulfil the purpose of collection or further processing, namely for the duration of the browsing session. In addition, IP addresses might be saved for one year in the log files of the services for security reasons. As to the analytics tool, the IP address and the device ID (e.g. IMEI number and WIFI MAC address) are deleted immediately at disconnection.',
+            'Unit G.2 only keeps your personal data for the time necessary to fulfil the purpose of collection or further processing, namely for the duration of the browsing session. In addition, IP addresses might be saved for one year in the log files of the services for security reasons. As to the analytics tool, the IP address and the device ID (e.g. IMEI number and WIFI MAC address) are deleted immediately at disconnection.',
 
 
         ]
@@ -90,7 +90,7 @@ return [
         'items' => [
             'You have specific rights as a ‘data subject’ under Chapter III (Articles 14-25) of Regulation (EU) 2018/1725, in particular the right to access, rectify or erase your personal data and the right to restrict the processing of your personal data. Where applicable, you also have the right to object to the processing or the right to data portability.',
             'You have the right to object to the processing of your personal data, which is lawfully carried out pursuant to Article 5(1)(a).',
-            'You have consented to provide your personal data for the present processing operation. You can withdraw your consent at any time by notifying Unit F.4. The withdrawal will not affect the lawfulness of the processing carried out before you withdrew your consent.',
+            'You have consented to provide your personal data for the present processing operation. You can withdraw your consent at any time by notifying Unit G.2. The withdrawal will not affect the lawfulness of the processing carried out before you withdrew your consent.',
             'You can exercise your rights by contacting the Data Controller, or in case of conflict the Data Protection Officer. If necessary, you can also address the European Data Protection Supervisor. Their contact information is given under Heading 9 below.',
             'Where you wish to exercise your rights in the context of one or several specific processing operations, please provide their description (i.e. their Record reference(s) as specified under Heading 10 below) in your request.'
         ]
@@ -99,7 +99,7 @@ return [
         'title' => 'Contact information',
         'data-controller' => [
             'title' => 'The Data Controller',
-            'text' =>  'If you would like to exercise your rights under Regulation (EU) 2018/1725, or if you have comments, questions or concerns, or if you would like to submit a complaint regarding the collection and use of your personal data, please feel free to contact the Data Controller, Unit F.4, European Commission,at'
+            'text' =>  'If you would like to exercise your rights under Regulation (EU) 2018/1725, or if you have comments, questions or concerns, or if you would like to submit a complaint regarding the collection and use of your personal data, please feel free to contact the Data Controller, Unit G.2, European Commission,at'
 
         ],
         'data-protection-officer' => [

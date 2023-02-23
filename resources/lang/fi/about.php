@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'Vuonna 2022 EU:n koodausviikko järjestetään 8.– 23. lokakuuta.',
+        'Vuonna 2023 EU:n koodausviikko järjestetään 7.– 22. lokakuuta.',
     'when-text' =>
         '<p>EU:n koodausviikko on ruohonjuuritason hanke, jolla edistetään luovuutta, ongelmanratkaisukykyä ja yhteistyötä ohjelmoinnin ja muiden tekniikan alan tapahtumien kautta. Ajatuksena on tehdä ohjelmointia tunnetuksi ja näyttää nuorille, aikuisille ja senioreille, miten ideat voidaan herättää henkiin koodin avulla. Tavoitteena on myös hälventää koodaukseen kohdistuvaa mystiikkaa ja tuoda motivoituneet ihmiset oppimaan yhdessä.</p>',
     'codeweek_in_numbers-title' => 'Koodausviikko lukuina',
@@ -14,7 +14,7 @@ return [
         '<p>EU:n koodausviikon toiminnasta vastaavat vapaaehtoiset. Yksi tai useampi <a href="/ambassadors">koodausviikkolähettiläs</a> koordinoi aloitetta omassa maassaan, mutta kuka tahansa voi järjestää oman tapahtuman ja merkitä sen <a href="/">codeweek.eu</a>-karttaan.</p>',
     'supported_by_commission-title' => 'Euroopan komission tukema aloite',
     'supported_by_commission-text' =>
-        '<p>EU:n koodausviikon käynnistivät vuonna 2013 Euroopan digitaalistrategian nuoret neuvonantajat. Euroopan komissio tukee EU:n koodausviikkoa osana <a href="http://ec.europa.eu/priorities/digital-single-market/">digitaalisten sisämarkkinoiden</a> strategiaansa. <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Digitaalisen koulutuksen toimintasuunnitelmassa</a> komissio kannustaa erityisesti kouluja osallistumaan aloitteeseen.</p>',
+        '<p>EU:n koodausviikon käynnistivät vuonna 2013 Euroopan digitaalistrategian nuoret neuvonantajat. Euroopan komissio tukee EU:n koodausviikkoa osana <a href="http://ec.europa.eu/priorities/digital-single-market/">digitaalisten sisämarkkinoiden</a> strategiaansa. <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">Digitaalisen koulutuksen toimintasuunnitelmassa</a> komissio kannustaa erityisesti kouluja osallistumaan aloitteeseen.</p>',
     'schools-title' => 'Koulut',
     'schools-text' =>
         '<p>Kaikkien kouluasteiden kouluja ja kaikkien aineiden opettajia kannustetaan osallistumaan EU:n koodausviikkoon, jotta oppilailla ja opiskelijoilla on mahdollisuus kokeilla digitaalista luovuutta ja koodausta. Lue lisää aloitteesta ja oman tapahtuman järjestämisestä opettajille tarkoitetulta verkkosivustolta: <a href="/schools">CodeWeek.eu/Schools</a></p>',

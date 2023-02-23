@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'Për vitin 2022, EU Code Week do të zhvillohet mes datave 8 dhe 23 tetor.',
+        'Për vitin 2023, EU Code Week do të zhvillohet mes datave 7 dhe 22 tetor.',
     'when-text' => '<p>EU Code Week është një lëvizje në terren që feston aftësinë
                         krijuese, zgjidhjen e problemeve dhe bashkëpunimin përmes programimit dhe aktiviteteve
                         të tjera teknologjike. Ideja është që programimi të bëhet më
@@ -24,7 +24,7 @@ return [
                         Komisioni Evropian mbështet EU Code Week, si pjesë e strategjisë së tij për
                         një <a href="http://ec.europa.eu/priorities/digital-single-market/">Treg të Përbashkët
                             Dixhital</a>. Në <a
-                                href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Planin
+                                href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">Planin
                             e masave të Edukimit Dixhital</a> Komisioni veçanërisht inkurajon shkollat
                         që të bëhen pjesë e nismës.</p>',
     'schools-title' => 'Shkollat',

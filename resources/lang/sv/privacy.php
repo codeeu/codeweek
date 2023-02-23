@@ -99,7 +99,7 @@ return [
             'text' =>
                 '<p>Om du skulle vilja utöva dina rättigheter i enlighet med förordning (EU) 2018/1725 eller om du har kommentarer, frågor eller problem eller om du vill lämna in ett klagomål rörande insamlingen och användningen av dina personuppgifter, får du gärna kontakta den personuppgiftsansvarige.</p>',
             'address' =>
-                'Directorate-General for Communications Networks, Content and Technology Unit F4<br> Building BU25<br> B-1049 Brussels<br> ',
+                'Directorate-General for Communications Networks, Content and Technology Unit G2<br> Building BU25<br> B-1049 Brussels<br> ',
             'email' => 'Email: '
         ],
         'data-protection-officer' => [

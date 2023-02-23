@@ -18,6 +18,7 @@ use Illuminate\Support\Str;
 use Spatie\Activitylog\LogOptions;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Laravel\Nova\Actions\Actionable;
+use Stevebauman\Purify\Casts\PurifyHtmlOnGet;
 
 class Event extends Model
 {
@@ -61,7 +62,14 @@ class Event extends Model
         'activity_type',
         'picture_detail',
         'language',
-        'location_id'
+        'location_id',
+        'leading_teacher_id'
+    ];
+
+    protected $casts = [
+        'description' => PurifyHtmlOnGet::class,
+        'title' => PurifyHtmlOnGet::class,
+        'location' => PurifyHtmlOnGet::class,
     ];
 
 //    protected $policies = [
@@ -128,6 +136,11 @@ class Event extends Model
     public function owner()
     {
         return $this->belongsTo('App\User', 'creator_id');
+    }
+
+    public function leadingTeacher()
+    {
+        return $this->belongsTo('App\User', 'leading_teacher_id', 'id');
     }
 
     public function extractedLocation()

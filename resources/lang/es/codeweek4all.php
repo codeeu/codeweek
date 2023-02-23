@@ -15,6 +15,7 @@ return [
     ],
     'howto' => [
         'title' => '¿Cómo participar?',
+        'time' => 'El reto CodeWeek4All dura hasta que finalice el año natural. Los certificados se emitirán a principios del año que viene, en enero o febrero.',
         'content' => 'Visita la página <a href="/add">Añadir una actividad</a> y completa la información requerida de tu actividad de programación.',
         'first_alliance' => [
             'title' => 'Si eres la primera persona de la alianza:',

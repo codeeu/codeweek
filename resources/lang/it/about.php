@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'Nel 2022 la Settimana europea della programmazione si terrà dal 8 al 23 ottobre.',
+        'Nel 2023 la Settimana europea della programmazione si terrà dal 7 al 22 ottobre.',
     'when-text' =>
         '<p>La Settimana europea della programmazione è un evento che nasce dal basso e celebra la creatività, la risoluzione dei problemi e la collaborazione attraverso la programmazione e altre attività tecnologiche. L’idea è di rendere la programmazione più visibile, mostrare ai giovani, agli adulti e agli anziani come dare vita alle proprie idee con la programmazione, spiegare queste capacità e mettere insieme persone motivate per imparare.</p>',
     'codeweek_in_numbers-title' => 'Settimana della programmazione in numeri',
@@ -14,7 +14,7 @@ return [
         '<p>La Settimana europea della programmazione è gestita da volontari. Uno o più <a href="/ambassadors">ambasciatori della Settimana europea della programmazione</a> coordinano l’iniziativa nei loro paesi, ma ognuno può organizzare la propria attività e aggiungerla alla mappa di <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'Sostenuta dalla Commissione europea',
     'supported_by_commission-text' =>
-        '<p>La Settimana europea della programmazione è stata lanciata nel 2013 dai Young Advisors per l’agenda digitale europea. La Commissione europea sostiene la Settimana europea della programmazione nell’ambito della sua strategia per il <a href="http://ec.europa.eu/priorities/digital-single-market/">mercato unico digitale</a>. Nel <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">piano d’azione per l’istruzione digitale</a> la Commissione incoraggia soprattutto le scuole ad aderire all’iniziativa.</p>',
+        '<p>La Settimana europea della programmazione è stata lanciata nel 2013 dai Young Advisors per l’agenda digitale europea. La Commissione europea sostiene la Settimana europea della programmazione nell’ambito della sua strategia per il <a href="http://ec.europa.eu/priorities/digital-single-market/">mercato unico digitale</a>. Nel <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">piano d’azione per l’istruzione digitale</a> la Commissione incoraggia soprattutto le scuole ad aderire all’iniziativa.</p>',
     'schools-title' => 'Scuole',
     'schools-text' =>
         '<p>Le scuole di ogni livello e gli insegnanti di tutte le materie sono particolarmente invitati a partecipare alla Settimana europea della programmazione, per dare l’opportunità ai loro studenti di esplorare la creatività digitale e la programmazione. Per saperne di più sull’iniziativa e su come organizzare la tua attività, consulta la pagina web dedicata agli insegnanti: <a href="/schools">CodeWeek.eu/Schools</a></p>',

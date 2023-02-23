@@ -7,6 +7,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 use Laravel\Socialite\Facades\Socialite;
 
 class LoginController extends Controller
@@ -58,11 +60,11 @@ class LoginController extends Controller
      */
     public function handleProviderCallback($provider)
     {
-        if ('twitter' == $provider){
+//        if ('twitter' == $provider){
             $socialUser = Socialite::driver($provider)->user();
-        } else{
-            $socialUser = Socialite::driver($provider)->stateless()->user();
-        }
+//        } else{
+//            $socialUser = Socialite::driver($provider)->stateless()->user();
+//        }
 
         $this->loginUser($provider, $socialUser);
 
@@ -79,6 +81,15 @@ class LoginController extends Controller
     {
         $user = \App\User::where(['email' => $socialUser->getEmail()])->first();
 
+        if (is_null($socialUser->getEmail())){
+//        if ($socialUser->getEmail() == 'alainvd@gmail.com'){
+            Log::info('Null email detected');
+            Log::info(print_r($socialUser, true));
+            $admin = config('codeweek.administrator');
+            Mail::to($admin)->send(new \App\Mail\WarningEmail(print_r($socialUser, true)));
+            abort(500);
+        }
+
         if ($user == null) {
             //Create user
             $user = \App\User::create(
@@ -93,6 +104,7 @@ class LoginController extends Controller
 
         } else {
             //update user
+            $user->provider = $provider;
             $user->updated_at = Carbon::now();
             $user->save();
         }

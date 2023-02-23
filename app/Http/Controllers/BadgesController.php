@@ -45,7 +45,8 @@ class BadgesController extends Controller
             ->where('experiences.year', '=', $year)
             ->orderByDesc('experiences.points')
             ->select('users.*')
-            ->paginate(50);
+            ->paginate(50)
+            ->withQueryString();
 
         //dd($users);
 
@@ -78,7 +79,6 @@ class BadgesController extends Controller
         $influencerBadges = $achievements->filter(function ($achievement) {
             return Str::contains(Str::lower($achievement->name), 'influencer');
         });
-
 
         $userAchievements = $user->achievements;
 

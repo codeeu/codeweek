@@ -41,7 +41,7 @@ class UserController extends Controller
         $user->delete();
         return redirect()
             ->route('login')
-            ->with('flash', 'Your event has been deleted!');
+            ->with('flash', 'Your user has been deleted!');
     }
 
     public static function getMainAccount($email)

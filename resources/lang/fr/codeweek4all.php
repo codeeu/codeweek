@@ -15,6 +15,7 @@ return [
     ],
     'howto' => [
         'title' => 'Comment participer?',
+        'time' => "Le défi Code Week 4 All dure jusqu'à la fin de l'année civile. Les certificats seront émis au début de l'année prochaine, en janvier ou février.",
         'content' => 'Rendez-vous sur la page <a href="/add">Ajouter une activité</a> et renseignez les détails requis de votre activité de codage.',
         'first_alliance' => [
             'title' => 'Si vous être le premier représentant de votre alliance:',

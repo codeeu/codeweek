@@ -15,6 +15,7 @@ return [
     ],
     'howto' => [
         'title' => 'Come partecipare?',
+        'time' => 'La sfida Code Week 4 All durerà fino alla fine dell’anno. I cerificati saranno rilasciati all’inizio dell’anno prossimo, tra gennaio e febbraio.',
         'content' => 'Visita la pagina <a href="/add">Aggiungi la tua attività</a> e inserisci le informazioni richieste sulla tua attività di programmazione.',
         'first_alliance' => [
             'title' => 'Se sei il primo della tua alleanza:',

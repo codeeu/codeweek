@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Log;
 
 /**
  * App\Country
@@ -57,7 +58,9 @@ class Country extends Model
             ->get()
             ->pluck('country_iso');
 
-        $countries = Country::findMany($isos);
+
+        $countries = Country::whereIn('iso',$isos)->get();
+
 
         foreach ($countries as $country) {
             $country->translation = __('countries.' . $country->name);

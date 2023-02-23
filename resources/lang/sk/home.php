@@ -3,7 +3,7 @@
 return [
     'about' =>
         'Európsky týždeň programovania je nezávislá iniciatíva, ktorej cieľom je priblížiť každému programovanie a digitálnu gramotnosť zábavnou a pútavou formou.',
-    'when' => '8. – 23. októbra 2022',
+    'when' => '7. – 22. októbra 2023',
     'when_text' =>
         'Keď sa naučíme programovať, pomôže nám to pochopiť svet okolo nás, ktorý sa rýchlo mení, rozšíriť si vedomosti o fungovaní technológií a rozvinúť si zručnosti a schopnosti, vďaka ktorým objavíme nové nápady a inovácie.',
     'school_banner_title' => 'Zapojte sa!',

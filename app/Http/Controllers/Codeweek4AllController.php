@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Log;
 
 class Codeweek4AllController extends Controller
 {
-    public function detail($code, $edition= 2021)
+    public function detail($code, $edition = 2022)
     {
 
         $result = Codeweek4AllHelper::getDetailsByCodeweek4All([$code],$edition)->first();

@@ -10,7 +10,7 @@ return [
         'data-controller' => [
             'title'=>'– Duomenų valdytojas',
             'text' => '<p>Jei norėtumėte pasinaudoti savo teisėmis pagal Reglamentą (ES) 2018/1725, turite pastabų, klausimų ar abejonių arba norėtumėte pateikti skundą dėl jūsų asmens duomenų rinkimo ir naudojimo, nedvejodami susisiekite su duomenų valdytoju šiuo adresu: Data Controller</p>',
-            'address' => 'Directorate-General for Communications Networks, Content and Technology Unit F4<br> Building BU25<br> B-1049 Brussels<br> ',
+            'address' => 'Directorate-General for Communications Networks, Content and Technology Unit G2<br> Building BU25<br> B-1049 Brussels<br> ',
             'email' => 'El. paštas '
         ],
         'data-protection-officer' => [

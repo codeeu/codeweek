@@ -25,9 +25,13 @@ class TagImpactTest extends TestCase
 
         $user = auth()->user();
 
-        $LT1 = create('App\User', ['tag' => 'tag_LT1']);
+        $tag = create('App\Tag', ['name' => 'foo-test123-bar']);
 
-        $fifty_events = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null, 'codeweek_for_all_participation_code' => 'tag_LT1'], 50);
+        $LT1 = create('App\User', ['tag' => 'foo-TEST123-bar']);
+
+        $fifty_events = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null], 50);
+
+        $tag->events()->attach($fifty_events);
 
         $this->assertCount(0, $user->achievements);
 

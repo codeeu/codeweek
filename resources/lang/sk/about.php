@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'V roku 2022 sa Európsky týždeň programovania koná od 8. do 23. októbra.',
+        'V roku 2023 sa Európsky týždeň programovania koná od 7. do 22. októbra.',
     'when-text' =>
         '<p>Európsky týždeň programovania je nezávislé hnutie, ktoré oslavuje tvorivosť, riešenie problémov a spoluprácu prostredníctvom programovania a ďalších technologických aktivít. Zámerom je viac zviditeľniť programovanie, ukázať mladým, dospelým a starším ľuďom, ako vdýchnuť život nápadom pomocou programovania, rúcať mýty o týchto zručnostiach a spojiť motivovaných ľudí, aby sa spolu vzdelávali.</p>',
     'codeweek_in_numbers-title' => 'Týždeň programovania v číslach',
@@ -14,7 +14,7 @@ return [
         '<p>Európsky týždeň programovania organizujú dobrovoľníci. Jeden či niekoľkí <a href="/ambassadors">veľvyslanci Týždňa programovania</a> koordinujú iniciatívu vo svojej vlasti, no ktokoľvek môže usporiadať vlastnú programátorskú aktivitu a pridať ju na mapu na stránke <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'S podporou Európskej komisie',
     'supported_by_commission-text' =>
-        '<p>Európsky týždeň programovania rozprúdili v roku 2013 mladí poradcovia pre Digitálnu agendu Európy. Európska komisia podporuje Európsky týždeň programovania v rámci svojej stratégie v oblasti <a href="http://ec.europa.eu/priorities/digital-single-market/">jednotného digitálneho trhu</a>. V <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">akčnom pláne digitálneho vzdelávania</a> Komisia osobitne školy podnecuje, aby sa zapojili do tejto iniciatívy.</p>',
+        '<p>Európsky týždeň programovania rozprúdili v roku 2013 mladí poradcovia pre Digitálnu agendu Európy. Európska komisia podporuje Európsky týždeň programovania v rámci svojej stratégie v oblasti <a href="http://ec.europa.eu/priorities/digital-single-market/">jednotného digitálneho trhu</a>. V <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">akčnom pláne digitálneho vzdelávania</a> Komisia osobitne školy podnecuje, aby sa zapojili do tejto iniciatívy.</p>',
     'schools-title' => 'Školy',
     'schools-text' =>
         '<p>Školy na všetkých úrovniach a učitelia všetkých predmetov sú osobitne vyzvaní, aby sa zapojili do Európskeho týždňa programovania, čo umožní ich študentom zoznámiť sa s digitálnou tvorivosťou a programovaním. Ďalšie informácie o iniciatíve a návod na usporiadanie aktivity nájdete na našej webovej stránke pre učiteľov: <a href="/schools">CodeWeek.eu/Schools</a></p>',

@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'De EU-programmeerweek van 2022 vindt plaats van 8 t/m 23 oktober.',
+        'De EU-programmeerweek van 2023 vindt plaats van 7 t/m 22 oktober.',
     'when-text' =>
         '<p>De EU-programmeerweek is een burgerinitiatief waarin creativiteit, probleemoplossing en samenwerking worden gestimuleerd door middel van programmeren en andere technische activiteiten. Het idee erachter is om programmeren zichtbaarder te maken, om jongeren, volwassenen en ouderen te laten zien hoe je ideeën met programmeercode tot leven kunt brengen, om deze vaardigheden te ontsluieren en om gemotiveerde mensen bij elkaar te brengen om te leren.</p>',
     'codeweek_in_numbers-title' => 'De programmeerweek in cijfers',
@@ -14,7 +14,7 @@ return [
         '<p>De EU-programmeerweek wordt georganiseerd door vrijwilligers. Een of meer <a href="/ambassadors">ambassadeurs van de programmeerweek</a> coördineren het initiatief in hun land, maar daarnaast kan iedereen zelf een activiteit organiseren en dat op de kaart zetten op <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'Ondersteund door de Europese commissie',
     'supported_by_commission-text' =>
-        '<p>De EU-programmeerweek werd in 2013 door de Young Advisors gelanceerd voor de digitale agenda van Europa. De Europese Commissie ondersteunt de EU-programmeerweek als onderdeel van de strategie voor een <a href="http://ec.europa.eu/priorities/digital-single-market/">digitale eengemaakte markt</a>. In het <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">actieplan voor digitaal onderwijs</a> moedigt de Commissie vooral scholen aan om mee te doen met het initiatief.</p>',
+        '<p>De EU-programmeerweek werd in 2013 door de Young Advisors gelanceerd voor de digitale agenda van Europa. De Europese Commissie ondersteunt de EU-programmeerweek als onderdeel van de strategie voor een <a href="http://ec.europa.eu/priorities/digital-single-market/">digitale eengemaakte markt</a>. In het <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">actieplan voor digitaal onderwijs</a> moedigt de Commissie vooral scholen aan om mee te doen met het initiatief.</p>',
     'schools-title' => 'Scholen',
     'schools-text' =>
         '<p>Scholen op elk niveau en leraren van alle vakken worden in het bijzonder uitgenodigd om mee te doen met de EU-programmeerweek, om hun leerlingen de kans te geven digitale creativiteit en programmeren te ontdekken. Kom meer te weten over het initiatief en over hoe je je activiteit organiseert op de speciale website voor leraren: <a href="/schools">CodeWeek.eu/Schools</a></p>',

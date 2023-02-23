@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'EU’s kodeuge 2022 finder sted mellem den 8. og 23. oktober.',
+        'EU’s kodeuge 2023 finder sted mellem den 7. og 22. oktober.',
     'when-text' =>
         '<p>EU’s kodeuge er en græsrodsbevægelse, der fejrer kreativitet, problemløsning og samarbejde gennem programmering og andre tekniske aktiviteter. Idéen er at gøre programmering mere synligt for at vise unge, voksne og ældre, hvordan man fører sine idéer ud i livet med kode, at afmystificere disse færdigheder og at samle motiverede mennesker i et læringsmiljø.</p>',
     'codeweek_in_numbers-title' => 'Kodeugen i tal',
@@ -14,7 +14,7 @@ return [
         '<p>EU’s kodeuge drives af frivillige. En eller flere <a href="/ambassadors">ambassadører for kodeugen</a> koordinerer initiativet i deres land, men alle kan afholde deres egne aktiviteter og sætte dem på kortet på <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'Støttet af Europa-Kommissionen',
     'supported_by_commission-text' =>
-        '<p>EU’s kodeuge blev startet i 2013 af Young Advisors for den digitale dagsorden for Europa. Europa-Kommissionen støtter EU’s kodeuge som en del af strategien for et <a href="http://ec.europa.eu/priorities/digital-single-market/">digitalt indre marked</a>. I <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">handlingsplanen for digital uddannelse</a> opfordrer Kommissionen især skoler til at deltage i initiativet.</p>',
+        '<p>EU’s kodeuge blev startet i 2013 af Young Advisors for den digitale dagsorden for Europa. Europa-Kommissionen støtter EU’s kodeuge som en del af strategien for et <a href="http://ec.europa.eu/priorities/digital-single-market/">digitalt indre marked</a>. I <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">handlingsplanen for digital uddannelse</a> opfordrer Kommissionen især skoler til at deltage i initiativet.</p>',
     'schools-title' => 'Skoler',
     'schools-text' =>
         '<p>Skoler på alle niveauer og lærere uanset fag er særligt velkomne til at deltage i EU’s kodeuge, så de kan give deres elever mulighed for at udforske digital kreativitet og kodning. Lær mere om initiativet og om, hvordan du afholder en aktivitet, på websiden for lærere: <a href="/schools">CodeWeek.eu/Schools</a></p>',

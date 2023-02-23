@@ -103,7 +103,7 @@ return [
             'text' =>
                 '<p>Pokud chcete využít svých práv vyplývajících z nařízení (EU) 2018/1725, pokud máte poznámky, otázky nebo obavy nebo pokud chcete zaslat stížnost týkající se shromažďování a používání vašich osobních údajů, kontaktujte správce údajů na adrese</p>',
             'address' =>
-                'Directorate-General for Communications Networks, Content and Technology Unit F4<br> Building BU25<br> B-1049 Brussels<br>',
+                'Directorate-General for Communications Networks, Content and Technology Unit G2<br> Building BU25<br> B-1049 Brussels<br>',
             'email' => 'E-mail: '
         ],
         'data-protection-officer' => [

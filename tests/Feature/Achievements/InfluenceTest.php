@@ -21,10 +21,17 @@ class InfluenceTest extends TestCase
 
         $user = create('App\User');
 
-        $LT1 = create('App\User', ['id' => 100, 'tag' => 'tag_LT1']);
+        $LT1 = create('App\User', ['id' => 100, 'tag' => 'BE-TESTME-123']);
 
-        $events2020 = create('App\Event', ['status' => 'APPROVED', 'creator_id' => $user->id, 'reported_at' => null, 'codeweek_for_all_participation_code' => 'tag_LT1', 'created_at' => Carbon::now()->setYear(2020)], 10);
-        $events2021 = create('App\Event', ['status' => 'APPROVED', 'creator_id' => $user->id, 'reported_at' => null, 'codeweek_for_all_participation_code' => 'tag_LT1', 'created_at' => Carbon::now()->setYear(2021)], 20);
+        $tag = create('App\Tag', ['name' => 'BE-TESTME-123']);
+
+
+
+        $events2020 = create('App\Event', ['status' => 'APPROVED', 'creator_id' => $user->id, 'reported_at' => null, 'created_at' => Carbon::now()->setYear(2020)], 10);
+        $events2021 = create('App\Event', ['status' => 'APPROVED', 'creator_id' => $user->id, 'reported_at' => null, 'created_at' => Carbon::now()->setYear(2021)], 20);
+
+        $tag->events()->attach($events2020);
+        $tag->events()->attach($events2021);
 
         $InfluenceCount2020 = $LT1->influence(2020);
         $InfluenceCount2021 = $LT1->influence(2021);
@@ -35,6 +42,36 @@ class InfluenceTest extends TestCase
 
 
     }
+
+    // When we create an event with a LT tag, the experience is taken into account
+    /**
+     * @test
+     */
+    public function leading_teacher_receives_experience_when_event_is_approved()
+    {
+
+        $tag = create('App\Tag', ['name' => 'TI-testme-234']);
+
+        $leading_teacher = create('App\User', ['tag' => 'IT-TESTME-123']);
+
+        $event = create('App\Event', [
+            'status' => 'PENDING',
+            'created_at' => Carbon::now()->setYear(2022)
+        ]);
+
+        $event->tags()->attach($tag);
+
+
+        $this->assertEquals(0, $leading_teacher->influence(2022));
+
+        $event->update(['status' => 'APPROVED']);
+
+        $this->assertEquals(2, $leading_teacher->fresh()->influence(2022));
+
+
+    }
+
+
 
 
 }

@@ -15,6 +15,7 @@ return [
     ],
     'howto' => [
         'title' => 'Gör så här för att delta:',
+        'time' => 'Code Week 4 All-utmaningen håller på till kalenderårets slut. Certifikaten kommer att utfärdas i början av nästa år, i januari eller februari.',
         'content' => 'Besök sidan <a href="/add">Lägg till aktivitet</a> och fyll i nödvändig information om din kodningsaktivitet.',
         'first_alliance' => [
             'title' => 'Om du är först i gruppen:',

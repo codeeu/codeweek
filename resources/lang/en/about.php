@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'In 2022 EU Code Week will take place between 8 and 23 October.',
+        'In 2023 EU Code Week will take place between 7 and 22 October.',
     'codeweek_in_numbers-title' => 'Code Week in numbers',
     'run_by_volunteers-title' => 'Run by volunteers',
     'supported_by_commission-title' => 'Supported by the European Commission',
@@ -28,7 +28,7 @@ return [
 
     'supported_by_commission-text' => '
                 <p>
-                    EU Code Week was launched in 2013 by the Young Advisors for the Digital Agenda Europe. The European Commission supports EU Code Week as part of its strategy for a <a href="http://ec.europa.eu/priorities/digital-single-market/">Digital Single Market</a>. In the <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Digital Education Action Plan</a> the Commission especially encourages schools to join the initiative.
+                    EU Code Week was launched in 2013 by the Young Advisors for the Digital Agenda Europe. The European Commission supports EU Code Week as part of its strategy for a <a href="http://ec.europa.eu/priorities/digital-single-market/">Digital Single Market</a>. In the <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">Digital Education Action Plan</a> the Commission especially encourages schools to join the initiative.
                 </p>',
 
     'schools-text' => '
