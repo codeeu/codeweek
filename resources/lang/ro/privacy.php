@@ -102,7 +102,7 @@ return [
             'text' =>
                 '<p>Dacă doriți să vă exercitați drepturile în conformitate cu Regulamentul (UE) 2018/1725, sau dacă aveți comentarii, întrebări sau îngrijorări, sau dacă doriți să depuneți o plângere privind colectarea și utilizarea datelor dvs. cu caracter personal, puteți contacta operatorul de date,</p>',
             'address' =>
-                'Directorate-General for Communications Networks, Content and Technology (Direcția Generală pentru Rețele de comunicare, Conținut și Tehnologie) Unit F4<br> Building BU25<br> B-1049 Brussels<br> ',
+                'Directorate-General for Communications Networks, Content and Technology (Direcția Generală pentru Rețele de comunicare, Conținut și Tehnologie) Unit G2<br> Building BU25<br> B-1049 Brussels<br> ',
             'email' => 'e-mail: '
         ],
         'data-protection-officer' => [

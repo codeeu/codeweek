@@ -97,7 +97,7 @@ return [
             'text' =>
                 '<p>Ako želite ostvariti svoja prava na temelju Uredbe (EU) 2018/1725, ako imate primjedbe, pitanja ili nedoumice, ili ako želite podnijeti pritužbu u vezi s prikupljanjem i upotrebom vaših osobnih podataka, obratite se voditelju obrade podataka,</p>',
             'address' =>
-                'Glavna uprava za komunikacijske mreže, sadržaje i tehnologije Jedinica F4<br> Zgrada BU25<br> B-1049 Bruxelles<br>',
+                'Glavna uprava za komunikacijske mreže, sadržaje i tehnologije Jedinica G2<br> Zgrada BU25<br> B-1049 Bruxelles<br>',
             'email' => 'Adresa e-pošte: '
         ],
         'data-protection-officer' => [

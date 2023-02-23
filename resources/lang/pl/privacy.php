@@ -101,7 +101,7 @@ return [
             'text' =>
                 '<p>Jeżeli chcą Państwo skorzystać z praw przysługujących Państwu na mocy rozporządzenia (UE) 2018/1725, mają Państwo uwagi, pytania lub wątpliwości lub chcą Państwo złożyć skargę dotyczącą gromadzenia i wykorzystywania Państwa danych osobowych, prosimy o kontakt z administratorem danych,</p>',
             'address' =>
-                'Dyrekcja Generalna ds. Sieci Komunikacyjnych, Treści i Technologii Jednostka F4<br> Budynek BU25<br> B-1049 Bruksela<br> ',
+                'Dyrekcja Generalna ds. Sieci Komunikacyjnych, Treści i Technologii Jednostka G2<br> Budynek BU25<br> B-1049 Bruksela<br> ',
             'email' => 'E-mail: '
         ],
         'data-protection-officer' => [

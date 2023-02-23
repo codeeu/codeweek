@@ -26,7 +26,7 @@
             <div class="phrase">
                 <div class="text">@lang('base.footer_msg')</div>
                 <div class="text"><a
-                            href="{{route('privacy')}}">{{ucfirst(mb_strtolower(__('privacy.title'),'UTF-8'))}}</a> - <a
+                            href="{{route('privacy')}}">{{ucfirst(mb_strtolower(__('privacy-statement.title'),'UTF-8'))}}</a> - <a
                             href="{{route('cookie')}}">@lang('cookie_policy.title')</a></div>
             </div>
             <img src="/images/logo.svg" class="logo_footer">
@@ -34,7 +34,7 @@
         </div>
         <div class="social-media-buttons">
             <div class="social-network">
-                <a href="https://t003c459d.emailsys2a.net/26/4369/b41355c7db/subscribe/form.html?_g=1663162661"
+                <a href="https://newsletter.gopacom.eu/26/4369/03b9cb464b/subscribe/form.html?_g=1675787239"
                    target="_blank" rel="noreferer, noopener">
                     <div style="margin-right: 2px">
                         <svg style="margin-right: 5px;" xmlns="http://www.w3.org/2000/svg" height="24"

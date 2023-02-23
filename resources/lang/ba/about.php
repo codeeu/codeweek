@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'Tokom 2022, Sedmica kodiranja EU će se odvijati od 8. do 23. oktobra.',
+        'Tokom 2023, Sedmica kodiranja EU će se odvijati od 7. do 22. oktobra.',
     'when-text' =>
         '<p>Sedmica kodirnja EU je pokret širokih masa u kom se slavi kreativnost, rješavanje problema i saradnja putem programiranja i drugih tehnoloških aktivnosti. Zamisao je da se programiranje načini vidljivijim, da se mladima, odraslima i starijima pokaže kako kodiranjem mogu svoje ideje sprovesti u realnost, da se te vještine demistificiraju i da se okupe oni koji su motivirani za učenje.</p>',
     'codeweek_in_numbers-title' => 'Sedmica kodiranja u ciframa',
@@ -14,7 +14,7 @@ return [
         '<p>Sedmicu kodiranja EU vode volonteri. Jedan, ili nekoliko <a href="/ambassadors">ambasadora Sedmice kodiranja</a> koordinira tu inicijativu u svojiim zemljama, ali svako može organizirati svoju vlastitu aktivnosti i dodavati i svoj doprinos na mapi <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'Podržava je Evropska komisija',
     'supported_by_commission-text' =>
-        '<p>Sedmicu kodiranja EU su 2013. pokrenuli Mladi savjetnici za digitalnu agendu Evrope. Evropska komisija podržava Sedmicu kodiranja EU u sklopu svoje strategije za <a href="http://ec.europa.eu/priorities/digital-single-market/">Digitalno jedinstveno tržište</a>, U okviru <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Akcionog plana za digitalnu edukaciju</a> Komisija posebno podstiče škole da se pridruže toj inicijativi.</p>',
+        '<p>Sedmicu kodiranja EU su 2013. pokrenuli Mladi savjetnici za digitalnu agendu Evrope. Evropska komisija podržava Sedmicu kodiranja EU u sklopu svoje strategije za <a href="http://ec.europa.eu/priorities/digital-single-market/">Digitalno jedinstveno tržište</a>, U okviru <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">Akcionog plana za digitalnu edukaciju</a> Komisija posebno podstiče škole da se pridruže toj inicijativi.</p>',
     'schools-title' => 'Škole',
     'schools-text' =>
         '<p>Škole na svim nivoima i nastavnici svih predmeta se posebno pozivaju na učešće u Sedmici kodiranja EU, kako bi svojim učenicima pružili mogućnost da istražuju digitalnu kreativnost i kodiranje. Saznajte nešto više o toj inicijativi i o tome kako organizirati svoju aktivnostu putem mrežne stranice posvećene nastavnicima: <a href="/schools">CodeWeek.eu/Schools</a></p>',

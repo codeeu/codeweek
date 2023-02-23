@@ -4,7 +4,7 @@ return [
     'about' => 'EU Code Week është një nismë në terren që synon të sjellë
                             kodimin dhe “alfabetizmin” dixhital te të gjithë në një mënyrë
                             argëtuese dhe angazhuese.',
-    'when' => '8-23 tetor 2022',
+    'when' => '7-22 tetor 2023',
     'when_text' => 'Mësimi i kodimit na ndihmon të kuptojmë logjikisht botën rrotull nesh që
                             ndryshon shpejt, të zgjerojmë të kuptuarin tonë rreth mënyrës
                             se si funksionon teknologjia, si dhe të zhvillojmë aftësi dhe kapacitete për

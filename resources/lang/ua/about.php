@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'En 2022, la Semaine européenne du code aura lieu du 8 au 23 octobre. UA',
+        'En 2023, la Semaine européenne du code aura lieu du 7 au 22 octobre. UA',
     'when-text' =>
         '<p>La Semaine européenne du code est un mouvement citoyen qui met à l’honneur la créativité, la résolution de problèmes et la collaboration par le biais de la programmation et d’autres activités technologiques. L’idée consiste à rendre la programmation plus visible, à montrer aux jeunes, aux adultes et aux personnes âgées comment concrétiser des idées grâce au code, à démystifier ces compétences et à rassembler un public désireux d’apprendre.</p>',
     'codeweek_in_numbers-title' => 'La Semaine du code en chiffres',
@@ -14,7 +14,7 @@ return [
         '<p>La Semaine européenne du code est organisée par des bénévoles. Un ou plusieurs <a href="/ambassadors">ambassadeurs Code Week</a> coordonnent l’initiative dans leur pays, mais chacun peut organiser sa propre activité et l’ajouter à la carte <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'Soutien de la Commission européenne',
     'supported_by_commission-text' =>
-        '<p>La Semaine européenne du code a été lancée en 2013 par les jeunes conseillers pour la «stratégie numérique pour l’Europe». La Commission européenne soutient la Semaine européenne du code, une initiative qui s’inscrit dans le cadre de sa stratégie pour un <a href="http://ec.europa.eu/priorities/digital-single-market/">marché unique numérique</a>. De plus, dans son <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">plan d’action en matière d’éducation numérique</a>, elle encourage en particulier les écoles à participer à cette initiative.</p>',
+        '<p>La Semaine européenne du code a été lancée en 2013 par les jeunes conseillers pour la «stratégie numérique pour l’Europe». La Commission européenne soutient la Semaine européenne du code, une initiative qui s’inscrit dans le cadre de sa stratégie pour un <a href="http://ec.europa.eu/priorities/digital-single-market/">marché unique numérique</a>. De plus, dans son <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">plan d’action en matière d’éducation numérique</a>, elle encourage en particulier les écoles à participer à cette initiative.</p>',
     'schools-title' => 'Établissements scolaires',
     'schools-text' =>
         '<p>Les établissements scolaires à tous les niveaux et les enseignants de toutes les matières sont tout particulièrement invités à participer à la Semaine européenne du code, afin de donner l’occasion à leurs élèves de donner libre cours à leur créativité numérique et de s’adonner à la programmation. Pour en savoir plus sur l’initiative et sur l’organisation de votre activité, consultez la page web réservée aux enseignants: <a href="/schools">CodeWeek.eu/Schools</a></p>',

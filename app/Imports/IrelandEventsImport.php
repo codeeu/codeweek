@@ -20,12 +20,17 @@ class IrelandEventsImport extends DefaultValueBinder implements
     WithCustomValueBinder,
     ToModel,
     WithHeadingRow {
-    public function parseDate($date, $time) {
-        $time = Date::excelToDateTimeObject($time);
-        $date = Carbon::instance(Date::excelToDateTimeObject($date));
+//    public function parseDate($date, $time) {
+//        $time = Date::excelToDateTimeObject($time);
+//        $date = Carbon::instance(Date::excelToDateTimeObject($date));
+//
+//        $date->setTimeFrom($time);
+//        return $date->toDateTime();
+//    }
 
-        $date->setTimeFrom($time);
-        return $date->toDateTime();
+    public function parseDate($date)
+    {
+        return Date::excelToDateTimeObject($date);
     }
 
     public function loadUser($email) {
@@ -57,38 +62,31 @@ class IrelandEventsImport extends DefaultValueBinder implements
             'description' => $row['description'],
             'organizer_type' => $row['type_of_organisation'],
             'activity_type' => $row['activity_type'],
-            'location' => $row['address'],
+            'location' => $row["address"] ?? "online",
             'event_url' => '',
             'user_email' => '',
             'contact_person' => $row['organizer_email'],
             'country_iso' => 'IE',
-            'picture' => $row['image_path'],
+            'picture' => 'https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2022/ms-dreams.png',
             'pub_date' => now(),
             'created' => now(),
             'updated' => now(),
-            'codeweek_for_all_participation_code' => 'cw21-PamsIE',
-            'start_date' => $this->parseDate(
-                $row['start_date'],
-                $row['start_time']
-            ),
-            'end_date' => $this->parseDate($row['end_date'], $row['end_time']),
+            'codeweek_for_all_participation_code' => 'cw22-ireland',
+            'start_date' => $this->parseDate($row['start_date']),
+            'end_date' => $this->parseDate($row['end_date']),
             'geoposition' => $row['latitude'] . ',' . $row['longitude'],
-            'longitude' => $row['longitude'],
-            'latitude' => $row['latitude'],
+            'longitude' => str_replace(',','.',$row['longitude']),
+            'latitude' => str_replace(',','.',$row['latitude']),
             'language' => 'en'
         ]);
 
         $event->save();
 
-        if ($row['audience']) {
-            $event
-                ->audiences()
-                ->attach(array_map('trim', explode(',', $row['audience'])));
+        if ($row["audience_comma_separated_ids"]) {
+            $event->audiences()->attach(explode(",", $row["audience_comma_separated_ids"]));
         }
-        if ($row['theme']) {
-            $event
-                ->themes()
-                ->attach(array_map('trim', explode(',', $row['theme'])));
+        if ($row["theme_comma_separated_ids"]){
+            $event->themes()->attach(explode(",", $row["theme_comma_separated_ids"]));
         }
 
         Log::info($event->slug);

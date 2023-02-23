@@ -4,12 +4,17 @@ namespace App\Helpers;
 
 use App\Country;
 use App\Event;
+use Arr;
 use Carbon\Carbon;
 use App\User;
+use DB;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Str;
 
-class EventHelper {
-    public static function getCloseEvents($longitude, $latitude, $id = 0) {
+class EventHelper
+{
+    public static function getCloseEvents($longitude, $latitude, $id = 0)
+    {
         //acos is not known with sqlite that is used for testing.
         if (config('codeweek.db_connection') == 'sqlite') {
             return Event::take(4)->get();
@@ -37,7 +42,8 @@ class EventHelper {
         return $events;
     }
 
-    public static function getPendindEvents() {
+    public static function getPendindEvents()
+    {
         $country_isos_ambassadors = User::role('ambassador')
             ->distinct()
             ->select('country_iso')
@@ -60,21 +66,22 @@ class EventHelper {
         return $events;
     }
 
-    public static function getReportedEventsWithoutCertificates(){
+    public static function getReportedEventsWithoutCertificates()
+    {
         $events = Event::where('status', '=', 'APPROVED')
             ->whereNotNull('reported_at')
             ->whereNull('certificate_url')
             ->whereNotNull('approved_by')
             ->whereDate('reported_at', '>', Carbon::now()->subDays(10))
-            ->orderBy('id','desc')
+            ->orderBy('id', 'desc')
             ->get();
 
         return $events;
     }
 
 
-
-    private static function getPendingEventsForCountry($country) {
+    private static function getPendingEventsForCountry($country)
+    {
 
         $events = Event::where('status', '=', 'PENDING')
             ->where('start_date', '>', Carbon::createFromDate(2018, 1, 1))
@@ -84,7 +91,8 @@ class EventHelper {
         return $events;
     }
 
-    private static function getPendingEventsCountForCountry($country) {
+    private static function getPendingEventsCountForCountry($country)
+    {
 
         $count = Event::where('status', '=', 'PENDING')
             ->select('country_iso')
@@ -95,13 +103,16 @@ class EventHelper {
         return $count;
     }
 
-    private static function getEventsQuery(){
+    private static function getEventsQuery()
+    {
         return Event::where('status', '=', 'PENDING')
             ->where('start_date', '>', Carbon::createFromDate(2018, 1, 1));
     }
-    public static function getPendingEvents(?String $country = null) {
 
-        if (is_null($country)){
+    public static function getPendingEvents(?string $country = null)
+    {
+
+        if (is_null($country)) {
             //Get pending events for all countries
             return self::getEventsQuery()->get();
         } else {
@@ -111,9 +122,10 @@ class EventHelper {
 
     }
 
-    public static function getPendingEventsCount(?String $country = null) {
+    public static function getPendingEventsCount(?string $country = null)
+    {
 
-        if (is_null($country)){
+        if (is_null($country)) {
             //Get pending events count for all countries
             return self::getEventsQuery()->count();
         } else {
@@ -124,16 +136,17 @@ class EventHelper {
 
     }
 
-    public static function getNextPendingEvent(Event $event, ?String $country = null){
-        if (is_null($country)){
+    public static function getNextPendingEvent(Event $event, ?string $country = null)
+    {
+        if (is_null($country)) {
             //Get pending events count for all countries
-            return self::getEventsQuery()->where('id','>',$event->id)->limit(1)->first();
+            return self::getEventsQuery()->where('id', '>', $event->id)->limit(1)->first();
         } else {
             //Get pending events count for specific country
             return Event::where('status', '=', 'PENDING')
                 ->where('country_iso', $country)
                 ->where('start_date', '>', Carbon::createFromDate(2018, 1, 1))
-                ->where('id','<>',$event->id)->limit(1)->first();
+                ->where('id', '<>', $event->id)->limit(1)->first();
 
 
         }
@@ -141,8 +154,8 @@ class EventHelper {
     }
 
 
-
-    public static function getOnlineEvents() {
+    public static function getOnlineEvents()
+    {
         $events = Event::where([
             'activity_type' => 'open-online',
             'status' => 'APPROVED',
@@ -156,7 +169,8 @@ class EventHelper {
         return $events;
     }
 
-    public static function getCenteredNotRelocatedEvents($iso) {
+    public static function getCenteredNotRelocatedEvents($iso)
+    {
         //Get all activities in the center of the map for the specified country that have not yet been relocated
         $country = Country::where('iso', '=', $iso)->first();
 
@@ -178,10 +192,78 @@ class EventHelper {
         return $events;
     }
 
-    public static function trimGeoposition($latitude, $longitude, $precision = 2){
+    public static function trimGeoposition($latitude, $longitude, $precision = 2)
+    {
 
-        $result = round($latitude,$precision, PHP_ROUND_HALF_DOWN) . "," . round($longitude, $precision, PHP_ROUND_HALF_DOWN);
+        $result = round($latitude, $precision, PHP_ROUND_HALF_DOWN) . "," . round($longitude, $precision, PHP_ROUND_HALF_DOWN);
         Log::info($result);
         return $result;
+    }
+
+    public static function getDistinctEmailsWithUsersHavingNullEmail()
+    {
+
+        $query = DB::table('events')->distinct()->select('events.user_email')
+            ->join('users', 'events.creator_id', '=', 'users.id')
+            ->whereNull('users.email');
+
+//        dd($query->toSql());
+        $records = $query->get()->toArray();
+
+//        dd($records);
+        return Arr::pluck($records, 'user_email');
+
+
+    }
+
+//    public static function getActivitiesWithUsersHavingNullEmail()
+//    {
+//
+//        $query = DB::table('events')
+//            ->join('users', 'events.creator_id', '=', 'users.id')
+//            ->whereNull('users.email')
+//            ->select(['events.id']);
+//
+////        dd($query->toSql());
+//        return $query->get();
+//    }
+
+//    public static function reassignUser($activity_id)
+//    {
+//        Log::info('Activity with null email user: ' . $activity_id);
+//        //Get user email
+//        $event = Event::withTrashed()->where('id', '=', $activity_id)->first();
+//        $email = $event->user_email;
+//
+//
+//        //Deactivate all users with the email
+//        DB::table('users')->where('email', $email)->delete();
+//
+//        $user = User::withTrashed()->where('email', $email)
+//            ->orderByDesc('created_at')
+//            ->firstOrCreate(
+//                [
+//                    'firstname' => 'John',
+//                    'lastname' => 'Doe',
+//                    'username' => 'John Doe',
+//                    'password' => bcrypt(Str::random()),
+//                    'email_display' => $email,
+//                    'email' => $email
+//                ]
+//            );
+//
+//        $user->restore();
+//
+//        Log::info('Assigning user: ' . $user->id);
+//
+//        // Link activity to active user
+//        DB::table('events')->where('id', $activity_id)->update(['creator_id' => $user->id]);
+//
+//
+//    }
+
+    public static function reassignActivities(User $user)
+    {
+        Event::withTrashed()->where('user_email','=', $user->email)->update(['creator_id'=>$user->id]);
     }
 }

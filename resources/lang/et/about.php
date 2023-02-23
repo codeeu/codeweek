@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        '2022. aasta ELi programmeerimisnädal Code Week toimub ajavahemikus 8. kuni 23. oktoober.',
+        '2023. aasta ELi programmeerimisnädal Code Week toimub ajavahemikus 7. kuni 22. oktoober.',
     'when-text' =>
         '<p>ELi programmeerimisnädal Code Week on rohujuuretasandil toimuv liikumine, millega tähistatakse loomingulisust, probleemide lahendamist ja koostööd nii programmeerimises kui ka teistes tehnoloogilistes tegevustes. Selle eesmärk on muuta programmeerimine nähtavamaks ning tutvustada noortele ja vanadele, kuidas koodikirjutamisega oma ideid ellu viia, hajutada programmeerimisega seotud saladusi ning motiveerida inimesi õppima.</p>',
     'codeweek_in_numbers-title' => 'Programmeerimisnädal Code Week numbrites',
@@ -14,7 +14,7 @@ return [
         '<p>ELi programmeerimisnädala Code Week korraldajateks on vabatahtlikud. Algatust aitavad koordineerida iga riigi üks (või mitu) <a href="/ambassadors">Code Weeki saadikut</a>, kuid igaüks võib organiseerida ka oma tegevuse ja selle veebilehe <a href="/">codeweek.eu</a> kaardile lisada.</p>',
     'supported_by_commission-title' => 'Euroopa Komisjoni toetus',
     'supported_by_commission-text' =>
-        '<p>ELi programmeerimisnädala Code Week lükkasid 2013. aastal käima Euroopa digitaalse tegevuskava noored konsultandid. Euroopa Komisjon toetab ELi programmeerimisnädalat Code Week osana <a href="http://ec.europa.eu/priorities/digital-single-market/">digitaalse ühisturu</a> strateegiast. <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Digiõppe tegevuskava</a> abil soovib komisjon kaasata algatusse eelkõige just koole. Eesmärgiks on jõuda 2020.</p>',
+        '<p>ELi programmeerimisnädala Code Week lükkasid 2013. aastal käima Euroopa digitaalse tegevuskava noored konsultandid. Euroopa Komisjon toetab ELi programmeerimisnädalat Code Week osana <a href="http://ec.europa.eu/priorities/digital-single-market/">digitaalse ühisturu</a> strateegiast. <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">Digiõppe tegevuskava</a> abil soovib komisjon kaasata algatusse eelkõige just koole. Eesmärgiks on jõuda 2020.</p>',
     'schools-title' => 'Koolid',
     'schools-text' =>
         '<p>ELi programmeerimisnädalast on oodatud osa võtma kõiki kooliastmeid ja erinevate õppeainete õpetajaid, kes annaksid oma õpilastele võimaluse avastada digitaalset loomingulisust ja programmeerimist. Algatuse ja selle kohta, kuidas ise tegevusi organiseerida, leiate lisateavet õpetajatele suunatud veebisaidilt: <a href="/schools">CodeWeek.eu/Schools</a></p>',

@@ -5,6 +5,7 @@ namespace App\Helpers;
 use App\Event;
 use App\Tag;
 use App\User;
+use Arr;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Support\Facades\DB;
@@ -12,6 +13,39 @@ use Illuminate\Support\Facades\Log;
 
 class TagsHelper
 {
+
+    /**
+     * @return string
+     */
+    public static function getNameInTag($tag): string
+    {
+        //Check for tag in the right order
+        preg_match('/(.*)-(.*)-(.*)\b/', $tag, $output_array);
+        if (!empty($output_array)) {
+            $sorted = array_values(Arr::sortDesc($output_array, function ($value) {
+                return strlen($value);
+            }));
+            return $sorted[1];
+        }
+
+        // Return default tag if no match found
+        return $tag;
+
+    }
+
+    public static function linkTagToLeadingTeacher(User $user): void
+    {
+
+        $name = self::getNameInTag($user->tag);
+
+
+        $tags = Tag::select("id")
+            ->where('name', 'LIKE', '%' . $name . '%')
+            ->get();
+
+        $user->tags()->sync($tags);
+
+    }
 
     public static function cleanTags()
     {
@@ -28,12 +62,6 @@ class TagsHelper
             ->having('count(id)', '>', 1)
             ->groupBy('name')
             ->get();
-
-
-
-
-
-
 
 
         // For each tag, get the ids.

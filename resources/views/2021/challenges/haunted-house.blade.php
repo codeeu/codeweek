@@ -104,7 +104,7 @@
                                 <li>@lang("challenges-content.$slug.instructions.0")</li>
                                 <li>@lang("challenges-content.$slug.instructions.1")</li>
                                 <li>@lang("challenges-content.$slug.instructions.2")</li>
-                                <li>@lang("challenges-content.$slug.instructions.3") <a href="https://www.hedycode.com/for-teachers?lang=en">@lang("challenges-content.$slug.instructions.4")</a>.</li>
+                                <li>@lang("challenges-content.$slug.instructions.3") <a href="https://www.hedycode.com/hedy#haunted">@lang("challenges-content.$slug.instructions.4")</a>.</li>
                                 <li>@lang("challenges-content.$slug.instructions.5") <a href="https://www.youtube.com/watch?v=EdqT313rM40&t=1s">@lang("challenges-content.$slug.instructions.6")</a>.</li>
                             </ul>
                         </div>
@@ -115,8 +115,8 @@
                     <section class="p-2">
                         <div class="orange text-3xl">@lang('challenges.common.example')</div>
                         <ul class="leading-7 ml-2 checklist mt-2">
-                            <li><a href="https://www.hedycode.com/hedy/94ee69a567c34071af4189c827af4041/view">@lang("challenges-content.$slug.example") 2</a></li>
-                            <li><a href="https://www.hedycode.com/hedy/df5ae8a1303041cd84c60efe73de0485/view">@lang("challenges-content.$slug.example") 4</a></li>
+                            <li><a href="https://www.hedycode.com/hedy/2#haunted">@lang("challenges-content.$slug.example") 2</a></li>
+                            <li><a href="https://www.hedycode.com/hedy/4#haunted">@lang("challenges-content.$slug.example") 4</a></li>
                         </ul>
 
                         <div class="mt-2 w-10/12">

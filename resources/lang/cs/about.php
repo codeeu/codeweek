@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'V roce 2022 proběhne Evropský týden programování od 8. do 23. října.',
+        'V roce 2023 proběhne Evropský týden programování od 7. do 22. října.',
     'when-text' =>
         '<p>Evropský týden programování je projekt, který propaguje kreativitu, řešení problémů a spolupráci pomocí programování a jiných technických aktivit. Cílem je programování zviditelnit – ukázat mladým lidem, dospělým i seniorům, jak je díky programování možné realizovat myšlenky. Chceme tyto dovednosti zbavit roušky tajemství a spojit motivované lidi, aby se učili.</p>',
     'codeweek_in_numbers-title' => 'Týden programování v číslech',
@@ -14,7 +14,7 @@ return [
         '<p>Evropský týden programování organizují dobrovolníci. Jeden nebo několik <a href="/ambassadors">ambasadorů týdne programování</a> koordinuje tuto iniciativu ve své zemi, ale vlastní akci může zorganizovat každý a přidat ji na mapu na stránkách <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'Projekt má podporu Evropské komise',
     'supported_by_commission-text' =>
-        '<p>Evropský týden programování zahájili v roce 2013 mladí poradci pro evropskou digitální agendu. Evropská komise podporuje Evropský týden programování jako součást své strategie <a href="http://ec.europa.eu/priorities/digital-single-market/">digitálního jednotného trhu</a>. V rámci <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Akčního plánu digitálního vzdělávání</a> komise povzbuzuje zvláště školy, aby se k této iniciativě připojily.</p>',
+        '<p>Evropský týden programování zahájili v roce 2013 mladí poradci pro evropskou digitální agendu. Evropská komise podporuje Evropský týden programování jako součást své strategie <a href="http://ec.europa.eu/priorities/digital-single-market/">digitálního jednotného trhu</a>. V rámci <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">Akčního plánu digitálního vzdělávání</a> komise povzbuzuje zvláště školy, aby se k této iniciativě připojily.</p>',
     'schools-title' => 'Školy',
     'schools-text' =>
         '<p>Školy všech stupňů a učitelé bez ohledu na to, které předměty vyučují, jsou zvláště zváni, aby se Evropského týdne programování zúčastnili a dali tak svým žákům příležitost prozkoumat digitální kreativitu a programování. Více informací o iniciativě a o tom, jak svou akci zorganizovat, najdete na webové stránce pro učitele: <a href="/schools">CodeWeek.eu/Schools</a></p>',

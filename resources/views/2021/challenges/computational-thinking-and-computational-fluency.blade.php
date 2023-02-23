@@ -61,11 +61,11 @@
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
                             <li>@lang("challenges-content.$slug.materials.0") <a
-                                        href="www.scratchjr.org/">ScratchJr</a> @lang("challenges-content.$slug.materials.1")
+                                        href="https://www.scratchjr.org/">ScratchJr</a> @lang("challenges-content.$slug.materials.1")
                                 .
                             </li>
                             <li>@lang("challenges-content.$slug.materials.2") <a
-                                        href="www.scratchjr.org/">ScratchJr</a> @lang("challenges-content.$slug.materials.3")
+                                        href="https://www.scratchjr.org/">ScratchJr</a> @lang("challenges-content.$slug.materials.3")
                                 .
                             </li>
                         </ol>

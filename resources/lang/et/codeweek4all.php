@@ -18,6 +18,7 @@ return [
     ],
     'howto' => [
         'title' => 'Kuidas osaleda?',
+        'time' => 'Väljakutse Code Week 4 All kestab kuni kalendriaasta lõpuni. Tunnistused antakse välja järgmise aasta alguses jaanuaris või veebruaris.',
         'content' => 'Külastage lehekülge <a href="/add">Lisa tegevus</a> ja sisestage vajalikud
                                     andmed oma programmeerimistegevuse kohta.',
         'first_alliance' => [

@@ -19,7 +19,7 @@ class SyncUsersAchievements extends Command
      *
      * @var string
      */
-    protected $description = 'Sync users achievements';
+    protected $description = 'Award Badges if achievement is fulfilled';
 
     /**
      * Execute the console command.
@@ -28,7 +28,8 @@ class SyncUsersAchievements extends Command
      */
     public function handle()
     {
-        User::role("leading teacher")->chunk(100, function($users, $index){
+        User::role("leading teacher")
+            ->chunk(100, function($users, $index){
             $this->reportProgress($index);
             $users->each(function($user){
                 $user->achievements()->sync(
@@ -45,6 +46,6 @@ class SyncUsersAchievements extends Command
     {
         $from = ($index - 1) * 100;
         $to = ($index - 1) * 100 + 100;
-        $this->info("Seeding users {$from} - {$to}");
+        $this->info("Progress for users {$from} - {$to}");
     }
 }

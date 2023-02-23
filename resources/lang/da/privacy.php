@@ -98,7 +98,7 @@ return [
             'text' =>
                 '<p>Hvis du vil udøve dine rettigheder i henhold til forordning (EU) 2018/1725, eller hvis du har kommentarer, spørgsmål eller bekymringer, eller hvis du vil indgive en klage vedrørende indsamling og brug af dine personoplysninger, er du velkommen til at kontakte den dataansvarlige:</p>',
             'address' =>
-                'Generaldirektoratet for Kommunikationsnet, Indhold og Teknologi Enhed F4<br> Bygning BU25<br> B-1049 Bruxelles<br> ',
+                'Generaldirektoratet for Kommunikationsnet, Indhold og Teknologi Enhed G2<br> Bygning BU25<br> B-1049 Bruxelles<br> ',
             'email' => 'E-mail: '
         ],
         'data-protection-officer' => [

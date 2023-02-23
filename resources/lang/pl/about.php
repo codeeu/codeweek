@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'W 2022 roku Europejski Tydzień Kodowania odbędzie się w dniach od 8 do 23 października.',
+        'W 2023 roku Europejski Tydzień Kodowania odbędzie się w dniach od 7 do 22 października.',
     'when-text' =>
         '<p>Europejski Tydzień Kodowania to oddolna inicjatywa, w ramach której świętujemy kreatywność, rozwiązywanie problemów i współpracę poprzez programowanie i inne działania związane z technologią. Główną ideą stojącą za wydarzeniem jest promowanie programowania poprzez pokazywanie młodzieży i dorosłym sposobów na realizację pomysłów przy pomocy kodu, rozwiewanie wątpliwości i mitów otaczających te umiejętności oraz gromadzenie zmotywowanych jednostek w celu wspólnej nauki.</p>',
     'codeweek_in_numbers-title' => 'Tydzień Kodowania w liczbach',
@@ -14,7 +14,7 @@ return [
         '<p>Europejski Tydzień Kodowania odbywa się dzięki pracy ochotników i wolontariuszy. Nasi <a href="/ambassadors">Ambasadorzy Tygodnia Kodowania</a> koordynują działania w ramach inicjatywy, odbywające się w poszczególnych krajach, jednak każdy ma możliwość zorganizowania własnego wydarzenia i umieszczenia go na mapie znajdującej się pod adresem <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'Wsparcie Komisji Europejskiej',
     'supported_by_commission-text' =>
-        '<p>Inicjatywa Europejskiego Tygodnia Kodowania została zapoczątkowana w 2013 roku przez Młodych Doradców na rzecz Europejskiej Agendy Cyfrowej. Komisja Europejska wspiera Europejski Tydzień Kodowania w ramach strategii tworzenia <a href="http://ec.europa.eu/priorities/digital-single-market/">jednolitego rynku cyfrowego</a>. Opracowany przez Komisję <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">plan działania w dziedzinie edukacji cyfrowej</a> zachęca do uczestnictwa w inicjatywie przede wszystkim szkoły.</p>',
+        '<p>Inicjatywa Europejskiego Tygodnia Kodowania została zapoczątkowana w 2013 roku przez Młodych Doradców na rzecz Europejskiej Agendy Cyfrowej. Komisja Europejska wspiera Europejski Tydzień Kodowania w ramach strategii tworzenia <a href="http://ec.europa.eu/priorities/digital-single-market/">jednolitego rynku cyfrowego</a>. Opracowany przez Komisję <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">plan działania w dziedzinie edukacji cyfrowej</a> zachęca do uczestnictwa w inicjatywie przede wszystkim szkoły.</p>',
     'schools-title' => 'Szkoły',
     'schools-text' =>
         '<p>Do udziału w wydarzeniach związanych z Europejskim Tygodniem Kodowania zachęcamy przede wszystkim szkoły na wszystkich szczeblach kształcenia, a także nauczycieli wszystkich przedmiotów, dzięki którym uczniowie będą mogli skorzystać z możliwości zapoznania się ze światem programowania i kreatywności w świecie cyfrowym. Dowiedz się więcej na temat inicjatywy oraz organizacji własnych wydarzeń ze strony internetowej skierowanej do nauczycieli: <a href="/schools">CodeWeek.eu/Schools</a></p>',

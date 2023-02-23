@@ -22,7 +22,10 @@
                         </div>
 
                         <!-- Content goes here -->
-                        <div class="text-base mt-4"><strong>Name:</strong> {{$user->fullName}}</div>
+                        <div class="text-base mt-4">
+                            <strong>Name:</strong> {{$user->fullName}}<br/>
+                            <strong>Leading Teacher Tag:</strong> {{$user->tag}}
+                        </div>
 
                         <div class="text-base mt-4"><strong>Bits earned
                                 in {{$year}}</strong>: {{$user->getPoints($year)}}</div>

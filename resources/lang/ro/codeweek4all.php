@@ -15,6 +15,7 @@ return [
     ],
     'howto' => [
         'title' => 'Cum participați?',
+        'time' => 'Provocarea „Săptămâna programării pentru toți” durează până la sfârșitul anului calendaristic. Certificatele vor fi eliberate la începutul anului următor, în ianuarie sau februarie.',
         'content' => 'Vizitați pagina <a href="/add">Adăugare activitate</a> și completați detaliile necesare ale activității dumneavoastră de programare.',
         'first_alliance' => [
             'title' => 'Dacă sunteți prima persoană din alianța dumneavoastră:',

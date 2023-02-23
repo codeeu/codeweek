@@ -20,7 +20,7 @@
                     <a href="http://www.africacodeweek.org/" target="_blank"><img src="img/partners/colabora_africacodeweek.png" alt="Africa Code Week"></a>
                 </li>
                 <li>
-                    <a href="https://www.apple.com/uk/everyone-can-code/" target="_blank"><img src="img/partners/apple.png" alt="Apple"></a>
+                    <a href="https://www.apple.com/uk/education/k12/learn-to-code/" target="_blank"><img src="img/partners/apple.png" alt="Apple"></a>
                 </li>
                 <li>
                     <a href="https://www.amazonfutureengineer.com/global" target="_blank"><img src="img/partners/afe.png" alt="Amazon Future Engineer"></a>

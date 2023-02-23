@@ -15,6 +15,7 @@ return [
     ],
     'howto' => [
         'title' => 'Hoe kun je deelnemen?',
+        'time' => 'De Code Week 4 All-uitdaging duurt tot het einde van het kalenderjaar. De certificaten worden in het begin van het volgende jaar uitgegeven, in januari of februari.',
         'content' => 'Ga naar de pagina <a href="/add">Activiteit toevoegen</a> en vul de benodigde gegevens van je programmeeractiviteit in.',
         'first_alliance' => [
             'title' => 'Als je de initiatiefnemer van je groep bent:',

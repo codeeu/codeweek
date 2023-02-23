@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'Die EU Code Week 2022 findet im Zeitraum vom 8. bis 23. Oktober statt.',
+        'Die EU Code Week 2023 findet im Zeitraum vom 7. bis 22. Oktober statt.',
     'when-text' =>
         '<p>Die EU Code Week ist eine Breiteninitiative zur Feier von Kreativität, Problemlösung und Zusammenarbeit durch Programmierung und andere technische Aktivitäten. Dahinter steckt die Idee, das Programmieren bekannter zu machen, jungen Menschen, Erwachsenen und Älteren zu zeigen, wie sie mit dem Programmieren Ideen Wirklichkeit werden lassen, diese Kompetenzen begreifbar zu machen und motivierte Menschen beim Lernen zusammenzubringen.</p>',
     'codeweek_in_numbers-title' => 'Code Week in Zahlen',
@@ -15,7 +15,7 @@ return [
     'supported_by_commission-title' =>
         'Unterstützt durch die Europäische Kommission',
     'supported_by_commission-text' =>
-        '<p>Die EU Code Week wurde im Jahr 2013 von einer aus jungen Berater*innen bestehenden Expertengruppe, den Young Advisors for the Digital Agenda Europe, ins Leben gerufen. Die Europäische Kommission unterstützt die EU Code Week im Zuge Ihrer Strategie für einen <a href="http://ec.europa.eu/priorities/digital-single-market/">digitalen Binnenmarkt</a>, in dem <a href="https://ec.europa.eu/education/initiatives/european-education-area/digital-education-action-plan_en">Aktionsplan für digitale Bildung</a> ermutigt die Kommission insbesondere Schulen zur Beteiligung an der Initiative.</p>',
+        '<p>Die EU Code Week wurde im Jahr 2013 von einer aus jungen Berater*innen bestehenden Expertengruppe, den Young Advisors for the Digital Agenda Europe, ins Leben gerufen. Die Europäische Kommission unterstützt die EU Code Week im Zuge Ihrer Strategie für einen <a href="http://ec.europa.eu/priorities/digital-single-market/">digitalen Binnenmarkt</a>, in dem <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">Aktionsplan für digitale Bildung</a> ermutigt die Kommission insbesondere Schulen zur Beteiligung an der Initiative.</p>',
     'schools-title' => 'Schulen',
     'schools-text' =>
         '<p>Vor allem Schülerinnen und Schüler aller Stufen und Lehrkräfte aller Fächer sind zur Teilnahme an der EU Code Week aufgerufen, damit Schüler die Möglichkeit zur Erforschung ihrer Fähigkeiten im Bereich der digitalen Kreativität und Programmierung haben. Auf der Webseite für Lehrkräfte erfahren Sie mehr über die Initiative und über die Ausrichtung Ihrer Aktivität: <a href="/schools">CodeWeek.eu/Schools</a></p>',
