@@ -80,7 +80,6 @@ class BadgesController extends Controller
             return Str::contains(Str::lower($achievement->name), 'influencer');
         });
 
-
         $userAchievements = $user->achievements;
 
 
