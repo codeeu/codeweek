@@ -62,7 +62,8 @@ class Event extends Model
         'activity_type',
         'picture_detail',
         'language',
-        'location_id'
+        'location_id',
+        'leading_teacher_id'
     ];
 
     protected $casts = [
@@ -135,6 +136,11 @@ class Event extends Model
     public function owner()
     {
         return $this->belongsTo('App\User', 'creator_id');
+    }
+
+    public function leadingTeacher()
+    {
+        return $this->belongsTo('App\User', 'leading_teacher_id', 'id');
     }
 
     public function extractedLocation()

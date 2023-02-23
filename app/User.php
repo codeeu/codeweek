@@ -4,7 +4,9 @@ namespace App;
 
 use App\Achievements\Achievement;
 use App\Helpers\EventHelper;
+use App\Helpers\TagsHelper;
 use Attribute;
+use Cache;
 use Carbon\Carbon;
 use DB;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -96,9 +98,11 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $fillable = [
-        'firstname', 'lastname', 'username', 'avatar_path', 'email', 'password', 'bio', 'twitter', 'website', 'country_iso', 'privacy', 'email_display', 'receive_emails', 'magic_key','current_country','provider'
-    ];
+//    protected $fillable = [
+//        'firstname', 'lastname', 'username', 'avatar_path', 'email', 'password', 'bio', 'twitter', 'website', 'country_iso', 'privacy', 'email_display', 'receive_emails', 'magic_key','current_country','provider'
+//    ];
+
+    protected $guarded = [];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -186,6 +190,11 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Event', 'creator_id');
     }
+
+//    public function leadingTeacherEvents()
+//    {
+//        return $this->hasMany('App\Event', 'leading_teacher_id');
+//    }
 
     public function schools()
     {
@@ -290,6 +299,7 @@ class User extends Authenticatable
 
     public function awardExperience($points, $year = null)
     {
+
         if (is_null($year)) $year = Carbon::now()->year;
         $this->getExperience($year)->awardExperience($points);
 
@@ -389,20 +399,38 @@ class User extends Authenticatable
     public function influence($edition = null)
     {
 
+        Log::info("Influence for $this->email for edition $edition");
         if (is_null($this->tag)) return 0;
 
-        $query = DB::table('events')
-            ->where('codeweek_for_all_participation_code', '=', $this->tag)
-            ->where('status', "=", "APPROVED")
-            ->where('creator_id', '<>', $this->id)
-            ->whereNull('deleted_at');
+        $nameInTag = TagsHelper::getNameInTag($this->tag);
 
-        if (!is_null($edition)) {
-            $query->whereYear('created_at', '=', $edition);
+        $key = $nameInTag . '-' . $edition;
+
+        $cache_timeout = 0;
+        if (app()->runningInConsole() && !app()->runningUnitTests()) {
+            $cache_timeout = 3000;
         }
 
+        $result = Cache::remember($key, $cache_timeout, function () use ($nameInTag, $edition) {
+            Log::info("$nameInTag - $edition not in cache");
+            $query = DB::table('events')
+                ->join('event_tag', 'events.id', '=', 'event_tag.event_id')
+                ->join('tags', 'tags.id', '=', 'event_tag.tag_id')
+                ->where('tags.name', 'LIKE', "%-" . $nameInTag . "-%")
+                ->where('status', "=", "APPROVED")
+                ->where('creator_id', '<>', $this->id)
+                ->whereNull('deleted_at');
 
-        return $query->count() * 2;
+            if (!is_null($edition)) {
+                $query->whereYear('events.created_at', '=', $edition);
+            }
+
+            return $query->count() * 2;
+        });
+
+        Log::info("Name in Tag: $nameInTag - $result");
+
+        return $result;
     }
 
     public function generateMagicKey()
@@ -457,6 +485,7 @@ class User extends Authenticatable
     {
         $this->update(['current_country' => $country]);
     }
+
 
 
 }
