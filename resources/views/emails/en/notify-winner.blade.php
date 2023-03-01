@@ -14,7 +14,7 @@ You can personalise and download your Code Week 4 all certificate by clicking on
     Get your Certificate
 @endcomponent
 
-Thank you very much for helping us advance digital literacy! We hope to work together again in the 2022 edition of EU Code Week, which will take place from 8-23 October.<br/><br/>
+Thank you very much for helping us advance digital literacy! We hope to work together again in the 2023 edition of EU Code Week, which will take place from 7-22 October.<br/><br/>
 
 
 
