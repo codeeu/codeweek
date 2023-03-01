@@ -3,9 +3,11 @@
 namespace Tests\Feature;
 
 use App\Event;
+use App\Excellence;
 use App\Helpers\ReminderHelper;
 use App\Mail\NotifyWinner;
 use App\Mail\RemindCreator;
+use App\User;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
@@ -42,6 +44,55 @@ class NotifyExcellenceWinnersTest extends TestCase
 
         // Only one should be sent
         Mail::assertQueued(NotifyWinner::class, 2);
+
+
+    }
+
+    /** @test */
+    public function deleted_users_should_not_be_notified()
+    {
+        $this->withExceptionHandling();
+
+        Mail::fake();
+
+        // We create two users
+
+        $userA = create('App\User', ['deleted_at'=>Carbon::now()]);
+
+
+        // A winner and a loser for specific edition
+        create('App\Excellence', ['edition'=>2018,'user_id'=>$userA->id]);
+
+        // We send the email
+        $this->artisan('notify:winners',["edition"=>2018]);
+
+        // Only one should be sent
+        Mail::assertQueued(NotifyWinner::class, 0);
+        $this->assertCount(0, Excellence::all());
+
+
+    }
+
+    /** @test */
+    public function users_that_dont_receive_mails_should_not_be_notified()
+    {
+        $this->withExceptionHandling();
+
+        Mail::fake();
+
+        // We create two users
+
+        $userA = create('App\User', ['receive_emails'=>0]);
+
+
+        // A winner and a loser for specific edition
+        create('App\Excellence', ['edition'=>2018,'user_id'=>$userA->id]);
+
+        // We send the email
+        $this->artisan('notify:winners',["edition"=>2018]);
+
+        // Only one should be sent
+        Mail::assertQueued(NotifyWinner::class, 0);
 
 
     }
