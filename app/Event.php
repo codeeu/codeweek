@@ -70,6 +70,7 @@ class Event extends Model
         'description' => PurifyHtmlOnGet::class,
         'title' => PurifyHtmlOnGet::class,
         'location' => PurifyHtmlOnGet::class,
+        'language'=> PurifyHtmlOnGet::class,
     ];
 
 //    protected $policies = [
