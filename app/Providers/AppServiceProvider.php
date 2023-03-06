@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Validation\Rules\Password;
 
 class AppServiceProvider extends ServiceProvider {
     /**
@@ -21,6 +22,16 @@ class AppServiceProvider extends ServiceProvider {
     public function boot() {
 
 //        Model::shouldBeStrict(!$this->app->isProduction());
+
+        Password::defaults(function () {
+            return Password::min(10)->letters()
+                ->mixedCase()
+                ->numbers()
+                ->symbols()
+                ->uncompromised();
+        });
+
+
 
         View::share('locales', config('app.locales'));
 
