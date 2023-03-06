@@ -136,7 +136,8 @@ class RejectEventTest extends TestCase
 
         $event = Event::where('title', $eventA->title)->first();
 
-
+        create('App\Audience',[] ,3);
+        create('App\Theme', [],3);
         $event->title = 'Changed';
         $event->description = 'Changed description.';
         $event->theme = "1,2";
