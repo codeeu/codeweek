@@ -122,7 +122,6 @@ class EventController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function store(EventRequest $request) {
-
         $user = auth()->user();
 
         $user->privacy = true;

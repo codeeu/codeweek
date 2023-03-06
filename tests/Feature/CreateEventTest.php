@@ -7,6 +7,7 @@ use Illuminate\Auth\AuthenticationException;
 use Illuminate\Support\Facades\Mail;
 
 
+use Illuminate\Validation\ValidationException;
 use Tests\TestCase;
 
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -51,6 +52,8 @@ class CreateEventTest extends TestCase
 
     }
 
+
+
     /** @test */
     public function an_authenticated_user_can_create_events()
     {
@@ -78,6 +81,81 @@ class CreateEventTest extends TestCase
         $this->get($event->path())->assertSee("tag:bar");
         $this->get($event->path())->assertSee($event->codeweek_for_all_participation_code);
         $this->get($event->path())->assertSee("Dutch");
+    }
+
+    /** @test */
+    public function an_authenticated_user_cannot_create_event_without_existing_audience()
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+        $this->withoutExceptionHandling();
+        $this->signIn();
+
+        $this->expectException(ValidationException::class);
+        $this->expectExceptionMessage('The audience is invalid');
+
+        $event = make('App\Event');
+        create('App\Audience',[] ,3);
+        create('App\Theme', [],3);
+
+        $event->theme = "1";
+        $event->tags = "tag:foo,tag:bar";
+        $event->audience = "2, 33";
+        $event->privacy = true;
+
+        $event->language = "nl";
+
+        $this->post('/events', $event->toArray());
+
+    }
+
+    /** @test */
+    public function an_authenticated_user_cannot_create_event_without_existing_theme()
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+        $this->withoutExceptionHandling();
+        $this->signIn();
+
+        $this->expectException(ValidationException::class);
+        $this->expectExceptionMessage('The theme is invalid');
+
+        $event = make('App\Event');
+        create('App\Audience',[] ,3);
+        create('App\Theme', [],3);
+
+        $event->theme = "111";
+        $event->tags = "tag:foo,tag:bar";
+        $event->audience = "2, 3";
+        $event->privacy = true;
+
+        $event->language = "nl";
+
+        $this->post('/events', $event->toArray());
+
+    }
+
+    /** @test */
+    public function an_authenticated_user_cannot_create_event_without_existing_language()
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+        $this->withoutExceptionHandling();
+        $this->signIn();
+
+        $this->expectException(ValidationException::class);
+        $this->expectExceptionMessage('The selected language is invalid');
+
+        $event = make('App\Event');
+        create('App\Audience',[] ,3);
+        create('App\Theme', [],3);
+
+        $event->theme = "111";
+        $event->tags = "tag:foo,tag:bar";
+        $event->audience = "2, 3";
+        $event->privacy = true;
+
+        $event->language = "something bad";
+
+        $this->post('/events', $event->toArray());
+
     }
 
     /** @test */

@@ -16,8 +16,9 @@ class UpdateEventTest extends TestCase
     function event_can_be_updated_by_its_owner()
     {
 
-
+        $this->seed('RolesAndPermissionsSeeder');
         $this->signIn();
+        $this->withoutExceptionHandling();
 
         $event = make('App\Event');
         create('App\Audience',[] ,3);
@@ -64,6 +65,8 @@ class UpdateEventTest extends TestCase
 
 
         $user = create(\App\User::class);
+        create('App\Audience',[] ,3);
+        create('App\Theme', [],3);
 
         $this->signIn($user);
 

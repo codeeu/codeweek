@@ -2,7 +2,12 @@
 
 namespace App\Http\Requests;
 
+use App\Models\Statement;
+use App\Rules\validAudience;
+use App\Rules\validTheme;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Lang;
 
 class EventRequest extends FormRequest
 {
@@ -23,6 +28,7 @@ class EventRequest extends FormRequest
      */
     public function rules()
     {
+        $languages = array_keys(Lang::get('base.languages'));
         return [
             'activity_type' => 'required',
             'title' => 'required|min:5',
@@ -30,12 +36,12 @@ class EventRequest extends FormRequest
             'organizer' => 'required',
             'location' => 'required_unless:activity_type,open-online,invite-online',
             "event_url" => 'required_if:activity_type,open-online,invite-online',
-            'language' => 'required',
+            'language' => ['required', $this->in($languages)],
             'start_date' => 'required',
             'end_date' => 'required|after:start_date',
-            'audience' => 'required',
-            'theme' => 'required',
-            'country_iso' => 'required',
+            'audience' => ['required',new ValidAudience],
+            'theme' => ['required',new ValidTheme],
+            'country_iso' => 'required|exists:countries,iso',
             'user_email' => 'required',
             'organizer_type' => 'required',
             'privacy' => 'required',
@@ -59,5 +65,11 @@ class EventRequest extends FormRequest
             'event_url.required' => 'The activity\'s web page is required for online activities.',
             'user_email.required' => 'Please enter a valid email address.',
         ];
+    }
+
+
+    private function in($array): string
+    {
+        return 'in:' . implode(',', $array);
     }
 }
