@@ -52,9 +52,11 @@ class NotifyWinners extends Command
 
             $user = $winner->user;
 
-            if ($user->email){
+            if (is_null($user)) {
+                $winner->delete();
+            } else if ($user->email && $user->receive_emails === 1) {
                 Mail::to($user->email)->queue(new \App\Mail\NotifyWinner($user, $edition));
-                $excellence = $user->excellences->where('edition', '=' , $edition)->first();
+                $excellence = $user->excellences->where('edition', '=', $edition)->first();
                 $excellence->notified_at = Carbon::now();
                 $excellence->save();
 
