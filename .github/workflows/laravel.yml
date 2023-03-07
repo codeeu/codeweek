@@ -38,18 +38,10 @@ jobs:
         mkdir -p database
         touch database/database.sqlite
     - name: Setup Node
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
-        node-version: '16'
-    - name: Install Yarn
-      run: npm install -g yarn
-    - name: Cache yarn dependencies
-      uses: actions/cache@v3
-      with:
-        path: node_modules
-        key: yarn-${{ hashFiles('yarn.lock') }}
-    - name: Install JS dependencies
-      run: yarn install && yarn dev
+        node-version: 16
+    - run: npm install && npm run dev
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       env:
         DB_CONNECTION: sqlite
