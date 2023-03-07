@@ -16,7 +16,7 @@ class UpdateUserTest extends TestCase
         $user = create(\App\User::class);
 
         $this->signIn($user);
-
+        $belgium = create('App\Country',['iso'=>'BE']);
 
         $this->patch('user', [
             'firstname' => 'Changed firstname',
@@ -25,7 +25,7 @@ class UpdateUserTest extends TestCase
             'bio' => 'Changed Bio',
             'twitter' => 'Changed Twitter',
             'website' => 'Changed Website',
-            'country_iso' => 'AA',
+            'country_iso' => null,
             'privacy' => 1,
             'receive_emails' => 0,
         ]);
@@ -36,7 +36,7 @@ class UpdateUserTest extends TestCase
             $this->assertEquals('Changed Bio', $user->bio);
             $this->assertEquals('Changed Twitter', $user->twitter);
             $this->assertEquals('Changed Website', $user->website);
-            $this->assertEquals('AA', $user->country_iso);
+            $this->assertNull($user->country_iso);
             $this->assertEquals(1, $user->privacy);
             $this->assertEquals('new@email.com', $user->email_display);
             $this->assertEquals(0, $user->receive_emails);
@@ -49,13 +49,13 @@ class UpdateUserTest extends TestCase
             'bio' => 'Changed Bio',
             'twitter' => 'Changed Twitter',
             'website' => 'Changed Website',
-            'country_iso' => 'AAA',
+            'country_iso' => 'BE',
             'privacy' => 0,
             'receive_emails' => 1
         ]);
 
         tap($user->fresh(), function ($user) {
-            $this->assertEquals('AAA', $user->country_iso);
+            $this->assertEquals('BE', $user->country_iso);
             $this->assertEquals(0, $user->privacy);
             $this->assertEquals(1, $user->receive_emails);
 
