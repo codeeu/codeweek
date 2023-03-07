@@ -43,6 +43,11 @@ jobs:
         node-version: '14'
     - name: Install Yarn
       run: npm install -g yarn
+    - name: Cache yarn dependencies
+      uses: actions/cache@v1
+      with:
+        path: node_modules
+        key: yarn-${{ hashFiles('yarn.lock') }}
     - name: Install JS dependencies
       run: yarn install && yarn dev
     - name: Execute tests (Unit and Feature tests) via PHPUnit
