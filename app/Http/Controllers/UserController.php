@@ -19,11 +19,11 @@ class UserController extends Controller
         }
 
         $user->update(request()->validate([
-            'firstname' => 'required',
-            'lastname' => 'required',
+            'firstname' => 'required|string',
+            'lastname' => 'required|string',
             'privacy' => 'required',
             'receive_emails' => 'required',
-            'country_iso' => 'nullable',
+            'country_iso' => 'nullable|exists:countries,iso',
             'twitter' => 'nullable',
             'website' => 'nullable',
             'bio' => 'nullable',
