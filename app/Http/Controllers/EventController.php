@@ -100,11 +100,13 @@ class EventController extends Controller {
         $languages = Arr::sort(Lang::get('base.languages'));
 
         $leading_teachers = User::role('leading teacher')
+            ->select(['id','tag'])
             ->whereNotNull('tag')
             ->orderBy('tag')
             ->get();
 
-
+//dd($leading_teachers[0]);
+//        dd($themes[0]);
 
         if($request->get('location')){
            $location = auth()->user()->locations()->where('id', $request->get('location'))->firstOrFail();
@@ -116,6 +118,8 @@ class EventController extends Controller {
                 return redirect(route('activities-locations'));
             }
         }
+
+
 
         return view('event.add', compact(['countries', 'themes', 'languages','leading_teachers']));
     }
@@ -207,6 +211,8 @@ class EventController extends Controller {
             ->whereNotNull('tag')
             ->orderBy('tag')
             ->get();
+
+
 
         return view(
             'event.edit',
