@@ -39,8 +39,6 @@ class BadgesController extends Controller
 
         $users = User
             ::role('leading teacher')
-//    ::where('user_id','=',$this->id)
-//    ->where('quantity','>',0)
             ->join('experiences', 'users.id', '=', 'experiences.user_id')
             ->where('experiences.year', '=', $year)
             ->orderByDesc('experiences.points')
@@ -48,7 +46,7 @@ class BadgesController extends Controller
             ->paginate(50)
             ->withQueryString();
 
-        //dd($users);
+
 
         $rank = $users->firstItem();
 

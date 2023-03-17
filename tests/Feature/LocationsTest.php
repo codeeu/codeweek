@@ -18,6 +18,7 @@ class LocationsTest extends TestCase
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
+        $this->seed('LeadingTeacherRoleSeeder');
 
 
     }
