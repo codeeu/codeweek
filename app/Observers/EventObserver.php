@@ -36,19 +36,20 @@ class EventObserver
             $event->owner->awardExperience(2, $date->year);
         }
 
-        if (($event->status == "APPROVED") && ($event->getOriginal('status') == "PENDING")) {
-            //Get LT based on Tag
-            foreach ($event->tags as $tag) {
-                $name = TagsHelper::getNameInTag($tag->name);
-                $LT = User::firstWhere("tag", "LIKE", "%-$name-%");
-                if ($LT) {
-                    $date = new Carbon($event->created_at);
-                    $LT->awardExperience(2, $date->year);
-                }
+        if (($event->status == "APPROVED") && ($event->getOriginal('status') !== "APPROVED") && !is_null($event->leading_teacher_tag)) {
 
-            }
+            Log::info('Experience Added for User ID: '. $event->leadingTeacher->id);
+            $date = new Carbon($event->created_at);
+            $event->leadingTeacher->awardExperience(2, $date->year);
 
 
+        }
+
+        if (($event->status !== "APPROVED") && ($event->getOriginal('status') == "APPROVED") && !is_null($event->leading_teacher_tag)) {
+
+            Log::info('Experience Removed for User ID: '. $event->leadingTeacher->id);
+            $date = new Carbon($event->created_at);
+            $event->leadingTeacher->stripExperience(2, $date->year);
 
 
         }
@@ -57,14 +58,14 @@ class EventObserver
     }
 
 
-
     /**
      * Handle the Event "deleted" event.
      *
      * @param Event $event
      * @return void
      */
-    public function deleted(Event $event)
+    public
+    function deleted(Event $event)
     {
         //
     }
@@ -75,7 +76,8 @@ class EventObserver
      * @param Event $event
      * @return void
      */
-    public function restored(Event $event)
+    public
+    function restored(Event $event)
     {
         //
     }
@@ -86,7 +88,8 @@ class EventObserver
      * @param Event $event
      * @return void
      */
-    public function forceDeleted(Event $event)
+    public
+    function forceDeleted(Event $event)
     {
         //
     }
