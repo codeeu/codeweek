@@ -63,7 +63,7 @@ class Event extends Model
         'picture_detail',
         'language',
         'location_id',
-        'leading_teacher_id'
+        'leading_teacher_tag'
     ];
 
     protected $casts = [
@@ -139,11 +139,6 @@ class Event extends Model
         return $this->belongsTo('App\User', 'creator_id');
     }
 
-    public function leadingTeacher()
-    {
-        return $this->belongsTo('App\User', 'leading_teacher_id', 'id');
-    }
-
     public function extractedLocation()
     {
         return $this->belongsTo('App\Location', 'location_id');
@@ -162,6 +157,10 @@ class Event extends Model
     public function tags()
     {
         return $this->belongsToMany('App\Tag')->where('name', '<>', '');
+    }
+
+    public function leadingTeacher(){
+        return $this->belongsTo('App\User',  'leading_teacher_tag','tag');
     }
 
     public function get_start_date()
@@ -410,6 +409,8 @@ class Event extends Model
             \Illuminate\Support\Facades\Log::info('unique constraint triggered');
         }
     }
+
+
 
 
 }

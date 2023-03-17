@@ -128,19 +128,17 @@ class ExperienceTest extends TestCase
 
         $user = create('App\User');
 
-        $tag = create('App\Tag', ['name' => 'foo-test123-bar']);
-
         $LT1 = create('App\User', ['tag' => 'FOO-TEST123-BAR']);
 
-        $event = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null]);
+        $event = create('App\Event', ['leading_teacher_tag'=>'FOO-TEST123-BAR','status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null]);
 
-        $event->tags()->attach($tag);
+        $this->assertEquals(0, $LT1->getPoints());
 
         $event->update([
             'status' => 'APPROVED'
         ]);
 
-        $this->assertEquals(2, $LT1->getPoints());
+        $this->assertEquals(2, $LT1->fresh()->getPoints());
 
     }
 

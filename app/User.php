@@ -191,11 +191,6 @@ class User extends Authenticatable
         return $this->hasMany('App\Event', 'creator_id');
     }
 
-//    public function leadingTeacherEvents()
-//    {
-//        return $this->hasMany('App\Event', 'leading_teacher_id');
-//    }
-
     public function schools()
     {
         return $this->belongsToMany('App\School');
@@ -402,33 +397,29 @@ class User extends Authenticatable
         Log::info("Influence for $this->email for edition $edition");
         if (is_null($this->tag)) return 0;
 
-        $nameInTag = TagsHelper::getNameInTag($this->tag);
+//        $nameInTag = TagsHelper::getNameInTag($this->tag);
 
-        $key = $nameInTag . '-' . $edition;
+//        $key = $nameInTag . '-' . $edition;
+//
+//        $cache_timeout = 0;
+//        if (app()->runningInConsole() && !app()->runningUnitTests()) {
+//            $cache_timeout = 3000;
+//        }
 
-        $cache_timeout = 0;
-        if (app()->runningInConsole() && !app()->runningUnitTests()) {
-            $cache_timeout = 3000;
+//        $result = Cache::remember($key, $cache_timeout, function () use ($nameInTag, $edition) {
+//            Log::info("$nameInTag - $edition not in cache");
+
+        $taggedActivities = $this->taggedActivities()
+            ->where('status', '=', 'APPROVED');
+
+        if (!is_null($edition)) {
+            $taggedActivities->whereYear('events.created_at', '=', $edition);
         }
 
-        $result = Cache::remember($key, $cache_timeout, function () use ($nameInTag, $edition) {
-            Log::info("$nameInTag - $edition not in cache");
-            $query = DB::table('events')
-                ->join('event_tag', 'events.id', '=', 'event_tag.event_id')
-                ->join('tags', 'tags.id', '=', 'event_tag.tag_id')
-                ->where('tags.name', 'LIKE', "%-" . $nameInTag . "-%")
-                ->where('status', "=", "APPROVED")
-                ->where('creator_id', '<>', $this->id)
-                ->whereNull('deleted_at');
+        $result = $taggedActivities->count() * 2;
+//        });
 
-            if (!is_null($edition)) {
-                $query->whereYear('events.created_at', '=', $edition);
-            }
-
-            return $query->count() * 2;
-        });
-
-        Log::info("Name in Tag: $nameInTag - $result");
+//        Log::info("Name in Tag: $nameInTag - $result");
 
         return $result;
     }
@@ -486,6 +477,10 @@ class User extends Authenticatable
         $this->update(['current_country' => $country]);
     }
 
+    public function taggedActivities()
+    {
+        return $this->hasMany('App\Event', 'leading_teacher_tag', 'tag');
+    }
 
 
 }
