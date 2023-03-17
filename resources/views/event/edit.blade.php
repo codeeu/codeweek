@@ -247,6 +247,25 @@
                             </div>
                         </div>
 
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field align-flex-start">
+
+
+                                <label for="id_leading_teacher_tag_label">@lang('event.leading_teacher_tag')</label>
+                                <select id="id_leading_teacher_tag" name="leading_teacher_tag"
+                                        class="codeweek-input-select">
+                                    <option value=""></option>
+
+                                    @foreach ($leading_teachers as $leading_teacher)
+                                        <option value="{{$leading_teacher->tag}}" {{$event->leading_teacher_tag == $leading_teacher->tag ? 'selected' : ''}}>
+                                            {{$leading_teacher->tag}} </option>
+                                    @endforeach
+
+                                </select>
+
+                            </div>
+                        </div>
+
                         <div class="codeweek-form-field">
                             <label for="id_picture">@lang('event.image')</label>
                             <div data-provides="fileinput" data-name="picture">

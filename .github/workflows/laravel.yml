@@ -17,7 +17,7 @@ jobs:
         php-version: '8.1'
       env:
         COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
     - name: Copy composer.json
@@ -26,7 +26,7 @@ jobs:
       run: |
           php --version
           composer config http-basic.nova.laravel.com ${{ secrets.NOVA_USERNAME }} ${{ secrets.NOVA_PASSWORD }}
-          composer install -n --prefer-dist         
+          composer install -n --prefer-dist
     - name: Generate key
       run: php artisan key:generate
     - name: generate vue-i18n
@@ -37,20 +37,13 @@ jobs:
       run: |
         mkdir -p database
         touch database/database.sqlite
-        
-    - name: Cache yarn dependencies
-      uses: actions/cache@v1
+    - name: Setup Node
+      uses: actions/setup-node@v3
       with:
-        path: node_modules
-        key: yarn-${{ hashFiles('yarn.lock') }}
-
-    - name: Run yarn
-      run: |
-        yarn --version
-        yarn && yarn dev
-        
+        node-version: 16
+    - run: npm install && npm run dev
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       env:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
-      run: php artisan test
+      run: php artisan test --parallel

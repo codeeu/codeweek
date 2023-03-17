@@ -45,6 +45,7 @@ class EventRequest extends FormRequest
             'user_email' => 'required',
             'organizer_type' => 'required',
             'privacy' => 'required',
+            'leading_teacher_tag' => 'nullable'
 
         ];
     }

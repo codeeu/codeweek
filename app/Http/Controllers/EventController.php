@@ -68,6 +68,9 @@ class EventController extends Controller {
             ->where('country_iso', '=', $iso_country_of_user)
             ->get();
 
+
+
+
         return view('events')->with([
             'events' => $this->eventsNearMe(),
             'years' => $years,
@@ -96,9 +99,16 @@ class EventController extends Controller {
 
         $languages = Arr::sort(Lang::get('base.languages'));
 
+        $leading_teachers = User::role('leading teacher')
+            ->whereNotNull('tag')
+            ->orderBy('tag')
+            ->get();
+
+
+
         if($request->get('location')){
            $location = auth()->user()->locations()->where('id', $request->get('location'))->firstOrFail();
-           return view('event.add', compact(['countries', 'themes', 'languages', 'location']));
+           return view('event.add', compact(['countries', 'themes', 'languages', 'location', 'leading_teachers']));
         }
 
         if (!auth()->user()->locations->isEmpty()){
@@ -107,7 +117,7 @@ class EventController extends Controller {
             }
         }
 
-        return view('event.add', compact(['countries', 'themes', 'languages']));
+        return view('event.add', compact(['countries', 'themes', 'languages','leading_teachers']));
     }
 
     public function search() {
@@ -193,6 +203,11 @@ class EventController extends Controller {
         $languages = Arr::sort(Lang::get('base.languages'));
         //dd($event);
 
+        $leading_teachers = User::role('leading teacher')
+            ->whereNotNull('tag')
+            ->orderBy('tag')
+            ->get();
+
         return view(
             'event.edit',
             compact([
@@ -203,7 +218,8 @@ class EventController extends Controller {
                 'countries',
                 'selected_country',
                 'languages',
-                'selected_language'
+                'selected_language',
+                'leading_teachers'
             ])
         );
     }
