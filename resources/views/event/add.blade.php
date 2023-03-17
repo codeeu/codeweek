@@ -116,7 +116,7 @@
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
                                 <label for="id_audience">*@lang('event.audience_title')</label>
-                                <multiselect :options="{{ $audiences }}" value="{{ old('audience') }}" name="audience"
+                                <multiselect :options="{{ $audiences }}" value="{{ old('audience') }}" name="audience" :multiple="true"
                                              label="event.audience"></multiselect>
                             </div>
                             <div class="errors">
@@ -127,7 +127,7 @@
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field">
                                 <label for="id_theme">*@lang('event.theme_title')</label>
-                                <multiselect :options="{{ $themes }}" value="{{ old('theme') }}" name="theme"
+                                <multiselect :options="{{ $themes }}" value="{{ old('theme') }}" name="theme" :multiple="true"
                                              label="event.theme"></multiselect>
                             </div>
                             <div class="errors">
@@ -253,23 +253,39 @@
                         </div>
 
                         <div class="codeweek-form-field-wrapper">
-                            <div class="codeweek-form-field align-flex-start">
-
-
+                            <div class="codeweek-form-field-searchable">
                                 <label for="id_leading_teacher_tag_label">@lang('event.leading_teacher_tag')</label>
-                                <select id="id_leading_teacher_tag" name="leading_teacher_tag"
-                                        class="codeweek-input-select">
-                                    <option value=""></option>
-
-                                    @foreach ($leading_teachers as $leading_teacher)
-                                        <option value="{{$leading_teacher->tag}}" {{old('leading_teacher_tag') == $leading_teacher->tag ? 'selected' : ''}}>
-                                            {{$leading_teacher->tag}} </option>
-                                    @endforeach
-
-                                </select>
-
+                                <multiselect :options="{{ $leading_teachers }}" value="{{ old('leading_teacher_tag') }}" name="leading_teacher_tag" track-by="tag"
+                                             label="tag" :close-on-select="true" :searchable="true"></multiselect>
+{{--                                <label for="id_theme">*@lang('event.theme_title')</label>--}}
+{{--                                <multiselect :options="{{ $themes }}" value="{{ old('theme') }}" name="theme" :multiple="false" :multiple="true"--}}
+{{--                                             label="event.theme"></multiselect>--}}
+                            </div>
+                            <div class="errors">
+                                @component('components.validation-errors', ['field'=>'theme'])@endcomponent
                             </div>
                         </div>
+
+
+
+{{--                        <div class="codeweek-form-field-wrapper">--}}
+{{--                            <div class="codeweek-form-field align-flex-start">--}}
+
+
+{{--                                <label for="id_leading_teacher_tag_label">@lang('event.leading_teacher_tag')</label>--}}
+{{--                                <select id="id_leading_teacher_tag" name="leading_teacher_tag"--}}
+{{--                                        class="codeweek-input-select">--}}
+{{--                                    <option value=""></option>--}}
+
+{{--                                    @foreach ($leading_teachers as $leading_teacher)--}}
+{{--                                        <option value="{{$leading_teacher->tag}}" {{old('leading_teacher_tag') == $leading_teacher->tag ? 'selected' : ''}}>--}}
+{{--                                            {{$leading_teacher->tag}} </option>--}}
+{{--                                    @endforeach--}}
+
+{{--                                </select>--}}
+
+{{--                            </div>--}}
+{{--                        </div>--}}
 
                         <div class="codeweek-form-field">
                             <label for="id_picture">@lang('event.image')</label>
