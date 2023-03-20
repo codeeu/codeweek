@@ -144,6 +144,33 @@
   align-items: center;
 }
 
+.codeweek-form-field-searchable{
+  display: flex;
+  justify-content: stretch;
+  flex: 1;
+  align-items: center;
+}
+
+.codeweek-form-field-searchable.align-flex-start{
+  align-items: flex-start;
+}
+
+.codeweek-form-field-searchable input {
+  flex: 1;
+  height: 32px;
+  /*border: 1px solid #ffffff;*/
+  border-radius: 6px;
+  /*text-indent: 20px;*/
+  width: 100%;
+}
+
+.codeweek-form-field-searchable  label {
+  margin-right: 10px;
+  text-transform: uppercase;
+  width: 120px;
+  text-align: right;
+}
+
 .codeweek-form-field.align-flex-start{
   align-items: flex-start;
 }

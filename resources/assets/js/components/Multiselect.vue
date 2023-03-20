@@ -70,13 +70,7 @@ export default {
       }
     },
     customLabel(obj, label) {
-      if (!obj.name) {
-        return (obj[label]);
-      }
-
       return this.$t(label + '.' + obj.name);
-
-
     }
 
   }
