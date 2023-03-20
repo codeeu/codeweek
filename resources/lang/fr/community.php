@@ -5,7 +5,7 @@ return [
         "Communauté",
         "Ambassadeurs",
         "Enseignants principaux",
-        "Coordonnateurs Edu",
+        "Coordinateurs Edu",
         "Bénévoles de la Semaine européenne du code"
     ],
     "intro" => [
