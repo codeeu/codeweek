@@ -251,10 +251,12 @@
 
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field-searchable">
-                                <label for="id_leading_teacher_tag_label">@lang('event.leading_teacher_tag')</label>
+                                <label for="id_leading_teacher_tag_label">@lang('community.titles.3')</label>
                                 <singleselect :options="{{ json_encode($leading_teachers) }}"
                                               value="{{old('leading_teacher_tag')?old('leading_teacher_tag'):$event->leading_teacher_tag}}"
                                               name="leading_teacher_tag"
+                                              placeholder="{{__('community.titles.3')}}"
+
                                 ></singleselect>
                             </div>
                             <div class="errors">
