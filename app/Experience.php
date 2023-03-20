@@ -31,6 +31,7 @@ class Experience extends Model
             $this->points = 0;
         }
         $this->update(['points' => $this->points]);
+        UserEarnedExperience::dispatch($this->user, $points, $this->points);
         return $this;
     }
 

@@ -38,8 +38,8 @@ class CreateEventTest extends TestCase
         $this->expectException(AuthenticationException::class);
 
         $event = make('App\Event');
-        create('App\Audience',[] ,3);
-        create('App\Theme', [],3);
+        create('App\Audience', [], 3);
+        create('App\Theme', [], 3);
 
         $event->theme = "1";
         $event->tags = "tag:foo,tag:bar";
@@ -53,7 +53,6 @@ class CreateEventTest extends TestCase
     }
 
 
-
     /** @test */
     public function an_authenticated_user_can_create_events()
     {
@@ -62,8 +61,8 @@ class CreateEventTest extends TestCase
         $this->signIn();
 
         $event = make('App\Event');
-        create('App\Audience',[] ,3);
-        create('App\Theme', [],3);
+        create('App\Audience', [], 3);
+        create('App\Theme', [], 3);
 
         $event->theme = "1";
         $event->tags = "tag:foo,tag:bar";
@@ -94,8 +93,8 @@ class CreateEventTest extends TestCase
         $this->expectExceptionMessage('The audience is invalid');
 
         $event = make('App\Event');
-        create('App\Audience',[] ,3);
-        create('App\Theme', [],3);
+        create('App\Audience', [], 3);
+        create('App\Theme', [], 3);
 
         $event->theme = "1";
         $event->tags = "tag:foo,tag:bar";
@@ -119,8 +118,8 @@ class CreateEventTest extends TestCase
         $this->expectExceptionMessage('The theme is invalid');
 
         $event = make('App\Event');
-        create('App\Audience',[] ,3);
-        create('App\Theme', [],3);
+        create('App\Audience', [], 3);
+        create('App\Theme', [], 3);
 
         $event->theme = "111";
         $event->tags = "tag:foo,tag:bar";
@@ -144,8 +143,8 @@ class CreateEventTest extends TestCase
         $this->expectExceptionMessage('The selected language is invalid');
 
         $event = make('App\Event');
-        create('App\Audience',[] ,3);
-        create('App\Theme', [],3);
+        create('App\Audience', [], 3);
+        create('App\Theme', [], 3);
 
         $event->theme = "111";
         $event->tags = "tag:foo,tag:bar";
@@ -166,8 +165,8 @@ class CreateEventTest extends TestCase
         $this->signIn();
 
         $event = make('App\Event');
-        create('App\Audience',[] ,3);
-        create('App\Theme', [],3);
+        create('App\Audience', [], 3);
+        create('App\Theme', [], 3);
 
         $event->theme = "1";
         $event->tags = "tag:foo,tag:bar";
@@ -188,8 +187,8 @@ class CreateEventTest extends TestCase
         $this->signIn();
 
         $event = make('App\Event');
-        create('App\Audience',[] ,3);
-        create('App\Theme', [],3);
+        create('App\Audience', [], 3);
+        create('App\Theme', [], 3);
 
         $event->theme = "1";
 
@@ -197,7 +196,7 @@ class CreateEventTest extends TestCase
 
         $event->privacy = true;
 
-        $event->codeweek_for_all_participation_code="my_custom_code";
+        $event->codeweek_for_all_participation_code = "my_custom_code";
 
         $this->post('/events', $event->toArray());
 
@@ -209,15 +208,12 @@ class CreateEventTest extends TestCase
     }
 
 
-
     /** @test */
     public function event_should_have_a_title()
     {
         $this->publishEvent(['title' => null])->assertSessionHasErrors('title');
 
     }
-
-
 
 
     /** @test */
@@ -234,8 +230,8 @@ class CreateEventTest extends TestCase
         $this->signIn();
 
         $event = make('App\Event', ['title' => '-----']);
-        create('App\Audience',[] ,3);
-        create('App\Theme', [],3);
+        create('App\Audience', [], 3);
+        create('App\Theme', [], 3);
 
         $event->theme = "1";
 
@@ -256,9 +252,9 @@ class CreateEventTest extends TestCase
 
         Mail::fake();
 
-        $belgium = create('App\Country',['iso'=>'BE']);
-        create('App\Audience',[] ,3);
-        create('App\Theme', [],3);
+        $belgium = create('App\Country', ['iso' => 'BE']);
+        create('App\Audience', [], 3);
+        create('App\Theme', [], 3);
 
         $ambassador_be = create('App\User', ['country_iso' => $belgium->iso])->assignRole('ambassador');
 
@@ -270,6 +266,7 @@ class CreateEventTest extends TestCase
         $event->audience = "2, 3";
         $event->privacy = true;
 
+
         $this->post('/events', $event->toArray());
 
         Mail::assertQueued(\App\Mail\EventCreated::class, 1);
@@ -277,6 +274,38 @@ class CreateEventTest extends TestCase
 
     }
 
+    /** @test */
+    public function event_can_be_linked_to_leading_teacher()
+    {
+        $this->seed('RolesAndPermissionsSeeder');
+        $this->seed('LeadingTeacherRoleSeeder');
+        $this->signIn();
+
+        Mail::fake();
+
+        $belgium = create('App\Country', ['iso' => 'BE']);
+        create('App\Audience', [], 3);
+        create('App\Theme', [], 3);
+
+        $ambassador_be = create('App\User', ['country_iso' => $belgium->iso])->assignRole('ambassador');
+        $leading_teacher = create('App\User', ['country_iso' => $belgium->iso, 'tag'=>'my-tag'])->assignRole('leading teacher');
+
+        $this->assertCount(0,$leading_teacher->taggedActivities);
+        $event = make('App\Event');
+
+        $event->country_iso = $belgium->iso;
+        $event->theme = "1";
+        $event->tags = "tag:foo,tag:bar";
+        $event->audience = "2, 3";
+        $event->privacy = true;
+        $event->leading_teacher_tag = 'my-tag';
+
+        $response = $this->post('/events', $event->toArray());
+
+        $this->assertCount(1,$leading_teacher->fresh()->taggedActivities);
+
+
+    }
 
 
     /** @test */
@@ -288,8 +317,8 @@ class CreateEventTest extends TestCase
         $this->signIn();
 
         $event = make('App\Event');
-        create('App\Audience',[] ,3);
-        create('App\Theme', [],3);
+        create('App\Audience', [], 3);
+        create('App\Theme', [], 3);
 
         $event->theme = "1";
         $event->tags = "tag:foo,tag:bar";
@@ -297,7 +326,6 @@ class CreateEventTest extends TestCase
         $event->privacy = true;
         $event->geoposition = null;
         $event->language = "nl";
-
 
 
         $this->post('/events', $event->toArray());

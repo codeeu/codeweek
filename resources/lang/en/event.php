@@ -160,6 +160,9 @@ return [
     'view_your_certificate' => 'View your certificate here',
     'submit_event_and_report' => 'Submit a report for this activity and claim your Code Week certificate.',
     'report_and_claim' => 'Report activity and claim certificate',
+    'leading_teacher_tag' => 'Leading Teacher',
+    'leading_teacher_tag_choose' => 'Choose a Leading Teacher',
+
 
 
 ];
