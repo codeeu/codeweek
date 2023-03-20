@@ -3,10 +3,11 @@
 namespace Tests\Feature\Achievements\Achievements;
 
 use App\Achievements\Events\UserEarnedExperience;
+use App\Event;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Support\Facades\Event;
+
 use Illuminate\Support\Facades\Storage;
 use Tests\TestCase;
 
@@ -25,13 +26,9 @@ class TagImpactTest extends TestCase
 
         $user = auth()->user();
 
-        $tag = create('App\Tag', ['name' => 'foo-test123-bar']);
-
         $LT1 = create('App\User', ['tag' => 'foo-TEST123-bar']);
 
-        $fifty_events = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null], 50);
-
-        $tag->events()->attach($fifty_events);
+        $fifty_events = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null,'leading_teacher_tag'=>'foo-TEST123-bar'], 50);
 
         $this->assertCount(0, $user->achievements);
 
@@ -46,26 +43,47 @@ class TagImpactTest extends TestCase
         $this->assertCount(5, $LT1->fresh()->achievements);
 
         $this->assertEquals("Influencer " . Carbon::now()->year, $LT1->fresh()->achievements[0]->name);
-//
-//        $more_events = create('App\Event', ["creator_id" => $user->id, "reported_at" => null,"status" => "APPROVED", "start_date" => Carbon::now(), "end_date" => Carbon::now()], 5);
-//
-//        foreach ($more_events as $event){
-//            $this->reportEvent($event);
-//        }
-//
-//        $this->assertEquals(20, $user->getExperience()->points);
-//
-//        $this->assertCount(2, $user->fresh()->achievements);
-//
-//        $this->assertEquals("Expert Organiser 2021", $user->fresh()->achievements[1]->name);
 
+    }
 
+    /** @test */
+    public function tag_impact_badge_should_be_removed_when_activity_is_rejected()
+    {
 
+        $this->signIn();
 
+        $this->seed('RolesAndPermissionsSeeder');
+
+        $user = auth()->user();
+
+        $LT1 = create('App\User', ['tag' => 'foo-TEST123-bar']);
+
+        $ten_events = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null,'leading_teacher_tag'=>'foo-TEST123-bar'], 5);
+
+        $this->assertCount(0, $user->achievements);
+
+        foreach ($ten_events as $event){
+            $event->update([
+                'status' => 'APPROVED'
+            ]);
+        }
+
+        $this->assertEquals(10, $LT1->getExperience()->points);
+
+        $this->assertCount(1, $LT1->fresh()->achievements);
+
+        $bad_event = Event::firstWhere('id','=',3);
+
+        $bad_event->update([
+            'status' => 'PENDING'
+        ]);
+
+        $this->assertEquals(8, $LT1->fresh()->getExperience()->points);
+
+        $this->assertCount(0, $LT1->fresh()->achievements);
 
 
 
     }
-
 
 }

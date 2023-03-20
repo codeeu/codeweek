@@ -20,6 +20,7 @@ import countrySelect from './components/CountrySelect.vue';
 import flash from './components/Flash.vue';
 import avatarForm from './components/AvatarForm.vue';
 import pictureForm from './components/PictureForm.vue';
+import Singleselect from './components/Singleselect.vue';
 import dateTime from './components/DateTime.vue';
 import inputTags from './components/InputTags.vue';
 import moderateEvent from './components/ModerateEvent.vue';
@@ -79,7 +80,9 @@ const app = new Vue({
         AutocompleteGeo,
         Autocomplete,
         ResourceForm,
-        SearchPageComponent
+        SearchPageComponent,
+        Singleselect
+
 
 
     }

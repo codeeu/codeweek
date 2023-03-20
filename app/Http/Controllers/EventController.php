@@ -23,15 +23,18 @@ use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
-class EventController extends Controller {
+class EventController extends Controller
+{
     /**
      * EventController constructor.
      */
-    public function __construct() {
+    public function __construct()
+    {
         $this->middleware('auth')->except(['index', 'show', 'my']);
     }
 
-    public function my() {
+    public function my()
+    {
         $events = Event::where('creator_id', '=', Auth::user()->id)
             ->orderBy('created_at', 'desc')
             ->paginate(6);
@@ -55,7 +58,8 @@ class EventController extends Controller {
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request) {
+    public function index(Request $request)
+    {
         $years = range(Carbon::now()->year, 2014, -1);
 
         $selectedYear = $request->input('year')
@@ -68,6 +72,7 @@ class EventController extends Controller {
             ->where('country_iso', '=', $iso_country_of_user)
             ->get();
 
+
         return view('events')->with([
             'events' => $this->eventsNearMe(),
             'years' => $years,
@@ -78,7 +83,8 @@ class EventController extends Controller {
         ]);
     }
 
-    private function eventsNearMe() {
+    private function eventsNearMe()
+    {
         $geoip = User::getGeoIPData();
         return EventHelper::getCloseEvents($geoip->lon, $geoip->lat);
     }
@@ -87,7 +93,8 @@ class EventController extends Controller {
      * Show the form for creating a new resource.
      *
      */
-    public function create(Request $request) {
+    public function create(Request $request)
+    {
 
         //Redirect if we have locations
         $countries = \App\Country::all()->sortBy('name');
@@ -96,21 +103,26 @@ class EventController extends Controller {
 
         $languages = Arr::sort(Lang::get('base.languages'));
 
-        if($request->get('location')){
-           $location = auth()->user()->locations()->where('id', $request->get('location'))->firstOrFail();
-           return view('event.add', compact(['countries', 'themes', 'languages', 'location']));
+        $leading_teachers = $this->getLeadingTeachersTagsArray();
+
+
+        if ($request->get('location')) {
+            $location = auth()->user()->locations()->where('id', $request->get('location'))->firstOrFail();
+            return view('event.add', compact(['countries', 'themes', 'languages', 'location', 'leading_teachers']));
         }
 
-        if (!auth()->user()->locations->isEmpty()){
-            if (!$request->get('skip')){
+        if (!auth()->user()->locations->isEmpty()) {
+            if (!$request->get('skip')) {
                 return redirect(route('activities-locations'));
             }
         }
 
-        return view('event.add', compact(['countries', 'themes', 'languages']));
+
+        return view('event.add', compact(['countries', 'themes', 'languages', 'leading_teachers']));
     }
 
-    public function search() {
+    public function search()
+    {
         $events = Event::all();
         return view('event.search', compact('events'));
     }
@@ -121,7 +133,8 @@ class EventController extends Controller {
      * @param EventRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function store(EventRequest $request) {
+    public function store(EventRequest $request)
+    {
         $user = auth()->user();
 
         $user->privacy = true;
@@ -147,7 +160,8 @@ class EventController extends Controller {
      * @param \App\Event $event
      * @return \Illuminate\Http\Response
      */
-    public function show(Event $event) {
+    public function show(Event $event)
+    {
 
         if ($event->status == 'PENDING' && !Auth::check()) {
             return redirect(route('login'));
@@ -164,7 +178,8 @@ class EventController extends Controller {
      * @param \App\Event $event
      * @return \Illuminate\Http\Response
      */
-    public function edit(Event $event) {
+    public function edit(Event $event)
+    {
         $this->authorize('edit', $event);
 
         $t = $event
@@ -193,6 +208,8 @@ class EventController extends Controller {
         $languages = Arr::sort(Lang::get('base.languages'));
         //dd($event);
 
+        $leading_teachers = $this->getLeadingTeachersTagsArray();
+
         return view(
             'event.edit',
             compact([
@@ -203,7 +220,8 @@ class EventController extends Controller {
                 'countries',
                 'selected_country',
                 'languages',
-                'selected_language'
+                'selected_language',
+                'leading_teachers'
             ])
         );
     }
@@ -215,7 +233,8 @@ class EventController extends Controller {
      * @param \App\Event $event
      * @return \Illuminate\Http\Response
      */
-    public function update(EventRequest $request, Event $event) {
+    public function update(EventRequest $request, Event $event)
+    {
         $this->authorize('edit', $event);
 
         EventsQuery::update($request, $event);
@@ -229,18 +248,21 @@ class EventController extends Controller {
      * @param \App\Event $event
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Event $event) {
+    public function destroy(Event $event)
+    {
         //
     }
 
-    public function approve(Event $event) {
+    public function approve(Event $event)
+    {
         $this->authorize('approve', $event);
 
         $event->approve();
     }
 
-    public function approveAll($country) {
-        $object = (object) ['iso' => $country];
+    public function approveAll($country)
+    {
+        $object = (object)['iso' => $country];
 
         $events = PendingEventsQuery::trigger($object);
 
@@ -253,7 +275,8 @@ class EventController extends Controller {
         return redirect('pending/' . $country);
     }
 
-    public function reject(Request $request, Event $event) {
+    public function reject(Request $request, Event $event)
+    {
         $rejectionText = $request->get('rejectionText', null);
 
         try {
@@ -264,7 +287,8 @@ class EventController extends Controller {
         $event->reject($rejectionText);
     }
 
-    private function sendDeletionEmail($event){
+    private function sendDeletionEmail($event)
+    {
 
         if ($event->creator_id == auth()->id()) return;
 
@@ -279,7 +303,9 @@ class EventController extends Controller {
         }
 
     }
-    public function delete(Request $request, Event $event) {
+
+    public function delete(Request $request, Event $event)
+    {
         $this->authorize('delete', $event);
         $this->sendDeletionEmail($event);
         $event->delete();
@@ -301,5 +327,21 @@ class EventController extends Controller {
         return redirect()
             ->route('my_events')
             ->with('flash', 'Your event has been deleted!');
+    }
+
+    /**
+     * @return array
+     */
+    public function getLeadingTeachersTagsArray(): array
+    {
+        $leading_teachers = User::role('leading teacher')
+            ->select('tag')
+            ->whereNotNull('tag')
+            ->orderBy('tag')
+            ->get()
+            ->toArray();
+
+        $leading_teachers = Arr::pluck($leading_teachers, 'tag');
+        return $leading_teachers;
     }
 }

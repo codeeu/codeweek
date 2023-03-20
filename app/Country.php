@@ -2,7 +2,9 @@
 
 namespace App;
 
+use App\Helpers\Codeweek4AllHelper;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Log;
@@ -51,12 +53,18 @@ class Country extends Model
     public static function withEvents()
     {
 
-        $isos = DB::table('events')
-            ->select(['country_iso'])
-            ->where('status', "=", "APPROVED")
-            ->groupBy('country_iso')
-            ->get()
-            ->pluck('country_iso');
+
+        $ttl = 60*60*24;
+        $isos = Cache::remember('isos', $ttl, function ()  {
+            return DB::table('events')
+                ->select(['country_iso'])
+                ->where('status', "=", "APPROVED")
+                ->groupBy('country_iso')
+                ->get()
+                ->pluck('country_iso');
+
+        });
+
 
 
         $countries = Country::whereIn('iso',$isos)->get();
@@ -78,9 +86,6 @@ class Country extends Model
         foreach ($countries as $country) {
             $country->translation = __('countries.' . $country->name);
         }
-
-//       dd($countries->sortBy("translation"));
-//       return($countries);
 
         return $countries->sortBy("translation")->values();
     }

@@ -2,7 +2,6 @@
 
 @section('content')
 
-
     <section id="codeweek-events-add-page" class="codeweek-page">
 
         <section class="codeweek-banner simple">
@@ -85,12 +84,12 @@
                             <div class="codeweek-form-field">
                                 <label for="id_organizer">* @lang('event.organizertype.label')</label>
                                 <select id="id_organizer_type" name="organizer_type" class="codeweek-input-select">
-                                    <option disabled selected value> ---</option>
-                                    <option value="school">@lang('event.organizertype.school')</option>
-                                    <option value="library">@lang('event.organizertype.library')</option>
-                                    <option value="non profit">@lang('event.organizertype.non profit')</option>
-                                    <option value="private business">@lang('event.organizertype.private business')</option>
-                                    <option value="other">@lang('event.organizertype.other')</option>
+                                    <option disabled value> ---</option>
+                                    <option value="school" {{ old('organizer_type') == "school" ? 'selected' : '' }}>@lang('event.organizertype.school')</option>
+                                    <option value="library" {{ old('organizer_type') == "library" ? 'selected' : '' }}>@lang('event.organizertype.library')</option>
+                                    <option value="non profit" {{ old('organizer_type') == "non profit" ? 'selected' : '' }}>@lang('event.organizertype.non profit')</option>
+                                    <option value="private business" {{ old('organizer_type') == "private business" ? 'selected' : '' }}>@lang('event.organizertype.private business')</option>
+                                    <option value="other" {{ old('organizer_type') == "other" ? 'selected' : '' }}>@lang('event.organizertype.other')</option>
                                 </select>
                             </div>
                             <div class="errors">
@@ -118,6 +117,7 @@
                             <div class="codeweek-form-field">
                                 <label for="id_audience">*@lang('event.audience_title')</label>
                                 <multiselect :options="{{ $audiences }}" value="{{ old('audience') }}" name="audience"
+                                             :multiple="true"
                                              label="event.audience"></multiselect>
                             </div>
                             <div class="errors">
@@ -129,6 +129,7 @@
                             <div class="codeweek-form-field">
                                 <label for="id_theme">*@lang('event.theme_title')</label>
                                 <multiselect :options="{{ $themes }}" value="{{ old('theme') }}" name="theme"
+                                             :multiple="true"
                                              label="event.theme"></multiselect>
                             </div>
                             <div class="errors">
@@ -253,6 +254,19 @@
                             </div>
                         </div>
 
+                        <div class="codeweek-form-field-wrapper">
+                            <div class="codeweek-form-field-searchable">
+                                <label for="id_leading_teacher_tag_label">@lang('community.titles.3')</label>
+                                <singleselect :options="{{ json_encode($leading_teachers) }}"
+                                              value="{{ old('leading_teacher_tag') }}"
+                                              name="leading_teacher_tag"
+                                              ></singleselect>
+                            </div>
+                            <div class="errors">
+                                @component('components.validation-errors', ['field'=>'theme'])@endcomponent
+                            </div>
+                        </div>
+
                         <div class="codeweek-form-field">
                             <label for="id_picture">@lang('event.image')</label>
                             <div data-provides="fileinput" data-name="picture">
@@ -279,7 +293,9 @@
                             <label for="id_user_email">* @lang('event.contact.label')</label>
                             <input id="id_user_email" name="user_email" type="email"
                                    placeholder="@lang('event.contact.placeholder')"
-                                   value="{{old('user_email')}}">
+                                   value="{{old('user_email')}}"
+                            track-by="tag"
+                                   label="tag">
                         </div>
                         <div class="errors">
                             @component('components.validation-errors', ['field'=>'user_email'])@endcomponent
@@ -330,6 +346,9 @@
             "width": "422",
             "custom": ["/js/hideMenuMap.js"]
         }
+
+
+
 
 
 
