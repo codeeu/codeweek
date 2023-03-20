@@ -256,10 +256,11 @@
 
                         <div class="codeweek-form-field-wrapper">
                             <div class="codeweek-form-field-searchable">
-                                <label for="id_leading_teacher_tag_label">@lang('event.leading_teacher_tag')</label>
+                                <label for="id_leading_teacher_tag_label">@lang('community.titles.3')</label>
                                 <singleselect :options="{{ json_encode($leading_teachers) }}"
                                               value="{{ old('leading_teacher_tag') }}"
-                                              name="leading_teacher_tag"></singleselect>
+                                              name="leading_teacher_tag"
+                                              ></singleselect>
                             </div>
                             <div class="errors">
                                 @component('components.validation-errors', ['field'=>'theme'])@endcomponent

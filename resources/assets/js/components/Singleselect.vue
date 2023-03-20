@@ -2,11 +2,8 @@
   <div class="multiselect-wrapper">
     <multiselect
         v-model="values"
-        :options="options"
-        searchable="true"
-        close-on-select="true"
-        show-labels="false"
-        placeholder="Choose a Leading Teacher Tag"
+        :options="option"
+        :placeholder="placeholder"
         >
     </multiselect>
     <input :name="name" type="hidden" :value="values">
@@ -23,11 +20,14 @@ export default {
   props: {
     name: String,
     options: Array,
-    value: String
+    value: String,
+    placeholder: String
   },
   data() {
     return {
       values: this.value,
+      option: this.options,
+
       // options: [
       //   { name: 'Vue.js', language: 'JavaScript' },
       //   { name: 'Rails', language: 'Ruby' },
