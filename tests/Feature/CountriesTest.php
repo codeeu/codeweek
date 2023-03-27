@@ -43,5 +43,25 @@ class CountriesTest extends TestCase
 
     }
 
+    /** @test */
+    public function get_countries_with_coordinators()
+    {
+
+        $this->seed('RolesAndPermissionsSeeder');
+        $this->seed('LeadingTeacherRoleSeeder');
+        $countries = create('App\Country',[], 10);
+        $france = create('App\Country',['iso'=>'FR']);
+        $belgium = create('App\Country',['iso'=>'BE']);
+
+
+        $ambassador_fr = create('App\User', ['country_iso' => $france->iso])->assignRole('ambassador');
+        $ambassador_be = create('App\User', ['country_iso' => $belgium->iso])->assignRole('ambassador');
+        $leading_teacher_be = create('App\User', ['country_iso' => $belgium->iso])->assignRole('leading teacher');
+
+        $this->assertCount(2,Country::withCoordinators());
+
+
+    }
+
 
 }
