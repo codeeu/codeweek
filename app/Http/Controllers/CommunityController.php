@@ -19,40 +19,15 @@ class CommunityController extends Controller
             return redirect('community?country_iso=' . $country_iso);
         };
 
-
-
-
         $ambassadors = User::role('ambassador')->filter($filters)->whereNotNull("avatar_path")->whereNotNull("bio")->paginate(10);
 
         $teachers = User::role('leading teacher')->where('approved',1)->with('city')->get();
 
-        /*foreach ($teachers as $teacher){
-            dd($teacher->expertises);
-        }*/
-        //dd($teachers->groupBy('city.id'));
-
-
-
-//        foreach ($teachers->groupBy('city_id') as $cityId => $teachersInCity){
-//            Log::info($cityId);
-//
-//            foreach($teachersInCity as $teacherInCity){
-//                Log::info('--- ' . $teacherInCity->fullName);
-//            }
-//        }
-//
-//        dd('ok');
-
-
-
-
-
-
+        $countries = Country::withCoordinators();
 
         return view('community')->with([
             "ambassadors" => $ambassadors,
-            "countries" => Country::withEvents(),
-            "countries_with_ambassadors" => AmbassadorHelper::getByActiveCountries(),
+            "countries" => $countries,
             "teachers" => $teachers,
             "country_iso" => request()->get('country_iso')
         ]);

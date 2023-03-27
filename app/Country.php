@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Helpers\AmbassadorHelper;
 use App\Helpers\Codeweek4AllHelper;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Cache;
@@ -75,6 +76,34 @@ class Country extends Model
         }
 
         return $countries->sortBy("translation");
+
+    }
+
+    public static function withCoordinators()
+    {
+
+        $ttl = 60*60*24;
+        $iso_community = Cache::remember('isos-community', $ttl, function ()  {
+            return User::role(['ambassador','leading teacher'])
+                ->where("country_iso","<>", "")
+                ->join('countries', 'country_iso', '=', 'countries.iso')
+                ->groupBy('country_iso')
+                ->select('country_iso as iso', DB::raw('count(*) as total'),'countries.name')
+                ->orderBy("countries.name")
+                ->get()
+                ->pluck('iso');
+
+        });
+
+        $countries = Country::whereIn('iso',$iso_community)->get();
+
+
+        foreach ($countries as $country) {
+            $country->translation = __('countries.' . $country->name);
+        }
+
+        return $countries->sortBy("translation");
+
 
     }
 
