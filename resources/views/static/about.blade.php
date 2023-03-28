@@ -93,6 +93,6 @@
 
 @endsection
 
-@push('scripts')
-    <script src="https://t003c459d.emailsys2a.net/form/26/4245/574a0c9b7e/popup.js" async></script>
-@endpush
+{{--@push('scripts')--}}
+{{--    <script src="https://t003c459d.emailsys2a.net/form/26/4245/574a0c9b7e/popup.js" async></script>--}}
+{{--@endpush--}}
