@@ -199,6 +199,14 @@
                             <p>{{ $event->codeweek_for_all_participation_code }}</p>
                         </div>
                     @endif
+
+                    <div class="codeweek-display-field">
+                        <label class="block text-orange-500 font-bold mb-1 md:mb-0 pr-4"
+                               for="inline-full-name">@lang('event.last_update')</label>
+                        <p>
+                            {{Carbon\Carbon::parse($event->updated_at)->isoFormat('LLLL')}}
+                        </p>
+                    </div>
                 @endcan
 
 
@@ -264,6 +272,8 @@
             "renderTo" : "events-show-map",
             "custom": ["/js/hideMenuMap.js","/js/leaflet.markercluster.js"]
         }
+
+
 
 
 
