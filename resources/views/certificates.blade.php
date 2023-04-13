@@ -41,11 +41,11 @@
                                             <img src="/images/download.svg">
                                         </a>
                                     @else
-                                        @if($certificate_of_participation->status == 'ERROR')
-                                            Error with special characters.
-                                        @else
+{{--                                        @if($certificate_of_participation->status == 'ERROR')--}}
+{{--                                            Error with special characters.--}}
+{{--                                        @else--}}
                                             Processing ...
-                                        @endif
+{{--                                        @endif--}}
                                     @endif
                                 </td>
                             </tr>
@@ -103,8 +103,7 @@
                             <tr>
                                 <td colspan="5">
                                     <a href="{{route('certificate_super_organiser_report', ['edition'=>$super_organiser_certificate->edition])}}">
-                                        Claim your Super Organiser certificate
-                                        for {{$super_organiser_certificate->edition}}
+                                        Claim your Super Organiser certificate for {{$super_organiser_certificate->edition}}
                                     </a>
                                 </td>
                             </tr>
