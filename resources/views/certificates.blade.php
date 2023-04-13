@@ -36,12 +36,16 @@
                                 <td>{{$certificate_of_participation->event_name}}</td>
                                 <td class="actions">
                                     @if(!empty($certificate_of_participation->participation_url))
-                                    <a title="Download your certificate" class="codeweek-svg-button"
-                                       href="{{$certificate_of_participation->participation_url}}">
-                                        <img src="/images/download.svg">
-                                    </a>
+                                        <a title="Download your certificate" class="codeweek-svg-button"
+                                           href="{{$certificate_of_participation->participation_url}}">
+                                            <img src="/images/download.svg">
+                                        </a>
                                     @else
-                                    Processing ...
+                                        @if($certificate_of_participation->status == 'ERROR')
+                                            Error with special characters.
+                                        @else
+                                            Processing ...
+                                        @endif
                                     @endif
                                 </td>
                             </tr>
@@ -99,7 +103,8 @@
                             <tr>
                                 <td colspan="5">
                                     <a href="{{route('certificate_super_organiser_report', ['edition'=>$super_organiser_certificate->edition])}}">
-                                        Claim your Super Organiser certificate for {{$super_organiser_certificate->edition}}
+                                        Claim your Super Organiser certificate
+                                        for {{$super_organiser_certificate->edition}}
                                     </a>
                                 </td>
                             </tr>
@@ -135,7 +140,7 @@
     </section>
 
     <script>
-        setTimeout(function(){
+        setTimeout(function () {
             window.location.reload(1);
         }, 20000);
     </script>
