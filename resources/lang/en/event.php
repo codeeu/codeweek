@@ -162,6 +162,7 @@ return [
     'report_and_claim' => 'Report activity and claim certificate',
     'leading_teacher_tag' => 'Leading Teacher',
     'leading_teacher_tag_choose' => 'Choose a Leading Teacher',
+    'last_update' => 'Last update'
 
 
 
