@@ -19,10 +19,10 @@
                         <img src="/images/github_white.svg">
                         @lang('login.github')
                     </a>
-                    <a href="/login/twitter" class="codeweek-action-link-button twitter">
-                        <img src="/images/twitter_white.svg">
-                        @lang('login.twitter')
-                    </a>
+{{--                    <a href="/login/twitter" class="codeweek-action-link-button twitter">--}}
+{{--                        <img src="/images/twitter_white.svg">--}}
+{{--                        @lang('login.twitter')--}}
+{{--                    </a>--}}
                     <a href="/login/facebook" class="codeweek-action-link-button facebook">
                         <img src="/images/facebook_white.svg">
                         @lang('login.facebook')
