@@ -16,6 +16,7 @@ class CertificateExcellence
     private $templateName;
 
     private $name_of_certificate_holder;
+    private $email_of_certificate_holder;
     private $resource_path;
     private $pdflatex;
     private $personalized_template_name;
@@ -23,16 +24,17 @@ class CertificateExcellence
     private $id;
     private $edition;
 
-    public function __construct($edition, $name_for_certificate, $type = "excellence", $number_of_activities = null)
+    public function __construct($edition, $name_for_certificate, $type = "excellence", )
     {
         $this->edition = $edition;
         $this->name_of_certificate_holder = $name_for_certificate;
+        $this->email_of_certificate_holder = auth()->user()->email ?? '';
         $this->personalized_template_name = $edition . "-" . auth()->id();
         $this->resource_path = resource_path() . "/latex";
         $this->pdflatex = config('codeweek.pdflatex_path');
         $this->id = auth()->id() . '-' . str_random(10);
         $this->type = $type;
-        $this->number_of_activities = $number_of_activities;
+
         $this->templateName = "{$this->type}-{$this->edition}.tex";
 
         Log::info("User ID " . auth()->id() . " generating {$this->type} certificate with name: " . $name_for_certificate);
@@ -45,6 +47,7 @@ class CertificateExcellence
         $this->run_pdf_creation();
         $s3path = $this->copy_to_s3();
         $this->clean_temp_files();
+
 
         return $s3path;
 
@@ -129,8 +132,10 @@ class CertificateExcellence
 
         //replace the text in template
         $template = str_replace('<CERTIFICATE_HOLDER_NAME>', $this->tex_escape($this->name_of_certificate_holder), $base_template);
+
         if ($this->type == "super-organiser") {
-            $template = str_replace('<NUMBER_OF_ACTIVITIES>', $this->tex_escape($this->number_of_activities), $template);
+            $template = str_replace('<CERTIFICATE_EMAIL>', $this->tex_escape($this->email_of_certificate_holder), $template);
+            $template = str_replace('<CERTIFICATE_DATE>', $this->tex_escape(Carbon::now()->format('d/m/Y')), $template);
         }
 
         //save it locally
@@ -144,7 +149,11 @@ class CertificateExcellence
 //call the pdflatex command
         $command = $this->pdflatex . " -interaction=nonstopmode -output-directory " . $this->resource_path . " " . $this->resource_path . "/" . $this->personalized_template_name . ".tex";
 
+        Log::info($command);
+
         $cwd = $this->resource_path;
+
+        Log::info($cwd);
 
         // $process = new Process($command, $cwd);
         $process = Process::fromShellCommandline($command, $cwd);
