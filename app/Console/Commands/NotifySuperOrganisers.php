@@ -51,8 +51,9 @@ class NotifySuperOrganisers extends Command
 
             $user = $winner->user;
 
+            if(!$user) continue;
 
-            if ($user->email){
+            if ($user->email && $user->receive_emails){
                 Mail::to($user->email)->queue(new \App\Mail\NotifySuperOrganiser($user, $edition));
                 $excellence = $user->superOrganisers->where('edition', '=' , $edition)->first();
 
