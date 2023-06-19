@@ -49,7 +49,7 @@ class CountriesTest extends TestCase
 
         $this->seed('RolesAndPermissionsSeeder');
         $this->seed('LeadingTeacherRoleSeeder');
-        $countries = create('App\Country',[], 10);
+//        $countries = create('App\Country',[], 10);
         $france = create('App\Country',['iso'=>'FR']);
         $belgium = create('App\Country',['iso'=>'BE']);
 
