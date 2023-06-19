@@ -35,12 +35,17 @@ class ParticipationController extends Controller
     public function generate(Request $request)
     {
 
-
-        $this->validate($request, [
-            'names' => 'required',
+        $rules = [
             'event_name' => 'required|max:50',
-            'event_date' => 'required|max:20'
-        ]);
+            'event_date' => 'required|max:20',
+            'names' => 'required|regex:/^[^ə]*$/u',
+        ];
+
+        $messages = [
+            'names.regex' => 'The :attribute field must not contain the ə character.',
+        ];
+
+        $request->validate($rules, $messages);
 
         $participation = new Participation([
                 "user_id" => auth()->id(),

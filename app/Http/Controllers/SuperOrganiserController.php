@@ -34,9 +34,15 @@ class SuperOrganiserController extends Controller
 
         }
 
-        $this->validate($request, [
-            'name_for_certificate' => 'required|max:40'
-        ]);
+        $rules = [
+            'name_for_certificate' => 'required|max:40|regex:/^[^ə]*$/u'
+        ];
+
+        $messages = [
+            'name_for_certificate.regex' => 'The :attribute field must not contain the ə character.',
+        ];
+
+        $request->validate($rules, $messages);
 
         $name = $request["name_for_certificate"];
 
