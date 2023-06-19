@@ -31,12 +31,18 @@ class ReportController extends Controller
 
         $this->authorize('report', $event);
 
-        $this->validate($request, [
+        $rules = [
             'participants_count' => 'required|numeric|min:1',
             'average_participant_age' => 'required|numeric|min:1',
             'percentage_of_females' => 'required|numeric|between:0,100',
-            'name_for_certificate' => 'required'
-        ]);
+            'name_for_certificate' => 'required|max:40|regex:/^[^ə]*$/u'
+        ];
+
+        $messages = [
+            'name_for_certificate.regex' => 'The :attribute field must not contain the ə character.',
+        ];
+
+        $request->validate($rules, $messages);
 
         $event->update([
             'reported_at' => Carbon::now()
@@ -46,10 +52,7 @@ class ReportController extends Controller
 
         $event->update($input);
 
-
         $event->update(['certificate_url' => (new Certificate($event))->generate()]);
-//        $event->update(['certificate_url' => "pompom"]);
-
 
         return view('report.thankyou', compact('event'));
     }
