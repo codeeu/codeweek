@@ -223,7 +223,7 @@
                                  data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
                                  data-show-facepile="true">
                                 <blockquote cite="https://www.facebook.com/codeEU" class="fb-xfbml-parse-ignore"><a
-                                            href="https://www.facebook.com/codeEU">Europe Code Week</a></blockquote>
+                                            href="https://www.facebook.com/codeEU">EU Code Week</a></blockquote>
                             </div>
                         </div>
                     </div>
