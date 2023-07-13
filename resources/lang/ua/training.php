@@ -30,7 +30,7 @@ return [
                 </p>
 
                 <p>
-                    In this video, Alessandro Bogliolo, Professor of Computer Systems in Italy and Europe Code Week Coordinator, will introduce unplugged coding activities that can be practiced without any electronic device. The main purpose of unplugged activities is to lower the access barriers to bring coding in every school, regardless of funding and equipment.
+                    In this video, Alessandro Bogliolo, Professor of Computer Systems in Italy and EU Code Week Coordinator, will introduce unplugged coding activities that can be practiced without any electronic device. The main purpose of unplugged activities is to lower the access barriers to bring coding in every school, regardless of funding and equipment.
                 </p>
 
                 <p>
