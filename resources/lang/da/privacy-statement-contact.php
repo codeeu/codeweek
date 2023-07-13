@@ -15,7 +15,7 @@ return [
     ],
 
     '3-legal_process' => [
-        'Behandlingens lovlighed: Kontor G.2 indsamler, lagrer og offentliggør dine personoplysninger, fordi du har givet dit udtrykkelige samtykke ved at sætte kryds i et felt, da du tilmeldte dig som Code Week Ambassador eller Leading Teacher, eller da du ansøgte om at registrere et arrangement på <a href="https://codeweek.eu/register">Europe Code Week.</a>',
+        'Behandlingens lovlighed: Kontor G.2 indsamler, lagrer og offentliggør dine personoplysninger, fordi du har givet dit udtrykkelige samtykke ved at sætte kryds i et felt, da du tilmeldte dig som Code Week Ambassador eller Leading Teacher, eller da du ansøgte om at registrere et arrangement på <a href="https://codeweek.eu/register">EU Code Week.</a>',
 
     ],
     '4-collect_data' => [

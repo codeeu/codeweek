@@ -62,7 +62,7 @@ return [
             '4-2'=>'but you\'ll be the moderator for events in your country. All you need to do is to regularly',
             '4-3'=>'take a quick look at submitted events and check if they are a good fit for Code Week',
             '5-1'=>'It needs to be easy for everyone to start a coding event. You probably know some great online learning materials for beginner coders in your language,',
-            '5-2'=>'so you can maintain a list of resources for your country on the Europe Code Week website',
+            '5-2'=>'so you can maintain a list of resources for your country on the EU Code Week website',
             '6-1'=>'Provide interesting news and content about coding from your country',
             '6-2'=>'that we can promote on Code Week social media channels. We\'re primarily looking for content in English, so you can help by asking organizers to share their stories and tips in English for',
             '6-3'=>'our blog.',

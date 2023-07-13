@@ -18,7 +18,7 @@ return [
             'author' => 'med Alessandro Bogliolo',
             'text' => '<p>Kod är tingens språk och med kodning kan vi skriva program som förser miljarder av programmerbara föremål runt omkring oss med nya funktioner. Kodning är det snabbaste sättet att förverkliga våra idéer och det mest effektiva sättet att utveckla datalogiskt tänkande. Men tekniken är inte nödvändig för att utveckla datalogiskt tänkande. Det är snarare så att vår förmåga till datalogiskt tänkande är avgörande för att tekniken ska fungera.</p>
 
-                    <p>I den här filmen presenterar Alessandro Bogliolo, professor i datorsystem i Italien och samordnare för Europe Code Week, kodningsaktiviteter som kan utföras utan elektroniska enheter. Huvudsyftet med de frånkopplade aktiviteterna är att göra det enklare för alla skolor att introducera kodning, oavsett finansiering och utrustning.</p>
+                    <p>I den här filmen presenterar Alessandro Bogliolo, professor i datorsystem i Italien och samordnare för EU Code Week, kodningsaktiviteter som kan utföras utan elektroniska enheter. Huvudsyftet med de frånkopplade aktiviteterna är att göra det enklare för alla skolor att introducera kodning, oavsett finansiering och utrustning.</p>
 
                     <p>Frånkopplad kodning avslöjar de datalogiska aspekterna av den fysiska världen runt omkring oss.</p>',
             'activities' => [
