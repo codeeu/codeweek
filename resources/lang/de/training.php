@@ -18,7 +18,7 @@ return [
             'author' => 'von Alessandro Bogliolo',
             'text' => '<p>Das Programmieren ist die Sprache der Dinge, die es uns ermöglicht, Programme zu schreiben, um für die vielen Milliarden programmierbarer Objekte in unserer Umgebung neue Funktionen hinzuzufügen. Das Programmieren ist die schnellste Methode zur Verwirklichung unserer Ideen und die effektivste Methode zur Entwicklung von Fertigkeiten im rechnergestützten Denken. Doch die Technologie ist nicht zwingend auf die Entwicklung des rechnergestützten Denkens angewiesen. Unsere Fähigkeiten im rechnergestützten Denken sind von grundlegender Bedeutung, damit die Technologie funktioniert.</p>
 
-                    <p>In diesem Video stellt Ihnen Alessandro Bogliolo, Professor für Computersysteme in Italien und Koordinator der Europe Code Week, Programmiertätigkeiten vor, die ohne irgend ein elektronisches Gerät geübt werden können. Das oberste Ziel von Aktivitäten ohne Computer ist die Senkung von Zugangshindernissen, um an jeder Schule – unabhängig von Finanzmitteln und Ausrüstung – das Programmieren einzuführen.</p>
+                    <p>In diesem Video stellt Ihnen Alessandro Bogliolo, Professor für Computersysteme in Italien und Koordinator der EU Code Week, Programmiertätigkeiten vor, die ohne irgend ein elektronisches Gerät geübt werden können. Das oberste Ziel von Aktivitäten ohne Computer ist die Senkung von Zugangshindernissen, um an jeder Schule – unabhängig von Finanzmitteln und Ausrüstung – das Programmieren einzuführen.</p>
 
                     <p>Programmiertätigkeiten ohne Computer enthüllen die rechnerischen Aspekte unserer Umwelt.</p>',
             'activities' => [

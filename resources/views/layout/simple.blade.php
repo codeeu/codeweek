@@ -58,7 +58,7 @@
     <meta name="description" content="October 7 - 22, 2023: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding." />
 
 
-    <title>Europe Code Week</title>
+    <title>EU Code Week</title>
 
 
 </head>

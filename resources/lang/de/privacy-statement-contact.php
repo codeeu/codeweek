@@ -15,7 +15,7 @@ return [
     ],
 
     '3-legal_process' => [
-        'Rechtmäßigkeit der Verarbeitung: Das Referat G.2 erhebt, speichert und veröffentlicht Ihre personenbezogenen Daten, weil Sie bei Ihrer Anmeldung als Botschafter/in der Code Week, Leading Teacher oder bei der Registrierung einer Veranstaltung auf <a href="https://codeweek.eu/register">Europe Code Week</a> durch Ankreuzen eines Kästchens Ihre ausdrückliche Zustimmung gegeben haben.',
+        'Rechtmäßigkeit der Verarbeitung: Das Referat G.2 erhebt, speichert und veröffentlicht Ihre personenbezogenen Daten, weil Sie bei Ihrer Anmeldung als Botschafter/in der Code Week, Leading Teacher oder bei der Registrierung einer Veranstaltung auf <a href="https://codeweek.eu/register">EU Code Week</a> durch Ankreuzen eines Kästchens Ihre ausdrückliche Zustimmung gegeben haben.',
 
     ],
     '4-collect_data' => [

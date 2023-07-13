@@ -15,7 +15,7 @@ return [
     ],
 
     '3-legal_process' => [
-        'Zakonitost operacije obrade: Jedinica G.2 prikuplja, čuva i objavljuje vaše lične podatke, jer ste dali svoju izričitu saglasnost tako što ste označili polje kada ste se prijavili da postanete ambasador nedjelje kodiranja, (Code Week), vodeći nastavnik ili kada ste se prijavili za registraciju događaja na <a href="https://codeweek.eu/register">Evropska nedjelja programiranja, (Europe Code Week).</a>',
+        'Zakonitost operacije obrade: Jedinica G.2 prikuplja, čuva i objavljuje vaše lične podatke, jer ste dali svoju izričitu saglasnost tako što ste označili polje kada ste se prijavili da postanete ambasador nedjelje kodiranja, (Code Week), vodeći nastavnik ili kada ste se prijavili za registraciju događaja na <a href="https://codeweek.eu/register">Evropska nedjelja programiranja, (EU Code Week).</a>',
 
     ],
     '4-collect_data' => [

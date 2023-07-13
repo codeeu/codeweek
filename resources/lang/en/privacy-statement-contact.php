@@ -15,7 +15,7 @@ return [
     ],
 
     '3-legal_process' => [
-        'Lawfulness of the processing operation: Unit G.2 collects, stores and publishes your personal data, because you gave your explicit consent by ticking a box when you signed up to become a Code Week Ambassador, a Leading Teacher or when you applied to register an event on <a href="https://codeweek.eu/register">Europe Code Week.</a>',
+        'Lawfulness of the processing operation: Unit G.2 collects, stores and publishes your personal data, because you gave your explicit consent by ticking a box when you signed up to become a Code Week Ambassador, a Leading Teacher or when you applied to register an event on <a href="https://codeweek.eu/register">EU Code Week.</a>',
 
     ],
     '4-collect_data' => [

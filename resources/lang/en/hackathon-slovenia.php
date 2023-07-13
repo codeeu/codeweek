@@ -32,7 +32,7 @@ return [
                 " a cash prize of EUR 2,000",
                 " and the opportunity to",
                 " present themselves at European level",
-                ", where the winners of hackathons from six countries will present their prototypes to the European jury during the official Europe Code Week the 14 October, 2021.",
+                ", where the winners of hackathons from six countries will present their prototypes to the European jury during the official EU Code Week the 14 October, 2021.",
                 " The champions of Europe",
                 " will be additionally rewarded with the latest computer equipment.",
             ],
@@ -121,7 +121,7 @@ return [
                 "To help you prepare for the pitch of your solution, we will offer you free workshops during the hackathon. Your team will also be assisted by mentors who will make sure you are on the right track.",
                 "The top best teams will be rewarded for their achievements with practical prizes.",
                 "The winning team will receive a cash prize of EUR 2,000 and an invitation to present their solution to the European jury on the 14 October 2021.",
-                "The winners of hackathons from six countries will present their prototypes to the European jury during the official Europe Code Week the 14 October, 2021. The European champions will be rewarded with even more computer equipment that will (hopefully) encourage them to further develop their digital skills.",
+                "The winners of hackathons from six countries will present their prototypes to the European jury during the official EU Code Week the 14 October, 2021. The European champions will be rewarded with even more computer equipment that will (hopefully) encourage them to further develop their digital skills.",
             ],
         ],
         10 => [

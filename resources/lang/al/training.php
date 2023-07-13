@@ -20,7 +20,7 @@ return [
             'author' => 'Nga Alessandro Bogliolo',
             'text' => '<p>Kodimi është gjuha e gjërave, që na lejon të shkruajmë programe për t’u dhënë funksione dhjetëra miliardë objekteve të programueshme rrotull nesh. Kodimi është mënyra më e shpejtë për t’i bërë realitet idetë tona dhe mënyra më efikase për të zhvilluar aftësi të mendimit kompjuterik. Por, teknologjia nuk është e domosdoshme për të zhvilluar mendimin kompjuterik. Në fakt, janë aftësitë tona të mendimit kompjuterik që janë të domosdoshme për ta bërë teknologjinë që të funksionojë.</p>
 
-                    <p>Në këtë video, Alessandro Bogliolo, profesor i sistemeve kompjuterike në Itali dhe koordinator i Europe Code Week, do të prezantojë aktivitete të kodimit jashtë linje që mund të praktikohen pa pajisje elektronike. Qëllimi kryesor i aktiviteteve jashtë linje është ulja e barrierave të aksesit për të sjellë kodimin në çdo shkollë, pavarësisht nga financimet dhe pajisjet.</p>
+                    <p>Në këtë video, Alessandro Bogliolo, profesor i sistemeve kompjuterike në Itali dhe koordinator i EU Code Week, do të prezantojë aktivitete të kodimit jashtë linje që mund të praktikohen pa pajisje elektronike. Qëllimi kryesor i aktiviteteve jashtë linje është ulja e barrierave të aksesit për të sjellë kodimin në çdo shkollë, pavarësisht nga financimet dhe pajisjet.</p>
 
                     <p>Aktivitetet e kodimit jashtë linje shpalosin aspektet kompjuterike të botës fizike rreth nesh.</p>',
             'activities' => [
