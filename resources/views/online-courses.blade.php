@@ -53,7 +53,7 @@
                     url="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+Bootcamp+2022/about"
                     description="The EU Code Week Bootcamp is designed for teachers who want to integrate coding and computational thinking into their classrooms with practical ideas and resources, while promoting diversity and inclusion in coding and exploring the potentials of artificial intelligence in education."
                     date="10 October – 16 November 2022"
-                    img="eu-code-week-bootcamp-2022.png"
+                    img="eu-code-week-bootcamp-2022.jpg"
                             >
             </x-cards.online-courses>
 
