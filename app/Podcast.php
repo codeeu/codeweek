@@ -27,7 +27,7 @@ class Podcast extends Model implements Feedable {
     public function scopeActive($query) {
         return $query
             ->where('active', true)
-            ->whereDate('release_date', '<=', Carbon::now());
+            ->where('release_date', '<=', Carbon::now());
     }
 
     /* public function toFeedItem(): FeedItem {

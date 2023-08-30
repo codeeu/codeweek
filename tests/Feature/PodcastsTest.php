@@ -18,7 +18,7 @@ class PodcastsTest extends TestCase
     {
 //        $this->withoutExceptionHandling();
 
-        create('App\Podcast', ['description' => 'active description', 'active' => true]);
+        create('App\Podcast', ['description' => 'active description', 'active' => true, 'release_date' => Carbon::now()->subDay()]);
         create('App\Podcast', [
             'description' => 'cannot be displayed',
             'active' => false
@@ -36,17 +36,12 @@ class PodcastsTest extends TestCase
         $response->assertDontSee('cannot be displayed');
         $response->assertDontSee('pending podcast');
 
-//        $response = $this->get('/podcasts');
-//
-//        $response->assertSee('active description');
-//        $response->assertDontSee('cannot be displayed');
-//        $response->assertDontSee('pending podcast');
     }
 
     /** @test */
     public function it_should_list_active_podcasts_in_html()
     {
-        create('App\Podcast', ['title' => 'active title', 'active' => true]);
+        create('App\Podcast', ['title' => 'active title', 'active' => true, 'release_date' => Carbon::now()->subHour()]);
         create('App\Podcast', [
             'title' => 'cannot be displayed',
             'active' => false
@@ -55,7 +50,7 @@ class PodcastsTest extends TestCase
         create('App\Podcast', [
             'title' => 'pending title',
             'active' => true,
-            'release_date' => Carbon::now()->addDays(10)
+            'release_date' => Carbon::now()->addHour()
         ]);
 
 

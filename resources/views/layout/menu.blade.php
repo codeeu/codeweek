@@ -22,6 +22,7 @@
                 <ul>
                     <li><a href="{{route('coding@home')}}">@lang('menu.coding@home')</a></li>
                     <li><a href="/podcasts">Podcasts</a></li>
+                    <li><a href="{{route('online-courses')}}">Online Courses</a></li>
                     <li><a href="{{route('training.index')}}">@lang('menu.training')</a></li>
                     <li><a href="{{route('challenges')}}">@lang('menu.challenges')</a></li>
                     <li><a href="{{route('dance')}}">@lang('snippets.dance.menu')</a></li>
@@ -223,7 +224,7 @@
                                  data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
                                  data-show-facepile="true">
                                 <blockquote cite="https://www.facebook.com/codeEU" class="fb-xfbml-parse-ignore"><a
-                                            href="https://www.facebook.com/codeEU">Europe Code Week</a></blockquote>
+                                            href="https://www.facebook.com/codeEU">EU Code Week</a></blockquote>
                             </div>
                         </div>
                     </div>

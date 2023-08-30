@@ -595,13 +595,12 @@ Route::get('podcast/{podcast}', 'PodcastsController@show')->name('podcast');
 Route::get('/unsubscribe/{email}/{magic}', 'UnsubscribeController@index')->name('unsubscribe');
 
 
-
-
 Route::group(['middleware' => ['auth']], function () {
     Route::get('activities-locations', 'LocationController@index')->name('activities-locations');
 });
 
-Route::view('/registration', 'registration.add');
+//Route::view('/registration', 'registration.add');
+Route::view('/online-courses', 'online-courses')->name('online-courses');
 
 Route::get('mailing/test', function(){
 

@@ -13,7 +13,7 @@ Do not hesitate to take a look at <a href="https://codeweek.eu/2021/challenges">
 
 Thank you and let’s together make the world a little more fun through Coding!
 
-Happy Europe Code Week!
+Happy EU Code Week!
 
 Best,<br/>
 The Code Week Team<br/><br/>

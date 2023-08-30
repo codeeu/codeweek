@@ -16,6 +16,7 @@ return [
     'teach' => 'Teach',
     'training' => 'Training',
     'challenges' => 'Challenges',
+    'online-courses' => 'Online Courses',
     'toolkits' => 'Presentations and Toolkits',
     'why' => 'Why',
     'home' => 'Home',
