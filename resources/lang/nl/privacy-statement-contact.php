@@ -15,7 +15,7 @@ return [
     ],
 
     '3-legal_process' => [
-        'Rechtmatigheid van de verwerking: Eenheid G.2 verzamelt, bewaart en publiceert uw persoonsgegevens, omdat u uw uitdrukkelijke toestemming hebt gegeven door een vakje aan te kruisen toen u zich aanmeldde om Code Week Ambassador of Leading Teacher te worden of toen u een verzoek indiende om een evenement aan te melden op <a href="https://codeweek.eu/register">Europe Code Week.</a>',
+        'Rechtmatigheid van de verwerking: Eenheid G.2 verzamelt, bewaart en publiceert uw persoonsgegevens, omdat u uw uitdrukkelijke toestemming hebt gegeven door een vakje aan te kruisen toen u zich aanmeldde om Code Week Ambassador of Leading Teacher te worden of toen u een verzoek indiende om een evenement aan te melden op <a href="https://codeweek.eu/register">EU Code Week.</a>',
 
     ],
     '4-collect_data' => [

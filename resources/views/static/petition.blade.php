@@ -21,7 +21,7 @@
 <section id="content">
 	<div class="content-wrap">
 		<div class="container clearfix">
-			<p>The text of this <a href="https://www.gopetition.com/petitions/algorithms-as-intangible-cultural-heritage.html">petition</a> was written in English by the Europe Code Week Ambassadors gathered in Brussels on September 12, 2017, to raise awareness on the importance of algorithms. The petition can be <a href="https://www.gopetition.com/petitions/algorithms-as-intangible-cultural-heritage.html">signed here</a>. </p>
+			<p>The text of this <a href="https://www.gopetition.com/petitions/algorithms-as-intangible-cultural-heritage.html">petition</a> was written in English by the EU Code Week Ambassadors gathered in Brussels on September 12, 2017, to raise awareness on the importance of algorithms. The petition can be <a href="https://www.gopetition.com/petitions/algorithms-as-intangible-cultural-heritage.html">signed here</a>. </p>
 			<p>Translations are available in the following languages: [<a href="http://programmeringforalle.dk/2017/09/15/algoritmer-som-en-uhaandgribelig-kulturel-arv/">DA</a>][EN][<a href="http://codeweek.it/petizione/">IT</a>][<a href="http://www.codeweek.rs/peticija/">RS</a>][<a href="https://codeweek.wikispaces.com/K%C3%BClt%C3%BCr+Misas%C4%B1+Olarak+Kodlama">TR</a>]</p>
 			<p><a href="https://www.gopetition.com/petitions/algorithms-as-intangible-cultural-heritage.html"><img src="{{asset('img/petition.png')}}"></a></p>
 
