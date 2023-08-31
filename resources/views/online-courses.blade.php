@@ -1,4 +1,7 @@
 @extends('layout.base')
+
+@section('title', 'Online Courses')
+
 <x-tailwind></x-tailwind>
 @section('content')
 
