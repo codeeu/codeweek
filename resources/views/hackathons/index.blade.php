@@ -1,5 +1,6 @@
 @extends('layout.base')
 
+@section('title', 'Hackathons')
 @section('content')
 
     <section id="codeweek-hackathons-page" class="codeweek-page">
