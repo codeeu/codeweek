@@ -1,5 +1,6 @@
 @extends('layout.base')
 
+@section('title', 'Hackathons')
 @section('content')
 
     <section id="codeweek-hackathons-page" class="codeweek-page">
@@ -19,159 +20,124 @@
 
         <section class="codeweek-content-wrapper">
 
-            <h1 class="align-center">@lang('hackathons.sections.1.title')</h1>
+            <h1 class="align-center">Hackathons</h1>
             <p>
 
-                @lang('hackathons.sections.1.content.1')<br/><br/>
+                A hackathon is an event where participants collaborate intensively, over 24 hours in up to 3 days, to
+                create software projects or solve challenges. Adapting the traditional hackathon format, the EU Code
+                Week Hackathons take into consideration the age of the participants and cater to the unique skills,
+                insights, and interests of adolescents.<br/><br/>
 
+                Participants form teams to brainstorm, design, and code, aiming to produce a working solution or
+                prototype by the event's conclusion. Beyond fostering innovation and teamwork, teen hackathons offer a
+                platform for young tech enthusiasts to learn, showcase their talents, and connect with like-minded
+                peers.<br/><br/>
 
-                @lang('hackathons.sections.1.content.2')
+                The Hackathon is open to individuals between 15 and 19 years old, with a specific emphasis on STEM,
+                computer science, design, engineering, ICT, and other related fields. To the extent possible, the teams
+                should encompass both technical and functional competencies.<br/><br/>
+
+                Each year select European countries receive the focus and organize locally the event.
 
             </p>
 
         </section>
 
-        <section class="hackathons_section take_part">
-            <img src="{{asset('images/hackathons/take_part.svg')}}" class="static-image">
-            <div class="text-inside">
-                <h1>@lang('hackathons.sections.2.title')</h1>
-                <p>@lang('hackathons.sections.2.content.1')</p>
-            </div>
-        </section>
-
-        <section class="hackathons_section look_like">
-            <div class="text-inside">
-                <h1>@lang('hackathons.sections.4.title')</h1>
-                <p>
-                    @lang('hackathons.sections.4.content.1')<br/><br/>
-                    @lang('hackathons.sections.4.content.2')
-                </p>
-            </div>
-        </section>
-
         <section class="codeweek-content-wrapper">
 
-            <h1 class="align-center">@lang('hackathons.sections.7.title')</h1>
+            <h1 class="align-center">EU Code Week Hackathon 2023</h1>
 
+            <p>
+                The central theme for 2023 is “Code to problem-solve and give life to your dreams”. The organizers for
+                each country have made concrete challenge areas, concerning, for example, the education system, tourism,
+                transportation and other sectors. The local participants propose solutions to their country's
+                challenges.<br/><br/>
 
+                For 2023, there are six countries in focus. Follow the links for more information on challenge areas,
+                local organizers, and important dates:
+            </p>
             <section class="hackathons-content-grid">
 
 
                 <div class="codeweek-card-grid">
-                    <a href="{{route('hackathon-slovenia')}}" target="_blank">
+                    <a href="https://codeweek.eu/hackathon/2023/albania" target="_blank">
                         <div class="city-image">
-                            <img src="/images/hackathons/flags/slovenia.png">
+                            <img src="/images/hackathons/flags/europe.jpg">
                             <div class="transparent"></div>
                             <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.5.country')</div>
+                                <div class="title hackaton">Albania</div>
                             </div>
                         </div>
-                        <div class="date">{{ucfirst(__('hackathons.cities.5.date'))}}</div>
-                    </a>
-                </div>
-
-
-
-                <div class="codeweek-card-grid">
-                    <a href="{{route('hackathon-ireland')}}" target="_blank">
-                        <div class="city-image">
-                            <img src="/images/hackathons/flags/ireland.png">
-                            <div class="transparent"></div>
-                            <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.2.country')</div>
-                            </div>
-                        </div>
-                        <div class="date">@lang('hackathons.cities.2.date')</div>
-                    </a>
-                </div>
-
-
-
-                <div class="codeweek-card-grid">
-                    <a href="{{route('hackathon-italy')}}" target="_blank">
-                        <div class="city-image">
-                            <img src="/images/hackathons/flags/italy.png">
-                            <div class="transparent"></div>
-                            <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.3.country')</div>
-                            </div>
-                        </div>
-                        <div class="date">@lang('hackathons.cities.3.date')</div>
-                    </a>
-                </div>
-
-                <div class="codeweek-card-grid">
-                    <a href="{{route('hackathon-romania')}}" target="_blank">
-                        <div class="city-image">
-                            <img src="/images/hackathons/flags/romania.png">
-                            <div class="transparent"></div>
-                            <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.1.country')</div>
-                            </div>
-                        </div>
-                        <div class="date">@lang('hackathons.cities.1.date')</div>
                     </a>
                 </div>
 
 
                 <div class="codeweek-card-grid">
-                    <a href="{{route('hackathon-latvia')}}" target="_blank">
+                    <a href="https://codeweek.eu/hackathon/2023/greece" target="_blank">
                         <div class="city-image">
-                            <img src="/images/hackathons/flags/latvia.png">
+                            <img src="/images/hackathons/flags/europe.jpg">
                             <div class="transparent"></div>
                             <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.6.country')</div>
+                                <div class="title hackaton">Greece</div>
                             </div>
                         </div>
+                    </a>
+                </div>
 
-                        <div class="date">{{ucfirst(__('hackathons.cities.6.date'))}}</div>
+
+                <div class="codeweek-card-grid">
+                    <a href="https://codeweek.eu/hackathon/2023/ireland" target="_blank">
+                        <div class="city-image">
+                            <img src="/images/hackathons/flags/europe.jpg">
+                            <div class="transparent"></div>
+                            <div class="text">
+                                <div class="title hackaton">Ireland</div>
+                            </div>
+                        </div>
                     </a>
                 </div>
 
                 <div class="codeweek-card-grid">
-                    <a href="{{route('hackathon-greece')}}" target="_blank">
+                    <a href="https://codeweek.eu/hackathon/2023/latvia" target="_blank">
                         <div class="city-image">
-                            <img src="/images/hackathons/flags/greece.png">
+                            <img src="/images/hackathons/flags/europe.jpg">
                             <div class="transparent"></div>
                             <div class="text">
-                                <div class="title hackaton">@lang('hackathons.cities.4.country')</div>
+                                <div class="title hackaton">Latvia</div>
                             </div>
                         </div>
-                        <div class="date">@lang('hackathons.cities.4.date')</div>
                     </a>
                 </div>
 
+                <div class="codeweek-card-grid">
+                    <a href="https://codeweek.eu/hackathon/2023/italy" target="_blank">
+                        <div class="city-image">
+                            <img src="/images/hackathons/flags/europe.jpg">
+                            <div class="transparent"></div>
+                            <div class="text">
+                                <div class="title hackaton">Italy</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="codeweek-card-grid">
+                    <a href="https://codeweek.eu/hackathon/2023/france" target="_blank">
+                        <div class="city-image">
+                            <img src="/images/hackathons/flags/europe.jpg">
+                            <div class="transparent"></div>
+                            <div class="text">
+                                <div class="title hackaton">France</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
 
             </section>
 
         </section>
 
-        <section class="hackathons_section how_coding">
-            <div class="text-inside">
-                <h1>@lang('hackathons.sections.5.title')</h1>
-                <p>@lang('hackathons.sections.5.content.1')</p>
-            </div>
-            <img src="{{asset('images/hackathons/how_coding.svg')}}" class="static-image">
-        </section>
-
-        <section class="hackathons_section organisers">
-            <img src="{{asset('images/hackathons/organisers.svg')}}" class="static-image">
-            <div class="text-inside">
-                <h1>@lang('hackathons.sections.3.title')</h1>
-                <p>
-                    @lang('hackathons.sections.3.content.1')
-                    <a href="{{route('ambassadors')}}">@lang('hackathons.sections.3.content.2')</a>
-                    @lang('hackathons.sections.3.content.3')
-                </p>
-            </div>
-        </section>
-
-        <!--<section class="codeweek-content-wrapper">
-
-            <h1 class="align-center">Our partners</h1>
-
-        </section>-->
 
     </section>
 
