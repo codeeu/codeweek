@@ -76,7 +76,7 @@ header.hackathons #right-menu #hackathons-register-button {
 }
 
 .hackathons-content-grid {
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .codeweek-banner.hackathons .image {
@@ -137,6 +137,7 @@ header.hackathons #right-menu #hackathons-register-button {
 
   .codeweek-card-grid {
     background-color: transparent;
+
 
     .date {
       font-size: 25px;
@@ -233,7 +234,7 @@ header.hackathons #right-menu #hackathons-register-button {
   //}
 
   .hackathons-content-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
   #codeweek-hackathons-page {
@@ -298,7 +299,7 @@ header.hackathons #right-menu #hackathons-register-button {
     font-size: 35px;
   }
   .hackathons-content-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
   .codeweek-banner.hackathons .image .text {
     position: absolute;
