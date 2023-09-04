@@ -610,6 +610,7 @@ Route::get('mailing/test', function(){
     return new App\Mail\UserCreated($user);
 });
 
+Route::get('/hackathons', 'HackathonsController@index')->name('hackathons');
 
 
 Auth::routes();
