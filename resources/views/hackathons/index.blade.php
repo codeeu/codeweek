@@ -33,7 +33,7 @@
                 platform for young tech enthusiasts to learn, showcase their talents, and connect with like-minded
                 peers.<br/><br/>
 
-                The Hackathon is open to individuals between 15 and 19 years old, with a specific emphasis on STEM,
+                The EU Code Week 2023 Hackathon is open to individuals between 15 and 19 years old, with a specific emphasis on STEM,
                 computer science, design, engineering, ICT, and other related fields. To the extent possible, the teams
                 should encompass both technical and functional competencies.<br/><br/>
 
@@ -48,7 +48,7 @@
             <h1 class="align-center">EU Code Week Hackathon 2023</h1>
 
             <p>
-                The central theme for 2023 is “Code to problem-solve and give life to your dreams”. The organizers for
+                The central theme for 2023 is “Code to problem-solve and give life to your dreams”. The organizers from
                 each country have made concrete challenge areas, concerning, for example, the education system, tourism,
                 transportation and other sectors. The local participants propose solutions to their country's
                 challenges.<br/><br/>
