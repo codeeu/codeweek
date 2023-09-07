@@ -33,14 +33,14 @@
                 @lang('online-courses.more-info')
             </p>
 </div>
-{{--            <x-cards.online-courses--}}
-{{--                    title="Navigating Innovative Technologies Across the Curriculum"--}}
-{{--                    url=""--}}
-{{--                    date="9 September – 15 October 2023"--}}
-{{--                    img="navigating-innovative-technologies-across-the-curriculum.png"--}}
-{{--                    description="This course welcomes educators interested in integrating coding, computational thinking, virtual and augmented reality into their classrooms through interdisciplinary and cross-curricular projects, encouraging exploration of innovative technologies and their effective use."--}}
-{{--                            >--}}
-{{--            </x-cards.online-courses>--}}
+            <x-cards.online-courses
+                    title="Navigating Innovative Technologies Across the Curriculum"
+                    url="https://www.europeanschoolnetacademy.eu/courses/course-v1:CodeWeek+NavigatingTech+2023/about"
+                    date="9 October – 15 November 2023 "
+                    img="navigating-innovative-technologies-across-the-curriculum.png"
+                    description="The online course Navigating Innovative Technologies Across the Curriculum welcomes educators interested in integrating coding, computational thinking, virtual and augmented reality into their classrooms through interdisciplinary and cross-curricular projects, encouraging exploration of innovative technologies and their effective use."
+                            >
+            </x-cards.online-courses>
 
             <x-cards.online-courses
                     title="Unlocking the Power of AI in Education"
