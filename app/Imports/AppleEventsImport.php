@@ -29,6 +29,8 @@ class AppleEventsImport extends DefaultValueBinder implements WithCustomValueBin
     public function model(array $row)
     {
 
+
+
         $event = new Event([
             'status' => "APPROVED",
             'title' => $row["activity_title"],
@@ -46,13 +48,13 @@ class AppleEventsImport extends DefaultValueBinder implements WithCustomValueBin
             "pub_date" => now(),
             "created" => now(),
             "updated" => now(),
-            "codeweek_for_all_participation_code" => "cw22-apple-eu",
+            "codeweek_for_all_participation_code" => "cw23-apple-eu",
             "start_date" => $this->parseDate($row['start_date']),
             "end_date" => $this->parseDate($row['end_date']),
             "geoposition" => $row["latitude"] . "," . $row["longitude"],
             "longitude" => $row["longitude"],
             "latitude" => $row["latitude"],
-            'language' => strtolower($row['language'])
+            'language' => strtolower(explode("_", $row['language'])[0])
         ]);
 
         $event->save();
