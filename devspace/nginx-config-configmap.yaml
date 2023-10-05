@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-config
+data:
+  nginx.conf: |-
+    server {
+        listen 80 default_server;
+        server_name nginx;
+        root /assets/;
+
+        index index.php;
+        charset utf-8;
+
+        location / {
+          try_files $uri $uri/ /index.php?$query_string;
+        }
+
+        location ~ \.php$ {
+          include fastcgi.conf;
+          fastcgi_pass 127.0.0.1:9000;
+          fastcgi_param SCRIPT_FILENAME /var/www/html/public/index.php;
+          fastcgi_param PHP_VALUE "memory_limit = 2048M";
+        }
+
+        location = /favicon.ico { access_log off; log_not_found off; }
+        location = /robots.txt  { access_log off; log_not_found off; }
+    }
