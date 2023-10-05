@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 
 
-//Auth::loginUsingId(283178);
+//Auth::loginUsingId(20750);
 
 Route::domain('{subdomain}.' . Config::get('app.url'))->group(function () {
     Route::get('/', function ($subdomain) {
@@ -232,8 +232,8 @@ Route::view(
 Route::get('/events', 'SearchController@search')->name('events_map');
 Route::get('/add', 'EventController@create')->name('create_event');
 Route::get('/map', 'MapController@index')->name('map');
-Route::get('/resources', 'ResourcesController@learn')->name('resources_learn');
-Route::get('/resources/learn', 'ResourcesController@learn');
+Route::get('/resources', 'ResourcesPageController@index')->name('resources');
+Route::get('/resources/learn', 'ResourcesController@learn')->name('resources_learn');
 Route::get('/resources/teach', 'ResourcesController@teach')->name(
     'resources_teach'
 );

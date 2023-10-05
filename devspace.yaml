@@ -1,0 +1,187 @@
+version: v1beta11
+
+vars:
+  - name: APP_IMAGE
+    value: public.ecr.aws/cnect-prime/php-8.0-fpm:latest
+  - name: GITHUB_TOKEN
+  - name: NOVA_USERNAME
+  - name: NOVA_PASSWORD
+
+deployments:
+  - name: nginx-config
+    kubectl:
+      manifests:
+        - devspace/nginx-config-configmap.yaml
+  - name: codeweek-config
+    kubectl:
+      manifests:
+        - devspace/codeweek.yaml
+  - name: mysql
+    helm:
+      componentChart: false
+      chart:
+        name: mysql
+        version: 9.4.5
+        repo: https://charts.bitnami.com/bitnami
+      values:
+        image:
+          tag: 8.0.31
+        resources:
+          limits:
+            memory: 2Gi
+          requests:
+            cpu: 0.5
+            memory: 1Gi
+        auth:
+          rootPassword: $!{DB_PASSWORD}
+          database: $!{DB_DATABASE}
+          username: $!{DB_USERNAME}
+          password: $!{DB_PASSWORD}
+        primary:
+          startupProbe:
+            enabled: false
+            initialDelaySeconds: 90
+          livenessProbe:
+            enabled: false
+          readinessProbe:
+            enabled: false
+          service:
+            ports:
+              mysql: ${DB_PORT}
+  - name: laravel-app
+    helm:
+      componentChart: true
+      values:
+        containers:
+          - name: nginx
+            image: nginx:alpine
+            volumeMounts:
+              - containerPath: /etc/nginx/conf.d
+                volume:
+                  name: nginx-config
+                  readOnly: true
+              - containerPath: /assets
+                volume:
+                  name: shared-files
+                  readOnly: true
+          - name: php
+            image: ${APP_IMAGE}
+            imagePullPolicy: Always
+            resources:
+              limits:
+                memory: 2Gi
+              requests:
+                cpu: 0.5
+                memory: 1Gi
+            volumeMounts:
+              - containerPath: /assets
+                volume:
+                  name: shared-files
+                  readOnly: false
+            env:
+              - name: GITHUB_TOKEN
+                value: ${GITHUB_TOKEN}
+              - name: NOVA_USERNAME
+                value: ${NOVA_USERNAME}
+              - name: NOVA_PASSWORD
+                value: ${NOVA_PASSWORD}
+              - name: COMPOSER_ALLOW_SUPERUSER
+                value: "1"
+        service:
+          ports:
+            - port: 80
+        volumes:
+          - name: nginx-config
+            configMap:
+              name: nginx-config
+          - name: shared-files
+            emptyDir: { }
+  - name: redis
+    helm:
+      componentChart: false
+      chart:
+        name: redis
+        version: 17.4.0
+        repo: https://charts.bitnami.com/bitnami
+      values:
+        image:
+          tag: 6.0.12
+        networkPolicy:
+          enabled: true
+          allowExternal: true
+        password: $!{REDIS_PASSWORD}
+        cluster:
+          enabled: false
+dev:
+  ports:
+    - imageSelector: docker.io/bitnami/mysql:8.0.31
+      forward:
+        - port: 3308
+          remotePort: 3306
+
+  sync:
+    - imageSelector: ${APP_IMAGE}
+      excludePaths:
+        - .git/
+        - .git/
+        - .devspace/
+        - README.md
+      uploadExcludePaths:
+        - Dockerfile
+        - devspace.yaml
+        - deploy/
+        - vendor/
+        - node_modules/
+      onUpload:
+        execRemote:
+          onBatch:
+            command: sh
+            args: [ "-c", "cp -r /var/www/html/public/* /assets/" ]
+        exec:
+          - name: npm-install
+            command: |-
+              NODE_ENV=development npm install
+            onChange: [ "./package.json" ]
+          - name: composer-install
+            command: |-
+              composer install --no-interaction
+            onChange: [ "./composer.json" ]
+
+hooks:
+  - command: |
+      composer config -g "http-basic.nova.laravel.com" $NOVA_USERNAME $NOVA_PASSWORD
+      composer config -g github-oauth.github.com $GITHUB_TOKEN
+      composer update
+      php artisan key:generate
+      chmod -R 777 storage
+      php artisan vue-i18n:generate
+      NODE_ENV=development npm install
+      chown -R www-data:www-data /var/www/html;
+      npm run dev
+    container:
+      imageSelector: ${APP_IMAGE}
+    events: ["after:initialSync:*"]
+
+commands:
+  - name: artisan
+    description: Entry point for artisan commands.
+    command: devspace enter -c php -- php artisan
+    appendArgs: true
+  - name: composer
+    description: Entry point for composer commands.
+    command: devspace enter -c php -- composer
+    appendArgs: true
+  - name: php
+    description: Entry point for PHP commands.
+    command: devspace enter -c php -- php
+    appendArgs: true
+  - name: npm
+    description: Entry point for NPM commands.
+    command: devspace enter -c php -- npm
+    appendArgs: true
+  - name: generate-key
+    description: Generate APP_KEY.
+    command: devspace enter -c php -- php artisan key:generate --show
+  - name: mysql
+    description: Enter to MySQL shell.
+    command: devspace enter -c mysql -- mysql -uroot --password=$!{DB_PASSWORD}
