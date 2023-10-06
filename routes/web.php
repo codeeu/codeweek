@@ -232,7 +232,8 @@ Route::view(
 Route::get('/events', 'SearchController@search')->name('events_map');
 Route::get('/add', 'EventController@create')->name('create_event');
 Route::get('/map', 'MapController@index')->name('map');
-Route::get('/resources', 'ResourcesPageController@index')->name('resources');
+//Route::get('/resources', 'ResourcesPageController@index')->name('resources');
+Route::get('/resources', 'ResourcesController@learn')->name('resources');
 Route::get('/resources/learn', 'ResourcesController@learn')->name('resources_learn');
 Route::get('/resources/teach', 'ResourcesController@teach')->name(
     'resources_teach'
@@ -573,6 +574,8 @@ $challenges =  function () {
     Route::view('build-calliope','2021.challenges.build-calliope')->name('challenges.build-calliope');
     Route::view('animate-a-name','2021.challenges.animate-a-name')->name('challenges.animate-a-name');
     Route::view('european-astro-pi','2021.challenges.european-astro-pi')->name('challenges.european-astro-pi');
+    Route::view('code-a-dice','2021.challenges.code-a-dice')->name('challenges.code-a-dice');
+    Route::view('personal-trainer','2021.challenges.personal-trainer')->name('challenges.personal-trainer');
 };
 
 Route::group(['prefix' => '2021/challenges'], $challenges);
