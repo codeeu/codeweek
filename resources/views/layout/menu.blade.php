@@ -18,7 +18,7 @@
             </li>
 
             <li>
-                <a href="{{route('resources')}}">@lang('menu.resources')</a>
+                <a href="javascript:void(null);">@lang('menu.resources')</a>
                 <ul>
                     <li><a href="{{route('coding@home')}}">@lang('menu.coding@home')</a></li>
                     <li><a href="/podcasts">Podcasts</a></li>
