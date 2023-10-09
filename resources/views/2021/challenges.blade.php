@@ -50,12 +50,12 @@
                         @php
                             $currentDate = \Carbon\Carbon::now();
                         @endphp
-                        @if (strtotime($currentDate) >= strtotime(\Carbon\Carbon::create(2023,10,8)))
-                            @include('2021._thumbnail', ['slug' => 'personal-trainer', 'author'=>'Álvaro Molina Ayuso'])
-                        @endif
-                        @if (strtotime($currentDate) >= strtotime(\Carbon\Carbon::create(2023,10,7)))
-                            @include('2021._thumbnail', ['slug' => 'code-a-dice', 'author'=>'Fabrizia Agnello'])
-                        @endif
+                        {{--                        @if (strtotime($currentDate) >= strtotime(\Carbon\Carbon::create(2023,10,9)))--}}
+                        @include('2021._thumbnail', ['slug' => 'create-a-spiral', 'author'=>'Lydie El-Halougi'])
+                        {{--                        @endif--}}
+
+                        @include('2021._thumbnail', ['slug' => 'personal-trainer', 'author'=>'Álvaro Molina Ayuso'])
+                        @include('2021._thumbnail', ['slug' => 'code-a-dice', 'author'=>'Fabrizia Agnello'])
                         @include('2021._thumbnail', ['slug' => 'build-calliope', 'author'=>'Amazon Future Engineer | Meet and Code feat. Calliope gGmbH'])
                         @include('2021._thumbnail', ['slug' => 'chatbot'])
                         @include('2021._thumbnail', ['slug' => 'paper-circuit'])
