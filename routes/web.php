@@ -576,6 +576,7 @@ $challenges =  function () {
     Route::view('european-astro-pi','2021.challenges.european-astro-pi')->name('challenges.european-astro-pi');
     Route::view('code-a-dice','2021.challenges.code-a-dice')->name('challenges.code-a-dice');
     Route::view('personal-trainer','2021.challenges.personal-trainer')->name('challenges.personal-trainer');
+    Route::view('create-a-spiral','2021.challenges.create-a-spiral')->name('challenges.create-a-spiral');
 };
 
 Route::group(['prefix' => '2021/challenges'], $challenges);
