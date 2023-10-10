@@ -62,11 +62,9 @@ class Nordhessen extends Command
         dump("Loading $city events");
         $force = $this->option('force');
 
-        $response = Http::get($url);
+        $json = $this->loadJson($url);
 
-        $json = $response->json();
-
-        if (is_null($json)){
+        if (is_null($json)) {
             Log::info("!!! No data in feed from $city API:");
             return 0;
         }
