@@ -56,28 +56,10 @@ class Baden extends Command
 
         $city = 'Baden';
 
-        $client = new \GuzzleHttp\Client();
-
-
         $url = "https://bw.codeweek.de/?tx_codeweekevents_api[action]=listForEu&tx_codeweekevents_api[controller]=Api&tx_codeweekevents_api[format]=.json&tx_typoscriptrendering[context]={%22record%22%3A%22pages_1%22%2C%22path%22%3A%22tt_content.list.20.codeweekevents_api%22}&cHash=74bb9d71d62e381ebe95b33c1e197943";
         dump("Loading $city events");
 
-        $guzzle = $client->request('get', $url);
-
-        dd($guzzle->getBody()->getContents());
-
-        $url = json_decode(json_encode($url, JSON_FORCE_OBJECT));
-
-        $response = Http::withOptions(['debug' => true])->
-//        withUrlParameters([
-//            'endpoint' => 'https://bw.codeweek.de',
-//            'test' => '?tx_codeweekevents_api[action]=listForEu&tx_codeweekevents_api[controller]=Api&tx_codeweekevents_api[format]=.json&tx_typoscriptrendering[context]={"record":"pages_1","path":"tt_content.list.20.codeweekevents_api"}&cHash=74bb9d71d62e381ebe95b33c1e197943'
-//        ])->
-        get($url);
-
-        $json = $response->json();
-
-        dd($json);
+        $json = $this->loadJson($url);
 
         if (is_null($json)) {
             Log::info("!!! No data in feed from $city API:");
@@ -85,7 +67,6 @@ class Baden extends Command
         }
 
         $this->createRSSItem($json, $city);
-
 
         return Artisan::call("import:baden");
 
