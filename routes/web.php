@@ -579,6 +579,7 @@ $challenges =  function () {
     Route::view('create-a-spiral','2021.challenges.create-a-spiral')->name('challenges.create-a-spiral');
     Route::view('play-against-ai','2021.challenges.play-against-ai')->name('challenges.play-against-ai');
     Route::view('emobot-kliki','2021.challenges.emobot-kliki')->name('challenges.emobot-kliki');
+    Route::view('craft-magic','2021.challenges.craft-magic')->name('challenges.craft-magic');
 };
 
 Route::group(['prefix' => '2021/challenges'], $challenges);
