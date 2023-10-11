@@ -50,6 +50,9 @@
                         @php
                             $currentDate = \Carbon\Carbon::now();
                         @endphp
+                        @if (strtotime($currentDate) >= strtotime(\Carbon\Carbon::create(2023,10,13)))
+                            @include('2021._thumbnail', ['slug' => 'circle-of-dots', 'author'=>'Marin Popov'])
+                        @endif
                         @if (strtotime($currentDate) >= strtotime(\Carbon\Carbon::create(2023,10,12)))
                             @include('2021._thumbnail', ['slug' => 'craft-magic', 'author'=>'Georgia Lascaris'])
                         @endif
