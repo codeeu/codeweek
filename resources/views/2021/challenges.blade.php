@@ -50,9 +50,10 @@
                         @php
                             $currentDate = \Carbon\Carbon::now();
                         @endphp
-                        @if (strtotime($currentDate) >= strtotime(\Carbon\Carbon::create(2023,10,11)))
-                        @include('2021._thumbnail', ['slug' => 'emobot-kliki', 'author'=>'Margareta Zajkova'])
+                        @if (strtotime($currentDate) >= strtotime(\Carbon\Carbon::create(2023,10,12)))
+                            @include('2021._thumbnail', ['slug' => 'craft-magic', 'author'=>'Georgia Lascaris'])
                         @endif
+                        @include('2021._thumbnail', ['slug' => 'emobot-kliki', 'author'=>'Margareta Zajkova'])
                         @include('2021._thumbnail', ['slug' => 'play-against-ai', 'author'=>'Kristina Slišurić'])
                         @include('2021._thumbnail', ['slug' => 'create-a-spiral', 'author'=>'Lydie El-Halougi'])
 
