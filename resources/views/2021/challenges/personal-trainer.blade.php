@@ -116,7 +116,7 @@
 
                     <section class="p-2">
                         <div class="orange text-3xl">@lang('challenges.common.example')</div>
-                        <div class="mt-2">@lang("challenges-content.$slug.example"): <a href="https://scratch.mit.edu/projects/877857926">https://scratch.mit.edu/projects/877857926</a> </div>
+
                         <div class="mt-2">
                                 <img src="{{asset('img/2021/challenges/personal-trainer-1.png')}}"/>
                         </div>
