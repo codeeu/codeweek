@@ -230,7 +230,7 @@
                         </div>
                     </div>
                     <div class="round-button menu-trigger twitter-menu">
-                        <img src="/images/twitter.svg" alt="Twitter" class="button-icon">
+                        <img src="/images/x-twitter.svg" alt="Twitter" class="button-icon">
                         <div class="menu-dropdown">
                             <a class="twitter-timeline" href="https://twitter.com/CodeWeekEU" data-width="400"
                                data-height="300" data-chrome="noscrollbar" data-link-color="#E95F28"
