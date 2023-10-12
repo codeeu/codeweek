@@ -485,5 +485,384 @@ return [
             'Scegli 5 colori e assegna a ciascuno un esercizio di fitness, per es. squat o jumping jacks. Puoi cambiare e testare i colori in qualsiasi ordine.'
         ],
 
+    ],
+
+    'common' => [
+        'share' => 'Condividi il link o il codice QR del tuo progetto su Instagram o Facebook, aggiungi l’hashtag #CodeWeekChallenge e menziona @CodeWeekEU.',
+        'audience' => [
+            'Insegnanti ed educatori/educatrici',
+            'Alunni e alunne della scuola primaria (dai 6 ai 12 anni)',
+            'Studenti e studentesse della scuola secondaria di primo grado (dai 12 ai 16 anni)',
+            'Studenti e studentesse della scuola secondaria di secondo grado (dai 16 ai 18 anni)'
+        ],
+    ],
+    'code-a-dice' => [
+        'title' => 'Programmare per tirare un dado',
+        'author' => 'Fabrizia Agnello',
+        'purposes' => [
+            'Programmare indovinelli interattivi',
+            'Per programmare la simulazione di un oggetto in movimento casuale da utilizzare se l’oggetto reale non è disponibile'
+        ],
+        'description' =>
+            'In questa sfida scriverai il codice per un dado da tirare casualmente al tuo comando. Puoi scegliere qualsiasi tipo di dado con il numero di facce che preferisci, come quelle dei giochi di ruolo; puoi inoltre aggiungere un suono. ',
+        'instructions' => [
+            'Accedi a Scratch',
+            'Scegli uno sfondo',
+            'Crea lo sprite per il tuo dado o cercane uno sul web e caricalo sul tuo programma',
+            'Crea tanti costumi per lo sprite quante sono le facce del dado scelto; ognuno deve indicare un numero differente',
+            'Scegli come vuoi che il dado inizi a rotolare (tramite pressione di un tasto della tastiera, facendo clic sullo sprite, ecc.) e scrivi il codice',
+            'Programma lo sprite in modo che cambi costume casualmente alla fine del lancio',
+            'Aggiungi effetti sonori',
+        ],
+        'example' => 'Tira un dado D-20'
+    ],
+    'personal-trainer' => [
+        'title' => 'Personal trainer con micro:bit',
+        'author' => '',
+        'purposes' => [
+            'Per programmare micro:bit per utilizzare il cicalino e il pannello a led',
+            'Per creare un dispositivo personale per controllare la tua attività fisica',
+            'Per programmare micro:bit e migliorare la tua salute grazie allo sport',
+        ],
+        'description' =>
+            'Questa sfida ti permette di programmare il micro:bit per controllare i tempi di ripetizione degli esercizi fisici combinati con il tempo di riposo. Così puoi seguire la tua attività fisica a scuola, a casa o al parco.'
+        ,
+        'instructions' => [
+            'Quando A+B, crea un timer per il conto alla rovescia di 3 secondi con una suoneria che si attiva ogni secondo e visualizza la parola VIA!',
+            'Durante il primo esercizio, visualizza per 20 secondi un quadrato 2x2. Successivamente, riproduci un suono e mantieni fisso il quadrato. Nel tempo rimanente, è necessario visualizzare un’altra immagine lampeggiante per 10 secondi. Quando il tempo finisce, riproduci un suono.',
+            'Poi ripeti la stessa azione, ma stavolta visualizza un pannello 3x3 per la durata dell’esercizio. Ripeti le azioni finché non viene visualizzato il pannello 5x5.',
+        ],
+        'duration' => '30-40 minuti'
+    ],
+    'create-a-spiral' => [
+        'title' => 'Realizzare una spirale',
+        'author' => 'Lydie El-Halougi',
+        'purposes' => [
+            'Per imparare e allenarsi con cicli e variabili.',
+            'Per migliorare la creatività durante la programmazione.'],
+        'description' => 'In questa sfida scriverai un progetto con Scratch per creare una spirale, utilizzando i blocchi penna, un ciclo e una variabile.',
+
+        'instructions' => [
+            'I blocchi penna',
+            'Crea un nuovo progetto e chiamalo Spirale.',
+            'Fai clic sull’icona viola “Aggiungi un’estensione” nell’angolo in basso a sinistra della finestra',
+            'Seleziona “penna”: ora i blocchi penna sono disponibili per il tuo progetto!',
+            'Per iniziare il tuo progetto, trascina e rilascia il blocco “quando si clicca bandiera verde”:',
+            'Bisogna iniziare con una pagina bianca: tra i blocchi penna, aggiungi il blocco “pulisci”:',
+            'Vuoi iniziare a disegnare al centro dello stage, quindi il tuo sprite deve spostarsi al centro dello stage (0,0):',
+            'Il tuo sprite può muoversi senza disegnare o muoversi e disegnare:',
+            'quando vuoi che disegni, puoi utilizzare il blocco penna giù',
+            'se non vuoi che disegni, puoi utilizzare il blocco penna su',
+            'Ora vuoi disegnare. Aggiungi il blocco “penna giù”:',
+            'L’esagono',
+            'Aggiungi i blocchi in basso al tuo progetto:',
+            'Ora hai un sesto del tuo esagono. Devi ripetere la stessa sequenza 6 volte:',
+            'La spirale',
+            'Per creare una spirale, devi aggiungere 2 alla lunghezza di ogni lato.',
+            'Per farlo, userai una <strong>variabile.</strong>',
+            'Nel blocco delle variabili, fai clic su Crea una variabile',
+            'Chiamala lunghezza e poi fai clic su OK:',
+            'La spirale crescerà e, quindi, è meglio iniziare da una dimensione piccola: imposta la prima lunghezza su 10 e inserisci questo blocco prima del ciclo.',
+            'Inserisci la variabile “lunghezza” nel blocco “fai … passi”',
+            'Per fare crescere la spirale, è inoltre necessario aumentare la lunghezza in ogni ciclo: aggiungi il blocco in basso alla fine del ciclo:',
+            'Ecco il tuo progetto attuale:',
+            'una bellissima spirale ',
+            'Hai disegnato una spirale! Per farla crescere all’infinito, sostituisci il ciclo “ripeti 6 volte” con quello “per sempre”:',
+            'Per disegnare una spirale colorata, aggiungi il seguente blocco nel ciclo:',
+            'Quando ricominci daccapo, lo sprite disegna una linea indesiderata. Per evitarlo, aggiungi un blocco “penna su” all’inizio del progetto.',
+            'Ecco il tuo progetto ultimato:',
+            'Complimenti! Hai creato una splendida spirale!',
+        ],
+
+    ],
+    'play-against-ai' => [
+        'title' => 'Creare e giocare contro l’IA: il gioco della morra cinese',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            'per comprendere come funziona il ciclo dell’apprendimento automatico.',
+            'per realizzare un modello di apprendimento automatico con lo strumento Teachable Machine',
+            'per prendere confidenza con lo strumento Pictoblox e importare il modello creato nel progetto',
+            'per impostare lo stage e i personaggi, mettere a punto e inizializzare le variabili in Pictoblox',
+            'per inizializzare il gioco, individuare le mosse del giocatore, programmare mosse IA casuali',
+            'per creare e testare un gioco che prevede l’intelligenza artificiale come avversaria in un gioco di morra cinese.'
+
+        ],
+        'description' => 'Creeremo un modello con lo strumento Teachable Machine partendo da immagini utilizzando tre classi: sasso, forbici e carta. Il modello sarà caricato in Pictoblox e utilizzato per creare un gioco che è possibile giocare contro l’IA.',
+        'duration' => '90 minuti',
+        'instructions' => [
+            'Crea un nuovo progetto di immagini su Teachable machine con tre classi chiamate rispettivamente sasso, carta e forbici. Per ogni classe, scatta almeno 400 foto con la fotocamera. Assicurati di utilizzare uno sfondo chiaro. Allenati ed esporta il modello. Carica il modello e copia il link.',
+            'Crea un profilo gratuito sul sito web di Pictoblox. Aggiungi un’estensione di apprendimento automatico e carica un modello. Imposta lo stage, le variabili e gli sprite. Inizializza il gioco, individua le mosse del giocatore e quelle dell’IA e chi vince la partita.',
+            'Addestra i dati per il gioco.',
+            'Testa il modello.',
+            'Esporta il modello.',
+            'Aggiungi l’estensione di apprendimento automatico e carica il modello.',
+            'Prepara lo stage, le variabili e lo sprite.',
+            'Inizializza il gioco.',
+            'Individua le mosse del giocatore.',
+            'Imposta mosse casuali dell’IA.',
+            'Diffondi mosse casuali dell’IA.',
+            'Fai tre blocchi. Chi vince la partita? ',
+            'Verifica se il giocatore vince la partita.',
+            'Verifica se l’IA vince la partita.',
+            'Verifica se la partita finisce in pareggio.',
+            'Programma i blocchi.',
+            'Sprite della morra cinese',
+        ]
+    ],
+    'air-drawing-with-AI' => [
+        'title' => 'Disegnare nell’aria con l’IA',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            'per scrivere un programma utilizzando l’estensione di rilevamento del corpo umano per riconoscere i movimenti delle dita davanti alla webcam.',
+            'per programmare con blocchi semplici e in poche righe di codice.',
+            'per vedere un esempio di uso dell’IA'
+        ],
+        'description' => 'Creazione di un programma che consente all’utente di disegnare nell’aria con la propria mano (dito indice) davanti alla webcam e ogni cosa disegnata viene visualizzata automaticamente sullo stagedi Pictoblox.',
+        'instructions' => [
+            'Crea un profilo su Pictoblox',
+            'segui le istruzioni visive per:',
+            'aggiungere le estensioni “Rilevamento del corpo umano” e “Penna”;',
+            'impostare uno stage e aggiungere uno sprite (matita) e altri sprite per: penna giù, penna su, pulisci;  ',
+            'scrivere un codice per lo sprite Matita in modo che segua il dito',
+            'scrivere un codice per i pulsanti: penna su, penna giù e pulisci e anche per Penna',
+            'Ora hai tutto per creare i tuoi disegni e giocare con colori e dimensioni di penna differenti.',
+        ],
+        'materials' => [
+            'Un laptop o un computer con webcam',
+            'la più recente versione di PictoBlox scaricata (raccomandato) o la versione online di Pictoblox (gratuita)',
+            'profilo Pictoblox (gratuito)',
+            'una buona connessione Internet'
+        ]
+    ],
+    'emobot-kliki' => [
+        'title' => 'Emobot Kliki',
+        'author' => 'Margareta Zajkova',
+        'purposes' => [
+            'Per apprendere i concetti base dell’apprendimento automatico e del riconoscimento testuale.',
+            'Per comprendere il ruolo delle emozioni nella comunicazione.',
+            'Per utilizzare il codice per creare dialoghi tra chatbot e utente.',
+            'Per capire in che modo i computer sono in grado di riconoscere i toni emotivi tramite l’analisi dei testi e rispondervi di conseguenza.'
+        ],
+        'description' => [
+            'Crea un bot emotivo in Scratch in grado di mostrare un’espressione felice per i messaggi positivi (se gli dici cose carine), un’espressione arrabbiata per i messaggi negativi (se gli dici cose cattive) e un’espressione confusa se il messaggio non è specifico.',
+            'Emobot Kliki riconoscerà i complimenti e gli insulti, così vedremo come è possibile addestrare i computer a riconoscere i toni emotivi.',
+        ],
+        'instructions' => [
+            'Per iniziare, programma un elenco di regole per ciò che è carino o gentile e per quello che è brutto o cattivo.',
+            'Accedi a https://machinelearningforkids.co.uk/?lang=it oppure crea un nuovo profilo.',
+            'Crea un nuovo modello di apprendimento automatico e aggiungi tre nuove etichette, la prima chiamala “gentile”, la seconda “cattivo” e, se vuoi che riconosca il tuo nome, chiama la terza etichetta opzionale “nome”.',
+            'Addestra il nuovo modello di apprendimento automatico, testalo e utilizzalo per creare un Emobot in Scratch.',
+            'Avvia l’editor di Scratch 3.0, cancella lo sprite del gatto, inserisci tre nuovi sprite realizzati da Microsoft Bing Image Creator (cartone animato di computer felice, arrabbiato e indeciso) o crea un nuovo sprite facendo clic sull’icona Pennello e disegnando tre copie del costume per l’espressione felice, arrabbiata e indecisa.',
+            'Fai clic sulla scheda “Codice” e inserisci il seguente script.']
+        ,
+        'example' => [
+            'Condividi il tuo Emobot Kliki con amici e amiche e scopri di più sull’IA e sulle emozioni!',
+            'Invece di usare il cartone animato di un computer, puoi provare qualcosa di diverso, come ad esempio un animale. Invece della gentilezza e della cattiveria, potresti addestrare il personaggio a riconoscere altri tipi di messaggi.',
+        ],
+
+    ],
+    'craft-magic' => [
+        'title' => 'Fare magie con l’IA e i gesti delle mani',
+        'author' => 'Georgia Lascaris',
+        'purposes' => [
+            'Per coltivare le capacità di programmazione tra studenti e studentesse, permettendo loro di usare comandi base.',
+            'Per sviluppare il pensiero algoritmico, dividendo compiti complessi in fasi gestibili.',
+            'Per incentivare la creatività nella risoluzione dei problemi e trovare applicazioni uniche dei gesti delle mani per disegnare e scrivere.',
+            'Per favorire la comprensione dei concetti relativi all’IA, in particolare su come questa tecnologia aiuta i computer a riconoscere e interpretare i gesti delle mani.',
+            'Per sensibilizzare sulla rilevanza della tecnologia per le persone con disabilità.',
+            'Per promuovere la risoluzione dei problemi collaborativa e il lavoro di gruppo tra studenti e studentesse mentre lavorano insieme per migliorare i programmi che coinvolgono i gesti delle mani.',
+            'Per collegare le competenze di programmazione e il pensiero computazionale alle applicazioni del mondo reale, mettendo in luce l’impatto efficace della tecnologia sulla vita delle persone e l’allineamento con gli obiettivi di sviluppo sostenibile (OSS).'
+        ],
+        'duration' => [
+            '90 minuti per studenti e studentesse di 10-12 anni',
+            '45 minuti per studenti e studentesse di 12-15 anni'
+        ],
+        'description' => 'Crea un programma basato su un blocco di Scratch utilizzando l’estensione IA “Corpo umano” in modo creativo e coinvolgente, per disegnare sul monitor senza un mouse o uno schermo tattile tradizionale.',
+        'instructions' => [
+            'Vai sul sito https://ai.thestempedia.com e crea profili per insegnanti e studenti/studentesse.',
+            'Importa le estensioni “Rilevamento corpo umano”, “Penna” e “Da testo a voce”.',
+            'Aggiungi lo sprite “Matita” dalla libreria e crea 7 sprite (“scrivi”, “cancella”, “nero”, “blu”, “verde” e “rosa”).',
+            'Scrivi i comandi per verificare cosa succede quando lo sprite “matita” tocca uno degli altri sprite.',
+            'Scrivi i comandi per abilitare la webcam a riconoscere la posa della mano e muovere la matita sulle coordinate x e y del tuo dito indice.',
+            'Cambia il costume alla fine del lancio.',
+            'Aggiungi effetti sonori.',
+        ],
+        'materials' => [
+            'Piattaforma di programmazione https://ai.thestempedia.com (gratuita)',
+            'profilo insegnante (gratuito)',
+            'profilo studente/studentessa (gratuito)',
+            'Computer con webcam',
+            'Connessione Internet',
+        ]
+    ],
+    'circle-of-dots' => [
+        'title' => 'Un cerchio di puntini',
+        'author' => 'Marin Popov',
+        'purposes' => [
+            'Per scrivere un codice per tracciare una linea di puntini.',
+            'Per scrivere un codice per tracciare una linea di trattini.',
+            'Per scrivere un codice per disegnare un cerchio.',
+            'Scrivi il codice per disegnare un cerchio di puntini (trattini).',
+        ],
+        'description' => 'Disegna un cerchio utilizzando puntini e trattini.',
+        'duration' => '40 minuti',
+        'instructions' => [
+            'Costruire un blocco di puntini.',
+            'Costruire un blocco di trattini.',
+            'Costruire un cerchio partendo da un puntino.',
+            'Costruire un cerchio partendo da un trattino.'
+        ]
+    ],
+    'coding-escape-room' => [
+        'title' => 'Creare un’escape room sulla programmazione',
+        'author' => 'Stefania Altieri ed Elisa Baraghini',
+        'purposes' => [
+            'Per insegnare/apprendere e riflettere sui concetti della programmazione.',
+            'Per utilizzare semplici strumenti di programmazione.',
+            'Per sviluppare il pensiero computazionale e la risoluzione dei problemi.'
+        ], 'description' => [
+            'Crea un’esperienza di escape room come questa:',
+            'È possibile utilizzare google forms, genially, google presentation o qualunque strumento per creare una storia basata sulla programmazione ;).'
+
+        ],
+        'duration' => '90 minuti',
+        'instructions' =>
+            'È possibile dividere gli studenti e le studentesse in piccoli gruppi: possono giocare e poi creare un’altra sfida con il modello: '
+        ,
+
+        'materials' => [
+            'È possibile utilizzare qualsiasi strumento (piattaforma Google e Microsoft per realizzare e condividere documenti, presentazioni e fogli). Qualsiasi costrutto, strumento o personaggio di programmazione collegato alle TIC e alla programmazione.'
+        ],
+        'example' => [
+            'Alcuni personaggi che hanno svolto un ruolo molto importante nella storia delle TIC e i concetti base per codificare e programmare sono introdotti durante il gioco. È il modo migliore per imparare e partecipare attivamente. È possibile giocare in gruppo o individualmente, come nel caso di una sfida o di una gara. Studenti e studentesse possono poi creare qualcosa di simile e sviluppare competenze, tra cui la creatività e capacità di codifica.',
+            'Si tratta di una risorsa molto pratica da riutilizzare e ricreare facilmente. Google forms è uno degli strumenti utilizzabili. Inoltre, è possibile utilizzare presentazioni Google, Genial.ly, Emaze o qualsiasi altro strumento per creare storie a bivi e le proprie avventure.',
+            'La sfida sulla fuga è divisa in sessioni. Se si indovina la risposta giusta, si va avanti. Studenti e studentesse devono creare i quiz sulla programmazione.',
+        ],
+    ],
+    'let-the-snake-run' => [
+        'title' => 'Fare strisciare il serpente',
+        'author' => 'Ágota Klacsákné Tóth',
+        'purposes' => [
+            'Per programmare i movimenti del serpente sul proprio micro:bit.',
+            'Per impostare il posizionamento corretto e la sincronizzazione per l’animazione collegata.'
+        ],
+        'description' => 'Studenti e studentesse devono scrivere i codici per fare navigare il serpente attraverso micro:bit vicini. Bisogna farlo in modo da dare l’impressione che il serpente stia strisciando da un micro:bit all’altro.',
+        'duration' => '30 minuti',
+        'instructions' => [
+            'Progetta un percorso che attraversa diversi micro:bit vicini (ad es., per formare un quadrato 2x2).',
+            'Scrivi codici mentre il serpente si sposta lungo un percorso.',
+            'Lavora sul tuo dispositivo e poi mettili insieme ed esegui il codice.',
+            'Tieni conto della sincronizzazione e del posizionamento: Se il serpente esce da un micro:bit, apparirà nel micro:bit successivo.',
+            'Altre sfide: tramite micro:bit v2, riproduci della musica finché il serpente non lascia il dispositivo.',
+            'Progetta il serpente cambiando la luminosità dei LED.',
+            'Prova con serpenti più lunghi o con più serpenti.'
+        ],
+        'example' => [
+            'Questo è un esempio per un serpente lungo 6 pixel con 4 micro:bit che formano un quadrato 2x2: ',
+            'Codificare il primo micro:bit (lo può fare l’insegnante)',
+            'Tutti i codici si inizializzano da questo micro:bit, che trasmette un segnale radio agli altri micro:bit quando si preme il pulsante A.',
+            'Codificare il movimento del serpente',
+            'Ogni micro:bit deve essere nello stesso gruppo radio del primo micro:bit.',
+            'Tutte le animazioni partono alla ricezione del segnale radio.',
+            'L’animazione del primo micro:bit è subito visibile, mentre le altre attendono che il serpente arrivi.',
+            'Il tempo tra le due fasi definisce la velocità del serpente.',
+        ], 'materials' => [
+            'micro:bit (se possibile per ogni studente/studentessa)',
+            'laptop o computer per l’editor makecode.microbit.org'
+        ]
+    ],
+    'illustrate-a-joke' => [
+        'title' => 'Illustrare una battuta con bitsy',
+        'author' => 'Margot Schubert',
+        'purposes' => 'Per progettare un piccolo gioco in cui l’utente trova la risposta a una domanda scherzosa.',
+        'description' => 'Studenti e studentesse progettano un gioco in cui l’utente trova la risposta a una domanda scherzosa quando la figura colpisce un oggetto sul campo da gioco. Studenti e studentesse usano alcune funzioni di base di bitsy per portare a termine la sfida.',
+        'instructions' => [
+            'Pensa a una domanda scherzosa. Vai su bitsy e inizia un nuovo progetto. Ti serviranno:',
+            'un avatar-sprite che puoi spostare in ogni direzione',
+            'un gatto bianco su uno sfondo viola',
+            'una descrizione generata automaticamente',
+            'un oggetto che l’avatar deve raggiungere',
+            'una stanza, che funge da sfondo del tuo programma',
+            'due messaggi: una domanda e una risposta',
+            'È possibile scaricare il gioco ultimato in formato html.'
+        ],
+        'example' => 'Su questo sito web sono presenti un esempio di battute e un link a una lavagna digitale:',
+        'materials' => 'bitsy si esegue in un browser'
+    ],
+    'app-that-counts-in-several-languages' => [
+        'title' => 'Applicazione che conta in diverse lingue',
+        'author' => 'Samuel Branco',
+        'purposes' => [
+            'Per imparare come creare un’applicazione semplice.',
+            'Per imparare a programmare mediante blocchi.',
+            'Per imparare come aggiungere etichette, pulsanti, immagini, sensori e contenuti multimediali.',
+            'Per imparare come organizzare gli elementi sullo schermo di un’applicazione.'
+        ],
+        'description' => 'L’applicazione permette di contare in più lingue premendo un pulsante. Ogni volta che l’utente scuote lo smartphone, il conteggio si azzera. La sfida consiste nell’aggiungere un’altra lingua.',
+        'instructions' => [
+            'Per completare la sfida, è necessario definire l’altra lingua in cui vuoi che conti l’applicazione.',
+            'In seguito, occorre scaricare da Internet (ad es. da Pixabay o Unsplash) la bandiera del paese corrispondente e caricarla sulla piattaforma MIT APP Inventor tramite l’elemento chiamato bandiera, nelle proprietà della figura.',
+            'Successivamente, è necessario scoprire come pronunciare il nome del paese in inglese e come dire esci e premimi nella lingua del paese.',
+            'Infine, bisogna aggiungere i blocchi necessari per fare funzionare l’applicazione nella nuova lingua.',
+        ],
+        'materials' => [
+            'Per sviluppare un’applicazione serve un computer o un laptop con accesso a Internet.',
+            'Crea un profilo nella piattaforma MIT APP Inventor, accessibile da https://ai2.appinventor.mit.edu',
+            'Occorre inoltre installare l’applicazione MIT AI2 Companion sullo smartphone per provare l’applicazione sviluppata.'
+        ]
+    ],
+    'coding-with-art-through-storytelling' => [
+        'title' => 'Programmare con l’arte attraverso la narrazione di storie',
+        'author' => 'Maria Tsapara e Anthi Arkouli',
+        'purposes' => [
+            'Per coltivare le capacità di osservazione, interpretazione e interrogazione tramite l’arte.',
+            'Per stimolare la creatività e collaborare insieme ad altre persone per un obiettivo comune',
+            'Per creare un algoritmo al fine di rinarrare la storia.',
+        ],
+        'description' => 'In questa sfida, studenti e studentesse trarranno ispirazione da un’opera d’arte, inventeranno una storia e la illustreranno. Quindi, tenteranno di rinarrare la storia utilizzando un kit robotico programmabile o svolgendo un’attività senza strumenti tecnologici.',
+        'materials' => [
+            'È possibile integrare questa attività senza strumenti tecnologici o avvalersi di un robot didattico programmabile, come ad esempio Bee-Bot/Blue-Bot/mouse robot.',
+            'Carte con frecce per Bee-Bot o per l’attività senza strumenti tecnologici',
+            'in greco',
+            'Per saperne di più sul kit di strumenti per la routine di riflessione di Project Zero, è possibile visitare'
+
+        ],
+        'example' => [
+            'L’insegnante lavora insieme alla classe per modellizzare come progettare un algoritmo con le carte per fornire istruzioni al Bee-Bot o a un altro robot per inserire il primo evento della storia sul tappetino. La classe lavora in gruppi di 3-4 persone per progettare un algoritmo e fare muovere il robot sulla sequenza successiva. Studenti e studentesse testano gli algoritmi sul tappetino della classe e correggono gli errori nel codice, se necessario.',
+            'Continuano a spostarsi attraverso il numero più alto possibile di eventi',
+            'È possibile inserire questa attività anche senza strumenti tecnologici.',
+            'Una persona è il robot, mentre un’altra si occupa della programmazione. La persona che programma crea un percorso algoritmico utilizzando le carte con le frecce per aiutare il robot a spostarsi da un’immagine all’altra e rinarrare la storia. Ogni volta che il robot si trova su un’immagine, si chiede di raccontare una parte della storia.',
+        ],
+        'instructions' => [
+            'L’insegnante domanda alla classe di osservare un dipinto/una foto.',
+            'Utilizzano la routine di riflessione “Parte iniziale, centrale e finale” (Project Zero dell’Harvard School) per elaborare una storia.',
+            'L’insegnante chiede: “Se questa opera d’arte è la parte iniziale/centrale/finale di una storia, cosa potrebbe accadere dopo/prima/alla fine?',
+            'La classe illustra gli eventi della storia.',
+            'La classe ricorda la storia e inserisce gli eventi nella griglia. Mediante le carte con le frecce, realizza un algoritmo per aiutare Bee-Bot a rinarrare la storia.'
+        ],
+    ],
+    'coding-with-legoboost' => [
+        'title' => 'Codificare e programmare con LegoBoost, un’estensione di Scratch',
+        'author' => 'Lidia Ristea',
+        'purposes' => [
+            'per costruire modelli con LegoBoost.',
+            'per sviluppare competenze di programmazione in Scratch.',
+            'per programmare robot tramite comandi dal livello semplice a quello complesso.'
+        ],
+        'description' => 'In questa sfida, la classe si servirà dell’estensione LegoBoost di Scratch e inserirà codici nell’applicazione per muovere il robot avanti e indietro, evitare gli ostacoli e dare ordini vocali.',
+        'duration' => '120 minuti',
+        'instructions' => [
+            'Accedi all’applicazione Scratch.mit.edu.',
+            'Avvia il link Scratch e attiva il Bluetooth sul laptop.',
+            'Fai clic su Aggiungi un’estensione in Scratch e scegli LegoBoost.',
+            'Aggiungi una figura relativa a EU Code Week.',
+            'Imposta i due motori AB su ON, e quando si incontra un ostacolo, su OFF.',
+            'Nel colore verde, il motore A è impostato su ON, e nel colore nero il motore B è su ON.',
+            'Lungo un percorso verranno posizionati ostacoli verdi, rossi e neri.',
+            'Aggiungi comandi per movimenti e curve dalle frecce e da testo a voce quando si incontra un ostacolo.',
+            'Testalo!'
+        ]
     ]
+
+
 ];
