@@ -11,7 +11,7 @@
     <section id="codeweek-schools-page" class="codeweek-page">
 
 
-        <section class="flex flex-row justify-between" style="background-color: #5AABAE">
+        <section class="flex flex-row justify-between" style="background-color: #F5B740">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
                     <div class="text-xl text-white w-full"><a class="text-black"
