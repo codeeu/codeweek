@@ -50,12 +50,21 @@
                         @php
                             $currentDate = \Carbon\Carbon::now();
                         @endphp
-                        @if (strtotime($currentDate) >= strtotime(\Carbon\Carbon::create(2023,10,13)))
-                            @include('2021._thumbnail', ['slug' => 'circle-of-dots', 'author'=>'Marin Popov'])
+
+
+                        @if (strtotime($currentDate) >= strtotime(\Carbon\Carbon::create(2023,10,16)))
+                            @include('2021._thumbnail', ['slug' => 'illustrate-a-joke', 'author'=>'Margot Schubert'])
                         @endif
-                        @if (strtotime($currentDate) >= strtotime(\Carbon\Carbon::create(2023,10,12)))
-                            @include('2021._thumbnail', ['slug' => 'craft-magic', 'author'=>'Georgia Lascaris'])
+                        @if (strtotime($currentDate) >= strtotime(\Carbon\Carbon::create(2023,10,15)))
+                            @include('2021._thumbnail', ['slug' => 'let-the-snake-run', 'author'=>'Ágota Klacsákné Tóth'])
                         @endif
+
+                        @if (strtotime($currentDate) >= strtotime(\Carbon\Carbon::create(2023,10,14)))
+                            @include('2021._thumbnail', ['slug' => 'coding-escape-room', 'author'=>'Stefania Altieri and Elisa Baraghini'])
+                        @endif
+
+                        @include('2021._thumbnail', ['slug' => 'circle-of-dots', 'author'=>'Marin Popov'])
+                        @include('2021._thumbnail', ['slug' => 'craft-magic', 'author'=>'Georgia Lascaris'])
                         @include('2021._thumbnail', ['slug' => 'emobot-kliki', 'author'=>'Margareta Zajkova'])
                         @include('2021._thumbnail', ['slug' => 'play-against-ai', 'author'=>'Kristina Slišurić'])
                         @include('2021._thumbnail', ['slug' => 'create-a-spiral', 'author'=>'Lydie El-Halougi'])
