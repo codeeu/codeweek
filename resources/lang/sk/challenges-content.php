@@ -480,5 +480,384 @@ return [
         ],
 
     ]
+,
+    'common' => [
+        'share' => 'Uverejnite odkaz na váš projekt alebo jeho QR kód na Instagrame alebo Facebooku a uveďte hashtag #CodeWeekChallenge a označte @CodeWeekEU.',
+        'audience' => [
+            'Učitelia a pedagógovia',
+            'Žiaci prvého stupňa základnej školy (6 až 12 rokov)',
+            'Žiaci druhého stupňa základnej školy (12 až 16 rokov)',
+            'Žiaci strednej školy (16 až 18 rokov)',
+        ],
+    ],
+    'code-a-dice' => [
+        'title' => 'Naprogramujte hraciu kocku',
+        'author' => 'Fabrizia Agnello',
+        'purposes' => [
+            'Naprogramujte interaktívne hádanky',
+            'Naprogramujte simuláciu náhodne sa pohybujúceho objektu, ktorá sa má použiť, ak skutočný objekt nie je k dispozícii'
+        ],
+        'description' =>
+            'V tejto výzve naprogramujete kocku, ktorá sa na váš príkaz náhodne hodí. Môžete si vybrať akýkoľvek typ kocky s počtom strán, aký sa vám páči, podobne ako u iných hracích kociek, a pridať aj zvuky. ',
+        'instructions' => [
+            'Prihláste sa do Scratch',
+            'Vyberte si pozadie',
+            'Vytvorte si pre svoju kocku postavičku alebo si ju vyhľadajte na webe a nahrajte ju do svojho programu',
+            'Vytvorte pre postavičku toľko kostýmov, koľko strán má vybraná kocka, pričom každá z nich ukazuje iné číslo',
+            'Vyberte si, akým spôsobom sa má kocka začať hádzať (stlačením klávesu na klávesnici, kliknutím na postavičku atď.) a napíšte kód',
+            'Naprogramujte postavičku tak, aby na konci hodu náhodne zmenila kostým',
+            'Pridajte zvukové efekty',
+        ],
+        'example' => 'Hoďte kockou s 20 stranami'
+    ],
+    'personal-trainer' => [
+        'title' => 'Osobný tréner s micro:bit',
+        'author' => '',
+        'purposes' => [
+            'Programovať micro:bit, aby ste mohli používať bzučiak a LED panel',
+            'Na vytvorenie osobného zariadenie na dohľad nad vašou fyzickou aktivitou',
+            'Na naprogramovanie micro:bit na zlepšenie zdravia prostredníctvom športu',
+        ],
+        'description' =>
+            'Táto výzva vám umožňuje naprogramovať si micro:bit tak, aby ste ovládali časy opakovania fyzického cvičenia v kombinácii s časom odpočinku. Budete sledovať svoju fyzickú aktivitu v škole, doma alebo v parku.'
+        ,
+        'instructions' => [
+            'Keď A+B, vytvorte 3-sekundový časovač na odpočítavanie, pričom každú sekundu zaznie zvuk, a zobrazte slovo GO!',
+            'Počas prvého cvičenia zobrazte na 20 sekúnd blikajúci štvorec 2x2. Potom prehrajte zvuk a udržte štvorec bez zmeny. Počas zostávajúceho času musí byť na 10 sekúnd zobrazený ďalší blikajúci obraz. Po dokončení prehrajte zvuk.',
+            'Potom zopakujte rovnakú akciu, ale počas cvičenia zobrazte panel 3x3. Opakujte tieto činnosti, až kým sa nezobrazí panel 5x5.',
+        ],
+        'duration' => '30 – 40 minút'
+    ],
+    'create-a-spiral' => [
+        'title' => 'Vytvorte špirálu',
+        'author' => 'Lydie El-Halougi',
+        'purposes' => [
+            'Aby ste sa naučili a precvičili slučku a premenné.',
+            'Aby ste zvýšili tvorivosť pri programovaní.'],
+        'description' => 'V tejto výzve napíšete projekt pomocou programu Scratch na vytvorenie špirály, pričom použijete bloky pera, slučku a premennú.',
+
+        'instructions' => [
+            'Bloky pera',
+            'Vytvorte nový projekt a pomenujte ho Špirála.',
+            'Kliknite na fialovú ikonu „Add extension“ (pridať rozšírenie) v ľavej dolnej časti okna',
+            'Vyberte „pen“ (pero): pre váš projekt sú teraz dostupné bloky pera!',
+            'Ak chcete začať svoj projekt, potiahnite a pustite blok „“when green flag clicked“ (po kliknutí na zelenú vlajku):',
+            'Musíte začať s prázdnou stránkou: spomedzi blokov pera pridajte blok “erase all“ (vymazať všetko):',
+            'Začínate kresliť v strede plochy, to znamená, že vaša postavička musí ísť do stredu plochy (0,0):',
+            'Vaša postavička sa môže pohybovať bez kreslenia, alebo sa môže pohybovať a kresliť:',
+            'keď chcete, aby kreslila, môžete použiť blok „pen down“ (pero dolu)',
+            'keď nechcete, aby kreslila, môžete použiť blok „pen up“ (pero hore)',
+            'Teraz chcete kresliť! Pridajte blok „pen down“:',
+            'Šesťuholník',
+            'Pridajte do svojho projektu nižšie uvedené bloky:',
+            'Teraz máte jednu šestinu svojho šesťuholníka. Túto sekvenciu musíte zopakovať 6-krát:',
+            'Špirála',
+            'Ak chcete vytvoriť špirálu, budete musieť pridať 2 k dĺžke každej ďalšej strany.',
+            'Na to použijete <strong>premennú.</strong>',
+            'V blokoch premenných kliknite na „ Make a Variable“ (vytvoriť premennú)',
+            'Pomenujte dĺžku a kliknite na OK:',
+            'Špirála sa bude zväčšovať, budete musieť začať s malou: nastavte prvú dĺžku na 10 a vložte tento blok pred slučku.',
+            'Vložte premennú „length“ (dĺžka) do bloku „move … steps“ (pohyb o ... krokov)',
+            'Ak chcete, aby sa špirála zväčšovala, musíte tiež nechať zväčšiť dĺžku v každej slučke: pridajte blok nižšie na koniec slučky:',
+            'Tu je váš aktuálny projekt:',
+            'Krásna špirála ',
+            'Nakreslili ste špirálu! Aby stále pokračovala, nahraďte slučku „repeat 6“ (opakovať 6) slučkou „forever“ (navždy):',
+            'Ak chcete nakresliť farebnú špirálu, pridajte do slučky tento blok:',
+            'Keď začnete odznova, postavička nakreslí nechcenú čiaru. Aby ste tomu zabránili, pridajte na začiatok projektu blok „pen up“ (pero hore).',
+            'Tu je váš výsledný projekt:',
+            'Gratulujeme! Vytvorili ste krásnu špirálu!',
+        ],
+
+    ],
+    'play-against-ai' => [
+        'title' => 'Tvorte a hrajte proti AI – hra kameň, papier, nožnice',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            'aby ste pochopili, ako funguje cyklus strojového učenia.',
+            'aby ste vytvorili model strojového učenia pomocou nástroja Teachable Machine',
+            'aby ste sa oboznámili s nástrojom Pictoblox a importovali vytvorený model do projektu',
+            'aby ste usporiadali plochu a postavy, vytvorili a inicializovali premenné v Pictobloxe',
+            'aby ste začali hru, identifikovali pohyby hráčov, naprogramovali náhodné pohyby AI',
+            'aby ste vytvorili a otestovali hru, ktorá zahŕňa umelú inteligenciu ako súpera v hre kameň, papier, nožnice.'
+
+        ],
+        'description' => 'Vytvoríme model pomocou Teachable Machine z obrázkov s použitím troch tried: kameň, papier, nožnice. Model sa nahrá do Pictobloxu a použije sa na vytvorenie hry, ktorú môžeme hrať proti AI.',
+        'duration' => '90 minút',
+        'instructions' => [
+            'Vytvorte nový obrazový projekt na Teachable machine s 3 triedami s názvom kameň, papier a nožnice. Pre každú triedu urobte fotoaparátom aspoň 400 obrázkov. Uistite sa, že máte jasné pozadie. Natrénujte a exportujte model. Nahrajte model a skopírujte odkaz.',
+            'Vytvorte si bezplatný účet na stránke Pictoblox. Pridajte rozšírenie strojového učenia a nahrajte model. Usporiadajte plochu, premenné a postavičky. Začnite hru, identifikujte pohyby hráčov a pohyby AI a kto vyhrá kolo.',
+            'Trénujte údaje k hre.',
+            'Otestujte model.',
+            'Exportujte model.',
+            'Pridajte rozšírenie strojového učenia a načítajte model.',
+            'Usporiadajte plochu, premenné a postavičku.',
+            'Začnite hru.',
+            'Identifikujte pohyby hráča.',
+            'Nastavte náhodné pohyby AI.',
+            'Vysielajte náhodné pohyby AI.',
+            'Urobte tri bloky. Kto vyhrá kolo? ',
+            'Skontrolujte, či hráč vyhrá kolo.',
+            'Skontrolujte, či AI vyhrá kolo.',
+            'Skontrolujte, či je kolo nerozhodné.',
+            'Programové bloky.',
+            'Postavička kameň, papier, nožnice',
+        ]
+    ],
+    'air-drawing-with-AI' => [
+        'title' => 'Kreslenie vo vzduchu s AI',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            'aby ste napísali program s použitím rozšírenia detekcie ľudského tela rozpoznali pohyb prstov pred kamerou.',
+            'aby ste kódovali pomocou jednoduchých blokov v niekoľkých riadkoch kódu.',
+            'aby ste vidieli príklad použitia AI'
+        ],
+        'description' => 'Vytvorenie programu, ktorý umožňuje používateľovi kresliť vo vzduchu rukou (ukazovákom) pred kamerou, a všetko, čo nakreslí, sa automaticky zobrazí na ploche Pictobloxu.',
+        'instructions' => [
+            'Vytvorte si účet na Pictobloxe',
+            'postupujte podľa vizuálnych pokynov:',
+            'pridajte rozšírenia „Human Body Detection“ (detekcia ľudského tela“ a Pen (pero);',
+            'nastavte plochu a pridajte postavičku (ceruzku) a ďalšie postavičky pre: Pen Down (pero dolu), Pen Up (pero hore), Delete all (vymazať všetko);  ',
+            'napíšte kód, aby postavička ceruzky sledovala prst',
+            'napíšte kód pre tlačidlá: Pen Up (pero hore), Pen Down (pero dolu), Delete all (vymazať všetko), ako aj pre pero',
+            'Teraz môžete vytvárať svoje vlastné kresby a hrať sa s rôznymi farbami a veľkosťami pera.',
+        ],
+        'materials' => [
+            'Notebook alebo počítač s kamerou',
+            'Najnovšia verzia PictoBloxu stiahnutá (odporúča sa) alebo online Pictoblox (zadarmo)',
+            'Účet na Pictobloxe (zadarmo)',
+            'Dobré pripojenie na internet'
+        ]
+    ],
+    'emobot-kliki' => [
+        'title' => 'Emobot Kliki',
+        'author' => 'Margareta Zajkova',
+        'purposes' => [
+            'Aby ste sa naučili základné koncepcie strojového učenia a rozpoznávania textu.',
+            'Aby ste pochopili úlohu emócií v komunikácii.',
+            'Aby ste vytvárali dialógy medzi četbotom a používateľom pomocou programovania.',
+            'Aby ste pochopili, ako môžu počítače rozpoznať emocionálne tóny prostredníctvom analýzy textu a podľa toho reagovať.'
+        ],
+        'description' => [
+            'Vytvorte v programe Scratch emocionálneho robota, ktorý dokáže zobraziť šťastnú tvár pri pozitívnych správach (ak mu hovoríte pekné veci), nahnevanú tvár pri negatívnych správach (ak mu hovoríte zlé veci) a zmätenú tvár, ak správa nie je špecifikovaná.',
+            'Náš Emobot Kliki rozpozná komplimenty a urážky, takže uvidíme, ako sa dajú počítače vycvičiť, aby rozpoznávali emocionálny tón.',
+        ],
+        'instructions' => [
+            'Ak chcete začať, naprogramujte si zoznam pravidiel pre to, čo je pekné alebo láskavé a čo je zlé alebo nemilé.',
+            'Prihláste sa na https://machinelearningforkids.co.uk/ alebo si vytvorete nový účet.',
+            'Vytvorte nový model strojového učenia a pridajte 3 nové štítky, prvý nazvite „pekné“, druhý „zlé“ a prípadne, ak chcete rozpoznať svoje meno, vytvorte tretí štítok s názvom „meno“.',
+            'Trénujte nový model strojového učenia, otestujte ho a použite ho na vytvorenie Emobota v programe Scratch.',
+            'Spustite editor Scratch 3, odstráňte postavu mačky, vložte 3 nové postavičky od Microsoft Bing Image Creator (šťastná, nahnevaná a neistá počítačová kreslená postavička) alebo vytvorte novú postavičku kliknutím na ikonu maľovania tak, že nakreslíte tri kópie kostýmu pre šťastnú, nahnevanú a neistú tvár.',
+            'Kliknite na kartu „Code“ (kód) a zadajte nasledujúci skript.']
+        ,
+        'example' => [
+    'Podeľte sa o svoje Emobot Kliki so svojimi priateľmi a zistite viac o AI a emóciách!',
+    'Namiesto počítačovej kreslenej postavy môžete skúsiť niečo iné, napríklad zviera. Namiesto láskavého a nemilého by ste mohli postavu cvičiť tak, aby rozpoznávala iné typy správ.',
+],
+
+    ],
+    'craft-magic' => [
+    'title' => 'Vytvárajte mágiu pomocou gestikulácie s AI',
+    'author' => 'Georgia Lascaris',
+    'purposes' => [
+        'Na pestovanie zručnosti programovania medzi študentmi, čo im umožní používať základné príkazy.',
+        'Na rozvíjanie schopnosti algoritmického myslenia rozdelením zložitých úloh do zvládnuteľných krokov.',
+        'Na podporu kreatívneho riešenia problémov pri hľadaní jedinečného využitia gestikulácie na kreslenie a písanie.',
+        'Na lepšie pochopenie koncepcií AI, najmä toho, ako AI umožňuje počítačom rozpoznať a vykladať gestikuláciu.',
+            'Na zvýšenie povedomia o význame technológie pre jednotlivcov so zdravotným postihnutím.',
+            'Na podporu spoločného riešenia problémov a tímovej práce medzi študentmi pri spoločnej práci na zlepšovaní svojich programov gestikulácie.',
+            'Na prepojenie zručností v oblasti programovania a výpočtového myslenia s použitím v reálnom svete, zdôrazňujúc zmysluplný vplyv technológií na životy ľudí a zosúladenie s cieľmi udržateľného rozvoja (SDG).'
+        ],
+        'duration' => [
+            '90 minút pre žiakov vo veku 10 – 12 rokov',
+            '45 minút pre žiakov vo veku 12 – 15 rokov'
+        ],
+        'description' => 'Vytvorte program založený na blokoch Scratch pomocou rozšírenia AI „Human Body“ (ľudské telo) kreatívnym a pútavým spôsobom tak, aby ste mohli kresliť na obrazovku bez potreby tradičnej myši alebo dotykovej obrazovky.',
+        'instructions' => [
+            'Pripojte sa k https://ai.thestempedia.com a vytvorte si účty pre učiteľov a študentov.',
+            'Importujte rozšírenia „Human Body Detection“ (detekcia ľudského tela), „Pen“ (pero), „Text to Speech“ (text na reč).',
+            'Pridajte z knižnice postavu „ceruzky“ a vytvorte 7 postavičiek (“písať“, „číra“, „čierna“, „červená“, „modrá“, „zelená“, „ružová“).',
+            'Zadajte príkazy, aby ste skontrolovali, čo sa stane, keď sa postava „ceruzky“ dotkne niektorej z ostatných postavičiek.',
+            'Zadajte príkazy, ktoré umožnia kamere rozpoznať gesto rukou, a posuňte ceruzku na súradnice x a y vášho ukazováka.',
+            'Nakoniec zmeňte kostým.',
+            'Pridajte zvukové efekty.',
+        ],
+        'materials' => [
+    'Programovacia platforma https://ai.thestempedia.com (zadarmo)',
+    'účet pre učiteľa (zadarmo)',
+    'účet pre žiaka (zadarmo)',
+    'Počítače k kamerou',
+    'Internetové pripojenie',
+]
+    ],
+    'circle-of-dots' => [
+    'title' => 'Kruh z bodiek',
+    'author' => 'Marin Popov',
+    'purposes' => [
+        'Na napísanie kódu, ktorý nakreslí čiary z bodov.',
+        'Na napísanie kódu, ktorý nakreslí čiary z pomlčiek.',
+        'Na napísanie kódu, ktorý nakreslí kruhu.',
+        'Napíšte kód, ktorý nakreslí kruh z bodiek (pomlčiek).',
+    ],
+    'description' => 'Nakreslite kruh z bodiek alebo pomlčiek.',
+    'duration' => '40 minút',
+    'instructions' => [
+        'Vytvorenie bloku z bodiek.',
+        'Vytvorenie bloku z pomlčiek.',
+        'Vytvorenie kruhu z bodky.',
+        'Vytvorenie kruhu z pomlčky.',
+    ]
+],
+    'coding-escape-room' => [
+    'title' => 'Vytvorte kódovaciu únikovú miestnosť',
+        'author' => 'Stefania Altieri a Elisa Baraghini',
+        'purposes' => [
+            'Na učenie/naučenie sa a uvažovanie o koncepciách programovania.',
+            'Na používanie jednoduchých nástrojov na programovanie.',
+            'Na rozvíjanie výpočtového myslenia a riešenie problémov.'
+        ], 'description' => [
+            'Vytvorte únikový zážitok z programovania, ako je tento:',
+            'Môžete použiť Google formulár, Genially, Google prezentáciu, akýkoľvek nástroj na vytvorenie rozprávania založeného na programovaní ;).'
+
+        ],
+        'duration' => '90 minút',
+        'instructions' =>
+            'Môžete rozdeliť svojich žiakov do malých skupín, môžu sa hrať a potom vytvoriť ďalšiu výzvu pomocou šablóny: '
+        ,
+
+        'materials' => [
+            'Dá sa použiť akýkoľvek nástroj (platforma Google a Microsoft na vytváranie a výmenu dokumentov, prezentácií a hárkov). Akýkoľvek programovací konštrukt, nástroj alebo postava, ktoré sú spojené s IKT a programovaním.'
+        ],
+        'example' => [
+            'Niektoré postavy, ktoré mali veľmi dôležitú úlohu v histórii IKT, a základné koncepcie kódovania a programovania sú predstavené prostredníctvom hry. To je najlepší spôsob, ako sa učiť a aktívne sa zapájať.  Túto hru je možné hrať v tímoch alebo individuálne, ako výzvu alebo súťaž. Študenti potom môžu vytvoriť niečo podobné a rozvíjať kompetencie, ako je kreativita a programovacie zručnosti.',
+            'Toto je veľmi praktický zdroj, ktorý možno znovu použiť a ľahko opakovane použiť. Formuláre Google sú jedným z možných nástrojov. Môžete tiež použiť snímky Google, Genial.ly alebo Emaze, alebo akýkoľvek iný nástroj na vytváranie príbehov z križovatiek a vlastných dobrodružstiev.',
+            'Úniková výzva je rozdelená na časti. Ak uhádnete, môžete pokračovať. Žiaci musia vytvoriť programovacie kvízy.',
+        ],
+    ],
+    'let-the-snake-run' => [
+        'title' => 'Utekajúci had',
+        'author' => 'Ágota Klacsákné Tóth',
+        'purposes' => [
+            'Na naprogramovanie pohybu hada na vlastnom mikro:bite.',
+            'Na naprogramovanie správneho umiestnenia a načasovanie spoločnej animácie.'
+        ],
+        'description' => 'Žiaci musia napísať kódy na navigáciu hada cez micro:bits vedľa seba. Musí sa to urobiť tak, aby to vyzeralo, že had behá z jedného mikro:bitu do druhého.',
+        'duration' => '30 minút',
+        'instructions' => [
+            'Navrhnite dráhu, ktorá prechádza niekoľkými mikro:bitmi vedľa seba (napr. vytvára štvorec 2x2).',
+            'Zadajte kódy, ako sa had pohybuje po dráhe.',
+            'Pracujte na svojom vlastnom zariadení, potom ich spojte a spustite kód.',
+            'Zvážte načasovanie a umiestnenie: Ak had vyjde z jedného mikro:bitu, objaví sa na ďalšom mikro:bite.',
+            'Ďalšie výzvy: S micro:bit v2 prehrávajte hudbu, kým had neopustí vaše zariadenie.',
+            'Upravte hada zmenou jasu LED diód.',
+            'Skúste to dlhšie alebo s viacerými hadmi.'
+        ],
+        'example' => [
+            'Toto je príklad 6 pixelov dlhého hada so 4 mikro:bitmi tvoriacimi štvorec 2x2:',
+            'Programovanie počiatočného micro:bitu (môže to urobiť učiteľ)',
+            'Všetky kódy sú iniciované týmto micro:bitom, ktorý po stlačení tlačidla A vysiela rádiový signál do iných micro:bitov.',
+            'Programovanie pohybu hada',
+            'Každý mikro:bit musí byť v rovnakej rádiovej skupine ako počiatočný mikro:bit.',
+            'Všetky animácie sa spustia po prijatí rádiového signálu.',
+            'Animácia prvého mikrobitu je okamžite viditeľná, ostatné čakajú, kým sa tam had dostane.',
+            'Čas medzi dvoma fázami určuje rýchlosť hada.',
+        ], 'materials' => [
+            'micro:bits (pre každého študenta, ak je to možné)',
+            'notebook alebo počítač pre editor makecode.microbit.org'
+        ]
+    ],
+    'illustrate-a-joke' => [
+        'title' => 'Ilustruj vtip s bitsy',
+        'author' => 'Margot Schubert',
+        'purposes' => 'Na navrhnutie malej hry, kde používateľ nájde odpoveď na vtipnú otázku.',
+        'description' => 'Študenti navrhnú hru, v ktorej používateľ nájde odpoveď na vtipnú otázku, keď figúrka narazí na predmet na ihrisku. Na dokončenie výzvy študenti používajú základné funkcie bitsy.',
+        'instructions' => [
+            'Vymyslite vtipnú otázku. Prejdite na bitsy a začnite nový projekt. Budete potrebovať:',
+            'avatara – postavičku, ktorou môžete pohybovať',
+            'Bielu mačku na fialovom pozadí',
+            'Automaticky generovaný opis',
+            'predmet, ku ktorému musí ísť váš avatar',
+            'miestnosť – pozadie vášho programu',
+            'dve správy: otázku a odpoveď',
+            'Dokončená hra sa dá stiahnuť ako súbor html.'
+        ],
+        'example' => 'Na tejto webovej lokalite vidíte príklad vtipu a je tam odkaz na digitálnu tabuľu:',
+        'materials' => 'bitsy beží v prehliadači'
+    ],
+    'app-that-counts-in-several-languages' => [
+        'title' => 'Aplikácia, ktorá počíta vo viacerých jazykoch',
+        'author' => 'Samuel Branco',
+        'purposes' => [
+            'Na naučenie sa, ako vytvoriť jednoduchú aplikáciu.',
+            'Na naučenie sa, ako programovať cez bloky.',
+            'Na naučenie sa, ako pridať štítky, tlačidlá, obrázky, senzory a médiá.',
+            'Na naučenie sa, ako usporiadať prvky na obrazovke aplikácie'
+        ],
+        'description' => 'Aplikácia vám umožňuje počítať vo viacerých jazykoch stlačením tlačidla. Keď používateľ zatrasie smartfónom, počítanie sa vráti na nulu. Výzvou je pridať ďalší jazyk.',
+        'instructions' => [
+            'Na splnenie výzvy musíte definovať ďalší jazyk, v ktorom má aplikácia počítať.',
+            'Potom si musíte stiahnuť z internetu (napr. z Pixabay alebo Unsplash) vlajku tejto krajiny a nahrať ju na platformu MIT APP Inventor prostredníctvom prvku s názvom flag pod „Picture property“ (vlastnosť obrázka).',
+            'Ďalej by ste mali zistiť, ako sa píše názov krajiny v angličtine a ako sa povie „odísť“ a „stlač ma“ v jazyku danej krajiny.',
+            'Nakoniec musíte pridať potrebné bloky, aby aplikácia fungovala v novom jazyku.',
+        ],
+        'materials' => [
+            'Na vývoj aplikácie potrebujete počítač alebo notebook s prístupom na internet.',
+            'Vytvorte si účet na platforme MIT APP Inventor, ktorá je dostupná cez https://ai2.appinventor.mit.edu',
+            'Na testovanie vyvinutej aplikácie je tiež potrebné nainštalovať do smartfónu aplikáciu MIT AI2 Companion.'
+        ]
+    ],
+    'coding-with-art-through-storytelling' => [
+    'title' => 'Programovanie spojené s umením prostredníctvom rozprávania príbehov',
+    'author' => 'Maria Tsapara and Anthi Arkouli',
+    'purposes' => [
+        'Na pestovanie zručností pozorovania, interpretácie a kladenia otázok prostredníctvom umenia.',
+        'Na to, aby ste boli kreatívny a spolupracovali s ostatnými na spoločnom cieli',
+        'Na vytvorenie algoritmu na vyrozprávanie príbehu.',
+    ],
+    'description' => 'V tejto výzve sa žiaci inšpirujú umeleckým dielom, vytvoria príbeh a ilustrujú ho. Potom sa pokúsia prerozprávať príbeh pomocou programovateľnej robotickej súpravy/alebo ako aktivitu bez zapojenia do siete.',
+    'materials' => [
+        'Túto aktivitu možno realizovať ako aktivitu odpojenú od siete alebo pomocou vzdelávacieho programovateľného robota, ako je beebot/bluebot/mouse robot (robotické hračky).',
+        'karty so šípkami pre beebota alebo karty so šípkami na aktivitu mimo siete',
+        'v gréčtine',
+        'Ak sa chcete dozvedieť viac o súbore nástrojov Project Zero\'s Thinking Routine, môžete navštíviť'
+
+    ],
+    'example' => [
+        'Učiteľ spolupracuje so žiakmi na modeli, ako navrhnúť algoritmus s kartami, ktoré poskytnú pokyny pre Bee-Bota alebo iného robota, aby sa dostal k prvej udalosti príbehu na podložke. Žiaci pracujú v tímoch po troch alebo štyroch, aby navrhli algoritmus, aby sa robot presunul do ďalšej časti. Žiaci testujú svoje algoritmy na podložke v triede a podľa potreby odstraňujú chyby.',
+        'Pokračujú, aby robot prešiel cez toľko udalostí príbehu, koľko sa dá',
+        'Túto aktivitu možno realizovať ako aktivitu odpojenú od siete.',
+        'Jedno dieťa je robot a ďalšie dieťa je programátor. Programátor vytvára algoritmickú cestu pomocou kariet so šípkami, aby pomohol robotovi presunúť sa z jedného obrázka na druhý a vyrozprávať príbeh. Zakaždým, keď je robot na obrázku, má rozpovedať časť príbehu.',
+    ],
+    'instructions' => [
+        'Učiteľ požiada žiakov, aby pozorovali obraz/fotografiu.',
+        'Aby vytvorili príbeh, používajú myšlienkový postup „úvod, jadro, záver“ (Project Zero z Harvardskej školy).',
+        'Učiteľ sa ich pýta: „Ak je toto umelecké dielo úvod/jadro/záver príbehu, čo sa môže stať ďalej/predtým/na konci?',
+        'Žiaci ilustrujú udalosti príbehu.',
+        'Žiaci si spomínajú na príbeh a zapisujú udalosti do tabuľky. Pomocou kariet so šípkami vytvoria algoritmus, ktorý pomáha Beebotovi prerozprávať príbeh.'
+    ],
+],
+    'coding-with-legoboost' => [
+    'title' => 'Kódovanie a programovanie s LegoBoost – rozšírením programu Scratch',
+    'author' => 'Lidia Ristea',
+    'purposes' => [
+        'na vytváranie modelov pomocou LegoBoost.',
+        'na rozvíjanie programovacích zručností v Scratch.',
+        'na programovanie robotov pomocou príkazov od jednoduchých po zložité.'
+    ],
+    'description' => 'V tejto výzve študenti použijú rozšírenie Scratch – LegoBoost a do aplikácie zadajú kódy, aby sa roboti mohli pohybovať dopredu, dozadu, vyhýbať sa prekážkam a počúvali hlasové príkazy.',
+    'duration' => '120 minút',
+    'instructions' => [
+        'Prihláste sa do aplikácie Scratch.mit.edu.',
+        'Spustite Scratch Link a na notebooku aktivujte Bluetooth.',
+        'Kliknite na Pridať rozšírenie Scratch a vyberte LegoBoost.',
+        'Pridajte obrázok o Európskom týždni programovania.',
+        'Zapnite dva AB motory a keď narazíte na červenú prekážku, vypnite.',
+        'V zelenej farbe je zapnutý motor A, v čiernej farbe je zapnutý motor B.',
+        'Na trase budú umiestnené zelené, červené a čierne prekážky.',
+        'Pridajte príkazy na pohyb a otáčanie zo šípok a prevod textu na reč, keď narazíte na prekážku.',
+        'Otestujte to!'
+    ]
+]
+
+
 ];
 

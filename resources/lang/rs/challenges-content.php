@@ -480,5 +480,383 @@ return [
         ],
 
     ]
+,  'common' => [
+        'share' => 'Podelite vezu ili QR kod vašeg projekta na Instagramu ili Facebooku, dodajte heštag #CodeWeekChallenge i spomenite @CodeWeekEU.',
+        'audience' => [
+            'Nastavnici i obrazovni kadar',
+            'Učenici osnovne škole (6 do 12 godina)',
+            'Učenici viših razreda osnovne i nižih razreda srednje škole (12 to 16 godina)',
+            'Učenici viših razreda srednje škole (16 to 18 godina)',
+        ],
+    ],
+    'code-a-dice' => [
+        'title' => 'Programiraj kockicu i baci je',
+        'author' => 'Fabrizia Agnello',
+        'purposes' => [
+            'Programirajte interaktivne zagonetke',
+            'Za programiranje simulacije objekta koji se nasumično kreće koji će se koristiti ako pravi objekat nije dostupan'
+        ],
+        'description' =>
+            'U ovom izazovu programiraćete kockicu da se nasumično kotrlja na vašu komandu. Možete da odaberete bilo koji tip kockice sa onoliko stranica koliko želite, kao one koje se koriste u igrama uloga, kao i da dodate zvukove. ',
+        'instructions' => [
+            'Prijavite se na Scratch',
+            'Odaberite pozadinu',
+            'Napravite svoj sprajt za kockicu ili potražite neki na internetu i otpremite ga u svoj program',
+            'Napravi onoliko kostima za taj sprajt koliko stranica ima na izabranoj kockici, pri čemu svaka od njih pokazuje drugi broj',
+            'Odaberite kako želite da kockica počne da se kotrlja (pritiskom na taster na tastaturi, klikom na sprajt itd.) i napišite kod',
+            'Kodirajte sprajt tako da nasumično menja kostim na kraju kotrljanja',
+            'Dodajte zvučne efekte',
+        ],
+        'example' => 'Zakotrljajte D-20 kockicu'
+    ],
+    'personal-trainer' => [
+        'title' => 'Lični trener za micro:bit',
+        'author' => '',
+        'purposes' => [
+            'Za programiranje micro:bita kako biste koristili zujalicu i led tablu',
+            'Za kreiranje ličnog uređaja koji će kontrolisati vaše fizičke aktivnosti',
+            'Za programiranje micro:bita za poboljšanje vašeg zdravlja pomoću sporta',
+        ],
+        'description' =>
+            'Ovaj izazov vam omogućava da programirate vaš micro:bit tako da kontroliše vreme ponavljanja fizičkih vežbi u kombinaciji s vremenom za odmor. Pratićete vašu fizičku aktivnost u školi, kod kuće ili u parku.'
+        ,
+        'instructions' => [
+            'Kada je A+B, kreirajte tajmer koji odbrojava 3 sekunde sa zvukom muzičke note svake sekunde i prikazuje reč KRENI!',
+            'Tokom prve vežbe, prikažite kvadrat dimenzija 2x2 koji treperi u trajanju od 20 sekundi. Zatim reprodukujte zvuk i neka kvadrat prestane da treperi. Tokom preostalog vremena, druga slika koja treperi mora da se prikazuje u trajanju od 10 sekundi. Kada se završi, reprodukujte zvuk.',
+            'Zatim ponovite istu radnju, ali prikažite tablu dimenzija 3x3 za vreme za vežbu. Ponavljajte ove radnje sve dok se ne bude prikazana tabla dimenzija 5x5.',
+        ],
+        'duration' => '30-40 minuta'
+    ],
+    'create-a-spiral' => [
+        'title' => 'Napravite spiralu',
+        'author' => 'Lydie El-Halougi',
+        'purposes' => [
+            'Za učenje i vežbanje petlji i promenljivih.',
+            'Za poboljšanje kreativnosti u programiranju.'],
+        'description' => 'U ovom izazovu napisaćete projekat u Scratch-u za pravljenje spirale, korišćenjem blokova s olovkama, petlju i promenljivu.',
+
+        'instructions' => [
+            'Blokovi s olovkama',
+            'Napravite novi projekat i nazovite ga Spirala.',
+            'Kliknite na ljubičastu ikonu „Dodaj proširenje“ na donjoj strani prozora',
+            'Izaberite „olovku“: sada možete da koristite blokove s olovkama u svom projektu!',
+            'Da biste započeli svoj projekat, prevucite i otpustite blok „kada se klikne na zelenu zastavicu“:',
+            'Morate da započnete sa praznom stranicom: unutar blokova s olovkama, dodajte blok „obriši sve“:',
+            'Počnite da crtate na sredini pozornice, što znači da vaš sprajt mora da ode do sredine pozornice (0,0):',
+            'Vaš sprajt može da se pomera bez crtanja ili možete da ga prevlačite dok crta:',
+            'kada poželite da crta, možete da koristite blok za spuštanje olovke',
+            'kada to ne želite, možete da iskoristite blok za podizanje olovke',
+            'Sada, želite da crtate! Dodajte blok „spuštanje olovke“:',
+            'Šestougaonik',
+            'Dodajte blokove u nastavku projekta, ispod:',
+            'Sada imate jednu šestinu vašeg šestougaonika. \'Morate da 6 puta ponovite ovaj niz radnji:',
+            'Spirala',
+            'Da biste napravili spiralu, moraćete da dodate 2 dužini svake sledeće strane.',
+            'Da biste to uradili, koristićete <strong>promenljivu.</strong>',
+            'U blokovima sa promenljivima, kliknite na Napravi promenljivu',
+            'Nazovite je dužina, a zatim kliknite na OK:',
+            'Spirala će početi da raste, moraćete da počnete od male veličine: postavite prvu dužinu na 10, pa umetnite ovaj blok pre petlje.',
+            'Umetnite promenljivu „dužina“ u blok „pomeri … koraka“',
+            'Da bi spirala rasla, moraćete i da imate porast dužine u svakoj petlji: dodajte blok ispod na kraj petlje:',
+            'Evo vašeg trenutnog projekta:',
+            'Predivna spirala ',
+            'Nacrtrali ste spiralu! Da bi se nastavljala u nedogled, zamenite petlju „ponovi 6“ petljom „zauvek“:',
+            'Da biste nacrtali spiralu u boji, dodajte sledeći blok u petlju:',
+            'Kada počnete iz početka, sprajt crta neželjenu liniju. Da biste to sprečili, dodajte blok „podizanje olovke“ na početak projekta.',
+            'Evo vašeg konačnog projekta:',
+            'Čestitamo! Napravili ste predivnu spiralu!',
+        ],
+
+    ],
+    'play-against-ai' => [
+    'title' => 'Napravite igru „ Kamen, papir, makaze\' i igrajte je protiv veštačke inteligencije',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+    'da biste razumeli kako radi ciklus mašinskog učenja.',
+    'da biste napravili model mašinskog učenja korišćenjem mašine koja može da uči',
+    'da biste se upoznali sa Pictoblox alatkom i uvezli napravljeni model u projekat',
+    'da biste postavili pozornicu i likove, napravili i pokrenuli promenljive u Pictoblox-u',
+    'da biste inicirali igru, identifikovali poteze igrača, programirali nasumične poteze veštačke inteligencije',
+    'da biste napravili i testirali igru koja uključuje veštačku inteligenciju kao suparnika u igri Papir, kamen, makaze.'
+
+],
+        'description' => 'Napravićemo model korišćenjem Mašine koja može da uči iz slika korišćenjem sledeće tri klase: Kamen, makaze i papir. Model će biti učitan u Pictoblox i koristiće se za pravljenje igre koju možemo da igramo protiv veštačke inteligencije.',
+        'duration' => '90 minuta',
+        'instructions' => [
+    'Napravite novi projekat sa slikom na Mašini koja može da uči, sa 3 klase pod nazivom Kamen, papir i makaze. Za svaku klasu, zabeležite kamerom najmanje 400 slika. Uverite se da imate jasnu pozadinu. Obučite i izvezite model. Otpremite model i kopirajte vezu.',
+    'Napravite besplatni nalog na internet sajtu Pictoblox. Dodajte proširenje za mašinsko učenje i otpremite model. Postavite pozornicu, promenljive i sprajtove. Pokrenite igru, identifikujte poteze igrača i poteze veštačke inteligencije, kao i pravila za pobedu u partiji.',
+    'Obučavanje podacima za igru.',
+            'Testiranje modela.',
+            'Izvoz modela.',
+            'Dodajte proširenje za mašinsko učenje i učitajte model.',
+            'Postavite pozornicu, promenljive i sprajt.',
+            'Pokrenite igru.',
+            'Prepoznajte poteze igrača.',
+            'Postavite nasumične poteze veštačke inteligencije.',
+            'Emitujte nasumične poteze veštačke inteligencije.',
+            'Napravite tri bloka. Ko je pobednik partije? ',
+            'Proverite da li igrač pobeđuje u partiji.',
+            'Proverite da li veštačka inteligencija pobeđuje u partiji.',
+            'Proverite da li je partija nerešena.',
+            'Programirajte blokove.',
+            'Sprajt za Papir, kamen, makaze',
+        ]
+    ],
+    'air-drawing-with-AI' => [
+        'title' => 'Crtanje po vazduhu sa veštačkom inteligencijom',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            'za pisanje programa pomoću proširenja za detekciju ljudskog tela za prepoznavanje pokreta prstiju ispred kamere.',
+            'za kodiranje sa jednostavnim blokovima u nekoliko redova koda.',
+            'za prikaz primera upotrebe veštačke inteligencije'
+        ],
+        'description' => 'Pravljenje programa koji omogućava korisniku da crta po vazduhu rukom (kažiprstom) ispred kamere, a sve što nacrta se automatski prikazuje na pozornici Pictoblox-a.',
+        'instructions' => [
+            'Napravite nalog na Pictoblox-u',
+            'pratite vizuelna uputstva za sledeće:',
+            'dodavanje proširenja Detekcija ljudskog tela i Olovka;',
+            'postavljanje pozornice i dodavanje sprajta (Olovka) i dodatnih sprajtova za sledeće: Spuštanje olovke, Podizanje olovke, Briši sve;  ',
+            'napišite kod kako bi sprajt Olovka pratio prst',
+            'napišite kod za dugmiće: Podizanje olovke, Spuštanje olovke i Briši sve, kao i za Olovku',
+            'Sada ste spremni da pravite sopstvene crteže i igrate se sa različitim bojama i veličinama olovke.',
+        ],
+        'materials' => [
+            'Laptop ili računar sa kamerom',
+            'Najnovija verzija PictoBlox-a je preuzeta (preporučeno) ili onlajn Pictoblox (besplatan)',
+            'Pictoblox nalog (besplatan)',
+            'Dobra veza sa internetom'
+        ]
+    ],
+    'emobot-kliki' => [
+        'title' => 'Robot za emocije Kliki',
+        'author' => 'Margareta Zajkova',
+        'purposes' => [
+            'Da biste naučili osnovne koncepte mašinskog učenja i prepoznavanja teksta.',
+            'Da biste razumeli ulogu emocija u komunikaciji.',
+            'Da biste koristili kôd za kreiranje dijaloga između robota za ćaskanje i korisnika.',
+            'Da biste razumeli kako računari mogu da prepoznaju emotivne nijanse kroz analizu teksta i da reaguju na odgovarajući način.'
+        ],
+        'description' => [
+            'Kreirajte emotivnog robota u Scratch-u koji može da prikazuje srećno lice za pozitivne poruke (ako mu kažete lepe stvari), ljutito lice za negativne poruke (ako mu kažete nešto neprijatno) i zbunjeno lice ako je poruka neodređena.',
+            'Naš robot za emocije Kliki će prepoznati komplimente i uvrede, pa ćemo videti kako računari mogu da budu obučeni za prepoznavanje emotivnih nijansi.',
+        ],
+        'instructions' => [
+            'Za početak, programirajte listu pravila za to šta je lepo ili ljubazno, a šta je loše ili neprijatno.',
+            'Prijavite se na https://machinelearningforkids.co.uk/ ili kreirajte novi nalog.',
+            'Napravite novi model mašinskog učenja dodavanjem 3 nove oznake, prvu nazovite „fino“, drugu „loše“, a ako želite da prepoznaje i vaše ime, napravite i treću oznaku pod nazivom „ime“.',
+            'Obučite novi model mašinskog učenja, testirajte ga i koristite za pravljenje robota za emocije u Scratch-u.',
+            'Pokrenite Scratch 3 uređivač, izbrišite sprajt mačke, umetnite 3 nova sprajta koje je napravio Microsoft Bing Image Creator (računarski crtani likovi za izražavanje sreće, ljutnje i nesigurnosti) ili napravite novi sprajt klikom na ikonu za Bojanku crtanjem tri kopije kostima za srećno, ljutito i nesigurno lice.',
+            'Kliknite na karticu „Kod“ i unesite sledeću skriptu.']
+        ,
+        'example' => [
+    'Podelite svog emotivnog robota Kliki sa prijateljima i naučite više o veštačkoj inteligenciji i osećanjima!',
+    'Umesto računarskog crtanog lika, možete da isprobate nešto drugo, poput životinje. Umesto ljubaznih i neprijatnih, možete da obučite lik da prepoznaje i druge tipove poruka.',
+        ],
+
+    ],
+    'craft-magic' => [
+        'title' => 'Izvedite čarolije pomoću Veštački inteligentnih pokreta ruku ',
+        'author' => 'Georgia Lascaris',
+        'purposes' => [
+            'Za unapređivanje veština programiranja kod učenika, tako što će im bit omogućeno da koriste osnovne komande.',
+            'Za razvoj veština algoritamskog razmišljanja raščlanjivanjem složenih zadataka u izvodljive pojedinačne korake.',
+            'Za ohrabrivanje kreativnog rešavanja problema i pronalazak jedinstvenih primena pokreta ruku za crtanje i pisanje.',
+            'Za negovanje i razumevanje koncepata veštačke inteligencije, posebno kako veštačka inteligencija omogućava računarima da prepoznaju i tumače pokrete ruku.',
+            'Za podizanje svesti o značaju tehnologije za osobe sa invaliditetom.',
+            'Za podsticanje rešavanja problema kroz saradnju i timski rad među učenicima, tako što će zajedno raditi na poboljšanju svojih programa za pokrete ruku.',
+            'Za povezivanje veština programiranja i računarskog razmišljanja sa primenama u stvarnom svetu, naglašavajući značaj uticaja tehnologije na živote ljudi i usklađujući to sa Ciljevima održivog razvoja (COR).'
+        ],
+        'duration' => [
+            '90 min. za učenike 10-12',
+            '45 min. za učenike 12-15'
+        ],
+        'description' => 'Napravite program zasnovana na blokovima u Scratch-u korišćenjem proširenja za veštačku inteligenciju „Ljudsko telo“ na kreativan i angažovan način, kako biste crtali po ekranu bez potrebe za tradicionalnim mišem ili ekranom osetljivim na dodir.',
+        'instructions' => [
+            'Povežite se na https://ai.thestempedia.com i napravite naloge za nastavnike i učenike.',
+            'Uvezite proširenja „Detekcija ljudskog tela“, „Olovka“, „Tekst u govor“.',
+            'Dodajte sprajt „Olovka“ iz biblioteke i napravite 7 sprajtova („pisanje“, „brisanje“, „crno“, „crveno“, „plavo“, „zeleno“, „ružičasto“).',
+            'Pišite komande kako biste proverili šta se dešava kada sprajt „olovka“ dodirne neki od drugih sprajtova.',
+            'Pišite komande kako biste omogućili kameri da prepozna Pozu ruke i pomeri olovku na x i y koordinate vašeg kažiprsta.',
+            'Promenite kostim na kraju kotrljanja.',
+            'Dodajte zvučne efekte.',
+        ],
+        'materials' => [
+    'Platforma za programiranje https://ai.thestempedia.com (besplatno)',
+            'nalog za nastavnike (besplatno)',
+            'nalog za učenike (besplatno)',
+            'Računari sa kamerom',
+            'Veza sa internetom',
+        ]
+    ],
+    'circle-of-dots' => [
+    'title' => 'Krug od tačaka',
+    'author' => 'Marin Popov',
+    'purposes' => [
+        'Da biste napisali kod za crtanje linije od tačaka.',
+        'Da biste napisali kod za crtanje linije od crtica.',
+        'Da biste napisali kod za crtanje kruga.',
+        'Napišite kod za crtanje kruga od tačaka (crtica).',
+    ],
+    'description' => 'Nacrtajte krug od tačaka ili crtica.',
+    'duration' => '40 minuta',
+    'instructions' => [
+        'Pravljenje bloka za tačke.',
+        'Pravljenje bloka za crtice.',
+        'Konstruisanje kruga od tačaka.',
+        'Konstruisanje kruga od crtica.'
+    ]
+],
+    'coding-escape-room' => [
+    'title' => 'Pravljenje programirane sobe za bekstvo',
+    'author' => 'Stefania Altieri i Elisa Baraghini',
+    'purposes' => [
+        'Za podučavanje/učenje i razmišljanje o konceptima programiranja.',
+        'Za korišćenje jednostavnih alatki za programiranje.',
+        'Za razvoj računarskog načina razmišljanja i rešavanja problema.'
+    ], 'description' => [
+        'Kreiranje programiranog iskustva bekstva iz sobe poput ovog:',
+        'Možete da koristite Google obrazac, Genial.ly, Google prezentaciju, bilo koju alatku za pravljenje priče na osnovu programiranja ;).'
+
+    ],
+    'duration' => '90 minuta',
+    'instructions' =>
+        'Možete da podelite učenike u male grupe, tako da mogu da se igraju, a zatim naprave još jedan izazov pomoću šablona: '
+    ,
+
+    'materials' => [
+        'Možete da koristite bilo koju alatku (Google i Microsoft platformu za pravljenje i deljenje dokumenata, prezentacija i listova). Bilo koju programersku konstrukciju, mehanizam i alatku, ili lik koji je u vezi sa informacionim i komunikacionim tehnologijama (ICT), ili sa programiranjem.'
+    ],
+    'example' => [
+        'Neki likovi koji su imali veoma važnu ulogu u istoriji ICT, kao i osnovni koncepti pisanja kodova i programiranja, predstavljaju se pomoću igre. Ovo je najbolji način za učenje i aktivno učešće. Ova igra može da se igra u timovima ili pojedinačno, poput izazova ili takmičenja. Učenici zatim mogu da naprave nešto slično i razviju sposobnosti poput kreativnosti i veština kodiranja.',
+        'Ovo je veoma praktičan resurs koji može uvek iznova da se koristi i jednostavno se ponovo pravi. Google obrasci su jedna od mogućih alatki. Možete da koristite i Google slajdove, Genial.ly ili Emaze ili bilo koju drugu alatku za pravljenje priča sa prekretnicama i sopstvenih avantura.',
+        'Izazov bekstva je podeljen u sesije. Ako pogodite, možete krenuti dalje. Učenici moraju da reše kvizove kodiranjem.',
+    ],
+],
+    'let-the-snake-run' => [
+    'title' => 'Neka zmija pojuri',
+    'author' => 'Ágota Klacsákné Tóth',
+    'purposes' => [
+        'Za kodiranje pokreta zmije na sopstvenom micro:bit-u.',
+        'Za podešavanje pravilnog položaja i vremena za zajedničku animaciju.'
+    ],
+    'description' => 'Učenici moraju da pišu kodove kako bi se zmija kretala kroz micro:bit uređaje koji su postavljeni jedan pored drugog. To mora da bude urađeno tako da izgleda kao da zmija juri iz jednog micro:bit-a u drugi.',
+    'duration' => '30 minuta',
+    'instructions' => [
+        'Napravite stazu koja se pruža kroz nekoliko micro:bit-ova, jedan pored drugog (npr. formiraju kvadrat od 2x2).',
+        'Pišite kodove dok se zmija kreće stazom.',
+        'Radite na sopstvenom uređaju, a zatim ih spojite i pokrenite kod.',
+        'Uzmite u obzir vreme i mesto n akojem se zmija nalazi: Ako zmija izađe iz jednog micro:bit-a, mora da se pojavi u sledećem micro:bit-u.',
+        'Dodatni izazovi: Uz micro:bit v2, reprodukujte muziku sve dok zmija ne napusti vaš uređaj.',
+        'Dizajnirajte zmiju tako što ćete menjati osvetljenost LED dioda.',
+        'Isprobajte duže zmije ili više zmija.'
+    ],
+    'example' => [
+        'Ovo je primer zmije dužine 6 piksela sa 4 micro:bit-a koji formiraju kvadrat od 2x2: ',
+        'Kodiranje početnog micro:bit-a (nastavnik to može da uradi)',
+        'Svi kodovi se pokreću preko ovog micro:bit-a koji šalje radio-signal drugim micro:bit-ovima kada se pritisne taster A.',
+        'Programiranje kretanja zmije',
+        'Svaki micro:bit mora da bude u istoj radio-grupi kao početni micro:bit.',
+        'Sve animacije počinju nakon prijema radio-signala.',
+        'Animacija prvog micro:bit-a je odmah vidljiva, druge čekaju sve dok zmija ne dođe do njih.',
+        'Vreme između dve faze određuje brzinu zmije.',
+    ], 'materials' => [
+        'micro:bit uređaji (za svakog učenika, ako je moguće)',
+        'laptop ili računar za makecode.microbit.org uređivač'
+    ]
+],
+    'illustrate-a-joke' => [
+    'title' => 'Ilustrujte šalu uz bitsy',
+    'author' => 'Margot Schubert',
+    'purposes' => 'Za dizajniranje male igre u kojoj korisnik pronalazi odgovor na šaljivo pitanje.',
+    'description' => 'Učenici prave igru u kojoj korisnik pronalazi odgovor na šaljivo pitanje kada figura udari u predmet na polju za igru. Učenici koriste osnovne funkcije koje poseduje bitsy kako bi dovršili izazov.',
+    'instructions' => [
+        'Smislite šaljivo pitanje. Idite na bitsy i započnite novi projekat. Biće vam potrebno:',
+        'avatar – sprajt koji možete da pomerate naokolo',
+        'Bela mačka na ljubičastoj pozadini',
+        'Automatski generisani opis',
+        'objekat do kojeg vaš avatar treba da stigne',
+        'soba – pozadina vašeg programa',
+        'dve poruke: pitanje i odgovor',
+        'Završenu igru možete preuzeti u vidu html datoteke.'
+        ],
+        'example' => 'Na ovoj veb-stranici vidite primer šale, a postoji i veza do digitalne table:',
+        'materials' => 'bitsy se pokreće u pregledaču'
+    ],
+    'app-that-counts-in-several-languages' => [
+        'title' => 'Aplikacija koja broji na nekoliko jezika',
+        'author' => 'Samuel Branco',
+        'purposes' => [
+            'Da bi naučili kako se pravi jednostavna aplikacija.',
+            'Da bi naučili da programirate pomoću blokova.',
+            'Da bi naučili kako se dodaju oznake, dugmići, slike, senzori i medijske datoteke.',
+            'Da bi naučili kako da organizujete elemente na ekranu aplikacije.'
+        ],
+        'description' => 'Aplikacija vam omogućava da brojite na više jezika jednim pritiskom na dugme. Kad god korisnik protrese pametni telefon, brojač se vraća na nulu. Izazov je dodati još jedan jezik.',
+        'instructions' => [
+            'Da biste dovršili izazov, morate da definišete drugi jezik na kojem želite da aplikacija broji.',
+            'Zatim morate da preuzmete sa interneta (npr. sa platformi Pixabay ili Unsplash) zastavicu te zemlje i otpremite je na platformu MIT APP Inventor putem elementa pod nazivom zastava, u svojstvu Slika.',
+            'Dalje, trebalo bi da pronađete kako se piše naziv zemlje na engleskom i kako se kaže „izađi“ i „pritisni me“ na jeziku te zemlje.',
+            'Na kraju, morate da dodate neophodne blokove kako bi aplikacija radila na novom jeziku.',
+        ],
+        'materials' => [
+            'Za razvoj aplikacije, potreban vam je računar ili laptop sa pristupom internetu.',
+            'Napravite nalog na platformi MIT APP Inventor, kojoj možete pristupiti sa adrese https://ai2.appinventor.mit.edu',
+            'Takođe je neophodno instalirati aplikaciju MIT AI2 Companion na pametni telefon kako biste testirali razvijenu aplikaciju.'
+        ]
+    ],
+    'coding-with-art-through-storytelling' => [
+    'title' => 'Kodiranje sa umetnošću kroz Pričanje priča',
+    'author' => 'Maria Tsapara i Anthi Arkouli',
+    'purposes' => [
+        'Za unapređivanje veština opažanja, tumačenja i postavljanja pitanja kroz umetničko angažovanje.',
+        'Da biste bili kreativni i sarađivali sa drugima na postizanju zajedničkog cilja',
+        'Za pravljenje algoritma pomoću kojeg ćete ponovo ispričati priču.',
+    ],
+    'description' => 'U ovom izazovu učenici će inspiraciju pronaći u umetnosti, napraviti priču i ilustrovati je. Zatim će pokušati ponovo da je ispričaju korišćenjem programabilnog robotskog kompleta/ili kao aktivnost bez tehničkih pomagala.',
+    'materials' => [
+        'Ovu aktivnost možete primeniti kao aktivnost bez pomagala ili uz korišćenje obrazovnog edukativnog programabilnog robota kao što je beebot/bluebot/mouse robot.',
+        'beebot kartice sa strelicama za aktivnost bez pomagala',
+        'na grčkom',
+        'Da biste saznali više o Thinking Routine Toolbox koji je napravio Project Zero, možete da posetite'
+
+    ],
+    'example' => [
+        'Nastavnik radi sa učenicima na modelovanju načina za pravljenje algoritma pomoću kartica koje će obezbediti uputstva za Bee-Bot-a ili nekog drugog robota kako bi dobili prvi događaj priče na podlozi. 3-4 učenika rade u timovima za dizajniranje algoritma kako bi se robot kretao do sledeće sekvence. Učenici testiraju svoje algoritme na podlozi u razredu i otklanjaju greške ako ih ima.',
+        'Nastavljaju da se kreću kroz koliko god mogu priča i događaja',
+        'Ova aktivnost se može primeniti i kao aktivnost bez pomagala.',
+        'Jedno dete je robot - drugo dete je programer. Programer pravi algoritamsku putanju korišćenjem kartica sa strelicama kako bi se robot pomerao sa jedne slike na drugu i ponovo pričao priču. Svaki put kada se robot nađe u nekoj od slika, od njega će biti zatraženo da ispriča deo priče.',
+    ],
+    'instructions' => [
+        'Nastavnik traži od učenika da posmatraju sliku/fotografiju.',
+        'Oni koriste rutinu razmišljanja „Početak, sredina, kraj“ (Project Zero škole na Harvardu) kako bi napravili priču.',
+        'Nastavnik ih zatim pita: „Ako je ovo umetničko delo početak/sredina/kraj priče, šta bi moglo a se desi dalje/pre/na kraju?',
+        'Učenici ilustruju događaje u priči.',
+        'Učenici se prisećaju priče i smeštaju događaje u koordinatnu mrežu. Korišćenjem kartica sa strelicama, oni prave algoritam pomažući beebot-u da ponovo ispriča priču.'
+    ],
+],
+    'coding-with-legoboost' => [
+    'title' => 'Kodiranje i programiranje uz LegoBoost - proširenje za Scratch',
+    'author' => 'Lidia Ristea',
+    'purposes' => [
+        'za pravljenje modela pomoću LegoBoost-a.',
+        'za razvoj veština programiranja u Scratch-u.',
+        'za programiranje robota korišćenjem komandi, od jednostavnih do složenih.'
+    ],
+    'description' => 'U ovom izazovu, učenici će koristiti proširenje Scratch-LegoBoost i unositi linije koda u aplikaciju kako bi se roboti kretali napred, unazad, izbegavali prepreke i slušali glasovne komande.',
+    'duration' => '120 minuta',
+    'instructions' => [
+        'Prijavite se na Scratch.mit.edu aplikaciju.',
+        'Pokrenite Scratch vezu i aktivirajte Bluetooth na laptopu.',
+        'Kliknite na „Dodajte proširenje“ u Scratch-u i odaberite LegoBoost.',
+        'Dodajte sliku o EU nedelji programiranja.',
+        'Postavite dva AB motora na uključeno, a kada dođe do crvene prepreke, na isključeno.',
+        'U zelenoj boji, motor A je postavljen na uključeno, u crnoj boji, motor B je uključen.',
+        'Zelena, crvena i crna prepreka će biti postavljene duž puta.',
+        'Dodajte komande za kretanje i skretanja pomoću strelica i pretvaranja teksta u govor kada se naiđe na prepreku.',
+        'Testirajte!'
+    ]
+]
+
+
 ];
 
