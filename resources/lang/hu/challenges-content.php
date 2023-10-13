@@ -476,7 +476,7 @@ return [
         ],
         'instructions' => [
             'A kezdéshez készíts tervet, és határozd meg a gyakorlategységek sorrendjét. A terv segítségével programozd be a Calliope mini RGB LED-jét úgy, hogy az előre meghatározott ütemben az 5 szín valamelyikét jelenítse meg. Ezután hozz létre egy változót a tempóhoz, és programozd be az ismétléseket ciklusok segítségével.',
-            "Ne feledd, ha a programot neked tetsző, egyéni módon valósítottad meg, oszd meg velünk a info@calliope.cc címen - kíváncsian várjuk, hogy te mit hozol ki belőle! Apropó, a beküldött pályaművek között 30 Calliope minit sorsolunk ki!",
+            "Ne feledd, ha a programot neked tetsző, egyéni módon valósítottad meg, oszd meg velünk a info@calliope.cc címen-kíváncsian várjuk, hogy te mit hozol ki belőle! Apropó, a beküldött pályaművek között 30 Calliope minit sorsolunk ki!",
             "Oszd meg a projekted QR-kódját az Instagramon, add hozzá a #CodeWeekChallenge hashtaget, és említsd meg a @CodeWeekEU-t.",
         ],
         'example' => [
@@ -536,7 +536,7 @@ return [
     ],
     'create-a-spiral' => [
         'title' => "Hozzon létre egy spirált",
-        'author' => 'Lydie El - Halougi',
+        'author' => 'Lydie El-Halougi',
         'purposes' => [
             "A ciklus és a változók tanulása és gyakorlása.",
             "A kreativitás fejlesztése programozás során."],
@@ -575,8 +575,8 @@ return [
         ],
 
     ],
-    'play - against - ai' => [
-        'title' => "Készítsen és játszon az MI ellen - Kő, papír, olló játékot",
+    'play-against-ai' => [
+        'title' => "Készítsen és játszon az MI ellen-Kő, papír, olló játékot",
         'author' => 'Kristina Slišurić',
         'purposes' => [
             "hogy megértse a gépi tanulási ciklus működését.",
@@ -609,7 +609,7 @@ return [
             "Kő, papír, olló manó",
         ]
     ],
-    'air - drawing - with - AI' => [
+    'air-drawing-with-AI' => [
         'title' => "Levegőbe rarjzolás MI segítségével",
         'author' => 'Kristina Slišurić',
         'purposes' => [
@@ -630,7 +630,7 @@ return [
         'materials' => [
             "Laptop vagy számítógép kamerával felszereleve",
             "A PictoBlox legújabb verziója letöltve(ajánlott) vagy online Pictoblox(ingyenes)",
-            "Pictoblox - fiók(ingyenes)",
+            "Pictoblox-fiók(ingyenes)",
             "Megfelelő internetelérés"
         ]
     ],
@@ -713,7 +713,7 @@ return [
             "Kör kialakítása vonásokból.",
         ]
     ],
-    'coding - escape - room' => [
+    'coding-escape-room' => [
         'title' => "Hozzon létre kódoló szabadulószobát",
         'author' => " Stefania Altieri és Elisa Baraghini",
         'purposes' => [
@@ -739,7 +739,7 @@ return [
             "A szabaduló kihívás munkamenetekre oszlik. Ha úgy gondolja, mehet tovább. A tanulóknak kell elkészíteniük a kódolási rejtvényeket.",
         ],
     ],
-    'let - the - snake - run' => [
+    'let-the-snake-run' => [
         'title' => "Hadd fusson a kígyó",
         'author' => 'Ágota Klacsákné Tóth',
         'purposes' => [
@@ -771,7 +771,7 @@ return [
             "laptop vagy számítógép a makecode.microbit.org szerkesztőjéhez"
         ]
     ],
-    'illustrate - a - joke' => [
+    'illustrate-a-joke' => [
         'title' => "Mutasson be egy viccet a bitsy segítségével",
         'author' => 'Margot Schubert',
         'purposes' => "Apró játék tervezése, ahol a felhasználó megtalálja a választ egy vicces kérdésre.",
@@ -789,7 +789,7 @@ return [
         'example' => "Ezen a webhelyen példát találhat egy viccre, illetve van egy digitális táblára mutató hivatkozás:",
         'materials' => "A bitsy egy böngészőben fut"
     ],
-    'app - that - counts - in - several - languages' => [
+    'app-that-counts-in-several-languages' => [
         'title' => "Alkalmazás, amely több nyelven is számol",
         'author' => 'Samuel Branco',
         'purposes' => [
@@ -806,7 +806,7 @@ return [
             "Végül hozzá kell adnia a szükséges blokkokat ahhoz, hogy az alkalmazás az új nyelven működjön.",
         ],
         'materials' => [
-            "Egy adott alkalmazás fejlesztéséhez internet - hozzáféréssel rendelkező számítógépre vagy laptopra van szüksége .",
+            "Egy adott alkalmazás fejlesztéséhez internet-hozzáféréssel rendelkező számítógépre vagy laptopra van szüksége .",
             "Hozzon létre egy fiókot az MIT APP Inventor platformon, amely a https://ai2.appinventor.mit.edu oldalon érhető el",
             "Az MIT AI2 Companion alkalmazást is telepíteni kell az okostelefonra a kifejlesztett alkalmazás teszteléséhez."
         ]
@@ -838,7 +838,7 @@ return [
             "A kezdet–közép–vég gondolkodási sort alkalmazzák (Project Zero of Harvard School) egy-egy történet létrehozásához..",
             "A tanár megkérdezi őket: Ha ez a mű egy történet eleje / közepe / vége, mi történhetett ezután / ezelőtt / a végén ? ",
             "A tanulók illusztrálják a történet eseményeit . ",
-            "A tanulók felidézik a történetet, és a rácsban elhelyezik az eseményeket . Nyílkártyák segítségével olyan algoritmust hoznak létre, amely segít Bee - Botnak újra elmesélni a történetet . "
+            "A tanulók felidézik a történetet, és a rácsban elhelyezik az eseményeket . Nyílkártyák segítségével olyan algoritmust hoznak létre, amely segít Bee-Botnak újra elmesélni a történetet . "
         ],
     ],
     'coding-with-legoboost' => [
@@ -846,15 +846,15 @@ return [
         'author' => 'Lidia Ristea',
         'purposes' => [
             "modellek építése LegoBoost segítségével . ",
-            "programozási készségek fejlesztése a Scratch - ben . ",
+            "programozási készségek fejlesztése a Scratch-ben . ",
             "robotok programozása parancsok segítségével az egyszerűtől a bonyolultig . "
         ],
-        'description' => "Ebben a kihívásban a tanulók a Scratch - LegoBoost bővítményt fogják használni, és kódokat írnak be az alkalmazásba, hogy a robotok előre - hátra mozoghassanak, akadályokat kerüljenek el és hangutasításokat kapjanak . ",
+        'description' => "Ebben a kihívásban a tanulók a Scratch-LegoBoost bővítményt fogják használni, és kódokat írnak be az alkalmazásba, hogy a robotok előre-hátra mozoghassanak, akadályokat kerüljenek el és hangutasításokat kapjanak . ",
         'duration' => "120 perc",
         'instructions' => [
             "Jelentkezzen be a Scratch . mit . edu alkalmazásba . ",
-            "Indítsa el a Scratch Linket, és aktiválja a Bluetooth - t a laptopon . ",
-            "Kattintson a Bővítmény hozzáadása Scratch - ből lehetőségre, és válassza a LegoBoost elemet . ",
+            "Indítsa el a Scratch Linket, és aktiválja a Bluetooth-t a laptopon . ",
+            "Kattintson a Bővítmény hozzáadása Scratch-ből lehetőségre, és válassza a LegoBoost elemet . ",
             "Adjon hozzá egy képet az európai programozási hétről . ",
             "Kapcsolja BE a két AB motort, majd amikor valamilyen piros akadállyal találkozik, azt kapcsolja KI . ",
             'A zöld színű motornál az "A" BEKAPCSOLT állapotban, a fekete színű "B" motor szintén BE állásban van . ',

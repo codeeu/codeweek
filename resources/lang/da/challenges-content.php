@@ -404,7 +404,7 @@ return [
         'example' => 'Eksempel på spøgelseshus på niveau',
         'materials' => ['Hedy på', 'niveau 1 til 4']
     ],
-    'inclusive - app - design' => [
+    'inclusive-app-design' => [
         'title' => 'Inklusivt appdesign',
         'author' => 'Apple Education',
         'duration' => '60 minutter + valgfrie ekstraaktiviteter',
@@ -427,7 +427,7 @@ return [
             'Keynote på iPad eller Mac is anbefales, men er ikke et krav. '
         ]
     ],
-    'silly - eyes' => [
+    'silly-eyes' => [
         'title' => 'Fjollede øjne',
         'author' => 'Raspberry Pi Foundation',
         'duration' => '25 minutter',
@@ -599,18 +599,18 @@ return [
             'Indstil scenen, variablerne og spriten . ',
             'Initialiser spillet . ',
             'Identificer spillerens træk . ',
-            'Indstil tilfældige AI - træk . ',
-            'Broadcast tilfældige AI - træk . ',
+            'Indstil tilfældige AI-træk . ',
+            'Broadcast tilfældige AI-træk . ',
             'Lav tre blokke . Hvem vinder runden ? ',
             'Kontrollér, om spilleren vinder runden . ',
             'Kontrollér, om AI vinder runden . ',
             'Kontrollér, om runden er uafgjort . ',
             'Programmér blokkene . ',
-            'Sten, saks, papir - sprite',
+            'Sten, saks, papir-sprite',
         ]
     ],
-    'air - drawing - with - AI' => [
-        'title' => 'Luft - tegning med AI',
+    'air-drawing-with-AI' => [
+        'title' => 'Luft-tegning med AI',
         'author' => 'Kristina Slišurić',
         'purposes' => [
             'at skrive et program med udvidelsen Human Body Detection(Registrering af menneskekroppen), som kan genkende fingre, der bevæger sig foran kameraet . ',
@@ -630,11 +630,11 @@ return [
         'materials' => [
             'En bærbar computer eller en computer med et kamera',
             'Den nyeste version af PictoBlox downloadet(anbefales) eller PictoBlox online(gratis)',
-            'En PictoBlox - konto(gratis)',
+            'En PictoBlox-konto(gratis)',
             'En god internetforbindelse'
         ]
     ],
-    'emobot - kliki' => [
+    'emobot-kliki' => [
         'title' => 'Emobot Kliki',
         'author' => 'Margareta Zajkova',
         'purposes' => [
@@ -735,11 +735,11 @@ return [
         ],
         'example' => [
             'Nogle af de personer, der har spillet en meget vigtig rolle for IKT\'s historie, samt de grundlæggende begreber inden for kodning og programmering introduceres gennem leg . Det er den bedste måde at lære og deltage aktivt på . Dette spil kan spilles i hold eller enkeltvis, som en udfordring eller en konkurrence . Eleverne kan derefter skabe noget lignende og udvikle færdigheder inden for f . eks . kreativitet og kodning . ',
-            'Det er en meget praktisk ressource, der kan genbruges og nemt genskabes . Google - formularer er et muligt værktøj . I kan også bruge Google Slides, Genial . ly eller Emaze eller et hvilket som helst andet værktøj til at skabe historier, der krydser hinanden, og jeres egne eventyr . ',
-            'Escape - udfordringen er inddelt i sessioner . Hvis man gætter rigtigt, kan man fortsætte . Eleverne skal lave kodningsquizzerne . ',
+            'Det er en meget praktisk ressource, der kan genbruges og nemt genskabes . Google-formularer er et muligt værktøj . I kan også bruge Google Slides, Genial . ly eller Emaze eller et hvilket som helst andet værktøj til at skabe historier, der krydser hinanden, og jeres egne eventyr . ',
+            'Escape-udfordringen er inddelt i sessioner . Hvis man gætter rigtigt, kan man fortsætte . Eleverne skal lave kodningsquizzerne . ',
         ],
     ],
-    'let - the - snake - run' => [
+    'let-the-snake-run' => [
         'title' => 'Lad slangen løbe',
         'author' => 'Ágota Klacsákné Tóth',
         'purposes' => [
@@ -749,7 +749,7 @@ return [
         'description' => 'Eleverne skal skrive kode for at lade slangen navigere gennem micro:bits ved siden af hinanden . Det skal gøres på en måde, så det ser ud, som om slangen løber fra den ene micro:bit til den næste . ',
         'duration' => '30 minutter',
         'instructions' => [
-            'Design en bane, der går gennem flere micro:bits ved siden af hinanden(f . eks . i en 2x2 - firkant).',
+            'Design en bane, der går gennem flere micro:bits ved siden af hinanden(f . eks . i en 2x2-firkant).',
             'Skriv mere kode, efterhånden som slangen bevæger sig langs banen . ',
             'Arbejd på jeres egne enheder, og sæt dem så sammen og kør koden . ',
             'Tænk over timing og placering: Hvis slangen går ud af den ene micro:bit, vises den på den næste micro:bit . ',
@@ -828,7 +828,7 @@ return [
 
         ],
         'example' => [
-            'Læreren arbejder med eleverne for at lave en model af, hvordan algoritmen skal designes med kortene, så den giver instruktioner til Bee - Bot eller en anden robot om at gå til den første hændelse i historien på måtten . Eleverne arbejder i grupper på 3 - 4 for at designe en algoritme, som lader robotten gå til den næste sekvens . Eleverne tester deres algoritmer på klassens måtte og fejlsøger, i det omfang det er nødvendigt . ',
+            'Læreren arbejder med eleverne for at lave en model af, hvordan algoritmen skal designes med kortene, så den giver instruktioner til Bee-Bot eller en anden robot om at gå til den første hændelse i historien på måtten . Eleverne arbejder i grupper på 3-4 for at designe en algoritme, som lader robotten gå til den næste sekvens . Eleverne tester deres algoritmer på klassens måtte og fejlsøger, i det omfang det er nødvendigt . ',
             'De kan fortsætte med at bevæge sig gennem så mange hændelser i historien, som de kan',
             'Denne aktivitet kan også gennemføres uden brug af computer . ',
             'Et barn er robotten – et andet barn er programmøren . Programmøren laver en algoritmebane med pilekortene for at hjælpe robotten med at bevæge sig fra et billede til et andet og fortælle historien om igen . Hver gang robotten lander på et billede, skal den fortælle en del af historien . ',

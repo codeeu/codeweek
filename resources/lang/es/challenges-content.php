@@ -614,7 +614,7 @@ return [
             'Objeto piedra, papel y tijera',
         ]
     ],
-    'air - drawing - with - AI' => [
+    'air-drawing-with-AI' => [
         'title' => 'Dibujar en el aire con IA',
         'author' => 'Kristina Slišurić',
         'purposes' => [
@@ -639,7 +639,7 @@ return [
             'Buena conexión a internet'
         ]
     ],
-    'emobot - kliki' => [
+    'emobot-kliki' => [
         'title' => 'Emobot Kliki',
         'author' => 'Margareta Zajkova',
         'purposes' => [
@@ -718,7 +718,7 @@ return [
             'Construir un círculo a partir de puntos . ',
         ]
     ],
-    'coding - escape - room' => [
+    'coding-escape-room' => [
         'title' => 'Crear un juego de escape con programación',
         'author' => 'Stefania Altieri y Elisa Baraghini',
         'purposes' => [
