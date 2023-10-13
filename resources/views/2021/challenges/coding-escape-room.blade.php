@@ -5,13 +5,13 @@
 @section('content')
 
     @php
-        $slug = 'craft-magic'
+        $slug = 'coding-escape-room'
     @endphp
 
     <section id="codeweek-schools-page" class="codeweek-page">
 
 
-        <section class="flex flex-row justify-between" style="background-color: #5AABAE">
+        <section class="flex flex-row justify-between" style="background-color: #253658">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
                     <div class="text-xl text-white w-full"><a class="text-black"
@@ -43,6 +43,7 @@
                             <li>@lang('challenges-content.common.audience.0')</li>
                             <li>@lang('challenges-content.common.audience.1')</li>
                             <li>@lang('challenges-content.common.audience.2')</li>
+                            <li>@lang('challenges-content.common.audience.3')</li>
 
                         </ol>
                     </div>
@@ -57,31 +58,9 @@
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
-                            <li>@lang("challenges-content.$slug.duration.0")</li>
-                            <li>@lang("challenges-content.$slug.duration.1")</li>
+                            <li>@lang("challenges-content.$slug.duration")</li>
                         </ol>
                     </div>
-
-                    <div>
-                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
-                        <ol class="list-disc ml-5">
-                            <li><a href="https://ai.thestempedia.com">@lang("challenges-content.$slug.materials.0")</a>
-                            </li>
-                                    <li class="ml-4">@lang("challenges-content.$slug.materials.1")</li>
-                                    <li class="ml-4">@lang("challenges-content.$slug.materials.2")</li>
-
-
-                            <li>@lang("challenges-content.$slug.materials.3")</li>
-                            <li>@lang("challenges-content.$slug.materials.4")</li>
-
-
-                        </ol>
-                    </div>
-
-                </section>
-
-                <section class="grid grid-cols-1 gap-6 md:grid-cols-4 mx-6 my-4">
-
 
                     <div>
 
@@ -89,40 +68,24 @@
                         <ol class="list-disc ml-5">
                             <li>@lang("challenges-content.$slug.purposes.0")</li>
                             <li>@lang("challenges-content.$slug.purposes.1")</li>
-
-
-                        </ol>
-
-                    </div>
-                    <div>
-
-                        <ol class="list-disc ml-5 mt-8">
                             <li>@lang("challenges-content.$slug.purposes.2")</li>
-                            <li>@lang("challenges-content.$slug.purposes.3")</li>
-
-                        </ol>
-
-                    </div>
-
-                    <div>
-
-                        <ol class="list-disc ml-5 mt-8">
-                            <li>@lang("challenges-content.$slug.purposes.4")</li>
-                            <li>@lang("challenges-content.$slug.purposes.5")</li>
-                        </ol>
-
-                    </div>
-
-                    <div>
-
-                        <ol class="list-disc ml-5 mt-8">
-                            <li>@lang("challenges-content.$slug.purposes.6")</li>
                         </ol>
 
                     </div>
 
 
                 </section>
+
+                <div class="mx-6 my-4">
+
+
+                    <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
+                    <ol class="list-disc ml-5">
+                        <li>@lang("challenges-content.$slug.materials.0")</li>
+
+                    </ol>
+
+                </div>
 
 
                 <div class="leading-6 text-base text-left">
@@ -134,7 +97,9 @@
 
 
                         <div class="mt-2">
-                            @lang("challenges-content.$slug.description")
+                            @lang("challenges-content.$slug.description.0") <a
+                                    href="https://forms.gle/btEHZx6X1muHoJfx7">https://forms.gle/btEHZx6X1muHoJfx7</a><br/>
+                            @lang("challenges-content.$slug.description.1")
                         </div>
                     </section>
 
@@ -142,20 +107,26 @@
                     <section class="p-2">
                         <div class="leading-6">
                             <div class="mt-6 orange text-3xl">@lang('challenges.common.instructions')</div>
-                            <ul class="leading-7 ml-2 checklist mt-2">
+
+                            <div class="mb-6">
+
+                                @lang("challenges-content.$slug.instructions") <a
+                                        href="https://forms.gle/btEHZx6X1muHoJfx7">https://forms.gle/btEHZx6X1muHoJfx7</a>
+
+                                @php
+                                    $languages = explode(",",config("codeweek.LOCALES"));
+                                      $locale = app()->getLocale();
+                                @endphp
+                                @if($locale !== 'en' && $locale !== 'me')
+                                    <div>
+                                        <a href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2023/{{strtolower($locale)}}_escape_coding.docx">WORD
+                                            DOCUMENT</a>
+                                    </div>
+
+                                @endif
+                            </div>
 
 
-                                <li><a href="https://ai.thestempedia.com">@lang("challenges-content.$slug.instructions.0")</a></li>
-                                <li>@lang("challenges-content.$slug.instructions.1")</li>
-                                <li>@lang("challenges-content.$slug.instructions.2")</li>
-                                <li>@lang("challenges-content.$slug.instructions.3")</li>
-                                <li>@lang("challenges-content.$slug.instructions.4")</li>
-                                <li>@lang("challenges-content.$slug.instructions.5")</li>
-                                <li>@lang("challenges-content.$slug.instructions.6")</li>
-
-
-
-                            </ul>
                         </div>
                     </section>
 
@@ -166,7 +137,12 @@
                         <div class="orange text-3xl">@lang('challenges.common.example')</div>
 
                         <div class="mt-2">
-                            <img src="{{asset('img/2021/challenges/craft-magic-example.png')}}"/>
+
+                            <div class="mb-4">@lang("challenges-content.$slug.example.0")</div>
+                            <div class="mb-4">@lang("challenges-content.$slug.example.1")</div>
+                            <div class="mb-4">@lang("challenges-content.$slug.example.2")</div>
+
+
                         </div>
 
 
