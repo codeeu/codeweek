@@ -480,4 +480,383 @@ return [
         ],
 
     ]
+,
+    'common' => [
+        'share' => 'Shpërnda lidhjen ose kodin QR të projektit tënd në Instagram ose Facebook, shto hashtagun #CodeWeekChallenge dhe përmend @CodeWeekEU.',
+        'audience' => [
+            'Mësuesit dhe edukatorët',
+            'Nxënësit e shkollës fillore (6 deri në 12 vjeç)',
+            'Nxënësit e shkollës së mesme të ulët (12 deri në 16 vjeç)',
+            'Nxënësit e shkollës së mesme të lartë (16 deri në 18 vjeç)'
+        ],
+    ],
+    'code-a-dice' => [
+        'title' => 'Kodoni një zar për të hedhur',
+        'author' => 'Fabrizia Agnello',
+        'purposes' => [
+            'Kodoni gjëegjëza interaktive',
+            'Të kodohet një simulim i një objekti që lëviz në mënyrë rastësore, i cili do të përdoret nëse objekti i vërtetë nuk është i disponueshëm'
+        ],
+        'description' =>
+            'Në këtë sfidë do të kodohet një zar që do të rrotullohet në mënyrë rastësore kur të jepet komanda. Mund të zgjidhni çdo lloj zari me numrin e faqeve që preferohet, në mënyrë të ngjashme me ato që përdoren në lojëra me role dhe të shtohen edhe tinguj. ',
+        'instructions' => [
+            'Identifikohu në Scratch',
+            'Zgjidhni një sfond',
+            'Krijoni një tabelë që afishon (sprite) zare ose kërkoni një në internet dhe ngarkojeni në programin tuaj',
+            'Krijoni kostume në numër të barabartë me numrin e faqeve të zareve të zgjedhura, secila prej tyre tregon një numër të ndryshëm',
+            'Zgjidhni se si dëshironi të fillojnë të rrokullisen zaret (shtypni një tastë tastierë, klikoni në sprite, etj.) dhe shkruani kodin',
+            'Kodoni sprite për të ndryshuar në mënyrë të rastësishme kostumin në fund të listës',
+            'Shtoni efekte zanore',
+        ],
+        'example' => 'Hidhni një zar D-20'
+    ],
+    'personal-trainer' => [
+        'title' => ' Trajner personal me mikro:bit',
+        'author' => '',
+        'purposes' => [
+            'Për të koduar mikro:bit në mënyrë që të përdorni panelin zile dhe LED',
+            'Për të krijuar një pajisje personale për të kontrolluar aktivitetin tuaj fizik',
+            'Për të koduar mikro:bit për të përmirësuar shëndetin tuaj përmes sportit',
+        ],
+        'description' =>
+            'Kjo sfidë ju lejon të kodoni mikro:bit-in tuaj për të kontrolluar intervalin e përsëritjes së ushtrimeve fizike të kombinuara me atë të pushimit. Ju do të gjurmoni aktivitetin tuaj fizik në shkollë, në shtëpi ose në park.'
+        ,
+        'instructions' => [
+            'Kur A+B, krijoni një kohëmatës 3 sekondësh me një tingull shënimi muzikor çdo sekondë dhe shfaqni fjalën GO!',
+            'Gjatë ushtrimit të parë, shfaqni një katror vezullues 2x2 për 20 sekonda. Pastaj lëshoni një tingull dhe mbajeni katrorin të fiksuar. Gjatë kohës së mbetur, një imazh tjetër vezullues duhet të shfaqet për 10 sekonda. Kur të mbarojë, lëshoni një tingull.',
+            'Pastaj përsëritni të njëjtin veprim por shfaqni një panel 3x3 për kohën e ushtrimit. Përsëritni këto veprime derisa të shfaqet paneli 5x5.',
+        ],
+        'duration' => '30-40 minuta'
+    ],
+    'create-a-spiral' => [
+        'title' => 'Krijoni një spirale',
+        'author' => 'Lydie El-Halougi',
+        'purposes' => [
+            'Për të mësuar dhe për të praktikuar lakun dhe variablat.',
+            'Për të rritur krijimtarinë në kodim.'],
+        'description' => 'Në këtë sfidë do të shkruani një projekt me Scratch për të krijuar një spirale, duke përdorur blloqet e stilolapsit, një lak dhe një variabël.',
+
+        'instructions' => [
+            'Blloqet e stilolapsit',
+            'Krijoni një projekt të ri dhe quajeni Spiral.',
+            'Klikoni në ikonën vjollcë "Shto zgjatim" në pjesën e poshtme të majtë të dritares',
+            "Zgjidhni' 'stilolaps' ': blloqet e stilolapsit tani janë në dispozicion për projektin tuaj!",
+            "Për të filluar projektin tuaj, tërhiqni zvarrë dhe lëshoni bllokun' 'kur flamuri i gjelbër klikoi':",
+            "Duhet të fillosh me një faqe bosh: brenda blloqeve të stilolapsit, shto bllokun' 'fshij të gjitha':",
+            'Ju dëshironi të filloni vizatimin në qendër të skenës, që do të thotë se sprite juaj duhet të shkojë në qendër të skenës (0,0):',
+            'Sprite juaj mund të lëvizë pa vizatuar, ose të lëvizë dhe të vizatojë:',
+            'kur dëshironi që ajo të vizatohet, mund të përdorni bllokun e stilolapsit poshtë',
+            'kur nuk e dëshironi këtë, mund të përdorni bllokun e stilolapsit lart',
+            'Tani, dëshiron të vizatosh! Shtoni bllokun "stilolaps poshtë":',
+            'Gjashtëkëndëshi',
+            'Shtoni blloqet e mëposhtme në projektin tuaj:',
+            'Tani ke një të gjashtën e gjashtëkëndëshit tënd. Duhet ta përsërisni këtë sekuencë 6 herë:',
+            'Spiralja',
+            'Për të krijuar një spirale, do të duhet të shtoni 2 në gjatësinë e secilës anë tjetër.',
+            'Për ta bërë këtë, do të përdorni një <strong>ndryshore.</strong>',
+            'Në blloqet e ndryshueshme, klikoni mbi Krijo një variabël',
+            'Emërtoni gjatësinë, pastaj klikoni OK:',
+            'Spiralja do të rritet, do t’ju duhet të filloni nga e vogla: vendosni gjatësinë e parë në 10 dhe futeni këtë bllok para lakut.',
+            'Vendosni variablin "length" në bllokun "move... steps"',
+            'Që spiralja të rritet, duhet gjithashtu që gjatësia të rritet në çdo lak: shtoni bllokun më poshtë në fund të lakut:',
+            'Ky është projekti juaj aktual:',
+            'Një spirale e bukur',
+            'Ti vizatove një spirale! Që ajo të vazhdojë pa ndërprerje, zëvendësoni lakun "përsërit 6" me lakun "përgjithmonë":',
+            'Për të vizatuar një spirale shumëngjyrëshe, shtoni bllokun e mëposhtëm në lak:',
+            'Kur filloni nga e para, sprite tërheq një vijë të padëshiruar. Për ta parandaluar, shtoni një bllok “pen up” në fillim të projektit.',
+            'Ky është projekti juaj përfundimtar:',
+            'Urime! Krijuat një spirale të bukur!',
+        ],
+
+    ],
+    'play-against-ai' => [
+        'title' => 'Krijoni dhe luaj me IA - loja Guri, Gërshërët, Letra',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            'për të kuptuar se si funksionon cikli i mësimit të makinerisë.',
+            'për të ndërtuar një model të mësimit të makineri duke përdorur Makinerinë e Mësueshme',
+            'për t\'u njohur me mjetin Pictoblox dhe të importoni modelin e krijuar në projekt',
+            'për të vendosur skenën dhe karakteret, për të krijuar dhe inicializuar variablat në Pictoblox',
+            'për të inicializuar lojën, për të identifikuar lëvizjet e lojtarit, për të programuar lëvizjet e rastësishme të IA',
+            'për të krijuar dhe testuar një lojë që përfshin inteligjencën artificiale si kundërshtar në një lojë Guri Letra, Gërshërët.'
+
+        ],
+        'description' => 'Ne do të krijojmë një model duke përdorur Makinën e Mësueshme nga imazhet duke përdorur tre klasa: Gur, gërshërë dhe letër. Modeli do të ngarkohet në Pictoblox dhe do të përdoret për të krijuar lojë të cilën mund ta luajmë me IA.',
+        'duration' => '90 minuta',
+        'instructions' => [
+    'Krijoni një projekt të ri imazhi në makinën e mësueshme me 3 klasa të quajtura Guri, Letra, Gërshërët. Për çdo kurs, regjistroni përmes kamerës të paktën 400 fotografi. Sigurohuni që të keni një sfond të qartë. Trajnoni dhe eksportoni modelin. Ngarkoni modelin dhe kopjoni lidhjen.',
+    'Krijoni një llogari falas në faqen në ueb të Pictoblox. Shtoni një Zgjatje të Mësimit të Makinerisë dhe ngarko një model. Vendosni skenën, variablat dhe spritet. Filloni lojën, identifikoni lëvizjet e lojtarit dhe lëvizjet e UA dhe kush fiton raundin.',
+    'Trajnoni të dhënat për lojën.',
+    'Testoni modelin.',
+    'Eksportoni modelin.',
+    'Shtoni zgjerimin e mësimit të makinës dhe ngarkoni modelin.',
+    'Vendosni skenën, variablat dhe Sprite.',
+    'Filloni lojën.',
+    'Identifikoni lëvizjet e lojtarit.',
+    'Caktoni lëvizje të rastësishme të IA.',
+    'Transmetoni lëvizje të rastësishme të IA.',
+    'Bëni tre blloqe. Kush e fiton raundin? ',
+    'Kontrolloni nëse lojtari fiton raundin.',
+    'Kontrolloni nëse IA fiton raundin.',
+    'Kontrolloni nëse raundi është barazim.',
+    'Blloqet e programit.',
+    'Sprite i Gurë, Letra, Gërshërë',
+]
+    ],
+    'air-drawing-with-AI' => [
+    'title' => ' Vizatim me ajër me IA',
+    'author' => 'Kristina Slišurić',
+    'purposes' => [
+        'për të shkruar një program duke përdorur zgjerimin e zbulimit të trupit të njeriut për të njohur lëvizjen e gishtave para kamerës.',
+        'për të koduar me blloqe të thjeshta në disa rreshta kodi.',
+        'për të parë një shembull të përdorimit të UA'
+    ],
+    'description' => 'Krijimi i një programi që lejon përdoruesin të vizatojë në ajër me dorë (gishtin tregues) para kamerës dhe gjithçka që ata vizatojnë shfaqet automatikisht në skenën e Pictoblox.',
+    'instructions' => [
+        'Krijoni llogari në Pictoblox',
+        'ndiqni udhëzimet vizuale për:',
+        'shtoni shtesa për Human Body Detection dhe Pen;',
+        'vendosni skenën dhe shtoni sprite (Laps) dhe sprites shtesë për: Pen Down, Pen Up, Fshi të gjitha;  ',
+        'shkruani një kod për Sprite Pencil për të ndjekur gishtin',
+        'shkruaj një kod për butonat: Pen Up, Pen Down dhe Fshi të gjitha dhe gjithashtu për Pen',
+        'Tani jeni vendosur të bëni vizatimet tuaja dhe të luani me ngjyra dhe madhësi të ndryshme të një stilolapsi.',
+    ],
+    'materials' => [
+        'Laptop ose kompjuter me kamerë',
+        'Versioni i fundit i PictoBlox i shkarkuar (i rekomanduar) ose në internet Pictoblox (falas)',
+        'Llogaria Pictoblox (falas)',
+        'Lidhje e mirë me internetin'
+    ]
+],
+    'emobot-kliki' => [
+    'title' => 'Emobot Kliki',
+    'author' => 'Margareta Zajkova',
+    'purposes' => [
+        'Për të mësuar konceptet themelore të mësimit të makinës dhe njohjes së tekstit.',
+        'Për të kuptuar rolin e emocioneve në komunikim.',
+        'Për të përdorur kodin për të krijuar dialogë midis chatbot dhe një përdoruesi.',
+        'Për të kuptuar se si kompjuterët mund të njohin tonet emocionale përmes analizës së tekstit dhe të përgjigjen në përputhje me rrethanat.'
+    ],
+    'description' => [
+        'Krijoni një Bot Emocional në Scratch që mund të shfaqë fytyrë të lumtur për mesazhe pozitive (nëse i thua gjëra të këndshme), një fytyrë të zemëruar për mesazhe negative (nëse i thua gjëra të këqija) dhe fytyrë të hutuar nëse mesazhi është i paspecifikuar.',
+        'Emobot Kliki ynë do të njohë komplimentet dhe fyerjet, kështu që ne do të shohim se si kompjuterët mund të trajnohen për të njohur tonin emocional.',
+    ],
+    'instructions' => [
+        'Për të filluar, programo një listë rregullash për atë që është e bukur ose e sjellshme dhe çfarë është e keqe ose e keqe.',
+        'Hyr në https://machinelearningforkids.co.uk/ ose krijon një llogari të re.',
+        "Bëni një model të ri të mësimit të makinerisë duke shtuar 3 etiketa të reja, së pari quajeni atë' 'bukur', kova e dytë e quajtur' 'keq' dhe opsionale nëse doni të njihni emrin tuaj, krijoni etiketën e tretë të quajtur 'emër'.",
+            'Trajnoni modelin e ri të mësimit të makinës, testojeni dhe përdoreni për të bërë Emobot në Scratch.',
+            'Lëshoni redaktorin e Scratch 3, fshini sprite e maces, futni 3 sprite të reja të përgatitura nga Microsoft Bing Image Creator (karikaturë e lumtur, e zemëruar dhe e pasigurt e kompjuterit) ose krijoni një sprite të ri duke klikuar në ikonën Paint dhe duke vizatuar tre kopje të kostumit për fytyrë të lumtur, të zemëruar dhe të pasigurt.',
+            'Kliko skedën "Code" dhe shkruaj skenarin e mëposhtëm.']
+        ,
+        'example' => [
+    'Ndani Emobot Kliki tuaj me miqtë tuaj dhe mësoni më shumë rreth IA dhe emocioneve!',
+    'Në vend të një karikature kompjuterike mund të provosh diçka ndryshe, si një kafshë. Në vend të  llojit dhe do të thotë që ju mund të trajnoni karakterin për të njohur lloje të tjera të mesazheve.',
+],
+
+    ],
+    'craft-magic' => [
+    'title' => ' Magjia artizanale me gjeste dore IA',
+    'author' => 'Georgia Lascaris',
+    'purposes' => [
+        'Të kultivojë aftësitë e kodimit midis nxënësve, duke i lejuar ata të përdorin komandat themelore.',
+        'Të zhvillojë aftësitë e të menduarit algoritmik duke zbërthyer detyrat komplekse në hapa të menaxhueshëm.',
+        'Të inkurajojë zgjidhjen kreative të problemeve në gjetjen e aplikimeve unike të gjesteve të duarve për vizatim dhe shkrim.',
+        'Për të nxitur një kuptim të koncepteve të IA, veçanërisht mbi mënyrën se si IA u mundëson kompjuterëve të njohin dhe të interpretojnë gjestet e duarve.',
+        'Të rrisë ndërgjegjësimin për rëndësinë e teknologjisë për individët me aftësi të kufizuara.',
+        'Të promovojë zgjidhjen bashkëpunuese të problemeve dhe punën në grup midis studentëve ndërsa ata punojnë së bashku për të përmirësuar programet e tyre të gjesteve të duarve.',
+        'Për të lidhur aftësitë e kodimit dhe të të menduarit kompjuterik me aplikacionet e botës reale, duke theksuar ndikimin kuptimplotë të teknologjisë në jetën e njerëzve dhe duke u përafruar me Objektivat e Zhvillimit të Qëndrueshëm (SDGs).'
+    ],
+    'duration' => [
+        '90 min për studentët 10-12',
+        '45 min për nxënësit 12-15'
+    ],
+    'description' => 'Krijoni një program të bazuar në bllokun e gërvishtjeve duke përdorur zgjerimin IA "Human Body" (Trupi njerëzor) në mënyrë krijuese dhe tërheqëse për të vizatuar në një ekran pa qenë nevoja të përdoret një mi tradicional ose ekran me prekje.',
+    'instructions' => [
+        'Lidhuni me https://ai.thestempedia.com dhe krijoni një llogari për mësuesit dhe studentët.',
+        "Importoni zgjerimet 'Human Body Detection', 'Pen', 'Text to Speech'.",
+            "Shto sprite 'Lapsi' nga biblioteka dhe krijoni 7 sprite ('shkruaj', ’e qartë’, ‘e zezë’, ‘e kuqe’, ‘blu’, ‘jeshile’, ‘rozë’).",
+            "Shkruani komanda për të kontrolluar se çfarë ndodh kur lapsat sprite prekin një nga spritet e tjera.",
+            "Shkruani komanda për t' i mundësuar kamerës të njohë pozicionin e dorës dhe të lëvizë lapsin në koordinatat x dhe y të gishtit tuaj tregues.",
+            "Ndryshoni kostumin në fund të rrotullës.",
+            "Shtoni efekte zanore.",
+        ],
+        'materials' => [
+            'Platforma e programimit https://ai.thestempedia.com (falas)',
+            'llogaria e mësuesit (falas)',
+            'llogaria e studentit (falas)',
+            'Kompjuterë me kamera',
+            'Lidhja e internetit',
+        ]
+    ],
+    'circle-of-dots' => [
+    'title' => 'Një rreth pikash',
+    'author' => 'Marin Popov',
+    'purposes' => [
+        'Për të shkruar kod për të vizatuar një vijë pikash.',
+        'Të shkruash kod për të vizatuar një vijë vijash.',
+        'Të shkruash kod për të vizatuar një rreth.',
+        'Shkruani kodin për të vizatuar një rreth pikash (vija).',
+    ],
+    'description' => 'Vizatoni një rreth nga pikat ose vijat.',
+    'duration' => '40 minuta',
+    'instructions' => [
+        'Ndërtimi i një blloku pikash.',
+        'Ndërtimi i një blloku vizash.',
+        'Ndërtimi i një rrethi nga pika.',
+        'Ndërtimi i një rrethi nga viza.'
+    ]
+],
+    'coding-escape-room' => [
+    'title' => 'Krijoni një dhomë arratisjeje kodimi',
+    'author' => 'Stefania Altieri dhe Elisa Baraghini',
+    'purposes' => [
+        'Për të mësuar/mësuar dhe reflektuar rreth koncepteve të kodimit.',
+        'Për të përdorur mjete të thjeshta kodimi.',
+        'Të zhvillojë të menduarit kompjuterik dhe zgjidhjen e problemeve.'
+    ], 'description' => [
+        'Krijoni një përvojë të kodimit të arratisjes si kjo:',
+        'Ju mund të përdorni formularin e Google, prezantimin e Google, çdo mjet për të krijuar një tregim të bazuar në kodim ;).'
+
+    ],
+    'duration' => '90 minuta',
+    'instructions' =>
+        'Ju mund t\' i ndani nxënësit tuaj në grupe të vogla, ata mund të luajnë dhe pastaj të krijojnë një sfidë tjetër me modelin: '
+        ,
+
+        'materials' => [
+            'Çdo mjet mund të përdoret (platforma Google dhe Microsoft për të krijuar dhe ndarë dokumente, prezantime dhe fletë). Çdo ndërtim, mjet ose karakter kodimi i lidhur me TIK-un dhe kodimin.'
+        ],
+        'example' => [
+            'Disa karaktere që kishin një rol shumë të rëndësishëm në historinë e TIK-ut dhe konceptet themelore të kodimit dhe programimit, prezantohen duke luajtur. Kjo është mënyra më e mirë për të mësuar dhe për të marrë pjesë në mënyrë aktive. Kjo lojë mund të luhet në ekipe ose individualisht, si një sfidë ose një garë. Studentët pastaj mund të krijojnë diçka të ngjashme dhe të zhvillojnë kompetenca të tilla si kreativiteti dhe aftësitë e kodimit.', 
+            "Ky është një burim shumë praktik për t'u ripërdorur dhe për t'u rikrijuar lehtësisht. Formularët e Google janë një nga mjetet e mundshme. Ju gjithashtu mund të përdorni Google slides, Genial.ly ose Emaze ose ndonjë mjet tjetër për të krijuar histori udhëkryq dhe aventurat tuaja.",
+            'Sfida e arratisjes ndahet në seanca. Nëse mendon se mund të vazhdosh. Nxënësit duhet të krijojnë kuizet e kodimit.',
+        ],
+    ],
+    'let-the-snake-run' => [
+        'title' => 'Lëre gjarprin të vrapojë',
+        'author' => 'Ágota Klacsákné Tóth',
+        'purposes' => [
+            'Për të koduar lëvizjen e gjarprit në mikro:bit.',
+            'Për të vendosur vendosjen dhe kohën e duhur për animacionin e nyjes.'
+        ],
+        'description' => 'Studentët duhet të shkruajnë kode për të lëvizur gjarprin përmes mikro:bit pranë njëri-tjetrit. Duhet të bëhet në një mënyrë që të duket sikur gjarpri po shkon nga një mikro:bit në tjetrin.',
+        'duration' => '30 minuta',
+        'instructions' => [
+            'Hartoni një pistë që kalon nëpër disa mikro:bit pranë njëri-tjetrit (p.sh., duke formuar një katror 2x2).',
+            'Shkruaj kode ndërsa një gjarpër lëviz përgjatë një piste.',
+            'Punoni në pajisjen tuaj, pastaj bashkojini dhe ekzekutoni kodin.',
+            'Konsideroni kohën dhe vendosjen: Nëse gjarpri del nga një mikro:bit, ai do të shfaqet në mikro:bit tjetër.',
+            'Sfidat e mëtejshme: Me micro:bit v2, luani muzikë derisa gjarpri të largohet nga pajisja juaj.',
+            'Dizajnoni gjarprin duke ndryshuar shkëlqimin e LED-ve.',
+            "Provo më gjatë ose me më shumë gjarpërinj."
+        ],
+        'example' => [
+            'Ky është një shembull për një gjarpër të gjatë 6 piksel me 4 mikro:bit që formojnë një katror 2x2: ',
+            'Kodimi i mikro:bit fillestar (mësuesi mund ta bëjë atë)',
+            'Të gjitha kodet iniciohen nga ky mikro:bit, i cili dërgon një sinjal radio në mikro:bit të tjerë kur shtypet butoni A.',
+            'Kodimi i lëvizjes së gjarprit',
+            'Çdo mikro:bit duhet të jetë në të njëjtin grup radioje me mikro:bitin fillestar.',
+            'Alanimacionet fillojnë kur merret sinjali i radios.',
+            'Animacioni i mikrobitit të parë është menjëherë i dukshëm, të tjerët presin derisa gjarpri të arrijë atje.',
+            'Koha midis dy fazave përcakton shpejtësinë e gjarprit.',
+        ], 'materials' => [
+            'mikro:bit (për çdo nxënës nëse është e mundur)',
+            'laptop ose kompjuter për makecode.microbit.org editor'
+        ]
+    ],
+    'illustrate-a-joke' => [
+        'title' => 'Ilustro një shaka me bitsy',
+        'author' => 'Margot Schubert',
+        'purposes' => 'Për të hartuar një lojë të vogël ku përdoruesi gjen përgjigjen e një pyetjeje me shaka.',
+        'description' => 'Nxënësit hartojnë një lojë ku përdoruesi gjen përgjigjen e një pyetjeje me shaka kur figura godet një objekt në fushën e lojës. Nxënësit përdorin tiparet themelore të bitsy për të përfunduar sfidën.',
+        'instructions' => [
+            'Mendo për një pyetje me shaka. Shko te bitsy dhe fillo një projekt të ri. Do t\'ju nevojitet:',
+            'një avatar - sprite që mund të lëvizësh',
+            'Një mace e bardhë në një sfond të purpurt',
+            'Përshkrimi gjenerohet automatikisht',
+            'një objekt tek i cili duhet të shkojë avatari yt',
+            'një dhomë - sfondi i programit tënd',
+            'dy mesazhe: një pyetje dhe një përgjigje',
+            'Loja e përfunduar mund të shkarkohet si një skedar html.'
+        ],
+        'example' => 'Në këtë faqe interneti shihni një shembull të një shakaje dhe ka një lidhje me një tabelë dixhitale:',
+        'materials' => 'bitsy runs in a browser'
+    ],
+    'app-that-counts-in-several-languages' => [
+    'title' => 'Aplikacion që vlen në disa gjuhë',
+    'author' => 'Samuel Branco',
+    'purposes' => [
+        'Për të mësuar se si të krijoni një aplikacion të thjeshtë.',
+        'Të mësojmë të programojmë përmes blloqeve.',
+        'Për të mësuar se si të shtoni Etiketat, butonat, imazhet, sensorët dhe mediat.',
+        "Për të mësuar se si të organizoni elemente në ekranin e një aplikacioni."
+    ],
+    'description' => 'Aplikacioni ju lejon të numëroni në shumë gjuhë me shtypjen e një butoni. Sa herë që përdoruesi tund telefonin inteligjent, numri kthehet në zero. Sfida është të shtosh një gjuhë tjetër.',
+    'instructions' => [
+        'Për të përfunduar sfidën, duhet të përcaktoni gjuhën tjetër në të cilën dëshironi që aplikacioni të llogaritet.',
+        'Pastaj duhet të shkarkoni nga interneti (p.sh. nga Pixabay ose Unsplash) flamurin e atij vendi dhe ta ngarkoni atë në platformën e shpikësit të APLIKACIONIT MIT përmes elementit të quajtur flamur, në pronën e figurës.',
+        'Më pas duhet të mësosh se si të shkruash emrin e vendit në anglisht dhe si të thuash largohu dhe më shtyp në gjuhën e atij vendi.',
+        'Së fundi, duhet të shtoni blloqet e nevojshme që aplikacioni të funksionojë në gjuhën e re.',
+    ],
+    'materials' => [
+        'Për të zhvilluar një aplikacion ju duhet një kompjuter ose një laptop me qasje në internet.',
+        'Krijoni një llogari në platformën e APLIKACIONIT MIT Inventor, të arritshme përmes https://ai2.appinventor.mit.edu',
+        'Është gjithashtu e nevojshme të instalohet aplikacioni MIT AI2 Companion në smartphone në mënyrë që të testohet aplikacioni i zhvilluar.'
+    ]
+],
+    'coding-with-art-through-storytelling' => [
+    'title' => 'Kodimi me artin përmes Storytelling',
+    'author' => 'Maria Tsapara dhe Anthi Arkouli',
+    'purposes' => [
+        'Të kultivojë aftësitë e vëzhgimit, interpretimit dhe marrjes në pyetje përmes angazhimit me artin.',
+        'Të jemi krijues dhe të bashkëpunojmë me të tjerët për një qëllim të përbashkët',
+        'Për të krijuar një algoritëm në mënyrë që të ritregojë historinë.',
+    ],
+    'description' => 'Në këtë sfidë studentët do të frymëzohen nga një vepër arti, do të krijojnë një histori dhe do ta ilustrojnë atë. Pastaj ata do të përpiqen të ritregojnë historinë duke përdorur një komplet robotik të programueshëm/ose si një aktivitet i shkëputur.',
+    'materials' => [
+        'Ky aktivitet mund të zbatohet si një aktivitet i shkëputur ose duke përdorur një robot edukativ të programueshëm siç është roboti beebot/bluebot/mouse.',
+        'kartat e shigjetave të beebotit ose kartat e shigjetave për aktivitetin e shkyçur',
+        'Në greqisht.',
+"Në mënyrë që të mësoni më shumë për Projektin Zero\ 's Thinking Routine Toolbox që mund të vizitoni"
+
+        ],
+        'example' => [
+    'Mësuesi punon me nxënësit për të modeluar një algoritëm me kartat që do të japin udhëzime për Bee-Bot ose robot tjetër për të arritur në ngjarjen e parë të tregimit në tapet. Nxënësit punojnë në ekipe prej 3-4 personash për të hartuar një algoritëm që roboti të kalojë në sekuencën tjetër. Nxënësit testojnë algoritmet e tyre në tapetin dhe ndreqjen e gabimeve në klasë, sipas nevojës.',
+    'Ata vazhdojnë të kalojnë nëpër sa më shumë ngjarje historish që munden',
+    'Ky aktivitet mund të zbatohet edhe si një aktivitet i shkyçur.',
+    'Një fëmijë është roboti - një fëmijë tjetër programuesi. Programuesi krijon një rrugë algoritmike duke përdorur kartat me shigjeta në mënyrë që të ndihmojë robotin  të lëvizë nga një imazh në tjetrin dhe të ritregojë historinë. Sa herë që roboti është në një imazh, i kërkohet të tregojë një pjesë të historisë.',
+],
+        'instructions' => [
+    'Mësuesi u kërkon nxënësve të vëzhgojnë një pikturë/fotografi.',
+    'Ata përdorin rutinën e të menduarit "Fillimi, Mesi, Fundi" (Projekti Zero i Shkollës së Harvardit) për të krijuar një histori.',
+    'Mësuesi i pyet ata "Nëse kjo vepër arti është fillimi/mesi/fundi i një historie, çfarë mund të ndodhë më pas/para/në fund?',
+    'Nxënësit ilustrojnë ngjarjet e tregimit.',
+    'Nxënësit kujtojnë historinë dhe i vendosin ngjarjet në rrjet. Duke përdorur karta me shigjeta, ato krijojnë një algoritëm që ndihmon beebot-in të ritregojë historinë.'
+],
+    ],
+    'coding-with-legoboost' => [
+    'title' => 'Kodimi dhe programimi me LegoBoost - Extension Scratch',
+    'author' => 'Lidia Ristea',
+    'purposes' => [
+        'të ndërtohen modele duke përdorur LegoBoost.',
+        'të zhvillohen aftësitë e programimit në Scratch.',
+        'të programohen robotë duke përdorur komanda nga të thjeshta në komplekse.'
+    ],
+    'description' => 'Në këtë sfidë, studentët do të përdorin zgjatimin Scratch-LegoBoost dhe do të shkruajnë kode në aplikacion për robotët për të ecur përpara, prapa, për të shmangur pengesat dhe komandat zanore.',
+    'duration' => '120 minuta',
+    'instructions' => [
+        'Hyni në aplikacionin Scratch.mit.edu.',
+        'Hapni Scratch Link dhe aktivizoni Bluetooth në laptop.',
+        'Klikoni Shto një zgjatim nga Scratch dhe zgjidhni LegoBoost.',
+        'Shtoni një fotografi për Javën e Kodimit të BE-së.',
+        'Ndizni dy motorët AB në ON dhe kur ndeshni një pengesë të kuqe, fikeni në OFF.',
+        'Në motorin me ngjyrë jeshile, A është i ndezur, në motorin me ngjyrë të zezë, B është i ndezur.',
+        'Pengesat e gjelbra, të kuqe dhe të zeza do të vendosen në një rrugë.',
+        'Shtoni komanda për lëvizjen dhe kthesat nga shigjetat dhe teksti në të folur kur hasni një pengesë.',
+        'Testoje!'
+    ]
+]
+
+
 ];

@@ -489,5 +489,385 @@ return [
             'Elige 5 colores diferentes y asigna un ejercicio de acondicionamiento físico a cada uno de ellos, por ejemplo, sentadillas o saltos.  Entonces los colores se pueden alinear en cualquier orden y entrenar'
         ],
 
+    ],
+
+
+    'common' => [
+        'share' => 'Comparte el enlace o el código QR de tu proyecto en Instagram o Facebook, añade el hashtag #CodeWeekChallenge y menciona @CodeWeekEU.',
+        'audience' => [
+            'Profesores y educadores',
+            'Alumnos de primaria (6 a 12 años)',
+            'Alumnos de primer ciclo de educación secundaria (12 a 16 años)',
+            'Alumnos de segundo ciclo de educación secundaria (16 a 18 años)',
+        ],
+    ],
+    'code-a-dice' => [
+        'title' => 'Programa un dado para lanzar',
+        'author' => 'Fabrizia Agnello',
+        'purposes' => [
+            'Programar acertijos interactivos',
+            'Programar la simulación de un objeto que se mueve al azar para utilizar si no está disponible el objeto real'
+        ],
+        'description' =>
+            'En este reto programarás un dado que se lanza al azar a tu señal. Puedes elegir cualquier tipo de dado con el número de caras que quieras, como los que se utilizan en los juegos de rol, y también añadir sonidos.',
+        'instructions' => [
+            'Inicia sesión en Scratch',
+            'Elige un fondo',
+            'Crea tu objeto de dado o busca uno en la web y cárgalo en tu programa',
+            'Crea tantos disfraces para el objeto como caras del dado hayas elegido y que cada disfraz muestre un número diferente',
+            'Elige cómo quieres que el dado empiece a lanzarse (pulsando una tecla, haciendo clic en el objeto, etc.) y escribe el código para ello',
+            'Programa el objeto para que se cambie de disfraz al azar al final de la tirada',
+            'Añade efectos sonoros',
+        ],
+        'example' => 'Lanza un dado de 20 caras'
+    ],
+    'personal-trainer' => [
+        'title' => 'Entrenador personal con micro:bit',
+        'author' => '',
+        'purposes' => [
+            'Programar micro:bit con el fin de utilizar el zumbador y el panel led',
+            'Crear un dispositivo personal que controle tu actividad física',
+            'Programar micro:bit para que mejore tu salud a través del deporte',
+        ],
+        'description' =>
+            'Este reto te permite programar tu micro:bit para que controle el número de repeticiones de los ejercicios físicos combinado con los tiempos de descanso. Harás el seguimiento de la actividad física que realizas en la escuela, en casa o en el parque.'
+        ,
+        'instructions' => [
+            'Cuando A+B, crea un temporizador de cuenta regresiva de 3 segundos con un sonido de nota musical a cada segundo y que muestre la palabra GO!',
+            'Durante el primer ejercicio, muestra un cuadrado 2x2 que parpadea durante 20 segundos. A continuación, reproduce un sonido y fija el cuadrado. Durante el tiempo restante, debe mostrarse otra imagen parpadeante durante 10 segundos. Cuando acabe, reproduce un sonido.',
+            'A continuación, repite la misma acción, pero muestra un panel 3x3 para el tiempo del ejercicio. Repite estas acciones hasta que se muestre el panel 5x5.',
+        ],
+        'duration' => '30-40 minutos',
+    ],
+    'create-a-spiral' => [
+        'title' => 'Crea una espiral',
+        'author' => 'Lydie El-Halougi',
+        'purposes' => [
+            'Aprender y practicar bucles y variables.',
+            'Mejorar la creatividad en la programación.'],
+        'description' => 'En este reto escribirás un proyecto con Scratch para crear una espiral, empleando bloques de lápiz, un bucle y una variable.',
+
+        'instructions' => [
+            'Los bloques de lápiz',
+            'Crea un nuevo proyecto y llámalo Espiral.',
+            'Haz clic en el icono púrpura “Añadir extensión” situado en el extremo inferior izquierdo de la ventana',
+            'Selecciona “lápiz”: ¡los bloques de lápiz ya están disponibles para tu proyecto!',
+            'Para empezar el proyecto, arrastra y suelta el bloque “Al hacer clic en bandera verde”:',
+            'Debes empezar con una página en blanco: dentro de los bloques de lápiz, añade el bloque “borrar todo”:',
+            'Debes empezar a dibujar en el centro del escenario, lo que significa que tu objeto deberá ir hasta el centro del escenario (0,0):',
+            'Tu objeto puede moverse sin dibujar, o moverse y dibujar:',
+            'cuando quieras que dibuje, puedes utilizar el bloque bajar lápiz',
+            'cuando no quieras que dibuje, puedes utilizar el bloque subir lápiz',
+            '¡Ahora quieres dibujar! Añade el bloque “bajar lápiz”:',
+            'El hexágono',
+            'Añade los bloques siguientes a tu proyecto:',
+            'Ahora tienes una sexta parte del hexágono. Debes repetir esta secuencia 6 veces:',
+            'La espiral',
+            'Para crear una espiral, deberás añadir 2 a la longitud de cada una de las caras siguientes.',
+            'Para ello, utilizarás una <strong>variable.</strong>',
+            'En los bloques de variables, haz clic en Hacer una variable',
+            'Llámala longitud y haz clic en OK:',
+            'La espiral va a crecer, por lo que deberás empezar con un valor pequeño: establece 10 como primera longitud e inserta este bloque antes del bucle.',
+            'Inserta la variable “longitud” en el bloque “mover … pasos”',
+            'Para que la espiral crezca, debes hacer que la longitud aumente en cada bucle: añade el bloque de abajo al final del bucle:',
+            'Aquí tienes tu proyecto actual:',
+            'Una bonita espiral',
+            '¡Dibujaste una espiral! Para que funcione sin parar, sustituye el bucle“repetir 6” por el bucle “siempre”:',
+            'Para dibujar una espiral de colores, añade el bloque siguiente en el bucle:',
+            'Cuando vuelvas a empezar, el objeto dibuja una línea que no queremos. Para evitarlo, añade un bloque “subir lápiz” al inicio del proyecto.',
+            'Aquí tienes tu proyecto final:',
+            '¡Felicidades! ¡Has creado una espiral preciosa!',
+        ],
+
+    ],
+    'play-against-ai' => [
+        'title' => 'Crea y juega contra la IA — Juego piedra, papel o tijera',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            'comprender cómo funciona el ciclo del aprendizaje automático.',
+            'crear un modelo de aprendizaje automático empleando Teachable Machine',
+            'familiarizarse con la herramienta Pictoblox e importar el modelo creado al proyecto',
+            'establecer el escenario y los caracteres, crear e iniciar variables en Pictoblox',
+            'inicializar el juego, identificar los movimientos del jugador, programar los movimientos aleatorios de la IA',
+            'crear y probar un juego en el que la inteligencia artificial intervenga como oponente en el juego piedra, papel o tijera.'
+
+        ],
+        'description' => 'Crearemos un modelo empleando Teachable Machine a partir de imágenes empleando tres clases: piedra, papel o tijera. El modelo se cargará en Pictoblox y se empleará para crear un juego que podemos jugar contra la IA.',
+        'duration' => '90 minutos',
+        'instructions' => [
+            'Crea un nuevo proyecto de imágenes en Teachable machine con 3 clases que se llamarán piedra, papel y tijera. Para cada clase, realiza al menos 400 fotos con la cámara. Asegúrate de tener un fondo limpio. Entrena y exporta el modelo. Carga el modelo y copia el enlace.',
+            'Crea una cuenta gratis en el sitio web de Pictoblox. Añade una extensión de aprendizaje automático y carga un modelo. Configura el escenario, las variables y los objetos. Inicializa el juego, identifica los movimientos del jugador y los movimientos de la IA y quién gana la ronda.',
+            'Entrena los datos para el juego.',
+            'Prueba el modelo.',
+            'Exporta el modelo.',
+            'Añade la extensión de aprendizaje automático y carga el modelo.',
+            'Establece el escenario, las variables y el objeto.',
+            'Inicializa el juego . ',
+            'Identifica los movimientos del jugador . ',
+            'Establece los movimientos aleatorios de la IA . ',
+            'Emite los movimientos aleatorios de la IA . ',
+            'Haz tres bloques . ¿Quién gana la ronda ? ',
+            'Comprueba si el jugador gana la ronda . ',
+            'Comprueba si la IA gana la ronda . ',
+            'Comprueba si hay un empate en la ronda . ',
+            'Programa los bloques . ',
+            'Objeto piedra, papel y tijera',
+        ]
+    ],
+    'air-drawing-with-AI' => [
+        'title' => 'Dibujar en el aire con IA',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            'escribir un programa empleando la extensión de detección del cuerpo humano para que reconozca el movimiento de los dedos ante la cámara . ',
+            'programar con bloques sencillos en unas pocas líneas de código . ',
+            'ver un ejemplo del uso de la IA'
+        ],
+        'description' => 'Creación de un programa que permita que el usuario dibuje en el aire con la mano(dedo índice) ante la cámara y que todo lo que dibuje se muestre automáticamente en el escenario de Pictoblox . ',
+        'instructions' => [
+            'Crea una cuenta en Pictoblox',
+            'sigue las instrucciones visuales para:',
+            'añadir las extensiones de detección del cuerpo humano y el lápiz;',
+            'crea el escenario y añade el objeto(lápiz) y los objetos adicionales de: subir lápiz, bajar lápiz, borrar todo;  ',
+            'escribe un código para que el objeto lápiz siga al dedo',
+            'escribe un código para los botones: subir lápiz, bajar lápiz y borrar todo y también para el lápiz',
+            'Ahora ya estás preparado para hacer tus propios dibujos y jugar con distintos colores y tamaños de lápiz . ',
+        ],
+        'materials' => [
+            'Un portátil u ordenador con cámara',
+            'La última versión de PictoBlox descargada(recomendado) o Pictoblox en línea(gratis)',
+            'Cuenta de Pictoblox(gratis)',
+            'Buena conexión a internet'
+        ]
+    ],
+    'emobot-kliki' => [
+        'title' => 'Emobot Kliki',
+        'author' => 'Margareta Zajkova',
+        'purposes' => [
+            'Aprender los conceptos básicos del aprendizaje automático y el reconocimiento de texto . ',
+            'Comprender el papel de las emociones en las comunicaciones . ',
+            'Utilizar la programación para crear diálogos entre un chatbot y un usuario . ',
+            'Comprender cómo los ordenadores pueden reconocer los tonos emocionales a través del análisis de textos y las correspondientes respuestas.'
+        ],
+        'description' => [
+    'Crear un bot emocional en Scratch que pueda mostrar una cara alegre para los mensajes positivos (si se le dicen cosas agradables), una cara enfadada para los mensajes negativos (si se le dicen cosas desagradables) y una cara dubitativa si el mensaje es indefinido.',
+    'Nuestro Emobot Kliki reconocerá los cumplidos e insultos para que veamos cómo se pueden entrenar los ordenadores a fin de que reconozcan el tono emocional.',
+],
+        'instructions' => [
+    'Para empezar, programa una lista de normas sobre lo que es agradable o amable y lo que es malo o mezquino.',
+    'Inicia sesión en https://machinelearningforkids.co.uk/ o crea una cuenta nueva.',
+    'Crea un nuevo modelo de aprendizaje automático añadiendo 3 nuevas etiquetas, a la primera llámala “bueno”, a la segunda “malo” y, de forma opcional, si quieres que se reconozca tu nombre, crea una tercera etiqueta llamada “nombre”.',
+    'Entrena al nuevo modelo de aprendizaje automático, pruébalo y utilízalo para hacer el Emobot en Scratch.',
+    'Inicia el editor de Scratch 3, borra el objeto gato, inserta 3 nuevos objetos hechos por el creador de imágenes de Microsoft Bing (el dibujo animado feliz, enfadado y dubitativo) o crea un nuevo objeto haciendo clic en el icono de Paint dibujando tres copias del disfraz de cara feliz, enfadada y dubitativa.',
+    'Haz clic en la pestaña “Código” e introduce el siguiente script.']
+        ,
+        'example' => [
+    'Comparte tu Emobot Kliki con tus amigos y amplía tu conocimiento sobre la IA y las emociones.',
+    'En lugar de un dibujo animado por ordenador también puedes probar algo diferente, como un animal. En lugar de amable y desagradable podrías entrenar al personaje para que reconozca otros tipos de mensajes.',
+],
+
+    ],
+    'craft-magic' => [
+    'title' => 'Haz magia con los gestos de las manos y la IA',
+    'author' => 'Georgia Lascaris',
+    'purposes' => [
+        'Cultivar las habilidades de programación entre los alumnos permitiéndoles utilizar comandos elementales.',
+        'Desarrollar habilidades de pensamiento algorítmico dividiendo tareas complejas en pasos manejables.',
+        'Alentar la resolución creativa de problemas encontrando aplicaciones únicas de gestos de las manos para dibujar y escribir.',
+        'Fomentar la comprensión de los conceptos de IA, en particular cómo la IA facilita que los ordenadores reconozcan e interpreten los gestos de las manos.',
+        'Concienciar sobre la importancia de la tecnología para las personas con discapacidad.',
+        'Promover la resolución colaborativa de problemas y el trabajo en equipo entre los alumnos mientras trabajan juntos para mejorar sus programas relacionados con gestos de las manos.',
+        'Relacionar la programación y el pensamiento computacional con aplicaciones del mundo real haciendo hincapié en el impacto significativo que tiene la tecnología sobre las vidas de las personas y alineándolo con los Objetivos de Desarrollo Sostenible (ODS).'
+    ],
+    'duration' => [
+        '90 min para estudiantes de 10 a 12 años',
+        '45 min para estudiantes de 12 a 15 años',
+    ],
+    'description' => 'Crea un programa basado en bloques de Scratch empleando de forma creativa y motivadora la extensión “Cuerpo Humano” de IA para dibujar en una pantalla sin necesidad de utilizar ningún ratón tradicional ni pantalla táctil.',
+    'instructions' => [
+        'Conecta con https://ai.thestempedia.com y crea una cuenta de profesor y estudiantes.',
+        'Importa las extensiones ‘Detección de cuerpo humano’,’ Lápiz’,’ Texto a voz’.',
+        'Añade el objeto ‘Lápiz’ de la biblioteca y crea 7 objetos (‘escribir’, ‘borrar’, ‘negro’, ‘rojo’, ‘azul’, ‘verde’, ‘rosa’).',
+        'Escribe los comandos para ver qué pasa cuando el objeto ‘lápiz’ toca uno de los demás objetos.',
+        'Escribe los comandos que permitan que la cámara reconozca las poses de las manos y mueve el lápiz hasta las coordenadas x e y de tu dedo índice.',
+        'Cambia el disfraz al final de la tirada.',
+        'Añade efectos de sonido.',
+    ],
+    'materials' => [
+        'Plataforma de programación https://ai.thestempedia.com (gratuita)',
+        'cuenta de profesor (gratis)',
+        'cuenta de alumnos (gratis)',
+        'Ordenadores con cámara',
+            'Conexión a internet',
+        ]
+    ],
+    'circle-of-dots' => [
+    'title' => 'Un círculo de puntos',
+    'author' => 'Marin Popov',
+    'purposes' => [
+        'Escribir un código para dibujar una línea de puntos.',
+        'Escribir un código para dibujar una línea de rayas.',
+        'Escribir un código para dibujar un círculo.',
+        'Escribir un código para dibujar un círculo de puntos (rayas).',
+    ],
+    'description' => 'Dibujar un círculo a partir de puntos o rayas.',
+    'duration' => '40 minutos',
+    'instructions' => [
+        'Crear un bloque de puntos.',
+        'Crear un bloque de rayas.',
+            'Crear un círculo a partir de puntos . ',
+            'Construir un círculo a partir de puntos . ',
+        ]
+    ],
+    'coding-escape-room' => [
+        'title' => 'Crear un juego de escape con programación',
+        'author' => 'Stefania Altieri y Elisa Baraghini',
+        'purposes' => [
+            'Enseñar / aprender y reflexionar sobre los conceptos de programación . ',
+            'Utilizar herramientas de programación sencillas . ',
+            'Desarrollar el pensamiento computacional y la resolución de problemas . '
+        ], 'description' => [
+            'Crear una experiencia de programación de juego de escape como esta:',
+            'Puedes utilizar Google Forms, Genially, Google Presentations, cualquier herramienta para crear una narración basada en la programación;).'
+
+        ],
+        'duration' => '90 minutos',
+        'instructions' =>
+           'Puedes dividir a tus alumnos en pequeños grupos, que jueguen y luego crear otro reto con la plantilla: '
+        ,
+
+        'materials' => [
+            'Se puede utilizar cualquier herramienta(Google y la plataforma Microsoft para crear y compartir documentos, presentaciones y hojas). Cualquier constructo de programación, herramienta o personaje vinculado con las tecnologías de la información y las comunicaciones(TIC) y la programación . '
+        ],
+        'example' => [
+            'Se presentan algunos personajes que desempeñaron un papel importante en la historia de las TIC y conceptos básicos de la programación a través del juego . Esta es la mejor forma de aprender y participar activamente . Este juego puede jugarse en equipos o de forma individual, como reto o como competición . Los alumnos pueden crear algo similar y desarrollar competencias como la creatividad y las habilidades de programación . ',
+            'Se trata de un recurso muy práctico y que se puede volver a utilizar fácilmente . Google Forms es una de las posibles herramientas . Puedes utilizar también Google Slides, Genially o Emaze, o cualquier otra herramienta para crear historias de encrucijadas y tus propias aventuras . ',
+            'El reto de escape se divide en sesiones . Si resuelves la sesión, puedes continuar . Los alumnos deben crear pruebas de programación .'
+        ],
+    ],
+    'let-the-snake-run' => [
+    'title' => 'Deja pasar a la serpiente',
+    'author' => 'Ágota Klacsákné Tóth',
+    'purposes' => [
+        'Programar el movimiento de la serpiente en su propio micro:bit.',
+        'Determinar la colocación y el momento adecuado para la animación conjunta.'
+    ],
+    'description' => 'Los alumnos deben escribir códigos para guiar la serpiente por unos micro:bits colocados unos junto a otros. Debe hacerse de forma que parezca que la serpiente va de un micro:bit a otro.',
+    'duration' => '30 minutos',
+    'instructions' => [
+        'Diseña un camino que pase por varios micro:bits colocados unos junto a otros (por ejemplo, formando un cuadrado 2x2).',
+        'Escribe los códigos mientras una serpiente se desplaza por un camino.',
+        'Trabaja con tu propio dispositivo y luego coloca los dispositivos juntos y ejecuta el código.',
+        'Ten en cuenta el momento y la colocación: Si la serpiente sale de un micro:bit, aparecerá en el siguiente.',
+        'Desafíos adicionales: Con micro:bit v2, reproduce música hasta que la serpiente abandone tu dispositivo.',
+        'Diseña la serpiente cambiando el brillo de los ledes.',
+        'Prueba con más tiempo o con más serpientes.'
+    ],
+    'example' => [
+        'Este es un ejemplo de serpiente de 6 píxeles de largo con 4 micro:bits que forman un cuadrado de 2x2: ',
+        'Programación del inicio de micro:bit (el profesor puede hacerlo)',
+        'Todos los códigos se inicializan a través de este micro:bit, que envía una radioseñal a los demás micro:bit cuando se pulsa el botón A.',
+        'Programación del movimiento de la serpiente',
+        'Cada micro:bit debe estar en el mismo radiogrupo que el micro:bit de inicio.',
+        'Todas las animaciones se inician al recibir la radioseñal.',
+        'La animación del primer micro:bit es visible de inmediato, las demás esperan hasta que la serpiente llegue allí.',
+        'El tiempo que transcurre entre las dos fases determina la velocidad de la serpiente.',
+    ], 'materials' => [
+        'micro:bits (para cada alumno, si es posible)',
+        'ordenador portátil o PC para el editor makecode.microbit.org'
     ]
+],
+    'illustrate-a-joke' => [
+    'title' => 'Ilustrar una broma con bitsy',
+    'author' => 'Margot Schubert',
+    'purposes' => 'Diseñar un pequeño juego en el que el usuario encuentra la respuesta a un chiste en forma de pregunta.',
+    'description' => 'Los alumnos diseñan un juego en el que el usuario busca la respuesta a un chiste en forma de pregunta cuando la figura golpea un objeto en el campo de juego. Los alumnos emplean características básicas de bitsy para completar el reto.',
+    'instructions' => [
+        'Piensa en un chiste en forma de pregunta. Ve a bitsy y empieza un nuevo proyecto. Necesitarás:',
+        'un avatar: objeto que puedas hacer cambiar de sitio',
+        'un gato blanco sobre un fondo morado',
+        'una descripción generada automáticamente',
+        'un objeto al que tu avatar debe dirigirse',
+        'una sala: el fondo de tu programa',
+        'dos mensajes: una pregunta y una respuesta.',
+        'El juego acabado puede descargarse como archivo html.'
+    ],
+    'example' => 'En este sitio web verás un ejemplo de chiste y un enlace a una pizarra digital:',
+    'materials' => 'bitsy funciona en un navegador'
+],
+    'app-that-counts-in-several-languages' => [
+    'title' => 'Aplicación que cuenta en varias lenguas',
+    'author' => 'Samuel Branco',
+    'purposes' => [
+        'Aprender cómo crear una aplicación sencilla.',
+        'Aprender a programar mediante bloques.',
+        'Aprender a añadir etiquetas, botones, imágenes, sensores y medios.',
+        'Aprender cómo organizar los elementos en la pantalla de una aplicación.'
+    ],
+    'description' => 'La aplicación permite contar en múltiples lenguas al pulsar un botón. Siempre que el usuario sacude el teléfono inteligente, el contador vuelve a cero. El reto consiste en añadir otra lengua.',
+    'instructions' => [
+        'Para completar el reto, debes definir la otra lengua en la que quieres que cuente la aplicación.',
+        'A continuación, tienes que descargar de internet (p. ej., de Pixabay o Unsplash) la bandera de ese país y cargarla a la plataforma de MIT APP Inventor mediante el elemento denominado “flag”, en la propiedad de la foto.',
+        'Al lado deberías ver cómo se escribe el nombre del país en inglés y cómo se dice deja y púlsame en el idioma de ese país.',
+        'Por último, debes añadir los bloques necesarios para que la aplicación funcione en la nueva lengua.',
+    ],
+    'materials' => [
+        'Para desarrollar una aplicación necesitas un PC o un portátil con acceso a internet.',
+        'Crea una cuenta en la plataforma de MIT APP Inventor, accesible a través de https://ai2.appinventor.mit.edu',
+        'También hay que instalar la aplicación MIT AI2 Companion en el teléfono inteligente para probar la aplicación que se haya creado.'
+    ]
+],
+    'coding-with-art-through-storytelling' => [
+    'title' => 'Programar con arte a través de la narración de historias',
+    'author' => 'Maria Tsapara y Anthi Arkouli',
+    'purposes' => [
+        'Cultivar las habilidades de observación, interpretación e interrogación a través del compromiso con el arte.',
+        'Ser creativos y colaborar con los demás para un objetivo común',
+        'Crear un algoritmo para narrar de nuevo la historia.',
+    ],
+    'description' => 'En este reto, los alumnos se inspirarán en una obra de arte, crearán una historia y la ilustrarán. A continuación, intentarán narrar de nuevo la historia empleando un kit robótico programable/o como una actividad sin conexión.',
+    'materials' => [
+        'Esta actividad puede desarrollarse como actividad sin conexión o empleando un robot programable educativo como Bee-bot/Blue-bot/Mouse Robot.',
+        'cartas de secuencia de Bee-bot o cartas de secuencia para la actividad sin conexión',
+        'en Griego',
+        'Para obtener más información sobre la Caja de Herramientas de Rutinas de pensamiento del Proyecto Cero, puedes visitar'
+
+    ],
+    'example' => [
+        'El profesor trabaja con los alumnos para perfilar cómo diseñar un algoritmo con las cartas, que proporcionarán las instrucciones para que el Bee-Bot u otro robot llegue al primer acontecimiento de la historia en la alfombrilla. Los alumnos trabajan en equipos de 3-4 con el fin de diseñar un algoritmo para que el robot pase a la secuencia siguiente. Los alumnos prueban sus algoritmos en la alfombrilla de la clase y depuran cuando es necesario.',
+        'Continúan desplazándose por tantos acontecimientos de la historia como pueden',
+        'Esta actividad también puede llevarse a cabo como actividad sin conexión.',
+        'Un niño es el robot y otro, el programador. El programador crea una ruta algorítmica empleando las cartas de secuencia para ayudar a que el robot pase de una imagen a otra y narre de nuevo la historia. Cada vez que el robot está en una imagen, se le pide que cuente una parte de la historia.',
+    ],
+    'instructions' => [
+        'El profesor pide a los alumnos que observen un cuadro/foto.',
+        'Utilizan la rutina de pensamiento "Inicio, Mitad, Final" (Proyecto Cero de la Universidad de Harvard) para crear una historia.',
+        'El profesor les pregunta si esta obra de arte es el inicio, la mitad o el final de una historia, ¿qué podría pasar a continuación, antes o al final?',
+        'Los alumnos ilustran los acontecimientos de la historia.',
+        'Los alumnos recuerdan la historia y colocan los acontecimientos en la cuadrícula. Empleando las cartas de secuencia, crean un algoritmo que ayuda al Bee-bot a narrar de nuevo la historia.'
+    ],
+],
+    'coding-with-legoboost' => [
+    'title' => 'Codificación y programación con Lego Boost — Extensión de Scratch',
+    'author' => 'Lidia Ristea',
+    'purposes' => [
+        'construir modelos empleando Lego Boost.',
+        'desarrollar habilidades de programación en Scratch.',
+        'programar robots empleando comandos desde sencillos a complejos.'
+    ],
+    'description' => 'En este reto, los alumnos utilizarán la extensión de Scratch Lego Boost e introducirán códigos en la aplicación para que los robots avancen, retrocedan, eviten obstáculos, así como para crear comandos de voz.',
+    'duration' => '120 minutos',
+    'instructions' => [
+        'Inicia sesión en la aplicación Scratch.mit.edu.',
+        'Inicia Scratch Link y activa el Bluetooth en el ordenador portátil.',
+        'Haz clic en Añadir una extensión de Scratch y elige Lego Boost.',
+        'Añade una foto de la Semana de la Programación de la UE.',
+        'Establece que los dos motores AB estén ON (encendidos) y, cuando se encuentren un obstáculo rojo, OFF (apagados).',
+        'Con el color verde, el motor A está ON y, con el color negro, el motor B está ON.',
+        'Se colocarán obstáculos verdes, rojos y negros en un camino.',
+        'Añade comandos de movimiento y giros a partir de flechas y texto a voz al encontrar un obstáculo.',
+        '¡Pruébalo!'
+    ]
+]
+
+
 ];
