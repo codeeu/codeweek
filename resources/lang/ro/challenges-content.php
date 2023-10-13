@@ -40,7 +40,7 @@ return [
             'Desenați un obiect și decideți care părți vor fi iluminate (de exemplu, stelele).',
             'Găuriți foaia cu un creion și introduceți un autocolant cu led în fiecare parte iluminată.  ',
             'Desenați un cerc în locul în care veți așeza bateria tip pastilă.',
-            'Desenați un traseu + și un traseu - pe cealaltă parte a foii. Asigurați-vă că segmentul mai lung al autocolantului cu circuit cu led este conectat la fața „+” a bateriei, iar segmentul mai scurt, la fața „-” a bateriei.',
+            'Desenați un traseu + și un traseu-pe cealaltă parte a foii. Asigurați-vă că segmentul mai lung al autocolantului cu circuit cu led este conectat la fața „+” a bateriei, iar segmentul mai scurt, la fața „-” a bateriei.',
             'Aplicați banda de cupru pe trasee.',
             'Faceți un pliu astfel încât ledul să lumineze când foaia acoperă bateria. Puteți folosi o agrafă de hârtie pentru a asigura un contact bun cu banda de cupru.',
             'Fotografiați circuitul de hârtie pe care l-ați realizat și distribuiți-l pe Instagram, explicând de ce considerați că merită să participați la această inițiativă.  '
@@ -480,6 +480,385 @@ return [
         ],
 
     ]
+
+    ,
+    'common' => [
+        'share' => 'Partajează linkul sau codul QR al proiectului tău pe Instagram sau Facebook, adaugă hashtagul #CodeWeekChallenge și menționează @CodeWeekEU.',
+        'audience' => [
+            'Profesori și cadre didactice',
+            'Elevi din învățământul primar (6-12 ani)',
+            'Elevi de gimnaziu (12-16 ani)',
+            'Elevi de liceu (16-18 ani)',
+        ],
+    ],
+    'code-a-dice' => [
+        'title' => 'Programează un joc de zaruri',
+        'author' => 'Fabrizia Agnello',
+        'purposes' => [
+            'Programează ghicitori interactive',
+            'Pentru a programa o simulare a unui obiect care se deplasează aleatoriu, pentru a fi utilizat în cazul în care obiectul real nu este disponibil',
+        ],
+        'description' =>
+            'În această probă vei programa un zar care va fi aruncat la întâmplare, la comanda ta. Poți alege orice tip de zar cu numărul de fețe pe care îl dorești, precum cele folosite în jocurile pe roluri și poți adăuga și sunete. ',
+        'instructions' => [
+            'Conectează-te la Scratch',
+            'Alege un fundal',
+            'Creează elementul grafic sprite al zarurilor sau caută unul pe internet și încarcă-l în programul tău',
+            'Crează un număr de „costume” pentru elementul grafic sprite egal cu numărul de fețe ale zarurilor alese, fiecare dintre ele afișând un număr diferit',
+            'Alege cum se vor rostogoli zarurile (apăsând o tastă, făcând clic pe elementul grafic sprite etc.) și scrie codul',
+            'Programează elementul grafic sprite pentru a schimba aleatoriu „costumul” la sfârșitul aruncării',
+            'Adaugă efecte sonore',
+        ],
+        'example' => 'Aruncă un zar cu 20 de fețe'
+    ],
+    'personal-trainer' => [
+        'title' => 'Antrenor personal cu micro:bit',
+        'author' => '',
+        'purposes' => [
+            'Pentru a programa micro:bit cu scopul de a utiliza soneria și panoul cu leduri',
+            'Pentru a crea un dispozitiv personal care să-ți urmărească activitatea fizică',
+            'Pentru a programa micro:bit cu scopul de a-ți îmbunătăți sănătatea prin sport',
+        ],
+        'description' =>
+            'Această provocare îți permite să îți programezi micro:bit-ul pentru a controla timpii de repetiție ai exercițiilor fizice împreună cu timpul de odihnă. Vei urmări activitatea ta fizică la școală, acasă sau în parc.'
+        ,
+        'instructions' => [
+            'Când A+B, creează un cronometru cu numărătoare inversă de 3 secunde cu un sunet de notă muzicală la fiecare secundă și afișează cuvântul GO!',
+            'În timpul primului exercițiu, afișează un pătrat 2x2 care se aprinde intermitent timp de 20 de secunde. Apoi redă un sunet și menține pătratul fix. În timpul rămas, trebuie să fie afișată o altă imagine care se aprinde intermitent timp de 10 secunde. La final, se va reda un sunet.',
+            'Apoi repetă aceeași acțiune, dar afișează un panou 3x3 pentru durata exercițiului. Repetă aceste acțiuni până când este afișat panoul 5x5.',
+        ],
+        'duration' => '30-40 de minute'
+    ],
+    'create-a-spiral' => [
+        'title' => 'Creează o spirală',
+        'author' => 'Lydie El-Halougi',
+        'purposes' => [
+            'Pentru a învăța și a exersa bucla și variabilele.',
+            'Pentru a spori creativitatea în programare.'],
+        'description' => 'În această probă vei scrie un proiect cu Scratch pentru a crea o spirală, folosind blocurile stilou, o buclă și o variabilă.',
+
+        'instructions' => [
+            'Blocurile stilou',
+            'Crează un nou proiect și numește-l Spirală.',
+            'Fă clic pe pictograma mov „Add extension” (Adaugă o extensie) din partea stângă jos a ferestrei',
+            'Selectează stiloul: blocurile stilou sunt acum disponibile pentru proiectul tău!',
+            'Pentru a începe proiectul, glisează și fixează blocul „când se face clic pe steagul verde”:',
+            'Trebuie să începi cu o pagină albă: în cadrul blocurilor stilou, adaugă blocul „erase all” (șterge tot):',
+            'Trebuie să desenezi în centrul scenei, ceea ce înseamnă că elementul tău grafic sprite va trebui plasat în centrul scenei (0,0):',
+            'Elementul grafic sprite se poate mișca fără a desena, sau se poate mișca și desena:',
+            'când vrei să deseneze, poți folosi blocul stilou în jos',
+            'când nu vrei acest lucru, poți folosi blocul stilou în sus',
+            'Acum trebuie să desenezi! Adaugă blocul „stilou în jos”:',
+            'Hexagonul',
+            'Adaugă blocurile de mai jos la proiectul tău:',
+            'Acum ai o șesime din hexagonul tău. Trebuie să repeți această secvență de 6 ori:',
+            'Spirala',
+            'Pentru a crea o spirală, va trebui să adaugi 2 la lungimea fiecărei laturi următoare.',
+            'Pentru a face acest lucru, vei folosi o variabilă <strong>.</strong>>',
+            'În blocurile de variabile, fă clic pe „Make a Variable” (Fă o variabilă)',
+            'Numește-o lungime, apoi fă clic pe OK:',
+            'Spirala va crește; va trebui să începi cu o lungime mică: setează prima lungime la 10 și introdu acest bloc înainte de buclă.',
+            'Introdu variabila „length” (lungime) în blocul „move ... steps” (mutare... pași)',
+            'Pentru ca spirala să crească, trebuie, de asemenea, ca lungimea să crească în fiecare buclă: adaugă blocul de mai jos la sfârșitul buclei:',
+            'Iată proiectul tău actual:',
+            'O spirală frumoasă',
+            'Ai desenat o spirală! Pentru ca aceasta să continue la nesfârșit, înlocuiește bucla „repeat 6” (repetă 6) cu bucla „forever”: (mereu)',
+            'Pentru a desena o spirală colorată, adaugă următorul bloc în buclă:',
+            'Când o iei de la capăt, elementul grafic sprite desenează o linie nedorită. Pentru a preveni acest lucru, adaugă un bloc „stilou în sus” la începutul proiectului.',
+            'Iată proiectul tău final:',
+            'Felicitări! Ai creat o spirală minunată!',
+        ],
+
+    ],
+    'play-against-ai' => [
+        'title' => 'Creează și joacă-te cu IA-Jocul piatră, foarfecă, hârtie',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            'pentru a înțelege cum funcționează ciclul de învățare automată.',
+            'pentru a construi un model de învățare automată folosind Teachable Machine',
+            'pentru a te familiariza cu instrumentul Pictoblox și a importa modelul creat în proiect',
+            'pentru a stabili scena și personajele, creează și inițializează variabile în Pictoblox',
+            'pentru a inițializa jocul, a identifica mișcările jucătorilor, a programa mișcări aleatorii ale IA',
+            'pentru a crea și testa un joc care implică inteligența artificială ca adversar într-un joc de piatră, hârtie, foarfecă.'
+
+        ],
+        'description' => 'Vom crea un model folosind Teachable Machine din imagini folosind trei clase: piatră, foarfecă și hârtie. Modelul va fi încărcat în Pictoblox și folosit pentru a crea un joc pe care îl putem juca împotriva IA.',
+        'duration' => '90 de minute',
+        'instructions' => [
+            'Creează un nou proiect de imagine pe Teachable machine cu 3 clase numite piatră, hârtie și foarfecă. Pentru fiecare clasă, fotografiază cu aparatul foto cel puțin 400 de imagini. Asigură-te că ai un fundal clar. Antrenează și exportă modelul. Încarcă modelul și copiază linkul.',
+            'Creează un cont gratuit pe site-ul Pictoblox. Adaugă o extensie Machine Learning și încarcă un model. Stabilește scena, variabilele și elementele grafice sprite. Inițializează jocul, identifică mutările jucătorilor și mutările IA și cine câștigă runda.',
+            'Antrenează datele pentru joc.',
+            'Testarea modelului.',
+            'Exportă modelul.',
+            'Adaugă extensia Machine Learning și încarcă modelul.',
+            'Stabilește scena, variabilele și elementul grafic sprite.',
+            'Inițializează jocul.',
+            'Identifică mutările jucătorului.',
+            'Stabilește mișcări IA aleatorii.',
+            'Transmite mișcări IA aleatorii.',
+            'Realizează trei blocuri. Cine câștigă runda? ',
+            'Verifică dacă jucătorul câștigă runda.',
+            'Verifică dacă IA câștigă runda.',
+            'Verifică dacă este egalitate.',
+            'Programează blocurile.',
+            'Elementul grafic sprite pentru piatră hârtie foarfecă',
+        ]
+    ],
+    'air-drawing-with-AI' => [
+            'title' => 'Desen în aer cu IA',
+            'author' => 'Kristina Slišurić',
+            'purposes' => [
+                'pentru a scrie un program care utilizează extensia de detectare a corpului uman, pentru a recunoaște mișcarea degetelor în fața camerei.',
+                'pentru a codifica cu blocuri simple în câteva linii de cod.',
+                'pentru a vedea un exemplu de utilizare a IA'
+            ],
+            'description' => 'Crearea unui program care permite utilizatorului să deseneze în aer cu mâna (degetul arătător) în fața camerei și tot ceea ce desenează este afișat automat pe scena Pictoblox.',
+        'instructions' => [
+    'Creează un cont gratuit pe site-ul Pictoblox',
+    'urmează instrucțiunile vizuale pentru:',
+    'adaugă extensiile Human Body Detection (detectarea corpului uman) și Pen (stilou);',
+    'stabilește scena și adaugă elementul grafic sprite (stilou) și elemente grafice sprite adiționale pentru: Stilou în jos, Stilou în sus, Șterge tot;  ',
+    'scrie un cod pentru ca elementul grafic sprite Stilou să urmărească degetul',
+    'scrie un cod pentru butoanele: Stilou în sus, Stilou în jos și Șterge tot și pentru Stilou',
+    'Acum ești gata să creezi propriile desene și să te joci cu diferite culori și dimensiuni ale stiloului.',
+],
+        'materials' => [
+    'Un laptop sau un computer cu o cameră',
+    'Cea mai recentă versiune descărcată de PictoBlox (recomandat) sau Pictoblox online (gratuit)',
+    'Cont Pictoblox (gratuit)',
+    'Conexiune la internet bună'
+]
+    ],
+    'emobot-kliki' => [
+    'title' => 'Emobot Kliki',
+    'author' => 'Margareta Zajkova',
+    'purposes' => [
+        'Pentru a învăța conceptele de bază ale învățării automate și ale recunoașterii textului.',
+        'Pentru a înțelege rolul emoțiilor în comunicare.',
+        'Pentru a utiliza programarea pentru a crea dialoguri între un chatbot și un utilizator.',
+        'Pentru a înțelege modul în care computerele pot recunoaște tonurile emoționale prin analiza textului și să răspundă în consecință.'
+    ],
+    'description' => [
+        'Creează un emobot în Scratch care poate afișa o față fericită pentru mesaje pozitive (dacă îi spui lucruri frumoase), o față nervoasă pentru mesaje negative (dacă îi spui lucruri urâte) și o față confuză dacă mesajul este neclar.',
+        'Emobotul nostru Kliki va recunoaște complimentele și insultele, așa că vom vedea cum pot fi antrenate computerele să recunoască tonul emoțional.',
+    ],
+    'instructions' => [
+        'Pentru a începe, programează o listă de reguli pentru ceea ce este drăguț sau amabil și ceea ce este rău sau meschin.',
+        'Conectează-te la https://machinelearningforkids.co.uk/ sau creează un cont nou.',
+        'Creează un nou model de învățare automată adăugând 3 etichete noi, prima se numește „frumos”, a doua se numește „rău” și, opțional, dacă vrei să-ți recunoască numele, creează o a treia etichetă numită „nume”.',
+        'Antrenează noul model de învățare automată, testează-l și folosește-l pentru a crea Emobot în Scratch.',
+        'Lansează editorul Scratch 3, șterge elementul grafic sprite cat, inserează 3 elemente grafice sprite noi realizate de Microsoft Bing Image Creator (desene animate pe calculator fericite, furioase și nesigure) sau creează un nou element grafic sprite făcând clic pe pictograma Paint, desenând trei copii ale „costumului” pentru fața fericită, furioasă și nesigură.',
+        'Fă clic pe fila „Code” (cod) și introdu următorul script.']
+    ,
+    'example' => [
+        'Partajează Emobot Kliki cu prietenii tăi și învață mai multe despre IA și emoții!',
+        'În loc de un desen animat pe calculator poți încerca ceva diferit, cum ar fi un animal. În loc de amabilitate și răutate ai putea antrena personajul să recunoască alte tipuri de mesaje.',
+    ],
+
+],
+    'craft-magic' => [
+    'title' => 'Creează magie cu gesturi de mână IA',
+    'author' => 'Georgia Lascaris',
+    'purposes' => [
+        'Pentru a dezvolta abilitățile de programare în rândul elevilor, permițându-le să utilizeze comenzi de bază.',
+        'Pentru a dezvolta abilități de gândire algoritmică prin defalcarea sarcinilor complexe în etape ușor de gestionat.',
+        'Pentru a încuraja rezolvarea creativă a problemelor în ceea ce privește găsirea unor aplicații unice ale gesturilor mâinilor pentru desen și scris.',
+        'Pentru a stimula înțelegerea conceptelor de IA, în special a modului în care IA permite computerelor să recunoască și să interpreteze gesturile mâinilor.',
+        'Pentru a crește gradul de conștientizare cu privire la importanța tehnologiei pentru persoanele cu dizabilități.',
+        'Pentru a promova colaborarea în rezolvarea problemelor și munca în echipă între elevi în timp ce lucrează împreună pentru a-și îmbunătăți programele de gesturi ale mâinilor.',
+        'Pentru a conecta abilitățile de programare și de gândire computațională la aplicațiile din lumea reală, punând accentul pe impactul semnificativ al tehnologiei asupra vieții oamenilor și alinierea la Obiectivele de dezvoltare durabilă (ODD).'
+    ],
+    'duration' => [
+        '90 min pentru elevi 10-12',
+        '45 min pentru elevi 12-15'
+    ],
+    'description' => 'Creează un program Scratch bazat pe blocuri folosind extensia IA „Human Body” (corpul uman) într-un mod creativ și atractiv, pentru a desena pe un ecran fără a avea nevoie de un mouse tradițional sau de un ecran tactil.',
+    'instructions' => [
+        'Conectează-te la https://ai.thestempedia.com și creează un cont pentru cadru didactic și elevi.',
+        'Importă extensiile „Human Body Detection”, „Pen”, „Text to Speech”.',
+        'Adaugă elementul grafic sprite „Stilou” din bibliotecă și creează 7 elemente grafice sprite („scrie”, „șterge”, „negru”, „roșu”, „albastru”, „verde”, „roz”).',
+        'Scrie comenzi pentru a verifica ce se întâmplă atunci când elementul grafic sprite „stilou” atinge una dintre celelalte entități grafice.',
+        'Scrie comenzi care să permită camerei să recunoască poziția mâinii și să mute stiloul la coordonatele x și y ale degetului arătător.',
+        'Schimbă costumele la sfârșitul aruncării',
+        'Adaugă efecte sonore.',
+    ],
+    'materials' => [
+        'Programarea platformei https://ai.thestempedia.com (gratuit)',
+        'cont cadru didactic (gratuit)',
+        'cont elev (gratuit)',
+        'Calculatoare cu cameră',
+        'Conexiune la internet',
+    ]
+],
+    'circle-of-dots' => [
+    'title' => 'Un cerc de puncte',
+    'author' => 'Marin Popov',
+    'purposes' => [
+        'Pentru a scrie cod pentru a desena o linie de puncte.',
+        'Pentru a scrie cod pentru a desena o linie de liniuțe.',
+        'Pentru a scrie cod pentru a desena un cerc.',
+        'Scrie cod pentru a desena un cerc de puncte (liniuțe).',
+    ],
+    'description' => 'Desenează un cerc format din puncte și liniuțe.',
+    'duration' => '40 de minute',
+    'instructions' => [
+        'Construirea unui bloc din puncte.',
+        'Construirea unui bloc din liniuțe.',
+        'Construirea unui cerc din puncte.',
+        'Construirea unui cerc din liniuțe.'
+    ]
+],
+    'coding-escape-room' => [
+    'title' => 'Crearea unei escape room cu ajutorul programării',
+    'author' => 'Stefania Altieri ași Elisa Baraghini',
+    'purposes' => [
+        'Pentru a preda/învăța și a reflecta asupra conceptelor de programare.',
+        'Pentru a utiliza instrumente de programare simple.',
+        'Pentru a dezvolta gândirea computațională și abilitățile de rezolvare a problemelor.'
+    ], 'description' => [
+        'Creează o experiență escape room cu ajutorul programării:',
+        'Poți să folosești Google Forms, Genially, Google presentation, orice instrument pentru a spune o poveste bazată pe programare ;).'
+
+    ],
+    'duration' => '90 de minute',
+    'instructions' =>
+        'Poți să-ți împarți elevii în grupuri mici, ei se pot juca și apoi pot crea o altă provocare pe baza șablonului: '
+    ,
+
+    'materials' => [
+        'Poți să folosești orice instrument (platforma Google și Microsoft pentru a crea și partaja documente, prezentări și foi). Orice construcție de programare, instrument sau caracter legat de TIC și de programare.'
+        ],
+        'example' => [
+            'Anumite personaje care au avut un rol foarte important în istoria TIC și conceptele de bază ale codării și programării, sunt introduse prin joc . Acesta este cel mai bun mod de a învăța și de a participa activ . Acest joc poate fi jucat în echipe sau individual, ca o provocare sau o competiție . Elevii pot crea apoi ceva similar și își pot dezvolta competențe precum creativitatea și abilitățile de programare . ',
+            'Aceasta este o resursă foarte practică care poate fi reutilizată și care este ușor de recreat . Google Forms este unul dintre instrumentele posibile . Poți folosi, de asemenea, Google slides, Genial . ly sau Emaze sau orice alt instrument pentru a crea propriile povești și aventuri . ',
+            'Provocarea escape room este împărțită în sesiuni . Dacă ghicești, poți să avansezi . Elevii pot să creeze întrebările de programare . ',
+        ],
+    ],
+    'let-the-snake-run' => [
+        'title' => 'Lasă șarpele să fugă',
+        'author' => 'Ágota Klacsákné Tóth',
+        'purposes' => [
+            'Pentru a programa mișcarea șarpelui pe propriul micro:bit . ',
+            'Pentru a seta amplasarea și sincronizarea corectă pentru animația comună . '
+        ],
+        'description' => 'Elevii trebuie să scrie coduri pentru a naviga șarpele printr-o serie de micro:biți unul lângă altul . Trebuie făcut astfel încât să pară că șarpele fuge de la un micro:bit la altul . ',
+        'duration' => '30 de minute',
+        'instructions' => [
+            'Proiectează un traseu care trece prin mai mulți micro:biți unul lângă altul(de exemplu, formând un pătrat 2x2).',
+            'Scrie cod pentru un șarpe care se deplasează pe un traseu . ',
+            'Lucrează pe propriul tău dispozitiv, apoi pune-le împreună și rulează codul . ',
+            'Ia în considerare sincronizarea și amplasarea: Dacă șarpele iese de pe un micro:bit, va apărea pe următorul micro:bit . ',
+            'Provocări suplimentare: Cu micro:bit v2, redă muzică până când șarpele părăsește dispozitivul . ',
+            'Proiectează șarpele prin schimbarea luminozității LED-urilor . ',
+            'Încearcă să-l faci mai lung sau să faci mai mulți șerpi . '
+        ],
+        'example' => [
+            'Acesta este un exemplu pentru un șarpe lung de 6 pixeli cu 4 micro:biți care formează un pătrat 2x2: ',
+            'Programarea micro:bit-ului de pornire(o poate face cadrul didactic)',
+            'Toate codurile sunt inițiate de acest micro:bit, care trimite un semnal radio către alți micro:biți atunci când este apăsat butonul A . ',
+            'Programarea mișcării șarpelui',
+            'Fiecare micro:bit trebuie să fie în același grup radio ca și micro:bitul de pornire . ',
+            'Toate animațiile încep atunci când se primește semnalul radio . ',
+            'Animația primului microbit este vizibilă imediat, celelalte așteaptă până când șarpele ajunge acolo . ',
+            'Timpul dintre cele două faze determină viteza șarpelui . ',
+        ], 'materials' => [
+           'micro:biți(pentru fiecare elev, dacă este posibil)',
+            'laptop sau calculator pentru editorul makecode . microbit . org'
+        ]
+    ],
+    'illustrate-a-joke' => [
+        'title' => 'Ilustrarea unei glume cu bitsy',
+        'author' => 'Margot Schubert',
+        'purposes' => 'Pentru a proiecta un mic joc în care utilizatorul găsește răspunsul la o întrebare glumeață . ',
+        'description' => 'Elevii proiectează un joc în care utilizatorul găsește răspunsul la o întrebare glumeață atunci când figura lovește un obiect pe câmpul de joc . Elevii folosesc caracteristicile de bază ale lui bitsy pentru a finaliza provocarea . ',
+        'instructions' => [
+            'Gândește-te la o întrebare glumeață . Accesează bitsy și începe un proiect nou . Vei avea nevoie de:',
+            'un avatar-element grafic sprite pe care îl poți mișca',
+            'O pisică albă pe un fundal violet',
+            'Descriere generată automat',
+            'un obiect la care trebuie să ajungă avatarul tău',
+            'o cameră-fundalul programului tău',
+            'două mesaje: o întrebare și un răspuns',
+            'Jocul finalizat poate fi descărcat ca fișier html . '
+        ],
+        'example' => 'Pe acest site web poți vedea un exemplu de glumă și există un link către o tablă digitală:',
+        'materials' => 'bitsy rulează într-un browser'
+    ],
+    'app-that-counts-in-several-languages' => [
+        'title' => 'Aplicație care numără în mai multe limbi',
+        'author' => 'Samuel Branco',
+        'purposes' => [
+         'Pentru a învăța cum să creezi o aplicație simplă . ',
+            'Pentru a învăța să programezi folosind blocuri . ',
+            'Pentru a învăța cum să adaugi etichete, butoane, imagini, senzori și media . ',
+            'Pentru a învăța cum să organizezi elemente pe ecranul unei aplicații . '
+        ],
+        'description' => 'Aplicația îți permite să numeri în mai multe limbi, prin simpla apăsare a unui buton . De fiecare dată când utilizatorul scutură smartphone-ul, numărătoarea revine la zero . Provocarea este să adaugi o altă limbă . ',
+        'instructions' => [
+            'Pentru a finaliza provocarea, trebuie să definești cealaltă limbă în care vrei să numere aplicația . ',
+            'Apoi trebuie să descarci de pe internet(de exemplu, de pe Pixabay sau Unsplash) steagul acelei țări și să îl încarci pe platforma MIT APP Inventor, prin intermediul elementului numit flag, în proprietatea Picture . ',
+            'În continuare ar trebui să afli cum se scrie numele țării în engleză și cum să spui „ieși și apasă-mă” în limba țării respective . ',
+            'În cele din urmă, trebuie să adaugi blocurile necesare pentru ca aplicația să funcționeze în noua limbă . ',
+        ],
+        'materials' => [
+            'Pentru a dezvolta o aplicație ai nevoie de un calculator sau de un laptop cu acces la internet . ',
+            'Creează un cont pe platforma MIT APP Inventor, accesibilă prin intermediul https://ai2.appinventor.mit.edu',
+            'De asemenea, este necesară instalarea aplicației MIT AI2 Companion pe smartphone, pentru a testa aplicația dezvoltată.'
+        ]
+    ],
+    'coding-with-art-through-storytelling' => [
+    'title' => 'Programare cu ajutorul artei prin Storytelling',
+    'author' => 'Maria Tsapara și Anthi Arkouli',
+    'purposes' => [
+        'Pentru a dezvolta abilitățile de observare, interpretare și sondare prin implicarea în artă.',
+        'Pentru a fi creativ și a colabora cu alții pentru un scop comun',
+        'Pentru a crea un algoritm pentru a povesti din nou povestea',
+    ],
+    'description' => 'În această provocare, elevii se vor inspira dintr-o lucrare de artă, vor crea o poveste și o vor ilustra. Apoi vor încerca să repovestească povestea folosind un kit robotic programabil/sau în cadrul unei activități fără dispozitive.',
+    'materials' => [
+        'Această activitate poate fi implementată ca o activitate fără dispozitive sau prin utilizarea unui robot educațional programabil, cum ar fi robotul beebot/bluebot/mouse.',
+        'cartonașe săgeată beebot sau cartonașe săgeată pentru activitatea fără dispozitive',
+        'în greacă',
+        'Pentru a afla mai multe despre Project Zero\'s Thinking Routine Toolbox(Cutia de instrumente pentru rutina de gândire a Proiectului Zero)'
+        
+        ],
+        'example' => [
+            'Profesorul lucrează cu elevii pentru a modela modul de proiectare a unui algoritm cu ajutorul cartonașelor cu instrucțiuni pentru ca Bee-Bot sau alt robot să ajungă la primul eveniment din poveste de pe covoraș . Elevii lucrează în echipe de câte 3-4 pentru a proiecta un algoritm pentru ca robotul să se deplaseze la următoarea secvență . Elevii își testează algoritmii pe covorașul clasei și repară erorile, dacă este necesar . ',
+            'Continuă să treacă prin cât mai multe evenimente de poveste',
+            'Această activitate poate fi implementată și ca o activitate fără dispozitive . ',
+            'Un copil este robotul, iar un alt copil este programatorul . Programatorul creează un traseu algoritmic cu ajutorul cartonașelor cu săgeți pentru a ajuta robotul să se deplaseze de la o imagine la alta și să repovestească povestea . De fiecare dată când robotul apare într-o imagine, i se cere să spună o parte din poveste . ',
+        ],
+        'instructions' => [
+            'Profesorul le cere elevilor să privească o pictură / fotografie . ',
+            'Ei folosesc rutina de gândire „Început, mijloc, sfârșit”(Proiectul Zero de la Harvard School) pentru a crea o poveste . ',
+            'Profesorul îi întreabă: „Dacă această lucrare este începutul / mijlocul / sfârșitul unei povești, ce s-ar putea întâmpla în continuare / înainte / la sfârșit ? ',
+            'Elevii ilustrează evenimentele din poveste . ',
+            'Elevii își amintesc povestea și pun evenimentele în grilă . Cu ajutorul cartonașelor cu săgeți, ei creează un algoritm care îl ajută pe beebot să spună din nou povestea . '
+        ],
+    ],
+    'coding-with-legoboost' => [
+        'title' => 'Codarea și programarea cu LegoBoost-extensia Scratch',
+        'author' => 'Lidia Ristea',
+        'purposes' => [
+            'pentru a construi modele folosind LegoBoost . ',
+            'pentru a dezvolta abilități de programare în Scratch . ',
+            'pentru a programa roboți folosind comenzi atât simple, cât și complexe . '
+        ],
+        'description' => 'În această provocare, elevii vor folosi extensia Scratch-LegoBoost și vor introduce coduri în aplicație, pentru ca roboții să se deplaseze înainte, înapoi, să evite obstacole și să dea comenzi vocale . ',
+        'duration' => '120 de minute',
+        'instructions' => [
+            'Conectează-te la aplicația Scratch . mit . edu . ',
+            'Lansează Scratch Link și activează Bluetooth pe laptop . ',
+            'Dă clic pe „Add an Extension from Scratch”(adaugă extensie de la Scratch) și alege LegoBoost . ',
+            'Adaugă o imagine despre Săptămâna UE a programării . ',
+            'Configurează cele două motoare AB ca fiind PORNIT și respectiv OPRIT atunci când întâlnești un obstacol roșu . ',
+            'La culoarea verde, motorul A este PORNIT, la culoarea negru motorul B este PORNIT . ',
+            'Obstacolele verzi, roșii și negre vor fi incluse pe o rută . ',
+            'Adaugă comenzi pentru mișcare și viraje de la săgeți și text-to-speech atunci când întâlnești un obstacol . ',
+            'Testează!'
+        ]
+    ]
+
 
 ];
 

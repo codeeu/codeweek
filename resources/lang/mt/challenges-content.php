@@ -491,4 +491,384 @@ return [
         ],
 
     ]
+    ,
+    'common' => [
+        'share' => 'Ixxerja l-ħolqa jew il-kodiċi QR tal-proġett tiegħek fuq Instagram jew Facebook, żid il-hashtag #CodeWeekChallenge u semmi @CodeWeekEU.',
+        'audience' => [
+            'Għalliema u edukaturi',
+            'Studenti tal-Iskola Primarja (6 sa 12-il sena)',
+            'Studenti tal-Iskola Sekondarja tal-Ewwel Livell (12 sa 16-il sena)',
+            'Studenti tal-Iskola Sekondarja tat-Tieni Livell (16 sa 18-il sena)',
+        ],
+    ],
+    'code-a-dice' => [
+        'title' => 'Ikkowdja Dada biex Tirrombla',
+        'author' => 'Fabrizia Agnello',
+        'purposes' => [
+            'Ikkowdja ħġejjeġ moħġaġi interattivi',
+            'Biex tikkowdja simulazzjoni ta\' oġġett li jimxi għall-għarrieda biex jintuża jekk l-oġġett reali ma jkunx disponibbli'
+        ],
+        'description' =>
+            "F'din l-isfida int ser tikkowdja dada biex tirrombla għall-għarrieda wara li tikkmandaha. Tista' tagħżel kull tip ta' dada bin-numru ta' uċuħ li trid, bħal dawk użati f'logħob ta' rwol u żżid ħsejjes ukoll.",
+        'instructions' => [
+            'Illoggja għal Scratch',
+            'Agħżel retroxena',
+            'Oħloq l-isprite tad-dada tiegħek jew fittex wieħed fuq il-web u tellgħu fil-programm',
+            "Oħloq kostumi għall-isprite daqs in-numru ta' uċuħ għad-dada magħżula, kull wieħed minnhom juri numru differenti",
+            'Agħżel kif trid id-dada tibda tirrombla (agħfas tast tat-tastiera, ikklikkja sprite, eċċ) u ikteb il-kodiċi',
+            'Ikkowdja l-isprite biex ibiddel għall-għarrieda l-kostum fl-aħħar tar-romblu',
+            'Żid effetti tal-ħoss',
+        ],
+        'example' => 'Irrombla dada D-20'
+    ],
+    'personal-trainer' => [
+        'title' => 'Ħarrieġ Personali b\'micro:bit',
+        'author' => '',
+        'purposes' => [
+            'Biex tikkowdja micro:bit sabiex tuża l-buzzer u l-pannell led',
+            'Biex toħloq tagħmir personali biex jikkontrolla l-attività fiżika tiegħek,',
+            'Biex tikkowdja micro:bit biex ittejjeb saħħtek permezz tal-isport',
+        ],
+        'description' =>
+            "Din l-isfida tħallik tikkowdja l-micro:bit tiegħek biex tikkontrolla n-numru ta' repetizzjonijiet ta' eżerċizzji fiżiċi b'ħin ta' mistrieħ. Ser tittrekkja l-attività fiżika tiegħek fl-iskola, fid-dar jew fil-park."
+        ,
+        'instructions' => [
+            "Meta A+B, oħloq timer countdown ta' 3 sekondi b'ħoss ta' nota mużikali kull sekonda u uri l-kelma ITLAQ!",
+            'Matul l-ewwel eżerċizzju, uri kaxxa 2x2 li tteptep għal 20 sekonda. Imbagħad agħmel ħoss u żomm il-kaxxa fissa. Matul il-ħin li jibqa',
+            'stampa oħra li tteptep trid tintwera għal 10 sekondi. Meta tispiċċa, agħmel xi ħoss.',
+            'Wara rrepeti l-istess azzjoni imma uri pannell 3x3 għal matul il-ħin tal-eżerċizzju. Irrepeti dawn l-azzjonijiet sakemm jintwera pannell 5x5.',
+        ],
+        'duration' => '30-40 minuta',
+    ],
+    'create-a-spiral' => [
+        'title' => 'Oħloq spiral',
+        'author' => 'Lydie El-Halougi',
+        'purposes' => [
+            'Biex titgħallem u tipprattika fluss u varjabbli.',
+            'Biex insaħħu l-kreattività fl-ikkowdjar.'],
+        'description' => "F'din l-isfida int ser tikteb proġett bi Scratch biex toħloq spiral, u tuża blokok ta' pinna, fluss u varjabbli.",
+
+        'instructions' => [
+            'Il-Blokki tal-pinen',
+            'Oħloq proġett ġdid u semmih Spiral.',
+            'Ikklikkja fuq l-ikona vjola "Żid estensjoni" fuq in-naħa xellugija t\'isfel tat-tieqa',
+            'Agħżel "pinna": il-blokki tal-pinen issa huma disponibbli għall-proġett tiegħek!',
+            'Biex tibda l-proġett tiegħek, iġbed u itfa\' l-blokka "meta l-bandiera l-ħadra tikklikkja":',
+            'Trid tibda b\'paġna vojta: fil-blokki tal-pinna, żid il-blokka "ħassar kollox":',
+            'Trid tibda tpinġi fiċ-ċentru tal-palk, li jfisser li l-isprite jrid imur fiċ-ċentru tal-palk (0,0):',
+            'L-isprite tiegħek jista\' jiċċaqlaq mingħajr tpinġija, jew jimxi u jpinġi:',
+            'meta tridu jpinġi, tista\' tuża l-blokka tal-pinna t\'isfel',
+            'meta ma tkunx trid dak, tista\' tuża l-blokka tal-pinna ta\' fuq',
+            'Issa, trid tpinġi! Żid il-blokka \'pinna isfel:',
+            'L-eżagonu',
+            'Żid il-blokki taħt għall-proġett tiegħek:',
+            'Issa għandek wieħed minn kull sitt eżagonu tiegħek. Trid tirrepeti din is-sekwenza 6 darbiet:',
+            'L-ispiral',
+            'Biex toħloq spiral, ser ikollok bżonn iżżid 2 għat-tul ta\' kull naħa.',
+            'Biex tagħmel hekk, ser tuża <strong>variable.</strong>',
+            'Fil-blokki varjabbli, ikklikkja fuq \'Agħmel Varjabbli',
+            'Semmih tul, u wara kklikkja Owkej:',
+            'L-ispiral ser jikber, ser ikollok tibda żgħir: issettja l-ewwel tul għal 10, u wara daħħal din il-blokka qabel l-ingassa.',
+            'Daħħal it-"tul" varjabbli fil-blokka "mexxi...l-passi"',
+            'Biex l-ispiral jikber, ser tkun trid ukoll li jkollok it-tul jikber f\'kull ingassa: żid il-blokka taħt fit-tarf tal-ingassa:',
+            'Hawn hu l-proġett kurrenti tiegħek:',
+            'Spiral sabiħ',
+            'Int pinġejt spiral! Biex dan ikompli jagħmel hekk, issostitwixxi l-ingassa "irrepeti 6" għall-ingassa "għal dejjem":',
+            'Biex tpinġi spiral bil-kuluri, żid il-blokka li jmiss fl-ingassa:',
+            'Meta terġa\' tibda, l-isprite jpinġi linja li ma tkunx trid. Biex tevita dan, żid il-blokka "pinna \'l fuq" fil-bidu tal-proġett.',
+            'Hawn hu l-proġett finali tiegħek:',
+            'Nifraħlek! Ħloqt spiral sabiħ!',
+        ],
+
+    ],
+    'play-against-ai' => [
+        'title' => 'Oħloq u ilgħab kontra IA - il-Logħba Ġebla, Imqass, Karta',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            'biex tifhem kif iċ-ċiklu tat-tagħlim awtomatiku jaħdem.',
+            'biex tibni mudell ta\' tagħlim awtomatiku bl-użu ta\' Magna li hi Kapaċi Titgħallem',
+            'biex issir familjari mal-għodda Pictoblox u ddaħħal il-mudell li tkun ħloqt fil-proġett',
+            'biex tissettja l-palk u l-karattri, toħloq u tinizjalizza varjabbli f\'Pictoblox',
+            'biex tinizjalizza l-logħba, tidentifika movimenti ta\' ġugaturi, tipprogramma movimenti għall-għarrieda tal-IA',
+            'biex toħloq u tittestja logħba li tinvolvi intelliġenza artifiċjali bħala avversarju f\'logħba Ġebla, Karta, Imqass.'
+
+        ],
+        'description' => 'Ser noħolqu mudell bl-użu ta\' Magna li hi Kapaċi Titgħallem minn stampi bl-użu ta\' tliet klassijiet: Ġebla, Imqass u Karta. Mudell ser jillowdja f\'Pictoblox u ser jintuża biex joħloq logħba li biha nistgħu nilagħbu kontra IA.',
+        'duration' => '90 minuta',
+        'instructions' => [
+            'Oħloq proġett bi stampa ġdida fuq magna li hi Kapaċi Titgħallem bi 3 klassijiet li jisimhom Ġebla, Karta u Imqass. Għal kull klassi ħu tal-inqas 400 ritratt bil-kamera. Żgura li jkollok sfond ċar. Ħarreġ u esporta l-mudell. Tella\' mudell u kkopja l-ħolqa.',
+            "Oħloq kont b'xejn fuq is-sit Pictoblox. Żid Estensjoni ta' Tagħlim Awtomatiku u tella' mudell. Issettja l-palk, il-varjabbli u l-isprites. Inizjalizza l-logħba, identifika l-mossi ta' ġugatur u l-mossi tal-IA u ta' min jirbaħ dan iċ-ċirklu.",
+            'Ħarreġ id-data għal-logħba.',
+            'Qed nittestja l-mudell.',
+            'Esporta l-mudell.',
+            "Żid l-estensjoni tat-tagħlim awtomatiku u tella' l-mudell.",
+            'Issettja l-palk, il-varjabbli u Sprite.',
+            'Inizjalizza l-logħba.',
+            'identifka l-Mossi tal-Ġugaturi.',
+            'Issettja Mossi għall-għarrieda ta-IA.',
+            'Xandar Mossi għall-għarrieda IA.',
+            'Agħmel tliet blokki. \'Min jirbaħ iċ-ċiklu?',
+            'Ivverifika jekk il-ġugatur jirbaħx iċ-ċiklu.',
+            'Ivverifika jekk l-IA tirbaħx iċ-ċiklu.',
+            'Ivverifika jekk iċ-ċiklu spiċċax draw.',
+            'Blokki tal-ipprogrammar.',
+            'Ġebel Karta Imqass Sprite',
+        ]
+    ],
+    'air-drawing-with-AI' => [
+        'title' => 'Tpinġija fl-arja bl-IA',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            "biex tikteb programm bl-użu tal-estensjoni tad-detezzjoni tal-ġisem uman biex jagħraf il-moviment ta' swaba' quddiem il-kamera.",
+            "tikkowdja b'sempliċi blokki fi ftit linji ta' kodiċi.",
+            "biex tara eżempju ta' kif tuża l-IA"
+        ],
+        'description' => "Ħolqien ta' programm li jħalli l-utent ipinġi fl-arja b'idhom (is-saba' l-werrej) quddiem il-kamera u kull ma jaraw ikun muri awtomatikament fuq il-palk ta' Pictoblox.",
+        'instructions' => [
+            'Oħloq kont fuq Pictoblox',
+            'segwi l-istruzzjonijiet viżwali biex:',
+            'iżżid estensjonijiet Detezzjoni tal-Ġisem Uman u Pinna;',
+            "tissettja l-palk u żżid sprite (Lapes) u sprites addizjonali għal: Pinna 'l Isfel, Pinna 'l Fuq, Ħassar Kollox; ",
+            'ikteb kodiċi għal-Lapes sprite biex isegwi s-saba\'',
+            "ikteb kodiċi għall-buttuni: Pinna 'l Isfel, Pinna 'l Fuq u Ħassar kollox u anki għal Pinna",
+            "Issa lest tagħmel it-tpinġijiet tiegħek u tilgħab b'kuluri u daqs differenti ta' pinna.",
+        ],
+        'materials' => [
+            "Laptop jew komputer b'kamera",
+            "L-aħħar verżjoni ta' Pictoblox tniżżlet (rakkomandat) jew Pictoblox online (b'xejn)",
+            "kont Pictoblox (b'xejn)",
+            'Konnessjoni tajba tal-Internet'
+        ]
+    ],
+    'emobot-kliki' => [
+        'title' => 'Emobot Kliki',
+        'author' => 'Margareta Zajkova',
+        'purposes' => [
+            "Biex titgħallem kunċetti bażiċi ta' tagħlim awtomatiku u tagħrif ta' test.",
+            "Biex tifhem ir-rwol ta' emozzjonijiet f'komunikazzjonijiet.",
+            'Biex tuża kodiċi biex toħloq djalogi bejn chatbot u utent.',
+            "Biex tifhem kif kompjuters jistgħu jgħarfu toni emozzjonali permezz ta' analiżi ta' test u jirrispondu kif ikun hemm bżonn."
+        ],
+        'description' => [
+            "Oħloq Bot Emozzjonali fi Scratch li jkun jista' juri wiċċ ferħan għal messaġġi pożittivi (jekk tgħidilha affarijiet sbieħ), wiċċ bin-nervi għal messaġġi negattivi (jekk tgħidilha affarijiet kattivi) u wiċċ konfuż jekk messaġġ ma jkunx speċifikat.",
+            "L-Emobot Kliki tagħna ser jagħraf il-kumplimenti u insulti u allura ser taraw kif tista' tħarreġ kompjuters biex jagħrfu ton emozzjonali.",
+        ],
+        'instructions' => [
+            "Biex tibda, ipprogramma lista ta' regoli għal dak li hu sabiħ jew ħanin u x'inhu ħażin jew kattiv.",
+            "Illoggja f'https://machinelearningforkids.co.uk/ jew oħloq kont ġdid.",
+            'Agħmel mudell ġdid ta\' tagħlim awtomatiku billi żżid 3 tikketti ġodda, l-ewwel sejħilha "sabiħ", it-tieni barmil sejjaħlu "ħażin" u fakkultattiv jekk tridu jagħraf ismek, oħloq it-tielet tikketta li ssejjaħ "isem".',
+            'Ħarreġ il-mudell ġdid ta\' tagħlim awtomatiku, ittestjah u użah biex tagħmel Emobot fi Scratch.',
+            'Niedi l-editur Scratch 3, ħassar il-cat sprite, daħħal 3 sprites ġodda magħmula mill-Kreatur tal-Immaġni ta\' Microsoft Bing (cartoon tal-kompjuter ferħan, irrabbjat, u mhux ċert) jew oħloq sprite ġdid billi tikklikkja fuq l-ikona taż-Żebgħa billi tpinġi tliet kopji tal-kostum għal wiċċ ferħan, irrabbjat jew mhux ċert.',
+            'Ikklikkkja it-tab "Kodiċi" u daħħal l-iskritt li ġej.']
+        ,
+        'example' => [
+            "Aqsam l-emobot Kliki ma' ħbiebek u tgħallem aktar dwar l-IA u emozzjonijiet!",
+            "Minflok cartoon tal-komputer tista' tipprova xi ħaġa differenti, bħal annimal. Minflok ħanin u kattiv tista' tħarreġ il-karattru biex jagħraf tipi oħra ta' messaġġi.",
+        ],
+
+    ],
+    'craft-magic' => [
+        'title' => 'Oħloq maġija bil-mossi tal-Id tal-IA',
+        'author' => 'Georgia Lascaris',
+        'purposes' => [
+            'Biex tikkultiva ħiliet tal-ikkowdjar fost l-istudenti, li jħalluhom jużaw kmandijiet bażiċi.',
+            "Biex tiżviluppa ħiliet ta' ħsieb algoritmiċi billi tkisser kompiti kumplessi f'passi ġestjonabbli.",
+            "Biex tħeġġeġ soluzzjonijiet kreattivi ta' problemi fit-tfittxija ta' applikazzjonijiet uniċi ta' mossi bl-idejn għal tpinġija u kitba.",
+            "Biex trawwem fehim ta' kunċetti tal-IA, partikolarment kif l-IA tippermetti li kompjuters jagħrfu u jinterpretaw mossi bl-idejn.",
+            "Biex tqajjem għarfien dwar is-sinifikat ta' teknoloġija għal individwi b'diżabilitajiet.",
+            "Biex tippromwovi soluzzjonijiet kollaborattivi ta' problemi u ħidma f'tims fost studenti hekk kif jaħdmu flimkien biex itejbu l-programmi ta' mossi bl-idejn.",
+            "Biex tikkonettja ħiliet ta' ħsieb ta' kkowdjar u komputazzjonali ma' applikazzjoni ta' dinja reali u tenfazizza l-impatt sinfikattiv tat-tekoloġija fuq il-ħajjiet ta' persuna/i u tallinjhom mal-Għanjiet ta' Żvilupp Sostenibbli (SGDs)",
+        ],
+        'duration' => [
+            '90 min għal studenti 10-12',
+            '45 min għal studenti 12-15'
+        ],
+        'description' => 'Oħloq programm ibbażat fuq blokka Scratch billi tuża estensjoni IA "Ġisem Uman" b\'mod kreattiv u li jinvolvi sabiex tpinġi fuq skrin mingħajr il-bżonn ta\' mouse tradizzjonali jew touchscreen.',
+        'instructions' => [
+            "Ikkonnettja ma' https://ai.thestempedia.com u oħloq kontijiet għal għalliema u studenti.",
+            "Daħħal l-estensjonijiet 'Detezzjoni tal-Ġisem Uman', 'Pinna', 'Test għal Diskors'.",
+            "Żid il-Lapes 'Sprite mil-librerija u oħloq 7 sprites ('ikteb', 'ċar', 'iswed', 'aħmar', 'blu', 'aħdar', 'roża).",
+            "Ikteb kmandijiet biex tivverifika x'jiġri meta 'l-lapes' sprite imiss xi wieħed mill-isprites oħra.",
+            "Ikteb kmandijiet biex tippermetti li l-kamera tagħraf Mossa tal-Id u tmexxi l-lapes għal koordinati x u y tas-saba' l-werrej tiegħek.",
+            "Biddel il-kostum fit-tarf tar-romblu.",
+            "Żid effetti tal-ħoss.",
+        ],
+        'materials' => [
+            "Pjattaforma tal-ipprogrammar https://ai.thestempedia.com (b'xejn)",
+            "kont ta' għalliem (b'xejn)",
+            "kont ta' student (b'xejn)",
+            "Kompjuters b'kamera",
+            "Konnessjoni tal-internet",
+        ]
+    ],
+    'circle-of-dots' => [
+        'title' => 'Ċirku ta\' tikek',
+        'author' => 'Marin Popov',
+        'purposes' => [
+            "Biex tikteb kodiċi biex tagħmel linja ta' punti.",
+            "Biex tikteb kodiċi biex tagħmel linja ta' singijiet.",
+            "Biex tikteb kodiċi biex tpinġi ċirku.",
+            "Ikteb kodiċi biex tpinġi ċirku ta' tikek (singijiet).",
+        ],
+        'description' => 'Pinġi ċirku minn tikek jew singijiet.',
+        'duration' => '40 minuta',
+        'instructions' => [
+            "Bini ta' blokka ta' tikek.",
+            "Bini ta' blokka ta' tikek.",
+            "Kostruzzjoni ta' ċirku minn tikka.",
+            "Kostruzzjoni ta' ċirku minn sing.",
+        ]
+    ],
+    'coding-escape-room' => [
+        'title' => 'Oħloq kamra ta\' ħruġ tal-ikkowdjar',
+        'author' => 'Stefania Altieri u Elisa Baraghini',
+        'purposes' => [
+            'Biex tgħallem/titgħallem u tirrifletti dwar kunċetti tal-ikkowdjar.',
+            'Biex tuża għodda ta\' kkowdjar sempliċi.',
+            'Biex tiżviluppa ħsieb komputazzjonali u soluzzjoni ta’ problemi.'
+        ], 'description' => [
+            'Oħloq esperjenza ta\' ħruġ ta\' kkowdjar bħal dan:',
+            "Tista' tuża formoli google, b'mod dħuli, preżentazzjoni google, kull għodda biex toħloq rakkont ta' storja bbażata fuq ikkowdjar ;)."
+
+        ],
+        'duration' => '90 minuta',
+        'instructions' =>
+            "Tista' taqsam l-istudenti tiegħek fi grupp żgħir, jistgħu jilagħbu u wara joħolqu sfida bil-mudell:"
+        ,
+
+        'materials' => [
+            "Kull għodda tista' tintuża (pjattaformi Google u Microsoft biex toħloq u taqsam dokumenti, preżentazzjonijiet u folji). Kull mudell, għodda jew karattru tal-ikkowdjar marbut ma' ICT u kkowdjar."
+        ],
+        'example' => [
+            "Xi karattri li kellhom rwol importanti fl-istorja tal-ICT u kunċetti bażiċi tal-ikkowdjar u tal-programmazzjoni jiġu mdaħħla permezz tal-logħob. Dan hu l-aħjar mod li titgħallem u tipparteċipa b'mod attiv. Din il-logħba tista' tintlagħab f'tims jew b'mod individwali, bħala sfida jew kompetizzjoni. L-istudenti mbagħad jistgħu joħolqu xi ħaġa simili u jiżviluppaw kompetenzi bħal kreattività u ħiliet tal-ikkowdjar.",
+            "Dan hu riżors prattiku ħafna biex ikun intużat mill-ġdid u biex jinħoloq malajr mill-ġdid. Formoli ta' Google hi waħda mill-għodda possibbli. Tista' tuża wkoll l-islides ta' Google, Genial.ly jew Emaze jew kull għodda oħra li toħloq stejjer salib it-toroq u l-avventuri tiegħek stes",
+            "L-isfida tal-ħarba tinqasam f'sezzjonijiet. Jekk taqta', tista' tkompli. L-istudenti jridu joħolqu l-kwiżiż tal-ikkowdjar.",
+        ],
+    ],
+    'let-the-snake-run' => [
+        'title' => 'Ħalli s-serp jiġri',
+        'author' => 'Ágota Klacsákné Tóth',
+        'purposes' => [
+            'Biex tikkowdja l-moviment tas-serp/sriep fuq il-micro:bit tagħhom stess.',
+            'Biex tissettja l-post it-tajjeb u l-ħin għall-animazzjoni konġunta.'
+        ],
+        'description' => "L-istudenti jridu jiktbu kodiċi biex jinnavigaw is-serp mill-micro:bits ħdejn xulxin. Dan irid isir b'mod li jidher li s-serp qed jiġri minn micro:bit għall-ieħor.",
+        'duration' => '30 minuta',
+        'instructions' => [
+            'Fassal mogħdija li tgħaddi minn bosta micro:bits ħdejn xulxin (pereżempju li jagħmlu kaxxa 2x2).',
+            'Ikteb kodiċi hekk kif serp jimxi tul il-modgħija.',
+            'Aħdem fuq l-apparat tiegħek stess imbagħad poġġihom flimkien u agħmel il-kodiċi.',
+            'Qis il-ħin u t-tqegħid: Jekk is-serp joħroġ mill-micro:bit, ser jitfaċċa fuq il-micro:bit li jmiss.',
+            'Sfidi Addizzjonali: B\'micro:bit v2, doqq mużika sakemm is-serp jitlaq mill-apparat tiegħek.',
+            'Fassal is-serp billi tbiddel id-dija tal-LEDs.',
+            'Ipprova aktar ħin, jew aktar sriep.'
+        ],
+        'example' => [
+            'Dan hu eżempju għal serp twil b\'6 pixel b\'4 micro:bits li jiffurmaw kaxxa 2x2: ',
+            'Ikkowdja l-micro:bit tal-bidu (l-għalliema tista\' tagħmel dan)',
+            'Il-kodiċi kollha jinizjaw b\'dan il-micro:bit li jibgħat sinjal bir-radju lil micro:bits oħra meta tingħafas il-buttuna A.',
+            'Kodifikar tal-moviment serp',
+            'Kull micro:bit irid ikun fl-istess grupp ta\' radju li fih hemm il-micro:bit tal-bidu.',
+            'L-animazzjonijiet kollha jibdew meta jasal is-sinjal tar-radju.',
+            'L-animazzjoni tal-ewwel micro:bit tkun viżibbli fil-pront, l-oħrajn jistennew sakemm jasal hemm is-serp.',
+            'Il-ħin bejn iż-żewġ fażijiet jiddetermina l-veloċità tas-serp.',
+        ], 'materials' => [
+            'micro:bits (għal kull student jekk possibbli)',
+            'laptop jew kompjuter għal editur makecode.micro:bit.org'
+        ]
+    ],
+    'illustrate-a-joke' => [
+        'title' => 'Uri ċajta b\'bitsy',
+        'author' => 'Margot Schubert',
+        'purposes' => 'Biex tfassal logħoba żgħira fejn l-utent isib it-tweġiba għal mistoqsija ċajta.',
+        'description' => 'L-istudenti jfasslu logħoba fejn l-utent isib it-tweġiba għal mistoqsija ċajta meta l-figura tolqot oġġett fil-grawnd. L-istudenti jużaw karatteristiċi bażiċi ta\' bitsy biex jikkonkludu l-isfida.',
+        'instructions' => [
+            'Aħseb f\'mistoqsija ċajta. Mur għal bitsy u ibda proġett ġdid. Se jkollok bżonn:',
+            'avatar - sprite li tista\' ċċaqlaq',
+            'Qattus iswed fuq sfond vjola',
+            'Deskrizzjoni ġġenerata awtomatikament',
+            'oġġett li avatar irid imur lejnu',
+            'kamra - l-isfond tal-programm tiegħek',
+            'żewġ messaġġi: mistoqsija u tweġiba',
+            'Il-logħba li temmejt tista\' titniżżel bħala fajl html,'
+        ],
+        'example' => 'F\'din il-website ser tara eżempju ta\' ċajta u hemm ħolqa għal whiteboard diġitali:',
+        'materials' => 'bitsy taħdem fi brawżer'
+    ],
+    'app-that-counts-in-several-languages' => [
+        'title' => 'App li tgħodd f\'diversi lingwi',
+        'author' => 'Samuel Branco',
+        'purposes' => [
+            'Biex titgħallem kif toħloq app sempliċi',
+            'Biex titgħallem kif tipprogramma permezz ta\' blokki.',
+            'Biex titgħallem kif iżżid tikketti, buttuni, stampi, sensors u media.',
+            'Biex wieħed jitgħallem kif torganizza elementi fuq app fuq skrin.'
+        ],
+        'description' => 'L-app tħallik tgħodd f\'lingwi multipli billi tagħfas buttuna. Kull meta utent ixengel l-ismartphone, l-għadd imur lura għal żero. L-isfida hi li żżid lingwa oħra.',
+        'instructions' => [
+            'Biex tispiċċa l-isfida, trid tiddefinixxi l-lingwa l-oħra li biha trid l-app tgħodd.',
+            'Imbagħad trid tniżżel mill-internet (pereżempju minn Pixybay jew Unsplash) il-bandiera ta\' dak il-pajjiż u ttellagħha fil-pjattaforma inventatur MIT APP permezz tal-element li jissejjaħ bandiera fil-proprjetà Stampa.',
+            'Wara trid issib kif jinkiteb l-isem tal-pajjiż bl-Ingliż u kif tgħid ħalli u agħfasni fil-lingwa ta\' dak il-pajjiż.',
+            'Fl-aħħarnett, trid iżżid il-blokki neċessarji biex l-app jaħdem fil-lingwa l-ġdida.',
+        ],
+        'materials' => [
+            'Biex tiżviluppa app trid kompjuter jew laptop b\'aċċess għall-internet.',
+            'Oħloq kont fil-pjattaforma inventatur, aċċessibbli permezz tal-https://ai2.appinventor.mit.edu',
+            'Hemm bżonn ukoll tinstalla l-app Sieħeb MIT AI2 fuq l-ismartphone sabiex tittestja l-applikazzjoni żviluppata.'
+        ]
+    ],
+    'coding-with-art-through-storytelling' => [
+        'title' => 'Ikkowdjar bl-arti permezz ta\' Rakkontar ta\' Stejjer',
+        'author' => 'Maria Tsapara u Anthi Arkouli',
+        'purposes' => [
+            'Biex tikkultiva ħiliet ta\' osservazzjoni, interpretazzjoni, u tagħmel mistoqsijiet permezz ta\' impenn mal-arti.',
+            'Biex tkun kreattiv u tikkollabora ma\' oħrajn għal għan komuni',
+            'Biex toħloq algoritmu sabiex terġa\' tirrakkonta l-istorja.',
+        ],
+        'description' => 'F\'din l-isfida l-istudenti ser ikunu ispirati minn xogħol tal-arti, joħolqu storja u jpinġuha. Imbagħad ser jippruvaw jerġgħu jirrakkuntaw l-istorja billi jużaw kitt robotiku programmabbli/jew attività mhux ipplaggjata.',
+        'materials' => [
+            'Din l-attività tista\' tkun implimentata bħala attivita mhux ipplaggjata jew billi tuża robot edukattiv programmabbli bħal beebot/bluebot/mouse robot.',
+            'kards beebot vleġġa jew kards vleġġa għall-attività mhux ipplaggjata',
+            'bil-Grieg',
+            'Sabiex titgħallem aktar għall-Proġett Żero/Kaxxa tal-Għodda ta\' Rutina tal-Ħsieb, tista\' żżur'
+
+        ],
+        'example' => [
+            'L-għalliema jaħdmu mal-istudenti biex jimmudellaw kif jiddissinjaw algoritmu b\'kards li ser jipprovdu struzzjonijiet għall-Bee-Bot jew robot ieħor biex jasal għall-ewwel avveniment tal-istorja fuq it-tapit. L-istudenti jaħdmu f\'tims ta\' 3-4 biex jiddissinjaw algoritmu biex ir-robot imur għas-sekwenza li jmiss. L-istudenti jittestjaw l-algoritmi tagħhom fuq it-tapit tal-klassi u jneħħu d-difetti, jekk ikun hemm bżonn.',
+            'Huma jkomplu jimxu f\'kemm jistgħu avvenimenti tal-istorja',
+            'Din l-attività tista\' tkun implimentata wkoll bħala attivita mhux ipplaggjata.',
+            'Tifel/tifla tkun ir-robot - tifel/tifla ieħor/oħra il-programmatur. Il-programmatur joħloq mogħdija algoritmika billi juża l-kards vleġġa sabiex jgħin lir-robot jimxi minn stampa għall-oħra u jerġa\' jirrakkonta l-istorja. Kull darba li r-robot ikun fl-istampa, ser jistaqsuh jirrakkonta parti mill-istorja.',
+        ],
+        'instructions' => [
+            'L-għalliema jistaqsu lill-istudenti biex josservaw tpinġija/ritratt.',
+            'Huma jużaw ir-rutina tal-ħsieb "Bidu, Nofs, Tmiem" (Proġett Żero tal-Iskola Harvard) sabiex joħolqu storja.',
+            'L-għalliema jistaqsuhom "Jekk dan ix-xogħol tal-arti hu l-bidu/nofs/tmiem ta\' storja, x\'jista\' jiġri wara/qabel/fl-aħħar?',
+            'L-istudenti juru l-avvenimenti tal-istorja.',
+            'Studenti jiftakru l-istorja u jpoġġu l-avvenimenti fuq il-grilja. Permezz tal-użu ta\' kards vleġġa, huma joħolqu algoritmu li jgħin lil beebot jerġa\' jirrakkonta l-istorja.'
+        ],
+    ],
+    'coding-with-legoboost' => [
+        'title' => 'Ikkowdjar u l-ipprogrammar u programmazzjoni bl-estensjoni Scratch ta\' LegoBoost',
+        'author' => 'Lidia Ristea',
+        'purposes' => [
+            'biex tibni mudelli bl-użu ta\' LegoBoost.',
+            'biex tiżviluppa ħiliet ta\' pprogrammar fi Scratch.',
+            'biex tipprogramma robots bl-użu ta\' kmandijiet minn sempliċi għal kumplessi.'
+        ],
+        'description' => 'F\'din l-isfida, l-istudenti ser jużaw l-estensjoni LegoBoost ta\' Scratch u jdaħħlu kodiċi fl-applikazzjoni biex ir-robots jimxu \'l quddiem, lura, jevitaw ostakli u kmandijiet bil-vuċi.',
+        'duration' => '120 minuta',
+        'instructions' => [
+            "Illoggja fl-applikazzjoni 'Scratch,mit.edu.",
+            "Niedi l-Ħolqa Scratch u attiva l-Bluetooth fuq il-Laptop.",
+            "Ikklikkja Żid Estensjoni minn Scratch u agħżel LegoBoost.",
+            "Żid stampa dwar il-Ġimgħa tal-UE tal-Ikkowdjar",
+            "Issettja ż-żewġ muturi AB għal IXGĦEL u meta tiltaqa' ma' ostaklu aħmar, għal ITFI.",
+            "Meta l-kulur aħdar fuq il-mutur A jkun MIXGĦUL, fil-kulur iswed fil-mutur B jkun MIXGĦUL.",
+            "Ostakli ħodor, ħomor u suwed ser jitpoġġew fi triq.",
+            "Żid ordnijiet għal moviment u dawriet minn vleġeġ u test għal diskors meta tiltaqa' ma' ostaklu.",
+            'ittestjah!'
+        ]
+    ]
+
+
 ];
