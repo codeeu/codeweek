@@ -806,7 +806,7 @@ return [
         ],
         'materials' => [
             'Programėlei sukurti reikia stalinio arba nešiojamojo kompiuterio su interneto ryšiu.',
-            'Sukurkite paskyrą platformoje „MIT APP Inventor“, kurią rasite svetainėje https://ai2.appinventor.mit.edu.',
+            'Sukurkite paskyrą platformoje „MIT APP Inventor“, kurią rasite svetainėje <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>.',
             'Tam, kad sukurtą programėlę būtų galima išbandyti, į išmanųjį telefoną reikia įdiegti programėlę „MIT AI2 Companion“.'
         ]
     ],

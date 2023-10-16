@@ -808,7 +808,7 @@ return [
         ],
         'materials' => [
             "Za razvoj aplikacije potrebno vam je računalo ili prijenosno računalo s pristupom internetu.",
-            "Izradite račun na platformi MIT APP Inventor kojoj se može pristupiti putem stranice https://ai2.appinventor.mit.edu.",
+            "Izradite račun na platformi MIT APP Inventor kojoj se može pristupiti putem stranice <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>.",
             "Također je potrebno instalirati aplikaciju MIT AI2 Companion na pametni telefon kako biste testirali razvijenu aplikaciju.",
         ]
     ],

@@ -808,7 +808,7 @@ return [
         ],
         'materials' => [
             'Aby stworzyć aplikację, potrzebujesz komputera lub laptopa z dostępem do Internetu . ',
-            'Utwórz konto na platformie MIT APP Inventor, dostępnej pod adresem https://ai2.appinventor.mit.edu',
+            'Utwórz konto na platformie MIT APP Inventor, dostępnej pod adresem <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>',
             'Konieczne jest również zainstalowanie aplikacji MIT AI2 Companion na smartfonie w celu przetestowania stworzonej aplikacji',
         ]
     ],
