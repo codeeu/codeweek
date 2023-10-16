@@ -5,13 +5,13 @@
 @section('content')
 
     @php
-        $slug = 'craft-magic'
+        $slug = 'app-that-counts-in-several-languages'
     @endphp
 
     <section id="codeweek-schools-page" class="codeweek-page">
 
 
-        <section class="flex flex-row justify-between" style="background-color: #F5B740">
+        <section class="flex flex-row justify-between" style="background-color: #3EB4D0">
             <div class="flex justify-center items-center w-full">
                 <div class="text-center m-12">
                     <div class="text-xl text-white w-full"><a class="text-black"
@@ -40,39 +40,37 @@
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.target-audience')</div>
                         <ol class="list-disc ml-5">
-                            <li>@lang('challenges-content.common.audience.0')</li>
-                            <li>@lang('challenges-content.common.audience.1')</li>
+
                             <li>@lang('challenges-content.common.audience.2')</li>
+                            <li>@lang('challenges-content.common.audience.3')</li>
 
                         </ol>
                     </div>
 
-                    <div>
-                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
-                        <ol class="list-disc ml-5">
-                            <li>@lang('challenges.common.intermediate')</li>
-                        </ol>
-                    </div>
+
+
+
 
                     <div>
-                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
+
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
                         <ol class="list-disc ml-5">
-                            <li>@lang("challenges-content.$slug.duration.0")</li>
-                            <li>@lang("challenges-content.$slug.duration.1")</li>
+                            <li>@lang("challenges-content.$slug.purposes.0")</li>
+                            <li>@lang("challenges-content.$slug.purposes.1")</li>
+                            <li>@lang("challenges-content.$slug.purposes.2")</li>
+                            <li>@lang("challenges-content.$slug.purposes.3")</li>
+
+
                         </ol>
+
                     </div>
 
                     <div>
                         <div class="text-xl text-left text-blue-600">@lang('challenges.common.materials')</div>
                         <ol class="list-disc ml-5">
-                            <li><a href="https://ai.thestempedia.com">@lang("challenges-content.$slug.materials.0")</a>
-                            </li>
-                                    <li class="ml-4">@lang("challenges-content.$slug.materials.1")</li>
-                                    <li class="ml-4">@lang("challenges-content.$slug.materials.2")</li>
-
-
-                            <li>@lang("challenges-content.$slug.materials.3")</li>
-                            <li>@lang("challenges-content.$slug.materials.4")</li>
+                            <li>@lang("challenges-content.$slug.materials.0")</li>
+                            <li>@lang("challenges-content.$slug.materials.1")</li>
+                            <li>@lang("challenges-content.$slug.materials.2")</li>
 
 
                         </ol>
@@ -84,42 +82,20 @@
 
 
                     <div>
-
-                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.purpose')</div>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.duration')</div>
                         <ol class="list-disc ml-5">
-                            <li>@lang("challenges-content.$slug.purposes.0")</li>
-                            <li>@lang("challenges-content.$slug.purposes.1")</li>
-
-
+                            <li>@lang('challenges.common.1-hour')</li>
                         </ol>
-
-                    </div>
-                    <div>
-
-                        <ol class="list-disc ml-5 mt-8">
-                            <li>@lang("challenges-content.$slug.purposes.2")</li>
-                            <li>@lang("challenges-content.$slug.purposes.3")</li>
-
-                        </ol>
-
                     </div>
 
                     <div>
-
-                        <ol class="list-disc ml-5 mt-8">
-                            <li>@lang("challenges-content.$slug.purposes.4")</li>
-                            <li>@lang("challenges-content.$slug.purposes.5")</li>
+                        <div class="text-xl text-left text-blue-600">@lang('challenges.common.experience')</div>
+                        <ol class="list-disc ml-5">
+                            <li>@lang('challenges.common.intermediate')</li>
                         </ol>
-
                     </div>
 
-                    <div>
 
-                        <ol class="list-disc ml-5 mt-8">
-                            <li>@lang("challenges-content.$slug.purposes.6")</li>
-                        </ol>
-
-                    </div>
 
 
                 </section>
@@ -145,14 +121,10 @@
                             <ul class="leading-7 ml-2 checklist mt-2">
 
 
-                                <li><a href="https://ai.thestempedia.com">@lang("challenges-content.$slug.instructions.0")</a></li>
+                                <li>@lang("challenges-content.$slug.instructions.0")</li>
                                 <li>@lang("challenges-content.$slug.instructions.1")</li>
                                 <li>@lang("challenges-content.$slug.instructions.2")</li>
                                 <li>@lang("challenges-content.$slug.instructions.3")</li>
-                                <li>@lang("challenges-content.$slug.instructions.4")</li>
-                                <li>@lang("challenges-content.$slug.instructions.5")</li>
-                                <li>@lang("challenges-content.$slug.instructions.6")</li>
-
 
 
                             </ul>
@@ -166,7 +138,10 @@
                         <div class="orange text-3xl">@lang('challenges.common.example')</div>
 
                         <div class="mt-2">
-                            <img src="{{asset('img/2021/challenges/craft-magic-example.png')}}"/>
+
+                            <img width="400px" src="{{asset('img/2021/challenges/app-that-counts-in-several-languages-1.png')}}"/>
+
+
                         </div>
 
 

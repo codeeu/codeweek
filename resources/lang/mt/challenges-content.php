@@ -813,7 +813,7 @@ return [
         ],
         'materials' => [
             'Biex tiżviluppa app trid kompjuter jew laptop b\'aċċess għall-internet.',
-            'Oħloq kont fil-pjattaforma inventatur, aċċessibbli permezz tal-https://ai2.appinventor.mit.edu',
+            'Oħloq kont fil-pjattaforma inventatur, aċċessibbli permezz tal-<a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>',
             'Hemm bżonn ukoll tinstalla l-app Sieħeb MIT AI2 fuq l-ismartphone sabiex tittestja l-applikazzjoni żviluppata.'
         ]
     ],

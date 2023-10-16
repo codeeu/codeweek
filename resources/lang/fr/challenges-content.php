@@ -807,7 +807,7 @@ return [
         ],
         'materials' => [
     "Pour développer une application, tu auras besoin d’un ordinateur de bureau ou d’un ordinateur portable avec un accès à Internet.",
-            "Crée un compte sur la plateforme MIT APP Inventor, accessible au lien suivant: https://ai2.appinventor.mit.edu",
+            "Crée un compte sur la plateforme MIT APP Inventor, accessible au lien suivant: <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>",
             "Il te faudra également installer l’application MIT AI2 Companion sur ton smartphone afin de tester l’application développée."
         ]
     ],

@@ -804,7 +804,7 @@ return [
     ],
     'materials' => [
         'Lietotnes izstrādei tev būs nepieciešams dators vai klēpjdators ar interneta pieslēgumu.',
-        'Izveido kontu MIT APP Inventor platformā, piekļūstot tai šajā adresē: https://ai2.appinventor.mit.edu',
+        'Izveido kontu MIT APP Inventor platformā, piekļūstot tai šajā adresē: <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>',
         'Ir nepieciešams instalēt arī MIT AI2 Companion lietotni viedtālrunī, lai testētu izstrādāto lietotni.'
     ]
 ],
