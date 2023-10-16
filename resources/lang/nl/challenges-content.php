@@ -808,7 +808,7 @@ return [
         ],
         'materials' => [
             'Om een app te ontwikkelen heb je een computer of laptop met internettoegang nodig.',
-            'Maak een account aan op het platform MIT APP Inventor, te bereiken via https://ai2.appinventor.mit.edu',
+            'Maak een account aan op het platform MIT APP Inventor, te bereiken via <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>',
             'Het is ook nodig om de MIT AI2 Companion-app op de smartphone te installeren om de ontwikkelde applicatie te testen.'
         ]
     ],

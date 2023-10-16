@@ -809,7 +809,7 @@ return [
         ],
         'materials' => [
             'Bir uygulama geliştirmek için internet erişimi olan bir masaüstü veya dizüstü bilgisayarınız olmalıdır.',
-            'https://ai2.appinventor.mit.edu üzerinden erişilebilen MIT APP Inventor platformunda bir hesap açın',
+            '<a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a> üzerinden erişilebilen MIT APP Inventor platformunda bir hesap açın',
             'Geliştirdiğiniz uygulamayı test etmek için akıllı telefonunuza MIT AI2 Companion uygulamasını kurmanız gerekmektedir.'
         ]
     ],

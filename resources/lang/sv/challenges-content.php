@@ -804,7 +804,7 @@ return [
     ],
     'materials' => [
         'För att utveckla en app behöver du en dator eller laptop med internetanslutning.',
-        'Skapa ett konto på plattformen MIT APP Inventor, som du kommer åt via https://ai2.appinventor.mit.edu',
+        'Skapa ett konto på plattformen MIT APP Inventor, som du kommer åt via <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>',
         'Du behöver också installera appen MIT AI2 Companion på den smartphone som du använder för att testa den utvecklade appen.'
     ]
 ],

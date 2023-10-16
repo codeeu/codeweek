@@ -584,6 +584,10 @@ $challenges =  function () {
     Route::view('coding-escape-room','2021.challenges.coding-escape-room')->name('challenges.coding-escape-room');
     Route::view('let-the-snake-run','2021.challenges.let-the-snake-run')->name('challenges.let-the-snake-run');
     Route::view('illustrate-a-joke','2021.challenges.illustrate-a-joke')->name('challenges.illustrate-a-joke');
+    Route::view('app-that-counts-in-several-languages','2021.challenges.app-that-counts-in-several-languages')->name('challenges.app-that-counts-in-several-languages');
+    Route::view('coding-with-art-through-storytelling','2021.challenges.coding-with-art-through-storytelling')->name('challenges.coding-with-art-through-storytelling');
+    Route::view('coding-with-legoboost','2021.challenges.coding-with-legoboost')->name('challenges.coding-with-legoboost');
+    Route::view('air-drawing-with-AI','2021.challenges.air-drawing-with-AI')->name('challenges.air-drawing-with-AI');
 };
 
 Route::group(['prefix' => '2021/challenges'], $challenges);

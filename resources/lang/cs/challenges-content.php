@@ -803,7 +803,7 @@ return [
         ],
         'materials' => [
             'K vytvoření aplikace budete potřebovat počítač nebo notebook s přístupem na internet . ',
-            'Vytvořte si na platformě MIT APP Inventor na stránce https://ai2.appinventor.mit.edu účet.',
+            'Vytvořte si na platformě MIT APP Inventor na stránce <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a> účet.',
             'Také je nezbytné nainstalovat si na chytrém telefonu aplikaci MIT AI2 Companion, aby bylo možné vytvořenou aplikaci otestovat.'
         ]
     ],

@@ -807,7 +807,7 @@ return [
         ],
         'materials' => [
             'For at udvikle en app skal man bruge en bærbar eller stationær computer med internetadgang.',
-            'Opret en konto på MIT APP Inventor-platformen på https://ai2.appinventor.mit.edu',
+            'Opret en konto på MIT APP Inventor-platformen på <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>',
             'Man skal også installere MIT AI2 Companion-appen på smartphonen, så man kan teste den udviklede applikation.'
         ]
     ],

@@ -800,7 +800,7 @@ return [
         ],
         'materials' => [
             'Za razvoj aplikacije, potreban vam je računar ili laptop sa pristupom internetu.',
-            'Napravite nalog na platformi MIT APP Inventor, kojoj možete pristupiti sa adrese https://ai2.appinventor.mit.edu',
+            'Napravite nalog na platformi MIT APP Inventor, kojoj možete pristupiti sa adrese <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>',
             'Takođe je neophodno instalirati aplikaciju MIT AI2 Companion na pametni telefon kako biste testirali razvijenu aplikaciju.'
         ]
     ],

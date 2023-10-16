@@ -802,7 +802,7 @@ return [
         ],
         'materials' => [
             'Pentru a dezvolta o aplicație ai nevoie de un calculator sau de un laptop cu acces la internet . ',
-            'Creează un cont pe platforma MIT APP Inventor, accesibilă prin intermediul https://ai2.appinventor.mit.edu',
+            'Creează un cont pe platforma MIT APP Inventor, accesibilă prin intermediul <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>',
             'De asemenea, este necesară instalarea aplicației MIT AI2 Companion pe smartphone, pentru a testa aplicația dezvoltată.'
         ]
     ],
