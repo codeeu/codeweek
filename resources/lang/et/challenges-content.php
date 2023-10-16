@@ -804,7 +804,7 @@ return [
         ],
         'materials' => [
             'Rakenduse loomiseks on vaja internetiühendusega laua- või sülearvutit.',
-            'Looge konto MIT APP Inventori platvormil, millele on ligipääs veebilehelt https://ai2.appinventor.mit.edu',
+            'Looge konto MIT APP Inventori platvormil, millele on ligipääs veebilehelt <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>',
             'Samuti tuleb nutitelefoni installida rakendus MIT AI2 Companion, et loodud rakendust testida.'
         ]
     ],

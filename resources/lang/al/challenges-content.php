@@ -801,7 +801,7 @@ return [
     ],
     'materials' => [
         'Për të zhvilluar një aplikacion ju duhet një kompjuter ose një laptop me qasje në internet.',
-        'Krijoni një llogari në platformën e APLIKACIONIT MIT Inventor, të arritshme përmes https://ai2.appinventor.mit.edu',
+        'Krijoni një llogari në platformën e APLIKACIONIT MIT Inventor, të arritshme përmes <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>',
         'Është gjithashtu e nevojshme të instalohet aplikacioni MIT AI2 Companion në smartphone në mënyrë që të testohet aplikacioni i zhvilluar.'
     ]
 ],

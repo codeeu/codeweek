@@ -849,7 +849,7 @@ return [
         ],
         'materials' => [
             'To develop an app you need a computer or a laptop with internet access.',
-            'Create an account on the MIT APP Inventor platform, accessible through the https://ai2.appinventor.mit.edu',
+            'Create an account on the MIT APP Inventor platform, accessible through the <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>',
             'It is also necessary to install the MIT AI2 Companion app on the smartphone in order to test the developed application.'
         ]
     ],
@@ -903,6 +903,15 @@ return [
             'Green, red and black obstacles will be placed on a route.',
             'Add commands for movement and turns from arrows and text-to-speech when encountering an obstacle.',
             'Test it!'
+        ],
+        'example' => [
+            'The students will program the robots by rotation and enter commands in the Legoboost android application, to avoid obstacles, to launch with the spring, to stop at the red color and to emit a sound signal. On the Laptop, starting from the example presented and the sequences in the attached file, the students will program the robots where they will introduce:',
+            'commands for moving forward, backward, left, right using the arrows,',
+            'avoiding obstacles, stopping at a certain color',
+            'a 3 m route will be set up and a variable will be created "timer" = 30 s,',
+            'text to speech (Scratch extension), when it encounters an obstacle.',
+            'if in 30 s the robot avoids the obstacles and it reaches at the end, It add text in speech "I succeeded" else , I have to practice again.',
+            'save with the name "LegoBoost extension" and share with the colleagues. ',
         ]
     ]
 ];

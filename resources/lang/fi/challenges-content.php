@@ -801,7 +801,7 @@ return [
         ],
         'materials' => [
             'Sovelluksen kehittämiseen tarvitset tietokoneen, jossa on internetyhteys.',
-            'Luo tili MIT APP Inventor -alustalla, jonne pääsee osoitteessa https://ai2.appinventor.mit.edu.',
+            'Luo tili MIT APP Inventor -alustalla, jonne pääsee osoitteessa <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>.',
             'Harjoitusta varten pitää myös asentaa MIT AI2 Companion -sovellus älypuhelimeen, jotta kehitettyä sovellusta pääsee testaamaan.'
         ]
     ],

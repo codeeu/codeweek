@@ -807,7 +807,7 @@ return [
         ],
         'materials' => [
             "Egy adott alkalmazás fejlesztéséhez internet-hozzáféréssel rendelkező számítógépre vagy laptopra van szüksége .",
-            "Hozzon létre egy fiókot az MIT APP Inventor platformon, amely a https://ai2.appinventor.mit.edu oldalon érhető el",
+            "Hozzon létre egy fiókot az MIT APP Inventor platformon, amely a <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a> oldalon érhető el",
             "Az MIT AI2 Companion alkalmazást is telepíteni kell az okostelefonra a kifejlesztett alkalmazás teszteléséhez."
         ]
     ],
