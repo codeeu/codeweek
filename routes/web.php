@@ -578,6 +578,16 @@ $challenges =  function () {
     Route::view('personal-trainer','2021.challenges.personal-trainer')->name('challenges.personal-trainer');
     Route::view('create-a-spiral','2021.challenges.create-a-spiral')->name('challenges.create-a-spiral');
     Route::view('play-against-ai','2021.challenges.play-against-ai')->name('challenges.play-against-ai');
+    Route::view('emobot-kliki','2021.challenges.emobot-kliki')->name('challenges.emobot-kliki');
+    Route::view('craft-magic','2021.challenges.craft-magic')->name('challenges.craft-magic');
+    Route::view('circle-of-dots','2021.challenges.circle-of-dots')->name('challenges.circle-of-dots');
+    Route::view('coding-escape-room','2021.challenges.coding-escape-room')->name('challenges.coding-escape-room');
+    Route::view('let-the-snake-run','2021.challenges.let-the-snake-run')->name('challenges.let-the-snake-run');
+    Route::view('illustrate-a-joke','2021.challenges.illustrate-a-joke')->name('challenges.illustrate-a-joke');
+    Route::view('app-that-counts-in-several-languages','2021.challenges.app-that-counts-in-several-languages')->name('challenges.app-that-counts-in-several-languages');
+    Route::view('coding-with-art-through-storytelling','2021.challenges.coding-with-art-through-storytelling')->name('challenges.coding-with-art-through-storytelling');
+    Route::view('coding-with-legoboost','2021.challenges.coding-with-legoboost')->name('challenges.coding-with-legoboost');
+    Route::view('air-drawing-with-AI','2021.challenges.air-drawing-with-AI')->name('challenges.air-drawing-with-AI');
 };
 
 Route::group(['prefix' => '2021/challenges'], $challenges);

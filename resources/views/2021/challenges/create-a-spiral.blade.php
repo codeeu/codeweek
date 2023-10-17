@@ -32,7 +32,7 @@
         <section class="codeweek-content-wrapper">
             <div class="m-6">
 
-                @include('2021.challenges._author', ['author' => 'Álvaro Molina Ayuso'])
+                @include('2021.challenges._author', ['author' => __("challenges-content.$slug.author")])
 
                 <section class="grid grid-cols-1 gap-6 md:grid-cols-4 mx-6 my-4">
 

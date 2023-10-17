@@ -9,7 +9,6 @@
         @foreach($languages as $lang)
             @if($lang === $locale)
                 <a href="https://codeweek-s3.s3-eu-west-1.amazonaws.com/docs/toolkits/2023/communications-toolkit-2023-{{strtoupper($lang)}}.zip">@lang('base.languages.' . $lang)</a>
-
             @endif
         @endforeach
 
