@@ -155,7 +155,7 @@
                     @if($locale !== 'me')
                     Click <a class="uppercase text-blue-800 underline" href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2023/{{strtolower($locale)}}_escape_coding.docx">HERE</a> to download the questions for the escape room in your language as a word document.<br/>
                     @endif
-                    @lang('challenges.download.0') <a href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2023/$slug.docx" class="uppercase text-blue-800 underline">@lang('challenges.download.1')</a> @lang('challenges.download.2').
+                    @lang('challenges.download.0') <a href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2023/{{$slug}}.docx" class="uppercase text-blue-800 underline">@lang('challenges.download.1')</a> @lang('challenges.download.2').
 
                 </div>
 
