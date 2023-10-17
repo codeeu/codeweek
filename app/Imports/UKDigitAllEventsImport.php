@@ -32,8 +32,6 @@ class UKDigitAllEventsImport extends DefaultValueBinder implements
      * @return \Illuminate\Database\Eloquent\Model|null
      */
     public function model(array $row) {
-//        dd($this->parseDate($row['start_date']));
-//        dd($row);
         $event = new Event([
             'status' => 'APPROVED',
             'title' => $row['activity_title'],
@@ -68,11 +66,11 @@ class UKDigitAllEventsImport extends DefaultValueBinder implements
                 ->audiences()
                 ->attach(explode(',', $row['audience_comma_separated_ids']));
         }
-//        if ($row['theme_comma_separated_ids']) {
-//            $event
-//                ->themes()
-//                ->attach(explode(',', $row['theme_comma_separated_ids']));
-//        }
+        if ($row['theme_comma_separated_ids']) {
+            $event
+                ->themes()
+                ->attach(explode(',', $row['theme_comma_separated_ids']));
+        }
 
         Log::info($event->slug);
         return $event;
