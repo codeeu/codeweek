@@ -117,7 +117,7 @@
                                     $languages = explode(",",config("codeweek.LOCALES"));
                                       $locale = app()->getLocale();
                                 @endphp
-                                @if($locale !== 'en' && $locale !== 'me')
+                                @if($locale !== 'me')
                                     <div>
                                         <a href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2023/{{strtolower($locale)}}_escape_coding.docx">WORD
                                             DOCUMENT</a>
@@ -151,7 +151,15 @@
 
                 </div>
 
-                @include('2021.challenges._download',['url'=>"https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2023/$slug.docx"])
+                <div class="justify-center bg-blue-200 p-2 mt-6">
+                    @if($locale !== 'me')
+                    Click <a class="uppercase text-blue-800 underline" href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2023/{{strtolower($locale)}}_escape_coding.docx">HERE</a> to download the questions for the escape room in your language as a word document.<br/>
+                    @endif
+                    @lang('challenges.download.0') <a href="https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2023/$slug.docx" class="uppercase text-blue-800 underline">@lang('challenges.download.1')</a> @lang('challenges.download.2').
+
+                </div>
+
+{{--                @include('2021.challenges._download',['url'=>"https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2023/$slug.docx"])--}}
             </div>
             <div style="text-align: center">@include('include.licence')</div>
         </section>
