@@ -50,9 +50,32 @@
                         @php
                             $currentDate = \Carbon\Carbon::now();
                         @endphp
-                        {{--                        @if (strtotime($currentDate) >= strtotime(\Carbon\Carbon::create(2023,10,9)))--}}
+
+
+                        @if (strtotime($currentDate) >= strtotime(\Carbon\Carbon::create(2023,10,20)))
+                            @include('2021._thumbnail', ['slug' => 'air-drawing-with-AI', 'author'=>'Kristina Slišurić'])
+                        @endif
+
+                        @if (strtotime($currentDate) >= strtotime(\Carbon\Carbon::create(2023,10,19)))
+                            @include('2021._thumbnail', ['slug' => 'coding-with-legoboost', 'author'=>'Lidia Ristea'])
+                        @endif
+
+                        @if (strtotime($currentDate) >= strtotime(\Carbon\Carbon::create(2023,10,18)))
+                            @include('2021._thumbnail', ['slug' => 'coding-with-art-through-storytelling', 'author'=>'Maria Tsapara and Anthi Arkouli'])
+                        @endif
+
+                        @if (strtotime($currentDate) >= strtotime(\Carbon\Carbon::create(2023,10,17)))
+                            @include('2021._thumbnail', ['slug' => 'app-that-counts-in-several-languages', 'author'=>'Samuel Branco'])
+                        @endif
+
+
+                        @include('2021._thumbnail', ['slug' => 'illustrate-a-joke', 'author'=>'Margot Schubert'])
+                        @include('2021._thumbnail', ['slug' => 'let-the-snake-run', 'author'=>'Ágota Klacsákné Tóth'])
+                        @include('2021._thumbnail', ['slug' => 'coding-escape-room', 'author'=>'Stefania Altieri and Elisa Baraghini'])
+                        @include('2021._thumbnail', ['slug' => 'circle-of-dots', 'author'=>'Marin Popov'])
+                        @include('2021._thumbnail', ['slug' => 'craft-magic', 'author'=>'Georgia Lascaris'])
+                        @include('2021._thumbnail', ['slug' => 'emobot-kliki', 'author'=>'Margareta Zajkova'])
                         @include('2021._thumbnail', ['slug' => 'play-against-ai', 'author'=>'Kristina Slišurić'])
-                        {{--                        @endif--}}
                         @include('2021._thumbnail', ['slug' => 'create-a-spiral', 'author'=>'Lydie El-Halougi'])
 
 

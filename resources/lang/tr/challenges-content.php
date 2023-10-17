@@ -489,13 +489,382 @@ return [
         ],
 
     ]
+,    'common' => [
+        'share' => 'Projenizin bağlantısını veya kare kodunu Instagram\’da ya da Facebook\’ta paylaşın, #CodeWeekChallenge hashtag\’ini ekleyin ve @CodeWeekEU hesabını etiketlemeyi unutmayın.',
+        'audience' => [
+            'Öğretmenler ve eğitmenler',
+            'İlkokul öğrencileri (6-12 yaş)',
+            'Ortaokul öğrencileri (12-16 yaş)',
+            'Lise öğrencileri (16-18 yaş)'
+        ],
+    ],
+    'code-a-dice' => [
+        'title' => 'Zar atma oyunu kodlama',
+        'author' => 'Fabrizia Agnello',
+        'purposes' => [
+            'İnteraktif bilmeceler kodlama',
+            'Gerçek nesne mevcut olmadığında kullanılacak olan rastgele hareket eden bir nesne simülasyonu kodlamak'
+        ],
+        'description' =>
+            'Bu mücadelede, komut verdiğinizde rastgele atılacak olan bir zar kodlayacaksınız. Tıpkı rol yapma oyunlarında kullanılanlar gibi dilediğiniz sayıda yüze sahip herhangi türde bir zar seçebilir ve ses ekleyebilirsiniz. ',
+        'instructions' => [
+            'Scratch üzerinde oturum açın',
+            'Bir arka fon seçin',
+            'Zar kuklanızı oluşturun veya web üzerinden bulduğunuz kuklayı programa yükleyin',
+            'Bu kukla için her biri farklı bir sayıyı gösterecek şekilde, seçilen zarın yüzlerinin sayısı kadar kostüm oluşturun',
+            'Zarın ne şekilde atılmasını (klavyede bir tuşa basarak, kuklaya tıklayarak vb.) istediğinizi belirleyin ve kodu yazın',
+            'Zar atıldıktan sonra kostüm rastgele değişecek şekilde kuklayı kodlayın',
+            'Ses efektleri ekleyin',
+        ],
+        'example' => '20 yüzlü zar atma'
+    ],
+    'personal-trainer' => [
+        'title' => 'micro:bit ile kişisel antrenör',
+        'author' => '',
+        'purposes' => [
+            'micro:bit kodlayarak sesli uyarıcı ve ışıklı panel kullanmak',
+            'Fiziksel aktiviteleri kontrol etmek üzere kişisel bir cihaz oluşturmak',
+            'Spor yaparak sağlıklı olmak amacıyla micro:bit kodlamak',
+        ],
+        'description' =>
+            'Bu mücadelede, dinlenme süresiyle birlikte fiziksel egzersiz tekrar sayılarını kontrol etmek üzere micro:bit kodlayacaksınız. Bu sayede okulda, evde veya parkta fiziksel aktivitelerinizi takip edebilirsiniz.'
+        ,
+        'instructions' => [
+            'A+B olduğunda, her saniyede bir ses çıkaracak ve ardından ekranda BAŞLA! yazısı gösterilecek şekilde 3 saniyelik geri sayım sayacı oluşturun',
+            'İlk egzersizde, 20 saniye boyunca yanıp sönen 2x2 boyutlarında bir kare gösterin. Ardından ses çalsın ve kare yanıp sönmeyi durdursun. Kalan zamanda 10 saniye boyunca yanıp sönen başka bir görüntü gösterin. Süre dolduğunda ses çalsın.',
+            'Ardından aynı işlemi tekrarlayın, fakat bu kez egzersiz süresi boyunca 3x3 boyutlarında bir panel gösterin. 5x5 panel gösterilene dek bu işlemleri tekrarlayın.',
+        ],
+        'duration' => '30-40 dakika'
+    ],
+    'create-a-spiral' => [
+        'title' => 'Sarmal oluşturma',
+        'author' => 'Lydie El-Halougi',
+        'purposes' => [
+            'Döngü ve değişkenleri öğrenip uygulamak.',
+            'Kodlamada yaratıcılığı artırmak.'],
+        'description' => 'Bu mücadelede, kalem blokları ile döngüleri ve değişkenleri kullanarak bir sarmal oluşturmak üzere Scratch üzerinde proje yazacaksınız.',
 
+        'instructions' => [
+            'Kalem blokları',
+            'Sarmal adında yeni bir proje oluşturun.',
+            'Pencerenin sol alt tarafındaki mor renkli “Eklenti ekle” simgesine tıklayın',
+            'Ardından “kalem” ögesini seçin: projenizde kalem bloklarını kullanmaya başlayın!',
+            'Projenize başlamak için “yeşil bayrağa tıklandığında” blokunu sürükleyip bırakın:',
+            'Boş bir sayfa ile başlamanız gerekmektedir: bunun için kalem bloklarının içerisine “tümünü sil” blokunu ekleyin:',
+            'Çizim işlemine sahnenin orta kısmından başlamak için kuklanız sahnenin ortasında (0,0) olmalıdır:',
+            'Kuklanızı çizim yapmadan hareket ettirebilir veya hareket ettirip çizim yapabilirsiniz:',
+            'çizim yapmak istediğinizde kalemi bastır blokunu kullanabilirsiniz',
+            'çizim yapmak istemediğinizde kalemi kaldır blokunu kullanabilirsiniz',
+            'Çizim yapmaya başlayın! “Kalemi bastır” blokunu ekleyin:',
+            'Altıgen',
+            'Alttaki blokları projenize ekleyin:',
+            'Altıgeninizin birinci parçası hazır. Şimdi bu işlemi 6 defa tekrarlamanız gerekmektedir:',
+            'Sarmal',
+            'Sarmal oluşturmak için her bir yan kenarın uzunluğuna 2 eklemeniz gerekmektedir.',
+            'Bunun için bir <strong>değişken</strong> kullanın.',
+            'Değişken bloklarında, Değişken Oluştur ögesine tıklayın',
+            'Bu değişkeni Uzunluk olarak adlandırıp Tamam ögesine tıklayın:',
+            'Sarmal giderek büyüyeceği için küçükten başlamanız gerekmektedir: ilk uzunluğu 10 olarak ayarlayın ve bu bloku döngünün önüne ekleyin.',
+            'Ardından “uzunluk” değişkenini, “… adım git” blokuna ekleyin',
+            'Sarmalın büyümesi için her döngüde uzunluk da artmalıdır: alttaki bloku döngünün sonuna ekleyin:',
+            'Mevcut projeniz hazır:',
+            'Güzel bir sarmal ',
+            'Bir sarmal çizdiniz! Sürekli devam etmesi için “6 defa tekrarla” döngüsünü “sürekli” döngüsüyle değiştirin:',
+            'Renkli bir sarmal çizmek için alttaki bloku döngüye ekleyin:',
+            'Baştan başladığınızda, kukla istenmeyen bir çizgi çizecektir. Bunu önlemek için projenin başına “kalemi kaldır” blokunu ekleyin.',
+            'Projenizin son hâlini oluşturdunuz:',
+            'Tebrikler! Çok güzel bir sarmal yaptınız!',
+        ],
 
+    ],
+    'play-against-ai' => [
+        'title' => 'Taş, Kağıt, Makas Oyunu oluşturma ve yapay zekaya karşı oynama',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            'makine öğrenme döngüsünün nasıl işlediğini anlamak.',
+            'Öğretilebilir Makine işlevini kullanarak makine öğrenimi modeli oluşturmak',
+            'Pictoblox aracını kullanmayı öğrenmek ve oluşturulan modeli projeye aktarmak',
+            'Pictoblox içerisinde sahneyi ve karakterleri ayarlamak ve değişkenler oluşturup başlatmak',
+            'oyunu başlatmak, oyuncu hareketlerini tanımlamak, rastgele yapay zeka hareketlerini programlamak',
+            'Taş, Kağıt, Makas oyununda rakibin yapay zeka olduğu bir oyun oluşturup test etmek.'
 
+        ],
+        'description' => 'Görüntüler doğrultusunda Öğretilebilir Makine işlevini uygulayarak bir model oluşturmak için şu üç sınıfı kullanacağız: Taş, Kağıt, Makas. Bu modeli Pictoblox üzerine yükleyeceğiz ve bunu yapay zekaya karşı oynayacağımız bir oyun oluşturmada kullanacağız.',
+        'duration' => '90 dakika',
+        'instructions' => [
+            'Öğretilebilir makine üzerinde Taş, Kağıt ve Makas adlı 3 sınıfın bulunduğu yeni bir görüntü projesi oluşturun. Her bir sınıf için en az 400 fotoğraf çekin. Arka zeminin boş olmasına dikkat edin. Modeli eğitin ve dışa aktarın. Modeli yükleyin ve bağlantıyı kopyalayın.',
+            'Pictoblox sitesinde ücretsiz bir hesap açın. Makine Öğrenimi Eklentisini ekleyin ve bir model yükleyin. Sahneyi, değişkenleri ve kuklaları ayarlayın. Oyunu başlatın, oyuncu hamlelerini ve yapay zeka hamlelerini tanımlayın ve o raundu kimin kazanacağını belirleyin.',
+            'Verileri oyun için eğitin.',
+            'Modeli test etme.',
+            'Modeli dışa aktarın.',
+            'Makine öğrenimi eklentisini ekleyin ve modeli yükleyin.',
+            'Sahneyi, değişkenleri ve Kuklayı ayarlayın.',
+            'Oyunu başlatın.',
+            'Oyuncu Hamlelerini tanımlayın.',
+            'Rastgele Yapay Zeka Hamlelerini ayarlayın.',
+            'Rastgele Yapay Zeka hamlelerini yayınlayın.',
+            'Üç blok yapın. Raundu kim kazanacak? ',
+            'Raundu oyuncu kazanacaksa işaretleyin.',
+            'Raundu yapay zeka kazanacaksa işaretleyin.',
+            'Raunt berabere bitecekse işaretleyin.',
+            'Blokları programlayın.',
+            'Taş Kağıt Makas Kuklası',
+        ]
+    ],
+    'air-drawing-with-AI' => [
+        'title' => 'Yapay zeka ile havaya çizim yapma',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            'kamera önündeki parmak hareketlerini tespit eden vücut algılama eklentisini kullanarak bir program yazmak.',
+            'birkaç kod satırı ve basit bloklarla kodlama yapmak.',
+            'yapay zeka kullanımı örneğini incelemek'
+        ],
+        'description' => 'Kullanıcının kamera önünde eliyle (işaret parmağıyla) havaya çizim yapmasını ve yaptığı çizimin otomatik olarak Pictoblox sahnesinde gösterilmesini sağlayan bir program oluşturma.',
+        'instructions' => [
+            'Pictoblox üzerinde hesap açın',
+            'görsel komutları takip edin:',
+            'Vücut Algılama ve Kalem eklentilerini ekleyin;',
+            'sahneyi ayarlayıp şu ögeler için kuklayı (Kalem) ve ilave kuklaları ekleyin: Kalemi Bastır, Kalemi Kaldır, Tümünü Sil;  ',
+            'Kalem kuklasının parmağı takip etmesi için bir kod yazın',
+            'şu düğmeler için bir kod yazın: Kalemi Kaldır, Kalemi Bastır, Tümünü Sil ve Kalem',
+            'Artık farklı renk ve boyutlardaki kalemlerle dilediğiniz gibi kendi çizimlerinizi yapabilirsiniz.',
+        ],
+        'materials' => [
+            'Kameralı bir dizüstü veya masaüstü bilgisayar',
+            'PictoBlox’un en güncel sürümünü indirebilir (önerilir) veya Pictoblox’u çevrim içi olarak (ücretsiz) kullanabilirsiniz',
+            'Pictoblox hesabı (ücretsiz)',
+            'İyi bir internet bağlantısı'
+        ]
+    ],
+    'emobot-kliki' => [
+        'title' => 'Emobot Kliki',
+        'author' => 'Margareta Zajkova',
+        'purposes' => [
+            'Makine öğrenimi ve metin tanıma süreçlerine ilişkin temel kavramları öğrenmek.',
+            'İletişimde duyguların rolünü anlamak.',
+            'Kod kullanarak sohbet robotu ile kullanıcı arasında diyaloglar oluşturmak.',
+            'Bilgisayarların metin analizi yoluyla duygusal farklılıkları nasıl algılayıp buna göre yanıt verdiğini anlamak.'
+        ],
+        'description' => [
+            'Scratch üzerinde olumlu mesajlar için (güzel şeyler söylediğinizde) mutlu ifadeli, olumsuz mesajlar için (kötü ve kaba şeyler söylediğinizde) kızgın ifadeli, anlaşılamayan mesajlar için ise kafası karışmış ifadeli bir Duygu Robotu oluşturun.',
+            'İltifatları ve hakaretleri algılayabilen Emobot Kliki sayesinde, bilgisayarların duygusal farklılıkları algılamak üzere nasıl eğitilebileceğini göreceğiz.',
+        ],
+        'instructions' => [
+            'Başlamak için güzel/kibar ve kötü/kaba ifadelere ilişkin bir kural listesi programlayın.',
+            'https://machinelearningforkids.co.uk/ adresinde oturum açın veya yeni bir hesap oluşturun.',
+            '3 yeni etiket ekleyerek yeni bir makine öğrenimi modeli hazırlayın; bunlardan birincisini “güzel”, ikincisini ise “kötü” olarak adlandırın, modelin isminizi de bilmesini istiyorsanız “isim” adlı üçüncü bir etiket oluşturun.',
+            'Yeni makine öğrenimi modelini eğitip test edin ve bunu Scratch üzerinde Emobot oluşturmada kullanın.',
+            'Scratch 3 editörünü çalıştırın, kedi kuklasını silin, Microsoft Bing Görüntü Oluşturucu tarafından oluşturulmuş 3 yeni kuklayı (mutlu, kızgın ve kafası karışmış bilgisayar simgesi) ekleyin veya Resim simgesine tıklayıp mutlu, kızgın ve kafası karışmış ifadeler için üç farklı kostüm çizerek yeni bir kukla oluşturun.',
+            '“Kod” sekmesine tıklayın ve alttaki komut dizisini girin.']
+        ,
+        'example' => [
+            'Oluşturduğunuz Emobot Kliki\’yi arkadaşlarınızla paylaşın ve yapay zeka ile duygular hakkında daha fazla bilgi edinin!',
+            'Bilgisayar simgesi yerine hayvan gibi başka bir simge de kullanabilirsiniz. Karakteri, kibar ve kaba ifadeler yerine farklı türde mesajları algılayacak şekilde eğitebilirsiniz.',
+        ],
 
+    ],
+    'craft-magic' => [
+        'title' => 'Yapay Zeka El Hareketleri ile Sihirbazlık Yapma',
+        'author' => 'Georgia Lascaris',
+        'purposes' => [
+            'Öğrenciler arasında kodlama becerilerini geliştirerek temel komutları kullanmalarını sağlamak.',
+            'Karmaşık görevleri yönetilebilir adımlara bölerek algoritmik düşünme becerilerini geliştirmek.',
+            'Çizim ve yazıda özel el hareketi uygulamalarını bulma konusunda yaratıcı problem çözmeyi teşvik etmek.',
+            'Yapay zeka kavramlarının (özellikle de yapay zekanın, el hareketlerinin bilgisayarlar tarafından algılanıp yorumlanmasını nasıl mümkün kıldığının) anlaşılmasını sağlamak.',
+            'Engelli bireyler için teknolojinin önemine ilişkin farkındalık yaratmak.',
+            'Öğrenciler arasında iş birliğine dayalı problem çözmeyi ve ekip çalışmasını teşvik ederek, el hareketi programlarını geliştirmek üzere birlikte çalışmalarını sağlamak.',
+            'Kodlama ve sayısal düşünme becerilerini gerçek hayattaki uygulamalarla bağlantılı hâle getirerek teknolojinin insan hayatı üzerindeki anlamlı etkisini vurgulamak ve Sürdürülebilir Kalkınma Hedefleri (SDG’ler) ile uyumlu hâle gelmek.'
+        ],
+        'duration' => [
+            '10-12 yaş arası öğrenciler için 90 dakika',
+            '12-15 yaş arası öğrenciler için 45 dakika'
+        ],
+        'description' => 'Fare veya dokunmatik ekran kullanmaya gerek kalmadan ekran üzerinde çizim yapabilmek amacıyla, yapay zeka “Vücut” eklentisini yaratıcı ve ilgi çekici bir biçimde kullanan blok tabanlı bir Scratch programı oluşturun.',
+        'instructions' => [
+            'https://ai.thestempedia.com sitesine bağlanarak öğretmen ve öğrenci hesapları açın.',
+            'Ardından ‘Vücut Algılama’,’ Kalem’,’ Yazıyı Sese Çevirme’ eklentilerini içe aktarın.',
+            'Kitaplıktan ‘Kalem’ Kuklasını ekleyip 7 farklı kukla oluşturun (‘yaz’, ‘temizle’, ‘siyah’, ‘kırmızı’, ‘mavi’, ‘yeşil’, ‘pembe’).',
+            'Ardından ‘kalem’ kuklası diğer kuklalardan herhangi birine dokunduğunda ne olacağını belirlemek için komut yazın.',
+            'Kameranın El Hareketini algılaması ve kalemi işaret parmağınızın x ve y koordinatlarına götürmesi için komut yazın.',
+            'Uygulamanın sonunda kostümü değiştirin.',
+            'Ses efektleri ekleyin.',
+        ],
+        'materials' => [
+            'Programlama platformu https://ai.thestempedia.com (ücretsiz)',
+            'öğretmen hesabı (ücretsiz)',
+            'öğrenci hesabı (ücretsiz)',
+            'Kameralı bilgisayar',
+            'İnternet bağlantısı',
+        ]
+    ],
+    'circle-of-dots' => [
+        'title' => 'Noktalı daire',
+        'author' => 'Marin Popov',
+        'purposes' => [
+            'Noktalardan oluşan bir hat çizecek şekilde kod yazmak.',
+            'Çizgilerden oluşan bir hat çizecek şekilde kod yazmak.',
+            'Daire çizecek şekilde kod yazmak.',
+            'Noktalı (çizgili) daire çizecek şekilde kod yazın.',
+        ],
+        'description' => 'Noktalardan veya çizgilerden oluşan bir daire çizin.',
+        'duration' => '40 dakika',
+        'instructions' => [
+            'Nokta bloku oluşturma.',
+            'Çizgi bloku oluşturma.',
+            'Noktalardan oluşan bir daire yapma.',
+            'Çizgilerden oluşan bir daire yapma.',
+        ]
+    ],
+    'coding-escape-room' => [
+        'title' => 'Kodlama kaçış odası oluşturma',
+        'author' => 'Stefania Altieri ve Elisa Baraghini',
+        'purposes' => [
+            'Kodlama kavramlarını öğretmek/öğrenmek ve bu kavramlar üzerinde düşünmek.',
+            'Basit kodlama araçlarını kullanmak.',
+            'Sayısal düşünme ve problem çözme becerilerini geliştirmek.'
+        ], 'description' => [
+            'Şunun gibi bir kodlama kaçış deneyimi oluşturun:',
+            'Kodlama üzerine bir hikâye yaratmak için Google formlar, Genially veya Google slaytlar gibi herhangi bir aracı kullanabilirsiniz ;).'
 
+        ],
+        'duration' => '90 dakika',
+        'instructions' =>
+            'Öğrencilerinizi küçük gruplara ayırıp oyun oynamalarını ve ardından bu şablonu kullanarak başka bir mücadele hazırlamalarını sağlayabilirsiniz: '
+        ,
 
+        'materials' => [
+            'Herhangi bir araç (belge, sunum ve sayfa oluşturup paylaşmak üzere Google ve Microsoft platformları) kullanılabilir. BİT ve kodlamayla bağlantılı her türlü kodlama yapısı, aracı veya karakteri kullanılabilir.'
+        ],
+        'example' => [
+            'BİT geçmişinde önemli rolü olan bazı karakterler ile temel kodlama ve programlama kavramları, oyun yoluyla tanıtılır. Öğrenmenin ve aktif bir biçimde katılım göstermenin en iyi yolu budur. Bu oyun, tıpkı bir mücadele veya yarışma gibi ekipler hâlinde ya da tek başına oynanabilir. Ardından öğrenciler buna benzer bir şey hazırlayarak yaratıcılık ve kodlama becerisi gibi yetkinliklerini geliştirebilirler.',
+            'Bu, yeniden kullanılabilecek ve kolayca yeniden oluşturulabilecek çok kullanışlı bir kaynaktır. Google formlar, kullanılabilecek araçlardan bir tanesidir. Örtüşen hikâyeler ve kendinize ait maceralar yaratmak üzere Google slaytlar, Genial.ly, Emaze veya başka herhangi bir araç kullanabilirsiniz.',
+            'Kaçış mücadelesi bölümlere ayrılmıştır. Çözümü bulduğunuz takdirde ilerleyebilirsiniz. Öğrencilerin kodlama bilmeceleri hazırlamaları gerekmektedir.',
+        ],
+    ],
+    'let-the-snake-run' => [
+        'title' => 'Yılan kaçırma oyunu',
+        'author' => 'Ágota Klacsákné Tóth',
+        'purposes' => [
+            'micro:bit üzerinde yılan hareketlerini kodlamak.',
+            'Ortak hareket etmek üzere doğru yerleşim ve zamanlamayı ayarlamak.'
+        ],
+        'description' => 'Öğrenciler yılanı micro:bit üzerinden birbirlerine doğru yönlendirecek şekilde kod yazmalıdır. Yılan bir micro:bit’ten diğerine kaçıyor gibi görünmelidir.',
+        'duration' => '30 dakika',
+        'instructions' => [
+            'Yan yana çok sayıdaki micro:bit üzerinden geçen bir yol tasarlayın (ör. 2x2 boyutlarında bir kare oluşturarak).',
+            'Yılanın yol boyunca ilerlemesi için kod yazın.',
+            'Herkes kendi bilgisayarında çalışıp daha sonra bunları bir araya getirerek kodu çalıştırmalıdır.',
+            'Zamanlamayı ve yerleşimi göz önünde bulundurun: Yılan bir micro:bit’ten çıkıp yanındaki diğer micro:bit’e gitmelidir.',
+            'Daha fazla mücadele: micro:bit v2 ile yılan kendi bilgisayarınızdan çıkana dek müzik çalmasını sağlayın.',
+            'Işıkların parlaklığını değiştirerek yılanı tasarlayın.',
+            'Yılanın uzunluğunu veya yılan sayısını artırın.'
+        ],
+        'example' => [
+            'Bu örnekte, 2x2 boyutlarında bir kare kullanılarak 4 micro:bit ile oluşturulmuş 6 piksel uzunluğunda bir yılan bulunmaktadır: ',
+            'Başlangıç micro:bit’ini kodlama (bunu öğretmen yapabilir)',
+            'Tüm kodlar, A düğmesine basıldığında diğer micro:bit’lere radyo dalgası gönderen bu micro:bit ile başlatılır.',
+            'Yılan hareketlerini kodlama',
+            'Her bir micro:bit, başlangıç micro:bit’i ile aynı radyo grubunda olmalıdır.',
+            'Tüm hareketler radyo sinyali alındığında başlar.',
+            'İlk micro:bit hemen hareket eder, diğerleri ise yılan kendilerine ulaşana dek bekler.',
+            'İki evre arasındaki zaman, yılanın hızını belirler.',
+        ], 'materials' => [
+            'micro:bit’ler (mümkünse her öğrenci için)',
+            'makecode.microbit.org editörü için dizüstü veya masaüstü bilgisayar'
+        ]
+    ],
+    'illustrate-a-joke' => [
+        'title' => 'Bitsy ile şaka hazırlama',
+        'author' => 'Margot Schubert',
+        'purposes' => 'Kullanıcının komik bir sorunun cevabını bulduğu ufak bir oyun tasarlamak.',
+        'description' => 'Öğrenciler, karakterin oyun alanındaki bir nesneye çarpmasıyla kullanıcının komik bir sorunun cevabını bulduğu bir oyun tasarlarlar.\', Öğrenciler bitsy’nin temel özelliklerini kullanarak bu mücadeleyi tamamlarlar.',
+        'instructions' => [
+            'Komik bir soru düşünün. Bitsy’e gidip yeni bir proje başlatın. Gerekenler:',
+            'etrafta hareket ettirebileceğiniz bir avatar/kukla',
+            'Mor arka zemin üzerinde beyaz bir kedi',
+            'Otomatik oluşturulmuş açıklama',
+            'avatarınızın gitmesi gereken nesne',
+            'bir oda, yani programınızın arka zemini',
+            'iki mesaj: bir soru ve bir cevap',
+            'Bitmiş oyun, html dosyası olarak indirilebilir.'
+        ],
+        'example' => 'Bu web sitesinde, bir şaka örneği ve dijital yazı tahtası bağlantısı bulunmaktadır:',
+        'materials' => 'bitsy, tarayıcı üzerinde çalışır'
+    ],
+    'app-that-counts-in-several-languages' => [
+        'title' => 'Farklı dillerde sayı sayma uygulaması',
+        'author' => 'Samuel Branco',
+        'purposes' => [
+            'Basit bir uygulama oluşturmayı öğrenmek.',
+            'Bloklar aracılığıyla programlama yapmayı öğrenmek.',
+            'Etiket, düğme, görüntü, algılayıcı ve ortam dosyası eklemeyi öğrenmek.',
+            'Uygulama ekranında ögeleri düzenlemeyi öğrenmek.'
+        ],
+        'description' => 'Uygulama, tek bir düğmeye basarak birden fazla dilde sayı saymayı sağlar. Kullanıcı akıllı telefonunu her salladığında sayaç sıfırlanır. Buradaki mücadele, başka bir dil eklemektir.',
+        'instructions' => [
+            'Mücadeleyi tamamlamak için uygulamanın saymasını istediğiniz diğer dili tanımlamanız gerekmektedir.',
+            'Ardından o ülkenin bayrağını internetten indirip (ör. Pixabay veya Unsplash üzerinden), Resim özelliği içerisinde yer alan bayrak adlı öge aracılığıyla MIT APP Inventor platformuna yüklemeniz gerekmektedir.',
+            'Daha sonra ülkenin adının İngilizcede nasıl okunduğunu ve ‘bırak’ ve ‘buraya bas’ ifadelerinin o ülkenin dilinde nasıl söylendiğini bulmanız gerekmektedir.',
+            'Son olarak, uygulamanın yeni dilde çalışması için gereken blokları eklemeniz gerekmektedir.',
+        ],
+        'materials' => [
+            'Bir uygulama geliştirmek için internet erişimi olan bir masaüstü veya dizüstü bilgisayarınız olmalıdır.',
+            '<a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a> üzerinden erişilebilen MIT APP Inventor platformunda bir hesap açın',
+            'Geliştirdiğiniz uygulamayı test etmek için akıllı telefonunuza MIT AI2 Companion uygulamasını kurmanız gerekmektedir.'
+        ]
+    ],
+    'coding-with-art-through-storytelling' => [
+    'title' => 'Hikâye anlatarak kodlama sanatı',
+    'author' => 'Maria Tsapara ve Anthi Arkouli',
+    'purposes' => [
+        'Sanatla ilgilenerek gözlem, yorumlama ve sorgulama becerilerini geliştirmek.',
+        'Yaratıcı olmak ve başkalarıyla ortak bir hedef için iş birliği yapmak',
+        'Hikâyeyi yeniden anlatabilmek için bir algoritma oluşturmak.',
+    ],
+    'description' => 'Bu mücadelede, öğrenciler sanat eserlerinden ilham alıp bir hikâye oluşturacak ve bu hikâyeyi tasvir edeceklerdir. Ardından, programlanabilir bir robotik kit kullanarak veya bilgisayarsız bir aktivite olarak hikâyeyi yeniden anlatmaya çalışacaklardır.',
+    'materials' => [
+        'Bu aktivite, bilgisayarsız bir aktivite olarak veya beebot/bluebot/robot fare gibi eğitici ve programlanabilir bir robot kullanılarak gerçekleştirilebilir.',
+        'beebot ok kartları veya bilgisayarsız aktivite için ok kartları',
+        'Yunanca',
+        'Project Zero\'s Thinking Routine Toolbox hakkında daha fazla bilgi için şu adresi ziyaret edebilirsiniz:'
 
+    ],
+    'example' => [
+        'Öğretmen, hikâyedeki ilk olaya ulaşmak amacıyla Bee-Bot veya başka bir robot için komutlar içeren kartları kullanarak algoritma tasarlamayı modellemek üzere öğrencilerle birlikte mat üzerinde çalışır. Öğrenciler, 3-4 kişilik ekipler hâlinde çalışarak, robotun bir sonraki dizgeye ilerlemesi için bir algoritma tasarlarlar. Öğrenciler, sınıf matı üzerinde algoritmalarını test ederler ve gerekiyorsa hata ayıklama yaparlar.',
+        'Diledikleri kadar hikâye olayı ilave ederek devam ederler',
+        'Bu aktivite, bilgisayarsız bir aktivite olarak da gerçekleştirilebilir.',
+        'Çocuklardan biri robot, diğeri de bilgisayar programcısı olur. Bilgisayar programcısı, robotun bir görüntüden diğerine geçerek hikâyeyi yeniden anlatmasına yardımcı olmak için ok kartlarını kullanarak algoritmik bir yol oluşturur. Robot bir görüntüye ulaştığında, her seferinde kendisinden hikâyenin bir kısmını anlatması istenir.',
+    ],
+    'instructions' => [
+        'Öğretmen, öğrencilerden bir tabloyu/fotoğrafı gözlemlemelerini ister.',
+        'Hikâye oluşturmak için "Giriş, Gelişme, Sonuç" (Project Zero - Harvard School) düşünme rutinini kullanırlar.',
+        'Öğretmen, öğrencilere "Bu sanat eseri, bir hikâyenin girişi/gelişmesi/sonucu ise bunun ardından/hikâye bitmeden önce/en sonda ne olabilir?" sorusunu sorar.',
+        'Öğrenciler hikâyedeki olayları tasvir ederler.',
+        'Öğrenciler hikâyeyi bir araya getirip olayları çalışma ekranına yerleştirirler. Beebot’un hikâyeyi yeniden anlatmasına yardımcı olmak için ok kartlarını kullanarak bir algoritma oluştururlar.'
+    ],
+],
+    'coding-with-legoboost' => [
+    'title' => 'Scratch eklentisi olan LegoBoost ile kodlama ve programlama',
+    'author' => 'Lidia Ristea',
+    'purposes' => [
+        'LegoBoost kullanarak modeller oluşturmak.',
+        'Scratch üzerinde programlama becerilerini geliştirmek.',
+        'basit veya karmaşık komutlar kullanarak robotları programlamak.'
+    ],
+    'description' => 'Bu mücadelede öğrenciler, robotların ileri geri gitmesi, engellerden kaçması ve sesli komut alması için Scratch-LegoBoost eklentisini kullanarak uygulamaya kod gireceklerdir.',
+    'duration' => '120 dakika',
+    'instructions' => [
+        'Scratch.mit.edu uygulamasında oturum açın.',
+        'Scratch Bağlantısını çalıştırın ve Dizüstü Bilgisayarınızda Bluetooth’u etkinleştirin.',
+        'Scratch üzerinde Eklenti Ekle ögesine tıklayın ve LegoBoost’u seçin.',
+        'AB Kod Haftası ile ilgili bir resim ekleyin.',
+        'İki AB motorunu AÇIK konuma getirin, kırmızı renkli bir engelle karşılaştıklarında ise KAPALI konuma getirin.',
+        'Yeşil renkte A motorunu, siyah renkte ise B motorunu AÇIK konuma getirin.',
+        'Yeşil, kırmızı ve siyah engeller bir güzergâh üzerine yerleştirilecektir.',
+        'Bir engelle karşılaşıldığında yazıyı sese çevirme, oklardan dönüş yapma ve hareket etme komutları ekleyin.',
+        'Test edin!'
+    ]
+]
 
 
 ];

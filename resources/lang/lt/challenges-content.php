@@ -484,5 +484,384 @@ return [
             'Pasirinkite penkias skirtingas spalvas ir kiekvienai iš jų priskirkite pratimą, pavyzdžiui, pritūpimus ar šuoliukus. Tada spalvas galima išdėstyti bet kokia tvarka ir apmokyti.'
         ],
 
+    ],
+    'common' => [
+        'share' => 'Pasidalykite savo projekto nuoroda arba QR kodu „Instagram“, pridėkite grotažymę #CodeWeekChallenge ir paminėkite @CodeWeekEU.',
+        'audience' => [
+            'Mokytojai ir kiti pedagogai',
+            'Pradinės mokyklos moksleiviai (6–12 metų)',
+            'Pagrindinės mokyklos moksleiviai (12–16 metų)',
+            'Vidurinės mokyklos moksleiviai (16–18 metų)',
+        ],
+    ],
+    'code-a-dice' => [
+        'title' => 'Kauliuko ridenimo programavimas',
+        'author' => 'Fabrizia Agnello',
+        'purposes' => [
+            'Kurti interaktyvias mįsles',
+            'Suprogramuoti atsitiktinai judančio objekto imitaciją, kuri būtų naudojama, kai nėra tikro objekto'
+        ],
+        'description' =>
+            'Šiame iššūkyje reikia suprogramuoti, kad kauliukas atsitiktinai ridentųsi pagal komandą. Galima pasirinkti bet kokio tipo kauliuką su tiek sienelių, kiek norite (pavyzdžiui, naudojamą vaidmenų žaidimuose), ir pridėti garsų.',
+        'instructions' => [
+            'Prisijunkite prie „Scratch“.',
+            'Pasirinkite foną.',
+            'Sukurkite veikėją kauliuką arba raskite jį internete ir įkelkite į programą.',
+            'Sukurkite veikėjui tiek kaukių, kiek pasirinktas kauliukas turi sienelių. Jos visos turi rodyti skirtingą skaičių.',
+            'Pasirinkite, kada norite, kad kauliukas pradėtų ridentis (paspaudus klaviatūros klavišą, spustelėjus veikėją ir pan.), ir parašykite kodą.',
+            'Suprogramuokite, kad po kiekvieno ridenimo veikėjas atsitiktinai pakeistų kaukę.',
+            'Pridėkite garso efektų.',
+        ],
+        'example' => 'D-20 kauliuko ridenimas'
+    ],
+    'personal-trainer' => [
+        'title' => 'Asmeninio trenerio kūrimas naudojant „micro:bit“',
+        'author' => '',
+        'purposes' => [
+            'Suprogramuoti „micro:bit“, kad būtų naudojamas garsinių signalų ir šviesos diodų skydelis',
+            'Sukurti asmeninį prietaisą fiziniam aktyvumui valdyti',
+            'Suprogramuoti „micro:bit“, kad jis padėtų gerinti sveikatą sportuojant',
+        ],
+        'description' =>
+            'Šiame iššūkyje reikia suprogramuoti savo „micro:bit“, kad galėtumėte nustatyti, kiek kartų kartoti fizinius pratimus, ir valdyti poilsio laiką. Galėsite stebėti savo fizinį aktyvumą mokykloje, namuose ar parke.'
+        ,
+        'instructions' => [
+            'Kai A+B, sukurkite trijų sekundžių atgalinio skaičiavimo laikmatį, kuris kas sekundę išleistų garsą ir pabaigoje rodytų žodį GO (pirmyn)!',
+            'Per pirmąjį pratimą 20 sekundžių rodykite mirksintį 2x2 kvadratą. Tada paleiskite garsą ir užfiksuokite kvadratą. Per likusį laiką 10 sekundžių rodykite kitą mirksintį vaizdą. Pasibaigus laikui, paleiskite garsą.',
+            'Tada pakartokite tą patį veiksmą, bet visą pratimo laiką rodykite 3x3 skydelį. Kartokite šiuos veiksmus, kol bus rodomas 5x5 skydelis.',
+        ],
+        'duration' => '30–40 minučių',
+    ],
+    'create-a-spiral' => [
+        'title' => 'Spiralės kūrimas',
+        'author' => 'Lydie El-Halougi',
+        'purposes' => [
+            'Susipažinti su ciklu ir kintamaisiais bei praktiškai juos išbandyti',
+            'Didinti kūrybiškumą programuojant'],
+        'description' => 'Šiame iššūkyje reikės su „Scratch“ parašyti projektą ir sukurti spiralę naudojant pieštuko blokus, ciklą ir kintamąjį.',
+
+        'instructions' => [
+            'Pieštuko blokai',
+            'Sukurkite naują projektą ir pavadinkite jį „Spiralė“.',
+            'Apatinėje kairėje lango pusėje spustelėkite violetinę piktogramą „Add extension“ (pridėti plėtinį).',
+            'Pasirinkite „Pen“ (pieštukas), kad projekte galėtumėte naudoti pieštuko blokus!',
+            'Norėdami pradėti projektą, nutempkite bloką „when green flag clicked“ (paspaudus žalią vėliavėlę):',
+            'Pradėkite nuo tuščio lapo. Pieštuko blokuose pridėkite bloką „erase all“ (išvalyti viską):',
+            'Piešti pradedama scenos centre, todėl reikia, kad veikėjas ten nueitų (0,0):',
+            'Jūsų veikėjas gali judėti nepiešdamas arba vienu metu judėti ir piešti:',
+            'jei norite, kad jis pieštų, naudokite bloką „pen down“ (pieštukas pieš)',
+            'jei nenorite, kad jis pieštų, naudokite bloką „pen up“ (pieštukas nepieš)',
+            'Dabar galite piešti! Pridėkite bloką „pen down“ (pieštukas pieš):',
+            'Šešiakampis',
+            'Prie savo projekto pridėkite toliau nurodytus blokus:',
+            'Dabar turite šeštadalį šešiakampio. Šią seką pakartokite šešis kartus:',
+            'Spiralė',
+            'Norėdami sukurti spiralę, prie kiekvienos kitos pusės ilgio pridėkite 2.',
+            'Tam reikia <strong>kintamojo.</strong>',
+            'Kintamųjų blokuose spustelėkite „Make a Variable“ (sukurti kintamąjį).',
+            'Pavadinkite jį „length“ (ilgis) ir spustelėkite „OK“ (gerai):',
+            'Spiralė didės, todėl pradėkite nuo mažos. Nustatykite, kad pirmas ilgis yra 10, ir įterpkite šį bloką prieš ciklą.',
+            'Įveskite kintamąjį „length“ (ilgis) į bloką „move ... steps“ (judėti ... žingsniai).',
+            'Kad spiralė didėtų, reikia pailginti kiekvieną ciklą, todėl ciklo gale pridėkite toliau esantį bloką:',
+            'Štai jūsų dabartinis projektas:',
+            'Graži spiralė',
+            'Jūs nupiešėte spiralę! Jei norite, kad spiralė nesibaigtų, pakeiskite ciklą „repeat 6“ (kartoti 6) ciklu „forever“ (amžinai):',
+            'Norėdami nupiešti spalvotą spiralę, į ciklą įtraukite šį bloką:',
+            'Pradėjus iš naujo, veikėjas piešia nereikalingą liniją. Kad jis to nedarytų, projekto pradžioje pridėkite bloką „pen up“ (pieštukas nepieš).',
+            'Štai jūsų galutinis projektas:',
+            'Sveikiname! Sukūrėte nuostabią spiralę!',
+        ],
+
+    ],
+    'play-against-ai' => [
+        'title' => 'Žaidimas su dirbtiniu intelektu: „Akmuo, žirklės, popierius“',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            'Suprasti, kaip veikia mašininio mokymosi ciklas',
+            'Sukurti mašininio mokymosi modelį naudojant mokomą mašiną',
+            'Susipažinti su priemone „Pictoblox“ ir importuoti sukurtą modelį į projektą',
+            'Programoje „Pictoblox“ paruošti sceną ir veikėjus, sukurti ir inicijuoti kintamuosius',
+            'Inicijuoti žaidimą, nustatyti žaidėjų ėjimus ir programuoti atsitiktinius dirbtinio intelekto ėjimus',
+            'Sukurti ir išbandyti žaidimą, kuriame dirbtinis intelektas dalyvautų kaip priešininkas žaidime „Akmuo, popierius, žirklės“'
+
+        ],
+        'description' => 'Naudodami mokomą mašiną sukursime modelį. Tam reikės vaizdų iš trijų klasių: akmuo, žirklės ir popierius. Modelį įkelsime į „Pictoblox“ ir naudosime jį kurdami žaidimą, kurį galėsime žaisti su dirbtiniu intelektu.',
+        'duration' => '90 minučių',
+        'instructions' => [
+            'Mokomoje mašinoje sukurkite naują vaizdo projektą su trimis klasėmis, pavadintomis „akmuo“, „popierius“ ir „žirklės“. Kiekvienai klasei su kamera padarykite bent 400 nuotraukų. Įsitikinkite, kad fonas yra neapkrautas. Apmokykite ir eksportuokite modelį. Įkelkite modelį ir nukopijuokite nuorodą.',
+            'Sukurkite nemokamą paskyrą svetainėje „Pictoblox“. Pridėkite plėtinį „Machine Learning“ (mašininis mokymasis) ir įkelkite modelį. Paruoškite sceną, kintamuosius ir veikėjus. Inicijuokite žaidimą, nustatykite žaidėjo ir dirbtinio intelekto ėjimus bei kas laimi raundą.',
+            'Apmokykite modelį žaisti.',
+            'Išbandykite modelį.',
+            'Eksportuokite modelį.',
+            'Pridėkite plėtinį „Machine Learning“ (mašininis mokymasis) ir įkelkite modelį.',
+            'Paruoškite sceną, kintamuosius ir veikėją.',
+            'Inicijuokite žaidimą.',
+            'Nustatykite žaidėjo ėjimus.',
+            'Nustatykite atsitiktinius dirbtinio intelekto ėjimus.',
+            'Perduokite atsitiktinius dirbtinio intelekto ėjimus.',
+            'Sukurkite tris blokus. Kas laimi šį raundą? ',
+            'Patikrinkite, ar žaidėjas laimi šį raundą.',
+            'Patikrinkite, ar dirbtinis intelektas laimi šį raundą.',
+            'Patikrinkite, ar šiame raunde pasiektos lygiosios.',
+            'Užprogramuokite blokus.',
+            'Akmuo, popierius, žirklės, veikėjas',
+        ]
+    ],
+    'air-drawing-with-AI' => [
+        'title' => 'Piešimas ore naudojant dirbtinį intelektą',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            'Parašyti programą naudojant plėtinį „Human Body Detection“ (žmogaus kūno aptikimas), kuris atpažintų pirštų judesius prieš kamerą',
+            'Programuoti naudojant paprastus blokus keliose kodo eilutėse',
+            'Pamatyti pavyzdį, kaip naudojamas dirbtinis intelektas'
+        ],
+        'description' => 'Sukurkite programą, kad naudotojas galėtų piešti ore priešais kamerą esančia ranka (rodomuoju pirštu) ir kad viskas, ką jis nupiešia, būtų automatiškai rodoma „Pictoblox“ scenoje.',
+        'instructions' => [
+            'Sukurkite paskyrą svetainėje „Pictoblox.',
+            'Vadovaukitės vaizdiniais nurodymais:',
+            'Pridėkite plėtinius „Human Body Detection“ (žmogaus kūno aptikimas) ir „Pen“ (pieštukas).',
+            'Paruoškite sceną ir pridėkite veikėją (pieštuką) bei papildomus blokus: „Pen Down“ (pieštukas pieš), „Pen Up“ (prieštukas nepieš), „Delete all“ (ištrinti viską).',
+            'Parašykite kodą, kad pieštukas sektų pirštą.',
+            'Parašykite kodą mygtukams: „Pen Up“ (pieštukas nepieš), „Pen Down“ (pieštukas pieš) ir „Delete all“ (ištrinti viską), taip pat „Pen“ (pieštukas).',
+            'Dabar galite kurti piešinius ir žaisti su įvairiomis spalvomis bei pieštuko dydžiu.',
+        ],
+        'materials' => [
+            'Nešiojamasis arba stalinis kompiuteris su kamera',
+            'Naujausia atsisiųstos programos „PictoBlox“ versija (rekomenduojama) arba internetinė „Pictoblox“ versija (nemokama)',
+            '„Pictoblox“ paskyra (nemokama)',
+            'Geras interneto ryšys'
+        ]
+    ],
+    'emobot-kliki' => [
+        'title' => 'Emocinis botas „Kliki“',
+        'author' => 'Margareta Zajkova',
+        'purposes' => [
+            'Susipažinti su pagrindinėmis mašininio mokymosi ir teksto atpažinimo sąvokomis',
+            'Suprasti emocijų vaidmenį bendraujant',
+            'Pasitelkus kodą sukurti virtualaus pašnekovo ir naudotojo dialogą',
+            'Suprasti, kaip kompiuteriai analizuodami tekstą gali atpažinti emocinius tonus ir atitinkamai reaguoti'
+        ],
+        'description' => [
+            'Programoje „Scratch“ sukurkite emocinį botą, kuris rodytų laimingą veidą, kai žinutė yra teigiama (sakote jam malonius dalykus), piktą veidą, kai žinutė yra neigiama (sakote jam piktus dalykus), ir sutrikusį veidą, kai žinutė yra neaiški.',
+            'Mūsų emocinis botas „Kliki“ atpažįsta komplimentus ir įžeidimus, todėl pamatysime, kaip kompiuterius galima išmokyti atpažinti emocinį toną.',
+        ],
+        'instructions' => [
+            'Norėdami pradėti, sukurkite taisyklių sąrašą, kas yra gražu ar malonu, o kas negražu ar pikta.',
+            'Prisijunkite svetainėje https://machinelearningforkids.co.uk/ arba sukurkite naują paskyrą.',
+            'Sukurkite naują mašininio mokymosi modelį pridėdami tris naujas etiketes. Pirmąją pavadinkite „nice“ (gražu, malonu), antrąją – „bad“ (negražu, nemalonu). Trečioji etiketė yra pasirinktina. Ją galite pavadinti „name“ (pavadinimas), jei norite, kad šį žodį atpažintų.',
+            'Apmokykite naują mašininio mokymosi modelį, išbandykite jį ir juo pasinaudodami programoje „Scratch“ sukurkite emocinį botą.',
+            'Paleiskite „Scratch 3“ redaktorių, ištrinkite katiną kaip veikėją ir įterpkite tris naujus veikėjus, kuriuos sukūrė „Microsoft Bing Image Creator“ (laimingo, pikto ir pasimetusio kompiuterio paveiksliukus), arba sukurkite naują veikėją spustelėdami piktogramą „Paint“ (piešti) ir nupiešdami tris kaukes: laimingo, pikto ir pasimetusio veido.',
+            'Spustelėkite kortelę „Code“ (kodas) ir įveskite toliau nurodytą skriptą.']
+        ,
+        'example' => [
+            'Pasidalykite savo emociniu botu „Kliki“ su draugais ir sužinokite daugiau apie dirbtinį intelektą ir emocijas!',
+            'Vietoj kompiuterio paveiksliuko galima išbandyti, pavyzdžiui, gyvūno. Veikėją galima išmokyti atpažinti ir kitokias žinutes, ne tik malonias ir piktas.',
+        ],
+
+    ],
+    'craft-magic' => [
+        'title' => 'Magijos kūrimas naudojant dirbtinio intelekto rankų gestus',
+        'author' => 'Georgia Lascaris',
+        'purposes' => [
+            'Ugdyti mokinių programavimo įgūdžius, suteikiant galimybę naudotis pagrindinėmis komandomis',
+            'Lavinti algoritminio mąstymo įgūdžius išskaidant sudėtingas užduotis į paprastesnius etapus',
+            'Skatinti kūrybiškai spręsti problemas ieškant unikalių būdų, kaip rankų gestus pritaikyti piešimui ir rašymui',
+            'Padėti suprasti dirbtinio intelekto sąvokas, visų pirma kaip dirbtinis intelektas leidžia kompiuteriams atpažinti ir aiškinti rankų gestus',
+            'Didinti informuotumą apie technologijų svarbą neįgaliesiems',
+            'Skatinti mokinių bendradarbiavimą sprendžiant problemas ir komandinį darbą tobulinant savo rankų gestų programas',
+            'Susieti programavimo ir skaitmeninio mąstymo įgūdžius su realiuoju pasauliu, pabrėžiant reikšmingą technologijų poveikį žmonių gyvenimui ir suderinant jas su darnaus vystymosi tikslais (DVT)'
+        ],
+        'duration' => [
+            '90 minučių 10–12 metų mokiniams',
+            '45 minutės 12–15 metų mokiniams'
+        ],
+        'description' => 'Kaip kūrybiškai ir įdomiai sukurti „Scratch“ blokais paremtą programą, naudojant dirbtinio intelekto plėtinį „Human Body“ (žmogaus kūnas), kad būtų galima piešti ekrane nenaudojant įprastos pelės ar jutiklinio ekrano.',
+        'instructions' => [
+            'Svetainėje https://ai.thestempedia.com sukurkite mokytojui ir mokiniams skirtas paskyras.',
+            'Importuokite plėtinius „Human Body Detection“ (žmogaus kūno aptikimas), „Pen“ (pieštukas), „Text to Speech“ (teksto keitimas į kalbą).',
+            'Iš bibliotekos pridėkite veikėją „Pencil“ (pieštukas) ir sukurkite septynis veikėjus („write“ (rašyti), „clear“ (išvalyti), „black“ (juodas), „red“ (raudonas), „blue“ (mėlynas), „green“ (žalias) ir „pink“ (rožinis).',
+            'Parašykite komandas, kad patikrintumėte, kas nutinka, kai pieštukas paliečia vieną iš kitų veikėjų.',
+            'Parašykite komandas, kad kamera atpažintų rankos padėtį ir perkeltų pieštuką į rodomojo piršto x ir y koordinates.',
+            'Pasibaigus pakeiskite kaukę.',
+            'Pridėkite garso efektus.',
+        ],
+        'materials' => [
+            'Programavimo platforma https://ai.thestempedia.com (nemokama)',
+            'Mokytojo paskyra (nemokama)',
+            'Mokinio paskyra (nemokama)',
+            'Kompiuteriai su kamera',
+            'Interneto ryšys',
+        ]
+    ],
+    'circle-of-dots' => [
+        'title' => 'Apskritimas iš taškų',
+        'author' => 'Marin Popov',
+        'purposes' => [
+            'Parašyti kodą nupiešti liniją iš taškų',
+            'Parašyti kodą nupiešti liniją iš brūkšnelių',
+            'Parašyti kodą apskritimui nupiešti',
+            'Parašyti kodą nupiešti apskritimą iš taškų (brūkšnelių)',
+        ],
+        'description' => 'Nupiešti apskritimą iš taškų arba brūkšnelių',
+        'duration' => '40 minučių',
+        'instructions' => [
+            'Sukurkite taškų bloką.',
+            'Sukurkite brūkšnelių bloką.',
+            'Sukurkite apskritimą iš taškų.',
+            'Sukurkite apskritimą iš brūkšnelių.',
+        ]
+    ],
+    'coding-escape-room' => [
+        'title' => 'Programavimo pabėgimo kambarys',
+        'author' => 'Stefania Altieri ir Elisa Baraghini',
+        'purposes' => [
+            'Išmokyti ir (arba) išmokti programavimo sąvokas ir jas apmąstyti',
+            'Naudoti paprastas programavimo priemones',
+            'Lavinti skaitmeninį mąstymą ir problemų sprendimo įgūdžius'
+        ], 'description' => [
+            'Sukurkite programavimo pabėgimo kambarį, kaip šis:',
+            'Programavimu paremtam pasakojimui galima naudoti „Google Forms“, „Genially“, „Google Slides“ ar bet kokią kitą priemonę ;).'
+
+        ],
+        'duration' => '90 minučių',
+        'instructions' =>
+            'Mokinius galima suskirstyti į nedideles grupeles. Pirmiausia jie gali išbandyti žaidimą, o tada pagal šabloną sukurti savo:'
+        ,
+
+        'materials' => [
+            'Galima naudoti bet kokią priemonę („Google“ ir „Microsoft“ platformas dokumentams, pateiktims ir lentelėms kurti bei bendrinti). Tinka bet kokia su IRT ir programavimu susijusi programavimo sąvoka, priemonė ar asmenybė.'
+        ],
+        'example' => [
+            'Žaidžiant pristatomi IRT istorijai labai svarbūs asmenys ir pagrindinės kodavimo bei programavimo sąvokos. Tai geriausias būdas mokytis ir aktyviai dalyvauti. Šį žaidimą galima žaisti komandomis arba individualiai, kaip iššūkį ar varžybas. Tada mokiniai gali sukurti kažką panašaus ir ugdyti tokius gebėjimus kaip kūrybiškumas ir programavimo įgūdžiai.',
+            'Tai labai praktiškas išteklius, kurį galima naudoti pakartotinai ir lengva atkurti. Viena iš galimų priemonių yra „Google Forms“. Taip pat galima naudoti „Google Slides“, „Genial.ly“, „Emaze“ ar kitą priemonę, kuri padėtų kurti istorijas su pasirinkimu ir nuotykius.',
+            'Pabėgimo iššūkį sudaro keli etapai. Įveikus vieną, galima eiti toliau. Mokiniai turi sukurti programavimo viktoriną.',
+        ],
+    ],
+    'let-the-snake-run' => [
+        'title' => 'Gyvatėlė',
+        'author' => 'Ágota Klacsákné Tóth',
+        'purposes' => [
+            'Suprogramuoti gyvatėlės judėjimą „micro:bit“',
+            'Nustatyti tinkamą jungtinės animacijos išdėstymą ir laiką.'
+        ],
+        'description' => 'Mokiniai turi parašyti kodus, kad gyvatėlė judėtų per vienas šalia kito esančius „micro:bit“. Reikia padaryti taip, kad atrodytų, jog gyvatėlė pereina iš  vieno „micro:bit“ iki kitą.',
+        'duration' => '30 minučių',
+        'instructions' => [
+            'Sukurkite kelią, einantį per kelis vienas šalia kito esančius „micro:bit“ (pvz., sudarančius 2x2 kvadratą).',
+            'Gyvatėlei judant keliu rašykite kodus.',
+            'Dirbkite su savo įrenginiu, o tada sudėkite juos kartu ir paleiskite kodą.',
+            'Pagalvokite apie laiką ir vietą: gyvatėlei dingus iš vieno „micro:bit“, ji turi atsirasti kitame.',
+            'Papildomi iššūkiai: paleiskite muziką su „micro:bit v2“, kol gyvatėlė išeis iš jūsų įrenginio.',
+            'Sukurkite gyvatėlę keisdami šviesos diodų ryškumą.',
+            'Pabandykite sukurti ilgesnę gyvatėlę arba daugiau gyvatėlių.'
+        ],
+        'example' => [
+            'Štai šešių pikselių ilgio gyvatėlės su keturiais „micro:bit“, sudarančiais 2x2 kvadratą, pavyzdys:',
+            'Pirmo „micro:bit“ programavimas (tai gali padaryti mokytojas)',
+            'Šis „micro:bit“ inicijuoja visus kodus. Paspaudus mygtuką A, jis siunčia radijo signalą kitiems „micro:bit“.',
+            'Gyvatėlės judėjimo programavimas',
+            'Visi „micro:bit“ turi būti toje pačioje radijo grupėje kaip pirmasis.',
+            'Visa animacija prasideda gavus radijo signalą.',
+            'Pirmojo „micro:bit“ animacija matoma iš karto. Kiti laukia, kol gyvatėlė juos pasieks.',
+            'Laikas tarp dviejų etapų lemia gyvatėlės greitį.',
+        ], 'materials' => [
+            '„micro:bit“ (jei galima, kiekvienam mokiniui)',
+            'Nešiojamasis arba stalinis kompiuteris, kad būtų galima naudoti „makecode.microbit.org“ redaktorių'
+        ]
+    ],
+    'illustrate-a-joke' => [
+        'title' => 'Pokšto iliustravimas su „bitsy“',
+        'author' => 'Margot Schubert',
+        'purposes' => 'Sukurti nedidelį žaidimą, kuriame naudotojas rastų atsakymą į klausimą pokštą',
+        'description' => 'Mokiniai kuria žaidimą, kuriame naudotojas randa atsakymą į klausimą pokštą, kai figūrėlė pataiko į žaidimo lauke esantį objektą.',
+        'Šiame iššūkyje naudojamos pagrindinės „bitsy“ funkcijos.',
+        'instructions' => [
+            'Sugalvokite klausimą pokštą. Eikite į „bitsy“ ir padėkite naują projektą. Jums reikės:',
+            'avataro – veikėjo, kurį galima judinti;',
+            'balto katino violetiniame fone;',
+            'automatiškai sukurto aprašymo;',
+            'objekto, į kurį turi eiti avataras;',
+            'kambario – jūsų programos fono;',
+            'dviejų žinučių: klausimo ir atsakymo.',
+            'Užbaigtą žaidimą galima atsisiųsti kaip html failą.'
+        ],
+        'example' => 'Šioje svetainėje rasite pokšto pavyzdį ir nuorodą į skaitmeninę lentą:',
+        'materials' => 'Naršyklėje veikianti programa „bitsy“'
+    ],
+    'app-that-counts-in-several-languages' => [
+        'title' => 'Keliomis kalbomis skaičiuojanti programėlė',
+        'author' => 'Samuel Branco',
+        'purposes' => [
+            'Išmokti sukurti paprastą programėlę',
+            'Išmokti programuoti naudojant blokus',
+            'Išmokti pridėti etiketes, mygtukus, vaizdus, jutiklius ir mediją',
+            'Išmokti tvarkyti elementus programėlės ekrane'
+        ],
+        'description' => 'Programėlėje vienu mygtuko paspaudimu galima skaičiuoti keliomis kalbomis. Naudotojui papurčius išmanųjį telefoną, skaičius grįžta į nulį. Iššūkio tikslas – pridėti dar vieną kalbą.',
+        'instructions' => [
+            'Šiame iššūkyje reikia apibrėžti kitą kalbą, kuria norite, kad programėlė skaičiuotų.',
+            'Tada iš interneto (pvz., iš „Pixabay“ ar „Unsplash“) atsisiųskite tos šalies vėliavą ir įkelkite ją į platformą „MIT APP Inventor“ naudodami elementą „Flag“ ypatybėje „Picture“ (paveikslėlis).',
+            'Tada išsiaiškinkite, kaip angliškai parašyti šalies pavadinimą ir kaip tos šalies kalba pasakyti „išeiti“ ir „paspausk mane“.',
+            'Galiausiai pridėkite reikiamus blokus, kad programėlė veiktų naująja kalba.',
+        ],
+        'materials' => [
+            'Programėlei sukurti reikia stalinio arba nešiojamojo kompiuterio su interneto ryšiu.',
+            'Sukurkite paskyrą platformoje „MIT APP Inventor“, kurią rasite svetainėje <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>.',
+            'Tam, kad sukurtą programėlę būtų galima išbandyti, į išmanųjį telefoną reikia įdiegti programėlę „MIT AI2 Companion“.'
+        ]
+    ],
+    'coding-with-art-through-storytelling' => [
+        'title' => 'Programavimas pasitelkiant meną ir pasakojimą',
+        'author' => 'Maria Tsapara ir Anthi Arkouli',
+        'purposes' => [
+            'Ugdyti stebėjimo, aiškinimo ir klausimų kėlimo įgūdžius pasitelkiant meną',
+            'Naudoti kūrybiškumą ir bendradarbiauti su kitais siekiant bendro tikslo',
+            'Sukurti algoritmą istorijai perpasakoti',
+        ],
+        'description' => 'Šiame iššūkyje mokiniai semsis įkvėpimo iš meno kūrinio, kurs istoriją ir ją iliustruos. Tada jie bandys perpasakoti istoriją naudodami programuojamą robotikos rinkinį arba nenaudodami jokių skaitmeninių priemonių.',
+        'materials' => [
+            'Šią užduotį galima atlikti be skaitmeninių priemonių arba naudojant mokomąjį programuojamą robotą, pavyzdžiui, „beebot“, „bluebot“ ar robotą pelę.',
+            '„beebot“ rodyklių kortelės arba rodyklių kortelės, jei nenaudojamos skaitmeninės priemonės',
+            'graikų kalba',
+            'Daugiau informacijos apie rinkinį „Project Zero‘s Thinking Routine“ pateikiama'
+
+        ],
+        'example' => [
+            'Mokytojas kartu su mokiniais modeliuoja, kaip su kortelėmis sukurti algoritmą, kuris duotų nurodymus „Bee-Bot“ ar kitam robotui, kaip ant kilimėlio pasiekti pirmąjį istorijos įvykį. Mokiniai dirba 3–4 žmonių komandose, kad sukurtų algoritmą, pagal kurį robotas galėtų pereiti prie kitos sekos. Mokiniai išbando savo algoritmus ant klasės kilimėlio ir, jei reikia, pašalina klaidas.',
+            'Jie toliau keliauja per tiek istorijos įvykių, kiek tik gali',
+            'Šią užduotį galima atlikti ir be skaitmeninių priemonių.',
+            'Vienas vaikas vaidina robotą, kitas – programuotoją. Programuotojas, naudodamas rodyklių korteles, sukuria algoritminį kelią, kad padėtų robotui pereiti nuo vieno paveikslėlio prie kito ir perpasakoti istoriją. Kiekvieną kartą, kai robotas atsiduria paveikslėlyje, jo prašoma papasakoti tam tikrą istorijos dalį.',
+        ],
+        'instructions' => [
+            'Mokytojas paprašo mokinių įsižiūrėti į paveikslą arba nuotrauką.',
+            'Kurdami istoriją, jie naudojasi mąstymo tvarka „Beginning, Middle, End“ (pradžia, vidurys, pabaiga) (Harvardo universiteto projektas „Zero“).',
+            'Mokytojas klausia mokinių: „Jei šis paveikslas yra istorijos pradžia, vidurys arba pabaiga, kas galėtų nutikti toliau / galėjo nutikti prieš tai / galėtų nutikti pabaigoje?“',
+            'Mokiniai iliustruoja istorijos įvykius.',
+            'Mokiniai prisimena istoriją ir sudeda įvykius į tinklelį. Naudodamiesi rodyklių kortelėmis, jie sukuria algoritmą, padedantį „bee-bot“ perpasakoti istoriją.'
+        ],
+    ],
+    'coding-with-legoboost' => [
+        'title' => 'Kodavimas ir programavimas programoje „Scratch“ su plėtiniu „LegoBoost“',
+        'author' => 'Lidia Ristea',
+        'purposes' => [
+            'Kurti modelius naudojant „LegoBoost“',
+            'Lavinti programavimo įgūdžius programoje „Scratch“',
+            'Programuoti robotus naudojant paprastas ir sudėtingas komandas'
+        ],
+        'description' => 'Šiame iššūkyje mokiniai naudos „Scratch“ plėtinį „LegoBoost“ ir į programą įves kodus, kad robotai galėtų judėti pirmyn, atgal, išvengti kliūčių ir vykdyti balso komandas.',
+        'duration' => '120 minučių',
+        'instructions' => [
+            'Prisijunkite prie programos „Scratch.mit.edu“.',
+            'Paleiskite „Scratch Link“ ir nešiojamajame kompiuteryje aktyvinkite „Bluetooth“.',
+            'Spustelėkite „Add an Extension from Scratch“ (pridėti plėtinį iš „Scratch“) ir pasirinkite „LegoBoost“.',
+            'Pridėkite ES programavimo savaitės paveikslėlį.',
+            'Nustatykite, kad du AB varikliai būtų ON (įjungti), o priėjus raudoną kliūtį – OFF (išjungti).',
+            'Žalioje spalvoje variklis A yra įjungtas, o juodoje spalvoje – variklis B.',
+            'Pakeliui bus nustatytos žalios, raudonos ir juodos spalvų kliūtys.',
+            'Naudodami rodykles pridėkite judėjimo ir posūkių komandas ir teksto keitimą į kalbą, kai susiduriama su kliūtimi.',
+            'Išbandykite!'
+        ]
     ]
+
+
 ];

@@ -44,7 +44,7 @@ class UKDigitallCharity extends Command {
 
         Excel::import(
             new UKDigitAllCharityEventsImport(),
-            'uk-digitall-charity.xlsx',
+            'digitall-2023.xlsx',
             'excel'
         );
     }
