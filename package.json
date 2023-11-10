@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@prettier/plugin-php": "^0.17.3",
-    "axios": "^0.25",
+    "axios": "^1.6",
     "bootstrap": "^4.5.2",
     "cross-env": "^5.2.1",
     "cross-spawn": "^6.0.5",
