@@ -65,11 +65,11 @@
 
 
     </td>
-    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-center">
-              <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                {{$event->highlighted_status}}
-              </span>
-    </td>
+{{--    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-center">--}}
+{{--              <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">--}}
+{{--                {{$event->highlighted_status == 'PROMOTED'}}--}}
+{{--              </span>--}}
+{{--    </td>--}}
     <td class="px-6 py-4 whitespace-no-wrap text-center border-b border-gray-200 text-sm leading-5 font-medium">
         {{--        <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>--}}
         <span class="inline-flex rounded-md shadow-sm">
