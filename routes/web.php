@@ -475,9 +475,6 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
     );
 });
 
-
-
-
 Route::group(['middleware' => [
     'auth',
     'role:super admin|leading teacher|leading teacher admin']], function () {
