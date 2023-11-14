@@ -91,7 +91,7 @@
                     @role('ambassador')
                     <li>
                         <img src="/images/user_menu_volunteers.svg" class="icon">
-                        <a href="{{route('.online-events')}}">
+                        <a href="{{route('admin.online-events')}}">
                             @lang('menu.online_events')
                         </a>
                     </li>
