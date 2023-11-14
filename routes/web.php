@@ -144,6 +144,11 @@ Route::get(
     'StaticPageController@static'
 )->name('training.module-17');
 
+Route::get(
+    '/training/sos-water',
+    'StaticPageController@static'
+)->name('training.module-18');
+
 Route::get('/resources/CodingAtHome', 'CodingAtHomeController@show')->name(
     'coding@home'
 );
