@@ -51,7 +51,8 @@ class BulgariaEventsImport extends DefaultValueBinder implements WithCustomValue
                 "end_date" => $this->parseDate($row['end_date']),
                 "geoposition" => $row["latitude"] . "," . $row["longitude"],
                 "longitude" => $row["longitude"],
-                "latitude" => $row["latitude"]
+                "latitude" => $row["latitude"],
+                'mass_added_for' => "Excel"
             ]);
 
             $event->save();

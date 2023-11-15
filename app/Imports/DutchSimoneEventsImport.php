@@ -58,7 +58,8 @@ class DutchSimoneEventsImport extends DefaultValueBinder implements
             'geoposition' => $row['latitude'] . ',' . $row['longitude'],
             'longitude' => $row['longitude'],
             'latitude' => $row['latitude'],
-            'language' => strtolower($row['language'])
+            'language' => strtolower($row['language']),
+            'mass_added_for' => "Excel"
         ]);
 
         $event->save();
