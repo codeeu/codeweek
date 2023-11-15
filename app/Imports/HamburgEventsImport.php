@@ -56,7 +56,8 @@ class HamburgEventsImport extends DefaultValueBinder implements WithCustomValueB
             "end_date" => $this->parseDate($row['end_date']),
             "geoposition" => $row["latitude"] . "," . $row["longitude"],
             "longitude" => $row["longitude"],
-            "latitude" => $row["latitude"]
+            "latitude" => $row["latitude"],
+            'mass_added_for' => "Excel"
         ]);
 
         $event->save();
