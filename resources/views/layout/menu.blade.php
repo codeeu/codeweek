@@ -88,10 +88,19 @@
                         </a>
                     </li>
                     @endrole
-                    @role('ambassador|super admin')
+                    @role('ambassador')
                     <li>
                         <img src="/images/user_menu_volunteers.svg" class="icon">
                         <a href="{{route('admin.online-events')}}">
+                            @lang('menu.online_events')
+                        </a>
+                    </li>
+
+                    @endrole
+                    @role('super admin')
+                    <li>
+                        <img src="/images/user_menu_volunteers.svg" class="icon">
+                        <a href="{{route('promoted_events')}}">
                             @lang('menu.online_events')
                         </a>
                     </li>
