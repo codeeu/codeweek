@@ -5,26 +5,24 @@ namespace App\Console\Commands\excel;
 use App\Imports\DutchDanceEventsImport;
 use App\Imports\DutchMoorlagEventsImport;
 use App\Imports\DutchSimoneEventsImport;
-use App\Imports\UKDigitAllCharityEventsImport;
-use App\Imports\UKDigitAllEventsImport;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Facades\Excel;
 
-class UKDigitall extends Command {
+class Dutch2023 extends Command {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'excel:ukdigital';
+    protected $signature = 'excel:dutch-2023';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'UK DigitAll';
+    protected $description = '2023 Dutch Activities';
 
     /**
      * Create a new command instance.
@@ -41,11 +39,11 @@ class UKDigitall extends Command {
      * @return int
      */
     public function handle() {
-        Log::info('Loading UK Digitall');
+        Log::info('Loading 2023 Dutch File');
 
         Excel::import(
-            new UKDigitAllEventsImport(),
-            'uk-digitall-2023.xlsx',
+            new DutchSimoneEventsImport(),
+            'dutch-2023-14-11.xlsx',
             'excel'
         );
     }
