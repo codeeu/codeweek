@@ -71,7 +71,8 @@ DutchDanceEventsImport extends DefaultValueBinder implements
             'geoposition' => $row['longitude'] . ',' . $row['latitude'],
             'longitude' => $row['latitude'],
             'latitude' => $row['longitude'],
-            'language' => strtolower($row['language'])
+            'language' => strtolower($row['language']),
+            'mass_added_for' => "Excel"
         ]);
 
         $event->save();

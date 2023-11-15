@@ -128,7 +128,8 @@ class MeetAndCodeRSSItem extends Model
             "longitude" => $this->lon,
             "latitude" => $this->lat,
             "geoposition" => $this->lat . "," . $this->lon,
-            "language" => MeetAndCodeHelper::getLanguage($this->link)
+            "language" => MeetAndCodeHelper::getLanguage($this->link),
+            'mass_added_for' => "RSS meet_and_code"
         ]);
 
         $event->save();

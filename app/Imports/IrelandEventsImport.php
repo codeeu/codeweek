@@ -77,7 +77,8 @@ class IrelandEventsImport extends DefaultValueBinder implements
             'geoposition' => $row['latitude'] . ',' . $row['longitude'],
             'longitude' => str_replace(',','.',$row['longitude']),
             'latitude' => str_replace(',','.',$row['latitude']),
-            'language' => 'en'
+            'language' => 'en',
+            'mass_added_for' => "Excel"
         ]);
 
         $event->save();
