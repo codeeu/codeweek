@@ -59,7 +59,8 @@ class EventsImport extends DefaultValueBinder implements WithCustomValueBinder, 
             "end_date" => Carbon::parse($this->parseDate($row["end_date"]))->toDateTimeString(),
             "geoposition" => $row["latitude"] . "," . $row["longitude"],
             "longitude" => $row["longitude"],
-            "latitude" => $row["latitude"]
+            "latitude" => $row["latitude"],
+            'mass_added_for' => "Excel"
         ]);
 
 

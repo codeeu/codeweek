@@ -60,7 +60,8 @@ class CoderDojoEventsImport extends DefaultValueBinder implements WithCustomValu
                 "longitude" => $row["longitude"],
                 "latitude" => $row["latitude"],
                 "language"=> "nl",
-                "approved_by"=>19588
+                "approved_by"=>19588,
+                'mass_added_for' => "Excel"
             ]);
 
             $event->save();

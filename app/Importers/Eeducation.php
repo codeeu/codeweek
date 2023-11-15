@@ -65,7 +65,7 @@ class Eeducation implements Importers
             "geoposition" => $this->remote->lat . "," . $this->remote->lng,
             "longitude" => $this->remote->lng,
             "latitude" => $this->remote->lat,
-            "mass_added_for" => "Eeducation"
+            "mass_added_for" => "RSS Eeducation"
         ]);
 
         $event->save();
