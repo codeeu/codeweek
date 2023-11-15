@@ -63,7 +63,8 @@ class Event extends Model
         'picture_detail',
         'language',
         'location_id',
-        'leading_teacher_tag'
+        'leading_teacher_tag',
+        'mass_added_for'
     ];
 
     protected $casts = [
