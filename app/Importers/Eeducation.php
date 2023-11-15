@@ -64,7 +64,8 @@ class Eeducation implements Importers
             "end_date" => Carbon::parse($this->remote->enddate)->toDateTimeString(),
             "geoposition" => $this->remote->lat . "," . $this->remote->lng,
             "longitude" => $this->remote->lng,
-            "latitude" => $this->remote->lat
+            "latitude" => $this->remote->lat,
+            "mass_added_for" => "RSS Eeducation"
         ]);
 
         $event->save();

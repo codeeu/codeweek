@@ -55,6 +55,7 @@ class MagentaEventsImport extends DefaultValueBinder implements WithCustomValueB
             "longitude" => $row["longitude"],
             "latitude" => $row["latitude"],
             "language" => strtolower($row["language"]),
+            'mass_added_for' => "Excel"
         ]);
 
         $event->save();

@@ -73,6 +73,7 @@ class ReportedEventsImport extends DefaultValueBinder implements
             'participants_count' => 30,
             'average_participant_age' => 10,
             'percentage_of_females' => 50,
+            'mass_added_for' => "Excel"
         ]);
 
         $event->save();
