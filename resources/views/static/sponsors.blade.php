@@ -56,7 +56,7 @@
                     <a href="https://microbit.org/" target="_blank"><img src="img/partners/microbit.png" alt="Micro:bit"></a>
                 </li>
                 <li>
-                    <a href="" target="https://www.open-roberta.org/"><img src="img/partners/open_roberta.png" alt="Open Roberta"></a>
+                    <a href="https://www.open-roberta.org/" target="_blank"><img src="img/partners/open_roberta.png" alt="Open Roberta"></a>
                 </li>
                 <li>
                     <a href="https://publiclibraries2030.eu/" target="_blank"><img src="img/partners/colabora_PublicLibraries2030.png" alt="Public Libraries 2030"></a>
