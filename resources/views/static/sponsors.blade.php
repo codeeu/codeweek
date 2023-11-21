@@ -26,6 +26,9 @@
                     <a href="https://www.amazonfutureengineer.com/global" target="_blank"><img src="img/partners/afe.png" alt="Amazon Future Engineer"></a>
                 </li>
                 <li>
+                    <a href="https://code.org/" target="_blank"><img src="img/partners/code-org.png" alt="Code.org"></a>
+                </li>
+                <li>
                     <a href="http://coderdojo.org" target="_blank"><img src="img/partners/colabora_coderdojo.png" alt="CoderDojo"></a>
                 </li>
                 <li>
@@ -50,20 +53,21 @@
                     <a href="https://meet-and-code.org/" target="_blank"><img src="img/partners/meet_and_code_logo.png" alt="Meet & Code"></a>
                 </li>
                 <li>
-                    <a href="http://scratch.mit.edu/codeweekeu" target="_blank"><img src="img/partners/colabora_scratch.png" alt="Scratch"></a>
+                    <a href="https://microbit.org/" target="_blank"><img src="img/partners/microbit.png" alt="Micro:bit"></a>
+                </li>
+                <li>
+                    <a href="" target="https://www.open-roberta.org/"><img src="img/partners/open_roberta.png" alt="Open Roberta"></a>
                 </li>
                 <li>
                     <a href="https://publiclibraries2030.eu/" target="_blank"><img src="img/partners/colabora_PublicLibraries2030.png" alt="Public Libraries 2030"></a>
                 </li>
                 <li>
+                    <a href="http://scratch.mit.edu/codeweekeu" target="_blank"><img src="img/partners/colabora_scratch.png" alt="Scratch"></a>
+                </li>
+                <li>
                     <a href="https://mooc.uniurb.it/wp/codeweekmooc/" target="_blank"><img src="img/partners/urbinocarlo.png" alt="CodeWeek in Your Classroom, Now!"></a>
                 </li>
-                <li>
-                    <a href="https://microbit.org/" target="_blank"><img src="img/partners/microbit.png" alt="Micro:bit"></a>
-                </li>
-                <li>
-                    <a href="https://code.org/" target="_blank"><img src="img/partners/code-org.png" alt="Code.org"></a>
-                </li>
+
             </ul>
 
         </section>
