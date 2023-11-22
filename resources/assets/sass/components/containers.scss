@@ -239,12 +239,12 @@
 @media (min-width:1025px) {
   .codeweek-content-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 15px;
   }
   .hackathons-content-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 15px;
   }
 }
