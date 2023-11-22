@@ -58,7 +58,7 @@
                 </a>
             </div>
             <p>
-                For 2023, there are six countries in focus. Follow the links for more information on challenge areas,
+                For 2023, there are five countries in focus. Follow the links for more information on challenge areas,
                 local organizers, and important dates:
             </p>
             <div class="align-center">
