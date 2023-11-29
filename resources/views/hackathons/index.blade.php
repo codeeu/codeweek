@@ -49,17 +49,27 @@
             <h1 class="align-center">EU Code Week Hackathon 2023</h1>
 
             <p>
-                The central theme for 2023 is “Code to problem-solve and give life to your dreams”. The winning teams of
-                each of the participating countries will challenge themselves with their ideas EU Code Week Hackathon
-                final will be Friday 24 November, follow this link for more information:<br/><br/></p>
+                The central theme for 2023 has been “Code to problem-solve and give life to your dreams”. The winning team of each of the participating countries challenged themselves with their ideas. EU Code Week Hackathon final has been Friday 24 November<br/><br/></p>
             <div class="align-center" style="margin-bottom:10px;">
                 <a href="https://eventornado.com/event/final-eu-code-week-hackathon-2023#home">
                     <img src="/images/hackathons/banner_final.png">
                 </a>
             </div>
             <p>
-                For 2023, there are five countries in focus. Follow the links for more information on challenge areas,
-                local organizers, and important dates:
+                Friday 24 November marked the culmination of the EU Code Week Hackathon Challenge, and we are super excited to share with you that the winning team is the Unyo’s Team from Albania.
+                The official ranking is:
+            </p>
+                <ol style="margin-left:auto; margin-right:auto">
+                <li>Winner – Albania</li>
+                <li>Second Classified – Latvia</li>
+                <li>Third Classified – Greece</li>
+                <li>Fourth Classified – Italy</li>
+                <li>Fifth Classified – Ireland</li>
+            </ol>
+
+<p>
+
+    Read more about the Final <a href="https://blog.codeweek.eu/tech-triumphs-winner-announced-in-eu-code-week-hackathon-finale/">here</a>.
             </p>
             <div class="align-center">
             <section class="hackathons-content-grid">
