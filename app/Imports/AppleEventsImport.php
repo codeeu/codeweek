@@ -54,7 +54,8 @@ class AppleEventsImport extends DefaultValueBinder implements WithCustomValueBin
             "geoposition" => $row["latitude"] . "," . $row["longitude"],
             "longitude" => $row["longitude"],
             "latitude" => $row["latitude"],
-            'language' => strtolower(explode("_", $row['language'])[0])
+            'language' => strtolower(explode("_", $row['language'])[0]),
+            'mass_added_for' => "Excel"
         ]);
 
         $event->save();

@@ -12,6 +12,13 @@ use Illuminate\Support\Str;
 
 trait GermanTraits
 {
+
+    private function loadJson($url){
+        $client = new \GuzzleHttp\Client();
+        $guzzle = $client->request('get', $url);
+
+        return json_decode($guzzle->getBody(), true);
+    }
     /**
      * @param $json
      */
@@ -24,7 +31,6 @@ trait GermanTraits
         foreach ($json as $item) {
             $className = '\App\RSSItems\\' . $city . 'RSSItem';
             $RSSitem = new $className;
-
 
             $RSSitem->uid = $item['uid'];
             $RSSitem->title = $item['title'];
@@ -41,7 +47,7 @@ trait GermanTraits
             $RSSitem->user_publicEmail = $item['user']['publicEmail'];
             $RSSitem->user_type = $item['user']['type']['identifier'] ?? '';
             $RSSitem->user_website = $item['user']['www'];
-            $RSSitem->activity_type = $item['type']['identifier'];
+            $RSSitem->activity_type = $item['type']['identifier'] ?? 'invite-in-person';
             $RSSitem->tags = trim(implode(";", Arr::pluck($item['tags'], 'title')));
             $RSSitem->themes = trim(implode(",", Arr::pluck($item['themes'], 'identifier')));
             $RSSitem->audience = trim(implode(",", Arr::pluck($item['audience'], 'identifier')));
@@ -109,7 +115,8 @@ trait GermanTraits
             "pub_date" => now(),
             "created" => now(),
             "updated" => now(),
-            "codeweek_for_all_participation_code" => "cw22-$city",
+            "codeweek_for_all_participation_code" => "cw23-$city",
+            "mass_added_for" => "API codeweek_de",
             "start_date" => $this->eventStartDate,
             "end_date" => $this->eventEndDate,
             "longitude" => $this->longitude,

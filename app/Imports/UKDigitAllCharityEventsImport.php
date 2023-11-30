@@ -33,7 +33,7 @@ class UKDigitAllCharityEventsImport extends DefaultValueBinder implements
      */
     public function model(array $row) {
 //        dd($this->parseDate($row['start_date']));
-//        dd($row);
+
         $event = new Event([
             'status' => 'APPROVED',
             'title' => $row['activity_title'],
@@ -52,13 +52,14 @@ class UKDigitAllCharityEventsImport extends DefaultValueBinder implements
             'pub_date' => now(),
             'created' => now(),
             'updated' => now(),
-            'codeweek_for_all_participation_code' => 'cw22-DigitAll',
+            'codeweek_for_all_participation_code' => 'cw23-DigitAll',
             'start_date' => $this->parseDate($row['start_date']),
             'end_date' => $this->parseDate($row['end_date']),
             'geoposition' => $row['latitude'] . ',' . $row['longitude'],
             'longitude' => $row['longitude'],
             'latitude' => $row['latitude'],
-            'language' => strtolower($row['language'])
+            'language' => strtolower($row['language']),
+            'mass_added_for' => "Excel"
         ]);
 
         $event->save();

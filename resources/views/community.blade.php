@@ -106,7 +106,7 @@
                                 @if($ambassador->twitter)
                                     <a href="http://twitter.com/{{ $ambassador->twitter }}"
                                        target="_blank" class="codeweek-svg-button">
-                                        <img src="/images/twitter.svg" alt="Twitter">
+                                        <img src="/images/x-twitter.svg" alt="Twitter">
                                     </a>
                                 @endif
                                 {{--Ambassador website--}}
