@@ -18,7 +18,7 @@
             </li>
 
             <li>
-                <a href="{{route('resources')}}">@lang('menu.resources')</a>
+                <a href="javascript:void(null);">@lang('menu.resources')</a>
                 <ul>
                     <li><a href="{{route('coding@home')}}">@lang('menu.coding@home')</a></li>
                     <li><a href="/podcasts">Podcasts</a></li>
@@ -88,10 +88,19 @@
                         </a>
                     </li>
                     @endrole
-                    @role('ambassador|super admin')
+                    @role('ambassador')
                     <li>
                         <img src="/images/user_menu_volunteers.svg" class="icon">
                         <a href="{{route('admin.online-events')}}">
+                            @lang('menu.online_events')
+                        </a>
+                    </li>
+
+                    @endrole
+                    @role('super admin')
+                    <li>
+                        <img src="/images/user_menu_volunteers.svg" class="icon">
+                        <a href="{{route('promoted_events')}}">
                             @lang('menu.online_events')
                         </a>
                     </li>
@@ -230,7 +239,7 @@
                         </div>
                     </div>
                     <div class="round-button menu-trigger twitter-menu">
-                        <img src="/images/twitter.svg" alt="Twitter" class="button-icon">
+                        <img src="/images/x-twitter.svg" alt="Twitter" class="button-icon">
                         <div class="menu-dropdown">
                             <a class="twitter-timeline" href="https://twitter.com/CodeWeekEU" data-width="400"
                                data-height="300" data-chrome="noscrollbar" data-link-color="#E95F28"

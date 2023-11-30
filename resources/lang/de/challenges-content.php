@@ -479,5 +479,386 @@ return [
             'Der Fitness-Prototyp kann mit dem Calliope mini erstellt, aber auch im Simulator ausprobiert werden. Die Challenge wird im MakeCode-Editor durch Programmierung einer einfachen Code Sequenz durchgeführt (siehe Screenshot).',
         ],
 
+    ],
+
+
+    'common' => [
+        'share' => "Teilen Sie den Link oder QR - Code Ihres Projekts auf Instagram oder Facebook, fügen Sie den Hashtag #CodeWeekChallenge ein und erwähnen Sie @CodeWeekEU.",
+        'audience' => [
+            "Lehrkräfte und Erzieher * innen",
+            "Schüler * innen einer Grundschule(6 bis 12 Jahre)",
+            "Schüler * innen der Mittelstufe(12 bis 16 Jahre)",
+            "Schüler * innen der Oberstufe(16 bis 18 Jahre)",
+        ],
+    ],
+    'code-a-dice' => [
+        'title' => "Programmiere einen Würfel",
+        'author' => 'Fabrizia Agnello',
+        'purposes' => [
+            "Programmiere interaktive Rätsel",
+            "Programmieren einer Simulation eines sich zufällig bewegenden Objekts, das anstelle des echten Objekts verwendet wird"
+        ],
+        'description' =>
+            "In dieser Challenge programmierst du einen Würfel, sodass er auf Befehl zufällig fällt . Du kannst jede Art Würfel mit unterschiedlich vielen Seiten auswählen, wie die Würfel für Rollenspiele, und auch Geräusche einfügen . ",
+        'instructions' => [
+            "Melde dich bei Scratch an",
+            "Wähle einen Hintergrund",
+            "Erstelle deinen Würfelanzeiger oder suche online und lade ihn in dein Programm hoch",
+            "Erstelle so viele Bilder wie die Würfel Seiten haben, sodass jede Seite eine andere Zahl anzeigt",
+            "Entscheide, wie die Würfel geworfen werden(über die Tastatur, per Klick auf den Würfel usw .) und schreibe den Code",
+            "Programmiere den Würfel so, dass er am Ende des Würfelns ein anderes Bild anzeigt",
+            "Füge Soundeffekte ein",
+        ],
+        'example' => "Wirf einen 20er - Würfel"
+    ],
+    'personal-trainer' => [
+        'title' => "Personal Trainer mit micro:bit",
+        'author' => '',
+        'purposes' => [
+            "micro:bit programmieren, um den Buzzer und das LED - Panel zu verwenden",
+            "Erstellen eines persönlichen Geräts zur Überwachung der körperlichen Aktivität",
+            "micro:bit programmieren, um die Gesundheit durch Sport zu fördern",
+        ],
+        'description' =>
+            "Bei dieser Challenge kannst du micro:bit so programmieren, dass es Wiederholungen von Sportübungen sowie Ruhezeiten aufzeichnet . Du kannst deine körperliche Aktivität in der Schule, zu Hause oder im Freien aufzeichnen . "
+        ,
+        'instructions' => [
+            "Wenn A + B, erstelle einen 3 - Sekunden - Countdown mit dem Geräusch einer Musiknote zu jeder Sekunde und zeige das Wort LOS an!",
+            "Zeige bei der ersten Übung für 20 Sekunden ein blinkendes 2x2 - Quadrat an . Spiele dann ein Geräusch ab und fixiere das Quadrat . Während der Restzeit muss für 10 Sekunden ein weiteres blinkendes Bild angezeigt werden . Spiele anschließend ein Geräusch ab . ",
+            "Wiederhole diese Aktion für die nächste Übungszeit mit einem 3x3 - Quadrat . Wiederhole diese Aktionen, bis ein 5x5 - Quadrat angezeigt wird . ",
+        ],
+        'duration' => "30 - 40 Minuten",
+    ],
+    'create-a-spiral' => [
+        'title' => "Erschaffe eine Spirale",
+        'author' => 'Lydie El-Halougi',
+        'purposes' => [
+            "Lernen und üben von Schleifen und Variablen . ",
+            "Fördern der Kreativität beim Programmieren . "],
+        'description' => "Bei dieser Challenge schreibst du mit Scratch ein Projekt, um eine Spirale zu erschaffen . Dabei verwendest du Stiftblöcke, eine Schleife und eine Variable . ",
+
+        'instructions' => [
+            "Die Stiftblöcke",
+            "Erstelle ein neues Projekt und nenne es Spirale . ",
+            "Klicke auf die lila Schaltfläche ‚Erweiterung hinzufügen‘ unten links im Fenster",
+            "Wähle ‚Stift‘: die Stiftblöcke sind jetzt für dein Projekt verfügbar!",
+            "Um dein Projekt zu beginnen, ziehe den Block ‚wenn grüne Flagge angeklickt‘:",
+            "Du musst mit einer leeren Seite beginnen: füge mit den Stiftblöcken den Block ‚alles löschen‘ hinzu:",
+            "Du beginnst die Spirale in der Mitte der Fläche, dein Zeiger muss also in die Mitte(0, 0) bewegt werden:",
+            "Du kannst den Zeiger bewegen, ohne zu zeichnen, oder beim Bewegen zeichnen:",
+            "wenn du zeichnen möchtest, verwende den Block Stift runter",
+            "wenn du nicht zeichnen möchtest, verwende den Block Stift hoch",
+            "Jetzt möchtest du zeichnen!Füge den Block ‚Stift runter‘ hinzu:",
+            "Das Hexagon",
+            "Füge die folgenden Blöcke in dein Projekt ein:",
+            "Du hast jetzt ein Sechstel deines Hexagons . Du musst diese Abfolge 6 - Mal wiederholen:",
+            "Die Spirale",
+            "Um eine Spirale zu erschaffen, musst du zur Länge der jeweils nächsten Seite 2 hinzufügen . ",
+            "Dafür verwenden wir eine < strong>Variable .</strong > ",
+            "Klicke bei den Variablenblöcken auf ‚Eine Variable erstellen‘",
+            "Nenne sie Länge und klicke auf OK:",
+            "Die Spirale wird wachsen, du musst also klein anfangen: Setze die erste Länge auf 10 fest und füge diesen Block vor der Schleife ein . ",
+            "Füge die Variable ‚Länge‘ in den Block ‚Schritte ... bewegen‘ ein",
+            "Damit die Spirale wächst, muss die Länge bei jeder Schleife größer werden: Füge den Block unten am Ende der Schleife ein:",
+            "Hier ist dein aktuelles Projekt:",
+            "Eine wunderschöne Spirale",
+            "Du hast eine Spirale gezeichnet!Damit sie nie endet, ersetze die Schleife ‚wiederhole 6‘ mit der Schleife ‚unendlich‘:",
+            "Für eine farbige Spirale füge den folgenden Block in die Schleife ein:",
+            "Wenn du von vorn beginnst, zeichnet der Zeiger eine ungewollte Linie . Um das zu verhindern, füge den Block ‚Stift hoch‘ zu Beginn des Projekts ein . ",
+            "Hier ist das fertige Projekt:",
+            "Glückwunsch!Du hast eine wunderschöne Spirale geschaffen!",
+        ],
+
+    ],
+    'play-against-ai' => [
+        'title' => "Erstelle und spiele gegen KI – Stein, Schere, Papier",
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            "Verstehen, wie der Zyklus des maschinellen Lernens funktioniert . ",
+            "Aufbauen eines Modells des maschinellen Lernens mit Teachable Machine",
+            "Kennenlernen von Pictoblox und importieren des erstellten Modells in das Projekt",
+            "Szene und Charaktere erschaffen, Variablen erschaffen und initialisieren in Pictoblox",
+            "Spiel beginnen, Spielerzüge erkennen, zufällige KI - Züge programmieren",
+            "ein Spiel erstellen und testen, bei dem der Gegner bei Stein, Schere, Papier künstliche Intelligenz ist . "
+
+        ],
+        'description' => "Wir werden mit Teachable Machine ein Modell aus Bildern aus drei Klassen erstellen: Stein, Schere, Papier . Das Modell wird in Pictoblox hochgeladen und für ein Spiel verwendet, das wir gegen eine KI spielen können . ",
+        'duration' => "90 Minuten",
+        'instructions' => [
+            "Erstelle in Teachable Machine ein neues Bildprojekt mit 3 Klassen namens Stein, Schere und Papier . Erfasse für jede Klasse mit der Kamera mindestens 400 Bilder . Sorge für einen freien Hintergrund . Trainiere und exportiere das Modell . Lade das Modell hoch und kopiere den Link . ",
+            "Erstelle auf der Pictoblox - Seite ein kostenfreies Konto . Füge eine Erweiterung für maschinelles Lernen hinzu und lade das Modell hoch . Erstelle die Szene, Variablen und Zeiger . Starte das Spiel, erkenne Spielerzüge und die der KI und bestimme, wer die Runde gewinnt . ",
+            "Trainiere die Daten für das Spiel . ",
+            "Teste das Modell . ",
+            "Exportiere das Modell . ",
+            "Füge die Erweiterung für maschinelles Lernen hinzu und lade das Modell . ",
+            "Erstelle die Szene, Variablen und Zeiger . ",
+            "Initialisiere das Spiel . ",
+            "Erkenne die Spielerzüge . ",
+            "Lege zufällige KI - Züge fest . ",
+            "Sende zufällige KI - Züge . ",
+            "Erstelle drei Blöcke . Wer gewinnt die Runde ? ",
+            "Prüfe, ob der Spieler die Runde gewinnt . ",
+            "Prüfe, ob die KI die Runde gewinnt . ",
+            "Prüfe, ob die Runde unentschieden ist . ",
+            "Programmiere Blöcke . ",
+            "Zeiger Schere, Stein, Papier",
+        ]
+    ],
+    'air-drawing-with-AI' => [
+        'title' => "Luftzeichnen mit KI",
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            "Schreiben eines Programms mit der Erweiterung zur Erkennung des menschlichen Körpers, um die Bewegungen von Fingern vor der Kamera zu erkennen . ",
+            "programmieren mit einfachen Blöcken in wenigen Zeilen . ",
+            "Beispiel für die Verwendung von KI"
+        ],
+        'description' => "Erstellung eines Programms, über das der Nutzende mit der Hand(Zeigefinger) vor der Kamera in der Luft zeichnen kann . Das Gezeichnete wird automatisch in Pictoblox angezeigt . ",
+        'instructions' => [
+            "Erstelle ein Konto auf Pictoblox",
+            "Folge den visuellen Anweisungen, um:",
+            "die Erweiterungen Erkennung des menschlichen Körpers und Stift einzufügen;",
+            "die Szene zu schaffen und einen Zeiger(Stift) sowie zusätzliche Zeiger zu erstellen für: Stift Runter, Stift Hoch, Alles Löschen;  ",
+            "schreibe einen Code, damit der Stift dem Finger folgt",
+            "schreibe einen Code für die Schaltfläche: Stift Hoch, Stift Runter und Alles Löschen und auch für Stift",
+            "Jetzt kannst du eigene Zeichnungen erstellen und mit verschiedenen Farben und Stiftgrößen spielen . ",
+        ],
+        'materials' => [
+            "Ein Laptop oder Computer mit Kamera",
+            "Die neueste Version von PictoBlox heruntergeladen(empfohlen) oder Online - Pictoblox(kostenfrei)",
+            "Pictoblox - Konto(kostenfrei)",
+            "Gute Internetverbindung"
+        ]
+    ],
+    'emobot-kliki' => [
+        'title' => "Emobot Kliki",
+        'author' => 'Margareta Zajkova',
+        'purposes' => [
+            "Lernen grundlegender Konzepte des maschinellen Lernens und der Texterkennung . ",
+            "Verstehen der Rolle von Emotionen in Kommunikation . ",
+            "Verwenden von Codes, um Dialoge zwischen Chatbot und Nutzenden zu erstellen . ",
+            "Verstehen, wie Computer emotionale Untertöne durch Textanalyse erkennen und entsprechend antworten . "
+        ],
+        'description' => [
+            "Erstelle in Scratch einen Emotional Bot, der ein glückliches Gesicht für gute Nachrichten anzeigt(wenn du ihm nette Dinge sagst), ein wütendes Gesicht für böse Nachrichten(wenn du ihm gemeine Dinge sagst) und ein verwirrtes Gesicht, wenn die Nachricht nicht klar ist . ",
+            "Unser Emobot Kliki wird Komplimente und Beleidigungen erkennen . So erfahren wir, wie Computer trainiert werden können, einen emotionalen Unterton zu erkennen . ",
+        ],
+        'instructions' => [
+            "Programmiere zunächst eine Liste an Regeln, was nett oder freundlich ist und was böse oder gemein ist . ",
+            "Melde dich bei https://machinelearningforkids.co.uk/ an oder erstelle ein neues Konto.",
+            "Erstelle ein neues Modell des maschinellen Lernens mit 3 neuen Kategorien: Eine erste namens ‚nett‘, eine zweite namens ‚schlecht‘ und, sofern der Name erkannt werden soll, eine dritte namens ‚Name‘ . ",
+            "Trainiere das neue Modell, teste es und verwende es, um in Scratch den Emobot zu erstellen . ",
+            "Starte den Scratch 3 Editor, lösche den Katzenanzeiger, füge drei neue Zeiger aus dem Microsoft Bing Image Creator ein(Computer - Cartoons als glücklich, wütend und unsicher) oder erstelle einen neuen Zeiger, indem du auf die Schaltfläche ‚Zeichnen‘ klickst und drei Kopien der Bilder für glücklich, wütend und unsicher zeichnest . ",
+            "Klicke auf den Reiter ‚Code‘ und gib das folgende Skript ein . "]
+        ,
+        'example' => [
+            "Teile deinen Emobot Kliki mit deinen Freund * innen und erfahre mehr über KI und Emotionen!",
+            "Anstelle eines Computer - Cartoons kannst du auch etwas anderes probieren, zum Beispiel ein Tier . Statt nett und gemein kannst du das Modell auch trainieren, andere Arten von Nachrichten zu erkennen . ",
+        ],
+
+    ],
+    'craft-magic' => [
+        'title' => "Handwerksmagie mit KI - Handgesten",
+        'author' => 'Georgia Lascaris',
+        'purposes' => [
+            "Kultivieren von Programmierkompetenzen der Schüler * innen, sodass sie grundlegende Befehle verwenden können . ",
+            "Aneignen von algorithmischem Denken durch Aufbrechen komplexer Aufgaben in machbare Schritte . ",
+            "Fördern kreativer Problemlösung durch einzigartige Anwendungen von Handgesten zum Zeichnen und Schreiben . ",
+            "Aufbauen des Verständnisses von KI - Konzepten, insbesondere wie Computer mittels KI Handgesten erkennen und deuten können . ",
+            "Sensibilisieren für die Bedeutung von Technologie für Personen mit Behinderungen . ",
+            "Anregen von gemeinsamer Problemlösung und Teamarbeit zwischen Schüler * innen, die gemeinsam ihre Programme zu Handgesten verbessern . ",
+            "Anwenden von Programmieren und rechnergestütztem Denken auf reale Probleme, wobei die Bedeutung von Technologie für den Alltag der Menschen betont wird und die Arbeit auf die Ziele für nachhaltige Entwicklung ausgerichtet wird . "
+        ],
+        'duration' => [
+            "90 Minuten für Schüler * innen 10 - 12",
+            "45 Minuten für Schüler * innen 12 - 15"
+        ],
+        'description' => "Erstelle ein Programm mittels der Scratch - Blöcke, wobei die KI - Erweiterung ‚Menschlicher Körper‘ kreativ und spannend eingesetzt wird, um ohne Maus oder Touchscreen auf den Bildschirm zu zeichnen . ",
+        'instructions' => [
+            "Verbinde dich mit https://ai.thestempedia.com und erstelle Konten für die Lehrkraft und Schüler*innen.",
+            "Importiere die Erweiterungen ‚Erkennen des menschlichen Körpers‘, ‚Stift‘, ‚Text zu Sprache‘ . ",
+            "Füge den Zeiger ‚Stift‘ aus der Datenbank ein und erstelle 7 Zeiger(‚schreiben‘, ‚löschen‘, ‚schwarz‘, ‚rot‘, ‚blau‘, ‚grün‘, ‚rosa‘) . ",
+            "Schreibe Befehle, um zu prüfen, was passiert, wenn der Zeiger ‚Stift‘ einen der anderen Zeiger berührt . ",
+            "Schreibe Befehle, damit die Kamera die Handposition erkennen kann, und bewege den Stift zu den x - und y - Koordinaten deines Zeigefingers . ",
+            "Ändere die Anzeige für das Ende des Würfelns . ",
+            "Füge Soundeffekte ein . ",
+        ],
+        'materials' => [
+            "Programmierplattform https://ai.thestempedia.com (kostenfrei)",
+            "Konto für Lehrkraft(kostenfrei)",
+            "Konto für Schüler * innen(kostenfrei)",
+            "Computer mit Kamera",
+            "Internetverbindung",
+        ]
+    ],
+    'circle-of-dots' => [
+        'title' => "Ein Kreis aus Punkten",
+        'author' => 'Marin Popov',
+        'purposes' => [
+            "Code schreiben, um eine Linie aus Punkten zu zeichnen . ",
+            "Code schreiben, um eine Linie aus Strichen zu zeichnen . ",
+            "Code schreiben, um einen Kreis zu zeichnen . ",
+            "Code schreiben, um einen Kreis aus Punkten(Strichen) zu zeichnen . ",
+        ],
+        'description' => "Zeichne einen Kreis aus Punkten oder Strichen . ",
+        'duration' => "40 Minuten",
+        'instructions' => [
+            "Aufbau eines Punkteblocks . ",
+            "Aufbau eines Strichblocks . ",
+            "Konstruktion eines Kreises aus Punkten . ",
+            "Konstruktion eines Kreises aus Strichen . ",
+        ]
+    ],
+    'coding-escape-room' => [
+        'title' => "Erstelle einen Coding Escape Room",
+        'author' => "Stefania Altieri und Elisa Baraghini",
+        'purposes' => [
+            "Lehren / Lernen und reflektieren von Programmierkonzepten . ",
+            "Verwenden einfacher Programmierwerkzeuge . ",
+            "Fördern von rechnergestütztem Denken und Problemlösen . "
+        ], 'description' => [
+            "Erschaffe eine Escape Coding Erfahrung wie diese:",
+            "Du kannst Google Formulare, Genially, Google Präsentationen oder ein anderes Tool zum Erstellen von erzählbasiertem Coding verwenden;)."
+
+        ],
+        'duration' => "90 Minuten",
+        'instructions' =>
+            "Sie können Ihre Schüler * innen in Kleingruppen einteilen, sodass sie spielen und dann eine weitere Challenge erstellen können mit der Vorlage: "
+        ,
+
+        'materials' => [
+            "Sie können jedes Tool verwenden(Google - und Microsoft - Plattform zum Erstellen und Teilen von Dokumenten, Präsentationen und Folien), sowie jegliches Programmierkonstrukt, Tool oder Persönlichkeiten mit Bezug auf IKT und Programmieren . "
+        ],
+        'example' => [
+            "Einige Persönlichkeiten, die in der Geschichte der IKT und für die Grundkonzepte des Programmierens eine wichtige Rolle gespielt haben, werden beim Spielen vorgestellt . Das ist die beste Möglichkeit, zu lernen und sich aktiv zu beteiligen . Das Spiel kann in Teams oder allein gespielt werden, wie eine Challenge oder ein Wettbewerb . die Schüler * innen können dann eine ähnliche Version erstellen und Kompetenzen wie Kreativität und Programmierkenntnisse ausbauen . ",
+            "Dies ist eine sehr praktische Ressource, die wiederholt verwendet und leicht nachgestellt werden kann . Google Formulare ist eines der möglichen Tools . Sie können auch Google Präsentationen, Genial . ly oder Emaze oder ein anderes Tool verwenden, um Entscheidungsgeschichte oder ein eigenes Abenteuer zu erstellen . ",
+            "Das Spiel Coding Escape ist in Abschnitte eingeteilt . Bei Raten können Sie fortfahren . die Schüler * innen müssen die Programmierquizze erstellen . ",
+        ],
+    ],
+    'let-the-snake-run' => [
+        'title' => "Lass die Schlange los",
+        'author' => 'Ágota Klacsákné Tóth',
+        'purposes' => [
+            "Programmieren der Schlangenbewegung in ihrer eigenen micro:bit . ",
+            "Festlegen der richtigen Platzierung und zeitlichen Abfolge für die gemeinsame Animation . "
+        ],
+        'description' => "Die Schüler * innen müssen Codes schreiben, um die Schlange durch nebeneinander liegende micro:bits zu navigieren . Es soll so aussehen, als würde die Schlange von einem micro:bit zum nächsten eilen . ",
+        'duration' => "30 Minuten",
+        'instructions' => [
+            "Erstelle eine Strecke, die durch mehrere micro:bits nebeneinander verläuft(z .  B . als 2x2 - Quadrat).",
+            "Schreibe Codes, damit die Schlange der Strecke folgt . ",
+            "Arbeite auf deinem eigenen Gerät und füge sie dann zusammen, um den Code auszuführen . ",
+            "Beachte die Zeitplanung und Platzierung: Wenn die Schlange ein micro:bit verlässt, erscheint sie im nächsten . ",
+            'Weitere Challenges: "Spiele mit micro:bit v2 Musik ab, bis die Schlange dein Gerät verlässt . "',
+            "Verändere die Schlange, indem du die Helligkeit der LED veränderst . ",
+            "Versucht es mit längeren oder mehr Schlangen . "
+        ],
+        'example' => [
+    "die ist ein Beispiel einer 6 Pixel langen Schlange mit 4 micro:bits in Form eines 2x2 - Quadrats: ",
+            "Programmieren des ersten micro:bit(dies kann die Lehrkraft erledigen)",
+            "Alle Codes werden durch diesen micro:bit gestartet, der ein Funksignal an die anderen micro:bits sendet, wenn A gedrückt wird . ",
+            "Programmieren der Schlangenbewegung",
+            "Alle micro:bit müssen in der gleichen Funkgruppe sein wie das erste . ",
+            "Alle Animationen beginnen, wenn das Funksignal eingeht . ",
+            "die Animation auf dem ersten micro:bit ist sofort sichtbar, die auf den anderen erst, wenn die Schlange dort eintrifft . ",
+            "die Zeit zwischen den Phasen bestimmt die Geschwindigkeit der Schlange . ",
+        ], 'materials' => [
+    "micro:bits(möglichst für alle Schüler * innen)",
+            "Laptop oder Computer für den Editor makecode . microbit . org"
+        ]
+    ],
+    'illustrate-a-joke' => [
+    'title' => "Illustriere einen Witz mit Bitsy",
+        'author' => 'Margot Schubert',
+        'purposes' => "Erstellen eines kleinen Spiels, in dem die Nutzenden die Antwort auf eine Scherzfrage finden . ",
+        'description' => "die Schüler * innen erstellen ein Spiel, in dem die Nutzenden die Antwort auf eine Scherzfrage finden, wenn die Figur ein Objekt auf dem Spielfeld trifft . die Schüler * innen verwenden grundlegende Funktionen von Bitsy, um die Challenge abzuschließen . ",
+        'instructions' => [
+    "Denk dir eine Scherzfrage aus . Öffne Bitsy und starte ein neues Projekt . Du benötigst:",
+            "einen Avatar, den du bewegen kannst",
+            "Eine weiße Katze auf lila Hintergrund",
+            "Beschreibung automatisch generiert",
+            "ein Objekt, das dein Avatar erreichen muss",
+            "einen Raum – den Hintergrund deines Programms",
+            "zwei Nachrichten: eine Frage und eine Antwort",
+            "Das fertige Spiel kann als html - Datei heruntergeladen werden . "
+        ],
+        'example' => "Auf dieser Website findest du ein Beispiel eines Witzes und einen Link zu einem digitalen Whiteboard:",
+        'materials' => "Bitsy läuft über einen Browser"
+    ],
+    'app-that-counts-in-several-languages' => [
+    'title' => "App, die in mehreren Sprachen zählt",
+        'author' => 'Samuel Branco',
+        'purposes' => [
+    "Lernen, eine einfache App zu erstellen . ",
+            "Lernen, mit Blöcken zu programmieren . ",
+            "Lernen, Labels, Schaltflächen, Bilder, Sensoren und Medien einzufügen . ",
+            "Lernen, Elemente auf einem App - Bildschirm zu organisieren . "
+        ],
+        'description' => "die App lässt dich in mehreren Sprachen auf Knopfdruck zählen . Wenn das Smartphone geschüttelt wird, wird die Zählung auf Null zurückgesetzt . die Challenge besteht darin, eine weitere Sprache hinzuzufügen . ",
+        'instructions' => [
+    "Um die Challenge abzuschließen, musst du die andere Sprache festlegen, in der die App zählen soll . ",
+            "Dann musst du die Flagge dieses Landes aus dem Internet(z .  B . Pixabay oder Unsplash) herunterladen und über das Element namens Flagge in den Bildeigenschaften in die Plattform MIT APP Inventor hochladen . ",
+            "Dann solltest du herausfinden, wie der Name des Landes auf Englisch geschrieben wird und was ‚Verlassen‘ und ‚Drück mich‘ in der Landessprache heißt . ",
+            "Zuletzt musst du die erforderlichen Blocks hinzufügen, damit die App in der neuen Sprache funktioniert . ",
+        ],
+        'materials' => [
+    "Um eine App zu erstellen, benötigst du einen Computer oder Laptop mit Internetzugang . ",
+            "Erstelle ein Konto auf der Plattform MIT APP Inventor, die du über <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a> erreichst",
+            "Außerdem musst du die App MIT AI2 Companion auf dem Smartphone installieren, um die entwickelte Anwendung zu testen . "
+        ]
+    ],
+    'coding-with-art-through-storytelling' => [
+    'title' => "Programmieren mit Kunst durch Erzählen",
+    'author' => "Maria Tsapara und Anthi Arkouli",
+    'purposes' => [
+        "Ausbauen von den Kompetenzen Beobachten, Interpretieren und Hinterfragen durch Beschäftigung mit Kunst . ",
+        "Kreativ sein und mit anderen an einem gemeinsamen Ziel arbeiten",
+        "Einen Algorithmus erstellen, um die Geschichte nachzuerzählen . ",
+    ],
+    'description' => "Bei dieser Challenge werden die Schüler * innen durch ein Kunstwerk inspiriert, schreiben eine Geschichte und illustrieren sie . Dann versuchen sie, die Geschichte nachzuerzählen, indem sie ein programmierbares Roboterkit verwenden, oder als Aktivität ohne Computer . ",
+    'materials' => [
+        "Diese Aktivität kann ohne Computer durchgeführt werden oder mit einem programmierbaren Bildungsroboter wie Beebot / Bluebot / Mausroboter . ",
+        "Beebot - Pfeilkarten oder Pfeilkarten für Aktivitäten ohne Computer",
+        "auf Griechisch",
+        "Um mehr über die Toolbox Thinking Routine für das Project Zero zu erfahren, besuchen Sie"
+
+    ],
+    'example' => [
+        "Die Lehrkraft arbeitet mit den Schüler * innen, um vorzuführen, wie mit den Karten ein Algorithmus erstellt wird, der die Anweisungen für den Beebot oder anderen Roboter ausgibt, um zum ersten Ereignis der Geschichte auf der Karte zu gelangen . die Schüler * innen arbeitet in Gruppen mit 3 bis 4 Personen an einem Algorithmus, um den Roboter zum nächsten Abschnitt zu bewegen . die Schüler * innen testen ihren Algorithmus auf der Klassenkarte und entfernen Fehler, sofern notwendig . ",
+        "Die bewegen sich zu so vielen Geschichtenereignissen wie sie können",
+        "Diese Aktivität kann ohne Computer durchgeführt werden . ",
+        "Ein Kind ist der Roboter – ein anderes programmiert . Letzteres erstellt mit den Pfeilkarten einen Algorithmuspfad, um dem Roboter zu helfen, von einem Bild zu einem anderen zu gelangen und die Geschichte nachzuerzählen . Wann immer der Roboter ein Bild erreicht, erzählt er einen Teil der Geschichte . ",
+    ],
+    'instructions' => [
+        "Die Lehrkraft fordert die Schüler * innen auf, ein Gemälde / Foto zu betrachten . ",
+        "Anhand des Denkschemas ‚Anfang, Mitte, Ende‘(Project Zero der Harvard School) kreieren sie eine Geschichte . ",
+        "Die Lehrkraft fragt: ‚Wenn dieses Kunstwerk der Anfang / die Mitte / das Ende einer Geschichte wäre, was könnte davor / danach / am Ende geschehen ? ‘",
+        "Die Schüler * innen illustrieren die Ereignisse der Geschichte . ",
+        "Die Schüler * innen ordnen die einzelnen Ereignisse in das Gitter ein . Mit Pfeilkarten erstellen sie einen Algorithmus, sodass der Beebot die Geschichte nacherzählt . "
+    ],
+],
+    'coding-with-legoboost' => [
+    'title' => "Coding und Programmieren mit der Scratch - Erweiterung LegoBoost",
+    'author' => 'Lidia Ristea',
+    'purposes' => [
+        "Modelle erstellen mit LegoBoost . ",
+        "Programmierkenntnisse in Scratch erwerben . ",
+        "mit einfachen bis komplexen Befehlen Roboter programmieren . "
+    ],
+    'description' => "Bei dieser Challenge verwenden die Schüler * innen die Scratch - Erweiterung LegoBoost und geben Codes in die Anwendung ein, damit die Roboter sich vorwärts oder rückwärts bewegen, Hindernisse umgehen und auf Sprachbefehle reagieren . ",
+    'duration' => "120 Minuten",
+    'instructions' => [
+        "Melde dich bei der Anwendung Scratch . mit . edu an . ",
+        "Starte die Scratch - Verbindung und aktiviere Bluetooth auf dem Laptop . ",
+        "Klicke auf ‚Erweiterung aus Scratch hinzufügen‘ und wähle LegoBoost . ",
+        "Füge ein Bild über die EU Code Week ein . ",
+        "Stelle die zwei AB - Motoren auf AN, und vor einem roten Hindernis auf AUS . ",
+        "Bei grüner Farbe ist Motor A auf AN, bei schwarzer Farbe ist Motor B auf AN . ",
+        "Entlang der Route befinden sich grüne, rote und schwarze Hindernisse . ",
+        "Füge Befehle für Bewegungen und Drehungen durch Pfeile sowie Sprachbefehle bei Hindernissen hinzu . ",
+        "Teste es!"
     ]
+]
+
+
+
 ];

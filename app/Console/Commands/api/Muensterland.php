@@ -58,11 +58,11 @@ class Muensterland extends Command
         $url = "https://muensterland.codeweek.de/?tx_codeweekevents_api[action]=listForEu&tx_codeweekevents_api[controller]=Api&tx_codeweekevents_api[format]=.json&tx_typoscriptrendering[context]={%22record%22%3A%22pages_1%22%2C%22path%22%3A%22tt_content.list.20.codeweekevents_api%22}&cHash=74bb9d71d62e381ebe95b33c1e197943";
         dump("Loading $city events");
 
-        $response = Http::get($url);
+        $json = $this->loadJson($url);
 
-        $json = $response->json();
 
-        if (is_null($json)){
+
+        if (is_null($json)) {
             Log::info("!!! No data in feed from $city API:");
             return 0;
         }

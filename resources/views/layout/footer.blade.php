@@ -56,9 +56,9 @@
             </div>
             <div class="social-network">
                 <a href="https://twitter.com/CodeWeekEU" target="_blank" rel="noreferer, noopener">
-                    <div style="margin-right: 4px"><img src="/images/twitter.svg" alt="Twitter" class="button-icon">
+                    <div style="margin-right: 4px"><img src="/images/x-twitter.svg" alt="X" class="button-icon">
                     </div>
-                    Twitter
+                    X
                 </a>
             </div>
             <div class="social-network">

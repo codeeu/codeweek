@@ -483,5 +483,384 @@ return [
 
 
 
+    ,
+    'common' => [
+        'share' => 'Kopīgo sava projekta saiti vai QR kodu Instagram vai Facebook, pievieno mirkļbirku #CodeWeekChallenge un atzīmē @CodeWeekEU.',
+        'audience' => [
+            'Skolotāji un pedagogi',
+            'Sākumskolas skolēni (6 līdz 12 gadi)',
+            'Pamatskolas skolēni (12 līdz 16 gadi)',
+            'Vidusskolēni (16 līdz 18 gadi)'
+        ],
+    ],
+    'code-a-dice' => [
+        'title' => 'Uzprogrammē metamo kauliņu',
+        'author' => 'Fabrizia Agnello',
+        'purposes' => [
+            'Uzprogrammē interaktīvas mīklas',
+            'Programmēt izvēlētu kustīgu objektu, kas kustas pēc nejaušības principa un ko izmantot, ja reālais objekts nav pieejams'
+        ],
+        'description' =>
+            'Šajā izaicinājumā tu programmēsi metamo kauliņu, kas pēc tavas komandas tiks ripināts pēc nejaušības principa. Tu vari izvēlēties jebkura veida metamo kauliņu ar sev vēlamo skaldņu skaitu, līdzīgu tam, kas tiek izmantots dažādās spēlēs, kā arī pievienot skaņas.',
+        'instructions' => [
+    'Piesakies Scratch',
+    'Izvēlies fonu',
+    'Izveido sava metamā kauliņa gariņu vai atrodi to internetā un augšupielādē to savā programmā',
+    'Izveido izvēlētā metamā kauliņa skaldnēm atbilstošu gariņu tērpu skaitu, uz katra attēlojot atšķirīgu skaitli',
+    'Izvēlies, kā tiks uzsākta kauliņa ripināšana (nospiežot taustiņu klaviatūrā, noklikšķinot uz gariņa u. tml.) un uzraksti kodu',
+    'Uzprogrammē gariņu, lai ripināšanas beigās pēc nejaušības principa tiktu nomainīts tērps',
+    'Pievieno skaņas efektus',
+],
+        'example' => 'Ripini D-20 metamo kauliņu'
+    ],
+    'personal-trainer' => [
+    'title' => 'Privātais treneris ar micro:bit',
+    'author' => '',
+    'purposes' => [
+        'Programmēt micro:bit, lai varētu izmantot zummeru un led gaismas paneli',
+        'Izveidot personīgo ierīci, lai kontrolētu savu fizisko aktivitāti',
+        'Programmēt micro:bit, lai uzlabotu veselību, sportojot',
+    ],
+    'description' =>
+        'Šajā izaicinājumā tu vari programmēt savu micro:bit, lai kontrolētu fizisko aktivitāšu atkārtošanas reižu skaitu, kombinējot to ar atpūtas laiku. Tu sekosi līdzi savai fiziskajai aktivitātei skolā, mājās vai parkā.'
+    ,
+    'instructions' => [
+        'Kad A+B, izveido 3 sekunžu atpakaļskaitīšanas taimeri, ik sekundi ieskanoties mūzikas notij un parādoties vārdam AIZIET!',
+        'Pirmā vingrinājuma laikā parādīt mirgojošu 2x2 kvadrātu 20 sekundes. Tad atskaņot skaņas signālu un rādīt nekustīgu kvadrātu. Atlikušajā laikā 10 sekundes jāparādās citam mirgojošam attēlam. Kad tas ir pabeigts, atskaņot skaņas signālu.',
+        'Pēc tam atkārtot to pašu darbību, taču rādīt 3x3 paneli vingrinājuma laikā. Atkārtot šīs darbības, līdz tiek rādīts 5x5 panelis.',
+    ],
+    'duration' => '30–40 minūtes'
+],
+    'create-a-spiral' => [
+    'title' => 'Izveidot spirāli',
+    'author' => 'Lydie El-Halougi',
+    'purposes' => [
+        'Apgūt ciklu un mainīgos un izmantot tos praksē.',
+        'Palielināt radošumu programmēšanā.'],
+    'description' => 'Šajā izaicinājumā tu rakstīsi projektu, izmantojot Scratch, lai izveidotu spirāli ar zīmuļa blokiem, ciklu un mainīgo.',
+
+    'instructions' => [
+        'Zīmuļa bloki',
+        'Izveido jaunu projektu un nosauc to: Spirāle.',
+        'Noklikšķini uz loga kreisajā apakšējā stūrī esošās ikonas violetā krāsā “Pievienot paplašinājumu”',
+        'Izvēlies “zīmulis”: tagad tavam projektam ir pieejami zīmuļa bloki.',
+        'Lai sāktu projektu, pavelc un nomet bloku “kad nospiests zaļais karogs”:',
+        'Tev jāsāk ar tukšu lapu: zīmuļa blokos pievieno bloku “dzēst visu”:',
+        'Tu vēlies sākt zīmējumu skatuves centrā, kas nozīmē, ka gariņam ir jādodas uz skatuves centru (0,0):',
+        'Gariņš var pārvietoties bez zīmēšanas jeb arī pārvietoties un zīmēt:',
+        'kad vēlies, lai tas zīmētu, tu vari izmantot piespiesta zīmuļa bloku',
+        'kad to nevēlies, tu vari izmantot nepiespiesta zīmuļa bloku',
+        'Tagad tu vēlies zīmēt. Pievieno bloku “piespiests zīmulis”:',
+        'Sešstūris',
+        'Pievieno savam projektam tālāk esošos blokus:',
+        'Tagad tev ir sestā daļa no sešstūra. Tev jāatkārto šī secība 6 reizes:',
+        'Spirāle',
+        'Lai izveidotu spirāli, tev katras nākamās puses garumam būs jāpievieno 2.',
+        'Lai to paveiktu, tu izmantosi <strong>mainīgo.</strong>',
+        'Mainīgo lielumu blokos noklikšķini uz Izveidot mainīgo',
+        'Nosauc to par garumu, tad noklikšķini OK:',
+        'Spirāle kļūs lielāka, tādēļ sākumā ir jāsāk mazā mērogā: iestati pirmo garumu uz 10 un ievieto šo bloku pirms cikla.',
+        'Ievieto mainīgo “garums” blokā “pārvietoties … soļus”',
+        'Lai spirāle kļūtu lielāka, nepieciešams, lai garums palielinātos ikvienā ciklā: pievieno tālāk esošo bloku cikla beigās:',
+        'Lūk, tavs pašreizējais projekts:',
+        'Glīta spirāle ',
+        'Tu uzzīmēji spirāli! Lai tā turpinātos, aizvieto ciklu “atkārtot 6” ar ciklu “nepārtraukti”:',
+        'Lai uzzīmētu krāsainu spirāli, pievieno ciklam šādu bloku:',
+        'Kad tu atsāc, gariņš uzzīmē nevēlamu līniju. Lai to novērstu, projekta sākumā pievieno bloku “nepiespiests zīmulis”.',
+        'Lūk, tavs pabeigtais projekts:',
+        'Apsveicam! Tu izveidoji brīnišķīgu spirāli!',
+    ],
+
+],
+    'play-against-ai' => [
+    'title' => 'Izveido spēli Akmens, šķēres, papīrīt\'s un spēlē to pret MI',
+        'author' => 'Kristina Slišurić',
+        'purposes' => [
+            'lai izprastu mašīnmācīšanās cikla norisi.',
+            'lai izveidotu mašīnmācīšanās modeli, izmantojot apmācāmu mašīnu',
+            'lai iepazītu Pictoblox rīku un importētu izveidoto modeli projektā',
+            'lai iestatītu skatuvi un darbojošos personāžus, izveidotu mainīgos un palaistu tos Pictoblox',
+            'lai uzsāktu spēli, noteiktu spēlētāju gājienus, programmētu nejaušus MI gājienus',
+            'lai izveidotu un testētu spēli, kurā mākslīgais intelekts darbojas kā pretinieks spēlē Akmens, šķēres, papīrīt\'s.'
+
+        ],
+        'description' => 'Izveidosim modeli, izmantojot apmācāmu mašīnu un attēlus, izmantojot trīs klases: Akmens, Šķēres un Papīrīt\'s. Modelis tiks ielādēts Pictoblox un izmantots, lai radītu spēli, ko varam spēlēt pret MI.',
+        'duration' => '90 minūtes',
+        'instructions' => [
+            'Izveido jaunu projektu apmācāmā mašīnā ar 3 klasēm, ko sauc Akmens, Šķēres un Papīrīt\'s. Katrai klasei ar kameru uzņem vismaz 400 attēlus. Nodrošini skaidru fonu. Apmāci un eksportē modeli. Augšupielādē modeli un nokopē saiti.',
+            'Pictoblox vietnē izveido bezmaksas kontu. Pievieno mašīnmācīšanās paplašinājumu un augšupielādē modeli. Iestati skatuvi, mainīgos un gariņus. Uzsāc spēli, nosaki spēlētāju gājienus un MI gājienus un to, kurš uzvar kārtā.',
+            'Apmāci datus spēlei.',
+            'Modeļa testēšana.',
+            'Eksportē modeli.',
+            'Pievieno mašīnmācīšanās paplašinājumu un ielādē modeli.',
+            'Iestati skatuvi, mainīgos un gariņu.',
+            'Uzsāc spēli.',
+            'Nosaki spēlētāja gājienus.',
+            'Iestati nejaušus MI gājienus.',
+            'Translē nejaušus MI gājienus.',
+            'Izveido trīs blokus. \'Kas uzvar kārtā? ',
+            'Pārbaudi, vai spēlētājs uzvar kārtā.',
+            'Pārbaudi, vai MI uzvar kārtā.',
+            'Pārbaudi, vai kārtā ir neizšķirts rezultāts.',
+            'Programmas bloki.',
+            'Gariņš Akmens, šķēres, papīrīt\'s',
+        ]
+    ],
+    'air-drawing-with-AI' => [
+    'title' => 'Zīmēšana gaisā ar MI',
+    'author' => 'Kristina Slišurić',
+    'purposes' => [
+        'lai uzrakstītu programmu, izmantojot cilvēka ķermeņa uztveršanas paplašinājumu pirkstu kustību atpazīšanai kameras priekšā.',
+        'lai programmētu ar vienkāršiem blokiem dažās koda rindās.',
+        'lai redzētu MI izmantošanas piemēru.'
+    ],
+    'description' => 'Tādas programmas izveide, kas ļauj lietotājam zīmēt gaisā ar roku (rādītājpirkstu) kameras priekšā, un viss uzzīmētais automātiski tiek attēlots uz Pictoblox skatuves.',
+    'instructions' => [
+        'Izveido kontu Pictoblox',
+        'seko vizuālajām norādēm, lai:',
+        'pievienotu paplašinājumus Cilvēka ķermeņa uztveršana un Zīmulis;',
+        'iestatītu skatuvi un pievienotu gariņu (Zīmulis) un papildu gariņus šādām funkcijām: Zīmulis nepiespiests, Zīmulis piespiests, Dzēst visu;  ',
+        'uzrakstītu kodu, lai gariņš Zīmulis sekotu pirkstam',
+        'uzrakstītu kodu pogām: Zīmulis nepiespiests, Zīmulis piespiests, Dzēst visu, kā arī Zīmulis',
+        'Tagad ir iestatīts viss, lai tu veidotu savus zīmējumus un rotaļātos ar dažādām zīmuļa krāsām un izmēru.',
+    ],
+    'materials' => [
+        'Portatīvais dators vai dators ar kameru',
+        'Lejupielādēta PictoBlox jaunākā versija (ieteicams) vai Pictoblox tiešsaistē (bezmaksas)',
+        'Pictoblox konts (bezmaksas)',
+        'Stabils interneta pieslēgums'
+    ]
+],
+    'emobot-kliki' => [
+    'title' => 'Emobot Kliki',
+    'author' => 'Margareta Zajkova',
+    'purposes' => [
+        'Lai iemācītos mašīnmācīšanās un teksta atpazīšanas pamatjēdzienus.',
+        'Lai izprastu emociju lomu saziņā.',
+        'Lai izmantotu kodu dialoga veidošanai starp čatbotu un lietotāju.',
+        'Lai izprastu, kā datori var atpazīt emocionālas noskaņas, veicot teksta analīzi, un attiecīgi reaģēt.',
+    ],
+    'description' => [
+        'Izveidot emociju botu Scratch vidē, kas var parādīt priecīgu sejiņu pozitīvam vēstījumam (ja tu saki tam ko jauku), dusmīgu sejiņu negatīvam vēstījumam (ja tu saki tam ko nejauku) un apjukušu sejiņu, ja vēstījums ir nenoteikts.',
+        'Emobot Kliki atpazīs komplimentus un apvainojumus, līdz ar to varēsim vērot, kā datoru var apmācīt atpazīt emocionālas noskaņas.',
+    ],
+    'instructions' => [
+        'Lai sāktu, uzprogrammē sarakstu ar noteikumiem, kas ir patīkami vai jauki un kas ir slikti vai nejauki.',
+        'Piesakies https://machinelearningforkids.co.uk/ vai izveido jaunu kontu.',
+        'Izveido jaunu mašīnmācīšanās modeli, pievienojot 3 jaunas etiķetes. Pirmo nosauc “jauks”, otro nosauc “slikts” un pēc izvēles, ja vēlies, lai atpazīst tavu vārdu, izveido trešo etiķeti ar nosaukumu “vārds”.',
+        'Apmāci jauno mašīnmācīšanās modeli, testē to un izveido Emobot Scratch vidē.',
+        'Palaid Scratch 3 editoru, dzēs kaķa gariņu, ievieto 3 jaunus gariņus, kas izveidoti ar Microsoft Bing Image Creator (laimīgu, dusmīgu un apjukušu animētu sejiņu) vai izveido jaunu gariņu, nospiežot ikonu Zīmēt un uzzīmējot trīs tērpus attiecīgi laimīgai, dusmīgai un apjukušai sejiņai.',
+        'Noklikšķini uz cilnes “Kods” un ievadi tālāk esošo skriptu.']
+    ,
+    'example' => [
+        'Kopīgo Emobot Kliki ar saviem draugiem un uzzini vairāk par MI un emocijām!',
+        'Animētas sejiņas vietā vari izmēģināt ko citu, piemēram, kādu dzīvnieku. Jauku un nejauku vēstījumu vietā tu vari iemācīt personāžu atpazīt cita veida vēstījumus.',
+    ],
+
+],
+    'craft-magic' => [
+    'title' => 'Burvju māksla: MI ar roku rādīti žesti',
+    'author' => 'Georgia Lascaris',
+    'purposes' => [
+        'Lai attīstītu skolēnu programmēšanas prasmes, ļaujot viņiem izmantot vienkāršas komandas.',
+        'Lai attīstītu skaitļošanas tipa domāšanas prasmes, sadalot sarežģītus uzdevumus izpildāmās darbībās.',
+        'Lai veicinātu radošumu problēmu risināšanā, atrodot unikālu pielietojumu ar roku rādītiem zīmēšanas un rakstīšanas žestiem.',
+        'Sekmēt izpratni par MI jēdzieniem, jo sevišķi to, kā MI ļauj datoriem atpazīt un interpretēt ar roku rādītus žestus.',
+        'Lai palielinātu informētību par tehnoloģiju nozīmīgumu personām ar invaliditāti.',
+        'Lai popularizētu uz sadarbību vērstu problēmu risināšanu un skolēnu komandas darbu, kopīgi strādājot, lai uzlabotu ar roku rādītu žestu programmas.',
+        'Lai sasaistītu programmēšanas un skaitļošanas tipa domāšanas prasmes ar to pielietojumu reālajā dzīvē, uzsverot tehnoloģiju jēgpilnu ietekmi uz cilvēku dzīvi un salāgojot to ar Ilgtspējīgas attīstības mērķiem.'
+    ],
+    'duration' => [
+        '90 min 10–12 gadus veciem skolēniem',
+        '45 min 12–15 gadus veciem skolēniem'
+    ],
+    'description' => 'Izveido Scratch programmu, kuras pamatā ir bloki, izmantojot MI paplašinājumu “Cilvēka ķermenis” radošā un saistošā veidā, lai zīmētu uz ekrāna, neizmantojot ierasto peli vai skārienekrānu.',
+    'instructions' => [
+        'Pieslēdzies https://ai.thestempedia.com un izveido skolotāja un skolēnu kontus.',
+        'Importē paplašinājumus ‘Cilvēka ķermeņa uztveršana’,’ Zīmulis’,’ Teksts uz runu’.',
+        'No bibliotēkas pievieno gariņu ‘Zīmulis ’ un izveido 7 gariņus (‘balts’, ‘caurspīdīgs’, ‘melns’, ‘sarkans’, ‘zils’, ‘zaļš’, ‘rozā’).',
+        'Uzraksti komandas, lai pārbaudītu, kas notiek, kad gariņš ‘Zīmulis’  pieskaras kādam no citiem gariņiem.',
+        'Uzraksti komandas, lai kamera varētu atpazīt plaukstas pozīciju, un virzi zīmuli uz sava rādītājpirksta x un y koordinātēm.',
+        'Ritināšanas beigās nomaini krāsu.',
+        'Pievieno skaņas efektus.',
+    ],
+    'materials' => [
+        'Programmēšanas platforma https://ai.thestempedia.com (bezmaksas)',
+        'skolotāja konts (bezmaksas)',
+        'skolēna konts (bezmaksas)',
+        'Datori ar kameru',
+        'Interneta pieslēgums',
+    ]
+],
+    'circle-of-dots' => [
+    'title' => 'Aplis ar punktiem',
+    'author' => 'Marin Popov',
+    'purposes' => [
+        'Lai uzrakstītu kodu, uzzīmē līniju ar punktiem.',
+        'Lai uzrakstītu kodu, uzzīmē līniju ar domu zīmēm.',
+        'Lai uzrakstītu kodu, uzzīmē apli.',
+        'Uzraksti kodu, lai uzzīmētu apli ar punktiem (domu zīmēm).',
+    ],
+    'description' => 'Uzzīmē apli no punktiem vai domu zīmēm.',
+    'duration' => '40 minūtes',
+    'instructions' => [
+        'Punktu bloka būvēšana.',
+        'Domu zīmju bloka būvēšana.',
+        'Apļa konstruēšana no punktiem.',
+        'Apļa konstruēšana no domu zīmēm.',
+    ]
+],
+    'coding-escape-room' => [
+    'title' => 'Izveido programmēšanas izlaušanās istabu',
+    'author' => 'Stefānija Altjeri un Elisa Baragīni',
+    'purposes' => [
+        'Mācīt/iemācīties programmēšanas jēdzienus un tos apspriest.',
+        'Izmantot vienkāršus programmēšanas rīkus.',
+        'Attīstīt skaitļošanas tipa domāšanu un problēmu risināšanu.'
+    ], 'description' => [
+        'Izveidot programmēšanas izlaušanās istabu, kas līdzīga šai:',
+        'Tu vari izmantot google form, genially, google presentation, jebkuru citu rīku, lai izveidotu stāstu stāstīšanu, kuras pamatā ir programmēšana ;).'
+
+    ],
+    'duration' => '90 minūtes',
+    'instructions' =>
+        'Tu vari sadalīt skolēnus nelielās grupās, lai viņi rotaļājas un tad izveido vēl vienu izaicinājumu ar šo veidni: '
+    ,
+
+    'materials' => [
+        'Var izmantot jebkuru rīku (Google un Microsoft platforma dokumentu, prezentāciju un izklājlapu veidošanai un to kopīgošanai). Jebkura programmēšanas vide, rīks vai personāžs, kas saistīts ar IKT un programmēšanu.'
+    ],
+    'example' => [
+        'Rotaļu veidā notiek iepazīstināšana ar dažiem personāžiem, kuriem ir bijusi svarīga loma IKT vēsturē, kā arī ar programmēšanas pamatjēdzieniem. Tas ir labākais veids, kā mācīties un aktīvi līdzdarboties. Šo spēli var spēlēt grupās vai individuāli, izmantot izaicinājumam vai sacensībai. Skolēni var pēc tam veidot kaut ko līdzīgu un attīstīt tādas kompetences kā radošums un programmēšanas prasmes.',
+        'Šis ir ļoti praktisks resurss, ko var pēc tam izmantot atkārtoti un vienkārši izveidot atkal. Google forms ir viens no iespējamajiem rīkiem. Tu vari izmantot arī Google slides, Genial.ly vai Emaze vai jebkuru citu rīku, lai veidotu stāstus, kur jāizvēlas došanās virziens krustcelēs, kā arī savus piedzīvojumu stāstus.',
+        'Šis izlaušanās izaicinājums ir sadalīts posmos. Ja uzmini, tu vari turpināt. Skolēniem ir jāizveido programmēšanas mīklas.',
+    ],
+],
+    'let-the-snake-run' => [
+    'title' => 'Čūskas gājiens',
+    'author' => 'Ágota Klacsákné Tóth',
+    'purposes' => [
+        'Lai programmētu čūskas kustību savā micro:bit.',
+        'Lai iestatītu atbilstošu novietojumu un norises laiku animētiem personāžiem.'
+    ],
+    'description' => 'Skolēniem ir jāraksta kodi, lai čūska varētu atrast ceļu no viena micro:bits uz nākamo. Tas jādara tādā veidā, lai izskatās, ka čūska pāriet no viena micro:bit uz nākamo.',
+    'duration' => '30 minūtes',
+    'instructions' => [
+        'Izveido trasi, kas iet cauri vairākiem micro:bit, kas atrodas blakus cits citam (piem., veidojot 2x2 kvadrātu).',
+        'Uzraksti kodus, čūskai virzoties pa trasi.',
+        'Strādā savā ierīcē, tad saliec visu kopā un palaid kodu.',
+        'Ņem vērā norises laiku un novietojumu: Ja čūska iziet no viena micro:bit, tā parādīsies nākamajā micro:bit.',
+        'Nākamie izaicinājumi: Ar micro:bit v2 atskaņo mūziku, līdz čūska iziet no tavas ierīces.',
+        'Veido čūsku, mainot LED gaismas spilgtumu.',
+        'Izmēģini garāku čūsku vai vairākas čūskas.'
+    ],
+    'example' => [
+        'Šis ir piemērs ar 6 pikseļus garu čūsku ar 4 micro:bit elementiem, kas veido 2x2 izmēra kvadrātu: ',
+        'Programmē sākuma micro:bit (to var izdarīt skolotājs)',
+        'Visi kodi tiek palaisti ar šo micro:bit, kas nosūta radio signālu citiem micro:bits, kad nospiež pogu A.',
+        'Čūskas kustības programmēšana',
+        'Visiem micro:bit elementiem ir jābūt tajā pašā radio grupā kā sākuma micro:bit elementam.',
+        'Animācijas atskaņošana sākas, kad saņemts radio signāls.',
+        'Pirmā micro:bit elementa animācija ir redzama uzreiz, pārējās gaida, līdz čūska nonāk attiecīgajā vietā.',
+        'Laiku starp divām fāzēm nosaka čūskas ātrums.',
+    ], 'materials' => [
+        'micro:bit elementi (katram skolēnam, ja iespējams)',
+        'klēpjdators vai dators makecode.microbit.org editor izmantošanai'
+    ]
+],
+    'illustrate-a-joke' => [
+    'title' => 'Ilustrē joku ar bitsy',
+    'author' => 'Margot Schubert',
+    'purposes' => 'Izstrādā nelielu spēli, kurā lietotājs atrod atbildi uz kādu jokainu jautājumu.',
+    'description' => 'Skolēni izstrādā spēli, kurā lietotājs atrod atbildi uz kādu jokainu jautājumu, kad figūra saskaras ar objektu spēles laukā. Skolēni izmanto bitsy pamatfunkcijas, lai izpildītu šo izaicinājumu.',
+    'instructions' => [
+        'Padomā par jokainu jautājumu. Dodies uz bitsy un sāc jaunu projektu. Tev būs nepieciešams:',
+        'avatars – gariņš, ko tu vari pārvietot',
+        'Balts kaķis uz violeta fona',
+        'Automātiski ģenerēts apraksts',
+        'objekts, uz kurieni doties avataram',
+        'telpa – tavas programmas fons',
+        'divi vēstījumi: jautājums un atbilde',
+        'Pabeigto spēli var lejupielādēt kā html failu.'
+    ],
+    'example' => 'Šajā tīmekļa vietnē tu redzi joka piemēru un šeit ir saite uz digitālo tāfeli:',
+    'materials' => 'bitsy darbojas pārlūkā'
+],
+    'app-that-counts-in-several-languages' => [
+    'title' => 'Lietotne, kas skaita vairākās valodās',
+    'author' => 'Samuel Branco',
+    'purposes' => [
+        'Lai iemācītos izveidot vienkāršu lietotni.',
+        'Lai iemācītos programmēt blokos.',
+        'Lai iemācītos pievienot etiķetes, pogas, attēlus, sensorus un multivides elementus.',
+        'Lai iemācītos organizēt elementus lietotnes ekrānā.'
+    ],
+    'description' => 'Ar šo lietotni var skaitīt vairākās valodās, nospiežot pogu. Kad lietotājs pakrata viedtālruni, skaitīšana atsākas no nulles. Izaicinājums ir pievienot vēl vienu valodu.',
+    'instructions' => [
+        'Lai izpildītu šo izaicinājumu, tev ir jādefinē šī vēl viena valoda, kurā lietotne veiks skaitīšanu.',
+        'Pēc tam tev ir no interneta (piem., no Pixabay vai Unsplash) ir jālejupielādē šīs valsts karoga failu un jāveic tā augšupielāde MIT APP Inventor platformā, izmantojot elementu, ko sauc par karogu un kas atrodas sadaļā Attēli.',
+        'Turpinājumā tev ir jānoskaidro, kā šo valsti sauc angliski un kā šīs valsts valodā saka Iziet un Nospiest šeit.',
+        'Visbeidzot, tev ir jāpievieno nepieciešamie bloki, lai lietotne darbotos jaunajā valodā.',
+    ],
+    'materials' => [
+        'Lietotnes izstrādei tev būs nepieciešams dators vai klēpjdators ar interneta pieslēgumu.',
+        'Izveido kontu MIT APP Inventor platformā, piekļūstot tai šajā adresē: <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>',
+        'Ir nepieciešams instalēt arī MIT AI2 Companion lietotni viedtālrunī, lai testētu izstrādāto lietotni.'
+    ]
+],
+    'coding-with-art-through-storytelling' => [
+    'title' => 'Programmēšana ar mākslu, izmantojot Storytelling',
+    'author' => 'Marija Tsapara un Anti Arkouli',
+    'purposes' => [
+        'Lai attīstītu novērošanas, interpretēšanas un jautājumu uzdošanas prasmes, mijiedarbojoties ar mākslu.',
+        'Lai būtu radoši un sadarbotos ar citiem kopēja mērķa sasniegšanā',
+        'Lai izveidotu algoritmu stāsta pārstāstīšanai.',
+    ],
+    'description' => 'Šajā izaicinājumā skolēni rod iedvesmu mākslas darbā, izveido stāstu un ilustrē to. Pēc tam viņi pārstāsta stāstu, izmantojot programmējamu robotikas komplektu / vai arī dara to, neizmantojot datoru.',
+    'materials' => [
+        'Šo aktivitāti var īstenot gan bez datora, gan izmantojot programmējamu robotu, piemēram, beebot/bluebot/peles robotu.',
+        'beebot kartītes ar bultiņām vai kartītes ar bultiņām aktivitātei bez datora',
+        'grieķu valodā',
+        'Lai uzzinātu vairāk par Project Zero \ Thinking Routine Toolbox, tu vari apmeklēt'
+
+    ],
+    'example' => [
+        'Skolotājs darbojas ar skolēniem, lai modelētu to, kā veidot algoritmu ar kartītēm, kas sniegs norādījumus Bee-Bot vai citam robotam, lai uz paklājiņa nokļūtu līdz pirmajam notikumam stāstā. Skolēni strādā 3–4 personu grupās, lai veidotu algoritmu robotam, lai tas secīgi pārvietotos tālāk. Skolēni testē algoritmus uz paklājiņa klasē un veic atkļūdošanu, ja nepieciešams.',
+        'Viņi turpina virzīties cauri iespējami lielam stāsta notikumu skaitam',
+        'Šo aktivitāti var īstenot arī bez datora izmantošanas.',
+        'Viens bērns ir robots, cits bērns ir programmētājs. Programmētājs veido algoritma ceļu, secīgi izmantojot kartītes ar bultiņām, lai palīdzētu robotam virzīties no viena attēla uz nākamo un pārstāstīt stāstu. Ikreiz, kad robots nonāk pie attēla, viņam tiek lūgts pastāstīt daļu stāsta.',
+    ],
+    'instructions' => [
+        'Skolotājs aicina skolēnus vērot gleznu/foto.',
+        'Viņi izmanto domāšanas secību "Sākums, Vidus, Beigas" (Project Zero, kas radīts Hārvardā), lai radītu stāstu.',
+        'Skolotājs viņiem vaicā "Ja šis mākslas darbs ir stāsta sākums/vidus/beigas, kas varētu notikt tālāk/pirms tam/beigās?',
+        'Skolēni ilustrē notikumus stāstā.',
+        'Skolēni atceras notikumus un ievieto tos režģī. Izmantojot kartītes ar bultiņām, viņi izveido algoritmu, kas palīdzēs beebot pārstāstīt stāstu.'
+    ],
+],
+    'coding-with-legoboost' => [
+    'title' => 'Programmēšana ar LegoBoost – Scratch paplašinājumu',
+    'author' => 'Lidia Ristea',
+    'purposes' => [
+        'lai veidotu modeļus, izmantojot LegoBoost.',
+        'lai attīstītu programmēšanas prasmes Scratch.',
+        'lai programmētu robotus, izmantojot komandas, sākot no vienkāršām līdz pat sarežģītām.'
+    ],
+    'description' => 'Šajā izaicinājumā skolēni izmantos Scratch-LegoBoost paplašinājumu un ievadīs kodus lietotnē, lai roboti virzītos uz priekšu, atpakaļ, izvairītos no šķēršļiem, kā arī balss komandas.',
+    'duration' => '120 minūtes',
+    'instructions' => [
+        'Piesakies Scratch.mit.edu lietotnē.',
+        'Palaid Scratch Link un activizē Bluetooth klēpjdatorā.',
+        'Scratch vidē nospied Pievienot paplašinājumu un izvēlies LegoBoost.',
+        'Pievieno attēlu par ES programmēšanas nedēļu.',
+        'Iestati divus AB motorus uz IESLĒGTS, un uz IZSLĒGTS, kad tie satiek sarkanu šķērsli.',
+        'Zaļajā krāsā motors A ir iestatīts uz IESLĒGTS, melnajā krāsā motors B ir iestatīts uz IESLĒGTS.',
+        'Maršrutā tiks izvietoti zaļi, sarkani un melni šķēršļi.',
+        'Pievieno komandas kustībai un pagriezieniem no bultiņām un teksta uz runu, kad notiek sastapšanās ar šķērsli.',
+        'Testē to!'
+    ]
+]
+
+
 ];
 
