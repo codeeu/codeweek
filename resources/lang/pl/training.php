@@ -296,7 +296,29 @@ W proponowanym filmie zespół Tygodnia Kodowania prezentuje kilka praktycznych,
                 "2" => "Moje serce nie jest z kamienia dla uczniów starszych klas szkół podstawowych",
                 "3" => "Zaprogramuj uczucia dla uczniów szkół średnich",
             ]
+        ],"18" => [
+
+            "title" => "SOS Water",
+"author" => "autor: Francisco Delgado Cecilia",
+"text" => [
+
+    "SOS Water jest odpowiedzią na potrzebę rozwiązania problemu zanieczyszczenia wody. Pomimo wysiłków podejmowanych w ostatnich latach 2 miliardy ludzi na całym świecie wciąż nie mają dostępu do bezpiecznej wody pitnej. W praktyce oznacza to, że realizacja szóstego Celu Zrównoważonego Rozwoju wchodzącego w skład Agendy 2030 ONZ, według którego wszyscy ludzie powinni mieć dostęp do bezpiecznej wody oraz urządzeń sanitarnych do 2030 roku, wciąż pozostaje odległa. To samo można powiedzieć o czternastym Celu Zrównoważonego Rozwoju dotyczącym życia w morzach i oceanach, którego założeniem jest ochrona i zrównoważone wykorzystanie oceanów, mórz i zasobów morskich na rzecz zrównoważonego rozwoju",
+
+"Zajęcia skupiają się na ważnej i wciąż aktualnej kwestii pomiaru jakości wody i nowych zanieczyszczeń, które wpływają na jakość wody. Uczniowie będą mieli możliwość zbadania i znalezienia rozwiązań rzeczywistych problemów związanych z wodą i środowiskiem, co pozwoli im rozwinąć umiejętności badawcze, a także kompetencje krytycznego myślenia i rozwiązywania problemów",
+
+"Opracowane plany zajęć obejmują praktyczne i kreatywne zadania, w tym programowanie w języku Scratch, wprowadzenie do uczenia maszynowego i sztucznej inteligencji z platformą Learning Machine Learning oraz budowanie pojazdów do gromadzenia próbek wody i analizy jej pH z zestawów klocków Lego. Wszystkie te działania pozwolą uczniom wykorzystać ich umiejętności i wiedzę w praktyce w interaktywnym i interesującym środowisku, co zwiększy ich motywację i zainteresowanie projektem",
+
+"Realizacja tego działania zakłada realizację trzech działań w klasach, dzięki którym będzie możliwe ukończenie całego projektu w ramach interesujących i motywujących zajęć. Każde z tych zadań może być jednak zrealizowane oddzielnie"
+
+],
+"activities" => [
+    "1" => "SOS Water z platformą Scratch",
+                "2" => "SOS Water z uczeniem maszynowym",
+                "3" => "SOS Water z LEGO Robotics",
+            ]
+
         ],
+
 
 
     ],

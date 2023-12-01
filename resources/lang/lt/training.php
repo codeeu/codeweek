@@ -298,7 +298,29 @@ Naudodami „Python“, mokiniai gali kurti viktorinas apie istorinius įvykius,
                 "2" => "„Mano širdis nėra akmeninė“ pagrindinės mokyklos mokiniams",
                 "3" => "„Nuotaikos programavimas“ vidurinės mokyklos mokiniams",
             ]
+        ],"18" => [
+
+            "title" => "„SOS Vanduo“",
+            "author" => "Francisco Delgado Cecilia",
+            "text" => [
+
+                "„SOS Vanduo“ – tai atsakas į būtinybę spręsti vandens taršos problemą. Nepaisant pastaraisiais metais dedamų pastangų, pasaulyje vis dar yra du milijardai žmonių, kurie neturi saugaus geriamojo vandens. Tai reiškia, kad Darbotvarkės iki 2030 m. 6-asis darnaus vystymosi tikslas (DVT), kuriuo siekiama, kad iki 2030 m. visi žmonės turėtų galimybę naudotis saugiai tvarkomu vandeniu ir sanitarinėmis sąlygomis, toli gražu nepasiektas. Tas pats pasakytina ir apie 14-ąjį DVT „Gyvybė vandenyse“, kuriuo siekiama išsaugoti ir tausiai naudoti vandenynus, jūras ir jūrų išteklius siekiant darnaus vystymosi.",
+
+                "Šiame mokymosi segmente daugiausia dėmesio skiriama svarbiam ir aktualiam vandens kokybės matavimo klausimui bei naujiems teršalams, kurie kelia grėsmę vandens kokybei. Mokiniai turės galimybę nagrinėti realias problemas, susijusias su vandeniu ir aplinka, bei ieškoti joms sprendimų. Tai padės ugdyti tokius įgūdžius kaip tyrimas, kritinis mąstymas ir problemų sprendimas.",
+
+                "Pamokų planuose yra praktinių ir kūrybinių užduočių, pavyzdžiui, programavimas naudojant „Scratch“, susipažinimas su mašininiu mokymusi ir dirbtiniu intelektu naudojant „Learning Machine Learning“ (Mokomės mašininio mokymąsi) ir valdomų transporto priemonių, galinčių imti vandens mėginius ir atlikti vandens pH analizę, konstravimas naudojant „Lego“ rinkinius. Atlikdami šias užduotis mokiniai galės praktiškai pritaikyti savo įgūdžius ir žinias interaktyvioje ir žaismingoje aplinkoje, o tai padidins jų motyvaciją ir susidomėjimą projektu.",
+
+                "Šiame mokymosi segmente siūloma atlikti visas tris projekto veiklas, kad mokiniams būtų užtikrintas prasmingesnis ir labiau motyvuojantis mokymosi procesas. Tačiau kiekvieną veiklą galima atlikti ir atskirai."
+
+            ],
+            "activities" => [
+                "1" => "„SOS Vanduo“ su „Scratch“",
+                "2" => "„SOS Vanduo“ ir mašininis mokymasis",
+                "3" => "„SOS Vanduo“ ir robotika",
+            ]
+
         ],
+
 
 
 
