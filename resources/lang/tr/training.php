@@ -298,7 +298,28 @@ Bu videoda, Kod Haftası ekibi size özellikle görme bozukluğu, Down sendromu 
                 "2" => "Taş kalpli değilim: Ortaokul öğrencileri için",
                 "3" => "Beni ruh halime göre kodla: Lise öğrencileri için",
             ]
+        ],"18" => [
+            "title" => "SOS Water",
+            "author" => "Francisco Delgado Cecilia",
+            "text" => [
+
+                "SOS Water, su kirliliği sorununun ele alınması ihtiyacını karşılamaya yönelik bir projedir. Son yıllarda yapılan çalışmalara rağmen, tüm dünyada halihazırda güvenli içme suyuna erişimi olmayan 2 milyar insan mevcut. Yani, 2030 Gündeminin tüm insanların 2030 yılına dek güvenli bir şekilde yönetilebilen sulara ve sanitasyona erişiminin olması gerektiğini ifade eden 6 sayılı Sürdürülebilir Kalkınma Hedefi, gerçekleştirilmekten çok uzaktadır. Aynı durum, sürdürülebilir kalkınma açısından okyanusların, denizlerin ve deniz kaynaklarının sürdürülebilir şekilde korunup kullanılmasını amaçlayan 14 sayılı su altı yaşama yönelik Sürdürülebilir Kalkınma Hedefi için de geçerlidir.",
+
+                "Bu Öğrenim Bilgisinde, gündemle alakalı ve güncel bir konu olan su kalitesi ölçümünün yanı sıra, su kalitesini düşüren yeni kirleticiler ele alınmıştır. Öğrenciler, su ve çevreyle ilişkili gerçek sorunları inceleyip bunlara çözüm bulma ve böylece araştırma, eleştirel düşünme ve problem çözme gibi beceriler geliştirme fırsatı elde edeceklerdir.",
+
+                "Ders planları içerisinde; Scratch üzerinde programlama yapma, Learning ML ile makine öğrenimine ve yapay zekaya giriş, su örneği almak ve su pH değeri analizi yapmak üzere Lego setleriyle yönlendirilebilen araçlar oluşturma gibi uygulamalı ve yaratıcı aktiviteler yer almaktadır. Bu aktiviteler, öğrencilerin etkileşimli ve eğlenceli bir ortamda bilgi ve becerilerini uygulamaya dökmelerini ve bu sayede projeye olan ilgilerinin ve motivasyonlarının artmasını sağlayacaktır.",
+
+                "Bu Öğrenim Bilgisinin uygulanabilmesi için üç aktivitenin de sınıfta ders içerisinde geliştirilmesi, tüm projenin tamamlanması ve daha anlamlı ve motive edici bir öğrenim sürecinin benimsenmesi önerilir. Ancak her bir aktivite bireysel olarak da gerçekleştirilebilir."
+
+            ],
+            "activities" => [
+                "1" => "Scratch ile SOS Water",
+                "2" => "Makine Öğrenimi ile SOS Water",
+                "3" => "Robot Teknolojisi ile SOS Water",
+            ]
+
         ],
+
 
 
     ],

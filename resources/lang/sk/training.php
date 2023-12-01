@@ -297,7 +297,29 @@ V tomto videu vám tím Týždňa programovania ukáže niekoľko praktických, 
                 "2" => "Nemám srdce z kameňapre žiakov druhého stupňa základnej školy",
                 "3" => "Naprogramuj mi náladu pre študentov strednej školy",
             ]
+        ],"18" => [
+
+            "title" => "SOS voda",
+"author" => "autor Francisco Delgado Cecilia",
+"text" => [
+
+    "SOS voda je reakciou na potrebu riešiť problém znečistenia vody. Napriek úsiliu, ktoré sa v posledných rokoch vynaložilo, na svete stále žijú 2 miliardy ľudí, ktorí nemajú prístup k bezpečnej pitnej vode. To znamená, že dosiahnutie cieľa udržateľného rozvoja č. 6 Agendy 2030, ktorý stanovuje, že všetci ľudia by mali mať do roku 2030 prístup k bezpečne spravovanej vode a sanitácii, je ešte ďaleko. To isté platí aj pre cieľ udržateľného rozvoja č. 14 - podmorský život, ktorého cieľom je zachovať a udržateľne využívať oceány, moria a morské zdroje v záujme udržateľného rozvoja.",
+
+                "Tento vzdelávací blok sa zameriava na relevantnú a aktuálnu problematiku merania kvality vody a nových znečisťujúcich látok, ktoré ohrozujú kvalitu vody. Študenti budú mať príležitosť skúmať a hľadať riešenia skutočných problémov týkajúcich sa vody a životného prostredia, čo im umožní rozvíjať zručnosti, ako je výskum, kritické myslenie a riešenie problémov.",
+
+                " Plány vyučovacích hodín obsahujú praktické a tvorivé aktivity, ako je programovanie v Scratch, zasvätenie do strojového učenia a umelej inteligencie s programom Learning Machine Learning a zostrojenie riadených vozidiel so stavebnicami Lego na odber vzoriek vody a analýzu pH vody. Tieto aktivity umožnia študentom uplatniť svoje zručnosti a vedomosti v interaktívnom a hravom prostredí, čím sa zvýši ich motivácia a záujem o projekt",
+
+                "Pri realizácii tohto učebného bloku sa navrhuje vypracovať tri aktivity v triede, dokončiť celý projekt a dosiahnuť zmysluplnejší a motivujúcejší proces učenia. Každá činnosť sa však môže vykonávať aj samostatne."
+
+],
+"activities" => [
+    "1" => "SOS voda so Scratch",
+                "2" => "SOS voda so strojovým učením",
+                "3" => "SOS voda s robotikou",
+            ]
+
         ],
+
 
 
     ],

@@ -311,7 +311,29 @@ I den här videon kommer Code Week-teamet att visa dig några praktiska, enkla o
                 "2" => "Jag har inte ett hjärta av sten för högstadieelever",
                 "3" => "Koda mig efter humör för gymnasieelever",
             ]
+        ],"18" => [
+
+            "title" => "SOS Vatten",
+"author" => "av Francisco Delgado Cecilia",
+"text" => [
+
+    "SOS Vatten är ett svar på behovet av att lösa problemet med vattenföroreningar. Trots de ansträngningar som har gjorts under de senaste åren finns det fortfarande 2 miljarder människor runt om i världen som inte har tillgång till säkert dricksvatten. Det innebär att det sjätte målet för hållbar utveckling i Agenda 2030, att alla människor ska ha tillgång till säkert förvaltat vatten och sanitet senast 2030, är långt ifrån att uppnås. Samma sak gäller för mål 14, hav och marina resurser, som syftar till att bevara och nyttja haven och de marina resurserna på ett hållbart sätt i syfte att uppnå en hållbar utveckling.",
+
+                "Denna infomodul är inriktad på den relevanta och aktuella frågan att mäta vattenkvalitet och nya föroreningar som hotar vattenkvaliteten. Eleverna får möjlighet att undersöka och hitta lösningar på verkliga problem kopplade till vattnet och miljön, och då kan de också utveckla förmågor som insamling av information, kritiskt tänkande och problemlösning.",
+
+                "Lektionsplanerna innehåller praktiska och kreativa aktiviteter, som programmering i Scratch, introduktion till maskininlärning och artificiell intelligens med LearningML, samt att konstruera styrda fordon med LEGO-satser för insamling av vattenprover och analys av deras pH-värden. Genom dessa aktiviteter kan eleverna tillämpa sina kunskaper och förmågor i praktiken i en interaktiv och lekfull miljö, vilket höjer deras motivation och intresse för projektet.",
+
+                "För att genomföra denna infomodul föreslås att man utför alla tre aktiviteterna med eleverna, så man fullföljer hela projektet och det blir en mer meningsfull och motiverande studieprocess. Aktiviteterna kan dock genomföras var och en för sig."
+
+],
+"activities" => [
+    "1" => "SOS Vatten med Scratch",
+                "2" => "SOS Vatten med maskininlärning",
+                "3" => "SOS Vatten med robotteknik"
+            ]
+
         ],
+
 
 
     ],

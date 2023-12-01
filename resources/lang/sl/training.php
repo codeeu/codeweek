@@ -296,7 +296,29 @@ V tem videoposnetku vam bo ekipa tedna programiranja pokazala nekaj praktičnih,
                 "2" => "Nimam kamna namesto srca za dijake nižjih letnikov srednje šole",
                 "3" => "Programiraj vse do zvezd za dijake višjih letnikov srednje šole",
             ]
+        ],"18" => [
+
+            "title" => "SOS za vode",
+            "author" => "avtor Francisco Delgado Cecilia",
+            "text" => [
+
+                "SOS za vode je odgovor na potrebo po reševanju problematike onesnaževanja voda. Kljub prizadevanjem v zadnjih letih še vedno 2 milijardi ljudi po vsem svetu nima dostopa do varne pitne vode. To pomeni, da cilj trajnostnega razvoja (SDG) 6 Agende 2030, ki določa, da bi morali imeti vsi ljudje dostop do varno upravljane vode in sanitarne oskrbe do leta 2030, še zdaleč ni dosežen. Enako velja za SDG 14, podvodno življenje, katerega cilj je ohranjanje in trajnostna uporaba oceanov, morij in morskih virov za trajnostni razvoj.",
+
+                "Ta učni drobec se osredotoča na relevantno in aktualno vprašanje merjenja kakovosti vode in novih onesnaževal, ki ogrožajo kakovost vode. Učenci bodo imeli priložnost raziskovati in iskati rešitve za resnične probleme, povezane z vodo in okoljem, kar jim bo omogočilo razvoj znanj in spretnosti, kot so raziskovanje, kritično mišljenje in reševanje problemov.",
+
+                "Učni načrti vključujejo praktične in ustvarjalne dejavnosti, kot so programiranje s programskim jezikom Scratch, uvod v strojno učenje in umetno inteligenco z Learning Machine Learning ter izdelava vodenih vozil s kompleti Lego za vzorčenje vode in analizo vrednosti pH vode. Te dejavnosti bodo učencem omogočile, da svoje spretnosti in znanja uporabijo v interaktivnem in igrivem okolju, kar bo povečalo njihovo motivacijo in zanimanje za projekt.",
+
+                "Predlagamo, da se pri izvajanju tega učnega drobca v učilnici izpeljejo tri dejavnosti, da se dokonča celoten projekt in se učni proces bolj smiselno in motivacijsko zaokroži. Vendar pa se vsaka dejavnost lahko izvede ločeno."
+
+            ],
+            "activities" => [
+                "1" => "SOS za vode s programskim jezikom Scratch",
+                "2" => "SOS za vode s strojnim učenjem",
+                "3" => "SOS za vode z robotiko",
+            ]
+
         ],
+
 
 
     ],

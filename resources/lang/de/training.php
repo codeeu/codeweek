@@ -247,7 +247,7 @@ Mit Python können Ihre Schülerinnen und Schüler u. a. Ratespiele zu historisc
                 'title' => 'In den folgenden Unterrichtseinheiten lernen die Schüler auf unterhaltsame und spannende Weise mehr über intelligente Maschinen.',
                 '1' => 'KI und ihre neuronalen Netze, für die Grundschule',
                 '2' => 'Mein Covid-19-Chatbot, für die Sekundarstufe I',
-                '3' => 'Leben im Zeitalter von „intelligenten Maschinen”: Herausforderungen und Chancen, für die Sekundarstufe II',
+                '3' => 'Leben im Zeitalter von "intelligenten Maschinen”: Herausforderungen und Chancen, für die Sekundarstufe II',
             ]
         ],
 
@@ -269,7 +269,7 @@ Mit Python können Ihre Schülerinnen und Schüler u. a. Ratespiele zu historisc
             "title" => "GESCHICHTENERZÄHLEN MIT HEDY",
             "author" => "von Felienne Hermans",
             "text" => [
-                "Ihre Schülerinnen und Schüler beherrschen bereits eine visuelle Programmiersprache, fühlen sich aber noch nicht bereit dazu, tiefer in eine textbasierte Programmiersprache einzusteigen? Dann ist dieses Lernhäppchen genau das Richtige für Sie und Ihre Schüler*innen, denn es wird allen dabei helfen, die Lücke zwischen einer visuellen und einer textbasierten Programmiersprache zu schließen. Das Lernhäppchen <strong>Geschichtenerzählen mit Hedy</strong> besteht aus drei Unterrichtsplänen auf der Basis von Hedy, einer „mitwachsenden“ Programmiersprache, mit der Kinder das Programmieren lernen können.",
+                "Ihre Schülerinnen und Schüler beherrschen bereits eine visuelle Programmiersprache, fühlen sich aber noch nicht bereit dazu, tiefer in eine textbasierte Programmiersprache einzusteigen? Dann ist dieses Lernhäppchen genau das Richtige für Sie und Ihre Schüler*innen, denn es wird allen dabei helfen, die Lücke zwischen einer visuellen und einer textbasierten Programmiersprache zu schließen. Das Lernhäppchen <strong>Geschichtenerzählen mit Hedy</strong> besteht aus drei Unterrichtsplänen auf der Basis von Hedy, einer \"mitwachsenden\" Programmiersprache, mit der Kinder das Programmieren lernen können.",
 
                 "Hedy richtet sich an Kinder, die mit textuellen Programmiersprachen loslegen möchten, denen jedoch der Einstieg in die Programmiersprache Python vielleicht noch zu kompliziert ist. Bei mitwachsenden Sprachen gibt es verschiedene Sprachlevel, wobei in jedem Level neue Konzepte und syntaktische Komplexität hinzukommen. Haben die Schüler*innen alle Hedy-Level durchlaufen, beherrschen sie eine Teilmenge von syntaktisch gültigem Python.",
 
@@ -297,6 +297,28 @@ Mit Python können Ihre Schülerinnen und Schüler u. a. Ratespiele zu historisc
                 "2" => "Mein Herz ist nicht aus Stein für die Mittelstufe",
                 "3" => "Programmier mich in Stimmung für die Oberstufe",
             ]
+        ],
+        "18" => [
+
+            "title" => "SOS Wasser",
+"author" => "von Francisco Delgado Cecilia",
+"text" => [
+
+    "SOS Wasser ist eine Antwort auf die Notwendigkeit, das Problem der Wasserverschmutzung anzugehen. Trotz der Anstrengungen der letzten Jahre haben immer noch 2 Milliarden Menschen auf der Welt keinen Zugang zu sauberem Trinkwasser. Das bedeutet, dass Ziel 6 der Agenda 2030 für nachhaltige Entwicklung, in dem festgehalten steht, dass alle Menschen einen Zugang zu einwandfreiem und bezahlbarem Trinkwasser und Sanitäreinrichtungen haben sollten, noch lange nicht erreicht ist. Dasselbe gilt für Ziel 14 zu Leben unter Wasser, das darauf abzielt, die Ozeane, Meere und Meeresressourcen im Sinne nachhaltiger Entwicklung zu erhalten und nachhaltig zu nutzen.",
+
+                "Schwerpunkt dieses Lernhäppchens ist das relevante und aktuelle Thema der Wasserqualitätsmessung und der neuen Schadstoffe, die die Wasserqualität verschlechtern. Die Schülerinnen und Schüler erhalten die Möglichkeit, reale Probleme im Zusammenhang mit Wasser und Umwelt zu untersuchen und nach Lösungen zu suchen, wodurch sie Fähigkeiten wie Recherche, kritisches Denken und Problemlösung entwickeln können.",
+
+                "Die Unterrichtspläne umfassen praktische und kreative Aktivitäten, wie z. B. Programmieren in Scratch, Einführung in maschinelles Lernen und künstliche Intelligenz mit Learning Machine Learning und den Bau von ferngesteuerten Fahrzeugen mit Lego-Sets für Wasserproben und pH-Analysen im Wasser. Durch diese Aktivitäten können Schülerinnen und Schüler ihre Fähigkeiten und ihr Wissen in einer interaktiven und spielerischen Umgebung in die Praxis umsetzen, wodurch sich ihre Motivation und ihr Interesse an dem Projekt steigern wird.",
+
+                "Für die Umsetzung dieses Lernhäppchens wird vorgeschlagen, die drei Aktivitäten im Unterricht zu entwickeln, um das gesamte Projekt abzuschließen und einen sinnvolleren und motivierenderen Lernprozess zu erreichen. Dennoch kann jede Aktivität auch für sich genommen durchgeführt werden."
+
+],
+"activities" => [
+    "1" => "SOS Wasser mit Scratch",
+                "1" => "SOS Wasser mit maschinellem Lernen",
+                "3" => "SOS Wasser mit Robotik",
+            ]
+
         ],
 
     ],
