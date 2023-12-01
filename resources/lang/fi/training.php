@@ -299,7 +299,29 @@ Tällä videolla koodausviikon tiimi esittelee muutamia helppoja ja hauskoja kä
                 "2" => "Sydämeni ei ole kiveä yläluokkien oppilaille",
                 "3" => "Koodaa minut tunteeseen toisen asteen opiskelijoille",
             ]
+        ],"18" => [
+
+            "title" => "Vesistöjen SOS-hätätila",
+"author" => "tekijä Francisco Delgado Cecilia",
+"text" => [
+
+    "Vesistöjen SOS-hätätila on vastaus tarpeeseen kehittää ratkaisuja vesistöjen saastumiseen. Viime vuosien pyrkimyksistä huolimatta maailmassa on yhä kaksi miljardia ihmistä, joilla ei ole käytettävissään puhdasta juomavettä. Toisin sanoen Agenda 2030 -ohjelman kestävän kehityksen tavoite 6, jonka mukaan vuoteen 2030 mennessä pitäisi varmistaa turvallisen veden ja sanitaation saatavuus kaikille, on vielä kaukana saavutetusta. Sama koskee tavoitetta 14, vedenalainen elämä, jonka tarkoitus on säilyttää meret ja merten tarjoamat luonnonvarat ja edistää niiden kestävää käyttöä.",
+
+                "Tässä oppimismoduulissa keskitytään tärkeään ja ajankohtaiseen aiheeseen eli veden laadun mittaamiseen sekä uusiin saasteisiin, jotka heikentävät veden laatua. Opiskelijat pääsevät tutustumaan ja etsimään ratkaisuja oikeisiin veteen ja ympäristöön liittyviin haasteisiin, minkä myötä heidän tiedonhaun, kriittisen ajattelun ja ongelmanratkaisun taitonsa kehittyvät.",
+
+                "Tuntisuunnitelmissa on käytännöllisiä ja luovia tehtäviä, esimerkiksi ohjelmointia Scratchilla, johdatusta koneoppimiseen ja koneälyn käyttöön Learning Machine Learning -alustalla sekä ohjattujen ajoneuvojen rakentamista Lego-palikoilla veden näytteenottoa ja pH-analyysia varten. Näiden tehtävien avulla opiskelijat pääsevät soveltamaan taitojaan ja tietojaan käytännössä interaktiivisessa ja hauskassa ympäristössä, mikä parantaa heidän motivaatiotaan ja kiinnostustaan projektiin.",
+
+                "Oppimismoduulin toteutukseksi ehdotetaan kolmesta harjoituksesta koostuvan projektin suorittamista luokassa kokonaisuudessaan. Siten saavutetaan merkityksellisempi ja motivoivampi oppimisprosessi. Harjoitukset voidaan kuitenkin tehdä myös erikseen."
+
+],
+"activities" => [
+    "1" => "Vesistöjen SOS-hätätila Scratch-alustalla",
+                "2" => "Vesistöjen SOS-hätätila LearningML-alustalla",
+                "3" => "Vesistöjen SOS-hätätila LEGO-roboteilla",
+            ]
+
         ],
+
 
 
     ],

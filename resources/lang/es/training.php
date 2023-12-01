@@ -302,7 +302,29 @@ Con Python, los alumnos pueden crear cuestionarios sobre hechos históricos, res
                 "2" => "Mi corazón no es de piedra para alumnos de primer ciclo de educación secundaria",
                 "3" => "Programa mi estado de ánimo para alumnos de segundo ciclo de secundaria",
             ]
+        ],"18" => [
+
+            "title" => "SOS Agua",
+"author" => "por Francisco Delgado Cecilia",
+"text" => [
+
+    "SOS Agua es una respuesta a la necesidad de abordar el problema de la contaminación del agua. A pesar de los esfuerzos llevados a cabo en los últimos años, todavía quedan 2 000 millones de personas en el mundo que no tienen acceso a agua potable segura. Esto significa que el Objetivo de Desarrollo Sostenible (ODS) 6 de la Agenda 2030, en el que se afirma que todo el mundo debe tener acceso a agua potable y saneamiento para 2030, está lejos de conseguirse. Lo mismo ocurre con el ODS 14 sobre la vida submarina, según el que se pretende preservar y utilizar la sostenibilidad de los océanos, mares y recursos marinos para un desarrollo sostenible",
+
+"Este minicurso se centra en el tema relevante y de actualidad de la medición de la calidad del agua y los nuevos contaminantes que ponen en peligro la calidad del agua. Los alumnos tendrán la oportunidad de investigar y buscar soluciones a problemas relacionados con el agua y el medio ambiente, lo que les permitirá desarrollar capacidades como la investigación, el pensamiento crítico y la resolución de problemas",
+
+"Esta lección prevé incluir actividades prácticas y creativas, como la programación en Scratch, la iniciación al aprendizaje automático y la inteligencia artificial con Learning ML y la construcción de vehículos guiados con sets de LEGO para la recogida de muestras de agua y el análisis de su pH. Estas actividades permitirán que los alumnos pongan en práctica sus capacidades y conocimientos en un entorno interactivo y divertido, lo cual mejorará su motivación e incrementará su interés en el proyecto",
+
+"Para la puesta en práctica de este minicurso, proponemos que se lleven a cabo las tres actividades en el aula, con el fin de completar todo el proyecto y conseguir un proceso de aprendizaje más instructivo y motivador. Sin embargo, cada una de las actividades puede llevarse a cabo de forma aislada"
+
+],
+"activities" => [
+    "1" => "SOS Agua con Scratch",
+                "2" => "SOS Agua con Learning ML",
+                "3" => "SOS Agua con la robótica de LEGO"
+            ]
+
         ],
+
 
     ],
     'download_video_script' => 'Descargar el guion del vídeo',

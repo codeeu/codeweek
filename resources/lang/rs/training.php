@@ -300,7 +300,29 @@ Pomoću Pythona učenici mogu da prave kvizove o istorijskim događajima, da re�
                 "2" => "Moje srce nije od kamena za učenike nižih razreda srednje škole",
                 "3" => "Programiraj me prema raspoloženju za učenike viših razreda srednje škole",
             ]
+        ],"18" => [
+
+            "title" => "Voda zove upomoć",
+"author" => "Francisco Delgado Cecilia",
+"text" => [
+
+    "Voda zove upomoć je odgovor na potrebu za rešavanje problema  zagađenja vode. Uprkos naporima proteklih godina, i dalje 2 milijarde ljudi širom sveta neće imati pristup bezbednoj vodi za piće. To znači da smo još daleko od ostvarivanja Cilja održivog razvoja (SDG) 6 Agende 2030, koji navodi da bi svi ljudi trebalo da imaju pristup vodi i sanitarijama kojima se bezbedno upravlja do 2030. godine.  Isto važi za SDG 14, Život pod vodom, koji za cilj ima očuvanje i održivo korišćenje okeana, mora i vodnih resursa za održivi razvoj.",
+
+                "Ovaj modul za učenje se fokusira na relevantni problem merenja kvaliteta vode i novih zagađivača koji predstavljaju izazov po kvalitet vode. Učenici će imati priliku da istražuju i traže rešenja stvarnih problema u vezi sa vodom i okruženjem, što će im omogućiti da razvijaju veštine, kao što su istraživanje, kritičko razmišljanje i rešavanje problema.",
+
+                "Planovi lekcija obuhvataju praktične i kreativne aktivnosti, kao što su programiranje na platformi Scratch, predstavljanje mašinskog učenja i veštačke inteligencije sa platformom Learning Machine Learning i pravljenje navođenih vozila sa Lego kompletima za uzorkovanje vode i analizu pH vrednosti vode. Ove aktivnosti će omogućiti učenicima daprimene svoje veštine i znanja u praksi u interaktivnom i razigranom okruženju, što će povećati njihovu motivisanost i zainteresovanost za projekat.",
+
+                "Za primenu ovog modula za učenje predlaže se razvijanje tri aktivnosti u razredu, da bi se ceo projekat dovršio i postigao značajniji i motivisaniji proces učenja. Međutim, svaka aktivnost može da se obavi i izolovano."
+
+],
+"activities" => [
+    "1" => "Voda zove upomoć u Scratch-u",
+                "2" => "Voda zove upomoć sa mašinskim učenjem",
+                "3" => "Voda zove upomoć sa robotikom",
+            ]
+
         ],
+
 
 
     ],

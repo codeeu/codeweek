@@ -335,7 +335,29 @@ Pythoni abil saavad õpilased koostada viktoriine ajaloosündmuste kohta, lahend
                 "2" => "„Mu süda ei ole kivist“ põhikooli esimese astme õpilastele",
                 "3" => "„Programmeerige mulle meeleolu“ põhikooli teise astme õpilastele",
             ]
+        ],"18" => [
+
+            "title" => "SOS vesi",
+            "author" => "Francisco Delgado Cecilia",
+"text" => [
+
+    "SOS vesi on loodud vastusena vajadusele lahendada veereostuse probleem. Vaatamata viimaste aastate jõupingutustele on maailmas siiski kaks miljardit inimest, kellel ei ole ligipääsu puhtale joogiveele. See tähendab, et me ei ole veel kaugeltki täitnud kestliku arengu tegevuskava 2030 kestliku arengu eesmärki nr 6, mille kohaselt peaks kõigil inimestel olema 2030. aastaks ligipääs kestlikult majandatud veele ja kanalisatsioonile. Sama kehtib kestliku arengu eesmärgi nr 14 kohta, mis käsitleb ookeanide, merede ja mereressursside kaitset ja kestlikku kasutamist.",
+
+    "Selle õppevahendi tähelepanu keskmes on vee kvaliteedi mõõtmise ning vee kvaliteeti ohustavate uute saasteainete oluline ja aktuaalne teema. Õpilastel on võimalus uurida ja püüda lahendada vee ja keskkonnaga seotud tegelikke probleeme, arendades selle käigus selliseid oskusi, nagu uurimistöö tegemine, kriitiline mõtlemine ja probleemilahendus.",
+
+    "Tunnikavad sisaldavad praktilisi ja loomingulisi tegevusi, nagu Scratchiga programmeerimine, tutvumine masinõppe ja tehisintellektiga rakenduse Learning Machine Learning abil ning juhitavate sõidukite ehitamine Lego komplektidest veeproovide võtmiseks ja vee pH-taseme määramiseks. Need tegevused võimaldavad õpilastel praktiliselt rakendada oma oskusi ja teadmisi interaktiivses ja mängulises keskkonnas, mis suurendab nende motivatsiooni ja huvi projekti vastu.",
+
+    "Seda õppevahendit on soovitatav kasutada klassiruumis nende kolme tegevuse kaudu, teha läbi kogu projekt ning saavutada sellega sisukam ja motiveerivam õppeprotsess. Iga tegevust saab siiski kasutada ka eraldi."
+
+],
+"activities" => [
+    "1" => "SOS vesi Scratchiga",
+    "2" => "SOS vesi masinõppega",
+    "3" => "SOS vesi robootikaga",
+]
+
         ],
+
     ],
     'download_video_script' => 'Laadi alla video skript',
     'ready_to_share' => 'Kas olete valmis õpitut oma õpilastega jagama?',

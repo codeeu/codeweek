@@ -299,6 +299,28 @@ I denne video viser Kodeuge-teamet nogle praktiske, nemme og sjove kodeaktivitet
                 "3" => "Kod mig i stemning til elever på ungdomsuddannelser",
             ]
         ],
+        "18" => [
+
+            "title" => "SOS vand",
+            "author" => "af Francisco Delgado Cecilia",
+            "text" => [
+
+                "SOS vand er et svar på behovet for at tage fat på problemet med vandforurening. På trods af den indsats, der er iværksat gennem de seneste år, er der stadig 2 milliarder mennesker i verden, som ikke har adgang til rent drikkevand. Det betyder, at vi er langt fra at have nået verdensmål for bæredygtig udvikling (SDG) nr. 6 i dagsordenen for 2030, som fastsætter, at alle skal have adgang til rent vand og sanitet senest i 2030. Det samme gælder SDG 14, livet i havet, hvis mål er bæredygtig udvikling med bevaring og bæredygtig brug af havene og havressourcerne.",
+
+                "Denne undervisningsbid fokuserer på det relevante og aktuelle emne måling af vandkvalitet og de nye forurenende stoffer, som ændrer vandkvaliteten. Eleverne vil få mulighed for at undersøge og finde løsninger på faktiske problemer vedrørende vand og miljøet, hvilket vil sætte dem i stand til at udvikle kompetencer inden for forarbejde, kritisk tænkning og problemløsning.",
+
+                "Læreplanerne indeholder praktiske og kreative aktiviteter, som for eksempel programmering i Scratch, introduktion til maskinlæring og kunstig intelligens med Learning Machine Learning og konstruktion af styrede køretøjer med LEGO-sæt, som kan tage vandprøver og analysere vandets pH-værdi. Disse aktiviteter vil give eleverne mulighed for at omsætte deres kompetencer og viden til praksis i et interaktivt og legende miljø, hvilket vil øge motivationen og interessen for projektet.",
+
+                "Ved afholdelse af denne undervisningsbid foreslår vi, at de tre aktiviteter foregår i klassen, så hele projektet gennemføres, og læringsprocessen bliver mere meningsfuld og motiverende. De enkelte aktiviteter kan dog afholdes hver for sig."
+
+            ],
+            "activities" => [
+                "1" => "SOS vand med Scratch",
+                "2" => "SOS vand med maskinlæring",
+                "3" => "SOS vand med robotteknik",
+            ]
+
+        ],
 
 
     ],
