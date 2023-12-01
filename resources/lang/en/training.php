@@ -361,6 +361,20 @@ With Python, students can create quizzes about historical events, solve math pro
                 "2" => "My heart isn’t made of stone for lower secondary pupils",
                 "3" => "Code me to the mood for upper school pupils",
             ]
+        ],        "18" => [
+            "title" => "SOS Water",
+            "author" => "by Francisco Delgado Cecilia",
+            "text" => [
+                "SOS Water is a response to the need to address the problem of water pollution. Despite the efforts made in recent years, there are still 2 billion people around the world who do not have access to safe drinking water. This means that Sustainable Development Goal (SDG) 6 of the 2030 Agenda, which states that all people should have access to safely managed water and sanitation by 2030, is far from being achieved. The same is true for SDG 14, underwater life, which aims to conserve and use sustainably the oceans, seas and marine resources for sustainable development.",
+                "This Learning Bit focuses on the relevant and topical issue of water quality measurement and the new pollutants that challenge water quality. Students will have the opportunity to investigate and seek solutions to real problems related to water and the environment, which will allow them to develop skills such as research, critical thinking and problem solving.",
+                "The lesson plans include practical and creative activities, such as programming in Scratch, initiation to machine learning and artificial intelligence with Learning Machine Learning and the building of guided vehicles with Lego sets for water sampling and water pH analysis. These activities will allow students to put their skills and knowledge into practice in an interactive and playful environment, which will increase their motivation and interest in the project.",
+                "For the implementation of this Learning Bit it is proposed to develop the three activities in class, to complete the entire project and obtain a more meaningful and motivating learning process. However, each activity can be carried out in isolation."
+            ],
+            "activities" => [
+                "1" => "SOS Water with Scratch",
+                "2" => "SOS Water with Machine Learning",
+                "3" => "SOS Water with Robotics",
+            ]
         ],
     ],
     'download_video_script' => 'Download the video script',

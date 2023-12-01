@@ -296,7 +296,29 @@ U ovom videozapisu tim Tjedna kodiranja pokazat će vam nekoliko praktičnih, je
                 "2" => "Moje srce nije od kamena za učenike nižih razreda srednje škole",
                 "3" => "Programiraj me do raspoloženja za učenike viših razreda srednje škole",
             ]
+        ],"18" => [
+
+            "title" => "SOS za vodu",
+            "author" => "autora Francisca Delgada Cecilia",
+            "text" => [
+
+                "SOS za vodu odgovor je na potrebu da se bavimo problemom onečišćenja vode. Unatoč naporima koji se proteklih godina ulažu, dvije milijarde ljudi diljem svijeta i dalje nemaju pristup sigurnoj vodi za piće. To znači da smo daleko od postizanja 6. cilja održivog razvoja iz Programa do 2030. u kojem se navodi da do 2030. godine svi ljudi trebaju imati pristup vodi kojom se sigurno upravlja te higijenskim i sanitarnim uvjetima. To vrijedi i za 14. cilj održivog razvoja, život ispod vode, kojim se nastoji očuvati i održivo koristiti oceane, mora i morske resurse za održiv razvoj.",
+
+                "Ovaj odjeljak za učenje naglasak stavlja na važno i aktualno pitanje mjerenja kvalitete vode i novih onečišćivača koji dovode u pitanje kvalitetu vode. Učenici će imati priliku istražiti i tražiti rješenja za stvarne probleme povezane s vodom i okolišem, što će im omogućiti da razviju vještine poput istraživanja, kritičkog razmišljanja i rješavanja problema.",
+
+                "Nastavni planovi uključuju praktične i kreativne aktivnosti poput programiranja u programu Scratch, uvoda u strojno učenje i umjetnu inteligenciju uz platformu Learning Machine Learning te izrade vozila kojima se upravlja s pomoću Lego kompleta radi uzorkovanja vode i analize pH-vrijednosti vode. Te će aktivnosti omogućiti učenicima da praktično primjenjuju svoje vještine i znanja u interaktivnom i zaigranom okruženju, što će ih dodatno motivirati i zainteresirati za projekt.",
+
+                "Za provedbu ovog odjeljka za učenje predlaže se osmišljavanje triju aktivnosti u razredu kako bi se dovršio cijeli projekt te kako bi proces učenja bio smisleniji i više motivirao učenike. Međutim, svaka se aktivnost može provoditi i zasebno."
+
+            ],
+            "activities" => [
+                "1" => "SOS za vodu u alatu Scratch",
+                "2" => "SOS za vodu uz Machine Learning",
+                "3" => "SOS za vodu uz Robotics",
+            ]
+
         ],
+
 
 
     ],

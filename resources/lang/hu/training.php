@@ -298,12 +298,34 @@ A Pythonnal a diákok kvízeket hozhatnak létre történelmi eseményekről, ma
                 "2" => "Nincs kőből a szívem alsóbb évfolyamos középiskolás diákoknak",
                 "3" => "Programozz a megfelelő hangulatra felsőbb évfolyamos középiskolás diákoknak",
             ]
+        ],"18" => [
+
+            "title" => "Az SOS víz projekt",
+"author" => "készítette: Francisco Delgado Cecilia",
+"text" => [
+
+                "Az SOS víz projekt a vízszennyezés problémájának megoldására adott válasz. Az elmúlt években tett erőfeszítések ellenére a világon még mindig van 2 milliárd ember, akik nem jutnak biztonságos ivóvízhez. Ez azt jelenti, hogy a Világunk 2030 program 6. fenntartható fejlődési célja (SGD) szerint 2030-ra minden embernek hozzáférést kell biztosítani tiszta vízhez és az alapvető köztisztasághoz, még messze van a megvalósulástól. Ugyanez igaz a 14. fenntartható fejlődési célra is, amely a víz alatti életre vonatkozik, és célja az óceánok, tengerek és tengeri erőforrások megőrzése és fenntartható használata a fenntartható fejlődés érdekében.",
+
+                "Ez a tudásmorzsa a vízminőség mérésének fontos és aktuális kérdésére és a vízminőséget veszélyeztető új szennyező anyagokra összpontosít. A tanulóknak lehetőségük lesz arra, hogy a vízzel és a környezettel kapcsolatos valós problémákat vizsgáljanak, és azokra keressenek megoldásokat, ami lehetővé teszi számukra az olyan készségek fejlesztését, mint a kutatás, a kritikus gondolkodás és a problémamegoldás.",
+
+                "A tanterv olyan gyakorlati és kreatív tevékenységeket tartalmaz, mint programozás a Scratch platformon, a gépi tanulás és a mesterséges intelligencia megismerése a \"Machine Learning\" platform segítségével, valamint a vízmintavételhez és a víz pH-értékének elemzéséhez szükséges irányítható járművek építése Lego-készletekből. Ezek a tevékenységek lehetővé teszik a tanulók számára, hogy készségeiket és tudásukat interaktív és játékos környezetben ültessék át a gyakorlatba, ami növeli a projekt iránti motivációjukat és érdeklődésüket.",
+
+                "Ennek a tudásmorzsának a megvalósításához javasolt a három tevékenység kidolgozása az osztályban, hogy a teljes projekt befejezhető legyen, és egy tartalmasabb és motiválóbb tanulási folyamatot érjenek el. Azonban minden tevékenység külön is elvégezhető."
+
+],
+"activities" => [
+                "1" => "SOS víz projekt a Scratch platformon",
+                "2" => "SOS víz projekt gépi tanulással",
+                "3" => "SOS víz projekt robotika segítségével",
+            ]
+
         ],
 
 
 
 
-],
+
+    ],
     'download_video_script' => 'Videó forgatókönyvének letöltése',
     'ready_to_share' => 'Készen áll arra, hogy megossza a tanultakat a diákjaival?',
     'choose_lessons' => 'Válasszon ki egyet az alábbi óravázlatok közül, és szervezzen tevékenységet a diákjaival.',
