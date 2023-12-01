@@ -302,7 +302,29 @@ Con Python gli studenti possono creare quiz su eventi storici, risolvere problem
                 "2" => "il mio cuore non è fatto di pietra per classi della scuola secondaria di primo grado;",
                 "3" => "programmami in base al tuo umore per classi della scuola secondaria di secondo grado.",
             ]
+        ],"18" => [
+
+            "title" => "SOS Acqua",
+            "author" => "di Francisco Delgado Cecilia",
+            "text" => [
+
+                "SOS Acqua è una risposta alla necessità di far fronte al problema dell’inquinamento delle acque. Nonostante i tentativi compiuti negli ultimi anni, ci sono ancora due miliardi di persone nel mondo che non hanno accesso ad acqua potabile sicura. Questo vuol dire che l’obiettivo di sviluppo sostenibile (OSS) 6 dell’agenda 2030, in base al quale tutte le persone devono avere accesso ad acqua gestita in modo sicuro e a servizi igienici entro il 2030, è ben lontano dall’essere raggiunto. Lo stesso vale per l’OSS 14 relativo alla vita sott’acqua, che punta a conservare e utilizzare in modo sostenibile oceani, mari e risorse marine per uno sviluppo sostenibile.",
+
+                "Questa pillola di apprendimento si concentra sull’importante e attuale problema della misurazione della qualità dell’acqua e sulle nuove sostanze inquinanti che ne compromettono la qualità. Studenti e studentesse avranno la possibilità di indagare e trovare soluzioni a problemi concreti relativi all’acqua e all’ambiente. Così facendo, potranno sviluppare competenze come eseguire ricerche, affinare il pensiero critico e ottimizzare la risoluzione dei problemi.",
+
+                "I piani delle lezioni comprendono attività pratiche e creative, tra cui la programmazione in Scratch, l’introduzione all’apprendimento automatico e l’intelligenza artificiale con Learning Machine Learning e la costruzione di veicoli telecomandati con set Lego per il campionamento dell’acqua e l’analisi del suo pH. Queste attività permetteranno a studenti e studentesse di mettere in pratica le proprie competenze e conoscenze in un ambiente interattivo e divertente, rafforzandone la motivazione e l’interesse nel progetto.",
+
+                "Per l’esecuzione di questa pillola di apprendimento, il suggerimento è sviluppare tutte e tre le attività in classe in modo da completare l’intero progetto e realizzare un processo di apprendimento più efficace e stimolante. Tuttavia, è possibile svolgere ogni attività singolarmente."
+
+            ],
+            "activities" => [
+                "1" => "SOS Acqua con Scratch",
+                "2" => "SOS Acqua con Learning Machine Learning",
+                "3" => "SOS Acqua con Lego Robotics",
+            ]
+
         ],
+
 
 
     ],

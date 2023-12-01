@@ -299,6 +299,27 @@ Në këtë video, ekipi i Code Week do t’ju tregojë disa aktivitete praktike,
                 "2" => "Zemra ime nuk është prej guri për nxënësit e ciklit të mesëm të ulët",
                 "3" => "Më kodoni sipas emocioneve për nxënësit e ciklit të mesëm të lartë",
             ]
+        ],        "18" => [
+
+            "title" => "Uji SOS",
+            "author" => "nga Francisco Delgado Cecilia",
+            "text" => [
+
+                "Uji SOS është një përgjigje ndaj nevojës për të adresuar problemin e ndotjes së ujit. Pavarësisht përpjekjeve të bëra gjatë viteve të fundit, në mbarë botën ekzistojnë ende 2 miliardë njerëz që nuk kanë qasje në burime të sigurta të ujit të pijshëm. Kjo do të thotë se arritja e Objektivit të Zhvillimit të Qëndrueshëm (SDG) 6 i Axhendës 2030, sipas të cilit të gjithë njerëzit duhet të kenë qasje në ujë dhe kanalizime të menaxhuara në mënyrë të sigurt deri në vitin 2030, është ende larg. E njëjta gjë vlen edhe për objektivin SDG 14 për jetën nënujore, sipas të cilit synohet përdorimi në mënyrë të qëndrueshme i oqeaneve, deteve dhe burimeve detare për zhvillim të qëndrueshëm.",
+
+                "Ky Bit Mësimor përqendrohet në çështjen përkatëse dhe aktuale të matjes së cilësisë së ujit dhe ndotësve të rinj që sfidojnë cilësinë e ujit. Nxënësit do të kenë mundësinë të hetojnë dhe të kërkojnë zgjidhje për problemet reale që lidhen me ujin dhe mjedisin, gjë që do t'u japë atyre mundësinë që zhvillojnë aftësi të ndryshme si hulumtimi, mendimi kritik dhe zgjidhja e problemeve.",
+
+                "Planet e mësimit përfshijnë aktivitete praktike dhe krijuese, si programimi në Scratch, fillimi i të mësuarit me Machine Learning (Makinerinë e të mësuarit) dhe inteligjencë artificiale me Learning Machine Learning (Të mësuarit përmes makinerisë së të mësuarit), si dhe ndërtimin e automjeteve të drejtuara me grupe Lego për marrjen e mostrave të ujit dhe analizimin e pH-it të ujit. Këto aktivitete do t'u japin studentëve mundësinë që të vënë në praktikë aftësitë dhe njohuritë e tyre në një mjedis interaktiv dhe të gjallë, me synimin për të rritur motivimin dhe interesin e tyre për projektin.",
+
+                "Për vënien në zbatim të këtij Bit-i Mësimor propozohet të zhvillohen tre aktivitetet në klasë për të përfunduar të gjithë projektin dhe për të marrë një proces mësimi më kuptimplotë dhe motivues. Megjithatë, çdo aktivitet mund të kryhet veçmas."
+
+            ],
+            "activities" => [
+                "1" => "Uji SOS me Scratch",
+                "2" => "Uji SOS me Makineri të të mësuarit",
+                "3" => "Uji SOS me Robotikë",
+            ]
+
         ],
 
 
