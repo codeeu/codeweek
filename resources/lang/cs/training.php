@@ -296,6 +296,27 @@ V Pythonu mohou studenti vytvářet kvízy o historických událostech, řešit 
                 "2" => "Moje srdce není z kamene pro nižší ročníky střední školy",
                 "3" => "Zakódujte mě do nálady pro vyšší ročníky střední školy",
             ]
+        ],"18" => [
+
+            "title" => "SOS voda",
+            "author" => "Francisco Delgado Cecilia",
+            "text" => [
+
+                "SOS voda je reakcí na potřebu řešit problém znečištění vody. Navzdory úsilí, které bylo v posledních letech vynaloženo, 2 miliardy lidí na světě stále nemají přístup k nezávadné pitné vodě. To znamená, že zdaleka není splněn 6. cíl udržitelného rozvoje (SDG) Agendy 2030, který stanoví, že všichni lidé by měli mít do roku 2030 přístup k bezpečně spravované vodě a sanitačním zařízením. Totéž platí pro 14. cíl udržitelného rozvoje „Život ve vodě“, jehož cílem je chránit a udržitelně využívat oceány, moře a mořské zdroje pro zajištění udržitelného rozvoje.",
+
+                "Tento školicí materiál se zaměřuje na důležitou a aktuální problematiku měření kvality vody a na nové znečišťující látky, které kvalitu vody ohrožují. Studenti budou mít příležitost zkoumat a hledat řešení skutečných problémů týkajících se vody a životního prostředí, což jim umožní rozvíjet dovednosti, jako je výzkum, kritické myšlení a řešení problémů.",
+
+                "Plány výuky zahrnují praktické a tvůrčí činnosti, jako je programování v jazyce Scratch, zasvěcení do strojového učení a umělé inteligence pomocí Learning Machine Learning a stavba řízených vozidel se stavebnicemi Lego pro odběr vzorků vody a analýzu pH vody. Tyto aktivity umožní studentům uplatnit své dovednosti a znalosti v praxi v interaktivním a hravém prostředí, což zvýší jejich motivaci a zájem o projekt.",
+
+                "Pro realizaci tohoto školicího materiálu navrhujeme vypracovat ve třídě tři aktivity, dokončit celý projekt a získat smysluplnější a motivující proces učení. Každou činnost však lze provádět samostatně."
+
+            ],
+            "activities" => [
+                "1" => "SOS voda s jazykem Scratch",
+                "2" => "SOS voda se strojovým učením",
+                "3" => "SOS voda s robotikou",
+            ]
+
         ],
 
     ],

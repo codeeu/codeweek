@@ -297,7 +297,29 @@ Met Python kunnen leerlingen quizzen maken over historische gebeurtenissen, wisk
                 "2" => "Mijn hart is niet van steen voor de onderbouw voortgezet onderwijs",
                 "3" => "Programmeer mijn gevoelens voor de bovenbouw voortgezet onderwijs",
             ]
+        ],"18" => [
+
+            "title" => "SOS Water",
+            "author" => "door Francisco Delgado Cecilia",
+            "text" => [
+
+                "SOS Water is een antwoord op de noodzaak om de problemen op het gebied van watervervuiling aan te pakken. Ondanks de inspanningen van de afgelopen jaren zijn er wereldwijd nog steeds 2 miljard mensen die geen toegang hebben tot veilig drinkwater. Dit betekent dat Duurzame Ontwikkelingsdoelstelling 6 van de Agenda voor 2030, waarin staat dat alle mensen in 2030 toegang moeten hebben tot veilig beheerd water en sanitaire voorzieningen, nog lang niet is bereikt. Hetzelfde geldt voor Duurzame Ontwikkelingsdoelstelling 14, Leven in het water, die gericht is op het behoud en duurzaam gebruik van de oceanen, zeeën en mariene hulpbronnen voor duurzame ontwikkeling.",
+
+                "Deze leerbit richt zich op het relevante en actuele onderwerp waterkwaliteitsmeting en de nieuwe verontreinigende stoffen die een probleem vormen voor de waterkwaliteit. Leerlingen krijgen de kans om echte problemen op het gebied van water en milieu te onderzoeken en er oplossingen voor te zoeken, waardoor ze vaardigheden als onderzoek, kritisch denken en het oplossen van problemen kunnen ontwikkelen.",
+
+                "De lesplannen bevatten praktische en creatieve activiteiten, zoals programmeren in Scratch, een inleiding tot machine learning en kunstmatige intelligentie met Learning ML en het bouwen van een op afstand bestuurbaar voertuig met een LEGO-set dat watermonsters kan nemen en de pH van water kan analyseren. Door deze activiteiten kunnen leerlingen hun vaardigheden en kennis in een interactieve en speelse omgeving in de praktijk brengen, wat hun motivatie en interesse in het project vergroot.",
+
+                "Voor de implementatie van deze leerbit wordt voorgesteld om de drie activiteiten in de les te ontwikkelen, om het hele project te voltooien en zo een zinvoller en motiverender leerproces te realiseren. Elke activiteit kan echter ook afzonderlijk worden uitgevoerd."
+
+            ],
+            "activities" => [
+                "1" => "SOS Water met Scratch",
+                "2" => "SOS Water met machine learning",
+                "3" => "SOS Water met robotica",
+            ]
+
         ],
+
 
 
     ],

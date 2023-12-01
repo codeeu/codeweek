@@ -297,7 +297,29 @@ Neste vídeo, a equipa da Semana da Programação vai mostrar-lhe algumas ativid
                 "2" => "O meu coração não é de pedra para alunos do segundo e terceiro ciclos do ensino básico",
                 "3" => "Programar-me para o estado de espírito para alunos do ensino secundário",
             ]
+        ],"18" => [
+
+            "title" => "SOS Água",
+"author" => "por Francisco Delgado Cecilia",
+"text" => [
+
+    "O SOS Água é uma resposta à necessidade de resolver o problema da poluição da água. Apesar dos esforços envidados nos últimos anos, continua a haver 2 mil milhões de pessoas em todo o mundo que não têm acesso a água potável segura. Assim sendo, o Objetivo de Desenvolvimento Sustentável (ODS) n.º 6 da Agenda 2030, que preconiza que todas as pessoas devem ter acesso a água e saneamento geridos de forma segura até 2030, ainda está longe de ser alcançado. Verifica-se o mesmo em relação ao ODS n.º 14, referente à vida subaquática, que visa conservar e usar de forma sustentável os oceanos, mares e os recursos marinhos para o desenvolvimento sustentável.",
+
+                "Este bit de aprendizagem centra-se no tema pertinente e atual da gestão da qualidade da água e nos novos poluentes que ameaçam a qualidade da água. Os alunos terão a oportunidade de investigar e procurar soluções para problemas reais relacionados com a água e com o ambiente, que lhes permitirão desenvolver competências como a investigação, o pensamento crítico e a resolução de problemas.",
+
+                "Os planos de aula incluem atividades práticas e criativas, como a programação no Scratch, a iniciação à aprendizagem automática e à inteligência artificial com Learning Machine Learning e a construção de veículos guiados com conjuntos Lego para a recolha de amostras de água e a análise do pH da água. Estas atividades permitirão aos alunos colocar as suas competências e conhecimentos em prática num ambiente interativo e lúdico, que aumentará a sua motivação e interesse no projeto.",
+
+                "Para a implementação deste bit de aprendizagem, propõe-se desenvolver as três atividades na sala de aula, completar todo o projeto e obter um processo de aprendizagem mais significativo e motivador. Contudo, cada atividade pode ser realizada isoladamente."
+
+],
+"activities" => [
+    "1" => "SOS Água com Scratch",
+                "2" => "SOS Água com aprendizagem automática",
+                "3" => "SOS Água com robótica",
+            ]
+
         ],
+
 
 
     ],

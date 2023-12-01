@@ -301,7 +301,29 @@ Dans cette vidéo, l’équipe de la Semaine du code vous présentera quelques a
                 "2" => "Mon cœur n’est pas fait de pierre pour les élèves du 1er cycle du secondaire",
                 "3" => "Codez-moi selon l’humeur pour les élèves du 2e cycle du secondaire",
             ]
+        ],"18" => [
+
+            "title" => "SOS EAU",
+"author" => "par Francisco Delgado Cecilia",
+"text" => [
+
+    "SOS Eau est une réponse à la nécessité de résoudre le problème de la pollution de l’eau. Malgré les efforts consentis ces dernières années, deux milliards de personnes dans le monde n’ont toujours pas accès à de l’eau potable. En d’autres termes, l’Objectif de développement durable (ODD) 6 de l’Agenda 2030, qui stipule que toutes les personnes devraient pouvoir accéder à des services d’alimentation en eau et d’assainissement gérés en toute sécurité d’ici à 2030, est loin d’être atteint. Il en va de même pour l’ODD 14, relatif à la vie aquatique, qui vise à conserver et à exploiter de manière durable les océans, les mers et les ressources marines aux fins du développement durable.",
+
+                "Ce Learning Bit est consacré au thème pertinent et d’actualité de la mesure de la qualité de l’eau et des nouveaux polluants qui menacent cette qualité. Les élèves auront l’occasion d’effectuer des recherches et de trouver des solutions aux véritables problèmes liés à l’eau et à l’environnement, ce qui leur permettra de développer des compétences en matière de recherche, de raisonnement critique et de résolution de problèmes.",
+
+                "La leçon inclut des activités pratiques et créatives, comme de la programmation dans Scratch, une initiation à l’apprentissage automatique et à l’intelligence artificielle avec Learning Machine Learning, et la construction de véhicules guidés avec des pièces Lego afin de prélever des échantillons d’eau et procéder à l’analyse du pH. Au cours de ces activités, les élèves pourront mettre en pratique leurs compétences et leurs connaissances dans un environnement interactif et ludique, qui renforcera leur motivation et éveillera leur intérêt pour le projet.",
+
+                "Afin de mettre en œuvre ce Learning Bit, nous vous proposons de développer les trois activités en classe, de terminer le projet et de rendre le processus d’apprentissage plus intéressant et plus motivant. Chaque activité peut toutefois être réalisée individuellement."
+
+],
+"activities" => [
+    "1" => "SOS Eau avec Scratch",
+                "2" => "SOS Eau avec l’apprentissage automatique",
+                "3" => "SOS Eau avec la robotique",
+            ]
+
         ],
+
 
 
     ],

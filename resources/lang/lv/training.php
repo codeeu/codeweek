@@ -335,7 +335,29 @@ Ar Python skolēni var veidot viktorīnas par vēstures notikumiem, risināt mat
                 "2" => "Mana sirds nav no akmens pamatskolas skolēniem",
                 "3" => "Ieprogrammē manu garastāvokli vidusskolas skolēniem",
             ]
+        ],"18" => [
+
+            "title" => "SOS palīdzība ūdenim",
+            "author" => "autors: Francisko Delgado Cecīlija",
+            "text" => [
+
+                "SOS palīdzība ūdenim ir atbilde uz nepieciešamību risināt ūdens piesārņojuma problēmu. Neskatoties uz pēdējo gadu laikā pieliktajām pūlēm, pasaulē joprojām ir divi miljardi cilvēku, kuriem nav piekļuves droši izmantojamam dzeramajam ūdenim. Tas nozīmē, ka vēl tāls ceļš ejams, lai sasniegtu 2030. gada Ilgtspējīgas attīstības mērķu 6. punktu, kurā teikts, ka līdz 2030. gadam visiem ir jābūt piekļuvei drošā veidā apsaimniekotam ūdenim un kanalizācijai. Tas pats attiecas arī uz Ilgtspējīgas attīstības mērķu 14. punktu par zemūdens dzīvi, kura mērķis ir saudzēt okeānus, jūras un jūras resursus, izmantojot tos ilgtspējīgi, lai nodrošinātu ilgtspējīgu attīstību.",
+
+                "Šajā mācību modulī galvenā uzmanība pievērsta atbilstošiem un aktuāliem jautājumiem par ūdens kvalitātes mērījumiem un jauniem piesārņotājiem, kas apdraud ūdens kvalitāti. Audzēkņiem būs iespēja izpētīt reālas problēmas, kas saistītas ar ūdeni un apkārtējo vidi, un meklēt tām risinājumu, kas ļaus attīstīt tādas prasmes kā pētniecība, kritiskā domāšana un problēmu risināšana.",
+
+                "Stundu plānos iekļautas praktiskas un radošas aktivitātes, piemēram programmēšana Scratch vidē, ievads mašīnmācīšanas un mākslīgā intelekta apgūšanā ar Learning Machine Learning lietotni un vadāmu spēkratu būvēšana ar Lego komplektiem, lai izmantotu tos ūdens paraugu ņemšanai un pH analizēšanai. Šīs aktivitātes ļaus audzēkņiem izmantot iemaņas un zināšanas praksē interaktīvā un rotaļīgā vidē, kas palielinās viņu motivāciju un interesi par projektu.",
+
+                "Šī mācību modeļa īstenošanai tiek ierosināts izstrādāt trīs aktivitātes klasē, lai pilnībā pabeigtu projektu un iegūtu jēgpilnāku un motivējošāku mācību procesu. Taču katru no aktivitātēm var īstenot atsevišķi."
+
+            ],
+            "activities" => [
+                "1" => "SOS palīdzība ūdenim ar Scratch",
+                "2" => "SOS palīdzība ūdenim ar mašīnmācīšanos",
+                "3" => "SOS palīdzība ūdenim ar robotiku",
+            ]
+
         ],
+
     ],
     'download_video_script' => 'Lejupielādēt video skriptu',
     'ready_to_share' =>
