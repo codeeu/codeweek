@@ -297,7 +297,29 @@ Cu Python, elevii pot să creeze jocuri cu întrebări despre evenimente istoric
                 "2" => "Nu am o inimă de piatră pentru elevii de gimnaziu",
                 "3" => "Programează-mi dispoziția pentru elevii de liceu",
             ]
+        ],"18" => [
+
+            "title" => "SOS Apă",
+"author" => "de Francisco Delgado Cecilia",
+"text" => [
+
+    "SOS Apă este un răspuns la necesitatea de a aborda problema poluării apei. În ciuda eforturilor depuse în ultimii ani, există încă 2 miliarde de oameni în întreaga lume care nu au acces la apă potabilă. Acest lucru înseamnă că Obiectivul de Dezvoltare Durabilă (ODD) 6 din Agenda 2030, care prevede că toți oamenii ar trebui să aibă acces la apă și canalizare gestionate în condiții de siguranță până în 2030, este departe de a fi atins. Același lucru este valabil și pentru ODD 14, privind viața subacvatică, care vizează conservarea și utilizarea durabilă a oceanelor, mărilor și resurselor marine în scopul dezvoltării durabile.",
+
+                "Acest modul de învățare se concentrează pe problema relevantă și actuală a măsurării calității apei și pe noii poluanți care pun în pericol calitatea apei. Elevii vor avea ocazia să investigheze și să caute soluții la probleme reale legate de apă și de mediu, ceea ce le va permite să dezvolte abilități precum cercetarea, gândirea critică și rezolvarea de probleme.",
+
+                "Planurile de lecții includ activități practice și creative, cum ar fi programarea în Scratch, inițierea în învățarea automată și inteligența artificială cu Learning Machine Learning și construirea de vehicule ghidate cu ajutorul seturilor Lego pentru prelevarea de probe de apă și analiza pH-ului apei. Aceste activități le vor permite elevilor să își pună în practică abilitățile și cunoștințele într-un mediu interactiv și ludic, ceea ce le va spori motivația și interesul pentru proiect.",
+
+                "Pentru implementarea acestui modul de învățare se propune desfășurarea celor trei activități în clasă, pentru a finaliza întregul proiect și a obține un proces de învățare mai relevant și mai motivant. Cu toate acestea, fiecare activitate poate fi desfășurată în mod izolat."
+
+],
+"activities" => [
+                "1" => "SOS Apă cu Scratch",
+                "2" => "SOS Apă cu învățare automată",
+                "3" => "SOS Apă cu robotică",
+            ]
+
         ],
+
 
 
     ],

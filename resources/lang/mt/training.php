@@ -299,7 +299,29 @@ F’dan il-vidjow, it-tim tal-Ġimgħa tal-Ikkowdjar se jurik xi attivitajiet pr
                 "2" => "Qalbi mhix iebsa għal studenti tal-iskola sekondarja baxxa",
                 "3" => "Ikkowdjali għall-burdata għal studenti tal-iskola sekonardja għolja",
             ]
+        ],"18" => [
+
+            "title" => "SOS Ilma",
+            "author" => "minn Francisco Delgado Cecilia",
+            "text" => [
+
+                "SOS Ilma hu rispons għall-bżonn li nindirizzaw il-problema tat-tniġġis tal-ilma. Minkejja l-isforzi magħmula dawn l-aħħar snin, għad fadal 2 biljun persuna fid-dinja li għad ma għandhomx aċċess għal ilma tax-xorb sikur. Dan ifisser il l-Għan ta' Żvilupp Sostenibbli (SDG) 6 tal-Aġenda 2030, li jgħid li kulħadd għandu jkollu aċċess għal ilma ġestit b'mod sikur u sanitazzjoni sal-2030, għadu 'l bogħod milli jintlaħaq. L-istess jgħodd għal SDG 14, ħajja taħt l-ilma, li għandu l-għan li jikkonserva u juża l-oċeani, l-ibħra u riżorsi tal-baħar b'mod sostenibbli għal żvilupp sostenibbli.",
+
+"Dan il-Bit tal-Apprendiment jiffoka fuq il-kwistjoni rilevanti u topika ta' miżuri tal-kwalità tal-ilma u n-niġġiesa l-ġodda li jisfidaw il-kawlità tal-ilma. L-istudenti ser ikollhom l-opportunità jinvestigaw u jfittxu soluzzjonijiet għal problemi reali relatati mal-ilma u l-ambjent, li ser iħallihom jiżviluppaw ħiliet bħal riċerka, ħsieb kritiku u soluzzjoni ta' problemi.",
+
+"Il-pjan tal-lezzjoni jinkludi attivitajiet prattiċi u kreattivi, bħall-ipprogrammar fi Scratch, il-bidu għal tagħlim awtomatiku u intelliġenza artifijali tat-Tagħlim bit-Tagħlim Awtomatiku u l-bini ta' vetturi ggwidati bis-settijiet tal-Lego għal kampjuni tal-ilma u analiżi tal-pH tal-ilma. Dawn l-attivitajiet ser iħallu lill-istudenti jpoġġu l-ħiliet u għarfien tagħhom fil-prattika f'ambjent interattiv u ta' logħob, li ser iżid il-motivazzjoni u l-interess tagħhom fil-proġett.",
+
+                "Għall-implimentazzjoni ta' dan il-Bit tal-Apprendiment, nissuġġerixxu li tiżviluppaw it-tliet attivitajiet fil-klassi, li tispiċċaw il-proġett kollu u tiksbu proċess ta' tagħlim li jkun ifisser aktar u li jimmotiva aktar. Madankollu, kull attivita tista' ssir waħedha."
+
+],
+"activities" => [
+    "1" => "SOS Ilma bi Scratch",
+    "2" => "SOS Ilma b'Tagħlim Awtomatiku",
+    "3" => "SOS Ilma bir-Robotika",
+]
+
         ],
+
 
 
     ],

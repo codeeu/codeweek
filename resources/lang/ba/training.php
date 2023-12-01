@@ -297,6 +297,28 @@ U ovom videu, tim Sedmice kodiranja će vam pokazati neke praktične, lake i zab
                 "3" => "Oraspoložite me kodiranjem za učenike viših srednjih škola",
             ]
         ],
+        "18" => [
+
+            "title" => "SOS Water",
+            "author" => "Francisco Delgado Cecilia",
+            "text" => [
+
+                "SOS Water je odgovor potrebi da se adresira problem zagađivanja vode. I pored napora uloženih posljednjih godina, još ima dvije milijarde ljudi u svijetu koji nemaju pristup sigurnoj vodi za piće. Ovo znači da Cilj održivog razvoja (SDG) 6 iz agende 2030., koji navodi da svi ljudi trebaju imati pristup do sigurno dovedene vode i sanitarnih uslova do 2030., je daleko od svog ispunjenja. Isto važi za SDG 14, podvodni život, koji ima za cilj da zaštiti i koristi održivost za okeane, mora i morske resurse za održivi razvoj.",
+
+                "Ovaj dio za učenje fokusira se na relevantni i aktuelni problem mjerenja kvaliteta vode i novih zagađivača koji dovode u pitanje kvalitet vode. Učenici će imati mogućnost da istražuju i traže rješenja za realne probleme povezane s vodom i životnom sredinom, koja će im omogućiti da razviju vještine kao što je istraživanje, kritičko razmišljanje i rješavanje problema.",
+
+                "Nastavni planovi uključuju praktične i kreativne aktivnosti, kao što je programiranje u programu Scratch, inicijacija mašinskog učenja i vještačke inteligencije s učenjem mašinskog učenja i građenjem vođenih vozila s Lego setovima za uzimanje uzoraka vode i pH analizu vode. Ove će aktivnosti omogućiti učenicima da iskoriste svoje vještine i znanje u praksi u interaktivnom i razigranom okruženju što će povećati njihovu motivaciju i interes za projekt.",
+
+                "Za implementaciju ovog dijela učenja predlaže se da se razviju tri aktivnosti na času, da bi se završio čitav projekt i da bi se dobio značajniji i motivirajući proces učenja. Ipak, svaka se aktivnost može obaviti u izolaciji."
+
+            ],
+            "activities" => [
+                "1" => "SOS Water s programom Scratch",
+                "2" => "SOS Water s mašinskim učenjem",
+                "3" => "SOS Water s robotikom",
+            ]
+
+        ],
 
     ],
     'download_video_script' => 'Preuzmite video skriptu',
