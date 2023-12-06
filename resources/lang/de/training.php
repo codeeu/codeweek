@@ -314,8 +314,8 @@ Mit Python können Ihre Schülerinnen und Schüler u. a. Ratespiele zu historisc
 
 ],
 "activities" => [
-    "1" => "SOS Wasser mit Scratch",
-                "1" => "SOS Wasser mit maschinellem Lernen",
+                "1" => "SOS Wasser mit Scratch",
+                "2" => "SOS Wasser mit maschinellem Lernen",
                 "3" => "SOS Wasser mit Robotik",
             ]
 
