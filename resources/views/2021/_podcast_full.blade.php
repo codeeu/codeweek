@@ -34,7 +34,7 @@
             {{--            <div class="text-black pb-2 pr-4 text-base leading-5">{{$podcast->description}}</div>--}}
 
             <div class="m-2 mb-4">
-                <audio controls="controls" autoplay=true muted id="podcast">
+                <audio controls="controls" id="podcast">
                     <source src="{{$podcast->filename}}"
                             type="audio/mpeg">
                     Your browser does not support the audio element.
