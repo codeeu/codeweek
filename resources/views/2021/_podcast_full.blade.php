@@ -11,7 +11,6 @@
             </a>
         </div>
 
-
     @endif
 </div>
 
@@ -35,7 +34,7 @@
             {{--            <div class="text-black pb-2 pr-4 text-base leading-5">{{$podcast->description}}</div>--}}
 
             <div class="m-2 mb-4">
-                <audio controls="controls" autoplay=true muted>
+                <audio controls="controls" id="podcast">
                     <source src="{{$podcast->filename}}"
                             type="audio/mpeg">
                     Your browser does not support the audio element.
@@ -84,7 +83,8 @@
             </ul>
         </div>
 
-<div class="flex justify-end p-2 text-xs">This podcast has been released on {{$podcast->release_date->format('jS \o\f F Y')}}</div>
+        <div class="flex justify-end p-2 text-xs">This podcast has been released
+            on {{$podcast->release_date->format('jS \o\f F Y')}}</div>
     </div>
 
 </div>
@@ -107,6 +107,15 @@
 
 
     </style>
+@endsection
+
+@section('extra-js')
+
+    <script>
+        let podcast = document.getElementById("podcast");
+        podcast.volume = 0.5;
+    </script>
+
 @endsection
 
 
