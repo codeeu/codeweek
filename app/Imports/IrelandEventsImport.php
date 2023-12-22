@@ -67,7 +67,7 @@ class IrelandEventsImport extends DefaultValueBinder implements
             'user_email' => '',
             'contact_person' => $row['organizer_email'],
             'country_iso' => 'IE',
-            'picture' => 'https://codeweek-s3.s3.eu-west-1.amazonaws.com/cw2022/ms-dreams.png',
+            'picture' => $row["image"] ?? 'https://codeweek-s3.s3.amazonaws.com/event_picture/logo_gs_2016_07703ca0-7e5e-4cab-affb-4de93e3f2497.png',
             'pub_date' => now(),
             'created' => now(),
             'updated' => now(),
