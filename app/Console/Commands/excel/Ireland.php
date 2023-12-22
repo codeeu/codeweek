@@ -40,6 +40,6 @@ class Ireland extends Command {
     public function handle() {
         Log::info('Loading Irish Excel File');
 
-        Excel::import(new IrelandEventsImport(), 'ireland-2023-2.xlsx', 'excel');
+        Excel::import(new IrelandEventsImport(), 'ireland-2023-3.xlsx', 'excel');
     }
 }

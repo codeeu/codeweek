@@ -61,7 +61,7 @@ class IrelandEventsImport extends DefaultValueBinder implements
             'organizer' => $row['name_of_organisation'],
             'description' => $row['description'],
             'organizer_type' => strtolower($row['type_of_organisation']),
-            'activity_type' => $row['activity_type'],
+            'activity_type' => strtolower($row['activity_type']),
             'location' => $row["address"] ?? "online",
             'event_url' => '',
             'user_email' => '',
