@@ -76,7 +76,6 @@ abstract class Filters
      */
     public function getFilters()
     {
-
         return $this->request->only($this->filters);
     }
 }
