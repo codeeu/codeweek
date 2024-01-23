@@ -4,11 +4,11 @@
 return [
 
     'title' => 'Guide',
-    'organise_activity' => 'Afhold din egen aktivitet med #CodeWeek',
+    'organise_activity' => 'Afhold din egen aktivitet med #EUCodeWeek',
     'register_activity' => 'Registrer din aktivitet her',
     'what' => [
         'title' => 'Hvad er EU’s kodeuge?',
-        'content' => '<p>EU’s kodeuge er en græsrodsbevægelse, der drives af frivillige og støttes af Europa-Kommissionen. Alle – skoler, lærere, biblioteker, kodeklubber, virksomheder, offentlige myndigheder – kan afholde en #CodeWeek aktivitet og tilføje den på kortet på <a href="/events">codeweek.eu</a>.</p>'
+        'content' => '<p>EU’s kodeuge er en græsrodsbevægelse, der drives af frivillige og støttes af Europa-Kommissionen. Alle – skoler, lærere, biblioteker, kodeklubber, virksomheder, offentlige myndigheder – kan afholde en #EUCodeWeek aktivitet og tilføje den på kortet på <a href="/events">codeweek.eu</a>.</p>'
     ],
     'what_you_need_organise' => [
         'title' => 'Hvad skal jeg bruge for at afholde en aktivitet?',
@@ -31,7 +31,7 @@ return [
             '1' => 'Kodearrangementets format er op til dig, men vi anbefaler, at du sætter tid af til <strong>praktiske øvelser</strong>, hvor deltagerne selv kan prøve at kode eller nørkle med hardware.',
             '2' => 'Brug <strong>værktøjer og teknologier</strong>, der passer til målgruppen. Vi anbefaler at bruge <a href="http://codeweek.eu/resources/">gratis open source-materiale</a>.',
             '3' => 'Bed deltagerne om at <strong>fremlægge</strong> deres kreationer for hinanden, når arrangementet er ved at være slut.',
-            '4' => '<strong>Spred budskabet!</strong> Brug #CodeWeek på de sociale medier til at fortælle andre om aktiviteten, og hvad I har lavet. Du kan også fortælle om den i <a
+            '4' => '<strong>Spred budskabet!</strong> Brug #EUCodeWeek på de sociale medier til at fortælle andre om aktiviteten, og hvad I har lavet. Du kan også fortælle om den i <a
                         href="https://www.facebook.com/groups/774720866253044/">EU’s kodeuges gruppe for lærere</a> og på Twitter (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Tal med dine venner, andre undervisere og den lokale presse, og skriv en pressemeddelelse.',
             '5' => 'Glem ikke at <a href="/add">tilføje din aktivitet</a> på <a href="/events">kodeugekortet</a>!',
         ]
@@ -51,7 +51,7 @@ return [
     ],
     'questions' => [
         'title' => 'Spørgsmål?',
-        'content' => 'Hvis du har spørgsmål om at afholde og promovere dit #CodeWeek arrangement, kan du kontakte en af <a href="/ambassadors">ambassadørerne for EU’s kodeuge</a> i dit land.'
+        'content' => 'Hvis du har spørgsmål om at afholde og promovere dit #EUCodeWeek arrangement, kan du kontakte en af <a href="/ambassadors">ambassadørerne for EU’s kodeuge</a> i dit land.'
     ]
 
 ];

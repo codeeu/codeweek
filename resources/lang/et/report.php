@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Esita oma #CodeWeek ürituse aruanne',
+    'title' => 'Esita oma #EUCodeWeek ürituse aruanne',
     'event_title' => 'Ürituse nimi',
     'number_required' => 'Anna ligikaudne hinnang, kui täpseid andmeid ei ole.',
     'phrase1' => 'Seda vormi saad täita ainult üks kord! Palun vaata andmed hoolega üle. Kui tegid vea, ',

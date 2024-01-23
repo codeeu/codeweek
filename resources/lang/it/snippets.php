@@ -24,8 +24,8 @@ return [
     ],
     "dance" => [
         "menu" => "Sfida di danza",
-        "subtitle" => "Chi ha detto che i programmatori non sanno ballare? Con la sfida #CodeWeekDance vi dimostreremo che non è così.",
-        "content" => "Scuole, insegnanti, biblioteche, club di programmazione, imprese e pubbliche amministrazioni - tutti sono invitati a celebrare la settimana europea della programmazione organizzando un'attività #CodeWeekDance e aggiungendola alla mappa della settimana della programmazione."
+        "subtitle" => "Chi ha detto che i programmatori non sanno ballare? Con la sfida #EUCodeWeekDance vi dimostreremo che non è così.",
+        "content" => "Scuole, insegnanti, biblioteche, club di programmazione, imprese e pubbliche amministrazioni - tutti sono invitati a celebrare la settimana europea della programmazione organizzando un'attività #EUCodeWeekDance e aggiungendola alla mappa della settimana della programmazione."
     ],
     "treasure-hunt" => [
         "menu" => "Caccia al tesoro",

@@ -302,7 +302,7 @@ return [
             'tutaj',
             'a scenariusz lekcji(w języku angielskim) –',
             'Ćwiczenia zawarte w tej lekcji można wykonywać niezależnie i w dowolnej kolejności',
-            'Nauczyciel może sfotografować pracę uczniów udostępnić zdjęcia na Instagramie z hasztagiem #CodeWeekChallengeGoogle #GrowWithGoogle'
+            'Nauczyciel może sfotografować pracę uczniów udostępnić zdjęcia na Instagramie z hasztagiem #EUCodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Oprócz broszury z ćwiczeniami do wykonania niektórych zadań potrzebne są także dodatkowe materiały.',
@@ -478,7 +478,7 @@ return [
         'instructions' => [
             'Na początek stwórz plan i ustal kolejność ćwiczeń. Korzystając z harmonogramu, zaprogramuj diodę LED RGB Calliope mini, aby wyświetlała jeden z 5 kolorów we wstępnie zdefiniowanym tempie. Następnie utwórz zmienną dla tempa i zaprogramuj powtórzenia za pomocą pętli.',
             "Pamiętaj, że jeśli zaimplementowałeś program w sposób, który Ci odpowiada, możesz również podzielić się nim z nami pod adresem info@calliope.cc-jesteśmy podekscytowani, widząc, co z tego zrobisz! Przy okazji, wśród zgłoszeń rozdamy 30 figurek Calliope!",
-            "Udostępnij kod QR swojego projektu na Instagramie, dodaj hashtag #CodeWeekChallenge i wspomnij @CodeWeekEU.",
+            "Udostępnij kod QR swojego projektu na Instagramie, dodaj hashtag #EUCodeWeekChallenge i wspomnij @CodeWeekEU.",
         ],
         'example' => [
             'Siedząc przy komputerze: Ty też możesz uprawiać sport.',
@@ -489,7 +489,7 @@ return [
     ]
     ,
     'common' => [
-        'share' => 'Udostępnij odnośnik lub kod QR do swojego projektu na Instagramie lub Facebooku, dodaj hasztag #CodeWeekChallenge oraz oznasz @CodeWeekEU.',
+        'share' => 'Udostępnij odnośnik lub kod QR do swojego projektu na Instagramie lub Facebooku, dodaj hasztag #EUCodeWeekChallenge oraz oznasz @CodeWeekEU.',
         'audience' => [
             'Nauczyciele i edukatorzy',
             'Uczniowie szkół podstawowych (6–12 lat)',

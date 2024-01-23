@@ -24,8 +24,8 @@ return [
     ],
     "dance" => [
         "menu" => "Wyzwanie taneczne",
-        "subtitle" => "Kto powiedział, że programiści nie umieją tańczyć? Podczas wyzwania tanecznego #CodeWeekDance udowodnimy, że jest inaczej.",
-        "content" => "Zapraszamy wszystkich: szkoły, nauczycieli, biblioteki, kluby kodowania, przedsiębiorstwa i organy publiczne do świętowania Europejskiego Tygodnia Kodowania. Wystarczy zorganizować zajęcia taneczne #CodeWeekDance i dodać je do mapy Tygodnia Kodowania."
+        "subtitle" => "Kto powiedział, że programiści nie umieją tańczyć? Podczas wyzwania tanecznego #EUCodeWeekDance udowodnimy, że jest inaczej.",
+        "content" => "Zapraszamy wszystkich: szkoły, nauczycieli, biblioteki, kluby kodowania, przedsiębiorstwa i organy publiczne do świętowania Europejskiego Tygodnia Kodowania. Wystarczy zorganizować zajęcia taneczne #EUCodeWeekDance i dodać je do mapy Tygodnia Kodowania."
     ],
     "treasure-hunt" => [
         "menu" => "Gra w podchody",

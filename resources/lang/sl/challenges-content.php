@@ -303,7 +303,7 @@ return [
             'povezavi',
             'Učni načrt pa lahko najdete na tej',
             'Dejavnosti te lekcije se lahko zaključijo posamično in v poljubnem vrstnem redu',
-            'Učitelj lahko posname sliko učnega procesa in ga deli z drugimi na Instagramu z uporabo ključnika #CodeWeekChallengeGoogle #GrowWithGoogle'
+            'Učitelj lahko posname sliko učnega procesa in ga deli z drugimi na Instagramu z uporabo ključnika #EUCodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Za izvedbo nekaterih dejavnosti je potrebno uporabiti dodatne materiale, ali pa imajo te od njih dodatno korist.',
@@ -479,7 +479,7 @@ return [
         'instructions' => [
             'Za začetek ustvarite načrt in določite vrstni red vadbenih enot. S pomočjo urnika programirajte po vnaprej določenem tempu RGB LED Calliope mini za prikaz ene od 5 barv. Nato ustvarite spremenljivko koraka in ponovitve programa z uporabo zank.',
             'Ne pozabite, da lahko vaš program, v primeru, da ste z njim zadovoljni, delite tudi z nami na info@calliope.cc – in z veseljem si bomo ogledali vaše delo! Mimogrede, prijavljenim prispevkom podarjamo še 30 Calliope mini izdelkov!',
-            'Delite QR kodo vašega projekta na Instagramu, dodajte hashtag #CodeWeekChallenge in omenite @CodeWeekEU.'
+            'Delite QR kodo vašega projekta na Instagramu, dodajte hashtag #EUCodeWeekChallenge in omenite @CodeWeekEU.'
         ],
         'example' => [
             'Medtem, ko sedite za računalnikom, ste lahko tudi vi športno aktivni.',
@@ -490,7 +490,7 @@ return [
     ]
 ,
     'common' => [
-        'share' => 'Delite povezavo ali QR kodo svojega projekta na Instagramu ali Facebooku, dodajte kjlučnik #CodeWeekChallenge in omenite @CodeWeekEU.',
+        'share' => 'Delite povezavo ali QR kodo svojega projekta na Instagramu ali Facebooku, dodajte kjlučnik #EUCodeWeekChallenge in omenite @CodeWeekEU.',
         'audience' => [
             'Učitelji in vzgojitelji',
             'Osnovnošolci (od 6 do 12 let)',

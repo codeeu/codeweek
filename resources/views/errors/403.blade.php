@@ -6,7 +6,7 @@
 
         <section class="codeweek-banner error">
             <div class="text">
-                <h2>#CodeWeek</h2>
+                <h2>#EUCodeWeek</h2>
                 <h1>Error!</h1>
             </div>
             <div class="image">

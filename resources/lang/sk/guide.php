@@ -4,11 +4,11 @@
 return [
 
     'title' => 'Príručka',
-    'organise_activity' => 'Zorganizujte vlastnú aktivitu v rámci týždňa programovania #CodeWeek',
+    'organise_activity' => 'Zorganizujte vlastnú aktivitu v rámci týždňa programovania #EUCodeWeek',
     'register_activity' => 'Tu môžete zaregistrovať svoju aktivitu',
     'what' => [
         'title' => 'Čo je Európsky týždeň programovania?',
-        'content' => '<p>Európsky týždeň programovania predstavuje hnutie na miestnej úrovni organizované dobrovoľníkmi s podporou Európskej komisie. Ktokoľvek môže usporiadať programátorskú aktivitu #CodeWeek a pridať ju na mapu na stránke <a href="/events">codeweek.eu</a>, či už školy, učitelia, knižnice, programátorské krúžky, podniky, alebo verejné orgány.</p>'
+        'content' => '<p>Európsky týždeň programovania predstavuje hnutie na miestnej úrovni organizované dobrovoľníkmi s podporou Európskej komisie. Ktokoľvek môže usporiadať programátorskú aktivitu #EUCodeWeek a pridať ju na mapu na stránke <a href="/events">codeweek.eu</a>, či už školy, učitelia, knižnice, programátorské krúžky, podniky, alebo verejné orgány.</p>'
     ],
     'what_you_need_organise' => [
         'title' => 'Čo treba na zorganizovanie aktivity?',
@@ -31,7 +31,7 @@ return [
             '1' => 'Formát vášho programátorského podujatia záleží na vás, ale odporúčame vám, aby ste určitý <strong>čas vyhradili na praktické cvičenia</strong>, v rámci ktorých môžu účastníci samostatne tvoriť a pohrať sa s hardvérom.',
             '2' => 'Používajte <strong>nástroje a technológie</strong> primerané pre svoju cieľovú skupinu. Odporúčame vám využívať <a href="http://codeweek.eu/resources/">voľne dostupné materiály z otvorených zdrojov</a>.',
             '3' => 'Vyzvite účastníkov, aby si na konci podujatia navzájom <strong>ukázali a predviedli</strong>, čo vytvorili.',
-            '4' => '<strong>Hovorte o podujatí!</strong> Propagujte a sprístupňujte výsledky svojej aktivity na sociálnych médiách pod hashtagom #CodeWeek. Zverejniť ich môžete aj v <a
+            '4' => '<strong>Hovorte o podujatí!</strong> Propagujte a sprístupňujte výsledky svojej aktivity na sociálnych médiách pod hashtagom #EUCodeWeek. Zverejniť ich môžete aj v <a
                         href="https://www.facebook.com/groups/774720866253044/">skupine učiteľov Európskeho týždňa programovania</a> a na Twitteri (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Povedzte o aktivite priateľom, ďalším školiteľom či miestnej tlači. Vydajte tlačovú správu!',
             '5' => 'Nezabudnite <a href="/add">pridať svoju aktivitu</a> na <a href="/events">mapu týždňa programovania</a>!',
         ]
@@ -51,7 +51,7 @@ return [
     ],
     'questions' => [
         'title' => 'Máte otázky?',
-        'content' => '<p>Ak máte otázky o organizovaní a propagácii vášho podujatia #CodeWeek, obráťte sa na niektorého z <a href="/ambassadors">veľvyslancov Európskeho týždňa programovania</a> vo vašej krajine.</p>'
+        'content' => '<p>Ak máte otázky o organizovaní a propagácii vášho podujatia #EUCodeWeek, obráťte sa na niektorého z <a href="/ambassadors">veľvyslancov Európskeho týždňa programovania</a> vo vašej krajine.</p>'
     ]
 
 ];

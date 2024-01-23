@@ -296,7 +296,7 @@ return [
             'hiperligação',
             'bem como o plano de aula em inglês nesta',
             'As atividades desta aula podem ser concluídas individualmente e em qualquer ordem',
-            'O professor pode tirar uma fotografia do processo de aprendizagem e partilhá-la no Instagram utilizando o hashtag #CodeWeekChallengeGoogle #GrowWithGoogle'
+            'O professor pode tirar uma fotografia do processo de aprendizagem e partilhá-la no Instagram utilizando o hashtag #EUCodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Para além da brochura da atividade, algumas atividades requerem ou beneficiam opcionalmente de materiais adicionais.',
@@ -471,7 +471,7 @@ return [
         'instructions' => [
             'Para começar, crie um plano e determine a ordem das unidades de exercício. Utilizando o plano, programe o LED RGB do Calliope mini para exibir uma das cinco cores ao ritmo predefinido. Em seguida, crie uma variável para o ritmo e programe repetições utilizando ciclos.',
             'Não se esqueça: se ficou satisfeito com a sua programação, pode também partilhá-la connosco em info@calliope.cc — estamos ansiosos por ver o seu trabalho! A propósito, vamos oferecer 30 Calliope minis entre as submissões!',
-            'Partilhe o código QR do seu projeto no Instagram, adicione a hashtag #CodeWeekChallenge e mencione @CodeWeekEU.',
+            'Partilhe o código QR do seu projeto no Instagram, adicione a hashtag #EUCodeWeekChallenge e mencione @CodeWeekEU.',
         ],
         'example' => [
             'Enquanto está sentado à frente do computador: também pode ser desportivo.',
@@ -482,7 +482,7 @@ return [
     ]
     ,
     'common' => [
-        'share' => 'Partilha a hiperligação ou o código QR do teu projeto no Instagram ou Facebook, adiciona a hashtag #CodeWeekChallenge e menciona @CodeWeekEU.',
+        'share' => 'Partilha a hiperligação ou o código QR do teu projeto no Instagram ou Facebook, adiciona a hashtag #EUCodeWeekChallenge e menciona @CodeWeekEU.',
         'audience' => [
             'Professores e educadores',
             'Alunos do primeiro e segundo ciclos do ensino básico (dos 6 aos 12 anos de idade)',

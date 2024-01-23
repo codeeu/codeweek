@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Raportați evenimentul dumneavoastră #CodeWeek',
+    'title' => 'Raportați evenimentul dumneavoastră #EUCodeWeek',
     'event_title' => 'Titlul evenimentului',
     'number_required' => 'Vă rugăm să oferiți o estimare aproximativă, chiar dacă nu aveți date exacte.',
     'phrase1' => 'Puteți completa o singură dată acest formular! Vă rugăm să verificați cu atenție datele. Dacă faceți o greșeală, ',

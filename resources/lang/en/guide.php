@@ -4,14 +4,14 @@
 return [
 
     'title' => 'Guide',
-    'organise_activity' => 'Organise Your Own Activity with #CodeWeek',
+    'organise_activity' => 'Organise Your Own Activity with #EUCodeWeek',
     'register_activity' => 'Register your activity here',
     'what' => [
         'title' => 'What is EU Code Week?',
         'content' => '<p>
                     EU Code Week is a grass-roots movement run by volunteers and supported by the European Commission.
                     Anyone – schools, teachers, libraries, code clubs, businesses, public authorities – can organise a
-                    #CodeWeek activity and add it to the <a href="/events">codeweek.eu</a> map.
+                    #EUCodeWeek activity and add it to the <a href="/events">codeweek.eu</a> map.
 
                 </p>'
     ],
@@ -56,7 +56,7 @@ return [
                         at the end of your activity.',
             '4' => '<strong>Spread the news!</strong> Promote and share what you did during your activity on social
                         media by using
-                        the #CodeWeek hashtag. You can also share on the <a
+                        the #EUCodeWeek hashtag. You can also share on the <a
                                 href="https://www.facebook.com/groups/774720866253044/">EU Code Week Teacher’s group</a>
                         and on Twitter
                         (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Talk to your friends, fellow
@@ -81,7 +81,7 @@ return [
     ],
     'questions' => [
         'title' => 'Questions?',
-        'content' => '<p>If you have questions about organising and promoting your #CodeWeek activity, get in touch with one of the <a href="/ambassadors">EU Code Week Ambassadors</a> from your country.</p>'
+        'content' => '<p>If you have questions about organising and promoting your #EUCodeWeek activity, get in touch with one of the <a href="/ambassadors">EU Code Week Ambassadors</a> from your country.</p>'
     ]
 
 ];

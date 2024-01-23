@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Report your #CodeWeek activity',
+    'title' => 'Report your #EUCodeWeek activity',
     'event_title' => 'Activity title',
     'number_required' => 'Please provide a rough estimate, even if you don\'t have exact data.',
     'phrase1' => 'You can fill this form only once! Please check your data carefully. If you make a mistake, ',

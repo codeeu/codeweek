@@ -4,11 +4,11 @@
 return [
 
     'title' => 'Gids',
-    'organise_activity' => 'Organiseer je eigen activiteit met #CodeWeek',
+    'organise_activity' => 'Organiseer je eigen activiteit met #EUCodeWeek',
     'register_activity' => 'Meld je activiteit hier aan',
     'what' => [
         'title' => 'Wat is de EU-programmeerweek?',
-        'content' => '<p>De EU-programmeerweek is een burgerinitiatief dat door vrijwilligers georganiseerd wordt met steun van de Europese Commissie. Iedereen - scholen, leerkrachten, bibliotheken, programmeerclubs, bedrijven en overheidsinstellingen - kan een #CodeWeek-activiteit organiseren en dit op de kaart van <a href="/events">codeweek.eu</a> zetten.</p>'
+        'content' => '<p>De EU-programmeerweek is een burgerinitiatief dat door vrijwilligers georganiseerd wordt met steun van de Europese Commissie. Iedereen - scholen, leerkrachten, bibliotheken, programmeerclubs, bedrijven en overheidsinstellingen - kan een #EUCodeWeek-activiteit organiseren en dit op de kaart van <a href="/events">codeweek.eu</a> zetten.</p>'
     ],
     'what_you_need_organise' => [
         'title' => 'Wat heb je nodig om een activiteit te organiseren?',
@@ -31,7 +31,7 @@ return [
             '1' => 'Hoe je programmeerevenement eruit ziet, is helemaal aan jou. We adviseren je wel om wat <strong>praktische oefentijd</strong> in te plannen, waarin deelnemers zelf iets kunnen maken of wat kunnen experimenteren met hardware.',
             '2' => 'Maak gebruik van <strong>tools en technologieën</strong> die geschikt zijn voor je doelgroep. We adviseren gebruik te maken van <a href="http://codeweek.eu/resources/">open source materiaal dat vrij beschikbaar</a> is.',
             '3' => 'Zorg dat deelnemers aan het eind van je evenement aan elkaar <strong>laten zien</strong> wat ze hebben gemaakt.',
-            '4' => '<strong>Zegt het voort!</strong> Promoot wat je tijdens je activiteit hebt gedaan en deel het op sociale media met behulp van de hashtag #CodeWeek. Deel het ook in de <a
+            '4' => '<strong>Zegt het voort!</strong> Promoot wat je tijdens je activiteit hebt gedaan en deel het op sociale media met behulp van de hashtag #EUCodeWeek. Deel het ook in de <a
                         href="https://www.facebook.com/groups/774720866253044/">lerarengroep van de EU-programmeerweek</a> en op Twitter (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Praat met je vrienden, mede-onderwijzers, de lokale pers en maak een persbericht!',
             '5' => 'Vergeet niet je <a href="/add">activiteit toe te voegen</a> aan de <a href="/events">kaart van de programmeerweek</a>!',
         ]
@@ -51,7 +51,7 @@ return [
     ],
     'questions' => [
         'title' => 'Vragen?',
-        'content' => '<p>Heb je vragen over het opzetten en promoten van je eigen #CodeWeek-evenement? Neem dan contact op met een van de <a href="/ambassadors">ambassadeurs van de EU-programmeerweek</a> in jouw land.</p>'
+        'content' => '<p>Heb je vragen over het opzetten en promoten van je eigen #EUCodeWeek-evenement? Neem dan contact op met een van de <a href="/ambassadors">ambassadeurs van de EU-programmeerweek</a> in jouw land.</p>'
     ]
 
 ];

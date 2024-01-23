@@ -6,7 +6,7 @@
 
         <section class="codeweek-banner simple">
             <div class="text">
-                <h2>#CodeWeek</h2>
+                <h2>#EUCodeWeek</h2>
                 <h1>@lang('event.main_title')</h1>
                 <a style="color:black;" href="{{route('guide')}}" target="_blank">@lang('event.howto')?</a>
             </div>

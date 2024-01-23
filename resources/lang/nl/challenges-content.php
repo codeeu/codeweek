@@ -301,7 +301,7 @@ return [
             'link',
             'en een Engelstalig lesplan vind je via deze',
             'De activiteiten in deze les kunnen individueel worden uitgevoerd en in willekeurige volgorde',
-            'De leraar kan een foto van het leerproces maken en deze delen op Instagram met #CodeWeekChallengeGoogle #GrowWithGoogle'
+            'De leraar kan een foto van het leerproces maken en deze delen op Instagram met #EUCodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Naast het boekje met activiteiten zijn voor een aantal activiteiten extra materialen nodig of handig.',
@@ -477,7 +477,7 @@ return [
         'instructions' => [
             "Zet om te beginnen een plan op en bepaal de volgorde van de fitnessonderdelen. Programmeer de RGB-led van de Calliope mini met gebruik van het schema om één van de 5 kleuren weer te geven op het vooraf bepaalde tempo. Creëer daarna een variabele voor het tempo en programmeer herhalingen met behulp van loops.",
             "Vergeet niet dat je je programma ook met ons kan delen via info@calliope.cc - we zien graag wat je hebt gemaakt! We verloten trouwens ook 30 Calliope mini's onder de inzendingen!",
-            "Deel de QR-code van jouw project op Instagram, voeg de hashtag #CodeWeekChallenge toe en gebruik @CodeWeekEU.",
+            "Deel de QR-code van jouw project op Instagram, voeg de hashtag #EUCodeWeekChallenge toe en gebruik @CodeWeekEU.",
         ],
         'example' => [
             "Je kunt ook sporten terwijl je achter de computer zit.",
@@ -488,7 +488,7 @@ return [
     ]
     ,
     'common' => [
-        'share' => 'Deel de link of QR-code van je project op Instagram of Facebook, voeg de hashtag #CodeWeekChallenge toe en vermeld @CodeWeekEU.',
+        'share' => 'Deel de link of QR-code van je project op Instagram of Facebook, voeg de hashtag #EUCodeWeekChallenge toe en vermeld @CodeWeekEU.',
         'audience' => [
             'Leraren en opvoeders',
             'basisschool (6 tot 12 jaar)',

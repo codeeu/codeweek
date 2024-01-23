@@ -41,11 +41,11 @@ return [
 
     "dance" => [
         "title" => "Żifna tal-Ġimgħa tal-Ikkowdjar",
-        "subtitle" => "Xi ħadd qal li l-programmaturi ma jafux jiżfnu? Biex niċċelebraw l-edizzjoni tal-2020 tal-Ġimgħa tal-Ikkowdjar, qed inniedu attività ġdida #CodeWeekDance challenge",
+        "subtitle" => "Xi ħadd qal li l-programmaturi ma jafux jiżfnu? Biex niċċelebraw l-edizzjoni tal-2020 tal-Ġimgħa tal-Ikkowdjar, qed inniedu attività ġdida #EUCodeWeekDance challenge",
         "section1" => [
             "title" => "Min jista’ jissieħeb?",
             "content" => [
-                " Kulħadd mill-iskejjel sal-għalliema, il-libreriji, il-klabbs tal-ikkowdjar, in-negozji u l-awtoritajiet pubbliċi huwa mistieden jiċċelebra l-Ġimgħa Ewropea tal-Ikkowdjar 2020 billi jorganizza attività ta’ #CodeWeekDance u jżidha mal-",
+                " Kulħadd mill-iskejjel sal-għalliema, il-libreriji, il-klabbs tal-ikkowdjar, in-negozji u l-awtoritajiet pubbliċi huwa mistieden jiċċelebra l-Ġimgħa Ewropea tal-Ikkowdjar 2020 billi jorganizza attività ta’ #EUCodeWeekDance u jżidha mal-",
                 "Mappa tal-Ġimgħa tal-Ikkowdjar",
             ]
         ],
@@ -55,7 +55,7 @@ return [
         ],
         "activity1" => [
             "title" => "Ipprogramma ħabib jew ġenitur — l-ebda kompjuter mhu meħtieġ",
-            "subtitle" => "L-ikkowdjar jippermettilek tagħti kmandi lil apparat elettroniku. Iżda teknikament, m’għandekx bżonn kompjuter biex tkun tista’ tikkowdja. Minflok, sib sieħeb — jista’ jkun xi ħadd fil-klassi tiegħek, ħabib, ġenitur jew saħansitra għalliem, u agħtih struzzjonijiet dwar kif iwettaq il-#CodeWeekDance, li jrid isegwi b’mod preċiż",
+            "subtitle" => "L-ikkowdjar jippermettilek tagħti kmandi lil apparat elettroniku. Iżda teknikament, m’għandekx bżonn kompjuter biex tkun tista’ tikkowdja. Minflok, sib sieħeb — jista’ jkun xi ħadd fil-klassi tiegħek, ħabib, ġenitur jew saħansitra għalliem, u agħtih struzzjonijiet dwar kif iwettaq il-#EUCodeWeekDance, li jrid isegwi b’mod preċiż",
             "resources" => [
                 "Gwida minn Code.org biex torganizza l-Festin taż-Żfin unplugged tiegħek",
                 "Ftit tagħlim kif tipprogramma l-bniedem-robot tiegħek",
@@ -65,9 +65,9 @@ return [
 
         "activity2" => [
             "title" => "Programmazzjoni Viżwali",
-            "subtitle" => "Ikkowdja ż-żifna tiegħek tal-Ġimgħa tal-Ikkowdjar fi Scratch. Uża l-karattri tal-Ġimgħa tal-Ikkowdjar jew oħloq il-karattri tiegħek fi Scratch u pprogrammahom biex jagħmlu l-#CodeWeekDance.",
+            "subtitle" => "Ikkowdja ż-żifna tiegħek tal-Ġimgħa tal-Ikkowdjar fi Scratch. Uża l-karattri tal-Ġimgħa tal-Ikkowdjar jew oħloq il-karattri tiegħek fi Scratch u pprogrammahom biex jagħmlu l-#EUCodeWeekDance.",
             "resources" => [
-                "Eżempju ta’ proġett ta’ Scratch #CodeWeekDance",
+                "Eżempju ta’ proġett ta’ Scratch #EUCodeWeekDance",
                 "Il-karattri tal-Ġimgħa tal-Ikkowdjar",
                 "Gwida minn Code.org dwar kif wieħed janima karattru",
                 "Gwida minn Code.org biex torganizza l-Festin taż-Żfin tiegħek",
@@ -75,7 +75,7 @@ return [
             ]
         ], "activity3" => [
             "title" => "Programmazzjoni bbażata fuq it-test",
-            "subtitle" => "Ipproduċi t-tema tal-#CodeWeekDance  bil-Python jew bil-JavaScript, bl-użu ta’ pjattaformi ta’ ħolqien ta’ mużika bbażati fuq kodiċi bħal EarSketch jew Sonic Pi",
+            "subtitle" => "Ipproduċi t-tema tal-#EUCodeWeekDance  bil-Python jew bil-JavaScript, bl-użu ta’ pjattaformi ta’ ħolqien ta’ mużika bbażati fuq kodiċi bħal EarSketch jew Sonic Pi",
             "resources" => [
                 "Tutorial dwar kif tipproduċi l-mużika bl-EarSketch",
                 "Tutorial dwar kif toħloq il-mużika bis-Sonic Pi ",
@@ -90,17 +90,17 @@ return [
             ]
         ], "activity5" => [
             "title" => "Sfida Live Dance",
-            "subtitle" => "Irreġistra filmat tiegħek innifsek, tat-tim tiegħek jew tar-robot tiegħek jiżfen il-#CodeWeekDance, aqsam dan il-filmat fuq Instagram u ma tafx kif forsi jsir virali u tirbaħ xi rigali tal-Ġimgħa tal-Ikkowdjar! Interessat/a? Segwi dawn il-passi:",
+            "subtitle" => "Irreġistra filmat tiegħek innifsek, tat-tim tiegħek jew tar-robot tiegħek jiżfen il-#EUCodeWeekDance, aqsam dan il-filmat fuq Instagram u ma tafx kif forsi jsir virali u tirbaħ xi rigali tal-Ġimgħa tal-Ikkowdjar! Interessat/a? Segwi dawn il-passi:",
             "resources" => [
                 "Irreġistra l-filmat bl-użu tal-Istejjer tal-Instagram",
                 "Segwi",
                 "@CodeWeekEU fuq Instagram",
-                "Semmi @CodeWeekEU fl-istorja tiegħek taż-żfin u kun ċert li tuża l-hashtag #CodeWeekDance",
+                "Semmi @CodeWeekEU fl-istorja tiegħek taż-żfin u kun ċert li tuża l-hashtag #EUCodeWeekDance",
             ]
         ],
         "outro" => [
             "Ir-rebbieħa se jintgħażlu kuljum u jitħabbru fuq il-kanal tal-Instagram tagħna permezz tal-Istejjer, għalhekk tinsiex tiċċekkja n-notifiki tiegħek b’mod regolari, jista’ jkun li jkollok xortik tajba llum",
-            "Il-#CodeWeekDanceh huwa bbażat fuq il",
+            "Il-#EUCodeWeekDanceh huwa bbażat fuq il",
             "Ode to Code",
             "Komposta minn Brendan Paolini, u ż-żfin żviluppat minn Bianca Maria Berardi fl-2015, minn idea ta’ Alessandro Bogliolo, Professur tas-Sistemi tal-Kompjuter fl-Università ta’ Urbino"
         ],
@@ -123,7 +123,7 @@ return [
                 "iftaħ il-logħba",
                 "u skennja l-kodiċi QR li jieħdok fl-app Telegram u jagħtik l-ewwel sett ta’ struzzjonijiet",
                 "Biex tirbaħ, jeħtieġ li ssolvi 10 sfidi ta’ kkowdjar u ssib 10 postijiet fuq il-mappa tal-Ewropa li huma marbuta maż-żieda f’ħajjitna tal-ikkowdjar u t-teknoloġija",
-                "Wara li tlesti l-logħba, aqsam il-punteġġ tiegħek ma’ sħabek billi tuża #CodeWeek u sfidahom biex jilagħbu u jitgħallmu dwar l-istorja tal-ikkowdjar ukoll. Ejjew naraw min jirnexxilu jġib l-ogħla riżultati",
+                "Wara li tlesti l-logħba, aqsam il-punteġġ tiegħek ma’ sħabek billi tuża #EUCodeWeek u sfidahom biex jilagħbu u jitgħallmu dwar l-istorja tal-ikkowdjar ukoll. Ejjew naraw min jirnexxilu jġib l-ogħla riżultati",
                 "It-Treasure Hunt tal-Ġimgħa tal-Ikkowdjar hija l-verżjoni virtwali tat-Treasure Hunt tal-Ġimgħa Ewropea tal-Ikkowdjar li ġiet żviluppata għall-ewwel darba minn Alessandro Bogliolo, Professur tas-Sistemi tal-Kompjuter fl-Università ta’ Urbino. Biex issir taf aktar dwar il-logħba oriġinali tiegħu, żur il-",
                 "blog tagħna"
 
@@ -145,11 +145,11 @@ return [
             "Il-Professur tas-Sistemi tal-Kompjuter fl-Università ta’ Urbino u l-koordinatur tal-",
             "Ambaxxaturi tal-Ġimgħa tal-Ikkowdjar",
             "se jkun qed jitkellem aktar dwar it-Treasure Hunt virtwali tal-Ġimgħa tal-Ikkowdjar",
-            "U xxx se jagħtik ħarsa ġenerali dwar l-isfida l-ġdida #CodeWeekDance",
+            "U xxx se jagħtik ħarsa ġenerali dwar l-isfida l-ġdida #EUCodeWeekDance",
             "Se nkunu qed nikkollegaw ukoll mal-iskejjel u l-istudenti mill-Ewropa kollha li se jaqsmu l-istejjer tal-ikkowdjar tagħhom u jiskambjaw ideat mal-kelliema mistiedna",
             "“Se jkollok ukoll l-opportunità li taqsam il-ħsibijiet u l-ideat tiegħek u tistaqsi l-mistoqsijiet tiegħek. Kull ma trid tagħmel hu li tidħol fl-istream diretta tagħna fuq",
             "jew",
-            "fit-8 ta’ Ottubru 2020 fil-17: 00–18.30 CET u tikkummenta jew titwittja bil-hashtag #CodeWeek",
+            "fit-8 ta’ Ottubru 2020 fil-17: 00–18.30 CET u tikkummenta jew titwittja bil-hashtag #EUCodeWeek",
         ]
     ],
     "get-involved" => [

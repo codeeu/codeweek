@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Izvijestite o svom događaju #CodeWeek',
+    'title' => 'Izvijestite o svom događaju #EUCodeWeek',
     'event_title' => 'Naziv događaja',
     'number_required' => 'Obezbijedite grubu procjenu, čak i ako nemate tačne podatke.',
     'phrase1' => 'Možete popuniti ovaj formular samo jednom! Pažljivo provjerite svoje podatke. Ako napravite grešku, ',

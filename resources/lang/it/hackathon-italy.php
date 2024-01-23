@@ -159,7 +159,7 @@ return [
         12 => [
             'title' => 'Info su CODEWEEK.EU',
             'content' => [
-                'La Settimana europea della programmazione (#CodeWeek) è un’iniziativa che nasce dal basso, gestita da volontari per promuovere l’alfabetizzazione digitale attraverso attività collegate alla programmazione e alla scienza informatica. Ispira e stimola le persone a esplorare nuove idee e a innovare per il futuro. Le attività per la ',
+                'La Settimana europea della programmazione (#EUCodeWeek) è un’iniziativa che nasce dal basso, gestita da volontari per promuovere l’alfabetizzazione digitale attraverso attività collegate alla programmazione e alla scienza informatica. Ispira e stimola le persone a esplorare nuove idee e a innovare per il futuro. Le attività per la ',
                 'Settimana europea della programmazione',
                 'avranno luogo in tutto il mondo fra il 9 e il 24 ottobre. ',
                 'L’idea dell’Hackathon della Settimana europea della programmazione è di mostrare in che modo prendono vita soluzioni concrete grazie all’aiuto della creatività, dell’entusiasmo, delle idee innovative e delle competenze di programmazione dei giovani. Gli hackathon sono ideati e co-organizzati dalla',

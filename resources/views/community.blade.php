@@ -9,7 +9,7 @@
 
         <section class="codeweek-banner ambassadors">
             <div class="text">
-                <h2>#CodeWeek</h2>
+                <h2>#EUCodeWeek</h2>
                 <h1>@lang('community.titles.0')</h1>
             </div>
             <div class="image">

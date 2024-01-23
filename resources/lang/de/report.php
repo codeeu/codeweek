@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => '#CodeWeek-Veranstaltung melden',
+    'title' => '#EUCodeWeek-Veranstaltung melden',
     'event_title' => 'Titel der Veranstaltung',
     'number_required' => 'Bitte geben Sie eine grobe Einschätzung ab, auch wenn Sie keine genauen Zahlen kennen.',
     'phrase1' => 'Sie können dieses Formular nur einmal ausfüllen! Prüfen Sie Ihre Daten daher sorgfältig. Wenn Sie einen Fehler bemerken, ',

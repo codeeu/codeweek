@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Comunicar o seu evento #CodeWeek',
+    'title' => 'Comunicar o seu evento #EUCodeWeek',
     'event_title' => 'Título do evento',
     'number_required' => 'Indique uma estimativa aproximada, mesmo que não disponha de dados exatos.',
     'phrase1' => 'Este formulário só pode ser preenchido uma vez! Verifique atentamente os seus dados. Em caso de erro, ',
