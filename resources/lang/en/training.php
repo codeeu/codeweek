@@ -3,22 +3,17 @@
 return [
 
     'learning_bits' => 'Codeweek Learning Bits',
-    'title' => 'Free training materials and online courses',
-    'text' => '<p>Here you can find free training materials & resources that will help you get started and plan your next innovative lesson.</p>
-<h2 class="subtitle">1. Learning Bits</h2>
-                <p>
-                    No previous coding or programming experience is needed, and each module takes only around 15 minutes to complete. The modules introduce you to key concepts related to coding and computational thinking activities. In addition, the modules also give you practical tips and advice on how to integrate the concepts in your classroom.
+    'title' => 'Learning Bits',
+    'text' => '<p>
+                    The Learning Bits section contains structured, short lesson plans that focus on key concepts and activities related to coding and computational thinking. The unique concept of Learning Bits is an innovation born out of the EU Code Week initiative itself. Each Learning Bit consists of three lesson plans, called activities, tailored for teachers teaching different age groups (lower primary, upper primary, secondary school students) or different coding proficiency levels (beginner, intermediate, advanced). The Learning Bits are designed by educators for educators who want to bring coding into their classroom.
                 </p>',
     'text_2' => '<p>
-                    Now that you have completed one or more Code Week Learning Bits, we hope that you feel comfortable enough to bring some digital creativity to your classroom and pin your activity on the <a href="/events">Code Week Map</a>!
-                </p>
-
-                <p>
-                    You can easily organise a lesson in your classroom, an open day, or an event at your school. Just find a date and register your activity on the  <a href="/events">Code Week map</a>. Each activity organiser will get a certificate of participation for their effort.
-                </p>
-
-                <p>
-                    If you would like to connect with an international group of enthusiastic teachers, join the <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU Code Week Facebook group for teachers</a>! To take a step further and collaborate with other schools in your country or across borders – join the <a href="/codeweek4all">Code Week 4 All challenge</a>.
+                    Using the Learning Bits is, of course free and, as soon as you choose to organise an activity based on a Code Week Learning Bit, why not show your efforts to the world by pinning it on the <a href="/events">Code Week Map</a>!
+             <br/>
+                   Your activity can take the form of a lesson in your classroom, an open day, or an event at your school. Just find a date and register your activity on the <a href="/events">Code Week Map</a>.
+   <br/>
+Each activity organiser gets a certificate of participation for their effort.
+<br/>                    If you would like to connect with an international group of enthusiastic teachers, join the <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU Code Week Facebook group for teachers</a>! To take a step further and collaborate with other schools in your country or across borders – join the <a href="/codeweek4all">Code Week 4 All challenge</a>.
                 </p>',
 
     'lessons' => [
