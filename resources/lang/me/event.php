@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => 'Dodajte svoj #CodeWeek događaj',
+    'main_title' => 'Dodajte svoj #EUCodeWeek događaj',
     'button' => 'Dodati događaj',
     'howto' => 'Kako da organizujete svoj događaj',
     'required' => 'Obavezna polja označena su zvjezdicom (*). Dodajte spisak događaja na vašem jeziku.',

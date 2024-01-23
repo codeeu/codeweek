@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => 'Żid l-avveniment tiegħek ta’ #CodeWeek',
+    'main_title' => 'Żid l-avveniment tiegħek ta’ #EUCodeWeek',
     'button' => 'Żid Avveniment',
     'howto' => 'Kif torganizza l-avveniment tiegħek stess',
     'required' => 'L-oqsma meħtieġa huma mmarkati b’*asterisk. Ħossok liberu/a li żżid l-elenkar tal-avveniment tiegħek bil-lingwa lokali tiegħek.',

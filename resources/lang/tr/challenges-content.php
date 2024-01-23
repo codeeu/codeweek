@@ -302,7 +302,7 @@ return [
             'bağlantıya tıklayın',
             'İngilizce Ders Planı için ise bu bağlantıya tıklayın',
             'Bu dersteki etkinlikler ayrı ayrı olarak ve istenilen sırayla tamamlanabilir.',
-            'Öğretmen, öğrenim sürecini fotoğraflayıp #CodeWeekChallengeGoogle #GrowWithGoogle etiketiyle Instagram\'da paylaşabilir.'
+            'Öğretmen, öğrenim sürecini fotoğraflayıp #EUCodeWeekChallengeGoogle #GrowWithGoogle etiketiyle Instagram\'da paylaşabilir.'
         ],
         'materials' => [
             'Aktivite kitapçığına ek olarak, bazı aktivitelerde ek materyal kullanımı gerekebilir veya faydalı olabilir. ',
@@ -480,7 +480,7 @@ return [
         'instructions' => [
             "Başlamak için bir plan oluşturun ve egzersiz ünitelerinin sırasını belirleyin. Bu planı kullanarak, Calliope mini'nin RGB LED'ini önceden tanımlanmış düzende 5 renkten birini gösterecek şekilde programlayın. Daha sonra bu düzen için bir değişken oluşturun ve döngüleri kullanarak tekrarları programlayın.",
             'Unutmayın: Programı istediğiniz gibi uygulamayı başardıysanız, info@calliope.cc adresine e-posta göndererek bizimle paylaşabilirsiniz. Neler üreteceğinizi çok merak ediyoruz! Bu arada, başvurular arasından seçilecek 30 kişiye Calliope mini veriyoruz!',
-            'Projenizin kare kodunu Instagram’da paylaşın, #CodeWeekChallenge hashtag’ini ekleyin ve @CodeWeekEU hesabını etiketlemeyi unutmayın.',
+            'Projenizin kare kodunu Instagram’da paylaşın, #EUCodeWeekChallenge hashtag’ini ekleyin ve @CodeWeekEU hesabını etiketlemeyi unutmayın.',
         ],
         'example' => [
             'Bilgisayarınızın başında otururken de sportif olabilirsiniz.',
@@ -490,7 +490,7 @@ return [
 
     ]
 ,    'common' => [
-        'share' => 'Projenizin bağlantısını veya kare kodunu Instagram\’da ya da Facebook\’ta paylaşın, #CodeWeekChallenge hashtag\’ini ekleyin ve @CodeWeekEU hesabını etiketlemeyi unutmayın.',
+        'share' => 'Projenizin bağlantısını veya kare kodunu Instagram\’da ya da Facebook\’ta paylaşın, #EUCodeWeekChallenge hashtag\’ini ekleyin ve @CodeWeekEU hesabını etiketlemeyi unutmayın.',
         'audience' => [
             'Öğretmenler ve eğitmenler',
             'İlkokul öğrencileri (6-12 yaş)',

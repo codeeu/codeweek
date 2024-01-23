@@ -41,11 +41,11 @@ return [
 
     "dance" => [
         "title" => "Tanec Týždňa programovania",
-        "subtitle" => "Kto povedal, že programátori nevedia tancovať? Na oslavu Týždňa programovania 2020 spúšťame novú aktivitu – tanečnú výzvu #CodeWeekDance",
+        "subtitle" => "Kto povedal, že programátori nevedia tancovať? Na oslavu Týždňa programovania 2020 spúšťame novú aktivitu – tanečnú výzvu #EUCodeWeekDance",
         "section1" => [
             "title" => "Kto sa môže zapojiť?",
             "content" => [
-                "Európsky týždeň programovania 2020 môže osláviť každý – od škôl, učiteľov, knižníc až po programátorské kluby, podniky a verejné orgány. Úlohou je zorganizovať tanečnú aktivitu #CodeWeekDance a pridať ju na",
+                "Európsky týždeň programovania 2020 môže osláviť každý – od škôl, učiteľov, knižníc až po programátorské kluby, podniky a verejné orgány. Úlohou je zorganizovať tanečnú aktivitu #EUCodeWeekDance a pridať ju na",
                 "mapu Týždňa programovania",
             ]
         ],
@@ -55,7 +55,7 @@ return [
         ],
         "activity1" => [
             "title" => "Naprogramujte si kamaráta alebo rodiča – bez počítača",
-            "subtitle" => "Vďaka programovaniu môžete zadávať príkazy elektronickému zariadeniu. Technicky vzaté však na programovanie počítač nepotrebujete. Namiesto toho si zoberte parťáka – môže to byť váš spolužiak, kamarát, rodič alebo dokonca učiteľ – a zadajte mu pokyny, ako zatancovať #CodeWeekDance, ktoré musí presne dodržať",
+            "subtitle" => "Vďaka programovaniu môžete zadávať príkazy elektronickému zariadeniu. Technicky vzaté však na programovanie počítač nepotrebujete. Namiesto toho si zoberte parťáka – môže to byť váš spolužiak, kamarát, rodič alebo dokonca učiteľ – a zadajte mu pokyny, ako zatancovať #EUCodeWeekDance, ktoré musí presne dodržať",
             "resources" => [
                 "Príručka Code.org, ako si zorganizovať tanečnú párty unplugged",
                 "Lekcia, ako si naprogramovať ľudského robota",
@@ -65,9 +65,9 @@ return [
 
         "activity2" => [
             "title" => "Vizuálne programovanie",
-            "subtitle" => "Naprogramujte si tanec Týždňa programovania v Scratchi. Použite postavičky Týždňa programovania alebo si vytvorte vlastné v Scratchi a naprogramujte ich, aby zatancovali #CodeWeekDance.",
+            "subtitle" => "Naprogramujte si tanec Týždňa programovania v Scratchi. Použite postavičky Týždňa programovania alebo si vytvorte vlastné v Scratchi a naprogramujte ich, aby zatancovali #EUCodeWeekDance.",
             "resources" => [
-                "Príklad projektu #CodeWeekDance v Scratchi",
+                "Príklad projektu #EUCodeWeekDance v Scratchi",
                 "Postavičky Týždňa programovania",
                 "Príručka Code.org, ako naanimovať postavičku",
                 "Príručka Code.org, ako si spraviť tanečnú párty",
@@ -75,7 +75,7 @@ return [
             ]
         ], "activity3" => [
             "title" => "Textové programovanie",
-            "subtitle" => "Vytvorte si zvučku pre #CodeWeekDance v Pythone alebo JavaScripte pomocou programovacích platforiem na skladanie hudby, ako je EarSketch alebo Sonic Pi",
+            "subtitle" => "Vytvorte si zvučku pre #EUCodeWeekDance v Pythone alebo JavaScripte pomocou programovacích platforiem na skladanie hudby, ako je EarSketch alebo Sonic Pi",
             "resources" => [
                 "Návod na komponovanie hudby pomocou EarSketchu",
                 "Návod na skladanie hudby pomocou Sonic Pi",
@@ -90,17 +90,17 @@ return [
             ]
         ], "activity5" => [
             "title" => "Tanečná výzva naživo",
-            "subtitle" => "Nahrajte seba, svoj tím alebo svojho robota na video, ako tancujete #CodeWeekDance, a zdieľajte ho na Instagrame. Ak sa stane virálnym, môžete vyhrať niektoré z reklamných predmetov Týždňa programovania! Zaujalo vás to? Postupujte podľa týchto krokov:",
+            "subtitle" => "Nahrajte seba, svoj tím alebo svojho robota na video, ako tancujete #EUCodeWeekDance, a zdieľajte ho na Instagrame. Ak sa stane virálnym, môžete vyhrať niektoré z reklamných predmetov Týždňa programovania! Zaujalo vás to? Postupujte podľa týchto krokov:",
             "resources" => [
                 "Nahrajte video pomocou Instagram Stories",
                 "Sledujte",
                 "@CodeWeekEU na Instagrame",
-                "Vo svojej story s tancom uveďte @CodeWeekEU a nezabudnite použiť hashtag #CodeWeekDance",
+                "Vo svojej story s tancom uveďte @CodeWeekEU a nezabudnite použiť hashtag #EUCodeWeekDance",
             ]
         ],
         "outro" => [
             "Víťazov vyberieme každý deň a oznámime ich na našom instagramovom kanáli v rámci Stories, takže si nezabudnite pravidelne kontrolovať notifikácie, lebo možno práve v ten deň sa na vás usmeje šťastie",
-            "#CodeWeekDance sa tancuje na skladbu",
+            "#EUCodeWeekDance sa tancuje na skladbu",
             "Ode to Code (Óda na programovanie),",
             "ktorú zložil Brendan Paolini, a na choreografiu, ktorú zostavila Bianca Maria Berardiová v roku 2015. Základom bola myšlienka Alessandra Bogliola, profesora v odbore počítačové systémy na Univerzite v Urbine"
         ],
@@ -123,7 +123,7 @@ return [
                 "otvorte ju",
                 "a naskenujte QR kód, ktorý vás presmeruje do aplikácie Telegram a zadá vám prvý súbor pokynov",
                 "Ak chcete vyhrať, musíte vyriešiť 10 programovacích úloh a nájsť na mape Európy 10 miest, ktoré sa spájajú s rozmachom programovania a technológií",
-                "Po skončení hry sa podeľte o svoje skóre s priateľmi pomocou hashtagu #CodeWeek a vyzvite ich, aby sa tiež zapojili do hry a rozšírili si poznatky o histórii programovania. Uvidíme, kto sa dostane na vrchol rebríčka",
+                "Po skončení hry sa podeľte o svoje skóre s priateľmi pomocou hashtagu #EUCodeWeek a vyzvite ich, aby sa tiež zapojili do hry a rozšírili si poznatky o histórii programovania. Uvidíme, kto sa dostane na vrchol rebríčka",
                 "Tohtoročná honba za pokladom Týždňa programovania je virtuálnou verziou pôvodnej honby za pokladom Európskeho týždňa programovania, ktorú vyvinul Alessandro Bogliolo, profesor v odbore počítačové systémy na Univerzite v Urbine. Ak sa chcete dozvedieť o jeho pôvodnej hre viac, navštívte náš",
                 "blog"
 
@@ -145,11 +145,11 @@ return [
             "profesor v odbore počítačové systémy na Univerzite v Urbine a koordinátor",
             "ambasádorov Týždňa programovania,",
             "vám povie viac o virtuálnej honbe za pokladom Týždňa programovania",
-            "xxx vám zase povie niečo viac o novej tanečnej výzve #CodeWeekDance",
+            "xxx vám zase povie niečo viac o novej tanečnej výzve #EUCodeWeekDance",
             "Takisto sa spojíme so školami a študentmi z celej Európy, ktorí sa podelia o svoje programátorské príbehy a budú si vymieňať nápady s pozvanými rečníkmi",
             "Aj vy budete mať možnosť podeliť sa o svoje myšlienky a nápady a klásť otázky. Stačí vám pripojiť sa do nášho živého vysielania na",
             "alebo",
-            "8. októbra 2020 od 17.00 do 18.30 hod. SEČ a uverejniť komentár alebo tweet s hashtagom #CodeWeek",
+            "8. októbra 2020 od 17.00 do 18.30 hod. SEČ a uverejniť komentár alebo tweet s hashtagom #EUCodeWeek",
         ]
     ],
     "get-involved"=>[

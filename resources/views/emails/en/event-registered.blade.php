@@ -8,7 +8,7 @@
 <p>The EU Code Week ambassadors in your country are currently reviewing your submission. You will receive an email
 confirming the approval of your activity in the next few days.</p>
 <p>In the meantime, are you interested in learning more about coding or looking for some inspiration for preparing
-your #CodeWeek activity?</p>
+your #EUCodeWeek activity?</p>
 <ul>
 <li>
 <p>
@@ -39,7 +39,7 @@ can together earn a Code Week Certificate of Excellence!
 
 <div class="social-media">
 <span>
-Don’t miss the latest updates. Follow #CodeWeek on social media!
+Don’t miss the latest updates. Follow #EUCodeWeek on social media!
 </span>
 <a target="_blank" href="https://www.facebook.com/codeEU" rel="noreferer noopener"><img src="{{asset('img/facebook_circle.png')}}"></a>
 <a target="_blank" href="https://twitter.com/search?q=%23codeweek&amp;f=realtime" rel="noreferer noopener"><img

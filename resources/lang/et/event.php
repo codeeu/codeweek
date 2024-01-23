@@ -11,7 +11,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => 'Lisa oma #CodeWeek üritus',
+    'main_title' => 'Lisa oma #EUCodeWeek üritus',
     'button' => 'Lisa üritus',
     'howto' => 'Kuidas oma üritust korraldada',
     'required' =>

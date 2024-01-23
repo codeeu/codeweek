@@ -24,8 +24,8 @@ return [
     ],
     "dance" => [
         "menu" => "L-Isfida taż-Żfin",
-        "subtitle" => "Min qal li l-programmaturi ma jafux jiżfnu? Aħna ser nagħtuk prova mod ieħor permezz tal-isfida #CodeWeekDance",
-        "kontenut" => "Dawk kollha minn skejjel, għalliema, libreriji sal-klabbs tal-ikkowdjar, negozji u awtoritajiet pubbliċi huma mistiedena jiċċelebraw il-Ġimgħa Ewropea tal-Ikkowdjar billi jorganizzaw attività ta' #CodeWeekDance u jżiduha mal-mappa tal-Ġimgħa tal-Ikkowdjar."
+        "subtitle" => "Min qal li l-programmaturi ma jafux jiżfnu? Aħna ser nagħtuk prova mod ieħor permezz tal-isfida #EUCodeWeekDance",
+        "kontenut" => "Dawk kollha minn skejjel, għalliema, libreriji sal-klabbs tal-ikkowdjar, negozji u awtoritajiet pubbliċi huma mistiedena jiċċelebraw il-Ġimgħa Ewropea tal-Ikkowdjar billi jorganizzaw attività ta' #EUCodeWeekDance u jżiduha mal-mappa tal-Ġimgħa tal-Ikkowdjar."
     ],
     "treasure-hunt" => [
         "menu" => "Treasure Hunt",

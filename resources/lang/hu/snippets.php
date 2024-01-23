@@ -24,8 +24,8 @@ return [
     ],
     "dance" => [
         "menu" => "Táncos kihívás",
-        "subtitle" => "Ki mondta, hogy a programozók nem tudnak táncolni? Bebizonyítjuk ennek ellenkezőjét a #CodeWeekDance kihívás keretében.",
-        "content" => "Az iskolákat, tanárokat, könyvtárakat, csakúgy, mint a programozó klubokat, vállalkozásokat és a közigazgatási szerveket egyaránt arra biztatjuk, hogy vegyenek részt a 2020-as programozási héten azáltal, hogy #CodeWeekDance eseményt szerveznek, és hozzáadják azt a programozási hét térképéhez."
+        "subtitle" => "Ki mondta, hogy a programozók nem tudnak táncolni? Bebizonyítjuk ennek ellenkezőjét a #EUCodeWeekDance kihívás keretében.",
+        "content" => "Az iskolákat, tanárokat, könyvtárakat, csakúgy, mint a programozó klubokat, vállalkozásokat és a közigazgatási szerveket egyaránt arra biztatjuk, hogy vegyenek részt a 2020-as programozási héten azáltal, hogy #EUCodeWeekDance eseményt szerveznek, és hozzáadják azt a programozási hét térképéhez."
     ],
     "treasure-hunt" => [
         "menu" => "Kincsvadászat",

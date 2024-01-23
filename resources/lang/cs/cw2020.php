@@ -41,11 +41,11 @@ return [
 
     "dance" => [
         "title" => "Tanec týdne programování",
-        "subtitle" => "Kdo říká, že programátoři neumí tancovat? Na oslavu ročníku 2020 týdne programování vám přinášíme novou akci – výzvu #CodeWeekDance",
+        "subtitle" => "Kdo říká, že programátoři neumí tancovat? Na oslavu ročníku 2020 týdne programování vám přinášíme novou akci – výzvu #EUCodeWeekDance",
         "section1" => [
             "title" => "Pro koho akce je?",
             "content" => [
-                "Oslavit Evropský týden programování 2020 zorganizováním akce #CodeWeekDance může každý, od škol, učitelů a knihoven po programátorské kluby, podniky a veřejné orgány. Akci pak stačí přidat na",
+                "Oslavit Evropský týden programování 2020 zorganizováním akce #EUCodeWeekDance může každý, od škol, učitelů a knihoven po programátorské kluby, podniky a veřejné orgány. Akci pak stačí přidat na",
                 "mapu týdne programování",
             ]
         ],
@@ -55,7 +55,7 @@ return [
         ],
         "activity1" => [
             "title" => "Naprogramujte své přátele nebo rodiče – počítač nepotřebujete",
-            "subtitle" => "Pomocí programování můžete dávat příkazy elektronickému zařízení. Prakticky ale k programování počítač nepotřebujete. Vezměte si místo něj partnera – může to být spolužák, kamarád, rodič nebo třeba váš učitel – a dejte jim instrukce jak zatancovat #CodeWeekDance, kterými se musí přesně řídit",
+            "subtitle" => "Pomocí programování můžete dávat příkazy elektronickému zařízení. Prakticky ale k programování počítač nepotřebujete. Vezměte si místo něj partnera – může to být spolužák, kamarád, rodič nebo třeba váš učitel – a dejte jim instrukce jak zatancovat #EUCodeWeekDance, kterými se musí přesně řídit",
             "resources" => [
                 "Příručka Code.org jak zorganizovat Dance Party unplugged",
                 "Školicí materiál o programování lidí-robotů",
@@ -65,9 +65,9 @@ return [
 
         "activity2" => [
             "title" => "Vizuální programování",
-            "subtitle" => "Naprogramujte si tanec na týden programování ve Scratchi. Použijte postavičky týdne programování nebo si ve Scratchi vytvořte vlastní a naprogramujte je tak, aby tancovaly #CodeWeekDance.",
+            "subtitle" => "Naprogramujte si tanec na týden programování ve Scratchi. Použijte postavičky týdne programování nebo si ve Scratchi vytvořte vlastní a naprogramujte je tak, aby tancovaly #EUCodeWeekDance.",
             "resources" => [
-                "Příklad projektu #CodeWeekDance ve Scratchi",
+                "Příklad projektu #EUCodeWeekDance ve Scratchi",
                 "Postavičky týdne programování",
                 "Příručka Code.org, jak animovat postavičky",
                 "Příručka Code.org, jak zorganizovat taneční party",
@@ -75,7 +75,7 @@ return [
             ]
         ], "activity3" => [
             "title" => "Textové programování",
-            "subtitle" => "Vytvořte znělku #CodeWeekDance v jazyce Python nebo JavaScript na hudební programovací platformě jako EarSketch nebo Sonic Pi",
+            "subtitle" => "Vytvořte znělku #EUCodeWeekDance v jazyce Python nebo JavaScript na hudební programovací platformě jako EarSketch nebo Sonic Pi",
             "resources" => [
                 "Návod na skládání hudby s EarSketch",
                 "Návod na skládání hudby se Sonic Pi",
@@ -90,17 +90,17 @@ return [
             ]
         ], "activity5" => [
             "title" => "Taneční výzva živě",
-            "subtitle" => "Natočte video, jak vy, váš tým nebo robot tancujete #CodeWeekDance, sdílejte ho na Instagramu a zkuste z něj udělat virál a vyhrát některou z našich odměn! Chcete se zapojit? Tady je postup:",
+            "subtitle" => "Natočte video, jak vy, váš tým nebo robot tancujete #EUCodeWeekDance, sdílejte ho na Instagramu a zkuste z něj udělat virál a vyhrát některou z našich odměn! Chcete se zapojit? Tady je postup:",
             "resources" => [
                 "Natočte video v Instagram Stories",
                 "Sledujte",
                 "@CodeWeekEU na Instagramu",
-                "Zmiňte @CodeWeekEU v příběhu se svým tancem a nezapomeňte na hashtag #CodeWeekDance",
+                "Zmiňte @CodeWeekEU v příběhu se svým tancem a nezapomeňte na hashtag #EUCodeWeekDance",
             ]
         ],
         "outro" => [
             "Každý den vybereme vítěze a vyhlásíme je na našem instagramovém kanálu ve Stories, takže nezapomeňte pravidelně sledovat upozornění, třeba právě vy budete mít štěstí",
-            "Akce #CodeWeekDance vznikla ze skladby",
+            "Akce #EUCodeWeekDance vznikla ze skladby",
             "Óda na kód",
             "kterou složil Brendan Paolini, a tance, který v roce 2015 předvedla Bianca Maria Berardi. U jejich zrodu stál nápad Alessandra Bogliola, který vyučuje počítačové systémy na univerzitě v Urbinu"
         ],
@@ -123,7 +123,7 @@ return [
             "otevřete hru",
             "a naskenujte QR kód, který vás přesměruje do Telegramu a zadá vám první instrukce",
             "Vyhráváte, pokud vyřešíte 10 programovacích úkolů a na mapě Evropy najdete 10 míst spojených se vzestupem programování a technologií",
-            "Jakmile hru dohrajete, sdílejte své skóre s přáteli s hashtagem #CodeWeek a vyzvěte je, aby si také zahráli a dozvěděli se něco o historii programování. Uvidíme, kdo získá nejvíc bodů",
+            "Jakmile hru dohrajete, sdílejte své skóre s přáteli s hashtagem #EUCodeWeek a vyzvěte je, aby si také zahráli a dozvěděli se něco o historii programování. Uvidíme, kdo získá nejvíc bodů",
             "Honba za pokladem týdne programování je letošní virtuální verze původní honby za pokladem v rámci Evropského týdne programování, kterou vyvinul Alessandro Bogliolo, profesor počítačových věd na univerzitě v Urbinu. Chcete-li se o jeho původní hře dozvědět více, podívejte se na náš",
             "blog"
 
@@ -145,11 +145,11 @@ return [
         "profesor počítačových věd na univerzitě v Urbinu a koordinátor",
         "ambasadorů týdne programování",
         "vám poví víc o virtuální Honbě za pokladem",
-        "A xxx vám řekne o nové výzvě #CodeWeekDance",
+        "A xxx vám řekne o nové výzvě #EUCodeWeekDance",
         "Členové komunity Evropského týdne programování představí nové lokální i globální neboli, jak jim rádi říkáme my, „glokální“ aktivity. Spojíme se také se školami a studenty z celé Evropy, kteří se s námi podělí o své příběhy s programováním a povedou diskuzi s našimi hosty",
         "Dostanete také příležitost podělit se o vlastní myšlenky a nápady a klást dotazy. Stačí se připojit  k našemu živému vysílání na",
         "nebo",
-        "8. října 2020 v 17:00–18:30 SEČ a přidávat komentáře nebo tweety s hashtagem #CodeWeek",
+        "8. října 2020 v 17:00–18:30 SEČ a přidávat komentáře nebo tweety s hashtagem #EUCodeWeek",
     ]
 ],
     "get-involved"=>[

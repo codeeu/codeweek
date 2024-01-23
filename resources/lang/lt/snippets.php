@@ -24,8 +24,8 @@ return [
     ],
     "dance" => [
         "menu" => "Šokių iššūkis",
-        "subtitle" => "Kas sakė, kad programuotojai nemoka šokti? Šiuo #CodeWeekDance iššūkiu įrodysime, kad tai netiesa.",
-        "content" => "Visus, pradedant mokyklomis, mokytojais, bibliotekomis ir baigiant programavimo klubais, įmonėmis ir valdžios institucijomis, kviečiame ES programavimo savaitės proga organizuoti #CodeWeekDance užsiėmimus ir įtraukti juos į Programavimo savaitės žemėlapį."
+        "subtitle" => "Kas sakė, kad programuotojai nemoka šokti? Šiuo #EUCodeWeekDance iššūkiu įrodysime, kad tai netiesa.",
+        "content" => "Visus, pradedant mokyklomis, mokytojais, bibliotekomis ir baigiant programavimo klubais, įmonėmis ir valdžios institucijomis, kviečiame ES programavimo savaitės proga organizuoti #EUCodeWeekDance užsiėmimus ir įtraukti juos į Programavimo savaitės žemėlapį."
     ],
     "treasure-hunt" => [
         "menu" => "Lobio paieška",

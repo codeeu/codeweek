@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Rapportera ditt evenemang för #CodeWeek',
+    'title' => 'Rapportera ditt evenemang för #EUCodeWeek',
     'event_title' => 'Evenemangstitel',
     'number_required' => 'Gör en ungefärlig beräkning om du inte har de exakta uppgifterna.',
     'phrase1' => 'Du kan bara fylla i det här formuläret en gång! Kontrollera dina uppgifter noga. Om du gör fel ',

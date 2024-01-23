@@ -24,8 +24,8 @@ return [
     ],
     "dance" => [
         "menu" => "Dans Meydan Okuması",
-        "subtitle" => "Programcıların dans edemediğini de kim söylemiş? #CodeWeekDance meydan okuması ile onları haksız çıkaralım.",
-        "content" => "Okullar, öğretmenler, kütüphaneler, kod kulüpleri, özel şirketler ve kamu kurumlarından herkesi bir #CodeWeekDance etkinliği düzenleyip Kod Haftası haritasına ekleyerek AB Kod Haftası’nı kutlamaya davet ediyoruz."
+        "subtitle" => "Programcıların dans edemediğini de kim söylemiş? #EUCodeWeekDance meydan okuması ile onları haksız çıkaralım.",
+        "content" => "Okullar, öğretmenler, kütüphaneler, kod kulüpleri, özel şirketler ve kamu kurumlarından herkesi bir #EUCodeWeekDance etkinliği düzenleyip Kod Haftası haritasına ekleyerek AB Kod Haftası’nı kutlamaya davet ediyoruz."
     ],
     "treasure-hunt" => [
         "menu" => "Hazine Avı",

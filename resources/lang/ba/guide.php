@@ -4,11 +4,11 @@
 return [
 
     'title' => 'Smjernice',
-    'organise_activity' => 'Organizirajte svoju vlastitu aktivnost u okviru Sedmice kodiranja #CodeWeek',
+    'organise_activity' => 'Organizirajte svoju vlastitu aktivnost u okviru Sedmice kodiranja #EUCodeWeek',
     'register_activity' => 'Registrirajte svoju aktivnost ovdje',
     'what' => [
         'title' => 'Šta je Sedmica kodiranja EU?',
-        'content' => '<p>Sedmica kodiranja EU je pokret na nivou širokih masa koji vode volonteri i koji podržava Evropska komisija. Svi -- škole, nastavnici, biblioteke, klubovi za kodiranje, kompanije, javni organi vlasti -- mogu organizirati aktivnost Sedmice kodiranja (#CodeWeek) i dodati ga na mapu <a href="/events">codeweek.eu</a>.</p>'
+        'content' => '<p>Sedmica kodiranja EU je pokret na nivou širokih masa koji vode volonteri i koji podržava Evropska komisija. Svi -- škole, nastavnici, biblioteke, klubovi za kodiranje, kompanije, javni organi vlasti -- mogu organizirati aktivnost Sedmice kodiranja (#EUCodeWeek) i dodati ga na mapu <a href="/events">codeweek.eu</a>.</p>'
     ],
     'what_you_need_organise' => [
         'title' => 'Šta vam treba da biste organizirali aktivnost?',
@@ -31,7 +31,7 @@ return [
             '1' => 'Oblik vašeg događaja kodiranja zavisi od vas, ali mi preporučujemo da uključite <strong>praktične, priručne periode</strong>, gdje će učesnici moći kreirati svoje vlastite sadržaje i/ili se igrati sa hardverom.',
             '2' => 'Koristite <strong>alate i tehnologije</strong> koji odgovaraju vašoj ciljnoj grupi. Mi preporučujemo da se koriste <a href="http://codeweek.eu/resources/">besplatno raspoloživi materijali iz otvorenih izvora</a>.',
             '3' => 'Podstaknite učesnike da <strong>pokažu i predstave</strong> ono što su kreirali na kraju vašeg dešavanja.',
-            '4' => '<strong>Proširite vijesti!</strong> Promovirajte i dijelite ono što ste radili tokom svoje aktivnosti na društvenim medijima uz pomoć heštega #CodeWeek. Isto tako možete dijeliti na <a
+            '4' => '<strong>Proširite vijesti!</strong> Promovirajte i dijelite ono što ste radili tokom svoje aktivnosti na društvenim medijima uz pomoć heštega #EUCodeWeek. Isto tako možete dijeliti na <a
                                 href="https://www.facebook.com/groups/774720866253044/">Nastavničkoj grupi Sedmice kodiranja EU</a> i na Twitteru (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Razgovarajte sa svojim prijateljima, kolegama nastavnicima, sa lokalnom štampom, napravite saopćenje za štampu.',
             '5' => 'Ne zaboravite <a href="/add">dodati svoju aktivnost</a> na <a href="/events">mapu Sedmice kodiranja</a>!'
         ]
@@ -51,7 +51,7 @@ return [
     ],
     'questions' => [
         'title' => 'Pitanja?',
-        'content' => '<p>Ako imate pitanja o organizaciji i promoviranju svog dešavanja u okviru Sedmice kodiranja (#CodeWeek), stupite u kontakt s jednim od <a href="/ambassadors">Ambasadora Sedmice kodiranja EU</a> iz svoje zemlje.</p>'
+        'content' => '<p>Ako imate pitanja o organizaciji i promoviranju svog dešavanja u okviru Sedmice kodiranja (#EUCodeWeek), stupite u kontakt s jednim od <a href="/ambassadors">Ambasadora Sedmice kodiranja EU</a> iz svoje zemlje.</p>'
     ]
 
 ];

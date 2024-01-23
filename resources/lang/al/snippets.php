@@ -24,8 +24,8 @@ return [
     ],
     "dance" => [
         "menu" => "“Sfida e kërcimit”",
-        "subtitle" => "Kush tha se programuesit nuk dinë të kërcejnë? Do t’ju vërtetojmë të kundërtën me sfidën e #CodeWeekDance.",
-        "content" => "Të gjithë nga shkollat, mësuesit, bibliotekat deri te klubet e kodimit, bizneset dhe autoritetet publike janë të ftuar të festojnë EU Code Week duke organizuar një aktivitetet #CodeWeekDance dhe duke e shtuar në hartën e Code Week."
+        "subtitle" => "Kush tha se programuesit nuk dinë të kërcejnë? Do t’ju vërtetojmë të kundërtën me sfidën e #EUCodeWeekDance.",
+        "content" => "Të gjithë nga shkollat, mësuesit, bibliotekat deri te klubet e kodimit, bizneset dhe autoritetet publike janë të ftuar të festojnë EU Code Week duke organizuar një aktivitetet #EUCodeWeekDance dhe duke e shtuar në hartën e Code Week."
     ],
     "treasure-hunt" => [
         "menu" => "“Gjuetia e thesareve”",

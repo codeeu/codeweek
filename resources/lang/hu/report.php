@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'A #CodeWeek eseménye jelentése',
+    'title' => 'A #EUCodeWeek eseménye jelentése',
     'event_title' => 'Az esemény címe',
     'number_required' => 'Adjon meg egy hozzávetõleges becslést, még ha nem is rendelkezik pontos adatokkal.',
     'phrase1' => 'Ezt az ûrlapot mindössze egyszer töltheti ki! Kérjük, alaposan ellenõrizze az adatokat. Ha hibázik, ',
