@@ -42,6 +42,7 @@ class UserProfileTest extends TestCase
     public function it_should_display_achievements()
     {
 
+        $this->withoutExceptionHandling();
         $response = $this->get('/badges/user/222');
         $response->assertSee('Active Organiser ' . Carbon::now()->year);
 
