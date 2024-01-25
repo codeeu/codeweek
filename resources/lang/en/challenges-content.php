@@ -299,7 +299,7 @@ return [
             'link',
             'as well as Lesson Plan in English at this',
             'The activities in this lesson can be completed individually and in any order',
-            'Teacher can take a picture of the learning process and share it on Instagram using #CodeWeekChallengeGoogle #GrowWithGoogle'
+            'Teacher can take a picture of the learning process and share it on Instagram using #EUCodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'In addition to the activity booklet, some activities require or optionally benefit from additional materials.',
@@ -480,7 +480,7 @@ return [
         'instructions' => [
             'To get started, create a plan and determine the order of the exercise units. Using the schedule, program the RGB LED of the Calliope mini to display one of the 5 colors at the predefined pace. Then create a variable for the pace and program repetitions using loops.',
             "Remember, if you've implemented the program in a way that you like, you can also share it with us at info@calliope.cc - we're excited to see what you make of it! By the way, we're giving away 30 Calliope minis among the submissions!",
-            "Share the QR code of your project on Instagram, add the hashtag #CodeWeekChallenge and mention @CodeWeekEU.",
+            "Share the QR code of your project on Instagram, add the hashtag #EUCodeWeekChallenge and mention @CodeWeekEU.",
         ],
         'example' => [
             'While you’re sitting at your computer: you can get sporty too.',
@@ -530,7 +530,7 @@ return [
 
     ],
     'common' => [
-        'share' => 'Share the link or QR code of your project on Instagram or Facebook, add the hashtag #CodeWeekChallenge and mention @CodeWeekEU.',
+        'share' => 'Share the link or QR code of your project on Instagram or Facebook, add the hashtag #EUCodeWeekChallenge and mention @CodeWeekEU.',
         'audience' => [
             'Teachers and educators',
             'Primary School students (6 to 12 years)',

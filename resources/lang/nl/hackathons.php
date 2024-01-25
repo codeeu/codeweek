@@ -7,7 +7,7 @@ return [
         1 => [
             'title' => 'Zes hackathons, zes uitdagingen',
             'content' => [
-                1 => 'Woon jij in Griekenland, Letland, Ierland, Italië, Roemenië of Slovenië? Ben je creatief, ambitieus en geïnteresseerd in de toekomst van technologie? Dit is jouw kans! Doe mee aan een van de hackathons van de EU-programmeerweek #CodeWeek en ontwikkel een innovatieve oplossing die mee de technologische revolutie op gang brengt!',
+                1 => 'Woon jij in Griekenland, Letland, Ierland, Italië, Roemenië of Slovenië? Ben je creatief, ambitieus en geïnteresseerd in de toekomst van technologie? Dit is jouw kans! Doe mee aan een van de hackathons van de EU-programmeerweek #EUCodeWeek en ontwikkel een innovatieve oplossing die mee de technologische revolutie op gang brengt!',
                 2 => 'De EU-programmeerweek 2021 omvat zes bijzondere hackathons voor leerlingen van 15-19 jaar uit het secundair onderwijs, die teams vormen en samen hun programmeervaardigheden inzetten om lokale problemen op te lossen. Na 24 uur hacken stelt elk team zijn ideeën voor aan een panel van experts, die 10 teams selecteren voor de finale. Alle teams krijgen evenveel tijd, middelen en toegang tot mentors en expertise om de uitdaging tot een goed einde te brengen, maar slechts 10 van hen krijgen de kans om in de volgende ronde hun prototype te ontwikkelen, door experts gecoacht te worden en in het najaar deel te nemen aan de hackathonfinale. Tijdens de finale strijden de teams om coole IT-uitrusting en een kans om hun prototype met de steun van mentors en coaches verder uit te werken.'
             ]
         ],

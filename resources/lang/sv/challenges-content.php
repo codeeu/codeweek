@@ -299,7 +299,7 @@ return [
             'länken',
             'samt en lektionsplanering på engelska på den här',
             'Aktiviteterna i den här lektionen kan genomföras individuellt och i vilken ordning som helst',
-            'Läraren kan ta en bild av inlärningsprocessen och dela den på Instagram med hashtaggen #CodeWeekChallengeGoogle #GrowWithGoogle'
+            'Läraren kan ta en bild av inlärningsprocessen och dela den på Instagram med hashtaggen #EUCodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Förutom aktivitetsbroschyren så kan vissa av aktiviteterna kräva, eller bli bättre med, ytterligare material.',
@@ -474,7 +474,7 @@ return [
         'instructions' => [
             'Kom igång genom att skapa en plan och bestämma ordningen på övningsenheterna.  Använd schemat och programmera RGB-dioderna på Calliope mini så att de visar de 5 färgerna i det fördefinierade tempot. Skapa sedan en variabel för tempot och programmera repetitioner med hjälp av loopar.',
             "Kom ihåg att om du genomfört programmet på ett sätt som du gillar, kan du också dela det med oss på info@calliope.cc – vi vill väldigt gärna se vad du åstadkommer med det! Förresten skänker vi bort Calliope mini-exemplar till 30 av dem som lämnat bidrag!",
-            "Dela QR-koden för ditt projekt på Instagram, lägg till hashtaggen #CodeWeekChallenge och nämn @CodeWeekEU.",
+            "Dela QR-koden för ditt projekt på Instagram, lägg till hashtaggen #EUCodeWeekChallenge och nämn @CodeWeekEU.",
         ],
         'example' => [
             'Även om du sitter vid datorn kan du bli sportig också.',
@@ -485,7 +485,7 @@ return [
     ],
 
     'common' => [
-        'share' => 'Dela länken eller QR-koden till ditt projekt på Instagram eller Facebook, lägg till hashtaggen #CodeWeekChallange och nämn @CodeWeekEU.',
+        'share' => 'Dela länken eller QR-koden till ditt projekt på Instagram eller Facebook, lägg till hashtaggen #EUCodeWeekChallange och nämn @CodeWeekEU.',
         'audience' => [
     'Lärare och utbildare',
     'Låg- och mellanstadieelever (6 till 12 år)',

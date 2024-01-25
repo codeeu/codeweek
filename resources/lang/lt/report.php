@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Pateikite ataskaitą apie savo #CodeWeek renginį',
+    'title' => 'Pateikite ataskaitą apie savo #EUCodeWeek renginį',
     'event_title' => 'Renginio pavadinimas',
     'number_required' => 'Pateikite apytikrius skaičius, net jei neturite tikslių duomenų.',
     'phrase1' => 'Šią formą galima užpildyti tik vieną kartą! Atidžiai patikrinkite duomenis. Jei padarysite klaidą, ',

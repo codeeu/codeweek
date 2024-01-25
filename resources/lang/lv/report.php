@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Paziņojiet par savu #CodeWeek pasākumu',
+    'title' => 'Paziņojiet par savu #EUCodeWeek pasākumu',
     'event_title' => 'Pasākuma nosaukums',
     'number_required' => 'Lūdzu, norādiet aptuveni, ja jums nav precīzu datu.',
     'phrase1' => 'Jūs varat aizpildīt šo veidlapu tikai vienreiz! Lūdzu, pārbaudiet datus uzmanīgi. Ja pieļauta kļūda, ',

@@ -4,14 +4,14 @@
 return [
 
     'title' => 'Guide',
-    'organise_activity' => 'Organisez votre propre activité avec #CodeWeek',
+    'organise_activity' => 'Organisez votre propre activité avec #EUCodeWeek',
     'register_activity' => 'Enregistrez votre activité ici',
     'what' => [
         'title' => 'Qu’est-ce que la Semaine européenne du code?',
         'content' => '<p>La semaine européenne du code est une initiative populaire dirigée par des volontaires
                     et soutenue par la Commission européenne. Tout le monde – écoles, enseignants,
                     bibliothèques, clubs de codage, entreprises, autorités publiques – peut
-                    organiser une activité #CodeWeek et l’ajouter à la carte <a href="/events">codeweek.eu</a>.
+                    organiser une activité #EUCodeWeek et l’ajouter à la carte <a href="/events">codeweek.eu</a>.
                 </p>'
     ],
     'what_you_need_organise' => [
@@ -67,7 +67,7 @@ Jetez un coup d’œil à notre section <a
                 ont créé aux autres à la fin de votre événement.
             ',
             '4' => '<strong>Faites passer le mot!</strong> Faites la promotion et partagez ce que vous avez fait
-                pendant votre activité sur les réseaux sociaux avec le hashtag #CodeWeek. Vous
+                pendant votre activité sur les réseaux sociaux avec le hashtag #EUCodeWeek. Vous
                 pouvez également partager sur le <a
                         href="https://www.facebook.com/groups/774720866253044/">groupe d’enseignants de la
                     semaine européenne du code</a> et sur Twitter (<a
@@ -99,7 +99,7 @@ Jetez un coup d’œil à notre section <a
     'questions' => [
         'title' => 'Vous avez des questions?',
         'content' => '<p>Si vous avez des questions sur l’organisation et la promotion de
-                votre événement #CodeWeek, contactez l’un des <a href="/ambassadors">ambassadeurs de
+                votre événement #EUCodeWeek, contactez l’un des <a href="/ambassadors">ambassadeurs de
                     la semaine européenne du code</a> de votre pays.</p>'
     ]
 

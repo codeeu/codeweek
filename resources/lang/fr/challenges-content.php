@@ -302,7 +302,7 @@ return [
             'lien',
             "ainsi qu'un plan de cours en anglais dans ce",
             "Les activités de ce cours peuvent être réalisées individuellement et dans n'importe quel ordre",
-            "L'enseignant peut prendre une photo du processus d'apprentissage et le partager sur Instagram en ajoutant #CodeWeekChallengeGoogle #GrowWithGoogle"
+            "L'enseignant peut prendre une photo du processus d'apprentissage et le partager sur Instagram en ajoutant #EUCodeWeekChallengeGoogle #GrowWithGoogle"
         ],
         'materials' => [
             "en plus de la brochure des activités, certaines activités nécessitent du matériel supplémentaire ou proposent d'en ajouter en option. ",
@@ -477,7 +477,7 @@ return [
         'instructions' => [
             "Pour commencer, créez un plan et déterminez l'ordre des exercices du programme. En utilisant le plan, programmez la LED RVB du Calliope mini pour qu'elle affiche l'une des 5 couleurs au rythme prédéfini. Créez ensuite une variable pour le rythme et programmez les répétitions à l'aide de boucles.",
             "N'oubliez pas que si vous êtes satisfaits de ce que vous avez programmé, vous pouvez également nous partager votre projet à l'adresse info@calliope.cc. Nous sommes impatients de voir ce que vous avez créé avec le matériel reçu ! Nous offrons par ailleurs 30 Calliope minis en cadeau aux participants sélectionnés.",
-            "Partagez le QR code de votre projet sur Instagram, ajoutez le hashtag #CodeWeekChallenge et mentionnez @CodeWeekEU."
+            "Partagez le QR code de votre projet sur Instagram, ajoutez le hashtag #EUCodeWeekChallenge et mentionnez @CodeWeekEU."
         ],
         'example' => [
             "Vous pouvez vous entraîner tout en restant assis devant votre ordinateur.",
@@ -488,7 +488,7 @@ return [
     ],
 
     'common' => [
-        'share' => "Partage le lien ou le code QR de ton projet sur Instagram ou Facebook, ajoute le hashtag #CodeWeekChallenge et mentionne @CodeWeekEU.",
+        'share' => "Partage le lien ou le code QR de ton projet sur Instagram ou Facebook, ajoute le hashtag #EUCodeWeekChallenge et mentionne @CodeWeekEU.",
         'audience' => [
     "Enseignants et éducateurs",
             "Élèves du primaire (6 à 12 ans)",

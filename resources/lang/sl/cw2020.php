@@ -41,11 +41,11 @@ return [
 
     "dance" => [
         "title" => "Ples za teden programiranja",
-        "subtitle" => "Kdo pravi, da programerji ne znajo plesati? V tednu programiranja v letu 2020 začenjamo novo dejavnost, in sicer plesni izziv #CodeWeekDance.",
+        "subtitle" => "Kdo pravi, da programerji ne znajo plesati? V tednu programiranja v letu 2020 začenjamo novo dejavnost, in sicer plesni izziv #EUCodeWeekDance.",
         "section1" => [
             "title" => "Kdo se lahko pridruži?",
             "content" => [
-                "Vsi, od šol, učiteljev, knjižnic do programerskih klubov, podjetij in javnih organov, so vabljeni, da se udeležijo tedna programiranja EU v letu 2020 in organizirajo dejavnost #CodeWeekDance ter jo dodajo na",
+                "Vsi, od šol, učiteljev, knjižnic do programerskih klubov, podjetij in javnih organov, so vabljeni, da se udeležijo tedna programiranja EU v letu 2020 in organizirajo dejavnost #EUCodeWeekDance ter jo dodajo na",
                 "zemljevid tedna programiranja.",
             ]
         ],
@@ -55,7 +55,7 @@ return [
         ],
         "activity1" => [
             "title" => "Sprogramirajte prijatelje ali starše – računalnik ni potreben",
-            "subtitle" => "S programiranjem dajete ukaze elektronski napravi. Vendar za programiranje tehnično ne potrebujete računalnika. Namesto tega poiščite partnerja – to je lahko vaš sošolec, prijatelj, mama ali oče ali celo učitelj – in mu dajte navodila, kako zaplesati #CodeWeekDance, ki jih mora natančno upoštevati.",
+            "subtitle" => "S programiranjem dajete ukaze elektronski napravi. Vendar za programiranje tehnično ne potrebujete računalnika. Namesto tega poiščite partnerja – to je lahko vaš sošolec, prijatelj, mama ali oče ali celo učitelj – in mu dajte navodila, kako zaplesati #EUCodeWeekDance, ki jih mora natančno upoštevati.",
             "resources" => [
                 "Vodič na code.org, kako organizirati plesno zabavo brez računalnika",
                 "Učni drobec, kako sprogramirati svojega človeškega robota",
@@ -65,9 +65,9 @@ return [
 
         "activity2" => [
             "title" => "Vizualno programiranje",
-            "subtitle" => "Svoj ples za teden programiranja sprogramirajte v orodju Scratch. Uporabite avatarje iz tedna programiranja ali naredite svoje v orodju Scratch in jih sprogramirajte, da bodo zaplesali #CodeWeekDance.",
+            "subtitle" => "Svoj ples za teden programiranja sprogramirajte v orodju Scratch. Uporabite avatarje iz tedna programiranja ali naredite svoje v orodju Scratch in jih sprogramirajte, da bodo zaplesali #EUCodeWeekDance.",
             "resources" => [
-                "Primer projekta Scratch #CodeWeekDance",
+                "Primer projekta Scratch #EUCodeWeekDance",
                 "Avatarji tedna programiranja",
                 "Vodič na code.org, kako zanimirati avatar",
                 "Vodič na code.org, kako organizirati plesno zabavo",
@@ -75,7 +75,7 @@ return [
             ]
         ], "activity3" => [
             "title" => "Na besedilu temelječe programiranje",
-            "subtitle" => "Pripravite temo za #CodeWeekDance s programskim jezikom Python ali JavaScript, in sicer z uporabo programerskih platform za ustvarjanje glasbe, kot sta EarSketch ali Sonic Pi.",
+            "subtitle" => "Pripravite temo za #EUCodeWeekDance s programskim jezikom Python ali JavaScript, in sicer z uporabo programerskih platform za ustvarjanje glasbe, kot sta EarSketch ali Sonic Pi.",
             "resources" => [
                 "Vodič, kako ustvariti glasbo z EarSketch",
                 "Vodič, kako ustvariti glasbo s Sonic Pi",
@@ -90,17 +90,17 @@ return [
             ]
         ], "activity5" => [
             "title" => "Plesni izziv v živo",
-            "subtitle" => "Posnemite sebe, svojo ekipo ali svojega robota med plesom #CodeWeekDance, delite video na Instagramu in sodelujte v nagradni igri tedna programiranja s privlačnimi nagradami. Vas zanima? Sledite naslednjim korakom:",
+            "subtitle" => "Posnemite sebe, svojo ekipo ali svojega robota med plesom #EUCodeWeekDance, delite video na Instagramu in sodelujte v nagradni igri tedna programiranja s privlačnimi nagradami. Vas zanima? Sledite naslednjim korakom:",
             "resources" => [
                 "posnemite video z uporabo Instagram Stories;",
                 "sledite",
                 "@CodeWeekEU na Instagramu;",
-                "v zgodbi s plesnim videom označite @CodeWeekEU in uporabite oznako #CodeWeekDance.",
+                "v zgodbi s plesnim videom označite @CodeWeekEU in uporabite oznako #EUCodeWeekDance.",
             ]
         ],
         "outro" => [
             "Zmagovalce bomo vsakodnevno izbrali in razglasili na našem Instagram kanalu v zgodbah, zato redno spremljajte svoja Instagram obvestila, morda se vam nasmehne sreča.",
-            "#CodeWeekDance temelji na skladbi",
+            "#EUCodeWeekDance temelji na skladbi",
             "Ode to Code",
             "Brendana Paolinija in plesu Biance Marie Berardi iz leta 2015 na podlagi zamisli Alessandra Bogliola, profesorja računalništva na univerzi v Urbinu."
         ],
@@ -123,7 +123,7 @@ return [
                 "odprite igro",
                 "in skenirajte kodo QR, s katero boste odprli aplikacijo Telegram in dobili prvi sklop navodil.",
                 "Za zmago morate rešiti deset programerskih izzivov in najti deset lokacij na zemljevidu Evrope, ki so povezane z razvojem programiranja in tehnologije.",
-                "Ko končate igro, delite svoj rezultat s prijatelji in pri tem uporabite oznako #CodeWeek ter prijatelje izzovite na igro in učenje o zgodovini programiranja. Bomo videli, kdo bo imel najboljši rezultat.",
+                "Ko končate igro, delite svoj rezultat s prijatelji in pri tem uporabite oznako #EUCodeWeek ter prijatelje izzovite na igro in učenje o zgodovini programiranja. Bomo videli, kdo bo imel najboljši rezultat.",
                 "Lov za zakladom v tednu programiranja je letošnja virtualna različica igre lov za zakladom v tednu programiranja EU, ki jo je razvil Alessandro Bogliolo, profesor računalništva na univerzi v Urbinu. Za več informacij o njegovi igri obiščite naš",
                 "blog."
 
@@ -145,11 +145,11 @@ return [
         "Profesor računalništva na univerzi v Urbinu in koordinator",
         "ambasadorjev tedna programiranja",
         "vam bo povedal več o virtualnem lovu za zakladom v tednu programiranja.",
-        "Spomnili vas bomo na nov izziv #CodeWeekDance.",
+        "Spomnili vas bomo na nov izziv #EUCodeWeekDance.",
         "Povezali se bomo tudi s šolami in učenci iz vse Evrope, ki bodo delili svoje zgodbe o programiranju in izmenjevali zamisli z gostujočimi govorniki.",
         "Tudi vi boste lahko delili svoje misli, zamisli in zastavljali vprašanja. Vse, kar morate storiti, je, da spremljate neposredni prenos,",
         "ki bo",
-        "8. oktobra 2020 od 17.00 do 18:30 po srednjeevropskem času, komentirajte in tvitajte pa z oznako #CodeWeek.",
+        "8. oktobra 2020 od 17.00 do 18:30 po srednjeevropskem času, komentirajte in tvitajte pa z oznako #EUCodeWeek.",
     ]
 ],
     "get-involved"=>[

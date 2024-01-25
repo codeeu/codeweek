@@ -6,7 +6,7 @@
 
         <section class="codeweek-banner about">
             <div class="text">
-                <h2>#CodeWeek</h2>
+                <h2>#EUCodeWeek</h2>
                 <h1>@lang('menu.values')</h1>
             </div>
             <div class="image">

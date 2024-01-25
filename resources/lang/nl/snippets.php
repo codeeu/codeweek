@@ -24,8 +24,8 @@ return [
     ],
     "dance" => [
         "menu" => "Dance Challenge",
-        "subtitle" => "Wie zei dat programmeurs niet konden dansen? We zullen het tegendeel bewijzen met de #CodeWeekDance challenge.",
-        "content" => "Iedereen op scholen, waaronder leraren, en bibliotheken, maar ook programmeerclubjes, bedrijven en overheden zijn uitgenodigd om de EU Code Week te vieren door een #CodeWeekDance-activiteit te organiseren en toe te voegen aan de kaart van de EU Code Week."
+        "subtitle" => "Wie zei dat programmeurs niet konden dansen? We zullen het tegendeel bewijzen met de #EUCodeWeekDance challenge.",
+        "content" => "Iedereen op scholen, waaronder leraren, en bibliotheken, maar ook programmeerclubjes, bedrijven en overheden zijn uitgenodigd om de EU Code Week te vieren door een #EUCodeWeekDance-activiteit te organiseren en toe te voegen aan de kaart van de EU Code Week."
     ],
     "treasure-hunt" => [
         "menu" => "Schattenzoektocht",

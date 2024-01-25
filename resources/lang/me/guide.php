@@ -4,11 +4,11 @@
 return [
 
     'title' => 'Smjernice',
-    'organise_activity' => 'Organizujte vaš događaj sa oznakom #CodeWeek',
+    'organise_activity' => 'Organizujte vaš događaj sa oznakom #EUCodeWeek',
     'register_activity' => 'Registrujte vaš događaj ovdje',
     'what' => [
         'title' => 'Šta je Evropska Nedjelja programiranja?',
-        'content' => '<p>Evropska Nedjelja programiranja je grass-roots (samostalni) pokret koji vode volonteri i koji podržava Evropska komisija. Svako – škole, predavači, biblioteke, programerski klubovi, poslovne organizacije, javne ustanove – može organizovati #CodeWeek događaj i dodati ga na <a href="/events">codeweek.eu</a> mapu.</p>'
+        'content' => '<p>Evropska Nedjelja programiranja je grass-roots (samostalni) pokret koji vode volonteri i koji podržava Evropska komisija. Svako – škole, predavači, biblioteke, programerski klubovi, poslovne organizacije, javne ustanove – može organizovati #EUCodeWeek događaj i dodati ga na <a href="/events">codeweek.eu</a> mapu.</p>'
     ],
     'what_you_need_organise' => [
         'title' => 'Šta vam je potrebno za organizaciju događaja?',
@@ -31,7 +31,7 @@ return [
             '1' => 'Na vama je da odaberete format vašeg događaja programiranja, ali preporučujemo da odvojite određeno <strong>vrijeme za praktičnu, neposrednu primjenu</strong>, kada učesnici mogu samostalno stvarati i/ili majstorisati sa hardverom.',
             '2' => 'Koristite <strong>alate i tehnologiju</strong> prilagođene vašoj ciljnoj grupi. Preporučujemo korišćenje <a href="http://codeweek.eu/resources/">dostupnih besplatnih izvora i materijala</a>.',
             '3' => 'Ohrabrite učesnike da na kraju događaja jedni drugima <strong>pokažu i predstave</strong> ono što su stvorili.',
-            '4' => '<strong>Širite vijesti!</strong> Promovišite i podijelite ono što ste radili tokom događaja preko društvenih medija koristeći oznaku #CodeWeek. Takođe, možete podijeliti i sa <a
+            '4' => '<strong>Širite vijesti!</strong> Promovišite i podijelite ono što ste radili tokom događaja preko društvenih medija koristeći oznaku #EUCodeWeek. Takođe, možete podijeliti i sa <a
                         href="https://www.facebook.com/groups/774720866253044/">Grupom za nastavnike Evropske Nedjelje programiranja</a> kao i na Tviteru (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Razgovarajte sa vašim prijateljima, kolegama edukatorima, lokalnim medijima, i izdajte saopštenje za javnost.',
             '5' => 'Ne zaboravite da <a href="/add">dodate vaš događaj</a> na <a href="/events">mapu Nedjelje programiranja</a>!',
         ]
@@ -51,7 +51,7 @@ return [
     ],
     'questions' => [
         'title' => 'Imate pitanja?',
-        'content' => '<p>Ukoliko imate pitanja o organizaciji i promociji vašeg #CodeWeek događaja, stupite u kontakt sa jednim od <a href="/ambassadors">ambasadora Evropske Nedjelje programiranja</a> iz vaše zemlje.</p>'
+        'content' => '<p>Ukoliko imate pitanja o organizaciji i promociji vašeg #EUCodeWeek događaja, stupite u kontakt sa jednim od <a href="/ambassadors">ambasadora Evropske Nedjelje programiranja</a> iz vaše zemlje.</p>'
     ]
 
 ];

@@ -296,7 +296,7 @@ return [
             'Link',
             'und den Lehrplan in englischer Sprache unter diesem',
             'Die Aktivitäten in diesem Kurs können einzeln und in beliebiger Reihenfolge durchgeführt werden',
-            'Die Lehrkraft kann vom Lernprozess ein Foto machen und unter dem Hashtag #CodeWeekChallengeGoogle #GrowWithGoogle auf Instagram teilen'
+            'Die Lehrkraft kann vom Lernprozess ein Foto machen und unter dem Hashtag #EUCodeWeekChallengeGoogle #GrowWithGoogle auf Instagram teilen'
         ],
         'materials' => [
             'Neben der Aktivitäten-Broschüre können bei manchen Aktivitäten weitere Materialien erforderlich oder nützlich sein.',
@@ -471,7 +471,7 @@ return [
         'instructions' => [
             'Zuerst erstellst du einen Plan und legst die Reihenfolge der Übungseinheiten fest. Anhand des Programmablaufplans programmierst du die RGB-LED des Calliope mini so, dass sie im vorab definierten Tempo eine der 5 Farben anzeigt. Für das Tempo erstellst du eine Variable, und Wiederholungen programmierst du mit Hilfe von Schleifen.',
             "Denke daran, falls du das Programm so umgesetzt hast, dass es dir gefällt, kannst du es auch mit uns unter info@calliope.cc teilen - wir sind gespannt, was du daraus machst! Übrigens verlosen wir unter allen Einsendungen 30 Calliope minis!",
-            "Teile den QR-Code deines Projekts auf Instagram, füge den Hashtag #CodeWeekChallenge hinzu und erwähne @CodeWeekEU..",
+            "Teile den QR-Code deines Projekts auf Instagram, füge den Hashtag #EUCodeWeekChallenge hinzu und erwähne @CodeWeekEU..",
         ],
         'example' => [
             'Nicht nur den ganzen Tag am Rechner sitzen: jetzt wird es sportlich.',
@@ -483,7 +483,7 @@ return [
 
 
     'common' => [
-        'share' => "Teilen Sie den Link oder QR - Code Ihres Projekts auf Instagram oder Facebook, fügen Sie den Hashtag #CodeWeekChallenge ein und erwähnen Sie @CodeWeekEU.",
+        'share' => "Teilen Sie den Link oder QR - Code Ihres Projekts auf Instagram oder Facebook, fügen Sie den Hashtag #EUCodeWeekChallenge ein und erwähnen Sie @CodeWeekEU.",
         'audience' => [
             "Lehrkräfte und Erzieher * innen",
             "Schüler * innen einer Grundschule(6 bis 12 Jahre)",

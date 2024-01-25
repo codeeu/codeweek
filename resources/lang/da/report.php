@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Rapportér dit #CodeWeek-arrangement',
+    'title' => 'Rapportér dit #EUCodeWeek-arrangement',
     'event_title' => 'Arrangementets titel',
     'number_required' => 'Angiv et cirkatal, også selvom du ikke har nøjagtige data.',
     'phrase1' => 'Du kan kun udfylde denne formular én gang! Kontrollér dine data omhyggeligt. Hvis du har lavet en fejl, ',

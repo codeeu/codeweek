@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => 'Προσθήκη της εκδήλωσής σου #CodeWeek',
+    'main_title' => 'Προσθήκη της εκδήλωσής σου #EUCodeWeek',
     'button' => 'Προσθήκη εκδήλωσης',
     'howto' => 'Πώς να διοργανώσεις τη δική σου εκδήλωση',
     'required' => 'Τα υποχρεωτικά πεδία σημειώνονται με αστερίσκο *. Μπορείς να προσθέσεις την καταχώριση της εκδήλωσης στη γλώσσα σου.',
