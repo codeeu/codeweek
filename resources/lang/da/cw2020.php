@@ -41,11 +41,11 @@ return [
 
     "dance" => [
         "title" => "Programmeringsugedans",
-        "subtitle" => "Hvem har sagt, at programmører ikke kan danse? For at fejre 2020-udgaven af programmeringsugen lancerer vi en ny aktivitet — #CodeWeekdance-udfordringen",
+        "subtitle" => "Hvem har sagt, at programmører ikke kan danse? For at fejre 2020-udgaven af programmeringsugen lancerer vi en ny aktivitet — #EUCodeWeekdance-udfordringen",
         "section1" => [
             "title" => "Hvem kan være med?",
             "content" => [
-                "Alle fra skoler, lærere og biblioteker til programmeringsklubber, virksomheder og offentlige myndigheder opfordres til at fejre EU's programmeringsuge 2020 ved at tilrettelægge en #CodeWeekdance-aktivitet og føje den til",
+                "Alle fra skoler, lærere og biblioteker til programmeringsklubber, virksomheder og offentlige myndigheder opfordres til at fejre EU's programmeringsuge 2020 ved at tilrettelægge en #EUCodeWeekdance-aktivitet og føje den til",
                 "programmeringsugekortet",
             ]
         ],
@@ -55,7 +55,7 @@ return [
         ],
         "activity1" => [
             "title" => "Programmer en ven eller en forælder — der er ikke behov for en computer",
-            "subtitle" => "Programmering giver dig mulighed for at udstede kommandoer til en elektronisk enhed. Men teknisk set har du ikke brug for en computer for at kunne programmere. I stedet kan du tage fat i en partner — det kan være din klassekammerat, en ven, en forælder eller endda en lærer og forklare, hvordan #CodeWeekDani skal udføres, og de skal så følge dine instrukser nøje",
+            "subtitle" => "Programmering giver dig mulighed for at udstede kommandoer til en elektronisk enhed. Men teknisk set har du ikke brug for en computer for at kunne programmere. I stedet kan du tage fat i en partner — det kan være din klassekammerat, en ven, en forælder eller endda en lærer og forklare, hvordan #EUCodeWeekDani skal udføres, og de skal så følge dine instrukser nøje",
             "resources" => [
                 "En vejledning fra Code.org i tilrettelæggelse af din dansefest uden computer",
                 "Læringsmateriale om, hvordan du kan programmere din menneske-robot",
@@ -65,9 +65,9 @@ return [
 
         "activity2" => [
             "title" => "Visuel programmering",
-            "subtitle" => "Programmer din kodeugedans med Scratch. Brug kodeugekaraktererne eller lav dine egne i Scratch og programmer dem til at udføre #CodeWeekDance.",
+            "subtitle" => "Programmer din kodeugedans med Scratch. Brug kodeugekaraktererne eller lav dine egne i Scratch og programmer dem til at udføre #EUCodeWeekDance.",
             "resources" => [
-                "Eksempel på et #CodeWeekDance-projekt i Scratch",
+                "Eksempel på et #EUCodeWeekDance-projekt i Scratch",
                 "Kodeugekaraktererne",
                 "En vejledning fra Code.org i, hvordan man giver en karakter liv",
                 "En vejledning fra Code.org i tilrettelæggelse af din dansefest",
@@ -75,7 +75,7 @@ return [
             ]
         ], "activity3" => [
             "title" => "Textbaseret programmering",
-            "subtitle" => "Skab #CodeWeekDance-temaet med Python eller JavaScript ved hjælp af kodebaserede platforme til musikskabelse såsom Earsketch eller Sonic Pi",
+            "subtitle" => "Skab #EUCodeWeekDance-temaet med Python eller JavaScript ved hjælp af kodebaserede platforme til musikskabelse såsom Earsketch eller Sonic Pi",
             "resources" => [
                 "En vejledning i, hvordan man skaber musik med EarSketch",
                 "En vejledning i, hvordan man skaber musik med Sonic Pi",
@@ -90,17 +90,17 @@ return [
             ]
         ], "activity5" => [
             "title" => "Live-danseudfordring",
-            "subtitle" => "Optag en video af dig selv, dit hold eller din robot under #CodeWeekDance, del den på Instagram og oplev, hvad det vil sige at gå viralt, og vind programmeringsuge-goodies! Interesseret? Følg disse trin:",
+            "subtitle" => "Optag en video af dig selv, dit hold eller din robot under #EUCodeWeekDance, del den på Instagram og oplev, hvad det vil sige at gå viralt, og vind programmeringsuge-goodies! Interesseret? Følg disse trin:",
             "resources" => [
                 "Optag videoen med Instagram Stories",
                 "Følg",
  "@CodeWeekEU på Instagram",
-                "Nævn @CodeWeekEU i din story med dansen og husk at bruge hashtagget #CodeWeekDance",
+                "Nævn @CodeWeekEU i din story med dansen og husk at bruge hashtagget #EUCodeWeekDance",
             ]
         ],
         "outro" => [
             "Vinderne vil blive valgt hver dag og meddelt på vores Instagram-kanal via Stories, så husk jævnligt at tjekke dine notifikationer, for det kunne være dig, der er heldig i dag",
-            "#CodeWeekDance er baseret på",
+            "#EUCodeWeekDance er baseret på",
             "Ode to Code",
             "komponeret af Brendan Paolini, og dansen er skabt af Bianca Maria Berardi i 2015, efter en ide af Alessandro Bogliolo, professor i computersystemer ved universitetet i Urbino"
         ],
@@ -123,7 +123,7 @@ return [
                 "åbne spillet",
                 "og scanne QR-koden, som vil føre dig til Telegram-app'en og give dig det første sæt instrukser",
                 "For at vinde skal du løse 10 programmeringsudfordringer og finde 10 placeringer på Europa-kortet, som spiller en rolle i programmeringens og teknologiens fremkomst",
-                "Når du har gennemført spillet, kan du dele din score med dine venner ved hjælp af #CodeWeek og udfordre dem til at spille og lære om programmeringens historie. Lad os se, hvem der får de højeste scorer",
+                "Når du har gennemført spillet, kan du dele din score med dine venner ved hjælp af #EUCodeWeek og udfordre dem til at spille og lære om programmeringens historie. Lad os se, hvem der får de højeste scorer",
                 "Programmeringsuge-skattejagten er den virtuelle af den originale EU-programmeringsuge-skattejagt, som oprindeligt blev udviklet af Alessandro Bogliolo, professor i computersystemer ved universitetet i Urbino. For at lære mere om hans oprindelige spil, kan du læse vores",
                 "blog"
 
@@ -145,11 +145,11 @@ return [
         "Professor i computersystemer ved universitetet i Urbino og koordinator for",
         "programmeringsugens ambassadører",
         "vil fortælle dig mere om programmeringsugens virtuelle skattejagt",
-        "Og xxx fortæller det nyeste om den nye #CodeWeekDance-udfordring",
+        "Og xxx fortæller det nyeste om den nye #EUCodeWeekDance-udfordring",
         "Vi vil også koble op til skoler og studerende fra hele Europa, som vil dele deres programmeringshistorier og udveksle ideer med gæstetalerne",
             "Du vil også få mulighed for at dele dine tanker og ideer og stille dine spørgsmål. Du skal blot stille ind på vores live stream på",
             "eller",
-            "den 8. oktober 2020, kl. 17:00-18.30 CET og kommentere eller tweete med hashtagget #CodeWeek",
+            "den 8. oktober 2020, kl. 17:00-18.30 CET og kommentere eller tweete med hashtagget #EUCodeWeek",
         ]
     ],
     "get-involved"=>[

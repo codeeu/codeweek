@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Rediger dit #CodeWeek-arrangement',
+    'title' => 'Rediger dit #EUCodeWeek-arrangement',
     'required_fields' => 'Obligatoriske felter er markeret med en stjerne *. Du må gerne tilføje arrangementet på dit lokale sprog.',
     'description' => 'Beskrivelse',
     'audience' => 'Målgruppe',

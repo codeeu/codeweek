@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Zgłoś swoje wydarzenie #CodeWeek',
+    'title' => 'Zgłoś swoje wydarzenie #EUCodeWeek',
     'event_title' => 'Tytuł wydarzenia',
     'number_required' => 'Podaj informacje szacunkowe, nawet jeżeli nie masz dokładnych danych.',
     'phrase1' => 'Możesz wypełnić ten formularz tylko raz! Sprawdź dokładnie wprowadzone dane. Jeżeli znajdziesz błąd, ',

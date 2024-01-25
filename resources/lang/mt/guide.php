@@ -4,11 +4,11 @@
 return [
 
     'title' => 'Gwida',
-    'organise_activity' => 'Organizza l-Attività Tiegħek ma’ #CodeWeek',
+    'organise_activity' => 'Organizza l-Attività Tiegħek ma’ #EUCodeWeek',
     'register_activity' => 'Irreġistra l-attività tiegħek hawnhekk',
     'what' => [
         'title' => 'X’inhi l-Ġimgħa tal-UE tal-Ikkowdjar?',
-        'content' => '<p>Il-Ġimgħa tal-UE tal-Ikkowdjar hija moviment fil-livell lokali mmexxi minn voluntiera u appoġġat mill-Kummissjoni Ewropea. Kulħadd – skejjel, għalliema, libreriji, klabbs tal-ikkowdjar, negozji, awtoritajiet pubbliċi – jista’ jorganizza avveniment ta’ #CodeWeek u jżidu fuq il-mappa <a href="/events">codeweek.eu</a></p>'
+        'content' => '<p>Il-Ġimgħa tal-UE tal-Ikkowdjar hija moviment fil-livell lokali mmexxi minn voluntiera u appoġġat mill-Kummissjoni Ewropea. Kulħadd – skejjel, għalliema, libreriji, klabbs tal-ikkowdjar, negozji, awtoritajiet pubbliċi – jista’ jorganizza avveniment ta’ #EUCodeWeek u jżidu fuq il-mappa <a href="/events">codeweek.eu</a></p>'
     ],
     'what_you_need_organise' => [
         'title' => 'X’għandek bżonn sabiex torganizza attività?',
@@ -31,7 +31,7 @@ return [
             '1' => 'Inti tiddeċiedi l-format tal-avveniment tal-ikkowdjar tiegħek, iżda aħna nirrakkomandaw li tinkludi xi <strong>ħin prattiku</strong>, fejn il-parteċipanti jistgħu joħoloqu xi ħaġa waħedhom u/jew jirranġaw xi ħardwer.',
             '2' => 'Tista’ tuża dawk l-<strong>għodod u teknoloġiji</strong> li tqis xierqa għall-grupp fil-mira tiegħek. Nirrakkomandaw li tuża <a href="http://codeweek.eu/resources/">materjal tas-sors miftuħ disponibbli bla ħlas</a>.',
             '3' => 'Ħeġġeġ lill-parteċipanti biex <strong>juru u jippreżentaw</strong> x’ħolqu lil xulxin fi tmiem l-avveniment tiegħek.',
-            '4' => '<strong>Xerred l-aħbar!</strong> Ippromwovi u aqsam dak li għamilt matul l-attività tiegħek fuq il-midja soċjali permezz tal-hashtag #CodeWeek. Tista’ wkoll taqsam fuq il-<a
+            '4' => '<strong>Xerred l-aħbar!</strong> Ippromwovi u aqsam dak li għamilt matul l-attività tiegħek fuq il-midja soċjali permezz tal-hashtag #EUCodeWeek. Tista’ wkoll taqsam fuq il-<a
                         href="https://www.facebook.com/groups/774720866253044/">grupp tal-Għalliema tal-Ġimgħa tal-UE tal-Ikkowdjar</a> u fuq Twitter (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Tkellem ma’ sħabek, edukaturi kollegi, l-istampa lokali, u agħmel stqarrija għall-istampa.',
             '5' => 'Tinsiex <a href="/add">iżżid l-attività tiegħek</a> fuq il-<a href="/events">mappa tal-Ġimgħa tal-Ikkowdjar</a>!',
         ]
@@ -51,7 +51,7 @@ return [
     ],
     'questions' => [
         'title' => 'Mistoqsijiet?',
-        'content' => '<p>Jekk għandek mistoqsijiet dwar l-organizzazzjoni u l-promozzjoni tal-avveniment tiegħek ta’ #CodeWeek, ikkuntattja wieħed mill-<a href="/ambassadors">Ambaxxaturi tal-Ġimgħa tal-UE tal-Ikkowdjar</a> minn pajjiżek.</p>'
+        'content' => '<p>Jekk għandek mistoqsijiet dwar l-organizzazzjoni u l-promozzjoni tal-avveniment tiegħek ta’ #EUCodeWeek, ikkuntattja wieħed mill-<a href="/ambassadors">Ambaxxaturi tal-Ġimgħa tal-UE tal-Ikkowdjar</a> minn pajjiżek.</p>'
     ]
 
 ];

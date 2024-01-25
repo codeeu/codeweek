@@ -4,11 +4,11 @@
 return [
 
     'title' => 'Przewodnik',
-    'organise_activity' => 'Zorganizuj własne wydarzenie z Tygodniem Kodowania #CodeWeek',
+    'organise_activity' => 'Zorganizuj własne wydarzenie z Tygodniem Kodowania #EUCodeWeek',
     'register_activity' => 'Zarejestruj swoje wydarzenie',
     'what' => [
         'title' => 'Czym jest Europejski Tydzień Kodowania?',
-        'content' => '<p>Europejski Tydzień Kodowania to oddolna inicjatywa realizowana przez wolontariuszy i wspierana przez Komisję Europejską. Każdy może zorganizować wydarzenie w ramach Tygodnia Kodowania #CodeWeek – szkoły, nauczyciele, biblioteki, kluby kodowania, przedsiębiorstwa, organy publiczne – i umieścić je na mapie wydarzeń <a href="/events">codeweek.eu</a>.</p>'
+        'content' => '<p>Europejski Tydzień Kodowania to oddolna inicjatywa realizowana przez wolontariuszy i wspierana przez Komisję Europejską. Każdy może zorganizować wydarzenie w ramach Tygodnia Kodowania #EUCodeWeek – szkoły, nauczyciele, biblioteki, kluby kodowania, przedsiębiorstwa, organy publiczne – i umieścić je na mapie wydarzeń <a href="/events">codeweek.eu</a>.</p>'
     ],
     'what_you_need_organise' => [
         'title' => 'Co jest potrzebne do organizacji wydarzenia?',
@@ -31,7 +31,7 @@ return [
             '1' => 'Format twojego wydarzenia zależy wyłącznie od ciebie. Zalecamy jednak, żeby część wydarzenia stanowiły <strong>praktyczne warsztaty</strong>, podczas których uczestnicy będą mogli samodzielnie coś stworzyć lub pomajsterkować przy sprzęcie.',
             '2' => 'Wykorzystaj <strong>narzędzia i technologie</strong> odpowiednie dla grupy docelowej twojego wydarzenia. Zalecamy skorzystanie z <a href="http://codeweek.eu/resources/">darmowych materiałów open source</a>.',
             '3' => 'Na koniec wydarzenia poproś uczestników o <strong>demonstrację i prezentację</strong> stworzonych przez nich prac.',
-            '4' => '<strong>Promuj inicjatywę!</strong> Promuj swoje wydarzenie i podziel się nim w mediach społecznościowych za pomocą hashtagu #CodeWeek. Możesz to zrobić także na <a
+            '4' => '<strong>Promuj inicjatywę!</strong> Promuj swoje wydarzenie i podziel się nim w mediach społecznościowych za pomocą hashtagu #EUCodeWeek. Możesz to zrobić także na <a
                         href="https://www.facebook.com/groups/774720866253044/">grupie nauczycieli Europejskiego Tygodnia Kodowania</a> i na Twitterze (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Porozmawiaj ze swoimi znajomymi, innymi nauczycielami, lokalną prasą oraz przygotuj komunikat prasowy.',
             '5' => 'Nie zapomnij o <a href="/add">dodaniu swojego wydarzenia</a> na <a href="/events">mapie Tygodnia Kodowania</a>.',
         ]
@@ -51,7 +51,7 @@ return [
     ],
     'questions' => [
         'title' => 'Jakieś pytania?',
-        'content' => '<p>Jeśli masz jakiekolwiek pytania dotyczące organizacji oraz promocji wydarzenia w ramach #CodeWeek, skontaktuj się z <a href="/ambassadors">Ambasadorami Europejskiego Tygodnia Kodowania</a> w swoim kraju.</p>'
+        'content' => '<p>Jeśli masz jakiekolwiek pytania dotyczące organizacji oraz promocji wydarzenia w ramach #EUCodeWeek, skontaktuj się z <a href="/ambassadors">Ambasadorami Europejskiego Tygodnia Kodowania</a> w swoim kraju.</p>'
     ]
 
 ];

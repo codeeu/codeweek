@@ -41,11 +41,11 @@ return [
 
     "dance" => [
         "title" => "Programmeerimisnädala tants",
-        "subtitle" => "Kes ütles, et programmeerijad ei oska tantsida? ELi programmeerimisnädala 2020 tähistamiseks esitame uudse väljakutse, milleks on #CodeWeekDance",
+        "subtitle" => "Kes ütles, et programmeerijad ei oska tantsida? ELi programmeerimisnädala 2020 tähistamiseks esitame uudse väljakutse, milleks on #EUCodeWeekDance",
         "section1" => [
             "title" => "Kes saavad osaleda?",
             "content" => [
-                "Koolid, õpetajad, raamatukogud, programmeerimisklubid, ettevõtjad ja ametiasutused saavad tähistada ELi programmeerimisnädalat 2020 – korraldada tantsuürituse teemaviitega #CodeWeekDance ning lisada selle",
+                "Koolid, õpetajad, raamatukogud, programmeerimisklubid, ettevõtjad ja ametiasutused saavad tähistada ELi programmeerimisnädalat 2020 – korraldada tantsuürituse teemaviitega #EUCodeWeekDance ning lisada selle",
                 "programmeerimisnädala kaardile",
             ]
         ],
@@ -55,7 +55,7 @@ return [
         ],
         "activity1" => [
             "title" => "Programmeerige oma sõber või sugulane – arvuti ei ole vajalik",
-            "subtitle" => "Programmeerides saate anda e-seadmele käsklusi. Kuid põhimõtteliselt ei ole programmeerimiseks arvutit vaja. Selle asemel kaasake partner – klassikaaslane, sõber, lapsevanem või isegi õpetaja – ja andke neile tantsuväljakutseks #CodeWeekDance vajalikud juhised, mida nad peavad täpselt järgima",
+            "subtitle" => "Programmeerides saate anda e-seadmele käsklusi. Kuid põhimõtteliselt ei ole programmeerimiseks arvutit vaja. Selle asemel kaasake partner – klassikaaslane, sõber, lapsevanem või isegi õpetaja – ja andke neile tantsuväljakutseks #EUCodeWeekDance vajalikud juhised, mida nad peavad täpselt järgima",
             "resources" => [
                 "„Juhtmevaba“ tantsuürituse korraldamise juhend veebisaidilt Code.org",
                 "„Inimroboti“ programmeerimise õpetus",
@@ -65,9 +65,9 @@ return [
 
         "activity2" => [
             "title" => "Visuaalne programmeerimine",
-            "subtitle" => "Programmeerige oma tants Scratchis. Kasutage programmeerimisnädala tegelasi või looge omad Scratchis ning programmeerige nad tantsuväljakutseks #CodeWeekDance.",
+            "subtitle" => "Programmeerige oma tants Scratchis. Kasutage programmeerimisnädala tegelasi või looge omad Scratchis ning programmeerige nad tantsuväljakutseks #EUCodeWeekDance.",
             "resources" => [
-                "Tantsuprojekti #CodeWeekDance näide Scratchis",
+                "Tantsuprojekti #EUCodeWeekDance näide Scratchis",
                 "Programmeerimisnädala tegelased",
                 "Tegelase animeerimise juhend veebisaidil Code.org",
                 "Tantsuürituse korraldamise juhend veebisaidil Code.org",
@@ -75,7 +75,7 @@ return [
             ]
         ], "activity3" => [
             "title" => "Tekstipõhine programmeerimine",
-            "subtitle" => "Looge väljakutse #CodeWeekDance tunnusmuusika Pythoni või JavaScripti abil, kasutades koodipõhiseid muusika loomise platvorme, nagu EarSketch või Sonic Pi",
+            "subtitle" => "Looge väljakutse #EUCodeWeekDance tunnusmuusika Pythoni või JavaScripti abil, kasutades koodipõhiseid muusika loomise platvorme, nagu EarSketch või Sonic Pi",
             "resources" => [
                 "Juhend muusika loomiseks – EarSketch",
                 "Juhend muusika loomiseks – Sonic Pi",
@@ -90,17 +90,17 @@ return [
             ]
         ], "activity5" => [
             "title" => "Tantsuväljakutse",
-            "subtitle" => "Tehke video endast, oma võistkonnast või oma robotist esitamas tantsu #CodeWeekDance, jagage seda levitamise eesmärgil Instagramis ja võite võita programmeerimisnädala auhindu! Olete huvitatud? Tehke nii:",
+            "subtitle" => "Tehke video endast, oma võistkonnast või oma robotist esitamas tantsu #EUCodeWeekDance, jagage seda levitamise eesmärgil Instagramis ja võite võita programmeerimisnädala auhindu! Olete huvitatud? Tehke nii:",
             "resources" => [
                 "Kasutage video salvestamiseks vahendit Instagram Stories",
                 "Jälgige kasutajat",
                 "@CodeWeekEU Instagramis",
-                "Mainige kasutajat @CodeWeekEU oma tantsu sisaldavas loos ja kasutage teemaviidet #CodeWeekDance",
+                "Mainige kasutajat @CodeWeekEU oma tantsu sisaldavas loos ja kasutage teemaviidet #EUCodeWeekDance",
             ]
         ],
         "outro" => [
             "Võitjad valitakse välja iga päev ja tehakse teatavaks meie Instagramis (Stories); seega jälgige oma teateid regulaarselt – võib-olla on täna õnne just teil",
-            "Tantsuväljakutse #CodeWeekDance taustal kõlab",
+            "Tantsuväljakutse #EUCodeWeekDance taustal kõlab",
             "Ode to Code",
             "mille looja on Brendan Paolini. Tantsuliigutused mõtles Urbino Ülikooli arvutisüsteemide professori Alessandro Bogliolo idee alusel 2015. aastal välja Bianca Maria Berardi"
         ],
@@ -123,7 +123,7 @@ return [
                 "avage mäng",
                 "ja skaneerige QR-kood, mis viib äppi Telegram ja annab teile esimesed juhised",
                 "Võitmiseks peate lahendama 10 programmeerimisprobleemi ja leidma Euroopa kaardil 10 kohta, mis on seotud programmeerimise ja tehnoloogia arenguga",
-                "Pärast mängu lõpetamist jagage oma tulemust sõpradega, kasutades teemaviidet #CodeWeek, ning esitage neile väljakutse mängimiseks ja programmeerimise ajalooga tutvumiseks. Vaatame, kes saab parima tulemuse",
+                "Pärast mängu lõpetamist jagage oma tulemust sõpradega, kasutades teemaviidet #EUCodeWeek, ning esitage neile väljakutse mängimiseks ja programmeerimise ajalooga tutvumiseks. Vaatame, kes saab parima tulemuse",
                 "Programmeerimisnädala aardejaht aasta virtuaalne versioon algsest ELi programmeerimisnädala aardejahist, mille töötas esmakordselt välja Urbino Ülikooli arvutisüsteemide professor Alessandro Bogliolo. Selleks et lugeda lisaks tema algse mängu kohta, külastage meie",
                 "blogi"
 
@@ -145,11 +145,11 @@ return [
             "Urbino Ülikooli arvutisüsteemide professor ja",
             "programmeerimisnädala saadikute koordinaator",
             "tutvustab programmeerimisnädala virtuaalset aardejahti",
-            "Ja xxx räägib uuest tantsuväljakutsest #CodeWeekDance",
+            "Ja xxx räägib uuest tantsuväljakutsest #EUCodeWeekDance",
             "Suhtleme ka koolide ja õpilastega kogu Euroopast, kes jagavad oma programmeerimislugusid ja vahetavad külalisesinejatega mõtteid",
             "Samuti avaneb teil võimalus jagada oma mõtteid ja ideid ning esitada küsimusi. Peate vaid vaatama meie otseülekannet rakendustes",
             "või",
-            "8. oktoobril 2020 kell 18.00–19.30 (Eesti aja järgi) ning kommenteerima või säutsuma teemaviitega #CodeWeek",
+            "8. oktoobril 2020 kell 18.00–19.30 (Eesti aja järgi) ning kommenteerima või säutsuma teemaviitega #EUCodeWeek",
         ]
     ],
     "get-involved" => [

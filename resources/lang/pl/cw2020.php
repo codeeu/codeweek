@@ -41,11 +41,11 @@ return [
 
     "dance" => [
         "title" => "Taniec Tygodnia Kodowania",
-        "subtitle" => "Kto powiedział, że programiści nie umieją tańczyć? Aby uczcić edycję Tygodnia Kodowania 2020, rzucamy nowe wyzwanie taneczne – #CodeWeekDance challenge",
+        "subtitle" => "Kto powiedział, że programiści nie umieją tańczyć? Aby uczcić edycję Tygodnia Kodowania 2020, rzucamy nowe wyzwanie taneczne – #EUCodeWeekDance challenge",
         "section1" => [
             "title" => "Kto może wziąć w nim udział?",
             "content" => [
-                "Zapraszamy wszystkich: szkoły, nauczycieli, biblioteki, kluby kodowania, przedsiębiorstwa i organy publiczne do świętowania unijnego Tygodnia Kodowania 2020. Wystarczy zorganizować zajęcia taneczne #CodeWeekDance i dodać je do",
+                "Zapraszamy wszystkich: szkoły, nauczycieli, biblioteki, kluby kodowania, przedsiębiorstwa i organy publiczne do świętowania unijnego Tygodnia Kodowania 2020. Wystarczy zorganizować zajęcia taneczne #EUCodeWeekDance i dodać je do",
                 "mapy Tygodnia Kodowania",
             ]
         ],
@@ -55,7 +55,7 @@ return [
         ],
         "activity1" => [
             "title" => "Zaprogramuj kolegę lub rodzica – komputer nie jest potrzebny",
-            "subtitle" => "Za pomocą kodowania wydajesz komendy urządzeniom elektronicznym. Z technicznego punktu widzenia nie potrzebujesz jednak komputera, aby móc kodować. Zaproś partnera – może to być kolega z klasy, przyjaciel, rodzic, a nawet nauczyciel – i pokaż mu, jak wykonywać taniec #CodeWeekDance. Pamiętaj, że trzeba dokładnie trzymać się kroków",
+            "subtitle" => "Za pomocą kodowania wydajesz komendy urządzeniom elektronicznym. Z technicznego punktu widzenia nie potrzebujesz jednak komputera, aby móc kodować. Zaproś partnera – może to być kolega z klasy, przyjaciel, rodzic, a nawet nauczyciel – i pokaż mu, jak wykonywać taniec #EUCodeWeekDance. Pamiętaj, że trzeba dokładnie trzymać się kroków",
             "resources" => [
                 "Przewodnik sporządzony przez Code.org na temat tego, jak zorganizować własną imprezę taneczną bez prądu",
                 "Parę słów o tym, jak zaprogramować ludzkiego robota",
@@ -65,9 +65,9 @@ return [
 
         "activity2" => [
             "title" => "Programowanie wizualne",
-            "subtitle" => "Zakoduj swój taniec Tygodnia Kodowania w Scratchu. Zastosuj postaci Tygodnia Kodowania lub stwórz własne w Scratchu i zaprogramuj je, żeby wykonywały taniec Tygodnia Kodowania #CodeWeekDance.",
+            "subtitle" => "Zakoduj swój taniec Tygodnia Kodowania w Scratchu. Zastosuj postaci Tygodnia Kodowania lub stwórz własne w Scratchu i zaprogramuj je, żeby wykonywały taniec Tygodnia Kodowania #EUCodeWeekDance.",
             "resources" => [
-                "Przykład projektu tanecznego #CodeWeekDance w języku Scratch",
+                "Przykład projektu tanecznego #EUCodeWeekDance w języku Scratch",
                 "Postaci Tygodnia Kodowania",
                 "Przewodnik sporządzony przez Code.org na temat tego, jak animować postać",
                 "Przewodnik sporządzony przez Code.org na temat tego, jak zorganizować własną imprezę taneczną",
@@ -75,7 +75,7 @@ return [
             ]
         ], "activity3" => [
             "title" => "Programowanie tekstowe",
-            "subtitle" => "Stwórz motyw muzyczny Tygodnia Kodowania #CodeWeekDance w języku programowania Python lub JavaScript przy użyciu platform do tworzenia muzyki za pomocą kodowania takich jak EarSketch czy Sonic Pi",
+            "subtitle" => "Stwórz motyw muzyczny Tygodnia Kodowania #EUCodeWeekDance w języku programowania Python lub JavaScript przy użyciu platform do tworzenia muzyki za pomocą kodowania takich jak EarSketch czy Sonic Pi",
             "resources" => [
                 "Wskazówki, jak tworzyć muzykę przy użyciu EarSketch",
                 "Wskazówki, jak tworzyć muzykę przy użyciu Sonic Pi",
@@ -90,17 +90,17 @@ return [
             ]
         ], "activity5" => [
             "title" => "Wyzwanie tańca na żywo",
-            "subtitle" => "Nagraj wideo, na którym Ty, Twoja drużyna lub Twój robot wykonujecie taniec Tygodnia Kodowania #CodeWeekDance, udostępnij je na Instagramie i przekonaj się, czy zdobędziesz popularność i wygrasz gadżety Tygodnia Kodowania! Jesteś zainteresowany/zainteresowana? Oto, co musisz zrobić:",
+            "subtitle" => "Nagraj wideo, na którym Ty, Twoja drużyna lub Twój robot wykonujecie taniec Tygodnia Kodowania #EUCodeWeekDance, udostępnij je na Instagramie i przekonaj się, czy zdobędziesz popularność i wygrasz gadżety Tygodnia Kodowania! Jesteś zainteresowany/zainteresowana? Oto, co musisz zrobić:",
             "resources" => [
                 "Nagraj wideo za pomocą Instagram Stories",
                 "Śledź",
                 "@CodeWeekEU na Instagramie",
-                "Umieść w swoim klipie tanecznym @CodeWeekEU i zamieść hashtag #CodeWeekDance",
+                "Umieść w swoim klipie tanecznym @CodeWeekEU i zamieść hashtag #EUCodeWeekDance",
             ]
         ],
         "outro" => [
             "Zwycięzcy będą wybierani codziennie i ogłaszani na naszym kanale na Instagramie za pośrednictwem Stories, więc sprawdzaj regularnie powiadomienia, bo szczęście może się do Ciebie uśmiechnąć właśnie dziś",
-            "Taniec Tygodnia Kodowania #CodeWeekDance opiera się na",
+            "Taniec Tygodnia Kodowania #EUCodeWeekDance opiera się na",
             "odzie do kodu (ang. „Ode to Code”)",
             "skomponowanej przez Brendana Paoliniego i choreografii wymyślonej przez Biankę Marię Berardi w 2015 r., na podstawie pomysłu Alessandro Bogliolo, profesora systemów komputerowych na Uniwersytecie w Urbino"
         ],
@@ -123,7 +123,7 @@ return [
                 "otwórz grę",
                 "i zeskanuj kod QR, który przeniesie Cię do aplikacji Telegram, gdzie znajdziesz pierwsze instrukcje",
                 "Aby wygrać, musisz rozwiązać 10 zagadek związanych z kodowaniem i znaleźć 10 miejsc na mapie Europy, które są powiązane z rozwojem kodowania i technologii",
-                "Po zakończeniu gry udostępnij swój wynik kolegom, używając hashtaga #CodeWeek, i ich też zaproś do zabawy i zapoznania się z historią kodowania. Ciekawe, kto uzyska najlepszy wynik",
+                "Po zakończeniu gry udostępnij swój wynik kolegom, używając hashtaga #EUCodeWeek, i ich też zaproś do zabawy i zapoznania się z historią kodowania. Ciekawe, kto uzyska najlepszy wynik",
                 "Podchody w ramach Tygodnia Kodowania to zainaugurowana wersja wirtualna oryginalnej gry, którą pierwotnie opracował Alessandro Bogliolo, profesor systemów komputerowych na Uniwersytecie w Urbino. Aby dowiedzieć się więcej o pierwotnej grze, odwiedź nasz",
                 "blog"
 
@@ -145,11 +145,11 @@ return [
             "profesor systemów komputerowych na Uniwersytecie w Urbino i koordynator",
             "ambasadorów Tygodnia Kodowania",
             "będzie opowiadał o wirtualnej grze w podchody w ramach Tygodnia Kodowania",
-            "A xxx zapowie nowe wyzwanie taneczne #CodeWeekDance",
+            "A xxx zapowie nowe wyzwanie taneczne #EUCodeWeekDance",
             "Będziemy również łączyć się ze szkołami i uczniami z całej Europy, którzy opowiedzą nam o swoich przygodach z kodowaniem i podzielą się pomysłami z naszymi prelegentami",
             "Każdy będzie mógł zabrać głos, przedstawić swoje pomysły i zadać pytanie. Wystarczy włączyć streaming na",
             "lub",
-            "8 października 2020 r. między godz. 17.00 a 18.30 czasu środkowoeuropejskiego i komentować lub tweetować z hashtagiem #CodeWeek",
+            "8 października 2020 r. między godz. 17.00 a 18.30 czasu środkowoeuropejskiego i komentować lub tweetować z hashtagiem #EUCodeWeek",
         ]
     ],
     "get-involved"=>[

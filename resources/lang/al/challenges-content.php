@@ -296,7 +296,7 @@ return [
             'lidhje',
             'si dhe Planin mësimor në anglisht në këtë',
             'Aktivitetet në këtë mësim mund të kryhen individualisht dhe në çdo rend',
-            'Mësuesi mund të marrë një fotografi të procesit mësimor dhe ta ndajë atë në Instagram duke përdorur #CodeWeekChallengeGoogle #GrowWithGoogle'
+            'Mësuesi mund të marrë një fotografi të procesit mësimor dhe ta ndajë atë në Instagram duke përdorur #EUCodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Përveç broshurës së aktiviteteve, disa aktivitete kërkojnë ose përfitojnë opsionalisht nga materiale shtesë.',
@@ -471,7 +471,7 @@ return [
         'instructions' => [
             'Për të filluar, krijoni një plan dhe përcaktoni rendin e njësive të ushtrimeve. Duke përdorur planin, programoni LED RGB të Calliope mini për të shfaqur një nga 5 ngjyrat me ritmin e paracaktuar. Më pas krijoni një variabël për ritmin dhe përsëritjet e programit, duke përdorur konture.',
             "Mbani mend, nëse e keni zbatuar programin në një mënyrë që ju pëlqen, mund ta ndani edhe me ne në info@calliope.cc - ne jemi të ngazëllyer të shohim se çfarë mendoni për të! Meqë ra fjala, ne po dhurojmë 30 mini Calliope nga paraqitjet!",
-            "Ndani kodin QR të projektit tuaj në Instagram, shtoni hashtagun #CodeWeekChallenge dhe përmendni @CodeWeekEU.",
+            "Ndani kodin QR të projektit tuaj në Instagram, shtoni hashtagun #EUCodeWeekChallenge dhe përmendni @CodeWeekEU.",
         ],
         'example' => [
             'Ndërsa jeni ulur në kompjuterin tuaj: mund të bëheni edhe sportiv.',
@@ -482,7 +482,7 @@ return [
     ]
 ,
     'common' => [
-        'share' => 'Shpërnda lidhjen ose kodin QR të projektit tënd në Instagram ose Facebook, shto hashtagun #CodeWeekChallenge dhe përmend @CodeWeekEU.',
+        'share' => 'Shpërnda lidhjen ose kodin QR të projektit tënd në Instagram ose Facebook, shto hashtagun #EUCodeWeekChallenge dhe përmend @CodeWeekEU.',
         'audience' => [
             'Mësuesit dhe edukatorët',
             'Nxënësit e shkollës fillore (6 deri në 12 vjeç)',

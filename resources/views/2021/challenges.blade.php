@@ -198,7 +198,7 @@
                 {{--                            <strong>@lang('challenges.bingo.4')</strong><br/>--}}
                 {{--                            <div class="mt-2">--}}
                 {{--                                @lang('challenges.bingo.5') <strong>@lang('challenges.bingo.6')</strong><br/>--}}
-                {{--                                @lang('challenges.bingo.7') <strong>#CodeWeekChallengesBingo</strong><br/>--}}
+                {{--                                @lang('challenges.bingo.7') <strong>#EUCodeWeekChallengesBingo</strong><br/>--}}
                 {{--                            </div>--}}
 
                 {{--                        </div>--}}

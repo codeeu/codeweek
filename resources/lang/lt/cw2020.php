@@ -41,11 +41,11 @@ return [
 
     "dance" => [
         "title" => "Programavimo savaitės šokis",
-        "subtitle" => "Kas sakė, kad programuotojai nemoka šokti? Paminėdami 2020 m. programavimo savaitę, pristatome naują veiklą – #CodeWeekDance iššūkį",
+        "subtitle" => "Kas sakė, kad programuotojai nemoka šokti? Paminėdami 2020 m. programavimo savaitę, pristatome naują veiklą – #EUCodeWeekDance iššūkį",
         "section1" => [
             "title" => "Kas gali dalyvauti?",
             "content" => [
-                "Visus, pradedant mokyklomis, mokytojais, bibliotekomis ir baigiant programavimo klubais, įmonėmis ir valdžios institucijomis, kviečiame paminint 2020 m. ES programavimo savaitę organizuoti #CodeWeekDance veiklą ir įtraukti ją į",
+                "Visus, pradedant mokyklomis, mokytojais, bibliotekomis ir baigiant programavimo klubais, įmonėmis ir valdžios institucijomis, kviečiame paminint 2020 m. ES programavimo savaitę organizuoti #EUCodeWeekDance veiklą ir įtraukti ją į",
                 "programavimo savaitės žemėlapį",
             ]
         ],
@@ -55,7 +55,7 @@ return [
         ],
         "activity1" => [
             "title" => "Programuok draugą ar vieną iš tėvų – kompiuterio tam nereikia",
-            "subtitle" => "Programuodamas gali duoti komandas elektroniniam įrenginiui. Tačiau iš esmės, norint programuoti kompiuterio nereikia. Vietoj jo pasitelk partnerį – tai gali būti tavo bendraklasis, draugas, vienas iš tėvų ar net mokytojas – ir duok jam nurodymus, kaip atlikti #CodeWeekDance judesius, o jis turi tiksliai juos vykdyti",
+            "subtitle" => "Programuodamas gali duoti komandas elektroniniam įrenginiui. Tačiau iš esmės, norint programuoti kompiuterio nereikia. Vietoj jo pasitelk partnerį – tai gali būti tavo bendraklasis, draugas, vienas iš tėvų ar net mokytojas – ir duok jam nurodymus, kaip atlikti #EUCodeWeekDance judesius, o jis turi tiksliai juos vykdyti",
             "resources" => [
                 "Code.org vadovas, kaip surengti spontanišką šokių vakarėlį",
                 "Keletas patarimų, kaip programuoti savo bičiulį-robotą",
@@ -65,9 +65,9 @@ return [
 
         "activity2" => [
             "title" => "Vaizdinis programavimas",
-            "subtitle" => "Programuok savo programavimo savaitės šokį naudodamasis „Scratch“. Naudok programavimo savaitės personažus arba susikurk savo personažą aplinkoje „Scratch“ ir užprogramuok jį atlikti #CodeWeekDance judesius.",
+            "subtitle" => "Programuok savo programavimo savaitės šokį naudodamasis „Scratch“. Naudok programavimo savaitės personažus arba susikurk savo personažą aplinkoje „Scratch“ ir užprogramuok jį atlikti #EUCodeWeekDance judesius.",
             "resources" => [
-                "„Scratch“ #CodeWeekDance projekto pavyzdys",
+                "„Scratch“ #EUCodeWeekDance projekto pavyzdys",
                 "Programavimo savaitės personažai",
                 "Code.org vadovas, kaip susikurti animuotą personažą",
                 "Code.org vadovas, kaip surengti šokių vakarėlį",
@@ -75,7 +75,7 @@ return [
             ]
         ], "activity3" => [
             "title" => "Tekstinis programavimas",
-            "subtitle" => "Sukurk #CodeWeekDance temą su „Python“ arba „JavaScript“, naudodamas kodines muzikos kūrimo platformas, pvz., „EarSketch“ arba „Sonic Pi“",
+            "subtitle" => "Sukurk #EUCodeWeekDance temą su „Python“ arba „JavaScript“, naudodamas kodines muzikos kūrimo platformas, pvz., „EarSketch“ arba „Sonic Pi“",
             "resources" => [
                 "Muzikos kūrimo su „EarSketch“ mokomoji medžiaga",
                 "Muzikos kūrimo su „Sonic Pi“ mokomoji medžiaga",
@@ -90,17 +90,17 @@ return [
             ]
         ], "activity5" => [
             "title" => "Gyvai atliekamo šokio iššūkis",
-            "subtitle" => "Įrašyk vaizdo įrašą, kuriame tu, tavo komanda arba tavo robotas atlieka #CodeWeekDance judesius, ir pasidalyk juo Instagrame – galbūt tavo vaizdo įrašas sulauks daugybės peržiūrų ir laimėsi vieną iš programavimo savaitės prizų! Susidomėjai? Atlik šiuos veiksmus:",
+            "subtitle" => "Įrašyk vaizdo įrašą, kuriame tu, tavo komanda arba tavo robotas atlieka #EUCodeWeekDance judesius, ir pasidalyk juo Instagrame – galbūt tavo vaizdo įrašas sulauks daugybės peržiūrų ir laimėsi vieną iš programavimo savaitės prizų! Susidomėjai? Atlik šiuos veiksmus:",
             "resources" => [
                 "Įrašyk vaizdo įrašą naudodamas „Instagram stories“",
                 "Instagrame tapk",
                 "@CodeWeekEU sekėju",
-                "Įkeldamas savo šokį paminėk @CodeWeekEU ir būtinai pažymėk saitažodį #CodeWeekDance",
+                "Įkeldamas savo šokį paminėk @CodeWeekEU ir būtinai pažymėk saitažodį #EUCodeWeekDance",
             ]
         ],
         "outro" => [
             "Laimėtojai bus renkami ir mūsų „Instagram Stories“ skelbiamos kasdien, todėl nepamiršk reguliariai tikrinti pranešimų – galbūt vieną dieną laimė nusišypsos būtent tau",
-            "#CodeWeekDance muziką – ",
+            "#EUCodeWeekDance muziką – ",
             "Odė kodui – ",
             "parašė Brendanas Paolini, o šokio judesius 2015 m. sukūrė Bianca Maria Berardi; idėjos autorius – Urbino universiteto kompiuterinių sistemų docentas Alessandro Bogliolo"
         ],
@@ -123,7 +123,7 @@ return [
                 "atsidaryk žaidimą",
                 "ir nuskaityk QR kodą – taip atsidarysi programėlę „Telegram“ ir galėsi susipažinti su pirmaisiais nurodymais",
                 "Norėdamas laimėti, turi išspręsti 10 programavimo uždavinių ir Europos žemėlapyje surasti 10 vietų, susijusių su programavimo ir technologijų ištakomis",
-                "Užbaigęs žaidimą, pasidalyk savo rezultatu su draugais naudodamas saitažodį #CodeWeek ir pakviesk juos taip pat prisijungti prie žaidimo bei sužinoti apie programavimo istoriją. Pažiūrėkime, kieno rezultatai bus geriausi",
+                "Užbaigęs žaidimą, pasidalyk savo rezultatu su draugais naudodamas saitažodį #EUCodeWeek ir pakviesk juos taip pat prisijungti prie žaidimo bei sužinoti apie programavimo istoriją. Pažiūrėkime, kieno rezultatai bus geriausi",
                 "Programavimo savaitės lobių paieškos – tai originalaus ES programavimo savaitės lobių paieškų žaidimo, kurį sukūrė Urbino universiteto kompiuterinių sistemų docentas Alessandro Bogliolo, virtuali versija. Daugiau apie originalią žaidimo versiją skaityk mūsų",
                 "tinklaraštyje"
 
@@ -145,11 +145,11 @@ return [
         "Urbino universiteto kompiuterinių sistemų docentas ir",
         "programavimo savaitės ambasadorių koordinatorius",
         "plačiau papasakos apie programavimo savaitės virtualias lobių paieškas",
-        "O xxx glaustai pristatys naująjį #CodeWeekDance iššūkį",
+        "O xxx glaustai pristatys naująjį #EUCodeWeekDance iššūkį",
         "Be to, bendrausime su mokyklomis ir moksleiviais visoje Europoje, kurie pasakos savo programavimo istorijas ir dalysis idėjomis su kviestiniais svečiais",
         "Tu taip pat turėsi progą pasidalyti mintimis ir idėjomis ar užduoti klausimų. Tereikia įsijungti tiesioginę transliaciją",
         "arba",
-        "2020 m. spalio 8 d. nuo 17 iki 18.30 val. Vidurio Europos laiku rašyti komentarus arba dalytis įrašais su saitažodžiu #CodeWeek",
+        "2020 m. spalio 8 d. nuo 17 iki 18.30 val. Vidurio Europos laiku rašyti komentarus arba dalytis įrašais su saitažodžiu #EUCodeWeek",
     ]
 ],
     "get-involved"=>[

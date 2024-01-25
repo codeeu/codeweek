@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Muuda oma #CodeWeek üritust',
+    'title' => 'Muuda oma #EUCodeWeek üritust',
     'required_fields' => 'Nõutavad väljad on tähistatud tärniga. Ürituse võid lisada oma kohalikus keeles.',
     'description' => 'Kirjeldus',
     'audience' => 'Kuulajad',

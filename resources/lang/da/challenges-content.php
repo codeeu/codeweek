@@ -300,7 +300,7 @@ return [
             'link',
             'og en læreplan på engelsk på dette',
             'Aktiviteterne i denne lektion kan gennemføres individuelt og i vilkårlig rækkefølge',
-            'Læreren kan tage billeder af læringsprocessen og dele dem på Instagram med #CodeWeekChallengeGoogle #GrowWithGoogle'
+            'Læreren kan tage billeder af læringsprocessen og dele dem på Instagram med #EUCodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Udover brochuren med aktiviteter er der ved nogle aktiviteter behov for, eller det kan være en fordel med, supplerende materialer.',
@@ -476,7 +476,7 @@ return [
         'instructions' => [
             'Start med at lave en plan og fastlægge rækkefølgen af øvelser. Brug skemaet til at programmere Calliope minis RGB-lysdiode til at vise en af de 5 farver med den fastsatte rytme. Opret så variablen for rytmen, og programmer gentagelser med loops.',
             "Husk, at hvis I har lavet et program, I er godt tilfredse med, må I meget gerne dele det med os på info@calliope.cc – vi glæder os til at se, hvad I finder på! Og forresten – vi forærer 30 Calliope minier til nogle af dem, der sender deres kode ind!",
-            "Del QR-koden til dit projekt på Instagram, brug hashtagget #CodeWeekChallenge, og nævn @CodeWeekEU.",
+            "Del QR-koden til dit projekt på Instagram, brug hashtagget #EUCodeWeekChallenge, og nævn @CodeWeekEU.",
         ],
         'example' => [
             'Mens man sidder ved computeren – kan man også være aktiv.',
@@ -488,7 +488,7 @@ return [
 
 
     'common' => [
-        'share' => 'Del linket eller QR-koden til dit projekt på Instagram eller Facebook, tilføj hashtagget #CodeWeekChallenge og nævn @CodeWeekEU.',
+        'share' => 'Del linket eller QR-koden til dit projekt på Instagram eller Facebook, tilføj hashtagget #EUCodeWeekChallenge og nævn @CodeWeekEU.',
         'audience' => [
             'Lærere og undervisere',
             'Elever i indskolingen/på mellemtrinnet (6 til 12 år)',

@@ -41,11 +41,11 @@ return [
 
     "dance" => [
         "title" => "Programmēšanas nedēļas deja",
-        "subtitle" => "Vai programmētāji tiešām nemāk dejot? Atzīmējot 2020. gada programmēšanas nedēļu, mēs ierosinām jaunu nodarbi – uzdevumu “programmēšanas nedēļas deja” #CodeWeekDance",
+        "subtitle" => "Vai programmētāji tiešām nemāk dejot? Atzīmējot 2020. gada programmēšanas nedēļu, mēs ierosinām jaunu nodarbi – uzdevumu “programmēšanas nedēļas deja” #EUCodeWeekDance",
         "section1" => [
             "title" => "Kas var iesaistīties?",
             "content" => [
-                "Ikviens – no skolām, skolotājiem, bibliotēkām līdz programmētāju klubiem, uzņēmumiem un varas iestādēm – tiek aicināts nosvinēt 2020. gada ES programmēšanas nedēļu, sarīkojot pasākumu #CodeWeekDance un to iekļaujot",
+                "Ikviens – no skolām, skolotājiem, bibliotēkām līdz programmētāju klubiem, uzņēmumiem un varas iestādēm – tiek aicināts nosvinēt 2020. gada ES programmēšanas nedēļu, sarīkojot pasākumu #EUCodeWeekDance un to iekļaujot",
                 "Programmēšanas nedēļas kartē",
             ]
         ],
@@ -55,7 +55,7 @@ return [
         ],
         "activity1" => [
             "title" => "Ieprogrammē kādu no draugiem vai vecākiem – dators nav vajadzīgs",
-            "subtitle" => "Programmēšana ļauj vadīt elektronisku ierīci. Bet tehniskā ziņā elektronika programmēšanai nav vajadzīga. Tās vietā “noķeriet” sev partneri – tas var būt klasesbiedrs, draugs, kāds no vecākiem vai pat skolotājiem – un dodiet viņam precīzus norādījumus par to, kā izpildāma programmēšanas nedēļas deja #CodeWeekDance",
+            "subtitle" => "Programmēšana ļauj vadīt elektronisku ierīci. Bet tehniskā ziņā elektronika programmēšanai nav vajadzīga. Tās vietā “noķeriet” sev partneri – tas var būt klasesbiedrs, draugs, kāds no vecākiem vai pat skolotājiem – un dodiet viņam precīzus norādījumus par to, kā izpildāma programmēšanas nedēļas deja #EUCodeWeekDance",
             "resources" => [
                 "Code.org norādījumi par beztehnoloģijas ballītes rīkošanu",
                 "Īsa pamācība cilvēkrobota programmēšanā",
@@ -65,9 +65,9 @@ return [
 
         "activity2" => [
             "title" => "Vizuālā programmēšana",
-            "subtitle" => "Programmē savu programmēšanas nedēļas deju lietotnē “Scratch”. Use the Code Week characters or make your own in Scratch and programme them to do the #CodeWeekDance.",
+            "subtitle" => "Programmē savu programmēšanas nedēļas deju lietotnē “Scratch”. Use the Code Week characters or make your own in Scratch and programme them to do the #EUCodeWeekDance.",
             "resources" => [
-                "“Scratch” programmēšanas nedēļas dejas #CodeWeekDance projekta piemērs",
+                "“Scratch” programmēšanas nedēļas dejas #EUCodeWeekDance projekta piemērs",
                 "Programmēšanas nedēļas personāžs",
                 "Code.org norādījumi tēla iedzīvināšanā",
                 "Code.org norādījumi deju vakara rīkošanā",
@@ -75,7 +75,7 @@ return [
             ]
         ], "activity3" => [
             "title" => "Tekstuālā programmēšana",
-            "subtitle" => "Izveido programmēšanas nedēļas dejas #CodeWeekDance tēmu programmēšanas valodā “Python” vai “JavaScript” un programmējamās mūzikas radīšanas platformā, kā “EarSketch” vai “Sonic Pi”",
+            "subtitle" => "Izveido programmēšanas nedēļas dejas #EUCodeWeekDance tēmu programmēšanas valodā “Python” vai “JavaScript” un programmējamās mūzikas radīšanas platformā, kā “EarSketch” vai “Sonic Pi”",
             "resources" => [
                 "Apmācība mūzikas veidošanā ar “EarSketch”",
                 "Apmācība mūzikas radīšanā ar “Sonic Pi”",
@@ -90,17 +90,17 @@ return [
             ]
         ], "activity5" => [
             "title" => "Dzīvās dejas uzdevums",
-            "subtitle" => "Uzņem video, kur tu, tava kompānija vai tavs robots redzams dejojam programmēšanas nedēļas deju #CodeWeekDance, to kopīgo tīklā “Instagram” un pamēģini kļūt populārs un laimēt kādas programmēšanas nedēļas balviņas! Ir interese? Dari soli pa solim:",
+            "subtitle" => "Uzņem video, kur tu, tava kompānija vai tavs robots redzams dejojam programmēšanas nedēļas deju #EUCodeWeekDance, to kopīgo tīklā “Instagram” un pamēģini kļūt populārs un laimēt kādas programmēšanas nedēļas balviņas! Ir interese? Dari soli pa solim:",
             "resources" => [
                 "Ieraksti video ar “Instagram Stories”",
                 "Seko",
                 "programmēšanas nedēļai @CodeWeekEU tīklā “Instagram”",
-                "piemini programmēšanas nedēļu @CodeWeekEU savā dejas videostāstā, noteikti izmantojot tēmturi #CodeWeekDance",
+                "piemini programmēšanas nedēļu @CodeWeekEU savā dejas videostāstā, noteikti izmantojot tēmturi #EUCodeWeekDance",
             ]
         ],
         "outro" => [
             "Uzvarētājus izraudzīs ik dienas un izziņos mūsu “Instagram” kanālā “Stāstos” (Stories), tāpēc neaizmirstiet regulāri pārskatīt saņemtos paziņojumus – kādu dienu var laimēties",
-            "Deja #CodeWeekDance balstās uz",
+            "Deja #EUCodeWeekDance balstās uz",
             "Odu kodam",
             "ko 2015. gadā komponējis Brendans Paolīni, bet deju ir izveidojusi Bjanka Marija Berardi, ideju aizņemdamās no Urbīno Universitātes datorsistēmu profesora Alesandro Boljolo"
         ],
@@ -123,7 +123,7 @@ return [
                 "spēli atver",
                 "un ielasa kvadrātkodu, kas aizvedīs uz lietotni “Telegram” un dos pirmos norādījumus",
                 "Lai uzvarētu, jāizpilda 10 programmēšanas uzdevumi un Eiropas kartē jāsameklē 10 vietas, kas saistās ar programmēšanas izcelšanos un tehnoloģiju",
-                "Pēc spēles kopīgojiet savu rezultātu ar draugiem, izmantojot tēmturi #CodeWeek, un mudiniet arī viņus uzspēlēt un kaut ko iemācīties par programmēšanas vēsturi. Redzēs, kuram būs labākais rezultāts.",
+                "Pēc spēles kopīgojiet savu rezultātu ar draugiem, izmantojot tēmturi #EUCodeWeek, un mudiniet arī viņus uzspēlēt un kaut ko iemācīties par programmēšanas vēsturi. Redzēs, kuram būs labākais rezultāts.",
                 "“Programmēšanas nedēļas bagātību medības” ir Urbīno Universitātes datorsistēmu profesora Alesandro Boljolo izstrādāto sākotnējo ES programmēšanas nedēļas bagātību medību. gada virtuālā versija Varat uzzināt vairāk par viņa spēles sākotnējo versiju, iegriežoties mūsu",
                 "emuārā"
 
@@ -145,11 +145,11 @@ return [
             "Urbīno Universitātes datorsistēmu profesors un",
             "programmēšanas nedēļas sūtņu koordinators",
             "sīkāk pastāstīs par programmēšanas nedēļas virtuālajām bagātību medībām",
-            "Un xxx jūs uzmundrinās pirms #CodeWeekDance uzdevuma izpildes",
+            "Un xxx jūs uzmundrinās pirms #EUCodeWeekDance uzdevuma izpildes",
             "Mēs arī sazināsimies ar skolām un studentiem dažādās Eiropas malās, kuri dalīsies programmēšanas stāstos un apmainīsies domām ar viesrunātājiem",
             "Arī jums būs iespēja kopīgot savas domas un idejas un uzdot jautājumus. Jums tikai jāpieslēdzas mūsu tiešstraumei",
             "vai",
-            "2020. gada 8. oktobrī plkst. 17.00–18.30 CET jāizsakās vai jātvīto ar tēmturi #CodeWeek",
+            "2020. gada 8. oktobrī plkst. 17.00–18.30 CET jāizsakās vai jātvīto ar tēmturi #EUCodeWeek",
         ]
     ],
     "get-involved" => [

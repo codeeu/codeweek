@@ -24,8 +24,8 @@ return [
     ],
     "dance" => [
         "menu" => "Taneční výzva",
-        "subtitle" => "Kdo říká, že programátoři neumí tancovat? Dokážeme pravý opak s taneční výzvou #CodeWeekDance.",
-        "content" => "Oslavit Evropský týden programování tím, že zorganizuje akci #CodeWeekDance, může každý, od škol, učitelů a knihoven až po kroužky programování, podniky a veřejné orgány. Akci pak stačí přidat na mapu týdne programování."
+        "subtitle" => "Kdo říká, že programátoři neumí tancovat? Dokážeme pravý opak s taneční výzvou #EUCodeWeekDance.",
+        "content" => "Oslavit Evropský týden programování tím, že zorganizuje akci #EUCodeWeekDance, může každý, od škol, učitelů a knihoven až po kroužky programování, podniky a veřejné orgány. Akci pak stačí přidat na mapu týdne programování."
     ],
     "treasure-hunt" => [
         "menu" => "Hledání pokladu",

@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => 'Lisää #CodeWeek-tapahtuma.',
+    'main_title' => 'Lisää #EUCodeWeek-tapahtuma.',
     'button' => 'Lisää tapahtuma',
     'howto' => 'Miten järjestän tapahtuman?',
     'required' => 'Pakolliset kentät on merkitty tähdellä *. Voit lisätä tapahtumia luetteloon paikallisella kielellä.',

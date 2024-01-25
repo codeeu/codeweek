@@ -300,7 +300,7 @@ return [
             'lingil',
             'ja tunnikava (inglise keeles) leiate sellelt lingilt',
             'Selle õppetunni tegevusi saab teha üksi ja mis tahes järjekorras.',
-            'Õpetaja saab õppimist pildistada ja jagada pilti Instagramis teemaviitega #CodeWeekChallengeGoogle #GrowWithGoogle'
+            'Õpetaja saab õppimist pildistada ja jagada pilti Instagramis teemaviitega #EUCodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Lisaks tegevuste brošüürile on ka lisamaterjale, mida on mõne tegevuse juures vaja või mis neid täiendavad.',
@@ -473,7 +473,7 @@ return [
         'instructions' => [
             'Alustuseks koostage kava ja tehke kindlaks harjutuste järjestus. Programmeerige Calliope mini RGB LED-i kuvama ühe viiest värvist ettemääratud tempos. Seejärel looge ahelaid kasutades tempo ja programmi korduste muutuja.',
             "Pidage meeles, et kui olete programmi soovitud viisil rakendanud, saate seda jagada ka meiega aadressil info@calliope.cc – oleme põnevil, mida te selle abil loote! Muuseas, me jagame esitatud tööde vahel 30 Calliope mini!",
-            "Jagage oma projekti QR-koodi Instagramis, lisage teemaviide #CodeWeekChallenge ja mainige @CodeWeekEU-d.",
+            "Jagage oma projekti QR-koodi Instagramis, lisage teemaviide #EUCodeWeekChallenge ja mainige @CodeWeekEU-d.",
         ],
         'example' => [
             'Võite olla sportlik ka oma arvuti taga istudes.',
@@ -485,7 +485,7 @@ return [
 
 
     'common' => [
-        'share' => 'Jagage oma projekti linki või QR-koodi Instagramis või Facebookis, lisage teemaviide #CodeWeekChallenge ja märge @CodeWeekEU.',
+        'share' => 'Jagage oma projekti linki või QR-koodi Instagramis või Facebookis, lisage teemaviide #EUCodeWeekChallenge ja märge @CodeWeekEU.',
         'audience' => [
             'õpetajad ja haridustöötajad',
             'algkooli ja põhikooli esimese astme õpilased (6–12aastased)',

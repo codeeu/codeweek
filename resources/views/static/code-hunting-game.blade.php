@@ -6,7 +6,7 @@
 
         <section class="codeweek-banner about">
             <div class="text">
-                <h2>#CodeWeek</h2>
+                <h2>#EUCodeWeek</h2>
                 <h1>Code Hunting Game</h1>
                     <h4>
                         <div>
