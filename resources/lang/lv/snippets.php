@@ -24,8 +24,8 @@ return [
     ],
     "dance" => [
         "menu" => "Deju izaicinājums",
-        "subtitle" => "Kas teica, ka programmētāji neprot dejot? Mēs pierādīsim pretējo ar #CodeWeekDance izaicinājumu.",
-        "content" => "Ikviens — no skolām, skolotājiem un bibliotēkām līdz programmēšanas klubiem, uzņēmumiem un valsts iestādēm — tiek aicināts atzīmēt ES Programmēšanas nedēļu, organizējot #CodeWeekDance pasākumu un pievienojot to programmēšanas nedēļas kartei."
+        "subtitle" => "Kas teica, ka programmētāji neprot dejot? Mēs pierādīsim pretējo ar #EUCodeWeekDance izaicinājumu.",
+        "content" => "Ikviens — no skolām, skolotājiem un bibliotēkām līdz programmēšanas klubiem, uzņēmumiem un valsts iestādēm — tiek aicināts atzīmēt ES Programmēšanas nedēļu, organizējot #EUCodeWeekDance pasākumu un pievienojot to programmēšanas nedēļas kartei."
     ],
     "treasure-hunt" => [
         "menu" => "Dārgumu meklēšana",

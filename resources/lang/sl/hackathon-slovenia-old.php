@@ -152,7 +152,7 @@ return [
         12 => [
             'title' => 'O CODEWEEK.EU',
             'content' => [
-                'Evropski teden programiranja (#CodeWeek) je množično gibanje, ki ga vodijo prostovoljci, da bi z aktivnostmi, povezanimi  s programiranjem in računalništvom, spodbujali digitalno pismenost. Teden navdihuje in pritegne k raziskovanju novih idej in inovacij za prihodnost. Aktivnosti v',
+                'Evropski teden programiranja (#EUCodeWeek) je množično gibanje, ki ga vodijo prostovoljci, da bi z aktivnostmi, povezanimi  s programiranjem in računalništvom, spodbujali digitalno pismenost. Teden navdihuje in pritegne k raziskovanju novih idej in inovacij za prihodnost. Aktivnosti v',
                 'evropskem tednu programiranja',
                 'potekajo po vsem svetu med 9. in 24. oktobrom.',
                 'Tako naj bi hekaton evropskega tedna programiranja pokazal, kako konkretne rešitve zaživijo s pomočjo ustvarjalnosti, navdušenja, svežih idej in programiranja mladih. Hekatone ustvarja in soorganizira:',

@@ -296,7 +296,7 @@ return [
             'saitē',
             'savukārt nodarbību plānu angļu valodā — šajā',
             'Šīs nodarbības aktivitātes var pildīt individuāli un jebkurā secībā',
-            'Skolotājs var uzņemt fotoattēlus no mācību procesa un dalīties ar tām Instagram, izmantojot #CodeWeekChallengeGoogle #GrowWithGoogle'
+            'Skolotājs var uzņemt fotoattēlus no mācību procesa un dalīties ar tām Instagram, izmantojot #EUCodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Papildus aktivitāšu bukletam dažām aktivitātēm ir nepieciešami papildu materiāli vai tās pēc izvēles var uzlabot ar papildu materiāliem.',
@@ -471,7 +471,7 @@ return [
         'instructions' => [
             'Lai sāktu, izveidojiet plānu un nosakiet vingrojumu posmu secību. Izmantojot grafiku, ieprogrammējiet Calliope mini RGB LED, lai parādītu vienu no 5 krāsām iepriekš noteiktajā tempā. Tad izveidojiet mainīgo lielumu tempam un programmas atkārtojumiem, izmantojot cilpas.',
             'Atcerieties, ka, ja esat izveidojis programmu tā, kā jums patīk, varat arī to kopīgot ar mums, izmantojot adresi info@calliope.cc – mēs ļoti vēlamies uzzināt, kā jūs to izmantojat! Starp citu, 30 iesūtīto darbu autori saņems Calliope mini!',
-            'Kopīgojiet Instagram sava projekta QR kodu, pievienojiet tēmturi #CodeWeekChallenge un pieminiet @CodeWeekEU.',
+            'Kopīgojiet Instagram sava projekta QR kodu, pievienojiet tēmturi #EUCodeWeekChallenge un pieminiet @CodeWeekEU.',
         ],
         'example' => [
             'Kamēr sēžat pie datora, varat arī pasportot.',
@@ -485,7 +485,7 @@ return [
 
     ,
     'common' => [
-        'share' => 'Kopīgo sava projekta saiti vai QR kodu Instagram vai Facebook, pievieno mirkļbirku #CodeWeekChallenge un atzīmē @CodeWeekEU.',
+        'share' => 'Kopīgo sava projekta saiti vai QR kodu Instagram vai Facebook, pievieno mirkļbirku #EUCodeWeekChallenge un atzīmē @CodeWeekEU.',
         'audience' => [
             'Skolotāji un pedagogi',
             'Sākumskolas skolēni (6 līdz 12 gadi)',

@@ -296,7 +296,7 @@ return [
             'täältä',
             'ja englanninkielisen tuntisuunnitelman',
             'Oppitunnin tehtävät voidaan suorittaa yksittäin missä järjestyksessä tahansa',
-            'Opettaja voi ottaa kuvan oppimisprosessista ja jakaa sen Instagramissa aihetunnisteella #CodeWeekChallengeGoogle #GrowWithGoogle'
+            'Opettaja voi ottaa kuvan oppimisprosessista ja jakaa sen Instagramissa aihetunnisteella #EUCodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Tehtäväkirjasen lisäksi joissakin tehtävissä on tarpeen tai suositeltavaa käyttää lisäaineistoja.',
@@ -471,7 +471,7 @@ return [
         'instructions' => [
             'Tee ensin suunnitelma ja päätä, missä järjestyksessä kunto-ohjelman eri harjoitukset toistetaan. Ohjelmoi Calliope minin RGB LED -valo suunnitelman avulla niin, että se näyttää jonkin viidestä väristä määritetyllä nopeudella. Luo sitten nopeudelle muuttuja ja ohjelmoi toistot käyttäen silmukoita.',
             "Olemme kiinnostuneita näkemään, millaisen prototyypin sait aikaan. Jos olet tyytyväinen lopputulokseen, voit jakaa sen meille lähettämällä sähköpostia osoitteeseen info@calliope.cc. Palkitsemme 30 osallistujaa Calliope mini -laitteilla!",
-            "Jaa projektisi QR-koodi Instagramissa, lisää aihetunniste #CodeWeekChallenge ja mainitse @CodeWeekEU.",
+            "Jaa projektisi QR-koodi Instagramissa, lisää aihetunniste #EUCodeWeekChallenge ja mainitse @CodeWeekEU.",
         ],
         'example' => [
             'Voit pitää huolta kunnostasi myös istuessasi tietokoneen äärellä.',
@@ -482,7 +482,7 @@ return [
     ]
 ,
     'common' => [
-        'share' => 'Jaa projektisi QR-koodi Instagramissa tai Facebookissa, lisää aihetunniste #CodeWeekChallenge ja mainitse @CodeWeekEU.',
+        'share' => 'Jaa projektisi QR-koodi Instagramissa tai Facebookissa, lisää aihetunniste #EUCodeWeekChallenge ja mainitse @CodeWeekEU.',
         'audience' => [
             'Opettajat',
             'Peruskoulun alaluokkien oppilaat (6–12-vuotiaat)',

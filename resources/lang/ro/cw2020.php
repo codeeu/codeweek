@@ -41,11 +41,11 @@ return [
 
     "dance" => [
         "title" => "Dans în Săptămâna programării",
-        "subtitle" => "Cine a spus că programatorii nu pot dansa? Pentru a sărbători ediția din 2020 a Săptămânii programării, lansăm o nouă activitate — concursul #CodeWeekDance",
+        "subtitle" => "Cine a spus că programatorii nu pot dansa? Pentru a sărbători ediția din 2020 a Săptămânii programării, lansăm o nouă activitate — concursul #EUCodeWeekDance",
         "section1" => [
             "title" => "Cine poate participa?",
             "content" => [
-                "Oricine. Școlile, profesorii, bibliotecile, cluburile de programare, întreprinderile și autoritățile publice sunt invitate să sărbătorească Săptămâna UE a programării 2020, prin organizarea unei activități #CodeWeekDance și să o adauge pe",
+                "Oricine. Școlile, profesorii, bibliotecile, cluburile de programare, întreprinderile și autoritățile publice sunt invitate să sărbătorească Săptămâna UE a programării 2020, prin organizarea unei activități #EUCodeWeekDance și să o adauge pe",
                 "harta Săptămânii programării",
             ]
         ],
@@ -55,7 +55,7 @@ return [
         ],
         "activity1" => [
             "title" => "Programează un prieten sau un părinte - nu e nevoie de computer",
-            "subtitle" => "Programarea vă permite să dați comenzi unui dispozitiv electronic. Dar, din punct de vedere tehnic, nu aveți nevoie de un computer pentru a putea programa. În schimb, puteți să vă alegeți un partener – un coleg de clasă, un prieten, un părinte sau chiar un profesor, și să îi dați instrucțiuni pentru dansul #CodeWeekDance, instrucțiuni pe care trebuie să le urmeze cu strictețe",
+            "subtitle" => "Programarea vă permite să dați comenzi unui dispozitiv electronic. Dar, din punct de vedere tehnic, nu aveți nevoie de un computer pentru a putea programa. În schimb, puteți să vă alegeți un partener – un coleg de clasă, un prieten, un părinte sau chiar un profesor, și să îi dați instrucțiuni pentru dansul #EUCodeWeekDance, instrucțiuni pe care trebuie să le urmeze cu strictețe",
             "resources" => [
                 "Ghid redactat de Code.org pentru a vă organiza petrecerea fără utilizarea tehnologiei (unplugged)",
                 "Un modul de învățare a felului  în care să vă programați robotul umanoid",
@@ -65,9 +65,9 @@ return [
 
         "activity2" => [
             "title" => "Programare vizuală ",
-            "subtitle" => "Programează-ți dansul din Săptămâna programării în limbajul de programare Scratch. Utilizează personajele Săptămânii programării sau creează-ți propriile personaje în limbajul Scratch și programează-le pentru #CodeWeekDance",
+            "subtitle" => "Programează-ți dansul din Săptămâna programării în limbajul de programare Scratch. Utilizează personajele Săptămânii programării sau creează-ți propriile personaje în limbajul Scratch și programează-le pentru #EUCodeWeekDance",
             "resources" => [
-                "Un exemplu de proiect #CodeWeekDance în Scratch",
+                "Un exemplu de proiect #EUCodeWeekDance în Scratch",
                 "Personajele Săptămânii programării",
                 "Ghid redactat de Code.org cu privire la modul de animare a unui personaj ",
                 "Ghid redactat Code.org cu privire la modul în care să vă organizați petrecerea",
@@ -75,7 +75,7 @@ return [
             ]
         ], "activity3" => [
             "title" => "Programare sub formă de text",
-            "subtitle" => "Produceți tema #CodeWeekDance cu Python sau cu JavaScript, utilizând platforme de creare a muzicii bazate pe coduri precum EarSketch sau Sonic Pi",
+            "subtitle" => "Produceți tema #EUCodeWeekDance cu Python sau cu JavaScript, utilizând platforme de creare a muzicii bazate pe coduri precum EarSketch sau Sonic Pi",
             "resources" => [
                 "Tutorial privind modul în care se produce muzică cu ajutorul EarSketch",
                 "Tutorial privind modul în care se creează muzică cu ajutorul Sonic Pi",
@@ -90,17 +90,17 @@ return [
             ]
         ], "activity5" => [
             "title" => "Live Dance Challenge",
-            "subtitle" => "Faceți o înregistrare video cu voi, cu echipa sau cu robotul vostru când dansați #CodeWeekDance și distribuiți-o pe Instagram. Aveți astfel o șansă să devină virală și să câștigați cadouri oferite în Săptămâna programării! Sunteți interesat? Urmați pașii de mai jos:",
+            "subtitle" => "Faceți o înregistrare video cu voi, cu echipa sau cu robotul vostru când dansați #EUCodeWeekDance și distribuiți-o pe Instagram. Aveți astfel o șansă să devină virală și să câștigați cadouri oferite în Săptămâna programării! Sunteți interesat? Urmați pașii de mai jos:",
             "resources" => [
                 "Înregistrați filmul video utilizând Instagram Stories",
                 "Urmăriți",
                 "@CodeWeekEU pe Instagram",
-                "Menționați @CodeWeekEU în povestea voastră de pe Instagram în care ați inclus dansul și aveți grijă să folosiți hashtagul #CodeWeekDance",
+                "Menționați @CodeWeekEU în povestea voastră de pe Instagram în care ați inclus dansul și aveți grijă să folosiți hashtagul #EUCodeWeekDance",
             ]
         ],
         "outro" => [
             "Selecția câștigătorilor va avea loc zilnic, iar aceștia vor fi anunțați pe canalul nostru Instagram la Stories, deci nu uitați să vă verificați periodic notificările, s-ar putea să aveți noroc chiar azi ",
-            "#CodeWeekDance se bazează pe",
+            "#EUCodeWeekDance se bazează pe",
             "Odă programării",
             "compusă de Brendan Paolini, iar dansul a fost realizat de Bianca Maria Berardi în 2015, pornind de la o idee a lui Alessandro Bogliolo, profesor de sisteme informatice la Universitatea din Urbino"
         ],
@@ -123,7 +123,7 @@ return [
                 "deschideți jocul",
                 "și scanați codul QR care vă va duce la aplicația Telegram și vă va da primul set de instrucțiuni",
                 "Pentru a câștiga, trebuie să rezolvați 10 probleme de programare și să găsiți 10 locuri pe harta Europei care sunt legate de dezvoltarea programării și tehnologiei",
-                "După ce finalizați jocul, comunicați punctajul pe care l-ați obținut prietenilor voștri utilizând #CodeWeek și provocați-i să joace și ei și să afle mai multe despre istoria programării. Haideți să vedem cine obține cele mai bune rezultate",
+                "După ce finalizați jocul, comunicați punctajul pe care l-ați obținut prietenilor voștri utilizând #EUCodeWeek și provocați-i să joace și ei și să afle mai multe despre istoria programării. Haideți să vedem cine obține cele mai bune rezultate",
                 "Vânătoarea de comori din Săptămâna programării este versiunea virtuală a Vânătorii de comori originale din Săptămâna europeană a programării care a fost creată pentru prima dată de Alessandro Bogliolo, profesor de sisteme informatice la Universitatea din Urbino. Pentru a afla mai multe despre jocul său original, vizitați",
                 "blogul nostru"
 
@@ -145,11 +145,11 @@ return [
             "profesor de sisteme informatice la Universitatea din Urbino și coordonatorul",
             "ambasadorilor Săptămânii programării",
             " vă va spune mai multe despre Vânătoarea virtuală de comori din Săptămâna programării",
-            "iar xxx vă va oferi informațiile preliminare privind noul concurs #CodeWeekDance",
+            "iar xxx vă va oferi informațiile preliminare privind noul concurs #EUCodeWeekDance",
             "Vom intra, de asemenea, în legătură cu școli și elevi din întreaga Europă, care ne vor împărtăși experiențele lor privind programarea și vor face schimb de idei cu vorbitorii invitați",
             "De asemenea, veți avea ocazia să împărtășiți din gândurile și ideile voastre și să adresați întrebări Tot ce aveți de făcut este să urmăriți transmisia noastră în direct pe",
             "sau",
-            "pe 8 octombrie 2020 între orele 17:00-18.30 CET și să formulați comentarii sau să postați mesaje Twitter cu hashtagul #CodeWeek",
+            "pe 8 octombrie 2020 între orele 17:00-18.30 CET și să formulați comentarii sau să postați mesaje Twitter cu hashtagul #EUCodeWeek",
         ]
     ],
     "get-involved" => [

@@ -24,8 +24,8 @@ return [
     ],
     "dance" => [
         "menu" => "Provocarea dansului",
-        "subtitle" => "Cine a spus că programatorii nu pot dansa? Prin provocarea #CodeWeekDance le vom dovedi că se înșală.",
-        "content" => "Oricine. Școlile, profesorii, bibliotecile, cluburile de programare, întreprinderile și autoritățile publice sunt invitate să sărbătorească Săptămâna UE a programării prin organizarea unei activități #CodeWeekDance și să o adauge pe harta Săptămânii programării."
+        "subtitle" => "Cine a spus că programatorii nu pot dansa? Prin provocarea #EUCodeWeekDance le vom dovedi că se înșală.",
+        "content" => "Oricine. Școlile, profesorii, bibliotecile, cluburile de programare, întreprinderile și autoritățile publice sunt invitate să sărbătorească Săptămâna UE a programării prin organizarea unei activități #EUCodeWeekDance și să o adauge pe harta Săptămânii programării."
     ],
     "treasure-hunt" => [
         "menu" => "Vânătoarea de comori",

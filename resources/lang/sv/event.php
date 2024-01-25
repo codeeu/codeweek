@@ -11,7 +11,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => 'Lägg till ditt evenemang för #CodeWeek',
+    'main_title' => 'Lägg till ditt evenemang för #EUCodeWeek',
     'button' => 'Lägg till evenemang',
     'howto' => 'Så här organiserar du ett evenemang',
     'required' =>

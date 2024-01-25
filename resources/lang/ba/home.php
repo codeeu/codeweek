@@ -3,7 +3,7 @@
 return [
     'about' =>
         'Sedmica kodiranja EU je inicijativa &scaron;irokih masa koja ima za cilj dovesti kodiranje i digitalnu pismenost do svih na zabavan i aktivan način.',
-    'when' => '7.-22. oktobar 2023.',
+    'when' => '14.-27. oktobar 2024.',
     'when_text' =>
         'Učenje kodiranja pomaže nam da shvatimo svijet oko nas koji doživljava brze promjene, da pro&scaron;irimo svoje shvatanje kako funkcionira tehnologija te da razvijemo vje&scaron;tine i kapacitete u cilju istraživanja novih ideja i inoviranja.',
     'school_banner_title' => 'Angažirajte se!',

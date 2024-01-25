@@ -296,7 +296,7 @@ return [
             'link',
             'precum și planul de lecție în limba engleză la acest',
             'Activitățile din această lecție pot fi realizate individual și în orice ordine',
-            'Profesorul poate fotografia procesul de învățare și poate distribui fotografiile pe Instagram folosind #CodeWeekChallengeGoogle #GrowWithGoogle'
+            'Profesorul poate fotografia procesul de învățare și poate distribui fotografiile pe Instagram folosind #EUCodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Pe lângă broșura activității, pentru unele activități sunt necesare sau pot fi bine-venite materiale suplimentare.',
@@ -471,7 +471,7 @@ return [
         'instructions' => [
             'Pentru a începe, creează un plan și stabilește ordinea unităților din exercițiu. Folosind programul, programează LED-ul RGB de pe Calliope mini pentu a afișa una dintre cele 5 culori într-un ritm predefinit. Apoi creează o variabilă pentru ritm și repetițiile programului folosind bucle.',
             "Nu uita, dacă îți place cum ai implementat programul, îl poți împărtăși cu noi la info@calliope.cc – suntem curioși să vedem cum a ieșit! Apropo, oferim cadou 30 de Clliope mini printre cei care ne trimit!",
-            "Distribuie codul QR al proiectului tău pe Instagram, adaugă hashtag-ul #CodeWeekChallenge și menționează @CodeWeekEU.",
+            "Distribuie codul QR al proiectului tău pe Instagram, adaugă hashtag-ul #EUCodeWeekChallenge și menționează @CodeWeekEU.",
         ],
         'example' => [
             'În timp ce stai la computer: te poți antrena și tu.',
@@ -483,7 +483,7 @@ return [
 
     ,
     'common' => [
-        'share' => 'Partajează linkul sau codul QR al proiectului tău pe Instagram sau Facebook, adaugă hashtagul #CodeWeekChallenge și menționează @CodeWeekEU.',
+        'share' => 'Partajează linkul sau codul QR al proiectului tău pe Instagram sau Facebook, adaugă hashtagul #EUCodeWeekChallenge și menționează @CodeWeekEU.',
         'audience' => [
             'Profesori și cadre didactice',
             'Elevi din învățământul primar (6-12 ani)',

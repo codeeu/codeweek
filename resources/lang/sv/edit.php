@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Redigera ditt evenemang för #CodeWeek',
+    'title' => 'Redigera ditt evenemang för #EUCodeWeek',
     'required_fields' => 'Obligatoriska fält är markerade med en asterisk *. Lägg gärna till evenemanget på ditt lokala språk i listan.',
     'description' => 'Beskrivning',
     'audience' => 'Målgrupp',

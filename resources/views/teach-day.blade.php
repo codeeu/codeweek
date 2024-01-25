@@ -29,7 +29,7 @@
                 <div class="p-5 leading-6"><p style="text-align: left; font-size: 15px;">On <strong>22 May 2021</strong>,
                         EU Code Week invites teachers of all subjects and levels to take part in our first<span
                                 style="color: #025b95;"> <a class="image-link" style="color: #025b95;"
-                                                            href="https://codeweek.eu/" target="_blank" rel="noreferer noopener">#CodeWeek</a> </span>#TeachDay.
+                                                            href="https://codeweek.eu/" target="_blank" rel="noreferer noopener">#EUCodeWeek</a> </span>#TeachDay.
                         At this online event, you will hear about different aspects of <strong>coding</strong>, <strong>digital</strong>
                         <strong>creativity</strong> <strong>and other topics from inspiring speakers</strong>, including
                         decision makers, developers, education experts and enthusiasts. You will <strong>freely engage

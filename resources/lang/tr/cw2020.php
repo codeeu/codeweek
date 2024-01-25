@@ -38,11 +38,11 @@ return [
         'title' => 'Kod Haftası Dansı',
 
         'subtitle' =>
-            'Programlayıcıların dans edemediğini de kim söylemiş? Kod Haftası 2020’yi kutlamak için yeni bir etkinlik başlatıyoruz: #CodeWeekDance (Kod Haftası Dansı) meydan okuması',
+            'Programlayıcıların dans edemediğini de kim söylemiş? Kod Haftası 2020’yi kutlamak için yeni bir etkinlik başlatıyoruz: #EUCodeWeekDance (Kod Haftası Dansı) meydan okuması',
         'section1' => [
             'title' => 'Kimler katılabilir?',
             'content' => [
-                'Okullar, kütüphaneler, kod kulüpleri, özel şirket ve kamu kurumlarından herkes, AB Kod Haftası 2020’yi kutlamak için bir #CodeWeekDance (Kod Haftası Dansı) etkinliği düzenleyip Kod Haftası haritasına ekleyebilir.'
+                'Okullar, kütüphaneler, kod kulüpleri, özel şirket ve kamu kurumlarından herkes, AB Kod Haftası 2020’yi kutlamak için bir #EUCodeWeekDance (Kod Haftası Dansı) etkinliği düzenleyip Kod Haftası haritasına ekleyebilir.'
             ]
         ],
         'section2' => [
@@ -54,7 +54,7 @@ return [
             'title' =>
                 'Bir arkadaşını veya bir velini kodla - bilgisayara gerek yok',
             'subtitle' =>
-                'Kodlama, bir elektronik cihaza komut vermene yarar. Ama aslında kodlama yapmak için illa bir bilgisayar gerekmez. Onun yerine, kendine bir takım arkadaşı seç. Sınıf arkadaşın, arkadaşın, velin, hatta öğretmenin bile olabilir. Sen ona komutlar vererek #CodeWeekDance’ı nasıl sergileyeceğini göster; o da komutlarını aynen takip etsin.',
+                'Kodlama, bir elektronik cihaza komut vermene yarar. Ama aslında kodlama yapmak için illa bir bilgisayar gerekmez. Onun yerine, kendine bir takım arkadaşı seç. Sınıf arkadaşın, arkadaşın, velin, hatta öğretmenin bile olabilir. Sen ona komutlar vererek #EUCodeWeekDance’ı nasıl sergileyeceğini göster; o da komutlarını aynen takip etsin.',
             'resources' => [
                 'Bağlantısız Dans Partini düzenleyebilmek için bu code.org rehberini kullan',
                 'İnsan robotunu nasıl programlayacağını buradan öğrenebilirsin'
@@ -64,9 +64,9 @@ return [
         'activity2' => [
             'title' => 'Görsel Programlama',
             'subtitle' =>
-                'Kod Haftası dansını Scratch’te kodla. Kod Haftası karakterlerini kullan veya Scratch’te kendi karakterini yarat ve #CodeWeekDance’ı (Kod Haftası Dansını) yapmaya programla.',
+                'Kod Haftası dansını Scratch’te kodla. Kod Haftası karakterlerini kullan veya Scratch’te kendi karakterini yarat ve #EUCodeWeekDance’ı (Kod Haftası Dansını) yapmaya programla.',
             'resources' => [
-                'Scratch #CodeWeekDance projesine bir örnek',
+                'Scratch #EUCodeWeekDance projesine bir örnek',
                 'Kod Haftası karakterleri',
                 'Bir karakteri nasıl oynatacağını öğrenmek için bu code.org rehberini kullan',
                 'Dans Partini düzenleyebilmek için bu Code.org rehberini kullan',
@@ -76,7 +76,7 @@ return [
         'activity3' => [
             'title' => 'Metin tabanlı programlama',
             'subtitle' =>
-                'EarSketch veya Sonic Pi gibi kod tabanlı bir müzik yapma platformu kullanarak Python veya JavaScript yardımıyla #CodeWeekDance (Kod Haftası Dansı) müziğini yap.',
+                'EarSketch veya Sonic Pi gibi kod tabanlı bir müzik yapma platformu kullanarak Python veya JavaScript yardımıyla #EUCodeWeekDance (Kod Haftası Dansı) müziğini yap.',
             'resources' => [
                 'EarSketch’i kullanarak nasıl müzik yapacağını gösteren bir eğitim',
                 'Sonic Pi’yi kullanarak nasıl müzik yapacağını gösteren bir eğitim'
@@ -91,17 +91,17 @@ return [
         'activity5' => [
             'title' => 'Canlı Dans Meydan Okuması',
             'subtitle' =>
-                'Sen, takımın veya robotun #CodeWeekDance’ını (Kod Haftası Dansını) yaparken video çek ve Instagram’da paylaş. Böylece viral olma ve Kod haftasına özgü hediyeler kazanma şansını elde et! İlgini çekti mi? Şu adımları takip et:',
+                'Sen, takımın veya robotun #EUCodeWeekDance’ını (Kod Haftası Dansını) yaparken video çek ve Instagram’da paylaş. Böylece viral olma ve Kod haftasına özgü hediyeler kazanma şansını elde et! İlgini çekti mi? Şu adımları takip et:',
             'resources' => [
                 'Instagram Hikayelerini kullanarak videoyu çek',
                 'Instagram’da @CodeWeekEU’yu takip et',
                 '@CodeWeekEU on Instagram',
-                'Danslı hikayende @CodeWeekEU (AB Kod Haftası) hesabından bahset ve mutlaka #CodeWeekDance (Kod Haftası Dansı) hashtag’ini kullan'
+                'Danslı hikayende @CodeWeekEU (AB Kod Haftası) hesabından bahset ve mutlaka #EUCodeWeekDance (Kod Haftası Dansı) hashtag’ini kullan'
             ]
         ],
         'outro' => [
             'Her gün kazananlar seçilecek ve Instagram hesabımızın Hikayeler kısmında duyurulacak. Bildirimlerini düzenli olarak kontrol etmeyi unutma; bakarsın bugün şanslı günündür.',
-            '#CodeWeekDance (Kod Haftası Dansı), bestesi Brendan Paolini’ye ait olan Koda Övgü’den ve Urbino Üniversitesi’nde Bilişim Sistemleri Profesörlüğü yapan Alessandro Bagliolo’nun fikrinden yola çıkarak Bianca Maria Berardi’nin geliştirdiği danstan esinlenilerek bulundu.'
+            '#EUCodeWeekDance (Kod Haftası Dansı), bestesi Brendan Paolini’ye ait olan Koda Övgü’den ve Urbino Üniversitesi’nde Bilişim Sistemleri Profesörlüğü yapan Alessandro Bagliolo’nun fikrinden yola çıkarak Bianca Maria Berardi’nin geliştirdiği danstan esinlenilerek bulundu.'
         ]
     ],
     'treasure-hunt' => [
@@ -120,7 +120,7 @@ return [
                 'oyunu aç',
                 've kare kodunu okut. Böylece doğrudan Telegram uygulamasına gideceksin. Orada ilk komut setini bulabilirsin.',
                 'Oyunu kazanmak için 10 adet kodlama problemi çözmelisin ve Avrupa haritasında kodlama ve teknolojinin yükselişi ile ilgili 10 yer bulmalısın.',
-                'Oyunu tamamladıktan sonra #CodeWeek (Kod Haftası) hashtag’ini kullanarak puanını arkadaşlarınla paylaş ve onların da oyunu oynayıp kodlama tarihini öğrenmeleri için onlara meydan oku. Bakalım en fazla puanı kim alacak?',
+                'Oyunu tamamladıktan sonra #EUCodeWeek (Kod Haftası) hashtag’ini kullanarak puanını arkadaşlarınla paylaş ve onların da oyunu oynayıp kodlama tarihini öğrenmeleri için onlara meydan oku. Bakalım en fazla puanı kim alacak?',
                 'Kod Haftası Hazine Avı, Urbino Üniversitesi’nde Bilişim Sistemleri Profesörlüğü yapan Alessandro Bagliolo tarafından geliştirilen ilk AB Kod Haftası Hazine Avı’nın sanal sürümüdür. Bagliolo’nun özgün oyunu ile ilgili daha fazla bilgi için blogumuzu ziyaret et.'
             ]
         ]
@@ -140,9 +140,9 @@ return [
             'Urbino Üniversitesi’nde Bilişim Sistemleri Profesörü ve',
             'Kod Haftası elçileri koordinatörü',
             'Kod Haftası sanal Hazine Avı’nı sana anlatacak.',
-            'xxx ise sana yeni #CodeWeekDance (Kod Haftası Dansı) meydan okuması ile ilgili bilgiler verecek.',
+            'xxx ise sana yeni #EUCodeWeekDance (Kod Haftası Dansı) meydan okuması ile ilgili bilgiler verecek.',
             'Avrupa’nın dört bir yanından okul ve öğrenciler bize bağlanıp kodlama hikayelerini anlatacaklar ve davetli konuşmacılarla fikir alışverişinde bulunacaklar.',
-            'Sen de düşüncelerini ve fikirlerini paylaşıp soru sorabileceksin. Tek yapman gereken, 8 Ekim 2020 günü Orta Avrupa saatiyle 17:00-18:30 arasında..... canlı yayına bağlanıp #CodeWeek hashtag’iyle yorum yazmak veya tweet atmak.'
+            'Sen de düşüncelerini ve fikirlerini paylaşıp soru sorabileceksin. Tek yapman gereken, 8 Ekim 2020 günü Orta Avrupa saatiyle 17:00-18:30 arasında..... canlı yayına bağlanıp #EUCodeWeek hashtag’iyle yorum yazmak veya tweet atmak.'
         ]
     ],
     'get-involved' => [

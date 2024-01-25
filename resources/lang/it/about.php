@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'Nel 2023 la Settimana europea della programmazione si terrà dal 7 al 22 ottobre.',
+        'Nel 2024 la Settimana europea della programmazione si terrà dal 14 al 27 ottobre.',
     'when-text' =>
         '<p>La Settimana europea della programmazione è un evento che nasce dal basso e celebra la creatività, la risoluzione dei problemi e la collaborazione attraverso la programmazione e altre attività tecnologiche. L’idea è di rendere la programmazione più visibile, mostrare ai giovani, agli adulti e agli anziani come dare vita alle proprie idee con la programmazione, spiegare queste capacità e mettere insieme persone motivate per imparare.</p>',
     'codeweek_in_numbers-title' => 'Settimana della programmazione in numeri',

@@ -41,11 +41,11 @@ return [
 
     "dance" => [
         "title" => "Ples za Tjedan programiranja",
-        "subtitle" => "Tko kaže da programeri ne znaju plesati? Tjedan programiranja 2020. obilježavamo uvođenjem nove aktivnosti: plesnog izazova #CodeWeekDance.",
+        "subtitle" => "Tko kaže da programeri ne znaju plesati? Tjedan programiranja 2020. obilježavamo uvođenjem nove aktivnosti: plesnog izazova #EUCodeWeekDance.",
         "section1" => [
             "title" => "Tko može sudjelovati?",
             "content" => [
-                "Svi – škole, nastavnici, knjižnice, klubovi za programiranje, poduzeća i javna tijela – dobrodošli su organizirati aktivnost #CodeWeekDance u ovogodišnjem EU-ovu tjednu programiranja te je unijeti na",
+                "Svi – škole, nastavnici, knjižnice, klubovi za programiranje, poduzeća i javna tijela – dobrodošli su organizirati aktivnost #EUCodeWeekDance u ovogodišnjem EU-ovu tjednu programiranja te je unijeti na",
                 "kartu Tjedna programiranja.",
             ]
         ],
@@ -55,7 +55,7 @@ return [
         ],
         "activity1" => [
             "title" => "Programirajte prijatelja ili roditelja – bez računala",
-            "subtitle" => "Programiranjem možete davati naredbe elektroničkom uređaju. Ali za programiranje vam zapravo ne treba računalo. Umjesto računala, nađite partnera – kolegu iz razreda, prijatelja, roditelja ili nastavnika – i dajte mu upute, kojih se mora strogo držati, kako otplesati #CodeWeekDance.",
+            "subtitle" => "Programiranjem možete davati naredbe elektroničkom uređaju. Ali za programiranje vam zapravo ne treba računalo. Umjesto računala, nađite partnera – kolegu iz razreda, prijatelja, roditelja ili nastavnika – i dajte mu upute, kojih se mora strogo držati, kako otplesati #EUCodeWeekDance.",
             "resources" => [
                 "upute za organizaciju plesne zabave bez računala na Code.org.",
                 "naučite kako programirati svojeg ljudskog robota.",
@@ -65,9 +65,9 @@ return [
 
         "activity2" => [
             "title" => "Vizualno programiranje",
-            "subtitle" => "Programirajte ples za Tjedan programiranja alatom Scratch. Iskoristite likove iz Tjedna programiranja ili smislite vlastite i programirajte ih da otplešu #CodeWeekDance.",
+            "subtitle" => "Programirajte ples za Tjedan programiranja alatom Scratch. Iskoristite likove iz Tjedna programiranja ili smislite vlastite i programirajte ih da otplešu #EUCodeWeekDance.",
             "resources" => [
-                "primjer projekta #CodeWeekDance u Scratchu",
+                "primjer projekta #EUCodeWeekDance u Scratchu",
                 "likovi iz Tjedna programiranja",
                 "upute za animaciju likova na Code.org",
                 "upute za organizaciju plesne zabave na Code.org",
@@ -75,7 +75,7 @@ return [
             ]
         ], "activity3" => [
             "title" => "Tekstualno programiranje",
-            "subtitle" => "Programirajte melodiju za #CodeWeekDance u Pythonu ili JavaScriptu uz pomoć platformi za stvaranje glazbe kodiranjem kao što su EarSketch ili Sonic Pi",
+            "subtitle" => "Programirajte melodiju za #EUCodeWeekDance u Pythonu ili JavaScriptu uz pomoć platformi za stvaranje glazbe kodiranjem kao što su EarSketch ili Sonic Pi",
             "resources" => [
                 "vodič za stvaranje glazbe programom EarSketch",
                 "vodič za stvaranje glazbe programom Sonic Pi",
@@ -90,17 +90,17 @@ return [
             ]
         ], "activity5" => [
             "title" => "Plesni izazov uživo",
-            "subtitle" => "Snimite sebe, svoju ekipu ili robota u plesu #CodeWeekDance. Podijelite video na Instagramu i možda osvojite lijepu nagradu u nagradnoj igri Tjedna programiranja! Zainteresirani? Onda učinite sljedeće:",
+            "subtitle" => "Snimite sebe, svoju ekipu ili robota u plesu #EUCodeWeekDance. Podijelite video na Instagramu i možda osvojite lijepu nagradu u nagradnoj igri Tjedna programiranja! Zainteresirani? Onda učinite sljedeće:",
             "resources" => [
                 "snimite videozapis na Instagram Stories",
                 "počnite pratiti",
                 "@CodeWeekEU na Instagramu",
-                "u svojoj plesnoj priči spomenite @CodeWeekEU i svakako navedite oznaku #CodeWeekDance",
+                "u svojoj plesnoj priči spomenite @CodeWeekEU i svakako navedite oznaku #EUCodeWeekDance",
             ]
         ],
         "outro" => [
             "Imena dobitnika koje ćemo birati svakog dana objavljivat ćemo  u „pričama” na našem kanalu na Instagramu. Zato redovito provjeravajte obavijesti, možda vam se nasmiješi sreća.",
-            "Izazov #CodeWeekDance nastao je na temelju skladbe",
+            "Izazov #EUCodeWeekDance nastao je na temelju skladbe",
             "Ode to Code",
             "Brendana Paolinija i plesa koji je 2015. osmislila Bianca Maria Berardi prema zamisli Alessandra Bogliola, profesora računalnih sustava na Urbinskom sveučilištu."
         ],
@@ -123,7 +123,7 @@ return [
                 "pokrenite",
                 "pa skenirajte QR kod koji će vas odvesti u aplikaciju Telegram, gdje ćete dobiti prve upute.",
                 "Za pobjedu morate riješiti 10 zadataka iz programiranja i pronaći 10 lokacija na zemljovidu Europe koje su povezane s razvojem programiranja i tehnologije.",
-                "Kad završite igru, podijelite rezultat s prijateljima s oznakom #CodeWeek i izazovite ih da je i oni odigraju i saznaju ponešto o povijesti programiranja. Da vidimo tko će biti najbolji!",
+                "Kad završite igru, podijelite rezultat s prijateljima s oznakom #EUCodeWeek i izazovite ih da je i oni odigraju i saznaju ponešto o povijesti programiranja. Da vidimo tko će biti najbolji!",
                 "Ovogodišnji Lov na blago Tjedna programiranja virtualna je verzija izvornog Lova na blago Tjedna programiranja koji je osmislio Alessandro Bogliolo, profesor računalnih sustava na Urbinskom sveučilištu. Više o njegovoj izvornoj igri saznajte na našem",
                 "blogu."
 
@@ -145,11 +145,11 @@ return [
             "profesor računalnih sustava na Urbinskom sveučilištu i koordinator",
             "ambasadora Tjedna programiranja",
             "reći će vam više o virtualnom lovu na blago Tjedna programiranja.",
-            "A xxx će vas podsjetiti na novi plesni izazov #CodeWeekDance.",
+            "A xxx će vas podsjetiti na novi plesni izazov #EUCodeWeekDance.",
             "Povezat ćemo se i sa školama i učenicima iz cijele Europe, koji će nam ispričati svoje programerske priče i razmijeniti ideje s gostujućim govornicima.",
             "I vi ćete moći podijeliti svoja razmišljanja i zamisli te postavljati pitanja. Dovoljno je da se uključite u prijenos na",
             "ili",
-            "8. listopada 2020. od 17:00 – 18.30 i komentirate ili tvitate s oznakom #CodeWeek.",
+            "8. listopada 2020. od 17:00 – 18.30 i komentirate ili tvitate s oznakom #EUCodeWeek.",
         ]
     ],
     "get-involved"=>[

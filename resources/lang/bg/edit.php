@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Редактиране на вашето #CodeWeek събитие',
+    'title' => 'Редактиране на вашето #EUCodeWeek събитие',
     'required_fields' => 'Задължителните полета са маркирани със звездичка *. Чувствайте се свободни да добавите обява за събитието на вашия местен език.',
     'description' => 'Описание',
     'audience' => 'Аудитория',

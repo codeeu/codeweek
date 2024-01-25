@@ -36,9 +36,9 @@ return [
 
         "menu" => "Dance Challenge",
 
-        "subtitle" => "Wer behauptet, dass Programmierer nicht tanzen können? Wir beweisen bei der #CodeWeekDance Challenge das Gegenteil.",
+        "subtitle" => "Wer behauptet, dass Programmierer nicht tanzen können? Wir beweisen bei der #EUCodeWeekDance Challenge das Gegenteil.",
 
-        "content" => "Von Schulen über Lehrer und Bibliotheken bis hin zu Programmierklubs, Unternehmen und Behörden sind alle eingeladen, die EU Code Week zu feiern, eine #CodeWeekDance-Aktivität zu organisieren und sie auf der Code-Week-Karte einzutragen."
+        "content" => "Von Schulen über Lehrer und Bibliotheken bis hin zu Programmierklubs, Unternehmen und Behörden sind alle eingeladen, die EU Code Week zu feiern, eine #EUCodeWeekDance-Aktivität zu organisieren und sie auf der Code-Week-Karte einzutragen."
 
     ],
 

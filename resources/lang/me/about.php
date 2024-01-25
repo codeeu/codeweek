@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'Evropska nedjelja programiranja održaće se od 7. do 22. oktobra 2023. godine.',
+        'Evropska nedjelja programiranja održaće se od 14. do 27. oktobra 2024. godine.',
     'when-text' =>
         '<p>Evropska nedjelja programiranja je grass-roots (lokalni društveni projekat) projekat koji promoviše kreativnost, rješavanje problema i saradnju kroz programiranje i druge tehnološke aktivnosti. Ideja je da se programiranje učini vidljivijim, da se mladima, odraslima i starijima pokaže kako svoje ideje mogu pretočiti u stvarnost, da im se same vještine približe, te da se motivisani pojedinci okupe kako bi učili.</p>',
     'codeweek_in_numbers-title' => '>Nedjelja programiranja u brojkama',

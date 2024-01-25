@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'În 2023, Săptămâna UE a programării va avea loc între 7 și 22 octombrie.',
+        'În 2024, Săptămâna UE a programării va avea loc între 14 și 27 octombrie.',
     'when-text' =>
         '<p>Săptămâna UE a programării este o mișcare de bază care celebrează creativitatea, rezolvarea de probleme și colaborarea prin programare și alte activități tehnologice. Ideea este de a face programarea mai vizibilă, de a le arăta tinerilor, adulților și vârstnicilor cum își pot aduce ideile la viață prin programare, de a demistifica aceste aptitudini și de a aduce oamenii motivați împreună, pentru a învăța.</p>',
     'codeweek_in_numbers-title' => 'Săptămâna programării în cifre',

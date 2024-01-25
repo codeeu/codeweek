@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'Fl-2023, il-Ġimgħa tal-Ikkowdjar ser issir bejn is- 7 u l- 22 ta’ Ottubru.',
+        'Fl-2024, il-Ġimgħa tal-Ikkowdjar ser issir bejn is- 14 u l- 27 ta’ Ottubru.',
     'when-text' =>
         '<p>Il-Ġimgħa Ewropea tal-Ikkowdjar hija moviment bażiku li jiċċelebra l-kreattività, is-soluzzjoni tal-problemi u kollaborazzjoni permezz ta’ programmazzjoni u attivitajiet tekniċi oħra. L-idea hija li l-programmazzjoni ssir aktar viżibbli, biex iż-żgħażagħ, l-adulti u l-anzjani jintwerew kif tista’ tingħata l-ħajja lill-ideat bil-kodiċi, biex dawn il-ħiliet isiru aktar ċari u biex jingħaqdu persuni motivati biex jitgħallmu.</p>',
     'codeweek_in_numbers-title' => 'Il-Ġimgħa tal-Ikkowdjar f’numri',

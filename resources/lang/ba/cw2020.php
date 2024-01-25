@@ -95,7 +95,7 @@ return [
                 "Snimite video koristeći Instagram Stories",
                 "Zapratite",
                 "@CodeWeekEU na Instagramu",
-                "U svom Story-ju sa plesom spomenite @CodeWeekEU i upotrijebite hashtag #CodeWeekDance",
+                "U svom Story-ju sa plesom spomenite @CodeWeekEU i upotrijebite hashtag #EUCodeWeekDance",
             ]
         ],
         "outro" => [
@@ -122,7 +122,7 @@ return [
                 "najprije otvorite igru",
                 "i skenirajte QR kod koji će vas odvesti na aplikaciju Telegram sa prvim dijelom uputstava",
                 "Kako biste pobijedili, morate riješiti 10 izazova kodiranja i pronaći 10 lokacija na mapi Evrope koje su povezane s porastom kodiranja i tehnologije",
-                "Nakon što završite igru, podijelite svoj rezultat s prijateljima koristeći #CodeWeek i izazovite ih da se igraju i nauče o istoriji kodiranja. Pogledajmo ko postiže najbolje rezultate",
+                "Nakon što završite igru, podijelite svoj rezultat s prijateljima koristeći #EUCodeWeek i izazovite ih da se igraju i nauče o istoriji kodiranja. Pogledajmo ko postiže najbolje rezultate",
                 "Potraga za blagom u Sedmici kodiranja je virtualna verzija originalne EU Potrage za blagom. godinu koju je prvi razvio Alessandro Bogliolo, profesor računarskih sistema sa Univerziteta u Urbinu. Da biste saznali više o njegovoj originalnoj igri, posjetite naš",
                 "blog"
 
@@ -148,7 +148,7 @@ return [
             "Također ćemo se povezati sa školama i učenicima iz cijele Europe koji će dijeliti svoje priče o kodiranju i razmjenjivati ideje sa gostujućim govornicima",
             "Imati ćete također priliku podijeliti svoja razmišljanja i ideje te postaviti svoja pitanja. Sve što trebate je uključiti se u naš prijenos uživo",
             "ili",
-            "8. oktobra 2020 u 17:00-18.30 CET i komentirajte ili objavite tweet sa #CodeWeek hashtag-om",
+            "8. oktobra 2020 u 17:00-18.30 CET i komentirajte ili objavite tweet sa #EUCodeWeek hashtag-om",
         ]
     ],
     "get-involved"=>[

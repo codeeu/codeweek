@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Meld je #CodeWeek-evenement aan',
+    'title' => 'Meld je #EUCodeWeek-evenement aan',
     'event_title' => 'Titel van evenement',
     'number_required' => 'Geef een ruwe schatting, ook als je niet over exacte gegevens beschikt.',
     'phrase1' => 'Je kunt dit formulier maar één keer invullen. Controleer je gegevens zorgvuldig. Als je een fout maakt, ',
