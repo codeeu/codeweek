@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'U 2023. godini EU nedelja programiranja će se održati između 7. i 22. oktobra.',
+        'U 2024. godini EU nedelja programiranja će se održati između 14. i 27. oktobra.',
     'when-text' =>
         '<p>EU nedelja programiranja je samonikli pokret koji slavi kreativnost, rešavanje problema i saradnju kroz programiranje i druge aktivnosti u vezi sa tehnologijom. Ideja je da se programiranje učini vidljivijim i dostupnijim, da se pokaže mladima, odraslima i starijim osobama kako se ideje realizuju pomoću kodova, da se demistifikuje programiranje i okupe motivisani ljudi da uče zajedno.</p>',
     'codeweek_in_numbers-title' => 'Nedelja programiranja u brojevima',

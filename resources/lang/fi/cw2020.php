@@ -41,11 +41,11 @@ return [
 
     "dance" => [
         "title" => "Koodausviikon tanssi",
-        "subtitle" => "Eivätkö ohjelmoijat muka osaa tanssia? Vuoden 2020 koodausviikon kunniaksi heitämme uuden haasteen – se on #CodeWeekDance!",
+        "subtitle" => "Eivätkö ohjelmoijat muka osaa tanssia? Vuoden 2020 koodausviikon kunniaksi heitämme uuden haasteen – se on #EUCodeWeekDance!",
         "section1" => [
             "title" => "Kuka voi osallistua?",
             "content" => [
-                "Kutsumme koulut, opettajat, kirjastot, koodauskerhot, yritykset, viranomaiset ja kaikki muutkin viettämään EU:n koodausviikkoa 2020 ja osallistumaan tanssihaasteeseen! Järjestäkää oma tehtävä tai tapahtuma tunnuksella #CodeWeekDance ja lisätkää se",
+                "Kutsumme koulut, opettajat, kirjastot, koodauskerhot, yritykset, viranomaiset ja kaikki muutkin viettämään EU:n koodausviikkoa 2020 ja osallistumaan tanssihaasteeseen! Järjestäkää oma tehtävä tai tapahtuma tunnuksella #EUCodeWeekDance ja lisätkää se",
                 "koodausviikon kartalle.",
             ]
         ],
@@ -95,7 +95,7 @@ return [
                 "Kuvaa video Instagramin Tarinat (Stories) -toiminnolla.",
                 "Seuraa käyttäjää",
  "@CodeWeekEU Instagramissa.",
-                "Mainitse @CodeWeekEU tanssivideon sisältävässä tarinassa. Muista myös aihetunniste #CodeWeekDance.",
+                "Mainitse @CodeWeekEU tanssivideon sisältävässä tarinassa. Muista myös aihetunniste #EUCodeWeekDance.",
             ]
         ],
         "outro" => [
@@ -123,7 +123,7 @@ return [
             "avaa peli tästä linkistä",
             "ja lue puhelimella QR-koodi. Siirryt Telegram-sovellukseen, jossa saat ensimmäiset ohjeet.",
             "Voitat, kun ratkaiset kymmenen koodaustehtävää ja etsit Euroopan kartalta kymmenen paikkaa, jotka liittyvät teknologian ja koodaamisen historiaan.",
-            "Kun olet pelannut pelin läpi, kerro pistemäärä kavereillesi ja haasta heidätkin pelaamaan ja oppimaan samalla mielenkiintoisia asioita koodaamisen historiasta. Käytä aihetunnistetta #CodeWeek. Kuka saa parhaat pisteet?",
+            "Kun olet pelannut pelin läpi, kerro pistemäärä kavereillesi ja haasta heidätkin pelaamaan ja oppimaan samalla mielenkiintoisia asioita koodaamisen historiasta. Käytä aihetunnistetta #EUCodeWeek. Kuka saa parhaat pisteet?",
             "Koodausviikon aarteenetsintä tapahtumaa varten suunniteltu virtuaalinen versio alkuperäisestä EU:n koodausviikon aarteenetsintäpelistä, jonka laati Alessandro Bogliolo, italialaisen Urbinon yliopiston tietojärjestelmäkehityksen professori. Alkuperäisestä pelistä kerrotaan tarkemmin EU:n koodausviikon",
             "blogissa."
 
@@ -145,11 +145,11 @@ return [
         "italialaisen Urbinon yliopiston yliopiston tietojärjestelmäkehityksen professori ja",
         "koodausviikon lähettiläiden",
         "koordinaattori esittelee koodausviikon virtuaalista aarteenetsintäpeliä.",
-        "Lisäksi xxx antaa maistiaisia siitä, mitä #CodeWeekDance-tehtävä pitää sisällään.",
+        "Lisäksi xxx antaa maistiaisia siitä, mitä #EUCodeWeekDance-tehtävä pitää sisällään.",
         "Otamme myös yhteyttä kouluihin, oppilaisiin ja opiskelijoihin eri puolella Eurooppaa ja kuulemme heidän koodaustarinoitaan sekä sen, mitä sanottavaa heillä on puhujavieraillemme.",
         "Sinäkin voit kertoa mielipiteitäsi, esitellä ideoitasi tai esittää kysymyksiä. Liity mukaan striimiin (",
         "tai",
-        ") 8.10.2020 klo 18:00–19.30 Suomen aikaa ja merkitse kommenttisi tai tviittisi aihetunnisteella #CodeWeek.",
+        ") 8.10.2020 klo 18:00–19.30 Suomen aikaa ja merkitse kommenttisi tai tviittisi aihetunnisteella #EUCodeWeek.",
     ]
 ],
     "get-involved"=>[

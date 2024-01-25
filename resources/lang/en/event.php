@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => 'Add your #CodeWeek activity',
+    'main_title' => 'Add your #EUCodeWeek activity',
     'button' => 'Add Activity',
     'howto' => 'How to organize your own activity',
     'required' => 'Required fields are marked with an * asterisk. Feel free to add the activity listing in your local language.',

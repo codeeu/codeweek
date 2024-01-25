@@ -3,7 +3,7 @@
 return [
     'about' =>
         'Evropský týden programování je iniciativa, jejímž cílem je zábavným a aktivním způsobem přiblížit programování a digitální gramotnost každému člověku.',
-    'when' => '7.-22. října 2023',
+    'when' => '14.-27. října 2024',
     'when_text' =>
         'Naučit se programovat nám pomáhá chápat rychle se měnící svět kolem nás, lépe rozumět tomu, jak fungují technologie, rozvíjet dovednosti a schopnosti potřebné ke zkoumání nových myšlenek a inovovat.',
     'school_banner_title' => 'Zapojte se!',

@@ -52,21 +52,14 @@
                         @endphp
 
 
-                        @if (strtotime($currentDate) >= strtotime(\Carbon\Carbon::create(2023,10,20)))
+
                             @include('2021._thumbnail', ['slug' => 'air-drawing-with-AI', 'author'=>'Kristina Slišurić'])
-                        @endif
 
-                        @if (strtotime($currentDate) >= strtotime(\Carbon\Carbon::create(2023,10,19)))
                             @include('2021._thumbnail', ['slug' => 'coding-with-legoboost', 'author'=>'Lidia Ristea'])
-                        @endif
 
-                        @if (strtotime($currentDate) >= strtotime(\Carbon\Carbon::create(2023,10,18)))
                             @include('2021._thumbnail', ['slug' => 'coding-with-art-through-storytelling', 'author'=>'Maria Tsapara and Anthi Arkouli'])
-                        @endif
 
-                        @if (strtotime($currentDate) >= strtotime(\Carbon\Carbon::create(2023,10,17)))
                             @include('2021._thumbnail', ['slug' => 'app-that-counts-in-several-languages', 'author'=>'Samuel Branco'])
-                        @endif
 
 
                         @include('2021._thumbnail', ['slug' => 'illustrate-a-joke', 'author'=>'Margot Schubert'])
@@ -205,7 +198,7 @@
                 {{--                            <strong>@lang('challenges.bingo.4')</strong><br/>--}}
                 {{--                            <div class="mt-2">--}}
                 {{--                                @lang('challenges.bingo.5') <strong>@lang('challenges.bingo.6')</strong><br/>--}}
-                {{--                                @lang('challenges.bingo.7') <strong>#CodeWeekChallengesBingo</strong><br/>--}}
+                {{--                                @lang('challenges.bingo.7') <strong>#EUCodeWeekChallengesBingo</strong><br/>--}}
                 {{--                            </div>--}}
 
                 {{--                        </div>--}}

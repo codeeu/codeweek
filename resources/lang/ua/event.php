@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => 'Додайте свій захід #CodeWeek',
+    'main_title' => 'Додайте свій захід #EUCodeWeek',
     'button' => 'Додати захід',
     'howto' => 'Як організувати свій захід',
     'required' => 'Обов\'язкові поля позначено зірочкою (*). Ви можете додати захід своєю державною мовою.',

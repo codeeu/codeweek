@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Podejte zprávu o své #CodeWeek akci',
+    'title' => 'Podejte zprávu o své #EUCodeWeek akci',
     'event_title' => 'Název akce',
     'number_required' => 'Pokud nemáte přesné údaje, uveďte prosím alespoň přibližný odhad.',
     'phrase1' => 'Tento formulář můžete vyplnit pouze jednou! Údaje prosím pečlivě zkontrolujte. Pokud uděláte chybu, ',

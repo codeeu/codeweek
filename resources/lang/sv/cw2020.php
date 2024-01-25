@@ -41,11 +41,11 @@ return [
 
     "dance" => [
         "title" => "Code Week-dansen",
-        "subtitle" => "Vem har sagt att programmerare inte kan dansa? För att fira 2020 års upplaga av Code Week lanserar vi en ny aktivitet – utmaningen #CodeWeekDance",
+        "subtitle" => "Vem har sagt att programmerare inte kan dansa? För att fira 2020 års upplaga av Code Week lanserar vi en ny aktivitet – utmaningen #EUCodeWeekDance",
         "section1" => [
             "title" => "Vem får vara med?",
             "content" => [
-                "Alla – från skolor, lärare och bibliotekarier till kodningsklubbar, företag och myndigheter – är välkomna att fira EU Code Week 2020 genom att organisera en #CodeWeekDance och lägga in den på",
+                "Alla – från skolor, lärare och bibliotekarier till kodningsklubbar, företag och myndigheter – är välkomna att fira EU Code Week 2020 genom att organisera en #EUCodeWeekDance och lägga in den på",
                 "Code Weeks karta",
             ]
         ],
@@ -55,7 +55,7 @@ return [
         ],
         "activity1" => [
             "title" => "Programmera en vän eller en förälder – du behöver ingen dator",
-            "subtitle" => "Genom kodning kan du ge kommandon till en elektronisk enhet. Men egentligen behöver du ingen dator för att koda. Istället kan du ta tag i en partner – en klasskompis, vän, förälder eller lärare – och ge dem instruktioner om hur de ska dansa #CodeWeekDance, som de måste följa exakt.",
+            "subtitle" => "Genom kodning kan du ge kommandon till en elektronisk enhet. Men egentligen behöver du ingen dator för att koda. Istället kan du ta tag i en partner – en klasskompis, vän, förälder eller lärare – och ge dem instruktioner om hur de ska dansa #EUCodeWeekDance, som de måste följa exakt.",
             "resources" => [
                 "En guide från Code.org om hur du anordnar ditt dansparty",
                 "En infomodul om hur du programmerar din egen människorobot",
@@ -65,9 +65,9 @@ return [
 
         "activity2" => [
             "title" => "Visuell programmering",
-            "subtitle" => "Koda din dans i Scratch. Använd Code Week-figurerna eller gör dina egna i Scratch och programmera dem att dansa #CodeWeekDance.",
+            "subtitle" => "Koda din dans i Scratch. Använd Code Week-figurerna eller gör dina egna i Scratch och programmera dem att dansa #EUCodeWeekDance.",
             "resources" => [
-                "Exempel på ett #CodeWeekDance-projekt i Scratch",
+                "Exempel på ett #EUCodeWeekDance-projekt i Scratch",
                 "Code Weekfigurerna",
                 "En guide från Code.org om hur du kan animera en figur",
                 "En guide från Code.org om hur anordnar ditt dansparty",
@@ -75,7 +75,7 @@ return [
             ]
         ], "activity3" => [
             "title" => "Textprogrammering",
-            "subtitle" => "Producera temat för #CodeWeekDance med Python eller JavaScript med hjälp av kodbaserade plattformar för musikskapande som EarSketch eller Sonic Pi.",
+            "subtitle" => "Producera temat för #EUCodeWeekDance med Python eller JavaScript med hjälp av kodbaserade plattformar för musikskapande som EarSketch eller Sonic Pi.",
             "resources" => [
                 "En lektion om hur man gör musik med EarSketch",
                 "En lektion om hur man gör musik med Sonic Pi",
@@ -90,17 +90,17 @@ return [
             ]
         ], "activity5" => [
             "title" => "Live Dance Challenge",
-            "subtitle" => "Filma dig själv, ditt team eller din robot som dansar #CodeWeekDance, dela på Instagram och bli ”viral”, så kan du vinna några av Code Weeks priser! Är du intresserad? Gör så här:",
+            "subtitle" => "Filma dig själv, ditt team eller din robot som dansar #EUCodeWeekDance, dela på Instagram och bli ”viral”, så kan du vinna några av Code Weeks priser! Är du intresserad? Gör så här:",
             "resources" => [
                 "Spela in filmen med hjälp av Instagrams händelser",
                 "Följ",
                 "@CodeWeekEU på Instagram",
-                "Nämn @CodeWeekEU i din händelse med dansen och se till att tagga med #CodeWeekDance.",
+                "Nämn @CodeWeekEU i din händelse med dansen och se till att tagga med #EUCodeWeekDance.",
             ]
         ],
         "outro" => [
             "Varje dag utser och tillkännager vi vinnare på vår Instagramkanal via händelser, så glöm inte att kolla dina aviseringar –  en dag är det kanske din tur.",
-            "#CodeWeekDance bygger på",
+            "#EUCodeWeekDance bygger på",
             "Ode to Code",
             "som är komponerad av Brendan Paolini, och dansen som  Bianca Maria Berardi utvecklade 2015, efter en idé från Alessandro Bogliolo, professor i datorsystem vid Urbinos universitet."
         ],
@@ -123,7 +123,7 @@ return [
                 "öppnar du spelet",
                 "och skannar QR-koden som tar dig till Telegram-appen och ger dig den första omgången instruktioner.",
                 "För att vinna måste du lösa tio kodningsuppdrag och hitta tio platser på Europakartan som är kopplade till kodningens och teknikens intåg.",
-                "När du har spelat färdigt, delar du dina poäng med dina vänner genom att tagga #CodeWeek och utmanar dem att spela och lära sig mer om kodningens historia. Vem kommer att få högst poäng?",
+                "När du har spelat färdigt, delar du dina poäng med dina vänner genom att tagga #EUCodeWeek och utmanar dem att spela och lära sig mer om kodningens historia. Vem kommer att få högst poäng?",
                 "Code Weeks skattjakt års virtuella version av EU Code Weeks ursprungliga skattjakt som först utvecklades av Alessandro Bogliolo, professor i datorsystem vid Urbinos universitet. Du kan läsa mer om hans första spel på vår",
                 "blogg."
 
@@ -145,11 +145,11 @@ return [
             "professor i datorsystem vid Urbinos universitet och samordnare av",
             "kodveckans ambassadörer",
             "kommer att berätta mer om kodveckans virtuella skattjakt.",
-            "Och xxx kommer att ge dig förhandstips om den nya tävlingen #CodeWeekDance",
+            "Och xxx kommer att ge dig förhandstips om den nya tävlingen #EUCodeWeekDance",
             "Vi kommer att koppla ihop oss med skolor och studenter från hela Europa som ska dela sina kodningsberättelser och utbyta idéer med gästtalarna.",
             "Du får också chansen att dela med dig av dina tankar och idéer och ställa frågor. Allt du behöver göra är att titta på vår livesändning på",
             "eller",
-            "kl. 17.00–18.30 den 8 oktober 2020 och kommentera eller twittra med taggen #CodeWeek.",
+            "kl. 17.00–18.30 den 8 oktober 2020 och kommentera eller twittra med taggen #EUCodeWeek.",
         ]
     ],
     "get-involved" => [

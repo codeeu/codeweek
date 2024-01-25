@@ -305,7 +305,7 @@ return [
             'linku',
             'a nastavni plan na engleskom jeziku na ovom',
             'Aktivnosti vezane za ovaj čas mogu se realizovati samostalno, bilo kojim redosljedom',
-            'Nastavnik može fotografisati proces učenja i podijeliti ga na Instagramu korišćenjem haštaga  #CodeWeekChallengeGoogle #GrowWithGoogle'
+            'Nastavnik može fotografisati proces učenja i podijeliti ga na Instagramu korišćenjem haštaga  #EUCodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Pored brošure sa aktivnostima, neke aktivnosti zahtijevaju ili mogu imati koristi od upotrebe dodatnih materijala.',
@@ -480,7 +480,7 @@ return [
         'instructions' => [
             'Da biste započeli, napravite plan i odredite redosljed jedinica vježbe. Pomoću plana programirajte RGB LED za Calliope mini kako bi se prikazala jedna od pet boja po unaprijed određenom tempu. Zatim kreirajte varijabilnu vrijednost za tempo i programska ponavljanja pomoću petlji.',
             "Zapamtite, ako ste implementirali program na način koji vam se dopada, možete ga dijeliti i s nama na info@calliope.cc - radujemo se da vidimo šta ste učinili! Uzgred, poklanjamo 30 Calliope minija među podnosiocima!",
-            "Dijelite QR kôd vašeg projekta na Instagramu, dodajte heštag #CodeWeekChallenge i navedite @CodeWeekEU.",
+            "Dijelite QR kôd vašeg projekta na Instagramu, dodajte heštag #EUCodeWeekChallenge i navedite @CodeWeekEU.",
         ],
         'example' => [
             'Dok sjedite za računarom, možete se baviti sportom.',

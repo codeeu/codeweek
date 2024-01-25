@@ -2,12 +2,12 @@
 
 return [
     'title' => 'Útmutató',
-    'organise_activity' => 'Szervezze saját tevékenységét a #CodeWeek-kel',
+    'organise_activity' => 'Szervezze saját tevékenységét a #EUCodeWeek-kel',
     'register_activity' => 'Regisztrálja tevékenységét itt',
     'what' => [
         'title' => 'Mi az európai programozási hét?',
         'content' =>
-            '<p>Az európai  programozási hét egy alulról szerveződő mozgalom, amelyet önkéntesek működtetnek és az Európai Bizottság támogat. Bárki – iskolák, tanárok, könyvtárak, programozóklubok, vállalkozások, hatóságok – szervezhet #CodeWeek-tevékenységet, és felteheti a <a href="/events">codeweek.eu</a> oldalon található térképre.</p>'
+            '<p>Az európai  programozási hét egy alulról szerveződő mozgalom, amelyet önkéntesek működtetnek és az Európai Bizottság támogat. Bárki – iskolák, tanárok, könyvtárak, programozóklubok, vállalkozások, hatóságok – szervezhet #EUCodeWeek-tevékenységet, és felteheti a <a href="/events">codeweek.eu</a> oldalon található térképre.</p>'
     ],
     'what_you_need_organise' => [
         'title' => 'Mire van szüksége egy tevékenység szervezéséhez?',
@@ -39,7 +39,7 @@ return [
                 'Használja azokat az <strong>eszközöket és technológiákat</strong>, amelyek megfelelnek célcsoportja számára. A <a href="http://codeweek.eu/resources/">szabadon hozzáférhető nyílt forráskódú anyag</a> használatát javasoljuk.',
             '3' =>
                 'Kérje meg a résztvevőket, hogy az esemény végén <strong>mutassák be</strong> egymásnak, hogy mit hoztak létre.',
-            '4' => '<strong>Terjessze a hírt!</strong> A #CodeWeek hashtag felhasználásával reklámozza és ossza meg a közösségi médián, hogy tevékenysége során mit végzett. Ugyancsak megoszthatja ezeket az <a
+            '4' => '<strong>Terjessze a hírt!</strong> A #EUCodeWeek hashtag felhasználásával reklámozza és ossza meg a közösségi médián, hogy tevékenysége során mit végzett. Ugyancsak megoszthatja ezeket az <a
                         href="https://www.facebook.com/groups/774720866253044/">európai programozási hét tanári csoportjában</a> és a Twitteren (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Beszéljen barátaival, oktatótársaival, a helyi sajtóval és készítsen sajtóközleményt.',
             '5' =>
                 'Ne feledje <a href="/add">feltenni tevékenységét</a> a <a href="/events">programozási hét térképére</a>!'
@@ -65,6 +65,6 @@ return [
     'questions' => [
         'title' => 'Kérdése merült fel?',
         'content' =>
-            'Amennyiben kérdése van saját #CodeWeek-eseményének megszervezésével és népszerűsítésével kapcsolatban, vegye fel a kapcsolatot országa <a href="/ambassadors">programozási hétért felelős nagykövetével</a>.'
+            'Amennyiben kérdése van saját #EUCodeWeek-eseményének megszervezésével és népszerűsítésével kapcsolatban, vegye fel a kapcsolatot országa <a href="/ambassadors">programozási hétért felelős nagykövetével</a>.'
     ]
 ];

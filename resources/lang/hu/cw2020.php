@@ -41,11 +41,11 @@ return [
 
     "dance" => [
         "title" => "A programozási hét tánca",
-        "subtitle" => "Ki mondta, hogy a programozók nem tudnak táncolni? A 2020-as programozási hét alkalmából új tevékenységet indítunk útjára: ez a #CodeWeekDance kihívás",
+        "subtitle" => "Ki mondta, hogy a programozók nem tudnak táncolni? A 2020-as programozási hét alkalmából új tevékenységet indítunk útjára: ez a #EUCodeWeekDance kihívás",
         "section1" => [
             "title" => "Ki csatlakozhat?",
             "content" => [
-                "Az iskolákat, tanárokat, könyvtárakat, csakúgy, mint a programozó klubokat, vállalkozásokat és a közigazgatási szerveket egyaránt arra biztatjuk, hogy vegyenek részt a 2020-as programozási hét ünneplésében azáltal, hogy #CodeWeekDance eseményt szerveznek, és hozzáadják azt",
+                "Az iskolákat, tanárokat, könyvtárakat, csakúgy, mint a programozó klubokat, vállalkozásokat és a közigazgatási szerveket egyaránt arra biztatjuk, hogy vegyenek részt a 2020-as programozási hét ünneplésében azáltal, hogy #EUCodeWeekDance eseményt szerveznek, és hozzáadják azt",
                 "a programozási hét térképéhez",
             ]
         ],
@@ -67,7 +67,7 @@ return [
             "title" => "Vizuális programozás",
             "subtitle" => "Írj programot a programozási hét táncához a Scratch segítségével. Használd a programozási hét karaktereit, vagy hozz létre saját karaktereket a Scratch segítségével, és programozd be őket, hogy mutassák be a programozási hét táncát.",
             "resources" => [
-                "Példa egy #CodeWeekDance-projektre, amely a Scratchben készült",
+                "Példa egy #EUCodeWeekDance-projektre, amely a Scratchben készült",
                 "A programozási hét karakterei",
                 "A Code.org útmutatója, amelyből megtudhatod, hogyan animálhatsz karaktereket",
                 "A Code.org útmutatója, amely segítséget nyújt a saját offline táncos bulid megszervezéséhez",
@@ -90,12 +90,12 @@ return [
             ]
         ], "activity5" => [
             "title" => "Élő táncos kihívás",
-            "subtitle" => "Készíts videót magadról, a csapatodról vagy a robotodról, ahogy bemutatja a programozási hét táncát, és oszd meg az Instagramon a #CodeWeekDance hashtaggel ellátva a lehetőségért, hogy híressé válj az interneten, vagy megnyerd a programozási hét ajándékainak egyikét! Felkeltettük az érdeklődésedet? Kövesd az alábbi lépéseket:",
+            "subtitle" => "Készíts videót magadról, a csapatodról vagy a robotodról, ahogy bemutatja a programozási hét táncát, és oszd meg az Instagramon a #EUCodeWeekDance hashtaggel ellátva a lehetőségért, hogy híressé válj az interneten, vagy megnyerd a programozási hét ajándékainak egyikét! Felkeltettük az érdeklődésedet? Kövesd az alábbi lépéseket:",
             "resources" => [
                 "Készíts videót, és töltsd fel azt az Instagram-történetedbe",
                 "Kezdd el követni",
                 "a @CodeWeekEU nevű Instagram-oldalt",
-                "Töltsd fel a történetedbe a táncról készült videót, és említsd meg a @CodeWeekEU-t. Ne felejtsd el használni a #CodeWeekDance hashtaget sem!",
+                "Töltsd fel a történetedbe a táncról készült videót, és említsd meg a @CodeWeekEU-t. Ne felejtsd el használni a #EUCodeWeekDance hashtaget sem!",
             ]
         ],
         "outro" => [
@@ -123,7 +123,7 @@ return [
                 "nyisd meg a játékot,",
                 "és olvasd be a QR-kódot a telefonoddal. Ezt követően megnyílik a Telegram alkalmazás, és megkapod az első utasításkészletet",
                 "Ahhoz, hogy nyerj, meg kell oldanod 10 programozási feladatot, és meg kell találnod 10 olyan helyszínt Európa térképén, amelyek kapcsolódnak a programozás és a technológia térnyeréséhez",
-                "A játék befejezése után oszd meg a pontszámodat a barátaiddal a #CodeWeek hashtaget használva, és hívd ki őket arra, hogy játsszanak, és ismerjék meg a programozás történetét. Lássuk, ki éri el a legmagasabb pontszámot!",
+                "A játék befejezése után oszd meg a pontszámodat a barátaiddal a #EUCodeWeek hashtaget használva, és hívd ki őket arra, hogy játsszanak, és ismerjék meg a programozás történetét. Lássuk, ki éri el a legmagasabb pontszámot!",
                 "A programozási hét kincsvadászata az eredeti európai programozási hét kincsvadászatának virtuális változata. Az eredeti játékot Alessandro Bogliolo, az Urbinói Egyetem információfeldolgozási rendszerekkel foglalkozó professzora dolgozta ki. Ha többet szeretnél tudni az eredeti játékról, látogass el",
                 "a blogunkra"
 
@@ -145,11 +145,11 @@ return [
             "az Urbinói Egyetem információfeldolgozási rendszerekkel foglalkozó professzora és a",
             "programozási hét nagyköveteinek koordinátora",
             "a programozási hét virtuális kincsvadászatáról mesél majd",
-            "xxx pedig megosztja a közönséggel a #CodeWeekDance kihívással kapcsolatos tudnivalókat",
+            "xxx pedig megosztja a közönséggel a #EUCodeWeekDance kihívással kapcsolatos tudnivalókat",
             "Emellett felvesszük majd a kapcsolatot Európa különböző részeiben működő iskolákkal és azok diákjaival, akik megosztják a programozási történeteiket és ötleteket cserélnek a vendégelőadókkal",
             "Te is megoszthatod majd a véleményedet és az ötleteidet, és ha kérdésed van, azt felteheted vendégelőadóinknak. Ehhez mindössze annyit kell tenned, hogy követed az élő közvetítésünket a",
             "vagy a",
-            "oldalunkon 2020. október 8-án, közép-európai idő szerint 17:00 és 18:30 között, és megjegyzést vagy tweetet írsz, amiben szerepelteted a #CodeWeek hashtaget",
+            "oldalunkon 2020. október 8-án, közép-európai idő szerint 17:00 és 18:30 között, és megjegyzést vagy tweetet írsz, amiben szerepelteted a #EUCodeWeek hashtaget",
         ]
     ],
     "get-involved"=>[

@@ -306,7 +306,7 @@ return [
             'il-link',
             'kif ukoll Pjan tal-Lezzjoni bl-Ingliż fuq din',
             'L-attivitajiet f\'din il-lezzjoni jistgħu jitlestew individwalment u fi kwalunkwe ordni',
-            'L-għalliem jista\' jieħu ritratt tal-proċess ta\' tagħlim u jaqsmu mal-oħrajn fuq Instagram billi juża #CodeWeekChallengeGoogle #GrowWithGoogle'
+            'L-għalliem jista\' jieħu ritratt tal-proċess ta\' tagħlim u jaqsmu mal-oħrajn fuq Instagram billi juża #EUCodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Minbarra l-ktejjeb tal-attività, xi attivitajiet jeħtieġu jew inkella jibbenefikaw b’mod fakultattiv minn materjali addizzjonali.',
@@ -482,7 +482,7 @@ return [
         'instructions' => [
             'Biex tibda, oħloq pjan u iddetermina l-ordni tal-unitajiet tal-eżerċzzji. Ipprogramma l-RGB LED tal-Calliope mini billi tuża l-iskeda, sabiex turi wieħed mill-5 kuluri b\'pass definit minn qabel. Imbagħad oħloq varjabbli għall-pass u għar-repetizzjonijiet tal-programm billi tuża ħoloq.',
             "Ftakar, jekk inti implimentajt il-programm b'tali mod li jogħġbok, inti tista' wkoll tikkondividih magħna għand info@calliope.cc - aħna eċċitati li naraw x'ser tagħmel bih! U bilħaq, aħna qed nagħtu 30 Calliope minis minn fost is-sottomissjonijiet!",
-            "Ikkondividi l-kodiċi tal-QR tal-proġett tiegħek fuq Instagram, żid il-hashtag #CodeWeekChallenge u semmi @CodeWeekEU.",
+            "Ikkondividi l-kodiċi tal-QR tal-proġett tiegħek fuq Instagram, żid il-hashtag #EUCodeWeekChallenge u semmi @CodeWeekEU.",
         ],
         'example' => [
             'Waqt li tkun bilqiegħda quddiem il-computer tiegħek: inti tista\' ssir sportiv ukoll.',
@@ -493,7 +493,7 @@ return [
     ]
     ,
     'common' => [
-        'share' => 'Ixxerja l-ħolqa jew il-kodiċi QR tal-proġett tiegħek fuq Instagram jew Facebook, żid il-hashtag #CodeWeekChallenge u semmi @CodeWeekEU.',
+        'share' => 'Ixxerja l-ħolqa jew il-kodiċi QR tal-proġett tiegħek fuq Instagram jew Facebook, żid il-hashtag #EUCodeWeekChallenge u semmi @CodeWeekEU.',
         'audience' => [
             'Għalliema u edukaturi',
             'Studenti tal-Iskola Primarja (6 sa 12-il sena)',

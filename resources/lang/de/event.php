@@ -11,7 +11,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => '#CodeWeek-Veranstaltung hinzufügen',
+    'main_title' => '#EUCodeWeek-Veranstaltung hinzufügen',
     'button' => 'Veranstaltung hinzufügen',
     'howto' => 'Ausrichtung einer eigenen Veranstaltung',
     'required' =>
