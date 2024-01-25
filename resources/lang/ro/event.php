@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => 'Adăugați-vă evenimentul #CodeWeek',
+    'main_title' => 'Adăugați-vă evenimentul #EUCodeWeek',
     'button' => 'Adăugare eveniment',
     'howto' => 'Cum să vă organizați propriului eveniment',
     'required' => 'Câmpurile obligatorii sunt marcate cu un * asterisc. Adăugați lista de evenimente în limba locală.',

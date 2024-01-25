@@ -301,7 +301,7 @@ return [
             'linken',
             'angol nyelvű óravázlatok pedig itt:',
             'E lecke tevékenységei önállóan és bármilyen sorrendben elvégezhetők',
-            'A tanárok képet készíthetnek a tanulási folyamatról, és megoszthatják az Instagramon a #CodeWeekChallengeGoogle #GrowWithGoogle hashtag segítségével'
+            'A tanárok képet készíthetnek a tanulási folyamatról, és megoszthatják az Instagramon a #EUCodeWeekChallengeGoogle #GrowWithGoogle hashtag segítségével'
         ],
         'materials' => [
             'A tevékenységekről szóló tájékoztató füzet mellett egyes tevékenységekhez további segédanyagokra lesz vagy lehet szükség.',
@@ -477,7 +477,7 @@ return [
         'instructions' => [
             'A kezdéshez készíts tervet, és határozd meg a gyakorlategységek sorrendjét. A terv segítségével programozd be a Calliope mini RGB LED-jét úgy, hogy az előre meghatározott ütemben az 5 szín valamelyikét jelenítse meg. Ezután hozz létre egy változót a tempóhoz, és programozd be az ismétléseket ciklusok segítségével.',
             "Ne feledd, ha a programot neked tetsző, egyéni módon valósítottad meg, oszd meg velünk a info@calliope.cc címen-kíváncsian várjuk, hogy te mit hozol ki belőle! Apropó, a beküldött pályaművek között 30 Calliope minit sorsolunk ki!",
-            "Oszd meg a projekted QR-kódját az Instagramon, add hozzá a #CodeWeekChallenge hashtaget, és említsd meg a @CodeWeekEU-t.",
+            "Oszd meg a projekted QR-kódját az Instagramon, add hozzá a #EUCodeWeekChallenge hashtaget, és említsd meg a @CodeWeekEU-t.",
         ],
         'example' => [
             'Amíg a számítógép előtt ülsz: sportolhatsz is.',
@@ -488,7 +488,7 @@ return [
     ]
     ,
     'common' => [
-        'share' => "Ossza meg projektje linkjét vagy QR-kódját az Instagramon vagy a Facebookon, adja hozzá a #CodeWeekChallenge hashtaget, és említse meg a @CodeWeekEU-t.",
+        'share' => "Ossza meg projektje linkjét vagy QR-kódját az Instagramon vagy a Facebookon, adja hozzá a #EUCodeWeekChallenge hashtaget, és említse meg a @CodeWeekEU-t.",
         'audience' => [
             "Tanárok és oktatók",
             "Általános iskolai tanulók (6-12 éves korig)",

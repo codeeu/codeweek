@@ -302,7 +302,7 @@ return [
             'link',
             'e il piano delle lezioni in inglese su questo',
             'Le attività di questa lezione possono essere completate individualmente e in qualsiasi ordine',
-            'L’insegnante può scattare una foto del processo di apprendimento e condividerla su Instagram usando l’hashtag #CodeWeekChallengeGoogle #GrowWithGoogle'
+            'L’insegnante può scattare una foto del processo di apprendimento e condividerla su Instagram usando l’hashtag #EUCodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Oltre al manuale delle attività, alcune attività richiedono o si possono avvalere di materiali aggiuntivi.',
@@ -477,7 +477,7 @@ return [
         'instructions' => [
             'Per iniziare, crea un piano e determina l’ordine dei singoli esercizi. Utilizzando questo schema, programma I LED RGB di Calliope mini per visualizzare uno dei 5 colori al ritmo predefinito. Quindi crea una variabile per il ritmo e programma le ripetizioni usando i loop.',
             "Ricorda, se il programma che hai implementato ti piace, puoi anche condividerlo con noi inviandolo a info@calliope.cc – non vediamo l’ora di vedere cosa hai saputo creare! A proposito, gli iscritti potranno vincere uno dei 30 Calliope mini che metteremo in palio!",
-            "Condividi il QR code del tuo Progetto su Instagram, aggiungi l’hashtag #CodeWeekChallenge e menziona @CodeWeekEU.",
+            "Condividi il QR code del tuo Progetto su Instagram, aggiungi l’hashtag #EUCodeWeekChallenge e menziona @CodeWeekEU.",
         ],
         'example' => [
             'Quando sei seduto davanti al computer: puoi diventare sportivo anche tu!.',
@@ -488,7 +488,7 @@ return [
     ],
 
     'common' => [
-        'share' => 'Condividi il link o il codice QR del tuo progetto su Instagram o Facebook, aggiungi l’hashtag #CodeWeekChallenge e menziona @CodeWeekEU.',
+        'share' => 'Condividi il link o il codice QR del tuo progetto su Instagram o Facebook, aggiungi l’hashtag #EUCodeWeekChallenge e menziona @CodeWeekEU.',
         'audience' => [
             'Insegnanti ed educatori/educatrici',
             'Alunni e alunne della scuola primaria (dai 6 ai 12 anni)',

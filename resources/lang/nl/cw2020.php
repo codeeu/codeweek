@@ -41,7 +41,7 @@ return [
 
     "dance" => [
         "title" => "Code week Dance",
-        "subtitle" => "Wie zei dat programmeurs niet konden dansen? Om Code Week 2020 te vieren hebben we een nieuwe activiteit bedacht - de #CodeWeekDance challenge",
+        "subtitle" => "Wie zei dat programmeurs niet konden dansen? Om Code Week 2020 te vieren hebben we een nieuwe activiteit bedacht - de #EUCodeWeekDance challenge",
         "section1" => [
             "title" => "Wie mag er meedoen?",
             "content" => [
@@ -55,7 +55,7 @@ return [
         ],
         "activity1" => [
             "title" => "Programmeer een vriend of ouder — je hebt geen computer nodig",
-            "subtitle" => "Met programmeren geef je commando's aan een elektronisch apparaat. Maar eigenlijk heb je helemaal geen computer nodig om te programmeren. Kies in plaats daarvan een partner - misschien een klasgenootje, een vriend, een ouder of zelfs een leraar, en geef ze instructies voor de #CodeWeekDance die ze precies moeten volgen ",
+            "subtitle" => "Met programmeren geef je commando's aan een elektronisch apparaat. Maar eigenlijk heb je helemaal geen computer nodig om te programmeren. Kies in plaats daarvan een partner - misschien een klasgenootje, een vriend, een ouder of zelfs een leraar, en geef ze instructies voor de #EUCodeWeekDance die ze precies moeten volgen ",
             "resources" => [
                 "Een handleiding door Code.org voor het organiseren van een unplugged dansfeestje",
                 "Een leerstuk over het programmeren van je mens-robot",
@@ -65,9 +65,9 @@ return [
 
         "activity2" => [
             "title" => "Visueel programmeren",
-            "subtitle" => "Programmeer jouw Code Week Dance met Scratch. Gebruik de Code Week-personages of maak ze zelf met Scratch en programmeer ze om de #CodeWeekDance te doen.",
+            "subtitle" => "Programmeer jouw Code Week Dance met Scratch. Gebruik de Code Week-personages of maak ze zelf met Scratch en programmeer ze om de #EUCodeWeekDance te doen.",
             "resources" => [
-                "Een voorbeeld van een Scratch #CodeWeekDance project",
+                "Een voorbeeld van een Scratch #EUCodeWeekDance project",
                 "De Code Week-personages",
                 "Een handleiding door Code.org voor het animeren van een personage",
                 "Een handleiding door Code.org voor het organiseren van jouw dansfeestje",
@@ -75,7 +75,7 @@ return [
             ]
         ], "activity3" => [
             "title" => "Programmeren met tekst",
-            "subtitle" => "Maak jouw #CodeWeekDance liedje in Python of JavaScript met behulp van muziekprogrammeerplatforms zoals EarSketch of Sonic Pi",
+            "subtitle" => "Maak jouw #EUCodeWeekDance liedje in Python of JavaScript met behulp van muziekprogrammeerplatforms zoals EarSketch of Sonic Pi",
             "resources" => [
                 "Een snelcursus muziek maken met EarSketch ”",
                 "Een snelcursus muziek maken met Sonic Pi",
@@ -90,17 +90,17 @@ return [
             ]
         ], "activity5" => [
             "title" => "Live Dance Challenge",
-            "subtitle" => "Neem een video van jezelf, jouw team of jouw robot die de #CodeWeekDance doet, en deel de video op Instagram met de kans om viraal te gaan en Code Week-goodies te winnen! Heb je interesse? Volg deze stappen:",
+            "subtitle" => "Neem een video van jezelf, jouw team of jouw robot die de #EUCodeWeekDance doet, en deel de video op Instagram met de kans om viraal te gaan en Code Week-goodies te winnen! Heb je interesse? Volg deze stappen:",
             "resources" => [
                 "Neem de video op in je Instagram-verhaal",
                 "Volg",
                 "@CodeWeekEU op Instagram",
-                "Noem @CodeWeekEU in jouw verhaal met het dansje en gebruik de hashtag #CodeWeekDance",
+                "Noem @CodeWeekEU in jouw verhaal met het dansje en gebruik de hashtag #EUCodeWeekDance",
             ]
         ],
         "outro" => [
             "Er zullen elke dag winnaars worden geselecteerd. Deze worden bekend gemaakt via onze Instagram-verhaal, dus vergeet niet om regelmatig je meldingen te bekijken, misschien heb je vandaag wel geluk",
-            "De #CodeWeekDance is gebaseerd op de",
+            "De #EUCodeWeekDance is gebaseerd op de",
             "Ode to Code",
             "gecomponeerd door Brendan Paolini, en de dans is ontwikkeld door Bianca Maria Berardi in 2015, geïnspireerd door een idee van Alessandro Bogliolo, Professor of Computer Systems aan de Universiteit van Urbino"
         ],
@@ -123,7 +123,7 @@ return [
                 "open je het spel",
                 "en scan je de QR-code, die brengt je naar de Telegram-app en daar vind je de eerste reeks instructies",
                 "Om te winnen moet je 10 programmeerpuzzels oplossen en 10 locaties op de kaart van Europa vinden die te maken hebben met de opkomst van codering en technologie",
-                "Als je het spel hebt voltooid, deel dan je score met jouw vrienden via de hashtag #CodeWeek en daag ze uit om ook te spelen en te leren over de geschiedenis van programmeren. Laten we kijken wie de hoogste scores behaalt",
+                "Als je het spel hebt voltooid, deel dan je score met jouw vrienden via de hashtag #EUCodeWeek en daag ze uit om ook te spelen en te leren over de geschiedenis van programmeren. Laten we kijken wie de hoogste scores behaalt",
                 "De Code Week-schattenzoektocht is de virtuele versie van de oorspronkelijke EU Code Week-schattenzoektocht die voor het eerst werd opgezet door Alessandro Bogliolo, Professor of Computer Systems aan de Universiteit van Urbino. Als je meer over zijn oorspronkelijke spel wil weten, kijk dan op onze",
                 "blog"
 
@@ -145,11 +145,11 @@ return [
             "professor of Computer Systems aan de Universiteit van Urbino en coördinator van de",
             "Code Week-ambassadeurs",
             "zal je meer vertellen over de virtuele schattenzoektocht van Code Week",
-            "En xxx zal je informatie geven over de nieuwe #CodeWeekDance-challenge",
+            "En xxx zal je informatie geven over de nieuwe #EUCodeWeekDance-challenge",
             "We zullen ook contact onderhouden met scholen en leerlingen uit heel Europa die hun programmeerverhalen zullen delen en ideeën uit kunnen wisselen met de gastsprekers",
             "Je krijgt ook de kans om jouw gedachten en ideeën te delen, en om vragen te stellen. Daar hoef je alleen onze livestream voor te kijken",
             "of",
-            "op 8 oktober 2020 om 17:00-18.30 MET te reageren of tweeten met de #CodeWeek hashtag",
+            "op 8 oktober 2020 om 17:00-18.30 MET te reageren of tweeten met de #EUCodeWeek hashtag",
         ]
     ],
     "get-involved" => [

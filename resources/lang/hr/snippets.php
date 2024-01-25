@@ -24,8 +24,8 @@ return [
     ],
     "dance" => [
     "menu" => "Plesni izazov", 
-            "subtitle" => "Tko je rekao da programeri ne znaju plesati? Dokazat ćemo suprotno u izazovu #CodeWeekDance.",
-            "content" => "Pozivamo sve – škole, nastavnike, knjižnice, klubove za programiranje, poduzeća i javna tijela – da organiziraju aktivnost #CodeWeekDance u ovogodišnjem EU-ovu tjednu programiranja i unesu je na kartu tjedna programiranja."
+            "subtitle" => "Tko je rekao da programeri ne znaju plesati? Dokazat ćemo suprotno u izazovu #EUCodeWeekDance.",
+            "content" => "Pozivamo sve – škole, nastavnike, knjižnice, klubove za programiranje, poduzeća i javna tijela – da organiziraju aktivnost #EUCodeWeekDance u ovogodišnjem EU-ovu tjednu programiranja i unesu je na kartu tjedna programiranja."
     ],
     "treasure-hunt" => [
     "menu" => "Potraga za blagom", 

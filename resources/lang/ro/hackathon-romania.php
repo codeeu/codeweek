@@ -170,7 +170,7 @@ return [
         12 => [
             'title' => 'Despre CODEWEEK.EU',
             'content' => [
-                'EU Code Week (Săptămâna UE a programării – #CodeWeek) este o mișcare fundamentală derulată de voluntari pentru promovarea competențelor digitale prin intermediul unor activități asociate cu programarea și informatica. Aceasta reprezintă o sursă de inspirație și implicare pentru explorarea de noi idei și inovații pentru viitor. Activitățile pentru ',
+                'EU Code Week (Săptămâna UE a programării – #EUCodeWeek) este o mișcare fundamentală derulată de voluntari pentru promovarea competențelor digitale prin intermediul unor activități asociate cu programarea și informatica. Aceasta reprezintă o sursă de inspirație și implicare pentru explorarea de noi idei și inovații pentru viitor. Activitățile pentru ',
                 'EU Code Week (Săptămâna UE a programării)',
                 'au loc în întreaga lume între 9 și 24 octombrie. ',
                 'Ideea EU Code Week Hackathon este de a arăta cum soluțiile concrete prind viață cu ajutorul creativității, entuziasmului, ideilor noi și aptitudinilor de programare ale tinerilor. Hackathoanele sunt create și organizate în comun de',

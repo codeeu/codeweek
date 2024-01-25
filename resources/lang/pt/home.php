@@ -3,7 +3,7 @@
 return [
     'about' =>
         'A Semana Europeia da Programação é uma iniciativa popular que visa levar a programação e a literacia digital a todos de uma forma divertida e atrativa...',
-    'when' => '7-22 de outubro de 2023',
+    'when' => '14-27 de outubro de 2024',
     'when_text' =>
         'Aprender a programar ajuda-nos a entender o mundo em rápida evolução à nossa volta, a expandir o nosso conhecimento sobre o funcionamento da tecnologia e a desenvolver competências e capacidades para explorar novas ideias e inovar.',
     'school_banner_title' => 'Participe!',

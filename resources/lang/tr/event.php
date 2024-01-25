@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => '#CodeWeek etkinliğinizi ekleyin',
+    'main_title' => '#EUCodeWeek etkinliğinizi ekleyin',
     'button' => 'Etkinlik Ekle',
     'howto' => 'Kendi etkinliğinizi nasıl organize edebilirsiniz',
     'required' => 'Gerekli alanlar * işareti ile gösterilmiştir. Etkinliği kendi dilinizde ekleyebilirsiniz.',

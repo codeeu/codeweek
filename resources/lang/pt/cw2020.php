@@ -41,11 +41,11 @@ return [
 
     "dance" => [
         "title" => "Dança da Semana Europeia da Programação",
-        "subtitle" => "Quem disse que os programadores não sabem dançar? Para comemorar a edição de 2020 da Semana Europeia da Programação, lançaremos uma nova atividade – o desafio #CodeWeekDance",
+        "subtitle" => "Quem disse que os programadores não sabem dançar? Para comemorar a edição de 2020 da Semana Europeia da Programação, lançaremos uma nova atividade – o desafio #EUCodeWeekDance",
         "section1" => [
             "title" => "Quem pode participar?",
             "content" => [
-                "Todas as pessoas, escolas, professores, bibliotecas, clubes de programação, empresas e autoridades públicas são convidados a comemorar a Semana Europeia da Programação de 2020, organizando uma atividade #CodeWeekDance e acrescentando-a ao",
+                "Todas as pessoas, escolas, professores, bibliotecas, clubes de programação, empresas e autoridades públicas são convidados a comemorar a Semana Europeia da Programação de 2020, organizando uma atividade #EUCodeWeekDance e acrescentando-a ao",
                 "Mapa da Semana Europeia da Programação",
             ]
         ],
@@ -55,7 +55,7 @@ return [
         ],
         "activity1" => [
             "title" => "Programa um amigo ou um pai – não é necessário o computador",
-            "subtitle" => "A programação permite dar ordens a um dispositivo eletrónico. Mas, tecnicamente, não é necessário um computador para se poder programar. Em vez disso, escolhe um parceiro – pode ser um colega, um amigo, um pai ou até um professor, e dá-lhe instruções sobre o modo de executar a #CodeWeekDance, que deve seguir de forma precisa",
+            "subtitle" => "A programação permite dar ordens a um dispositivo eletrónico. Mas, tecnicamente, não é necessário um computador para se poder programar. Em vez disso, escolhe um parceiro – pode ser um colega, um amigo, um pai ou até um professor, e dá-lhe instruções sobre o modo de executar a #EUCodeWeekDance, que deve seguir de forma precisa",
             "resources" => [
                 "Guia da Code.org para organizares a tua Festa Dançante sem recurso a computadores",
                 "Bit de aprendizagem para programares o teu robô humano",
@@ -65,9 +65,9 @@ return [
 
         "activity2" => [
             "title" => "Programação visual",
-            "subtitle" => "Programa no Scratch a tua dança da Semana Europeia da Programação. Utiliza as personagens da Semana Europeia da Programação, ou cria as tuas próprias personagens no Scratch, e programa-as para executar a #CodeWeekDance",
+            "subtitle" => "Programa no Scratch a tua dança da Semana Europeia da Programação. Utiliza as personagens da Semana Europeia da Programação, ou cria as tuas próprias personagens no Scratch, e programa-as para executar a #EUCodeWeekDance",
             "resources" => [
-                "Exemplo de um projeto da #CodeWeekDance realizado com o Scratch",
+                "Exemplo de um projeto da #EUCodeWeekDance realizado com o Scratch",
                 "Personagens da Semana Europeia da Programação",
                 "Guia da Code.org sobre animação de personagens",
                 "Guia da Code.org para organizares a tua Festa Dançante",
@@ -75,7 +75,7 @@ return [
             ]
         ], "activity3" => [
             "title" => "Programação baseada em texto",
-            "subtitle" => "Desenvolve o tema musical da #CodeWeekDance com Python ou JavaScript, utilizando plataformas de criação de música baseadas em código, como a EarSketch ou a Sonic Pi",
+            "subtitle" => "Desenvolve o tema musical da #EUCodeWeekDance com Python ou JavaScript, utilizando plataformas de criação de música baseadas em código, como a EarSketch ou a Sonic Pi",
             "resources" => [
                 "Tutorial sobre criação de música com a EarSketch",
                 "Tutorial sobre criação de música com a Sonic Pi",
@@ -90,17 +90,17 @@ return [
             ]
         ], "activity5" => [
             "title" => "Desafio de dança em direto",
-            "subtitle" => "Grava um vídeo de ti próprio, da tua equipa ou do teu robô enquanto executam a #CodeWeekDance e partilha-o no Instagram: poderás tornar-te «viral» e ganhar prémios da Semana Europeia da Programação! Interessada(o)? Segue os passos seguintes:",
+            "subtitle" => "Grava um vídeo de ti próprio, da tua equipa ou do teu robô enquanto executam a #EUCodeWeekDance e partilha-o no Instagram: poderás tornar-te «viral» e ganhar prémios da Semana Europeia da Programação! Interessada(o)? Segue os passos seguintes:",
             "resources" => [
                 "Grava o vídeo utilizando as histórias (Stories) do Instagram",
                 "Segue",
                 "@CodeWeekEU no Instagram",
-                "Menciona @CodeWeekEU na tua história com a dança e certifica-te de que utilizas o hashtag #CodeWeekDance",
+                "Menciona @CodeWeekEU na tua história com a dança e certifica-te de que utilizas o hashtag #EUCodeWeekDance",
             ]
         ],
         "outro" => [
             "Serão selecionados vencedores todos os dias, anunciados no nosso canal Instagram através das histórias (Stories). Por isso, não te esqueças de verificar regularmente as tuas notificações: talvez hoje seja o teu dia de sorte",
-            "A #CodeWeekDance baseia-se na",
+            "A #EUCodeWeekDance baseia-se na",
             "Ode to Code",
             "composta por Brendan Paolini, e na dança desenvolvida por Bianca Maria Berardi em 2015, a partir de uma ideia de Alessandro Bogliolo, professor de Informática na Universidade de Urbino"
         ],
@@ -123,7 +123,7 @@ return [
                 "abre o jogo",
                 "e digitaliza o código QR, que te levará à aplicação Telegram e te dará o primeiro conjunto de instruções",
                 "Para ganhar, tens de resolver 10 desafios de programação e de encontrar 10 locais no mapa da Europa relacionados com o desenvolvimento da programação e da tecnologia",
-                "Depois de completares o jogo, podes partilhar a tua pontuação com os teus amigos utilizando a hashtag #CodeWeek e desafiá-los a jogarem também e a descobrirem a história da programação. Vamos ver quem obtém a melhor pontuação",
+                "Depois de completares o jogo, podes partilhar a tua pontuação com os teus amigos utilizando a hashtag #EUCodeWeek e desafiá-los a jogarem também e a descobrirem a história da programação. Vamos ver quem obtém a melhor pontuação",
                 "A caça ao tesouro da Semana Europeia da Programação é a versão virtual da caça ao tesouro original, que foi criada pela primeira vez por Alessandro Bogliolo, Professor de Sistemas Informáticos na Universidade de Urbino. Para mais informações sobre o jogo original, visita o nosso",
                 "blog"
 
@@ -145,11 +145,11 @@ return [
             "o Professor de Sistemas Informáticos na Universidade de Urbino e coordenador dos",
             "embaixadores da Semana Europeia da Programação",
             "dar-te-á mais informações sobre a caça ao tesouro da Semana Europeia da Programação",
-            "e xxx desvendará as linhas principais do novo desafio #CodeWeekDance ",
+            "e xxx desvendará as linhas principais do novo desafio #EUCodeWeekDance ",
             "Vamos também estar em contacto com escolas e estudantes de toda a Europa, que irão partilhar as suas histórias sobre programação e trocar ideias com os oradores convidados",
             "Também terás a oportunidade de partilhar as tuas ideias e de fazer perguntas. Só precisas de te ligar à nossa transmissão em direto em",
             "ou",
-            "em 8 de outubro de 2020, às 17:00 - 18:30 CET, e deixar o teu comentário ou twittar com o hashtag #CodeWeek",
+            "em 8 de outubro de 2020, às 17:00 - 18:30 CET, e deixar o teu comentário ou twittar com o hashtag #EUCodeWeek",
         ]
     ],
     "get-involved"=>[

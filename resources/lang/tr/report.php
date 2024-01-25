@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => '#CodeWeek etkinliğinizi raporlayın',
+    'title' => '#EUCodeWeek etkinliğinizi raporlayın',
     'event_title' => 'Etkinlik başlığı',
     'number_required' => 'Elinizde net veriler olmasa bile lütfen yaklaşık bilgiler verin.',
     'phrase1' => 'Bu formu sadece bir kez doldurabilirsiniz! Bilgilerinizi dikkatle kontrol edin. Hata yaparsanız, ',

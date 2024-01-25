@@ -4,11 +4,11 @@
 return [
 
     'title' => 'Ghid',
-    'organise_activity' => 'Organizați-vă propria activitate cu #CodeWeek',
+    'organise_activity' => 'Organizați-vă propria activitate cu #EUCodeWeek',
     'register_activity' => 'Înregistrați-vă activitatea aici',
     'what' => [
         'title' => 'Ce este Săptămâna UE a programării?',
-        'content' => '<p>Săptămâna UE a programării este o mișcare de bază organizată de voluntari și sprijinită de Comisia Europeană. Oricine – școli, profesori, biblioteci, cluburi de programare, întreprinderi, autorități publice – poate organiza o activitate #CodeWeek pe care să o adauge pe harta de pe site-ul <a href="/events">codeweek.eu</a>.</p>'
+        'content' => '<p>Săptămâna UE a programării este o mișcare de bază organizată de voluntari și sprijinită de Comisia Europeană. Oricine – școli, profesori, biblioteci, cluburi de programare, întreprinderi, autorități publice – poate organiza o activitate #EUCodeWeek pe care să o adauge pe harta de pe site-ul <a href="/events">codeweek.eu</a>.</p>'
     ],
     'what_you_need_organise' => [
         'title' => 'De ce aveți nevoie pentru a organiza o activitate?',
@@ -31,7 +31,7 @@ return [
             '1' => 'Formatul evenimentului dumneavoastră de programare este la latitudinea dumneavoastră, dar vă recomandăm să includeți <strong>activități practice</strong>, care să le permită participanților să creeze pe cont propriu și/sau să meșterească cu componente hardware.',
             '2' => 'Folosiți <strong>instrumente și tehnologii</strong> adecvate pentru grupul dumneavoastră țintă. Recomandăm utilizarea <a href="http://codeweek.eu/resources/">materialelor disponibile în mod gratuit</a>, de tip open source.',
             '3' => 'Încurajați participanții <strong>să le arate și să le prezinte</strong> celorlalți ce au creat la sfârșitul evenimentului dumneavoastră.',
-            '4' => '<strong>Răspândiți vestea!</strong> Promovați și partajați pe rețelele de socializare ce ați făcut în timpul activității, folosind hashtagul #CodeWeek. Puteți partaja, de asemenea, în <a
+            '4' => '<strong>Răspândiți vestea!</strong> Promovați și partajați pe rețelele de socializare ce ați făcut în timpul activității, folosind hashtagul #EUCodeWeek. Puteți partaja, de asemenea, în <a
                         href="https://www.facebook.com/groups/774720866253044/">Grupul profesorilor Săptămânii UE a programării</a> și pe Twitter (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Vorbiți-le prietenilor, colegilor cadre didactice, presei locale și dați un comunicat de presă.',
             '5' => 'Nu uitați să vă <a href="/add">adăugați activitatea</a> pe <a href="/events">harta Săptămânii programării</a>!',
         ]
@@ -51,7 +51,7 @@ return [
     ],
     'questions' => [
         'title' => 'Întrebări?',
-        'content' => '<p>Dacă aveți întrebări cu privire la organizarea și promovarea evenimentului dumneavoastră #CodeWeek, luați legătura cu unul dintre <a href="/ambassadors">ambasadorii Săptămânii UE a programării</a> din țara dumneavoastră.</p>'
+        'content' => '<p>Dacă aveți întrebări cu privire la organizarea și promovarea evenimentului dumneavoastră #EUCodeWeek, luați legătura cu unul dintre <a href="/ambassadors">ambasadorii Săptămânii UE a programării</a> din țara dumneavoastră.</p>'
     ]
 
 ];

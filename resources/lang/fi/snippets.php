@@ -24,8 +24,8 @@ return [
     ],
     "dance" => [
         "menu" => "Tanssihaaste",
-        "subtitle" => "Eivätkö ohjelmoijat muka osaa tanssia? Todistamme oletuksen vääräksi #CodeWeekDance-haasteella.",
-        "content" => "Kutsumme koulut, opettajat, kirjastot, koodauskerhot, yritykset, viranomaiset ja kaikki muutkin viettämään EU:n koodausviikkoa ja osallistumaan tanssihaasteeseen. Järjestäkää oma tehtävä tai tapahtuma tunnuksella #CodeWeekDance ja lisätkää se koodausviikon tapahtumakartalle."
+        "subtitle" => "Eivätkö ohjelmoijat muka osaa tanssia? Todistamme oletuksen vääräksi #EUCodeWeekDance-haasteella.",
+        "content" => "Kutsumme koulut, opettajat, kirjastot, koodauskerhot, yritykset, viranomaiset ja kaikki muutkin viettämään EU:n koodausviikkoa ja osallistumaan tanssihaasteeseen. Järjestäkää oma tehtävä tai tapahtuma tunnuksella #EUCodeWeekDance ja lisätkää se koodausviikon tapahtumakartalle."
     ],
     "treasure-hunt" => [
         "menu" => "Aarteenetsintä",

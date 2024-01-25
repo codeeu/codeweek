@@ -190,7 +190,7 @@ return [
         12 => [
             "title" => "About CODEWEEK.EU",
             "content" => [
-                "EU Code Week (#CodeWeek) is a grassroots movement run by volunteers to promote digital literacy through activities linked to coding and computer science. It inspires and engages people to explore new ideas and innovation for the future. Activities for ",
+                "EU Code Week (#EUCodeWeek) is a grassroots movement run by volunteers to promote digital literacy through activities linked to coding and computer science. It inspires and engages people to explore new ideas and innovation for the future. Activities for ",
                 "EU Code Week",
                 "take place all over the world between 9 and 24 October. ",
                 "The idea of the EU Code Week Hackathon is to show how concrete solutions come to life with the help of young people’s creativity, enthusiasm, fresh ideas and coding skills. The hackathons are created and co-organised by the",

@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Edita tu evento #CodeWeek',
+    'title' => 'Edita tu evento #EUCodeWeek',
     'required_fields' => 'Los campos requeridos aparecen marcados con un asterisco (*). No dudes en añadir el listado de eventos en tu idioma local.',
     'description' => 'Descripción',
     'audience' => 'Público',

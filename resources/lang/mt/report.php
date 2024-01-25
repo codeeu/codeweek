@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Irrapporta l-avveniment tiegħek ta’ #CodeWeek',
+    'title' => 'Irrapporta l-avveniment tiegħek ta’ #EUCodeWeek',
     'event_title' => 'Titlu tal-avveniment',
     'number_required' => 'Jekk jogħġbok ipprovdi stima approssimattiva anki jekk m’għandekx id-data eżatta.',
     'phrase1' => 'Tista’ timla din il-formola darba biss! Jekk jogħġbok iċċekkja d-data tiegħek sew. Jekk tagħmel żball, ',

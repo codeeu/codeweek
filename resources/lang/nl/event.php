@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => 'Voeg jouw #CodeWeek-evenement toe',
+    'main_title' => 'Voeg jouw #EUCodeWeek-evenement toe',
     'button' => 'Evenement toevoegen',
     'howto' => 'Je eigen evenement organiseren',
     'required' => 'Verplichte velden zijn gemarkeerd met een sterretje (*). Je kunt de vermelding van het evenement ook in je lokale taal toevoegen.',

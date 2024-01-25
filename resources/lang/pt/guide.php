@@ -4,11 +4,11 @@
 return [
 
     'title' => 'Guia',
-    'organise_activity' => 'Organize a sua própria atividade com a #CodeWeek',
+    'organise_activity' => 'Organize a sua própria atividade com a #EUCodeWeek',
     'register_activity' => 'Inscreva a sua atividade aqui',
     'what' => [
         'title' => 'O que é a Semana Europeia da Programação?',
-        'content' => '<p>A Semana Europeia da Programação é um movimento popular levado a cabo por voluntários e apoiado pela Comissão Europeia. Qualquer entidade — escolas, professores, bibliotecas, grupos de programadores, empresas, autoridades públicas — pode organizar uma atividade #CodeWeek e adicioná-la ao mapa do <a href="/events">codeweek.eu</a>.</p>'
+        'content' => '<p>A Semana Europeia da Programação é um movimento popular levado a cabo por voluntários e apoiado pela Comissão Europeia. Qualquer entidade — escolas, professores, bibliotecas, grupos de programadores, empresas, autoridades públicas — pode organizar uma atividade #EUCodeWeek e adicioná-la ao mapa do <a href="/events">codeweek.eu</a>.</p>'
     ],
     'what_you_need_organise' => [
         'title' => 'O que é preciso para organizar uma atividade?',
@@ -31,7 +31,7 @@ return [
             '1' => 'O formato do seu evento de programação é deixado ao seu critério, mas recomendamos que inclua um <strong>período de trabalho prático</strong>, durante o qual os participantes possam criar por sua iniciativa e/ou trabalhar com <i>hardware</i>.',
             '2' => 'Utilize <strong>ferramentas e tecnologias</strong> adequadas ao seu grupo-alvo. Recomendamos que utilize <a href="http://codeweek.eu/resources/">materiais de fonte aberta disponibilizados gratuitamente</a>.',
             '3' => 'No final do evento, incentive os participantes a <strong>mostrarem e apresentarem</strong> entre si as suas criações.',
-            '4' => '<strong>Passe a palavra!</strong> Promova e partilhe o que fez durante a sua atividade nas redes sociais utilizando a <i>hashtag</i> #CodeWeek. Também pode partilhar no <a
+            '4' => '<strong>Passe a palavra!</strong> Promova e partilhe o que fez durante a sua atividade nas redes sociais utilizando a <i>hashtag</i> #EUCodeWeek. Também pode partilhar no <a
                                 href="https://www.facebook.com/groups/774720866253044/">grupo de professores da Semana Europeia da Programação</a> e no Twitter (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Fale com os seus amigos, com colegas professores e com a imprensa local e escreva um comunicado de imprensa.',
             '5' => 'Não se esqueça de <a href="/add">adicionar a sua atividade</a> ao <a href="/events">mapa da Semana da Programação</a>!'
         ]
@@ -51,7 +51,7 @@ return [
     ],
     'questions' => [
         'title' => 'Dúvidas?',
-        'content' => '<p>Se tiver dúvidas sobre como organizar e promover seu evento #CodeWeek, contacte um dos <a href="/ambassadors">embaixadores da Semana Europeia da Programação</a> do seu país.</p>'
+        'content' => '<p>Se tiver dúvidas sobre como organizar e promover seu evento #EUCodeWeek, contacte um dos <a href="/ambassadors">embaixadores da Semana Europeia da Programação</a> do seu país.</p>'
     ]
 
 ];

@@ -11,7 +11,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => 'Tilføj dit #CodeWeek-arrangement',
+    'main_title' => 'Tilføj dit #EUCodeWeek-arrangement',
     'button' => 'Tilføj arrangement',
     'howto' => 'Sådan afholder man sit eget arrangement',
     'required' =>

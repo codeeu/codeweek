@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Presenta il tuo evento #CodeWeek',
+    'title' => 'Presenta il tuo evento #EUCodeWeek',
     'event_title' => 'Titolo evento',
     'number_required' => 'Ti preghiamo di fornire una stima approssimativa, anche se non disponi di dati esatti.',
     'phrase1' => 'Puoi compilare questo modulo solo una volta! Ti preghiamo di controllare i dati con attenzione. Se commetti un errore, ',

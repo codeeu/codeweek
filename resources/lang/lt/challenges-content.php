@@ -303,7 +303,7 @@ return [
             'nuorodą',
             '– o pamokos planą anglų kalba – spustelėję šią',
             'Šios pamokos užduotis galima atlikti individualiai ir bet kokia tvarka',
-            'Mokytojas (-a) gali nufotografuoti mokymosi procesą ir bendrinti nuotrauką „Instagram“ su grotažyme #CodeWeekChallengeGoogle #GrowWithGoogle'
+            'Mokytojas (-a) gali nufotografuoti mokymosi procesą ir bendrinti nuotrauką „Instagram“ su grotažyme #EUCodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Be užduočių knygutės, tam tikroms užduotims atlikti reikia papildomos medžiagos. Papildomą medžiagą galima naudoti ir savanoriškai.',
@@ -476,7 +476,7 @@ return [
         'instructions' => [
             'Pirmiausia sukurkite planą ir nustatykite pratimų eiliškumą. Naudodami tvarkaraštį, užprogramuokite „Calliope mini“ RGB šviesos diodą, kad jis nustatytu greičiu rodytų vieną iš penkių spalvų. Tada sukurkite greičio kintamąjį ir naudodami ciklus suprogramuokite pasikartojimus.',
             "Nepamirškite, kad jei sukūrėte jums patinkančią programą, galite ja pasidalyti su mumis adresu info@calliope.cc. Mes nekantraujame pamatyti jūsų darbus! Beje, pasidalijusiems savo projektais padovanosime 30 valdiklių „Calliope mini“!",
-            "Pasidalykite savo projekto QR kodu „Instagram“, pridėkite grotažymę #CodeWeekChallenge ir paminėkite @CodeWeekEU.",
+            "Pasidalykite savo projekto QR kodu „Instagram“, pridėkite grotažymę #EUCodeWeekChallenge ir paminėkite @CodeWeekEU.",
         ],
         'example' => [
             'Sėdėdami prie kompiuterio galite ir pasportuoti.',
@@ -486,7 +486,7 @@ return [
 
     ],
     'common' => [
-        'share' => 'Pasidalykite savo projekto nuoroda arba QR kodu „Instagram“, pridėkite grotažymę #CodeWeekChallenge ir paminėkite @CodeWeekEU.',
+        'share' => 'Pasidalykite savo projekto nuoroda arba QR kodu „Instagram“, pridėkite grotažymę #EUCodeWeekChallenge ir paminėkite @CodeWeekEU.',
         'audience' => [
             'Mokytojai ir kiti pedagogai',
             'Pradinės mokyklos moksleiviai (6–12 metų)',

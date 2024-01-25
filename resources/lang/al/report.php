@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Raportoni evenimentin tuaj të #CodeWeek',
+    'title' => 'Raportoni evenimentin tuaj të #EUCodeWeek',
     'event_title' => 'Titulli i evenimentit',
     'number_required' => 'Jepni një përllogaritje të përafërt, edhe nëse nuk keni të dhëna të sakta.',
     'phrase1' => 'Këtë formular mund ta plotësoni vetëm një herë! Kontrolloni me kujdes të dhënat tuaja. Nëse bëni një gabim, ',

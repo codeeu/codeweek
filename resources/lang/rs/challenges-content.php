@@ -296,7 +296,7 @@ return [
             'vezi',
             'kao i plan lekcija na engleskom na ovoj',
             'Aktivnosti u ovoj lekciji mogu biti dovršene pojedinačno i u bilo kom redosledu',
-            'Nastavnik može da slika proces učenja i da ga podeli na Instagramu koristeći #CodeWeekChallengeGoogle #GrowWithGoogle'
+            'Nastavnik može da slika proces učenja i da ga podeli na Instagramu koristeći #EUCodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Pored brošure o aktivnostima, neke aktivnosti zahtevaju ili opciono imaju koristi od dodatnih materijala.',
@@ -471,7 +471,7 @@ return [
         'instructions' => [
             'Kako biste započeli, napravite plan i odredite redoslijed jedinica za vježbu. Koristeći raspored, programirajte RGB LED na Calliope mini tako da prikazuje jednu od 5 boja unaprijed definisanim tempom. Zatim kreirajte promjenljivu za tempo i programska ponavljanja koristeći petlje.',
             "Zapamtite, ako ste implementirali program na način koji vam se dopada, možete ga podijeliti i sa nama na info@calliope.cc - uzbuđeni smo da vidimo šta mislite o tome! Usput, poklanjamo 30 Calliope mini među podnesenim zahtjevima!",
-            "Podijelite QR kod vašeg projekta na Instagramu, dodajte hashtag #CodeWeekChallenge i tagujte/pomenite @CodeWeekEU.",
+            "Podijelite QR kod vašeg projekta na Instagramu, dodajte hashtag #EUCodeWeekChallenge i tagujte/pomenite @CodeWeekEU.",
         ],
         'example' => [
             'I vi možete da se bavite sportom dok sjedite za računarom.',
@@ -481,7 +481,7 @@ return [
 
     ]
 ,  'common' => [
-        'share' => 'Podelite vezu ili QR kod vašeg projekta na Instagramu ili Facebooku, dodajte heštag #CodeWeekChallenge i spomenite @CodeWeekEU.',
+        'share' => 'Podelite vezu ili QR kod vašeg projekta na Instagramu ili Facebooku, dodajte heštag #EUCodeWeekChallenge i spomenite @CodeWeekEU.',
         'audience' => [
             'Nastavnici i obrazovni kadar',
             'Učenici osnovne škole (6 do 12 godina)',

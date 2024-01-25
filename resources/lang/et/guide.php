@@ -4,11 +4,11 @@
 return [
 
     'title' => 'Juhend',
-    'organise_activity' => 'Korraldage programmeerimisnädala #CodeWeek raames oma tegevus',
+    'organise_activity' => 'Korraldage programmeerimisnädala #EUCodeWeek raames oma tegevus',
     'register_activity' => 'Registreerige oma tegevus siin',
     'what' => [
         'title' => 'Mida programmeerimisnädal Code Week endast kujutab?',
-        'content' => '<p>ELi programmeerimisnädal Code Week on rohujuuretasandil vabatahtlike korraldatud liikumine, mida toetab Euroopa Komisjon. Kõik koolid, õpetajad, raamatukogud, programmeerimisklubid, ettevõtted ja ametiasutused võivad luua #CodeWeek ürituse ja lisada selle veebisaidi <a href="/events">codeweek.eu</a> kaardile.</p>'
+        'content' => '<p>ELi programmeerimisnädal Code Week on rohujuuretasandil vabatahtlike korraldatud liikumine, mida toetab Euroopa Komisjon. Kõik koolid, õpetajad, raamatukogud, programmeerimisklubid, ettevõtted ja ametiasutused võivad luua #EUCodeWeek ürituse ja lisada selle veebisaidi <a href="/events">codeweek.eu</a> kaardile.</p>'
     ],
     'what_you_need_organise' => [
         'title' => 'Mida on vaja tegevuse korraldamiseks?',
@@ -31,7 +31,7 @@ return [
             '1' => 'Valige ise oma programmeerimisürituse formaat, kuid soovitame eraldada veidi aega ka <strong>praktiliseks tööks</strong>, et osalejad saaksid ka omal käel luua ja/või natuke riistvara kallal nokitseda.',
             '2' => 'Kasutage oma sihtrühmale sobivaid <strong>vahendeid ja tehnoloogiaid</strong>. Meie soovitame kasutada <a href="http://codeweek.eu/resources/">tasuta kättesaadavat vabavara</a>.',
             '3' => 'Paluge osalejatel ürituse lõppedes oma töid <strong>näidata ja esitleda</strong>.',
-            '4' => '<strong>Kuulutage uudist!</strong> Reklaamige ja jagage suhtlusmeedias teateid oma tegevusest, kasutades teemaviidet #CodeWeek. Teavet saate jagada ka <a
+            '4' => '<strong>Kuulutage uudist!</strong> Reklaamige ja jagage suhtlusmeedias teateid oma tegevusest, kasutades teemaviidet #EUCodeWeek. Teavet saate jagada ka <a
                         href="https://www.facebook.com/groups/774720866253044/">ELi programmeerimisnädala Code Week õpetajate rühmas</a> ja Twitteris (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Rääkige oma sõprade, teiste haridustöötajate ja ajakirjandusega ning koostage pressiteade!',
             '5' => 'Ärge unustage lisada <a href="/add">oma tegevust</a> programmeerimisnädala <a href="/events">Code Week kaardile</a>!',
         ]
@@ -51,7 +51,7 @@ return [
     ],
     'questions' => [
         'title' => 'Küsimusi?',
-        'content' => '<p>Kui teil on küsimusi selle kohta, kuidas korraldada ja reklaamida oma #CodeWeek üritust, siis võtke ühendust oma riigi <a href="/ambassadors">ELi programmeerimisnädala Code Week saadikutega</a>.</p>'
+        'content' => '<p>Kui teil on küsimusi selle kohta, kuidas korraldada ja reklaamida oma #EUCodeWeek üritust, siis võtke ühendust oma riigi <a href="/ambassadors">ELi programmeerimisnädala Code Week saadikutega</a>.</p>'
     ]
 
 ];

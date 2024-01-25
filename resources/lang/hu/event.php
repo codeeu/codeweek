@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => 'A #CodeWeek eseménye hozzáadása',
+    'main_title' => 'A #EUCodeWeek eseménye hozzáadása',
     'button' => 'Esemény hozzáadása',
     'howto' => 'Hogyan szervezze meg eseményét',
     'required' => 'A kötelezõ mezõk *-gal vannak jelölve. Nyugodtan adja meg az eseményt a helyi nyelven.',
