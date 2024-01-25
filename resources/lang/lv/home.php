@@ -3,7 +3,7 @@
 return [
     'about' =>
         'ES programmēšanas nedēļa ir iedzīvotāju iniciatīva, kuras mērķis ir iepazīstināt ikvienu ar programmēšanu un digitālo pratību interesantā un saistošā veidā.',
-    'when' => '2023. gada 7.-22. oktobrī',
+    'when' => '2024. gada 14.-27. oktobrī',
     'when_text' =>
         'Iemācoties programmēt, mēs spējam labāk izprast strauji mainīgo pasauli ap mums, uzlabot savu izpratni par to, kā darbojas tehnoloģijas, un attīstīt prasmes un spējas, lai izpētītu jaunas idejas un radītu inovācijas.',
     'school_banner_title' => 'Iesaisties!',
