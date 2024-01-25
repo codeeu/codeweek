@@ -4,11 +4,11 @@
 return [
 
     'title' => 'Udhëzues',
-    'organise_activity' => 'Organizimi i aktivitetit tuaj me #CodeWeek',
+    'organise_activity' => 'Organizimi i aktivitetit tuaj me #EUCodeWeek',
     'register_activity' => 'Regjistroni këtu aktivitetin tuaj',
     'what' => [
         'title' => 'Çfarë është EU Code Week?',
-        'content' => '<p>EU Code Week është një lëvizje në terren e organizuar nga vullnetarë dhe e mbështetur nga Komisioni Evropian. Kushdo - shkollat, mësuesit, bibliotekat, klubet e kodimit, bizneset, autoritetet publike - mund të organizojë një aktivitet të #CodeWeek dhe ta shtojë atë në hartën e <a href="/events">codeweek.eu</a>.</p>'
+        'content' => '<p>EU Code Week është një lëvizje në terren e organizuar nga vullnetarë dhe e mbështetur nga Komisioni Evropian. Kushdo - shkollat, mësuesit, bibliotekat, klubet e kodimit, bizneset, autoritetet publike - mund të organizojë një aktivitet të #EUCodeWeek dhe ta shtojë atë në hartën e <a href="/events">codeweek.eu</a>.</p>'
     ],
     'what_you_need_organise' => [
         'title' => 'Çfarë ju nevojitet për të organizuar një aktivitet?',
@@ -31,7 +31,7 @@ return [
             '1' => 'Formati i evenimentit të kodimit varet prej jush, por rekomandojmë që të përfshini <strong>një kohë praktike</strong>, ku pjesëmarrësit të mund të krijojnë vetë ose të provojnë të riparojnë një harduer.',
             '2' => 'Përdorni <strong>mjetet dhe teknologjitë</strong> e duhura për grupin tuaj të synuar. Rekomandojmë që të përdorni <a href="http://codeweek.eu/resources/">materiale “open source” që disponohen falas</a>.',
             '3' => 'Inkurajojini pjesëmarrësit në fund të evenimentit <strong>t’i tregojnë dhe t’i prezantojnë</strong> njëri-tjetrit se çfarë kanë krijuar.',
-            '4' => '<strong>Përhapni lajmin!</strong> Promovoni dhe ndani çfarë bëtë gjatë aktivitetit tuaj në mediat sociale duke përdorur hashtagun #CodeWeek. Gjithashtu mund të ndani në <a
+            '4' => '<strong>Përhapni lajmin!</strong> Promovoni dhe ndani çfarë bëtë gjatë aktivitetit tuaj në mediat sociale duke përdorur hashtagun #EUCodeWeek. Gjithashtu mund të ndani në <a
                                 href="https://www.facebook.com/groups/774720866253044/">Grupin e mësuesve të EU Code Week</a> dhe në Twitter (<a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a>). Flisni me miqtë tuaj, kolegët mësues, shtypin vendas, bëni një njoftim për shtyp.',
             '5' => 'Mos harroni të <a href="/add">shtoni aktivitetin tuaj</a> në <a href="/events">hartën e Code Week</a>!'
         ]
@@ -51,7 +51,7 @@ return [
     ],
     'questions' => [
         'title' => 'Pyetje?',
-        'content' => '<p>Nëse keni pyetje rreth organizimit dhe promovimit të evenimentit tuaj të #CodeWeek, kontaktoni me një prej <a href="/ambassadors">ambasadorëve të EU Code Week</a> nga vendi juaj.</p>'
+        'content' => '<p>Nëse keni pyetje rreth organizimit dhe promovimit të evenimentit tuaj të #EUCodeWeek, kontaktoni me një prej <a href="/ambassadors">ambasadorëve të EU Code Week</a> nga vendi juaj.</p>'
     ]
 
 ];

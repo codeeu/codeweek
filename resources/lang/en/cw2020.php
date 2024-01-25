@@ -7,7 +7,7 @@ return [
         "moves" => "The movements",
         "dance-example" => "An example of the Code Week Dance",
         "organizer-guide" => "organiser’s guide",
-        "scratch-tutorial" => "#CodeWeekDance Scratch Tutorial"
+        "scratch-tutorial" => "#EUCodeWeekDance Scratch Tutorial"
     ],
     "title" => [
         "EU Code Week",
@@ -43,11 +43,11 @@ return [
 
     "dance" => [
         "title" => "Code Week Dance",
-        "subtitle" => "Who said programmers couldn't dance? To celebrate the 2020 edition of Code Week, we are launching a new activity - the #CodeWeekDance challenge",
+        "subtitle" => "Who said programmers couldn't dance? To celebrate the 2020 edition of Code Week, we are launching a new activity - the #EUCodeWeekDance challenge",
         "section1" => [
             "title" => "Who can join?",
             "content" => [
-                "Everyone from schools, teachers, libraries to code clubs, businesses and public authorities are invited to celebrate EU Code Week 2020 by organising a #CodeWeekDance activity and adding it to the",
+                "Everyone from schools, teachers, libraries to code clubs, businesses and public authorities are invited to celebrate EU Code Week 2020 by organising a #EUCodeWeekDance activity and adding it to the",
                 "Code Week map",
             ]
         ],
@@ -57,7 +57,7 @@ return [
         ],
         "activity1" => [
             "title" => "Programme a friend or a parent - no computer needed",
-            "subtitle" => "Coding lets you give commands to an electronic device. But technically, you don’t need a computer to be able to code. Instead, grab a partner – it can be your classmate, a friend, a parent or even a teacher, and give them instructions how to perform the #CodeWeekDance, which they need to follow precisely",
+            "subtitle" => "Coding lets you give commands to an electronic device. But technically, you don’t need a computer to be able to code. Instead, grab a partner – it can be your classmate, a friend, a parent or even a teacher, and give them instructions how to perform the #EUCodeWeekDance, which they need to follow precisely",
             "resources" => [
                 "A guide by Code.org to organise your unplugged Dance Party",
                 "A learning bit on how to program your human-robot",
@@ -67,9 +67,9 @@ return [
 
         "activity2" => [
             "title" => "Visual Programmming",
-            "subtitle" => "Code your Code Week dance in Scratch. Use the Code Week characters or make your own in Scratch and programme them to do the #CodeWeekDance",
+            "subtitle" => "Code your Code Week dance in Scratch. Use the Code Week characters or make your own in Scratch and programme them to do the #EUCodeWeekDance",
             "resources" => [
-                "An example of a Scratch #CodeWeekDance project",
+                "An example of a Scratch #EUCodeWeekDance project",
                 "The Code Week characters",
                 "A guide from Code.org on how to animate a character",
                 "A guide by Code.org to organise your Dance Party",
@@ -77,7 +77,7 @@ return [
             ]
         ], "activity3" => [
             "title" => "Text-based programming",
-            "subtitle" => "Produce the #CodeWeekDance theme with Python or JavaScript, using code-based music creation platforms like EarSketch or Sonic Pi",
+            "subtitle" => "Produce the #EUCodeWeekDance theme with Python or JavaScript, using code-based music creation platforms like EarSketch or Sonic Pi",
             "resources" => [
                 "A tutorial on how to produce music with EarSketch",
                 "A tutorial on how to create music with Sonic Pi",
@@ -92,17 +92,17 @@ return [
             ]
         ], "activity5" => [
             "title" => "Live Dance Challenge",
-            "subtitle" => "Record a video of yourself, your team or your robot performing the #CodeWeekDance, share it on Instagram and get a shot at going viral and winning some Code week goodies! Interested? Follow these steps:",
+            "subtitle" => "Record a video of yourself, your team or your robot performing the #EUCodeWeekDance, share it on Instagram and get a shot at going viral and winning some Code week goodies! Interested? Follow these steps:",
             "resources" => [
                 "Record the video using Instagram Stories",
                 "Follow",
                 "@CodeWeekEU on Instagram",
-                "Mention @CodeWeekEU in your story with the dance and make sure to use the hashtag #CodeWeekDance",
+                "Mention @CodeWeekEU in your story with the dance and make sure to use the hashtag #EUCodeWeekDance",
             ]
         ],
         "outro" => [
             "Winners will be selected every day and announced on our Instagram channel via Stories, so don't forget to check your notifications regularly, you might just run into good luck today",
-            "The #CodeWeekDance is based on the",
+            "The #EUCodeWeekDance is based on the",
             "Ode to Code",
             "composed by Brendan Paolini, and the dance developed by Bianca Maria Berardi in 2015, from an idea of Alessandro Bogliolo, Professor of Computer Systems at the University of Urbino"
         ],
@@ -125,7 +125,7 @@ return [
                 "open the game",
                 "and scan the QR code that will take you to the Telegram app and give you the first set of instructions",
                 "To win, you need to solve 10 coding challenges and find 10 locations on the map of Europe that are linked to the rise of coding and technology",
-                "After you complete the game, share your your score with your friends using #CodeWeek and challenge them to play and learn about the history of coding too. Let's see who scores the top results",
+                "After you complete the game, share your your score with your friends using #EUCodeWeek and challenge them to play and learn about the history of coding too. Let's see who scores the top results",
                 "The Code Week Treasure Hunt is the virtual version of the original EU Code Week Treasure Hunt which was first developed by Alessandro Bogliolo, Professor of Computer Systems at the University of Urbino. To learn more about his original game, visit our",
                 "blog"
 
@@ -147,11 +147,11 @@ return [
             "Professor of Computer Systems at the University of Urbino and coordinator of the",
             "Code Week ambassadors",
             "will be telling you more about the Code Week virtual Treasure Hunt",
-            "And xxx will give you the heads-up on the new #CodeWeekDance challenge",
+            "And xxx will give you the heads-up on the new #EUCodeWeekDance challenge",
             "We will also be connecting with schools and students from all over Europe who will be sharing their coding stories and exchanging ideas with the guest speakers",
             "You will also have the chance to share your thoughts, ideas and ask your questions. All you need to do is tune in to our live stream on",
             "or",
-            "on 8 October 2020 at 17:00-18.30 CET and comment or tweet with the #CodeWeek hashtag",
+            "on 8 October 2020 at 17:00-18.30 CET and comment or tweet with the #EUCodeWeek hashtag",
         ]
     ],
     "get-involved" => [

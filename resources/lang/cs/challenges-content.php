@@ -296,7 +296,7 @@ return [
             'odkazem',
             'a učební plán v angličtině pod tímto',
             'Aktivity v této lekci lze provádět jednotlivě a v jakémkoli pořadí',
-            'Učitel může během výuky pořídit fotky a sdílet je na Instagramu s hashtagem #CodeWeekChallengeGoogle #GrowWithGoogle'
+            'Učitel může během výuky pořídit fotky a sdílet je na Instagramu s hashtagem #EUCodeWeekChallengeGoogle #GrowWithGoogle'
         ],
         'materials' => [
             'Kromě brožury s aktivitami jsou pro některé aktivity vyžadovány nebo doporučovány další materiály.',
@@ -471,7 +471,7 @@ return [
         'instructions' => [
             'Chcete-li začít, vytvořte si plán a určete pořadí cvičebních jednotek. Pomocí plánu naprogramujte LED diodu RGB zařízení Calliope mini tak, aby v předem stanoveném tempu zobrazovala jednu z 5 barev. Poté vytvořte proměnnou pro tempo a naprogramujte opakování pomocí smyček.',
             "Nezapomeňte, že pokud jste program zavedli způsobem, který se vám líbí, můžete se o něj podělit i s námi na info@calliope.cc-jsme zvědaví, jak ho využijete! Mimochodem, mezi přihlášenými rozdáváme 30 miniatur Calliope!",
-            "Sdílejte QR kód svého projektu na Instagramu, přidejte hashtag #CodeWeekChallenge a uveďte @CodeWeekEU.",
+            "Sdílejte QR kód svého projektu na Instagramu, přidejte hashtag #EUCodeWeekChallenge a uveďte @CodeWeekEU.",
         ],
         'example' => [
             'Zatímco sedíte u počítače: můžete si také zasportovat.',
@@ -483,7 +483,7 @@ return [
 
 
     'common' => [
-        'share' => 'Sdílejte odkaz nebo QR kód svého projektu na Instagramu nebo Facebooku, přidejte hashtag #CodeWeekChallenge a zmiňte @CodeWeekEU.',
+        'share' => 'Sdílejte odkaz nebo QR kód svého projektu na Instagramu nebo Facebooku, přidejte hashtag #EUCodeWeekChallenge a zmiňte @CodeWeekEU.',
         'audience' => [
             'Učitelé a pedagogové',
             'Žáci prvního stupně základní školy (6 až 12 let)',

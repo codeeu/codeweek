@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'V roku 2023 sa Európsky týždeň programovania koná od 7. do 22. októbra.',
+        'V roku 2024 sa Európsky týždeň programovania koná od 14. do 27. októbra.',
     'when-text' =>
         '<p>Európsky týždeň programovania je nezávislé hnutie, ktoré oslavuje tvorivosť, riešenie problémov a spoluprácu prostredníctvom programovania a ďalších technologických aktivít. Zámerom je viac zviditeľniť programovanie, ukázať mladým, dospelým a starším ľuďom, ako vdýchnuť život nápadom pomocou programovania, rúcať mýty o týchto zručnostiach a spojiť motivovaných ľudí, aby sa spolu vzdelávali.</p>',
     'codeweek_in_numbers-title' => 'Týždeň programovania v číslach',

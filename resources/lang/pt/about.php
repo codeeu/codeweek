@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'Em 2023, a Semana Europeia da Programação irá decorrer entre 7 e 22 de outubro.',
+        'Em 2024, a Semana Europeia da Programação irá decorrer entre 14 e 27 de outubro.',
     'codeweek_in_numbers-title' => 'Semana da Programação em números',
     'run_by_volunteers-title' => 'Executada por voluntários',
     'supported_by_commission-title' => 'Apoiada pela Comissão Europeia',

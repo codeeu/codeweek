@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'Vuonna 2023 EU:n koodausviikko järjestetään 7.– 22. lokakuuta.',
+        'Vuonna 2024 EU:n koodausviikko järjestetään 14.– 27. lokakuuta.',
     'when-text' =>
         '<p>EU:n koodausviikko on ruohonjuuritason hanke, jolla edistetään luovuutta, ongelmanratkaisukykyä ja yhteistyötä ohjelmoinnin ja muiden tekniikan alan tapahtumien kautta. Ajatuksena on tehdä ohjelmointia tunnetuksi ja näyttää nuorille, aikuisille ja senioreille, miten ideat voidaan herättää henkiin koodin avulla. Tavoitteena on myös hälventää koodaukseen kohdistuvaa mystiikkaa ja tuoda motivoituneet ihmiset oppimaan yhdessä.</p>',
     'codeweek_in_numbers-title' => 'Koodausviikko lukuina',

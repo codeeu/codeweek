@@ -41,11 +41,11 @@ return [
 
     "dance" => [
         "title" => "Code Week Dance",
-        "subtitle" => "Kush tha se programuesit nuk dinë të kërcejnë? Për të festuar edicionin e vitit 2020 të Code Week, po prezantojmë një aktivitet të ri - sfidën #CodeWeekDance",
+        "subtitle" => "Kush tha se programuesit nuk dinë të kërcejnë? Për të festuar edicionin e vitit 2020 të Code Week, po prezantojmë një aktivitet të ri - sfidën #EUCodeWeekDance",
         "section1" => [
             "title" => "Kush mund të bashkohet?",
             "content" => [
-                "Të gjithë nga shkollat, mësuesit, bibliotekat deri te klubet e kodimit, bizneset dhe autoritetet publike janë të ftuar të festojnë EU Code Week 2020 duke organizuar një aktivitetet #CodeWeekDance dhe duke e shtuar në",
+                "Të gjithë nga shkollat, mësuesit, bibliotekat deri te klubet e kodimit, bizneset dhe autoritetet publike janë të ftuar të festojnë EU Code Week 2020 duke organizuar një aktivitetet #EUCodeWeekDance dhe duke e shtuar në",
                 "hartën e Code Week",
             ]
         ],
@@ -55,7 +55,7 @@ return [
         ],
         "activity1" => [
             "title" => "Programoni një shok ose prind, nuk nevojitet kompjuteri",
-            "subtitle" => "Kodimi ju lejon t’i jepni komanda një pajisjeje elektronike. Por, teknikisht nuk ju nevojitet një kompjuter që të kodoni. Në vend të kësaj, merrni një partner – mund të jetë një shok klase, një shok, një prind ose edhe një mësues, dhe jepuni udhëzime se si të kryejnë #CodeWeekDance, që ata duhet ta ndjekin saktësisht",
+            "subtitle" => "Kodimi ju lejon t’i jepni komanda një pajisjeje elektronike. Por, teknikisht nuk ju nevojitet një kompjuter që të kodoni. Në vend të kësaj, merrni një partner – mund të jetë një shok klase, një shok, një prind ose edhe një mësues, dhe jepuni udhëzime se si të kryejnë #EUCodeWeekDance, që ata duhet ta ndjekin saktësisht",
             "resources" => [
                 "Një udhëzues nga Code.org për të organizuar Dance Party jashtë linje",
                 "Një mësim rreth mënyrës së programimit të robotit tuaj njeri",
@@ -65,9 +65,9 @@ return [
 
         "activity2" => [
             "title" => "Programimi vizual",
-            "subtitle" => "Kodoni Code Week Dance në Scratch. Përdorni personazhet e Code Week ose krijoni tuajat në Scratch dhe programojini ato të bëjnë #CodeWeekDance.",
+            "subtitle" => "Kodoni Code Week Dance në Scratch. Përdorni personazhet e Code Week ose krijoni tuajat në Scratch dhe programojini ato të bëjnë #EUCodeWeekDance.",
             "resources" => [
-                "Një shembull i një projekti Scratch të #CodeWeekDance",
+                "Një shembull i një projekti Scratch të #EUCodeWeekDance",
                 "Personazhet e Code Week",
                 "Një udhëzues nga Code.org rreth mënyrës së animimit të një personazhi",
                 "Një udhëzues nga Code.org për të organizuar Dance Party",
@@ -75,7 +75,7 @@ return [
             ]
         ], "activity3" => [
             "title" => "Programim me bazë teksti",
-            "subtitle" => "Prodhoni temën e #CodeWeekDance me Python ose JavaScript, duke përdorur platforma krijimi muzike me bazë kodi si EarSketch ose Sonic Pi",
+            "subtitle" => "Prodhoni temën e #EUCodeWeekDance me Python ose JavaScript, duke përdorur platforma krijimi muzike me bazë kodi si EarSketch ose Sonic Pi",
             "resources" => [
                 "Një tutorial rreth mënyrës së prodhimit të muzikës me EarSketch",
                 "Një tutorial rreth mënyrës së krijimit të muzikës me Sonic Pi",
@@ -90,17 +90,17 @@ return [
             ]
         ], "activity5" => [
             "title" => "Sfida e kërcimit live",
-            "subtitle" => "Regjistroni një video të vetes suaj, ekipit tuaj ose robotit tuaj duke kryer #CodeWeekDance, ndajeni në Instagram dhe provoni ta bëni videon virale dhe të fitoni disa shpërblime nga Code Week! Jeni i interesuar? Ndiqni këta hapa:",
+            "subtitle" => "Regjistroni një video të vetes suaj, ekipit tuaj ose robotit tuaj duke kryer #EUCodeWeekDance, ndajeni në Instagram dhe provoni ta bëni videon virale dhe të fitoni disa shpërblime nga Code Week! Jeni i interesuar? Ndiqni këta hapa:",
             "resources" => [
                 "Regjistrojeni videon duke përdorur Instagram Stories",
                 "Ndiqni",
                 "@CodeWeekEU në Instagram",
-                "Përmendni @CodeWeekEU në Story me kërcimin dhe sigurohuni të përdorni hashtagun #CodeWeekDance",
+                "Përmendni @CodeWeekEU në Story me kërcimin dhe sigurohuni të përdorni hashtagun #EUCodeWeekDance",
             ]
         ],
         "outro" => [
             "Fituesit do të zgjidhen çdo ditë dhe do të prezantohen në kanalin tonë të Instagram përmes Stories, prandaj mos harroni njoftimet tuaja rregullisht, sot mund të jetë dita juaj me fat",
-            "#CodeWeekDance bazohet në",
+            "#EUCodeWeekDance bazohet në",
             "Ode to Code",
             "kompozuar nga Brendan Paolini dhe kërcimi i zhvilluar nga Bianca Maria Berardi në vitin 2015, nga ideja e Alessandro Bogliolo, Profesor i Sistemeve Kompjuterike pranë Universitetit të Urbinos"
         ],
@@ -123,7 +123,7 @@ return [
                 "hapni lojën",
                 "dhe skanoni kodin QR që do t’ju çojë juve tek aplikacioni Telegram dhe do t’ju japë setin e parë të udhëzimeve",
                 "Për të fituar, duhet të zgjidhni 10 sfida kodimi dhe të gjeni 10 vendndodhje në hartën e Evropës që lidhen me lindjen e kodimit dhe teknologjisë",
-                "Pasi të përfundoni lojën, ndajeni rezultatin tuaj me miqtë duke përdorur #CodeWeek dhe sfidojini të luajnë dhe të mësojnë edhe ata rreth historisë së kodimit. Le të shohim kush arrin të ketë pikët më të larta",
+                "Pasi të përfundoni lojën, ndajeni rezultatin tuaj me miqtë duke përdorur #EUCodeWeek dhe sfidojini të luajnë dhe të mësojnë edhe ata rreth historisë së kodimit. Le të shohim kush arrin të ketë pikët më të larta",
                 "Code Week Treasure Hunt është versioni virtual i vitit i lojës origjinale EU Code Week Treasure Hunt që u zhvillua fillimisht nga Alessandro Bogliolo, Profesor i Sistemeve Kompjuterike pranë Universitetit të Urbinos. Për të mësuar më shumë rreth lojës së tij origjinale, vizitoni",
                 "blogun tonë"
 
@@ -145,11 +145,11 @@ return [
             "Profesori i Sistemeve Kompjuterike pranë Universitetit të Urbinos dhe koordinator i",
             "Ambasadorëve të Code Week",
             "do t’ju tregojë më shumë rreth lojës virtuale Code Week Treasure Hunt",
-            "Dhe xxx do t’ju japë informacione rreth sfidës së re #CodeWeekDance",
+            "Dhe xxx do t’ju japë informacione rreth sfidës së re #EUCodeWeekDance",
             "Ne do të lidhemi gjithashtu me shkolla dhe nxënës nga mbarë Evropa që do të ndajnë historitë e tyre të kodimit dhe do të shkëmbejnë ide me folësit e ftuar",
             "Ju do të keni gjithashtu mundësinë të ndani mendimet tuaja, idetë dhe të bëni pyetje. Gjithçka që ju nevojitet të bëni është të sintonizoheni në transmetimin tonë live në",
             "ose",
-            "në 8 tetor 2020 në orën 17:00-18:30 CET dhe të komentoni ose të dërgoni tweet me hashtagun #CodeWeek",
+            "në 8 tetor 2020 në orën 17:00-18:30 CET dhe të komentoni ose të dërgoni tweet me hashtagun #EUCodeWeek",
         ]
     ],
     "get-involved"=>[

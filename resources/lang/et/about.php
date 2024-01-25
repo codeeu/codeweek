@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        '2023. aasta ELi programmeerimisnädal Code Week toimub ajavahemikus 7. kuni 22. oktoober.',
+        '2024. aasta ELi programmeerimisnädal Code Week toimub ajavahemikus 14. kuni 27. oktoober.',
     'when-text' =>
         '<p>ELi programmeerimisnädal Code Week on rohujuuretasandil toimuv liikumine, millega tähistatakse loomingulisust, probleemide lahendamist ja koostööd nii programmeerimises kui ka teistes tehnoloogilistes tegevustes. Selle eesmärk on muuta programmeerimine nähtavamaks ning tutvustada noortele ja vanadele, kuidas koodikirjutamisega oma ideid ellu viia, hajutada programmeerimisega seotud saladusi ning motiveerida inimesi õppima.</p>',
     'codeweek_in_numbers-title' => 'Programmeerimisnädal Code Week numbrites',

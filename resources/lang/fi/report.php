@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Kirjoita raportti #CodeWeek-tapahtumasta.',
+    'title' => 'Kirjoita raportti #EUCodeWeek-tapahtumasta.',
     'event_title' => 'Tapahtuman otsikko',
     'number_required' => 'Anna omat arviosi, jos sinulla ei ole tarkkoja tietoja.',
     'phrase1' => 'Voit täyttää lomakkeen vain kerran! Tarkista tiedot huolella. Jos teet virheen, ',

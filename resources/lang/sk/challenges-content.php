@@ -296,7 +296,7 @@ return [
         'odkaze',
         'a plán vyučovacej hodiny v angličtine na tomto',
         'Aktivity z tejto vyučovacej hodiny možno uskutočniť oddelene v ľubovoľnom poradí',
-        'Učiteľka alebo učiteľ môže fotografovať vyučovací proces a zverejniť ho na Instagrame s hashtagom #CodeWeekChallengeGoogle #GrowWithGoogle'
+        'Učiteľka alebo učiteľ môže fotografovať vyučovací proces a zverejniť ho na Instagrame s hashtagom #EUCodeWeekChallengeGoogle #GrowWithGoogle'
     ],
     'materials' => [
         'Okrem brožúry s aktivitami si niektoré aktivity vyžadujú alebo môžu byť voliteľne doplnené dodatočnými materiálmi.',
@@ -471,7 +471,7 @@ return [
         'instructions' => [
             'Na začiatok si vytvor plán a urči poradie cvičebných jednotiek. Pomocou plánu naprogramuj RGB LED na Calliope mini tak, aby zobrazovala jednu z 5 farieb preddefinovaným tempom. Potom vytvor premennú pre tempo a opakovanie programu pomocou slučiek.',
             "Nezabudni, že ak si program implementoval/ implementovala spôsobom, ktorý sa ti páči, môžeš ho zdieľať aj s nami na adrese info@calliope.cc – Už teraz sa tešíme, čo z toho urobíte! Mimochodom, medzi prihlásených účastníkov rozdávame 30 Calliope mini!",
-            "Zdieľaj QR kód tvojho projektu na Instagrame, pridaj hashtag #CodeWeekChallenge a poznámku @CodeWeekEU.",
+            "Zdieľaj QR kód tvojho projektu na Instagrame, pridaj hashtag #EUCodeWeekChallenge a poznámku @CodeWeekEU.",
         ],
         'example' => [
             'Keď sedíš pri počítači: aj vtedy môžeš športovať.',
@@ -482,7 +482,7 @@ return [
     ]
 ,
     'common' => [
-        'share' => 'Uverejnite odkaz na váš projekt alebo jeho QR kód na Instagrame alebo Facebooku a uveďte hashtag #CodeWeekChallenge a označte @CodeWeekEU.',
+        'share' => 'Uverejnite odkaz na váš projekt alebo jeho QR kód na Instagrame alebo Facebooku a uveďte hashtag #EUCodeWeekChallenge a označte @CodeWeekEU.',
         'audience' => [
             'Učitelia a pedagógovia',
             'Žiaci prvého stupňa základnej školy (6 až 12 rokov)',

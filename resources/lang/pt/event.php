@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'main_title' => 'Adicione o seu evento #CodeWeek',
+    'main_title' => 'Adicione o seu evento #EUCodeWeek',
     'button' => 'Adicionar Evento',
     'howto' => 'Como organizar o seu evento',
     'required' => 'Os campos de preenchimento obrigatório estão marcados com um * asterisco. Pode adicionar a listagem de eventos na língua do seu país.',

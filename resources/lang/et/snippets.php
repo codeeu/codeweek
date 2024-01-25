@@ -24,8 +24,8 @@ return [
     ],
     "dance" => [
         "menu" => "Tantsuülesanne",
-        "subtitle" => "Kes ütles, et programmeerijad ei oska tantsida? Me tõestame vastupidist tantsuüritusega #CodeWeekDance.",
-        "content" => "Kutsume üles nii koole, õpetajaid, raamatukogusid kui ka programmeerimisringe, ettevõtjaid ja ametiasutusi korraldama ELi programmeerimisnädala raames tantsuüritust #CodeWeekDance ja lisama seda programmeerimisnädala kaardile."
+        "subtitle" => "Kes ütles, et programmeerijad ei oska tantsida? Me tõestame vastupidist tantsuüritusega #EUCodeWeekDance.",
+        "content" => "Kutsume üles nii koole, õpetajaid, raamatukogusid kui ka programmeerimisringe, ettevõtjaid ja ametiasutusi korraldama ELi programmeerimisnädala raames tantsuüritust #EUCodeWeekDance ja lisama seda programmeerimisnädala kaardile."
     ],
     "treasure-hunt" => [
         "menu" => "Aardejaht",

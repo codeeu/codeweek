@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'Upravit svou #CodeWeek akci',
+    'title' => 'Upravit svou #EUCodeWeek akci',
     'required_fields' => 'Povinná pole jsou označená * hvězdičkou. Bez obav přidejte seznam akcí ve svém jazyce.',
     'description' => 'Popis',
     'audience' => 'Účast',

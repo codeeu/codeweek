@@ -142,7 +142,7 @@ return [
         12 => [
             'title' => 'Par CODEWEEK.EU',
             'content' => [
-                'ES kodēšanas nedēļa (#CodeWeek) ir vietējā mēroga brīvprātīgo kustība, kuras mērķis ir veicināt digitālo līdzekļu lietošanas prasmes, organizējot ar kodēšanu un datorzinātni saistītas aktivitātes. Tā iedvesmo un iesaista cilvēkus jaunu ideju un inovāciju veidošanā nākotnei. Aktivitātes ',
+                'ES kodēšanas nedēļa (#EUCodeWeek) ir vietējā mēroga brīvprātīgo kustība, kuras mērķis ir veicināt digitālo līdzekļu lietošanas prasmes, organizējot ar kodēšanu un datorzinātni saistītas aktivitātes. Tā iedvesmo un iesaista cilvēkus jaunu ideju un inovāciju veidošanā nākotnei. Aktivitātes ',
                 'ES kodēšanas nedēļas ietvaros',
                 'notiek visā pasaulē no 9. oktobra līdz 24. oktobrim. ',
                 'ES kodēšanas nedēļas hakatona mērķis ir parādīt, kā konkrēti risinājumi tiek realizēti, pateicoties jauniešu radošumam, entuziasmam, jaunajām idejām un kodēšanas prasmēm. Hakatonu veidotājs un līdzorganizators ir',

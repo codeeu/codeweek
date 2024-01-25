@@ -3,7 +3,7 @@
 return [
     'about' =>
         'EU’s kodeuge er et græsrodsinitiativ, som har til formål at gøre kodning og digitale færdigheder tilgængelige for alle på en sjov og medrivende måde.',
-    'when' => '7.-22. oktober 2023',
+    'when' => '14.-27. oktober 2024',
     'when_text' =>
         'At lære at kode hjælper os med at finde mening i den hastigt skiftende verden omkring os, udvide vores forståelse af hvordan teknologi virker og udvikle evner og færdigheder, så vi kan udforske nye idéer og skabe nyt.',
     'school_banner_title' => 'Vær med!',

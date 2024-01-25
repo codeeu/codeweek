@@ -38,9 +38,9 @@ return [
 
         "menu" => "Dance Challenge",
 
-        "subtitle" => "Who said programmers couldn’t dance? We will prove otherwise with the #CodeWeekDance challenge.",
+        "subtitle" => "Who said programmers couldn’t dance? We will prove otherwise with the #EUCodeWeekDance challenge.",
 
-        "content" => "Everyone from schools, teachers, libraries to code clubs, businesses and public authorities are invited to celebrate EU Code Week by organising a #CodeWeekDance activity and adding it to the Code Week map."
+        "content" => "Everyone from schools, teachers, libraries to code clubs, businesses and public authorities are invited to celebrate EU Code Week by organising a #EUCodeWeekDance activity and adding it to the Code Week map."
 
     ],
 

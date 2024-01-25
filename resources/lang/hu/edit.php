@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'title' => 'A #CodeWeek eseménye szerkesztése',
+    'title' => 'A #EUCodeWeek eseménye szerkesztése',
     'required_fields' => 'A kötelezõ mezõk *-gal vannak jelölve. Nyugodtan adja meg az eseményt a helyi nyelven.',
     'description' => 'Leírás',
     'audience' => 'Célközönség',
