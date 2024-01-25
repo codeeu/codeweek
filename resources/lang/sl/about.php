@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'Letošnji evropski teden programiranja bo potekal od 7. do 22. oktobra 2023.',
+        'Letošnji evropski teden programiranja bo potekal od 14. do 27. oktobra 2024.',
     'when-text' =>
         '<p>Evropski teden programiranja je množično gibanje, ki slavi ustvarjalnost, reševanje težav in sodelovanje prek programiranja in drugih tehnoloških dejavnosti. Njegov namen je povečati prepoznavnost programiranja ter mladim, odraslim in starejšim pokazati, kako uresničiti zamisli s programiranjem, pojasniti ta znanja in spretnosti ter združiti motivirane ljudi v učenju.</p>',
     'codeweek_in_numbers-title' => 'Teden programiranja v številkah',

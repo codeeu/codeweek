@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'In 2023 EU Code Week will take place between 7 and 22 October.',
+        'In 2024 EU Code Week will take place between 14 and 27 October.',
     'codeweek_in_numbers-title' => 'Code Week in numbers',
     'run_by_volunteers-title' => 'Run by volunteers',
     'supported_by_commission-title' => 'Supported by the European Commission',

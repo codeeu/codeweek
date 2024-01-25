@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        '2023 AB Kod Haftası <strong> 7 ile 22 Ekim</strong> tarihleri arasında gerçekleşecek.',
+        '2024 AB Kod Haftası <strong> 14 ile 27 Ekim</strong> tarihleri arasında gerçekleşecek.',
     'when-text' =>
         '<p>AB Kod Haftası, programlama ve diğer teknolojik aktiviteler yoluyla yaratıcılığı, problem çözmeyi ve iş birliğini teşvik eden bir taban hareketidir. Buradaki amaç, programlamayı daha görünür kılmak, gençlere, yetişkinlere ve yaşlılara fikirleri kodlamayla nasıl hayata geçirdiğinizi göstermek, bu becerileri ortaya çıkarmak ve motive olmuş kişileri öğrenme amacıyla bir araya getirmektir.</p>',
     'codeweek_in_numbers-title' => 'Rakamlarla Kod Haftası',

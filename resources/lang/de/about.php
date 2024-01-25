@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'Die EU Code Week 2023 findet im Zeitraum vom 7. bis 22. Oktober statt.',
+        'Die EU Code Week 2024 findet im Zeitraum vom 14. bis 27. Oktober statt.',
     'when-text' =>
         '<p>Die EU Code Week ist eine Breiteninitiative zur Feier von Kreativität, Problemlösung und Zusammenarbeit durch Programmierung und andere technische Aktivitäten. Dahinter steckt die Idee, das Programmieren bekannter zu machen, jungen Menschen, Erwachsenen und Älteren zu zeigen, wie sie mit dem Programmieren Ideen Wirklichkeit werden lassen, diese Kompetenzen begreifbar zu machen und motivierte Menschen beim Lernen zusammenzubringen.</p>',
     'codeweek_in_numbers-title' => 'Code Week in Zahlen',

@@ -2,7 +2,7 @@
 
 return [
     'when-title' =>
-        'De EU-programmeerweek van 2023 vindt plaats van 7 t/m 22 oktober.',
+        'De EU-programmeerweek van 2024 vindt plaats van 14 t/m 27 oktober.',
     'when-text' =>
         '<p>De EU-programmeerweek is een burgerinitiatief waarin creativiteit, probleemoplossing en samenwerking worden gestimuleerd door middel van programmeren en andere technische activiteiten. Het idee erachter is om programmeren zichtbaarder te maken, om jongeren, volwassenen en ouderen te laten zien hoe je ideeën met programmeercode tot leven kunt brengen, om deze vaardigheden te ontsluieren en om gemotiveerde mensen bij elkaar te brengen om te leren.</p>',
     'codeweek_in_numbers-title' => 'De programmeerweek in cijfers',
