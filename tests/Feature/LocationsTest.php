@@ -118,7 +118,7 @@ class LocationsTest extends TestCase
         $this->signIn();
 
         $this->get('/add')
-            ->assertSeeText('Add your #CodeWeek activity');
+            ->assertSeeText('Add your #EUCodeWeek activity');
 
 
     }
@@ -136,7 +136,7 @@ class LocationsTest extends TestCase
 
         $this->get('/add')
             ->assertLocation(route('activities-locations'))
-            ->assertDontSeeText('Add your #CodeWeek activity');
+            ->assertDontSeeText('Add your #EUCodeWeek activity');
 
 
 
@@ -155,7 +155,7 @@ class LocationsTest extends TestCase
 
 
         $this->get('/add?skip=1')
-            ->assertSeeText('Add your #CodeWeek activity');
+            ->assertSeeText('Add your #EUCodeWeek activity');
 
 
 
