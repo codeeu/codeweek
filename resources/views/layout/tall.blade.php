@@ -42,7 +42,7 @@
 
     <!-- Title, keywords, description -->
     <meta name="description"
-          content="October 7 - 22, 2023: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding."/>
+          content="October 14 - 27, 2024: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding."/>
 
 
     <title>EU Code Week</title>

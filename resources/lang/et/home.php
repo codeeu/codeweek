@@ -3,7 +3,7 @@
 return [
     'about' =>
         'ELi programmeerimisnädal Code Week on rohujuuretasandi algatus, mille eesmärk on õpetada inimestele lõbusal ja kaasahaaraval viisil programmeerimist ja digitaalset kirjaoskust.',
-    'when' => '7.-22. oktoobril 2023',
+    'when' => '14.-27. oktoobril 2024',
     'when_text' =>
         'Programmeerimise õppimine aitab meil mõista kiiresti muutuvat maailma, täiendada oma teadmisi tehnoloogiast, arendada uusi oskusi ja avastada innovaatilisi ideid.',
     'school_banner_title' => 'Liituge!',
