@@ -17,12 +17,11 @@ use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Str;
 use Spatie\Activitylog\LogOptions;
 use Spatie\Activitylog\Traits\LogsActivity;
-use Laravel\Nova\Actions\Actionable;
 use Stevebauman\Purify\Casts\PurifyHtmlOnGet;
 
 class Event extends Model
 {
-    use Actionable, SoftDeletes;
+    use SoftDeletes;
 
     protected $table = 'events';
     protected $fillable = [
