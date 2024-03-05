@@ -1,12 +1,11 @@
 @component('mail::message')
-Dear Code Week 4 All challenge participant,
+Dear EU Code Week 4 All challenge participant,
 
-We are delighted to share with you today that you have successfully completed the {{$edition}} Code Week 4 All challenge.<br/>
+We are delighted to share with you today that you have successfully completed the {{$edition}} EU Code Week 4 All challenge.<br/>
 
 We believe that the alliance you created with other activity organisers is vital to bringing coding to more students in the world – and you have helped up move closer to this goal!<br/>
 
-
-You can personalise and download your Code Week 4 all certificate by clicking on the link in this button:
+You can personalise and download your EU Code Week 4 all certificate by clicking on the link in this button:
 <br/>
 
 
@@ -14,7 +13,7 @@ You can personalise and download your Code Week 4 all certificate by clicking on
     Get your Certificate
 @endcomponent
 
-Thank you very much for helping us advance digital literacy! We hope to work together again in the 2024 edition of EU Code Week, which will take place from 14-27 October.<br/><br/>
+Thank you very much for helping us advance digital skills! We hope to work together again in the 2024 edition of EU Code Week, which will take place from 14-27 October.<br/><br/>
 
 
 
