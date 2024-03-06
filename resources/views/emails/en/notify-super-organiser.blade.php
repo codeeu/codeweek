@@ -1,9 +1,9 @@
 @component('mail::message')
-Dear Code Week activity organiser,
+Dear EU Code Week activity organiser,
 
-We are delighted to let you know that you successfully completed the 2022 Code Week Super Organiser Challenge. <br/>
+We are delighted to let you know that you successfully completed the 2023 EU Code Week Super Organiser Challenge. <br/>
 
-That is organising 10 or more Code Week activities in 2022. Congratulations and thank you for playing a major part in <a href="https://blog.codeweek.eu/code-week-2022-wrap-up-in-numbers/">last year’s Code Week</a>.<br/>
+That is organising 10 or more EU Code Week activities in 2023. Congratulations and thank you for playing a major part in <a href="https://blog.codeweek.eu/2023-a-remarkable-year-for-eu-code-week/">last year’s EU Code Week</a>.<br/>
 
 We believe it is vital to bring coding, computing and computational thinking to as many people as possible – and you have helped up us reach this goal!<br/>
 
