@@ -33,7 +33,7 @@ class RemindCreator extends Mailable
     public function build()
     {
         return $this
-            ->subject("[CodeWeekEU] Your feedback and your certificate of recognition")
+            ->subject("[EU Code Week] Your feedback and your certificate of recognition")
             ->markdown('emails.en.remind-creator');
     }
 }

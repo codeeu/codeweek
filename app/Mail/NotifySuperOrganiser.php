@@ -35,7 +35,7 @@ class NotifySuperOrganiser extends Mailable
     public function build()
     {
         return $this
-            ->subject("[CodeWeekEU] You are a winner !")
+            ->subject("[EU Code Week] You are a winner !")
             ->markdown('emails.en.notify-super-organiser');
     }
 }

@@ -24,7 +24,9 @@ class CertificateExcellence
     private $id;
     private $edition;
 
-    public function __construct($edition, $name_for_certificate, $type = "excellence", )
+    private $number_of_activities;
+
+    public function __construct($edition, $name_for_certificate, $type, $number_of_activities)
     {
         $this->edition = $edition;
         $this->name_of_certificate_holder = $name_for_certificate;
@@ -33,7 +35,8 @@ class CertificateExcellence
         $this->resource_path = resource_path() . "/latex";
         $this->pdflatex = config('codeweek.pdflatex_path');
         $this->id = auth()->id() . '-' . str_random(10);
-        $this->type = $type;
+        $this->number_of_activities = $number_of_activities;
+        $this->type = $type ?? "excellence";
 
         $this->templateName = "{$this->type}-{$this->edition}.tex";
 
@@ -136,6 +139,7 @@ class CertificateExcellence
         if ($this->type == "super-organiser") {
             $template = str_replace('<CERTIFICATE_EMAIL>', $this->tex_escape($this->email_of_certificate_holder), $template);
             $template = str_replace('<CERTIFICATE_DATE>', $this->tex_escape(Carbon::now()->format('d/m/Y')), $template);
+            $template = str_replace('<NUMBER_OF_ACTIVITIES>', $this->tex_escape($this->number_of_activities), $template);
         }
 
         //save it locally
