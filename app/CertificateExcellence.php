@@ -36,7 +36,8 @@ class CertificateExcellence
         $this->resource_path = resource_path() . "/latex";
         $this->pdflatex = config('codeweek.pdflatex_path');
         $this->id = auth()->id() . '-' . str_random(10);
-        $this->type = $type;
+        $this->number_of_activities = $number_of_activities;
+        $this->type = $type ?? "excellence";
 
         $this->templateName = "{$this->type}-{$this->edition}.tex";
 
@@ -129,7 +130,7 @@ class CertificateExcellence
     protected function customize_and_save_latex()
     {
         if ($this->is_greek()) $this->templateName = "{$this->type}_greek-{$this->edition}.tex";
-//        Log::info($this->templateName);
+        Log::info($this->templateName);
         //open the latex template
         $base_template = Storage::disk('latex')->get($this->templateName);
 
@@ -139,7 +140,10 @@ class CertificateExcellence
         if ($this->type == "super-organiser") {
             $template = str_replace('<CERTIFICATE_EMAIL>', $this->tex_escape($this->email_of_certificate_holder), $template);
             $template = str_replace('<CERTIFICATE_DATE>', $this->tex_escape(Carbon::now()->format('d/m/Y')), $template);
+            $template = str_replace('<NUMBER_OF_ACTIVITIES>', $this->tex_escape($this->number_of_activities), $template);
         }
+
+        Log::info($template);
 
         //save it locally
         Storage::disk('latex')->put($this->personalized_template_name . ".tex", $template);
