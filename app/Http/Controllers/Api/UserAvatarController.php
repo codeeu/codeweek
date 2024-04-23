@@ -13,8 +13,6 @@ class UserAvatarController extends Controller
 {
     /**
      * Store a new user avatar.
-     *
-     * @return \Illuminate\Http\Response
      */
     public function store(): Response
     {

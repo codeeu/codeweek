@@ -19,9 +19,6 @@ class HamburgEventsImport extends DefaultValueBinder implements ToModel, WithCus
         return Date::excelToDateTimeObject($date);
     }
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Model|null
-     */
     public function model(array $row): ?Model
     {
 

@@ -21,9 +21,6 @@ class CoderDojoEventsImport extends DefaultValueBinder implements ToModel, WithC
         return implode($arr);
     }
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Model|null
-     */
     public function model(array $row): ?Model
     {
 

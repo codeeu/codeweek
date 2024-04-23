@@ -35,9 +35,6 @@ class DutchDanceEventsImport extends DefaultValueBinder implements ToModel, With
         );
     }
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Model|null
-     */
     public function model(array $row): ?Model
     {
         //dd($row);

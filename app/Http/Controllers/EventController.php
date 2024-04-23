@@ -51,8 +51,6 @@ class EventController extends Controller
 
     /**
      * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
      */
     public function index(Request $request): View
     {
@@ -124,8 +122,6 @@ class EventController extends Controller
 
     /**
      * Store a newly created resource in storage.
-     *
-     * @return \Illuminate\Http\Response
      */
     public function store(EventRequest $request): View
     {
@@ -167,8 +163,6 @@ class EventController extends Controller
 
     /**
      * Show the form for editing the specified resource.
-     *
-     * @return \Illuminate\Http\Response
      */
     public function edit(Event $event): View
     {
@@ -220,8 +214,6 @@ class EventController extends Controller
 
     /**
      * Update the specified resource in storage.
-     *
-     * @return \Illuminate\Http\Response
      */
     public function update(EventRequest $request, Event $event): View
     {

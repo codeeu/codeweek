@@ -15,9 +15,6 @@ class ResourceFilters extends Filters
 
     /**
      * Filter the query by section (teach or learn)
-     *
-     * @param  string  $selectedSection
-     * @return \Illuminate\Database\Eloquent\Builder
      */
     protected function selectedSection(string $selectedSection): Builder
     {
@@ -38,7 +35,6 @@ class ResourceFilters extends Filters
      * Filter the query by name
      *
      * @param  string  $name
-     * @return \Illuminate\Database\Eloquent\Builder
      */
     protected function searchInput($searchInput): Builder
     {
@@ -56,9 +52,6 @@ class ResourceFilters extends Filters
 
     /**
      * Filter the query by selectedLevels
-     *
-     * @param  string  $selectedLevels
-     * @return \Illuminate\Database\Eloquent\Builder
      */
     protected function selectedLevels(string $selectedLevels): Builder
     {
@@ -76,9 +69,6 @@ class ResourceFilters extends Filters
 
     /**
      * Filter the query by selectedTypes
-     *
-     * @param  string  $selectedTypes
-     * @return \Illuminate\Database\Eloquent\Builder
      */
     protected function selectedTypes(string $selectedTypes): Builder
     {
@@ -96,9 +86,6 @@ class ResourceFilters extends Filters
 
     /**
      * Filter the query by selectedSubjects
-     *
-     * @param  string  $selectedSubjects
-     * @return \Illuminate\Database\Eloquent\Builder
      */
     protected function selectedSubjects(string $selectedSubjects): Builder
     {
@@ -116,9 +103,6 @@ class ResourceFilters extends Filters
 
     /**
      * Filter the query by selectedCategories
-     *
-     * @param  string  $selectedCategories
-     * @return \Illuminate\Database\Eloquent\Builder
      */
     protected function selectedCategories(string $selectedCategories): Builder
     {
@@ -136,9 +120,6 @@ class ResourceFilters extends Filters
 
     /**
      * Filter the query by selectedLanguages
-     *
-     * @param  string  $selectedLanguages
-     * @return \Illuminate\Database\Eloquent\Builder
      */
     protected function selectedLanguages(string $selectedLanguages): Builder
     {
@@ -157,9 +138,6 @@ class ResourceFilters extends Filters
 
     /**
      * Filter the query by selectedProgrammingLanguages
-     *
-     * @param  string  $selectedProgrammingLanguages
-     * @return \Illuminate\Database\Eloquent\Builder
      */
     protected function selectedProgrammingLanguages(string $selectedProgrammingLanguages): Builder
     {

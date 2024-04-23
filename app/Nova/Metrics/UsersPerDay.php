@@ -20,8 +20,6 @@ class UsersPerDay extends Trend
 
     /**
      * Get the ranges available for the metric.
-     *
-     * @return array
      */
     public function ranges(): array
     {
@@ -44,8 +42,6 @@ class UsersPerDay extends Trend
 
     /**
      * Get the URI key for the metric.
-     *
-     * @return string
      */
     public function uriKey(): string
     {

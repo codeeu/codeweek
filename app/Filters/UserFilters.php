@@ -15,9 +15,6 @@ class UserFilters extends Filters
 
     /**
      * Filter the query by country
-     *
-     * @param  string  $country_iso
-     * @return \Illuminate\Database\Eloquent\Builder
      */
     protected function country_iso(string $country_iso): Builder
     {

@@ -18,9 +18,6 @@ class UKDigitAllCharityEventsImport extends DefaultValueBinder implements ToMode
         return Date::excelToDateTimeObject($date);
     }
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Model|null
-     */
     public function model(array $row): ?Model
     {
         //        dd($this->parseDate($row['start_date']));
