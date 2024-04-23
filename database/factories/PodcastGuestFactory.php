@@ -18,7 +18,7 @@ class PodcastGuestFactory extends Factory
     {
         return [
             'podcast_id' => function () {
-                return factory('App\Podcast')->create()->id;
+                return factory(\App\Podcast::class)->create()->id;
             },
             'image_path' => $this->faker->url(),
             'position' => $this->faker->numberBetween(1, 1000),

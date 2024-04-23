@@ -28,7 +28,7 @@ class ResourceCategory extends Resource
      *
      * @var string
      */
-    public static $model = 'App\ResourceCategory';
+    public static $model = \App\ResourceCategory::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

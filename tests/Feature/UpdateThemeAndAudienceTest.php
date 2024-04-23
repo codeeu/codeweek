@@ -13,10 +13,10 @@ class UpdateThemeAndAudienceTest extends TestCase
     public function it_should_not_create_if_themes_already_exist()
     {
 
-        create('App\Audience', [], 10);
+        create(\App\Audience::class, [], 10);
 
         // Create Event with event_url from meet and code
-        $myEvent = create('App\Event', ['event_url' => 'https://meet-and-code.org/hu/hu/event-show/3959', 'country_iso' => 'HU', 'language' => null]);
+        $myEvent = create(\App\Event::class, ['event_url' => 'https://meet-and-code.org/hu/hu/event-show/3959', 'country_iso' => 'HU', 'language' => null]);
         $myEvent->audiences()->attach(8);
 
         //          $this->assertEquals(1,$myEvent->audiences()->get()->count());
@@ -33,10 +33,10 @@ class UpdateThemeAndAudienceTest extends TestCase
     public function it_should_change_the_audience_for_meet_and_code()
     {
 
-        create('App\Audience', [], 10);
+        create(\App\Audience::class, [], 10);
 
         // Create Event with event_url from meet and code
-        $myEvent = create('App\Event', ['event_url' => 'https://meet-and-code.org/hu/hu/event-show/3959', 'country_iso' => 'HU', 'language' => null]);
+        $myEvent = create(\App\Event::class, ['event_url' => 'https://meet-and-code.org/hu/hu/event-show/3959', 'country_iso' => 'HU', 'language' => null]);
 
         $this->assertFalse($myEvent->audiences()->exists());
 
@@ -51,10 +51,10 @@ class UpdateThemeAndAudienceTest extends TestCase
     public function it_should_change_the_theme_for_meet_and_code()
     {
 
-        create('App\Theme', [], 10);
+        create(\App\Theme::class, [], 10);
 
         // Create Event with event_url from meet and code
-        $myEvent = create('App\Event', ['event_url' => 'https://meet-and-code.org/hu/hu/event-show/3959', 'country_iso' => 'HU', 'language' => null]);
+        $myEvent = create(\App\Event::class, ['event_url' => 'https://meet-and-code.org/hu/hu/event-show/3959', 'country_iso' => 'HU', 'language' => null]);
 
         $this->assertFalse($myEvent->themes()->exists());
 

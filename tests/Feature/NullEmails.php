@@ -17,16 +17,16 @@ class NullEmails extends TestCase
     /** @test */
     public function it_should_get_distinct_emails()
     {
-        $nullUser = create('App\User', ['email' => null]);
-        $user1 = create('App\User', ['email' => 'foo@bar']);
-        $user2 = create('App\User', ['email' => 'xyz@bar']);
+        $nullUser = create(\App\User::class, ['email' => null]);
+        $user1 = create(\App\User::class, ['email' => 'foo@bar']);
+        $user2 = create(\App\User::class, ['email' => 'xyz@bar']);
 
-        create('App\Event', [
+        create(\App\Event::class, [
             'creator_id' => $nullUser->id,
             'user_email' => 'foo@bar',
         ], 6);
 
-        create('App\Event', [
+        create(\App\Event::class, [
             'creator_id' => $nullUser->id,
             'user_email' => 'xyz@bar',
         ], 6);
@@ -43,8 +43,8 @@ class NullEmails extends TestCase
 
         Mail::fake();
 
-        $user1 = create('App\User', ['email' => 'foo@bar', 'id' => 100]);
-        $user2 = create('App\User', ['email' => 'foo@bar', 'deleted_at' => Carbon::now(), 'id' => 200]);
+        $user1 = create(\App\User::class, ['email' => 'foo@bar', 'id' => 100]);
+        $user2 = create(\App\User::class, ['email' => 'foo@bar', 'deleted_at' => Carbon::now(), 'id' => 200]);
 
         $user = UserHelper::getActiveUserByEmail('foo@bar');
 
@@ -58,10 +58,10 @@ class NullEmails extends TestCase
     public function it_should_assign_activities_to_a_user()
     {
 
-        $user1 = create('App\User', ['email' => 'foo@bar', 'id' => 100]);
+        $user1 = create(\App\User::class, ['email' => 'foo@bar', 'id' => 100]);
 
         $this->assertEquals(count($user1->events), 0);
-        create('App\Event', [
+        create(\App\Event::class, [
             'user_email' => 'foo@bar',
         ], 10);
 

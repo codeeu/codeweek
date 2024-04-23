@@ -52,7 +52,7 @@ class LoadAmbassadors extends Command
         foreach ($old_ambassadors as $old) {
 
             DB::table('model_has_roles')->insert(
-                ['role_id' => 3, 'model_type' => 'App\User', 'model_id' => $old->user_id]
+                ['role_id' => 3, 'model_type' => \App\User::class, 'model_id' => $old->user_id]
             );
         }
     }

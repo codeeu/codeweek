@@ -28,7 +28,7 @@ class ResourceSubject extends Resource
      *
      * @var string
      */
-    public static $model = 'App\ResourceSubject';
+    public static $model = \App\ResourceSubject::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

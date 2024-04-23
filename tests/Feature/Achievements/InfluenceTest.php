@@ -15,12 +15,12 @@ class InfluenceTest extends TestCase
     public function user_influence_should_be_counted()
     {
 
-        $user = create('App\User');
+        $user = create(\App\User::class);
 
-        $LT1 = create('App\User', ['id' => 100, 'tag' => 'BE-TESTME-123']);
+        $LT1 = create(\App\User::class, ['id' => 100, 'tag' => 'BE-TESTME-123']);
 
-        $events2020 = create('App\Event', ['leading_teacher_tag' => 'BE-TESTME-123', 'status' => 'APPROVED', 'creator_id' => $user->id, 'reported_at' => null, 'created_at' => Carbon::now()->setYear(2020)], 10);
-        $events2021 = create('App\Event', ['leading_teacher_tag' => 'BE-TESTME-123', 'status' => 'APPROVED', 'creator_id' => $user->id, 'reported_at' => null, 'created_at' => Carbon::now()->setYear(2021)], 20);
+        $events2020 = create(\App\Event::class, ['leading_teacher_tag' => 'BE-TESTME-123', 'status' => 'APPROVED', 'creator_id' => $user->id, 'reported_at' => null, 'created_at' => Carbon::now()->setYear(2020)], 10);
+        $events2021 = create(\App\Event::class, ['leading_teacher_tag' => 'BE-TESTME-123', 'status' => 'APPROVED', 'creator_id' => $user->id, 'reported_at' => null, 'created_at' => Carbon::now()->setYear(2021)], 20);
 
         $InfluenceCount2020 = $LT1->influence(2020);
         $InfluenceCount2021 = $LT1->influence(2021);
@@ -40,9 +40,9 @@ class InfluenceTest extends TestCase
 
         //        $tag = create('App\Tag', ['name' => 'TI-testme-234']);
 
-        $leading_teacher = create('App\User', ['tag' => 'IT-TESTME-123']);
+        $leading_teacher = create(\App\User::class, ['tag' => 'IT-TESTME-123']);
 
-        $event = create('App\Event', [
+        $event = create(\App\Event::class, [
             'status' => 'PENDING',
             'leading_teacher_tag' => 'IT-TESTME-123',
             'created_at' => Carbon::now()->setYear(2022),

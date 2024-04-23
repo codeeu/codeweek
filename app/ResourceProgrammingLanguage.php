@@ -44,6 +44,6 @@ class ResourceProgrammingLanguage extends Model
 
     public function items()
     {
-        return $this->belongsToMany('App\ResourceItem', 'res_pl_pivot');
+        return $this->belongsToMany(\App\ResourceItem::class, 'res_pl_pivot');
     }
 }

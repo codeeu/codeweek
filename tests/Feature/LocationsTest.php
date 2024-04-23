@@ -24,9 +24,9 @@ class LocationsTest extends TestCase
     {
         $this->withoutExceptionHandling();
 
-        $user = create('App\User');
+        $user = create(\App\User::class);
 
-        create('App\Location', ['user_id' => $user->id], 3);
+        create(\App\Location::class, ['user_id' => $user->id], 3);
 
         $this->assertCount(3, $user->locations);
 
@@ -37,9 +37,9 @@ class LocationsTest extends TestCase
     {
         $this->withoutExceptionHandling();
 
-        $user = create('App\User');
+        $user = create(\App\User::class);
 
-        $event = create('App\Event', ['status' => 'APPROVED', 'creator_id' => $user->id]);
+        $event = create(\App\Event::class, ['status' => 'APPROVED', 'creator_id' => $user->id]);
 
         $this->assertNull($event->extractedLocation);
         $this->assertEmpty($user->locations);
@@ -56,10 +56,10 @@ class LocationsTest extends TestCase
     {
         $this->withoutExceptionHandling();
 
-        $user = create('App\User');
+        $user = create(\App\User::class);
 
-        create('App\Event', ['status' => 'APPROVED', 'creator_id' => $user->id, 'latitude' => '11.123456789', 'longitude' => '22.987654321'], 3);
-        $sameLocationFromOtherUsers = create('App\Event', ['status' => 'APPROVED', 'latitude' => '11.123456789', 'longitude' => '22.987654321'], 10);
+        create(\App\Event::class, ['status' => 'APPROVED', 'creator_id' => $user->id, 'latitude' => '11.123456789', 'longitude' => '22.987654321'], 3);
+        $sameLocationFromOtherUsers = create(\App\Event::class, ['status' => 'APPROVED', 'latitude' => '11.123456789', 'longitude' => '22.987654321'], 10);
 
         $this->assertDatabaseCount(Event::class, 13);
 
@@ -76,9 +76,9 @@ class LocationsTest extends TestCase
     {
         $this->withoutExceptionHandling();
 
-        $user = create('App\User');
+        $user = create(\App\User::class);
 
-        create('App\Event', ['creator_id' => $user->id, 'latitude' => '11.11', 'longitude' => '22.22', 'status' => 'APPROVED'], 30);
+        create(\App\Event::class, ['creator_id' => $user->id, 'latitude' => '11.11', 'longitude' => '22.22', 'status' => 'APPROVED'], 30);
 
         $this->artisan('location:extraction');
 
@@ -93,9 +93,9 @@ class LocationsTest extends TestCase
     {
         $this->withoutExceptionHandling();
 
-        $user = create('App\User');
+        $user = create(\App\User::class);
 
-        create('App\Location', ['user_id' => $user->id], 3);
+        create(\App\Location::class, ['user_id' => $user->id], 3);
 
         $this->assertCount(3, $user->locations);
 
@@ -118,9 +118,9 @@ class LocationsTest extends TestCase
     {
         $this->withoutExceptionHandling();
 
-        $user = create('App\User');
+        $user = create(\App\User::class);
 
-        create('App\Location', ['user_id' => $user->id], 3);
+        create(\App\Location::class, ['user_id' => $user->id], 3);
 
         $this->signIn($user);
 
@@ -135,9 +135,9 @@ class LocationsTest extends TestCase
     {
         $this->withoutExceptionHandling();
 
-        $user = create('App\User');
+        $user = create(\App\User::class);
 
-        create('App\Location', ['user_id' => $user->id], 3);
+        create(\App\Location::class, ['user_id' => $user->id], 3);
 
         $this->signIn($user);
 

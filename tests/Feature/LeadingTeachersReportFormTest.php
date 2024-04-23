@@ -25,10 +25,10 @@ class LeadingTeachersReportFormTest extends TestCase
         $this->seed('RolesAndPermissionsSeeder');
         $this->seed('LeadingTeacherRoleSeeder');
 
-        $this->leading_teacher = create('App\User');
+        $this->leading_teacher = create(\App\User::class);
         $this->leading_teacher->assignRole('leading teacher');
 
-        $this->leading_teacher_admin = create('App\User');
+        $this->leading_teacher_admin = create(\App\User::class);
         $this->leading_teacher_admin->assignRole('leading teacher admin');
 
     }

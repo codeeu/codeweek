@@ -15,7 +15,7 @@ class UpdateUserTest extends TestCase
         $user = create(\App\User::class);
 
         $this->signIn($user);
-        $belgium = create('App\Country', ['iso' => 'BE']);
+        $belgium = create(\App\Country::class, ['iso' => 'BE']);
 
         $this->patch('user', [
             'firstname' => 'Changed firstname',

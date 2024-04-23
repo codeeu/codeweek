@@ -18,12 +18,12 @@ class Podcast extends Model implements Feedable
 
     public function guests()
     {
-        return $this->hasMany('App\PodcastGuest')->orderBy('position');
+        return $this->hasMany(\App\PodcastGuest::class)->orderBy('position');
     }
 
     public function resources()
     {
-        return $this->hasMany('App\PodcastResource')->orderBy('position');
+        return $this->hasMany(\App\PodcastResource::class)->orderBy('position');
     }
 
     public function scopeActive($query)

@@ -14,17 +14,17 @@ class UserSeeder extends Seeder
     public function run()
     {
 
-        create('App\User', [
+        create(\App\User::class, [
             'firstname' => 'Super',
             'lastname' => 'Admin',
             'email' => \Config::get('codeweek.administrator'),
             'password' => bcrypt('secret'),
         ])->assignRole('super admin');
 
-        create('App\Event', ['creator_id' => 1]);
+        create(\App\Event::class, ['creator_id' => 1]);
 
         for ($i = 1; $i < 60; $i++) {
-            create('App\User')->assignRole('ambassador');
+            create(\App\User::class)->assignRole('ambassador');
         }
 
     }

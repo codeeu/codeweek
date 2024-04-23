@@ -193,32 +193,32 @@ class User extends Authenticatable
 
     public function events()
     {
-        return $this->hasMany('App\Event', 'creator_id');
+        return $this->hasMany(\App\Event::class, 'creator_id');
     }
 
     public function schools()
     {
-        return $this->belongsToMany('App\School');
+        return $this->belongsToMany(\App\School::class);
     }
 
     public function country()
     {
-        return $this->belongsTo('App\Country', 'country_iso', 'iso');
+        return $this->belongsTo(\App\Country::class, 'country_iso', 'iso');
     }
 
     public function excellences()
     {
-        return $this->hasMany('App\Excellence')->where('type', 'Excellence');
+        return $this->hasMany(\App\Excellence::class)->where('type', 'Excellence');
     }
 
     public function superOrganisers()
     {
-        return $this->hasMany('App\Excellence')->where('type', 'SuperOrganiser');
+        return $this->hasMany(\App\Excellence::class)->where('type', 'SuperOrganiser');
     }
 
     public function participations()
     {
-        return $this->hasMany('App\Participation');
+        return $this->hasMany(\App\Participation::class);
     }
 
     public function expertises()
@@ -496,6 +496,6 @@ class User extends Authenticatable
 
     public function taggedActivities()
     {
-        return $this->hasMany('App\Event', 'leading_teacher_tag', 'tag');
+        return $this->hasMany(\App\Event::class, 'leading_teacher_tag', 'tag');
     }
 }

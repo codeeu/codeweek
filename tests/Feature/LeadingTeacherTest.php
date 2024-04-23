@@ -19,8 +19,8 @@ class LeadingTeacherTest extends TestCase
         $this->seed('RolesAndPermissionsSeeder');
         $this->seed('LeadingTeacherRoleSeeder');
 
-        $this->leading_teacher = create('App\Country', ['iso' => 'FR']);
-        $this->leading_teacher = create('App\User')->assignRole('leading teacher');
+        $this->leading_teacher = create(\App\Country::class, ['iso' => 'FR']);
+        $this->leading_teacher = create(\App\User::class)->assignRole('leading teacher');
 
     }
 
@@ -41,19 +41,19 @@ class LeadingTeacherTest extends TestCase
 
         $this->get(route('LT.signup'))->assertStatus(302);
 
-        $user = create('App\User');
+        $user = create(\App\User::class);
         $this->signIn($user);
 
         $this->assertFalse($user->leadingTeacher);
 
-        $city = create('App\City', ['id' => 1004436363, 'city' => 'FooBarCity']);
-        $level1 = create('App\ResourceLevel', ['id' => 80, 'teach' => true]);
-        $level2 = create('App\ResourceLevel', ['id' => 85, 'teach' => true]);
-        $subject1 = create('App\ResourceSubject', ['id' => 511]);
-        $subject2 = create('App\ResourceSubject', ['id' => 512]);
-        $subject3 = create('App\ResourceSubject', ['id' => 400]);
-        $expertise1 = create('App\LeadingTeacherExpertise', ['id' => 101]);
-        $expertise2 = create('App\LeadingTeacherExpertise', ['id' => 102]);
+        $city = create(\App\City::class, ['id' => 1004436363, 'city' => 'FooBarCity']);
+        $level1 = create(\App\ResourceLevel::class, ['id' => 80, 'teach' => true]);
+        $level2 = create(\App\ResourceLevel::class, ['id' => 85, 'teach' => true]);
+        $subject1 = create(\App\ResourceSubject::class, ['id' => 511]);
+        $subject2 = create(\App\ResourceSubject::class, ['id' => 512]);
+        $subject3 = create(\App\ResourceSubject::class, ['id' => 400]);
+        $expertise1 = create(\App\LeadingTeacherExpertise::class, ['id' => 101]);
+        $expertise2 = create(\App\LeadingTeacherExpertise::class, ['id' => 102]);
 
         Livewire::test(LeadingTeacherSignupForm::class)
             ->set('first_name', 'Foo')

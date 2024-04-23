@@ -17,7 +17,7 @@ class CertificatesIssuesTest extends TestCase
     {
         Mail::fake();
 
-        create('App\Participation', ['participation_url' => null, 'created_at' => Carbon::now()->subDay()]);
+        create(\App\Participation::class, ['participation_url' => null, 'created_at' => Carbon::now()->subDay()]);
 
         $this->artisan('certificate:issues');
 
@@ -30,7 +30,7 @@ class CertificatesIssuesTest extends TestCase
     {
         Mail::fake();
 
-        create('App\Participation', ['participation_url' => 'url//', 'created_at' => Carbon::now()->subDay()]);
+        create(\App\Participation::class, ['participation_url' => 'url//', 'created_at' => Carbon::now()->subDay()]);
 
         $this->artisan('certificate:issues');
 
@@ -43,7 +43,7 @@ class CertificatesIssuesTest extends TestCase
     {
         Mail::fake();
 
-        create('App\Participation', ['participation_url' => 'url//', 'created_at' => Carbon::now()]);
+        create(\App\Participation::class, ['participation_url' => 'url//', 'created_at' => Carbon::now()]);
 
         $this->artisan('certificate:issues');
 

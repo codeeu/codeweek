@@ -17,9 +17,9 @@ class CreateOnlineEventTest extends TestCase
         //$this->withoutExceptionHandling();
         $this->signIn();
 
-        $event = make('App\Event');
-        create('App\Audience', [], 3);
-        create('App\Theme', [], 3);
+        $event = make(\App\Event::class);
+        create(\App\Audience::class, [], 3);
+        create(\App\Theme::class, [], 3);
 
         $event->theme = '1';
         $event->tags = 'tag:foo,tag:bar';
@@ -47,9 +47,9 @@ class CreateOnlineEventTest extends TestCase
         $this->seed('RolesAndPermissionsSeeder');
         $this->signIn();
 
-        $event = make('App\Event');
-        create('App\Audience', [], 3);
-        create('App\Theme', [], 3);
+        $event = make(\App\Event::class);
+        create(\App\Audience::class, [], 3);
+        create(\App\Theme::class, [], 3);
 
         $event->theme = '1';
         $event->tags = 'tag:foo,tag:bar';
@@ -81,9 +81,9 @@ class CreateOnlineEventTest extends TestCase
         $this->seed('RolesAndPermissionsSeeder');
         $this->signIn();
 
-        $event = make('App\Event');
-        create('App\Audience', [], 3);
-        create('App\Theme', [], 3);
+        $event = make(\App\Event::class);
+        create(\App\Audience::class, [], 3);
+        create(\App\Theme::class, [], 3);
 
         $event->theme = '1';
         $event->tags = 'tag:foo,tag:bar';

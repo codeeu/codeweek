@@ -17,11 +17,11 @@ class Codeweek4AllTest extends TestCase
     {
         parent::setUp();
 
-        $france = create('App\Country', ['iso' => 'FR', 'name' => 'France']);
-        $belgium = create('App\Country', ['iso' => 'BE', 'name' => 'Belgium']);
+        $france = create(\App\Country::class, ['iso' => 'FR', 'name' => 'France']);
+        $belgium = create(\App\Country::class, ['iso' => 'BE', 'name' => 'Belgium']);
 
-        create('App\Event', ['codeweek_for_all_participation_code' => 'cw19-foo', 'status' => 'APPROVED', 'participants_count' => 17, 'country_iso' => $france->iso, 'end_date' => Carbon::now()->subYear()], 15);
-        create('App\Event', ['codeweek_for_all_participation_code' => 'cw19-foo', 'status' => 'APPROVED', 'participants_count' => 17, 'country_iso' => $belgium->iso, 'end_date' => Carbon::now()->subYear()], 20);
+        create(\App\Event::class, ['codeweek_for_all_participation_code' => 'cw19-foo', 'status' => 'APPROVED', 'participants_count' => 17, 'country_iso' => $france->iso, 'end_date' => Carbon::now()->subYear()], 15);
+        create(\App\Event::class, ['codeweek_for_all_participation_code' => 'cw19-foo', 'status' => 'APPROVED', 'participants_count' => 17, 'country_iso' => $belgium->iso, 'end_date' => Carbon::now()->subYear()], 20);
 
     }
 
@@ -47,9 +47,9 @@ class Codeweek4AllTest extends TestCase
     /** @test */
     public function count_of_unique_members_should_be_visible()
     {
-        create('App\Event', ['codeweek_for_all_participation_code' => 'cw19-bar', 'status' => 'APPROVED', 'creator_id' => 1, 'end_date' => Carbon::now()->subYear()], 2);
-        create('App\Event', ['codeweek_for_all_participation_code' => 'cw19-bar', 'status' => 'APPROVED', 'creator_id' => 2, 'end_date' => Carbon::now()->subYear()], 3);
-        create('App\Event', ['codeweek_for_all_participation_code' => 'cw19-bar', 'status' => 'APPROVED', 'creator_id' => 3, 'end_date' => Carbon::now()->subYear()], 11);
+        create(\App\Event::class, ['codeweek_for_all_participation_code' => 'cw19-bar', 'status' => 'APPROVED', 'creator_id' => 1, 'end_date' => Carbon::now()->subYear()], 2);
+        create(\App\Event::class, ['codeweek_for_all_participation_code' => 'cw19-bar', 'status' => 'APPROVED', 'creator_id' => 2, 'end_date' => Carbon::now()->subYear()], 3);
+        create(\App\Event::class, ['codeweek_for_all_participation_code' => 'cw19-bar', 'status' => 'APPROVED', 'creator_id' => 3, 'end_date' => Carbon::now()->subYear()], 11);
 
         $this->get(route('codeweek4all_details', ['code' => 'cw19-bar']))
             ->assertSee('Members: 3');
@@ -68,8 +68,8 @@ class Codeweek4AllTest extends TestCase
     /** @test */
     public function reporting_percentage_should_be_displayed()
     {
-        create('App\Event', ['codeweek_for_all_participation_code' => 'cw19-reporting', 'status' => 'APPROVED', 'creator_id' => 1, 'reported_at' => Carbon::now(), 'end_date' => Carbon::now()->subYear()], 3);
-        create('App\Event', ['codeweek_for_all_participation_code' => 'cw19-reporting', 'status' => 'APPROVED', 'creator_id' => 2, 'end_date' => Carbon::now()->subYear()], 7);
+        create(\App\Event::class, ['codeweek_for_all_participation_code' => 'cw19-reporting', 'status' => 'APPROVED', 'creator_id' => 1, 'reported_at' => Carbon::now(), 'end_date' => Carbon::now()->subYear()], 3);
+        create(\App\Event::class, ['codeweek_for_all_participation_code' => 'cw19-reporting', 'status' => 'APPROVED', 'creator_id' => 2, 'end_date' => Carbon::now()->subYear()], 7);
 
         $this->withoutExceptionHandling();
 

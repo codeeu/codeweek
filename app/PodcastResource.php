@@ -11,6 +11,6 @@ class PodcastResource extends Model
 
     public function podcast()
     {
-        return $this->belongsTo('App\Podcast');
+        return $this->belongsTo(\App\Podcast::class);
     }
 }

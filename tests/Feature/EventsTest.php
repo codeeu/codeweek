@@ -15,14 +15,14 @@ class EventsTest extends TestCase
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
-        $this->event = create('App\Event', [
-            'country_iso' => create('App\Country')->iso,
+        $this->event = create(\App\Event::class, [
+            'country_iso' => create(\App\Country::class)->iso,
             'status' => 'APPROVED',
         ]);
 
-        $this->event->audiences()->saveMany(factory('App\Audience', 3)->make());
-        $this->event->themes()->saveMany(factory('App\Theme', 3)->make());
-        $this->event->tags()->saveMany(factory('App\Tag', 3)->make());
+        $this->event->audiences()->saveMany(factory(\App\Audience::class, 3)->make());
+        $this->event->themes()->saveMany(factory(\App\Theme::class, 3)->make());
+        $this->event->tags()->saveMany(factory(\App\Tag::class, 3)->make());
     }
 
     /** @test */
@@ -90,9 +90,9 @@ class EventsTest extends TestCase
     /** @test */
     public function visitors_cant_see_the_user_email()
     {
-        $event = create('App\Event', [
+        $event = create(\App\Event::class, [
             'user_email' => 'foo@bar.com',
-            'country_iso' => create('App\Country')->iso,
+            'country_iso' => create(\App\Country::class)->iso,
             'status' => 'APPROVED',
         ]);
 
@@ -104,12 +104,12 @@ class EventsTest extends TestCase
     /** @test */
     public function ambassadors_from_other_countries_cant_see_the_user_email()
     {
-        $ambassador = create('App\User', ['country_iso' => 'FR'])->assignRole(
+        $ambassador = create(\App\User::class, ['country_iso' => 'FR'])->assignRole(
             'ambassador'
         );
         $this->signIn($ambassador);
 
-        $event = create('App\Event', [
+        $event = create(\App\Event::class, [
             'user_email' => 'foo@bar.com',
             'country_iso' => 'BE',
             'status' => 'APPROVED',
@@ -123,12 +123,12 @@ class EventsTest extends TestCase
     /** @test */
     public function ambassadors_from_same_country_can_see_the_user_email()
     {
-        $ambassador = create('App\User', ['country_iso' => 'FR'])->assignRole(
+        $ambassador = create(\App\User::class, ['country_iso' => 'FR'])->assignRole(
             'ambassador'
         );
         $this->signIn($ambassador);
 
-        $event = create('App\Event', [
+        $event = create(\App\Event::class, [
             'user_email' => 'foo@bar.com',
             'country_iso' => 'FR',
             'status' => 'APPROVED',
@@ -140,10 +140,10 @@ class EventsTest extends TestCase
     /** @test */
     public function admins_can_see_the_user_email()
     {
-        $admin = create('App\User')->assignRole('super admin');
+        $admin = create(\App\User::class)->assignRole('super admin');
         $this->signIn($admin);
 
-        $event = create('App\Event', [
+        $event = create(\App\Event::class, [
             'user_email' => 'foo@bar.com',
             'status' => 'APPROVED',
         ]);
@@ -154,7 +154,7 @@ class EventsTest extends TestCase
     /** @test */
     public function user_see_detail_picture_if_available()
     {
-        $event = create('App\Event', [
+        $event = create(\App\Event::class, [
             'picture_detail' => 'foobar.png',
             'status' => 'APPROVED',
         ]);
@@ -165,7 +165,7 @@ class EventsTest extends TestCase
     /** @test */
     public function user_see_normal_picture_if_detail_is_not_available()
     {
-        $event = create('App\Event', [
+        $event = create(\App\Event::class, [
             'picture' => 'normal.png',
             'status' => 'APPROVED',
         ]);

@@ -12,7 +12,7 @@ $factory->define(App\Event::class, function (Faker $faker) {
     $countries = Country::all()->pluck('iso')->toArray();
     $orgtypes = ['school', 'library', 'nonprofit', 'other'];
     if (empty($countries)) {
-        $countries[0] = factory('App\Country')->create()->iso;
+        $countries[0] = factory(\App\Country::class)->create()->iso;
     }
 
     $latitude = $faker->latitude(42, 59);
@@ -38,7 +38,7 @@ $factory->define(App\Event::class, function (Faker $faker) {
         'created' => Carbon::createFromDate($faker->dateTime),
         'updated' => Carbon::createFromDate($faker->dateTime),
         'creator_id' => function () {
-            return factory('App\User')->create()->id;
+            return factory(\App\User::class)->create()->id;
         },
         'report_notifications_count' => 0,
         'name_for_certificate' => $faker->name,

@@ -44,6 +44,6 @@ class ResourceCategory extends Model
 
     public function items()
     {
-        return $this->belongsToMany('App\ResourceItem');
+        return $this->belongsToMany(\App\ResourceItem::class);
     }
 }

@@ -29,6 +29,6 @@ class Notification extends Model
 {
     public function event()
     {
-        return $this->belongsTo('App\Event', 'id', 'event_id');
+        return $this->belongsTo(\App\Event::class, 'id', 'event_id');
     }
 }

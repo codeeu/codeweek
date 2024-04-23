@@ -17,13 +17,13 @@ class PodcastsTest extends TestCase
     {
         //        $this->withoutExceptionHandling();
 
-        create('App\Podcast', ['description' => 'active description', 'active' => true, 'release_date' => Carbon::now()->subDay()]);
-        create('App\Podcast', [
+        create(\App\Podcast::class, ['description' => 'active description', 'active' => true, 'release_date' => Carbon::now()->subDay()]);
+        create(\App\Podcast::class, [
             'description' => 'cannot be displayed',
             'active' => false,
         ]);
 
-        create('App\Podcast', [
+        create(\App\Podcast::class, [
             'description' => 'pending podcast',
             'active' => true,
             'release_date' => Carbon::now()->addDays(10),
@@ -40,13 +40,13 @@ class PodcastsTest extends TestCase
     /** @test */
     public function it_should_list_active_podcasts_in_html()
     {
-        create('App\Podcast', ['title' => 'active title', 'active' => true, 'release_date' => Carbon::now()->subHour()]);
-        create('App\Podcast', [
+        create(\App\Podcast::class, ['title' => 'active title', 'active' => true, 'release_date' => Carbon::now()->subHour()]);
+        create(\App\Podcast::class, [
             'title' => 'cannot be displayed',
             'active' => false,
         ]);
 
-        create('App\Podcast', [
+        create(\App\Podcast::class, [
             'title' => 'pending title',
             'active' => true,
             'release_date' => Carbon::now()->addHour(),
@@ -62,7 +62,7 @@ class PodcastsTest extends TestCase
     /** @test */
     public function podcast_can_have_guests()
     {
-        $podcast = create('App\Podcast');
+        $podcast = create(\App\Podcast::class);
 
         $podcastGuest = PodcastGuest::factory()->count(3)->for($podcast)->create();
         $otherPodcastGuests = PodcastResource::factory()->count(10)->create();
@@ -75,7 +75,7 @@ class PodcastsTest extends TestCase
     public function podcast_should_list_guests()
     {
 
-        $podcast = create('App\Podcast');
+        $podcast = create(\App\Podcast::class);
 
         $podcastGuest = PodcastGuest::factory()->for($podcast)->create();
 
@@ -89,7 +89,7 @@ class PodcastsTest extends TestCase
     public function podcast_should_list_resources()
     {
 
-        $podcast = create('App\Podcast');
+        $podcast = create(\App\Podcast::class);
 
         $podcastResource = PodcastResource::factory()->for($podcast)->create();
 
@@ -105,7 +105,7 @@ class PodcastsTest extends TestCase
     {
         $this->withoutExceptionHandling();
 
-        $podcast = create('App\Podcast');
+        $podcast = create(\App\Podcast::class);
         $podcastResource = PodcastResource::factory()->count(3)->for($podcast)->create();
         $otherPodcastResource = PodcastResource::factory()->count(6)->create();
 

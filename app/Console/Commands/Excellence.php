@@ -60,7 +60,7 @@ class Excellence extends Command
         //Create an excellence record for each winner
         foreach ($winners as $user_id) {
             try {
-                create('App\Excellence', ['edition' => $edition, 'user_id' => $user_id]);
+                create(\App\Excellence::class, ['edition' => $edition, 'user_id' => $user_id]);
             } catch (\Exception $ex) {
                 Log::info($ex->getMessage());
             }

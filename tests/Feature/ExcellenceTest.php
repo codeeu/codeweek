@@ -31,11 +31,11 @@ class ExcellenceTest extends TestCase
     /** @test */
     public function user_can_have_a_certificate_of_excellence()
     {
-        $user = create('App\User');
+        $user = create(\App\User::class);
 
-        create('App\Excellence', ['edition' => 2018, 'user_id' => $user->id]);
-        create('App\Excellence', ['edition' => 2019, 'user_id' => $user->id]);
-        create('App\Excellence', [
+        create(\App\Excellence::class, ['edition' => 2018, 'user_id' => $user->id]);
+        create(\App\Excellence::class, ['edition' => 2019, 'user_id' => $user->id]);
+        create(\App\Excellence::class, [
             'edition' => 2019,
             'user_id' => $user->id,
             'type' => 'SuperOrganiser',
@@ -47,11 +47,11 @@ class ExcellenceTest extends TestCase
     /** @test */
     public function user_can_have_a_super_organiser_certificate()
     {
-        $user = create('App\User');
+        $user = create(\App\User::class);
 
-        create('App\Excellence', ['edition' => 2018, 'user_id' => $user->id]);
-        create('App\Excellence', ['edition' => 2019, 'user_id' => $user->id]);
-        create('App\Excellence', [
+        create(\App\Excellence::class, ['edition' => 2018, 'user_id' => $user->id]);
+        create(\App\Excellence::class, ['edition' => 2019, 'user_id' => $user->id]);
+        create(\App\Excellence::class, [
             'edition' => 2019,
             'user_id' => $user->id,
             'type' => 'SuperOrganiser',
@@ -63,8 +63,8 @@ class ExcellenceTest extends TestCase
     /** @test */
     public function should_get_all_users_with_excellence_for_specific_edition()
     {
-        create('App\Excellence', ['edition' => 2018], 10);
-        create('App\Excellence', ['edition' => 2019], 20);
+        create(\App\Excellence::class, ['edition' => 2018], 10);
+        create(\App\Excellence::class, ['edition' => 2019], 20);
 
         $filtered = Excellence::byYear(2018);
 
@@ -74,9 +74,9 @@ class ExcellenceTest extends TestCase
     /** @test */
     public function user_should_not_have_excellence()
     {
-        $user = create('App\User');
+        $user = create(\App\User::class);
 
-        create('App\Excellence', ['edition' => 2019, 'user_id' => $user->id]);
+        create(\App\Excellence::class, ['edition' => 2019, 'user_id' => $user->id]);
 
         $excellences = $user->excellences;
 
@@ -90,8 +90,8 @@ class ExcellenceTest extends TestCase
     /** @test */
     public function winner_can_report_for_Excellence()
     {
-        $user = create('App\User');
-        create('App\Excellence', ['edition' => 2019, 'user_id' => $user->id]);
+        $user = create(\App\User::class);
+        create(\App\Excellence::class, ['edition' => 2019, 'user_id' => $user->id]);
 
         $this->signIn($user);
 
@@ -101,8 +101,8 @@ class ExcellenceTest extends TestCase
     /** @test */
     public function winner_can_report_for_super_organiser()
     {
-        $user = create('App\User');
-        create('App\Excellence', [
+        $user = create(\App\User::class);
+        create(\App\Excellence::class, [
             'edition' => 2020,
             'user_id' => $user->id,
             'type' => 'SuperOrganiser',
@@ -116,7 +116,7 @@ class ExcellenceTest extends TestCase
     /** @test */
     public function non_winner_cant_report_for_Excellence()
     {
-        $user = create('App\User');
+        $user = create(\App\User::class);
 
         $this->signIn($user);
 
@@ -128,7 +128,7 @@ class ExcellenceTest extends TestCase
     /** @test */
     public function non_winner_cant_report_for_super_organiser()
     {
-        $user = create('App\User');
+        $user = create(\App\User::class);
 
         $this->signIn($user);
 
@@ -140,12 +140,12 @@ class ExcellenceTest extends TestCase
     /** @test */
     public function excellence_certificates_should_be_visible_on_certificates_page()
     {
-        $user = create('App\User');
+        $user = create(\App\User::class);
 
         $this->signIn($user);
         $name = 'Tintin et Milou';
 
-        create('App\Excellence', [
+        create(\App\Excellence::class, [
             'edition' => 2018,
             'user_id' => $user->id,
             'name_for_certificate' => $name,
@@ -157,12 +157,12 @@ class ExcellenceTest extends TestCase
     /** @test */
     public function super_organiser_certificates_should_be_visible_on_certificates_page()
     {
-        $user = create('App\User');
+        $user = create(\App\User::class);
 
         $this->signIn($user);
         $name = 'Bob et Bobette';
 
-        create('App\Excellence', [
+        create(\App\Excellence::class, [
             'edition' => 2020,
             'user_id' => $user->id,
             'name_for_certificate' => $name,
@@ -177,17 +177,17 @@ class ExcellenceTest extends TestCase
     /** @test */
     public function excellence_certificates_should_be_visible_on_certificates_page_only_when_reported()
     {
-        $user = create('App\User');
+        $user = create(\App\User::class);
 
         $this->signIn($user);
         $name = null;
 
-        create('App\Excellence', [
+        create(\App\Excellence::class, [
             'edition' => 2017,
             'user_id' => $user->id,
             'name_for_certificate' => $name,
         ]);
-        create('App\Excellence', [
+        create(\App\Excellence::class, [
             'edition' => 2018,
             'user_id' => $user->id,
             'name_for_certificate' => $name,
@@ -202,12 +202,12 @@ class ExcellenceTest extends TestCase
     /** @test */
     public function super_organiser_certificates_should_be_visible_on_certificates_page_only_when_reported()
     {
-        $user = create('App\User');
+        $user = create(\App\User::class);
 
         $this->signIn($user);
         $name = null;
 
-        create('App\Excellence', [
+        create(\App\Excellence::class, [
             'edition' => 2020,
             'user_id' => $user->id,
             'name_for_certificate' => $name,

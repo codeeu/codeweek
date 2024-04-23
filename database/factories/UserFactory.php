@@ -18,7 +18,7 @@ $factory->define(App\User::class, function (Faker $faker) {
 
     $countries = Country::all()->pluck('iso')->toArray();
     if (empty($countries)) {
-        $countries[0] = factory('App\Country')->create()->iso;
+        $countries[0] = factory(\App\Country::class)->create()->iso;
     }
 
     return [
