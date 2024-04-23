@@ -11,7 +11,7 @@ class VolunteerTest extends TestCase
 
     private $admin;
 
-    public function setup(): void
+    protected function setUp(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');

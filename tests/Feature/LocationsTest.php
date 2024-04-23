@@ -11,7 +11,7 @@ class LocationsTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function setup(): void
+    protected function setUp(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');

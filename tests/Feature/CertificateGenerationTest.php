@@ -13,7 +13,7 @@ class CertificateGenerationTest extends TestCase
 
     protected $event;
 
-    public function setup(): void
+    protected function setUp(): void
     {
         parent::setUp();
 

@@ -13,7 +13,7 @@ class Codeweek4AllTest extends TestCase
 
     //private $event;
 
-    public function setup(): void
+    protected function setUp(): void
     {
         parent::setUp();
 

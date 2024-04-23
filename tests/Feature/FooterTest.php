@@ -13,7 +13,7 @@ class FooterTest extends TestCase
 
     private $ambassador_fr;
 
-    public function setup(): void
+    protected function setUp(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');

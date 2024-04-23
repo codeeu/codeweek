@@ -12,7 +12,7 @@ class SearchEventTest extends TestCase
 {
     use DatabaseMigrations;
 
-    public function setup(): void
+    protected function setUp(): void
     {
         parent::setUp();
         create(\App\Country::class, [], 20);
