@@ -10,10 +10,10 @@ $factory->define(Participation::class, function (Faker $faker) {
         'user_id' => function () {
             return factory(App\User::class)->create()->id;
         },
-        'names' => $faker->firstName,
+        'names' => $faker->firstName(),
         'event_name' => $faker->name(),
         'event_date' => $faker->name(),
-        'participation_url' => $faker->url,
+        'participation_url' => $faker->url(),
 
     ];
 });
