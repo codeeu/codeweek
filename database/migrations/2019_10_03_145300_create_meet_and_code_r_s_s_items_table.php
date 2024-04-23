@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMeetAndCodeRSSItemsTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -46,4 +46,4 @@ class CreateMeetAndCodeRSSItemsTable extends Migration
     {
         Schema::dropIfExists('meet_and_code_r_s_s_items');
     }
-}
+};

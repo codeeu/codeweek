@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBonnRSSItemsTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -49,4 +49,4 @@ class CreateBonnRSSItemsTable extends Migration
     {
         Schema::dropIfExists('bonn_r_s_s_items');
     }
-}
+};

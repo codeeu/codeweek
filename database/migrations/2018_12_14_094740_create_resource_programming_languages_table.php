@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateResourceProgrammingLanguagesTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -33,4 +33,4 @@ class CreateResourceProgrammingLanguagesTable extends Migration
     {
         Schema::dropIfExists('resource_programming_languages');
     }
-}
+};
