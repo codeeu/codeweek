@@ -4,12 +4,10 @@ use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| Static Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+| Here is where you can register web routes for your application static pages.
 |
 */
 
@@ -252,12 +250,15 @@ Route::group(['prefix' => '2021/challenges'], $challenges);
 Route::group(['prefix' => 'challenges'], $challenges);
 
 
-
-
 /*
  * Schools page
  */
 Route::get('schools', 'SchoolsController@index')->name('schools');
+
+/*
+ * Online courses page
+ */
+Route::view('/online-courses', 'online-courses')->name('online-courses');
 
 /*
  * Old routes. To be deleted ?

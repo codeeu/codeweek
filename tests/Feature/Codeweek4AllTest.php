@@ -28,6 +28,13 @@ class Codeweek4AllTest extends TestCase
         create('App\Event', ["codeweek_for_all_participation_code" => "cw19-foo", "status" => "APPROVED", "participants_count" => 17, "country_iso" => $france->iso,"end_date" => Carbon::now()->subYear()], 15);
         create('App\Event', ["codeweek_for_all_participation_code" => "cw19-foo", "status" => "APPROVED", "participants_count" => 17, "country_iso" => $belgium->iso,"end_date" => Carbon::now()->subYear()], 20);
 
+        $this->seed('RolesAndPermissionsSeeder');
+        $superadmin = create('App\User');
+        $superadmin->assignRole('super admin');
+
+        $this->signIn($superadmin);
+
+
     }
 
     /** @test */
