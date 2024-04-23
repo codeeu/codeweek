@@ -34,7 +34,7 @@ class LeadingTeachersReportFormTest extends TestCase
     }
 
     /** @test */
-    public function leading_teacher_action_should_be_created()
+    public function leading_teacher_action_should_be_created(): void
     {
         // Submit the form
         // Expect Action to be created in pending status

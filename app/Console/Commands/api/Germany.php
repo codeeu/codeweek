@@ -36,7 +36,7 @@ class Germany extends Command
      *
      * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
 
         dump('Loading German events');

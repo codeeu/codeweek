@@ -11,7 +11,7 @@ class OrganiserTest extends TestCase
     use RefreshDatabase;
 
     /** @test */
-    public function user_should_get_reported_events_linked()
+    public function user_should_get_reported_events_linked(): void
     {
 
         $user = create(\App\User::class);

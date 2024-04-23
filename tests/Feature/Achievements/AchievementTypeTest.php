@@ -11,7 +11,7 @@ class AchievementTypeTest extends TestCase
     use RefreshDatabase;
 
     /** @test */
-    public function it_sets_a_default_name()
+    public function it_sets_a_default_name(): void
     {
         $type = new FakeAchievementType();
 

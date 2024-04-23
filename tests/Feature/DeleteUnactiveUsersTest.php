@@ -13,7 +13,7 @@ class DeleteUnactiveUsersTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function delete_user_unactive_more_than_5_years_ago()
+    public function delete_user_unactive_more_than_5_years_ago(): void
     {
         $user = create(\App\User::class, ['updated_at' => Carbon::now()->subYear(6)]);
         $this->artisan('delete:unactiveusers');
@@ -21,7 +21,7 @@ class DeleteUnactiveUsersTest extends TestCase
     }
 
     /** @test */
-    public function delete_user_unactive_5_years_ago()
+    public function delete_user_unactive_5_years_ago(): void
     {
         $user = create(\App\User::class, ['updated_at' => Carbon::now()->subYear(5)]);
         $this->artisan('delete:unactiveusers');
@@ -29,7 +29,7 @@ class DeleteUnactiveUsersTest extends TestCase
     }
 
     /** @test */
-    public function dont_delete_user_active()
+    public function dont_delete_user_active(): void
     {
         $user = create(\App\User::class, ['updated_at' => Carbon::now()->subYear(4)]);
         $this->artisan('delete:unactiveusers');
@@ -37,7 +37,7 @@ class DeleteUnactiveUsersTest extends TestCase
     }
 
     /** @test */
-    public function delete_only_unactive_users()
+    public function delete_only_unactive_users(): void
     {
         $unactive_user1 = create(\App\User::class, ['updated_at' => Carbon::now()->subYear(6)]);
         $unactive_user2 = create(\App\User::class, ['updated_at' => Carbon::now()->subYear(5)]);
@@ -49,7 +49,7 @@ class DeleteUnactiveUsersTest extends TestCase
     }
 
     /** @test */
-    public function check_report_unactive_user()
+    public function check_report_unactive_user(): void
     {
         $unactive_user1 = create(\App\User::class, ['updated_at' => Carbon::now()->subYear(6)]);
         $unactive_user2 = create(\App\User::class, ['updated_at' => Carbon::now()->subYear(5)]);

@@ -10,7 +10,7 @@ class GenerateAchievementCommand extends Command
 
     protected $description = 'Generate a new Achievement class stub.';
 
-    public function handle()
+    public function handle(): void
     {
         $path = app_path('Achievements/Types/'.$this->argument('name').'.php');
 

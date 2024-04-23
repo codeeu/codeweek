@@ -37,7 +37,7 @@ class MailingInactiveOrganizers extends Command
      *
      * @return int
      */
-    public function handle()
+    public function handle(): int
     {
         $recipients = ReminderHelper::getInactiveCreators(2021);
         //$recipients = ['alainvd@gmail.com'];

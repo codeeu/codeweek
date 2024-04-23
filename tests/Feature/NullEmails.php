@@ -15,7 +15,7 @@ class NullEmails extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function it_should_get_distinct_emails()
+    public function it_should_get_distinct_emails(): void
     {
         $nullUser = create(\App\User::class, ['email' => null]);
         $user1 = create(\App\User::class, ['email' => 'foo@bar']);
@@ -38,7 +38,7 @@ class NullEmails extends TestCase
     }
 
     /** @test */
-    public function it_should_get_active_user_for_specific_email()
+    public function it_should_get_active_user_for_specific_email(): void
     {
 
         Mail::fake();
@@ -55,7 +55,7 @@ class NullEmails extends TestCase
     }
 
     /** @test */
-    public function it_should_assign_activities_to_a_user()
+    public function it_should_assign_activities_to_a_user(): void
     {
 
         $user1 = create(\App\User::class, ['email' => 'foo@bar', 'id' => 100]);
@@ -72,7 +72,7 @@ class NullEmails extends TestCase
     }
 
     /** @test */
-    public function it_should_create_user()
+    public function it_should_create_user(): void
     {
 
         Mail::fake();

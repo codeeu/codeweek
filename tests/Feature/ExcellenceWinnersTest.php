@@ -67,7 +67,7 @@ class ExcellenceWinnersTest extends TestCase
     }
 
     /** @test */
-    public function should_get_codes_with_500_students_or_more()
+    public function should_get_codes_with_500_students_or_more(): void
     {
         //Create the Events
 
@@ -81,7 +81,7 @@ class ExcellenceWinnersTest extends TestCase
     }
 
     /** @test */
-    public function should_get_codes_with_10_organisers_or_more()
+    public function should_get_codes_with_10_organisers_or_more(): void
     {
 
         $codes = ExcellenceWinnersHelper::criteria2(2019);
@@ -95,7 +95,7 @@ class ExcellenceWinnersTest extends TestCase
     }
 
     /** @test */
-    public function should_get_three_countries_or_more()
+    public function should_get_three_countries_or_more(): void
     {
 
         $codes = ExcellenceWinnersHelper::criteria3(2019);
@@ -111,7 +111,7 @@ class ExcellenceWinnersTest extends TestCase
     }
 
     /** @test */
-    public function should_get_winners_codes()
+    public function should_get_winners_codes(): void
     {
 
         $codes = ExcellenceWinnersHelper::getWinnerCodes(2019);
@@ -132,7 +132,7 @@ class ExcellenceWinnersTest extends TestCase
     }
 
     /** @test */
-    public function should_get_winners_codes_for_specific_year()
+    public function should_get_winners_codes_for_specific_year(): void
     {
 
         $codes = ExcellenceWinnersHelper::getWinnerCodes(2018);
@@ -151,7 +151,7 @@ class ExcellenceWinnersTest extends TestCase
     }
 
     /** @test */
-    public function should_get_winners_codes_details()
+    public function should_get_winners_codes_details(): void
     {
 
         $codes = ExcellenceWinnersHelper::getWinnerCodes(2019);
@@ -165,7 +165,7 @@ class ExcellenceWinnersTest extends TestCase
     }
 
     /** @test */
-    public function should_get_winners_fulfilling_all_criteria()
+    public function should_get_winners_fulfilling_all_criteria(): void
     {
 
         $codes = ExcellenceWinnersHelper::getWinnerCodes(2019);

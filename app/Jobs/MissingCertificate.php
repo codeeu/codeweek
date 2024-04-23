@@ -33,7 +33,7 @@ class MissingCertificate implements ShouldQueue
      *
      * @return void
      */
-    public function handle()
+    public function handle(): void
     {
         (new Certificate($this->event))->generate();
         Log::info('sending email to '.$this->event->owner->email);

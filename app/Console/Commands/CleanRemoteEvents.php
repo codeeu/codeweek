@@ -37,7 +37,7 @@ class CleanRemoteEvents extends Command
      *
      * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::info('Calling Clean Remote Events');
 

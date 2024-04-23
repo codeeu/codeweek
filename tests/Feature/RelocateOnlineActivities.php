@@ -12,7 +12,7 @@ class RelocateOnlineActivities extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function it_should_relocate_event()
+    public function it_should_relocate_event(): void
     {
 
         $france = create(\App\Country::class, ['iso' => 'FR', 'longitude' => 2.824354, 'latitude' => 46.980252]);
@@ -31,7 +31,7 @@ class RelocateOnlineActivities extends TestCase
     }
 
     /** @test */
-    public function it_should_relocate_event_on_creation()
+    public function it_should_relocate_event_on_creation(): void
     {
         Mail::fake();
         $this->seed('RolesAndPermissionsSeeder');

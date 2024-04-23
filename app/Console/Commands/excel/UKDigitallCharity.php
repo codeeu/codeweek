@@ -38,7 +38,7 @@ class UKDigitallCharity extends Command
      *
      * @return int
      */
-    public function handle()
+    public function handle(): int
     {
         Log::info('Loading UK Digitall Charity');
 

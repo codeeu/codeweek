@@ -40,7 +40,7 @@ class Thueringen extends Command
      *
      * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::info('Loading Thueringen API Items in Database');
 

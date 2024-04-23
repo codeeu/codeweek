@@ -10,7 +10,7 @@ class ParticipationTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function anonymous_users_cant_create_participation_certificate()
+    public function anonymous_users_cant_create_participation_certificate(): void
     {
 
         $this->get(route('participation'))->assertRedirect('/login');
@@ -18,7 +18,7 @@ class ParticipationTest extends TestCase
     }
 
     /** @test */
-    public function user_can_have_a_certificate_of_participation()
+    public function user_can_have_a_certificate_of_participation(): void
     {
 
         $user = create(\App\User::class);
@@ -31,7 +31,7 @@ class ParticipationTest extends TestCase
     }
 
     /** @test */
-    public function user_should_be_allowed_to_download_certificate()
+    public function user_should_be_allowed_to_download_certificate(): void
     {
 
         $user = create(\App\User::class);
@@ -44,7 +44,7 @@ class ParticipationTest extends TestCase
     }
 
     /** @test */
-    public function user_should_only_see_their_certificates()
+    public function user_should_only_see_their_certificates(): void
     {
 
         $user = create(\App\User::class);

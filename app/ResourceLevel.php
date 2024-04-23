@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -42,12 +43,12 @@ class ResourceLevel extends Model
         'teach' => false,
     ];
 
-    public function items()
+    public function items(): BelongsToMany
     {
         return $this->belongsToMany(\App\ResourceItem::class);
     }
 
-    public function users()
+    public function users(): BelongsToMany
     {
         return $this->belongsToMany(\App\User::class);
     }

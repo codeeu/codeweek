@@ -19,7 +19,7 @@ class ApproveEventTest extends TestCase
     }
 
     /** @test */
-    public function event_can_be_approved_by_admin()
+    public function event_can_be_approved_by_admin(): void
     {
 
         Mail::fake();
@@ -43,7 +43,7 @@ class ApproveEventTest extends TestCase
     }
 
     /** @test */
-    public function email_should_be_sent_to_event_email_when_event_is_approved()
+    public function email_should_be_sent_to_event_email_when_event_is_approved(): void
     {
 
         $this->withExceptionHandling();
@@ -67,7 +67,7 @@ class ApproveEventTest extends TestCase
     }
 
     /** @test */
-    public function email_should_be_sent_to_creator_email_when_event_email_is_blank()
+    public function email_should_be_sent_to_creator_email_when_event_email_is_blank(): void
     {
 
         $this->withExceptionHandling();
@@ -92,7 +92,7 @@ class ApproveEventTest extends TestCase
     }
 
     /** @test */
-    public function email_should_not_be_sent_to_creator_email()
+    public function email_should_not_be_sent_to_creator_email(): void
     {
 
         $this->withExceptionHandling();
@@ -114,7 +114,7 @@ class ApproveEventTest extends TestCase
     }
 
     /** @test */
-    public function event_cant_be_approved_by_ambassador_of_other_country()
+    public function event_cant_be_approved_by_ambassador_of_other_country(): void
     {
 
         $this->withExceptionHandling();
@@ -135,7 +135,7 @@ class ApproveEventTest extends TestCase
     }
 
     /** @test */
-    public function event_can_be_approved_by_ambassador_of_same_country()
+    public function event_can_be_approved_by_ambassador_of_same_country(): void
     {
 
         $this->withExceptionHandling();
@@ -158,7 +158,7 @@ class ApproveEventTest extends TestCase
     }
 
     /** @test */
-    public function visitors_cant_see_the_approve_banner()
+    public function visitors_cant_see_the_approve_banner(): void
     {
 
         $event = create(\App\Event::class);
@@ -169,7 +169,7 @@ class ApproveEventTest extends TestCase
     }
 
     /** @test */
-    public function ambassadors_of_other_countries_cant_see_the_approve_banner()
+    public function ambassadors_of_other_countries_cant_see_the_approve_banner(): void
     {
         $ambassador = create(\App\User::class, ['country_iso' => 'FR'])->assignRole('ambassador');
         $this->signIn($ambassador);
@@ -182,7 +182,7 @@ class ApproveEventTest extends TestCase
     }
 
     /** @test */
-    public function ambassadors_of_right_country_can_see_the_approve_banner()
+    public function ambassadors_of_right_country_can_see_the_approve_banner(): void
     {
         $ambassador = create(\App\User::class, ['country_iso' => 'FR'])->assignRole('ambassador');
         $this->signIn($ambassador);

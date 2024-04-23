@@ -11,7 +11,7 @@ class MyEventsTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function a_user_can_see_his_events()
+    public function a_user_can_see_his_events(): void
     {
         $this->signIn(create(\App\User::class));
 
@@ -24,7 +24,7 @@ class MyEventsTest extends TestCase
     }
 
     /** @test */
-    public function user_count_of_activities()
+    public function user_count_of_activities(): void
     {
 
         $this->signIn(create(\App\User::class));

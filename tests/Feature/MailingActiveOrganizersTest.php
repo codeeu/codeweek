@@ -12,7 +12,7 @@ class MailingActiveOrganizersTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function it_should_select_only_active_organizers()
+    public function it_should_select_only_active_organizers(): void
     {
         $active = create(\App\User::class, ['email' => 'active@gmail.com', 'magic_key' => 131313]);
         $active2 = create(\App\User::class, ['email' => 'active2@gmail.com', 'magic_key' => 252525]);

@@ -12,7 +12,7 @@ class InfluenceTest extends TestCase
     use RefreshDatabase;
 
     /** @test */
-    public function user_influence_should_be_counted()
+    public function user_influence_should_be_counted(): void
     {
 
         $user = create(\App\User::class);
@@ -35,7 +35,7 @@ class InfluenceTest extends TestCase
     /**
      * @test
      */
-    public function leading_teacher_receives_experience_when_event_is_approved()
+    public function leading_teacher_receives_experience_when_event_is_approved(): void
     {
 
         //        $tag = create('App\Tag', ['name' => 'TI-testme-234']);

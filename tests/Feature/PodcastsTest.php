@@ -13,7 +13,7 @@ class PodcastsTest extends TestCase
     use RefreshDatabase;
 
     /** @test */
-    public function it_should_list_active_podcasts_in_rss()
+    public function it_should_list_active_podcasts_in_rss(): void
     {
         //        $this->withoutExceptionHandling();
 
@@ -38,7 +38,7 @@ class PodcastsTest extends TestCase
     }
 
     /** @test */
-    public function it_should_list_active_podcasts_in_html()
+    public function it_should_list_active_podcasts_in_html(): void
     {
         create(\App\Podcast::class, ['title' => 'active title', 'active' => true, 'release_date' => Carbon::now()->subHour()]);
         create(\App\Podcast::class, [
@@ -60,7 +60,7 @@ class PodcastsTest extends TestCase
     }
 
     /** @test */
-    public function podcast_can_have_guests()
+    public function podcast_can_have_guests(): void
     {
         $podcast = create(\App\Podcast::class);
 
@@ -72,7 +72,7 @@ class PodcastsTest extends TestCase
     }
 
     /** @test */
-    public function podcast_should_list_guests()
+    public function podcast_should_list_guests(): void
     {
 
         $podcast = create(\App\Podcast::class);
@@ -86,7 +86,7 @@ class PodcastsTest extends TestCase
     }
 
     /** @test */
-    public function podcast_should_list_resources()
+    public function podcast_should_list_resources(): void
     {
 
         $podcast = create(\App\Podcast::class);
@@ -101,7 +101,7 @@ class PodcastsTest extends TestCase
     }
 
     /** @test */
-    public function podcast_can_have_resources()
+    public function podcast_can_have_resources(): void
     {
         $this->withoutExceptionHandling();
 

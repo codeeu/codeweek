@@ -10,7 +10,7 @@ class UpdateThemeAndAudienceTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function it_should_not_create_if_themes_already_exist()
+    public function it_should_not_create_if_themes_already_exist(): void
     {
 
         create(\App\Audience::class, [], 10);
@@ -30,7 +30,7 @@ class UpdateThemeAndAudienceTest extends TestCase
     }
 
     /** @test */
-    public function it_should_change_the_audience_for_meet_and_code()
+    public function it_should_change_the_audience_for_meet_and_code(): void
     {
 
         create(\App\Audience::class, [], 10);
@@ -48,7 +48,7 @@ class UpdateThemeAndAudienceTest extends TestCase
     }
 
     /** @test */
-    public function it_should_change_the_theme_for_meet_and_code()
+    public function it_should_change_the_theme_for_meet_and_code(): void
     {
 
         create(\App\Theme::class, [], 10);

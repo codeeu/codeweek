@@ -23,7 +23,7 @@ class CertificateGenerationTest extends TestCase
     }
 
     /** @test */
-    public function it_should_escape_special_characters()
+    public function it_should_escape_special_characters(): void
     {
 
         $certificate = new Certificate($this->event);

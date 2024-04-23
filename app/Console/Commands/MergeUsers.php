@@ -36,7 +36,7 @@ class MergeUsers extends Command
      *
      * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         UserController::mergeEvents();
     }

@@ -13,7 +13,7 @@ class RelocateCenteredActivities extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function it_should_filter_centered_and_non_relocated_events()
+    public function it_should_filter_centered_and_non_relocated_events(): void
     {
         $france = create(\App\Country::class, [
             'iso' => 'FR',

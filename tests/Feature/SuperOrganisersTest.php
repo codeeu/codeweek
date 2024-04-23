@@ -30,7 +30,7 @@ class SuperOrganisersTest extends TestCase
     }
 
     /** @test */
-    public function it_should_get_super_organiser_winners()
+    public function it_should_get_super_organiser_winners(): void
     {
 
         $winners = SuperOrganiserQuery::winners(Carbon::now()->year);
@@ -40,7 +40,7 @@ class SuperOrganisersTest extends TestCase
     }
 
     /** @test */
-    public function notify_winners_for_specific_edition()
+    public function notify_winners_for_specific_edition(): void
     {
         $this->withExceptionHandling();
 
@@ -76,7 +76,7 @@ class SuperOrganisersTest extends TestCase
     }
 
     /** @test */
-    public function notified_organisers_should_be_flagged_as_notified_with_no_interference()
+    public function notified_organisers_should_be_flagged_as_notified_with_no_interference(): void
     {
         $this->withExceptionHandling();
 

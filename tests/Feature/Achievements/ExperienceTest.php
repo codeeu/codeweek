@@ -13,7 +13,7 @@ class ExperienceTest extends TestCase
     use RefreshDatabase;
 
     /** @test */
-    public function an_announcement_is_made_when_experience_is_earned()
+    public function an_announcement_is_made_when_experience_is_earned(): void
     {
         Event::fake();
 
@@ -27,7 +27,7 @@ class ExperienceTest extends TestCase
     }
 
     /** @test */
-    public function a_user_is_awarded_experience()
+    public function a_user_is_awarded_experience(): void
     {
 
         $user = create(\App\User::class);
@@ -45,7 +45,7 @@ class ExperienceTest extends TestCase
     }
 
     /** @test */
-    public function a_user_is_awarded_experience_for_specifi_years()
+    public function a_user_is_awarded_experience_for_specifi_years(): void
     {
 
         $user = create(\App\User::class);
@@ -64,7 +64,7 @@ class ExperienceTest extends TestCase
     }
 
     /** @test */
-    public function a_user_experience_can_be_stripped()
+    public function a_user_experience_can_be_stripped(): void
     {
 
         $user = create(\App\User::class);
@@ -101,7 +101,7 @@ class ExperienceTest extends TestCase
     //    }
 
     /** @test */
-    public function a_user_earns_experience_when_an_activity_has_been_reported()
+    public function a_user_earns_experience_when_an_activity_has_been_reported(): void
     {
 
         $user = create(\App\User::class);
@@ -117,7 +117,7 @@ class ExperienceTest extends TestCase
     }
 
     /** @test */
-    public function a_leading_teacher_earns_experience_when_an_activity_has_been_approved_with_his_tag()
+    public function a_leading_teacher_earns_experience_when_an_activity_has_been_approved_with_his_tag(): void
     {
 
         $user = create(\App\User::class);
@@ -137,7 +137,7 @@ class ExperienceTest extends TestCase
     }
 
     /** @test */
-    public function it_should_reset_points()
+    public function it_should_reset_points(): void
     {
 
         $user = create(\App\User::class);

@@ -10,7 +10,7 @@ class UpdateUserTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function a_user_can_be_updated_by_its_owner()
+    public function a_user_can_be_updated_by_its_owner(): void
     {
         $user = create(\App\User::class);
 
@@ -62,7 +62,7 @@ class UpdateUserTest extends TestCase
     }
 
     /** @test */
-    public function a_user_cant_update_its_email()
+    public function a_user_cant_update_its_email(): void
     {
         $user = create(\App\User::class);
 

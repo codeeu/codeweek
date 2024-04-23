@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Cache;
@@ -129,12 +130,12 @@ class Country extends Model
 
     }
 
-    public function events()
+    public function events(): HasMany
     {
         return $this->hasMany(\App\Event::class);
     }
 
-    public function approvedEvents($year, $operator)
+    public function approvedEvents($year, $operator): HasMany
     {
         return $this->hasMany(Event::class)
             ->where('status', '=', 'APPROVED')

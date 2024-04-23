@@ -2,6 +2,7 @@
 
 namespace App\Achievements;
 
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use App\User;
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,7 +15,7 @@ class Achievement extends Model
         $this->users()->attach($user);
     }
 
-    public function users()
+    public function users(): BelongsToMany
     {
         return $this->belongsToMany(User::class, 'user_achievements');
     }

@@ -12,7 +12,7 @@ class EventSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
         create(\App\Event::class, [
             'status' => 'APPROVED',

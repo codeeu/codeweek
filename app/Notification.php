@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -27,7 +28,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Notification extends Model
 {
-    public function event()
+    public function event(): BelongsTo
     {
         return $this->belongsTo(\App\Event::class, 'id', 'event_id');
     }

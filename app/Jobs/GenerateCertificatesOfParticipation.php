@@ -31,7 +31,7 @@ class GenerateCertificatesOfParticipation implements ShouldQueue
      *
      * @return void
      */
-    public function handle()
+    public function handle(): void
     {
         $names = array_map('trim', explode(',', $this->participation->names));
 

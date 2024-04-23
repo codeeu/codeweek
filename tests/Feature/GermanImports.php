@@ -10,7 +10,7 @@ class GermanImports extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function it_should_not_be_listed_as_imported()
+    public function it_should_not_be_listed_as_imported(): void
     {
 
         $event = create(\App\Event::class, ['codeweek_for_all_participation_code' => 'random']);
@@ -20,7 +20,7 @@ class GermanImports extends TestCase
     }
 
     /** @test */
-    public function it_should_be_listed_as_imported()
+    public function it_should_be_listed_as_imported(): void
     {
         $this->assertTrue(create(\App\Event::class, ['codeweek_for_all_participation_code' => 'cw22-hamburg'])->imported());
         $this->assertTrue(create(\App\Event::class, ['codeweek_for_all_participation_code' => 'cw22-baden'])->imported());

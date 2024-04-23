@@ -11,7 +11,7 @@ class LevelSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
         //Create Levels
         create(\App\ResourceLevel::class, [

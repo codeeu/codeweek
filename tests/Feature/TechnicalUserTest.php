@@ -12,7 +12,7 @@ class TechnicalUserTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function it_should_create_a_technical_user()
+    public function it_should_create_a_technical_user(): void
     {
         $key = 'foobar';
 

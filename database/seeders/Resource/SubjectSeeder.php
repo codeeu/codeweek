@@ -11,7 +11,7 @@ class SubjectSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
         create(\App\ResourceSubject::class, [
             'id' => 1,

@@ -27,7 +27,7 @@ class DeleteUnactiveUsers extends Command
      *
      * @return int
      */
-    public function handle()
+    public function handle(): int
     {
         $deletedUsers = UserHelper::deleteInactiveUsers(5);
         $admin = config('codeweek.administrator');

@@ -25,7 +25,7 @@ class CountriesTest extends TestCase
     }*/
 
     /** @test */
-    public function get_countries_with_events()
+    public function get_countries_with_events(): void
     {
 
         $country_without_event = create(\App\Country::class);
@@ -39,7 +39,7 @@ class CountriesTest extends TestCase
     }
 
     /** @test */
-    public function get_countries_with_coordinators()
+    public function get_countries_with_coordinators(): void
     {
 
         $this->seed('RolesAndPermissionsSeeder');

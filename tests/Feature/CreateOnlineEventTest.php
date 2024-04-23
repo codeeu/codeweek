@@ -12,7 +12,7 @@ class CreateOnlineEventTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function an_authenticated_user_can_create_online_event_without_location()
+    public function an_authenticated_user_can_create_online_event_without_location(): void
     {
         //$this->withoutExceptionHandling();
         $this->signIn();
@@ -41,7 +41,7 @@ class CreateOnlineEventTest extends TestCase
     }
 
     /** @test */
-    public function an_authenticated_user_can_create_private_online_event_without_location()
+    public function an_authenticated_user_can_create_private_online_event_without_location(): void
     {
         //$this->withoutExceptionHandling();
         $this->seed('RolesAndPermissionsSeeder');
@@ -75,7 +75,7 @@ class CreateOnlineEventTest extends TestCase
     }
 
     /** @test */
-    public function online_event_can_have_a_location()
+    public function online_event_can_have_a_location(): void
     {
         $this->withoutExceptionHandling();
         $this->seed('RolesAndPermissionsSeeder');

@@ -14,7 +14,7 @@ class AchievementsTest extends TestCase
     use RefreshDatabase;
 
     /** @test */
-    public function a_user_can_be_assigned_any_achievement_badge()
+    public function a_user_can_be_assigned_any_achievement_badge(): void
     {
         // Given we have a user
         $user = factory(User::class)->create();
@@ -31,7 +31,7 @@ class AchievementsTest extends TestCase
     }
 
     /** @test */
-    public function achievements_should_be_linked_to_user_when_reporting_events()
+    public function achievements_should_be_linked_to_user_when_reporting_events(): void
     {
 
         $this->withExceptionHandling();

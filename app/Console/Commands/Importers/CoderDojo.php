@@ -39,7 +39,7 @@ class CoderDojo extends Command
      *
      * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::info('Loading CoderDojo');
 

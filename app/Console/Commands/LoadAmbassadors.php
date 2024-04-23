@@ -37,7 +37,7 @@ class LoadAmbassadors extends Command
      *
      * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::debug('Load Ambassadors');
 

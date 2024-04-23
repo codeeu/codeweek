@@ -26,7 +26,7 @@ class Codeweek4AllTest extends TestCase
     }
 
     /** @test */
-    public function count_of_activities_should_be_visible()
+    public function count_of_activities_should_be_visible(): void
     {
         $this->withoutExceptionHandling();
         $this->get(route('codeweek4all_details', ['code' => 'cw19-foo']))
@@ -35,7 +35,7 @@ class Codeweek4AllTest extends TestCase
     }
 
     /** @test */
-    public function count_of_participants_should_be_visible()
+    public function count_of_participants_should_be_visible(): void
     {
         //dd(Event::all());
 
@@ -45,7 +45,7 @@ class Codeweek4AllTest extends TestCase
     }
 
     /** @test */
-    public function count_of_unique_members_should_be_visible()
+    public function count_of_unique_members_should_be_visible(): void
     {
         create(\App\Event::class, ['codeweek_for_all_participation_code' => 'cw19-bar', 'status' => 'APPROVED', 'creator_id' => 1, 'end_date' => Carbon::now()->subYear()], 2);
         create(\App\Event::class, ['codeweek_for_all_participation_code' => 'cw19-bar', 'status' => 'APPROVED', 'creator_id' => 2, 'end_date' => Carbon::now()->subYear()], 3);
@@ -57,7 +57,7 @@ class Codeweek4AllTest extends TestCase
     }
 
     /** @test */
-    public function countries_should_be_displayed()
+    public function countries_should_be_displayed(): void
     {
         $this->withoutExceptionHandling();
         $this->get(route('codeweek4all_details', ['code' => 'cw19-foo']))
@@ -66,7 +66,7 @@ class Codeweek4AllTest extends TestCase
     }
 
     /** @test */
-    public function reporting_percentage_should_be_displayed()
+    public function reporting_percentage_should_be_displayed(): void
     {
         create(\App\Event::class, ['codeweek_for_all_participation_code' => 'cw19-reporting', 'status' => 'APPROVED', 'creator_id' => 1, 'reported_at' => Carbon::now(), 'end_date' => Carbon::now()->subYear()], 3);
         create(\App\Event::class, ['codeweek_for_all_participation_code' => 'cw19-reporting', 'status' => 'APPROVED', 'creator_id' => 2, 'end_date' => Carbon::now()->subYear()], 7);

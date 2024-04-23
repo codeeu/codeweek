@@ -37,7 +37,7 @@ class ImportResourcesLearnCommand extends Command
      *
      * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         //Read the Excel Sheet
         Excel::import(new ResourcesLearnImport, 'resources.xlsx', 'excel');

@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Activitylog\Traits\LogsActivity;
 
@@ -53,7 +54,7 @@ class School extends Model
         return '/school/'.$this->id;
     }
 
-    public function users()
+    public function users(): BelongsToMany
     {
         return $this->belongsToMany(\App\User::class);
     }

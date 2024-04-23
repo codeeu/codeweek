@@ -11,7 +11,7 @@ class PendingEventsTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function ambassador_can_see_pending_events_for_his_country()
+    public function ambassador_can_see_pending_events_for_his_country(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
@@ -32,7 +32,7 @@ class PendingEventsTest extends TestCase
     }
 
     /** @test */
-    public function admin_can_see_pending_events_for_all_countries()
+    public function admin_can_see_pending_events_for_all_countries(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
@@ -53,7 +53,7 @@ class PendingEventsTest extends TestCase
     }
 
     /** @test */
-    public function it_should_get_pending_events_for_ambassador_country()
+    public function it_should_get_pending_events_for_ambassador_country(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
@@ -73,7 +73,7 @@ class PendingEventsTest extends TestCase
     }
 
     /** @test */
-    public function it_should_get_all_pending_events_for_super_admin()
+    public function it_should_get_all_pending_events_for_super_admin(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
@@ -93,7 +93,7 @@ class PendingEventsTest extends TestCase
     }
 
     /** @test */
-    public function admin_can_see_pending_event_by_country()
+    public function admin_can_see_pending_event_by_country(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
@@ -115,7 +115,7 @@ class PendingEventsTest extends TestCase
     }
 
     /** @test */
-    public function it_should_get_next_pending_event_id()
+    public function it_should_get_next_pending_event_id(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
@@ -131,7 +131,7 @@ class PendingEventsTest extends TestCase
     }
 
     /** @test */
-    public function it_should_get_next_pending_event_for_ambassador()
+    public function it_should_get_next_pending_event_for_ambassador(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
@@ -149,7 +149,7 @@ class PendingEventsTest extends TestCase
     }
 
     /** @test */
-    public function it_should_get_next_pending_event_as_null_for_last_event()
+    public function it_should_get_next_pending_event_as_null_for_last_event(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
@@ -165,7 +165,7 @@ class PendingEventsTest extends TestCase
     }
 
     /** @test */
-    public function it_should_get_next_pending_event_as_not_null_for_last_event_if_there_are_more_events()
+    public function it_should_get_next_pending_event_as_not_null_for_last_event_if_there_are_more_events(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 

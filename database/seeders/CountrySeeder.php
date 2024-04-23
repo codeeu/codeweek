@@ -11,7 +11,7 @@ class CountrySeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
         $countries = [
             ['iso' => 'AD', 'name' => 'Andorra', 'longitude' => '1.234', 'latitude' => '5.678'],

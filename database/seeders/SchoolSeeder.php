@@ -11,7 +11,7 @@ class SchoolSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
         factory(App\School::class, 10)->create();
     }

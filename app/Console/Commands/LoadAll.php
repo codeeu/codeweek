@@ -36,7 +36,7 @@ class LoadAll extends Command
      *
      * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::debug('Start Importing All');
         exec('php artisan load:countries');

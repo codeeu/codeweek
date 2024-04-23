@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -42,7 +43,7 @@ class ResourceProgrammingLanguage extends Model
         'teach' => true,
     ];
 
-    public function items()
+    public function items(): BelongsToMany
     {
         return $this->belongsToMany(\App\ResourceItem::class, 'res_pl_pivot');
     }

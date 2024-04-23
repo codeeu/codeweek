@@ -26,7 +26,7 @@ class EventsTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_browse_approved_events()
+    public function a_user_can_browse_approved_events(): void
     {
         $this->get('/view/'.$this->event->id.'/random')->assertSee(
             $this->event->title
@@ -34,14 +34,14 @@ class EventsTest extends TestCase
     }
 
     /** @test */
-    public function a_user_cant_browse_non_approved_events()
+    public function a_user_cant_browse_non_approved_events(): void
     {
         $this->event->update(['status' => 'REJECTED']);
         $this->get('/view/'.$this->event->id.'/random')->assertStatus(403);
     }
 
     /** @test */
-    public function a_user_should_be_redirected_on_pending_activities()
+    public function a_user_should_be_redirected_on_pending_activities(): void
     {
         $this->event->update(['status' => 'PENDING']);
         $response = $this->get(
@@ -50,7 +50,7 @@ class EventsTest extends TestCase
     }
 
     /** @test */
-    public function an_event_has_an_organizer()
+    public function an_event_has_an_organizer(): void
     {
         $this->get('/view/'.$this->event->id.'/random')->assertSee(
             $this->event->organizer
@@ -58,7 +58,7 @@ class EventsTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_see_audiences_associated_with_events()
+    public function a_user_can_see_audiences_associated_with_events(): void
     {
         foreach ($this->event->audiences()->get() as &$value) {
             $this->get('/view/'.$this->event->id.'/random')->assertSee(
@@ -68,7 +68,7 @@ class EventsTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_see_themes_associated_with_events()
+    public function a_user_can_see_themes_associated_with_events(): void
     {
         foreach ($this->event->themes()->get() as &$value) {
             $this->get('/view/'.$this->event->id.'/random')->assertSee(
@@ -78,7 +78,7 @@ class EventsTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_see_tags_associated_with_events()
+    public function a_user_can_see_tags_associated_with_events(): void
     {
         foreach ($this->event->tags()->get() as &$value) {
             $this->get('/view/'.$this->event->id.'/random')->assertSee(
@@ -88,7 +88,7 @@ class EventsTest extends TestCase
     }
 
     /** @test */
-    public function visitors_cant_see_the_user_email()
+    public function visitors_cant_see_the_user_email(): void
     {
         $event = create(\App\Event::class, [
             'user_email' => 'foo@bar.com',
@@ -102,7 +102,7 @@ class EventsTest extends TestCase
     }
 
     /** @test */
-    public function ambassadors_from_other_countries_cant_see_the_user_email()
+    public function ambassadors_from_other_countries_cant_see_the_user_email(): void
     {
         $ambassador = create(\App\User::class, ['country_iso' => 'FR'])->assignRole(
             'ambassador'
@@ -121,7 +121,7 @@ class EventsTest extends TestCase
     }
 
     /** @test */
-    public function ambassadors_from_same_country_can_see_the_user_email()
+    public function ambassadors_from_same_country_can_see_the_user_email(): void
     {
         $ambassador = create(\App\User::class, ['country_iso' => 'FR'])->assignRole(
             'ambassador'
@@ -138,7 +138,7 @@ class EventsTest extends TestCase
     }
 
     /** @test */
-    public function admins_can_see_the_user_email()
+    public function admins_can_see_the_user_email(): void
     {
         $admin = create(\App\User::class)->assignRole('super admin');
         $this->signIn($admin);
@@ -152,7 +152,7 @@ class EventsTest extends TestCase
     }
 
     /** @test */
-    public function user_see_detail_picture_if_available()
+    public function user_see_detail_picture_if_available(): void
     {
         $event = create(\App\Event::class, [
             'picture_detail' => 'foobar.png',
@@ -163,7 +163,7 @@ class EventsTest extends TestCase
     }
 
     /** @test */
-    public function user_see_normal_picture_if_detail_is_not_available()
+    public function user_see_normal_picture_if_detail_is_not_available(): void
     {
         $event = create(\App\Event::class, [
             'picture' => 'normal.png',

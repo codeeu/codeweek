@@ -12,7 +12,7 @@ class LeadingTeacherExpertiseSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
         create(LeadingTeacherExpertise::class, [
             'id' => 1,

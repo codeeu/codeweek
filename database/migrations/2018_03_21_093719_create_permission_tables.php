@@ -11,7 +11,7 @@ return new class extends Migration
      *
      * @return void
      */
-    public function up()
+    public function up(): void
     {
         $tableNames = config('permission.table_names');
 
@@ -78,7 +78,7 @@ return new class extends Migration
      *
      * @return void
      */
-    public function down()
+    public function down(): void
     {
         // Commented as it was throwing random errors in unit tests
         //$tableNames = config('permission.table_names');

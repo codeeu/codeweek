@@ -37,7 +37,7 @@ class UpdateLanguages extends Command
      *
      * @return int
      */
-    public function handle()
+    public function handle(): int
     {
         $events = Event::where('event_url', 'like', 'https://meet-and-code.org/%')->whereNull('language')->get();
 

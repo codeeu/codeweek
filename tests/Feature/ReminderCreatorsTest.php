@@ -16,7 +16,7 @@ class ReminderCreatorsTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function only_get_creators_with_reportable_events()
+    public function only_get_creators_with_reportable_events(): void
     {
         Mail::fake();
 
@@ -59,7 +59,7 @@ class ReminderCreatorsTest extends TestCase
     }
 
     /** @test */
-    public function mail_should_be_sent()
+    public function mail_should_be_sent(): void
     {
         $this->withExceptionHandling();
 
@@ -74,7 +74,7 @@ class ReminderCreatorsTest extends TestCase
     }
 
     /** @test */
-    public function only_one_mail_should_be_sent()
+    public function only_one_mail_should_be_sent(): void
     {
         $this->withExceptionHandling();
 
@@ -97,7 +97,7 @@ class ReminderCreatorsTest extends TestCase
     }
 
     /** @test */
-    public function should_get_the_reportable_events_list()
+    public function should_get_the_reportable_events_list(): void
     {
         $this->withExceptionHandling();
 
@@ -112,7 +112,7 @@ class ReminderCreatorsTest extends TestCase
     }
 
     /** @test */
-    public function no_mail_should_be_sent()
+    public function no_mail_should_be_sent(): void
     {
         $this->withExceptionHandling();
 
@@ -127,7 +127,7 @@ class ReminderCreatorsTest extends TestCase
     }
 
     /** @test */
-    public function notification_reports_should_increase()
+    public function notification_reports_should_increase(): void
     {
 
         Mail::fake();
@@ -149,7 +149,7 @@ class ReminderCreatorsTest extends TestCase
     }
 
     /** @test */
-    public function notification_reports_should_increase_up_to_3_times()
+    public function notification_reports_should_increase_up_to_3_times(): void
     {
         $this->withExceptionHandling();
 
@@ -164,7 +164,7 @@ class ReminderCreatorsTest extends TestCase
     }
 
     /** @test */
-    public function notification_date_should_be_updated()
+    public function notification_date_should_be_updated(): void
     {
 
         $this->withExceptionHandling();
@@ -180,7 +180,7 @@ class ReminderCreatorsTest extends TestCase
     }
 
     /** @test */
-    public function deleted_users_should_not_receive_emails()
+    public function deleted_users_should_not_receive_emails(): void
     {
 
         Mail::fake();
@@ -200,7 +200,7 @@ class ReminderCreatorsTest extends TestCase
     }
 
     /** @test */
-    public function opted_out_users_should_not_receive_emails()
+    public function opted_out_users_should_not_receive_emails(): void
     {
 
         Mail::fake();

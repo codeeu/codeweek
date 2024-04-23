@@ -25,13 +25,13 @@ class CleanImportsTest extends TestCase
     }
 
     /** @test */
-    public function event_id_should_be_set_as_to_be_deleted()
+    public function event_id_should_be_set_as_to_be_deleted(): void
     {
         $this->assertEquals(1000, ImporterHelper::getDeletedEventsIDs()[0]);
     }
 
     /** @test */
-    public function event_should_be_deleted()
+    public function event_should_be_deleted(): void
     {
 
         $this->assertCount(10, Event::all());

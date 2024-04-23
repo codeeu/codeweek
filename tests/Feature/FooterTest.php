@@ -23,7 +23,7 @@ class FooterTest extends TestCase
     }
 
     /** @test */
-    public function info_email_should_be_displayed_in_footer_only_on_ambassadors_page()
+    public function info_email_should_be_displayed_in_footer_only_on_ambassadors_page(): void
     {
 
         $this->get('/ambassadors?country_iso=FR')->assertSee('mailto:info@codeweek.eu');
@@ -31,7 +31,7 @@ class FooterTest extends TestCase
     }
 
     /** @test */
-    public function info_email_should_not_be_displayed_in_footer_on_other_pages()
+    public function info_email_should_not_be_displayed_in_footer_on_other_pages(): void
     {
 
         $this->get('/')->assertDontSee('mailto:info@codeweek.eu');

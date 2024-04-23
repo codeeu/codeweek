@@ -20,7 +20,7 @@ class PodcastPolicy
      *
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function viewAny(User $user)
+    public function viewAny(User $user): bool
     {
         //
     }
@@ -30,7 +30,7 @@ class PodcastPolicy
      *
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, Podcast $podcast)
+    public function view(User $user, Podcast $podcast): bool
     {
         //
     }
@@ -40,7 +40,7 @@ class PodcastPolicy
      *
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function create(User $user)
+    public function create(User $user): bool
     {
         //
     }
@@ -50,7 +50,7 @@ class PodcastPolicy
      *
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, Podcast $podcast)
+    public function update(User $user, Podcast $podcast): bool
     {
         //
     }
@@ -60,7 +60,7 @@ class PodcastPolicy
      *
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, Podcast $podcast)
+    public function delete(User $user, Podcast $podcast): bool
     {
         //
     }
@@ -70,7 +70,7 @@ class PodcastPolicy
      *
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, Podcast $podcast)
+    public function restore(User $user, Podcast $podcast): bool
     {
         //
     }
@@ -80,7 +80,7 @@ class PodcastPolicy
      *
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, Podcast $podcast)
+    public function forceDelete(User $user, Podcast $podcast): bool
     {
         //
     }

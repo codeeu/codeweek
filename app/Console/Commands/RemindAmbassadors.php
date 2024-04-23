@@ -39,7 +39,7 @@ class RemindAmbassadors extends Command
      *
      * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::info('Sending email to remind ambassadors');
         $events = EventHelper::getPendindEvents();

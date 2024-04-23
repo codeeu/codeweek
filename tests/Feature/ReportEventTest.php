@@ -26,7 +26,7 @@ class ReportEventTest extends TestCase
     }
 
     /** @test */
-    public function event_owner_should_see_the_report_banner()
+    public function event_owner_should_see_the_report_banner(): void
     {
 
         $this->withExceptionHandling();
@@ -39,7 +39,7 @@ class ReportEventTest extends TestCase
     }
 
     /** @test */
-    public function visitors_should_not_see_the_report_banner()
+    public function visitors_should_not_see_the_report_banner(): void
     {
 
         $this->withExceptionHandling();
@@ -50,7 +50,7 @@ class ReportEventTest extends TestCase
     }
 
     /** @test */
-    public function owners_should_not_see_the_report_banner_if_event_is_not_over_yet()
+    public function owners_should_not_see_the_report_banner_if_event_is_not_over_yet(): void
     {
 
         $this->withExceptionHandling();
@@ -64,7 +64,7 @@ class ReportEventTest extends TestCase
     }
 
     /** @test */
-    public function reporting_only_when_logged_in()
+    public function reporting_only_when_logged_in(): void
     {
 
         $this->withExceptionHandling();
@@ -75,7 +75,7 @@ class ReportEventTest extends TestCase
     }
 
     /** @test */
-    public function report_event_status_update()
+    public function report_event_status_update(): void
     {
 
         $this->withExceptionHandling();
@@ -107,7 +107,7 @@ class ReportEventTest extends TestCase
     }
 
     /** @test */
-    public function exception_should_be_thrown_while_trying_to_report()
+    public function exception_should_be_thrown_while_trying_to_report(): void
     {
 
         //$this->withExceptionHandling();
@@ -125,7 +125,7 @@ class ReportEventTest extends TestCase
     }
 
     /** @test */
-    public function user_should_see_list_of_his_reportable_events()
+    public function user_should_see_list_of_his_reportable_events(): void
     {
         $this->signIn(create(\App\User::class));
 
@@ -146,7 +146,7 @@ class ReportEventTest extends TestCase
     }
 
     /** @test */
-    public function text_should_not_be_detected_as_greek()
+    public function text_should_not_be_detected_as_greek(): void
     {
 
         $certificate = new Certificate($this->event);
@@ -155,7 +155,7 @@ class ReportEventTest extends TestCase
     }
 
     /** @test */
-    public function text_should_be_detected_as_greek()
+    public function text_should_be_detected_as_greek(): void
     {
 
         $this->event->name_for_certificate = 'Λιανού Κυριακή - Lianou Kiriaki 10ο Δημοτικό Σχολείο Αιγάλεω';
@@ -165,7 +165,7 @@ class ReportEventTest extends TestCase
     }
 
     /** @test */
-    public function text_should_be_detected_as_greek_with_all_uppercase()
+    public function text_should_be_detected_as_greek_with_all_uppercase(): void
     {
 
         $this->event->name_for_certificate = 'ΖΑΧΑΡΩΦ ΣΟΝΙΑ';
@@ -175,7 +175,7 @@ class ReportEventTest extends TestCase
     }
 
     /** @test */
-    public function text_should_be_detected_as_greek_with_one_greek_char()
+    public function text_should_be_detected_as_greek_with_one_greek_char(): void
     {
 
         $this->event->name_for_certificate = 'This is a Σ';
@@ -185,7 +185,7 @@ class ReportEventTest extends TestCase
     }
 
     /** @test */
-    public function text_should_not_be_detected_as_greek_with_one_special_char()
+    public function text_should_not_be_detected_as_greek_with_one_special_char(): void
     {
 
         $this->event->name_for_certificate = 'Teacher Di Lella Lucia and the 1D con l’evento  “Di Pixel in Pixel.. cosa apparirà?:stuck_out_tongue_winking_eye:';
@@ -195,7 +195,7 @@ class ReportEventTest extends TestCase
     }
 
     /** @test */
-    public function text_should_not_be_detected_as_greek_with_several_special_chars()
+    public function text_should_not_be_detected_as_greek_with_several_special_chars(): void
     {
 
         $this->event->name_for_certificate = 'Nemyriv Educational Establishment "Comprehensive Shool of I-III grades №2-lyceum" - of Nemyriv town Concil Vinnytsia Region';

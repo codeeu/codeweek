@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,7 +15,7 @@ class City extends Model
     /**
      * Get the comments for the blog post.
      */
-    public function users()
+    public function users(): HasMany
     {
         return $this->hasMany(User::class);
     }

@@ -28,7 +28,7 @@ class ResourceItemTest extends TestCase
     }
 
     /** @test */
-    public function resource_item_can_be_created()
+    public function resource_item_can_be_created(): void
     {
         $this->withoutExceptionHandling();
 
@@ -48,7 +48,7 @@ class ResourceItemTest extends TestCase
     }
 
     /** @test */
-    public function resource_item_can_be_filtered_by_subject()
+    public function resource_item_can_be_filtered_by_subject(): void
     {
         $this->withoutExceptionHandling();
 
@@ -63,7 +63,7 @@ class ResourceItemTest extends TestCase
     }
 
     /** @test */
-    public function resource_item_can_be_filtered_by_category()
+    public function resource_item_can_be_filtered_by_category(): void
     {
         $this->withoutExceptionHandling();
 
@@ -78,7 +78,7 @@ class ResourceItemTest extends TestCase
     }
 
     /** @test */
-    public function resource_item_can_be_filtered_by_level()
+    public function resource_item_can_be_filtered_by_level(): void
     {
         $this->withoutExceptionHandling();
 
@@ -93,7 +93,7 @@ class ResourceItemTest extends TestCase
     }
 
     /** @test */
-    public function resource_item_can_be_filtered_by_type()
+    public function resource_item_can_be_filtered_by_type(): void
     {
         $this->withoutExceptionHandling();
 
@@ -108,7 +108,7 @@ class ResourceItemTest extends TestCase
     }
 
     /** @test */
-    public function resource_item_can_be_filtered_by_programming_language()
+    public function resource_item_can_be_filtered_by_programming_language(): void
     {
         $this->withoutExceptionHandling();
 
@@ -123,7 +123,7 @@ class ResourceItemTest extends TestCase
     }
 
     /** @test */
-    public function resource_item_can_be_filtered_by_language()
+    public function resource_item_can_be_filtered_by_language(): void
     {
         $this->withoutExceptionHandling();
 
@@ -138,7 +138,7 @@ class ResourceItemTest extends TestCase
     }
 
     /** @test */
-    public function resource_item_can_attach_types_by_name()
+    public function resource_item_can_attach_types_by_name(): void
     {
         $this->withoutExceptionHandling();
 
@@ -160,7 +160,7 @@ class ResourceItemTest extends TestCase
     }
 
     /** @test */
-    public function resource_item_can_attach_categories_by_name()
+    public function resource_item_can_attach_categories_by_name(): void
     {
         $this->withoutExceptionHandling();
 
@@ -182,7 +182,7 @@ class ResourceItemTest extends TestCase
     }
 
     /** @test */
-    public function resource_item_can_attach_programming_languages_by_name()
+    public function resource_item_can_attach_programming_languages_by_name(): void
     {
         $this->withoutExceptionHandling();
 
@@ -202,7 +202,7 @@ class ResourceItemTest extends TestCase
     }
 
     /** @test */
-    public function resource_item_can_attach_levels_by_name()
+    public function resource_item_can_attach_levels_by_name(): void
     {
         $this->withoutExceptionHandling();
 
@@ -222,7 +222,7 @@ class ResourceItemTest extends TestCase
     }
 
     /** @test */
-    public function resource_item_can_attach_languages_by_name()
+    public function resource_item_can_attach_languages_by_name(): void
     {
         $this->withoutExceptionHandling();
 
@@ -242,7 +242,7 @@ class ResourceItemTest extends TestCase
     }
 
     /** @test */
-    public function resource_item_can_attach_languages_globally()
+    public function resource_item_can_attach_languages_globally(): void
     {
         $this->withoutExceptionHandling();
 
@@ -262,7 +262,7 @@ class ResourceItemTest extends TestCase
     }
 
     /** @test */
-    public function resource_item_should_fault_for_unknown_types()
+    public function resource_item_should_fault_for_unknown_types(): void
     {
         $this->withoutExceptionHandling();
 
@@ -277,7 +277,7 @@ class ResourceItemTest extends TestCase
     }
 
     /** @test */
-    public function no_duplicates_resource_items_allowed()
+    public function no_duplicates_resource_items_allowed(): void
     {
         $this->withoutExceptionHandling();
 

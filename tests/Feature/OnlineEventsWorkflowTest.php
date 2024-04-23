@@ -19,7 +19,7 @@ class OnlineEventsWorkflowTest extends TestCase
      */
 
     /** @test */
-    public function it_should_not_list_online_events_for_unauthenticated_users()
+    public function it_should_not_list_online_events_for_unauthenticated_users(): void
     {
         $response = $this->get('/online/list');
 
@@ -31,7 +31,7 @@ class OnlineEventsWorkflowTest extends TestCase
      * ambassadors only see online events from their own countries
      */
     /** @test */
-    public function it_should_list_online_events_for_ambassadors()
+    public function it_should_list_online_events_for_ambassadors(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
@@ -61,7 +61,7 @@ class OnlineEventsWorkflowTest extends TestCase
  * ambassadors only see online events from their own countries
  */
     /** @test */
-    public function it_should_list_online_events_when_month_is_between_start_and_end_and_started_recently()
+    public function it_should_list_online_events_when_month_is_between_start_and_end_and_started_recently(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
@@ -85,7 +85,7 @@ class OnlineEventsWorkflowTest extends TestCase
     }
 
     /** @test */
-    public function it_should_list_all_online_events_for_admins()
+    public function it_should_list_all_online_events_for_admins(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
@@ -111,7 +111,7 @@ class OnlineEventsWorkflowTest extends TestCase
     }
 
     /** @test */
-    public function ambassadors_can_promote_events_from_their_countries()
+    public function ambassadors_can_promote_events_from_their_countries(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
@@ -129,7 +129,7 @@ class OnlineEventsWorkflowTest extends TestCase
     }
 
     /** @test */
-    public function visitors_cannot_promote_events()
+    public function visitors_cannot_promote_events(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
@@ -146,7 +146,7 @@ class OnlineEventsWorkflowTest extends TestCase
     }
 
     /** @test */
-    public function ambassadors_cannot_feature_events()
+    public function ambassadors_cannot_feature_events(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 
@@ -164,7 +164,7 @@ class OnlineEventsWorkflowTest extends TestCase
     }
 
     /** @test */
-    public function promoted_event_creates_notification_for_administrators()
+    public function promoted_event_creates_notification_for_administrators(): void
     {
         $this->seed('RolesAndPermissionsSeeder');
 

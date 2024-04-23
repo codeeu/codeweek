@@ -14,7 +14,7 @@ class EventRequest extends FormRequest
      *
      * @return bool
      */
-    public function authorize()
+    public function authorize(): bool
     {
         return true;
     }
@@ -24,7 +24,7 @@ class EventRequest extends FormRequest
      *
      * @return array
      */
-    public function rules()
+    public function rules(): array
     {
         $languages = array_keys(Lang::get('base.languages'));
 
@@ -49,7 +49,7 @@ class EventRequest extends FormRequest
         ];
     }
 
-    public function messages()
+    public function messages(): array
     {
         return [
             'title.required' => 'Please enter a title for your event.',

@@ -19,7 +19,7 @@ class DeleteEventTest extends TestCase
     }
 
     /** @test */
-    public function event_can_be_deleted_by_admin()
+    public function event_can_be_deleted_by_admin(): void
     {
 
         Mail::fake();
@@ -43,7 +43,7 @@ class DeleteEventTest extends TestCase
     }
 
     /** @test */
-    public function event_can_be_deleted_by_event_creator()
+    public function event_can_be_deleted_by_event_creator(): void
     {
 
         $this->withExceptionHandling();
@@ -64,7 +64,7 @@ class DeleteEventTest extends TestCase
     }
 
     /** @test */
-    public function event_can_be_deleted_by_ambassador_of_same_country()
+    public function event_can_be_deleted_by_ambassador_of_same_country(): void
     {
 
         $this->withExceptionHandling();
@@ -83,7 +83,7 @@ class DeleteEventTest extends TestCase
     }
 
     /** @test */
-    public function event_cant_be_approved_by_ambassador_of_other_country()
+    public function event_cant_be_approved_by_ambassador_of_other_country(): void
     {
 
         $this->withExceptionHandling();
@@ -102,7 +102,7 @@ class DeleteEventTest extends TestCase
     }
 
     /** @test */
-    public function event_cannot_be_deleted_by_logged_user_that_is_not_creator()
+    public function event_cannot_be_deleted_by_logged_user_that_is_not_creator(): void
     {
 
         $this->withExceptionHandling();

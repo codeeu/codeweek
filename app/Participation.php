@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -37,7 +38,7 @@ class Participation extends Model
 {
     protected $fillable = ['user_id', 'event_name', 'event_date', 'names', 'participation_url', 'status'];
 
-    public function user()
+    public function user(): BelongsTo
     {
         return $this->belongsTo(\App\User::class);
     }

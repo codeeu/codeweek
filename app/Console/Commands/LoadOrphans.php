@@ -37,7 +37,7 @@ class LoadOrphans extends Command
      *
      * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
 
         //Set email to dikovicnatalija@gmail.com for user 10358

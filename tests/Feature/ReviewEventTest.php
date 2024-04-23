@@ -16,7 +16,7 @@ class ReviewEventTest extends TestCase
     }
 
     /** @test */
-    public function ambassadors_of_right_country_can_see_the_review_section()
+    public function ambassadors_of_right_country_can_see_the_review_section(): void
     {
         $ambassador = create(\App\User::class, ['country_iso' => 'FR'])->assignRole('ambassador');
         $this->signIn($ambassador);
@@ -29,7 +29,7 @@ class ReviewEventTest extends TestCase
     }
 
     /** @test */
-    public function visitors_cant_see_the_review_section()
+    public function visitors_cant_see_the_review_section(): void
     {
         $visitor = create(\App\User::class, ['country_iso' => 'FR']);
         $this->signIn($visitor);

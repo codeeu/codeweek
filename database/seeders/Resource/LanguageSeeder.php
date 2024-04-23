@@ -11,7 +11,7 @@ class LanguageSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
         create(\App\ResourceLanguage::class, [
             'id' => 1,

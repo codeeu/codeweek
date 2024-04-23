@@ -28,7 +28,7 @@ class LinkLeadingTeachersToActivities extends Command
      *
      * @return int
      */
-    public function handle()
+    public function handle(): int
     {
         //Get the leading teachers
         $leading_teachers = User::role('leading teacher')

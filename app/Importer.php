@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -45,7 +46,7 @@ class Importer extends Model
 
     protected $guarded = [];
 
-    public function event()
+    public function event(): HasOne
     {
         return $this->hasOne(\App\Event::class, 'id', 'event_id');
     }

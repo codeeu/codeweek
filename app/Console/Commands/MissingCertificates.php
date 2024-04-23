@@ -28,7 +28,7 @@ class MissingCertificates extends Command
      *
      * @return int
      */
-    public function handle()
+    public function handle(): int
     {
 
         // get all the events with faulty certificate status
