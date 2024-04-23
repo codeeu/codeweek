@@ -44,9 +44,6 @@ class IrelandEventsImport extends DefaultValueBinder implements ToModel, WithCus
         );
     }
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Model|null
-     */
     public function model(array $row): ?Model
     {
         $event = new Event([

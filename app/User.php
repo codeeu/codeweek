@@ -324,9 +324,6 @@ class User extends Authenticatable
 
     /**
      * Get the path to the user's avatar.
-     *
-     * @param  string  $avatar
-     * @return string
      */
     public function getAvatarPathAttribute(string $avatar): string
     {
@@ -342,7 +339,6 @@ class User extends Authenticatable
      * Get the path to the user's avatar.
      *
      * @param  string  $avatar
-     * @return string
      */
     public function getAvatarAttribute(): string
     {
@@ -358,8 +354,6 @@ class User extends Authenticatable
 
     /**
      * Get a string path for the thread.
-     *
-     * @return string
      */
     public function fullName(): string
     {

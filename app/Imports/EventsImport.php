@@ -21,9 +21,6 @@ class EventsImport extends DefaultValueBinder implements ToModel, WithCustomValu
         return implode($arr);
     }
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Model|null
-     */
     public function model(array $row): ?Model
     {
 

@@ -35,8 +35,6 @@ class Dutch2023 extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return int
      */
     public function handle(): int
     {

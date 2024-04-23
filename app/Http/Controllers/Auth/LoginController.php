@@ -45,8 +45,6 @@ class LoginController extends Controller
 
     /**
      * Redirect the user to the GitHub authentication page.
-     *
-     * @return Response
      */
     public function redirectToProvider($provider): Response
     {
@@ -56,8 +54,6 @@ class LoginController extends Controller
 
     /**
      * Obtain the user information from GitHub.
-     *
-     * @return \Illuminate\Http\RedirectResponse
      */
     public function handleProviderCallback($provider): RedirectResponse
     {

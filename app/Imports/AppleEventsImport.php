@@ -17,9 +17,6 @@ class AppleEventsImport extends DefaultValueBinder implements ToModel, WithCusto
         return Date::excelToDateTimeObject($date);
     }
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Model|null
-     */
     public function model(array $row): ?Model
     {
 

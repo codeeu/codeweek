@@ -22,9 +22,6 @@ class ResourcesTeachImport extends DefaultValueBinder implements ToModel, WithCu
         return implode($arr);
     }
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Model|null
-     */
     public function model(array $row): ?Model
     {
 
