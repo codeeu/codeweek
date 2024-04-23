@@ -13,13 +13,10 @@ class AddUserIndexToEvents extends Migration
      */
     public function up()
     {
-        Schema::table('events', function(Blueprint $table)
-        {
+        Schema::table('events', function (Blueprint $table) {
             $table->index('creator_id');
         });
     }
-
-
 
     /**
      * Reverse the migrations.
@@ -29,8 +26,7 @@ class AddUserIndexToEvents extends Migration
     public function down()
     {
 
-        Schema::table('events', function (Blueprint $table)
-        {
+        Schema::table('events', function (Blueprint $table) {
             $table->dropIndex(['creator_id']);
         });
     }

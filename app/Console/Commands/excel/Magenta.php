@@ -40,8 +40,8 @@ class Magenta extends Command
      */
     public function handle()
     {
-        Log::info("Loading Magenta Moon Excel File");
+        Log::info('Loading Magenta Moon Excel File');
 
-        Excel::import(new MagentaEventsImport, 'magenta.xlsx','excel');
+        Excel::import(new MagentaEventsImport, 'magenta.xlsx', 'excel');
     }
 }

@@ -25,27 +25,25 @@ return [
         'label' => 'Participants count',
     ],
     'average_participant_age' => [
-        'label'=>'Average participant age',
+        'label' => 'Average participant age',
     ],
     'percentage_of_females' => [
         'label' => 'Percentage of females',
     ],
     'codeweek_for_all_participation_code' => [
         'label' => 'Codeweek for all participation code',
-        'help' => 'You can put here your Codeweek4All challenge code, if you got one. If you\'re not participating, just ignore this field.'
+        'help' => 'You can put here your Codeweek4All challenge code, if you got one. If you\'re not participating, just ignore this field.',
     ],
     'name_for_certificate' => [
         'label' => 'Name for certificate',
-        'help' => 'Change this to the name of the activity organizer who will be issued a certificate of participation in Code Week. Please use only ASCII (Latin) letters. Letters with accents, umlauts and the like are not supported.'
+        'help' => 'Change this to the name of the activity organizer who will be issued a certificate of participation in Code Week. Please use only ASCII (Latin) letters. Letters with accents, umlauts and the like are not supported.',
     ],
     'submit' => 'Submit Activity Report',
-    'thanks_page'=>[
-        'title'=>'Thanks for reporting your activity!',
-        'certificate_ready'=>'Your certificate is ready.',
-        'download_button'=>'Click here to download it.',
-        'back_events'=>'Go back to your activity'
-    ]
-
-
+    'thanks_page' => [
+        'title' => 'Thanks for reporting your activity!',
+        'certificate_ready' => 'Your certificate is ready.',
+        'download_button' => 'Click here to download it.',
+        'back_events' => 'Go back to your activity',
+    ],
 
 ];

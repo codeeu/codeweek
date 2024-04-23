@@ -15,7 +15,7 @@ class PodcastSeeder extends Seeder
     {
         $this->call([
             PodcastGuestSeeder::class,
-            PodcastResourceSeeder::class
+            PodcastResourceSeeder::class,
         ]);
     }
 }

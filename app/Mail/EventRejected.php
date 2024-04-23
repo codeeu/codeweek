@@ -7,14 +7,15 @@ use App\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Contracts\Queue\ShouldQueue;
 
 class EventRejected extends Mailable
 {
     use Queueable, SerializesModels;
 
     public $event;
+
     public $user;
+
     public $reason;
 
     /**
@@ -38,13 +39,13 @@ class EventRejected extends Mailable
     {
 
         $locale = session('locale');
-        if (empty($locale)){
+        if (empty($locale)) {
             $locale = \Config::get('app.fallback_locale');
         }
         $view = 'emails.'.$locale.'.event-rejected';
-        if(!view()->exists($view)){
+        if (! view()->exists($view)) {
             $default_language = \Config::get('app.fallback_locale');
-            $view = 'emails.' . $default_language . '.event-rejected';
+            $view = 'emails.'.$default_language.'.event-rejected';
         }
 
         $subject = \Lang::get('email.subjects.rejected');

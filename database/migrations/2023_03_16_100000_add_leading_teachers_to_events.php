@@ -18,8 +18,6 @@ class AddLeadingTeachersToEvents extends Migration
         });
     }
 
-
-
     /**
      * Reverse the migrations.
      *
@@ -28,8 +26,7 @@ class AddLeadingTeachersToEvents extends Migration
     public function down()
     {
 
-        Schema::table('events', function (Blueprint $table)
-        {
+        Schema::table('events', function (Blueprint $table) {
             $table->dropColumn('leading_teacher_tag');
         });
     }

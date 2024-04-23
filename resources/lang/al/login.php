@@ -27,5 +27,5 @@ return [
     'reset' => 'Rivendos fjalëkalimin',
     'send_password' => 'Dërgo lidhjen e rivendosjes së fjalëkalimit',
     'confirm_password' => 'Konfirmo fjalëkalimin',
-    'name' => 'emër'
+    'name' => 'emër',
 ];

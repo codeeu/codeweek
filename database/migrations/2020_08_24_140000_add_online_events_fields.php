@@ -21,8 +21,6 @@ class AddOnlineEventsFields extends Migration
         });
     }
 
-
-
     /**
      * Reverse the migrations.
      *
@@ -31,12 +29,11 @@ class AddOnlineEventsFields extends Migration
     public function down()
     {
 
-        Schema::table('events', function (Blueprint $table)
-        {
-//
-//            $table->dropColumn('playback_url');
-//            $table->dropColumn('highlighted_status');
-//            $table->dropColumn('language');
+        Schema::table('events', function (Blueprint $table) {
+            //
+            //            $table->dropColumn('playback_url');
+            //            $table->dropColumn('highlighted_status');
+            //            $table->dropColumn('language');
         });
     }
 }

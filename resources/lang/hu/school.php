@@ -13,16 +13,15 @@ return [
     |
     */
 
-    'name'             => 'Iskola neve',
-    'location'           => 'Iskola helye',
-    'description'                => 'Iskola leírása',
-    'school'                => 'Iskola',
-    'add'                => 'Hozzáadás',
-    'list'                => 'Jegyzék',
+    'name' => 'Iskola neve',
+    'location' => 'Iskola helye',
+    'description' => 'Iskola leírása',
+    'school' => 'Iskola',
+    'add' => 'Hozzáadás',
+    'list' => 'Jegyzék',
     'required' => [
-        'name'=>'Az iskolanév megadása kötelezõ',
-        'location'=>'Az iskola helyszínének megadása kötelezõ',
-    ]
-
+        'name' => 'Az iskolanév megadása kötelezõ',
+        'location' => 'Az iskola helyszínének megadása kötelezõ',
+    ],
 
 ];

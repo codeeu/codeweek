@@ -2,25 +2,22 @@
 
 namespace Tests\Feature\Achievements;
 
-use App\CertificateExcellence;
-use App\Excellence;
-use App\School;
 use App\User;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Support\Facades\Storage;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Torann\GeoIP\Facades\GeoIP;
 
-class BadgesTest extends TestCase {
+class BadgesTest extends TestCase
+{
     use DatabaseMigrations;
 
     private $leading_teacher;
+
     private $leading_teacher_2;
+
     private $leading_teacher_admin;
 
-    public function setup(): void {
+    public function setup(): void
+    {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
         $this->seed('LeadingTeacherRoleSeeder');
@@ -30,7 +27,8 @@ class BadgesTest extends TestCase {
     }
 
     /** @test */
-    public function only_leading_teachers_can_access_their_badges_page() {
+    public function only_leading_teachers_can_access_their_badges_page()
+    {
 
         $this->signIn();
         $this->get(route('my-badges'))->assertStatus(403);
@@ -41,7 +39,8 @@ class BadgesTest extends TestCase {
     }
 
     /** @test */
-    public function only_leading_teachers_admin_can_access_other_badges_pages() {
+    public function only_leading_teachers_admin_can_access_other_badges_pages()
+    {
 
         $this->signIn();
         $this->get('/badges/user/1')->assertStatus(403);
@@ -61,17 +60,15 @@ class BadgesTest extends TestCase {
     }
 
     /** @test */
-    public function only_leading_teachers_can_see_my_badges_page() {
+    public function only_leading_teachers_can_see_my_badges_page()
+    {
 
         $this->signIn();
         $this->get('/my/badges')->assertStatus(403)->assertDontSeeText('My Badges');
-
 
         $this->actingAs($this->leading_teacher);
 
         $this->get('/my/badges')->assertStatus(200)->assertSeeText('My Badges');
 
     }
-
-
 }

@@ -21,7 +21,6 @@ class ResourceEditorRoleSeeder extends Seeder
         // create permissions
         Permission::create(['name' => 'moderate resource']);
 
-
         // create roles and assign created permissions
 
         $role = Role::create(['name' => 'resource editor']);

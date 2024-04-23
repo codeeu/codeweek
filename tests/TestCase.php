@@ -2,11 +2,8 @@
 
 namespace Tests;
 
-use App\Exceptions\Handler;
-use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 use Illuminate\Support\Facades\Mail;
-use Mockery;
 
 abstract class TestCase extends BaseTestCase
 {
@@ -25,6 +22,7 @@ abstract class TestCase extends BaseTestCase
     {
         $user = $user ?: create('App\User');
         $this->actingAs($user);
+
         return $this;
     }
 
@@ -50,6 +48,4 @@ abstract class TestCase extends BaseTestCase
         });
 
     }
-
-
 }

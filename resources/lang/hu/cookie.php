@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,11 +14,10 @@ return [
     */
 
     'uses_cookies' => 'Ez a webhely a böngészés tökéletesítése érdekében cookie-kat használ',
-    'accept'=>'Elfogadom a cookie-kat',
-    'refuse'=>'Nem fogadom el a cookie-kat',
+    'accept' => 'Elfogadom a cookie-kat',
+    'refuse' => 'Nem fogadom el a cookie-kat',
     'cookies' => 'Cookie-k',
-    'find_out_more_on'=>'Ha bővebb információkat szeretne kapni a cookie-k használatáról és arról, hogyan módosíthatja a beállításokat, kattintson ',
+    'find_out_more_on' => 'Ha bővebb információkat szeretne kapni a cookie-k használatáról és arról, hogyan módosíthatja a beállításokat, kattintson ',
     'how_we_use' => 'ide',
-
 
 ];

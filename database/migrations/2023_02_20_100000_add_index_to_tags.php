@@ -14,8 +14,7 @@ return new class extends Migration
     public function up()
     {
 
-        Schema::table('tags', function(Blueprint $table)
-        {
+        Schema::table('tags', function (Blueprint $table) {
             $table->index('name');
         });
     }
@@ -27,8 +26,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('tags', function (Blueprint $table)
-        {
+        Schema::table('tags', function (Blueprint $table) {
             $table->dropIndex(['name']);
         });
     }

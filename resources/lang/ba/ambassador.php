@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,13 +14,13 @@ return [
     */
 
     'title' => 'Ambasadori Sedmice kodiranja EU',
-    'your_current_country'=>'Vaša trenutna zemlja',
-    'visit_the'=> 'Posjetite',
-    'local_facebook_page'=>'lokalnu Facebook stranicu',
-    'local_website'=>'Lokalni vebsajt',
-    'ambassadors'=>'Ambasadori',
-    'no_ambassadors'=>'Još uvijek nema ambasadora',
-    'countries_with_ambassadors'=>'Zemlje sa ambasadorima',
-    'why_dont_you_volunteer'=>'Zašto se ne biste prijavili?'
+    'your_current_country' => 'Vaša trenutna zemlja',
+    'visit_the' => 'Posjetite',
+    'local_facebook_page' => 'lokalnu Facebook stranicu',
+    'local_website' => 'Lokalni vebsajt',
+    'ambassadors' => 'Ambasadori',
+    'no_ambassadors' => 'Još uvijek nema ambasadora',
+    'countries_with_ambassadors' => 'Zemlje sa ambasadorima',
+    'why_dont_you_volunteer' => 'Zašto se ne biste prijavili?',
 
 ];

@@ -45,25 +45,21 @@ class NotifyAdministrators extends Command
         //Get Number of activities that need to be featured
         $notifications_to_be_sent = Notification::whereNull('sent_at');
 
-        if ($notifications_to_be_sent->count() > 0){
+        if ($notifications_to_be_sent->count() > 0) {
             //Get the admins
             $admins = User::role('activities admin')->get();
 
-
             //Queue an email for each of them
-            foreach ($admins as $admin){
+            foreach ($admins as $admin) {
                 Mail::to($admin->email)->queue(new \App\Mail\NotifyAdministrator($notifications_to_be_sent->count()));
             }
 
             //Update the notifications
-            foreach ($notifications_to_be_sent->get() as $notification){
+            foreach ($notifications_to_be_sent->get() as $notification) {
                 $notification->sent_at = Carbon::now();
                 $notification->save();
             }
         }
-
-
-
 
     }
 }

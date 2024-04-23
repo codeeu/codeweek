@@ -3,7 +3,6 @@
 namespace App\Console\Commands;
 
 use App\Helpers\UserHelper;
-use App\User;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Mail;
 

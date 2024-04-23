@@ -16,5 +16,5 @@ return [
     'no_reports' => 'Još uvijek nema događaja o kojima bi se izvještavalo.',
     'report' => 'Događaji navedeni u spisku niže su počeli ili su se završili. Unesite nekoliko brojeva
   u statističke svrhe vezano za događaj i zatražite svoj sertifikat o učešću u Nedjelji programiranja. Dobijate
-  jedan sertifikat po događaju. '
+  jedan sertifikat po događaju. ',
 ];

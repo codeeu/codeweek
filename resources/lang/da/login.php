@@ -27,5 +27,5 @@ return [
     'reset' => 'Nulstil din adgangskode',
     'send_password' => 'Send link til nulstilling af adgangskode',
     'confirm_password' => 'Bekræft adgangskode',
-    'name' => 'navn'
+    'name' => 'navn',
 ];

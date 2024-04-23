@@ -13,13 +13,10 @@ class AddSoftdeleteToImporters extends Migration
      */
     public function up()
     {
-        Schema::table('importers', function(Blueprint $table)
-        {
+        Schema::table('importers', function (Blueprint $table) {
             $table->softDeletes();
         });
     }
-
-
 
     /**
      * Reverse the migrations.
@@ -28,7 +25,6 @@ class AddSoftdeleteToImporters extends Migration
      */
     public function down()
     {
-
 
     }
 }

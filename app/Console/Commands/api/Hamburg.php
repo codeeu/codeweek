@@ -2,20 +2,13 @@
 
 namespace App\Console\Commands\api;
 
-
-use App\Event;
-use App\HamburgRSSItem;
 use Illuminate\Console\Command;
-use Illuminate\Support\Arr;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Artisan;
-use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
-
 
 class Hamburg extends Command
 {
-
     use GermanTraits;
 
     /**
@@ -42,7 +35,7 @@ class Hamburg extends Command
         parent::__construct();
     }
 
-    function parseDate($date)
+    public function parseDate($date)
     {
         return Carbon::parse($date);
     }
@@ -57,7 +50,7 @@ class Hamburg extends Command
 
         $city = 'Hamburg';
 
-        $url = "https://hamburg.codeweek.de/?tx_codeweekevents_api%5Baction%5D=listForEu&tx_codeweekevents_api%5Bcontroller%5D=Api&tx_codeweekevents_api%5Bformat%5D=.json&tx_typoscriptrendering%5Bcontext%5D=%7B%22record%22:%22pages_42%22,%22path%22:%22tt_content.list.20.codeweekevents_api%22%7D&cHash=c5952d04181fb05e7d86ef43efcd7f26";
+        $url = 'https://hamburg.codeweek.de/?tx_codeweekevents_api%5Baction%5D=listForEu&tx_codeweekevents_api%5Bcontroller%5D=Api&tx_codeweekevents_api%5Bformat%5D=.json&tx_typoscriptrendering%5Bcontext%5D=%7B%22record%22:%22pages_42%22,%22path%22:%22tt_content.list.20.codeweekevents_api%22%7D&cHash=c5952d04181fb05e7d86ef43efcd7f26';
         dump("Loading $city events");
         $force = $this->option('force');
 
@@ -65,23 +58,19 @@ class Hamburg extends Command
 
         if (is_null($json)) {
             Log::info("!!! No data in feed from $city API:");
+
             return 0;
         }
 
         $this->createRSSItem($json, $city);
 
-
-
-        Artisan::call("import:hamburg");
-
+        Artisan::call('import:hamburg');
 
     }
 
     public function getCustomTag($item, $tag)
     {
-        return $item->get_item_tags("", $tag)[0]['data'];
+        return $item->get_item_tags('', $tag)[0]['data'];
 
     }
-
-
 }

@@ -6,7 +6,8 @@ use App\Event;
 use App\Helpers\GeolocationHelper;
 use Illuminate\Console\Command;
 
-class RelocateEvent extends Command {
+class RelocateEvent extends Command
+{
     /**
      * The name and signature of the console command.
      *
@@ -26,7 +27,8 @@ class RelocateEvent extends Command {
      *
      * @return void
      */
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct();
     }
 
@@ -35,13 +37,15 @@ class RelocateEvent extends Command {
      *
      * @return int
      */
-    public function handle() {
+    public function handle()
+    {
         $eventId = strtoupper($this->argument('eventId'));
 
         $event = Event::firstWhere('id', $eventId);
         $coords = GeolocationHelper::getCoordinates($event->location);
 
         $event->relocateWithCoordinates($coords);
+
         return 1;
     }
 }

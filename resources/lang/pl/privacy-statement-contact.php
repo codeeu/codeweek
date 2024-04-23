@@ -4,14 +4,14 @@ return [
     'subtitle' => 'To oświadczenie o ochronie prywatności zawiera informacje o przetwarzaniu i ochronie danych osobowych.',
     'processing-operation' => [
         'Operacja przetwarzania danych osobowych',
-        'zarządzanie – ambasadorzy Tygodnia Kodowania, nauczyciele prowadzący i rejestracja wydarzeń na stronie internetowej'
+        'zarządzanie – ambasadorzy Tygodnia Kodowania, nauczyciele prowadzący i rejestracja wydarzeń na stronie internetowej',
     ],
     'data-processors' => [
         'Podmioty przetwarzające dane',
-        'GOPA Com. S.A. i EUN Partnership AISBL (European Schoolnet), info@codeweek.eu'
+        'GOPA Com. S.A. i EUN Partnership AISBL (European Schoolnet), info@codeweek.eu',
     ],
     '1-intro' => [
-        'Informacje dotyczące przetwarzania danych osobowych na potrzeby zarządzania ambasadorami Tygodnia Kodowania, nauczycielami prowadzącymi i rejestracją wydarzeń na stronie internetowej.'
+        'Informacje dotyczące przetwarzania danych osobowych na potrzeby zarządzania ambasadorami Tygodnia Kodowania, nauczycielami prowadzącymi i rejestracją wydarzeń na stronie internetowej.',
     ],
 
     '3-legal_process' => [
@@ -59,10 +59,10 @@ return [
         'Poza tym dział G.2 może udostępnić Twoje dane kontaktowe szerokiemu ogółowi lub zainteresowanym stronom, które będą potrzebowały skontaktować się z Tobą w związku z Tygodniem Kodowania. W przypadku organizatorów wydarzeń należy pamiętać, że odpowiedni ambasador w Twoim kraju lub dział G.2 mogą wykorzystać dane osobowe przekazane przez Ciebie przy rejestracji wydarzenia do skontaktowania się z Tobą w związku z tym wydarzeniem.',
     ],
     '8-rights' => [
-        'Wyrażono zgodę na przekazanie danych osobowych działowi G.2 w związku z tą operacją przetwarzania danych. Zgodę można wycofać w dowolnym momencie, powiadamiając o tym dział G.2 na adres CNECT-G2@ec.europa.eu. Wycofanie zgody nie będzie miało wpływu na legalność przetwarzania danych osobowych, które miało miejsce przed wycofaniem tej zgody.'
+        'Wyrażono zgodę na przekazanie danych osobowych działowi G.2 w związku z tą operacją przetwarzania danych. Zgodę można wycofać w dowolnym momencie, powiadamiając o tym dział G.2 na adres CNECT-G2@ec.europa.eu. Wycofanie zgody nie będzie miało wpływu na legalność przetwarzania danych osobowych, które miało miejsce przed wycofaniem tej zgody.',
     ],
 
     '10-detailed-info' => [
-        'Ta konkretna operacja przetwarzania danych została ujęta w rejestrze publicznym inspektora ochrony danych pod starszym numerem: DPR-EC-02631 Zarządzanie punktami kontaktowymi dla polityk, programów i projektów DG CONNECT.'
-    ]
+        'Ta konkretna operacja przetwarzania danych została ujęta w rejestrze publicznym inspektora ochrony danych pod starszym numerem: DPR-EC-02631 Zarządzanie punktami kontaktowymi dla polityk, programów i projektów DG CONNECT.',
+    ],
 ];

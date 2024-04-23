@@ -4,13 +4,10 @@ namespace Tests\Feature;
 
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class OnlineEventsWorkflowTest extends TestCase
 {
-
     use DatabaseMigrations;
 
     /*
@@ -37,7 +34,6 @@ class OnlineEventsWorkflowTest extends TestCase
     public function it_should_list_online_events_for_ambassadors()
     {
         $this->seed('RolesAndPermissionsSeeder');
-
 
         $ambassador = create('App\User');
         $ambassador->assignRole('ambassador');
@@ -69,7 +65,6 @@ class OnlineEventsWorkflowTest extends TestCase
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-
         $ambassador = create('App\User');
         $ambassador->assignRole('ambassador');
 
@@ -94,7 +89,6 @@ class OnlineEventsWorkflowTest extends TestCase
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-
         $superadmin = create('App\User');
         $superadmin->assignRole('super admin');
 
@@ -103,10 +97,10 @@ class OnlineEventsWorkflowTest extends TestCase
         $belgium = create('App\Country', ['iso' => 'BE']);
         $france = create('App\Country', ['iso' => 'FR']);
 
-        $onlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(),'country_iso' => $belgium->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
-        $PendingOnlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(),'country_iso' => $belgium->iso, 'status' => 'PENDING', 'activity_type' => 'open-online']);
-        $onlineEventInAnotherCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(),'country_iso' => $france->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
-        $offlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(),'country_iso' => $belgium->iso, 'status' => 'APPROVED', 'activity_type' => 'offline']);
+        $onlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => $belgium->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+        $PendingOnlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => $belgium->iso, 'status' => 'PENDING', 'activity_type' => 'open-online']);
+        $onlineEventInAnotherCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => $france->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+        $offlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => $belgium->iso, 'status' => 'APPROVED', 'activity_type' => 'offline']);
 
         $response = $this->get('/online/list')
             ->assertSee($onlineEventInCountry->title)
@@ -120,7 +114,6 @@ class OnlineEventsWorkflowTest extends TestCase
     public function ambassadors_can_promote_events_from_their_countries()
     {
         $this->seed('RolesAndPermissionsSeeder');
-
 
         $ambassador = create('App\User');
         $ambassador->assignRole('ambassador');
@@ -157,7 +150,6 @@ class OnlineEventsWorkflowTest extends TestCase
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-
         $ambassador = create('App\User');
         $ambassador->assignRole('ambassador');
 
@@ -182,11 +174,11 @@ class OnlineEventsWorkflowTest extends TestCase
         $this->signIn($ambassador);
 
         $onlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
-        $this->assertDatabaseCount('notifications',0);
+        $this->assertDatabaseCount('notifications', 0);
 
         $onlineEventInCountry->promote();
 
-        $this->assertDatabaseCount('notifications',1);
+        $this->assertDatabaseCount('notifications', 1);
 
         $this->assertNotNull($onlineEventInCountry->notification->created_at);
         $this->assertNull($onlineEventInCountry->notification->sent_at);
@@ -194,9 +186,7 @@ class OnlineEventsWorkflowTest extends TestCase
         //We will cancel the promote
         $onlineEventInCountry->promote();
 
-        $this->assertDatabaseCount('notifications',0);
+        $this->assertDatabaseCount('notifications', 0);
 
     }
-
-
 }

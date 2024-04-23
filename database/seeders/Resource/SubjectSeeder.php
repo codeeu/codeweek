@@ -11,8 +11,7 @@ class SubjectSeeder extends Seeder
      *
      * @return void
      */
-    public
-    function run()
+    public function run()
     {
         create('App\ResourceSubject', [
             'id' => 1,
@@ -149,7 +148,6 @@ class SubjectSeeder extends Seeder
             'learn' => false,
             'teach' => true,
         ]);
-
 
         create('App\ResourceSubject', [
             'id' => 100,

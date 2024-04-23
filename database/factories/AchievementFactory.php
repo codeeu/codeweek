@@ -8,6 +8,6 @@ $factory->define(Achievement::class, function (Faker $faker) {
         'name' => $faker->word,
         'description' => $faker->sentence,
         'icon' => 'foo.svg',
-        'edition' => $faker->year
+        'edition' => $faker->year,
     ];
 });

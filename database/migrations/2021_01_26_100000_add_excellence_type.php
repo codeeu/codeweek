@@ -16,12 +16,11 @@ class AddExcellenceType extends Migration
 
         Schema::table('excellences', function (Blueprint $table) {
 
-            $table->dropUnique(["user_id","edition"]);
+            $table->dropUnique(['user_id', 'edition']);
             $table->string('type')->default('Excellence');
-            $table->unique(['user_id', 'edition','type']);
+            $table->unique(['user_id', 'edition', 'type']);
         });
     }
-
 
     /**
      * Reverse the migrations.
@@ -33,7 +32,6 @@ class AddExcellenceType extends Migration
         Schema::table('excellences', function (Blueprint $table) {
 
         });
-
 
     }
 }

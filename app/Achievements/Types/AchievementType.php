@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Achievements\Types;
-
 
 use App\Achievements\Achievement;
 
@@ -16,7 +14,7 @@ abstract class AchievementType
             'name' => $this->name(),
             'description' => $this->description(),
             'icon' => $this->icon,
-            'edition' => $this->edition
+            'edition' => $this->edition,
         ]);
     }
 
@@ -33,8 +31,6 @@ abstract class AchievementType
 
         return trim(preg_replace('/[A-Z]/', ' $0', class_basename($this)));
     }
-
-
 
     abstract public function qualifier($user);
 }

@@ -11,7 +11,6 @@ class ImporterTrend extends Trend
     /**
      * Calculate the value of the metric.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
      * @return mixed
      */
     public function calculate(NovaRequest $request)
@@ -38,7 +37,7 @@ class ImporterTrend extends Trend
     /**
      * Determine for how many minutes the metric should be cached.
      *
-     * @return  \DateTimeInterface|\DateInterval|float|int
+     * @return \DateTimeInterface|\DateInterval|float|int
      */
     public function cacheFor()
     {

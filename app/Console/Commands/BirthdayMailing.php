@@ -31,7 +31,7 @@ class BirthdayMailing extends Command
     {
         $recipients = ReminderHelper::getActiveCreators();
 
-        $this->info(sizeof($recipients));
+        $this->info(count($recipients));
 
         foreach ($recipients as $user) {
             Mail::to($user->email)->queue(new \App\Mail\BirthdayMailing($user->email, $user->magic_key));

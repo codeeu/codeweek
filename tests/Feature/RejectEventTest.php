@@ -3,27 +3,19 @@
 namespace Tests\Feature;
 
 use App\Event;
-use App\Mail\EventApproved;
 use App\Mail\EventRejected;
-use App\Queries\EventsQuery;
-use App\School;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class RejectEventTest extends TestCase
 {
-
     use DatabaseMigrations;
 
-
-    public function setup() :void
+    public function setup(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
-
 
     }
 
@@ -34,7 +26,6 @@ class RejectEventTest extends TestCase
         Mail::fake();
 
         $this->withExceptionHandling();
-
 
         $superadmin = create('App\User');
         $superadmin->assignRole('super admin');
@@ -65,8 +56,6 @@ class RejectEventTest extends TestCase
             return $mail->hasTo($event->user_email);
         });
 
-
-
     }
 
     /** @test */
@@ -84,8 +73,6 @@ class RejectEventTest extends TestCase
         $event->reject();
 
         $this->assertCount(2, $event->moderations()->get());
-
-
 
     }
 
@@ -136,24 +123,22 @@ class RejectEventTest extends TestCase
 
         $event = Event::where('title', $eventA->title)->first();
 
-        create('App\Audience',[] ,3);
-        create('App\Theme', [],3);
+        create('App\Audience', [], 3);
+        create('App\Theme', [], 3);
         $event->title = 'Changed';
         $event->description = 'Changed description.';
-        $event->theme = "1,2";
-        $event->audience = "1,2,3";
-        $event->tags = "foo,bar,joe";
+        $event->theme = '1,2';
+        $event->audience = '1,2,3';
+        $event->tags = 'foo,bar,joe';
         $event->privacy = true;
 
-        $this->patch('/events/' . $event->id, $event->toArray());
-
+        $this->patch('/events/'.$event->id, $event->toArray());
 
         tap($event->fresh(), function ($t) {
             $this->assertEquals('PENDING', $t->status);
             $this->assertEquals('Changed description.', $t->description);
 
         });
-
 
     }
 
@@ -172,9 +157,7 @@ class RejectEventTest extends TestCase
         $this->signIn($superadmin);
 
         $event = create('App\Event', ['status' => 'PENDING', 'user_email' => 'foo@bar.com']);
+
         return $event;
     }
-
 }
-
-

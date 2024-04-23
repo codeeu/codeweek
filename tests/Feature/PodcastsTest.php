@@ -5,7 +5,6 @@ namespace Tests\Feature;
 use App\PodcastGuest;
 use App\PodcastResource;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Carbon;
 use Tests\TestCase;
 
@@ -16,18 +15,18 @@ class PodcastsTest extends TestCase
     /** @test */
     public function it_should_list_active_podcasts_in_rss()
     {
-//        $this->withoutExceptionHandling();
+        //        $this->withoutExceptionHandling();
 
         create('App\Podcast', ['description' => 'active description', 'active' => true, 'release_date' => Carbon::now()->subDay()]);
         create('App\Podcast', [
             'description' => 'cannot be displayed',
-            'active' => false
+            'active' => false,
         ]);
 
         create('App\Podcast', [
             'description' => 'pending podcast',
             'active' => true,
-            'release_date' => Carbon::now()->addDays(10)
+            'release_date' => Carbon::now()->addDays(10),
         ]);
 
         $response = $this->get('feed/podcasts');
@@ -44,16 +43,14 @@ class PodcastsTest extends TestCase
         create('App\Podcast', ['title' => 'active title', 'active' => true, 'release_date' => Carbon::now()->subHour()]);
         create('App\Podcast', [
             'title' => 'cannot be displayed',
-            'active' => false
+            'active' => false,
         ]);
 
         create('App\Podcast', [
             'title' => 'pending title',
             'active' => true,
-            'release_date' => Carbon::now()->addHour()
+            'release_date' => Carbon::now()->addHour(),
         ]);
-
-
 
         $response = $this->get('/podcasts');
 
@@ -82,7 +79,7 @@ class PodcastsTest extends TestCase
 
         $podcastGuest = PodcastGuest::factory()->for($podcast)->create();
 
-        $response = $this->get('/podcast/' . $podcast->id);
+        $response = $this->get('/podcast/'.$podcast->id);
 
         $response->assertSee($podcastGuest->name);
 
@@ -96,7 +93,7 @@ class PodcastsTest extends TestCase
 
         $podcastResource = PodcastResource::factory()->for($podcast)->create();
 
-        $response = $this->get('/podcast/' . $podcast->id);
+        $response = $this->get('/podcast/'.$podcast->id);
 
         $response->assertSee($podcastResource->name);
         $response->assertSee($podcastResource->url);
@@ -112,11 +109,7 @@ class PodcastsTest extends TestCase
         $podcastResource = PodcastResource::factory()->count(3)->for($podcast)->create();
         $otherPodcastResource = PodcastResource::factory()->count(6)->create();
 
-
         $this->assertCount(3, $podcast->resources()->get());
 
-
     }
-
-
 }

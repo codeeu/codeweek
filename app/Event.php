@@ -7,17 +7,13 @@ use App\Helpers\EventHelper;
 use App\Helpers\ImporterHelper;
 use App\Policies\EventPolicy;
 use Carbon\Carbon;
-use DB;
 use Illuminate\Database\Eloquent\Model;
-
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Str;
-use Spatie\Activitylog\LogOptions;
-use Spatie\Activitylog\Traits\LogsActivity;
 use Laravel\Nova\Actions\Actionable;
+use Spatie\Activitylog\LogOptions;
 use Stevebauman\Purify\Casts\PurifyHtmlOnGet;
 
 class Event extends Model
@@ -25,6 +21,7 @@ class Event extends Model
     use Actionable, SoftDeletes;
 
     protected $table = 'events';
+
     protected $fillable = [
         'status',
         'title',
@@ -64,20 +61,20 @@ class Event extends Model
         'language',
         'location_id',
         'leading_teacher_tag',
-        'mass_added_for'
+        'mass_added_for',
     ];
 
     protected $casts = [
         'description' => PurifyHtmlOnGet::class,
         'title' => PurifyHtmlOnGet::class,
         'location' => PurifyHtmlOnGet::class,
-        'language'=> PurifyHtmlOnGet::class,
+        'language' => PurifyHtmlOnGet::class,
     ];
 
-//    protected $policies = [
-//        'App\Event' => 'App\Policies\EventPolicy',
-//        Event::class => EventPolicy::class
-//    ];
+    //    protected $policies = [
+    //        'App\Event' => 'App\Policies\EventPolicy',
+    //        Event::class => EventPolicy::class
+    //    ];
 
     //protected $appends = ['LatestModeration'];
 
@@ -86,13 +83,12 @@ class Event extends Model
         return $this->only(['geoposition', 'title', 'description']);
     }
 
-
     protected static $logFillable = true;
 
     public function getEventUrlAttribute($url)
     {
         if ($url && strpos($url, 'http') !== 0) {
-            return 'http://' . $url;
+            return 'http://'.$url;
         }
 
         return $url;
@@ -100,12 +96,13 @@ class Event extends Model
 
     public function path()
     {
-        return '/view/' . $this->id . '/' . $this->slug;
+        return '/view/'.$this->id.'/'.$this->slug;
     }
 
     public function imported()
     {
         $germanCities = ImporterHelper::getGermanCities();
+
         return Str::contains($this->codeweek_for_all_participation_code, $germanCities);
     }
 
@@ -115,7 +112,8 @@ class Event extends Model
             if (Str::startsWith($this->picture, 'http')) {
                 return $this->picture;
             }
-            return config('codeweek.aws_url') . $this->picture;
+
+            return config('codeweek.aws_url').$this->picture;
         } else {
             return 'https://s3-eu-west-1.amazonaws.com/codeweek-dev/events/pictures/event_default_picture.png';
         }
@@ -124,7 +122,7 @@ class Event extends Model
     public function picture_detail_path()
     {
         if ($this->picture_detail) {
-            return config('codeweek.aws_url') . $this->picture_detail;
+            return config('codeweek.aws_url').$this->picture_detail;
         }
 
         return $this->picture_path();
@@ -160,8 +158,9 @@ class Event extends Model
         return $this->belongsToMany('App\Tag')->where('name', '<>', '');
     }
 
-    public function leadingTeacher(){
-        return $this->belongsTo('App\User',  'leading_teacher_tag','tag');
+    public function leadingTeacher()
+    {
+        return $this->belongsTo('App\User', 'leading_teacher_tag', 'tag');
     }
 
     public function get_start_date()
@@ -244,11 +243,11 @@ class Event extends Model
 
         $this->update($data);
 
-        if (!empty($this->user_email)) {
+        if (! empty($this->user_email)) {
             Mail::to($this->user_email)->queue(
                 new \App\Mail\EventApproved($this, $this->owner)
             );
-        } elseif (!is_null($this->owner) && !is_null($this->owner->email)) {
+        } elseif (! is_null($this->owner) && ! is_null($this->owner->email)) {
             Mail::to($this->owner->email)->queue(
                 new \App\Mail\EventApproved($this, $this->owner)
             );
@@ -262,16 +261,16 @@ class Event extends Model
         $this->moderations()->create([
             'status' => 'REJECTED',
             'message' => $rejectionText,
-            'status_by' => auth()->id()
+            'status_by' => auth()->id(),
         ]);
 
         $data = ['status' => 'REJECTED', 'approved_by' => auth()->user()->id];
 
-        if (!empty($this->user_email)) {
+        if (! empty($this->user_email)) {
             Mail::to($this->user_email)->queue(
                 new \App\Mail\EventRejected($this, $this->owner, $rejectionText)
             );
-        } elseif (!is_null($this->owner) && !is_null($this->owner->email)) {
+        } elseif (! is_null($this->owner) && ! is_null($this->owner->email)) {
             Mail::to($this->owner->email)->queue(
                 new \App\Mail\EventRejected($this, $this->owner, $rejectionText)
             );
@@ -322,6 +321,7 @@ class Event extends Model
             $this->highlighted_status == 'FEATURED'
                 ? ($this->highlighted_status = 'PROMOTED')
                 : ($this->highlighted_status = 'FEATURED');
+
             return $this->save();
         }
     }
@@ -336,17 +336,17 @@ class Event extends Model
         $this->longitude = $this->country->longitude;
         $this->latitude = $this->country->latitude;
         $this->geoposition =
-            $this->country->latitude . ',' . $this->country->longitude;
+            $this->country->latitude.','.$this->country->longitude;
         $this->save();
     }
 
     public function relocateWithCoordinates($coords)
     {
-        if (!is_null($coords)) {
+        if (! is_null($coords)) {
             $this->latitude = $coords['location']['y'];
             $this->longitude = $coords['location']['x'];
             $this->geoposition =
-                $coords['location']['y'] . ',' . $coords['location']['x'];
+                $coords['location']['y'].','.$coords['location']['x'];
             $this->relocation_status = 'SUCCESS';
         } else {
             $this->relocation_status = 'EMPTY COORDS';
@@ -359,7 +359,7 @@ class Event extends Model
     public function getActivitylogOptions(): LogOptions
     {
         return LogOptions::defaults()
-            ->setDescriptionForEvent(fn(string $eventName) => "Event {$this->id} has been {$eventName}");
+            ->setDescriptionForEvent(fn (string $eventName) => "Event {$this->id} has been {$eventName}");
     }
 
     public function getTrimmedGeopositionAttribute()
@@ -375,12 +375,12 @@ class Event extends Model
 
         try {
 
-//            $location = Location::where([
-//                'trimmed_geoposition' => $this->trimmedGeoposition,
-//                'user_id' => $this->creator_id,
-//            ])->first();
-//
-////            dd($location);
+            //            $location = Location::where([
+            //                'trimmed_geoposition' => $this->trimmedGeoposition,
+            //                'user_id' => $this->creator_id,
+            //            ])->first();
+            //
+            ////            dd($location);
 
             $location = Location::firstOrCreate(
                 [
@@ -396,22 +396,18 @@ class Event extends Model
                     'country_iso' => $this->country_iso,
                     'event_id' => $this->id,
                     'activity_type' => $this->activity_type,
-                    'organizer_type' => $this->organizer_type
+                    'organizer_type' => $this->organizer_type,
                 ]);
 
-//            dd($location->id);
+            //            dd($location->id);
 
-//            Log::info($location->id);
+            //            Log::info($location->id);
             $this->update([
-                'location_id' => $location->id
+                'location_id' => $location->id,
             ]);
         } catch (\Exception $exception) {
             //Log::info($location);
             \Illuminate\Support\Facades\Log::info('unique constraint triggered');
         }
     }
-
-
-
-
 }

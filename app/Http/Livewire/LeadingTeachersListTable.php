@@ -2,19 +2,17 @@
 
 namespace App\Http\Livewire;
 
-
 use App\LeadingTeacherExpertise;
 use App\ResourceLevel;
 use App\ResourceSubject;
 use App\User;
+use Mediconesystems\LivewireDatatables\BooleanColumn;
 use Mediconesystems\LivewireDatatables\Column;
 use Mediconesystems\LivewireDatatables\DateColumn;
-use Mediconesystems\LivewireDatatables\BooleanColumn;
 use Mediconesystems\LivewireDatatables\Http\Livewire\LivewireDatatable;
 
 class LeadingTeachersListTable extends LivewireDatatable
 {
-
     public function builder()
     {
         return User::role('leading teacher');
@@ -32,7 +30,6 @@ class LeadingTeachersListTable extends LivewireDatatable
                 ->label('firstname')
                 ->filterable(),
 
-
             Column::name('lastname')
                 ->label('lastname')
                 ->filterable(),
@@ -43,29 +40,23 @@ class LeadingTeachersListTable extends LivewireDatatable
 
             Column::name('country_iso')
                 ->label('Country Name')
-                ->filterable()
-                ,
+                ->filterable(),
 
-//            Column::name('city.city')
-//                ->label('City')
-//                ->hide(),
+            //            Column::name('city.city')
+            //                ->label('City')
+            //                ->hide(),
 
             Column::name('email')
                 ->label('email')
                 ->filterable(),
 
-
             BooleanColumn::name('approved')
                 ->label('Approved ?')
                 ->filterable()
-                ->defaultSort('asc')
-            ,
-
+                ->defaultSort('asc'),
 
             DateColumn::name('updated_at')
-                ->label('updated at')
-            ,
-
+                ->label('updated at'),
 
             Column::name('levels.name')
                 ->filterable($this->levels->pluck('name'))
@@ -80,8 +71,7 @@ class LeadingTeachersListTable extends LivewireDatatable
             Column::name('subjects.name')
                 ->filterable($this->subjects->pluck('name'))
                 ->label('subjects')
-                ->hide()
-            ,
+                ->hide(),
 
             //Hidden Fields
             Column::name('twitter')
@@ -115,6 +105,4 @@ class LeadingTeachersListTable extends LivewireDatatable
     {
         return ResourceSubject::all();
     }
-
-
 }

@@ -2,9 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\User;
 use Illuminate\Database\Seeder;
-
 
 class UserSeeder extends Seeder
 {
@@ -20,9 +18,8 @@ class UserSeeder extends Seeder
             'firstname' => 'Super',
             'lastname' => 'Admin',
             'email' => \Config::get('codeweek.administrator'),
-            'password' => bcrypt('secret')
+            'password' => bcrypt('secret'),
         ])->assignRole('super admin');
-
 
         create('App\Event', ['creator_id' => 1]);
 

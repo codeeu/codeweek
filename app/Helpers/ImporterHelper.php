@@ -6,18 +6,14 @@ use App\Event;
 use App\Importer;
 use App\User;
 use Carbon\Carbon;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 
 class ImporterHelper
 {
-
-
     public static function getGermanCities()
     {
-//        return ['hamburg', 'baden', 'bonn', 'berlin', 'leipzig', 'dresden', 'thueringen', 'bremen', 'muensterland', 'nordhessen', 'bayern'];
+        //        return ['hamburg', 'baden', 'bonn', 'berlin', 'leipzig', 'dresden', 'thueringen', 'bremen', 'muensterland', 'nordhessen', 'bayern'];
         return ['hamburg', 'baden', 'bonn', 'berlin', 'leipzig', 'thueringen', 'bremen', 'muensterland', 'nordhessen', 'bayern'];
     }
 
@@ -25,19 +21,17 @@ class ImporterHelper
     public static function getTechnicalUser($username)
     {
 
-        if (!User::where("username", "=", $username)->get()->isEmpty()) {
-            return User::where("username", "=", $username)->first();
-        };
-
+        if (! User::where('username', '=', $username)->get()->isEmpty()) {
+            return User::where('username', '=', $username)->first();
+        }
 
         return User::create([
-            'firstname' => "",
-            'lastname' => "",
+            'firstname' => '',
+            'lastname' => '',
             'username' => $username,
-            "password" => bcrypt(Str::random()),
-            "email" => bcrypt(Str::random())
+            'password' => bcrypt(Str::random()),
+            'email' => bcrypt(Str::random()),
         ]);
-
 
     }
 
@@ -46,9 +40,9 @@ class ImporterHelper
         $ids = self::getDeletedEventsIDs();
 
         $deletedFromEvents = Event::whereIn('id', $ids)->delete();
-        Log::info("Deleted From Events because they are not in Remote API: " . $deletedFromEvents);
+        Log::info('Deleted From Events because they are not in Remote API: '.$deletedFromEvents);
         $deletedFromImporters = Importer::whereIn('event_id', $ids)->delete();
-        Log::info("Deleted from Importers Table: " . $deletedFromImporters);
+        Log::info('Deleted from Importers Table: '.$deletedFromImporters);
 
     }
 
@@ -61,25 +55,22 @@ class ImporterHelper
 
         //Get Event IDs that have not been seen in the last 24 hours
         $IDstoDelete = Importer::where('seen_at', '<=', $currentSeenAt->subDay())->pluck('event_id')->all();
-//dump($IDstoDelete);
-        return $IDstoDelete;
 
+        //dump($IDstoDelete);
+        return $IDstoDelete;
 
     }
 
     public static function loadOrCreateUser($email)
     {
         return User::firstOrCreate([
-            "email" => $email
+            'email' => $email,
         ], [
-            "firstname" => "",
-            "lastname" => "",
-            "username" => "",
-            "password" => bcrypt(Str::random())
+            'firstname' => '',
+            'lastname' => '',
+            'username' => '',
+            'password' => bcrypt(Str::random()),
         ]);
 
-
     }
-
-
 }

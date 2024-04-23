@@ -20,7 +20,7 @@ class PodcastResourceFactory extends Factory
             'podcast_id' => function () {
                 return factory('App\Podcast')->create()->id;
             },
-            'position' => $this->faker->numberBetween(1,1000),
+            'position' => $this->faker->numberBetween(1, 1000),
             'name' => $this->faker->name,
             'url' => $this->faker->text,
         ];

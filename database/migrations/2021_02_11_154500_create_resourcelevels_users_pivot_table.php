@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
 
 class CreateResourceLevelsUsersPivotTable extends Migration
 {
@@ -17,7 +17,7 @@ class CreateResourceLevelsUsersPivotTable extends Migration
             $table->foreign('resource_level_id')->references('id')->on('resource_levels')->onDelete('cascade');
             $table->integer('user_id')->unsigned()->index();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->primary(['resource_level_id', 'user_id'],'reslevel_user');
+            $table->primary(['resource_level_id', 'user_id'], 'reslevel_user');
         });
     }
 

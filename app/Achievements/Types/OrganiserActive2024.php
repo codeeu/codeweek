@@ -2,12 +2,12 @@
 
 namespace App\Achievements\Types;
 
-use Illuminate\Support\Facades\Log;
-
 class OrganiserActive2024 extends AchievementType
 {
     public $icon = 'organiser/organiser_active_2024.png';
+
     public $edition = 2024;
+
     public $name = 'Active Organiser 2024';
 
     public function description()
@@ -19,6 +19,4 @@ class OrganiserActive2024 extends AchievementType
     {
         return $user->reported($this->edition) >= 5;
     }
-
-
 }

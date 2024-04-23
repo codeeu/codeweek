@@ -19,7 +19,6 @@ class AddNotifiedAt extends Migration
         });
     }
 
-
     /**
      * Reverse the migrations.
      *
@@ -27,7 +26,6 @@ class AddNotifiedAt extends Migration
      */
     public function down()
     {
-
 
     }
 }

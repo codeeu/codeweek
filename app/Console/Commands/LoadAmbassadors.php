@@ -45,16 +45,14 @@ class LoadAmbassadors extends Command
             ->select(DB::raw('user_id'))
             ->get();
 
-
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         DB::table('model_has_roles')->truncate();
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
 
-
         foreach ($old_ambassadors as $old) {
 
             DB::table('model_has_roles')->insert(
-                ['role_id' => 3,'model_type'=>'App\User', 'model_id' => $old->user_id]
+                ['role_id' => 3, 'model_type' => 'App\User', 'model_id' => $old->user_id]
             );
         }
     }

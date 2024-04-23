@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
 class ModifyTimestampToImporters extends Migration
@@ -20,7 +19,6 @@ class ModifyTimestampToImporters extends Migration
 
     }
 
-
     /**
      * Reverse the migrations.
      *
@@ -28,7 +26,6 @@ class ModifyTimestampToImporters extends Migration
      */
     public function down()
     {
-
 
     }
 }

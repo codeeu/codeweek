@@ -4,14 +4,14 @@ return [
     'subtitle' => 'Denne databeskyttelseserklæring indeholder oplysninger om, hvordan dine personoplysninger behandles og beskyttes.',
     'processing-operation' => [
         'Databehandling',
-        'forvaltning af Code Week Ambassadors, Leading Teachers og registrering af aktiviteter på webstedet'
+        'forvaltning af Code Week Ambassadors, Leading Teachers og registrering af aktiviteter på webstedet',
     ],
     'data-processors' => [
         'Databehandlere',
-        'GOPA Com. S.A. og EUN Partnership AISBL (European Schoolnet), info@codeweek.eu'
+        'GOPA Com. S.A. og EUN Partnership AISBL (European Schoolnet), info@codeweek.eu',
     ],
     '1-intro' => [
-        'Oplysninger om behandling af personoplysninger til forvaltning af Code Week Ambassadors, Leading Teachers og registrering af aktiviteter på webstedet.'
+        'Oplysninger om behandling af personoplysninger til forvaltning af Code Week Ambassadors, Leading Teachers og registrering af aktiviteter på webstedet.',
     ],
 
     '3-legal_process' => [
@@ -59,10 +59,10 @@ return [
         'Desuden kan kontor G.2 dele dine kontaktoplysninger med alle medlemmer af offentligheden eller interessenter, der har brug for at kontakte dig i forbindelse med Code Week. Er du aktivitetsarrangører, bedes du være opmærksom på, at den relevante ambassadør for dit land eller kontor G.2 kan bruge de personoplysninger, du har givet i forbindelse med registreringen af en aktivitet til at kontakte dig i forbindelse med den pågældende aktivitet.',
     ],
     '8-rights' => [
-        'Du har indvilliget i at give kontor G.2 dine personoplysninger med henblik på den pågældende behandlingsaktivitet. Du kan når som helst trække dit samtykke tilbage ved at underrette Kontor G.2 på CNECT-G2@ec.europa.eu. Tilbagetrækningen vil ikke påvirke lovligheden af den behandling, der er foretaget, før du trækker dit samtykke tilbage.'
+        'Du har indvilliget i at give kontor G.2 dine personoplysninger med henblik på den pågældende behandlingsaktivitet. Du kan når som helst trække dit samtykke tilbage ved at underrette Kontor G.2 på CNECT-G2@ec.europa.eu. Tilbagetrækningen vil ikke påvirke lovligheden af den behandling, der er foretaget, før du trækker dit samtykke tilbage.',
     ],
 
     '10-detailed-info' => [
-        'Behandlingen af personoplysninger er opført i den databeskyttelsesansvarliges register under følgende referencenummer: DPR-EC-02631 Forvaltning af kontakter for GD CONNECT\'s politikker, programmer og projekter .'
-    ]
+        'Behandlingen af personoplysninger er opført i den databeskyttelsesansvarliges register under følgende referencenummer: DPR-EC-02631 Forvaltning af kontakter for GD CONNECT\'s politikker, programmer og projekter .',
+    ],
 ];

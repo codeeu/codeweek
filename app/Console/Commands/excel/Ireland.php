@@ -2,13 +2,13 @@
 
 namespace App\Console\Commands\excel;
 
-use App\Imports\DutchDanceEventsImport;
 use App\Imports\IrelandEventsImport;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Facades\Excel;
 
-class Ireland extends Command {
+class Ireland extends Command
+{
     /**
      * The name and signature of the console command.
      *
@@ -28,7 +28,8 @@ class Ireland extends Command {
      *
      * @return void
      */
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct();
     }
 
@@ -37,7 +38,8 @@ class Ireland extends Command {
      *
      * @return int
      */
-    public function handle() {
+    public function handle()
+    {
         Log::info('Loading Irish Excel File');
 
         Excel::import(new IrelandEventsImport(), 'ireland-2023-3.xlsx', 'excel');

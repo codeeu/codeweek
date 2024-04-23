@@ -6,8 +6,6 @@ use App\Imports\BulgariaEventsImport;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Facades\Excel;
-use Feeds;
-
 
 class Bulgaria extends Command
 {
@@ -34,7 +32,6 @@ class Bulgaria extends Command
     {
         parent::__construct();
 
-
     }
 
     /**
@@ -44,10 +41,9 @@ class Bulgaria extends Command
      */
     public function handle()
     {
-        Log::info("Loading Bulgaria Excel File");
+        Log::info('Loading Bulgaria Excel File');
 
-        Excel::import(new BulgariaEventsImport, 'bulgaria.xlsx','excel');
-
+        Excel::import(new BulgariaEventsImport, 'bulgaria.xlsx', 'excel');
 
         // Process the events
 

@@ -30,7 +30,7 @@ class CertificatesOfParticipation extends Command
     public function handle()
     {
         $id = $this->argument('id');
-        $participation = Participation::firstWhere('id',$id);
+        $participation = Participation::firstWhere('id', $id);
 
         //Dispatch Job
         GenerateCertificatesOfParticipation::dispatchSync($participation);

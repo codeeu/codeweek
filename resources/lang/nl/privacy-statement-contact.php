@@ -4,14 +4,14 @@ return [
     'subtitle' => 'Deze privacyverklaring geeft informatie over de verwerking en de bescherming van uw persoonsgegevens.',
     'processing-operation' => [
         'Verwerking',
-        'beheer van Code Week Ambassadors, Leading Teachers en de registratie van activiteiten op de website'
+        'beheer van Code Week Ambassadors, Leading Teachers en de registratie van activiteiten op de website',
     ],
     'data-processors' => [
         'Verwerkers',
-        'GOPA Com. S.A. en EUN Partnership AISBL (het Europese Scholen Netwerk), info@codeweek.eu'
+        'GOPA Com. S.A. en EUN Partnership AISBL (het Europese Scholen Netwerk), info@codeweek.eu',
     ],
     '1-intro' => [
-        'De informatie met betrekking tot de verwerking van persoonsgegevens voor het beheer van Code Week Ambassadors, Leading Teachers en de registratie van activiteiten op de website.'
+        'De informatie met betrekking tot de verwerking van persoonsgegevens voor het beheer van Code Week Ambassadors, Leading Teachers en de registratie van activiteiten op de website.',
     ],
 
     '3-legal_process' => [
@@ -59,10 +59,10 @@ return [
         'Bovendien kan Eenheid G.2 uw contactgegevens delen met het publiek of belanghebbenden die contact met u moeten opnemen in verband met Code Week. Voor organisatoren van activiteiten: de betrokken Ambassador voor uw land of Eenheid G.2 kan de persoonsgegevens die u hebt verstrekt om een activiteit aan te melden, gebruiken om contact met u op te nemen in verband met die activiteit.',
     ],
     '8-rights' => [
-        'U hebt Eenheid G.2 toestemming gegeven voor de verwerking van uw gegevens. U kunt uw toestemming te allen tijde intrekken door Eenheid G.2 hiervan in kennis te stellen via CNECT-G2@ec.europa.eu. De intrekking is niet van invloed op de rechtmatigheid van de verwerking die heeft plaatsgevonden voordat u de toestemming hebt ingetrokken.'
+        'U hebt Eenheid G.2 toestemming gegeven voor de verwerking van uw gegevens. U kunt uw toestemming te allen tijde intrekken door Eenheid G.2 hiervan in kennis te stellen via CNECT-G2@ec.europa.eu. De intrekking is niet van invloed op de rechtmatigheid van de verwerking die heeft plaatsgevonden voordat u de toestemming hebt ingetrokken.',
     ],
 
     '10-detailed-info' => [
-        'Deze specifieke verwerking is opgenomen in het openbaar register van de DPO met de volgende referentie: DPR-EC-02631 Beheer van contactpunten voor beleid, programma’s en projecten van DG CONNECT.'
-    ]
+        'Deze specifieke verwerking is opgenomen in het openbaar register van de DPO met de volgende referentie: DPR-EC-02631 Beheer van contactpunten voor beleid, programma’s en projecten van DG CONNECT.',
+    ],
 ];

@@ -19,7 +19,7 @@ return [
         'beginner' => 'Začátečník',
         'intermediate' => 'Mírně pokročilý',
         'advanced' => 'Pokročilý',
-        '1-hour' => '1 hodina'
+        '1-hour' => '1 hodina',
     ],
     'main' => [
         'Během Evropského týdne programování, který bude probíhat od 9. do 24. října 2021, vás zveme ke splnění jedné nebo více výzev Evropského týdne programování.',
@@ -35,7 +35,7 @@ return [
         'Sdílejte svou výzvu',
         'Chtěli byste během Evropského týdne programování něco hezkého vyhrát? Pokud ano, udělejte svou výzvu virální!',
         'Po dokončení výzvy se o svůj úspěch podělte na Instagramu.',
-        'Výherci budou vybráni každý den během trvání Evropského týdne programování od 9. do 24. října a budou vyhlašováni na našem Instagramu, tak nezapomeňte pravidelně sledovat notifikace.'
+        'Výherci budou vybráni každý den během trvání Evropského týdne programování od 9. do 24. října a budou vyhlašováni na našem Instagramu, tak nezapomeňte pravidelně sledovat notifikace.',
     ],
     'share' => [
         'Jak můžu své výzvy sdílet na Instagramu?',
@@ -52,7 +52,7 @@ return [
         'Facebooku',
         'každý den připne nový příspěvek s výzvou a z komentářů pod příspěvkem vybere výherce.',
         'Jak to funguje?',
-        'Jednoduše k příspěvku přidejte komentář s odkazem na vaši práci.'
+        'Jednoduše k příspěvku přidejte komentář s odkazem na vaši práci.',
     ],
     'share-box' => [
         'Sdílejte odkaz na svou práci v',
@@ -67,18 +67,18 @@ return [
         'příspěvek s novou výzvou na své',
         'stránce na Facebooku',
         'Vy pak jednoduše k příspěvku přidejte komentář s odkazem na vaši práci',
-        'Výherci tematických výher budou vybráni každý den během trvání Evropského týdne programování od 9. do 24. října a budou vyhlašováni na našem Instagramu, tak nezapomeňte pravidelně sledovat notifikace.'
+        'Výherci tematických výher budou vybráni každý den během trvání Evropského týdne programování od 9. do 24. října a budou vyhlašováni na našem Instagramu, tak nezapomeňte pravidelně sledovat notifikace.',
     ],
     'take-part' => [
         'Proč se zúčastnit výzvy Evropského týdne programování?',
         'Můžete se zapojit do programátorských aktivit řešících určité problémy.',
         'Můžete spolupracovat s přáteli a kolegy.',
-        'Můžete šířit poslání o důležitosti programování.'
+        'Můžete šířit poslání o důležitosti programování.',
     ],
     'download' => [
         'Kliknutím',
         'sem',
-        'si tuto výzvu stáhnete jako dokument ve formátu Word'
+        'si tuto výzvu stáhnete jako dokument ve formátu Word',
     ],
     'bingo' => [
         'Zvládněte všechny výzvy',
@@ -88,6 +88,6 @@ return [
         'Sdílejte svou výzvu na sociálních sítích a vyhrajte cool tematické ceny Evropského týdne programování',
         'Jednoduše nahrajte fotku s vyplněnými řádky, sloupci, nebo celou kartou na',
         'Facebook, Instagram nebo Twitter',
-        'Nezapomeňte použít'
-    ]
+        'Nezapomeňte použít',
+    ],
 ];

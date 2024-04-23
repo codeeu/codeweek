@@ -2,7 +2,6 @@
 
 namespace App\Console\Commands;
 
-
 use App\User;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
@@ -43,17 +42,13 @@ class LoadProviders extends Command
     {
         Log::debug('Load providers');
 
-
         $providers = DB::table('social_auth_usersocialauth')
             ->get();
 
-
         foreach ($providers as $provider) {
-
 
             User::where('id', $provider->user_id)
                 ->update(['provider' => $provider->provider]);
-
 
         }
     }

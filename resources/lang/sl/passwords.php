@@ -17,6 +17,6 @@ return [
     'reset' => 'Vaše geslo je bilo ponastavljeno!',
     'sent' => 'Poslali smo vam elektronsko sporočilo s povezavo za ponastavitev gesla!',
     'token' => 'Ta žeton za ponastavitev gesla je neveljaven.',
-    'user' => "Ne moremo najti uporabnika s tem elektronskim naslovom.",
+    'user' => 'Ne moremo najti uporabnika s tem elektronskim naslovom.',
 
 ];

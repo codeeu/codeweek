@@ -21,7 +21,6 @@ class LeadingTeacherRoleSeeder extends Seeder
         // create permissions
         Permission::create(['name' => 'submit resource']);
 
-
         // create roles and assign created permissions
         $leadingTeacherRole = Role::create(['name' => 'leading teacher']);
         $leadingTeacherRole->givePermissionTo(['submit resource']);

@@ -29,8 +29,8 @@ return [
         'header' => 'Os seus dados de contacto',
         'text_1' => 'Esta informação só estará visível para ',
         'link_1' => 'os embaixadores da Semana Europeia da Programação',
-        'text_2'=> ' e os organizadores da Semana da Programação, que verificarão o seu evento antes de o mesmo aparecer no mapa e poderão contactá-lo caso seja necessário editá-lo ou para aplicar inquéritos para fins estatísticos após o evento.',
-        'contact_email' => 'O seu endereço eletrónico de contacto'
-    ], 
-    'edit' => 'Editar evento'
+        'text_2' => ' e os organizadores da Semana da Programação, que verificarão o seu evento antes de o mesmo aparecer no mapa e poderão contactá-lo caso seja necessário editá-lo ou para aplicar inquéritos para fins estatísticos após o evento.',
+        'contact_email' => 'O seu endereço eletrónico de contacto',
+    ],
+    'edit' => 'Editar evento',
 ];

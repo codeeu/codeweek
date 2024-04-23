@@ -13,5 +13,5 @@ return [
     |
     */
     'certificates_for' => 'Sertifikati za ',
-    'no_certificates' => 'Još uvek nema sertifikata.'
+    'no_certificates' => 'Još uvek nema sertifikata.',
 ];

@@ -15,9 +15,9 @@ class CreateCitiesTable extends Migration
     {
         Schema::create('cities', function (Blueprint $table) {
             $table->id();
-            $table->string("city");
-            $table->string("country");
-            $table->string("country_iso");
+            $table->string('city');
+            $table->string('country');
+            $table->string('country_iso');
             $table->double('longitude');
             $table->double('latitude');
             $table->index('country_iso');

@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,11 +14,10 @@ return [
     */
 
     'uses_cookies' => 'Lai jums internetā būtu ērtāk atrast vajadzīgo, šajā vietnē ir izmantotas sīkdatnes',
-    'accept'=>'Es pieņemu sīkdatnes',
-    'refuse'=>'Es noraidu sīkdatnes',
+    'accept' => 'Es pieņemu sīkdatnes',
+    'refuse' => 'Es noraidu sīkdatnes',
     'cookies' => 'Sīkdatnes',
-    'find_out_more_on'=>'Noskaidrojiet, ',
+    'find_out_more_on' => 'Noskaidrojiet, ',
     'how_we_use' => 'kāda ir mūsu sīkdatņu lietošanas politika un kā varat mainīt savus iestatījumus',
-
 
 ];

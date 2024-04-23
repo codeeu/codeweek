@@ -3,7 +3,6 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
@@ -20,7 +19,7 @@ class WarningEmail extends Mailable
      *
      * @return void
      */
-    public function __construct(String $msg)
+    public function __construct(string $msg)
     {
         $this->message = $msg;
     }

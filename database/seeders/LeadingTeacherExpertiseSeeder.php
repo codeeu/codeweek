@@ -57,4 +57,3 @@ class LeadingTeacherExpertiseSeeder extends Seeder
 
     }
 }
-

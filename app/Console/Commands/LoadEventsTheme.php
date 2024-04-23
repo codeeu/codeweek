@@ -45,10 +45,8 @@ class LoadEventsTheme extends Command
         DB::table('event_theme')->truncate();
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
 
-
         $old_theme = DB::table('api_event_theme')
             ->get();
-
 
         foreach ($old_theme as $old) {
 

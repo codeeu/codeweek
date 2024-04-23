@@ -16,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'Kako organizirati događanje?',
     'resources' => [
         'languages' => [
-            'Russian'=>'Ruski',
-            'Norwegian'=>'Norveški',
-            'Mandarin'=>'Mandarinski kineski',
-            'Japanese'=>'Japanski',
-            'All targeted languages' => 'Svi ciljani jezici'
+            'Russian' => 'Ruski',
+            'Norwegian' => 'Norveški',
+            'Mandarin' => 'Mandarinski kineski',
+            'Japanese' => 'Japanski',
+            'All targeted languages' => 'Svi ciljani jezici',
         ],
         'levels' => [
             'Beginner' => 'Početna razina',
@@ -31,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Niži razredi srednje škole (14 – 16)',
             'Upper secondary school (16-18)' => 'Viši razredi srednje škole (16 – 18)',
             'Higher Education' => 'Visokoškolsko obrazovanje',
-            'Other' => 'Ostalo'
+            'Other' => 'Ostalo',
         ],
         'subjects' => [
             'Art' => 'Umjetnost',
@@ -51,7 +51,7 @@ return [
             'Physics' => 'Fizika',
             'Coding' => 'Kodiranje',
             'Special Education Needs' => 'Posebne obrazovne potrebe',
-            'Other' => 'Ostalo'
+            'Other' => 'Ostalo',
         ],
         'types' => [
             'Tutorial' => 'Tutorijal',
@@ -66,7 +66,7 @@ return [
             'Toolkit' => 'Komplet alata',
             'Other' => 'Ostalo',
             'Lesson Plan' => 'Nastavni plan',
-            'Guide' => 'Vodič'
+            'Guide' => 'Vodič',
         ],
         'categories' => [
             'Coding' => 'Kodiranje',
@@ -76,8 +76,8 @@ return [
             'Making' => 'Izrada',
             'Tinkering' => 'Popravljanje',
             'Unplugged Activities' => 'Izvanmrežne aktivnosti',
-            'Other' => 'Ostalo'
-        ]
-    ]
+            'Other' => 'Ostalo',
+        ],
+    ],
 
 ];

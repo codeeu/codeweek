@@ -5,13 +5,12 @@ namespace Tests\Feature;
 use App\Audience;
 use App\Theme;
 use Carbon\Carbon;
-use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Tests\TestCase;
 
 class SearchEventTest extends TestCase
 {
     use DatabaseMigrations;
-
 
     public function setup(): void
     {
@@ -19,7 +18,6 @@ class SearchEventTest extends TestCase
         create('App\Country', [], 20);
 
     }
-
 
     /** @test */
     public function a_user_can_search_for_all_events()
@@ -35,7 +33,6 @@ class SearchEventTest extends TestCase
             ->assertSee($eventInBelgium->title)
             ->assertSee($eventNotInBelgium->title);
 
-
     }
 
     /** @test */
@@ -48,18 +45,15 @@ class SearchEventTest extends TestCase
         $eventNotInBelgium = create('App\Event', ['country_iso' => $france->iso, 'status' => 'APPROVED']);
 
         //We should return the events filtered for this country
-        $countryArr[] = (array)["iso" => "BE"];
+        $countryArr[] = (array) ['iso' => 'BE'];
         $result = $this->post('search', ['countries' => $countryArr]);
 
         //dd($result);
 
-
         $result->assertSee($eventInBelgium->title)
             ->assertDontSee($eventNotInBelgium->title);
 
-
     }
-
 
     /** @test */
     public function a_user_can_search_only_this_year_events()
@@ -71,7 +65,6 @@ class SearchEventTest extends TestCase
             ->assertSee($eventThisYear->title);
     }
 
-
     /** @test */
     public function a_user_can_search_previous_years_events()
     {
@@ -79,7 +72,7 @@ class SearchEventTest extends TestCase
         $eventThisYear = create('App\Event', ['start_date' => new Carbon('today'), 'status' => 'APPROVED']);
 
         //$this->post('search',['years'=>[Carbon::now()->year]])
-        $this->post('search', ["query" => "", 'year' => Carbon::now()->subYear(1)->year])
+        $this->post('search', ['query' => '', 'year' => Carbon::now()->subYear(1)->year])
             ->assertSee($eventLastYear->title)
             ->assertDontSee($eventThisYear->title);
 
@@ -92,7 +85,7 @@ class SearchEventTest extends TestCase
         $eventThisYear = create('App\Event', ['start_date' => new Carbon('today'), 'status' => 'APPROVED']);
 
         //$this->post('search',['years'=>[Carbon::now()->year]])
-        $this->post('search', ["query" => "", 'year' => Carbon::now()->subYear(1)->year])
+        $this->post('search', ['query' => '', 'year' => Carbon::now()->subYear(1)->year])
             ->assertSee($eventLastYear->title)
             ->assertDontSee($eventThisYear->title);
 
@@ -109,21 +102,18 @@ class SearchEventTest extends TestCase
 
     }
 
-
     /** @test */
     public function a_user_can_search_by_query_on_title()
     {
 
         $this->withExceptionHandling();
 
-
         $eventWithPython = create('App\Event', ['title' => 'Learn Python with us', 'status' => 'APPROVED']);
         $eventWithoutPython = create('App\Event', ['title' => 'Learn JAVA with us', 'status' => 'APPROVED']);
 
-        $this->post('search', ["query" => "python"])
+        $this->post('search', ['query' => 'python'])
             ->assertSee($eventWithPython->title)
             ->assertDontSee($eventWithoutPython->title);
-
 
     }
 
@@ -133,21 +123,18 @@ class SearchEventTest extends TestCase
 
         $this->withExceptionHandling();
 
-
         $eventWithCodeweek4AllCode = create('App\Event', ['codeweek_for_all_participation_code' => 'foobar', 'status' => 'APPROVED']);
         $eventWithoutCodeweek4AllCode = create('App\Event', ['title' => 'Learn JAVA with us', 'status' => 'APPROVED']);
 
-        $this->post('search', ["query" => "foobar"])
+        $this->post('search', ['query' => 'foobar'])
             ->assertSee($eventWithCodeweek4AllCode->title)
             ->assertDontSee($eventWithoutCodeweek4AllCode->title);
-
 
     }
 
     /** @test */
     public function a_user_can_search_by_theme()
     {
-
 
         create('App\Theme', [], 3);
         $eventWithTheme = create('App\Event', ['status' => 'APPROVED']);
@@ -164,7 +151,7 @@ class SearchEventTest extends TestCase
 
         $eventWithoutTheme = create('App\Event', ['status' => 'APPROVED']);
 
-        $themes = array($theme, $theme2);
+        $themes = [$theme, $theme2];
 
         $this->post('search', ['themes' => $themes])
             ->assertSee($eventWithTheme->title)
@@ -173,8 +160,6 @@ class SearchEventTest extends TestCase
             ->assertDontSee($eventWithoutTheme->title);
 
     }
-
-
 
     /** @test */
     public function a_user_can_search_by_audience()
@@ -194,7 +179,7 @@ class SearchEventTest extends TestCase
 
         $eventWithoutAudience = create('App\Event', ['status' => 'APPROVED']);
 
-        $audiences = array($audience, $audience2);
+        $audiences = [$audience, $audience2];
 
         $this->post('search', compact('audiences'))
             ->assertSee($eventWithAudience->title)
@@ -208,10 +193,8 @@ class SearchEventTest extends TestCase
     public function a_user_can_search_by_codeweek_4_all_tag()
     {
 
-        $good = create('App\Event', ["codeweek_for_all_participation_code" => "cw22-foobar", "status" => "APPROVED"]);
-        $bad = create('App\Event', ["codeweek_for_all_participation_code" => "cw22-bad", "status" => "APPROVED"]);
-
-
+        $good = create('App\Event', ['codeweek_for_all_participation_code' => 'cw22-foobar', 'status' => 'APPROVED']);
+        $bad = create('App\Event', ['codeweek_for_all_participation_code' => 'cw22-bad', 'status' => 'APPROVED']);
 
         $this->post('search', ['query' => 'cw22-foobar'])
             ->assertSee($good->title)
@@ -223,18 +206,12 @@ class SearchEventTest extends TestCase
     public function a_user_can_search_by_codeweek_4_all_tag_in_the_tag_field()
     {
 
-        $good = create('App\Event', ["codeweek_for_all_participation_code" => "cw22-foobar", "status" => "APPROVED"]);
-        $bad = create('App\Event', ["codeweek_for_all_participation_code" => "cw22-bad", "status" => "APPROVED"]);
-
-
+        $good = create('App\Event', ['codeweek_for_all_participation_code' => 'cw22-foobar', 'status' => 'APPROVED']);
+        $bad = create('App\Event', ['codeweek_for_all_participation_code' => 'cw22-bad', 'status' => 'APPROVED']);
 
         $this->post('search', ['tag' => 'cw22-foobar'])
             ->assertSee($good->title)
             ->assertDontSee($bad->title);
 
     }
-
-
 }
-
-

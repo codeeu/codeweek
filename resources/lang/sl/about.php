@@ -1,22 +1,17 @@
 <?php
 
 return [
-    'when-title' =>
-        'Letošnji evropski teden programiranja bo potekal od 14. do 27. oktobra 2024.',
-    'when-text' =>
-        '<p>Evropski teden programiranja je množično gibanje, ki slavi ustvarjalnost, reševanje težav in sodelovanje prek programiranja in drugih tehnoloških dejavnosti. Njegov namen je povečati prepoznavnost programiranja ter mladim, odraslim in starejšim pokazati, kako uresničiti zamisli s programiranjem, pojasniti ta znanja in spretnosti ter združiti motivirane ljudi v učenju.</p>',
+    'when-title' => 'Letošnji evropski teden programiranja bo potekal od 14. do 27. oktobra 2024.',
+    'when-text' => '<p>Evropski teden programiranja je množično gibanje, ki slavi ustvarjalnost, reševanje težav in sodelovanje prek programiranja in drugih tehnoloških dejavnosti. Njegov namen je povečati prepoznavnost programiranja ter mladim, odraslim in starejšim pokazati, kako uresničiti zamisli s programiranjem, pojasniti ta znanja in spretnosti ter združiti motivirane ljudi v učenju.</p>',
     'codeweek_in_numbers-title' => 'Teden programiranja v številkah',
     'codeweek_in_numbers-text' => '<p>Evropski teden programiranja je leta 2021 privabil k sodelovanju <a href="https://blog.codeweek.eu/4-million-people-created-code-with-the-help-of-eu-code-week-in-2021/">4 milijona ljudi</a> iz več kot 80 držav po vsem svetu.</p>
                     <p>Povprečna starost udeleženca je bila 11 let in 49 % udeležencev v letu 2021 je bilo žensk ali deklet. 88 % dogodkov evropskega tedna programiranja je potekalo v šolah, kar kaže, da so bila prizadevanja za okrepitev vloge učiteljev v kampanji leta 2021 uspešna.</p>',
     'run_by_volunteers-title' => 'Vodijo ga prostovoljci',
-    'run_by_volunteers-text' =>
-        '<p>Evropski teden programiranja vodijo prostovoljci. Eden ali več <a href="/ambassadors">ambasadorjev tedna programiranja</a> usklajuje pobude v svoji državi, vsakdo pa lahko organizira svojo dejavnost in jo doda na zemljevid na spletnem mestu <a href="/">codeweek.eu</a>.</p>',
+    'run_by_volunteers-text' => '<p>Evropski teden programiranja vodijo prostovoljci. Eden ali več <a href="/ambassadors">ambasadorjev tedna programiranja</a> usklajuje pobude v svoji državi, vsakdo pa lahko organizira svojo dejavnost in jo doda na zemljevid na spletnem mestu <a href="/">codeweek.eu</a>.</p>',
     'supported_by_commission-title' => 'Podpira ga Evropska komisija',
-    'supported_by_commission-text' =>
-        '<p>Evropski teden programiranja so leta 2013 uvedli mladi svetovalci za Evropsko digitalno agendo. Evropska komisija podpira evropski teden programiranja v okviru strategije za <a href="http://ec.europa.eu/priorities/digital-single-market/">enotni digitalni trg</a>, v okviru <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">akcijskega načrta za digitalno izobraževanje</a> pa posebej spodbuja šole, naj se pridružijo pobudi.</p>',
+    'supported_by_commission-text' => '<p>Evropski teden programiranja so leta 2013 uvedli mladi svetovalci za Evropsko digitalno agendo. Evropska komisija podpira evropski teden programiranja v okviru strategije za <a href="http://ec.europa.eu/priorities/digital-single-market/">enotni digitalni trg</a>, v okviru <a href="https://education.ec.europa.eu/focus-topics/digital-education/action-plan">akcijskega načrta za digitalno izobraževanje</a> pa posebej spodbuja šole, naj se pridružijo pobudi.</p>',
     'schools-title' => 'Šole',
-    'schools-text' =>
-        '<p>Šole na vseh ravneh in učitelji vseh predmetov so posebej vabljeni, da sodelujejo v evropskem tednu programiranja in tako dajo svojim učencem priložnost za raziskovanje digitalne ustvarjalnosti in programiranja. Več informacij o pobudi in tem, kako organizirati dejavnosti, najdete na spletni strani, namenjeni učiteljem: <a href="/schools">CodeWeek.eu/Schools</a></p>',
+    'schools-text' => '<p>Šole na vseh ravneh in učitelji vseh predmetov so posebej vabljeni, da sodelujejo v evropskem tednu programiranja in tako dajo svojim učencem priložnost za raziskovanje digitalne ustvarjalnosti in programiranja. Več informacij o pobudi in tem, kako organizirati dejavnosti, najdete na spletni strani, namenjeni učiteljem: <a href="/schools">CodeWeek.eu/Schools</a></p>',
     'why_coding-title' => 'Zakaj programiranje?',
     'why_coding-text' => '<p>Zaradi Pie, ki je mislila, da mora študirati pravo, čeprav je vedno uživala v matematiki in se igrala z računalniki. Zaradi Marka, ki ima zamisel za boljše družbeno omrežje, vendar ga sam ne more zgraditi. Zaradi Alice, ki sanja o izdelovanju robotov, ker ji starši ne dovolijo imeti mačke.</p>
 
@@ -32,7 +27,6 @@ return [
                         </blockquote>
                     </p>',
     'join_codeweek-title' => 'Pridružite se evropskemu tednu programiranja',
-    'join_codeweek-text' =>
-        '<p>Pridružite se evropskemu tednu programiranja in <a href="/guide">organizirajte programersko dejavnost</a> v svojem kraju. Pridružite se <a href="/codeweek4all">izzivu Code Week 4 All</a> in dejavnostim, ki povezujejo skupnosti in presegajo meje, ali pa nam pomagajte širiti vizijo tedna programiranja kot <a href="/ambassadors">ambasador evropskega tedna programiranja</a> za svojo državo!</p>',
-    'partners_and_sponsors' => 'Partnerji in sponzorji'
+    'join_codeweek-text' => '<p>Pridružite se evropskemu tednu programiranja in <a href="/guide">organizirajte programersko dejavnost</a> v svojem kraju. Pridružite se <a href="/codeweek4all">izzivu Code Week 4 All</a> in dejavnostim, ki povezujejo skupnosti in presegajo meje, ali pa nam pomagajte širiti vizijo tedna programiranja kot <a href="/ambassadors">ambasador evropskega tedna programiranja</a> za svojo državo!</p>',
+    'partners_and_sponsors' => 'Partnerji in sponzorji',
 ];

@@ -2,10 +2,8 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\ServiceProvider;
-
-
 use App\Helpers\CalendarGenerator;
+use Illuminate\Support\ServiceProvider;
 
 class CalendarServiceProvider extends ServiceProvider
 {

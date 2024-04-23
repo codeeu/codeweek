@@ -40,7 +40,7 @@ class ImportResourcesTeachCommand extends Command
     public function handle()
     {
         //Read the Excel Sheet
-        Excel::import(new ResourcesTeachImport, 'resources-teach.xlsx','excel');
-//        Excel::import(new ResourcesTeachImport, 'apple-teach-2019.xlsx','excel');
+        Excel::import(new ResourcesTeachImport, 'resources-teach.xlsx', 'excel');
+        //        Excel::import(new ResourcesTeachImport, 'apple-teach-2019.xlsx','excel');
     }
 }

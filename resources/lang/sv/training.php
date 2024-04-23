@@ -24,8 +24,8 @@ return [
             'activities' => [
                 '1' => 'Aktivitet 1 – CodyRoby för grundskolan',
                 '2' => 'Aktivitet 2 – CodyRoby för högstadiet och gymnasiet',
-                '3' => 'Aktivitet 3 – CodyRoby för gymnasiet'
-            ]
+                '3' => 'Aktivitet 3 – CodyRoby för gymnasiet',
+            ],
         ],
         '2' => [
             'title' => 'Datalogiskt tänkande och problemlösning',
@@ -38,8 +38,8 @@ return [
             'activities' => [
                 '1' => 'Aktivitet 1 – Utveckla matematiskt tänkande för grundskolan',
                 '2' => 'Aktivitet 2 – Introduktion till algoritmer för högstadiet och gymnasiet',
-                '3' => 'Aktivitet 3 – Algoritmer för gymnasiet'
-            ]
+                '3' => 'Aktivitet 3 – Algoritmer för gymnasiet',
+            ],
         ],
         '3' => [
             'title' => 'Visuell programmering – introduktion till Scratch',
@@ -54,8 +54,8 @@ return [
             'activities' => [
                 '1' => 'Aktivitet 1 – Scratch Basic för grundskolan',
                 '2' => 'Aktivitet 2 – Scratch Basic för högstadiet och gymnasiet',
-                '3' => 'Aktivitet 3 – Scratch Basic för gymnasiet'
-            ]
+                '3' => 'Aktivitet 3 – Scratch Basic för gymnasiet',
+            ],
         ],
         '4' => [
             'title' => 'Skapa lärande lekar med Scratch',
@@ -70,8 +70,8 @@ return [
             'activities' => [
                 '1' => 'Aktivitet 1 – Frågespel med Scratch för grundskolan',
                 '2' => 'Aktivitet 2 – Frågespel med Scratch för högstadiet och gymnasiet',
-                '3' => 'Aktivitet 3 – Frågespel med Scratch för gymnasiet'
-            ]
+                '3' => 'Aktivitet 3 – Frågespel med Scratch för gymnasiet',
+            ],
         ],
         '5' => [
             'title' => 'Skapande robotteknik och mekande i klassrummet',
@@ -84,8 +84,8 @@ return [
             'activities' => [
                 '1' => 'Aktivitet 1 – Tillverka en mekanisk hand av kartong för grundskolan',
                 '2' => 'Aktivitet 2 – Tillverka en mekanisk hand eller robothand för högstadiet och gymnasiet',
-                '3' => 'Aktivitet 3 – Tillverka en mekanisk hand eller robothand för gymnasiet'
-            ]
+                '3' => 'Aktivitet 3 – Tillverka en mekanisk hand eller robothand för gymnasiet',
+            ],
         ],
         '6' => [
             'title' => 'App Inventor och apputveckling',
@@ -95,8 +95,8 @@ return [
             'activities' => [
                 '1' => 'Aktivitet 1: Titel – för låg- och mellanstadiet',
                 '2' => 'Aktivitet 2: Titel – för högstadiet',
-                '3' => 'Aktivitet 3: Titel – för gymnasiet'
-            ]
+                '3' => 'Aktivitet 3: Titel – för gymnasiet',
+            ],
         ],
         '7' => [
             'title' => 'Experimentera och skapa',
@@ -106,8 +106,8 @@ return [
             'activities' => [
                 '1' => 'Aktivitet 1: Titel – för låg- och mellanstadiet',
                 '2' => 'Aktivitet 2: Titel – för högstadiet',
-                '3' => 'Aktivitet 3: Titel – för gymnasiet'
-            ]
+                '3' => 'Aktivitet 3: Titel – för gymnasiet',
+            ],
         ],
         '8' => [
             'title' => 'Kodning för alla ämnen',
@@ -120,8 +120,8 @@ return [
                 '1' => 'Aktivitet 1: Robotteknik och inkludering för låg- och mellanstadiet i STEM',
                 '2' => 'Aktivitet 2: Musik är att koda',
                 '3' => 'Aktivitet 3: Experimentera och koda med Makey Makey',
-                '4' => 'Aktivitet 4: En vardagsalgoritm för CLIL-lektionen'
-            ]
+                '4' => 'Aktivitet 4: En vardagsalgoritm för CLIL-lektionen',
+            ],
         ],
         '9' => [
             'title' => 'Tillverka en självgående maskin med micro:bit',
@@ -136,7 +136,7 @@ return [
                 '1' => 'Morsealfabetet med micro:bit, för grundskolan ',
                 '2' => 'Escape room med micro:bit, för högstadiet',
                 '3' => 'Tillverka en självgående maskin, för gymnasiet',
-            ]
+            ],
         ],
         '10' => [
             'title' => 'Kreativ kodning med Python',
@@ -158,36 +158,36 @@ Med Python kan eleverna skapa frågesporter om historiska händelser, lösa mate
             'links' => [
                 'title' => 'Andra relaterade resurser',
                 '1' => [
-                    "url" => "https://docs.python.org/3/library/",
-                    "title" => "Python Standard Library",
-                    "description" => "Samling av förbyggd kod och moduler (t.ex. turtle-modul, matematikmodul etc.).",
+                    'url' => 'https://docs.python.org/3/library/',
+                    'title' => 'Python Standard Library',
+                    'description' => 'Samling av förbyggd kod och moduler (t.ex. turtle-modul, matematikmodul etc.).',
                 ],
                 '2' => [
-                    "url" => "https://codecombat.com/",
-                    "title" => "CodeCombat",
-                    "description" => "Pedagogiskt videospel för att lära sig programmeringskoncept.",
+                    'url' => 'https://codecombat.com/',
+                    'title' => 'CodeCombat',
+                    'description' => 'Pedagogiskt videospel för att lära sig programmeringskoncept.',
                 ],
                 '3' => [
-                    "url" => "https://projects.raspberrypi.org/en/codeclub",
-                    "title" => "CodeClub projects",
-                    "description" => "Från nybörjare till avancerade, steg-för-steg-programmeringsprojekt för barn.",
+                    'url' => 'https://projects.raspberrypi.org/en/codeclub',
+                    'title' => 'CodeClub projects',
+                    'description' => 'Från nybörjare till avancerade, steg-för-steg-programmeringsprojekt för barn.',
                 ],
                 '4' => [
-                    "url" => "https://inventwithpython.com/invent4thed/",
-                    "title" => "Invent your own computer games with Python",
-                    "description" => "Bok som lär dig hur du programmerar dina egna datorspel med Python.",
+                    'url' => 'https://inventwithpython.com/invent4thed/',
+                    'title' => 'Invent your own computer games with Python',
+                    'description' => 'Bok som lär dig hur du programmerar dina egna datorspel med Python.',
                 ],
                 '5' => [
-                    "url" => "https://www.codewars.com/",
-                    "title" => "CodeWars",
-                    "description" => "Utbildningsmiljö där elever och lärare kan träna sig genom en serie utmaningar.",
+                    'url' => 'https://www.codewars.com/',
+                    'title' => 'CodeWars',
+                    'description' => 'Utbildningsmiljö där elever och lärare kan träna sig genom en serie utmaningar.',
                 ],
                 '6' => [
-                    "url" => "https://hourofpython.com/",
-                    "title" => "Hour of Python",
-                    "description" => "Samling av inledande Python-lektioner (både textbaserade och i block) med interaktiva Trinkets.",
+                    'url' => 'https://hourofpython.com/',
+                    'title' => 'Hour of Python',
+                    'description' => 'Samling av inledande Python-lektioner (både textbaserade och i block) med interaktiva Trinkets.',
                 ],
-            ]
+            ],
         ],
         '11' => [
             'title' => 'Kodning för inkludering',
@@ -201,41 +201,40 @@ I den här videon kommer Code Week-teamet att visa dig några praktiska, enkla o
                 '1' => 'Äggkartongen Unplugged',
                 '2' => 'En mycket smart mus',
                 '3' => 'Stjärna på att göra stjärnor',
-            ]
+            ],
         ],
 
-        "12" => [
-            "title" => "Kodning för hållbara utvecklingsmål",
-            "author" => "av Francisco Javier Masero, Cristina Nicolaita och Erviola Konomi",
-            "text" => [
-                "1" => "Traditionell utbildning ger elever få möjligheter att förstå och lösa verkliga världsproblem som global klimatförändring, jämställdhet, hunger, fattigdom eller god hälsa och välbefinnande.",
-                "2" => "Sustainable Developement Goals (SDG) – Målen för hållbar utveckling, är kärnan i agendan för 2030 som gäller hållbar utveckling, antagen av alla Förenta Nationerna som en färdplan för att uppnå fred och välstånd på planeten samt uppmuntra global utveckling. Lärare kan använda SDG i klassrummet som ett verktyg för eleverna att utveckla sitt kritiska tänkande, men också för att hjälpa dem att hitta sin identitet och syfte. Genom att kombinera grundläggande element i kodning och beräkningstänkande med SDG:er ökar elevernas självförtroende och du kommer att hjälpa dem att utveckla sin kreativitet, entreprenörsanda, problemlösning eller kommunikationsförmåga. ",
-                "3" => "I aktiviteterna nedan kommer eleverna att tillämpa principerna Scratch, ASCII-kodning och unplugged-kodning på ämnen för global och social relevans idag. Lärare kommer att öka medvetenheten om målen för hållbar utveckling samtidigt som de hjälper eleverna att utveckla empati, aktivt medborgarskap och prosociala färdigheter på ett roligt och engagerande sätt",
-                "4" => "Dessa lektionsplaner fokuserar på en av SDG:erna:",
-                "5" => "Mål 3 för hållbar utveckling: Säkerställa hälsosamma liv och främja välbefinnande för alla i alla åldrar",
-                "6" => "Mål 5 för hållbar utveckling: Uppnå jämställdhet och stärka alla kvinnor och flickor",
-                "7" => "Mål 13 för hållbar utveckling: Vidta brådskande åtgärder för att bekämpa klimatförändringarna och dess effekter",
+        '12' => [
+            'title' => 'Kodning för hållbara utvecklingsmål',
+            'author' => 'av Francisco Javier Masero, Cristina Nicolaita och Erviola Konomi',
+            'text' => [
+                '1' => 'Traditionell utbildning ger elever få möjligheter att förstå och lösa verkliga världsproblem som global klimatförändring, jämställdhet, hunger, fattigdom eller god hälsa och välbefinnande.',
+                '2' => 'Sustainable Developement Goals (SDG) – Målen för hållbar utveckling, är kärnan i agendan för 2030 som gäller hållbar utveckling, antagen av alla Förenta Nationerna som en färdplan för att uppnå fred och välstånd på planeten samt uppmuntra global utveckling. Lärare kan använda SDG i klassrummet som ett verktyg för eleverna att utveckla sitt kritiska tänkande, men också för att hjälpa dem att hitta sin identitet och syfte. Genom att kombinera grundläggande element i kodning och beräkningstänkande med SDG:er ökar elevernas självförtroende och du kommer att hjälpa dem att utveckla sin kreativitet, entreprenörsanda, problemlösning eller kommunikationsförmåga. ',
+                '3' => 'I aktiviteterna nedan kommer eleverna att tillämpa principerna Scratch, ASCII-kodning och unplugged-kodning på ämnen för global och social relevans idag. Lärare kommer att öka medvetenheten om målen för hållbar utveckling samtidigt som de hjälper eleverna att utveckla empati, aktivt medborgarskap och prosociala färdigheter på ett roligt och engagerande sätt',
+                '4' => 'Dessa lektionsplaner fokuserar på en av SDG:erna:',
+                '5' => 'Mål 3 för hållbar utveckling: Säkerställa hälsosamma liv och främja välbefinnande för alla i alla åldrar',
+                '6' => 'Mål 5 för hållbar utveckling: Uppnå jämställdhet och stärka alla kvinnor och flickor',
+                '7' => 'Mål 13 för hållbar utveckling: Vidta brådskande åtgärder för att bekämpa klimatförändringarna och dess effekter',
             ],
-            "activities" => [
-                "1" => "Karateka-projektet: Att känna till karate genom programmering för grundskolan, lägre och gymnasieskolan",
-                "2" => "Hållbara utvecklingsmål och kodning för klimatförändringar, för grundskolan",
-                "3" => "Kodning för jämställdhet, för gymnasieskolan",
-            ]
+            'activities' => [
+                '1' => 'Karateka-projektet: Att känna till karate genom programmering för grundskolan, lägre och gymnasieskolan',
+                '2' => 'Hållbara utvecklingsmål och kodning för klimatförändringar, för grundskolan',
+                '3' => 'Kodning för jämställdhet, för gymnasieskolan',
+            ],
         ],
 
-
-        "13" => [
-            "title" => "Introduktion till artificiell intelligens i klassrummet i klassrummet",
-            "author" => "av Artur Coelho och Marjana Prifti Skenduli",
-            "text" => [
-                "1" => "Artificiell intelligens (AI) påverkar många områden i det dagliga livet: den korrigerar automatiskt texten du skriver på din telefon, väljer musiken som din favoritmusikapp spelar och den kommer ihåg dina lösenord när du har glömt dem. AI syftar till en kombination av maskininlärning, robotik och algoritmer, med applikationer inom alla områden: från datavetenskap till tillverkning och från medicin till mode. Den har därför en obestridlig plats i våra liv och i våra samhällen, och spelar en nyckelroll i vetenskapens utveckling. Och som alla andra viktiga fenomen i våra liv kommer studenter att dra nytta av att lära sig om det. Men hur lär man mig om en så komplex sak som AI?",
-                "2" => "Denna inlärningsbit hjälper dig att förklara för studenterna vad AI är, och vilken roll spelar den i elevernas liv. Dessa aktiviteter är utformade för icke-experter att enkelt förstå innehållet och effektivt kunna bryta ner komplexa termer till lättförståeliga idéer. Med dessa lektionsplaner kan du hjälpa eleverna lära sig användningen av AI och några av mekanismerna bakom den. Dessa aktiviteter är utformade för att eleverna ska utveckla sina analytiska och kritiskt tänkande färdigheter: till exempel i Marjanas aktivitet utvecklar studenterna en klassificeringspipeline. Dessa aktiviteter hjälper också eleverna att förstå de olika tillämpningarna av AI: i Arturs aktivitet lär de sig om länken mellan AI och konst, och hur AI kan användas för att förbättra visuellt uttryck. Med dessa aktiviteter kommer eleverna också att reflektera över farorna med AI och dess inverkan"
+        '13' => [
+            'title' => 'Introduktion till artificiell intelligens i klassrummet i klassrummet',
+            'author' => 'av Artur Coelho och Marjana Prifti Skenduli',
+            'text' => [
+                '1' => 'Artificiell intelligens (AI) påverkar många områden i det dagliga livet: den korrigerar automatiskt texten du skriver på din telefon, väljer musiken som din favoritmusikapp spelar och den kommer ihåg dina lösenord när du har glömt dem. AI syftar till en kombination av maskininlärning, robotik och algoritmer, med applikationer inom alla områden: från datavetenskap till tillverkning och från medicin till mode. Den har därför en obestridlig plats i våra liv och i våra samhällen, och spelar en nyckelroll i vetenskapens utveckling. Och som alla andra viktiga fenomen i våra liv kommer studenter att dra nytta av att lära sig om det. Men hur lär man mig om en så komplex sak som AI?',
+                '2' => 'Denna inlärningsbit hjälper dig att förklara för studenterna vad AI är, och vilken roll spelar den i elevernas liv. Dessa aktiviteter är utformade för icke-experter att enkelt förstå innehållet och effektivt kunna bryta ner komplexa termer till lättförståeliga idéer. Med dessa lektionsplaner kan du hjälpa eleverna lära sig användningen av AI och några av mekanismerna bakom den. Dessa aktiviteter är utformade för att eleverna ska utveckla sina analytiska och kritiskt tänkande färdigheter: till exempel i Marjanas aktivitet utvecklar studenterna en klassificeringspipeline. Dessa aktiviteter hjälper också eleverna att förstå de olika tillämpningarna av AI: i Arturs aktivitet lär de sig om länken mellan AI och konst, och hur AI kan användas för att förbättra visuellt uttryck. Med dessa aktiviteter kommer eleverna också att reflektera över farorna med AI och dess inverkan',
             ],
-            "activities" => [
-                "1" => "Mänsklig-AI- konst, för grundskolan",
-                "2" => "Lär maskiner att klassificera: Introduktion till övervakad maskininlärning för högstadiet",
-                "3" => "Lär maskiner att klassificera: IIntroduktion till övervakad maskininlärning för gymnasiet",
-            ]
+            'activities' => [
+                '1' => 'Mänsklig-AI- konst, för grundskolan',
+                '2' => 'Lär maskiner att klassificera: Introduktion till övervakad maskininlärning för högstadiet',
+                '3' => 'Lär maskiner att klassificera: IIntroduktion till övervakad maskininlärning för gymnasiet',
+            ],
         ],
         '14' => [
 
@@ -247,7 +246,7 @@ I den här videon kommer Code Week-teamet att visa dig några praktiska, enkla o
 
                 '1' => 'De senaste årens framsteg för AI har varit imponerande tack vare dess snabba framsteg inom datorkraft och tillgången på stora mängder data. Detta har lett till betydande investeringar i AI-forskning och snabb expansion av AI-industrin, vilket gör AI till en stor teknisk revolution i vår tid. AI finns överallt omkring oss. Det har blivit en del av vår vardag, så mycket att vi ibland inte ser det som AI: vi använder online-rekommendation, ansiktsavkänning, säkerhetssystem och röstassistenter nästan varje dag. Men hur är det med utbildning? ',
 
-                '2' => 'AI har enorm potential för att möjliggöra nya sätt att undervisa och lära, och att förbättra elevernas lärande. Denna utbildningsbit hjälper dig att integrera autentiska AI-aktiviteter i din undervisning och hjälpa dig att förbereda dina elever för ett liv och en karriär i en värld formad av AI. Dessa övningar har utformats för att elever ska utveckla sin nyfikenhet, problemlösning och kreativitetsförmåga: till exempel i Adils aktivitet lär sig eleverna om algoritmer och neurala nätverk och de uppmuntras att skapa sitt eget neurala nätverk, för att visualisera en AI-hjärna. Georgia guidar dina elever i en steg-för-steg-utveckling av en chattbot. Eleverna kommer att bygga sin egen chattbot, förbereda datamängder för frågor och svar och träna den så att den kan svara på frågor om Covid-19. I Marcos övning kommer eleverna att utforska fördelarna och utmaningarna med intelligenta maskiner i vardagen och arbetet. Vilka är riskerna med AI som vi måste överväga? Vilka konsekvenser kommer AI att ha för framtidens arbete? Vilka jobb kommer att erbjudas eleverna när de i framtiden kommer ut på arbetsmarknaden?'
+                '2' => 'AI har enorm potential för att möjliggöra nya sätt att undervisa och lära, och att förbättra elevernas lärande. Denna utbildningsbit hjälper dig att integrera autentiska AI-aktiviteter i din undervisning och hjälpa dig att förbereda dina elever för ett liv och en karriär i en värld formad av AI. Dessa övningar har utformats för att elever ska utveckla sin nyfikenhet, problemlösning och kreativitetsförmåga: till exempel i Adils aktivitet lär sig eleverna om algoritmer och neurala nätverk och de uppmuntras att skapa sitt eget neurala nätverk, för att visualisera en AI-hjärna. Georgia guidar dina elever i en steg-för-steg-utveckling av en chattbot. Eleverna kommer att bygga sin egen chattbot, förbereda datamängder för frågor och svar och träna den så att den kan svara på frågor om Covid-19. I Marcos övning kommer eleverna att utforska fördelarna och utmaningarna med intelligenta maskiner i vardagen och arbetet. Vilka är riskerna med AI som vi måste överväga? Vilka konsekvenser kommer AI att ha för framtidens arbete? Vilka jobb kommer att erbjudas eleverna när de i framtiden kommer ut på arbetsmarknaden?',
 
             ],
 
@@ -261,80 +260,78 @@ I den här videon kommer Code Week-teamet att visa dig några praktiska, enkla o
 
                 '3' => 'Att leva i en tid av ”Smarta maskiner”: Utmaningar och möjligheter för gymnasieskolan',
 
-            ]
-
-        ],
-
-        "15" => [
-            "title" => "Utvinning av Mediakunskap",
-            "author" => "av Marijana Smolčec, Tea Horvatić och Sanja Božinović",
-            "text" => [
-                "Mediakunskap utbildning har aldrig varit viktigare för dagens studenter. Studenter i alla åldrar behöver skaffa sig relevanta förmågor, kunskap och attityder för att kunna navigera vår media-rika värld. Mediakunskap förmågor kommer att hjälpa dem att använda trovärdigt online innehåll och känna igen vilseledande källor för information. De kommer att förstå hur man fakta-kontrollerar information de hittar online och kritiskt granska den. De kommer att öka sin uppmärksamhet på korrekt användning av kreativa arbeten och applicera samma inlärning som när de skapar sitt egna kreativa material.",
-                "Denna Inlärnings Bit kommer att möjliggöra för dig att implementera olika strategier och tekniker för att göra så att dina studenter blir mer mediakunniga. I Marijana’s aktivitet, lär sig studenterna hur man använder Webb innehåll säkert och ansvarsfullt. De introduceras för olika typer av licenser och de utvecklar en enkel app för att demonstrera hur man skapar kreativt arbete korrekt. I Tea´s aktivitet, ger sig studenterna ut på ett uppdrag för att lära sig om clickbaits. Genom engagerande uppgifter utforskar studenterna strategier för att identifiera och avslöja clickbait och lära sig hur man undviker dem. Sanja låter studenterna utforska och kritiskt analysera och utvärdera Webb-innehåll, dess relevans, tillförlitlighet, ursprung och syfte. De lär sig hur man hitta pålitliga källor online och hur man känner igen falsk information online.",
-                "I lektionsplanerna nedanför, kommer du att hitta inspiration och engagerande aktiviteter för att stärka studentens förmågor i mediakunskap",
             ],
-            "activities" => [
-                "1" => "Är det gratis när det är på Internet?",
-                "2" => "Att klicka eller inte klicka",
-                "3" => "Fakta-kontroll",
-            ]
+
         ],
-        "16" => [
-            "title" => "BERÄTTA MED HEDY",
-            "author" => "av Felienne Hermans",
-            "text" => [
-                "Har dina elever redan lärt sig bemästra ett visuellt programmeringsspråk, men känner sig inte redo att fördjupa sig mer i ett programmeringsspråk som är textbaserat? Då är den här infomodulen något för dig och dina elever, för här får de hjälp att ta det stora steget från ett visuellt till ett textbaserat programmeringsspråk. Infomodulen <strong>Berätta med Hedy</strong> består av tre lektionsplaner där du använder Hedy – ett gradvis programmeringsspråk som lär barnen programmera.",
 
-                "Hedy är riktat till barn som vill komma igång med textprogrammeringsspråk, men som kanske tycker att Python är för komplicerat att starta med. I gradvisa språk används olika språknivåer, med fler begrepp och syntaktisk komplexitet för varje nivå. När eleverna nått slutet av raden med Hedy-nivåer bemästrar de en underuppsättning syntaktiskt giltig Python.",
-
-                "I den här infomodulen hittar du inspirerande och engagerande aktiviteter så att dina elever effektivt kan använda textbaserade programmeringsspråk. Genom att skapa sina egna interaktiva berättelser lär de sig gradvis programmering, utan att behöva ta allt på en gång. I lektionsplanen för låg- och mellanstadiet får eleverna en introduktion till programmeringens grundläggande begrepp. Lektionsplanen för högstadiet tillför fler programmeringsbegrepp, medan eleverna i lektionsplanen för gymnasiet kan programmera mer komplicerade berättelser och aktiviteter.",
-
-                "Kolla upp den interaktiva berättelsen nedan för att se hur läsarna kan vara med i berättelsen och hur det gör dem mer aktivt engagerade."
+        '15' => [
+            'title' => 'Utvinning av Mediakunskap',
+            'author' => 'av Marijana Smolčec, Tea Horvatić och Sanja Božinović',
+            'text' => [
+                'Mediakunskap utbildning har aldrig varit viktigare för dagens studenter. Studenter i alla åldrar behöver skaffa sig relevanta förmågor, kunskap och attityder för att kunna navigera vår media-rika värld. Mediakunskap förmågor kommer att hjälpa dem att använda trovärdigt online innehåll och känna igen vilseledande källor för information. De kommer att förstå hur man fakta-kontrollerar information de hittar online och kritiskt granska den. De kommer att öka sin uppmärksamhet på korrekt användning av kreativa arbeten och applicera samma inlärning som när de skapar sitt egna kreativa material.',
+                'Denna Inlärnings Bit kommer att möjliggöra för dig att implementera olika strategier och tekniker för att göra så att dina studenter blir mer mediakunniga. I Marijana’s aktivitet, lär sig studenterna hur man använder Webb innehåll säkert och ansvarsfullt. De introduceras för olika typer av licenser och de utvecklar en enkel app för att demonstrera hur man skapar kreativt arbete korrekt. I Tea´s aktivitet, ger sig studenterna ut på ett uppdrag för att lära sig om clickbaits. Genom engagerande uppgifter utforskar studenterna strategier för att identifiera och avslöja clickbait och lära sig hur man undviker dem. Sanja låter studenterna utforska och kritiskt analysera och utvärdera Webb-innehåll, dess relevans, tillförlitlighet, ursprung och syfte. De lär sig hur man hitta pålitliga källor online och hur man känner igen falsk information online.',
+                'I lektionsplanerna nedanför, kommer du att hitta inspiration och engagerande aktiviteter för att stärka studentens förmågor i mediakunskap',
             ],
-            "activities" => [
-                "1" => "Gör din egen interaktiva berättelse med Hedy för låg- och mellanstadieelever",
-                "2" => "Gör din egen interaktiva berättelse med Hedy för högstadieelever",
-                "3" => "Gör din egen interaktiva berättelse med Hedy för gymnasieelever",
-            ]
-        ],
-        "17" => [
-            "title" => "Känn koden",
-            "author" => "av Alenka Miljević",
-            "text" => [
-                "Socialt och känslomässigt välmående handlar om förmågan att vara motståndskraftig, att veta hur man ska hantera sina känslor och svara på andras känslor, att utveckla meningsfulla relationer med andra, att skapa känslor som leder till att man mår bra och att bygga upp ett eget känslomässigt stödnätverk.  De sociala och känslomässiga förmågor som unga lär sig i skolan hjälper dem att bygga upp sin motståndskraft och skapar ett mönster för hur de kommer att hantera sin fysiska och mentala hälsa under hela livet. (Europarådet)",
-                "I infomodulen Känn koden får du hjälp att gynna dina elevers sociala och känslomässiga välmående genom att de får känna igen, förklara, förstå och svara på positiva och negativa känslor och stämningar så de bygger upp empati och motståndskraft.  I den här infomodulen hittar du inspirerande och engagerande aktiviteter som hjälper dina elever att utveckla förmågan att hantera olika känslor med hjälp av kodning. Eleverna får lära sig att uttrycka sina känslor och hur de ska reagera på sin omgivnings känslor med hjälp av en Bee-Bot-robot.",
-                "Infomodulen Känn koden består av tre lektionsplaneringar där man använder sig av utbildningsroboten Bee-Bot för att skapa aktiviteter som uppmuntrar eleverna att prata om känslor och utveckla empati. I lektionsplaneringen för grundskolan programmerar eleverna en Bee-Bot för att prata om känslor så som sorg, glädje, rädsla, ilska och upptäcker anledningar till att de och deras omgivning upplever de här känslorna. I lektionsplaneringen för högstadiet uppmuntras eleverna till att programmera en Bee-Bot, känna igen sina egna och omgivningens känslor, förstå vad som orsakade dem och hur de ska svara på dem. I lektionsplaneringen för gymnasiet kan eleverna styra en Bee-Bot och komma på berättelser om känslor, motståndskraft och empati.",
-                "Om du inte har en utbildningsrobot i ditt klassrum så innehåller den här infomodulen även idéer om aktiviteter utan uppkoppling som främjar utvecklingen av sociala och känslomässiga förmågor. Den interaktiva berättelsen nedan ger dig en kort översikt över aktiviteter som du kan göra i klassrummet:"
+            'activities' => [
+                '1' => 'Är det gratis när det är på Internet?',
+                '2' => 'Att klicka eller inte klicka',
+                '3' => 'Fakta-kontroll',
             ],
-            "activities" => [
-                "1" => "Koda – Känn – Lär dig för grundskoleelever",
-                "2" => "Jag har inte ett hjärta av sten för högstadieelever",
-                "3" => "Koda mig efter humör för gymnasieelever",
-            ]
-        ],"18" => [
+        ],
+        '16' => [
+            'title' => 'BERÄTTA MED HEDY',
+            'author' => 'av Felienne Hermans',
+            'text' => [
+                'Har dina elever redan lärt sig bemästra ett visuellt programmeringsspråk, men känner sig inte redo att fördjupa sig mer i ett programmeringsspråk som är textbaserat? Då är den här infomodulen något för dig och dina elever, för här får de hjälp att ta det stora steget från ett visuellt till ett textbaserat programmeringsspråk. Infomodulen <strong>Berätta med Hedy</strong> består av tre lektionsplaner där du använder Hedy – ett gradvis programmeringsspråk som lär barnen programmera.',
 
-            "title" => "SOS Vatten",
-"author" => "av Francisco Delgado Cecilia",
-"text" => [
+                'Hedy är riktat till barn som vill komma igång med textprogrammeringsspråk, men som kanske tycker att Python är för komplicerat att starta med. I gradvisa språk används olika språknivåer, med fler begrepp och syntaktisk komplexitet för varje nivå. När eleverna nått slutet av raden med Hedy-nivåer bemästrar de en underuppsättning syntaktiskt giltig Python.',
 
-    "SOS Vatten är ett svar på behovet av att lösa problemet med vattenföroreningar. Trots de ansträngningar som har gjorts under de senaste åren finns det fortfarande 2 miljarder människor runt om i världen som inte har tillgång till säkert dricksvatten. Det innebär att det sjätte målet för hållbar utveckling i Agenda 2030, att alla människor ska ha tillgång till säkert förvaltat vatten och sanitet senast 2030, är långt ifrån att uppnås. Samma sak gäller för mål 14, hav och marina resurser, som syftar till att bevara och nyttja haven och de marina resurserna på ett hållbart sätt i syfte att uppnå en hållbar utveckling.",
+                'I den här infomodulen hittar du inspirerande och engagerande aktiviteter så att dina elever effektivt kan använda textbaserade programmeringsspråk. Genom att skapa sina egna interaktiva berättelser lär de sig gradvis programmering, utan att behöva ta allt på en gång. I lektionsplanen för låg- och mellanstadiet får eleverna en introduktion till programmeringens grundläggande begrepp. Lektionsplanen för högstadiet tillför fler programmeringsbegrepp, medan eleverna i lektionsplanen för gymnasiet kan programmera mer komplicerade berättelser och aktiviteter.',
 
-                "Denna infomodul är inriktad på den relevanta och aktuella frågan att mäta vattenkvalitet och nya föroreningar som hotar vattenkvaliteten. Eleverna får möjlighet att undersöka och hitta lösningar på verkliga problem kopplade till vattnet och miljön, och då kan de också utveckla förmågor som insamling av information, kritiskt tänkande och problemlösning.",
+                'Kolla upp den interaktiva berättelsen nedan för att se hur läsarna kan vara med i berättelsen och hur det gör dem mer aktivt engagerade.',
+            ],
+            'activities' => [
+                '1' => 'Gör din egen interaktiva berättelse med Hedy för låg- och mellanstadieelever',
+                '2' => 'Gör din egen interaktiva berättelse med Hedy för högstadieelever',
+                '3' => 'Gör din egen interaktiva berättelse med Hedy för gymnasieelever',
+            ],
+        ],
+        '17' => [
+            'title' => 'Känn koden',
+            'author' => 'av Alenka Miljević',
+            'text' => [
+                'Socialt och känslomässigt välmående handlar om förmågan att vara motståndskraftig, att veta hur man ska hantera sina känslor och svara på andras känslor, att utveckla meningsfulla relationer med andra, att skapa känslor som leder till att man mår bra och att bygga upp ett eget känslomässigt stödnätverk.  De sociala och känslomässiga förmågor som unga lär sig i skolan hjälper dem att bygga upp sin motståndskraft och skapar ett mönster för hur de kommer att hantera sin fysiska och mentala hälsa under hela livet. (Europarådet)',
+                'I infomodulen Känn koden får du hjälp att gynna dina elevers sociala och känslomässiga välmående genom att de får känna igen, förklara, förstå och svara på positiva och negativa känslor och stämningar så de bygger upp empati och motståndskraft.  I den här infomodulen hittar du inspirerande och engagerande aktiviteter som hjälper dina elever att utveckla förmågan att hantera olika känslor med hjälp av kodning. Eleverna får lära sig att uttrycka sina känslor och hur de ska reagera på sin omgivnings känslor med hjälp av en Bee-Bot-robot.',
+                'Infomodulen Känn koden består av tre lektionsplaneringar där man använder sig av utbildningsroboten Bee-Bot för att skapa aktiviteter som uppmuntrar eleverna att prata om känslor och utveckla empati. I lektionsplaneringen för grundskolan programmerar eleverna en Bee-Bot för att prata om känslor så som sorg, glädje, rädsla, ilska och upptäcker anledningar till att de och deras omgivning upplever de här känslorna. I lektionsplaneringen för högstadiet uppmuntras eleverna till att programmera en Bee-Bot, känna igen sina egna och omgivningens känslor, förstå vad som orsakade dem och hur de ska svara på dem. I lektionsplaneringen för gymnasiet kan eleverna styra en Bee-Bot och komma på berättelser om känslor, motståndskraft och empati.',
+                'Om du inte har en utbildningsrobot i ditt klassrum så innehåller den här infomodulen även idéer om aktiviteter utan uppkoppling som främjar utvecklingen av sociala och känslomässiga förmågor. Den interaktiva berättelsen nedan ger dig en kort översikt över aktiviteter som du kan göra i klassrummet:',
+            ],
+            'activities' => [
+                '1' => 'Koda – Känn – Lär dig för grundskoleelever',
+                '2' => 'Jag har inte ett hjärta av sten för högstadieelever',
+                '3' => 'Koda mig efter humör för gymnasieelever',
+            ],
+        ], '18' => [
 
-                "Lektionsplanerna innehåller praktiska och kreativa aktiviteter, som programmering i Scratch, introduktion till maskininlärning och artificiell intelligens med LearningML, samt att konstruera styrda fordon med LEGO-satser för insamling av vattenprover och analys av deras pH-värden. Genom dessa aktiviteter kan eleverna tillämpa sina kunskaper och förmågor i praktiken i en interaktiv och lekfull miljö, vilket höjer deras motivation och intresse för projektet.",
+            'title' => 'SOS Vatten',
+            'author' => 'av Francisco Delgado Cecilia',
+            'text' => [
 
-                "För att genomföra denna infomodul föreslås att man utför alla tre aktiviteterna med eleverna, så man fullföljer hela projektet och det blir en mer meningsfull och motiverande studieprocess. Aktiviteterna kan dock genomföras var och en för sig."
+                'SOS Vatten är ett svar på behovet av att lösa problemet med vattenföroreningar. Trots de ansträngningar som har gjorts under de senaste åren finns det fortfarande 2 miljarder människor runt om i världen som inte har tillgång till säkert dricksvatten. Det innebär att det sjätte målet för hållbar utveckling i Agenda 2030, att alla människor ska ha tillgång till säkert förvaltat vatten och sanitet senast 2030, är långt ifrån att uppnås. Samma sak gäller för mål 14, hav och marina resurser, som syftar till att bevara och nyttja haven och de marina resurserna på ett hållbart sätt i syfte att uppnå en hållbar utveckling.',
 
-],
-"activities" => [
-    "1" => "SOS Vatten med Scratch",
-                "2" => "SOS Vatten med maskininlärning",
-                "3" => "SOS Vatten med robotteknik"
-            ]
+                'Denna infomodul är inriktad på den relevanta och aktuella frågan att mäta vattenkvalitet och nya föroreningar som hotar vattenkvaliteten. Eleverna får möjlighet att undersöka och hitta lösningar på verkliga problem kopplade till vattnet och miljön, och då kan de också utveckla förmågor som insamling av information, kritiskt tänkande och problemlösning.',
+
+                'Lektionsplanerna innehåller praktiska och kreativa aktiviteter, som programmering i Scratch, introduktion till maskininlärning och artificiell intelligens med LearningML, samt att konstruera styrda fordon med LEGO-satser för insamling av vattenprover och analys av deras pH-värden. Genom dessa aktiviteter kan eleverna tillämpa sina kunskaper och förmågor i praktiken i en interaktiv och lekfull miljö, vilket höjer deras motivation och intresse för projektet.',
+
+                'För att genomföra denna infomodul föreslås att man utför alla tre aktiviteterna med eleverna, så man fullföljer hela projektet och det blir en mer meningsfull och motiverande studieprocess. Aktiviteterna kan dock genomföras var och en för sig.',
+
+            ],
+            'activities' => [
+                '1' => 'SOS Vatten med Scratch',
+                '2' => 'SOS Vatten med maskininlärning',
+                '3' => 'SOS Vatten med robotteknik',
+            ],
 
         ],
-
-
 
     ],
     'download_video_script' => 'Hämta videoskript',
@@ -344,7 +341,7 @@ I den här videon kommer Code Week-teamet att visa dig några praktiska, enkla o
         'title' => 'Glöm inte att lägga till din aktivitet på Code Week-kartan!',
         'text' => '<p>Du kan lätt organisera en lektion, hålla öppet hus eller anordna ett evenemang på din skola. Hitta ett datum och registrera din aktivitet på <a href="/events">Code Week-kartan</a>. Alla arrangörer får ett certifikat för sina insatser.</p>
 
-<p>Gå med i <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">lärargruppen för EU Code Week på Facebook</a> om du vill få kontakt med en internationell grupp av engagerade lärare! Gå ett steg längre och samarbeta med andra skolor i ditt land eller något annat genom att delta i <a href="/codeweek4all">Code Week 4 All challenge</a>.</p>'
-    ]
+<p>Gå med i <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">lärargruppen för EU Code Week på Facebook</a> om du vill få kontakt med en internationell grupp av engagerade lärare! Gå ett steg längre och samarbeta med andra skolor i ditt land eller något annat genom att delta i <a href="/codeweek4all">Code Week 4 All challenge</a>.</p>',
+    ],
 
 ];

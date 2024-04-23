@@ -24,8 +24,8 @@ return [
             'activities' => [
                 '1' => 'Toiminta 1 – CodyRoby alakouluihin',
                 '2' => 'Toiminta 2 – CodyRoby yläkouluihin',
-                '3' => 'Toiminta 3 – CodyRoby toiseen asteen oppilaitoksiin'
-            ]
+                '3' => 'Toiminta 3 – CodyRoby toiseen asteen oppilaitoksiin',
+            ],
         ],
         '2' => [
             'title' => 'Laskennallinen ajattelu ja ongelmanratkaisu',
@@ -38,8 +38,8 @@ return [
             'activities' => [
                 '1' => 'Toiminta 1 – Matemaattisen päättelykyvyn kehittäminen alakouluissa',
                 '2' => 'Toiminta 2 – Algoritmeihin tutustuminen yläkouluissa',
-                '3' => 'Toiminta 3 – Algoritmit toisen asteen oppilaitoksissa'
-            ]
+                '3' => 'Toiminta 3 – Algoritmit toisen asteen oppilaitoksissa',
+            ],
         ],
         '3' => [
             'title' => 'Visuaalinen ohjelmointi – johdanto Scratch-ohjelmointikieleen',
@@ -54,8 +54,8 @@ return [
             'activities' => [
                 '1' => 'Toiminta 1 – Scratch Basic alakouluihin',
                 '2' => 'Toiminta 2 – Scratch Basic yläkouluihin',
-                '3' => 'Toiminta 3 – Scratch Basic toiseen asteen oppilaitoksiin'
-            ]
+                '3' => 'Toiminta 3 – Scratch Basic toiseen asteen oppilaitoksiin',
+            ],
         ],
         '4' => [
             'title' => 'Opetuksellisten pelien kehittäminen Scratchillä',
@@ -70,8 +70,8 @@ return [
             'activities' => [
                 '1' => 'Toiminta 1 - Kysymyksiä ja vastauksia -peli Scratchillä alakouluissa',
                 '2' => 'Toiminta 2 - Kysymyksiä ja vastauksia -peli Scratchillä yläkouluissa',
-                '3' => 'Toiminta 3 - Kysymyksiä ja vastauksia -peli Scratchillä toisen asteen oppilaitoksissa'
-            ]
+                '3' => 'Toiminta 3 - Kysymyksiä ja vastauksia -peli Scratchillä toisen asteen oppilaitoksissa',
+            ],
         ],
         '5' => [
             'title' => 'Robotiikka ja nikkarointi kouluissa',
@@ -84,8 +84,8 @@ return [
             'activities' => [
                 '1' => 'Toiminta 1 - Mekaanisen pahvikäden valmistaminen alakouluissa',
                 '2' => 'Toiminta 2 - Mekaanisen käden tai robottikäden valmistaminen yläkouluissa',
-                '3' => 'Toiminta 3 - Mekaanisen käden tai robottikäden valmistaminen toisen asteen oppilaitoksissa'
-            ]
+                '3' => 'Toiminta 3 - Mekaanisen käden tai robottikäden valmistaminen toisen asteen oppilaitoksissa',
+            ],
         ],
         '6' => [
             'title' => 'App Inventor ja sovellusten kehittäminen',
@@ -95,8 +95,8 @@ return [
             'activities' => [
                 '1' => 'Tapahtuma 1 – Otsikko, alakoulu',
                 '2' => 'Tapahtuma 2 – Otsikko, yläkoulu',
-                '3' => 'Tapahtuma 3 – Otsikko, lukio'
-            ]
+                '3' => 'Tapahtuma 3 – Otsikko, lukio',
+            ],
         ],
         '7' => [
             'title' => 'Rakentelu ja valmistaminen',
@@ -106,8 +106,8 @@ return [
             'activities' => [
                 '1' => 'Tapahtuma 1 – Otsikko, alakoulu',
                 '2' => 'Tapahtuma 2 – Otsikko, yläkoulu',
-                '3' => 'Tapahtuma 3 – Otsikko, lukio'
-            ]
+                '3' => 'Tapahtuma 3 – Otsikko, lukio',
+            ],
         ],
         '8' => [
             'title' => 'Koodausta kaikkiin oppiaineisiin',
@@ -120,8 +120,8 @@ return [
                 '1' => 'Tapahtuma 1 Robotiikkaa ja osallistamista alakoulun STEM-aineissa',
                 '2' => 'Tapahtuma 2 Musisoidaan koodaamalla',
                 '3' => 'Tapahtuma 3 Rakentelua ja koodausta Makey Makey  rakennussarjalla',
-                '4' => 'Tapahtuma 4 Tosielämän algoritmi CLIL-tunnille'
-            ]
+                '4' => 'Tapahtuma 4 Tosielämän algoritmi CLIL-tunnille',
+            ],
         ],
         '9' => [
             'title' => 'Rakenna automaatti micro:bitin avulla',
@@ -136,7 +136,7 @@ Tällä videolla Koninklijke Visio -keskuksen tietotekniikan opettaja Pauline Ma
                 '1' => 'Morseaakkoset micro:bitin avulla: peruskoulun ala-aste',
                 '2' => 'Pakohuone micro:bitin avulla: peruskoulun yläaste',
                 '3' => 'Automaatin rakentaminen: toisen asteen oppilaitokset',
-            ]
+            ],
         ],
         '10' => [
             'title' => 'Luovaa ohjelmointia Pythonilla',
@@ -158,36 +158,36 @@ Pythonin avulla oppilaat voivat suunnitella historiallisiin tapahtumiin liittyvi
             'links' => [
                 'title' => 'Muita aiheeseen liittyviä aineistoja',
                 '1' => [
-                    "url" => "https://docs.python.org/3/library/",
-                    "title" => "Python-vakiokirjasto",
-                    "description" => "Kokoelma valmiiksi kirjoitettuja koodeja ja moduuleja (esim. turtle-moduuli, matematiikkamoduuli jne.).",
+                    'url' => 'https://docs.python.org/3/library/',
+                    'title' => 'Python-vakiokirjasto',
+                    'description' => 'Kokoelma valmiiksi kirjoitettuja koodeja ja moduuleja (esim. turtle-moduuli, matematiikkamoduuli jne.).',
                 ],
                 '2' => [
-                    "url" => "https://codecombat.com/",
-                    "title" => "CodeCombat",
-                    "description" => "Pedagoginen videopeli ohjelmointikäsitteiden opetteluun.",
+                    'url' => 'https://codecombat.com/',
+                    'title' => 'CodeCombat',
+                    'description' => 'Pedagoginen videopeli ohjelmointikäsitteiden opetteluun.',
                 ],
                 '3' => [
-                    "url" => "https://projects.raspberrypi.org/en/codeclub",
-                    "title" => "CodeClub projects",
-                    "description" => "Vaihe vaiheelta eteneviä ohjelmointiharjoitteita lapsille, aloittelijoista edistyneisiin.",
+                    'url' => 'https://projects.raspberrypi.org/en/codeclub',
+                    'title' => 'CodeClub projects',
+                    'description' => 'Vaihe vaiheelta eteneviä ohjelmointiharjoitteita lapsille, aloittelijoista edistyneisiin.',
                 ],
                 '4' => [
-                    "url" => "https://inventwithpython.com/invent4thed/",
-                    "title" => "Invent your own computer games with Python",
-                    "description" => "Verkkokirja, jonka avulla opit ohjelmoimaan omia tietokonepelejä Pythonilla.",
+                    'url' => 'https://inventwithpython.com/invent4thed/',
+                    'title' => 'Invent your own computer games with Python',
+                    'description' => 'Verkkokirja, jonka avulla opit ohjelmoimaan omia tietokonepelejä Pythonilla.',
                 ],
                 '5' => [
-                    "url" => "https://www.codewars.com/",
-                    "title" => "CodeWars",
-                    "description" => "Koulutusyhteisö, jossa opiskelijat ja opettajat voivat harjoitusten avulla läpäistä erilaisia haasteita.",
+                    'url' => 'https://www.codewars.com/',
+                    'title' => 'CodeWars',
+                    'description' => 'Koulutusyhteisö, jossa opiskelijat ja opettajat voivat harjoitusten avulla läpäistä erilaisia haasteita.',
                 ],
                 '6' => [
-                    "url" => "https://hourofpython.com/",
-                    "title" => "Hour of Python",
-                    "description" => "Kokoelma Python-ohjelmointikieleen perehdyttäviä johdantokursseja (sekä tekstipohjaisia että lohkoperusteisia), joissa käytetään interaktiivisia Trinket-ohjelmointiympäristöjä.",
+                    'url' => 'https://hourofpython.com/',
+                    'title' => 'Hour of Python',
+                    'description' => 'Kokoelma Python-ohjelmointikieleen perehdyttäviä johdantokursseja (sekä tekstipohjaisia että lohkoperusteisia), joissa käytetään interaktiivisia Trinket-ohjelmointiympäristöjä.',
                 ],
-            ]
+            ],
         ],
         '11' => [
             'title' => 'Koodaus osallistamisen edistäjänä',
@@ -201,40 +201,40 @@ Tällä videolla koodausviikon tiimi esittelee muutamia helppoja ja hauskoja kä
                 '1' => 'Munakennopeli',
                 '2' => 'Erittäin älykäs hiiri',
                 '3' => 'Tähdentekijä',
-            ]
+            ],
         ],
 
-        "12" => [
-            "title" => "Kestävän kehityksen tavoitteiden koodaaminen ",
-            "author" => "Tekijät: Francisco Javier Masero, Cristina Nicolaita ja Erviola Konomi",
-            "text" => [
-                "1" => "Perinteinen koulutus tarjoaa vain vähän mahdollisuuksia ymmärtää ja ratkaista todellisen maailman ongelmia, kuten maailmanlaajuista ilmastonmuutosta, sukupuolten välistä tasa-arvoa, nälänhätää, köyhyyttä tai hyvää terveyttä ja hyvinvointia.",
-                "2" => "Kestävän kehityksen tavoitteet (SDG:t) ovat kestävän kehityksen tavoiteohjelman 2030 ydin. Kaikki Yhdistyneiden kansakuntien jäsenvaltiot ovat hyväksyneet sen etenemissuunnitelmana rauhan ja vaurauden saavuttamiseksi planeetallamme kannustamalla maailmanlaajuista kehitystä. Opettajat voivat käyttää luokkahuoneessa kestävän kehityksen tavoitteita oppilaiden kriittistä ajattelua kehittävänä työkaluna mutta myös apuvälineenä heidän identiteettinsä ja tarkoituksensa tunnistamisessa. Yhdistämällä koodauksen ja laskennallisen ajattelun peruselementtejä kestävän kehityksen tavoitteisiin lisäät oppilaidesi luottamusta ja autat heitä kehittämään heidän luovuuttaan, yrittäjyyttään ja ongelmanratkaisu- ja viestintätaitojaan.",
-                "3" => "Alla olevissa tehtävissä oppilaat soveltavat Scratch-, ASCII- ja unplugged-ohjelmoinnin periaatteita tänä päivänä olennaisiin globaaleihin ja sosiaalisiin aiheisiin. Opettajat lisäävät tietoisuutta kestävän kehityksen tavoitteista ja auttavat oppilaita kehittämään empatiaa, aktiivista kansalaisuutta ja prososiaalisia taitoja hauskalla ja mukaansatempaavalla tavalla.",
-                "4" => "Jokainen oppituntisuunnitelma keskittyy yhteen kestävän kehityksen tavoitteista:",
-                "5" => "Kestävän kehityksen tavoite 3: Taata terveellinen elämä ja hyvinvointi kaikenikäisille",
-                "6" => "Kestävän kehityksen tavoite 5: Saavuttaa sukupuolten välinen tasa-arvo sekä vahvistaa naisten ja tyttöjen oikeuksia ja mahdollisuuksia",
-                "7" => "Kestävän kehityksen tavoite 13: Toimia kiireellisesti ilmastonmuutosta ja sen vaikutuksia vastaan",
+        '12' => [
+            'title' => 'Kestävän kehityksen tavoitteiden koodaaminen ',
+            'author' => 'Tekijät: Francisco Javier Masero, Cristina Nicolaita ja Erviola Konomi',
+            'text' => [
+                '1' => 'Perinteinen koulutus tarjoaa vain vähän mahdollisuuksia ymmärtää ja ratkaista todellisen maailman ongelmia, kuten maailmanlaajuista ilmastonmuutosta, sukupuolten välistä tasa-arvoa, nälänhätää, köyhyyttä tai hyvää terveyttä ja hyvinvointia.',
+                '2' => 'Kestävän kehityksen tavoitteet (SDG:t) ovat kestävän kehityksen tavoiteohjelman 2030 ydin. Kaikki Yhdistyneiden kansakuntien jäsenvaltiot ovat hyväksyneet sen etenemissuunnitelmana rauhan ja vaurauden saavuttamiseksi planeetallamme kannustamalla maailmanlaajuista kehitystä. Opettajat voivat käyttää luokkahuoneessa kestävän kehityksen tavoitteita oppilaiden kriittistä ajattelua kehittävänä työkaluna mutta myös apuvälineenä heidän identiteettinsä ja tarkoituksensa tunnistamisessa. Yhdistämällä koodauksen ja laskennallisen ajattelun peruselementtejä kestävän kehityksen tavoitteisiin lisäät oppilaidesi luottamusta ja autat heitä kehittämään heidän luovuuttaan, yrittäjyyttään ja ongelmanratkaisu- ja viestintätaitojaan.',
+                '3' => 'Alla olevissa tehtävissä oppilaat soveltavat Scratch-, ASCII- ja unplugged-ohjelmoinnin periaatteita tänä päivänä olennaisiin globaaleihin ja sosiaalisiin aiheisiin. Opettajat lisäävät tietoisuutta kestävän kehityksen tavoitteista ja auttavat oppilaita kehittämään empatiaa, aktiivista kansalaisuutta ja prososiaalisia taitoja hauskalla ja mukaansatempaavalla tavalla.',
+                '4' => 'Jokainen oppituntisuunnitelma keskittyy yhteen kestävän kehityksen tavoitteista:',
+                '5' => 'Kestävän kehityksen tavoite 3: Taata terveellinen elämä ja hyvinvointi kaikenikäisille',
+                '6' => 'Kestävän kehityksen tavoite 5: Saavuttaa sukupuolten välinen tasa-arvo sekä vahvistaa naisten ja tyttöjen oikeuksia ja mahdollisuuksia',
+                '7' => 'Kestävän kehityksen tavoite 13: Toimia kiireellisesti ilmastonmuutosta ja sen vaikutuksia vastaan',
             ],
-            "activities" => [
-                "1" => "Karateka-projekti: Karaten opettelu ohjelmoinnin avulla, peruskoulun ala- ja yläaste ja toisen asteen oppilaitokset",
-                "2" => "Kestävän kehityksen tavoitteet ja ilmastonmuutoksen koodaaminen, peruskoulun ala-aste",
-                "3" => " Sukupuolten tasa-arvon koodaaminen, toisen asteen oppilaitokset",
-            ]
+            'activities' => [
+                '1' => 'Karateka-projekti: Karaten opettelu ohjelmoinnin avulla, peruskoulun ala- ja yläaste ja toisen asteen oppilaitokset',
+                '2' => 'Kestävän kehityksen tavoitteet ja ilmastonmuutoksen koodaaminen, peruskoulun ala-aste',
+                '3' => ' Sukupuolten tasa-arvon koodaaminen, toisen asteen oppilaitokset',
+            ],
         ],
 
-        "13" => [
-            "title" => "Johdanto tekoälyyn luokkahuoneessa",
-            "author" => "tekijät: Artur Coelho ja Marjana Prifti Skenduli",
-            "text" => [
-                "1" => "Tekoäly (AI) vaikuttaa moniin jokapäiväisen elämän osa-alueisiin: se korjaa puhelimeesi kirjoittamasi tekstin automaattisesti, valitsee suosikkimusiikkisovelluksesi soittaman musiikin ja muistaa salasanasi, kun olet ne unohtanut. AI eli tekoäly viittaa koneoppimisen, robotiikan ja algoritmien yhdistelmään kaikilla aloilla: aina tietojenkäsittelystä valmistukseen ja lääketieteestä muotiin. Siksi sillä on kiistaton paikka elämissämme ja yhteiskunnissamme ja keskeinen rooli tieteen kehityksessä. Kuten mistä tahansa tärkeästä ilmiöstä elämässämme, oppilaat hyötyvät sen oppimisesta. Mutta kuinka opettaa niinkin monimutkaista asiaa kuin tekoäly?",
-                "2" => "Tämä oppimismoduuli auttaa sinua selittämään oppilaille, mitä tekoäly on ja mikä rooli sillä on oppilaiden elämässä. Nämä tehtävät on suunniteltu muille kuin asiantuntijoille, jotta he ymmärtäisivät helposti sisällön ja voisivat tehokkaasti hajottaa monimutkaisetkin termit helposti ymmärrettäviksi. Näiden tuntisuunnitelmien avulla voit helposti auttaa oppilaita oppimaan tekoälyn käytön ja joitain sen taustalla olevia mekanismeja. Nämä harjoitukset on suunniteltu oppilaille, jotta he voisivat kehittää analyyttisen ja kriittisen ajattelun taitojaan: esimerkiksi Marjanan harjoituksessa oppilaat suunnittelevat luokitteluputken. Nämä harjoitukset auttavat oppilaita myös ymmärtämään tekoälyn monipuolisia käyttötapoja: Arturin harjoituksessa he oppivat linkistä tekoälyn ja taiteen välillä ja siitä kuinka tekoälyä voidaan käyttää visuaalisen ilmaisun parantamiseen. Näiden harjoitusten avulla oppilaat pohtivat myös tekoälyn vaaroja ja niiden vaikutuksia."
+        '13' => [
+            'title' => 'Johdanto tekoälyyn luokkahuoneessa',
+            'author' => 'tekijät: Artur Coelho ja Marjana Prifti Skenduli',
+            'text' => [
+                '1' => 'Tekoäly (AI) vaikuttaa moniin jokapäiväisen elämän osa-alueisiin: se korjaa puhelimeesi kirjoittamasi tekstin automaattisesti, valitsee suosikkimusiikkisovelluksesi soittaman musiikin ja muistaa salasanasi, kun olet ne unohtanut. AI eli tekoäly viittaa koneoppimisen, robotiikan ja algoritmien yhdistelmään kaikilla aloilla: aina tietojenkäsittelystä valmistukseen ja lääketieteestä muotiin. Siksi sillä on kiistaton paikka elämissämme ja yhteiskunnissamme ja keskeinen rooli tieteen kehityksessä. Kuten mistä tahansa tärkeästä ilmiöstä elämässämme, oppilaat hyötyvät sen oppimisesta. Mutta kuinka opettaa niinkin monimutkaista asiaa kuin tekoäly?',
+                '2' => 'Tämä oppimismoduuli auttaa sinua selittämään oppilaille, mitä tekoäly on ja mikä rooli sillä on oppilaiden elämässä. Nämä tehtävät on suunniteltu muille kuin asiantuntijoille, jotta he ymmärtäisivät helposti sisällön ja voisivat tehokkaasti hajottaa monimutkaisetkin termit helposti ymmärrettäviksi. Näiden tuntisuunnitelmien avulla voit helposti auttaa oppilaita oppimaan tekoälyn käytön ja joitain sen taustalla olevia mekanismeja. Nämä harjoitukset on suunniteltu oppilaille, jotta he voisivat kehittää analyyttisen ja kriittisen ajattelun taitojaan: esimerkiksi Marjanan harjoituksessa oppilaat suunnittelevat luokitteluputken. Nämä harjoitukset auttavat oppilaita myös ymmärtämään tekoälyn monipuolisia käyttötapoja: Arturin harjoituksessa he oppivat linkistä tekoälyn ja taiteen välillä ja siitä kuinka tekoälyä voidaan käyttää visuaalisen ilmaisun parantamiseen. Näiden harjoitusten avulla oppilaat pohtivat myös tekoälyn vaaroja ja niiden vaikutuksia.',
             ],
-            "activities" => [
-                "1" => "Ihmisen ja tekoälyn luoma taide, peruskoulun ala-aste",
-                "2" => "Luokittelun opettaminen koneelle: johdatus ohjattuun koneoppimiseen, peruskoulun yläaste",
-                "3" => "Luokittelun opettaminen koneelle: johdatus ohjattuun koneoppimiseen, toisen asteen oppilaitokset",
-            ]
+            'activities' => [
+                '1' => 'Ihmisen ja tekoälyn luoma taide, peruskoulun ala-aste',
+                '2' => 'Luokittelun opettaminen koneelle: johdatus ohjattuun koneoppimiseen, peruskoulun yläaste',
+                '3' => 'Luokittelun opettaminen koneelle: johdatus ohjattuun koneoppimiseen, toisen asteen oppilaitokset',
+            ],
         ],
 
         '14' => [
@@ -242,87 +242,85 @@ Tällä videolla koodausviikon tiimi esittelee muutamia helppoja ja hauskoja kä
             'author' => 'Tekijät: Adil Tugyan, Georgia Lascaris ja Marco Neves',
             'text' => [
                 '1' => 'Tekoälyn kehitys viime vuosina on ollut vaikuttavaa laskentatehossa tapahtuneen nopean kehityksen ja suurten tietomäärien saatavuuden ansiosta. Tämä on johtanut huomattaviin investointeihin tekoälyn tutkimuksessa ja tekoäly-alan nopeassa laajentumisessa, mikä on tehnyt tekoälystä aikamme merkittävän teknologisen vallankumouksen. Tekoäly on kaikkialla ympärillämme. Siitä on tullut osa jokapäiväisiä rutiinejamme niin paljon, että emme joskus ajattele sitä tekoälynä: käytämme verkkosuosituksia, kasvojentunnistusta, turvajärjestelmiä ja digitaalisia puheavustajia melkein joka päivä. Mutta entä koulutus?',
-                '2' => 'Tekoälyllä on valtavat mahdollisuudet mahdollistaa uusia opetus- ja oppimistapoja ja parantaa oppilaiden oppimista. Tämä oppimismoduuli auttaa sinua integroimaan aitoja tekoälyn aktiviteetteja opetukseen ja valmistamaan oppilaitasi elämään ja uraan tekoälyn muokkaamassa maailmassa. Nämä tehtävät on suunniteltu oppilaille, jotta he voivat kehittää uteliaisuuttaan sekä ongelmanratkaisu- ja luovuustaitojaan: esimerkiksi Adilin tehtävässä oppilaat oppivat algoritmeista ja hermoverkoista ja heitä kannustetaan luomaan oma hermoverkko tekoälyn aivojen visualisoimiseksi. Georgia opastaa oppilaita chatbotin vaiheittaisessa kehittämisessä. Oppilaat rakentavat oman chatbotin, valmistavat tietoaineistoja kysymyksistä ja vastauksista ja kouluttavat bottia, jotta se voi vastata Covid-19:ää koskeviin kysymyksiin. Marcon aktiviteetissa oppilaat tutkivat älykkäiden koneiden etuja ja haasteita jokapäiväisessä elämässä ja työssä. Mitkä ovat tekoälyn riskit, jotka meidän on otettava huomioon? Mitä vaikutuksia tekoälyllä on työn tulevaisuuteen? Mitä työpaikkoja heille tarjotaan, kun he siirtyvät tulevaisuudessa työmarkkinoille?'
+                '2' => 'Tekoälyllä on valtavat mahdollisuudet mahdollistaa uusia opetus- ja oppimistapoja ja parantaa oppilaiden oppimista. Tämä oppimismoduuli auttaa sinua integroimaan aitoja tekoälyn aktiviteetteja opetukseen ja valmistamaan oppilaitasi elämään ja uraan tekoälyn muokkaamassa maailmassa. Nämä tehtävät on suunniteltu oppilaille, jotta he voivat kehittää uteliaisuuttaan sekä ongelmanratkaisu- ja luovuustaitojaan: esimerkiksi Adilin tehtävässä oppilaat oppivat algoritmeista ja hermoverkoista ja heitä kannustetaan luomaan oma hermoverkko tekoälyn aivojen visualisoimiseksi. Georgia opastaa oppilaita chatbotin vaiheittaisessa kehittämisessä. Oppilaat rakentavat oman chatbotin, valmistavat tietoaineistoja kysymyksistä ja vastauksista ja kouluttavat bottia, jotta se voi vastata Covid-19:ää koskeviin kysymyksiin. Marcon aktiviteetissa oppilaat tutkivat älykkäiden koneiden etuja ja haasteita jokapäiväisessä elämässä ja työssä. Mitkä ovat tekoälyn riskit, jotka meidän on otettava huomioon? Mitä vaikutuksia tekoälyllä on työn tulevaisuuteen? Mitä työpaikkoja heille tarjotaan, kun he siirtyvät tulevaisuudessa työmarkkinoille?',
             ],
             'activities' => [
                 'title' => 'Alla olevien tuntisuunnitelmien avulla oppilaat oppivat älykkäistä koneista hauskalla ja mukaansatempaavalla tavalla.',
                 '1' => 'Tekoäly ja sen hermoverkot, peruskoulun ala-asteen oppilaat',
                 '2' => 'Oma Covid-19-chatbottini, peruskoulun yläasteen oppilaat',
                 '3' => 'Asuminen “älykkäiden koneiden” aikakaudella: haasteet ja mahdollisuudet, toisen asteen oppilaitoksen oppilaat',
-            ]
-        ],
-
-        "15" => [
-            "title" => "Medialukutaito",
-            "author" => "Kirjoittajat, Marijana Smolčec, Tea Horvatić ja Sanja Božinović",
-            "text" => [
-                " Medialukutaito ei ole koskaan ollut tärkeämpää nykypäivän opiskelijoille. Kaiken ikäisten opiskelijoiden on hankittava tarvittavat taidot, tiedot ja asenteet voidakseen liikkua mediarikkaassa maailmassa. Medialukutaidot auttavat heitä käyttämään uskottavaa verkkosisältöä ja tunnistamaan harhaanjohtavat tietolähteet. He ymmärtävät kuinka tarkistaa verkossa löytämänsä tiedot ja tulkita niitä kriittisesti. He lisäävät tietoisuuttaan luovan työn oikeasta käytöstä ja soveltavat oppimistaan luodessaan omaa luovaa sisältöään.",
-                " Tämän oppimisbitin avulla voit toteuttaa erilaisia strategioita ja tekniikoita, joiden avulla opiskelijat voivat tulla medialukutaitoisiksi. Marijanan toiminnassa opiskelijat oppivat käyttämään verkkosisältöä turvallisesti ja vastuullisesti. Heidät tutustutetaan erityyppisiin lisensseihin ja he kehittävät yksinkertaisen keinon osoittamaan, kuinka luovaa työtä voidaan jakaa oikein. Tea-toiminnassa oppilaat aloittavat tehtävän oppia klikkaus houkuttimista. Kiinnostavien tehtävien kautta opiskelijat tutkivat strategioita klikki houkuttimien tunnistamiseksi ja paljastamiseksi ja oppivat välttämään niitä. Sanja antaa opiskelijoille mahdollisuuden tutkia, analysoida ja arvioida kriittisesti verkkosisältöä, sen merkitystä, tarkkuutta, alkuperää ja tarkoitusta. He oppivat löytämään luotettavia lähteitä verkosta ja tunnistamaan vääriä internet-tietoja. ",
-                " Alla olevista oppituntisuunnitelmista löydät inspiroivia ja kiinnostavia aktiviteetteja opiskelijoiden medialukutaidon parantamiseksi: ",
             ],
-            "activities" => [
-                "1" => " Onko se ilmaista, jos se on Internetissä?",
-                "2" => "Klikata, vai eikö klikata?",
-                "3" => "Faktojen tarkastus",
-            ]
         ],
 
-        "16" => [
-            "title" => "TARINAN LUOMINEN HEDYLLÄ",
-            "author" => "Felienne Hermans",
-            "text" => [
-                "Onko visuaalinen ohjelmointikieli oppilaillesi ja opiskelijoillesi jo tuttu juttu, mutta he eivät ole vielä syventyneet tekstipohjaiseen ohjelmointikieleen? Tämän kurssin avulla he voivat siirtyä visuaalisesta ohjelmointikielestä tekstipohjaiseen ohjelmointikieleen. <strong>Tarinan luominen Hedyllä</strong> -kurssi koostuu kolmesta tuntisuunnitelmasta, joissa opetellaan käyttämään Hedyä – vaiheittain etenevää ohjelmointikieltä, jolla voidaan opettaa lapsille ohjelmointia.",
-
-                "Hedy on tarkoitettu lapsille ja nuorille, jotka haluavat tutustua tekstipohjaisiin ohjelmointikieliin mutta joille Python voi olla vielä liian monimutkainen. Vaiheittaisessa ohjelmointikielessä käytetään eri kielitasoja niin, että jokaisella tasolla mukaan tulee uusia käsitteitä ja monimutkaisempia syntaktisia elementtejä. Korkeimmalle Hedy-tasolle päästyään oppilaat ja opiskelijat osaavat koodata Python-ohjelmointikielellä hyvin toimivan syntaktisen osajoukon.",
-
-                "Kurssi sisältää innostavia ja mielenkiintoisia tehtäviä, joiden avulla oppilaat ja opiskelijat oppivat käyttämään tekstipohjaisia ohjelmointikieliä. Luomalla omia interaktiivisia tarinoitaan he oppivat ohjelmointia vaiheittain, eikä kaikkea tarvitse opetella kerralla. Alaluokkien tuntisuunnitelmassa oppilaille esitellään ohjelmoinnin peruskäsitteet. Yläluokkien tuntisuunnitelmassa opitaan lisää käsitteitä, ja toisen asteen tuntisuunnitelmassa opiskelijat ohjelmoivat jo monimutkaisempia tarinoita ja tehtäviä.",
-
-                "Katso alla olevasta interaktiivisesta tarinasta, miten lukijat voivat osallistua tarinaan ja miten se tukee aktiivista osallistumista."
+        '15' => [
+            'title' => 'Medialukutaito',
+            'author' => 'Kirjoittajat, Marijana Smolčec, Tea Horvatić ja Sanja Božinović',
+            'text' => [
+                ' Medialukutaito ei ole koskaan ollut tärkeämpää nykypäivän opiskelijoille. Kaiken ikäisten opiskelijoiden on hankittava tarvittavat taidot, tiedot ja asenteet voidakseen liikkua mediarikkaassa maailmassa. Medialukutaidot auttavat heitä käyttämään uskottavaa verkkosisältöä ja tunnistamaan harhaanjohtavat tietolähteet. He ymmärtävät kuinka tarkistaa verkossa löytämänsä tiedot ja tulkita niitä kriittisesti. He lisäävät tietoisuuttaan luovan työn oikeasta käytöstä ja soveltavat oppimistaan luodessaan omaa luovaa sisältöään.',
+                ' Tämän oppimisbitin avulla voit toteuttaa erilaisia strategioita ja tekniikoita, joiden avulla opiskelijat voivat tulla medialukutaitoisiksi. Marijanan toiminnassa opiskelijat oppivat käyttämään verkkosisältöä turvallisesti ja vastuullisesti. Heidät tutustutetaan erityyppisiin lisensseihin ja he kehittävät yksinkertaisen keinon osoittamaan, kuinka luovaa työtä voidaan jakaa oikein. Tea-toiminnassa oppilaat aloittavat tehtävän oppia klikkaus houkuttimista. Kiinnostavien tehtävien kautta opiskelijat tutkivat strategioita klikki houkuttimien tunnistamiseksi ja paljastamiseksi ja oppivat välttämään niitä. Sanja antaa opiskelijoille mahdollisuuden tutkia, analysoida ja arvioida kriittisesti verkkosisältöä, sen merkitystä, tarkkuutta, alkuperää ja tarkoitusta. He oppivat löytämään luotettavia lähteitä verkosta ja tunnistamaan vääriä internet-tietoja. ',
+                ' Alla olevista oppituntisuunnitelmista löydät inspiroivia ja kiinnostavia aktiviteetteja opiskelijoiden medialukutaidon parantamiseksi: ',
             ],
-            "activities" => [
-                "1" => "Luo oma interaktiivinen tarinasi Hedyllä alaluokkien oppilaiden kanssa",
-                "2" => "Luo oma interaktiivinen tarinasi Hedyllä yläluokkien oppilaiden kanssa",
-                "3" => "Luo oma interaktiivinen tarinasi Hedyllä toisen asteen opiskelijoiden kanssa",
-            ]
-        ],
-        "17" => [
-            "title" => "Tunne koodi",
-            "author" => "Alenka Miljević ",
-            "text" => [
-                "Sosiaalisen ja emotionaalisen hyvinvoinnin edellytyksenä on kyky sopeutua, taito hallita omia tunteita ja vastata toisten tunteisiin sekä kyky luoda mielekkäitä ihmissuhteita, edistää myönteisiä tunteita ja rakentaa oma emotionaalinen tukiverkosto. Koulussa opittavat sosiaaliset ja emotionaaliset taidot auttavat oppilaita kehittämään omaa sopeutumiskykyään ja luovat perustan fyysisen ja henkisen terveyden hallintaan loppuelämän ajaksi (Euroopan neuvosto).",
-                "Tunne koodi -oppimismoduuli auttaa edistämään sosiaalista ja emotionaalista hyvinvointia. Oppilaat tunnistavat, selittävät ja ymmärtävät myönteisiä ja kielteisiä tunteita ja tunnetiloja ja reagoivat niihin, mikä kasvattaa myötätuntoa ja sopeutumiskykyä.  Moduuli sisältää innostavia ja mielenkiintoisia tehtäviä, joiden avulla oppilaat kehittävät taitoja erilaisten tunteiden käsittelemiseen koodausta käyttämällä. Oppilaat oppivat ilmaisemaan tunteitaan ja muiden tunteisiin reagoimista Bee-Bot-robotin avulla.",
-                "Tunne koodi -oppimismoduuli sisältää kolme tuntisuunnitelmaa, joissa käytetään Bee-Bot-oppimisrobottia. Tehtävät kannustavat oppilaita puhumaan tunteista ja kehittämään myötätuntoa. Alaluokkien tuntisuunnitelmassa oppilaat ohjelmoivat Bee-Botia ja puhuvat tunteista, kuten surusta, ilosta, pelosta ja vihasta, ja löytävät syitä, miksi he ja muut oppilaat kokevat näitä tunteita. Yläluokkien tuntisuunnitelmassa oppilaita kannustetaan ohjelmoimaan Bee-Botia, tunnistamaan omia ja muiden oppilaiden tunteita sekä ymmärtämään, mikä ne aiheutti ja miten niihin voi reagoida. Toisen asteen tuntisuunnitelmassa opiskelijat ohjaavat Bee-Botia ja keksivät tarinoita tunteista, sopeutumiskyvystä ja myötätunnosta.",
-                "Jos käytössä ei ole oppimisrobottia, oppimismoduuli sisältää myös ideoita ilman laitteita tehtäviin harjoituksiin, jotka kehittävät sosiaalisia ja emotionaalisia taitoja. Alla oleva interaktiivinen tarina sisältää lyhyen esittelyn luokassa tehtävistä harjoituksista:"
+            'activities' => [
+                '1' => ' Onko se ilmaista, jos se on Internetissä?',
+                '2' => 'Klikata, vai eikö klikata?',
+                '3' => 'Faktojen tarkastus',
             ],
-            "activities" => [
-                "1" => "Koodaa – tunne – opi alaluokkien oppilaille",
-                "2" => "Sydämeni ei ole kiveä yläluokkien oppilaille",
-                "3" => "Koodaa minut tunteeseen toisen asteen opiskelijoille",
-            ]
-        ],"18" => [
-
-            "title" => "Vesistöjen SOS-hätätila",
-"author" => "tekijä Francisco Delgado Cecilia",
-"text" => [
-
-    "Vesistöjen SOS-hätätila on vastaus tarpeeseen kehittää ratkaisuja vesistöjen saastumiseen. Viime vuosien pyrkimyksistä huolimatta maailmassa on yhä kaksi miljardia ihmistä, joilla ei ole käytettävissään puhdasta juomavettä. Toisin sanoen Agenda 2030 -ohjelman kestävän kehityksen tavoite 6, jonka mukaan vuoteen 2030 mennessä pitäisi varmistaa turvallisen veden ja sanitaation saatavuus kaikille, on vielä kaukana saavutetusta. Sama koskee tavoitetta 14, vedenalainen elämä, jonka tarkoitus on säilyttää meret ja merten tarjoamat luonnonvarat ja edistää niiden kestävää käyttöä.",
-
-                "Tässä oppimismoduulissa keskitytään tärkeään ja ajankohtaiseen aiheeseen eli veden laadun mittaamiseen sekä uusiin saasteisiin, jotka heikentävät veden laatua. Opiskelijat pääsevät tutustumaan ja etsimään ratkaisuja oikeisiin veteen ja ympäristöön liittyviin haasteisiin, minkä myötä heidän tiedonhaun, kriittisen ajattelun ja ongelmanratkaisun taitonsa kehittyvät.",
-
-                "Tuntisuunnitelmissa on käytännöllisiä ja luovia tehtäviä, esimerkiksi ohjelmointia Scratchilla, johdatusta koneoppimiseen ja koneälyn käyttöön Learning Machine Learning -alustalla sekä ohjattujen ajoneuvojen rakentamista Lego-palikoilla veden näytteenottoa ja pH-analyysia varten. Näiden tehtävien avulla opiskelijat pääsevät soveltamaan taitojaan ja tietojaan käytännössä interaktiivisessa ja hauskassa ympäristössä, mikä parantaa heidän motivaatiotaan ja kiinnostustaan projektiin.",
-
-                "Oppimismoduulin toteutukseksi ehdotetaan kolmesta harjoituksesta koostuvan projektin suorittamista luokassa kokonaisuudessaan. Siten saavutetaan merkityksellisempi ja motivoivampi oppimisprosessi. Harjoitukset voidaan kuitenkin tehdä myös erikseen."
-
-],
-"activities" => [
-    "1" => "Vesistöjen SOS-hätätila Scratch-alustalla",
-                "2" => "Vesistöjen SOS-hätätila LearningML-alustalla",
-                "3" => "Vesistöjen SOS-hätätila LEGO-roboteilla",
-            ]
-
         ],
 
+        '16' => [
+            'title' => 'TARINAN LUOMINEN HEDYLLÄ',
+            'author' => 'Felienne Hermans',
+            'text' => [
+                'Onko visuaalinen ohjelmointikieli oppilaillesi ja opiskelijoillesi jo tuttu juttu, mutta he eivät ole vielä syventyneet tekstipohjaiseen ohjelmointikieleen? Tämän kurssin avulla he voivat siirtyä visuaalisesta ohjelmointikielestä tekstipohjaiseen ohjelmointikieleen. <strong>Tarinan luominen Hedyllä</strong> -kurssi koostuu kolmesta tuntisuunnitelmasta, joissa opetellaan käyttämään Hedyä – vaiheittain etenevää ohjelmointikieltä, jolla voidaan opettaa lapsille ohjelmointia.',
 
+                'Hedy on tarkoitettu lapsille ja nuorille, jotka haluavat tutustua tekstipohjaisiin ohjelmointikieliin mutta joille Python voi olla vielä liian monimutkainen. Vaiheittaisessa ohjelmointikielessä käytetään eri kielitasoja niin, että jokaisella tasolla mukaan tulee uusia käsitteitä ja monimutkaisempia syntaktisia elementtejä. Korkeimmalle Hedy-tasolle päästyään oppilaat ja opiskelijat osaavat koodata Python-ohjelmointikielellä hyvin toimivan syntaktisen osajoukon.',
+
+                'Kurssi sisältää innostavia ja mielenkiintoisia tehtäviä, joiden avulla oppilaat ja opiskelijat oppivat käyttämään tekstipohjaisia ohjelmointikieliä. Luomalla omia interaktiivisia tarinoitaan he oppivat ohjelmointia vaiheittain, eikä kaikkea tarvitse opetella kerralla. Alaluokkien tuntisuunnitelmassa oppilaille esitellään ohjelmoinnin peruskäsitteet. Yläluokkien tuntisuunnitelmassa opitaan lisää käsitteitä, ja toisen asteen tuntisuunnitelmassa opiskelijat ohjelmoivat jo monimutkaisempia tarinoita ja tehtäviä.',
+
+                'Katso alla olevasta interaktiivisesta tarinasta, miten lukijat voivat osallistua tarinaan ja miten se tukee aktiivista osallistumista.',
+            ],
+            'activities' => [
+                '1' => 'Luo oma interaktiivinen tarinasi Hedyllä alaluokkien oppilaiden kanssa',
+                '2' => 'Luo oma interaktiivinen tarinasi Hedyllä yläluokkien oppilaiden kanssa',
+                '3' => 'Luo oma interaktiivinen tarinasi Hedyllä toisen asteen opiskelijoiden kanssa',
+            ],
+        ],
+        '17' => [
+            'title' => 'Tunne koodi',
+            'author' => 'Alenka Miljević ',
+            'text' => [
+                'Sosiaalisen ja emotionaalisen hyvinvoinnin edellytyksenä on kyky sopeutua, taito hallita omia tunteita ja vastata toisten tunteisiin sekä kyky luoda mielekkäitä ihmissuhteita, edistää myönteisiä tunteita ja rakentaa oma emotionaalinen tukiverkosto. Koulussa opittavat sosiaaliset ja emotionaaliset taidot auttavat oppilaita kehittämään omaa sopeutumiskykyään ja luovat perustan fyysisen ja henkisen terveyden hallintaan loppuelämän ajaksi (Euroopan neuvosto).',
+                'Tunne koodi -oppimismoduuli auttaa edistämään sosiaalista ja emotionaalista hyvinvointia. Oppilaat tunnistavat, selittävät ja ymmärtävät myönteisiä ja kielteisiä tunteita ja tunnetiloja ja reagoivat niihin, mikä kasvattaa myötätuntoa ja sopeutumiskykyä.  Moduuli sisältää innostavia ja mielenkiintoisia tehtäviä, joiden avulla oppilaat kehittävät taitoja erilaisten tunteiden käsittelemiseen koodausta käyttämällä. Oppilaat oppivat ilmaisemaan tunteitaan ja muiden tunteisiin reagoimista Bee-Bot-robotin avulla.',
+                'Tunne koodi -oppimismoduuli sisältää kolme tuntisuunnitelmaa, joissa käytetään Bee-Bot-oppimisrobottia. Tehtävät kannustavat oppilaita puhumaan tunteista ja kehittämään myötätuntoa. Alaluokkien tuntisuunnitelmassa oppilaat ohjelmoivat Bee-Botia ja puhuvat tunteista, kuten surusta, ilosta, pelosta ja vihasta, ja löytävät syitä, miksi he ja muut oppilaat kokevat näitä tunteita. Yläluokkien tuntisuunnitelmassa oppilaita kannustetaan ohjelmoimaan Bee-Botia, tunnistamaan omia ja muiden oppilaiden tunteita sekä ymmärtämään, mikä ne aiheutti ja miten niihin voi reagoida. Toisen asteen tuntisuunnitelmassa opiskelijat ohjaavat Bee-Botia ja keksivät tarinoita tunteista, sopeutumiskyvystä ja myötätunnosta.',
+                'Jos käytössä ei ole oppimisrobottia, oppimismoduuli sisältää myös ideoita ilman laitteita tehtäviin harjoituksiin, jotka kehittävät sosiaalisia ja emotionaalisia taitoja. Alla oleva interaktiivinen tarina sisältää lyhyen esittelyn luokassa tehtävistä harjoituksista:',
+            ],
+            'activities' => [
+                '1' => 'Koodaa – tunne – opi alaluokkien oppilaille',
+                '2' => 'Sydämeni ei ole kiveä yläluokkien oppilaille',
+                '3' => 'Koodaa minut tunteeseen toisen asteen opiskelijoille',
+            ],
+        ], '18' => [
+
+            'title' => 'Vesistöjen SOS-hätätila',
+            'author' => 'tekijä Francisco Delgado Cecilia',
+            'text' => [
+
+                'Vesistöjen SOS-hätätila on vastaus tarpeeseen kehittää ratkaisuja vesistöjen saastumiseen. Viime vuosien pyrkimyksistä huolimatta maailmassa on yhä kaksi miljardia ihmistä, joilla ei ole käytettävissään puhdasta juomavettä. Toisin sanoen Agenda 2030 -ohjelman kestävän kehityksen tavoite 6, jonka mukaan vuoteen 2030 mennessä pitäisi varmistaa turvallisen veden ja sanitaation saatavuus kaikille, on vielä kaukana saavutetusta. Sama koskee tavoitetta 14, vedenalainen elämä, jonka tarkoitus on säilyttää meret ja merten tarjoamat luonnonvarat ja edistää niiden kestävää käyttöä.',
+
+                'Tässä oppimismoduulissa keskitytään tärkeään ja ajankohtaiseen aiheeseen eli veden laadun mittaamiseen sekä uusiin saasteisiin, jotka heikentävät veden laatua. Opiskelijat pääsevät tutustumaan ja etsimään ratkaisuja oikeisiin veteen ja ympäristöön liittyviin haasteisiin, minkä myötä heidän tiedonhaun, kriittisen ajattelun ja ongelmanratkaisun taitonsa kehittyvät.',
+
+                'Tuntisuunnitelmissa on käytännöllisiä ja luovia tehtäviä, esimerkiksi ohjelmointia Scratchilla, johdatusta koneoppimiseen ja koneälyn käyttöön Learning Machine Learning -alustalla sekä ohjattujen ajoneuvojen rakentamista Lego-palikoilla veden näytteenottoa ja pH-analyysia varten. Näiden tehtävien avulla opiskelijat pääsevät soveltamaan taitojaan ja tietojaan käytännössä interaktiivisessa ja hauskassa ympäristössä, mikä parantaa heidän motivaatiotaan ja kiinnostustaan projektiin.',
+
+                'Oppimismoduulin toteutukseksi ehdotetaan kolmesta harjoituksesta koostuvan projektin suorittamista luokassa kokonaisuudessaan. Siten saavutetaan merkityksellisempi ja motivoivampi oppimisprosessi. Harjoitukset voidaan kuitenkin tehdä myös erikseen.',
+
+            ],
+            'activities' => [
+                '1' => 'Vesistöjen SOS-hätätila Scratch-alustalla',
+                '2' => 'Vesistöjen SOS-hätätila LearningML-alustalla',
+                '3' => 'Vesistöjen SOS-hätätila LEGO-roboteilla',
+            ],
+
+        ],
 
     ],
     'download_video_script' => 'Lataa videon käsikirjoitus',
@@ -332,7 +330,7 @@ Tällä videolla koodausviikon tiimi esittelee muutamia helppoja ja hauskoja kä
         'title' => 'Muista merkitä oma tapahtumasi koodausviikkokarttaan!',
         'text' => '<p>Voit helposti järjestää oppitunnin luokassasi, avoimien ovien päivän tai tapahtuman koulullasi. Sovi vain päivä ja merkitse tapahtuma <a href="/events">koodausviikkokarttaan</a>. Jokainen tapahtumajärjestäjä saa osallistumistodistuksen.</p>
 
-<p>Jos haluat pitää yhteyttä innokkaisiin opettajiin kansainvälisesti, liity <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU:n koodausviikon opettajien Facebook-ryhmään</a>! Jos haluat tehdä enemmän, ryhdy yhteistyöhön oman maasi tai ulkomaisten koulujen kanssa liittymällä <a href="/codeweek4all">Koodausviikko kaikille -haasteeseen</a>.</p>'
-    ]
+<p>Jos haluat pitää yhteyttä innokkaisiin opettajiin kansainvälisesti, liity <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">EU:n koodausviikon opettajien Facebook-ryhmään</a>! Jos haluat tehdä enemmän, ryhdy yhteistyöhön oman maasi tai ulkomaisten koulujen kanssa liittymällä <a href="/codeweek4all">Koodausviikko kaikille -haasteeseen</a>.</p>',
+    ],
 
 ];

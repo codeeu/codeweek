@@ -5,14 +5,14 @@ return [
     'subtitle' => 'Ta izjava o varstvu osebnih podatkov vsebuje informacije o obdelavi in varstvu vaših osebnih podatkov.',
     'processing-operation' => [
         'Postopek obdelave',
-        'Upravljanje ambasadorjev in vodilnih učiteljev tedna programiranja Code Week ter registracije dejavnosti na spletišču'
+        'Upravljanje ambasadorjev in vodilnih učiteljev tedna programiranja Code Week ter registracije dejavnosti na spletišču',
     ],
     'data-processors' => [
         'Obdelovalci podatkov',
-        'GOPA Com. S.A. in EUN Partnership AISBL (Evropsko šolsko omrežje), info@codeweek.eu'
+        'GOPA Com. S.A. in EUN Partnership AISBL (Evropsko šolsko omrežje), info@codeweek.eu',
     ],
     '1-intro' => [
-        'Informacije v zvezi z obdelavo osebnih podatkov za upravljanje ambasadorjev in vodilnih učiteljev tedna programiranja Code Week ter registracije dejavnosti na spletišču.'
+        'Informacije v zvezi z obdelavo osebnih podatkov za upravljanje ambasadorjev in vodilnih učiteljev tedna programiranja Code Week ter registracije dejavnosti na spletišču.',
     ],
 
     '3-legal_process' => [
@@ -60,10 +60,10 @@ return [
         'Poleg tega lahko enota G.2 posreduje vaše kontaktne podatke kateremu koli članu javnosti ali deležniku, ki bi moral z vami vzpostaviti stik glede tedna programiranja Code Week. Organizatorji dejavnosti upoštevajte, da lahko ustrezni ambasador za vašo državo ali enota G.2 uporablja osebne podatke, ki ste jih navedli ob registraciji dejavnosti, da z vami vzpostavi stik glede zadevne dejavnosti.',
     ],
     '8-rights' => [
-        'Privolili ste, da enoti G.2 za namene tega postopka obdelave predložite svoje osebne podatke. Privolitev lahko kadar koli prekličete tako, da uradno obvestite enoto G.2 na naslov CNECT-G2@ec.europa.eu. Preklic ne bo vplival na zakonitost obdelave, izvedene pred vašim preklicem privolitve.'
+        'Privolili ste, da enoti G.2 za namene tega postopka obdelave predložite svoje osebne podatke. Privolitev lahko kadar koli prekličete tako, da uradno obvestite enoto G.2 na naslov CNECT-G2@ec.europa.eu. Preklic ne bo vplival na zakonitost obdelave, izvedene pred vašim preklicem privolitve.',
     ],
 
     '10-detailed-info' => [
-        'Ta postopek obdelave podatkov se v javnem registru pooblaščene osebe za varstvo podatkov vodi pod naslednjo referenčno oznako: DPR-EC-02631 Upravljanje kontaktnih točk za politike, programe in projekte GD CONNECT.'
-    ]
+        'Ta postopek obdelave podatkov se v javnem registru pooblaščene osebe za varstvo podatkov vodi pod naslednjo referenčno oznako: DPR-EC-02631 Upravljanje kontaktnih točk za politike, programe in projekte GD CONNECT.',
+    ],
 ];

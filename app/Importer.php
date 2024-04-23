@@ -19,6 +19,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property-read \App\Event|null $event
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Importer newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Importer newQuery()
  * @method static \Illuminate\Database\Query\Builder|Importer onlyTrashed()
@@ -35,6 +36,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @method static \Illuminate\Database\Eloquent\Builder|Importer whereWebsite($value)
  * @method static \Illuminate\Database\Query\Builder|Importer withTrashed()
  * @method static \Illuminate\Database\Query\Builder|Importer withoutTrashed()
+ *
  * @mixin \Eloquent
  */
 class Importer extends Model
@@ -47,6 +49,4 @@ class Importer extends Model
     {
         return $this->hasOne('App\Event', 'id', 'event_id');
     }
-
-
 }

@@ -27,5 +27,5 @@ return [
     'reset' => 'Kennwort zurücksetzen',
     'send_password' => 'Link zum Zurücksetzen des Kennwortes versenden',
     'confirm_password' => 'Kennwort bestätigen',
-    'name' => 'name'
+    'name' => 'name',
 ];

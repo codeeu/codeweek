@@ -27,5 +27,5 @@ return [
     'reset' => 'Repor a palavra-passe',
     'send_password' => 'Enviar ligação para repor a palavra-passe',
     'confirm_password' => 'Confirmar palavra-passe',
-    'name' => 'nome'
+    'name' => 'nome',
 ];

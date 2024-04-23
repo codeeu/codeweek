@@ -6,10 +6,10 @@ use App\Achievements\Achievement;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-
 class AchievementModelTest extends TestCase
 {
     use RefreshDatabase;
+
     /** @test */
     public function it_has_a_name()
     {

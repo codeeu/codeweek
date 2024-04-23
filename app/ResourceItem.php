@@ -5,7 +5,6 @@ namespace App;
 use App\Filters\ResourceFilters;
 use Exception;
 use Illuminate\Database\Eloquent\Model;
-use phpDocumentor\Reflection\Types\String_;
 
 /**
  * App\ResourceItem
@@ -34,6 +33,7 @@ use phpDocumentor\Reflection\Types\String_;
  * @property-read int|null $subjects_count
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\ResourceType[] $types
  * @property-read int|null $types_count
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem filter(\App\Filters\ResourceFilters $filters)
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem newQuery()
@@ -50,6 +50,7 @@ use phpDocumentor\Reflection\Types\String_;
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem whereThumbnail($value)
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem whereTwitter($value)
  * @method static \Illuminate\Database\Eloquent\Builder|ResourceItem whereUpdatedAt($value)
+ *
  * @mixin \Eloquent
  */
 class ResourceItem extends Model
@@ -70,15 +71,13 @@ class ResourceItem extends Model
     public function getThumbnailAttribute($value)
     {
 
-
-        if (!strncmp($value, "http", 4) === 0) {
+        if (! strncmp($value, 'http', 4) === 0) {
             return config('codeweek.resources_url') + $value;
         }
 
         return $value;
 
     }
-
 
     public function levels()
     {
@@ -87,7 +86,7 @@ class ResourceItem extends Model
 
     public function types()
     {
-        return $this->belongsToMany('App\ResourceType')->select(array('id', 'name', 'position'));
+        return $this->belongsToMany('App\ResourceType')->select(['id', 'name', 'position']);
     }
 
     public function subjects()
@@ -110,7 +109,7 @@ class ResourceItem extends Model
         return $this->belongsToMany('App\ResourceLanguage');
     }
 
-    public function attachTypes(String $typeNames)
+    public function attachTypes(string $typeNames)
     {
 
         $typesIds = $this->getIdsFromNames($typeNames, '\App\ResourceType');
@@ -118,7 +117,7 @@ class ResourceItem extends Model
         $this->types()->attach($typesIds);
     }
 
-    public function attachCategories(String $categoryNames)
+    public function attachCategories(string $categoryNames)
     {
 
         $categoriesIds = $this->getIdsFromNames($categoryNames, '\App\ResourceCategory');
@@ -126,11 +125,10 @@ class ResourceItem extends Model
         $this->categories()->attach($categoriesIds);
     }
 
-    public function attachProgrammingLanguages(String $programmingLanguages)
+    public function attachProgrammingLanguages(string $programmingLanguages)
     {
 
-
-        if ($programmingLanguages === "All targeted programming languagues;") {
+        if ($programmingLanguages === 'All targeted programming languagues;') {
             return $this->programmingLanguages()->attach(ResourceProgrammingLanguage::all()->pluck('id')->toArray());
         } else {
             $this->programmingLanguages()->attach($this->getIdsFromNames($programmingLanguages, '\App\ResourceProgrammingLanguage'));
@@ -138,59 +136,53 @@ class ResourceItem extends Model
 
     }
 
-    public function attachLevels(String $levels)
+    public function attachLevels(string $levels)
     {
 
         $this->levels()->attach($this->getIdsFromNames($levels, '\App\ResourceLevel'));
     }
 
-    public function attachSubjects(String $subjects)
+    public function attachSubjects(string $subjects)
     {
 
         $this->subjects()->attach($this->getIdsFromNames($subjects, '\App\ResourceSubject'));
     }
 
-    public function attachLanguages(String $languages)
+    public function attachLanguages(string $languages)
     {
 
-
-        if ($languages === "All targeted languages;" || $languages === "All targeted languages") {
+        if ($languages === 'All targeted languages;' || $languages === 'All targeted languages') {
             return $this->languages()->attach(ResourceLanguage::all()->pluck('id')->toArray());
         }
 
         return $this->languages()->attach($this->getIdsFromNames($languages, '\App\ResourceLanguage'));
 
-
     }
 
     /**
-     * @param $typesArr
-     * @return array
+     * @param  $typesArr
      */
     protected function getIdsFromNames($types, $resourceObject): array
     {
 
-
-        $typesArr = array_unique(array_map('trim', explode(";", $types)));
+        $typesArr = array_unique(array_map('trim', explode(';', $types)));
 
         $typesIds = [];
 
         foreach ($typesArr as $item) {
             if (strlen(ltrim($item)) > 0) {
 
-                $resourceType = $resourceObject::where("name", "like", ltrim($item));
+                $resourceType = $resourceObject::where('name', 'like', ltrim($item));
                 if (is_null($resourceType->first())) {
-                    throw new Exception("Unknown Resource Type: " . ltrim($item));
-                };
+                    throw new Exception('Unknown Resource Type: '.ltrim($item));
+                }
                 array_push($typesIds, $resourceType->first()->id);
-
 
                 //dump($type->first()->id);
 
             }
 
         }
-
 
         return $typesIds;
     }

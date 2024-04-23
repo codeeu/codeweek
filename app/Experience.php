@@ -18,9 +18,12 @@ class Experience extends Model
     {
         $this->increment('points', $points);
 
-        if (app()->runningInConsole() && !app()->runningUnitTests()) return $this;
+        if (app()->runningInConsole() && ! app()->runningUnitTests()) {
+            return $this;
+        }
 
         UserEarnedExperience::dispatch($this->user, $points, $this->points);
+
         return $this;
     }
 
@@ -32,7 +35,7 @@ class Experience extends Model
         }
         $this->update(['points' => $this->points]);
         UserEarnedExperience::dispatch($this->user, $points, $this->points);
+
         return $this;
     }
-
 }

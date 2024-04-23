@@ -12,7 +12,7 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'organised_by'=>'Organizator: ',
+    'organised_by' => 'Organizator: ',
     'contact_email' => 'Adres e-mail: ',
     'happening_at' => 'Miejsce wydarzenia: ',
     'from' => 'Od ',
@@ -27,11 +27,11 @@ return [
         'tooltip' => 'Kliknij, aby wysłać do znajomego',
         'subject' => 'Dowiedz się więcej na temat tego wspaniałego wydarzenia',
         'body_1' => 'Cześć! Przesyłam informacje o ',
-        'body_2' => 'wydarzeniu, które odbędzie się w '
+        'body_2' => 'wydarzeniu, które odbędzie się w ',
     ],
     'edit' => 'Edytuj wydarzenie',
     'note' => 'UWAGA: ',
     'pending_warning' => 'To wydarzenie jest nadal sprawdzane przez ',
     'pending_link' => 'moderatorów',
-    'nearby_upcoming_events' => 'Nadchodzące wydarzenia w Twojej okolicy:'
+    'nearby_upcoming_events' => 'Nadchodzące wydarzenia w Twojej okolicy:',
 ];

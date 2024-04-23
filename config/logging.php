@@ -37,20 +37,20 @@ return [
         'stack' => [
             'driver' => 'stack',
             'channels' => ['single'],
-            'ignore_exceptions' => false
+            'ignore_exceptions' => false,
         ],
 
         'single' => [
             'driver' => 'single',
             'path' => storage_path('logs/laravel.log'),
-            'level' => 'debug'
+            'level' => 'debug',
         ],
 
         'daily' => [
             'driver' => 'daily',
             'path' => storage_path('logs/laravel.log'),
             'level' => 'debug',
-            'days' => 14
+            'days' => 14,
         ],
 
         'slack' => [
@@ -58,7 +58,7 @@ return [
             'url' => env('LOG_SLACK_WEBHOOK_URL'),
             'username' => 'Laravel Log',
             'emoji' => ':boom:',
-            'level' => 'critical'
+            'level' => 'critical',
         ],
 
         'papertrail' => [
@@ -67,8 +67,8 @@ return [
             'handler' => SyslogUdpHandler::class,
             'handler_with' => [
                 'host' => env('PAPERTRAIL_URL'),
-                'port' => env('PAPERTRAIL_PORT')
-            ]
+                'port' => env('PAPERTRAIL_PORT'),
+            ],
         ],
 
         'stderr' => [
@@ -76,33 +76,33 @@ return [
             'handler' => StreamHandler::class,
             'formatter' => env('LOG_STDERR_FORMATTER'),
             'with' => [
-                'stream' => 'php://stderr'
-            ]
+                'stream' => 'php://stderr',
+            ],
         ],
 
         'syslog' => [
             'driver' => 'syslog',
-            'level' => 'debug'
+            'level' => 'debug',
         ],
 
         'errorlog' => [
             'driver' => 'errorlog',
-            'level' => 'debug'
+            'level' => 'debug',
         ],
 
         'null' => [
             'driver' => 'monolog',
-            'handler' => NullHandler::class
+            'handler' => NullHandler::class,
         ],
 
         'emergency' => [
-            'path' => storage_path('logs/laravel.log')
+            'path' => storage_path('logs/laravel.log'),
         ],
         'mails_sent' => [
             'driver' => 'single',
             'path' => storage_path('logs/mails_sent.log'),
             'level' => 'info',
-            'permission' => 0660
-        ]
-    ]
+            'permission' => 0660,
+        ],
+    ],
 ];

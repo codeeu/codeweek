@@ -4,14 +4,14 @@ return [
     'subtitle' => 'Din l-istqarrija ta’ privatezza tipprovdi informazzjoni dwar l-ipproċessar u l-protezzjoni tad-data personali tiegħek.',
     'processing-operation' => [
         'Operazzjoni ta’ pproċessar:',
-        'il-ġestjoni tal-Ambaxxaturi ta’ CodeWeek, l-Għalliema Ewlenin u r-reġistrazzjoni tal-attivitajiet fuq is-sit web'
+        'il-ġestjoni tal-Ambaxxaturi ta’ CodeWeek, l-Għalliema Ewlenin u r-reġistrazzjoni tal-attivitajiet fuq is-sit web',
     ],
     'data-processors' => [
         'Proċessuri tad-data',
-        'GOPA Com. S.A. u EUN Partnership AISBL (European Schoolnet), info@codeweek.eu'
+        'GOPA Com. S.A. u EUN Partnership AISBL (European Schoolnet), info@codeweek.eu',
     ],
     '1-intro' => [
-        'L-informazzjoni relatata mal-ipproċessar tad-data personali għall-ġestjoni tal-Ambaxxaturi tal-CodeWeek, tal-Għalliema Ewlenin u tar-reġistrazzjoni tal-attivitajiet fuq is-sit web.'
+        'L-informazzjoni relatata mal-ipproċessar tad-data personali għall-ġestjoni tal-Ambaxxaturi tal-CodeWeek, tal-Għalliema Ewlenin u tar-reġistrazzjoni tal-attivitajiet fuq is-sit web.',
     ],
 
     '3-legal_process' => [
@@ -59,10 +59,10 @@ return [
         'Barra minn hekk, l - Unità G.2 tista’ taqsam id - dettalji ta’ kuntatt tiegħek ma’ kwalunkwe membru tal - pubbliku jew parti kkonċernata li jkollhom jikkuntattjawk fir - rigward tal - CodeWeek . ‘Għall - organizzaturi ta’ attivitajiet, jekk jogħġbok innota li l - Ambaxxatur rilevanti għal pajjiżek jew l - Unità G.2 tista’ tuża d - data personali li pprovdejt biex tirreġistra attività biex tikkuntattjak fir - rigward ta’ din l - attività . ',
     ],
     '8-rights' => [
-    'Inti tajt il - kunsens tiegħek biex id - data personali tiegħek tiġi pprovduta lill - Unità G.2 għal din l - operazzjoni ta’ proċessar . Tista’ tirtira l - kunsens tiegħek fi kwalunkwe ħin billi tinnotifika lill - Unità G.2 fuq CNECT - G2@ec . europa . eu . L - irtirar mhux se jaffettwa l - legalità tal - ipproċessar imwettaq qabel ma tkun irtirajt il - kunsens .'
+        'Inti tajt il - kunsens tiegħek biex id - data personali tiegħek tiġi pprovduta lill - Unità G.2 għal din l - operazzjoni ta’ proċessar . Tista’ tirtira l - kunsens tiegħek fi kwalunkwe ħin billi tinnotifika lill - Unità G.2 fuq CNECT - G2@ec . europa . eu . L - irtirar mhux se jaffettwa l - legalità tal - ipproċessar imwettaq qabel ma tkun irtirajt il - kunsens .',
     ],
 
     '10-detailed-info' => [
-    'Din l - operazzjoni ta’ pproċessar speċifika ġiet inkluża fir - reġistru pubbliku tal - UPD bir - referenza tan - notifika ta’ legat li ġejja: DPR - EC - 02631 Ġestjoni tal - punti ta’ kuntatt għall - politiki, il - programmi u l - proġetti tad - DĠ CONNECT . '
-    ]
+        'Din l - operazzjoni ta’ pproċessar speċifika ġiet inkluża fir - reġistru pubbliku tal - UPD bir - referenza tan - notifika ta’ legat li ġejja: DPR - EC - 02631 Ġestjoni tal - punti ta’ kuntatt għall - politiki, il - programmi u l - proġetti tad - DĠ CONNECT . ',
+    ],
 ];

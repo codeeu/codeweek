@@ -15,14 +15,14 @@ return [
         'example' => 'Voorbeeld',
         'written-by' => [
             'Deze uitdaging is geschreven door',
-            'en is onderdeel van de'
+            'en is onderdeel van de',
         ],
         'teachers' => 'Leraren',
         'students' => 'Leerlingen',
         'beginner' => 'Beginner',
         'intermediate' => 'Gemiddeld',
         'advanced' => 'Gevorderd',
-        '1-hour' => '1 uur'
+        '1-hour' => '1 uur',
     ],
     'main' => [
         'Tijdens de EU-programmeerweek, van 9 tot 24 oktober 2021, nodigen we je uit om een of meer van de EU-programmeerweek-uitdagingen uit te voeren.',
@@ -38,7 +38,7 @@ return [
         'Deel je uitdaging',
         'Zou je programmeerweek-goodies willen winnen? Ja? Laat je werk viraal gaan!',
         'Deel je uitdaging op Instagram nadat je deze hebt uitgevoerd.',
-        'Tijdens de programmeerweek van 9 tot 24 oktober worden elke dag winnaars geselecteerd en op ons Instagram-kanaal bekendgemaakt. Vergeet dus niet om regelmatig je meldingen te checken.'
+        'Tijdens de programmeerweek van 9 tot 24 oktober worden elke dag winnaars geselecteerd en op ons Instagram-kanaal bekendgemaakt. Vergeet dus niet om regelmatig je meldingen te checken.',
     ],
     'share' => [
         'Hoe deel je je uitdaging(en) op Instagram?',
@@ -55,7 +55,7 @@ return [
         'Facebook-pagina.',
         'De prijswinnaar wordt gekozen uit de reacties onder het bericht.',
         'Hoe werkt het?',
-        'Je hoeft alleen maar op het bericht te reageren met de link naar je werk.'
+        'Je hoeft alleen maar op het bericht te reageren met de link naar je werk.',
     ],
     'share-box' => [
         'Deel de link naar je werk in je',
@@ -70,18 +70,18 @@ return [
         'een nieuw bericht over de uitdagingen op zijn',
         'Facebook-pagina',
         'Je hoeft vervolgens alleen maar op het bericht te reageren met de link naar je werk.',
-        'Tijdens de programmeerweek van 9 tot 24 oktober worden elke dag winnaars van programmeerweek-goodies geselecteerd. Zij worden op onze Instagram- en Facebook-kanalen bekendgemaakt, dus vergeet niet om regelmatig je meldingen te checken.'
+        'Tijdens de programmeerweek van 9 tot 24 oktober worden elke dag winnaars van programmeerweek-goodies geselecteerd. Zij worden op onze Instagram- en Facebook-kanalen bekendgemaakt, dus vergeet niet om regelmatig je meldingen te checken.',
     ],
     'take-part' => [
         'Waarom zou je deelnemen aan een uitdaging van de EU-programmeerweek?',
         'Om zelf problemen op te lossen en te programmeren.',
         'Om samen te werken met gelijkgestemden.',
-        'Om de boodschap over het belang van programmeren te verspreiden.'
+        'Om de boodschap over het belang van programmeren te verspreiden.',
     ],
     'download' => [
         'Klik',
         'hier',
-        'om deze uitdaging als Word-document te downloaden'
+        'om deze uitdaging als Word-document te downloaden',
     ],
     'bingo' => [
         'Voer alle uitdagingen uit',
@@ -91,6 +91,6 @@ return [
         'Deel je uitdaging op sociale media en maak kans op een aantal coole programmeerweek-prijzen',
         'Upload een foto met de volle rij(en), kolom(men), of nog beter de volle bingokaart  naar',
         'Facebook, Instagram of Twitter',
-        'Gebruik de'
-    ]
+        'Gebruik de',
+    ],
 ];

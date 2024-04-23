@@ -3,12 +3,11 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
-use Throwable;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 use Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer;
 use Symfony\Component\ErrorHandler\Exception\FlattenException;
+use Throwable;
 
 class Handler extends ExceptionHandler
 {
@@ -34,24 +33,24 @@ class Handler extends ExceptionHandler
     /**
      * Report or log an exception.
      *
-     * @param \Exception $exception
+     * @param  \Exception  $exception
      * @return void
      *
      * @throws \Exception
      */
     public function report(Throwable $exception)
     {
-//        if ($this->shouldReport($exception)) {
-//            $this->sendEmail($exception); // sends an email
-//        }
+        //        if ($this->shouldReport($exception)) {
+        //            $this->sendEmail($exception); // sends an email
+        //        }
         parent::report($exception);
     }
 
     /**
      * Render an exception into an HTTP response.
      *
-     * @param \Illuminate\Http\Request $request
-     * @param \Exception $exception
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Exception  $exception
      * @return \Symfony\Component\HttpFoundation\Response
      *
      * @throws \Exception
@@ -74,11 +73,10 @@ class Handler extends ExceptionHandler
             $css = $handler->getStylesheet();
             $content = $handler->getBody($e);
 
-            Mail::send('emails.en.exception', compact('css','content'), function ($message) {
+            Mail::send('emails.en.exception', compact('css', 'content'), function ($message) {
                 $message
                     ->to(config('codeweek.administrator'))
-                    ->subject('Exception on Codeweek')
-                ;
+                    ->subject('Exception on Codeweek');
             });
         } catch (Throwable $ex) {
             Log::error($ex);

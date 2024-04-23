@@ -16,6 +16,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property string|null $notified_at
  * @property-read \App\User $user
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Excellence newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Excellence newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Excellence query()
@@ -27,28 +28,27 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Excellence whereNotifiedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Excellence whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Excellence whereUserId($value)
+ *
  * @mixin \Eloquent
  */
 class Excellence extends Model
 {
+    protected $fillable = ['edition', 'name_for_certificate', 'certificate_url'];
 
-
-    protected $fillable=['edition','name_for_certificate','certificate_url'];
-
-    public static function byYear($year, $type = "Excellence"){
+    public static function byYear($year, $type = 'Excellence')
+    {
         return Excellence::with('user')->where(
             [
-                ["edition", "=", $year],
-                ["notified_at" , "=", null],
-                ["type" , "=", $type],
+                ['edition', '=', $year],
+                ['notified_at', '=', null],
+                ['type', '=', $type],
 
             ]
-            )->get();
+        )->get();
     }
 
     public function user()
     {
         return $this->belongsTo('App\User');
     }
-
 }

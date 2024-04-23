@@ -13,16 +13,15 @@ return [
     |
     */
 
-    'name'             => 'Skolas nosaukums',
-    'location'           => 'Skolas atrašanās vieta',
-    'description'                => 'Skolas apraksts',
-    'school'                => 'Skola',
-    'add'                => 'Pievienot',
-    'list'                => 'Saraksts',
+    'name' => 'Skolas nosaukums',
+    'location' => 'Skolas atrašanās vieta',
+    'description' => 'Skolas apraksts',
+    'school' => 'Skola',
+    'add' => 'Pievienot',
+    'list' => 'Saraksts',
     'required' => [
-        'name'=>'Jānorāda skolas nosaukums',
-        'location'=>'Jānorāda skolas atrašanās vieta',
-    ]
-
+        'name' => 'Jānorāda skolas nosaukums',
+        'location' => 'Jānorāda skolas atrašanās vieta',
+    ],
 
 ];

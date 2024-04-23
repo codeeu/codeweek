@@ -15,14 +15,14 @@ return [
         'example' => 'Exempel',
         'written-by' => [
             'Den här utmaningen har skrivits av',
-            'och den utgör en del av'
+            'och den utgör en del av',
         ],
         'teachers' => 'Lärare',
         'students' => 'Elever',
         'beginner' => 'Nybörjare',
         'intermediate' => 'Medel',
         'advanced' => 'Avancerad',
-        '1-hour' => '1 timme'
+        '1-hour' => '1 timme',
     ],
     'main' => [
         'Under EU Code Week, 9–24 oktober 2021, bjuder vi in dig till att göra en eller flera av EU Code Week-utmaningarna.',
@@ -38,7 +38,7 @@ return [
         'Dela din utmaning',
         'Vill du vinna några Code Week-priser? Om svaret är ja, så gör ditt jobb viralt!',
         'Efter att du har slutfört utmaningen, så dela den på Instagram.',
-        'Vinnare kommer att väljas ut varje dag under Code Week, 9–24 oktober, och tillkännages på vår Instagram-kanal, så glöm inte att kolla dina notiser regelbundet.'
+        'Vinnare kommer att väljas ut varje dag under Code Week, 9–24 oktober, och tillkännages på vår Instagram-kanal, så glöm inte att kolla dina notiser regelbundet.',
     ],
     'share' => [
         'Hur delar du din eller dina utmaningar på Instagram?',
@@ -55,7 +55,7 @@ return [
         'Facebook-sida',
         'varje dag och kommer att välja ut vinnaren av priset bland kommentarerna under inlägget.',
         'Hur fungerar det?',
-        'Skriv bara en kommentar under inlägget med en länk till ditt arbete.'
+        'Skriv bara en kommentar under inlägget med en länk till ditt arbete.',
     ],
     'share-box' => [
         'Dela länken till ditt arbete i din',
@@ -70,18 +70,18 @@ return [
         'ett nytt utmaningsinlägg på sin',
         'Facebook-sida',
         'Sedan behöver du bara skriva en kommentar under inlägget med en länk till ditt arbete',
-        'Vinnare kommer att väljas ut och erbjudas Code Week-priser varje dag under Code Week, 9–24 oktober, och tillkännages på våra Instagram- och Facebook-kanaler, så glöm inte att kolla dina notiser regelbundet'
+        'Vinnare kommer att väljas ut och erbjudas Code Week-priser varje dag under Code Week, 9–24 oktober, och tillkännages på våra Instagram- och Facebook-kanaler, så glöm inte att kolla dina notiser regelbundet',
     ],
     'take-part' => [
         'Varför delta i en EU Code Week-utmaning?',
         'För att jobba med problemlösning och kodningsaktiviteter.',
         'För att arbeta tillsammans med andra.',
-        'För att berätta för andra hur viktigt det är med kodning.'
+        'För att berätta för andra hur viktigt det är med kodning.',
     ],
     'download' => [
         'Klicka',
         'här',
-        'för att ladda ner den här utmaningen som ett worddokument'
+        'för att ladda ner den här utmaningen som ett worddokument',
     ],
     'bingo' => [
         'Genomför alla utmaningarna',
@@ -91,6 +91,6 @@ return [
         'Dela din utmaning i sociala medier och vinn några coola Code Week-priser',
         'Ladda bara upp en bild med den färdiga raden/raderna, kolumnen/kolumnerna eller ännu bättre – hela bingot – på',
         'Facebook, Instagram eller Twitter',
-        'Se till att du använder'
-    ]
+        'Se till att du använder',
+    ],
 ];

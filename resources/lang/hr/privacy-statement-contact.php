@@ -4,14 +4,14 @@ return [
     'subtitle' => 'Ova izjava o zaštiti osobnih podataka sadržava informacije o obradi i zaštiti vaših osobnih podataka.',
     'processing-operation' => [
         'Postupak obrade',
-        'Upravljanje ambasadorima i glavnim predavačima Tjedna programiranja te registracijom aktivnosti na internetskim stranicama'
+        'Upravljanje ambasadorima i glavnim predavačima Tjedna programiranja te registracijom aktivnosti na internetskim stranicama',
     ],
     'data-processors' => [
         'Izvršitelji obrade podataka',
-        'GOPA Com. S.A. i EUN Partnership AISBL (Europska školska mreža), info@codeweek.eu'
+        'GOPA Com. S.A. i EUN Partnership AISBL (Europska školska mreža), info@codeweek.eu',
     ],
     '1-intro' => [
-        'Informacije o obradi osobnih podataka radi upravljanja ambasadorima i glavnim predavačima Tjedna programiranja te registracijom aktivnosti na internetskim stranicama.'
+        'Informacije o obradi osobnih podataka radi upravljanja ambasadorima i glavnim predavačima Tjedna programiranja te registracijom aktivnosti na internetskim stranicama.',
     ],
 
     '3-legal_process' => [
@@ -59,10 +59,10 @@ return [
         'Osim toga, Odjel G.2 može podijeliti vaše podatke za kontakt s bilo kojim članom javnosti ili dionikom koji bi vam se trebao obratiti u vezi s Tjednom programiranja. Ako ste organizator aktivnosti, trebate imati na umu da ambasador vaše zemlje ili Odjel G.2 mogu upotrebljavati osobne podatke koje ste naveli pri registraciji aktivnosti kako bi vam se obratili u vezi s navedenom aktivnošću.',
     ],
     '8-rights' => [
- 'Pristali ste dati svoje osobne podatke Odjelu G.2 za ovaj postupak obrade. Privolu možete povući u svakom trenutku slanjem obavijesti Odjelu G.2 na e-adresu CNECT-G2@ec.europa.eu. Povlačenje privole neće utjecati na zakonitost obrade koja je provedena prije nego što ste povukli privolu.'
+        'Pristali ste dati svoje osobne podatke Odjelu G.2 za ovaj postupak obrade. Privolu možete povući u svakom trenutku slanjem obavijesti Odjelu G.2 na e-adresu CNECT-G2@ec.europa.eu. Povlačenje privole neće utjecati na zakonitost obrade koja je provedena prije nego što ste povukli privolu.',
     ],
 
     '10-detailed-info' => [
- 'Ovaj postupak obrade upisan je u javni registar službenika za zaštitu podataka pod sljedećim brojem obavijesti: DPR-EC-02631 Upravljanje kontaktnim točkama za politike, programe i projekte GU-a za komunikacijske mreže, sadržaje i tehnologije.'
-    ]
+        'Ovaj postupak obrade upisan je u javni registar službenika za zaštitu podataka pod sljedećim brojem obavijesti: DPR-EC-02631 Upravljanje kontaktnim točkama za politike, programe i projekte GU-a za komunikacijske mreže, sadržaje i tehnologije.',
+    ],
 ];

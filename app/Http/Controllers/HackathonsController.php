@@ -7,17 +7,22 @@ use Illuminate\Support\Facades\Route;
 
 class HackathonsController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         return view('hackathons.index');
     }
 
-    public function before(Request $request){
+    public function before(Request $request)
+    {
         $routeName = Route::currentRouteName();
-        return view('hackathons.before.' . $routeName);
+
+        return view('hackathons.before.'.$routeName);
     }
 
-    public function after(Request $request){
+    public function after(Request $request)
+    {
         $routeName = Route::currentRouteName();
-        return view('hackathons.after.' . $routeName);
+
+        return view('hackathons.after.'.$routeName);
     }
 }

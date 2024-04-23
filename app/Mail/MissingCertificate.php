@@ -3,10 +3,7 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
-use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
 class MissingCertificate extends Mailable
@@ -14,6 +11,7 @@ class MissingCertificate extends Mailable
     use Queueable, SerializesModels;
 
     public $event;
+
     /**
      * Create a new message instance.
      *
@@ -29,7 +27,8 @@ class MissingCertificate extends Mailable
      *
      * @return $this
      */
-    public function build() {
+    public function build()
+    {
         return $this->subject('Your Code Week Certificate')->markdown(
             'emails.en.missing-certificate'
         );

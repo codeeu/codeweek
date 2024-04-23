@@ -13,16 +13,15 @@ return [
     |
     */
 
-    'name'             => 'Emri i shkollës',
-    'location'           => 'Vendndodhja e shkollës',
-    'description'                => 'Përshkrimi i shkollës',
-    'school'                => 'Shkollë',
-    'add'                => 'Shto',
-    'list'                => 'Listo',
+    'name' => 'Emri i shkollës',
+    'location' => 'Vendndodhja e shkollës',
+    'description' => 'Përshkrimi i shkollës',
+    'school' => 'Shkollë',
+    'add' => 'Shto',
+    'list' => 'Listo',
     'required' => [
-        'name'=>'Emri i shkollës është i detyrueshëm',
-        'location'=>'Emri i vendndodhjes është i detyrueshëm',
-    ]
-
+        'name' => 'Emri i shkollës është i detyrueshëm',
+        'location' => 'Emri i vendndodhjes është i detyrueshëm',
+    ],
 
 ];

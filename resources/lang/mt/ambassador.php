@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,13 +14,13 @@ return [
     */
 
     'title' => 'Ambaxxaturi tal-Ġimgħa tal-UE tal-Ikkowdjar',
-    'your_current_country'=>'Il-pajjiż attwali tiegħek',
-    'visit_the'=> 'Żur',
-    'local_facebook_page'=>'il-paġna lokali ta’ Facebok',
-    'local_website'=>'Sit web lokali',
-    'ambassadors'=>'Ambaxxaturi',
-    'no_ambassadors'=>'L-ebda ambaxxatur s’issa',
-    'countries_with_ambassadors'=>'Pajjiżi b’ambaxxaturi',
-    'why_dont_you_volunteer'=>'Għala ma tagħmilx xogħol volontarju?'
+    'your_current_country' => 'Il-pajjiż attwali tiegħek',
+    'visit_the' => 'Żur',
+    'local_facebook_page' => 'il-paġna lokali ta’ Facebok',
+    'local_website' => 'Sit web lokali',
+    'ambassadors' => 'Ambaxxaturi',
+    'no_ambassadors' => 'L-ebda ambaxxatur s’issa',
+    'countries_with_ambassadors' => 'Pajjiżi b’ambaxxaturi',
+    'why_dont_you_volunteer' => 'Għala ma tagħmilx xogħol volontarju?',
 
 ];

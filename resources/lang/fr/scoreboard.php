@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,8 +14,8 @@ return [
     */
 
     'title' => 'Dans quels pays les activités de codage font le buzz ?',
-    'paragraph'=>'Le tableau de bord reflète le nombre d’événements de codage répertoriés par nombre d’habitants. Ne vous étonnez donc pas si certains petits pays figurent en haut de la liste!',
-    'parcipating_with'=>'participe avec',
-    'events'=>'événements'
+    'paragraph' => 'Le tableau de bord reflète le nombre d’événements de codage répertoriés par nombre d’habitants. Ne vous étonnez donc pas si certains petits pays figurent en haut de la liste!',
+    'parcipating_with' => 'participe avec',
+    'events' => 'événements',
 
 ];

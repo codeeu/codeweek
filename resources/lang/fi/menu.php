@@ -15,7 +15,7 @@ return [
 
     'learn' => 'Opi',
     'teach' => 'Opeta',
-    'training' => 'Harjoittelu', 'toolkits' => 'Esitykset ja työkalut', 'why' => 'MIKSI', 'home'  => 'Kotisivu',
+    'training' => 'Harjoittelu', 'toolkits' => 'Esitykset ja työkalut', 'why' => 'MIKSI', 'home' => 'Kotisivu',
     'events' => 'Tapahtumat',
     'ambassadors' => 'Lähettiläät',
     'resources' => 'Aineistot',
@@ -37,7 +37,7 @@ return [
     'logout' => 'Kirjaudu ulos',
     'signin' => 'Kirjaudu sisään',
     'privacy' => 'Tietosuoja',
-    'participation'=> 'Osallistumissertifikaatti',
+    'participation' => 'Osallistumissertifikaatti',
     'values' => 'Meidän arvomme',
     'featured_activities' => 'Avoimet aktiviteetit',
     'codeweek2020' => 'Versio 2020'];

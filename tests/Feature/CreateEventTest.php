@@ -4,19 +4,14 @@ namespace Tests\Feature;
 
 use App\Event;
 use Illuminate\Auth\AuthenticationException;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
-
-
 use Illuminate\Validation\ValidationException;
 use Tests\TestCase;
 
-use Illuminate\Foundation\Testing\DatabaseMigrations;
-
 class CreateEventTest extends TestCase
 {
-
     use DatabaseMigrations;
-
 
     /** @test */
     public function a_guest_can_not_create_event()
@@ -41,17 +36,16 @@ class CreateEventTest extends TestCase
         create('App\Audience', [], 3);
         create('App\Theme', [], 3);
 
-        $event->theme = "1";
-        $event->tags = "tag:foo,tag:bar";
-        $event->audience = "2, 3";
+        $event->theme = '1';
+        $event->tags = 'tag:foo,tag:bar';
+        $event->audience = '2, 3';
         $event->privacy = true;
 
-        $event->language = "nl";
+        $event->language = 'nl';
 
         $this->post('/events', $event->toArray());
 
     }
-
 
     /** @test */
     public function an_authenticated_user_can_create_events()
@@ -64,22 +58,22 @@ class CreateEventTest extends TestCase
         create('App\Audience', [], 3);
         create('App\Theme', [], 3);
 
-        $event->theme = "1";
-        $event->tags = "tag:foo,tag:bar";
-        $event->audience = "2, 3";
+        $event->theme = '1';
+        $event->tags = 'tag:foo,tag:bar';
+        $event->audience = '2, 3';
         $event->privacy = true;
 
-        $event->language = "nl";
+        $event->language = 'nl';
 
         $this->post('/events', $event->toArray());
 
         $event = Event::where('title', $event->title)->first();
 
         $this->get($event->path())->assertSee($event->title);
-        $this->get($event->path())->assertSee("tag:foo");
-        $this->get($event->path())->assertSee("tag:bar");
+        $this->get($event->path())->assertSee('tag:foo');
+        $this->get($event->path())->assertSee('tag:bar');
         $this->get($event->path())->assertSee($event->codeweek_for_all_participation_code);
-        $this->get($event->path())->assertSee("Dutch");
+        $this->get($event->path())->assertSee('Dutch');
     }
 
     /** @test */
@@ -96,12 +90,12 @@ class CreateEventTest extends TestCase
         create('App\Audience', [], 3);
         create('App\Theme', [], 3);
 
-        $event->theme = "1";
-        $event->tags = "tag:foo,tag:bar";
-        $event->audience = "2, 33";
+        $event->theme = '1';
+        $event->tags = 'tag:foo,tag:bar';
+        $event->audience = '2, 33';
         $event->privacy = true;
 
-        $event->language = "nl";
+        $event->language = 'nl';
 
         $this->post('/events', $event->toArray());
 
@@ -121,12 +115,12 @@ class CreateEventTest extends TestCase
         create('App\Audience', [], 3);
         create('App\Theme', [], 3);
 
-        $event->theme = "111";
-        $event->tags = "tag:foo,tag:bar";
-        $event->audience = "2, 3";
+        $event->theme = '111';
+        $event->tags = 'tag:foo,tag:bar';
+        $event->audience = '2, 3';
         $event->privacy = true;
 
-        $event->language = "nl";
+        $event->language = 'nl';
 
         $this->post('/events', $event->toArray());
 
@@ -146,12 +140,12 @@ class CreateEventTest extends TestCase
         create('App\Audience', [], 3);
         create('App\Theme', [], 3);
 
-        $event->theme = "111";
-        $event->tags = "tag:foo,tag:bar";
-        $event->audience = "2, 3";
+        $event->theme = '111';
+        $event->tags = 'tag:foo,tag:bar';
+        $event->audience = '2, 3';
         $event->privacy = true;
 
-        $event->language = "something bad";
+        $event->language = 'something bad';
 
         $this->post('/events', $event->toArray());
 
@@ -168,12 +162,12 @@ class CreateEventTest extends TestCase
         create('App\Audience', [], 3);
         create('App\Theme', [], 3);
 
-        $event->theme = "1";
-        $event->tags = "tag:foo,tag:bar";
-        $event->audience = "2, 3";
+        $event->theme = '1';
+        $event->tags = 'tag:foo,tag:bar';
+        $event->audience = '2, 3';
         $event->privacy = true;
 
-        $event->language = "nl";
+        $event->language = 'nl';
         $this->assertCount(0, auth()->user()->locations);
 
         $this->post('/events', $event->toArray());
@@ -190,13 +184,13 @@ class CreateEventTest extends TestCase
         create('App\Audience', [], 3);
         create('App\Theme', [], 3);
 
-        $event->theme = "1";
+        $event->theme = '1';
 
-        $event->audience = "2, 3";
+        $event->audience = '2, 3';
 
         $event->privacy = true;
 
-        $event->codeweek_for_all_participation_code = "my_custom_code";
+        $event->codeweek_for_all_participation_code = 'my_custom_code';
 
         $this->post('/events', $event->toArray());
 
@@ -204,9 +198,8 @@ class CreateEventTest extends TestCase
 
         $this->get($event->path())->assertSee($event->title);
 
-        $this->get($event->path())->assertSee("my_custom_code");
+        $this->get($event->path())->assertSee('my_custom_code');
     }
-
 
     /** @test */
     public function event_should_have_a_title()
@@ -214,7 +207,6 @@ class CreateEventTest extends TestCase
         $this->publishEvent(['title' => null])->assertSessionHasErrors('title');
 
     }
-
 
     /** @test */
     public function event_should_have_a_description()
@@ -233,9 +225,9 @@ class CreateEventTest extends TestCase
         create('App\Audience', [], 3);
         create('App\Theme', [], 3);
 
-        $event->theme = "1";
+        $event->theme = '1';
 
-        $event->audience = "2, 3";
+        $event->audience = '2, 3';
 
         $event->privacy = true;
 
@@ -261,16 +253,14 @@ class CreateEventTest extends TestCase
         $event = make('App\Event');
 
         $event->country_iso = $belgium->iso;
-        $event->theme = "1";
-        $event->tags = "tag:foo,tag:bar";
-        $event->audience = "2, 3";
+        $event->theme = '1';
+        $event->tags = 'tag:foo,tag:bar';
+        $event->audience = '2, 3';
         $event->privacy = true;
-
 
         $this->post('/events', $event->toArray());
 
         Mail::assertQueued(\App\Mail\EventCreated::class, 1);
-
 
     }
 
@@ -288,25 +278,23 @@ class CreateEventTest extends TestCase
         create('App\Theme', [], 3);
 
         $ambassador_be = create('App\User', ['country_iso' => $belgium->iso])->assignRole('ambassador');
-        $leading_teacher = create('App\User', ['country_iso' => $belgium->iso, 'tag'=>'my-tag'])->assignRole('leading teacher');
+        $leading_teacher = create('App\User', ['country_iso' => $belgium->iso, 'tag' => 'my-tag'])->assignRole('leading teacher');
 
-        $this->assertCount(0,$leading_teacher->taggedActivities);
+        $this->assertCount(0, $leading_teacher->taggedActivities);
         $event = make('App\Event');
 
         $event->country_iso = $belgium->iso;
-        $event->theme = "1";
-        $event->tags = "tag:foo,tag:bar";
-        $event->audience = "2, 3";
+        $event->theme = '1';
+        $event->tags = 'tag:foo,tag:bar';
+        $event->audience = '2, 3';
         $event->privacy = true;
         $event->leading_teacher_tag = 'my-tag';
 
         $response = $this->post('/events', $event->toArray());
 
-        $this->assertCount(1,$leading_teacher->fresh()->taggedActivities);
-
+        $this->assertCount(1, $leading_teacher->fresh()->taggedActivities);
 
     }
-
 
     /** @test */
     public function an_authenticated_user_can_create_events_without_geoposition()
@@ -320,34 +308,30 @@ class CreateEventTest extends TestCase
         create('App\Audience', [], 3);
         create('App\Theme', [], 3);
 
-        $event->theme = "1";
-        $event->tags = "tag:foo,tag:bar";
-        $event->audience = "2, 3";
+        $event->theme = '1';
+        $event->tags = 'tag:foo,tag:bar';
+        $event->audience = '2, 3';
         $event->privacy = true;
         $event->geoposition = null;
-        $event->language = "nl";
-
+        $event->language = 'nl';
 
         $this->post('/events', $event->toArray());
 
         $event = Event::where('title', $event->title)->first();
 
         $this->get($event->path())->assertSee($event->title);
-        $this->get($event->path())->assertSee("tag:foo");
-        $this->get($event->path())->assertSee("tag:bar");
+        $this->get($event->path())->assertSee('tag:foo');
+        $this->get($event->path())->assertSee('tag:bar');
         $this->get($event->path())->assertSee($event->codeweek_for_all_participation_code);
-        $this->get($event->path())->assertSee("Dutch");
+        $this->get($event->path())->assertSee('Dutch');
     }
 
     public function publishEvent($overrides = [])
     {
         $this->withExceptionHandling()->signIn();
         $event = make('App\Event', $overrides);
+
         return $this->post('/events', $event->toArray());
 
     }
-
-
 }
-
-

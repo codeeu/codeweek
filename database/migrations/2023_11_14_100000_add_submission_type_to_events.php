@@ -18,8 +18,6 @@ class AddSubmissionTypeToEvents extends Migration
         });
     }
 
-
-
     /**
      * Reverse the migrations.
      *
@@ -28,8 +26,7 @@ class AddSubmissionTypeToEvents extends Migration
     public function down()
     {
 
-        Schema::table('events', function (Blueprint $table)
-        {
+        Schema::table('events', function (Blueprint $table) {
             $table->dropColumn('mass_added_for');
         });
     }

@@ -24,8 +24,8 @@ return [
             'activities' => [
                 '1' => '1. aktivnost – CodyRoby za osnovnu školu',
                 '2' => '2. aktivnost – CodyRoby za niže razrede srednje škole',
-                '3' => '3. aktivnost – CodyRoby za srednju školu'
-            ]
+                '3' => '3. aktivnost – CodyRoby za srednju školu',
+            ],
         ],
         '2' => [
             'title' => 'Računalno razmišljanje i rješavanje problema',
@@ -38,8 +38,8 @@ return [
             'activities' => [
                 '1' => '1. aktivnost – Razvoj matematičkog razmišljanja za osnovnu školu',
                 '2' => '2. aktivnost – Upoznavanje s algoritmima za niže razrede srednje škole',
-                '3' => '3. aktivnost – Algoritmi za više razrede srednje škole'
-            ]
+                '3' => '3. aktivnost – Algoritmi za više razrede srednje škole',
+            ],
         ],
         '3' => [
             'title' => 'Vizualno programiranje – Uvod u Scratch',
@@ -54,8 +54,8 @@ return [
             'activities' => [
                 '1' => '1. aktivnost – Osnove programa Scratch za osnovnu školu',
                 '2' => '2. aktivnost – Osnove programa Scratch za niže razrede srednje škole',
-                '3' => '3. aktivnost – Osnove programa Scratch za srednju školu'
-            ]
+                '3' => '3. aktivnost – Osnove programa Scratch za srednju školu',
+            ],
         ],
         '4' => [
             'title' => 'Izrada edukativnih igara uz Scratch',
@@ -70,8 +70,8 @@ return [
             'activities' => [
                 '1' => '1. aktivnost – Igra pitanja i odgovora uz jezik Scratch za osnovnu školu',
                 '2' => '2. aktivnost – Igra pitanja i odgovora uz jezik Scratch za niže razrede srednje škole',
-                '3' => '3. aktivnost – Igra pitanja i odgovora uz jezik Scratch za srednju školu'
-            ]
+                '3' => '3. aktivnost – Igra pitanja i odgovora uz jezik Scratch za srednju školu',
+            ],
         ],
         '5' => [
             'title' => 'Izrada, robotika i popravljanje u učionici',
@@ -84,8 +84,8 @@ return [
             'activities' => [
                 '1' => '1. aktivnost – Kako izraditi mehaničku ruku od lesonita za osnovnu školu',
                 '2' => '2. aktivnost – Kako izraditi mehaničku ili robotsku ruku za niže razrede srednje škole',
-                '3' => '3. aktivnost – Kako izraditi mehaničku ili robotsku ruku za više razrede srednje škole'
-            ]
+                '3' => '3. aktivnost – Kako izraditi mehaničku ili robotsku ruku za više razrede srednje škole',
+            ],
         ],
         '6' => [
             'title' => 'App Inventor i razvoj aplikacija',
@@ -95,8 +95,8 @@ return [
             'activities' => [
                 '1' => 'Aktivnost 1. – naslov, za osnovnu školu',
                 '2' => 'Aktivnost 2. – naslov, za niže razrede srednje škole',
-                '3' => 'Aktivnost 3. – naslov, za više razrede srednje škole'
-            ]
+                '3' => 'Aktivnost 3. – naslov, za više razrede srednje škole',
+            ],
         ],
         '7' => [
             'title' => 'Učenje kroz igru i stvaranje',
@@ -106,8 +106,8 @@ return [
             'activities' => [
                 '1' => 'Aktivnost 1. – naslov, za osnovnu školu',
                 '2' => 'Aktivnost 2. – naslov, za niže razrede srednje škole',
-                '3' => 'Aktivnost 3. – naslov, za više razrede srednje škole'
-            ]
+                '3' => 'Aktivnost 3. – naslov, za više razrede srednje škole',
+            ],
         ],
         '8' => [
             'title' => 'Programiranje za sve predmete',
@@ -120,8 +120,8 @@ return [
                 '1' => 'Aktivnost 1. Robotika i uključivanje osnovnoškolskih učenika u STEM',
                 '2' => 'Aktivnost 2. Glazba je programiranje',
                 '3' => 'Aktivnost 3. Učenje kroz igru i programiranje s pomoću alata Makey Makey',
-                '4' => 'Aktivnost 4. Algoritam iz svakodnevnog života za uporabu CLIL-a u nastavi'
-            ]
+                '4' => 'Aktivnost 4. Algoritam iz svakodnevnog života za uporabu CLIL-a u nastavi',
+            ],
         ],
         '9' => [
             'title' => 'Izrada automata s micro:bitom',
@@ -136,7 +136,7 @@ U ovom videozapisu Pauline Mass, profesorica računalnih znanosti na Koninklijke
                 '1' => 'Morseov kôd s micro:bitom za osnovnu školu',
                 '2' => 'Soba za bijeg s micro:bitom za niže razrede srednje škole',
                 '3' => 'Izrada automata za više razrede srednje škole',
-            ]
+            ],
         ],
         '10' => [
             'title' => 'Kreativno kodiranje s pomoću programskog jezika Python',
@@ -158,36 +158,36 @@ S pomoću programskog jezika Python učenici mogu stvarati kvizove o povijesnim 
             'links' => [
                 'title' => 'Drugi povezani izvori',
                 '1' => [
-                    "url" => "https://docs.python.org/3/library/",
-                    "title" => "Standardna knjižnica programskog jezika Python",
-                    "description" => "Kolekcija prethodno izrađenih kodova i modula (npr. modul turtle, matematički modul itd.)",
+                    'url' => 'https://docs.python.org/3/library/',
+                    'title' => 'Standardna knjižnica programskog jezika Python',
+                    'description' => 'Kolekcija prethodno izrađenih kodova i modula (npr. modul turtle, matematički modul itd.)',
                 ],
                 '2' => [
-                    "url" => "https://codecombat.com/",
-                    "title" => "CodeCombat",
-                    "description" => "Edukativna videoigra za učenje koncepata programiranja.",
+                    'url' => 'https://codecombat.com/',
+                    'title' => 'CodeCombat',
+                    'description' => 'Edukativna videoigra za učenje koncepata programiranja.',
                 ],
                 '3' => [
-                    "url" => "https://projects.raspberrypi.org/hr-HR/codeclub",
-                    "title" => "Projekti CodeClub",
-                    "description" => "Detaljni projekti u području programiranja za djecu, od početnika do naprednih korisnika.",
+                    'url' => 'https://projects.raspberrypi.org/hr-HR/codeclub',
+                    'title' => 'Projekti CodeClub',
+                    'description' => 'Detaljni projekti u području programiranja za djecu, od početnika do naprednih korisnika.',
                 ],
                 '4' => [
-                    "url" => "https://inventwithpython.com/invent4thed/",
-                    "title" => "Osmislite vlastite računalne igre s pomoću programskog jezika Python",
-                    "description" => "Knjiga u kojoj možete naučiti kako programirati vlastitu računalnu igru s pomoću programskog jezika Python.",
+                    'url' => 'https://inventwithpython.com/invent4thed/',
+                    'title' => 'Osmislite vlastite računalne igre s pomoću programskog jezika Python',
+                    'description' => 'Knjiga u kojoj možete naučiti kako programirati vlastitu računalnu igru s pomoću programskog jezika Python.',
                 ],
                 '5' => [
-                    "url" => "https://www.codewars.com/",
-                    "title" => "CodeWars",
-                    "description" => "Edukativna zajednica u kojoj učenici i učitelji mogu prolaziti obuke kroz niz izazova.",
+                    'url' => 'https://www.codewars.com/',
+                    'title' => 'CodeWars',
+                    'description' => 'Edukativna zajednica u kojoj učenici i učitelji mogu prolaziti obuke kroz niz izazova.',
                 ],
                 '6' => [
-                    "url" => "https://hourofpython.com/",
-                    "title" => "Hour of Python",
-                    "description" => "Kolekcija uvodnih predavanja o programskom jeziku Python (i oni koji se temelje na tekstu i blokovi) s pomoću interaktivne stranice Trinkets.",
+                    'url' => 'https://hourofpython.com/',
+                    'title' => 'Hour of Python',
+                    'description' => 'Kolekcija uvodnih predavanja o programskom jeziku Python (i oni koji se temelje na tekstu i blokovi) s pomoću interaktivne stranice Trinkets.',
                 ],
-            ]
+            ],
         ],
         '11' => [
             'title' => 'Kodiranje za uključivanje',
@@ -201,125 +201,123 @@ U ovom videozapisu tim Tjedna kodiranja pokazat će vam nekoliko praktičnih, je
                 '1' => 'Kodiranje jajima',
                 '2' => 'Jedan jako pametan miš ',
                 '3' => 'Zvijezda koja rađa zvijezde ',
-            ]
+            ],
         ],
 
-        "12" => [
-            "title" => "Kodiranje za ciljeve održivog razvoja",
-            "author" => "napisali Francisco Javier Masero, Cristina Nicolaita i Erviola Konomi",
-            "text" => [
-                "1" => "Tradicionalno obrazovanje pruža učenicima malo prilika za razumijevanje i rješavanje problema iz stvarnog svijeta kao što su globalne klimatske promjene, ravnopravnost spolova, glad, siromaštvo ili dobro zdravlje i dobrobit.",
-                "2" => "Ciljevi održivog razvoja (SDG) su srž Agende za održivi razvoj do 2030. godine, koju su sve države članice Ujedinjenih naroda usvojile kao putokaz za postizanje mira i prosperiteta na planetu, potičući globalni razvoj. Nastavnici mogu koristiti SDG-ove u učionici kao alat za razvijanje ključnog mišljenja učenika, ali i kao pomoć u pronalaženju identiteta i svrhe. Kombinacija osnovnih elemenata kodiranja i računskog razmišljanja sa SDG-ovima povećat će samopouzdanje vaših učenika, a vi ćete im pomoći da razviju svoju kreativnost, poduzetnički duh, vještine rješavanja problema ili komunikacijske vještine.",
-                "3" => "U dolje datim aktivnostima učenici će primijeniti principe Scratch, ASCII kodiranja i „unplugged“ kodiranja na teme od globalne i društvene važnosti danas. Nastavnici će podizati svijest o ciljevima održivog razvoja, pomažući im da na zabavan i zanimljiv način razviju empatiju, aktivno građanstvo i prosocijalne vještine.",
-                "4" => "Ovi se planovi lekcija usredotočuju na svaki od SDG-ova:",
-                "5" => "Cilj održivog razvoja 3: Osigurati zdrav život i promovirati dobrobit svih u svim dobnim skupinama",
-                "6" => "Cilj održivog razvoja 5: Postići rodnu ravnopravnost i osnažiti sve žene i djevojke",
-                "7" => "Cilj održivog razvoja 13: Poduzeti hitne mjere u borbi protiv klimatskih promjena i njihovih utjecaja",
+        '12' => [
+            'title' => 'Kodiranje za ciljeve održivog razvoja',
+            'author' => 'napisali Francisco Javier Masero, Cristina Nicolaita i Erviola Konomi',
+            'text' => [
+                '1' => 'Tradicionalno obrazovanje pruža učenicima malo prilika za razumijevanje i rješavanje problema iz stvarnog svijeta kao što su globalne klimatske promjene, ravnopravnost spolova, glad, siromaštvo ili dobro zdravlje i dobrobit.',
+                '2' => 'Ciljevi održivog razvoja (SDG) su srž Agende za održivi razvoj do 2030. godine, koju su sve države članice Ujedinjenih naroda usvojile kao putokaz za postizanje mira i prosperiteta na planetu, potičući globalni razvoj. Nastavnici mogu koristiti SDG-ove u učionici kao alat za razvijanje ključnog mišljenja učenika, ali i kao pomoć u pronalaženju identiteta i svrhe. Kombinacija osnovnih elemenata kodiranja i računskog razmišljanja sa SDG-ovima povećat će samopouzdanje vaših učenika, a vi ćete im pomoći da razviju svoju kreativnost, poduzetnički duh, vještine rješavanja problema ili komunikacijske vještine.',
+                '3' => 'U dolje datim aktivnostima učenici će primijeniti principe Scratch, ASCII kodiranja i „unplugged“ kodiranja na teme od globalne i društvene važnosti danas. Nastavnici će podizati svijest o ciljevima održivog razvoja, pomažući im da na zabavan i zanimljiv način razviju empatiju, aktivno građanstvo i prosocijalne vještine.',
+                '4' => 'Ovi se planovi lekcija usredotočuju na svaki od SDG-ova:',
+                '5' => 'Cilj održivog razvoja 3: Osigurati zdrav život i promovirati dobrobit svih u svim dobnim skupinama',
+                '6' => 'Cilj održivog razvoja 5: Postići rodnu ravnopravnost i osnažiti sve žene i djevojke',
+                '7' => 'Cilj održivog razvoja 13: Poduzeti hitne mjere u borbi protiv klimatskih promjena i njihovih utjecaja',
             ],
-            "activities" => [
-                "1" => "Karateka projekt: Učenje karatea kroz programiranje, za osnovnu, nižu i višu srednju školu",
-                "2" => "Ciljevi održivog razvoja i kodiranje za klimatske promjene, za osnovnu školu",
-                "3" => "Kodiranje za ravnopravnost spolova, za srednju školu",
-            ]
+            'activities' => [
+                '1' => 'Karateka projekt: Učenje karatea kroz programiranje, za osnovnu, nižu i višu srednju školu',
+                '2' => 'Ciljevi održivog razvoja i kodiranje za klimatske promjene, za osnovnu školu',
+                '3' => 'Kodiranje za ravnopravnost spolova, za srednju školu',
+            ],
         ],
-        "13" => [
-            "title" => "Uvod u umjetnu inteligenciju u učionici",
-            "author" => "autori Artur Coelho i Marjana Prifti Skenduli",
-            "text" => [
-                "1" => "Umjetna inteligencija (AI) utječe na mnoga područja svakodnevnog života: automatski ispravlja tekst koji pišete na telefonu, bira glazbu koju vaša omiljena glazbena aplikacija pušta i pamti vaše lozinke kad ste ih zaboravili. AI se odnosi na kombinaciju strojnog učenja, robotike i algoritama, s aplikacijama u svim poljima: od informatike do proizvodnje i od medicine do mode. Stoga ima neporecivo mjesto u našim životima i našim društvima i igra ključnu ulogu u razvoju znanosti. I kao i svaki drugi važan fenomen u našem životu, i učenici će imati koristi od učenja o njemu. Ali kako podučavati o tako složenoj stvari kao što je AI?",
-                "2" => "Ovaj dio učenja pomoći će vam objasniti učenicima što je AI i koju ulogu on ima u životu učenika. Te su aktivnosti namijenjene nestručnjacima da lako razumiju sadržaj i da složene pojmove mogu učinkovito razbiti na lako razumljive ideje. Ovim planovima lekcija možete pomoći učenicima da nauče koristi AI i neke od mehanizama koji stoje iza njega. Te su aktivnosti namijenjene učenicima da razviju svoje vještine analitičkog i kritičkog mišljenja: na primjer, u Marjaninoj aktivnosti učenici razvijaju klasifikacijski cjevovod. Te će aktivnosti također pomoći učenicima da razumiju različite primjene umjetne inteligencije: u Arturovoj aktivnosti naučit će o vezi između umjetne inteligencije i umjetnosti i kako se umjetna inteligencija može koristiti za poboljšanje vizualnog izražavanja. Ovim aktivnostima učenici će također razmišljati o opasnostima umjetne inteligencije i njihovom utjecaju."
+        '13' => [
+            'title' => 'Uvod u umjetnu inteligenciju u učionici',
+            'author' => 'autori Artur Coelho i Marjana Prifti Skenduli',
+            'text' => [
+                '1' => 'Umjetna inteligencija (AI) utječe na mnoga područja svakodnevnog života: automatski ispravlja tekst koji pišete na telefonu, bira glazbu koju vaša omiljena glazbena aplikacija pušta i pamti vaše lozinke kad ste ih zaboravili. AI se odnosi na kombinaciju strojnog učenja, robotike i algoritama, s aplikacijama u svim poljima: od informatike do proizvodnje i od medicine do mode. Stoga ima neporecivo mjesto u našim životima i našim društvima i igra ključnu ulogu u razvoju znanosti. I kao i svaki drugi važan fenomen u našem životu, i učenici će imati koristi od učenja o njemu. Ali kako podučavati o tako složenoj stvari kao što je AI?',
+                '2' => 'Ovaj dio učenja pomoći će vam objasniti učenicima što je AI i koju ulogu on ima u životu učenika. Te su aktivnosti namijenjene nestručnjacima da lako razumiju sadržaj i da složene pojmove mogu učinkovito razbiti na lako razumljive ideje. Ovim planovima lekcija možete pomoći učenicima da nauče koristi AI i neke od mehanizama koji stoje iza njega. Te su aktivnosti namijenjene učenicima da razviju svoje vještine analitičkog i kritičkog mišljenja: na primjer, u Marjaninoj aktivnosti učenici razvijaju klasifikacijski cjevovod. Te će aktivnosti također pomoći učenicima da razumiju različite primjene umjetne inteligencije: u Arturovoj aktivnosti naučit će o vezi između umjetne inteligencije i umjetnosti i kako se umjetna inteligencija može koristiti za poboljšanje vizualnog izražavanja. Ovim aktivnostima učenici će također razmišljati o opasnostima umjetne inteligencije i njihovom utjecaju.',
             ],
-            "activities" => [
-                "1" => "Umjetnost čovjek - umjetna inteligencija, osnovna škola",
-                "2" => "Učenje strojeva da klasificiraju: Uvod u nadzirano strojno učenje, za niže srednje škole",
-                "3" => "Učenje strojeva da klasificiraju: Uvod u nadzirano strojno učenje, za više srednje škole",
-            ]
+            'activities' => [
+                '1' => 'Umjetnost čovjek - umjetna inteligencija, osnovna škola',
+                '2' => 'Učenje strojeva da klasificiraju: Uvod u nadzirano strojno učenje, za niže srednje škole',
+                '3' => 'Učenje strojeva da klasificiraju: Uvod u nadzirano strojno učenje, za više srednje škole',
+            ],
         ],
         '14' => [
             'title' => 'Učenje u doba inteligentnih strojeva',
             'author' => 'Napisali: Adil Tugyan, Georgia Lascaris and Marco Neves',
             'text' => [
                 '1' => 'Napredak umjetne inteligencije u posljednjih je godina bio impresivan zahvaljujući brzom napretku u računalnoj snazi i dostupnosti velikih količina podataka. To je uzrokovalo znatna ulaganja u istraživanje umjetne inteligencije i brzo širenje industrije umjetne inteligencije, što je dovelo do toga da je umjetna inteligencija jedna od većih tehnoloških revolucija našeg vremena. Umjetna inteligencija je svuda oko nas. Postala je dio naše svakodnevne rutine do te mjere, da je ponekad ne smatramo umjetnom inteligencijom: gotovo svaki dan upotrebljavamo internetske preporuke, prepoznavanje lica, sigurnosne sustave i glasovne pomoćnike. Ali što je sa obrazovanjem? ',
-                '2' => 'Umjetna inteligencija ima ogroman potencijal za omogućavanje novih načina podučavanja i učenja te poboljšanje postupka učenja. S pomoću ovih edukacijskih aktivnosti moći ćete u svoje podučavanje integrirati autentične aktivnosti umjetne inteligencije i pripremiti učenike za život i karijeru u svijetu koji je oblikovala umjetna inteligencija. Te su aktivnosti namijenjene učenicima za razvoj njihove znatiželje, vještina rješavanje problema i kreativnih vještina: Na primjer, u Adilovoj aktivnosti, učenici uče o algoritmima i neuralnim mrežama te ih se potiče da stvore vlastitu neuralnu mrežu za vizualizaciju mozga umjetne inteligencije. Georgia će voditi vaše učenike korak po korak kroz razvoj bota za razgovor. Učenici će napraviti vlastiti bot za razgovor, pripremiti skupove podataka o pitanjima i odgovorima i obučiti bota kako bi mogao odgovoriti na pitanja o virusu Covid-19. U Marcovoj aktivnosti učenici će istražiti prednosti i izazove upotrebe pametnih strojeva u svakodnevnom životu i radu. Koje rizike umjetne inteligencije trebamo uzeti u obzir? Koje će učinke umjetna inteligencija imati na budućnost rada? Koja će im se radna mjesta ponuditi kada ubuduće uđu na tržište radnih mjesta?'
+                '2' => 'Umjetna inteligencija ima ogroman potencijal za omogućavanje novih načina podučavanja i učenja te poboljšanje postupka učenja. S pomoću ovih edukacijskih aktivnosti moći ćete u svoje podučavanje integrirati autentične aktivnosti umjetne inteligencije i pripremiti učenike za život i karijeru u svijetu koji je oblikovala umjetna inteligencija. Te su aktivnosti namijenjene učenicima za razvoj njihove znatiželje, vještina rješavanje problema i kreativnih vještina: Na primjer, u Adilovoj aktivnosti, učenici uče o algoritmima i neuralnim mrežama te ih se potiče da stvore vlastitu neuralnu mrežu za vizualizaciju mozga umjetne inteligencije. Georgia će voditi vaše učenike korak po korak kroz razvoj bota za razgovor. Učenici će napraviti vlastiti bot za razgovor, pripremiti skupove podataka o pitanjima i odgovorima i obučiti bota kako bi mogao odgovoriti na pitanja o virusu Covid-19. U Marcovoj aktivnosti učenici će istražiti prednosti i izazove upotrebe pametnih strojeva u svakodnevnom životu i radu. Koje rizike umjetne inteligencije trebamo uzeti u obzir? Koje će učinke umjetna inteligencija imati na budućnost rada? Koja će im se radna mjesta ponuditi kada ubuduće uđu na tržište radnih mjesta?',
             ],
             'activities' => [
                 'title' => 'U nastavnim planovima u nastavku, učenici će na zabavan i zanimljiv način učiti o pametnim strojevima.',
                 '1' => 'Umjetna inteligencija i njezine neuralne mreže, za učenike osnovnih škola',
                 '2' => 'Moj Covid-19 bot za razgovor, za učenike nižih razreda srednjih škola',
                 '3' => 'Život u doba „pametnih strojeva”: Izazovi i mogućnosti, za učenike viših razreda srednjih škola',
-            ]
+            ],
         ],
 
-        "15" => [
-            "title" => "Rudarska medijska pismenost",
-            "author" => "autorice Marijana Smolčec, Tea Horvatić i Sanja Božinović",
-            "text" => [
-                "Obrazovanje za medijsku pismenost nikada nije bilo važnije za današnje učenike. Učenici svih dobnih grupa trebaju steći relevantne vještine, znanja i stavove kako bi se mogli snalaziti u našem svijetu bogatom medijima. Vještine medijske pismenosti pomoći će im da koriste vjerodostojne mrežne sadržaje i prepoznaju zavaravajuće izvore informacija. Razumjet će kako provjeriti činjenice informacije koje pronađu na mreži i kako ih kritički protumačiti. Oni će podići svoju svijest o pravilnom korištenju kreativnog rada i primijenit će svoje učenje prilikom kreiranja vlastitih kreativnih sadržaja",
-                "Ovaj dio programa za učenje omogućit će vam primjenu različitih strategija i tehnika kako biste osnažili svoje učenike da postanu medijski pismeni. U Marijaninoj aktivnosti učenici uče kako sigurno i odgovorno koristiti web sadržaje. Upoznali su se s različitim vrstama licenci i razvili su jednostavnu aplikaciju koja pokazuje kako pravilno dijeliti kreativne radove. U Teinoj aktivnosti učenici započinju zadatak za učenje o mamcima za klik. Putem zanimljivih zadataka učenici istražuju strategije za prepoznavanje i otkrivanje mamaca za klik i uče kako ih izbjeći. Sanja omogućuje učenicima da istražuju i kritički analiziraju i procjenjuju web sadržaj, njegovu relevantnost, točnost, podrijetlo i svrhu. Uče kako pronaći pouzdane izvore na internetu i kako prepoznati lažne podatke na internetu.",
-                "U planovima lekcija ispod pronaći ćete nadahnjujuće i zanimljive aktivnosti za poboljšanje vještina medijske pismenosti učenika:",
+        '15' => [
+            'title' => 'Rudarska medijska pismenost',
+            'author' => 'autorice Marijana Smolčec, Tea Horvatić i Sanja Božinović',
+            'text' => [
+                'Obrazovanje za medijsku pismenost nikada nije bilo važnije za današnje učenike. Učenici svih dobnih grupa trebaju steći relevantne vještine, znanja i stavove kako bi se mogli snalaziti u našem svijetu bogatom medijima. Vještine medijske pismenosti pomoći će im da koriste vjerodostojne mrežne sadržaje i prepoznaju zavaravajuće izvore informacija. Razumjet će kako provjeriti činjenice informacije koje pronađu na mreži i kako ih kritički protumačiti. Oni će podići svoju svijest o pravilnom korištenju kreativnog rada i primijenit će svoje učenje prilikom kreiranja vlastitih kreativnih sadržaja',
+                'Ovaj dio programa za učenje omogućit će vam primjenu različitih strategija i tehnika kako biste osnažili svoje učenike da postanu medijski pismeni. U Marijaninoj aktivnosti učenici uče kako sigurno i odgovorno koristiti web sadržaje. Upoznali su se s različitim vrstama licenci i razvili su jednostavnu aplikaciju koja pokazuje kako pravilno dijeliti kreativne radove. U Teinoj aktivnosti učenici započinju zadatak za učenje o mamcima za klik. Putem zanimljivih zadataka učenici istražuju strategije za prepoznavanje i otkrivanje mamaca za klik i uče kako ih izbjeći. Sanja omogućuje učenicima da istražuju i kritički analiziraju i procjenjuju web sadržaj, njegovu relevantnost, točnost, podrijetlo i svrhu. Uče kako pronaći pouzdane izvore na internetu i kako prepoznati lažne podatke na internetu.',
+                'U planovima lekcija ispod pronaći ćete nadahnjujuće i zanimljive aktivnosti za poboljšanje vještina medijske pismenosti učenika:',
             ],
-            "activities" => [
-                "1" => "Je li besplatno ako je na internetu?",
-                "2" => "Kliknuti ili ne kliknuti",
-                "3" => "Provjera činjenica",
-            ]
+            'activities' => [
+                '1' => 'Je li besplatno ako je na internetu?',
+                '2' => 'Kliknuti ili ne kliknuti',
+                '3' => 'Provjera činjenica',
+            ],
         ],
-        "16" => [
-            "title" => "PRIČANJE PRIČA S HEDY",
-            "author" => "autorica: Felienne Hermans",
-            "text" => [
-                "Jesu li vašu učenici već svladali vizualni programski jezik, ali se ne osjećaju spremnima zaroniti dublje u programski jezik koji se temelji na tekstu? Onda je ovaj dio za učenje samo za vas i vaše učenike jer će im pomoći da premoste jaz između vizualnog programskog jezika i programskog jezika koji se temelji na tekstu. Dio za učenje <strong>Pričanje priča s Hedy</strong> obuhvaća tri nastavna plana koji koriste Hedy, stupnjeviti programski jezik kojim se djeca podučavaju programiranju.",
+        '16' => [
+            'title' => 'PRIČANJE PRIČA S HEDY',
+            'author' => 'autorica: Felienne Hermans',
+            'text' => [
+                'Jesu li vašu učenici već svladali vizualni programski jezik, ali se ne osjećaju spremnima zaroniti dublje u programski jezik koji se temelji na tekstu? Onda je ovaj dio za učenje samo za vas i vaše učenike jer će im pomoći da premoste jaz između vizualnog programskog jezika i programskog jezika koji se temelji na tekstu. Dio za učenje <strong>Pričanje priča s Hedy</strong> obuhvaća tri nastavna plana koji koriste Hedy, stupnjeviti programski jezik kojim se djeca podučavaju programiranju.',
 
-                "Hedy je usmjerena na djecu koja žele početi raditi s tekstualnim programskim jezicima, ali kojima bi početak s jezikom Python bio presložen. Stupnjeviti programski jezici upotrebljavaju različite jezične razine, a svaka razina dodaje nove pojmove i sintaktičku složenost. Na kraju niza razine programa Hedy učenici svladavaju podskup sintaktički valjanog Pythona.",
+                'Hedy je usmjerena na djecu koja žele početi raditi s tekstualnim programskim jezicima, ali kojima bi početak s jezikom Python bio presložen. Stupnjeviti programski jezici upotrebljavaju različite jezične razine, a svaka razina dodaje nove pojmove i sintaktičku složenost. Na kraju niza razine programa Hedy učenici svladavaju podskup sintaktički valjanog Pythona.',
 
-                "U ovom dijelu za učenje pronaći ćete inspirirajuće i poticajne aktivnosti koje će vašim učenicima pomoći da učinkovito upotrebljavaju programske jezike koji se temelje na tekstu. Izradom vlastitih interaktivnih priča postupno će učiti programiranje umjesto da sve uče odjednom. U nastavnom planu za osnovnu školu učenike se uvodi u osnovne pojmove programiranja. Nastavni plan za niže razrede srednje škole uvodi daljnje pojmove programiranja, dok nastavni plan za više razrede srednje škole omogućava učenicima da programiraju složenije priče i aktivnosti.",
+                'U ovom dijelu za učenje pronaći ćete inspirirajuće i poticajne aktivnosti koje će vašim učenicima pomoći da učinkovito upotrebljavaju programske jezike koji se temelje na tekstu. Izradom vlastitih interaktivnih priča postupno će učiti programiranje umjesto da sve uče odjednom. U nastavnom planu za osnovnu školu učenike se uvodi u osnovne pojmove programiranja. Nastavni plan za niže razrede srednje škole uvodi daljnje pojmove programiranja, dok nastavni plan za više razrede srednje škole omogućava učenicima da programiraju složenije priče i aktivnosti.',
 
-                "U interaktivnoj priči u nastavku pogledajte kako čitatelji mogu sudjelovati u priči te kako se njeguje njihov aktivni angažman."
+                'U interaktivnoj priči u nastavku pogledajte kako čitatelji mogu sudjelovati u priči te kako se njeguje njihov aktivni angažman.',
             ],
-            "activities" => [
-                "1" => "Izradite vlastitu interaktivnu priču s Hedy za učenike osnovne škole",
-                "2" => "Izradite vlastitu interaktivnu priču s Hedy za učenike nižih razreda srednje škole",
-                "3" => "Izradite vlastitu interaktivnu priču s Hedy za učenike viših razreda srednje škole",
-            ]
+            'activities' => [
+                '1' => 'Izradite vlastitu interaktivnu priču s Hedy za učenike osnovne škole',
+                '2' => 'Izradite vlastitu interaktivnu priču s Hedy za učenike nižih razreda srednje škole',
+                '3' => 'Izradite vlastitu interaktivnu priču s Hedy za učenike viših razreda srednje škole',
+            ],
         ],
-        "17" => [
-            "title" => "Programiranje i osjećaji",
-            "author" => "autorice Alenke Miljević",
-            "text" => [
-                "Društvena i emocionalna dobrobit sposobnost je da budete otporni, znate kako upravljati svojim emocijama i reagirati na emocije drugih ljudi, razvijate smislene odnose s drugima, stvarate emocije koje dovode do dobrih osjećaja i stvorite vlastitu mrežu emocionalne podrške. Društvene i emocionalne vještine koje mladi uče u školi pomažu im u razvijanju otpornosti i utvrđuju obrazac kako će upravljati svojim fizičkim i mentalnim zdravljem tijekom života. (Vijeće Europe)",
-                "Odjeljkom za učenje Programiranje i osjećaji (engl. Feel the Code) omogućit će vam se da potaknete društvenu i emocionalnu dobrobit svojih učenika prepoznavanjem, objašnjavanjem, razumijevanjem i reagiranjem na pozitivne i negativne osjećaje i emocije kako bi razvili empatiju i otpornost.  U tom odjeljku za učenje pronaći ćete nadahnjujuće i zanimljive aktivnosti koje će poslužiti kao pomoć vašim učenicima da putem programiranja razviju vještine za nošenje s različitim emocijama. Vaši će učenici naučiti kako izraziti svoje osjećaje i kako reagirati na emocije svojih vršnjaka uz pomoć robota Bee-Bot.",
-                "Odjeljak za učenje Programiranje i osjećaji sadržava tri nastavna plana u kojima se upotrebljava obrazovni robot Bee-Bot za izradu aktivnosti kojima se učenike potiče na razgovor o emocijama i razvijanje empatije. U nastavnom planu za osnovnu školu učenici programiraju Bee-Bota kako bi se pričalo o emocijama kao što su tuga, sreća, strah i ljutnja te kako bi otkrili razloge zašto oni i njihovi vršnjaci osjećaju te emocije. U okviru nastavnog plana za niže razrede srednje škole učenike se potiče da programiraju Bee-Bota, prepoznaju svoje osjećaje i osjećaje svojih vršnjaka, razumiju što ih je uzrokovalo i kako na njih reagirati. U okviru nastavnog plana za više razrede srednje škole učenicima se omogućuje da upravljanju Bee-Botom i izmišljaju priče o osjećajima, otpornosti i empatiji.",
-                "Ako u svojoj učionici nemate obrazovnog robota, u ovom odjeljku za učenje pronaći ćete ideje za izvanmrežne aktivnosti kojima se potiče razvoj društvenih i emocionalnih vještina. U interaktivnom dijelu u nastavku navodi se kratak pregled aktivnosti koje možete raditi u svojoj učionici:"
+        '17' => [
+            'title' => 'Programiranje i osjećaji',
+            'author' => 'autorice Alenke Miljević',
+            'text' => [
+                'Društvena i emocionalna dobrobit sposobnost je da budete otporni, znate kako upravljati svojim emocijama i reagirati na emocije drugih ljudi, razvijate smislene odnose s drugima, stvarate emocije koje dovode do dobrih osjećaja i stvorite vlastitu mrežu emocionalne podrške. Društvene i emocionalne vještine koje mladi uče u školi pomažu im u razvijanju otpornosti i utvrđuju obrazac kako će upravljati svojim fizičkim i mentalnim zdravljem tijekom života. (Vijeće Europe)',
+                'Odjeljkom za učenje Programiranje i osjećaji (engl. Feel the Code) omogućit će vam se da potaknete društvenu i emocionalnu dobrobit svojih učenika prepoznavanjem, objašnjavanjem, razumijevanjem i reagiranjem na pozitivne i negativne osjećaje i emocije kako bi razvili empatiju i otpornost.  U tom odjeljku za učenje pronaći ćete nadahnjujuće i zanimljive aktivnosti koje će poslužiti kao pomoć vašim učenicima da putem programiranja razviju vještine za nošenje s različitim emocijama. Vaši će učenici naučiti kako izraziti svoje osjećaje i kako reagirati na emocije svojih vršnjaka uz pomoć robota Bee-Bot.',
+                'Odjeljak za učenje Programiranje i osjećaji sadržava tri nastavna plana u kojima se upotrebljava obrazovni robot Bee-Bot za izradu aktivnosti kojima se učenike potiče na razgovor o emocijama i razvijanje empatije. U nastavnom planu za osnovnu školu učenici programiraju Bee-Bota kako bi se pričalo o emocijama kao što su tuga, sreća, strah i ljutnja te kako bi otkrili razloge zašto oni i njihovi vršnjaci osjećaju te emocije. U okviru nastavnog plana za niže razrede srednje škole učenike se potiče da programiraju Bee-Bota, prepoznaju svoje osjećaje i osjećaje svojih vršnjaka, razumiju što ih je uzrokovalo i kako na njih reagirati. U okviru nastavnog plana za više razrede srednje škole učenicima se omogućuje da upravljanju Bee-Botom i izmišljaju priče o osjećajima, otpornosti i empatiji.',
+                'Ako u svojoj učionici nemate obrazovnog robota, u ovom odjeljku za učenje pronaći ćete ideje za izvanmrežne aktivnosti kojima se potiče razvoj društvenih i emocionalnih vještina. U interaktivnom dijelu u nastavku navodi se kratak pregled aktivnosti koje možete raditi u svojoj učionici:',
             ],
-            "activities" => [
-                "1" => "Programiraj – Osjećaj – Nauči za osnovnoškolce",
-                "2" => "Moje srce nije od kamena za učenike nižih razreda srednje škole",
-                "3" => "Programiraj me do raspoloženja za učenike viših razreda srednje škole",
-            ]
-        ],"18" => [
+            'activities' => [
+                '1' => 'Programiraj – Osjećaj – Nauči za osnovnoškolce',
+                '2' => 'Moje srce nije od kamena za učenike nižih razreda srednje škole',
+                '3' => 'Programiraj me do raspoloženja za učenike viših razreda srednje škole',
+            ],
+        ], '18' => [
 
-            "title" => "SOS za vodu",
-            "author" => "autora Francisca Delgada Cecilia",
-            "text" => [
+            'title' => 'SOS za vodu',
+            'author' => 'autora Francisca Delgada Cecilia',
+            'text' => [
 
-                "SOS za vodu odgovor je na potrebu da se bavimo problemom onečišćenja vode. Unatoč naporima koji se proteklih godina ulažu, dvije milijarde ljudi diljem svijeta i dalje nemaju pristup sigurnoj vodi za piće. To znači da smo daleko od postizanja 6. cilja održivog razvoja iz Programa do 2030. u kojem se navodi da do 2030. godine svi ljudi trebaju imati pristup vodi kojom se sigurno upravlja te higijenskim i sanitarnim uvjetima. To vrijedi i za 14. cilj održivog razvoja, život ispod vode, kojim se nastoji očuvati i održivo koristiti oceane, mora i morske resurse za održiv razvoj.",
+                'SOS za vodu odgovor je na potrebu da se bavimo problemom onečišćenja vode. Unatoč naporima koji se proteklih godina ulažu, dvije milijarde ljudi diljem svijeta i dalje nemaju pristup sigurnoj vodi za piće. To znači da smo daleko od postizanja 6. cilja održivog razvoja iz Programa do 2030. u kojem se navodi da do 2030. godine svi ljudi trebaju imati pristup vodi kojom se sigurno upravlja te higijenskim i sanitarnim uvjetima. To vrijedi i za 14. cilj održivog razvoja, život ispod vode, kojim se nastoji očuvati i održivo koristiti oceane, mora i morske resurse za održiv razvoj.',
 
-                "Ovaj odjeljak za učenje naglasak stavlja na važno i aktualno pitanje mjerenja kvalitete vode i novih onečišćivača koji dovode u pitanje kvalitetu vode. Učenici će imati priliku istražiti i tražiti rješenja za stvarne probleme povezane s vodom i okolišem, što će im omogućiti da razviju vještine poput istraživanja, kritičkog razmišljanja i rješavanja problema.",
+                'Ovaj odjeljak za učenje naglasak stavlja na važno i aktualno pitanje mjerenja kvalitete vode i novih onečišćivača koji dovode u pitanje kvalitetu vode. Učenici će imati priliku istražiti i tražiti rješenja za stvarne probleme povezane s vodom i okolišem, što će im omogućiti da razviju vještine poput istraživanja, kritičkog razmišljanja i rješavanja problema.',
 
-                "Nastavni planovi uključuju praktične i kreativne aktivnosti poput programiranja u programu Scratch, uvoda u strojno učenje i umjetnu inteligenciju uz platformu Learning Machine Learning te izrade vozila kojima se upravlja s pomoću Lego kompleta radi uzorkovanja vode i analize pH-vrijednosti vode. Te će aktivnosti omogućiti učenicima da praktično primjenjuju svoje vještine i znanja u interaktivnom i zaigranom okruženju, što će ih dodatno motivirati i zainteresirati za projekt.",
+                'Nastavni planovi uključuju praktične i kreativne aktivnosti poput programiranja u programu Scratch, uvoda u strojno učenje i umjetnu inteligenciju uz platformu Learning Machine Learning te izrade vozila kojima se upravlja s pomoću Lego kompleta radi uzorkovanja vode i analize pH-vrijednosti vode. Te će aktivnosti omogućiti učenicima da praktično primjenjuju svoje vještine i znanja u interaktivnom i zaigranom okruženju, što će ih dodatno motivirati i zainteresirati za projekt.',
 
-                "Za provedbu ovog odjeljka za učenje predlaže se osmišljavanje triju aktivnosti u razredu kako bi se dovršio cijeli projekt te kako bi proces učenja bio smisleniji i više motivirao učenike. Međutim, svaka se aktivnost može provoditi i zasebno."
+                'Za provedbu ovog odjeljka za učenje predlaže se osmišljavanje triju aktivnosti u razredu kako bi se dovršio cijeli projekt te kako bi proces učenja bio smisleniji i više motivirao učenike. Međutim, svaka se aktivnost može provoditi i zasebno.',
 
             ],
-            "activities" => [
-                "1" => "SOS za vodu u alatu Scratch",
-                "2" => "SOS za vodu uz Machine Learning",
-                "3" => "SOS za vodu uz Robotics",
-            ]
+            'activities' => [
+                '1' => 'SOS za vodu u alatu Scratch',
+                '2' => 'SOS za vodu uz Machine Learning',
+                '3' => 'SOS za vodu uz Robotics',
+            ],
 
         ],
-
-
 
     ],
     'download_video_script' => 'Preuzmite videoskriptu',
@@ -329,7 +327,7 @@ U ovom videozapisu tim Tjedna kodiranja pokazat će vam nekoliko praktičnih, je
         'title' => 'Nemojte zaboraviti dodati svoju aktivnost na kartu Tjedna programiranja!',
         'text' => '<p>Jednostavno možete organizirati nastavni sat u svojem razredu, dan otvorenih vrata ili događanje u svojoj školi. Samo pronađite datum i registrirajte svoju aktivnost na <a href="/events">karti Tjedna programiranja</a>. Svaki organizator aktivnosti za svoj će trud primiti potvrdu o sudjelovanju.</p>
 
-<p>Ako biste se željeli povezati s međunarodnom skupinom entuzijastičnih nastavnika, pridružite se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupi Europskog tjedna programiranja za nastavnike na Facebooku</a>! Da biste otišli korak naprijed i surađivali s drugim školama u svojoj zemlji ili preko granica, pridružite se izazovu <a href="/codeweek4all">Code Week 4 All challenge</a>.</p>'
-    ]
+<p>Ako biste se željeli povezati s međunarodnom skupinom entuzijastičnih nastavnika, pridružite se <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">grupi Europskog tjedna programiranja za nastavnike na Facebooku</a>! Da biste otišli korak naprijed i surađivali s drugim školama u svojoj zemlji ili preko granica, pridružite se izazovu <a href="/codeweek4all">Code Week 4 All challenge</a>.</p>',
+    ],
 
 ];

@@ -13,8 +13,7 @@ $factory->define(Moderation::class, function (Faker $faker) {
         'message' => $faker->text,
         'status_by' => function () {
             return factory(App\User::class)->create()->id;
-        }
-
+        },
 
     ];
 });

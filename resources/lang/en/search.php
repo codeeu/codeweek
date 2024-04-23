@@ -12,23 +12,23 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'audience_title'=>'Audience',
-    'theme_title'=>'Theme',
-    
+    'audience_title' => 'Audience',
+    'theme_title' => 'Theme',
+
     'placeholder' => 'Search for activity name or tag',
     'submit' => 'Search',
     'label_country' => 'Select country',
     'last_year_events' => [
         'label' => 'Include last years activities',
         'yes' => 'Yes',
-        'no' => 'No'
+        'no' => 'No',
     ],
     'search_counter' => 'match your search criteria',
-    'event'=>'activity',
-    'events'=>'activities',
+    'event' => 'activity',
+    'events' => 'activities',
     'year' => 'year',
-    'audiences'=>'Audiences',
-    'themes'=>'Themes',
-    'countries'=>'Countries',
-    'search_placeholder' => 'Search by title or description'
+    'audiences' => 'Audiences',
+    'themes' => 'Themes',
+    'countries' => 'Countries',
+    'search_placeholder' => 'Search by title or description',
 ];

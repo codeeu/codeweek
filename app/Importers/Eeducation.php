@@ -1,11 +1,8 @@
 <?php
 
-
 namespace App\Importers;
 
-
 use App\Event;
-use App\Helpers\ImporterHelper;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Support\Str;
@@ -13,6 +10,7 @@ use Illuminate\Support\Str;
 class Eeducation implements Importers
 {
     private $remote;
+
     private $creator;
 
     public function __construct($remote_event)
@@ -24,12 +22,12 @@ class Eeducation implements Importers
     public function loadUser()
     {
         return User::firstOrCreate([
-            "email" => $this->remote->organizer_email
+            'email' => $this->remote->organizer_email,
         ], [
-            "firstname" => "",
-            "lastname" => "",
-            "username" => "",
-            "password" => bcrypt(Str::random())
+            'firstname' => '',
+            'lastname' => '',
+            'username' => '',
+            'password' => bcrypt(Str::random()),
         ]);
 
     }
@@ -41,10 +39,10 @@ class Eeducation implements Importers
 
     public function parse()
     {
-        dump("parse event inside eeducation");
+        dump('parse event inside eeducation');
 
         $event = new Event([
-            'status' => "APPROVED",
+            'status' => 'APPROVED',
             'title' => $this->remote->activity_title,
             'slug' => Str::slug($this->remote->activity_title),
             'organizer' => $this->remote->school_name,
@@ -52,20 +50,20 @@ class Eeducation implements Importers
             'organizer_type' => $this->remote->organisation_type,
             'location' => $this->remote->address,
             'event_url' => $this->remote->url,
-            'user_email' => "",
+            'user_email' => '',
             'creator_id' => $this->creator->id,
             'country_iso' => $this->remote->country,
             'picture' => null,
-            "pub_date" => now(),
-            "created" => now(),
-            "updated" => now(),
-            "codeweek_for_all_participation_code" => null,
-            "start_date" => Carbon::parse($this->remote->startdate)->toDateTimeString(),
-            "end_date" => Carbon::parse($this->remote->enddate)->toDateTimeString(),
-            "geoposition" => $this->remote->lat . "," . $this->remote->lng,
-            "longitude" => $this->remote->lng,
-            "latitude" => $this->remote->lat,
-            "mass_added_for" => "RSS Eeducation"
+            'pub_date' => now(),
+            'created' => now(),
+            'updated' => now(),
+            'codeweek_for_all_participation_code' => null,
+            'start_date' => Carbon::parse($this->remote->startdate)->toDateTimeString(),
+            'end_date' => Carbon::parse($this->remote->enddate)->toDateTimeString(),
+            'geoposition' => $this->remote->lat.','.$this->remote->lng,
+            'longitude' => $this->remote->lng,
+            'latitude' => $this->remote->lat,
+            'mass_added_for' => 'RSS Eeducation',
         ]);
 
         $event->save();
@@ -73,7 +71,6 @@ class Eeducation implements Importers
         return $event;
 
     }
-
 
     public function update(Event $event)
     {
@@ -90,13 +87,12 @@ class Eeducation implements Importers
         $event->country_iso = $this->remote->country;
         $event->start_date = Carbon::parse($this->remote->starttime)->addHours(2)->toDateTimeString();
         $event->end_date = Carbon::parse($this->remote->endtime)->addHours(2)->toDateTimeString();
-        $event->geoposition = $this->remote->lat . "," . $this->remote->lng;
+        $event->geoposition = $this->remote->lat.','.$this->remote->lng;
         $event->longitude = $this->remote->lng;
         $event->latitude = $this->remote->lat;
 
         $event->save();
+
         return $event;
     }
-
-
 }
