@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateLeadingTeacherExpertisesUsersPivotTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -30,4 +30,4 @@ class CreateLeadingTeacherExpertisesUsersPivotTable extends Migration
     {
         Schema::drop('leading_teacher_expertise_user');
     }
-}
+};

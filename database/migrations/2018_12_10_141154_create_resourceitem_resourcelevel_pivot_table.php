@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateResourceItemResourceLevelPivotTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -30,4 +30,4 @@ class CreateResourceItemResourceLevelPivotTable extends Migration
     {
         Schema::drop('resource_item_resource_level');
     }
-}
+};
