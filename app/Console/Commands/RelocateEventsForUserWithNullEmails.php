@@ -41,10 +41,10 @@ class RelocateEventsForUserWithNullEmails extends Command
         foreach ($emails as $email) {
             $user = UserHelper::getActiveUserByEmail($email);
             if ($user) {
-                Log::info($email.' -> user: '.optional($user)->id ?? 'null');
+                Log::info($email.' -> user: '.$user?->id ?? 'null');
                 EventHelper::reassignActivities($user);
             } else {
-                Log::info($email.' -> no user found '.optional($user)->id ?? 'null');
+                Log::info($email.' -> no user found '.$user?->id ?? 'null');
             }
 
         }

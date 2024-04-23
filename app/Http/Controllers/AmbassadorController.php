@@ -19,7 +19,7 @@ class AmbassadorController extends Controller
 
         if (empty($filters->getFilters())) {
 
-            $country_iso = optional(auth()->user())->country ? auth()->user()->country->iso : User::getGeoIPData()->iso_code;
+            $country_iso = auth()->user()?->country ? auth()->user()->country->iso : User::getGeoIPData()->iso_code;
 
             return redirect('ambassadors?country_iso='.$country_iso);
         }
