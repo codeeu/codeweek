@@ -20,6 +20,7 @@ use Spatie\Activitylog\Traits\LogsActivity;
  * @property-read int|null $activities_count
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\User[] $users
  * @property-read int|null $users_count
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|School newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|School newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|School query()
@@ -31,25 +32,25 @@ use Spatie\Activitylog\Traits\LogsActivity;
  * @method static \Illuminate\Database\Eloquent\Builder|School whereLocation($value)
  * @method static \Illuminate\Database\Eloquent\Builder|School whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|School whereUpdatedAt($value)
+ *
  * @mixin \Eloquent
  */
 class School extends Model
 {
-
     use LogsActivity;
 
-    protected $fillable=['name','description','location','description','country'];
+    protected $fillable = ['name', 'description', 'location', 'description', 'country'];
 
     public function getDescriptionForEvent(string $eventName): string
     {
-        return "School " . $this->id . " has been {$eventName}";
+        return 'School '.$this->id." has been {$eventName}";
     }
 
     protected static $logFillable = true;
 
     public function path()
     {
-        return '/school/' . $this->id;
+        return '/school/'.$this->id;
     }
 
     public function users()

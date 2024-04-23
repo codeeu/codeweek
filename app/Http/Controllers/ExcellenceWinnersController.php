@@ -2,30 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use App\CertificateExcellence;
 use App\Excellence;
 use App\Exports\ExcellenceExport;
 use App\Helpers\ExcellenceWinnersHelper;
-use App\Queries\ExcellenceQuery;
-use Carbon\Carbon;
-use Gate;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
-use Maatwebsite\Excel\Facades\Excel;
-
 
 class ExcellenceWinnersController extends Controller
 {
-
     public function list(Request $request, $edition = 2024)
     {
 
-//        $ttl = 1;
+        //        $ttl = 1;
         $ttl = 60 * 60 * 24;
 
-//        dd($request->all());
+        //        dd($request->all());
 
         if ($request->input('edition')) {
             $edition = $request->get('edition');
@@ -34,27 +27,27 @@ class ExcellenceWinnersController extends Controller
         //Log::info("Edition: " . $edition);
 
         if ($request->input('clear_cache')) {
-            Log::info ("cache cleaned");
+            Log::info('cache cleaned');
             Cache::forget('details');
         }
 
         $details = ExcellenceWinnersHelper::query($edition, false);
 
         $total_events = DB::table('events')
-            ->where('status', "=", "APPROVED")
+            ->where('status', '=', 'APPROVED')
             //->where('codeweek_for_all_participation_code', '<>', 'cw19-apple-eu')
             ->whereYear('end_date', '=', $edition)
             ->whereNull('deleted_at')
             ->count();
 
         $total_reported = DB::table('events')
-            ->where('status', "=", "APPROVED")
+            ->where('status', '=', 'APPROVED')
             ->whereNotNull('reported_at')
             ->whereNull('deleted_at')
             ->whereYear('end_date', '=', $edition)
             ->count();
 
-        $percentage_reported = ($total_reported / $total_events)*100;
+        $percentage_reported = ($total_reported / $total_events) * 100;
 
         if ($request->input('participants')) {
             if ($request->input('participants') == -1) {
@@ -104,17 +97,14 @@ class ExcellenceWinnersController extends Controller
             }
         }
 
-
-
-        return view('excellence.winners', compact(['edition', 'details','total_events', 'total_reported','percentage_reported']));
+        return view('excellence.winners', compact(['edition', 'details', 'total_events', 'total_reported', 'percentage_reported']));
         //return view('excellence.winners',compact(['edition']));
 
     }
 
-    public function excel(){
+    public function excel()
+    {
         return (new ExcellenceExport)->download('excellence.xlsx');
 
     }
-
-
 }

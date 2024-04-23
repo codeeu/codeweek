@@ -2,11 +2,10 @@
 
 namespace App\Console\Commands;
 
-use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Log;
-
 use App\Helpers\AmbassadorHelper;
 use App\Helpers\EventHelper;
+use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
 class RemindAmbassadors extends Command
@@ -42,7 +41,7 @@ class RemindAmbassadors extends Command
      */
     public function handle()
     {
-        Log::info("Sending email to remind ambassadors");
+        Log::info('Sending email to remind ambassadors');
         $events = EventHelper::getPendindEvents();
         foreach ($events as $event) {
             $ambassadors = AmbassadorHelper::getByCountry($event->country_iso);

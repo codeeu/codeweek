@@ -169,9 +169,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\CalendarServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
-        \SocialiteProviders\Manager\ServiceProvider::class
-
-
+        \SocialiteProviders\Manager\ServiceProvider::class,
 
     ],
 
@@ -188,10 +186,9 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         'Calendar' => App\Facades\Calendar::class,
-        'Feeds'    => willvincent\Feeds\Facades\FeedsFacade::class,
+        'Feeds' => willvincent\Feeds\Facades\FeedsFacade::class,
         'GeoIP' => \Torann\GeoIP\Facades\GeoIP::class,
         'Image' => Intervention\Image\Facades\Image::class,
     ])->toArray(),
-
 
 ];

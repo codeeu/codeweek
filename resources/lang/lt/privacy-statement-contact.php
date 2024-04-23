@@ -4,14 +4,14 @@ return [
     'subtitle' => 'Šiame pareiškime apie privatumo apsaugą pateikiama informacija apie jūsų asmens duomenų tvarkymą ir apsaugą.',
     'processing-operation' => [
         'Duomenų tvarkymo operacija:',
-        'administravimas, susijęs su programavimo savaitės ambasadoriais, veiklą koordinuojančiais mokytojais ir veiklos registravimu svetainėje.'
+        'administravimas, susijęs su programavimo savaitės ambasadoriais, veiklą koordinuojančiais mokytojais ir veiklos registravimu svetainėje.',
     ],
     'data-processors' => [
         'Duomenų tvarkytojai:',
-        '„GOPA Com. S.A.“ ir „EUN Partnership AISBL“ („European Schoolnet“), info@codeweek.eu'
+        '„GOPA Com. S.A.“ ir „EUN Partnership AISBL“ („European Schoolnet“), info@codeweek.eu',
     ],
     '1-intro' => [
-        'Informacija apie asmens duomenų tvarkymą, atliekamą vykdant administravimą, susijusį su programavimo savaitės ambasadoriais, veiklą koordinuojančiais mokytojais ir veiklos registravimu svetainėje.'
+        'Informacija apie asmens duomenų tvarkymą, atliekamą vykdant administravimą, susijusį su programavimo savaitės ambasadoriais, veiklą koordinuojančiais mokytojais ir veiklos registravimu svetainėje.',
     ],
 
     '3-legal_process' => [
@@ -55,14 +55,14 @@ return [
     ],
     '7-access_data' => [
         'Su visais jūsų pateiktais asmens duomenimis pagal būtinybės žinoti principą gali susipažinti Komisijos darbuotojai. Be to, pagal tą patį principą su jais susipažinti leidžiama ir mūsų rangovui.',
- 'Siekiant didinti programavimo savaitės ambasadorių, veiklą koordinuojančių mokytojų ir užregistruotos veiklos žinomumą, visi jūsų asmens duomenys skelbiami šioje <a href="https://codeweek.eu/">svetainėje</a>.',
- 'Be to, G.2 skyrius jūsų kontaktiniais duomenimis gali pasidalyti su bet kuriuo visuomenės nariu ar suinteresuotuoju subjektu, kuriam reikia su jumis susisiekti programavimo savaitės klausimu. Jei esate veiklos organizatorius, atkreipkite dėmesį į tai, kad asmens duomenimis, kuriuos pateikėte registruodamas veiklą, gali naudotis su jumis dėl tos veiklos norintis susisiekti jūsų šaliai atstovaujantis ambasadorius arba G.2 skyrius.',
+        'Siekiant didinti programavimo savaitės ambasadorių, veiklą koordinuojančių mokytojų ir užregistruotos veiklos žinomumą, visi jūsų asmens duomenys skelbiami šioje <a href="https://codeweek.eu/">svetainėje</a>.',
+        'Be to, G.2 skyrius jūsų kontaktiniais duomenimis gali pasidalyti su bet kuriuo visuomenės nariu ar suinteresuotuoju subjektu, kuriam reikia su jumis susisiekti programavimo savaitės klausimu. Jei esate veiklos organizatorius, atkreipkite dėmesį į tai, kad asmens duomenimis, kuriuos pateikėte registruodamas veiklą, gali naudotis su jumis dėl tos veiklos norintis susisiekti jūsų šaliai atstovaujantis ambasadorius arba G.2 skyrius.',
     ],
     '8-rights' => [
- 'Jūs sutikote šios duomenų tvarkymo operacijos tikslais pateikti savo asmens duomenis G.2 skyriui. Savo sutikimą galite bet kuriuo metu atšaukti, apie tai pranešdamas G.2 skyriui adresu CNECT-G2@ec.europa.eu. Sutikimo atšaukimas nedarys poveikio duomenų tvarkymo operacijų, atliktų iki jums atšaukiant sutikimą, teisėtumui.'
+        'Jūs sutikote šios duomenų tvarkymo operacijos tikslais pateikti savo asmens duomenis G.2 skyriui. Savo sutikimą galite bet kuriuo metu atšaukti, apie tai pranešdamas G.2 skyriui adresu CNECT-G2@ec.europa.eu. Sutikimo atšaukimas nedarys poveikio duomenų tvarkymo operacijų, atliktų iki jums atšaukiant sutikimą, teisėtumui.',
     ],
 
     '10-detailed-info' => [
- 'Ši konkreti duomenų tvarkymo operacija viešame duomenų apsaugos pareigūno registre užregistruota šiuo ankstesnio pranešimo numeriu: DPR-EC-02631 – Ryšių tinklų, turinio ir technologijų GD politikos, programų ir projektų kontaktinių punktų valdymas.'
-    ]
+        'Ši konkreti duomenų tvarkymo operacija viešame duomenų apsaugos pareigūno registre užregistruota šiuo ankstesnio pranešimo numeriu: DPR-EC-02631 – Ryšių tinklų, turinio ir technologijų GD politikos, programų ir projektų kontaktinių punktų valdymas.',
+    ],
 ];

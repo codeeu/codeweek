@@ -2,17 +2,15 @@
 
 namespace App\Console\Commands\rss;
 
-
 use App\Event;
 use App\MeetAndCodeRSSItem;
-use Illuminate\Console\Command;
 use Feeds;
+use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
-
 
 class MeetAndCode extends Command
 {
@@ -40,7 +38,7 @@ class MeetAndCode extends Command
         parent::__construct();
     }
 
-    function parseDate($date)
+    public function parseDate($date)
     {
         return Carbon::parse($date);
     }
@@ -53,18 +51,18 @@ class MeetAndCode extends Command
     public function handle()
     {
 
-        dump("Loading MeetAndCode");
-//        $generate = $this->option('generate');
+        dump('Loading MeetAndCode');
+        //        $generate = $this->option('generate');
         $force = $this->option('force');
 
-//        if ($generate){
-//            dump("Generating MeetAndCode File");
-//            $contents = Http::get('https://meet-and-code.org/de/de/events/rss/');
-//            $clean =  str_replace('','',$contents);
-//            Storage::disk('meet-and-code')->put('meet-and-code-clean.xml',$clean);
-//        }
-//
-//        $url = Storage::disk('meet-and-code')->url('meet-and-code-clean.xml');
+        //        if ($generate){
+        //            dump("Generating MeetAndCode File");
+        //            $contents = Http::get('https://meet-and-code.org/de/de/events/rss/');
+        //            $clean =  str_replace('','',$contents);
+        //            Storage::disk('meet-and-code')->put('meet-and-code-clean.xml',$clean);
+        //        }
+        //
+        //        $url = Storage::disk('meet-and-code')->url('meet-and-code-clean.xml');
 
         $url = 'https://meet-and-code.org/de/de/events/rss/';
         $feed = Feeds::make(asset($url));
@@ -72,10 +70,9 @@ class MeetAndCode extends Command
         $new = 0;
         $updated = 0;
 
-        Log::info('Items found in Meet&Code RSS: ' . count($feed->get_items()));
+        Log::info('Items found in Meet&Code RSS: '.count($feed->get_items()));
 
         foreach ($feed->get_items() as $item) {
-
 
             $RSSitem = new MeetAndCodeRSSItem();
 
@@ -97,11 +94,9 @@ class MeetAndCode extends Command
             $RSSitem->start_date = $this->parseDate($this->getCustomTag($item, 'start_date'));
             $RSSitem->end_date = $this->parseDate($this->getCustomTag($item, 'end_date'));
 
-
             try {
 
                 $RSSitem->save();
-
 
                 $new++;
 
@@ -130,9 +125,9 @@ class MeetAndCode extends Command
                     $event = Event::where('event_url', $line->link)->first();
                     if ($event && $event->description !== $RSSitem->description) {
                         $event->update([
-                            "description" => $RSSitem->description
+                            'description' => $RSSitem->description,
                         ]);
-                        Log::info($event->id . " has been force updated");
+                        Log::info($event->id.' has been force updated');
                         $updated++;
                     }
 
@@ -141,23 +136,20 @@ class MeetAndCode extends Command
                 $line->save();
             }
 
-
         }
-        Log::info("New items imported from Meet & Code RSS Feed: " . $new);
+        Log::info('New items imported from Meet & Code RSS Feed: '.$new);
 
         if ($force) {
-            Log::info("Updated items from Meet & Code RSS Feed: " . $updated);
+            Log::info('Updated items from Meet & Code RSS Feed: '.$updated);
         }
 
-
-        Artisan::call("import:meetandcode");
-
+        Artisan::call('import:meetandcode');
 
     }
 
     public function getCustomTag($item, $tag)
     {
-        return $item->get_item_tags("", $tag)[0]['data'];
+        return $item->get_item_tags('', $tag)[0]['data'];
 
     }
 

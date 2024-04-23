@@ -28,8 +28,6 @@ abstract class Filters
 
     /**
      * Create a new EventFilters instance.
-     *
-     * @param Request $request
      */
     public function __construct(Request $request)
     {
@@ -37,7 +35,6 @@ abstract class Filters
         $this->request = $request;
 
     }
-
 
     public static function getEloquentSqlWithBindings($query)
     {
@@ -49,7 +46,7 @@ abstract class Filters
     /**
      * Apply the filters.
      *
-     * @param  Builder $builder
+     * @param  Builder  $builder
      * @return Builder
      */
     public function apply($builder)

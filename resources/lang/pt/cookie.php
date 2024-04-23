@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,11 +14,10 @@ return [
     */
 
     'uses_cookies' => 'Este sítio utiliza cookies (testemunhos de conexão) para facilitar a navegação',
-    'accept'=>'Aceito os cookies',
-    'refuse'=>'Recuso os cookies',
+    'accept' => 'Aceito os cookies',
+    'refuse' => 'Recuso os cookies',
     'cookies' => 'Cookies',
-    'find_out_more_on'=>'Mais informações sobre a ',
+    'find_out_more_on' => 'Mais informações sobre a ',
     'how_we_use' => 'utilização de cookies e a alteração de parâmetros',
-
 
 ];

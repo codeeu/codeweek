@@ -21,7 +21,7 @@ return [
     'last_year_events' => [
         'label' => 'Përfshini evenimentet e viteve të fundit',
         'yes' => 'Po',
-        'no' => 'Jo'
+        'no' => 'Jo',
     ],
     'search_counter' => 'përputh kriteret e kërkimit',
     'event' => 'evenimenti',

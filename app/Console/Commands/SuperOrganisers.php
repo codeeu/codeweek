@@ -43,10 +43,9 @@ class SuperOrganisers extends Command
 
         $winners = SuperOrganiserQuery::winners($edition);
 
-
         foreach ($winners as $user_id) {
             try {
-                create('App\Excellence', ['edition' => $edition, "user_id" => $user_id, "type"=>"SuperOrganiser"]);
+                create('App\Excellence', ['edition' => $edition, 'user_id' => $user_id, 'type' => 'SuperOrganiser']);
             } catch (\Exception $ex) {
                 Log::info($ex->getMessage());
             }

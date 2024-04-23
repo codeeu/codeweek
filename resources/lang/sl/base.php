@@ -41,7 +41,7 @@ return [
         'mk' => 'makedonščina',
         'me' => 'črnogorščina',
         'rs' => 'srbščina',
-        'tr' => 'turščina'
+        'tr' => 'turščina',
     ],
 
     'resources_local_title' => 'Programerski viri iz',
@@ -52,8 +52,7 @@ return [
     'still_have_question' => 'Imate dodatna vprašanja?',
     'drop_us_a_line' => 'Pišite nam!',
     'get_in_touch' => 'OBRNITE SE NA NAS',
-    'footer_msg' =>
-        'Družbena pobuda, ki jo vodijo prostovoljci in podpira Evropska komisija.',
+    'footer_msg' => 'Družbena pobuda, ki jo vodijo prostovoljci in podpira Evropska komisija.',
     'email' => 'E-pošta',
     'display_email' => 'Prikaži e-pošto',
     'first_name' => 'Ime',
@@ -65,8 +64,7 @@ return [
     'choose a file' => 'Izberite datoteko',
     'learning_bits' => 'Učni drobci',
     'codeweek' => 'CodeWeek',
-    'bring_codeweek_to_your_students' =>
-        'Predstavite teden programiranja svojim učencem',
+    'bring_codeweek_to_your_students' => 'Predstavite teden programiranja svojim učencem',
     'or' => 'ali',
-    'newsletter' => 'E-novice'
+    'newsletter' => 'E-novice',
 ];

@@ -3,7 +3,6 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
@@ -12,10 +11,12 @@ class RemindersSummary extends Mailable
     use Queueable, SerializesModels;
 
     public $creatorsCount;
-    public $eventsCount;
-    public $updated;
-    public $mailsQueued;
 
+    public $eventsCount;
+
+    public $updated;
+
+    public $mailsQueued;
 
     /**
      * Create a new message instance.

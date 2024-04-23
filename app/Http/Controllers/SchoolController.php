@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 
 class SchoolController extends Controller
 {
-
     /**
      * EventController constructor.
      */
@@ -15,6 +14,7 @@ class SchoolController extends Controller
     {
         $this->middleware('auth')->except(['index']);
     }
+
     /**
      * Display a listing of the resource.
      *
@@ -23,6 +23,7 @@ class SchoolController extends Controller
     public function index()
     {
         $schools = School::paginate(10);
+
         return view('school.index', compact('schools'));
     }
 
@@ -39,18 +40,15 @@ class SchoolController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
 
-
-
-        $this->validate($request,[
-            'name'=>'required',
-            'location'=>'required',
-        ],[
+        $this->validate($request, [
+            'name' => 'required',
+            'location' => 'required',
+        ], [
             'name.required' => 'school.required.name',
             'location.required' => 'school.required.location',
 
@@ -59,26 +57,22 @@ class SchoolController extends Controller
         $school = School::create($request->toArray());
         $school->users()->attach(auth()->id());
 
-
-
         return view('school.thankyou', compact('school'));
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\School  $school
      * @return \Illuminate\Http\Response
      */
     public function show(School $school)
     {
-        return view('school.show',compact('school'));
+        return view('school.show', compact('school'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\School  $school
      * @return \Illuminate\Http\Response
      */
     public function edit(School $school)
@@ -89,8 +83,6 @@ class SchoolController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\School  $school
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, School $school)
@@ -101,7 +93,6 @@ class SchoolController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\School  $school
      * @return \Illuminate\Http\Response
      */
     public function destroy(School $school)

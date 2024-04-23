@@ -15,6 +15,7 @@ class VolunteerController extends Controller
     public function index()
     {
         $volunteers = Volunteer::all();
+
         return view('volunteer.index', compact('volunteers'));
     }
 
@@ -31,7 +32,6 @@ class VolunteerController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -39,14 +39,12 @@ class VolunteerController extends Controller
 
         Volunteer::firstOrCreate(['user_id' => auth()->user()->id]);
 
-
         return redirect()->route('profile');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Volunteer $volunteer
      * @return \Illuminate\Http\Response
      */
     public function show(Volunteer $volunteer)
@@ -57,7 +55,6 @@ class VolunteerController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Volunteer $volunteer
      * @return \Illuminate\Http\Response
      */
     public function edit(Volunteer $volunteer)
@@ -68,8 +65,6 @@ class VolunteerController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
-     * @param  \App\Volunteer $volunteer
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Volunteer $volunteer)
@@ -80,7 +75,6 @@ class VolunteerController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Volunteer $volunteer
      * @return \Illuminate\Http\Response
      */
     public function destroy(Volunteer $volunteer)
@@ -93,7 +87,7 @@ class VolunteerController extends Controller
 
         $volunteer->user->removeRole('ambassador');
 
-        $volunteer->update(['status' => 'APPROVED','approved_by' => auth()->user()->id]);
+        $volunteer->update(['status' => 'APPROVED', 'approved_by' => auth()->user()->id]);
 
         $volunteer->user->assignRole('ambassador');
 
@@ -105,7 +99,7 @@ class VolunteerController extends Controller
     {
         $volunteer->user->removeRole('ambassador');
 
-        $volunteer->update(['status' => 'REJECTED','approved_by' => auth()->user()->id]);
+        $volunteer->update(['status' => 'REJECTED', 'approved_by' => auth()->user()->id]);
 
         return redirect()->route('volunteers');
     }

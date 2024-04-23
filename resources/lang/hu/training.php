@@ -24,8 +24,8 @@ return [
             'activities' => [
                 '1' => '1. tevékenység: CodyRoby az általános iskolában',
                 '2' => '2. tevékenység: CodyRoby a középiskola alsó tagozatában',
-                '3' => '3. tevékenység: CodyRoby a középiskola felső tagozatában'
-            ]
+                '3' => '3. tevékenység: CodyRoby a középiskola felső tagozatában',
+            ],
         ],
         '2' => [
             'title' => 'Algoritmikus gondolkodásmód és problémamegoldás',
@@ -38,8 +38,8 @@ return [
             'activities' => [
                 '1' => '1. tevékenység: A matematikai gondolkodás fejlesztése az általános iskolában',
                 '2' => '2. tevékenység: Ismerkedés az algoritmusokkal a középiskola alsó tagozatában',
-                '3' => '3. tevékenység: Algoritmusok a középiskola felső tagozatában'
-            ]
+                '3' => '3. tevékenység: Algoritmusok a középiskola felső tagozatában',
+            ],
         ],
         '3' => [
             'title' => 'Vizuális programozás – bevezetés a Scratch programozási nyelvbe',
@@ -54,8 +54,8 @@ return [
             'activities' => [
                 '1' => '1. tevékenység: Scratch Basic az általános iskolában',
                 '2' => '2. tevékenység: Scratch Basic a középiskola alsó tagozatában',
-                '3' => '3. tevékenység: Scratch Basic a középiskola felső tagozatában'
-            ]
+                '3' => '3. tevékenység: Scratch Basic a középiskola felső tagozatában',
+            ],
         ],
         '4' => [
             'title' => 'Oktató jellegű játékok létrehozása a Scratch segítségével',
@@ -70,8 +70,8 @@ return [
             'activities' => [
                 '1' => '1. tevékenység: Kérdések és válaszok a Scratch segítségével az általános iskolában',
                 '2' => '2. tevékenység: Kérdések és válaszok a Scratch segítségével a középiskola alsó tagozatában',
-                '3' => '3. tevékenység: Kérdések és válaszok a Scratch segítségével a középiskola felső tagozatában'
-            ]
+                '3' => '3. tevékenység: Kérdések és válaszok a Scratch segítségével a középiskola felső tagozatában',
+            ],
         ],
         '5' => [
             'title' => 'Robotika és bütykölés az iskolában',
@@ -84,8 +84,8 @@ return [
             'activities' => [
                 '1' => '1. tevékenység: Hogyan készítsünk mechanikus kezet kemény rostlemezből általános iskolában?',
                 '2' => '2. tevékenység: Hogyan készítsünk mechanikus vagy robotkezet a középiskola alsó tagozatán?',
-                '3' => '3. tevékenység: Hogyan készítsünk mechanikus vagy robotkezet a középiskola felső tagozatán?'
-            ]
+                '3' => '3. tevékenység: Hogyan készítsünk mechanikus vagy robotkezet a középiskola felső tagozatán?',
+            ],
         ],
         '6' => [
             'title' => 'App Inventor és alkalmazásfejlesztés',
@@ -95,8 +95,8 @@ return [
             'activities' => [
                 '1' => '1. foglalkozás – Cím, általános iskolák számára',
                 '2' => '2. foglalkozás – Cím, középiskola alsó osztályai számára',
-                '3' => '3. foglalkozás – Cím, középiskola felső osztályai számára'
-            ]
+                '3' => '3. foglalkozás – Cím, középiskola felső osztályai számára',
+            ],
         ],
         '7' => [
             'title' => 'Bütykölés és alkotás',
@@ -106,8 +106,8 @@ return [
             'activities' => [
                 '1' => '1. foglalkozás – Cím, általános iskolák számára',
                 '2' => '2. foglalkozás – Cím, középiskola alsó osztályai számára',
-                '3' => '3. foglalkozás – Cím, középiskola felső osztályai számára'
-            ]
+                '3' => '3. foglalkozás – Cím, középiskola felső osztályai számára',
+            ],
         ],
         '8' => [
             'title' => 'Programozás minden tantárgyban',
@@ -120,8 +120,8 @@ return [
                 '1' => '1. foglalkozás: Robotika és egyéni sikerélmény az általános iskolai TTMM-órákon',
                 '2' => '2. foglalkozás: A zene nem más mint programozás',
                 '3' => '3. foglalkozás: Bütykölés és programozás Makey Makey-vel',
-                '4' => '4. foglalkozás: Napi rutin algoritmusa tartalomalapú nyelvórán'
-            ]
+                '4' => '4. foglalkozás: Napi rutin algoritmusa tartalomalapú nyelvórán',
+            ],
         ],
         '9' => [
             'title' => 'Robot készítése micro:bittel',
@@ -136,7 +136,7 @@ Ebben a videóban, Pauline Maas, a Koninklijke Visio informatikatanára mutatja 
                 '1' => 'Morzekód a micro: bittel, általános iskolák számára',
                 '2' => 'Szabadulószoba micro:bittel, középiskolák alsóbb évfolyamai számára',
                 '3' => 'Robot készítése, középiskolák felsőbb évfolyamai számára',
-            ]
+            ],
         ],
         '10' => [
             'title' => 'Kreatív kódolás Pythonnal',
@@ -158,36 +158,36 @@ A Pythonnal a diákok kvízeket hozhatnak létre történelmi eseményekről, ma
             'links' => [
                 'title' => 'Egyéb kapcsolódó erőforrások',
                 '1' => [
-                    "url" => "https://docs.python.org/3/library/",
-                    "title" => "Python standard könyvtár",
-                    "description" => "Előre kidolgozott kódok és modulok gyűjteménye (pl. teknős modul, matematikai modul stb.).",
+                    'url' => 'https://docs.python.org/3/library/',
+                    'title' => 'Python standard könyvtár',
+                    'description' => 'Előre kidolgozott kódok és modulok gyűjteménye (pl. teknős modul, matematikai modul stb.).',
                 ],
                 '2' => [
-                    "url" => "https://codecombat.com/",
-                    "title" => "CodeCombat",
-                    "description" => "Oktató videójátékok a programozási koncepciók tanulásához.",
+                    'url' => 'https://codecombat.com/',
+                    'title' => 'CodeCombat',
+                    'description' => 'Oktató videójátékok a programozási koncepciók tanulásához.',
                 ],
                 '3' => [
-                    "url" => "https://projects.raspberrypi.org/en/codeclub",
-                    "title" => "KódKlub projektek",
-                    "description" => "Lépésenkénti programozási projektek gyerekek számára kezdőtől haladó szintig.",
+                    'url' => 'https://projects.raspberrypi.org/en/codeclub',
+                    'title' => 'KódKlub projektek',
+                    'description' => 'Lépésenkénti programozási projektek gyerekek számára kezdőtől haladó szintig.',
                 ],
                 '4' => [
-                    "url" => "https://inventwithpython.com/invent4thed/",
-                    "title" => "Találd fel saját számítógépes játékaidat Pythonnal",
-                    "description" => "Könyv, amely arra tanítja meg, hogy miként programozzon saját számítógépes játékokat Pythonnal.",
+                    'url' => 'https://inventwithpython.com/invent4thed/',
+                    'title' => 'Találd fel saját számítógépes játékaidat Pythonnal',
+                    'description' => 'Könyv, amely arra tanítja meg, hogy miként programozzon saját számítógépes játékokat Pythonnal.',
                 ],
                 '5' => [
-                    "url" => "https://www.codewars.com/",
-                    "title" => "Kódháborúk",
-                    "description" => "Oktatási közösség, ahol a tanulók és a tanárok kihívások sorozatán keresztül képezhetik egymást.",
+                    'url' => 'https://www.codewars.com/',
+                    'title' => 'Kódháborúk',
+                    'description' => 'Oktatási közösség, ahol a tanulók és a tanárok kihívások sorozatán keresztül képezhetik egymást.',
                 ],
                 '6' => [
-                    "url" => "https://hourofpython.com/",
-                    "title" => "A Python órája",
-                    "description" => "Interaktív Trinketeket használó Python bevezető (szöveg-alapú és blokkos) leckék gyűjteménye.",
+                    'url' => 'https://hourofpython.com/',
+                    'title' => 'A Python órája',
+                    'description' => 'Interaktív Trinketeket használó Python bevezető (szöveg-alapú és blokkos) leckék gyűjteménye.',
                 ],
-            ]
+            ],
         ],
         '11' => [
             'title' => 'Programozás a befogadásért',
@@ -201,40 +201,39 @@ A Pythonnal a diákok kvízeket hozhatnak létre történelmi eseményekről, ma
                 '1' => 'Tojástartó (offline)',
                 '2' => 'Egy irtó okos egér',
                 '3' => 'A csillagkészítő sztár',
-            ]
+            ],
         ],
 
-        "12" => [
-            "title" => "Kódolás a fenntartható fejlődési célokért",
-            "author" => "írta Francisco Javier Masero, Cristina Nicolaita és Erviola Konomi",
-            "text" => [
-                "1" => "A hagyományos oktatás kevés lehetőséget nyújt a diákoknak a valódi világ problémáinak megértésére és megoldására, mint például a globális éghajlatváltozás, a nemek közötti egyenlőség, az éhség, a szegénység vagy a jó egészség és jólét.",
-                "2" => "A fenntartható fejlődési célok (Sustainable Development Goal - SDG) az Egyesült Nemzetek Szövetségének minden tagállama által elfogadott „Fenntartható Fejlődési Keretrendszer 2030” központi eleme, amely útmutatóként szolgál a béke és a jólét eléréséhez a bolygón, ösztönözve a globális fejlődést. A tanárok eszközként használhatják az SDG-ket az osztályteremben arra, hogy a diákok fejlesszék a kritikus gondolkodásukat, illetve arra, hogy segítsen megtalálni az identitásukat és céljukat. A kódolás és a számítástechnikai gondolkodás alapvető elemeinek ötvözése az SDG-kkel növelni fogja a diákok önbizalmát, és segít nekik abban, hogy fejlesszék kreativitásukat, vállalkozói szellemüket, problémamegoldó, illetve kommunikációs képességeiket.",
-                "3" => "Az alábbi tevékenységekben a diákok a Scratch, az ASCII kódolás és a digitális technológia nélküli kódolás elveit fogják alkalmazni mai, globálisan és társadalmilag releváns témákra. A tanárok fel fogják hívni a figyelmet a fenntartható fejlődési célokra, miközben szórakoztató és vonzó módon segítik őket az empátia, az aktív állampolgári és a proszociális készségek fejlesztésében.",
-                "4" => "Az alábbi leckék mindegyike egy SDG-re összpontosít:",
-                "5" => "3-as fenntartható fejlődési cél: Az egészséges élet biztosítása és a jóllét előmozdítása minden korosztály valamennyi  tagjának",
-                "6" => "5-ös fenntartható fejlődési cél: A nemek egyenlőségének megvalósítása, minden nő és lány társadalmi szerepének megerősítése",
-                "7" => "13-as fenntartható fejlődési cél: Sürgős lépések megtétele a klímaváltozás és hatásainak leküzdésére",
+        '12' => [
+            'title' => 'Kódolás a fenntartható fejlődési célokért',
+            'author' => 'írta Francisco Javier Masero, Cristina Nicolaita és Erviola Konomi',
+            'text' => [
+                '1' => 'A hagyományos oktatás kevés lehetőséget nyújt a diákoknak a valódi világ problémáinak megértésére és megoldására, mint például a globális éghajlatváltozás, a nemek közötti egyenlőség, az éhség, a szegénység vagy a jó egészség és jólét.',
+                '2' => 'A fenntartható fejlődési célok (Sustainable Development Goal - SDG) az Egyesült Nemzetek Szövetségének minden tagállama által elfogadott „Fenntartható Fejlődési Keretrendszer 2030” központi eleme, amely útmutatóként szolgál a béke és a jólét eléréséhez a bolygón, ösztönözve a globális fejlődést. A tanárok eszközként használhatják az SDG-ket az osztályteremben arra, hogy a diákok fejlesszék a kritikus gondolkodásukat, illetve arra, hogy segítsen megtalálni az identitásukat és céljukat. A kódolás és a számítástechnikai gondolkodás alapvető elemeinek ötvözése az SDG-kkel növelni fogja a diákok önbizalmát, és segít nekik abban, hogy fejlesszék kreativitásukat, vállalkozói szellemüket, problémamegoldó, illetve kommunikációs képességeiket.',
+                '3' => 'Az alábbi tevékenységekben a diákok a Scratch, az ASCII kódolás és a digitális technológia nélküli kódolás elveit fogják alkalmazni mai, globálisan és társadalmilag releváns témákra. A tanárok fel fogják hívni a figyelmet a fenntartható fejlődési célokra, miközben szórakoztató és vonzó módon segítik őket az empátia, az aktív állampolgári és a proszociális készségek fejlesztésében.',
+                '4' => 'Az alábbi leckék mindegyike egy SDG-re összpontosít:',
+                '5' => '3-as fenntartható fejlődési cél: Az egészséges élet biztosítása és a jóllét előmozdítása minden korosztály valamennyi  tagjának',
+                '6' => '5-ös fenntartható fejlődési cél: A nemek egyenlőségének megvalósítása, minden nő és lány társadalmi szerepének megerősítése',
+                '7' => '13-as fenntartható fejlődési cél: Sürgős lépések megtétele a klímaváltozás és hatásainak leküzdésére',
             ],
-            "activities" => [
-                "1" => "Karatéka projekt: A karate megismerése programozás útján, általános iskolásoknak és gimnazistáknak",
-                "2" => "Fenntartható fejlődési célok és kódolás a klímaváltozásért, általános iskolásoknak",
-                "3" => "Kódolás a nemek egyenlőségéért, felsős gimnazistáknak",
-            ]
-        ]
-        ,
-        "13" => [
-            "title" => "Bevezetés a mesterséges intelligenciába az osztályteremben",
-            "author" => "írta Artur Coelho és Marjana Prifti Skenduli",
-            "text" => [
-                "1" => "A mesterséges intelligencia (MI) a mindennapi élet számos területére van hatással: automatikusan kijavítja a telefonba írt szöveget, kiválasztja, milyen zenét játsszon a kedvenc zenei alkalmazása, és megjegyzi a jelszavakat, amikor elfelejtette azokat. Az MI a gépi tanulás, a robotika és az algoritmusok kombinációját jelenti, és minden területen alkalmazzák: az informatikától a gyártásig, az orvostudománytól a divatszakmáig. Ezért tagadhatatlanul helye van az életünkben és a társadalmainkban, és kulcsfontosságú szerepet játszik a tudomány fejlődésében. És mint életünk bármely más fontos jelensége esetén, a diákoknak hasznos lesz, ha tanulnak róla. De hogyan oktassunk egy olyan komplex dolgot, mint az MI?",
-                "2" => "Ez az oktatómodul segít Önnek elmagyarázni a diákoknak, mi az MI, és milyen szerepet játszik a diákok életében. Ezeket a tevékenységeket szakértelemmel nem rendelkezőknek tervezték, hogy könnyen megértsék a tartalmat, és képesek legyenek komplex témákat hatékonyan lebontani könnyen érthető fogalmakká. Ezekkel a lecketervekkel segíthet a diákoknak megtanulni az MI használatát és egyes háttérmechanizmusait. Ezeket a tevékenységeket arra tervezték, hogy a diákok fejlesszék az elemzés és kritikai gondolkodás képességét: Marjana tevékenységében például a diákok egy osztályozási módszert fejlesztenek. Ezek a tevékenységek segítik a diákokat az AI változatos alkalmazásainak megértésében is: Artur tevékenységében megismerik az MI és a művészet kapcsolatát, és azt, hogy az MI hogyan használható a vizuális kifejezés fokozására. Ezekkel a tevékenységekkel a diákok átgondolják az AI veszélyeit és azok hatásait is."
+            'activities' => [
+                '1' => 'Karatéka projekt: A karate megismerése programozás útján, általános iskolásoknak és gimnazistáknak',
+                '2' => 'Fenntartható fejlődési célok és kódolás a klímaváltozásért, általános iskolásoknak',
+                '3' => 'Kódolás a nemek egyenlőségéért, felsős gimnazistáknak',
             ],
-            "activities" => [
-                "1" => "Humán-MI művészet, általános iskolásoknak",
-                "2" => "Gépek megtanítása osztályozásra: Bevezetés a felügyelettel történő gépi tanulásba, alsós gimnazistáknak",
-                "3" => "Gépek megtanítása osztályozásra: Bevezetés a felügyelettel történő gépi tanulásba, felsős gimnazistáknak",
-            ]
+        ],
+        '13' => [
+            'title' => 'Bevezetés a mesterséges intelligenciába az osztályteremben',
+            'author' => 'írta Artur Coelho és Marjana Prifti Skenduli',
+            'text' => [
+                '1' => 'A mesterséges intelligencia (MI) a mindennapi élet számos területére van hatással: automatikusan kijavítja a telefonba írt szöveget, kiválasztja, milyen zenét játsszon a kedvenc zenei alkalmazása, és megjegyzi a jelszavakat, amikor elfelejtette azokat. Az MI a gépi tanulás, a robotika és az algoritmusok kombinációját jelenti, és minden területen alkalmazzák: az informatikától a gyártásig, az orvostudománytól a divatszakmáig. Ezért tagadhatatlanul helye van az életünkben és a társadalmainkban, és kulcsfontosságú szerepet játszik a tudomány fejlődésében. És mint életünk bármely más fontos jelensége esetén, a diákoknak hasznos lesz, ha tanulnak róla. De hogyan oktassunk egy olyan komplex dolgot, mint az MI?',
+                '2' => 'Ez az oktatómodul segít Önnek elmagyarázni a diákoknak, mi az MI, és milyen szerepet játszik a diákok életében. Ezeket a tevékenységeket szakértelemmel nem rendelkezőknek tervezték, hogy könnyen megértsék a tartalmat, és képesek legyenek komplex témákat hatékonyan lebontani könnyen érthető fogalmakká. Ezekkel a lecketervekkel segíthet a diákoknak megtanulni az MI használatát és egyes háttérmechanizmusait. Ezeket a tevékenységeket arra tervezték, hogy a diákok fejlesszék az elemzés és kritikai gondolkodás képességét: Marjana tevékenységében például a diákok egy osztályozási módszert fejlesztenek. Ezek a tevékenységek segítik a diákokat az AI változatos alkalmazásainak megértésében is: Artur tevékenységében megismerik az MI és a művészet kapcsolatát, és azt, hogy az MI hogyan használható a vizuális kifejezés fokozására. Ezekkel a tevékenységekkel a diákok átgondolják az AI veszélyeit és azok hatásait is.',
+            ],
+            'activities' => [
+                '1' => 'Humán-MI művészet, általános iskolásoknak',
+                '2' => 'Gépek megtanítása osztályozásra: Bevezetés a felügyelettel történő gépi tanulásba, alsós gimnazistáknak',
+                '3' => 'Gépek megtanítása osztályozásra: Bevezetés a felügyelettel történő gépi tanulásba, felsős gimnazistáknak',
+            ],
         ],
 
         '14' => [
@@ -242,98 +241,94 @@ A Pythonnal a diákok kvízeket hozhatnak létre történelmi eseményekről, ma
             'author' => 'Adil Tugyan, Georgia Lascaris és Marco Neves',
             'text' => [
                 '1' => 'A számítási teljesítmények gyors fejlődésének és a hatalmas rendelkezésre álló adatmennyiségeknek köszönhetően az elmúlt években figyelemreméltó volt az MI fejlődése. Ennek eredményeként jelentős beruházások történtek az MI kutatásokba, és az MI iparág gyors bővülésnek indult, ezzel az MI korunk egyik legnagyobb technológiai forradalmává vált. Az MI mindenhol körülvesz minket. Olyannyira mindennapjaink részévé vált, hogy néha már nem is MI-ként gondolunk rá: online javaslatokat, arcfelismerést, biztonsági rendszereket és hangsegédeket használunk nap mint nap. De mi a helyzet az oktatással? ',
-                '2' => 'Az MI hatalmas lehetőségeket kínál új oktatási és tanulási módszerek megvalósítására és a diákok tanulási hatékonyságának növelésére. A Learning Bit segítségével valódi MI tevékenységekkel bővítheti óráit, és segíthet a diákoknak felkészülni egy olyan életre és karrierre, amit meghatározó módon befolyásol majd az MI. Ezeket a tevékenységeket úgy alakítottuk ki, hogy fejlesszük a diákok kíváncsiságát, problémamegoldó készségét és a kreativitását. Például Adil tevékenységében a diákok megismerkednek az algoritmusokkal és a neurális hálózatokkal, és saját neurális hálózatot készítenek, hogy vizualizálják az MI agyát. Georgia lépésről-lépésre végigvezeti a diákokat egy csetbot fejlesztésén. A diákok saját csetbotot készíthetnek, kérdésekből és válaszokból álló adatkészleteket gyűjthetnek, és betaníthatják az MI-t, hogy Covid-19-cel kapcsolatos kérdésekre válaszoljon. Marco tevékenységénél a diákok megvizsgálják az intelligens gépek jelentette előnyöket és kihívásokat a mindennapi életben és munkában. Milyen kockázatokat hordoz az MI, amiket érdemes figyelembe venni? Milyen hatással lesz az MI a munkára a jövőben? Milyen állások közül választhatnak majd a diákok, amikor belépnek a munkaerőpiacra?'
+                '2' => 'Az MI hatalmas lehetőségeket kínál új oktatási és tanulási módszerek megvalósítására és a diákok tanulási hatékonyságának növelésére. A Learning Bit segítségével valódi MI tevékenységekkel bővítheti óráit, és segíthet a diákoknak felkészülni egy olyan életre és karrierre, amit meghatározó módon befolyásol majd az MI. Ezeket a tevékenységeket úgy alakítottuk ki, hogy fejlesszük a diákok kíváncsiságát, problémamegoldó készségét és a kreativitását. Például Adil tevékenységében a diákok megismerkednek az algoritmusokkal és a neurális hálózatokkal, és saját neurális hálózatot készítenek, hogy vizualizálják az MI agyát. Georgia lépésről-lépésre végigvezeti a diákokat egy csetbot fejlesztésén. A diákok saját csetbotot készíthetnek, kérdésekből és válaszokból álló adatkészleteket gyűjthetnek, és betaníthatják az MI-t, hogy Covid-19-cel kapcsolatos kérdésekre válaszoljon. Marco tevékenységénél a diákok megvizsgálják az intelligens gépek jelentette előnyöket és kihívásokat a mindennapi életben és munkában. Milyen kockázatokat hordoz az MI, amiket érdemes figyelembe venni? Milyen hatással lesz az MI a munkára a jövőben? Milyen állások közül választhatnak majd a diákok, amikor belépnek a munkaerőpiacra?',
             ],
             'activities' => [
                 'title' => 'Az alábbi óratervekben a diákok szórakoztató és interaktív módon tanulhatnak az intelligens gépekről.',
                 '1' => 'Az MI és neurális hálózata, általános iskolás osztályoknak',
                 '2' => 'A saját Covid-19 csetbotom, középiskolák alsóbb osztályainak',
                 '3' => 'Élet az „okos gépek” korában: Kihívások és lehetőségek, középiskolák felsőbb osztályainak',
-            ]
+            ],
         ],
 
         '15' => [
-            "title" => "A médiaműveltség elmélyítése",
-            "author" => "Marijana Smolčec, Tea Horvatić és Sanja Božinović",
-            "text" => [
-                "A médiaműveltség oktatása sohasem volt még ilyen fontos a mai diákok számára. Az összes korosztályhoz tartozó diáknak meg kell szereznie a releváns készségeket, tudást és kialakítani a megfelelő hozzáállást annak érdekében, hogy elboldoguljanak a médiagazdag világunkban. A médiaműveltségi készségek segítenek nekik abban, hogy hiteles online tartalmakat használjanak és felismerjék a félrevezető információt. Meg fogják érteni, hogyan tényellenőrizzék az információt, amit találtak és hogy kritikusan értelmezzék azt. Kialakul bennük a kreatív munka helyes használatával szembeni tudatosság, és alkalmazni fogják, amit tanultak a saját kreatív tartalmaik létrehozásában.",
-                "Ez a tanegység lehetővé teszi az Ön számára, hogy számos végrehajtandó stratégiával és technikával vértezhesse fel a diákjait, hogy médiaműveltté váljanak. Marijana tevékenységében a diákok megtanulják, hogyan használják a webes tartalmakat biztonságosan és felelősen. Különböző típusú licenszekkel ismerkednek meg, és kifejlesztenek egy alkalmazást, amiben megmutathatják, hogyan kell a kreatív munkát megfelelően megosztani. Tea tevékenységében a diákok küldetésre indulnak, hogy tanuljanak a kattintásvadász tartalmakról. A feladatok teljesítése közben a diákok stratégiákat fedeznek fel arra nézve, hogyan azonosítsák és fedjék fel a kattintásvadász tartalmakat és megtanulják, hogyan kerüljék el őket. Sanja lehetővé teszi a diákok számára, hogy felfedezzék, kritikusan elemezzék és értékeljék a webes tartalmakat relevancia, pontosság, eredet és cél szerint. Megtanulják, hogyan találnak megbízható forrásokat online és hogyan ismerjék fel a hamis online információt.",
-                "Az alábbi óravázlatokban inspiráló és vonzó tevékenységeket talál a diákok médiaműveltségi készségeinek fejlesztésére:",
+            'title' => 'A médiaműveltség elmélyítése',
+            'author' => 'Marijana Smolčec, Tea Horvatić és Sanja Božinović',
+            'text' => [
+                'A médiaműveltség oktatása sohasem volt még ilyen fontos a mai diákok számára. Az összes korosztályhoz tartozó diáknak meg kell szereznie a releváns készségeket, tudást és kialakítani a megfelelő hozzáállást annak érdekében, hogy elboldoguljanak a médiagazdag világunkban. A médiaműveltségi készségek segítenek nekik abban, hogy hiteles online tartalmakat használjanak és felismerjék a félrevezető információt. Meg fogják érteni, hogyan tényellenőrizzék az információt, amit találtak és hogy kritikusan értelmezzék azt. Kialakul bennük a kreatív munka helyes használatával szembeni tudatosság, és alkalmazni fogják, amit tanultak a saját kreatív tartalmaik létrehozásában.',
+                'Ez a tanegység lehetővé teszi az Ön számára, hogy számos végrehajtandó stratégiával és technikával vértezhesse fel a diákjait, hogy médiaműveltté váljanak. Marijana tevékenységében a diákok megtanulják, hogyan használják a webes tartalmakat biztonságosan és felelősen. Különböző típusú licenszekkel ismerkednek meg, és kifejlesztenek egy alkalmazást, amiben megmutathatják, hogyan kell a kreatív munkát megfelelően megosztani. Tea tevékenységében a diákok küldetésre indulnak, hogy tanuljanak a kattintásvadász tartalmakról. A feladatok teljesítése közben a diákok stratégiákat fedeznek fel arra nézve, hogyan azonosítsák és fedjék fel a kattintásvadász tartalmakat és megtanulják, hogyan kerüljék el őket. Sanja lehetővé teszi a diákok számára, hogy felfedezzék, kritikusan elemezzék és értékeljék a webes tartalmakat relevancia, pontosság, eredet és cél szerint. Megtanulják, hogyan találnak megbízható forrásokat online és hogyan ismerjék fel a hamis online információt.',
+                'Az alábbi óravázlatokban inspiráló és vonzó tevékenységeket talál a diákok médiaműveltségi készségeinek fejlesztésére:',
             ],
-            "activities" => [
-                "1" => "Ingyenes, ha az interneten van?",
-                "2" => "Klikkelni vagy nem klikkelni",
-                "3" => "Tényellenőrzés",
-            ]
-        ],
-        "16" => [
-            "title" => "TÖRTÉNETMESÉLÉS HEDYVEL",
-            "author" => "készítette: Felienne Hermans",
-            "text" => [
-                "Diákjaid már elsajátítottak egy vizuális programozási nyelvet, de még nem érzik felkészültnek magukat arra, hogy fejest ugorjanak egy szövegalapú programozási nyelvbe? Akkor ez a tudásmorzsa pont neked és diákjaidnak szól, mert segít áthidalni a vizuális és a szövegalapú programozási nyelvek közötti távolságot. A <strong>Történetmesélés Hedyvel</strong> tudásmorzsa három óravázlatot tartalmaz, amelyek a Hedy elnevezésű fokozatos programozási nyelv alkalmazásával tanítják a gyerekeket a programozásra.",
-
-                "A Hedy azoknak a gyerekeknek készült, akik szeretnének belevágni a szövegalapú programozási nyelvek használatába, de a Python még túl bonyolult nekik. A fokozatos nyelvek különböző szintekből épülnek fel, ahol minden szint új fogalmakat vezet be és egy magasabb szintaktikai bonyolultsági fokra lép. Miután a diákok teljesítették a Hedy összes szintjét, jó néhány Python kódot le tudnak majd helyesen írni.",
-
-                "Ez a tudásmorzsa inspiráló és érdekes tevékenységeket kínál, amelyek segítségével diákjaid hatékonyan ismerkedhetnek meg a szövegalapú programozási nyelvekkel. Saját interaktív történeteik létrehozása során fokozatosan sajátítják el a programozást, így nem kell mindent egyszerre megtanulniuk. Az általános iskolásoknak készült óravázlat révén a diákok megismerik a programozás alapelveit. Az alsó középfokú óravázlat bővíti a programozási fogalmak körét, míg a felső középfokú óravázlat lehetővé teszi bonyolultabb történetek és tevékenységek programozását.",
-
-                "Nézd meg az alábbi interaktív történetet, amelyből kiderül, hogyan alakíthatják az olvasók a történetet, és hogyan ösztönzi maga a történet aktív részvételüket."
+            'activities' => [
+                '1' => 'Ingyenes, ha az interneten van?',
+                '2' => 'Klikkelni vagy nem klikkelni',
+                '3' => 'Tényellenőrzés',
             ],
-            "activities" => [
-                "1" => "Készítsd el saját interaktív történetedet Hedyvel általános iskolások számára",
-                "2" => "Készítsd el saját interaktív történetedet Hedyvel alsó középfokú oktatásban részt vevő diákok számára",
-                "3" => "Készítsd el saját interaktív történetedet Hedyvel felső középfokú oktatásban részt vevő diákok számára",
-            ]
         ],
-        "17" => [
-            "title" => "Érezd a programozást",
-            "author" => "Alenka Miljević tollából",
-            "text" => [
-                "Szociális és érzelmi jóllétünk függ attól, hogy képesek vagyunk-e ellenállni a stressznek, kezelni saját érzelmeinket, reagálni mások érzelmeire, mély kapcsolatokat kialakítani, olyan érzelmeket generálni, amelyek jó érzéssel töltenek el bennünket, és létrehozni saját érzelmi támogató hálózatunkat. Azok a szociális és érzelmi készségek, amelyeket a fiatalok az iskolában elsajátítanak, segítenek kiépíteni stressztűrő képességüket, és mintát nyújtanak ahhoz, hogyan gondoskodjanak életük során testi és szellemi egészségükről. (Európa Tanács)",
-                "Az Érezd a programozást tudásmorzsával hozzájárulhat diákjai szociális és érzelmi jóllétéhez azáltal, hogy megtanítja őket felismerni, megmagyarázni és megérteni a pozitív és negatív érzelmeket, valamint reagálni rájuk, ezáltal fejlesztve empatikus és stressztűrő képességüket. Ez a tudásmorzsa inspiráló és érdekes gyakorlatokat kínál, amelyek segítségével diákjai a programozáson keresztül fejleszthetik a különböző érzelmek kezelésére irányuló készségeiket. Diákjai a Bee-Bot robot használatával megtanulják, hogyan fejezzék ki érzelmeiket és hogyan reagáljanak társaik érzelmeire.",
-                "Az Érezd a programozást tudásmorzsa három óravázlatot tartalmaz, amelyek a Bee-Bot készségfejlesztő robotra támaszkodva hoznak létre a diákokat érzelmeik kifejezésére és empatikus képességük fejlesztésére ösztönző feladatokat. Az általános iskolások számára kidolgozott óravázlat segíti a diákokat, hogy a Bee-Bot programozása közben beszéljenek az érzelmeikről, például szomorúságról, boldogságról, félelemről és dühről, és felfedezzék, hogy miért élik át ők maguk és társaik ezeket az érzelmeket. Az alsóbb évfolyamos középiskolásoknak szóló óravázlat arra ösztönzi a diákokat, hogy programozzák a Bee-Botot, felismerjék saját és társaik érzelmeit, megértsék, hogy mi váltotta ki azokat, és reagáljanak rájuk. A felsőbb évfolyamos középiskolásoknak készült óravázlat lehetővé teszi a diákok számára, hogy irányítsák a Bee-Botot, és történeteket alkossanak érzelmeikről, stressztűrő képességükről és empátiájukról.",
-                "Ha nincs készségfejlesztő robot a tanteremben, ez a tudásmorzsa arra is szolgáltat ötletet, hogyan tud a robot nélkül olyan feladatokat végrehajtani, amelyek elősegítik a szociális és érzelmi készségek fejlődését. Az alábbiakban rövid áttekintést nyújtunk a tanteremben kivitelezhető feladatokról:"
+        '16' => [
+            'title' => 'TÖRTÉNETMESÉLÉS HEDYVEL',
+            'author' => 'készítette: Felienne Hermans',
+            'text' => [
+                'Diákjaid már elsajátítottak egy vizuális programozási nyelvet, de még nem érzik felkészültnek magukat arra, hogy fejest ugorjanak egy szövegalapú programozási nyelvbe? Akkor ez a tudásmorzsa pont neked és diákjaidnak szól, mert segít áthidalni a vizuális és a szövegalapú programozási nyelvek közötti távolságot. A <strong>Történetmesélés Hedyvel</strong> tudásmorzsa három óravázlatot tartalmaz, amelyek a Hedy elnevezésű fokozatos programozási nyelv alkalmazásával tanítják a gyerekeket a programozásra.',
+
+                'A Hedy azoknak a gyerekeknek készült, akik szeretnének belevágni a szövegalapú programozási nyelvek használatába, de a Python még túl bonyolult nekik. A fokozatos nyelvek különböző szintekből épülnek fel, ahol minden szint új fogalmakat vezet be és egy magasabb szintaktikai bonyolultsági fokra lép. Miután a diákok teljesítették a Hedy összes szintjét, jó néhány Python kódot le tudnak majd helyesen írni.',
+
+                'Ez a tudásmorzsa inspiráló és érdekes tevékenységeket kínál, amelyek segítségével diákjaid hatékonyan ismerkedhetnek meg a szövegalapú programozási nyelvekkel. Saját interaktív történeteik létrehozása során fokozatosan sajátítják el a programozást, így nem kell mindent egyszerre megtanulniuk. Az általános iskolásoknak készült óravázlat révén a diákok megismerik a programozás alapelveit. Az alsó középfokú óravázlat bővíti a programozási fogalmak körét, míg a felső középfokú óravázlat lehetővé teszi bonyolultabb történetek és tevékenységek programozását.',
+
+                'Nézd meg az alábbi interaktív történetet, amelyből kiderül, hogyan alakíthatják az olvasók a történetet, és hogyan ösztönzi maga a történet aktív részvételüket.',
             ],
-            "activities" => [
-                "1" => "Programozz - Érezz - Tanulj általános iskolai diákoknak",
-                "2" => "Nincs kőből a szívem alsóbb évfolyamos középiskolás diákoknak",
-                "3" => "Programozz a megfelelő hangulatra felsőbb évfolyamos középiskolás diákoknak",
-            ]
-        ],"18" => [
+            'activities' => [
+                '1' => 'Készítsd el saját interaktív történetedet Hedyvel általános iskolások számára',
+                '2' => 'Készítsd el saját interaktív történetedet Hedyvel alsó középfokú oktatásban részt vevő diákok számára',
+                '3' => 'Készítsd el saját interaktív történetedet Hedyvel felső középfokú oktatásban részt vevő diákok számára',
+            ],
+        ],
+        '17' => [
+            'title' => 'Érezd a programozást',
+            'author' => 'Alenka Miljević tollából',
+            'text' => [
+                'Szociális és érzelmi jóllétünk függ attól, hogy képesek vagyunk-e ellenállni a stressznek, kezelni saját érzelmeinket, reagálni mások érzelmeire, mély kapcsolatokat kialakítani, olyan érzelmeket generálni, amelyek jó érzéssel töltenek el bennünket, és létrehozni saját érzelmi támogató hálózatunkat. Azok a szociális és érzelmi készségek, amelyeket a fiatalok az iskolában elsajátítanak, segítenek kiépíteni stressztűrő képességüket, és mintát nyújtanak ahhoz, hogyan gondoskodjanak életük során testi és szellemi egészségükről. (Európa Tanács)',
+                'Az Érezd a programozást tudásmorzsával hozzájárulhat diákjai szociális és érzelmi jóllétéhez azáltal, hogy megtanítja őket felismerni, megmagyarázni és megérteni a pozitív és negatív érzelmeket, valamint reagálni rájuk, ezáltal fejlesztve empatikus és stressztűrő képességüket. Ez a tudásmorzsa inspiráló és érdekes gyakorlatokat kínál, amelyek segítségével diákjai a programozáson keresztül fejleszthetik a különböző érzelmek kezelésére irányuló készségeiket. Diákjai a Bee-Bot robot használatával megtanulják, hogyan fejezzék ki érzelmeiket és hogyan reagáljanak társaik érzelmeire.',
+                'Az Érezd a programozást tudásmorzsa három óravázlatot tartalmaz, amelyek a Bee-Bot készségfejlesztő robotra támaszkodva hoznak létre a diákokat érzelmeik kifejezésére és empatikus képességük fejlesztésére ösztönző feladatokat. Az általános iskolások számára kidolgozott óravázlat segíti a diákokat, hogy a Bee-Bot programozása közben beszéljenek az érzelmeikről, például szomorúságról, boldogságról, félelemről és dühről, és felfedezzék, hogy miért élik át ők maguk és társaik ezeket az érzelmeket. Az alsóbb évfolyamos középiskolásoknak szóló óravázlat arra ösztönzi a diákokat, hogy programozzák a Bee-Botot, felismerjék saját és társaik érzelmeit, megértsék, hogy mi váltotta ki azokat, és reagáljanak rájuk. A felsőbb évfolyamos középiskolásoknak készült óravázlat lehetővé teszi a diákok számára, hogy irányítsák a Bee-Botot, és történeteket alkossanak érzelmeikről, stressztűrő képességükről és empátiájukról.',
+                'Ha nincs készségfejlesztő robot a tanteremben, ez a tudásmorzsa arra is szolgáltat ötletet, hogyan tud a robot nélkül olyan feladatokat végrehajtani, amelyek elősegítik a szociális és érzelmi készségek fejlődését. Az alábbiakban rövid áttekintést nyújtunk a tanteremben kivitelezhető feladatokról:',
+            ],
+            'activities' => [
+                '1' => 'Programozz - Érezz - Tanulj általános iskolai diákoknak',
+                '2' => 'Nincs kőből a szívem alsóbb évfolyamos középiskolás diákoknak',
+                '3' => 'Programozz a megfelelő hangulatra felsőbb évfolyamos középiskolás diákoknak',
+            ],
+        ], '18' => [
 
-            "title" => "Az SOS víz projekt",
-"author" => "készítette: Francisco Delgado Cecilia",
-"text" => [
+            'title' => 'Az SOS víz projekt',
+            'author' => 'készítette: Francisco Delgado Cecilia',
+            'text' => [
 
-                "Az SOS víz projekt a vízszennyezés problémájának megoldására adott válasz. Az elmúlt években tett erőfeszítések ellenére a világon még mindig van 2 milliárd ember, akik nem jutnak biztonságos ivóvízhez. Ez azt jelenti, hogy a Világunk 2030 program 6. fenntartható fejlődési célja (SGD) szerint 2030-ra minden embernek hozzáférést kell biztosítani tiszta vízhez és az alapvető köztisztasághoz, még messze van a megvalósulástól. Ugyanez igaz a 14. fenntartható fejlődési célra is, amely a víz alatti életre vonatkozik, és célja az óceánok, tengerek és tengeri erőforrások megőrzése és fenntartható használata a fenntartható fejlődés érdekében.",
+                'Az SOS víz projekt a vízszennyezés problémájának megoldására adott válasz. Az elmúlt években tett erőfeszítések ellenére a világon még mindig van 2 milliárd ember, akik nem jutnak biztonságos ivóvízhez. Ez azt jelenti, hogy a Világunk 2030 program 6. fenntartható fejlődési célja (SGD) szerint 2030-ra minden embernek hozzáférést kell biztosítani tiszta vízhez és az alapvető köztisztasághoz, még messze van a megvalósulástól. Ugyanez igaz a 14. fenntartható fejlődési célra is, amely a víz alatti életre vonatkozik, és célja az óceánok, tengerek és tengeri erőforrások megőrzése és fenntartható használata a fenntartható fejlődés érdekében.',
 
-                "Ez a tudásmorzsa a vízminőség mérésének fontos és aktuális kérdésére és a vízminőséget veszélyeztető új szennyező anyagokra összpontosít. A tanulóknak lehetőségük lesz arra, hogy a vízzel és a környezettel kapcsolatos valós problémákat vizsgáljanak, és azokra keressenek megoldásokat, ami lehetővé teszi számukra az olyan készségek fejlesztését, mint a kutatás, a kritikus gondolkodás és a problémamegoldás.",
+                'Ez a tudásmorzsa a vízminőség mérésének fontos és aktuális kérdésére és a vízminőséget veszélyeztető új szennyező anyagokra összpontosít. A tanulóknak lehetőségük lesz arra, hogy a vízzel és a környezettel kapcsolatos valós problémákat vizsgáljanak, és azokra keressenek megoldásokat, ami lehetővé teszi számukra az olyan készségek fejlesztését, mint a kutatás, a kritikus gondolkodás és a problémamegoldás.',
 
-                "A tanterv olyan gyakorlati és kreatív tevékenységeket tartalmaz, mint programozás a Scratch platformon, a gépi tanulás és a mesterséges intelligencia megismerése a \"Machine Learning\" platform segítségével, valamint a vízmintavételhez és a víz pH-értékének elemzéséhez szükséges irányítható járművek építése Lego-készletekből. Ezek a tevékenységek lehetővé teszik a tanulók számára, hogy készségeiket és tudásukat interaktív és játékos környezetben ültessék át a gyakorlatba, ami növeli a projekt iránti motivációjukat és érdeklődésüket.",
+                'A tanterv olyan gyakorlati és kreatív tevékenységeket tartalmaz, mint programozás a Scratch platformon, a gépi tanulás és a mesterséges intelligencia megismerése a "Machine Learning" platform segítségével, valamint a vízmintavételhez és a víz pH-értékének elemzéséhez szükséges irányítható járművek építése Lego-készletekből. Ezek a tevékenységek lehetővé teszik a tanulók számára, hogy készségeiket és tudásukat interaktív és játékos környezetben ültessék át a gyakorlatba, ami növeli a projekt iránti motivációjukat és érdeklődésüket.',
 
-                "Ennek a tudásmorzsának a megvalósításához javasolt a három tevékenység kidolgozása az osztályban, hogy a teljes projekt befejezhető legyen, és egy tartalmasabb és motiválóbb tanulási folyamatot érjenek el. Azonban minden tevékenység külön is elvégezhető."
+                'Ennek a tudásmorzsának a megvalósításához javasolt a három tevékenység kidolgozása az osztályban, hogy a teljes projekt befejezhető legyen, és egy tartalmasabb és motiválóbb tanulási folyamatot érjenek el. Azonban minden tevékenység külön is elvégezhető.',
 
-],
-"activities" => [
-                "1" => "SOS víz projekt a Scratch platformon",
-                "2" => "SOS víz projekt gépi tanulással",
-                "3" => "SOS víz projekt robotika segítségével",
-            ]
+            ],
+            'activities' => [
+                '1' => 'SOS víz projekt a Scratch platformon',
+                '2' => 'SOS víz projekt gépi tanulással',
+                '3' => 'SOS víz projekt robotika segítségével',
+            ],
 
         ],
-
-
-
-
 
     ],
     'download_video_script' => 'Videó forgatókönyvének letöltése',
     'ready_to_share' => 'Készen áll arra, hogy megossza a tanultakat a diákjaival?',
     'choose_lessons' => 'Válasszon ki egyet az alábbi óravázlatok közül, és szervezzen tevékenységet a diákjaival.',
     'footer' => [
-    'title' => 'Ne felejtse el tevékenységét feltenni a programozási hét térképére!',
-    'text' => '<p>Könnyen szervezhet tematikus tanórát saját tantermében, vagy pedig egy nyílt napot vagy rendezvényt iskolájában. Mindössze találnia kell egy időpontot hozzá, majd regisztrálnia kell tevékenységét a <a href="/events">programozási hét térképén</a>. Minden tevékenységszervező részvételi oklevelet kap munkája elismeréseként.</p>
+        'title' => 'Ne felejtse el tevékenységét feltenni a programozási hét térképére!',
+        'text' => '<p>Könnyen szervezhet tematikus tanórát saját tantermében, vagy pedig egy nyílt napot vagy rendezvényt iskolájában. Mindössze találnia kell egy időpontot hozzá, majd regisztrálnia kell tevékenységét a <a href="/events">programozási hét térképén</a>. Minden tevékenységszervező részvételi oklevelet kap munkája elismeréseként.</p>
 
-<p>Ha szeretne kapcsolatba lépni lelkes tanárok nemzetközi csoportjával, csatlakozzon az <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Európai programozási hét tanároknak szánt Facebook-csoportjához</a>! Ha az országon belül vagy határokon átívelő együttműködést szeretne kialakítani más iskolákkal, csatlakozzon a <a href="/codeweek4all">Code Week 4 All kihíváshoz</a>.</p>'
-]
+<p>Ha szeretne kapcsolatba lépni lelkes tanárok nemzetközi csoportjával, csatlakozzon az <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">Európai programozási hét tanároknak szánt Facebook-csoportjához</a>! Ha az országon belül vagy határokon átívelő együttműködést szeretne kialakítani más iskolákkal, csatlakozzon a <a href="/codeweek4all">Code Week 4 All kihíváshoz</a>.</p>',
+    ],
 
 ];

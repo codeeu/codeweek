@@ -6,10 +6,9 @@ return [
         'author' => 'Zespół Europejskiego Tygodnia Kodowania',
         'purposes' => [
             'Tworzenie interaktywnych zagadek za pomocą kodu',
-            'Pisanie dialogu między czatbotem a użytkownikiem za pomocą kodu'
+            'Pisanie dialogu między czatbotem a użytkownikiem za pomocą kodu',
         ],
-        'description' =>
-            'Zapisz za pomocą kodu rozmowę między czatbotem a użytkownikiem, który próbuje rozwiązać zagadkę. Spróbuj stworzyć czatbota, który będzie rozmawiał jak człowiek. Zamiast zagadki możesz też napisać dialog między czatbotem a użytkownikiem.',
+        'description' => 'Zapisz za pomocą kodu rozmowę między czatbotem a użytkownikiem, który próbuje rozwiązać zagadkę. Spróbuj stworzyć czatbota, który będzie rozmawiał jak człowiek. Zamiast zagadki możesz też napisać dialog między czatbotem a użytkownikiem.',
         'instructions' => [
             'Wymyśl zagadkę',
             'Zaloguj się na platformie',
@@ -18,13 +17,13 @@ return [
             'Zapisz swoją zagadkę w trybie blokowym lub tekstowym',
             'Możesz też użyć',
             'tego kodu',
-            'i dopasować go do swojej zagadki lub wybrać z menu opcję „Answering a riddle” (Rozwiązywanie zagadki) i zmodyfikować proponowany kod'
+            'i dopasować go do swojej zagadki lub wybrać z menu opcję „Answering a riddle” (Rozwiązywanie zagadki) i zmodyfikować proponowany kod',
         ],
         'example' => 'Oto przykładowa zagadka:',
         'more' => [
             'Proponowany kod utworzono na podstawie ćwiczenia dostępnego na stronie Pencil Code pod nazwą',
-            '„Answering the Riddle”'
-        ]
+            '„Answering the Riddle”',
+        ],
     ],
 
     'paper-circuit' => [
@@ -32,12 +31,12 @@ return [
         'author' => 'Zespół Europejskiego Tygodnia Kodowania',
         'purposes' => [
             'Pobudzanie kreatywności',
-            'Ćwiczenie umiejętności rozwiązywania problemów'
+            'Ćwiczenie umiejętności rozwiązywania problemów',
         ],
         'description' => [
             'Stwórz dowolny rysunek. Może być to niebo nocą, biedronka, robot, choinka świąteczna lub cokolwiek innego, co przyjdzie Ci do głowy. Możesz też wykorzystać w swoim projekcie materiały wizualne przygotowane z okazji Europejskiego Tygodnia Kodowania. Znajdziesz je w',
             'zestawie narzędzi dla nauczycieli na stronie Europejskiego Tygodnia Kodowania',
-            'z którego możesz swobodnie pobierać wszystkie logo i materiały wizualne. Możesz nawet zaprojektować zaproszenie na Europejski Tydzień Kodowania, które będzie miało formę kartki z obwodem elektrycznym. Umieść na takiej kartce tekst zachęcający innych nauczycieli do udziału w Tygodniu Kodowania i/lub wejścia na stronę wydarzenia przeznaczoną dla szkół.'
+            'z którego możesz swobodnie pobierać wszystkie logo i materiały wizualne. Możesz nawet zaprojektować zaproszenie na Europejski Tydzień Kodowania, które będzie miało formę kartki z obwodem elektrycznym. Umieść na takiej kartce tekst zachęcający innych nauczycieli do udziału w Tygodniu Kodowania i/lub wejścia na stronę wydarzenia przeznaczoną dla szkół.',
         ],
         'instructions' => [
             'Stwórz rysunek i zdecyduj, które elementy będą podświetlane (np. gwiazdy).',
@@ -46,7 +45,7 @@ return [
             'Po drugiej stronie kartki narysuj ścieżkę plus (+) i ścieżkę minus (-). Upewnij się, że dłuższa nóżka diody LED jest połączona ze stroną „+” baterii, a krótsza nóżka – ze stroną „-”.',
             'Naklej taśmę miedzianą na obie ścieżki.',
             'Złóż kartkę tak, by zetknięcie papieru z baterią zapalało diodę LED. Możesz użyć spinacza, by zapewnić dobry styk z taśmą miedzianą.',
-            'Zrób zdjęcie swojej kartki z obwodem elektrycznym i udostępnij je na Instagramie. Napisz też, dlaczego uważasz to ćwiczenie za wartościowe.  '
+            'Zrób zdjęcie swojej kartki z obwodem elektrycznym i udostępnij je na Instagramie. Napisz też, dlaczego uważasz to ćwiczenie za wartościowe.  ',
         ],
         'example' => 'Oto przykładowe kartki z obwodem elektrycznym',
         'materials' => [
@@ -55,8 +54,8 @@ return [
             'bateria guzikowa',
             'taśma miedziana',
             'naklejane diody LED',
-            'spinacz'
-        ]
+            'spinacz',
+        ],
     ],
 
     'dance' => [
@@ -64,10 +63,9 @@ return [
         'author' => 'Zespół Europejskiego Tygodnia Kodowania',
         'purposes' => [
             'Nauka podstawowych koncepcji programistycznych',
-            'Nauka animowania postaci'
+            'Nauka animowania postaci',
         ],
-        'description' =>
-            'To wyzwanie polega na stworzeniu postaci, które będą wspólnie tańczyć. Możesz stworzyć własne postaci i podkłady muzyczne lub skorzystać z zasobów wbudowanej biblioteki multimediów. Masz za zadanie animować postaci tak, by ze sobą tańczyły i rozmawiały.',
+        'description' => 'To wyzwanie polega na stworzeniu postaci, które będą wspólnie tańczyć. Możesz stworzyć własne postaci i podkłady muzyczne lub skorzystać z zasobów wbudowanej biblioteki multimediów. Masz za zadanie animować postaci tak, by ze sobą tańczyły i rozmawiały.',
         'instructions' => [
             'Zaloguj się na platformie',
             'jako nauczyciel. Utwórz konta dla uczniów i udostępnij je podopiecznym. Zamiast tego możesz też udostępnić uczniom kod klasy, by mogli się zarejestrować na platformie za pomocą szkolnego adresu e-mail. Jeśli jesteś uczniem, możesz zarejestrować się jako uczeń, ale musisz wtedy podać adres e-mail opiekuna, który zatwierdzi Twoje konto',
@@ -80,13 +78,13 @@ return [
             'Kliknij każdą postać i animują ją, dodając następujące bloki',
             'Dodaj',
             'blok „say”',
-            '(powiedz), by Twoje postaci zaczęły ze sobą rozmawiać. Możesz zmienić kształty dymków, a także czcionkę i rozmiar zapisanego w nich tekstu'
+            '(powiedz), by Twoje postaci zaczęły ze sobą rozmawiać. Możesz zmienić kształty dymków, a także czcionkę i rozmiar zapisanego w nich tekstu',
         ],
         'example' => [
             'Zobacz',
             'ten przykład',
-            'z tańczącymi robotami. Możesz swobodnie go używać i modyfikować.'
-        ]
+            'z tańczącymi robotami. Możesz swobodnie go używać i modyfikować.',
+        ],
     ],
 
     'compose-song' => [
@@ -95,10 +93,9 @@ return [
         'purposes' => [
             'Nauka kodowania przez muzykę',
             'Rozpoznawanie różnych gatunków i instrumentów muzycznych',
-            'Skomponowanie utworu przez zmiksowanie różnych klipów muzycznych'
+            'Skomponowanie utworu przez zmiksowanie różnych klipów muzycznych',
         ],
-        'description' =>
-            'Celem tego wyzwania jest skomponowanie muzyki za pomocą języka programowania. Możesz skorzystać z gotowych klipów lub stworzyć własne i zmiksować je, by skomponować muzykę. Gotowy kod uruchom w cyfrowej stacji roboczej i odtwórz napisaną przez siebie muzykę. Wypróbuj różne dźwięki i efekty, by zmodyfikować swój utwór.',
+        'description' => 'Celem tego wyzwania jest skomponowanie muzyki za pomocą języka programowania. Możesz skorzystać z gotowych klipów lub stworzyć własne i zmiksować je, by skomponować muzykę. Gotowy kod uruchom w cyfrowej stacji roboczej i odtwórz napisaną przez siebie muzykę. Wypróbuj różne dźwięki i efekty, by zmodyfikować swój utwór.',
         'instructions' => [
             'Zaloguj się na platformie',
             'Wybierz opcję „Click here to make a script” (Kliknij tutaj, by utworzyć skrypt)',
@@ -125,13 +122,13 @@ return [
             'Wprowadź polecenie',
             'W nawiasie wpisz numer ścieżki, VOLUME, GAIN, poziom głośności, start metrum, końcowy poziom głośności i koniec metrum',
             'Oto przykładowy efekt zgłaśniania',
-            'i efekt wyciszania'
+            'i efekt wyciszania',
         ],
         'example' => [
             'Posłuchaj',
             'przykładowej piosenki napisanej za pomocą kodu na platformie Earsketch',
-            'Możesz zaimportować i zmodyfikować ten kod'
-        ]
+            'Możesz zaimportować i zmodyfikować ten kod',
+        ],
     ],
     'sensing-game' => [
         'title' => 'Stwórz grę opartą na czujniku wideo',
@@ -139,10 +136,9 @@ return [
         'purposes' => [
             'Kodowanie animowanych obiektów',
             'Zrozumienie zasad sterowania animacją cyfrową za pomocą ruchu',
-            'Skomponowanie utworu przez zmiksowanie różnych klipów muzycznych'
+            'Skomponowanie utworu przez zmiksowanie różnych klipów muzycznych',
         ],
-        'description' =>
-            'To wyzwanie polega na przygotowaniu prostej gry, w której kamera wideo jest wykorzystywana jako czujnik ruchu, dzięki czemu użytkownik może kontrolować animację za pomocą ruchu. Celem gry jest zebranie jak największej liczby baniek Europejskiego Tygodnia Kodowania w ciągu 30 sekund. Możesz też stworzyć grę, w której zamiast zbierania baniek trzeba ścigać bohatera lub przebijać balony dłońmi.',
+        'description' => 'To wyzwanie polega na przygotowaniu prostej gry, w której kamera wideo jest wykorzystywana jako czujnik ruchu, dzięki czemu użytkownik może kontrolować animację za pomocą ruchu. Celem gry jest zebranie jak największej liczby baniek Europejskiego Tygodnia Kodowania w ciągu 30 sekund. Możesz też stworzyć grę, w której zamiast zbierania baniek trzeba ścigać bohatera lub przebijać balony dłońmi.',
         'instructions' => [
             'Zaloguj się na platformie',
             'Kliknij opcję',
@@ -161,69 +157,63 @@ return [
             'Zmień Stoper o -1',
             'Utwórz nowego duszka o nazwie',
             'Game Over',
-            '(Koniec gry), który zakończy grę. Możesz też utworzyć duszka, którego nazwa będzie tytułem gry, np. „Zbierz wszystkie bańki Europejskiego Tygodnia Kodowania”.'
+            '(Koniec gry), który zakończy grę. Możesz też utworzyć duszka, którego nazwa będzie tytułem gry, np. „Zbierz wszystkie bańki Europejskiego Tygodnia Kodowania”.',
         ],
         'example' => [
             'Poniżej możesz zagrać w grę „Zbierz wszystkie bańki Europejskiego Tygodnia Kodowania”, która wykorzystuje czujnik wideo. Możesz swobodnie modyfikować',
-            'ten projekt'
-        ]
+            'ten projekt',
+        ],
     ],
 
     'calming-leds' => [
-        'title' =>
-            'Kojące światło LED: budowanie prostego urządzenia opartego na minikomputerze micro:bit',
+        'title' => 'Kojące światło LED: budowanie prostego urządzenia opartego na minikomputerze micro:bit',
         'author' => 'Micro:bit Educational Foundation',
         'duration' => '20 minut',
         'materials' => [
             'urządzenie micro:bit z pojemnikiem na baterie (jeśli jest dostępne)',
             'laptop lub tablet, na którym można otworzyć strony Microsoft MakeCode i Youtube',
-            'materiały edukacyjne ze strony microbit.org'
+            'materiały edukacyjne ze strony microbit.org',
         ],
-        'description' =>
-            'Uczniowie mają utworzyć z diod LED urządzenie cyfrowe, które pomoże im się wyciszyć i wyrównać oddech. W tym celu zostaną poproszeni o napisanie prostego kodu, co pomoże im dowiedzieć się więcej o animacjach i sekwencjach.',
+        'description' => 'Uczniowie mają utworzyć z diod LED urządzenie cyfrowe, które pomoże im się wyciszyć i wyrównać oddech. W tym celu zostaną poproszeni o napisanie prostego kodu, co pomoże im dowiedzieć się więcej o animacjach i sekwencjach.',
         'instructions' => [
             'Zadanie polega na zbudowaniu działającego urządzenia LED do relaksacji, które będzie pomagać w wyrównaniu oddechu. Urządzenia można zbudować przy użyciu prawdziwej płytki micro:bit lub jej symulatora w edytorze MakeCode. ',
             'Ćwiczenie można wykonać, piszcząc prostą sekwencję kodu w edytorze MakeCode zgodnie z instrukcjami pokazanymi w filmie / na zrzucie ekranu. ',
             'Zakres ćwiczenia można poszerzyć, by uczniowie mogli poznać różne animacje i sami wymyślili taką, która pomoże im się wyciszyć lub poczuć lepiej. ',
             'Więcej informacji i filmiki instruktażowe można znaleźć',
-            'tutaj'
+            'tutaj',
         ],
-        'example' =>
-            'Na tej stronie można znaleźć instrukcje i filmiki pokazujące wykonanie zadania oraz kod, który należy napisać',
+        'example' => 'Na tej stronie można znaleźć instrukcje i filmiki pokazujące wykonanie zadania oraz kod, który należy napisać',
         'purposes' => [
             'Budowa prostego i praktycznego urządzenia cyfrowego',
             'Poszerzenie wiedzy o sekwencjach i animacjach oraz sposobie ich działania',
             'Testowanie i debugowanie prostego kodu',
-            'Poprawianie projektu przez przyspieszanie lub spowalnianie animacji'
-        ]
+            'Poprawianie projektu przez przyspieszanie lub spowalnianie animacji',
+        ],
     ],
     'computational-thinking-and-computational-fluency' => [
-        'title' =>
-            'Rozwijanie myślenia komputacyjnego i biegłości liczenia za pomocą języka ScratchJr',
-        'author' =>
-            'Stamatis Papadakis – Ambasador Europejskiego Tygodnia Kodowania, Grecja',
+        'title' => 'Rozwijanie myślenia komputacyjnego i biegłości liczenia za pomocą języka ScratchJr',
+        'author' => 'Stamatis Papadakis – Ambasador Europejskiego Tygodnia Kodowania, Grecja',
         'purposes' => [
             'Poznanie nowych poleceń i nowego interfejsu. ',
             'Utworzenie prostych programów opartych na prostych poleceniach przyczynowo-skutkowych. ',
-            'Przeprowadzenie prostego debugowania metodą prób i błędów. '
+            'Przeprowadzenie prostego debugowania metodą prób i błędów. ',
         ],
-        'description' =>
-            'W trakcie ćwiczenia dzieci będą używać aplikacji ScratchJr, by tworzyć za jej pomocą ciekawsze, bardziej wciągające historie, a w swoich projektach wykorzystają myślenie komputacyjne. ',
+        'description' => 'W trakcie ćwiczenia dzieci będą używać aplikacji ScratchJr, by tworzyć za jej pomocą ciekawsze, bardziej wciągające historie, a w swoich projektach wykorzystają myślenie komputacyjne. ',
         'instructions' => [
             'Z aplikacji ScratchJr mogą korzystać dzieci, które nie potrafią jeszcze czytać, ponieważ wszystkie instrukcje i opcje menu są oznakowane za pomocą symboli i kolorów. do wykonania ćwiczenia nie potrzeba internetu, więc można wykonać je w klasie, pracowni, a nawet na otwartej przestrzeni. ',
-            'Dzieci używają miasta jako tła i przy użyciu bloków kodu prowadzą samochód przez jego ulice. '
+            'Dzieci używają miasta jako tła i przy użyciu bloków kodu prowadzą samochód przez jego ulice. ',
         ],
         'example' => [
             'Za pomocą bloków ruchu i dźwięków oraz bloków ponownego uruchomienie dziecko może sprawić, że jego postaci zaczną tańczyć. ',
-            'Dziecko może wybrać tło i postać, a następnie za pomocą bloku ruchu spowodować, że auto będzie jechać po ulicach miasta. Użycie bloku szybkości pozwala przyspieszyć lub spowolnić ruch postaci. '
+            'Dziecko może wybrać tło i postać, a następnie za pomocą bloku ruchu spowodować, że auto będzie jechać po ulicach miasta. Użycie bloku szybkości pozwala przyspieszyć lub spowolnić ruch postaci. ',
         ],
         'materials' => [
             'Aplikacja',
             'jest bezpłatna i działa na różnych systemach operacyjnych oraz na różnych urządzeniach cyfrowych',
             'Ponadto na stronie',
-            'można znaleźć wiele bezpłatnych materiałów edukacyjnych'
+            'można znaleźć wiele bezpłatnych materiałów edukacyjnych',
         ],
-        'duration' => '90 minut'
+        'duration' => '90 minut',
     ],
     'ai-hour-of-code' => [
         'title' => 'Godzina kodowania z AI',
@@ -231,86 +221,77 @@ return [
         'purposes' => [
             'Utworzenie rozwiązań opartych na kodzie obejmującym sekwencje, zdarzenia, pętle i instrukcje warunkowe',
             'Rozłożenie kroków potrzebnych do rozwiązania problemu na precyzyjną sekwencję instrukcji',
-            'Poznanie koncepcji programistycznych'
+            'Poznanie koncepcji programistycznych',
         ],
-        'description' =>
-            'Wiosce grozi pożar, przed którym może uchronić ją tylko napisane przez Ciebie rozwiązanie!Poznaj swojego pomocnika, minecraftowego Agenta, a następnie zaprogramuj go tak, by przeczesywał las i zbierał w nim dane. Zgromadzone dane pomogą agentowi przewidzieć, gdzie wybuchnie ogień. Następnie zaprogramuj agenta tak, by pomógł Ci w zatrzymaniu pożaru, ocaleniu wioski i przywróceniu lasu do życia. Wykonując tę misję, poznasz podstawy kodowania i przykład realnego wykorzystania sztucznej inteligencji(ang. AI). ',
+        'description' => 'Wiosce grozi pożar, przed którym może uchronić ją tylko napisane przez Ciebie rozwiązanie!Poznaj swojego pomocnika, minecraftowego Agenta, a następnie zaprogramuj go tak, by przeczesywał las i zbierał w nim dane. Zgromadzone dane pomogą agentowi przewidzieć, gdzie wybuchnie ogień. Następnie zaprogramuj agenta tak, by pomógł Ci w zatrzymaniu pożaru, ocaleniu wioski i przywróceniu lasu do życia. Wykonując tę misję, poznasz podstawy kodowania i przykład realnego wykorzystania sztucznej inteligencji(ang. AI). ',
         'instructions' => 'Plan lekcji można pobrać tutaj',
         'materials' => [
             'Zainstalowana gra Minecraft: Education Edition',
             'Po zainstalowaniu gry Minecraft Education Edition wyzwanie będzie dostępne na',
-            'tej stronie'
-        ]
+            'tej stronie',
+        ],
     ],
     'create-a-dance' => [
         'title' => 'Wymyśl taniec do utworu „Oda do kodu”!',
-        'purposes' =>
-            'Ćwiczenie kodowania przez zabawę i budowanie poczucia przynależności do społeczności Europejskiego Tygodnia Kodowania. ',
+        'purposes' => 'Ćwiczenie kodowania przez zabawę i budowanie poczucia przynależności do społeczności Europejskiego Tygodnia Kodowania. ',
         'description' => [
             'Wymyśl taniec do utworu „Oda do kodu”(Ode to Code)!W',
             'samouczku projektu Dance Party(Potańcówka)',
-            'znajdziesz instrukcje, jak zaprogramować taniec do „Ody do kodu”. Oficjalny hymn Europejskiego Tygodnia Kodowania jest dostępny jako jeden z utworów do wyboru w projekcie Potańcówka. '
+            'znajdziesz instrukcje, jak zaprogramować taniec do „Ody do kodu”. Oficjalny hymn Europejskiego Tygodnia Kodowania jest dostępny jako jeden z utworów do wyboru w projekcie Potańcówka. ',
         ],
         'instructions' => [
             'Instrukcje są dostępne w formie filmików w',
             'samouczku',
-            'i w górnej części każdego poziomu'
+            'i w górnej części każdego poziomu',
         ],
         'example' => 'Wybrane prace uczniów można znaleźć na stronie',
-        'materials' => 'Samouczek Code. org'
+        'materials' => 'Samouczek Code. org',
     ],
     'create-a-simulation' => [
         'title' => 'Stwórz symulację!',
         'purposes' => [
             'Zdobycie wiedzy o symulacjach poprzez wykorzystanie takich zmiennych, jak: powstawanie tłumu, wskaźniki wyzdrowień, noszenie masek i szczepionki. ',
-            'Odniesienie posiadanej już wiedzy o rzeczywistych epidemiach chorób wirusowych do fikcyjnego scenariusza. '
+            'Odniesienie posiadanej już wiedzy o rzeczywistych epidemiach chorób wirusowych do fikcyjnego scenariusza. ',
         ],
-        'description' =>
-            'Napisz kod, by utworzyć i przeprowadzić własną symulację wybuchu epidemii w Mieście potworów. Dowiedz się, jak napisać kod i przygotować prognozy dotyczące tego, co wydarzy się w miejscowościach blisko Miasta potworów. ',
+        'description' => 'Napisz kod, by utworzyć i przeprowadzić własną symulację wybuchu epidemii w Mieście potworów. Dowiedz się, jak napisać kod i przygotować prognozy dotyczące tego, co wydarzy się w miejscowościach blisko Miasta potworów. ',
         'instructions' => [
             'Instrukcje są dostępne w formie filmików w',
             'samouczku',
-            'i w górnej części każdego poziomu'
+            'i w górnej części każdego poziomu',
         ],
-        'example' =>
-            'Gotową symulację możesz udostępnić w Internecie. Podziel się przy tym swoim pomysłem na to, co należy robić, by zadbać o zdrowie innych, gdy w mieście pojawi się wirus. ',
-        'materials' => 'Samouczek Code. org'
+        'example' => 'Gotową symulację możesz udostępnić w Internecie. Podziel się przy tym swoim pomysłem na to, co należy robić, by zadbać o zdrowie innych, gdy w mieście pojawi się wirus. ',
+        'materials' => 'Samouczek Code. org',
     ],
     'create-your-own-masterpiece' => [
         'title' => 'Stwórz własne arcydzieło!',
         'audience' => 'Bez ograniczeń wiekowych',
-        'purpose' =>
-            'Przybliżenie koncepcji informatycznych za pomocą rysowania i rozwijanie wyobraźni',
-        'description' =>
-            'Stwórz swoje arcydzieło z pomocą artysty!Użyj bloków kodu, by sterować artystą, który wykona Twój wyjątkowy projekt. ',
-        'instructions' =>
-            'Instrukcje do każdego poziomu są wyświetlane w górnej części ekranu',
-        'example' =>
-            'Projekty artystyczne można znaleźć w sekcji Drawing(Rysowanie) na tej stronie:',
-        'materials' => ['Pierwszy poziom samouczka można znaleźć', 'TUTAJ']
+        'purpose' => 'Przybliżenie koncepcji informatycznych za pomocą rysowania i rozwijanie wyobraźni',
+        'description' => 'Stwórz swoje arcydzieło z pomocą artysty!Użyj bloków kodu, by sterować artystą, który wykona Twój wyjątkowy projekt. ',
+        'instructions' => 'Instrukcje do każdego poziomu są wyświetlane w górnej części ekranu',
+        'example' => 'Projekty artystyczne można znaleźć w sekcji Drawing(Rysowanie) na tej stronie:',
+        'materials' => ['Pierwszy poziom samouczka można znaleźć', 'TUTAJ'],
     ],
     'cs-first-unplugged-activities' => [
         'title' => 'CS First Unplugged – ćwiczenia bez komputera',
         'purposes' => [
             'Wsparcie uczniów, którzy uczą się z domu',
-            'Odpoczynek od pracy przed ekranem'
+            'Odpoczynek od pracy przed ekranem',
         ],
-        'description' =>
-            'CS First Unplugged to zestaw ćwiczeń, które przybliżają uczniom koncepcje informatyczne, ale nie wymagają korzystania z komputera. Opracowaliśmy tę lekcję, by pokazać, że informatyka to dużo więcej niż tylko programowanie. ',
+        'description' => 'CS First Unplugged to zestaw ćwiczeń, które przybliżają uczniom koncepcje informatyczne, ale nie wymagają korzystania z komputera. Opracowaliśmy tę lekcję, by pokazać, że informatyka to dużo więcej niż tylko programowanie. ',
         'instructions' => [
             'Broszurę ze wszystkimi ćwiczeniami(w języku angielskim) można znaleźć',
             'tutaj',
             'a scenariusz lekcji(w języku angielskim) –',
             'Ćwiczenia zawarte w tej lekcji można wykonywać niezależnie i w dowolnej kolejności',
-            'Nauczyciel może sfotografować pracę uczniów udostępnić zdjęcia na Instagramie z hasztagiem #EUCodeWeekChallengeGoogle #GrowWithGoogle'
+            'Nauczyciel może sfotografować pracę uczniów udostępnić zdjęcia na Instagramie z hasztagiem #EUCodeWeekChallengeGoogle #GrowWithGoogle',
         ],
         'materials' => [
             'Oprócz broszury z ćwiczeniami do wykonania niektórych zadań potrzebne są także dodatkowe materiały.',
             'Małe pionki (na przykład suche ziarna fasoli) do postawienia na mapie w ćwiczeniu „Sieć w sąsiedztwie”.',
             'Nożyczki do wycięcia koła szyfrowego z ćwiczenia „Wysyłanie tajnej wiadomości”.',
             'Tektura i klej, by usztywnić koło szyfrowe z ćwiczenia „Wysyłanie tajnej wiadomości”.',
-            'Pinezka, wykałaczka lub wyprostowany spinacz do połączenia elementów koła szyfrowego z ćwiczenia „Wysyłanie tajnej wiadomości”.'
-        ]
+            'Pinezka, wykałaczka lub wyprostowany spinacz do połączenia elementów koła szyfrowego z ćwiczenia „Wysyłanie tajnej wiadomości”.',
+        ],
     ],
     'family-care' => [
         'title' => 'Pomoc domownikom',
@@ -322,14 +303,14 @@ return [
             'Dostrzeżenie w problemach szans i znalezienie kreatywnych rozwiązań;',
             'Stworzenie innowacyjnych rozwiązań za pomocą kodu;',
             'Zaprojektowanie plakatów i przedstawienie rozwiązań szerszemu gronu osób;',
-            'Wykorzystanie mediów społecznościowych do nadania projektom mocy sprawczej. '
+            'Wykorzystanie mediów społecznościowych do nadania projektom mocy sprawczej. ',
         ],
         'description' => [
             'Co przychodzi Ci do głowy, gdy słyszysz słowo dom? Zgrabny budynek? Obfity obiad przygotowany przez rodziców? Prywatna przestrzeń tylko dla siebie? Ciepło domowego ogniska pozwala nam zregenerować umysł i ciało. Tempo współczesnego świata sprawia jednak, że rodzice zawsze są w biegu. A Ty nie możesz zostawić swoich zwierzaków samych sobie, gdy spotykasz się ze znajomymi. Jak więc troszczyć się o bliskich i podopiecznych, gdy jest się daleko? Tematem tego wyzwania jest',
             'Pomoc domownikom',
             'Zgodnie z tym tematem uczniowie są zachęcani do szukania pomysłów na okazywanie miłości i troski za pomocą programowania i rozwiązań sprzętowych. Oto kilka pytań do przemyślenia',
             'Ilu członków rodziny mieszka w Twoim domu? Kim oni są? Czy mieszkanie z nimi niesie ze sobą jakieś problemy? Jakiego rodzaju opieki potrzebują te osoby?',
-            'Czy znasz kogoś, komu bardziej niż innym w Twojej społeczności, brakuje opieki bliskich? Jak możesz pomóc tej osobie?'
+            'Czy znasz kogoś, komu bardziej niż innym w Twojej społeczności, brakuje opieki bliskich? Jak możesz pomóc tej osobie?',
         ],
         'instructions' => [
             'Przeprowadź burzę mózgów i analizę dotyczącą pomocy domownikom',
@@ -338,7 +319,7 @@ return [
             'Wybierz rozwiązanie',
             'Zaprogramuj rozwiązanie i opracuj jego strukturę',
             'Zaprojektuj plakat z planem Twojego rozwiązania',
-            'Pokaż go nauczycielom i rodzinie'
+            'Pokaż go nauczycielom i rodzinie',
         ],
         'example' => ['Przykładowe rozwiązania można znaleźć na stronie', 'i'],
         'materials' => [
@@ -350,23 +331,21 @@ return [
             'Uczestnicy zawodów muszą opracować rozwiązanie związane z konkretnym tematem, używając do tego języka programowania i platformy sprzętowej.',
             'Uczniowie mogą wykonać zadanie w czasie Tygodnia Kodowania, a następnie pokazać je na poziomie międzynarodowym, by nawiązać kontakty z innymi dziećmi i wygrać nagrody.',
             'W celu uzyskania dodatkowych informacji należy wejść a stronę:',
-            'lub napisać do nas na adres'
-        ]
+            'lub napisać do nas na adres',
+        ],
     ],
     'virtual-flower-field' => [
         'title' => 'Hodowanie wirtualnych kwiatów',
-        'author' =>
-            'Jadga Huegle – trenerka Meet and Code i członkini zespołu SAP Snap!',
+        'author' => 'Jadga Huegle – trenerka Meet and Code i członkini zespołu SAP Snap!',
         'duration' => '30–60 minut',
         'purposes' => [
             'Nauka programowania oparta na prostym, ale dającym duże możliwości wyrazu projekcie.',
             'Zrozumienie, że programowanie może być sztuką i pozwala otrzymać piękne efekty.',
             'Wykorzystanie kolorowych kwiatów i Europejskiego Tygodnia Kodowania do dodania jesieni kolorów.',
             'Pokazanie, jak różnorodny jest świat kwiatów.',
-            'Udział w realizacji celów zrównoważonego rozwoju, a zwłaszcza działania w dziedzinie klimatu (SDG13) przez organizację wydarzeń zawiązanych z programowaniem, które promują edukację w zakresie zmiany klimatu i podnoszą jej świadomość.'
+            'Udział w realizacji celów zrównoważonego rozwoju, a zwłaszcza działania w dziedzinie klimatu (SDG13) przez organizację wydarzeń zawiązanych z programowaniem, które promują edukację w zakresie zmiany klimatu i podnoszą jej świadomość.',
         ],
-        'description' =>
-            'Za pomocą języka Snap! napisz program, w którym można wyhodować pole wirtualnych rozmaitych kwiatów o różnej liczbie płatków.',
+        'description' => 'Za pomocą języka Snap! napisz program, w którym można wyhodować pole wirtualnych rozmaitych kwiatów o różnej liczbie płatków.',
         'instructions' => [
             'Jeśli nie masz pomysłu, jak podejść do tego wyzwania, obejrzyj',
             'ten filmik',
@@ -375,25 +354,23 @@ return [
             'i postępuj zgodnie z instrukcjami',
             'Zadanie można wykonać, programując wirtualną łąkę kwietną w języku Snap! (lub Scratch), a efekty pracy można sfotografować i opublikować w Internecie.',
             'Na polu powinny rosnąć rozmaite kwiaty z różną liczbą płatków. Kwiaty powinny zostać zaprogramowane, co znaczy, ze trzeba je uzyskać metodą wielokrotnego odbijania i obracania płatków (lub rysowania i obracania).',
-            'Post ze zdjęciem Twojego wirtualnego ogrodu kwietnego należ opatrzyć hasztagiem #MeetandCode.'
+            'Post ze zdjęciem Twojego wirtualnego ogrodu kwietnego należ opatrzyć hasztagiem #MeetandCode.',
         ],
         'materials' => [
             'zachęcamy do wykonania zadania za pomocą języka',
-            'choć możliwe jest też użycie języka'
-        ]
+            'choć możliwe jest też użycie języka',
+        ],
     ],
     'haunted-house' => [
         'title' => 'Nawiedzony dom w Hedy',
-        'author' =>
-            'Felienne Hermans, Uniwersytet w Lejdzie – Ramon Moorlag, I & I – Tydzień Kodowania, Holandia',
+        'author' => 'Felienne Hermans, Uniwersytet w Lejdzie – Ramon Moorlag, I & I – Tydzień Kodowania, Holandia',
         'audience' => 'Nauczyciele i edukatorzy',
         'duration' => '1–2 godz. w zależności od posiadanej wcześniej wiedzy',
         'purposes' => [
             'Stworzenie interaktywnej historii o nawiedzonym domu. ',
-            'Nauka programowania w języku Hedy. '
+            'Nauka programowania w języku Hedy. ',
         ],
-        'description' =>
-            'Zadanie polega na napisaniu w języku Hedy interaktywnego opowiadania o nawiedzonym domu. Każde uruchomienie kodu ma generować nową historię. Historia może zostać odczytana na głos przez komputer lub udostępniona w Internecie. ',
+        'description' => 'Zadanie polega na napisaniu w języku Hedy interaktywnego opowiadania o nawiedzonym domu. Każde uruchomienie kodu ma generować nową historię. Historia może zostać odczytana na głos przez komputer lub udostępniona w Internecie. ',
         'instructions' => [
             'Zacznij od otworzenia przeglądarki i przejścia do witryny hedycode. com. ',
             'Wykonaj instrukcje dla poziomów 1–4. Skorzystaj z zakładek „Level”(Poziom) i „Haunted house”(Nawiedzony dom)',
@@ -401,20 +378,19 @@ return [
             'Przeznaczony dla nauczycieli scenariusz lekcji z językiem Hendy można znaleźć',
             'tutaj',
             'Nagranie prezentacji, w której Felienne Hermans przedstawia język Hedy, można znaleźć',
-            'tutaj'
+            'tutaj',
         ],
         'example' => 'Przykładowy nawiedzony dom na poziomie',
-        'materials' => ['Język Hedy na', 'poziomach od 1 do 4']
+        'materials' => ['Język Hedy na', 'poziomach od 1 do 4'],
     ],
     'inclusive-app-design' => [
         'title' => 'Aplikacja dla każdego',
         'author' => 'Apple Education',
         'duration' => '60 minut + opcjonalne ćwiczenia dodatkowe',
         'purposes' => [
-            'Przeprowadzenie burzy mózgów, zaplanowanie i stworzenie prototypu i udostępnienie innym wymyślonej aplikacji, która będzie dla każdego zrozumiała i łatwa w obsłudze. '
+            'Przeprowadzenie burzy mózgów, zaplanowanie i stworzenie prototypu i udostępnienie innym wymyślonej aplikacji, która będzie dla każdego zrozumiała i łatwa w obsłudze. ',
         ],
-        'description' =>
-            'Dobre aplikacje rodzą się z dobrych pomysłów. W tym zadaniu uczniowie wymyślą aplikację zgodną z ich zainteresowaniami i odkryją, jak projektować aplikacje, by były inkluzywne i miały ułatwienia dostępu.',
+        'description' => 'Dobre aplikacje rodzą się z dobrych pomysłów. W tym zadaniu uczniowie wymyślą aplikację zgodną z ich zainteresowaniami i odkryją, jak projektować aplikacje, by były inkluzywne i miały ułatwienia dostępu.',
         'instructions' => [
             'Wszystkie instrukcje można znaleźć pod tym adresem',
             'Jest to scenariusz jednogodzinnej lekcji, za pomocą którego nauczyciel może pomóc uczniom:',
@@ -422,12 +398,12 @@ return [
             'Przeprowadzić burze mózgów, by znaleźć pomysł na aplikacje',
             'Stworzyć zarys swoich pomysłów na aplikacje i zaplanować zadania związane z użytkownikami',
             'Przygotować prototyp jednej z części aplikacji w programie Keynote',
-            'Przedstawić demonstracje prototypów i opisać sposób, w jaki wspierają one użytkowników o różnych doświadczeniach i możliwościach'
+            'Przedstawić demonstracje prototypów i opisać sposób, w jaki wspierają one użytkowników o różnych doświadczeniach i możliwościach',
         ],
         'materials' => [
             'Opis ćwiczenia w zakresie tworzenia aplikacji inkluzywnych dostępny na portalu Apple Teacher Learning Center',
-            'Program Keynote na iPadzie lub Macu jest zalecany, ale nie wymagany. '
-        ]
+            'Program Keynote na iPadzie lub Macu jest zalecany, ale nie wymagany. ',
+        ],
     ],
     'silly-eyes' => [
         'title' => 'Rozbiegane oczy',
@@ -436,28 +412,24 @@ return [
         'purposes' => [
             'Wykonanie projektu opartego na interakcji z użytkownikiem. ',
             'Spersonalizowanie projektu za pomocą kolorów i efektów graficznych. ',
-            'Poznanie zasad projektowania w środowisku cyfrowym. '
+            'Poznanie zasad projektowania w środowisku cyfrowym. ',
         ],
-        'description' =>
-            'To zadanie polega na zaprojektowaniu i stworzeniu postaci o rozbieganych oczach. Duże, rozbiegane oczy postaci będą wodzić za kursorem, dzięki czemu postać ożyje. ',
+        'description' => 'To zadanie polega na zaprojektowaniu i stworzeniu postaci o rozbieganych oczach. Duże, rozbiegane oczy postaci będą wodzić za kursorem, dzięki czemu postać ożyje. ',
         'instructions' => 'Pełny opis projektu można znaleźć tutaj',
-        'example' =>
-            'Sprawdź projekty „Gobo“, „Under the sea “ i „Don\'t eat donut“'
+        'example' => 'Sprawdź projekty „Gobo“, „Under the sea “ i „Don\'t eat donut“',
     ],
     'train-ai-bot' => [
         'title' => 'Wytrenuj bota AI!',
-        'purposes' =>
-            'Poszerzenie wiedzy o sztucznej inteligencji (AI), uczeniu maszynowym, trenowaniu danych i odchyleniach oraz problemach etycznych i sposobach wykorzystywania AI do rozwiązywania globalnych problemów.',
-        'description' =>
-            'Wytrenuj bota AI w programie „AI dla oceanów”. To zadanie polega na zaprogramowaniu lub wytrenowaniu AI (sztucznej inteligencji), by odróżniała ryby od śmieci. Czas posprzątać ocean!',
+        'purposes' => 'Poszerzenie wiedzy o sztucznej inteligencji (AI), uczeniu maszynowym, trenowaniu danych i odchyleniach oraz problemach etycznych i sposobach wykorzystywania AI do rozwiązywania globalnych problemów.',
+        'description' => 'Wytrenuj bota AI w programie „AI dla oceanów”. To zadanie polega na zaprogramowaniu lub wytrenowaniu AI (sztucznej inteligencji), by odróżniała ryby od śmieci. Czas posprzątać ocean!',
         'instructions' => [
             'Instrukcje są dostępne w formie filmików w samouczku',
-            'i w górnej części każdego poziomu'
+            'i w górnej części każdego poziomu',
         ],
         'materials' => [
             'Samouczek można znaleźć tutaj',
-            'Jest on dostępny w ponad 25 językach'
-        ]
+            'Jest on dostępny w ponad 25 językach',
+        ],
     ],
     'build-calliope' => [
         'title' => 'Zbuduj swojego własnego mini trenera fitness Calliope',
@@ -466,28 +438,26 @@ return [
             'W zabawny sposób poznaj sekwencje, animacje, powtórzenia i zmienne.',
             'Stwórz structure schematu.',
             'Przetestuj I debuguj kod.',
-            'Optymalizacja programu metodą prób i błędów, sprawdzanie i dostosowywanie użyteczności.'
+            'Optymalizacja programu metodą prób i błędów, sprawdzanie i dostosowywanie użyteczności.',
         ],
         'duration' => '20-30 minut',
-        'description' =>
-            ' Uczestnicy opracują sterowany cyfrowo prototyp, który wykorzystuje kolorową świecącą diodę LED do odtworzenia zaplanowanego z góry 10-punktowego ćwiczenia fitness.',
+        'description' => ' Uczestnicy opracują sterowany cyfrowo prototyp, który wykorzystuje kolorową świecącą diodę LED do odtworzenia zaplanowanego z góry 10-punktowego ćwiczenia fitness.',
         'materials' => [
             'Calliope mini StarterBox (jeśli dostępny)',
-            'Laptop albo tablet z którym możesz odwiedzić<a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> albo<a href="https://calliope.cc">https://calliope.cc</a> i YouTube żeby mieć dostęp do zasobów potrzebnych do działania.'
+            'Laptop albo tablet z którym możesz odwiedzić<a href="https://makecode.calliope.cc">https://makecode.calliope.cc</a> albo<a href="https://calliope.cc">https://calliope.cc</a> i YouTube żeby mieć dostęp do zasobów potrzebnych do działania.',
         ],
         'instructions' => [
             'Na początek stwórz plan i ustal kolejność ćwiczeń. Korzystając z harmonogramu, zaprogramuj diodę LED RGB Calliope mini, aby wyświetlała jeden z 5 kolorów we wstępnie zdefiniowanym tempie. Następnie utwórz zmienną dla tempa i zaprogramuj powtórzenia za pomocą pętli.',
-            "Pamiętaj, że jeśli zaimplementowałeś program w sposób, który Ci odpowiada, możesz również podzielić się nim z nami pod adresem info@calliope.cc-jesteśmy podekscytowani, widząc, co z tego zrobisz! Przy okazji, wśród zgłoszeń rozdamy 30 figurek Calliope!",
-            "Udostępnij kod QR swojego projektu na Instagramie, dodaj hashtag #EUCodeWeekChallenge i wspomnij @CodeWeekEU.",
+            'Pamiętaj, że jeśli zaimplementowałeś program w sposób, który Ci odpowiada, możesz również podzielić się nim z nami pod adresem info@calliope.cc-jesteśmy podekscytowani, widząc, co z tego zrobisz! Przy okazji, wśród zgłoszeń rozdamy 30 figurek Calliope!',
+            'Udostępnij kod QR swojego projektu na Instagramie, dodaj hashtag #EUCodeWeekChallenge i wspomnij @CodeWeekEU.',
         ],
         'example' => [
             'Siedząc przy komputerze: Ty też możesz uprawiać sport.',
             'Stwórz prototyp fitness za pomocą mini Calliope, który można również przetestować w symulatorze. Wyzwanie wykonuje się w edytorze MakeCode poprzez zaprogramowanie prostej sekwencji kodu (patrz zrzut ekranu).',
-            'Wybierz 5 różnych kolorów i każdemu z nich przypisz ćwiczenie fitness, np. przysiady lub pajacyki. Następnie kolory można ustawiać w dowolnej kolejności i trenować.'
+            'Wybierz 5 różnych kolorów i każdemu z nich przypisz ćwiczenie fitness, np. przysiady lub pajacyki. Następnie kolory można ustawiać w dowolnej kolejności i trenować.',
         ],
 
-    ]
-    ,
+    ],
     'common' => [
         'share' => 'Udostępnij odnośnik lub kod QR do swojego projektu na Instagramie lub Facebooku, dodaj hasztag #EUCodeWeekChallenge oraz oznasz @CodeWeekEU.',
         'audience' => [
@@ -502,10 +472,9 @@ return [
         'author' => 'Fabrizia Agnello',
         'purposes' => [
             'Tworzenie interaktywnych zagadek za pomocą kodu',
-            'Kodowanie symulacji poruszającego się losowo obiektu do wykorzystania, jeśli rzeczywisty obiekt nie będzie dostępny'
+            'Kodowanie symulacji poruszającego się losowo obiektu do wykorzystania, jeśli rzeczywisty obiekt nie będzie dostępny',
         ],
-        'description' =>
-            'W tym wyzwaniu należy zakodować rzut kostką tak, by uzyskać losowy wynik po wydaniu polecenia. Można wybrać dowolny typ kostki z dowolną liczbą boków, przypominającą kostki używane w grach RPG. Można nawet dodać dźwięki',
+        'description' => 'W tym wyzwaniu należy zakodować rzut kostką tak, by uzyskać losowy wynik po wydaniu polecenia. Można wybrać dowolny typ kostki z dowolną liczbą boków, przypominającą kostki używane w grach RPG. Można nawet dodać dźwięki',
         'instructions' => [
             'Zaloguj się do Scratch',
             'Wybierz tło',
@@ -525,15 +494,13 @@ return [
             'Zbudowanie urządzenia osobistego kontrolującego aktywność fizyczną',
             'Napisanie kodu dla micro:bit, by poprawić stan zdrowia poprzez sport',
         ],
-        'description' =>
-            'Wyzwanie to umożliwia napisanie kodu dla micro:bit, by można było kontrolować czasy powtórzeń ćwiczeń fizycznych w połączeniu z czasami odpoczynku. Dzięki temu można monitorować swoją aktywność fizyczną w szkole, w domu lub w parku'
-        ,
+        'description' => 'Wyzwanie to umożliwia napisanie kodu dla micro:bit, by można było kontrolować czasy powtórzeń ćwiczeń fizycznych w połączeniu z czasami odpoczynku. Dzięki temu można monitorować swoją aktywność fizyczną w szkole, w domu lub w parku',
         'instructions' => [
             'Kiedy A+B, utwórz 3-sekundowy licznik odliczający w dół odtwarzający nutę po każdej sekundzie i wyświetlający słowo „GO!”',
             'W trakcie pierwszego ćwiczenia wyświetlaj błyskający kwadrat o wymiarach 2x2 przez 20 sekund. Następnie odtwórz dźwięk i zatrzymaj kwadrat. Przez pozostały czas kolejny błyskający obraz musi być wyświetlany przez 10 sekund. Po jego zakończeniu odtwórz dźwięk',
             'Następnie powtórz to samo działanie, ale wyświetlaj panel o wymiarach 3x3 przez czas trwania ćwiczenia. Powtórz te działania do momentu wyświetlenia panelu 5x5',
         ],
-        'duration' => '30–40 minut'
+        'duration' => '30–40 minut',
     ],
     'create-a-spiral' => [
         'title' => 'Utwórz spiralę',
@@ -585,7 +552,7 @@ return [
             'zapoznanie się z narzędziem Pictoblox oraz zaimportowanie stworzonego modelu do projektu',
             'wyznaczenie pola i obiektów, utworzenie i zainicjowanie zmiennych w Pictoblox',
             'zainicjowanie gry, określenie ruchów gracza, zaprogramowanie losowych ruchów SI',
-            'stworzenie i przetestowanie gry, w której sztuczna inteligencja jest przeciwnikiem w grze w kamień, papier, nożyce'
+            'stworzenie i przetestowanie gry, w której sztuczna inteligencja jest przeciwnikiem w grze w kamień, papier, nożyce',
 
         ],
         'description' => 'Stworzymy model, wykorzystując Maszynę, którą można uczyć, na podstawie obrazów z wykorzystaniem trzech klas: kamień, papier, nożyce. Model zostanie wczytany w Pictoblox i wykorzystany do stworzenia gry, w której możemy grać przeciwko SI',
@@ -608,7 +575,7 @@ return [
             'Sprawdź, czy runda zakończyła się remisem.',
             'Zaprogramuj bloki.',
             'Obrazek Kamień, papier, nożyce',
-        ]
+        ],
     ],
     'air-drawing-with-AI' => [
         'title' => 'Rysowanie w powietrzu z SI',
@@ -616,7 +583,7 @@ return [
         'purposes' => [
             'napisanie programu z wykorzystaniem rozszerzenia do wykrywania ludzkiego ciała na potrzeby rozpoznawania ruchu palców przed kamerą.',
             'kodowanie z prostymi blokami w kilku linijkach kodu.',
-            'zobaczenie przykładu wykorzystania SI'
+            'zobaczenie przykładu wykorzystania SI',
         ],
         'description' => 'Stworzenie programu, który umożliwia użytkownikowi rysowanie w powietrzu rękami (palcem wskazującym) przed kamerą – wszystko, co narysuje, zostaje automatycznie wyświetlone w polu programu Pictoblox.',
         'instructions' => [
@@ -632,8 +599,8 @@ return [
             'Laptop lub komputer z kamerą',
             'Pobrana najnowsza wersja PictoBlox (zalecane) lub internetowa wersja Pictoblox (bezpłatne)',
             'Konto Pictoblox (bezpłatne)',
-            'Dobry dostęp do internetu'
-        ]
+            'Dobry dostęp do internetu',
+        ],
     ],
     'emobot-kliki' => [
         'title' => 'Emobot Kliki',
@@ -642,7 +609,7 @@ return [
             'Nauczenie się podstawowych koncepcji uczenia maszynowego i rozpoznawania tekstu.',
             'Zrozumienie roli emocji w komunikacji.',
             'Pisanie dialogu między czatbotem a użytkownikiem za pomocą kodu.',
-            'Zrozumienie, w jaki sposób komputery są w stanie rozpoznawać tony emocjonalne poprzez analizę tekstu i odpowiednio na nie reagować.'
+            'Zrozumienie, w jaki sposób komputery są w stanie rozpoznawać tony emocjonalne poprzez analizę tekstu i odpowiednio na nie reagować.',
         ],
         'description' => [
             'Stwórz bota emocji w Scratch, który będzie potrafił wyświetlać szczęśliwą twarz dla pozytywnych komunikatów (jeśli powiesz mu coś miłego), zagniewaną twarz dla negatywnych komunikatów (jeśli powiesz mu coś wrednego) oraz twarz wyrażającą zdezorientowanie, jeśli wiadomość będzie niejasna.',
@@ -654,8 +621,7 @@ return [
             'Stwórz nowy model uczenia maszynowego, dodając 3 nowe etykiety, pierwszą o nazwie “miłe”, drugą o nazwie “złe” oraz, opcjonalnie, jeśli chcesz, by bot rozpoznawał Twoje imię – trzecią etykietę o nazwie “imię”.',
             'Wyszkol nowy model uczenia maszynowego, przetestuj go i wykorzystaj, by stworzyć Emobota w Scratch.',
             'Uruchom edytor Scratch 3, usuń obrazek kota, wprowadź 3 nowe obrazki stworzone przez kreatora obrazów Microsoft Bing (rysunek komputera, który jest szczęśliwy, zagniewany i niepewny) lub stwórz nowy obrazek, klikając ikonę Rysuj i tworząc trzy kopie kostiumu z twarzą szczęśliwą, zagniewaną i niepewną.',
-            'Kliknij kartę “Kod” i wprowadź następujący skrypt.']
-        ,
+            'Kliknij kartę “Kod” i wprowadź następujący skrypt.'],
         'example' => [
             'Udostępnij swojego Emobota Kliki swoim znajomym i dowiedz się więcej na temat SI oraz emocji!',
             'Zamiast rysunku komputera możesz spróbować czegoś innego, na przykład zwierzęcia. Możesz wyszkolić postać, by rozpoznawała inne typy wiadomości niż miłe i wredne.',
@@ -676,7 +642,7 @@ return [
         ],
         'duration' => [
             '90 minut dla uczniów w wieku 10–12 lat',
-            '45 minut dla uczniów w wieku 12–15 lat'
+            '45 minut dla uczniów w wieku 12–15 lat',
         ],
         'description' => 'Utwórz program bazujący na blokach w Scratch, wykorzystując rozszerzenie SI “Ludzkie ciało” w kreatywny i angażujący sposób, aby rysować na ekranie bez konieczności stosowania tradycyjnej myszki czy ekranu dotykowego.',
         'instructions' => [
@@ -693,8 +659,8 @@ return [
             'konto nauczyciela (bezpłatne)',
             'konto ucznia (bezpłatne)',
             'Komputery z kamerą',
-            'Dostęp do internetu,'
-        ]
+            'Dostęp do internetu,',
+        ],
     ],
     'circle-of-dots' => [
         'title' => 'Koło z kropek',
@@ -712,7 +678,7 @@ return [
             'Budowanie bloku z myślników.',
             'Zbudowanie koła z kropki.',
             'Zbudowanie koła z myślnika.',
-        ]
+        ],
     ],
     'coding-escape-room' => [
         'title' => 'Tworzenie pokoju zagadek programistycznych',
@@ -720,16 +686,14 @@ return [
         'purposes' => [
             'Nauczanie/uczenie się koncepcji związanych z kodowaniem i zastanawianie się nad nimi.',
             'Korzystanie z prostych narzędzi do kodowania.',
-            'Rozwijanie myślenia obliczeniowego i rozwiązywania problemów'
+            'Rozwijanie myślenia obliczeniowego i rozwiązywania problemów',
         ], 'description' => [
             'Tworzenie zagadek związanych z kodowaniem, takich jak ta:',
-            'Możesz użyć formularza Google, Genially, prezentacji Google lub dowolnego innego narzędzia, by stworzyć historię do opowiedzenia w oparciu o kodowanie ;)'
+            'Możesz użyć formularza Google, Genially, prezentacji Google lub dowolnego innego narzędzia, by stworzyć historię do opowiedzenia w oparciu o kodowanie ;)',
 
         ],
         'duration' => '90 minut',
-        'instructions' =>
-            'Możesz podzielić uczniów na małe grupy, mogą się pobawić, a następnie stworzyć kolejne wyzwanie z szablonem: '
-        ,
+        'instructions' => 'Możesz podzielić uczniów na małe grupy, mogą się pobawić, a następnie stworzyć kolejne wyzwanie z szablonem: ',
 
         'materials' => [
             'Możesz użyć dowolnego narzędzia (platforma Google i Microsoft do tworzenia i udostępniania dokumentów, prezentacji i arkuszy kalkulacyjnych). Każdy konstrukt, narzędzie lub postać powiązane z TIK i kodowaniem',
@@ -756,7 +720,7 @@ return [
             'Weź pod uwagę czas i rozmieszczenie: Jeśli wąż wyjdzie z jednego micro:bitu, pojawi się w kolejnym micro:bicie.',
             'Dalsze wyzwania: Z micro:bit wer. 2 odtwarzaj muzykę do momentu, gdy wąż opuści urządzenie.',
             'Zaprojektuj węża, zmieniając jasność LED.',
-            'Próbuj dłużej lub z większą liczbą węży.'
+            'Próbuj dłużej lub z większą liczbą węży.',
         ],
         'example' => [
             'Oto przykład dla węża o długości 6 pikseli z 4 micro:bitami tworzącymi kwadrat 2x2: ',
@@ -769,8 +733,8 @@ return [
             'Czas pomiędzy tymi dwiema fazami określa prędkość węża.',
         ], 'materials' => [
             'micro:bity (jeśli to możliwe, dla każdego ucznia)',
-            'laptop lub komputer do uruchomienia edytora makecode.microbit.org'
-        ]
+            'laptop lub komputer do uruchomienia edytora makecode.microbit.org',
+        ],
     ],
     'illustrate-a-joke' => [
         'title' => 'Zilustruj żart z bitsy',
@@ -785,10 +749,10 @@ return [
             'obiekt, do którego Twój awatar ma dotrzeć',
             'pomieszczenie– tło programu',
             'dwie wiadomości: pytanie i odpowiedź',
-            'Ukończoną grę można pobrać jako plik html'
+            'Ukończoną grę można pobrać jako plik html',
         ],
         'example' => 'Na tej stronie widać przykład żartu, jest też odnośnik do cyfrowej tablicy:',
-        'materials' => 'bitsy uruchamia się w przeglądarce'
+        'materials' => 'bitsy uruchamia się w przeglądarce',
     ],
     'app-that-counts-in-several-languages' => [
         'title' => 'Aplikacja, która liczy w kilku językach',
@@ -797,7 +761,7 @@ return [
             'Nauka tworzenia prostej animacji . ',
             'Nauka programowania poprzez bloki . ',
             'Nauka dodawania Etykiet, przycisków, obrazów, czujników i mediów . ',
-            'Nauka organizowania elementów na ekranie aplikacji . '
+            'Nauka organizowania elementów na ekranie aplikacji . ',
         ],
         'description' => 'Aplikacja umożliwia liczenie w wielu językach po naciśnięciu przycisku . Gdy użytkownik potrząsa smartfonem, licznik zeruje się . Wyzwanie polega na dodaniu kolejnego języka . ',
         'instructions' => [
@@ -810,7 +774,7 @@ return [
             'Aby stworzyć aplikację, potrzebujesz komputera lub laptopa z dostępem do Internetu . ',
             'Utwórz konto na platformie MIT APP Inventor, dostępnej pod adresem <a href=\'https://ai2.appinventor.mit.edu\'>https://ai2.appinventor.mit.edu</a>',
             'Konieczne jest również zainstalowanie aplikacji MIT AI2 Companion na smartfonie w celu przetestowania stworzonej aplikacji',
-        ]
+        ],
     ],
     'coding-with-art-through-storytelling' => [
         'title' => 'Kodowanie ze sztuką poprzez opowiadanie opowieści',
@@ -825,7 +789,7 @@ return [
             'Działanie to można wdrożyć jako zabawę bez wykorzystania elektroniki lub poprzez wykorzystanie edukacyjnego robota możliwego do zaprogramowania, takiego jak beebot/bluebot/robot mysz.',
             'karty ze strzałkami beebot lub karty ze strzałkami na potrzeby działania bez wykorzystania elektroniki',
             'po grecku',
-            'Dowiedzenie się więcej na temat narzędzi Thinking Routine dostępnych w projekcie Project Zero, który można odwiedzić'
+            'Dowiedzenie się więcej na temat narzędzi Thinking Routine dostępnych w projekcie Project Zero, który można odwiedzić',
 
         ],
         'example' => [
@@ -848,7 +812,7 @@ return [
         'purposes' => [
             'budowanie modeli z wykorzystaniem LegoBoost.',
             'rozwijanie umiejętności programowania w Scratch.',
-            'programowanie robotów z wykorzystaniem poleceń od prostych po złożone.'
+            'programowanie robotów z wykorzystaniem poleceń od prostych po złożone.',
         ],
         'description' => 'W tym wyzwaniu uczniowie wykorzystają rozszerzenie LegoBoost do Scratch i wprowadzą kody do aplikacji, aby roboty ruszały się do przodu, do tyłu, unikały przeszkód i stosowały się do poleceń głosowych.',
         'duration' => '120 minut',
@@ -861,9 +825,8 @@ return [
             'W zielonej przeszkodzie silnik A jest Włączony, w czarnej przeszkodzie silnik B jest Włączony.',
             'Zielone, czerwone i czarne przeszkody zostaną umieszczone na trasie.',
             'Dodaj polecenia na potrzeby ruchu i zmian kierunku w przypadku napotkania przeszkody poprzez strzałki oraz konwersję tekstu na mowę.',
-            'Przetestuj!'
-        ]
-    ]
-
+            'Przetestuj!',
+        ],
+    ],
 
 ];

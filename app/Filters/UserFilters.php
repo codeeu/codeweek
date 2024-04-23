@@ -14,15 +14,14 @@ class UserFilters extends Filters
     /**
      * Filter the query by country
      *
-     * @param  string $country_iso
+     * @param  string  $country_iso
      * @return \Illuminate\Database\Eloquent\Builder
      */
     protected function country_iso($country_iso)
     {
         //if ($country_iso== "") return;
         $result = $this->builder->where('country_iso', $country_iso);
+
         return $result;
     }
-
-
 }

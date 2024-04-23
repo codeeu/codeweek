@@ -36,7 +36,7 @@ return [
                                     aby nám nahlásili počet zaangažovaných účastníkov.
                                     Ak ste splnili stanovené kritériá, spolu so svojimi kolegami,
                                     ktorí boli súčasťou siete, získate certifikát
-                                    excelentnosti.'
+                                    excelentnosti.',
         ],
         'existing_alliance' => [
             'title' => 'Ak sa zapájate do existujúcej skupiny:',
@@ -49,8 +49,8 @@ return [
                                     aby nám nahlásili počet zaangažovaných účastníkov.
                                     Ak ste splnili stanovené kritériá, spolu so svojimi kolegami,
                                     ktorí boli súčasťou siete, získate certifikát
-                                    excelentnosti.'
-        ]
+                                    excelentnosti.',
+        ],
     ],
     'why' => [
         'title' => 'A prečo sa zapojiť do výzvy?',
@@ -60,9 +60,9 @@ return [
         '3' => 'Nadväzovanie vzťahov s organizáciami a/alebo so školami v rámci
                                     komunity alebo na medzinárodnej úrovni.',
         '4' => 'Získanie podpory od iných organizátorov a učiteľov.',
-        '5' => 'Získanie <strong>certifikátu excelentnosti.</strong>'
+        '5' => 'Získanie <strong>certifikátu excelentnosti.</strong>',
     ],
     'superorganiser-title' => 'Certifikát superorganizátora',
-    'superorganiser' => 'Takisto môžete získať certifikát superorganizátora. Na jeho získanie musíte zorganizovať a <a href="https://codeweek.eu/add">zaregistrovať</a> najmenej 10 samostatných aktivít vo vašej škole, organizácii alebo online.'
+    'superorganiser' => 'Takisto môžete získať certifikát superorganizátora. Na jeho získanie musíte zorganizovať a <a href="https://codeweek.eu/add">zaregistrovať</a> najmenej 10 samostatných aktivít vo vašej škole, organizácii alebo online.',
 
 ];

@@ -18,6 +18,5 @@ class LeadingTeacherSeeder extends Seeder
         $this->call(CitiesTableSeeder::class);
         $this->call(LeadingTeacherExpertiseSeeder::class);
 
-
     }
 }

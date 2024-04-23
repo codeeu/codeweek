@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\CertificateExcellence;
-use App\Queries\ExcellenceQuery;
 use App\Queries\SuperOrganiserQuery;
-use Illuminate\Http\Request;
 use Gate;
+use Illuminate\Http\Request;
 
 class SuperOrganiserController extends Controller
 {
@@ -19,7 +18,6 @@ class SuperOrganiserController extends Controller
             abort(403, 'You are not eligible to receive a Codeweek4All Super Organiser Certificate.');
 
         }
-
 
         return view('super-organiser.report', compact('edition'));
 
@@ -35,7 +33,7 @@ class SuperOrganiserController extends Controller
         }
 
         $rules = [
-            'name_for_certificate' => 'required|max:40|regex:/^[^ə]*$/u'
+            'name_for_certificate' => 'required|max:40|regex:/^[^ə]*$/u',
         ];
 
         $messages = [
@@ -44,7 +42,7 @@ class SuperOrganiserController extends Controller
 
         $request->validate($rules, $messages);
 
-        $name = $request["name_for_certificate"];
+        $name = $request['name_for_certificate'];
 
         $number_of_activities = auth()->user()->activities($edition);
 
@@ -53,12 +51,10 @@ class SuperOrganiserController extends Controller
         SuperOrganiserQuery::byYear($edition)
             ->update([
                 'name_for_certificate' => $name,
-                'certificate_url' => $certificate_url
+                'certificate_url' => $certificate_url,
             ]);
 
-
         return redirect('certificates');
-
 
     }
 }

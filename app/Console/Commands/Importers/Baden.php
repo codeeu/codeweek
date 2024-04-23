@@ -2,17 +2,11 @@
 
 namespace App\Console\Commands\Importers;
 
-
-
 use App\Helpers\ImporterHelper;
-
-
 use App\RSSItems\BadenRSSItem;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Log;
-
 
 class Baden extends Command
 {
@@ -39,7 +33,6 @@ class Baden extends Command
     {
         parent::__construct();
 
-
     }
 
     /**
@@ -49,23 +42,20 @@ class Baden extends Command
      */
     public function handle()
     {
-        Log::info("Loading Baden API Items in Database");
+        Log::info('Loading Baden API Items in Database');
 
-        $techicalUser = ImporterHelper::getTechnicalUser("baden-technical");
+        $techicalUser = ImporterHelper::getTechnicalUser('baden-technical');
 
         $items = BadenRSSItem::whereNull('imported_at')->get();
 
-
-
-        foreach ($items as $item){
+        foreach ($items as $item) {
 
             $item->createEvent($techicalUser);
             $item->imported_at = Carbon::now();
             $item->save();
         }
 
-        Log::info("Activities created from RSS Feed: " . count($items));
-
+        Log::info('Activities created from RSS Feed: '.count($items));
 
     }
 }

@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateEventsTable extends Migration
 {
@@ -22,7 +22,7 @@ class CreateEventsTable extends Migration
             $table->string('organizer', 255);
             $table->longText('description');
             $table->string('geoposition', 42);
-            $table->float('latitude', 12,6);
+            $table->float('latitude', 12, 6);
             $table->float('longitude', 12, 6);
             $table->string('location', 1000);
             $table->string('country_iso', 2);
@@ -51,9 +51,7 @@ class CreateEventsTable extends Migration
         });
     }
 
-
-//`creator_id` INT(11) NOT NULL,
-
+    //`creator_id` INT(11) NOT NULL,
 
     /**
      * Reverse the migrations.

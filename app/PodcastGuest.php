@@ -11,7 +11,8 @@ class PodcastGuest extends Model
 
     protected $table = 'podcast_guests';
 
-    public function podcast(){
+    public function podcast()
+    {
         return $this->belongsTo('App\Podcast');
     }
 }

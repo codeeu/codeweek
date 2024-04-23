@@ -4,12 +4,9 @@ namespace Tests\Feature;
 
 use App\Helpers\EventHelper;
 use App\Helpers\UserHelper;
-use App\Mail\EventApproved;
 use App\Mail\UserCreated;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
@@ -26,12 +23,12 @@ class NullEmails extends TestCase
 
         create('App\Event', [
             'creator_id' => $nullUser->id,
-            'user_email' => 'foo@bar'
+            'user_email' => 'foo@bar',
         ], 6);
 
         create('App\Event', [
             'creator_id' => $nullUser->id,
-            'user_email' => 'xyz@bar'
+            'user_email' => 'xyz@bar',
         ], 6);
 
         $emails = EventHelper::getDistinctEmailsWithUsersHavingNullEmail();
@@ -49,7 +46,6 @@ class NullEmails extends TestCase
         $user1 = create('App\User', ['email' => 'foo@bar', 'id' => 100]);
         $user2 = create('App\User', ['email' => 'foo@bar', 'deleted_at' => Carbon::now(), 'id' => 200]);
 
-
         $user = UserHelper::getActiveUserByEmail('foo@bar');
 
         $this->assertEquals(100, $user->id);
@@ -62,20 +58,16 @@ class NullEmails extends TestCase
     public function it_should_assign_activities_to_a_user()
     {
 
-
-
         $user1 = create('App\User', ['email' => 'foo@bar', 'id' => 100]);
 
         $this->assertEquals(count($user1->events), 0);
         create('App\Event', [
-            'user_email' => 'foo@bar'
+            'user_email' => 'foo@bar',
         ], 10);
 
         EventHelper::reassignActivities($user1);
 
         $this->assertEquals(count($user1->fresh()->events), 10);
-
-
 
     }
 
@@ -95,6 +87,4 @@ class NullEmails extends TestCase
         });
 
     }
-
-
 }

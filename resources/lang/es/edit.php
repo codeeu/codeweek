@@ -29,8 +29,8 @@ return [
         'header' => 'Tus datos de contacto',
         'text_1' => 'Esta información solamente será visible para ',
         'link_1' => 'los embajadores de la Semana de la Programación de la UE',
-        'text_2'=> ' y para los organizadores de la Semana de la Programación, que revisarán el evento antes de que aparezca en el mapa y que podrían ponerse en contacto contigo en caso de que sea necesario realizar ediciones o entregar encuestas para fines estadísticos tras la celebración del evento.',
-        'contact_email' => 'Tu correo electrónico de contacto'
-    ], 
-    'edit' => 'Editar el evento'
+        'text_2' => ' y para los organizadores de la Semana de la Programación, que revisarán el evento antes de que aparezca en el mapa y que podrían ponerse en contacto contigo en caso de que sea necesario realizar ediciones o entregar encuestas para fines estadísticos tras la celebración del evento.',
+        'contact_email' => 'Tu correo electrónico de contacto',
+    ],
+    'edit' => 'Editar el evento',
 ];

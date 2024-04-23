@@ -30,14 +30,12 @@ class CreateMeetAndCodeRSSItemsTable extends Migration
             $table->string('image_link');
             $table->dateTime('start_date');
             $table->dateTime('end_date');
-            $table->float('lat', 12,6);
+            $table->float('lat', 12, 6);
             $table->float('lon', 12, 6);
             $table->dateTime('imported_at')->nullable();
             $table->timestamps();
         });
     }
-
-
 
     /**
      * Reverse the migrations.

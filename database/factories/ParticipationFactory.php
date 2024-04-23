@@ -3,18 +3,17 @@
 /* @var $factory \Illuminate\Database\Eloquent\Factory */
 
 use App\Participation;
-use App\User;
 use Faker\Generator as Faker;
 
 $factory->define(Participation::class, function (Faker $faker) {
     return [
-        'user_id' => function(){
+        'user_id' => function () {
             return factory(App\User::class)->create()->id;
         },
-        'names'=>$faker->firstName,
+        'names' => $faker->firstName,
         'event_name' => $faker->name(),
         'event_date' => $faker->name(),
-        'participation_url' => $faker->url
+        'participation_url' => $faker->url,
 
     ];
 });

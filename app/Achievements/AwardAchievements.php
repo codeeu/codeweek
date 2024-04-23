@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Achievements;
-
 
 use App\Achievements\Events\UserEarnedExperience;
 

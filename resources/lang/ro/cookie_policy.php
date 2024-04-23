@@ -15,7 +15,7 @@ return [
             <p>Astfel, nu trebuie să le reintroduceți atunci când navigați prin site în timpul aceleași vizite.</p>
 
             <p>Modulele cookie pot fi folosite, de asemenea, pentru elaborarea de statistici anonimizate cu privire la experiența de navigare pe site-ul nostru.</p>
-            </p>'
+            </p>',
     ],
     'how' => [
         'title' => 'Cum folosim modulele cookie?',
@@ -25,30 +25,30 @@ return [
             'title' => 'Cele <strong>trei tipuri de module cookie originale</strong> pe care le folosim au rolul de a:',
             '1' => 'stoca preferințele vizitatorilor',
             '2' => 'face ca site-urile noastre să fie operaționale',
-            '3' => 'colecta date analitice (cu privire la comportamentul utilizatorilor)'
+            '3' => 'colecta date analitice (cu privire la comportamentul utilizatorilor)',
         ],
         'table' => [
-            'name'=>'Nume',
-            'service'=>'Serviciu',
-            'purpose'=>'Scop',
-            'type_duration'=>'Tip de modul cookie și durata',
+            'name' => 'Nume',
+            'service' => 'Serviciu',
+            'purpose' => 'Scop',
+            'type_duration' => 'Tip de modul cookie și durata',
         ],
         'visitor_preferences' => [
-            'title'=> 'Preferințele vizitatorilor',
-            'text'=> '<p>Acestea sunt setate de noi și doar noi le putem citi. Ele rețin:</p>',
-            'item'=> 'dacă ați fost de acord cu (sau ați refuzat) politica privind modulele cookie a acestui site',
+            'title' => 'Preferințele vizitatorilor',
+            'text' => '<p>Acestea sunt setate de noi și doar noi le putem citi. Ele rețin:</p>',
+            'item' => 'dacă ați fost de acord cu (sau ați refuzat) politica privind modulele cookie a acestui site',
             'table' => [
                 '1' => [
                     'service' => 'Kitul de consimțire la module cookie',
                     'purpose' => 'Stochează preferințele dvs. (astfel încât nu veți fi întrebat din nou)',
                     'type_duration' => 'Modulele cookie originale pentru sesiune șterse după ce închideți browser-ul',
-                ]
-            ]
+                ],
+            ],
         ],
         'operational_cookies' => [
             'title' => 'Module cookie operaționale',
             'text' => '<p>Există unele module cookie pe care trebuie să le includem pentru ca anumite pagini să funcționeze. Din acest motiv ele nu necesită consimțământul dvs. În particular:</p>',
-            'item' => 'module cookie tehnice necesare pentru anumite sisteme IT'
+            'item' => 'module cookie tehnice necesare pentru anumite sisteme IT',
         ],
         'technical_cookies' => [
             'title' => 'Module cookie tehnice',
@@ -64,8 +64,8 @@ return [
                 '3' => [
                     'purpose' => 'Stochează limba preferată a utilizatorului',
                     'type_duration' => 'Modulele cookie originale pentru sesiune șterse după ce închideți browser-ul',
-                ]
-            ]
+                ],
+            ],
         ],
         'analytics_cookies' => [
             'title' => 'Module cookie analitice',
@@ -86,9 +86,9 @@ return [
                     'service' => 'Serviciul Web Analytics pe baza programului software cu sursă deschisă Matomo',
                     'purpose' => 'Identifică paginile vizualizate de același utilizator în timpul aceleași vizite (anonim – nu sunt colectate informații cu caracter personal referitoare la utilizator)',
                     'type_duration' => 'Module cookie originale persistente, 30 de minute',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
 
     ],
     'third-party' => [
@@ -99,8 +99,8 @@ return [
                 <p>Pentru a vizualiza acest conținut al terței părți, trebuie să acceptați mai întâi clauzele și condițiile lor specifice. Acestea includ politicile lor privind modulele cookie, asupra cărora nu avem niciun control.</p>
 
                 <p>Dar dacă nu doriți să vizualizați acest conținut, nu vor fi instalate pe dispozitivul dvs. niciun fel de module cookie de la terți.</p>Furnizori terți pe Codeweek',
-            '2' => 'Aceste servicii de la terțe părți sunt în afara controlului site-ului Codeweek. Furnizorii își pot modifica oricând clauzele referitoare la serviciu, scop și utilizarea de module cookie etc.'
-        ]
+            '2' => 'Aceste servicii de la terțe părți sunt în afara controlului site-ului Codeweek. Furnizorii își pot modifica oricând clauzele referitoare la serviciu, scop și utilizarea de module cookie etc.',
+        ],
     ],
     'how-manage' => [
         'title' => 'Cum puteți gestiona modulele cookie?',
@@ -109,6 +109,6 @@ return [
 
             <p>Puteți șterge toate modulele cookie care sunt deja pe dispozitivul dvs. prin ștergerea istoricului de navigare al browser-ului dvs. Acest lucru va îndepărta toate modulele cookie de la toate site-urile pe care le-ați vizitat.</p>
 
-            <p>Rețineți însă că puteți pierde și unele informații salvate (de ex. detalii de conectare salvate, preferințe de site-uri).</p><strong>Gestionarea modulelor cookie specifice site-urilor</strong><p>Pentru un control mai detaliat asupra modulelor cookie specifice site-urilor, verificați setările de confidențialitate și cele privind modulele cookie din browser-ul dvs. preferat</p><strong>Blocarea modulelor cookie</strong><p>Puteți seta aproape toate browser-ele moderne să prevină ca orice modul cookie să fie plasat pe dispozitivul dvs., dar în acest caz este posibil să trebuiască să ajustați manual unele preferințe de fiecare dată când vizitați un site/o pagină. Iar unele servicii și funcționalități este posibil să nu funcționeze deloc bine (de ex. înregistrarea de profiluri).</p><strong>Gestionarea modulelor noastre cookie analitice</strong><p>Puteți gestiona preferințele dvs. privind modulele cookie din secțiunea noastră Analytics de pe <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">pagina dedicată</a>.</p>'
-    ]
+            <p>Rețineți însă că puteți pierde și unele informații salvate (de ex. detalii de conectare salvate, preferințe de site-uri).</p><strong>Gestionarea modulelor cookie specifice site-urilor</strong><p>Pentru un control mai detaliat asupra modulelor cookie specifice site-urilor, verificați setările de confidențialitate și cele privind modulele cookie din browser-ul dvs. preferat</p><strong>Blocarea modulelor cookie</strong><p>Puteți seta aproape toate browser-ele moderne să prevină ca orice modul cookie să fie plasat pe dispozitivul dvs., dar în acest caz este posibil să trebuiască să ajustați manual unele preferințe de fiecare dată când vizitați un site/o pagină. Iar unele servicii și funcționalități este posibil să nu funcționeze deloc bine (de ex. înregistrarea de profiluri).</p><strong>Gestionarea modulelor noastre cookie analitice</strong><p>Puteți gestiona preferințele dvs. privind modulele cookie din secțiunea noastră Analytics de pe <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">pagina dedicată</a>.</p>',
+    ],
 ];

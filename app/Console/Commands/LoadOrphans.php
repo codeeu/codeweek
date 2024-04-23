@@ -45,7 +45,7 @@ class LoadOrphans extends Command
             ->update(['email' => 'dikovicnatalija@gmail.com']);
 
         //Update event 138402 to move from user without email (18952) to user with email (124956)
-        Event::where('id',138402)
+        Event::where('id', 138402)
             ->update(['creator_id' => 124956]);
     }
 }

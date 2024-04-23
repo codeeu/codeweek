@@ -14,13 +14,11 @@ class OldSeeder extends Seeder
     public function run()
     {
 
+        $db = \Config::get('database.connections.mysql.database');
+        $user = \Config::get('database.connections.mysql.username');
+        $pass = \Config::get('database.connections.mysql.password');
 
-
-        $db     = \Config::get('database.connections.mysql.database');
-        $user   = \Config::get('database.connections.mysql.username');
-        $pass   = \Config::get('database.connections.mysql.password');
-
-        exec("mysql -u " . $user . " -p" . $pass . " " . $db . " < database/sql/old.sql");
+        exec('mysql -u '.$user.' -p'.$pass.' '.$db.' < database/sql/old.sql');
 
     }
 }

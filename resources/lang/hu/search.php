@@ -12,20 +12,20 @@ return [
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-    'audience_title'=>'Célközönség',
-    'theme_title'=>'Téma',
-    
+    'audience_title' => 'Célközönség',
+    'theme_title' => 'Téma',
+
     'placeholder' => 'Keresés eseménynév vagy tag alapján',
     'submit' => 'Keresés',
     'label_country' => 'Ország kiválasztása',
     'last_year_events' => [
         'label' => 'Tartalmazza a legutóbbi évek eseményeit is',
         'yes' => 'Igen',
-        'no' => 'Nem'
+        'no' => 'Nem',
     ],
     'search_counter' => 'felel meg a keresési feltételeinek',
-    'event'=>'esemény',
-    'events'=>'esemény',
+    'event' => 'esemény',
+    'events' => 'esemény',
     'year' => 'év',
-    'audiences'=>'Célközönség','themes'=>'Tárgy','countries'=>'Ország','search_placeholder' => 'Keresés cím és leírás szerint',
+    'audiences' => 'Célközönség', 'themes' => 'Tárgy', 'countries' => 'Ország', 'search_placeholder' => 'Keresés cím és leírás szerint',
 ];

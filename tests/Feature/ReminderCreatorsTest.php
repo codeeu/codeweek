@@ -10,12 +10,9 @@ use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ReminderCreatorsTest extends TestCase
 {
-
     use DatabaseMigrations;
 
     /** @test */
@@ -27,11 +24,9 @@ class ReminderCreatorsTest extends TestCase
         $userB = create('App\User');
         $userD = create('App\User');
 
-
         //Setup world
 
-
-        $userC = create('App\User', ['email' => ""]);
+        $userC = create('App\User', ['email' => '']);
         $userE = create('App\User');
         $userF = create('App\User');
 
@@ -48,13 +43,11 @@ class ReminderCreatorsTest extends TestCase
         $reportableevents2 = create('App\Event', ['creator_id' => $userB->id, 'status' => 'APPROVED', 'report_notifications_count' => 2, 'end_date' => Carbon::now()->subDay(1)], 3);
         $notifiedMoreThanAWeek = create('App\Event', ['creator_id' => $userD->id, 'status' => 'APPROVED', 'last_report_notification_sent_at' => Carbon::now()->subDays(8), 'end_date' => Carbon::now()->subDay(1)]);
 
-
         $this->assertCount(3, ReminderHelper::getCreatorsWithReportableEvents());
 
         $this->assertEquals($userA->email, ReminderHelper::getCreatorsWithReportableEvents()[0]->email);
         $this->assertEquals($userB->email, ReminderHelper::getCreatorsWithReportableEvents()[1]->email);
         $this->assertEquals($userD->email, ReminderHelper::getCreatorsWithReportableEvents()[2]->email);
-
 
         $this->artisan('remind:creators');
 
@@ -114,7 +107,7 @@ class ReminderCreatorsTest extends TestCase
 
         $reportableevent = create('App\Event', ['creator_id' => $userA->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subDay(1)], 20);
 
-        $this->assertEquals(20,ReminderHelper::getReportableEvents()->count());
+        $this->assertEquals(20, ReminderHelper::getReportableEvents()->count());
 
     }
 
@@ -155,7 +148,6 @@ class ReminderCreatorsTest extends TestCase
 
     }
 
-
     /** @test */
     public function notification_reports_should_increase_up_to_3_times()
     {
@@ -168,7 +160,6 @@ class ReminderCreatorsTest extends TestCase
         $this->artisan('remind:creators');
 
         $this->assertEquals(3, Event::first()->report_notifications_count);
-
 
     }
 
@@ -206,7 +197,6 @@ class ReminderCreatorsTest extends TestCase
 
         Mail::assertNotQueued(RemindCreator::class);
 
-
     }
 
     /** @test */
@@ -232,7 +222,7 @@ class ReminderCreatorsTest extends TestCase
 
     protected function createNonReportableEvents(): void
     {
-        $userC = create('App\User', ['email' => ""]);
+        $userC = create('App\User', ['email' => '']);
         $userE = create('App\User');
 
         $alreadyReported = create('App\Event', ['status' => 'APPROVED', 'report_notifications_count' => 3, 'end_date' => Carbon::now()->subDay(1), 'reported_at' => Carbon::now()]);

@@ -22,7 +22,7 @@ class CreateMuensterlandRSSItemsTable extends Migration
             $table->string('photo')->nullable();
             $table->dateTime('eventEndDate');
             $table->dateTime('eventStartDate');
-            $table->float('latitude', 12,6);
+            $table->float('latitude', 12, 6);
             $table->float('longitude', 12, 6);
             $table->string('location');
             $table->string('user_company');
@@ -37,7 +37,6 @@ class CreateMuensterlandRSSItemsTable extends Migration
             $table->string('tags')->nullable();
             $table->timestamps();
         });
-
 
     }
 

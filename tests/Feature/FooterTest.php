@@ -2,24 +2,22 @@
 
 namespace Tests\Feature;
 
-use App\School;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Torann\GeoIP\Facades\GeoIP;
 
 class FooterTest extends TestCase
 {
     use DatabaseMigrations;
+
     private $france;
+
     private $ambassador_fr;
 
-    public function setup() :void
+    public function setup(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
-        $this->france = create('App\Country',['iso'=>'FR']);
+        $this->france = create('App\Country', ['iso' => 'FR']);
         $this->ambassador_fr = create('App\User', ['country_iso' => $this->france->iso])->assignRole('ambassador');
 
     }
@@ -30,7 +28,6 @@ class FooterTest extends TestCase
 
         $this->get('/ambassadors?country_iso=FR')->assertSee('mailto:info@codeweek.eu');
 
-
     }
 
     /** @test */
@@ -39,14 +36,5 @@ class FooterTest extends TestCase
 
         $this->get('/')->assertDontSee('mailto:info@codeweek.eu');
 
-
     }
-
-
-
-
-
-
 }
-
-

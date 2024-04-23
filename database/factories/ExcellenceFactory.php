@@ -7,6 +7,6 @@ $factory->define(App\Excellence::class, function (Faker $faker) {
         'user_id' => function () {
             return factory('App\User')->create()->id;
         },
-        'edition' => $faker->numberBetween(2018,2021)
+        'edition' => $faker->numberBetween(2018, 2021),
     ];
 });

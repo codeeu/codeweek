@@ -16,5 +16,5 @@ return [
     'no_reports' => 'Nuk ka ende evenimente për t’u raportuar.',
     'report' => 'Evenimentet e listuara më poshtë kanë nisur ose kanë përfunduar tashmë. Plotësoni disa shifra për
     qëllime statistikore për evenimentin dhe kërkoni certifikatën tuaj të pjesëmarrjes në Code Week. Do të
-    merrni një certifikatë për çdo eveniment.'
+    merrni një certifikatë për çdo eveniment.',
 ];

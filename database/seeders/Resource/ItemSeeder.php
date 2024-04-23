@@ -14,9 +14,6 @@ class ItemSeeder extends Seeder
     public function run()
     {
 
-
-
-
         /*
 
          $item = create('App\ResourceItem', [
@@ -34,7 +31,6 @@ class ItemSeeder extends Seeder
         $item->languages()->attach([1]);
 
         */
-
 
     }
 }

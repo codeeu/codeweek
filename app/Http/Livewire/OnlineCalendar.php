@@ -4,34 +4,41 @@ namespace App\Http\Livewire;
 
 use App\Country;
 use App\Event;
-use App\Helpers\EventHelper;
 use App\Queries\CountriesQuery;
-use App\Queries\OnlineEventsQuery;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Log;
 use Livewire\Component;
 use Livewire\WithPagination;
 
-class OnlineCalendar extends Component {
+class OnlineCalendar extends Component
+{
     use WithPagination;
 
     public $events;
+
     private $filteredEvents;
+
     public $selectedLanguage;
+
     public $selectedYear;
+
     public $selectedMonth;
+
     public $selectedDate;
+
     public $months;
 
     public $listeners = ['eventsUpdated' => 'render'];
+
     private $whereClause = [
         'activity_type' => 'open-online',
         'status' => 'APPROVED',
-        'highlighted_status' => 'FEATURED'
+        'highlighted_status' => 'FEATURED',
     ];
 
-    public function mount() {
+    public function mount()
+    {
         $this->selectedLanguage = strtolower(App::getLocale());
         $this->selectedYear = Carbon::now()->year;
         $this->selectedMonth = Carbon::now()->month;
@@ -50,8 +57,8 @@ class OnlineCalendar extends Component {
         $this->months = [];
 
         foreach ($byMonths as $result) {
-            $this->months[$result->month . '/' . $result->year] =
-                $result->monthname . ' ' . $result->year;
+            $this->months[$result->month.'/'.$result->year] =
+                $result->monthname.' '.$result->year;
         }
 
         //Go back to start of array to get the first item
@@ -61,10 +68,11 @@ class OnlineCalendar extends Component {
             $this->selectedMonth = $parts[0];
         }
 
-        $this->selectedDate = $this->selectedMonth . '/' . $this->selectedYear;
+        $this->selectedDate = $this->selectedMonth.'/'.$this->selectedYear;
     }
 
-    public function render() {
+    public function render()
+    {
         $parts = explode('/', $this->selectedDate);
         $this->selectedMonth = $parts[0];
         $this->selectedYear = $parts[1];
@@ -109,15 +117,15 @@ class OnlineCalendar extends Component {
             'countries' => $countries,
             'countryNames' => $countryNames,
             'languages' => $languages,
-            'filteredEvents' => $this->filteredEvents->paginate(50)
+            'filteredEvents' => $this->filteredEvents->paginate(50),
         ]);
     }
 
     /**
-     * @param $events
      * @return mixed
      */
-    private function getCountryNamesFromEvents($events) {
+    private function getCountryNamesFromEvents($events)
+    {
         $country_codes = $events
             ->groupBy('country_iso')
             ->keys()
@@ -125,8 +133,9 @@ class OnlineCalendar extends Component {
 
         $countriesObjects = Country::whereIn('iso', $country_codes)->get();
         $countryNames = $countriesObjects->mapWithKeys(function ($item) {
-            return [$item['iso'] => __('countries.' . $item['name'])];
+            return [$item['iso'] => __('countries.'.$item['name'])];
         });
+
         return $countryNames;
     }
 }

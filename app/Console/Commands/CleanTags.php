@@ -39,8 +39,8 @@ class CleanTags extends Command
      */
     public function handle()
     {
-        Log::info("Calling Clean Tags");
+        Log::info('Calling Clean Tags');
         TagsHelper::cleanTags();
-        Log::info("Done Calling Clean Tags");
+        Log::info('Done Calling Clean Tags');
     }
 }

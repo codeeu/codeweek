@@ -8,10 +8,8 @@ use App\Queries\ExcellenceQuery;
 use Gate;
 use Illuminate\Http\Request;
 
-
 class ExcellenceController extends Controller
 {
-
     public function report($edition)
     {
 
@@ -22,14 +20,12 @@ class ExcellenceController extends Controller
 
         }
 
-
         return view('excellence.report', compact('edition'));
 
     }
 
     public function generate($edition, Request $request)
     {
-
 
         if (Gate::denies('report-excellence', $edition)) {
             // The current user can't report for excellence...
@@ -38,7 +34,7 @@ class ExcellenceController extends Controller
         }
 
         $rules = [
-            'name_for_certificate' => 'required|max:40|regex:/^[^ə]*$/u'
+            'name_for_certificate' => 'required|max:40|regex:/^[^ə]*$/u',
         ];
 
         $messages = [
@@ -47,22 +43,17 @@ class ExcellenceController extends Controller
 
         $request->validate($rules, $messages);
 
-        $name = $request["name_for_certificate"];
+        $name = $request['name_for_certificate'];
 
-        $certificate_url = (new CertificateExcellence($edition, $name,'excellence',null))->generate();
+        $certificate_url = (new CertificateExcellence($edition, $name, 'excellence', null))->generate();
 
         ExcellenceQuery::byYear($edition)
             ->update([
                 'name_for_certificate' => $name,
-                'certificate_url' => $certificate_url
+                'certificate_url' => $certificate_url,
             ]);
-
 
         return redirect('certificates');
 
-
     }
-
-
-
 }

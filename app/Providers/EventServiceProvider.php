@@ -2,13 +2,14 @@
 
 namespace App\Providers;
 
-use App\Observers\EventObserver;
 use App\Event;
 use App\Listeners\LogSentMessage;
-use Illuminate\Mail\Events\MessageSending;
+use App\Observers\EventObserver;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
+use Illuminate\Mail\Events\MessageSending;
 
-class EventServiceProvider extends ServiceProvider {
+class EventServiceProvider extends ServiceProvider
+{
     /**
      * The event listener mappings for the application.
      *
@@ -18,10 +19,10 @@ class EventServiceProvider extends ServiceProvider {
         'App\Events\Event' => ['App\Listeners\EventListener'],
         \SocialiteProviders\Manager\SocialiteWasCalled::class => [
             // add your listeners (aka providers) here
-            'SocialiteProviders\\Azure\\AzureExtendSocialite@handle'
+            'SocialiteProviders\\Azure\\AzureExtendSocialite@handle',
         ],
 
-        MessageSending::class => [LogSentMessage::class]
+        MessageSending::class => [LogSentMessage::class],
     ];
 
     /**

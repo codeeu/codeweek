@@ -16,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'Hogyan szervezzen tevékenységet?',
     'resources' => [
         'languages' => [
-            'Russian'=>'Orosz',
-            'Norwegian'=>'Norvég',
-            'Mandarin'=>'Mandarin',
-            'Japanese'=>'Japán',
-            'All targeted languages' => 'Minden célnyelv'
+            'Russian' => 'Orosz',
+            'Norwegian' => 'Norvég',
+            'Mandarin' => 'Mandarin',
+            'Japanese' => 'Japán',
+            'All targeted languages' => 'Minden célnyelv',
         ],
         'levels' => [
             'Beginner' => 'Kezdő',
@@ -31,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Alsó középfokú iskola (12–16)',
             'Upper secondary school (16-18)' => 'Felső középfokú iskola (16–18)',
             'Higher Education' => 'Felsőoktatás',
-            'Other' => 'Egyéb'
+            'Other' => 'Egyéb',
         ],
         'subjects' => [
             'Art' => 'Művészet',
@@ -51,7 +51,7 @@ return [
             'Physics' => 'Fizika',
             'Coding' => 'Programozás',
             'Special Education Needs' => 'Sajátos nevelési igények',
-            'Other' => 'Egyéb'
+            'Other' => 'Egyéb',
         ],
         'types' => [
             'Tutorial' => 'Bemutató',
@@ -66,7 +66,7 @@ return [
             'Toolkit' => 'Eszköztár',
             'Other' => 'Egyéb',
             'Lesson Plan' => 'Óravázlat',
-            'Guide' => 'Útmutató'
+            'Guide' => 'Útmutató',
         ],
         'categories' => [
             'Coding' => 'Kódolás',
@@ -76,8 +76,8 @@ return [
             'Making' => 'Kivitelezés',
             'Tinkering' => 'Bütykölés',
             'Unplugged Activities' => '„Offline” tevékenységek',
-            'Other' => 'Egyéb'
-        ]
-    ]
+            'Other' => 'Egyéb',
+        ],
+    ],
 
 ];

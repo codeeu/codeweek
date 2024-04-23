@@ -15,14 +15,14 @@ return [
         'example' => 'Ejemplo',
         'written-by' => [
             'Este reto ha sido escrito por',
-            'y forma parte de los'
+            'y forma parte de los',
         ],
         'teachers' => 'Profesores',
         'students' => 'Estudiantes',
         'beginner' => 'Principiante',
         'intermediate' => 'Intermedio',
         'advanced' => 'Avanzado',
-        '1-hour' => '1 hora'
+        '1-hour' => '1 hora',
     ],
     'main' => [
         'Durante la Semana de la Programación de la UE del 9 al 24 de octubre de 2021, te invitamos a hacer uno o varios de los retos que se proponen.',
@@ -38,7 +38,7 @@ return [
         'Comparte tu reto',
         '¿Te gustaría conseguir algunos regalos de la Semana de la Programación? Si es que sí, haz que tu trabajo se vuelva viral.',
         'Una vez completado el reto, compártelo en Instagram.',
-        'Se seleccionarán ganadores cada día durante la Semana de la Programación del 9 y al 24 de octubre, que se anunciarán en nuestro canal de Instagram. Así que no olvides comprobar tus notificaciones regularmente.'
+        'Se seleccionarán ganadores cada día durante la Semana de la Programación del 9 y al 24 de octubre, que se anunciarán en nuestro canal de Instagram. Así que no olvides comprobar tus notificaciones regularmente.',
     ],
     'share' => [
         '¿Cómo puedes compartir tu(s) reto(s) en Instagram?',
@@ -55,7 +55,7 @@ return [
         'Facebook',
         'y seleccionará el ganador del premio a partir de los comentarios de debajo de la publicación.',
         '¿Cómo funciona?',
-        'Solo tienes que comentar la publicación con el enlace a tu trabajo.'
+        'Solo tienes que comentar la publicación con el enlace a tu trabajo.',
     ],
     'share-box' => [
         'Comparte el enlace a tu trabajo en tu',
@@ -70,18 +70,18 @@ return [
         'una publicación sobre un nuevo reto en su',
         'página de Facebook',
         'Entonces tan solo tienes que comentar la publicación con el enlace a tu trabajo.',
-        'Cada día durante la Semana de la Programación del 9 al 24 de octubre, se seleccionarán los ganadores de los regalos y se anunciarán en nuestros canales de Instagram y Facebook. Así que no olvides comprobar tus notificaciones regularmente'
+        'Cada día durante la Semana de la Programación del 9 al 24 de octubre, se seleccionarán los ganadores de los regalos y se anunciarán en nuestros canales de Instagram y Facebook. Así que no olvides comprobar tus notificaciones regularmente',
     ],
     'take-part' => [
         '¿Por qué participar en un reto de la Semana de la Programación de la UE?',
         'Para participar en actividades de resolución de problemas y programación.',
         'Para trabajar con compañeros.',
-        'Para difundir el mensaje sobre la importancia de la programación.'
+        'Para difundir el mensaje sobre la importancia de la programación.',
     ],
     'download' => [
         'Haz clic',
         'aquí',
-        'para descargar este reto como documento de Word'
+        'para descargar este reto como documento de Word',
     ],
     'bingo' => [
         'Haz todos los Retos',
@@ -91,6 +91,6 @@ return [
         'Comparte tu reto en las redes sociales y gana unos magníficos premios de la Semana de la Programación',
         'Tan solo tienes que subir una foto con la(s) fila(s), la(s) columna(s) o, incluso mejor, todo el bingo completado, a',
         'Facebook, Instagram o Twitter',
-        'Asegúrate de que utilizas'
-    ]
+        'Asegúrate de que utilizas',
+    ],
 ];

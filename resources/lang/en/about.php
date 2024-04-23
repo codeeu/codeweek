@@ -1,16 +1,14 @@
 <?php
 
 return [
-    'when-title' =>
-        'In 2024 EU Code Week will take place between 14 and 27 October.',
+    'when-title' => 'In 2024 EU Code Week will take place between 14 and 27 October.',
     'codeweek_in_numbers-title' => 'Code Week in numbers',
     'run_by_volunteers-title' => 'Run by volunteers',
     'supported_by_commission-title' => 'Supported by the European Commission',
     'schools-title' => 'Schools',
     'why_coding-title' => 'Why coding?',
     'join_codeweek-title' => 'Join EU Code Week',
-    'guide' =>
-        'Check out our tutorials and trainings available in 29 languages to get ready to organise activities where young people learn coding and computational thinking.',
+    'guide' => 'Check out our tutorials and trainings available in 29 languages to get ready to organise activities where young people learn coding and computational thinking.',
 
     'when-text' => '
                 <p>
@@ -67,5 +65,5 @@ return [
                 <p>
                     Join EU Code Week by <a href="/guide">organising a coding activity</a> in your town, joining the <a href="/codeweek4all">Code Week 4 All Challenge</a> and connecting activities across communities and borders, or helping us spread the vision of Code Week as an <a href="/ambassadors">EU Code Week Ambassador</a> for your country!
                 </p>',
-    'partners_and_sponsors' => 'Partners and Sponsors'
+    'partners_and_sponsors' => 'Partners and Sponsors',
 ];

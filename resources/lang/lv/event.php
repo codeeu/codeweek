@@ -54,7 +54,7 @@ return [
     ],
     'public' => [
         'label' => 'Publiski pieejams e-pasts',
-        'placeholder' => 'Vai vēlaties norādīt saziņai paredzētu e-pastu?'
+        'placeholder' => 'Vai vēlaties norādīt saziņai paredzētu e-pastu?',
 
     ],
     'title' => [
@@ -65,7 +65,6 @@ return [
         'label' => 'Adrese',
         'placeholder' => 'Kur šī aktivitāte notiek?',
     ],
-
 
     'organizertype' => [
         'label' => 'Organizācijas tips',
@@ -106,7 +105,7 @@ return [
         'Augmented reality' => 'Paplašinātā realitāte',
         'Artificial intelligence' => 'Mākslīgais intelekts',
         'Motivation and awareness raising' => 'Motivācijas un informētības palielināšana',
-        'Promoting diversity' => 'Daudzveidības veicināšana'
+        'Promoting diversity' => 'Daudzveidības veicināšana',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => '“PROGRAMMĒŠANAS NEDĒĻA VISIEM” KODS',
@@ -121,7 +120,7 @@ return [
         'phrase4' => 'valsts vēstniekiem',
         'phrase5' => 'vai nosūtiet mums',
         'phrase6' => 'e-pastu.',
-        'phrase7' => 'Jūs varat kopīgot “Programmēšanas nedēļa visiem” kodu ar citiem:'
+        'phrase7' => 'Jūs varat kopīgot “Programmēšanas nedēļa visiem” kodu ar citiem:',
     ],
     'activitytype' => [
         'label' => 'Pasākuma veids',
@@ -129,7 +128,7 @@ return [
         'open-online' => 'Tiešsaistes aktivitāte',
         'invite-online' => 'Tiešsaistes aktivitāte, kurā dalība ar ielūgumiem',
         'open-in-person' => 'Klātienes aktivitāte',
-        'invite-in-person' => 'Klātienes aktivitāte, kurā dalība ar ielūgumiem'
+        'invite-in-person' => 'Klātienes aktivitāte, kurā dalība ar ielūgumiem',
 
     ],
     'privacy' => 'Es izlasīju un piekrītu privātuma noteikumiem un nosacījumiem kuri minēti šajā dokumentā.',
@@ -148,6 +147,5 @@ return [
     'view_your_certificate' => 'Apskatiet savu sertifikātu šeit',
     'submit_event_and_report' => 'Iesniedziet ziņojumu par pasākumu un pieprasiet Programmēšanas nedēļas sertifikātu.',
     'report_and_claim' => 'Paziņot par pasākumu un pieprasīt sertifikātu',
-
 
 ];

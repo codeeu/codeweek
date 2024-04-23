@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\User;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 
@@ -14,8 +13,8 @@ class UserController extends Controller
 
         $user = auth()->user();
 
-        if (request('privacy')){
-            request()['privacy'] =  1;
+        if (request('privacy')) {
+            request()['privacy'] = 1;
         }
 
         $user->update(request()->validate([
@@ -28,17 +27,17 @@ class UserController extends Controller
             'website' => 'nullable',
             'bio' => 'nullable',
             'email_display' => 'nullable|email',
-            'tag' => 'nullable'
+            'tag' => 'nullable',
         ]));
 
         return back()->with('flash', 'Your profile has been modified!');
     }
 
-
     public function delete()
     {
         $user = auth()->user();
         $user->delete();
+
         return redirect()
             ->route('login')
             ->with('flash', 'Your user has been deleted!');
@@ -55,40 +54,39 @@ class UserController extends Controller
             $weight = 0;
             if ($user->hasRole('ambassador')) {
                 $weight++;
-                if ($user->bio != "") {
+                if ($user->bio != '') {
                     $weight++;
                 }
-                if ($user->twitter != "") {
-                    $weight++;
-                }
-
-                if ($user->website != "") {
+                if ($user->twitter != '') {
                     $weight++;
                 }
 
-                if ($user->country_iso != "") {
+                if ($user->website != '') {
+                    $weight++;
+                }
+
+                if ($user->country_iso != '') {
                     $weight++;
                 }
             }
 
             if ($user->hasRole('super admin')) {
                 $weight++;
-                if ($user->bio != "") {
+                if ($user->bio != '') {
                     $weight++;
                 }
-                if ($user->twitter != "") {
-                    $weight++;
-                }
-
-                if ($user->website != "") {
+                if ($user->twitter != '') {
                     $weight++;
                 }
 
-                if ($user->country_iso != "") {
+                if ($user->website != '') {
+                    $weight++;
+                }
+
+                if ($user->country_iso != '') {
                     $weight++;
                 }
             }
-
 
             if ($weight > $max_weight) {
                 $main_user = $user;
@@ -96,9 +94,7 @@ class UserController extends Controller
             }
         }
 
-
         return $main_user;
-
 
     }
 
@@ -111,7 +107,7 @@ class UserController extends Controller
             ->select(DB::raw('count(email) as email_count, email'))
             ->where('email', '<>', '')
             ->groupBy('email')
-            ->having('email_count', ">", 1)
+            ->having('email_count', '>', 1)
             ->get();
 
         foreach ($emails as $email) {
@@ -123,7 +119,6 @@ class UserController extends Controller
                 ->join('events', 'users.id', '=', 'events.creator_id')
                 ->where('users.email', '=', $email->email)->get();
 
-
             foreach ($events as $event) {
                 DB::table('events')
                     ->where('id', $event->id)
@@ -134,9 +129,7 @@ class UserController extends Controller
             //Delete other users
             User::where([['email', $email->email], ['id', '<>', $main_user->id]])->delete();
 
-
         }
-
 
         // Update each event with my user_id
     }

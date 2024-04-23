@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -16,10 +15,9 @@ return [
 
     'cookies' => 'Cookies',
     'uses_cookies' => 'Tyto stránky využívají v zájmu kvalitnějších služeb cookies',
-    'find_out_more_on'=>'Pročtěte podrobnosti, ',
+    'find_out_more_on' => 'Pročtěte podrobnosti, ',
     'how_we_use' => 'jak přesně cookies využíváme a jak můžete změnit příslušná nastavení',
-    'accept'=>'Povolit cookies',
-    'refuse'=>'Zakázat cookies',
-
+    'accept' => 'Povolit cookies',
+    'refuse' => 'Zakázat cookies',
 
 ];

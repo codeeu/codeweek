@@ -4,14 +4,14 @@ return [
     'subtitle' => 'Käesolev isikuandmete kaitse avaldus sisaldab teavet Teie isikuandmete töötlemise ja kaitse kohta.',
     'processing-operation' => [
         'Töötlemistoiming',
-        'programmeerimisnädala Code Week saadikute ja juhtivõpetajate haldamine ning nende tegevuse registreerimine veebisaidil'
+        'programmeerimisnädala Code Week saadikute ja juhtivõpetajate haldamine ning nende tegevuse registreerimine veebisaidil',
     ],
     'data-processors' => [
         'Volitatud töötlejad',
-        'GOPA Com. S.A. ja EUN Partnership AISBL (Euroopa Koolivõrk), info@codeweek.eu'
+        'GOPA Com. S.A. ja EUN Partnership AISBL (Euroopa Koolivõrk), info@codeweek.eu',
     ],
     '1-intro' => [
-        'Teave programmeerimisnädala Code Week saadikute ja juhtivõpetajate haldamise ning veebisaidil nende tegevuse registreerimise kohta.'
+        'Teave programmeerimisnädala Code Week saadikute ja juhtivõpetajate haldamise ning veebisaidil nende tegevuse registreerimise kohta.',
     ],
 
     '3-legal_process' => [
@@ -59,10 +59,10 @@ return [
         'Lisaks võib üksus G.2 jagada Teie kontaktandmeid üldsuse või sidusrühmadega, kes peavad Teiega programmeerimisnädala Code Week teemal ühendust võtma. Kui olete tegevuse korraldaja, siis võib Teie riigi asjaomane saadik või üksus G.2 kasutada Teie poolt tegevuse registreerimiseks esitatud isikuandmeid, et Teiega selle tegevuse asjus ühendust võtta.',
     ],
     '8-rights' => [
-        'Olete andnud nõusoleku esitada oma isikuandmed üksusele G.2 konkreetse töötlemistoimingu jaoks. Võite oma nõusoleku igal ajal tagasi võtta, teatades sellest üksusele G.2 aadressil CNECT-G2@ec.europa.eu. Nõusoleku tagasivõtmine ei mõjuta enne selle tagasivõtmist toimunud töötlemise seaduslikkust.'
+        'Olete andnud nõusoleku esitada oma isikuandmed üksusele G.2 konkreetse töötlemistoimingu jaoks. Võite oma nõusoleku igal ajal tagasi võtta, teatades sellest üksusele G.2 aadressil CNECT-G2@ec.europa.eu. Nõusoleku tagasivõtmine ei mõjuta enne selle tagasivõtmist toimunud töötlemise seaduslikkust.',
     ],
 
     '10-detailed-info' => [
-        'See konkreetne töötlemistoiming on kantud andmekaitseametniku avalikku registrisse järgmise viitenumbri all: DPR-EC-02631 (sidevõrkude, sisu ja tehnoloogia peadirektoraadi poliitika, programmide ja projektide kontaktpunktide haldus).'
-    ]
+        'See konkreetne töötlemistoiming on kantud andmekaitseametniku avalikku registrisse järgmise viitenumbri all: DPR-EC-02631 (sidevõrkude, sisu ja tehnoloogia peadirektoraadi poliitika, programmide ja projektide kontaktpunktide haldus).',
+    ],
 ];

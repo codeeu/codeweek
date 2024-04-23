@@ -1,8 +1,7 @@
 <?php
 
 return [
-    'when-title' =>
-        'Em 2024, a Semana Europeia da Programação irá decorrer entre 14 e 27 de outubro.',
+    'when-title' => 'Em 2024, a Semana Europeia da Programação irá decorrer entre 14 e 27 de outubro.',
     'codeweek_in_numbers-title' => 'Semana da Programação em números',
     'run_by_volunteers-title' => 'Executada por voluntários',
     'supported_by_commission-title' => 'Apoiada pela Comissão Europeia',
@@ -51,5 +50,5 @@ return [
         </p>',
     'join_codeweek-text' => '
         <p>Participe na Semana Europeia da Programação <a href="/guide">organizando uma atividade de programação</a> na sua cidade, participando no <a href="/codeweek4all">desafio «Code Week 4 all</a>» ou ajudando-nos a transmitir a visão da Semana da Programação enquanto <a href="/ambassadors">embaixador da Semana Europeia da Programação</a> no seu país!</p>',
-    'partners_and_sponsors' => 'Parceiros e Patrocinadores'
+    'partners_and_sponsors' => 'Parceiros e Patrocinadores',
 ];

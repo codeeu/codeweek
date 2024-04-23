@@ -29,12 +29,12 @@ return [
         'header' => 'Dina kontaktuppgifter',
         'text_1' => 'Informationen är bara synlig för ',
         'link_1' => 'Ambassadörer för EU Code Week',
-        'text_2'=> ' och Code Week-
+        'text_2' => ' och Code Week-
         arrangörer, som
         kontrollerar ditt evenemang innan det visas på kartan och kanske kontaktar dig
         om ändringar behövs
         eller för att administrera undersökningar i statistiskt syfte efter evenemanget.',
-        'contact_email' => 'Din e-postadress'
-    ], 
-    'edit' => 'Redigera evenemang'
+        'contact_email' => 'Din e-postadress',
+    ],
+    'edit' => 'Redigera evenemang',
 ];

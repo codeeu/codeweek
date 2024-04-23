@@ -21,7 +21,6 @@ class AddWeightToResourceItems extends Migration
         });
     }
 
-
     /**
      * Reverse the migrations.
      *

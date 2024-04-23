@@ -3,15 +3,10 @@
 namespace App\Console\Commands\Importers;
 
 use App\Helpers\ImporterHelper;
-
-
-use App\RSSItems\BonnRSSItem;
 use App\RSSItems\DresdenRSSItem;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Log;
-
 
 class Dresden extends Command
 {
@@ -38,7 +33,6 @@ class Dresden extends Command
     {
         parent::__construct();
 
-
     }
 
     /**
@@ -48,21 +42,18 @@ class Dresden extends Command
      */
     public function handle()
     {
-        Log::info("Loading Dresden API Items in Database");
+        Log::info('Loading Dresden API Items in Database');
 
-        $techicalUser = ImporterHelper::getTechnicalUser("dresden-technical");
+        $techicalUser = ImporterHelper::getTechnicalUser('dresden-technical');
         $items = DresdenRSSItem::whereNull('imported_at')->get();
 
-
-
-        foreach ($items as $item){
+        foreach ($items as $item) {
             $item->createEvent($techicalUser);
             $item->imported_at = Carbon::now();
             $item->save();
         }
 
-        Log::info("Activities created from RSS Feed: " . count($items));
-
+        Log::info('Activities created from RSS Feed: '.count($items));
 
     }
 }

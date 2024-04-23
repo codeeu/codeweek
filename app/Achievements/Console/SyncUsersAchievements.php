@@ -28,20 +28,17 @@ class SyncUsersAchievements extends Command
      */
     public function handle()
     {
-        User::role("leading teacher")
-            ->chunk(100, function($users, $index){
-            $this->reportProgress($index);
-            $users->each(function($user){
-                $user->achievements()->sync(
-                    app('achievements')->filter->qualifier($user)->map->modelKey()
-                );
+        User::role('leading teacher')
+            ->chunk(100, function ($users, $index) {
+                $this->reportProgress($index);
+                $users->each(function ($user) {
+                    $user->achievements()->sync(
+                        app('achievements')->filter->qualifier($user)->map->modelKey()
+                    );
+                });
             });
-        });
     }
 
-    /**
-     * @param $index
-     */
     protected function reportProgress($index): void
     {
         $from = ($index - 1) * 100;

@@ -5,7 +5,6 @@ namespace App\Jobs;
 use App\Certificate;
 use App\Event;
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
@@ -24,7 +23,8 @@ class MissingCertificate implements ShouldQueue
      *
      * @return void
      */
-    public function __construct(Event $event) {
+    public function __construct(Event $event)
+    {
         $this->event = $event;
     }
 
@@ -36,7 +36,7 @@ class MissingCertificate implements ShouldQueue
     public function handle()
     {
         (new Certificate($this->event))->generate();
-        Log::info("sending email to " . $this->event->owner->email);
+        Log::info('sending email to '.$this->event->owner->email);
         Mail::to($this->event->owner->email)->queue(new \App\Mail\MissingCertificate($this->event));
     }
 }

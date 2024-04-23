@@ -6,7 +6,6 @@ use App\User;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
 
-
 class SyncExperience extends Command
 {
     /**
@@ -31,28 +30,25 @@ class SyncExperience extends Command
     public function handle()
     {
 
-        User::role("leading teacher")
-            ->chunk(10, function($users, $index){
-            $this->reportProgress($index);
-            $users->each(function($user){
+        User::role('leading teacher')
+            ->chunk(10, function ($users, $index) {
+                $this->reportProgress($index);
+                $users->each(function ($user) {
 
-                for ($year = 2021; $year <= Carbon::now()->year; $year++ ){
+                    for ($year = 2021; $year <= Carbon::now()->year; $year++) {
 
-                    $user->resetExperience($year);
+                        $user->resetExperience($year);
 
-                    $user->awardExperience($user->reported($year) * 2, $year);
+                        $user->awardExperience($user->reported($year) * 2, $year);
 
-                    $user->awardExperience($user->influence($year), $year);
+                        $user->awardExperience($user->influence($year), $year);
 
-                }
+                    }
 
+                });
             });
-        });
     }
 
-    /**
-     * @param $index
-     */
     protected function reportProgress($index): void
     {
         $from = ($index - 1) * 10;

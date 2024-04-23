@@ -3,7 +3,6 @@
 namespace App\Http\Livewire;
 
 use App\Event;
-use App\Http\Transformers\EventTransformer;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Log;
 use Livewire\Component;
@@ -11,20 +10,26 @@ use Livewire\WithPagination;
 
 class MapWire extends Component
 {
-
     use WithPagination;
 
     private $events;
+
     public $markers;
+
     public $years;
+
     public $selectedYear;
+
     public $readyToLoad = false;
+
     protected $queryString = ['search', 'selectedYear'];
+
     public $search;
+
     private $whereClause = [
         'activity_type' => 'open-online',
         'status' => 'APPROVED',
-        'highlighted_status' => 'FEATURED'
+        'highlighted_status' => 'FEATURED',
     ];
 
     public function updatingSearch()
@@ -32,25 +37,22 @@ class MapWire extends Component
         $this->resetPage();
     }
 
-
     public function mount()
     {
 
         $current_year = Carbon::now()->year;
         $this->selectedYear = $current_year;
-        $this->years = array();
+        $this->years = [];
         for ($year = $current_year; $year >= 2014; $year--) {
             $this->years[] = $year;
         }
-
 
     }
 
     public function render()
     {
 
-        $events = Event::
-        where(function ($query) {
+        $events = Event::where(function ($query) {
             $query->where('title', 'like', "%{$this->search}%")
                 ->orWhere('description', 'like', "%{$this->search}%");
         })
@@ -62,32 +64,29 @@ class MapWire extends Component
             return [
                 'id' => $event['id'],
                 'geoposition' => $event['geoposition'],
-                'country' => $event['country_iso']
+                'country' => $event['country_iso'],
             ];
         })->groupBy('country');
 
-        $this->emit('markersUpdated',$this->markers);
+        $this->emit('markersUpdated', $this->markers);
 
-//        $this->markers = [];
+        //        $this->markers = [];
         $this->events = $events;
 
         return view('livewire.map-wire', [
             'events' => $this->events->paginate(30),
-            'markers' => $this->markers
+            'markers' => $this->markers,
         ]);
     }
-
 
     protected function getData()
     {
 
-        Log::info("START - Get All Data for the Map");
+        Log::info('START - Get All Data for the Map');
 
+        $this->emit('markersLoaded');
 
-        $this->emit("markersLoaded");
-
-        Log::info("END - Get All Data for the Map");
-
+        Log::info('END - Get All Data for the Map');
 
     }
 }

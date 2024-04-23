@@ -5,12 +5,9 @@ namespace App\Console\Commands\Importers;
 use App\Helpers\ImporterHelper;
 use App\Imports\RemoteImporter;
 use Exception;
-use Illuminate\Console\Command;
-use Feeds;
-use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Client;
+use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
-
 
 class Eeducation extends Command
 {
@@ -37,7 +34,6 @@ class Eeducation extends Command
     {
         parent::__construct();
 
-
     }
 
     /**
@@ -47,38 +43,35 @@ class Eeducation extends Command
      */
     public function handle()
     {
-        Log::info("Loading Eeducation");
+        Log::info('Loading Eeducation');
 
         // Create or Load Eeducation Technical User
         //$techicalUserID = ImporterHelper::getTechnicalUser("eeducation-technical");
 
-        if (is_null(config("codeweek.EEDUCATION_CLIENTID"))) {
+        if (is_null(config('codeweek.EEDUCATION_CLIENTID'))) {
             throw new Exception('Please Specify the EEducation Endpoint in the .env file');
-        };
-
+        }
 
         // Read the API
-        $endpoint = "https://eeducation.at/rest-api/codeweek-activities/?clientid=" . config("codeweek.EEDUCATION_CLIENTID");
+        $endpoint = 'https://eeducation.at/rest-api/codeweek-activities/?clientid='.config('codeweek.EEDUCATION_CLIENTID');
 
         $client = new Client();
 
         $response = $client->get($endpoint);
 
-        $eventsArr = json_decode((string)$response->getBody());
+        $eventsArr = json_decode((string) $response->getBody());
 
-        if (is_null($eventsArr)){
+        if (is_null($eventsArr)) {
             Log::error($response->getBody());
+
             return;
         }
-        $importer = new RemoteImporter("Eeducation", $eventsArr);
+        $importer = new RemoteImporter('Eeducation', $eventsArr);
         $metrics = $importer->import();
 
-        Log::info("Records  : " . $metrics[0]);
-        Log::info("Added    : " . $metrics[1]);
-        Log::info("Updated  : " . $metrics[2]);
-
-
-
+        Log::info('Records  : '.$metrics[0]);
+        Log::info('Added    : '.$metrics[1]);
+        Log::info('Updated  : '.$metrics[2]);
 
     }
 }

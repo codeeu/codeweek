@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
 
 class CreateResourceSubjectsUsersPivotTable extends Migration
 {
@@ -17,7 +17,7 @@ class CreateResourceSubjectsUsersPivotTable extends Migration
             $table->foreign('resource_subject_id')->references('id')->on('resource_subjects')->onDelete('cascade');
             $table->integer('user_id')->unsigned()->index();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->primary(['resource_subject_id', 'user_id'],'ressubject_user');
+            $table->primary(['resource_subject_id', 'user_id'], 'ressubject_user');
         });
     }
 

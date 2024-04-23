@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Event;
 use App\User;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
 class EmailController extends Controller
@@ -18,9 +17,6 @@ class EmailController extends Controller
         foreach ($ambassadors as $ambassador) {
             Mail::to($ambassador->email)->queue(new \App\Mail\EventCreated($event, $ambassador));
         }
-
-
-
 
     }
 }

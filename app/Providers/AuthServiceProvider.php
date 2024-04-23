@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+use Illuminate\Support\Facades\Gate;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -31,13 +31,11 @@ class AuthServiceProvider extends ServiceProvider
 
             $excellences = $user->excellences;
 
-
             $collection = $excellences->filter(
-                function($value,$key) use ($edition) {
+                function ($value, $key) use ($edition) {
                     return $value->edition == $edition;
                 }
             );
-
 
             return $collection->count() > 0;
         });
@@ -47,11 +45,10 @@ class AuthServiceProvider extends ServiceProvider
             $superOrganisers = $user->superOrganisers;
 
             $collection = $superOrganisers->filter(
-                function($value,$key) use ($edition) {
+                function ($value, $key) use ($edition) {
                     return $value->edition == $edition;
                 }
             );
-
 
             return $collection->count() > 0;
         });

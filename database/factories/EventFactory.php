@@ -1,31 +1,30 @@
 <?php
 
 use App\Country;
-
 use Faker\Generator as Faker;
 use Illuminate\Support\Carbon;
 
 $factory->define(App\Event::class, function (Faker $faker) {
 
-
     $start_date = Carbon::createFromDate($faker->dateTimeBetween($start = '-1week', $end = 'now'));
     $end_date = Carbon::createFromDate($faker->dateTimeBetween($start = 'now', $end = '+1week'));
 
-
     $countries = Country::all()->pluck('iso')->toArray();
-    $orgtypes = array('school','library','nonprofit','other');
-    if (empty($countries)) $countries[0] = factory('App\Country')->create()->iso;
+    $orgtypes = ['school', 'library', 'nonprofit', 'other'];
+    if (empty($countries)) {
+        $countries[0] = factory('App\Country')->create()->iso;
+    }
 
-$latitude = $faker->latitude(42,59);
-$longitude = $faker->longitude(10,20);
+    $latitude = $faker->latitude(42, 59);
+    $longitude = $faker->longitude(10, 20);
 
     return [
-        'status' => $faker->randomElement(['APPROVED','PENDING','REJECTED']),
+        'status' => $faker->randomElement(['APPROVED', 'PENDING', 'REJECTED']),
         'title' => $faker->text(40),
         'slug' => $faker->slug(2),
         'organizer' => $faker->company,
         'description' => $faker->text,
-        'geoposition' => $latitude . ',' . $longitude,
+        'geoposition' => $latitude.','.$longitude,
         'latitude' => $latitude,
         'longitude' => $longitude,
         'location' => $faker->address,
@@ -44,11 +43,11 @@ $longitude = $faker->longitude(10,20);
         'report_notifications_count' => 0,
         'name_for_certificate' => $faker->name,
         'organizer_type' => $faker->randomElement($orgtypes),
-        "participants_count" => $faker->numberBetween(0,100),
-        "codeweek_for_all_participation_code" => $faker->randomAscii,
-        "activity_type" => "offline",
-        "language"=>"en",
-        "highlighted_status"=>"NONE"
+        'participants_count' => $faker->numberBetween(0, 100),
+        'codeweek_for_all_participation_code' => $faker->randomAscii,
+        'activity_type' => 'offline',
+        'language' => 'en',
+        'highlighted_status' => 'NONE',
 
     ];
 });

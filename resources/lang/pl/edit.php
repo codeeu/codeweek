@@ -29,8 +29,8 @@ return [
         'header' => 'Twoje dane kontaktowe',
         'text_1' => 'Te informacje będą widoczne wyłącznie dla ',
         'link_1' => 'ambasadorów Europejskiego Tygodnia Kodowania',
-        'text_2'=> ' i organizatorów Europejskiego Tygodnia Kodowania, którzy sprawdzą Twoje wydarzenie, zanim pojawi się ono na mapie. Mogą się oni z Tobą skontaktować, jeżeli wymagane będzie wprowadzenie zmian w wydarzeniu, lub aby przeprowadzić ankietę w celach statystycznych po zakończeniu wydarzenia.',
-        'contact_email' => 'Twój adres e-mail'
-    ], 
-    'edit' => 'Edytuj wydarzenie'
+        'text_2' => ' i organizatorów Europejskiego Tygodnia Kodowania, którzy sprawdzą Twoje wydarzenie, zanim pojawi się ono na mapie. Mogą się oni z Tobą skontaktować, jeżeli wymagane będzie wprowadzenie zmian w wydarzeniu, lub aby przeprowadzić ankietę w celach statystycznych po zakończeniu wydarzenia.',
+        'contact_email' => 'Twój adres e-mail',
+    ],
+    'edit' => 'Edytuj wydarzenie',
 ];

@@ -45,7 +45,7 @@ return [
 
         'latex' => [
             'driver' => 'local',
-            'root' => resource_path('latex')
+            'root' => resource_path('latex'),
         ],
         'meet-and-code' => [
             'driver' => 'local',
@@ -54,7 +54,7 @@ return [
         ],
         'excel' => [
             'driver' => 'local',
-            'root' => resource_path('excel')
+            'root' => resource_path('excel'),
         ],
         'local' => [
             'driver' => 'local',
@@ -75,7 +75,7 @@ return [
             'region' => env('AWS_DEFAULT_REGION'),
             'bucket' => env('AWS_BUCKET'),
             'url' => env('AWS_URL'),
-            'visibility' => 'public'
+            'visibility' => 'public',
         ],
         'resources' => [
             'driver' => 's3',
@@ -84,7 +84,7 @@ return [
             'region' => env('AWS_DEFAULT_REGION'),
             'bucket' => env('RESOURCES_BUCKET'),
             'url' => env('RESOURCES_URL'),
-            'visibility' => 'public'
+            'visibility' => 'public',
         ],
 
     ],

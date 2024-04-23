@@ -2,16 +2,11 @@
 
 namespace App\Nova;
 
-
+use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\Boolean;
-use Laravel\Nova\Fields\HasOne;
-
-use Illuminate\Http\Request;
-
-use Laravel\Nova\Fields\Text;
-
 use Laravel\Nova\Fields\Password;
+use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Ambassador extends Resource
@@ -42,21 +37,17 @@ class Ambassador extends Resource
     /**
      * Get the fields displayed by the resource.
      *
-     * @param  \Illuminate\Http\Request $request
      * @return array
      */
     public function fields(Request $request)
     {
         return [
 
-
             Boolean::make('Is Ambassador ?', 'ambassador'),
-
 
             BelongsTo::make('Country'),
 
-
-            Text::make('Name', function(){
+            Text::make('Name', function () {
                 return $this->getName();
             })
                 ->rules('required', 'max:255')
@@ -79,7 +70,6 @@ class Ambassador extends Resource
     /**
      * Get the cards available for the request.
      *
-     * @param  \Illuminate\Http\Request $request
      * @return array
      */
     public function cards(Request $request)
@@ -90,7 +80,6 @@ class Ambassador extends Resource
     /**
      * Get the filters available for the resource.
      *
-     * @param  \Illuminate\Http\Request $request
      * @return array
      */
     public function filters(Request $request)
@@ -103,7 +92,6 @@ class Ambassador extends Resource
     /**
      * Get the lenses available for the resource.
      *
-     * @param  \Illuminate\Http\Request $request
      * @return array
      */
     public function lenses(Request $request)
@@ -114,7 +102,6 @@ class Ambassador extends Resource
     /**
      * Get the actions available for the resource.
      *
-     * @param  \Illuminate\Http\Request $request
      * @return array
      */
     public function actions(Request $request)
@@ -133,8 +120,8 @@ class Ambassador extends Resource
 
         //return $query->where('country_iso', "=", $request->user()->country_iso);
 
-        return $query->join('model_has_roles', 'users.id', "=", "model_has_roles.model_id")
-            ->where('model_has_roles.role_id', "=", 3)
+        return $query->join('model_has_roles', 'users.id', '=', 'model_has_roles.model_id')
+            ->where('model_has_roles.role_id', '=', 3)
             ->select('users.*');
 
     }

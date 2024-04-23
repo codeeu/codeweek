@@ -9,7 +9,8 @@ class PodcastResource extends Model
 {
     use HasFactory;
 
-    public function podcast(){
+    public function podcast()
+    {
         return $this->belongsTo('App\Podcast');
     }
 }

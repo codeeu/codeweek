@@ -15,7 +15,7 @@ return [
             <p>Tako vam jih ne bo treba ponovno vnašati za brskanje po spletnem mestu v okviru istega obiska.</p>
 
             <p>Piškotki se lahko uporabijo tudi za zbiranje anonimiziranih statističnih podatkov glede izkušnje brskanja na naših spletnih mestih.</p>
-            </p>'
+            </p>',
     ],
     'how' => [
         'title' => 'Kako uporabljamo piškotke?',
@@ -25,30 +25,30 @@ return [
             'title' => 'Uporabljamo tri vrste lastnih piškotkov</strong>, in sicer za:',
             '1' => 'shranjevanje nastavitev obiskovalcev',
             '2' => 'delovanje naših spletnih mest',
-            '3' => 'zbiranje analitičnih podatkov (o vedenju uporabnikov)'
+            '3' => 'zbiranje analitičnih podatkov (o vedenju uporabnikov)',
         ],
         'table' => [
-            'name'=>'Ime',
-            'service'=>'Storitev',
-            'purpose'=>'Namen',
-            'type_duration'=>'Vrsta in trajanje piškotka',
+            'name' => 'Ime',
+            'service' => 'Storitev',
+            'purpose' => 'Namen',
+            'type_duration' => 'Vrsta in trajanje piškotka',
         ],
         'visitor_preferences' => [
-            'title'=> 'Nastavitve obiskovalcev',
-            'text'=> 'Te piškotke določimo sami in smo edini, ki jih lahko beremo. Zapomnijo si:',
-            'item'=> 'če soglašate (ali ne) s politiko glede piškotkov na tem spletnem mestu',
+            'title' => 'Nastavitve obiskovalcev',
+            'text' => 'Te piškotke določimo sami in smo edini, ki jih lahko beremo. Zapomnijo si:',
+            'item' => 'če soglašate (ali ne) s politiko glede piškotkov na tem spletnem mestu',
             'table' => [
                 '1' => [
                     'service' => 'sklop piškotkov za soglašanje z uporabo',
                     'purpose' => 'shrani vaše nastavitve piškotkov (da se vprašanje ne bo znova pojavilo)',
                     'type_duration' => 'začasni lastni piškotek, ki se izbriše, ko zapustite brskalnik',
-                ]
-            ]
+                ],
+            ],
         ],
         'operational_cookies' => [
             'title' => 'Operativni piškotki',
             'text' => '<p>Obstaja nekaj piškotkov, ki jih moramo vključiti, da določene spletne strani lahko delujejo. Zato ti ne potrebujejo vašega soglasja. Sem spadajo zlasti:</p>',
-            'item' => 'tehnični piškotki, ki jih zahtevajo nekateri sistemi IT'
+            'item' => 'tehnični piškotki, ki jih zahtevajo nekateri sistemi IT',
         ],
         'technical_cookies' => [
             'title' => 'Tehnični piškotki',
@@ -64,8 +64,8 @@ return [
                 '3' => [
                     'purpose' => 'shrani uporabnikov izbrani jezik',
                     'type_duration' => 'začasni lastni piškotek, ki se izbriše, ko zapustite brskalnik',
-                ]
-            ]
+                ],
+            ],
         ],
         'analytics_cookies' => [
             'title' => 'Analitični piškotki',
@@ -86,9 +86,9 @@ return [
                     'service' => 'storitev spletne analitike na podlagi odprtokodne programske opreme Matomo',
                     'purpose' => 'Prepoznava strani, ki si jih je isti uporabnik ogledal v sklopu istega obiska. (anonimno – ne zbirajo se osebni podatki o uporabniku).',
                     'type_duration' => 'trajni lastni piškotek, 30 minut',
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
 
     ],
     'third-party' => [
@@ -99,8 +99,8 @@ return [
                 <p>Za ogled vsebine tretjih strank morate najprej sprejeti njihove posebne pogoje. To vključuje njihove politike glede piškotkov, nad katerimi nimamo nadzora.</p>
 
                 <p>Če si teh vsebin ne boste ogledali, se vam piškotki tretjih strank ne bodo namestili na napravo.</p>Tretji ponudniki na spletnem mestu tedna programiranja',
-            '2' => 'Teh storitev tretjih strank spletno mesto tedna programiranja ne nadzoruje. Ponudniki lahko kadar koli spremenijo pogoje uporabe, namen in uporabo piškotkov ipd.'
-        ]
+            '2' => 'Teh storitev tretjih strank spletno mesto tedna programiranja ne nadzoruje. Ponudniki lahko kadar koli spremenijo pogoje uporabe, namen in uporabo piškotkov ipd.',
+        ],
     ],
     'how-manage' => [
         'title' => 'Kako lahko upravljate piškotke?',
@@ -109,6 +109,6 @@ return [
 
             <p>Vse piškotke, ki so že nameščeni na vaši napravi, lahko izbrišete tako, da počistite zgodovino brskanja v vašem brskalniku. S tem boste odstranili vse piškotke z vseh spletnih mest, ki ste jih obiskali.</p>
 
-            <p>Zavedati pa se morate, da lahko izgubite tudi nekatere shranjene podatke (npr. shranjene podatke za prijavo ali svoje nastavitve spletnega mesta).</p><strong>Upravljanje piškotkov na določenem spletnem mestu</strong><p>Za podrobnejši nadzor nad piškotki na določenem spletnem mestu preverite nastavitve zasebnosti in piškotkov v svojem izbranem brskalniku.</p><strong>Blokiranje piškotkov</strong><p>Večino sodobnih brskalnikov lahko nastavite tako, da bodo preprečevali namestitev piškotkov na vašo napravo, vendar boste morali tako morda nekatere nastavitve ročno urediti vsakič, ko boste obiskali spletno mesto/stran. Nekatere storitve in funkcije pa morda sploh ne bodo ustrezno delovale (npr. prijava s profilom).</p><strong>Upravljanje naših analitičnih piškotkov</strong><p>Svoje nastavitve glede uporabe piškotkov lahko nastavljate na <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">temu namenjeni strani</a>.</p>'
-    ]
+            <p>Zavedati pa se morate, da lahko izgubite tudi nekatere shranjene podatke (npr. shranjene podatke za prijavo ali svoje nastavitve spletnega mesta).</p><strong>Upravljanje piškotkov na določenem spletnem mestu</strong><p>Za podrobnejši nadzor nad piškotki na določenem spletnem mestu preverite nastavitve zasebnosti in piškotkov v svojem izbranem brskalniku.</p><strong>Blokiranje piškotkov</strong><p>Večino sodobnih brskalnikov lahko nastavite tako, da bodo preprečevali namestitev piškotkov na vašo napravo, vendar boste morali tako morda nekatere nastavitve ročno urediti vsakič, ko boste obiskali spletno mesto/stran. Nekatere storitve in funkcije pa morda sploh ne bodo ustrezno delovale (npr. prijava s profilom).</p><strong>Upravljanje naših analitičnih piškotkov</strong><p>Svoje nastavitve glede uporabe piškotkov lahko nastavljate na <a href="https://www.cnect-stats.com/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=&fontColor=&fontSize=&fontFamily=">temu namenjeni strani</a>.</p>',
+    ],
 ];

@@ -4,14 +4,14 @@ return [
     'subtitle' => 'Prezenta declarație de confidențialitate oferă informații cu privire la prelucrarea și protecția datelor dumneavoastră cu caracter personal.',
     'processing-operation' => [
         'Operațiunea de prelucrare',
-        'gestionarea ambasadorilor Săptămânii Programării, a profesorilor coordonatori și a înregistrării activităților pe site-ul web'
+        'gestionarea ambasadorilor Săptămânii Programării, a profesorilor coordonatori și a înregistrării activităților pe site-ul web',
     ],
     'data-processors' => [
         'Persoane împuternicite de operator',
-        'GOPA Com. S.A. și EUN Partnership AISBL (European Schoolnet), info@codeweek.eu'
+        'GOPA Com. S.A. și EUN Partnership AISBL (European Schoolnet), info@codeweek.eu',
     ],
     '1-intro' => [
-        'Informațiile referitoare la prelucrarea datelor cu caracter personal pentru gestionarea ambasadorilor Săptămânii Programării, a profesorilor coordonatori și a înregistrării activităților pe site-ul web.'
+        'Informațiile referitoare la prelucrarea datelor cu caracter personal pentru gestionarea ambasadorilor Săptămânii Programării, a profesorilor coordonatori și a înregistrării activităților pe site-ul web.',
     ],
 
     '3-legal_process' => [
@@ -59,10 +59,10 @@ return [
         'În plus, unitatea G.2 ar putea să furnizeze datele dumneavoastră de contact oricărui cetățean sau oricărei părți interesate care ar trebui să ia legătura cu dumneavoastră referitor la Săptămâna Programării. Atragem atenția organizatorilor de activități asupra faptului că ambasadorul relevant pentru țara dumneavoastră sau unitatea G.2 poate utiliza datele cu caracter personal pe care le-ați furnizat în scopul înregistrării unei activități pentru a vă contacta în legătură cu activitatea respectivă.',
     ],
     '8-rights' => [
-        'V-ați dat consimțământul să furnizați unității G.2 datele dumneavoastră cu caracter personal în scopul efectuării prezentei operațiuni de prelucrare. Vă puteți retrage consimțământul în orice moment, prin notificarea unității G.2, la adresa CNECT-G2@ec.europa.eu. Retragerea consimțământului nu va afecta legalitatea prelucrării efectuate înainte de retragerea consimțământului dumneavoastră.'
+        'V-ați dat consimțământul să furnizați unității G.2 datele dumneavoastră cu caracter personal în scopul efectuării prezentei operațiuni de prelucrare. Vă puteți retrage consimțământul în orice moment, prin notificarea unității G.2, la adresa CNECT-G2@ec.europa.eu. Retragerea consimțământului nu va afecta legalitatea prelucrării efectuate înainte de retragerea consimțământului dumneavoastră.',
     ],
 
     '10-detailed-info' => [
-        'Această operațiune specifică de prelucrare a fost inclusă în registrul public al RPD cu următorul număr de înregistrare: DPR-EC-02631 Gestionarea punctelor de contact pentru politicile, programele și proiectele DG CONNECT.'
-    ]
+        'Această operațiune specifică de prelucrare a fost inclusă în registrul public al RPD cu următorul număr de înregistrare: DPR-EC-02631 Gestionarea punctelor de contact pentru politicile, programele și proiectele DG CONNECT.',
+    ],
 ];

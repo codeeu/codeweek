@@ -2,7 +2,6 @@
 
 namespace App\Http\Livewire;
 
-use App\Audience;
 use App\City;
 use App\Country;
 use App\LeadingTeacherExpertise;
@@ -12,25 +11,42 @@ use Livewire\Component;
 
 class LeadingTeacherSignupForm extends Component
 {
-
     public $countries;
+
     public $closestCity;
+
     public $cities = [];
+
     public $levels;
+
     public $email;
+
     public $first_name;
+
     public $last_name;
+
     public $selectedCountry;
+
     public $subjects;
+
     public $expertises;
+
     public $selectedCity;
+
     public $twitter;
+
     public $tag;
+
     public $message;
+
     public $privacy;
+
     public $isLeadingTeacher;
+
     public $selectedSubjects = null;
+
     public $selectedExpertises = null;
+
     public $selectedLevels = null;
 
     public function mount()
@@ -39,19 +55,18 @@ class LeadingTeacherSignupForm extends Component
         $levels = ResourceLevel::whereTeach(true)->get();
         $subjects = ResourceSubject::orderBy('position')->get();
 
-        $countries = Country::whereIn("iso", [
-            "AL", "AT", "BE", "BA", "BG",
-            "HR", "CY", "CZ", "DK", "EE",
-            "FI", "FR", "DE", "GR", "HU",
-            "IN", "IE", "IL", "IT", "XK",
-            "LV", "LT", "LU", "MT", "ME",
-            "NL", "MK", "NO", "PL", "PT",
-            "RO", "RS", "SK", "SI", "ES",
-            "SE", "TN", "GB"
-        ])->orderBy("name")->get();
+        $countries = Country::whereIn('iso', [
+            'AL', 'AT', 'BE', 'BA', 'BG',
+            'HR', 'CY', 'CZ', 'DK', 'EE',
+            'FI', 'FR', 'DE', 'GR', 'HU',
+            'IN', 'IE', 'IL', 'IT', 'XK',
+            'LV', 'LT', 'LU', 'MT', 'ME',
+            'NL', 'MK', 'NO', 'PL', 'PT',
+            'RO', 'RS', 'SK', 'SI', 'ES',
+            'SE', 'TN', 'GB',
+        ])->orderBy('name')->get();
 
         $expertises = LeadingTeacherExpertise::orderBy('position')->get();
-
 
         $this->geoposition =
         $this->countries = $countries;
@@ -64,13 +79,11 @@ class LeadingTeacherSignupForm extends Component
 
         $location = geoip(geoip()->getClientIP());
 
-        if (!is_null($location)){
+        if (! is_null($location)) {
             $this->closestCity = City::getClosestCity($location->lon, $location->lat);
             $this->selectedCity = $this->closestCity->id;
             $this->selectedCountry = $this->closestCity->country_iso;
         }
-
-
 
     }
 
@@ -78,10 +91,10 @@ class LeadingTeacherSignupForm extends Component
     {
 
         if ($this->selectedCountry) {
-            $cities = City::where("country_iso", "=", $this->selectedCountry)
+            $cities = City::where('country_iso', '=', $this->selectedCountry)
                 ->get()
                 ->sortBy([
-                    ["city", "asc"]
+                    ['city', 'asc'],
                 ]);
             $this->cities = $cities;
         }
@@ -131,7 +144,6 @@ class LeadingTeacherSignupForm extends Component
         $user->assignRole('leading teacher');
 
         return redirect()->to('/leading-teachers/success');
-
 
     }
 }

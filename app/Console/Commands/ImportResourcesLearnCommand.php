@@ -40,6 +40,6 @@ class ImportResourcesLearnCommand extends Command
     public function handle()
     {
         //Read the Excel Sheet
-        Excel::import(new ResourcesLearnImport, 'resources.xlsx','excel');
+        Excel::import(new ResourcesLearnImport, 'resources.xlsx', 'excel');
     }
 }

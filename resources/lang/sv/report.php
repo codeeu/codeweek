@@ -25,27 +25,25 @@ return [
         'label' => 'Antal deltagare',
     ],
     'average_participant_age' => [
-        'label'=>'Medelålder på deltagarna',
+        'label' => 'Medelålder på deltagarna',
     ],
     'percentage_of_females' => [
         'label' => 'Procentandel kvinnor',
     ],
     'codeweek_for_all_participation_code' => [
         'label' => 'Code Week 4 All-deltagandekod',
-        'help' => 'Du kan ange din Code Week 4 All-tävlingskod här om du har en. Om du inte deltar kan du strunta i fältet.'
+        'help' => 'Du kan ange din Code Week 4 All-tävlingskod här om du har en. Om du inte deltar kan du strunta i fältet.',
     ],
     'name_for_certificate' => [
         'label' => 'Namn för intyg',
-        'help' => 'Ändra detta till namnet på evenemangsarrangören som ska få ett intyg utfärdat om deltagande i Code Week. Använd bara ASCII-bokstäver (latinska). Bokstäver med accenter, omljudstecken och liknande stöds inte.'
+        'help' => 'Ändra detta till namnet på evenemangsarrangören som ska få ett intyg utfärdat om deltagande i Code Week. Använd bara ASCII-bokstäver (latinska). Bokstäver med accenter, omljudstecken och liknande stöds inte.',
     ],
     'submit' => 'Skicka evenemangsrapport',
-    'thanks_page'=>[
-        'title'=>'Tack för att du rapporterat ditt evenemang!',
-        'certificate_ready'=>'Ditt intyg är klart.',
-        'download_button'=>'Klicka här för att ladda ner det.',
-        'back_events'=>'Gå tillbaka till ditt evenemang'
-    ]
-
-
+    'thanks_page' => [
+        'title' => 'Tack för att du rapporterat ditt evenemang!',
+        'certificate_ready' => 'Ditt intyg är klart.',
+        'download_button' => 'Klicka här för att ladda ner det.',
+        'back_events' => 'Gå tillbaka till ditt evenemang',
+    ],
 
 ];

@@ -7,7 +7,8 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 use Maatwebsite\Excel\Facades\Excel;
 
-class DutchDance extends Command {
+class DutchDance extends Command
+{
     /**
      * The name and signature of the console command.
      *
@@ -27,7 +28,8 @@ class DutchDance extends Command {
      *
      * @return void
      */
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct();
     }
 
@@ -36,7 +38,8 @@ class DutchDance extends Command {
      *
      * @return int
      */
-    public function handle() {
+    public function handle()
+    {
         Log::info('Loading Dutch Dance File');
 
         Excel::import(

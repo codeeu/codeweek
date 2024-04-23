@@ -24,8 +24,8 @@ return [
             'activities' => [
                 '1' => 'Activité 1 – CodyRoby pour le primaire',
                 '2' => 'Activité 2 – CodyRoby pour le premier cycle du secondaire',
-                '3' => 'Activité 3 – CodyRoby pour le secondaire'
-            ]
+                '3' => 'Activité 3 – CodyRoby pour le secondaire',
+            ],
         ],
         '2' => [
             'title' => 'Raisonnement informatique et résolution des problèmes',
@@ -38,8 +38,8 @@ return [
             'activities' => [
                 '1' => 'Activité 1 – Développer le raisonnement mathématique pour le primaire',
                 '2' => 'Activité 2 – Se familiariser avec les algorithmes pour le premier cycle du secondaire',
-                '3' => 'Activité 3 – Les algorithmes pour le secondaire supérieur'
-            ]
+                '3' => 'Activité 3 – Les algorithmes pour le secondaire supérieur',
+            ],
         ],
         '3' => [
             'title' => 'Programmation visuelle – présentation de Scratch',
@@ -54,8 +54,8 @@ return [
             'activities' => [
                 '1' => 'Activité 1 – Scratch Basic pour le primaire',
                 '2' => 'Activité 2 – Scratch Basic pour le premier cycle du secondaire',
-                '3' => 'Activité 3 – Scratch Basic pour le secondaire'
-            ]
+                '3' => 'Activité 3 – Scratch Basic pour le secondaire',
+            ],
         ],
         '4' => [
             'title' => 'Créer des jeux éducatifs avec Scratch',
@@ -70,8 +70,8 @@ return [
             'activities' => [
                 '1' => 'Activité 1 - Jeu de questions-réponses avec Scratch pour le primaire',
                 '2' => 'Activité 2 - Jeu de questions-réponses avec Scratch pour le premier cycle du secondaire',
-                '3' => 'Activité 3 - Jeu de questions-réponses avec Scratch pour le secondaire'
-            ]
+                '3' => 'Activité 3 - Jeu de questions-réponses avec Scratch pour le secondaire',
+            ],
         ],
         '5' => [
             'title' => 'La robotique et le bricolage en classe',
@@ -84,8 +84,8 @@ return [
             'activities' => [
                 '1' => 'Activité 1 - Comment fabriquer une main mécanique en panneaux durs pour le primaire',
                 '2' => 'Activité 2 - Comment fabriquer une main mécanique ou robotisée pour le premier cycle du secondaire',
-                '3' => 'Activité 3 - Comment fabriquer une main mécanique ou robotisée pour le secondaire'
-            ]
+                '3' => 'Activité 3 - Comment fabriquer une main mécanique ou robotisée pour le secondaire',
+            ],
         ],
         '6' => [
             'title' => 'App Inventor et développement d’applications',
@@ -95,8 +95,8 @@ return [
             'activities' => [
                 '1' => 'Activité 1 – Titre, pour le primaire',
                 '2' => 'Activité 2 – Titre, pour le premier cycle du secondaire',
-                '3' => 'Activité 3 – Titre, pour le deuxième cycle du secondaire'
-            ]
+                '3' => 'Activité 3 – Titre, pour le deuxième cycle du secondaire',
+            ],
         ],
         '7' => [
             'title' => 'Bricolage et création',
@@ -106,8 +106,8 @@ return [
             'activities' => [
                 '1' => 'Activité 1 – Titre, pour le primaire',
                 '2' => 'Activité 2 – Titre, pour le premier cycle du secondaire',
-                '3' => 'Activité 3 – Titre, pour le deuxième cycle du secondaire'
-            ]
+                '3' => 'Activité 3 – Titre, pour le deuxième cycle du secondaire',
+            ],
         ],
         '8' => [
             'title' => 'Coder dans toutes les matières',
@@ -120,8 +120,8 @@ return [
                 '1' => 'Activité 1 La robotique et l’inclusion dans les cours de sciences, de technologie, d’ingénierie et de mathématiques pour les élèves du primaire',
                 '2' => 'Activité 2 La musique, c’est du codage',
                 '3' => 'Activité 3 Bricolage et codage avec Makey Makey',
-                '4' => 'Activité 4 Un algorithme de la vie quotidienne pour un cours en EMILE'
-            ]
+                '4' => 'Activité 4 Un algorithme de la vie quotidienne pour un cours en EMILE',
+            ],
         ],
         '9' => [
             'title' => 'Créer un automate à l’aide d’un micro:bit',
@@ -136,7 +136,7 @@ Dans cette vidéo, Pauline Maas, enseignante en informatique chez Visio (Pays-Ba
                 '1' => 'Le code Morse avec le micro:bit, pour école primaire',
                 '2' => 'Le jeu d’évasion avec le micro:bit, pour premier cycle du secondaire',
                 '3' => 'Créer un automate, pour deuxième cycle du secondaire',
-            ]
+            ],
         ],
         '10' => [
             'title' => 'La programmation créative avec Python',
@@ -158,36 +158,36 @@ Avec Python, les élèves peuvent créer des questionnaires au sujet d’événe
             'links' => [
                 'title' => 'Autres ressources associées',
                 '1' => [
-                    "url" => "https://docs.python.org/3/library/",
-                    "title" => "Bibliothèque standard de Python",
-                    "description" => "Collection de code préconstruit et de modules (par exemple, module turtle, module math, etc.).",
+                    'url' => 'https://docs.python.org/3/library/',
+                    'title' => 'Bibliothèque standard de Python',
+                    'description' => 'Collection de code préconstruit et de modules (par exemple, module turtle, module math, etc.).',
                 ],
                 '2' => [
-                    "url" => "https://codecombat.com/",
-                    "title" => "CodeCombat",
-                    "description" => "Jeu vidéo éducatif pour l’apprentissage des concepts de la programmation.",
+                    'url' => 'https://codecombat.com/',
+                    'title' => 'CodeCombat',
+                    'description' => 'Jeu vidéo éducatif pour l’apprentissage des concepts de la programmation.',
                 ],
                 '3' => [
-                    "url" => "https://projects.raspberrypi.org/fr-FR/codeclub",
-                    "title" => "Projets Code Club",
-                    "description" => "Projets de programmation pas-à-pas pour les enfants, du niveau débutant à avancé.",
+                    'url' => 'https://projects.raspberrypi.org/fr-FR/codeclub',
+                    'title' => 'Projets Code Club',
+                    'description' => 'Projets de programmation pas-à-pas pour les enfants, du niveau débutant à avancé.',
                 ],
                 '4' => [
-                    "url" => "https://inventwithpython.com/invent4thed/",
-                    "title" => "Inventez vos propres jeux vidéo avec Python (en anglais)",
-                    "description" => "Un livre qui vous apprendra à programmer vos propres jeux vidéo avec Python.",
+                    'url' => 'https://inventwithpython.com/invent4thed/',
+                    'title' => 'Inventez vos propres jeux vidéo avec Python (en anglais)',
+                    'description' => 'Un livre qui vous apprendra à programmer vos propres jeux vidéo avec Python.',
                 ],
                 '5' => [
-                    "url" => "https://www.codewars.com/",
-                    "title" => "Codewars (en anglais)",
-                    "description" => "Communauté éducative au sein de laquelle élèves et enseignants peuvent se former à travers une série de défis.",
+                    'url' => 'https://www.codewars.com/',
+                    'title' => 'Codewars (en anglais)',
+                    'description' => 'Communauté éducative au sein de laquelle élèves et enseignants peuvent se former à travers une série de défis.',
                 ],
                 '6' => [
-                    "url" => "https://hourofpython.com/",
-                    "title" => "Hour of Python (en anglais)",
-                    "description" => "Collection de cours introductifs à Python (à la fois une programmation basée sur le texte et de blocs) utilisant des Trinkets interactifs.",
+                    'url' => 'https://hourofpython.com/',
+                    'title' => 'Hour of Python (en anglais)',
+                    'description' => 'Collection de cours introductifs à Python (à la fois une programmation basée sur le texte et de blocs) utilisant des Trinkets interactifs.',
                 ],
-            ]
+            ],
         ],
         '11' => [
             'title' => 'Le codage pour l’inclusion',
@@ -201,43 +201,40 @@ Dans cette vidéo, l’équipe de la Semaine du code vous présentera quelques a
                 '1' => 'Boîte d’œufs (activité non connectée)',
                 '2' => 'Une souris très intelligente ',
                 '3' => 'Fabriquer des étoiles',
-            ]
+            ],
         ],
 
-
-        "12" => [
-            "title" => "Le codage pour les Objectifs de développement durable",
-            "author" => " par Francisco Javier Masero, Cristina Nicolaita et Erviola Konomi ",
-            "text" => [
-                "1" => "L'enseignement traditionnel offre aux élèves peu de possibilités de comprendre et de résoudre les problèmes du monde réel tels que le changement climatique mondial, l'égalité des sexes, la faim, la pauvreté ou encore la bonne santé et le bien-être.",
-                "2" => "Les Objectifs de développement durable (ODD) figurent au cœur de l'Agenda 2030 pour le Développement durable, adopté par tous les États Membres des Nations Unies et considéré comme une feuille de route pour instaurer la paix et la prospérité sur la planète, en encourageant le développement mondial. Les enseignants peuvent recourir aux ODD en classe comme un outil permettant aux élèves de développer leur esprit critique, mais aussi les aider à trouver leur identité et leur but. La combinaison des éléments de base du codage et de la pensée informatique avec les SDG renforcera la confiance de vos élèves, et vous les aiderez à développer leur créativité, leur esprit d'entreprise, leur capacité à résoudre des problèmes ou à communiquer ",
-                "3" => "Dans les activités suivantes, les élèves appliqueront les principes du Scratch, du codage ASCII et du codage débranché à des sujets d'actualité mondiale et sociale. Les enseignants sensibiliseront les élèves aux objectifs du développement durable tout en les aidant à renforcer leur empathie, leur citoyenneté active et leurs compétences prosociales de manière ludique et stimulante",
-                "4" => "Ces plans de cours sont tous axés sur un des ODD :",
-                "5" => "Objectif de développement durable 3 : Permettre à tous de vivre en bonne santé et promouvoir le bien-être de tous à tout âge ",
-                "6" => "Objectif de développement durable 5 : Parvenir à l’égalité des sexes et autonomiser toutes les femmes et les filles",
-                "7" => "Objectif de développement durable 13 : Prendre d’urgence des mesures pour lutter contre les changements climatiques et leurs répercussions ",
+        '12' => [
+            'title' => 'Le codage pour les Objectifs de développement durable',
+            'author' => ' par Francisco Javier Masero, Cristina Nicolaita et Erviola Konomi ',
+            'text' => [
+                '1' => "L'enseignement traditionnel offre aux élèves peu de possibilités de comprendre et de résoudre les problèmes du monde réel tels que le changement climatique mondial, l'égalité des sexes, la faim, la pauvreté ou encore la bonne santé et le bien-être.",
+                '2' => "Les Objectifs de développement durable (ODD) figurent au cœur de l'Agenda 2030 pour le Développement durable, adopté par tous les États Membres des Nations Unies et considéré comme une feuille de route pour instaurer la paix et la prospérité sur la planète, en encourageant le développement mondial. Les enseignants peuvent recourir aux ODD en classe comme un outil permettant aux élèves de développer leur esprit critique, mais aussi les aider à trouver leur identité et leur but. La combinaison des éléments de base du codage et de la pensée informatique avec les SDG renforcera la confiance de vos élèves, et vous les aiderez à développer leur créativité, leur esprit d'entreprise, leur capacité à résoudre des problèmes ou à communiquer ",
+                '3' => "Dans les activités suivantes, les élèves appliqueront les principes du Scratch, du codage ASCII et du codage débranché à des sujets d'actualité mondiale et sociale. Les enseignants sensibiliseront les élèves aux objectifs du développement durable tout en les aidant à renforcer leur empathie, leur citoyenneté active et leurs compétences prosociales de manière ludique et stimulante",
+                '4' => 'Ces plans de cours sont tous axés sur un des ODD :',
+                '5' => 'Objectif de développement durable 3 : Permettre à tous de vivre en bonne santé et promouvoir le bien-être de tous à tout âge ',
+                '6' => 'Objectif de développement durable 5 : Parvenir à l’égalité des sexes et autonomiser toutes les femmes et les filles',
+                '7' => 'Objectif de développement durable 13 : Prendre d’urgence des mesures pour lutter contre les changements climatiques et leurs répercussions ',
             ],
-            "activities" => [
-                "1" => " Projet Karatéka : Apprendre le karaté par la programmation, à l'école primaire, au lycée et au collège ",
-                "2" => " Les Objectifs de développement durable et codage pour le changement climatique, pour l'école primaire ",
-                "3" => " Le codage pour l'égalité des sexes, pour l'école secondaire supérieure ",
-            ]
-        ]
-
-        ,
-
-        "13" => [
-            "title" => "Introduction à l’intelligence artificielle en classe",
-            "author" => " par Artur Coelho et Marjana Prifti Skenduli ",
-            "text" => [
-                "1" => " L’intelligence artificielle (IA) intervient dans de nombreux domaines de la vie quotidienne : elle corrige automatiquement le texte que vous tapez sur votre téléphone, choisit la musique que joue votre application musicale préférée et se souvient de vos mots de passe lorsque vous les avez oubliés. L’IA désigne une combinaison d’apprentissage machine, de robotique et d’algorithmes, avec des applications dans tous les domaines : de l’informatique à la fabrication, et de la médecine à la mode. Elle occupe donc une place indéniable dans nos vies et dans nos sociétés et joue un rôle clé dans le développement de la science. Et comme tout autre phénomène important dans nos vies, les étudiants tireront profit de son apprentissage. Mais comment enseigner une matière aussi complexe que l’IA ? ",
-                "2" => "Cette formation vous aidera à expliquer aux élèves ce qu’est l’IA et quel rôle elle joue dans leur quotidien. Ces activités sont conçues pour que des néophytes comprennent facilement le contenu et soient capables de décomposer efficacement des termes complexes en idées facilement compréhensibles. Grâce à ces plans de formation, vous aiderez les élèves à assimiler l’utilisation de l’IA dans différents domaines, ainsi que certains des mécanismes qui la sous-tendent. Ces cours sont conçus pour que les étudiants développent leurs capacités d’analyse et de réflexion critique : par exemple, dans l’activité de Marjana, les élèves développent un pipeline de classification. Les élèves pourront également comprendre les diverses applications de l’IA : dans l’activité d’Artur, ils verront le lien entre l’IA et l’art, et comment l’IA peut être utilisée au service de l’expression visuelle. Par ailleurs, les élèves réfléchiront également aux dangers de l’IA et à leur impact."
+            'activities' => [
+                '1' => " Projet Karatéka : Apprendre le karaté par la programmation, à l'école primaire, au lycée et au collège ",
+                '2' => " Les Objectifs de développement durable et codage pour le changement climatique, pour l'école primaire ",
+                '3' => " Le codage pour l'égalité des sexes, pour l'école secondaire supérieure ",
             ],
-            "activities" => [
-                "1" => "L’interaction humain-AI- dans l’Art, pour l’école primaire",
-                "2" => " Des machines pour apprendre à classer : Introduction à l’apprentissage machine supervisé, pour l’école secondaire de cycle inférieur ",
-                "3" => "Des machines pour apprendre à classer : Introduction à l’apprentissage machine supervisé, pour l’école secondaire de cycle supérieur",
-            ]
+        ],
+
+        '13' => [
+            'title' => 'Introduction à l’intelligence artificielle en classe',
+            'author' => ' par Artur Coelho et Marjana Prifti Skenduli ',
+            'text' => [
+                '1' => ' L’intelligence artificielle (IA) intervient dans de nombreux domaines de la vie quotidienne : elle corrige automatiquement le texte que vous tapez sur votre téléphone, choisit la musique que joue votre application musicale préférée et se souvient de vos mots de passe lorsque vous les avez oubliés. L’IA désigne une combinaison d’apprentissage machine, de robotique et d’algorithmes, avec des applications dans tous les domaines : de l’informatique à la fabrication, et de la médecine à la mode. Elle occupe donc une place indéniable dans nos vies et dans nos sociétés et joue un rôle clé dans le développement de la science. Et comme tout autre phénomène important dans nos vies, les étudiants tireront profit de son apprentissage. Mais comment enseigner une matière aussi complexe que l’IA ? ',
+                '2' => 'Cette formation vous aidera à expliquer aux élèves ce qu’est l’IA et quel rôle elle joue dans leur quotidien. Ces activités sont conçues pour que des néophytes comprennent facilement le contenu et soient capables de décomposer efficacement des termes complexes en idées facilement compréhensibles. Grâce à ces plans de formation, vous aiderez les élèves à assimiler l’utilisation de l’IA dans différents domaines, ainsi que certains des mécanismes qui la sous-tendent. Ces cours sont conçus pour que les étudiants développent leurs capacités d’analyse et de réflexion critique : par exemple, dans l’activité de Marjana, les élèves développent un pipeline de classification. Les élèves pourront également comprendre les diverses applications de l’IA : dans l’activité d’Artur, ils verront le lien entre l’IA et l’art, et comment l’IA peut être utilisée au service de l’expression visuelle. Par ailleurs, les élèves réfléchiront également aux dangers de l’IA et à leur impact.',
+            ],
+            'activities' => [
+                '1' => 'L’interaction humain-AI- dans l’Art, pour l’école primaire',
+                '2' => ' Des machines pour apprendre à classer : Introduction à l’apprentissage machine supervisé, pour l’école secondaire de cycle inférieur ',
+                '3' => 'Des machines pour apprendre à classer : Introduction à l’apprentissage machine supervisé, pour l’école secondaire de cycle supérieur',
+            ],
         ],
 
         '14' => [
@@ -245,86 +242,84 @@ Dans cette vidéo, l’équipe de la Semaine du code vous présentera quelques a
             'author' => 'par Adil Tugyan, Georgia Lascaris et Marco Neves',
             'text' => [
                 '1' => "Les progrès de l'IA ces dernières années ont été impressionnants grâce aux avancées rapides en matière de puissance de calcul et à la disponibilité de grandes quantités de données. Ce phénomène a conduit à des investissements substantiels dans la recherche en IA et à une expansion rapide de l'industrie connexe, pour en faire une révolution technologique majeure de notre temps. L'IA est partout autour de nous. Elle fait désormais partie de notre quotidien, à tel point que nous ne la considérons pas toujours comme une IA : nous utilisons presque tous les jours des recommandations en ligne, la détection des visages, des systèmes de sécurité et des assistants vocaux. Mais qu'en est-il de l'éducation et de l'enseignement ?",
-                '2' => "L'IA recèle un énorme potentiel qui permet de mettre en place de nouvelles méthodes d'enseignement et d'apprentissage et d'améliorer l'apprentissage des étudiants. Ce Module de formation vous aidera à intégrer des activités d'IA authentiques dans votre enseignement et à préparer vos étudiants à la vie et à la carrière dans un monde façonné par l'IA. Ces activités ont été conçues pour que les élèves développent leur curiosité, leur capacité à résoudre des problèmes et leur créativité : par exemple, dans l'activité d'Adil, les élèves apprennent des algorithmes et des réseaux de neurones et sont encouragés à créer leur propre réseau de neurones pour visualiser un cerveau d'IA. Georgia guidera vos élèves dans le développement étape par étape d'un chatbot. Les élèves vont construire leur propre chatbot, préparer des ensembles de données de questions et réponses et l'entraîner pour qu'il puisse répondre aux questions sur la Covid-19. Dans l'activité de Marco, les élèves étudieront les avantages et les défis des machines intelligentes dans la vie quotidienne et au travail. Quels sont les risques de l'IA dont nous devons tenir compte ? Quels seront les impacts de l'IA sur l'avenir de l'emploi ? Quels emplois leur seront proposés lorsqu'ils entreront sur le marché du travail à l'avenir ?"
+                '2' => "L'IA recèle un énorme potentiel qui permet de mettre en place de nouvelles méthodes d'enseignement et d'apprentissage et d'améliorer l'apprentissage des étudiants. Ce Module de formation vous aidera à intégrer des activités d'IA authentiques dans votre enseignement et à préparer vos étudiants à la vie et à la carrière dans un monde façonné par l'IA. Ces activités ont été conçues pour que les élèves développent leur curiosité, leur capacité à résoudre des problèmes et leur créativité : par exemple, dans l'activité d'Adil, les élèves apprennent des algorithmes et des réseaux de neurones et sont encouragés à créer leur propre réseau de neurones pour visualiser un cerveau d'IA. Georgia guidera vos élèves dans le développement étape par étape d'un chatbot. Les élèves vont construire leur propre chatbot, préparer des ensembles de données de questions et réponses et l'entraîner pour qu'il puisse répondre aux questions sur la Covid-19. Dans l'activité de Marco, les élèves étudieront les avantages et les défis des machines intelligentes dans la vie quotidienne et au travail. Quels sont les risques de l'IA dont nous devons tenir compte ? Quels seront les impacts de l'IA sur l'avenir de l'emploi ? Quels emplois leur seront proposés lorsqu'ils entreront sur le marché du travail à l'avenir ?",
             ],
             'activities' => [
                 'title' => 'Dans le cadre des cours ci-dessous, les élèves découvriront les machines intelligentes de manière ludique et intéressante.',
                 '1' => "L'IA et ses réseaux de neurones, pour l'école primaire",
                 '2' => "Mon Chatbot Covid-19, pour l'école secondaire inférieure",
                 '3' => "Vivre à l'ère des « Machines intelligentes » : Défis et opportunités, pour l'école secondaire supérieure",
-            ]
-        ],
-
-        "15" => [
-            "title" => "Éducation aux médias",
-            "author" => "par Marijana Smolčec, Tea Horvatić et Sanja Božinović",
-            "text" => [
-                "L’éducation aux médias n’a jamais été aussi importante pour les élèves d’aujourd’hui. Les élèves de tous âges doivent acquérir des compétences, des connaissances et des attitudes pertinentes pour être en mesure de naviguer dans notre monde riche en médias. Les compétences en éducation aux médias les aideront à utiliser des contenus en ligne crédibles et à reconnaître les sources d’information trompeuses. Ils comprendront comment vérifier les informations qu’ils trouvent en ligne et les interpréter de manière critique. Ils seront sensibilisés à l’utilisation correcte du travail créatif et appliqueront leur apprentissage lors de la création de leur propre contenu créatif.",
-                " Ce bit d’apprentissage vous permettra de mettre en œuvre diverses stratégies et techniques pour donner à vos élèves les moyens d’acquérir une éducation aux médias. Dans l’activité de Marijana, les élèves apprennent à utiliser le contenu internet de manière sûre et responsable. Ils découvrent les différents types de licences et développent une application simple pour montrer comment partager correctement un travail créatif. Dans l’activité de Tea, les élèves se lancent dans une quête pour en savoir plus sur les clickbaits. Grâce à des tâches stimulantes, ils explorent des stratégies pour identifier et découvrir les clickbaits et apprennent à les éviter. Sanja permet aux élèves d’explorer et d’analyser de manière critique et d’évaluer le contenu internet, sa pertinence, son exactitude, son origine et son objectif. Ils apprennent à trouver des sources fiables en ligne et à reconnaître les fausses informations en ligne. ",
-                "Dans les plans de cours ci-dessous, vous trouverez des activités inspirantes et engageantes pour améliorer les compétences des élèves en matière d’éducation aux médias:",
             ],
-            "activities" => [
-                "1" => "Est-ce gratuit si c’est sur Internet ? ",
-                "2" => "Cliquer ou ne pas cliquer",
-                "3" => "Vérification des faits",
-            ]
         ],
-        "16" => [
-            "title" => "RACONTER UNE HISTOIRE AVEC HEDY",
-            "author" => "par Felienne Hermans",
-            "text" => [
-                "Vos élèves maîtrisent déjà un langage de programmation visuel, mais ne se sentent pas encore prêts à se plonger dans un langage de programmation textuel? Dans ce cas, ce module d’apprentissage est fait pour vous et vos élèves, car il les aidera à combler le fossé entre un langage de programmation visuel et un langage de programmation textuel. Le module d’apprentissage <strong>Raconter une histoire avec Hedy</strong> comprend trois plans de cours qui utilisent Hedy, un langage de programmation graduel destiné à initier les enfants à la programmation.",
 
-                "Hedy s’adresse aux enfants qui veulent s’initier aux langages de programmation textuels, mais pour qui commencer avec Python pourrait être trop complexe. Les langages graduels utilisent différents niveaux de langage, où chaque niveau ajoute de nouveaux concepts et une complexité syntaxique. À la fin de la séquence de niveaux de Hedy, les élèves maîtrisent un sous-ensemble de Python syntaxiquement conforme. ",
-
-                "Ce module d’apprentissage propose des activités inspirantes et attrayantes pour aider vos élèves à utiliser de manière efficace les langages de programmation en mode texte. En créant leurs propres histoires interactives, ils apprendront progressivement la programmation, sans devoir tout apprendre en une fois. Dans le plan de cours pour l’école primaire, les élèves sont initiés aux concepts de base de la programmation. Le plan de cours pour le secondaire inférieur présente d’autres concepts de programmation, tandis que le plan de cours pour le secondaire supérieur permet aux élèves de programmer des histoires et des activités plus complexes. ",
-
-                "Découvrez l’histoire interactive ci-dessous pour voir comment les lecteurs peuvent participer à l’histoire et la manière dont elle encourage leur engagement actif."
+        '15' => [
+            'title' => 'Éducation aux médias',
+            'author' => 'par Marijana Smolčec, Tea Horvatić et Sanja Božinović',
+            'text' => [
+                'L’éducation aux médias n’a jamais été aussi importante pour les élèves d’aujourd’hui. Les élèves de tous âges doivent acquérir des compétences, des connaissances et des attitudes pertinentes pour être en mesure de naviguer dans notre monde riche en médias. Les compétences en éducation aux médias les aideront à utiliser des contenus en ligne crédibles et à reconnaître les sources d’information trompeuses. Ils comprendront comment vérifier les informations qu’ils trouvent en ligne et les interpréter de manière critique. Ils seront sensibilisés à l’utilisation correcte du travail créatif et appliqueront leur apprentissage lors de la création de leur propre contenu créatif.',
+                ' Ce bit d’apprentissage vous permettra de mettre en œuvre diverses stratégies et techniques pour donner à vos élèves les moyens d’acquérir une éducation aux médias. Dans l’activité de Marijana, les élèves apprennent à utiliser le contenu internet de manière sûre et responsable. Ils découvrent les différents types de licences et développent une application simple pour montrer comment partager correctement un travail créatif. Dans l’activité de Tea, les élèves se lancent dans une quête pour en savoir plus sur les clickbaits. Grâce à des tâches stimulantes, ils explorent des stratégies pour identifier et découvrir les clickbaits et apprennent à les éviter. Sanja permet aux élèves d’explorer et d’analyser de manière critique et d’évaluer le contenu internet, sa pertinence, son exactitude, son origine et son objectif. Ils apprennent à trouver des sources fiables en ligne et à reconnaître les fausses informations en ligne. ',
+                'Dans les plans de cours ci-dessous, vous trouverez des activités inspirantes et engageantes pour améliorer les compétences des élèves en matière d’éducation aux médias:',
             ],
-            "activities" => [
-                "1" => "Créez votre propre histoire interactive avec Hedy pour les élèves de l’école primaire",
-                "2" => "Créez votre propre histoire interactive avec Hedy pour les élèves du secondaire inférieur",
-                "3" => "Créez votre propre histoire interactive avec Hedy pour les élèves du secondaire supérieur",
-            ]
-        ],
-        "17" => [
-            "title" => "Ressentez le code",
-            "author" => "par Alenka Miljević",
-            "text" => [
-                "Le bien-être social et émotionnel est la capacité d’être résilient, de savoir gérer ses émotions et de répondre aux émotions des autres, de développer des relations constructives avec les autres, de générer des émotions qui débouchent sur de bons sentiments et de créer son propre réseau de soutien émotionnel. Les compétences sociales et émotionnelles que les jeunes acquièrent à l’école les aident à développer leur résilience et à définir la manière dont ils géreront leur santé physique et mentale tout au long de leur vie. (Conseil de l’Europe)",
-                "Le module d’apprentissage Ressentez le code vous permettra de renforcer le bien-être social et émotionnel de vos élèves en reconnaissant, expliquant, comprenant et répondant aux sentiments et émotions positifs et négatifs dans le but de développer leur empathie et leur résilience.  Ce module d’apprentissage propose des activités inspirantes et attrayantes destinées à aider vos élèves à développer les aptitudes requises pour gérer différentes émotions par le biais du codage. Vos élèves apprendront à exprimer leurs sentiments et à réagir aux émotions de leurs camarades à l’aide d’une Bee-Bot.",
-                "Le module d’apprentissage Ressentez le code comprend trois plans de cours qui font appel à une Bee-Bot éducative pour créer des activités encourageant les élèves à aborder le sujet des émotions et à développer leur empathie. Dans le plan de cours destiné à l’école primaire, les élèves programment la Bee-Bot pour parler d’émotions telles que la tristesse, la joie, la peur et la colère et découvrir les raisons pour lesquelles eux-mêmes et leurs camarades ressentent ces émotions. Le plan de cours destiné au 1er cycle du secondaire encourage les élèves à programmer la Bee-Bot, à reconnaître leurs propres sentiments et ceux de leurs camarades, à en comprendre les causes et à y répondre. Le plan de cours destiné au 2e cycle du secondaire permet aux élèves de piloter la Bee-Bot et d’inventer des histoires sur les sentiments, la résilience et l’empathie.",
-                "Si vous ne disposez pas d’une Bee-Bot éducative dans votre classe, ce module d’apprentissage vous donnera des idées d’activités non connectées qui stimulent le développement des compétences sociales et émotionnelles. Le tableau interactif ci-dessous présente brièvement les activités que vous pouvez réaliser dans votre classe:"
+            'activities' => [
+                '1' => 'Est-ce gratuit si c’est sur Internet ? ',
+                '2' => 'Cliquer ou ne pas cliquer',
+                '3' => 'Vérification des faits',
             ],
-            "activities" => [
-                "1" => "Coder – Ressentir – Apprendre pour les élèves du primaire",
-                "2" => "Mon cœur n’est pas fait de pierre pour les élèves du 1er cycle du secondaire",
-                "3" => "Codez-moi selon l’humeur pour les élèves du 2e cycle du secondaire",
-            ]
-        ],"18" => [
+        ],
+        '16' => [
+            'title' => 'RACONTER UNE HISTOIRE AVEC HEDY',
+            'author' => 'par Felienne Hermans',
+            'text' => [
+                'Vos élèves maîtrisent déjà un langage de programmation visuel, mais ne se sentent pas encore prêts à se plonger dans un langage de programmation textuel? Dans ce cas, ce module d’apprentissage est fait pour vous et vos élèves, car il les aidera à combler le fossé entre un langage de programmation visuel et un langage de programmation textuel. Le module d’apprentissage <strong>Raconter une histoire avec Hedy</strong> comprend trois plans de cours qui utilisent Hedy, un langage de programmation graduel destiné à initier les enfants à la programmation.',
 
-            "title" => "SOS EAU",
-"author" => "par Francisco Delgado Cecilia",
-"text" => [
+                'Hedy s’adresse aux enfants qui veulent s’initier aux langages de programmation textuels, mais pour qui commencer avec Python pourrait être trop complexe. Les langages graduels utilisent différents niveaux de langage, où chaque niveau ajoute de nouveaux concepts et une complexité syntaxique. À la fin de la séquence de niveaux de Hedy, les élèves maîtrisent un sous-ensemble de Python syntaxiquement conforme. ',
 
-    "SOS Eau est une réponse à la nécessité de résoudre le problème de la pollution de l’eau. Malgré les efforts consentis ces dernières années, deux milliards de personnes dans le monde n’ont toujours pas accès à de l’eau potable. En d’autres termes, l’Objectif de développement durable (ODD) 6 de l’Agenda 2030, qui stipule que toutes les personnes devraient pouvoir accéder à des services d’alimentation en eau et d’assainissement gérés en toute sécurité d’ici à 2030, est loin d’être atteint. Il en va de même pour l’ODD 14, relatif à la vie aquatique, qui vise à conserver et à exploiter de manière durable les océans, les mers et les ressources marines aux fins du développement durable.",
+                'Ce module d’apprentissage propose des activités inspirantes et attrayantes pour aider vos élèves à utiliser de manière efficace les langages de programmation en mode texte. En créant leurs propres histoires interactives, ils apprendront progressivement la programmation, sans devoir tout apprendre en une fois. Dans le plan de cours pour l’école primaire, les élèves sont initiés aux concepts de base de la programmation. Le plan de cours pour le secondaire inférieur présente d’autres concepts de programmation, tandis que le plan de cours pour le secondaire supérieur permet aux élèves de programmer des histoires et des activités plus complexes. ',
 
-                "Ce Learning Bit est consacré au thème pertinent et d’actualité de la mesure de la qualité de l’eau et des nouveaux polluants qui menacent cette qualité. Les élèves auront l’occasion d’effectuer des recherches et de trouver des solutions aux véritables problèmes liés à l’eau et à l’environnement, ce qui leur permettra de développer des compétences en matière de recherche, de raisonnement critique et de résolution de problèmes.",
+                'Découvrez l’histoire interactive ci-dessous pour voir comment les lecteurs peuvent participer à l’histoire et la manière dont elle encourage leur engagement actif.',
+            ],
+            'activities' => [
+                '1' => 'Créez votre propre histoire interactive avec Hedy pour les élèves de l’école primaire',
+                '2' => 'Créez votre propre histoire interactive avec Hedy pour les élèves du secondaire inférieur',
+                '3' => 'Créez votre propre histoire interactive avec Hedy pour les élèves du secondaire supérieur',
+            ],
+        ],
+        '17' => [
+            'title' => 'Ressentez le code',
+            'author' => 'par Alenka Miljević',
+            'text' => [
+                'Le bien-être social et émotionnel est la capacité d’être résilient, de savoir gérer ses émotions et de répondre aux émotions des autres, de développer des relations constructives avec les autres, de générer des émotions qui débouchent sur de bons sentiments et de créer son propre réseau de soutien émotionnel. Les compétences sociales et émotionnelles que les jeunes acquièrent à l’école les aident à développer leur résilience et à définir la manière dont ils géreront leur santé physique et mentale tout au long de leur vie. (Conseil de l’Europe)',
+                'Le module d’apprentissage Ressentez le code vous permettra de renforcer le bien-être social et émotionnel de vos élèves en reconnaissant, expliquant, comprenant et répondant aux sentiments et émotions positifs et négatifs dans le but de développer leur empathie et leur résilience.  Ce module d’apprentissage propose des activités inspirantes et attrayantes destinées à aider vos élèves à développer les aptitudes requises pour gérer différentes émotions par le biais du codage. Vos élèves apprendront à exprimer leurs sentiments et à réagir aux émotions de leurs camarades à l’aide d’une Bee-Bot.',
+                'Le module d’apprentissage Ressentez le code comprend trois plans de cours qui font appel à une Bee-Bot éducative pour créer des activités encourageant les élèves à aborder le sujet des émotions et à développer leur empathie. Dans le plan de cours destiné à l’école primaire, les élèves programment la Bee-Bot pour parler d’émotions telles que la tristesse, la joie, la peur et la colère et découvrir les raisons pour lesquelles eux-mêmes et leurs camarades ressentent ces émotions. Le plan de cours destiné au 1er cycle du secondaire encourage les élèves à programmer la Bee-Bot, à reconnaître leurs propres sentiments et ceux de leurs camarades, à en comprendre les causes et à y répondre. Le plan de cours destiné au 2e cycle du secondaire permet aux élèves de piloter la Bee-Bot et d’inventer des histoires sur les sentiments, la résilience et l’empathie.',
+                'Si vous ne disposez pas d’une Bee-Bot éducative dans votre classe, ce module d’apprentissage vous donnera des idées d’activités non connectées qui stimulent le développement des compétences sociales et émotionnelles. Le tableau interactif ci-dessous présente brièvement les activités que vous pouvez réaliser dans votre classe:',
+            ],
+            'activities' => [
+                '1' => 'Coder – Ressentir – Apprendre pour les élèves du primaire',
+                '2' => 'Mon cœur n’est pas fait de pierre pour les élèves du 1er cycle du secondaire',
+                '3' => 'Codez-moi selon l’humeur pour les élèves du 2e cycle du secondaire',
+            ],
+        ], '18' => [
 
-                "La leçon inclut des activités pratiques et créatives, comme de la programmation dans Scratch, une initiation à l’apprentissage automatique et à l’intelligence artificielle avec Learning Machine Learning, et la construction de véhicules guidés avec des pièces Lego afin de prélever des échantillons d’eau et procéder à l’analyse du pH. Au cours de ces activités, les élèves pourront mettre en pratique leurs compétences et leurs connaissances dans un environnement interactif et ludique, qui renforcera leur motivation et éveillera leur intérêt pour le projet.",
+            'title' => 'SOS EAU',
+            'author' => 'par Francisco Delgado Cecilia',
+            'text' => [
 
-                "Afin de mettre en œuvre ce Learning Bit, nous vous proposons de développer les trois activités en classe, de terminer le projet et de rendre le processus d’apprentissage plus intéressant et plus motivant. Chaque activité peut toutefois être réalisée individuellement."
+                'SOS Eau est une réponse à la nécessité de résoudre le problème de la pollution de l’eau. Malgré les efforts consentis ces dernières années, deux milliards de personnes dans le monde n’ont toujours pas accès à de l’eau potable. En d’autres termes, l’Objectif de développement durable (ODD) 6 de l’Agenda 2030, qui stipule que toutes les personnes devraient pouvoir accéder à des services d’alimentation en eau et d’assainissement gérés en toute sécurité d’ici à 2030, est loin d’être atteint. Il en va de même pour l’ODD 14, relatif à la vie aquatique, qui vise à conserver et à exploiter de manière durable les océans, les mers et les ressources marines aux fins du développement durable.',
 
-],
-"activities" => [
-    "1" => "SOS Eau avec Scratch",
-                "2" => "SOS Eau avec l’apprentissage automatique",
-                "3" => "SOS Eau avec la robotique",
-            ]
+                'Ce Learning Bit est consacré au thème pertinent et d’actualité de la mesure de la qualité de l’eau et des nouveaux polluants qui menacent cette qualité. Les élèves auront l’occasion d’effectuer des recherches et de trouver des solutions aux véritables problèmes liés à l’eau et à l’environnement, ce qui leur permettra de développer des compétences en matière de recherche, de raisonnement critique et de résolution de problèmes.',
+
+                'La leçon inclut des activités pratiques et créatives, comme de la programmation dans Scratch, une initiation à l’apprentissage automatique et à l’intelligence artificielle avec Learning Machine Learning, et la construction de véhicules guidés avec des pièces Lego afin de prélever des échantillons d’eau et procéder à l’analyse du pH. Au cours de ces activités, les élèves pourront mettre en pratique leurs compétences et leurs connaissances dans un environnement interactif et ludique, qui renforcera leur motivation et éveillera leur intérêt pour le projet.',
+
+                'Afin de mettre en œuvre ce Learning Bit, nous vous proposons de développer les trois activités en classe, de terminer le projet et de rendre le processus d’apprentissage plus intéressant et plus motivant. Chaque activité peut toutefois être réalisée individuellement.',
+
+            ],
+            'activities' => [
+                '1' => 'SOS Eau avec Scratch',
+                '2' => 'SOS Eau avec l’apprentissage automatique',
+                '3' => 'SOS Eau avec la robotique',
+            ],
 
         ],
-
-
 
     ],
     'download_video_script' => 'Télécharger le script vidéo',
@@ -334,7 +329,7 @@ Dans cette vidéo, l’équipe de la Semaine du code vous présentera quelques a
         'title' => 'N’oubliez pas d’ajouter votre activité à la carte Code Week!',
         'text' => '<p>Vous pouvez facilement organiser un cours en classe, une journée portes ouvertes ou un événement dans votre établissement. Choisissez une date et inscrivez votre activité sur la <a href="/events">carte Code Week</a>. Chaque organisateur d’activité sera récompensé pour ses efforts par un certificat de participation.</p>
 
-<p>Si vous souhaitez entrer en contact avec un groupe international d’enseignants enthousiastes, rejoignez le <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">groupe Facebook de la Semaine européenne du code pour enseignants</a>! Pour aller plus loin et collaborer avec d’autres écoles dans votre pays ou par-delà les frontières, participez au <a href="/codeweek4all">Code Week 4 All challenge</a>.</p>'
-    ]
+<p>Si vous souhaitez entrer en contact avec un groupe international d’enseignants enthousiastes, rejoignez le <a href="https://www.facebook.com/groups/774720866253044/?source_id=377506999042215">groupe Facebook de la Semaine européenne du code pour enseignants</a>! Pour aller plus loin et collaborer avec d’autres écoles dans votre pays ou par-delà les frontières, participez au <a href="/codeweek4all">Code Week 4 All challenge</a>.</p>',
+    ],
 
 ];

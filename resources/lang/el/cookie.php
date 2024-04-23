@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,11 +14,10 @@ return [
     */
 
     'uses_cookies' => 'Αυτός ο ιστότοπος χρησιμοποιεί cookies για καλύτερη φυλλομέτρηση',
-    'accept'=>'Αποδέχομαι τα cookies',
-    'refuse'=>'Δεν αποδέχομαι τα cookies',
+    'accept' => 'Αποδέχομαι τα cookies',
+    'refuse' => 'Δεν αποδέχομαι τα cookies',
     'cookies' => 'Cookies',
-    'find_out_more_on'=>'Δείτε ',
+    'find_out_more_on' => 'Δείτε ',
     'how_we_use' => 'πώς χρησιμοποιούμε τα cookies και πώς μπορείτε να αλλάξετε τις ρυθμίσεις σας',
-
 
 ];

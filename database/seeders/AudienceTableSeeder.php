@@ -17,41 +17,39 @@ class AudienceTableSeeder extends Seeder
 
         DB::table('audiences')->insert([
             'id' => 1,
-            'name' => 'Pre-school children'
+            'name' => 'Pre-school children',
         ]);
         DB::table('audiences')->insert([
             'id' => 2,
-            'name' => 'Elementary school students'
+            'name' => 'Elementary school students',
         ]);
         DB::table('audiences')->insert([
             'id' => 3,
-            'name' => 'High school students'
+            'name' => 'High school students',
         ]);
         DB::table('audiences')->insert([
             'id' => 4,
-            'name' => 'Graduate students'
+            'name' => 'Graduate students',
         ]);
         DB::table('audiences')->insert([
             'id' => 5,
-            'name' => 'Post graduate students'
+            'name' => 'Post graduate students',
         ]);
         DB::table('audiences')->insert([
             'id' => 6,
-            'name' => 'Employed adults'
+            'name' => 'Employed adults',
         ]);
         DB::table('audiences')->insert([
             'id' => 7,
-            'name' => 'Unemployed adults'
+            'name' => 'Unemployed adults',
         ]);
         DB::table('audiences')->insert([
             'id' => 8,
-            'name' => 'Other (see description)'
+            'name' => 'Other (see description)',
         ]);
         DB::table('audiences')->insert([
             'id' => 9,
-            'name' => 'Teachers'
+            'name' => 'Teachers',
         ]);
     }
 }
-
-

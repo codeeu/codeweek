@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,8 +14,8 @@ return [
     */
 
     'title' => 'Missä maissa on eniten koodaustapahtumia?',
-    'paragraph'=>'Maat on lueteltu koodaustapahtumien väestöön suhteutetun määrän mukaisessa järjestyksessä. Luettelon yläpäässä voi siis olla yllättäen pienempiäkin maita!',
-    'parcipating_with'=>'osallistuu',
-    'events'=>'tapahtumalla'
+    'paragraph' => 'Maat on lueteltu koodaustapahtumien väestöön suhteutetun määrän mukaisessa järjestyksessä. Luettelon yläpäässä voi siis olla yllättäen pienempiäkin maita!',
+    'parcipating_with' => 'osallistuu',
+    'events' => 'tapahtumalla',
 
 ];

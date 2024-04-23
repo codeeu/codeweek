@@ -3,7 +3,6 @@
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use Subfission\Cas\Facades\Cas;
 
 class ExampleTest extends TestCase
 {

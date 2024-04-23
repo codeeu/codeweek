@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-
 use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
@@ -21,7 +20,6 @@ class ActivitiesAdministratorRoleSeeder extends Seeder
 
         // create permissions
         Permission::create(['name' => 'feature event']);
-
 
         // create roles and assign created permissions
 

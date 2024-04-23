@@ -4,14 +4,14 @@ return [
     'subtitle' => 'La présente déclaration relative à la protection de la vie privée fournit des informations concernant le traitement et la protection de vos données à caractère personnel.',
     'processing-operation' => [
         'Opération de traitement',
-        'gestion des ambassadeurs de la Semaine européenne du code, des enseignants principaux et de l’inscription des activités sur le site web'
+        'gestion des ambassadeurs de la Semaine européenne du code, des enseignants principaux et de l’inscription des activités sur le site web',
     ],
     'data-processors' => [
         'Sous-traitant de données',
-        'GOPA Com. S.A. et EUN Partnership AISBL (réseau scolaire européen), info@codeweek.eu'
+        'GOPA Com. S.A. et EUN Partnership AISBL (réseau scolaire européen), info@codeweek.eu',
     ],
     '1-intro' => [
-        'Les informations relatives au traitement des données à caractère personnel aux fins de la gestion des ambassadeurs de la Semaine du code, des enseignants principaux et de l’inscription des activités sur le site web.'
+        'Les informations relatives au traitement des données à caractère personnel aux fins de la gestion des ambassadeurs de la Semaine du code, des enseignants principaux et de l’inscription des activités sur le site web.',
     ],
 
     '3-legal_process' => [
@@ -59,10 +59,10 @@ return [
         'En outre, l’unité G.2 peut partager vos coordonnées avec tout membre du public ou toute partie prenante susceptible de devoir vous contacter dans le cadre de la Semaine du code. \'En ce qui concerne les organisateurs d’activités, veuillez noter que l’ambassadeur concerné de votre pays ou l’unité G.2 peut utiliser les données à caractère personnel que vous avez fournies aux fins de l’inscription d’une activité afin de vous contacter au sujet de cette activité.',
     ],
     '8-rights' => [
- 'Vous avez consenti à fournir vos données à caractère personnel à l’unité G.2 pour l’opération de traitement dont il est question ici. Vous pouvez retirer votre consentement à tout moment en vous adressant à l’unité G.2 à l’adresse suivante: CNECT-G2@ec.europa.eu. Le retrait de votre consentement ne portera pas atteinte à la licéité du traitement effectué avant ce retrait.'
+        'Vous avez consenti à fournir vos données à caractère personnel à l’unité G.2 pour l’opération de traitement dont il est question ici. Vous pouvez retirer votre consentement à tout moment en vous adressant à l’unité G.2 à l’adresse suivante: CNECT-G2@ec.europa.eu. Le retrait de votre consentement ne portera pas atteinte à la licéité du traitement effectué avant ce retrait.',
     ],
 
     '10-detailed-info' => [
- 'L’opération de traitement spécifique dont il est question dans la présente déclaration a été consignée dans le registre public du DPD sous la référence suivante: DPR-EC-02631 Gestion des points de contact pour les politiques, programmes et projets de la DG CNECT.'
-    ]
+        'L’opération de traitement spécifique dont il est question dans la présente déclaration a été consignée dans le registre public du DPD sous la référence suivante: DPR-EC-02631 Gestion des points de contact pour les politiques, programmes et projets de la DG CNECT.',
+    ],
 ];

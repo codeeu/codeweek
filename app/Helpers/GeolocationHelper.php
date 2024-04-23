@@ -4,13 +4,15 @@ namespace App\Helpers;
 
 use Illuminate\Support\Facades\Http;
 
-class GeolocationHelper {
-    public static function getCoordinates($location) {
+class GeolocationHelper
+{
+    public static function getCoordinates($location)
+    {
         $response = Http::get(
             'https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/suggest',
             [
                 'f' => 'json',
-                'text' => $location
+                'text' => $location,
             ]
         );
 
@@ -29,7 +31,7 @@ class GeolocationHelper {
                 'SingleLine' => $text,
                 'magicKey' => $magicKey,
                 'outFields' => 'Country',
-                'f' => 'json'
+                'f' => 'json',
             ]
         );
 

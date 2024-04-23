@@ -2,7 +2,6 @@
 
 namespace App;
 
-use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -20,7 +19,8 @@ class City extends Model
         return $this->hasMany(User::class);
     }
 
-    public function getNameAttribute(){
+    public function getNameAttribute()
+    {
         return $this->city;
     }
 
@@ -29,7 +29,7 @@ class City extends Model
         //acos is not known with sqlite that is used for testing.
         if (config('codeweek.db_connection') == 'sqlite') {
             return City::first();
-        };
+        }
 
         $city = City::selectRaw('id, city, country, country_iso,
         ( 6371 *

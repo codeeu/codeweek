@@ -13,14 +13,11 @@ class AddIndexToEvents extends Migration
      */
     public function up()
     {
-        Schema::table('events', function(Blueprint $table)
-        {
+        Schema::table('events', function (Blueprint $table) {
             $table->index('status');
             $table->index('start_date');
         });
     }
-
-
 
     /**
      * Reverse the migrations.
@@ -30,8 +27,7 @@ class AddIndexToEvents extends Migration
     public function down()
     {
 
-        Schema::table('events', function (Blueprint $table)
-        {
+        Schema::table('events', function (Blueprint $table) {
             $table->dropIndex(['status']);
             $table->dropIndex(['start_date']);
         });

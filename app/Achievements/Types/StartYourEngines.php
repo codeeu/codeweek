@@ -4,7 +4,6 @@ namespace App\Achievements\Types;
 
 class StartYourEngines extends AchievementType
 {
-
     public $icon = 'star-green.svg';
 
     public function description()
@@ -16,6 +15,4 @@ class StartYourEngines extends AchievementType
     {
         return $user->getExperience()->points >= 1000;
     }
-
-
 }

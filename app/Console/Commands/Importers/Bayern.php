@@ -2,16 +2,11 @@
 
 namespace App\Console\Commands\Importers;
 
-
-
 use App\Helpers\ImporterHelper;
-
-
 use App\RSSItems\BayernRSSItem;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Log;
-
 
 class Bayern extends Command
 {
@@ -38,7 +33,6 @@ class Bayern extends Command
     {
         parent::__construct();
 
-
     }
 
     /**
@@ -48,23 +42,20 @@ class Bayern extends Command
      */
     public function handle()
     {
-        Log::info("Loading Bayern API Items in Database");
+        Log::info('Loading Bayern API Items in Database');
 
-        $techicalUser = ImporterHelper::getTechnicalUser("bayern-technical");
+        $techicalUser = ImporterHelper::getTechnicalUser('bayern-technical');
 
         $items = BayernRSSItem::whereNull('imported_at')->get();
 
-
-
-        foreach ($items as $item){
+        foreach ($items as $item) {
 
             $item->createEvent($techicalUser);
             $item->imported_at = Carbon::now();
             $item->save();
         }
 
-        Log::info("Activities created from RSS Feed: " . count($items));
-
+        Log::info('Activities created from RSS Feed: '.count($items));
 
     }
 }

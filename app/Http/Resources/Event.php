@@ -20,7 +20,7 @@ class Event extends JsonResource
             'title' => $this->title,
             'description' => $this->description,
             'picture' => $this->picture_path(),
-            'path' => $this->path()
+            'path' => $this->path(),
         ];
     }
 }

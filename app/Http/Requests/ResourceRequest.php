@@ -27,9 +27,7 @@ class ResourceRequest extends FormRequest
 
             'name' => 'required',
             'source' => 'required',
-            'description' => 'required'
-
-
+            'description' => 'required',
 
         ];
     }

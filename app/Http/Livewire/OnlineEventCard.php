@@ -9,13 +9,13 @@ use Livewire\Component;
 
 class OnlineEventCard extends Component
 {
-
     use AuthorizesRequests;
 
     public $event;
-    public $countryName;
-    public $baseLanguage;
 
+    public $countryName;
+
+    public $baseLanguage;
 
     public function mount($event, $countryName)
     {
@@ -30,11 +30,11 @@ class OnlineEventCard extends Component
         return view('livewire.online-event-card');
     }
 
-
     public function promote()
     {
         $this->authorize('promote', $this->event);
         Log::info('going to promote');
+
         return $this->event->promote();
     }
 
@@ -42,14 +42,16 @@ class OnlineEventCard extends Component
     {
         $this->authorize('feature', $this->event);
         Log::info('going to feature');
+
         return $this->event->feature();
     }
 
     public function setLanguage($language)
     {
         $this->authorize('promote', $this->event);
-        Log::info('Setting language to: ' . $language);
+        Log::info('Setting language to: '.$language);
         $this->event->language = strtolower($language);
+
         return $this->event->save();
     }
 
@@ -58,7 +60,7 @@ class OnlineEventCard extends Component
         $this->authorize('promote', $this->event);
         Log::info('Clearing Language');
         $this->event->language = null;
+
         return $this->event->save();
     }
-
 }

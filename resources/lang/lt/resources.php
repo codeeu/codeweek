@@ -16,11 +16,11 @@ return [
     'how_to_organise_an_activity' => 'Kaip suorganizuoti renginį?',
     'resources' => [
         'languages' => [
-            'Russian'=>'Rusų',
-            'Norwegian'=>'Norvegų',
-            'Mandarin'=>'Mandarinų',
-            'Japanese'=>'Japonų',
-            'All targeted languages' => 'Visos tikslinės kalbos'
+            'Russian' => 'Rusų',
+            'Norwegian' => 'Norvegų',
+            'Mandarin' => 'Mandarinų',
+            'Japanese' => 'Japonų',
+            'All targeted languages' => 'Visos tikslinės kalbos',
         ],
         'levels' => [
             'Beginner' => 'Pradedančiųjų',
@@ -31,7 +31,7 @@ return [
             'Lower secondary school (12-16)' => 'Pagrindinė mokykla (12–16 m.)',
             'Upper secondary school (16-18)' => 'Vidurinė mokykla (16–18 m.)',
             'Higher Education' => 'Aukštasis mokslas',
-            'Other' => 'Kita'
+            'Other' => 'Kita',
         ],
         'subjects' => [
             'Art' => 'Menai',
@@ -51,7 +51,7 @@ return [
             'Physics' => 'Fizika',
             'Coding' => 'Programavimas',
             'Special Education Needs' => 'Specialiojo ugdymo poreikiai',
-            'Other' => 'Kita'
+            'Other' => 'Kita',
         ],
         'types' => [
             'Tutorial' => 'Mokymo vadovas',
@@ -66,7 +66,7 @@ return [
             'Toolkit' => 'Priemonių rinkinys',
             'Other' => 'Kita',
             'Lesson Plan' => 'Pamokos planas',
-            'Guide' => 'Vadovas'
+            'Guide' => 'Vadovas',
         ],
         'categories' => [
             'Coding' => 'Kodavimas',
@@ -76,8 +76,8 @@ return [
             'Making' => 'Gamyba',
             'Tinkering' => 'Tinkinimas',
             'Unplugged Activities' => 'Veiklos be kompiuterio',
-            'Other' => 'Kita'
-        ]
-    ]
+            'Other' => 'Kita',
+        ],
+    ],
 
 ];

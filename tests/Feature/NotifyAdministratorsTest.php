@@ -3,25 +3,20 @@
 namespace Tests\Feature;
 
 use App\Mail\NotifyAdministrator;
-use App\Mail\RemindCreator;
 use App\Notification;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
 class NotifyAdministratorsTest extends TestCase
 {
-
     use DatabaseMigrations;
 
-    public function setup() :void
+    public function setup(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
         $this->seed('ActivitiesAdministratorRoleSeeder');
-
 
     }
 
@@ -52,7 +47,6 @@ class NotifyAdministratorsTest extends TestCase
         Mail::assertQueued(NotifyAdministrator::class, 4);
 
         $this->assertEquals(0, Notification::whereNull('sent_at')->count());
-
 
     }
 }

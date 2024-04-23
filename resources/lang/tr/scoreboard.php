@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,8 +14,8 @@ return [
     */
 
     'title' => 'Hangi ülkeler kodlama faaliyeti ile uğraşıyor?',
-    'paragraph'=>'Puan tablosu, popülasyona göre listelenen kodlama etkinliklerinin sayısı baz alınarak hazırlanmıştır, bu nedenle bazı küçük ülkelerin listede yukarılarda yer alması sizi şaşırtmasın!',
-    'parcipating_with'=>'katılımcı ülke:',
-    'events'=>'etkinlik adı:'
+    'paragraph' => 'Puan tablosu, popülasyona göre listelenen kodlama etkinliklerinin sayısı baz alınarak hazırlanmıştır, bu nedenle bazı küçük ülkelerin listede yukarılarda yer alması sizi şaşırtmasın!',
+    'parcipating_with' => 'katılımcı ülke:',
+    'events' => 'etkinlik adı:',
 
 ];

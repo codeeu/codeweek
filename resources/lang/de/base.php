@@ -41,7 +41,7 @@ return [
         'me' => 'Montenegrinisch',
         'rs' => 'Serbisch',
         'mt' => 'Maltesisch',
-        'tr' => 'Türkisch'
+        'tr' => 'Türkisch',
     ],
 
     'resources_local_title' => 'Materialien zum Programmieren aus',
@@ -52,8 +52,7 @@ return [
     'still_have_question' => 'Weitere Fragen?',
     'drop_us_a_line' => 'Einfach schreiben!',
     'get_in_touch' => 'TRETEN SIE MIT UNS IN KONTAKT',
-    'footer_msg' =>
-        'Eine Breiteninitiative, die von Freiwilligen veranstaltet und von der Europäischen Kommission unterstützt wird.',
+    'footer_msg' => 'Eine Breiteninitiative, die von Freiwilligen veranstaltet und von der Europäischen Kommission unterstützt wird.',
     'email' => 'E-Mail-Adresse',
     'display_email' => 'E-Mail-Adresse anzeigen',
     'first_name' => 'Vorname',
@@ -65,8 +64,7 @@ return [
     'choose a file' => 'Datei auswählen',
     'learning_bits' => 'Lernhäppchen',
     'codeweek' => 'CodeWeek',
-    'bring_codeweek_to_your_students' =>
-        'Bringen Sie Ihre Schülerinnen und Schüler zur Code Week',
+    'bring_codeweek_to_your_students' => 'Bringen Sie Ihre Schülerinnen und Schüler zur Code Week',
     'or' => 'oder',
-    'newsletter' => 'Newsletter'
+    'newsletter' => 'Newsletter',
 ];

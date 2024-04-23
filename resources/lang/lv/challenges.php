@@ -19,7 +19,7 @@ return [
         'beginner' => 'Iesācēja līmenis',
         'intermediate' => 'Vidējais līmenis',
         'advanced' => 'Augstākais līmenis',
-        '1-hour' => '1 stunda'
+        '1-hour' => '1 stunda',
     ],
     'main' => [
         'ES programmēšanas nedēļas laikā, 2021. gada 9.–24. oktobrī, mēs aicinām izpildīt vienu vai vairākus ES programmēšanas nedēļas uzdevumus.',
@@ -35,7 +35,7 @@ return [
         'Dalieties ar savu uzdevumu',
         'Vai vēlaties iegūt programmēšanas nedēļas balvas? Ja atbilde ir apstiprinoša, tad ļaujiet savam darbam izplatīties internetā!',
         'Pēc tam, kad uzdevums ir izpildīts, dalieties ar to Instagram.',
-        'Programmēšanas nedēļas laikā no 9. oktobra līdz 24. oktobrim katru dienu tiks izvēlēti uzvarētāji, kas tiks paziņoti mūsu Instagram kanālā, tādēļ atcerieties regulāri pārbaudīt saņemtos paziņojumus.'
+        'Programmēšanas nedēļas laikā no 9. oktobra līdz 24. oktobrim katru dienu tiks izvēlēti uzvarētāji, kas tiks paziņoti mūsu Instagram kanālā, tādēļ atcerieties regulāri pārbaudīt saņemtos paziņojumus.',
     ],
     'share' => [
         'Kā dalīties ar uzdevumu(-iem) Instagram?',
@@ -52,7 +52,7 @@ return [
         'Facebook lapā',
         'katru dienu tiks piesprausta jauna publikācija ar uzdevumu, un balvas ieguvējs tiks izvēlēts no tiem, kuri komentējuši šo publikāciju.',
         'Kā tā darbojas?',
-        'Vienkārši atstājiet zem publikācijas komentāru ar saiti uz savu darbu.'
+        'Vienkārši atstājiet zem publikācijas komentāru ar saiti uz savu darbu.',
     ],
     'share-box' => [
         'Dalieties ar saiti uz savu darbu savā',
@@ -67,18 +67,18 @@ return [
         'jaunu uzdevumu savām publikācijām',
         'Facebook lapā',
         'Tad jums jāatstāj zem publikācijas komentārs ar saiti uz savu darbu',
-        'Programmēšanas nedēļā laikā no 9. oktobra līdz 24. oktobrim katru dienu tiks izvēlēti uzvarētāji, kas saņems balvas un tiks paziņoti mūsu Instagram un Facebook kanālos, tādēļ atcerieties regulāri pārbaudīt saņemtos paziņojumus.'
+        'Programmēšanas nedēļā laikā no 9. oktobra līdz 24. oktobrim katru dienu tiks izvēlēti uzvarētāji, kas saņems balvas un tiks paziņoti mūsu Instagram un Facebook kanālos, tādēļ atcerieties regulāri pārbaudīt saņemtos paziņojumus.',
     ],
     'take-part' => [
         'Kādēļ piedalīties ES programmēšanas nedēļas spēku pārbaudē?',
         'Lai iesaistītos problēmu risināšanas un programmēšanas aktivitātēs.',
         'Lai darbotos kopā ar draugiem.',
-        'Lai izplatītu informāciju par programmēšanas nozīmīgumu.'
+        'Lai izplatītu informāciju par programmēšanas nozīmīgumu.',
     ],
     'download' => [
         'Noklikšķiniet',
         'šeit',
-        'lai lejupielādētu uzdevumu kā Word dokumentu'
+        'lai lejupielādētu uzdevumu kā Word dokumentu',
     ],
     'bingo' => [
         'Izpildiet visus uzdevumus',
@@ -88,6 +88,6 @@ return [
         'Dalieties ar savu uzdevumu sociālajos medijos un iegūstiet stilīgas programmēšanas nedēļas balvas',
         'Vienkārši augšupielādējiet attēlu ar izpildīto(-ajām) rindu(-ām), aili(-ēm) vai, pat vēl labāk, visu bingo',
         'Facebook, Instagram vai Twitter',
-        'Izmantojiet'
-    ]
+        'Izmantojiet',
+    ],
 ];

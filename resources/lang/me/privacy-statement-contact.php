@@ -4,14 +4,14 @@ return [
     'subtitle' => 'Ova izjava o privatnosti daje informacije o obradi i zaštiti vaših ličnih podataka.',
     'processing-operation' => [
         'Operacija obrade',
-        'upravljanje ambasadora nedjelje kodiranja, (Code Week), vodećim nastavnicima i registracijom aktivnosti na web-stranici'
+        'upravljanje ambasadora nedjelje kodiranja, (Code Week), vodećim nastavnicima i registracijom aktivnosti na web-stranici',
     ],
     'data-processors' => [
         'Obrađivač podataka',
-        'GOPA Com. S.A. i EUN Partnerstvo AISBL (European Schoolnet), info@codeweek.eu'
+        'GOPA Com. S.A. i EUN Partnerstvo AISBL (European Schoolnet), info@codeweek.eu',
     ],
     '1-intro' => [
-        'Informacije u vezi sa obradom ličnih podataka za upravljanje ambasadora nedjelje kodiranja, (Code Week), vodećim nastavnicima i registracijom aktivnosti na web- stranici.'
+        'Informacije u vezi sa obradom ličnih podataka za upravljanje ambasadora nedjelje kodiranja, (Code Week), vodećim nastavnicima i registracijom aktivnosti na web- stranici.',
     ],
 
     '3-legal_process' => [
@@ -59,10 +59,10 @@ return [
         'Osim toga, Jedinica G.2 može da podijeli vaše podatke za kontakt sa bilo kojim članom javnosti ili sudionicima koji bi vas trebali kontaktirati u vezi sa nedjeljom kodiranja (Code Week).  Za organizatore aktivnosti, imajte u predvidu da relevantni ambasador za vašu zemlju ili jedinicu G.2 može koristiti lične podatke koje ste dostavili pri registraciju aktivnosti kako bi vas kontaktirali u vezi sa navedenom aktivnošću.',
     ],
     '8-rights' => [
-        'Dali ste saglasnost da svoje lične podatke date jedinici G.2 za trenutnu operaciju obrade. Možete povući svoju saglasnost u bilo kom trenutku tako što ćete obavestiti jedinicu G.2 na adresi CNECT-G2@ec.europa.eu. Povlačenje neće uticati na zakonitost obrade koja je obavljena pre nego što ste povukli saglasnost.'
+        'Dali ste saglasnost da svoje lične podatke date jedinici G.2 za trenutnu operaciju obrade. Možete povući svoju saglasnost u bilo kom trenutku tako što ćete obavestiti jedinicu G.2 na adresi CNECT-G2@ec.europa.eu. Povlačenje neće uticati na zakonitost obrade koja je obavljena pre nego što ste povukli saglasnost.',
     ],
 
     '10-detailed-info' => [
-        'Ova posebna operacija obrade je uključena u javni registar službenika za zaštitu ličnih podataka sa sledećom referencom za obaveštenje: DPR-EC-02631 Upravljanje tačkama za kontakt za DG CONNECT politike, programe i projekte'
-    ]
+        'Ova posebna operacija obrade je uključena u javni registar službenika za zaštitu ličnih podataka sa sledećom referencom za obaveštenje: DPR-EC-02631 Upravljanje tačkama za kontakt za DG CONNECT politike, programe i projekte',
+    ],
 ];

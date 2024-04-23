@@ -44,14 +44,14 @@ class Excellence extends Command
 
         $edition = $this->argument('edition');
 
-        $codeweek4all_codes = ExcellenceWinnersHelper::query(Carbon::now()->year($edition), true)->pluck("codeweek_for_all_participation_code");
+        $codeweek4all_codes = ExcellenceWinnersHelper::query(Carbon::now()->year($edition), true)->pluck('codeweek_for_all_participation_code');
 
         //Select the winners from the Database
         $winners = [];
-        foreach ($codeweek4all_codes as $codeweek4all_code){
-            $creators = Event::whereYear("end_date","=",$edition)->where("status","=","APPROVED")->where("codeweek_for_all_participation_code", "=", $codeweek4all_code)->pluck("creator_id");
-            foreach ($creators as $creator){
-                if(!in_array($creator, $winners)){
+        foreach ($codeweek4all_codes as $codeweek4all_code) {
+            $creators = Event::whereYear('end_date', '=', $edition)->where('status', '=', 'APPROVED')->where('codeweek_for_all_participation_code', '=', $codeweek4all_code)->pluck('creator_id');
+            foreach ($creators as $creator) {
+                if (! in_array($creator, $winners)) {
                     $winners[] = $creator;
                 }
             }
@@ -60,12 +60,11 @@ class Excellence extends Command
         //Create an excellence record for each winner
         foreach ($winners as $user_id) {
             try {
-                create('App\Excellence', ['edition' => $edition, "user_id" => $user_id]);
+                create('App\Excellence', ['edition' => $edition, 'user_id' => $user_id]);
             } catch (\Exception $ex) {
                 Log::info($ex->getMessage());
             }
         }
-
 
     }
 }

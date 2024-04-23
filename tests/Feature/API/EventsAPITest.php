@@ -3,10 +3,7 @@
 namespace Tests\Feature\API;
 
 use Carbon\Carbon;
-use Exception;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Validation\ValidationException;
 use Tests\TestCase;
 
@@ -22,7 +19,7 @@ class EventsAPITest extends TestCase
             [
                 'longitude' => 46.60675,
                 'latitude' => 13.84246,
-                'status' => 'APPROVED'
+                'status' => 'APPROVED',
             ],
             3
         );
@@ -30,20 +27,20 @@ class EventsAPITest extends TestCase
         $badLatitudeEvent = create('App\Event', [
             'longitude' => 9.87985,
             'latitude' => 55.5311,
-            'status' => 'APPROVED'
+            'status' => 'APPROVED',
         ]);
 
         $badLongitudeEvent = create('App\Event', [
             'longitude' => 19.87985,
             'latitude' => 53.5311,
-            'status' => 'APPROVED'
+            'status' => 'APPROVED',
         ]);
 
         $hamburgEvent = create('App\Event', [
             'title' => 'Good Event',
             'longitude' => 9.87985,
             'latitude' => 53.5311,
-            'status' => 'APPROVED'
+            'status' => 'APPROVED',
         ]);
 
         $response = $this->json(
@@ -71,7 +68,7 @@ class EventsAPITest extends TestCase
             'App\Event',
             [
                 'longitude' => 46.60675,
-                'latitude' => 13.84246
+                'latitude' => 13.84246,
             ],
             3
         );
@@ -79,13 +76,13 @@ class EventsAPITest extends TestCase
         $badLatitudeEvent = create('App\Event', [
             'longitude' => 9.87985,
             'latitude' => 55.5311,
-            'status' => 'APPROVED'
+            'status' => 'APPROVED',
         ]);
 
         $badLongitudeEvent = create('App\Event', [
             'longitude' => 19.87985,
             'latitude' => 53.5311,
-            'status' => 'APPROVED'
+            'status' => 'APPROVED',
         ]);
 
         $pastEvent = create('App\Event', [
@@ -93,7 +90,7 @@ class EventsAPITest extends TestCase
             'longitude' => 9.87985,
             'latitude' => 53.5311,
             'status' => 'APPROVED',
-            'end_date' => Carbon::now()->setYear(2020)
+            'end_date' => Carbon::now()->setYear(2020),
         ]);
 
         $goodEvent = create('App\Event', [
@@ -101,7 +98,7 @@ class EventsAPITest extends TestCase
             'longitude' => 9.87985,
             'latitude' => 53.5311,
             'status' => 'APPROVED',
-            'end_date' => Carbon::now()->setYear(2021)
+            'end_date' => Carbon::now()->setYear(2021),
         ]);
 
         $response = $this->json(
@@ -123,7 +120,7 @@ class EventsAPITest extends TestCase
             'longitude' => 9.87985,
             'latitude' => 53.5311,
             'status' => 'APPROVED',
-            'end_date' => Carbon::now()->setYear(2020)
+            'end_date' => Carbon::now()->setYear(2020),
         ]);
 
         $currentYearEvent = create('App\Event', [
@@ -131,7 +128,7 @@ class EventsAPITest extends TestCase
             'longitude' => 9.87985,
             'latitude' => 53.5311,
             'status' => 'APPROVED',
-            'end_date' => Carbon::now()
+            'end_date' => Carbon::now(),
         ]);
 
         $response = $this->json(
@@ -169,7 +166,7 @@ class EventsAPITest extends TestCase
             'title' => 'Pending Event',
             'longitude' => 9.87985,
             'latitude' => 53.5311,
-            'status' => 'PENDING'
+            'status' => 'PENDING',
         ]);
 
         $approvedEvent = create('App\Event', [
@@ -177,7 +174,7 @@ class EventsAPITest extends TestCase
             'longitude' => 9.87985,
             'latitude' => 53.5311,
             'status' => 'APPROVED',
-            'end_date' => Carbon::now()
+            'end_date' => Carbon::now(),
         ]);
 
         $response = $this->json(
@@ -230,14 +227,14 @@ class EventsAPITest extends TestCase
         $frenchEvent = create('App\Event', [
             'country_iso' => 'FR',
             'status' => 'APPROVED',
-            'end_date' => Carbon::now()->setYear(2022)
+            'end_date' => Carbon::now()->setYear(2022),
         ]);
 
         $germanEvent = create('App\Event', [
             'title' => 'Good Event',
             'status' => 'APPROVED',
             'country_iso' => 'DE',
-            'end_date' => Carbon::now()->setYear(2022)
+            'end_date' => Carbon::now()->setYear(2022),
         ]);
 
         $importedGermanEvent = create('App\Event', [
@@ -245,7 +242,7 @@ class EventsAPITest extends TestCase
             'status' => 'APPROVED',
             'country_iso' => 'DE',
             'codeweek_for_all_participation_code' => 'cw22-bonn',
-            'end_date' => Carbon::now()->setYear(2022)
+            'end_date' => Carbon::now()->setYear(2022),
         ]);
 
         $response = $this->json(
@@ -271,7 +268,7 @@ class EventsAPITest extends TestCase
         $event = create('App\Event', [
             'id' => 1456,
             'status' => 'APPROVED',
-            'title' => 'foobar'
+            'title' => 'foobar',
         ]);
 
         $response = $this->getJson('/api/event-detail/1456');
@@ -279,7 +276,4 @@ class EventsAPITest extends TestCase
         $this->assertEquals($response['data']['title'], $event->title);
 
     }
-
-
-
 }

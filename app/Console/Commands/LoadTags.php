@@ -2,7 +2,6 @@
 
 namespace App\Console\Commands;
 
-
 use App\Tag;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
@@ -50,7 +49,6 @@ class LoadTags extends Command
         $old_tags = DB::table('taggit_tag')
             ->select(DB::raw('id, name, slug'))
             ->get();
-
 
         foreach ($old_tags as $old) {
 

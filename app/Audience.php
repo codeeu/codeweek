@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $name
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Audience newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Audience newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Audience query()
@@ -18,6 +19,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Audience whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Audience whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Audience whereUpdatedAt($value)
+ *
  * @mixin \Eloquent
  */
 class Audience extends Model

@@ -39,9 +39,7 @@ class Relocate extends Command
     public function handle()
     {
 
-
-        $misplaced_events = Event::where("geoposition", "=", "0,0")->get();
-
+        $misplaced_events = Event::where('geoposition', '=', '0,0')->get();
 
         $updated = 0;
         foreach ($misplaced_events as $event) {
@@ -52,7 +50,6 @@ class Relocate extends Command
         if ($updated > 0) {
             $this->info("Relocated {$updated} activities!");
         }
-
 
     }
 }

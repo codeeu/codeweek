@@ -13,13 +13,10 @@ class AddSoftdeleteToEvents extends Migration
      */
     public function up()
     {
-        Schema::table('events', function(Blueprint $table)
-        {
+        Schema::table('events', function (Blueprint $table) {
             $table->softDeletes();
         });
     }
-
-
 
     /**
      * Reverse the migrations.
@@ -29,8 +26,7 @@ class AddSoftdeleteToEvents extends Migration
     public function down()
     {
 
-        Schema::table('events', function (Blueprint $table)
-        {
+        Schema::table('events', function (Blueprint $table) {
 
         });
     }

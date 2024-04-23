@@ -23,7 +23,7 @@ return [
     'organize_or_support_events' => 'Organize or support activities in your city',
     'or_contact_your' => 'or contact your',
     'eu_code_week_ambassadors' => 'EU Code Week Ambassadors',
-    'show_events_for'=>'Show activities for ',
+    'show_events_for' => 'Show activities for ',
     'who' => 'Who is the activity for?',
     'tags' => 'Tags',
     'image' => 'Image',
@@ -54,7 +54,7 @@ return [
     ],
     'public' => [
         'label' => 'Public email',
-        'placeholder' => 'Would you like to display a contact email ?'
+        'placeholder' => 'Would you like to display a contact email ?',
 
     ],
     'title' => [
@@ -107,30 +107,30 @@ return [
         'Augmented reality' => 'Augmented reality',
         'Artificial intelligence' => 'Artificial intelligence',
         'Motivation and awareness raising' => 'Motivation and awareness raising',
-        'Promoting diversity' => 'Promoting diversity'
+        'Promoting diversity' => 'Promoting diversity',
     ],
     'codeweek_for_all_participation_code' => [
         'title' => 'CODE WEEK 4 ALL CODE',
         'explanation' => 'If you have received a Code Week 4 all code from a school colleague or a friend paste it here, otherwise please leave it blank. More info about Code Week 4 All are available',
         'link' => 'here',
     ],
-    'thanks_page'=>[
-        'title'=>'Thanks for adding your activity!',
-        'phrase1'=>'One of our local ambassadors will now review your activity',
-        'phrase2'=>'and make sure everything looks ok.',
-        'phrase3'=>'If you have any questions, get in touch with one of our',
-        'phrase4'=>'national ambassadors',
-        'phrase5'=>'or send us an',
-        'phrase6'=>'email',
-        'phrase7'=>'You can share your Codeweek for all code with other people:'
+    'thanks_page' => [
+        'title' => 'Thanks for adding your activity!',
+        'phrase1' => 'One of our local ambassadors will now review your activity',
+        'phrase2' => 'and make sure everything looks ok.',
+        'phrase3' => 'If you have any questions, get in touch with one of our',
+        'phrase4' => 'national ambassadors',
+        'phrase5' => 'or send us an',
+        'phrase6' => 'email',
+        'phrase7' => 'You can share your Codeweek for all code with other people:',
     ],
-    'activity_type'=>[
-        'Event'=>'Activity',
-        'Lesson'=>'Lesson',
-        'Workshop'=>'Workshop',
-        'Webinar'=>'Webinar',
-        'Live Streaming Session'=>'Live Streaming Session',
-        'Other'=>'Other'
+    'activity_type' => [
+        'Event' => 'Activity',
+        'Lesson' => 'Lesson',
+        'Workshop' => 'Workshop',
+        'Webinar' => 'Webinar',
+        'Live Streaming Session' => 'Live Streaming Session',
+        'Other' => 'Other',
     ],
     'activitytype' => [
         'label' => 'Activity Type',
@@ -138,13 +138,13 @@ return [
         'open-online' => 'Open online activity',
         'invite-online' => 'Invite-only online activity',
         'open-in-person' => 'Open in-person activity',
-        'invite-in-person' => 'Invite-only in-person activity'
+        'invite-in-person' => 'Invite-only in-person activity',
 
     ],
 
-    'More'=>'More',
-    'country'=>'Country',
-    'privacy'=>'I have read and agree with the privacy policy terms described in this document.',
+    'More' => 'More',
+    'country' => 'Country',
+    'privacy' => 'I have read and agree with the privacy policy terms described in this document.',
     'loading' => 'Loading...',
     'add_activity' => 'Add activity',
     'edit_activity' => 'Edit activity',
@@ -162,8 +162,6 @@ return [
     'report_and_claim' => 'Report activity and claim certificate',
     'leading_teacher_tag' => 'Leading Teacher',
     'leading_teacher_tag_choose' => 'Choose a Leading Teacher',
-    'last_update' => 'Last update'
-
-
+    'last_update' => 'Last update',
 
 ];

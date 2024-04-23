@@ -3,7 +3,6 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
@@ -12,6 +11,7 @@ class DeletedUsers extends Mailable
     use Queueable, SerializesModels;
 
     public $deletedUsers;
+
     /**
      * Create a new message instance.
      *
@@ -19,7 +19,7 @@ class DeletedUsers extends Mailable
      */
     public function __construct($deletedUsers)
     {
-        $this->deletedUsers=$deletedUsers;
+        $this->deletedUsers = $deletedUsers;
     }
 
     /**

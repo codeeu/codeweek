@@ -2,16 +2,8 @@
 
 namespace App\Console\Commands\api;
 
-
-use App\BadenRSSItem;
 use App\Helpers\ImporterHelper;
 use Illuminate\Console\Command;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\Artisan;
-use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Log;
-
 
 class Germany extends Command
 {
@@ -47,20 +39,15 @@ class Germany extends Command
     public function handle()
     {
 
-        dump("Loading German events");
+        dump('Loading German events');
 
         $germanCities = ImporterHelper::getGermanCities();
 
-        foreach ($germanCities as $city){
+        foreach ($germanCities as $city) {
             $this->call("api:{$city}");
         }
 
-
-
-        dump("Done Loading German events");
-
+        dump('Done Loading German events');
 
     }
-
-
 }

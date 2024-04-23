@@ -16,5 +16,5 @@ return [
     'no_reports' => 'Ni nobenih dogodkov, ki jih je treba prijaviti.',
     'report' => 'Spodaj navedeni dogodki so se začeli ali končali. Vpišite nekaj številk za
     statistične namene za dogodek in pridobite certifikat o udeležbi v tednu programiranja. Prejeli
-    boste po en certifikat za vsak dogodek.'
+    boste po en certifikat za vsak dogodek.',
 ];
