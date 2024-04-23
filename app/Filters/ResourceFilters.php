@@ -39,7 +39,7 @@ class ResourceFilters extends Filters
     protected function searchInput($searchInput): Builder
     {
         if (is_null($searchInput)) {
-            return;
+            return $this->builder;
         }
 
         $result = $this->builder->where(function ($q) use ($searchInput) { // $term is the search term on the query string
@@ -56,7 +56,7 @@ class ResourceFilters extends Filters
     protected function selectedLevels(string $selectedLevels): Builder
     {
         if (count($selectedLevels) == 0) {
-            return;
+            return $this->builder;
         }
         $plucked = collect($selectedLevels)->pluck('id');
 
@@ -73,7 +73,7 @@ class ResourceFilters extends Filters
     protected function selectedTypes(string $selectedTypes): Builder
     {
         if (count($selectedTypes) == 0) {
-            return;
+            return $this->builder;
         }
         $plucked = collect($selectedTypes)->pluck('id');
 
@@ -90,7 +90,7 @@ class ResourceFilters extends Filters
     protected function selectedSubjects(string $selectedSubjects): Builder
     {
         if (count($selectedSubjects) == 0) {
-            return;
+            return $this->builder;
         }
         $plucked = collect($selectedSubjects)->pluck('id');
 
@@ -107,7 +107,7 @@ class ResourceFilters extends Filters
     protected function selectedCategories(string $selectedCategories): Builder
     {
         if (count($selectedCategories) == 0) {
-            return;
+            return $this->builder;
         }
         $plucked = collect($selectedCategories)->pluck('id');
 
@@ -125,7 +125,7 @@ class ResourceFilters extends Filters
     {
 
         if (count($selectedLanguages) == 0) {
-            return;
+            return $this->builder;
         }
         $plucked = collect($selectedLanguages)->pluck('id');
 
@@ -142,7 +142,7 @@ class ResourceFilters extends Filters
     protected function selectedProgrammingLanguages(string $selectedProgrammingLanguages): Builder
     {
         if (count($selectedProgrammingLanguages) == 0) {
-            return;
+            return $this->builder;
         }
         $plucked = collect($selectedProgrammingLanguages)->pluck('id');
 

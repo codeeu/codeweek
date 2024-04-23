@@ -13,7 +13,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Api;
-use App\Http\Controllers\Auth;
+// use App\Http\Controllers\Auth;
 use App\Http\Controllers\BadgesController;
 use App\Http\Controllers\CertificateController;
 use App\Http\Controllers\Codeweek4AllController;
@@ -52,6 +52,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\VolunteerController;
 use App\User;
 use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
