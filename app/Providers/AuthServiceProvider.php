@@ -25,8 +25,6 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->registerPolicies();
-
         Gate::define('report-excellence', function ($user, $edition) {
 
             $excellences = $user->excellences;
