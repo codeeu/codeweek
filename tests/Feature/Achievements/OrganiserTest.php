@@ -14,15 +14,15 @@ class OrganiserTest extends TestCase
     public function user_should_get_reported_events_linked()
     {
 
-        $user = create('App\User');
-        create('App\Event', [
+        $user = create(\App\User::class);
+        create(\App\Event::class, [
             'creator_id' => $user->id,
             'created_at' => Carbon::now()->setYear(2020),
             'status' => 'APPROVED',
             'reported_at' => Carbon::now()->setYear(2020),
         ], 12);
 
-        create('App\Event', [
+        create(\App\Event::class, [
             'creator_id' => $user->id,
             'created_at' => Carbon::now()->setYear(2021),
             'status' => 'APPROVED',

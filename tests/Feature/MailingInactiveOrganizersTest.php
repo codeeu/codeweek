@@ -14,13 +14,13 @@ class MailingInactiveOrganizersTest extends TestCase
     /** @test */
     public function it_should_select_only_inactive_organizers()
     {
-        $active = create('App\User', ['email' => 'active@gmail.com']);
-        $active2 = create('App\User', ['email' => 'active2@gmail.com']);
-        $inactive = create('App\User', ['email' => 'inactive@gmail.com']);
-        $inactive2 = create('App\User', ['email' => 'inactive2@gmail.com']);
+        $active = create(\App\User::class, ['email' => 'active@gmail.com']);
+        $active2 = create(\App\User::class, ['email' => 'active2@gmail.com']);
+        $inactive = create(\App\User::class, ['email' => 'inactive@gmail.com']);
+        $inactive2 = create(\App\User::class, ['email' => 'inactive2@gmail.com']);
 
         create(
-            'App\Event',
+            \App\Event::class,
             [
                 'status' => 'APPROVED',
                 'end_date' => Carbon::now(),
@@ -30,7 +30,7 @@ class MailingInactiveOrganizersTest extends TestCase
         );
 
         create(
-            'App\Event',
+            \App\Event::class,
             [
                 'status' => 'APPROVED',
                 'end_date' => Carbon::now(),
@@ -40,7 +40,7 @@ class MailingInactiveOrganizersTest extends TestCase
         );
 
         create(
-            'App\Event',
+            \App\Event::class,
             [
                 'status' => 'APPROVED',
                 'end_date' => Carbon::now()->subYear(),
@@ -50,7 +50,7 @@ class MailingInactiveOrganizersTest extends TestCase
         );
 
         create(
-            'App\Event',
+            \App\Event::class,
             [
                 'status' => 'APPROVED',
                 'end_date' => Carbon::now()->subYear(),
@@ -60,7 +60,7 @@ class MailingInactiveOrganizersTest extends TestCase
         );
 
         create(
-            'App\Event',
+            \App\Event::class,
             [
                 'status' => 'APPROVED',
                 'end_date' => Carbon::now()->subYears(2),

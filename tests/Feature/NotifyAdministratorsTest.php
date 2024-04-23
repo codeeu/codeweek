@@ -25,19 +25,19 @@ class NotifyAdministratorsTest extends TestCase
     {
         Mail::fake();
         //An event is created and promoted by the administrator
-        create('App\Notification', [], 3);
+        create(\App\Notification::class, [], 3);
 
         //Create two administrators
-        $superadmin = create('App\User');
+        $superadmin = create(\App\User::class);
         $superadmin->assignRole('super admin');
 
-        $superadmin2 = create('App\User');
+        $superadmin2 = create(\App\User::class);
         $superadmin2->assignRole('super admin');
 
-        $activitiesadmin = create('App\User')->assignRole('activities admin');
-        $activitiesadmin2 = create('App\User')->assignRole('activities admin');
-        $activitiesadmin3 = create('App\User')->assignRole('activities admin');
-        $activitiesadmin4 = create('App\User')->assignRole('activities admin');
+        $activitiesadmin = create(\App\User::class)->assignRole('activities admin');
+        $activitiesadmin2 = create(\App\User::class)->assignRole('activities admin');
+        $activitiesadmin3 = create(\App\User::class)->assignRole('activities admin');
+        $activitiesadmin4 = create(\App\User::class)->assignRole('activities admin');
 
         $this->assertEquals(3, Notification::whereNull('sent_at')->count());
 

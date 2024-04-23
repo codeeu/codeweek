@@ -81,38 +81,38 @@ class ResourceItem extends Model
 
     public function levels()
     {
-        return $this->belongsToMany('App\ResourceLevel');
+        return $this->belongsToMany(\App\ResourceLevel::class);
     }
 
     public function types()
     {
-        return $this->belongsToMany('App\ResourceType')->select(['id', 'name', 'position']);
+        return $this->belongsToMany(\App\ResourceType::class)->select(['id', 'name', 'position']);
     }
 
     public function subjects()
     {
-        return $this->belongsToMany('App\ResourceSubject');
+        return $this->belongsToMany(\App\ResourceSubject::class);
     }
 
     public function categories()
     {
-        return $this->belongsToMany('App\ResourceCategory');
+        return $this->belongsToMany(\App\ResourceCategory::class);
     }
 
     public function programmingLanguages()
     {
-        return $this->belongsToMany('App\ResourceProgrammingLanguage', 'res_pl_pivot');
+        return $this->belongsToMany(\App\ResourceProgrammingLanguage::class, 'res_pl_pivot');
     }
 
     public function languages()
     {
-        return $this->belongsToMany('App\ResourceLanguage');
+        return $this->belongsToMany(\App\ResourceLanguage::class);
     }
 
     public function attachTypes(string $typeNames)
     {
 
-        $typesIds = $this->getIdsFromNames($typeNames, '\App\ResourceType');
+        $typesIds = $this->getIdsFromNames($typeNames, \App\ResourceType::class);
 
         $this->types()->attach($typesIds);
     }
@@ -120,7 +120,7 @@ class ResourceItem extends Model
     public function attachCategories(string $categoryNames)
     {
 
-        $categoriesIds = $this->getIdsFromNames($categoryNames, '\App\ResourceCategory');
+        $categoriesIds = $this->getIdsFromNames($categoryNames, \App\ResourceCategory::class);
 
         $this->categories()->attach($categoriesIds);
     }
@@ -131,7 +131,7 @@ class ResourceItem extends Model
         if ($programmingLanguages === 'All targeted programming languagues;') {
             return $this->programmingLanguages()->attach(ResourceProgrammingLanguage::all()->pluck('id')->toArray());
         } else {
-            $this->programmingLanguages()->attach($this->getIdsFromNames($programmingLanguages, '\App\ResourceProgrammingLanguage'));
+            $this->programmingLanguages()->attach($this->getIdsFromNames($programmingLanguages, \App\ResourceProgrammingLanguage::class));
         }
 
     }
@@ -139,13 +139,13 @@ class ResourceItem extends Model
     public function attachLevels(string $levels)
     {
 
-        $this->levels()->attach($this->getIdsFromNames($levels, '\App\ResourceLevel'));
+        $this->levels()->attach($this->getIdsFromNames($levels, \App\ResourceLevel::class));
     }
 
     public function attachSubjects(string $subjects)
     {
 
-        $this->subjects()->attach($this->getIdsFromNames($subjects, '\App\ResourceSubject'));
+        $this->subjects()->attach($this->getIdsFromNames($subjects, \App\ResourceSubject::class));
     }
 
     public function attachLanguages(string $languages)
@@ -155,7 +155,7 @@ class ResourceItem extends Model
             return $this->languages()->attach(ResourceLanguage::all()->pluck('id')->toArray());
         }
 
-        return $this->languages()->attach($this->getIdsFromNames($languages, '\App\ResourceLanguage'));
+        return $this->languages()->attach($this->getIdsFromNames($languages, \App\ResourceLanguage::class));
 
     }
 

@@ -28,7 +28,7 @@ class ResourceType extends Resource
      *
      * @var string
      */
-    public static $model = 'App\ResourceType';
+    public static $model = \App\ResourceType::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

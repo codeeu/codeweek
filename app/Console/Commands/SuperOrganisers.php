@@ -45,7 +45,7 @@ class SuperOrganisers extends Command
 
         foreach ($winners as $user_id) {
             try {
-                create('App\Excellence', ['edition' => $edition, 'user_id' => $user_id, 'type' => 'SuperOrganiser']);
+                create(\App\Excellence::class, ['edition' => $edition, 'user_id' => $user_id, 'type' => 'SuperOrganiser']);
             } catch (\Exception $ex) {
                 Log::info($ex->getMessage());
             }

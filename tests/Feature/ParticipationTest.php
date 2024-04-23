@@ -21,10 +21,10 @@ class ParticipationTest extends TestCase
     public function user_can_have_a_certificate_of_participation()
     {
 
-        $user = create('App\User');
+        $user = create(\App\User::class);
 
-        create('App\Participation', ['user_id' => $user->id]);
-        create('App\Participation', ['user_id' => $user->id]);
+        create(\App\Participation::class, ['user_id' => $user->id]);
+        create(\App\Participation::class, ['user_id' => $user->id]);
 
         $this->assertCount(2, $user->participations);
 
@@ -34,10 +34,10 @@ class ParticipationTest extends TestCase
     public function user_should_be_allowed_to_download_certificate()
     {
 
-        $user = create('App\User');
+        $user = create(\App\User::class);
         $this->signIn($user);
 
-        $participation = create('App\Participation', ['user_id' => $user->id]);
+        $participation = create(\App\Participation::class, ['user_id' => $user->id]);
 
         $this->get(route('certificates'))->assertSee($participation->participation_url);
 
@@ -47,11 +47,11 @@ class ParticipationTest extends TestCase
     public function user_should_only_see_their_certificates()
     {
 
-        $user = create('App\User');
+        $user = create(\App\User::class);
         $this->signIn($user);
 
-        $participation = create('App\Participation');
-        $myParticipation = create('App\Participation', ['user_id' => $user->id]);
+        $participation = create(\App\Participation::class);
+        $myParticipation = create(\App\Participation::class, ['user_id' => $user->id]);
 
         $this->get(route('certificates'))->assertSee($myParticipation->participation_url);
         $this->get(route('certificates'))->assertDontSee($participation->participation_url);

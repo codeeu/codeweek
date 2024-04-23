@@ -130,37 +130,37 @@ class Event extends Model
 
     public function country()
     {
-        return $this->belongsTo('App\Country', 'country_iso', 'iso');
+        return $this->belongsTo(\App\Country::class, 'country_iso', 'iso');
     }
 
     public function owner()
     {
-        return $this->belongsTo('App\User', 'creator_id');
+        return $this->belongsTo(\App\User::class, 'creator_id');
     }
 
     public function extractedLocation()
     {
-        return $this->belongsTo('App\Location', 'location_id');
+        return $this->belongsTo(\App\Location::class, 'location_id');
     }
 
     public function audiences()
     {
-        return $this->belongsToMany('App\Audience');
+        return $this->belongsToMany(\App\Audience::class);
     }
 
     public function themes()
     {
-        return $this->belongsToMany('App\Theme');
+        return $this->belongsToMany(\App\Theme::class);
     }
 
     public function tags()
     {
-        return $this->belongsToMany('App\Tag')->where('name', '<>', '');
+        return $this->belongsToMany(\App\Tag::class)->where('name', '<>', '');
     }
 
     public function leadingTeacher()
     {
-        return $this->belongsTo('App\User', 'leading_teacher_tag', 'tag');
+        return $this->belongsTo(\App\User::class, 'leading_teacher_tag', 'tag');
     }
 
     public function get_start_date()
@@ -281,7 +281,7 @@ class Event extends Model
 
     public function moderations()
     {
-        return $this->hasMany('App\Moderation');
+        return $this->hasMany(\App\Moderation::class);
     }
 
     public function getLatestModerationAttribute()
@@ -328,7 +328,7 @@ class Event extends Model
 
     public function notification()
     {
-        return $this->hasOne('App\Notification', 'event_id', 'id');
+        return $this->hasOne(\App\Notification::class, 'event_id', 'id');
     }
 
     public function relocate()

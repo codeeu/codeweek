@@ -16,7 +16,7 @@ class Ambassador extends Resource
      *
      * @var string
      */
-    public static $model = 'App\\User';
+    public static $model = \App\User::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

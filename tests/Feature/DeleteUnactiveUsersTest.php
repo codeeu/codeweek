@@ -15,7 +15,7 @@ class DeleteUnactiveUsersTest extends TestCase
     /** @test */
     public function delete_user_unactive_more_than_5_years_ago()
     {
-        $user = create('App\User', ['updated_at' => Carbon::now()->subYear(6)]);
+        $user = create(\App\User::class, ['updated_at' => Carbon::now()->subYear(6)]);
         $this->artisan('delete:unactiveusers');
         $this->assertTrue($user->fresh()->trashed());
     }
@@ -23,7 +23,7 @@ class DeleteUnactiveUsersTest extends TestCase
     /** @test */
     public function delete_user_unactive_5_years_ago()
     {
-        $user = create('App\User', ['updated_at' => Carbon::now()->subYear(5)]);
+        $user = create(\App\User::class, ['updated_at' => Carbon::now()->subYear(5)]);
         $this->artisan('delete:unactiveusers');
         $this->assertTrue($user->fresh()->trashed());
     }
@@ -31,7 +31,7 @@ class DeleteUnactiveUsersTest extends TestCase
     /** @test */
     public function dont_delete_user_active()
     {
-        $user = create('App\User', ['updated_at' => Carbon::now()->subYear(4)]);
+        $user = create(\App\User::class, ['updated_at' => Carbon::now()->subYear(4)]);
         $this->artisan('delete:unactiveusers');
         $this->assertFalse($user->fresh()->trashed());
     }
@@ -39,9 +39,9 @@ class DeleteUnactiveUsersTest extends TestCase
     /** @test */
     public function delete_only_unactive_users()
     {
-        $unactive_user1 = create('App\User', ['updated_at' => Carbon::now()->subYear(6)]);
-        $unactive_user2 = create('App\User', ['updated_at' => Carbon::now()->subYear(5)]);
-        $active_user = create('App\User', ['updated_at' => Carbon::now()]);
+        $unactive_user1 = create(\App\User::class, ['updated_at' => Carbon::now()->subYear(6)]);
+        $unactive_user2 = create(\App\User::class, ['updated_at' => Carbon::now()->subYear(5)]);
+        $active_user = create(\App\User::class, ['updated_at' => Carbon::now()]);
         $this->artisan('delete:unactiveusers');
         $this->assertTrue($unactive_user1->fresh()->trashed());
         $this->assertTrue($unactive_user2->fresh()->trashed());
@@ -51,16 +51,16 @@ class DeleteUnactiveUsersTest extends TestCase
     /** @test */
     public function check_report_unactive_user()
     {
-        $unactive_user1 = create('App\User', ['updated_at' => Carbon::now()->subYear(6)]);
-        $unactive_user2 = create('App\User', ['updated_at' => Carbon::now()->subYear(5)]);
-        $active_user = create('App\User', ['updated_at' => Carbon::now()]);
+        $unactive_user1 = create(\App\User::class, ['updated_at' => Carbon::now()->subYear(6)]);
+        $unactive_user2 = create(\App\User::class, ['updated_at' => Carbon::now()->subYear(5)]);
+        $active_user = create(\App\User::class, ['updated_at' => Carbon::now()]);
         $number_unactive_user = UserHelper::deleteInactiveUsers(5);
         $this->assertEquals(2, $number_unactive_user);
     }
 
     public function mail_to_be_sent()
     {
-        $unactive_user1 = create('App\User', ['updated_at' => Carbon::now()->subYear(6)]);
+        $unactive_user1 = create(\App\User::class, ['updated_at' => Carbon::now()->subYear(6)]);
         $this->artisan('delete:unactiveusers');
         Mail::assertQueued(DeletedUsers::class, 1);
     }

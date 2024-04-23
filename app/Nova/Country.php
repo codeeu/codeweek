@@ -13,7 +13,7 @@ class Country extends Resource
      *
      * @var string
      */
-    public static $model = 'App\Country';
+    public static $model = \App\Country::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

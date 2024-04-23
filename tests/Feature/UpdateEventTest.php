@@ -18,9 +18,9 @@ class UpdateEventTest extends TestCase
         $this->signIn();
         $this->withoutExceptionHandling();
 
-        $event = make('App\Event');
-        create('App\Audience', [], 3);
-        create('App\Theme', [], 3);
+        $event = make(\App\Event::class);
+        create(\App\Audience::class, [], 3);
+        create(\App\Theme::class, [], 3);
 
         $event->theme = '1';
         $event->tags = 'tag:foo,tag:bar';
@@ -57,12 +57,12 @@ class UpdateEventTest extends TestCase
     {
 
         $user = create(\App\User::class);
-        create('App\Audience', [], 3);
-        create('App\Theme', [], 3);
+        create(\App\Audience::class, [], 3);
+        create(\App\Theme::class, [], 3);
 
         $this->signIn($user);
 
-        $event = create('App\Event', ['creator_id' => $user->id, 'status' => 'APPROVED']);
+        $event = create(\App\Event::class, ['creator_id' => $user->id, 'status' => 'APPROVED']);
 
         $event->title = 'Initial Title';
         $event->description = 'Initial description.';
@@ -92,9 +92,9 @@ class UpdateEventTest extends TestCase
 
         $this->signIn();
 
-        $event = make('App\Event', ['creator_id' => auth()->id()]);
-        create('App\Audience', [], 3);
-        create('App\Theme', [], 3);
+        $event = make(\App\Event::class, ['creator_id' => auth()->id()]);
+        create(\App\Audience::class, [], 3);
+        create(\App\Theme::class, [], 3);
 
         $event->theme = '1';
         $event->tags = 'tag:foo,tag:bar';
@@ -103,7 +103,7 @@ class UpdateEventTest extends TestCase
 
         $this->post('/events', $event->toArray());
 
-        $otherUser = create('App\User');
+        $otherUser = create(\App\User::class);
         $this->signIn($otherUser);
 
         $event = Event::where('title', $event->title)->first();

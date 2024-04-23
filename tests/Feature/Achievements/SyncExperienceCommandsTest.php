@@ -19,7 +19,7 @@ class SyncExperienceCommandsTest extends TestCase
 
         $user = factory(User::class)->create()->assignRole('leading teacher');
 
-        create('App\Event', [
+        create(\App\Event::class, [
             'creator_id' => $user->id,
             'created_at' => Carbon::now()->setYear(2021),
             'status' => 'APPROVED',

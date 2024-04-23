@@ -20,7 +20,7 @@ abstract class TestCase extends BaseTestCase
 
     protected function signIn($user = null)
     {
-        $user = $user ?: create('App\User');
+        $user = $user ?: create(\App\User::class);
         $this->actingAs($user);
 
         return $this;
@@ -28,7 +28,7 @@ abstract class TestCase extends BaseTestCase
 
     protected function mockLocale(): void
     {
-        $this->mock('App\Http\Middleware\Locale', function ($mock) {
+        $this->mock(\App\Http\Middleware\Locale::class, function ($mock) {
             $mock->shouldReceive('handle')
                 ->andReturnUsing(function ($request, \Closure $next) {
                     return $next($request);
@@ -40,7 +40,7 @@ abstract class TestCase extends BaseTestCase
     protected function mockBrowserCheck(): void
     {
 
-        $this->mock('App\Http\Middleware\CheckBrowser', function ($mock) {
+        $this->mock(\App\Http\Middleware\CheckBrowser::class, function ($mock) {
             $mock->shouldReceive('handle')
                 ->andReturnUsing(function ($request, \Closure $next) {
                     return $next($request);

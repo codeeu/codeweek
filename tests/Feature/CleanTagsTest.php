@@ -14,15 +14,15 @@ class CleanTagsTest extends TestCase
     /** @test */
     public function duplicates_should_be_removed()
     {
-        $event = create('App\Event', ['country_iso' => create('App\Country')->iso, 'status' => 'APPROVED']);
-        $event2 = create('App\Event', ['country_iso' => create('App\Country')->iso, 'status' => 'APPROVED']);
+        $event = create(\App\Event::class, ['country_iso' => create(\App\Country::class)->iso, 'status' => 'APPROVED']);
+        $event2 = create(\App\Event::class, ['country_iso' => create(\App\Country::class)->iso, 'status' => 'APPROVED']);
 
-        $single = create('App\Tag', ['name' => 'single']);
+        $single = create(\App\Tag::class, ['name' => 'single']);
 
-        $tag = create('App\Tag', ['name' => 'foo']);
-        $tag2 = create('App\Tag', ['name' => 'foo']);
-        $tag3 = create('App\Tag', ['name' => 'bar']);
-        $tag4 = create('App\Tag', ['name' => 'bar']);
+        $tag = create(\App\Tag::class, ['name' => 'foo']);
+        $tag2 = create(\App\Tag::class, ['name' => 'foo']);
+        $tag3 = create(\App\Tag::class, ['name' => 'bar']);
+        $tag4 = create(\App\Tag::class, ['name' => 'bar']);
 
         $event->tags()->save($single);
         $event->tags()->save($tag);
@@ -67,9 +67,9 @@ class CleanTagsTest extends TestCase
 
     public function createEvent()
     {
-        $event = make('App\Event');
-        create('App\Audience', [], 3);
-        create('App\Theme', [], 3);
+        $event = make(\App\Event::class);
+        create(\App\Audience::class, [], 3);
+        create(\App\Theme::class, [], 3);
 
         $event->theme = '1';
         $event->tags = 'tag:foo';

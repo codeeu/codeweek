@@ -17,10 +17,10 @@ $factory->define(Location::class, function (Faker $faker) {
         'is_default' => $faker->boolean,
         'is_primary' => $faker->boolean,
         'user_id' => function () {
-            return factory('App\User')->create()->id;
+            return factory(\App\User::class)->create()->id;
         },
         'event_id' => function () {
-            return factory('App\Event')->create()->id;
+            return factory(\App\Event::class)->create()->id;
         },
 
     ];

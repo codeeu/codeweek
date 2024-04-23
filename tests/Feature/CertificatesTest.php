@@ -17,21 +17,21 @@ class CertificatesTest extends TestCase
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
-        $this->event = create('App\Event', [
-            'country_iso' => create('App\Country')->iso,
+        $this->event = create(\App\Event::class, [
+            'country_iso' => create(\App\Country::class)->iso,
             'status' => 'APPROVED',
         ]);
 
-        $this->event->audiences()->saveMany(factory('App\Audience', 3)->make());
-        $this->event->themes()->saveMany(factory('App\Theme', 3)->make());
-        $this->event->tags()->saveMany(factory('App\Tag', 3)->make());
+        $this->event->audiences()->saveMany(factory(\App\Audience::class, 3)->make());
+        $this->event->themes()->saveMany(factory(\App\Theme::class, 3)->make());
+        $this->event->tags()->saveMany(factory(\App\Tag::class, 3)->make());
     }
 
     /** @test */
     public function it_should_get_reported_events_without_certificate_url()
     {
-        $faultyCertificates = create('App\Event', ['status' => 'APPROVED', 'reported_at' => Carbon::now(), 'approved_by' => 100, 'certificate_url' => null], 10);
-        $withCertificates = create('App\Event', ['status' => 'APPROVED', 'reported_at' => Carbon::now(), 'approved_by' => 100, 'certificate_url' => 'foobar'], 5);
+        $faultyCertificates = create(\App\Event::class, ['status' => 'APPROVED', 'reported_at' => Carbon::now(), 'approved_by' => 100, 'certificate_url' => null], 10);
+        $withCertificates = create(\App\Event::class, ['status' => 'APPROVED', 'reported_at' => Carbon::now(), 'approved_by' => 100, 'certificate_url' => 'foobar'], 5);
 
         $events = EventHelper::getReportedEventsWithoutCertificates();
 

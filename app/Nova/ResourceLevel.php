@@ -28,7 +28,7 @@ class ResourceLevel extends Resource
      *
      * @var string
      */
-    public static $model = 'App\ResourceLevel';
+    public static $model = \App\ResourceLevel::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

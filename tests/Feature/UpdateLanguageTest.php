@@ -14,7 +14,7 @@ class UpdateLanguageTest extends TestCase
     public function it_should_change_the_language_for_meet_and_code()
     {
         // Create Event with event_url from meet and code
-        $myEvent = create('App\Event', ['event_url' => 'https://meet-and-code.org/hu/hu/event-show/3959', 'country_iso' => 'HU', 'language' => null]);
+        $myEvent = create(\App\Event::class, ['event_url' => 'https://meet-and-code.org/hu/hu/event-show/3959', 'country_iso' => 'HU', 'language' => null]);
         // Call the updater
         $this->artisan('meetandcode:languages');
 
@@ -26,7 +26,7 @@ class UpdateLanguageTest extends TestCase
     public function it_should_not_change_the_language_for_meet_and_code_with_languages_set()
     {
         // Create Event with event_url from meet and code
-        $myEvent = create('App\Event', ['event_url' => 'https://meet-and-code.org/hu/hu/event-show/3959', 'language' => 'bar']);
+        $myEvent = create(\App\Event::class, ['event_url' => 'https://meet-and-code.org/hu/hu/event-show/3959', 'language' => 'bar']);
         // Call the updater
         $this->artisan('meetandcode:languages');
 

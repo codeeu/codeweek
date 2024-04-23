@@ -37,7 +37,7 @@ class AdminController extends Controller
         $results = [];
         //For each person, we will generate a certificate.
         foreach ($trimmed as $name) {
-            $event = make('App\Event', [
+            $event = make(\App\Event::class, [
                 'id' => 0,
                 'name_for_certificate' => $name,
             ]);

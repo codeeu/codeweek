@@ -29,16 +29,16 @@ class DatabaseMigrationUserTest extends TestCase
         //$this->withExceptionHandling();
 
         //Given we have two or more user records with the same email
-        create('App\User', ['email' => 'foobar'], 2);
-        create('App\User', ['email' => 'someone_else']);
+        create(\App\User::class, ['email' => 'foobar'], 2);
+        create(\App\User::class, ['email' => 'someone_else']);
 
         $users = User::all();
         $this->assertCount(3, $users);
 
         //With events bound to each user
-        create('App\Event', ['creator_id' => $users[0]->id]);
-        create('App\Event', ['creator_id' => $users[1]->id], 2);
-        create('App\Event', ['creator_id' => $users[2]->id], 3);
+        create(\App\Event::class, ['creator_id' => $users[0]->id]);
+        create(\App\Event::class, ['creator_id' => $users[1]->id], 2);
+        create(\App\Event::class, ['creator_id' => $users[2]->id], 3);
 
         $events = Event::all();
         $this->assertCount(6, $events);
@@ -63,8 +63,8 @@ class DatabaseMigrationUserTest extends TestCase
 
         $this->seed('RolesAndPermissionsSeeder');
 
-        $admin_only = create('App\User', ['email' => 'foo'])->assignRole('ambassador');
-        $admin_ambassador = create('App\User', ['email' => 'foo'])->assignRole('super admin')->assignRole('ambassador');
+        $admin_only = create(\App\User::class, ['email' => 'foo'])->assignRole('ambassador');
+        $admin_ambassador = create(\App\User::class, ['email' => 'foo'])->assignRole('super admin')->assignRole('ambassador');
 
         $main_user = UserController::getMainAccount('foo');
 
@@ -80,8 +80,8 @@ class DatabaseMigrationUserTest extends TestCase
 
         $this->seed('RolesAndPermissionsSeeder');
 
-        $no_role = create('App\User', ['email' => 'foo'], 3);
-        $ambassador = create('App\User', ['email' => 'foo'])->assignRole('ambassador');
+        $no_role = create(\App\User::class, ['email' => 'foo'], 3);
+        $ambassador = create(\App\User::class, ['email' => 'foo'])->assignRole('ambassador');
 
         $main_user = UserController::getMainAccount('foo');
 
@@ -97,8 +97,8 @@ class DatabaseMigrationUserTest extends TestCase
 
         $this->seed('RolesAndPermissionsSeeder');
 
-        $ambassador1 = create('App\User', ['email' => 'foo', 'twitter' => ''])->assignRole('ambassador');
-        $ambassador2 = create('App\User', ['email' => 'foo'])->assignRole('ambassador');
+        $ambassador1 = create(\App\User::class, ['email' => 'foo', 'twitter' => ''])->assignRole('ambassador');
+        $ambassador2 = create(\App\User::class, ['email' => 'foo'])->assignRole('ambassador');
 
         $main_user = UserController::getMainAccount('foo');
 

@@ -33,11 +33,11 @@ class Tag extends Model
 
     public function events()
     {
-        return $this->belongsToMany('App\Event');
+        return $this->belongsToMany(\App\Event::class);
     }
 
     public function users()
     {
-        return $this->belongsToMany('App\User');
+        return $this->belongsToMany(\App\User::class);
     }
 }

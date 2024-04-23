@@ -48,7 +48,7 @@ class LoadAdmins extends Command
         foreach ($old_admins as $old) {
 
             DB::table('model_has_roles')->insert(
-                ['role_id' => 5, 'model_type' => 'App\User', 'model_id' => $old->id]
+                ['role_id' => 5, 'model_type' => \App\User::class, 'model_id' => $old->id]
             );
 
         }

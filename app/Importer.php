@@ -47,6 +47,6 @@ class Importer extends Model
 
     public function event()
     {
-        return $this->hasOne('App\Event', 'id', 'event_id');
+        return $this->hasOne(\App\Event::class, 'id', 'event_id');
     }
 }

@@ -22,15 +22,15 @@ class NotifyExcellenceWinnersTest extends TestCase
 
         // We create two users
 
-        $userA = create('App\User');
-        $userB = create('App\User');
-        $userC = create('App\User');
+        $userA = create(\App\User::class);
+        $userB = create(\App\User::class);
+        $userC = create(\App\User::class);
 
         // A winner and a loser for specific edition
-        create('App\Excellence', ['edition' => 2018, 'user_id' => $userA->id]);
-        create('App\Excellence', ['edition' => 2019, 'user_id' => $userA->id]);
-        create('App\Excellence', ['edition' => 2019, 'user_id' => $userB->id]);
-        create('App\Excellence', ['edition' => 2019, 'user_id' => $userC->id, 'notified_at' => Carbon::now()]);
+        create(\App\Excellence::class, ['edition' => 2018, 'user_id' => $userA->id]);
+        create(\App\Excellence::class, ['edition' => 2019, 'user_id' => $userA->id]);
+        create(\App\Excellence::class, ['edition' => 2019, 'user_id' => $userB->id]);
+        create(\App\Excellence::class, ['edition' => 2019, 'user_id' => $userC->id, 'notified_at' => Carbon::now()]);
 
         // We send the email
         $this->artisan('notify:winners', ['edition' => 2019]);
@@ -49,10 +49,10 @@ class NotifyExcellenceWinnersTest extends TestCase
 
         // We create two users
 
-        $userA = create('App\User', ['deleted_at' => Carbon::now()]);
+        $userA = create(\App\User::class, ['deleted_at' => Carbon::now()]);
 
         // A winner and a loser for specific edition
-        create('App\Excellence', ['edition' => 2018, 'user_id' => $userA->id]);
+        create(\App\Excellence::class, ['edition' => 2018, 'user_id' => $userA->id]);
 
         // We send the email
         $this->artisan('notify:winners', ['edition' => 2018]);
@@ -72,10 +72,10 @@ class NotifyExcellenceWinnersTest extends TestCase
 
         // We create two users
 
-        $userA = create('App\User', ['receive_emails' => 0]);
+        $userA = create(\App\User::class, ['receive_emails' => 0]);
 
         // A winner and a loser for specific edition
-        create('App\Excellence', ['edition' => 2018, 'user_id' => $userA->id]);
+        create(\App\Excellence::class, ['edition' => 2018, 'user_id' => $userA->id]);
 
         // We send the email
         $this->artisan('notify:winners', ['edition' => 2018]);

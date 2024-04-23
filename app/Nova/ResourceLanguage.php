@@ -28,7 +28,7 @@ class ResourceLanguage extends Resource
      *
      * @var string
      */
-    public static $model = 'App\ResourceLanguage';
+    public static $model = \App\ResourceLanguage::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

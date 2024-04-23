@@ -18,14 +18,14 @@ class SuperOrganisersTest extends TestCase
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
-        $user1 = create('App\User');
-        $user2 = create('App\User');
-        $user3 = create('App\User');
+        $user1 = create(\App\User::class);
+        $user2 = create(\App\User::class);
+        $user3 = create(\App\User::class);
 
-        create('App\Event', ['creator_id' => $user1->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()], 22);
-        create('App\Event', ['creator_id' => $user1->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subYear()], 28);
-        create('App\Event', ['creator_id' => $user2->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()], 8);
-        create('App\Event', ['creator_id' => $user3->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()], 33);
+        create(\App\Event::class, ['creator_id' => $user1->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()], 22);
+        create(\App\Event::class, ['creator_id' => $user1->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()->subYear()], 28);
+        create(\App\Event::class, ['creator_id' => $user2->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()], 8);
+        create(\App\Event::class, ['creator_id' => $user3->id, 'status' => 'APPROVED', 'end_date' => Carbon::now()], 33);
 
     }
 
@@ -48,16 +48,16 @@ class SuperOrganisersTest extends TestCase
 
         // We create two users
 
-        $userA = create('App\User');
-        $userB = create('App\User');
-        $userC = create('App\User');
+        $userA = create(\App\User::class);
+        $userB = create(\App\User::class);
+        $userC = create(\App\User::class);
 
         // A winner and a loser for specific edition
-        create('App\Excellence', ['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'Excellence']);
-        create('App\Excellence', ['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'SuperOrganiser']);
-        create('App\Excellence', ['edition' => Carbon::now()->subYear()->year, 'user_id' => $userA->id, 'type' => 'SuperOrganiser']);
-        create('App\Excellence', ['edition' => Carbon::now()->year, 'user_id' => $userB->id, 'type' => 'SuperOrganiser']);
-        create('App\Excellence', ['edition' => Carbon::now()->year, 'user_id' => $userC->id, 'type' => 'SuperOrganiser', 'notified_at' => \Carbon\Carbon::now()]);
+        create(\App\Excellence::class, ['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'Excellence']);
+        create(\App\Excellence::class, ['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'SuperOrganiser']);
+        create(\App\Excellence::class, ['edition' => Carbon::now()->subYear()->year, 'user_id' => $userA->id, 'type' => 'SuperOrganiser']);
+        create(\App\Excellence::class, ['edition' => Carbon::now()->year, 'user_id' => $userB->id, 'type' => 'SuperOrganiser']);
+        create(\App\Excellence::class, ['edition' => Carbon::now()->year, 'user_id' => $userC->id, 'type' => 'SuperOrganiser', 'notified_at' => \Carbon\Carbon::now()]);
 
         // We send the email
         $this->artisan('notify:superorganisers', ['edition' => Carbon::now()->year]);
@@ -84,11 +84,11 @@ class SuperOrganisersTest extends TestCase
 
         // We create the user
 
-        $userA = create('App\User');
+        $userA = create(\App\User::class);
 
         // A winner and a loser for specific edition
-        create('App\Excellence', ['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'SuperOrganiser']);
-        create('App\Excellence', ['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'Excellence']);
+        create(\App\Excellence::class, ['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'SuperOrganiser']);
+        create(\App\Excellence::class, ['edition' => Carbon::now()->year, 'user_id' => $userA->id, 'type' => 'Excellence']);
 
         $this->assertCount(1, $userA->superOrganisers->whereNull('notified_at'));
         $this->assertCount(1, $userA->excellences->whereNull('notified_at'));

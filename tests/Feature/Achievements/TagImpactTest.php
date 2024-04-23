@@ -21,9 +21,9 @@ class TagImpactTest extends TestCase
 
         $user = auth()->user();
 
-        $LT1 = create('App\User', ['tag' => 'foo-TEST123-bar']);
+        $LT1 = create(\App\User::class, ['tag' => 'foo-TEST123-bar']);
 
-        $fifty_events = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null, 'leading_teacher_tag' => 'foo-TEST123-bar'], 50);
+        $fifty_events = create(\App\Event::class, ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null, 'leading_teacher_tag' => 'foo-TEST123-bar'], 50);
 
         $this->assertCount(0, $user->achievements);
 
@@ -51,9 +51,9 @@ class TagImpactTest extends TestCase
 
         $user = auth()->user();
 
-        $LT1 = create('App\User', ['tag' => 'foo-TEST123-bar']);
+        $LT1 = create(\App\User::class, ['tag' => 'foo-TEST123-bar']);
 
-        $ten_events = create('App\Event', ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null, 'leading_teacher_tag' => 'foo-TEST123-bar'], 5);
+        $ten_events = create(\App\Event::class, ['status' => 'PENDING', 'creator_id' => $user->id, 'reported_at' => null, 'leading_teacher_tag' => 'foo-TEST123-bar'], 5);
 
         $this->assertCount(0, $user->achievements);
 

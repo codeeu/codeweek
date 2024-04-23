@@ -16,7 +16,7 @@ class VolunteerTest extends TestCase
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
 
-        $this->admin = create('App\User')->assignRole('super admin');
+        $this->admin = create(\App\User::class)->assignRole('super admin');
 
     }
 
@@ -44,7 +44,7 @@ class VolunteerTest extends TestCase
 
         $this->signIn($this->admin);
 
-        $volunteer = create('App\Volunteer');
+        $volunteer = create(\App\Volunteer::class);
 
         $this->get('/volunteers')->assertSee($volunteer->user->lastname);
 
@@ -56,7 +56,7 @@ class VolunteerTest extends TestCase
 
         $this->signIn($this->admin);
 
-        $volunteer = create('App\Volunteer');
+        $volunteer = create(\App\Volunteer::class);
 
         $this->assertFalse($volunteer->user->hasRole('ambassador'));
 
@@ -73,7 +73,7 @@ class VolunteerTest extends TestCase
 
         $this->signIn($this->admin);
 
-        $volunteer = create('App\Volunteer');
+        $volunteer = create(\App\Volunteer::class);
 
         $this->assertFalse($volunteer->user->hasRole('ambassador'));
 

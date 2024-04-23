@@ -32,9 +32,9 @@ class CreateEventTest extends TestCase
 
         $this->expectException(AuthenticationException::class);
 
-        $event = make('App\Event');
-        create('App\Audience', [], 3);
-        create('App\Theme', [], 3);
+        $event = make(\App\Event::class);
+        create(\App\Audience::class, [], 3);
+        create(\App\Theme::class, [], 3);
 
         $event->theme = '1';
         $event->tags = 'tag:foo,tag:bar';
@@ -54,9 +54,9 @@ class CreateEventTest extends TestCase
         $this->withoutExceptionHandling();
         $this->signIn();
 
-        $event = make('App\Event');
-        create('App\Audience', [], 3);
-        create('App\Theme', [], 3);
+        $event = make(\App\Event::class);
+        create(\App\Audience::class, [], 3);
+        create(\App\Theme::class, [], 3);
 
         $event->theme = '1';
         $event->tags = 'tag:foo,tag:bar';
@@ -86,9 +86,9 @@ class CreateEventTest extends TestCase
         $this->expectException(ValidationException::class);
         $this->expectExceptionMessage('The audience is invalid');
 
-        $event = make('App\Event');
-        create('App\Audience', [], 3);
-        create('App\Theme', [], 3);
+        $event = make(\App\Event::class);
+        create(\App\Audience::class, [], 3);
+        create(\App\Theme::class, [], 3);
 
         $event->theme = '1';
         $event->tags = 'tag:foo,tag:bar';
@@ -111,9 +111,9 @@ class CreateEventTest extends TestCase
         $this->expectException(ValidationException::class);
         $this->expectExceptionMessage('The theme is invalid');
 
-        $event = make('App\Event');
-        create('App\Audience', [], 3);
-        create('App\Theme', [], 3);
+        $event = make(\App\Event::class);
+        create(\App\Audience::class, [], 3);
+        create(\App\Theme::class, [], 3);
 
         $event->theme = '111';
         $event->tags = 'tag:foo,tag:bar';
@@ -136,9 +136,9 @@ class CreateEventTest extends TestCase
         $this->expectException(ValidationException::class);
         $this->expectExceptionMessage('The selected language is invalid');
 
-        $event = make('App\Event');
-        create('App\Audience', [], 3);
-        create('App\Theme', [], 3);
+        $event = make(\App\Event::class);
+        create(\App\Audience::class, [], 3);
+        create(\App\Theme::class, [], 3);
 
         $event->theme = '111';
         $event->tags = 'tag:foo,tag:bar';
@@ -158,9 +158,9 @@ class CreateEventTest extends TestCase
         $this->withoutExceptionHandling();
         $this->signIn();
 
-        $event = make('App\Event');
-        create('App\Audience', [], 3);
-        create('App\Theme', [], 3);
+        $event = make(\App\Event::class);
+        create(\App\Audience::class, [], 3);
+        create(\App\Theme::class, [], 3);
 
         $event->theme = '1';
         $event->tags = 'tag:foo,tag:bar';
@@ -180,9 +180,9 @@ class CreateEventTest extends TestCase
     {
         $this->signIn();
 
-        $event = make('App\Event');
-        create('App\Audience', [], 3);
-        create('App\Theme', [], 3);
+        $event = make(\App\Event::class);
+        create(\App\Audience::class, [], 3);
+        create(\App\Theme::class, [], 3);
 
         $event->theme = '1';
 
@@ -221,9 +221,9 @@ class CreateEventTest extends TestCase
         $this->withExceptionHandling();
         $this->signIn();
 
-        $event = make('App\Event', ['title' => '-----']);
-        create('App\Audience', [], 3);
-        create('App\Theme', [], 3);
+        $event = make(\App\Event::class, ['title' => '-----']);
+        create(\App\Audience::class, [], 3);
+        create(\App\Theme::class, [], 3);
 
         $event->theme = '1';
 
@@ -244,13 +244,13 @@ class CreateEventTest extends TestCase
 
         Mail::fake();
 
-        $belgium = create('App\Country', ['iso' => 'BE']);
-        create('App\Audience', [], 3);
-        create('App\Theme', [], 3);
+        $belgium = create(\App\Country::class, ['iso' => 'BE']);
+        create(\App\Audience::class, [], 3);
+        create(\App\Theme::class, [], 3);
 
-        $ambassador_be = create('App\User', ['country_iso' => $belgium->iso])->assignRole('ambassador');
+        $ambassador_be = create(\App\User::class, ['country_iso' => $belgium->iso])->assignRole('ambassador');
 
-        $event = make('App\Event');
+        $event = make(\App\Event::class);
 
         $event->country_iso = $belgium->iso;
         $event->theme = '1';
@@ -273,15 +273,15 @@ class CreateEventTest extends TestCase
 
         Mail::fake();
 
-        $belgium = create('App\Country', ['iso' => 'BE']);
-        create('App\Audience', [], 3);
-        create('App\Theme', [], 3);
+        $belgium = create(\App\Country::class, ['iso' => 'BE']);
+        create(\App\Audience::class, [], 3);
+        create(\App\Theme::class, [], 3);
 
-        $ambassador_be = create('App\User', ['country_iso' => $belgium->iso])->assignRole('ambassador');
-        $leading_teacher = create('App\User', ['country_iso' => $belgium->iso, 'tag' => 'my-tag'])->assignRole('leading teacher');
+        $ambassador_be = create(\App\User::class, ['country_iso' => $belgium->iso])->assignRole('ambassador');
+        $leading_teacher = create(\App\User::class, ['country_iso' => $belgium->iso, 'tag' => 'my-tag'])->assignRole('leading teacher');
 
         $this->assertCount(0, $leading_teacher->taggedActivities);
-        $event = make('App\Event');
+        $event = make(\App\Event::class);
 
         $event->country_iso = $belgium->iso;
         $event->theme = '1';
@@ -304,9 +304,9 @@ class CreateEventTest extends TestCase
         $this->withoutExceptionHandling();
         $this->signIn();
 
-        $event = make('App\Event');
-        create('App\Audience', [], 3);
-        create('App\Theme', [], 3);
+        $event = make(\App\Event::class);
+        create(\App\Audience::class, [], 3);
+        create(\App\Theme::class, [], 3);
 
         $event->theme = '1';
         $event->tags = 'tag:foo,tag:bar';
@@ -329,7 +329,7 @@ class CreateEventTest extends TestCase
     public function publishEvent($overrides = [])
     {
         $this->withExceptionHandling()->signIn();
-        $event = make('App\Event', $overrides);
+        $event = make(\App\Event::class, $overrides);
 
         return $this->post('/events', $event->toArray());
 

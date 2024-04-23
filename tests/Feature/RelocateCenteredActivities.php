@@ -15,15 +15,15 @@ class RelocateCenteredActivities extends TestCase
     /** @test */
     public function it_should_filter_centered_and_non_relocated_events()
     {
-        $france = create('App\Country', [
+        $france = create(\App\Country::class, [
             'iso' => 'FR',
             'longitude' => 2.824354,
             'latitude' => 46.980252,
         ]);
 
-        $this->signIn(create('App\User'));
+        $this->signIn(create(\App\User::class));
 
-        $goodPosition = create('App\Event', [
+        $goodPosition = create(\App\Event::class, [
             'country_iso' => 'FR',
             'geoposition' => '46.980252,2.824354',
             'title' => 'foobar is love',
@@ -31,7 +31,7 @@ class RelocateCenteredActivities extends TestCase
             'latitude' => 46.980252,
         ]);
 
-        $relocated = create('App\Event', [
+        $relocated = create(\App\Event::class, [
             'country_iso' => 'FR',
             'geoposition' => '46.980252,2.824354',
             'longitude' => 2.824354,
@@ -39,7 +39,7 @@ class RelocateCenteredActivities extends TestCase
             'relocated' => true,
         ]);
 
-        $elsewhere = create('App\Event', [
+        $elsewhere = create(\App\Event::class, [
             'country_iso' => 'FR',
             'geoposition' => '47.980252,3.824354',
             'longitude' => 3.824354,
@@ -47,7 +47,7 @@ class RelocateCenteredActivities extends TestCase
             'relocated' => false,
         ]);
 
-        $online = create('App\Event', [
+        $online = create(\App\Event::class, [
             'country_iso' => 'FR',
             'geoposition' => '47.980252,3.824354',
             'longitude' => 2.824354,

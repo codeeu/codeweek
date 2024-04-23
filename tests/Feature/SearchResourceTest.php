@@ -16,8 +16,8 @@ class SearchResourceTest extends TestCase
     public function setup(): void
     {
         parent::setUp();
-        $this->item = create('App\ResourceItem');
-        $this->item2 = create('App\ResourceItem');
+        $this->item = create(\App\ResourceItem::class);
+        $this->item2 = create(\App\ResourceItem::class);
 
     }
 
@@ -33,8 +33,8 @@ class SearchResourceTest extends TestCase
     /** @test */
     public function user_can_display_teach_resources()
     {
-        $teachItem = create('App\ResourceItem', ['teach' => 1, 'learn' => 0]);
-        $learnItem = create('App\ResourceItem', ['teach' => 0, 'learn' => 1]);
+        $teachItem = create(\App\ResourceItem::class, ['teach' => 1, 'learn' => 0]);
+        $learnItem = create(\App\ResourceItem::class, ['teach' => 0, 'learn' => 1]);
 
         $this->post('/resources/search', ['selectedSection' => 'teach'])
             ->assertSee($teachItem->name)
@@ -56,8 +56,8 @@ class SearchResourceTest extends TestCase
     public function a_user_can_search_resource_by_name()
     {
 
-        $item = create('App\ResourceItem', ['name' => 'foobar']);
-        $item2 = create('App\ResourceItem', ['name' => 'rrrghrgrhrgh']);
+        $item = create(\App\ResourceItem::class, ['name' => 'foobar']);
+        $item2 = create(\App\ResourceItem::class, ['name' => 'rrrghrgrhrgh']);
 
         $this->post('/resources/search', ['searchInput' => 'foo'])
             ->assertSee($item->name)
@@ -68,8 +68,8 @@ class SearchResourceTest extends TestCase
     /** @test */
     public function a_user_can_search_resource_by_levels()
     {
-        $level = create('App\ResourceLevel', ['id' => 1]);
-        $level2 = create('App\ResourceLevel');
+        $level = create(\App\ResourceLevel::class, ['id' => 1]);
+        $level2 = create(\App\ResourceLevel::class);
 
         $this->item->levels()->attach($level);
         $this->item2->levels()->attach($level2);
@@ -85,8 +85,8 @@ class SearchResourceTest extends TestCase
     /** @test */
     public function a_user_can_search_resource_by_types()
     {
-        $type = create('App\ResourceType', ['id' => 1]);
-        $type2 = create('App\ResourceType');
+        $type = create(\App\ResourceType::class, ['id' => 1]);
+        $type2 = create(\App\ResourceType::class);
 
         $this->item->types()->attach($type);
         $this->item2->types()->attach($type2);
@@ -103,8 +103,8 @@ class SearchResourceTest extends TestCase
     public function a_user_can_search_resource_by_subject()
     {
 
-        $subject = create('App\ResourceSubject', ['id' => 1]);
-        $subject2 = create('App\ResourceSubject');
+        $subject = create(\App\ResourceSubject::class, ['id' => 1]);
+        $subject2 = create(\App\ResourceSubject::class);
 
         $this->item->subjects()->attach($subject);
         $this->item2->subjects()->attach($subject2);
@@ -121,8 +121,8 @@ class SearchResourceTest extends TestCase
     public function a_user_can_search_resource_by_category()
     {
 
-        $category = create('App\ResourceCategory', ['id' => 1]);
-        $category2 = create('App\ResourceCategory');
+        $category = create(\App\ResourceCategory::class, ['id' => 1]);
+        $category2 = create(\App\ResourceCategory::class);
 
         $this->item->categories()->attach($category);
         $this->item2->categories()->attach($category2);
@@ -139,8 +139,8 @@ class SearchResourceTest extends TestCase
     public function a_user_can_search_resource_by_languages()
     {
 
-        $language = create('App\ResourceLanguage', ['id' => 1]);
-        $language2 = create('App\ResourceLanguage');
+        $language = create(\App\ResourceLanguage::class, ['id' => 1]);
+        $language2 = create(\App\ResourceLanguage::class);
 
         $this->item->languages()->attach($language);
         $this->item2->languages()->attach($language2);
@@ -157,8 +157,8 @@ class SearchResourceTest extends TestCase
     public function a_user_can_search_resource_by_programming_languages()
     {
 
-        $programmingLanguage = create('App\ResourceProgrammingLanguage', ['id' => 1]);
-        $programmingLanguage2 = create('App\ResourceProgrammingLanguage');
+        $programmingLanguage = create(\App\ResourceProgrammingLanguage::class, ['id' => 1]);
+        $programmingLanguage2 = create(\App\ResourceProgrammingLanguage::class);
 
         $this->item->programmingLanguages()->attach($programmingLanguage);
         $this->item2->programmingLanguages()->attach($programmingLanguage2);
@@ -175,10 +175,10 @@ class SearchResourceTest extends TestCase
     public function a_user_can_search_resource_by_types_and_language()
     {
 
-        $type = create('App\ResourceType', ['id' => 1]);
-        $type2 = create('App\ResourceType');
-        $language = create('App\ResourceLanguage', ['id' => 1]);
-        $language2 = create('App\ResourceLanguage');
+        $type = create(\App\ResourceType::class, ['id' => 1]);
+        $type2 = create(\App\ResourceType::class);
+        $language = create(\App\ResourceLanguage::class, ['id' => 1]);
+        $language2 = create(\App\ResourceLanguage::class);
 
         $this->item->types()->attach($type);
         $this->item2->types()->attach($type);
@@ -197,9 +197,9 @@ class SearchResourceTest extends TestCase
     /** @test */
     public function no_duplicates_allowed()
     {
-        $type = create('App\ResourceType', ['id' => 1]);
-        $type2 = create('App\ResourceType');
-        $type3 = create('App\ResourceType');
+        $type = create(\App\ResourceType::class, ['id' => 1]);
+        $type2 = create(\App\ResourceType::class);
+        $type3 = create(\App\ResourceType::class);
 
         $this->item->types()->attach($type);
         $this->item->types()->attach($type2);

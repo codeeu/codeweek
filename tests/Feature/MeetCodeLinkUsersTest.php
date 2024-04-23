@@ -20,13 +20,13 @@ class MeetCodeLinkUsersTest extends TestCase
     public function it_should_link_activity_to_user()
     {
         //We got a user
-        $user = create('App\User');
-        $user2 = create('App\User');
+        $user = create(\App\User::class);
+        $user2 = create(\App\User::class);
         $technicalUser = ImporterHelper::getTechnicalUser('meetandcode-technical');
 
         //We got activity imported from Meet&Code
-        create('App\Event', ['creator_id' => $technicalUser->id, 'user_email' => $user->email, 'event_url' => 'https://meet-and-code.org/1'], 3);
-        create('App\Event', ['creator_id' => $technicalUser->id, 'user_email' => $user2->email, 'event_url' => 'https://meet-and-code.org/2'], 2);
+        create(\App\Event::class, ['creator_id' => $technicalUser->id, 'user_email' => $user->email, 'event_url' => 'https://meet-and-code.org/1'], 3);
+        create(\App\Event::class, ['creator_id' => $technicalUser->id, 'user_email' => $user2->email, 'event_url' => 'https://meet-and-code.org/2'], 2);
 
         $this->assertCount(5, $technicalUser->events);
         $this->assertCount(0, $user->events);

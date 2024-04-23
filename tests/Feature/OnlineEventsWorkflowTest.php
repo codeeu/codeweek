@@ -35,15 +35,15 @@ class OnlineEventsWorkflowTest extends TestCase
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-        $ambassador = create('App\User');
+        $ambassador = create(\App\User::class);
         $ambassador->assignRole('ambassador');
 
         $this->signIn($ambassador);
 
-        $onlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
-        $pastOnlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->subMonth(), 'end_date' => Carbon::now()->subDay(), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
-        $onlineEventInAnotherCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => 'foobar', 'status' => 'APPROVED', 'activity_type' => 'open-online']);
-        $offlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'offline']);
+        $onlineEventInCountry = create(\App\Event::class, ['start_date' => Carbon::now()->addDay(), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+        $pastOnlineEventInCountry = create(\App\Event::class, ['start_date' => Carbon::now()->subMonth(), 'end_date' => Carbon::now()->subDay(), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+        $onlineEventInAnotherCountry = create(\App\Event::class, ['start_date' => Carbon::now()->addDay(), 'country_iso' => 'foobar', 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+        $offlineEventInCountry = create(\App\Event::class, ['start_date' => Carbon::now()->addDay(), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'offline']);
 
         $response = $this->get('/online/list')
             ->assertSee($onlineEventInCountry->title)
@@ -65,14 +65,14 @@ class OnlineEventsWorkflowTest extends TestCase
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-        $ambassador = create('App\User');
+        $ambassador = create(\App\User::class);
         $ambassador->assignRole('ambassador');
 
         $this->signIn($ambassador);
 
-        $onlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->subDays(15), 'end_date' => Carbon::now()->addMonths(2), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
-        $tooOldOnlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->subDays(45), 'end_date' => Carbon::now()->addMonths(2), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
-        $pastEventInCountry = create('App\Event', ['start_date' => Carbon::now()->subDays(10), 'end_date' => Carbon::now()->subDays(10), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+        $onlineEventInCountry = create(\App\Event::class, ['start_date' => Carbon::now()->subDays(15), 'end_date' => Carbon::now()->addMonths(2), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+        $tooOldOnlineEventInCountry = create(\App\Event::class, ['start_date' => Carbon::now()->subDays(45), 'end_date' => Carbon::now()->addMonths(2), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+        $pastEventInCountry = create(\App\Event::class, ['start_date' => Carbon::now()->subDays(10), 'end_date' => Carbon::now()->subDays(10), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
 
         $response = $this->get('/online/list')
             ->assertSee($onlineEventInCountry->title)
@@ -89,18 +89,18 @@ class OnlineEventsWorkflowTest extends TestCase
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-        $superadmin = create('App\User');
+        $superadmin = create(\App\User::class);
         $superadmin->assignRole('super admin');
 
         $this->signIn($superadmin);
 
-        $belgium = create('App\Country', ['iso' => 'BE']);
-        $france = create('App\Country', ['iso' => 'FR']);
+        $belgium = create(\App\Country::class, ['iso' => 'BE']);
+        $france = create(\App\Country::class, ['iso' => 'FR']);
 
-        $onlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => $belgium->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
-        $PendingOnlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => $belgium->iso, 'status' => 'PENDING', 'activity_type' => 'open-online']);
-        $onlineEventInAnotherCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => $france->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
-        $offlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => $belgium->iso, 'status' => 'APPROVED', 'activity_type' => 'offline']);
+        $onlineEventInCountry = create(\App\Event::class, ['start_date' => Carbon::now()->addDay(), 'country_iso' => $belgium->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+        $PendingOnlineEventInCountry = create(\App\Event::class, ['start_date' => Carbon::now()->addDay(), 'country_iso' => $belgium->iso, 'status' => 'PENDING', 'activity_type' => 'open-online']);
+        $onlineEventInAnotherCountry = create(\App\Event::class, ['start_date' => Carbon::now()->addDay(), 'country_iso' => $france->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+        $offlineEventInCountry = create(\App\Event::class, ['start_date' => Carbon::now()->addDay(), 'country_iso' => $belgium->iso, 'status' => 'APPROVED', 'activity_type' => 'offline']);
 
         $response = $this->get('/online/list')
             ->assertSee($onlineEventInCountry->title)
@@ -115,12 +115,12 @@ class OnlineEventsWorkflowTest extends TestCase
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-        $ambassador = create('App\User');
+        $ambassador = create(\App\User::class);
         $ambassador->assignRole('ambassador');
 
         $this->signIn($ambassador);
 
-        $onlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+        $onlineEventInCountry = create(\App\Event::class, ['start_date' => Carbon::now()->addDay(), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
 
         $onlineEventInCountry->promote();
 
@@ -133,11 +133,11 @@ class OnlineEventsWorkflowTest extends TestCase
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-        $user = create('App\User');
+        $user = create(\App\User::class);
 
         $this->signIn($user);
 
-        $onlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => $user->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+        $onlineEventInCountry = create(\App\Event::class, ['start_date' => Carbon::now()->addDay(), 'country_iso' => $user->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
 
         $onlineEventInCountry->promote();
 
@@ -150,12 +150,12 @@ class OnlineEventsWorkflowTest extends TestCase
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-        $ambassador = create('App\User');
+        $ambassador = create(\App\User::class);
         $ambassador->assignRole('ambassador');
 
         $this->signIn($ambassador);
 
-        $onlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+        $onlineEventInCountry = create(\App\Event::class, ['start_date' => Carbon::now()->addDay(), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
 
         $onlineEventInCountry->feature();
 
@@ -168,12 +168,12 @@ class OnlineEventsWorkflowTest extends TestCase
     {
         $this->seed('RolesAndPermissionsSeeder');
 
-        $ambassador = create('App\User');
+        $ambassador = create(\App\User::class);
         $ambassador->assignRole('ambassador');
 
         $this->signIn($ambassador);
 
-        $onlineEventInCountry = create('App\Event', ['start_date' => Carbon::now()->addDay(), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
+        $onlineEventInCountry = create(\App\Event::class, ['start_date' => Carbon::now()->addDay(), 'country_iso' => $ambassador->country->iso, 'status' => 'APPROVED', 'activity_type' => 'open-online']);
         $this->assertDatabaseCount('notifications', 0);
 
         $onlineEventInCountry->promote();

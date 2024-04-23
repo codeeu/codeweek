@@ -14,14 +14,14 @@ class MailingActiveOrganizersTest extends TestCase
     /** @test */
     public function it_should_select_only_active_organizers()
     {
-        $active = create('App\User', ['email' => 'active@gmail.com', 'magic_key' => 131313]);
-        $active2 = create('App\User', ['email' => 'active2@gmail.com', 'magic_key' => 252525]);
-        $inactive = create('App\User', ['email' => 'inactive@gmail.com']);
-        $inactive2 = create('App\User', ['email' => 'inactive2@gmail.com', 'receive_emails' => false]);
-        $deleted = create('App\User', ['email' => 'deleted@gmail.com', 'deleted_at' => now()]);
+        $active = create(\App\User::class, ['email' => 'active@gmail.com', 'magic_key' => 131313]);
+        $active2 = create(\App\User::class, ['email' => 'active2@gmail.com', 'magic_key' => 252525]);
+        $inactive = create(\App\User::class, ['email' => 'inactive@gmail.com']);
+        $inactive2 = create(\App\User::class, ['email' => 'inactive2@gmail.com', 'receive_emails' => false]);
+        $deleted = create(\App\User::class, ['email' => 'deleted@gmail.com', 'deleted_at' => now()]);
 
         create(
-            'App\Event',
+            \App\Event::class,
             [
                 'status' => 'APPROVED',
                 'end_date' => Carbon::now(),
@@ -31,7 +31,7 @@ class MailingActiveOrganizersTest extends TestCase
         );
 
         create(
-            'App\Event',
+            \App\Event::class,
             [
                 'status' => 'APPROVED',
                 'end_date' => Carbon::now(),
@@ -41,7 +41,7 @@ class MailingActiveOrganizersTest extends TestCase
         );
 
         create(
-            'App\Event',
+            \App\Event::class,
             [
                 'status' => 'APPROVED',
                 'end_date' => Carbon::now()->subYear(),
@@ -51,7 +51,7 @@ class MailingActiveOrganizersTest extends TestCase
         );
 
         create(
-            'App\Event',
+            \App\Event::class,
             [
                 'status' => 'REJECTED',
                 'creator_id' => $inactive->id,
@@ -60,7 +60,7 @@ class MailingActiveOrganizersTest extends TestCase
         );
 
         create(
-            'App\Event',
+            \App\Event::class,
             [
                 'status' => 'APPROVED',
                 'creator_id' => $inactive2->id,
@@ -69,7 +69,7 @@ class MailingActiveOrganizersTest extends TestCase
         );
 
         create(
-            'App\Event',
+            \App\Event::class,
             [
                 'status' => 'APPROVED',
                 'creator_id' => $deleted->id,
