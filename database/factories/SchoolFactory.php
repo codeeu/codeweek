@@ -7,10 +7,10 @@ $factory->define(App\School::class, function (Faker $faker) {
     $countries = Country::all()->pluck('iso')->toArray();
 
     return [
-        'name' => $faker->company,
+        'name' => $faker->company(),
         'description' => $faker->text(200),
-        'geoposition' => $faker->longitude.','.$faker->latitude,
-        'location' => $faker->address,
+        'geoposition' => $faker->longitude().','.$faker->latitude(),
+        'location' => $faker->address(),
         'country' => $faker->randomElement($countries),
 
     ];

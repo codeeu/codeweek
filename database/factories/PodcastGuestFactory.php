@@ -22,8 +22,8 @@ class PodcastGuestFactory extends Factory
             },
             'image_path' => $this->faker->url(),
             'position' => $this->faker->numberBetween(1, 1000),
-            'name' => $this->faker->name,
-            'description' => $this->faker->text,
+            'name' => $this->faker->name(),
+            'description' => $this->faker->text(),
         ];
     }
 }

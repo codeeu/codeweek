@@ -7,8 +7,8 @@ use Faker\Generator as Faker;
 
 $factory->define(Vote::class, function (Faker $faker) {
     return [
-        'country' => $faker->country,
+        'country' => $faker->country(),
         'choice' => $faker->sentence(),
-        'session' => $faker->uuid,
+        'session' => $faker->uuid(),
     ];
 });

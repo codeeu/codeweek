@@ -12,10 +12,10 @@ $factory->define(Location::class, function (Faker $faker) {
         'trimmed_geoposition' => $faker->randomFloat().','.$faker->randomFloat(),
         'latitude' => $faker->randomFloat(),
         'longitude' => $faker->randomFloat(),
-        'location' => $faker->address,
+        'location' => $faker->address(),
         'country_iso' => $faker->randomElement(['BE', 'FR', 'DE', 'NL']),
-        'is_default' => $faker->boolean,
-        'is_primary' => $faker->boolean,
+        'is_default' => $faker->boolean(),
+        'is_primary' => $faker->boolean(),
         'user_id' => function () {
             return factory(\App\User::class)->create()->id;
         },
