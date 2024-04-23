@@ -25,7 +25,7 @@ class LeadingTeacherTest extends TestCase
     }
 
     /** @test */
-    public function Leading_teacher_should_be_able_to_access_report_page()
+    public function Leading_teacher_should_be_able_to_access_report_page(): void
     {
 
         $this->get(route('LT.report'))->assertStatus(403);
@@ -36,7 +36,7 @@ class LeadingTeacherTest extends TestCase
     }
 
     /** @test */
-    public function should_become_leading_teacher_after_signup_()
+    public function should_become_leading_teacher_after_signup_(): void
     {
 
         $this->get(route('LT.signup'))->assertStatus(302);

@@ -29,7 +29,7 @@ class ExcellenceTest extends TestCase
     }
 
     /** @test */
-    public function user_can_have_a_certificate_of_excellence()
+    public function user_can_have_a_certificate_of_excellence(): void
     {
         $user = create(\App\User::class);
 
@@ -45,7 +45,7 @@ class ExcellenceTest extends TestCase
     }
 
     /** @test */
-    public function user_can_have_a_super_organiser_certificate()
+    public function user_can_have_a_super_organiser_certificate(): void
     {
         $user = create(\App\User::class);
 
@@ -61,7 +61,7 @@ class ExcellenceTest extends TestCase
     }
 
     /** @test */
-    public function should_get_all_users_with_excellence_for_specific_edition()
+    public function should_get_all_users_with_excellence_for_specific_edition(): void
     {
         create(\App\Excellence::class, ['edition' => 2018], 10);
         create(\App\Excellence::class, ['edition' => 2019], 20);
@@ -72,7 +72,7 @@ class ExcellenceTest extends TestCase
     }
 
     /** @test */
-    public function user_should_not_have_excellence()
+    public function user_should_not_have_excellence(): void
     {
         $user = create(\App\User::class);
 
@@ -88,7 +88,7 @@ class ExcellenceTest extends TestCase
     }
 
     /** @test */
-    public function winner_can_report_for_Excellence()
+    public function winner_can_report_for_Excellence(): void
     {
         $user = create(\App\User::class);
         create(\App\Excellence::class, ['edition' => 2019, 'user_id' => $user->id]);
@@ -99,7 +99,7 @@ class ExcellenceTest extends TestCase
     }
 
     /** @test */
-    public function winner_can_report_for_super_organiser()
+    public function winner_can_report_for_super_organiser(): void
     {
         $user = create(\App\User::class);
         create(\App\Excellence::class, [
@@ -114,7 +114,7 @@ class ExcellenceTest extends TestCase
     }
 
     /** @test */
-    public function non_winner_cant_report_for_Excellence()
+    public function non_winner_cant_report_for_Excellence(): void
     {
         $user = create(\App\User::class);
 
@@ -126,7 +126,7 @@ class ExcellenceTest extends TestCase
     }
 
     /** @test */
-    public function non_winner_cant_report_for_super_organiser()
+    public function non_winner_cant_report_for_super_organiser(): void
     {
         $user = create(\App\User::class);
 
@@ -138,7 +138,7 @@ class ExcellenceTest extends TestCase
     }
 
     /** @test */
-    public function excellence_certificates_should_be_visible_on_certificates_page()
+    public function excellence_certificates_should_be_visible_on_certificates_page(): void
     {
         $user = create(\App\User::class);
 
@@ -155,7 +155,7 @@ class ExcellenceTest extends TestCase
     }
 
     /** @test */
-    public function super_organiser_certificates_should_be_visible_on_certificates_page()
+    public function super_organiser_certificates_should_be_visible_on_certificates_page(): void
     {
         $user = create(\App\User::class);
 
@@ -175,7 +175,7 @@ class ExcellenceTest extends TestCase
     }
 
     /** @test */
-    public function excellence_certificates_should_be_visible_on_certificates_page_only_when_reported()
+    public function excellence_certificates_should_be_visible_on_certificates_page_only_when_reported(): void
     {
         $user = create(\App\User::class);
 
@@ -200,7 +200,7 @@ class ExcellenceTest extends TestCase
     }
 
     /** @test */
-    public function super_organiser_certificates_should_be_visible_on_certificates_page_only_when_reported()
+    public function super_organiser_certificates_should_be_visible_on_certificates_page_only_when_reported(): void
     {
         $user = create(\App\User::class);
 

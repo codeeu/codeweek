@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use App\Filters\ResourceFilters;
 use Exception;
 use Illuminate\Database\Eloquent\Model;
@@ -79,32 +80,32 @@ class ResourceItem extends Model
 
     }
 
-    public function levels()
+    public function levels(): BelongsToMany
     {
         return $this->belongsToMany(\App\ResourceLevel::class);
     }
 
-    public function types()
+    public function types(): BelongsToMany
     {
         return $this->belongsToMany(\App\ResourceType::class)->select(['id', 'name', 'position']);
     }
 
-    public function subjects()
+    public function subjects(): BelongsToMany
     {
         return $this->belongsToMany(\App\ResourceSubject::class);
     }
 
-    public function categories()
+    public function categories(): BelongsToMany
     {
         return $this->belongsToMany(\App\ResourceCategory::class);
     }
 
-    public function programmingLanguages()
+    public function programmingLanguages(): BelongsToMany
     {
         return $this->belongsToMany(\App\ResourceProgrammingLanguage::class, 'res_pl_pivot');
     }
 
-    public function languages()
+    public function languages(): BelongsToMany
     {
         return $this->belongsToMany(\App\ResourceLanguage::class);
     }

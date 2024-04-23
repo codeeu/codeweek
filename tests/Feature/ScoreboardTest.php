@@ -11,7 +11,7 @@ class ScoreboardTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function scoreboard_should_show_upcoming_events()
+    public function scoreboard_should_show_upcoming_events(): void
     {
         $belgium = create(\App\Country::class, ['iso' => 'BE', 'name' => 'Belgium']);
         $luxembourg = create(\App\Country::class, ['iso' => 'LU', 'name' => 'Luxembourg']);
@@ -28,7 +28,7 @@ class ScoreboardTest extends TestCase
     }
 
     /** @test */
-    public function scoreboard_should_not_count_dependencies()
+    public function scoreboard_should_not_count_dependencies(): void
     {
         $belgium = create(\App\Country::class, ['iso' => 'BE', 'name' => 'Belgium', 'population' => 1000]);
         $france = create(\App\Country::class, ['iso' => 'FR', 'name' => 'France', 'population' => 1000]);

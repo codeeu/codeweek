@@ -12,7 +12,7 @@ class CleanTagsTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function duplicates_should_be_removed()
+    public function duplicates_should_be_removed(): void
     {
         $event = create(\App\Event::class, ['country_iso' => create(\App\Country::class)->iso, 'status' => 'APPROVED']);
         $event2 = create(\App\Event::class, ['country_iso' => create(\App\Country::class)->iso, 'status' => 'APPROVED']);
@@ -53,7 +53,7 @@ class CleanTagsTest extends TestCase
     }
 
     /** @test */
-    public function tags_should_not_be_duplicated()
+    public function tags_should_not_be_duplicated(): void
     {
         //$this->withoutExceptionHandling();
         $this->signIn();

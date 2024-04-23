@@ -27,7 +27,7 @@ class UserProfileTest extends TestCase
     }
 
     /** @test */
-    public function it_should_display_user_name()
+    public function it_should_display_user_name(): void
     {
 
         $response = $this->get('/badges/user/222');
@@ -37,7 +37,7 @@ class UserProfileTest extends TestCase
     }
 
     /** @test */
-    public function it_should_display_achievements()
+    public function it_should_display_achievements(): void
     {
 
         $this->withoutExceptionHandling();

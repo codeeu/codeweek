@@ -40,7 +40,7 @@ class Muensterland extends Command
      *
      * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::info('Loading Muensterland API Items in Database');
 

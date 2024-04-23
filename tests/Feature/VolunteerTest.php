@@ -21,7 +21,7 @@ class VolunteerTest extends TestCase
     }
 
     /** @test */
-    public function should_create_volunteer()
+    public function should_create_volunteer(): void
     {
 
         $this->withExceptionHandling();
@@ -39,7 +39,7 @@ class VolunteerTest extends TestCase
     }
 
     /** @test */
-    public function should_list_pending_volunteers()
+    public function should_list_pending_volunteers(): void
     {
 
         $this->signIn($this->admin);
@@ -51,7 +51,7 @@ class VolunteerTest extends TestCase
     }
 
     /** @test */
-    public function should_promote_volunteer_to_ambassador()
+    public function should_promote_volunteer_to_ambassador(): void
     {
 
         $this->signIn($this->admin);
@@ -68,7 +68,7 @@ class VolunteerTest extends TestCase
     }
 
     /** @test */
-    public function should_reject_volunteer()
+    public function should_reject_volunteer(): void
     {
 
         $this->signIn($this->admin);

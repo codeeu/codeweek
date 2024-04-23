@@ -23,7 +23,7 @@ class DatabaseMigrationUserTest extends TestCase
     private $france;
 
     /** @test */
-    public function users_with_same_email_should_be_merged()
+    public function users_with_same_email_should_be_merged(): void
     {
 
         //$this->withExceptionHandling();
@@ -58,7 +58,7 @@ class DatabaseMigrationUserTest extends TestCase
     }
 
     /** @test */
-    public function should_get_the_main_user_when_user_has_two_roles()
+    public function should_get_the_main_user_when_user_has_two_roles(): void
     {
 
         $this->seed('RolesAndPermissionsSeeder');
@@ -75,7 +75,7 @@ class DatabaseMigrationUserTest extends TestCase
     }
 
     /** @test */
-    public function should_get_the_main_user_when_user_is_ambassador()
+    public function should_get_the_main_user_when_user_is_ambassador(): void
     {
 
         $this->seed('RolesAndPermissionsSeeder');
@@ -92,7 +92,7 @@ class DatabaseMigrationUserTest extends TestCase
     }
 
     /** @test */
-    public function should_get_the_main_user_when_user_is_ambassador_with_more_data()
+    public function should_get_the_main_user_when_user_is_ambassador_with_more_data(): void
     {
 
         $this->seed('RolesAndPermissionsSeeder');

@@ -47,7 +47,7 @@ class AmbassadorTest extends TestCase
     //    }
 
     /** @test */
-    public function ambassadors_without_bio_and_avatars_should_not_be_displayed()
+    public function ambassadors_without_bio_and_avatars_should_not_be_displayed(): void
     {
 
         $ambassador_without_bio = create(\App\User::class, ['bio' => null, 'avatar_path' => null, 'country_iso' => $this->france->iso])->assignRole('ambassador');
@@ -66,7 +66,7 @@ class AmbassadorTest extends TestCase
     }
 
     /** @test */
-    public function ambassadors_without_picture_should_not_be_displayed()
+    public function ambassadors_without_picture_should_not_be_displayed(): void
     {
 
         $ambassador_without_bio = create(\App\User::class, ['avatar_path' => null, 'country_iso' => $this->france->iso, 'lastname' => 'Lastname that will never appear'])->assignRole('ambassador');
@@ -77,7 +77,7 @@ class AmbassadorTest extends TestCase
     }
 
     /** @test */
-    public function ambassadors_with_picture_should_be_displayed()
+    public function ambassadors_with_picture_should_be_displayed(): void
     {
 
         $ambassador_without_bio = create(\App\User::class, ['avatar_path' => 'something.jpg', 'country_iso' => $this->france->iso])->assignRole('ambassador');
@@ -86,7 +86,7 @@ class AmbassadorTest extends TestCase
     }
 
     /** @test */
-    public function get_ambassadors_for_a_country()
+    public function get_ambassadors_for_a_country(): void
     {
 
         $this->withExceptionHandling();
@@ -98,7 +98,7 @@ class AmbassadorTest extends TestCase
     }
 
     /** @test */
-    public function display_email_should_be_used_if_present()
+    public function display_email_should_be_used_if_present(): void
     {
 
         $ambassador = create(\App\User::class, ['country_iso' => $this->belgium->iso, 'email_display' => 'foo@bar.com'])->assignRole('ambassador');
@@ -112,7 +112,7 @@ class AmbassadorTest extends TestCase
     }
 
     /** @test */
-    public function signedin_users_should_see_their_community_page()
+    public function signedin_users_should_see_their_community_page(): void
     {
 
         $this->signIn($this->ambassador_be);
@@ -125,7 +125,7 @@ class AmbassadorTest extends TestCase
     }
 
     /** @test */
-    public function not_logged_users_should_see_their_country_ambassadors_based_on_geoIP()
+    public function not_logged_users_should_see_their_country_ambassadors_based_on_geoIP(): void
     {
         GeoIP::shouldReceive('getClientIP')
             ->once()
@@ -134,7 +134,7 @@ class AmbassadorTest extends TestCase
     }
 
     /** @test */
-    public function ambassador_page_for_a_country_should_display_the_facebook_link()
+    public function ambassador_page_for_a_country_should_display_the_facebook_link(): void
     {
 
         create(\App\Event::class, ['country_iso' => 'BE', 'status' => 'APPROVED']);
@@ -144,7 +144,7 @@ class AmbassadorTest extends TestCase
     }
 
     /** @test */
-    public function info_email_should_be_displayed_in_footer_only_on_community_page()
+    public function info_email_should_be_displayed_in_footer_only_on_community_page(): void
     {
 
         $this->get('/community?country_iso=BE')->assertSee('mailto:info@codeweek.eu');

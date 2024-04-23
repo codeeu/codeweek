@@ -26,7 +26,7 @@ class SyncUsersAchievements extends Command
      *
      * @return int
      */
-    public function handle()
+    public function handle(): int
     {
         User::role('leading teacher')
             ->chunk(100, function ($users, $index) {

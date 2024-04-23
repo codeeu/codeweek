@@ -20,7 +20,7 @@ class RejectEventTest extends TestCase
     }
 
     /** @test */
-    public function event_can_be_rejected_by_admin()
+    public function event_can_be_rejected_by_admin(): void
     {
 
         Mail::fake();
@@ -44,7 +44,7 @@ class RejectEventTest extends TestCase
     }
 
     /** @test */
-    public function email_should_be_sent_to_event_email_when_event_is_rejected()
+    public function email_should_be_sent_to_event_email_when_event_is_rejected(): void
     {
 
         $event = $this->createEvent();
@@ -59,7 +59,7 @@ class RejectEventTest extends TestCase
     }
 
     /** @test */
-    public function rejection_reasons_should_be_recorded()
+    public function rejection_reasons_should_be_recorded(): void
     {
 
         $event = $this->createEvent();
@@ -77,7 +77,7 @@ class RejectEventTest extends TestCase
     }
 
     /** @test */
-    public function latest_rejection_message_should_be_accessible()
+    public function latest_rejection_message_should_be_accessible(): void
     {
 
         $event = $this->createEvent();
@@ -98,7 +98,7 @@ class RejectEventTest extends TestCase
     }
 
     /** @test */
-    public function empty_rejection_should_be_treated()
+    public function empty_rejection_should_be_treated(): void
     {
 
         $event = $this->createEvent();
@@ -111,7 +111,7 @@ class RejectEventTest extends TestCase
     }
 
     /** @test */
-    public function updating_rejected_event_should_set_status_back_to_pending()
+    public function updating_rejected_event_should_set_status_back_to_pending(): void
     {
 
         $eventA = $this->createEvent();

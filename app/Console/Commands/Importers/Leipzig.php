@@ -40,7 +40,7 @@ class Leipzig extends Command
      *
      * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::info('Loading Leipzig API Items in Database');
 

@@ -39,7 +39,7 @@ class NotifyWinners extends Command
      *
      * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
 
         $edition = $this->argument('edition');

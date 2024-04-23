@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use App\Achievements\Events\UserEarnedExperience;
 use Illuminate\Database\Eloquent\Model;
 
@@ -9,7 +10,7 @@ class Experience extends Model
 {
     protected $guarded = [];
 
-    public function user()
+    public function user(): BelongsTo
     {
         return $this->belongsTo(\App\User::class, 'user_id', 'id');
     }

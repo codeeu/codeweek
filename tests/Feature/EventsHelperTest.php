@@ -16,7 +16,7 @@ class EventsHelperTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function it_should_get_upcoming_online_events()
+    public function it_should_get_upcoming_online_events(): void
     {
         //Good ones
         create(\App\Event::class, ['activity_type' => 'open-online', 'status' => 'APPROVED', 'start_date' => Carbon::now()->addDay(), 'highlighted_status' => 'FEATURED']);
@@ -34,7 +34,7 @@ class EventsHelperTest extends TestCase
     }
 
     /** @test */
-    public function it_should_trim_geoposition()
+    public function it_should_trim_geoposition(): void
     {
 
         //Bad ones

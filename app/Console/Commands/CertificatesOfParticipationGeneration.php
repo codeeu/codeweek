@@ -27,7 +27,7 @@ class CertificatesOfParticipationGeneration extends Command
      *
      * @return int
      */
-    public function handle()
+    public function handle(): int
     {
 
         $participations = Participation::whereNull('participation_url')->where('status', '<>', 'ERROR')->orderByDesc('created_at')->get();

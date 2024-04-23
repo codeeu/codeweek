@@ -11,7 +11,7 @@ class ProgrammingLanguageSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
         create(\App\ResourceProgrammingLanguage::class, [
             'id' => 1,

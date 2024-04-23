@@ -38,7 +38,7 @@ class PolishMailing extends Command
      *
      * @return int
      */
-    public function handle()
+    public function handle(): int
     {
         $recipients = MailingHelper::getActiveCreators('PL');
 

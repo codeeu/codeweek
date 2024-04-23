@@ -12,7 +12,7 @@ class TagImpactTest extends TestCase
     use RefreshDatabase;
 
     /** @test */
-    public function tag_impact_badge_should_be_awarded()
+    public function tag_impact_badge_should_be_awarded(): void
     {
 
         $this->signIn();
@@ -42,7 +42,7 @@ class TagImpactTest extends TestCase
     }
 
     /** @test */
-    public function tag_impact_badge_should_be_removed_when_activity_is_rejected()
+    public function tag_impact_badge_should_be_removed_when_activity_is_rejected(): void
     {
 
         $this->signIn();

@@ -26,7 +26,7 @@ class GenerateMagicKey extends Command
      *
      * @return int
      */
-    public function handle()
+    public function handle(): int
     {
         User::where('magic_key', '=', 1)->chunkById(200, function ($users) {
             foreach ($users as $user) {

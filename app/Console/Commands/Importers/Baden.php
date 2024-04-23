@@ -40,7 +40,7 @@ class Baden extends Command
      *
      * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::info('Loading Baden API Items in Database');
 

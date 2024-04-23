@@ -10,7 +10,7 @@ class UserTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function a_user_belongs_to_a_country()
+    public function a_user_belongs_to_a_country(): void
     {
 
         //$this->withExceptionHandling();
@@ -23,7 +23,7 @@ class UserTest extends TestCase
     }
 
     /** @test */
-    public function a_user_should_have_right_avatar_path()
+    public function a_user_should_have_right_avatar_path(): void
     {
 
         $user = create(\App\User::class, ['avatar_path' => 'avatars/foo/bar.png']);
@@ -33,7 +33,7 @@ class UserTest extends TestCase
     }
 
     /** @test */
-    public function a_user_with_null_avatar_should_have_default_avatar()
+    public function a_user_with_null_avatar_should_have_default_avatar(): void
     {
 
         $user = create(\App\User::class, ['avatar_path' => null]);
@@ -43,7 +43,7 @@ class UserTest extends TestCase
     }
 
     /** @test */
-    public function a_user_should_readable_name()
+    public function a_user_should_readable_name(): void
     {
 
         $user = create(\App\User::class, ['firstname' => 'foo', 'lastname' => '', 'username' => '']);
@@ -53,7 +53,7 @@ class UserTest extends TestCase
     }
 
     /** @test */
-    public function a_user_should_readable_name_with_first_and_lastname()
+    public function a_user_should_readable_name_with_first_and_lastname(): void
     {
 
         $user = create(\App\User::class, ['firstname' => 'foo', 'lastname' => 'bar', 'username' => '']);
@@ -63,7 +63,7 @@ class UserTest extends TestCase
     }
 
     /** @test */
-    public function a_user_should_readable_name_with_username()
+    public function a_user_should_readable_name_with_username(): void
     {
 
         $user = create(\App\User::class, ['firstname' => 'foo', 'lastname' => 'bar', 'username' => 'woody']);
@@ -73,7 +73,7 @@ class UserTest extends TestCase
     }
 
     /** @test */
-    public function a_user_should_readable_name_without_personal_info()
+    public function a_user_should_readable_name_without_personal_info(): void
     {
 
         $user = create(\App\User::class, ['firstname' => '', 'lastname' => '', 'username' => '', 'email' => 'foo@bar.com']);
@@ -83,7 +83,7 @@ class UserTest extends TestCase
     }
 
     /** @test */
-    public function a_user_should_be_seen_as_ambassador()
+    public function a_user_should_be_seen_as_ambassador(): void
     {
 
         $this->seed('RolesAndPermissionsSeeder');

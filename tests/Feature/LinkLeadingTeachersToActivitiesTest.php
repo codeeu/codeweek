@@ -12,7 +12,7 @@ class LinkLeadingTeachersToActivitiesTest extends TestCase
     /**
      * @test
      */
-    public function it_should_link_activities_to_LT()
+    public function it_should_link_activities_to_LT(): void
     {
 
         $this->seed('RolesAndPermissionsSeeder');

@@ -12,7 +12,7 @@ class CalendarServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(): void
     {
         //
     }
@@ -22,7 +22,7 @@ class CalendarServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
+    public function register(): void
     {
 
         $this->app->singleton('formatter', function ($app) {

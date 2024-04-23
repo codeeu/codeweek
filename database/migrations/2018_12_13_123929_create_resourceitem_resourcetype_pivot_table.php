@@ -10,7 +10,7 @@ return new class extends Migration
      *
      * @return void
      */
-    public function up()
+    public function up(): void
     {
         Schema::create('resource_item_resource_type', function (Blueprint $table) {
             $table->integer('resource_item_id')->unsigned()->index();
@@ -26,7 +26,7 @@ return new class extends Migration
      *
      * @return void
      */
-    public function down()
+    public function down(): void
     {
         Schema::drop('resource_item_resource_type');
     }

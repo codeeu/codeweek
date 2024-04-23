@@ -36,7 +36,7 @@ class Relocate extends Command
      *
      * @return int
      */
-    public function handle()
+    public function handle(): int
     {
 
         $misplaced_events = Event::where('geoposition', '=', '0,0')->get();

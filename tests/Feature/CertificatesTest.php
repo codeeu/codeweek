@@ -28,7 +28,7 @@ class CertificatesTest extends TestCase
     }
 
     /** @test */
-    public function it_should_get_reported_events_without_certificate_url()
+    public function it_should_get_reported_events_without_certificate_url(): void
     {
         $faultyCertificates = create(\App\Event::class, ['status' => 'APPROVED', 'reported_at' => Carbon::now(), 'approved_by' => 100, 'certificate_url' => null], 10);
         $withCertificates = create(\App\Event::class, ['status' => 'APPROVED', 'reported_at' => Carbon::now(), 'approved_by' => 100, 'certificate_url' => 'foobar'], 5);

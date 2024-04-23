@@ -2,6 +2,10 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use App\Filters\EventFilters;
 use App\Helpers\EventHelper;
 use App\Helpers\ImporterHelper;
@@ -128,37 +132,37 @@ class Event extends Model
         return $this->picture_path();
     }
 
-    public function country()
+    public function country(): BelongsTo
     {
         return $this->belongsTo(\App\Country::class, 'country_iso', 'iso');
     }
 
-    public function owner()
+    public function owner(): BelongsTo
     {
         return $this->belongsTo(\App\User::class, 'creator_id');
     }
 
-    public function extractedLocation()
+    public function extractedLocation(): BelongsTo
     {
         return $this->belongsTo(\App\Location::class, 'location_id');
     }
 
-    public function audiences()
+    public function audiences(): BelongsToMany
     {
         return $this->belongsToMany(\App\Audience::class);
     }
 
-    public function themes()
+    public function themes(): BelongsToMany
     {
         return $this->belongsToMany(\App\Theme::class);
     }
 
-    public function tags()
+    public function tags(): BelongsToMany
     {
         return $this->belongsToMany(\App\Tag::class)->where('name', '<>', '');
     }
 
-    public function leadingTeacher()
+    public function leadingTeacher(): BelongsTo
     {
         return $this->belongsTo(\App\User::class, 'leading_teacher_tag', 'tag');
     }
@@ -279,7 +283,7 @@ class Event extends Model
         return $this->update($data);
     }
 
-    public function moderations()
+    public function moderations(): HasMany
     {
         return $this->hasMany(\App\Moderation::class);
     }
@@ -326,7 +330,7 @@ class Event extends Model
         }
     }
 
-    public function notification()
+    public function notification(): HasOne
     {
         return $this->hasOne(\App\Notification::class, 'event_id', 'id');
     }

@@ -10,7 +10,7 @@ class UnsubscribeTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function should_unsubscribe_user()
+    public function should_unsubscribe_user(): void
     {
         $this->withoutExceptionHandling();
         //Create user
@@ -27,7 +27,7 @@ class UnsubscribeTest extends TestCase
     }
 
     /** @test */
-    public function should_not_unsubscribe_user()
+    public function should_not_unsubscribe_user(): void
     {
         //        $this->withoutExceptionHandling();
         //Create user

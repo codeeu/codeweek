@@ -20,7 +20,7 @@ class SearchEventTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_search_for_all_events()
+    public function a_user_can_search_for_all_events(): void
     {
         $belgium = create(\App\Country::class, ['iso' => 'BE']);
         $france = create(\App\Country::class, ['iso' => 'FR']);
@@ -36,7 +36,7 @@ class SearchEventTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_search_events_by_country()
+    public function a_user_can_search_events_by_country(): void
     {
         $belgium = create(\App\Country::class, ['iso' => 'BE']);
         $france = create(\App\Country::class, ['iso' => 'FR']);
@@ -56,7 +56,7 @@ class SearchEventTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_search_only_this_year_events()
+    public function a_user_can_search_only_this_year_events(): void
     {
         $eventLastYear = create(\App\Event::class, ['start_date' => Carbon::now()->subYear(1), 'end_date' => Carbon::now()->subYear(1), 'status' => 'APPROVED']);
         $eventThisYear = create(\App\Event::class, ['start_date' => new Carbon('today'), 'status' => 'APPROVED']);
@@ -66,7 +66,7 @@ class SearchEventTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_search_previous_years_events()
+    public function a_user_can_search_previous_years_events(): void
     {
         $eventLastYear = create(\App\Event::class, ['start_date' => Carbon::now()->subYear(1), 'end_date' => Carbon::now()->subYear(1), 'status' => 'APPROVED']);
         $eventThisYear = create(\App\Event::class, ['start_date' => new Carbon('today'), 'status' => 'APPROVED']);
@@ -79,7 +79,7 @@ class SearchEventTest extends TestCase
     }
 
     /** @test */
-    public function bug_fix_laravel58()
+    public function bug_fix_laravel58(): void
     {
         $eventLastYear = create(\App\Event::class, ['start_date' => Carbon::now()->subYear(1), 'end_date' => Carbon::now()->subYear(1), 'status' => 'APPROVED']);
         $eventThisYear = create(\App\Event::class, ['start_date' => new Carbon('today'), 'status' => 'APPROVED']);
@@ -92,7 +92,7 @@ class SearchEventTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_search_on_all_events()
+    public function a_user_can_search_on_all_events(): void
     {
         $eventInThePast = create(\App\Event::class, ['end_date' => new Carbon('yesterday'), 'status' => 'APPROVED']);
         $eventInTheFuture = create(\App\Event::class, ['end_date' => new Carbon('tomorrow'), 'status' => 'APPROVED']);
@@ -103,7 +103,7 @@ class SearchEventTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_search_by_query_on_title()
+    public function a_user_can_search_by_query_on_title(): void
     {
 
         $this->withExceptionHandling();
@@ -118,7 +118,7 @@ class SearchEventTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_search_by_query_on_codeweek_4_all_code()
+    public function a_user_can_search_by_query_on_codeweek_4_all_code(): void
     {
 
         $this->withExceptionHandling();
@@ -133,7 +133,7 @@ class SearchEventTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_search_by_theme()
+    public function a_user_can_search_by_theme(): void
     {
 
         create(\App\Theme::class, [], 3);
@@ -162,7 +162,7 @@ class SearchEventTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_search_by_audience()
+    public function a_user_can_search_by_audience(): void
     {
         create(\App\Audience::class, [], 3);
         $eventWithAudience = create(\App\Event::class, ['status' => 'APPROVED']);
@@ -190,7 +190,7 @@ class SearchEventTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_search_by_codeweek_4_all_tag()
+    public function a_user_can_search_by_codeweek_4_all_tag(): void
     {
 
         $good = create(\App\Event::class, ['codeweek_for_all_participation_code' => 'cw22-foobar', 'status' => 'APPROVED']);
@@ -203,7 +203,7 @@ class SearchEventTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_search_by_codeweek_4_all_tag_in_the_tag_field()
+    public function a_user_can_search_by_codeweek_4_all_tag_in_the_tag_field(): void
     {
 
         $good = create(\App\Event::class, ['codeweek_for_all_participation_code' => 'cw22-foobar', 'status' => 'APPROVED']);

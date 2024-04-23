@@ -29,7 +29,7 @@ class CertificatesIssues extends Command
      *
      * @return int
      */
-    public function handle()
+    public function handle(): int
     {
 
         $issues = Participation::whereNull('participation_url')

@@ -12,7 +12,7 @@ class MailingInactiveOrganizersTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function it_should_select_only_inactive_organizers()
+    public function it_should_select_only_inactive_organizers(): void
     {
         $active = create(\App\User::class, ['email' => 'active@gmail.com']);
         $active2 = create(\App\User::class, ['email' => 'active2@gmail.com']);

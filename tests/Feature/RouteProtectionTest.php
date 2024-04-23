@@ -43,7 +43,7 @@ class RouteProtectionTest extends TestCase
     }
 
     /** @test */
-    public function only_admin_can_access_activities()
+    public function only_admin_can_access_activities(): void
     {
 
         $this->withExceptionHandling();
@@ -56,7 +56,7 @@ class RouteProtectionTest extends TestCase
     }
 
     /** @test */
-    public function only_admin_an_ambassadors_can_access_pending_events_list()
+    public function only_admin_an_ambassadors_can_access_pending_events_list(): void
     {
 
         $this->withExceptionHandling();
@@ -69,7 +69,7 @@ class RouteProtectionTest extends TestCase
     }
 
     /** @test */
-    public function only_admin_can_access_pending_events_by_countries()
+    public function only_admin_can_access_pending_events_by_countries(): void
     {
 
         $this->withExceptionHandling();
@@ -84,7 +84,7 @@ class RouteProtectionTest extends TestCase
     }
 
     /** @test */
-    public function only_leading_teacher_can_access_report_form()
+    public function only_leading_teacher_can_access_report_form(): void
     {
 
         $this->withExceptionHandling();

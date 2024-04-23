@@ -34,7 +34,7 @@ class RelocateEvent implements ShouldQueue
      *
      * @return void
      */
-    public function handle()
+    public function handle(): void
     {
         Log::info($this->event->id.' being updated');
         $this->coords = GeolocationHelper::getCoordinates(

@@ -22,7 +22,7 @@ class SearchResourceTest extends TestCase
     }
 
     /** @test */
-    public function type_should_be_seen()
+    public function type_should_be_seen(): void
     {
 
         $this->post('/resources/search', [])
@@ -31,7 +31,7 @@ class SearchResourceTest extends TestCase
     }
 
     /** @test */
-    public function user_can_display_teach_resources()
+    public function user_can_display_teach_resources(): void
     {
         $teachItem = create(\App\ResourceItem::class, ['teach' => 1, 'learn' => 0]);
         $learnItem = create(\App\ResourceItem::class, ['teach' => 0, 'learn' => 1]);
@@ -43,7 +43,7 @@ class SearchResourceTest extends TestCase
     }
 
     /** @test */
-    public function no_filters_should_show_all_resources()
+    public function no_filters_should_show_all_resources(): void
     {
 
         $this->post('/resources/search', [])
@@ -53,7 +53,7 @@ class SearchResourceTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_search_resource_by_name()
+    public function a_user_can_search_resource_by_name(): void
     {
 
         $item = create(\App\ResourceItem::class, ['name' => 'foobar']);
@@ -66,7 +66,7 @@ class SearchResourceTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_search_resource_by_levels()
+    public function a_user_can_search_resource_by_levels(): void
     {
         $level = create(\App\ResourceLevel::class, ['id' => 1]);
         $level2 = create(\App\ResourceLevel::class);
@@ -83,7 +83,7 @@ class SearchResourceTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_search_resource_by_types()
+    public function a_user_can_search_resource_by_types(): void
     {
         $type = create(\App\ResourceType::class, ['id' => 1]);
         $type2 = create(\App\ResourceType::class);
@@ -100,7 +100,7 @@ class SearchResourceTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_search_resource_by_subject()
+    public function a_user_can_search_resource_by_subject(): void
     {
 
         $subject = create(\App\ResourceSubject::class, ['id' => 1]);
@@ -118,7 +118,7 @@ class SearchResourceTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_search_resource_by_category()
+    public function a_user_can_search_resource_by_category(): void
     {
 
         $category = create(\App\ResourceCategory::class, ['id' => 1]);
@@ -136,7 +136,7 @@ class SearchResourceTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_search_resource_by_languages()
+    public function a_user_can_search_resource_by_languages(): void
     {
 
         $language = create(\App\ResourceLanguage::class, ['id' => 1]);
@@ -154,7 +154,7 @@ class SearchResourceTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_search_resource_by_programming_languages()
+    public function a_user_can_search_resource_by_programming_languages(): void
     {
 
         $programmingLanguage = create(\App\ResourceProgrammingLanguage::class, ['id' => 1]);
@@ -172,7 +172,7 @@ class SearchResourceTest extends TestCase
     }
 
     /** @test */
-    public function a_user_can_search_resource_by_types_and_language()
+    public function a_user_can_search_resource_by_types_and_language(): void
     {
 
         $type = create(\App\ResourceType::class, ['id' => 1]);
@@ -195,7 +195,7 @@ class SearchResourceTest extends TestCase
     }
 
     /** @test */
-    public function no_duplicates_allowed()
+    public function no_duplicates_allowed(): void
     {
         $type = create(\App\ResourceType::class, ['id' => 1]);
         $type2 = create(\App\ResourceType::class);

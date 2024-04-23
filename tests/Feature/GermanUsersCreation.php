@@ -12,7 +12,7 @@ class GermanUsersCreation extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function it_should_create_user_and_change_owner()
+    public function it_should_create_user_and_change_owner(): void
     {
 
         $events = create(\App\Event::class, ['user_email' => 'foo@bar.com', 'organizer' => 'ACME', 'codeweek_for_all_participation_code' => 'cw20-baden'], 10);
@@ -31,7 +31,7 @@ class GermanUsersCreation extends TestCase
     }
 
     /** @test */
-    public function it_should_find_user_and_change_owner()
+    public function it_should_find_user_and_change_owner(): void
     {
 
         $user = create(\App\User::class, ['email' => 'foo@bar.com']);

@@ -13,7 +13,7 @@ class EventObserver
      *
      * @return void
      */
-    public function created(Event $event)
+    public function created(Event $event): void
     {
         //
     }
@@ -23,7 +23,7 @@ class EventObserver
      *
      * @return void
      */
-    public function updated(Event $event)
+    public function updated(Event $event): void
     {
 
         if (! is_null($event->reported_at) && is_null($event->getOriginal('reported_at'))) {
@@ -54,7 +54,7 @@ class EventObserver
      *
      * @return void
      */
-    public function deleted(Event $event)
+    public function deleted(Event $event): void
     {
         //
     }
@@ -64,7 +64,7 @@ class EventObserver
      *
      * @return void
      */
-    public function restored(Event $event)
+    public function restored(Event $event): void
     {
         //
     }
@@ -74,7 +74,7 @@ class EventObserver
      *
      * @return void
      */
-    public function forceDeleted(Event $event)
+    public function forceDeleted(Event $event): void
     {
         //
     }

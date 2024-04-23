@@ -27,7 +27,7 @@ class BadgesTest extends TestCase
     }
 
     /** @test */
-    public function only_leading_teachers_can_access_their_badges_page()
+    public function only_leading_teachers_can_access_their_badges_page(): void
     {
 
         $this->signIn();
@@ -39,7 +39,7 @@ class BadgesTest extends TestCase
     }
 
     /** @test */
-    public function only_leading_teachers_admin_can_access_other_badges_pages()
+    public function only_leading_teachers_admin_can_access_other_badges_pages(): void
     {
 
         $this->signIn();
@@ -60,7 +60,7 @@ class BadgesTest extends TestCase
     }
 
     /** @test */
-    public function only_leading_teachers_can_see_my_badges_page()
+    public function only_leading_teachers_can_see_my_badges_page(): void
     {
 
         $this->signIn();

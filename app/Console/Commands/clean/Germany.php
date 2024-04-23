@@ -39,7 +39,7 @@ class Germany extends Command
      *
      * @return int
      */
-    public function handle()
+    public function handle(): int
     {
         $events = Event::whereIn('codeweek_for_all_participation_code', ['cw20-baden', 'cw20-bonn', 'cw20-hamburg'])->get();
 

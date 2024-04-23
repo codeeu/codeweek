@@ -37,7 +37,7 @@ class SuperOrganisers extends Command
      *
      * @return int
      */
-    public function handle()
+    public function handle(): int
     {
         $edition = $this->argument('edition');
 

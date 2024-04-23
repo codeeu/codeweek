@@ -36,7 +36,7 @@ class Geolocation extends Command
      *
      * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
 
         $COUNTRY_LAT_LANG = [

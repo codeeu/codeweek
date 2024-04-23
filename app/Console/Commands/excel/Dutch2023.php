@@ -38,7 +38,7 @@ class Dutch2023 extends Command
      *
      * @return int
      */
-    public function handle()
+    public function handle(): int
     {
         Log::info('Loading 2023 Dutch File');
 

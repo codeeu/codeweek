@@ -12,7 +12,7 @@ class EventsAPITest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function it_should_return_events_in_hamburg()
+    public function it_should_return_events_in_hamburg(): void
     {
         create(
             \App\Event::class,
@@ -62,7 +62,7 @@ class EventsAPITest extends TestCase
     }
 
     /** @test */
-    public function it_should_return_events_geolocalized_for_specific_year()
+    public function it_should_return_events_geolocalized_for_specific_year(): void
     {
         create(
             \App\Event::class,
@@ -113,7 +113,7 @@ class EventsAPITest extends TestCase
     }
 
     /** @test */
-    public function it_should_return_events_geolocalized_for_current_year_by_default()
+    public function it_should_return_events_geolocalized_for_current_year_by_default(): void
     {
         $pastEvent = create(\App\Event::class, [
             'title' => '2020 Event',
@@ -143,7 +143,7 @@ class EventsAPITest extends TestCase
     }
 
     /** @test */
-    public function it_should_not_return_events_with_bad_year()
+    public function it_should_not_return_events_with_bad_year(): void
     {
         $this->withoutExceptionHandling();
         try {
@@ -160,7 +160,7 @@ class EventsAPITest extends TestCase
     }
 
     /** @test */
-    public function it_should_not_return_non_approved_events()
+    public function it_should_not_return_non_approved_events(): void
     {
         $pendingEvent = create(\App\Event::class, [
             'title' => 'Pending Event',
@@ -189,7 +189,7 @@ class EventsAPITest extends TestCase
     }
 
     /** @test */
-    public function it_should_not_return_events_with_latitude_too_wide()
+    public function it_should_not_return_events_with_latitude_too_wide(): void
     {
         $this->withoutExceptionHandling();
 
@@ -205,7 +205,7 @@ class EventsAPITest extends TestCase
     }
 
     /** @test */
-    public function it_should_not_return_events_with_longitude_too_wide()
+    public function it_should_not_return_events_with_longitude_too_wide(): void
     {
         $this->withoutExceptionHandling();
 
@@ -221,7 +221,7 @@ class EventsAPITest extends TestCase
     }
 
     /** @test */
-    public function it_should_return_german_events()
+    public function it_should_return_german_events(): void
     {
 
         $frenchEvent = create(\App\Event::class, [
@@ -262,7 +262,7 @@ class EventsAPITest extends TestCase
     }
 
     /** @test */
-    public function it_should_get_one_event_details()
+    public function it_should_get_one_event_details(): void
     {
 
         $event = create(\App\Event::class, [

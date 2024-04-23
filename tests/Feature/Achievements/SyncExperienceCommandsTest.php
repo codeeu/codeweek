@@ -12,7 +12,7 @@ class SyncExperienceCommandsTest extends TestCase
     use RefreshDatabase;
 
     /** @test */
-    public function leading_teacher_activity_achievement_command()
+    public function leading_teacher_activity_achievement_command(): void
     {
 
         $this->seed('LeadingTeacherRoleSeeder');

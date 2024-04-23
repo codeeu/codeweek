@@ -14,7 +14,7 @@ class NotifyExcellenceWinnersTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function notify_winners_for_specific_edition()
+    public function notify_winners_for_specific_edition(): void
     {
         $this->withExceptionHandling();
 
@@ -41,7 +41,7 @@ class NotifyExcellenceWinnersTest extends TestCase
     }
 
     /** @test */
-    public function deleted_users_should_not_be_notified()
+    public function deleted_users_should_not_be_notified(): void
     {
         $this->withExceptionHandling();
 
@@ -64,7 +64,7 @@ class NotifyExcellenceWinnersTest extends TestCase
     }
 
     /** @test */
-    public function users_that_dont_receive_mails_should_not_be_notified()
+    public function users_that_dont_receive_mails_should_not_be_notified(): void
     {
         $this->withExceptionHandling();
 

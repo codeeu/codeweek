@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Spatie\Feed\Feedable;
@@ -16,12 +17,12 @@ class Podcast extends Model implements Feedable
         'release_date' => 'datetime',
     ];
 
-    public function guests()
+    public function guests(): HasMany
     {
         return $this->hasMany(\App\PodcastGuest::class)->orderBy('position');
     }
 
-    public function resources()
+    public function resources(): HasMany
     {
         return $this->hasMany(\App\PodcastResource::class)->orderBy('position');
     }

@@ -39,7 +39,7 @@ class MeetAndCodeLinkToUsers extends Command
      *
      * @return int
      */
-    public function handle()
+    public function handle(): int
     {
 
         $this->info('The command was successful!');

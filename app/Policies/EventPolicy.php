@@ -49,7 +49,7 @@ class EventPolicy
         return false;
     }
 
-    public function view(User $user, Event $event)
+    public function view(User $user, Event $event): bool
     {
 
         if (! is_null($event->owner)) {
@@ -91,12 +91,12 @@ class EventPolicy
         return false;
     }
 
-    public function update(User $user, Event $event)
+    public function update(User $user, Event $event): bool
     {
         return $this->edit($user, $event);
     }
 
-    public function delete(User $user, Event $event)
+    public function delete(User $user, Event $event): bool
     {
 
         if ($user->hasRole('ambassador')) {

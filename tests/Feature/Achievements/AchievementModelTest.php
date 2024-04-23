@@ -11,7 +11,7 @@ class AchievementModelTest extends TestCase
     use RefreshDatabase;
 
     /** @test */
-    public function it_has_a_name()
+    public function it_has_a_name(): void
     {
         $achievement = create(Achievement::class, ['name' => 'some badge']);
 
@@ -19,7 +19,7 @@ class AchievementModelTest extends TestCase
     }
 
     /** @test */
-    public function it_has_a_description()
+    public function it_has_a_description(): void
     {
         $achievement = create(Achievement::class, ['description' => 'Foobar']);
 
@@ -27,7 +27,7 @@ class AchievementModelTest extends TestCase
     }
 
     /** @test */
-    public function it_has_an_icon()
+    public function it_has_an_icon(): void
     {
         $achievement = create(Achievement::class, ['icon' => 'some-path.svg']);
 

@@ -2,6 +2,10 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use App\Achievements\Achievement;
 use App\Filters\UserFilters;
 use App\Helpers\EventHelper;
@@ -147,7 +151,7 @@ class User extends Authenticatable
 
     }
 
-    public function achievements()
+    public function achievements(): BelongsToMany
     {
         return $this->belongsToMany(Achievement::class, 'user_achievements')->withTimestamps();
     }
@@ -189,57 +193,57 @@ class User extends Authenticatable
         return $this->hasRole('leading teacher admin');
     }
 
-    public function events()
+    public function events(): HasMany
     {
         return $this->hasMany(\App\Event::class, 'creator_id');
     }
 
-    public function schools()
+    public function schools(): BelongsToMany
     {
         return $this->belongsToMany(\App\School::class);
     }
 
-    public function country()
+    public function country(): BelongsTo
     {
         return $this->belongsTo(\App\Country::class, 'country_iso', 'iso');
     }
 
-    public function excellences()
+    public function excellences(): HasMany
     {
         return $this->hasMany(\App\Excellence::class)->where('type', 'Excellence');
     }
 
-    public function superOrganisers()
+    public function superOrganisers(): HasMany
     {
         return $this->hasMany(\App\Excellence::class)->where('type', 'SuperOrganiser');
     }
 
-    public function participations()
+    public function participations(): HasMany
     {
         return $this->hasMany(\App\Participation::class);
     }
 
-    public function expertises()
+    public function expertises(): BelongsToMany
     {
         return $this->belongsToMany(LeadingTeacherExpertise::class, 'leading_teacher_expertise_user', 'user_id', 'lte_id');
     }
 
-    public function levels()
+    public function levels(): BelongsToMany
     {
         return $this->belongsToMany(ResourceLevel::class);
     }
 
-    public function subjects()
+    public function subjects(): BelongsToMany
     {
         return $this->belongsToMany(ResourceSubject::class);
     }
 
-    public function city()
+    public function city(): BelongsTo
     {
         return $this->belongsTo(City::class);
     }
 
-    public function locations()
+    public function locations(): HasMany
     {
         return $this->hasMany(Location::class);
     }
@@ -249,12 +253,12 @@ class User extends Authenticatable
         return $filters->apply($query);
     }
 
-    public function experience()
+    public function experience(): HasOne
     {
         return $this->hasOne(Experience::class, 'user_id', 'id');
     }
 
-    public function actions()
+    public function actions(): HasMany
     {
         return $this->hasMany(LeadingTeacherAction::class);
     }
@@ -492,7 +496,7 @@ class User extends Authenticatable
         $this->update(['current_country' => $country]);
     }
 
-    public function taggedActivities()
+    public function taggedActivities(): HasMany
     {
         return $this->hasMany(\App\Event::class, 'leading_teacher_tag', 'tag');
     }

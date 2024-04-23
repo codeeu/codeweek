@@ -21,7 +21,7 @@ class NotifyAdministratorsTest extends TestCase
     }
 
     /** @test */
-    public function notify_administrators_when_new_events_are_ready_to_be_added_to_the_calendar()
+    public function notify_administrators_when_new_events_are_ready_to_be_added_to_the_calendar(): void
     {
         Mail::fake();
         //An event is created and promoted by the administrator

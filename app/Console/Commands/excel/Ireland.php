@@ -38,7 +38,7 @@ class Ireland extends Command
      *
      * @return int
      */
-    public function handle()
+    public function handle(): int
     {
         Log::info('Loading Irish Excel File');
 

@@ -11,7 +11,7 @@ class UpdateEventTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function event_can_be_updated_by_its_owner()
+    public function event_can_be_updated_by_its_owner(): void
     {
 
         $this->seed('RolesAndPermissionsSeeder');
@@ -53,7 +53,7 @@ class UpdateEventTest extends TestCase
     }
 
     /** @test */
-    public function event_can_be_updated_by_its_owner_when_approved()
+    public function event_can_be_updated_by_its_owner_when_approved(): void
     {
 
         $user = create(\App\User::class);
@@ -87,7 +87,7 @@ class UpdateEventTest extends TestCase
     }
 
     /** @test */
-    public function event_can_not_be_updated_by_visitor()
+    public function event_can_not_be_updated_by_visitor(): void
     {
 
         $this->signIn();

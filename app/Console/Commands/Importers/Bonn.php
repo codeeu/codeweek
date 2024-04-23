@@ -40,7 +40,7 @@ class Bonn extends Command
      *
      * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::info('Loading Bonn API Items in Database');
 

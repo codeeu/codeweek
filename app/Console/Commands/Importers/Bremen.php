@@ -40,7 +40,7 @@ class Bremen extends Command
      *
      * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::info('Loading Bremen API Items in Database');
 

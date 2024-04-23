@@ -38,7 +38,7 @@ class Generic extends Command
      *
      * @return int
      */
-    public function handle()
+    public function handle(): int
     {
         Log::info('Loading Generic Excel');
 

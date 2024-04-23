@@ -13,7 +13,7 @@ class CertificatesIssuesTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function warning_email_should_be_sent_as_certificates_are_not_generated()
+    public function warning_email_should_be_sent_as_certificates_are_not_generated(): void
     {
         Mail::fake();
 
@@ -26,7 +26,7 @@ class CertificatesIssuesTest extends TestCase
     }
 
     /** @test */
-    public function no_warning_email_should_be_sent_as_there_are_no_errors()
+    public function no_warning_email_should_be_sent_as_there_are_no_errors(): void
     {
         Mail::fake();
 
@@ -39,7 +39,7 @@ class CertificatesIssuesTest extends TestCase
     }
 
     /** @test */
-    public function no_warning_email_should_be_sent_as_there_is_pending_creation()
+    public function no_warning_email_should_be_sent_as_there_is_pending_creation(): void
     {
         Mail::fake();
 

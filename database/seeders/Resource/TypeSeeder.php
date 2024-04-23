@@ -11,7 +11,7 @@ class TypeSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
         create(\App\ResourceType::class, [
             'id' => 1,

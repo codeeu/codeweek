@@ -37,7 +37,7 @@ class CleanTags extends Command
      *
      * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::info('Calling Clean Tags');
         TagsHelper::cleanTags();

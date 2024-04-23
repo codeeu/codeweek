@@ -11,7 +11,7 @@ class OldSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
 
         $db = \Config::get('database.connections.mysql.database');

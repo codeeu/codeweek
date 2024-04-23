@@ -45,7 +45,7 @@ class Bremen extends Command
      *
      * @return mixed
      */
-    public function handle()
+    public function handle(): int
     {
 
         $city = 'Bremen';

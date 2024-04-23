@@ -39,7 +39,7 @@ class Hamburg extends Command
      *
      * @return mixed
      */
-    public function handle()
+    public function handle(): void
     {
         Log::info('Loading Hamburg Excel File');
 

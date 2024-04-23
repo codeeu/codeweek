@@ -21,7 +21,7 @@ class MapTest extends TestCase
     private $france;
 
     /** @test */
-    public function get_list_of_approved_upcoming_events()
+    public function get_list_of_approved_upcoming_events(): void
     {
 
         $this->withExceptionHandling();
@@ -37,7 +37,7 @@ class MapTest extends TestCase
     }
 
     /** @test */
-    public function get_list_of_approved_events_for_another_year()
+    public function get_list_of_approved_events_for_another_year(): void
     {
 
         $this->withExceptionHandling();
@@ -53,7 +53,7 @@ class MapTest extends TestCase
     }
 
     /** @test */
-    public function structure_event()
+    public function structure_event(): void
     {
 
         create(\App\Event::class, ['start_date' => Carbon::now(), 'status' => 'APPROVED', 'country_iso' => 'BE'], 7);
@@ -70,7 +70,7 @@ class MapTest extends TestCase
     }
 
     /** @test */
-    public function get_event_detail()
+    public function get_event_detail(): void
     {
 
         $this->withExceptionHandling();

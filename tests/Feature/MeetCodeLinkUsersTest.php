@@ -17,7 +17,7 @@ class MeetCodeLinkUsersTest extends TestCase
      *
      * @test
      */
-    public function it_should_link_activity_to_user()
+    public function it_should_link_activity_to_user(): void
     {
         //We got a user
         $user = create(\App\User::class);
