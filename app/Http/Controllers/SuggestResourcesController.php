@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\View\View;
 use App\Http\Requests\ResourceRequest;
 use App\ResourceItem;
 use App\User;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\View\View;
 
 class SuggestResourcesController extends Controller
 {

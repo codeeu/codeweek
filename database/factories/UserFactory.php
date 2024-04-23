@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Hash;
 use App\Country;
 use Faker\Generator as Faker;
+use Illuminate\Support\Facades\Hash;
 
 /*
 |--------------------------------------------------------------------------

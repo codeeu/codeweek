@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\View\View;
 use App\Queries\ExcellenceQuery;
 use App\Queries\ReportableEventsQuery;
 use App\Queries\SuperOrganiserQuery;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\View\View;
 
 class CertificateController extends Controller
 {

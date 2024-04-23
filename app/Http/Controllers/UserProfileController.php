@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\View\View;
 use App\User;
+use Illuminate\View\View;
 
 class UserProfileController extends Controller
 {

@@ -2,9 +2,9 @@
 
 namespace App\Filters;
 
-use Illuminate\Database\Eloquent\Builder;
 use App\Tag;
 use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 

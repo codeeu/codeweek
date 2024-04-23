@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\View\View;
 use App\Country;
 use App\Helpers\EventHelper;
 use App\Queries\CountriesQuery;
 use App\Queries\OnlineEventsQuery;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class OnlineEventsController extends Controller
 {
