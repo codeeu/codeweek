@@ -28,7 +28,7 @@ class PromoteAmbassador extends Action
      *
      * @return array
      */
-    public function fields()
+    public function fields(): array
     {
         return [];
     }

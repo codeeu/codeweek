@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
@@ -13,7 +14,7 @@ class EventPictureController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function store()
+    public function store(): Response
     {
         request()->validate([
             'picture' => ['required', 'image', 'max:1024'],
@@ -51,7 +52,7 @@ class EventPictureController extends Controller
         );
     }
 
-    public function delete()
+    public function delete(): Response
     {
         //Storage::disk('s3')->delete(auth()->user()->getOriginal('avatar_path'));
 

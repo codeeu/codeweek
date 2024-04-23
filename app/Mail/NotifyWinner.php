@@ -30,7 +30,7 @@ class NotifyWinner extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build(): static
     {
         return $this
             ->subject('[EU Code Week] You are a winner !')

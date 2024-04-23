@@ -23,7 +23,7 @@ class EventCount extends Value
      *
      * @return array
      */
-    public function ranges()
+    public function ranges(): array
     {
         return [
             30 => '30 Days',
@@ -50,7 +50,7 @@ class EventCount extends Value
      *
      * @return string
      */
-    public function uriKey()
+    public function uriKey(): string
     {
         return 'event-count';
     }

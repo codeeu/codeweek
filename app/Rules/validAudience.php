@@ -24,7 +24,7 @@ class validAudience implements Rule
      * @param  mixed  $value
      * @return bool
      */
-    public function passes($attribute, $value)
+    public function passes(string $attribute, $value): bool
     {
         foreach (explode(',', $value) as $audience_id) {
             if (is_null(Audience::firstWhere('id', $audience_id))) {
@@ -40,7 +40,7 @@ class validAudience implements Rule
      *
      * @return string
      */
-    public function message()
+    public function message(): string
     {
         return 'The audience is invalid';
     }

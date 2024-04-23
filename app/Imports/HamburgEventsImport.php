@@ -2,6 +2,7 @@
 
 namespace App\Imports;
 
+use Illuminate\Database\Eloquent\Model;
 use App\Event;
 use App\Tag;
 use Illuminate\Support\Facades\Log;
@@ -21,7 +22,7 @@ class HamburgEventsImport extends DefaultValueBinder implements ToModel, WithCus
     /**
      * @return \Illuminate\Database\Eloquent\Model|null
      */
-    public function model(array $row)
+    public function model(array $row): ?Model
     {
 
         Log::info($row);

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
 use App\Certificate;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -9,7 +10,7 @@ use Spatie\Activitylog\Models\Activity;
 
 class AdminController extends Controller
 {
-    public function activities()
+    public function activities(): View
     {
 
         $activities = Activity::orderBy('id', 'DESC')->paginate(20);
@@ -18,14 +19,14 @@ class AdminController extends Controller
 
     }
 
-    public function certificates()
+    public function certificates(): View
     {
 
         return view('admin.certificates');
 
     }
 
-    public function generateCertificates(Request $request)
+    public function generateCertificates(Request $request): View
     {
 
         $names = $request->get('names');

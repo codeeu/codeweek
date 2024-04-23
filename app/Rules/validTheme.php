@@ -24,7 +24,7 @@ class validTheme implements Rule
      * @param  mixed  $value
      * @return bool
      */
-    public function passes($attribute, $value)
+    public function passes(string $attribute, $value): bool
     {
         foreach (explode(',', $value) as $theme_id) {
             if (is_null(Theme::firstWhere('id', $theme_id))) {
@@ -40,7 +40,7 @@ class validTheme implements Rule
      *
      * @return string
      */
-    public function message()
+    public function message(): string
     {
         return 'The theme is invalid';
     }

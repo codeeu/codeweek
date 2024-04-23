@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 class StaticPageController extends Controller
 {
-    public function index(Request $request)
+    public function index(Request $request): View
     {
 
         $routeName = Route::currentRouteName();
@@ -32,7 +33,7 @@ class StaticPageController extends Controller
 
     }
 
-    public function static(Request $request)
+    public function static(Request $request): View
     {
 
         $routeName = Route::currentRouteName();

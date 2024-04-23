@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
+use Illuminate\Http\RedirectResponse;
 use App\Country;
 use App\Event;
 use App\Helpers\EventHelper;
@@ -27,7 +29,7 @@ class EventController extends Controller
         $this->middleware('auth')->except(['index', 'show', 'my']);
     }
 
-    public function my()
+    public function my(): View
     {
         $events = Event::where('creator_id', '=', Auth::user()->id)
             ->orderBy('created_at', 'desc')
@@ -52,7 +54,7 @@ class EventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index(Request $request): View
     {
         $years = range(Carbon::now()->year, 2014, -1);
 
@@ -113,7 +115,7 @@ class EventController extends Controller
         return view('event.add', compact(['countries', 'themes', 'languages', 'leading_teachers']));
     }
 
-    public function search()
+    public function search(): View
     {
         $events = Event::all();
 
@@ -125,7 +127,7 @@ class EventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function store(EventRequest $request)
+    public function store(EventRequest $request): View
     {
         $user = auth()->user();
 
@@ -168,7 +170,7 @@ class EventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function edit(Event $event)
+    public function edit(Event $event): View
     {
         $this->authorize('edit', $event);
 
@@ -221,7 +223,7 @@ class EventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function update(EventRequest $request, Event $event)
+    public function update(EventRequest $request, Event $event): View
     {
         $this->authorize('edit', $event);
 
@@ -247,7 +249,7 @@ class EventController extends Controller
         $event->approve();
     }
 
-    public function approveAll($country)
+    public function approveAll($country): RedirectResponse
     {
         $object = (object) ['iso' => $country];
 

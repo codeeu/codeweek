@@ -27,7 +27,7 @@ class RemindCreator extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build(): static
     {
         return $this
             ->subject('[EU Code Week] Your feedback and your certificate of recognition')

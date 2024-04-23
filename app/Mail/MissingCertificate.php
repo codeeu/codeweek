@@ -27,7 +27,7 @@ class MissingCertificate extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build(): static
     {
         return $this->subject('Your Code Week Certificate')->markdown(
             'emails.en.missing-certificate'

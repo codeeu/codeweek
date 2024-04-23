@@ -2,6 +2,8 @@
 
 namespace App\Filters;
 
+use Illuminate\Database\Eloquent\Builder;
+
 class UserFilters extends Filters
 {
     /**
@@ -17,7 +19,7 @@ class UserFilters extends Filters
      * @param  string  $country_iso
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    protected function country_iso($country_iso)
+    protected function country_iso(string $country_iso): Builder
     {
         //if ($country_iso== "") return;
         $result = $this->builder->where('country_iso', $country_iso);

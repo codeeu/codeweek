@@ -2,6 +2,7 @@
 
 namespace App\Imports;
 
+use Illuminate\Database\Eloquent\Model;
 use App\Event;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Log;
@@ -23,7 +24,7 @@ class CoderDojoEventsImport extends DefaultValueBinder implements ToModel, WithC
     /**
      * @return \Illuminate\Database\Eloquent\Model|null
      */
-    public function model(array $row)
+    public function model(array $row): ?Model
     {
 
         //        dd($row["start_date"]);

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
+use Illuminate\Http\RedirectResponse;
 use App\CertificateExcellence;
 use App\Queries\SuperOrganiserQuery;
 use Gate;
@@ -9,7 +11,7 @@ use Illuminate\Http\Request;
 
 class SuperOrganiserController extends Controller
 {
-    public function report($edition)
+    public function report($edition): View
     {
 
         // Check if user is a winner for this edition
@@ -23,7 +25,7 @@ class SuperOrganiserController extends Controller
 
     }
 
-    public function generate($edition, Request $request)
+    public function generate($edition, Request $request): RedirectResponse
     {
 
         if (Gate::denies('report-super-organiser', $edition)) {

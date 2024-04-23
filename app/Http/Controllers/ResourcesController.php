@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
 use Illuminate\Http\Request;
 
 class ResourcesController extends Controller
 {
-    public function index(Request $request, $section = 'learn')
+    public function index(Request $request, $section = 'learn'): View
     {
 
         $query = $request->input('q', '');

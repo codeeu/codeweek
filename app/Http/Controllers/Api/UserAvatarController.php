@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 //define("DEFAULT_AVATAR_PATH","avatars/default.png");
 
+use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
@@ -15,7 +16,7 @@ class UserAvatarController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function store()
+    public function store(): Response
     {
         request()->validate([
             'avatar' => ['required', 'image'],
@@ -62,7 +63,7 @@ class UserAvatarController extends Controller
         return response(['path' => Storage::disk('s3')->url($imageName)], 200);
     }
 
-    public function delete()
+    public function delete(): Response
     {
 
         //Storage::disk('s3')->delete(auth()->user()->getOriginal('avatar_path'));

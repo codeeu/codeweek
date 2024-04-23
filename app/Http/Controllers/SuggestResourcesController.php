@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
 use App\Http\Requests\ResourceRequest;
 use App\ResourceItem;
 use App\User;
@@ -9,12 +10,12 @@ use Illuminate\Support\Facades\Mail;
 
 class SuggestResourcesController extends Controller
 {
-    public function get()
+    public function get(): View
     {
         return view('resources.suggest');
     }
 
-    public function store(ResourceRequest $request)
+    public function store(ResourceRequest $request): View
     {
         $request['active'] = false;
         $resourceItem = ResourceItem::create($request->toArray());

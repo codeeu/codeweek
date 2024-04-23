@@ -28,7 +28,7 @@ class RemindAmbassador extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build(): static
     {
         return $this
             ->subject('There are events still pending that need your attention')

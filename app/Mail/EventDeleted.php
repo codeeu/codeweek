@@ -25,7 +25,7 @@ class EventDeleted extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build(): static
     {
         return $this->subject('EU Code Week: Registration Deleted')->markdown(
             'emails.en.event-deleted'

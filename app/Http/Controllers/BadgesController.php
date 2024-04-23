@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -29,7 +30,7 @@ class BadgesController extends Controller
         return $this->buildPage($year, $user);
     }
 
-    public function leaderboard(Request $request)
+    public function leaderboard(Request $request): View
     {
 
         //  $users = User::with('experience')->role('leading teacher')->orderByDesc('experience.points')->paginate(15);

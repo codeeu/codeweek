@@ -2,6 +2,8 @@
 
 namespace App\Filters;
 
+use Illuminate\Database\Eloquent\Builder;
+
 class ResourceFilters extends Filters
 {
     /**
@@ -17,7 +19,7 @@ class ResourceFilters extends Filters
      * @param  string  $selectedSection
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    protected function selectedSection($selectedSection)
+    protected function selectedSection(string $selectedSection): Builder
     {
 
         //if (is_null($selectedSection)) return;
@@ -38,7 +40,7 @@ class ResourceFilters extends Filters
      * @param  string  $name
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    protected function searchInput($searchInput)
+    protected function searchInput($searchInput): Builder
     {
         if (is_null($searchInput)) {
             return;
@@ -58,7 +60,7 @@ class ResourceFilters extends Filters
      * @param  string  $selectedLevels
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    protected function selectedLevels($selectedLevels)
+    protected function selectedLevels(string $selectedLevels): Builder
     {
         if (count($selectedLevels) == 0) {
             return;
@@ -78,7 +80,7 @@ class ResourceFilters extends Filters
      * @param  string  $selectedTypes
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    protected function selectedTypes($selectedTypes)
+    protected function selectedTypes(string $selectedTypes): Builder
     {
         if (count($selectedTypes) == 0) {
             return;
@@ -98,7 +100,7 @@ class ResourceFilters extends Filters
      * @param  string  $selectedSubjects
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    protected function selectedSubjects($selectedSubjects)
+    protected function selectedSubjects(string $selectedSubjects): Builder
     {
         if (count($selectedSubjects) == 0) {
             return;
@@ -118,7 +120,7 @@ class ResourceFilters extends Filters
      * @param  string  $selectedCategories
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    protected function selectedCategories($selectedCategories)
+    protected function selectedCategories(string $selectedCategories): Builder
     {
         if (count($selectedCategories) == 0) {
             return;
@@ -138,7 +140,7 @@ class ResourceFilters extends Filters
      * @param  string  $selectedLanguages
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    protected function selectedLanguages($selectedLanguages)
+    protected function selectedLanguages(string $selectedLanguages): Builder
     {
 
         if (count($selectedLanguages) == 0) {
@@ -159,7 +161,7 @@ class ResourceFilters extends Filters
      * @param  string  $selectedProgrammingLanguages
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    protected function selectedProgrammingLanguages($selectedProgrammingLanguages)
+    protected function selectedProgrammingLanguages(string $selectedProgrammingLanguages): Builder
     {
         if (count($selectedProgrammingLanguages) == 0) {
             return;

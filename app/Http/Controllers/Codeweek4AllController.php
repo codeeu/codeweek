@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
 use App\Helpers\Codeweek4AllHelper;
 use Carbon\Carbon;
 
 class Codeweek4AllController extends Controller
 {
-    public function detail($code, $edition = null)
+    public function detail($code, $edition = null): View
     {
 
         if (is_null($edition)) {

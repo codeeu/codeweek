@@ -2,6 +2,7 @@
 
 namespace App\Imports;
 
+use Illuminate\Database\Eloquent\Model;
 use App\ResourceItem;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Log;
@@ -24,7 +25,7 @@ class ResourcesLearnImport extends DefaultValueBinder implements ToModel, WithCu
     /**
      * @return \Illuminate\Database\Eloquent\Model|null
      */
-    public function model(array $row)
+    public function model(array $row): ?Model
     {
 
         if (! isset($row['name'])) {

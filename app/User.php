@@ -328,7 +328,7 @@ class User extends Authenticatable
      * @param  string  $avatar
      * @return string
      */
-    public function getAvatarPathAttribute($avatar)
+    public function getAvatarPathAttribute(string $avatar): string
     {
         if (is_null($avatar)) {
             $avatar = 'avatars/default_avatar.png';
@@ -344,7 +344,7 @@ class User extends Authenticatable
      * @param  string  $avatar
      * @return string
      */
-    public function getAvatarAttribute()
+    public function getAvatarAttribute(): string
     {
 
         $arr = explode('/', $this->avatar_path);
@@ -361,7 +361,7 @@ class User extends Authenticatable
      *
      * @return string
      */
-    public function fullName()
+    public function fullName(): string
     {
         return $this->firstname.' '.$this->lastname;
     }

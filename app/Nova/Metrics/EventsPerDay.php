@@ -23,7 +23,7 @@ class EventsPerDay extends Trend
      *
      * @return array
      */
-    public function ranges()
+    public function ranges(): array
     {
         return [
             30 => '30 Days',
@@ -47,7 +47,7 @@ class EventsPerDay extends Trend
      *
      * @return string
      */
-    public function uriKey()
+    public function uriKey(): string
     {
         return 'events-per-day';
     }

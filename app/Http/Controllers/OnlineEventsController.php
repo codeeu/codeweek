@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
 use App\Country;
 use App\Helpers\EventHelper;
 use App\Queries\CountriesQuery;
@@ -26,7 +27,7 @@ class OnlineEventsController extends Controller
         return $this->build($country, 'featured');
     }
 
-    public function calendar(Request $request)
+    public function calendar(Request $request): View
     {
         $events = EventHelper::getOnlineEvents();
 

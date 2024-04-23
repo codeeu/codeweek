@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
 use App\Country;
 use App\Filters\UserFilters;
 use App\Helpers\AmbassadorHelper;
@@ -9,7 +10,7 @@ use App\User;
 
 class AmbassadorController extends Controller
 {
-    public function create()
+    public function create(): View
     {
         return view('ambassador.volunteer');
     }
@@ -34,7 +35,7 @@ class AmbassadorController extends Controller
         ]);
     }
 
-    public function profile()
+    public function profile(): View
     {
         return view('ambassador.profile');
     }

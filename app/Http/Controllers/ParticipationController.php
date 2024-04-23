@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
+use Illuminate\Http\RedirectResponse;
 use App\CertificateParticipation;
 use App\Jobs\GenerateCertificatesOfParticipation;
 use App\Participation;
@@ -9,7 +11,7 @@ use Illuminate\Http\Request;
 
 class ParticipationController extends Controller
 {
-    public function show()
+    public function show(): View
     {
         return view('participation.index');
     }
@@ -24,7 +26,7 @@ class ParticipationController extends Controller
         return (new CertificateParticipation($name, $event_name, $event_date))->generate();
     }
 
-    public function generate(Request $request)
+    public function generate(Request $request): RedirectResponse
     {
 
         $rules = [

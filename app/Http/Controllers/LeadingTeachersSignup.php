@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
 use App\Audience;
 use App\City;
 use App\Country;
@@ -9,7 +10,7 @@ use Illuminate\Http\Request;
 
 class LeadingTeachersSignup extends Controller
 {
-    public function index()
+    public function index(): View
     {
         //        $countries = \App\Country::all()->sortBy('name');
         //        $levels = Audience::all();
@@ -73,7 +74,7 @@ class LeadingTeachersSignup extends Controller
         return view('leading-teachers.signup-form');
     }
 
-    public function store(Request $request)
+    public function store(Request $request): View
     {
         //        $validated = $this->validate($request, [
         //            'first_name' => 'required',

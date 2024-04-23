@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
 use App\Country;
 use App\Event;
 use App\Filters\EventFilters;
@@ -24,7 +25,7 @@ class SearchController extends Controller
         $this->eventTransformer = $eventTransformer;
     }
 
-    public function search(Request $request)
+    public function search(Request $request): View
     {
 
         $query = $request->input('q', '');
