@@ -358,7 +358,7 @@ Route::post('api/event/report/{event}', 'ReportController@store')->middleware(
     'auth'
 );
 
-Route::group(['middleware' => ['role:super admin']], function () {
+Route::middleware('role:super admin')->group(function () {
     Route::post(
         'api/resource/level/',
         'Api\Resource\LevelController@store'
@@ -373,7 +373,7 @@ Route::group(['middleware' => ['role:super admin']], function () {
     );
 });
 
-Route::group(['middleware' => ['role:super admin']], function () {
+Route::middleware('role:super admin')->group(function () {
     Route::get('/activities', 'AdminController@activities')->name('activities');
     Route::get('/pending/{country}', 'PendingEventsController@index')->name(
         'pending_by_country'
@@ -453,7 +453,7 @@ Route::group(['middleware' => ['role:super admin']], function () {
 
 });
 
-Route::group(['middleware' => ['role:super admin|ambassador']], function () {
+Route::middleware('role:super admin|ambassador')->group(function () {
     Route::get('/pending', 'PendingEventsController@index')->name('pending');
     Route::get('/review', 'ReviewController@index')->name('review');
 
@@ -472,9 +472,7 @@ Route::group(['middleware' => ['role:super admin|ambassador']], function () {
     );
 });
 
-Route::group(['middleware' => [
-    'auth',
-    'role:super admin|leading teacher|leading teacher admin']], function () {
+Route::middleware('auth', 'role:super admin|leading teacher|leading teacher admin')->group(function () {
         Route::get('/my/badges', 'BadgesController@my')->name('my-badges')->middleware('auth');
         Route::get('/badges/user/{user}/{year?}', 'BadgesController@user')->name('badges-user');
         Route::get('/badges/leaderboard/{year?}', 'BadgesController@leaderboard')->name('badges-leaderboard-year');
@@ -512,22 +510,14 @@ Route::post('/leading-teachers/signup', 'LeadingTeachersSignup@store')
     ->name('LT.signup.store')
     ->middleware('auth');
 
-Route::group(
-    ['middleware' => ['role:super admin|leading teacher admin']],
-    function () {
+Route::middleware('role:super admin|leading teacher admin')->group(function () {
         Route::get('/leading-teachers/list', 'LeadingTeachersList@index')
             ->name('leading_teachers_list')
             ->middleware('auth');
     }
 );
 
-Route::group(
-    [
-        'middleware' => [
-            'role:leading teacher|super admin|leading teacher admin',
-        ],
-    ],
-    function () {
+Route::middleware('role:leading teacher|super admin|leading teacher admin')->group(function () {
         Route::get(
             '/leading-teachers/report',
             'LeadingTeachersReport@index'
@@ -580,8 +570,8 @@ $challenges = function () {
     Route::view('air-drawing-with-AI', '2021.challenges.air-drawing-with-AI')->name('challenges.air-drawing-with-AI');
 };
 
-Route::group(['prefix' => '2021/challenges'], $challenges);
-Route::group(['prefix' => 'challenges'], $challenges);
+Route::prefix('2021/challenges')->group($challenges);
+Route::prefix('challenges')->group($challenges);
 
 Route::view('/leaflet', 'map.leaflet')->name('leaflet');
 
@@ -595,7 +585,7 @@ Route::get('podcast/{podcast}', 'PodcastsController@show')->name('podcast');
 
 Route::get('/unsubscribe/{email}/{magic}', 'UnsubscribeController@index')->name('unsubscribe');
 
-Route::group(['middleware' => ['auth']], function () {
+Route::middleware('auth')->group(function () {
     Route::get('activities-locations', 'LocationController@index')->name('activities-locations');
 });
 
