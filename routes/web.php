@@ -47,6 +47,11 @@ Route::get('setlocale', function (Request $request) {
 require __DIR__ . '/static_routes.php';
 
 /*
+ * Super Admin Pages: Routes for actions that are only possible for a user with the super admin role.
+ */
+require __DIR__ . '/admin_routes.php';
+
+/*
  * Resources: Routes for accessing learning and teaching resources.
  */
 Route::get('/resources', 'ResourcesController@learn')->name('resources');
@@ -60,6 +65,13 @@ Route::get('/resources/teach', 'ResourcesController@teach')->name(
 Route::post('/resources/search', 'SearchResourcesController@search')->name(
     'search_resources'
 );
+
+/*
+ * Show the community page with the list of ambassadors and leading teachers
+ */
+Route::get('/community', 'CommunityController@index')->name('community');
+Route::get('podcasts', 'PodcastsController@index')->name('podcasts');
+Route::get('podcast/{podcast}', 'PodcastsController@show')->name('podcast');
 
 /*
  * Show the Events Map
@@ -91,6 +103,13 @@ Route::post('/search', 'SearchController@searchPOST')->name('search_events');
  * Show the Events Leaderboard
  */
 Route::get('/scoreboard', 'ScoreboardController@index')->name('scoreboard');
+
+/*
+ * Show the featured activities page
+ */
+Route::get('/featured-activities', 'OnlineEventsController@calendar')->name(
+    'featured_activities'
+);
 
 /*
  * Route to the logged user events page
@@ -134,7 +153,7 @@ Route::delete(
 )->middleware('auth');
 
 /*
- * Show the logged user events that can be reported in order to get a certificate
+ * Show the logged user's events that can be reported in order to get a certificate
  */
 Route::get('/my/reportable', 'ReportController@list')
     ->middleware('auth')
@@ -263,126 +282,36 @@ Route::post('api/event/report/{event}', 'ReportController@store')->middleware(
 );
 
 
+
 /*
- * Super Admin Functions:
+ * Route accessible only for the ambassadors
  */
-Route::group(['middleware' => ['role:super admin']], function () {
-    // Resources management
-    Route::post(
-        'api/resource/level/',
-        'Api\Resource\LevelController@store'
-    )->name('resource_level');
-    Route::post(
-        'api/resource/item/',
-        'Api\Resource\ItemController@store'
-    )->name('resource_item');
-
-    // Show the upcoming podcasts
-    Route::get('podcasts/upcoming', 'PodcastsController@upcoming')->name(
-        'podcasts_upcoming'
-    );
-
-    // Get pending events by country
-    Route::get('/pending/{country}', 'PendingEventsController@index')->name(
-        'pending_by_country'
-    );
-
-    // List of online events per country
-    Route::get('/online/list/{country}', 'OnlineEventsController@list')->name(
-        'online_events_by_country'
-    );
-    // Show the events that have been promoted and are visible
-    Route::get('/online/promoted', 'OnlineEventsController@promoted')->name(
-        'promoted_events'
-    );
-    Route::get(
-        '/online/promoted/{country}',
-        'OnlineEventsController@promoted'
-    )->name('promoted_events_by_country');
-
-    // Show the featured events (events that have been selected by ambassadors as worthy to be displayed in the Featured Activities section.
-    Route::get('/online/featured', 'OnlineEventsController@featured')->name(
-        'featured_events'
-    );
-    Route::get(
-        '/online/featured/{country}',
-        'OnlineEventsController@featured'
-    )->name('featured_events_by_country');
-
-    /*
-     * Routes to test the email templates generation
-     */
-
-    Route::get('mail/{event}', 'EmailController@create')->middleware('auth');
-
-    Route::get(
-        '/mail/template/ambassadors/new',
-        'MailTemplateController@ambassador'
-    );
-    Route::get(
-        '/mail/template/ambassadors/remind_ambassador',
-        'MailTemplateController@remind_ambassador'
-    );
-    Route::get(
-        '/mail/template/creators/registered',
-        'MailTemplateController@registered'
-    );
-    Route::get(
-        '/mail/template/creators/approved',
-        'MailTemplateController@approved'
-    );
-    Route::get(
-        '/mail/template/creators/rejected',
-        'MailTemplateController@rejected'
-    );
-
-    Route::get(
-        '/mail/template/remind/creators',
-        'MailTemplateController@remindcreators'
-    );
-
-    // Get the page that display all the organisers that are eligible to receive a certificate of excellence with details about the Codeweek4all code.
-    Route::get(
-        '/admin/excellence/winners',
-        'ExcellenceWinnersController@list'
-    )->name('excellence_winners');
-
-    // Create an Excel with the winners of the excellence certificates
-    Route::post(
-        '/admin/excellence/excel',
-        'ExcellenceWinnersController@excel'
-    )->name('excellence_excel');
-
-});
-
 Route::group(['middleware' => ['role:super admin|ambassador']], function () {
+
+    // List of pending activities that need to be reviewed
     Route::get('/pending', 'PendingEventsController@index')->name('pending');
 
-
+    // List of online activities
     Route::get('/online/list', 'OnlineEventsController@list')->name(
         'admin.online-events'
     );
+
+    // Approve an activity action
     Route::post('/api/event/approve/{event}', 'EventController@approve')->name(
         'event.approve'
     );
+    // Reject an activity
+    Route::post('/api/event/reject/{event}', 'EventController@reject')->name(
+        'event.reject'
+    );
+    // Ajax endpoint to approve all the activities for a specific country. Used in Nova Admin panel.
     Route::get(
         '/api/event/approveAll/{country}',
         'EventController@approveAll'
     )->name('event.approveAll');
-    Route::post('/api/event/reject/{event}', 'EventController@reject')->name(
-        'event.reject'
-    );
+
 });
 
-
-Route::get(
-    '/codeweek4all/{code}/detail',
-    'Codeweek4AllController@detail'
-)->name('codeweek4all_details');
-
-Route::get('/featured-activities', 'OnlineEventsController@calendar')->name(
-    'featured_activities'
-);
 
 /*
  * Routes to manage the current user profile
@@ -401,8 +330,9 @@ Route::patch('user', 'UserController@update')
 
 
 /*
- * Routes to manage the leading teachers
+ * Routes to allow the registration of the leading teachers
  */
+
 Route::get('/leading-teachers/signup', 'LeadingTeachersSignup@index')
     ->name('LT.signup')
     ->middleware('auth');
@@ -415,6 +345,9 @@ Route::post('/leading-teachers/signup', 'LeadingTeachersSignup@store')
     ->middleware('auth');
 
 
+/*
+ * Show the leading teachers list to the admins.
+ */
 Route::group(
     ['middleware' => ['role:super admin|leading teacher admin']],
     function () {
@@ -424,6 +357,7 @@ Route::group(
     }
 );
 
+// Allow a leading teacher to report an action performed
 Route::group(
     [
         'middleware' => [
@@ -438,30 +372,19 @@ Route::group(
     }
 );
 
-Route::get('/community', 'CommunityController@index')->name('community');
 
 
-Route::get('podcasts', 'PodcastsController@index')->name('podcasts');
-Route::get('podcast/{podcast}', 'PodcastsController@show')->name('podcast');
-
-
+// Unsubscribe from the automatic email submissions. This link is in the footer of the emails being sent.
 Route::get('/unsubscribe/{email}/{magic}', 'UnsubscribeController@index')->name('unsubscribe');
 
-
+// Show the schools previously used by a teacher in order to ease the input of new activities.
 Route::group(['middleware' => ['auth']], function () {
     Route::get('activities-locations', 'LocationController@index')->name('activities-locations');
 });
 
-//Route::view('/registration', 'registration.add');
-Route::view('/online-courses', 'online-courses')->name('online-courses');
-
-Route::get('mailing/test', function () {
-    //$email = ['alainvd@gmail.com'];
-    $user = User::where("id", "19588")->first();
-
-    return new App\Mail\UserCreated($user);
-});
-
+/*
+ * Hackathons page
+ */
 Route::get('/hackathons', 'HackathonsController@index')->name('hackathons');
 
 /*
@@ -486,13 +409,13 @@ Route::feeds();
 /*
  * To be deleted ??
  */
-Route::get('/map', 'MapController@index')->name('map');
-
-Route::get('user/delete', 'UserController@delete')
-    ->name('delete_user')
-    ->middleware('auth');
-
-Route::get('/search', 'SearchController@search')->name('search_event');
+//Route::get('/map', 'MapController@index')->name('map');
+//
+//Route::get('user/delete', 'UserController@delete')
+//    ->name('delete_user')
+//    ->middleware('auth');
+//
+//Route::get('/search', 'SearchController@search')->name('search_event');
 
 /*
  * Get the current Toolkit for the leading teacher. Is this obsolete ?
