@@ -13,7 +13,7 @@ class SearchResourceTest extends TestCase
 
     private $item2;
 
-    public function setup(): void
+    protected function setUp(): void
     {
         parent::setUp();
         $this->item = create(\App\ResourceItem::class);

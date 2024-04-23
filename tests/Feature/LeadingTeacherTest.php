@@ -13,7 +13,7 @@ class LeadingTeacherTest extends TestCase
 
     private $leading_teacher;
 
-    public function setup(): void
+    protected function setUp(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');

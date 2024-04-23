@@ -19,7 +19,7 @@ class LeadingTeachersReportFormTest extends TestCase
 
     private $leading_teacher_admin;
 
-    public function setup(): void
+    protected function setUp(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');

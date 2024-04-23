@@ -13,7 +13,7 @@ class CertificatesTest extends TestCase
 
     private $event;
 
-    public function setup(): void
+    protected function setUp(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');

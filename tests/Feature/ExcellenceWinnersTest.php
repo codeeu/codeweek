@@ -24,7 +24,7 @@ class ExcellenceWinnersTest extends TestCase
 
     private $italy;
 
-    public function setup(): void
+    protected function setUp(): void
     {
         parent::setUp();
         $this->seed('RolesAndPermissionsSeeder');
