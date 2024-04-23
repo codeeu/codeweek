@@ -37,7 +37,7 @@ class EventFilters extends Filters
     protected function countries($countries): Builder
     {
         if (empty($countries)) {
-            return;
+            return $this->builder;
         }
 
         $countriesIn = collect($countries)->pluck('iso')->all();

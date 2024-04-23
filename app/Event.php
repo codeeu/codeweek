@@ -16,13 +16,12 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
-use Laravel\Nova\Actions\Actionable;
 use Spatie\Activitylog\LogOptions;
 use Stevebauman\Purify\Casts\PurifyHtmlOnGet;
 
 class Event extends Model
 {
-    use Actionable, SoftDeletes;
+    use SoftDeletes;
 
     protected $table = 'events';
 
